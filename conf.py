@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Ubports docs documentation build configuration file, created by
+# UBports documentation build configuration file, created by
 # sphinx-quickstart on Sun Mar  5 23:09:36 2017.
 #
 # This file is execfile()d with the current directory set to its
@@ -19,6 +19,8 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
+import recommonmark
+from recommonmark.transform import AutoStructify
 
 
 # -- General configuration ------------------------------------------------
@@ -51,9 +53,9 @@ source_suffix = ['.rst', '.md']
 master_doc = 'index'
 
 # General information about the project.
-project = u'Ubports docs'
-copyright = u'2017, The Ubports project'
-author = u'Ubports developers'
+project = u'UBports'
+copyright = u'2017, The UBports project'
+author = u'UBports developers'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -109,7 +111,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Ubportsdocsdoc'
+htmlhelp_basename = 'UBportsdocsdoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -136,7 +138,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'Ubportsdocs.tex', u'Ubports docs Documentation',
+    (master_doc, 'UBportsdocs.tex', u'UBports Documentation',
      u'Marius Gripsgard', 'manual'),
 ]
 
@@ -146,7 +148,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'ubportsdocs', u'Ubports docs Documentation',
+    (master_doc, 'ubportsdocs', u'UBports Documentation',
      [author], 1)
 ]
 
@@ -157,10 +159,15 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'Ubportsdocs', u'Ubports docs Documentation',
-     author, 'Ubportsdocs', 'One line description of project.',
+    (master_doc, 'UBportsdocs', u'UBports Documentation',
+     author, 'UBportsdocs', 'One line description of project.',
      'Miscellaneous'),
 ]
 
-
+def setup(app):
+    app.add_config_value('recommonmark_config', {
+            'url_resolver': lambda url: github_doc_root + url,
+            'auto_toc_tree_section': 'Contents',
+            }, True)
+    app.add_transform(AutoStructify)
 

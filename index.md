@@ -1,5 +1,5 @@
-Welcome to Ubports documentation!
-========================================
+UBports Documentation
+=====================
 
 .. toctree::
    :maxdepth: 2
