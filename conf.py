@@ -160,10 +160,11 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
     (master_doc, 'UBportsdocs', u'UBports Documentation',
-     author, 'UBportsdocs', 'One line description of project.',
+     author, 'UBportsdocs', 'A beautiful mobile OS.',
      'Miscellaneous'),
 ]
 
+github_doc_root = ''
 def setup(app):
     app.add_config_value('recommonmark_config', {
             'url_resolver': lambda url: github_doc_root + url,
