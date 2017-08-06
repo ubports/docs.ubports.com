@@ -1,6 +1,6 @@
 # UBports Documentation
 
-## Table of Contents:
+## Table of Contents
 
 * [About UBports](about/index.md)
 * [User Guides](howto/index.md)
