@@ -1,15 +1,3 @@
-UBports Documentation
-=====================
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+# UBports Documentation
 
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
