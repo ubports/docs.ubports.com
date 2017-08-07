@@ -1,7 +1,11 @@
 UBports Documentation
 =====================
 
-Welcome to the official documentation of the UBports project, a community effort to maintain the Ubuntu Touch operating system. If this is your first time here, please consider reading our :ref:`introduction <about/introduction>`.
+Welcome to the official documentation of the UBports project!
+
+UBports develops the mobile phone operating system Ubuntu Touch. Are you interested in Ubuntu Touch? Does it look like something you would like to try out on your mobile device? Use it as a daily driver? Do you want to help the project? Or maybe you're just curious on what all of this is about.
+
+On this website you find detailed instructions how to install Ubuntu Touch on your mobile phone, user guides and all the ways how you can contribute to this project. 
 
 
 .. toctree::
