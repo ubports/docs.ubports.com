@@ -17,7 +17,7 @@ About the Documentation
 
 This documentation is always improving thanks to the members of the UBports community. It is written in ReStructuredText and converted into this readable form by `Sphinx <http://www.sphinx-doc.org/en/stable/>`_, `ReCommonMark <http://recommonmark.readthedocs.io/en/latest/>`_, and `Read the Docs <https://readthedocs.io>`_. You can start contributing by checking out the :ref:`Documentation Intro <contribute-doc-intro>`.
 
-All documents are licensed under the Creative Commons Attribution ShareAlike 4.0 (`CC-BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0/`_) license. Please give attribution to "The UBports Community".
+All documents are licensed under the Creative Commons Attribution ShareAlike 4.0 (`CC-BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0/>`_) license. Please give attribution to "The UBports Community".
 
 Attribution
 -----------
