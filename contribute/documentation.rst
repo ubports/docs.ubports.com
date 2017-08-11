@@ -46,7 +46,7 @@ For example, take a look at this document's first four lines::
 
 The reference name can be called in another document to easily link to a page::
 
-    For example, check out the `Documentation intro <contribute-doc-intro>`
+    For example, check out the `Documentation intro <contribute-doc-index>`
 
 This will create a link to this page that won't change if this page changes directories in a reorganization later.
 
