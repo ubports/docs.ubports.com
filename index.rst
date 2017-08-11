@@ -1,5 +1,5 @@
-UBports Documentation
-=====================
+Welcome to the UBports documentation!
+=====================================
 
 Welcome to the official documentation of the UBports project!
 
@@ -9,11 +9,11 @@ On this website you find instructions how to install Ubuntu Touch on your mobile
 
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: About
    :name: sec-about
    
-   about/introduction
+   about/index
    
 .. toctree::
    :maxdepth: 2
