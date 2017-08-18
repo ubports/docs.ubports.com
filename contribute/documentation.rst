@@ -50,7 +50,24 @@ The reference name can be called in another document to easily link to a page::
 
 This will create a link to this page that won't change if this page changes directories in a reorganization later.
 
-Your reference should follow the namespace ``part-section-title``. This document, for example, is the index of the Documentation (doc) section in the Contribute part of the documentation.
+Your reference should follow the naming scheme ``part-section-title``. This document, for example, is the index of the Documentation (doc) section in the Contribute part of the documentation.
+
+Table of contents
+^^^^^^^^^^^^^^^^^
+
+People can't navigate to your new page if they can't find it. Neither can Sphinx. That's why you need to add new pages to Sphinx's table of contents. 
+
+You can do this by adding the page to the ``index.rst`` file in the same directory that you created it. For example, if you create a file called "newpage.rst", you would add the line marked with a chevron (>) in the nearest index::
+
+    .. toctree::
+        :maxdepth: 1
+        :name: example-toc
+        
+        oldpage
+        anotheroldpage
+    >   newpage
+
+The order matters. If you would like your page to appear in a certain place in the table of contents, place it there. In the previous example, newpage would be added to the end of this table of contents.
 
 Contribution workflow
 ---------------------
@@ -75,3 +92,27 @@ Manually forking the repository
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You can make more advanced edits to our documentation by forking `ubports/docs.ubports.com <https://github.com/ubports/docs.ubports.com>`_ on GitHub. If you're not sure how to do this, check out the excellent GitHub guide on `forking projects <https://guides.github.com/activities/forking/>`_.
+
+Building this documentation locally
+-----------------------------------
+
+If you'd like to build this documentation *before* sending a PR (which you should), follow these instructions on your *local copy* of your fork of the repository.
+
+.. Note::
+    You must have pip installed before following these instructions. On Ubuntu, install the pip package by running ``sudo apt install python-pip``. `This page <https://pip.pypa.io/en/stable/installing/>`_ has instructions for installing Pip on other operating systems and distros.
+
+1. Install the Read the Docs theme and ReCommonMark (for Markdown parsing)::
+
+    pip install sphinx_rtd_theme recommonmark
+
+2. Change into the ``docs.ubports.com`` directory::
+
+    cd path/to/docs.ubports.com
+
+3. Build the documentation::
+
+    python -m sphinx . _build
+
+This tells Sphinx to build the documentation found in the current directory, and put it all into _build. There will be a couple of warning about README.md and a nonexistent static path. Watch out for warnings about anything else, though, they could mean something has gone wrong.
+
+If all went well, you can enter the _build directory and double-click on ``index.html`` to view the UBports documentation.
