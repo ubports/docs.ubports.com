@@ -103,7 +103,7 @@ If you'd like to build this documentation *before* sending a PR (which you shoul
 
 1. Install the Read the Docs theme and ReCommonMark (for Markdown parsing)::
 
-    pip install sphinx_rtd_theme recommonmark
+    pip install sphinx sphinx_rtd_theme recommonmark
 
 2. Change into the ``docs.ubports.com`` directory::
 
