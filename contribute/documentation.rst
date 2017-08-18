@@ -1,5 +1,3 @@
-.. _contribute-doc-index:
-
 Documentation
 =============
 
@@ -19,10 +17,10 @@ Title
 
 All pages must have a document title. This title is shown on the table of contents (to the left) and at the top of the page.
 
-The title, underlined with the Equals sign, is shown in the table of contents to the left of the page. 
+The title, underlined with the Equals sign, is shown in the table of contents to the left of the page.
 
 Titles should be sentence cased rather than Title Cased. For example::
-    
+
     Incorrect casing:
         Writing A Good Bug Report
     Correct casing:
@@ -40,7 +38,7 @@ References create a permanent link to the content they appear before in Sphinx. 
 For example, take a look at this document's first four lines::
 
     .. _contribute-doc-index:
-    
+
     Documentation
     =============
 
@@ -55,14 +53,14 @@ Your reference should follow the naming scheme ``part-section-title``. This docu
 Table of contents
 ^^^^^^^^^^^^^^^^^
 
-People can't navigate to your new page if they can't find it. Neither can Sphinx. That's why you need to add new pages to Sphinx's table of contents. 
+People can't navigate to your new page if they can't find it. Neither can Sphinx. That's why you need to add new pages to Sphinx's table of contents.
 
 You can do this by adding the page to the ``index.rst`` file in the same directory that you created it. For example, if you create a file called "newpage.rst", you would add the line marked with a chevron (>) in the nearest index::
 
     .. toctree::
         :maxdepth: 1
         :name: example-toc
-        
+
         oldpage
         anotheroldpage
     >   newpage
@@ -84,7 +82,7 @@ Read the Docs and GitHub make it fairly simple to contribute to this documentati
 #. Find the page you would like to edit
 #. Click the "Edit on GitHub" link to the right of the title
 #. Make your changes to the document. Remember to write in ReStructuredText!
-#. Propose your changes as a Pull Request. 
+#. Propose your changes as a Pull Request.
 
 If there are any errors with your proposed changes, the documentation team will ask you make some changes and resubmit. This is as simple as editing the file on GitHub from your fork of the repository.
 
