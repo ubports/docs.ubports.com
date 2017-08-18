@@ -5,4 +5,4 @@ User guide
     :maxdepth: 1
     :name: toc-userguide
     
-    index
+    libertine
