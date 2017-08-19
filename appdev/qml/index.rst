@@ -1,5 +1,3 @@
-.. _qml-index:
-
 QML apps
 ========
 
@@ -20,6 +18,5 @@ to implement.
    :maxdepth: 1
    :name: toc-appdev-qml
 
-   api
-   cookbook
    tutorials/index
+   api/index

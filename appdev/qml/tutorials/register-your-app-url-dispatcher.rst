@@ -1,5 +1,5 @@
-Tutorials - register your app
-=============================
+Register your url dispatcher
+============================
 
 The URL dispatcher is a service which allows applications to launch
 other applications and to open specific URLs with specific applications.

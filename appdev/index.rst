@@ -1,5 +1,3 @@
-.. _appdev-index:
-
 App development
 ===============
 
@@ -10,6 +8,7 @@ Welcome to an open source and free platform under constant scrutiny and improvem
 
 Ubuntu is also the third most deployed desktop OS in the world.
 
+:doc:`Get started with app development <getting-started>`
 
 Design comes first - build upon solid principles
 ------------------------------------------------
@@ -18,7 +17,7 @@ From solid fundamental principles to refined UI building blocks and typography, 
 
 From top to bottom, they feel and behave as part of the same family, regardless of the implementation toolkit.
 
-[Learn more about our design values](http://design.ubuntu.com/apps)
+:doc:`learn more about our design values <design/get-started/design-values>`
 
 The Ubuntu App platform - develop with seamless device integration
 ------------------------------------------------------------------
@@ -29,39 +28,15 @@ Security and privacy are not after-thoughts and are built at the core of our API
 
 This tight integration also enables a true write-once, run-everywhere approach that conserves precious developer time.
 
-[Learn more about platform features&nbsp;&rsaquo;](../platform/index.md)
-
-
-Your first app
---------------
-
-Get the tools
-^^^^^^^^^^^^^
-
-Developers feel right at home and productive in the Ubuntu SDK IDE, whatever
-their experience.
-
-This integrated development environment offers a richly featured and deeply
-integrated set of development tools that gears up productivity and includes
-direct access to attached Ubuntu devices and Ubuntu emulators.
-
-[Install the Ubuntu SDK IDE&nbsp;&rsaquo;](../platform/sdk/installing-the-sdk.md)
-
-Pick your language
-^^^^^^^^^^^^^^^^^^
-
-For the UI, you can choose either QML or HTML5 to write Ubuntu apps.
-
-For the logic, JavaScript, Qt and other languages such as Python or Go can
-power refined QML UIs.
-
-.. Note::
-    for starters, we recommend QML and JavaScript, which are the languages used in most tutorials.
-
-[Write your first app&nbsp;&rsaquo;](qml/index.md)
+:doc:`Learn more about platform features <platform/index>`
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 1
    :name: toc-appdev
 
+   getting-started
+   design/index
    qml/index
+   html-5/index
+   autopilot/index
+   cookbook
