@@ -17,7 +17,7 @@ From solid fundamental principles to refined UI building blocks and typography, 
 
 From top to bottom, they feel and behave as part of the same family, regardless of the implementation toolkit.
 
-:doc:`learn more about our design values <design/get-started/design-values>`
+:doc:`Learn more about our design values <design/get-started/design-values>`
 
 The Ubuntu App platform - develop with seamless device integration
 ------------------------------------------------------------------
