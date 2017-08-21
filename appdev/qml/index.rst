@@ -19,4 +19,4 @@ to implement.
    :name: toc-appdev-qml
 
    tutorials/index
-   api/index
+   api
