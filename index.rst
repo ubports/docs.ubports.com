@@ -16,11 +16,12 @@ On this website you find instructions how to install Ubuntu Touch on your mobile
    about/index
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: User Guide
    :name: sec-userguide
 
    userguide/index
+   userguide/install
 
 .. toctree::
    :maxdepth: 2
