@@ -1,7 +1,7 @@
-.. _userguide-libertine:
+.. _userguide-dailyuse-libertine:
 
-Libertine
-=========
+Run desktop applications
+========================
 
 Libertine allows you to use standard desktop applications in Ubuntu Touch.
 
