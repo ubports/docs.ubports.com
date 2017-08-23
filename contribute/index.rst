@@ -5,4 +5,5 @@ Contributing to UBports
     :maxdepth: 1
     :name: toc-contribute
     
+    bugreporting
     documentation
