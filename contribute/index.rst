@@ -1,3 +1,4 @@
+.. _contribute-index:
 Contributing to UBports
 =======================
 

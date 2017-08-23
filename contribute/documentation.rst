@@ -1,5 +1,4 @@
 .. _contribute-doc-index:
-
 Documentation
 =============
 
@@ -37,10 +36,9 @@ Reference
 
 References create a permanent link to the content they appear before in Sphinx. One should always appear as the first line of your document.
 
-For example, take a look at this document's first four lines::
+For example, take a look at this document's first three lines::
 
     .. _contribute-doc-index:
-
     Documentation
     =============
 

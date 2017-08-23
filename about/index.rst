@@ -1,3 +1,4 @@
+.. _about-index:
 About UBports
 =============
 
