@@ -69,6 +69,6 @@ Now, write your bug report. A good bug report includes the following:
 * Logs: Attach your logs by clicking and dragging them into your GitHub issue.
 * Software Version: Go to (Settings - About) and list what appears on the "OS" line of this screen. Also include the release channel that you used when you installed Ubuntu on this phone.
 
-Once you're finished with that, post the bug. You'll get the option to add tags, so add the tag for the device you're experiencing the issue on.
+Once you're finished with that, post the bug. You can't add labels yourself, so please don't forget to state the device you're experiencing the issue on in the description so a moderator can easily add the correct tags later.
 
 A developer or triager will confirm and triage your bug, then work can begin on it. If you are missing any information, you will be asked for it, so make sure to check in often!
