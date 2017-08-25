@@ -129,7 +129,7 @@ Once installed, the application will be registered as a client of the
 Online Accounts service and will be able to access its API.
 
 Using the configured accounts
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Generally, the first step performed by an application using Online
 Accounts is the discovery of all the existing accounts which are
@@ -143,7 +143,7 @@ the application to perform the first two steps, as described in more
 detail in the following sections.
 
 Accessing the accounts database
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+"""""""""""""""""""""""""""""""
 
 The API to enumerate the accounts is provided by the
 ``[AccountModel](../../apps/api-qml-current/Ubuntu.OnlineAccounts.md)``
@@ -213,7 +213,7 @@ underscore and the identifier of the account provider, as specified in
 the manifest file.
 
 Logging in
-^^^^^^^^^^
+""""""""""
 
 Once the application has got an account, it can proceed and obtain an
 authentication token for that account. Depending on the authentication
@@ -273,7 +273,7 @@ the most common authentication method are described, along with their
 parameters and replies.
 
 Authentication methods
-~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^
 
 The current Online Accounts implementation supports several
 authentication methods commonly used by service providers. In this
@@ -287,7 +287,7 @@ authentication with HMAC\_SHA1 signature, all the authentication
 settings should be put under the ``"oauth2/``\ HMAC\_SHA1\ ``"`` key.
 
 OAuth 2.0 authentication
-^^^^^^^^^^^^^^^^^^^^^^^^
+""""""""""""""""""""""""
 
 The OAuth 2.0 method (called ``"oauth2"`` in the account configuration)
 supports two different authentication mechanisms, ``user_agent`` and
@@ -337,7 +337,7 @@ response consists of the following keys:
    applications don't need to worry about this.
 
 OAuth 1.0a authentication
-^^^^^^^^^^^^^^^^^^^^^^^^^
+"""""""""""""""""""""""""
 
 The OAuth 1.0a method (called ``"oauth2"`` in the account configuration)
 supports different signatures, which are represented by the
@@ -392,7 +392,7 @@ and ``SignatureMethod`` are typically already known to the application,
 they are also provided in the authentication reply for convenience.
 
 Username/password authentication
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+""""""""""""""""""""""""""""""""
 
 For services which offer only a basic login, it's possible to
 authenticate using a combination of username and password. In order to
@@ -537,7 +537,7 @@ Some more complete examples can be found in the directory
 ``/usr/share/accounts/qml-plugins/``.
 
 Debugging a QML plugin
-''''''''''''''''''''''
+^^^^^^^^^^^^^^^^^^^^^^
 
 In order to see the console output from an account plugin, the following
 commands need to entered in the device where the Online Accounts UI will
