@@ -1,5 +1,5 @@
-Autopilot API - 1.6.0
-=====================
+Autopilot
+=========
 
 .. note::
     *Here be dragons!*

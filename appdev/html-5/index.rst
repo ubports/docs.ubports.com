@@ -105,4 +105,4 @@ detail you need make your HTML5 apps use the full sweet of platform APIs
    :name: toc-appdev-html-5-tutorials
 
    tutorials/index
-   api/index
+   api
