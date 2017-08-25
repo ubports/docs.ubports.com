@@ -7,7 +7,7 @@ UBports develops the mobile phone operating system Ubuntu Touch. Ubuntu Touch is
 
 On this website you find instructions how to install Ubuntu Touch on your mobile phone, user guides and detailed documentation on all system components. If this is your first time here, please consider reading our :doc:`introduction <about/introduction>`.
 
-This documentation is currently in a quite volatile state, so don't be alarmed if pages are shuffled around from the last time you were here!
+This documentation is currently in a quite volatile state, so don't be alarmed if pages are shuffled around from the last time you were here! If you want to help improving the docs, :doc:`this <contribute/documentation>` will get you started.
 
 .. toctree::
    :maxdepth: 1
