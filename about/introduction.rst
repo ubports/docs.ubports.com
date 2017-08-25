@@ -1,11 +1,10 @@
-.. _about-introduction:
 Introduction
 ============
 
 This is the documentation for the UBports project. Our goal is to create an open-source (GPL if possible) mobile operating system that converges and respects your freedom.
 
 About UBports
-------------
+-------------
 
 The UBports project was founded by Marius Gripsgard in 2015 and in its infancy was a place where developers could share ideas and educate each other in hopes of bringing the Ubuntu Touch platform to more and more devices.
 
