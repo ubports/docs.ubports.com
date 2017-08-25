@@ -2,7 +2,7 @@
 Documentation
 =============
 
-.. note::
+.. tip::
     Documentation on this site is written in ReStructuredText, or RST for short. Please check the `RST Primer <http://www.sphinx-doc.org/en/stable/rest.html>`_ if you are not familiar with RST.
 
 This page will guide you through writing great documentation for the UBports project that can be featured on this site.
