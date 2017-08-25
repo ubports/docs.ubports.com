@@ -29,9 +29,6 @@ A contextual menu reveals relevant commands using long-press, such as
 saving an image in a web browser.
 
 .. figure:: https://assets.ubuntu.com/v1/ceed065d-366w_Menus_ContextualStaged-2.png
-   :alt: 366w\_Menus\_ContextualStaged (2)
-
-   366w\_Menus\_ContextualStaged (2)
 
 Windowed
 --------
@@ -59,7 +56,7 @@ Larger screen (tablet, desktop)
 -------------------------------
 
 .. figure:: https://assets.ubuntu.com/v1/6fcee709-750w_Menus_CascadeLarge.png
-   :alt: 
+   :alt:
 
 Revealing actions
 -----------------
@@ -89,7 +86,7 @@ Right-click
 -----------
 
 .. figure:: https://assets.ubuntu.com/v1/7ba08e66-366w_ListItems_ContextualActions3.png
-   :alt: 
+   :alt:
 
 Long-press
 ----------
@@ -387,4 +384,3 @@ point at which the user right clicked or long-pressed.
 .. |366w\_Menus\_ItemGroupingDo| image:: https://assets.ubuntu.com/v1/9e38797b-366w_Menus_ItemGroupingDo.png
 .. |menu level 1 dont| image:: https://assets.ubuntu.com/v1/785e56ec-menu-level-1-dont.png
 .. |no alt text| image:: https://assets.ubuntu.com/v1/75f60d24-link_external.png
-

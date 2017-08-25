@@ -5,14 +5,9 @@ Use Activity Indicators to give the user an indication of how long a
 running task might take and how much work has already been done.
 
 .. figure:: https://assets.ubuntu.com/v1/1af1cdf3-750w_ActivityIndicators_MainImage-1.png
-   :alt: 750w\_ActivityIndicators\_MainImage (1)
 
-   750w\_ActivityIndicators\_MainImage (1)
-
-\|\ |no alt text|\ \|The `Activity Indicator
-API <../../api-qml-current/Ubuntu.Components.ActivityIndicator.md>`__
-visually indicates that a task of unknown or known duration is in
-progress.\| \| \|---\|-----\|
+.. hint::
+    The `Activity Indicator API <https://docs.ubuntu.com/phone/en/apps/api-qml-current/Ubuntu.Components.ActivityIndicator>`__ visually indicates that a task of unknown or known duration is in progress.
 
 Types of indicators
 -------------------
@@ -45,22 +40,14 @@ Progress bar – downloading
 --------------------------
 
 .. figure:: https://assets.ubuntu.com/v1/b7cc2368-366w_ActivityIndicators_ProgressBar.png
-   :alt: 366w\_ActivityIndicators\_ProgressBar
-
-   366w\_ActivityIndicators\_ProgressBar
 
 Spinner – transferring
 ----------------------
 
 .. figure:: https://assets.ubuntu.com/v1/79721f4b-366w_ActivityIndicators_DeterminateSpinner.png
-   :alt: 366w\_ActivityIndicators\_DeterminateSpinner
 
-   366w\_ActivityIndicators\_DeterminateSpinner
-
-\|\ |no alt text|\ \|The toolkit progress bars and spinners
-automatically handle presence for individual tasks by waiting for two
-seconds. If the task takes less than that they won’t appear at all.\| \|
-\|---\|-----\|
+.. hint::
+    The toolkit progress bars and spinners automatically handle presence for individual tasks by waiting for two seconds. If the task takes less than that they won’t appear at all.
 
 Indeterminate indicators
 ------------------------
@@ -74,17 +61,11 @@ Progress bar – updating
 -----------------------
 
 .. figure:: https://assets.ubuntu.com/v1/36038136-366w_ActivityIndicators_IndeterminateProgress.png
-   :alt: 366w\_ActivityIndicators\_IndeterminateProgress
-
-   366w\_ActivityIndicators\_IndeterminateProgress
 
 Spinner – loading
 -----------------
 
 .. figure:: https://assets.ubuntu.com/v1/31d111ac-750w_ActivityIndicators_Spinner.png
-   :alt: 750w\_ActivityIndicators\_Spinner
-
-   750w\_ActivityIndicators\_Spinner
 
 Best practices
 --------------
@@ -101,9 +82,6 @@ Indeterminate steps
 -------------------
 
 .. figure:: https://assets.ubuntu.com/v1/69824bb1-366w_ActivityIndicators_DeterminateSteps.png
-   :alt: 366w\_ActivityIndicators\_DeterminateSteps
-
-   366w\_ActivityIndicators\_DeterminateSteps
 
 If the last step in a task is verifying its success, then allocate a
 fraction of the indicator to it. This communicates to the user that the
@@ -113,9 +91,6 @@ Determinate steps
 -----------------
 
 .. figure:: https://assets.ubuntu.com/v1/f6bca0f9-366w_ActivityIndicators_IndeterminateSteps-1.png
-   :alt: 366w\_ActivityIndicators\_IndeterminateSteps
-
-   366w\_ActivityIndicators\_IndeterminateSteps
 
 Never let an Activity Indicator go backwards. If the task size changes
 part-way through, reallocate the remaining fraction of the indicator to
@@ -125,9 +100,6 @@ Use only for task progression
 -----------------------------
 
 .. figure:: https://assets.ubuntu.com/v1/08e61720-366w_ActivityIndicators_DontSpinner.png
-   :alt: 366w\_ActivityIndicators\_Don'tSpinner
-
-   366w\_ActivityIndicators\_Don'tSpinner
 
 Don’t use an Activity Indicator for anything that isn’t progress of a
 task, such as waiting for user input or as a gauge for anything else.
@@ -136,17 +108,9 @@ Avoid confusion
 ---------------
 
 .. figure:: https://assets.ubuntu.com/v1/cb401570-366w_ActivityIndicators_AvoidConfusion.png
-   :alt: 366w\_ActivityIndicators\_AvoidConfusion
-
-   366w\_ActivityIndicators\_AvoidConfusion
 
 Don’t fill the indicator if the task has failed, because it could
 confuse the user.
 
-\|\ |no alt text|\ \|See Communicating Progress (coming soon) for best
-practices on labelling Activity Indicators.\| \| \|---\|-----\|
-
-.. |no alt text| image:: https://assets.ubuntu.com/v1/608696e3-developer_links.png
-.. |no alt text| image:: https://assets.ubuntu.com/v1/e9f11635-information-link.png
-.. |no alt text| image:: https://assets.ubuntu.com/v1/75f60d24-link_external.png
-
+.. hint::
+    See Communicating Progress (coming soon) for best practices on labelling Activity Indicators.
