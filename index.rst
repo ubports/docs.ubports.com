@@ -10,7 +10,7 @@ On this website you find instructions how to install Ubuntu Touch on your mobile
 This documentation is currently in a quite volatile state, so don't be alarmed if pages are shuffled around from the last time you were here!
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: About
    :name: sec-about
 
@@ -26,14 +26,14 @@ This documentation is currently in a quite volatile state, so don't be alarmed i
    userguide/advanceduse/index
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Contribute
    :name: sec-contribute
 
    contribute/index
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: App development
    :name: sec-appdev
 
