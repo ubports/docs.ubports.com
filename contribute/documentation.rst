@@ -34,7 +34,7 @@ There isn't a single definition of title casing that everyone follows, but sente
 Reference
 ^^^^^^^^^
 
-References create a permanent link to the content they appear before in Sphinx. One should always appear as the first line of your document.
+References create a permanent link. One should always appear as the first line of your document.
 
 For example, take a look at this document's first three lines::
 
