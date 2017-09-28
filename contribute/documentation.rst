@@ -111,6 +111,6 @@ If you'd like to build this documentation *before* sending a PR (which you shoul
 
     python -m sphinx . _build
 
-This tells Sphinx to build the documentation found in the current directory, and put it all into _build. There will be a couple of warning about README.md and a nonexistent static path. Watch out for warnings about anything else, though, they could mean something has gone wrong.
+This tells Sphinx to build the documentation found in the current directory, and put it all into ``_build``. There will be a couple of warnings about README.md and a nonexistent static path. Watch out for warnings about anything else, though, they could mean something has gone wrong.
 
-If all went well, you can enter the _build directory and double-click on ``index.html`` to view the UBports documentation.
+If all went well, you can enter the ``_build`` directory and double-click on ``index.html`` to view the UBports documentation.
