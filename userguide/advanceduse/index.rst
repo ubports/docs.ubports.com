@@ -12,4 +12,5 @@ This section of the documentation details advanced tasks that power users may wa
     :name: toc-userguide-advanced
     
     adb
+    ssh
     switchchannel

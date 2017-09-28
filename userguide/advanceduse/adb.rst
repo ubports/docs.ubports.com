@@ -1,8 +1,8 @@
 .. _userguide-advanceduse-adb:
-Use ADB to access your phone's shell
-====================================
+Shell access via adb
+====================
 
-You can put your phone into developer mode and access a Bash shell from your PC. This is useful for debugging or more advanced shell usage.
+You can put your UBports device into developer mode and access a Bash shell from your PC. This is useful for debugging or more advanced shell usage.
 
 
 Install ADB
