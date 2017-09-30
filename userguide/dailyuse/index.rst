@@ -1,4 +1,4 @@
-.. userguide-dailyuse-index::
+.. userguide-dailyuse-index:
 Daily use
 =========
 
