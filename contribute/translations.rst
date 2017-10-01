@@ -15,6 +15,7 @@ Tools for Translation
 ---------------------
 
     For everyone: A web based translation tool called `Weblate <https://translate.ubports.com/>`_. This is the recommended way.
+
 * For advanced users: Working directly on .po files with the editor of your choice, and a GitHub account. The .po files for each project are in their repository on `our GitHub organization <https://github.com/ubports>`_.
 
     A `Translation Forum <https://forums.ubports.com/category/39/translations>`_ to discuss on translating Ubuntu Touch and its core apps.
@@ -55,7 +56,7 @@ If you want to work with .po files directly you know what you're doing for sure.
 Translation Team Communication
 ------------------------------
 
-The straightforward and recommended way is to use `the forum category<https://forums.ubports.com/category/39/translations>`_ that UBports provides for this task.
+The straightforward and recommended way is to use `the forum category <https://forums.ubports.com/category/39/translations>`_ that UBports provides for this task.
 
 To use it you need to register, or login if you're registered already.
 

@@ -10,7 +10,7 @@ Get the latest Ubuntu Touch
 This might seem obvious, but it's easy to miss. Go to (Settings - Updates) and make sure that your device doesn't have any Ubuntu updates available. If not, continue through this guide. If so, update your device and try to reproduce the bug. If it still occurs, continue through this guide. If not, do a little dance! The bug has already been fixed and you can continue using Ubuntu Touch.
 
 Check if the bug is already reported
-----------------------------
+------------------------------------
 
 Open up the bug tracker for `ubports-touch <https://github.com/ubports/ubports-touch>`_.
 
