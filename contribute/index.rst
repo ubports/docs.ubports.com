@@ -11,7 +11,8 @@ If those aren't enough for you, see `our contribute page <https://ubports.com/pa
 .. toctree::
     :maxdepth: 1
     :name: toc-contribute
-    
+
     bugreporting
+    issuetracking
     documentation
     translations
