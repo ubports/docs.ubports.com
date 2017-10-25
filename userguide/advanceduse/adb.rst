@@ -1,8 +1,8 @@
 .. _userguide-advanceduse-adb:
-Shell access via adb
-====================
+Use ADB to access your phone's shell
+====================================
 
-You can put your UBports device into developer mode and access a Bash shell from your PC. This is useful for debugging or more advanced shell usage.
+You can put your phone into developer mode and access a Bash shell from your PC. This is useful for debugging or more advanced shell usage.
 
 
 Install ADB
@@ -53,3 +53,27 @@ Fairphone 2::
 Oneplus One::
 
     printf "0x9d17 \n" >> ~/.android/adb_usb.ini
+
+Flashing a New Android Image to an Ubuntu Touch Device
+------------------------------------------------------
+
+Sometimes you want to add your own build of Android to a device that already has a UBPorts port. In this case, it is not advisable to use ``Rootstock`` as you would for other devices, as some UBPorts ports have a slightly customized Ubuntu build.
+
+Also, it's nice to make sure that you're not introducing any bugs by using a different Ubuntu system. The following is what you'll need to do:
+
+#. Install Ubuntu Touch using magic-device-tool or Ubuntu Device Flash.
+#. After Ubuntu Touch has booted, reboot into Recovery
+#. Plug your phone in to your computer which has adb installed
+#. ``cd`` to the directory where your built ``system.img`` is located (Commonly ``out/target/product/[DEVICE]/``
+#. Run the following commands:
+
+::
+
+$ adb shell "mount -a"
+$ adb shell "mkdir /image"
+$ adb shell "mount /data/system.img /image"
+$ adb push system.img /image/var/lib/lxc/android/system.img
+$ adb reboot
+
+And you're done. Your phone should now reboot into Ubuntu with your own build of Android running in the container.
+
