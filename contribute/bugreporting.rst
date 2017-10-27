@@ -12,7 +12,7 @@ This might seem obvious, but it's easy to miss. Go to (Settings - Updates) and m
 Check if the bug is already reported
 ------------------------------------
 
-Open up the bug tracker for `ubports-touch <https://github.com/ubports/ubports-touch>`_.
+Open up the bug tracker for `ubuntu-touch <https://github.com/ubports/ubuntu-touch>`_.
 
 First, you'll need to make sure that the bug you're trying to report hasn't been reported before. Search through the bugs reported. When searching, use a few words that describe what you're seeing. For example, "Lock screen transparent" or "Lock screen shows activities".
 
@@ -38,7 +38,7 @@ dmesg
 #. Using the steps you documented earlier, reproduce the issue you're reporting
 #. cd to a folder where you're able to write the log
 #. Delete the file UTdmesg.log if it exists
-#. Run the command: adb shell "dmesg" > "UTdmesg.txt"
+#. Run the command: `adb shell "dmesg" > "UTdmesg.txt"`
 
 This log should now be located at UTdmesg.txt under your working directory, ready for uploading later.
 
@@ -48,7 +48,7 @@ logcat
 #. Using the steps you documented earlier, reproduce the issue you're reporting
 #. cd to a folder where you're able to write the log
 #. Delete the file UTlogcat.log if it exists
-#. Run the command: adb shell "/android/system/bin/logcat -d" > "UTlogcat.txt"
+#. Run the command: `adb shell "/android/system/bin/logcat -d" > "UTlogcat.txt"`
 
 This log will be located at UTlogcat.txt in your current working directory, so you'll be able to upload it later.
 
@@ -57,7 +57,7 @@ Making the bug report
 
 Now it's time for what you've been waiting for, the bug report itself!
 
-First, pull up the `bug tracker <https://github.com/ubports/ubports-touch>`_ and click "New Issue". Log in to GitHub if you haven't yet.
+First, pull up the `bug tracker <https://github.com/ubports/ubuntu-touch>`_ and click "New Issue". Log in to GitHub if you haven't yet.
 
 Next, you'll need to name your bug. Pick a name that says what's happening, but don't be too wordy. Four to eight words should be enough.
 
