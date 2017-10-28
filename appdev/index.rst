@@ -6,3 +6,5 @@ Welcome to an open source and free platform under constant scrutiny and improvem
 But let's be real for a second: Ubuntu Touch app development is not in a great state. The Ubuntu SDK IDE that Canonical created back in the days of yore is majorly out of order. It only works on Ubuntu 16.04, and even there many components are broken.
 
 Luckily, there are some utilities and alternatives that allow us to build click packages for Ubuntu Touch without the huge overhead of QtCreator. This section will give instructions for tools to use and guidance to work around common issues.
+
+We decided not to import the documentation pages for all unmaintained components, instead we are working continuously on replacing parts where necessary with more sustainable solutions. The old documentation pages written by Canonical can be found `here <https://docs.ubuntu.com/phone/en/>`_.
