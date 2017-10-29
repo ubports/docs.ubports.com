@@ -64,8 +64,8 @@ Middleware, User Interface)
 |                | the issue was moved to a different responsible team.                      |
 +----------------+---------------------------------------------------------------------------+
 
-Lables:
--------
+Labels
+------
 
 Issues (even closed ones) should be labeled to allow the use of GitHub's
 global filtering. Example:
@@ -102,8 +102,8 @@ labels on ubports/ubuntu-touch
 -  device: [DEVICE CODENAME]: This issue affects only the specified
    device(s).
 
-Milestones:
------------
+Milestones
+----------
 
 On ubports/ubuntu-touch, milestones are used for stable OTA releases
 only. In general, milestones for the work-in-progress OTA and the next
@@ -125,8 +125,8 @@ https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+org%3Aubports+assignee%3Ama
 It's the developers duty to keep his list short and update the status of
 his issues.
 
-Releases:
----------
+Releases
+--------
 
 OTA updates usually follow this rhythm:
 
