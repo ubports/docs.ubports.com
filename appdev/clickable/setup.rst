@@ -45,18 +45,4 @@ displaying "Hello World!"
 Look `here <https://github.com/bhdouglass/clickable#usage>`__ for
 further instructions.
 
-Ubuntu SDK IDE (unsupported)
-============================
-
-The `Ubuntu SDK IDE <https://docs.ubuntu.com/phone/en/platform/sdk>`__
-is no longer supported by Canonical, and UBports does not currently have
-the the time and manpower to get it to a working state.
-
-It can still be installed, but issues are expected.
-
-::
-
-    sudo add-apt-repository ppa:ubuntu-sdk-team/ppa
-    sudo apt update && sudo apt dist-upgrade
-    sudo apt install ubuntu-sdk
-    sudo reboot # or logout/login
+        
