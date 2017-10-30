@@ -2,8 +2,7 @@ Setting up clickable
 ====================
 
 This guide assumes you are using Ubuntu 16.04 on your development
-machine. Other host systems might work just fine as well. If you cannot set up Clickable as described here you might want to try the alternative instructions to setup [[Clickable inside a
-container\|Set-up-a-Clickable-working-environment-inside-an-LXC-container]], or the `Clickable website <https://github.com/bhdouglass/clickable>`__ for other alternatives like snap.
+machine. Other host systems might work just fine as well. If you cannot set up Clickable as described here you might want to try the alternative instructions to setup clickable :ref:`inside an LXD container <clickable-inside-lxd>`, or check out the `Clickable website <https://github.com/bhdouglass/clickable>`__ for further alternatives like snap.
 
 Prerequisites
 -------------
