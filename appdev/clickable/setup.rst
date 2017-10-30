@@ -16,6 +16,16 @@ Ubuntu 16.04
 
 If you have the Ubuntu SDK IDE installed, you will already have the necessary prerequisites. If you don't already have the IDE installed you will need to install adb and lxd. After installing lxd you will need to run ``lxd init`` to get everything setup with lxd.
 
+.. topic:: Troubleshooting
+
+    If you get an error when running the ``lxd`` command, check if your user is in the lxd group. If you are not in the lxd group you can add yourself like this:
+
+    ``sudo usermod -a -G lxd username``
+
+    You might have to log out and log back in afterwards for this to take effect.
+
+    Another common issue could be to not have the lxd daemon running; if so just run: ``sudo systemctl start lxd.service``
+
 Install
 -------
 
