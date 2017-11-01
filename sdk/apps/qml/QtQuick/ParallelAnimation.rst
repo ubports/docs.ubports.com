@@ -1,0 +1,60 @@
+Enables animations to be run in parallel
+
++--------------------------------------+--------------------------------------+
+| Import Statement:                    | import QtQuick 2.4                   |
++--------------------------------------+--------------------------------------+
+| Inherits:                            | `Animation </sdk/apps/qml/QtQuick/An |
+|                                      | imation/>`__                         |
++--------------------------------------+--------------------------------------+
+
+Detailed Description
+--------------------
+
+The `SequentialAnimation </sdk/apps/qml/QtQuick/SequentialAnimation/>`__
+and `ParallelAnimation </sdk/apps/qml/QtQuick/ParallelAnimation/>`__
+types allow multiple animations to be run together. Animations defined
+in a
+`SequentialAnimation </sdk/apps/qml/QtQuick/SequentialAnimation/>`__ are
+run one after the other, while animations defined in a
+`ParallelAnimation </sdk/apps/qml/QtQuick/ParallelAnimation/>`__ are run
+at the same time.
+
+The following animation runs two number animations in parallel. The
+`Rectangle </sdk/apps/qml/QtQuick/Rectangle/>`__ moves to (50,50) by
+animating its ``x`` and ``y`` properties at the same time.
+
+.. code:: qml
+
+    import QtQuick 2.0
+    Rectangle {
+        id: rect
+        width: 100; height: 100
+        color: "red"
+        ParallelAnimation {
+            running: true
+            NumberAnimation { target: rect; property: "x"; to: 50; duration: 1000 }
+            NumberAnimation { target: rect; property: "y"; to: 50; duration: 1000 }
+        }
+    }
+
+Like any other animation type, a
+`ParallelAnimation </sdk/apps/qml/QtQuick/ParallelAnimation/>`__ can be
+applied in a number of ways, including transitions, behaviors and
+property value sources. The `Animation and Transitions in Qt
+Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`__
+documentation shows a variety of methods for creating animations.
+
+**Note:** Once an animation has been grouped into a
+`SequentialAnimation </sdk/apps/qml/QtQuick/SequentialAnimation/>`__ or
+`ParallelAnimation </sdk/apps/qml/QtQuick/ParallelAnimation/>`__, it
+cannot be individually started and stopped; the
+`SequentialAnimation </sdk/apps/qml/QtQuick/SequentialAnimation/>`__ or
+`ParallelAnimation </sdk/apps/qml/QtQuick/ParallelAnimation/>`__ must be
+started and stopped as a group.
+
+**See also**
+`SequentialAnimation </sdk/apps/qml/QtQuick/SequentialAnimation/>`__,
+`Animation and Transitions in Qt
+Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`__,
+and `Qt Quick Examples -
+Animation </sdk/apps/qml/QtQuick/animation/>`__.

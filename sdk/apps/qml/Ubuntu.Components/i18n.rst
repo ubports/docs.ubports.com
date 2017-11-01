@@ -1,0 +1,202 @@
+i18n is a context property that provides internationalization support.
+
++---------------------+--------------------------------+
+| Import Statement:   | import Ubuntu.Components 1.3   |
++---------------------+--------------------------------+
+
+Properties
+----------
+
+-  ****`domain </sdk/apps/qml/Ubuntu.Components/i18n#domain-prop>`__****
+   : string
+-  ****`language </sdk/apps/qml/Ubuntu.Components/i18n#language-prop>`__****
+   : string
+
+Methods
+-------
+
+-  string
+   ****`ctr </sdk/apps/qml/Ubuntu.Components/i18n#ctr-method>`__****\ (string
+   *context*, string *text*)
+-  string
+   ****`dctr </sdk/apps/qml/Ubuntu.Components/i18n#dctr-method>`__****\ (string
+   *domain*, string *context*, string *text*)
+-  string
+   ****`dtr </sdk/apps/qml/Ubuntu.Components/i18n#dtr-method-2>`__****\ (string
+   *domain*, string *singular*, string *plural*, int *n*)
+-  string
+   ****`dtr </sdk/apps/qml/Ubuntu.Components/i18n#dtr-method>`__****\ (string
+   *domain*, string *text*)
+-  string
+   ****`relativeDateTime </sdk/apps/qml/Ubuntu.Components/i18n#relativeDateTime-method>`__****\ (datetime
+   *dateTime*)
+-  string
+   ****`tag </sdk/apps/qml/Ubuntu.Components/i18n#tag-method-2>`__****\ (string
+   *context*, string *text*)
+-  string
+   ****`tag </sdk/apps/qml/Ubuntu.Components/i18n#tag-method>`__****\ (string
+   *text*)
+-  string
+   ****`tr </sdk/apps/qml/Ubuntu.Components/i18n#tr-method-2>`__****\ (string
+   *singular*, string *plural*, int *n*)
+-  string
+   ****`tr </sdk/apps/qml/Ubuntu.Components/i18n#tr-method>`__****\ (string
+   *text*)
+
+Detailed Description
+--------------------
+
+i18n cannot be instantiated, and is already available as a context
+property. It is based on
+`gettext <https://www.gnu.org/software/gettext/>`__, and thus the
+standard gettext tools can be used for translating a project. Example:
+
+.. code:: qml
+
+    import QtQuick 2.4
+    import Ubuntu.Components 0.1
+    Item {
+         width: units.gu(40)
+         height: units.gu(50)
+         Button {
+             anchors.centerIn: parent
+             text: i18n.tr("Press me")
+         }
+    }
+
+Property Documentation
+----------------------
+
++--------------------------------------------------------------------------+
+|        \ domain : string                                                 |
++--------------------------------------------------------------------------+
+
+The gettext domain to be used for the translation. The default domain is
+the applicationName specified in the application's
+`MainView </sdk/apps/qml/Ubuntu.Components/MainView/>`__, or the empty
+string "" if no applicationName was given or no
+`MainView </sdk/apps/qml/Ubuntu.Components/MainView/>`__ is used. Use
+`dtr() </sdk/apps/qml/Ubuntu.Components/i18n#dtr-method>`__ functions
+instead of `tr() </sdk/apps/qml/Ubuntu.Components/i18n#tr-method>`__ to
+use a different domain for a single translation that ignores
+i18n.domain.
+
+| 
+
++--------------------------------------------------------------------------+
+|        \ language : string                                               |
++--------------------------------------------------------------------------+
+
+The language that is used for the translation. The default value is the
+user's locale dending on $LC\_ALL, $LC\_MESSAGES and $LANG at the time
+of running the application. See the gettext manual for details.
+
+| 
+
+Method Documentation
+--------------------
+
++--------------------------------------------------------------------------+
+|        \ string ctr(string *context*, string *text*)                     |
++--------------------------------------------------------------------------+
+
+Translate *text* using gettext and return the translation. *context* is
+only visible to the translator and helps disambiguating for very short
+texts
+
+| 
+
++--------------------------------------------------------------------------+
+|        \ string dctr(string *domain*, string *context*, string *text*)   |
++--------------------------------------------------------------------------+
+
+Translate *text* using gettext. Uses the specified domain *domain*
+instead of i18n.domain. *context* is only visible to the translator and
+helps disambiguating for very short texts
+
+| 
+
++--------------------------------------------------------------------------+
+|        \ string dtr(string *domain*, string *singular*, string *plural*, |
+| int *n*)                                                                 |
++--------------------------------------------------------------------------+
+
+Translate the given text using gettext. Should be called like this:
+tr(domain, "%1 file", "%1 files", count).arg(count) Uses *domain* for
+the domain instead of i18n.domain, and *singular* or *plural* as input
+for the translation depending on the number of items *n*.
+
+| 
+
++--------------------------------------------------------------------------+
+|        \ string dtr(string *domain*, string *text*)                      |
++--------------------------------------------------------------------------+
+
+Translate *text* using gettext. Uses the specified domain *domain*
+instead of i18n.domain.
+
+| 
+
++--------------------------------------------------------------------------+
+|        \ string relativeDateTime(datetime *dateTime*)                    |
++--------------------------------------------------------------------------+
+
+Translate a datetime based on proximity to current time.
+
+| 
+
++--------------------------------------------------------------------------+
+|        \ string tag(string *context*, string *text*)                     |
++--------------------------------------------------------------------------+
+
+Mark *text* for translation at a later point. Typically this allows an
+API to take the original string and pass it to dctr (or g\_dpgettext2).
+*context* is only visible to the translator and helps disambiguating for
+very short texts
+
+| 
+
++--------------------------------------------------------------------------+
+|        \ string tag(string *text*)                                       |
++--------------------------------------------------------------------------+
+
+Mark *text* for translation at a later point. Typically this allows an
+API to take the original string and pass it to dtr (or dgettext).
+
+.. code:: qml
+
+    import QtQuick 2.4
+    import UserMetrics 0.1
+    Metric {
+        name: "distance"
+        format: i18n.tag("Distance covered today: %1 km")
+        emptyFormat: i18n.tag("No running today")
+        domain: "runner.forest"
+    }
+
+The strings tagged for localzation above are passed to the
+implementation of UserMetrics verbatim, as well as the domain of the
+app. Display and translation of the strings will happen in the
+lockscreen, where the same strings will be passed to i18n.tr.
+
+| 
+
++--------------------------------------------------------------------------+
+|        \ string tr(string *singular*, string *plural*, int *n*)          |
++--------------------------------------------------------------------------+
+
+Translate the given input string *singular* or *plural* (depending on
+the number of items *n*) using gettext. Note that
+`tr() </sdk/apps/qml/Ubuntu.Components/i18n#tr-method>`__ does not
+automatically insert the values in the QString, so it should be called
+like this: tr("%1 file", "%1 files", count).arg(count)
+
+| 
+
++--------------------------------------------------------------------------+
+|        \ string tr(string *text*)                                        |
++--------------------------------------------------------------------------+
+
+Translate *text* using gettext and return the translation.
+
+| 

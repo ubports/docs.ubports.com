@@ -1,0 +1,138 @@
+
+
+.. rubric:: Mouse Types
+   :name: mouse-types
+
+-  `MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ type
+-  `MouseEvent </sdk/apps/qml/QtQuick/MouseEvent/>`__ object
+
+.. rubric:: Mouse Event Handling
+   :name: mouse-event-handling
+
+QML uses signals and handlers to deliver mouse interactions.
+Specifically, Qt Quick provides the
+`MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ and
+`MouseEvent </sdk/apps/qml/QtQuick/MouseEvent/>`__ types which allow
+developers to define signal handlers which accept mouse events within a
+defined area.
+
+.. rubric:: Defining a Mouse Area
+   :name: defining-a-mouse-area
+
+The `MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ type receives
+events within a defined area. One quick way to define this area is to
+anchor the ``MouseArea`` to its parent's area using the ``anchors.fill``
+property. If the parent is a
+`Rectangle </sdk/apps/qml/QtQuick/Rectangle/>`__ (or any
+`Item </sdk/apps/qml/QtQuick/Item/>`__ component), then the
+`MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ will fill the area
+defined by the parent's dimensions. Alternatively, an area smaller or
+larger than the parent is definable.
+
+.. code:: qml
+
+    Rectangle {
+        id: button
+        width: 100; height: 100
+        MouseArea {
+            anchors.fill: parent
+            onClicked: console.log("button clicked")
+        }
+        MouseArea {
+            width:150; height: 75
+            onClicked: console.log("irregular area clicked")
+        }
+    }
+
+.. rubric:: Receiving Events
+   :name: receiving-events
+
+The `MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ type provides
+signals and handlers to detect different mouse events. The
+`MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ type documentation
+describes these gestures in greater detail:
+
+-  canceled
+-  clicked
+-  doubleClicked
+-  entered
+-  exited
+-  positionChanged
+-  pressAndHold
+-  pressed
+-  released
+
+These signals have signal handlers that are invoked when the signals are
+emitted.
+
+.. code:: qml
+
+        MouseArea {
+            anchors.fill: parent
+            onClicked: console.log("area clicked")
+            onDoubleClicked: console.log("area double clicked")
+            onEntered: console.log("mouse entered the area")
+            onExited: console.log("mouse left the area")
+        }
+
+.. rubric:: Enabling Gestures
+   :name: enabling-gestures
+
+Some mouse gestures and button clicks need to be enabled before they
+send or receive events. Certain
+`MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ and
+`MouseEvent </sdk/apps/qml/QtQuick/MouseEvent/>`__ properties enable
+these gestures.
+
+To listen to (or explicitly ignore) a certain mouse button, set the
+appropriate mouse button to the
+`acceptedButtons </sdk/apps/qml/QtQuick/MouseArea#acceptedButtons-prop>`__
+property.
+
+Naturally, the mouse events, such as button presses and mouse positions,
+are sent during a mouse click. For example, the ``containsMouse``
+property will only retrieve its correct value during a mouse press. The
+`hoverEnabled </sdk/apps/qml/QtQuick/MouseArea#hoverEnabled-prop>`__
+will enable mouse events and positioning even when there are no mouse
+button presses. Setting the ``hoverEnabled`` property to ``true``, in
+turn will enable the ``entered``, ``exited``, and ``positionChanged``
+signal and their respective signal handlers.
+
+.. code:: qml
+
+        MouseArea {
+            hoverEnabled: true
+            acceptedButtons: Qt.LeftButton | Qt.RightButton
+            onEntered: console.log("mouse entered the area")
+            onExited: console.log("mouse left the area")
+        }
+
+Additionally, to disable the whole mouse area, set the
+`MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ ``enabled`` property to
+``false``.
+
+.. rubric:: MouseEvent Object
+   :name: mouseevent-object
+
+Signals and their handlers receive a
+`MouseEvent </sdk/apps/qml/QtQuick/MouseEvent/>`__ object as a
+parameter. The ``mouse`` object contain information about the mouse
+event. For example, the mouse button that started the event is queried
+through the
+`mouse.button </sdk/apps/qml/QtQuick/MouseEvent#button-prop>`__
+property.
+
+The ``MouseEvent`` object can also ignore a mouse event using its
+``accepted`` property.
+
+.. rubric:: Accepting Further Signals
+   :name: accepting-further-signals
+
+Many of the signals are sent multiple times to reflect various mouse
+events such as double clicking. To facilitate the classification of
+mouse clicks, the `MouseEvent </sdk/apps/qml/QtQuick/MouseEvent/>`__
+object has an ``accepted`` property to disable the event propagation.
+
+To learn more about QML's event system, please read the signals and
+handlers, and event system document.
+

@@ -1,0 +1,17 @@
+
+
+|image0|
+
+Files:
+
+-  dynamicscene/dynamicscene.qml
+-  dynamicscene/content/Button.qml
+-  dynamicscene/content/GenericSceneItem.qml
+-  dynamicscene/content/PaletteItem.qml
+-  dynamicscene/content/PerspectiveItem.qml
+-  dynamicscene/content/Sun.qml
+-  dynamicscene/content/itemCreation.js
+-  dynamicscene/dynamicscene.qmlproject
+
+.. |image0| image:: /media/sdk/apps/qml/qtqml-dynamicscene-example/images/qml-dynamicscene-example.png
+
