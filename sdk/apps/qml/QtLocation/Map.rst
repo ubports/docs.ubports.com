@@ -1,3 +1,7 @@
+.. _sdk_qtlocation_map:
+QtLocation Map
+==============
+
 The Map type displays a map.
 
 +---------------------+-------------------------+
@@ -9,51 +13,48 @@ The Map type displays a map.
 Properties
 ----------
 
--  ****`activeMapType </sdk/apps/qml/QtLocation/Map#activeMapType-prop>`__****
-   : MapType
--  ****`center </sdk/apps/qml/QtLocation/Map#center-prop>`__**** :
-   coordinate
--  ****`gesture </sdk/apps/qml/QtLocation/Map#gesture-prop>`__**** :
+-  :ref:`activeMapType <sdk_qtlocation_map_activeMapType-prop>` :
+   MapType
+-  :ref:`center <sdk_qtlocation_map_center-prop>` : coordinate
+-  :ref:`gesture <sdk_qtlocation_map_gesture-prop>` :
    MapGestureArea
--  ****`mapItems </sdk/apps/qml/QtLocation/Map#mapItems-prop>`__**** :
+-  :ref:`mapItems <sdk_qtlocation_map_mapItems-prop>` :
    list<MapItem>
--  ****`maximumZoomLevel </sdk/apps/qml/QtLocation/Map#maximumZoomLevel-prop>`__****
+-  :ref:`maximumZoomLevel <sdk_qtlocation_map_maximumZoomLevel-prop>`
    : real
--  ****`minimumZoomLevel </sdk/apps/qml/QtLocation/Map#minimumZoomLevel-prop>`__****
+-  :ref:`minimumZoomLevel <sdk_qtlocation_map_minimumZoomLevel-prop>`
    : real
--  ****`plugin </sdk/apps/qml/QtLocation/Map#plugin-prop>`__**** :
-   Plugin
--  ****`supportedMapTypes </sdk/apps/qml/QtLocation/Map#supportedMapTypes-prop>`__****
+-  :ref:`plugin <sdk_qtlocation_map_plugin-prop>` : Plugin
+-  :ref:`supportedMapTypes <sdk_qtlocation_map_supportedMapTypes-prop>`
    : list<MapType>
--  ****`zoomLevel </sdk/apps/qml/QtLocation/Map#zoomLevel-prop>`__**** :
-   real
+-  :ref:`zoomLevel <sdk_qtlocation_map_zoomLevel-prop>` : real
 
 Signals
 -------
 
--  ****`copyrightLinkActivated </sdk/apps/qml/QtLocation/Map#copyrightLinkActivated-signal>`__****\ (string
+-  :ref:`copyrightLinkActivated <sdk_qtlocation_map_copyrightLinkActivated-signal>`\ (string
    *link*)
 
 Methods
 -------
 
--  ****`addMapItem </sdk/apps/qml/QtLocation/Map#addMapItem-method>`__****\ (MapItem
+-  :ref:`addMapItem <sdk_qtlocation_map_addMapItem-method>`\ (MapItem
    *item*)
 -  void
-   ****`cameraStopped </sdk/apps/qml/QtLocation/Map#cameraStopped-method>`__****\ ()
+   **:ref:`cameraStopped <sdk_qtlocation_map#cameraStopped-method>`**\ ()
 -  void
-   ****`clearMapItems </sdk/apps/qml/QtLocation/Map#clearMapItems-method>`__****\ ()
--  ****`fitViewportToGeoShape </sdk/apps/qml/QtLocation/Map#fitViewportToGeoShape-method>`__****\ (QGeoShape
+   **:ref:`clearMapItems <sdk_qtlocation_map#clearMapItems-method>`**\ ()
+-  :ref:`fitViewportToGeoShape <sdk_qtlocation_map_fitViewportToGeoShape-method>`\ (QGeoShape
    *shape*)
--  ****`fitViewportToMapItems </sdk/apps/qml/QtLocation/Map#fitViewportToMapItems-method>`__****\ ()
--  void ****`pan </sdk/apps/qml/QtLocation/Map#pan-method>`__****\ (int
-   *dx*, int *dy*)
+-  :ref:`fitViewportToMapItems <sdk_qtlocation_map_fitViewportToMapItems-method>`\ ()
+-  void :ref:`pan <sdk_qtlocation_map_pan-method>`\ (int *dx*, int
+   *dy*)
 -  void
-   ****`removeMapItem </sdk/apps/qml/QtLocation/Map#removeMapItem-method>`__****\ (MapItem
+   **:ref:`removeMapItem <sdk_qtlocation_map#removeMapItem-method>`**\ (MapItem
    *item*)
--  ****`toCoordinate </sdk/apps/qml/QtLocation/Map#toCoordinate-method>`__****\ (QPointF
+-  :ref:`toCoordinate <sdk_qtlocation_map_toCoordinate-method>`\ (QPointF
    *screenPosition*)
--  ****`toScreenPosition </sdk/apps/qml/QtLocation/Map#toScreenPosition-method>`__****\ (coordinate
+-  :ref:`toScreenPosition <sdk_qtlocation_map_toScreenPosition-method>`\ (coordinate
    *coordinate*)
 
 Detailed Description
@@ -75,27 +76,27 @@ unit: the Map plugin. A Map plugin consists of a data source, as well as
 all other details needed to display its data on-screen.
 
 The current Map plugin in use is contained in the
-`plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__
+`plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_ 
 property of the Map item. In order to display any image in a Map item,
 you will need to set this property. See the
-`Plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__ type
+`Plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_  type
 for a description of how to retrieve an appropriate plugin for use.
 
 The geographic region displayed in the Map item is referred to as its
 viewport, and this is defined by the properties
-`center </sdk/apps/qml/QtLocation/Map#center-prop>`__, and
-`zoomLevel </sdk/apps/qml/QtLocation/Map#zoomLevel-prop>`__. The
-`center </sdk/apps/qml/QtLocation/Map#center-prop>`__ property contains
-a coordinate specifying the center of the viewport, while
-`zoomLevel </sdk/apps/qml/QtLocation/Map#zoomLevel-prop>`__ controls the
-scale of the map. See each of these properties for further details about
-their values.
+:ref:`center <sdk_qtlocation_map#center-prop>`, and
+:ref:`zoomLevel <sdk_qtlocation_map#zoomLevel-prop>`. The
+:ref:`center <sdk_qtlocation_map#center-prop>` property contains a
+coordinate specifying the center of the viewport, while
+:ref:`zoomLevel <sdk_qtlocation_map#zoomLevel-prop>` controls the scale of
+the map. See each of these properties for further details about their
+values.
 
 When the map is displayed, each possible geographic coordinate that is
 visible will map to some pixel X and Y coordinate on the screen. To
 perform conversions between these two, Map provides the
-`toCoordinate </sdk/apps/qml/QtLocation/Map#toCoordinate-method>`__ and
-`toScreenPosition </sdk/apps/qml/QtLocation/Map#toScreenPosition-method>`__
+:ref:`toCoordinate <sdk_qtlocation_map#toCoordinate-method>` and
+:ref:`toScreenPosition <sdk_qtlocation_map#toScreenPosition-method>`
 functions, which are of general utility.
 
 Map Objects
@@ -105,10 +106,10 @@ Map related objects can be declared within the body of a Map object in
 Qt Quick and will automatically appear on the Map. To add objects
 programmatically, first be sure they are created with the Map as their
 parent (for example in an argument to Component::createObject), and then
-call the `addMapItem </sdk/apps/qml/QtLocation/Map#addMapItem-method>`__
-method on the Map. A corresponding
-`removeMapItem </sdk/apps/qml/QtLocation/Map#removeMapItem-method>`__
-method also exists to do the opposite and remove an object from the Map.
+call the :ref:`addMapItem <sdk_qtlocation_map#addMapItem-method>` method on
+the Map. A corresponding
+:ref:`removeMapItem <sdk_qtlocation_map#removeMapItem-method>` method also
+exists to do the opposite and remove an object from the Map.
 
 Moving Map objects around, resizing them or changing their shape
 normally does not involve any special interaction with Map itself --
@@ -120,9 +121,8 @@ Interaction
 
 The Map type includes support for pinch and flick gestures to control
 zooming and panning. These are enabled by default, and available at any
-time by using the
-`gesture </sdk/apps/qml/QtLocation/Map#gesture-prop>`__ object. The
-actual GestureArea is constructed specially at startup and cannot be
+time by using the :ref:`gesture <sdk_qtlocation_map#gesture-prop>` object.
+The actual GestureArea is constructed specially at startup and cannot be
 replaced or destroyed. Its properties can be altered, however, to
 control its behavior.
 
@@ -174,21 +174,24 @@ the minimum zoom level, with gesture interaction enabled.
 Property Documentation
 ----------------------
 
+.. _sdk_qtlocation_map_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ activeMapType : `MapType </sdk/apps/qml/QtLocation/MapType/>`__ |
+| :ref:` <>`\ activeMapType : `MapType <sdk_qtlocation_maptype>`         |
 +--------------------------------------------------------------------------+
 
-Access to the currently active `map
-type </sdk/apps/qml/QtLocation/MapType/>`__.
+Access to the currently active :ref:`map type <sdk_qtlocation_maptype>`.
 
 This property can be set to change the active `map
-type </sdk/apps/qml/QtLocation/MapType/>`__. See the
-`supportedMapTypes </sdk/apps/qml/QtLocation/Map#supportedMapTypes-prop>`__
+type <sdk_qtlocation_maptype>:ref:`. See the
+:ref:`supportedMapTypes <sdk_qtlocation_map#supportedMapTypes-prop>`
 property for possible values.
 
-**See also** `MapType </sdk/apps/qml/QtLocation/MapType/>`__.
+**See also** :ref:`MapType <sdk_qtlocation_maptype>`.
 
 | 
+
+.. _sdk_qtlocation_map_center-prop:
 
 +--------------------------------------------------------------------------+
 |        \ center : coordinate                                             |
@@ -201,19 +204,20 @@ The default value is an arbitrary valid coordinate.
 
 | 
 
+.. _sdk_qtlocation_map_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ gesture :                                                       |
-| `MapGestureArea </sdk/apps/qml/QtLocation/MapGestureArea/>`__            |
+| :ref:` <>`\ gesture : `MapGestureArea <sdk_qtlocation_mapgesturearea>` |
 +--------------------------------------------------------------------------+
 
-Contains the
-`MapGestureArea </sdk/apps/qml/QtLocation/MapGestureArea/>`__ created
+Contains the :ref:`MapGestureArea <sdk_qtlocation_mapgesturearea>` created
 with the Map. This covers pan, flick and pinch gestures. Use
 ``gesture.enabled: true`` to enable basic gestures, or see
-`MapGestureArea </sdk/apps/qml/QtLocation/MapGestureArea/>`__ for
-further details.
+:ref:`MapGestureArea <sdk_qtlocation_mapgesturearea>` for further details.
 
 | 
+
+.. _sdk_qtlocation_map_mapItems-prop:
 
 +--------------------------------------------------------------------------+
 |        \ mapItems : list<MapItem>                                        |
@@ -222,16 +226,16 @@ further details.
 Returns the list of all map items in no particular order. These items
 include items that were declared statically as part of the type
 declaration, as well as dynamical items
-(`addMapItem </sdk/apps/qml/QtLocation/Map#addMapItem-method>`__,
-`MapItemView </sdk/apps/qml/QtLocation/MapItemView/>`__).
+(:ref:`addMapItem <sdk_qtlocation_map#addMapItem-method>`,
+:ref:`MapItemView <sdk_qtlocation_mapitemview>`).
 
-**See also**
-`addMapItem </sdk/apps/qml/QtLocation/Map#addMapItem-method>`__,
-`removeMapItem </sdk/apps/qml/QtLocation/Map#removeMapItem-method>`__,
-and
-`clearMapItems </sdk/apps/qml/QtLocation/Map#clearMapItems-method>`__.
+**See also** :ref:`addMapItem <sdk_qtlocation_map#addMapItem-method>`,
+:ref:`removeMapItem <sdk_qtlocation_map#removeMapItem-method>`, and
+:ref:`clearMapItems <sdk_qtlocation_map#clearMapItems-method>`.
 
 | 
+
+.. _sdk_qtlocation_map_maximumZoomLevel-prop:
 
 +--------------------------------------------------------------------------+
 |        \ maximumZoomLevel : real                                         |
@@ -240,10 +244,12 @@ and
 This property holds the maximum valid zoom level for the map.
 
 The maximum zoom level is defined by the
-`plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__ used.
+`plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_  used.
 If a plugin supporting mapping is not set, -1.0 is returned.
 
 | 
+
+.. _sdk_qtlocation_map_minimumZoomLevel-prop:
 
 +--------------------------------------------------------------------------+
 |        \ minimumZoomLevel : real                                         |
@@ -252,13 +258,15 @@ If a plugin supporting mapping is not set, -1.0 is returned.
 This property holds the minimum valid zoom level for the map.
 
 The minimum zoom level is defined by the
-`plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__ used.
+`plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_  used.
 If a plugin supporting mapping is not set, -1.0 is returned.
 
 | 
 
+.. _sdk_qtlocation_map_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ plugin : `Plugin </sdk/apps/qml/QtLocation/Plugin/>`__          |
+| :ref:` <>`\ plugin : `Plugin <sdk_qtlocation_plugin>`                  |
 +--------------------------------------------------------------------------+
 
 This property holds the plugin which provides the mapping functionality.
@@ -268,18 +276,20 @@ it, any attempted modifications of the plugin will be ignored.
 
 | 
 
+.. _sdk_qtlocation_map_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ supportedMapTypes :                                             |
-| list<`MapType </sdk/apps/qml/QtLocation/MapType/>`__>                    |
+| :ref:` <>`\ supportedMapTypes : list<`MapType <sdk_qtlocation_maptype>`>  |
 +--------------------------------------------------------------------------+
 
 This read-only property holds the set of `map
-types </sdk/apps/qml/QtLocation/MapType/>`__ supported by this map.
+types <sdk_qtlocation_maptype>:ref:` supported by this map.
 
-**See also**
-`activeMapType </sdk/apps/qml/QtLocation/Map#activeMapType-prop>`__.
+**See also** :ref:`activeMapType <sdk_qtlocation_map#activeMapType-prop>`.
 
 | 
+
+.. _sdk_qtlocation_map_zoomLevel-prop:
 
 +--------------------------------------------------------------------------+
 |        \ zoomLevel : real                                                |
@@ -295,6 +305,8 @@ always non-negative. The default value is 8.0.
 Signal Documentation
 --------------------
 
+.. _sdk_qtlocation_map_copyrightLinkActivated(string *link*)-prop:
+
 +--------------------------------------------------------------------------+
 |        \ copyrightLinkActivated(string *link*)                           |
 +--------------------------------------------------------------------------+
@@ -308,18 +320,20 @@ contents to the user.
 Method Documentation
 --------------------
 
+.. _sdk_qtlocation_map_addMapItem-method:
+
 +--------------------------------------------------------------------------+
 |        \ addMapItem(MapItem *item*)                                      |
 +--------------------------------------------------------------------------+
 
 Adds the given *item* to the Map (for example
-`MapQuickItem </sdk/apps/qml/QtLocation/MapQuickItem/>`__,
-`MapCircle </sdk/apps/qml/QtLocation/MapCircle/>`__). If the object
-already is on the Map, it will not be added again.
+:ref:`MapQuickItem <sdk_qtlocation_mapquickitem>`,
+:ref:`MapCircle <sdk_qtlocation_mapcircle>`). If the object already is on
+the Map, it will not be added again.
 
 As an example, consider the case where you have a
-`MapCircle </sdk/apps/qml/QtLocation/MapCircle/>`__ representing your
-current position:
+:ref:`MapCircle <sdk_qtlocation_mapcircle>` representing your current
+position:
 
 .. code:: qml
 
@@ -343,12 +357,13 @@ current position:
 
 **Note:** MapItemViews cannot be added with this method.
 
-**See also** `mapItems </sdk/apps/qml/QtLocation/Map#mapItems-prop>`__,
-`removeMapItem </sdk/apps/qml/QtLocation/Map#removeMapItem-method>`__,
-and
-`clearMapItems </sdk/apps/qml/QtLocation/Map#clearMapItems-method>`__.
+**See also** :ref:`mapItems <sdk_qtlocation_map#mapItems-prop>`,
+:ref:`removeMapItem <sdk_qtlocation_map#removeMapItem-method>`, and
+:ref:`clearMapItems <sdk_qtlocation_map#clearMapItems-method>`.
 
 | 
+
+.. _sdk_qtlocation_map_void cameraStopped-method:
 
 +--------------------------------------------------------------------------+
 |        \ void cameraStopped()                                            |
@@ -358,17 +373,21 @@ Optional hint that allows the map to prefetch during this idle period
 
 | 
 
+.. _sdk_qtlocation_map_void clearMapItems-method:
+
 +--------------------------------------------------------------------------+
 |        \ void clearMapItems()                                            |
 +--------------------------------------------------------------------------+
 
 Removes all items from the map.
 
-**See also** `mapItems </sdk/apps/qml/QtLocation/Map#mapItems-prop>`__,
-`addMapItem </sdk/apps/qml/QtLocation/Map#addMapItem-method>`__, and
-`removeMapItem </sdk/apps/qml/QtLocation/Map#removeMapItem-method>`__.
+**See also** :ref:`mapItems <sdk_qtlocation_map#mapItems-prop>`,
+:ref:`addMapItem <sdk_qtlocation_map#addMapItem-method>`, and
+:ref:`removeMapItem <sdk_qtlocation_map#removeMapItem-method>`.
 
 | 
+
+.. _sdk_qtlocation_map_fitViewportToGeoShape-method:
 
 +--------------------------------------------------------------------------+
 |        \ fitViewportToGeoShape(QGeoShape *shape*)                        |
@@ -379,6 +398,8 @@ positioned in the center of the shape, and at the largest integral zoom
 level possible which allows the whole shape to be visible on screen
 
 | 
+
+.. _sdk_qtlocation_map_fitViewportToMapItems-method:
 
 +--------------------------------------------------------------------------+
 |        \ fitViewportToMapItems()                                         |
@@ -391,6 +412,8 @@ screen
 
 | 
 
+.. _sdk_qtlocation_map_void pan-method:
+
 +--------------------------------------------------------------------------+
 |        \ void pan(int *dx*, int *dy*)                                    |
 +--------------------------------------------------------------------------+
@@ -401,27 +424,29 @@ pixels along the y-axis.
 Positive values for *dx* move the map right, negative values left.
 Positive values for *dy* move the map down, negative values up.
 
-During panning the
-`center </sdk/apps/qml/QtLocation/Map#center-prop>`__, and
-`zoomLevel </sdk/apps/qml/QtLocation/Map#zoomLevel-prop>`__ may change.
+During panning the :ref:`center <sdk_qtlocation_map#center-prop>`, and
+:ref:`zoomLevel <sdk_qtlocation_map#zoomLevel-prop>` may change.
 
 | 
+
+.. _sdk_qtlocation_map_void removeMapItem-method:
 
 +--------------------------------------------------------------------------+
 |        \ void removeMapItem(MapItem *item*)                              |
 +--------------------------------------------------------------------------+
 
 Removes the given *item* from the Map (for example
-`MapQuickItem </sdk/apps/qml/QtLocation/MapQuickItem/>`__,
-`MapCircle </sdk/apps/qml/QtLocation/MapCircle/>`__). If the MapItem
-does not exist or was not previously added to the map, the method does
-nothing.
+:ref:`MapQuickItem <sdk_qtlocation_mapquickitem>`,
+:ref:`MapCircle <sdk_qtlocation_mapcircle>`). If the MapItem does not exist
+or was not previously added to the map, the method does nothing.
 
-**See also** `mapItems </sdk/apps/qml/QtLocation/Map#mapItems-prop>`__,
-`addMapItem </sdk/apps/qml/QtLocation/Map#addMapItem-method>`__, and
-`clearMapItems </sdk/apps/qml/QtLocation/Map#clearMapItems-method>`__.
+**See also** :ref:`mapItems <sdk_qtlocation_map#mapItems-prop>`,
+:ref:`addMapItem <sdk_qtlocation_map#addMapItem-method>`, and
+:ref:`clearMapItems <sdk_qtlocation_map#clearMapItems-method>`.
 
 | 
+
+.. _sdk_qtlocation_map_toCoordinate-method:
 
 +--------------------------------------------------------------------------+
 |        \ toCoordinate(QPointF *screenPosition*)                          |
@@ -435,6 +460,8 @@ current viewport.
 
 | 
 
+.. _sdk_qtlocation_map_toScreenPosition-method:
+
 +--------------------------------------------------------------------------+
 |        \ toScreenPosition(coordinate *coordinate*)                       |
 +--------------------------------------------------------------------------+
@@ -447,5 +474,5 @@ viewport.
 
 | 
 
-.. |image0| image:: /media/sdk/apps/qml/QtLocation/Map/images/sdk-map.png
+.. |image0| image:: /mediasdk_qtlocation_mapimages/sdk-map.png
 

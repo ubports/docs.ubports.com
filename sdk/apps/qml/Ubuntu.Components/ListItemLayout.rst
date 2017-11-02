@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_listitemlayout:
+Ubuntu.Components ListItemLayout
+================================
+
 ListItemLayout provides an easy way to create list items which follow
 Ubuntu design standards, thus making them visually appealing and
 consistent with the rest of the platform without effort.
@@ -7,79 +11,73 @@ consistent with the rest of the platform without effort.
 +--------------------------------------+--------------------------------------+
 | Since:                               | Ubuntu.Components 1.3                |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `SlotsLayout </sdk/apps/qml/Ubuntu.C |
-|                                      | omponents/SlotsLayout/>`__           |
+| Inherits:                            | :ref:`SlotsLayout <sdk_ubuntu_components_ |
+|                                      | slotslayout>`_                       |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`subtitle </sdk/apps/qml/Ubuntu.Components/ListItemLayout#subtitle-prop>`__****
+-  :ref:`subtitle <sdk_ubuntu_components_listitemlayout_subtitle-prop>`
    : Label
--  ****`summary </sdk/apps/qml/Ubuntu.Components/ListItemLayout#summary-prop>`__****
+-  :ref:`summary <sdk_ubuntu_components_listitemlayout_summary-prop>`
    : Label
--  ****`title </sdk/apps/qml/Ubuntu.Components/ListItemLayout#title-prop>`__****
-   : Label
+-  :ref:`title <sdk_ubuntu_components_listitemlayout_title-prop>` :
+   Label
 
 Detailed Description
 --------------------
 
-`ListItemLayout </sdk/apps/qml/Ubuntu.Components/ListItemLayout/>`__ is
-essentially a
-`SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__ with a
-predefined
-`SlotsLayout::mainSlot </sdk/apps/qml/Ubuntu.Components/SlotsLayout#mainSlot-prop>`__
+:ref:`ListItemLayout <sdk_ubuntu_components_listitemlayout>` is essentially
+a :ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>` with a predefined
+:ref:`SlotsLayout::mainSlot <sdk_ubuntu_components_slotslayout#mainSlot-prop>`
 that provides (up to) 3 Labels automatically laid out according to our
 UI guidelines.
 
 **Note**: those labels may have properties whose default value is
 different from what is used by the standard Label component. The default
 wrapMode, for instance, is different. Have a look at `Labels'
-properties </sdk/apps/qml/Ubuntu.Components/ListItemLayout#labels-properties>`__
+properties <sdk_ubuntu_components_listitemlayout#labels-properties>:ref:`
 section.
 
 This main slot has been optimized to cover most of the usecases without
 compromising performance (read more in `Optimizing memory
-consumption </sdk/apps/qml/Ubuntu.Components/ListItemLayout#optimizing-memory-consumption>`__).
+consumption <sdk_ubuntu_components_listitemlayout#optimizing-memory-consumption>:ref:`).
 
 We're aware there could be usecases which the
-`SlotsLayout::mainSlot </sdk/apps/qml/Ubuntu.Components/SlotsLayout#mainSlot-prop>`__
-provided by
-`ListItemLayout </sdk/apps/qml/Ubuntu.Components/ListItemLayout/>`__
+:ref:`SlotsLayout::mainSlot <sdk_ubuntu_components_slotslayout#mainSlot-prop>`
+provided by :ref:`ListItemLayout <sdk_ubuntu_components_listitemlayout>`
 doesn't cover. If that is the case, please use
-`SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__ instead
-of `ListItemLayout </sdk/apps/qml/Ubuntu.Components/ListItemLayout/>`__
-and provide your own
-`SlotsLayout::mainSlot </sdk/apps/qml/Ubuntu.Components/SlotsLayout#mainSlot-prop>`__.
+:ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>` instead of
+:ref:`ListItemLayout <sdk_ubuntu_components_listitemlayout>` and provide
+your own
+:ref:`SlotsLayout::mainSlot <sdk_ubuntu_components_slotslayout#mainSlot-prop>`.
 
-`ListItemLayout </sdk/apps/qml/Ubuntu.Components/ListItemLayout/>`__
-works similarly to
-`QtQuick <http://doc.qt.io/qt-5/qtquick-qmlmodule.html>`__'s Row, but
+:ref:`ListItemLayout <sdk_ubuntu_components_listitemlayout>` works
+similarly to
+`QtQuick <http://doc.qt.io/qt-5/qtquick-qmlmodule.html>`_ 's Row, but
 while Row just positions its children in a horizontal formation,
-`ListItemLayout </sdk/apps/qml/Ubuntu.Components/ListItemLayout/>`__
-also tweaks their vertical position to ensure a clean layout.
+:ref:`ListItemLayout <sdk_ubuntu_components_listitemlayout>` also tweaks
+their vertical position to ensure a clean layout.
 
-We will call
-`ListItemLayout </sdk/apps/qml/Ubuntu.Components/ListItemLayout/>`__'s
+We will call :ref:`ListItemLayout <sdk_ubuntu_components_listitemlayout>`'s
 visual children "slots".
-`ListItemLayout </sdk/apps/qml/Ubuntu.Components/ListItemLayout/>`__
-positions its slots automatically, following the visual rules specified
-by the Ubuntu Design team. Because we think flexibility is an important
-value of our UI components, we made it possible to tweak the position of
-each slot by modifying its attached properties (see `Advanced layout
-tweaks </sdk/apps/qml/Ubuntu.Components/SlotsLayout#advanced-layout-tweaks>`__).
+:ref:`ListItemLayout <sdk_ubuntu_components_listitemlayout>` positions its
+slots automatically, following the visual rules specified by the Ubuntu
+Design team. Because we think flexibility is an important value of our
+UI components, we made it possible to tweak the position of each slot by
+modifying its attached properties (see `Advanced layout
+tweaks <sdk_ubuntu_components_slotslayout#advanced-layout-tweaks>:ref:`).
 
 **Note** that if you're wrapping the
-`ListItemLayout </sdk/apps/qml/Ubuntu.Components/ListItemLayout/>`__ in
-a container such as
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__, **you will
-have to specify the height of the container so that it follows
-`ListItemLayout </sdk/apps/qml/Ubuntu.Components/ListItemLayout/>`__'s
-height**, otherwise the layout content may appear clipped or not
-vertically centered.
+:ref:`ListItemLayout <sdk_ubuntu_components_listitemlayout>` in a container
+such as :ref:`ListItem <sdk_ubuntu_components_listitem>`, **you will have
+to specify the height of the container so that it follows
+:ref:`ListItemLayout <sdk_ubuntu_components_listitemlayout>`'s height**,
+otherwise the layout content may appear clipped or not vertically
+centered.
 
-See
-**`here </sdk/apps/qml/Ubuntu.Components/SlotsLayout#resizing-the-layout>`__**
+See **:ref:`here <sdk_ubuntu_components_slotslayout#resizing-the-layout>`**
 for more details. Here's an example:
 
 .. code:: qml
@@ -98,29 +96,26 @@ for more details. Here's an example:
     }
 
 If you need a progression symbol in your list item, just add
-`ProgressionSlot </sdk/apps/qml/Ubuntu.Components/ProgressionSlot/>`__
-as a child of your
-`ListItemLayout </sdk/apps/qml/Ubuntu.Components/ListItemLayout/>`__. No
+:ref:`ProgressionSlot <sdk_ubuntu_components_progressionslot>` as a child
+of your :ref:`ListItemLayout <sdk_ubuntu_components_listitemlayout>`. No
 manual positioning is needed, the layout will handle it for you.
 
 To read more about advanced slots positioning or how to handle input
 (mouse or touch) in
-`ListItemLayout </sdk/apps/qml/Ubuntu.Components/ListItemLayout/>`__,
-see `SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__
-documentation.
+:ref:`ListItemLayout <sdk_ubuntu_components_listitemlayout>`, see
+:ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>` documentation.
 
 If you don't need the features provided by
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ (such as the
-swiping actions), you can also use
-`ListItemLayout </sdk/apps/qml/Ubuntu.Components/ListItemLayout/>`__
-directly as root of your list view delegate or inside a
-`MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__, as explained in `Input
-handling </sdk/apps/qml/Ubuntu.Components/SlotsLayout#input-handling>`__.
+:ref:`ListItem <sdk_ubuntu_components_listitem>` (such as the swiping
+actions), you can also use
+:ref:`ListItemLayout <sdk_ubuntu_components_listitemlayout>` directly as
+root of your list view delegate or inside a
+:ref:`MouseArea <sdk_qtquick_mousearea>`, as explained in `Input
+handling <sdk_ubuntu_components_slotslayout#input-handling>:ref:`.
 
 The following code example shows how easy it is to create even non
-trivial list items using
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ and
-`ListItemLayout </sdk/apps/qml/Ubuntu.Components/ListItemLayout/>`__:
+trivial list items using :ref:`ListItem <sdk_ubuntu_components_listitem>`
+and :ref:`ListItemLayout <sdk_ubuntu_components_listitemlayout>`:
 
 .. code:: qml
 
@@ -140,16 +135,15 @@ trivial list items using
         }
     }
 
-Although
-`ListItemLayout </sdk/apps/qml/Ubuntu.Components/ListItemLayout/>`__
+Although :ref:`ListItemLayout <sdk_ubuntu_components_listitemlayout>`
 covers most of the usecases, there might be times where you might want
 to tweak the position of one or more slots. The following example shows
 one way to implement a list item with a trailing slot holding two
 labels. What is special about this example is that we want the baseline
 of one label inside the trailing slot to align to
-`title </sdk/apps/qml/Ubuntu.Components/ListItemLayout#title-prop>`__'s
-baseline and the baseline of the other label to align to
-`subtitle </sdk/apps/qml/Ubuntu.Components/ListItemLayout#subtitle-prop>`__'s
+:ref:`title <sdk_ubuntu_components_listitemlayout#title-prop>`'s baseline
+and the baseline of the other label to align to
+:ref:`subtitle <sdk_ubuntu_components_listitemlayout#subtitle-prop>`'s
 baseline.
 
 .. code:: qml
@@ -197,38 +191,33 @@ Labels layout
 -------------
 
 The labels in
-`ListItemLayout </sdk/apps/qml/Ubuntu.Components/ListItemLayout/>`__'s
-default
-`SlotsLayout::mainSlot </sdk/apps/qml/Ubuntu.Components/SlotsLayout#mainSlot-prop>`__
+:ref:`ListItemLayout <sdk_ubuntu_components_listitemlayout>`'s default
+:ref:`SlotsLayout::mainSlot <sdk_ubuntu_components_slotslayout#mainSlot-prop>`
 are laid out in a column. The
-`title </sdk/apps/qml/Ubuntu.Components/ListItemLayout#title-prop>`__ is
+:ref:`title <sdk_ubuntu_components_listitemlayout#title-prop>` is
 positioned at the top, followed by
-`subtitle </sdk/apps/qml/Ubuntu.Components/ListItemLayout#subtitle-prop>`__
-and
-`summary </sdk/apps/qml/Ubuntu.Components/ListItemLayout#summary-prop>`__,
+:ref:`subtitle <sdk_ubuntu_components_listitemlayout#subtitle-prop>` and
+:ref:`summary <sdk_ubuntu_components_listitemlayout#summary-prop>`,
 respectively.
 
-The
-`subtitle </sdk/apps/qml/Ubuntu.Components/ListItemLayout#subtitle-prop>`__
+The :ref:`subtitle <sdk_ubuntu_components_listitemlayout#subtitle-prop>`
 has its top anchored to
-`title </sdk/apps/qml/Ubuntu.Components/ListItemLayout#title-prop>`__'s
-bottom, with a margin of 2 DPs.
+:ref:`title <sdk_ubuntu_components_listitemlayout#title-prop>`'s bottom,
+with a margin of 2 DPs.
 
-The
-`summary </sdk/apps/qml/Ubuntu.Components/ListItemLayout#summary-prop>`__
-has its top tightly anchored to
-`subtitle </sdk/apps/qml/Ubuntu.Components/ListItemLayout#subtitle-prop>`__'s
+The :ref:`summary <sdk_ubuntu_components_listitemlayout#summary-prop>` has
+its top tightly anchored to
+:ref:`subtitle <sdk_ubuntu_components_listitemlayout#subtitle-prop>`'s
 bottom.
 
 The height of the default
-`SlotsLayout::mainSlot </sdk/apps/qml/Ubuntu.Components/SlotsLayout#mainSlot-prop>`__
-provided with
-`ListItemLayout </sdk/apps/qml/Ubuntu.Components/ListItemLayout/>`__ is
-the minimum height required to accomodate the **visible** and
+:ref:`SlotsLayout::mainSlot <sdk_ubuntu_components_slotslayout#mainSlot-prop>`
+provided with :ref:`ListItemLayout <sdk_ubuntu_components_listitemlayout>`
+is the minimum height required to accomodate the **visible** and
 **non-empty** labels it holds. If only
-`title </sdk/apps/qml/Ubuntu.Components/ListItemLayout#title-prop>`__ is
-visible and has a non-empty text set, for instance, the height of the
-main slot will be ``title.height``.
+:ref:`title <sdk_ubuntu_components_listitemlayout#title-prop>` is visible
+and has a non-empty text set, for instance, the height of the main slot
+will be ``title.height``.
 
 If you wish to have the layout process accomodate a label which doesn't
 have a defined text yet, you should set its text property to " ", as
@@ -243,43 +232,40 @@ shown in the following example:
     }
 
 That will make sure
-`SlotsLayout::mainSlot </sdk/apps/qml/Ubuntu.Components/SlotsLayout#mainSlot-prop>`__
+:ref:`SlotsLayout::mainSlot <sdk_ubuntu_components_slotslayout#mainSlot-prop>`
 is resized to accomodate the (currently empty) subtitle.
 
 This is useful, for instance, if you want all list items in a list view
 to have the same height even without having to fill
-`subtitle </sdk/apps/qml/Ubuntu.Components/ListItemLayout#subtitle-prop>`__'s
-(or summary's) text with dummy content.
+:ref:`subtitle <sdk_ubuntu_components_listitemlayout#subtitle-prop>`'s (or
+summary's) text with dummy content.
 
 Labels' properties
 ------------------
 
-`ListItemLayout </sdk/apps/qml/Ubuntu.Components/ListItemLayout/>`__'s
-labels are the same component as
-`Label </sdk/apps/qml/Ubuntu.Components/Label/>`__, but with slightly
-different default properties. Moreover,
-`Label </sdk/apps/qml/Ubuntu.Components/Label/>`__ derives from
-`Text </sdk/apps/qml/QtQuick/qtquick-releasenotes#text>`__. As a
+:ref:`ListItemLayout <sdk_ubuntu_components_listitemlayout>`'s labels are
+the same component as :ref:`Label <sdk_ubuntu_components_label>`, but with
+slightly different default properties. Moreover,
+:ref:`Label <sdk_ubuntu_components_label>` derives from
+`Text </sdk/apps/qml/QtQuick/qtquick-releasenotes/#text>`_ . As a
 consequence, you can access and override all the properties provided by
-`Text </sdk/apps/qml/QtQuick/qtquick-releasenotes#text>`__ and
-`Label </sdk/apps/qml/Ubuntu.Components/Label/>`__, if needed. Please
-refer to `Text </sdk/apps/qml/QtQuick/qtquick-releasenotes#text>`__'s
-and `Label </sdk/apps/qml/Ubuntu.Components/Label/>`__'s documentation
-to see the list of all the properties.
+`Text </sdk/apps/qml/QtQuick/qtquick-releasenotes/#text>`_  and
+:ref:`Label <sdk_ubuntu_components_label>`, if needed. Please refer to
+`Text </sdk/apps/qml/QtQuick/qtquick-releasenotes/#text>`_ 's and
+:ref:`Label <sdk_ubuntu_components_label>`'s documentation to see the list
+of all the properties.
 
 The default values for
-`ListItemLayout </sdk/apps/qml/Ubuntu.Components/ListItemLayout/>`__'s
-labels are defined in the documentation of each label. See
-`title </sdk/apps/qml/Ubuntu.Components/ListItemLayout#title-prop>`__,
-`subtitle </sdk/apps/qml/Ubuntu.Components/ListItemLayout#subtitle-prop>`__
-and
-`summary </sdk/apps/qml/Ubuntu.Components/ListItemLayout#summary-prop>`__.
+:ref:`ListItemLayout <sdk_ubuntu_components_listitemlayout>`'s labels are
+defined in the documentation of each label. See
+:ref:`title <sdk_ubuntu_components_listitemlayout#title-prop>`,
+:ref:`subtitle <sdk_ubuntu_components_listitemlayout#subtitle-prop>` and
+:ref:`summary <sdk_ubuntu_components_listitemlayout#summary-prop>`.
 
 **Note**: if you want to change the elide mode of a label to something
 other than ``Text.ElideRight``, make sure its ``wrapMode`` is set to
-``Text.NoWrap``. See
-`Text::wrapMode </sdk/apps/qml/QtQuick/Text#wrapMode-prop>`__ for more
-details.
+:ref:``Text.NoWrap``. See `Text::wrapMode <sdk_qtquick_text#wrapMode-prop>`
+for more details.
 
 .. code:: qml
 
@@ -305,7 +291,7 @@ Optimizing memory consumption
 -----------------------------
 
 In order to minimize memory consumption, the Labels in the
-`SlotsLayout::mainSlot </sdk/apps/qml/Ubuntu.Components/SlotsLayout#mainSlot-prop>`__
+:ref:`SlotsLayout::mainSlot <sdk_ubuntu_components_slotslayout#mainSlot-prop>`
 are only allocated in memory on demand, i.e. the first time one of their
 properties is queried.
 
@@ -335,7 +321,7 @@ About aliasing labels properties
 
 Due to the way ListItemsLayout's labels are created (see `Optimizing
 memory
-consumption </sdk/apps/qml/Ubuntu.Components/ListItemLayout#optimizing-memory-consumption>`__)
+consumption <sdk_ubuntu_components_listitemlayout#optimizing-memory-consumption>:ref:`)
 it is not possible to directly alias their properties. It is still
 possible, however, to expose an API that gives indirect read-write
 access to those properties. The following code:
@@ -406,65 +392,68 @@ ListViews like usual.
 Note how title's properties are all accessible via the "title"
 identifier.
 
-**See also**
-`SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__ and
-`ProgressionSlot </sdk/apps/qml/Ubuntu.Components/ProgressionSlot/>`__.
+**See also** :ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>` and
+:ref:`ProgressionSlot <sdk_ubuntu_components_progressionslot>`.
 
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_listitemlayout_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ subtitle : `Label </sdk/apps/qml/Ubuntu.Components/Label/>`__   |
+| :ref:` <>`\ subtitle : `Label <sdk_ubuntu_components_label>`           |
 +--------------------------------------------------------------------------+
 
 This property defines the subtitle label and its properties. Styling and
 font properties can be set by using the prefix ``subtitle.`` in a
 similar way as shown in
-`title </sdk/apps/qml/Ubuntu.Components/ListItemLayout#title-prop>`__.
+:ref:`title <sdk_ubuntu_components_listitemlayout#title-prop>`.
 
-The default `Text::elide </sdk/apps/qml/QtQuick/Text#elide-prop>`__
-value for subtitle is ``Text.ElideRight``.
+The default :ref:`Text::elide <sdk_qtquick_text#elide-prop>` value for
+subtitle is ``Text.ElideRight``.
 
-The default
-`Text::wrapMode </sdk/apps/qml/QtQuick/Text#wrapMode-prop>`__ is
+The default :ref:`Text::wrapMode <sdk_qtquick_text#wrapMode-prop>` is
 ``Text.WrapAnywhere``.
 
 The default
-`Label::textSize </sdk/apps/qml/Ubuntu.Components/Label#textSize-prop>`__
-is ``Label.Small``.
+:ref:`Label::textSize <sdk_ubuntu_components_label#textSize-prop>` is
+``Label.Small``.
 
 The rest of the properties have the same default values as
-`Label </sdk/apps/qml/Ubuntu.Components/Label/>`__.
+:ref:`Label <sdk_ubuntu_components_label>`.
 
 | 
 
+.. _sdk_ubuntu_components_listitemlayout_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ summary : `Label </sdk/apps/qml/Ubuntu.Components/Label/>`__    |
+| :ref:` <>`\ summary : `Label <sdk_ubuntu_components_label>`            |
 +--------------------------------------------------------------------------+
 
 This property defines the subtitle label and its properties. Styling and
 font properties can be set by using the prefix ``summary.`` in a similar
 way as shown in
-`title </sdk/apps/qml/Ubuntu.Components/ListItemLayout#title-prop>`__.
+:ref:`title <sdk_ubuntu_components_listitemlayout#title-prop>`.
 
-The default `Text::elide </sdk/apps/qml/QtQuick/Text#elide-prop>`__
-value for summary is ``Text.ElideRight``.
+The default :ref:`Text::elide <sdk_qtquick_text#elide-prop>` value for
+summary is ``Text.ElideRight``.
 
-The default
-`Text::wrapMode </sdk/apps/qml/QtQuick/Text#wrapMode-prop>`__ is
+The default :ref:`Text::wrapMode <sdk_qtquick_text#wrapMode-prop>` is
 ``Text.WrapAnywhere``.
 
 The default
-`Label::textSize </sdk/apps/qml/Ubuntu.Components/Label#textSize-prop>`__
-is ``Label.Small``.
+:ref:`Label::textSize <sdk_ubuntu_components_label#textSize-prop>` is
+``Label.Small``.
 
 The rest of the properties have the same default values as
-`Label </sdk/apps/qml/Ubuntu.Components/Label/>`__.
+:ref:`Label <sdk_ubuntu_components_label>`.
 
 | 
 
+.. _sdk_ubuntu_components_listitemlayout_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ title : `Label </sdk/apps/qml/Ubuntu.Components/Label/>`__      |
+| :ref:` <>`\ title : `Label <sdk_ubuntu_components_label>`              |
 +--------------------------------------------------------------------------+
 
 This property defines the title label and its properties. Styling and
@@ -483,23 +472,22 @@ shown in the following example:
         title.text: "Red Roses\nrun no risk,\nsir, on nurses order."
     }
 
-The default `Text::elide </sdk/apps/qml/QtQuick/Text#elide-prop>`__
-value for title is ``Text.ElideRight``.
+The default :ref:`Text::elide <sdk_qtquick_text#elide-prop>` value for
+title is ``Text.ElideRight``.
 
-The default
-`Text::wrapMode </sdk/apps/qml/QtQuick/Text#wrapMode-prop>`__ is
+The default :ref:`Text::wrapMode <sdk_qtquick_text#wrapMode-prop>` is
 ``Text.WrapAnywhere``.
 
 That means, for instance, that if you want to use a different elide
 mode, you also have to set wrapMode to ``Text.NoWrap``. Refer to the
-official `Text </sdk/apps/qml/QtQuick/qtquick-releasenotes#text>`__
+official `Text </sdk/apps/qml/QtQuick/qtquick-releasenotes/#text>`_ 
 documentation for further details.
 
 The default
-`Label::textSize </sdk/apps/qml/Ubuntu.Components/Label#textSize-prop>`__
-is ``Label.Medium``.
+:ref:`Label::textSize <sdk_ubuntu_components_label#textSize-prop>` is
+``Label.Medium``.
 
 The rest of the properties have the same default values as
-`Label </sdk/apps/qml/Ubuntu.Components/Label/>`__.
+:ref:`Label <sdk_ubuntu_components_label>`.
 
 | 

@@ -1,3 +1,7 @@
+.. _sdk_qtorganizer_todooccurrence:
+QtOrganizer TodoOccurrence
+==========================
+
 The TodoOccurrence element provides an occurrence of an event.
 
 +---------------------+--------------------------+
@@ -7,29 +11,29 @@ The TodoOccurrence element provides an occurrence of an event.
 Properties
 ----------
 
--  ****`allDay </sdk/apps/qml/QtOrganizer/TodoOccurrence#allDay-prop>`__****
-   : bool
--  ****`dueDateTime </sdk/apps/qml/QtOrganizer/TodoOccurrence#dueDateTime-prop>`__****
+-  :ref:`allDay <sdk_qtorganizer_todooccurrence_allDay-prop>` :
+   bool
+-  :ref:`dueDateTime <sdk_qtorganizer_todooccurrence_dueDateTime-prop>`
    : date
--  ****`finishedDateTime </sdk/apps/qml/QtOrganizer/TodoOccurrence#finishedDateTime-prop>`__****
+-  :ref:`finishedDateTime <sdk_qtorganizer_todooccurrence_finishedDateTime-prop>`
    : date
--  ****`originalDate </sdk/apps/qml/QtOrganizer/TodoOccurrence#originalDate-prop>`__****
+-  :ref:`originalDate <sdk_qtorganizer_todooccurrence_originalDate-prop>`
    : date
--  ****`parentId </sdk/apps/qml/QtOrganizer/TodoOccurrence#parentId-prop>`__****
+-  :ref:`parentId <sdk_qtorganizer_todooccurrence_parentId-prop>` :
+   int
+-  :ref:`percentageComplete <sdk_qtorganizer_todooccurrence_percentageComplete-prop>`
    : int
--  ****`percentageComplete </sdk/apps/qml/QtOrganizer/TodoOccurrence#percentageComplete-prop>`__****
-   : int
--  ****`priority </sdk/apps/qml/QtOrganizer/TodoOccurrence#priority-prop>`__****
-   : enumeration
--  ****`startDateTime </sdk/apps/qml/QtOrganizer/TodoOccurrence#startDateTime-prop>`__****
+-  :ref:`priority <sdk_qtorganizer_todooccurrence_priority-prop>` :
+   enumeration
+-  :ref:`startDateTime <sdk_qtorganizer_todooccurrence_startDateTime-prop>`
    : date
--  ****`status </sdk/apps/qml/QtOrganizer/TodoOccurrence#status-prop>`__****
-   : enumeration
+-  :ref:`status <sdk_qtorganizer_todooccurrence_status-prop>` :
+   enumeration
 
 Signals
 -------
 
--  ****`onItemChanged </sdk/apps/qml/QtOrganizer/TodoOccurrence#onItemChanged-signal>`__****\ ()
+-  :ref:`onItemChanged <sdk_qtorganizer_todooccurrence_onItemChanged-signal>`\ ()
 
 Detailed Description
 --------------------
@@ -39,6 +43,8 @@ and QOrganizerTodoOccurrence.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtorganizer_todooccurrence_allDay-prop:
 
 +--------------------------------------------------------------------------+
 |        \ allDay : bool                                                   |
@@ -51,6 +57,8 @@ and the todo occurrence will be an all-day item.
 
 | 
 
+.. _sdk_qtorganizer_todooccurrence_dueDateTime-prop:
+
 +--------------------------------------------------------------------------+
 |        \ dueDateTime : date                                              |
 +--------------------------------------------------------------------------+
@@ -58,6 +66,8 @@ and the todo occurrence will be an all-day item.
 This property holds the date time by which the task should be completed.
 
 | 
+
+.. _sdk_qtorganizer_todooccurrence_finishedDateTime-prop:
 
 +--------------------------------------------------------------------------+
 |        \ finishedDateTime : date                                         |
@@ -68,6 +78,8 @@ if known.
 
 | 
 
+.. _sdk_qtorganizer_todooccurrence_originalDate-prop:
+
 +--------------------------------------------------------------------------+
 |        \ originalDate : date                                             |
 +--------------------------------------------------------------------------+
@@ -76,6 +88,8 @@ This property holds the date at which the occurrence was originally
 going to occur.
 
 | 
+
+.. _sdk_qtorganizer_todooccurrence_parentId-prop:
 
 +--------------------------------------------------------------------------+
 |        \ parentId : int                                                  |
@@ -86,6 +100,8 @@ parent.
 
 | 
 
+.. _sdk_qtorganizer_todooccurrence_percentageComplete-prop:
+
 +--------------------------------------------------------------------------+
 |        \ percentageComplete : int                                        |
 +--------------------------------------------------------------------------+
@@ -94,6 +110,8 @@ This property holds the percentage of progress completed on the task
 described by the todo item.
 
 | 
+
+.. _sdk_qtorganizer_todooccurrence_priority-prop:
 
 +--------------------------------------------------------------------------+
 |        \ priority : enumeration                                          |
@@ -115,6 +133,8 @@ be one of:
 
 | 
 
+.. _sdk_qtorganizer_todooccurrence_startDateTime-prop:
+
 +--------------------------------------------------------------------------+
 |        \ startDateTime : date                                            |
 +--------------------------------------------------------------------------+
@@ -123,6 +143,8 @@ This property holds the date time at which the task should be started.
 
 | 
 
+.. _sdk_qtorganizer_todooccurrence_status-prop:
+
 +--------------------------------------------------------------------------+
 |        \ status : enumeration                                            |
 +--------------------------------------------------------------------------+
@@ -130,20 +152,22 @@ This property holds the date time at which the task should be started.
 This property holds the progress status of the task described by the
 todo occurrence. The value can be one of:
 
--  `TodoProgress </sdk/apps/qml/QtOrganizer/TodoProgress/>`__.NotStarted
--  `TodoProgress </sdk/apps/qml/QtOrganizer/TodoProgress/>`__.InProgress
--  `TodoProgress </sdk/apps/qml/QtOrganizer/TodoProgress/>`__.Complete
+-  :ref:`TodoProgress <sdk_qtorganizer_todoprogress>`.NotStarted
+-  :ref:`TodoProgress <sdk_qtorganizer_todoprogress>`.InProgress
+-  :ref:`TodoProgress <sdk_qtorganizer_todoprogress>`.Complete
 
 | 
 
 Signal Documentation
 --------------------
 
+.. _sdk_qtorganizer_todooccurrence_onItemChanged()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ onItemChanged()                                                 |
 +--------------------------------------------------------------------------+
 
 **See also**
-`OrganizerItem::onItemChanged </sdk/apps/qml/QtOrganizer/OrganizerItem#onItemChanged-signal>`__.
+:ref:`OrganizerItem::onItemChanged <sdk_qtorganizer_organizeritem#onItemChanged-signal>`.
 
 | 

@@ -1,3 +1,7 @@
+.. _sdk_qtqml_identified_modules:
+QtQml Identified Modules
+========================
+
 
 
 Identified modules are modules that are installed and identifiable to
@@ -15,7 +19,7 @@ with a mandatory version number:
     import com.nokia.qml.mymodule 1.0
 
 Identified modules must be installed into the `import
-path </sdk/apps/qml/QtQml/qtqml-syntax-imports#qml-import-path>`__ in
+path </sdk/apps/qml/QtQml/qtqml-syntax-imports/#qml-import-path>`_  in
 order to be found by the QML engine.
 
 .. rubric:: Locally Installed Identified Modules
@@ -23,25 +27,25 @@ order to be found by the QML engine.
 
 A directory of QML and/or C++ files can be shared as an identified
 module if it contains a `qmldir
-file </sdk/apps/qml/QtQml/qtqml-modules-qmldir/>`__ with the module
+file </sdk/apps/qml/QtQml/qtqml-modules-qmldir/>`_  with the module
 metadata and is installed into the QML import path. Any QML file on the
 local file system can import this directory as a module by using an
-`import </sdk/apps/qml/QtQml/qtqml-syntax-imports/>`__ statement that
+`import </sdk/apps/qml/QtQml/qtqml-syntax-imports/>`_  statement that
 refers to the module's URI, enabling the file to use the `QML object
-types </sdk/apps/qml/QtQml/qtqml-typesystem-objecttypes/>`__ and
+types </sdk/apps/qml/QtQml/qtqml-typesystem-objecttypes/>`_  and
 `JavaScript
-resources </sdk/apps/qml/QtQml/qtqml-javascript-resources/>`__ defined
+resources </sdk/apps/qml/QtQml/qtqml-javascript-resources/>`_  defined
 by the module.
 
 The module's ``qmldir`` file must reside in a directory structure within
 the `import
-path </sdk/apps/qml/QtQml/qtqml-syntax-imports#qml-import-path>`__ that
+path </sdk/apps/qml/QtQml/qtqml-syntax-imports/#qml-import-path>`_  that
 reflects the URI dotted identifier string, where each dot (".") in the
 identifier reflects a sub-level in the directory tree. For example, the
 ``qmldir`` file of the module ``com.mycompany.mymodule`` must be located
 in the sub-path ``com/mycompany/mymodule/qmldir`` somewhere in the
 `import
-path </sdk/apps/qml/QtQml/qtqml-syntax-imports#qml-import-path>`__.
+path </sdk/apps/qml/QtQml/qtqml-syntax-imports/#qml-import-path>`_ .
 
 It is possible to store different versions of a module in subdirectories
 of its own. For example, a version 2.1 of a module could be located
@@ -74,7 +78,7 @@ sub-directory named ``main``, like this:
 
 To make the ``mycomponents`` directory available as an identified
 module, the directory must include a `qmldir
-file </sdk/apps/qml/QtQml/qtqml-modules-qmldir/>`__ that defines the
+file </sdk/apps/qml/QtQml/qtqml-modules-qmldir/>`_  that defines the
 module identifier, and describes the object types made available by the
 module. For example, to make the ``CheckBox``, ``DialogBox`` and
 ``Slider`` types available for version 1.0 of the module, the ``qmldir``
@@ -88,13 +92,13 @@ file would contain the following:
     Slider 1.0 Slider.qml
 
 Additionally, the location of the ``qmldir`` file in the `import
-path </sdk/apps/qml/QtQml/qtqml-syntax-imports#qml-import-path>`__ must
+path </sdk/apps/qml/QtQml/qtqml-syntax-imports/#qml-import-path>`_  must
 match the module's dotted identifier string. So, say the top level
 ``myapp`` directory is located in ``C:\qml\projects``, and say the
 module should be identified as "myapp.mycomponents". In this case:
 
 -  The path ``C:\qml\projects`` should be added to the `import
-   path </sdk/apps/qml/QtQml/qtqml-syntax-imports#qml-import-path>`__
+   path </sdk/apps/qml/QtQml/qtqml-syntax-imports/#qml-import-path>`_ 
 -  The qmldir file should be located under
    ``C:\qml\projects\myapp\mycomponents\qmldir``
 
@@ -148,9 +152,9 @@ documented.
 An identified module has several restrictions upon it:
 
 -  an identified module must be installed into the `QML import
-   path </sdk/apps/qml/QtQml/qtqml-syntax-imports#qml-import-path>`__
+   path </sdk/apps/qml/QtQml/qtqml-syntax-imports/#qml-import-path>`_ 
 -  the module identifier specified in the `module identifier
-   directive </sdk/apps/qml/QtQml/qtqml-modules-qmldir/>`__ must match
+   directive </sdk/apps/qml/QtQml/qtqml-modules-qmldir/>`_  must match
    the install path of the module (relative to the QML import path,
    where directory separators are replaced with period characters)
 -  the module must register its types into the module identifier type

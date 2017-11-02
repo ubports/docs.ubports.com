@@ -1,3 +1,7 @@
+.. _sdk_qtquick_drag:
+QtQuick Drag
+============
+
 For specifying drag and drop events for moved Items
 
 +---------------------+----------------------+
@@ -7,44 +11,37 @@ For specifying drag and drop events for moved Items
 Attached Properties
 -------------------
 
--  ****`active </sdk/apps/qml/QtQuick/Drag#active-attached-prop>`__****
-   : bool
--  ****`dragType </sdk/apps/qml/QtQuick/Drag#dragType-attached-prop>`__****
-   : enumeration
--  ****`hotSpot </sdk/apps/qml/QtQuick/Drag#hotSpot-attached-prop>`__****
-   : QPointF
--  ****`keys </sdk/apps/qml/QtQuick/Drag#keys-attached-prop>`__**** :
+-  **:ref:`active <sdk_qtquick_drag#active-attached-prop>`** : bool
+-  **:ref:`dragType <sdk_qtquick_drag#dragType-attached-prop>`** :
+   enumeration
+-  **:ref:`hotSpot <sdk_qtquick_drag#hotSpot-attached-prop>`** :
+   QPointF
+-  **:ref:`keys <sdk_qtquick_drag#keys-attached-prop>`** : stringlist
+-  **:ref:`mimeData <sdk_qtquick_drag#mimeData-attached-prop>`** :
    stringlist
--  ****`mimeData </sdk/apps/qml/QtQuick/Drag#mimeData-attached-prop>`__****
-   : stringlist
--  ****`proposedAction </sdk/apps/qml/QtQuick/Drag#proposedAction-attached-prop>`__****
+-  **:ref:`proposedAction <sdk_qtquick_drag#proposedAction-attached-prop>`**
    : enumeration
--  ****`source </sdk/apps/qml/QtQuick/Drag#source-attached-prop>`__****
-   : Object
--  ****`supportedActions </sdk/apps/qml/QtQuick/Drag#supportedActions-attached-prop>`__****
+-  **:ref:`source <sdk_qtquick_drag#source-attached-prop>`** : Object
+-  **:ref:`supportedActions <sdk_qtquick_drag#supportedActions-attached-prop>`**
    : flags
--  ****`target </sdk/apps/qml/QtQuick/Drag#target-attached-prop>`__****
-   : Object
+-  **:ref:`target <sdk_qtquick_drag#target-attached-prop>`** : Object
 
 Attached Signals
 ----------------
 
--  ****`dragFinished </sdk/apps/qml/QtQuick/Drag#dragFinished-signal>`__****\ (DropAction
+-  **:ref:`dragFinished <sdk_qtquick_drag#dragFinished-signal>`**\ (DropAction
    *action*)
--  ****`dragStarted </sdk/apps/qml/QtQuick/Drag#dragStarted-signal>`__****\ ()
+-  **:ref:`dragStarted <sdk_qtquick_drag#dragStarted-signal>`**\ ()
 
 Attached Methods
 ----------------
 
--  void
-   ****`cancel </sdk/apps/qml/QtQuick/Drag#cancel-method>`__****\ ()
--  enumeration
-   ****`drop </sdk/apps/qml/QtQuick/Drag#drop-method>`__****\ ()
--  void
-   ****`start </sdk/apps/qml/QtQuick/Drag#start-method>`__****\ (flags
+-  void **:ref:`cancel <sdk_qtquick_drag#cancel-method>`**\ ()
+-  enumeration **:ref:`drop <sdk_qtquick_drag#drop-method>`**\ ()
+-  void **:ref:`start <sdk_qtquick_drag#start-method>`**\ (flags
    *supportedActions*)
 -  void
-   ****`startDrag </sdk/apps/qml/QtQuick/Drag#startDrag-method>`__****\ (flags
+   **:ref:`startDrag <sdk_qtquick_drag#startDrag-method>`**\ (flags
    *supportedActions*)
 
 Detailed Description
@@ -53,17 +50,16 @@ Detailed Description
 Using the Drag attached property, any Item can be made a source of drag
 and drop events within a scene.
 
-When a drag is
-`active </sdk/apps/qml/QtQuick/Drag#active-attached-prop>`__ on an item,
-any change in that item's position will generate a drag event that will
-be sent to any `DropArea </sdk/apps/qml/QtQuick/DropArea/>`__ that
-intersects with the new position of the item. Other items which
-implement drag and drop event handlers can also receive these events.
+When a drag is :ref:`active <sdk_qtquick_drag#active-attached-prop>` on an
+item, any change in that item's position will generate a drag event that
+will be sent to any :ref:`DropArea <sdk_qtquick_droparea>` that intersects
+with the new position of the item. Other items which implement drag and
+drop event handlers can also receive these events.
 
 The following snippet shows how an item can be dragged with a
-`MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__. However, dragging is
-not limited to mouse drags; anything that can move an item can generate
-drag events, including touch events, animations and bindings.
+:ref:`MouseArea <sdk_qtquick_mousearea>`. However, dragging is not limited
+to mouse drags; anything that can move an item can generate drag events,
+including touch events, animations and bindings.
 
 .. code:: qml
 
@@ -95,15 +91,13 @@ drag events, including touch events, animations and bindings.
     }
 
 A drag can be terminated either by canceling it with
-Drag.\ `cancel() </sdk/apps/qml/QtQuick/Drag#cancel-method>`__ or
-setting Drag.active to false, or it can be terminated with a drop event
-by calling Drag.\ `drop() </sdk/apps/qml/QtQuick/Drag#drop-method>`__.
-If the drop event is accepted,
-Drag.\ `drop() </sdk/apps/qml/QtQuick/Drag#drop-method>`__ will return
-the `drop
-action </sdk/apps/qml/QtQuick/Drag#supportedActions-attached-prop>`__
-chosen by the recipient of the event, otherwise it will return
-Qt.IgnoreAction.
+Drag.\ :ref:`cancel() <sdk_qtquick_drag#cancel-method>` or setting
+Drag.active to false, or it can be terminated with a drop event by
+calling Drag.\ :ref:`drop() <sdk_qtquick_drag#drop-method>`. If the drop
+event is accepted, Drag.\ :ref:`drop() <sdk_qtquick_drag#drop-method>` will
+return the `drop
+action <sdk_qtquick_drag#supportedActions-attached-prop>:ref:` chosen by
+the recipient of the event, otherwise it will return Qt.IgnoreAction.
 
 Attached Property Documentation
 -------------------------------
@@ -115,9 +109,9 @@ Attached Property Documentation
 This property holds whether a drag event sequence is currently active.
 
 Binding this property to the active property of
-`MouseArea::drag </sdk/apps/qml/QtQuick/MouseArea#drag-prop>`__ will
-cause `startDrag </sdk/apps/qml/QtQuick/Drag#startDrag-method>`__ to be
-called when the user starts dragging.
+:ref:`MouseArea::drag <sdk_qtquick_mousearea#drag-prop>` will cause
+:ref:`startDrag <sdk_qtquick_drag#startDrag-method>` to be called when the
+user starts dragging.
 
 Setting this property to true will also send a QDragEnter event to the
 scene with the item's current position. Setting it to false will send a
@@ -137,7 +131,7 @@ nothing, or to use backwards compatible internal drags. The default is
 to use backwards compatible internal drags.
 
 A drag can also be started manually using
-`startDrag </sdk/apps/qml/QtQuick/Drag#startDrag-method>`__.
+:ref:`startDrag <sdk_qtquick_drag#startDrag-method>`.
 
 -  Drag.None - do not start drags automatically
 -  Drag.Automatic - start drags automatically
@@ -145,9 +139,9 @@ A drag can also be started manually using
    automatically
 
 When using ``Drag.Automatic`` you should also define
-`mimeData </sdk/apps/qml/QtQuick/Drag#mimeData-attached-prop>`__ and
-bind the `active </sdk/apps/qml/QtQuick/Drag#active-attached-prop>`__
-property to the active property of MouseArea.drag.
+:ref:`mimeData <sdk_qtquick_drag#mimeData-attached-prop>` and bind the
+:ref:`active <sdk_qtquick_drag#active-attached-prop>` property to the
+active property of MouseArea.drag.
 
 This QML property was introduced in Qt 5.2.
 
@@ -171,7 +165,7 @@ Changes to hotSpot trigger a new drag move with the updated position.
 +--------------------------------------------------------------------------+
 
 This property holds a list of keys that can be used by a
-`DropArea </sdk/apps/qml/QtQuick/DropArea/>`__ to filter drag events.
+:ref:`DropArea <sdk_qtquick_droparea>` to filter drag events.
 
 Changing the keys while a drag is active will reset the sequence of drag
 events by sending a drag leave event followed by a drag enter event with
@@ -184,7 +178,7 @@ the new source.
 +--------------------------------------------------------------------------+
 
 This property holds a map of mimeData that is used during
-`startDrag </sdk/apps/qml/QtQuick/Drag#startDrag-method>`__.
+:ref:`startDrag <sdk_qtquick_drag#startDrag-method>`.
 
 This QML property was introduced in Qt 5.2.
 
@@ -195,8 +189,7 @@ This QML property was introduced in Qt 5.2.
 +--------------------------------------------------------------------------+
 
 This property holds an action that is recommended by the drag source as
-a return value from
-Drag.\ `drop() </sdk/apps/qml/QtQuick/Drag#drop-method>`__.
+a return value from Drag.\ :ref:`drop() <sdk_qtquick_drag#drop-method>`.
 
 Changes to proposedAction will trigger a move event with the updated
 proposal.
@@ -222,8 +215,8 @@ with the new source.
 +--------------------------------------------------------------------------+
 
 This property holds return values of
-Drag.\ `drop() </sdk/apps/qml/QtQuick/Drag#drop-method>`__ supported by
-the drag source.
+Drag.\ :ref:`drop() <sdk_qtquick_drag#drop-method>` supported by the drag
+source.
 
 Changing the supportedActions while a drag is active will reset the
 sequence of drag events by sending a drag leave event followed by a drag
@@ -253,10 +246,9 @@ Attached Signal Documentation
 +--------------------------------------------------------------------------+
 
 This signal is emitted when a drag finishes and the drag was started
-with the `startDrag() </sdk/apps/qml/QtQuick/Drag#startDrag-method>`__
-method or started automatically using the
-`dragType </sdk/apps/qml/QtQuick/Drag#dragType-attached-prop>`__
-property.
+with the :ref:`startDrag() <sdk_qtquick_drag#startDrag-method>` method or
+started automatically using the
+:ref:`dragType <sdk_qtquick_drag#dragType-attached-prop>` property.
 
 The corresponding handler is ``onDragFinished``.
 
@@ -267,10 +259,9 @@ The corresponding handler is ``onDragFinished``.
 +--------------------------------------------------------------------------+
 
 This signal is emitted when a drag is started with the
-`startDrag() </sdk/apps/qml/QtQuick/Drag#startDrag-method>`__ method or
-when it is started automatically using the
-`dragType </sdk/apps/qml/QtQuick/Drag#dragType-attached-prop>`__
-property.
+:ref:`startDrag() <sdk_qtquick_drag#startDrag-method>` method or when it is
+started automatically using the
+:ref:`dragType <sdk_qtquick_drag#dragType-attached-prop>` property.
 
 The corresponding handler is ``onDragStarted``.
 
@@ -311,11 +302,11 @@ The returned drop action may be one of:
 +--------------------------------------------------------------------------+
 
 Starts sending drag events. Used for starting old-style internal drags.
-`startDrag </sdk/apps/qml/QtQuick/Drag#startDrag-method>`__ is the
-new-style, preferred method of starting drags.
+:ref:`startDrag <sdk_qtquick_drag#startDrag-method>` is the new-style,
+preferred method of starting drags.
 
 The optional *supportedActions* argument can be used to override the
-`supportedActions </sdk/apps/qml/QtQuick/Drag#supportedActions-attached-prop>`__
+:ref:`supportedActions <sdk_qtquick_drag#supportedActions-attached-prop>`
 property for the started sequence.
 
 | 
@@ -327,7 +318,7 @@ property for the started sequence.
 Starts sending drag events.
 
 The optional *supportedActions* argument can be used to override the
-`supportedActions </sdk/apps/qml/QtQuick/Drag#supportedActions-attached-prop>`__
+:ref:`supportedActions <sdk_qtquick_drag#supportedActions-attached-prop>`
 property for the started sequence.
 
 | 

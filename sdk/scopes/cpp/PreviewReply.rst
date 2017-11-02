@@ -1,5 +1,9 @@
+.. _sdk_previewreply:
+PreviewReply
+============
+
 Allows the results of a preview to be sent to the preview requester.
-`More... </sdk/scopes/cpp/unity.scopes.PreviewReply#details>`__
+`More... </sdk/scopes/cpp/unity.scopes.PreviewReply/#details>`_ 
 
 ``#include <unity/scopes/PreviewReply.h>``
 
@@ -14,8 +18,8 @@ Inheritance diagram for unity::scopes::PreviewReply:
 
 virtual bool 
 
-`register\_layout </sdk/scopes/cpp/unity.scopes.PreviewReply#a16a757d821bd3792d1a69112b1f13964>`__
-(`ColumnLayoutList </sdk/scopes/cpp/unity.scopes#a5b970e3c73bf25548398b32e79b2224d>`__
+`register\_layout </sdk/scopes/cpp/unity.scopes.PreviewReply/#a16a757d821bd3792d1a69112b1f13964>`_ 
+(:ref:`ColumnLayoutList <sdk_unity_scopes#a5b970e3c73bf25548398b32e79b2224d>`
 const &layouts)=0
 
  
@@ -26,8 +30,8 @@ const &layouts)=0
 
 virtual bool 
 
-`push </sdk/scopes/cpp/unity.scopes.PreviewReply#a9fc593618b83ec444fb6c9b2b298764a>`__
-(`PreviewWidgetList </sdk/scopes/cpp/unity.scopes#aed3b7b1daf2e49d0a820ef931caa792d>`__
+`push </sdk/scopes/cpp/unity.scopes.PreviewReply/#a9fc593618b83ec444fb6c9b2b298764a>`_ 
+(:ref:`PreviewWidgetList <sdk_unity_scopes#aed3b7b1daf2e49d0a820ef931caa792d>`
 const &widget\_list)=0
 
  
@@ -38,9 +42,9 @@ const &widget\_list)=0
 
 virtual bool 
 
-`push </sdk/scopes/cpp/unity.scopes.PreviewReply#a8697306bc56dc29bb005d988841f0c8e>`__
+`push </sdk/scopes/cpp/unity.scopes.PreviewReply/#a8697306bc56dc29bb005d988841f0c8e>`_ 
 (std::string const &key,
-`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`__ const &value)=0
+`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`_  const &value)=0
 
  
 
@@ -49,11 +53,11 @@ virtual bool 
  
 
 |-| Public Member Functions inherited from
-`unity::scopes::Reply </sdk/scopes/cpp/unity.scopes.Reply/>`__
+`unity::scopes::Reply </sdk/scopes/cpp/unity.scopes.Reply/>`_ 
 
 virtual void 
 
-`finished </sdk/scopes/cpp/unity.scopes.Reply#a9ca653d5d7f7c97a781bc362f2af7749>`__
+`finished </sdk/scopes/cpp/unity.scopes.Reply/#a9ca653d5d7f7c97a781bc362f2af7749>`_ 
 ()=0
 
  
@@ -64,7 +68,7 @@ virtual void 
 
 virtual void 
 
-`error </sdk/scopes/cpp/unity.scopes.Reply#a526c9cbb11f896210835fb3420324ba8>`__
+`error </sdk/scopes/cpp/unity.scopes.Reply/#a526c9cbb11f896210835fb3420324ba8>`_ 
 (std::exception\_ptr ex)=0
 
  
@@ -76,8 +80,8 @@ virtual void 
 
 virtual void 
 
-`info </sdk/scopes/cpp/unity.scopes.Reply#af35cbaba152e4919306f32b06bd81029>`__
-(`OperationInfo </sdk/scopes/cpp/unity.scopes.OperationInfo/>`__ const
+`info </sdk/scopes/cpp/unity.scopes.Reply/#af35cbaba152e4919306f32b06bd81029>`_ 
+(`OperationInfo </sdk/scopes/cpp/unity.scopes.OperationInfo/>`_  const
 &op\_info)=0
 
  
@@ -89,7 +93,7 @@ virtual void 
 
 virtual 
 
-`~Reply </sdk/scopes/cpp/unity.scopes.Reply#a9f0cfeeee75a27e111ebd955523e1bb0>`__
+`~Reply </sdk/scopes/cpp/unity.scopes.Reply/#a9f0cfeeee75a27e111ebd955523e1bb0>`_ 
 ()
 
  
@@ -99,11 +103,11 @@ virtual 
  
 
 |-| Public Member Functions inherited from
-`unity::scopes::Object </sdk/scopes/cpp/unity.scopes.Object/>`__
+`unity::scopes::Object </sdk/scopes/cpp/unity.scopes.Object/>`_ 
 
 virtual std::string 
 
-`endpoint </sdk/scopes/cpp/unity.scopes.Object#ad7618cc9d878c40b389361d4acd473ae>`__
+`endpoint </sdk/scopes/cpp/unity.scopes.Object/#ad7618cc9d878c40b389361d4acd473ae>`_ 
 ()=0
 
  
@@ -114,7 +118,7 @@ virtual std::string 
 
 virtual std::string 
 
-`identity </sdk/scopes/cpp/unity.scopes.Object#a1b55aea886f0a68cb8a578f7ee0b1cfd>`__
+`identity </sdk/scopes/cpp/unity.scopes.Object/#a1b55aea886f0a68cb8a578f7ee0b1cfd>`_ 
 ()=0
 
  
@@ -125,7 +129,7 @@ virtual std::string 
 
 virtual std::string 
 
-`target\_category </sdk/scopes/cpp/unity.scopes.Object#a40a997516629df3dacca9742dbddd6cb>`__
+`target\_category </sdk/scopes/cpp/unity.scopes.Object/#a40a997516629df3dacca9742dbddd6cb>`_ 
 ()=0
 
  
@@ -136,7 +140,7 @@ virtual std::string 
 
 virtual int64\_t 
 
-`timeout </sdk/scopes/cpp/unity.scopes.Object#a41d9839f1e3cbcd6d8baee0736feccab>`__
+`timeout </sdk/scopes/cpp/unity.scopes.Object/#a41d9839f1e3cbcd6d8baee0736feccab>`_ 
 ()=0
 
  
@@ -147,7 +151,7 @@ virtual int64\_t 
 
 virtual std::string 
 
-`to\_string </sdk/scopes/cpp/unity.scopes.Object#a9ae27e1f30dc755abcd796a1e8a25150>`__
+`to\_string </sdk/scopes/cpp/unity.scopes.Object/#a9ae27e1f30dc755abcd796a1e8a25150>`_ 
 ()=0
 
  
@@ -172,15 +176,12 @@ Member Function Documentation
 | viewWidg | *widget\_lis | )          |                                      |
 |    |              |                  |                                      |
 | | unity::scope |              | etLi |                                      |
-| st </sdk | t*           |            |                                      |
+| st <sdk_ | t*           |            |                                      |
 |    |              |                  |                                      |
-| | s::PreviewRe |              | /sco |                                      |
-| pes/cpp/ |              |            |                                      |
+| | s::PreviewRe |              | unit |                                      |
+| y_scopes |              |            |                                      |
 |    |              |                  |                                      |
-| | ply::push    |              | unit |                                      |
-| y.scopes |              |            |                                      |
-|    |              |                  |                                      |
-| |              |              | #aed |                                      |
+| | ply::push    |              | #aed |                                      |
 | 3b7b1daf |              |            |                                      |
 |    |              |                  |                                      |
 | |              |              | 2e49 |                                      |
@@ -231,7 +232,7 @@ Returns
 |       | pes/cpp/unity.scop |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
-|       | es.Variant/>`__    |         |                                      |
+|       | es.Variant/>`_     |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
 |       | const &            |         |                                      |
@@ -261,18 +262,15 @@ Returns
 | umnLayou | *layouts*    | )          |                                      |
 |    |              |                  |                                      |
 | | unity::scope |              | tLis |                                      |
-| t </sdk/ |              |            |                                      |
+| t <sdk_u |              |            |                                      |
 |    |              |                  |                                      |
-| | s::PreviewRe |              | scop |                                      |
-| es/cpp/u |              |            |                                      |
+| | s::PreviewRe |              | nity |                                      |
+| _scopes# |              |            |                                      |
 |    |              |                  |                                      |
-| | ply::registe |              | nity |                                      |
-| .scopes# |              |            |                                      |
-|    |              |                  |                                      |
-| | r\_layout    |              | a5b9 |                                      |
+| | ply::registe |              | a5b9 |                                      |
 | 70e3c73b |              |            |                                      |
 |    |              |                  |                                      |
-| |              |              | f255 |                                      |
+| | r\_layout    |              | f255 |                                      |
 | 48398b32 |              |            |                                      |
 |    |              |                  |                                      |
 | |              |              | e79b |                                      |
@@ -292,7 +290,7 @@ Returns
 Registers a list of column layouts for the current preview.
 
 Layouts must be registered before pushing a
-`unity::scopes::PreviewWidgetList </sdk/scopes/cpp/unity.scopes#aed3b7b1daf2e49d0a820ef931caa792d>`__,
+:ref:`unity::scopes::PreviewWidgetList <sdk_unity_scopes#aed3b7b1daf2e49d0a820ef931caa792d>`,
 and must be registered only once.
 
 Returns
@@ -300,9 +298,9 @@ Returns
     cancelled.
 
 Exceptions
-    +-------------------------+----------------------------------------------------------------------------------------------------------------------------------+
-    | unity::LogicException   | `register\_layout() </sdk/scopes/cpp/unity.scopes.PreviewReply#a16a757d821bd3792d1a69112b1f13964>`__ is called more than once.   |
-    +-------------------------+----------------------------------------------------------------------------------------------------------------------------------+
+    +-------------------------+-----------------------------------------------------------------------------------------------------------------------------------+
+    | unity::LogicException   | `register\_layout() </sdk/scopes/cpp/unity.scopes.PreviewReply/#a16a757d821bd3792d1a69112b1f13964>`_  is called more than once.   |
+    +-------------------------+-----------------------------------------------------------------------------------------------------------------------------------+
 
 .. |Inheritance graph| image:: /media/sdk/scopes/cpp/unity.scopes.PreviewReply/classunity_1_1scopes_1_1_preview_reply__inherit__graph.png
 .. |-| image:: /media/sdk/scopes/cpp/unity.scopes.PreviewReply/closed.png

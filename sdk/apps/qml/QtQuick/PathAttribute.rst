@@ -1,3 +1,7 @@
+.. _sdk_qtquick_pathattribute:
+QtQuick PathAttribute
+=====================
+
 Specifies how to set an attribute at a given position in a Path
 
 +---------------------+----------------------+
@@ -7,27 +11,25 @@ Specifies how to set an attribute at a given position in a Path
 Properties
 ----------
 
--  ****`name </sdk/apps/qml/QtQuick/PathAttribute#name-prop>`__**** :
-   string
--  ****`value </sdk/apps/qml/QtQuick/PathAttribute#value-prop>`__**** :
-   real
+-  :ref:`name <sdk_qtquick_pathattribute_name-prop>` : string
+-  :ref:`value <sdk_qtquick_pathattribute_value-prop>` : real
 
 Detailed Description
 --------------------
 
-The `PathAttribute </sdk/apps/qml/QtQuick/PathAttribute/>`__ object
-allows attributes consisting of a name and a value to be specified for
-various points along a path. The attributes are exposed to the delegate
-as Attached Properties. The value of an attribute at any particular
-point along the path is interpolated from the PathAttributes bounding
-that point.
+The :ref:`PathAttribute <sdk_qtquick_pathattribute>` object allows
+attributes consisting of a name and a value to be specified for various
+points along a path. The attributes are exposed to the delegate as
+Attached Properties. The value of an attribute at any particular point
+along the path is interpolated from the PathAttributes bounding that
+point.
 
 The example below shows a path with the items scaled to 30% with opacity
 50% at the top of the path and scaled 100% with opacity 100% at the
 bottom. Note the use of the
-`PathView </sdk/apps/qml/QtQuick/PathView/>`__.iconScale and
-`PathView </sdk/apps/qml/QtQuick/PathView/>`__.iconOpacity attached
-properties to set the scale and opacity of the delegate.
+:ref:`PathView <sdk_qtquick_pathview>`.iconScale and
+:ref:`PathView <sdk_qtquick_pathview>`.iconOpacity attached properties to
+set the scale and opacity of the delegate.
 
 +--------------------------------------+--------------------------------------+
 | |image0|                             | .. code:: qml                        |
@@ -79,17 +81,18 @@ properties to set the scale and opacity of the delegate.
 |                                      |     }                                |
 |                                      |                                      |
 |                                      | (see the                             |
-|                                      | `PathView </sdk/apps/qml/QtQuick/Pat |
-|                                      | hView/>`__                           |
+|                                      | :ref:`PathView <sdk_qtquick_pathview>`  |
 |                                      | documentation for the specification  |
 |                                      | of ContactModel.qml used for         |
 |                                      | ContactModel above.)                 |
 +--------------------------------------+--------------------------------------+
 
-**See also** `Path </sdk/apps/qml/QtQuick/Path/>`__.
+**See also** :ref:`Path <sdk_qtquick_path>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_pathattribute_name-prop:
 
 +--------------------------------------------------------------------------+
 |        \ name : string                                                   |
@@ -98,13 +101,15 @@ Property Documentation
 This property holds the name of the attribute to change.
 
 This attribute will be available to the delegate as
-`PathView </sdk/apps/qml/QtQuick/PathView/>`__.<name>
+:ref:`PathView <sdk_qtquick_pathview>`.<name>
 
 Note that using an existing Item property name such as "opacity" as an
 attribute is allowed. This is because path attributes add a new Attached
 Property which in no way clashes with existing properties.
 
 | 
+
+.. _sdk_qtquick_pathattribute_value-prop:
 
 +--------------------------------------------------------------------------+
 |        \ value : real                                                    |
@@ -144,5 +149,5 @@ an item mid-way along the path will be rotated 45 degrees.
 
 | 
 
-.. |image0| image:: /media/sdk/apps/qml/QtQuick/PathAttribute/images/declarative-pathattribute.png
+.. |image0| image:: /mediasdk_qtquick_pathattributeimages/declarative-pathattribute.png
 

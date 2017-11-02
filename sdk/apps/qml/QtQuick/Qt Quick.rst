@@ -1,3 +1,7 @@
+.. _sdk_qtquick_qt_quick:
+QtQuick Qt Quick
+================
+
 
 
 The Qt Quick module is the standard library for writing QML
@@ -32,17 +36,17 @@ supplemented through specialized components for particle and shader
 effects.
 
 -  `The Visual
-   Canvas </sdk/apps/qml/QtQuick/qtquick-visualcanvas-topic/>`__
--  `User Input </sdk/apps/qml/QtQuick/qtquick-input-topic/>`__
--  `Positioning </sdk/apps/qml/QtQuick/qtquick-positioning-topic/>`__
+   Canvas </sdk/apps/qml/QtQuick/qtquick-visualcanvas-topic/>`_ 
+-  `User Input </sdk/apps/qml/QtQuick/qtquick-input-topic/>`_ 
+-  `Positioning </sdk/apps/qml/QtQuick/qtquick-positioning-topic/>`_ 
 -  `States, Transitions And
-   Animations </sdk/apps/qml/QtQuick/qtquick-statesanimations-topic/>`__
+   Animations </sdk/apps/qml/QtQuick/qtquick-statesanimations-topic/>`_ 
 -  `Data - Models, Views and Data
-   Storage </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-topic/>`__
+   Storage </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-topic/>`_ 
 -  `Particles And Graphical
-   Effects </sdk/apps/qml/QtQuick/qtquick-effects-topic/>`__
+   Effects </sdk/apps/qml/QtQuick/qtquick-effects-topic/>`_ 
 -  `Convenience
-   Types </sdk/apps/qml/QtQuick/qtquick-convenience-topic/>`__
+   Types </sdk/apps/qml/QtQuick/qtquick-convenience-topic/>`_ 
 
 When using the ``QtQuick`` module, you will need to know how to write
 QML applications using the QML language. In particular, QML Basics and
@@ -55,14 +59,14 @@ documentation.
    :name: c-extension-points
 
 -  `C++ Extension
-   Points </sdk/apps/qml/QtQuick/qtquick-cppextensionpoints/>`__
+   Points </sdk/apps/qml/QtQuick/qtquick-cppextensionpoints/>`_ 
 
    -  `Creating User-Defined QQuickItem-Derived
-      Types </sdk/apps/qml/QtQuick/qtquick-cppextensionpoints#user-defined-qquickitem-derived-types>`__
+      Types </sdk/apps/qml/QtQuick/qtquick-cppextensionpoints/#user-defined-qquickitem-derived-types>`_ 
    -  `Scene Graph-Related
-      Classes </sdk/apps/qml/QtQuick/qtquick-cppextensionpoints#scene-graph-related-classes>`__
+      Classes </sdk/apps/qml/QtQuick/qtquick-cppextensionpoints/#scene-graph-related-classes>`_ 
    -  `Pixmap and Threaded Image
-      Support </sdk/apps/qml/QtQuick/qtquick-cppextensionpoints#pixmap-and-threaded-image-support>`__
+      Support </sdk/apps/qml/QtQuick/qtquick-cppextensionpoints/#pixmap-and-threaded-image-support>`_ 
 
 .. rubric:: Reference Documentation
    :name: reference-documentation
@@ -84,10 +88,10 @@ Additional Qt Quick information:
    -  Tests - contains types for writing unit test for a QML application
 
 -  `Qt Quick Release
-   Notes </sdk/apps/qml/QtQuick/qtquick-releasenotes/>`__ - list of
+   Notes </sdk/apps/qml/QtQuick/qtquick-releasenotes/>`_  - list of
    changes and additions in the Qt Quick
 -  `Qt Quick Examples and
-   Tutorials </sdk/apps/qml/QtQuick/qtquick-codesamples/>`__
+   Tutorials </sdk/apps/qml/QtQuick/qtquick-codesamples/>`_ 
 
 Further information for writing QML applications:
 

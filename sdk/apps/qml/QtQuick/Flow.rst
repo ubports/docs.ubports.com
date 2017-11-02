@@ -1,25 +1,27 @@
+.. _sdk_qtquick_flow:
+QtQuick Flow
+============
+
 Positions its children side by side, wrapping as necessary
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtQuick 2.4                   |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Item </sdk/apps/qml/QtQuick/Item/>` |
-|                                      | __                                   |
+| Inherits:                            | :ref:`Item <sdk_qtquick_item>`       |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`add </sdk/apps/qml/QtQuick/Flow#add-prop>`__**** : Transition
--  ****`effectiveLayoutDirection </sdk/apps/qml/QtQuick/Flow#effectiveLayoutDirection-prop>`__****
+-  :ref:`add <sdk_qtquick_flow_add-prop>` : Transition
+-  :ref:`effectiveLayoutDirection <sdk_qtquick_flow_effectiveLayoutDirection-prop>`
    : enumeration
--  ****`flow </sdk/apps/qml/QtQuick/Flow#flow-prop>`__**** : enumeration
--  ****`layoutDirection </sdk/apps/qml/QtQuick/Flow#layoutDirection-prop>`__****
-   : enumeration
--  ****`move </sdk/apps/qml/QtQuick/Flow#move-prop>`__**** : Transition
--  ****`populate </sdk/apps/qml/QtQuick/Flow#populate-prop>`__**** :
-   Transition
--  ****`spacing </sdk/apps/qml/QtQuick/Flow#spacing-prop>`__**** : real
+-  :ref:`flow <sdk_qtquick_flow_flow-prop>` : enumeration
+-  :ref:`layoutDirection <sdk_qtquick_flow_layoutDirection-prop>` :
+   enumeration
+-  :ref:`move <sdk_qtquick_flow_move-prop>` : Transition
+-  :ref:`populate <sdk_qtquick_flow_populate-prop>` : Transition
+-  :ref:`spacing <sdk_qtquick_flow_spacing-prop>` : real
 
 Detailed Description
 --------------------
@@ -28,7 +30,7 @@ The Flow item positions its child items like words on a page, wrapping
 them to create rows or columns of items.
 
 Below is a Flow that contains various
-`Text </sdk/apps/qml/QtQuick/qtquick-releasenotes#text>`__ items:
+`Text </sdk/apps/qml/QtQuick/qtquick-releasenotes/#text>`_  items:
 
 .. code:: qml
 
@@ -46,37 +48,38 @@ Below is a Flow that contains various
         }
 
 The Flow item automatically positions the child
-`Text </sdk/apps/qml/QtQuick/qtquick-releasenotes#text>`__ items side by
-side, wrapping as necessary:
+`Text </sdk/apps/qml/QtQuick/qtquick-releasenotes/#text>`_  items side
+by side, wrapping as necessary:
 
 |image0|
 
 If an item within a Flow is not
-`visible </sdk/apps/qml/QtQuick/Item#visible-prop>`__, or if it has a
-width or height of 0, the item will not be laid out and it will not be
-visible within the Flow. Also, since a Flow automatically positions its
+:ref:`visible <sdk_qtquick_item#visible-prop>`, or if it has a width or
+height of 0, the item will not be laid out and it will not be visible
+within the Flow. Also, since a Flow automatically positions its
 children, a child item within a Flow should not set its
-`x </sdk/apps/qml/QtQuick/Item#x-prop>`__ or
-`y </sdk/apps/qml/QtQuick/Item#y-prop>`__ positions or anchor itself
-with any of the `anchor </sdk/apps/qml/QtQuick/Item#anchors-prop>`__
-properties.
+:ref:`x <sdk_qtquick_item#x-prop>` or `y <sdk_qtquick_item#y-prop>`
+positions or anchor itself with any of the
+:ref:`anchor <sdk_qtquick_item#anchors-prop>` properties.
 
 For more information on using Flow and other related positioner-types,
 see `Item
-Positioners </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/>`__.
+Positioners </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/>`_ .
 
 **See also**
-`Column </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#column>`__,
-`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#row>`__,
-`Grid </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#grid>`__,
-`Positioner </sdk/apps/qml/QtQuick/Positioner/>`__, and `Qt Quick
-Examples - Positioners </sdk/apps/qml/QtQuick/positioners/>`__.
+`Column </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#column>`_ ,
+`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#row>`_ ,
+`Grid </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#grid>`_ ,
+:ref:`Positioner <sdk_qtquick_positioner>`, and `Qt Quick Examples -
+Positioners </sdk/apps/qml/QtQuick/positioners/>`_ .
 
 Property Documentation
 ----------------------
 
+.. _sdk_qtquick_flow_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ add : `Transition </sdk/apps/qml/QtQuick/Transition/>`__        |
+| :ref:` <>`\ add : `Transition <sdk_qtquick_transition>`                |
 +--------------------------------------------------------------------------+
 
 This property holds the transition to be run for items that are added to
@@ -85,25 +88,27 @@ this positioner. For a positioner, this applies to:
 -  Items that are created or reparented as a child of the positioner
    after the positioner has been created
 -  Child items that change their
-   `Item::visible </sdk/apps/qml/QtQuick/Item#visible-prop>`__ property
-   from false to true, and thus are now visible
+   :ref:`Item::visible <sdk_qtquick_item#visible-prop>` property from false
+   to true, and thus are now visible
 
 The transition can use the
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__ property to
-access more details about the item that is being added. See the
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__ documentation
-for more details and examples on using these transitions.
+:ref:`ViewTransition <sdk_qtquick_viewtransition>` property to access more
+details about the item that is being added. See the
+:ref:`ViewTransition <sdk_qtquick_viewtransition>` documentation for more
+details and examples on using these transitions.
 
 **Note:** This transition is not applied to the items that already part
 of the positioner at the time of its creation. In this case, the
-`populate </sdk/apps/qml/QtQuick/Flow#populate-prop>`__ transition is
-applied instead.
+:ref:`populate <sdk_qtquick_flow#populate-prop>` transition is applied
+instead.
 
-**See also** `populate </sdk/apps/qml/QtQuick/Flow#populate-prop>`__,
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__, and `Qt
-Quick Examples - Positioners </sdk/apps/qml/QtQuick/positioners/>`__.
+**See also** :ref:`populate <sdk_qtquick_flow#populate-prop>`,
+:ref:`ViewTransition <sdk_qtquick_viewtransition>`, and `Qt Quick Examples
+- Positioners </sdk/apps/qml/QtQuick/positioners/>`_ .
 
 | 
+
+.. _sdk_qtquick_flow_effectiveLayoutDirection-prop:
 
 +--------------------------------------------------------------------------+
 |        \ effectiveLayoutDirection : enumeration                          |
@@ -112,17 +117,19 @@ Quick Examples - Positioners </sdk/apps/qml/QtQuick/positioners/>`__.
 This property holds the effective layout direction of the flow.
 
 When using the attached property
-`LayoutMirroring::enabled </sdk/apps/qml/QtQuick/LayoutMirroring#enabled-prop>`__
+:ref:`LayoutMirroring::enabled <sdk_qtquick_layoutmirroring#enabled-prop>`
 for locale layouts, the visual layout direction of the grid positioner
 will be mirrored. However, the property
-`layoutDirection </sdk/apps/qml/QtQuick/Flow#layoutDirection-prop>`__
-will remain unchanged.
+:ref:`layoutDirection <sdk_qtquick_flow#layoutDirection-prop>` will remain
+unchanged.
 
 **See also**
-`Flow::layoutDirection </sdk/apps/qml/QtQuick/Flow#layoutDirection-prop>`__
-and `LayoutMirroring </sdk/apps/qml/QtQuick/LayoutMirroring/>`__.
+:ref:`Flow::layoutDirection <sdk_qtquick_flow#layoutDirection-prop>` and
+:ref:`LayoutMirroring <sdk_qtquick_layoutmirroring>`.
 
 | 
+
+.. _sdk_qtquick_flow_flow-prop:
 
 +--------------------------------------------------------------------------+
 |        \ flow : enumeration                                              |
@@ -134,14 +141,15 @@ Possible values are:
 
 -  Flow.LeftToRight (default) - Items are positioned next to to each
    other according to the
-   `layoutDirection </sdk/apps/qml/QtQuick/Flow#layoutDirection-prop>`__
-   until the width of the Flow is exceeded, then wrapped to the next
-   line.
+   :ref:`layoutDirection <sdk_qtquick_flow#layoutDirection-prop>` until the
+   width of the Flow is exceeded, then wrapped to the next line.
 -  Flow.TopToBottom - Items are positioned next to each other from top
    to bottom until the height of the Flow is exceeded, then wrapped to
    the next column.
 
 | 
+
+.. _sdk_qtquick_flow_layoutDirection-prop:
 
 +--------------------------------------------------------------------------+
 |        \ layoutDirection : enumeration                                   |
@@ -153,21 +161,22 @@ Possible values are:
 
 -  Qt.LeftToRight (default) - Items are positioned from the top to
    bottom, and left to right. The flow direction is dependent on the
-   `Flow::flow </sdk/apps/qml/QtQuick/Flow#flow-prop>`__ property.
+   :ref:`Flow::flow <sdk_qtquick_flow#flow-prop>` property.
 -  Qt.RightToLeft - Items are positioned from the top to bottom, and
    right to left. The flow direction is dependent on the
-   `Flow::flow </sdk/apps/qml/QtQuick/Flow#flow-prop>`__ property.
+   :ref:`Flow::flow <sdk_qtquick_flow#flow-prop>` property.
 
 **See also**
-`Grid::layoutDirection </sdk/apps/qml/QtQuick/Grid#layoutDirection-prop>`__,
-`Row::layoutDirection </sdk/apps/qml/QtQuick/Row#layoutDirection-prop>`__,
-and `Qt Quick Examples - Right to
-Left </sdk/apps/qml/QtQuick/righttoleft/>`__.
+:ref:`Grid::layoutDirection <sdk_qtquick_grid#layoutDirection-prop>`,
+:ref:`Row::layoutDirection <sdk_qtquick_row#layoutDirection-prop>`, and `Qt
+Quick Examples - Right to Left </sdk/apps/qml/QtQuick/righttoleft/>`_ .
 
 | 
 
+.. _sdk_qtquick_flow_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ move : `Transition </sdk/apps/qml/QtQuick/Transition/>`__       |
+| :ref:` <>`\ move : `Transition <sdk_qtquick_transition>`               |
 +--------------------------------------------------------------------------+
 
 This property holds the transition to run for items that have moved
@@ -179,32 +188,32 @@ within the positioner. For a positioner, this applies to:
    in the positioner
 
 The transition can use the
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__ property to
-access more details about the item that is being moved. Note, however,
-that for this move transition, the
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__.targetIndexes
-and
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__.targetItems
-lists are only set when this transition is triggered by the addition of
-other items in the positioner; in other cases, these lists will be
-empty. See the
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__ documentation
-for more details and examples on using these transitions.
+:ref:`ViewTransition <sdk_qtquick_viewtransition>` property to access more
+details about the item that is being moved. Note, however, that for this
+move transition, the
+:ref:`ViewTransition <sdk_qtquick_viewtransition>`.targetIndexes and
+:ref:`ViewTransition <sdk_qtquick_viewtransition>`.targetItems lists are
+only set when this transition is triggered by the addition of other
+items in the positioner; in other cases, these lists will be empty. See
+the :ref:`ViewTransition <sdk_qtquick_viewtransition>` documentation for
+more details and examples on using these transitions.
 
 **Note:** In Qt Quick 1, this transition was applied to all items that
 were part of the positioner at the time of its creation. From `QtQuick
-2 </sdk/apps/qml/QtQuick/qtquick-index/>`__ onwards, positioners apply
-the `populate </sdk/apps/qml/QtQuick/Flow#populate-prop>`__ transition
-to these items instead.
+2 </sdk/apps/qml/QtQuick/qtquick-index/>`_  onwards, positioners apply
+the :ref:`populate <sdk_qtquick_flow#populate-prop>` transition to these
+items instead.
 
-**See also** `add </sdk/apps/qml/QtQuick/Flow#add-prop>`__,
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__, and `Qt
-Quick Examples - Positioners </sdk/apps/qml/QtQuick/positioners/>`__.
+**See also** :ref:`add <sdk_qtquick_flow#add-prop>`,
+:ref:`ViewTransition <sdk_qtquick_viewtransition>`, and `Qt Quick Examples
+- Positioners </sdk/apps/qml/QtQuick/positioners/>`_ .
 
 | 
 
+.. _sdk_qtquick_flow_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ populate : `Transition </sdk/apps/qml/QtQuick/Transition/>`__   |
+| :ref:` <>`\ populate : `Transition <sdk_qtquick_transition>`           |
 +--------------------------------------------------------------------------+
 
 This property holds the transition to be run for items that are part of
@@ -212,16 +221,18 @@ this positioner at the time of its creation. The transition is run when
 the positioner is first created.
 
 The transition can use the
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__ property to
-access more details about the item that is being added. See the
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__ documentation
-for more details and examples on using these transitions.
+:ref:`ViewTransition <sdk_qtquick_viewtransition>` property to access more
+details about the item that is being added. See the
+:ref:`ViewTransition <sdk_qtquick_viewtransition>` documentation for more
+details and examples on using these transitions.
 
-**See also** `add </sdk/apps/qml/QtQuick/Flow#add-prop>`__,
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__, and `Qt
-Quick Examples - Positioners </sdk/apps/qml/QtQuick/positioners/>`__.
+**See also** :ref:`add <sdk_qtquick_flow#add-prop>`,
+:ref:`ViewTransition <sdk_qtquick_viewtransition>`, and `Qt Quick Examples
+- Positioners </sdk/apps/qml/QtQuick/positioners/>`_ .
 
 | 
+
+.. _sdk_qtquick_flow_spacing-prop:
 
 +--------------------------------------------------------------------------+
 |        \ spacing : real                                                  |
@@ -230,10 +241,9 @@ Quick Examples - Positioners </sdk/apps/qml/QtQuick/positioners/>`__.
 spacing is the amount in pixels left empty between each adjacent item,
 and defaults to 0.
 
-**See also**
-`Grid::spacing </sdk/apps/qml/QtQuick/Grid#spacing-prop>`__.
+**See also** :ref:`Grid::spacing <sdk_qtquick_grid#spacing-prop>`.
 
 | 
 
-.. |image0| image:: /media/sdk/apps/qml/QtQuick/Flow/images/qml-flow-snippet.png
+.. |image0| image:: /mediasdk_qtquick_flowimages/qml-flow-snippet.png
 

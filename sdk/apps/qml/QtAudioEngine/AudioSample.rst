@@ -1,3 +1,7 @@
+.. _sdk_qtaudioengine_audiosample:
+QtAudioEngine AudioSample
+=========================
+
 Load audio samples, mostly .wav.
 
 +---------------------+----------------------------+
@@ -9,23 +13,20 @@ Load audio samples, mostly .wav.
 Properties
 ----------
 
--  ****`loaded </sdk/apps/qml/QtAudioEngine/AudioSample#loaded-prop>`__****
-   : bool
--  ****`name </sdk/apps/qml/QtAudioEngine/AudioSample#name-prop>`__****
-   : string
--  ****`preloaded </sdk/apps/qml/QtAudioEngine/AudioSample#preloaded-prop>`__****
+-  :ref:`loaded <sdk_qtaudioengine_audiosample_loaded-prop>` : bool
+-  :ref:`name <sdk_qtaudioengine_audiosample_name-prop>` : string
+-  :ref:`preloaded <sdk_qtaudioengine_audiosample_preloaded-prop>`
    : bool
 
 Signals
 -------
 
--  ****`loadedChanged </sdk/apps/qml/QtAudioEngine/AudioSample#loadedChanged-signal>`__****\ ()
+-  :ref:`loadedChanged <sdk_qtaudioengine_audiosample_loadedChanged-signal>`\ ()
 
 Methods
 -------
 
--  void
-   ****`load </sdk/apps/qml/QtAudioEngine/AudioSample#load-method>`__****\ ()
+-  void :ref:`load <sdk_qtaudioengine_audiosample_load-method>`\ ()
 
 Detailed Description
 --------------------
@@ -33,9 +34,9 @@ Detailed Description
 ``AudioSample`` is part of the **QtAudioEngine 1.0** module.
 
 It can be accessed through
-`QtAudioEngine::AudioEngine::samples </sdk/apps/qml/QtAudioEngine/AudioEngine#samples-prop>`__
+:ref:`QtAudioEngine::AudioEngine::samples <sdk_qtaudioengine_audioengine#samples-prop>`
 with its unique name and must be defined inside
-`AudioEngine </sdk/apps/qml/QtAudioEngine/AudioEngine/>`__.
+:ref:`AudioEngine <sdk_qtaudioengine_audioengine>`.
 
 .. code:: qml
 
@@ -57,6 +58,8 @@ with its unique name and must be defined inside
 Property Documentation
 ----------------------
 
+.. _sdk_qtaudioengine_audiosample_loaded-prop:
+
 +--------------------------------------------------------------------------+
 |        \ loaded : bool                                                   |
 +--------------------------------------------------------------------------+
@@ -66,6 +69,8 @@ or not.
 
 | 
 
+.. _sdk_qtaudioengine_audiosample_name-prop:
+
 +--------------------------------------------------------------------------+
 |        \ name : string                                                   |
 +--------------------------------------------------------------------------+
@@ -74,6 +79,8 @@ This property holds the name of the sample, which must be unique among
 all samples and only defined once.
 
 | 
+
+.. _sdk_qtaudioengine_audiosample_preloaded-prop:
 
 +--------------------------------------------------------------------------+
 |        \ preloaded : bool                                                |
@@ -89,13 +96,14 @@ be loaded until explicitly requested.
 Signal Documentation
 --------------------
 
+.. _sdk_qtaudioengine_audiosample_loadedChanged()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ loadedChanged()                                                 |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when
-`loaded </sdk/apps/qml/QtAudioEngine/AudioSample#loaded-prop>`__ is
-changed.
+:ref:`loaded <sdk_qtaudioengine_audiosample#loaded-prop>` is changed.
 
 The corresponding handler is ``onLoadedChanged``.
 
@@ -103,6 +111,8 @@ The corresponding handler is ``onLoadedChanged``.
 
 Method Documentation
 --------------------
+
+.. _sdk_qtaudioengine_audiosample_void load-method:
 
 +--------------------------------------------------------------------------+
 |        \ void load()                                                     |

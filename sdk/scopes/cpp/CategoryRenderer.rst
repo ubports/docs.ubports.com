@@ -1,5 +1,9 @@
+.. _sdk_categoryrenderer:
+CategoryRenderer
+================
+
 A category renderer template in JSON format.
-`More... </sdk/scopes/cpp/unity.scopes.CategoryRenderer#details>`__
+`More... </sdk/scopes/cpp/unity.scopes.CategoryRenderer/#details>`_ 
 
 ``#include <unity/scopes/CategoryRenderer.h>``
 
@@ -8,9 +12,9 @@ A category renderer template in JSON format.
 
  
 
-`CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer#a046414ae2092968686ee4ee00629054a>`__
+`CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/#a046414ae2092968686ee4ee00629054a>`_ 
 (std::string const
-&json\_text=\ `DEFAULT\_RENDERER </sdk/scopes/cpp/unity.scopes#a697a8f21545922bcfc8345d83f5cc156>`__)
+&json\_text=\ :ref:`DEFAULT\_RENDERER <sdk_unity_scopes#a697a8f21545922bcfc8345d83f5cc156>`)
 
  
 
@@ -20,7 +24,7 @@ A category renderer template in JSON format.
 
 std::string 
 
-`data </sdk/scopes/cpp/unity.scopes.CategoryRenderer#a3bc0a10ca63c2bb90c14207ca28b536d>`__
+`data </sdk/scopes/cpp/unity.scopes.CategoryRenderer/#a3bc0a10ca63c2bb90c14207ca28b536d>`_ 
 () const
 
  
@@ -37,15 +41,15 @@ usual value semantics.
          
 
 **CategoryRenderer**
-(`CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`__
+(`CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`_ 
 const &)
 
  
 
-`CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`__ & 
+`CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`_  & 
 
 **operator=**
-(`CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`__
+(`CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`_ 
 const &)
 
  
@@ -53,15 +57,15 @@ const &)
          
 
 **CategoryRenderer**
-(`CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`__
+(`CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`_ 
 &&)
 
  
 
-`CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`__ & 
+`CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`_  & 
 
 **operator=**
-(`CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`__
+(`CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`_ 
 &&)
 
  
@@ -76,9 +80,9 @@ const &)
 --------------------------------------
 
 static
-`CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`__ 
+`CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`_  
 
-`from\_file </sdk/scopes/cpp/unity.scopes.CategoryRenderer#a3236d422bffd659e9e5a8eaae418320c>`__
+`from\_file </sdk/scopes/cpp/unity.scopes.CategoryRenderer/#a3236d422bffd659e9e5a8eaae418320c>`_ 
 (std::string const &path)
 
  
@@ -97,20 +101,20 @@ Note that the data is likely to change between major versions of Unity,
 and therefore the definition isn't strongly typed and provided by a
 scope author as a JSON string.
 
-A `Category </sdk/scopes/cpp/unity.scopes.Category/>`__ contains all the
+A `Category </sdk/scopes/cpp/unity.scopes.Category/>`_  contains all the
 information needed by Unity to render results provided by a scope author
 (by handling
-`unity::scopes::SearchQueryBase::run() </sdk/scopes/cpp/unity.scopes.SearchQueryBase#afc4f15b2266838d7da75b05ea37d504b>`__)
+`unity::scopes::SearchQueryBase::run() </sdk/scopes/cpp/unity.scopes.SearchQueryBase/#afc4f15b2266838d7da75b05ea37d504b>`_ )
 in a way that gives the user as much useful information as possible.
 When pushing results to the query originator
-(`unity::scopes::SearchReply::push() </sdk/scopes/cpp/unity.scopes.SearchReply#a63d6de93152b3a972901c2d406ef5760>`__),
+(`unity::scopes::SearchReply::push() </sdk/scopes/cpp/unity.scopes.SearchReply/#a63d6de93152b3a972901c2d406ef5760>`_ ),
 each result needs to have a category associated, and this association
 determines what will the result look like.
 
 The most important part of a category definition is the
-`unity::scopes::CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`__
+`unity::scopes::CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`_ 
 instance. If you use the default constructor
-`CategoryRenderer() </sdk/scopes/cpp/unity.scopes.CategoryRenderer#a046414ae2092968686ee4ee00629054a>`__,
+`CategoryRenderer() </sdk/scopes/cpp/unity.scopes.CategoryRenderer/#a046414ae2092968686ee4ee00629054a>`_ ,
 the renderer will use the following definition:
 
 .. code:: fragment
@@ -131,9 +135,9 @@ dictionary, Unity will render results associated with this category in a
 grid layout. The ``"components"`` dictionary specifies which result
 fields are used by Unity. In case of this definition, each tile of the
 grid will map the "title" field from the result (set also by the call to
-`unity::scopes::Result::set\_title() </sdk/scopes/cpp/unity.scopes.Result#adf8cf3d863babb02107fb5ef35acc925>`__)
+`unity::scopes::Result::set\_title() </sdk/scopes/cpp/unity.scopes.Result/#adf8cf3d863babb02107fb5ef35acc925>`_ )
 as title for the grid tile, and "art" field from the result (see
-`unity::scopes::Result::set\_art() </sdk/scopes/cpp/unity.scopes.Result#a3f2e512b10dbf2ed867d260ec33a89a1>`__)
+`unity::scopes::Result::set\_art() </sdk/scopes/cpp/unity.scopes.Result/#a3f2e512b10dbf2ed867d260ec33a89a1>`_ )
 as the icon for the grid tile.
 
 To sum up, the ``"template"`` dictionary contains information to
@@ -181,7 +185,7 @@ When using ``{"schema-version": 1}``, the following keys are understood:
 
    .. code:: fragment
 
-       color://#rrggbb 
+       color:///#rrggbb 
 
    or
 
@@ -193,7 +197,7 @@ When using ``{"schema-version": 1}``, the following keys are understood:
 
    .. code:: fragment
 
-       gradient://#rrggbb#rrggbb 
+       gradient:///#rrggbb/#rrggbb 
 
    or an image URI (will be stretched)
 
@@ -242,7 +246,7 @@ they are not used by the renderer (and therefore not specified in the
 ``"components"`` dictionary), such fields will be preserved and
 available to the scope when handling result-specific methods (for
 example
-`unity::scopes::ScopeBase::preview() </sdk/scopes/cpp/unity.scopes.ScopeBase#a154b9b4cfc0f40572cfec60dd819396f>`__).
+`unity::scopes::ScopeBase::preview() </sdk/scopes/cpp/unity.scopes.ScopeBase/#a154b9b4cfc0f40572cfec60dd819396f>`_ ).
 
 // use raw string literal, so we don't have to escape all the quotes
 
@@ -283,14 +287,14 @@ std::string CATEGORY\_DEFINITION = R"(
 )";
 
 void
-MyQuery::run(\ `SearchReplyProxy </sdk/scopes/cpp/unity.scopes#a9cd604d9b842ac3b2b8636c2165dec1f>`__
+MyQuery::run(\ :ref:`SearchReplyProxy <sdk_unity_scopes#a9cd604d9b842ac3b2b8636c2165dec1f>`
 const& reply)
 
 {
 
 auto category = reply->register\_category("recommended", "Recommended",
 icon,
-`CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer#a046414ae2092968686ee4ee00629054a>`__\ (CATEGORY\_DEFINITION));
+`CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/#a046414ae2092968686ee4ee00629054a>`_ \ (CATEGORY\_DEFINITION));
 
 // push a sample result
 
@@ -339,7 +343,7 @@ Constructor & Destructor Documentation
 +--------------------------------------+--------------------------------------+
 
 Creates a
-`CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`__
+`CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`_ 
 from a JSON string.
 
 Parameters
@@ -389,7 +393,7 @@ Returns
 | | CategoryRend |              |      |                                      |
 |          |              |            |                                      |
 |    |              |                  |                                      |
-| | erer/>`__    |              |      |                                      |
+| | erer/>`_     |              |      |                                      |
 |          |              |            |                                      |
 |    |              |                  |                                      |
 | | unity::scope |              |      |                                      |
@@ -410,11 +414,11 @@ Returns
 +--------------------------------------+--------------------------------------+
 
 Creates a
-`CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`__
+`CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`_ 
 from a text file.
 
 Returns
     The
-    `CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`__
+    `CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`_ 
     corresponding to the information in the file.
 

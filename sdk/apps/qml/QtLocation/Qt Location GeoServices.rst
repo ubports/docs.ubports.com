@@ -1,3 +1,7 @@
+.. _sdk_qtlocation_qt_location_geoservices:
+QtLocation Qt Location GeoServices
+==================================
+
 
 
 The Qt Location provides the majority of its functionality through

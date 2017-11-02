@@ -1,3 +1,7 @@
+.. _sdk_qtlocation_routemaneuver:
+QtLocation RouteManeuver
+========================
+
 The RouteManeuver type represents the information relevant to the point
 at which two RouteSegments meet.
 
@@ -10,37 +14,36 @@ at which two RouteSegments meet.
 Properties
 ----------
 
--  ****`direction </sdk/apps/qml/QtLocation/RouteManeuver#direction-prop>`__****
-   : enumeration
--  ****`distanceToNextInstruction </sdk/apps/qml/QtLocation/RouteManeuver#distanceToNextInstruction-prop>`__****
+-  :ref:`direction <sdk_qtlocation_routemaneuver_direction-prop>` :
+   enumeration
+-  :ref:`distanceToNextInstruction <sdk_qtlocation_routemaneuver_distanceToNextInstruction-prop>`
    : real
--  ****`instructionText </sdk/apps/qml/QtLocation/RouteManeuver#instructionText-prop>`__****
+-  :ref:`instructionText <sdk_qtlocation_routemaneuver_instructionText-prop>`
    : string
--  ****`position </sdk/apps/qml/QtLocation/RouteManeuver#position-prop>`__****
-   : coordinate
--  ****`timeToNextInstruction </sdk/apps/qml/QtLocation/RouteManeuver#timeToNextInstruction-prop>`__****
+-  :ref:`position <sdk_qtlocation_routemaneuver_position-prop>` :
+   coordinate
+-  :ref:`timeToNextInstruction <sdk_qtlocation_routemaneuver_timeToNextInstruction-prop>`
    : int
--  ****`valid </sdk/apps/qml/QtLocation/RouteManeuver#valid-prop>`__****
-   : bool
--  ****`waypoint </sdk/apps/qml/QtLocation/RouteManeuver#waypoint-prop>`__****
-   : coordinate
--  ****`waypointValid </sdk/apps/qml/QtLocation/RouteManeuver#waypointValid-prop>`__****
+-  :ref:`valid <sdk_qtlocation_routemaneuver_valid-prop>` : bool
+-  :ref:`waypoint <sdk_qtlocation_routemaneuver_waypoint-prop>` :
+   coordinate
+-  :ref:`waypointValid <sdk_qtlocation_routemaneuver_waypointValid-prop>`
    : bool
 
 Detailed Description
 --------------------
 
-`RouteSegment </sdk/apps/qml/QtLocation/RouteSegment/>`__ instances can
-be thought of as edges on a routing graph, with
-`RouteManeuver </sdk/apps/qml/QtLocation/RouteManeuver/>`__ instances as
-optional labels attached to the vertices of the graph.
+:ref:`RouteSegment <sdk_qtlocation_routesegment>` instances can be thought
+of as edges on a routing graph, with
+:ref:`RouteManeuver <sdk_qtlocation_routemaneuver>` instances as optional
+labels attached to the vertices of the graph.
 
 The most interesting information held in a
-`RouteManeuver </sdk/apps/qml/QtLocation/RouteManeuver/>`__ instance is
-normally the textual navigation to provide and the position at which to
-provide it, accessible by
-`instructionText </sdk/apps/qml/QtLocation/RouteManeuver#instructionText-prop>`__
-and `position </sdk/apps/qml/QtLocation/RouteManeuver#position-prop>`__
+:ref:`RouteManeuver <sdk_qtlocation_routemaneuver>` instance is normally
+the textual navigation to provide and the position at which to provide
+it, accessible by
+:ref:`instructionText <sdk_qtlocation_routemaneuver#instructionText-prop>`
+and :ref:`position <sdk_qtlocation_routemaneuver#position-prop>`
 respectively.
 
 Example
@@ -60,44 +63,48 @@ route maneuver:
 Property Documentation
 ----------------------
 
+.. _sdk_qtlocation_routemaneuver_direction-prop:
+
 +--------------------------------------------------------------------------+
 |        \ direction : enumeration                                         |
 +--------------------------------------------------------------------------+
 
 Describes the change in direction associated with the instruction text
 that is associated with a
-`RouteManeuver </sdk/apps/qml/QtLocation/RouteManeuver/>`__.
+:ref:`RouteManeuver <sdk_qtlocation_routemaneuver>`.
 
--  `RouteManeuver </sdk/apps/qml/QtLocation/RouteManeuver/>`__.NoDirection
-   - There is no direction associated with the instruction text
--  `RouteManeuver </sdk/apps/qml/QtLocation/RouteManeuver/>`__.DirectionForward
-   - The instruction indicates that the direction of travel does not
-   need to change
--  `RouteManeuver </sdk/apps/qml/QtLocation/RouteManeuver/>`__.DirectionBearRight
-   - The instruction indicates that the direction of travel should bear
-   to the right
--  `RouteManeuver </sdk/apps/qml/QtLocation/RouteManeuver/>`__.DirectionLightRight
+-  :ref:`RouteManeuver <sdk_qtlocation_routemaneuver>`.NoDirection - There
+   is no direction associated with the instruction text
+-  :ref:`RouteManeuver <sdk_qtlocation_routemaneuver>`.DirectionForward -
+   The instruction indicates that the direction of travel does not need
+   to change
+-  :ref:`RouteManeuver <sdk_qtlocation_routemaneuver>`.DirectionBearRight -
+   The instruction indicates that the direction of travel should bear to
+   the right
+-  :ref:`RouteManeuver <sdk_qtlocation_routemaneuver>`.DirectionLightRight
    - The instruction indicates that a light turn to the right is
    required
--  `RouteManeuver </sdk/apps/qml/QtLocation/RouteManeuver/>`__.DirectionRight
-   - The instruction indicates that a turn to the right is required
--  `RouteManeuver </sdk/apps/qml/QtLocation/RouteManeuver/>`__.DirectionHardRight
-   - The instruction indicates that a hard turn to the right is required
--  `RouteManeuver </sdk/apps/qml/QtLocation/RouteManeuver/>`__.DirectionUTurnRight
+-  :ref:`RouteManeuver <sdk_qtlocation_routemaneuver>`.DirectionRight - The
+   instruction indicates that a turn to the right is required
+-  :ref:`RouteManeuver <sdk_qtlocation_routemaneuver>`.DirectionHardRight -
+   The instruction indicates that a hard turn to the right is required
+-  :ref:`RouteManeuver <sdk_qtlocation_routemaneuver>`.DirectionUTurnRight
    - The instruction indicates that a u-turn to the right is required
--  `RouteManeuver </sdk/apps/qml/QtLocation/RouteManeuver/>`__.DirectionUTurnLeft
-   - The instruction indicates that a u-turn to the left is required
--  `RouteManeuver </sdk/apps/qml/QtLocation/RouteManeuver/>`__.DirectionHardLeft
-   - The instruction indicates that a hard turn to the left is required
--  `RouteManeuver </sdk/apps/qml/QtLocation/RouteManeuver/>`__.DirectionLeft
-   - The instruction indicates that a turn to the left is required
--  `RouteManeuver </sdk/apps/qml/QtLocation/RouteManeuver/>`__.DirectionLightLeft
-   - The instruction indicates that a light turn to the left is required
--  `RouteManeuver </sdk/apps/qml/QtLocation/RouteManeuver/>`__.DirectionBearLeft
-   - The instruction indicates that the direction of travel should bear
-   to the left
+-  :ref:`RouteManeuver <sdk_qtlocation_routemaneuver>`.DirectionUTurnLeft -
+   The instruction indicates that a u-turn to the left is required
+-  :ref:`RouteManeuver <sdk_qtlocation_routemaneuver>`.DirectionHardLeft -
+   The instruction indicates that a hard turn to the left is required
+-  :ref:`RouteManeuver <sdk_qtlocation_routemaneuver>`.DirectionLeft - The
+   instruction indicates that a turn to the left is required
+-  :ref:`RouteManeuver <sdk_qtlocation_routemaneuver>`.DirectionLightLeft -
+   The instruction indicates that a light turn to the left is required
+-  :ref:`RouteManeuver <sdk_qtlocation_routemaneuver>`.DirectionBearLeft -
+   The instruction indicates that the direction of travel should bear to
+   the left
 
 | 
+
+.. _sdk_qtlocation_routemaneuver_distanceToNextInstruction-prop:
 
 +--------------------------------------------------------------------------+
 |        \ distanceToNextInstruction : real                                |
@@ -109,6 +116,8 @@ next instruction should be issued.
 
 | 
 
+.. _sdk_qtlocation_routemaneuver_instructionText-prop:
+
 +--------------------------------------------------------------------------+
 |        \ instructionText : string                                        |
 +--------------------------------------------------------------------------+
@@ -117,15 +126,19 @@ This read-only property holds textual navigation instruction.
 
 | 
 
+.. _sdk_qtlocation_routemaneuver_position-prop:
+
 +--------------------------------------------------------------------------+
 |        \ position : coordinate                                           |
 +--------------------------------------------------------------------------+
 
 This read-only property holds where the
-`instructionText </sdk/apps/qml/QtLocation/RouteManeuver#instructionText-prop>`__
+:ref:`instructionText <sdk_qtlocation_routemaneuver#instructionText-prop>`
 should be displayed.
 
 | 
+
+.. _sdk_qtlocation_routemaneuver_timeToNextInstruction-prop:
 
 +--------------------------------------------------------------------------+
 |        \ timeToNextInstruction : int                                     |
@@ -136,6 +149,8 @@ from the point at which the associated instruction was issued and the
 point that the next instruction should be issued, in seconds.
 
 | 
+
+.. _sdk_qtlocation_routemaneuver_valid-prop:
 
 +--------------------------------------------------------------------------+
 |        \ valid : bool                                                    |
@@ -148,6 +163,8 @@ attached to the endpoint of a QGeoRouteSegment instance.
 
 | 
 
+.. _sdk_qtlocation_routemaneuver_waypoint-prop:
+
 +--------------------------------------------------------------------------+
 |        \ waypoint : coordinate                                           |
 +--------------------------------------------------------------------------+
@@ -155,16 +172,18 @@ attached to the endpoint of a QGeoRouteSegment instance.
 This property holds the waypoint associated with this maneuver. All
 maneuvers do not have a waypoint associated with them, this can be
 checked with
-`waypointValid </sdk/apps/qml/QtLocation/RouteManeuver#waypointValid-prop>`__.
+:ref:`waypointValid <sdk_qtlocation_routemaneuver#waypointValid-prop>`.
 
 | 
+
+.. _sdk_qtlocation_routemaneuver_waypointValid-prop:
 
 +--------------------------------------------------------------------------+
 |        \ waypointValid : bool                                            |
 +--------------------------------------------------------------------------+
 
 This read-only property holds whether this
-`waypoint </sdk/apps/qml/QtLocation/RouteManeuver#waypoint-prop>`__,
-associated with this maneuver, is valid or not.
+:ref:`waypoint <sdk_qtlocation_routemaneuver#waypoint-prop>`, associated
+with this maneuver, is valid or not.
 
 | 

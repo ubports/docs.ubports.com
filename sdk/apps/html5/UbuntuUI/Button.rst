@@ -1,3 +1,7 @@
+.. _sdk_ubuntuui_button:
+UbuntuUI Button
+===============
+
 
 A Button.
 

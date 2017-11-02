@@ -1,31 +1,33 @@
+.. _sdk_ubuntu_components_scrollbar:
+Ubuntu.Components Scrollbar
+===========================
+
 The Scrollbar component provides scrolling functionality for scrollable
 views (i.e. Flickable, ListView).
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import Ubuntu.Components 1.3         |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `StyledItem </sdk/apps/qml/Ubuntu.Co |
-|                                      | mponents/StyledItem/>`__             |
+| Inherits:                            | :ref:`StyledItem <sdk_ubuntu_components_s |
+|                                      | tyleditem>`_                         |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`align </sdk/apps/qml/Ubuntu.Components/Scrollbar#align-prop>`__****
-   : int
--  ****`flickableItem </sdk/apps/qml/Ubuntu.Components/Scrollbar#flickableItem-prop>`__****
+-  :ref:`align <sdk_ubuntu_components_scrollbar_align-prop>` : int
+-  :ref:`flickableItem <sdk_ubuntu_components_scrollbar_flickableItem-prop>`
    : Flickable
 
 Detailed Description
 --------------------
 
 **NOTE**: the Scrollbar component was revamped for OTA9 and used for the
-implementation of
-`ScrollView </sdk/apps/qml/Ubuntu.Components/ScrollView/>`__. Apps
-targeting system version OTA9 (or newer) should use
-`ScrollView </sdk/apps/qml/Ubuntu.Components/ScrollView/>`__ instead of
-Scrollbar, as it features convergent-ready features, such as (but not
-limited to) keyboard input handling.
+implementation of :ref:`ScrollView <sdk_ubuntu_components_scrollview>`.
+Apps targeting system version OTA9 (or newer) should use
+:ref:`ScrollView <sdk_ubuntu_components_scrollview>` instead of Scrollbar,
+as it features convergent-ready features, such as (but not limited to)
+keyboard input handling.
 
 The Scrollbar can be set to any flickable and has built-in anchoring
 setup to the attached flickable's front, rear, top or bottom. The
@@ -68,14 +70,13 @@ Vertical Scrollbar and Flickable behaviour
 
 Since Flickable's topMargin and bottomMargin are modified by Ubuntu
 components such as
-`BottomEdgeHint </sdk/apps/qml/Ubuntu.Components/BottomEdgeHint/>`__ and
-`Header </sdk/apps/qml/Ubuntu.Components/Header/>`__ in their
-positioning logic, the Scrollbar component uses the value of those
-properties to its top and bottom anchors margins, by default. This is to
-prevent any overlap with
-`BottomEdgeHint </sdk/apps/qml/Ubuntu.Components/BottomEdgeHint/>`__ or
-Header (see `Vertical Scrollbar and Header
-behaviour </sdk/apps/qml/Ubuntu.Components/Scrollbar#vertical-scrollbar-and-header-behaviour>`__
+:ref:`BottomEdgeHint <sdk_ubuntu_components_bottomedgehint>` and
+:ref:`Header <sdk_ubuntu_components_header>` in their positioning logic,
+the Scrollbar component uses the value of those properties to its top
+and bottom anchors margins, by default. This is to prevent any overlap
+with :ref:`BottomEdgeHint <sdk_ubuntu_components_bottomedgehint>` or Header
+(see `Vertical Scrollbar and Header
+behaviour <sdk_ubuntu_components_scrollbar#vertical-scrollbar-and-header-behaviour>:ref:`
 for more info about that). In case you need to specify custom Flickable
 content margins (note: we're talking about content margins, not anchors
 ones), you will also have to override the top and bottom anchors margins
@@ -93,11 +94,11 @@ the size of the trough (or track) it slides in, it is important that the
 trough does not resize or move while the user is interacting with the
 component.
 
-In the context of a `Page </sdk/apps/qml/Ubuntu.Components/Page/>`__
-with a `Header </sdk/apps/qml/Ubuntu.Components/Header/>`__ that slides
-in and out dynamically when the user flicks the surface (see
-`Header::flickable </sdk/apps/qml/Ubuntu.Components/Header#flickable-prop>`__),
-a vertical Scrollbar that is linked to the same flickable surface as the
+In the context of a :ref:`Page <sdk_ubuntu_components_page>` with a
+:ref:`Header <sdk_ubuntu_components_header>` that slides in and out
+dynamically when the user flicks the surface (see
+:ref:`Header::flickable <sdk_ubuntu_components_header#flickable-prop>`), a
+vertical Scrollbar that is linked to the same flickable surface as the
 Header behaves as described below:
 
 -  - when the Header is exposed, the Scrollbar component sits right
@@ -115,12 +116,14 @@ Header behaves as described below:
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_scrollbar_align-prop:
+
 +--------------------------------------------------------------------------+
 |        \ align : int                                                     |
 +--------------------------------------------------------------------------+
 
 The property defines the alignment of the scrollbar to the
-`flickableItem </sdk/apps/qml/Ubuntu.Components/Scrollbar#flickableItem-prop>`__.
+:ref:`flickableItem <sdk_ubuntu_components_scrollbar#flickableItem-prop>`.
 The implementation handles the alignment as follows:
 
 -  Qt.AlignLeading anchors to the left on LTR and to the right on RTL
@@ -134,14 +137,15 @@ The default value is **Qt.AlignTrailing**.
 
 | 
 
+.. _sdk_ubuntu_components_scrollbar_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ flickableItem :                                                 |
-| `Flickable </sdk/apps/qml/QtQuick/Flickable/>`__                         |
+| :ref:` <>`\ flickableItem : `Flickable <sdk_qtquick_flickable>`        |
 +--------------------------------------------------------------------------+
 
 This property holds the flickable item (Flickable,
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__ or
-`GridView </sdk/apps/qml/QtQuick/qtquick-draganddrop-example#gridview>`__)
+:ref:`ListView <sdk_qtquick_listview>` or
+`GridView </sdk/apps/qml/QtQuick/qtquick-draganddrop-example/#gridview>`_ )
 the Scrollbar is attached to.
 
 | 

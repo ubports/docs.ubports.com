@@ -1,3 +1,7 @@
+.. _sdk_qtquick_qt_quick_examples_-_local_storage:
+QtQuick Qt Quick Examples - Local Storage
+=========================================
+
 
 
 |image0|

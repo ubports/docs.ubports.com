@@ -1,16 +1,20 @@
+.. _sdk_qtquick_particles_ellipseshape:
+QtQuick.Particles EllipseShape
+==============================
+
 Represents an ellipse to other particle system elements
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtQuick.Particles 2.0         |
 +--------------------------------------+--------------------------------------+
 | Inherits:                            | `Shape </sdk/apps/qml/QtQuick/Partic |
-|                                      | les.Shape/>`__                       |
+|                                      | les.Shape/>`_                        |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`fill </sdk/apps/qml/QtQuick/Particles.EllipseShape#fill-prop>`__****
+-  `fill </sdk/apps/qml/QtQuick/Particles.EllipseShape/_fill-prop>`_ 
    : bool
 
 Detailed Description
@@ -21,6 +25,8 @@ have them act upon an ellipse shaped area.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_particles_ellipseshape_fill-prop:
 
 +--------------------------------------------------------------------------+
 |        \ fill : bool                                                     |

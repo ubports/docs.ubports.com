@@ -1,3 +1,7 @@
+.. _sdk_qtlocation_imagemodel:
+QtLocation ImageModel
+=====================
+
 The ImageModel type provides a model of place images.
 
 +---------------------+-------------------------+
@@ -9,49 +13,47 @@ The ImageModel type provides a model of place images.
 Properties
 ----------
 
--  ****`batchSize </sdk/apps/qml/QtLocation/ImageModel#batchSize-prop>`__****
-   : int
--  ****`place </sdk/apps/qml/QtLocation/ImageModel#place-prop>`__**** :
-   Place
--  ****`totalCount </sdk/apps/qml/QtLocation/ImageModel#totalCount-prop>`__****
-   : int
+-  :ref:`batchSize <sdk_qtlocation_imagemodel_batchSize-prop>` :
+   int
+-  :ref:`place <sdk_qtlocation_imagemodel_place-prop>` : Place
+-  :ref:`totalCount <sdk_qtlocation_imagemodel_totalCount-prop>` :
+   int
 
 Detailed Description
 --------------------
 
-The `ImageModel </sdk/apps/qml/QtLocation/ImageModel/>`__ is a read-only
-model used to fetch images related to a
-`Place </sdk/apps/qml/QtLocation/location-cpp-qml#place>`__. Binding a
-`Place </sdk/apps/qml/QtLocation/location-cpp-qml#place>`__ via
-`ImageModel::place </sdk/apps/qml/QtLocation/ImageModel#place-prop>`__
-initiates an initial fetch of images. The model performs fetches
-incrementally and is intended to be used in conjunction with a View such
-as a ListView. When the View reaches the last of the images currently in
-the model, a fetch is performed to retrieve more if they are available.
-The View is automatically updated as the images are received. The number
-of images which are fetched at a time is specified by the
-`batchSize </sdk/apps/qml/QtLocation/ImageModel#batchSize-prop>`__
-property. The total number of images available can be accessed via the
-`totalCount </sdk/apps/qml/QtLocation/ImageModel#totalCount-prop>`__
-property.
+The :ref:`ImageModel <sdk_qtlocation_imagemodel>` is a read-only model used
+to fetch images related to a
+`Place </sdk/apps/qml/QtLocation/location-cpp-qml/#place>`_ . Binding a
+`Place </sdk/apps/qml/QtLocation/location-cpp-qml/#place>`_  via
+:ref:`ImageModel::place <sdk_qtlocation_imagemodel#place-prop>` initiates
+an initial fetch of images. The model performs fetches incrementally and
+is intended to be used in conjunction with a View such as a ListView.
+When the View reaches the last of the images currently in the model, a
+fetch is performed to retrieve more if they are available. The View is
+automatically updated as the images are received. The number of images
+which are fetched at a time is specified by the
+:ref:`batchSize <sdk_qtlocation_imagemodel#batchSize-prop>` property. The
+total number of images available can be accessed via the
+:ref:`totalCount <sdk_qtlocation_imagemodel#totalCount-prop>` property.
 
 The model returns data for the following roles:
 
-+---------------+-----------------------------------------------------+-----------------------------------------------------------------------+
-| Role          | Type                                                | Description                                                           |
-+===============+=====================================================+=======================================================================+
-| url           | url                                                 | The URL of the image.                                                 |
-+---------------+-----------------------------------------------------+-----------------------------------------------------------------------+
-| imageId       | string                                              | The identifier of the image.                                          |
-+---------------+-----------------------------------------------------+-----------------------------------------------------------------------+
-| mimeType      | string                                              | The MIME type of the image.                                           |
-+---------------+-----------------------------------------------------+-----------------------------------------------------------------------+
-| supplier      | `Supplier </sdk/apps/qml/QtLocation/Supplier/>`__   | The supplier of the image.                                            |
-+---------------+-----------------------------------------------------+-----------------------------------------------------------------------+
-| user          | `User </sdk/apps/qml/QtLocation/User/>`__           | The user who contributed the image.                                   |
-+---------------+-----------------------------------------------------+-----------------------------------------------------------------------+
-| attribution   | string                                              | Attribution text which must be displayed when displaying the image.   |
-+---------------+-----------------------------------------------------+-----------------------------------------------------------------------+
++---------------+------------------------------------------+-----------------------------------------------------------------------+
+| Role          | Type                                     | Description                                                           |
++===============+==========================================+=======================================================================+
+| url           | url                                      | The URL of the image.                                                 |
++---------------+------------------------------------------+-----------------------------------------------------------------------+
+| imageId       | string                                   | The identifier of the image.                                          |
++---------------+------------------------------------------+-----------------------------------------------------------------------+
+| mimeType      | string                                   | The MIME type of the image.                                           |
++---------------+------------------------------------------+-----------------------------------------------------------------------+
+| supplier      | :ref:`Supplier <sdk_qtlocation_supplier>`| The supplier of the image.                                            |
++---------------+------------------------------------------+-----------------------------------------------------------------------+
+| user          | :ref:`User <sdk_qtlocation_user>`        | The user who contributed the image.                                   |
++---------------+------------------------------------------+-----------------------------------------------------------------------+
+| attribution   | string                                   | Attribution text which must be displayed when displaying the image.   |
++---------------+------------------------------------------+-----------------------------------------------------------------------+
 
 Example
 -------
@@ -94,6 +96,8 @@ The following example shows how to display images for a place:
 Property Documentation
 ----------------------
 
+.. _sdk_qtlocation_imagemodel_batchSize-prop:
+
 +--------------------------------------------------------------------------+
 |        \ batchSize : int                                                 |
 +--------------------------------------------------------------------------+
@@ -103,13 +107,17 @@ items.
 
 | 
 
+.. _sdk_qtlocation_imagemodel_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ place : `Place </sdk/apps/qml/QtLocation/Place/>`__             |
+| :ref:` <>`\ place : `Place <sdk_qtlocation_place>`                     |
 +--------------------------------------------------------------------------+
 
 This property holds the Place that the images are for.
 
 | 
+
+.. _sdk_qtlocation_imagemodel_totalCount-prop:
 
 +--------------------------------------------------------------------------+
 |        \ totalCount : int                                                |

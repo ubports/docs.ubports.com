@@ -1,3 +1,7 @@
+.. _sdk_u1db_database:
+U1db Database
+=============
+
 The Database class implements on-disk storage for documents and indexes.
 
 +--------------------------------------+--------------------------------------+
@@ -12,57 +16,55 @@ Public Functions
 ----------------
 
 +--------------------------------------+--------------------------------------+
-|                                      | **`Database </sdk/scopes/cpp/U1db/Da |
-|                                      | tabase#Database>`__**\ (QObject      |
+|                                      | **:ref:`Database <sdk_u1db_database#Datab |
+|                                      | ase>`_ **\ (QObject                  |
 |                                      | \* *parent* = 0)                     |
 +--------------------------------------+--------------------------------------+
-| void                                 | **`deleteDoc </sdk/scopes/cpp/U1db/D |
-|                                      | atabase#deleteDoc>`__**\ (const      |
+| void                                 | **:ref:`deleteDoc <sdk_u1db_database#dele |
+|                                      | teDoc>`_ **\ (const                  |
 |                                      | QString & *docId*)                   |
 +--------------------------------------+--------------------------------------+
-| QVariant                             | **`getDoc </sdk/scopes/cpp/U1db/Data |
-|                                      | base#getDoc>`__**\ (const            |
+| QVariant                             | **:ref:`getDoc <sdk_u1db_database#getDoc> |
+|                                      | `_ **\ (const                        |
 |                                      | QString & *docId*)                   |
 +--------------------------------------+--------------------------------------+
-| QVariant                             | **`getDocUnchecked </sdk/scopes/cpp/ |
-|                                      | U1db/Database#getDocUnchecked>`__**\ |
-|                                      |  (const                              |
+| QVariant                             | **:ref:`getDocUnchecked <sdk_u1db_databas |
+|                                      | e#getDocUnchecked>`_ **\ (const      |
 |                                      | QString & *docId*) const             |
 +--------------------------------------+--------------------------------------+
-| QStringList                          | **`getIndexExpressions </sdk/scopes/ |
-|                                      | cpp/U1db/Database#getIndexExpression |
-|                                      | s>`__**\ (const                      |
+| QStringList                          | **:ref:`getIndexExpressions <sdk_u1db_dat |
+|                                      | abase#getIndexExpressions>`_ **\ (co |
+|                                      | nst                                  |
 |                                      | QString & *indexName*)               |
 +--------------------------------------+--------------------------------------+
-| QStringList                          | **`getIndexKeys </sdk/scopes/cpp/U1d |
-|                                      | b/Database#getIndexKeys>`__**\ (cons |
-|                                      | t                                    |
+| QStringList                          | **:ref:`getIndexKeys <sdk_u1db_database#g |
+|                                      | etIndexKeys>`_ **\ (const            |
 |                                      | QString & *indexName*)               |
 +--------------------------------------+--------------------------------------+
-| QString                              | **`getPath </sdk/scopes/cpp/U1db/Dat |
-|                                      | abase#getPath>`__**\ ()              |
+| QString                              | **:ref:`getPath <sdk_u1db_database#getPat |
+|                                      | h>`_ **\ ()                          |
 +--------------------------------------+--------------------------------------+
-| QString                              | **`lastError </sdk/scopes/cpp/U1db/D |
-|                                      | atabase#lastError>`__**\ ()          |
+| QString                              | **:ref:`lastError <sdk_u1db_database#last |
+|                                      | Error>`_ **\ ()                      |
 +--------------------------------------+--------------------------------------+
-| QList<QString>                       | **`listDocs </sdk/scopes/cpp/U1db/Da |
-|                                      | tabase#listDocs>`__**\ ()            |
+| QList<QString>                       | **:ref:`listDocs <sdk_u1db_database#listD |
+|                                      | ocs>`_ **\ ()                        |
 +--------------------------------------+--------------------------------------+
-| QString                              | **`putDoc </sdk/scopes/cpp/U1db/Data |
-|                                      | base#putDoc>`__**\ (QVariant         |
+| QString                              | **:ref:`putDoc <sdk_u1db_database#putDoc> |
+|                                      | `_ **\ (QVariant                     |
 |                                      | *contents*, const QString & *docId*  |
 |                                      | = QString())                         |
 +--------------------------------------+--------------------------------------+
-| QString                              | **`putIndex </sdk/scopes/cpp/U1db/Da |
-|                                      | tabase#putIndex>`__**\ (const        |
+| QString                              | **:ref:`putIndex <sdk_u1db_database#putIn |
+|                                      | dex>`_ **\ (const                    |
 |                                      | QString & *indexName*, QStringList   |
 |                                      | *expressions*)                       |
 +--------------------------------------+--------------------------------------+
-| void                                 | **`resetModel </sdk/scopes/cpp/U1db/ |
-|                                      | Database#resetModel>`__**\ ()        |
+| void                                 | **:ref:`resetModel <sdk_u1db_database#res |
+|                                      | etModel>`_ **\ ()                    |
 +--------------------------------------+--------------------------------------+
-| void                                 | **`setPath </sdk/scopes/cpp/U1db/Dat |
-|                                      | abase#setPath>`__**\ (const          |
+| void                                 | **:ref:`setPath <sdk_u1db_database#setPat |
+|                                      | h>`_ **\ (const                      |
 |                                      | QString & *path*)                    |
 +--------------------------------------+--------------------------------------+
 
@@ -115,8 +117,8 @@ model implementations, Document::getContents()
    :class: fn
 
 Gets the expressions saved with
-`putIndex </sdk/scopes/cpp/U1db/Database#putIndex>`__\ (). *indexName*:
-the unique name of an existing index
+:ref:`putIndex <sdk_u1db_database#putIndex>`\ (). *indexName*: the unique
+name of an existing index
 
 .. rubric::        \ QStringList Database::getIndexKeys(const QString &
    *indexName*)
@@ -124,8 +126,8 @@ the unique name of an existing index
    :class: fn
 
 Lists the index keys of an index created with
-`putIndex </sdk/scopes/cpp/U1db/Database#putIndex>`__\ (). *indexName*:
-the unique name of an existing index
+:ref:`putIndex <sdk_u1db_database#putIndex>`\ (). *indexName*: the unique
+name of an existing index
 
 .. rubric::        \ QString Database::getPath()
    :name: getPath

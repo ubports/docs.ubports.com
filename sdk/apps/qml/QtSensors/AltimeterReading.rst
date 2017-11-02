@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_altimeterreading:
+QtSensors AltimeterReading
+==========================
+
 The AltimeterReading element holds the most recent Altimeter reading.
 
 +--------------------------------------+--------------------------------------+
@@ -5,21 +9,21 @@ The AltimeterReading element holds the most recent Altimeter reading.
 +--------------------------------------+--------------------------------------+
 | Since:                               | QtSensors 5.1                        |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `SensorReading </sdk/apps/qml/QtSens |
-|                                      | ors/SensorReading/>`__               |
+| Inherits:                            | :ref:`SensorReading <sdk_qtsensors_sensor |
+|                                      | reading>`_                           |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`altitude </sdk/apps/qml/QtSensors/AltimeterReading#altitude-prop>`__****
-   : qreal
+-  :ref:`altitude <sdk_qtsensors_altimeterreading_altitude-prop>` :
+   qreal
 
 Detailed Description
 --------------------
 
-The `AltimeterReading </sdk/apps/qml/QtSensors/AltimeterReading/>`__
-element holds the most recent Altimeter reading.
+The :ref:`AltimeterReading <sdk_qtsensors_altimeterreading>` element holds
+the most recent Altimeter reading.
 
 This element wraps the QAltimeterReading class. Please see the
 documentation for QAltimeterReading for details.
@@ -28,6 +32,8 @@ This element cannot be directly created.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtsensors_altimeterreading_altitude-prop:
 
 +--------------------------------------------------------------------------+
 |        \ altitude : qreal                                                |

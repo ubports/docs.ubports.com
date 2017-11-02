@@ -1,3 +1,7 @@
+.. _sdk_qtquick_systempalette:
+QtQuick SystemPalette
+=====================
+
 Provides access to the Qt palettes
 
 +---------------------+----------------------+
@@ -7,47 +11,39 @@ Provides access to the Qt palettes
 Properties
 ----------
 
--  ****`alternateBase </sdk/apps/qml/QtQuick/SystemPalette#alternateBase-prop>`__****
+-  :ref:`alternateBase <sdk_qtquick_systempalette_alternateBase-prop>`
    : color
--  ****`base </sdk/apps/qml/QtQuick/SystemPalette#base-prop>`__**** :
+-  :ref:`base <sdk_qtquick_systempalette_base-prop>` : color
+-  :ref:`button <sdk_qtquick_systempalette_button-prop>` : color
+-  :ref:`buttonText <sdk_qtquick_systempalette_buttonText-prop>` :
    color
--  ****`button </sdk/apps/qml/QtQuick/SystemPalette#button-prop>`__****
-   : color
--  ****`buttonText </sdk/apps/qml/QtQuick/SystemPalette#buttonText-prop>`__****
-   : color
--  ****`colorGroup </sdk/apps/qml/QtQuick/SystemPalette#colorGroup-prop>`__****
-   : enumeration
--  ****`dark </sdk/apps/qml/QtQuick/SystemPalette#dark-prop>`__**** :
+-  :ref:`colorGroup <sdk_qtquick_systempalette_colorGroup-prop>` :
+   enumeration
+-  :ref:`dark <sdk_qtquick_systempalette_dark-prop>` : color
+-  :ref:`highlight <sdk_qtquick_systempalette_highlight-prop>` :
    color
--  ****`highlight </sdk/apps/qml/QtQuick/SystemPalette#highlight-prop>`__****
+-  :ref:`highlightedText <sdk_qtquick_systempalette_highlightedText-prop>`
    : color
--  ****`highlightedText </sdk/apps/qml/QtQuick/SystemPalette#highlightedText-prop>`__****
-   : color
--  ****`light </sdk/apps/qml/QtQuick/SystemPalette#light-prop>`__**** :
+-  :ref:`light <sdk_qtquick_systempalette_light-prop>` : color
+-  :ref:`mid <sdk_qtquick_systempalette_mid-prop>` : color
+-  :ref:`midlight <sdk_qtquick_systempalette_midlight-prop>` :
    color
--  ****`mid </sdk/apps/qml/QtQuick/SystemPalette#mid-prop>`__**** :
+-  :ref:`shadow <sdk_qtquick_systempalette_shadow-prop>` : color
+-  :ref:`text <sdk_qtquick_systempalette_text-prop>` : color
+-  :ref:`window <sdk_qtquick_systempalette_window-prop>` : color
+-  :ref:`windowText <sdk_qtquick_systempalette_windowText-prop>` :
    color
--  ****`midlight </sdk/apps/qml/QtQuick/SystemPalette#midlight-prop>`__****
-   : color
--  ****`shadow </sdk/apps/qml/QtQuick/SystemPalette#shadow-prop>`__****
-   : color
--  ****`text </sdk/apps/qml/QtQuick/SystemPalette#text-prop>`__**** :
-   color
--  ****`window </sdk/apps/qml/QtQuick/SystemPalette#window-prop>`__****
-   : color
--  ****`windowText </sdk/apps/qml/QtQuick/SystemPalette#windowText-prop>`__****
-   : color
 
 Detailed Description
 --------------------
 
-The `SystemPalette </sdk/apps/qml/QtQuick/SystemPalette/>`__ type
-provides access to the Qt application palettes. This provides
-information about the standard colors used for application windows,
-buttons and other features. These colors are grouped into three *color
-groups*: ``Active``, ``Inactive``, and ``Disabled``. See the QPalette
+The :ref:`SystemPalette <sdk_qtquick_systempalette>` type provides access
+to the Qt application palettes. This provides information about the
+standard colors used for application windows, buttons and other
+features. These colors are grouped into three *color groups*:
+``Active``, ``Inactive``, and ``Disabled``. See the QPalette
 documentation for details about color groups and the properties provided
-by `SystemPalette </sdk/apps/qml/QtQuick/SystemPalette/>`__.
+by :ref:`SystemPalette <sdk_qtquick_systempalette>`.
 
 This can be used to color items in a way that provides a more native
 look and feel.
@@ -73,6 +69,8 @@ and uses this to color the window and text items appropriately:
 Property Documentation
 ----------------------
 
+.. _sdk_qtquick_systempalette_alternateBase-prop:
+
 +--------------------------------------------------------------------------+
 |        \ alternateBase : color                                           |
 +--------------------------------------------------------------------------+
@@ -82,6 +80,8 @@ The alternate base color of the current color group.
 **See also** QPalette::ColorRole.
 
 | 
+
+.. _sdk_qtquick_systempalette_base-prop:
 
 +--------------------------------------------------------------------------+
 |        \ base : color                                                    |
@@ -93,6 +93,8 @@ The base color of the current color group.
 
 | 
 
+.. _sdk_qtquick_systempalette_button-prop:
+
 +--------------------------------------------------------------------------+
 |        \ button : color                                                  |
 +--------------------------------------------------------------------------+
@@ -102,6 +104,8 @@ The button color of the current color group.
 **See also** QPalette::ColorRole.
 
 | 
+
+.. _sdk_qtquick_systempalette_buttonText-prop:
 
 +--------------------------------------------------------------------------+
 |        \ buttonText : color                                              |
@@ -113,20 +117,23 @@ The button text foreground color of the current color group.
 
 | 
 
+.. _sdk_qtquick_systempalette_colorGroup-prop:
+
 +--------------------------------------------------------------------------+
 |        \ colorGroup : enumeration                                        |
 +--------------------------------------------------------------------------+
 
 The color group of the palette. This can be one of:
 
--  `SystemPalette </sdk/apps/qml/QtQuick/SystemPalette/>`__.Active
-   (default)
--  `SystemPalette </sdk/apps/qml/QtQuick/SystemPalette/>`__.Inactive
--  `SystemPalette </sdk/apps/qml/QtQuick/SystemPalette/>`__.Disabled
+-  :ref:`SystemPalette <sdk_qtquick_systempalette>`.Active (default)
+-  :ref:`SystemPalette <sdk_qtquick_systempalette>`.Inactive
+-  :ref:`SystemPalette <sdk_qtquick_systempalette>`.Disabled
 
 **See also** QPalette::ColorGroup.
 
 | 
+
+.. _sdk_qtquick_systempalette_dark-prop:
 
 +--------------------------------------------------------------------------+
 |        \ dark : color                                                    |
@@ -138,6 +145,8 @@ The dark color of the current color group.
 
 | 
 
+.. _sdk_qtquick_systempalette_highlight-prop:
+
 +--------------------------------------------------------------------------+
 |        \ highlight : color                                               |
 +--------------------------------------------------------------------------+
@@ -147,6 +156,8 @@ The highlight color of the current color group.
 **See also** QPalette::ColorRole.
 
 | 
+
+.. _sdk_qtquick_systempalette_highlightedText-prop:
 
 +--------------------------------------------------------------------------+
 |        \ highlightedText : color                                         |
@@ -158,6 +169,8 @@ The highlighted text color of the current color group.
 
 | 
 
+.. _sdk_qtquick_systempalette_light-prop:
+
 +--------------------------------------------------------------------------+
 |        \ light : color                                                   |
 +--------------------------------------------------------------------------+
@@ -167,6 +180,8 @@ The light color of the current color group.
 **See also** QPalette::ColorRole.
 
 | 
+
+.. _sdk_qtquick_systempalette_mid-prop:
 
 +--------------------------------------------------------------------------+
 |        \ mid : color                                                     |
@@ -178,6 +193,8 @@ The mid color of the current color group.
 
 | 
 
+.. _sdk_qtquick_systempalette_midlight-prop:
+
 +--------------------------------------------------------------------------+
 |        \ midlight : color                                                |
 +--------------------------------------------------------------------------+
@@ -187,6 +204,8 @@ The midlight color of the current color group.
 **See also** QPalette::ColorRole.
 
 | 
+
+.. _sdk_qtquick_systempalette_shadow-prop:
 
 +--------------------------------------------------------------------------+
 |        \ shadow : color                                                  |
@@ -198,6 +217,8 @@ The shadow color of the current color group.
 
 | 
 
+.. _sdk_qtquick_systempalette_text-prop:
+
 +--------------------------------------------------------------------------+
 |        \ text : color                                                    |
 +--------------------------------------------------------------------------+
@@ -207,6 +228,8 @@ The text color of the current color group.
 **See also** QPalette::ColorRole.
 
 | 
+
+.. _sdk_qtquick_systempalette_window-prop:
 
 +--------------------------------------------------------------------------+
 |        \ window : color                                                  |

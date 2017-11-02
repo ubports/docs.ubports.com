@@ -1,3 +1,7 @@
+.. _sdk_qtcontacts_birthday:
+QtContacts Birthday
+===================
+
 The Birthday element contains a birthday of a contact.
 
 +---------------------+-------------------------+
@@ -7,8 +11,7 @@ The Birthday element contains a birthday of a contact.
 Properties
 ----------
 
--  ****`birthday </sdk/apps/qml/QtContacts/Birthday#birthday-prop>`__****
-   : date
+-  :ref:`birthday <sdk_qtcontacts_birthday_birthday-prop>` : date
 
 Detailed Description
 --------------------
@@ -21,6 +24,8 @@ This element is part of the **QtContacts** module.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtcontacts_birthday_birthday-prop:
 
 +--------------------------------------------------------------------------+
 |        \ birthday : date                                                 |

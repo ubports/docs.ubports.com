@@ -1,3 +1,7 @@
+.. _sdk_qtaudioengine_playvariation:
+QtAudioEngine PlayVariation
+===========================
+
 Define a playback variation for sounds. So each time the playback of the
 same sound can be a slightly different even with the same AudioSample.
 
@@ -10,26 +14,26 @@ same sound can be a slightly different even with the same AudioSample.
 Properties
 ----------
 
--  ****`looping </sdk/apps/qml/QtAudioEngine/PlayVariation#looping-prop>`__****
-   : bool
--  ****`maxGain </sdk/apps/qml/QtAudioEngine/PlayVariation#maxGain-prop>`__****
+-  :ref:`looping <sdk_qtaudioengine_playvariation_looping-prop>` :
+   bool
+-  :ref:`maxGain <sdk_qtaudioengine_playvariation_maxGain-prop>` :
+   real
+-  :ref:`maxPitch <sdk_qtaudioengine_playvariation_maxPitch-prop>`
    : real
--  ****`maxPitch </sdk/apps/qml/QtAudioEngine/PlayVariation#maxPitch-prop>`__****
+-  :ref:`minGain <sdk_qtaudioengine_playvariation_minGain-prop>` :
+   real
+-  :ref:`minPitch <sdk_qtaudioengine_playvariation_minPitch-prop>`
    : real
--  ****`minGain </sdk/apps/qml/QtAudioEngine/PlayVariation#minGain-prop>`__****
-   : real
--  ****`minPitch </sdk/apps/qml/QtAudioEngine/PlayVariation#minPitch-prop>`__****
-   : real
--  ****`sample </sdk/apps/qml/QtAudioEngine/PlayVariation#sample-prop>`__****
-   : string
+-  :ref:`sample <sdk_qtaudioengine_playvariation_sample-prop>` :
+   string
 
 Detailed Description
 --------------------
 
 This type is part of the **QtAudioEngine 1.0** module.
 
-`PlayVariation </sdk/apps/qml/QtAudioEngine/PlayVariation/>`__ must be
-defined inside a `Sound </sdk/apps/qml/QtAudioEngine/Sound/>`__.
+:ref:`PlayVariation <sdk_qtaudioengine_playvariation>` must be defined
+inside a :ref:`Sound <sdk_qtaudioengine_sound>`.
 
 .. code:: qml
 
@@ -68,6 +72,8 @@ defined inside a `Sound </sdk/apps/qml/QtAudioEngine/Sound/>`__.
 Property Documentation
 ----------------------
 
+.. _sdk_qtaudioengine_playvariation_looping-prop:
+
 +--------------------------------------------------------------------------+
 |        \ looping : bool                                                  |
 +--------------------------------------------------------------------------+
@@ -75,6 +81,8 @@ Property Documentation
 This property indicates whether the playback will be looped or not.
 
 | 
+
+.. _sdk_qtaudioengine_playvariation_maxGain-prop:
 
 +--------------------------------------------------------------------------+
 |        \ maxGain : real                                                  |
@@ -85,6 +93,8 @@ in any playback.
 
 | 
 
+.. _sdk_qtaudioengine_playvariation_maxPitch-prop:
+
 +--------------------------------------------------------------------------+
 |        \ maxPitch : real                                                 |
 +--------------------------------------------------------------------------+
@@ -93,6 +103,8 @@ This property specifies the maximum pitch adjustment that can be applied
 in any playback.
 
 | 
+
+.. _sdk_qtaudioengine_playvariation_minGain-prop:
 
 +--------------------------------------------------------------------------+
 |        \ minGain : real                                                  |
@@ -103,6 +115,8 @@ in any playback.
 
 | 
 
+.. _sdk_qtaudioengine_playvariation_minPitch-prop:
+
 +--------------------------------------------------------------------------+
 |        \ minPitch : real                                                 |
 +--------------------------------------------------------------------------+
@@ -112,12 +126,13 @@ in any playback.
 
 | 
 
+.. _sdk_qtaudioengine_playvariation_sample-prop:
+
 +--------------------------------------------------------------------------+
 |        \ sample : string                                                 |
 +--------------------------------------------------------------------------+
 
 This property specifies which
-`AudioSample </sdk/apps/qml/QtAudioEngine/AudioSample/>`__ this
-variation will use.
+:ref:`AudioSample <sdk_qtaudioengine_audiosample>` this variation will use.
 
 | 

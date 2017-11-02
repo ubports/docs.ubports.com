@@ -1,3 +1,7 @@
+.. _sdk_qtmultimedia_playlistitem:
+QtMultimedia PlaylistItem
+=========================
+
 Defines an item in a Playlist.
 
 +---------------------+---------------------------+
@@ -9,16 +13,17 @@ Defines an item in a Playlist.
 Properties
 ----------
 
--  ****`source </sdk/apps/qml/QtMultimedia/PlaylistItem#source-prop>`__****
-   : url
+-  :ref:`source <sdk_qtmultimedia_playlistitem_source-prop>` : url
 
 Detailed Description
 --------------------
 
-**See also** `Playlist </sdk/apps/qml/QtMultimedia/Playlist/>`__.
+**See also** :ref:`Playlist <sdk_qtmultimedia_playlist>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtmultimedia_playlistitem_source-prop:
 
 +--------------------------------------------------------------------------+
 |        \ source : url                                                    |
@@ -26,6 +31,6 @@ Property Documentation
 
 This property holds the source URL of the item.
 
-**See also** `Playlist </sdk/apps/qml/QtMultimedia/Playlist/>`__.
+**See also** :ref:`Playlist <sdk_qtmultimedia_playlist>`.
 
 | 

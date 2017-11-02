@@ -1,3 +1,7 @@
+.. _sdk_ubuntuui_tabs:
+UbuntuUI Tabs
+=============
+
 
 One of the navigation pattern that can be used within an Ubuntu App is
 the flat navigation. Tabs are the standard way to provide such a

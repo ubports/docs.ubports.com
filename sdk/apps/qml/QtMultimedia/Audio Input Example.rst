@@ -1,3 +1,7 @@
+.. _sdk_qtmultimedia_audio_input_example:
+QtMultimedia Audio Input Example
+================================
+
 
 
 *Audio Input* demonstrates the basic use cases of QAudioInput.

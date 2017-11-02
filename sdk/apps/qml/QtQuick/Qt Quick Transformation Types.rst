@@ -1,3 +1,7 @@
+.. _sdk_qtquick_qt_quick_transformation_types:
+QtQuick Qt Quick Transformation Types
+=====================================
+
 
 
 Transformations are applied to child hierarchies and also will also
@@ -7,9 +11,8 @@ as expected.
 .. rubric:: Item Properties
    :name: item-properties
 
-The `Item </sdk/apps/qml/QtQuick/Item/>`__ contains a number of
-convenience properties, covering the most common types of
-transformations.
+The :ref:`Item <sdk_qtquick_item>` contains a number of convenience
+properties, covering the most common types of transformations.
 
 -  ``x`` and ``y``; Translates the item.
 -  ``scale``; Applies a uniform scale factor to the item.
@@ -22,8 +25,7 @@ transformations.
 
 In addition to the convenience types, it is possible to define more
 comprehensive transformations using a list of
-`Scale </sdk/apps/qml/QtQuick/Scale/>`__,
-`Rotation </sdk/apps/qml/QtQuick/Rotation/>`__, and
-`Translate </sdk/apps/qml/QtQuick/Translate/>`__ objects to the
-``transform`` property of the `Item </sdk/apps/qml/QtQuick/Item/>`__.
+:ref:`Scale <sdk_qtquick_scale>`, `Rotation <sdk_qtquick_rotation>`, and
+:ref:`Translate <sdk_qtquick_translate>` objects to the ``transform``
+property of the :ref:`Item <sdk_qtquick_item>`.
 

@@ -1,3 +1,7 @@
+.. _sdk_qtmultimedia_camera:
+QtMultimedia Camera
+===================
+
 Access viewfinder frames, and take photos and movies.
 
 +---------------------+---------------------------+
@@ -7,100 +11,99 @@ Access viewfinder frames, and take photos and movies.
 Properties
 ----------
 
--  ****`availability </sdk/apps/qml/QtMultimedia/Camera#availability-prop>`__****
+-  :ref:`availability <sdk_qtmultimedia_camera_availability-prop>`
    : enumeration
--  ****`cameraState </sdk/apps/qml/QtMultimedia/Camera#cameraState-prop>`__****
+-  :ref:`cameraState <sdk_qtmultimedia_camera_cameraState-prop>` :
+   enumeration
+-  :ref:`cameraStatus <sdk_qtmultimedia_camera_cameraStatus-prop>`
    : enumeration
--  ****`cameraStatus </sdk/apps/qml/QtMultimedia/Camera#cameraStatus-prop>`__****
-   : enumeration
--  ****`captureMode </sdk/apps/qml/QtMultimedia/Camera#captureMode-prop>`__****
-   : enumeration
--  ****`deviceId </sdk/apps/qml/QtMultimedia/Camera#deviceId-prop>`__****
-   : string
--  ****`digitalZoom </sdk/apps/qml/QtMultimedia/Camera#digitalZoom-prop>`__****
+-  :ref:`captureMode <sdk_qtmultimedia_camera_captureMode-prop>` :
+   enumeration
+-  :ref:`deviceId <sdk_qtmultimedia_camera_deviceId-prop>` : string
+-  :ref:`digitalZoom <sdk_qtmultimedia_camera_digitalZoom-prop>` :
+   real
+-  :ref:`displayName <sdk_qtmultimedia_camera_displayName-prop>` :
+   string
+-  :ref:`errorCode <sdk_qtmultimedia_camera_errorCode-prop>` :
+   enumeration
+-  :ref:`errorString <sdk_qtmultimedia_camera_errorString-prop>` :
+   string
+-  :ref:`lockStatus <sdk_qtmultimedia_camera_lockStatus-prop>` :
+   enumeration
+-  :ref:`maximumDigitalZoom <sdk_qtmultimedia_camera_maximumDigitalZoom-prop>`
    : real
--  ****`displayName </sdk/apps/qml/QtMultimedia/Camera#displayName-prop>`__****
-   : string
--  ****`errorCode </sdk/apps/qml/QtMultimedia/Camera#errorCode-prop>`__****
-   : enumeration
--  ****`errorString </sdk/apps/qml/QtMultimedia/Camera#errorString-prop>`__****
-   : string
--  ****`lockStatus </sdk/apps/qml/QtMultimedia/Camera#lockStatus-prop>`__****
-   : enumeration
--  ****`maximumDigitalZoom </sdk/apps/qml/QtMultimedia/Camera#maximumDigitalZoom-prop>`__****
+-  :ref:`maximumOpticalZoom <sdk_qtmultimedia_camera_maximumOpticalZoom-prop>`
    : real
--  ****`maximumOpticalZoom </sdk/apps/qml/QtMultimedia/Camera#maximumOpticalZoom-prop>`__****
-   : real
--  ****`mediaObject </sdk/apps/qml/QtMultimedia/Camera#mediaObject-prop>`__****
-   : variant
--  ****`metaData </sdk/apps/qml/QtMultimedia/Camera#metaData-prop>`__****
+-  :ref:`mediaObject <sdk_qtmultimedia_camera_mediaObject-prop>` :
+   variant
+-  :ref:`metaData <sdk_qtmultimedia_camera_metaData-prop>`
 
-   -  ****`metaData.gpsLatitude </sdk/apps/qml/QtMultimedia/Camera#metaData.gpsLatitude-prop>`__****
+   -  :ref:`metaData.gpsLatitude <sdk_qtmultimedia_camera_metaData.gpsLatitude-prop>`
       : variant
-   -  ****`metaData.gpsLongitude </sdk/apps/qml/QtMultimedia/Camera#metaData.gpsLongitude-prop>`__****
+   -  :ref:`metaData.gpsLongitude <sdk_qtmultimedia_camera_metaData.gpsLongitude-prop>`
       : variant
-   -  ****`metaData.gpsAltitude </sdk/apps/qml/QtMultimedia/Camera#metaData.gpsAltitude-prop>`__****
+   -  :ref:`metaData.gpsAltitude <sdk_qtmultimedia_camera_metaData.gpsAltitude-prop>`
       : variant
 
--  ****`metaData.cameraManufacturer </sdk/apps/qml/QtMultimedia/Camera#metaData.cameraManufacturer-prop>`__****
+-  :ref:`metaData.cameraManufacturer <sdk_qtmultimedia_camera_metaData.cameraManufacturer-prop>`
    : variant
--  ****`metaData.cameraModel </sdk/apps/qml/QtMultimedia/Camera#metaData.cameraModel-prop>`__****
+-  :ref:`metaData.cameraModel <sdk_qtmultimedia_camera_metaData.cameraModel-prop>`
    : variant
--  ****`metaData.dateTimeOriginal </sdk/apps/qml/QtMultimedia/Camera#metaData.dateTimeOriginal-prop>`__****
+-  :ref:`metaData.dateTimeOriginal <sdk_qtmultimedia_camera_metaData.dateTimeOriginal-prop>`
    : variant
--  ****`metaData.event </sdk/apps/qml/QtMultimedia/Camera#metaData.event-prop>`__****
+-  :ref:`metaData.event <sdk_qtmultimedia_camera_metaData.event-prop>`
    : variant
--  ****`metaData.gpsImgDirection </sdk/apps/qml/QtMultimedia/Camera#metaData.gpsImgDirection-prop>`__****
+-  :ref:`metaData.gpsImgDirection <sdk_qtmultimedia_camera_metaData.gpsImgDirection-prop>`
    : variant
--  ****`metaData.gpsProcessingMethod </sdk/apps/qml/QtMultimedia/Camera#metaData.gpsProcessingMethod-prop>`__****
+-  :ref:`metaData.gpsProcessingMethod <sdk_qtmultimedia_camera_metaData.gpsProcessingMethod-prop>`
    : variant
--  ****`metaData.gpsSpeed </sdk/apps/qml/QtMultimedia/Camera#metaData.gpsSpeed-prop>`__****
+-  :ref:`metaData.gpsSpeed <sdk_qtmultimedia_camera_metaData.gpsSpeed-prop>`
    : variant
--  ****`metaData.gpsTimestamp </sdk/apps/qml/QtMultimedia/Camera#metaData.gpsTimestamp-prop>`__****
+-  :ref:`metaData.gpsTimestamp <sdk_qtmultimedia_camera_metaData.gpsTimestamp-prop>`
    : variant
--  ****`metaData.gpsTrack </sdk/apps/qml/QtMultimedia/Camera#metaData.gpsTrack-prop>`__****
+-  :ref:`metaData.gpsTrack <sdk_qtmultimedia_camera_metaData.gpsTrack-prop>`
    : variant
--  ****`metaData.orientation </sdk/apps/qml/QtMultimedia/Camera#metaData.orientation-prop>`__****
+-  :ref:`metaData.orientation <sdk_qtmultimedia_camera_metaData.orientation-prop>`
    : variant
--  ****`metaData.subject </sdk/apps/qml/QtMultimedia/Camera#metaData.subject-prop>`__****
+-  :ref:`metaData.subject <sdk_qtmultimedia_camera_metaData.subject-prop>`
    : variant
--  ****`opticalZoom </sdk/apps/qml/QtMultimedia/Camera#opticalZoom-prop>`__****
-   : real
--  ****`orientation </sdk/apps/qml/QtMultimedia/Camera#orientation-prop>`__****
-   : int
--  ****`position </sdk/apps/qml/QtMultimedia/Camera#position-prop>`__****
-   : enumeration
--  ****`viewfinder </sdk/apps/qml/QtMultimedia/Camera#viewfinder-prop>`__****
+-  :ref:`opticalZoom <sdk_qtmultimedia_camera_opticalZoom-prop>` :
+   real
+-  :ref:`orientation <sdk_qtmultimedia_camera_orientation-prop>` :
+   int
+-  :ref:`position <sdk_qtmultimedia_camera_position-prop>` :
+   enumeration
+-  :ref:`viewfinder <sdk_qtmultimedia_camera_viewfinder-prop>`
 
-   -  ****`viewfinder.minimumFrameRate </sdk/apps/qml/QtMultimedia/Camera#viewfinder.minimumFrameRate-prop>`__****
+   -  :ref:`viewfinder.minimumFrameRate <sdk_qtmultimedia_camera_viewfinder.minimumFrameRate-prop>`
       : real
-   -  ****`viewfinder.maximumFrameRate </sdk/apps/qml/QtMultimedia/Camera#viewfinder.maximumFrameRate-prop>`__****
+   -  :ref:`viewfinder.maximumFrameRate <sdk_qtmultimedia_camera_viewfinder.maximumFrameRate-prop>`
       : real
 
--  ****`viewfinder.resolution </sdk/apps/qml/QtMultimedia/Camera#viewfinder.resolution-prop>`__****
+-  :ref:`viewfinder.resolution <sdk_qtmultimedia_camera_viewfinder.resolution-prop>`
    : size
 
 Signals
 -------
 
--  ****`cameraStateChanged </sdk/apps/qml/QtMultimedia/Camera#cameraStateChanged-signal>`__****\ (state)
--  ****`digitalZoomChanged </sdk/apps/qml/QtMultimedia/Camera#digitalZoomChanged-signal>`__****\ (zoom)
--  ****`error </sdk/apps/qml/QtMultimedia/Camera#error-signal>`__****\ (errorCode,
+-  :ref:`cameraStateChanged <sdk_qtmultimedia_camera_cameraStateChanged-signal>`\ (state)
+-  :ref:`digitalZoomChanged <sdk_qtmultimedia_camera_digitalZoomChanged-signal>`\ (zoom)
+-  :ref:`error <sdk_qtmultimedia_camera_error-signal>`\ (errorCode,
    errorString)
--  ****`lockStatusChanged </sdk/apps/qml/QtMultimedia/Camera#lockStatusChanged-signal>`__****\ ()
--  ****`manualWhiteBalanceChanged </sdk/apps/qml/QtMultimedia/Camera#manualWhiteBalanceChanged-signal>`__****\ (qreal)
--  ****`maximumDigitalZoomChanged </sdk/apps/qml/QtMultimedia/Camera#maximumDigitalZoomChanged-signal>`__****\ (zoom)
--  ****`maximumOpticalZoomChanged </sdk/apps/qml/QtMultimedia/Camera#maximumOpticalZoomChanged-signal>`__****\ (zoom)
--  ****`opticalZoomChanged </sdk/apps/qml/QtMultimedia/Camera#opticalZoomChanged-signal>`__****\ (zoom)
--  ****`whiteBalanceModeChanged </sdk/apps/qml/QtMultimedia/Camera#whiteBalanceModeChanged-signal>`__****\ (Camera::WhiteBalanceMode)
+-  :ref:`lockStatusChanged <sdk_qtmultimedia_camera_lockStatusChanged-signal>`\ ()
+-  :ref:`manualWhiteBalanceChanged <sdk_qtmultimedia_camera_manualWhiteBalanceChanged-signal>`\ (qreal)
+-  :ref:`maximumDigitalZoomChanged <sdk_qtmultimedia_camera_maximumDigitalZoomChanged-signal>`\ (zoom)
+-  :ref:`maximumOpticalZoomChanged <sdk_qtmultimedia_camera_maximumOpticalZoomChanged-signal>`\ (zoom)
+-  :ref:`opticalZoomChanged <sdk_qtmultimedia_camera_opticalZoomChanged-signal>`\ (zoom)
+-  :ref:`whiteBalanceModeChanged <sdk_qtmultimedia_camera_whiteBalanceModeChanged-signal>`\ (Camera::WhiteBalanceMode)
 
 Methods
 -------
 
--  ****`searchAndLock </sdk/apps/qml/QtMultimedia/Camera#searchAndLock-method>`__****\ ()
--  ****`start </sdk/apps/qml/QtMultimedia/Camera#start-method>`__****\ ()
--  ****`stop </sdk/apps/qml/QtMultimedia/Camera#stop-method>`__****\ ()
--  ****`unlock </sdk/apps/qml/QtMultimedia/Camera#unlock-method>`__****\ ()
+-  :ref:`searchAndLock <sdk_qtmultimedia_camera_searchAndLock-method>`\ ()
+-  :ref:`start <sdk_qtmultimedia_camera_start-method>`\ ()
+-  :ref:`stop <sdk_qtmultimedia_camera_stop-method>`\ ()
+-  :ref:`unlock <sdk_qtmultimedia_camera_unlock-method>`\ ()
 
 Detailed Description
 --------------------
@@ -108,8 +111,8 @@ Detailed Description
 You can use ``Camera`` to capture images and movies from a camera, and
 manipulate the capture and processing settings that get applied to the
 images. To display the viewfinder you can use
-`VideoOutput </sdk/apps/qml/QtMultimedia/VideoOutput/>`__ with the
-Camera set as the source.
+:ref:`VideoOutput <sdk_qtmultimedia_videooutput>` with the Camera set as
+the source.
 
 .. code:: qml
 
@@ -143,37 +146,35 @@ Camera set as the source.
     }
 
 If multiple cameras are available, you can select which one to use by
-setting the
-`deviceId </sdk/apps/qml/QtMultimedia/Camera#deviceId-prop>`__ property
-to a value from
-`QtMultimedia.availableCameras </sdk/apps/qml/QtMultimedia/QtMultimedia#availableCameras-prop>`__.
+setting the :ref:`deviceId <sdk_qtmultimedia_camera#deviceId-prop>`
+property to a value from
+:ref:`QtMultimedia.availableCameras <sdk_qtmultimedia_qtmultimedia#availableCameras-prop>`.
 On a mobile device, you can conveniently switch between front-facing and
 back-facing cameras by setting the
-`position </sdk/apps/qml/QtMultimedia/Camera#position-prop>`__ property.
+:ref:`position <sdk_qtmultimedia_camera#position-prop>` property.
 
 The various settings and functionality of the Camera stack is spread
 across a few different child properties of Camera.
 
-+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
-| Property                                                                  | Description                                                                                |
-+===========================================================================+============================================================================================+
-| `imageCapture </sdk/apps/qml/QtMultimedia/CameraCapture/>`__              | Methods and properties for capturing still images.                                         |
-+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
-| `videoRecording </sdk/apps/qml/QtMultimedia/CameraRecorder/>`__           | Methods and properties for capturing movies.                                               |
-+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
-| `exposure </sdk/apps/qml/QtMultimedia/CameraExposure/>`__                 | Methods and properties for adjusting exposure (aperture, shutter speed etc).               |
-+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
-| `focus </sdk/apps/qml/QtMultimedia/CameraFocus/>`__                       | Methods and properties for adjusting focus and providing feedback on autofocus progress.   |
-+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
-| `flash </sdk/apps/qml/QtMultimedia/CameraFlash/>`__                       | Methods and properties for controlling the camera flash.                                   |
-+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
-| `imageProcessing </sdk/apps/qml/QtMultimedia/CameraImageProcessing/>`__   | Methods and properties for adjusting camera image processing parameters.                   |
-+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
++----------------------------------------------------------------+--------------------------------------------------------------------------------------------+
+| Property                                                       | Description                                                                                |
++================================================================+============================================================================================+
+| :ref:`imageCapture <sdk_qtmultimedia_cameracapture>`              | Methods and properties for capturing still images.                                         |
++----------------------------------------------------------------+--------------------------------------------------------------------------------------------+
+| :ref:`videoRecording <sdk_qtmultimedia_camerarecorder>`        | Methods and properties for capturing movies.                                               |
++----------------------------------------------------------------+--------------------------------------------------------------------------------------------+
+| :ref:`exposure <sdk_qtmultimedia_cameraexposure>`              | Methods and properties for adjusting exposure (aperture, shutter speed etc).               |
++----------------------------------------------------------------+--------------------------------------------------------------------------------------------+
+| :ref:`focus <sdk_qtmultimedia_camerafocus>`                    | Methods and properties for adjusting focus and providing feedback on autofocus progress.   |
++----------------------------------------------------------------+--------------------------------------------------------------------------------------------+
+| :ref:`flash <sdk_qtmultimedia_cameraflash>`                    | Methods and properties for controlling the camera flash.                                   |
++----------------------------------------------------------------+--------------------------------------------------------------------------------------------+
+| :ref:`imageProcessing <sdk_qtmultimedia_cameraimageprocessing>`| Methods and properties for adjusting camera image processing parameters.                   |
++----------------------------------------------------------------+--------------------------------------------------------------------------------------------+
 
 Basic camera state management, error reporting, and simple zoom
 properties are available in the Camera itself. For integration with C++
-code, the
-`mediaObject </sdk/apps/qml/QtMultimedia/Camera#mediaObject-prop>`__
+code, the :ref:`mediaObject <sdk_qtmultimedia_camera#mediaObject-prop>`
 property allows you to access the standard Qt Multimedia camera
 controls.
 
@@ -182,13 +183,15 @@ limited to certain supported values depending on the hardware. Some
 camera settings may be set manually or automatically. These settings
 properties contain the current set value. For example, when autofocus is
 enabled the focus zones are exposed in the
-`focus </sdk/apps/qml/QtMultimedia/CameraFocus/>`__ property.
+:ref:`focus <sdk_qtmultimedia_camerafocus>` property.
 
 For additional information, read also the `camera
-overview </sdk/apps/qml/QtMultimedia/cameraoverview/>`__.
+overview </sdk/apps/qml/QtMultimedia/cameraoverview/>`_ .
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtmultimedia_camera_availability-prop:
 
 +--------------------------------------------------------------------------+
 |        \ availability : enumeration                                      |
@@ -198,13 +201,18 @@ This property holds the availability state of the camera.
 
 The availability states can be one of the following:
 
+.. _sdk_qtmultimedia_camera_Value              Description-prop:
+
 +-------------------+------------------------------------------------------------------------------------------------------------+
 | Value             | Description                                                                                                |
 +===================+============================================================================================================+
+.. _sdk_qtmultimedia_camera_Busy               The camera is busy at the moment as it is being used by another process.-prop:
 | Available         | The camera is available to use                                                                             |
 +-------------------+------------------------------------------------------------------------------------------------------------+
+.. _sdk_qtmultimedia_camera_Unavailable        The camera is not available to use (there may be no camera hardware)-prop:
 | Busy              | The camera is busy at the moment as it is being used by another process.                                   |
 +-------------------+------------------------------------------------------------------------------------------------------------+
+.. _sdk_qtmultimedia_camera_ResourceMissing    The camera cannot be used because of missing resources. It may be possible to try again at a later time.-prop:
 | Unavailable       | The camera is not available to use (there may be no camera hardware)                                       |
 +-------------------+------------------------------------------------------------------------------------------------------------+
 | ResourceMissing   | The camera cannot be used because of missing resources. It may be possible to try again at a later time.   |
@@ -212,12 +220,16 @@ The availability states can be one of the following:
 
 | 
 
+.. _sdk_qtmultimedia_camera_cameraState-prop:
+
 +--------------------------------------------------------------------------+
 |        \ cameraState : enumeration                                       |
 +--------------------------------------------------------------------------+
 
 This property holds the camera object's current state, which can be one
 of the following:
+
+.. _sdk_qtmultimedia_camera_Value                                 Description-prop:
 
 +--------------------------------------+--------------------------------------+
 | Value                                | Description                          |
@@ -232,6 +244,7 @@ of the following:
 |                                      | While the supported settings are     |
 |                                      | unknown in this state, you can still |
 |                                      | set the camera capture settings like |
+.. _sdk_qtmultimedia_camera_LoadedState                           The camera is loaded and ready to be-prop:
 |                                      | codec, resolution, or frame rate.    |
 +--------------------------------------+--------------------------------------+
 | LoadedState                          | The camera is loaded and ready to be |
@@ -241,6 +254,7 @@ of the following:
 |                                      | resolution, codecs, and so on.       |
 |                                      |                                      |
 |                                      | The viewfinder is not active in the  |
+.. _sdk_qtmultimedia_camera_ActiveState                           In the active state the viewfinder-prop:
 |                                      | loaded state.                        |
 +--------------------------------------+--------------------------------------+
 | ActiveState                          | In the active state the viewfinder   |
@@ -252,12 +266,16 @@ The default camera state is ActiveState.
 
 | 
 
+.. _sdk_qtmultimedia_camera_cameraStatus-prop:
+
 +--------------------------------------------------------------------------+
 |        \ cameraStatus : enumeration                                      |
 +--------------------------------------------------------------------------+
 
 This property holds the camera object's current status, which can be one
 of the following:
+
+.. _sdk_qtmultimedia_camera_Value                                 Description-prop:
 
 +--------------------------------------+--------------------------------------+
 | Value                                | Description                          |
@@ -273,23 +291,27 @@ of the following:
 |                                      | StartingStatus while the settings    |
 |                                      | are applied, and back to             |
 |                                      | ActiveStatus when the camera is      |
+.. _sdk_qtmultimedia_camera_StartingStatus                        The camera is starting as a result-prop:
 |                                      | ready.                               |
 +--------------------------------------+--------------------------------------+
 | StartingStatus                       | The camera is starting as a result   |
 |                                      | of state transition to               |
 |                                      | Camera.ActiveState. The camera       |
+.. _sdk_qtmultimedia_camera_StoppingStatus                        The camera is stopping as a result-prop:
 |                                      | service is not ready to capture yet. |
 +--------------------------------------+--------------------------------------+
 | StoppingStatus                       | The camera is stopping as a result   |
 |                                      | of state transition from             |
 |                                      | Camera.ActiveState to                |
 |                                      | Camera.LoadedState or                |
+.. _sdk_qtmultimedia_camera_StandbyStatus                         The camera is in the power saving-prop:
 |                                      | Camera.UnloadedState.                |
 +--------------------------------------+--------------------------------------+
 | StandbyStatus                        | The camera is in the power saving    |
 |                                      | standby mode. The camera may enter   |
 |                                      | standby mode after some time of      |
 |                                      | inactivity in the Camera.LoadedState |
+.. _sdk_qtmultimedia_camera_LoadedStatus                          The camera is loaded and ready to be-prop:
 |                                      | state.                               |
 +--------------------------------------+--------------------------------------+
 | LoadedStatus                         | The camera is loaded and ready to be |
@@ -298,23 +320,27 @@ of the following:
 |                                      | possible to query for supported      |
 |                                      | image and video capture settings     |
 |                                      | such as resolution, frame rate, and  |
+.. _sdk_qtmultimedia_camera_LoadingStatus                         The camera device loading as a-prop:
 |                                      | codecs.                              |
 +--------------------------------------+--------------------------------------+
 | LoadingStatus                        | The camera device loading as a       |
 |                                      | result of state transition from      |
 |                                      | Camera.UnloadedState to              |
 |                                      | Camera.LoadedState or                |
+.. _sdk_qtmultimedia_camera_UnloadingStatus                       The camera device is unloading as a-prop:
 |                                      | Camera.ActiveState.                  |
 +--------------------------------------+--------------------------------------+
 | UnloadingStatus                      | The camera device is unloading as a  |
 |                                      | result of state transition from      |
 |                                      | Camera.LoadedState or                |
 |                                      | Camera.ActiveState to                |
+.. _sdk_qtmultimedia_camera_UnloadedStatus                        The initial camera status, with-prop:
 |                                      | Camera.UnloadedState.                |
 +--------------------------------------+--------------------------------------+
 | UnloadedStatus                       | The initial camera status, with      |
 |                                      | camera not loaded. The camera        |
 |                                      | capabilities including supported     |
+.. _sdk_qtmultimedia_camera_UnavailableStatus                     The camera or camera backend is not-prop:
 |                                      | capture settings may be unknown.     |
 +--------------------------------------+--------------------------------------+
 | UnavailableStatus                    | The camera or camera backend is not  |
@@ -323,6 +349,8 @@ of the following:
 
 | 
 
+.. _sdk_qtmultimedia_camera_captureMode-prop:
+
 +--------------------------------------------------------------------------+
 |        \ captureMode : enumeration                                       |
 +--------------------------------------------------------------------------+
@@ -330,11 +358,15 @@ of the following:
 This property holds the camera capture mode, which can be one of the
 following:
 
+.. _sdk_qtmultimedia_camera_Value                Description-prop:
+
 +---------------------+----------------------------------------------------+
 | Value               | Description                                        |
 +=====================+====================================================+
+.. _sdk_qtmultimedia_camera_CaptureStillImage    Prepares the Camera for capturing still images.-prop:
 | CaptureViewfinder   | Camera is only configured to display viewfinder.   |
 +---------------------+----------------------------------------------------+
+.. _sdk_qtmultimedia_camera_CaptureVideo         Prepares the Camera for capturing video.-prop:
 | CaptureStillImage   | Prepares the Camera for capturing still images.    |
 +---------------------+----------------------------------------------------+
 | CaptureVideo        | Prepares the Camera for capturing video.           |
@@ -344,6 +376,8 @@ The default capture mode is ``CaptureStillImage``.
 
 | 
 
+.. _sdk_qtmultimedia_camera_deviceId-prop:
+
 +--------------------------------------------------------------------------+
 |        \ deviceId : string                                               |
 +--------------------------------------------------------------------------+
@@ -352,23 +386,23 @@ This property holds the unique identifier for the camera device being
 used. It may not be human-readable.
 
 You can get all available device IDs from
-`QtMultimedia.availableCameras </sdk/apps/qml/QtMultimedia/QtMultimedia#availableCameras-prop>`__.
+:ref:`QtMultimedia.availableCameras <sdk_qtmultimedia_qtmultimedia#availableCameras-prop>`.
 If no value is provided or if set to an empty string, the system's
 default camera will be used.
 
-If possible,
-`cameraState </sdk/apps/qml/QtMultimedia/Camera#cameraState-prop>`__,
-`captureMode </sdk/apps/qml/QtMultimedia/Camera#captureMode-prop>`__,
-`digitalZoom </sdk/apps/qml/QtMultimedia/Camera#digitalZoom-prop>`__ and
-other camera parameters are preserved when changing the camera device.
+If possible, :ref:`cameraState <sdk_qtmultimedia_camera#cameraState-prop>`,
+:ref:`captureMode <sdk_qtmultimedia_camera#captureMode-prop>`,
+:ref:`digitalZoom <sdk_qtmultimedia_camera#digitalZoom-prop>` and other
+camera parameters are preserved when changing the camera device.
 
 This QML property was introduced in QtMultimedia 5.4.
 
-**See also**
-`displayName </sdk/apps/qml/QtMultimedia/Camera#displayName-prop>`__ and
-`position </sdk/apps/qml/QtMultimedia/Camera#position-prop>`__.
+**See also** :ref:`displayName <sdk_qtmultimedia_camera#displayName-prop>`
+and :ref:`position <sdk_qtmultimedia_camera#position-prop>`.
 
 | 
+
+.. _sdk_qtmultimedia_camera_digitalZoom-prop:
 
 +--------------------------------------------------------------------------+
 |        \ digitalZoom : real                                              |
@@ -377,6 +411,8 @@ This QML property was introduced in QtMultimedia 5.4.
 This property holds the current digital zoom factor.
 
 | 
+
+.. _sdk_qtmultimedia_camera_[read-only] displayName-prop:
 
 +--------------------------------------------------------------------------+
 |        \ [read-only] displayName : string                                |
@@ -389,10 +425,11 @@ interface.
 
 This QML property was introduced in QtMultimedia 5.4.
 
-**See also**
-`deviceId </sdk/apps/qml/QtMultimedia/Camera#deviceId-prop>`__.
+**See also** :ref:`deviceId <sdk_qtmultimedia_camera#deviceId-prop>`.
 
 | 
+
+.. _sdk_qtmultimedia_camera_errorCode-prop:
 
 +--------------------------------------------------------------------------+
 |        \ errorCode : enumeration                                         |
@@ -400,11 +437,12 @@ This QML property was introduced in QtMultimedia 5.4.
 
 This property holds the last error code.
 
-**See also** `error </sdk/apps/qml/QtMultimedia/Camera#error-signal>`__
-and
-`errorString </sdk/apps/qml/QtMultimedia/Camera#errorString-prop>`__.
+**See also** :ref:`error <sdk_qtmultimedia_camera#error-signal>` and
+:ref:`errorString <sdk_qtmultimedia_camera#errorString-prop>`.
 
 | 
+
+.. _sdk_qtmultimedia_camera_errorString-prop:
 
 +--------------------------------------------------------------------------+
 |        \ errorString : string                                            |
@@ -412,10 +450,12 @@ and
 
 This property holds the last error string, if any.
 
-**See also** `error </sdk/apps/qml/QtMultimedia/Camera#error-signal>`__
-and `errorCode </sdk/apps/qml/QtMultimedia/Camera#errorCode-prop>`__.
+**See also** :ref:`error <sdk_qtmultimedia_camera#error-signal>` and
+:ref:`errorCode <sdk_qtmultimedia_camera#errorCode-prop>`.
 
 | 
+
+.. _sdk_qtmultimedia_camera_lockStatus-prop:
 
 +--------------------------------------------------------------------------+
 |        \ lockStatus : enumeration                                        |
@@ -424,6 +464,8 @@ and `errorCode </sdk/apps/qml/QtMultimedia/Camera#errorCode-prop>`__.
 This property holds the status of all the requested camera locks.
 
 The status can be one of the following values:
+
+.. _sdk_qtmultimedia_camera_Value                                 Description-prop:
 
 +--------------------------------------+--------------------------------------+
 | Value                                | Description                          |
@@ -434,16 +476,17 @@ The status can be one of the following values:
 |                                      | changes, which is common with camera |
 |                                      | focus, or adjust exposure and white  |
 |                                      | balance constantly to keep the       |
+.. _sdk_qtmultimedia_camera_Searching                             The application has requested the-prop:
 |                                      | viewfinder image nice.               |
 +--------------------------------------+--------------------------------------+
 | Searching                            | The application has requested the    |
 |                                      | camera focus, exposure, or white     |
 |                                      | balance lock with                    |
-|                                      | `searchAndLock() </sdk/apps/qml/QtMu |
-|                                      | ltimedia/Camera#searchAndLock-method |
-|                                      | >`__.                                |
+|                                      | :ref:`searchAndLock() <sdk_qtmultimedia_c |
+|                                      | amera#searchAndLock-method>`_ .      |
 |                                      | This state indicates the camera is   |
 |                                      | focusing or calculating exposure and |
+.. _sdk_qtmultimedia_camera_Locked                                The camera focus, exposure, or white-prop:
 |                                      | white balance.                       |
 +--------------------------------------+--------------------------------------+
 | Locked                               | The camera focus, exposure, or white |
@@ -465,6 +508,8 @@ The status can be one of the following values:
 
 | 
 
+.. _sdk_qtmultimedia_camera_maximumDigitalZoom-prop:
+
 +--------------------------------------------------------------------------+
 |        \ maximumDigitalZoom : real                                       |
 +--------------------------------------------------------------------------+
@@ -473,6 +518,8 @@ This property holds the maximum digital zoom factor supported, or 1.0 if
 digital zoom is not supported.
 
 | 
+
+.. _sdk_qtmultimedia_camera_maximumOpticalZoom-prop:
 
 +--------------------------------------------------------------------------+
 |        \ maximumOpticalZoom : real                                       |
@@ -483,6 +530,8 @@ optical zoom is not supported.
 
 | 
 
+.. _sdk_qtmultimedia_camera_mediaObject-prop:
+
 +--------------------------------------------------------------------------+
 |        \ mediaObject : variant                                           |
 +--------------------------------------------------------------------------+
@@ -491,11 +540,15 @@ This property holds the media object for the camera.
 
 | 
 
+.. _sdk_qtmultimedia_camera_**metaData group**-prop:
+
 +--------------------------------------------------------------------------+
 |        \ **metaData group**                                              |
 +==========================================================================+
+.. _sdk_qtmultimedia_camera_metaData.gpsLongitude-prop:
 |        \ metaData.gpsLatitude : variant                                  |
 +--------------------------------------------------------------------------+
+.. _sdk_qtmultimedia_camera_metaData.gpsAltitude-prop:
 |        \ metaData.gpsLongitude : variant                                 |
 +--------------------------------------------------------------------------+
 |        \ metaData.gpsAltitude : variant                                  |
@@ -510,6 +563,8 @@ This property group was introduced in Qt 5.4.
 
 | 
 
+.. _sdk_qtmultimedia_camera_metaData.cameraManufacturer-prop:
+
 +--------------------------------------------------------------------------+
 |        \ metaData.cameraManufacturer : variant                           |
 +--------------------------------------------------------------------------+
@@ -522,6 +577,8 @@ This QML property was introduced in Qt 5.4.
 
 | 
 
+.. _sdk_qtmultimedia_camera_metaData.cameraModel-prop:
+
 +--------------------------------------------------------------------------+
 |        \ metaData.cameraModel : variant                                  |
 +--------------------------------------------------------------------------+
@@ -533,6 +590,8 @@ This QML property was introduced in Qt 5.4.
 **See also** QMediaMetaData.
 
 | 
+
+.. _sdk_qtmultimedia_camera_metaData.dateTimeOriginal-prop:
 
 +--------------------------------------------------------------------------+
 |        \ metaData.dateTimeOriginal : variant                             |
@@ -547,6 +606,8 @@ This QML property was introduced in Qt 5.4.
 
 | 
 
+.. _sdk_qtmultimedia_camera_metaData.event-prop:
+
 +--------------------------------------------------------------------------+
 |        \ metaData.event : variant                                        |
 +--------------------------------------------------------------------------+
@@ -559,6 +620,8 @@ This QML property was introduced in Qt 5.4.
 **See also** QMediaMetaData.
 
 | 
+
+.. _sdk_qtmultimedia_camera_metaData.gpsImgDirection-prop:
 
 +--------------------------------------------------------------------------+
 |        \ metaData.gpsImgDirection : variant                              |
@@ -573,6 +636,8 @@ This QML property was introduced in Qt 5.4.
 
 | 
 
+.. _sdk_qtmultimedia_camera_metaData.gpsProcessingMethod-prop:
+
 +--------------------------------------------------------------------------+
 |        \ metaData.gpsProcessingMethod : variant                          |
 +--------------------------------------------------------------------------+
@@ -585,6 +650,8 @@ This QML property was introduced in Qt 5.4.
 **See also** QMediaMetaData.
 
 | 
+
+.. _sdk_qtmultimedia_camera_metaData.gpsSpeed-prop:
 
 +--------------------------------------------------------------------------+
 |        \ metaData.gpsSpeed : variant                                     |
@@ -599,6 +666,8 @@ This QML property was introduced in Qt 5.4.
 
 | 
 
+.. _sdk_qtmultimedia_camera_metaData.gpsTimestamp-prop:
+
 +--------------------------------------------------------------------------+
 |        \ metaData.gpsTimestamp : variant                                 |
 +--------------------------------------------------------------------------+
@@ -610,6 +679,8 @@ This QML property was introduced in Qt 5.4.
 **See also** QMediaMetaData.
 
 | 
+
+.. _sdk_qtmultimedia_camera_metaData.gpsTrack-prop:
 
 +--------------------------------------------------------------------------+
 |        \ metaData.gpsTrack : variant                                     |
@@ -624,6 +695,8 @@ This QML property was introduced in Qt 5.4.
 
 | 
 
+.. _sdk_qtmultimedia_camera_metaData.orientation-prop:
+
 +--------------------------------------------------------------------------+
 |        \ metaData.orientation : variant                                  |
 +--------------------------------------------------------------------------+
@@ -637,6 +710,8 @@ This QML property was introduced in Qt 5.4.
 
 | 
 
+.. _sdk_qtmultimedia_camera_metaData.subject-prop:
+
 +--------------------------------------------------------------------------+
 |        \ metaData.subject : variant                                      |
 +--------------------------------------------------------------------------+
@@ -649,6 +724,8 @@ This QML property was introduced in Qt 5.4.
 
 | 
 
+.. _sdk_qtmultimedia_camera_opticalZoom-prop:
+
 +--------------------------------------------------------------------------+
 |        \ opticalZoom : real                                              |
 +--------------------------------------------------------------------------+
@@ -656,6 +733,8 @@ This QML property was introduced in Qt 5.4.
 This property holds the current optical zoom factor.
 
 | 
+
+.. _sdk_qtmultimedia_camera_[read-only] orientation-prop:
 
 +--------------------------------------------------------------------------+
 |        \ [read-only] orientation : int                                   |
@@ -677,9 +756,11 @@ screen, ``orientation`` returns ``90``.
 This QML property was introduced in QtMultimedia 5.4.
 
 **See also**
-`VideoOutput::orientation </sdk/apps/qml/QtMultimedia/VideoOutput#orientation-prop>`__.
+:ref:`VideoOutput::orientation <sdk_qtmultimedia_videooutput#orientation-prop>`.
 
 | 
+
+.. _sdk_qtmultimedia_camera_position-prop:
 
 +--------------------------------------------------------------------------+
 |        \ position : enumeration                                          |
@@ -706,22 +787,23 @@ and back-facing cameras. If this property is set to
 ``Camera.UnspecifiedPosition``, the system's default camera will be
 used.
 
-If possible,
-`cameraState </sdk/apps/qml/QtMultimedia/Camera#cameraState-prop>`__,
-`captureMode </sdk/apps/qml/QtMultimedia/Camera#captureMode-prop>`__,
-`digitalZoom </sdk/apps/qml/QtMultimedia/Camera#digitalZoom-prop>`__ and
-other camera parameters are preserved when changing the camera device.
+If possible, :ref:`cameraState <sdk_qtmultimedia_camera#cameraState-prop>`,
+:ref:`captureMode <sdk_qtmultimedia_camera#captureMode-prop>`,
+:ref:`digitalZoom <sdk_qtmultimedia_camera#digitalZoom-prop>` and other
+camera parameters are preserved when changing the camera device.
 
 This QML property was introduced in QtMultimedia 5.4.
 
-**See also**
-`deviceId </sdk/apps/qml/QtMultimedia/Camera#deviceId-prop>`__.
+**See also** :ref:`deviceId <sdk_qtmultimedia_camera#deviceId-prop>`.
 
 | 
+
+.. _sdk_qtmultimedia_camera_**viewfinder group**-prop:
 
 +--------------------------------------------------------------------------+
 |        \ **viewfinder group**                                            |
 +==========================================================================+
+.. _sdk_qtmultimedia_camera_viewfinder.maximumFrameRate-prop:
 |        \ viewfinder.minimumFrameRate : real                              |
 +--------------------------------------------------------------------------+
 |        \ viewfinder.maximumFrameRate : real                              |
@@ -733,6 +815,8 @@ viewfinder in frames per second.
 This property group was introduced in Qt 5.4.
 
 | 
+
+.. _sdk_qtmultimedia_camera_viewfinder.resolution-prop:
 
 +--------------------------------------------------------------------------+
 |        \ viewfinder.resolution : size                                    |
@@ -748,6 +832,8 @@ This QML property was introduced in Qt 5.4.
 Signal Documentation
 --------------------
 
+.. _sdk_qtmultimedia_camera_cameraStateChanged(state)-prop:
+
 +--------------------------------------------------------------------------+
 |        \ cameraStateChanged(state)                                       |
 +--------------------------------------------------------------------------+
@@ -760,6 +846,8 @@ The corresponding handler is ``onCameraStateChanged``.
 
 | 
 
+.. _sdk_qtmultimedia_camera_digitalZoomChanged(zoom)-prop:
+
 +--------------------------------------------------------------------------+
 |        \ digitalZoomChanged(zoom)                                        |
 +--------------------------------------------------------------------------+
@@ -771,25 +859,32 @@ The corresponding handler is ``onDigitalZoomChanged``.
 
 | 
 
+.. _sdk_qtmultimedia_camera_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ error(`errorCode </sdk/apps/qml/QtMultimedia/Camera#errorCode-p |
-| rop>`__,                                                                 |
-| `errorString </sdk/apps/qml/QtMultimedia/Camera#errorString-prop>`__)    |
+| :ref:` <>`\ error(`errorCode <sdk_qtmultimedia_camera#errorCode-prop>`,   |
+| :ref:`errorString <sdk_qtmultimedia_camera#errorString-prop>`)              |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when an error occurs. The enumeration value
 *errorCode* is one of the values defined below, and a descriptive string
 value is available in *errorString*.
 
+.. _sdk_qtmultimedia_camera_Value                       Description-prop:
+
 +----------------------------+------------------------------------------------------------+
 | Value                      | Description                                                |
 +============================+============================================================+
+.. _sdk_qtmultimedia_camera_CameraError                 An error has occurred.-prop:
 | NoError                    | No errors have occurred.                                   |
 +----------------------------+------------------------------------------------------------+
+.. _sdk_qtmultimedia_camera_InvalidRequestError         System resource doesn't support requested functionality.-prop:
 | CameraError                | An error has occurred.                                     |
 +----------------------------+------------------------------------------------------------+
+.. _sdk_qtmultimedia_camera_ServiceMissingError         No camera service available.-prop:
 | InvalidRequestError        | System resource doesn't support requested functionality.   |
 +----------------------------+------------------------------------------------------------+
+.. _sdk_qtmultimedia_camera_NotSupportedFeatureError    The feature is not supported.-prop:
 | ServiceMissingError        | No camera service available.                               |
 +----------------------------+------------------------------------------------------------+
 | NotSupportedFeatureError   | The feature is not supported.                              |
@@ -797,11 +892,12 @@ value is available in *errorString*.
 
 The corresponding handler is ``onError``.
 
-**See also**
-`errorCode </sdk/apps/qml/QtMultimedia/Camera#errorCode-prop>`__ and
-`errorString </sdk/apps/qml/QtMultimedia/Camera#errorString-prop>`__.
+**See also** :ref:`errorCode <sdk_qtmultimedia_camera#errorCode-prop>` and
+:ref:`errorString <sdk_qtmultimedia_camera#errorString-prop>`.
 
 | 
+
+.. _sdk_qtmultimedia_camera_lockStatusChanged()-prop:
 
 +--------------------------------------------------------------------------+
 |        \ lockStatusChanged()                                             |
@@ -815,6 +911,8 @@ The corresponding handler is ``onLockStatusChanged``.
 
 | 
 
+.. _sdk_qtmultimedia_camera_manualWhiteBalanceChanged(qreal)-prop:
+
 +--------------------------------------------------------------------------+
 |        \ manualWhiteBalanceChanged(qreal)                                |
 +--------------------------------------------------------------------------+
@@ -825,6 +923,8 @@ changed.
 The corresponding handler is ``onManualWhiteBalanceChanged``.
 
 | 
+
+.. _sdk_qtmultimedia_camera_maximumDigitalZoomChanged(zoom)-prop:
 
 +--------------------------------------------------------------------------+
 |        \ maximumDigitalZoomChanged(zoom)                                 |
@@ -838,6 +938,8 @@ The corresponding handler is ``onMaximumDigitalZoomChanged``.
 
 | 
 
+.. _sdk_qtmultimedia_camera_maximumOpticalZoomChanged-method:
+
 +--------------------------------------------------------------------------+
 |        \ maximumOpticalZoomChanged(zoom)                                 |
 +--------------------------------------------------------------------------+
@@ -850,6 +952,8 @@ The corresponding handler is ``onMaximumOpticalZoomChanged``.
 
 | 
 
+.. _sdk_qtmultimedia_camera_opticalZoomChanged-method:
+
 +--------------------------------------------------------------------------+
 |        \ opticalZoomChanged(zoom)                                        |
 +--------------------------------------------------------------------------+
@@ -860,6 +964,8 @@ This signal is emitted when the optical zoom setting has changed to
 The corresponding handler is ``onOpticalZoomChanged``.
 
 | 
+
+.. _sdk_qtmultimedia_camera_whiteBalanceModeChanged-method:
 
 +--------------------------------------------------------------------------+
 |        \ whiteBalanceModeChanged(Camera::WhiteBalanceMode)               |
@@ -875,6 +981,8 @@ The corresponding handler is ``onWhiteBalanceModeChanged``.
 Method Documentation
 --------------------
 
+.. _sdk_qtmultimedia_camera_searchAndLock-method:
+
 +--------------------------------------------------------------------------+
 |        \ searchAndLock()                                                 |
 +--------------------------------------------------------------------------+
@@ -884,9 +992,11 @@ Start focusing, exposure and white balance calculation.
 This is appropriate to call when the camera focus button is pressed (or
 on a camera capture button half-press). If the camera supports
 autofocusing, information on the focus zones is available through the
-`focus </sdk/apps/qml/QtMultimedia/CameraFocus/>`__ property.
+:ref:`focus <sdk_qtmultimedia_camerafocus>` property.
 
 | 
+
+.. _sdk_qtmultimedia_camera_start-method:
 
 +--------------------------------------------------------------------------+
 |        \ start()                                                         |
@@ -897,6 +1007,8 @@ movie capture will be possible.
 
 | 
 
+.. _sdk_qtmultimedia_camera_stop-method:
+
 +--------------------------------------------------------------------------+
 |        \ stop()                                                          |
 +--------------------------------------------------------------------------+
@@ -904,6 +1016,8 @@ movie capture will be possible.
 Stops the camera, but leaves the camera stack loaded.
 
 | 
+
+.. _sdk_qtmultimedia_camera_unlock-method:
 
 +--------------------------------------------------------------------------+
 |        \ unlock()                                                        |

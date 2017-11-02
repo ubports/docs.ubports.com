@@ -1,3 +1,7 @@
+.. _sdk_release_notes:
+Release notes
+=============
+
 
 .. rubric:: Changes in version 1.0.7
    :name: changes-in-version-1.0.7

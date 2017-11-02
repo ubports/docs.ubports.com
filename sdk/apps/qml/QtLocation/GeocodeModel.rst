@@ -1,3 +1,7 @@
+.. _sdk_qtlocation_geocodemodel:
+QtLocation GeocodeModel
+=======================
+
 The GeocodeModel type provides support for searching operations related
 to geographic information.
 
@@ -10,68 +14,62 @@ to geographic information.
 Properties
 ----------
 
--  ****`autoUpdate </sdk/apps/qml/QtLocation/GeocodeModel#autoUpdate-prop>`__****
+-  :ref:`autoUpdate <sdk_qtlocation_geocodemodel_autoUpdate-prop>`
    : bool
--  ****`bounds </sdk/apps/qml/QtLocation/GeocodeModel#bounds-prop>`__****
-   : geoshape
--  ****`count </sdk/apps/qml/QtLocation/GeocodeModel#count-prop>`__****
-   : int
--  ****`error </sdk/apps/qml/QtLocation/GeocodeModel#error-prop>`__****
-   : enumeration
--  ****`errorString </sdk/apps/qml/QtLocation/GeocodeModel#errorString-prop>`__****
+-  :ref:`bounds <sdk_qtlocation_geocodemodel_bounds-prop>` :
+   geoshape
+-  :ref:`count <sdk_qtlocation_geocodemodel_count-prop>` : int
+-  :ref:`error <sdk_qtlocation_geocodemodel_error-prop>` :
+   enumeration
+-  :ref:`errorString <sdk_qtlocation_geocodemodel_errorString-prop>`
    : string
--  ****`limit </sdk/apps/qml/QtLocation/GeocodeModel#limit-prop>`__****
-   : int
--  ****`offset </sdk/apps/qml/QtLocation/GeocodeModel#offset-prop>`__****
-   : int
--  ****`plugin </sdk/apps/qml/QtLocation/GeocodeModel#plugin-prop>`__****
-   : Plugin
--  ****`query </sdk/apps/qml/QtLocation/GeocodeModel#query-prop>`__****
-   : QVariant
--  ****`status </sdk/apps/qml/QtLocation/GeocodeModel#status-prop>`__****
-   : enumeration
+-  :ref:`limit <sdk_qtlocation_geocodemodel_limit-prop>` : int
+-  :ref:`offset <sdk_qtlocation_geocodemodel_offset-prop>` : int
+-  :ref:`plugin <sdk_qtlocation_geocodemodel_plugin-prop>` : Plugin
+-  :ref:`query <sdk_qtlocation_geocodemodel_query-prop>` : QVariant
+-  :ref:`status <sdk_qtlocation_geocodemodel_status-prop>` :
+   enumeration
 
 Methods
 -------
 
--  ****`cancel </sdk/apps/qml/QtLocation/GeocodeModel#cancel-method>`__****\ ()
+-  :ref:`cancel <sdk_qtlocation_geocodemodel_cancel-method>`\ ()
 -  Location
-   ****`get </sdk/apps/qml/QtLocation/GeocodeModel#get-method>`__****\ (int)
--  ****`reset </sdk/apps/qml/QtLocation/GeocodeModel#reset-method>`__****\ ()
--  ****`update </sdk/apps/qml/QtLocation/GeocodeModel#update-method>`__****\ ()
+   **:ref:`get <sdk_qtlocation_geocodemodel#get-method>`**\ (int)
+-  :ref:`reset <sdk_qtlocation_geocodemodel_reset-method>`\ ()
+-  :ref:`update <sdk_qtlocation_geocodemodel_update-method>`\ ()
 
 Detailed Description
 --------------------
 
-The `GeocodeModel </sdk/apps/qml/QtLocation/GeocodeModel/>`__ type is
-used as part of a model/view grouping to match addresses or search
-strings with geographic locations. How the geographic locations
-generated are used or displayed is decided by any Views attached to the
-`GeocodeModel </sdk/apps/qml/QtLocation/GeocodeModel/>`__ (for example a
-`MapItemView </sdk/apps/qml/QtLocation/MapItemView/>`__ or ListView).
+The :ref:`GeocodeModel <sdk_qtlocation_geocodemodel>` type is used as part
+of a model/view grouping to match addresses or search strings with
+geographic locations. How the geographic locations generated are used or
+displayed is decided by any Views attached to the
+:ref:`GeocodeModel <sdk_qtlocation_geocodemodel>` (for example a
+:ref:`MapItemView <sdk_qtlocation_mapitemview>` or ListView).
 
-Like `Map </sdk/apps/qml/QtLocation/Map/>`__ and
-`RouteModel </sdk/apps/qml/QtLocation/RouteModel/>`__, all the data for
-a `GeocodeModel </sdk/apps/qml/QtLocation/GeocodeModel/>`__ to work
-comes from a services plugin. This is contained in the
-`plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__
+Like :ref:`Map <sdk_qtlocation_map>` and
+:ref:`RouteModel <sdk_qtlocation_routemodel>`, all the data for a
+:ref:`GeocodeModel <sdk_qtlocation_geocodemodel>` to work comes from a
+services plugin. This is contained in the
+`plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_ 
 property, and this must be set before the
-`GeocodeModel </sdk/apps/qml/QtLocation/GeocodeModel/>`__ can do any
-useful work.
+:ref:`GeocodeModel <sdk_qtlocation_geocodemodel>` can do any useful work.
 
 Once the plugin is set, the
-`query </sdk/apps/qml/QtLocation/GeocodeModel#query-prop>`__ property
-can be used to specify the address or search string to match. If
-`autoUpdate </sdk/apps/qml/QtLocation/GeocodeModel#autoUpdate-prop>`__
-is enabled, the Model will update its output automatically. Otherwise,
-the `update </sdk/apps/qml/QtLocation/GeocodeModel#update-method>`__
-method may be used. By default,
-`autoUpdate </sdk/apps/qml/QtLocation/GeocodeModel#autoUpdate-prop>`__
-is disabled.
+:ref:`query <sdk_qtlocation_geocodemodel#query-prop>` property can be used
+to specify the address or search string to match. If
+:ref:`autoUpdate <sdk_qtlocation_geocodemodel#autoUpdate-prop>` is enabled,
+the Model will update its output automatically. Otherwise, the
+:ref:`update <sdk_qtlocation_geocodemodel#update-method>` method may be
+used. By default,
+:ref:`autoUpdate <sdk_qtlocation_geocodemodel#autoUpdate-prop>` is
+disabled.
 
 The data stored and returned in the
-`GeocodeModel </sdk/apps/qml/QtLocation/GeocodeModel/>`__ consists of
-Location objects, as a list with the role name "locationData". See the
+:ref:`GeocodeModel <sdk_qtlocation_geocodemodel>` consists of Location
+objects, as a list with the role name "locationData". See the
 documentation for Location for further details on its structure and
 contents.
 
@@ -81,15 +79,14 @@ Example Usage
 The following snippet is two-part, showing firstly the declaration of
 objects, and secondly a short piece of procedural code using it. We set
 the geocodeModel's
-`autoUpdate </sdk/apps/qml/QtLocation/GeocodeModel#autoUpdate-prop>`__
-property to false, and call
-`update </sdk/apps/qml/QtLocation/GeocodeModel#update-method>`__ once
-the query is set up. In this case, as we use a string value in
-`query </sdk/apps/qml/QtLocation/GeocodeModel#query-prop>`__, only one
-update would occur, even with
-`autoUpdate </sdk/apps/qml/QtLocation/GeocodeModel#autoUpdate-prop>`__
-enabled. However, if we provided an Address object we may inadvertently
-trigger multiple requests whilst setting its properties.
+:ref:`autoUpdate <sdk_qtlocation_geocodemodel#autoUpdate-prop>` property to
+false, and call :ref:`update <sdk_qtlocation_geocodemodel#update-method>`
+once the query is set up. In this case, as we use a string value in
+:ref:`query <sdk_qtlocation_geocodemodel#query-prop>`, only one update
+would occur, even with
+:ref:`autoUpdate <sdk_qtlocation_geocodemodel#autoUpdate-prop>` enabled.
+However, if we provided an Address object we may inadvertently trigger
+multiple requests whilst setting its properties.
 
 .. code:: cpp
 
@@ -112,6 +109,8 @@ trigger multiple requests whilst setting its properties.
 Property Documentation
 ----------------------
 
+.. _sdk_qtlocation_geocodemodel_autoUpdate-prop:
+
 +--------------------------------------------------------------------------+
 |        \ autoUpdate : bool                                               |
 +--------------------------------------------------------------------------+
@@ -128,6 +127,8 @@ numbers of useless (and later discarded) requests.
 
 | 
 
+.. _sdk_qtlocation_geocodemodel_bounds-prop:
+
 +--------------------------------------------------------------------------+
 |        \ bounds : geoshape                                               |
 +--------------------------------------------------------------------------+
@@ -141,16 +142,19 @@ Accepted types are georectangle and geocircle.
 
 | 
 
+.. _sdk_qtlocation_geocodemodel_count-prop:
+
 +--------------------------------------------------------------------------+
 |        \ count : int                                                     |
 +--------------------------------------------------------------------------+
 
 This property holds how many locations the model currently has. Amongst
 other uses, you can use this value when accessing locations via the
-`GeocodeModel::get </sdk/apps/qml/QtLocation/GeocodeModel#get-method>`__
--method.
+:ref:`GeocodeModel::get <sdk_qtlocation_geocodemodel#get-method>` -method.
 
 | 
+
+.. _sdk_qtlocation_geocodemodel_error-prop:
 
 +--------------------------------------------------------------------------+
 |        \ error : enumeration                                             |
@@ -159,27 +163,26 @@ other uses, you can use this value when accessing locations via the
 This read-only property holds the latest error value of the geocoding
 request.
 
--  `GeocodeModel </sdk/apps/qml/QtLocation/GeocodeModel/>`__.NoError -
-   No error has occurred
--  `GeocodeModel </sdk/apps/qml/QtLocation/GeocodeModel/>`__.EngineNotSetError
-   - The plugin/service provider used does not support (reverse)
-   geocoding
--  `GeocodeModel </sdk/apps/qml/QtLocation/GeocodeModel/>`__.CommunicationError
-   - An error occurred while communicating with the service provider
--  `GeocodeModel </sdk/apps/qml/QtLocation/GeocodeModel/>`__.ParseError
-   - The response from the service provider was in an unrecognizable
-   format
--  `GeocodeModel </sdk/apps/qml/QtLocation/GeocodeModel/>`__.UnsupportedOptionError
+-  :ref:`GeocodeModel <sdk_qtlocation_geocodemodel>`.NoError - No error has
+   occurred
+-  :ref:`GeocodeModel <sdk_qtlocation_geocodemodel>`.EngineNotSetError -
+   The plugin/service provider used does not support (reverse) geocoding
+-  :ref:`GeocodeModel <sdk_qtlocation_geocodemodel>`.CommunicationError -
+   An error occurred while communicating with the service provider
+-  :ref:`GeocodeModel <sdk_qtlocation_geocodemodel>`.ParseError - The
+   response from the service provider was in an unrecognizable format
+-  :ref:`GeocodeModel <sdk_qtlocation_geocodemodel>`.UnsupportedOptionError
    - The requested operation or one of the options for the operation are
    not supported by the service provider.
--  `GeocodeModel </sdk/apps/qml/QtLocation/GeocodeModel/>`__.CombinationError
-   - An error occurred while results where being combined from multiple
+-  :ref:`GeocodeModel <sdk_qtlocation_geocodemodel>`.CombinationError - An
+   error occurred while results where being combined from multiple
    sources
--  `GeocodeModel </sdk/apps/qml/QtLocation/GeocodeModel/>`__.UnknownError
-   - An error occurred which does not fit into any of the other
-   categories
+-  :ref:`GeocodeModel <sdk_qtlocation_geocodemodel>`.UnknownError - An
+   error occurred which does not fit into any of the other categories
 
 | 
+
+.. _sdk_qtlocation_geocodemodel_errorString-prop:
 
 +--------------------------------------------------------------------------+
 |        \ errorString : string                                            |
@@ -194,39 +197,45 @@ associated textual representation.
 
 | 
 
+.. _sdk_qtlocation_geocodemodel_limit-prop:
+
 +--------------------------------------------------------------------------+
 |        \ limit : int                                                     |
 +--------------------------------------------------------------------------+
 
 This property holds the maximum number of results. The limit and
-`offset </sdk/apps/qml/QtLocation/GeocodeModel#offset-prop>`__ values
-are only applicable with free string geocoding (that is they are not
-considered when using addresses or coordinates in the search query).
+:ref:`offset <sdk_qtlocation_geocodemodel#offset-prop>` values are only
+applicable with free string geocoding (that is they are not considered
+when using addresses or coordinates in the search query).
 
 If limit is -1 the entire result set will be returned, otherwise at most
 limit results will be returned. The limit and
-`offset </sdk/apps/qml/QtLocation/GeocodeModel#offset-prop>`__ results
-can be used together to implement paging.
+:ref:`offset <sdk_qtlocation_geocodemodel#offset-prop>` results can be used
+together to implement paging.
 
 | 
+
+.. _sdk_qtlocation_geocodemodel_offset-prop:
 
 +--------------------------------------------------------------------------+
 |        \ offset : int                                                    |
 +--------------------------------------------------------------------------+
 
 This property tells not to return the first 'offset' number of the
-results. The
-`limit </sdk/apps/qml/QtLocation/GeocodeModel#limit-prop>`__ and offset
-values are only applicable with free string geocoding (that is they are
-not considered when using addresses or coordinates in the search query).
+results. The :ref:`limit <sdk_qtlocation_geocodemodel#limit-prop>` and
+offset values are only applicable with free string geocoding (that is
+they are not considered when using addresses or coordinates in the
+search query).
 
-The `limit </sdk/apps/qml/QtLocation/GeocodeModel#limit-prop>`__ and
-offset results can be used together to implement paging.
+The :ref:`limit <sdk_qtlocation_geocodemodel#limit-prop>` and offset
+results can be used together to implement paging.
 
 | 
 
+.. _sdk_qtlocation_geocodemodel_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ plugin : `Plugin </sdk/apps/qml/QtLocation/Plugin/>`__          |
+| :ref:` <>`\ plugin : `Plugin <sdk_qtlocation_plugin>`                  |
 +--------------------------------------------------------------------------+
 
 This property holds the plugin that provides the actual geocoding
@@ -234,9 +243,11 @@ service. Note that all plugins do not necessarily provide geocoding
 (could for example provide only routing or maps).
 
 **See also**
-`Plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__.
+`Plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_ .
 
 | 
+
+.. _sdk_qtlocation_geocodemodel_query-prop:
 
 +--------------------------------------------------------------------------+
 |        \ query : QVariant                                                |
@@ -252,54 +263,60 @@ type of action to be performed:
 
 | 
 
+.. _sdk_qtlocation_geocodemodel_status-prop:
+
 +--------------------------------------------------------------------------+
 |        \ status : enumeration                                            |
 +--------------------------------------------------------------------------+
 
 This read-only property holds the current status of the model.
 
--  `GeocodeModel </sdk/apps/qml/QtLocation/GeocodeModel/>`__.Null - No
-   geocode requests have been issued or
-   `reset </sdk/apps/qml/QtLocation/GeocodeModel#reset-method>`__ has
-   been called.
--  `GeocodeModel </sdk/apps/qml/QtLocation/GeocodeModel/>`__.Ready -
-   Geocode request(s) have finished successfully.
--  `GeocodeModel </sdk/apps/qml/QtLocation/GeocodeModel/>`__.Loading -
-   Geocode request has been issued but not yet finished
--  `GeocodeModel </sdk/apps/qml/QtLocation/GeocodeModel/>`__.Error -
-   Geocoding error has occurred, details are in
-   `error </sdk/apps/qml/QtLocation/GeocodeModel#error-prop>`__ and
-   `errorString </sdk/apps/qml/QtLocation/GeocodeModel#errorString-prop>`__
+-  :ref:`GeocodeModel <sdk_qtlocation_geocodemodel>`.Null - No geocode
+   requests have been issued or
+   :ref:`reset <sdk_qtlocation_geocodemodel#reset-method>` has been called.
+-  :ref:`GeocodeModel <sdk_qtlocation_geocodemodel>`.Ready - Geocode
+   request(s) have finished successfully.
+-  :ref:`GeocodeModel <sdk_qtlocation_geocodemodel>`.Loading - Geocode
+   request has been issued but not yet finished
+-  :ref:`GeocodeModel <sdk_qtlocation_geocodemodel>`.Error - Geocoding
+   error has occurred, details are in
+   :ref:`error <sdk_qtlocation_geocodemodel#error-prop>` and
+   :ref:`errorString <sdk_qtlocation_geocodemodel#errorString-prop>`
 
 | 
 
 Method Documentation
 --------------------
 
+.. _sdk_qtlocation_geocodemodel_cancel-method:
+
 +--------------------------------------------------------------------------+
 |        \ cancel()                                                        |
 +--------------------------------------------------------------------------+
 
 Cancels any outstanding requests and clears errors. Model status will be
-set to either
-`GeocodeModel </sdk/apps/qml/QtLocation/GeocodeModel/>`__.Null or
-`GeocodeModel </sdk/apps/qml/QtLocation/GeocodeModel/>`__.Ready.
+set to either :ref:`GeocodeModel <sdk_qtlocation_geocodemodel>`.Null or
+:ref:`GeocodeModel <sdk_qtlocation_geocodemodel>`.Ready.
 
 | 
+
+.. _sdk_qtlocation_geocodemodel_Location get-method:
 
 +--------------------------------------------------------------------------+
 |        \ Location get(int)                                               |
 +--------------------------------------------------------------------------+
 
 Returns the Location at given index. Use
-`count </sdk/apps/qml/QtLocation/GeocodeModel#count-prop>`__ property to
-check the amount of locations available. The locations are indexed from
-zero, so the accessible range is 0...(count - 1).
+:ref:`count <sdk_qtlocation_geocodemodel#count-prop>` property to check the
+amount of locations available. The locations are indexed from zero, so
+the accessible range is 0...(count - 1).
 
 If you access out of bounds, a zero (null object) is returned and a
 warning is issued.
 
 | 
+
+.. _sdk_qtlocation_geocodemodel_reset-method:
 
 +--------------------------------------------------------------------------+
 |        \ reset()                                                         |
@@ -307,17 +324,19 @@ warning is issued.
 
 Resets the model. All location data is cleared, any outstanding requests
 are aborted and possible errors are cleared. Model status will be set to
-`GeocodeModel </sdk/apps/qml/QtLocation/GeocodeModel/>`__.Null
+:ref:`GeocodeModel <sdk_qtlocation_geocodemodel>`.Null
 
 | 
+
+.. _sdk_qtlocation_geocodemodel_update-method:
 
 +--------------------------------------------------------------------------+
 |        \ update()                                                        |
 +--------------------------------------------------------------------------+
 
-Instructs the `GeocodeModel </sdk/apps/qml/QtLocation/GeocodeModel/>`__
-to update its data. This is most useful when
-`autoUpdate </sdk/apps/qml/QtLocation/GeocodeModel#autoUpdate-prop>`__
-is disabled, to force a refresh when the query has been changed.
+Instructs the :ref:`GeocodeModel <sdk_qtlocation_geocodemodel>` to update
+its data. This is most useful when
+:ref:`autoUpdate <sdk_qtlocation_geocodemodel#autoUpdate-prop>` is
+disabled, to force a refresh when the query has been changed.
 
 | 

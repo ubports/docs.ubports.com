@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_listitemactions:
+Ubuntu.Components ListItemActions
+=================================
+
 Provides configuration for actions to be added to a ListItem.
 
 +---------------------+--------------------------------+
@@ -9,44 +13,42 @@ Provides configuration for actions to be added to a ListItem.
 Properties
 ----------
 
--  ****`actions </sdk/apps/qml/Ubuntu.Components/ListItemActions#actions-prop>`__****
+-  :ref:`actions <sdk_ubuntu_components_listitemactions_actions-prop>`
    : list<Action>
--  ****`delegate </sdk/apps/qml/Ubuntu.Components/ListItemActions#delegate-prop>`__****
+-  :ref:`delegate <sdk_ubuntu_components_listitemactions_delegate-prop>`
    : Component
 
 Detailed Description
 --------------------
 
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ accepts actions
-that can be configured to appear when swiped to left or right. The API
-does not limit the number of actions to be assigned for leading or
-trailing actions, however the design constraints are allowing a maximum
-of 1 action on leading- and a maximum of 3 actions on trailing side of
-the `ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__.
+:ref:`ListItem <sdk_ubuntu_components_listitem>` accepts actions that can
+be configured to appear when swiped to left or right. The API does not
+limit the number of actions to be assigned for leading or trailing
+actions, however the design constraints are allowing a maximum of 1
+action on leading- and a maximum of 3 actions on trailing side of the
+:ref:`ListItem <sdk_ubuntu_components_listitem>`.
 
-The
-`actions </sdk/apps/qml/Ubuntu.Components/ListItemActions#actions-prop>`__
-are Action instances or elements derived from Action. The default
+The :ref:`actions <sdk_ubuntu_components_listitemactions#actions-prop>` are
+Action instances or elements derived from Action. The default
 visualization of the actions can be overridden using the
-`delegate </sdk/apps/qml/Ubuntu.Components/ListItemActions#delegate-prop>`__
+:ref:`delegate <sdk_ubuntu_components_listitemactions#delegate-prop>`
 property, and the default implementation uses the ``name`` property of
 the Action.
 
 Using with ListViews
 ^^^^^^^^^^^^^^^^^^^^
 
-`ListItemActions </sdk/apps/qml/Ubuntu.Components/ListItemActions/>`__
-instances can be shared between
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ instances
-within the same view. When shared, the memory footprint of the view will
-be lot smaller, as there will be no individual action container created
-for each list's actions. Having individual
-`ListItemActions </sdk/apps/qml/Ubuntu.Components/ListItemActions/>`__
-instances increases the memory footprint, and also has performance
-impact on kinetic scrolling.
+:ref:`ListItemActions <sdk_ubuntu_components_listitemactions>` instances
+can be shared between :ref:`ListItem <sdk_ubuntu_components_listitem>`
+instances within the same view. When shared, the memory footprint of the
+view will be lot smaller, as there will be no individual action
+container created for each list's actions. Having individual
+:ref:`ListItemActions <sdk_ubuntu_components_listitemactions>` instances
+increases the memory footprint, and also has performance impact on
+kinetic scrolling.
 
 The examples below illustrate the worst and best practice when used in a
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__. The worst case:
+:ref:`ListView <sdk_qtquick_listview>`. The worst case:
 
 .. code:: qml
 
@@ -126,25 +128,23 @@ items:
 Action parameter types
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Actions handled by the
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ are all
-triggered with the
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__'s index as
-parameter. This index can either be the model index when used with
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__, or the child index from
-the parentItem's childItems list. Actions can use this parameter to
-identify the instance of the
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ on which it was
-executed, in which case
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ will change the
-type from ``Actions.None`` to ``Actions.Integer`` when it is triggered.
+Actions handled by the :ref:`ListItem <sdk_ubuntu_components_listitem>` are
+all triggered with the :ref:`ListItem <sdk_ubuntu_components_listitem>`'s
+index as parameter. This index can either be the model index when used
+with :ref:`ListView <sdk_qtquick_listview>`, or the child index from the
+parentItem's childItems list. Actions can use this parameter to identify
+the instance of the :ref:`ListItem <sdk_ubuntu_components_listitem>` on
+which it was executed, in which case
+:ref:`ListItem <sdk_ubuntu_components_listitem>` will change the type from
+``Actions.None`` to ``Actions.Integer`` when it is triggered.
 
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_listitemactions_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ actions :                                                       |
-| list<`Action </sdk/apps/qml/Ubuntu.Components/Action/>`__>               |
+| :ref:` <>`\ actions : list<`Action <sdk_ubuntu_components_action>`>       |
 +--------------------------------------------------------------------------+
 
 The property holds the actions to be displayed. It can hold instances
@@ -161,25 +161,25 @@ cached or declared in place. An example of cached actions:
 
 | 
 
+.. _sdk_ubuntu_components_listitemactions_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ delegate : `Component </sdk/apps/qml/QtQml/Component/>`__       |
+| :ref:` <>`\ delegate : `Component <sdk_qtqml_component>`               |
 +--------------------------------------------------------------------------+
 
 The property holds the custom delegate to visualize the actions listed
-in the
-`ListItemActions </sdk/apps/qml/Ubuntu.Components/ListItemActions/>`__.
-When set to null, the default delegate specified by the
-`ListItemStyle </sdk/apps/qml/Ubuntu.Components/Styles.ListItemStyle/>`__
+in the :ref:`ListItemActions <sdk_ubuntu_components_listitemactions>`. When
+set to null, the default delegate specified by the
+`ListItemStyle </sdk/apps/qml/Ubuntu.Components/Styles.ListItemStyle/>`_ 
 will be used.
 
-`ListItemActions </sdk/apps/qml/Ubuntu.Components/ListItemActions/>`__
-provides the ``action`` context property which contains the Action
-instance currently visualized. Using this property delegates can access
-the information to be visualized. The action is triggered by the panel
-item holding the visualized action, therefore only visualization is
-needed by the custom delegate. The other context property exposed to
-delegates is the ``index``, which specifies the index of the action
-visualized.
+:ref:`ListItemActions <sdk_ubuntu_components_listitemactions>` provides the
+``action`` context property which contains the Action instance currently
+visualized. Using this property delegates can access the information to
+be visualized. The action is triggered by the panel item holding the
+visualized action, therefore only visualization is needed by the custom
+delegate. The other context property exposed to delegates is the
+``index``, which specifies the index of the action visualized.
 
 Specifying a custom delegate will not override the triggering logic of
 the action, that will be still handled by the panel itself. However
@@ -233,8 +233,8 @@ list.
 
 **Note:** Putting a Rectangle in the delegate can be used to override
 the color of the panel. Also all
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ attached
-properties can be used in the delegates.
+:ref:`ListItem <sdk_ubuntu_components_listitem>` attached properties can be
+used in the delegates.
 
 Defaults to null.
 

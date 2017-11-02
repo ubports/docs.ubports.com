@@ -1,3 +1,7 @@
+.. _sdk_qtcontacts_note:
+QtContacts Note
+===============
+
 The Note element contains a note associated with a contact.
 
 +---------------------+-------------------------+
@@ -7,7 +11,7 @@ The Note element contains a note associated with a contact.
 Properties
 ----------
 
--  ****`note </sdk/apps/qml/QtContacts/Note#note-prop>`__**** : string
+-  :ref:`note <sdk_qtcontacts_note_note-prop>` : string
 
 Detailed Description
 --------------------
@@ -20,6 +24,8 @@ This element is part of the **QtContacts** module.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtcontacts_note_note-prop:
 
 +--------------------------------------------------------------------------+
 |        \ note : string                                                   |

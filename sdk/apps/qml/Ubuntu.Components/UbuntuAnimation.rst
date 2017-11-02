@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_ubuntuanimation:
+Ubuntu.Components UbuntuAnimation
+=================================
+
 Singleton defining standard Ubuntu durations and easing for animations
 that should be used to ensure that Ubuntu applications are consistent in
 their animations.
@@ -9,19 +13,19 @@ their animations.
 Properties
 ----------
 
--  ****`BriskDuration </sdk/apps/qml/Ubuntu.Components/UbuntuAnimation#BriskDuration-prop>`__****
+-  :ref:`BriskDuration <sdk_ubuntu_components_ubuntuanimation_BriskDuration-prop>`
    : int
--  ****`FastDuration </sdk/apps/qml/Ubuntu.Components/UbuntuAnimation#FastDuration-prop>`__****
+-  :ref:`FastDuration <sdk_ubuntu_components_ubuntuanimation_FastDuration-prop>`
    : int
--  ****`SleepyDuration </sdk/apps/qml/Ubuntu.Components/UbuntuAnimation#SleepyDuration-prop>`__****
+-  :ref:`SleepyDuration <sdk_ubuntu_components_ubuntuanimation_SleepyDuration-prop>`
    : int
--  ****`SlowDuration </sdk/apps/qml/Ubuntu.Components/UbuntuAnimation#SlowDuration-prop>`__****
+-  :ref:`SlowDuration <sdk_ubuntu_components_ubuntuanimation_SlowDuration-prop>`
    : int
--  ****`SnapDuration </sdk/apps/qml/Ubuntu.Components/UbuntuAnimation#SnapDuration-prop>`__****
+-  :ref:`SnapDuration <sdk_ubuntu_components_ubuntuanimation_SnapDuration-prop>`
    : int
--  ****`StandardEasing </sdk/apps/qml/Ubuntu.Components/UbuntuAnimation#StandardEasing-prop>`__****
+-  :ref:`StandardEasing <sdk_ubuntu_components_ubuntuanimation_StandardEasing-prop>`
    : QEasingCurve
--  ****`StandardEasingReverse </sdk/apps/qml/Ubuntu.Components/UbuntuAnimation#StandardEasingReverse-prop>`__****
+-  :ref:`StandardEasingReverse <sdk_ubuntu_components_ubuntuanimation_StandardEasingReverse-prop>`
    : QEasingCurve
 
 Detailed Description
@@ -41,23 +45,24 @@ disruptiveness of the animation. The more frequent an animation is, the
 faster it should be. The more disruptive an animation is, the slower it
 should be. Rule of thumb to select durations:
 
--  `SnapDuration </sdk/apps/qml/Ubuntu.Components/UbuntuAnimation#SnapDuration-prop>`__:
+-  :ref:`SnapDuration <sdk_ubuntu_components_ubuntuanimation#SnapDuration-prop>`:
    very frequent, non-disruptive.
--  `FastDuration </sdk/apps/qml/Ubuntu.Components/UbuntuAnimation#FastDuration-prop>`__:
+-  :ref:`FastDuration <sdk_ubuntu_components_ubuntuanimation#FastDuration-prop>`:
    frequent, non-disruptive.
--  `SlowDuration </sdk/apps/qml/Ubuntu.Components/UbuntuAnimation#SlowDuration-prop>`__:
+-  :ref:`SlowDuration <sdk_ubuntu_components_ubuntuanimation#SlowDuration-prop>`:
    less frequent, non-disruptive.
--  `SleepyDuration </sdk/apps/qml/Ubuntu.Components/UbuntuAnimation#SleepyDuration-prop>`__:
+-  :ref:`SleepyDuration <sdk_ubuntu_components_ubuntuanimation#SleepyDuration-prop>`:
    disruptive.
 
 Note that
-`UbuntuNumberAnimation </sdk/apps/qml/Ubuntu.Components/UbuntuNumberAnimation/>`__
-provides a standard
-`NumberAnimation </sdk/apps/qml/QtQuick/NumberAnimation/>`__ for Ubuntu
-applications.
+:ref:`UbuntuNumberAnimation <sdk_ubuntu_components_ubuntunumberanimation>`
+provides a standard :ref:`NumberAnimation <sdk_qtquick_numberanimation>`
+for Ubuntu applications.
 
 Property Documentation
 ----------------------
+
+.. _sdk_ubuntu_components_ubuntuanimation_BriskDuration-prop:
 
 +--------------------------------------------------------------------------+
 |        \ BriskDuration : int                                             |
@@ -70,6 +75,8 @@ The value is 333ms.
 
 | 
 
+.. _sdk_ubuntu_components_ubuntuanimation_FastDuration-prop:
+
 +--------------------------------------------------------------------------+
 |        \ FastDuration : int                                              |
 +--------------------------------------------------------------------------+
@@ -80,6 +87,8 @@ The value is 165ms.
 
 | 
 
+.. _sdk_ubuntu_components_ubuntuanimation_SleepyDuration-prop:
+
 +--------------------------------------------------------------------------+
 |        \ SleepyDuration : int                                            |
 +--------------------------------------------------------------------------+
@@ -89,6 +98,8 @@ Used for disruptive transitions.
 The value is 1000ms.
 
 | 
+
+.. _sdk_ubuntu_components_ubuntuanimation_SlowDuration-prop:
 
 +--------------------------------------------------------------------------+
 |        \ SlowDuration : int                                              |
@@ -101,6 +112,8 @@ The value is 500ms.
 
 | 
 
+.. _sdk_ubuntu_components_ubuntuanimation_SnapDuration-prop:
+
 +--------------------------------------------------------------------------+
 |        \ SnapDuration : int                                              |
 +--------------------------------------------------------------------------+
@@ -112,6 +125,8 @@ The value is 100ms.
 
 | 
 
+.. _sdk_ubuntu_components_ubuntuanimation_StandardEasing-prop:
+
 +--------------------------------------------------------------------------+
 |        \ StandardEasing : QEasingCurve                                   |
 +--------------------------------------------------------------------------+
@@ -120,20 +135,22 @@ Used for animations trigerred by user actions.
 
 | 
 
+.. _sdk_ubuntu_components_ubuntuanimation_StandardEasingReverse-prop:
+
 +--------------------------------------------------------------------------+
 |        \ StandardEasingReverse : QEasingCurve                            |
 +--------------------------------------------------------------------------+
 
 StandardEasingReverse is mainly used in combination with
-`StandardEasing </sdk/apps/qml/Ubuntu.Components/UbuntuAnimation#StandardEasing-prop>`__.
+:ref:`StandardEasing <sdk_ubuntu_components_ubuntuanimation#StandardEasing-prop>`.
 For example, if animating an object that bounces, you will want the
 object to slow down as it reaches the apex of its bounce and slowly
 speed back up as it descends.
 
 StandardEasingReverse should not be used to introduce a new object or
 screen to the user. In general, it should only be used if
-`StandardEasing </sdk/apps/qml/Ubuntu.Components/UbuntuAnimation#StandardEasing-prop>`__
+:ref:`StandardEasing <sdk_ubuntu_components_ubuntuanimation#StandardEasing-prop>`
 is visually inappropriate and even so, will usually be proceeded by
-`StandardEasing </sdk/apps/qml/Ubuntu.Components/UbuntuAnimation#StandardEasing-prop>`__.
+:ref:`StandardEasing <sdk_ubuntu_components_ubuntuanimation#StandardEasing-prop>`.
 
 | 

@@ -1,3 +1,7 @@
+.. _sdk_u1db_synchronizer:
+U1db Synchronizer
+=================
+
 Synchronizer handles synchronizing between two databases.
 
 +---------------------+-----------------+
@@ -9,15 +13,14 @@ Synchronizer handles synchronizing between two databases.
 Properties
 ----------
 
--  ****`resolve\_to\_source </sdk/apps/qml/U1db/Synchronizer#resolve_to_source-prop>`__****
+-  :ref:`resolve\_to\_source <sdk_u1db_synchronizer_resolve_to_source-prop>`
    : bool
--  ****`source </sdk/apps/qml/U1db/Synchronizer#source-prop>`__**** :
-   Database
--  ****`sync\_output </sdk/apps/qml/U1db/Synchronizer#sync_output-prop>`__****
-   : list<Variant>
--  ****`synchronize </sdk/apps/qml/U1db/Synchronizer#synchronize-prop>`__****
-   : bool
--  ****`targets </sdk/apps/qml/U1db/Synchronizer#targets-prop>`__**** :
+-  :ref:`source <sdk_u1db_synchronizer_source-prop>` : Database
+-  :ref:`sync\_output <sdk_u1db_synchronizer_sync_output-prop>` :
+   list<Variant>
+-  :ref:`synchronize <sdk_u1db_synchronizer_synchronize-prop>` :
+   bool
+-  :ref:`targets <sdk_u1db_synchronizer_targets-prop>` :
    Variant\ `` (preliminary)``
 
 Detailed Description
@@ -41,6 +44,8 @@ Detailed Description
 Property Documentation
 ----------------------
 
+.. _sdk_u1db_synchronizer_resolve_to_source-prop:
+
 +--------------------------------------------------------------------------+
 |        \ resolve\_to\_source : bool                                      |
 +--------------------------------------------------------------------------+
@@ -50,13 +55,17 @@ from the source database.
 
 | 
 
+.. _sdk_u1db_synchronizer_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ source : `Database </sdk/apps/qml/U1db/Database/>`__            |
+| :ref:` <>`\ source : `Database <sdk_u1db_database>`                    |
 +--------------------------------------------------------------------------+
 
-Returns the source `Database </sdk/apps/qml/U1db/Database/>`__.
+Returns the source :ref:`Database <sdk_u1db_database>`.
 
 | 
+
+.. _sdk_u1db_synchronizer_sync_output-prop:
 
 +--------------------------------------------------------------------------+
 |        \ sync\_output : list<Variant>                                    |
@@ -77,6 +86,8 @@ to best use the data.
 
 | 
 
+.. _sdk_u1db_synchronizer_synchronize-prop:
+
 +--------------------------------------------------------------------------+
 |        \ synchronize : bool                                              |
 +--------------------------------------------------------------------------+
@@ -84,6 +95,8 @@ to best use the data.
 FIXME
 
 | 
+
+.. _sdk_u1db_synchronizer_targets-prop:
 
 +--------------------------------------------------------------------------+
 |        \ targets : Variant                                               |
@@ -126,7 +139,7 @@ local to remote synchronization of two databases:
 server. 'ip' and 'port' for a server are used only when 'remote' is set
 to true 'name' is the name of the local (on disk) or remote database.
 Note: If 'remote' is false this is the relative/absolute file location.
-'`resolve\_to\_source </sdk/apps/qml/U1db/Synchronizer#resolve_to_source-prop>`__'
+':ref:`resolve\_to\_source <sdk_u1db_synchronizer#resolve_to_source-prop>`'
 determines whether to resolve conflicts automatically in favor of the
 source (aka local) database's values or the target's.
 

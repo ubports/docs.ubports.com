@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_sensor_gestures_c++_overview:
+QtSensors Sensor Gestures C++ Overview
+======================================
+
 
 
 .. rubric:: Using QtSensorGestures

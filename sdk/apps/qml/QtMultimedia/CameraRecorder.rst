@@ -1,3 +1,7 @@
+.. _sdk_qtmultimedia_camerarecorder:
+QtMultimedia CameraRecorder
+===========================
+
 Controls video recording with the Camera.
 
 +---------------------+---------------------------+
@@ -7,63 +11,62 @@ Controls video recording with the Camera.
 Properties
 ----------
 
--  ****`actualLocation </sdk/apps/qml/QtMultimedia/CameraRecorder#actualLocation-prop>`__****
+-  :ref:`actualLocation <sdk_qtmultimedia_camerarecorder_actualLocation-prop>`
    : string
--  ****`audioBitRate </sdk/apps/qml/QtMultimedia/CameraRecorder#audioBitRate-prop>`__****
+-  :ref:`audioBitRate <sdk_qtmultimedia_camerarecorder_audioBitRate-prop>`
    : int
--  ****`audioChannels </sdk/apps/qml/QtMultimedia/CameraRecorder#audioChannels-prop>`__****
+-  :ref:`audioChannels <sdk_qtmultimedia_camerarecorder_audioChannels-prop>`
    : int
--  ****`audioCodec </sdk/apps/qml/QtMultimedia/CameraRecorder#audioCodec-prop>`__****
+-  :ref:`audioCodec <sdk_qtmultimedia_camerarecorder_audioCodec-prop>`
    : string
--  ****`audioEncodingMode </sdk/apps/qml/QtMultimedia/CameraRecorder#audioEncodingMode-prop>`__****
+-  :ref:`audioEncodingMode <sdk_qtmultimedia_camerarecorder_audioEncodingMode-prop>`
    : enumeration
--  ****`audioSampleRate </sdk/apps/qml/QtMultimedia/CameraRecorder#audioSampleRate-prop>`__****
+-  :ref:`audioSampleRate <sdk_qtmultimedia_camerarecorder_audioSampleRate-prop>`
    : int
--  ****`duration </sdk/apps/qml/QtMultimedia/CameraRecorder#duration-prop>`__****
+-  :ref:`duration <sdk_qtmultimedia_camerarecorder_duration-prop>`
    : int
--  ****`errorCode </sdk/apps/qml/QtMultimedia/CameraRecorder#errorCode-prop>`__****
+-  :ref:`errorCode <sdk_qtmultimedia_camerarecorder_errorCode-prop>`
    : enumeration
--  ****`errorString </sdk/apps/qml/QtMultimedia/CameraRecorder#errorString-prop>`__****
+-  :ref:`errorString <sdk_qtmultimedia_camerarecorder_errorString-prop>`
    : string
--  ****`frameRate </sdk/apps/qml/QtMultimedia/CameraRecorder#frameRate-prop>`__****
+-  :ref:`frameRate <sdk_qtmultimedia_camerarecorder_frameRate-prop>`
    : qreal
--  ****`mediaContainer </sdk/apps/qml/QtMultimedia/CameraRecorder#mediaContainer-prop>`__****
+-  :ref:`mediaContainer <sdk_qtmultimedia_camerarecorder_mediaContainer-prop>`
    : string
--  ****`muted </sdk/apps/qml/QtMultimedia/CameraRecorder#muted-prop>`__****
-   : bool
--  ****`outputLocation </sdk/apps/qml/QtMultimedia/CameraRecorder#outputLocation-prop>`__****
+-  :ref:`muted <sdk_qtmultimedia_camerarecorder_muted-prop>` : bool
+-  :ref:`outputLocation <sdk_qtmultimedia_camerarecorder_outputLocation-prop>`
    : string
--  ****`recorderState </sdk/apps/qml/QtMultimedia/CameraRecorder#recorderState-prop>`__****
+-  :ref:`recorderState <sdk_qtmultimedia_camerarecorder_recorderState-prop>`
    : enumeration
--  ****`recorderStatus </sdk/apps/qml/QtMultimedia/CameraRecorder#recorderStatus-prop>`__****
+-  :ref:`recorderStatus <sdk_qtmultimedia_camerarecorder_recorderStatus-prop>`
    : enumeration
--  ****`resolution </sdk/apps/qml/QtMultimedia/CameraRecorder#resolution-prop>`__****
+-  :ref:`resolution <sdk_qtmultimedia_camerarecorder_resolution-prop>`
    : size
--  ****`videoBitRate </sdk/apps/qml/QtMultimedia/CameraRecorder#videoBitRate-prop>`__****
+-  :ref:`videoBitRate <sdk_qtmultimedia_camerarecorder_videoBitRate-prop>`
    : int
--  ****`videoCodec </sdk/apps/qml/QtMultimedia/CameraRecorder#videoCodec-prop>`__****
+-  :ref:`videoCodec <sdk_qtmultimedia_camerarecorder_videoCodec-prop>`
    : string
--  ****`videoEncodingMode </sdk/apps/qml/QtMultimedia/CameraRecorder#videoEncodingMode-prop>`__****
+-  :ref:`videoEncodingMode <sdk_qtmultimedia_camerarecorder_videoEncodingMode-prop>`
    : enumeration
 
 Methods
 -------
 
--  ****`record </sdk/apps/qml/QtMultimedia/CameraRecorder#record-method>`__****\ ()
--  ****`setMetadata </sdk/apps/qml/QtMultimedia/CameraRecorder#setMetadata-method>`__****\ (key,
+-  :ref:`record <sdk_qtmultimedia_camerarecorder_record-method>`\ ()
+-  :ref:`setMetadata <sdk_qtmultimedia_camerarecorder_setMetadata-method>`\ (key,
    value)
--  ****`stop </sdk/apps/qml/QtMultimedia/CameraRecorder#stop-method>`__****\ ()
+-  :ref:`stop <sdk_qtmultimedia_camerarecorder_stop-method>`\ ()
 
 Detailed Description
 --------------------
 
-`CameraRecorder </sdk/apps/qml/QtMultimedia/CameraRecorder/>`__ allows
-recording camera streams to files, and adjusting recording settings and
-metadata for videos.
+:ref:`CameraRecorder <sdk_qtmultimedia_camerarecorder>` allows recording
+camera streams to files, and adjusting recording settings and metadata
+for videos.
 
 It should not be constructed separately, instead the ``videoRecorder``
 property of a
-`Camera </sdk/apps/qml/QtMultimedia/qml-multimedia#camera>`__ should be
+`Camera </sdk/apps/qml/QtMultimedia/qml-multimedia/#camera>`_  should be
 used.
 
 .. code:: qml
@@ -84,6 +87,8 @@ where to store the output file.
 Property Documentation
 ----------------------
 
+.. _sdk_qtmultimedia_camerarecorder_actualLocation-prop:
+
 +--------------------------------------------------------------------------+
 |        \ actualLocation : string                                         |
 +--------------------------------------------------------------------------+
@@ -94,6 +99,8 @@ reset when new location is set or the new recording starts.
 
 | 
 
+.. _sdk_qtmultimedia_camerarecorder_audioBitRate-prop:
+
 +--------------------------------------------------------------------------+
 |        \ audioBitRate : int                                              |
 +--------------------------------------------------------------------------+
@@ -102,6 +109,8 @@ This property holds the audio bit rate (in bits per second) to be used
 for recording video.
 
 | 
+
+.. _sdk_qtmultimedia_camerarecorder_audioChannels-prop:
 
 +--------------------------------------------------------------------------+
 |        \ audioChannels : int                                             |
@@ -112,6 +121,8 @@ recording video (1 is mono, 2 is stereo).
 
 | 
 
+.. _sdk_qtmultimedia_camerarecorder_audioCodec-prop:
+
 +--------------------------------------------------------------------------+
 |        \ audioCodec : string                                             |
 +--------------------------------------------------------------------------+
@@ -120,9 +131,11 @@ This property holds the audio codec to be used for recording video.
 Typically this is ``aac`` or ``amr-wb``.
 
 **See also**
-`whileBalanceMode </sdk/apps/qml/QtMultimedia/CameraImageProcessing#whiteBalanceMode-prop>`__.
+:ref:`whileBalanceMode <sdk_qtmultimedia_cameraimageprocessing#whiteBalanceMode-prop>`.
 
 | 
+
+.. _sdk_qtmultimedia_camerarecorder_audioEncodingMode-prop:
 
 +--------------------------------------------------------------------------+
 |        \ audioEncodingMode : enumeration                                 |
@@ -130,17 +143,23 @@ Typically this is ``aac`` or ``amr-wb``.
 
 The type of encoding method to use when recording audio.
 
+.. _sdk_qtmultimedia_camerarecorder_Value                      Description-prop:
+
 +---------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
 | Value                     | Description                                                                                                                         |
 +===========================+=====================================================================================================================================+
+.. _sdk_qtmultimedia_camerarecorder_ConstantBitRateEncoding    Encoding will use a constant bit rate, adjust quality to fit. This is appropriate if you are trying to optimize for space.-prop:
 | ConstantQualityEncoding   | Encoding will aim to have a constant quality, adjusting bitrate to fit. This is the default. The bitrate setting will be ignored.   |
 +---------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_qtmultimedia_camerarecorder_AverageBitRateEncoding     Encoding will try to keep an average bitrate setting, but will use more or less as needed.-prop:
 | ConstantBitRateEncoding   | Encoding will use a constant bit rate, adjust quality to fit. This is appropriate if you are trying to optimize for space.          |
 +---------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
 | AverageBitRateEncoding    | Encoding will try to keep an average bitrate setting, but will use more or less as needed.                                          |
 +---------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
 
 | 
+
+.. _sdk_qtmultimedia_camerarecorder_audioSampleRate-prop:
 
 +--------------------------------------------------------------------------+
 |        \ audioSampleRate : int                                           |
@@ -151,6 +170,8 @@ recording video.
 
 | 
 
+.. _sdk_qtmultimedia_camerarecorder_duration-prop:
+
 +--------------------------------------------------------------------------+
 |        \ duration : int                                                  |
 +--------------------------------------------------------------------------+
@@ -159,25 +180,34 @@ This property holds the duration (in miliseconds) of the last recording.
 
 | 
 
+.. _sdk_qtmultimedia_camerarecorder_errorCode-prop:
+
 +--------------------------------------------------------------------------+
 |        \ errorCode : enumeration                                         |
 +--------------------------------------------------------------------------+
 
 This property holds the last error code.
 
+.. _sdk_qtmultimedia_camerarecorder_Value              Description-prop:
+
 +-------------------+-----------------------------------------+
 | Value             | Description                             |
 +===================+=========================================+
+.. _sdk_qtmultimedia_camerarecorder_ResourceError      Device is not ready or not available.-prop:
 | NoError           | No Errors                               |
 +-------------------+-----------------------------------------+
+.. _sdk_qtmultimedia_camerarecorder_FormatError        Current format is not supported.-prop:
 | ResourceError     | Device is not ready or not available.   |
 +-------------------+-----------------------------------------+
+.. _sdk_qtmultimedia_camerarecorder_OutOfSpaceError    No space left on device.-prop:
 | FormatError       | Current format is not supported.        |
 +-------------------+-----------------------------------------+
 | OutOfSpaceError   | No space left on device.                |
 +-------------------+-----------------------------------------+
 
 | 
+
+.. _sdk_qtmultimedia_camerarecorder_errorString-prop:
 
 +--------------------------------------------------------------------------+
 |        \ errorString : string                                            |
@@ -186,6 +216,8 @@ This property holds the last error code.
 This property holds the description of the last error.
 
 | 
+
+.. _sdk_qtmultimedia_camerarecorder_frameRate-prop:
 
 +--------------------------------------------------------------------------+
 |        \ frameRate : qreal                                               |
@@ -196,6 +228,8 @@ recording video.
 
 | 
 
+.. _sdk_qtmultimedia_camerarecorder_mediaContainer-prop:
+
 +--------------------------------------------------------------------------+
 |        \ mediaContainer : string                                         |
 +--------------------------------------------------------------------------+
@@ -205,6 +239,8 @@ Typically this is ``mp4``.
 
 | 
 
+.. _sdk_qtmultimedia_camerarecorder_muted-prop:
+
 +--------------------------------------------------------------------------+
 |        \ muted : bool                                                    |
 +--------------------------------------------------------------------------+
@@ -213,6 +249,8 @@ This property indicates whether the audio input is muted during
 recording.
 
 | 
+
+.. _sdk_qtmultimedia_camerarecorder_outputLocation-prop:
 
 +--------------------------------------------------------------------------+
 |        \ outputLocation : string                                         |
@@ -224,6 +262,8 @@ file naming scheme.
 
 | 
 
+.. _sdk_qtmultimedia_camerarecorder_recorderState-prop:
+
 +--------------------------------------------------------------------------+
 |        \ recorderState : enumeration                                     |
 +--------------------------------------------------------------------------+
@@ -232,9 +272,12 @@ This property holds the current state of the camera recorder object.
 
 The state can be one of these two:
 
+.. _sdk_qtmultimedia_camerarecorder_Value             Description-prop:
+
 +------------------+--------------------------------------+
 | Value            | Description                          |
 +==================+======================================+
+.. _sdk_qtmultimedia_camerarecorder_RecordingState    The camera is recording video.-prop:
 | StoppedState     | The camera is not recording video.   |
 +------------------+--------------------------------------+
 | RecordingState   | The camera is recording video.       |
@@ -242,33 +285,46 @@ The state can be one of these two:
 
 | 
 
+.. _sdk_qtmultimedia_camerarecorder_recorderStatus-prop:
+
 +--------------------------------------------------------------------------+
 |        \ recorderStatus : enumeration                                    |
 +--------------------------------------------------------------------------+
 
 This property holds the current status of media recording.
 
+.. _sdk_qtmultimedia_camerarecorder_Value                Description-prop:
+
 +---------------------+----------------------------------------------------------+
 | Value               | Description                                              |
 +=====================+==========================================================+
+.. _sdk_qtmultimedia_camerarecorder_UnloadedStatus       The recorder is available but not loaded.-prop:
 | UnavailableStatus   | Recording is not supported by the camera.                |
 +---------------------+----------------------------------------------------------+
+.. _sdk_qtmultimedia_camerarecorder_LoadingStatus        The recorder is initializing.-prop:
 | UnloadedStatus      | The recorder is available but not loaded.                |
 +---------------------+----------------------------------------------------------+
+.. _sdk_qtmultimedia_camerarecorder_LoadedStatus         The recorder is initialized and ready to record media.-prop:
 | LoadingStatus       | The recorder is initializing.                            |
 +---------------------+----------------------------------------------------------+
+.. _sdk_qtmultimedia_camerarecorder_StartingStatus       Recording is requested but not active yet.-prop:
 | LoadedStatus        | The recorder is initialized and ready to record media.   |
 +---------------------+----------------------------------------------------------+
+.. _sdk_qtmultimedia_camerarecorder_RecordingStatus      Recording is active.-prop:
 | StartingStatus      | Recording is requested but not active yet.               |
 +---------------------+----------------------------------------------------------+
+.. _sdk_qtmultimedia_camerarecorder_PausedStatus         Recording is paused.-prop:
 | RecordingStatus     | Recording is active.                                     |
 +---------------------+----------------------------------------------------------+
+.. _sdk_qtmultimedia_camerarecorder_FinalizingStatus     Recording is stopped with media being finalized.-prop:
 | PausedStatus        | Recording is paused.                                     |
 +---------------------+----------------------------------------------------------+
 | FinalizingStatus    | Recording is stopped with media being finalized.         |
 +---------------------+----------------------------------------------------------+
 
 | 
+
+.. _sdk_qtmultimedia_camerarecorder_resolution-prop:
 
 +--------------------------------------------------------------------------+
 |        \ resolution : size                                               |
@@ -279,6 +335,8 @@ capture.
 
 | 
 
+.. _sdk_qtmultimedia_camerarecorder_videoBitRate-prop:
+
 +--------------------------------------------------------------------------+
 |        \ videoBitRate : int                                              |
 +--------------------------------------------------------------------------+
@@ -287,6 +345,8 @@ This property holds the bit rate (in bits per second) to be used for
 recording video.
 
 | 
+
+.. _sdk_qtmultimedia_camerarecorder_videoCodec-prop:
 
 +--------------------------------------------------------------------------+
 |        \ videoCodec : string                                             |
@@ -297,6 +357,8 @@ Typically this is ``h264``.
 
 | 
 
+.. _sdk_qtmultimedia_camerarecorder_videoEncodingMode-method:
+
 +--------------------------------------------------------------------------+
 |        \ videoEncodingMode : enumeration                                 |
 +--------------------------------------------------------------------------+
@@ -306,11 +368,15 @@ video.
 
 The following are the different encoding methods used:
 
+.. _sdk_qtmultimedia_camerarecorder_Value                      Description-method:
+
 +---------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
 | Value                     | Description                                                                                                                         |
 +===========================+=====================================================================================================================================+
+.. _sdk_qtmultimedia_camerarecorder_ConstantBitRateEncoding    Encoding will use a constant bit rate, adjust quality to fit. This is appropriate if you are trying to optimize for space.-method:
 | ConstantQualityEncoding   | Encoding will aim to have a constant quality, adjusting bitrate to fit. This is the default. The bitrate setting will be ignored.   |
 +---------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_qtmultimedia_camerarecorder_AverageBitRateEncoding     Encoding will try to keep an average bitrate setting, but will use more or less as needed.-method:
 | ConstantBitRateEncoding   | Encoding will use a constant bit rate, adjust quality to fit. This is appropriate if you are trying to optimize for space.          |
 +---------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
 | AverageBitRateEncoding    | Encoding will try to keep an average bitrate setting, but will use more or less as needed.                                          |
@@ -321,6 +387,8 @@ The following are the different encoding methods used:
 Method Documentation
 --------------------
 
+.. _sdk_qtmultimedia_camerarecorder_record-method:
+
 +--------------------------------------------------------------------------+
 |        \ record()                                                        |
 +--------------------------------------------------------------------------+
@@ -328,6 +396,8 @@ Method Documentation
 Starts recording.
 
 | 
+
+.. _sdk_qtmultimedia_camerarecorder_setMetadata-method:
 
 +--------------------------------------------------------------------------+
 |        \ setMetadata(key, value)                                         |
@@ -337,6 +407,8 @@ Sets metadata for the next video to be recorder, with the given *key*
 being associated with *value*.
 
 | 
+
+.. _sdk_qtmultimedia_camerarecorder_stop-method:
 
 +--------------------------------------------------------------------------+
 |        \ stop()                                                          |

@@ -1,5 +1,9 @@
-`Manager </sdk/scopes/cpp/Accounts/Manager/>`__ of accounts, services
-and providers. `More... </sdk/scopes/cpp/Accounts/Manager#details>`__
+.. _sdk_accounts_manager:
+Accounts Manager
+================
+
+:ref:`Manager <sdk_accounts_manager>` of accounts, services and providers.
+:ref:`More... <sdk_accounts_manager#details>`
 
 ``#include <Accounts/Manager>``
 
@@ -10,15 +14,14 @@ Inherits QObject.
 
 enum  
 
-`Option </sdk/scopes/cpp/Accounts/Manager#a0e65ad13124ea2cb5e255b640464e35f>`__
-{
-`DisableNotifications </sdk/scopes/cpp/Accounts/Manager#a0e65ad13124ea2cb5e255b640464e35fa8ab6226b5ae4221689bc2d25d6201ae9>`__
+:ref:`Option <sdk_accounts_manager#a0e65ad13124ea2cb5e255b640464e35f>` {
+:ref:`DisableNotifications <sdk_accounts_manager#a0e65ad13124ea2cb5e255b640464e35fa8ab6226b5ae4221689bc2d25d6201ae9>`
 = 0x1 }
 
  
 
 | Specifies options for the object.
-  `More... </sdk/scopes/cpp/Accounts/Manager#a0e65ad13124ea2cb5e255b640464e35f>`__
+  :ref:`More... <sdk_accounts_manager#a0e65ad13124ea2cb5e255b640464e35f>`
 
  
 
@@ -27,7 +30,7 @@ enum  
 
 void 
 
-`accountCreated </sdk/scopes/cpp/Accounts/Manager#ad6d2d0cfff2e9f11ab3327ddf573f1eb>`__
+:ref:`accountCreated <sdk_accounts_manager#ad6d2d0cfff2e9f11ab3327ddf573f1eb>`
 (Accounts::AccountId id)
 
  
@@ -38,7 +41,7 @@ void 
 
 void 
 
-`accountRemoved </sdk/scopes/cpp/Accounts/Manager#a9e18c1ab3efc480d15fe72d833e9ab95>`__
+:ref:`accountRemoved <sdk_accounts_manager#a9e18c1ab3efc480d15fe72d833e9ab95>`
 (Accounts::AccountId id)
 
  
@@ -49,7 +52,7 @@ void 
 
 void 
 
-`accountUpdated </sdk/scopes/cpp/Accounts/Manager#aa228f4eaf987ea3575c7ff9da03208e8>`__
+:ref:`accountUpdated <sdk_accounts_manager#aa228f4eaf987ea3575c7ff9da03208e8>`
 (Accounts::AccountId id)
 
  
@@ -61,7 +64,7 @@ void 
 
 void 
 
-`enabledEvent </sdk/scopes/cpp/Accounts/Manager#a9da726ad1ee02be3dea7c19b82bb373d>`__
+:ref:`enabledEvent <sdk_accounts_manager#a9da726ad1ee02be3dea7c19b82bb373d>`
 (Accounts::AccountId id)
 
  
@@ -80,7 +83,7 @@ void 
 
  
 
-`Manager </sdk/scopes/cpp/Accounts/Manager#a904954dc41cf98ac053b00f12dbc0090>`__
+:ref:`Manager <sdk_accounts_manager#a904954dc41cf98ac053b00f12dbc0090>`
 (QObject \*parent=0)
 
  
@@ -91,9 +94,9 @@ void 
 
  
 
-`Manager </sdk/scopes/cpp/Accounts/Manager#a2d948d667caf0a065d995c847ef57176>`__
+:ref:`Manager <sdk_accounts_manager#a2d948d667caf0a065d995c847ef57176>`
 (const QString
-&\ `serviceType </sdk/scopes/cpp/Accounts/Manager#a2ace548efe2fbf601ecf6efcfcf9c980>`__,
+&\ :ref:`serviceType <sdk_accounts_manager#a2ace548efe2fbf601ecf6efcfcf9c980>`,
 QObject \*parent=0)
 
  
@@ -104,9 +107,9 @@ QObject \*parent=0)
 
  
 
-`Manager </sdk/scopes/cpp/Accounts/Manager#a5140dac7527af074eca9a9f97c5a8cea>`__
+:ref:`Manager <sdk_accounts_manager#a5140dac7527af074eca9a9f97c5a8cea>`
 (Options
-`options </sdk/scopes/cpp/Accounts/Manager#a42ec574899ed53e05880ce02e40073a1>`__,
+:ref:`options <sdk_accounts_manager#a42ec574899ed53e05880ce02e40073a1>`,
 QObject \*parent=0)
 
  
@@ -117,8 +120,7 @@ QObject \*parent=0)
 
          
 
-`~Manager </sdk/scopes/cpp/Accounts/Manager#a829d7114e3ed38c555af0fb4e974a6f6>`__
-()
+:ref:`~Manager <sdk_accounts_manager#a829d7114e3ed38c555af0fb4e974a6f6>` ()
 
  
 
@@ -128,7 +130,7 @@ QObject \*parent=0)
 
 Account \* 
 
-`account </sdk/scopes/cpp/Accounts/Manager#a8999bd6e99eb3f8ee49bdf6c8e387a6d>`__
+:ref:`account <sdk_accounts_manager#a8999bd6e99eb3f8ee49bdf6c8e387a6d>`
 (const AccountId &id) const
 
  
@@ -139,9 +141,9 @@ Account \* 
 
 AccountIdList 
 
-`accountList </sdk/scopes/cpp/Accounts/Manager#af6cb7c309b94adfe0c000a2925745975>`__
+:ref:`accountList <sdk_accounts_manager#af6cb7c309b94adfe0c000a2925745975>`
 (const QString
-&\ `serviceType </sdk/scopes/cpp/Accounts/Manager#a2ace548efe2fbf601ecf6efcfcf9c980>`__\ =QString::null)
+&\ :ref:`serviceType <sdk_accounts_manager#a2ace548efe2fbf601ecf6efcfcf9c980>`\ =QString::null)
 const
 
  
@@ -152,9 +154,9 @@ const
 
 AccountIdList 
 
-`accountListEnabled </sdk/scopes/cpp/Accounts/Manager#a5034b5eb730a95722ad1bd1dd76b7867>`__
+:ref:`accountListEnabled <sdk_accounts_manager#a5034b5eb730a95722ad1bd1dd76b7867>`
 (const QString
-&\ `serviceType </sdk/scopes/cpp/Accounts/Manager#a2ace548efe2fbf601ecf6efcfcf9c980>`__\ =QString::null)
+&\ :ref:`serviceType <sdk_accounts_manager#a2ace548efe2fbf601ecf6efcfcf9c980>`\ =QString::null)
 const
 
  
@@ -166,7 +168,7 @@ const
 
 Account \* 
 
-`createAccount </sdk/scopes/cpp/Accounts/Manager#ab094ae9aa044b74123f9269dd9e5627c>`__
+:ref:`createAccount <sdk_accounts_manager#ab094ae9aa044b74123f9269dd9e5627c>`
 (const QString &providerName)
 
  
@@ -175,9 +177,9 @@ Account \* 
 
  
 
-`Service </sdk/scopes/cpp/Accounts/Service/>`__ 
+:ref:`Service <sdk_accounts_service>` 
 
-`service </sdk/scopes/cpp/Accounts/Manager#ac9b1bf173f68b9a0384cd1afad398931>`__
+:ref:`service <sdk_accounts_manager#ac9b1bf173f68b9a0384cd1afad398931>`
 (const QString &serviceName) const
 
  
@@ -188,9 +190,9 @@ Account \* 
 
 ServiceList 
 
-`serviceList </sdk/scopes/cpp/Accounts/Manager#a77e3d998be834bacfb3378e64656edf8>`__
+:ref:`serviceList <sdk_accounts_manager#a77e3d998be834bacfb3378e64656edf8>`
 (const QString
-&\ `serviceType </sdk/scopes/cpp/Accounts/Manager#a2ace548efe2fbf601ecf6efcfcf9c980>`__\ =QString::null)
+&\ :ref:`serviceType <sdk_accounts_manager#a2ace548efe2fbf601ecf6efcfcf9c980>`\ =QString::null)
 const
 
  
@@ -199,9 +201,9 @@ const
 
  
 
-`Provider </sdk/scopes/cpp/Accounts/Provider/>`__ 
+:ref:`Provider <sdk_accounts_provider>` 
 
-`provider </sdk/scopes/cpp/Accounts/Manager#a79085e0676834932f64d651f4231b2ec>`__
+:ref:`provider <sdk_accounts_manager#a79085e0676834932f64d651f4231b2ec>`
 (const QString &providerName) const
 
  
@@ -212,7 +214,7 @@ const
 
 ProviderList 
 
-`providerList </sdk/scopes/cpp/Accounts/Manager#aa4b53bc6ceef8d0c51b50c4b047409dc>`__
+:ref:`providerList <sdk_accounts_manager#aa4b53bc6ceef8d0c51b50c4b047409dc>`
 () const
 
  
@@ -221,9 +223,9 @@ ProviderList 
 
  
 
-`ServiceType </sdk/scopes/cpp/Accounts/ServiceType/>`__ 
+:ref:`ServiceType <sdk_accounts_servicetype>` 
 
-`serviceType </sdk/scopes/cpp/Accounts/Manager#a2ace548efe2fbf601ecf6efcfcf9c980>`__
+:ref:`serviceType <sdk_accounts_manager#a2ace548efe2fbf601ecf6efcfcf9c980>`
 (const QString &name) const
 
  
@@ -232,9 +234,9 @@ ProviderList 
 
  
 
-`Application </sdk/scopes/cpp/Accounts/Application/>`__ 
+:ref:`Application <sdk_accounts_application>` 
 
-`application </sdk/scopes/cpp/Accounts/Manager#a28ff538d5abd52ff691e30ed75a6b41f>`__
+:ref:`application <sdk_accounts_manager#a28ff538d5abd52ff691e30ed75a6b41f>`
 (const QString &applicationName) const
 
  
@@ -245,9 +247,9 @@ ProviderList 
 
 ApplicationList 
 
-`applicationList </sdk/scopes/cpp/Accounts/Manager#ae18f9f8c59a4e15e8849dd832c54b874>`__
-(const `Service </sdk/scopes/cpp/Accounts/Service/>`__
-&\ `service </sdk/scopes/cpp/Accounts/Manager#ac9b1bf173f68b9a0384cd1afad398931>`__)
+:ref:`applicationList <sdk_accounts_manager#ae18f9f8c59a4e15e8849dd832c54b874>`
+(const :ref:`Service <sdk_accounts_service>`
+&\ :ref:`service <sdk_accounts_manager#ac9b1bf173f68b9a0384cd1afad398931>`)
 const
 
  
@@ -258,7 +260,7 @@ const
 
 QString 
 
-`serviceType </sdk/scopes/cpp/Accounts/Manager#aa090de65c448278a23851f45f38fa9ce>`__
+:ref:`serviceType <sdk_accounts_manager#aa090de65c448278a23851f45f38fa9ce>`
 () const
 
  
@@ -269,9 +271,9 @@ QString 
 
 void 
 
-`setTimeout </sdk/scopes/cpp/Accounts/Manager#a453a462fc339dae385360dc73128bf14>`__
+:ref:`setTimeout <sdk_accounts_manager#a453a462fc339dae385360dc73128bf14>`
 (quint32
-`timeout </sdk/scopes/cpp/Accounts/Manager#acd89c68759d802afa73ef928b293c82b>`__)
+:ref:`timeout <sdk_accounts_manager#acd89c68759d802afa73ef928b293c82b>`)
 
  
 
@@ -281,8 +283,7 @@ void 
 
 quint32 
 
-`timeout </sdk/scopes/cpp/Accounts/Manager#acd89c68759d802afa73ef928b293c82b>`__
-()
+:ref:`timeout <sdk_accounts_manager#acd89c68759d802afa73ef928b293c82b>` ()
 
  
 
@@ -292,7 +293,7 @@ quint32 
 
 void 
 
-`setAbortOnTimeout </sdk/scopes/cpp/Accounts/Manager#a9b4396a045e666376bdb535553bce09b>`__
+:ref:`setAbortOnTimeout <sdk_accounts_manager#a9b4396a045e666376bdb535553bce09b>`
 (bool abort)
 
  
@@ -303,21 +304,21 @@ void 
 
 bool 
 
-`abortOnTimeout </sdk/scopes/cpp/Accounts/Manager#afdf5d9b1cf381bf5a83ac0bf41be522b>`__
+:ref:`abortOnTimeout <sdk_accounts_manager#afdf5d9b1cf381bf5a83ac0bf41be522b>`
 () const
 
  
 
 Options 
 
-`options </sdk/scopes/cpp/Accounts/Manager#a42ec574899ed53e05880ce02e40073a1>`__
-() const
+:ref:`options <sdk_accounts_manager#a42ec574899ed53e05880ce02e40073a1>` ()
+const
 
  
 
-`Error </sdk/scopes/cpp/Accounts/Error/>`__ 
+:ref:`Error <sdk_accounts_error>` 
 
-`lastError </sdk/scopes/cpp/Accounts/Manager#a31f856d7b015a7478550d90feac77f48>`__
+:ref:`lastError <sdk_accounts_manager#a31f856d7b015a7478550d90feac77f48>`
 () const
 
  
@@ -329,21 +330,20 @@ Options 
 Detailed Description
 --------------------
 
-`Manager </sdk/scopes/cpp/Accounts/Manager/>`__ of accounts, services
-and providers.
+:ref:`Manager <sdk_accounts_manager>` of accounts, services and providers.
 
-The `Manager </sdk/scopes/cpp/Accounts/Manager/>`__ offers ways to
-create accounts, list accounts, services and providers. It also emits
-signals when accounts are created and removed.
+The :ref:`Manager <sdk_accounts_manager>` offers ways to create accounts,
+list accounts, services and providers. It also emits signals when
+accounts are created and removed.
 
 Definition at line 51 of file manager.h.
 
 Member Enumeration Documentation
 --------------------------------
 
-+----------------------------------------------------------------------------------------+
-| enum `Option </sdk/scopes/cpp/Accounts/Manager#a0e65ad13124ea2cb5e255b640464e35f>`__   |
-+----------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+| enum :ref:`Option <sdk_accounts_manager#a0e65ad13124ea2cb5e255b640464e35f>`|
++----------------------------------------------------------------------------+
 
 Specifies options for the object.
 
@@ -357,16 +357,15 @@ Constructor & Destructor Documentation
 --------------------------------------
 
 +--------------+--------------+--------------+--------------+--------------+--------------+
-| `Manager </s | (            | QObject \*   | *parent* =   | )            |              |
-| dk/scopes/cp |              |              | ``0``        |              |              |
-| p/Accounts/M |              |              |              |              |              |
-| anager/>`__  |              |              |              |              |              |
+| `Manager <sd | (            | QObject \*   | *parent* =   | )            |              |
+| k_accounts_m |              |              | ``0``        |              |              |
+| anager>`_    |              |              |              |              |              |
 +--------------+--------------+--------------+--------------+--------------+--------------+
 
 Constructor.
 
 Users should check for
-manager->\ `lastError() </sdk/scopes/cpp/Accounts/Manager#a31f856d7b015a7478550d90feac77f48>`__
+manager->\ :ref:`lastError() <sdk_accounts_manager#a31f856d7b015a7478550d90feac77f48>`
 to check if manager construction was fully succesful.
 
 Definition at line 146 of file manager.cpp.
@@ -374,9 +373,8 @@ Definition at line 146 of file manager.cpp.
 References Error::DatabaseLocked.
 
 +--------------------+--------------------+--------------------+--------------------+
-| `Manager </sdk/sco | (                  | const QString &    | *serviceType*,     |
-| pes/cpp/Accounts/M |                    |                    |                    |
-| anager/>`__        |                    |                    |                    |
+| :ref:`Manager <sdk_acco | (                  | const QString &    | *serviceType*,     |
+| unts_manager>`_    |                    |                    |                    |
 +--------------------+--------------------+--------------------+--------------------+
 |                    |                    | QObject \*         | *parent* = ``0``   |
 +--------------------+--------------------+--------------------+--------------------+
@@ -391,10 +389,10 @@ listing the accounts and services only the ones supporting the given
 service type will be returned. Also the creating account with this
 manager will affect the acccount class method for listing services in
 same manner. The signal
-`enabledEvent() </sdk/scopes/cpp/Accounts/Manager#a9da726ad1ee02be3dea7c19b82bb373d>`__
+:ref:`enabledEvent() <sdk_accounts_manager#a9da726ad1ee02be3dea7c19b82bb373d>`
 will be emitted only when manager is created with this constructor.
 Users should check for
-manager->\ `lastError() </sdk/scopes/cpp/Accounts/Manager#a31f856d7b015a7478550d90feac77f48>`__
+manager->\ :ref:`lastError() <sdk_accounts_manager#a31f856d7b015a7478550d90feac77f48>`
 to check if manager construction was fully succesful.
 
 Definition at line 173 of file manager.cpp.
@@ -402,9 +400,8 @@ Definition at line 173 of file manager.cpp.
 References Error::DatabaseLocked.
 
 +--------------------+--------------------+--------------------+--------------------+
-| `Manager </sdk/sco | (                  | Options            | *options*,         |
-| pes/cpp/Accounts/M |                    |                    |                    |
-| anager/>`__        |                    |                    |                    |
+| :ref:`Manager <sdk_acco | (                  | Options            | *options*,         |
+| unts_manager>`_    |                    |                    |                    |
 +--------------------+--------------------+--------------------+--------------------+
 |                    |                    | QObject \*         | *parent* = ``0``   |
 +--------------------+--------------------+--------------------+--------------------+
@@ -414,7 +411,7 @@ References Error::DatabaseLocked.
 Constructor, allowing option flags to be specified.
 
 Users should check for
-`lastError() </sdk/scopes/cpp/Accounts/Manager#a31f856d7b015a7478550d90feac77f48>`__
+:ref:`lastError() <sdk_accounts_manager#a31f856d7b015a7478550d90feac77f48>`
 to check if manager construction was fully succesful.
 
 Definition at line 194 of file manager.cpp.
@@ -448,7 +445,7 @@ Parameters
 
 Returns
     Requested account or 0 if not found. If 0 is returned, call
-    `lastError() </sdk/scopes/cpp/Accounts/Manager#a31f856d7b015a7478550d90feac77f48>`__
+    :ref:`lastError() <sdk_accounts_manager#a31f856d7b015a7478550d90feac77f48>`
     to find out why.
 
 Attention
@@ -557,7 +554,7 @@ is updated.
 
 To receive this notification user has to create accounts manager using
 `Manager(const QString &serviceType, QObject
-\*parent) </sdk/scopes/cpp/Accounts/Manager#a2d948d667caf0a065d995c847ef57176>`__
+\*parent) <sdk_accounts_manager#a2d948d667caf0a065d995c847ef57176>:ref:`
 constructor. Update notification is only emitted when manager is created
 for particular type of service.
 
@@ -566,9 +563,9 @@ Parameters
     | id   | Identifier of the Account   |
     +------+-----------------------------+
 
-+-----------------------------------------------------------------------+-----+--------------------+---------------------+-----+---------+
-| `Application </sdk/scopes/cpp/Accounts/Application/>`__ application   | (   | const QString &    | *applicationName*   | )   | const   |
-+-----------------------------------------------------------------------+-----+--------------------+---------------------+-----+---------+
++----------------------------------------------------------+-----+--------------------+---------------------+-----+---------+
+| :ref:`Application <sdk_accounts_application>` application   | (   | const QString &    | *applicationName*   | )   | const   |
++----------------------------------------------------------+-----+--------------------+---------------------+-----+---------+
 
 Get an object representing an application.
 
@@ -578,18 +575,17 @@ Parameters
     +-------------------+------------------------------------+
 
 Returns
-    The requested
-    `Application </sdk/scopes/cpp/Accounts/Application/>`__, or an
-    invalid `Application </sdk/scopes/cpp/Accounts/Application/>`__
-    object if not found.
+    The requested :ref:`Application <sdk_accounts_application>`, or an
+    invalid :ref:`Application <sdk_accounts_application>` object if not
+    found.
 
 Definition at line 448 of file manager.cpp.
 
 Referenced by Manager::applicationList().
 
-+-----------------------------------+-----+------------------------------------------------------------+-------------+-----+---------+
-| ApplicationList applicationList   | (   | const `Service </sdk/scopes/cpp/Accounts/Service/>`__ &    | *service*   | )   | const   |
-+-----------------------------------+-----+------------------------------------------------------------+-------------+-----+---------+
++-----------------------------------+-----+-----------------------------------------------+-------------+-----+---------+
+| ApplicationList applicationList   | (   | const :ref:`Service <sdk_accounts_service>` &    | *service*   | )   | const   |
++-----------------------------------+-----+-----------------------------------------------+-------------+-----+---------+
 
 List the registered applications which support the given service.
 
@@ -599,8 +595,7 @@ Parameters
     +-----------+--------------------------------+
 
 Returns
-    A list of `Application </sdk/scopes/cpp/Accounts/Application/>`__
-    objects.
+    A list of :ref:`Application <sdk_accounts_application>` objects.
 
 Definition at line 462 of file manager.cpp.
 
@@ -656,10 +651,9 @@ Parameters
     +------+-----------------------------+
 
 +----------------+----------------+----------------+----------------+----------------+
-| `Error </sdk/s | (              |                | )              | const          |
-| copes/cpp/Acco |                |                |                |                |
-| unts/Error/>`_ |                |                |                |                |
-| _              |                |                |                |                |
+| :ref:`Error <sdk_ac | (              |                | )              | const          |
+| counts_error>` |                |                |                |                |
+| __             |                |                |                |                |
 | lastError      |                |                |                |                |
 +----------------+----------------+----------------+----------------+----------------+
 
@@ -688,9 +682,9 @@ Definition at line 531 of file manager.cpp.
 
 References Manager::DisableNotifications.
 
-+--------------------------------------------------------------+-----+--------------------+------------------+-----+---------+
-| `Provider </sdk/scopes/cpp/Accounts/Provider/>`__ provider   | (   | const QString &    | *providerName*   | )   | const   |
-+--------------------------------------------------------------+-----+--------------------+------------------+-----+---------+
++-------------------------------------------------+-----+--------------------+------------------+-----+---------+
+| :ref:`Provider <sdk_accounts_provider>` provider   | (   | const QString &    | *providerName*   | )   | const   |
++-------------------------------------------------+-----+--------------------+------------------+-----+---------+
 
 Gets an object representing a provider.
 
@@ -720,9 +714,9 @@ Definition at line 406 of file manager.cpp.
 
 References Manager::provider().
 
-+-----------------------------------------------------------+-----+--------------------+-----------------+-----+---------+
-| `Service </sdk/scopes/cpp/Accounts/Service/>`__ service   | (   | const QString &    | *serviceName*   | )   | const   |
-+-----------------------------------------------------------+-----+--------------------+-----------------+-----+---------+
++----------------------------------------------+-----+--------------------+-----------------+-----+---------+
+| :ref:`Service <sdk_accounts_service>` service   | (   | const QString &    | *serviceName*   | )   | const   |
++----------------------------------------------+-----+--------------------+-----------------+-----+---------+
 
 Gets an object representing a service.
 
@@ -753,15 +747,15 @@ Parameters
     +---------------+------------------------------------------------------------------------------------------------------------------------------+
 
 Returns
-    List of `Service </sdk/scopes/cpp/Accounts/Service/>`__ objects.
+    List of :ref:`Service <sdk_accounts_service>` objects.
 
 Definition at line 360 of file manager.cpp.
 
 References Manager::service().
 
-+-----------------------------------------------------------------------+-----+--------------------+----------+-----+---------+
-| `ServiceType </sdk/scopes/cpp/Accounts/ServiceType/>`__ serviceType   | (   | const QString &    | *name*   | )   | const   |
-+-----------------------------------------------------------------------+-----+--------------------+----------+-----+---------+
++----------------------------------------------------------+-----+--------------------+----------+-----+---------+
+| :ref:`ServiceType <sdk_accounts_servicetype>` serviceType   | (   | const QString &    | *name*   | )   | const   |
++----------------------------------------------------------+-----+--------------------+----------+-----+---------+
 
 Gets an object representing a service type.
 
@@ -783,8 +777,7 @@ Definition at line 433 of file manager.cpp.
 Gets the service type if given in manager constructor.
 
 Returns
-    `Service </sdk/scopes/cpp/Accounts/Service/>`__ type or NULL if not
-    given.
+    :ref:`Service <sdk_accounts_service>` type or NULL if not given.
 
 Definition at line 482 of file manager.cpp.
 

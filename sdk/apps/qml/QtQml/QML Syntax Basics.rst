@@ -1,3 +1,7 @@
+.. _sdk_qtqml_qml_syntax_basics:
+QtQml QML Syntax Basics
+=======================
+
 
 
 QML is a multi-paradigm language that enables objects to be defined in
@@ -13,7 +17,7 @@ is needed.
 QML source code is generally loaded by the engine through QML
 *documents*, which are standalone documents of QML code. These can be
 used to define `QML object
-types </sdk/apps/qml/QtQml/qtqml-typesystem-objecttypes/>`__ that can
+types </sdk/apps/qml/QtQml/qtqml-typesystem-objecttypes/>`_  that can
 then be reused throughout an application.
 
 .. rubric:: Import Statements
@@ -45,7 +49,7 @@ Examples:
 -  ``import "somefile.js" as Script``
 
 Please see the `QML Syntax - Import
-Statements </sdk/apps/qml/QtQml/qtqml-syntax-imports/>`__ documentation
+Statements </sdk/apps/qml/QtQml/qtqml-syntax-imports/>`_  documentation
 for in-depth information about QML imports.
 
        \        
@@ -81,7 +85,7 @@ made available by the Rectangle type, as described in the Rectangle
 documentation.)
 
 The above object can be loaded by the engine if it is part of a `QML
-document </sdk/apps/qml/QtQml/qtqml-documents-topic/>`__. That is, if
+document </sdk/apps/qml/QtQml/qtqml-documents-topic/>`_ . That is, if
 the source code is complemented with *import* statement that imports the
 ``QtQuick`` module (to make the Rectangle type available), as below:
 
@@ -112,7 +116,7 @@ Obviously, the Rectangle object declared in this example is very simple
 indeed, as it defines nothing more than a few property values. To create
 more useful objects, an object declaration may define many other types
 of attributes: these are discussed in the `QML Object
-Attributes </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes/>`__
+Attributes </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes/>`_ 
 documentation. Additionally, an object declaration may define child
 objects, as discussed below.
 
@@ -178,7 +182,7 @@ assigning it to a property of the Rectangle, unlike the earlier example
 which assigned a Gradient object to the rectangle's ``gradient``
 property. This is because the children property of Item has been set as
 the type's `default
-property </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes#default-properties>`__
+property </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes/#default-properties>`_ 
 to enable this more convenient syntax.)
 
 See the visual parent documentation for more information on the concept

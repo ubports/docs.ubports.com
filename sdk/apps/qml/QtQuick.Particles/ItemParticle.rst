@@ -1,34 +1,38 @@
+.. _sdk_qtquick_particles_itemparticle:
+QtQuick.Particles ItemParticle
+==============================
+
 For specifying a delegate to paint particles
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtQuick.Particles 2.0         |
 +--------------------------------------+--------------------------------------+
 | Inherits:                            | `ParticlePainter </sdk/apps/qml/QtQu |
-|                                      | ick/Particles.ParticlePainter/>`__   |
+|                                      | ick/Particles.ParticlePainter/>`_    |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`delegate </sdk/apps/qml/QtQuick/Particles.ItemParticle#delegate-prop>`__****
+-  `delegate </sdk/apps/qml/QtQuick/Particles.ItemParticle/_delegate-prop>`_ 
    : Component
--  ****`fade </sdk/apps/qml/QtQuick/Particles.ItemParticle#fade-prop>`__****
+-  `fade </sdk/apps/qml/QtQuick/Particles.ItemParticle/_fade-prop>`_ 
    : bool
 
 Methods
 -------
 
 -  void
-   ****`freeze </sdk/apps/qml/QtQuick/Particles.ItemParticle#freeze-method>`__****\ (Item
+   **`freeze </sdk/apps/qml/QtQuick/Particles.ItemParticle/#freeze-method>`_ **\ (Item
    *item*)
 -  void
-   ****`give </sdk/apps/qml/QtQuick/Particles.ItemParticle#give-method>`__****\ (Item
+   **`give </sdk/apps/qml/QtQuick/Particles.ItemParticle/#give-method>`_ **\ (Item
    *item*)
 -  void
-   ****`take </sdk/apps/qml/QtQuick/Particles.ItemParticle#take-method>`__****\ (Item
+   **`take </sdk/apps/qml/QtQuick/Particles.ItemParticle/#take-method>`_ **\ (Item
    *item*, bool *prioritize*)
 -  void
-   ****`unfreeze </sdk/apps/qml/QtQuick/Particles.ItemParticle#unfreeze-method>`__****\ (Item
+   **`unfreeze </sdk/apps/qml/QtQuick/Particles.ItemParticle/#unfreeze-method>`_ **\ (Item
    *item*)
 
 Detailed Description
@@ -36,6 +40,8 @@ Detailed Description
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_particles_itemparticle_delegate-prop:
 
 +--------------------------------------------------------------------------+
 |        \ delegate : Component                                            |
@@ -45,6 +51,8 @@ An instance of the delegate will be created for every logical particle,
 and moved along with it.
 
 | 
+
+.. _sdk_qtquick_particles_itemparticle_fade-prop:
 
 +--------------------------------------------------------------------------+
 |        \ fade : bool                                                     |
@@ -61,8 +69,10 @@ Default is true.
 Method Documentation
 --------------------
 
+.. _sdk_qtquick_particles_itemparticle_-method:
+
 +--------------------------------------------------------------------------+
-|        \ void freeze(`Item </sdk/apps/qml/QtQuick/Item/>`__ *item*)      |
+| :ref:` <>`\ void freeze(`Item <sdk_qtquick_item>` *item*)                 |
 +--------------------------------------------------------------------------+
 
 Suspends the flow of time for the logical particle which item
@@ -70,24 +80,28 @@ represents, allowing you to control its movement.
 
 | 
 
+.. _sdk_qtquick_particles_itemparticle_-method:
+
 +--------------------------------------------------------------------------+
-|        \ void give(`Item </sdk/apps/qml/QtQuick/Item/>`__ *item*)        |
+| :ref:` <>`\ void give(`Item <sdk_qtquick_item>` *item*)                   |
 +--------------------------------------------------------------------------+
 
 Orders the
-`ItemParticle </sdk/apps/qml/QtQuick/Particles.ItemParticle/>`__ to give
+`ItemParticle </sdk/apps/qml/QtQuick/Particles.ItemParticle/>`_  to give
 you control of the item. It will cease controlling it and the item will
 lose its association to the logical particle.
 
 | 
 
+.. _sdk_qtquick_particles_itemparticle_-method:
+
 +--------------------------------------------------------------------------+
-|        \ void take(`Item </sdk/apps/qml/QtQuick/Item/>`__ *item*, bool   |
+| :ref:` <>`\ void take(`Item <sdk_qtquick_item>` *item*, bool              |
 | *prioritize*)                                                            |
 +--------------------------------------------------------------------------+
 
 Asks the
-`ItemParticle </sdk/apps/qml/QtQuick/Particles.ItemParticle/>`__ to take
+`ItemParticle </sdk/apps/qml/QtQuick/Particles.ItemParticle/>`_  to take
 over control of item. It will be emitted when there is a logical
 particle available.
 
@@ -97,8 +111,10 @@ queue.
 
 | 
 
+.. _sdk_qtquick_particles_itemparticle_-method:
+
 +--------------------------------------------------------------------------+
-|        \ void unfreeze(`Item </sdk/apps/qml/QtQuick/Item/>`__ *item*)    |
+| :ref:` <>`\ void unfreeze(`Item <sdk_qtquick_item>` *item*)               |
 +--------------------------------------------------------------------------+
 
 Restarts the flow of time for the logical particle which item

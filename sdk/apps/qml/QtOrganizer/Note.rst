@@ -1,3 +1,7 @@
+.. _sdk_qtorganizer_note:
+QtOrganizer Note
+================
+
 The Note element provides a note which is not associated with any
 particular point in time.
 
@@ -8,19 +12,16 @@ particular point in time.
 Signals
 -------
 
--  ****`onItemChanged </sdk/apps/qml/QtOrganizer/Note#onItemChanged-signal>`__****\ ()
+-  **:ref:`onItemChanged <sdk_qtorganizer_note#onItemChanged-signal>`**\ ()
 
 Detailed Description
 --------------------
 
-**See also**
-`OrganizerItem </sdk/apps/qml/QtOrganizer/OrganizerItem/>`__,
-`Event </sdk/apps/qml/QtOrganizer/Event/>`__,
-`EventOccurrence </sdk/apps/qml/QtOrganizer/EventOccurrence/>`__,
-`Journal </sdk/apps/qml/QtOrganizer/Journal/>`__,
-`Todo </sdk/apps/qml/QtOrganizer/Todo/>`__,
-`TodoOccurrence </sdk/apps/qml/QtOrganizer/TodoOccurrence/>`__, and
-QOrganizerNote.
+**See also** :ref:`OrganizerItem <sdk_qtorganizer_organizeritem>`,
+:ref:`Event <sdk_qtorganizer_event>`,
+:ref:`EventOccurrence <sdk_qtorganizer_eventoccurrence>`,
+:ref:`Journal <sdk_qtorganizer_journal>`, `Todo <sdk_qtorganizer_todo>`,
+:ref:`TodoOccurrence <sdk_qtorganizer_todooccurrence>`, and QOrganizerNote.
 
 Signal Documentation
 --------------------
@@ -30,6 +31,6 @@ Signal Documentation
 +--------------------------------------------------------------------------+
 
 **See also**
-`OrganizerItem::onItemChanged </sdk/apps/qml/QtOrganizer/OrganizerItem#onItemChanged-signal>`__.
+:ref:`OrganizerItem::onItemChanged <sdk_qtorganizer_organizeritem#onItemChanged-signal>`.
 
 | 

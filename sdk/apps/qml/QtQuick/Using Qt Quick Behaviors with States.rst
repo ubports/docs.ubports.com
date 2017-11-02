@@ -1,3 +1,7 @@
+.. _sdk_qtquick_using_qt_quick_behaviors_with_states:
+QtQuick Using Qt Quick Behaviors with States
+============================================
+
 
 
 .. rubric:: Using Behaviors with States
@@ -46,8 +50,7 @@ settle into a green color over time, never returning to full red. This
 is not what we wanted! The problem occurs because we have used a
 Behavior to animate the change in color, and our state change is trigged
 by the mouse entering or exiting the
-`MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__, which is easily
-interrupted.
+:ref:`MouseArea <sdk_qtquick_mousearea>`, which is easily interrupted.
 
 To state the problem more formally, using States and Behaviors together
 can cause unexpected behavior when:

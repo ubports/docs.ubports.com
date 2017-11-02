@@ -1,3 +1,7 @@
+.. _sdk_qtorganizer_classification:
+QtOrganizer Classification
+==========================
+
 The Classification element contains classification-information of an
 item.
 
@@ -8,13 +12,13 @@ item.
 Properties
 ----------
 
--  ****`classification </sdk/apps/qml/QtOrganizer/Classification#classification-prop>`__****
+-  :ref:`classification <sdk_qtorganizer_classification_classification-prop>`
    : enumeration
 
 Signals
 -------
 
--  ****`onDetailChanged </sdk/apps/qml/QtOrganizer/Classification#onDetailChanged-signal>`__****\ ()
+-  :ref:`onDetailChanged <sdk_qtorganizer_classification_onDetailChanged-signal>`\ ()
 
 Detailed Description
 --------------------
@@ -26,6 +30,8 @@ This can be used as a part of security model for the organizer.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtorganizer_classification_classification-prop:
 
 +--------------------------------------------------------------------------+
 |        \ classification : enumeration                                    |
@@ -43,11 +49,13 @@ information. The value can be one of:
 Signal Documentation
 --------------------
 
+.. _sdk_qtorganizer_classification_onDetailChanged()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ onDetailChanged()                                               |
 +--------------------------------------------------------------------------+
 
 **See also**
-`Detail::onDetailChanged </sdk/apps/qml/QtOrganizer/Detail#onDetailChanged-signal>`__.
+:ref:`Detail::onDetailChanged <sdk_qtorganizer_detail#onDetailChanged-signal>`.
 
 | 

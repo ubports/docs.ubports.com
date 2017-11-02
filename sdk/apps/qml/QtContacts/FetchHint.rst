@@ -1,3 +1,7 @@
+.. _sdk_qtcontacts_fetchhint:
+QtContacts FetchHint
+====================
+
 The FetchHint element provides hints to the manager about which contact
 information needs to be retrieved in an asynchronous fetch request or a
 synchronous function call.
@@ -9,15 +13,15 @@ synchronous function call.
 Properties
 ----------
 
--  ****`detailTypesHint </sdk/apps/qml/QtContacts/FetchHint#detailTypesHint-prop>`__****
+-  :ref:`detailTypesHint <sdk_qtcontacts_fetchhint_detailTypesHint-prop>`
    : list<int>
--  ****`imageHeight </sdk/apps/qml/QtContacts/FetchHint#imageHeight-prop>`__****
-   : int
--  ****`imageWidth </sdk/apps/qml/QtContacts/FetchHint#imageWidth-prop>`__****
-   : int
--  ****`optimizationHints </sdk/apps/qml/QtContacts/FetchHint#optimizationHints-prop>`__****
+-  :ref:`imageHeight <sdk_qtcontacts_fetchhint_imageHeight-prop>` :
+   int
+-  :ref:`imageWidth <sdk_qtcontacts_fetchhint_imageWidth-prop>` :
+   int
+-  :ref:`optimizationHints <sdk_qtcontacts_fetchhint_optimizationHints-prop>`
    : FetchHint::OptimizationHints
--  ****`relationshipTypesHint </sdk/apps/qml/QtContacts/FetchHint#relationshipTypesHint-prop>`__****
+-  :ref:`relationshipTypesHint <sdk_qtcontacts_fetchhint_relationshipTypesHint-prop>`
    : list<string>
 
 Detailed Description
@@ -30,6 +34,8 @@ This element is part of the **QtContacts** module.
 Property Documentation
 ----------------------
 
+.. _sdk_qtcontacts_fetchhint_detailTypesHint-prop:
+
 +--------------------------------------------------------------------------+
 |        \ detailTypesHint : list<int>                                     |
 +--------------------------------------------------------------------------+
@@ -38,6 +44,8 @@ This property holds a list of contact detail types the manager should
 (at a minimum) retrieve when fetching contacts.
 
 | 
+
+.. _sdk_qtcontacts_fetchhint_imageHeight-prop:
 
 +--------------------------------------------------------------------------+
 |        \ imageHeight : int                                               |
@@ -49,6 +57,8 @@ manager.
 
 | 
 
+.. _sdk_qtcontacts_fetchhint_imageWidth-prop:
+
 +--------------------------------------------------------------------------+
 |        \ imageWidth : int                                                |
 +--------------------------------------------------------------------------+
@@ -58,6 +68,8 @@ the manager for a given request. This hint may be ignored by the
 manager.
 
 | 
+
+.. _sdk_qtcontacts_fetchhint_optimizationHints-prop:
 
 +--------------------------------------------------------------------------+
 |        \ optimizationHints : FetchHint::OptimizationHints                |
@@ -69,13 +81,14 @@ the full set of information accessible in a contact, including
 relationships, action preferences, and binary blobs. The value of the
 flags can be:
 
--  `FetchHint </sdk/apps/qml/QtContacts/FetchHint/>`__.AllRequired -
-   (default).
--  `FetchHint </sdk/apps/qml/QtContacts/FetchHint/>`__.NoRelationships
--  `FetchHint </sdk/apps/qml/QtContacts/FetchHint/>`__.NoActionPreferences
--  `FetchHint </sdk/apps/qml/QtContacts/FetchHint/>`__.NoBinaryBlobs
+-  :ref:`FetchHint <sdk_qtcontacts_fetchhint>`.AllRequired - (default).
+-  :ref:`FetchHint <sdk_qtcontacts_fetchhint>`.NoRelationships
+-  :ref:`FetchHint <sdk_qtcontacts_fetchhint>`.NoActionPreferences
+-  :ref:`FetchHint <sdk_qtcontacts_fetchhint>`.NoBinaryBlobs
 
 | 
+
+.. _sdk_qtcontacts_fetchhint_relationshipTypesHint-prop:
 
 +--------------------------------------------------------------------------+
 |        \ relationshipTypesHint : list<string>                            |

@@ -1,43 +1,46 @@
+.. _sdk_ubuntu_components_scrollview:
+Ubuntu.Components ScrollView
+============================
+
 ScrollView is a scrollable view that features scrollbars and scrolling
 via keyboard keys.
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import Ubuntu.Components 1.3         |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `StyledItem </sdk/apps/qml/Ubuntu.Co |
-|                                      | mponents/StyledItem/>`__             |
+| Inherits:                            | :ref:`StyledItem <sdk_ubuntu_components_s |
+|                                      | tyleditem>`_                         |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`contentItem </sdk/apps/qml/Ubuntu.Components/ScrollView#contentItem-prop>`__****
+-  :ref:`contentItem <sdk_ubuntu_components_scrollview_contentItem-prop>`
    : Item
--  ****`flickableItem </sdk/apps/qml/Ubuntu.Components/ScrollView#flickableItem-prop>`__****
+-  :ref:`flickableItem <sdk_ubuntu_components_scrollview_flickableItem-prop>`
    : Item
--  ****`horizontalScrollbar </sdk/apps/qml/Ubuntu.Components/ScrollView#horizontalScrollbar-prop>`__****
+-  :ref:`horizontalScrollbar <sdk_ubuntu_components_scrollview_horizontalScrollbar-prop>`
    : Scrollbar
--  ****`verticalScrollbar </sdk/apps/qml/Ubuntu.Components/ScrollView#verticalScrollbar-prop>`__****
+-  :ref:`verticalScrollbar <sdk_ubuntu_components_scrollview_verticalScrollbar-prop>`
    : Scrollbar
--  ****`viewport </sdk/apps/qml/Ubuntu.Components/ScrollView#viewport-prop>`__****
+-  :ref:`viewport <sdk_ubuntu_components_scrollview_viewport-prop>`
    : Item
 
 Detailed Description
 --------------------
 
-`ScrollView </sdk/apps/qml/Ubuntu.Components/ScrollView/>`__ is the
-recommended component to use in the implementation of scrollable
-content. It features scrollbars and handles keyboard input. Old
-applications that implemented scrollable views directly using the
-`Scrollbar </sdk/apps/qml/Ubuntu.Components/Scrollbar/>`__ component
-should migrate to
-`ScrollView </sdk/apps/qml/Ubuntu.Components/ScrollView/>`__, to ensure
-the UX is ready for convergent devices and is consistent with the rest
-of the platform.
+:ref:`ScrollView <sdk_ubuntu_components_scrollview>` is the recommended
+component to use in the implementation of scrollable content. It
+features scrollbars and handles keyboard input. Old applications that
+implemented scrollable views directly using the
+:ref:`Scrollbar <sdk_ubuntu_components_scrollbar>` component should migrate
+to :ref:`ScrollView <sdk_ubuntu_components_scrollview>`, to ensure the UX
+is ready for convergent devices and is consistent with the rest of the
+platform.
 
-`ScrollView </sdk/apps/qml/Ubuntu.Components/ScrollView/>`__ wraps
-`Scrollbar </sdk/apps/qml/Ubuntu.Components/Scrollbar/>`__\ (s) in a
-view, and provides additional features such as:
+:ref:`ScrollView <sdk_ubuntu_components_scrollview>` wraps
+:ref:`Scrollbar <sdk_ubuntu_components_scrollbar>`\ (s) in a view, and
+provides additional features such as:
 
 -  - Keyboard navigation and focus handling, for a complete convergent
    experience.
@@ -46,8 +49,8 @@ view, and provides additional features such as:
 
 Adding scrollbars and keyboard input handling to a QML item is as simple
 as wrapping that item in a
-`ScrollView </sdk/apps/qml/Ubuntu.Components/ScrollView/>`__, as shown
-in the following example:
+:ref:`ScrollView <sdk_ubuntu_components_scrollview>`, as shown in the
+following example:
 
 .. code:: qml
 
@@ -67,100 +70,104 @@ in the following example:
     }
 
 NOTE: the items that are wrapped in the
-`ScrollView </sdk/apps/qml/Ubuntu.Components/ScrollView/>`__ are
-reparanted to
-`viewport </sdk/apps/qml/Ubuntu.Components/ScrollView#viewport-prop>`__.
+:ref:`ScrollView <sdk_ubuntu_components_scrollview>` are reparanted to
+:ref:`viewport <sdk_ubuntu_components_scrollview#viewport-prop>`.
 
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_scrollview_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ [default] contentItem : `Item </sdk/apps/qml/QtQuick/Item/>`__  |
+| :ref:` <>`\ [default] contentItem : `Item <sdk_qtquick_item>`          |
 +--------------------------------------------------------------------------+
 
 The contentItem of the
-`ScrollView </sdk/apps/qml/Ubuntu.Components/ScrollView/>`__. This is
-set by the user. Note that the definition of contentItem is somewhat
-different to that of a Flickable, where the contentItem is implicitly
-created.
+:ref:`ScrollView <sdk_ubuntu_components_scrollview>`. This is set by the
+user. Note that the definition of contentItem is somewhat different to
+that of a Flickable, where the contentItem is implicitly created.
 
 | 
 
+.. _sdk_ubuntu_components_scrollview_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ [read-only] flickableItem :                                     |
-| `Item </sdk/apps/qml/QtQuick/Item/>`__                                   |
+| :ref:` <>`\ [read-only] flickableItem : `Item <sdk_qtquick_item>`      |
 +--------------------------------------------------------------------------+
 
 The flickableItem of the
-`ScrollView </sdk/apps/qml/Ubuntu.Components/ScrollView/>`__. If the
-`contentItem </sdk/apps/qml/Ubuntu.Components/ScrollView#contentItem-prop>`__
-provided to the
-`ScrollView </sdk/apps/qml/Ubuntu.Components/ScrollView/>`__ is a
+:ref:`ScrollView <sdk_ubuntu_components_scrollview>`. If the
+:ref:`contentItem <sdk_ubuntu_components_scrollview#contentItem-prop>`
+provided to the :ref:`ScrollView <sdk_ubuntu_components_scrollview>` is a
 Flickable, that will be the flickableItem. Otherwise
-`ScrollView </sdk/apps/qml/Ubuntu.Components/ScrollView/>`__ will create
-a Flickable which will hold the items provided as children.
+:ref:`ScrollView <sdk_ubuntu_components_scrollview>` will create a
+Flickable which will hold the items provided as children.
 
 | 
+
+.. _sdk_ubuntu_components_scrollview_horizontalScrollbar-prop:
 
 +--------------------------------------------------------------------------+
 |        \ horizontalScrollbar :                                           |
-| `Scrollbar </sdk/apps/qml/Ubuntu.Components/Scrollbar/>`__               |
+| :ref:`Scrollbar <sdk_ubuntu_components_scrollbar>`                          |
 +--------------------------------------------------------------------------+
 
 This property holds the horizontal scrollbar used in the
-`ScrollView </sdk/apps/qml/Ubuntu.Components/ScrollView/>`__. It
-provides access to the scrollbar thus making it possible to change its
-properties or completely replace it with a custom
-`Scrollbar </sdk/apps/qml/Ubuntu.Components/Scrollbar/>`__ object.
+:ref:`ScrollView <sdk_ubuntu_components_scrollview>`. It provides access to
+the scrollbar thus making it possible to change its properties or
+completely replace it with a custom
+:ref:`Scrollbar <sdk_ubuntu_components_scrollbar>` object.
 
 This property defaults to an instance of
-`Scrollbar </sdk/apps/qml/Ubuntu.Components/Scrollbar/>`__.
+:ref:`Scrollbar <sdk_ubuntu_components_scrollbar>`.
 
-**NOTE**: some
-`Scrollbar </sdk/apps/qml/Ubuntu.Components/Scrollbar/>`__ properties
-are already handled by
-`ScrollView </sdk/apps/qml/Ubuntu.Components/ScrollView/>`__, and their
-value should hence not be overridden. These properties are:
+**NOTE**: some :ref:`Scrollbar <sdk_ubuntu_components_scrollbar>`
+properties are already handled by
+:ref:`ScrollView <sdk_ubuntu_components_scrollview>`, and their value
+should hence not be overridden. These properties are:
 
 -  anchors margins, such as anchors.topMargin etc.
 -  the parent Item
--  `Scrollbar::flickableItem </sdk/apps/qml/Ubuntu.Components/Scrollbar#flickableItem-prop>`__
+-  :ref:`Scrollbar::flickableItem <sdk_ubuntu_components_scrollbar#flickableItem-prop>`
 
 | 
+
+.. _sdk_ubuntu_components_scrollview_verticalScrollbar-prop:
 
 +--------------------------------------------------------------------------+
 |        \ verticalScrollbar :                                             |
-| `Scrollbar </sdk/apps/qml/Ubuntu.Components/Scrollbar/>`__               |
+| :ref:`Scrollbar <sdk_ubuntu_components_scrollbar>`                          |
 +--------------------------------------------------------------------------+
 
 This property holds the vertical scrollbar used in the
-`ScrollView </sdk/apps/qml/Ubuntu.Components/ScrollView/>`__. It
-provides access to the scrollbar thus making it possible to change its
-properties or completely replace it with a custom
-`Scrollbar </sdk/apps/qml/Ubuntu.Components/Scrollbar/>`__ object.
+:ref:`ScrollView <sdk_ubuntu_components_scrollview>`. It provides access to
+the scrollbar thus making it possible to change its properties or
+completely replace it with a custom
+:ref:`Scrollbar <sdk_ubuntu_components_scrollbar>` object.
 
 This property defaults to an instance of
-`Scrollbar </sdk/apps/qml/Ubuntu.Components/Scrollbar/>`__.
+:ref:`Scrollbar <sdk_ubuntu_components_scrollbar>`.
 
-**NOTE**: some
-`Scrollbar </sdk/apps/qml/Ubuntu.Components/Scrollbar/>`__ properties
-are already handled by
-`ScrollView </sdk/apps/qml/Ubuntu.Components/ScrollView/>`__, and their
-value should hence not be overridden. These properties are:
+**NOTE**: some :ref:`Scrollbar <sdk_ubuntu_components_scrollbar>`
+properties are already handled by
+:ref:`ScrollView <sdk_ubuntu_components_scrollview>`, and their value
+should hence not be overridden. These properties are:
 
 -  anchors margins, such as anchors.topMargin etc.
 -  the parent Item
--  `Scrollbar::flickableItem </sdk/apps/qml/Ubuntu.Components/Scrollbar#flickableItem-prop>`__
+-  :ref:`Scrollbar::flickableItem <sdk_ubuntu_components_scrollbar#flickableItem-prop>`
 
 | 
 
+.. _sdk_ubuntu_components_scrollview_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ [read-only] viewport : `Item </sdk/apps/qml/QtQuick/Item/>`__   |
+| :ref:` <>`\ [read-only] viewport : `Item <sdk_qtquick_item>`           |
 +--------------------------------------------------------------------------+
 
 This property holds the viewport Item. The children of the
-`ScrollView </sdk/apps/qml/Ubuntu.Components/ScrollView/>`__ element are
-reparented to this item to make sure the scrollbars are correctly
-positioned and the items are clipped at their boundaries.
+:ref:`ScrollView <sdk_ubuntu_components_scrollview>` element are reparented
+to this item to make sure the scrollbars are correctly positioned and
+the items are clipped at their boundaries.
 
 | 

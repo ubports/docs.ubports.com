@@ -1,3 +1,7 @@
+.. _sdk_qtorganizer_intersectionfilter:
+QtOrganizer IntersectionFilter
+==============================
+
 The IntersectionFilter element provides a filter which intersects the
 results of other filters.
 
@@ -8,7 +12,7 @@ results of other filters.
 Properties
 ----------
 
--  ****`filters </sdk/apps/qml/QtOrganizer/IntersectionFilter#filters-prop>`__****
+-  :ref:`filters <sdk_qtorganizer_intersectionfilter_filters-prop>`
    : list<filter>
 
 Detailed Description
@@ -18,6 +22,8 @@ Detailed Description
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtorganizer_intersectionfilter_filters-prop:
 
 +--------------------------------------------------------------------------+
 |        \ filters : list<filter>                                          |

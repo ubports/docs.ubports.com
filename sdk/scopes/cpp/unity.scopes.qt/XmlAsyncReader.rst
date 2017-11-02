@@ -1,5 +1,9 @@
+.. _sdk_unity_scopes_qt_xmlasyncreader:
+unity.scopes.qt XmlAsyncReader
+==============================
+
 Class that downloads http XML files asynchronously.
-`More... </sdk/scopes/cpp/unity.scopes.qt/XmlAsyncReader#details>`__
+:ref:`More... <sdk_unity_scopes_qt_xmlasyncreader#details>`
 
 ``#include <unity/scopes/qt/XmlAsyncReader.h>``
 
@@ -10,7 +14,7 @@ template<typename BASE , typename TYPE >
 
 ResultsFuture< BASE > 
 
-`async\_get </sdk/scopes/cpp/unity.scopes.qt/XmlAsyncReader#a17d5b0a22026ab8d5979b39cedaa2952>`__
+:ref:`async\_get <sdk_unity_scopes_qt_xmlasyncreader#a17d5b0a22026ab8d5979b39cedaa2952>`
 (std::string const &uri, std::string const &object\_name, ParserFunc<
 BASE > const &parse=get\_results< BASE, TYPE >) const
 
@@ -29,7 +33,7 @@ template<typename T >
 
 ResultsFuture< T > 
 
-`async\_get </sdk/scopes/cpp/unity.scopes.qt/XmlAsyncReader#a3fbd67b5f96245f1ea4bbe8ff2d0e849>`__
+:ref:`async\_get <sdk_unity_scopes_qt_xmlasyncreader#a3fbd67b5f96245f1ea4bbe8ff2d0e849>`
 (std::string const &uri, std::string const &object\_name, ParserFunc< T
 > const &parse=get\_results< T, T >) const
 
@@ -50,7 +54,7 @@ template<typename BASE , typename TYPE >
 
 ResultsFuture< BASE > 
 
-`async\_get </sdk/scopes/cpp/unity.scopes.qt/XmlAsyncReader#aa7f613d801a32f69d3a3d09fa775749c>`__
+:ref:`async\_get <sdk_unity_scopes_qt_xmlasyncreader#aa7f613d801a32f69d3a3d09fa775749c>`
 (std::string const &host, QXmlStreamReaderParams const &params,
 std::string const &object\_name, ParserFunc< BASE > const
 &parse=get\_results< BASE, TYPE >) const
@@ -70,7 +74,7 @@ template<typename T >
 
 ResultsFuture< T > 
 
-`async\_get </sdk/scopes/cpp/unity.scopes.qt/XmlAsyncReader#a98a01776b95509671adec9ff6321c8f8>`__
+:ref:`async\_get <sdk_unity_scopes_qt_xmlasyncreader#a98a01776b95509671adec9ff6321c8f8>`
 (std::string const &host, QXmlStreamReaderParams const &params,
 std::string const &object\_name, ParserFunc< T > const
 &parse=get\_results< T, T >) const
@@ -88,7 +92,7 @@ std::string const &object\_name, ParserFunc< T > const
 
 QXmlStreamReaderFuture 
 
-`async\_get\_parser </sdk/scopes/cpp/unity.scopes.qt/XmlAsyncReader#a1d1abb81853d575a1fdb9ee63350711e>`__
+:ref:`async\_get\_parser <sdk_unity_scopes_qt_xmlasyncreader#a1d1abb81853d575a1fdb9ee63350711e>`
 (std::string const &uri) const
 
  
@@ -100,7 +104,7 @@ QXmlStreamReaderFuture 
 
 QXmlStreamReaderFuture 
 
-`async\_get\_parser </sdk/scopes/cpp/unity.scopes.qt/XmlAsyncReader#a8d8aa17b33a021b9faed3a3ddd1c67d0>`__
+:ref:`async\_get\_parser <sdk_unity_scopes_qt_xmlasyncreader#a8d8aa17b33a021b9faed3a3ddd1c67d0>`
 (std::string const &host, QXmlStreamReaderParams const &params) const
 
  
@@ -115,7 +119,7 @@ QXmlStreamReaderFuture 
 
 static QXmlStreamReaderSptr 
 
-`create\_parser\_with\_data </sdk/scopes/cpp/unity.scopes.qt/XmlAsyncReader#acf558138e801362a2a012771ad590e27>`__
+:ref:`create\_parser\_with\_data <sdk_unity_scopes_qt_xmlasyncreader#acf558138e801362a2a012771ad590e27>`
 (std::string const &data, std::string &error)
 
  

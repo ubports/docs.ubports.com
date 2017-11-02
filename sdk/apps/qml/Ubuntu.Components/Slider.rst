@@ -1,39 +1,41 @@
+.. _sdk_ubuntu_components_slider:
+Ubuntu.Components Slider
+========================
+
 Slider is a component to select a value from a continuous range of
 values.
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import Ubuntu.Components 1.3         |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `StyledItem </sdk/apps/qml/Ubuntu.Co |
-|                                      | mponents/StyledItem/>`__             |
+| Inherits:                            | :ref:`StyledItem <sdk_ubuntu_components_s |
+|                                      | tyleditem>`_                         |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`live </sdk/apps/qml/Ubuntu.Components/Slider#live-prop>`__**** :
+-  :ref:`live <sdk_ubuntu_components_slider_live-prop>` : bool
+-  :ref:`maximumValue <sdk_ubuntu_components_slider_maximumValue-prop>`
+   : real
+-  :ref:`minimumValue <sdk_ubuntu_components_slider_minimumValue-prop>`
+   : real
+-  :ref:`pressed <sdk_ubuntu_components_slider_pressed-prop>` :
    bool
--  ****`maximumValue </sdk/apps/qml/Ubuntu.Components/Slider#maximumValue-prop>`__****
-   : real
--  ****`minimumValue </sdk/apps/qml/Ubuntu.Components/Slider#minimumValue-prop>`__****
-   : real
--  ****`pressed </sdk/apps/qml/Ubuntu.Components/Slider#pressed-prop>`__****
-   : bool
--  ****`stepSize </sdk/apps/qml/Ubuntu.Components/Slider#stepSize-prop>`__****
-   : real
--  ****`value </sdk/apps/qml/Ubuntu.Components/Slider#value-prop>`__****
-   : real
+-  :ref:`stepSize <sdk_ubuntu_components_slider_stepSize-prop>` :
+   real
+-  :ref:`value <sdk_ubuntu_components_slider_value-prop>` : real
 
 Signals
 -------
 
--  ****`touched </sdk/apps/qml/Ubuntu.Components/Slider#touched-signal>`__****\ (bool
+-  :ref:`touched <sdk_ubuntu_components_slider_touched-signal>`\ (bool
    *onThumb*)
 
 Methods
 -------
 
--  ****`formatValue </sdk/apps/qml/Ubuntu.Components/Slider#formatValue-method>`__****\ (*v*)
+-  :ref:`formatValue <sdk_ubuntu_components_slider_formatValue-method>`\ (*v*)
 
 Detailed Description
 --------------------
@@ -43,7 +45,7 @@ styles should take this into account when defining the visuals, and
 alter these values to align the graphics' sizes.
 
 `See also the Design Guidelines on
-Sliders <https://design.ubuntu.com/apps/building-blocks/selection#slider>`__.
+Sliders <https://design.ubuntu.com/apps/building-blocks/selection#slider>`_ .
 
 Example:
 
@@ -62,6 +64,8 @@ Example:
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_slider_live-prop:
+
 +--------------------------------------------------------------------------+
 |        \ live : bool                                                     |
 +--------------------------------------------------------------------------+
@@ -71,16 +75,20 @@ when the thumb is released.
 
 | 
 
+.. _sdk_ubuntu_components_slider_maximumValue-prop:
+
 +--------------------------------------------------------------------------+
 |        \ maximumValue : real                                             |
 +--------------------------------------------------------------------------+
 
 The maximum value from the continuous range of values. If this value is
 lesser than
-`minimumValue </sdk/apps/qml/Ubuntu.Components/Slider#minimumValue-prop>`__,
-the component will be in an inconsistent state.
+:ref:`minimumValue <sdk_ubuntu_components_slider#minimumValue-prop>`, the
+component will be in an inconsistent state.
 
 | 
+
+.. _sdk_ubuntu_components_slider_minimumValue-prop:
 
 +--------------------------------------------------------------------------+
 |        \ minimumValue : real                                             |
@@ -88,10 +96,12 @@ the component will be in an inconsistent state.
 
 The minimum value from the continuous range of values. If this value is
 greater than
-`maximumValue </sdk/apps/qml/Ubuntu.Components/Slider#maximumValue-prop>`__,
-the component will be in an inconsistent state.
+:ref:`maximumValue <sdk_ubuntu_components_slider#maximumValue-prop>`, the
+component will be in an inconsistent state.
 
 | 
+
+.. _sdk_ubuntu_components_slider_pressed-prop:
 
 +--------------------------------------------------------------------------+
 |        \ pressed : bool                                                  |
@@ -101,15 +111,19 @@ Whether the Slider is currently being pressed.
 
 | 
 
+.. _sdk_ubuntu_components_slider_stepSize-prop:
+
 +--------------------------------------------------------------------------+
 |        \ stepSize : real                                                 |
 +--------------------------------------------------------------------------+
 
 The distance between two selectable values in the range defined by
-[`minimumValue </sdk/apps/qml/Ubuntu.Components/Slider#minimumValue-prop>`__,
-`maximumValue </sdk/apps/qml/Ubuntu.Components/Slider#maximumValue-prop>`__].
+[:ref:`minimumValue <sdk_ubuntu_components_slider#minimumValue-prop>`,
+:ref:`maximumValue <sdk_ubuntu_components_slider#maximumValue-prop>`].
 
 | 
+
+.. _sdk_ubuntu_components_slider_value-prop:
 
 +--------------------------------------------------------------------------+
 |        \ value : real                                                    |
@@ -123,6 +137,8 @@ thumb is dragged unless the live property is set to true.
 Signal Documentation
 --------------------
 
+.. _sdk_ubuntu_components_slider_touched(bool *onThumb*)-prop:
+
 +--------------------------------------------------------------------------+
 |        \ touched(bool *onThumb*)                                         |
 +--------------------------------------------------------------------------+
@@ -135,6 +151,8 @@ element.
 
 Method Documentation
 --------------------
+
+.. _sdk_ubuntu_components_slider_formatValue-method:
 
 +--------------------------------------------------------------------------+
 |        \ formatValue( *v*)                                               |

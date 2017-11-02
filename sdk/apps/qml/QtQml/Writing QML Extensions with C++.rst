@@ -1,6 +1,10 @@
+.. _sdk_qtqml_writing_qml_extensions_with_c++:
+QtQml Writing QML Extensions with C++
+=====================================
 
 
-The `Qt QML </sdk/apps/qml/QtQml/qtqml-index/>`__ module provides a set
+
+The `Qt QML </sdk/apps/qml/QtQml/qtqml-index/>`_  module provides a set
 of APIs for extending QML through C++ extensions. You can write
 extensions to add your own QML types, extend existing Qt types, or call
 C/C++ functions that are not accessible from ordinary QML code.
@@ -11,12 +15,12 @@ shows how extensions can be deployed through plugins.
 
 Many of the topics covered in this tutorial are documented in further
 detail in `Integrating QML and
-C++ </sdk/apps/qml/QtQml/qtqml-cppintegration-topic/>`__ and its
+C++ </sdk/apps/qml/QtQml/qtqml-cppintegration-topic/>`_  and its
 documentation sub-topics. In particular, you may be interested in the
 sub-topics `Exposing Attributes of C++ Classes to
-QML </sdk/apps/qml/QtQml/qtqml-cppintegration-exposecppattributes/>`__
+QML </sdk/apps/qml/QtQml/qtqml-cppintegration-exposecppattributes/>`_ 
 and `Defining QML Types from
-C++ </sdk/apps/qml/QtQml/qtqml-cppintegration-definetypes/>`__.
+C++ </sdk/apps/qml/QtQml/qtqml-cppintegration-definetypes/>`_ .
 
 .. rubric:: Running the Tutorial Examples
    :name: running-the-tutorial-examples
@@ -149,7 +153,7 @@ chart's details using a standard QML Text item:
 Notice that although the color is specified as a string in QML, it is
 automatically converted to a QColor object for the PieChart ``color``
 property. Automatic conversions are provided for various other `basic
-types </sdk/apps/qml/QtQml/qtqml-typesystem-basictypes/>`__; for
+types </sdk/apps/qml/QtQml/qtqml-typesystem-basictypes/>`_ ; for
 example, a string like "640x480" can be automatically converted to a
 QSize value.
 
@@ -410,7 +414,7 @@ each chart:
 Aside from ``int``, we could use various other property types. Many of
 the Qt data types such as QColor, QSize and QRect are automatically
 supported from QML. (See `Data Type Conversion Between QML and
-C++ </sdk/apps/qml/QtQml/qtqml-cppintegration-data/>`__ documentation
+C++ </sdk/apps/qml/QtQml/qtqml-cppintegration-data/>`_  documentation
 for a full list.)
 
 If we want to create a property whose type is not supported by QML by
@@ -673,13 +677,13 @@ as the application that uses our new import module. This way, the QML
 engine will find our module as the default search path for QML imports
 includes the directory of the application executable. Alternatively, we
 could control what directories the `QML import
-path </sdk/apps/qml/QtQml/qtqml-syntax-imports#qml-import-path>`__
+path </sdk/apps/qml/QtQml/qtqml-syntax-imports/#qml-import-path>`_ 
 contains, useful if there are multiple QML applications using the same
 QML imports.
 
 The ``.pro`` file also contains additional magic to ensure that the
 `module definition qmldir
-file </sdk/apps/qml/QtQml/qtqml-modules-qmldir/>`__ is always copied to
+file </sdk/apps/qml/QtQml/qtqml-modules-qmldir/>`_  is always copied to
 the same location as the plugin binary.
 
 The ``qmldir`` file declares the module name and the plugin that is made
@@ -719,13 +723,13 @@ extension:
 -  Define custom property types if the built-in types are not sufficient
 -  Define list property types using QQmlListProperty
 -  Create a plugin library by defining a Qt plugin and writing a
-   `qmldir </sdk/apps/qml/QtQml/qtqml-modules-qmldir/>`__ file
+   `qmldir </sdk/apps/qml/QtQml/qtqml-modules-qmldir/>`_  file
 
 The `Integrating QML and
-C++ </sdk/apps/qml/QtQml/qtqml-cppintegration-topic/>`__ documentation
+C++ </sdk/apps/qml/QtQml/qtqml-cppintegration-topic/>`_  documentation
 shows other useful features that can be added to QML extensions. For
 example, we could use `default
-properties </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes#default-properties>`__
+properties </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes/#default-properties>`_ 
 to allow slices to be added without using the ``slices`` property:
 
 .. code:: cpp
@@ -738,7 +742,7 @@ to allow slices to be added without using the ``slices`` property:
 
 Or randomly add and remove slices from time to time using `property
 value
-sources </sdk/apps/qml/QtQml/qtqml-cppintegration-definetypes#property-value-sources>`__:
+sources </sdk/apps/qml/QtQml/qtqml-cppintegration-definetypes/#property-value-sources>`_ :
 
 .. code:: cpp
 
@@ -793,7 +797,7 @@ Files:
 -  tutorials/extending-qml/chapter6-plugins/import/qmldir
 
 **See also** `Integrating QML and
-C++ </sdk/apps/qml/QtQml/qtqml-cppintegration-topic/>`__.
+C++ </sdk/apps/qml/QtQml/qtqml-cppintegration-topic/>`_ .
 
 .. |image0| image:: /media/sdk/apps/qml/qtqml-tutorials-extending-qml-example/images/extending-tutorial-chapter1.png
 .. |image1| image:: /media/sdk/apps/qml/qtqml-tutorials-extending-qml-example/images/extending-tutorial-chapter2.png

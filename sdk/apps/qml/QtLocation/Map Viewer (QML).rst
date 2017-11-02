@@ -1,3 +1,7 @@
+.. _sdk_qtlocation_map_viewer_(qml):
+QtLocation Map Viewer (QML)
+===========================
+
 
 
 This is a large example covering many basic uses of maps, positioning,
@@ -7,11 +11,10 @@ from the code.
 
 The Map Viewer example can work with any of the available geo services
 plugins. However, some plugins may require additional `plugin
-parameters </sdk/apps/qml/QtLocation/PluginParameter/>`__ in order to
-function correctly. `Plugin
-parameters </sdk/apps/qml/QtLocation/PluginParameter/>`__ can be passed
-on the command line using the ``--plugin`` argument, which takes the
-form:
+parameters <sdk_qtlocation_pluginparameter>:ref:` in order to function
+correctly. :ref:`Plugin parameters <sdk_qtlocation_pluginparameter>` can be
+passed on the command line using the ``--plugin`` argument, which takes
+the form:
 
 .. code:: cpp
 
@@ -21,27 +24,27 @@ Refer to the documentation for each of the geo services plugins for
 details on what plugin parameters they support. The Nokia services
 plugin supplied with Qt requires an *app\_id* and *token* pair. See "`Qt
 Location Nokia
-Plugin </sdk/apps/qml/QtLocation/location-plugin-nokia/>`__" for
+Plugin </sdk/apps/qml/QtLocation/location-plugin-nokia/>`_ " for
 details.
 
 QML types shown in this example:
 
 -  Displaying a map
 
-   -  `Map </sdk/apps/qml/QtLocation/Map/>`__
-   -  `MapGestureArea </sdk/apps/qml/QtLocation/MapGestureArea/>`__
+   -  :ref:`Map <sdk_qtlocation_map>`
+   -  :ref:`MapGestureArea <sdk_qtlocation_mapgesturearea>`
    -  coordinate
 
 -  Finding an address
 
-   -  `GeocodeModel </sdk/apps/qml/QtLocation/GeocodeModel/>`__
-   -  `MapItemView </sdk/apps/qml/QtLocation/MapItemView/>`__
-   -  `MapCircle </sdk/apps/qml/QtLocation/MapCircle/>`__
+   -  :ref:`GeocodeModel <sdk_qtlocation_geocodemodel>`
+   -  :ref:`MapItemView <sdk_qtlocation_mapitemview>`
+   -  :ref:`MapCircle <sdk_qtlocation_mapcircle>`
 
 -  Directions and travel routes
 
-   -  `RouteModel </sdk/apps/qml/QtLocation/RouteModel/>`__
-   -  `MapRoute </sdk/apps/qml/QtLocation/MapRoute/>`__
+   -  :ref:`RouteModel <sdk_qtlocation_routemodel>`
+   -  :ref:`MapRoute <sdk_qtlocation_maproute>`
 
 |image0|
 
@@ -92,8 +95,8 @@ geocoding. In order to perform a geocode operation, we first need to
 adjust our Map object to be able to receive the result.
 
 Receiving results of geocoding is done through a
-`GeocodeModel </sdk/apps/qml/QtLocation/GeocodeModel/>`__, which is
-typically instantiated as a property of the Map component:
+:ref:`GeocodeModel <sdk_qtlocation_geocodemodel>`, which is typically
+instantiated as a property of the Map component:
 
 .. code:: qml
 
@@ -101,8 +104,8 @@ typically instantiated as a property of the Map component:
         }
 
 Then, to display the contents of the
-`GeocodeModel </sdk/apps/qml/QtLocation/GeocodeModel/>`__ we use a
-`MapItemView </sdk/apps/qml/QtLocation/MapItemView/>`__:
+:ref:`GeocodeModel <sdk_qtlocation_geocodemodel>` we use a
+:ref:`MapItemView <sdk_qtlocation_mapitemview>`:
 
 .. code:: qml
 
@@ -111,10 +114,10 @@ Then, to display the contents of the
             delegate: pointDelegate
         }
 
-`MapItemView </sdk/apps/qml/QtLocation/MapItemView/>`__ uses an object
-called a "delegate" to act as a template for the items it creates. This
-can contain any map object desired, but in this case we show a
-`MapCircle </sdk/apps/qml/QtLocation/MapCircle/>`__:
+:ref:`MapItemView <sdk_qtlocation_mapitemview>` uses an object called a
+"delegate" to act as a template for the items it creates. This can
+contain any map object desired, but in this case we show a
+:ref:`MapCircle <sdk_qtlocation_mapcircle>`:
 
 .. code:: qml
 
@@ -140,7 +143,7 @@ a reference, or drive the process using any other UI you wish.
 To send a geocode request, first we create an Address object, and fill
 it in with the desired parameters. Then we set "map.geocodeModel.query"
 to the filled in Address, and call update() on the
-`GeocodeModel </sdk/apps/qml/QtLocation/GeocodeModel/>`__.
+:ref:`GeocodeModel <sdk_qtlocation_geocodemodel>`.
 
 .. code:: qml
 
@@ -168,16 +171,14 @@ to the filled in Address, and call update() on the
 .. rubric:: Directions and Travel Routes
    :name: directions-and-travel-routes
 
-Similar to the
-`GeocodeModel </sdk/apps/qml/QtLocation/GeocodeModel/>`__, Qt Location
-also features the `RouteModel </sdk/apps/qml/QtLocation/RouteModel/>`__
+Similar to the :ref:`GeocodeModel <sdk_qtlocation_geocodemodel>`, Qt
+Location also features the :ref:`RouteModel <sdk_qtlocation_routemodel>`
 type, which allows information about routes (for example driving
 directions) between two or more points, to be received and used with a
 Map.
 
 Here again, we instantiate the
-`RouteModel </sdk/apps/qml/QtLocation/RouteModel/>`__ as a property of
-our Map:
+:ref:`RouteModel <sdk_qtlocation_routemodel>` as a property of our Map:
 
 .. code:: qml
 
@@ -188,9 +189,8 @@ our Map:
         }
 
 To display the contents of a model to the user, we need a view. Once
-again we will use a
-`MapItemView </sdk/apps/qml/QtLocation/MapItemView/>`__, to display the
-Routes as objects on the Map:
+again we will use a :ref:`MapItemView <sdk_qtlocation_mapitemview>`, to
+display the Routes as objects on the Map:
 
 .. code:: qml
 
@@ -275,9 +275,9 @@ ListModel is built from the routeModel's output:
             }
         }
 
-Inside the `RouteModel </sdk/apps/qml/QtLocation/RouteModel/>`__, we add
-an `onStatusChanged </sdk/apps/qml/QtLocation/RouteModel#status-prop>`__
-handler, which calls the ``update()`` function we defined on the model:
+Inside the :ref:`RouteModel <sdk_qtlocation_routemodel>`, we add an
+:ref:`onStatusChanged <sdk_qtlocation_routemodel#status-prop>` handler,
+which calls the ``update()`` function we defined on the model:
 
 .. code:: qml
 

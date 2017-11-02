@@ -1,30 +1,30 @@
+.. _sdk_qtquick_rectangle:
+QtQuick Rectangle
+=================
+
 Paints a filled rectangle with an optional border
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtQuick 2.4                   |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Item </sdk/apps/qml/QtQuick/Item/>` |
-|                                      | __                                   |
+| Inherits:                            | :ref:`Item <sdk_qtquick_item>`       |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`antialiasing </sdk/apps/qml/QtQuick/Rectangle#antialiasing-prop>`__****
-   : bool
--  ****`border </sdk/apps/qml/QtQuick/Rectangle#border-prop>`__****
+-  :ref:`antialiasing <sdk_qtquick_rectangle_antialiasing-prop>` :
+   bool
+-  :ref:`border <sdk_qtquick_rectangle_border-prop>`
 
-   -  ****`border.width </sdk/apps/qml/QtQuick/Rectangle#border.width-prop>`__****
+   -  :ref:`border.width <sdk_qtquick_rectangle_border.width-prop>`
       : int
-   -  ****`border.color </sdk/apps/qml/QtQuick/Rectangle#border.color-prop>`__****
+   -  :ref:`border.color <sdk_qtquick_rectangle_border.color-prop>`
       : color
 
--  ****`color </sdk/apps/qml/QtQuick/Rectangle#color-prop>`__**** :
-   color
--  ****`gradient </sdk/apps/qml/QtQuick/Rectangle#gradient-prop>`__****
-   : Gradient
--  ****`radius </sdk/apps/qml/QtQuick/Rectangle#radius-prop>`__**** :
-   real
+-  :ref:`color <sdk_qtquick_rectangle_color-prop>` : color
+-  :ref:`gradient <sdk_qtquick_rectangle_gradient-prop>` : Gradient
+-  :ref:`radius <sdk_qtquick_rectangle_radius-prop>` : real
 
 Detailed Description
 --------------------
@@ -36,25 +36,23 @@ Appearance
 ----------
 
 Each Rectangle item is painted using either a solid fill color,
-specified using the
-`color </sdk/apps/qml/QtQuick/Rectangle#color-prop>`__ property, or a
-gradient, defined using a Gradient type and set using the
-`gradient </sdk/apps/qml/QtQuick/Rectangle#gradient-prop>`__ property.
-If both a color and a gradient are specified, the gradient is used.
+specified using the :ref:`color <sdk_qtquick_rectangle#color-prop>`
+property, or a gradient, defined using a Gradient type and set using the
+:ref:`gradient <sdk_qtquick_rectangle#gradient-prop>` property. If both a
+color and a gradient are specified, the gradient is used.
 
 You can add an optional border to a rectangle with its own color and
 thickness by setting the
-`border.color </sdk/apps/qml/QtQuick/Rectangle#border.color-prop>`__ and
-`border.width </sdk/apps/qml/QtQuick/Rectangle#border.width-prop>`__
-properties. Set the color to "transparent" to paint a border without a
-fill color.
+:ref:`border.color <sdk_qtquick_rectangle#border.color-prop>` and
+:ref:`border.width <sdk_qtquick_rectangle#border.width-prop>` properties.
+Set the color to "transparent" to paint a border without a fill color.
 
 You can also create rounded rectangles using the
-`radius </sdk/apps/qml/QtQuick/Rectangle#radius-prop>`__ property. Since
-this introduces curved edges to the corners of a rectangle, it may be
+:ref:`radius <sdk_qtquick_rectangle#radius-prop>` property. Since this
+introduces curved edges to the corners of a rectangle, it may be
 appropriate to set the
-`Item::antialiasing </sdk/apps/qml/QtQuick/Item#antialiasing-prop>`__
-property to improve its appearance.
+:ref:`Item::antialiasing <sdk_qtquick_item#antialiasing-prop>` property to
+improve its appearance.
 
 Example Usage
 -------------
@@ -82,32 +80,36 @@ on a Rectangle item, which in this case is used to create a square:
 Performance
 -----------
 
-Using the
-`Item::antialiasing </sdk/apps/qml/QtQuick/Item#antialiasing-prop>`__
+Using the :ref:`Item::antialiasing <sdk_qtquick_item#antialiasing-prop>`
 property improves the appearance of a rounded rectangle at the cost of
 rendering performance. You should consider unsetting this property for
 rectangles in motion, and only set it when they are stationary.
 
-**See also** `Image </sdk/apps/qml/QtQuick/imageelements#image>`__.
+**See also** `Image </sdk/apps/qml/QtQuick/imageelements/#image>`_ .
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_rectangle_antialiasing-prop:
 
 +--------------------------------------------------------------------------+
 |        \ antialiasing : bool                                             |
 +--------------------------------------------------------------------------+
 
 Used to decide if the Rectangle should use antialiasing or not.
-`Antialiasing </sdk/apps/qml/QtQuick/qtquick-visualcanvas-scenegraph-renderer#antialiasing>`__
+`Antialiasing </sdk/apps/qml/QtQuick/qtquick-visualcanvas-scenegraph-renderer/#antialiasing>`_ 
 provides information on the performance implications of this property.
 
 The default is true for Rectangles with a radius, and false otherwise.
 
 | 
 
+.. _sdk_qtquick_rectangle_**border group**-prop:
+
 +--------------------------------------------------------------------------+
 |        \ **border group**                                                |
 +==========================================================================+
+.. _sdk_qtquick_rectangle_border.color-prop:
 |        \ border.width : int                                              |
 +--------------------------------------------------------------------------+
 |        \ border.color : color                                            |
@@ -125,6 +127,8 @@ if anchors are used.
 The border is rendered within the rectangle's boundaries.
 
 | 
+
+.. _sdk_qtquick_rectangle_color-prop:
 
 +--------------------------------------------------------------------------+
 |        \ color : color                                                   |
@@ -152,13 +156,14 @@ hexadecimal and named color notation:
 
 If both a gradient and a color are specified, the gradient will be used.
 
-**See also**
-`gradient </sdk/apps/qml/QtQuick/Rectangle#gradient-prop>`__.
+**See also** :ref:`gradient <sdk_qtquick_rectangle#gradient-prop>`.
 
 | 
 
+.. _sdk_qtquick_rectangle_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ gradient : `Gradient </sdk/apps/qml/QtQuick/Gradient/>`__       |
+| :ref:` <>`\ gradient : `Gradient <sdk_qtquick_gradient>`               |
 +--------------------------------------------------------------------------+
 
 The gradient to use to fill the rectangle.
@@ -192,10 +197,12 @@ Other gradients may by formed by adding rotation to the rectangle.
 
 If both a gradient and a color are specified, the gradient will be used.
 
-**See also** `Gradient </sdk/apps/qml/QtQuick/Gradient/>`__ and
-`color </sdk/apps/qml/QtQuick/Rectangle#color-prop>`__.
+**See also** :ref:`Gradient <sdk_qtquick_gradient>` and
+:ref:`color <sdk_qtquick_rectangle#color-prop>`.
 
 | 
+
+.. _sdk_qtquick_rectangle_radius-prop:
 
 +--------------------------------------------------------------------------+
 |        \ radius : real                                                   |
@@ -210,7 +217,7 @@ different radii for different corners.
 
 | 
 
-.. |image0| image:: /media/sdk/apps/qml/QtQuick/Rectangle/images/declarative-rect.png
-.. |image1| image:: /media/sdk/apps/qml/QtQuick/Rectangle/images/rect-color.png
-.. |image2| image:: /media/sdk/apps/qml/QtQuick/Rectangle/images/declarative-rect_gradient.png
+.. |image0| image:: /mediasdk_qtquick_rectangleimages/declarative-rect.png
+.. |image1| image:: /mediasdk_qtquick_rectangleimages/rect-color.png
+.. |image2| image:: /mediasdk_qtquick_rectangleimages/declarative-rect_gradient.png
 

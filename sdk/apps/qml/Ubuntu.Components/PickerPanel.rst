@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_pickerpanel:
+Ubuntu.Components PickerPanel
+=============================
+
 Provides a panel for opening a DatePicker in place of the input panel or
 as Popover, depending on the form factor.
 
@@ -8,15 +12,15 @@ as Popover, depending on the form factor.
 Methods
 -------
 
--  ****`openDatePicker </sdk/apps/qml/Ubuntu.Components/PickerPanel#openDatePicker-method>`__****\ (*caller*,
+-  **:ref:`openDatePicker <sdk_ubuntu_components_pickerpanel#openDatePicker-method>`**\ (*caller*,
    *property*, *mode*)
 
 Detailed Description
 --------------------
 
-`PickerPanel </sdk/apps/qml/Ubuntu.Components/PickerPanel/>`__ is a
-singleton component designed to open a
-`DatePicker </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/>`__ in
+:ref:`PickerPanel <sdk_ubuntu_components_pickerpanel>` is a singleton
+component designed to open a
+`DatePicker </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/>`_  in
 the input panel area or in a Popover, depending on the form factor,
 following the design guides on date pickers.
 
@@ -44,12 +48,14 @@ outside of the panel or Popover area.
 Method Documentation
 --------------------
 
+.. _sdk_ubuntu_components_pickerpanel_openDatePicker-method:
+
 +--------------------------------------------------------------------------+
 |        \ openDatePicker( *caller*, *property*, *mode*)                   |
 +--------------------------------------------------------------------------+
 
 The function opens a
-`DatePicker </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/>`__
+`DatePicker </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/>`_ 
 component in the input method area or in a popover, depending on the
 availability of an input method provider in the system and whether the
 size of the main screen width/height defines a phone form factor. The
@@ -75,11 +81,11 @@ Property
 Description
 **picker**
 instance of the
-`DatePicker </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/>`__
+`DatePicker </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/>`_ 
 component shown in the panel/popup
 **pickerMode**
 represents the
-`DatePicker::mode </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker#mode-prop>`__
+`DatePicker::mode </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/#mode-prop>`_ 
 to be used. This is an optional parameter and if not defined, the
 default mode will be used.
 **date**

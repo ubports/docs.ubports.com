@@ -1,3 +1,7 @@
+.. _sdk_qtquick_qt_quick_demo_-_tweet_search:
+QtQuick Qt Quick Demo - Tweet Search
+====================================
+
 
 
 |image0|
@@ -53,7 +57,7 @@ Search results are returned in JSON (JavaScript Object Notation) format.
 request, and calls JSON.parse() on the returned text string to convert
 it to a JavaScript object. Each object representing a tweet is then
 added to a
-`ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview#listmodel>`__:
+`ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#listmodel>`_ :
 
 .. code:: qml
 

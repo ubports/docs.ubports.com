@@ -1,6 +1,10 @@
+.. _sdk_configexception:
+ConfigException
+===============
+
 Exception to indicate that something went wrong with the contents of
 configuration files.
-`More... </sdk/scopes/cpp/unity.scopes.ConfigException#details>`__
+`More... </sdk/scopes/cpp/unity.scopes.ConfigException/#details>`_ 
 
 ``#include <unity/scopes/ScopeExceptions.h>``
 
@@ -15,7 +19,7 @@ Inheritance diagram for unity::scopes::ConfigException:
 
  
 
-`ConfigException </sdk/scopes/cpp/unity.scopes.ConfigException#a5478ebe647b1aa386d17fa079f573cb3>`__
+`ConfigException </sdk/scopes/cpp/unity.scopes.ConfigException/#a5478ebe647b1aa386d17fa079f573cb3>`_ 
 (std::string const &reason)
 
  
@@ -26,7 +30,7 @@ Inheritance diagram for unity::scopes::ConfigException:
 
 virtual std::exception\_ptr 
 
-`self </sdk/scopes/cpp/unity.scopes.ConfigException#a413ff3265dff664dabae83f73a58c58b>`__
+`self </sdk/scopes/cpp/unity.scopes.ConfigException/#a413ff3265dff664dabae83f73a58c58b>`_ 
 () const override
 
  
@@ -42,15 +46,15 @@ Copy constructor and assignment operator have the usual value semantics.
          
 
 **ConfigException**
-(`ConfigException </sdk/scopes/cpp/unity.scopes.ConfigException/>`__
+(`ConfigException </sdk/scopes/cpp/unity.scopes.ConfigException/>`_ 
 const &)
 
  
 
-`ConfigException </sdk/scopes/cpp/unity.scopes.ConfigException/>`__ & 
+`ConfigException </sdk/scopes/cpp/unity.scopes.ConfigException/>`_  & 
 
 **operator=**
-(`ConfigException </sdk/scopes/cpp/unity.scopes.ConfigException/>`__
+(`ConfigException </sdk/scopes/cpp/unity.scopes.ConfigException/>`_ 
 const &)
 
  

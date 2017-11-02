@@ -1,3 +1,7 @@
+.. _sdk_qtaudioengine_attenuationmodelinverse:
+QtAudioEngine AttenuationModelInverse
+=====================================
+
 Defines a non-linear attenuation curve for a Sound.
 
 +---------------------+----------------------------+
@@ -9,13 +13,13 @@ Defines a non-linear attenuation curve for a Sound.
 Properties
 ----------
 
--  ****`end </sdk/apps/qml/QtAudioEngine/AttenuationModelInverse#end-prop>`__****
+-  :ref:`end <sdk_qtaudioengine_attenuationmodelinverse_end-prop>`
    : real
--  ****`name </sdk/apps/qml/QtAudioEngine/AttenuationModelInverse#name-prop>`__****
+-  :ref:`name <sdk_qtaudioengine_attenuationmodelinverse_name-prop>`
    : string
--  ****`rolloff </sdk/apps/qml/QtAudioEngine/AttenuationModelInverse#rolloff-prop>`__****
+-  :ref:`rolloff <sdk_qtaudioengine_attenuationmodelinverse_rolloff-prop>`
    : real
--  ****`start </sdk/apps/qml/QtAudioEngine/AttenuationModelInverse#start-prop>`__****
+-  :ref:`start <sdk_qtaudioengine_attenuationmodelinverse_start-prop>`
    : real
 
 Detailed Description
@@ -23,9 +27,8 @@ Detailed Description
 
 This type is part of the **QtAudioEngine 1.0** module.
 
-`AttenuationModelInverse </sdk/apps/qml/QtAudioEngine/AttenuationModelInverse/>`__
-must be defined inside
-`AudioEngine </sdk/apps/qml/QtAudioEngine/AudioEngine/>`__.
+:ref:`AttenuationModelInverse <sdk_qtaudioengine_attenuationmodelinverse>`
+must be defined inside :ref:`AudioEngine <sdk_qtaudioengine_audioengine>`.
 
 .. code:: qml
 
@@ -65,6 +68,8 @@ end); attenuation = start / (start + (d - start) \* rolloff);
 Property Documentation
 ----------------------
 
+.. _sdk_qtaudioengine_attenuationmodelinverse_end-prop:
+
 +--------------------------------------------------------------------------+
 |        \ end : real                                                      |
 +--------------------------------------------------------------------------+
@@ -75,15 +80,19 @@ The default value is 1000.
 
 | 
 
+.. _sdk_qtaudioengine_attenuationmodelinverse_name-prop:
+
 +--------------------------------------------------------------------------+
 |        \ name : string                                                   |
 +--------------------------------------------------------------------------+
 
 This property holds the name of
-`AttenuationModelInverse </sdk/apps/qml/QtAudioEngine/AttenuationModelInverse/>`__,
+:ref:`AttenuationModelInverse <sdk_qtaudioengine_attenuationmodelinverse>`,
 must be unique among all attenuation models and only defined once.
 
 | 
+
+.. _sdk_qtaudioengine_attenuationmodelinverse_rolloff-prop:
 
 +--------------------------------------------------------------------------+
 |        \ rolloff : real                                                  |
@@ -93,6 +102,8 @@ This property holds the rolloff factor. The bigger the value is, the
 faster the sound attenuates. The default value is 1.
 
 | 
+
+.. _sdk_qtaudioengine_attenuationmodelinverse_start-prop:
 
 +--------------------------------------------------------------------------+
 |        \ start : real                                                    |

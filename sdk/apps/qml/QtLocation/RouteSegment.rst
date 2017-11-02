@@ -1,3 +1,7 @@
+.. _sdk_qtlocation_routesegment:
+QtLocation RouteSegment
+=======================
+
 The RouteSegment type represents a segment of a Route.
 
 +---------------------+-------------------------+
@@ -9,31 +13,30 @@ The RouteSegment type represents a segment of a Route.
 Properties
 ----------
 
--  ****`distance </sdk/apps/qml/QtLocation/RouteSegment#distance-prop>`__****
-   : real
--  ****`maneuver </sdk/apps/qml/QtLocation/RouteSegment#maneuver-prop>`__****
-   : RouteManeuver
--  ****`path </sdk/apps/qml/QtLocation/RouteSegment#path-prop>`__**** :
-   QJSValue
--  ****`travelTime </sdk/apps/qml/QtLocation/RouteSegment#travelTime-prop>`__****
+-  :ref:`distance <sdk_qtlocation_routesegment_distance-prop>` :
+   real
+-  :ref:`maneuver <sdk_qtlocation_routesegment_maneuver-prop>` :
+   RouteManeuver
+-  :ref:`path <sdk_qtlocation_routesegment_path-prop>` : QJSValue
+-  :ref:`travelTime <sdk_qtlocation_routesegment_travelTime-prop>`
    : int
 
 Detailed Description
 --------------------
 
-A `RouteSegment </sdk/apps/qml/QtLocation/RouteSegment/>`__ instance has
+A :ref:`RouteSegment <sdk_qtlocation_routesegment>` instance has
 information about the physical layout of the route segment, the length
 of the route and estimated time required to traverse the route segment
 and optional RouteManeuvers associated with the end of the route
 segment.
 
-`RouteSegment </sdk/apps/qml/QtLocation/RouteSegment/>`__ instances can
-be thought of as edges on a routing graph, with
-`RouteManeuver </sdk/apps/qml/QtLocation/RouteManeuver/>`__ instances as
-optional labels attached to the vertices of the graph.
+:ref:`RouteSegment <sdk_qtlocation_routesegment>` instances can be thought
+of as edges on a routing graph, with
+:ref:`RouteManeuver <sdk_qtlocation_routemaneuver>` instances as optional
+labels attached to the vertices of the graph.
 
 The primary means of acquiring Route objects is via Routes via
-`RouteModel </sdk/apps/qml/QtLocation/RouteModel/>`__.
+:ref:`RouteModel <sdk_qtlocation_routemodel>`.
 
 Example
 -------
@@ -52,6 +55,8 @@ route segment:
 Property Documentation
 ----------------------
 
+.. _sdk_qtlocation_routesegment_distance-prop:
+
 +--------------------------------------------------------------------------+
 |        \ distance : real                                                 |
 +--------------------------------------------------------------------------+
@@ -61,9 +66,10 @@ the route, in meters.
 
 | 
 
+.. _sdk_qtlocation_routesegment_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ maneuver :                                                      |
-| `RouteManeuver </sdk/apps/qml/QtLocation/RouteManeuver/>`__              |
+| :ref:` <>`\ maneuver : `RouteManeuver <sdk_qtlocation_routemaneuver>`  |
 +--------------------------------------------------------------------------+
 
 Read-only property which holds the maneuver for this route segment.
@@ -72,6 +78,8 @@ Will return invalid maneuver if no information has been attached to the
 endpoint of this route segment.
 
 | 
+
+.. _sdk_qtlocation_routesegment_path-prop:
 
 +--------------------------------------------------------------------------+
 |        \ path : QJSValue                                                 |
@@ -88,6 +96,8 @@ from zero]' gives the actual object.
 **See also** QtPositioning::coordinate.
 
 | 
+
+.. _sdk_qtlocation_routesegment_travelTime-prop:
 
 +--------------------------------------------------------------------------+
 |        \ travelTime : int                                                |

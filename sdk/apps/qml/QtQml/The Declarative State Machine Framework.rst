@@ -1,3 +1,7 @@
+.. _sdk_qtqml_the_declarative_state_machine_framework:
+QtQml The Declarative State Machine Framework
+=============================================
+
 
 
 The Declarative State Machine Framework provides types for creating and
@@ -15,23 +19,23 @@ These following QML types are provided by framework to create
 event-driven state machines:
 
 +--------------------------------------+--------------------------------------+
-| `FinalState </sdk/apps/qml/QtQml/Fin | Provides a final state               |
-| alState/>`__                         |                                      |
+| :ref:`FinalState <sdk_qtqml_finalstate>`_ | Provides a final state               |
+| _                                    |                                      |
 +--------------------------------------+--------------------------------------+
-| `HistoryState </sdk/apps/qml/QtQml/H | Type provides a means of returning   |
-| istoryState/>`__                     | to a previously active substate      |
+| :ref:`HistoryState <sdk_qtqml_historystat | Type provides a means of returning   |
+| e>`_                                 | to a previously active substate      |
 +--------------------------------------+--------------------------------------+
-| `SignalTransition </sdk/apps/qml/QtQ | Type provides a transition based on  |
-| ml/SignalTransition/>`__             | a Qt signal                          |
+| :ref:`SignalTransition <sdk_qtqml_signalt | Type provides a transition based on  |
+| ransition>`_                         | a Qt signal                          |
 +--------------------------------------+--------------------------------------+
-| `State </sdk/apps/qml/QtQml/State/>` | Provides a general-purpose state for |
-| __                                   | StateMachine                         |
+| :ref:`State <sdk_qtqml_state>`       | Provides a general-purpose state for |
+|                                      | StateMachine                         |
 +--------------------------------------+--------------------------------------+
-| `StateMachine </sdk/apps/qml/QtQml/S | Provides a hierarchical finite state |
-| tateMachine/>`__                     | machine                              |
+| :ref:`StateMachine <sdk_qtqml_statemachin | Provides a hierarchical finite state |
+| e>`_                                 | machine                              |
 +--------------------------------------+--------------------------------------+
-| `TimeoutTransition </sdk/apps/qml/Qt | Type provides a transition based on  |
-| Qml/TimeoutTransition/>`__           | a timer                              |
+| :ref:`TimeoutTransition <sdk_qtqml_timeou | Type provides a transition based on  |
+| ttransition>`_                       | a timer                              |
 +--------------------------------------+--------------------------------------+
 
 .. rubric:: Using both QtQuick and QtQml.StateMachine imports
@@ -137,15 +141,14 @@ application's event loop.
 
 The state machine defined in the previous section never finishes. In
 order for a state machine to be able to finish, it needs to have a
-top-level *final* state
-(`FinalState </sdk/apps/qml/QtQml/FinalState/>`__ object). When the
-state machine enters the top-level final state, the machine emits the
-`finished </sdk/apps/qml/QtQml/State#finished-signal>`__ signal and
+top-level *final* state (:ref:`FinalState <sdk_qtqml_finalstate>` object).
+When the state machine enters the top-level final state, the machine
+emits the :ref:`finished <sdk_qtqml_state#finished-signal>` signal and
 halts.
 
 All you need to do to introduce a final state in the graph is create a
-`FinalState </sdk/apps/qml/QtQml/FinalState/>`__ object and use it as
-the target of one or more transitions.
+:ref:`FinalState <sdk_qtqml_finalstate>` object and use it as the target of
+one or more transitions.
 
 .. rubric:: Sharing Transitions
    :name: sharing-transitions
@@ -294,7 +297,7 @@ which the state machine should resume whatever it was doing before (i.e.
 return to the old state, which is one of the three states in this case).
 
 Such behavior can easily be modeled using *history states*. A history
-state (`HistoryState </sdk/apps/qml/QtQml/HistoryState/>`__ object) is a
+state (:ref:`HistoryState <sdk_qtqml_historystate>` object) is a
 pseudo-state that represents the child state that the parent state was
 in before it exited last.
 
@@ -472,18 +475,17 @@ that is processed last of the two will not have any effect.
 .. rubric:: Exiting a Composite State
    :name: exiting-a-composite-state
 
-A child state can be final (a
-`FinalState </sdk/apps/qml/QtQml/FinalState/>`__ object); when a final
-child state is entered, the parent state emits the
-`State::finished </sdk/apps/qml/QtQml/State#finished-signal>`__ signal.
-The following diagram shows a composite state ``s1`` which does some
+A child state can be final (a :ref:`FinalState <sdk_qtqml_finalstate>`
+object); when a final child state is entered, the parent state emits the
+:ref:`State::finished <sdk_qtqml_state#finished-signal>` signal. The
+following diagram shows a composite state ``s1`` which does some
 processing before entering a final state:
 
 |image5|
 
 When ``s1`` 's final state is entered, ``s1`` will automatically emit
-`finished </sdk/apps/qml/QtQml/State#finished-signal>`__. We use a
-signal transition to cause this event to trigger a state change:
+:ref:`finished <sdk_qtqml_state#finished-signal>`. We use a signal
+transition to cause this event to trigger a state change:
 
 .. code:: qml
 
@@ -507,8 +509,8 @@ consequence that implementation details of ``s1`` are exposed and
 depended on).
 
 For parallel state groups, the
-`State::finished </sdk/apps/qml/QtQml/State#finished-signal>`__ signal
-is emitted when *all* the child states have entered final states.
+:ref:`State::finished <sdk_qtqml_state#finished-signal>` signal is emitted
+when *all* the child states have entered final states.
 
 .. rubric:: Targetless Transitions
    :name: targetless-transitions
@@ -542,9 +544,8 @@ The "button pressed" message will be displayed each time the button is
 clicked, but the state machine will remain in its current state (s1). If
 the target state were explicitly set to s1, s1 would be exited and
 re-entered each time (the
-`QAbstractState::entered </sdk/apps/qml/QtQml/QAbstractState#entered-signal>`__
-and
-`QAbstractState::exited </sdk/apps/qml/QtQml/QAbstractState#exited-signal>`__
+:ref:`QAbstractState::entered <sdk_qtqml_qabstractstate#entered-signal>`
+and :ref:`QAbstractState::exited <sdk_qtqml_qabstractstate#exited-signal>`
 signals would be emitted).
 
 .. rubric:: Related Information

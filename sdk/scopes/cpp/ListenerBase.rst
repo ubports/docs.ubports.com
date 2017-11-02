@@ -1,6 +1,10 @@
+.. _sdk_listenerbase:
+ListenerBase
+============
+
 Abstract base class to be notified of request completion (such as a
 query or activation request).
-`More... </sdk/scopes/cpp/unity.scopes.ListenerBase#details>`__
+`More... </sdk/scopes/cpp/unity.scopes.ListenerBase/#details>`_ 
 
 ``#include <unity/scopes/ListenerBase.h>``
 
@@ -15,8 +19,8 @@ Inheritance diagram for unity::scopes::ListenerBase:
 
 virtual void 
 
-`finished </sdk/scopes/cpp/unity.scopes.ListenerBase#afb44937749b61c9e3ebfa20ec6e4634b>`__
-(`CompletionDetails </sdk/scopes/cpp/unity.scopes.CompletionDetails/>`__
+`finished </sdk/scopes/cpp/unity.scopes.ListenerBase/#afb44937749b61c9e3ebfa20ec6e4634b>`_ 
+(`CompletionDetails </sdk/scopes/cpp/unity.scopes.CompletionDetails/>`_ 
 const &details)=0
 
  
@@ -28,8 +32,8 @@ const &details)=0
 
 virtual void 
 
-`info </sdk/scopes/cpp/unity.scopes.ListenerBase#a3b38fa642754142f40968f3ff8d1bdc8>`__
-(`OperationInfo </sdk/scopes/cpp/unity.scopes.OperationInfo/>`__ const
+`info </sdk/scopes/cpp/unity.scopes.ListenerBase/#a3b38fa642754142f40968f3ff8d1bdc8>`_ 
+(`OperationInfo </sdk/scopes/cpp/unity.scopes.OperationInfo/>`_  const
 &op\_info)
 
  
@@ -46,9 +50,9 @@ Abstract base class to be notified of request completion (such as a
 query or activation request).
 
 See also
-    `ActivationListenerBase </sdk/scopes/cpp/unity.scopes.ActivationListenerBase/>`__
-    `PreviewQueryBase </sdk/scopes/cpp/unity.scopes.PreviewQueryBase/>`__
-    `SearchListenerBase </sdk/scopes/cpp/unity.scopes.SearchListenerBase/>`__
+    `ActivationListenerBase </sdk/scopes/cpp/unity.scopes.ActivationListenerBase/>`_ 
+    `PreviewQueryBase </sdk/scopes/cpp/unity.scopes.PreviewQueryBase/>`_ 
+    `SearchListenerBase </sdk/scopes/cpp/unity.scopes.SearchListenerBase/>`_ 
 
 Member Function Documentation
 -----------------------------
@@ -73,7 +77,7 @@ Member Function Documentation
 | pletionD |              |            |                                      |
 |    |              |                  |                                      |
 | |              |              | etai |                                      |
-| ls/>`__  |              |            |                                      |
+| ls/>`_   |              |            |                                      |
 |    |              |                  |                                      |
 | |              |              | cons |                                      |
 | t &      |              |            |                                      |
@@ -87,11 +91,11 @@ Called once by the scopes runtime after the final result for a request
 was sent.
 
 Calls to
-`finished() </sdk/scopes/cpp/unity.scopes.ListenerBase#afb44937749b61c9e3ebfa20ec6e4634b>`__
+`finished() </sdk/scopes/cpp/unity.scopes.ListenerBase/#afb44937749b61c9e3ebfa20ec6e4634b>`_ 
 are made by an arbitrary thread.
 
 Exceptions thrown from
-`finished() </sdk/scopes/cpp/unity.scopes.ListenerBase#afb44937749b61c9e3ebfa20ec6e4634b>`__
+`finished() </sdk/scopes/cpp/unity.scopes.ListenerBase/#afb44937749b61c9e3ebfa20ec6e4634b>`_ 
 are ignored.
 
 Parameters
@@ -100,9 +104,9 @@ Parameters
     +-----------+-----------------------------------------------------------------------------------------------------------------------------------------+
 
 Implemented in
-`unity::scopes::utility::BufferedResultForwarder </sdk/scopes/cpp/unity.scopes.utility/BufferedResultForwarder#a9bd57e76c08a01560a700d665cc40e96>`__,
+:ref:`unity::scopes::utility::BufferedResultForwarder <sdk_unity_scopes_utility_bufferedresultforwarder#a9bd57e76c08a01560a700d665cc40e96>`,
 and
-`unity::scopes::ActivationListenerBase </sdk/scopes/cpp/unity.scopes.ActivationListenerBase#a89f1e3697d62b098c73704368d3bc4c8>`__.
+`unity::scopes::ActivationListenerBase </sdk/scopes/cpp/unity.scopes.ActivationListenerBase/#a89f1e3697d62b098c73704368d3bc4c8>`_ .
 
 +--------------------------------------+--------------------------------------+
 | +--------------+--------------+----- | virtual                              |
@@ -123,7 +127,7 @@ and
 | |              |              | rati |                                      |
 | onInfo/> |              |            |                                      |
 |    |              |                  |                                      |
-| |              |              | `__  |                                      |
+| |              |              | `_   |                                      |
 |          |              |            |                                      |
 |    |              |                  |                                      |
 | |              |              | cons |                                      |
@@ -138,15 +142,15 @@ Called by the scopes runtime each time a scope reports additional
 information about the reply to a query.
 
 More than one
-`info() </sdk/scopes/cpp/unity.scopes.ListenerBase#a3b38fa642754142f40968f3ff8d1bdc8>`__
+`info() </sdk/scopes/cpp/unity.scopes.ListenerBase/#a3b38fa642754142f40968f3ff8d1bdc8>`_ 
 call can arrive during processing of a single query.
 
 Calls to
-`info() </sdk/scopes/cpp/unity.scopes.ListenerBase#a3b38fa642754142f40968f3ff8d1bdc8>`__
+`info() </sdk/scopes/cpp/unity.scopes.ListenerBase/#a3b38fa642754142f40968f3ff8d1bdc8>`_ 
 are made by an arbitrary thread.
 
 Exceptions thrown from
-`info() </sdk/scopes/cpp/unity.scopes.ListenerBase#a3b38fa642754142f40968f3ff8d1bdc8>`__
+`info() </sdk/scopes/cpp/unity.scopes.ListenerBase/#a3b38fa642754142f40968f3ff8d1bdc8>`_ 
 are ignored.
 
 Parameters

@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_mouse:
+Ubuntu.Components Mouse
+=======================
+
 Attached property filtering mouse events occured inside the owner.
 
 +---------------------+--------------------------------+
@@ -7,39 +11,38 @@ Attached property filtering mouse events occured inside the owner.
 Properties
 ----------
 
--  ****`acceptedButtons </sdk/apps/qml/Ubuntu.Components/Mouse#acceptedButtons-prop>`__****
+-  :ref:`acceptedButtons <sdk_ubuntu_components_mouse_acceptedButtons-prop>`
    : Qt::MouseButtons
--  ****`clickAndHoldThreshold </sdk/apps/qml/Ubuntu.Components/Mouse#clickAndHoldThreshold-prop>`__****
+-  :ref:`clickAndHoldThreshold <sdk_ubuntu_components_mouse_clickAndHoldThreshold-prop>`
    : int
--  ****`enabled </sdk/apps/qml/Ubuntu.Components/Mouse#enabled-prop>`__****
+-  :ref:`enabled <sdk_ubuntu_components_mouse_enabled-prop>` : bool
+-  :ref:`forwardTo <sdk_ubuntu_components_mouse_forwardTo-prop>` :
+   list<Item>
+-  :ref:`hoverEnabled <sdk_ubuntu_components_mouse_hoverEnabled-prop>`
    : bool
--  ****`forwardTo </sdk/apps/qml/Ubuntu.Components/Mouse#forwardTo-prop>`__****
-   : list<Item>
--  ****`hoverEnabled </sdk/apps/qml/Ubuntu.Components/Mouse#hoverEnabled-prop>`__****
+-  :ref:`ignoreSynthesizedEvents <sdk_ubuntu_components_mouse_ignoreSynthesizedEvents-prop>`
    : bool
--  ****`ignoreSynthesizedEvents </sdk/apps/qml/Ubuntu.Components/Mouse#ignoreSynthesizedEvents-prop>`__****
-   : bool
--  ****`priority </sdk/apps/qml/Ubuntu.Components/Mouse#priority-prop>`__****
-   : enumeration
+-  :ref:`priority <sdk_ubuntu_components_mouse_priority-prop>` :
+   enumeration
 
 Signals
 -------
 
--  ****`onClicked </sdk/apps/qml/Ubuntu.Components/Mouse#onClicked-signal>`__****\ (MouseEvent
+-  :ref:`onClicked <sdk_ubuntu_components_mouse_onClicked-signal>`\ (MouseEvent
    *event*)
--  ****`onDoubleClicked </sdk/apps/qml/Ubuntu.Components/Mouse#onDoubleClicked-signal>`__****\ (MouseEvent
+-  :ref:`onDoubleClicked <sdk_ubuntu_components_mouse_onDoubleClicked-signal>`\ (MouseEvent
    *event*)
--  ****`onEntered </sdk/apps/qml/Ubuntu.Components/Mouse#onEntered-signal>`__****\ (MouseEvent
+-  :ref:`onEntered <sdk_ubuntu_components_mouse_onEntered-signal>`\ (MouseEvent
    *event*)
--  ****`onExited </sdk/apps/qml/Ubuntu.Components/Mouse#onExited-signal>`__****\ (MouseEvent
+-  :ref:`onExited <sdk_ubuntu_components_mouse_onExited-signal>`\ (MouseEvent
    *event*)
--  ****`onPositionChanged </sdk/apps/qml/Ubuntu.Components/Mouse#onPositionChanged-signal>`__****\ (MouseEvent
+-  :ref:`onPositionChanged <sdk_ubuntu_components_mouse_onPositionChanged-signal>`\ (MouseEvent
    *event*)
--  ****`onPressAndHold </sdk/apps/qml/Ubuntu.Components/Mouse#onPressAndHold-signal>`__****\ (MouseEvent
+-  :ref:`onPressAndHold <sdk_ubuntu_components_mouse_onPressAndHold-signal>`\ (MouseEvent
    *event*)
--  ****`onPressed </sdk/apps/qml/Ubuntu.Components/Mouse#onPressed-signal>`__****\ (MouseEvent
+-  :ref:`onPressed <sdk_ubuntu_components_mouse_onPressed-signal>`\ (MouseEvent
    *event*, Item *host*)
--  ****`onReleased </sdk/apps/qml/Ubuntu.Components/Mouse#onReleased-signal>`__****\ (MouseEvent
+-  :ref:`onReleased <sdk_ubuntu_components_mouse_onReleased-signal>`\ (MouseEvent
    *event*)
 
 Detailed Description
@@ -47,13 +50,13 @@ Detailed Description
 
 Sometimes we need to provide additional functionality on mouse events
 beside a QML element's default behavior. Placing a
-`MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ over a component
-however will grab the mouse events from the component underneath, no
-matter if we set *preventStealing* to false or not. Setting
-mouse.accepted to false in *onPressed* would result in having the event
-forwarded to the `MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__'s
-parent, however `MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ will no
-longer receive other mouse events.
+:ref:`MouseArea <sdk_qtquick_mousearea>` over a component however will grab
+the mouse events from the component underneath, no matter if we set
+*preventStealing* to false or not. Setting mouse.accepted to false in
+*onPressed* would result in having the event forwarded to the
+:ref:`MouseArea <sdk_qtquick_mousearea>`'s parent, however
+:ref:`MouseArea <sdk_qtquick_mousearea>` will no longer receive other mouse
+events.
 
 .. code:: qml
 
@@ -76,8 +79,8 @@ effect only when attached to items handling mouse events. Events are
 handled through signals, where the event data is presented through the
 *mouse* parameter. Events should be accepted if the propagation of those
 to the owner is not wanted. This is not valid to
-`onClicked </sdk/apps/qml/Ubuntu.Components/Mouse#onClicked-signal>`__,
-`onPressAndHold </sdk/apps/qml/Ubuntu.Components/Mouse#onPressAndHold-signal>`__
+:ref:`onClicked <sdk_ubuntu_components_mouse#onClicked-signal>`,
+:ref:`onPressAndHold <sdk_ubuntu_components_mouse#onPressAndHold-signal>`
 composed events.
 
 The previous code sample using Mouse filter, which will print the
@@ -96,10 +99,9 @@ pressed and released mouse buttons would look as follows:
     }
 
 The event details are reported in the *mouse* parameter, of
-`MouseEvent </sdk/apps/qml/QtQuick/MouseEvent/>`__ type, which extends
-`QtQuick <http://doc.qt.io/qt-5/qtquick-qmlmodule.html>`__'s
-`MouseEvent </sdk/apps/qml/QtQuick/MouseEvent/>`__ with additional
-properties.
+:ref:`MouseEvent <sdk_qtquick_mouseevent>` type, which extends
+`QtQuick <http://doc.qt.io/qt-5/qtquick-qmlmodule.html>`_ 's
+:ref:`MouseEvent <sdk_qtquick_mouseevent>` with additional properties.
 
 The filter will accept the same mouse buttons the owner accepts, and
 will accept hover events if the owner does. However it is not possible
@@ -108,7 +110,7 @@ than the default ones specified for the primitive is required,
 MouseAreas can be declared to handle those events.
 
 Example of handling right button clicks over a
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__:
+:ref:`TextInput <sdk_qtquick_textinput>`:
 
 .. code:: qml
 
@@ -125,15 +127,14 @@ Example of handling right button clicks over a
     }
 
 In this example left and middle mouse button clicks will reach
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ as
-`MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ only grabs right button
-events.
+:ref:`TextInput <sdk_qtquick_textinput>` as
+:ref:`MouseArea <sdk_qtquick_mousearea>` only grabs right button events.
 
 Mouse filter can be used in combination with
-`MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__, where the filter
-brings additional functionality on top of existing primitive
-functionality, and `MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ add
-new functionality to the primitive.
+:ref:`MouseArea <sdk_qtquick_mousearea>`, where the filter brings
+additional functionality on top of existing primitive functionality, and
+:ref:`MouseArea <sdk_qtquick_mousearea>` add new functionality to the
+primitive.
 
 .. code:: qml
 
@@ -181,15 +182,15 @@ items are called proxy handlers.
     }
 
 In this example the mouse press is first handled by the mouse filter
-attached to `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__, then it is
-forwarded to the top item and finally to the
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__. Accepting the mouse
-event will stop propagation to the top item as well as to the
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__. The topmost item
-itself does not handle mouse events, therefore it will be a sinple proxy
-handler item. However, proxies can themself handle mouse events.
-Therefore each mouse event signal has the *host* parameter specifying
-the sender of the mouse event reported.
+attached to :ref:`TextInput <sdk_qtquick_textinput>`, then it is forwarded
+to the top item and finally to the
+:ref:`TextInput <sdk_qtquick_textinput>`. Accepting the mouse event will
+stop propagation to the top item as well as to the
+:ref:`TextInput <sdk_qtquick_textinput>`. The topmost item itself does not
+handle mouse events, therefore it will be a sinple proxy handler item.
+However, proxies can themself handle mouse events. Therefore each mouse
+event signal has the *host* parameter specifying the sender of the mouse
+event reported.
 
 **Note:** The forwarded events are handled in the proxy handlers only if
 the mouse position points inside their area. If the forwarded mouse
@@ -234,30 +235,26 @@ well as the proxied mouse press from the main item.
     }
 
 An interesting feature that can be achieved using Mouse filter is the
-event "transparency" towards the
-`MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ lying behind the items
-which handle mouse events. This means for example that by forwarding
-mouse events occurred on a
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ to a
-`MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ that stays behind it in
-the item hierarchy, the `MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__
-will also get all the events occurred on the area covered by the
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__, acting like it would
-be above the `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__. However,
-due to the nature of the
-`MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ event acceptance policy
-(all events are accepted by default)
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ will not get these
-mouse events unless we set the *accepted* field of the mouse event to
-false in `MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__. This normally
-leads to the `MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ no longer
+event "transparency" towards the :ref:`MouseArea <sdk_qtquick_mousearea>`
+lying behind the items which handle mouse events. This means for example
+that by forwarding mouse events occurred on a
+:ref:`TextInput <sdk_qtquick_textinput>` to a
+:ref:`MouseArea <sdk_qtquick_mousearea>` that stays behind it in the item
+hierarchy, the :ref:`MouseArea <sdk_qtquick_mousearea>` will also get all
+the events occurred on the area covered by the
+:ref:`TextInput <sdk_qtquick_textinput>`, acting like it would be above the
+:ref:`TextInput <sdk_qtquick_textinput>`. However, due to the nature of the
+:ref:`MouseArea <sdk_qtquick_mousearea>` event acceptance policy (all
+events are accepted by default) :ref:`TextInput <sdk_qtquick_textinput>`
+will not get these mouse events unless we set the *accepted* field of
+the mouse event to false in :ref:`MouseArea <sdk_qtquick_mousearea>`. This
+normally leads to the :ref:`MouseArea <sdk_qtquick_mousearea>` no longer
 getting further mouse events. However, Mouse filter will continue to
-forward other mouse events to the
-`MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__, so setting *accepted*
-to false in *onPressed*, *onReleased* will not have the default effect.
-This is only valid to press and release events, double-click or mouse
-position change will be blocked by the
-`MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ still.
+forward other mouse events to the :ref:`MouseArea <sdk_qtquick_mousearea>`,
+so setting *accepted* to false in *onPressed*, *onReleased* will not
+have the default effect. This is only valid to press and release events,
+double-click or mouse position change will be blocked by the
+:ref:`MouseArea <sdk_qtquick_mousearea>` still.
 
 .. code:: qml
 
@@ -288,10 +285,10 @@ position change will be blocked by the
 Mouse filter provides ability to control the order of the event
 dispatching. The filter can receive the events prior the owner or after
 the owner. This can be controlled through the
-`priority </sdk/apps/qml/Ubuntu.Components/Mouse#priority-prop>`__
-property. In the following example we make sure the
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ always receives the
-events before the filter:
+:ref:`priority <sdk_ubuntu_components_mouse#priority-prop>` property. In
+the following example we make sure the
+:ref:`TextInput <sdk_qtquick_textinput>` always receives the events before
+the filter:
 
 .. code:: qml
 
@@ -308,23 +305,21 @@ events before the filter:
 
 Another feature of the mouse filters is the ability to restrict when the
 composed events like
-`onClicked </sdk/apps/qml/Ubuntu.Components/Mouse#onClicked-signal>`__
-and
-`onPressAndHold </sdk/apps/qml/Ubuntu.Components/Mouse#onPressAndHold-signal>`__
+:ref:`onClicked <sdk_ubuntu_components_mouse#onClicked-signal>` and
+:ref:`onPressAndHold <sdk_ubuntu_components_mouse#onPressAndHold-signal>`
 should be triggered. By default these events are triggered no matter
 what is the distance between the mouse pressed position and the current
 position after a certain timeout (for
-`onPressAndHold </sdk/apps/qml/Ubuntu.Components/Mouse#onPressAndHold-signal>`__)
+:ref:`onPressAndHold <sdk_ubuntu_components_mouse#onPressAndHold-signal>`)
 or upon mouse release (for
-`onClicked </sdk/apps/qml/Ubuntu.Components/Mouse#onClicked-signal>`__).
-In this way the
-`onClicked </sdk/apps/qml/Ubuntu.Components/Mouse#onClicked-signal>`__
+:ref:`onClicked <sdk_ubuntu_components_mouse#onClicked-signal>`). In this
+way the :ref:`onClicked <sdk_ubuntu_components_mouse#onClicked-signal>`
 will be emitted even if the user presses the mouse at the left-top edge
 of the component, then moves it to the right-bottom corner and releases
 it. This may not be the preferred behavior on certain components (like
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__). Therefore MouseFilter
-provides a property which can alter this behavior, the
-`clickAndHoldThreshold </sdk/apps/qml/Ubuntu.Components/Mouse#clickAndHoldThreshold-prop>`__.
+:ref:`TextInput <sdk_qtquick_textinput>`). Therefore MouseFilter provides a
+property which can alter this behavior, the
+:ref:`clickAndHoldThreshold <sdk_ubuntu_components_mouse#clickAndHoldThreshold-prop>`.
 This property specifies the radius of the area the up-mentioned composed
 events are emitted during a mouse move.
 
@@ -345,19 +340,18 @@ events are emitted during a mouse move.
 
 Similar functionality for the case when the mouse event occurs outside
 of the owner is brought by the
-`InverseMouse </sdk/apps/qml/Ubuntu.Components/InverseMouse/>`__
-attached property.
+:ref:`InverseMouse <sdk_ubuntu_components_inversemouse>` attached property.
 
 Mouse events synthesis
 ----------------------
 
-`QtQuick <http://doc.qt.io/qt-5/qtquick-qmlmodule.html>`__ automatically
+`QtQuick <http://doc.qt.io/qt-5/qtquick-qmlmodule.html>`_  automatically
 creates artificial mouse events whenever a scene receives touch events
 that are not consumed by any item (either by using
-`MultiPointTouchArea </sdk/apps/qml/QtQuick/MultiPointTouchArea/>`__ or
-a custom C++ item). The Mouse filter provides the possibility to ignore
+:ref:`MultiPointTouchArea <sdk_qtquick_multipointtoucharea>` or a custom
+C++ item). The Mouse filter provides the possibility to ignore
 synthesized mouse events by enabling the
-`ignoreSynthesizedEvents </sdk/apps/qml/Ubuntu.Components/Mouse#ignoreSynthesizedEvents-prop>`__
+:ref:`ignoreSynthesizedEvents <sdk_ubuntu_components_mouse#ignoreSynthesizedEvents-prop>`
 property.
 
 This is really useful when, while developing a convergent application,
@@ -365,9 +359,8 @@ the app developer wants to avoid triggering the hovering logic using a
 touchscreen, but still be able to handle the hover events when using a
 mouse, and at the same time doesn't want to stop the mouse and touch
 events from propagating to items underneath the
-`MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ which handles the
-hovering. The following is an example of how that functionaly can be
-implemented:
+:ref:`MouseArea <sdk_qtquick_mousearea>` which handles the hovering. The
+following is an example of how that functionaly can be implemented:
 
 .. code:: qml
 
@@ -397,6 +390,8 @@ implemented:
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_mouse_[read-only] acceptedButtons-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [read-only] acceptedButtons : Qt::MouseButtons                  |
 +--------------------------------------------------------------------------+
@@ -405,6 +400,8 @@ The property holds the accepted mouse buttons of the owner.
 
 | 
 
+.. _sdk_ubuntu_components_mouse_clickAndHoldThreshold-prop:
+
 +--------------------------------------------------------------------------+
 |        \ clickAndHoldThreshold : int                                     |
 +--------------------------------------------------------------------------+
@@ -412,15 +409,14 @@ The property holds the accepted mouse buttons of the owner.
 The property holds the radius of the tolerance area the mouse can move
 in both x and y axis when the mouse is pressed, during which the
 composed events such as
-`onClicked </sdk/apps/qml/Ubuntu.Components/Mouse#onClicked-signal>`__
-and
-`onPressAndHold </sdk/apps/qml/Ubuntu.Components/Mouse#onPressAndHold-signal>`__
+:ref:`onClicked <sdk_ubuntu_components_mouse#onClicked-signal>` and
+:ref:`onPressAndHold <sdk_ubuntu_components_mouse#onPressAndHold-signal>`
 will still be emitted. If the mouse is moved out of this area while the
 button is pressed, no composed events will be emitted.
 
 When this value is 0, the signals will be emitted as in
-`MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__, meaning the composed
-events will come until the mouse is moved inside the owner's area.
+:ref:`MouseArea <sdk_qtquick_mousearea>`, meaning the composed events will
+come until the mouse is moved inside the owner's area.
 
 The default value is 0.
 
@@ -429,14 +425,18 @@ threshold is only valid when the host handles mouse events.
 
 | 
 
+.. _sdk_ubuntu_components_mouse_enabled-prop:
+
 +--------------------------------------------------------------------------+
 |        \ enabled : bool                                                  |
 +--------------------------------------------------------------------------+
 
 | 
 
+.. _sdk_ubuntu_components_mouse_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ forwardTo : list<`Item </sdk/apps/qml/QtQuick/Item/>`__>        |
+| :ref:` <>`\ forwardTo : list<`Item <sdk_qtquick_item>`>                   |
 +--------------------------------------------------------------------------+
 
 The property provides a way to forward mouse presses, releases, moves
@@ -452,18 +452,22 @@ set to *BeforeItem*.
 
 | 
 
+.. _sdk_ubuntu_components_mouse_[read-only] hoverEnabled-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [read-only] hoverEnabled : bool                                 |
 +--------------------------------------------------------------------------+
 
 The property reports whether the owner accepts hover events or not. When
 events are accepted
-`onEntered </sdk/apps/qml/Ubuntu.Components/Mouse#onEntered-signal>`__,
-`onPositionChanged </sdk/apps/qml/Ubuntu.Components/Mouse#onPositionChanged-signal>`__
-and `onExited </sdk/apps/qml/Ubuntu.Components/Mouse#onExited-signal>`__
-signals containing the mouse cursor position.
+:ref:`onEntered <sdk_ubuntu_components_mouse#onEntered-signal>`,
+:ref:`onPositionChanged <sdk_ubuntu_components_mouse#onPositionChanged-signal>`
+and :ref:`onExited <sdk_ubuntu_components_mouse#onExited-signal>` signals
+containing the mouse cursor position.
 
 | 
+
+.. _sdk_ubuntu_components_mouse_ignoreSynthesizedEvents-prop:
 
 +--------------------------------------------------------------------------+
 |        \ ignoreSynthesizedEvents : bool                                  |
@@ -477,11 +481,13 @@ If the value is true, the filter will ignore the synthesized mouse
 events.
 
 More info at `Mouse events
-synthesis </sdk/apps/qml/Ubuntu.Components/Mouse#mouse-events-synthesis>`__.
+synthesis <sdk_ubuntu_components_mouse#mouse-events-synthesis>:ref:`.
 
 The default value is false.
 
 | 
+
+.. _sdk_ubuntu_components_mouse_priority-prop:
 
 +--------------------------------------------------------------------------+
 |        \ priority : enumeration                                          |
@@ -496,8 +502,8 @@ When *BeforeItem* is set the event dispach happens based as follows:
 
 #. the event is handled by the mouse filter
 #. if there are items listed in
-   `forwardTo </sdk/apps/qml/Ubuntu.Components/Mouse#forwardTo-prop>`__
-   property, the event will be forwarded to those items
+   :ref:`forwardTo <sdk_ubuntu_components_mouse#forwardTo-prop>` property,
+   the event will be forwarded to those items
 #. the event is handed over the owner.
 
 When *AfterItem* is set the event dispach happens based as follows:
@@ -505,8 +511,8 @@ When *AfterItem* is set the event dispach happens based as follows:
 #. the event is handed over the owner;
 #. the event is handled by the mouse filter;
 #. if there are items listed in
-   `forwardTo </sdk/apps/qml/Ubuntu.Components/Mouse#forwardTo-prop>`__
-   property, the event will be forwarded to those items.
+   :ref:`forwardTo <sdk_ubuntu_components_mouse#forwardTo-prop>` property,
+   the event will be forwarded to those items.
 
 The default value is *BeforeItem*.
 
@@ -515,23 +521,25 @@ The default value is *BeforeItem*.
 Signal Documentation
 --------------------
 
+.. _sdk_ubuntu_components_mouse_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ onClicked(`MouseEvent </sdk/apps/qml/QtQuick/MouseEvent/>`__    |
-| *event*)                                                                 |
+| :ref:` <>`\ onClicked(`MouseEvent <sdk_qtquick_mouseevent>` *event*)      |
 +--------------------------------------------------------------------------+
 
 The signal reports the mouse click. The signal is not emitted if the
-`onPressAndHold </sdk/apps/qml/Ubuntu.Components/Mouse#onPressAndHold-signal>`__
+:ref:`onPressAndHold <sdk_ubuntu_components_mouse#onPressAndHold-signal>`
 got triggered or if
-`onDoubleClicked </sdk/apps/qml/Ubuntu.Components/Mouse#onDoubleClicked-signal>`__
+:ref:`onDoubleClicked <sdk_ubuntu_components_mouse#onDoubleClicked-signal>`
 is handled (a slot is connected to it). The *host* specifies the item
 that triggered the event.
 
 | 
 
+.. _sdk_ubuntu_components_mouse_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ onDoubleClicked(`MouseEvent </sdk/apps/qml/QtQuick/MouseEvent/> |
-| `__                                                                      |
+| :ref:` <>`\ onDoubleClicked(`MouseEvent <sdk_qtquick_mouseevent>`      |
 | *event*)                                                                 |
 +--------------------------------------------------------------------------+
 
@@ -540,9 +548,10 @@ that triggered the event.
 
 | 
 
+.. _sdk_ubuntu_components_mouse_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ onEntered(`MouseEvent </sdk/apps/qml/QtQuick/MouseEvent/>`__    |
-| *event*)                                                                 |
+| :ref:` <>`\ onEntered(`MouseEvent <sdk_qtquick_mouseevent>` *event*)      |
 +--------------------------------------------------------------------------+
 
 The signal reports that the mouse has entered into the area. The signal
@@ -552,9 +561,10 @@ specifies the item that triggered the event.
 
 | 
 
+.. _sdk_ubuntu_components_mouse_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ onExited(`MouseEvent </sdk/apps/qml/QtQuick/MouseEvent/>`__     |
-| *event*)                                                                 |
+| :ref:` <>`\ onExited(`MouseEvent <sdk_qtquick_mouseevent>` *event*)       |
 +--------------------------------------------------------------------------+
 
 The signal reports that the mouse has left the area. The signal is
@@ -564,9 +574,10 @@ that triggered the event.
 
 | 
 
+.. _sdk_ubuntu_components_mouse_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ onPositionChanged(`MouseEvent </sdk/apps/qml/QtQuick/MouseEvent |
-| />`__                                                                    |
+| :ref:` <>`\ onPositionChanged(`MouseEvent <sdk_qtquick_mouseevent>`    |
 | *event*)                                                                 |
 +--------------------------------------------------------------------------+
 
@@ -578,10 +589,10 @@ triggered the event.
 
 | 
 
+.. _sdk_ubuntu_components_mouse_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ onPressAndHold(`MouseEvent </sdk/apps/qml/QtQuick/MouseEvent/>` |
-| __                                                                       |
-| *event*)                                                                 |
+| :ref:` <>`\ onPressAndHold(`MouseEvent <sdk_qtquick_mouseevent>` *event*) |
 +--------------------------------------------------------------------------+
 
 The signal reports the mouse press and hold. The *host* specifies the
@@ -589,9 +600,11 @@ item that triggered the event.
 
 | 
 
+.. _sdk_ubuntu_components_mouse_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ onPressed(`MouseEvent </sdk/apps/qml/QtQuick/MouseEvent/>`__    |
-| *event*, `Item </sdk/apps/qml/QtQuick/Item/>`__ *host*)                  |
+| :ref:` <>`\ onPressed(`MouseEvent <sdk_qtquick_mouseevent>` *event*,      |
+| :ref:`Item <sdk_qtquick_item>` *host*)                                      |
 +--------------------------------------------------------------------------+
 
 The signal reports the mouse press. The *host* specifies the item that
@@ -600,8 +613,7 @@ triggered the event.
 | 
 
 +--------------------------------------------------------------------------+
-|        \ onReleased(`MouseEvent </sdk/apps/qml/QtQuick/MouseEvent/>`__   |
-| *event*)                                                                 |
+| :ref:` <>`\ onReleased(`MouseEvent <sdk_qtquick_mouseevent>` *event*)     |
 +--------------------------------------------------------------------------+
 
 The signal reports the mouse release. The *host* specifies the item that

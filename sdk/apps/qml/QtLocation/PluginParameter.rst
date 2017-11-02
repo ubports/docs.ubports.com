@@ -1,3 +1,7 @@
+.. _sdk_qtlocation_pluginparameter:
+QtLocation PluginParameter
+==========================
+
 The PluginParameter type describes a parameter to a Plugin.
 
 +---------------------+-------------------------+
@@ -9,34 +13,32 @@ The PluginParameter type describes a parameter to a Plugin.
 Properties
 ----------
 
--  ****`name </sdk/apps/qml/QtLocation/PluginParameter#name-prop>`__****
-   : string
--  ****`value </sdk/apps/qml/QtLocation/PluginParameter#value-prop>`__****
-   : QVariant
+-  :ref:`name <sdk_qtlocation_pluginparameter_name-prop>` : string
+-  :ref:`value <sdk_qtlocation_pluginparameter_value-prop>` :
+   QVariant
 
 Detailed Description
 --------------------
 
-The `PluginParameter </sdk/apps/qml/QtLocation/PluginParameter/>`__
-object is used to provide a parameter of some kind to a Plugin.
-Typically these parameters contain details like an application token for
-access to a service, or a proxy server to use for network access.
+The :ref:`PluginParameter <sdk_qtlocation_pluginparameter>` object is used
+to provide a parameter of some kind to a Plugin. Typically these
+parameters contain details like an application token for access to a
+service, or a proxy server to use for network access.
 
 To set such a parameter, declare a
-`PluginParameter </sdk/apps/qml/QtLocation/PluginParameter/>`__ inside a
-`Plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__ object,
-and give it
-`name </sdk/apps/qml/QtLocation/PluginParameter#name-prop>`__ and
-`value </sdk/apps/qml/QtLocation/PluginParameter#value-prop>`__
-properties. A list of valid parameter names for each plugin is available
-from the `plugin reference
-pages </sdk/apps/qml/QtLocation/qtlocation-index#plugin-references-and-parameters>`__.
+:ref:`PluginParameter <sdk_qtlocation_pluginparameter>` inside a
+`Plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_ 
+object, and give it :ref:`name <sdk_qtlocation_pluginparameter#name-prop>`
+and :ref:`value <sdk_qtlocation_pluginparameter#value-prop>` properties. A
+list of valid parameter names for each plugin is available from the
+`plugin reference
+pages </sdk/apps/qml/QtLocation/qtlocation-index/#plugin-references-and-parameters>`_ .
 
 Example Usage
 ~~~~~~~~~~~~~
 
 The following example shows an instantiation of the
-`Nokia </sdk/apps/qml/QtLocation/location-plugin-nokia/>`__ plugin with
+`Nokia </sdk/apps/qml/QtLocation/location-plugin-nokia/>`_  plugin with
 a mapping API *app\_id* and *token* pair specific to the application.
 
 .. code:: cpp
@@ -50,6 +52,8 @@ a mapping API *app\_id* and *token* pair specific to the application.
 Property Documentation
 ----------------------
 
+.. _sdk_qtlocation_pluginparameter_name-prop:
+
 +--------------------------------------------------------------------------+
 |        \ name : string                                                   |
 +--------------------------------------------------------------------------+
@@ -58,6 +62,8 @@ This property holds the name of the plugin parameter as a single
 formatted string.
 
 | 
+
+.. _sdk_qtlocation_pluginparameter_value-prop:
 
 +--------------------------------------------------------------------------+
 |        \ value : QVariant                                                |

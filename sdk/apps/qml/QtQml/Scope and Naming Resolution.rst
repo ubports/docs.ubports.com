@@ -1,3 +1,7 @@
+.. _sdk_qtqml_scope_and_naming_resolution:
+QtQml Scope and Naming Resolution
+=================================
+
 
 
 QML property bindings, inline functions, and imported JavaScript files
@@ -49,11 +53,11 @@ with local variables declared in another.
 .. rubric:: Type Names and Imported JavaScript Files
    :name: type-names-and-imported-javascript-files
 
-`QML Documents </sdk/apps/qml/QtQml/qtqml-documents-topic/>`__ include
+`QML Documents </sdk/apps/qml/QtQml/qtqml-documents-topic/>`_  include
 import statements that define the type names and JavaScript files
 visible to the document. In addition to their use in the QML declaration
 itself, type names are used by JavaScript code when accessing `attached
-properties </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes#attached-properties-and-attached-signal-handlers>`__
+properties </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes/#attached-properties-and-attached-signal-handlers>`_ 
 and enumeration values.
 
 The effect of an import applies to every property binding, and
@@ -80,7 +84,7 @@ some enumeration values and calls an imported JavaScript function.
    :name: binding-scope-object
 
 An object which has a `property
-binding </sdk/apps/qml/QtQml/qtqml-syntax-propertybinding/>`__ is known
+binding </sdk/apps/qml/QtQml/qtqml-syntax-propertybinding/>`_  is known
 has the binding's *scope object*. In the following example, the Item
 object is the binding's scope object.
 
@@ -98,7 +102,7 @@ JavaScript, and consequently does not require the use of the JavaScript
 ``this`` property.
 
 Care must be used when accessing `attached
-properties </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes#attached-properties-and-attached-signal-handlers>`__
+properties </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes/#attached-properties-and-attached-signal-handlers>`_ 
 from bindings due to their interaction with the scope object.
 Conceptually attached properties exist on *all* objects, even if they
 only have an effect on a subset of those. Consequently unqualified
@@ -163,9 +167,9 @@ The second ``Text`` type uses an id to access the first's text directly.
 IDs are specified explicitly by the QML programmer so they always take
 precedence over other property names (except for those in the
 `JavaScript
-Scope </sdk/apps/qml/QtQml/qtqml-documents-scope#javascript-scope>`__).
+Scope </sdk/apps/qml/QtQml/qtqml-documents-scope/#javascript-scope>`_ ).
 For example, in the unlikely event that the binding's `scope
-object </sdk/apps/qml/QtQml/qtqml-documents-scope#binding-scope-object>`__
+object </sdk/apps/qml/QtQml/qtqml-documents-scope/#binding-scope-object>`_ 
 had a ``titletype`` property in the previous example, the ``titletype``
 id would still take precedence.
 
@@ -320,6 +324,6 @@ properties on the global object to prevent any confusion. Programmers
 can be confident that ``Math.min(10, 9)`` will always work as expected!
 
 See `JavaScript Host
-Environment </sdk/apps/qml/QtQml/qtqml-javascript-hostenvironment/>`__
+Environment </sdk/apps/qml/QtQml/qtqml-javascript-hostenvironment/>`_ 
 for more information.
 

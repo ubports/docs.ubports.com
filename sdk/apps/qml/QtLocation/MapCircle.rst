@@ -1,3 +1,7 @@
+.. _sdk_qtlocation_mapcircle:
+QtLocation MapCircle
+====================
+
 The MapCircle type displays a geographic circle on a Map.
 
 +---------------------+-------------------------+
@@ -9,73 +13,68 @@ The MapCircle type displays a geographic circle on a Map.
 Properties
 ----------
 
--  ****`border </sdk/apps/qml/QtLocation/MapCircle#border-prop>`__****
+-  :ref:`border <sdk_qtlocation_mapcircle_border-prop>`
 
-   -  ****`border.width </sdk/apps/qml/QtLocation/MapCircle#border.width-prop>`__****
+   -  :ref:`border.width <sdk_qtlocation_mapcircle_border.width-prop>`
       : int
-   -  ****`border.color </sdk/apps/qml/QtLocation/MapCircle#border.color-prop>`__****
+   -  :ref:`border.color <sdk_qtlocation_mapcircle_border.color-prop>`
       : color
 
--  ****`center </sdk/apps/qml/QtLocation/MapCircle#center-prop>`__**** :
+-  :ref:`center <sdk_qtlocation_mapcircle_center-prop>` :
    coordinate
--  ****`color </sdk/apps/qml/QtLocation/MapCircle#color-prop>`__**** :
-   color
--  ****`opacity </sdk/apps/qml/QtLocation/MapCircle#opacity-prop>`__****
-   : real
--  ****`radius </sdk/apps/qml/QtLocation/MapCircle#radius-prop>`__**** :
-   real
+-  :ref:`color <sdk_qtlocation_mapcircle_color-prop>` : color
+-  :ref:`opacity <sdk_qtlocation_mapcircle_opacity-prop>` : real
+-  :ref:`radius <sdk_qtlocation_mapcircle_radius-prop>` : real
 
 Detailed Description
 --------------------
 
-The `MapCircle </sdk/apps/qml/QtLocation/MapCircle/>`__ type displays a
-geographic circle on a Map, which consists of all points that are within
-a set distance from one central point. Depending on map projection, a
+The :ref:`MapCircle <sdk_qtlocation_mapcircle>` type displays a geographic
+circle on a Map, which consists of all points that are within a set
+distance from one central point. Depending on map projection, a
 geographic circle may not always be a perfect circle on the screen: for
 instance, in the Mercator projection, circles become ovoid in shape as
 they near the poles. To display a perfect screen circle around a point,
-use a `MapQuickItem </sdk/apps/qml/QtLocation/MapQuickItem/>`__
-containing a relevant Qt Quick type instead.
+use a :ref:`MapQuickItem <sdk_qtlocation_mapquickitem>` containing a
+relevant Qt Quick type instead.
 
 By default, the circle is displayed as a 1 pixel black border with no
 fill. To change its appearance, use the color, border.color and
 border.width properties.
 
-Internally, a `MapCircle </sdk/apps/qml/QtLocation/MapCircle/>`__ is
-implemented as a many-sided polygon. To calculate the radius points it
-uses a spherical model of the Earth, similar to the atDistanceAndAzimuth
-method of the coordinate type. These two things can occasionally have
-implications for the accuracy of the circle's shape, depending on
-position and map projection.
+Internally, a :ref:`MapCircle <sdk_qtlocation_mapcircle>` is implemented as
+a many-sided polygon. To calculate the radius points it uses a spherical
+model of the Earth, similar to the atDistanceAndAzimuth method of the
+coordinate type. These two things can occasionally have implications for
+the accuracy of the circle's shape, depending on position and map
+projection.
 
-**Note:** Dragging a `MapCircle </sdk/apps/qml/QtLocation/MapCircle/>`__
-(through the use of MouseArea) causes new points to be generated at the
-same distance (in meters) from the center. This is in contrast to other
-map items which store their dimensions in terms of latitude and
-longitude differences between vertices.
+**Note:** Dragging a :ref:`MapCircle <sdk_qtlocation_mapcircle>` (through
+the use of MouseArea) causes new points to be generated at the same
+distance (in meters) from the center. This is in contrast to other map
+items which store their dimensions in terms of latitude and longitude
+differences between vertices.
 
 Performance
 ~~~~~~~~~~~
 
-`MapCircle </sdk/apps/qml/QtLocation/MapCircle/>`__ performance is
-almost equivalent to that of a
-`MapPolygon </sdk/apps/qml/QtLocation/MapPolygon/>`__ with 125 vertices.
-There is a small amount of additional overhead with respect to
-calculating the vertices first.
+:ref:`MapCircle <sdk_qtlocation_mapcircle>` performance is almost
+equivalent to that of a :ref:`MapPolygon <sdk_qtlocation_mappolygon>` with
+125 vertices. There is a small amount of additional overhead with
+respect to calculating the vertices first.
 
-Like the other map objects,
-`MapCircle </sdk/apps/qml/QtLocation/MapCircle/>`__ is normally drawn
-without a smooth appearance. Setting the opacity property will force the
-object to be blended, which decreases performance considerably depending
-on the graphics hardware in use.
+Like the other map objects, :ref:`MapCircle <sdk_qtlocation_mapcircle>` is
+normally drawn without a smooth appearance. Setting the opacity property
+will force the object to be blended, which decreases performance
+considerably depending on the graphics hardware in use.
 
 Example Usage
 ~~~~~~~~~~~~~
 
 The following snippet shows a map containing a
-`MapCircle </sdk/apps/qml/QtLocation/MapCircle/>`__, centered at the
-coordinate (-27, 153) with a radius of 5km. The circle is filled in
-green, with a 3 pixel black border.
+:ref:`MapCircle <sdk_qtlocation_mapcircle>`, centered at the coordinate
+(-27, 153) with a radius of 5km. The circle is filled in green, with a 3
+pixel black border.
 
 .. code:: cpp
 
@@ -96,9 +95,12 @@ green, with a 3 pixel black border.
 Property Documentation
 ----------------------
 
+.. _sdk_qtlocation_mapcircle_**border group**-prop:
+
 +--------------------------------------------------------------------------+
 |        \ **border group**                                                |
 +==========================================================================+
+.. _sdk_qtlocation_mapcircle_border.color-prop:
 |        \ border.width : int                                              |
 +--------------------------------------------------------------------------+
 |        \ border.color : color                                            |
@@ -113,16 +115,19 @@ For no line, use a width of 0 or a transparent color.
 
 | 
 
+.. _sdk_qtlocation_mapcircle_center-prop:
+
 +--------------------------------------------------------------------------+
 |        \ center : coordinate                                             |
 +--------------------------------------------------------------------------+
 
 This property holds the central point about which the circle is defined.
 
-**See also**
-`radius </sdk/apps/qml/QtLocation/MapCircle#radius-prop>`__.
+**See also** :ref:`radius <sdk_qtlocation_mapcircle#radius-prop>`.
 
 | 
+
+.. _sdk_qtlocation_mapcircle_color-prop:
 
 +--------------------------------------------------------------------------+
 |        \ color : color                                                   |
@@ -132,6 +137,8 @@ This property holds the fill color of the circle when drawn. For no
 fill, use a transparent color.
 
 | 
+
+.. _sdk_qtlocation_mapcircle_opacity-prop:
 
 +--------------------------------------------------------------------------+
 |        \ opacity : real                                                  |
@@ -146,16 +153,17 @@ events, set the visible property of the item to false.
 
 | 
 
+.. _sdk_qtlocation_mapcircle_radius-prop:
+
 +--------------------------------------------------------------------------+
 |        \ radius : real                                                   |
 +--------------------------------------------------------------------------+
 
 This property holds the radius of the circle, in meters on the ground.
 
-**See also**
-`center </sdk/apps/qml/QtLocation/MapCircle#center-prop>`__.
+**See also** :ref:`center <sdk_qtlocation_mapcircle#center-prop>`.
 
 | 
 
-.. |image0| image:: /media/sdk/apps/qml/QtLocation/MapCircle/images/sdk-mapcircle.png
+.. |image0| image:: /mediasdk_qtlocation_mapcircleimages/sdk-mapcircle.png
 

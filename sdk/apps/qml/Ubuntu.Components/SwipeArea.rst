@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_swipearea:
+Ubuntu.Components SwipeArea
+===========================
+
 An area which detects axis-aligned single-finger drag gestures.
 
 +--------------------------------------+--------------------------------------+
@@ -5,26 +9,25 @@ An area which detects axis-aligned single-finger drag gestures.
 +--------------------------------------+--------------------------------------+
 | Since:                               | Ubuntu.Components 1.3                |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Item </sdk/apps/qml/QtQuick/Item/>` |
-|                                      | __                                   |
+| Inherits:                            | :ref:`Item <sdk_qtquick_item>`       |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`direction </sdk/apps/qml/Ubuntu.Components/SwipeArea#direction-prop>`__****
+-  :ref:`direction <sdk_ubuntu_components_swipearea_direction-prop>`
    : enum
--  ****`distance </sdk/apps/qml/Ubuntu.Components/SwipeArea#distance-prop>`__****
+-  :ref:`distance <sdk_ubuntu_components_swipearea_distance-prop>`
    : real
--  ****`dragging </sdk/apps/qml/Ubuntu.Components/SwipeArea#dragging-prop>`__****
+-  :ref:`dragging <sdk_ubuntu_components_swipearea_dragging-prop>`
    : bool
--  ****`grabGesture </sdk/apps/qml/Ubuntu.Components/SwipeArea#grabGesture-prop>`__****
+-  :ref:`grabGesture <sdk_ubuntu_components_swipearea_grabGesture-prop>`
    : bool
--  ****`immediateRecognition </sdk/apps/qml/Ubuntu.Components/SwipeArea#immediateRecognition-prop>`__****
+-  :ref:`immediateRecognition <sdk_ubuntu_components_swipearea_immediateRecognition-prop>`
    : bool
--  ****`pressed </sdk/apps/qml/Ubuntu.Components/SwipeArea#pressed-prop>`__****
-   : bool
--  ****`touchPosition </sdk/apps/qml/Ubuntu.Components/SwipeArea#touchPosition-prop>`__****
+-  :ref:`pressed <sdk_ubuntu_components_swipearea_pressed-prop>` :
+   bool
+-  :ref:`touchPosition <sdk_ubuntu_components_swipearea_touchPosition-prop>`
    : point
 
 Detailed Description
@@ -32,19 +35,17 @@ Detailed Description
 
 The component can be used to detect gestures of a certain direction, and
 can grab gestures started on a component placed behind of the
-`SwipeArea </sdk/apps/qml/Ubuntu.Components/SwipeArea/>`__. The gesture
-is detected on the
-`SwipeArea </sdk/apps/qml/Ubuntu.Components/SwipeArea/>`__, therefore
-the size must be chosen carefully so it can properly detect the gesture.
+:ref:`SwipeArea <sdk_ubuntu_components_swipearea>`. The gesture is detected
+on the :ref:`SwipeArea <sdk_ubuntu_components_swipearea>`, therefore the
+size must be chosen carefully so it can properly detect the gesture.
 
 The gesture direction is specified by the
-`direction </sdk/apps/qml/Ubuntu.Components/SwipeArea#direction-prop>`__
-property. The recognized and captured gesture is reported through the
-`dragging </sdk/apps/qml/Ubuntu.Components/SwipeArea#dragging-prop>`__
-property, which becomes ``true`` when the gesture is detected. If there
-was a component under the
-`SwipeArea </sdk/apps/qml/Ubuntu.Components/SwipeArea/>`__, the gesture
-will be cancelled on that component.
+:ref:`direction <sdk_ubuntu_components_swipearea#direction-prop>` property.
+The recognized and captured gesture is reported through the
+:ref:`dragging <sdk_ubuntu_components_swipearea#dragging-prop>` property,
+which becomes ``true`` when the gesture is detected. If there was a
+component under the :ref:`SwipeArea <sdk_ubuntu_components_swipearea>`, the
+gesture will be cancelled on that component.
 
 The drag recognition is performed within the component area in the
 specified direction. If the drag deviates too much from this,
@@ -83,14 +84,15 @@ Example:
     }
 
 **Note:** When used with a Flickable (or
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__,
-`GridView </sdk/apps/qml/QtQuick/qtquick-draganddrop-example#gridview>`__)
-always put the
-`SwipeArea </sdk/apps/qml/Ubuntu.Components/SwipeArea/>`__ next to the
-Flickable as sibling.
+:ref:`ListView <sdk_qtquick_listview>`,
+`GridView </sdk/apps/qml/QtQuick/qtquick-draganddrop-example/#gridview>`_ )
+always put the :ref:`SwipeArea <sdk_ubuntu_components_swipearea>` next to
+the Flickable as sibling.
 
 Property Documentation
 ----------------------
+
+.. _sdk_ubuntu_components_swipearea_direction-prop:
 
 +--------------------------------------------------------------------------+
 |        \ direction : enum                                                |
@@ -99,23 +101,32 @@ Property Documentation
 The direction in which the gesture should move in order to be
 recognized.
 
+.. _sdk_ubuntu_components_swipearea_Direction     Description-prop:
+
 +--------------+----------------------------------------------+
 | Direction    | Description                                  |
 +==============+==============================================+
+.. _sdk_ubuntu_components_swipearea_Leftwards     Along the negative direction of the X axis-prop:
 | Rightwards   | Along the positive direction of the X axis   |
 +--------------+----------------------------------------------+
+.. _sdk_ubuntu_components_swipearea_Downwards     Along the positive direction of the Y axis-prop:
 | Leftwards    | Along the negative direction of the X axis   |
 +--------------+----------------------------------------------+
+.. _sdk_ubuntu_components_swipearea_Upwards       Along the negative direction of the Y axis-prop:
 | Downwards    | Along the positive direction of the Y axis   |
 +--------------+----------------------------------------------+
+.. _sdk_ubuntu_components_swipearea_Horizontal    Along the X axis, in any direction-prop:
 | Upwards      | Along the negative direction of the Y axis   |
 +--------------+----------------------------------------------+
+.. _sdk_ubuntu_components_swipearea_Vertical      Along the Y axis, in any direction-prop:
 | Horizontal   | Along the X axis, in any direction           |
 +--------------+----------------------------------------------+
 | Vertical     | Along the Y axis, in any direction           |
 +--------------+----------------------------------------------+
 
 | 
+
+.. _sdk_ubuntu_components_swipearea_[read-only] distance-prop:
 
 +--------------------------------------------------------------------------+
 |        \ [read-only] distance : real                                     |
@@ -126,6 +137,8 @@ gesture recognition to the current touch position.
 
 | 
 
+.. _sdk_ubuntu_components_swipearea_[read-only] dragging-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [read-only] dragging : bool                                     |
 +--------------------------------------------------------------------------+
@@ -134,18 +147,22 @@ Reports whether a drag gesture is taking place.
 
 | 
 
+.. _sdk_ubuntu_components_swipearea_grabGesture-prop:
+
 +--------------------------------------------------------------------------+
 |        \ grabGesture : bool                                              |
 +--------------------------------------------------------------------------+
 
 If true, any gestures will be grabbed and owned by the
-`SwipeArea </sdk/apps/qml/Ubuntu.Components/SwipeArea/>`__ as usual. If
-false, gestures will still be reported, but events may be grabbed by
-another Qml object.
+:ref:`SwipeArea <sdk_ubuntu_components_swipearea>` as usual. If false,
+gestures will still be reported, but events may be grabbed by another
+Qml object.
 
 Defaults to true. In most cases this should not be unset.
 
 | 
+
+.. _sdk_ubuntu_components_swipearea_immediateRecognition-prop:
 
 +--------------------------------------------------------------------------+
 |        \ immediateRecognition : bool                                     |
@@ -153,11 +170,13 @@ Defaults to true. In most cases this should not be unset.
 
 Drives whether the gesture should be recognized as soon as the touch
 lands on the area. With this property set it will work the same way as a
-`MultiPointTouchArea </sdk/apps/qml/QtQuick/MultiPointTouchArea/>`__,
+:ref:`MultiPointTouchArea <sdk_qtquick_multipointtoucharea>`,
 
 Defaults to false. In most cases this should not be set.
 
 | 
+
+.. _sdk_ubuntu_components_swipearea_[read-only] pressed-prop:
 
 +--------------------------------------------------------------------------+
 |        \ [read-only] pressed : bool                                      |
@@ -167,9 +186,11 @@ Reports whether the drag area is pressed.
 
 | 
 
+.. _sdk_ubuntu_components_swipearea_[read-only] touchPosition-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [read-only] touchPosition :                                     |
-| `point <http://doc.qt.io/qt-5/qml-point.html>`__                         |
+| `point <http://doc.qt.io/qt-5/qml-point.html>`_                          |
 +--------------------------------------------------------------------------+
 
 Position of the touch point performing the drag relative to this item.

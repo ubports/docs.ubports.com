@@ -1,3 +1,7 @@
+.. _sdk_qtquick_itemgrabresult:
+QtQuick ItemGrabResult
+======================
+
 Contains the results from a call to Item::grabToImage().
 
 +---------------------+------------------------+
@@ -10,20 +14,22 @@ Methods
 -------
 
 -  bool
-   ****`saveToFile </sdk/apps/qml/QtQuick/ItemGrabResult#saveToFile-method>`__****\ (fileName)
+   **:ref:`saveToFile <sdk_qtquick_itemgrabresult#saveToFile-method>`**\ (fileName)
 
 Detailed Description
 --------------------
 
-The `ItemGrabResult </sdk/apps/qml/QtQuick/ItemGrabResult/>`__ is a
-small container used to encapsulate the results from
-`Item::grabToImage() </sdk/apps/qml/QtQuick/Item#grabToImage-method>`__.
+The :ref:`ItemGrabResult <sdk_qtquick_itemgrabresult>` is a small container
+used to encapsulate the results from
+:ref:`Item::grabToImage() <sdk_qtquick_item#grabToImage-method>`.
 
 **See also**
-`Item::grabToImage() </sdk/apps/qml/QtQuick/Item#grabToImage-method>`__.
+:ref:`Item::grabToImage() <sdk_qtquick_item#grabToImage-method>`.
 
 Method Documentation
 --------------------
+
+.. _sdk_qtquick_itemgrabresult_bool saveToFile-method:
 
 +--------------------------------------------------------------------------+
 |        \ bool saveToFile(fileName)                                       |

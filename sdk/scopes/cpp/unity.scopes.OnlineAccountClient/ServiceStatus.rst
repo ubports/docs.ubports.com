@@ -1,6 +1,10 @@
+.. _sdk_unity_scopes_onlineaccountclient_servicestatus:
+unity.scopes.OnlineAccountClient ServiceStatus
+==============================================
+
 A container for details about a service's status and authorization
 parameters.
-`More... </sdk/scopes/cpp/unity.scopes.OnlineAccountClient/ServiceStatus#details>`__
+:ref:`More... <sdk_unity_scopes_onlineaccountclient_servicestatus#details>`
 
 ``#include <unity/scopes/OnlineAccountClient.h>``
 
@@ -9,7 +13,7 @@ parameters.
 
         unsigned int 
 
-`account\_id </sdk/scopes/cpp/unity.scopes.OnlineAccountClient/ServiceStatus#a3fff11d6960ba38de9eab3be2028352a>`__
+:ref:`account\_id <sdk_unity_scopes_onlineaccountclient_servicestatus#a3fff11d6960ba38de9eab3be2028352a>`
 
  
 
@@ -19,7 +23,7 @@ parameters.
 
         bool 
 
-`service\_enabled </sdk/scopes/cpp/unity.scopes.OnlineAccountClient/ServiceStatus#af38877a3d603f348af2af6d411aef1e2>`__
+:ref:`service\_enabled <sdk_unity_scopes_onlineaccountclient_servicestatus#af38877a3d603f348af2af6d411aef1e2>`
 
  
 
@@ -29,7 +33,7 @@ parameters.
 
         bool 
 
-`service\_authenticated </sdk/scopes/cpp/unity.scopes.OnlineAccountClient/ServiceStatus#ad9e794cbd45b76b73efdc8915685609a>`__
+:ref:`service\_authenticated <sdk_unity_scopes_onlineaccountclient_servicestatus#ad9e794cbd45b76b73efdc8915685609a>`
 
  
 
@@ -39,7 +43,7 @@ parameters.
 
         std::string 
 
-`client\_id </sdk/scopes/cpp/unity.scopes.OnlineAccountClient/ServiceStatus#a8bac7d6bcec29cc8d4c45309a6dce350>`__
+:ref:`client\_id <sdk_unity_scopes_onlineaccountclient_servicestatus#a8bac7d6bcec29cc8d4c45309a6dce350>`
 
  
 
@@ -49,7 +53,7 @@ parameters.
 
         std::string 
 
-`client\_secret </sdk/scopes/cpp/unity.scopes.OnlineAccountClient/ServiceStatus#a3025d89ff5f55e267e95c17d9af89d83>`__
+:ref:`client\_secret <sdk_unity_scopes_onlineaccountclient_servicestatus#a3025d89ff5f55e267e95c17d9af89d83>`
 
  
 
@@ -59,7 +63,7 @@ parameters.
 
         std::string 
 
-`access\_token </sdk/scopes/cpp/unity.scopes.OnlineAccountClient/ServiceStatus#a0f0f2471eaeb130f65cdbebd8c6cd40e>`__
+:ref:`access\_token <sdk_unity_scopes_onlineaccountclient_servicestatus#a0f0f2471eaeb130f65cdbebd8c6cd40e>`
 
  
 
@@ -69,7 +73,7 @@ parameters.
 
         std::string 
 
-`token\_secret </sdk/scopes/cpp/unity.scopes.OnlineAccountClient/ServiceStatus#abfb75786e9d517da4dce71e65c3f5bec>`__
+:ref:`token\_secret <sdk_unity_scopes_onlineaccountclient_servicestatus#abfb75786e9d517da4dce71e65c3f5bec>`
 
  
 
@@ -79,7 +83,7 @@ parameters.
 
         std::string 
 
-`error </sdk/scopes/cpp/unity.scopes.OnlineAccountClient/ServiceStatus#a73fac8ec582336993a476026d80c250b>`__
+:ref:`error <sdk_unity_scopes_onlineaccountclient_servicestatus#a73fac8ec582336993a476026d80c250b>`
 
  
 

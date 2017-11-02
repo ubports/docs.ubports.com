@@ -1,3 +1,7 @@
+.. _sdk_qtcontacts_guid:
+QtContacts Guid
+===============
+
 The Guid element contains a globally unique Id of a contact, for use in
 synchronization with other datastores.
 
@@ -8,7 +12,7 @@ synchronization with other datastores.
 Properties
 ----------
 
--  ****`guid </sdk/apps/qml/QtContacts/Guid#guid-prop>`__**** : string
+-  :ref:`guid <sdk_qtcontacts_guid_guid-prop>` : string
 
 Detailed Description
 --------------------
@@ -21,6 +25,8 @@ This element is part of the **QtContacts** module.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtcontacts_guid_guid-prop:
 
 +--------------------------------------------------------------------------+
 |        \ guid : string                                                   |

@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_actioncontext:
+Ubuntu.Components ActionContext
+===============================
+
 ActionContext groups actions together and by providing multiple contexts
 the developer is able to control the visibility of the actions. The
 ActionManager then exposes the actions from these different contexts.
@@ -5,8 +9,8 @@ ActionManager then exposes the actions from these different contexts.
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import Ubuntu.Components 1.3         |
 +--------------------------------------+--------------------------------------+
-| Inherited By:                        | `PopupContext </sdk/apps/qml/Ubuntu. |
-|                                      | Components/PopupContext/>`__.        |
+| Inherited By:                        | :ref:`PopupContext <sdk_ubuntu_components |
+|                                      | _popupcontext>`_ .                   |
 +--------------------------------------+--------------------------------------+
 
 -  Obsolete members
@@ -14,26 +18,24 @@ ActionManager then exposes the actions from these different contexts.
 Properties
 ----------
 
--  ****`actions </sdk/apps/qml/Ubuntu.Components/ActionContext#actions-prop>`__****
+-  :ref:`actions <sdk_ubuntu_components_actioncontext_actions-prop>`
    : list<Action>
--  ****`active </sdk/apps/qml/Ubuntu.Components/ActionContext#active-prop>`__****
+-  :ref:`active <sdk_ubuntu_components_actioncontext_active-prop>`
    : bool
 
 Detailed Description
 --------------------
 
-`ActionContext </sdk/apps/qml/Ubuntu.Components/ActionContext/>`__
-drives the state of its
-`actions </sdk/apps/qml/Ubuntu.Components/ActionContext#actions-prop>`__.
+:ref:`ActionContext <sdk_ubuntu_components_actioncontext>` drives the state
+of its :ref:`actions <sdk_ubuntu_components_actioncontext#actions-prop>`.
 Shortcuts and mnemonics are only registered if the context is active or
 if the action is assigned to an
-`ActionItem </sdk/apps/qml/Ubuntu.Components/ActionItem/>`__ all of
-whose parent contexts are active. In the following example the
-`ActionContext </sdk/apps/qml/Ubuntu.Components/ActionContext/>`__
-drives the underlaying ``action1`` and ``action2`` shortcuts, and
-``orphanAction`` will never trigger as it is neither enclosed in an
-active context nor assigned to an
-`ActionItem </sdk/apps/qml/Ubuntu.Components/ActionItem/>`__.
+:ref:`ActionItem <sdk_ubuntu_components_actionitem>` all of whose parent
+contexts are active. In the following example the
+:ref:`ActionContext <sdk_ubuntu_components_actioncontext>` drives the
+underlaying ``action1`` and ``action2`` shortcuts, and ``orphanAction``
+will never trigger as it is neither enclosed in an active context nor
+assigned to an :ref:`ActionItem <sdk_ubuntu_components_actionitem>`.
 
 .. code:: qml
 
@@ -82,26 +84,29 @@ active context nor assigned to an
     }
 
 The toolkit assigns an
-`ActionContext </sdk/apps/qml/Ubuntu.Components/ActionContext/>`__ to
-each Page component, which is activated/deactivated together with the
-Page itself, driving the shortcut activations on the components and
-actions declared in the Page.
+:ref:`ActionContext <sdk_ubuntu_components_actioncontext>` to each Page
+component, which is activated/deactivated together with the Page itself,
+driving the shortcut activations on the components and actions declared
+in the Page.
 
-**See also**
-`PopupContext </sdk/apps/qml/Ubuntu.Components/PopupContext/>`__.
+**See also** :ref:`PopupContext <sdk_ubuntu_components_popupcontext>`.
 
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_actioncontext_actions-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [default] actions :                                             |
-| list<`Action </sdk/apps/qml/Ubuntu.Components/Action/>`__>               |
+| list<:ref:`Action <sdk_ubuntu_components_action>`>                          |
 +--------------------------------------------------------------------------+
 
 List of Actions in this
-`ActionContext </sdk/apps/qml/Ubuntu.Components/ActionContext/>`__.
+:ref:`ActionContext <sdk_ubuntu_components_actioncontext>`.
 
 | 
+
+.. _sdk_ubuntu_components_actioncontext_active-prop:
 
 +--------------------------------------------------------------------------+
 |        \ active : bool                                                   |
@@ -111,15 +116,15 @@ If true the context is active. If false the context is inactive.
 Defaults to false.
 
 When context has been added to the
-`ActionManager </sdk/apps/qml/Ubuntu.Components/ActionManager/>`__
-setting this value controls whether or not the actions in a context are
-available to external components.
+:ref:`ActionManager <sdk_ubuntu_components_actionmanager>` setting this
+value controls whether or not the actions in a context are available to
+external components.
 
-The `ActionManager </sdk/apps/qml/Ubuntu.Components/ActionManager/>`__
-monitors the active property of each of the local contexts that has been
-added to it. There can be more than one local context active at a. time.
-When a local context is set active the manager will notice this and will
-export the actions from the context.
+The :ref:`ActionManager <sdk_ubuntu_components_actionmanager>` monitors the
+active property of each of the local contexts that has been added to it.
+There can be more than one local context active at a. time. When a local
+context is set active the manager will notice this and will export the
+actions from the context.
 
 **Note:** An Action declared to a component falling under an item that
 is a child of an inactive ActiveContext can be triggered manually using

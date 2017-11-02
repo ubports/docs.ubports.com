@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_haptics:
+Ubuntu.Components Haptics
+=========================
+
 Singleton defining the haptics feedback used in components, where
 execution of the feedback is controlled by the system settings.
 
@@ -8,16 +12,16 @@ execution of the feedback is controlled by the system settings.
 Properties
 ----------
 
--  ****`effect </sdk/apps/qml/Ubuntu.Components/Haptics#effect-prop>`__****
-   : HapticsEffect
--  ****`enabled </sdk/apps/qml/Ubuntu.Components/Haptics#enabled-prop>`__****
-   : bool
+-  :ref:`effect <sdk_ubuntu_components_haptics_effect-prop>` :
+   HapticsEffect
+-  :ref:`enabled <sdk_ubuntu_components_haptics_enabled-prop>` :
+   bool
 
 Methods
 -------
 
 -  void
-   ****`play </sdk/apps/qml/Ubuntu.Components/Haptics#play-method>`__****\ (var
+   **:ref:`play <sdk_ubuntu_components_haptics#play-method>`**\ (var
    *customEffect*)
 
 Detailed Description
@@ -25,9 +29,8 @@ Detailed Description
 
 Supports global feedback as well as custom feedback. Global feedback can
 be configured through its properties, and
-`play </sdk/apps/qml/Ubuntu.Components/Haptics#play-method>`__ function
-will play the default configuration, or a custom one if parameter is
-given.
+:ref:`play <sdk_ubuntu_components_haptics#play-method>` function will play
+the default configuration, or a custom one if parameter is given.
 
 Example of using Haptics:
 
@@ -72,13 +75,14 @@ Custom effects can be played as follows:
     }
 
 **Note:** Though the
-`effect </sdk/apps/qml/Ubuntu.Components/Haptics#effect-prop>`__
-property exposes ``start``, ``stop`` and ``pause`` functions, use those
-only if you want to have feedback independent from what the system
-setting is.
+:ref:`effect <sdk_ubuntu_components_haptics#effect-prop>` property exposes
+``start``, ``stop`` and ``pause`` functions, use those only if you want
+to have feedback independent from what the system setting is.
 
 Property Documentation
 ----------------------
+
+.. _sdk_ubuntu_components_haptics_[read-only] effect-prop:
 
 +--------------------------------------------------------------------------+
 |        \ [read-only] effect : HapticsEffect                              |
@@ -92,6 +96,8 @@ and with an intensity of 0.0.
 
 | 
 
+.. _sdk_ubuntu_components_haptics_[read-only] enabled-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [read-only] enabled : bool                                      |
 +--------------------------------------------------------------------------+
@@ -104,14 +110,16 @@ the system.
 Method Documentation
 --------------------
 
+.. _sdk_ubuntu_components_haptics_void play-method:
+
 +--------------------------------------------------------------------------+
-|        \ void play(`var <http://doc.qt.io/qt-5/qml-var.html>`__          |
+|        \ void play(`var <http://doc.qt.io/qt-5/qml-var.html>`_           |
 | *customEffect*)                                                          |
 +--------------------------------------------------------------------------+
 
 The function plays the feedback with the configuration specified in
-`effect </sdk/apps/qml/Ubuntu.Components/Haptics#effect-prop>`__ if no
-parameter is given. Custom effect can be played by specifying the effect
+:ref:`effect <sdk_ubuntu_components_haptics#effect-prop>` if no parameter
+is given. Custom effect can be played by specifying the effect
 properties in a JSON object in ``customEffect``.
 
 The function will exit unconditionaly if playing the effects is blocked
@@ -122,7 +130,7 @@ one was a default haptics effect. In case of custom effects, the
 previous effect will be stopped, and settings will be restored before
 the new haptics will be played. The custom settings properties (the ones
 which are required to be different from the ones defined in the
-`effect </sdk/apps/qml/Ubuntu.Components/Haptics#effect-prop>`__) must
-be specified in the parameter in a JSON object.
+:ref:`effect <sdk_ubuntu_components_haptics#effect-prop>`) must be
+specified in the parameter in a JSON object.
 
 | 

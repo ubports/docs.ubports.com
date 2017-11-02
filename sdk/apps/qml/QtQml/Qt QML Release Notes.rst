@@ -1,3 +1,7 @@
+.. _sdk_qtqml_qt_qml_release_notes:
+QtQml Qt QML Release Notes
+==========================
+
 
 
 .. rubric:: Qt QML in Qt 5.1
@@ -9,12 +13,12 @@ This is a summary of the new changes:
 -  New QQmlApplicationEngine convenience class for QML applications.
 -  New Instantiatior type for generic, dynamic object creation.
 -  New properties for
-   `Qt.application </sdk/apps/qml/QtQml/Qt#application-prop>`__:
-   arguments, name, and version.
+   :ref:`Qt.application <sdk_qtqml_qt#application-prop>`: arguments, name,
+   and version.
 -  The 'with' statement has been deprecated and is slated for removal in
    a future version of the language.
--  New `Qt.platform </sdk/apps/qml/QtQml/Qt#platform-prop>`__ object
-   with an ``os`` property
+-  New :ref:`Qt.platform <sdk_qtqml_qt#platform-prop>` object with an
+   ``os`` property
 -  New qmlClearTypeRegistrations() function drops all data from
    qmlRegisterType() calls
 -  New qmlRegisterType() function for registering composite types.
@@ -33,13 +37,13 @@ The What's New in Qt 5.1 has more information about the Qt 5.1 release.
 .. rubric:: Qt QML in Qt 5.0
    :name: qt-qml-in-qt-5-0
 
-The `Qt QML </sdk/apps/qml/QtQml/qtqml-index/>`__ module is new in Qt
+The `Qt QML </sdk/apps/qml/QtQml/qtqml-index/>`_  module is new in Qt
 5.0. It provides the QML engine and implements the QML language
 supporting infrastructure.
 
 (Prior to Qt 5, this functionality was provided by the QtDeclarative
 module, which has now been replaced by the new `Qt
-QML </sdk/apps/qml/QtQml/qtqml-index/>`__ and Qt Quick modules. See the
+QML </sdk/apps/qml/QtQml/qtqml-index/>`_  and Qt Quick modules. See the
 Porting QML Applications to Qt 5 page for more information.)
 
 .. rubric:: QML Engine
@@ -62,7 +66,7 @@ Porting QML Applications to Qt 5 page for more information.)
    -  From QML code, this behavior can enabled by:
 
       -  Calling the new Component
-         `Component::incubateObject </sdk/apps/qml/QtQml/Component#incubateObject-method>`__
+         :ref:`Component::incubateObject <sdk_qtqml_component#incubateObject-method>`
          method
       -  Passing the ``Component.Asynchronous`` parameter to
          ``Qt.createComponent()``
@@ -116,7 +120,7 @@ Porting QML Applications to Qt 5 page for more information.)
 
 -  QQmlExpression can now be constructed directly (and more efficiently)
    from a QQmlScriptString.
--  The `Qt </sdk/apps/qml/QtQml/Qt/>`__ global object now provides an
-   `inputMethod </sdk/apps/qml/QtQml/Qt#inputMethod-prop>`__ property to
-   access the active text input method for an application.
+-  The :ref:`Qt <sdk_qtqml_qt>` global object now provides an
+   :ref:`inputMethod <sdk_qtqml_qt#inputMethod-prop>` property to access
+   the active text input method for an application.
 

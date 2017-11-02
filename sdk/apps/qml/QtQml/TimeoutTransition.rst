@@ -1,3 +1,7 @@
+.. _sdk_qtqml_timeouttransition:
+QtQml TimeoutTransition
+=======================
+
 The TimeoutTransition type provides a transition based on a timer.
 
 +--------------------------------------+--------------------------------------+
@@ -5,26 +9,25 @@ The TimeoutTransition type provides a transition based on a timer.
 +--------------------------------------+--------------------------------------+
 | Since:                               | Qt 5.4                               |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `QSignalTransition </sdk/apps/qml/Qt |
-|                                      | Qml/QSignalTransition/>`__           |
+| Inherits:                            | :ref:`QSignalTransition <sdk_qtqml_qsigna |
+|                                      | ltransition>`_                       |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`timeout </sdk/apps/qml/QtQml/TimeoutTransition#timeout-prop>`__****
-   : int
+-  :ref:`timeout <sdk_qtqml_timeouttransition_timeout-prop>` : int
 
 Detailed Description
 --------------------
 
-`Timer </sdk/apps/qml/QtQml/Timer/>`__ type can be combined with
-`SignalTransition </sdk/apps/qml/QtQml/SignalTransition/>`__ to enact
-more complex timeout based transitions.
+:ref:`Timer <sdk_qtqml_timer>` type can be combined with
+:ref:`SignalTransition <sdk_qtqml_signaltransition>` to enact more complex
+timeout based transitions.
 
-`TimeoutTransition </sdk/apps/qml/QtQml/TimeoutTransition/>`__ is part
-of `The Declarative State Machine
-Framework </sdk/apps/qml/QtQml/qmlstatemachine/>`__.
+:ref:`TimeoutTransition <sdk_qtqml_timeouttransition>` is part of `The
+Declarative State Machine
+Framework </sdk/apps/qml/QtQml/qmlstatemachine/>`_ .
 
 Example Usage
 -------------
@@ -60,13 +63,15 @@ Example Usage
 
 | 
 
-**See also** `StateMachine </sdk/apps/qml/QtQml/StateMachine/>`__,
-`SignalTransition </sdk/apps/qml/QtQml/SignalTransition/>`__,
-`FinalState </sdk/apps/qml/QtQml/FinalState/>`__, and
-`HistoryState </sdk/apps/qml/QtQml/HistoryState/>`__.
+**See also** :ref:`StateMachine <sdk_qtqml_statemachine>`,
+:ref:`SignalTransition <sdk_qtqml_signaltransition>`,
+:ref:`FinalState <sdk_qtqml_finalstate>`, and
+:ref:`HistoryState <sdk_qtqml_historystate>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtqml_timeouttransition_timeout-prop:
 
 +--------------------------------------------------------------------------+
 |        \ timeout : int                                                   |

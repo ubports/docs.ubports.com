@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_livetimer:
+Ubuntu.Components LiveTimer
+===========================
+
 A live timing source providing peridioc updates.
 
 +---------------------+--------------------------------+
@@ -9,23 +13,23 @@ A live timing source providing peridioc updates.
 Properties
 ----------
 
--  ****`frequency </sdk/apps/qml/Ubuntu.Components/LiveTimer#frequency-prop>`__****
+-  :ref:`frequency <sdk_ubuntu_components_livetimer_frequency-prop>`
    : enumeration
--  ****`relativeTime </sdk/apps/qml/Ubuntu.Components/LiveTimer#relativeTime-prop>`__****
+-  :ref:`relativeTime <sdk_ubuntu_components_livetimer_relativeTime-prop>`
    : datetime
 
 Signals
 -------
 
--  ****`trigger </sdk/apps/qml/Ubuntu.Components/LiveTimer#trigger-signal>`__****\ ()
+-  :ref:`trigger <sdk_ubuntu_components_livetimer_trigger-signal>`\ ()
 
 Detailed Description
 --------------------
 
-The `LiveTimer </sdk/apps/qml/Ubuntu.Components/LiveTimer/>`__ is a
-source for periodic signals triggered on second/minute/hour boundaries.
-The timer can also be set up to provide signals with an increasing
-frequency the closer a given time is to current time.
+The :ref:`LiveTimer <sdk_ubuntu_components_livetimer>` is a source for
+periodic signals triggered on second/minute/hour boundaries. The timer
+can also be set up to provide signals with an increasing frequency the
+closer a given time is to current time.
 
 Examples:
 
@@ -48,47 +52,49 @@ Examples:
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_livetimer_frequency-prop:
+
 +--------------------------------------------------------------------------+
 |        \ frequency : enumeration                                         |
 +--------------------------------------------------------------------------+
 
 This properties defines the frequency at which the
-`LiveTimer </sdk/apps/qml/Ubuntu.Components/LiveTimer/>`__ signals
-notifications.
+:ref:`LiveTimer <sdk_ubuntu_components_livetimer>` signals notifications.
 
 -  **LiveTimer.Disabled** - disable the
-   `LiveTimer </sdk/apps/qml/Ubuntu.Components/LiveTimer/>`__
-   `trigger </sdk/apps/qml/Ubuntu.Components/LiveTimer#trigger-signal>`__
-   signal
+   :ref:`LiveTimer <sdk_ubuntu_components_livetimer>`
+   :ref:`trigger <sdk_ubuntu_components_livetimer#trigger-signal>` signal
 -  **LiveTimer.Second** - emit the
-   `trigger </sdk/apps/qml/Ubuntu.Components/LiveTimer#trigger-signal>`__
-   signal on every change of second.
+   :ref:`trigger <sdk_ubuntu_components_livetimer#trigger-signal>` signal
+   on every change of second.
 -  **LiveTimer.Minute** - emit the
-   `trigger </sdk/apps/qml/Ubuntu.Components/LiveTimer#trigger-signal>`__
-   signal on every change of minute.
+   :ref:`trigger <sdk_ubuntu_components_livetimer#trigger-signal>` signal
+   on every change of minute.
 -  **LiveTimer.Hour** - emit the
-   `trigger </sdk/apps/qml/Ubuntu.Components/LiveTimer#trigger-signal>`__
-   signal on every change of hour.
+   :ref:`trigger <sdk_ubuntu_components_livetimer#trigger-signal>` signal
+   on every change of hour.
 -  **LiveTimer.Relative** - emit the
-   `trigger </sdk/apps/qml/Ubuntu.Components/LiveTimer#trigger-signal>`__
-   signal periodically depending on how close current time is to to
-   `relativeTime </sdk/apps/qml/Ubuntu.Components/LiveTimer#relativeTime-prop>`__.
+   :ref:`trigger <sdk_ubuntu_components_livetimer#trigger-signal>` signal
+   periodically depending on how close current time is to to
+   :ref:`relativeTime <sdk_ubuntu_components_livetimer#relativeTime-prop>`.
    If
-   `relativeTime </sdk/apps/qml/Ubuntu.Components/LiveTimer#relativeTime-prop>`__
+   :ref:`relativeTime <sdk_ubuntu_components_livetimer#relativeTime-prop>`
    is within 30 seconds of the current time, trigger every 30 seconds.
    Within an hour, trigger every minute. Otherwise, trigger every hour
    until the relative time is more than a week past current time, after
    which updates are disabled.
 
    **Note:** Setting the frequency to
-   `LiveTimer </sdk/apps/qml/Ubuntu.Components/LiveTimer/>`__.Relative
-   will disable the timer until a
-   `relativeTime </sdk/apps/qml/Ubuntu.Components/LiveTimer#relativeTime-prop>`__
+   :ref:`LiveTimer <sdk_ubuntu_components_livetimer>`.Relative will disable
+   the timer until a
+   :ref:`relativeTime <sdk_ubuntu_components_livetimer#relativeTime-prop>`
    is set.
 
 This QML property was introduced in Ubuntu.Components 1.3.
 
 | 
+
+.. _sdk_ubuntu_components_livetimer_relativeTime-prop:
 
 +--------------------------------------------------------------------------+
 |        \ relativeTime : datetime                                         |
@@ -98,9 +104,8 @@ This properties defines the value used for proximity evaluation when
 using Relative mode.
 
 **Note:** This property has no impact unless the
-`frequency </sdk/apps/qml/Ubuntu.Components/LiveTimer#frequency-prop>`__
-is set to
-`LiveTimer </sdk/apps/qml/Ubuntu.Components/LiveTimer/>`__.Relative
+:ref:`frequency <sdk_ubuntu_components_livetimer#frequency-prop>` is set to
+:ref:`LiveTimer <sdk_ubuntu_components_livetimer>`.Relative
 
 This QML property was introduced in Ubuntu.Components 1.3.
 
@@ -108,6 +113,8 @@ This QML property was introduced in Ubuntu.Components 1.3.
 
 Signal Documentation
 --------------------
+
+.. _sdk_ubuntu_components_livetimer_trigger()-prop:
 
 +--------------------------------------------------------------------------+
 |        \ trigger()                                                       |

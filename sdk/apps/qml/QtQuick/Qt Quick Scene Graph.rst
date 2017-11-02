@@ -1,3 +1,7 @@
+.. _sdk_qtquick_qt_quick_scene_graph:
+QtQuick Qt Quick Scene Graph
+============================
+
 
 
 .. rubric:: The Scene Graph in Qt Quick
@@ -92,7 +96,7 @@ classes with the "QSG" prefix inside the QQuickItem::updatePaintNode()
 function.
 
 For more details, see the `Scene Graph - Custom
-Geometry </sdk/apps/qml/QtQuick/scenegraph-customgeometry/>`__.
+Geometry </sdk/apps/qml/QtQuick/scenegraph-customgeometry/>`_ .
 
 .. rubric:: Preprocessing
    :name: preprocessing
@@ -123,7 +127,7 @@ color and texture fills.
 
 For users who just want to apply custom shading to a QML Item type, it
 is possible to do this directly in QML using the
-`ShaderEffect </sdk/apps/qml/QtQuick/ShaderEffect/>`__ type.
+:ref:`ShaderEffect <sdk_qtquick_shadereffect>` type.
 
 Below is a complete list of material classes:
 
@@ -159,7 +163,7 @@ Below is a complete list of material classes:
 +--------------------------------------+--------------------------------------+
 
 For more details, see the `Scene Graph - Simple
-Material </sdk/apps/qml/QtQuick/scenegraph-simplematerial/>`__
+Material </sdk/apps/qml/QtQuick/scenegraph-simplematerial/>`_ 
 
 .. rubric:: Convenience Nodes
    :name: convenience-nodes
@@ -186,7 +190,7 @@ content. The integration points are defined by the render loop.
 
 For detailed description of how the scene graph renderer works, see `Qt
 Quick Scene Graph
-Renderer </sdk/apps/qml/QtQuick/qtquick-visualcanvas-scenegraph-renderer/>`__.
+Renderer </sdk/apps/qml/QtQuick/qtquick-visualcanvas-scenegraph-renderer/>`_ .
 
 .. rubric:: Threaded Render Loop
    :name: threaded-render-loop
@@ -291,7 +295,7 @@ signals and this is the only time the OpenGL application is allowed to
 draw.
 
 The `Scene Graph - OpenGL Under
-QML </sdk/apps/qml/QtQuick/scenegraph-openglunderqml/>`__ example gives
+QML </sdk/apps/qml/QtQuick/scenegraph-openglunderqml/>`_  example gives
 an example on how to use these signals.
 
 The other alternative is to create a QQuickFramebufferObject, render

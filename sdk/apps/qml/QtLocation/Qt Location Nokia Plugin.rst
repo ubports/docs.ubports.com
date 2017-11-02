@@ -1,3 +1,7 @@
+.. _sdk_qtlocation_qt_location_nokia_plugin:
+QtLocation Qt Location Nokia Plugin
+===================================
+
 
 
 .. rubric:: Overview
@@ -7,7 +11,7 @@ Included with Qt Location is a geo services plugin which accesses the
 relevant Nokia services provided by Nokia. The use of these services is
 governed by the terms and conditions available at `Qt Location Nokia
 Plugin - Nokia Services Terms and
-Conditions </sdk/apps/qml/QtLocation/location-plugin-nokia-terms/>`__.
+Conditions </sdk/apps/qml/QtLocation/location-plugin-nokia-terms/>`_ .
 
 Note that accepting the terms and conditions only applies those terms
 and conditions to the use of the Nokia geo services plugin and does not

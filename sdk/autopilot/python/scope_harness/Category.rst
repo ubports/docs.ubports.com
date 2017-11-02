@@ -1,21 +1,25 @@
+.. _sdk_scope_harness_category:
+scope_harness Category
+======================
+
  *class*
-``scope_harness.``\ ``Category``\ ` <#scope_harness.Category>`__
+``scope_harness.``\ ``Category``\ ` <#scope_harness.Category>`_ 
     Represents a read-only view of a category returned by scope
 
-     ``components``\ ` <#scope_harness.Category.components>`__
+     ``components``\ ` <#scope_harness.Category.components>`_ 
 
-     ``empty``\ ` <#scope_harness.Category.empty>`__
+     ``empty``\ ` <#scope_harness.Category.empty>`_ 
 
-     ``header_link``\ ` <#scope_harness.Category.header_link>`__
+     ``header_link``\ ` <#scope_harness.Category.header_link>`_ 
 
-     ``icon``\ ` <#scope_harness.Category.icon>`__
+     ``icon``\ ` <#scope_harness.Category.icon>`_ 
 
-     ``id``\ ` <#scope_harness.Category.id>`__
+     ``id``\ ` <#scope_harness.Category.id>`_ 
 
-     ``renderer``\ ` <#scope_harness.Category.renderer>`__
+     ``renderer``\ ` <#scope_harness.Category.renderer>`_ 
 
      ``result``\ (*(Category)arg1*, *(str)arg2*) → Result
-    :` <#scope_harness.Category.result>`__
+    :` <#scope_harness.Category.result>`_ 
 
             .. raw:: html
 
@@ -50,7 +54,7 @@
             | raises:       | ValueError if index is invalid   |
             +---------------+----------------------------------+
 
-     ``results``\ ` <#scope_harness.Category.results>`__
+     ``results``\ ` <#scope_harness.Category.results>`_ 
 
-     ``title``\ ` <#scope_harness.Category.title>`__
+     ``title``\ ` <#scope_harness.Category.title>`_ 
 

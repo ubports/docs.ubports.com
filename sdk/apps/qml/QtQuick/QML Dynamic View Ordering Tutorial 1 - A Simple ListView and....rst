@@ -1,12 +1,16 @@
+.. _sdk_qtquick_qml_dynamic_view_ordering_tutorial_1_-_a_simple_listview_and___:
+QtQuick QML Dynamic View Ordering Tutorial 1 - A Simple ListView and...
+=======================================================================
+
 
 
 We begin our application by defining a
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__, a model which will
-provide data to the view, and a delegate which provides a template for
-constructing items in the view.
+:ref:`ListView <sdk_qtquick_listview>`, a model which will provide data to
+the view, and a delegate which provides a template for constructing
+items in the view.
 
-The code for the `ListView </sdk/apps/qml/QtQuick/ListView/>`__ and
-delegate looks like this:
+The code for the :ref:`ListView <sdk_qtquick_listview>` and delegate looks
+like this:
 
 .. code:: qml
 
@@ -68,7 +72,7 @@ The model is defined in a separate QML file which looks like this:
 
 The first item defined within the application's root Rectangle is the
 delegate Component. This is the template from which each item in the
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__ is constructed.
+:ref:`ListView <sdk_qtquick_listview>` is constructed.
 
 The ``name``, ``age``, ``type``, and ``size`` variables referenced in
 the delegate are sourced from the model data. The names correspond to
@@ -97,8 +101,8 @@ roles defined in the model.
         }
 
 The second part of the application is the
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__ itself to which we bind
-the model and delegate.
+:ref:`ListView <sdk_qtquick_listview>` itself to which we bind the model
+and delegate.
 
 .. code:: qml
 
@@ -118,6 +122,6 @@ Files:
 -  tutorials/dynamicview/dynamicview1/dynamicview1.qmlproject
 
 `QML Dynamic View Ordering
-Tutorial </sdk/apps/qml/QtQuick/qml-dynamicview-tutorial/>`__ `QML
+Tutorial </sdk/apps/qml/QtQuick/qml-dynamicview-tutorial/>`_  `QML
 Dynamic View Ordering Tutorial 2 - Dragging View
-Items </sdk/apps/qml/QtQuick/tutorials-dynamicview-dynamicview2/>`__
+Items </sdk/apps/qml/QtQuick/tutorials-dynamicview-dynamicview2/>`_ 

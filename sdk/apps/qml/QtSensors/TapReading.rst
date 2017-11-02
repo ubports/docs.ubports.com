@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_tapreading:
+QtSensors TapReading
+====================
+
 The TapReading element holds the most recent TapSensor reading.
 
 +--------------------------------------+--------------------------------------+
@@ -5,24 +9,23 @@ The TapReading element holds the most recent TapSensor reading.
 +--------------------------------------+--------------------------------------+
 | Since:                               | QtSensors 5.0                        |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `SensorReading </sdk/apps/qml/QtSens |
-|                                      | ors/SensorReading/>`__               |
+| Inherits:                            | :ref:`SensorReading <sdk_qtsensors_sensor |
+|                                      | reading>`_                           |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`doubleTap </sdk/apps/qml/QtSensors/TapReading#doubleTap-prop>`__****
-   : bool
--  ****`tapDirection </sdk/apps/qml/QtSensors/TapReading#tapDirection-prop>`__****
+-  :ref:`doubleTap <sdk_qtsensors_tapreading_doubleTap-prop>` :
+   bool
+-  :ref:`tapDirection <sdk_qtsensors_tapreading_tapDirection-prop>`
    : TapDirection
 
 Detailed Description
 --------------------
 
-The `TapReading </sdk/apps/qml/QtSensors/TapReading/>`__ element holds
-the most recent `TapSensor </sdk/apps/qml/QtSensors/TapSensor/>`__
-reading.
+The :ref:`TapReading <sdk_qtsensors_tapreading>` element holds the most
+recent :ref:`TapSensor <sdk_qtsensors_tapsensor>` reading.
 
 This element wraps the QTapReading class. Please see the documentation
 for QTapReading for details.
@@ -31,6 +34,8 @@ This element cannot be directly created.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtsensors_tapreading_doubleTap-prop:
 
 +--------------------------------------------------------------------------+
 |        \ doubleTap : bool                                                |
@@ -43,6 +48,8 @@ Please see QTapReading::doubleTap for information about this property.
 
 | 
 
+.. _sdk_qtsensors_tapreading_tapDirection-prop:
+
 +--------------------------------------------------------------------------+
 |        \ tapDirection : TapDirection                                     |
 +--------------------------------------------------------------------------+
@@ -53,7 +60,7 @@ Please see QTapReading::tapDirection for information about this
 property.
 
 Note that TapDirection constants are exposed through the
-`TapReading </sdk/apps/qml/QtSensors/TapReading/>`__ class.
+:ref:`TapReading <sdk_qtsensors_tapreading>` class.
 
 .. code:: cpp
 

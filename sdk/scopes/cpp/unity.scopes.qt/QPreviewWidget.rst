@@ -1,5 +1,9 @@
+.. _sdk_unity_scopes_qt_qpreviewwidget:
+unity.scopes.qt QPreviewWidget
+==============================
+
 Widget used in Preview.
-`More... </sdk/scopes/cpp/unity.scopes.qt/QPreviewWidget#details>`__
+:ref:`More... <sdk_unity_scopes_qt_qpreviewwidget#details>`
 
 ``#include <unity/scopes/qt/QPreviewWidget.h>``
 
@@ -8,11 +12,11 @@ Widget used in Preview.
 
  
 
-`QPreviewWidget </sdk/scopes/cpp/unity.scopes.qt/QPreviewWidget#aba81db48085e0528f1112941fb547c4a>`__
+:ref:`QPreviewWidget <sdk_unity_scopes_qt_qpreviewwidget#aba81db48085e0528f1112941fb547c4a>`
 (QString const
-&\ `id </sdk/scopes/cpp/unity.scopes.qt/QPreviewWidget#a3b230204123aa720d925f85fd51425a0>`__,
+&\ :ref:`id <sdk_unity_scopes_qt_qpreviewwidget#a3b230204123aa720d925f85fd51425a0>`,
 QString const
-&\ `widget\_type </sdk/scopes/cpp/unity.scopes.qt/QPreviewWidget#a600705e26341af0ef375830665462a47>`__)
+&\ :ref:`widget\_type <sdk_unity_scopes_qt_qpreviewwidget#a600705e26341af0ef375830665462a47>`)
 
  
 
@@ -22,7 +26,7 @@ QString const
 
  
 
-`QPreviewWidget </sdk/scopes/cpp/unity.scopes.qt/QPreviewWidget#a3b1daf6806081a727875ce0f4384f612>`__
+:ref:`QPreviewWidget <sdk_unity_scopes_qt_qpreviewwidget#a3b1daf6806081a727875ce0f4384f612>`
 (QString const &definition)
 
  
@@ -33,7 +37,7 @@ QString const
 
 void 
 
-`add\_attribute\_value </sdk/scopes/cpp/unity.scopes.qt/QPreviewWidget#a708df5ca5097de8f6b81a71958cf9b75>`__
+:ref:`add\_attribute\_value <sdk_unity_scopes_qt_qpreviewwidget#a708df5ca5097de8f6b81a71958cf9b75>`
 (QString const &key, QVariant const &value)
 
  
@@ -44,7 +48,7 @@ void 
 
 void 
 
-`add\_attribute\_mapping </sdk/scopes/cpp/unity.scopes.qt/QPreviewWidget#a7ebeecb9c8cc66f871692bd19eb8cfe6>`__
+:ref:`add\_attribute\_mapping <sdk_unity_scopes_qt_qpreviewwidget#a7ebeecb9c8cc66f871692bd19eb8cfe6>`
 (QString const &key, QString const &field\_name)
 
  
@@ -55,9 +59,8 @@ void 
 
 void 
 
-`add\_widget </sdk/scopes/cpp/unity.scopes.qt/QPreviewWidget#ae9d8c0c5d81c827b84cda80df49dc70e>`__
-(`QPreviewWidget </sdk/scopes/cpp/unity.scopes.qt/QPreviewWidget/>`__
-const &widget)
+:ref:`add\_widget <sdk_unity_scopes_qt_qpreviewwidget#ae9d8c0c5d81c827b84cda80df49dc70e>`
+(:ref:`QPreviewWidget <sdk_unity_scopes_qt_qpreviewwidget>` const &widget)
 
  
 
@@ -67,7 +70,7 @@ const &widget)
 
 QString 
 
-`id </sdk/scopes/cpp/unity.scopes.qt/QPreviewWidget#a3b230204123aa720d925f85fd51425a0>`__
+:ref:`id <sdk_unity_scopes_qt_qpreviewwidget#a3b230204123aa720d925f85fd51425a0>`
 () const
 
  
@@ -78,7 +81,7 @@ QString 
 
 QString 
 
-`widget\_type </sdk/scopes/cpp/unity.scopes.qt/QPreviewWidget#a600705e26341af0ef375830665462a47>`__
+:ref:`widget\_type <sdk_unity_scopes_qt_qpreviewwidget#a600705e26341af0ef375830665462a47>`
 () const
 
  
@@ -89,7 +92,7 @@ QString 
 
 QMap< QString, QString > 
 
-`attribute\_mappings </sdk/scopes/cpp/unity.scopes.qt/QPreviewWidget#ae6d2278216cc638cc8869e12fdf619fc>`__
+:ref:`attribute\_mappings <sdk_unity_scopes_qt_qpreviewwidget#ae6d2278216cc638cc8869e12fdf619fc>`
 () const
 
  
@@ -100,7 +103,7 @@ QMap< QString, QString > 
 
 QVariantMap 
 
-`attribute\_values </sdk/scopes/cpp/unity.scopes.qt/QPreviewWidget#a1af3433d81deca2a1c5de44cec693412>`__
+:ref:`attribute\_values <sdk_unity_scopes_qt_qpreviewwidget#a1af3433d81deca2a1c5de44cec693412>`
 () const
 
  
@@ -111,7 +114,7 @@ QVariantMap 
 
 QPreviewWidgetList 
 
-`widgets </sdk/scopes/cpp/unity.scopes.qt/QPreviewWidget#a5732c60c89fa86e08e86fd62f5649ce3>`__
+:ref:`widgets <sdk_unity_scopes_qt_qpreviewwidget#a5732c60c89fa86e08e86fd62f5649ce3>`
 () const
 
  
@@ -122,7 +125,7 @@ QPreviewWidgetList 
 
 QString 
 
-`data </sdk/scopes/cpp/unity.scopes.qt/QPreviewWidget#a4be99753312de446095968767eb46bbe>`__
+:ref:`data <sdk_unity_scopes_qt_qpreviewwidget#a4be99753312de446095968767eb46bbe>`
 () const
 
  
@@ -139,16 +142,14 @@ usual value semantics.
          
 
 **QPreviewWidget**
-(`QPreviewWidget </sdk/scopes/cpp/unity.scopes.qt/QPreviewWidget/>`__
-const &other)
+(:ref:`QPreviewWidget <sdk_unity_scopes_qt_qpreviewwidget>` const &other)
 
  
 
          
 
 **QPreviewWidget**
-(`QPreviewWidget </sdk/scopes/cpp/unity.scopes.qt/QPreviewWidget/>`__
-&&other)
+(:ref:`QPreviewWidget <sdk_unity_scopes_qt_qpreviewwidget>` &&other)
 
  
 
@@ -158,18 +159,16 @@ const &other)
 
  
 
-`QPreviewWidget </sdk/scopes/cpp/unity.scopes.qt/QPreviewWidget/>`__ & 
+:ref:` <>` `QPreviewWidget <sdk_unity_scopes_qt_qpreviewwidget>` & 
 
-**operator=**
-(`QPreviewWidget </sdk/scopes/cpp/unity.scopes.qt/QPreviewWidget/>`__
+**operator=** (:ref:`QPreviewWidget <sdk_unity_scopes_qt_qpreviewwidget>`
 const &other)
 
  
 
-`QPreviewWidget </sdk/scopes/cpp/unity.scopes.qt/QPreviewWidget/>`__ & 
+:ref:` <>` `QPreviewWidget <sdk_unity_scopes_qt_qpreviewwidget>` & 
 
-**operator=**
-(`QPreviewWidget </sdk/scopes/cpp/unity.scopes.qt/QPreviewWidget/>`__
+**operator=** (:ref:`QPreviewWidget <sdk_unity_scopes_qt_qpreviewwidget>`
 &&other)
 
  
@@ -213,8 +212,8 @@ Create a widget from a JSON definition.
 
 The JSON definition must be a dictionary that includes widget "id" and
 all the values of attributes required by desired `widget
-type </sdk/scopes/cpp/unity.scopes.qt/QPreviewWidget/>`__. For example,
-a definition of image widget may look as follows:
+type <sdk_unity_scopes_qt_qpreviewwidget>:ref:`. For example, a definition
+of image widget may look as follows:
 
 PreviewWidget img(R"({"id": "img", "type": "image", "source":
 "http://imageuri"})");
@@ -227,17 +226,17 @@ PreviewWidget img(R"({"id": "img", "type": "image", "components": {
 
 (this example assumes "screenshot-url" value is either available in the
 result object that's being previewed, or it will be pushed with
-`unity::scopes::PreviewReply::push() </sdk/scopes/cpp/unity.scopes.PreviewReply#a9fc593618b83ec444fb6c9b2b298764a>`__
+`unity::scopes::PreviewReply::push() </sdk/scopes/cpp/unity.scopes.PreviewReply/#a9fc593618b83ec444fb6c9b2b298764a>`_ 
 method)
 
 Note
     It is recommended to create widgets via
     `unity::scopes::PreviewWidget(QString const&, QString
-    const&) </sdk/scopes/cpp/unity.scopes.PreviewWidget/>`__ constructor
+    const&) </sdk/scopes/cpp/unity.scopes.PreviewWidget/>`_  constructor
     and
-    `unity::scopes::PreviewWidget::add\_attribute\_value() </sdk/scopes/cpp/unity.scopes.PreviewWidget#a42dd64704890d72bcc6ecbd7bccbfcd9>`__
+    `unity::scopes::PreviewWidget::add\_attribute\_value() </sdk/scopes/cpp/unity.scopes.PreviewWidget/#a42dd64704890d72bcc6ecbd7bccbfcd9>`_ 
     /
-    `unity::scopes::PreviewWidget::add\_attribute\_mapping() </sdk/scopes/cpp/unity.scopes.PreviewWidget#a8bb890267a69dd6bb5ca70b663c75e74>`__
+    `unity::scopes::PreviewWidget::add\_attribute\_mapping() </sdk/scopes/cpp/unity.scopes.PreviewWidget/#a8bb890267a69dd6bb5ca70b663c75e74>`_ 
     methods, rather than via JSON definition.
 
 Parameters
@@ -268,7 +267,7 @@ attribute name and given the field name.
 
 If an attribute value is not known, the scope is expected to push the
 attribute value using
-`unity::scopes::PreviewReply::push() </sdk/scopes/cpp/unity.scopes.PreviewReply#a9fc593618b83ec444fb6c9b2b298764a>`__;
+`unity::scopes::PreviewReply::push() </sdk/scopes/cpp/unity.scopes.PreviewReply/#a9fc593618b83ec444fb6c9b2b298764a>`_ ;
 otherwise, the value is automatically mapped from the result.
 
 +--------------------+--------------------+--------------------+--------------------+
@@ -294,11 +293,10 @@ Parameters
 
 +--------------+--------------+--------------+--------------+--------------+--------------+
 | void         | (            | `QPreviewWid | *widget*     | )            |              |
-| unity::scope |              | get </sdk/sc |              |              |              |
-| s::qt::QPrev |              | opes/cpp/uni |              |              |              |
-| iewWidget::a |              | ty.scopes.qt |              |              |              |
-| dd\_widget   |              | /QPreviewWid |              |              |              |
-|              |              | get/>`__     |              |              |              |
+| unity::scope |              | get <sdk_uni |              |              |              |
+| s::qt::QPrev |              | ty_scopes_qt |              |              |              |
+| iewWidget::a |              | _qpreviewwid |              |              |              |
+| dd\_widget   |              | get>`_       |              |              |              |
 |              |              | const &      |              |              |              |
 +--------------+--------------+--------------+--------------+--------------+--------------+
 
@@ -326,7 +324,7 @@ Get the components of this widget.
 
 The returned map is a dictionary of (key, field name) pairs, as defined
 by calls to
-`add\_attribute\_mapping() </sdk/scopes/cpp/unity.scopes.qt/QPreviewWidget#a7ebeecb9c8cc66f871692bd19eb8cfe6>`__.
+:ref:`add\_attribute\_mapping() <sdk_unity_scopes_qt_qpreviewwidget#a7ebeecb9c8cc66f871692bd19eb8cfe6>`.
 
 Returns
     The components map.
@@ -343,7 +341,7 @@ Get the attributes of this widget.
 
 The returned map is a dictionary of (key, value) pairs, as defined by
 calls to
-`add\_attribute\_value() </sdk/scopes/cpp/unity.scopes.qt/QPreviewWidget#a708df5ca5097de8f6b81a71958cf9b75>`__.
+:ref:`add\_attribute\_value() <sdk_unity_scopes_qt_qpreviewwidget#a708df5ca5097de8f6b81a71958cf9b75>`.
 
 Returns
     The attribute map.

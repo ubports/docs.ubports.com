@@ -1,3 +1,7 @@
+.. _sdk_qtquick_qt_quick_particles_examples_-_emitters:
+QtQuick Qt Quick Particles Examples - Emitters
+==============================================
+
 
 
 |image0|
@@ -83,7 +87,7 @@ reached.
 
 Shape and Direction emits particles out of an unfilled Ellipse shape,
 using a
-`TargetDirection </sdk/apps/qml/QtQuick/Particles.TargetDirection/>`__
+`TargetDirection </sdk/apps/qml/QtQuick/Particles.TargetDirection/>`_ 
 
 .. code:: qml
 
@@ -99,7 +103,7 @@ This sends the particles towards the center of the ellipse with
 proportional speed, keeping the ellipse outline as they move to the
 center.
 
-`TrailEmitter </sdk/apps/qml/QtQuick/Particles.TrailEmitter/>`__ uses
+`TrailEmitter </sdk/apps/qml/QtQuick/Particles.TrailEmitter/>`_  uses
 that type to add smoke particles to trail the fire particles in the
 scene.
 

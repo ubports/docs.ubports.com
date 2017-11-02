@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_irproximityreading:
+QtSensors IRProximityReading
+============================
+
 The IRProximityReading element holds the most recent IR proximity
 reading.
 
@@ -6,21 +10,21 @@ reading.
 +--------------------------------------+--------------------------------------+
 | Since:                               | QtSensors 5.0                        |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `SensorReading </sdk/apps/qml/QtSens |
-|                                      | ors/SensorReading/>`__               |
+| Inherits:                            | :ref:`SensorReading <sdk_qtsensors_sensor |
+|                                      | reading>`_                           |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`reflectance </sdk/apps/qml/QtSensors/IRProximityReading#reflectance-prop>`__****
+-  :ref:`reflectance <sdk_qtsensors_irproximityreading_reflectance-prop>`
    : qreal
 
 Detailed Description
 --------------------
 
-The `IRProximityReading </sdk/apps/qml/QtSensors/IRProximityReading/>`__
-element holds the most recent IR proximity reading.
+The :ref:`IRProximityReading <sdk_qtsensors_irproximityreading>` element
+holds the most recent IR proximity reading.
 
 This element wraps the QIRProximityReading class. Please see the
 documentation for QIRProximityReading for details.
@@ -29,6 +33,8 @@ This element cannot be directly created.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtsensors_irproximityreading_reflectance-prop:
 
 +--------------------------------------------------------------------------+
 |        \ reflectance : qreal                                             |

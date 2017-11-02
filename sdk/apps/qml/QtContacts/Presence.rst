@@ -1,3 +1,7 @@
+.. _sdk_qtcontacts_presence:
+QtContacts Presence
+===================
+
 The Presence element provides presence information for an online account
 of a contact.
 
@@ -8,18 +12,14 @@ of a contact.
 Properties
 ----------
 
--  ****`customMessage </sdk/apps/qml/QtContacts/Presence#customMessage-prop>`__****
+-  :ref:`customMessage <sdk_qtcontacts_presence_customMessage-prop>`
    : string
--  ****`imageUrl </sdk/apps/qml/QtContacts/Presence#imageUrl-prop>`__****
-   : url
--  ****`nickname </sdk/apps/qml/QtContacts/Presence#nickname-prop>`__****
-   : string
--  ****`state </sdk/apps/qml/QtContacts/Presence#state-prop>`__**** :
-   enumeration
--  ****`stateText </sdk/apps/qml/QtContacts/Presence#stateText-prop>`__****
-   : string
--  ****`timestamp </sdk/apps/qml/QtContacts/Presence#timestamp-prop>`__****
-   : date
+-  :ref:`imageUrl <sdk_qtcontacts_presence_imageUrl-prop>` : url
+-  :ref:`nickname <sdk_qtcontacts_presence_nickname-prop>` : string
+-  :ref:`state <sdk_qtcontacts_presence_state-prop>` : enumeration
+-  :ref:`stateText <sdk_qtcontacts_presence_stateText-prop>` :
+   string
+-  :ref:`timestamp <sdk_qtcontacts_presence_timestamp-prop>` : date
 
 Detailed Description
 --------------------
@@ -38,6 +38,8 @@ This element is part of the **QtContacts** module.
 Property Documentation
 ----------------------
 
+.. _sdk_qtcontacts_presence_customMessage-prop:
+
 +--------------------------------------------------------------------------+
 |        \ customMessage : string                                          |
 +--------------------------------------------------------------------------+
@@ -46,6 +48,8 @@ This property holds the custom status message from the contact for the
 online account about which this detail stores presence information.
 
 | 
+
+.. _sdk_qtcontacts_presence_imageUrl-prop:
 
 +--------------------------------------------------------------------------+
 |        \ imageUrl : url                                                  |
@@ -56,6 +60,8 @@ the online account about which this detail stores presence information.
 
 | 
 
+.. _sdk_qtcontacts_presence_nickname-prop:
+
 +--------------------------------------------------------------------------+
 |        \ nickname : string                                               |
 +--------------------------------------------------------------------------+
@@ -63,6 +69,8 @@ the online account about which this detail stores presence information.
 This property holds the nickname value of the Presence.
 
 | 
+
+.. _sdk_qtcontacts_presence_state-prop:
 
 +--------------------------------------------------------------------------+
 |        \ state : enumeration                                             |
@@ -82,6 +90,8 @@ This property holds the presence state enumeration value.
 
 | 
 
+.. _sdk_qtcontacts_presence_stateText-prop:
+
 +--------------------------------------------------------------------------+
 |        \ stateText : string                                              |
 +--------------------------------------------------------------------------+
@@ -90,6 +100,8 @@ This property holds the text corresponding to the current presence
 state.
 
 | 
+
+.. _sdk_qtcontacts_presence_timestamp-prop:
 
 +--------------------------------------------------------------------------+
 |        \ timestamp : date                                                |

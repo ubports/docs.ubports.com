@@ -1,5 +1,9 @@
+.. _sdk_unity_scopes_qt_jsonreader:
+unity.scopes.qt JsonReader
+==========================
+
 Class that downloads http JSON files synchronously.
-`More... </sdk/scopes/cpp/unity.scopes.qt/JsonReader#details>`__
+:ref:`More... <sdk_unity_scopes_qt_jsonreader#details>`
 
 ``#include <unity/scopes/qt/JsonReader.h>``
 
@@ -8,7 +12,7 @@ Class that downloads http JSON files synchronously.
 
 QJsonDocumentSptr 
 
-`read </sdk/scopes/cpp/unity.scopes.qt/JsonReader#ac57a289d5d336c5a998f848dff6959cc>`__
+:ref:`read <sdk_unity_scopes_qt_jsonreader#ac57a289d5d336c5a998f848dff6959cc>`
 (QUrl const &uri) const
 
  
@@ -20,7 +24,7 @@ QJsonDocumentSptr 
 
 QJsonDocumentSptr 
 
-`read </sdk/scopes/cpp/unity.scopes.qt/JsonReader#a4593b2f084cdf97635b67a2d71e090cd>`__
+:ref:`read <sdk_unity_scopes_qt_jsonreader#a4593b2f084cdf97635b67a2d71e090cd>`
 (QString const &host, QJsonParameters const &parameters) const
 
  

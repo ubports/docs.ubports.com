@@ -1,3 +1,7 @@
+.. _sdk_qtquick_translate:
+QtQuick Translate
+=================
+
 Provides a way to move an Item without changing its x or y properties
 
 +---------------------+----------------------+
@@ -7,8 +11,8 @@ Provides a way to move an Item without changing its x or y properties
 Properties
 ----------
 
--  ****`x </sdk/apps/qml/QtQuick/Translate#x-prop>`__**** : real
--  ****`y </sdk/apps/qml/QtQuick/Translate#y-prop>`__**** : real
+-  :ref:`x <sdk_qtquick_translate_x-prop>` : real
+-  :ref:`y <sdk_qtquick_translate_y-prop>` : real
 
 Detailed Description
 --------------------
@@ -17,9 +21,8 @@ The Translate type provides independent control over position in
 addition to the Item's x and y properties.
 
 The following example moves the Y axis of the
-`Rectangle </sdk/apps/qml/QtQuick/Rectangle/>`__ items while still
-allowing the
-`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#row>`__ to lay
+:ref:`Rectangle <sdk_qtquick_rectangle>` items while still allowing the
+`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#row>`_  to lay
 the items out as if they had not been transformed:
 
 .. code:: qml
@@ -43,6 +46,8 @@ the items out as if they had not been transformed:
 Property Documentation
 ----------------------
 
+.. _sdk_qtquick_translate_x-prop:
+
 +--------------------------------------------------------------------------+
 |        \ x : real                                                        |
 +--------------------------------------------------------------------------+
@@ -52,6 +57,8 @@ The translation along the X axis.
 The default value is 0.0.
 
 | 
+
+.. _sdk_qtquick_translate_y-prop:
 
 +--------------------------------------------------------------------------+
 |        \ y : real                                                        |
@@ -63,5 +70,5 @@ The default value is 0.0.
 
 | 
 
-.. |image0| image:: /media/sdk/apps/qml/QtQuick/Translate/images/translate.png
+.. |image0| image:: /mediasdk_qtquick_translateimages/translate.png
 

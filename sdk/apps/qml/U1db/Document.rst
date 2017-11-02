@@ -1,3 +1,7 @@
+.. _sdk_u1db_document:
+U1db Document
+=============
+
 Document proxies a single document stored in the Database.
 
 +---------------------+-----------------+
@@ -9,19 +13,17 @@ Document proxies a single document stored in the Database.
 Properties
 ----------
 
--  ****`content </sdk/apps/qml/U1db/Document#content-prop>`__**** :
-   Variant
--  ****`contents </sdk/apps/qml/U1db/Document#contents-prop>`__**** :
-   Variant
--  ****`create </sdk/apps/qml/U1db/Document#create-prop>`__**** : bool
--  ****`docId </sdk/apps/qml/U1db/Document#docId-prop>`__**** : string
+-  :ref:`content <sdk_u1db_document_content-prop>` : Variant
+-  :ref:`contents <sdk_u1db_document_contents-prop>` : Variant
+-  :ref:`create <sdk_u1db_document_create-prop>` : bool
+-  :ref:`docId <sdk_u1db_document_docId-prop>` : string
 
 Detailed Description
 --------------------
 
 This is the declarative API equivalent of
-`Database::putDoc() </sdk/apps/qml/U1db/Database#putDoc-method>`__ and
-`Database::getDoc() </sdk/apps/qml/U1db/Database#getDoc-method>`__.
+:ref:`Database::putDoc() <sdk_u1db_database#putDoc-method>` and
+:ref:`Database::getDoc() <sdk_u1db_database#getDoc-method>`.
 
 .. code:: qml
 
@@ -33,43 +35,50 @@ This is the declarative API equivalent of
         create: true
     }
 
-**See also** `Database </sdk/apps/qml/U1db/Database/>`__.
+**See also** :ref:`Database <sdk_u1db_database>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_u1db_document_content-prop:
 
 +--------------------------------------------------------------------------+
 |        \ content : Variant                                               |
 +--------------------------------------------------------------------------+
 
 The default contents of the document, which are used only if create is
-true, `docId </sdk/apps/qml/U1db/Document#docId-prop>`__ is not empty
-and no document with the same
-`docId </sdk/apps/qml/U1db/Document#docId-prop>`__ exists in the
-database yet. If the *defaults* change, it's up to the API user to
-handle it.
+true, :ref:`docId <sdk_u1db_document#docId-prop>` is not empty and no
+document with the same :ref:`docId <sdk_u1db_document#docId-prop>` exists
+in the database yet. If the *defaults* change, it's up to the API user
+to handle it.
 
 | 
+
+.. _sdk_u1db_document_contents-prop:
 
 +--------------------------------------------------------------------------+
 |        \ contents : Variant                                              |
 +--------------------------------------------------------------------------+
 
 Updates the *contents* of the document. A valid
-`docId </sdk/apps/qml/U1db/Document#docId-prop>`__ must be set.
+:ref:`docId <sdk_u1db_document#docId-prop>` must be set.
 
 | 
+
+.. _sdk_u1db_document_create-prop:
 
 +--------------------------------------------------------------------------+
 |        \ create : bool                                                   |
 +--------------------------------------------------------------------------+
 
-If *create* is true, `docId </sdk/apps/qml/U1db/Document#docId-prop>`__
-is not empty and no document with the same
-`docId </sdk/apps/qml/U1db/Document#docId-prop>`__ exists, defaults will
-be used to store the document.
+If *create* is true, :ref:`docId <sdk_u1db_document#docId-prop>` is not
+empty and no document with the same
+:ref:`docId <sdk_u1db_document#docId-prop>` exists, defaults will be used
+to store the document.
 
 | 
+
+.. _sdk_u1db_document_docId-prop:
 
 +--------------------------------------------------------------------------+
 |        \ docId : string                                                  |

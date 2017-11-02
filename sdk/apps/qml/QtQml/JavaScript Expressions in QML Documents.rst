@@ -1,11 +1,15 @@
+.. _sdk_qtqml_javascript_expressions_in_qml_documents:
+QtQml JavaScript Expressions in QML Documents
+=============================================
+
 
 
 The `JavaScript Host
-Environment </sdk/apps/qml/QtQml/qtqml-javascript-hostenvironment/>`__
+Environment </sdk/apps/qml/QtQml/qtqml-javascript-hostenvironment/>`_ 
 provided by QML can run valid standard JavaScript constructs such as
 conditional operators, arrays, variable setting, loops. In addition to
 the standard JavaScript properties, the `QML Global
-Object </sdk/apps/qml/QtQml/qtqml-javascript-qmlglobalobject/>`__
+Object </sdk/apps/qml/QtQml/qtqml-javascript-qmlglobalobject/>`_ 
 includes a number of helper methods that simplify building UIs and
 interacting with the QML environment.
 
@@ -15,31 +19,31 @@ of the JavaScript global object. In regular JavaScript, it is possible
 to do this accidentally by using a variable without declaring it. In QML
 this will throw an exception, so all local variables must be explicitly
 declared. See `JavaScript Environment
-Restrictions </sdk/apps/qml/QtQml/qtqml-javascript-hostenvironment#javascript-environment-restrictions>`__
+Restrictions </sdk/apps/qml/QtQml/qtqml-javascript-hostenvironment/#javascript-environment-restrictions>`_ 
 for a complete description of the restrictions on JavaScript code
 executed from QML.
 
 Various parts of `QML
-documents </sdk/apps/qml/QtQml/qtqml-documents-topic/>`__ can contain
+documents </sdk/apps/qml/QtQml/qtqml-documents-topic/>`_  can contain
 JavaScript code:
 
 #. The body of `property
-   bindings </sdk/apps/qml/QtQml/qtqml-syntax-propertybinding/>`__.
+   bindings </sdk/apps/qml/QtQml/qtqml-syntax-propertybinding/>`_ .
    These JavaScript expressions describe relationships between QML
    object
-   `properties </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes#property-attributes>`__.
+   `properties </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes/#property-attributes>`_ .
    When any of a property's *dependencies* change, the property is
    automatically updated too, according to the specified relationship.
 #. The body of `Signal
-   handlers </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes#signal-attributes>`__.
+   handlers </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes/#signal-attributes>`_ .
    These JavaScript statements are automatically evaluated whenever a
    QML object emits the associated signal.
 #. The definition of `custom
-   methods </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes#method-attributes>`__.
+   methods </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes/#method-attributes>`_ .
    JavaScript functions that are defined within the body of a QML object
    become methods of that object.
 #. Standalone `JavaScript resource (.js)
-   files </sdk/apps/qml/QtQml/qtqml-javascript-imports/>`__. These files
+   files </sdk/apps/qml/QtQml/qtqml-javascript-imports/>`_ . These files
    are actually separate from QML documents, but they can be imported
    into QML documents. Functions and variables that are defined within
    the imported files can be used in property bindings, signal handlers,
@@ -74,11 +78,10 @@ maintainability of the code.
 
 There are two ways to define a property binding: the first (and most
 common) is, as previously shown, in a `property
-initialization </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes#value-assignment-on-initialization>`__.
+initialization </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes/#value-assignment-on-initialization>`_ .
 The second (and much rarer) way is to assign the property a function
-returned from the
-`Qt.binding() </sdk/apps/qml/QtQml/Qt#binding-method>`__ function, from
-within imperative JavaScript code, as shown below:
+returned from the :ref:`Qt.binding() <sdk_qtqml_qt#binding-method>`
+function, from within imperative JavaScript code, as shown below:
 
 .. code:: qml
 
@@ -97,11 +100,11 @@ within imperative JavaScript code, as shown below:
     }
 
 See the `property
-bindings </sdk/apps/qml/QtQml/qtqml-syntax-propertybinding/>`__
+bindings </sdk/apps/qml/QtQml/qtqml-syntax-propertybinding/>`_ 
 documentation for more information about how to define property
 bindings, and see the documentation about `Property Assignment versus
 Property
-Binding </sdk/apps/qml/QtQml/qtqml-syntax-propertybinding#qml-javascript-assignment>`__
+Binding </sdk/apps/qml/QtQml/qtqml-syntax-propertybinding/#qml-javascript-assignment>`_ 
 for information about how bindings differ from value assignments.
 
 .. rubric:: JavaScript in Signal Handlers
@@ -146,10 +149,10 @@ events or to simply assign property values.
     }
 
 Please see the `Signal and Handler Event
-System </sdk/apps/qml/QtQml/qtqml-syntax-signals/>`__ documentation for
+System </sdk/apps/qml/QtQml/qtqml-syntax-signals/>`_  documentation for
 in-depth discussion of signals and signal handlers, and see the `QML
 Object
-Attributes </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes/>`__
+Attributes </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes/>`_ 
 documentation for in-depth discussion of how to define the
 implementation of signal handlers in QML with JavaScript.
 
@@ -199,7 +202,7 @@ is not desired, the method can be added to a non-root object or,
 preferably, written in an external JavaScript file.
 
 See the `QML Object
-Attributes </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes/>`__
+Attributes </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes/>`_ 
 documentation for in-depth discussion of how to define custom methods in
 QML with JavaScript code implementations.
 
@@ -209,7 +212,7 @@ QML with JavaScript code implementations.
 Non-trivial program logic is best separated into external JavaScript
 files. These files can be imported into QML files using an ``import``
 statement, in the same way that
-`modules </sdk/apps/qml/QtQml/qtqml-modules-topic/>`__ are imported.
+`modules </sdk/apps/qml/QtQml/qtqml-modules-topic/>`_  are imported.
 
 For example, the ``factorial()`` method in the above example could be
 moved into an external file named ``factorial.js``, and accessed like
@@ -227,7 +230,7 @@ this:
 
 For more information about loading external JavaScript files into QML,
 read the section about `Importing JavaScript Resources in
-QML </sdk/apps/qml/QtQml/qtqml-javascript-imports/>`__.
+QML </sdk/apps/qml/QtQml/qtqml-javascript-imports/>`_ .
 
 .. rubric:: Connecting Signals to JavaScript Functions
    :name: connecting-signals-to-javascript-functions
@@ -267,7 +270,7 @@ The ``jsFunction()`` will now be called whenever MouseArea's ``clicked``
 signal is emitted.
 
 See `Connecting Signals to Methods and
-Signals </sdk/apps/qml/QtQml/qtqml-syntax-signals/>`__ for more
+Signals </sdk/apps/qml/QtQml/qtqml-syntax-signals/>`_  for more
 information.
 
 .. rubric:: JavaScript in Application Startup Code
@@ -279,13 +282,13 @@ the startup script as *global code* in an external script file, this can
 have severe limitations as the QML environment may not have been fully
 established. For example, some objects might not have been created or
 some `property
-bindings </sdk/apps/qml/QtQml/qtqml-syntax-propertybinding/>`__ may not
+bindings </sdk/apps/qml/QtQml/qtqml-syntax-propertybinding/>`_  may not
 have been established. See `JavaScript Environment
-Restrictions </sdk/apps/qml/QtQml/qtqml-javascript-hostenvironment#javascript-environment-restrictions>`__
+Restrictions </sdk/apps/qml/QtQml/qtqml-javascript-hostenvironment/#javascript-environment-restrictions>`_ 
 for the exact limitations of global script code.
 
 A QML object will emit the ``Component.completed`` `attached
-signal </sdk/apps/qml/QtQml/qtqml-syntax-signals#attached-signal-handlers>`__
+signal </sdk/apps/qml/QtQml/qtqml-syntax-signals/#attached-signal-handlers>`_ 
 when its instantiation is complete. JavaScript code in the corresponding
 ``Component.onCompleted`` handler runs after the object is instantiated.
 Thus, the best place to write application startup code is in the
@@ -311,6 +314,6 @@ than one ``onCompleted()`` handler to execute at startup, they are run
 sequentially in an undefined order.
 
 Likewise, every ``Component`` will emit a
-`destruction() </sdk/apps/qml/QtQml/Component#destruction-signal>`__
-signal just before being destroyed.
+:ref:`destruction() <sdk_qtqml_component#destruction-signal>` signal just
+before being destroyed.
 

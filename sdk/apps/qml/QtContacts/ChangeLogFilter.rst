@@ -1,3 +1,7 @@
+.. _sdk_qtcontacts_changelogfilter:
+QtContacts ChangeLogFilter
+==========================
+
 The ChangeLogFilter element provides a filter based around a contact
 timestamp criterion.
 
@@ -8,10 +12,9 @@ timestamp criterion.
 Properties
 ----------
 
--  ****`eventType </sdk/apps/qml/QtContacts/ChangeLogFilter#eventType-prop>`__****
+-  :ref:`eventType <sdk_qtcontacts_changelogfilter_eventType-prop>`
    : enumeration
--  ****`since </sdk/apps/qml/QtContacts/ChangeLogFilter#since-prop>`__****
-   : date
+-  :ref:`since <sdk_qtcontacts_changelogfilter_since-prop>` : date
 
 Detailed Description
 --------------------
@@ -23,6 +26,8 @@ This element is part of the **QtContacts** module.
 Property Documentation
 ----------------------
 
+.. _sdk_qtcontacts_changelogfilter_eventType-prop:
+
 +--------------------------------------------------------------------------+
 |        \ eventType : enumeration                                         |
 +--------------------------------------------------------------------------+
@@ -32,6 +37,8 @@ against.
 
 | 
 
+.. _sdk_qtcontacts_changelogfilter_since-prop:
+
 +--------------------------------------------------------------------------+
 |        \ since : date                                                    |
 +--------------------------------------------------------------------------+
@@ -39,8 +46,8 @@ against.
 This property holds the date and time lower-bound criterion of the
 filter.The value can be one of:
 
--  `ChangeLogFilter </sdk/apps/qml/QtContacts/ChangeLogFilter/>`__.EventAdded
--  `ChangeLogFilter </sdk/apps/qml/QtContacts/ChangeLogFilter/>`__.EventChanged
--  `ChangeLogFilter </sdk/apps/qml/QtContacts/ChangeLogFilter/>`__.EventRemoved
+-  :ref:`ChangeLogFilter <sdk_qtcontacts_changelogfilter>`.EventAdded
+-  :ref:`ChangeLogFilter <sdk_qtcontacts_changelogfilter>`.EventChanged
+-  :ref:`ChangeLogFilter <sdk_qtcontacts_changelogfilter>`.EventRemoved
 
 | 

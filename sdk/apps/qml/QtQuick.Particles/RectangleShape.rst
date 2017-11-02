@@ -1,3 +1,7 @@
+.. _sdk_qtquick_particles_rectangleshape:
+QtQuick.Particles RectangleShape
+================================
+
 For specifying an area for affectors and emitter
 
 +---------------------+--------------------------------+

@@ -1,3 +1,7 @@
+.. _sdk_qtqml_qml_object_attributes:
+QtQml QML Object Attributes
+===========================
+
 
 
 Every QML object type has a defined set of attributes. Each instance of
@@ -9,7 +13,7 @@ attributes which can be specified, which are described below.
    :name: attributes-in-object-declarations
 
 An `object
-declaration </sdk/apps/qml/QtQml/qtqml-syntax-basics#object-declarations>`__
+declaration </sdk/apps/qml/QtQml/qtqml-syntax-basics/#object-declarations>`_ 
 in a QML document defines a new type. It also declares an object
 hierarchy that will be instantiated should an instance of that newly
 defined type be created.
@@ -55,7 +59,7 @@ display the same text:
 An object can be referred to by its ``id`` from anywhere within the
 *component scope* in which it is declared. Therefore, an ``id`` value
 must always be unique within its component scope. See `Scope and Naming
-Resolution </sdk/apps/qml/QtQml/qtqml-documents-scope/>`__ for more
+Resolution </sdk/apps/qml/QtQml/qtqml-documents-scope/>`_  for more
 information.
 
 Once an object instance is created, the value of its *id* attribute
@@ -86,7 +90,7 @@ object declaration in a QML document with the following syntax:
         [default] property <propertyType> <propertyName>
 
 In this way an object declaration may `expose a particular
-value </sdk/apps/qml/QtQml/qtqml-typesystem-objecttypes#defining-object-types-from-qml>`__
+value </sdk/apps/qml/QtQml/qtqml-typesystem-objecttypes/#defining-object-types-from-qml>`_ 
 to outside objects or maintain some internal state more easily.
 
 Property names must begin with a lower case letter and can only contain
@@ -94,20 +98,20 @@ letters, numbers and underscores. JavaScript reserved words are not
 valid property names. The ``default`` keyword is optional, and modifies
 the semantics of the property being declared. See the upcoming section
 on `default
-properties </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes#default-properties>`__
+properties </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes/#default-properties>`_ 
 for more information about the ``default`` property modifier.
 
 Declaring a custom property implicitly creates a value-change
-`signal </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes#signal-attributes>`__
+`signal </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes/#signal-attributes>`_ 
 for that property, as well as an associated `signal
-handler </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes#signal-handler-attributes>`__
+handler </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes/#signal-handler-attributes>`_ 
 called *on<PropertyName>Changed*, where *<PropertyName>* is the name of
 the property, with the first letter capitalized.
 
 For example, the following object declaration defines a new type which
 derives from the Rectangle base type. It has two new properties, with a
 `signal
-handler </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes#signal-handler-attributes>`__
+handler </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes/#signal-handler-attributes>`_ 
 implemented for one of those new properties:
 
 .. code:: qml
@@ -138,7 +142,7 @@ to with the int type instead.)
 
 Some basic types are provided by the ``QtQuick`` module and thus cannot
 be used as property types unless the module is imported. See the `QML
-Basic Types </sdk/apps/qml/QtQml/qtqml-typesystem-basictypes/>`__
+Basic Types </sdk/apps/qml/QtQml/qtqml-typesystem-basictypes/>`_ 
 documentation for more details.
 
 Note the var basic type is a generic placeholder type that can hold any
@@ -153,7 +157,7 @@ type of value, including lists and objects:
     property var someObject: Rectangle { width: 100; height: 100; color: "red" }
 
 Additionally, any `QML object
-type </sdk/apps/qml/QtQml/qtqml-typesystem-objecttypes/>`__ can be used
+type </sdk/apps/qml/QtQml/qtqml-typesystem-objecttypes/>`_  can be used
 as a property type. For example:
 
 .. code:: cpp
@@ -162,7 +166,7 @@ as a property type. For example:
     property Rectangle someRectangle
 
 This applies to `custom QML
-types </sdk/apps/qml/QtQml/qtqml-typesystem-objecttypes#defining-object-types-from-qml>`__
+types </sdk/apps/qml/QtQml/qtqml-typesystem-objecttypes/#defining-object-types-from-qml>`_ 
 as well. If a QML type was defined in a file named
 ``ColorfulButton.qml`` (in a directory which was then imported by the
 client), then a property of type ``ColorfulButton`` would also be valid.
@@ -236,7 +240,7 @@ An example of imperative value assignment follows:
 As previously noted, there are two kinds of values which may be assigned
 to a property: *static* values, and *binding expression* values. The
 latter are also known as `property
-bindings </sdk/apps/qml/QtQml/qtqml-syntax-propertybinding/>`__.
+bindings </sdk/apps/qml/QtQml/qtqml-syntax-propertybinding/>`_ .
 
 +--------------------------------------+--------------------------------------+
 | Kind                                 | Semantics                            |
@@ -278,11 +282,11 @@ properties:
 
 **Note:** To assign a binding expression imperatively, the binding
 expression must be contained in a function that is passed into
-`Qt.binding() </sdk/apps/qml/QtQml/Qt#binding-method>`__, and then the
-value returned by Qt.binding() must be assigned to the property. In
-contrast, Qt.binding() must not be used when assigning a binding
-expression upon initialization. See `Property
-Binding </sdk/apps/qml/QtQml/qtqml-syntax-propertybinding/>`__ for more
+:ref:`Qt.binding() <sdk_qtqml_qt#binding-method>`, and then the value
+returned by Qt.binding() must be assigned to the property. In contrast,
+Qt.binding() must not be used when assigning a binding expression upon
+initialization. See `Property
+Binding </sdk/apps/qml/QtQml/qtqml-syntax-propertybinding/>`_  for more
 information.
 
 .. rubric:: Type Safety
@@ -310,10 +314,10 @@ able to assign the string ``"red"`` to a color property, without an
 error being reported.
 
 See `QML Basic
-Types </sdk/apps/qml/QtQml/qtqml-typesystem-basictypes/>`__ for a list
+Types </sdk/apps/qml/QtQml/qtqml-typesystem-basictypes/>`_  for a list
 of the types of properties that are supported by default. Additionally,
 any available `QML object
-type </sdk/apps/qml/QtQml/qtqml-typesystem-objecttypes/>`__ may also be
+type </sdk/apps/qml/QtQml/qtqml-typesystem-objecttypes/>`_  may also be
 used as a property type.
 
 .. rubric:: Special Property Types
@@ -331,9 +335,9 @@ surrounded by square brackets:
         [ <item 1>, <item 2>, ... ]
 
 For example, the Item type has a states property that is used to hold a
-list of `State </sdk/apps/qml/QtQml/State/>`__ type objects. The code
-below initializes the value of this property to a list of three
-`State </sdk/apps/qml/QtQml/State/>`__ objects:
+list of :ref:`State <sdk_qtqml_state>` type objects. The code below
+initializes the value of this property to a list of three
+:ref:`State <sdk_qtqml_state>` objects:
 
 .. code:: qml
 
@@ -415,7 +419,7 @@ Grouped property types are basic types which have subproperties. Some of
 these basic types are provided by the QML language, while others may
 only be used if the Qt Quick module is imported. See the documentation
 about `QML Basic
-Types </sdk/apps/qml/QtQml/qtqml-typesystem-basictypes/>`__ for more
+Types </sdk/apps/qml/QtQml/qtqml-typesystem-basictypes/>`_  for more
 information.
 
 .. rubric:: Property Aliases
@@ -438,7 +442,7 @@ valid alias reference:
 
 Unlike an ordinary property, an alias can only refer to a object, or the
 property of a object, that is within the scope of the
-`type </sdk/apps/qml/QtQml/qtqml-typesystem-objecttypes/>`__ within
+`type </sdk/apps/qml/QtQml/qtqml-typesystem-objecttypes/>`_  within
 which the alias is declared. It cannot contain arbitrary JavaScript
 expressions and it cannot refer to objects declared outside of the scope
 of its type. Also note the *alias reference* is not optional, unlike the
@@ -489,7 +493,7 @@ Likewise, aliasing an aliasing property will also result in an error.
     Component.onCompleted: widgetLabel.text = "Alias completed Initialization"
 
 When importing a `QML object
-type </sdk/apps/qml/QtQml/qtqml-typesystem-objecttypes/>`__ with a
+type </sdk/apps/qml/QtQml/qtqml-typesystem-objecttypes/>`_  with a
 property alias in the root object, however, the property appear as a
 regular Qt property and consequently can be used in alias references.
 
@@ -604,16 +608,16 @@ invalid:
     }
 
 **Note:** A read-only property cannot also be a
-`default </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes#default-properties>`__
+`default </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes/#default-properties>`_ 
 or
-`alias </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes#property-aliases>`__
+`alias </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes/#property-aliases>`_ 
 property.
 
 .. rubric:: Property Modifier Objects
    :name: property-modifier-objects
 
 Properties can have `property value modifier
-objects </sdk/apps/qml/QtQml/qtqml-cppintegration-definetypes#property-modifier-types>`__
+objects </sdk/apps/qml/QtQml/qtqml-cppintegration-definetypes/#property-modifier-types>`_ 
 associated with them. The syntax for declaring an instance of a property
 modifier type associated with a particular property is as follows:
 
@@ -624,7 +628,7 @@ modifier type associated with a particular property is as follows:
     }
 
 It is important to note that the above syntax is in fact an `object
-declaration </sdk/apps/qml/QtQml/qtqml-syntax-basics#object-declarations>`__
+declaration </sdk/apps/qml/QtQml/qtqml-syntax-basics/#object-declarations>`_ 
 which will instantiate an object which acts on a pre-existing property.
 
 Certain property modifier types may only be applicable to specific
@@ -646,7 +650,7 @@ example, has a clicked signal that is emitted when the user clicks
 within the mouse area.
 
 An object can be notified through a `signal
-handler </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes#signal-handler-attributes>`__
+handler </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes/#signal-handler-attributes>`_ 
 whenever it a particular signal is emitted. A signal handler is declared
 with the syntax *on<Signal>* where *<Signal>* is the name of the signal,
 with the first letter capitalized. The signal handler must be declared
@@ -704,11 +708,11 @@ parameters are used, the parameter types must be declared, as for the
 ``string`` and ``var`` arguments for the ``actionPerformed`` signal
 above. The allowed parameter types are the same as those listed under
 `Defining Property
-Attributes </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes#defining-property-attributes>`__
+Attributes </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes/#defining-property-attributes>`_ 
 on this page.
 
 To emit a signal, invoke it as a method. Any relevant `signal
-handlers </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes#signal-handler-attributes>`__
+handlers </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes/#signal-handler-attributes>`_ 
 will be invoked when the signal is emitted, and handlers can use the
 defined signal argument names to access the respective arguments.
 
@@ -718,9 +722,9 @@ defined signal argument names to access the respective arguments.
 QML types also provide built-in *property change signals* that are
 emitted whenever a property value changes, as previously described in
 the section on `property
-attributes </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes#property-attributes>`__.
+attributes </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes/#property-attributes>`_ .
 See the upcoming section on `property change signal
-handlers </sdk/apps/qml/QtQml/qtqml-syntax-signals#property-change-signal-handlers>`__
+handlers </sdk/apps/qml/QtQml/qtqml-syntax-signals/#property-change-signal-handlers>`_ 
 for more information about why these signals are useful, and how to use
 them.
 
@@ -728,7 +732,7 @@ them.
    :name: signal-handler-attributes
 
 Signal handlers are a special sort of `method
-attribute </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes#method-attributes>`__,
+attribute </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes/#method-attributes>`_ ,
 where the method implementation is invoked by the QML engine whenever
 the associated signal is emitted. Adding a signal to an object
 definition in QML will automatically add an associated signal handler to
@@ -767,7 +771,7 @@ signal handlers are provided by the client:
     }
 
 See the `Signal and Handler Event
-System </sdk/apps/qml/QtQml/qtqml-syntax-signals/>`__ for more details
+System </sdk/apps/qml/QtQml/qtqml-syntax-signals/>`_  for more details
 on use of signals.
 
 .. rubric:: Property Change Signal Handlers
@@ -796,7 +800,7 @@ A method of an object type is a function which may be called to perform
 some processing or trigger further events. A method can be connected to
 a signal so that it is automatically invoked whenever the signal is
 emitted. See `Signal and Handler Event
-System </sdk/apps/qml/QtQml/qtqml-syntax-signals/>`__ for more details.
+System </sdk/apps/qml/QtQml/qtqml-syntax-signals/>`_  for more details.
 
 .. rubric:: Defining Method Attributes
    :name: defining-method-attributes
@@ -911,9 +915,9 @@ An attached signal handler is referred to in the same way. For example,
 the ``Component.isCompleted`` attached signal handler is commonly used
 to execute some JavaScript code when a component's creation process has
 been completed. In the example below, once the
-`ListModel </sdk/apps/qml/QtQml/ListModel/>`__ has been fully created,
-its ``Component.onCompleted`` signal handler will automatically be
-invoked to populate the model:
+:ref:`ListModel <sdk_qtqml_listmodel>` has been fully created, its
+``Component.onCompleted`` signal handler will automatically be invoked
+to populate the model:
 
 .. code:: qml
 

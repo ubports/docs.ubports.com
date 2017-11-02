@@ -1,3 +1,7 @@
+.. _sdk_contenthub_contentstore:
+ContentHub ContentStore
+=======================
+
 
 ContentStore is an object returned by the ContentHub.
 

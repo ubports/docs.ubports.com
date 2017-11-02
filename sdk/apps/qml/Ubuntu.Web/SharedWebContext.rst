@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_web_sharedwebcontext:
+Ubuntu.Web SharedWebContext
+===========================
+
 A singleton that exposes a shared WebContext that can be used by several
 WebView instances in the same application.
 
@@ -8,19 +12,21 @@ WebView instances in the same application.
 Properties
 ----------
 
--  ****`customUA </sdk/apps/qml/Ubuntu.Web/SharedWebContext#customUA-prop>`__****
+-  :ref:`customUA <sdk_ubuntu_web_sharedwebcontext_customUA-prop>`
    : string
--  ****`sharedContext </sdk/apps/qml/Ubuntu.Web/SharedWebContext#sharedContext-prop>`__****
+-  :ref:`sharedContext <sdk_ubuntu_web_sharedwebcontext_sharedContext-prop>`
    : WebContext
 
 Detailed Description
 --------------------
 
-Note that the `WebView </sdk/apps/qml/Ubuntu.Web/WebView/>`__ component
-already uses the shared context.
+Note that the :ref:`WebView <sdk_ubuntu_web_webview>` component already
+uses the shared context.
 
 Property Documentation
 ----------------------
+
+.. _sdk_ubuntu_web_sharedwebcontext_customUA-prop:
 
 +--------------------------------------------------------------------------+
 |        \ customUA : string                                               |
@@ -30,13 +36,13 @@ An alias to the shared context’s default user agent string.
 
 | 
 
+.. _sdk_ubuntu_web_sharedwebcontext_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ sharedContext :                                                 |
-| `WebContext </sdk/apps/qml/Ubuntu.Web/WebContext/>`__                    |
+| :ref:` <>`\ sharedContext : `WebContext <sdk_ubuntu_web_webcontext>`   |
 +--------------------------------------------------------------------------+
 
-The `WebContext </sdk/apps/qml/Ubuntu.Web/WebContext/>`__ instance that
-several `WebView </sdk/apps/qml/Ubuntu.Web/WebView/>`__ instances can
-share.
+The :ref:`WebContext <sdk_ubuntu_web_webcontext>` instance that several
+:ref:`WebView <sdk_ubuntu_web_webview>` instances can share.
 
 | 

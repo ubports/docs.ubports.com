@@ -1,5 +1,9 @@
+.. _sdk_activationquerybase:
+ActivationQueryBase
+===================
+
 Base class for an activation request that is executed inside a scope.
-`More... </sdk/scopes/cpp/unity.scopes.ActivationQueryBase#details>`__
+`More... </sdk/scopes/cpp/unity.scopes.ActivationQueryBase/#details>`_ 
 
 ``#include <unity/scopes/ActivationQueryBase.h>``
 
@@ -14,10 +18,10 @@ Inheritance diagram for unity::scopes::ActivationQueryBase:
 
  
 
-`ActivationQueryBase </sdk/scopes/cpp/unity.scopes.ActivationQueryBase#ae853aab10c2fd7411208a1764b59c439>`__
-(`Result </sdk/scopes/cpp/unity.scopes.Result/>`__ const
-&\ `result </sdk/scopes/cpp/unity.scopes.ActivationQueryBase#ac23d5b45f73f8ed38139996ef8c27195>`__,
-`ActionMetadata </sdk/scopes/cpp/unity.scopes.ActionMetadata/>`__ const
+`ActivationQueryBase </sdk/scopes/cpp/unity.scopes.ActivationQueryBase/#ae853aab10c2fd7411208a1764b59c439>`_ 
+(`Result </sdk/scopes/cpp/unity.scopes.Result/>`_  const
+&\ `result </sdk/scopes/cpp/unity.scopes.ActivationQueryBase/#ac23d5b45f73f8ed38139996ef8c27195>`_ ,
+`ActionMetadata </sdk/scopes/cpp/unity.scopes.ActionMetadata/>`_  const
 &metadata)
 
  
@@ -28,14 +32,14 @@ Inheritance diagram for unity::scopes::ActivationQueryBase:
 
  
 
-`ActivationQueryBase </sdk/scopes/cpp/unity.scopes.ActivationQueryBase#a2f4b19b45dac666ab59454abdea73ea1>`__
-(`Result </sdk/scopes/cpp/unity.scopes.Result/>`__ const
-&\ `result </sdk/scopes/cpp/unity.scopes.ActivationQueryBase#ac23d5b45f73f8ed38139996ef8c27195>`__,
-`ActionMetadata </sdk/scopes/cpp/unity.scopes.ActionMetadata/>`__ const
+`ActivationQueryBase </sdk/scopes/cpp/unity.scopes.ActivationQueryBase/#a2f4b19b45dac666ab59454abdea73ea1>`_ 
+(`Result </sdk/scopes/cpp/unity.scopes.Result/>`_  const
+&\ `result </sdk/scopes/cpp/unity.scopes.ActivationQueryBase/#ac23d5b45f73f8ed38139996ef8c27195>`_ ,
+`ActionMetadata </sdk/scopes/cpp/unity.scopes.ActionMetadata/>`_  const
 &metadata, std::string const
-&\ `widget\_id </sdk/scopes/cpp/unity.scopes.ActivationQueryBase#a95aa7e96b4b0f7b1bc10e2342de02db8>`__,
+&\ `widget\_id </sdk/scopes/cpp/unity.scopes.ActivationQueryBase/#a95aa7e96b4b0f7b1bc10e2342de02db8>`_ ,
 std::string const
-&\ `action\_id </sdk/scopes/cpp/unity.scopes.ActivationQueryBase#a0cb38f795f4096a6bc2f40d5c192df6e>`__)
+&\ `action\_id </sdk/scopes/cpp/unity.scopes.ActivationQueryBase/#a0cb38f795f4096a6bc2f40d5c192df6e>`_ )
 
  
 
@@ -45,12 +49,12 @@ std::string const
 
  
 
-`ActivationQueryBase </sdk/scopes/cpp/unity.scopes.ActivationQueryBase#ad4833abec80f83682b20b8aa4b37ae06>`__
-(`Result </sdk/scopes/cpp/unity.scopes.Result/>`__ const
+`ActivationQueryBase </sdk/scopes/cpp/unity.scopes.ActivationQueryBase/#ad4833abec80f83682b20b8aa4b37ae06>`_ 
+(`Result </sdk/scopes/cpp/unity.scopes.Result/>`_  const
 &update\_result,
-`ActionMetadata </sdk/scopes/cpp/unity.scopes.ActionMetadata/>`__ const
+`ActionMetadata </sdk/scopes/cpp/unity.scopes.ActionMetadata/>`_  const
 &metadata, std::string const
-&\ `action\_id </sdk/scopes/cpp/unity.scopes.ActivationQueryBase#a0cb38f795f4096a6bc2f40d5c192df6e>`__)
+&\ `action\_id </sdk/scopes/cpp/unity.scopes.ActivationQueryBase/#a0cb38f795f4096a6bc2f40d5c192df6e>`_ )
 
  
 
@@ -60,7 +64,7 @@ std::string const
 
         virtual void 
 
-`cancelled </sdk/scopes/cpp/unity.scopes.ActivationQueryBase#af9b8e83ac6716db51aba942aca9cc6be>`__
+`cancelled </sdk/scopes/cpp/unity.scopes.ActivationQueryBase/#af9b8e83ac6716db51aba942aca9cc6be>`_ 
 () override
 
  
@@ -70,9 +74,9 @@ std::string const
  
 
 virtual
-`ActivationResponse </sdk/scopes/cpp/unity.scopes.ActivationResponse/>`__ 
+`ActivationResponse </sdk/scopes/cpp/unity.scopes.ActivationResponse/>`_  
 
-`activate </sdk/scopes/cpp/unity.scopes.ActivationQueryBase#a61ed49d8bc56e677ff2eb1f30e6a6b6b>`__
+`activate </sdk/scopes/cpp/unity.scopes.ActivationQueryBase/#a61ed49d8bc56e677ff2eb1f30e6a6b6b>`_ 
 ()
 
  
@@ -81,9 +85,9 @@ virtual
 
  
 
-`Result </sdk/scopes/cpp/unity.scopes.Result/>`__ 
+`Result </sdk/scopes/cpp/unity.scopes.Result/>`_  
 
-`result </sdk/scopes/cpp/unity.scopes.ActivationQueryBase#ac23d5b45f73f8ed38139996ef8c27195>`__
+`result </sdk/scopes/cpp/unity.scopes.ActivationQueryBase/#ac23d5b45f73f8ed38139996ef8c27195>`_ 
 () const
 
  
@@ -92,9 +96,9 @@ virtual
 
  
 
-`ActionMetadata </sdk/scopes/cpp/unity.scopes.ActionMetadata/>`__ 
+`ActionMetadata </sdk/scopes/cpp/unity.scopes.ActionMetadata/>`_  
 
-`action\_metadata </sdk/scopes/cpp/unity.scopes.ActivationQueryBase#ae215e7780c87d835893eb0df70f09d3b>`__
+`action\_metadata </sdk/scopes/cpp/unity.scopes.ActivationQueryBase/#ae215e7780c87d835893eb0df70f09d3b>`_ 
 () const
 
  
@@ -105,7 +109,7 @@ virtual
 
 std::string 
 
-`widget\_id </sdk/scopes/cpp/unity.scopes.ActivationQueryBase#a95aa7e96b4b0f7b1bc10e2342de02db8>`__
+`widget\_id </sdk/scopes/cpp/unity.scopes.ActivationQueryBase/#a95aa7e96b4b0f7b1bc10e2342de02db8>`_ 
 () const
 
  
@@ -116,7 +120,7 @@ std::string 
 
 std::string 
 
-`action\_id </sdk/scopes/cpp/unity.scopes.ActivationQueryBase#a0cb38f795f4096a6bc2f40d5c192df6e>`__
+`action\_id </sdk/scopes/cpp/unity.scopes.ActivationQueryBase/#a0cb38f795f4096a6bc2f40d5c192df6e>`_ 
 () const
 
  
@@ -126,11 +130,11 @@ std::string 
  
 
 |-| Public Member Functions inherited from
-`unity::scopes::QueryBase </sdk/scopes/cpp/unity.scopes.QueryBase/>`__
+`unity::scopes::QueryBase </sdk/scopes/cpp/unity.scopes.QueryBase/>`_ 
 
 bool 
 
-`valid </sdk/scopes/cpp/unity.scopes.QueryBase#a095e61eabe2042eeea5c4df1a444d7d4>`__
+`valid </sdk/scopes/cpp/unity.scopes.QueryBase/#a095e61eabe2042eeea5c4df1a444d7d4>`_ 
 () const
 
  
@@ -139,9 +143,9 @@ bool 
 
  
 
-`unity::scopes::VariantMap </sdk/scopes/cpp/unity.scopes#ad5d8ccfa11a327fca6f3e4cee11f4c10>`__ 
+:ref:`unity::scopes::VariantMap <sdk_unity_scopes#ad5d8ccfa11a327fca6f3e4cee11f4c10>` 
 
-`settings </sdk/scopes/cpp/unity.scopes.QueryBase#ab6a25ba587387a7f490b8b5a081e9ed6>`__
+`settings </sdk/scopes/cpp/unity.scopes.QueryBase/#ab6a25ba587387a7f490b8b5a081e9ed6>`_ 
 () const
 
  
@@ -158,7 +162,7 @@ Base class for an activation request that is executed inside a scope.
 The default implementation responds with
 ActivationResponse(ActivationResponse::Status::NotHandled). Reimplement
 this class and return an instance from
-`ScopeBase::activate </sdk/scopes/cpp/unity.scopes.ScopeBase#a49a0b9ada0eeb4c71e6a2181c3d8c9e7>`__
+`ScopeBase::activate </sdk/scopes/cpp/unity.scopes.ScopeBase/#a49a0b9ada0eeb4c71e6a2181c3d8c9e7>`_ 
 method for custom activation handling.
 
 Constructor & Destructor Documentation
@@ -167,38 +171,38 @@ Constructor & Destructor Documentation
 +--------------------+--------------------+--------------------+--------------------+
 | unity::scopes::Act | (                  | `Result </sdk/scop | *result*,          |
 | ivationQueryBase:: |                    | es/cpp/unity.scope |                    |
-| ActivationQueryBas |                    | s.Result/>`__      |                    |
+| ActivationQueryBas |                    | s.Result/>`_       |                    |
 | e                  |                    | const &            |                    |
 +--------------------+--------------------+--------------------+--------------------+
 |                    |                    | `ActionMetadata </ | *metadata*         |
 |                    |                    | sdk/scopes/cpp/uni |                    |
 |                    |                    | ty.scopes.ActionMe |                    |
-|                    |                    | tadata/>`__        |                    |
+|                    |                    | tadata/>`_         |                    |
 |                    |                    | const &            |                    |
 +--------------------+--------------------+--------------------+--------------------+
 |                    | )                  |                    |                    |
 +--------------------+--------------------+--------------------+--------------------+
 
 Create
-`ActivationQueryBase </sdk/scopes/cpp/unity.scopes.ActivationQueryBase/>`__.
+`ActivationQueryBase </sdk/scopes/cpp/unity.scopes.ActivationQueryBase/>`_ .
 
 Parameters
-    +------------+----------------------------------------------------------------------------------------------------------------------------------+
-    | result     | The result received by `ScopeBase::activate() </sdk/scopes/cpp/unity.scopes.ScopeBase#a49a0b9ada0eeb4c71e6a2181c3d8c9e7>`__.     |
-    +------------+----------------------------------------------------------------------------------------------------------------------------------+
-    | metadata   | The metadata received by `ScopeBase::activate() </sdk/scopes/cpp/unity.scopes.ScopeBase#a49a0b9ada0eeb4c71e6a2181c3d8c9e7>`__.   |
-    +------------+----------------------------------------------------------------------------------------------------------------------------------+
+    +------------+-----------------------------------------------------------------------------------------------------------------------------------+
+    | result     | The result received by `ScopeBase::activate() </sdk/scopes/cpp/unity.scopes.ScopeBase/#a49a0b9ada0eeb4c71e6a2181c3d8c9e7>`_ .     |
+    +------------+-----------------------------------------------------------------------------------------------------------------------------------+
+    | metadata   | The metadata received by `ScopeBase::activate() </sdk/scopes/cpp/unity.scopes.ScopeBase/#a49a0b9ada0eeb4c71e6a2181c3d8c9e7>`_ .   |
+    +------------+-----------------------------------------------------------------------------------------------------------------------------------+
 
 +--------------------+--------------------+--------------------+--------------------+
 | unity::scopes::Act | (                  | `Result </sdk/scop | *result*,          |
 | ivationQueryBase:: |                    | es/cpp/unity.scope |                    |
-| ActivationQueryBas |                    | s.Result/>`__      |                    |
+| ActivationQueryBas |                    | s.Result/>`_       |                    |
 | e                  |                    | const &            |                    |
 +--------------------+--------------------+--------------------+--------------------+
 |                    |                    | `ActionMetadata </ | *metadata*,        |
 |                    |                    | sdk/scopes/cpp/uni |                    |
 |                    |                    | ty.scopes.ActionMe |                    |
-|                    |                    | tadata/>`__        |                    |
+|                    |                    | tadata/>`_         |                    |
 |                    |                    | const &            |                    |
 +--------------------+--------------------+--------------------+--------------------+
 |                    |                    | std::string const  | *widget\_id*,      |
@@ -211,29 +215,29 @@ Parameters
 +--------------------+--------------------+--------------------+--------------------+
 
 Create
-`ActivationQueryBase </sdk/scopes/cpp/unity.scopes.ActivationQueryBase/>`__.
+`ActivationQueryBase </sdk/scopes/cpp/unity.scopes.ActivationQueryBase/>`_ .
 
 Parameters
-    +--------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
-    | result       | The result received by `ScopeBase::perform\_action() </sdk/scopes/cpp/unity.scopes.ScopeBase#a2f4d476fa790349c9a7de52be3232d11>`__.              |
-    +--------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
-    | metadata     | The metadata received by `ScopeBase::perform\_action() </sdk/scopes/cpp/unity.scopes.ScopeBase#a2f4d476fa790349c9a7de52be3232d11>`__.            |
-    +--------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
-    | widget\_id   | The widget identifier receiver of `ScopeBase::perform\_action() </sdk/scopes/cpp/unity.scopes.ScopeBase#a2f4d476fa790349c9a7de52be3232d11>`__.   |
-    +--------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
-    | action\_id   | The action identifier receiver of `ScopeBase::perform\_action() </sdk/scopes/cpp/unity.scopes.ScopeBase#a2f4d476fa790349c9a7de52be3232d11>`__.   |
-    +--------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+    +--------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+    | result       | The result received by `ScopeBase::perform\_action() </sdk/scopes/cpp/unity.scopes.ScopeBase/#a2f4d476fa790349c9a7de52be3232d11>`_ .              |
+    +--------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+    | metadata     | The metadata received by `ScopeBase::perform\_action() </sdk/scopes/cpp/unity.scopes.ScopeBase/#a2f4d476fa790349c9a7de52be3232d11>`_ .            |
+    +--------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+    | widget\_id   | The widget identifier receiver of `ScopeBase::perform\_action() </sdk/scopes/cpp/unity.scopes.ScopeBase/#a2f4d476fa790349c9a7de52be3232d11>`_ .   |
+    +--------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+    | action\_id   | The action identifier receiver of `ScopeBase::perform\_action() </sdk/scopes/cpp/unity.scopes.ScopeBase/#a2f4d476fa790349c9a7de52be3232d11>`_ .   |
+    +--------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
 
 +--------------------+--------------------+--------------------+--------------------+
 | unity::scopes::Act | (                  | `Result </sdk/scop | *update\_result*,  |
 | ivationQueryBase:: |                    | es/cpp/unity.scope |                    |
-| ActivationQueryBas |                    | s.Result/>`__      |                    |
+| ActivationQueryBas |                    | s.Result/>`_       |                    |
 | e                  |                    | const &            |                    |
 +--------------------+--------------------+--------------------+--------------------+
 |                    |                    | `ActionMetadata </ | *metadata*,        |
 |                    |                    | sdk/scopes/cpp/uni |                    |
 |                    |                    | ty.scopes.ActionMe |                    |
-|                    |                    | tadata/>`__        |                    |
+|                    |                    | tadata/>`_         |                    |
 |                    |                    | const &            |                    |
 +--------------------+--------------------+--------------------+--------------------+
 |                    |                    | std::string const  | *action\_id*       |
@@ -243,16 +247,16 @@ Parameters
 +--------------------+--------------------+--------------------+--------------------+
 
 Create
-`ActivationQueryBase </sdk/scopes/cpp/unity.scopes.ActivationQueryBase/>`__.
+`ActivationQueryBase </sdk/scopes/cpp/unity.scopes.ActivationQueryBase/>`_ .
 
 Parameters
-    +------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-    | update\_result   | The result received by `ScopeBase::activate\_result\_action() </sdk/scopes/cpp/unity.scopes.ScopeBase#a7ac39ca44f4790dd36900657692d0565>`__.              |
-    +------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-    | metadata         | The metadata received by `ScopeBase::activate\_result\_action() </sdk/scopes/cpp/unity.scopes.ScopeBase#a7ac39ca44f4790dd36900657692d0565>`__.            |
-    +------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-    | action\_id       | The action identifier received by `ScopeBase::activate\_result\_action() </sdk/scopes/cpp/unity.scopes.ScopeBase#a7ac39ca44f4790dd36900657692d0565>`__.   |
-    +------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+    +------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | update\_result   | The result received by `ScopeBase::activate\_result\_action() </sdk/scopes/cpp/unity.scopes.ScopeBase/#a7ac39ca44f4790dd36900657692d0565>`_ .              |
+    +------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | metadata         | The metadata received by `ScopeBase::activate\_result\_action() </sdk/scopes/cpp/unity.scopes.ScopeBase/#a7ac39ca44f4790dd36900657692d0565>`_ .            |
+    +------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | action\_id       | The action identifier received by `ScopeBase::activate\_result\_action() </sdk/scopes/cpp/unity.scopes.ScopeBase/#a7ac39ca44f4790dd36900657692d0565>`_ .   |
+    +------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Member Function Documentation
 -----------------------------
@@ -269,7 +273,7 @@ Get the action identifier for this activation request handler.
 
 Action identifier is empty when using the
 `unity::scopes::ActivationQueryBase(Result const& result, ActionMetadata
-const& metadata) </sdk/scopes/cpp/unity.scopes.ActivationQueryBase/>`__
+const& metadata) </sdk/scopes/cpp/unity.scopes.ActivationQueryBase/>`_ 
 constructor.
 
 Returns
@@ -280,7 +284,7 @@ Returns
 | a </sdk/scopes |                |                |                |                |
 | /cpp/unity.sco |                |                |                |                |
 | pes.ActionMeta |                |                |                |                |
-| data/>`__      |                |                |                |                |
+| data/>`_       |                |                |                |                |
 | unity::scopes: |                |                |                |                |
 | :ActivationQue |                |                |                |                |
 | ryBase::action |                |                |                |                |
@@ -311,7 +315,7 @@ Returns
 | | tionResponse/> |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
-| | `__            |                |  |                                      |
+| | `_             |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
 | | unity::scopes: |                |  |                                      |
@@ -335,7 +339,7 @@ Return response to the activation request.
 
 The response is received by the originator of the request. Default
 implementation returns
-`ActivationResponse </sdk/scopes/cpp/unity.scopes.ActivationResponse/>`__\ (ActivationResponse::Status::NotHandled.
+`ActivationResponse </sdk/scopes/cpp/unity.scopes.ActivationResponse/>`_ \ (ActivationResponse::Status::NotHandled.
 
 Returns
     The response to the activation request.
@@ -344,7 +348,7 @@ Returns
 | `Result </sdk/ | (              |                | )              | const          |
 | scopes/cpp/uni |                |                |                |                |
 | ty.scopes.Resu |                |                |                |                |
-| lt/>`__        |                |                |                |                |
+| lt/>`_         |                |                |                |                |
 | unity::scopes: |                |                |                |                |
 | :ActivationQue |                |                |                |                |
 | ryBase::result |                |                |                |                |
@@ -367,7 +371,7 @@ Get the widget identifier for this activation request handler.
 
 Widget identifier is empty when using the
 `unity::scopes::ActivationQueryBase(Result const& result, ActionMetadata
-const& metadata) </sdk/scopes/cpp/unity.scopes.ActivationQueryBase/>`__
+const& metadata) </sdk/scopes/cpp/unity.scopes.ActivationQueryBase/>`_ 
 constructor.
 
 Returns

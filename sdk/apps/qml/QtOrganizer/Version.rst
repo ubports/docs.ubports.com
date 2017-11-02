@@ -1,3 +1,7 @@
+.. _sdk_qtorganizer_version:
+QtOrganizer Version
+===================
+
 The Version element contains versioning information of an organizer
 item.
 
@@ -8,15 +12,14 @@ item.
 Properties
 ----------
 
--  ****`extendedVersion </sdk/apps/qml/QtOrganizer/Version#extendedVersion-prop>`__****
+-  :ref:`extendedVersion <sdk_qtorganizer_version_extendedVersion-prop>`
    : string
--  ****`version </sdk/apps/qml/QtOrganizer/Version#version-prop>`__****
-   : int
+-  :ref:`version <sdk_qtorganizer_version_version-prop>` : int
 
 Signals
 -------
 
--  ****`onDetailChanged </sdk/apps/qml/QtOrganizer/Version#onDetailChanged-signal>`__****\ ()
+-  :ref:`onDetailChanged <sdk_qtorganizer_version_onDetailChanged-signal>`\ ()
 
 Detailed Description
 --------------------
@@ -26,6 +29,8 @@ Detailed Description
 Property Documentation
 ----------------------
 
+.. _sdk_qtorganizer_version_extendedVersion-prop:
+
 +--------------------------------------------------------------------------+
 |        \ extendedVersion : string                                        |
 +--------------------------------------------------------------------------+
@@ -34,6 +39,8 @@ This property holds the extended version of an organizer item, which can
 be used to represent the version stored in the back-end.
 
 | 
+
+.. _sdk_qtorganizer_version_version-prop:
 
 +--------------------------------------------------------------------------+
 |        \ version : int                                                   |
@@ -47,11 +54,13 @@ be used as the sequence number as per iCalendar spec.
 Signal Documentation
 --------------------
 
+.. _sdk_qtorganizer_version_onDetailChanged()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ onDetailChanged()                                               |
 +--------------------------------------------------------------------------+
 
 **See also**
-`Detail::onDetailChanged </sdk/apps/qml/QtOrganizer/Detail#onDetailChanged-signal>`__.
+:ref:`Detail::onDetailChanged <sdk_qtorganizer_detail#onDetailChanged-signal>`.
 
 | 

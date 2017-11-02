@@ -1,3 +1,7 @@
+.. _sdk_qtqml_component:
+QtQml Component
+===============
+
 Encapsulates a QML component definition
 
 +---------------------+--------------------+
@@ -9,28 +13,26 @@ Encapsulates a QML component definition
 Properties
 ----------
 
--  ****`progress </sdk/apps/qml/QtQml/Component#progress-prop>`__**** :
-   real
--  ****`status </sdk/apps/qml/QtQml/Component#status-prop>`__**** :
-   enumeration
--  ****`url </sdk/apps/qml/QtQml/Component#url-prop>`__**** : url
+-  :ref:`progress <sdk_qtqml_component_progress-prop>` : real
+-  :ref:`status <sdk_qtqml_component_status-prop>` : enumeration
+-  :ref:`url <sdk_qtqml_component_url-prop>` : url
 
 Attached Signals
 ----------------
 
--  ****`completed </sdk/apps/qml/QtQml/Component#completed-signal>`__****\ ()
--  ****`destruction </sdk/apps/qml/QtQml/Component#destruction-signal>`__****\ ()
+-  :ref:`completed <sdk_qtqml_component_completed-signal>`\ ()
+-  :ref:`destruction <sdk_qtqml_component_destruction-signal>`\ ()
 
 Methods
 -------
 
 -  object
-   ****`createObject </sdk/apps/qml/QtQml/Component#createObject-method>`__****\ (Item
+   **:ref:`createObject <sdk_qtqml_component#createObject-method>`**\ (Item
    *parent*, object *properties*)
 -  string
-   ****`errorString </sdk/apps/qml/QtQml/Component#errorString-method>`__****\ ()
+   **:ref:`errorString <sdk_qtqml_component#errorString-method>`**\ ()
 -  object
-   ****`incubateObject </sdk/apps/qml/QtQml/Component#incubateObject-method>`__****\ (Item
+   **:ref:`incubateObject <sdk_qtqml_component#incubateObject-method>`**\ (Item
    *parent*, object *properties*, enumeration *mode*)
 
 Detailed Description
@@ -40,10 +42,10 @@ Components are reusable, encapsulated QML types with well-defined
 interfaces.
 
 Components are often defined by `component
-files </sdk/apps/qml/QtQml/qtqml-documents-topic/>`__ - that is,
+files </sdk/apps/qml/QtQml/qtqml-documents-topic/>`_  - that is,
 ``.qml`` files. The *Component* type essentially allows QML components
 to be defined inline, within a `QML
-document </sdk/apps/qml/QtQml/qtqml-documents-topic/>`__, rather than as
+document </sdk/apps/qml/QtQml/qtqml-documents-topic/>`_ , rather than as
 a separate QML file. This may be useful for reusing a small component
 within a QML file, or for defining a component that logically belongs
 with other QML components within a file.
@@ -77,7 +79,7 @@ Because Component is not derived from Item, you cannot anchor anything
 to it.
 
 Defining a ``Component`` is similar to defining a `QML
-document </sdk/apps/qml/QtQml/qtqml-documents-topic/>`__. A QML document
+document </sdk/apps/qml/QtQml/qtqml-documents-topic/>`_ . A QML document
 has a single top-level item that defines the behavior and properties of
 that component, and cannot define properties or behavior outside of that
 top-level item. In the same way, a ``Component`` definition contains a
@@ -90,7 +92,7 @@ for views. For example, the ListView::delegate property requires a
 ``Component`` to specify how each list item is to be displayed.
 
 ``Component`` objects can also be created dynamically using
-`Qt.createComponent() </sdk/apps/qml/QtQml/Qt#createComponent-method>`__.
+:ref:`Qt.createComponent() <sdk_qtqml_qt#createComponent-method>`.
 
 Creation Context
 ~~~~~~~~~~~~~~~~
@@ -98,7 +100,7 @@ Creation Context
 The creation context of a Component corresponds to the context where the
 Component was declared. This context is used as the parent context
 (creating a `context
-hierarchy </sdk/apps/qml/QtQml/qtqml-documents-scope#component-instance-hierarchy>`__)
+hierarchy </sdk/apps/qml/QtQml/qtqml-documents-scope/#component-instance-hierarchy>`_ )
 when the component is instantiated by an object such as a ListView or a
 Loader.
 
@@ -135,6 +137,8 @@ otherwise be private to external users).
 Property Documentation
 ----------------------
 
+.. _sdk_qtqml_component_progress-prop:
+
 +--------------------------------------------------------------------------+
 |        \ progress : real                                                 |
 +--------------------------------------------------------------------------+
@@ -143,6 +147,8 @@ The progress of loading the component, from 0.0 (nothing loaded) to 1.0
 (finished).
 
 | 
+
+.. _sdk_qtqml_component_status-prop:
 
 +--------------------------------------------------------------------------+
 |        \ status : enumeration                                            |
@@ -156,14 +162,15 @@ one of the following:
    create instances.
 -  Component.Loading - the component is currently being loaded
 -  Component.Error - an error occurred while loading the component.
-   Calling
-   `errorString() </sdk/apps/qml/QtQml/Component#errorString-method>`__
+   Calling :ref:`errorString() <sdk_qtqml_component#errorString-method>`
    will provide a human-readable description of any errors.
 
 | 
 
+.. _sdk_qtqml_component_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ url : `url </sdk/apps/qml/QtQml/Component#url-prop>`__          |
+| :ref:` <>`\ url : `url <sdk_qtqml_component#url-prop>`                 |
 +--------------------------------------------------------------------------+
 
 The component URL. This is the URL that was used to construct the
@@ -173,6 +180,8 @@ component.
 
 Attached Signal Documentation
 -----------------------------
+
+.. _sdk_qtqml_component_completed()-prop:
 
 +--------------------------------------------------------------------------+
 |        \ completed()                                                     |
@@ -196,14 +205,16 @@ object. The order of running the ``onCompleted`` handlers is undefined.
 
 | 
 
+.. _sdk_qtqml_component_destruction()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ destruction()                                                   |
 +--------------------------------------------------------------------------+
 
 Emitted as the object begins destruction. This can be used to undo work
 done in response to the
-`completed() </sdk/apps/qml/QtQml/Component#completed-signal>`__ signal,
-or other imperative code in your application.
+:ref:`completed() <sdk_qtqml_component#completed-signal>` signal, or other
+imperative code in your application.
 
 The corresponding handler is ``onDestruction``. It can be declared on
 any object. The order of running the ``onDestruction`` handlers is
@@ -218,12 +229,14 @@ undefined.
         }
     }
 
-**See also** `Qt QML </sdk/apps/qml/QtQml/qtqml-index/>`__.
+**See also** `Qt QML </sdk/apps/qml/QtQml/qtqml-index/>`_ .
 
 | 
 
 Method Documentation
 --------------------
+
+.. _sdk_qtqml_component_object createObject-method:
 
 +--------------------------------------------------------------------------+
 |        \ object createObject(Item *parent*, object *properties*)         |
@@ -255,8 +268,8 @@ object. These values are applied before the object creation is
 finalized. This is more efficient than setting property values after
 object creation, particularly where large sets of property values are
 defined, and also allows property bindings to be set up (using
-`Qt.binding </sdk/apps/qml/QtQml/Qt#binding-method>`__) before the
-object is created.
+:ref:`Qt.binding <sdk_qtqml_qt#binding-method>`) before the object is
+created.
 
 The *properties* argument is specified as a map of property-value items.
 For example, the code below creates an object with initial ``x`` and
@@ -270,13 +283,15 @@ For example, the code below creates an object with initial ``x`` and
 
 Dynamically created instances can be deleted with the ``destroy()``
 method. See `Dynamic QML Object Creation from
-JavaScript </sdk/apps/qml/QtQml/qtqml-javascript-dynamicobjectcreation/>`__
+JavaScript </sdk/apps/qml/QtQml/qtqml-javascript-dynamicobjectcreation/>`_ 
 for more information.
 
 **See also**
-`incubateObject() </sdk/apps/qml/QtQml/Component#incubateObject-method>`__.
+:ref:`incubateObject() <sdk_qtqml_component#incubateObject-method>`.
 
 | 
+
+.. _sdk_qtqml_component_string errorString-method:
 
 +--------------------------------------------------------------------------+
 |        \ string errorString()                                            |
@@ -291,6 +306,8 @@ character.
 If no errors are present, an empty string is returned.
 
 | 
+
+.. _sdk_qtqml_component_object incubateObject-method:
 
 +--------------------------------------------------------------------------+
 |        \ object incubateObject(Item *parent*, object *properties*,       |
@@ -346,10 +363,10 @@ The following example demonstrates how to use an incubator:
 
 Dynamically created instances can be deleted with the ``destroy()``
 method. See `Dynamic QML Object Creation from
-JavaScript </sdk/apps/qml/QtQml/qtqml-javascript-dynamicobjectcreation/>`__
+JavaScript </sdk/apps/qml/QtQml/qtqml-javascript-dynamicobjectcreation/>`_ 
 for more information.
 
 **See also**
-`createObject() </sdk/apps/qml/QtQml/Component#createObject-method>`__.
+:ref:`createObject() <sdk_qtqml_component#createObject-method>`.
 
 | 

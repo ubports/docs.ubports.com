@@ -1,3 +1,7 @@
+.. _sdk_qtcontacts_timestamp:
+QtContacts Timestamp
+====================
+
 The Timestamp element contains the creation and last-modified timestamp
 associated with the contact.
 
@@ -8,9 +12,8 @@ associated with the contact.
 Properties
 ----------
 
--  ****`created </sdk/apps/qml/QtContacts/Timestamp#created-prop>`__****
-   : date
--  ****`lastModified </sdk/apps/qml/QtContacts/Timestamp#lastModified-prop>`__****
+-  :ref:`created <sdk_qtcontacts_timestamp_created-prop>` : date
+-  :ref:`lastModified <sdk_qtcontacts_timestamp_lastModified-prop>`
    : date
 
 Detailed Description
@@ -26,6 +29,8 @@ This element is part of the **QtContacts** module.
 Property Documentation
 ----------------------
 
+.. _sdk_qtcontacts_timestamp_created-prop:
+
 +--------------------------------------------------------------------------+
 |        \ created : date                                                  |
 +--------------------------------------------------------------------------+
@@ -33,6 +38,8 @@ Property Documentation
 This property holds the value of the timestamp a contact was created.
 
 | 
+
+.. _sdk_qtcontacts_timestamp_lastModified-prop:
 
 +--------------------------------------------------------------------------+
 |        \ lastModified : date                                             |

@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_content_contenttransferhint:
+Ubuntu.Content ContentTransferHint
+==================================
+
 Component that indicates that a transfer is active
 
 +---------------------+-----------------------------+
@@ -7,7 +11,7 @@ Component that indicates that a transfer is active
 Properties
 ----------
 
--  ****`activeTransfer </sdk/apps/qml/Ubuntu.Content/ContentTransferHint#activeTransfer-prop>`__****
+-  :ref:`activeTransfer <sdk_ubuntu_content_contenttransferhint_activeTransfer-prop>`
    : var
 
 Detailed Description
@@ -17,24 +21,25 @@ This component shows that the transfer is currently running, and the
 source application is active. It blocks all input during that time.
 Place this component on top of your view.
 
-See documentation for
-`ContentHub </sdk/apps/qml/Ubuntu.Content/ContentHub/>`__ to see an
-example
+See documentation for :ref:`ContentHub <sdk_ubuntu_content_contenthub>` to
+see an example
 
 Property Documentation
 ----------------------
+
+.. _sdk_ubuntu_content_contenttransferhint_activeTransfer-prop:
 
 +--------------------------------------------------------------------------+
 |        \ activeTransfer : var                                            |
 +--------------------------------------------------------------------------+
 
-The `ContentTransfer </sdk/apps/qml/Ubuntu.Content/ContentTransfer/>`__
-to monitor the status of.
+The :ref:`ContentTransfer <sdk_ubuntu_content_contenttransfer>` to monitor
+the status of.
 
 This should be set to the currently active
-`ContentTransfer </sdk/apps/qml/Ubuntu.Content/ContentTransfer/>`__,
-which will then cause the
-`ContentTransferHint </sdk/apps/qml/Ubuntu.Content/ContentTransferHint/>`__
-to become visible while the transfer is in progress.
+:ref:`ContentTransfer <sdk_ubuntu_content_contenttransfer>`, which will
+then cause the
+:ref:`ContentTransferHint <sdk_ubuntu_content_contenttransferhint>` to
+become visible while the transfer is in progress.
 
 | 

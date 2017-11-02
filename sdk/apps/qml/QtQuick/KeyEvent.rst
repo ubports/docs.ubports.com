@@ -1,3 +1,7 @@
+.. _sdk_qtquick_keyevent:
+QtQuick KeyEvent
+================
+
 Provides information about a key event
 
 +---------------------+----------------------+
@@ -7,23 +11,21 @@ Provides information about a key event
 Properties
 ----------
 
--  ****`accepted </sdk/apps/qml/QtQuick/KeyEvent#accepted-prop>`__**** :
+-  :ref:`accepted <sdk_qtquick_keyevent_accepted-prop>` : bool
+-  :ref:`count <sdk_qtquick_keyevent_count-prop>` : int
+-  :ref:`isAutoRepeat <sdk_qtquick_keyevent_isAutoRepeat-prop>` :
    bool
--  ****`count </sdk/apps/qml/QtQuick/KeyEvent#count-prop>`__**** : int
--  ****`isAutoRepeat </sdk/apps/qml/QtQuick/KeyEvent#isAutoRepeat-prop>`__****
-   : bool
--  ****`key </sdk/apps/qml/QtQuick/KeyEvent#key-prop>`__**** : int
--  ****`modifiers </sdk/apps/qml/QtQuick/KeyEvent#modifiers-prop>`__****
-   : int
--  ****`nativeScanCode </sdk/apps/qml/QtQuick/KeyEvent#nativeScanCode-prop>`__****
+-  :ref:`key <sdk_qtquick_keyevent_key-prop>` : int
+-  :ref:`modifiers <sdk_qtquick_keyevent_modifiers-prop>` : int
+-  :ref:`nativeScanCode <sdk_qtquick_keyevent_nativeScanCode-prop>`
    : quint32
--  ****`text </sdk/apps/qml/QtQuick/KeyEvent#text-prop>`__**** : string
+-  :ref:`text <sdk_qtquick_keyevent_text-prop>` : string
 
 Methods
 -------
 
 -  bool
-   ****`matches </sdk/apps/qml/QtQuick/KeyEvent#matches-method>`__****\ (StandardKey
+   **:ref:`matches <sdk_qtquick_keyevent#matches-method>`**\ (StandardKey
    *key*)
 
 Detailed Description
@@ -42,6 +44,8 @@ Enter key is pressed:
 Property Documentation
 ----------------------
 
+.. _sdk_qtquick_keyevent_accepted-prop:
+
 +--------------------------------------------------------------------------+
 |        \ accepted : bool                                                 |
 +--------------------------------------------------------------------------+
@@ -54,15 +58,19 @@ so that ancestor items do not also respond to the same event.
 
 | 
 
+.. _sdk_qtquick_keyevent_count-prop:
+
 +--------------------------------------------------------------------------+
 |        \ count : int                                                     |
 +--------------------------------------------------------------------------+
 
 This property holds the number of keys involved in this event. If
-`KeyEvent::text </sdk/apps/qml/QtQuick/KeyEvent#text-prop>`__ is not
-empty, this is simply the length of the string.
+:ref:`KeyEvent::text <sdk_qtquick_keyevent#text-prop>` is not empty, this
+is simply the length of the string.
 
 | 
+
+.. _sdk_qtquick_keyevent_isAutoRepeat-prop:
 
 +--------------------------------------------------------------------------+
 |        \ isAutoRepeat : bool                                             |
@@ -71,6 +79,8 @@ empty, this is simply the length of the string.
 This property holds whether this event comes from an auto-repeating key.
 
 | 
+
+.. _sdk_qtquick_keyevent_key-prop:
 
 +--------------------------------------------------------------------------+
 |        \ key : int                                                       |
@@ -81,14 +91,15 @@ This property holds the code of the key that was pressed or released.
 See Qt.Key for the list of keyboard codes. These codes are independent
 of the underlying window system. Note that this function does not
 distinguish between capital and non-capital letters; use the
-`text </sdk/apps/qml/QtQuick/KeyEvent#text-prop>`__ property for this
-purpose.
+:ref:`text <sdk_qtquick_keyevent#text-prop>` property for this purpose.
 
 A value of either 0 or Qt.Key\_Unknown means that the event is not the
 result of a known key; for example, it may be the result of a compose
 sequence, a keyboard macro, or due to key event compression.
 
 | 
+
+.. _sdk_qtquick_keyevent_modifiers-prop:
 
 +--------------------------------------------------------------------------+
 |        \ modifiers : int                                                 |
@@ -120,6 +131,8 @@ For example, to react to a Shift key + Enter key combination:
 
 | 
 
+.. _sdk_qtquick_keyevent_nativeScanCode-prop:
+
 +--------------------------------------------------------------------------+
 |        \ nativeScanCode : quint32                                        |
 +--------------------------------------------------------------------------+
@@ -130,6 +143,8 @@ It is passed through from QKeyEvent unchanged.
 **See also** QKeyEvent::nativeScanCode().
 
 | 
+
+.. _sdk_qtquick_keyevent_text-prop:
 
 +--------------------------------------------------------------------------+
 |        \ text : string                                                   |
@@ -144,6 +159,8 @@ cases ``key`` will contain a valid value
 
 Method Documentation
 --------------------
+
+.. _sdk_qtquick_keyevent_bool matches-method:
 
 +--------------------------------------------------------------------------+
 |        \ bool matches(StandardKey *key*)                                 |

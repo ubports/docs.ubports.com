@@ -1,76 +1,72 @@
+.. _sdk_qtquick_animatedsprite:
+QtQuick AnimatedSprite
+======================
+
 Draws a sprite animation
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtQuick 2.4                   |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Item </sdk/apps/qml/QtQuick/Item/>` |
-|                                      | __                                   |
+| Inherits:                            | :ref:`Item <sdk_qtquick_item>`       |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`currentFrame </sdk/apps/qml/QtQuick/AnimatedSprite#currentFrame-prop>`__****
+-  :ref:`currentFrame <sdk_qtquick_animatedsprite_currentFrame-prop>`
    : int
--  ****`frameCount </sdk/apps/qml/QtQuick/AnimatedSprite#frameCount-prop>`__****
-   : int
--  ****`frameDuration </sdk/apps/qml/QtQuick/AnimatedSprite#frameDuration-prop>`__****
-   : int
--  ****`frameHeight </sdk/apps/qml/QtQuick/AnimatedSprite#frameHeight-prop>`__****
-   : int
--  ****`frameRate </sdk/apps/qml/QtQuick/AnimatedSprite#frameRate-prop>`__****
-   : qreal
--  ****`frameSync </sdk/apps/qml/QtQuick/AnimatedSprite#frameSync-prop>`__****
-   : bool
--  ****`frameWidth </sdk/apps/qml/QtQuick/AnimatedSprite#frameWidth-prop>`__****
-   : int
--  ****`frameX </sdk/apps/qml/QtQuick/AnimatedSprite#frameX-prop>`__****
-   : int
--  ****`frameY </sdk/apps/qml/QtQuick/AnimatedSprite#frameY-prop>`__****
-   : int
--  ****`interpolate </sdk/apps/qml/QtQuick/AnimatedSprite#interpolate-prop>`__****
-   : bool
--  ****`loops </sdk/apps/qml/QtQuick/AnimatedSprite#loops-prop>`__**** :
+-  :ref:`frameCount <sdk_qtquick_animatedsprite_frameCount-prop>` :
    int
--  ****`paused </sdk/apps/qml/QtQuick/AnimatedSprite#paused-prop>`__****
+-  :ref:`frameDuration <sdk_qtquick_animatedsprite_frameDuration-prop>`
+   : int
+-  :ref:`frameHeight <sdk_qtquick_animatedsprite_frameHeight-prop>`
+   : int
+-  :ref:`frameRate <sdk_qtquick_animatedsprite_frameRate-prop>` :
+   qreal
+-  :ref:`frameSync <sdk_qtquick_animatedsprite_frameSync-prop>` :
+   bool
+-  :ref:`frameWidth <sdk_qtquick_animatedsprite_frameWidth-prop>` :
+   int
+-  :ref:`frameX <sdk_qtquick_animatedsprite_frameX-prop>` : int
+-  :ref:`frameY <sdk_qtquick_animatedsprite_frameY-prop>` : int
+-  :ref:`interpolate <sdk_qtquick_animatedsprite_interpolate-prop>`
    : bool
--  ****`reverse </sdk/apps/qml/QtQuick/AnimatedSprite#reverse-prop>`__****
-   : bool
--  ****`running </sdk/apps/qml/QtQuick/AnimatedSprite#running-prop>`__****
-   : bool
--  ****`source </sdk/apps/qml/QtQuick/AnimatedSprite#source-prop>`__****
-   : url
+-  :ref:`loops <sdk_qtquick_animatedsprite_loops-prop>` : int
+-  :ref:`paused <sdk_qtquick_animatedsprite_paused-prop>` : bool
+-  :ref:`reverse <sdk_qtquick_animatedsprite_reverse-prop>` : bool
+-  :ref:`running <sdk_qtquick_animatedsprite_running-prop>` : bool
+-  :ref:`source <sdk_qtquick_animatedsprite_source-prop>` : url
 
 Methods
 -------
 
 -  int
-   ****`advance </sdk/apps/qml/QtQuick/AnimatedSprite#advance-method>`__****\ ()
+   **:ref:`advance <sdk_qtquick_animatedsprite#advance-method>`**\ ()
+-  int :ref:`pause <sdk_qtquick_animatedsprite_pause-method>`\ ()
 -  int
-   ****`pause </sdk/apps/qml/QtQuick/AnimatedSprite#pause-method>`__****\ ()
--  int
-   ****`restart </sdk/apps/qml/QtQuick/AnimatedSprite#restart-method>`__****\ ()
--  int
-   ****`resume </sdk/apps/qml/QtQuick/AnimatedSprite#resume-method>`__****\ ()
+   **:ref:`restart <sdk_qtquick_animatedsprite#restart-method>`**\ ()
+-  int :ref:`resume <sdk_qtquick_animatedsprite_resume-method>`\ ()
 
 Detailed Description
 --------------------
 
-`AnimatedSprite </sdk/apps/qml/QtQuick/qtquick-effects-sprites#animatedsprite>`__
+`AnimatedSprite </sdk/apps/qml/QtQuick/qtquick-effects-sprites/#animatedsprite>`_ 
 provides rendering and control over animations which are provided as
 multiple frames in the same image file. You can play it at a fixed
 speed, at the frame rate of your display, or manually advance and
 control the progress.
 
 For details of how a sprite animation is defined see the `Sprite
-Animations </sdk/apps/qml/QtQuick/qtquick-effects-sprites/>`__ overview.
+Animations </sdk/apps/qml/QtQuick/qtquick-effects-sprites/>`_  overview.
 Note that the
-`AnimatedSprite </sdk/apps/qml/QtQuick/qtquick-effects-sprites#animatedsprite>`__
+`AnimatedSprite </sdk/apps/qml/QtQuick/qtquick-effects-sprites/#animatedsprite>`_ 
 type does not use Sprite types to define multiple animations, but
 instead encapsulates a single animation itself.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_animatedsprite_currentFrame-prop:
 
 +--------------------------------------------------------------------------+
 |        \ currentFrame : int                                              |
@@ -78,18 +74,22 @@ Property Documentation
 
 When paused, the current frame can be advanced manually by setting this
 property or calling
-`advance() </sdk/apps/qml/QtQuick/AnimatedSprite#advance-method>`__.
+:ref:`advance() <sdk_qtquick_animatedsprite#advance-method>`.
 
 | 
+
+.. _sdk_qtquick_animatedsprite_frameCount-prop:
 
 +--------------------------------------------------------------------------+
 |        \ frameCount : int                                                |
 +--------------------------------------------------------------------------+
 
 Number of frames in this
-`AnimatedSprite </sdk/apps/qml/QtQuick/qtquick-effects-sprites#animatedsprite>`__.
+`AnimatedSprite </sdk/apps/qml/QtQuick/qtquick-effects-sprites/#animatedsprite>`_ .
 
 | 
+
+.. _sdk_qtquick_animatedsprite_frameDuration-prop:
 
 +--------------------------------------------------------------------------+
 |        \ frameDuration : int                                             |
@@ -98,24 +98,28 @@ Number of frames in this
 Duration of each frame of the animation. Values equal to or below 0 are
 invalid.
 
-If `frameRate </sdk/apps/qml/QtQuick/AnimatedSprite#frameRate-prop>`__
-is valid then it will be used to calculate the duration of the frames.
-If not, and frameDuration is valid, then frameDuration will be used.
+If :ref:`frameRate <sdk_qtquick_animatedsprite#frameRate-prop>` is valid
+then it will be used to calculate the duration of the frames. If not,
+and frameDuration is valid, then frameDuration will be used.
 
 Changing this parameter will restart the animation.
 
 | 
+
+.. _sdk_qtquick_animatedsprite_frameHeight-prop:
 
 +--------------------------------------------------------------------------+
 |        \ frameHeight : int                                               |
 +--------------------------------------------------------------------------+
 
 Height of a single frame in this
-`AnimatedSprite </sdk/apps/qml/QtQuick/qtquick-effects-sprites#animatedsprite>`__.
+`AnimatedSprite </sdk/apps/qml/QtQuick/qtquick-effects-sprites/#animatedsprite>`_ .
 
 May be omitted if it is the only sprite in the file.
 
 | 
+
+.. _sdk_qtquick_animatedsprite_frameRate-prop:
 
 +--------------------------------------------------------------------------+
 |        \ frameRate : qreal                                               |
@@ -126,14 +130,16 @@ are invalid.
 
 If frameRate is valid then it will be used to calculate the duration of
 the frames. If not, and
-`frameDuration </sdk/apps/qml/QtQuick/AnimatedSprite#frameDuration-prop>`__
-is valid , then
-`frameDuration </sdk/apps/qml/QtQuick/AnimatedSprite#frameDuration-prop>`__
-will be used.
+:ref:`frameDuration <sdk_qtquick_animatedsprite#frameDuration-prop>` is
+valid , then
+:ref:`frameDuration <sdk_qtquick_animatedsprite#frameDuration-prop>` will
+be used.
 
 Changing this parameter will restart the animation.
 
 | 
+
+.. _sdk_qtquick_animatedsprite_frameSync-prop:
 
 +--------------------------------------------------------------------------+
 |        \ frameSync : bool                                                |
@@ -145,8 +151,8 @@ screen. This synchronizes it with the painting rate as opposed to
 elapsed time.
 
 If frameSync is set to true, it overrides both
-`frameRate </sdk/apps/qml/QtQuick/AnimatedSprite#frameRate-prop>`__ and
-`frameDuration </sdk/apps/qml/QtQuick/AnimatedSprite#frameDuration-prop>`__.
+:ref:`frameRate <sdk_qtquick_animatedsprite#frameRate-prop>` and
+:ref:`frameDuration <sdk_qtquick_animatedsprite#frameDuration-prop>`.
 
 Default is false.
 
@@ -154,40 +160,48 @@ Changing this parameter will restart the animation.
 
 | 
 
+.. _sdk_qtquick_animatedsprite_frameWidth-prop:
+
 +--------------------------------------------------------------------------+
 |        \ frameWidth : int                                                |
 +--------------------------------------------------------------------------+
 
 Width of a single frame in this
-`AnimatedSprite </sdk/apps/qml/QtQuick/qtquick-effects-sprites#animatedsprite>`__.
+`AnimatedSprite </sdk/apps/qml/QtQuick/qtquick-effects-sprites/#animatedsprite>`_ .
 
 May be omitted if it is the only sprite in the file.
 
 | 
+
+.. _sdk_qtquick_animatedsprite_frameX-prop:
 
 +--------------------------------------------------------------------------+
 |        \ frameX : int                                                    |
 +--------------------------------------------------------------------------+
 
 The X coordinate in the image file of the first frame of the
-`AnimatedSprite </sdk/apps/qml/QtQuick/qtquick-effects-sprites#animatedsprite>`__.
+`AnimatedSprite </sdk/apps/qml/QtQuick/qtquick-effects-sprites/#animatedsprite>`_ .
 
 May be omitted if the first frame starts in the upper left corner of the
 file.
 
 | 
+
+.. _sdk_qtquick_animatedsprite_frameY-prop:
 
 +--------------------------------------------------------------------------+
 |        \ frameY : int                                                    |
 +--------------------------------------------------------------------------+
 
 The Y coordinate in the image file of the first frame of the
-`AnimatedSprite </sdk/apps/qml/QtQuick/qtquick-effects-sprites#animatedsprite>`__.
+`AnimatedSprite </sdk/apps/qml/QtQuick/qtquick-effects-sprites/#animatedsprite>`_ .
 
 May be omitted if the first frame starts in the upper left corner of the
 file.
 
 | 
+
+.. _sdk_qtquick_animatedsprite_interpolate-prop:
 
 +--------------------------------------------------------------------------+
 |        \ interpolate : bool                                              |
@@ -200,6 +214,8 @@ Default is true.
 
 | 
 
+.. _sdk_qtquick_animatedsprite_loops-prop:
+
 +--------------------------------------------------------------------------+
 |        \ loops : int                                                     |
 +--------------------------------------------------------------------------+
@@ -208,13 +224,15 @@ After playing the animation this many times, the animation will
 automatically stop. Negative values are invalid.
 
 If this is set to
-`AnimatedSprite </sdk/apps/qml/QtQuick/qtquick-effects-sprites#animatedsprite>`__.Infinite
+`AnimatedSprite </sdk/apps/qml/QtQuick/qtquick-effects-sprites/#animatedsprite>`_ .Infinite
 the animation will not stop playing on its own.
 
 Default is
-`AnimatedSprite </sdk/apps/qml/QtQuick/qtquick-effects-sprites#animatedsprite>`__.Infinite
+`AnimatedSprite </sdk/apps/qml/QtQuick/qtquick-effects-sprites/#animatedsprite>`_ .Infinite
 
 | 
+
+.. _sdk_qtquick_animatedsprite_paused-prop:
 
 +--------------------------------------------------------------------------+
 |        \ paused : bool                                                   |
@@ -226,6 +244,8 @@ Default is false.
 
 | 
 
+.. _sdk_qtquick_animatedsprite_reverse-prop:
+
 +--------------------------------------------------------------------------+
 |        \ reverse : bool                                                  |
 +--------------------------------------------------------------------------+
@@ -235,6 +255,8 @@ If true, then the animation will be played in reverse.
 Default is false.
 
 | 
+
+.. _sdk_qtquick_animatedsprite_running-prop:
 
 +--------------------------------------------------------------------------+
 |        \ running : bool                                                  |
@@ -246,29 +268,31 @@ Default is true
 
 | 
 
+.. _sdk_qtquick_animatedsprite_source-prop:
+
 +--------------------------------------------------------------------------+
 |        \ source : url                                                    |
 +--------------------------------------------------------------------------+
 
 The image source for the animation.
 
-If
-`frameHeight </sdk/apps/qml/QtQuick/AnimatedSprite#frameHeight-prop>`__
-and
-`frameWidth </sdk/apps/qml/QtQuick/AnimatedSprite#frameWidth-prop>`__
-are not specified, it is assumed to be a single long row of square
-frames. Otherwise, it can be multiple contiguous rows or rectangluar
-frames, when one row runs out the next will be used.
+If :ref:`frameHeight <sdk_qtquick_animatedsprite#frameHeight-prop>` and
+:ref:`frameWidth <sdk_qtquick_animatedsprite#frameWidth-prop>` are not
+specified, it is assumed to be a single long row of square frames.
+Otherwise, it can be multiple contiguous rows or rectangluar frames,
+when one row runs out the next will be used.
 
-If `frameX </sdk/apps/qml/QtQuick/AnimatedSprite#frameX-prop>`__ and
-`frameY </sdk/apps/qml/QtQuick/AnimatedSprite#frameY-prop>`__ are
-specified, the row of frames will be taken with that x/y coordinate as
-the upper left corner.
+If :ref:`frameX <sdk_qtquick_animatedsprite#frameX-prop>` and
+:ref:`frameY <sdk_qtquick_animatedsprite#frameY-prop>` are specified, the
+row of frames will be taken with that x/y coordinate as the upper left
+corner.
 
 | 
 
 Method Documentation
 --------------------
+
+.. _sdk_qtquick_animatedsprite_int advance-method:
 
 +--------------------------------------------------------------------------+
 |        \ int advance()                                                   |
@@ -278,17 +302,20 @@ Advances the sprite animation by one frame.
 
 | 
 
+.. _sdk_qtquick_animatedsprite_int pause-method:
+
 +--------------------------------------------------------------------------+
 |        \ int pause()                                                     |
 +--------------------------------------------------------------------------+
 
 Pauses the sprite animation. This does nothing if
-`paused </sdk/apps/qml/QtQuick/AnimatedSprite#paused-prop>`__ is true.
+:ref:`paused <sdk_qtquick_animatedsprite#paused-prop>` is true.
 
-**See also**
-`resume() </sdk/apps/qml/QtQuick/AnimatedSprite#resume-method>`__.
+**See also** :ref:`resume() <sdk_qtquick_animatedsprite#resume-method>`.
 
 | 
+
+.. _sdk_qtquick_animatedsprite_int restart-method:
 
 +--------------------------------------------------------------------------+
 |        \ int restart()                                                   |
@@ -298,15 +325,16 @@ Stops, then starts the sprite animation.
 
 | 
 
+.. _sdk_qtquick_animatedsprite_int resume-method:
+
 +--------------------------------------------------------------------------+
 |        \ int resume()                                                    |
 +--------------------------------------------------------------------------+
 
 Resumes the sprite animation if
-`paused </sdk/apps/qml/QtQuick/AnimatedSprite#paused-prop>`__ is true;
-otherwise, this does nothing.
+:ref:`paused <sdk_qtquick_animatedsprite#paused-prop>` is true; otherwise,
+this does nothing.
 
-**See also**
-`pause() </sdk/apps/qml/QtQuick/AnimatedSprite#pause-method>`__.
+**See also** :ref:`pause() <sdk_qtquick_animatedsprite#pause-method>`.
 
 | 

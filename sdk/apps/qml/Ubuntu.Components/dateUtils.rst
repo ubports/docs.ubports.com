@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_dateutils:
+Ubuntu.Components dateUtils
+===========================
+
 Various date utility functions.
 
 +---------------------+--------------------------------+

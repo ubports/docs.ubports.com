@@ -1,3 +1,7 @@
+.. _sdk_qtqml_objectmodel:
+QtQml ObjectModel
+=================
+
 Defines a set of items to be used as a model
 
 +---------------------+---------------------------+
@@ -7,27 +11,24 @@ Defines a set of items to be used as a model
 Properties
 ----------
 
--  ****`count </sdk/apps/qml/QtQml/ObjectModel#count-prop>`__**** : int
+-  :ref:`count <sdk_qtqml_objectmodel_count-prop>` : int
 
 Attached Properties
 -------------------
 
--  ****`index </sdk/apps/qml/QtQml/ObjectModel#index-attached-prop>`__****
-   : int
+-  :ref:`index <sdk_qtqml_objectmodel_index-attached-prop>` : int
 
 Detailed Description
 --------------------
 
-A `ObjectModel </sdk/apps/qml/QtQml/ObjectModel/>`__ contains the visual
-items to be used in a view. When a
-`ObjectModel </sdk/apps/qml/QtQml/ObjectModel/>`__ is used in a view,
-the view does not require a delegate since the
-`ObjectModel </sdk/apps/qml/QtQml/ObjectModel/>`__ already contains the
-visual delegate (items).
+A :ref:`ObjectModel <sdk_qtqml_objectmodel>` contains the visual items to
+be used in a view. When a :ref:`ObjectModel <sdk_qtqml_objectmodel>` is
+used in a view, the view does not require a delegate since the
+:ref:`ObjectModel <sdk_qtqml_objectmodel>` already contains the visual
+delegate (items).
 
 An item can determine its index within the model via the
-`index </sdk/apps/qml/QtQml/ObjectModel#index-attached-prop>`__ attached
-property.
+:ref:`index <sdk_qtqml_objectmodel#index-attached-prop>` attached property.
 
 The example below places three colored rectangles in a ListView.
 
@@ -55,6 +56,8 @@ The example below places three colored rectangles in a ListView.
 Property Documentation
 ----------------------
 
+.. _sdk_qtqml_objectmodel_count-prop:
+
 +--------------------------------------------------------------------------+
 |        \ count : int                                                     |
 +--------------------------------------------------------------------------+
@@ -65,6 +68,8 @@ The number of items in the model. This property is readonly.
 
 Attached Property Documentation
 -------------------------------
+
+.. _sdk_qtqml_objectmodel_ObjectModel.index-prop:
 
 +--------------------------------------------------------------------------+
 |        \ ObjectModel.index : int                                         |
@@ -77,5 +82,5 @@ It is attached to each instance of the delegate.
 
 | 
 
-.. |image0| image:: /media/sdk/apps/qml/QtQml/ObjectModel/images/visualitemmodel.png
+.. |image0| image:: /mediasdk_qtqml_objectmodelimages/visualitemmodel.png
 

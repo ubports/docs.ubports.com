@@ -1,3 +1,7 @@
+.. _sdk_qtqml_binding:
+QtQml Binding
+=============
+
 Enables the arbitrary creation of property bindings
 
 +---------------------+--------------------+
@@ -7,11 +11,10 @@ Enables the arbitrary creation of property bindings
 Properties
 ----------
 
--  ****`property </sdk/apps/qml/QtQml/Binding#property-prop>`__**** :
-   string
--  ****`target </sdk/apps/qml/QtQml/Binding#target-prop>`__**** : Object
--  ****`value </sdk/apps/qml/QtQml/Binding#value-prop>`__**** : any
--  ****`when </sdk/apps/qml/QtQml/Binding#when-prop>`__**** : bool
+-  :ref:`property <sdk_qtqml_binding_property-prop>` : string
+-  :ref:`target <sdk_qtqml_binding_target-prop>` : Object
+-  :ref:`value <sdk_qtqml_binding_value-prop>` : any
+-  :ref:`when <sdk_qtqml_binding_when-prop>` : bool
 
 Detailed Description
 --------------------
@@ -79,10 +82,12 @@ the property. In that sense, it functions much like a simplified State.
 If the binding target or binding property is changed, the bound value is
 immediately pushed onto the new target.
 
-**See also** `Qt QML </sdk/apps/qml/QtQml/qtqml-index/>`__.
+**See also** `Qt QML </sdk/apps/qml/QtQml/qtqml-index/>`_ .
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtqml_binding_property-prop:
 
 +--------------------------------------------------------------------------+
 |        \ property : string                                               |
@@ -92,6 +97,8 @@ The property to be updated.
 
 | 
 
+.. _sdk_qtqml_binding_target-prop:
+
 +--------------------------------------------------------------------------+
 |        \ target : Object                                                 |
 +--------------------------------------------------------------------------+
@@ -99,6 +106,8 @@ The property to be updated.
 The object to be updated.
 
 | 
+
+.. _sdk_qtqml_binding_value-prop:
 
 +--------------------------------------------------------------------------+
 |        \ value : any                                                     |
@@ -108,6 +117,8 @@ The value to be set on the target object and property. This can be a
 constant (which isn't very useful), or a bound expression.
 
 | 
+
+.. _sdk_qtqml_binding_when-prop:
 
 +--------------------------------------------------------------------------+
 |        \ when : bool                                                     |

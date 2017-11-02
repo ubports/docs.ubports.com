@@ -1,3 +1,7 @@
+.. _sdk_qtquick_qt_quick_particles_examples_-_image_particles:
+QtQuick Qt Quick Particles Examples - Image Particles
+=====================================================
+
 
 
 |image0|
@@ -7,7 +11,7 @@ in the particle system. Each example is a small QML file emphasizing a
 particular type or feature.
 
 All at once shows off several of the features of
-`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`__ at
+`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_  at
 the same time.
 
 .. code:: qml
@@ -25,7 +29,7 @@ the same time.
     colorTable: "../../images/colortable.png"
 
 Colored shows a simple
-`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`__ with
+`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_  with
 some color variation.
 
 .. code:: qml
@@ -72,9 +76,8 @@ in the direction that they travel.
 
 Sharing demonstrates what happens when multiple ImageParticles try to
 render the same particle. The following
-`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`__
-renders the particles inside the
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__:
+`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_ 
+renders the particles inside the :ref:`ListView <sdk_qtquick_listview>`:
 
 .. code:: qml
 
@@ -89,10 +92,10 @@ renders the particles inside the
     }
 
 The following
-`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`__ is
+`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_  is
 placed inside the list highlight, and renders the particles above the
 other
-`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`__.
+`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_ .
 
 .. code:: qml
 
@@ -106,13 +109,13 @@ other
     }
 
 Note that because it sets the color and alpha in this
-`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`__, it
+`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_ , it
 renders the particles in a different color. Since it doesn't specify
 anything about the rotation, it shares the rotation with the other
-`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`__ so
+`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_  so
 that the flowers are rotated the same way in both. Note that you can
 undo rotation in another
-`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`__, you
+`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_ , you
 just need to explicitly set rotationVariation to 0.
 
 Sprites demonstrates using an image particle to render animated sprites

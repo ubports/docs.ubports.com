@@ -1,3 +1,7 @@
+.. _sdk_qtquick_matrix4x4:
+QtQuick Matrix4x4
+=================
+
 Provides a way to apply a 4x4 tranformation matrix to an Item
 
 +---------------------+----------------------+
@@ -7,14 +11,13 @@ Provides a way to apply a 4x4 tranformation matrix to an Item
 Properties
 ----------
 
--  ****`matrix </sdk/apps/qml/QtQuick/Matrix4x4#matrix-prop>`__**** :
-   QMatrix4x4
+-  :ref:`matrix <sdk_qtquick_matrix4x4_matrix-prop>` : QMatrix4x4
 
 Detailed Description
 --------------------
 
 The Matrix4x4 type provides a way to apply a transformation to an
-`Item </sdk/apps/qml/QtQuick/Item/>`__ through a 4x4 matrix.
+:ref:`Item <sdk_qtquick_item>` through a 4x4 matrix.
 
 It allows for a combination of rotation, scale, translatation and
 shearing by using just one tranformation provided in a 4x4-matrix.
@@ -39,11 +42,13 @@ The following example rotates a Rectangle 45 degress (PI/4):
 Property Documentation
 ----------------------
 
+.. _sdk_qtquick_matrix4x4_matrix-prop:
+
 +--------------------------------------------------------------------------+
 |        \ matrix : QMatrix4x4                                             |
 +--------------------------------------------------------------------------+
 
 4x4-matrix which will be used in the tranformation of an
-`Item </sdk/apps/qml/QtQuick/Item/>`__
+:ref:`Item <sdk_qtquick_item>`
 
 | 

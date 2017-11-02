@@ -1,5 +1,9 @@
+.. _sdk_autopilot_introspection_types_point:
+autopilot.introspection.types Point
+===================================
+
  *class* ``autopilot.introspection.types.``\ ``Point``\ (*\*args*,
-*\*\*kwargs*)\ ` </sdk/autopilot/python/autopilot.introspection/types.Point#Point>`__\ ` <#autopilot.introspection.types.Point>`__
+*\*\*kwargs*)\ ` </sdk/autopilot/python/autopilot.introspection/types.Point/#Point>`_ \ ` <#autopilot.introspection.types.Point>`_ 
     The Point class represents a 2D point in cartesian space.
 
     To construct a Point, pass in the x, y parameters to the class

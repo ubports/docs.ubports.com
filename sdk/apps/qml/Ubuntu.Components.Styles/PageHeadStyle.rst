@@ -1,10 +1,13 @@
+.. _sdk_ubuntu_components_styles_pageheadstyle:
+Ubuntu.Components.Styles PageHeadStyle
+======================================
+
 Style API for page header.
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import Ubuntu.Components.Styles 1.3  |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Item </sdk/apps/qml/QtQuick/Item/>` |
-|                                      | __                                   |
+| Inherits:                            | :ref:`Item <sdk_qtquick_item>`       |
 +--------------------------------------+--------------------------------------+
 
 -  Obsolete members
@@ -12,15 +15,15 @@ Style API for page header.
 Properties
 ----------
 
--  ****`contentHeight </sdk/apps/qml/Ubuntu.Components/Styles.PageHeadStyle#contentHeight-prop>`__****
+-  `contentHeight </sdk/apps/qml/Ubuntu.Components/Styles.PageHeadStyle/_contentHeight-prop>`_ 
    : real
--  ****`fontWeight </sdk/apps/qml/Ubuntu.Components/Styles.PageHeadStyle#fontWeight-prop>`__****
+-  `fontWeight </sdk/apps/qml/Ubuntu.Components/Styles.PageHeadStyle/_fontWeight-prop>`_ 
    : int
--  ****`maximumNumberOfActions </sdk/apps/qml/Ubuntu.Components/Styles.PageHeadStyle#maximumNumberOfActions-prop>`__****
+-  `maximumNumberOfActions </sdk/apps/qml/Ubuntu.Components/Styles.PageHeadStyle/_maximumNumberOfActions-prop>`_ 
    : int
--  ****`textLeftMargin </sdk/apps/qml/Ubuntu.Components/Styles.PageHeadStyle#textLeftMargin-prop>`__****
+-  `textLeftMargin </sdk/apps/qml/Ubuntu.Components/Styles.PageHeadStyle/_textLeftMargin-prop>`_ 
    : real
--  ****`textSize </sdk/apps/qml/Ubuntu.Components/Styles.PageHeadStyle#textSize-prop>`__****
+-  `textSize </sdk/apps/qml/Ubuntu.Components/Styles.PageHeadStyle/_textSize-prop>`_ 
    : int
 
 Detailed Description
@@ -31,6 +34,8 @@ The component defines the style API for the page header component.
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_styles_pageheadstyle_contentHeight-prop:
+
 +--------------------------------------------------------------------------+
 |        \ contentHeight : real                                            |
 +--------------------------------------------------------------------------+
@@ -40,6 +45,8 @@ the (optional) row that displays the sections.
 
 | 
 
+.. _sdk_ubuntu_components_styles_pageheadstyle_fontWeight-prop:
+
 +--------------------------------------------------------------------------+
 |        \ fontWeight : int                                                |
 +--------------------------------------------------------------------------+
@@ -47,6 +54,8 @@ the (optional) row that displays the sections.
 The weight of the title font.
 
 | 
+
+.. _sdk_ubuntu_components_styles_pageheadstyle_maximumNumberOfActions-prop:
 
 +--------------------------------------------------------------------------+
 |        \ maximumNumberOfActions : int                                    |
@@ -59,6 +68,8 @@ here, extra actions are put into an overflow.
 
 | 
 
+.. _sdk_ubuntu_components_styles_pageheadstyle_textLeftMargin-prop:
+
 +--------------------------------------------------------------------------+
 |        \ textLeftMargin : real                                           |
 +--------------------------------------------------------------------------+
@@ -66,6 +77,8 @@ here, extra actions are put into an overflow.
 Left margin of title text.
 
 | 
+
+.. _sdk_ubuntu_components_styles_pageheadstyle_textSize-prop:
 
 +--------------------------------------------------------------------------+
 |        \ textSize : int                                                  |

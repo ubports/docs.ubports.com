@@ -1,3 +1,7 @@
+.. _sdk_ubuntuuserinterfacetoolkit_themes:
+UbuntuUserInterfaceToolkit Themes
+=================================
+
 
 
 A theme is a collection of style implementations. The style component
@@ -7,7 +11,7 @@ exceptions being documented per component.
 In addition to the styles the theme can provide palette values used by
 the style and components. The palette values are defined in
 ``Palette.qml`` file, which must either be derived from
-`Palette </sdk/apps/qml/Ubuntu.Components/Themes.Palette/>`__ component
+`Palette </sdk/apps/qml/Ubuntu.Components/Themes.Palette/>`_  component
 or from a parent theme's Palette.
 
 There are two types of themes, shared themes and application themes.
@@ -100,7 +104,7 @@ the naming convention, and must have the names implied by the components
 styled.
 
 The style imports the Ambiance theme module, and extends the Ambiance
-`ListItemStyle </sdk/apps/qml/Ubuntu.Components/Styles.ListItemStyle/>`__
+`ListItemStyle </sdk/apps/qml/Ubuntu.Components/Styles.ListItemStyle/>`_ 
 component. The same is done in the other style components. However,
 Palette defines own values, and does not re-use Ambiance palette values.
 
@@ -284,8 +288,8 @@ this is not mandatory, and it is up to the application developer to
 decide whether the application should support multiple style versions or
 not.
 
-`Styles </sdk/apps/qml/UbuntuUserInterfaceToolkit/ubuntu-theming-styles/>`__
-`Sub-theming </sdk/apps/qml/UbuntuUserInterfaceToolkit/ubuntu-theming-subtheming/>`__
+`Styles </sdk/apps/qml/UbuntuUserInterfaceToolkit/ubuntu-theming-styles/>`_ 
+`Sub-theming </sdk/apps/qml/UbuntuUserInterfaceToolkit/ubuntu-theming-subtheming/>`_ 
 
 .. |image0| image:: /media/sdk/apps/qml/ubuntu-theming-themes/images/surudark-theme.png
 .. |image1| image:: /media/sdk/apps/qml/ubuntu-theming-themes/images/surudark-theme-13.png

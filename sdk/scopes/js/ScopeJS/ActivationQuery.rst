@@ -1,3 +1,7 @@
+.. _sdk_scopejs_activationquery:
+ScopeJS ActivationQuery
+=======================
+
 
 Represents an activation request that is executed inside a scope
 

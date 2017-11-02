@@ -1,5 +1,9 @@
+.. _sdk_filterstate:
+FilterState
+===========
+
 Stores the state of multiple filters.
-`More... </sdk/scopes/cpp/unity.scopes.FilterState#details>`__
+`More... </sdk/scopes/cpp/unity.scopes.FilterState/#details>`_ 
 
 ``#include <unity/scopes/FilterState.h>``
 
@@ -8,7 +12,7 @@ Stores the state of multiple filters.
 
          
 
-`FilterState </sdk/scopes/cpp/unity.scopes.FilterState#a766de68bf8b5c99774dcd2f2e7e2ed39>`__
+`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/#a766de68bf8b5c99774dcd2f2e7e2ed39>`_ 
 ()
 
  
@@ -19,7 +23,7 @@ Stores the state of multiple filters.
 
 bool 
 
-`has\_filter </sdk/scopes/cpp/unity.scopes.FilterState#a7c624fcc70cf767fdb6d6dc54e8a5015>`__
+`has\_filter </sdk/scopes/cpp/unity.scopes.FilterState/#a7c624fcc70cf767fdb6d6dc54e8a5015>`_ 
 (std::string const &id) const
 
  
@@ -30,7 +34,7 @@ bool 
 
 void 
 
-`remove </sdk/scopes/cpp/unity.scopes.FilterState#a15c5759e79b6c75fcdd2cf802b6ffac2>`__
+`remove </sdk/scopes/cpp/unity.scopes.FilterState/#a15c5759e79b6c75fcdd2cf802b6ffac2>`_ 
 (std::string const &id)
 
  
@@ -47,7 +51,7 @@ usual value semantics.
          
 
 **FilterState**
-(`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ const
+(`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  const
 &other)
 
  
@@ -55,22 +59,22 @@ usual value semantics.
          
 
 **FilterState**
-(`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ &&)
+(`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  &&)
 
  
 
-        `FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ & 
+        `FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  & 
 
 **operator=**
-(`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ const
+(`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  const
 &other)
 
  
 
-        `FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ & 
+        `FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  & 
 
 **operator=**
-(`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ &&other)
+(`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  &&other)
 
  
 
@@ -80,9 +84,9 @@ Detailed Description
 Stores the state of multiple filters.
 
 The state can be examined by passing an instance of
-`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ to the
+`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  to the
 appropriate methods of classes derived from
-`FilterBase </sdk/scopes/cpp/unity.scopes.FilterBase/>`__.
+`FilterBase </sdk/scopes/cpp/unity.scopes.FilterBase/>`_ .
 
 Member Function Documentation
 -----------------------------

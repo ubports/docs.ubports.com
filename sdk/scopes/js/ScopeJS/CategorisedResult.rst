@@ -1,3 +1,7 @@
+.. _sdk_scopejs_categorisedresult:
+ScopeJS CategorisedResult
+=========================
+
 
 A result, including the category it belongs to.
 
@@ -10,11 +14,10 @@ string if this attribute is not of type String.
 **Returns:** <String>
 The value of "art" or the empty string.
 
-`Category </sdk/scopes/js/ScopeJS/Category/>`__ **``category``**\ (
-``  `` )
+:ref:`Category <sdk_scopejs_category>` **``category``**\ ( ``  `` )
 Get the category instance this result belongs to.
 
-**Returns:** <`Category </sdk/scopes/js/ScopeJS/Category/>`__>
+**Returns:** <:ref:`Category <sdk_scopejs_category>`>
 The category instance.
 
 Boolean **``contains``**\ ( ``key `` )
@@ -67,10 +70,10 @@ Check if this result is an online account login result.
 **Returns:** <Boolean>
 True if this result is an online account login result.
 
-`Result </sdk/scopes/js/ScopeJS/Result/>`__ **``retrieve``**\ ( ``  `` )
+:ref:`Result <sdk_scopejs_result>` **``retrieve``**\ ( ``  `` )
 Get a stored result.
 
-**Returns:** <`Result </sdk/scopes/js/ScopeJS/Result/>`__>
+**Returns:** <:ref:`Result <sdk_scopejs_result>`>
 stored result
 
 **``set``**\ ( ``key, value `` )
@@ -147,7 +150,7 @@ activation or preview request handler
 
 **Parameters:**
 
--  ``The`` **<`Result </sdk/scopes/js/ScopeJS/Result/>`__>**
+-  :ref:``The`` **<`Result <sdk_scopejs_result>`>**
 
    original result to store within this result.
 

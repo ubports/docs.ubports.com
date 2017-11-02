@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_generic_backend:
+QtSensors Generic Backend
+=========================
+
 
 
 The generic sensor backend provides emulation of some of the sensors

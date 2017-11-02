@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_viewitems:
+Ubuntu.Components ViewItems
+===========================
+
 A set of properties attached to the ListItem's parent item or ListView.
 
 +---------------------+--------------------------------+
@@ -9,30 +13,30 @@ A set of properties attached to the ListItem's parent item or ListView.
 Attached Properties
 -------------------
 
--  ****`dragMode </sdk/apps/qml/Ubuntu.Components/ViewItems#dragMode-attached-prop>`__****
+-  **:ref:`dragMode <sdk_ubuntu_components_viewitems#dragMode-attached-prop>`**
    : bool
--  ****`expandedIndices </sdk/apps/qml/Ubuntu.Components/ViewItems#expandedIndices-attached-prop>`__****
+-  **:ref:`expandedIndices <sdk_ubuntu_components_viewitems#expandedIndices-attached-prop>`**
    : list<int>
--  ****`expansionFlags </sdk/apps/qml/Ubuntu.Components/ViewItems#expansionFlags-attached-prop>`__****
+-  **:ref:`expansionFlags <sdk_ubuntu_components_viewitems#expansionFlags-attached-prop>`**
    : ExpansionFlags
--  ****`selectMode </sdk/apps/qml/Ubuntu.Components/ViewItems#selectMode-attached-prop>`__****
+-  **:ref:`selectMode <sdk_ubuntu_components_viewitems#selectMode-attached-prop>`**
    : bool
--  ****`selectedIndices </sdk/apps/qml/Ubuntu.Components/ViewItems#selectedIndices-attached-prop>`__****
+-  **:ref:`selectedIndices <sdk_ubuntu_components_viewitems#selectedIndices-attached-prop>`**
    : list<int>
 
 Attached Signals
 ----------------
 
--  ****`dragUpdated </sdk/apps/qml/Ubuntu.Components/ViewItems#dragUpdated-signal>`__****\ (ListItemDrag
+-  **:ref:`dragUpdated <sdk_ubuntu_components_viewitems#dragUpdated-signal>`**\ (ListItemDrag
    *event*)
 
 Detailed Description
 --------------------
 
 These properties are automatically attached to the parent item of the
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__, or to
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__, when the component is
-used as delegate.
+:ref:`ListItem <sdk_ubuntu_components_listitem>`, or to
+:ref:`ListView <sdk_qtquick_listview>`, when the component is used as
+delegate.
 
 Attached Property Documentation
 -------------------------------
@@ -42,22 +46,21 @@ Attached Property Documentation
 +--------------------------------------------------------------------------+
 
 The property drives the dragging mode of the ListItems within a
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__. It has no effect on any
-other parent of the
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__.
+:ref:`ListView <sdk_qtquick_listview>`. It has no effect on any other
+parent of the :ref:`ListItem <sdk_ubuntu_components_listitem>`.
 
-When set, `ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__
-content will be disabled and a panel will be shown enabling the dragging
-mode. The items can be dragged by dragging this handler only. The
-feature can be activated same time with
-`ListItem::selectMode </sdk/apps/qml/Ubuntu.Components/ListItem#selectMode-prop>`__.
+When set, :ref:`ListItem <sdk_ubuntu_components_listitem>` content will be
+disabled and a panel will be shown enabling the dragging mode. The items
+can be dragged by dragging this handler only. The feature can be
+activated same time with
+:ref:`ListItem::selectMode <sdk_ubuntu_components_listitem#selectMode-prop>`.
 
 The panel is configured by the style.
 
 **See also**
-`ListItemStyle </sdk/apps/qml/Ubuntu.Components/Styles.ListItemStyle/>`__
+`ListItemStyle </sdk/apps/qml/Ubuntu.Components/Styles.ListItemStyle/>`_ 
 and
-`dragUpdated </sdk/apps/qml/Ubuntu.Components/ViewItems#dragUpdated-signal>`__.
+:ref:`dragUpdated <sdk_ubuntu_components_viewitems#dragUpdated-signal>`.
 
 | 
 
@@ -67,13 +70,13 @@ and
 
 The property contains the indexes of the ListItems marked as expanded.
 The indexes are model indexes when used in
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__, and child indexes in
-other components. The property being writable, initial expansion
-configuration can be provided for a view, and provides ability to save
-the expansion state.
+:ref:`ListView <sdk_qtquick_listview>`, and child indexes in other
+components. The property being writable, initial expansion configuration
+can be provided for a view, and provides ability to save the expansion
+state.
 
 **Note:** If the
-`ViewItems::expansionFlags </sdk/apps/qml/Ubuntu.Components/ViewItems#expansionFlags-attached-prop>`__
+:ref:`ViewItems::expansionFlags <sdk_ubuntu_components_viewitems#expansionFlags-attached-prop>`
 is having ``ViewItems.Exclusive`` flags set, only the last item from the
 list will be considered and set as expanded.
 
@@ -87,15 +90,15 @@ This QML property was introduced in Ubuntu.Components 1.3.
 
 Flags driving the expansion behavior.
 
-+-------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Flag                                                                                | description                                                                                                                                                                                            |
-+=====================================================================================+========================================================================================================================================================================================================+
-| `ViewItems </sdk/apps/qml/Ubuntu.Components/ViewItems/>`__.Exclusive                | When set, only one `ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ can be expanded at a time. **Set by default**.                                                                             |
-+-------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `ViewItems </sdk/apps/qml/Ubuntu.Components/ViewItems/>`__.UnlockExpanded           | When set, the `ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__'s leading/trailing actions can be swiped in.                                                                                    |
-+-------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `ViewItems </sdk/apps/qml/Ubuntu.Components/ViewItems/>`__.CollapseOnOutsidePress   | When set, the active expaned `ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ collapses automatically when clicked outside of its area. The flag also turns ``ViewItems.Exclusive`` flag on.   |
-+-------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Flag                                                                     | description                                                                                                                                                                                 |
++==========================================================================+=============================================================================================================================================================================================+
+| :ref:`ViewItems <sdk_ubuntu_components_viewitems>`.Exclusive                | When set, only one `ListItem <sdk_ubuntu_components_listitem>` can be expanded at a time. **Set by default**.                                                                             |
++--------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`ViewItems <sdk_ubuntu_components_viewitems>`.UnlockExpanded           | When set, the `ListItem <sdk_ubuntu_components_listitem>`'s leading/trailing actions can be swiped in.                                                                                    |
++--------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`ViewItems <sdk_ubuntu_components_viewitems>`.CollapseOnOutsidePress   | When set, the active expaned `ListItem <sdk_ubuntu_components_listitem>` collapses automatically when clicked outside of its area. The flag also turns ``ViewItems.Exclusive`` flag on.   |
++--------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This QML property was introduced in Ubuntu.Components 1.3.
 
@@ -111,7 +114,7 @@ When set, the ListItems of the Item the property is attached to will
 enter into selection state. ListItems provide a visual clue which can be
 used to toggle the selection state of each, which in order will be
 reflected in the
-`ViewItems.selectedIndices </sdk/apps/qml/Ubuntu.Components/ViewItems#selectedIndices-attached-prop>`__
+:ref:`ViewItems.selectedIndices <sdk_ubuntu_components_viewitems#selectedIndices-attached-prop>`
 list.
 
 | 
@@ -122,10 +125,10 @@ list.
 
 The property contains the indexes of the ListItems marked as selected.
 The indexes are model indexes when used in
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__, and child indexes in
-other components. The property being writable, initial selection
-configuration can be provided for a view, and provides ability to save
-the selection state.
+:ref:`ListView <sdk_qtquick_listview>`, and child indexes in other
+components. The property being writable, initial selection configuration
+can be provided for a view, and provides ability to save the selection
+state.
 
 | 
 
@@ -133,15 +136,14 @@ Attached Signal Documentation
 -----------------------------
 
 +--------------------------------------------------------------------------+
-|        \ dragUpdated(`ListItemDrag </sdk/apps/qml/Ubuntu.Components/List |
-| ItemDrag/>`__                                                            |
+| :ref:` <>`\ dragUpdated(`ListItemDrag <sdk_ubuntu_components_listitemdrag>` |
+| __                                                                       |
 | *event*)                                                                 |
 +--------------------------------------------------------------------------+
 
 The signal is emitted whenever a dragging related event occurrs. The
 **event.status** specifies the dragging event type. Depending on the
-type, the
-`ListItemDrag </sdk/apps/qml/Ubuntu.Components/ListItemDrag/>`__ event
+type, the :ref:`ListItemDrag <sdk_ubuntu_components_listitemdrag>` event
 properties will have the following meaning:
 
 +-----------+-------------------------------------------------+------------------------------------------------------+----------------------------------------------------------+----------------------------------------------------------+
@@ -155,10 +157,10 @@ properties will have the following meaning:
 +-----------+-------------------------------------------------+------------------------------------------------------+----------------------------------------------------------+----------------------------------------------------------+
 
 Implementations **must move the model data** in order to re-order the
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__ content. If the move is
-not acceptable, it must be cancelled by setting **event.accept** to
-*false*, in which case the dragged index (**from**) will not be updated
-and next time the signal is emitted will be the same.
+:ref:`ListView <sdk_qtquick_listview>` content. If the move is not
+acceptable, it must be cancelled by setting **event.accept** to *false*,
+in which case the dragged index (**from**) will not be updated and next
+time the signal is emitted will be the same.
 
 An example implementation of a live dragging with restrictions:
 

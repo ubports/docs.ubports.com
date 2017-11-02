@@ -1,3 +1,7 @@
+.. _sdk_qtqml_timer:
+QtQml Timer
+===========
+
 Triggers a handler at a specified interval
 
 +---------------------+--------------------+
@@ -7,23 +11,23 @@ Triggers a handler at a specified interval
 Properties
 ----------
 
--  ****`interval </sdk/apps/qml/QtQml/Timer#interval-prop>`__**** : int
--  ****`repeat </sdk/apps/qml/QtQml/Timer#repeat-prop>`__**** : bool
--  ****`running </sdk/apps/qml/QtQml/Timer#running-prop>`__**** : bool
--  ****`triggeredOnStart </sdk/apps/qml/QtQml/Timer#triggeredOnStart-prop>`__****
+-  :ref:`interval <sdk_qtqml_timer_interval-prop>` : int
+-  :ref:`repeat <sdk_qtqml_timer_repeat-prop>` : bool
+-  :ref:`running <sdk_qtqml_timer_running-prop>` : bool
+-  :ref:`triggeredOnStart <sdk_qtqml_timer_triggeredOnStart-prop>`
    : bool
 
 Signals
 -------
 
--  ****`triggered </sdk/apps/qml/QtQml/Timer#triggered-signal>`__****\ ()
+-  :ref:`triggered <sdk_qtqml_timer_triggered-signal>`\ ()
 
 Methods
 -------
 
--  ****`restart </sdk/apps/qml/QtQml/Timer#restart-method>`__****\ ()
--  ****`start </sdk/apps/qml/QtQml/Timer#start-method>`__****\ ()
--  ****`stop </sdk/apps/qml/QtQml/Timer#stop-method>`__****\ ()
+-  :ref:`restart <sdk_qtqml_timer_restart-method>`\ ()
+-  :ref:`start <sdk_qtqml_timer_start-method>`\ ()
+-  :ref:`stop <sdk_qtqml_timer_stop-method>`\ ()
 
 Detailed Description
 --------------------
@@ -61,6 +65,8 @@ later.
 Property Documentation
 ----------------------
 
+.. _sdk_qtqml_timer_interval-prop:
+
 +--------------------------------------------------------------------------+
 |        \ interval : int                                                  |
 +--------------------------------------------------------------------------+
@@ -70,6 +76,8 @@ Sets the *interval* between triggers, in milliseconds.
 The default interval is 1000 milliseconds.
 
 | 
+
+.. _sdk_qtqml_timer_repeat-prop:
 
 +--------------------------------------------------------------------------+
 |        \ repeat : bool                                                   |
@@ -81,9 +89,11 @@ interval and then stop (i.e. running will be set to false).
 
 *repeat* defaults to false.
 
-**See also** `running </sdk/apps/qml/QtQml/Timer#running-prop>`__.
+**See also** :ref:`running <sdk_qtqml_timer#running-prop>`.
 
 | 
+
+.. _sdk_qtqml_timer_running-prop:
 
 +--------------------------------------------------------------------------+
 |        \ running : bool                                                  |
@@ -95,9 +105,11 @@ triggered.
 
 *running* defaults to false.
 
-**See also** `repeat </sdk/apps/qml/QtQml/Timer#repeat-prop>`__.
+**See also** :ref:`repeat <sdk_qtqml_timer#repeat-prop>`.
 
 | 
+
+.. _sdk_qtqml_timer_triggeredOnStart-prop:
 
 +--------------------------------------------------------------------------+
 |        \ triggeredOnStart : bool                                         |
@@ -115,12 +127,14 @@ and again at the interval.
 
 *triggeredOnStart* defaults to false.
 
-**See also** `running </sdk/apps/qml/QtQml/Timer#running-prop>`__.
+**See also** :ref:`running <sdk_qtqml_timer#running-prop>`.
 
 | 
 
 Signal Documentation
 --------------------
+
+.. _sdk_qtqml_timer_triggered()-prop:
 
 +--------------------------------------------------------------------------+
 |        \ triggered()                                                     |
@@ -135,6 +149,8 @@ The corresponding handler is ``onTriggered``.
 Method Documentation
 --------------------
 
+.. _sdk_qtqml_timer_restart-method:
+
 +--------------------------------------------------------------------------+
 |        \ restart()                                                       |
 +--------------------------------------------------------------------------+
@@ -147,6 +163,8 @@ will be true following a call to ``restart()``.
 
 | 
 
+.. _sdk_qtqml_timer_start-method:
+
 +--------------------------------------------------------------------------+
 |        \ start()                                                         |
 +--------------------------------------------------------------------------+
@@ -157,6 +175,8 @@ If the timer is already running, calling this method has no effect. The
 ``running`` property will be true following a call to ``start()``.
 
 | 
+
+.. _sdk_qtqml_timer_stop-method:
 
 +--------------------------------------------------------------------------+
 |        \ stop()                                                          |

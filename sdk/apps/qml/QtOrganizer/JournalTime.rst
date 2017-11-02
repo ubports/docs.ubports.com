@@ -1,3 +1,7 @@
+.. _sdk_qtorganizer_journaltime:
+QtOrganizer JournalTime
+=======================
+
 The JournalTime element contains the entry date and time of a journal
 item.
 
@@ -8,25 +12,27 @@ item.
 Properties
 ----------
 
--  ****`entryDateTime </sdk/apps/qml/QtOrganizer/JournalTime#entryDateTime-prop>`__****
+-  :ref:`entryDateTime <sdk_qtorganizer_journaltime_entryDateTime-prop>`
    : date
 
 Signals
 -------
 
--  ****`onDetailChanged </sdk/apps/qml/QtOrganizer/JournalTime#onDetailChanged-signal>`__****\ ()
+-  :ref:`onDetailChanged <sdk_qtorganizer_journaltime_onDetailChanged-signal>`\ ()
 
 Detailed Description
 --------------------
 
 The following fields are supported:
 
--  `JournalTime </sdk/apps/qml/QtOrganizer/JournalTime/>`__.FieldEntryDateTime
+-  :ref:`JournalTime <sdk_qtorganizer_journaltime>`.FieldEntryDateTime
 
 **See also** QOrganizerJournalTime.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtorganizer_journaltime_entryDateTime-prop:
 
 +--------------------------------------------------------------------------+
 |        \ entryDateTime : date                                            |
@@ -39,11 +45,13 @@ This property holds the entry date and time value of the journal.
 Signal Documentation
 --------------------
 
+.. _sdk_qtorganizer_journaltime_onDetailChanged()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ onDetailChanged()                                               |
 +--------------------------------------------------------------------------+
 
 **See also**
-`Detail::onDetailChanged </sdk/apps/qml/QtOrganizer/Detail#onDetailChanged-signal>`__.
+:ref:`Detail::onDetailChanged <sdk_qtorganizer_detail#onDetailChanged-signal>`.
 
 | 

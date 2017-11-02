@@ -1,3 +1,7 @@
+.. _sdk_qtlocation_place:
+QtLocation Place
+================
+
 The Place type represents a location that is a position of interest.
 
 +---------------------+-------------------------+
@@ -9,66 +13,57 @@ The Place type represents a location that is a position of interest.
 Properties
 ----------
 
--  ****`attribution </sdk/apps/qml/QtLocation/Place#attribution-prop>`__****
-   : string
--  ****`categories </sdk/apps/qml/QtLocation/Place#categories-prop>`__****
-   : list<Category>
--  ****`contactDetails </sdk/apps/qml/QtLocation/Place#contactDetails-prop>`__****
-   : ContactDetails
--  ****`detailsFetched </sdk/apps/qml/QtLocation/Place#detailsFetched-prop>`__****
-   : bool
--  ****`editorialModel </sdk/apps/qml/QtLocation/Place#editorialModel-prop>`__****
-   : EditorialModel
--  ****`extendedAttributes </sdk/apps/qml/QtLocation/Place#extendedAttributes-prop>`__****
-   : ExtendedAttributes
--  ****`favorite </sdk/apps/qml/QtLocation/Place#favorite-prop>`__**** :
-   Place
--  ****`icon </sdk/apps/qml/QtLocation/Place#icon-prop>`__**** : Icon
--  ****`imageModel </sdk/apps/qml/QtLocation/Place#imageModel-prop>`__****
-   : ImageModel
--  ****`location </sdk/apps/qml/QtLocation/Place#location-prop>`__**** :
-   QtPositioning::Location
--  ****`name </sdk/apps/qml/QtLocation/Place#name-prop>`__**** : string
--  ****`place </sdk/apps/qml/QtLocation/Place#place-prop>`__**** :
-   QPlace
--  ****`placeId </sdk/apps/qml/QtLocation/Place#placeId-prop>`__**** :
+-  :ref:`attribution <sdk_qtlocation_place_attribution-prop>` :
    string
--  ****`plugin </sdk/apps/qml/QtLocation/Place#plugin-prop>`__**** :
-   Plugin
--  ****`primaryEmail </sdk/apps/qml/QtLocation/Place#primaryEmail-prop>`__****
+-  :ref:`categories <sdk_qtlocation_place_categories-prop>` :
+   list<Category>
+-  :ref:`contactDetails <sdk_qtlocation_place_contactDetails-prop>`
+   : ContactDetails
+-  :ref:`detailsFetched <sdk_qtlocation_place_detailsFetched-prop>`
+   : bool
+-  :ref:`editorialModel <sdk_qtlocation_place_editorialModel-prop>`
+   : EditorialModel
+-  :ref:`extendedAttributes <sdk_qtlocation_place_extendedAttributes-prop>`
+   : ExtendedAttributes
+-  :ref:`favorite <sdk_qtlocation_place_favorite-prop>` : Place
+-  :ref:`icon <sdk_qtlocation_place_icon-prop>` : Icon
+-  :ref:`imageModel <sdk_qtlocation_place_imageModel-prop>` :
+   ImageModel
+-  :ref:`location <sdk_qtlocation_place_location-prop>` :
+   QtPositioning::Location
+-  :ref:`name <sdk_qtlocation_place_name-prop>` : string
+-  :ref:`place <sdk_qtlocation_place_place-prop>` : QPlace
+-  :ref:`placeId <sdk_qtlocation_place_placeId-prop>` : string
+-  :ref:`plugin <sdk_qtlocation_place_plugin-prop>` : Plugin
+-  :ref:`primaryEmail <sdk_qtlocation_place_primaryEmail-prop>` :
+   string
+-  :ref:`primaryFax <sdk_qtlocation_place_primaryFax-prop>` :
+   string
+-  :ref:`primaryPhone <sdk_qtlocation_place_primaryPhone-prop>` :
+   string
+-  :ref:`primaryWebsite <sdk_qtlocation_place_primaryWebsite-prop>`
    : string
--  ****`primaryFax </sdk/apps/qml/QtLocation/Place#primaryFax-prop>`__****
-   : string
--  ****`primaryPhone </sdk/apps/qml/QtLocation/Place#primaryPhone-prop>`__****
-   : string
--  ****`primaryWebsite </sdk/apps/qml/QtLocation/Place#primaryWebsite-prop>`__****
-   : string
--  ****`ratings </sdk/apps/qml/QtLocation/Place#ratings-prop>`__**** :
-   Ratings
--  ****`reviewModel </sdk/apps/qml/QtLocation/Place#reviewModel-prop>`__****
-   : ReviewModel
--  ****`status </sdk/apps/qml/QtLocation/Place#status-prop>`__**** :
+-  :ref:`ratings <sdk_qtlocation_place_ratings-prop>` : Ratings
+-  :ref:`reviewModel <sdk_qtlocation_place_reviewModel-prop>` :
+   ReviewModel
+-  :ref:`status <sdk_qtlocation_place_status-prop>` : enumeration
+-  :ref:`supplier <sdk_qtlocation_place_supplier-prop>` : Supplier
+-  :ref:`visibility <sdk_qtlocation_place_visibility-prop>` :
    enumeration
--  ****`supplier </sdk/apps/qml/QtLocation/Place#supplier-prop>`__**** :
-   Supplier
--  ****`visibility </sdk/apps/qml/QtLocation/Place#visibility-prop>`__****
-   : enumeration
 
 Methods
 -------
 
--  ****`copyFrom </sdk/apps/qml/QtLocation/Place#copyFrom-method>`__****\ (Place
+-  :ref:`copyFrom <sdk_qtlocation_place_copyFrom-method>`\ (Place
    *original*)
 -  string
-   ****`errorString </sdk/apps/qml/QtLocation/Place#errorString-method>`__****\ ()
+   **:ref:`errorString <sdk_qtlocation_place#errorString-method>`**\ ()
 -  void
-   ****`getDetails </sdk/apps/qml/QtLocation/Place#getDetails-method>`__****\ ()
--  ****`initializeFavorite </sdk/apps/qml/QtLocation/Place#initializeFavorite-method>`__****\ (Plugin
+   **:ref:`getDetails <sdk_qtlocation_place#getDetails-method>`**\ ()
+-  :ref:`initializeFavorite <sdk_qtlocation_place_initializeFavorite-method>`\ (Plugin
    *destinationPlugin*)
--  void
-   ****`remove </sdk/apps/qml/QtLocation/Place#remove-method>`__****\ ()
--  void
-   ****`save </sdk/apps/qml/QtLocation/Place#save-method>`__****\ ()
+-  void :ref:`remove <sdk_qtlocation_place_remove-method>`\ ()
+-  void :ref:`save <sdk_qtlocation_place_save-method>`\ ()
 
 Detailed Description
 --------------------
@@ -77,82 +72,80 @@ The Place type represents a physical location with additional metadata
 describing that location. Contrasted with Location, Address, and
 coordinate type which are used to describe where a location is. The
 basic properties of a Place are its
-`name </sdk/apps/qml/QtLocation/Place#name-prop>`__ and
-`location </sdk/apps/qml/QtLocation/Place#location-prop>`__.
+:ref:`name <sdk_qtlocation_place#name-prop>` and
+:ref:`location <sdk_qtlocation_place#location-prop>`.
 
 Place objects are typically obtained from a search model and will
 generally only have their basic properties set. The
-`detailsFetched </sdk/apps/qml/QtLocation/Place#detailsFetched-prop>`__
-property can be used to test if further property values need to be
-fetched from the
-`Plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__. This
-can be done by invoking the
-`getDetails() </sdk/apps/qml/QtLocation/Place#getDetails-method>`__
-method. Progress of the fetching operation can be monitored with the
-`status </sdk/apps/qml/QtLocation/Place#status-prop>`__ property, which
-will be set to Place.Fetching when the details are being fetched.
+:ref:`detailsFetched <sdk_qtlocation_place#detailsFetched-prop>` property
+can be used to test if further property values need to be fetched from
+the `Plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_ .
+This can be done by invoking the
+:ref:`getDetails() <sdk_qtlocation_place#getDetails-method>` method.
+Progress of the fetching operation can be monitored with the
+:ref:`status <sdk_qtlocation_place#status-prop>` property, which will be
+set to Place.Fetching when the details are being fetched.
 
 The Place type has many properties holding information about the
 location. Details on how to contact the place are available from the
-`contactDetails </sdk/apps/qml/QtLocation/Place#contactDetails-prop>`__
-property. Convenience properties for obtaining the primary
-`phone </sdk/apps/qml/QtLocation/Place#primaryPhone-prop>`__,
-`fax </sdk/apps/qml/QtLocation/Place#primaryFax-prop>`__,
-`email </sdk/apps/qml/QtLocation/Place#primaryEmail-prop>`__ and
-`website </sdk/apps/qml/QtLocation/Place#primaryWebsite-prop>`__ are
-also available.
+:ref:`contactDetails <sdk_qtlocation_place#contactDetails-prop>` property.
+Convenience properties for obtaining the primary
+:ref:`phone <sdk_qtlocation_place#primaryPhone-prop>`,
+:ref:`fax <sdk_qtlocation_place#primaryFax-prop>`,
+:ref:`email <sdk_qtlocation_place#primaryEmail-prop>` and
+:ref:`website <sdk_qtlocation_place#primaryWebsite-prop>` are also
+available.
 
 Each place is assigned zero or more
-`categories </sdk/apps/qml/QtLocation/location-places-backend#categories>`__.
+`categories </sdk/apps/qml/QtLocation/location-places-backend/#categories>`_ .
 Categories are typically used when searching for a particular kind of
 place, such as a restaurant or hotel. Some places have a
-`ratings </sdk/apps/qml/QtLocation/Place#ratings-prop>`__ object, which
-gives an indication of the quality of the place.
+:ref:`ratings <sdk_qtlocation_place#ratings-prop>` object, which gives an
+indication of the quality of the place.
 
 Place metadata is provided by a supplier who may require that an
 attribution message be displayed to the user when the place details are
 viewed.
 
-Places have an associated
-`icon </sdk/apps/qml/QtLocation/Place#icon-prop>`__ which can be used to
-represent a place on a map or to decorate a delegate in a view.
+Places have an associated :ref:`icon <sdk_qtlocation_place#icon-prop>`
+which can be used to represent a place on a map or to decorate a
+delegate in a view.
 
 Places may have additional rich content associated with them. The
 currently supported rich content include editorial descriptions, reviews
 and images. These are exposed as a set of models for retrieving the
 content. Editorial descriptions of the place are available from the
-`editorialModel </sdk/apps/qml/QtLocation/Place#editorialModel-prop>`__
-property. Reviews of the place are available from the
-`reviewModel </sdk/apps/qml/QtLocation/Place#reviewModel-prop>`__
-property. A gallery of pictures of the place can be accessed using the
-`imageModel </sdk/apps/qml/QtLocation/Place#imageModel-prop>`__
-property.
+:ref:`editorialModel <sdk_qtlocation_place#editorialModel-prop>` property.
+Reviews of the place are available from the
+:ref:`reviewModel <sdk_qtlocation_place#reviewModel-prop>` property. A
+gallery of pictures of the place can be accessed using the
+:ref:`imageModel <sdk_qtlocation_place#imageModel-prop>` property.
 
 Places may have additional attributes which are not covered in the
 formal API. The
-`extendedAttributes </sdk/apps/qml/QtLocation/Place#extendedAttributes-prop>`__
+:ref:`extendedAttributes <sdk_qtlocation_place#extendedAttributes-prop>`
 property provides access to these. The type of extended attributes
 available is specific to each
-`Plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__.
+`Plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_ .
 
 A Place is almost always tied to a
-`plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__. The
-`plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__
+`plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_ . The
+`plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_ 
 property must be set before it is possible to call
-`save() </sdk/apps/qml/QtLocation/Place#save-method>`__,
-`remove() </sdk/apps/qml/QtLocation/Place#remove-method>`__ or
-`getDetails() </sdk/apps/qml/QtLocation/Place#getDetails-method>`__. The
-`reviewModel </sdk/apps/qml/QtLocation/Place#reviewModel-prop>`__,
-`imageModel </sdk/apps/qml/QtLocation/Place#imageModel-prop>`__ and
-`editorialModel </sdk/apps/qml/QtLocation/Place#editorialModel-prop>`__
-are only valid then the
-`plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__
+:ref:`save() <sdk_qtlocation_place#save-method>`,
+:ref:`remove() <sdk_qtlocation_place#remove-method>` or
+:ref:`getDetails() <sdk_qtlocation_place#getDetails-method>`. The
+:ref:`reviewModel <sdk_qtlocation_place#reviewModel-prop>`,
+:ref:`imageModel <sdk_qtlocation_place#imageModel-prop>` and
+:ref:`editorialModel <sdk_qtlocation_place#editorialModel-prop>` are only
+valid then the
+`plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_ 
 property is set.
 
 Saving a Place
 ~~~~~~~~~~~~~~
 
-If the `Plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__
+If the `Plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_ 
 supports it, the Place type can be used to save a place. First create a
 new Place and set its properties:
 
@@ -177,22 +170,20 @@ new Place and set its properties:
         visibility: Place.PrivateVisibility
     }
 
-Then invoke the `save() </sdk/apps/qml/QtLocation/Place#save-method>`__
-method:
+Then invoke the :ref:`save() <sdk_qtlocation_place#save-method>` method:
 
 .. code:: qml
 
         myPlace.save();
 
-The `status </sdk/apps/qml/QtLocation/Place#status-prop>`__ property
-will change to Place.Saving and then to Place.Ready if the save was
-successful or to Place.Error if an error occurs.
+The :ref:`status <sdk_qtlocation_place#status-prop>` property will change
+to Place.Saving and then to Place.Ready if the save was successful or to
+Place.Error if an error occurs.
 
-If the `placeId </sdk/apps/qml/QtLocation/Place#placeId-prop>`__
-property is set, the backend will update an existing place otherwise it
-will create a new place. On success the
-`placeId </sdk/apps/qml/QtLocation/Place#placeId-prop>`__ property will
-be updated with the identifier of the newly saved place.
+If the :ref:`placeId <sdk_qtlocation_place#placeId-prop>` property is set,
+the backend will update an existing place otherwise it will create a new
+place. On success the :ref:`placeId <sdk_qtlocation_place#placeId-prop>`
+property will be updated with the identifier of the newly saved place.
 
 Caveats
 ^^^^^^^
@@ -215,7 +206,7 @@ The Places API only supports saving of the following *core details*:
 
 It is possible that providers may only support a subset of these. See
 the `plugin
-documentation </sdk/apps/qml/QtLocation/qtlocation-index#plugin-references-and-parameters>`__
+documentation </sdk/apps/qml/QtLocation/qtlocation-index/#plugin-references-and-parameters>`_ 
 for more details.
 
 Saving of properties such as the rating, extended attributes, images,
@@ -232,19 +223,19 @@ not be recognised in another. Therefore trying to save a place directly
 from one plugin to another is not possible.
 
 It is generally recommended that saving across plugins be handled as
-saving `favorites </sdk/apps/qml/QtLocation/Place#favorites>`__ as
-explained in the Favorites section. However there is another approach
-which is to create a new place, set its (destination) plugin and then
-use the `copyFrom() </sdk/apps/qml/QtLocation/Place#copyFrom-method>`__
-method to copy the details of the original place. Using
-`copyFrom() </sdk/apps/qml/QtLocation/Place#copyFrom-method>`__ only
-copies data that is supported by the destination plugin, plugin specific
-data such as the place identifier is not copied over. Once the copy is
-done, the place is in a suitable state to be saved.
+saving :ref:`favorites <sdk_qtlocation_place#favorites>` as explained in
+the Favorites section. However there is another approach which is to
+create a new place, set its (destination) plugin and then use the
+:ref:`copyFrom() <sdk_qtlocation_place#copyFrom-method>` method to copy the
+details of the original place. Using
+:ref:`copyFrom() <sdk_qtlocation_place#copyFrom-method>` only copies data
+that is supported by the destination plugin, plugin specific data such
+as the place identifier is not copied over. Once the copy is done, the
+place is in a suitable state to be saved.
 
 The following snippet provides an example of saving a place to a
 different plugin using the
-`copyFrom </sdk/apps/qml/QtLocation/Place#copyFrom-method>`__ method:
+:ref:`copyFrom <sdk_qtlocation_place#copyFrom-method>` method:
 
 .. code:: qml
 
@@ -257,12 +248,11 @@ Removing a Place
 ~~~~~~~~~~~~~~~~
 
 To remove a place, ensure that a Place object with a valid
-`placeId </sdk/apps/qml/QtLocation/Place#placeId-prop>`__ property
-exists and call its
-`remove() </sdk/apps/qml/QtLocation/Place#remove-method>`__ method. The
-`status </sdk/apps/qml/QtLocation/Place#status-prop>`__ property will
-change to Place.Removing and then to Place.Ready if the save was
-successful or to Place.Error if an error occurs.
+:ref:`placeId <sdk_qtlocation_place#placeId-prop>` property exists and call
+its :ref:`remove() <sdk_qtlocation_place#remove-method>` method. The
+:ref:`status <sdk_qtlocation_place#status-prop>` property will change to
+Place.Removing and then to Place.Ready if the save was successful or to
+Place.Error if an error occurs.
 
 Favorites
 ~~~~~~~~~
@@ -305,17 +295,18 @@ The following demonstrates favorite removal:
     //once that is done we can assign null to the favorite
     place.favorite = null;
 
-The `PlaceSearchModel </sdk/apps/qml/QtLocation/PlaceSearchModel/>`__
-has a favoritesPlugin property. If the property is set, any places found
+The :ref:`PlaceSearchModel <sdk_qtlocation_placesearchmodel>` has a
+favoritesPlugin property. If the property is set, any places found
 during a search are checked against the favoritesPlugin to see if there
 is a corresponding favorite place. If so, the favorite property of the
 Place is set, otherwise the favorite property is remains null.
 
-**See also**
-`PlaceSearchModel </sdk/apps/qml/QtLocation/PlaceSearchModel/>`__.
+**See also** :ref:`PlaceSearchModel <sdk_qtlocation_placesearchmodel>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtlocation_place_attribution-prop:
 
 +--------------------------------------------------------------------------+
 |        \ attribution : string                                            |
@@ -328,27 +319,32 @@ the user if it is not empty.
 
 | 
 
+.. _sdk_qtlocation_place_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ categories :                                                    |
-| list<`Category </sdk/apps/qml/QtLocation/Category/>`__>                  |
+| :ref:` <>`\ categories : list<`Category <sdk_qtlocation_category>`>       |
 +--------------------------------------------------------------------------+
 
 This property holds the list of categories this place is a member of.
 The categories that can be assigned to a place are specific to each
-`plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__.
+`plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_ .
 
 | 
 
+.. _sdk_qtlocation_place_contactDetails-prop:
+
 +--------------------------------------------------------------------------+
 |        \ contactDetails :                                                |
-| `ContactDetails </sdk/apps/qml/QtLocation/ContactDetails/>`__            |
+| :ref:`ContactDetails <sdk_qtlocation_contactdetails>`                       |
 +--------------------------------------------------------------------------+
 
 This property holds the contact information for this place, for example
 a phone number or a website URL. This property is a map of
-`ContactDetail </sdk/apps/qml/QtLocation/ContactDetail/>`__ objects.
+:ref:`ContactDetail <sdk_qtlocation_contactdetail>` objects.
 
 | 
+
+.. _sdk_qtlocation_place_detailsFetched-prop:
 
 +--------------------------------------------------------------------------+
 |        \ detailsFetched : bool                                           |
@@ -357,17 +353,17 @@ a phone number or a website URL. This property is a map of
 This property indicates whether the details of the place have been
 fetched. If this property is false, the place details have not yet been
 fetched. Fetching can be done by invoking the
-`getDetails() </sdk/apps/qml/QtLocation/Place#getDetails-method>`__
-method.
+:ref:`getDetails() <sdk_qtlocation_place#getDetails-method>` method.
 
-**See also**
-`getDetails() </sdk/apps/qml/QtLocation/Place#getDetails-method>`__.
+**See also** :ref:`getDetails() <sdk_qtlocation_place#getDetails-method>`.
 
 | 
 
+.. _sdk_qtlocation_place_editorialModel-prop:
+
 +--------------------------------------------------------------------------+
 |        \ editorialModel :                                                |
-| `EditorialModel </sdk/apps/qml/QtLocation/EditorialModel/>`__            |
+| :ref:`EditorialModel <sdk_qtlocation_editorialmodel>`                       |
 +--------------------------------------------------------------------------+
 
 This property holds a model which can be used to retrieve editorial
@@ -375,9 +371,11 @@ descriptions of the place.
 
 | 
 
+.. _sdk_qtlocation_place_extendedAttributes-prop:
+
 +--------------------------------------------------------------------------+
 |        \ extendedAttributes :                                            |
-| `ExtendedAttributes </sdk/apps/qml/QtLocation/ExtendedAttributes/>`__    |
+| :ref:`ExtendedAttributes <sdk_qtlocation_extendedattributes>`               |
 +--------------------------------------------------------------------------+
 
 This property holds the extended attributes of a place. Extended
@@ -386,16 +384,20 @@ place's properties.
 
 | 
 
+.. _sdk_qtlocation_place_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ favorite : `Place </sdk/apps/qml/QtLocation/Place/>`__          |
+| :ref:` <>`\ favorite : `Place <sdk_qtlocation_place>`                  |
 +--------------------------------------------------------------------------+
 
 This property holds the favorite instance of a place.
 
 | 
 
+.. _sdk_qtlocation_place_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ icon : `Icon </sdk/apps/qml/QtLocation/Icon/>`__                |
+| :ref:` <>`\ icon : `Icon <sdk_qtlocation_icon>`                        |
 +--------------------------------------------------------------------------+
 
 This property holds a graphical icon which can be used to represent the
@@ -403,15 +405,18 @@ place.
 
 | 
 
+.. _sdk_qtlocation_place_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ imageModel :                                                    |
-| `ImageModel </sdk/apps/qml/QtLocation/ImageModel/>`__                    |
+| :ref:` <>`\ imageModel : `ImageModel <sdk_qtlocation_imagemodel>`      |
 +--------------------------------------------------------------------------+
 
 This property holds a model which can be used to retrieve images of the
 place.
 
 | 
+
+.. _sdk_qtlocation_place_location-prop:
 
 +--------------------------------------------------------------------------+
 |        \ location : QtPositioning::Location                              |
@@ -422,6 +427,8 @@ retrieve the coordinate, address and the bounding box.
 
 | 
 
+.. _sdk_qtlocation_place_name-prop:
+
 +--------------------------------------------------------------------------+
 |        \ name : string                                                   |
 +--------------------------------------------------------------------------+
@@ -430,6 +437,8 @@ This property holds the name of the place which can be used to represent
 the place.
 
 | 
+
+.. _sdk_qtlocation_place_place-prop:
 
 +--------------------------------------------------------------------------+
 |        \ place : QPlace                                                  |
@@ -440,22 +449,24 @@ see "Interfaces between C++ and QML Code".
 
 | 
 
+.. _sdk_qtlocation_place_placeId-prop:
+
 +--------------------------------------------------------------------------+
 |        \ placeId : string                                                |
 +--------------------------------------------------------------------------+
 
 This property holds the unique identifier of the place. The place
 identifier is only meaningful to the
-`Plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__ that
+`Plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_  that
 generated it and is not transferable between
-`Plugins </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__. The
+`Plugins </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_ . The
 place id is not guaranteed to be universally unique, but unique within
-the `Plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__
+the `Plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_ 
 that generated it.
 
 If only the place identifier is known, all other place data can fetched
 from the
-`Plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__.
+`Plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_ .
 
 .. code:: qml
 
@@ -465,16 +476,20 @@ from the
 
 | 
 
+.. _sdk_qtlocation_place_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ plugin : `Plugin </sdk/apps/qml/QtLocation/Plugin/>`__          |
+| :ref:` <>`\ plugin : `Plugin <sdk_qtlocation_plugin>`                  |
 +--------------------------------------------------------------------------+
 
 This property holds the
-`Plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__ that
+`Plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_  that
 provided this place which can be used to retrieve more information about
 the service.
 
 | 
+
+.. _sdk_qtlocation_place_primaryEmail-prop:
 
 +--------------------------------------------------------------------------+
 |        \ primaryEmail : string                                           |
@@ -492,6 +507,8 @@ an empty string. It is equivalent to
 
 | 
 
+.. _sdk_qtlocation_place_primaryFax-prop:
+
 +--------------------------------------------------------------------------+
 |        \ primaryFax : string                                             |
 +--------------------------------------------------------------------------+
@@ -507,6 +524,8 @@ string. It is equivalent to
             primaryFax = place.contactDetails["fax"][0].value;
 
 | 
+
+.. _sdk_qtlocation_place_primaryPhone-prop:
 
 +--------------------------------------------------------------------------+
 |        \ primaryPhone : string                                           |
@@ -524,6 +543,8 @@ string. It is equivalent to:
 
 | 
 
+.. _sdk_qtlocation_place_primaryWebsite-prop:
+
 +--------------------------------------------------------------------------+
 |        \ primaryWebsite : string                                         |
 +--------------------------------------------------------------------------+
@@ -540,8 +561,10 @@ an empty string. It is equivalent to
 
 | 
 
+.. _sdk_qtlocation_place_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ ratings : `Ratings </sdk/apps/qml/QtLocation/Ratings/>`__       |
+| :ref:` <>`\ ratings : `Ratings <sdk_qtlocation_ratings>`               |
 +--------------------------------------------------------------------------+
 
 This property holds ratings of the place. The ratings provide an
@@ -549,9 +572,10 @@ indication of the quality of a place.
 
 | 
 
+.. _sdk_qtlocation_place_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ reviewModel :                                                   |
-| `ReviewModel </sdk/apps/qml/QtLocation/ReviewModel/>`__                  |
+| :ref:` <>`\ reviewModel : `ReviewModel <sdk_qtlocation_reviewmodel>`   |
 +--------------------------------------------------------------------------+
 
 This property holds a model which can be used to retrieve reviews about
@@ -559,19 +583,27 @@ the place.
 
 | 
 
+.. _sdk_qtlocation_place_status-prop:
+
 +--------------------------------------------------------------------------+
 |        \ status : enumeration                                            |
 +--------------------------------------------------------------------------+
 
 This property holds the status of the place. It can be one of:
 
+.. _sdk_qtlocation_place_Place.Ready       No error occurred during the last operation, further operations may be performed on the place.-prop:
+
 +------------------+--------------------------------------------------------------------------------------------------------+
+.. _sdk_qtlocation_place_Place.Saving      The place is currently being saved, no other operation may be performed until complete.-prop:
 | Place.Ready      | No error occurred during the last operation, further operations may be performed on the place.         |
 +------------------+--------------------------------------------------------------------------------------------------------+
+.. _sdk_qtlocation_place_Place.Fetching    The place details are currently being fetched, no other operations may be performed until complete.-prop:
 | Place.Saving     | The place is currently being saved, no other operation may be performed until complete.                |
 +------------------+--------------------------------------------------------------------------------------------------------+
+.. _sdk_qtlocation_place_Place.Removing    The place is currently being removed, no other operations can be performed until complete.-prop:
 | Place.Fetching   | The place details are currently being fetched, no other operations may be performed until complete.    |
 +------------------+--------------------------------------------------------------------------------------------------------+
+.. _sdk_qtlocation_place_Place.Error       An error occurred during the last operation, further operations can still be performed on the place.-prop:
 | Place.Removing   | The place is currently being removed, no other operations can be performed until complete.             |
 +------------------+--------------------------------------------------------------------------------------------------------+
 | Place.Error      | An error occurred during the last operation, further operations can still be performed on the place.   |
@@ -603,8 +635,10 @@ change in status.
 
 | 
 
+.. _sdk_qtlocation_place_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ supplier : `Supplier </sdk/apps/qml/QtLocation/Supplier/>`__    |
+| :ref:` <>`\ supplier : `Supplier <sdk_qtlocation_supplier>`            |
 +--------------------------------------------------------------------------+
 
 This property holds the supplier of the place data. The supplier is
@@ -613,21 +647,28 @@ place.
 
 | 
 
+.. _sdk_qtlocation_place_visibility-prop:
+
 +--------------------------------------------------------------------------+
 |        \ visibility : enumeration                                        |
 +--------------------------------------------------------------------------+
 
 This property holds the visibility of the place. It can be one of:
 
-+-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Place.UnspecifiedVisibility   | The visibility of the place is unspecified, the default visibility of the `Plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__ will be used.   |
-+-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Place.DeviceVisibility        | The place is limited to the current device. The place will not be transferred off of the device.                                                           |
-+-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Place.PrivateVisibility       | The place is private to the current user. The place may be transferred to an online service but is only ever visible to the current user.                  |
-+-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Place.PublicVisibility        | The place is public.                                                                                                                                       |
-+-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_qtlocation_place_Place.UnspecifiedVisibility    The visibility of the place is unspecified, the default visibility of the `Plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_  will be used.-method:
+
++-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_qtlocation_place_Place.DeviceVisibility         The place is limited to the current device. The place will not be transferred off of the device.-method:
+| Place.UnspecifiedVisibility   | The visibility of the place is unspecified, the default visibility of the `Plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_  will be used.   |
++-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_qtlocation_place_Place.PrivateVisibility        The place is private to the current user. The place may be transferred to an online service but is only ever visible to the current user.-method:
+| Place.DeviceVisibility        | The place is limited to the current device. The place will not be transferred off of the device.                                                            |
++-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_qtlocation_place_Place.PublicVisibility         The place is public.-method:
+| Place.PrivateVisibility       | The place is private to the current user. The place may be transferred to an online service but is only ever visible to the current user.                   |
++-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Place.PublicVisibility        | The place is public.                                                                                                                                        |
++-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Note that visibility does not affect how the place is displayed in the
 user-interface of an application on the device. Instead, it defines the
@@ -638,9 +679,10 @@ sharing semantics of the place.
 Method Documentation
 --------------------
 
+.. _sdk_qtlocation_place_-method:
+
 +--------------------------------------------------------------------------+
-|        \ copyFrom(`Place </sdk/apps/qml/QtLocation/Place/>`__            |
-| *original*)                                                              |
+| :ref:` <>`\ copyFrom(`Place <sdk_qtlocation_place>` *original*)           |
 +--------------------------------------------------------------------------+
 
 Copies data from an *original* place into this place. Only data that is
@@ -648,6 +690,8 @@ supported by this place's plugin is copied over and plugin specific data
 such as place identifier is not copied over.
 
 | 
+
+.. _sdk_qtlocation_place_string errorString-method:
 
 +--------------------------------------------------------------------------+
 |        \ string errorString()                                            |
@@ -658,29 +702,30 @@ last operation completed successfully then the string is empty.
 
 | 
 
+.. _sdk_qtlocation_place_void getDetails-method:
+
 +--------------------------------------------------------------------------+
 |        \ void getDetails()                                               |
 +--------------------------------------------------------------------------+
 
 This method starts fetching place details.
 
-The `status </sdk/apps/qml/QtLocation/Place#status-prop>`__ property
-will change to Place.Fetching while the fetch is in progress. On success
-the object's properties will be updated,
-`status </sdk/apps/qml/QtLocation/Place#status-prop>`__ will be set to
-Place.Ready and
-`detailsFetched </sdk/apps/qml/QtLocation/Place#detailsFetched-prop>`__
-will be set to true. On error
-`status </sdk/apps/qml/QtLocation/Place#status-prop>`__ will be set to
-Place.Error. The
-`errorString() </sdk/apps/qml/QtLocation/Place#errorString-method>`__
-method can be used to get the details of the error.
+The :ref:`status <sdk_qtlocation_place#status-prop>` property will change
+to Place.Fetching while the fetch is in progress. On success the
+object's properties will be updated,
+:ref:`status <sdk_qtlocation_place#status-prop>` will be set to Place.Ready
+and :ref:`detailsFetched <sdk_qtlocation_place#detailsFetched-prop>` will
+be set to true. On error :ref:`status <sdk_qtlocation_place#status-prop>`
+will be set to Place.Error. The
+:ref:`errorString() <sdk_qtlocation_place#errorString-method>` method can
+be used to get the details of the error.
 
 | 
 
+.. _sdk_qtlocation_place_-method:
+
 +--------------------------------------------------------------------------+
-|        \ initializeFavorite(`Plugin </sdk/apps/qml/QtLocation/Plugin/>`_ |
-| _                                                                        |
+| :ref:` <>`\ initializeFavorite(`Plugin <sdk_qtlocation_plugin>`        |
 | *destinationPlugin*)                                                     |
 +--------------------------------------------------------------------------+
 
@@ -690,22 +735,25 @@ is not null.
 
 | 
 
+.. _sdk_qtlocation_place_void remove-method:
+
 +--------------------------------------------------------------------------+
 |        \ void remove()                                                   |
 +--------------------------------------------------------------------------+
 
 This method performs a remove operation on the place.
 
-The `status </sdk/apps/qml/QtLocation/Place#status-prop>`__ property
-will change to Place.Removing while the save operation is in progress.
-On success `status </sdk/apps/qml/QtLocation/Place#status-prop>`__ will
-be set to Place.Ready. On error
-`status </sdk/apps/qml/QtLocation/Place#status-prop>`__ will be set to
-Place.Error. The
-`errorString() </sdk/apps/qml/QtLocation/Place#errorString-method>`__
-method can be used to get the details of the error.
+The :ref:`status <sdk_qtlocation_place#status-prop>` property will change
+to Place.Removing while the save operation is in progress. On success
+:ref:`status <sdk_qtlocation_place#status-prop>` will be set to
+Place.Ready. On error :ref:`status <sdk_qtlocation_place#status-prop>` will
+be set to Place.Error. The
+:ref:`errorString() <sdk_qtlocation_place#errorString-method>` method can
+be used to get the details of the error.
 
 | 
+
+.. _sdk_qtlocation_place_void save-method:
 
 +--------------------------------------------------------------------------+
 |        \ void save()                                                     |
@@ -713,28 +761,25 @@ method can be used to get the details of the error.
 
 This method performs a save operation on the place.
 
-The `status </sdk/apps/qml/QtLocation/Place#status-prop>`__ property
-will change to Place.Saving while the save operation is in progress. On
-success the `status </sdk/apps/qml/QtLocation/Place#status-prop>`__ will
-be set to Place.Ready. On error
-`status </sdk/apps/qml/QtLocation/Place#status-prop>`__ will be set to
-Place.Error. The
-`errorString() </sdk/apps/qml/QtLocation/Place#errorString-method>`__
-method can be used to get the details of the error.
+The :ref:`status <sdk_qtlocation_place#status-prop>` property will change
+to Place.Saving while the save operation is in progress. On success the
+:ref:`status <sdk_qtlocation_place#status-prop>` will be set to
+Place.Ready. On error :ref:`status <sdk_qtlocation_place#status-prop>` will
+be set to Place.Error. The
+:ref:`errorString() <sdk_qtlocation_place#errorString-method>` method can
+be used to get the details of the error.
 
-If the `placeId </sdk/apps/qml/QtLocation/Place#placeId-prop>`__
-property was previously empty, it will be assigned a valid value
-automatically during a successful save operation.
+If the :ref:`placeId <sdk_qtlocation_place#placeId-prop>` property was
+previously empty, it will be assigned a valid value automatically during
+a successful save operation.
 
-Note that a
-`PlaceSearchModel </sdk/apps/qml/QtLocation/PlaceSearchModel/>`__ will
-call
-`Place::getDetails </sdk/apps/qml/QtLocation/Place#getDetails-method>`__
-on any place that it detects an update on. A consequence of this is that
+Note that a :ref:`PlaceSearchModel <sdk_qtlocation_placesearchmodel>` will
+call :ref:`Place::getDetails <sdk_qtlocation_place#getDetails-method>` on
+any place that it detects an update on. A consequence of this is that
 whenever a Place from a
-`PlaceSearchModel </sdk/apps/qml/QtLocation/PlaceSearchModel/>`__ is
-successfully saved, it will be followed by a fetch of place details,
-leading to a sequence of state changes of ``Saving``, ``Ready``,
-``Fetching``, ``Ready``.
+:ref:`PlaceSearchModel <sdk_qtlocation_placesearchmodel>` is successfully
+saved, it will be followed by a fetch of place details, leading to a
+sequence of state changes of ``Saving``, ``Ready``, ``Fetching``,
+``Ready``.
 
 | 

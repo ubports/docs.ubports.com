@@ -1,3 +1,7 @@
+.. _sdk_qtmultimedia_qt_multimedia_on_windows:
+QtMultimedia Qt Multimedia on Windows
+=====================================
+
 
 
 This page covers the availability of Qt Multimedia features on Windows.

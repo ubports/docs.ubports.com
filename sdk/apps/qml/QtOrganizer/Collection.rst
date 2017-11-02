@@ -1,3 +1,7 @@
+.. _sdk_qtorganizer_collection:
+QtOrganizer Collection
+======================
+
 The Collection element represents a collection of items in an organizer
 manager.
 
@@ -8,29 +12,26 @@ manager.
 Properties
 ----------
 
--  ****`collectionId </sdk/apps/qml/QtOrganizer/Collection#collectionId-prop>`__****
+-  :ref:`collectionId <sdk_qtorganizer_collection_collectionId-prop>`
    : string
--  ****`color </sdk/apps/qml/QtOrganizer/Collection#color-prop>`__**** :
-   color
--  ****`description </sdk/apps/qml/QtOrganizer/Collection#description-prop>`__****
+-  :ref:`color <sdk_qtorganizer_collection_color-prop>` : color
+-  :ref:`description <sdk_qtorganizer_collection_description-prop>`
    : string
--  ****`image </sdk/apps/qml/QtOrganizer/Collection#image-prop>`__**** :
-   url
--  ****`name </sdk/apps/qml/QtOrganizer/Collection#name-prop>`__**** :
-   string
--  ****`secondaryColor </sdk/apps/qml/QtOrganizer/Collection#secondaryColor-prop>`__****
+-  :ref:`image <sdk_qtorganizer_collection_image-prop>` : url
+-  :ref:`name <sdk_qtorganizer_collection_name-prop>` : string
+-  :ref:`secondaryColor <sdk_qtorganizer_collection_secondaryColor-prop>`
    : color
 
 Methods
 -------
 
 -  var
-   ****`extendedMetaData </sdk/apps/qml/QtOrganizer/Collection#extendedMetaData-method>`__****\ (key)
+   **:ref:`extendedMetaData <sdk_qtorganizer_collection#extendedMetaData-method>`**\ (key)
 -  var
-   ****`metaData </sdk/apps/qml/QtOrganizer/Collection#metaData-method>`__****\ (key)
--  ****`setExtendedMetaData </sdk/apps/qml/QtOrganizer/Collection#setExtendedMetaData-method>`__****\ (key,
+   **:ref:`metaData <sdk_qtorganizer_collection#metaData-method>`**\ (key)
+-  :ref:`setExtendedMetaData <sdk_qtorganizer_collection_setExtendedMetaData-method>`\ (key,
    value)
--  ****`setMetaData </sdk/apps/qml/QtOrganizer/Collection#setMetaData-method>`__****\ (key,
+-  :ref:`setMetaData <sdk_qtorganizer_collection_setMetaData-method>`\ (key,
    value)
 
 Detailed Description
@@ -38,6 +39,8 @@ Detailed Description
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtorganizer_collection_collectionId-prop:
 
 +--------------------------------------------------------------------------+
 |        \ collectionId : string                                           |
@@ -47,6 +50,8 @@ This property holds the ID of the collection.
 
 | 
 
+.. _sdk_qtorganizer_collection_color-prop:
+
 +--------------------------------------------------------------------------+
 |        \ color : color                                                   |
 +--------------------------------------------------------------------------+
@@ -54,6 +59,8 @@ This property holds the ID of the collection.
 This property holds the color meta data of a collection.
 
 | 
+
+.. _sdk_qtorganizer_collection_description-prop:
 
 +--------------------------------------------------------------------------+
 |        \ description : string                                            |
@@ -63,6 +70,8 @@ This property holds the description meta data of a collection.
 
 | 
 
+.. _sdk_qtorganizer_collection_image-prop:
+
 +--------------------------------------------------------------------------+
 |        \ image : url                                                     |
 +--------------------------------------------------------------------------+
@@ -71,6 +80,8 @@ This property holds the image url meta data of a collection.
 
 | 
 
+.. _sdk_qtorganizer_collection_name-prop:
+
 +--------------------------------------------------------------------------+
 |        \ name : string                                                   |
 +--------------------------------------------------------------------------+
@@ -78,6 +89,8 @@ This property holds the image url meta data of a collection.
 This property holds the name meta data of a collection.
 
 | 
+
+.. _sdk_qtorganizer_collection_secondaryColor-prop:
 
 +--------------------------------------------------------------------------+
 |        \ secondaryColor : color                                          |
@@ -90,6 +103,8 @@ This property holds the secondary color meta data of a collection.
 Method Documentation
 --------------------
 
+.. _sdk_qtorganizer_collection_var extendedMetaData-method:
+
 +--------------------------------------------------------------------------+
 |        \ var extendedMetaData(key)                                       |
 +--------------------------------------------------------------------------+
@@ -97,6 +112,8 @@ Method Documentation
 Returns the value of extended metadata with the given *key*.
 
 | 
+
+.. _sdk_qtorganizer_collection_var metaData-method:
 
 +--------------------------------------------------------------------------+
 |        \ var metaData(key)                                               |
@@ -113,6 +130,8 @@ Possible keys include:
 
 | 
 
+.. _sdk_qtorganizer_collection_setExtendedMetaData-method:
+
 +--------------------------------------------------------------------------+
 |        \ setExtendedMetaData(key, value)                                 |
 +--------------------------------------------------------------------------+
@@ -120,6 +139,8 @@ Possible keys include:
 Sets the value of the extended metadata with the given *key* to *value*.
 
 | 
+
+.. _sdk_qtorganizer_collection_setMetaData-method:
 
 +--------------------------------------------------------------------------+
 |        \ setMetaData(key, value)                                         |

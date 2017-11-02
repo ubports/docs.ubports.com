@@ -1,3 +1,7 @@
+.. _sdk_contenthub_contenttransfer:
+ContentHub ContentTransfer
+==========================
+
 
 ContentTransfer is an object created by the ContentHub to and allows one
 to properly setup and manage a data transfer between two peers.
@@ -117,8 +121,7 @@ Sets the current store for the ContentTransfer.
 
 **Parameters:**
 
--  ``store``
-   **<`ContentStore </sdk/apps/html5/ContentHub/ContentStore/>`__>**
+-  :ref:``store`` **<`ContentStore <sdk_contenthub_contentstore>`>**
 -  ``callback`` **<Function()>**
 
    (optional) called when the store has been updated

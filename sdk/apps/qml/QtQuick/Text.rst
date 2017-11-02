@@ -1,100 +1,90 @@
+.. _sdk_qtquick_text:
+QtQuick Text
+============
+
 Specifies how to add formatted text to a scene
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtQuick 2.4                   |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Item </sdk/apps/qml/QtQuick/Item/>` |
-|                                      | __                                   |
+| Inherits:                            | :ref:`Item <sdk_qtquick_item>`       |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`baseUrl </sdk/apps/qml/QtQuick/Text#baseUrl-prop>`__**** : url
--  ****`clip </sdk/apps/qml/QtQuick/Text#clip-prop>`__**** : bool
--  ****`color </sdk/apps/qml/QtQuick/Text#color-prop>`__**** : color
--  ****`contentHeight </sdk/apps/qml/QtQuick/Text#contentHeight-prop>`__****
-   : real
--  ****`contentWidth </sdk/apps/qml/QtQuick/Text#contentWidth-prop>`__****
-   : real
--  ****`effectiveHorizontalAlignment </sdk/apps/qml/QtQuick/Text#effectiveHorizontalAlignment-prop>`__****
-   : enumeration
--  ****`elide </sdk/apps/qml/QtQuick/Text#elide-prop>`__**** :
-   enumeration
--  ****`font.bold </sdk/apps/qml/QtQuick/Text#font.bold-prop>`__**** :
-   bool
--  ****`font.capitalization </sdk/apps/qml/QtQuick/Text#font.capitalization-prop>`__****
-   : enumeration
--  ****`font.family </sdk/apps/qml/QtQuick/Text#font.family-prop>`__****
-   : string
--  ****`font.italic </sdk/apps/qml/QtQuick/Text#font.italic-prop>`__****
-   : bool
--  ****`font.letterSpacing </sdk/apps/qml/QtQuick/Text#font.letterSpacing-prop>`__****
-   : real
--  ****`font.pixelSize </sdk/apps/qml/QtQuick/Text#font.pixelSize-prop>`__****
-   : int
--  ****`font.pointSize </sdk/apps/qml/QtQuick/Text#font.pointSize-prop>`__****
-   : real
--  ****`font.strikeout </sdk/apps/qml/QtQuick/Text#font.strikeout-prop>`__****
-   : bool
--  ****`font.underline </sdk/apps/qml/QtQuick/Text#font.underline-prop>`__****
-   : bool
--  ****`font.weight </sdk/apps/qml/QtQuick/Text#font.weight-prop>`__****
-   : enumeration
--  ****`font.wordSpacing </sdk/apps/qml/QtQuick/Text#font.wordSpacing-prop>`__****
-   : real
--  ****`fontSizeMode </sdk/apps/qml/QtQuick/Text#fontSizeMode-prop>`__****
-   : enumeration
--  ****`horizontalAlignment </sdk/apps/qml/QtQuick/Text#horizontalAlignment-prop>`__****
-   : enumeration
--  ****`hoveredLink </sdk/apps/qml/QtQuick/Text#hoveredLink-prop>`__****
-   : string
--  ****`lineCount </sdk/apps/qml/QtQuick/Text#lineCount-prop>`__**** :
-   int
--  ****`lineHeight </sdk/apps/qml/QtQuick/Text#lineHeight-prop>`__**** :
+-  :ref:`baseUrl <sdk_qtquick_text_baseUrl-prop>` : url
+-  :ref:`clip <sdk_qtquick_text_clip-prop>` : bool
+-  :ref:`color <sdk_qtquick_text_color-prop>` : color
+-  :ref:`contentHeight <sdk_qtquick_text_contentHeight-prop>` :
    real
--  ****`lineHeightMode </sdk/apps/qml/QtQuick/Text#lineHeightMode-prop>`__****
+-  :ref:`contentWidth <sdk_qtquick_text_contentWidth-prop>` : real
+-  :ref:`effectiveHorizontalAlignment <sdk_qtquick_text_effectiveHorizontalAlignment-prop>`
    : enumeration
--  ****`linkColor </sdk/apps/qml/QtQuick/Text#linkColor-prop>`__**** :
-   color
--  ****`maximumLineCount </sdk/apps/qml/QtQuick/Text#maximumLineCount-prop>`__****
-   : int
--  ****`minimumPixelSize </sdk/apps/qml/QtQuick/Text#minimumPixelSize-prop>`__****
-   : int
--  ****`minimumPointSize </sdk/apps/qml/QtQuick/Text#minimumPointSize-prop>`__****
-   : int
--  ****`renderType </sdk/apps/qml/QtQuick/Text#renderType-prop>`__**** :
-   enumeration
--  ****`style </sdk/apps/qml/QtQuick/Text#style-prop>`__**** :
-   enumeration
--  ****`styleColor </sdk/apps/qml/QtQuick/Text#styleColor-prop>`__**** :
-   color
--  ****`text </sdk/apps/qml/QtQuick/Text#text-prop>`__**** : string
--  ****`textFormat </sdk/apps/qml/QtQuick/Text#textFormat-prop>`__**** :
-   enumeration
--  ****`truncated </sdk/apps/qml/QtQuick/Text#truncated-prop>`__**** :
+-  :ref:`elide <sdk_qtquick_text_elide-prop>` : enumeration
+-  :ref:`font.bold <sdk_qtquick_text_font.bold-prop>` : bool
+-  :ref:`font.capitalization <sdk_qtquick_text_font.capitalization-prop>`
+   : enumeration
+-  :ref:`font.family <sdk_qtquick_text_font.family-prop>` : string
+-  :ref:`font.italic <sdk_qtquick_text_font.italic-prop>` : bool
+-  :ref:`font.letterSpacing <sdk_qtquick_text_font.letterSpacing-prop>`
+   : real
+-  :ref:`font.pixelSize <sdk_qtquick_text_font.pixelSize-prop>` :
+   int
+-  :ref:`font.pointSize <sdk_qtquick_text_font.pointSize-prop>` :
+   real
+-  :ref:`font.strikeout <sdk_qtquick_text_font.strikeout-prop>` :
    bool
--  ****`verticalAlignment </sdk/apps/qml/QtQuick/Text#verticalAlignment-prop>`__****
-   : enumeration
--  ****`wrapMode </sdk/apps/qml/QtQuick/Text#wrapMode-prop>`__**** :
+-  :ref:`font.underline <sdk_qtquick_text_font.underline-prop>` :
+   bool
+-  :ref:`font.weight <sdk_qtquick_text_font.weight-prop>` :
    enumeration
+-  :ref:`font.wordSpacing <sdk_qtquick_text_font.wordSpacing-prop>`
+   : real
+-  :ref:`fontSizeMode <sdk_qtquick_text_fontSizeMode-prop>` :
+   enumeration
+-  :ref:`horizontalAlignment <sdk_qtquick_text_horizontalAlignment-prop>`
+   : enumeration
+-  :ref:`hoveredLink <sdk_qtquick_text_hoveredLink-prop>` : string
+-  :ref:`lineCount <sdk_qtquick_text_lineCount-prop>` : int
+-  :ref:`lineHeight <sdk_qtquick_text_lineHeight-prop>` : real
+-  :ref:`lineHeightMode <sdk_qtquick_text_lineHeightMode-prop>` :
+   enumeration
+-  :ref:`linkColor <sdk_qtquick_text_linkColor-prop>` : color
+-  :ref:`maximumLineCount <sdk_qtquick_text_maximumLineCount-prop>`
+   : int
+-  :ref:`minimumPixelSize <sdk_qtquick_text_minimumPixelSize-prop>`
+   : int
+-  :ref:`minimumPointSize <sdk_qtquick_text_minimumPointSize-prop>`
+   : int
+-  :ref:`renderType <sdk_qtquick_text_renderType-prop>` :
+   enumeration
+-  :ref:`style <sdk_qtquick_text_style-prop>` : enumeration
+-  :ref:`styleColor <sdk_qtquick_text_styleColor-prop>` : color
+-  :ref:`text <sdk_qtquick_text_text-prop>` : string
+-  :ref:`textFormat <sdk_qtquick_text_textFormat-prop>` :
+   enumeration
+-  :ref:`truncated <sdk_qtquick_text_truncated-prop>` : bool
+-  :ref:`verticalAlignment <sdk_qtquick_text_verticalAlignment-prop>`
+   : enumeration
+-  :ref:`wrapMode <sdk_qtquick_text_wrapMode-prop>` : enumeration
 
 Signals
 -------
 
--  ****`lineLaidOut </sdk/apps/qml/QtQuick/Text#lineLaidOut-signal>`__****\ (object
+-  :ref:`lineLaidOut <sdk_qtquick_text_lineLaidOut-signal>`\ (object
    *line*)
--  ****`linkActivated </sdk/apps/qml/QtQuick/Text#linkActivated-signal>`__****\ (string
+-  :ref:`linkActivated <sdk_qtquick_text_linkActivated-signal>`\ (string
    *link*)
--  ****`linkHovered </sdk/apps/qml/QtQuick/Text#linkHovered-signal>`__****\ (string
+-  :ref:`linkHovered <sdk_qtquick_text_linkHovered-signal>`\ (string
    *link*)
 
 Methods
 -------
 
--  ****`doLayout </sdk/apps/qml/QtQuick/Text#doLayout-method>`__****\ ()
--  ****`linkAt </sdk/apps/qml/QtQuick/Text#linkAt-method>`__****\ (real
-   *x*, real *y*)
+-  :ref:`doLayout <sdk_qtquick_text_doLayout-method>`\ ()
+-  :ref:`linkAt <sdk_qtquick_text_linkAt-method>`\ (real *x*, real
+   *y*)
 
 Detailed Description
 --------------------
@@ -123,23 +113,24 @@ Rich text is defined using HTML-style markup:
 
 If height and width are not explicitly set, Text will attempt to
 determine how much room is needed and set it accordingly. Unless
-`wrapMode </sdk/apps/qml/QtQuick/Text#wrapMode-prop>`__ is set, it will
-always prefer width to height (all text will be placed on a single
-line).
+:ref:`wrapMode <sdk_qtquick_text#wrapMode-prop>` is set, it will always
+prefer width to height (all text will be placed on a single line).
 
-The `elide </sdk/apps/qml/QtQuick/Text#elide-prop>`__ property can
-alternatively be used to fit a single line of plain text to a set width.
+The :ref:`elide <sdk_qtquick_text#elide-prop>` property can alternatively
+be used to fit a single line of plain text to a set width.
 
 Note that the Supported HTML Subset is limited. Also, if the text
 contains HTML img tags that load remote images, the text is reloaded.
 
 Text provides read-only text. For editable text, see
-`TextEdit </sdk/apps/qml/QtQuick/TextEdit/>`__.
+:ref:`TextEdit <sdk_qtquick_textedit>`.
 
-**See also** `Fonts example </sdk/apps/qml/QtQuick/text#fonts>`__.
+**See also** `Fonts example </sdk/apps/qml/QtQuick/text/#fonts>`_ .
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_text_baseUrl-prop:
 
 +--------------------------------------------------------------------------+
 |        \ baseUrl : url                                                   |
@@ -152,19 +143,27 @@ Urls are resolved to be within the same directory as the target of the
 base URL meaning any portion of the path after the last '/' will be
 ignored.
 
+.. _sdk_qtquick_text_Base URL                                    Relative URL          Resolved URL-prop:
+
 +--------------------------------------------+----------------------+-------------------------------------------------+
 | Base URL                                   | Relative URL         | Resolved URL                                    |
 +============================================+======================+=================================================+
+.. _sdk_qtquick_text_http-prop:
 | http://qt-project.org/                     | images/logo.png      | http://qt-project.org/images/logo.png           |
 +--------------------------------------------+----------------------+-------------------------------------------------+
+.. _sdk_qtquick_text_http-prop:
 | http://qt-project.org/index.html           | images/logo.png      | http://qt-project.org/images/logo.png           |
 +--------------------------------------------+----------------------+-------------------------------------------------+
+.. _sdk_qtquick_text_http-prop:
 | http://qt-project.org/content              | images/logo.png      | http://qt-project.org/content/images/logo.png   |
 +--------------------------------------------+----------------------+-------------------------------------------------+
+.. _sdk_qtquick_text_http-prop:
 | http://qt-project.org/content/             | images/logo.png      | http://qt-project.org/content/images/logo.png   |
 +--------------------------------------------+----------------------+-------------------------------------------------+
+.. _sdk_qtquick_text_http-prop:
 | http://qt-project.org/content/index.html   | images/logo.png      | http://qt-project.org/content/images/logo.png   |
 +--------------------------------------------+----------------------+-------------------------------------------------+
+.. _sdk_qtquick_text_http-prop:
 | http://qt-project.org/content/index.html   | ../images/logo.png   | http://qt-project.org/images/logo.png           |
 +--------------------------------------------+----------------------+-------------------------------------------------+
 | http://qt-project.org/content/index.html   | /images/logo.png     | http://qt-project.org/images/logo.png           |
@@ -174,6 +173,8 @@ The default value is the url of the QML file instantiating the Text
 item.
 
 | 
+
+.. _sdk_qtquick_text_clip-prop:
 
 +--------------------------------------------------------------------------+
 |        \ clip : bool                                                     |
@@ -188,6 +189,8 @@ If you want to display potentially long text in a limited space, you
 probably want to use ``elide`` instead.
 
 | 
+
+.. _sdk_qtquick_text_color-prop:
 
 +--------------------------------------------------------------------------+
 |        \ color : color                                                   |
@@ -215,6 +218,8 @@ An example of steel blue text defined using an SVG color name:
 
 | 
 
+.. _sdk_qtquick_text_contentHeight-prop:
+
 +--------------------------------------------------------------------------+
 |        \ contentHeight : real                                            |
 +--------------------------------------------------------------------------+
@@ -224,6 +229,8 @@ is covered due to there being more text than fits in the set height.
 
 | 
 
+.. _sdk_qtquick_text_contentWidth-prop:
+
 +--------------------------------------------------------------------------+
 |        \ contentWidth : real                                             |
 +--------------------------------------------------------------------------+
@@ -232,6 +239,8 @@ Returns the width of the text, including width past the width which is
 covered due to insufficient wrapping if WrapMode is set.
 
 | 
+
+.. _sdk_qtquick_text_effectiveHorizontalAlignment-prop:
 
 +--------------------------------------------------------------------------+
 |        \ effectiveHorizontalAlignment : enumeration                      |
@@ -251,19 +260,20 @@ The valid values for ``verticalAlignment`` are ``Text.AlignTop``,
 Note that for a single line of text, the size of the text is the area of
 the text. In this common case, all alignments are equivalent. If you
 want the text to be, say, centered in its parent, then you will need to
-either modify the
-`Item::anchors </sdk/apps/qml/QtQuick/Item#anchors-prop>`__, or set
-`horizontalAlignment </sdk/apps/qml/QtQuick/Text#horizontalAlignment-prop>`__
+either modify the :ref:`Item::anchors <sdk_qtquick_item#anchors-prop>`, or
+set :ref:`horizontalAlignment <sdk_qtquick_text#horizontalAlignment-prop>`
 to Text.AlignHCenter and bind the width to that of the parent.
 
 When using the attached property
-`LayoutMirroring::enabled </sdk/apps/qml/QtQuick/LayoutMirroring#enabled-prop>`__
+:ref:`LayoutMirroring::enabled <sdk_qtquick_layoutmirroring#enabled-prop>`
 to mirror application layouts, the horizontal alignment of text will
 also be mirrored. However, the property ``horizontalAlignment`` will
 remain unchanged. To query the effective horizontal alignment of Text,
 use the read-only property ``effectiveHorizontalAlignment``.
 
 | 
+
+.. _sdk_qtquick_text_elide-prop:
 
 +--------------------------------------------------------------------------+
 |        \ elide : enumeration                                             |
@@ -282,10 +292,10 @@ Eliding can be:
 -  Text.ElideRight
 
 If this property is set to Text.ElideRight, it can be used with
-`wrapped </sdk/apps/qml/QtQuick/Text#wrapMode-prop>`__ text. The text
-will only elide if ``maximumLineCount``, or ``height`` has been set. If
-both ``maximumLineCount`` and ``height`` are set, ``maximumLineCount``
-will apply unless the lines do not fit in the height allowed.
+:ref:`wrapped <sdk_qtquick_text#wrapMode-prop>` text. The text will only
+elide if ``maximumLineCount``, or ``height`` has been set. If both
+``maximumLineCount`` and ``height`` are set, ``maximumLineCount`` will
+apply unless the lines do not fit in the height allowed.
 
 If the text is a multi-length string, and the mode is not
 ``Text.ElideNone``, the first string that fits will be used, otherwise
@@ -297,6 +307,8 @@ with ``"\u009C"`` or ``"\x9C"``).
 
 | 
 
+.. _sdk_qtquick_text_font.bold-prop:
+
 +--------------------------------------------------------------------------+
 |        \ font.bold : bool                                                |
 +--------------------------------------------------------------------------+
@@ -304,6 +316,8 @@ with ``"\u009C"`` or ``"\x9C"``).
 Sets whether the font weight is bold.
 
 | 
+
+.. _sdk_qtquick_text_font.capitalization-prop:
 
 +--------------------------------------------------------------------------+
 |        \ font.capitalization : enumeration                               |
@@ -328,6 +342,8 @@ Sets the capitalization for the text.
 
 | 
 
+.. _sdk_qtquick_text_font.family-prop:
+
 +--------------------------------------------------------------------------+
 |        \ font.family : string                                            |
 +--------------------------------------------------------------------------+
@@ -342,6 +358,8 @@ font matching algorithm.
 
 | 
 
+.. _sdk_qtquick_text_font.italic-prop:
+
 +--------------------------------------------------------------------------+
 |        \ font.italic : bool                                              |
 +--------------------------------------------------------------------------+
@@ -349,6 +367,8 @@ font matching algorithm.
 Sets whether the font has an italic style.
 
 | 
+
+.. _sdk_qtquick_text_font.letterSpacing-prop:
 
 +--------------------------------------------------------------------------+
 |        \ font.letterSpacing : real                                       |
@@ -362,6 +382,8 @@ corresponding pixels; a negative value decreases the spacing.
 
 | 
 
+.. _sdk_qtquick_text_font.pixelSize-prop:
+
 +--------------------------------------------------------------------------+
 |        \ font.pixelSize : int                                            |
 +--------------------------------------------------------------------------+
@@ -373,6 +395,8 @@ to set the size of the font in a device independent manner.
 
 | 
 
+.. _sdk_qtquick_text_font.pointSize-prop:
+
 +--------------------------------------------------------------------------+
 |        \ font.pointSize : real                                           |
 +--------------------------------------------------------------------------+
@@ -380,6 +404,8 @@ to set the size of the font in a device independent manner.
 Sets the font size in points. The point size must be greater than zero.
 
 | 
+
+.. _sdk_qtquick_text_font.strikeout-prop:
 
 +--------------------------------------------------------------------------+
 |        \ font.strikeout : bool                                           |
@@ -389,6 +415,8 @@ Sets whether the font has a strikeout style.
 
 | 
 
+.. _sdk_qtquick_text_font.underline-prop:
+
 +--------------------------------------------------------------------------+
 |        \ font.underline : bool                                           |
 +--------------------------------------------------------------------------+
@@ -396,6 +424,8 @@ Sets whether the font has a strikeout style.
 Sets whether the text is underlined.
 
 | 
+
+.. _sdk_qtquick_text_font.weight-prop:
 
 +--------------------------------------------------------------------------+
 |        \ font.weight : enumeration                                       |
@@ -417,6 +447,8 @@ The weight can be one of:
 
 | 
 
+.. _sdk_qtquick_text_font.wordSpacing-prop:
+
 +--------------------------------------------------------------------------+
 |        \ font.wordSpacing : real                                         |
 +--------------------------------------------------------------------------+
@@ -430,6 +462,8 @@ accordingly.
 
 | 
 
+.. _sdk_qtquick_text_fontSizeMode-prop:
+
 +--------------------------------------------------------------------------+
 |        \ fontSizeMode : enumeration                                      |
 +--------------------------------------------------------------------------+
@@ -438,10 +472,8 @@ This property specifies how the font size of the displayed text is
 determined. The possible values are:
 
 -  Text.FixedSize (default) - The size specified by
-   `font.pixelSize </sdk/apps/qml/QtQuick/Text#font.pixelSize-prop>`__
-   or
-   `font.pointSize </sdk/apps/qml/QtQuick/Text#font.pointSize-prop>`__
-   is used.
+   :ref:`font.pixelSize <sdk_qtquick_text#font.pixelSize-prop>` or
+   :ref:`font.pointSize <sdk_qtquick_text#font.pointSize-prop>` is used.
 -  Text.HorizontalFit - The largest size up to the size specified that
    fits within the width of the item without wrapping is used.
 -  Text.VerticalFit - The largest size up to the size specified that
@@ -450,13 +482,11 @@ determined. The possible values are:
    the width and height of the item is used.
 
 The font size of fitted text has a minimum bound specified by the
-`minimumPointSize </sdk/apps/qml/QtQuick/Text#minimumPointSize-prop>`__
-or
-`minimumPixelSize </sdk/apps/qml/QtQuick/Text#minimumPixelSize-prop>`__
-property and maximum bound specified by either the
-`font.pointSize </sdk/apps/qml/QtQuick/Text#font.pointSize-prop>`__ or
-`font.pixelSize </sdk/apps/qml/QtQuick/Text#font.pixelSize-prop>`__
-properties.
+:ref:`minimumPointSize <sdk_qtquick_text#minimumPointSize-prop>` or
+:ref:`minimumPixelSize <sdk_qtquick_text#minimumPixelSize-prop>` property
+and maximum bound specified by either the
+:ref:`font.pointSize <sdk_qtquick_text#font.pointSize-prop>` or
+:ref:`font.pixelSize <sdk_qtquick_text#font.pixelSize-prop>` properties.
 
 .. code:: qml
 
@@ -464,9 +494,11 @@ properties.
 
 If the text does not fit within the item bounds with the minimum font
 size the text will be elided as per the
-`elide </sdk/apps/qml/QtQuick/Text#elide-prop>`__ property.
+:ref:`elide <sdk_qtquick_text#elide-prop>` property.
 
 | 
+
+.. _sdk_qtquick_text_horizontalAlignment-prop:
 
 +--------------------------------------------------------------------------+
 |        \ horizontalAlignment : enumeration                               |
@@ -486,19 +518,20 @@ The valid values for ``verticalAlignment`` are ``Text.AlignTop``,
 Note that for a single line of text, the size of the text is the area of
 the text. In this common case, all alignments are equivalent. If you
 want the text to be, say, centered in its parent, then you will need to
-either modify the
-`Item::anchors </sdk/apps/qml/QtQuick/Item#anchors-prop>`__, or set
-horizontalAlignment to Text.AlignHCenter and bind the width to that of
-the parent.
+either modify the :ref:`Item::anchors <sdk_qtquick_item#anchors-prop>`, or
+set horizontalAlignment to Text.AlignHCenter and bind the width to that
+of the parent.
 
 When using the attached property
-`LayoutMirroring::enabled </sdk/apps/qml/QtQuick/LayoutMirroring#enabled-prop>`__
+:ref:`LayoutMirroring::enabled <sdk_qtquick_layoutmirroring#enabled-prop>`
 to mirror application layouts, the horizontal alignment of text will
 also be mirrored. However, the property ``horizontalAlignment`` will
 remain unchanged. To query the effective horizontal alignment of Text,
 use the read-only property ``effectiveHorizontalAlignment``.
 
 | 
+
+.. _sdk_qtquick_text_hoveredLink-prop:
 
 +--------------------------------------------------------------------------+
 |        \ hoveredLink : string                                            |
@@ -510,11 +543,12 @@ the *hoveredLink* string provides access to the particular link.
 
 This QML property was introduced in Qt 5.2.
 
-**See also**
-`linkHovered </sdk/apps/qml/QtQuick/Text#linkHovered-signal>`__ and
-`linkAt() </sdk/apps/qml/QtQuick/Text#linkAt-method>`__.
+**See also** :ref:`linkHovered <sdk_qtquick_text#linkHovered-signal>` and
+:ref:`linkAt() <sdk_qtquick_text#linkAt-method>`.
 
 | 
+
+.. _sdk_qtquick_text_lineCount-prop:
 
 +--------------------------------------------------------------------------+
 |        \ lineCount : int                                                 |
@@ -525,9 +559,11 @@ Returns the number of lines visible in the text item.
 This property is not supported for rich text.
 
 **See also**
-`maximumLineCount </sdk/apps/qml/QtQuick/Text#maximumLineCount-prop>`__.
+:ref:`maximumLineCount <sdk_qtquick_text#maximumLineCount-prop>`.
 
 | 
+
+.. _sdk_qtquick_text_lineHeight-prop:
 
 +--------------------------------------------------------------------------+
 |        \ lineHeight : real                                               |
@@ -535,12 +571,14 @@ This property is not supported for rich text.
 
 Sets the line height for the text. The value can be in pixels or a
 multiplier depending on
-`lineHeightMode </sdk/apps/qml/QtQuick/Text#lineHeightMode-prop>`__.
+:ref:`lineHeightMode <sdk_qtquick_text#lineHeightMode-prop>`.
 
 The default value is a multiplier of 1.0. The line height must be a
 positive value.
 
 | 
+
+.. _sdk_qtquick_text_lineHeightMode-prop:
 
 +--------------------------------------------------------------------------+
 |        \ lineHeightMode : enumeration                                    |
@@ -557,6 +595,8 @@ values are:
 
 | 
 
+.. _sdk_qtquick_text_linkColor-prop:
+
 +--------------------------------------------------------------------------+
 |        \ linkColor : color                                               |
 +--------------------------------------------------------------------------+
@@ -564,11 +604,13 @@ values are:
 The color of links in the text.
 
 This property works with the StyledText
-`textFormat </sdk/apps/qml/QtQuick/Text#textFormat-prop>`__, but not
-with RichText. Link color in RichText can be specified by including CSS
-style tags in the text.
+:ref:`textFormat <sdk_qtquick_text#textFormat-prop>`, but not with
+RichText. Link color in RichText can be specified by including CSS style
+tags in the text.
 
 | 
+
+.. _sdk_qtquick_text_maximumLineCount-prop:
 
 +--------------------------------------------------------------------------+
 |        \ maximumLineCount : int                                          |
@@ -581,40 +623,44 @@ integer.
 
 This property is not supported for rich text.
 
-**See also** `lineCount </sdk/apps/qml/QtQuick/Text#lineCount-prop>`__
-and `elide </sdk/apps/qml/QtQuick/Text#elide-prop>`__.
+**See also** :ref:`lineCount <sdk_qtquick_text#lineCount-prop>` and
+:ref:`elide <sdk_qtquick_text#elide-prop>`.
 
 | 
+
+.. _sdk_qtquick_text_minimumPixelSize-prop:
 
 +--------------------------------------------------------------------------+
 |        \ minimumPixelSize : int                                          |
 +--------------------------------------------------------------------------+
 
 This property specifies the minimum font pixel size of text scaled by
-the `fontSizeMode </sdk/apps/qml/QtQuick/Text#fontSizeMode-prop>`__
-property.
+the :ref:`fontSizeMode <sdk_qtquick_text#fontSizeMode-prop>` property.
 
-If the `fontSizeMode </sdk/apps/qml/QtQuick/Text#fontSizeMode-prop>`__
-is Text.FixedSize or the
-`font.pixelSize </sdk/apps/qml/QtQuick/Text#font.pixelSize-prop>`__ is
--1 this property is ignored.
+If the :ref:`fontSizeMode <sdk_qtquick_text#fontSizeMode-prop>` is
+Text.FixedSize or the
+:ref:`font.pixelSize <sdk_qtquick_text#font.pixelSize-prop>` is -1 this
+property is ignored.
 
 | 
+
+.. _sdk_qtquick_text_minimumPointSize-prop:
 
 +--------------------------------------------------------------------------+
 |        \ minimumPointSize : int                                          |
 +--------------------------------------------------------------------------+
 
 This property specifies the minimum font point size of text scaled by
-the `fontSizeMode </sdk/apps/qml/QtQuick/Text#fontSizeMode-prop>`__
-property.
+the :ref:`fontSizeMode <sdk_qtquick_text#fontSizeMode-prop>` property.
 
-If the `fontSizeMode </sdk/apps/qml/QtQuick/Text#fontSizeMode-prop>`__
-is Text.FixedSize or the
-`font.pointSize </sdk/apps/qml/QtQuick/Text#font.pointSize-prop>`__ is
--1 this property is ignored.
+If the :ref:`fontSizeMode <sdk_qtquick_text#fontSizeMode-prop>` is
+Text.FixedSize or the
+:ref:`font.pointSize <sdk_qtquick_text#font.pointSize-prop>` is -1 this
+property is ignored.
 
 | 
+
+.. _sdk_qtquick_text_renderType-prop:
 
 +--------------------------------------------------------------------------+
 |        \ renderType : enumeration                                        |
@@ -634,6 +680,8 @@ NativeRendering render type will lend poor and sometimes pixelated
 results.
 
 | 
+
+.. _sdk_qtquick_text_style-prop:
 
 +--------------------------------------------------------------------------+
 |        \ style : enumeration                                             |
@@ -661,6 +709,8 @@ Supported text styles are:
 
 | 
 
+.. _sdk_qtquick_text_styleColor-prop:
+
 +--------------------------------------------------------------------------+
 |        \ styleColor : color                                              |
 +--------------------------------------------------------------------------+
@@ -675,9 +725,11 @@ is not used at all.
 
     Text { font.pointSize: 18; text: "hello"; style: Text.Raised; styleColor: "gray" }
 
-**See also** `style </sdk/apps/qml/QtQuick/Text#style-prop>`__.
+**See also** :ref:`style <sdk_qtquick_text#style-prop>`.
 
 | 
+
+.. _sdk_qtquick_text_text-prop:
 
 +--------------------------------------------------------------------------+
 |        \ text : string                                                   |
@@ -690,6 +742,8 @@ treated as styled text. This determination is made using
 Qt::mightBeRichText().
 
 | 
+
+.. _sdk_qtquick_text_textFormat-prop:
 
 +--------------------------------------------------------------------------+
 |        \ textFormat : enumeration                                        |
@@ -733,6 +787,8 @@ styling markup, in the style of HTML 3.2:
 ``Text.StyledText`` parser is strict, requiring tags to be correctly
 nested.
 
+.. _sdk_qtquick_text_.. code-prop:
+
 +--------------------------------------+--------------------------------------+
 | .. code:: qml                        | |image2|                             |
 |                                      |                                      |
@@ -765,21 +821,25 @@ Text.StyledText instead, as they offer better performance.
 
 | 
 
+.. _sdk_qtquick_text_truncated-prop:
+
 +--------------------------------------------------------------------------+
 |        \ truncated : bool                                                |
 +--------------------------------------------------------------------------+
 
 Returns true if the text has been truncated due to
-`maximumLineCount </sdk/apps/qml/QtQuick/Text#maximumLineCount-prop>`__
-or `elide </sdk/apps/qml/QtQuick/Text#elide-prop>`__.
+:ref:`maximumLineCount <sdk_qtquick_text#maximumLineCount-prop>` or
+:ref:`elide <sdk_qtquick_text#elide-prop>`.
 
 This property is not supported for rich text.
 
 **See also**
-`maximumLineCount </sdk/apps/qml/QtQuick/Text#maximumLineCount-prop>`__
-and `elide </sdk/apps/qml/QtQuick/Text#elide-prop>`__.
+:ref:`maximumLineCount <sdk_qtquick_text#maximumLineCount-prop>` and
+:ref:`elide <sdk_qtquick_text#elide-prop>`.
 
 | 
+
+.. _sdk_qtquick_text_verticalAlignment-prop:
 
 +--------------------------------------------------------------------------+
 |        \ verticalAlignment : enumeration                                 |
@@ -799,19 +859,20 @@ The valid values for ``verticalAlignment`` are ``Text.AlignTop``,
 Note that for a single line of text, the size of the text is the area of
 the text. In this common case, all alignments are equivalent. If you
 want the text to be, say, centered in its parent, then you will need to
-either modify the
-`Item::anchors </sdk/apps/qml/QtQuick/Item#anchors-prop>`__, or set
-`horizontalAlignment </sdk/apps/qml/QtQuick/Text#horizontalAlignment-prop>`__
+either modify the :ref:`Item::anchors <sdk_qtquick_item#anchors-prop>`, or
+set :ref:`horizontalAlignment <sdk_qtquick_text#horizontalAlignment-prop>`
 to Text.AlignHCenter and bind the width to that of the parent.
 
 When using the attached property
-`LayoutMirroring::enabled </sdk/apps/qml/QtQuick/LayoutMirroring#enabled-prop>`__
+:ref:`LayoutMirroring::enabled <sdk_qtquick_layoutmirroring#enabled-prop>`
 to mirror application layouts, the horizontal alignment of text will
 also be mirrored. However, the property ``horizontalAlignment`` will
 remain unchanged. To query the effective horizontal alignment of Text,
 use the read-only property ``effectiveHorizontalAlignment``.
 
 | 
+
+.. _sdk_qtquick_text_wrapMode-prop:
 
 +--------------------------------------------------------------------------+
 |        \ wrapMode : enumeration                                          |
@@ -823,12 +884,11 @@ of:
 
 -  Text.NoWrap (default) - no wrapping will be performed. If the text
    contains insufficient newlines, then
-   `contentWidth </sdk/apps/qml/QtQuick/Text#contentWidth-prop>`__ will
-   exceed a set width.
+   :ref:`contentWidth <sdk_qtquick_text#contentWidth-prop>` will exceed a
+   set width.
 -  Text.WordWrap - wrapping is done on word boundaries only. If a word
-   is too long,
-   `contentWidth </sdk/apps/qml/QtQuick/Text#contentWidth-prop>`__ will
-   exceed a set width.
+   is too long, :ref:`contentWidth <sdk_qtquick_text#contentWidth-prop>`
+   will exceed a set width.
 -  Text.WrapAnywhere - wrapping is done at any point on a line, even if
    it occurs in the middle of a word.
 -  Text.Wrap - if possible, wrapping occurs at a word boundary;
@@ -839,6 +899,8 @@ of:
 
 Signal Documentation
 --------------------
+
+.. _sdk_qtquick_text_lineLaidOut(object *line*)-prop:
 
 +--------------------------------------------------------------------------+
 |        \ lineLaidOut(object *line*)                                      |
@@ -876,6 +938,8 @@ The corresponding handler is ``onLineLaidOut``.
 
 | 
 
+.. _sdk_qtquick_text_linkActivated(string *link*)-prop:
+
 +--------------------------------------------------------------------------+
 |        \ linkActivated(string *link*)                                    |
 +--------------------------------------------------------------------------+
@@ -893,7 +957,7 @@ provides access to the particular link.
         }
 
 The example code will display the text "See the `Qt Project
-website <http://qt-project.org>`__."
+website <http://qt-project.org>`_ ."
 
 Clicking on the highlighted link will output
 ``http://qt-project.org link activated`` to the console.
@@ -901,6 +965,8 @@ Clicking on the highlighted link will output
 The corresponding handler is ``onLinkActivated``.
 
 | 
+
+.. _sdk_qtquick_text_linkHovered-method:
 
 +--------------------------------------------------------------------------+
 |        \ linkHovered(string *link*)                                      |
@@ -914,14 +980,15 @@ The corresponding handler is ``onLinkHovered``.
 
 This QML signal was introduced in Qt 5.2.
 
-**See also**
-`hoveredLink </sdk/apps/qml/QtQuick/Text#hoveredLink-prop>`__ and
-`linkAt() </sdk/apps/qml/QtQuick/Text#linkAt-method>`__.
+**See also** :ref:`hoveredLink <sdk_qtquick_text#hoveredLink-prop>` and
+:ref:`linkAt() <sdk_qtquick_text#linkAt-method>`.
 
 | 
 
 Method Documentation
 --------------------
+
+.. _sdk_qtquick_text_doLayout-method:
 
 +--------------------------------------------------------------------------+
 |        \ doLayout()                                                      |
@@ -930,6 +997,8 @@ Method Documentation
 Triggers a re-layout of the displayed text.
 
 | 
+
+.. _sdk_qtquick_text_linkAt-method:
 
 +--------------------------------------------------------------------------+
 |        \ linkAt(real *x*, real *y*)                                      |
@@ -940,12 +1009,11 @@ empty string if no link exists at that point.
 
 This QML method was introduced in Qt 5.3.
 
-**See also**
-`hoveredLink </sdk/apps/qml/QtQuick/Text#hoveredLink-prop>`__.
+**See also** :ref:`hoveredLink <sdk_qtquick_text#hoveredLink-prop>`.
 
 | 
 
-.. |image0| image:: /media/sdk/apps/qml/QtQuick/Text/images/declarative-text.png
-.. |image1| image:: /media/sdk/apps/qml/QtQuick/Text/images/declarative-textstyle.png
-.. |image2| image:: /media/sdk/apps/qml/QtQuick/Text/images/declarative-textformat.png
+.. |image0| image:: /mediasdk_qtquick_textimages/declarative-text.png
+.. |image1| image:: /mediasdk_qtquick_textimages/declarative-textstyle.png
+.. |image2| image:: /mediasdk_qtquick_textimages/declarative-textformat.png
 

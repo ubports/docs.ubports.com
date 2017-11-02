@@ -1,3 +1,7 @@
+.. _sdk_qtorganizer_todo:
+QtOrganizer Todo
+================
+
 The Todo element provides a task which should be completed.
 
 +---------------------+--------------------------+
@@ -7,41 +11,40 @@ The Todo element provides a task which should be completed.
 Properties
 ----------
 
--  ****`allDay </sdk/apps/qml/QtOrganizer/Todo#allDay-prop>`__**** :
-   bool
--  ****`dueDateTime </sdk/apps/qml/QtOrganizer/Todo#dueDateTime-prop>`__****
+-  :ref:`allDay <sdk_qtorganizer_todo_allDay-prop>` : bool
+-  :ref:`dueDateTime <sdk_qtorganizer_todo_dueDateTime-prop>` :
+   date
+-  :ref:`finishedDateTime <sdk_qtorganizer_todo_finishedDateTime-prop>`
    : date
--  ****`finishedDateTime </sdk/apps/qml/QtOrganizer/Todo#finishedDateTime-prop>`__****
-   : date
--  ****`percentageComplete </sdk/apps/qml/QtOrganizer/Todo#percentageComplete-prop>`__****
+-  :ref:`percentageComplete <sdk_qtorganizer_todo_percentageComplete-prop>`
    : int
--  ****`priority </sdk/apps/qml/QtOrganizer/Todo#priority-prop>`__**** :
+-  :ref:`priority <sdk_qtorganizer_todo_priority-prop>` :
    enumeration
--  ****`recurrence </sdk/apps/qml/QtOrganizer/Todo#recurrence-prop>`__****
-   : Recurrence
--  ****`startDateTime </sdk/apps/qml/QtOrganizer/Todo#startDateTime-prop>`__****
-   : date
--  ****`status </sdk/apps/qml/QtOrganizer/Todo#status-prop>`__**** :
-   enumeration
+-  :ref:`recurrence <sdk_qtorganizer_todo_recurrence-prop>` :
+   Recurrence
+-  :ref:`startDateTime <sdk_qtorganizer_todo_startDateTime-prop>` :
+   date
+-  :ref:`status <sdk_qtorganizer_todo_status-prop>` : enumeration
 
 Signals
 -------
 
--  ****`onItemChanged </sdk/apps/qml/QtOrganizer/Todo#onItemChanged-signal>`__****\ ()
+-  :ref:`onItemChanged <sdk_qtorganizer_todo_onItemChanged-signal>`\ ()
 
 Detailed Description
 --------------------
 
-**See also**
-`OrganizerItem </sdk/apps/qml/QtOrganizer/OrganizerItem/>`__,
-`Event </sdk/apps/qml/QtOrganizer/Event/>`__,
-`EventOccurrence </sdk/apps/qml/QtOrganizer/EventOccurrence/>`__,
-`Journal </sdk/apps/qml/QtOrganizer/Journal/>`__,
-`TodoOccurrence </sdk/apps/qml/QtOrganizer/TodoOccurrence/>`__,
-`Note </sdk/apps/qml/QtOrganizer/Note/>`__, and QOrganizerTodo.
+**See also** :ref:`OrganizerItem <sdk_qtorganizer_organizeritem>`,
+:ref:`Event <sdk_qtorganizer_event>`,
+:ref:`EventOccurrence <sdk_qtorganizer_eventoccurrence>`,
+:ref:`Journal <sdk_qtorganizer_journal>`,
+:ref:`TodoOccurrence <sdk_qtorganizer_todooccurrence>`,
+:ref:`Note <sdk_qtorganizer_note>`, and QOrganizerTodo.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtorganizer_todo_allDay-prop:
 
 +--------------------------------------------------------------------------+
 |        \ allDay : bool                                                   |
@@ -54,6 +57,8 @@ be an all-day item.
 
 | 
 
+.. _sdk_qtorganizer_todo_dueDateTime-prop:
+
 +--------------------------------------------------------------------------+
 |        \ dueDateTime : date                                              |
 +--------------------------------------------------------------------------+
@@ -61,6 +66,8 @@ be an all-day item.
 This property holds the date time by which the task should be completed.
 
 | 
+
+.. _sdk_qtorganizer_todo_finishedDateTime-prop:
 
 +--------------------------------------------------------------------------+
 |        \ finishedDateTime : date                                         |
@@ -71,6 +78,8 @@ if known.
 
 | 
 
+.. _sdk_qtorganizer_todo_percentageComplete-prop:
+
 +--------------------------------------------------------------------------+
 |        \ percentageComplete : int                                        |
 +--------------------------------------------------------------------------+
@@ -79,6 +88,8 @@ This property holds the percentage of progress completed on the task
 described by the todo item.
 
 | 
+
+.. _sdk_qtorganizer_todo_priority-prop:
 
 +--------------------------------------------------------------------------+
 |        \ priority : enumeration                                          |
@@ -100,14 +111,17 @@ of:
 
 | 
 
+.. _sdk_qtorganizer_todo_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ recurrence :                                                    |
-| `Recurrence </sdk/apps/qml/QtOrganizer/Recurrence/>`__                   |
+| :ref:` <>`\ recurrence : `Recurrence <sdk_qtorganizer_recurrence>`     |
 +--------------------------------------------------------------------------+
 
 This property holds the recurrence element of the todo item.
 
 | 
+
+.. _sdk_qtorganizer_todo_startDateTime-prop:
 
 +--------------------------------------------------------------------------+
 |        \ startDateTime : date                                            |
@@ -117,6 +131,8 @@ This property holds the date time at which the task should be started.
 
 | 
 
+.. _sdk_qtorganizer_todo_status-prop:
+
 +--------------------------------------------------------------------------+
 |        \ status : enumeration                                            |
 +--------------------------------------------------------------------------+
@@ -124,20 +140,22 @@ This property holds the date time at which the task should be started.
 This property holds the progress status of the task described by the
 todo. The value can be one of:
 
--  `TodoProgress </sdk/apps/qml/QtOrganizer/TodoProgress/>`__.NotStarted
--  `TodoProgress </sdk/apps/qml/QtOrganizer/TodoProgress/>`__.InProgress
--  `TodoProgress </sdk/apps/qml/QtOrganizer/TodoProgress/>`__.Complete
+-  :ref:`TodoProgress <sdk_qtorganizer_todoprogress>`.NotStarted
+-  :ref:`TodoProgress <sdk_qtorganizer_todoprogress>`.InProgress
+-  :ref:`TodoProgress <sdk_qtorganizer_todoprogress>`.Complete
 
 | 
 
 Signal Documentation
 --------------------
 
+.. _sdk_qtorganizer_todo_onItemChanged()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ onItemChanged()                                                 |
 +--------------------------------------------------------------------------+
 
 **See also**
-`OrganizerItem::onItemChanged </sdk/apps/qml/QtOrganizer/OrganizerItem#onItemChanged-signal>`__.
+:ref:`OrganizerItem::onItemChanged <sdk_qtorganizer_organizeritem#onItemChanged-signal>`.
 
 | 

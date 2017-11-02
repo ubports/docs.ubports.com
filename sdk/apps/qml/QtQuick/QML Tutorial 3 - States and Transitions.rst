@@ -1,3 +1,7 @@
+.. _sdk_qtquick_qml_tutorial_3_-_states_and_transitions:
+QtQuick QML Tutorial 3 - States and Transitions
+===============================================
+
 
 
 In this chapter, we make this example a little bit more dynamic by
@@ -60,8 +64,8 @@ Here is the QML code:
             }
 
 First, we create a new *down* state for our text type. This state will
-be activated when the `MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__
-is pressed, and deactivated when it is released.
+be activated when the :ref:`MouseArea <sdk_qtquick_mousearea>` is pressed,
+and deactivated when it is released.
 
 The *down* state includes a set of property changes from our implicit
 *default state* (the items as they were initially defined in the QML).
@@ -90,19 +94,17 @@ back from the *down* state to the default state, we set ``reversible``
 to ``true``. This is equivalent to writing the two transitions
 separately.
 
-The `ParallelAnimation </sdk/apps/qml/QtQuick/ParallelAnimation/>`__
-type makes sure that the two types of animations (number and color)
-start at the same time. We could also run them one after the other by
-using
-`SequentialAnimation </sdk/apps/qml/QtQuick/SequentialAnimation/>`__
-instead.
+The :ref:`ParallelAnimation <sdk_qtquick_parallelanimation>` type makes
+sure that the two types of animations (number and color) start at the
+same time. We could also run them one after the other by using
+:ref:`SequentialAnimation <sdk_qtquick_sequentialanimation>` instead.
 
 For more details on states and transitions, see `Qt Quick
-States </sdk/apps/qml/QtQuick/qtquick-statesanimations-states/>`__ and
+States </sdk/apps/qml/QtQuick/qtquick-statesanimations-states/>`_  and
 the states and transitions example.
 
 `QML Tutorial 2 - QML
-Components </sdk/apps/qml/QtQuick/qml-tutorial2/>`__
+Components </sdk/apps/qml/QtQuick/qml-tutorial2/>`_ 
 
 .. |image0| image:: /media/sdk/apps/qml/qml-tutorial3/images/declarative-tutorial3_animation.gif
 

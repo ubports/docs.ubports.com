@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_inversemouse:
+Ubuntu.Components InverseMouse
+==============================
+
 Attached object filtering mouse events occured outside the owner.
 
 +---------------------+--------------------------------+

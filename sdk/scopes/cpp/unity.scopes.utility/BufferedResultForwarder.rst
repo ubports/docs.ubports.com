@@ -1,8 +1,12 @@
+.. _sdk_unity_scopes_utility_bufferedresultforwarder:
+unity.scopes.utility BufferedResultForwarder
+============================================
+
 Base class for a client to receive and buffer the results of a query
 until another
-`BufferedResultForwarder </sdk/scopes/cpp/unity.scopes.utility/BufferedResultForwarder/>`__
+:ref:`BufferedResultForwarder <sdk_unity_scopes_utility_bufferedresultforwarder>`
 becomes ready.
-`More... </sdk/scopes/cpp/unity.scopes.utility/BufferedResultForwarder#details>`__
+:ref:`More... <sdk_unity_scopes_utility_bufferedresultforwarder#details>`
 
 Inheritance diagram for unity::scopes::utility::BufferedResultForwarder:
 
@@ -15,10 +19,10 @@ Inheritance diagram for unity::scopes::utility::BufferedResultForwarder:
 
  
 
-`BufferedResultForwarder </sdk/scopes/cpp/unity.scopes.utility/BufferedResultForwarder#acd998587334a306b04e3e3a5e548ff93>`__
-(`unity::scopes::SearchReplyProxy </sdk/scopes/cpp/unity.scopes#a9cd604d9b842ac3b2b8636c2165dec1f>`__
+:ref:`BufferedResultForwarder <sdk_unity_scopes_utility_bufferedresultforwarder#acd998587334a306b04e3e3a5e548ff93>`
+(:ref:`unity::scopes::SearchReplyProxy <sdk_unity_scopes#a9cd604d9b842ac3b2b8636c2165dec1f>`
 const
-&\ `upstream </sdk/scopes/cpp/unity.scopes.utility/BufferedResultForwarder#a55fd083a188f5dd2a940b1f280409347>`__,
+&\ :ref:`upstream <sdk_unity_scopes_utility_bufferedresultforwarder#a55fd083a188f5dd2a940b1f280409347>`,
 BufferedResultForwarder::SPtr const
 &next\_forwarder=BufferedResultForwarder::SPtr())
 
@@ -31,8 +35,8 @@ BufferedResultForwarder::SPtr const
 
 void 
 
-`push </sdk/scopes/cpp/unity.scopes.utility/BufferedResultForwarder#af712d8a72e6cd0818ab9d2c3274b25e6>`__
-(`CategorisedResult </sdk/scopes/cpp/unity.scopes.CategorisedResult/>`__
+:ref:`push <sdk_unity_scopes_utility_bufferedresultforwarder#af712d8a72e6cd0818ab9d2c3274b25e6>`
+(`CategorisedResult </sdk/scopes/cpp/unity.scopes.CategorisedResult/>`_ 
 result) override
 
  
@@ -43,7 +47,7 @@ result) override
 
 bool 
 
-`is\_ready </sdk/scopes/cpp/unity.scopes.utility/BufferedResultForwarder#a57ee331710c5bbaa806082b2dd8abc23>`__
+:ref:`is\_ready <sdk_unity_scopes_utility_bufferedresultforwarder#a57ee331710c5bbaa806082b2dd8abc23>`
 () const
 
  
@@ -53,11 +57,11 @@ bool 
  
 
 |-| Public Member Functions inherited from
-`unity::scopes::SearchListenerBase </sdk/scopes/cpp/unity.scopes.SearchListenerBase/>`__
+`unity::scopes::SearchListenerBase </sdk/scopes/cpp/unity.scopes.SearchListenerBase/>`_ 
 
 virtual void 
 
-`push </sdk/scopes/cpp/unity.scopes.SearchListenerBase#a93ba33c6e1a0064ac9756134ccb11705>`__
+`push </sdk/scopes/cpp/unity.scopes.SearchListenerBase/#a93ba33c6e1a0064ac9756134ccb11705>`_ 
 (Department::SCPtr const &parent)
 
  
@@ -69,7 +73,7 @@ virtual void 
 
 virtual void 
 
-`push </sdk/scopes/cpp/unity.scopes.SearchListenerBase#ab96864e4b3d6718e4b87b81aa14657e3>`__
+`push </sdk/scopes/cpp/unity.scopes.SearchListenerBase/#ab96864e4b3d6718e4b87b81aa14657e3>`_ 
 (experimental::Annotation annotation)
 
  
@@ -81,7 +85,7 @@ virtual void 
 
 virtual void 
 
-`push </sdk/scopes/cpp/unity.scopes.SearchListenerBase#af246bd38c8ba9cec36dfae3d0607dbfc>`__
+`push </sdk/scopes/cpp/unity.scopes.SearchListenerBase/#af246bd38c8ba9cec36dfae3d0607dbfc>`_ 
 (Category::SCPtr const &category)
 
  
@@ -93,11 +97,10 @@ virtual void 
 
 virtual void 
 
-`push </sdk/scopes/cpp/unity.scopes.SearchListenerBase#ac7904ac1f83fe60cddc8f08c6e7d971b>`__
-(`Filters </sdk/scopes/cpp/unity.scopes#adab58c13cf604e0e64bd6b1a745364d3>`__
-const &filters,
-`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ const
-&filter\_state)
+`push </sdk/scopes/cpp/unity.scopes.SearchListenerBase/#ac7904ac1f83fe60cddc8f08c6e7d971b>`_ 
+(:ref:`Filters <sdk_unity_scopes#adab58c13cf604e0e64bd6b1a745364d3>` const
+&filters, `FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_ 
+const &filter\_state)
 
  
 
@@ -107,9 +110,9 @@ const &filters,
 
 virtual void 
 
-`push </sdk/scopes/cpp/unity.scopes.SearchListenerBase#aaf1af46d5d7b1219558f15c22ef85b10>`__
-(`Filters </sdk/scopes/cpp/unity.scopes#adab58c13cf604e0e64bd6b1a745364d3>`__
-const &filters)
+`push </sdk/scopes/cpp/unity.scopes.SearchListenerBase/#aaf1af46d5d7b1219558f15c22ef85b10>`_ 
+(:ref:`Filters <sdk_unity_scopes#adab58c13cf604e0e64bd6b1a745364d3>` const
+&filters)
 
  
 
@@ -118,12 +121,12 @@ const &filters)
  
 
 |-| Public Member Functions inherited from
-`unity::scopes::ListenerBase </sdk/scopes/cpp/unity.scopes.ListenerBase/>`__
+`unity::scopes::ListenerBase </sdk/scopes/cpp/unity.scopes.ListenerBase/>`_ 
 
 virtual void 
 
-`info </sdk/scopes/cpp/unity.scopes.ListenerBase#a3b38fa642754142f40968f3ff8d1bdc8>`__
-(`OperationInfo </sdk/scopes/cpp/unity.scopes.OperationInfo/>`__ const
+`info </sdk/scopes/cpp/unity.scopes.ListenerBase/#a3b38fa642754142f40968f3ff8d1bdc8>`_ 
+(`OperationInfo </sdk/scopes/cpp/unity.scopes.OperationInfo/>`_  const
 &op\_info)
 
  
@@ -138,7 +141,7 @@ virtual void 
 
 void 
 
-`set\_ready </sdk/scopes/cpp/unity.scopes.utility/BufferedResultForwarder#a20816aac742adffdc16b8e8405c61c87>`__
+:ref:`set\_ready <sdk_unity_scopes_utility_bufferedresultforwarder#a20816aac742adffdc16b8e8405c61c87>`
 ()
 
  
@@ -147,9 +150,9 @@ void 
 
  
 
-`unity::scopes::SearchReplyProxy </sdk/scopes/cpp/unity.scopes#a9cd604d9b842ac3b2b8636c2165dec1f>`__ 
+:ref:`unity::scopes::SearchReplyProxy <sdk_unity_scopes#a9cd604d9b842ac3b2b8636c2165dec1f>` 
 
-`upstream </sdk/scopes/cpp/unity.scopes.utility/BufferedResultForwarder#a55fd083a188f5dd2a940b1f280409347>`__
+:ref:`upstream <sdk_unity_scopes_utility_bufferedresultforwarder#a55fd083a188f5dd2a940b1f280409347>`
 () const
 
  
@@ -160,8 +163,8 @@ void 
 
 void 
 
-`finished </sdk/scopes/cpp/unity.scopes.utility/BufferedResultForwarder#a9bd57e76c08a01560a700d665cc40e96>`__
-(`CompletionDetails </sdk/scopes/cpp/unity.scopes.CompletionDetails/>`__
+:ref:`finished <sdk_unity_scopes_utility_bufferedresultforwarder#a9bd57e76c08a01560a700d665cc40e96>`
+(`CompletionDetails </sdk/scopes/cpp/unity.scopes.CompletionDetails/>`_ 
 const &details) override
 
  
@@ -176,19 +179,19 @@ Detailed Description
 
 Base class for a client to receive and buffer the results of a query
 until another
-`BufferedResultForwarder </sdk/scopes/cpp/unity.scopes.utility/BufferedResultForwarder/>`__
+:ref:`BufferedResultForwarder <sdk_unity_scopes_utility_bufferedresultforwarder>`
 becomes ready.
 
 This class implements result buffering, useful for aggregator scopes
 that receive results from multiple child scopes and need to display
 categories in a specific order. The aggregator scope must create an
 instance of
-`BufferedResultForwarder </sdk/scopes/cpp/unity.scopes.utility/BufferedResultForwarder/>`__
+:ref:`BufferedResultForwarder <sdk_unity_scopes_utility_bufferedresultforwarder>`
 for every child scope it queries and chain the instances together in the
 desired order.
 
 The default implementation of
-`BufferedResultForwarder </sdk/scopes/cpp/unity.scopes.utility/BufferedResultForwarder/>`__
+:ref:`BufferedResultForwarder <sdk_unity_scopes_utility_bufferedresultforwarder>`
 forwards the results it receives upstream and declares itself "ready"
 after receiving the first result. The results are then buffered until
 all prior forwarders have declared themselves ready. Buffering is very
@@ -200,9 +203,9 @@ client (displayed) as early as possible.
 The default implementation only pushes results and their categories, but
 ignores departments, filters, and annotations. If you wish to handle and
 forward these, you must to derive your own forwarder from
-`BufferedResultForwarder </sdk/scopes/cpp/unity.scopes.utility/BufferedResultForwarder/>`__
+:ref:`BufferedResultForwarder <sdk_unity_scopes_utility_bufferedresultforwarder>`
 and override the appropropriate methods of the
-`SearchListenerBase </sdk/scopes/cpp/unity.scopes.SearchListenerBase/>`__
+`SearchListenerBase </sdk/scopes/cpp/unity.scopes.SearchListenerBase/>`_ 
 class.
 
 The default implementation buffers a single result before indicating to
@@ -218,7 +221,7 @@ could be A1, B2, B1, A2 (among others).
 If you want to ensure that all categories from child A arrive in a
 particular order, followed by all categories from child B in a
 particular order, you must override
-`push() </sdk/scopes/cpp/unity.scopes.utility/BufferedResultForwarder#af712d8a72e6cd0818ab9d2c3274b25e6>`__
+:ref:`push() <sdk_unity_scopes_utility_bufferedresultforwarder#af712d8a72e6cd0818ab9d2c3274b25e6>`
 to, for example, collapse categories received from a child into a single
 category, or otherwise buffer results yourself until you have
 established the order you need.
@@ -230,10 +233,10 @@ as possible after a query was sent.
 
 If you create a custom implementation of a forwarder, you *must* push
 results via the proxy returned by
-`BufferedResultForwarder::upstream() </sdk/scopes/cpp/unity.scopes.utility/BufferedResultForwarder#a55fd083a188f5dd2a940b1f280409347>`__.
+:ref:`BufferedResultForwarder::upstream() <sdk_unity_scopes_utility_bufferedresultforwarder#a55fd083a188f5dd2a940b1f280409347>`.
 (This is a different proxy than the one that is passed to the
 constructor.) Your forwarder then must declare itself ready by calling
-`BufferedResultForwarder::set\_ready() </sdk/scopes/cpp/unity.scopes.utility/BufferedResultForwarder#a20816aac742adffdc16b8e8405c61c87>`__
+:ref:`BufferedResultForwarder::set\_ready() <sdk_unity_scopes_utility_bufferedresultforwarder#a20816aac742adffdc16b8e8405c61c87>`
 as soon as it knows it will not push results for any new categories. In
 the case where your aggregator aggregates all results from given child
 scope into a single category, you can call ``set_ready()`` as soon as
@@ -244,22 +247,22 @@ creates a separate category for results from each of three children and
 controls the order in which these categories are rendered.
 
 class SearchReceiver : public
-`BufferedResultForwarder </sdk/scopes/cpp/unity.scopes.utility/BufferedResultForwarder#acd998587334a306b04e3e3a5e548ff93>`__
+:ref:`BufferedResultForwarder <sdk_unity_scopes_utility_bufferedresultforwarder#acd998587334a306b04e3e3a5e548ff93>`
 
 {
 
 public:
 
 SearchReceiver(unity::scopes::Category::SCPtr target\_cat,
-`unity::scopes::SearchReplyProxy </sdk/scopes/cpp/unity.scopes#a9cd604d9b842ac3b2b8636c2165dec1f>`__
+:ref:`unity::scopes::SearchReplyProxy <sdk_unity_scopes#a9cd604d9b842ac3b2b8636c2165dec1f>`
 const&
-`upstream </sdk/scopes/cpp/unity.scopes.utility/BufferedResultForwarder#a55fd083a188f5dd2a940b1f280409347>`__,
+:ref:`upstream <sdk_unity_scopes_utility_bufferedresultforwarder#a55fd083a188f5dd2a940b1f280409347>`,
 BufferedResultForwarder::SPtr const&
 
 next\_forwarder = BufferedResultForwarder::SPtr())
 
 :
-`BufferedResultForwarder </sdk/scopes/cpp/unity.scopes.utility/BufferedResultForwarder#acd998587334a306b04e3e3a5e548ff93>`__\ (upstream,
+:ref:`BufferedResultForwarder <sdk_unity_scopes_utility_bufferedresultforwarder#acd998587334a306b04e3e3a5e548ff93>`\ (upstream,
 next\_forwarder),
 
 category\_(target\_cat)
@@ -269,7 +272,7 @@ category\_(target\_cat)
 }
 
 void
-`push </sdk/scopes/cpp/unity.scopes.utility/BufferedResultForwarder#af712d8a72e6cd0818ab9d2c3274b25e6>`__\ (CategorisedResult
+:ref:`push <sdk_unity_scopes_utility_bufferedresultforwarder#af712d8a72e6cd0818ab9d2c3274b25e6>`\ (CategorisedResult
 result) override
 
  {
@@ -277,13 +280,13 @@ result) override
 result.set\_category(category\_); // put all incoming results in single
 category
 
-`upstream </sdk/scopes/cpp/unity.scopes.utility/BufferedResultForwarder#a55fd083a188f5dd2a940b1f280409347>`__\ ()->push(result);
+:ref:`upstream <sdk_unity_scopes_utility_bufferedresultforwarder#a55fd083a188f5dd2a940b1f280409347>`\ ()->push(result);
 // push modified result to the client
 
 // we push into a single target category, so we're ready as soon as we
 received and pushed first result
 
-`set\_ready </sdk/scopes/cpp/unity.scopes.utility/BufferedResultForwarder#a20816aac742adffdc16b8e8405c61c87>`__\ ();
+:ref:`set\_ready <sdk_unity_scopes_utility_bufferedresultforwarder#a20816aac742adffdc16b8e8405c61c87>`\ ();
 
 }
 
@@ -294,7 +297,7 @@ unity::scopes::Category::SCPtr category\_;
 };
 
 void
-AggregatorSearchQueryBase::run(\ `SearchReplyProxy </sdk/scopes/cpp/unity.scopes#a9cd604d9b842ac3b2b8636c2165dec1f>`__
+AggregatorSearchQueryBase::run(\ :ref:`SearchReplyProxy <sdk_unity_scopes#a9cd604d9b842ac3b2b8636c2165dec1f>`
 const& upstream\_reply)
 
 {
@@ -331,18 +334,17 @@ subsearch(scope3proxy, "", scope3fwd);
 }
 
 See also
-    `SearchListenerBase </sdk/scopes/cpp/unity.scopes.SearchListenerBase/>`__.
+    `SearchListenerBase </sdk/scopes/cpp/unity.scopes.SearchListenerBase/>`_ .
 
 Constructor & Destructor Documentation
 --------------------------------------
 
 +--------------------+--------------------+--------------------+--------------------+
 | unity::scopes::uti | (                  | `unity::scopes::Se | *upstream*,        |
-| lity::BufferedResu |                    | archReplyProxy </s |                    |
-| ltForwarder::Buffe |                    | dk/scopes/cpp/unit |                    |
-| redResultForwarder |                    | y.scopes#a9cd604d9 |                    |
-|                    |                    | b842ac3b2b8636c216 |                    |
-|                    |                    | 5dec1f>`__         |                    |
+| lity::BufferedResu |                    | archReplyProxy <sd |                    |
+| ltForwarder::Buffe |                    | k_unity_scopes#a9c |                    |
+| redResultForwarder |                    | d604d9b842ac3b2b86 |                    |
+|                    |                    | 36c2165dec1f>`_    |                    |
 |                    |                    | const &            |                    |
 +--------------------+--------------------+--------------------+--------------------+
 |                    |                    | BufferedResultForw | *next\_forwarder*  |
@@ -357,16 +359,16 @@ Create a forwarder that sends (at least one) result to its upstream
 reply proxy before indicating that it is ready to its follower.
 
 Parameters
-    +-------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-    | upstream          | The reply proxy for the upstream receiver.                                                                                                                                      |
-    +-------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-    | next\_forwarder   | The forwarder that becomes ready once this forwarder calls `set\_ready() </sdk/scopes/cpp/unity.scopes.utility/BufferedResultForwarder#a20816aac742adffdc16b8e8405c61c87>`__.   |
-    +-------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    +-------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | upstream          | The reply proxy for the upstream receiver.                                                                                                                          |
+    +-------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | next\_forwarder   | The forwarder that becomes ready once this forwarder calls :ref:`set\_ready() <sdk_unity_scopes_utility_bufferedresultforwarder#a20816aac742adffdc16b8e8405c61c87>`.   |
+    +-------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Exceptions
-    +-------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-    | unity::LogicException   | when passed next\_forwarder that has already been linked to another `BufferedResultForwarder </sdk/scopes/cpp/unity.scopes.utility/BufferedResultForwarder/>`__.   |
-    +-------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    +-------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | unity::LogicException   | when passed next\_forwarder that has already been linked to another :ref:`BufferedResultForwarder <sdk_unity_scopes_utility_bufferedresultforwarder>`.   |
+    +-------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Member Function Documentation
 -----------------------------
@@ -391,7 +393,7 @@ Member Function Documentation
 | pletionD |              |            |                                      |
 |    |              |                  |                                      |
 | | :finished    |              | etai |                                      |
-| ls/>`__  |              |            |                                      |
+| ls/>`_   |              |            |                                      |
 |    |              |                  |                                      |
 | |              |              | cons |                                      |
 | t &      |              |            |                                      |
@@ -405,11 +407,11 @@ Called once by the scopes runtime after the final result for a request
 was sent.
 
 Calls to
-`finished() </sdk/scopes/cpp/unity.scopes.utility/BufferedResultForwarder#a9bd57e76c08a01560a700d665cc40e96>`__
+:ref:`finished() <sdk_unity_scopes_utility_bufferedresultforwarder#a9bd57e76c08a01560a700d665cc40e96>`
 are made by an arbitrary thread.
 
 Exceptions thrown from
-`finished() </sdk/scopes/cpp/unity.scopes.utility/BufferedResultForwarder#a9bd57e76c08a01560a700d665cc40e96>`__
+:ref:`finished() <sdk_unity_scopes_utility_bufferedresultforwarder#a9bd57e76c08a01560a700d665cc40e96>`
 are ignored.
 
 Parameters
@@ -418,7 +420,7 @@ Parameters
     +-----------+-----------------------------------------------------------------------------------------------------------------------------------------+
 
 Implements
-`unity::scopes::ListenerBase </sdk/scopes/cpp/unity.scopes.ListenerBase#afb44937749b61c9e3ebfa20ec6e4634b>`__.
+`unity::scopes::ListenerBase </sdk/scopes/cpp/unity.scopes.ListenerBase/#afb44937749b61c9e3ebfa20ec6e4634b>`_ .
 
 +----------------+----------------+----------------+----------------+----------------+
 | bool           | (              |                | )              | const          |
@@ -436,7 +438,7 @@ to the upstream proxy immediately.
 
 Returns
     ``true`` if this forwarder called
-    `set\_ready() </sdk/scopes/cpp/unity.scopes.utility/BufferedResultForwarder#a20816aac742adffdc16b8e8405c61c87>`__,
+    :ref:`set\_ready() <sdk_unity_scopes_utility_bufferedresultforwarder#a20816aac742adffdc16b8e8405c61c87>`,
     ``false`` otherwise.
 
 +--------------------------------------+--------------------------------------+
@@ -459,7 +461,7 @@ Returns
 | egorised |              |            |                                      |
 |    |              |                  |                                      |
 | | :push        |              | Resu |                                      |
-| lt/>`__  |              |            |                                      |
+| lt/>`_   |              |            |                                      |
 |    |              |                  |                                      |
 | +--------------+--------------+----- |                                      |
 | ---------+--------------+----------- |                                      |
@@ -481,7 +483,7 @@ Parameters
     +----------+------------------------+
 
 Implements
-`unity::scopes::SearchListenerBase </sdk/scopes/cpp/unity.scopes.SearchListenerBase#a3ebd3e8be67824c7a34068da6075bd99>`__.
+`unity::scopes::SearchListenerBase </sdk/scopes/cpp/unity.scopes.SearchListenerBase/#a3ebd3e8be67824c7a34068da6075bd99>`_ .
 
 +--------------------------------------+--------------------------------------+
 | +----------------+----------------+- | protected                            |
@@ -525,22 +527,19 @@ your forwarder will no longer push results for new categories.
 | | ::SearchReplyP |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
-| | roxy </sdk/sco |                |  |                                      |
+| | roxy <sdk_unit |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
-| | pes/cpp/unity. |                |  |                                      |
+| | y_scopes#a9cd6 |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
-| | scopes#a9cd604 |                |  |                                      |
+| | 04d9b842ac3b2b |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
-| | d9b842ac3b2b86 |                |  |                                      |
+| | 8636c2165dec1f |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
-| | 36c2165dec1f>` |                |  |                                      |
-|                |                |    |                                      |
-|              |                       |                                      |
-| | __             |                |  |                                      |
+| | >`_            |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
 | | unity::scopes: |                |  |                                      |
@@ -572,6 +571,6 @@ proxy is *not* the same proxy as the one passed to the constructor.
 Returns
     The buffered reply proxy.
 
-.. |Inheritance graph| image:: /media/sdk/scopes/cpp/unity.scopes.utility/BufferedResultForwarder/classunity_1_1scopes_1_1utility_1_1_buffered_result_forwarder__inherit__graph.png
-.. |-| image:: /media/sdk/scopes/cpp/unity.scopes.utility/BufferedResultForwarder/closed.png
+.. |Inheritance graph| image:: /mediasdk_unity_scopes_utility_bufferedresultforwarderclassunity_1_1scopes_1_1utility_1_1_buffered_result_forwarder__inherit__graph.png
+.. |-| image:: /mediasdk_unity_scopes_utility_bufferedresultforwarderclosed.png
 

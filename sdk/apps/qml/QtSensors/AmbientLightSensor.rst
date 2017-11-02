@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_ambientlightsensor:
+QtSensors AmbientLightSensor
+============================
+
 The AmbientLightSensor element repors on ambient lighting conditions.
 
 +--------------------------------------+--------------------------------------+
@@ -5,18 +9,17 @@ The AmbientLightSensor element repors on ambient lighting conditions.
 +--------------------------------------+--------------------------------------+
 | Since:                               | QtSensors 5.0                        |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Sensor </sdk/apps/qml/QtSensors/Sen |
-|                                      | sor/>`__                             |
+| Inherits:                            | :ref:`Sensor <sdk_qtsensors_sensor>` |
 +--------------------------------------+--------------------------------------+
 
 Detailed Description
 --------------------
 
-The `AmbientLightSensor </sdk/apps/qml/QtSensors/AmbientLightSensor/>`__
-element repors on ambient lighting conditions.
+The :ref:`AmbientLightSensor <sdk_qtsensors_ambientlightsensor>` element
+repors on ambient lighting conditions.
 
 This element wraps the QAmbientLightSensor class. Please see the
 documentation for QAmbientLightSensor for details.
 
 **See also**
-`AmbientLightReading </sdk/apps/qml/QtSensors/AmbientLightReading/>`__.
+:ref:`AmbientLightReading <sdk_qtsensors_ambientlightreading>`.

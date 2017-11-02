@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_tapsensor:
+QtSensors TapSensor
+===================
+
 The TapSensor element reports tap and double tap events along the X, Y
 and Z axes.
 
@@ -6,29 +10,30 @@ and Z axes.
 +--------------------------------------+--------------------------------------+
 | Since:                               | QtSensors 5.0                        |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Sensor </sdk/apps/qml/QtSensors/Sen |
-|                                      | sor/>`__                             |
+| Inherits:                            | :ref:`Sensor <sdk_qtsensors_sensor>` |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`returnDoubleTapEvents </sdk/apps/qml/QtSensors/TapSensor#returnDoubleTapEvents-prop>`__****
+-  :ref:`returnDoubleTapEvents <sdk_qtsensors_tapsensor_returnDoubleTapEvents-prop>`
    : bool
 
 Detailed Description
 --------------------
 
-The `TapSensor </sdk/apps/qml/QtSensors/TapSensor/>`__ element reports
-tap and double tap events along the X, Y and Z axes.
+The :ref:`TapSensor <sdk_qtsensors_tapsensor>` element reports tap and
+double tap events along the X, Y and Z axes.
 
 This element wraps the QTapSensor class. Please see the documentation
 for QTapSensor for details.
 
-**See also** `TapReading </sdk/apps/qml/QtSensors/TapReading/>`__.
+**See also** :ref:`TapReading <sdk_qtsensors_tapreading>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtsensors_tapsensor_returnDoubleTapEvents-prop:
 
 +--------------------------------------------------------------------------+
 |        \ returnDoubleTapEvents : bool                                    |

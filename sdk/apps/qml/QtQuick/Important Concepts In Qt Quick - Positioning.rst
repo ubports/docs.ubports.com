@@ -1,3 +1,7 @@
+.. _sdk_qtquick_important_concepts_in_qt_quick_-_positioning:
+QtQuick Important Concepts In Qt Quick - Positioning
+====================================================
+
 
 
 Visual items in QML can be positioned in a variety of ways. The most
@@ -23,7 +27,7 @@ more performant to specify the position manually than to use the more
 dynamic positioning methods documented in proceeding sections.
 
 In Qt Quick, every visual object is positioned within the `coordinate
-system </sdk/apps/qml/QtQuick/qtquick-visualcanvas-coordinates/>`__
+system </sdk/apps/qml/QtQuick/qtquick-visualcanvas-coordinates/>`_ 
 provided by the Qt Quick visual canvas. As described in that document,
 the x and y coordinates of a visual object are relative to those of its
 visual parent, with the top-left corner having the coordinate (0, 0).
@@ -92,7 +96,7 @@ are anchored to it will adjust automatically to maintain the anchoring.
 
 Qt Quick provides anchors as a top-level concept. See the documentation
 about `positioning with
-anchors </sdk/apps/qml/QtQuick/qtquick-positioning-anchors/>`__ for
+anchors </sdk/apps/qml/QtQuick/qtquick-positioning-anchors/>`_  for
 in-depth information on the topic.
 
 It is important to note that anchor-based layouts are generally far more
@@ -111,7 +115,7 @@ cases, the best positioner to use is a simple grid, row, or column, and
 Qt Quick provides items which will position children in these formations
 in the most efficient manner possible. See the documentation on `item
 positioners
-types </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/>`__ for more
+types </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/>`_  for more
 information about utilizing pre-defined positioners.
 
 .. rubric:: Layouts
@@ -132,7 +136,7 @@ Qt Quick supports right-to-left positioning of types through the
 predefined-layouts as well as right-to-left text layouts.
 
 Please see the documentation about `right-to-left support in Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-positioning-righttoleft/>`__ for
+Quick </sdk/apps/qml/QtQuick/qtquick-positioning-righttoleft/>`_  for
 in-depth information on the topic.
 
 .. |image0| image:: /media/sdk/apps/qml/qtquick-positioning-topic/images/manual-layout.png

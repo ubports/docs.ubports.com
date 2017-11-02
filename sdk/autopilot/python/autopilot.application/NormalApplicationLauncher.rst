@@ -1,7 +1,11 @@
+.. _sdk_autopilot_application_normalapplicationlauncher:
+autopilot.application NormalApplicationLauncher
+===============================================
+
  *class*
 ``autopilot.application.``\ ``NormalApplicationLauncher``\ (*case\_addDetail=None*,
 *emulator\_base=None*,
-*dbus\_bus='session'*)\ ` <#autopilot.application.NormalApplicationLauncher>`__
+*dbus\_bus='session'*)\ ` <#autopilot.application.NormalApplicationLauncher>`_ 
     Fixture to manage launching an application.A class that knows how to
     launch an application with a certain type of introspection enabled.
 
@@ -13,7 +17,7 @@
 
      ``launch``\ (*application*, *arguments=[]*, *app\_type=None*,
     *launch\_dir=None*,
-    *capture\_output=True*)\ ` <#autopilot.application.NormalApplicationLauncher.launch>`__
+    *capture\_output=True*)\ ` <#autopilot.application.NormalApplicationLauncher.launch>`_ 
         Launch an application and return a proxy object.
 
         Use this method to launch an application and start testing it.

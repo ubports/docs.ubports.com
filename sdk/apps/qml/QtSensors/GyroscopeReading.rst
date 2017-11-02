@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_gyroscopereading:
+QtSensors GyroscopeReading
+==========================
+
 The GyroscopeReading element holds the most recent Gyroscope reading.
 
 +--------------------------------------+--------------------------------------+
@@ -5,25 +9,22 @@ The GyroscopeReading element holds the most recent Gyroscope reading.
 +--------------------------------------+--------------------------------------+
 | Since:                               | QtSensors 5.0                        |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `SensorReading </sdk/apps/qml/QtSens |
-|                                      | ors/SensorReading/>`__               |
+| Inherits:                            | :ref:`SensorReading <sdk_qtsensors_sensor |
+|                                      | reading>`_                           |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`x </sdk/apps/qml/QtSensors/GyroscopeReading#x-prop>`__**** :
-   qreal
--  ****`y </sdk/apps/qml/QtSensors/GyroscopeReading#y-prop>`__**** :
-   qreal
--  ****`z </sdk/apps/qml/QtSensors/GyroscopeReading#z-prop>`__**** :
-   qreal
+-  :ref:`x <sdk_qtsensors_gyroscopereading_x-prop>` : qreal
+-  :ref:`y <sdk_qtsensors_gyroscopereading_y-prop>` : qreal
+-  :ref:`z <sdk_qtsensors_gyroscopereading_z-prop>` : qreal
 
 Detailed Description
 --------------------
 
-The `GyroscopeReading </sdk/apps/qml/QtSensors/GyroscopeReading/>`__
-element holds the most recent Gyroscope reading.
+The :ref:`GyroscopeReading <sdk_qtsensors_gyroscopereading>` element holds
+the most recent Gyroscope reading.
 
 This element wraps the QGyroscopeReading class. Please see the
 documentation for QGyroscopeReading for details.
@@ -32,6 +33,8 @@ This element cannot be directly created.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtsensors_gyroscopereading_x-prop:
 
 +--------------------------------------------------------------------------+
 |        \ x : qreal                                                       |
@@ -43,6 +46,8 @@ Please see QGyroscopeReading::x for information about this property.
 
 | 
 
+.. _sdk_qtsensors_gyroscopereading_y-prop:
+
 +--------------------------------------------------------------------------+
 |        \ y : qreal                                                       |
 +--------------------------------------------------------------------------+
@@ -52,6 +57,8 @@ This property holds the angular velocity around the y axis.
 Please see QGyroscopeReading::y for information about this property.
 
 | 
+
+.. _sdk_qtsensors_gyroscopereading_z-prop:
 
 +--------------------------------------------------------------------------+
 |        \ z : qreal                                                       |

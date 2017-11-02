@@ -1,5 +1,9 @@
+.. _sdk_unity_scopes_qt_qvariantbuilder:
+unity.scopes.qt QVariantBuilder
+===============================
+
 Helper class for creating and populating QVariant containers.
-`More... </sdk/scopes/cpp/unity.scopes.qt/QVariantBuilder#details>`__
+:ref:`More... <sdk_unity_scopes_qt_qvariantbuilder#details>`
 
 ``#include <unity/scopes/qt/QVariantBuilder.h>``
 
@@ -8,7 +12,7 @@ Helper class for creating and populating QVariant containers.
 
 void 
 
-`add\_tuple </sdk/scopes/cpp/unity.scopes.qt/QVariantBuilder#a379142f075b92183acf729798ebc5794>`__
+:ref:`add\_tuple <sdk_unity_scopes_qt_qvariantbuilder#a379142f075b92183acf729798ebc5794>`
 (std::initializer\_list< QPair< QString, QVariant >> const &tuple)
 
  
@@ -19,7 +23,7 @@ void 
 
 void 
 
-`add\_tuple </sdk/scopes/cpp/unity.scopes.qt/QVariantBuilder#a0fd901e8b0b1c7f6e78a993fd445b55c>`__
+:ref:`add\_tuple <sdk_unity_scopes_qt_qvariantbuilder#a0fd901e8b0b1c7f6e78a993fd445b55c>`
 (QVector< QPair< QString, QVariant >> const &tuple)
 
  
@@ -30,7 +34,7 @@ void 
 
 QVariant 
 
-`end </sdk/scopes/cpp/unity.scopes.qt/QVariantBuilder#aaf11b857f040eb86cda244190166ee5b>`__
+:ref:`end <sdk_unity_scopes_qt_qvariantbuilder#aaf11b857f040eb86cda244190166ee5b>`
 ()
 
  
@@ -47,33 +51,27 @@ usual value semantics.
          
 
 **QVariantBuilder**
-(`QVariantBuilder </sdk/scopes/cpp/unity.scopes.qt/QVariantBuilder/>`__
-const &other)
+(:ref:`QVariantBuilder <sdk_unity_scopes_qt_qvariantbuilder>` const &other)
 
  
 
          
 
 **QVariantBuilder**
-(`QVariantBuilder </sdk/scopes/cpp/unity.scopes.qt/QVariantBuilder/>`__
-&&other)
+(:ref:`QVariantBuilder <sdk_unity_scopes_qt_qvariantbuilder>` &&other)
 
  
 
-`QVariantBuilder </sdk/scopes/cpp/unity.scopes.qt/QVariantBuilder/>`__
-& 
+:ref:` <>` `QVariantBuilder <sdk_unity_scopes_qt_qvariantbuilder>` & 
 
-**operator=**
-(`QVariantBuilder </sdk/scopes/cpp/unity.scopes.qt/QVariantBuilder/>`__
+**operator=** (:ref:`QVariantBuilder <sdk_unity_scopes_qt_qvariantbuilder>`
 const &other)
 
  
 
-`QVariantBuilder </sdk/scopes/cpp/unity.scopes.qt/QVariantBuilder/>`__
-& 
+:ref:` <>` `QVariantBuilder <sdk_unity_scopes_qt_qvariantbuilder>` & 
 
-**operator=**
-(`QVariantBuilder </sdk/scopes/cpp/unity.scopes.qt/QVariantBuilder/>`__
+**operator=** (:ref:`QVariantBuilder <sdk_unity_scopes_qt_qvariantbuilder>`
 &&other)
 
  
@@ -84,8 +82,7 @@ Detailed Description
 Helper class for creating and populating QVariant containers.
 
 The main purpose of this class is to ease creation of variant containers
-needed for
-`QPreviewWidget </sdk/scopes/cpp/unity.scopes.qt/QPreviewWidget/>`__
+needed for :ref:`QPreviewWidget <sdk_unity_scopes_qt_qpreviewwidget>`
 instances or any other classes that require non-trivial variant
 definitions.
 
@@ -103,8 +100,7 @@ template
 }
 
 can be created with
-`QVariantBuilder </sdk/scopes/cpp/unity.scopes.qt/QVariantBuilder/>`__
-as follows:
+:ref:`QVariantBuilder <sdk_unity_scopes_qt_qvariantbuilder>` as follows:
 
 VariantBuilder builder;
 

@@ -1,8 +1,12 @@
+.. _sdk_qtquick_qt_quick_demo_-_same_game:
+QtQuick Qt Quick Demo - Same Game
+=================================
+
 
 
 *Same Game* demonstrates a QML game with custom types and logic written
 in JavaScript. The game uses various `Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-index/>`__ features such as
+Quick </sdk/apps/qml/QtQuick/qtquick-index/>`_  features such as
 particles, animation, and loading images.
 
 |image0|
@@ -10,7 +14,7 @@ particles, animation, and loading images.
 |image1|
 
 For more details about different parts of the example, see `QML Advanced
-Tutorial </sdk/apps/qml/QtQuick/qml-advtutorial/>`__.
+Tutorial </sdk/apps/qml/QtQuick/qml-advtutorial/>`_ .
 
 .. rubric:: Running the Example
    :name: running-the-example

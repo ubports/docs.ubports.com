@@ -1,50 +1,54 @@
+.. _sdk_ubuntu_components_abstractbutton:
+Ubuntu.Components AbstractButton
+================================
+
 The AbstractButton class defines the behavior of the button.
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import Ubuntu.Components 1.3         |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `ActionItem </sdk/apps/qml/Ubuntu.Co |
-|                                      | mponents/ActionItem/>`__             |
+| Inherits:                            | :ref:`ActionItem <sdk_ubuntu_components_a |
+|                                      | ctionitem>`_                         |
 +--------------------------------------+--------------------------------------+
-| Inherited By:                        | `Button </sdk/apps/qml/Ubuntu.Compon |
-|                                      | ents/Button/>`__,                    |
-|                                      | `CheckBox </sdk/apps/qml/Ubuntu.Comp |
-|                                      | onents/CheckBox/>`__,                |
-|                                      | `ComboButton </sdk/apps/qml/Ubuntu.C |
-|                                      | omponents/ComboButton/>`__,          |
+| Inherited By:                        | :ref:`Button <sdk_ubuntu_components_butto |
+|                                      | n>`_ ,                               |
+|                                      | :ref:`CheckBox <sdk_ubuntu_components_che |
+|                                      | ckbox>`_ ,                           |
+|                                      | :ref:`ComboButton <sdk_ubuntu_components_ |
+|                                      | combobutton>`_ ,                     |
 |                                      | `Empty </sdk/apps/qml/Ubuntu.Compone |
-|                                      | nts/ListItems.Empty/>`__,            |
+|                                      | nts/ListItems.Empty/>`_ ,            |
 |                                      | and                                  |
 |                                      | `PickerDelegate </sdk/apps/qml/Ubunt |
 |                                      | u.Components/Pickers.PickerDelegate/ |
-|                                      | >`__.                                |
+|                                      | >`_ .                                |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`hovered </sdk/apps/qml/Ubuntu.Components/AbstractButton#hovered-prop>`__****
+-  :ref:`hovered <sdk_ubuntu_components_abstractbutton_hovered-prop>`
    : bool
--  ****`pressed </sdk/apps/qml/Ubuntu.Components/AbstractButton#pressed-prop>`__****
+-  :ref:`pressed <sdk_ubuntu_components_abstractbutton_pressed-prop>`
    : bool
--  ****`sensingMargins </sdk/apps/qml/Ubuntu.Components/AbstractButton#sensingMargins-prop>`__****
+-  :ref:`sensingMargins <sdk_ubuntu_components_abstractbutton_sensingMargins-prop>`
 
-   -  ****`sensingMargins.left </sdk/apps/qml/Ubuntu.Components/AbstractButton#sensingMargins.left-prop>`__****
+   -  :ref:`sensingMargins.left <sdk_ubuntu_components_abstractbutton_sensingMargins.left-prop>`
       : real
-   -  ****`sensingMargins.right </sdk/apps/qml/Ubuntu.Components/AbstractButton#sensingMargins.right-prop>`__****
+   -  :ref:`sensingMargins.right <sdk_ubuntu_components_abstractbutton_sensingMargins.right-prop>`
       : real
-   -  ****`sensingMargins.top </sdk/apps/qml/Ubuntu.Components/AbstractButton#sensingMargins.top-prop>`__****
+   -  :ref:`sensingMargins.top <sdk_ubuntu_components_abstractbutton_sensingMargins.top-prop>`
       : real
-   -  ****`sensingMargins.bottom </sdk/apps/qml/Ubuntu.Components/AbstractButton#sensingMargins.bottom-prop>`__****
+   -  :ref:`sensingMargins.bottom <sdk_ubuntu_components_abstractbutton_sensingMargins.bottom-prop>`
       : real
-   -  ****`sensingMargins.all </sdk/apps/qml/Ubuntu.Components/AbstractButton#sensingMargins.all-prop>`__****
+   -  :ref:`sensingMargins.all <sdk_ubuntu_components_abstractbutton_sensingMargins.all-prop>`
       : real
 
 Signals
 -------
 
--  ****`clicked </sdk/apps/qml/Ubuntu.Components/AbstractButton#clicked-signal>`__****\ ()
--  ****`pressAndHold </sdk/apps/qml/Ubuntu.Components/AbstractButton#pressAndHold-signal>`__****\ ()
+-  :ref:`clicked <sdk_ubuntu_components_abstractbutton_clicked-signal>`\ ()
+-  :ref:`pressAndHold <sdk_ubuntu_components_abstractbutton_pressAndHold-signal>`\ ()
 
 Detailed Description
 --------------------
@@ -54,8 +58,8 @@ from this class support haptic feedback out of the box.
 
 If an action is specified, the button's clicked signal will trigger the
 action. Subclasses of
-`AbstractButton </sdk/apps/qml/Ubuntu.Components/AbstractButton/>`__ can
-use other properties of action (for example the text and iconName).
+:ref:`AbstractButton <sdk_ubuntu_components_abstractbutton>` can use other
+properties of action (for example the text and iconName).
 
 Sensing area
 ~~~~~~~~~~~~
@@ -66,10 +70,10 @@ has to be provided. However not all the visuals are of that size, as
 Icons for example are defaulted to be 2x2 grid units, but a component
 containing a single Icon still has to be able to capture the press
 events. Therefore
-`AbstractButton </sdk/apps/qml/Ubuntu.Components/AbstractButton/>`__
-makes sure this rule of 4x4 grid units for the sensing area is provided.
-In addition it exposes the
-`sensingMargins </sdk/apps/qml/Ubuntu.Components/AbstractButton#sensingMargins-prop>`__
+:ref:`AbstractButton <sdk_ubuntu_components_abstractbutton>` makes sure
+this rule of 4x4 grid units for the sensing area is provided. In
+addition it exposes the
+:ref:`sensingMargins <sdk_ubuntu_components_abstractbutton#sensingMargins-prop>`
 property which extends the component's sensing area in all the
 directions, so other use cases when the sensing area needs to be
 extended outside of the component's area, or restricted on a given area
@@ -96,6 +100,8 @@ the sensing area to be available on the visual area only.
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_abstractbutton_hovered-prop:
+
 +--------------------------------------------------------------------------+
 |        \ hovered : bool                                                  |
 +--------------------------------------------------------------------------+
@@ -103,6 +109,8 @@ Property Documentation
 True if the mouse cursor hovers over the button's mouse area.
 
 | 
+
+.. _sdk_ubuntu_components_abstractbutton_pressed-prop:
 
 +--------------------------------------------------------------------------+
 |        \ pressed : bool                                                  |
@@ -112,15 +120,21 @@ True if the user presses a mouse button in the button's mouse area.
 
 | 
 
+.. _sdk_ubuntu_components_abstractbutton_**sensingMargins group**-prop:
+
 +--------------------------------------------------------------------------+
 |        \ **sensingMargins group**                                        |
 +==========================================================================+
+.. _sdk_ubuntu_components_abstractbutton_sensingMargins.right-prop:
 |        \ sensingMargins.left : real                                      |
 +--------------------------------------------------------------------------+
+.. _sdk_ubuntu_components_abstractbutton_sensingMargins.top-prop:
 |        \ sensingMargins.right : real                                     |
 +--------------------------------------------------------------------------+
+.. _sdk_ubuntu_components_abstractbutton_sensingMargins.bottom-prop:
 |        \ sensingMargins.top : real                                       |
 +--------------------------------------------------------------------------+
+.. _sdk_ubuntu_components_abstractbutton_sensingMargins.all-prop:
 |        \ sensingMargins.bottom : real                                    |
 +--------------------------------------------------------------------------+
 |        \ sensingMargins.all : real                                       |
@@ -161,16 +175,20 @@ grid units sensing area would look as follows:
 Signal Documentation
 --------------------
 
+.. _sdk_ubuntu_components_abstractbutton_clicked()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ clicked()                                                       |
 +--------------------------------------------------------------------------+
 
 This handler is called when there is a mouse click on the button and the
 button is not disabled. If
-`action </sdk/apps/qml/Ubuntu.Components/ActionItem#action-prop>`__ is
-defined, the action will be triggered.
+:ref:`action <sdk_ubuntu_components_actionitem#action-prop>` is defined,
+the action will be triggered.
 
 | 
+
+.. _sdk_ubuntu_components_abstractbutton_pressAndHold()-prop:
 
 +--------------------------------------------------------------------------+
 |        \ pressAndHold()                                                  |

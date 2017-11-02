@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_adaptivepagelayout:
+Ubuntu.Components AdaptivePageLayout
+====================================
+
 View with multiple columns of Pages.
 
 +---------------------+--------------------------------+
@@ -9,41 +13,41 @@ View with multiple columns of Pages.
 Properties
 ----------
 
--  ****`asynchronous </sdk/apps/qml/Ubuntu.Components/AdaptivePageLayout#asynchronous-prop>`__****
+-  :ref:`asynchronous <sdk_ubuntu_components_adaptivepagelayout_asynchronous-prop>`
    : bool
--  ****`columns </sdk/apps/qml/Ubuntu.Components/AdaptivePageLayout#columns-prop>`__****
+-  :ref:`columns <sdk_ubuntu_components_adaptivepagelayout_columns-prop>`
    : int
--  ****`layouts </sdk/apps/qml/Ubuntu.Components/AdaptivePageLayout#layouts-prop>`__****
+-  :ref:`layouts <sdk_ubuntu_components_adaptivepagelayout_layouts-prop>`
    : PageColumnsLayout
--  ****`primaryPage </sdk/apps/qml/Ubuntu.Components/AdaptivePageLayout#primaryPage-prop>`__****
+-  :ref:`primaryPage <sdk_ubuntu_components_adaptivepagelayout_primaryPage-prop>`
    : Page
--  ****`primaryPageSource </sdk/apps/qml/Ubuntu.Components/AdaptivePageLayout#primaryPageSource-prop>`__****
+-  :ref:`primaryPageSource <sdk_ubuntu_components_adaptivepagelayout_primaryPageSource-prop>`
    : var
 
 Methods
 -------
 
--  ****`addPageToCurrentColumn </sdk/apps/qml/Ubuntu.Components/AdaptivePageLayout#addPageToCurrentColumn-method>`__****\ (*sourcePage*,
+-  :ref:`addPageToCurrentColumn <sdk_ubuntu_components_adaptivepagelayout_addPageToCurrentColumn-method>`\ (*sourcePage*,
    *page*, *properties*)
--  ****`addPageToNextColumn </sdk/apps/qml/Ubuntu.Components/AdaptivePageLayout#addPageToNextColumn-method>`__****\ (*sourcePage*,
+-  :ref:`addPageToNextColumn <sdk_ubuntu_components_adaptivepagelayout_addPageToNextColumn-method>`\ (*sourcePage*,
    *page*, *properties*)
--  ****`removePages </sdk/apps/qml/Ubuntu.Components/AdaptivePageLayout#removePages-method>`__****\ (*page*)
+-  :ref:`removePages <sdk_ubuntu_components_adaptivepagelayout_removePages-method>`\ (*page*)
 
 Detailed Description
 --------------------
 
 The component provides a flexible way of viewing a stack of pages in one
 or more columns. Unlike in
-`PageStack </sdk/apps/qml/Ubuntu.Components/PageStack/>`__, there can be
-more than one Page active at a time, depending on the number of the
-columns in the view.
+:ref:`PageStack <sdk_ubuntu_components_pagestack>`, there can be more than
+one Page active at a time, depending on the number of the columns in the
+view.
 
-`AdaptivePageLayout </sdk/apps/qml/Ubuntu.Components/AdaptivePageLayout/>`__
-stores pages added in a tree. Pages are added relative to a given page,
-either as sibling
-(`addPageToCurrentColumn </sdk/apps/qml/Ubuntu.Components/AdaptivePageLayout#addPageToCurrentColumn-method>`__)
+:ref:`AdaptivePageLayout <sdk_ubuntu_components_adaptivepagelayout>` stores
+pages added in a tree. Pages are added relative to a given page, either
+as sibling
+(:ref:`addPageToCurrentColumn <sdk_ubuntu_components_adaptivepagelayout#addPageToCurrentColumn-method>`)
 or as child
-(`addPageToNextColumn </sdk/apps/qml/Ubuntu.Components/AdaptivePageLayout#addPageToNextColumn-method>`__).
+(:ref:`addPageToNextColumn <sdk_ubuntu_components_adaptivepagelayout#addPageToNextColumn-method>`).
 This means that removing a non-leaf page from the Page tree will remove
 all its children from the page tree.
 
@@ -56,19 +60,19 @@ of the view.
 
 The primary page, the very first page must be specified either through
 the
-`primaryPage </sdk/apps/qml/Ubuntu.Components/AdaptivePageLayout#primaryPage-prop>`__
+:ref:`primaryPage <sdk_ubuntu_components_adaptivepagelayout#primaryPage-prop>`
 or
-`primaryPageSource </sdk/apps/qml/Ubuntu.Components/AdaptivePageLayout#primaryPageSource-prop>`__
+:ref:`primaryPageSource <sdk_ubuntu_components_adaptivepagelayout#primaryPageSource-prop>`
 properties.
-`primaryPage </sdk/apps/qml/Ubuntu.Components/AdaptivePageLayout#primaryPage-prop>`__
+:ref:`primaryPage <sdk_ubuntu_components_adaptivepagelayout#primaryPage-prop>`
 can only hold a Page instance,
-`primaryPageSource </sdk/apps/qml/Ubuntu.Components/AdaptivePageLayout#primaryPageSource-prop>`__
+:ref:`primaryPageSource <sdk_ubuntu_components_adaptivepagelayout#primaryPageSource-prop>`
 can either be a Component or a url to a document defining a Page.
-`primaryPageSource </sdk/apps/qml/Ubuntu.Components/AdaptivePageLayout#primaryPageSource-prop>`__
+:ref:`primaryPageSource <sdk_ubuntu_components_adaptivepagelayout#primaryPageSource-prop>`
 has precedence over
-`primaryPage </sdk/apps/qml/Ubuntu.Components/AdaptivePageLayout#primaryPage-prop>`__,
+:ref:`primaryPage <sdk_ubuntu_components_adaptivepagelayout#primaryPage-prop>`,
 and when set it will report the loaded Page through
-`primaryPage </sdk/apps/qml/Ubuntu.Components/AdaptivePageLayout#primaryPage-prop>`__
+:ref:`primaryPage <sdk_ubuntu_components_adaptivepagelayout#primaryPage-prop>`
 property, and will replace any value set into that property.
 
 .. code:: qml
@@ -116,16 +120,16 @@ property, and will replace any value set into that property.
 
 **Note:** Observe the use of the ``Page::pageStack`` property in the
 example above. The same property is used to share the
-`AdaptivePageLayout </sdk/apps/qml/Ubuntu.Components/AdaptivePageLayout/>`__
+:ref:`AdaptivePageLayout <sdk_ubuntu_components_adaptivepagelayout>`
 instance the Page is used in, therefore the same page can be used in a
-`PageStack </sdk/apps/qml/Ubuntu.Components/PageStack/>`__ or in an
-`AdaptivePageLayout </sdk/apps/qml/Ubuntu.Components/AdaptivePageLayout/>`__.
+:ref:`PageStack <sdk_ubuntu_components_pagestack>` or in an
+:ref:`AdaptivePageLayout <sdk_ubuntu_components_adaptivepagelayout>`.
 However implementations must make sure the desired
-`PageStack </sdk/apps/qml/Ubuntu.Components/PageStack/>`__ or
-`AdaptivePageLayout </sdk/apps/qml/Ubuntu.Components/AdaptivePageLayout/>`__
+:ref:`PageStack <sdk_ubuntu_components_pagestack>` or
+:ref:`AdaptivePageLayout <sdk_ubuntu_components_adaptivepagelayout>`
 function exists in the instance before using it.
 
-`AdaptivePageLayout </sdk/apps/qml/Ubuntu.Components/AdaptivePageLayout/>`__
+:ref:`AdaptivePageLayout <sdk_ubuntu_components_adaptivepagelayout>`
 supports adaptive column handling. When the number of columns changes at
 runtime the pages are automatically rearranged.
 
@@ -135,13 +139,13 @@ grid unit width and the second one to fill the rest of the remaining
 space. When the 80 grid unit breakpoint is reached, the component will
 switch from one column to two, and vice versa. These defaults can be
 overridden through the
-`layouts </sdk/apps/qml/Ubuntu.Components/AdaptivePageLayout#layouts-prop>`__
+:ref:`layouts <sdk_ubuntu_components_adaptivepagelayout#layouts-prop>`
 property by defining the possible layouts, their column sizing and the
 breakpoints when the layouts should be activated.
-`PageColumn </sdk/apps/qml/Ubuntu.Components/PageColumn/>`__
-configurations must appear in the same order (from left to right) as the
-columns appear in the layout. If none of the layouts condition is met, a
-one column layout will be used.
+:ref:`PageColumn <sdk_ubuntu_components_pagecolumn>` configurations must
+appear in the same order (from left to right) as the columns appear in
+the layout. If none of the layouts condition is met, a one column layout
+will be used.
 
 .. code:: qml
 
@@ -203,35 +207,36 @@ one column layout will be used.
     }
 
 A column is considered to be resizable if the
-`PageColumn::minimumWidth </sdk/apps/qml/Ubuntu.Components/PageColumn#minimumWidth-prop>`__
+:ref:`PageColumn::minimumWidth <sdk_ubuntu_components_pagecolumn#minimumWidth-prop>`
 and
-`PageColumn::maximumWidth </sdk/apps/qml/Ubuntu.Components/PageColumn#maximumWidth-prop>`__
+:ref:`PageColumn::maximumWidth <sdk_ubuntu_components_pagecolumn#maximumWidth-prop>`
 configuration differs. This implies that if a column is not meant to be
 resized, it should have
-`PageColumn::minimumWidth </sdk/apps/qml/Ubuntu.Components/PageColumn#minimumWidth-prop>`__
+:ref:`PageColumn::minimumWidth <sdk_ubuntu_components_pagecolumn#minimumWidth-prop>`
 and
-`PageColumn::maximumWidth </sdk/apps/qml/Ubuntu.Components/PageColumn#maximumWidth-prop>`__
+:ref:`PageColumn::maximumWidth <sdk_ubuntu_components_pagecolumn#maximumWidth-prop>`
 set to the same value. In the example above, the first column can be
 resized to a minimum of 30, and a maximum of 60 grid units, and the
 preferred width is set to 40 grid units. This width is set every time
 the layout is activated.
 
-When a `Page </sdk/apps/qml/Ubuntu.Components/Page/>`__ with the
-`Page::header </sdk/apps/qml/Ubuntu.Components/Page#header-prop>`__
-property set is added to an
-`AdaptivePageLayout </sdk/apps/qml/Ubuntu.Components/AdaptivePageLayout/>`__,
-the
-`AdaptivePageLayout </sdk/apps/qml/Ubuntu.Components/AdaptivePageLayout/>`__
-will synchronize the height of that header with the height of the
-headers in other columns, i.e., the height of each of the headers will
-be set to the maximum implicitHeight of all the headers.
+When a :ref:`Page <sdk_ubuntu_components_page>` with the
+:ref:`Page::header <sdk_ubuntu_components_page#header-prop>` property set
+is added to an
+:ref:`AdaptivePageLayout <sdk_ubuntu_components_adaptivepagelayout>`, the
+:ref:`AdaptivePageLayout <sdk_ubuntu_components_adaptivepagelayout>` will
+synchronize the height of that header with the height of the headers in
+other columns, i.e., the height of each of the headers will be set to
+the maximum implicitHeight of all the headers.
 
-**See also** `PageStack </sdk/apps/qml/Ubuntu.Components/PageStack/>`__,
-`PageColumnsLayout </sdk/apps/qml/Ubuntu.Components/PageColumnsLayout/>`__,
-and `PageColumn </sdk/apps/qml/Ubuntu.Components/PageColumn/>`__.
+**See also** :ref:`PageStack <sdk_ubuntu_components_pagestack>`,
+:ref:`PageColumnsLayout <sdk_ubuntu_components_pagecolumnslayout>`, and
+:ref:`PageColumn <sdk_ubuntu_components_pagecolumn>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_ubuntu_components_adaptivepagelayout_asynchronous-prop:
 
 +--------------------------------------------------------------------------+
 |        \ asynchronous : bool                                             |
@@ -242,6 +247,8 @@ asynchronously. Defaults to true.
 
 | 
 
+.. _sdk_ubuntu_components_adaptivepagelayout_[read-only] columns-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [read-only] columns : int                                       |
 +--------------------------------------------------------------------------+
@@ -250,50 +257,57 @@ The property holds the number of columns shown in the layout.
 
 | 
 
+.. _sdk_ubuntu_components_adaptivepagelayout_layouts-prop:
+
 +--------------------------------------------------------------------------+
 |        \ layouts :                                                       |
-| `PageColumnsLayout </sdk/apps/qml/Ubuntu.Components/PageColumnsLayout/>` |
-| __                                                                       |
+| :ref:`PageColumnsLayout <sdk_ubuntu_components_pagecolumnslayout>`          |
 +--------------------------------------------------------------------------+
 
 The property holds the different layout configurations overriding the
 default configurations. Defaults to an empty list.
 
 **See also**
-`PageColumnsLayout </sdk/apps/qml/Ubuntu.Components/PageColumnsLayout/>`__.
+:ref:`PageColumnsLayout <sdk_ubuntu_components_pagecolumnslayout>`.
 
 | 
 
+.. _sdk_ubuntu_components_adaptivepagelayout_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ primaryPage : `Page </sdk/apps/qml/Ubuntu.Components/Page/>`__  |
+| :ref:` <>`\ primaryPage : `Page <sdk_ubuntu_components_page>`          |
 +--------------------------------------------------------------------------+
 
 The property holds the first Page which will be added to the view. If
 the view has more than one column, the page will be added to the
 leftmost column. The property can only hold a Page instance. When
 changed runtime (not by the
-`AdaptivePageLayout </sdk/apps/qml/Ubuntu.Components/AdaptivePageLayout/>`__
+:ref:`AdaptivePageLayout <sdk_ubuntu_components_adaptivepagelayout>`
 component itself), the
-`primaryPageSource </sdk/apps/qml/Ubuntu.Components/AdaptivePageLayout#primaryPageSource-prop>`__
+:ref:`primaryPageSource <sdk_ubuntu_components_adaptivepagelayout#primaryPageSource-prop>`
 property will be reset.
 
 | 
 
+.. _sdk_ubuntu_components_adaptivepagelayout_primaryPageSource-prop:
+
 +--------------------------------------------------------------------------+
 |        \ primaryPageSource :                                             |
-| `var <http://doc.qt.io/qt-5/qml-var.html>`__                             |
+| `var <http://doc.qt.io/qt-5/qml-var.html>`_                              |
 +--------------------------------------------------------------------------+
 
 The property specifies the source of the
-`primaryPage </sdk/apps/qml/Ubuntu.Components/AdaptivePageLayout#primaryPage-prop>`__
+:ref:`primaryPage <sdk_ubuntu_components_adaptivepagelayout#primaryPage-prop>`
 in case the primary page is created from a Component or loaded from an
 external document. It has precedence over
-`primaryPage </sdk/apps/qml/Ubuntu.Components/AdaptivePageLayout#primaryPage-prop>`__.
+:ref:`primaryPage <sdk_ubuntu_components_adaptivepagelayout#primaryPage-prop>`.
 
 | 
 
 Method Documentation
 --------------------
+
+.. _sdk_ubuntu_components_adaptivepagelayout_addPageToCurrentColumn-method:
 
 +--------------------------------------------------------------------------+
 |        \ addPageToCurrentColumn( *sourcePage*, *page*, *properties*)     |
@@ -306,11 +320,11 @@ when page is created. ``sourcePage`` must be active.
 
 The function creates the new page asynchronously if the new ``page`` to
 be added is a Component or a QML document and the
-`asynchronous </sdk/apps/qml/Ubuntu.Components/AdaptivePageLayout#asynchronous-prop>`__
+:ref:`asynchronous <sdk_ubuntu_components_adaptivepagelayout#asynchronous-prop>`
 property is set to true. In this case the function returns an incubator
 which can be used to track the page creation. For more about incubation
 in QML and creating components asynchronously, see
-`Component.incubateObject() </sdk/apps/qml/QtQml/Component#incubateObject-method>`__.
+:ref:`Component.incubateObject() <sdk_qtqml_component#incubateObject-method>`.
 The following example removes an element from the list model whenever
 the page opened in the second column is closed. Note, the example must
 be run on desktop or on a device with at least 90 grid units screen
@@ -371,9 +385,11 @@ width.
     }
 
 **See also**
-`Component.incubateObject </sdk/apps/qml/QtQml/Component#incubateObject-method>`__.
+:ref:`Component.incubateObject <sdk_qtqml_component#incubateObject-method>`.
 
 | 
+
+.. _sdk_ubuntu_components_adaptivepagelayout_addPageToNextColumn-method:
 
 +--------------------------------------------------------------------------+
 |        \ addPageToNextColumn( *sourcePage*, *page*, *properties*)        |
@@ -384,10 +400,12 @@ that holds ``sourcePage``) and all following columns, and then add
 ``page`` to the next column. If ``sourcePage`` is located in the
 rightmost column, the new page will be pushed to the same column as
 ``sourcePage``. The return value is the same as in
-`addPageToCurrentColumn </sdk/apps/qml/Ubuntu.Components/AdaptivePageLayout#addPageToCurrentColumn-method>`__
+:ref:`addPageToCurrentColumn <sdk_ubuntu_components_adaptivepagelayout#addPageToCurrentColumn-method>`
 case.
 
 | 
+
+.. _sdk_ubuntu_components_adaptivepagelayout_removePages-method:
 
 +--------------------------------------------------------------------------+
 |        \ removePages( *page*)                                            |
@@ -395,7 +413,7 @@ case.
 
 The function removes and deletes all pages up to and including ``page``
 is reached. If the *page* is the same as the
-`primaryPage </sdk/apps/qml/Ubuntu.Components/AdaptivePageLayout#primaryPage-prop>`__,
+:ref:`primaryPage <sdk_ubuntu_components_adaptivepagelayout#primaryPage-prop>`,
 only its child pages will be removed.
 
 | 

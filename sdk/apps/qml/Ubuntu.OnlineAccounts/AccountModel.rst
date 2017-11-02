@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_onlineaccounts_accountmodel:
+Ubuntu.OnlineAccounts AccountModel
+==================================
+
 Model of available online accounts.
 
 +---------------------+----------------------------------+
@@ -7,36 +11,36 @@ Model of available online accounts.
 Properties
 ----------
 
--  ****`accountList </sdk/apps/qml/Ubuntu.OnlineAccounts/AccountModel#accountList-prop>`__****
+-  :ref:`accountList <sdk_ubuntu_onlineaccounts_accountmodel_accountList-prop>`
    : list<Account>
--  ****`applicationId </sdk/apps/qml/Ubuntu.OnlineAccounts/AccountModel#applicationId-prop>`__****
+-  :ref:`applicationId <sdk_ubuntu_onlineaccounts_accountmodel_applicationId-prop>`
    : string
--  ****`ready </sdk/apps/qml/Ubuntu.OnlineAccounts/AccountModel#ready-prop>`__****
+-  :ref:`ready <sdk_ubuntu_onlineaccounts_accountmodel_ready-prop>`
    : bool
--  ****`serviceId </sdk/apps/qml/Ubuntu.OnlineAccounts/AccountModel#serviceId-prop>`__****
+-  :ref:`serviceId <sdk_ubuntu_onlineaccounts_accountmodel_serviceId-prop>`
    : string
 
 Signals
 -------
 
--  ****`accessReply </sdk/apps/qml/Ubuntu.OnlineAccounts/AccountModel#accessReply-signal>`__****\ (jsobject
+-  :ref:`accessReply <sdk_ubuntu_onlineaccounts_accountmodel_accessReply-signal>`\ (jsobject
    *reply*, jsobject *authenticationData*)
 
 Methods
 -------
 
 -  variant
-   ****`get </sdk/apps/qml/Ubuntu.OnlineAccounts/AccountModel#get-method>`__****\ (int
+   **:ref:`get <sdk_ubuntu_onlineaccounts_accountmodel#get-method>`**\ (int
    *row*, string *roleName*)
 -  void
-   ****`requestAccess </sdk/apps/qml/Ubuntu.OnlineAccounts/AccountModel#requestAccess-method>`__****\ (string
+   **:ref:`requestAccess <sdk_ubuntu_onlineaccounts_accountmodel#requestAccess-method>`**\ (string
    *serviceId*, jsobject *parameters*)
 
 Detailed Description
 --------------------
 
-The `AccountModel </sdk/apps/qml/Ubuntu.OnlineAccounts/AccountModel/>`__
-lists all the accounts available to the application.
+The :ref:`AccountModel <sdk_ubuntu_onlineaccounts_accountmodel>` lists all
+the accounts available to the application.
 
 .. code:: qml
 
@@ -60,19 +64,21 @@ The model defines the following roles:
 -  ``authenticationMethod`` is the authentication method used on this
    account;
 -  ``settings`` is a dictionary of the settings stored into the account
--  ``account`` is the
-   `Account </sdk/apps/qml/Ubuntu.OnlineAccounts/Account/>`__ object
+-  :ref:``account`` is the `Account <sdk_ubuntu_onlineaccounts_account>`
+   object
 
 **See also**
-`Account::authenticationMethod </sdk/apps/qml/Ubuntu.OnlineAccounts/Account#authenticationMethod-prop>`__
-and `Account </sdk/apps/qml/Ubuntu.OnlineAccounts/Account/>`__.
+:ref:`Account::authenticationMethod <sdk_ubuntu_onlineaccounts_account#authenticationMethod-prop>`
+and :ref:`Account <sdk_ubuntu_onlineaccounts_account>`.
 
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_onlineaccounts_accountmodel_accountList-prop:
+
 +--------------------------------------------------------------------------+
 |        \ accountList :                                                   |
-| list<`Account </sdk/apps/qml/Ubuntu.OnlineAccounts/Account/>`__>         |
+| list<:ref:`Account <sdk_ubuntu_onlineaccounts_account>`>                    |
 +--------------------------------------------------------------------------+
 
 List of accounts in the model. This list has exactly the same contents
@@ -80,6 +86,8 @@ as the model data, and is provided as a property just as a convenience
 for those cases when a model is not required.
 
 | 
+
+.. _sdk_ubuntu_onlineaccounts_accountmodel_applicationId-prop:
 
 +--------------------------------------------------------------------------+
 |        \ applicationId : string                                          |
@@ -90,6 +98,8 @@ version component) of the client. If not given, the identifier will be
 deduced from the APP\_ID environment variable.
 
 | 
+
+.. _sdk_ubuntu_onlineaccounts_accountmodel_ready-prop:
 
 +--------------------------------------------------------------------------+
 |        \ ready : bool                                                    |
@@ -103,6 +113,8 @@ is false.
 
 | 
 
+.. _sdk_ubuntu_onlineaccounts_accountmodel_serviceId-prop:
+
 +--------------------------------------------------------------------------+
 |        \ serviceId : string                                              |
 +--------------------------------------------------------------------------+
@@ -115,20 +127,21 @@ be returned.
 Signal Documentation
 --------------------
 
+.. _sdk_ubuntu_onlineaccounts_accountmodel_accessReply(jsobject *reply*, jsobject *authenticationData*)-prop:
+
 +--------------------------------------------------------------------------+
 |        \ accessReply(jsobject *reply*, jsobject *authenticationData*)    |
 +--------------------------------------------------------------------------+
 
 Emitted when the request initiated with
-`AccountModel::requestAccess() </sdk/apps/qml/Ubuntu.OnlineAccounts/AccountModel#requestAccess-method>`__
+:ref:`AccountModel::requestAccess() <sdk_ubuntu_onlineaccounts_accountmodel#requestAccess-method>`
 completes. The *reply* object contains the access reply:
 
 -  ``account`` if access to an account was granted, this property will
-   hold an `Account </sdk/apps/qml/Ubuntu.OnlineAccounts/Account/>`__
-   object
+   hold an :ref:`Account <sdk_ubuntu_onlineaccounts_account>` object
 -  ``errorCode`` `error
-   code </sdk/apps/qml/Ubuntu.OnlineAccounts/Account#errorcode>`__, if
-   an error occurred
+   code <sdk_ubuntu_onlineaccounts_account#errorcode>:ref:`, if an error
+   occurred
 -  ``errorText`` is a textual description of the error, not meant for
    the end-user; it can be used for debugging purposes
 
@@ -140,6 +153,8 @@ authentication reply.
 Method Documentation
 --------------------
 
+.. _sdk_ubuntu_onlineaccounts_accountmodel_variant get-method:
+
 +--------------------------------------------------------------------------+
 |        \ variant get(int *row*, string *roleName*)                       |
 +--------------------------------------------------------------------------+
@@ -147,6 +162,8 @@ Method Documentation
 Returns the data at *row* for the role *roleName*.
 
 | 
+
+.. _sdk_ubuntu_onlineaccounts_accountmodel_void requestAccess-method:
 
 +--------------------------------------------------------------------------+
 |        \ void requestAccess(string *serviceId*, jsobject *parameters*)   |
@@ -163,18 +180,18 @@ application restart; therefore, this method should be called only when
 the application needs a new account to appear in the model.
 
 Each call to this method will cause the
-`accessReply </sdk/apps/qml/Ubuntu.OnlineAccounts/AccountModel#accessReply-signal>`__
+:ref:`accessReply <sdk_ubuntu_onlineaccounts_accountmodel#accessReply-signal>`
 signal to be emitted at some time later. Note that the operation will
 involve interactions with the end-user, so don't expect a reply to be
 emitted immediately.
 
 The *parameters* parameter can be used to pass authentication data
 (similarly to how the
-`Account::authenticate() </sdk/apps/qml/Ubuntu.OnlineAccounts/Account#authenticate-method>`__
+:ref:`Account::authenticate() <sdk_ubuntu_onlineaccounts_account#authenticate-method>`
 method works), if it's desired to perform the authentication at the same
 time.
 
 **See also**
-`accessReply </sdk/apps/qml/Ubuntu.OnlineAccounts/AccountModel#accessReply-signal>`__.
+:ref:`accessReply <sdk_ubuntu_onlineaccounts_accountmodel#accessReply-signal>`.
 
 | 

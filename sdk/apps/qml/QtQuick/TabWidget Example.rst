@@ -1,9 +1,12 @@
+.. _sdk_qtquick_tabwidget_example:
+QtQuick TabWidget Example
+=========================
+
 
 
 This example shows how to create a tab widget. It also demonstrates how
 property aliases and default properties can be used to collect and
-assemble the child items declared within an
-`Item </sdk/apps/qml/QtQuick/Item/>`__.
+assemble the child items declared within an :ref:`Item <sdk_qtquick_item>`.
 
 |image0|
 

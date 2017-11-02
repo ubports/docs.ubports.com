@@ -1,21 +1,25 @@
+.. _sdk_troubleshooting:
+Troubleshooting
+===============
+
 
 Contents
 
--  `Troubleshooting </sdk/autopilot/python/faq-troubleshooting#troubleshooting>`__
+-  `Troubleshooting </sdk/autopilot/python/faq-troubleshooting/#troubleshooting>`_ 
 
    -  `General
-      Techniques </sdk/autopilot/python/faq-troubleshooting#general-techniques>`__
+      Techniques </sdk/autopilot/python/faq-troubleshooting/#general-techniques>`_ 
    -  `Common Questions regarding Failing
-      Tests </sdk/autopilot/python/faq-troubleshooting#common-questions-regarding-failing-tests>`__
+      Tests </sdk/autopilot/python/faq-troubleshooting/#common-questions-regarding-failing-tests>`_ 
 
       -  `Q. Why is my test failing? It works some of the time. What
          causes
-         “flakyness?” </sdk/autopilot/python/faq-troubleshooting#q-why-is-my-test-failing-it-works-some-of-the-time-what-causes-flakyness>`__
+         “flakyness?” </sdk/autopilot/python/faq-troubleshooting/#q-why-is-my-test-failing-it-works-some-of-the-time-what-causes-flakyness>`_ 
       -  `StateNotFoundError
-         Exception </sdk/autopilot/python/faq-troubleshooting#statenotfounderror-exception>`__
+         Exception </sdk/autopilot/python/faq-troubleshooting/#statenotfounderror-exception>`_ 
 
 .. rubric:: `General
-   Techniques </sdk/autopilot/python/faq-troubleshooting#id2>`__\ ` <#general-techniques>`__
+   Techniques </sdk/autopilot/python/faq-troubleshooting/#id2>`_ \ ` <#general-techniques>`_ 
    :name: general-techniques
 
 The single hardest thing to do while writing autopilot tests is to
@@ -27,7 +31,7 @@ to discover the state of the object tree:
 **Using Autopilot Vis**
 
 The `*Autopilot vis
-tool* </sdk/autopilot/python/guides-running_ap#visualise-introspection-tree>`__
+tool* </sdk/autopilot/python/guides-running_ap/#visualise-introspection-tree>`_ 
 is a useful tool for exploring the entire structure of an application,
 and allows you to search for a particular node in the object tree. If
 you want to find out what parts of the application to select to gain
@@ -37,7 +41,7 @@ do that.
 **Using print\_tree**
 
 The
-```print_tree`` </sdk/autopilot/python/autopilot.introspection/ProxyBase#autopilot.introspection.ProxyBase.print_tree>`__
+:ref:```print_tree`` <sdk_autopilot_introspection_proxybase#autopilot.introspection.ProxyBase.print_tree>`
 method is available on every proxy class. This method will print every
 child of the proxy object recursively, either to ``stdout`` or a file on
 disk. This technique can be useful when:
@@ -50,7 +54,7 @@ disk. This technique can be useful when:
    available.
 
 The
-```print_tree`` </sdk/autopilot/python/autopilot.introspection/ProxyBase#autopilot.introspection.ProxyBase.print_tree>`__
+:ref:```print_tree`` <sdk_autopilot_introspection_proxybase#autopilot.introspection.ProxyBase.print_tree>`
 method often produces a lot of output. There are two ways this
 information overload can be handled:
 
@@ -65,7 +69,7 @@ Of course, these techniques can be used in combination.
 **Using get\_properties**
 
 The
-```get_properties`` </sdk/autopilot/python/autopilot.introspection/ProxyBase#autopilot.introspection.ProxyBase.get_properties>`__
+:ref:```get_properties`` <sdk_autopilot_introspection_proxybase#autopilot.introspection.ProxyBase.get_properties>`
 method can be used on any proxy object, and will return a python
 dictionary containing all the properties of that proxy object. This is
 useful when you want to explore what information is provided by a single
@@ -73,7 +77,7 @@ proxy object. The information returned by this method is exactly the
 same as is shown in the right-hand pane of ``autopilot vis``.
 
 .. rubric:: `Common Questions regarding Failing
-   Tests </sdk/autopilot/python/faq-troubleshooting#id3>`__\ ` <#common-questions-regarding-failing-tests>`__
+   Tests </sdk/autopilot/python/faq-troubleshooting/#id3>`_ \ ` <#common-questions-regarding-failing-tests>`_ 
    :name: common-questions-regarding-failing-tests
 
    id="q-why-is-my-test-failing-it-works-some-of-the-time-what-causes-flakyness"
@@ -81,7 +85,7 @@ same as is shown in the right-hand pane of ``autopilot vis``.
 
 .. rubric:: `Q. Why is my test failing? It works some of the time. What
    causes
-   “flakyness?” </sdk/autopilot/python/faq-troubleshooting#id4>`__\ ` <#q-why-is-my-test-failing-it-works-some-of-the-time-what-causes-flakyness>`__
+   “flakyness?” </sdk/autopilot/python/faq-troubleshooting/#id4>`_ \ ` <#q-why-is-my-test-failing-it-works-some-of-the-time-what-causes-flakyness>`_ 
    :name: q.-why-is-my-test-failing-it-works-some-of-the-time.-what-causes-flakyness
 
 Sometimes a tests fails because the application under tests has issues,
@@ -92,7 +96,7 @@ Here is a troubleshooting guide you can use with some of the common
 problems that developers can overlook while writing tests.
 
 .. rubric:: `StateNotFoundError
-   Exception </sdk/autopilot/python/faq-troubleshooting#id5>`__\ ` <#statenotfounderror-exception>`__
+   Exception </sdk/autopilot/python/faq-troubleshooting/#id5>`_ \ ` <#statenotfounderror-exception>`_ 
    :name: statenotfounderror-exception
 
 #. Not waiting for an animation to finish before looking for an object.

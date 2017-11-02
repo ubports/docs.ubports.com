@@ -1,5 +1,9 @@
+.. _sdk_unity_scopes_qt_qdepartment:
+unity.scopes.qt QDepartment
+===========================
+
 A department with optional sub-departments.
-`More... </sdk/scopes/cpp/unity.scopes.qt/QDepartment#details>`__
+:ref:`More... <sdk_unity_scopes_qt_qdepartment#details>`
 
 ``#include <unity/scopes/qt/QDepartment.h>``
 
@@ -8,7 +12,7 @@ A department with optional sub-departments.
 
 void 
 
-`set\_subdepartments </sdk/scopes/cpp/unity.scopes.qt/QDepartment#a2b9f07697f4a811afa26d9a0b951f9ca>`__
+:ref:`set\_subdepartments <sdk_unity_scopes_qt_qdepartment#a2b9f07697f4a811afa26d9a0b951f9ca>`
 (QDepartmentList const &departments)
 
  
@@ -19,7 +23,7 @@ void 
 
 void 
 
-`add\_subdepartment </sdk/scopes/cpp/unity.scopes.qt/QDepartment#a872794120c2b7337bf23f2ef5dae4330>`__
+:ref:`add\_subdepartment <sdk_unity_scopes_qt_qdepartment#a872794120c2b7337bf23f2ef5dae4330>`
 (QDepartment::SCPtr const &department)
 
  
@@ -30,9 +34,9 @@ void 
 
 void 
 
-`set\_alternate\_label </sdk/scopes/cpp/unity.scopes.qt/QDepartment#a902b615bdfbccb322f65a5306b3a85dc>`__
+:ref:`set\_alternate\_label <sdk_unity_scopes_qt_qdepartment#a902b615bdfbccb322f65a5306b3a85dc>`
 (QString const
-&\ `label </sdk/scopes/cpp/unity.scopes.qt/QDepartment#ae4fa435a1362b32544c79100e7d28c74>`__)
+&\ :ref:`label <sdk_unity_scopes_qt_qdepartment#ae4fa435a1362b32544c79100e7d28c74>`)
 
  
 
@@ -43,9 +47,9 @@ void 
 
 void 
 
-`set\_has\_subdepartments </sdk/scopes/cpp/unity.scopes.qt/QDepartment#a5ec4d42b6421e9661894432d347d2e05>`__
+:ref:`set\_has\_subdepartments <sdk_unity_scopes_qt_qdepartment#a5ec4d42b6421e9661894432d347d2e05>`
 (bool
-`subdepartments </sdk/scopes/cpp/unity.scopes.qt/QDepartment#a07b6395359cbdb456c3200df852988a0>`__\ =true)
+:ref:`subdepartments <sdk_unity_scopes_qt_qdepartment#a07b6395359cbdb456c3200df852988a0>`\ =true)
 
  
 
@@ -55,7 +59,7 @@ void 
 
 QString 
 
-`id </sdk/scopes/cpp/unity.scopes.qt/QDepartment#ad0cbefd8c90f4b0cdd147ca7b16d5144>`__
+:ref:`id <sdk_unity_scopes_qt_qdepartment#ad0cbefd8c90f4b0cdd147ca7b16d5144>`
 () const
 
  
@@ -66,7 +70,7 @@ QString 
 
 QString 
 
-`label </sdk/scopes/cpp/unity.scopes.qt/QDepartment#ae4fa435a1362b32544c79100e7d28c74>`__
+:ref:`label <sdk_unity_scopes_qt_qdepartment#ae4fa435a1362b32544c79100e7d28c74>`
 () const
 
  
@@ -77,7 +81,7 @@ QString 
 
 QString 
 
-`alternate\_label </sdk/scopes/cpp/unity.scopes.qt/QDepartment#a7ede92fdfc67214d6a6761d1d694bdfb>`__
+:ref:`alternate\_label <sdk_unity_scopes_qt_qdepartment#a7ede92fdfc67214d6a6761d1d694bdfb>`
 () const
 
  
@@ -86,9 +90,9 @@ QString 
 
  
 
-`QCannedQuery </sdk/scopes/cpp/unity.scopes.qt/QCannedQuery/>`__ 
+:ref:`QCannedQuery <sdk_unity_scopes_qt_qcannedquery>` 
 
-`query </sdk/scopes/cpp/unity.scopes.qt/QDepartment#aa5184890c7503571408d3d8ef9e58ed6>`__
+:ref:`query <sdk_unity_scopes_qt_qdepartment#aa5184890c7503571408d3d8ef9e58ed6>`
 () const
 
  
@@ -99,7 +103,7 @@ QString 
 
 QDepartmentList 
 
-`subdepartments </sdk/scopes/cpp/unity.scopes.qt/QDepartment#a07b6395359cbdb456c3200df852988a0>`__
+:ref:`subdepartments <sdk_unity_scopes_qt_qdepartment#a07b6395359cbdb456c3200df852988a0>`
 () const
 
  
@@ -110,7 +114,7 @@ QDepartmentList 
 
 bool 
 
-`has\_subdepartments </sdk/scopes/cpp/unity.scopes.qt/QDepartment#ae1075a9dbc4f92d51393dd57a36adf6e>`__
+:ref:`has\_subdepartments <sdk_unity_scopes_qt_qdepartment#ae1075a9dbc4f92d51393dd57a36adf6e>`
 () const
 
  
@@ -127,33 +131,27 @@ usual value semantics.
 
          
 
-**QDepartment**
-(`QDepartment </sdk/scopes/cpp/unity.scopes.qt/QDepartment/>`__ const
+**QDepartment** (:ref:`QDepartment <sdk_unity_scopes_qt_qdepartment>` const
 &other)
 
  
 
          
 
-**QDepartment**
-(`QDepartment </sdk/scopes/cpp/unity.scopes.qt/QDepartment/>`__ &&)
+**QDepartment** (:ref:`QDepartment <sdk_unity_scopes_qt_qdepartment>` &&)
 
  
 
-        `QDepartment </sdk/scopes/cpp/unity.scopes.qt/QDepartment/>`__
-& 
+:ref:` <>` `QDepartment <sdk_unity_scopes_qt_qdepartment>` & 
 
-**operator=**
-(`QDepartment </sdk/scopes/cpp/unity.scopes.qt/QDepartment/>`__ const
+**operator=** (:ref:`QDepartment <sdk_unity_scopes_qt_qdepartment>` const
 &other)
 
  
 
-        `QDepartment </sdk/scopes/cpp/unity.scopes.qt/QDepartment/>`__
-& 
+:ref:` <>` `QDepartment <sdk_unity_scopes_qt_qdepartment>` & 
 
-**operator=**
-(`QDepartment </sdk/scopes/cpp/unity.scopes.qt/QDepartment/>`__ &&)
+**operator=** (:ref:`QDepartment <sdk_unity_scopes_qt_qdepartment>` &&)
 
  
 
@@ -162,11 +160,11 @@ usual value semantics.
 
 static QDepartment::UPtr 
 
-`create </sdk/scopes/cpp/unity.scopes.qt/QDepartment#a9bf07a3b3b3e57a391100f15abb4c651>`__
-(`QCannedQuery </sdk/scopes/cpp/unity.scopes.qt/QCannedQuery/>`__ const
-&\ `query </sdk/scopes/cpp/unity.scopes.qt/QDepartment#aa5184890c7503571408d3d8ef9e58ed6>`__,
+:ref:`create <sdk_unity_scopes_qt_qdepartment#a9bf07a3b3b3e57a391100f15abb4c651>`
+(:ref:`QCannedQuery <sdk_unity_scopes_qt_qcannedquery>` const
+&\ :ref:`query <sdk_unity_scopes_qt_qdepartment#aa5184890c7503571408d3d8ef9e58ed6>`,
 QString const
-&\ `label </sdk/scopes/cpp/unity.scopes.qt/QDepartment#ae4fa435a1362b32544c79100e7d28c74>`__)
+&\ :ref:`label <sdk_unity_scopes_qt_qdepartment#ae4fa435a1362b32544c79100e7d28c74>`)
 
  
 
@@ -176,12 +174,12 @@ QString const
 
 static QDepartment::UPtr 
 
-`create </sdk/scopes/cpp/unity.scopes.qt/QDepartment#a7c90a04ab4d200edc1270ed915914442>`__
+:ref:`create <sdk_unity_scopes_qt_qdepartment#a7c90a04ab4d200edc1270ed915914442>`
 (QString const &department\_id,
-`QCannedQuery </sdk/scopes/cpp/unity.scopes.qt/QCannedQuery/>`__ const
-&\ `query </sdk/scopes/cpp/unity.scopes.qt/QDepartment#aa5184890c7503571408d3d8ef9e58ed6>`__,
+:ref:`QCannedQuery <sdk_unity_scopes_qt_qcannedquery>` const
+&\ :ref:`query <sdk_unity_scopes_qt_qdepartment#aa5184890c7503571408d3d8ef9e58ed6>`,
 QString const
-&\ `label </sdk/scopes/cpp/unity.scopes.qt/QDepartment#ae4fa435a1362b32544c79100e7d28c74>`__)
+&\ :ref:`label <sdk_unity_scopes_qt_qdepartment#ae4fa435a1362b32544c79100e7d28c74>`)
 
  
 
@@ -235,19 +233,19 @@ Returns
 | ------+--------------------+-------- |                                      |
 | ------------+                        |                                      |
 | | static             | (             |                                      |
-|       | `QCannedQuery </sd | *query* |                                      |
+|       | `QCannedQuery <sdk | *query* |                                      |
 | ,           |                        |                                      |
 | | QDepartment::UPtr  |               |                                      |
-|       | k/scopes/cpp/unity |         |                                      |
+|       | _unity_scopes_qt_q |         |                                      |
 |             |                        |                                      |
 | | unity::scopes::qt: |               |                                      |
-|       | .scopes.qt/QCanned |         |                                      |
+|       | cannedquery>`_     |         |                                      |
 |             |                        |                                      |
 | | :QDepartment::crea |               |                                      |
-|       | Query/>`__         |         |                                      |
+|       | const &            |         |                                      |
 |             |                        |                                      |
 | | te                 |               |                                      |
-|       | const &            |         |                                      |
+|       |                    |         |                                      |
 |             |                        |                                      |
 | +--------------------+-------------- |                                      |
 | ------+--------------------+-------- |                                      |
@@ -270,7 +268,7 @@ Create a department with the given canned query and name.
 
 The identifier of this department instance is that of the ``query``
 instance
-(`QCannedQuery::department\_id() </sdk/scopes/cpp/unity.scopes.qt/QCannedQuery#aa8de764af79922d974e1bef6186be9ed>`__).
+(:ref:`QCannedQuery::department\_id() <sdk_unity_scopes_qt_qcannedquery#aa8de764af79922d974e1bef6186be9ed>`).
 
 Parameters
     +---------+---------------------------------------------------------------------------------------------------------------------+
@@ -302,16 +300,13 @@ Parameters
 | ------+--------------------+-------- |                                      |
 | ------------+                        |                                      |
 | |                    |               |                                      |
-|       | `QCannedQuery </sd | *query* |                                      |
+|       | `QCannedQuery <sdk | *query* |                                      |
 | ,           |                        |                                      |
 | |                    |               |                                      |
-|       | k/scopes/cpp/unity |         |                                      |
+|       | _unity_scopes_qt_q |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
-|       | .scopes.qt/QCanned |         |                                      |
-|             |                        |                                      |
-| |                    |               |                                      |
-|       | Query/>`__         |         |                                      |
+|       | cannedquery>`_     |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
 |       | const &            |         |                                      |
@@ -388,10 +383,9 @@ Returns
 
 +----------------+----------------+----------------+----------------+----------------+
 | `QCannedQuery  | (              |                | )              | const          |
-| </sdk/scopes/c |                |                |                |                |
-| pp/unity.scope |                |                |                |                |
-| s.qt/QCannedQu |                |                |                |                |
-| ery/>`__       |                |                |                |                |
+| <sdk_unity_sco |                |                |                |                |
+| pes_qt_qcanned |                |                |                |                |
+| query>`_       |                |                |                |                |
 | QDepartment::q |                |                |                |                |
 | uery           |                |                |                |                |
 +----------------+----------------+----------------+----------------+----------------+
@@ -434,15 +428,15 @@ This flag is a display hint for the Shell that indicates if this
 department has sub-departments and as such should be displayed in a way
 that suggests further navigation to the user. Setting this flag is not
 needed when sub-departments have been added with
-`set\_subdepartments() </sdk/scopes/cpp/unity.scopes.qt/QDepartment#a2b9f07697f4a811afa26d9a0b951f9ca>`__
+:ref:`set\_subdepartments() <sdk_unity_scopes_qt_qdepartment#a2b9f07697f4a811afa26d9a0b951f9ca>`
 method. Setting this flag to false after adding sub-departments with
-`set\_subdepartments() </sdk/scopes/cpp/unity.scopes.qt/QDepartment#a2b9f07697f4a811afa26d9a0b951f9ca>`__
+:ref:`set\_subdepartments() <sdk_unity_scopes_qt_qdepartment#a2b9f07697f4a811afa26d9a0b951f9ca>`
 throws unity::LogicException.
 
 Exceptions
-    +-------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-    | unity::LogicException   | if called with false after adding sub-departments with `unity::scopes::Department::set\_subdepartments() </sdk/scopes/cpp/unity.scopes.Department#ab17057cef9ce35f1302f5421a087c067>`__   |
-    +-------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    +-------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | unity::LogicException   | if called with false after adding sub-departments with `unity::scopes::Department::set\_subdepartments() </sdk/scopes/cpp/unity.scopes.Department/#ab17057cef9ce35f1302f5421a087c067>`_    |
+    +-------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 +--------------+--------------+--------------+--------------+--------------+--------------+
 | void         | (            | QDepartmentL | *departments | )            |              |

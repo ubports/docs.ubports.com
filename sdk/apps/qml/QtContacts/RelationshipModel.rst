@@ -1,3 +1,7 @@
+.. _sdk_qtcontacts_relationshipmodel:
+QtContacts RelationshipModel
+============================
+
 The RelationshipModel provides a model of contact relationships from the
 contacts store.
 
@@ -8,26 +12,26 @@ contacts store.
 Properties
 ----------
 
--  ****`autoUpdate </sdk/apps/qml/QtContacts/RelationshipModel#autoUpdate-prop>`__****
+-  :ref:`autoUpdate <sdk_qtcontacts_relationshipmodel_autoUpdate-prop>`
    : bool
--  ****`error </sdk/apps/qml/QtContacts/RelationshipModel#error-prop>`__****
-   : string
--  ****`manager </sdk/apps/qml/QtContacts/RelationshipModel#manager-prop>`__****
-   : string
--  ****`participantId </sdk/apps/qml/QtContacts/RelationshipModel#participantId-prop>`__****
+-  :ref:`error <sdk_qtcontacts_relationshipmodel_error-prop>` :
+   string
+-  :ref:`manager <sdk_qtcontacts_relationshipmodel_manager-prop>` :
+   string
+-  :ref:`participantId <sdk_qtcontacts_relationshipmodel_participantId-prop>`
    : int
--  ****`relationshipType </sdk/apps/qml/QtContacts/RelationshipModel#relationshipType-prop>`__****
+-  :ref:`relationshipType <sdk_qtcontacts_relationshipmodel_relationshipType-prop>`
    : variant
--  ****`relationships </sdk/apps/qml/QtContacts/RelationshipModel#relationships-prop>`__****
+-  :ref:`relationships <sdk_qtcontacts_relationshipmodel_relationships-prop>`
    : list<Relationship>
--  ****`role </sdk/apps/qml/QtContacts/RelationshipModel#role-prop>`__****
-   : enumeration
+-  :ref:`role <sdk_qtcontacts_relationshipmodel_role-prop>` :
+   enumeration
 
 Methods
 -------
 
--  ****`addRelationship </sdk/apps/qml/QtContacts/RelationshipModel#addRelationship-method>`__****\ (relationship)
--  ****`removeRelationship </sdk/apps/qml/QtContacts/RelationshipModel#removeRelationship-method>`__****\ (relationship)
+-  :ref:`addRelationship <sdk_qtcontacts_relationshipmodel_addRelationship-method>`\ (relationship)
+-  :ref:`removeRelationship <sdk_qtcontacts_relationshipmodel_removeRelationship-method>`\ (relationship)
 
 Detailed Description
 --------------------
@@ -35,27 +39,29 @@ Detailed Description
 This element is part of the **QtContacts** module.
 
 The contents of the model can be specified with
-`participantId </sdk/apps/qml/QtContacts/RelationshipModel#participantId-prop>`__,
-`role </sdk/apps/qml/QtContacts/RelationshipModel#role-prop>`__ and
-`relationshipType </sdk/apps/qml/QtContacts/RelationshipModel#relationshipType-prop>`__
+:ref:`participantId <sdk_qtcontacts_relationshipmodel#participantId-prop>`,
+:ref:`role <sdk_qtcontacts_relationshipmodel#role-prop>` and
+:ref:`relationshipType <sdk_qtcontacts_relationshipmodel#relationshipType-prop>`
 properties. Whether the model is automatically updated when the store or
 filter changes, can be controlled with
-`RelationshipModel::autoUpdate </sdk/apps/qml/QtContacts/RelationshipModel#autoUpdate-prop>`__
+:ref:`RelationshipModel::autoUpdate <sdk_qtcontacts_relationshipmodel#autoUpdate-prop>`
 property.
 
 There are two ways of accessing the relationship data: through model by
 using views and delegates, or alternatively via
-`relationships </sdk/apps/qml/QtContacts/qtcontacts-overview#relationships>`__
+`relationships </sdk/apps/qml/QtContacts/qtcontacts-overview/#relationships>`_ 
 list property.
 
 At the moment only data role provided by the model is ``relationship``
-(`Relationship </sdk/apps/qml/QtContacts/Relationship/>`__). Through
-that one can access any data provided by the Relationship element.
+(:ref:`Relationship <sdk_qtcontacts_relationship>`). Through that one can
+access any data provided by the Relationship element.
 
 **See also** Relationship and QContactRelationship.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtcontacts_relationshipmodel_autoUpdate-prop:
 
 +--------------------------------------------------------------------------+
 |        \ autoUpdate : bool                                               |
@@ -65,6 +71,8 @@ This property indicates whether or not the relationship model should be
 updated automatically, default value is true.
 
 | 
+
+.. _sdk_qtcontacts_relationshipmodel_error-prop:
 
 +--------------------------------------------------------------------------+
 |        \ error : string                                                  |
@@ -77,6 +85,8 @@ This property is read only.
 
 | 
 
+.. _sdk_qtcontacts_relationshipmodel_manager-prop:
+
 +--------------------------------------------------------------------------+
 |        \ manager : string                                                |
 +--------------------------------------------------------------------------+
@@ -85,21 +95,24 @@ This property holds the manager uri of the contact backend engine.
 
 | 
 
+.. _sdk_qtcontacts_relationshipmodel_participantId-prop:
+
 +--------------------------------------------------------------------------+
 |        \ participantId : int                                             |
 +--------------------------------------------------------------------------+
 
 This property holds the participant which the list of relationships
-returned by
-`RelationshipModel </sdk/apps/qml/QtContacts/RelationshipModel/>`__
+returned by :ref:`RelationshipModel <sdk_qtcontacts_relationshipmodel>`
 should contain.
 
 **See also**
-`RelationshipFilter::relatedContactId </sdk/apps/qml/QtContacts/RelationshipFilter#relatedContactId-prop>`__
+:ref:`RelationshipFilter::relatedContactId <sdk_qtcontacts_relationshipfilter#relatedContactId-prop>`
 and
-`RelationshipModel::role </sdk/apps/qml/QtContacts/RelationshipModel#role-prop>`__.
+:ref:`RelationshipModel::role <sdk_qtcontacts_relationshipmodel#role-prop>`.
 
 | 
+
+.. _sdk_qtcontacts_relationshipmodel_relationshipType-prop:
 
 +--------------------------------------------------------------------------+
 |        \ relationshipType : variant                                      |
@@ -107,24 +120,27 @@ and
 
 This property holds the relationship type which the list of
 relationships returned by
-`RelationshipModel </sdk/apps/qml/QtContacts/RelationshipModel/>`__
-should contain.
+:ref:`RelationshipModel <sdk_qtcontacts_relationshipmodel>` should contain.
 
 **See also**
-`Relationship::type </sdk/apps/qml/QtContacts/Relationship#type-prop>`__.
+:ref:`Relationship::type <sdk_qtcontacts_relationship#type-prop>`.
 
 | 
 
+.. _sdk_qtcontacts_relationshipmodel_relationships-prop:
+
 +--------------------------------------------------------------------------+
 |        \ relationships :                                                 |
-| list<`Relationship </sdk/apps/qml/QtContacts/Relationship/>`__>          |
+| list<:ref:`Relationship <sdk_qtcontacts_relationship>`>                     |
 +--------------------------------------------------------------------------+
 
 This property holds a list of relationships.
 
-**See also** `Relationship </sdk/apps/qml/QtContacts/Relationship/>`__.
+**See also** :ref:`Relationship <sdk_qtcontacts_relationship>`.
 
 | 
+
+.. _sdk_qtcontacts_relationshipmodel_role-prop:
 
 +--------------------------------------------------------------------------+
 |        \ role : enumeration                                              |
@@ -132,16 +148,17 @@ This property holds a list of relationships.
 
 This property holds the relationship role which the list of
 relationships returned by
-`RelationshipModel </sdk/apps/qml/QtContacts/RelationshipModel/>`__
-should contain.
+:ref:`RelationshipModel <sdk_qtcontacts_relationshipmodel>` should contain.
 
 **See also**
-`RelationshipFilter::relatedContactRole </sdk/apps/qml/QtContacts/RelationshipFilter#relatedContactRole-prop>`__.
+:ref:`RelationshipFilter::relatedContactRole <sdk_qtcontacts_relationshipfilter#relatedContactRole-prop>`.
 
 | 
 
 Method Documentation
 --------------------
+
+.. _sdk_qtcontacts_relationshipmodel_addRelationship-method:
 
 +--------------------------------------------------------------------------+
 |        \ addRelationship(relationship)                                   |
@@ -150,6 +167,8 @@ Method Documentation
 Addes the given *relationship* to the backend store.
 
 | 
+
+.. _sdk_qtcontacts_relationshipmodel_removeRelationship-method:
 
 +--------------------------------------------------------------------------+
 |        \ removeRelationship(relationship)                                |

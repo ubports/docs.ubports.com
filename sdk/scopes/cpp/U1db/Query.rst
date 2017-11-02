@@ -1,3 +1,7 @@
+.. _sdk_u1db_query:
+U1db Query
+==========
+
 The Query class generates a filtered list of documents based on a query
 using the given Index.
 
@@ -13,31 +17,31 @@ Public Functions
 ----------------
 
 +--------------------------------------+--------------------------------------+
-|                                      | **`Query </sdk/scopes/cpp/U1db/Query |
-|                                      | #Query>`__**\ (QObject               |
+|                                      | **:ref:`Query <sdk_u1db_query#Query>`** |
+|                                      | \ (QObject                           |
 |                                      | \* *parent* = 0)                     |
 +--------------------------------------+--------------------------------------+
-| QStringList                          | **`getDocuments </sdk/scopes/cpp/U1d |
-|                                      | b/Query#getDocuments>`__**\ ()       |
+| QStringList                          | **:ref:`getDocuments <sdk_u1db_query#getD |
+|                                      | ocuments>`_ **\ ()                   |
 +--------------------------------------+--------------------------------------+
-| Index \*                             | **`getIndex </sdk/scopes/cpp/U1db/Qu |
-|                                      | ery#getIndex>`__**\ ()               |
+| Index \*                             | **:ref:`getIndex <sdk_u1db_query#getIndex |
+|                                      | >`_ **\ ()                           |
 +--------------------------------------+--------------------------------------+
-| QVariant                             | **`getQuery </sdk/scopes/cpp/U1db/Qu |
-|                                      | ery#getQuery>`__**\ ()               |
+| QVariant                             | **:ref:`getQuery <sdk_u1db_query#getQuery |
+|                                      | >`_ **\ ()                           |
 +--------------------------------------+--------------------------------------+
-| QList<QVariant>                      | **`getResults </sdk/scopes/cpp/U1db/ |
-|                                      | Query#getResults>`__**\ ()           |
+| QList<QVariant>                      | **:ref:`getResults <sdk_u1db_query#getRes |
+|                                      | ults>`_ **\ ()                       |
 +--------------------------------------+--------------------------------------+
-| void                                 | **`resetModel </sdk/scopes/cpp/U1db/ |
-|                                      | Query#resetModel>`__**\ ()           |
+| void                                 | **:ref:`resetModel <sdk_u1db_query#resetM |
+|                                      | odel>`_ **\ ()                       |
 +--------------------------------------+--------------------------------------+
-| void                                 | **`setIndex </sdk/scopes/cpp/U1db/Qu |
-|                                      | ery#setIndex>`__**\ (Index           |
+| void                                 | **:ref:`setIndex <sdk_u1db_query#setIndex |
+|                                      | >`_ **\ (Index                       |
 |                                      | \* *index*)                          |
 +--------------------------------------+--------------------------------------+
-| void                                 | **`setQuery </sdk/scopes/cpp/U1db/Qu |
-|                                      | ery#setQuery>`__**\ (QVariant        |
+| void                                 | **:ref:`setQuery <sdk_u1db_query#setQuery |
+|                                      | >`_ **\ (QVariant                    |
 |                                      | *query*)                             |
 +--------------------------------------+--------------------------------------+
 
@@ -61,7 +65,7 @@ Document.
 Instantiate a new Query with an optional *parent*, usually by declaring
 it as a QML item.
 
-**See also** `setQuery </sdk/scopes/cpp/U1db/Query#setQuery>`__\ ().
+**See also** :ref:`setQuery <sdk_u1db_query#setQuery>`\ ().
 
 .. rubric::        \ QStringList Query::getDocuments()
    :name: getDocuments

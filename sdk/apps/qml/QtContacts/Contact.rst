@@ -1,3 +1,7 @@
+.. _sdk_qtcontacts_contact:
+QtContacts Contact
+==================
+
 The Contact element represents an addressbook contact.
 
 +---------------------+-------------------------+
@@ -7,90 +11,78 @@ The Contact element represents an addressbook contact.
 Properties
 ----------
 
--  ****`address </sdk/apps/qml/QtContacts/Contact#address-prop>`__**** :
-   Address
--  ****`addresses </sdk/apps/qml/QtContacts/Contact#addresses-prop>`__****
-   : list<Address>
--  ****`anniversary </sdk/apps/qml/QtContacts/Contact#anniversary-prop>`__****
-   : Anniversary
--  ****`avatar </sdk/apps/qml/QtContacts/Contact#avatar-prop>`__**** :
-   Avatar
--  ****`birthday </sdk/apps/qml/QtContacts/Contact#birthday-prop>`__****
-   : Birthday
--  ****`contactDetails </sdk/apps/qml/QtContacts/Contact#contactDetails-prop>`__****
+-  :ref:`address <sdk_qtcontacts_contact_address-prop>` : Address
+-  :ref:`addresses <sdk_qtcontacts_contact_addresses-prop>` :
+   list<Address>
+-  :ref:`anniversary <sdk_qtcontacts_contact_anniversary-prop>` :
+   Anniversary
+-  :ref:`avatar <sdk_qtcontacts_contact_avatar-prop>` : Avatar
+-  :ref:`birthday <sdk_qtcontacts_contact_birthday-prop>` :
+   Birthday
+-  :ref:`contactDetails <sdk_qtcontacts_contact_contactDetails-prop>`
    : list<ContactDetail>
--  ****`contactId </sdk/apps/qml/QtContacts/Contact#contactId-prop>`__****
-   : int
--  ****`displayLabel </sdk/apps/qml/QtContacts/Contact#displayLabel-prop>`__****
-   : DisplayLabel
--  ****`email </sdk/apps/qml/QtContacts/Contact#email-prop>`__**** :
-   EmailAddress
--  ****`emails </sdk/apps/qml/QtContacts/Contact#emails-prop>`__**** :
+-  :ref:`contactId <sdk_qtcontacts_contact_contactId-prop>` : int
+-  :ref:`displayLabel <sdk_qtcontacts_contact_displayLabel-prop>` :
+   DisplayLabel
+-  :ref:`email <sdk_qtcontacts_contact_email-prop>` : EmailAddress
+-  :ref:`emails <sdk_qtcontacts_contact_emails-prop>` :
    list<EmailAddress>
--  ****`extendedDetail </sdk/apps/qml/QtContacts/Contact#extendedDetail-prop>`__****
+-  :ref:`extendedDetail <sdk_qtcontacts_contact_extendedDetail-prop>`
    : ExtendedDetail
--  ****`extendedDetails </sdk/apps/qml/QtContacts/Contact#extendedDetails-prop>`__****
+-  :ref:`extendedDetails <sdk_qtcontacts_contact_extendedDetails-prop>`
    : list<ExtendedDetail>
--  ****`family </sdk/apps/qml/QtContacts/Contact#family-prop>`__**** :
-   Family
--  ****`favorite </sdk/apps/qml/QtContacts/Contact#favorite-prop>`__****
-   : Favorite
--  ****`gender </sdk/apps/qml/QtContacts/Contact#gender-prop>`__**** :
-   Gender
--  ****`geolocation </sdk/apps/qml/QtContacts/Contact#geolocation-prop>`__****
-   : GeoLocation
--  ****`globalPresence </sdk/apps/qml/QtContacts/Contact#globalPresence-prop>`__****
+-  :ref:`family <sdk_qtcontacts_contact_family-prop>` : Family
+-  :ref:`favorite <sdk_qtcontacts_contact_favorite-prop>` :
+   Favorite
+-  :ref:`gender <sdk_qtcontacts_contact_gender-prop>` : Gender
+-  :ref:`geolocation <sdk_qtcontacts_contact_geolocation-prop>` :
+   GeoLocation
+-  :ref:`globalPresence <sdk_qtcontacts_contact_globalPresence-prop>`
    : GlobalPresence
--  ****`guid </sdk/apps/qml/QtContacts/Contact#guid-prop>`__**** : Guid
--  ****`hobby </sdk/apps/qml/QtContacts/Contact#hobby-prop>`__**** :
-   Hobby
--  ****`manager </sdk/apps/qml/QtContacts/Contact#manager-prop>`__**** :
-   string
--  ****`modified </sdk/apps/qml/QtContacts/Contact#modified-prop>`__****
-   : bool
--  ****`name </sdk/apps/qml/QtContacts/Contact#name-prop>`__**** : Name
--  ****`nickname </sdk/apps/qml/QtContacts/Contact#nickname-prop>`__****
-   : Nickname
--  ****`note </sdk/apps/qml/QtContacts/Contact#note-prop>`__**** : Note
--  ****`onlineAccount </sdk/apps/qml/QtContacts/Contact#onlineAccount-prop>`__****
+-  :ref:`guid <sdk_qtcontacts_contact_guid-prop>` : Guid
+-  :ref:`hobby <sdk_qtcontacts_contact_hobby-prop>` : Hobby
+-  :ref:`manager <sdk_qtcontacts_contact_manager-prop>` : string
+-  :ref:`modified <sdk_qtcontacts_contact_modified-prop>` : bool
+-  :ref:`name <sdk_qtcontacts_contact_name-prop>` : Name
+-  :ref:`nickname <sdk_qtcontacts_contact_nickname-prop>` :
+   Nickname
+-  :ref:`note <sdk_qtcontacts_contact_note-prop>` : Note
+-  :ref:`onlineAccount <sdk_qtcontacts_contact_onlineAccount-prop>`
    : OnlineAccount
--  ****`organization </sdk/apps/qml/QtContacts/Contact#organization-prop>`__****
-   : Organization
--  ****`organizations </sdk/apps/qml/QtContacts/Contact#organizations-prop>`__****
+-  :ref:`organization <sdk_qtcontacts_contact_organization-prop>` :
+   Organization
+-  :ref:`organizations <sdk_qtcontacts_contact_organizations-prop>`
    : list<Organization>
--  ****`phoneNumber </sdk/apps/qml/QtContacts/Contact#phoneNumber-prop>`__****
-   : PhoneNumber
--  ****`phoneNumbers </sdk/apps/qml/QtContacts/Contact#phoneNumbers-prop>`__****
-   : list<PhoneNumber>
--  ****`presence </sdk/apps/qml/QtContacts/Contact#presence-prop>`__****
-   : Presence
--  ****`ringtone </sdk/apps/qml/QtContacts/Contact#ringtone-prop>`__****
-   : Ringtone
--  ****`syncTarget </sdk/apps/qml/QtContacts/Contact#syncTarget-prop>`__****
-   : SyncTarget
--  ****`tag </sdk/apps/qml/QtContacts/Contact#tag-prop>`__**** : Tag
--  ****`timestamp </sdk/apps/qml/QtContacts/Contact#timestamp-prop>`__****
-   : Timestamp
--  ****`type </sdk/apps/qml/QtContacts/Contact#type-prop>`__**** :
-   enumeration
--  ****`url </sdk/apps/qml/QtContacts/Contact#url-prop>`__**** : Url
--  ****`urls </sdk/apps/qml/QtContacts/Contact#urls-prop>`__**** :
-   list<Url>
--  ****`version </sdk/apps/qml/QtContacts/Contact#version-prop>`__**** :
-   Version
+-  :ref:`phoneNumber <sdk_qtcontacts_contact_phoneNumber-prop>` :
+   PhoneNumber
+-  :ref:`phoneNumbers <sdk_qtcontacts_contact_phoneNumbers-prop>` :
+   list<PhoneNumber>
+-  :ref:`presence <sdk_qtcontacts_contact_presence-prop>` :
+   Presence
+-  :ref:`ringtone <sdk_qtcontacts_contact_ringtone-prop>` :
+   Ringtone
+-  :ref:`syncTarget <sdk_qtcontacts_contact_syncTarget-prop>` :
+   SyncTarget
+-  :ref:`tag <sdk_qtcontacts_contact_tag-prop>` : Tag
+-  :ref:`timestamp <sdk_qtcontacts_contact_timestamp-prop>` :
+   Timestamp
+-  :ref:`type <sdk_qtcontacts_contact_type-prop>` : enumeration
+-  :ref:`url <sdk_qtcontacts_contact_url-prop>` : Url
+-  :ref:`urls <sdk_qtcontacts_contact_urls-prop>` : list<Url>
+-  :ref:`version <sdk_qtcontacts_contact_version-prop>` : Version
 
 Methods
 -------
 
--  ****`addDetail </sdk/apps/qml/QtContacts/Contact#addDetail-method>`__****\ (detail)
--  ****`clearDetails </sdk/apps/qml/QtContacts/Contact#clearDetails-method>`__****\ ()
--  ****`isPreferredDetail </sdk/apps/qml/QtContacts/Contact#isPreferredDetail-method>`__****\ (actionName,
+-  :ref:`addDetail <sdk_qtcontacts_contact_addDetail-method>`\ (detail)
+-  :ref:`clearDetails <sdk_qtcontacts_contact_clearDetails-method>`\ ()
+-  :ref:`isPreferredDetail <sdk_qtcontacts_contact_isPreferredDetail-method>`\ (actionName,
    detail)
--  ****`preferredDetail </sdk/apps/qml/QtContacts/Contact#preferredDetail-method>`__****\ (actionName,
+-  :ref:`preferredDetail <sdk_qtcontacts_contact_preferredDetail-method>`\ (actionName,
    detail)
--  ****`removeDetail </sdk/apps/qml/QtContacts/Contact#removeDetail-method>`__****\ (detail)
--  ****`save </sdk/apps/qml/QtContacts/Contact#save-method>`__****\ ()
--  ****`setPreferredDetail </sdk/apps/qml/QtContacts/Contact#setPreferredDetail-method>`__****\ (actionName,
+-  :ref:`removeDetail <sdk_qtcontacts_contact_removeDetail-method>`\ (detail)
+-  :ref:`save <sdk_qtcontacts_contact_save-method>`\ ()
+-  :ref:`setPreferredDetail <sdk_qtcontacts_contact_setPreferredDetail-method>`\ (actionName,
    detail)
 
 Detailed Description
@@ -101,31 +93,33 @@ The Contact element is part of the **QtContacts** module.
 A Contact object has a collection of details (like a name, phone numbers
 and email addresses). Each detail (which can have multiple fields) is
 stored in an appropriate subclass of
-`ContactDetail </sdk/apps/qml/QtContacts/ContactDetail/>`__, and the
-Contact allows retrieving these details in various ways.
+:ref:`ContactDetail <sdk_qtcontacts_contactdetail>`, and the Contact allows
+retrieving these details in various ways.
 
 If some of the contact details are not unique details, all of this type
 of detail values can be accessed by the property with the name in
 plural. For example, if there are 3 phone numbers stored in a contact,
 they can be accessed by
-contact.\ `phoneNumbers </sdk/apps/qml/QtContacts/Contact#phoneNumbers-prop>`__
+contact.\ :ref:`phoneNumbers <sdk_qtcontacts_contact#phoneNumbers-prop>`
 property, which holds a list of all
-`PhoneNumber </sdk/apps/qml/QtContacts/PhoneNumber/>`__ details. If a
-contact does not contain a detail of particular type, the value of the
-corresponding singular property (e.g.
-`phoneNumber </sdk/apps/qml/QtContacts/Contact#phoneNumber-prop>`__) in
-undefined and the plural (e.g.
-`phoneNumbers </sdk/apps/qml/QtContacts/Contact#phoneNumbers-prop>`__)
-is empty. The list of properties which support multiple detail instances
-depends on the contact engine implementations.
+:ref:`PhoneNumber <sdk_qtcontacts_phonenumber>` details. If a contact does
+not contain a detail of particular type, the value of the corresponding
+singular property (e.g.
+:ref:`phoneNumber <sdk_qtcontacts_contact#phoneNumber-prop>`) in undefined
+and the plural (e.g.
+:ref:`phoneNumbers <sdk_qtcontacts_contact#phoneNumbers-prop>`) is empty.
+The list of properties which support multiple detail instances depends
+on the contact engine implementations.
 
 **See also** QContact.
 
 Property Documentation
 ----------------------
 
+.. _sdk_qtcontacts_contact_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ address : `Address </sdk/apps/qml/QtContacts/Address/>`__       |
+| :ref:` <>`\ address : `Address <sdk_qtcontacts_address>`               |
 +--------------------------------------------------------------------------+
 
 This property holds the address detail of the Contact object. In case a
@@ -133,48 +127,58 @@ contact has several addresses then the first one is returned.
 
 | 
 
+.. _sdk_qtcontacts_contact_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ addresses :                                                     |
-| list<`Address </sdk/apps/qml/QtContacts/Address/>`__>                    |
+| :ref:` <>`\ addresses : list<`Address <sdk_qtcontacts_address>`>          |
 +--------------------------------------------------------------------------+
 
 This property holds the address details of the Contact object.
 
 | 
 
+.. _sdk_qtcontacts_contact_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ anniversary :                                                   |
-| `Anniversary </sdk/apps/qml/QtContacts/Anniversary/>`__                  |
+| :ref:` <>`\ anniversary : `Anniversary <sdk_qtcontacts_anniversary>`   |
 +--------------------------------------------------------------------------+
 
 This property holds the anniversary detail of the Contact object.
 
 | 
 
+.. _sdk_qtcontacts_contact_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ avatar : `Avatar </sdk/apps/qml/QtContacts/Avatar/>`__          |
+| :ref:` <>`\ avatar : `Avatar <sdk_qtcontacts_avatar>`                  |
 +--------------------------------------------------------------------------+
 
 This property holds the avatar detail of the Contact object.
 
 | 
 
+.. _sdk_qtcontacts_contact_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ birthday : `Birthday </sdk/apps/qml/QtContacts/Birthday/>`__    |
+| :ref:` <>`\ birthday : `Birthday <sdk_qtcontacts_birthday>`            |
 +--------------------------------------------------------------------------+
 
 This property holds the birthday detail of the Contact object.
 
 | 
 
+.. _sdk_qtcontacts_contact_contactDetails-prop:
+
 +--------------------------------------------------------------------------+
 |        \ contactDetails :                                                |
-| list<`ContactDetail </sdk/apps/qml/QtContacts/ContactDetail/>`__>        |
+| list<:ref:`ContactDetail <sdk_qtcontacts_contactdetail>`>                   |
 +--------------------------------------------------------------------------+
 
 This property holds the list of all the details that the contact has.
 
 | 
+
+.. _sdk_qtcontacts_contact_contactId-prop:
 
 +--------------------------------------------------------------------------+
 |        \ contactId : int                                                 |
@@ -185,9 +189,10 @@ only.
 
 | 
 
+.. _sdk_qtcontacts_contact_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ displayLabel :                                                  |
-| `DisplayLabel </sdk/apps/qml/QtContacts/DisplayLabel/>`__                |
+| :ref:` <>`\ displayLabel : `DisplayLabel <sdk_qtcontacts_displaylabel>`|
 +--------------------------------------------------------------------------+
 
 This property holds the displayLabel detail of the Contact object.
@@ -196,9 +201,10 @@ as per versit doc specs this is a "FN" property
 
 | 
 
+.. _sdk_qtcontacts_contact_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ email :                                                         |
-| `EmailAddress </sdk/apps/qml/QtContacts/EmailAddress/>`__                |
+| :ref:` <>`\ email : `EmailAddress <sdk_qtcontacts_emailaddress>`       |
 +--------------------------------------------------------------------------+
 
 This property holds the email address detail of the Contact object. In
@@ -207,18 +213,21 @@ returned.
 
 | 
 
+.. _sdk_qtcontacts_contact_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ emails :                                                        |
-| list<`EmailAddress </sdk/apps/qml/QtContacts/EmailAddress/>`__>          |
+| :ref:` <>`\ emails : list<`EmailAddress <sdk_qtcontacts_emailaddress>`>   |
 +--------------------------------------------------------------------------+
 
 This property holds the email address details of the Contact object.
 
 | 
 
+.. _sdk_qtcontacts_contact_extendedDetail-prop:
+
 +--------------------------------------------------------------------------+
 |        \ extendedDetail :                                                |
-| `ExtendedDetail </sdk/apps/qml/QtContacts/ExtendedDetail/>`__            |
+| :ref:`ExtendedDetail <sdk_qtcontacts_extendeddetail>`                       |
 +--------------------------------------------------------------------------+
 
 This property holds the extended detail of the Contact object. In case a
@@ -226,72 +235,89 @@ contact has several extended details then the first one is returned.
 
 | 
 
+.. _sdk_qtcontacts_contact_extendedDetails-prop:
+
 +--------------------------------------------------------------------------+
 |        \ extendedDetails :                                               |
-| list<`ExtendedDetail </sdk/apps/qml/QtContacts/ExtendedDetail/>`__>      |
+| list<:ref:`ExtendedDetail <sdk_qtcontacts_extendeddetail>`>                 |
 +--------------------------------------------------------------------------+
 
 This property holds the extended details of the Contact object.
 
 | 
 
+.. _sdk_qtcontacts_contact_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ family : `Family </sdk/apps/qml/QtContacts/Family/>`__          |
+| :ref:` <>`\ family : `Family <sdk_qtcontacts_family>`                  |
 +--------------------------------------------------------------------------+
 
 This property holds the family detail of the Contact object.
 
 | 
 
+.. _sdk_qtcontacts_contact_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ favorite : `Favorite </sdk/apps/qml/QtContacts/Favorite/>`__    |
+| :ref:` <>`\ favorite : `Favorite <sdk_qtcontacts_favorite>`            |
 +--------------------------------------------------------------------------+
 
 This property holds the favorite detail of the Contact object.
 
 | 
 
+.. _sdk_qtcontacts_contact_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ gender : `Gender </sdk/apps/qml/QtContacts/Gender/>`__          |
+| :ref:` <>`\ gender : `Gender <sdk_qtcontacts_gender>`                  |
 +--------------------------------------------------------------------------+
 
 This property holds the gender detail of the Contact object.
 
 | 
 
+.. _sdk_qtcontacts_contact_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ geolocation :                                                   |
-| `GeoLocation </sdk/apps/qml/QtContacts/GeoLocation/>`__                  |
+| :ref:` <>`\ geolocation : `GeoLocation <sdk_qtcontacts_geolocation>`   |
 +--------------------------------------------------------------------------+
 
 This property holds the geolocation detail of the Contact object.
 
 | 
 
+.. _sdk_qtcontacts_contact_globalPresence-prop:
+
 +--------------------------------------------------------------------------+
 |        \ globalPresence :                                                |
-| `GlobalPresence </sdk/apps/qml/QtContacts/GlobalPresence/>`__            |
+| :ref:`GlobalPresence <sdk_qtcontacts_globalpresence>`                       |
 +--------------------------------------------------------------------------+
 
 This property holds the globalPresence detail of the Contact object.
 
 | 
 
+.. _sdk_qtcontacts_contact_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ guid : `Guid </sdk/apps/qml/QtContacts/Guid/>`__                |
+| :ref:` <>`\ guid : `Guid <sdk_qtcontacts_guid>`                        |
 +--------------------------------------------------------------------------+
 
 This property holds the guid detail of the Contact object.
 
 | 
 
+.. _sdk_qtcontacts_contact_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ hobby : `Hobby </sdk/apps/qml/QtContacts/Hobby/>`__             |
+| :ref:` <>`\ hobby : `Hobby <sdk_qtcontacts_hobby>`                     |
 +--------------------------------------------------------------------------+
 
 This property holds the hobby detail of the Contact object.
 
 | 
+
+.. _sdk_qtcontacts_contact_manager-prop:
 
 +--------------------------------------------------------------------------+
 |        \ manager : string                                                |
@@ -302,6 +328,8 @@ from.
 
 | 
 
+.. _sdk_qtcontacts_contact_modified-prop:
+
 +--------------------------------------------------------------------------+
 |        \ modified : bool                                                 |
 +--------------------------------------------------------------------------+
@@ -311,33 +339,41 @@ has been changed, returns true, otherwise returns false.
 
 | 
 
+.. _sdk_qtcontacts_contact_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ name : `Name </sdk/apps/qml/QtContacts/Name/>`__                |
+| :ref:` <>`\ name : `Name <sdk_qtcontacts_name>`                        |
 +--------------------------------------------------------------------------+
 
 This property holds the name detail of the Contact object.
 
 | 
 
+.. _sdk_qtcontacts_contact_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ nickname : `Nickname </sdk/apps/qml/QtContacts/Nickname/>`__    |
+| :ref:` <>`\ nickname : `Nickname <sdk_qtcontacts_nickname>`            |
 +--------------------------------------------------------------------------+
 
 This property holds the nickname detail of the Contact object.
 
 | 
 
+.. _sdk_qtcontacts_contact_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ note : `Note </sdk/apps/qml/QtContacts/Note/>`__                |
+| :ref:` <>`\ note : `Note <sdk_qtcontacts_note>`                        |
 +--------------------------------------------------------------------------+
 
 This property holds the note detail of the Contact object.
 
 | 
 
+.. _sdk_qtcontacts_contact_onlineAccount-prop:
+
 +--------------------------------------------------------------------------+
 |        \ onlineAccount :                                                 |
-| `OnlineAccount </sdk/apps/qml/QtContacts/OnlineAccount/>`__              |
+| :ref:`OnlineAccount <sdk_qtcontacts_onlineaccount>`                         |
 +--------------------------------------------------------------------------+
 
 This property holds the onlineAccount detail of the Contact object. In
@@ -345,27 +381,31 @@ case a contact has several accounts then the first one is returned.
 
 | 
 
+.. _sdk_qtcontacts_contact_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ organization :                                                  |
-| `Organization </sdk/apps/qml/QtContacts/Organization/>`__                |
+| :ref:` <>`\ organization : `Organization <sdk_qtcontacts_organization>`|
 +--------------------------------------------------------------------------+
 
 This property holds the organization detail of the Contact object.
 
 | 
 
+.. _sdk_qtcontacts_contact_organizations-prop:
+
 +--------------------------------------------------------------------------+
 |        \ organizations :                                                 |
-| list<`Organization </sdk/apps/qml/QtContacts/Organization/>`__>          |
+| list<:ref:`Organization <sdk_qtcontacts_organization>`>                     |
 +--------------------------------------------------------------------------+
 
 This property holds the organization details of the Contact object.
 
 | 
 
+.. _sdk_qtcontacts_contact_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ phoneNumber :                                                   |
-| `PhoneNumber </sdk/apps/qml/QtContacts/PhoneNumber/>`__                  |
+| :ref:` <>`\ phoneNumber : `PhoneNumber <sdk_qtcontacts_phonenumber>`   |
 +--------------------------------------------------------------------------+
 
 This property holds the phone number detail of the Contact object. In
@@ -373,55 +413,68 @@ case a contact has several numbers then the first one is returned.
 
 | 
 
+.. _sdk_qtcontacts_contact_phoneNumbers-prop:
+
 +--------------------------------------------------------------------------+
 |        \ phoneNumbers :                                                  |
-| list<`PhoneNumber </sdk/apps/qml/QtContacts/PhoneNumber/>`__>            |
+| list<:ref:`PhoneNumber <sdk_qtcontacts_phonenumber>`>                       |
 +--------------------------------------------------------------------------+
 
 This property holds the phone number details of the Contact object.
 
 | 
 
+.. _sdk_qtcontacts_contact_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ presence : `Presence </sdk/apps/qml/QtContacts/Presence/>`__    |
+| :ref:` <>`\ presence : `Presence <sdk_qtcontacts_presence>`            |
 +--------------------------------------------------------------------------+
 
 This property holds the presence detail of the Contact object.
 
 | 
 
+.. _sdk_qtcontacts_contact_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ ringtone : `Ringtone </sdk/apps/qml/QtContacts/Ringtone/>`__    |
+| :ref:` <>`\ ringtone : `Ringtone <sdk_qtcontacts_ringtone>`            |
 +--------------------------------------------------------------------------+
 
 This property holds the ringtone detail of the Contact object.
 
 | 
 
+.. _sdk_qtcontacts_contact_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ syncTarget :                                                    |
-| `SyncTarget </sdk/apps/qml/QtContacts/SyncTarget/>`__                    |
+| :ref:` <>`\ syncTarget : `SyncTarget <sdk_qtcontacts_synctarget>`      |
 +--------------------------------------------------------------------------+
 
 This property holds the syncTarget detail of the Contact object.
 
 | 
 
+.. _sdk_qtcontacts_contact_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ tag : `Tag </sdk/apps/qml/QtContacts/Tag/>`__                   |
+| :ref:` <>`\ tag : `Tag <sdk_qtcontacts_tag>`                           |
 +--------------------------------------------------------------------------+
 
 This property holds the tag detail of the Contact object.
 
 | 
 
+.. _sdk_qtcontacts_contact_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ timestamp : `Timestamp </sdk/apps/qml/QtContacts/Timestamp/>`__ |
+| :ref:` <>`\ timestamp : `Timestamp <sdk_qtcontacts_timestamp>`         |
 +--------------------------------------------------------------------------+
 
 This property holds the timestamp detail of the Contact object.
 
 | 
+
+.. _sdk_qtcontacts_contact_type-prop:
 
 +--------------------------------------------------------------------------+
 |        \ type : enumeration                                              |
@@ -434,21 +487,27 @@ This property holds type of the Contact, the value can be one of:
 
 | 
 
+.. _sdk_qtcontacts_contact_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ url : `Url </sdk/apps/qml/QtContacts/Url/>`__                   |
+| :ref:` <>`\ url : `Url <sdk_qtcontacts_url>`                           |
 +--------------------------------------------------------------------------+
 
 This property holds the url detail of the Contact object.
 
 | 
 
+.. _sdk_qtcontacts_contact_-method:
+
 +--------------------------------------------------------------------------+
-|        \ urls : list<`Url </sdk/apps/qml/QtContacts/Url/>`__>            |
+| :ref:` <>`\ urls : list<`Url <sdk_qtcontacts_url>`>                       |
 +--------------------------------------------------------------------------+
 
 This property holds the url details of the Contact object.
 
 | 
+
+.. _sdk_qtcontacts_contact_version-method:
 
 +--------------------------------------------------------------------------+
 |        \ version : Version                                               |
@@ -460,6 +519,8 @@ This property holds the version detail of the Contact object.
 
 Method Documentation
 --------------------
+
+.. _sdk_qtcontacts_contact_addDetail-method:
 
 +--------------------------------------------------------------------------+
 |        \ addDetail(detail)                                               |
@@ -474,6 +535,8 @@ times, the *detail* should be copied before calling this function.
 
 | 
 
+.. _sdk_qtcontacts_contact_clearDetails-method:
+
 +--------------------------------------------------------------------------+
 |        \ clearDetails()                                                  |
 +--------------------------------------------------------------------------+
@@ -481,6 +544,8 @@ times, the *detail* should be copied before calling this function.
 Remove all detail objects in this contact.
 
 | 
+
+.. _sdk_qtcontacts_contact_isPreferredDetail-method:
 
 +--------------------------------------------------------------------------+
 |        \ isPreferredDetail(actionName, detail)                           |
@@ -490,9 +555,11 @@ Returns true if the given *detail* is a preferred detail for the given
 *actionName*, or for any action if the *actionName* is empty.
 
 **See also**
-`preferredDetail() </sdk/apps/qml/QtContacts/Contact#preferredDetail-method>`__.
+:ref:`preferredDetail() <sdk_qtcontacts_contact#preferredDetail-method>`.
 
 | 
+
+.. _sdk_qtcontacts_contact_preferredDetail-method:
 
 +--------------------------------------------------------------------------+
 |        \ preferredDetail(actionName, detail)                             |
@@ -507,6 +574,8 @@ supplied *actionName*, returns null.
 
 | 
 
+.. _sdk_qtcontacts_contact_removeDetail-method:
+
 +--------------------------------------------------------------------------+
 |        \ removeDetail(detail)                                            |
 +--------------------------------------------------------------------------+
@@ -516,6 +585,8 @@ successful, otherwise returns false.
 
 | 
 
+.. _sdk_qtcontacts_contact_save-method:
+
 +--------------------------------------------------------------------------+
 |        \ save()                                                          |
 +--------------------------------------------------------------------------+
@@ -523,9 +594,11 @@ successful, otherwise returns false.
 Saves this Contact if the contact has been modified.
 
 **See also**
-`Contact::modified </sdk/apps/qml/QtContacts/Contact#modified-prop>`__.
+:ref:`Contact::modified <sdk_qtcontacts_contact#modified-prop>`.
 
 | 
+
+.. _sdk_qtcontacts_contact_setPreferredDetail-method:
 
 +--------------------------------------------------------------------------+
 |        \ setPreferredDetail(actionName, detail)                          |
@@ -540,6 +613,6 @@ The *preferredDetail* object must exist in this object, and the
 Returns true if the preference could be recorded, and false otherwise.
 
 **See also**
-`preferredDetail() </sdk/apps/qml/QtContacts/Contact#preferredDetail-method>`__.
+:ref:`preferredDetail() <sdk_qtcontacts_contact#preferredDetail-method>`.
 
 | 

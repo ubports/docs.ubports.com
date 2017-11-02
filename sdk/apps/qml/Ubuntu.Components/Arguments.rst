@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_arguments:
+Ubuntu.Components Arguments
+===========================
+
 The Arguments class provides a way to declare what command line
 parameters are expected by the application.
 
@@ -8,24 +12,23 @@ parameters are expected by the application.
 Properties
 ----------
 
--  ****`arguments </sdk/apps/qml/Ubuntu.Components/Arguments#arguments-prop>`__****
+-  :ref:`arguments <sdk_ubuntu_components_arguments_arguments-prop>`
    : list<Argument>
--  ****`defaultArgument </sdk/apps/qml/Ubuntu.Components/Arguments#defaultArgument-prop>`__****
+-  :ref:`defaultArgument <sdk_ubuntu_components_arguments_defaultArgument-prop>`
    : Argument
--  ****`error </sdk/apps/qml/Ubuntu.Components/Arguments#error-prop>`__****
-   : bool
--  ****`errorMessage </sdk/apps/qml/Ubuntu.Components/Arguments#errorMessage-prop>`__****
+-  :ref:`error <sdk_ubuntu_components_arguments_error-prop>` : bool
+-  :ref:`errorMessage <sdk_ubuntu_components_arguments_errorMessage-prop>`
    : string
--  ****`values </sdk/apps/qml/Ubuntu.Components/Arguments#values-prop>`__****
-   : Object
+-  :ref:`values <sdk_ubuntu_components_arguments_values-prop>` :
+   Object
 
 Methods
 -------
 
 -  void
-   ****`printUsage </sdk/apps/qml/Ubuntu.Components/Arguments#printUsage-method>`__****\ ()
+   **:ref:`printUsage <sdk_ubuntu_components_arguments#printUsage-method>`**\ ()
 -  void
-   ****`quitWithError </sdk/apps/qml/Ubuntu.Components/Arguments#quitWithError-method>`__****\ (string
+   **:ref:`quitWithError <sdk_ubuntu_components_arguments#quitWithError-method>`**\ (string
    *errorMessage*)
 
 Detailed Description
@@ -54,14 +57,14 @@ Example of use:
 
 The code above ensures that at least one argument is passed on the
 command line which will then be available in QML via the
-`defaultArgument </sdk/apps/qml/Ubuntu.Components/Arguments#defaultArgument-prop>`__
+:ref:`defaultArgument <sdk_ubuntu_components_arguments#defaultArgument-prop>`
 property. Optionally two other arguments can be passed:
 
 *--fullscreen* that will be exposed as a boolean property:
-`values </sdk/apps/qml/Ubuntu.Components/Arguments#values-prop>`__.fullscreen
+:ref:`values <sdk_ubuntu_components_arguments#values-prop>`.fullscreen
 
 *--volume* that will be exposed as a string property:
-`values </sdk/apps/qml/Ubuntu.Components/Arguments#values-prop>`__.volume
+:ref:`values <sdk_ubuntu_components_arguments#values-prop>`.volume
 
 .. code:: qml
 
@@ -89,27 +92,29 @@ application will exit:
     --volume=VOLUME_LEVE level to which to set the volume
     Expects URL of the media to play.
 
-**See also** `Argument </sdk/apps/qml/Ubuntu.Components/Argument/>`__.
+**See also** :ref:`Argument <sdk_ubuntu_components_argument>`.
 
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_arguments_[read-only]  arguments-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [read-only] [default] arguments :                               |
-| list<`Argument </sdk/apps/qml/Ubuntu.Components/Argument/>`__>           |
+| list<:ref:`Argument <sdk_ubuntu_components_argument>`>                      |
 +--------------------------------------------------------------------------+
 
-List of command line
-`arguments </sdk/apps/qml/Ubuntu.Components/Argument/>`__ that are
-expected by the application.
+List of command line :ref:`arguments <sdk_ubuntu_components_argument>` that
+are expected by the application.
 
 See detailed description above for an example on how to use it.
 
 | 
 
+.. _sdk_ubuntu_components_arguments_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ defaultArgument :                                               |
-| `Argument </sdk/apps/qml/Ubuntu.Components/Argument/>`__                 |
+| :ref:` <>`\ defaultArgument : `Argument <sdk_ubuntu_components_argument>` |
 +--------------------------------------------------------------------------+
 
 The default argument corresponds to the values passed on the command
@@ -125,6 +130,8 @@ For example in:
 
 | 
 
+.. _sdk_ubuntu_components_arguments_[read-only] error-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [read-only] error : bool                                        |
 +--------------------------------------------------------------------------+
@@ -133,9 +140,11 @@ Whether or not the command line arguments passed to the application
 correspond to the expected arguments.
 
 Also set when calling
-`quitWithError </sdk/apps/qml/Ubuntu.Components/Arguments#quitWithError-method>`__
+:ref:`quitWithError <sdk_ubuntu_components_arguments#quitWithError-method>`
 
 | 
+
+.. _sdk_ubuntu_components_arguments_[read-only] errorMessage-prop:
 
 +--------------------------------------------------------------------------+
 |        \ [read-only] errorMessage : string                               |
@@ -145,9 +154,11 @@ Error message describing how the command line arguments passed to the
 application failed to correspond to the expected arguments.
 
 Also set when calling
-`quitWithError </sdk/apps/qml/Ubuntu.Components/Arguments#quitWithError-method>`__
+:ref:`quitWithError <sdk_ubuntu_components_arguments#quitWithError-method>`
 
 | 
+
+.. _sdk_ubuntu_components_arguments_[read-only] values-prop:
 
 +--------------------------------------------------------------------------+
 |        \ [read-only] values : Object                                     |
@@ -161,6 +172,8 @@ arguments.
 Method Documentation
 --------------------
 
+.. _sdk_ubuntu_components_arguments_void printUsage-method:
+
 +--------------------------------------------------------------------------+
 |        \ void printUsage()                                               |
 +--------------------------------------------------------------------------+
@@ -168,6 +181,8 @@ Method Documentation
 Outputs help to the console on how to pass arguments to the application.
 
 | 
+
+.. _sdk_ubuntu_components_arguments_void quitWithError-method:
 
 +--------------------------------------------------------------------------+
 |        \ void quitWithError(string *errorMessage*)                       |

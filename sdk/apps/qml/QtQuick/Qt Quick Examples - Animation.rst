@@ -1,3 +1,7 @@
+.. _sdk_qtquick_qt_quick_examples_-_animation:
+QtQuick Qt Quick Examples - Animation
+=====================================
+
 
 
 |image0|
@@ -8,7 +12,7 @@ feature.
 
 For more information about animations, visit `Important Concepts in Qt
 Quick - States, Transitions and
-Animations </sdk/apps/qml/QtQuick/qtquick-statesanimations-topic/>`__.
+Animations </sdk/apps/qml/QtQuick/qtquick-statesanimations-topic/>`_ .
 
 .. rubric:: Running the Example
    :name: running-the-example
@@ -170,7 +174,7 @@ animations.
    :name: states
 
 *States* demonstrates how the properties of an item can vary between
-`states </sdk/apps/qml/QtQuick/qtquick-statesanimations-states/>`__.
+`states </sdk/apps/qml/QtQuick/qtquick-statesanimations-states/>`_ .
 
 It defines several states:
 
@@ -218,7 +222,7 @@ by setting transitions:
    :name: pathanimation
 
 *PathAnimation* animates an image along a bezier curve using a
-`PathAnimation </sdk/apps/qml/QtQuick/animation#pathanimation>`__.
+`PathAnimation </sdk/apps/qml/QtQuick/animation/#pathanimation>`_ .
 
 .. code:: qml
 
@@ -246,7 +250,7 @@ by setting transitions:
 
 *PathInterpolator* animates an image along the same bezier curve, using
 a
-`PathInterpolator </sdk/apps/qml/QtQuick/animation#pathinterpolator>`__
+`PathInterpolator </sdk/apps/qml/QtQuick/animation/#pathinterpolator>`_ 
 instead.
 
 .. code:: qml

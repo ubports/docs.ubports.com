@@ -1,3 +1,7 @@
+.. _sdk_qtquick_pathinterpolator:
+QtQuick PathInterpolator
+========================
+
 Specifies how to manually animate along a path
 
 +---------------------+----------------------+
@@ -7,19 +11,17 @@ Specifies how to manually animate along a path
 Properties
 ----------
 
--  ****`angle </sdk/apps/qml/QtQuick/PathInterpolator#angle-prop>`__****
-   : real
--  ****`path </sdk/apps/qml/QtQuick/PathInterpolator#path-prop>`__**** :
-   Path
--  ****`progress </sdk/apps/qml/QtQuick/PathInterpolator#progress-prop>`__****
-   : real
--  ****`x </sdk/apps/qml/QtQuick/PathInterpolator#x-prop>`__**** : real
--  ****`y </sdk/apps/qml/QtQuick/PathInterpolator#y-prop>`__**** : real
+-  :ref:`angle <sdk_qtquick_pathinterpolator_angle-prop>` : real
+-  :ref:`path <sdk_qtquick_pathinterpolator_path-prop>` : Path
+-  :ref:`progress <sdk_qtquick_pathinterpolator_progress-prop>` :
+   real
+-  :ref:`x <sdk_qtquick_pathinterpolator_x-prop>` : real
+-  :ref:`y <sdk_qtquick_pathinterpolator_y-prop>` : real
 
 Detailed Description
 --------------------
 
-`PathInterpolator </sdk/apps/qml/QtQuick/animation#pathinterpolator>`__
+`PathInterpolator </sdk/apps/qml/QtQuick/animation/#pathinterpolator>`_ 
 provides ``x``, ``y``, and ``angle`` information for a particular
 ``progress`` along a path.
 
@@ -57,28 +59,34 @@ path.
 Property Documentation
 ----------------------
 
+.. _sdk_qtquick_pathinterpolator_angle-prop:
+
 +--------------------------------------------------------------------------+
 |        \ angle : real                                                    |
 +--------------------------------------------------------------------------+
 
 This property holds the angle of the path tangent at
-`progress </sdk/apps/qml/QtQuick/PathInterpolator#progress-prop>`__.
+:ref:`progress <sdk_qtquick_pathinterpolator#progress-prop>`.
 
 Angles are reported clockwise, with zero degrees at the 3 o'clock
 position.
 
 | 
 
+.. _sdk_qtquick_pathinterpolator_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ path : `Path </sdk/apps/qml/QtQuick/Path/>`__                   |
+| :ref:` <>`\ path : `Path <sdk_qtquick_path>`                           |
 +--------------------------------------------------------------------------+
 
 This property holds the path to interpolate.
 
 For more information on defining a path see the
-`Path </sdk/apps/qml/QtQuick/Path/>`__ documentation.
+:ref:`Path <sdk_qtquick_path>` documentation.
 
 | 
+
+.. _sdk_qtquick_pathinterpolator_progress-prop:
 
 +--------------------------------------------------------------------------+
 |        \ progress : real                                                 |
@@ -87,30 +95,34 @@ For more information on defining a path see the
 This property holds the current progress along the path.
 
 Typical usage of
-`PathInterpolator </sdk/apps/qml/QtQuick/animation#pathinterpolator>`__
+`PathInterpolator </sdk/apps/qml/QtQuick/animation/#pathinterpolator>`_ 
 is to set the progress (often via a
-`NumberAnimation </sdk/apps/qml/QtQuick/NumberAnimation/>`__), and read
-the corresponding values for x, y, and angle (often via bindings to
-these values).
+:ref:`NumberAnimation <sdk_qtquick_numberanimation>`), and read the
+corresponding values for x, y, and angle (often via bindings to these
+values).
 
 Progress ranges from 0.0 to 1.0.
 
 | 
+
+.. _sdk_qtquick_pathinterpolator_x-prop:
 
 +--------------------------------------------------------------------------+
 |        \ x : real                                                        |
 +--------------------------------------------------------------------------+
 
 These properties hold the position of the path at
-`progress </sdk/apps/qml/QtQuick/PathInterpolator#progress-prop>`__.
+:ref:`progress <sdk_qtquick_pathinterpolator#progress-prop>`.
 
 | 
+
+.. _sdk_qtquick_pathinterpolator_y-prop:
 
 +--------------------------------------------------------------------------+
 |        \ y : real                                                        |
 +--------------------------------------------------------------------------+
 
 These properties hold the position of the path at
-`progress </sdk/apps/qml/QtQuick/PathInterpolator#progress-prop>`__.
+:ref:`progress <sdk_qtquick_pathinterpolator#progress-prop>`.
 
 | 

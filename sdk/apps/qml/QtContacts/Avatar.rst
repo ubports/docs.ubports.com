@@ -1,3 +1,7 @@
+.. _sdk_qtcontacts_avatar:
+QtContacts Avatar
+=================
+
 The Avatar element contains avatar URLs of a contact.
 
 +---------------------+-------------------------+
@@ -7,10 +11,8 @@ The Avatar element contains avatar URLs of a contact.
 Properties
 ----------
 
--  ****`imageUrl </sdk/apps/qml/QtContacts/Avatar#imageUrl-prop>`__****
-   : string
--  ****`videoUrl </sdk/apps/qml/QtContacts/Avatar#videoUrl-prop>`__****
-   : string
+-  :ref:`imageUrl <sdk_qtcontacts_avatar_imageUrl-prop>` : string
+-  :ref:`videoUrl <sdk_qtcontacts_avatar_videoUrl-prop>` : string
 
 Detailed Description
 --------------------
@@ -25,6 +27,8 @@ This element is part of the **QtContacts** module.
 Property Documentation
 ----------------------
 
+.. _sdk_qtcontacts_avatar_imageUrl-prop:
+
 +--------------------------------------------------------------------------+
 |        \ imageUrl : string                                               |
 +--------------------------------------------------------------------------+
@@ -32,6 +36,8 @@ Property Documentation
 This property holds the URL of the avatar image.
 
 | 
+
+.. _sdk_qtcontacts_avatar_videoUrl-prop:
 
 +--------------------------------------------------------------------------+
 |        \ videoUrl : string                                               |

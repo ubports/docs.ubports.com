@@ -1,5 +1,9 @@
+.. _sdk_notfoundexception:
+NotFoundException
+=================
+
 Exception to indicate that an object wasn't found by a lookup function.
-`More... </sdk/scopes/cpp/unity.scopes.NotFoundException#details>`__
+`More... </sdk/scopes/cpp/unity.scopes.NotFoundException/#details>`_ 
 
 ``#include <unity/scopes/ScopeExceptions.h>``
 
@@ -14,9 +18,9 @@ Inheritance diagram for unity::scopes::NotFoundException:
 
  
 
-`NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException#adcda23015482c9a3fd7d7890ab152b9f>`__
+`NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/#adcda23015482c9a3fd7d7890ab152b9f>`_ 
 (std::string const &reason, std::string const
-&\ `name </sdk/scopes/cpp/unity.scopes.NotFoundException#a7a27983f2cfa8034f2dccb67a996730b>`__)
+&\ `name </sdk/scopes/cpp/unity.scopes.NotFoundException/#a7a27983f2cfa8034f2dccb67a996730b>`_ )
 
  
 
@@ -26,7 +30,7 @@ Inheritance diagram for unity::scopes::NotFoundException:
 
 virtual std::exception\_ptr 
 
-`self </sdk/scopes/cpp/unity.scopes.NotFoundException#a649bfe3375d8e276394a73c07908411d>`__
+`self </sdk/scopes/cpp/unity.scopes.NotFoundException/#a649bfe3375d8e276394a73c07908411d>`_ 
 () const override
 
  
@@ -37,7 +41,7 @@ virtual std::exception\_ptr 
 
 virtual std::string 
 
-`name </sdk/scopes/cpp/unity.scopes.NotFoundException#a7a27983f2cfa8034f2dccb67a996730b>`__
+`name </sdk/scopes/cpp/unity.scopes.NotFoundException/#a7a27983f2cfa8034f2dccb67a996730b>`_ 
 () const
 
  
@@ -53,16 +57,16 @@ Copy constructor and assignment operator have the usual value semantics.
          
 
 **NotFoundException**
-(`NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/>`__
+(`NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/>`_ 
 const &)
 
  
 
-`NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/>`__
+`NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/>`_ 
 & 
 
 **operator=**
-(`NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/>`__
+(`NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/>`_ 
 const &)
 
  

@@ -1,3 +1,7 @@
+.. _sdk_qtquick_sprite:
+QtQuick Sprite
+==============
+
 Specifies sprite animations
 
 +---------------------+----------------------+
@@ -7,35 +11,27 @@ Specifies sprite animations
 Properties
 ----------
 
--  ****`duration </sdk/apps/qml/QtQuick/Sprite#duration-prop>`__**** :
+-  :ref:`duration <sdk_qtquick_sprite_duration-prop>` : int
+-  :ref:`durationVariation <sdk_qtquick_sprite_durationVariation-prop>`
+   : int
+-  :ref:`frameCount <sdk_qtquick_sprite_frameCount-prop>` : int
+-  :ref:`frameDuration <sdk_qtquick_sprite_frameDuration-prop>` :
    int
--  ****`durationVariation </sdk/apps/qml/QtQuick/Sprite#durationVariation-prop>`__****
+-  :ref:`frameDurationVariation <sdk_qtquick_sprite_frameDurationVariation-prop>`
    : int
--  ****`frameCount </sdk/apps/qml/QtQuick/Sprite#frameCount-prop>`__****
-   : int
--  ****`frameDuration </sdk/apps/qml/QtQuick/Sprite#frameDuration-prop>`__****
-   : int
--  ****`frameDurationVariation </sdk/apps/qml/QtQuick/Sprite#frameDurationVariation-prop>`__****
-   : int
--  ****`frameHeight </sdk/apps/qml/QtQuick/Sprite#frameHeight-prop>`__****
-   : int
--  ****`frameRate </sdk/apps/qml/QtQuick/Sprite#frameRate-prop>`__**** :
-   qreal
--  ****`frameRateVariation </sdk/apps/qml/QtQuick/Sprite#frameRateVariation-prop>`__****
+-  :ref:`frameHeight <sdk_qtquick_sprite_frameHeight-prop>` : int
+-  :ref:`frameRate <sdk_qtquick_sprite_frameRate-prop>` : qreal
+-  :ref:`frameRateVariation <sdk_qtquick_sprite_frameRateVariation-prop>`
    : qreal
--  ****`frameSync </sdk/apps/qml/QtQuick/Sprite#frameSync-prop>`__**** :
-   bool
--  ****`frameWidth </sdk/apps/qml/QtQuick/Sprite#frameWidth-prop>`__****
-   : int
--  ****`frameX </sdk/apps/qml/QtQuick/Sprite#frameX-prop>`__**** : int
--  ****`frameY </sdk/apps/qml/QtQuick/Sprite#frameY-prop>`__**** : int
--  ****`name </sdk/apps/qml/QtQuick/Sprite#name-prop>`__**** : string
--  ****`randomStart </sdk/apps/qml/QtQuick/Sprite#randomStart-prop>`__****
-   : bool
--  ****`reverse </sdk/apps/qml/QtQuick/Sprite#reverse-prop>`__**** :
-   bool
--  ****`source </sdk/apps/qml/QtQuick/Sprite#source-prop>`__**** : url
--  ****`to </sdk/apps/qml/QtQuick/Sprite#to-prop>`__**** : QVariantMap
+-  :ref:`frameSync <sdk_qtquick_sprite_frameSync-prop>` : bool
+-  :ref:`frameWidth <sdk_qtquick_sprite_frameWidth-prop>` : int
+-  :ref:`frameX <sdk_qtquick_sprite_frameX-prop>` : int
+-  :ref:`frameY <sdk_qtquick_sprite_frameY-prop>` : int
+-  :ref:`name <sdk_qtquick_sprite_name-prop>` : string
+-  :ref:`randomStart <sdk_qtquick_sprite_randomStart-prop>` : bool
+-  :ref:`reverse <sdk_qtquick_sprite_reverse-prop>` : bool
+-  :ref:`source <sdk_qtquick_sprite_source-prop>` : url
+-  :ref:`to <sdk_qtquick_sprite_to-prop>` : QVariantMap
 
 Detailed Description
 --------------------
@@ -46,10 +42,12 @@ multiple rows, as long as they form a contiguous line wrapping to the
 next row of the file from the left edge of the file.
 
 For full details, see the `Sprite
-Animations </sdk/apps/qml/QtQuick/qtquick-effects-sprites/>`__ overview.
+Animations </sdk/apps/qml/QtQuick/qtquick-effects-sprites/>`_  overview.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_sprite_duration-prop:
 
 +--------------------------------------------------------------------------+
 |        \ duration : int                                                  |
@@ -57,14 +55,15 @@ Property Documentation
 
 Duration of the animation. Values below 0 are invalid.
 
-If `frameRate </sdk/apps/qml/QtQuick/Sprite#frameRate-prop>`__ is valid
-then it will be used to calculate the duration of the frames. If not,
-and `frameDuration </sdk/apps/qml/QtQuick/Sprite#frameDuration-prop>`__
-is valid, then
-`frameDuration </sdk/apps/qml/QtQuick/Sprite#frameDuration-prop>`__ will
-be used. Otherwise duration is used.
+If :ref:`frameRate <sdk_qtquick_sprite#frameRate-prop>` is valid then it
+will be used to calculate the duration of the frames. If not, and
+:ref:`frameDuration <sdk_qtquick_sprite#frameDuration-prop>` is valid, then
+:ref:`frameDuration <sdk_qtquick_sprite#frameDuration-prop>` will be used.
+Otherwise duration is used.
 
 | 
+
+.. _sdk_qtquick_sprite_durationVariation-prop:
 
 +--------------------------------------------------------------------------+
 |        \ durationVariation : int                                         |
@@ -80,6 +79,8 @@ Default is 0.
 
 | 
 
+.. _sdk_qtquick_sprite_frameCount-prop:
+
 +--------------------------------------------------------------------------+
 |        \ frameCount : int                                                |
 +--------------------------------------------------------------------------+
@@ -88,18 +89,22 @@ Number of frames in this sprite.
 
 | 
 
+.. _sdk_qtquick_sprite_frameDuration-prop:
+
 +--------------------------------------------------------------------------+
 |        \ frameDuration : int                                             |
 +--------------------------------------------------------------------------+
 
 Duration of each frame of the animation. Values below 0 are invalid.
 
-If `frameRate </sdk/apps/qml/QtQuick/Sprite#frameRate-prop>`__ is valid
-then it will be used to calculate the duration of the frames. If not,
-and frameDuration is valid, then frameDuration will be used. Otherwise
+If :ref:`frameRate <sdk_qtquick_sprite#frameRate-prop>` is valid then it
+will be used to calculate the duration of the frames. If not, and
+frameDuration is valid, then frameDuration will be used. Otherwise
 duration is used.
 
 | 
+
+.. _sdk_qtquick_sprite_frameDurationVariation-prop:
 
 +--------------------------------------------------------------------------+
 |        \ frameDurationVariation : int                                    |
@@ -110,12 +115,14 @@ Variation will never decrease the length of the animation to less than
 0.
 
 frameDurationVariation will only take effect if
-`frameDuration </sdk/apps/qml/QtQuick/Sprite#frameDuration-prop>`__ is
-used to calculate the duration of frames.
+:ref:`frameDuration <sdk_qtquick_sprite#frameDuration-prop>` is used to
+calculate the duration of frames.
 
 Default is 0.
 
 | 
+
+.. _sdk_qtquick_sprite_frameHeight-prop:
 
 +--------------------------------------------------------------------------+
 |        \ frameHeight : int                                               |
@@ -125,6 +132,8 @@ Height of a single frame in this sprite.
 
 | 
 
+.. _sdk_qtquick_sprite_frameRate-prop:
+
 +--------------------------------------------------------------------------+
 |        \ frameRate : qreal                                               |
 +--------------------------------------------------------------------------+
@@ -133,12 +142,13 @@ Frames per second to show in the animation. Values below 0 are invalid.
 
 If frameRate is valid then it will be used to calculate the duration of
 the frames. If not, and
-`frameDuration </sdk/apps/qml/QtQuick/Sprite#frameDuration-prop>`__ is
-valid , then
-`frameDuration </sdk/apps/qml/QtQuick/Sprite#frameDuration-prop>`__ will
-be used. Otherwise duration is used.
+:ref:`frameDuration <sdk_qtquick_sprite#frameDuration-prop>` is valid ,
+then :ref:`frameDuration <sdk_qtquick_sprite#frameDuration-prop>` will be
+used. Otherwise duration is used.
 
 | 
+
+.. _sdk_qtquick_sprite_frameRateVariation-prop:
 
 +--------------------------------------------------------------------------+
 |        \ frameRateVariation : qreal                                      |
@@ -149,12 +159,14 @@ Variation will never decrease the length of the animation to less than
 0.
 
 frameRateVariation will only take effect if
-`frameRate </sdk/apps/qml/QtQuick/Sprite#frameRate-prop>`__ is used to
-calculate the duration of frames.
+:ref:`frameRate <sdk_qtquick_sprite#frameRate-prop>` is used to calculate
+the duration of frames.
 
 Default is 0.
 
 | 
+
+.. _sdk_qtquick_sprite_frameSync-prop:
 
 +--------------------------------------------------------------------------+
 |        \ frameSync : bool                                                |
@@ -166,12 +178,14 @@ screen. This synchronizes it with the painting rate as opposed to
 elapsed time.
 
 If frameSync is set to true, it overrides all of duration,
-`frameRate </sdk/apps/qml/QtQuick/Sprite#frameRate-prop>`__ and
-`frameDuration </sdk/apps/qml/QtQuick/Sprite#frameDuration-prop>`__.
+:ref:`frameRate <sdk_qtquick_sprite#frameRate-prop>` and
+:ref:`frameDuration <sdk_qtquick_sprite#frameDuration-prop>`.
 
 Default is false.
 
 | 
+
+.. _sdk_qtquick_sprite_frameWidth-prop:
 
 +--------------------------------------------------------------------------+
 |        \ frameWidth : int                                                |
@@ -181,6 +195,8 @@ Width of a single frame in this sprite.
 
 | 
 
+.. _sdk_qtquick_sprite_frameX-prop:
+
 +--------------------------------------------------------------------------+
 |        \ frameX : int                                                    |
 +--------------------------------------------------------------------------+
@@ -188,6 +204,8 @@ Width of a single frame in this sprite.
 The X coordinate in the image file of the first frame of the sprite.
 
 | 
+
+.. _sdk_qtquick_sprite_frameY-prop:
 
 +--------------------------------------------------------------------------+
 |        \ frameY : int                                                    |
@@ -197,6 +215,8 @@ The Y coordinate in the image file of the first frame of the sprite.
 
 | 
 
+.. _sdk_qtquick_sprite_name-prop:
+
 +--------------------------------------------------------------------------+
 |        \ name : string                                                   |
 +--------------------------------------------------------------------------+
@@ -204,6 +224,8 @@ The Y coordinate in the image file of the first frame of the sprite.
 The name of this sprite, for use in the to property of other sprites.
 
 | 
+
+.. _sdk_qtquick_sprite_randomStart-prop:
 
 +--------------------------------------------------------------------------+
 |        \ randomStart : bool                                              |
@@ -220,6 +242,8 @@ Default is false.
 
 | 
 
+.. _sdk_qtquick_sprite_reverse-prop:
+
 +--------------------------------------------------------------------------+
 |        \ reverse : bool                                                  |
 +--------------------------------------------------------------------------+
@@ -230,24 +254,27 @@ Default is false.
 
 | 
 
+.. _sdk_qtquick_sprite_source-prop:
+
 +--------------------------------------------------------------------------+
 |        \ source : url                                                    |
 +--------------------------------------------------------------------------+
 
 The image source for the animation.
 
-If `frameHeight </sdk/apps/qml/QtQuick/Sprite#frameHeight-prop>`__ and
-`frameWidth </sdk/apps/qml/QtQuick/Sprite#frameWidth-prop>`__ are not
-specified, it is assumed to be a single long row of square frames.
-Otherwise, it can be multiple contiguous rows or rectangluar frames,
-when one row runs out the next will be used.
+If :ref:`frameHeight <sdk_qtquick_sprite#frameHeight-prop>` and
+:ref:`frameWidth <sdk_qtquick_sprite#frameWidth-prop>` are not specified,
+it is assumed to be a single long row of square frames. Otherwise, it
+can be multiple contiguous rows or rectangluar frames, when one row runs
+out the next will be used.
 
-If `frameX </sdk/apps/qml/QtQuick/Sprite#frameX-prop>`__ and
-`frameY </sdk/apps/qml/QtQuick/Sprite#frameY-prop>`__ are specified, the
-row of frames will be taken with that x/y coordinate as the upper left
-corner.
+If :ref:`frameX <sdk_qtquick_sprite#frameX-prop>` and
+:ref:`frameY <sdk_qtquick_sprite#frameY-prop>` are specified, the row of
+frames will be taken with that x/y coordinate as the upper left corner.
 
 | 
+
+.. _sdk_qtquick_sprite_to-prop:
 
 +--------------------------------------------------------------------------+
 |        \ to : QVariantMap                                                |

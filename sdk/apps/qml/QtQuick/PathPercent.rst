@@ -1,3 +1,7 @@
+.. _sdk_qtquick_pathpercent:
+QtQuick PathPercent
+===================
+
 Manipulates the way a path is interpreted
 
 +---------------------+----------------------+
@@ -7,21 +11,19 @@ Manipulates the way a path is interpreted
 Properties
 ----------
 
--  ****`value </sdk/apps/qml/QtQuick/PathPercent#value-prop>`__**** :
-   real
+-  :ref:`value <sdk_qtquick_pathpercent_value-prop>` : real
 
 Detailed Description
 --------------------
 
-`PathPercent </sdk/apps/qml/QtQuick/PathPercent/>`__ allows you to
-manipulate the spacing between items on a
-`PathView </sdk/apps/qml/QtQuick/PathView/>`__'s path. You can use it to
-bunch together items on part of the path, and spread them out on other
-parts of the path.
+:ref:`PathPercent <sdk_qtquick_pathpercent>` allows you to manipulate the
+spacing between items on a :ref:`PathView <sdk_qtquick_pathview>`'s path.
+You can use it to bunch together items on part of the path, and spread
+them out on other parts of the path.
 
 The examples below show the normal distribution of items along a path
 compared to a distribution which places 50% of the items along the
-`PathLine </sdk/apps/qml/QtQuick/PathLine/>`__ section of the path.
+:ref:`PathLine <sdk_qtquick_pathline>` section of the path.
 
 +--------------------------------------+--------------------------------------+
 | |image0|                             | .. code:: qml                        |
@@ -60,10 +62,12 @@ compared to a distribution which places 50% of the items along the
 |                                      |     }                                |
 +--------------------------------------+--------------------------------------+
 
-**See also** `Path </sdk/apps/qml/QtQuick/Path/>`__.
+**See also** :ref:`Path <sdk_qtquick_path>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_pathpercent_value-prop:
 
 +--------------------------------------------------------------------------+
 |        \ value : real                                                    |
@@ -72,16 +76,15 @@ Property Documentation
 The proportion of items that should be laid out up to this point.
 
 This value should always be higher than the last value specified by a
-`PathPercent </sdk/apps/qml/QtQuick/PathPercent/>`__ at a previous
-position in the Path.
+:ref:`PathPercent <sdk_qtquick_pathpercent>` at a previous position in the
+Path.
 
 In the following example we have a Path made up of three PathLines.
-Normally, the items of the
-`PathView </sdk/apps/qml/QtQuick/PathView/>`__ would be laid out equally
-along this path, with an equal number of items per line segment.
-`PathPercent </sdk/apps/qml/QtQuick/PathPercent/>`__ allows us to
-specify that the first and third lines should each hold 10% of the laid
-out items, while the second line should hold the remaining 80%.
+Normally, the items of the :ref:`PathView <sdk_qtquick_pathview>` would be
+laid out equally along this path, with an equal number of items per line
+segment. :ref:`PathPercent <sdk_qtquick_pathpercent>` allows us to specify
+that the first and third lines should each hold 10% of the laid out
+items, while the second line should hold the remaining 80%.
 
 .. code:: qml
 
@@ -100,6 +103,6 @@ out items, while the second line should hold the remaining 80%.
 
 | 
 
-.. |image0| image:: /media/sdk/apps/qml/QtQuick/PathPercent/images/declarative-nopercent.png
-.. |image1| image:: /media/sdk/apps/qml/QtQuick/PathPercent/images/declarative-percent.png
+.. |image0| image:: /mediasdk_qtquick_pathpercentimages/declarative-nopercent.png
+.. |image1| image:: /mediasdk_qtquick_pathpercentimages/declarative-percent.png
 

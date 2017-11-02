@@ -1,3 +1,7 @@
+.. _sdk_qtquick_rotation:
+QtQuick Rotation
+================
+
 Provides a way to rotate an Item
 
 +---------------------+----------------------+
@@ -7,34 +11,28 @@ Provides a way to rotate an Item
 Properties
 ----------
 
--  ****`angle </sdk/apps/qml/QtQuick/Rotation#angle-prop>`__**** : real
--  ****`axis </sdk/apps/qml/QtQuick/Rotation#axis-prop>`__****
+-  :ref:`angle <sdk_qtquick_rotation_angle-prop>` : real
+-  :ref:`axis <sdk_qtquick_rotation_axis-prop>`
 
-   -  ****`axis.x </sdk/apps/qml/QtQuick/Rotation#axis.x-prop>`__**** :
-      real
-   -  ****`axis.y </sdk/apps/qml/QtQuick/Rotation#axis.y-prop>`__**** :
-      real
-   -  ****`axis.z </sdk/apps/qml/QtQuick/Rotation#axis.z-prop>`__**** :
-      real
+   -  :ref:`axis.x <sdk_qtquick_rotation_axis.x-prop>` : real
+   -  :ref:`axis.y <sdk_qtquick_rotation_axis.y-prop>` : real
+   -  :ref:`axis.z <sdk_qtquick_rotation_axis.z-prop>` : real
 
--  ****`origin </sdk/apps/qml/QtQuick/Rotation#origin-prop>`__****
+-  :ref:`origin <sdk_qtquick_rotation_origin-prop>`
 
-   -  ****`origin.x </sdk/apps/qml/QtQuick/Rotation#origin.x-prop>`__****
-      : real
-   -  ****`origin.y </sdk/apps/qml/QtQuick/Rotation#origin.y-prop>`__****
-      : real
+   -  :ref:`origin.x <sdk_qtquick_rotation_origin.x-prop>` : real
+   -  :ref:`origin.y <sdk_qtquick_rotation_origin.y-prop>` : real
 
 Detailed Description
 --------------------
 
 The Rotation type provides a way to rotate an
-`Item </sdk/apps/qml/QtQuick/Item/>`__ through a rotation-type
-transform.
+:ref:`Item <sdk_qtquick_item>` through a rotation-type transform.
 
 It allows (z axis) rotation to be relative to an arbitrary point, and
 also provides a way to specify 3D-like rotations for Items. This gives
 more control over item rotation than the
-`rotation </sdk/apps/qml/QtQuick/Item#rotation-prop>`__ property.
+:ref:`rotation <sdk_qtquick_item#rotation-prop>` property.
 
 The following example rotates a Rectangle around its interior point (25,
 25):
@@ -50,7 +48,7 @@ The following example rotates a Rectangle around its interior point (25,
 For 3D-like item rotations, you must specify the axis of rotation in
 addition to the origin point. The following example shows various
 3D-like rotations applied to an
-`Image </sdk/apps/qml/QtQuick/imageelements#image>`__.
+`Image </sdk/apps/qml/QtQuick/imageelements/#image>`_ .
 
 .. code:: qml
 
@@ -80,11 +78,13 @@ addition to the origin point. The following example shows various
 |image0|
 
 **See also** `Dial Control
-example </sdk/apps/qml/QtQuick/customitems-dialcontrol/>`__ and `Qt
-Quick Demo - Clocks </sdk/apps/qml/QtQuick/demos-clocks/>`__.
+example </sdk/apps/qml/QtQuick/customitems-dialcontrol/>`_  and `Qt
+Quick Demo - Clocks </sdk/apps/qml/QtQuick/demos-clocks/>`_ .
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_rotation_angle-prop:
 
 +--------------------------------------------------------------------------+
 |        \ angle : real                                                    |
@@ -94,11 +94,15 @@ The angle to rotate, in degrees clockwise.
 
 | 
 
+.. _sdk_qtquick_rotation_**axis group**-prop:
+
 +--------------------------------------------------------------------------+
 |        \ **axis group**                                                  |
 +==========================================================================+
+.. _sdk_qtquick_rotation_axis.y-prop:
 |        \ axis.x : real                                                   |
 +--------------------------------------------------------------------------+
+.. _sdk_qtquick_rotation_axis.z-prop:
 |        \ axis.y : real                                                   |
 +--------------------------------------------------------------------------+
 |        \ axis.z : real                                                   |
@@ -115,9 +119,12 @@ and the axis.
 
 | 
 
+.. _sdk_qtquick_rotation_**origin group**-prop:
+
 +--------------------------------------------------------------------------+
 |        \ **origin group**                                                |
 +==========================================================================+
+.. _sdk_qtquick_rotation_origin.y-prop:
 |        \ origin.x : real                                                 |
 +--------------------------------------------------------------------------+
 |        \ origin.y : real                                                 |
@@ -129,6 +136,6 @@ origin is (0, 0).
 
 | 
 
-.. |image0| image:: /media/sdk/apps/qml/QtQuick/Rotation/images/axisrotation.png
-.. |image1| image:: /media/sdk/apps/qml/QtQuick/Rotation/images/3d-rotation-axis.png
+.. |image0| image:: /mediasdk_qtquick_rotationimages/axisrotation.png
+.. |image1| image:: /mediasdk_qtquick_rotationimages/3d-rotation-axis.png
 

@@ -1,3 +1,7 @@
+.. _sdk_qtqml_resource_loading_and_network_transparency:
+QtQml Resource Loading and Network Transparency
+===============================================
+
 
 
 QML supports network transparency by using URLs (rather than file names)
@@ -120,6 +124,6 @@ content.
 As with any application accessing other content beyond its control, a
 QML application should perform appropriate checks on any untrusted data
 it loads. **Do not, for example, use ``import``, Loader or
-`XMLHttpRequest </sdk/apps/qml/QtQml/qtqml-javascript-qmlglobalobject#xmlhttprequest>`__
+`XMLHttpRequest </sdk/apps/qml/QtQml/qtqml-javascript-qmlglobalobject/#xmlhttprequest>`_ 
 to load any untrusted code or content.**
 

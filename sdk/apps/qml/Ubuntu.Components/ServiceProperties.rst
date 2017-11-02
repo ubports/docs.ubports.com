@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_serviceproperties:
+Ubuntu.Components ServiceProperties
+===================================
+
 The component enables accessing service properties from QML.
 
 +---------------------+--------------------------------+
@@ -9,19 +13,19 @@ The component enables accessing service properties from QML.
 Properties
 ----------
 
--  ****`adaptorInterface </sdk/apps/qml/Ubuntu.Components/ServiceProperties#adaptorInterface-prop>`__****
+-  :ref:`adaptorInterface <sdk_ubuntu_components_serviceproperties_adaptorInterface-prop>`
    : string
--  ****`error </sdk/apps/qml/Ubuntu.Components/ServiceProperties#error-prop>`__****
+-  :ref:`error <sdk_ubuntu_components_serviceproperties_error-prop>`
    : string
--  ****`path </sdk/apps/qml/Ubuntu.Components/ServiceProperties#path-prop>`__****
+-  :ref:`path <sdk_ubuntu_components_serviceproperties_path-prop>`
    : string
--  ****`service </sdk/apps/qml/Ubuntu.Components/ServiceProperties#service-prop>`__****
+-  :ref:`service <sdk_ubuntu_components_serviceproperties_service-prop>`
    : string
--  ****`serviceInterface </sdk/apps/qml/Ubuntu.Components/ServiceProperties#serviceInterface-prop>`__****
+-  :ref:`serviceInterface <sdk_ubuntu_components_serviceproperties_serviceInterface-prop>`
    : string
--  ****`status </sdk/apps/qml/Ubuntu.Components/ServiceProperties#status-prop>`__****
+-  :ref:`status <sdk_ubuntu_components_serviceproperties_status-prop>`
    : enum
--  ****`type </sdk/apps/qml/Ubuntu.Components/ServiceProperties#type-prop>`__****
+-  :ref:`type <sdk_ubuntu_components_serviceproperties_type-prop>`
    : enum
 
 Detailed Description
@@ -57,15 +61,14 @@ the first letter capitalized.
 
 Note that there are few properties which must be set in order the
 component to work. These are
-`service </sdk/apps/qml/Ubuntu.Components/ServiceProperties#service-prop>`__,
-`path </sdk/apps/qml/Ubuntu.Components/ServiceProperties#path-prop>`__
-and
-`adaptorInterface </sdk/apps/qml/Ubuntu.Components/ServiceProperties#adaptorInterface-prop>`__.
+:ref:`service <sdk_ubuntu_components_serviceproperties#service-prop>`,
+:ref:`path <sdk_ubuntu_components_serviceproperties#path-prop>` and
+:ref:`adaptorInterface <sdk_ubuntu_components_serviceproperties#adaptorInterface-prop>`.
 Also, once specified,
-`service </sdk/apps/qml/Ubuntu.Components/ServiceProperties#service-prop>`__,
-`serviceInterface </sdk/apps/qml/Ubuntu.Components/ServiceProperties#serviceInterface-prop>`__
+:ref:`service <sdk_ubuntu_components_serviceproperties#service-prop>`,
+:ref:`serviceInterface <sdk_ubuntu_components_serviceproperties#serviceInterface-prop>`
 and
-`adaptorInterface </sdk/apps/qml/Ubuntu.Components/ServiceProperties#adaptorInterface-prop>`__
+:ref:`adaptorInterface <sdk_ubuntu_components_serviceproperties#adaptorInterface-prop>`
 values should not be changed as it cannot be guaranteed that properties
 watched will be available on those service. Therefore any change on
 these properties after the component completion will be ignored.
@@ -74,9 +77,9 @@ service will report changes in these property values.
 
 The service is connected once the component gets completed
 (Component.onCompleted). The
-`error </sdk/apps/qml/Ubuntu.Components/ServiceProperties#error-prop>`__
-property specifies any error occured during connection, and the
-`status </sdk/apps/qml/Ubuntu.Components/ServiceProperties#status-prop>`__
+:ref:`error <sdk_ubuntu_components_serviceproperties#error-prop>` property
+specifies any error occured during connection, and the
+:ref:`status <sdk_ubuntu_components_serviceproperties#status-prop>`
 property notifies whether the connection to the service is active or
 not.
 
@@ -86,6 +89,8 @@ application's AppArmor rights to ensure a successful service connection.
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_serviceproperties_adaptorInterface-prop:
+
 +--------------------------------------------------------------------------+
 |        \ adaptorInterface : string                                       |
 +--------------------------------------------------------------------------+
@@ -93,11 +98,13 @@ Property Documentation
 The proeprty specifies the dbus adaptor interface which provides the
 properties watched. This can be a different interface that the one
 specified in
-`serviceInterface </sdk/apps/qml/Ubuntu.Components/ServiceProperties#serviceInterface-prop>`__,
+:ref:`serviceInterface <sdk_ubuntu_components_serviceproperties#serviceInterface-prop>`,
 and in the same way, it can be empty, in which case all the properties
 from all interfaces of the service will be watched.
 
 | 
+
+.. _sdk_ubuntu_components_serviceproperties_error-prop:
 
 +--------------------------------------------------------------------------+
 |        \ error : string                                                  |
@@ -108,6 +115,8 @@ occurrs during the service connection. Empty string means no error.
 
 | 
 
+.. _sdk_ubuntu_components_serviceproperties_path-prop:
+
 +--------------------------------------------------------------------------+
 |        \ path : string                                                   |
 +--------------------------------------------------------------------------+
@@ -117,6 +126,8 @@ to be specified.
 
 | 
 
+.. _sdk_ubuntu_components_serviceproperties_service-prop:
+
 +--------------------------------------------------------------------------+
 |        \ service : string                                                |
 +--------------------------------------------------------------------------+
@@ -125,6 +136,8 @@ The proeprty specifies the DBus service URI. It is mandatory to be
 specified.
 
 | 
+
+.. _sdk_ubuntu_components_serviceproperties_serviceInterface-prop:
 
 +--------------------------------------------------------------------------+
 |        \ serviceInterface : string                                       |
@@ -136,6 +149,8 @@ service.
 
 | 
 
+.. _sdk_ubuntu_components_serviceproperties_status-prop:
+
 +--------------------------------------------------------------------------+
 |        \ status : enum                                                   |
 +--------------------------------------------------------------------------+
@@ -145,8 +160,7 @@ The property presents the status of the component.
 -  - *ServiceProperties.Inactive* - the component is inactive, initial
    state
 -  - *ServiceProperties.ConnectionError* - there was a connection error,
-   the
-   `error </sdk/apps/qml/Ubuntu.Components/ServiceProperties#error-prop>`__
+   the :ref:`error <sdk_ubuntu_components_serviceproperties#error-prop>`
    contains the error string.
 -  - *ServiceProperties.Synchronizing* - the connection to the service
    succeeded, and the properties are being synchronized;
@@ -157,10 +171,12 @@ The property presents the status of the component.
 checked against their existence in the service. Each proeprty will be
 checked as declared as well with capital first letter. If neither of
 these exists in the service, it will be reported in the
-`error </sdk/apps/qml/Ubuntu.Components/ServiceProperties#error-prop>`__
-property separately.
+:ref:`error <sdk_ubuntu_components_serviceproperties#error-prop>` property
+separately.
 
 | 
+
+.. _sdk_ubuntu_components_serviceproperties_type-prop:
 
 +--------------------------------------------------------------------------+
 |        \ type : enum                                                     |

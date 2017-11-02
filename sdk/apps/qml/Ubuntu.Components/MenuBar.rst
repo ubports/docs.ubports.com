@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_menubar:
+Ubuntu.Components MenuBar
+=========================
+
 MenuBar defines an application menu bar structure
 
 +---------------------+--------------------------------+
@@ -7,20 +11,20 @@ MenuBar defines an application menu bar structure
 Properties
 ----------
 
--  ****`menus </sdk/apps/qml/Ubuntu.Components/MenuBar#menus-prop>`__****
-   : list<Menu>
+-  :ref:`menus <sdk_ubuntu_components_menubar_menus-prop>` :
+   list<Menu>
 
 Methods
 -------
 
 -  void
-   ****`appendMenu </sdk/apps/qml/Ubuntu.Components/MenuBar#appendMenu-method>`__****\ (Menu
+   **:ref:`appendMenu <sdk_ubuntu_components_menubar#appendMenu-method>`**\ (Menu
    *menu*)
 -  void
-   ****`insertMenu </sdk/apps/qml/Ubuntu.Components/MenuBar#insertMenu-method>`__****\ (int
+   **:ref:`insertMenu <sdk_ubuntu_components_menubar#insertMenu-method>`**\ (int
    *index*, Menu *menu*)
 -  void
-   ****`removeMenu </sdk/apps/qml/Ubuntu.Components/MenuBar#removeMenu-method>`__****\ (Menu
+   **:ref:`removeMenu <sdk_ubuntu_components_menubar#removeMenu-method>`**\ (Menu
    *menu*)
 
 Detailed Description
@@ -77,46 +81,47 @@ Example usage:
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_menubar_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ [default] menus :                                               |
-| list<`Menu </sdk/apps/qml/Ubuntu.Components/Menu/>`__>                   |
+| :ref:` <>`\ [default] menus : list<`Menu <sdk_ubuntu_components_menu>`>   |
 +--------------------------------------------------------------------------+
 
-List of Menus in this
-`MenuBar </sdk/apps/qml/Ubuntu.Components/MenuBar/>`__.
+List of Menus in this :ref:`MenuBar <sdk_ubuntu_components_menubar>`.
 
 | 
 
 Method Documentation
 --------------------
 
+.. _sdk_ubuntu_components_menubar_-method:
+
 +--------------------------------------------------------------------------+
-|        \ void                                                            |
-| appendMenu(`Menu </sdk/apps/qml/Ubuntu.Components/Menu/>`__ *menu*)      |
+| :ref:` <>`\ void appendMenu(`Menu <sdk_ubuntu_components_menu>` *menu*)   |
 +--------------------------------------------------------------------------+
 
-\* \* Append a Menu to the
-`MenuBar </sdk/apps/qml/Ubuntu.Components/MenuBar/>`__
+\* \* Append a Menu to the :ref:`MenuBar <sdk_ubuntu_components_menubar>`
 
 | 
+
+.. _sdk_ubuntu_components_menubar_void insertMenu-method:
 
 +--------------------------------------------------------------------------+
 |        \ void insertMenu(int *index*,                                    |
-| `Menu </sdk/apps/qml/Ubuntu.Components/Menu/>`__ *menu*)                 |
+| :ref:`Menu <sdk_ubuntu_components_menu>` *menu*)                            |
 +--------------------------------------------------------------------------+
 
-\* \* Insert a Menu to the
-`MenuBar </sdk/apps/qml/Ubuntu.Components/MenuBar/>`__ at the specified
-position
+\* \* Insert a Menu to the :ref:`MenuBar <sdk_ubuntu_components_menubar>`
+at the specified position
 
 | 
 
+.. _sdk_ubuntu_components_menubar_-method:
+
 +--------------------------------------------------------------------------+
-|        \ void                                                            |
-| removeMenu(`Menu </sdk/apps/qml/Ubuntu.Components/Menu/>`__ *menu*)      |
+| :ref:` <>`\ void removeMenu(`Menu <sdk_ubuntu_components_menu>` *menu*)   |
 +--------------------------------------------------------------------------+
 
-\* \* Remove a Menu from the
-`MenuBar </sdk/apps/qml/Ubuntu.Components/MenuBar/>`__
+\* \* Remove a Menu from the :ref:`MenuBar <sdk_ubuntu_components_menubar>`
 
 | 

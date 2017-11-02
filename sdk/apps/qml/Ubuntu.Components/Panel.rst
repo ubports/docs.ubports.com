@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_panel:
+Ubuntu.Components Panel
+=======================
+
 A panel that can be swiped in and out from an edge of the window by the
 user. For most applications, it is highly recommended to use the
 MainView instead which includes a toolbar at its bottom that can be
@@ -6,48 +10,41 @@ swiped in or out.
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import Ubuntu.Components 1.3         |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Item </sdk/apps/qml/QtQuick/Item/>` |
-|                                      | __                                   |
+| Inherits:                            | :ref:`Item <sdk_qtquick_item>`       |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`align </sdk/apps/qml/Ubuntu.Components/Panel#align-prop>`__****
+-  :ref:`align <sdk_ubuntu_components_panel_align-prop>` : int
+-  :ref:`animate <sdk_ubuntu_components_panel_animate-prop>` : bool
+-  :ref:`animating <sdk_ubuntu_components_panel_animating-prop>` :
+   bool
+-  :ref:`contents <sdk_ubuntu_components_panel_contents-prop>` :
+   list<Object>
+-  :ref:`hideTimeout <sdk_ubuntu_components_panel_hideTimeout-prop>`
    : int
--  ****`animate </sdk/apps/qml/Ubuntu.Components/Panel#animate-prop>`__****
-   : bool
--  ****`animating </sdk/apps/qml/Ubuntu.Components/Panel#animating-prop>`__****
-   : bool
--  ****`contents </sdk/apps/qml/Ubuntu.Components/Panel#contents-prop>`__****
-   : list<Object>
--  ****`hideTimeout </sdk/apps/qml/Ubuntu.Components/Panel#hideTimeout-prop>`__****
-   : int
--  ****`hintSize </sdk/apps/qml/Ubuntu.Components/Panel#hintSize-prop>`__****
-   : real
--  ****`locked </sdk/apps/qml/Ubuntu.Components/Panel#locked-prop>`__****
-   : bool
--  ****`opened </sdk/apps/qml/Ubuntu.Components/Panel#opened-prop>`__****
-   : bool
--  ****`position </sdk/apps/qml/Ubuntu.Components/Panel#position-prop>`__****
-   : real
--  ****`pressed </sdk/apps/qml/Ubuntu.Components/Panel#pressed-prop>`__****
-   : bool
--  ****`triggerSize </sdk/apps/qml/Ubuntu.Components/Panel#triggerSize-prop>`__****
+-  :ref:`hintSize <sdk_ubuntu_components_panel_hintSize-prop>` :
+   real
+-  :ref:`locked <sdk_ubuntu_components_panel_locked-prop>` : bool
+-  :ref:`opened <sdk_ubuntu_components_panel_opened-prop>` : bool
+-  :ref:`position <sdk_ubuntu_components_panel_position-prop>` :
+   real
+-  :ref:`pressed <sdk_ubuntu_components_panel_pressed-prop>` : bool
+-  :ref:`triggerSize <sdk_ubuntu_components_panel_triggerSize-prop>`
    : real
 
 Methods
 -------
 
--  ****`close </sdk/apps/qml/Ubuntu.Components/Panel#close-method>`__****\ ()
--  ****`open </sdk/apps/qml/Ubuntu.Components/Panel#open-method>`__****\ ()
+-  :ref:`close <sdk_ubuntu_components_panel_close-method>`\ ()
+-  :ref:`open <sdk_ubuntu_components_panel_open-method>`\ ()
 
 Detailed Description
 --------------------
 
 Unless your application has very specific needs for a Panel, use a
-`MainView </sdk/apps/qml/Ubuntu.Components/MainView/>`__ with the
-default toolbar.
+:ref:`MainView <sdk_ubuntu_components_mainview>` with the default toolbar.
 
 When using a Panel, do not theme it directly, but theme its contents,
 because the Panel itself should not have visible elements, since it is
@@ -163,6 +160,8 @@ still swipe down on top of the rectangle in order to hide the panel.
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_panel_align-prop:
+
 +--------------------------------------------------------------------------+
 |        \ align : int                                                     |
 +--------------------------------------------------------------------------+
@@ -185,10 +184,11 @@ already used for system functions, while the bottom edge is reserved for
 app-specific functionality such as a default toolbar. The use of
 Qt.AlignLeading and Qt.AlignTrailing is preferred over Qt.AlignLeft and
 Qt.AlignRight in order to more easily support right-to-left user
-interfaces that use
-`LayoutMirroring </sdk/apps/qml/QtQuick/LayoutMirroring/>`__.
+interfaces that use :ref:`LayoutMirroring <sdk_qtquick_layoutmirroring>`.
 
 | 
+
+.. _sdk_ubuntu_components_panel_animate-prop:
 
 +--------------------------------------------------------------------------+
 |        \ animate : bool                                                  |
@@ -198,6 +198,8 @@ Animate transitions between the different panel states.
 
 | 
 
+.. _sdk_ubuntu_components_panel_[read-only] animating-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [read-only] animating : bool                                    |
 +--------------------------------------------------------------------------+
@@ -206,6 +208,8 @@ The toolbar is currently not in a stable hidden or visible state.
 
 | 
 
+.. _sdk_ubuntu_components_panel_contents-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [default] contents : list<Object>                               |
 +--------------------------------------------------------------------------+
@@ -213,6 +217,8 @@ The toolbar is currently not in a stable hidden or visible state.
 Default property, holds the content which will be swiped in and out.
 
 | 
+
+.. _sdk_ubuntu_components_panel_hideTimeout-prop:
 
 +--------------------------------------------------------------------------+
 |        \ hideTimeout : int                                               |
@@ -227,6 +233,8 @@ Default value: -1 (automatic hiding is disabled).
 
 | 
 
+.. _sdk_ubuntu_components_panel_hintSize-prop:
+
 +--------------------------------------------------------------------------+
 |        \ hintSize : real                                                 |
 +--------------------------------------------------------------------------+
@@ -238,6 +246,8 @@ units.gu(2).
 
 | 
 
+.. _sdk_ubuntu_components_panel_locked-prop:
+
 +--------------------------------------------------------------------------+
 |        \ locked : bool                                                   |
 +--------------------------------------------------------------------------+
@@ -245,6 +255,8 @@ units.gu(2).
 Disable edge swipe to open/close the panel. False by default.
 
 | 
+
+.. _sdk_ubuntu_components_panel_opened-prop:
 
 +--------------------------------------------------------------------------+
 |        \ opened : bool                                                   |
@@ -255,6 +267,8 @@ swipes to open/close the panel. The opened property is not updated until
 the swipe gesture is completed.
 
 | 
+
+.. _sdk_ubuntu_components_panel_[read-only] position-prop:
 
 +--------------------------------------------------------------------------+
 |        \ [read-only] position : real                                     |
@@ -269,6 +283,8 @@ will change from the maximum size (closed) to 0 (fully expanded).
 
 | 
 
+.. _sdk_ubuntu_components_panel_pressed-prop:
+
 +--------------------------------------------------------------------------+
 |        \ pressed : bool                                                  |
 +--------------------------------------------------------------------------+
@@ -277,6 +293,8 @@ The user presses on the opened toolbar, or when the toolbar is closed
 but not locked, the user presses in the toolbar trigger area.
 
 | 
+
+.. _sdk_ubuntu_components_panel_triggerSize-prop:
 
 +--------------------------------------------------------------------------+
 |        \ triggerSize : real                                              |
@@ -292,6 +310,8 @@ units.gu(2).
 Method Documentation
 --------------------
 
+.. _sdk_ubuntu_components_panel_close-method:
+
 +--------------------------------------------------------------------------+
 |        \ close()                                                         |
 +--------------------------------------------------------------------------+
@@ -299,6 +319,8 @@ Method Documentation
 Close the panel
 
 | 
+
+.. _sdk_ubuntu_components_panel_open-method:
 
 +--------------------------------------------------------------------------+
 |        \ open()                                                          |

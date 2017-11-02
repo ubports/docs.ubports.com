@@ -1,3 +1,7 @@
+.. _sdk_qtcontacts_nickname:
+QtContacts Nickname
+===================
+
 The Nickname element contains a nickname of a contact.
 
 +---------------------+-------------------------+
@@ -7,8 +11,7 @@ The Nickname element contains a nickname of a contact.
 Properties
 ----------
 
--  ****`nickname </sdk/apps/qml/QtContacts/Nickname#nickname-prop>`__****
-   : string
+-  :ref:`nickname <sdk_qtcontacts_nickname_nickname-prop>` : string
 
 Detailed Description
 --------------------
@@ -21,6 +24,8 @@ This element is part of the **QtContacts** module.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtcontacts_nickname_nickname-prop:
 
 +--------------------------------------------------------------------------+
 |        \ nickname : string                                               |

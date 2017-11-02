@@ -1,18 +1,22 @@
+.. _sdk_qtquick_particles_attractor:
+QtQuick.Particles Attractor
+===========================
+
 For attracting particles towards a specific point
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtQuick.Particles 2.0         |
 +--------------------------------------+--------------------------------------+
 | Inherits:                            | `Affector </sdk/apps/qml/QtQuick/Par |
-|                                      | ticles.Affector/>`__                 |
+|                                      | ticles.Affector/>`_                  |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`affectedParameter </sdk/apps/qml/QtQuick/Particles.Attractor#affectedParameter-prop>`__****
+-  `affectedParameter </sdk/apps/qml/QtQuick/Particles.Attractor/_affectedParameter-prop>`_ 
    : AffectableParameter
--  ****`proportionalToDistance </sdk/apps/qml/QtQuick/Particles.Attractor#proportionalToDistance-prop>`__****
+-  `proportionalToDistance </sdk/apps/qml/QtQuick/Particles.Attractor/_proportionalToDistance-prop>`_ 
    : Proportion
 
 Detailed Description
@@ -30,6 +34,8 @@ attraction.
 Property Documentation
 ----------------------
 
+.. _sdk_qtquick_particles_attractor_affectedParameter-prop:
+
 +--------------------------------------------------------------------------+
 |        \ affectedParameter : AffectableParameter                         |
 +--------------------------------------------------------------------------+
@@ -41,6 +47,8 @@ What attribute of particles is directly affected.
 -  Attractor.Acceleration
 
 | 
+
+.. _sdk_qtquick_particles_attractor_proportionalToDistance-prop:
 
 +--------------------------------------------------------------------------+
 |        \ proportionalToDistance : Proportion                             |

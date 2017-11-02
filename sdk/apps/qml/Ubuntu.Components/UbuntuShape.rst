@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_ubuntushape:
+Ubuntu.Components UbuntuShape
+=============================
+
 Rounded rectangle containing a source image blended over a background
 color.
 
@@ -10,43 +14,43 @@ color.
 Properties
 ----------
 
--  ****`aspect </sdk/apps/qml/Ubuntu.Components/UbuntuShape#aspect-prop>`__****
-   : enumeration
--  ****`backgroundColor </sdk/apps/qml/Ubuntu.Components/UbuntuShape#backgroundColor-prop>`__****
+-  :ref:`aspect <sdk_ubuntu_components_ubuntushape_aspect-prop>` :
+   enumeration
+-  :ref:`backgroundColor <sdk_ubuntu_components_ubuntushape_backgroundColor-prop>`
    : color
--  ****`backgroundMode </sdk/apps/qml/Ubuntu.Components/UbuntuShape#backgroundMode-prop>`__****
+-  :ref:`backgroundMode <sdk_ubuntu_components_ubuntushape_backgroundMode-prop>`
    : enumeration
--  ****`radius </sdk/apps/qml/Ubuntu.Components/UbuntuShape#radius-prop>`__****
-   : string
--  ****`relativeRadius </sdk/apps/qml/Ubuntu.Components/UbuntuShape#relativeRadius-prop>`__****
+-  :ref:`radius <sdk_ubuntu_components_ubuntushape_radius-prop>` :
+   string
+-  :ref:`relativeRadius <sdk_ubuntu_components_ubuntushape_relativeRadius-prop>`
    : real
--  ****`secondaryBackgroundColor </sdk/apps/qml/Ubuntu.Components/UbuntuShape#secondaryBackgroundColor-prop>`__****
+-  :ref:`secondaryBackgroundColor <sdk_ubuntu_components_ubuntushape_secondaryBackgroundColor-prop>`
    : color
--  ****`source </sdk/apps/qml/Ubuntu.Components/UbuntuShape#source-prop>`__****
-   : variant
--  ****`sourceFillMode </sdk/apps/qml/Ubuntu.Components/UbuntuShape#sourceFillMode-prop>`__****
+-  :ref:`source <sdk_ubuntu_components_ubuntushape_source-prop>` :
+   variant
+-  :ref:`sourceFillMode <sdk_ubuntu_components_ubuntushape_sourceFillMode-prop>`
    : enumeration
--  ****`sourceHorizontalAlignment </sdk/apps/qml/Ubuntu.Components/UbuntuShape#sourceHorizontalAlignment-prop>`__****
+-  :ref:`sourceHorizontalAlignment <sdk_ubuntu_components_ubuntushape_sourceHorizontalAlignment-prop>`
    : enumeration
--  ****`sourceHorizontalWrapMode </sdk/apps/qml/Ubuntu.Components/UbuntuShape#sourceHorizontalWrapMode-prop>`__****
+-  :ref:`sourceHorizontalWrapMode <sdk_ubuntu_components_ubuntushape_sourceHorizontalWrapMode-prop>`
    : enumeration
--  ****`sourceOpacity </sdk/apps/qml/Ubuntu.Components/UbuntuShape#sourceOpacity-prop>`__****
+-  :ref:`sourceOpacity <sdk_ubuntu_components_ubuntushape_sourceOpacity-prop>`
    : real
--  ****`sourceScale </sdk/apps/qml/Ubuntu.Components/UbuntuShape#sourceScale-prop>`__****
+-  :ref:`sourceScale <sdk_ubuntu_components_ubuntushape_sourceScale-prop>`
    : vector2d
--  ****`sourceTranslation </sdk/apps/qml/Ubuntu.Components/UbuntuShape#sourceTranslation-prop>`__****
+-  :ref:`sourceTranslation <sdk_ubuntu_components_ubuntushape_sourceTranslation-prop>`
    : vector2d
--  ****`sourceVerticalAlignment </sdk/apps/qml/Ubuntu.Components/UbuntuShape#sourceVerticalAlignment-prop>`__****
+-  :ref:`sourceVerticalAlignment <sdk_ubuntu_components_ubuntushape_sourceVerticalAlignment-prop>`
    : enumeration
--  ****`sourceVerticalWrapMode </sdk/apps/qml/Ubuntu.Components/UbuntuShape#sourceVerticalWrapMode-prop>`__****
+-  :ref:`sourceVerticalWrapMode <sdk_ubuntu_components_ubuntushape_sourceVerticalWrapMode-prop>`
    : enumeration
 
 Detailed Description
 --------------------
 
-The `UbuntuShape </sdk/apps/qml/Ubuntu.Components/UbuntuShape/>`__ is a
-rounded rectangle (based on a
-`squircle <https://en.wikipedia.org/wiki/Squircle>`__) containing an
+The :ref:`UbuntuShape <sdk_ubuntu_components_ubuntushape>` is a rounded
+rectangle (based on a
+`squircle <https://en.wikipedia.org/wiki/Squircle>`_ ) containing an
 optional source image blended over a background color (solid or linear
 gradient). Different properties allow to change the look of the shape.
 
@@ -71,13 +75,15 @@ Examples:
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_ubuntushape_aspect-prop:
+
 +--------------------------------------------------------------------------+
 |        \ aspect : enumeration                                            |
 +--------------------------------------------------------------------------+
 
 This property defines the graphical style of the
-`UbuntuShape </sdk/apps/qml/Ubuntu.Components/UbuntuShape/>`__. The
-default value is ``UbuntuShape.Inset``.
+:ref:`UbuntuShape <sdk_ubuntu_components_ubuntushape>`. The default value
+is ``UbuntuShape.Inset``.
 
 **Note:** Setting this disables support for the deprecated borderSource
 property. Use the UbuntuShapeOverlay item in order to provide the inset
@@ -88,6 +94,8 @@ property. Use the UbuntuShapeOverlay item in order to provide the inset
    bevelled bottom
 
 | 
+
+.. _sdk_ubuntu_components_ubuntushape_backgroundColor-prop:
 
 +--------------------------------------------------------------------------+
 |        \ backgroundColor : color                                         |
@@ -103,6 +111,8 @@ This QML property was introduced in Ubuntu.Components 1.2.
 
 | 
 
+.. _sdk_ubuntu_components_ubuntushape_backgroundMode-prop:
+
 +--------------------------------------------------------------------------+
 |        \ backgroundMode : enumeration                                    |
 +--------------------------------------------------------------------------+
@@ -114,16 +124,18 @@ is ``UbuntuShape.SolidColor``.
 gradientColor properties.
 
 -  **UbuntuShape.SolidColor** - the color is
-   `backgroundColor </sdk/apps/qml/Ubuntu.Components/UbuntuShape#backgroundColor-prop>`__
+   :ref:`backgroundColor <sdk_ubuntu_components_ubuntushape#backgroundColor-prop>`
 -  **UbuntuShape.VerticalGradient** - the color is a vertical gradient
    from
-   `backgroundColor </sdk/apps/qml/Ubuntu.Components/UbuntuShape#backgroundColor-prop>`__
+   :ref:`backgroundColor <sdk_ubuntu_components_ubuntushape#backgroundColor-prop>`
    to
-   `secondaryBackgroundColor </sdk/apps/qml/Ubuntu.Components/UbuntuShape#secondaryBackgroundColor-prop>`__.
+   :ref:`secondaryBackgroundColor <sdk_ubuntu_components_ubuntushape#secondaryBackgroundColor-prop>`.
 
 This QML property was introduced in Ubuntu.Components 1.2.
 
 | 
+
+.. _sdk_ubuntu_components_ubuntushape_radius-prop:
 
 +--------------------------------------------------------------------------+
 |        \ radius : string                                                 |
@@ -134,35 +146,38 @@ supported: ``"small"``, ``"medium"`` and ``"large"``. The default value
 is ``"small"``.
 
 **Note:** Setting a non-zero
-`relativeRadius </sdk/apps/qml/Ubuntu.Components/UbuntuShape#relativeRadius-prop>`__
+:ref:`relativeRadius <sdk_ubuntu_components_ubuntushape#relativeRadius-prop>`
 value disables this property temporarily.
 
 | 
+
+.. _sdk_ubuntu_components_ubuntushape_relativeRadius-prop:
 
 +--------------------------------------------------------------------------+
 |        \ relativeRadius : real                                           |
 +--------------------------------------------------------------------------+
 
 This property defines a radius relative to the size of the
-`UbuntuShape </sdk/apps/qml/Ubuntu.Components/UbuntuShape/>`__. It is
-specified as a number between 0.0 (0%) and 0.75 (75%) corresponding to
-the proportion of the radius with regards to the smallest side (divided
-by 2 since a side has 2 angles). The default value is 0.0.
+:ref:`UbuntuShape <sdk_ubuntu_components_ubuntushape>`. It is specified as
+a number between 0.0 (0%) and 0.75 (75%) corresponding to the proportion
+of the radius with regards to the smallest side (divided by 2 since a
+side has 2 angles). The default value is 0.0.
 
 **Note:** Setting a non-zero value takes over the
-`radius </sdk/apps/qml/Ubuntu.Components/UbuntuShape#radius-prop>`__
-property.
+:ref:`radius <sdk_ubuntu_components_ubuntushape#radius-prop>` property.
 
 This QML property was introduced in Ubuntu.Components 1.3.
 
 | 
+
+.. _sdk_ubuntu_components_ubuntushape_secondaryBackgroundColor-prop:
 
 +--------------------------------------------------------------------------+
 |        \ secondaryBackgroundColor : color                                |
 +--------------------------------------------------------------------------+
 
 This property defines the secondary background color. It is used when
-`backgroundMode </sdk/apps/qml/Ubuntu.Components/UbuntuShape#backgroundMode-prop>`__
+:ref:`backgroundMode <sdk_ubuntu_components_ubuntushape#backgroundMode-prop>`
 is set to ``UbuntuShape.VerticalGradient``. The default value is
 transparent black.
 
@@ -173,16 +188,17 @@ This QML property was introduced in Ubuntu.Components 1.2.
 
 | 
 
+.. _sdk_ubuntu_components_ubuntushape_source-prop:
+
 +--------------------------------------------------------------------------+
-|        \ source : `variant <http://doc.qt.io/qt-5/qml-variant.html>`__   |
+|        \ source : `variant <http://doc.qt.io/qt-5/qml-variant.html>`_    |
 +--------------------------------------------------------------------------+
 
 This property sets the source provider of a texture rendered in the
-`UbuntuShape </sdk/apps/qml/Ubuntu.Components/UbuntuShape/>`__.
-Supported types are ``Image``, ``AnimatedImage`` (to render a GIF image
-for instance) and ``ShaderEffectSource`` (to embed a UI previously
-rendered with QML). It is blended over the background color. The default
-value is ``null``.
+:ref:`UbuntuShape <sdk_ubuntu_components_ubuntushape>`. Supported types are
+``Image``, ``AnimatedImage`` (to render a GIF image for instance) and
+``ShaderEffectSource`` (to embed a UI previously rendered with QML). It
+is blended over the background color. The default value is ``null``.
 
 It can be set either with an inlined ``Image``:
 
@@ -213,18 +229,17 @@ Note that in this case, the ``Image`` is stored in the scene tree as any
 other items. So setting it as not visible might be needed.
 
 The `sampling
-filter <https://en.wikipedia.org/wiki/Texture_filtering>`__ is set
+filter <https://en.wikipedia.org/wiki/Texture_filtering>`_  is set
 through the given Item's ``smooth`` property. Set it to ``false`` for
 nearest-neighbor filtering or to ``true`` for bilinear filtering.
 
 The fill modes and alignments set on the ``Image`` and ``AnimatedImage``
 are not monitored, use the appropriate
-`UbuntuShape </sdk/apps/qml/Ubuntu.Components/UbuntuShape/>`__
-properties instead
-(`sourceFillMode </sdk/apps/qml/Ubuntu.Components/UbuntuShape#sourceFillMode-prop>`__,
-`sourceHorizontalAlignment </sdk/apps/qml/Ubuntu.Components/UbuntuShape#sourceHorizontalAlignment-prop>`__
+:ref:`UbuntuShape <sdk_ubuntu_components_ubuntushape>` properties instead
+(:ref:`sourceFillMode <sdk_ubuntu_components_ubuntushape#sourceFillMode-prop>`,
+:ref:`sourceHorizontalAlignment <sdk_ubuntu_components_ubuntushape#sourceHorizontalAlignment-prop>`
 and
-`sourceVerticalAlignment </sdk/apps/qml/Ubuntu.Components/UbuntuShape#sourceVerticalAlignment-prop>`__).
+:ref:`sourceVerticalAlignment <sdk_ubuntu_components_ubuntushape#sourceVerticalAlignment-prop>`).
 
 **Note:** Setting this disables support for the deprecated image
 property.
@@ -233,19 +248,20 @@ This QML property was introduced in Ubuntu.Components 1.2.
 
 | 
 
+.. _sdk_ubuntu_components_ubuntushape_sourceFillMode-prop:
+
 +--------------------------------------------------------------------------+
 |        \ sourceFillMode : enumeration                                    |
 +--------------------------------------------------------------------------+
 
 This properties defines how the
-`source </sdk/apps/qml/Ubuntu.Components/UbuntuShape#source-prop>`__
-texture fills the
-`UbuntuShape </sdk/apps/qml/Ubuntu.Components/UbuntuShape/>`__. The
-modes are the same as the ones used by ``Image``, minus the tiling which
-is exposed through wrapping properties
-(`sourceHorizontalWrapMode </sdk/apps/qml/Ubuntu.Components/UbuntuShape#sourceHorizontalWrapMode-prop>`__
+:ref:`source <sdk_ubuntu_components_ubuntushape#source-prop>` texture fills
+the :ref:`UbuntuShape <sdk_ubuntu_components_ubuntushape>`. The modes are
+the same as the ones used by ``Image``, minus the tiling which is
+exposed through wrapping properties
+(:ref:`sourceHorizontalWrapMode <sdk_ubuntu_components_ubuntushape#sourceHorizontalWrapMode-prop>`
 and
-`sourceVerticalWrapMode </sdk/apps/qml/Ubuntu.Components/UbuntuShape#sourceVerticalWrapMode-prop>`__).
+:ref:`sourceVerticalWrapMode <sdk_ubuntu_components_ubuntushape#sourceVerticalWrapMode-prop>`).
 The default value is ``UbuntuShape.Stretch``.
 
 **Note:** Setting this disables support for the deprecated image
@@ -262,15 +278,17 @@ This QML property was introduced in Ubuntu.Components 1.2.
 
 | 
 
+.. _sdk_ubuntu_components_ubuntushape_sourceHorizontalAlignment-prop:
+
 +--------------------------------------------------------------------------+
 |        \ sourceHorizontalAlignment : enumeration                         |
 +--------------------------------------------------------------------------+
 
 This property defines how the
-`source </sdk/apps/qml/Ubuntu.Components/UbuntuShape#source-prop>`__
-texture is horizontally aligned inside the
-`UbuntuShape </sdk/apps/qml/Ubuntu.Components/UbuntuShape/>`__ area. The
-default value is ``UbuntuShape.AlignLeft``.
+:ref:`source <sdk_ubuntu_components_ubuntushape#source-prop>` texture is
+horizontally aligned inside the
+:ref:`UbuntuShape <sdk_ubuntu_components_ubuntushape>` area. The default
+value is ``UbuntuShape.AlignLeft``.
 
 **Note:** Setting this disables support for the deprecated image
 property.
@@ -284,31 +302,32 @@ This QML property was introduced in Ubuntu.Components 1.2.
 
 | 
 
+.. _sdk_ubuntu_components_ubuntushape_sourceHorizontalWrapMode-prop:
+
 +--------------------------------------------------------------------------+
 |        \ sourceHorizontalWrapMode : enumeration                          |
 +--------------------------------------------------------------------------+
 
 When the
-`sourceFillMode </sdk/apps/qml/Ubuntu.Components/UbuntuShape#sourceFillMode-prop>`__
+:ref:`sourceFillMode <sdk_ubuntu_components_ubuntushape#sourceFillMode-prop>`
 is set to ``UbuntuShape.Pad`` or ``UbuntuShape.PreserveAspectFit`` or
 when the
-`sourceScale </sdk/apps/qml/Ubuntu.Components/UbuntuShape#sourceScale-prop>`__
+:ref:`sourceScale <sdk_ubuntu_components_ubuntushape#sourceScale-prop>`
 and/or
-`sourceTranslation </sdk/apps/qml/Ubuntu.Components/UbuntuShape#sourceTranslation-prop>`__
+:ref:`sourceTranslation <sdk_ubuntu_components_ubuntushape#sourceTranslation-prop>`
 properties are changed, the
-`source </sdk/apps/qml/Ubuntu.Components/UbuntuShape#source-prop>`__
-texture might not cover the entire
-`UbuntuShape </sdk/apps/qml/Ubuntu.Components/UbuntuShape/>`__ area.
-This property defines how the source texture wraps outside of its
+:ref:`source <sdk_ubuntu_components_ubuntushape#source-prop>` texture might
+not cover the entire :ref:`UbuntuShape <sdk_ubuntu_components_ubuntushape>`
+area. This property defines how the source texture wraps outside of its
 content area. The default value is ``UbuntuShape.Transparent``.
 
 Ensure ``UbuntuShape.Repeat`` is used only when necessary (in case of an
 ``Image`` or ``AnimatedImage`` source) as it requires the underlying
 texture to be extracted from its atlas. That slows down the rendering
 speed since it prevents the
-`QtQuick <http://doc.qt.io/qt-5/qtquick-qmlmodule.html>`__ renderer to
-batch the `UbuntuShape </sdk/apps/qml/Ubuntu.Components/UbuntuShape/>`__
-with others.
+`QtQuick <http://doc.qt.io/qt-5/qtquick-qmlmodule.html>`_  renderer to
+batch the :ref:`UbuntuShape <sdk_ubuntu_components_ubuntushape>` with
+others.
 
 **Note:** Some OpenGL ES 2 implementations do not support
 ``UbuntuShape.Repeat`` with non-power-of-two sized source textures.
@@ -323,14 +342,16 @@ This QML property was introduced in Ubuntu.Components 1.2.
 
 | 
 
+.. _sdk_ubuntu_components_ubuntushape_sourceOpacity-prop:
+
 +--------------------------------------------------------------------------+
 |        \ sourceOpacity : real                                            |
 +--------------------------------------------------------------------------+
 
 This property holds the opacity of the
-`source </sdk/apps/qml/Ubuntu.Components/UbuntuShape#source-prop>`__
-texture. Opacity is specified as a number between 0.0 (fully
-transparent) and 1.0 (fully opaque). The default value is 1.0.
+:ref:`source <sdk_ubuntu_components_ubuntushape#source-prop>` texture.
+Opacity is specified as a number between 0.0 (fully transparent) and 1.0
+(fully opaque). The default value is 1.0.
 
 **Note:** Setting this disables support for the deprecated image
 property.
@@ -339,23 +360,25 @@ This QML property was introduced in Ubuntu.Components 1.2.
 
 | 
 
+.. _sdk_ubuntu_components_ubuntushape_sourceScale-prop:
+
 +--------------------------------------------------------------------------+
 |        \ sourceScale :                                                   |
-| `vector2d <http://doc.qt.io/qt-5/qml-vector2d.html>`__                   |
+| `vector2d <http://doc.qt.io/qt-5/qml-vector2d.html>`_                    |
 +--------------------------------------------------------------------------+
 
 This property defines the two-component vector used to scale the
-`source </sdk/apps/qml/Ubuntu.Components/UbuntuShape#source-prop>`__
-texture. The texture is scaled at the alignment point defined by
-`sourceHorizontalAlignment </sdk/apps/qml/Ubuntu.Components/UbuntuShape#sourceHorizontalAlignment-prop>`__
+:ref:`source <sdk_ubuntu_components_ubuntushape#source-prop>` texture. The
+texture is scaled at the alignment point defined by
+:ref:`sourceHorizontalAlignment <sdk_ubuntu_components_ubuntushape#sourceHorizontalAlignment-prop>`
 and
-`sourceVerticalAlignment </sdk/apps/qml/Ubuntu.Components/UbuntuShape#sourceVerticalAlignment-prop>`__.
+:ref:`sourceVerticalAlignment <sdk_ubuntu_components_ubuntushape#sourceVerticalAlignment-prop>`.
 The default value is ``Qt.vector2d(1.0,1.0)``.
 
 That can be used to change the size of the
-`source </sdk/apps/qml/Ubuntu.Components/UbuntuShape#source-prop>`__
-texture, to flip it horizontally and/or vertically, to achieve pulsing
-animations, etc.
+:ref:`source <sdk_ubuntu_components_ubuntushape#source-prop>` texture, to
+flip it horizontally and/or vertically, to achieve pulsing animations,
+etc.
 
 Here is a code sample showing how to apply an horizontal flip:
 
@@ -373,20 +396,22 @@ This QML property was introduced in Ubuntu.Components 1.2.
 
 | 
 
+.. _sdk_ubuntu_components_ubuntushape_sourceTranslation-prop:
+
 +--------------------------------------------------------------------------+
 |        \ sourceTranslation :                                             |
-| `vector2d <http://doc.qt.io/qt-5/qml-vector2d.html>`__                   |
+| `vector2d <http://doc.qt.io/qt-5/qml-vector2d.html>`_                    |
 +--------------------------------------------------------------------------+
 
 This property defines the two-component vector in normalized item
 coordinates used to translate the
-`source </sdk/apps/qml/Ubuntu.Components/UbuntuShape#source-prop>`__
-texture. The default value is ``Qt.vector2d(0.0,0.0)``.
+:ref:`source <sdk_ubuntu_components_ubuntushape#source-prop>` texture. The
+default value is ``Qt.vector2d(0.0,0.0)``.
 
 That can be used to put the
-`source </sdk/apps/qml/Ubuntu.Components/UbuntuShape#source-prop>`__
-texture at a precise position, to create infinite scrolling animations
-(using the ``UbuntuShape.Repeat`` wrap mode), etc.
+:ref:`source <sdk_ubuntu_components_ubuntushape#source-prop>` texture at a
+precise position, to create infinite scrolling animations (using the
+``UbuntuShape.Repeat`` wrap mode), etc.
 
 **Note:** Setting this disables support for the deprecated image
 property.
@@ -395,15 +420,17 @@ This QML property was introduced in Ubuntu.Components 1.2.
 
 | 
 
+.. _sdk_ubuntu_components_ubuntushape_sourceVerticalAlignment-prop:
+
 +--------------------------------------------------------------------------+
 |        \ sourceVerticalAlignment : enumeration                           |
 +--------------------------------------------------------------------------+
 
 This property defines how the
-`source </sdk/apps/qml/Ubuntu.Components/UbuntuShape#source-prop>`__
-texture is vertically aligned inside the
-`UbuntuShape </sdk/apps/qml/Ubuntu.Components/UbuntuShape/>`__ area. The
-default value is ``UbuntuShape.AlignTop``.
+:ref:`source <sdk_ubuntu_components_ubuntushape#source-prop>` texture is
+vertically aligned inside the
+:ref:`UbuntuShape <sdk_ubuntu_components_ubuntushape>` area. The default
+value is ``UbuntuShape.AlignTop``.
 
 **Note:** Setting this disables support for the deprecated image
 property.
@@ -417,31 +444,32 @@ This QML property was introduced in Ubuntu.Components 1.2.
 
 | 
 
+.. _sdk_ubuntu_components_ubuntushape_sourceVerticalWrapMode-prop:
+
 +--------------------------------------------------------------------------+
 |        \ sourceVerticalWrapMode : enumeration                            |
 +--------------------------------------------------------------------------+
 
 When the
-`sourceFillMode </sdk/apps/qml/Ubuntu.Components/UbuntuShape#sourceFillMode-prop>`__
+:ref:`sourceFillMode <sdk_ubuntu_components_ubuntushape#sourceFillMode-prop>`
 is set to ``UbuntuShape.Pad`` or ``UbuntuShape.PreserveAspectFit`` or
 when the
-`sourceScale </sdk/apps/qml/Ubuntu.Components/UbuntuShape#sourceScale-prop>`__
+:ref:`sourceScale <sdk_ubuntu_components_ubuntushape#sourceScale-prop>`
 and/or
-`sourceTranslation </sdk/apps/qml/Ubuntu.Components/UbuntuShape#sourceTranslation-prop>`__
+:ref:`sourceTranslation <sdk_ubuntu_components_ubuntushape#sourceTranslation-prop>`
 properties are changed, the
-`source </sdk/apps/qml/Ubuntu.Components/UbuntuShape#source-prop>`__
-texture might not cover the entire
-`UbuntuShape </sdk/apps/qml/Ubuntu.Components/UbuntuShape/>`__ area.
-This property defines how the source texture wraps outside of its
+:ref:`source <sdk_ubuntu_components_ubuntushape#source-prop>` texture might
+not cover the entire :ref:`UbuntuShape <sdk_ubuntu_components_ubuntushape>`
+area. This property defines how the source texture wraps outside of its
 content area. The default value is ``UbuntuShape.Transparent``.
 
 Ensure ``UbuntuShape.Repeat`` is used only when necessary (in case of an
 ``Image`` or ``AnimatedImage`` source) as it requires the underlying
 texture to be extracted from its atlas. That slows down the rendering
 speed since it prevents the
-`QtQuick <http://doc.qt.io/qt-5/qtquick-qmlmodule.html>`__ renderer to
-batch the `UbuntuShape </sdk/apps/qml/Ubuntu.Components/UbuntuShape/>`__
-with others.
+`QtQuick <http://doc.qt.io/qt-5/qtquick-qmlmodule.html>`_  renderer to
+batch the :ref:`UbuntuShape <sdk_ubuntu_components_ubuntushape>` with
+others.
 
 **Note:** Some OpenGL ES 2 implementations do not support
 ``UbuntuShape.Repeat`` with non-power-of-two sized source textures.

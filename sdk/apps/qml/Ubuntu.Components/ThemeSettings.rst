@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_themesettings:
+Ubuntu.Components ThemeSettings
+===============================
+
 The ThemeSettings class provides facilities to define the theme of a
 StyledItem.
 
@@ -10,11 +14,11 @@ StyledItem.
 Properties
 ----------
 
--  ****`name </sdk/apps/qml/Ubuntu.Components/ThemeSettings#name-prop>`__****
-   : string
--  ****`palette </sdk/apps/qml/Ubuntu.Components/ThemeSettings#palette-prop>`__****
+-  :ref:`name <sdk_ubuntu_components_themesettings_name-prop>` :
+   string
+-  :ref:`palette <sdk_ubuntu_components_themesettings_palette-prop>`
    : Palette
--  ****`parentTheme </sdk/apps/qml/Ubuntu.Components/ThemeSettings#parentTheme-prop>`__****
+-  :ref:`parentTheme <sdk_ubuntu_components_themesettings_parentTheme-prop>`
    : ThemeSettings
 
 Detailed Description
@@ -24,15 +28,14 @@ A global instance is exposed as the **theme** context property.
 
 The theme defines the visual aspect of the Ubuntu components. An
 application can use one or more theme the same time. The
-`ThemeSettings </sdk/apps/qml/Ubuntu.Components/ThemeSettings/>`__
-component provides abilities to change the theme used by the component
-and all its child components.
+:ref:`ThemeSettings <sdk_ubuntu_components_themesettings>` component
+provides abilities to change the theme used by the component and all its
+child components.
 
 Changing the theme of the entire application can be achieved by changing
 the name of the root
-`StyledItem </sdk/apps/qml/Ubuntu.Components/StyledItem/>`__'s, i.e.
-`MainView </sdk/apps/qml/Ubuntu.Components/MainView/>`__'s current
-theme.
+:ref:`StyledItem <sdk_ubuntu_components_styleditem>`'s, i.e.
+:ref:`MainView <sdk_ubuntu_components_mainview>`'s current theme.
 
 .. code:: qml
 
@@ -46,9 +49,9 @@ theme.
 
 By default, styled items inherit the theme they use from their closest
 styled item ancestor. In case the application uses
-`MainView </sdk/apps/qml/Ubuntu.Components/MainView/>`__, all components
-will inherit the theme from the
-`MainView </sdk/apps/qml/Ubuntu.Components/MainView/>`__.
+:ref:`MainView <sdk_ubuntu_components_mainview>`, all components will
+inherit the theme from the
+:ref:`MainView <sdk_ubuntu_components_mainview>`.
 
 .. code:: qml
 
@@ -70,11 +73,10 @@ will inherit the theme from the
     }
 
 **Note:** In the example above the Button inherits the theme from Page,
-which inherits it from
-`MainView </sdk/apps/qml/Ubuntu.Components/MainView/>`__. Therefore
-changing the theme name in this way will result in a change of the
-inherited theme. In case a different theme is desired, a new instance of
-the `ThemeSettings </sdk/apps/qml/Ubuntu.Components/ThemeSettings/>`__
+which inherits it from :ref:`MainView <sdk_ubuntu_components_mainview>`.
+Therefore changing the theme name in this way will result in a change of
+the inherited theme. In case a different theme is desired, a new
+instance of the :ref:`ThemeSettings <sdk_ubuntu_components_themesettings>`
 must be created on the styled item desired.
 
 .. code:: qml
@@ -98,16 +100,14 @@ must be created on the styled item desired.
     }
 
 The style can be set on a
-`StyledItem </sdk/apps/qml/Ubuntu.Components/StyledItem/>`__ either
-using
-`StyledItem::styleName </sdk/apps/qml/Ubuntu.Components/StyledItem#styleName-prop>`__
-or
-`StyledItem::style </sdk/apps/qml/Ubuntu.Components/StyledItem#style-prop>`__
+:ref:`StyledItem <sdk_ubuntu_components_styleditem>` either using
+:ref:`StyledItem::styleName <sdk_ubuntu_components_styleditem#styleName-prop>`
+or :ref:`StyledItem::style <sdk_ubuntu_components_styleditem#style-prop>`
 properties. When set through
-`StyledItem::styleName </sdk/apps/qml/Ubuntu.Components/StyledItem#styleName-prop>`__,
+:ref:`StyledItem::styleName <sdk_ubuntu_components_styleditem#styleName-prop>`,
 the component will load the style from the current theme set, and must
 be a QML document. The
-`StyledItem::style </sdk/apps/qml/Ubuntu.Components/StyledItem#style-prop>`__
+:ref:`StyledItem::style <sdk_ubuntu_components_styleditem#style-prop>`
 property is a Component which can be declared local, or loaded with a
 Loader or created using Qt.createComponent() function. The following
 example will create the style with the inherited theme.
@@ -121,17 +121,18 @@ example will create the style with the inherited theme.
     }
 
 All styled toolkit components such as
-`Button </sdk/apps/qml/Ubuntu.Components/Button/>`__,
-`CheckBox </sdk/apps/qml/Ubuntu.Components/CheckBox/>`__,
-`Switch </sdk/apps/qml/Ubuntu.Components/Switch/>`__, etc. create their
-style in this way. Note that the style component must be part of the
-theme, otherwise the style creation will fail.
+:ref:`Button <sdk_ubuntu_components_button>`,
+:ref:`CheckBox <sdk_ubuntu_components_checkbox>`,
+:ref:`Switch <sdk_ubuntu_components_switch>`, etc. create their style in
+this way. Note that the style component must be part of the theme,
+otherwise the style creation will fail.
 
-**See also**
-`StyledItem </sdk/apps/qml/Ubuntu.Components/StyledItem/>`__.
+**See also** :ref:`StyledItem <sdk_ubuntu_components_styleditem>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_ubuntu_components_themesettings_name-prop:
 
 +--------------------------------------------------------------------------+
 |        \ name : string                                                   |
@@ -141,6 +142,8 @@ The name of the current theme in dotted format i.e.
 "Ubuntu.Components.Themes.Ambiance".
 
 | 
+
+.. _sdk_ubuntu_components_themesettings_palette-prop:
 
 +--------------------------------------------------------------------------+
 |        \ palette : Palette                                               |
@@ -204,13 +207,14 @@ palette used for configuration is destroyed.
 
 | 
 
+.. _sdk_ubuntu_components_themesettings_[read-only] parentTheme-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [read-only] parentTheme :                                       |
-| `ThemeSettings </sdk/apps/qml/Ubuntu.Components/ThemeSettings/>`__       |
+| :ref:`ThemeSettings <sdk_ubuntu_components_themesettings>`                  |
 +--------------------------------------------------------------------------+
 
 The property specifies the parent
-`ThemeSettings </sdk/apps/qml/Ubuntu.Components/ThemeSettings/>`__
-instance.
+:ref:`ThemeSettings <sdk_ubuntu_components_themesettings>` instance.
 
 | 

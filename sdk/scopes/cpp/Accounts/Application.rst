@@ -1,5 +1,9 @@
+.. _sdk_accounts_application:
+Accounts Application
+====================
+
 Information on the client applications of libaccounts.
-`More... </sdk/scopes/cpp/Accounts/Application#details>`__
+:ref:`More... <sdk_accounts_application#details>`
 
 ``#include <Accounts/Application>``
 
@@ -8,7 +12,7 @@ Information on the client applications of libaccounts.
 
          
 
-`Application </sdk/scopes/cpp/Accounts/Application#aec7d6461aa7be31d98eff24b9d69ae3d>`__
+:ref:`Application <sdk_accounts_application#aec7d6461aa7be31d98eff24b9d69ae3d>`
 ()
 
  
@@ -19,8 +23,8 @@ Information on the client applications of libaccounts.
 
  
 
-`Application </sdk/scopes/cpp/Accounts/Application#af5e0a77dad01833eddabf0def1caa475>`__
-(const `Application </sdk/scopes/cpp/Accounts/Application/>`__ &other)
+:ref:`Application <sdk_accounts_application#af5e0a77dad01833eddabf0def1caa475>`
+(const :ref:`Application <sdk_accounts_application>` &other)
 
  
 
@@ -28,16 +32,15 @@ Information on the client applications of libaccounts.
 
  
 
-        `Application </sdk/scopes/cpp/Accounts/Application/>`__ & 
+:ref:` <>` `Application <sdk_accounts_application>` & 
 
-**operator=** (const
-`Application </sdk/scopes/cpp/Accounts/Application/>`__ &other)
+**operator=** (const :ref:`Application <sdk_accounts_application>` &other)
 
  
 
          
 
-`~Application </sdk/scopes/cpp/Accounts/Application#a713b51c450f3ae9db74cd857c2419173>`__
+:ref:`~Application <sdk_accounts_application#a713b51c450f3ae9db74cd857c2419173>`
 ()
 
  
@@ -48,7 +51,7 @@ Information on the client applications of libaccounts.
 
 bool 
 
-`isValid </sdk/scopes/cpp/Accounts/Application#aac1b70a2ed67ead038c4d3f5ac4d8a81>`__
+:ref:`isValid <sdk_accounts_application#aac1b70a2ed67ead038c4d3f5ac4d8a81>`
 () const
 
  
@@ -59,8 +62,8 @@ bool 
 
 QString 
 
-`name </sdk/scopes/cpp/Accounts/Application#a2b0a198f837184bf6fff555cee3ce770>`__
-() const
+:ref:`name <sdk_accounts_application#a2b0a198f837184bf6fff555cee3ce770>` ()
+const
 
  
 
@@ -70,7 +73,7 @@ QString 
 
 QString 
 
-`displayName </sdk/scopes/cpp/Accounts/Application#a9def71dea12661002bb3a63b3b91d08d>`__
+:ref:`displayName <sdk_accounts_application#a9def71dea12661002bb3a63b3b91d08d>`
 () const
 
  
@@ -81,7 +84,7 @@ QString 
 
 QString 
 
-`description </sdk/scopes/cpp/Accounts/Application#aeaebc63d2181b1a4506603f4e03f1275>`__
+:ref:`description <sdk_accounts_application#aeaebc63d2181b1a4506603f4e03f1275>`
 () const
 
  
@@ -92,7 +95,7 @@ QString 
 
 QString 
 
-`iconName </sdk/scopes/cpp/Accounts/Application#a038b22680aca535f9972908fe2f1f6a1>`__
+:ref:`iconName <sdk_accounts_application#a038b22680aca535f9972908fe2f1f6a1>`
 () const
 
  
@@ -103,7 +106,7 @@ QString 
 
 QString 
 
-`desktopFilePath </sdk/scopes/cpp/Accounts/Application#a8e3558c6d34db1186be87e3483ff59f8>`__
+:ref:`desktopFilePath <sdk_accounts_application#a8e3558c6d34db1186be87e3483ff59f8>`
 () const
 
  
@@ -114,7 +117,7 @@ QString 
 
 QString 
 
-`trCatalog </sdk/scopes/cpp/Accounts/Application#a6c73afd4753195ea4eee794c95a770dd>`__
+:ref:`trCatalog <sdk_accounts_application#a6c73afd4753195ea4eee794c95a770dd>`
 () const
 
  
@@ -126,8 +129,8 @@ QString 
 
 QString 
 
-`serviceUsage </sdk/scopes/cpp/Accounts/Application#a3e79b6f20785764a31a750544fde6f39>`__
-(const `Service </sdk/scopes/cpp/Accounts/Service/>`__ &service) const
+:ref:`serviceUsage <sdk_accounts_application#a3e79b6f20785764a31a750544fde6f39>`
+(const :ref:`Service <sdk_accounts_service>` &service) const
 
  
 
@@ -141,12 +144,12 @@ Detailed Description
 
 Information on the client applications of libaccounts.
 
-The `Application </sdk/scopes/cpp/Accounts/Application/>`__ structure
-holds information on the client applications registered with
-libaccounts. It is instantiated by
-`Manager::application() </sdk/scopes/cpp/Accounts/Manager#a28ff538d5abd52ff691e30ed75a6b41f>`__
+The :ref:`Application <sdk_accounts_application>` structure holds
+information on the client applications registered with libaccounts. It
+is instantiated by
+:ref:`Manager::application() <sdk_accounts_manager#a28ff538d5abd52ff691e30ed75a6b41f>`
 and
-`Manager::applicationList() </sdk/scopes/cpp/Accounts/Manager#ae18f9f8c59a4e15e8849dd832c54b874>`__.
+:ref:`Manager::applicationList() <sdk_accounts_manager#ae18f9f8c59a4e15e8849dd832c54b874>`.
 
 Definition at line 40 of file application.h.
 
@@ -155,18 +158,17 @@ Constructor & Destructor Documentation
 
 +--------------+--------------+--------------+--------------+--------------+--------------+
 | `Application | (            | const        | *other*      | )            |              |
-|  </sdk/scope |              | `Application |              |              |              |
-| s/cpp/Accoun |              |  </sdk/scope |              |              |              |
-| ts/Applicati |              | s/cpp/Accoun |              |              |              |
-| on/>`__      |              | ts/Applicati |              |              |              |
-|              |              | on/>`__      |              |              |              |
+|  <sdk_accoun |              | :ref:`Application |              |              |              |
+| ts_applicati |              |  <sdk_accoun |              |              |              |
+| on>`_        |              | ts_applicati |              |              |              |
+|              |              | on>`_        |              |              |              |
 |              |              | &            |              |              |              |
 +--------------+--------------+--------------+--------------+--------------+--------------+
 
 Copy constructor.
 
-Copying an `Application </sdk/scopes/cpp/Accounts/Application/>`__
-object is very cheap, because the data is shared among copies.
+Copying an :ref:`Application <sdk_accounts_application>` object is very
+cheap, because the data is shared among copies.
 
 Definition at line 62 of file application.cpp.
 
@@ -229,11 +231,11 @@ Definition at line 140 of file application.cpp.
 +----------------+----------------+----------------+----------------+----------------+
 
 Check whether this object represents an
-`Application </sdk/scopes/cpp/Accounts/Application/>`__.
+:ref:`Application <sdk_accounts_application>`.
 
 Returns
-    true if the `Application </sdk/scopes/cpp/Accounts/Application/>`__
-    is a valid one.
+    true if the :ref:`Application <sdk_accounts_application>` is a valid
+    one.
 
 Definition at line 95 of file application.cpp.
 
@@ -256,9 +258,9 @@ References Application::isValid().
 
 Referenced by Application::displayName().
 
-+------------------------+-----+------------------------------------------------------------+-------------+-----+---------+
-| QString serviceUsage   | (   | const `Service </sdk/scopes/cpp/Accounts/Service/>`__ &    | *service*   | )   | const   |
-+------------------------+-----+------------------------------------------------------------+-------------+-----+---------+
++------------------------+-----+-----------------------------------------------+-------------+-----+---------+
+| QString serviceUsage   | (   | const :ref:`Service <sdk_accounts_service>` &    | *service*   | )   | const   |
++------------------------+-----+-----------------------------------------------+-------------+-----+---------+
 
 Get the description from the application XML file, for the specified
 service; if not found, get the service-type description instead.

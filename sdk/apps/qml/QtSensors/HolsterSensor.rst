@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_holstersensor:
+QtSensors HolsterSensor
+=======================
+
 The HolsterSensor element reports on whether a device is holstered.
 
 +--------------------------------------+--------------------------------------+
@@ -5,18 +9,16 @@ The HolsterSensor element reports on whether a device is holstered.
 +--------------------------------------+--------------------------------------+
 | Since:                               | QtSensors 5.1                        |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Sensor </sdk/apps/qml/QtSensors/Sen |
-|                                      | sor/>`__                             |
+| Inherits:                            | :ref:`Sensor <sdk_qtsensors_sensor>` |
 +--------------------------------------+--------------------------------------+
 
 Detailed Description
 --------------------
 
-The `HolsterSensor </sdk/apps/qml/QtSensors/HolsterSensor/>`__ element
-reports on whether a device is holstered.
+The :ref:`HolsterSensor <sdk_qtsensors_holstersensor>` element reports on
+whether a device is holstered.
 
 This element wraps the QHolsterSensor class. Please see the
 documentation for QHolsterSensor for details.
 
-**See also**
-`HolsterReading </sdk/apps/qml/QtSensors/HolsterReading/>`__.
+**See also** :ref:`HolsterReading <sdk_qtsensors_holsterreading>`.

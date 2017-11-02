@@ -1,3 +1,7 @@
+.. _sdk_qtqml_creating_c++_plugins_for_qml:
+QtQml Creating C++ Plugins for QML
+==================================
+
 
 
 .. rubric:: Creating a Plugin
@@ -23,7 +27,7 @@ To write a QML extension plugin:
       register the types to be exported by the plugin
 
 #. Write a project file for the plugin
-#. Create a `qmldir file </sdk/apps/qml/QtQml/qtqml-modules-qmldir/>`__
+#. Create a `qmldir file </sdk/apps/qml/QtQml/qtqml-modules-qmldir/>`_ 
    to describe the plugin
 
 QML extension plugins are for either application-specific or
@@ -73,7 +77,7 @@ The ``TimeModel`` class receives a ``1.0`` version of this plugin
 library, as a QML type called ``Time``. The Q\_ASSERT() macro can ensure
 the type namespace is imported correctly by any QML components that use
 this plugin. The `Defining QML Types from
-C++ </sdk/apps/qml/QtQml/qtqml-cppintegration-definetypes/>`__ article
+C++ </sdk/apps/qml/QtQml/qtqml-cppintegration-definetypes/>`_  article
 has more information about registering C++ types into the runtime.
 
 For this example, the TimeExample source directory is in
@@ -94,7 +98,7 @@ and various other details:
     TARGET = qmlqtimeexampleplugin
     SOURCES += qexampleqmlplugin.cpp
 
-Finally, a `qmldir file </sdk/apps/qml/QtQml/qtqml-modules-qmldir/>`__
+Finally, a `qmldir file </sdk/apps/qml/QtQml/qtqml-modules-qmldir/>`_ 
 is required in the ``imports/TimeExample`` directory to describe the
 plugin and the types that it exports. The plugin includes a
 ``Clock.qml`` file along with the ``qmlqtimeexampleplugin`` that is
@@ -122,16 +126,16 @@ accessible by any QML component that imports the ``TimeExample`` module
     }
 
 The full source code is available in the `plugins
-example </sdk/apps/qml/QtQml/qmlextensionplugins/>`__.
+example </sdk/apps/qml/QtQml/qmlextensionplugins/>`_ .
 
 .. rubric:: Reference
    :name: reference
 
 -  `Writing QML Extensions with
-   C++ </sdk/apps/qml/QtQml/tutorials-extending-qml/>`__ - contains a
+   C++ </sdk/apps/qml/QtQml/tutorials-extending-qml/>`_  - contains a
    chapter on creating QML plugins.
 -  `Defining QML Types from
-   C++ </sdk/apps/qml/QtQml/qtqml-cppintegration-definetypes/>`__ -
+   C++ </sdk/apps/qml/QtQml/qtqml-cppintegration-definetypes/>`_  -
    information about registering C++ types into the runtime.
 -  How to Create Qt Plugins - information about Qt plugins
 

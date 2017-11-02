@@ -1,3 +1,7 @@
+.. _sdk_ubuntuuserinterfacetoolkit_layouts_-_the_first_conditional_layout:
+UbuntuUserInterfaceToolkit Layouts - The first conditional layout
+=================================================================
+
 
 
 As first let's create the following default layout, with anchored
@@ -78,7 +82,7 @@ the layouting. Therefore we mark each button with a unique name, "red",
 
 Let's define a column layout for the case when the layout block width
 passes 50 GU, and move the items into a
-`Row <http://qt-project.org/doc/qt-5.0/qtquick/qml-qtquick2-row.html>`__
+`Row <http://qt-project.org/doc/qt-5.0/qtquick/qml-qtquick2-row.html>`_ 
 container in the following order: "red", "green" and "blue". We also
 need to specify the size these components will have, so let's set the
 width to one third of the container's width and top and bottom anchored
@@ -119,11 +123,10 @@ to the row's top and bottom.
     }
 
 Note the way the container is defined. Items are laid out using
-`ItemLayout </sdk/apps/qml/Ubuntu.Layouts/ItemLayout/>`__ host items.
-The items will be laid out in the order the
-`ItemLayout </sdk/apps/qml/Ubuntu.Layouts/ItemLayout/>`__ hosts are
-declared. Beside this
-`ItemLayout </sdk/apps/qml/Ubuntu.Layouts/ItemLayout/>`__ also drives
+:ref:`ItemLayout <sdk_ubuntu_layouts_itemlayout>` host items. The items
+will be laid out in the order the
+:ref:`ItemLayout <sdk_ubuntu_layouts_itemlayout>` hosts are declared.
+Beside this :ref:`ItemLayout <sdk_ubuntu_layouts_itemlayout>` also drives
 the size, scale, rotation, availability (enabled) visibility and opacity
 of the hosted item.
 
@@ -223,7 +226,7 @@ when width exceeds 50 GU:
     }
 
 `Layouts - Changing the
-order </sdk/apps/qml/UbuntuUserInterfaceToolkit/ubuntu-layouts3/>`__
+order </sdk/apps/qml/UbuntuUserInterfaceToolkit/ubuntu-layouts3/>`_ 
 
 .. |image0| image:: /media/sdk/apps/qml/ubuntu-layouts2/images/default-layout.png
 .. |image1| image:: /media/sdk/apps/qml/ubuntu-layouts2/images/layout1.png

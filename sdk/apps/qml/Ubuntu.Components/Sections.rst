@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_sections:
+Ubuntu.Components Sections
+==========================
+
 Display a list of sections that the user can select. By tapping on a
 section name the selectedIndex will be updated, and the associated
 Action is triggered.
@@ -7,18 +11,17 @@ Action is triggered.
 +--------------------------------------+--------------------------------------+
 | Since:                               | Ubuntu.Components 1.3                |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `StyledItem </sdk/apps/qml/Ubuntu.Co |
-|                                      | mponents/StyledItem/>`__             |
+| Inherits:                            | :ref:`StyledItem <sdk_ubuntu_components_s |
+|                                      | tyleditem>`_                         |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`actions </sdk/apps/qml/Ubuntu.Components/Sections#actions-prop>`__****
-   : Action
--  ****`model </sdk/apps/qml/Ubuntu.Components/Sections#model-prop>`__****
-   : var
--  ****`selectedIndex </sdk/apps/qml/Ubuntu.Components/Sections#selectedIndex-prop>`__****
+-  :ref:`actions <sdk_ubuntu_components_sections_actions-prop>` :
+   Action
+-  :ref:`model <sdk_ubuntu_components_sections_model-prop>` : var
+-  :ref:`selectedIndex <sdk_ubuntu_components_sections_selectedIndex-prop>`
    : int
 
 Detailed Description
@@ -27,18 +30,20 @@ Detailed Description
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_sections_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ actions : `Action </sdk/apps/qml/Ubuntu.Components/Action/>`__  |
+| :ref:` <>`\ actions : `Action <sdk_ubuntu_components_action>`          |
 +--------------------------------------------------------------------------+
 
 List of actions that represent the sections. The text of each action is
 displayed as the section name and clicking a section will update the
-`selectedIndex </sdk/apps/qml/Ubuntu.Components/Sections#selectedIndex-prop>`__.
+:ref:`selectedIndex <sdk_ubuntu_components_sections#selectedIndex-prop>`.
 
 When
-`selectedIndex </sdk/apps/qml/Ubuntu.Components/Sections#selectedIndex-prop>`__
-is changed (by user interaction or by setting the value),
-actions[`selectedIndex </sdk/apps/qml/Ubuntu.Components/Sections#selectedIndex-prop>`__]
+:ref:`selectedIndex <sdk_ubuntu_components_sections#selectedIndex-prop>` is
+changed (by user interaction or by setting the value),
+actions[:ref:`selectedIndex <sdk_ubuntu_components_sections#selectedIndex-prop>`]
 will be triggered.
 
 Example:
@@ -65,21 +70,23 @@ Example:
 It is strongly recommended to limit the number of sections to two or
 three. The actions are used as the model for the Sections by default. If
 no trigger functions need to be specified,
-`model </sdk/apps/qml/Ubuntu.Components/Sections#model-prop>`__ may be
-used directly without setting the actions property. If both actions and
-`model </sdk/apps/qml/Ubuntu.Components/Sections#model-prop>`__ are set,
-model overrides the actions.
+:ref:`model <sdk_ubuntu_components_sections#model-prop>` may be used
+directly without setting the actions property. If both actions and
+:ref:`model <sdk_ubuntu_components_sections#model-prop>` are set, model
+overrides the actions.
 
 | 
 
+.. _sdk_ubuntu_components_sections_model-prop:
+
 +--------------------------------------------------------------------------+
-|        \ model : `var <http://doc.qt.io/qt-5/qml-var.html>`__            |
+|        \ model : `var <http://doc.qt.io/qt-5/qml-var.html>`_             |
 +--------------------------------------------------------------------------+
 
 The input model for the sections. By default model takes the
-`actions </sdk/apps/qml/Ubuntu.Components/Sections#actions-prop>`__ as
-input, but if no trigger functions need to be specified, it can be
-simplified to a list of strings naming the sections:
+:ref:`actions <sdk_ubuntu_components_sections#actions-prop>` as input, but
+if no trigger functions need to be specified, it can be simplified to a
+list of strings naming the sections:
 
 .. code:: qml
 
@@ -92,16 +99,18 @@ simplified to a list of strings naming the sections:
 
 | 
 
+.. _sdk_ubuntu_components_sections_selectedIndex-prop:
+
 +--------------------------------------------------------------------------+
 |        \ selectedIndex : int                                             |
 +--------------------------------------------------------------------------+
 
 The index of the currently selected section in
-`model </sdk/apps/qml/Ubuntu.Components/Sections#model-prop>`__. The
-default value is 0 if there is at least 1 section, or -1 for no
-sections. When the model is changed, selectedIndex is reset to 0 and the
-first action is triggered. Upon completion of the Sections component, if
-there is an Action associated with the selected index, that Action will
-be triggered.
+:ref:`model <sdk_ubuntu_components_sections#model-prop>`. The default value
+is 0 if there is at least 1 section, or -1 for no sections. When the
+model is changed, selectedIndex is reset to 0 and the first action is
+triggered. Upon completion of the Sections component, if there is an
+Action associated with the selected index, that Action will be
+triggered.
 
 | 

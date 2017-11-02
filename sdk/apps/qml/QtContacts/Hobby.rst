@@ -1,3 +1,7 @@
+.. _sdk_qtcontacts_hobby:
+QtContacts Hobby
+================
+
 The Hobby element contains a hobby of the contact.
 
 +---------------------+-------------------------+
@@ -7,8 +11,7 @@ The Hobby element contains a hobby of the contact.
 Properties
 ----------
 
--  ****`hobby </sdk/apps/qml/QtContacts/Hobby#hobby-prop>`__**** :
-   string
+-  :ref:`hobby <sdk_qtcontacts_hobby_hobby-prop>` : string
 
 Detailed Description
 --------------------
@@ -21,6 +24,8 @@ This element is part of the **QtContacts** module.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtcontacts_hobby_hobby-prop:
 
 +--------------------------------------------------------------------------+
 |        \ hobby : string                                                  |

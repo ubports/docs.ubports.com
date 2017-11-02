@@ -1,3 +1,7 @@
+.. _sdk_scopejs_searchreply:
+ScopeJS SearchReply
+===================
+
 
 Allows the results of a preview to be sent to the preview requester.
 

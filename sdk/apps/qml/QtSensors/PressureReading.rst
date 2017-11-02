@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_pressurereading:
+QtSensors PressureReading
+=========================
+
 The PressureReading element holds the most recent PressureSensor
 reading.
 
@@ -6,24 +10,24 @@ reading.
 +--------------------------------------+--------------------------------------+
 | Since:                               | QtSensors 5.1                        |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `SensorReading </sdk/apps/qml/QtSens |
-|                                      | ors/SensorReading/>`__               |
+| Inherits:                            | :ref:`SensorReading <sdk_qtsensors_sensor |
+|                                      | reading>`_                           |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`pressure </sdk/apps/qml/QtSensors/PressureReading#pressure-prop>`__****
-   : qreal
--  ****`temperature </sdk/apps/qml/QtSensors/PressureReading#temperature-prop>`__****
+-  :ref:`pressure <sdk_qtsensors_pressurereading_pressure-prop>` :
+   qreal
+-  :ref:`temperature <sdk_qtsensors_pressurereading_temperature-prop>`
    : qreal
 
 Detailed Description
 --------------------
 
-The `PressureReading </sdk/apps/qml/QtSensors/PressureReading/>`__
-element holds the most recent
-`PressureSensor </sdk/apps/qml/QtSensors/PressureSensor/>`__ reading.
+The :ref:`PressureReading <sdk_qtsensors_pressurereading>` element holds
+the most recent :ref:`PressureSensor <sdk_qtsensors_pressuresensor>`
+reading.
 
 This element wraps the QPressureReading class. Please see the
 documentation for QPressureReading for details.
@@ -32,6 +36,8 @@ This element cannot be directly created.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtsensors_pressurereading_pressure-prop:
 
 +--------------------------------------------------------------------------+
 |        \ pressure : qreal                                                |
@@ -43,6 +49,8 @@ Please see QPressureReading::pressure for information about this
 property.
 
 | 
+
+.. _sdk_qtsensors_pressurereading_temperature-prop:
 
 +--------------------------------------------------------------------------+
 |        \ temperature : qreal                                             |

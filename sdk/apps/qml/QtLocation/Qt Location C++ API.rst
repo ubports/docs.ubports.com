@@ -1,3 +1,7 @@
+.. _sdk_qtlocation_qt_location_c++_api:
+QtLocation Qt Location C++ API
+==============================
+
 
 
 The Location API provides a library for mapping, navigation and place
@@ -18,11 +22,11 @@ The following table provides links to more detailed information on
 sections of the Qt Location C++ API.
 
 +--------------------------------------------------------------------------------------------+------------------------------------------------------+
-| `Maps and Navigation </sdk/apps/qml/QtLocation/location-maps-cpp/>`__                      | Displaying maps and finding routes.                  |
+| `Maps and Navigation </sdk/apps/qml/QtLocation/location-maps-cpp/>`_                       | Displaying maps and finding routes.                  |
 +--------------------------------------------------------------------------------------------+------------------------------------------------------+
-| `Places </sdk/apps/qml/QtLocation/location-places-cpp/>`__                                 | Searching for and managing points of interest.       |
+| `Places </sdk/apps/qml/QtLocation/location-places-cpp/>`_                                  | Searching for and managing points of interest.       |
 +--------------------------------------------------------------------------------------------+------------------------------------------------------+
-| `Geoservices Plugin Implementation </sdk/apps/qml/QtLocation/qtlocation-geoservices/>`__   | Implement new geoservices and positioning plugins.   |
+| `Geoservices Plugin Implementation </sdk/apps/qml/QtLocation/qtlocation-geoservices/>`_    | Implement new geoservices and positioning plugins.   |
 +--------------------------------------------------------------------------------------------+------------------------------------------------------+
 
 .. rubric:: Geoservice Provider Classes
@@ -38,7 +42,7 @@ sections of the Qt Location C++ API.
 
 Currently it is not possible to interact with maps data via C++. The
 only available interface is the `Maps and Navigation
-(QML) </sdk/apps/qml/QtLocation/location-maps-qml/>`__ API.
+(QML) </sdk/apps/qml/QtLocation/location-maps-qml/>`_  API.
 
 +--------------------------------------+--------------------------------------+
 | QGeoManeuver                         | Represents the information relevant  |

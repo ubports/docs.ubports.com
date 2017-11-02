@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_connectivity_ubuntu_connectivity_api:
+Ubuntu.Connectivity Ubuntu Connectivity API
+===========================================
+
 
                 Introduction
 Ubuntu Connectivity API offers a way to access the connectivity related
@@ -14,13 +18,12 @@ Available through:
         Items
 
 +--------------------------------------+--------------------------------------+
-| `NetworkingStatus </sdk/apps/qml/Ubu | Overall system networking status     |
-| ntu.Connectivity/NetworkingStatus/>` |                                      |
-| __                                   |                                      |
+| :ref:`NetworkingStatus <sdk_ubuntu_connec | Overall system networking status     |
+| tivity_networkingstatus>`_           |                                      |
 +--------------------------------------+--------------------------------------+
 
         Reporting Bugs
 If you find any problems with the or this documentation, please file a
 bug in Connectivity API `Launchpad
-page <https://bugs.launchpad.net/connectivity-api>`__.
+page <https://bugs.launchpad.net/connectivity-api>`_ .
 

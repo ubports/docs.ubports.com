@@ -1,3 +1,7 @@
+.. _sdk_scopejs_columnlayout:
+ScopeJS ColumnLayout
+====================
+
 
 Describes a column layout for preview widgets.
 

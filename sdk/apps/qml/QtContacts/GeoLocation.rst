@@ -1,3 +1,7 @@
+.. _sdk_qtcontacts_geolocation:
+QtContacts GeoLocation
+======================
+
 The GeoLocation element contains a global location coordinate associated
 with a contact.
 
@@ -8,45 +12,45 @@ with a contact.
 Properties
 ----------
 
--  ****`accuracy </sdk/apps/qml/QtContacts/GeoLocation#accuracy-prop>`__****
-   : double
--  ****`altitude </sdk/apps/qml/QtContacts/GeoLocation#altitude-prop>`__****
-   : double
--  ****`altitudeAccuracy </sdk/apps/qml/QtContacts/GeoLocation#altitudeAccuracy-prop>`__****
-   : double
--  ****`heading </sdk/apps/qml/QtContacts/GeoLocation#heading-prop>`__****
-   : double
--  ****`label </sdk/apps/qml/QtContacts/GeoLocation#label-prop>`__**** :
-   string
--  ****`latitude </sdk/apps/qml/QtContacts/GeoLocation#latitude-prop>`__****
-   : double
--  ****`longitude </sdk/apps/qml/QtContacts/GeoLocation#longitude-prop>`__****
-   : double
--  ****`speed </sdk/apps/qml/QtContacts/GeoLocation#speed-prop>`__**** :
+-  :ref:`accuracy <sdk_qtcontacts_geolocation_accuracy-prop>` :
    double
--  ****`timestamp </sdk/apps/qml/QtContacts/GeoLocation#timestamp-prop>`__****
-   : date
+-  :ref:`altitude <sdk_qtcontacts_geolocation_altitude-prop>` :
+   double
+-  :ref:`altitudeAccuracy <sdk_qtcontacts_geolocation_altitudeAccuracy-prop>`
+   : double
+-  :ref:`heading <sdk_qtcontacts_geolocation_heading-prop>` :
+   double
+-  :ref:`label <sdk_qtcontacts_geolocation_label-prop>` : string
+-  :ref:`latitude <sdk_qtcontacts_geolocation_latitude-prop>` :
+   double
+-  :ref:`longitude <sdk_qtcontacts_geolocation_longitude-prop>` :
+   double
+-  :ref:`speed <sdk_qtcontacts_geolocation_speed-prop>` : double
+-  :ref:`timestamp <sdk_qtcontacts_geolocation_timestamp-prop>` :
+   date
 
 Detailed Description
 --------------------
 
-`GeoLocation </sdk/apps/qml/QtContacts/GeoLocation/>`__ element contains
-the following field types:
+:ref:`GeoLocation <sdk_qtcontacts_geolocation>` element contains the
+following field types:
 
--  `GeoLocation </sdk/apps/qml/QtContacts/GeoLocation/>`__.Label
--  `GeoLocation </sdk/apps/qml/QtContacts/GeoLocation/>`__.Latitude
--  `GeoLocation </sdk/apps/qml/QtContacts/GeoLocation/>`__.Longitude
--  `GeoLocation </sdk/apps/qml/QtContacts/GeoLocation/>`__.Accuracy
--  `GeoLocation </sdk/apps/qml/QtContacts/GeoLocation/>`__.Altitude
--  `GeoLocation </sdk/apps/qml/QtContacts/GeoLocation/>`__.AltitudeAccuracy
--  `GeoLocation </sdk/apps/qml/QtContacts/GeoLocation/>`__.Heading
--  `GeoLocation </sdk/apps/qml/QtContacts/GeoLocation/>`__.Speed
--  `GeoLocation </sdk/apps/qml/QtContacts/GeoLocation/>`__.Timestamp
+-  :ref:`GeoLocation <sdk_qtcontacts_geolocation>`.Label
+-  :ref:`GeoLocation <sdk_qtcontacts_geolocation>`.Latitude
+-  :ref:`GeoLocation <sdk_qtcontacts_geolocation>`.Longitude
+-  :ref:`GeoLocation <sdk_qtcontacts_geolocation>`.Accuracy
+-  :ref:`GeoLocation <sdk_qtcontacts_geolocation>`.Altitude
+-  :ref:`GeoLocation <sdk_qtcontacts_geolocation>`.AltitudeAccuracy
+-  :ref:`GeoLocation <sdk_qtcontacts_geolocation>`.Heading
+-  :ref:`GeoLocation <sdk_qtcontacts_geolocation>`.Speed
+-  :ref:`GeoLocation <sdk_qtcontacts_geolocation>`.Timestamp
 
 This element is part of the **QtContacts** module.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtcontacts_geolocation_accuracy-prop:
 
 +--------------------------------------------------------------------------+
 |        \ accuracy : double                                               |
@@ -57,6 +61,8 @@ accuracy.
 
 | 
 
+.. _sdk_qtcontacts_geolocation_altitude-prop:
+
 +--------------------------------------------------------------------------+
 |        \ altitude : double                                               |
 +--------------------------------------------------------------------------+
@@ -64,6 +70,8 @@ accuracy.
 This property holds the value of the altitude.
 
 | 
+
+.. _sdk_qtcontacts_geolocation_altitudeAccuracy-prop:
 
 +--------------------------------------------------------------------------+
 |        \ altitudeAccuracy : double                                       |
@@ -73,6 +81,8 @@ This property holds the value of the accuracy of the altitude.
 
 | 
 
+.. _sdk_qtcontacts_geolocation_heading-prop:
+
 +--------------------------------------------------------------------------+
 |        \ heading : double                                                |
 +--------------------------------------------------------------------------+
@@ -80,6 +90,8 @@ This property holds the value of the accuracy of the altitude.
 This property holds the value of the heading.
 
 | 
+
+.. _sdk_qtcontacts_geolocation_label-prop:
 
 +--------------------------------------------------------------------------+
 |        \ label : string                                                  |
@@ -89,6 +101,8 @@ This property holds the location label.
 
 | 
 
+.. _sdk_qtcontacts_geolocation_latitude-prop:
+
 +--------------------------------------------------------------------------+
 |        \ latitude : double                                               |
 +--------------------------------------------------------------------------+
@@ -96,6 +110,8 @@ This property holds the location label.
 This property holds the value of the latitude.
 
 | 
+
+.. _sdk_qtcontacts_geolocation_longitude-prop:
 
 +--------------------------------------------------------------------------+
 |        \ longitude : double                                              |
@@ -105,6 +121,8 @@ This property holds the value of the longitude.
 
 | 
 
+.. _sdk_qtcontacts_geolocation_speed-prop:
+
 +--------------------------------------------------------------------------+
 |        \ speed : double                                                  |
 +--------------------------------------------------------------------------+
@@ -112,6 +130,8 @@ This property holds the value of the longitude.
 This property holds the value of the speed.
 
 | 
+
+.. _sdk_qtcontacts_geolocation_timestamp-prop:
 
 +--------------------------------------------------------------------------+
 |        \ timestamp : date                                                |

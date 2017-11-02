@@ -1,3 +1,7 @@
+.. _sdk_qtquick_anchorchanges:
+QtQuick AnchorChanges
+=====================
+
 Specifies how to change the anchors of an item in a state
 
 +---------------------+----------------------+
@@ -7,41 +11,39 @@ Specifies how to change the anchors of an item in a state
 Properties
 ----------
 
--  ****`anchors </sdk/apps/qml/QtQuick/AnchorChanges#anchors-prop>`__****
+-  :ref:`anchors <sdk_qtquick_anchorchanges_anchors-prop>`
 
-   -  ****`anchors.left </sdk/apps/qml/QtQuick/AnchorChanges#anchors.left-prop>`__****
+   -  :ref:`anchors.left <sdk_qtquick_anchorchanges_anchors.left-prop>`
       : AnchorLine
-   -  ****`anchors.right </sdk/apps/qml/QtQuick/AnchorChanges#anchors.right-prop>`__****
+   -  :ref:`anchors.right <sdk_qtquick_anchorchanges_anchors.right-prop>`
       : AnchorLine
-   -  ****`anchors.horizontalCenter </sdk/apps/qml/QtQuick/AnchorChanges#anchors.horizontalCenter-prop>`__****
+   -  :ref:`anchors.horizontalCenter <sdk_qtquick_anchorchanges_anchors.horizontalCenter-prop>`
       : AnchorLine
-   -  ****`anchors.top </sdk/apps/qml/QtQuick/AnchorChanges#anchors.top-prop>`__****
+   -  :ref:`anchors.top <sdk_qtquick_anchorchanges_anchors.top-prop>`
       : AnchorLine
-   -  ****`anchors.bottom </sdk/apps/qml/QtQuick/AnchorChanges#anchors.bottom-prop>`__****
+   -  :ref:`anchors.bottom <sdk_qtquick_anchorchanges_anchors.bottom-prop>`
       : AnchorLine
-   -  ****`anchors.verticalCenter </sdk/apps/qml/QtQuick/AnchorChanges#anchors.verticalCenter-prop>`__****
+   -  :ref:`anchors.verticalCenter <sdk_qtquick_anchorchanges_anchors.verticalCenter-prop>`
       : AnchorLine
-   -  ****`anchors.baseline </sdk/apps/qml/QtQuick/AnchorChanges#anchors.baseline-prop>`__****
+   -  :ref:`anchors.baseline <sdk_qtquick_anchorchanges_anchors.baseline-prop>`
       : AnchorLine
 
--  ****`target </sdk/apps/qml/QtQuick/AnchorChanges#target-prop>`__****
-   : Item
+-  :ref:`target <sdk_qtquick_anchorchanges_target-prop>` : Item
 
 Detailed Description
 --------------------
 
-The `AnchorChanges </sdk/apps/qml/QtQuick/AnchorChanges/>`__ type is
-used to modify the anchors of an item in a
-`State </sdk/apps/qml/QtQuick/State/>`__.
+The :ref:`AnchorChanges <sdk_qtquick_anchorchanges>` type is used to modify
+the anchors of an item in a :ref:`State <sdk_qtquick_state>`.
 
-`AnchorChanges </sdk/apps/qml/QtQuick/AnchorChanges/>`__ cannot be used
-to modify the margins on an item. For this, use
-`PropertyChanges </sdk/apps/qml/QtQuick/PropertyChanges/>`__ intead.
+:ref:`AnchorChanges <sdk_qtquick_anchorchanges>` cannot be used to modify
+the margins on an item. For this, use
+:ref:`PropertyChanges <sdk_qtquick_propertychanges>` intead.
 
 In the following example we change the top and bottom anchors of an item
-using `AnchorChanges </sdk/apps/qml/QtQuick/AnchorChanges/>`__, and the
-top and bottom anchor margins using
-`PropertyChanges </sdk/apps/qml/QtQuick/PropertyChanges/>`__:
+using :ref:`AnchorChanges <sdk_qtquick_anchorchanges>`, and the top and
+bottom anchor margins using
+:ref:`PropertyChanges <sdk_qtquick_propertychanges>`:
 
 .. code:: qml
 
@@ -69,8 +71,8 @@ top and bottom anchor margins using
 
 |image0|
 
-`AnchorChanges </sdk/apps/qml/QtQuick/AnchorChanges/>`__ can be animated
-using `AnchorAnimation </sdk/apps/qml/QtQuick/AnchorAnimation/>`__.
+:ref:`AnchorChanges <sdk_qtquick_anchorchanges>` can be animated using
+:ref:`AnchorAnimation <sdk_qtquick_anchoranimation>`.
 
 .. code:: qml
 
@@ -80,27 +82,35 @@ using `AnchorAnimation </sdk/apps/qml/QtQuick/AnchorAnimation/>`__.
     }
 
 Changes to anchor margins can be animated using
-`NumberAnimation </sdk/apps/qml/QtQuick/NumberAnimation/>`__.
+:ref:`NumberAnimation <sdk_qtquick_numberanimation>`.
 
 For more information on anchors see `Anchor
-Layouts </sdk/apps/qml/QtQuick/qtquick-positioning-anchors#anchor-layout>`__.
+Layouts </sdk/apps/qml/QtQuick/qtquick-positioning-anchors/#anchor-layout>`_ .
 
 Property Documentation
 ----------------------
 
+.. _sdk_qtquick_anchorchanges_**anchors group**-prop:
+
 +--------------------------------------------------------------------------+
 |        \ **anchors group**                                               |
 +==========================================================================+
+.. _sdk_qtquick_anchorchanges_anchors.right-prop:
 |        \ anchors.left : AnchorLine                                       |
 +--------------------------------------------------------------------------+
+.. _sdk_qtquick_anchorchanges_anchors.horizontalCenter-prop:
 |        \ anchors.right : AnchorLine                                      |
 +--------------------------------------------------------------------------+
+.. _sdk_qtquick_anchorchanges_anchors.top-prop:
 |        \ anchors.horizontalCenter : AnchorLine                           |
 +--------------------------------------------------------------------------+
+.. _sdk_qtquick_anchorchanges_anchors.bottom-prop:
 |        \ anchors.top : AnchorLine                                        |
 +--------------------------------------------------------------------------+
+.. _sdk_qtquick_anchorchanges_anchors.verticalCenter-prop:
 |        \ anchors.bottom : AnchorLine                                     |
 +--------------------------------------------------------------------------+
+.. _sdk_qtquick_anchorchanges_anchors.baseline-prop:
 |        \ anchors.verticalCenter : AnchorLine                             |
 +--------------------------------------------------------------------------+
 |        \ anchors.baseline : AnchorLine                                   |
@@ -120,14 +130,16 @@ To reset an anchor you can assign ``undefined``:
 
 | 
 
+.. _sdk_qtquick_anchorchanges_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ target : `Item </sdk/apps/qml/QtQuick/Item/>`__                 |
+| :ref:` <>`\ target : `Item <sdk_qtquick_item>`                         |
 +--------------------------------------------------------------------------+
 
-This property holds the `Item </sdk/apps/qml/QtQuick/Item/>`__ for which
-the anchor changes will be applied.
+This property holds the :ref:`Item <sdk_qtquick_item>` for which the anchor
+changes will be applied.
 
 | 
 
-.. |image0| image:: /media/sdk/apps/qml/QtQuick/AnchorChanges/images/anchorchanges.png
+.. |image0| image:: /mediasdk_qtquick_anchorchangesimages/anchorchanges.png
 

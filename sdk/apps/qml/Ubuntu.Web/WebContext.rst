@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_web_webcontext:
+Ubuntu.Web WebContext
+=====================
+
 A default context implementation for use with WebView.
 
 +---------------------+-------------------------+
@@ -7,39 +11,38 @@ A default context implementation for use with WebView.
 Properties
 ----------
 
--  ****`acceptLangs </sdk/apps/qml/Ubuntu.Web/WebContext#acceptLangs-prop>`__****
+-  :ref:`acceptLangs <sdk_ubuntu_web_webcontext_acceptLangs-prop>`
    : string
--  ****`cachePath </sdk/apps/qml/Ubuntu.Web/WebContext#cachePath-prop>`__****
-   : url
--  ****`dataPath </sdk/apps/qml/Ubuntu.Web/WebContext#dataPath-prop>`__****
-   : url
--  ****`userAgent </sdk/apps/qml/Ubuntu.Web/WebContext#userAgent-prop>`__****
-   : string
+-  :ref:`cachePath <sdk_ubuntu_web_webcontext_cachePath-prop>` :
+   url
+-  :ref:`dataPath <sdk_ubuntu_web_webcontext_dataPath-prop>` : url
+-  :ref:`userAgent <sdk_ubuntu_web_webcontext_userAgent-prop>` :
+   string
 
 Detailed Description
 --------------------
 
-This default `WebContext </sdk/apps/qml/Ubuntu.Web/WebContext/>`__
-implementation has the default user agent string used by the Ubuntu
-browser as well as the UA override mechanism that allows sending an
-overridden user agent for given domains/websites, based on the form
-factor.
+This default :ref:`WebContext <sdk_ubuntu_web_webcontext>` implementation
+has the default user agent string used by the Ubuntu browser as well as
+the UA override mechanism that allows sending an overridden user agent
+for given domains/websites, based on the form factor.
 
 It has its data path (for cache and cookie database) set to the standard
 writable data location for the current application, which is based on
 the application name (see ``Qt.application.name``), for example
 *~/.local/share/myApp/*.
 
-Note that the `WebView </sdk/apps/qml/Ubuntu.Web/WebView/>`__ component
-already uses this default context, so there is no need to explicitly
-instantiate a ``WebContext`` unless you want to override some of its
-default properties.
+Note that the :ref:`WebView <sdk_ubuntu_web_webview>` component already
+uses this default context, so there is no need to explicitly instantiate
+a ``WebContext`` unless you want to override some of its default
+properties.
 
-**See also**
-`SharedWebContext </sdk/apps/qml/Ubuntu.Web/SharedWebContext/>`__.
+**See also** :ref:`SharedWebContext <sdk_ubuntu_web_sharedwebcontext>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_ubuntu_web_webcontext_acceptLangs-prop:
 
 +--------------------------------------------------------------------------+
 |        \ acceptLangs : string                                            |
@@ -50,15 +53,18 @@ comma-separated list of language codes.
 
 | 
 
+.. _sdk_ubuntu_web_webcontext_cachePath-prop:
+
 +--------------------------------------------------------------------------+
 |        \ cachePath : url                                                 |
 +--------------------------------------------------------------------------+
 
 The local path where network data will be cached. If not set, it
-defaults to
-`dataPath </sdk/apps/qml/Ubuntu.Web/WebContext#dataPath-prop>`__.
+defaults to :ref:`dataPath <sdk_ubuntu_web_webcontext#dataPath-prop>`.
 
 | 
+
+.. _sdk_ubuntu_web_webcontext_dataPath-prop:
 
 +--------------------------------------------------------------------------+
 |        \ dataPath : url                                                  |
@@ -67,6 +73,8 @@ defaults to
 The local path where persistent data (such as cookies) will be stored.
 
 | 
+
+.. _sdk_ubuntu_web_webcontext_userAgent-prop:
 
 +--------------------------------------------------------------------------+
 |        \ userAgent : string                                              |

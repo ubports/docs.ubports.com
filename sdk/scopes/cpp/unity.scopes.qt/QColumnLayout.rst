@@ -1,5 +1,9 @@
+.. _sdk_unity_scopes_qt_qcolumnlayout:
+unity.scopes.qt QColumnLayout
+=============================
+
 Represents a column layout.
-`More... </sdk/scopes/cpp/unity.scopes.qt/QColumnLayout#details>`__
+:ref:`More... <sdk_unity_scopes_qt_qcolumnlayout#details>`
 
 ``#include <unity/scopes/qt/QColumnLayout.h>``
 
@@ -8,7 +12,7 @@ Represents a column layout.
 
  
 
-`QColumnLayout </sdk/scopes/cpp/unity.scopes.qt/QColumnLayout#a89f72698ef94dd4db26d286df0e5eb05>`__
+:ref:`QColumnLayout <sdk_unity_scopes_qt_qcolumnlayout#a89f72698ef94dd4db26d286df0e5eb05>`
 (int num\_of\_columns)
 
  
@@ -20,7 +24,7 @@ Represents a column layout.
 
 void 
 
-`add\_column </sdk/scopes/cpp/unity.scopes.qt/QColumnLayout#ad7e3e39240dc8dc5a24cbe19235a0752>`__
+:ref:`add\_column <sdk_unity_scopes_qt_qcolumnlayout#ad7e3e39240dc8dc5a24cbe19235a0752>`
 (QVector< QString > widget\_ids)
 
  
@@ -31,7 +35,7 @@ void 
 
 int 
 
-`size </sdk/scopes/cpp/unity.scopes.qt/QColumnLayout#af062c78bd61aad7d0bfa03b8b06f7f20>`__
+:ref:`size <sdk_unity_scopes_qt_qcolumnlayout#af062c78bd61aad7d0bfa03b8b06f7f20>`
 () const noexcept
 
  
@@ -42,7 +46,7 @@ int 
 
 int 
 
-`number\_of\_columns </sdk/scopes/cpp/unity.scopes.qt/QColumnLayout#a5a989ce965336941a2e24fcd763f0596>`__
+:ref:`number\_of\_columns <sdk_unity_scopes_qt_qcolumnlayout#a5a989ce965336941a2e24fcd763f0596>`
 () const noexcept
 
  
@@ -54,7 +58,7 @@ int 
 
 QVector< QString > 
 
-`column </sdk/scopes/cpp/unity.scopes.qt/QColumnLayout#afa169274d04b70956761ca55451e5921>`__
+:ref:`column <sdk_unity_scopes_qt_qcolumnlayout#afa169274d04b70956761ca55451e5921>`
 (int index) const
 
  
@@ -70,31 +74,28 @@ usual value semantics.
 
          
 
-**QColumnLayout**
-(`QColumnLayout </sdk/scopes/cpp/unity.scopes.qt/QColumnLayout/>`__
+**QColumnLayout** (:ref:`QColumnLayout <sdk_unity_scopes_qt_qcolumnlayout>`
 const &other)
 
  
 
          
 
-**QColumnLayout**
-(`QColumnLayout </sdk/scopes/cpp/unity.scopes.qt/QColumnLayout/>`__ &&)
+**QColumnLayout** (:ref:`QColumnLayout <sdk_unity_scopes_qt_qcolumnlayout>`
+&&)
 
  
 
-`QColumnLayout </sdk/scopes/cpp/unity.scopes.qt/QColumnLayout/>`__ & 
+:ref:` <>` `QColumnLayout <sdk_unity_scopes_qt_qcolumnlayout>` & 
 
-**operator=**
-(`QColumnLayout </sdk/scopes/cpp/unity.scopes.qt/QColumnLayout/>`__
+**operator=** (:ref:`QColumnLayout <sdk_unity_scopes_qt_qcolumnlayout>`
 const &other)
 
  
 
-`QColumnLayout </sdk/scopes/cpp/unity.scopes.qt/QColumnLayout/>`__ & 
+:ref:` <>` `QColumnLayout <sdk_unity_scopes_qt_qcolumnlayout>` & 
 
-**operator=**
-(`QColumnLayout </sdk/scopes/cpp/unity.scopes.qt/QColumnLayout/>`__ &&)
+**operator=** (:ref:`QColumnLayout <sdk_unity_scopes_qt_qcolumnlayout>` &&)
 
  
 
@@ -135,7 +136,7 @@ Constructor & Destructor Documentation
 
 Creates a layout definition that expects num\_of\_columns columns to be
 added with
-`ColumnLayout::add\_column </sdk/scopes/cpp/unity.scopes.ColumnLayout#a0a8db9f2725f9c56f8639c55412d931d>`__.
+`ColumnLayout::add\_column </sdk/scopes/cpp/unity.scopes.ColumnLayout/#a0a8db9f2725f9c56f8639c55412d931d>`_ .
 
 Parameters
     +--------------------+-----------------------------------------+
@@ -160,16 +161,16 @@ Member Function Documentation
 
 Adds a new column and assigns widgets to it.
 
-`ColumnLayout </sdk/scopes/cpp/unity.scopes.ColumnLayout/>`__ expects
+`ColumnLayout </sdk/scopes/cpp/unity.scopes.ColumnLayout/>`_  expects
 exactly the number of columns passed to the constructor to be created
 with the add\_column method.
 
 Exceptions
-    +-------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-    | unity::LogicException   | if an attempt is made to add more columns than specified in the constructor.                                                                                                                                     |
-    +-------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-    | unity::LogicException   | from `unity::scopes::qt::QPreviewReply::register\_layout </sdk/scopes/cpp/unity.scopes.qt/QPreviewReply#abe5967042a22327f6ec9d5a1f595968c>`__ if a layout has fewer columns than specified in the constructor.   |
-    +-------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    +-------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | unity::LogicException   | if an attempt is made to add more columns than specified in the constructor.                                                                                                                         |
+    +-------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | unity::LogicException   | from :ref:`unity::scopes::qt::QPreviewReply::register\_layout <sdk_unity_scopes_qt_qpreviewreply#abe5967042a22327f6ec9d5a1f595968c>` if a layout has fewer columns than specified in the constructor.   |
+    +-------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 +-------------------------------------------------------------+-----+--------+-----------+-----+---------+
 | QVector<QString> unity::scopes::qt::QColumnLayout::column   | (   | int    | *index*   | )   | const   |
@@ -245,5 +246,5 @@ Get the current number of columns in this layout.
 
 Returns
     The number of columns added with
-    `add\_column() </sdk/scopes/cpp/unity.scopes.qt/QColumnLayout#ad7e3e39240dc8dc5a24cbe19235a0752>`__.
+    :ref:`add\_column() <sdk_unity_scopes_qt_qcolumnlayout#ad7e3e39240dc8dc5a24cbe19235a0752>`.
 

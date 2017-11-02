@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_listitems_multivalue:
+Ubuntu.Components.ListItems MultiValue
+======================================
+
 List item displaying multiple values.
 
 +--------------------------------------+--------------------------------------+
@@ -5,21 +9,20 @@ List item displaying multiple values.
 |                                      | 1.3                                  |
 +--------------------------------------+--------------------------------------+
 | Inherits:                            | `Base </sdk/apps/qml/Ubuntu.Componen |
-|                                      | ts/ListItems.Base/>`__               |
+|                                      | ts/ListItems.Base/>`_                |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`values </sdk/apps/qml/Ubuntu.Components/ListItems.MultiValue#values-prop>`__****
+-  `values </sdk/apps/qml/Ubuntu.Components/ListItems.MultiValue/_values-prop>`_ 
    : variant
 
 Detailed Description
 --------------------
 
 **Note:** **The component is deprecated. Use
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ component
-instead.**
+:ref:`ListItem <sdk_ubuntu_components_listitem>` component instead.**
 
 Examples:
 
@@ -44,8 +47,10 @@ Examples:
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_listitems_multivalue_values-prop:
+
 +--------------------------------------------------------------------------+
-|        \ values : `variant <http://doc.qt.io/qt-5/qml-variant.html>`__   |
+|        \ values : `variant <http://doc.qt.io/qt-5/qml-variant.html>`_    |
 +--------------------------------------------------------------------------+
 
 The list of values that will be shown under the label text

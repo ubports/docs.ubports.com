@@ -1,5 +1,9 @@
+.. _sdk_registry:
+Registry
+========
+
 White pages service for available scopes.
-`More... </sdk/scopes/cpp/unity.scopes.Registry#details>`__
+`More... </sdk/scopes/cpp/unity.scopes.Registry/#details>`_ 
 
 ``#include <unity/scopes/Registry.h>``
 
@@ -12,9 +16,9 @@ Inheritance diagram for unity::scopes::Registry:
         Public Member Functions
 -------------------------------
 
-virtual `ScopeMetadata </sdk/scopes/cpp/unity.scopes.ScopeMetadata/>`__ 
+virtual `ScopeMetadata </sdk/scopes/cpp/unity.scopes.ScopeMetadata/>`_  
 
-`get\_metadata </sdk/scopes/cpp/unity.scopes.Registry#a63778ac090804a1fb85dc48fccbc2822>`__
+`get\_metadata </sdk/scopes/cpp/unity.scopes.Registry/#a63778ac090804a1fb85dc48fccbc2822>`_ 
 (std::string const &scope\_id)=0
 
  
@@ -24,9 +28,9 @@ virtual `ScopeMetadata </sdk/scopes/cpp/unity.scopes.ScopeMetadata/>`__ 
  
 
 virtual
-`MetadataMap </sdk/scopes/cpp/unity.scopes#a9f6e8e62689e49cdabadacf39b697816>`__ 
+:ref:`MetadataMap <sdk_unity_scopes#a9f6e8e62689e49cdabadacf39b697816>` 
 
-`list </sdk/scopes/cpp/unity.scopes.Registry#a23e078986524fe11bd363c29401fbb31>`__
+`list </sdk/scopes/cpp/unity.scopes.Registry/#a23e078986524fe11bd363c29401fbb31>`_ 
 ()=0
 
  
@@ -36,11 +40,11 @@ virtual
  
 
 virtual
-`MetadataMap </sdk/scopes/cpp/unity.scopes#a9f6e8e62689e49cdabadacf39b697816>`__ 
+:ref:`MetadataMap <sdk_unity_scopes#a9f6e8e62689e49cdabadacf39b697816>` 
 
-`list\_if </sdk/scopes/cpp/unity.scopes.Registry#aa15baf0154c4b58decf27f2e5815d680>`__
+`list\_if </sdk/scopes/cpp/unity.scopes.Registry/#aa15baf0154c4b58decf27f2e5815d680>`_ 
 (std::function<
-bool(\ `ScopeMetadata </sdk/scopes/cpp/unity.scopes.ScopeMetadata/>`__
+bool(\ `ScopeMetadata </sdk/scopes/cpp/unity.scopes.ScopeMetadata/>`_ 
 const &item)> predicate)=0
 
  
@@ -52,7 +56,7 @@ const &item)> predicate)=0
 
 virtual bool 
 
-`is\_scope\_running </sdk/scopes/cpp/unity.scopes.Registry#a06ef35ed8677a0b20774528343bff9f1>`__
+`is\_scope\_running </sdk/scopes/cpp/unity.scopes.Registry/#a06ef35ed8677a0b20774528343bff9f1>`_ 
 (std::string const &scope\_id)=0
 
  
@@ -63,7 +67,7 @@ virtual bool 
 
 virtual core::ScopedConnection 
 
-`set\_scope\_state\_callback </sdk/scopes/cpp/unity.scopes.Registry#a86ac67a881dec9eddabd069153fc62b1>`__
+`set\_scope\_state\_callback </sdk/scopes/cpp/unity.scopes.Registry/#a86ac67a881dec9eddabd069153fc62b1>`_ 
 (std::string const &scope\_id, std::function< void(bool is\_running)>
 callback)=0
 
@@ -76,7 +80,7 @@ callback)=0
 
 virtual core::ScopedConnection 
 
-`set\_list\_update\_callback </sdk/scopes/cpp/unity.scopes.Registry#a1f540dc612ce4a5e50a21ec66fec75fd>`__
+`set\_list\_update\_callback </sdk/scopes/cpp/unity.scopes.Registry/#a1f540dc612ce4a5e50a21ec66fec75fd>`_ 
 (std::function< void()> callback)=0
 
  
@@ -87,11 +91,11 @@ virtual core::ScopedConnection 
  
 
 |-| Public Member Functions inherited from
-`unity::scopes::Object </sdk/scopes/cpp/unity.scopes.Object/>`__
+`unity::scopes::Object </sdk/scopes/cpp/unity.scopes.Object/>`_ 
 
 virtual std::string 
 
-`endpoint </sdk/scopes/cpp/unity.scopes.Object#ad7618cc9d878c40b389361d4acd473ae>`__
+`endpoint </sdk/scopes/cpp/unity.scopes.Object/#ad7618cc9d878c40b389361d4acd473ae>`_ 
 ()=0
 
  
@@ -102,7 +106,7 @@ virtual std::string 
 
 virtual std::string 
 
-`identity </sdk/scopes/cpp/unity.scopes.Object#a1b55aea886f0a68cb8a578f7ee0b1cfd>`__
+`identity </sdk/scopes/cpp/unity.scopes.Object/#a1b55aea886f0a68cb8a578f7ee0b1cfd>`_ 
 ()=0
 
  
@@ -113,7 +117,7 @@ virtual std::string 
 
 virtual std::string 
 
-`target\_category </sdk/scopes/cpp/unity.scopes.Object#a40a997516629df3dacca9742dbddd6cb>`__
+`target\_category </sdk/scopes/cpp/unity.scopes.Object/#a40a997516629df3dacca9742dbddd6cb>`_ 
 ()=0
 
  
@@ -124,7 +128,7 @@ virtual std::string 
 
 virtual int64\_t 
 
-`timeout </sdk/scopes/cpp/unity.scopes.Object#a41d9839f1e3cbcd6d8baee0736feccab>`__
+`timeout </sdk/scopes/cpp/unity.scopes.Object/#a41d9839f1e3cbcd6d8baee0736feccab>`_ 
 ()=0
 
  
@@ -135,7 +139,7 @@ virtual int64\_t 
 
 virtual std::string 
 
-`to\_string </sdk/scopes/cpp/unity.scopes.Object#a9ae27e1f30dc755abcd796a1e8a25150>`__
+`to\_string </sdk/scopes/cpp/unity.scopes.Object/#a9ae27e1f30dc755abcd796a1e8a25150>`_ 
 ()=0
 
  
@@ -150,7 +154,7 @@ Detailed Description
 White pages service for available scopes.
 
 You can obtain a proxy to the registry by calling
-`Runtime::registry() </sdk/scopes/cpp/unity.scopes.Runtime#afc312448a4537b110bf1701bfb964501>`__.
+`Runtime::registry() </sdk/scopes/cpp/unity.scopes.Runtime/#afc312448a4537b110bf1701bfb964501>`_ .
 
 Member Function Documentation
 -----------------------------
@@ -177,7 +181,7 @@ Member Function Documentation
 | | peMetadata/> |              |      |                                      |
 |          |              |            |                                      |
 |    |              |                  |                                      |
-| | `__          |              |      |                                      |
+| | `_           |              |      |                                      |
 |          |              |            |                                      |
 |    |              |                  |                                      |
 | | unity::scope |              |      |                                      |
@@ -209,7 +213,7 @@ Returns
 
 Exceptions
     +---------------------------------------------------------------------------+-----------------------------------------+
-    | `NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/>`__   | if no scope with the given ID exists.   |
+    | `NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/>`_    | if no scope with the given ID exists.   |
     +---------------------------------------------------------------------------+-----------------------------------------+
 
 +--------------------------------------+--------------------------------------+
@@ -248,7 +252,7 @@ Returns
 
 Exceptions
     +---------------------------------------------------------------------------+-----------------------------------------+
-    | `NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/>`__   | if no scope with the given ID exists.   |
+    | `NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/>`_    | if no scope with the given ID exists.   |
     +---------------------------------------------------------------------------+-----------------------------------------+
 
 +--------------------------------------+--------------------------------------+
@@ -261,19 +265,16 @@ Exceptions
 | | `MetadataMap < |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
-| | /sdk/scopes/cp |                |  |                                      |
+| | sdk_unity_scop |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
-| | p/unity.scopes |                |  |                                      |
+| | es#a9f6e8e6268 |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
-| | #a9f6e8e62689e |                |  |                                      |
+| | 9e49cdabadacf3 |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
-| | 49cdabadacf39b |                |  |                                      |
-|                |                |    |                                      |
-|              |                       |                                      |
-| | 697816>`__     |                |  |                                      |
+| | 9b697816>`_    |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
 | | unity::scopes: |                |  |                                      |
@@ -305,32 +306,29 @@ Returns
 | | `MetadataMap |              | n<   |                                      |
 |          |              |            |                                      |
 |    |              |                  |                                      |
-| |  </sdk/scope |              | bool |                                      |
+| |  <sdk_unity_ |              | bool |                                      |
 | (\ `Scop |              |            |                                      |
 |    |              |                  |                                      |
-| | s/cpp/unity. |              | eMet |                                      |
+| | scopes#a9f6e |              | eMet |                                      |
 | adata </ |              |            |                                      |
 |    |              |                  |                                      |
-| | scopes#a9f6e |              | sdk/ |                                      |
+| | 8e62689e49cd |              | sdk/ |                                      |
 | scopes/c |              |            |                                      |
 |    |              |                  |                                      |
-| | 8e62689e49cd |              | pp/u |                                      |
+| | abadacf39b69 |              | pp/u |                                      |
 | nity.sco |              |            |                                      |
 |    |              |                  |                                      |
-| | abadacf39b69 |              | pes. |                                      |
+| | 7816>`_      |              | pes. |                                      |
 | ScopeMet |              |            |                                      |
 |    |              |                  |                                      |
-| | 7816>`__     |              | adat |                                      |
-| a/>`__   |              |            |                                      |
+| | unity::scope |              | adat |                                      |
+| a/>`_    |              |            |                                      |
 |    |              |                  |                                      |
-| | unity::scope |              | cons |                                      |
+| | s::Registry: |              | cons |                                      |
 | t        |              |            |                                      |
 |    |              |                  |                                      |
-| | s::Registry: |              | &ite |                                      |
+| | :list\_if    |              | &ite |                                      |
 | m)>      |              |            |                                      |
-|    |              |                  |                                      |
-| | :list\_if    |              |      |                                      |
-|          |              |            |                                      |
 |    |              |                  |                                      |
 | +--------------+--------------+----- |                                      |
 | ---------+--------------+----------- |                                      |
@@ -386,7 +384,7 @@ changes.
 
 Note: Upon receiving this callback, you should retrieve the updated
 scopes list via the
-`list() </sdk/scopes/cpp/unity.scopes.Registry#a23e078986524fe11bd363c29401fbb31>`__
+`list() </sdk/scopes/cpp/unity.scopes.Registry/#a23e078986524fe11bd363c29401fbb31>`_ 
 method if you wish to retain synchronisation between client and server.
 
 Parameters
@@ -396,7 +394,7 @@ Parameters
 
 Exceptions
     +-------------------------------------------------------------------------------+----------------------------------------------------+
-    | `MiddlewareException </sdk/scopes/cpp/unity.scopes.MiddlewareException/>`__   | if the registry subscriber failed to initialize.   |
+    | `MiddlewareException </sdk/scopes/cpp/unity.scopes.MiddlewareException/>`_    | if the registry subscriber failed to initialize.   |
     +-------------------------------------------------------------------------------+----------------------------------------------------+
 
 +--------------------------------------+--------------------------------------+
@@ -456,7 +454,7 @@ Parameters
 
 Exceptions
     +-------------------------------------------------------------------------------+----------------------------------------------------+
-    | `MiddlewareException </sdk/scopes/cpp/unity.scopes.MiddlewareException/>`__   | if the registry subscriber failed to initialize.   |
+    | `MiddlewareException </sdk/scopes/cpp/unity.scopes.MiddlewareException/>`_    | if the registry subscriber failed to initialize.   |
     +-------------------------------------------------------------------------------+----------------------------------------------------+
 
 .. |Inheritance graph| image:: /media/sdk/scopes/cpp/unity.scopes.Registry/classunity_1_1scopes_1_1_registry__inherit__graph.png

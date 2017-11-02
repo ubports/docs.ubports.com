@@ -1,5 +1,9 @@
+.. _sdk_link:
+Link
+====
+
 A hyperlink (label and canned query).
-`More... </sdk/scopes/cpp/unity.scopes.Link#details>`__
+`More... </sdk/scopes/cpp/unity.scopes.Link/#details>`_ 
 
 ``#include <unity/scopes/Link.h>``
 
@@ -8,7 +12,7 @@ A hyperlink (label and canned query).
 
 std::string 
 
-`label </sdk/scopes/cpp/unity.scopes.Link#aa102f709befd57d92c8ce3767d82f36a>`__
+`label </sdk/scopes/cpp/unity.scopes.Link/#aa102f709befd57d92c8ce3767d82f36a>`_ 
 () const
 
  
@@ -17,9 +21,9 @@ std::string 
 
  
 
-`CannedQuery </sdk/scopes/cpp/unity.scopes.CannedQuery/>`__ 
+`CannedQuery </sdk/scopes/cpp/unity.scopes.CannedQuery/>`_  
 
-`query </sdk/scopes/cpp/unity.scopes.Link#a59a1b30d1b68fbfb025d8d729257920a>`__
+`query </sdk/scopes/cpp/unity.scopes.Link/#a59a1b30d1b68fbfb025d8d729257920a>`_ 
 () const
 
  
@@ -42,7 +46,7 @@ Member Function Documentation
 | :Link::label   |                |                |                |                |
 +----------------+----------------+----------------+----------------+----------------+
 
-Returns the label of this `Link </sdk/scopes/cpp/unity.scopes.Link/>`__
+Returns the label of this `Link </sdk/scopes/cpp/unity.scopes.Link/>`_ 
 instance.
 
 Returns
@@ -53,12 +57,12 @@ Returns
 | /sdk/scopes/cp |                |                |                |                |
 | p/unity.scopes |                |                |                |                |
 | .CannedQuery/> |                |                |                |                |
-| `__            |                |                |                |                |
+| `_             |                |                |                |                |
 | unity::scopes: |                |                |                |                |
 | :Link::query   |                |                |                |                |
 +----------------+----------------+----------------+----------------+----------------+
 
-Returns a `CannedQuery </sdk/scopes/cpp/unity.scopes.CannedQuery/>`__
+Returns a `CannedQuery </sdk/scopes/cpp/unity.scopes.CannedQuery/>`_ 
 instance.
 
 Returns

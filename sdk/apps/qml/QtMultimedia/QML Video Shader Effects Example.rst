@@ -1,3 +1,7 @@
+.. _sdk_qtmultimedia_qml_video_shader_effects_example:
+QtMultimedia QML Video Shader Effects Example
+=============================================
+
 
 
 .. rubric:: Running the Example
@@ -12,7 +16,7 @@ Running an Example.
 
 *QML Video Shader Effects* demonstrates how a ShaderEffect can be used
 to apply postprocessing effects, expressed in GLSL, to QML
-`VideoOutput </sdk/apps/qml/QtMultimedia/VideoOutput/>`__ type.
+:ref:`VideoOutput <sdk_qtmultimedia_videooutput>` type.
 
 It also shows how native code can be combined with QML to implement more
 advanced functionality - in this case, C++ code is used to calculate the
@@ -23,7 +27,7 @@ The following screenshots show shader effects being applied. In each
 case, the effect is implemented using a fragment shader.
 
 Here we see an edge detection algorithm being applied to a video clip
-(`Sintel from blender.org <http://durian.blender.org/>`__).
+(`Sintel from blender.org <http://durian.blender.org/>`_ ).
 
 |image0|
 
@@ -88,13 +92,13 @@ effect to the content:
     }
 
 In this application, the usage of the ShaderEffect and
-`VideoOutput </sdk/apps/qml/QtMultimedia/VideoOutput/>`__ types is a bit
-more complicated, for the following reasons:
+:ref:`VideoOutput <sdk_qtmultimedia_videooutput>` types is a bit more
+complicated, for the following reasons:
 
 -  Each effect can be applied to either a
-   `VideoOutput </sdk/apps/qml/QtMultimedia/VideoOutput/>`__ or an Image
-   item, so the type of the source item must be abstracted away from the
-   effect implementation
+   :ref:`VideoOutput <sdk_qtmultimedia_videooutput>` or an Image item, so
+   the type of the source item must be abstracted away from the effect
+   implementation
 -  For some effects (such as the edge detection and glow examples shown
    in the screenshots above), the transformation is applied only to
    pixels to the left of a dividing line - this allows the effect to be

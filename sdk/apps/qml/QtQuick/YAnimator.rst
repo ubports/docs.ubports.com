@@ -1,3 +1,7 @@
+.. _sdk_qtquick_yanimator:
+QtQuick YAnimator
+=================
+
 The YAnimator type animates the y position of an Item.
 
 +---------------------+----------------------+
@@ -9,17 +13,16 @@ The YAnimator type animates the y position of an Item.
 Detailed Description
 --------------------
 
-`Animator </sdk/apps/qml/QtQuick/Animator/>`__ types are different from
-normal Animation types. When using an Animator, the animation can be run
-in the render thread and the property value will jump to the end when
-the animation is complete.
+:ref:`Animator <sdk_qtquick_animator>` types are different from normal
+Animation types. When using an Animator, the animation can be run in the
+render thread and the property value will jump to the end when the
+animation is complete.
 
-The value of `Item::y </sdk/apps/qml/QtQuick/Item#y-prop>`__ is updated
-after the animation has finished.
+The value of :ref:`Item::y <sdk_qtquick_item#y-prop>` is updated after the
+animation has finished.
 
 The following snippet shows how to use a
-`YAnimator </sdk/apps/qml/QtQuick/YAnimator/>`__ together with a
-Rectangle item.
+:ref:`YAnimator <sdk_qtquick_yanimator>` together with a Rectangle item.
 
 .. code:: qml
 
@@ -38,8 +41,7 @@ Rectangle item.
     }
 
 It is also possible to use the ``on`` keyword to tie the
-`YAnimator </sdk/apps/qml/QtQuick/YAnimator/>`__ directly to an Item
-instance.
+:ref:`YAnimator <sdk_qtquick_yanimator>` directly to an Item instance.
 
 .. code:: qml
 

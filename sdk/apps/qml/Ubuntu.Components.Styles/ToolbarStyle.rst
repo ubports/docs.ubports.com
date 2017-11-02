@@ -1,30 +1,34 @@
+.. _sdk_ubuntu_components_styles_toolbarstyle:
+Ubuntu.Components.Styles ToolbarStyle
+=====================================
+
 Style API for toolbar.
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import Ubuntu.Components.Styles 1.3  |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Item </sdk/apps/qml/QtQuick/Item/>` |
-|                                      | __                                   |
+| Inherits:                            | :ref:`Item <sdk_qtquick_item>`       |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`defaultDelegate </sdk/apps/qml/Ubuntu.Components/Styles.ToolbarStyle#defaultDelegate-prop>`__****
+-  `defaultDelegate </sdk/apps/qml/Ubuntu.Components/Styles.ToolbarStyle/_defaultDelegate-prop>`_ 
    : Component
 
 Detailed Description
 --------------------
 
 The component defines the style API for the
-`Toolbar </sdk/apps/qml/Ubuntu.Components/Toolbar/>`__ component.
+:ref:`Toolbar <sdk_ubuntu_components_toolbar>` component.
 
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_styles_toolbarstyle_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ defaultDelegate :                                               |
-| `Component </sdk/apps/qml/QtQml/Component/>`__                           |
+| :ref:` <>`\ defaultDelegate : `Component <sdk_qtqml_component>`        |
 +--------------------------------------------------------------------------+
 
 The default action delegate if the styled item does not provide a

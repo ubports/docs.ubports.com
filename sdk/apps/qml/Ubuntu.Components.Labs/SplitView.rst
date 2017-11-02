@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_labs_splitview:
+Ubuntu.Components.Labs SplitView
+================================
+
 A view component with a flexible layout configuration setup.
 
 +---------------------+-----------------------------------+
@@ -7,23 +11,23 @@ A view component with a flexible layout configuration setup.
 Properties
 ----------
 
--  ****`activeLayout </sdk/apps/qml/Ubuntu.Components/Labs.SplitView#activeLayout-prop>`__****
+-  `activeLayout </sdk/apps/qml/Ubuntu.Components/Labs.SplitView/_activeLayout-prop>`_ 
    : SplitViewLayout
--  ****`handleDelegate </sdk/apps/qml/Ubuntu.Components/Labs.SplitView#handleDelegate-prop>`__****
+-  `handleDelegate </sdk/apps/qml/Ubuntu.Components/Labs.SplitView/_handleDelegate-prop>`_ 
    : Component
--  ****`layouts </sdk/apps/qml/Ubuntu.Components/Labs.SplitView#layouts-prop>`__****
+-  `layouts </sdk/apps/qml/Ubuntu.Components/Labs.SplitView/_layouts-prop>`_ 
    : list<SplitViewLayout>
--  ****`spacing </sdk/apps/qml/Ubuntu.Components/Labs.SplitView#spacing-prop>`__****
+-  `spacing </sdk/apps/qml/Ubuntu.Components/Labs.SplitView/_spacing-prop>`_ 
    : real
 
 Attached Properties
 -------------------
 
--  ****`column </sdk/apps/qml/Ubuntu.Components/Labs.SplitView#column-attached-prop>`__****
+-  `column </sdk/apps/qml/Ubuntu.Components/Labs.SplitView/_column-attached-prop>`_ 
    : int
--  ****`columnConfig </sdk/apps/qml/Ubuntu.Components/Labs.SplitView#columnConfig-attached-prop>`__****
+-  `columnConfig </sdk/apps/qml/Ubuntu.Components/Labs.SplitView/_columnConfig-attached-prop>`_ 
    : ViewColumn
--  ****`view </sdk/apps/qml/Ubuntu.Components/Labs.SplitView#view-attached-prop>`__****
+-  `view </sdk/apps/qml/Ubuntu.Components/Labs.SplitView/_view-attached-prop>`_ 
    : SplitView
 
 Detailed Description
@@ -33,19 +37,18 @@ The component arranges the declared child elements horizontally based on
 an active column configuration layout. Child elements are considered to
 be views, and each view is identified with a column index, specified by
 the
-`SplitView </sdk/apps/qml/Ubuntu.Components/Labs.SplitView/>`__.column
+`SplitView </sdk/apps/qml/Ubuntu.Components/Labs.SplitView/>`_ .column
 attached property. Views should not have width declared, because the
 width of each view is specified by the active layout's configuration
-(`ViewColumn </sdk/apps/qml/Ubuntu.Components/ViewColumn/>`__) and will
-overwrite the value specified by the view. On the other hand they should
-have a height specified, or they can be anchored to the top and bottom
-of the view.
-`SplitView </sdk/apps/qml/Ubuntu.Components/Labs.SplitView/>`__ being a
-positioner, remember not to anchor horizontal anchor lines or anchor
-fill the columns.
+(:ref:`ViewColumn <sdk_ubuntu_components_viewcolumn>`) and will overwrite
+the value specified by the view. On the other hand they should have a
+height specified, or they can be anchored to the top and bottom of the
+view. `SplitView </sdk/apps/qml/Ubuntu.Components/Labs.SplitView/>`_ 
+being a positioner, remember not to anchor horizontal anchor lines or
+anchor fill the columns.
 
 In order for a
-`SplitView </sdk/apps/qml/Ubuntu.Components/Labs.SplitView/>`__ to show
+`SplitView </sdk/apps/qml/Ubuntu.Components/Labs.SplitView/>`_  to show
 some content it must have at least one active layout present. Views
 which are not configured by the active layout will be hidden. Hidden
 views may be resized, therefore if the content is size sensitive (i.e.
@@ -94,7 +97,7 @@ the content of your view does take this into account.
         }
     }
 
-The `SplitView </sdk/apps/qml/Ubuntu.Components/Labs.SplitView/>`__ can
+The `SplitView </sdk/apps/qml/Ubuntu.Components/Labs.SplitView/>`_  can
 be used with a Repeater in case the content of the view columns doesn't
 need to be preserved between layout changes. The example above with a
 Repeater would look as follows:
@@ -143,50 +146,54 @@ Repeater would look as follows:
 Resizing
 ~~~~~~~~
 
-`SplitView </sdk/apps/qml/Ubuntu.Components/Labs.SplitView/>`__ provides
+`SplitView </sdk/apps/qml/Ubuntu.Components/Labs.SplitView/>`_  provides
 the ability to resize view columns. Each column has an attached handle
 which provides the ability to resize the columns using a mouse or touch.
 Columns can be resized if the spacing property is set and the column
 configurations allow that (see
-`spacing </sdk/apps/qml/Ubuntu.Components/Labs.SplitView#spacing-prop>`__
+`spacing </sdk/apps/qml/Ubuntu.Components/Labs.SplitView/#spacing-prop>`_ 
 property).
 
 Attached properties
 ~~~~~~~~~~~~~~~~~~~
 
-`SplitView </sdk/apps/qml/Ubuntu.Components/Labs.SplitView/>`__ provides
+`SplitView </sdk/apps/qml/Ubuntu.Components/Labs.SplitView/>`_  provides
 a set of attached properties to each column view. Views can in this way
 have access to various values of the
-`SplitView </sdk/apps/qml/Ubuntu.Components/Labs.SplitView/>`__ and
+`SplitView </sdk/apps/qml/Ubuntu.Components/Labs.SplitView/>`_  and
 configurations.
 
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_labs_splitview_[read-only] activeLayout-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [read-only] activeLayout :                                      |
-| `SplitViewLayout </sdk/apps/qml/Ubuntu.Components/SplitViewLayout/>`__   |
+| :ref:`SplitViewLayout <sdk_ubuntu_components_splitviewlayout>`              |
 +--------------------------------------------------------------------------+
 
 The property holds the active
-`SplitViewLayout </sdk/apps/qml/Ubuntu.Components/SplitViewLayout/>`__
-instance, or null is no layout is active.
+:ref:`SplitViewLayout <sdk_ubuntu_components_splitviewlayout>` instance, or
+null is no layout is active.
 
 | 
 
+.. _sdk_ubuntu_components_labs_splitview_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ handleDelegate : `Component </sdk/apps/qml/QtQml/Component/>`__ |
+| :ref:` <>`\ handleDelegate : `Component <sdk_qtqml_component>`         |
 +--------------------------------------------------------------------------+
 
 The property holds the delegate to be shown for the column resizing
 handle. The delegate is for pure visual, mouse and touch handling is
 provided by the
-`SplitView </sdk/apps/qml/Ubuntu.Components/Labs.SplitView/>`__
+`SplitView </sdk/apps/qml/Ubuntu.Components/Labs.SplitView/>`_ 
 component itself. The component provides a context property called
 *handle* which embeds the visuals. This can be used to anchor the
 visuals to the resize handle. The thickness of the handle is driven by
 the
-`spacing </sdk/apps/qml/Ubuntu.Components/Labs.SplitView#spacing-prop>`__
+`spacing </sdk/apps/qml/Ubuntu.Components/Labs.SplitView/#spacing-prop>`_ 
 property.
 
 .. code:: cpp
@@ -245,19 +252,22 @@ property.
 
 | 
 
+.. _sdk_ubuntu_components_labs_splitview_layouts-prop:
+
 +--------------------------------------------------------------------------+
 |        \ layouts :                                                       |
-| list<`SplitViewLayout </sdk/apps/qml/Ubuntu.Components/SplitViewLayout/> |
-| `__>                                                                     |
+| list<:ref:`SplitViewLayout <sdk_ubuntu_components_splitviewlayout>`>        |
 +--------------------------------------------------------------------------+
 
 The property holds the layout configurations declared for the given
-`SplitView </sdk/apps/qml/Ubuntu.Components/Labs.SplitView/>`__.
+`SplitView </sdk/apps/qml/Ubuntu.Components/Labs.SplitView/>`_ .
 
 **See also**
-`SplitViewLayout </sdk/apps/qml/Ubuntu.Components/SplitViewLayout/>`__.
+:ref:`SplitViewLayout <sdk_ubuntu_components_splitviewlayout>`.
 
 | 
+
+.. _sdk_ubuntu_components_labs_splitview_spacing-prop:
 
 +--------------------------------------------------------------------------+
 |        \ spacing : real                                                  |
@@ -265,9 +275,9 @@ The property holds the layout configurations declared for the given
 
 Spacing between view columns. A value bigger than 0 enables resizing of
 columns with a
-`minimumWidth </sdk/apps/qml/Ubuntu.Components/ViewColumn#minimumWidth-prop>`__
+:ref:`minimumWidth <sdk_ubuntu_components_viewcolumn#minimumWidth-prop>`
 lower than
-`maximumWidth </sdk/apps/qml/Ubuntu.Components/ViewColumn#maximumWidth-prop>`__.
+:ref:`maximumWidth <sdk_ubuntu_components_viewcolumn#maximumWidth-prop>`.
 If spacing is 0 the columns cannot be resized. Defaults to 4 device
 pixels.
 
@@ -275,6 +285,8 @@ pixels.
 
 Attached Property Documentation
 -------------------------------
+
+.. _sdk_ubuntu_components_labs_splitview_SplitView.column-prop:
 
 +--------------------------------------------------------------------------+
 |        \ SplitView.column : int                                          |
@@ -284,9 +296,11 @@ The property holds the column index the view is configured to.
 
 | 
 
+.. _sdk_ubuntu_components_labs_splitview_SplitView.columnConfig-prop:
+
 +--------------------------------------------------------------------------+
 |        \ SplitView.columnConfig :                                        |
-| `ViewColumn </sdk/apps/qml/Ubuntu.Components/ViewColumn/>`__             |
+| :ref:`ViewColumn <sdk_ubuntu_components_viewcolumn>`                        |
 +--------------------------------------------------------------------------+
 
 The attached property holds the active layout's column configuration
@@ -295,13 +309,15 @@ provided for the column.
 
 | 
 
+.. _sdk_ubuntu_components_labs_splitview_SplitView.view-prop:
+
 +--------------------------------------------------------------------------+
 |        \ SplitView.view :                                                |
-| `SplitView </sdk/apps/qml/Ubuntu.Components/Labs.SplitView/>`__          |
+| `SplitView </sdk/apps/qml/Ubuntu.Components/Labs.SplitView/>`_           |
 +--------------------------------------------------------------------------+
 
 Contains the
-`SplitView </sdk/apps/qml/Ubuntu.Components/Labs.SplitView/>`__ instance
+`SplitView </sdk/apps/qml/Ubuntu.Components/Labs.SplitView/>`_  instance
 of the column.
 
 | 

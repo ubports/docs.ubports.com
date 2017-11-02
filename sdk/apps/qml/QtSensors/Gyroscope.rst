@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_gyroscope:
+QtSensors Gyroscope
+===================
+
 The Gyroscope element reports on rotational acceleration around the X, Y
 and Z axes.
 
@@ -6,8 +10,7 @@ and Z axes.
 +--------------------------------------+--------------------------------------+
 | Since:                               | QtSensors 5.0                        |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Sensor </sdk/apps/qml/QtSensors/Sen |
-|                                      | sor/>`__                             |
+| Inherits:                            | :ref:`Sensor <sdk_qtsensors_sensor>` |
 +--------------------------------------+--------------------------------------+
 
 Detailed Description
@@ -16,5 +19,4 @@ Detailed Description
 This element wraps the QGyroscope class. Please see the documentation
 for QGyroscope for details.
 
-**See also**
-`GyroscopeReading </sdk/apps/qml/QtSensors/GyroscopeReading/>`__.
+**See also** :ref:`GyroscopeReading <sdk_qtsensors_gyroscopereading>`.

@@ -1,53 +1,57 @@
+.. _sdk_qtquick_animation_and_transitions_in_qt_quick:
+QtQuick Animation and Transitions in Qt Quick
+=============================================
+
 
 
 .. rubric:: Animation and Transitions Types
    :name: animation-and-transitions-types
 
--  `Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch#transition>`__
+-  `Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch/#transition>`_ 
    - Animates transitions during state changes
--  `SequentialAnimation </sdk/apps/qml/QtQuick/SequentialAnimation/>`__
-   - Runs animations sequentially
--  `ParallelAnimation </sdk/apps/qml/QtQuick/ParallelAnimation/>`__ -
-   Runs animations in parallel
--  `Behavior </sdk/apps/qml/QtQuick/Behavior/>`__ - Specifies a default
-   animation for property changes
--  `PropertyAction </sdk/apps/qml/QtQuick/PropertyAction/>`__ - Sets
-   immediate property changes during animation
--  `PauseAnimation </sdk/apps/qml/QtQuick/PauseAnimation/>`__ -
-   Introduces a pause in an animation
--  `SmoothedAnimation </sdk/apps/qml/QtQuick/SmoothedAnimation/>`__ -
-   Allows a property to smoothly track a value
--  `SpringAnimation </sdk/apps/qml/QtQuick/SpringAnimation/>`__ - Allows
-   a property to track a value in a spring-like motion
--  `ScriptAction </sdk/apps/qml/QtQuick/ScriptAction/>`__ - Runs scripts
-   during an animation
+-  :ref:`SequentialAnimation <sdk_qtquick_sequentialanimation>` - Runs
+   animations sequentially
+-  :ref:`ParallelAnimation <sdk_qtquick_parallelanimation>` - Runs
+   animations in parallel
+-  :ref:`Behavior <sdk_qtquick_behavior>` - Specifies a default animation
+   for property changes
+-  :ref:`PropertyAction <sdk_qtquick_propertyaction>` - Sets immediate
+   property changes during animation
+-  :ref:`PauseAnimation <sdk_qtquick_pauseanimation>` - Introduces a pause
+   in an animation
+-  :ref:`SmoothedAnimation <sdk_qtquick_smoothedanimation>` - Allows a
+   property to smoothly track a value
+-  :ref:`SpringAnimation <sdk_qtquick_springanimation>` - Allows a property
+   to track a value in a spring-like motion
+-  :ref:`ScriptAction <sdk_qtquick_scriptaction>` - Runs scripts during an
+   animation
 
 Types that animate properties based on data types
 
 +--------------------------------------+--------------------------------------+
-| `AnchorAnimation </sdk/apps/qml/QtQu | Animates changes in anchor values    |
-| ick/AnchorAnimation/>`__             |                                      |
+| :ref:`AnchorAnimation <sdk_qtquick_anchor | Animates changes in anchor values    |
+| animation>`_                         |                                      |
 +--------------------------------------+--------------------------------------+
-| `ColorAnimation </sdk/apps/qml/QtQui | Animates changes in color values     |
-| ck/ColorAnimation/>`__               |                                      |
+| :ref:`ColorAnimation <sdk_qtquick_coloran | Animates changes in color values     |
+| imation>`_                           |                                      |
 +--------------------------------------+--------------------------------------+
-| `NumberAnimation </sdk/apps/qml/QtQu | Animates changes in qreal-type       |
-| ick/NumberAnimation/>`__             | values                               |
+| :ref:`NumberAnimation <sdk_qtquick_number | Animates changes in qreal-type       |
+| animation>`_                         | values                               |
 +--------------------------------------+--------------------------------------+
-| `ParentAnimation </sdk/apps/qml/QtQu | Animates changes in parent values    |
-| ick/ParentAnimation/>`__             |                                      |
+| :ref:`ParentAnimation <sdk_qtquick_parent | Animates changes in parent values    |
+| animation>`_                         |                                      |
 +--------------------------------------+--------------------------------------+
-| `PathAnimation </sdk/apps/qml/QtQuic | Animates an item along a path        |
-| k/PathAnimation/>`__                 |                                      |
+| :ref:`PathAnimation <sdk_qtquick_pathanim | Animates an item along a path        |
+| ation>`_                             |                                      |
 +--------------------------------------+--------------------------------------+
-| `PropertyAnimation </sdk/apps/qml/Qt | Animates changes in property values  |
-| Quick/PropertyAnimation/>`__         |                                      |
+| :ref:`PropertyAnimation <sdk_qtquick_prop | Animates changes in property values  |
+| ertyanimation>`_                     |                                      |
 +--------------------------------------+--------------------------------------+
-| `RotationAnimation </sdk/apps/qml/Qt | Animates changes in rotation values  |
-| Quick/RotationAnimation/>`__         |                                      |
+| :ref:`RotationAnimation <sdk_qtquick_rota | Animates changes in rotation values  |
+| tionanimation>`_                     |                                      |
 +--------------------------------------+--------------------------------------+
-| `Vector3dAnimation </sdk/apps/qml/Qt | Animates changes in QVector3d values |
-| Quick/Vector3dAnimation/>`__         |                                      |
+| :ref:`Vector3dAnimation <sdk_qtquick_vect | Animates changes in QVector3d values |
+| or3danimation>`_                     |                                      |
 +--------------------------------------+--------------------------------------+
 
 Animations are created by applying animation types to property values.
@@ -72,7 +76,7 @@ to gradually change the properties over time. These *property
 animations* apply smooth movements by interpolating values between
 property value changes. Property animations provide timing controls and
 allows different interpolations through `easing
-curves </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations#qml-easing-animation>`__.
+curves </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/#qml-easing-animation>`_ .
 
 .. code:: qml
 
@@ -102,32 +106,31 @@ curves </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations#qml-easing-ani
 
 Specialized property animation types have more efficient implementations
 than the
-`PropertyAnimation </sdk/apps/qml/QtQuick/animation#propertyanimation>`__
+`PropertyAnimation </sdk/apps/qml/QtQuick/animation/#propertyanimation>`_ 
 type. They are for setting animations to different QML types such as
 ``int``, ``color``, and rotations. Similarly, the
-`ParentAnimation </sdk/apps/qml/QtQuick/ParentAnimation/>`__ can animate
-parent changes.
+:ref:`ParentAnimation <sdk_qtquick_parentanimation>` can animate parent
+changes.
 
 See the `Controlling
-Animations </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations#qml-controlling-animations>`__
+Animations </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/#qml-controlling-animations>`_ 
 section for more information about the different animation properties.
 
 .. rubric:: Using Predefined Targets and Properties
    :name: using-predefined-targets-and-properties
 
 In the previous example, the
-`PropertyAnimation </sdk/apps/qml/QtQuick/animation#propertyanimation>`__
-and `NumberAnimation </sdk/apps/qml/QtQuick/NumberAnimation/>`__ objects
-needed to specify particular
-`target </sdk/apps/qml/QtQuick/PropertyAnimation#target-prop>`__ and
-`properties </sdk/apps/qml/QtQuick/PropertyAnimation#properties-prop>`__
-values to specify the objects and properties that should be animated.
-This can be avoided by using the *<Animation> on <Property>* syntax,
-which specifies the animation is to be applied as a *property value
-source*.
+`PropertyAnimation </sdk/apps/qml/QtQuick/animation/#propertyanimation>`_ 
+and :ref:`NumberAnimation <sdk_qtquick_numberanimation>` objects needed to
+specify particular
+:ref:`target <sdk_qtquick_propertyanimation#target-prop>` and
+:ref:`properties <sdk_qtquick_propertyanimation#properties-prop>` values to
+specify the objects and properties that should be animated. This can be
+avoided by using the *<Animation> on <Property>* syntax, which specifies
+the animation is to be applied as a *property value source*.
 
 Below are two
-`PropertyAnimation </sdk/apps/qml/QtQuick/animation#propertyanimation>`__
+`PropertyAnimation </sdk/apps/qml/QtQuick/animation/#propertyanimation>`_ 
 objects that are specified using this syntax:
 
 .. code:: qml
@@ -144,19 +147,19 @@ objects that are specified using this syntax:
 The animation starts as soon as the rectangle is loaded, and will
 automatically be applied to its ``x`` and ``y`` values. Since the
 *<Animation> on <Property>* syntax has been used, it is not necessary to
-set the `target </sdk/apps/qml/QtQuick/PropertyAnimation#target-prop>`__
-value of the
-`PropertyAnimation </sdk/apps/qml/QtQuick/animation#propertyanimation>`__
+set the :ref:`target <sdk_qtquick_propertyanimation#target-prop>` value of
+the
+`PropertyAnimation </sdk/apps/qml/QtQuick/animation/#propertyanimation>`_ 
 objects to ``rect``, and neither is it necessary to set the
-`property </sdk/apps/qml/QtQuick/PropertyAnimation#property-prop>`__
-values to ``x`` and ``y``.
+:ref:`property <sdk_qtquick_propertyanimation#property-prop>` values to
+``x`` and ``y``.
 
 This can also be used by `grouped
-animations </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations#playing-animations-in-parallel-or-in-sequence>`__
+animations </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/#playing-animations-in-parallel-or-in-sequence>`_ 
 to ensure that all animations within a group are applied to the same
 property. For example, the previous example could instead use
-`SequentialAnimation </sdk/apps/qml/QtQuick/SequentialAnimation/>`__ to
-animate the rectangle's ``color`` first to yellow, then to blue:
+:ref:`SequentialAnimation <sdk_qtquick_sequentialanimation>` to animate the
+rectangle's ``color`` first to yellow, then to blue:
 
 .. code:: qml
 
@@ -170,29 +173,26 @@ animate the rectangle's ``color`` first to yellow, then to blue:
         }
     }
 
-Since the
-`SequentialAnimation </sdk/apps/qml/QtQuick/SequentialAnimation/>`__
+Since the :ref:`SequentialAnimation <sdk_qtquick_sequentialanimation>`
 object has been specified on the ``color`` property using the
 *<Animation> on <Property>* syntax, its child
-`ColorAnimation </sdk/apps/qml/QtQuick/animation#coloranimation>`__
+`ColorAnimation </sdk/apps/qml/QtQuick/animation/#coloranimation>`_ 
 objects are also automatically applied to this property and do not need
-to specify
-`target </sdk/apps/qml/QtQuick/PropertyAnimation#target-prop>`__ or
-`property </sdk/apps/qml/QtQuick/PropertyAnimation#property-prop>`__
-animation values.
+to specify :ref:`target <sdk_qtquick_propertyanimation#target-prop>` or
+:ref:`property <sdk_qtquick_propertyanimation#property-prop>` animation
+values.
 
        \        
 .. rubric:: Transitions during State Changes
    :name: transitions-during-state-changes
 
-`Qt Quick States </sdk/apps/qml/QtQuick/State/>`__ are property
-configurations where a property may have different values to reflect
-different states. State changes introduce abrupt property changes;
-animations smooth transitions to produce visually appealing state
-changes.
+:ref:`Qt Quick States <sdk_qtquick_state>` are property configurations
+where a property may have different values to reflect different states.
+State changes introduce abrupt property changes; animations smooth
+transitions to produce visually appealing state changes.
 
 The
-`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch#transition>`__
+`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch/#transition>`_ 
 type can contain animation types to interpolate property changes caused
 by state changes. To assign the transition to an object, bind it to the
 ``transitions`` property.
@@ -257,10 +257,10 @@ change.
    :name: default-animation-as-behaviors
 
 Default property animations are set using *behavior animations*.
-Animations declared in `Behavior </sdk/apps/qml/QtQuick/Behavior/>`__
-types apply to the property and animates any property value changes.
-However, Behavior types have an ``enabled`` property to purposely enable
-or disable the behavior animations.
+Animations declared in :ref:`Behavior <sdk_qtquick_behavior>` types apply
+to the property and animates any property value changes. However,
+Behavior types have an ``enabled`` property to purposely enable or
+disable the behavior animations.
 
 A ball component might have a behavior animation assigned to its ``x``,
 ``y``, and ``color`` properties. The behavior animation could be set up
@@ -296,7 +296,7 @@ properties. The ``Behavior on <property>`` declaration is a convenient
 way of assigning a behavior animation onto a property.
 
 See the `Qt Quick Examples -
-Animation </sdk/apps/qml/QtQuick/animation/>`__ for a demonstration of
+Animation </sdk/apps/qml/QtQuick/animation/>`_  for a demonstration of
 behavioral animations.
 
 .. rubric:: Playing Animations in Parallel or in Sequence
@@ -306,18 +306,17 @@ Animations can run *in parallel* or *in sequence*. Parallel animations
 will play a group of animations at the same time while sequential
 animations play a group of animations in order: one after the other.
 Grouping animations in
-`SequentialAnimation </sdk/apps/qml/QtQuick/SequentialAnimation/>`__ and
-`ParallelAnimation </sdk/apps/qml/QtQuick/ParallelAnimation/>`__ will
-play the animations in sequence or in parallel.
+:ref:`SequentialAnimation <sdk_qtquick_sequentialanimation>` and
+:ref:`ParallelAnimation <sdk_qtquick_parallelanimation>` will play the
+animations in sequence or in parallel.
 
 A banner component may have several icons or slogans to display, one
 after the other. The ``opacity`` property could transform to ``1.0``
 denoting an opaque object. Using the
-`SequentialAnimation </sdk/apps/qml/QtQuick/SequentialAnimation/>`__
-type, the opacity animations will play after the preceding animation
-finishes. The
-`ParallelAnimation </sdk/apps/qml/QtQuick/ParallelAnimation/>`__ type
-will play the animations at the same time.
+:ref:`SequentialAnimation <sdk_qtquick_sequentialanimation>` type, the
+opacity animations will play after the preceding animation finishes. The
+:ref:`ParallelAnimation <sdk_qtquick_parallelanimation>` type will play the
+animations at the same time.
 
 .. code:: qml
 
@@ -356,14 +355,14 @@ will play the animations at the same time.
     }
 
 Once individual animations are placed into a
-`SequentialAnimation </sdk/apps/qml/QtQuick/SequentialAnimation/>`__ or
-`ParallelAnimation </sdk/apps/qml/QtQuick/ParallelAnimation/>`__, they
-can no longer be started and stopped independently. The sequential or
-parallel animation must be started and stopped as a group.
+:ref:`SequentialAnimation <sdk_qtquick_sequentialanimation>` or
+:ref:`ParallelAnimation <sdk_qtquick_parallelanimation>`, they can no
+longer be started and stopped independently. The sequential or parallel
+animation must be started and stopped as a group.
 
-The `SequentialAnimation </sdk/apps/qml/QtQuick/SequentialAnimation/>`__
-type is also useful for playing `transition
-animations </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations#qml-transition-animations>`__
+The :ref:`SequentialAnimation <sdk_qtquick_sequentialanimation>` type is
+also useful for playing `transition
+animations </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/#qml-transition-animations>`_ 
 because animations are played in parallel inside transitions.
 
        \        
@@ -376,12 +375,12 @@ There are different methods to control animations.
    :name: animation-playback
 
 All animation types inherit from the
-`Animation </sdk/apps/qml/QtQuick/Animation/>`__ type. It is not
-possible to create `Animation </sdk/apps/qml/QtQuick/Animation/>`__
-objects; instead, this type provides the essential properties and
-methods for animation types. Animation types have ``start()``,
-``stop()``, ``resume()``, ``pause()``, ``restart()``, and ``complete()``
--- all of these methods control the execution of animations.
+:ref:`Animation <sdk_qtquick_animation>` type. It is not possible to create
+:ref:`Animation <sdk_qtquick_animation>` objects; instead, this type
+provides the essential properties and methods for animation types.
+Animation types have ``start()``, ``stop()``, ``resume()``, ``pause()``,
+``restart()``, and ``complete()`` -- all of these methods control the
+execution of animations.
 
        \        
 .. rubric:: Easing
@@ -397,7 +396,7 @@ A QML object may have different easing curve for each property
 animation. There are also different parameters to control the curve,
 some of which are exclusive to a particular curve. For more information
 about the easing curves, visit the
-`easing </sdk/apps/qml/QtQuick/PropertyAnimation#easing.type-prop>`__
+:ref:`easing <sdk_qtquick_propertyanimation#easing.type-prop>`
 documentation.
 
 The easing example visually demonstrates each of the different easing
@@ -408,35 +407,31 @@ types.
 
 In addition, QML provides several other types useful for animation:
 
--  `PauseAnimation </sdk/apps/qml/QtQuick/PauseAnimation/>`__: enables
-   pauses during animations
--  `ScriptAction </sdk/apps/qml/QtQuick/ScriptAction/>`__: allows
-   JavaScript to be executed during an animation, and can be used
-   together with
-   `StateChangeScript </sdk/apps/qml/QtQuick/StateChangeScript/>`__ to
-   reused existing scripts
--  `PropertyAction </sdk/apps/qml/QtQuick/PropertyAction/>`__: changes a
-   property *immediately* during an animation, without animating the
-   property change
+-  :ref:`PauseAnimation <sdk_qtquick_pauseanimation>`: enables pauses
+   during animations
+-  :ref:`ScriptAction <sdk_qtquick_scriptaction>`: allows JavaScript to be
+   executed during an animation, and can be used together with
+   :ref:`StateChangeScript <sdk_qtquick_statechangescript>` to reused
+   existing scripts
+-  :ref:`PropertyAction <sdk_qtquick_propertyaction>`: changes a property
+   *immediately* during an animation, without animating the property
+   change
 
 These are specialized animation types that animate different property
 types
 
--  `SmoothedAnimation </sdk/apps/qml/QtQuick/SmoothedAnimation/>`__: a
-   specialized
-   `NumberAnimation </sdk/apps/qml/QtQuick/NumberAnimation/>`__ that
-   provides smooth changes in animation when the target value changes
--  `SpringAnimation </sdk/apps/qml/QtQuick/SpringAnimation/>`__:
-   provides a spring-like animation with specialized attributes such as
-   `mass </sdk/apps/qml/QtQuick/SpringAnimation#mass-prop>`__,
-   `damping </sdk/apps/qml/QtQuick/SpringAnimation#damping-prop>`__ and
-   `epsilon </sdk/apps/qml/QtQuick/SpringAnimation#epsilon-prop>`__
--  `ParentAnimation </sdk/apps/qml/QtQuick/ParentAnimation/>`__: used
-   for animating a parent change (see
-   `ParentChange </sdk/apps/qml/QtQuick/ParentChange/>`__)
--  `AnchorAnimation </sdk/apps/qml/QtQuick/AnchorAnimation/>`__: used
-   for animating an anchor change (see
-   `AnchorChanges </sdk/apps/qml/QtQuick/AnchorChanges/>`__)
+-  :ref:`SmoothedAnimation <sdk_qtquick_smoothedanimation>`: a specialized
+   :ref:`NumberAnimation <sdk_qtquick_numberanimation>` that provides
+   smooth changes in animation when the target value changes
+-  :ref:`SpringAnimation <sdk_qtquick_springanimation>`: provides a
+   spring-like animation with specialized attributes such as
+   :ref:`mass <sdk_qtquick_springanimation#mass-prop>`,
+   :ref:`damping <sdk_qtquick_springanimation#damping-prop>` and
+   :ref:`epsilon <sdk_qtquick_springanimation#epsilon-prop>`
+-  :ref:`ParentAnimation <sdk_qtquick_parentanimation>`: used for animating
+   a parent change (see :ref:`ParentChange <sdk_qtquick_parentchange>`)
+-  :ref:`AnchorAnimation <sdk_qtquick_anchoranimation>`: used for animating
+   an anchor change (see :ref:`AnchorChanges <sdk_qtquick_anchorchanges>`)
 
 .. rubric:: Sharing Animation Instances
    :name: sharing-animation-instances
@@ -457,10 +452,10 @@ animated.
     }
 
 The easiest fix is to repeat the
-`NumberAnimation </sdk/apps/qml/QtQuick/NumberAnimation/>`__ for both
-Behaviors. If the repeated animation is rather complex, you might also
-consider creating a custom animation component and assigning an instance
-to each Behavior, for example:
+:ref:`NumberAnimation <sdk_qtquick_numberanimation>` for both Behaviors. If
+the repeated animation is rather complex, you might also consider
+creating a custom animation component and assigning an instance to each
+Behavior, for example:
 
 .. code:: qml
 
@@ -476,4 +471,4 @@ to each Behavior, for example:
     }
 
 **See also** `Qt Quick Examples -
-Animation </sdk/apps/qml/QtQuick/animation/>`__.
+Animation </sdk/apps/qml/QtQuick/animation/>`_ .

@@ -1,19 +1,23 @@
+.. _sdk_ubuntu_components_toolbar:
+Ubuntu.Components Toolbar
+=========================
+
 Toolbar that can be used as an extension for the edit mode header.
 Example:
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import Ubuntu.Components 1.3         |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `StyledItem </sdk/apps/qml/Ubuntu.Co |
-|                                      | mponents/StyledItem/>`__             |
+| Inherits:                            | :ref:`StyledItem <sdk_ubuntu_components_s |
+|                                      | tyleditem>`_                         |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`leadingActionBar </sdk/apps/qml/Ubuntu.Components/Toolbar#leadingActionBar-prop>`__****
+-  :ref:`leadingActionBar <sdk_ubuntu_components_toolbar_leadingActionBar-prop>`
    : ActionBar
--  ****`trailingActionBar </sdk/apps/qml/Ubuntu.Components/Toolbar#trailingActionBar-prop>`__****
+-  :ref:`trailingActionBar <sdk_ubuntu_components_toolbar_trailingActionBar-prop>`
    : ActionBar
 
 Detailed Description
@@ -80,19 +84,20 @@ Detailed Description
         }
     }
 
-See `PageHeader </sdk/apps/qml/Ubuntu.Components/PageHeader/>`__.
+See :ref:`PageHeader <sdk_ubuntu_components_pageheader>`.
 
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_toolbar_[read-only] leadingActionBar-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [read-only] leadingActionBar :                                  |
-| `ActionBar </sdk/apps/qml/Ubuntu.Components/ActionBar/>`__               |
+| :ref:`ActionBar <sdk_ubuntu_components_actionbar>`                          |
 +--------------------------------------------------------------------------+
 
-The leading `ActionBar </sdk/apps/qml/Ubuntu.Components/ActionBar/>`__
-that should hold at most one action. Recommneded for the delete action.
-Example:
+The leading :ref:`ActionBar <sdk_ubuntu_components_actionbar>` that should
+hold at most one action. Recommneded for the delete action. Example:
 
 .. code:: qml
 
@@ -106,17 +111,19 @@ Example:
         ]
     }
 
-See `ActionBar </sdk/apps/qml/Ubuntu.Components/ActionBar/>`__.
+See :ref:`ActionBar <sdk_ubuntu_components_actionbar>`.
 
 | 
 
+.. _sdk_ubuntu_components_toolbar_[read-only] trailingActionBar-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [read-only] trailingActionBar :                                 |
-| `ActionBar </sdk/apps/qml/Ubuntu.Components/ActionBar/>`__               |
+| :ref:`ActionBar <sdk_ubuntu_components_actionbar>`                          |
 +--------------------------------------------------------------------------+
 
-The `ActionBar </sdk/apps/qml/Ubuntu.Components/ActionBar/>`__ with
-trailing actions. Example:
+The :ref:`ActionBar <sdk_ubuntu_components_actionbar>` with trailing
+actions. Example:
 
 .. code:: qml
 
@@ -129,9 +136,9 @@ trailing actions. Example:
           ]
     }
 
-The trailing `ActionBar </sdk/apps/qml/Ubuntu.Components/ActionBar/>`__
-may contain up to 8 actions. Scrolling and support for more than 8
-actions will be added in the near future. See
-`ActionBar </sdk/apps/qml/Ubuntu.Components/ActionBar/>`__.
+The trailing :ref:`ActionBar <sdk_ubuntu_components_actionbar>` may contain
+up to 8 actions. Scrolling and support for more than 8 actions will be
+added in the near future. See
+:ref:`ActionBar <sdk_ubuntu_components_actionbar>`.
 
 | 

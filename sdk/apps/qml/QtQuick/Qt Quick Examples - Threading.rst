@@ -1,3 +1,7 @@
+.. _sdk_qtquick_qt_quick_examples_-_threading:
+QtQuick Qt Quick Examples - Threading
+=====================================
+
 
 
 |image0|
@@ -15,11 +19,11 @@ Running an Example.
    :name: threaded-listmodel
 
 *Threaded
-`ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview#listmodel>`__*
-contains a `ListView </sdk/apps/qml/QtQuick/ListView/>`__ and a
-`ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview#listmodel>`__.
+`ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#listmodel>`_ *
+contains a :ref:`ListView <sdk_qtquick_listview>` and a
+`ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#listmodel>`_ .
 The
-`ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview#listmodel>`__
+`ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#listmodel>`_ 
 object is updated asynchronously in another thread, and the results
 propagate back to the main thread. A timer requests updates from the
 worker thread periodically:
@@ -38,7 +42,7 @@ worker thread periodically:
             }
 
 Inside the worker thread, the
-`ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview#listmodel>`__
+`ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#listmodel>`_ 
 is synchronized once the data is finished loading:
 
 .. code:: js
@@ -55,16 +59,16 @@ is synchronized once the data is finished loading:
    :name: workerscript
 
 *WorkerScript* contains an example of using a
-`WorkerScript </sdk/apps/qml/QtQuick/threading#workerscript>`__ to
+`WorkerScript </sdk/apps/qml/QtQuick/threading/#workerscript>`_  to
 offload expensive calculations into another thread. This keeps the UI
 from being blocked. This example calculates numbers in Pascal's
 Triangle, and not in a very optimal way, so it will often take several
 seconds to complete the calculation. By doing this in a
-`WorkerScript </sdk/apps/qml/QtQuick/threading#workerscript>`__ in
+`WorkerScript </sdk/apps/qml/QtQuick/threading/#workerscript>`_  in
 another thread, the UI is not blocked during this time.
 
 When the UI needs another value, a request is sent to the
-`WorkerScript </sdk/apps/qml/QtQuick/threading#workerscript>`__:
+`WorkerScript </sdk/apps/qml/QtQuick/threading/#workerscript>`_ :
 
 .. code:: qml
 
@@ -92,7 +96,7 @@ it:
     }
 
 When it's done, the result returns to the main scene via the
-`WorkerScript </sdk/apps/qml/QtQuick/threading#workerscript>`__ type:
+`WorkerScript </sdk/apps/qml/QtQuick/threading/#workerscript>`_  type:
 
 .. code:: qml
 

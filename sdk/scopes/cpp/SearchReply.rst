@@ -1,5 +1,9 @@
+.. _sdk_searchreply:
+SearchReply
+===========
+
 Allows the results of a search query to be sent to the query source.
-`More... </sdk/scopes/cpp/unity.scopes.SearchReply#details>`__
+`More... </sdk/scopes/cpp/unity.scopes.SearchReply/#details>`_ 
 
 ``#include <unity/scopes/SearchReply.h>``
 
@@ -14,7 +18,7 @@ Inheritance diagram for unity::scopes::SearchReply:
 
 virtual void 
 
-`register\_departments </sdk/scopes/cpp/unity.scopes.SearchReply#a17fdd52a4a8b19d6f8e13e5d7f576344>`__
+`register\_departments </sdk/scopes/cpp/unity.scopes.SearchReply/#a17fdd52a4a8b19d6f8e13e5d7f576344>`_ 
 (Department::SCPtr const &parent)=0
 
  
@@ -26,12 +30,12 @@ virtual void 
 
 virtual Category::SCPtr 
 
-`register\_category </sdk/scopes/cpp/unity.scopes.SearchReply#aaa061806a96f50ff66abc6184135ea66>`__
+`register\_category </sdk/scopes/cpp/unity.scopes.SearchReply/#aaa061806a96f50ff66abc6184135ea66>`_ 
 (std::string const &id, std::string const &title, std::string const
 &icon,
-`CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`__
+`CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`_ 
 const
-&renderer\_template=\ `CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`__\ ())=0
+&renderer\_template=\ `CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`_ \ ())=0
 
  
 
@@ -41,7 +45,7 @@ const
 
 virtual void 
 
-`register\_category </sdk/scopes/cpp/unity.scopes.SearchReply#a3bf901e2b5c8b6db3c8e758a9ccbef1c>`__
+`register\_category </sdk/scopes/cpp/unity.scopes.SearchReply/#a3bf901e2b5c8b6db3c8e758a9ccbef1c>`_ 
 (Category::SCPtr category)=0
 
  
@@ -53,7 +57,7 @@ virtual void 
 
 virtual Category::SCPtr 
 
-`lookup\_category </sdk/scopes/cpp/unity.scopes.SearchReply#a55335c829bf950d36dee6c394569688a>`__
+`lookup\_category </sdk/scopes/cpp/unity.scopes.SearchReply/#a55335c829bf950d36dee6c394569688a>`_ 
 (std::string const &id)=0
 
  
@@ -64,8 +68,8 @@ virtual Category::SCPtr 
 
 virtual bool 
 
-`push </sdk/scopes/cpp/unity.scopes.SearchReply#a63d6de93152b3a972901c2d406ef5760>`__
-(`CategorisedResult </sdk/scopes/cpp/unity.scopes.CategorisedResult/>`__
+`push </sdk/scopes/cpp/unity.scopes.SearchReply/#a63d6de93152b3a972901c2d406ef5760>`_ 
+(`CategorisedResult </sdk/scopes/cpp/unity.scopes.CategorisedResult/>`_ 
 const &result)=0
 
  
@@ -76,7 +80,7 @@ const &result)=0
 
 virtual bool 
 
-`push </sdk/scopes/cpp/unity.scopes.SearchReply#ad6c02e387248cfe382dd3d8c7cc9c589>`__
+`push </sdk/scopes/cpp/unity.scopes.SearchReply/#ad6c02e387248cfe382dd3d8c7cc9c589>`_ 
 (experimental::Annotation const &annotation)=0
 
  
@@ -87,11 +91,10 @@ virtual bool 
 
 virtual bool 
 
-`push </sdk/scopes/cpp/unity.scopes.SearchReply#a121842b4206980360c208a1f5828ef12>`__
-(`Filters </sdk/scopes/cpp/unity.scopes#adab58c13cf604e0e64bd6b1a745364d3>`__
-const &filters,
-`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ const
-&filter\_state)=0
+`push </sdk/scopes/cpp/unity.scopes.SearchReply/#a121842b4206980360c208a1f5828ef12>`_ 
+(:ref:`Filters <sdk_unity_scopes#adab58c13cf604e0e64bd6b1a745364d3>` const
+&filters, `FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_ 
+const &filter\_state)=0
 
  
 
@@ -101,7 +104,7 @@ const &filters,
 
 virtual 
 
-`~SearchReply </sdk/scopes/cpp/unity.scopes.SearchReply#aafc76a74146ebed8b8849797838ef5c5>`__
+`~SearchReply </sdk/scopes/cpp/unity.scopes.SearchReply/#aafc76a74146ebed8b8849797838ef5c5>`_ 
 ()
 
  
@@ -112,13 +115,13 @@ virtual 
 
 virtual Category::SCPtr 
 
-`register\_category </sdk/scopes/cpp/unity.scopes.SearchReply#a73d044ea7719f3538e391477d8dd7afb>`__
+`register\_category </sdk/scopes/cpp/unity.scopes.SearchReply/#a73d044ea7719f3538e391477d8dd7afb>`_ 
 (std::string const &id, std::string const &title, std::string const
-&icon, `CannedQuery </sdk/scopes/cpp/unity.scopes.CannedQuery/>`__ const
+&icon, `CannedQuery </sdk/scopes/cpp/unity.scopes.CannedQuery/>`_  const
 &query,
-`CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`__
+`CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`_ 
 const
-&renderer\_template=\ `CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`__\ ())=0
+&renderer\_template=\ `CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`_ \ ())=0
 
  
 
@@ -128,7 +131,7 @@ const
 
 virtual void 
 
-`push\_surfacing\_results\_from\_cache </sdk/scopes/cpp/unity.scopes.SearchReply#a4ba805136164b11bb358917070cde24d>`__
+`push\_surfacing\_results\_from\_cache </sdk/scopes/cpp/unity.scopes.SearchReply/#a4ba805136164b11bb358917070cde24d>`_ 
 ()=0
 
  
@@ -140,9 +143,9 @@ virtual void 
 
 virtual bool 
 
-`push </sdk/scopes/cpp/unity.scopes.SearchReply#abdd099e2e777b739988ce545a8fb3eec>`__
-(`Filters </sdk/scopes/cpp/unity.scopes#adab58c13cf604e0e64bd6b1a745364d3>`__
-const &filters)=0
+`push </sdk/scopes/cpp/unity.scopes.SearchReply/#abdd099e2e777b739988ce545a8fb3eec>`_ 
+(:ref:`Filters <sdk_unity_scopes#adab58c13cf604e0e64bd6b1a745364d3>` const
+&filters)=0
 
  
 
@@ -151,11 +154,11 @@ const &filters)=0
  
 
 |-| Public Member Functions inherited from
-`unity::scopes::Reply </sdk/scopes/cpp/unity.scopes.Reply/>`__
+`unity::scopes::Reply </sdk/scopes/cpp/unity.scopes.Reply/>`_ 
 
 virtual void 
 
-`finished </sdk/scopes/cpp/unity.scopes.Reply#a9ca653d5d7f7c97a781bc362f2af7749>`__
+`finished </sdk/scopes/cpp/unity.scopes.Reply/#a9ca653d5d7f7c97a781bc362f2af7749>`_ 
 ()=0
 
  
@@ -166,7 +169,7 @@ virtual void 
 
 virtual void 
 
-`error </sdk/scopes/cpp/unity.scopes.Reply#a526c9cbb11f896210835fb3420324ba8>`__
+`error </sdk/scopes/cpp/unity.scopes.Reply/#a526c9cbb11f896210835fb3420324ba8>`_ 
 (std::exception\_ptr ex)=0
 
  
@@ -178,8 +181,8 @@ virtual void 
 
 virtual void 
 
-`info </sdk/scopes/cpp/unity.scopes.Reply#af35cbaba152e4919306f32b06bd81029>`__
-(`OperationInfo </sdk/scopes/cpp/unity.scopes.OperationInfo/>`__ const
+`info </sdk/scopes/cpp/unity.scopes.Reply/#af35cbaba152e4919306f32b06bd81029>`_ 
+(`OperationInfo </sdk/scopes/cpp/unity.scopes.OperationInfo/>`_  const
 &op\_info)=0
 
  
@@ -191,7 +194,7 @@ virtual void 
 
 virtual 
 
-`~Reply </sdk/scopes/cpp/unity.scopes.Reply#a9f0cfeeee75a27e111ebd955523e1bb0>`__
+`~Reply </sdk/scopes/cpp/unity.scopes.Reply/#a9f0cfeeee75a27e111ebd955523e1bb0>`_ 
 ()
 
  
@@ -201,11 +204,11 @@ virtual 
  
 
 |-| Public Member Functions inherited from
-`unity::scopes::Object </sdk/scopes/cpp/unity.scopes.Object/>`__
+`unity::scopes::Object </sdk/scopes/cpp/unity.scopes.Object/>`_ 
 
 virtual std::string 
 
-`endpoint </sdk/scopes/cpp/unity.scopes.Object#ad7618cc9d878c40b389361d4acd473ae>`__
+`endpoint </sdk/scopes/cpp/unity.scopes.Object/#ad7618cc9d878c40b389361d4acd473ae>`_ 
 ()=0
 
  
@@ -216,7 +219,7 @@ virtual std::string 
 
 virtual std::string 
 
-`identity </sdk/scopes/cpp/unity.scopes.Object#a1b55aea886f0a68cb8a578f7ee0b1cfd>`__
+`identity </sdk/scopes/cpp/unity.scopes.Object/#a1b55aea886f0a68cb8a578f7ee0b1cfd>`_ 
 ()=0
 
  
@@ -227,7 +230,7 @@ virtual std::string 
 
 virtual std::string 
 
-`target\_category </sdk/scopes/cpp/unity.scopes.Object#a40a997516629df3dacca9742dbddd6cb>`__
+`target\_category </sdk/scopes/cpp/unity.scopes.Object/#a40a997516629df3dacca9742dbddd6cb>`_ 
 ()=0
 
  
@@ -238,7 +241,7 @@ virtual std::string 
 
 virtual int64\_t 
 
-`timeout </sdk/scopes/cpp/unity.scopes.Object#a41d9839f1e3cbcd6d8baee0736feccab>`__
+`timeout </sdk/scopes/cpp/unity.scopes.Object/#a41d9839f1e3cbcd6d8baee0736feccab>`_ 
 ()=0
 
  
@@ -249,7 +252,7 @@ virtual int64\_t 
 
 virtual std::string 
 
-`to\_string </sdk/scopes/cpp/unity.scopes.Object#a9ae27e1f30dc755abcd796a1e8a25150>`__
+`to\_string </sdk/scopes/cpp/unity.scopes.Object/#a9ae27e1f30dc755abcd796a1e8a25150>`_ 
 ()=0
 
  
@@ -287,13 +290,13 @@ Constructor & Destructor Documentation
 | -------------+                       |                                      |
 +--------------------------------------+--------------------------------------+
 
-Destroys a `Reply </sdk/scopes/cpp/unity.scopes.Reply/>`__.
+Destroys a `Reply </sdk/scopes/cpp/unity.scopes.Reply/>`_ .
 
-If a `Reply </sdk/scopes/cpp/unity.scopes.Reply/>`__ goes out of scope
+If a `Reply </sdk/scopes/cpp/unity.scopes.Reply/>`_  goes out of scope
 without a prior call to
-`finished() </sdk/scopes/cpp/unity.scopes.Reply#a9ca653d5d7f7c97a781bc362f2af7749>`__,
+`finished() </sdk/scopes/cpp/unity.scopes.Reply/#a9ca653d5d7f7c97a781bc362f2af7749>`_ ,
 the destructor implicitly calls
-`finished() </sdk/scopes/cpp/unity.scopes.Reply#a9ca653d5d7f7c97a781bc362f2af7749>`__.
+`finished() </sdk/scopes/cpp/unity.scopes.Reply/#a9ca653d5d7f7c97a781bc362f2af7749>`_ .
 
 Member Function Documentation
 -----------------------------
@@ -353,7 +356,7 @@ Returns
 | egorised |              |            |                                      |
 |    |              |                  |                                      |
 | |              |              | Resu |                                      |
-| lt/>`__  |              |            |                                      |
+| lt/>`_   |              |            |                                      |
 |    |              |                  |                                      |
 | |              |              | cons |                                      |
 | t &      |              |            |                                      |
@@ -366,15 +369,15 @@ Returns
 Sends a single result to the source of a query.
 
 Any calls to
-`push() </sdk/scopes/cpp/unity.scopes.SearchReply#a63d6de93152b3a972901c2d406ef5760>`__
+`push() </sdk/scopes/cpp/unity.scopes.SearchReply/#a63d6de93152b3a972901c2d406ef5760>`_ 
 after
-`finished() </sdk/scopes/cpp/unity.scopes.Reply#a9ca653d5d7f7c97a781bc362f2af7749>`__
+`finished() </sdk/scopes/cpp/unity.scopes.Reply/#a9ca653d5d7f7c97a781bc362f2af7749>`_ 
 was called are ignored.
 
 Returns
     The return value is true if the result was accepted, false
     otherwise. A false return value can be due to
-    `finished() </sdk/scopes/cpp/unity.scopes.Reply#a9ca653d5d7f7c97a781bc362f2af7749>`__
+    `finished() </sdk/scopes/cpp/unity.scopes.Reply/#a9ca653d5d7f7c97a781bc362f2af7749>`_ 
     having been called earlier, or the client that sent the query having
     cancelled that query. The return value is false also if the query
     has a cardinality limit and is reached or exceeded. (The return
@@ -416,19 +419,16 @@ Note
 | ------+--------------------+-------- |                                      |
 | ------------+                        |                                      |
 | | virtual bool       | (             |                                      |
-|       | `Filters </sdk/sco | *filter |                                      |
+|       | :ref:`Filters <sdk_unit | *filter |                                      |
 | s*,         |                        |                                      |
 | | unity::scopes::Sea |               |                                      |
-|       | pes/cpp/unity.scop |         |                                      |
+|       | y_scopes#adab58c13 |         |                                      |
 |             |                        |                                      |
 | | rchReply::push     |               |                                      |
-|       | es#adab58c13cf604e |         |                                      |
+|       | cf604e0e64bd6b1a74 |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
-|       | 0e64bd6b1a745364d3 |         |                                      |
-|             |                        |                                      |
-| |                    |               |                                      |
-|       | >`__               |         |                                      |
+|       | 5364d3>`_          |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
 |       | const &            |         |                                      |
@@ -446,7 +446,7 @@ Note
 |       | scopes.FilterState |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
-|       | />`__              |         |                                      |
+|       | />`_               |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
 |       | const &            |         |                                      |
@@ -464,10 +464,10 @@ Note
 
 Sends all filters and their states to the source of a query.
 
-**`Deprecated: </sdk/scopes/cpp/deprecated#_deprecated000002>`__**
+**`Deprecated: </sdk/scopes/cpp/deprecated/#_deprecated000002>`_ **
     Sending filter state back to the UI is deprecated and will be
     removed from future releases. Please use the `push(Filters
-    const&) </sdk/scopes/cpp/unity.scopes.SearchReply#abdd099e2e777b739988ce545a8fb3eec>`__
+    const&) </sdk/scopes/cpp/unity.scopes.SearchReply/#abdd099e2e777b739988ce545a8fb3eec>`_ 
     method instead.
 
     Returns
@@ -478,24 +478,21 @@ Sends all filters and their states to the source of a query.
 | ---------+--------------+----------- |                                      |
 | ---+--------------+                  |                                      |
 | | virtual bool | (            | `Fil |                                      |
-| ters </s | *filters*    | )          |                                      |
+| ters <sd | *filters*    | )          |                                      |
 |    |              |                  |                                      |
-| | unity::scope |              | dk/s |                                      |
-| copes/cp |              |            |                                      |
+| | unity::scope |              | k_un |                                      |
+| ity_scop |              |            |                                      |
 |    |              |                  |                                      |
-| | s::SearchRep |              | p/un |                                      |
-| ity.scop |              |            |                                      |
-|    |              |                  |                                      |
-| | ly::push     |              | es#a |                                      |
+| | s::SearchRep |              | es#a |                                      |
 | dab58c13 |              |            |                                      |
 |    |              |                  |                                      |
-| |              |              | cf60 |                                      |
+| | ly::push     |              | cf60 |                                      |
 | 4e0e64bd |              |            |                                      |
 |    |              |                  |                                      |
 | |              |              | 6b1a |                                      |
 | 745364d3 |              |            |                                      |
 |    |              |                  |                                      |
-| |              |              | >`__ |                                      |
+| |              |              | >`_  |                                      |
 |          |              |            |                                      |
 |    |              |                  |                                      |
 | |              |              | cons |                                      |
@@ -543,7 +540,7 @@ Push the results that were produced by the most recent surfacing query.
 The runtime automatically saves the results of the most recent surfacing
 query. If a scope cannot produce a result for a surfacing query
 (presumably, due to connectivity problems), calling
-`push\_surfacing\_results\_from\_cache() </sdk/scopes/cpp/unity.scopes.SearchReply#a4ba805136164b11bb358917070cde24d>`__
+`push\_surfacing\_results\_from\_cache() </sdk/scopes/cpp/unity.scopes.SearchReply/#a4ba805136164b11bb358917070cde24d>`_ 
 pushes the results that were produced by the most recent successful
 surfacing query from the cache. If a scope cannot produce surfacing
 results, it can call this method to "replay" the previous results. In
@@ -555,11 +552,11 @@ a query with an empty query string). If called for a non-empty query, it
 does nothing.
 
 You must call this method before calling
-`finished() </sdk/scopes/cpp/unity.scopes.Reply#a9ca653d5d7f7c97a781bc362f2af7749>`__,
+`finished() </sdk/scopes/cpp/unity.scopes.Reply/#a9ca653d5d7f7c97a781bc362f2af7749>`_ ,
 otherwise no cached results will be pushed
-(`push\_surfacing\_results\_from\_cache() </sdk/scopes/cpp/unity.scopes.SearchReply#a4ba805136164b11bb358917070cde24d>`__
+(`push\_surfacing\_results\_from\_cache() </sdk/scopes/cpp/unity.scopes.SearchReply/#a4ba805136164b11bb358917070cde24d>`_ 
 implicitly calls
-`finished() </sdk/scopes/cpp/unity.scopes.Reply#a9ca653d5d7f7c97a781bc362f2af7749>`__).
+`finished() </sdk/scopes/cpp/unity.scopes.Reply/#a9ca653d5d7f7c97a781bc362f2af7749>`_ ).
 
 +--------------------------------------+--------------------------------------+
 | +--------------------+-------------- | pure virtual                         |
@@ -611,7 +608,7 @@ implicitly calls
 |       | nity.scopes.Catego | =       |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
-|       | ryRenderer/>`__    | ``Categ |                                      |
+|       | ryRenderer/>`_     | ``Categ |                                      |
 | oryRenderer |                        |                                      |
 | |                    |               |                                      |
 |       | const &            | ()``    |                                      |
@@ -683,7 +680,7 @@ query.
 
 The purpose of this call is to register a category obtained via
 `SearchListenerBase::push(Category::SCPtr
-const&) </sdk/scopes/cpp/unity.scopes.SearchListenerBase#af246bd38c8ba9cec36dfae3d0607dbfc>`__
+const&) </sdk/scopes/cpp/unity.scopes.SearchListenerBase/#af246bd38c8ba9cec36dfae3d0607dbfc>`_ 
 when aggregating results and categories from other scope(s).
 
 Exceptions
@@ -741,7 +738,7 @@ Exceptions
 |       | scopes.CannedQuery |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
-|       | />`__              |         |                                      |
+|       | />`_               |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
 |       | const &            |         |                                      |
@@ -759,7 +756,7 @@ Exceptions
 |       | nity.scopes.Catego | =       |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
-|       | ryRenderer/>`__    | ``Categ |                                      |
+|       | ryRenderer/>`_     | ``Categ |                                      |
 | oryRenderer |                        |                                      |
 | |                    |               |                                      |
 |       | const &            | ()``    |                                      |
@@ -831,23 +828,23 @@ current department.
 Departments are optional. If scope supports departments, it is expected
 to register departments on every search as follows:
 
--  create a `Department </sdk/scopes/cpp/unity.scopes.Department/>`__
+-  create a `Department </sdk/scopes/cpp/unity.scopes.Department/>`_ 
    node for current department and attach to it a list of its
    subdepartments (unless current department is a leaf department) using
-   `unity::scopes::Department::set\_subdepartments() </sdk/scopes/cpp/unity.scopes.Department#ab17057cef9ce35f1302f5421a087c067>`__
+   `unity::scopes::Department::set\_subdepartments() </sdk/scopes/cpp/unity.scopes.Department/#ab17057cef9ce35f1302f5421a087c067>`_ 
    method. For every subdepartment on the list set "has\_subdepartments"
    flag if applicable.
 -  provide an alternate label for current department with
-   `unity::scopes::Department::set\_alternate\_label() </sdk/scopes/cpp/unity.scopes.Department#a9ab1192cdfcbce44b9164df11290c217>`__.
--  create a `Department </sdk/scopes/cpp/unity.scopes.Department/>`__
+   `unity::scopes::Department::set\_alternate\_label() </sdk/scopes/cpp/unity.scopes.Department/#a9ab1192cdfcbce44b9164df11290c217>`_ .
+-  create a `Department </sdk/scopes/cpp/unity.scopes.Department/>`_ 
    node for parent of current department (if applicable - not when in
    root department), and attach current
-   `Department </sdk/scopes/cpp/unity.scopes.Department/>`__ node to it
+   `Department </sdk/scopes/cpp/unity.scopes.Department/>`_  node to it
    with
-   `unity::scopes::Department::set\_subdepartments() </sdk/scopes/cpp/unity.scopes.Department#ab17057cef9ce35f1302f5421a087c067>`__
+   `unity::scopes::Department::set\_subdepartments() </sdk/scopes/cpp/unity.scopes.Department/#ab17057cef9ce35f1302f5421a087c067>`_ 
    method.
 -  register the parent department with
-   `unity::scopes::SearchReply::register\_departments() </sdk/scopes/cpp/unity.scopes.SearchReply#a17fdd52a4a8b19d6f8e13e5d7f576344>`__.
+   `unity::scopes::SearchReply::register\_departments() </sdk/scopes/cpp/unity.scopes.SearchReply/#a17fdd52a4a8b19d6f8e13e5d7f576344>`_ .
 
 For example, assuming the user is visiting a "History" department in
 "Books", and "History" has sub-departments such as "World War Two" and
@@ -855,20 +852,20 @@ For example, assuming the user is visiting a "History" department in
 "History" may look like this:
 
 unity::scopes::Department::SPtr books =
-move(\ `unity::scopes::Department::create </sdk/scopes/cpp/unity.scopes.Department#a11a3b8e9a3317f963d4bc9f46f79922b>`__\ ("books",
+move(\ `unity::scopes::Department::create </sdk/scopes/cpp/unity.scopes.Department/#a11a3b8e9a3317f963d4bc9f46f79922b>`_ \ ("books",
 query, "Books")); // the parent of "History"
 
 unity::scopes::Department::SPtr history =
-move(\ `unity::scopes::Department::create </sdk/scopes/cpp/unity.scopes.Department#a11a3b8e9a3317f963d4bc9f46f79922b>`__\ ("history",
+move(\ `unity::scopes::Department::create </sdk/scopes/cpp/unity.scopes.Department/#a11a3b8e9a3317f963d4bc9f46f79922b>`_ \ ("history",
 query, "History"));
 
-`unity::scopes::DepartmentList </sdk/scopes/cpp/unity.scopes#ab8effc4ea05a59f2ddea896833f07231>`__
+:ref:`unity::scopes::DepartmentList <sdk_unity_scopes#ab8effc4ea05a59f2ddea896833f07231>`
 history\_depts({
 
-move(\ `unity::scopes::Department::create </sdk/scopes/cpp/unity.scopes.Department#a11a3b8e9a3317f963d4bc9f46f79922b>`__\ ("ww2",
+move(\ `unity::scopes::Department::create </sdk/scopes/cpp/unity.scopes.Department/#a11a3b8e9a3317f963d4bc9f46f79922b>`_ \ ("ww2",
 query, "World War Two")),
 
-move(\ `unity::scopes::Department::create </sdk/scopes/cpp/unity.scopes.Department#a11a3b8e9a3317f963d4bc9f46f79922b>`__\ ("ancient",
+move(\ `unity::scopes::Department::create </sdk/scopes/cpp/unity.scopes.Department/#a11a3b8e9a3317f963d4bc9f46f79922b>`_ \ ("ancient",
 query, "Ancient"))});
 
 history->set\_subdepartments(history\_depts);
@@ -878,7 +875,7 @@ books->set\_subdepartments({history});
 reply->register\_departments(books);
 
 Current department should be the department returned by
-`unity::scopes::CannedQuery::department\_id() </sdk/scopes/cpp/unity.scopes.CannedQuery#a61351960149bb4c0840f020c4e645f66>`__.
+`unity::scopes::CannedQuery::department\_id() </sdk/scopes/cpp/unity.scopes.CannedQuery/#a61351960149bb4c0840f020c4e645f66>`_ .
 Empty department id denotes the root deparment.
 
 Parameters

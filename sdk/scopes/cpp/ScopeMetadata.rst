@@ -1,5 +1,9 @@
+.. _sdk_scopemetadata:
+ScopeMetadata
+=============
+
 Holds scope attributes such as name, description, icon etc.
-`More... </sdk/scopes/cpp/unity.scopes.ScopeMetadata#details>`__
+`More... </sdk/scopes/cpp/unity.scopes.ScopeMetadata/#details>`_ 
 
 ``#include <unity/scopes/ScopeMetadata.h>``
 
@@ -8,7 +12,7 @@ Holds scope attributes such as name, description, icon etc.
 
        \ enum  
 
-`ResultsTtlType </sdk/scopes/cpp/unity.scopes.ScopeMetadata#a6fb29deb86215b969a721b9c67328eeb>`__
+`ResultsTtlType </sdk/scopes/cpp/unity.scopes.ScopeMetadata/#a6fb29deb86215b969a721b9c67328eeb>`_ 
 { **None**, **Small**, **Medium**, **Large** }
 
  
@@ -23,7 +27,7 @@ Holds scope attributes such as name, description, icon etc.
 
 std::string 
 
-`scope\_id </sdk/scopes/cpp/unity.scopes.ScopeMetadata#abc13282db1a0d899e6a1daf2a40beba8>`__
+`scope\_id </sdk/scopes/cpp/unity.scopes.ScopeMetadata/#abc13282db1a0d899e6a1daf2a40beba8>`_ 
 () const
 
  
@@ -32,9 +36,9 @@ std::string 
 
  
 
-`ScopeProxy </sdk/scopes/cpp/unity.scopes#a94db15da410f8419e4da711db842aaae>`__ 
+:ref:`ScopeProxy <sdk_unity_scopes#a94db15da410f8419e4da711db842aaae>` 
 
-`proxy </sdk/scopes/cpp/unity.scopes.ScopeMetadata#a2d3a7700ed04e0f4b6ccb054d869d8c2>`__
+`proxy </sdk/scopes/cpp/unity.scopes.ScopeMetadata/#a2d3a7700ed04e0f4b6ccb054d869d8c2>`_ 
 () const
 
  
@@ -45,7 +49,7 @@ std::string 
 
 std::string 
 
-`display\_name </sdk/scopes/cpp/unity.scopes.ScopeMetadata#a7aca280ea8e8b1a96ac24b8f7efabfe8>`__
+`display\_name </sdk/scopes/cpp/unity.scopes.ScopeMetadata/#a7aca280ea8e8b1a96ac24b8f7efabfe8>`_ 
 () const
 
  
@@ -56,7 +60,7 @@ std::string 
 
 std::string 
 
-`description </sdk/scopes/cpp/unity.scopes.ScopeMetadata#adc16d2c66411956f96a6ba3f0b33d811>`__
+`description </sdk/scopes/cpp/unity.scopes.ScopeMetadata/#adc16d2c66411956f96a6ba3f0b33d811>`_ 
 () const
 
  
@@ -67,7 +71,7 @@ std::string 
 
 std::string 
 
-`author </sdk/scopes/cpp/unity.scopes.ScopeMetadata#a67465b69a72c548c1c46919dff6809d7>`__
+`author </sdk/scopes/cpp/unity.scopes.ScopeMetadata/#a67465b69a72c548c1c46919dff6809d7>`_ 
 () const
 
  
@@ -78,7 +82,7 @@ std::string 
 
 std::string 
 
-`art </sdk/scopes/cpp/unity.scopes.ScopeMetadata#aabeec6ec7dad68309af95c5a1731673c>`__
+`art </sdk/scopes/cpp/unity.scopes.ScopeMetadata/#aabeec6ec7dad68309af95c5a1731673c>`_ 
 () const
 
  
@@ -89,7 +93,7 @@ std::string 
 
 std::string 
 
-`icon </sdk/scopes/cpp/unity.scopes.ScopeMetadata#af6d6753b013551a2d465a21f8f8bf131>`__
+`icon </sdk/scopes/cpp/unity.scopes.ScopeMetadata/#af6d6753b013551a2d465a21f8f8bf131>`_ 
 () const
 
  
@@ -100,7 +104,7 @@ std::string 
 
 std::string 
 
-`search\_hint </sdk/scopes/cpp/unity.scopes.ScopeMetadata#a5c8ae76986842475d4eaf4d2304f6143>`__
+`search\_hint </sdk/scopes/cpp/unity.scopes.ScopeMetadata/#a5c8ae76986842475d4eaf4d2304f6143>`_ 
 () const
 
  
@@ -111,7 +115,7 @@ std::string 
 
 std::string 
 
-`hot\_key </sdk/scopes/cpp/unity.scopes.ScopeMetadata#abdeacf5f5dbdb8c75b5a2cbc32e80d82>`__
+`hot\_key </sdk/scopes/cpp/unity.scopes.ScopeMetadata/#abdeacf5f5dbdb8c75b5a2cbc32e80d82>`_ 
 () const
 
  
@@ -122,7 +126,7 @@ std::string 
 
 bool 
 
-`invisible </sdk/scopes/cpp/unity.scopes.ScopeMetadata#a24360dffb0183b75e064148d5952fdcb>`__
+`invisible </sdk/scopes/cpp/unity.scopes.ScopeMetadata/#a24360dffb0183b75e064148d5952fdcb>`_ 
 () const
 
  
@@ -131,9 +135,9 @@ bool 
 
  
 
-`VariantMap </sdk/scopes/cpp/unity.scopes#ad5d8ccfa11a327fca6f3e4cee11f4c10>`__ 
+:ref:`VariantMap <sdk_unity_scopes#ad5d8ccfa11a327fca6f3e4cee11f4c10>` 
 
-`appearance\_attributes </sdk/scopes/cpp/unity.scopes.ScopeMetadata#a5929e9ed85eabc03a1bd2324a1234fd6>`__
+`appearance\_attributes </sdk/scopes/cpp/unity.scopes.ScopeMetadata/#a5929e9ed85eabc03a1bd2324a1234fd6>`_ 
 () const
 
  
@@ -144,7 +148,7 @@ bool 
 
 std::string 
 
-`scope\_directory </sdk/scopes/cpp/unity.scopes.ScopeMetadata#a6c4592204ef51a8a6eec2f6cc65ba8cb>`__
+`scope\_directory </sdk/scopes/cpp/unity.scopes.ScopeMetadata/#a6c4592204ef51a8a6eec2f6cc65ba8cb>`_ 
 () const
 
  
@@ -153,9 +157,9 @@ std::string 
 
  
 
-`VariantMap </sdk/scopes/cpp/unity.scopes#ad5d8ccfa11a327fca6f3e4cee11f4c10>`__ 
+:ref:`VariantMap <sdk_unity_scopes#ad5d8ccfa11a327fca6f3e4cee11f4c10>` 
 
-`serialize </sdk/scopes/cpp/unity.scopes.ScopeMetadata#af2aaf529613cd41a1a9a3895271eab32>`__
+`serialize </sdk/scopes/cpp/unity.scopes.ScopeMetadata/#af2aaf529613cd41a1a9a3895271eab32>`_ 
 () const
 
  
@@ -164,9 +168,9 @@ std::string 
 
  
 
-`ResultsTtlType </sdk/scopes/cpp/unity.scopes.ScopeMetadata#a6fb29deb86215b969a721b9c67328eeb>`__ 
+`ResultsTtlType </sdk/scopes/cpp/unity.scopes.ScopeMetadata/#a6fb29deb86215b969a721b9c67328eeb>`_  
 
-`results\_ttl\_type </sdk/scopes/cpp/unity.scopes.ScopeMetadata#aab63ca25ab0e3ff312908e07d3334ae0>`__
+`results\_ttl\_type </sdk/scopes/cpp/unity.scopes.ScopeMetadata/#aab63ca25ab0e3ff312908e07d3334ae0>`_ 
 () const
 
  
@@ -175,9 +179,9 @@ std::string 
 
  
 
-`VariantArray </sdk/scopes/cpp/unity.scopes#aa3bf32d584efd902bca79698a07dd934>`__ 
+:ref:`VariantArray <sdk_unity_scopes#aa3bf32d584efd902bca79698a07dd934>` 
 
-`settings\_definitions </sdk/scopes/cpp/unity.scopes.ScopeMetadata#a6351dda2c91889a06f0ec31e669ab385>`__
+`settings\_definitions </sdk/scopes/cpp/unity.scopes.ScopeMetadata/#a6351dda2c91889a06f0ec31e669ab385>`_ 
 () const
 
  
@@ -188,7 +192,7 @@ std::string 
 
 bool 
 
-`location\_data\_needed </sdk/scopes/cpp/unity.scopes.ScopeMetadata#a688ff4dbec4f71d8b6bcd3b0879b737b>`__
+`location\_data\_needed </sdk/scopes/cpp/unity.scopes.ScopeMetadata/#a688ff4dbec4f71d8b6bcd3b0879b737b>`_ 
 () const
 
  
@@ -199,7 +203,7 @@ bool 
 
 std::vector< std::string > 
 
-`child\_scope\_ids </sdk/scopes/cpp/unity.scopes.ScopeMetadata#ae804c65fc5a6a3fdf85d6c2a0280c3af>`__
+`child\_scope\_ids </sdk/scopes/cpp/unity.scopes.ScopeMetadata/#ae804c65fc5a6a3fdf85d6c2a0280c3af>`_ 
 () const
 
  
@@ -210,7 +214,7 @@ std::vector< std::string > 
 
 int 
 
-`version </sdk/scopes/cpp/unity.scopes.ScopeMetadata#ac7a2cf80883ad3de1d726728fc0b8e72>`__
+`version </sdk/scopes/cpp/unity.scopes.ScopeMetadata/#ac7a2cf80883ad3de1d726728fc0b8e72>`_ 
 () const
 
  
@@ -221,7 +225,7 @@ int 
 
 std::set< std::string > 
 
-`keywords </sdk/scopes/cpp/unity.scopes.ScopeMetadata#ad195fd0f83a5afb2aaaf738ee237b045>`__
+`keywords </sdk/scopes/cpp/unity.scopes.ScopeMetadata/#ad195fd0f83a5afb2aaaf738ee237b045>`_ 
 () const
 
  
@@ -232,7 +236,7 @@ std::set< std::string > 
 
 bool 
 
-`is\_aggregator </sdk/scopes/cpp/unity.scopes.ScopeMetadata#a80ba381c5b402b3c4cd57f0f52271cab>`__
+`is\_aggregator </sdk/scopes/cpp/unity.scopes.ScopeMetadata/#a80ba381c5b402b3c4cd57f0f52271cab>`_ 
 () const
 
  
@@ -249,7 +253,7 @@ usual value semantics.
          
 
 **ScopeMetadata**
-(`ScopeMetadata </sdk/scopes/cpp/unity.scopes.ScopeMetadata/>`__ const
+(`ScopeMetadata </sdk/scopes/cpp/unity.scopes.ScopeMetadata/>`_  const
 &other)
 
  
@@ -257,24 +261,24 @@ usual value semantics.
          
 
 **ScopeMetadata**
-(`ScopeMetadata </sdk/scopes/cpp/unity.scopes.ScopeMetadata/>`__ &&)
+(`ScopeMetadata </sdk/scopes/cpp/unity.scopes.ScopeMetadata/>`_  &&)
 
  
 
-        `ScopeMetadata </sdk/scopes/cpp/unity.scopes.ScopeMetadata/>`__
+        `ScopeMetadata </sdk/scopes/cpp/unity.scopes.ScopeMetadata/>`_ 
 & 
 
 **operator=**
-(`ScopeMetadata </sdk/scopes/cpp/unity.scopes.ScopeMetadata/>`__ const
+(`ScopeMetadata </sdk/scopes/cpp/unity.scopes.ScopeMetadata/>`_  const
 &other)
 
  
 
-        `ScopeMetadata </sdk/scopes/cpp/unity.scopes.ScopeMetadata/>`__
+        `ScopeMetadata </sdk/scopes/cpp/unity.scopes.ScopeMetadata/>`_ 
 & 
 
 **operator=**
-(`ScopeMetadata </sdk/scopes/cpp/unity.scopes.ScopeMetadata/>`__ &&)
+(`ScopeMetadata </sdk/scopes/cpp/unity.scopes.ScopeMetadata/>`_  &&)
 
  
 
@@ -284,22 +288,21 @@ Detailed Description
 Holds scope attributes such as name, description, icon etc.
 
 The information stored by
-`ScopeMetadata </sdk/scopes/cpp/unity.scopes.ScopeMetadata/>`__ comes
+`ScopeMetadata </sdk/scopes/cpp/unity.scopes.ScopeMetadata/>`_  comes
 from the .ini file for the given scope (for local scopes) or is fetched
 from the remote server (for scopes running on Smart Scopes Server). Use
-`unity::scopes::Registry </sdk/scopes/cpp/unity.scopes.Registry/>`__ to
+`unity::scopes::Registry </sdk/scopes/cpp/unity.scopes.Registry/>`_  to
 get the metadata for a specific scope or all scopes.
 
 Member Function Documentation
 -----------------------------
 
 +----------------+----------------+----------------+----------------+----------------+
-| `VariantMap </ | (              |                | )              | const          |
-| sdk/scopes/cpp |                |                |                |                |
-| /unity.scopes# |                |                |                |                |
-| ad5d8ccfa11a32 |                |                |                |                |
-| 7fca6f3e4cee11 |                |                |                |                |
-| f4c10>`__      |                |                |                |                |
+| `VariantMap <s | (              |                | )              | const          |
+| dk_unity_scope |                |                |                |                |
+| s#ad5d8ccfa11a |                |                |                |                |
+| 327fca6f3e4cee |                |                |                |                |
+| 11f4c10>`_     |                |                |                |                |
 | unity::scopes: |                |                |                |                |
 | :ScopeMetadata |                |                |                |                |
 | ::appearance\_ |                |                |                |                |
@@ -309,7 +312,7 @@ Member Function Documentation
 Get optional display attributes.
 
 Appearance attributes define customized look of the scope in Scopes
-`Scope </sdk/scopes/cpp/unity.scopes.Scope/>`__.
+`Scope </sdk/scopes/cpp/unity.scopes.Scope/>`_ .
 
 Returns
     Map of attributes (may be empty)
@@ -462,12 +465,11 @@ Returns
     True if this scope wants location data.
 
 +----------------+----------------+----------------+----------------+----------------+
-| `ScopeProxy </ | (              |                | )              | const          |
-| sdk/scopes/cpp |                |                |                |                |
-| /unity.scopes# |                |                |                |                |
-| a94db15da410f8 |                |                |                |                |
-| 419e4da711db84 |                |                |                |                |
-| 2aaae>`__      |                |                |                |                |
+| `ScopeProxy <s | (              |                | )              | const          |
+| dk_unity_scope |                |                |                |                |
+| s#a94db15da410 |                |                |                |                |
+| f8419e4da711db |                |                |                |                |
+| 842aaae>`_     |                |                |                |                |
 | unity::scopes: |                |                |                |                |
 | :ScopeMetadata |                |                |                |                |
 | ::proxy        |                |                |                |                |
@@ -483,9 +485,9 @@ Returns
 | e </sdk/scopes |                |                |                |                |
 | /cpp/unity.sco |                |                |                |                |
 | pes.ScopeMetad |                |                |                |                |
-| ata#a6fb29deb8 |                |                |                |                |
-| 6215b969a721b9 |                |                |                |                |
-| c67328eeb>`__  |                |                |                |                |
+| ata/#a6fb29deb |                |                |                |                |
+| 86215b969a721b |                |                |                |                |
+| 9c67328eeb>`_  |                |                |                |                |
 | unity::scopes: |                |                |                |                |
 | :ScopeMetadata |                |                |                |                |
 | ::results\_ttl |                |                |                |                |
@@ -509,11 +511,11 @@ Get directory where scope config files and .so file lives.
 
 Note that the directory is not set for remote scopes; in such case this
 method throws
-`unity::scopes::NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/>`__.
+`unity::scopes::NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/>`_ .
 
 Exceptions
     +------------------------------------------------------------------------------------------+---------------------------+
-    | `unity::scopes::NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/>`__   | if directory is not set   |
+    | `unity::scopes::NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/>`_    | if directory is not set   |
     +------------------------------------------------------------------------------------------+---------------------------+
 
 Returns
@@ -544,12 +546,11 @@ Returns
     The search hint.
 
 +----------------+----------------+----------------+----------------+----------------+
-| `VariantMap </ | (              |                | )              | const          |
-| sdk/scopes/cpp |                |                |                |                |
-| /unity.scopes# |                |                |                |                |
-| ad5d8ccfa11a32 |                |                |                |                |
-| 7fca6f3e4cee11 |                |                |                |                |
-| f4c10>`__      |                |                |                |                |
+| `VariantMap <s | (              |                | )              | const          |
+| dk_unity_scope |                |                |                |                |
+| s#ad5d8ccfa11a |                |                |                |                |
+| 327fca6f3e4cee |                |                |                |                |
+| 11f4c10>`_     |                |                |                |                |
 | unity::scopes: |                |                |                |                |
 | :ScopeMetadata |                |                |                |                |
 | ::serialize    |                |                |                |                |
@@ -562,11 +563,10 @@ Returns
 
 +----------------+----------------+----------------+----------------+----------------+
 | `VariantArray  | (              |                | )              | const          |
-| </sdk/scopes/c |                |                |                |                |
-| pp/unity.scope |                |                |                |                |
-| s#aa3bf32d584e |                |                |                |                |
-| fd902bca79698a |                |                |                |                |
-| 07dd934>`__    |                |                |                |                |
+| <sdk_unity_sco |                |                |                |                |
+| pes#aa3bf32d58 |                |                |                |                |
+| 4efd902bca7969 |                |                |                |                |
+| 8a07dd934>`_   |                |                |                |                |
 | unity::scopes: |                |                |                |                |
 | :ScopeMetadata |                |                |                |                |
 | ::settings\_de |                |                |                |                |
@@ -581,7 +581,7 @@ Returns
 
 Exceptions
     +------------------------------------------------------------------------------------------+--------------------------------+
-    | `unity::scopes::NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/>`__   | if the scope has no settings   |
+    | `unity::scopes::NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/>`_    | if the scope has no settings   |
     +------------------------------------------------------------------------------------------+--------------------------------+
 
 See also

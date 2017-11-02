@@ -1,40 +1,43 @@
+.. _sdk_ubuntu_test_ubuntutestcase:
+Ubuntu.Test UbuntuTestCase
+==========================
+
 The UbuntuTestCase class expands the default TestCase class.
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import Ubuntu.Test .                 |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `TestCase </sdk/apps/qml/QtTest/Test |
-|                                      | Case/>`__                            |
+| Inherits:                            | :ref:`TestCase <sdk_qttest_testcase>`|
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`testUtil </sdk/apps/qml/Ubuntu.Test/UbuntuTestCase#testUtil-prop>`__****
-   : alias
+-  :ref:`testUtil <sdk_ubuntu_test_ubuntutestcase_testUtil-prop>` :
+   alias
 
 Methods
 -------
 
--  ****`centerOf </sdk/apps/qml/Ubuntu.Test/UbuntuTestCase#centerOf-method>`__****\ (*item*)
--  ****`findChild </sdk/apps/qml/Ubuntu.Test/UbuntuTestCase#findChild-method>`__****\ (*obj*,
+-  :ref:`centerOf <sdk_ubuntu_test_ubuntutestcase_centerOf-method>`\ (*item*)
+-  :ref:`findChild <sdk_ubuntu_test_ubuntutestcase_findChild-method>`\ (*obj*,
    *objectName*)
--  ****`findChildWithProperty </sdk/apps/qml/Ubuntu.Test/UbuntuTestCase#findChildWithProperty-method>`__****\ (*item*,
+-  :ref:`findChildWithProperty <sdk_ubuntu_test_ubuntutestcase_findChildWithProperty-method>`\ (*item*,
    *property*, *value*)
--  ****`findInvisibleChild </sdk/apps/qml/Ubuntu.Test/UbuntuTestCase#findInvisibleChild-method>`__****\ (*obj*,
+-  :ref:`findInvisibleChild <sdk_ubuntu_test_ubuntutestcase_findInvisibleChild-method>`\ (*obj*,
    *objectName*)
--  ****`flick </sdk/apps/qml/Ubuntu.Test/UbuntuTestCase#flick-method>`__****\ (*item*,
+-  :ref:`flick <sdk_ubuntu_test_ubuntutestcase_flick-method>`\ (*item*,
    *x*, *y*, *dx*, *dy*, *pressTimeout*, *steps*, *button*, *modifiers*,
    *delay*)
--  ****`mouseLongPress </sdk/apps/qml/Ubuntu.Test/UbuntuTestCase#mouseLongPress-method>`__****\ (*item*,
+-  :ref:`mouseLongPress <sdk_ubuntu_test_ubuntutestcase_mouseLongPress-method>`\ (*item*,
    *x*, *y*, *button*, *modifiers*, *delay*)
--  ****`mouseMoveSlowly </sdk/apps/qml/Ubuntu.Test/UbuntuTestCase#mouseMoveSlowly-method>`__****\ (*item*,
+-  :ref:`mouseMoveSlowly <sdk_ubuntu_test_ubuntutestcase_mouseMoveSlowly-method>`\ (*item*,
    *x*, *y*, *dx*, *dy*, *steps*, *stepdelay*, *buttons*)
--  ****`tryCompareFunction </sdk/apps/qml/Ubuntu.Test/UbuntuTestCase#tryCompareFunction-method>`__****\ (*func*,
+-  :ref:`tryCompareFunction <sdk_ubuntu_test_ubuntutestcase_tryCompareFunction-method>`\ (*func*,
    *expectedResult*, *timeout*)
--  ****`typeString </sdk/apps/qml/Ubuntu.Test/UbuntuTestCase#typeString-method>`__****\ (*string*)
--  ****`waitForHeaderAnimation </sdk/apps/qml/Ubuntu.Test/UbuntuTestCase#waitForHeaderAnimation-method>`__****\ (*mainView*)
--  ****`warningFormat </sdk/apps/qml/Ubuntu.Test/UbuntuTestCase#warningFormat-method>`__****\ (*line*,
+-  :ref:`typeString <sdk_ubuntu_test_ubuntutestcase_typeString-method>`\ (*string*)
+-  :ref:`waitForHeaderAnimation <sdk_ubuntu_test_ubuntutestcase_waitForHeaderAnimation-method>`\ (*mainView*)
+-  :ref:`warningFormat <sdk_ubuntu_test_ubuntutestcase_warningFormat-method>`\ (*line*,
    *column*, *message*)
 
 Detailed Description
@@ -42,12 +45,14 @@ Detailed Description
 
 **This component is under heavy development.**
 
-This class extends the default QML
-`TestCase </sdk/apps/qml/QtTest/TestCase/>`__ class which is available
-in `QtTest <http://doc.qt.io/qt-5/qttest-qmlmodule.html>`__ 1.0.
+This class extends the default QML :ref:`TestCase <sdk_qttest_testcase>`
+class which is available in
+`QtTest <http://doc.qt.io/qt-5/qttest-qmlmodule.html>`_  1.0.
 
 Property Documentation
 ----------------------
+
+.. _sdk_ubuntu_test_ubuntutestcase_testUtil-prop:
 
 +--------------------------------------------------------------------------+
 |        \ testUtil : alias                                                |
@@ -60,6 +65,8 @@ This property holds the inner TestUtil instance.
 Method Documentation
 --------------------
 
+.. _sdk_ubuntu_test_ubuntutestcase_centerOf-method:
+
 +--------------------------------------------------------------------------+
 |        \ centerOf( *item*)                                               |
 +--------------------------------------------------------------------------+
@@ -68,6 +75,8 @@ Returns the center point of the *item*.
 
 | 
 
+.. _sdk_ubuntu_test_ubuntutestcase_findChild-method:
+
 +--------------------------------------------------------------------------+
 |        \ findChild( *obj*, *objectName*)                                 |
 +--------------------------------------------------------------------------+
@@ -75,6 +84,8 @@ Returns the center point of the *item*.
 Find a child from the item based on the objectName.
 
 | 
+
+.. _sdk_ubuntu_test_ubuntutestcase_findChildWithProperty-method:
 
 +--------------------------------------------------------------------------+
 |        \ findChildWithProperty( *item*, *property*, *value*)             |
@@ -85,14 +96,18 @@ given *value*.
 
 | 
 
+.. _sdk_ubuntu_test_ubuntutestcase_findInvisibleChild-method:
+
 +--------------------------------------------------------------------------+
 |        \ findInvisibleChild( *obj*, *objectName*)                        |
 +--------------------------------------------------------------------------+
 
-Find a non-visual child such as
-`QtObject </sdk/apps/qml/QtQml/QtObject/>`__ based on objectName.
+Find a non-visual child such as :ref:`QtObject <sdk_qtqml_qtobject>` based
+on objectName.
 
 | 
+
+.. _sdk_ubuntu_test_ubuntutestcase_flick-method:
 
 +--------------------------------------------------------------------------+
 |        \ flick( *item*, *x*, *y*, *dx*, *dy*, *pressTimeout*, *steps*,   |
@@ -111,11 +126,13 @@ number the longer the flick will be. When a negative or zero value is
 given, the default of 5 move points will be used.
 
 **Note:** The function can be used to select a text in a
-`TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__ or
-`TextArea </sdk/apps/qml/Ubuntu.Components/TextArea/>`__ by specifying
-at least 400 millisecods to *pressTimeout*.
+:ref:`TextField <sdk_ubuntu_components_textfield>` or
+:ref:`TextArea <sdk_ubuntu_components_textarea>` by specifying at least 400
+millisecods to *pressTimeout*.
 
 | 
+
+.. _sdk_ubuntu_test_ubuntutestcase_mouseLongPress-method:
 
 +--------------------------------------------------------------------------+
 |        \ mouseLongPress( *item*, *x*, *y*, *button*, *modifiers*,        |
@@ -134,6 +151,8 @@ position, then the event will be delivered to the other item instead.
 
 | 
 
+.. _sdk_ubuntu_test_ubuntutestcase_mouseMoveSlowly-method:
+
 +--------------------------------------------------------------------------+
 |        \ mouseMoveSlowly( *item*, *x*, *y*, *dx*, *dy*, *steps*,         |
 | *stepdelay*, *buttons*)                                                  |
@@ -143,6 +162,8 @@ Move Mouse from x,y to distance of dx, dy divided to steps with a
 stepdelay (ms) and buttons.
 
 | 
+
+.. _sdk_ubuntu_test_ubuntutestcase_tryCompareFunction-method:
 
 +--------------------------------------------------------------------------+
 |        \ tryCompareFunction( *func*, *expectedResult*, *timeout*)        |
@@ -154,6 +175,8 @@ failure is generated)
 
 | 
 
+.. _sdk_ubuntu_test_ubuntutestcase_typeString-method:
+
 +--------------------------------------------------------------------------+
 |        \ typeString( *string*)                                           |
 +--------------------------------------------------------------------------+
@@ -163,15 +186,19 @@ characters
 
 | 
 
+.. _sdk_ubuntu_test_ubuntutestcase_waitForHeaderAnimation-method:
+
 +--------------------------------------------------------------------------+
 |        \ waitForHeaderAnimation( *mainView*)                             |
 +--------------------------------------------------------------------------+
 
 Wait for animations of the header and the style inside the header to
-finish. The `MainView </sdk/apps/qml/Ubuntu.Components/MainView/>`__
-that has the header that may animate must be passed as an argument.
+finish. The :ref:`MainView <sdk_ubuntu_components_mainview>` that has the
+header that may animate must be passed as an argument.
 
 | 
+
+.. _sdk_ubuntu_test_ubuntutestcase_warningFormat-method:
 
 +--------------------------------------------------------------------------+
 |        \ warningFormat( *line*, *column*, *message*)                     |

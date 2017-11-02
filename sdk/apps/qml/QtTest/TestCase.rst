@@ -1,3 +1,7 @@
+.. _sdk_qttest_testcase:
+QtTest TestCase
+===============
+
 Represents a unit test case
 
 +--------------------------------------+--------------------------------------+
@@ -5,74 +9,69 @@ Represents a unit test case
 +--------------------------------------+--------------------------------------+
 | Since:                               | Qt 4.8                               |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Item </sdk/apps/qml/QtQuick/Item/>` |
-|                                      | __                                   |
+| Inherits:                            | :ref:`Item <sdk_qtquick_item>`       |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`completed </sdk/apps/qml/QtTest/TestCase#completed-prop>`__****
-   : bool
--  ****`name </sdk/apps/qml/QtTest/TestCase#name-prop>`__**** : string
--  ****`optional </sdk/apps/qml/QtTest/TestCase#optional-prop>`__**** :
-   bool
--  ****`running </sdk/apps/qml/QtTest/TestCase#running-prop>`__**** :
-   bool
--  ****`when </sdk/apps/qml/QtTest/TestCase#when-prop>`__**** : bool
--  ****`windowShown </sdk/apps/qml/QtTest/TestCase#windowShown-prop>`__****
-   : bool
+-  :ref:`completed <sdk_qttest_testcase_completed-prop>` : bool
+-  :ref:`name <sdk_qttest_testcase_name-prop>` : string
+-  :ref:`optional <sdk_qttest_testcase_optional-prop>` : bool
+-  :ref:`running <sdk_qttest_testcase_running-prop>` : bool
+-  :ref:`when <sdk_qttest_testcase_when-prop>` : bool
+-  :ref:`windowShown <sdk_qttest_testcase_windowShown-prop>` : bool
 
 Methods
 -------
 
--  ****`cleanup </sdk/apps/qml/QtTest/TestCase#cleanup-method>`__****\ ()
--  ****`cleanupTestCase </sdk/apps/qml/QtTest/TestCase#cleanupTestCase-method>`__****\ ()
--  ****`compare </sdk/apps/qml/QtTest/TestCase#compare-method>`__****\ (*actual*,
+-  :ref:`cleanup <sdk_qttest_testcase_cleanup-method>`\ ()
+-  :ref:`cleanupTestCase <sdk_qttest_testcase_cleanupTestCase-method>`\ ()
+-  :ref:`compare <sdk_qttest_testcase_compare-method>`\ (*actual*,
    *expected*, *msg*)
--  ****`expectFail </sdk/apps/qml/QtTest/TestCase#expectFail-method>`__****\ (*tag*,
+-  :ref:`expectFail <sdk_qttest_testcase_expectFail-method>`\ (*tag*,
    *msg*)
--  ****`expectFailContinue </sdk/apps/qml/QtTest/TestCase#expectFailContinue-method>`__****\ (*tag*,
+-  :ref:`expectFailContinue <sdk_qttest_testcase_expectFailContinue-method>`\ (*tag*,
    *msg*)
--  ****`fail </sdk/apps/qml/QtTest/TestCase#fail-method>`__****\ (*msg*)
--  ****`findChild </sdk/apps/qml/QtTest/TestCase#findChild-method>`__****\ (*parent*,
+-  :ref:`fail <sdk_qttest_testcase_fail-method>`\ (*msg*)
+-  :ref:`findChild <sdk_qttest_testcase_findChild-method>`\ (*parent*,
    *objectName*)
--  ****`fuzzyCompare </sdk/apps/qml/QtTest/TestCase#fuzzyCompare-method>`__****\ (*actual*,
+-  :ref:`fuzzyCompare <sdk_qttest_testcase_fuzzyCompare-method>`\ (*actual*,
    *expected*, *delta*, *msg*)
--  ****`grabImage </sdk/apps/qml/QtTest/TestCase#grabImage-method>`__****\ (*item*)
--  ****`ignoreWarning </sdk/apps/qml/QtTest/TestCase#ignoreWarning-method>`__****\ (*msg*)
--  ****`init </sdk/apps/qml/QtTest/TestCase#init-method>`__****\ ()
--  ****`initTestCase </sdk/apps/qml/QtTest/TestCase#initTestCase-method>`__****\ ()
--  ****`keyClick </sdk/apps/qml/QtTest/TestCase#keyClick-method>`__****\ (*key*,
+-  :ref:`grabImage <sdk_qttest_testcase_grabImage-method>`\ (*item*)
+-  :ref:`ignoreWarning <sdk_qttest_testcase_ignoreWarning-method>`\ (*msg*)
+-  :ref:`init <sdk_qttest_testcase_init-method>`\ ()
+-  :ref:`initTestCase <sdk_qttest_testcase_initTestCase-method>`\ ()
+-  :ref:`keyClick <sdk_qttest_testcase_keyClick-method>`\ (*key*,
    *modifiers*, *delay*)
--  ****`keyPress </sdk/apps/qml/QtTest/TestCase#keyPress-method>`__****\ (*key*,
+-  :ref:`keyPress <sdk_qttest_testcase_keyPress-method>`\ (*key*,
    *modifiers*, *delay*)
--  ****`keyRelease </sdk/apps/qml/QtTest/TestCase#keyRelease-method>`__****\ (*key*,
+-  :ref:`keyRelease <sdk_qttest_testcase_keyRelease-method>`\ (*key*,
    *modifiers*, *delay*)
--  ****`mouseClick </sdk/apps/qml/QtTest/TestCase#mouseClick-method>`__****\ (*item*,
+-  :ref:`mouseClick <sdk_qttest_testcase_mouseClick-method>`\ (*item*,
    *x*, *y*, *button*, *modifiers*, *delay*)
--  ****`mouseDoubleClick </sdk/apps/qml/QtTest/TestCase#mouseDoubleClick-method>`__****\ (*item*,
+-  :ref:`mouseDoubleClick <sdk_qttest_testcase_mouseDoubleClick-method>`\ (*item*,
    *x*, *y*, *button*, *modifiers*, *delay*)
--  ****`mouseDrag </sdk/apps/qml/QtTest/TestCase#mouseDrag-method>`__****\ (*item*,
+-  :ref:`mouseDrag <sdk_qttest_testcase_mouseDrag-method>`\ (*item*,
    *x*, *y*, *dx*, *dy*, *button*, *modifiers*, *delay*)
--  ****`mouseMove </sdk/apps/qml/QtTest/TestCase#mouseMove-method>`__****\ (*item*,
+-  :ref:`mouseMove <sdk_qttest_testcase_mouseMove-method>`\ (*item*,
    *x*, *y*, *delay*, *buttons*)
--  ****`mousePress </sdk/apps/qml/QtTest/TestCase#mousePress-method>`__****\ (*item*,
+-  :ref:`mousePress <sdk_qttest_testcase_mousePress-method>`\ (*item*,
    *x*, *y*, *button*, *modifiers*, *delay*)
--  ****`mouseRelease </sdk/apps/qml/QtTest/TestCase#mouseRelease-method>`__****\ (*item*,
+-  :ref:`mouseRelease <sdk_qttest_testcase_mouseRelease-method>`\ (*item*,
    *x*, *y*, *button*, *modifiers*, *delay*)
--  ****`mouseWheel </sdk/apps/qml/QtTest/TestCase#mouseWheel-method>`__****\ (*item*,
+-  :ref:`mouseWheel <sdk_qttest_testcase_mouseWheel-method>`\ (*item*,
    *x*, *y*, *xDelta*, *yDelta*, *buttons*, *modifiers*, *delay*)
--  ****`skip </sdk/apps/qml/QtTest/TestCase#skip-method>`__****\ (*msg*)
--  ****`sleep </sdk/apps/qml/QtTest/TestCase#sleep-method>`__****\ (*ms*)
--  ****`tryCompare </sdk/apps/qml/QtTest/TestCase#tryCompare-method>`__****\ (*obj*,
+-  :ref:`skip <sdk_qttest_testcase_skip-method>`\ (*msg*)
+-  :ref:`sleep <sdk_qttest_testcase_sleep-method>`\ (*ms*)
+-  :ref:`tryCompare <sdk_qttest_testcase_tryCompare-method>`\ (*obj*,
    *prop*, *value*, *timeout*, *msg*)
--  ****`verify </sdk/apps/qml/QtTest/TestCase#verify-method>`__****\ (*cond*,
+-  :ref:`verify <sdk_qttest_testcase_verify-method>`\ (*cond*,
    *msg*)
--  ****`wait </sdk/apps/qml/QtTest/TestCase#wait-method>`__****\ (*ms*)
--  ****`waitForRendering </sdk/apps/qml/QtTest/TestCase#waitForRendering-method>`__****\ (*item*,
+-  :ref:`wait <sdk_qttest_testcase_wait-method>`\ (*ms*)
+-  :ref:`waitForRendering <sdk_qttest_testcase_waitForRendering-method>`\ (*item*,
    *timeout*)
--  ****`warn </sdk/apps/qml/QtTest/TestCase#warn-method>`__****\ (*msg*)
+-  :ref:`warn <sdk_qttest_testcase_warn-method>`\ (*msg*)
 
 Detailed Description
 --------------------
@@ -81,7 +80,7 @@ Introduction to QML test cases
 ------------------------------
 
 Test cases are written as JavaScript functions within a
-`TestCase </sdk/apps/qml/QtTest/TestCase/>`__ type:
+:ref:`TestCase <sdk_qttest_testcase>` type:
 
 .. code:: cpp
 
@@ -98,12 +97,12 @@ Test cases are written as JavaScript functions within a
     }
 
 Functions whose names start with "test\_" are treated as test cases to
-be executed. The `name </sdk/apps/qml/QtTest/TestCase#name-prop>`__
-property is used to prefix the functions in the output:
+be executed. The :ref:`name <sdk_qttest_testcase#name-prop>` property is
+used to prefix the functions in the output:
 
 .. code:: cpp
 
-    ********* Start testing of MathTests *********
+    ***** Start testing of MathTests *****
     Config: Using QTest library 4.7.2, Qt 4.7.2
     PASS   : MathTests::initTestCase()
     FAIL!  : MathTests::test_fail() 2 + 2 = 5
@@ -113,7 +112,7 @@ property is used to prefix the functions in the output:
     PASS   : MathTests::test_math()
     PASS   : MathTests::cleanupTestCase()
     Totals: 3 passed, 1 failed, 0 skipped
-    ********* Finished testing of MathTests *********
+    ***** Finished testing of MathTests *****
 
 Because of the way JavaScript properties work, the order in which the
 test functions are found is unpredictable. To assist with
@@ -121,11 +120,10 @@ predictability, the test framework will sort the functions on ascending
 order of name. This can help when there are two tests that must be run
 in order.
 
-Multiple `TestCase </sdk/apps/qml/QtTest/TestCase/>`__ types can be
-supplied. The test program will exit once they have all completed. If a
-test case doesn't need to run (because a precondition has failed), then
-`optional </sdk/apps/qml/QtTest/TestCase#optional-prop>`__ can be set to
-true.
+Multiple :ref:`TestCase <sdk_qttest_testcase>` types can be supplied. The
+test program will exit once they have all completed. If a test case
+doesn't need to run (because a precondition has failed), then
+:ref:`optional <sdk_qttest_testcase#optional-prop>` can be set to true.
 
 Data-driven tests
 -----------------
@@ -133,7 +131,7 @@ Data-driven tests
 Table data can be provided to a test using a function name that ends
 with "\_data". Alternatively, the ``init_data()`` function can be used
 to provide default test data for all test functions in a
-`TestCase </sdk/apps/qml/QtTest/TestCase/>`__ type:
+:ref:`TestCase <sdk_qttest_testcase>` type:
 
 .. code:: cpp
 
@@ -199,12 +197,12 @@ function name with "benchmark\_once\_".
 Simulating keyboard and mouse events
 ------------------------------------
 
-The `keyPress() </sdk/apps/qml/QtTest/TestCase#keyPress-method>`__,
-`keyRelease() </sdk/apps/qml/QtTest/TestCase#keyRelease-method>`__, and
-`keyClick() </sdk/apps/qml/QtTest/TestCase#keyClick-method>`__ methods
-can be used to simulate keyboard events within unit tests. The events
-are delivered to the currently focused QML item. You can pass either a
-Qt.Key enum value or a latin1 char (string of length one)
+The :ref:`keyPress() <sdk_qttest_testcase#keyPress-method>`,
+:ref:`keyRelease() <sdk_qttest_testcase#keyRelease-method>`, and
+:ref:`keyClick() <sdk_qttest_testcase#keyClick-method>` methods can be used
+to simulate keyboard events within unit tests. The events are delivered
+to the currently focused QML item. You can pass either a Qt.Key enum
+value or a latin1 char (string of length one)
 
 .. code:: cpp
 
@@ -222,24 +220,26 @@ Qt.Key enum value or a latin1 char (string of length one)
         }
     }
 
-The `mousePress() </sdk/apps/qml/QtTest/TestCase#mousePress-method>`__,
-`mouseRelease() </sdk/apps/qml/QtTest/TestCase#mouseRelease-method>`__,
-`mouseClick() </sdk/apps/qml/QtTest/TestCase#mouseClick-method>`__,
-`mouseDoubleClick() </sdk/apps/qml/QtTest/TestCase#mouseDoubleClick-method>`__,
-and `mouseMove() </sdk/apps/qml/QtTest/TestCase#mouseMove-method>`__
-methods can be used to simulate mouse events in a similar fashion.
+The :ref:`mousePress() <sdk_qttest_testcase#mousePress-method>`,
+:ref:`mouseRelease() <sdk_qttest_testcase#mouseRelease-method>`,
+:ref:`mouseClick() <sdk_qttest_testcase#mouseClick-method>`,
+:ref:`mouseDoubleClick() <sdk_qttest_testcase#mouseDoubleClick-method>`,
+and :ref:`mouseMove() <sdk_qttest_testcase#mouseMove-method>` methods can
+be used to simulate mouse events in a similar fashion.
 
 **Note:** keyboard and mouse events can only be delivered once the main
 window has been shown. Attempts to deliver events before then will fail.
-Use the `when </sdk/apps/qml/QtTest/TestCase#when-prop>`__ and
-`windowShown </sdk/apps/qml/QtTest/TestCase#windowShown-prop>`__
-properties to track when the main window has been shown.
+Use the :ref:`when <sdk_qttest_testcase#when-prop>` and
+:ref:`windowShown <sdk_qttest_testcase#windowShown-prop>` properties to
+track when the main window has been shown.
 
-**See also** `SignalSpy </sdk/apps/qml/QtTest/SignalSpy/>`__ and Qt
-Quick Test Reference Documentation.
+**See also** :ref:`SignalSpy <sdk_qttest_signalspy>` and Qt Quick Test
+Reference Documentation.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qttest_testcase_completed-prop:
 
 +--------------------------------------------------------------------------+
 |        \ completed : bool                                                |
@@ -249,10 +249,12 @@ This property will be set to true once the test case has completed
 execution. Test cases are only executed once. The initial value is
 false.
 
-**See also** `running </sdk/apps/qml/QtTest/TestCase#running-prop>`__
-and `when </sdk/apps/qml/QtTest/TestCase#when-prop>`__.
+**See also** :ref:`running <sdk_qttest_testcase#running-prop>` and
+:ref:`when <sdk_qttest_testcase#when-prop>`.
 
 | 
+
+.. _sdk_qttest_testcase_name-prop:
 
 +--------------------------------------------------------------------------+
 |        \ name : string                                                   |
@@ -270,15 +272,17 @@ The default is the empty string.
 
 | 
 
+.. _sdk_qttest_testcase_optional-prop:
+
 +--------------------------------------------------------------------------+
 |        \ optional : bool                                                 |
 +--------------------------------------------------------------------------+
 
-Multiple `TestCase </sdk/apps/qml/QtTest/TestCase/>`__ types can be
-supplied in a test application. The application will exit once they have
-all completed. If a test case does not need to run (because a
-precondition has failed), then this property can be set to true. The
-default value is false.
+Multiple :ref:`TestCase <sdk_qttest_testcase>` types can be supplied in a
+test application. The application will exit once they have all
+completed. If a test case does not need to run (because a precondition
+has failed), then this property can be set to true. The default value is
+false.
 
 .. code:: cpp
 
@@ -290,10 +294,12 @@ default value is false.
         }
     }
 
-**See also** `when </sdk/apps/qml/QtTest/TestCase#when-prop>`__ and
-`completed </sdk/apps/qml/QtTest/TestCase#completed-prop>`__.
+**See also** :ref:`when <sdk_qttest_testcase#when-prop>` and
+:ref:`completed <sdk_qttest_testcase#completed-prop>`.
 
 | 
+
+.. _sdk_qttest_testcase_running-prop:
 
 +--------------------------------------------------------------------------+
 |        \ running : bool                                                  |
@@ -303,11 +309,12 @@ This property will be set to true while the test case is running. The
 initial value is false, and the value will become false again once the
 test case completes.
 
-**See also**
-`completed </sdk/apps/qml/QtTest/TestCase#completed-prop>`__ and
-`when </sdk/apps/qml/QtTest/TestCase#when-prop>`__.
+**See also** :ref:`completed <sdk_qttest_testcase#completed-prop>` and
+:ref:`when <sdk_qttest_testcase#when-prop>`.
 
 | 
+
+.. _sdk_qttest_testcase_when-prop:
 
 +--------------------------------------------------------------------------+
 |        \ when : bool                                                     |
@@ -339,15 +346,16 @@ test is run when the user presses the mouse button:
     }
 
 The test application will exit once all
-`TestCase </sdk/apps/qml/QtTest/TestCase/>`__ types have been triggered
-and have run. The
-`optional </sdk/apps/qml/QtTest/TestCase#optional-prop>`__ property can
-be used to exclude a `TestCase </sdk/apps/qml/QtTest/TestCase/>`__ type.
+:ref:`TestCase <sdk_qttest_testcase>` types have been triggered and have
+run. The :ref:`optional <sdk_qttest_testcase#optional-prop>` property can
+be used to exclude a :ref:`TestCase <sdk_qttest_testcase>` type.
 
-**See also** `optional </sdk/apps/qml/QtTest/TestCase#optional-prop>`__
-and `completed </sdk/apps/qml/QtTest/TestCase#completed-prop>`__.
+**See also** :ref:`optional <sdk_qttest_testcase#optional-prop>` and
+:ref:`completed <sdk_qttest_testcase#completed-prop>`.
 
 | 
+
+.. _sdk_qttest_testcase_windowShown-prop:
 
 +--------------------------------------------------------------------------+
 |        \ windowShown : bool                                              |
@@ -379,34 +387,40 @@ the window is shown.
 Method Documentation
 --------------------
 
+.. _sdk_qttest_testcase_cleanup-method:
+
 +--------------------------------------------------------------------------+
 |        \ cleanup()                                                       |
 +--------------------------------------------------------------------------+
 
 This function is called after each test function that is executed in the
-`TestCase </sdk/apps/qml/QtTest/TestCase/>`__ type. The default
-implementation does nothing. The application can provide its own
-implementation to perform cleanup after each test function.
+:ref:`TestCase <sdk_qttest_testcase>` type. The default implementation does
+nothing. The application can provide its own implementation to perform
+cleanup after each test function.
 
-**See also** `init() </sdk/apps/qml/QtTest/TestCase#init-method>`__ and
-`cleanupTestCase() </sdk/apps/qml/QtTest/TestCase#cleanupTestCase-method>`__.
+**See also** :ref:`init() <sdk_qttest_testcase#init-method>` and
+:ref:`cleanupTestCase() <sdk_qttest_testcase#cleanupTestCase-method>`.
 
 | 
+
+.. _sdk_qttest_testcase_cleanupTestCase-method:
 
 +--------------------------------------------------------------------------+
 |        \ cleanupTestCase()                                               |
 +--------------------------------------------------------------------------+
 
 This function is called after all other test functions in the
-`TestCase </sdk/apps/qml/QtTest/TestCase/>`__ type have completed. The
-default implementation does nothing. The application can provide its own
+:ref:`TestCase <sdk_qttest_testcase>` type have completed. The default
+implementation does nothing. The application can provide its own
 implementation to perform test case cleanup.
 
 **See also**
-`initTestCase() </sdk/apps/qml/QtTest/TestCase#initTestCase-method>`__
-and `cleanup() </sdk/apps/qml/QtTest/TestCase#cleanup-method>`__.
+:ref:`initTestCase() <sdk_qttest_testcase#initTestCase-method>` and
+:ref:`cleanup() <sdk_qttest_testcase#cleanup-method>`.
 
 | 
+
+.. _sdk_qttest_testcase_compare-method:
 
 +--------------------------------------------------------------------------+
 |        \ compare( *actual*, *expected*, *msg*)                           |
@@ -416,11 +430,12 @@ Fails the current test case if *actual* is not the same as *expected*,
 and displays the optional *message*. Similar to
 ``QCOMPARE(actual, expected)`` in C++.
 
-**See also**
-`tryCompare() </sdk/apps/qml/QtTest/TestCase#tryCompare-method>`__ and
-`fuzzyCompare </sdk/apps/qml/QtTest/TestCase#fuzzyCompare-method>`__.
+**See also** :ref:`tryCompare() <sdk_qttest_testcase#tryCompare-method>`
+and :ref:`fuzzyCompare <sdk_qttest_testcase#fuzzyCompare-method>`.
 
 | 
+
+.. _sdk_qttest_testcase_expectFail-method:
 
 +--------------------------------------------------------------------------+
 |        \ expectFail( *tag*, *msg*)                                       |
@@ -435,9 +450,11 @@ If the test is not data-driven, then *tag* must be set to the empty
 string.
 
 **See also**
-`expectFailContinue() </sdk/apps/qml/QtTest/TestCase#expectFailContinue-method>`__.
+:ref:`expectFailContinue() <sdk_qttest_testcase#expectFailContinue-method>`.
 
 | 
+
+.. _sdk_qttest_testcase_expectFailContinue-method:
 
 +--------------------------------------------------------------------------+
 |        \ expectFailContinue( *tag*, *msg*)                               |
@@ -450,10 +467,11 @@ the test. Similar to ``QEXPECT_FAIL(tag, message, Continue)`` in C++.
 If the test is not data-driven, then *tag* must be set to the empty
 string.
 
-**See also**
-`expectFail() </sdk/apps/qml/QtTest/TestCase#expectFail-method>`__.
+**See also** :ref:`expectFail() <sdk_qttest_testcase#expectFail-method>`.
 
 | 
+
+.. _sdk_qttest_testcase_fail-method:
 
 +--------------------------------------------------------------------------+
 |        \ fail( *msg*)                                                    |
@@ -463,6 +481,8 @@ Fails the current test case, with the optional *message*. Similar to
 ``QFAIL(message)`` in C++.
 
 | 
+
+.. _sdk_qttest_testcase_findChild-method:
 
 +--------------------------------------------------------------------------+
 |        \ findChild( *parent*, *objectName*)                              |
@@ -480,6 +500,8 @@ This QML method was introduced in Qt 5.4.
 
 | 
 
+.. _sdk_qttest_testcase_fuzzyCompare-method:
+
 +--------------------------------------------------------------------------+
 |        \ fuzzyCompare( *actual*, *expected*, *delta*, *msg*)             |
 +--------------------------------------------------------------------------+
@@ -494,11 +516,12 @@ This function can also be used for color comparisons if both the
 any of the differences for RGBA channel values are greater than *delta*,
 the test fails.
 
-**See also**
-`tryCompare() </sdk/apps/qml/QtTest/TestCase#tryCompare-method>`__ and
-`compare() </sdk/apps/qml/QtTest/TestCase#compare-method>`__.
+**See also** :ref:`tryCompare() <sdk_qttest_testcase#tryCompare-method>`
+and :ref:`compare() <sdk_qttest_testcase#compare-method>`.
 
 | 
+
+.. _sdk_qttest_testcase_grabImage-method:
 
 +--------------------------------------------------------------------------+
 |        \ grabImage( *item*)                                              |
@@ -527,6 +550,8 @@ The returned image object has the following methods:
 
 | 
 
+.. _sdk_qttest_testcase_ignoreWarning-method:
+
 +--------------------------------------------------------------------------+
 |        \ ignoreWarning( *msg*)                                           |
 +--------------------------------------------------------------------------+
@@ -536,39 +561,44 @@ warning will not be printed and the test passes. If the message does not
 occur, then the test will fail. Similar to
 ``QTest::ignoreMessage(QtWarningMsg, message)`` in C++.
 
-**See also** `warn() </sdk/apps/qml/QtTest/TestCase#warn-method>`__.
+**See also** :ref:`warn() <sdk_qttest_testcase#warn-method>`.
 
 | 
+
+.. _sdk_qttest_testcase_init-method:
 
 +--------------------------------------------------------------------------+
 |        \ init()                                                          |
 +--------------------------------------------------------------------------+
 
 This function is called before each test function that is executed in
-the `TestCase </sdk/apps/qml/QtTest/TestCase/>`__ type. The default
-implementation does nothing. The application can provide its own
-implementation to perform initialization before each test function.
+the :ref:`TestCase <sdk_qttest_testcase>` type. The default implementation
+does nothing. The application can provide its own implementation to
+perform initialization before each test function.
 
-**See also**
-`cleanup() </sdk/apps/qml/QtTest/TestCase#cleanup-method>`__ and
-`initTestCase() </sdk/apps/qml/QtTest/TestCase#initTestCase-method>`__.
+**See also** :ref:`cleanup() <sdk_qttest_testcase#cleanup-method>` and
+:ref:`initTestCase() <sdk_qttest_testcase#initTestCase-method>`.
 
 | 
+
+.. _sdk_qttest_testcase_initTestCase-method:
 
 +--------------------------------------------------------------------------+
 |        \ initTestCase()                                                  |
 +--------------------------------------------------------------------------+
 
 This function is called before any other test functions in the
-`TestCase </sdk/apps/qml/QtTest/TestCase/>`__ type. The default
-implementation does nothing. The application can provide its own
-implementation to perform test case initialization.
+:ref:`TestCase <sdk_qttest_testcase>` type. The default implementation does
+nothing. The application can provide its own implementation to perform
+test case initialization.
 
 **See also**
-`cleanupTestCase() </sdk/apps/qml/QtTest/TestCase#cleanupTestCase-method>`__
-and `init() </sdk/apps/qml/QtTest/TestCase#init-method>`__.
+:ref:`cleanupTestCase() <sdk_qttest_testcase#cleanupTestCase-method>` and
+:ref:`init() <sdk_qttest_testcase#init-method>`.
 
 | 
+
+.. _sdk_qttest_testcase_keyClick-method:
 
 +--------------------------------------------------------------------------+
 |        \ keyClick( *key*, *modifiers*, *delay*)                          |
@@ -578,11 +608,12 @@ Simulates clicking of *key* with an optional *modifier* on the currently
 focused item. If *delay* is larger than 0, the test will wait for
 *delay* milliseconds.
 
-**See also**
-`keyPress() </sdk/apps/qml/QtTest/TestCase#keyPress-method>`__ and
-`keyRelease() </sdk/apps/qml/QtTest/TestCase#keyRelease-method>`__.
+**See also** :ref:`keyPress() <sdk_qttest_testcase#keyPress-method>` and
+:ref:`keyRelease() <sdk_qttest_testcase#keyRelease-method>`.
 
 | 
+
+.. _sdk_qttest_testcase_keyPress-method:
 
 +--------------------------------------------------------------------------+
 |        \ keyPress( *key*, *modifiers*, *delay*)                          |
@@ -593,13 +624,14 @@ focused item. If *delay* is larger than 0, the test will wait for
 *delay* milliseconds.
 
 **Note:** At some point you should release the key using
-`keyRelease() </sdk/apps/qml/QtTest/TestCase#keyRelease-method>`__.
+:ref:`keyRelease() <sdk_qttest_testcase#keyRelease-method>`.
 
-**See also**
-`keyRelease() </sdk/apps/qml/QtTest/TestCase#keyRelease-method>`__ and
-`keyClick() </sdk/apps/qml/QtTest/TestCase#keyClick-method>`__.
+**See also** :ref:`keyRelease() <sdk_qttest_testcase#keyRelease-method>`
+and :ref:`keyClick() <sdk_qttest_testcase#keyClick-method>`.
 
 | 
+
+.. _sdk_qttest_testcase_keyRelease-method:
 
 +--------------------------------------------------------------------------+
 |        \ keyRelease( *key*, *modifiers*, *delay*)                        |
@@ -609,11 +641,12 @@ Simulates releasing a *key* with an optional *modifier* on the currently
 focused item. If *delay* is larger than 0, the test will wait for
 *delay* milliseconds.
 
-**See also**
-`keyPress() </sdk/apps/qml/QtTest/TestCase#keyPress-method>`__ and
-`keyClick() </sdk/apps/qml/QtTest/TestCase#keyClick-method>`__.
+**See also** :ref:`keyPress() <sdk_qttest_testcase#keyPress-method>` and
+:ref:`keyClick() <sdk_qttest_testcase#keyClick-method>`.
 
 | 
+
+.. _sdk_qttest_testcase_mouseClick-method:
 
 +--------------------------------------------------------------------------+
 |        \ mouseClick( *item*, *x*, *y*, *button*, *modifiers*, *delay*)   |
@@ -629,15 +662,16 @@ system of *item* into window co-ordinates and then delivered. If *item*
 is obscured by another item, or a child of *item* occupies that
 position, then the event will be delivered to the other item instead.
 
-**See also**
-`mousePress() </sdk/apps/qml/QtTest/TestCase#mousePress-method>`__,
-`mouseRelease() </sdk/apps/qml/QtTest/TestCase#mouseRelease-method>`__,
-`mouseDoubleClick() </sdk/apps/qml/QtTest/TestCase#mouseDoubleClick-method>`__,
-`mouseMove() </sdk/apps/qml/QtTest/TestCase#mouseMove-method>`__,
-`mouseDrag() </sdk/apps/qml/QtTest/TestCase#mouseDrag-method>`__, and
-`mouseWheel() </sdk/apps/qml/QtTest/TestCase#mouseWheel-method>`__.
+**See also** :ref:`mousePress() <sdk_qttest_testcase#mousePress-method>`,
+:ref:`mouseRelease() <sdk_qttest_testcase#mouseRelease-method>`,
+:ref:`mouseDoubleClick() <sdk_qttest_testcase#mouseDoubleClick-method>`,
+:ref:`mouseMove() <sdk_qttest_testcase#mouseMove-method>`,
+:ref:`mouseDrag() <sdk_qttest_testcase#mouseDrag-method>`, and
+:ref:`mouseWheel() <sdk_qttest_testcase#mouseWheel-method>`.
 
 | 
+
+.. _sdk_qttest_testcase_mouseDoubleClick-method:
 
 +--------------------------------------------------------------------------+
 |        \ mouseDoubleClick( *item*, *x*, *y*, *button*, *modifiers*,      |
@@ -654,15 +688,16 @@ system of *item* into window co-ordinates and then delivered. If *item*
 is obscured by another item, or a child of *item* occupies that
 position, then the event will be delivered to the other item instead.
 
-**See also**
-`mousePress() </sdk/apps/qml/QtTest/TestCase#mousePress-method>`__,
-`mouseRelease() </sdk/apps/qml/QtTest/TestCase#mouseRelease-method>`__,
-`mouseClick() </sdk/apps/qml/QtTest/TestCase#mouseClick-method>`__,
-`mouseMove() </sdk/apps/qml/QtTest/TestCase#mouseMove-method>`__,
-`mouseDrag() </sdk/apps/qml/QtTest/TestCase#mouseDrag-method>`__, and
-`mouseWheel() </sdk/apps/qml/QtTest/TestCase#mouseWheel-method>`__.
+**See also** :ref:`mousePress() <sdk_qttest_testcase#mousePress-method>`,
+:ref:`mouseRelease() <sdk_qttest_testcase#mouseRelease-method>`,
+:ref:`mouseClick() <sdk_qttest_testcase#mouseClick-method>`,
+:ref:`mouseMove() <sdk_qttest_testcase#mouseMove-method>`,
+:ref:`mouseDrag() <sdk_qttest_testcase#mouseDrag-method>`, and
+:ref:`mouseWheel() <sdk_qttest_testcase#mouseWheel-method>`.
 
 | 
+
+.. _sdk_qttest_testcase_mouseDrag-method:
 
 +--------------------------------------------------------------------------+
 |        \ mouseDrag( *item*, *x*, *y*, *dx*, *dy*, *button*, *modifiers*, |
@@ -682,18 +717,19 @@ position, then the event will be delivered to the other item instead.
 
 Note: this method does not imply a drop action, to make a drop, an
 additional
-`mouseRelease </sdk/apps/qml/QtTest/TestCase#mouseRelease-method>`__\ (item,
-x + dx, y + dy) is needed.
+:ref:`mouseRelease <sdk_qttest_testcase#mouseRelease-method>`\ (item, x +
+dx, y + dy) is needed.
 
-**See also**
-`mousePress() </sdk/apps/qml/QtTest/TestCase#mousePress-method>`__,
-`mouseClick() </sdk/apps/qml/QtTest/TestCase#mouseClick-method>`__,
-`mouseDoubleClick() </sdk/apps/qml/QtTest/TestCase#mouseDoubleClick-method>`__,
-`mouseMove() </sdk/apps/qml/QtTest/TestCase#mouseMove-method>`__,
-`mouseRelease() </sdk/apps/qml/QtTest/TestCase#mouseRelease-method>`__,
-and `mouseWheel() </sdk/apps/qml/QtTest/TestCase#mouseWheel-method>`__.
+**See also** :ref:`mousePress() <sdk_qttest_testcase#mousePress-method>`,
+:ref:`mouseClick() <sdk_qttest_testcase#mouseClick-method>`,
+:ref:`mouseDoubleClick() <sdk_qttest_testcase#mouseDoubleClick-method>`,
+:ref:`mouseMove() <sdk_qttest_testcase#mouseMove-method>`,
+:ref:`mouseRelease() <sdk_qttest_testcase#mouseRelease-method>`, and
+:ref:`mouseWheel() <sdk_qttest_testcase#mouseWheel-method>`.
 
 | 
+
+.. _sdk_qttest_testcase_mouseMove-method:
 
 +--------------------------------------------------------------------------+
 |        \ mouseMove( *item*, *x*, *y*, *delay*, *buttons*)                |
@@ -708,15 +744,16 @@ system of *item* into window co-ordinates and then delivered. If *item*
 is obscured by another item, or a child of *item* occupies that
 position, then the event will be delivered to the other item instead.
 
-**See also**
-`mousePress() </sdk/apps/qml/QtTest/TestCase#mousePress-method>`__,
-`mouseRelease() </sdk/apps/qml/QtTest/TestCase#mouseRelease-method>`__,
-`mouseClick() </sdk/apps/qml/QtTest/TestCase#mouseClick-method>`__,
-`mouseDoubleClick() </sdk/apps/qml/QtTest/TestCase#mouseDoubleClick-method>`__,
-`mouseDrag() </sdk/apps/qml/QtTest/TestCase#mouseDrag-method>`__, and
-`mouseWheel() </sdk/apps/qml/QtTest/TestCase#mouseWheel-method>`__.
+**See also** :ref:`mousePress() <sdk_qttest_testcase#mousePress-method>`,
+:ref:`mouseRelease() <sdk_qttest_testcase#mouseRelease-method>`,
+:ref:`mouseClick() <sdk_qttest_testcase#mouseClick-method>`,
+:ref:`mouseDoubleClick() <sdk_qttest_testcase#mouseDoubleClick-method>`,
+:ref:`mouseDrag() <sdk_qttest_testcase#mouseDrag-method>`, and
+:ref:`mouseWheel() <sdk_qttest_testcase#mouseWheel-method>`.
 
 | 
+
+.. _sdk_qttest_testcase_mousePress-method:
 
 +--------------------------------------------------------------------------+
 |        \ mousePress( *item*, *x*, *y*, *button*, *modifiers*, *delay*)   |
@@ -733,14 +770,16 @@ is obscured by another item, or a child of *item* occupies that
 position, then the event will be delivered to the other item instead.
 
 **See also**
-`mouseRelease() </sdk/apps/qml/QtTest/TestCase#mouseRelease-method>`__,
-`mouseClick() </sdk/apps/qml/QtTest/TestCase#mouseClick-method>`__,
-`mouseDoubleClick() </sdk/apps/qml/QtTest/TestCase#mouseDoubleClick-method>`__,
-`mouseMove() </sdk/apps/qml/QtTest/TestCase#mouseMove-method>`__,
-`mouseDrag() </sdk/apps/qml/QtTest/TestCase#mouseDrag-method>`__, and
-`mouseWheel() </sdk/apps/qml/QtTest/TestCase#mouseWheel-method>`__.
+:ref:`mouseRelease() <sdk_qttest_testcase#mouseRelease-method>`,
+:ref:`mouseClick() <sdk_qttest_testcase#mouseClick-method>`,
+:ref:`mouseDoubleClick() <sdk_qttest_testcase#mouseDoubleClick-method>`,
+:ref:`mouseMove() <sdk_qttest_testcase#mouseMove-method>`,
+:ref:`mouseDrag() <sdk_qttest_testcase#mouseDrag-method>`, and
+:ref:`mouseWheel() <sdk_qttest_testcase#mouseWheel-method>`.
 
 | 
+
+.. _sdk_qttest_testcase_mouseRelease-method:
 
 +--------------------------------------------------------------------------+
 |        \ mouseRelease( *item*, *x*, *y*, *button*, *modifiers*, *delay*) |
@@ -756,15 +795,16 @@ system of *item* into window co-ordinates and then delivered. If *item*
 is obscured by another item, or a child of *item* occupies that
 position, then the event will be delivered to the other item instead.
 
-**See also**
-`mousePress() </sdk/apps/qml/QtTest/TestCase#mousePress-method>`__,
-`mouseClick() </sdk/apps/qml/QtTest/TestCase#mouseClick-method>`__,
-`mouseDoubleClick() </sdk/apps/qml/QtTest/TestCase#mouseDoubleClick-method>`__,
-`mouseMove() </sdk/apps/qml/QtTest/TestCase#mouseMove-method>`__,
-`mouseDrag() </sdk/apps/qml/QtTest/TestCase#mouseDrag-method>`__, and
-`mouseWheel() </sdk/apps/qml/QtTest/TestCase#mouseWheel-method>`__.
+**See also** :ref:`mousePress() <sdk_qttest_testcase#mousePress-method>`,
+:ref:`mouseClick() <sdk_qttest_testcase#mouseClick-method>`,
+:ref:`mouseDoubleClick() <sdk_qttest_testcase#mouseDoubleClick-method>`,
+:ref:`mouseMove() <sdk_qttest_testcase#mouseMove-method>`,
+:ref:`mouseDrag() <sdk_qttest_testcase#mouseDrag-method>`, and
+:ref:`mouseWheel() <sdk_qttest_testcase#mouseWheel-method>`.
 
 | 
+
+.. _sdk_qttest_testcase_mouseWheel-method:
 
 +--------------------------------------------------------------------------+
 |        \ mouseWheel( *item*, *x*, *y*, *xDelta*, *yDelta*, *buttons*,    |
@@ -784,16 +824,17 @@ position, then the event will be delivered to the other item instead.
 The *xDelta* and *yDelta* contain the wheel rotation distance in eighths
 of a degree. see QWheelEvent::angleDelta() for more details.
 
-**See also**
-`mousePress() </sdk/apps/qml/QtTest/TestCase#mousePress-method>`__,
-`mouseClick() </sdk/apps/qml/QtTest/TestCase#mouseClick-method>`__,
-`mouseDoubleClick() </sdk/apps/qml/QtTest/TestCase#mouseDoubleClick-method>`__,
-`mouseMove() </sdk/apps/qml/QtTest/TestCase#mouseMove-method>`__,
-`mouseRelease() </sdk/apps/qml/QtTest/TestCase#mouseRelease-method>`__,
-`mouseDrag() </sdk/apps/qml/QtTest/TestCase#mouseDrag-method>`__, and
+**See also** :ref:`mousePress() <sdk_qttest_testcase#mousePress-method>`,
+:ref:`mouseClick() <sdk_qttest_testcase#mouseClick-method>`,
+:ref:`mouseDoubleClick() <sdk_qttest_testcase#mouseDoubleClick-method>`,
+:ref:`mouseMove() <sdk_qttest_testcase#mouseMove-method>`,
+:ref:`mouseRelease() <sdk_qttest_testcase#mouseRelease-method>`,
+:ref:`mouseDrag() <sdk_qttest_testcase#mouseDrag-method>`, and
 QWheelEvent::angleDelta().
 
 | 
+
+.. _sdk_qttest_testcase_skip-method:
 
 +--------------------------------------------------------------------------+
 |        \ skip( *msg*)                                                    |
@@ -805,16 +846,20 @@ is a data-driven test, then only the current row is skipped. Similar to
 
 | 
 
+.. _sdk_qttest_testcase_sleep-method:
+
 +--------------------------------------------------------------------------+
 |        \ sleep( *ms*)                                                    |
 +--------------------------------------------------------------------------+
 
 Sleeps for *ms* milliseconds without processing Qt events.
 
-**See also** `wait() </sdk/apps/qml/QtTest/TestCase#wait-method>`__ and
-`waitForRendering() </sdk/apps/qml/QtTest/TestCase#waitForRendering-method>`__.
+**See also** :ref:`wait() <sdk_qttest_testcase#wait-method>` and
+:ref:`waitForRendering() <sdk_qttest_testcase#waitForRendering-method>`.
 
 | 
+
+.. _sdk_qttest_testcase_tryCompare-method:
 
 +--------------------------------------------------------------------------+
 |        \ tryCompare( *obj*, *prop*, *value*, *timeout*, *msg*)           |
@@ -827,7 +872,7 @@ reached.
 
 This function is intended for testing applications where a property
 changes value based on asynchronous events. Use
-`compare() </sdk/apps/qml/QtTest/TestCase#compare-method>`__ for testing
+:ref:`compare() <sdk_qttest_testcase#compare-method>` for testing
 synchronous property changes.
 
 .. code:: cpp
@@ -838,14 +883,15 @@ synchronous property changes.
     compare(img.horizontalTileMode, BorderImage.Stretch)
     compare(img.verticalTileMode, BorderImage.Stretch)
 
-`SignalSpy::wait() </sdk/apps/qml/QtTest/SignalSpy#wait-method>`__
-provides an alternative method to wait for a signal to be emitted.
+:ref:`SignalSpy::wait() <sdk_qttest_signalspy#wait-method>` provides an
+alternative method to wait for a signal to be emitted.
 
-**See also**
-`compare() </sdk/apps/qml/QtTest/TestCase#compare-method>`__ and
-`SignalSpy::wait() </sdk/apps/qml/QtTest/SignalSpy#wait-method>`__.
+**See also** :ref:`compare() <sdk_qttest_testcase#compare-method>` and
+:ref:`SignalSpy::wait() <sdk_qttest_signalspy#wait-method>`.
 
 | 
+
+.. _sdk_qttest_testcase_verify-method:
 
 +--------------------------------------------------------------------------+
 |        \ verify( *cond*, *msg*)                                          |
@@ -857,17 +903,20 @@ optional *message*. Similar to ``QVERIFY(condition)`` or
 
 | 
 
+.. _sdk_qttest_testcase_wait-method:
+
 +--------------------------------------------------------------------------+
 |        \ wait( *ms*)                                                     |
 +--------------------------------------------------------------------------+
 
 Waits for *ms* milliseconds while processing Qt events.
 
-**See also** `sleep() </sdk/apps/qml/QtTest/TestCase#sleep-method>`__
-and
-`waitForRendering() </sdk/apps/qml/QtTest/TestCase#waitForRendering-method>`__.
+**See also** :ref:`sleep() <sdk_qttest_testcase#sleep-method>` and
+:ref:`waitForRendering() <sdk_qttest_testcase#waitForRendering-method>`.
 
 | 
+
+.. _sdk_qttest_testcase_waitForRendering-method:
 
 +--------------------------------------------------------------------------+
 |        \ waitForRendering( *item*, *timeout*)                            |
@@ -878,10 +927,12 @@ renderer. Returns true if ``item`` is rendered in *timeout*
 milliseconds, otherwise returns false. The default *timeout* value is
 5000.
 
-**See also** `sleep() </sdk/apps/qml/QtTest/TestCase#sleep-method>`__
-and `wait() </sdk/apps/qml/QtTest/TestCase#wait-method>`__.
+**See also** :ref:`sleep() <sdk_qttest_testcase#sleep-method>` and
+:ref:`wait() <sdk_qttest_testcase#wait-method>`.
 
 | 
+
+.. _sdk_qttest_testcase_warn-method:
 
 +--------------------------------------------------------------------------+
 |        \ warn( *msg*)                                                    |
@@ -891,6 +942,6 @@ Prints *message* as a warning message. Similar to ``QWARN(message)`` in
 C++.
 
 **See also**
-`ignoreWarning() </sdk/apps/qml/QtTest/TestCase#ignoreWarning-method>`__.
+:ref:`ignoreWarning() <sdk_qttest_testcase#ignoreWarning-method>`.
 
 | 

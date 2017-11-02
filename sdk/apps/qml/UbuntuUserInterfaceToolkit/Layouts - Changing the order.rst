@@ -1,13 +1,17 @@
+.. _sdk_ubuntuuserinterfacetoolkit_layouts_-_changing_the_order:
+UbuntuUserInterfaceToolkit Layouts - Changing the order
+=======================================================
+
 
 
 So far we have seen how to define the default layout, a conditional
 layout and how to place items into those.
 
 As mentioned in the
-`ConditionalLayout </sdk/apps/qml/Ubuntu.Layouts/ConditionalLayout/>`__
+:ref:`ConditionalLayout <sdk_ubuntu_layouts_conditionallayout>`
 documentation, items hosted by the container are laid out based on the
 order they are hosted by the
-`ItemLayout </sdk/apps/qml/Ubuntu.Layouts/ItemLayout/>`__.
+:ref:`ItemLayout <sdk_ubuntu_layouts_itemlayout>`.
 
 So let's change the order the buttons are laid out so that we have blue,
 red and green order.
@@ -55,7 +59,7 @@ Note that when resizing the window width to < 50 GU, you will get all
 your components back to their original (default) positions and anchors.
 
 `Layouts - Lay out a single item differently from
-others </sdk/apps/qml/UbuntuUserInterfaceToolkit/ubuntu-layouts4/>`__
+others </sdk/apps/qml/UbuntuUserInterfaceToolkit/ubuntu-layouts4/>`_ 
 
 .. |image0| image:: /media/sdk/apps/qml/ubuntu-layouts3/images/layout2.png
 

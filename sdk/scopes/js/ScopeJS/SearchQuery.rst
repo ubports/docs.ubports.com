@@ -1,3 +1,7 @@
+.. _sdk_scopejs_searchquery:
+ScopeJS SearchQuery
+===================
+
 
 Represents a particular query
 

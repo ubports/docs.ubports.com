@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_connectivity_networkingstatus:
+Ubuntu.Connectivity NetworkingStatus
+====================================
+
 Overall system networking status.
 
 +---------------------+------------+
@@ -7,13 +11,13 @@ Overall system networking status.
 Properties
 ----------
 
--  ****`limitations </sdk/apps/qml/Ubuntu.Connectivity/NetworkingStatus#limitations-prop>`__****
+-  :ref:`limitations <sdk_ubuntu_connectivity_networkingstatus_limitations-prop>`
    : Limitations
--  ****`limitedBandwith </sdk/apps/qml/Ubuntu.Connectivity/NetworkingStatus#limitedBandwith-prop>`__****
+-  :ref:`limitedBandwith <sdk_ubuntu_connectivity_networkingstatus_limitedBandwith-prop>`
    : bool
--  ****`online </sdk/apps/qml/Ubuntu.Connectivity/NetworkingStatus#online-prop>`__****
+-  :ref:`online <sdk_ubuntu_connectivity_networkingstatus_online-prop>`
    : bool
--  ****`status </sdk/apps/qml/Ubuntu.Connectivity/NetworkingStatus#status-prop>`__****
+-  :ref:`status <sdk_ubuntu_connectivity_networkingstatus_status-prop>`
    : Status
 
 Detailed Description
@@ -23,7 +27,7 @@ This is the top-level class for accessing networking information.
 
 This class inherits the Qt C++ ubuntu::connectivity::NetworkingStatus
 and provides two utility properties online and
-`limitedBandwith </sdk/apps/qml/Ubuntu.Connectivity/NetworkingStatus#limitedBandwith-prop>`__
+:ref:`limitedBandwith <sdk_ubuntu_connectivity_networkingstatus#limitedBandwith-prop>`
 for easier QML usage.
 
 This object is exposed as a singleton.
@@ -93,11 +97,15 @@ This object is exposed as a singleton.
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_connectivity_networkingstatus_limitations-prop:
+
 +--------------------------------------------------------------------------+
 |        \ limitations : Limitations                                       |
 +--------------------------------------------------------------------------+
 
 | 
+
+.. _sdk_ubuntu_connectivity_networkingstatus_limitedBandwith-prop:
 
 +--------------------------------------------------------------------------+
 |        \ limitedBandwith : bool                                          |
@@ -113,6 +121,8 @@ shorthand for C++:
 
 | 
 
+.. _sdk_ubuntu_connectivity_networkingstatus_online-prop:
+
 +--------------------------------------------------------------------------+
 |        \ online : bool                                                   |
 +--------------------------------------------------------------------------+
@@ -126,6 +136,8 @@ shorthand for C++:
     networkingStatus->status() == NetworkingStatus::Online
 
 | 
+
+.. _sdk_ubuntu_connectivity_networkingstatus_status-prop:
 
 +--------------------------------------------------------------------------+
 |        \ status : Status                                                 |

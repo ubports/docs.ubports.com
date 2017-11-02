@@ -1,14 +1,17 @@
+.. _sdk_ubuntu_components_orientationhelper:
+Ubuntu.Components OrientationHelper
+===================================
+
 The OrientationHelper automatically rotates its children following the
 orientation of the device.
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import Ubuntu.Components 1.3         |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Item </sdk/apps/qml/QtQuick/Item/>` |
-|                                      | __                                   |
+| Inherits:                            | :ref:`Item <sdk_qtquick_item>`       |
 +--------------------------------------+--------------------------------------+
 | Inherited By:                        | `PopupBase </sdk/apps/qml/Ubuntu.Com |
-|                                      | ponents/Popups.PopupBase/>`__.       |
+|                                      | ponents/Popups.PopupBase/>`_ .       |
 +--------------------------------------+--------------------------------------+
 
 -  Obsolete members
@@ -16,15 +19,15 @@ orientation of the device.
 Properties
 ----------
 
--  ****`anchorToKeyboard </sdk/apps/qml/Ubuntu.Components/OrientationHelper#anchorToKeyboard-prop>`__****
+-  :ref:`anchorToKeyboard <sdk_ubuntu_components_orientationhelper_anchorToKeyboard-prop>`
    : bool
--  ****`automaticOrientation </sdk/apps/qml/Ubuntu.Components/OrientationHelper#automaticOrientation-prop>`__****
+-  :ref:`automaticOrientation <sdk_ubuntu_components_orientationhelper_automaticOrientation-prop>`
    : bool
--  ****`orientationAngle </sdk/apps/qml/Ubuntu.Components/OrientationHelper#orientationAngle-prop>`__****
+-  :ref:`orientationAngle <sdk_ubuntu_components_orientationhelper_orientationAngle-prop>`
    : int
--  ****`rotating </sdk/apps/qml/Ubuntu.Components/OrientationHelper#rotating-prop>`__****
+-  :ref:`rotating <sdk_ubuntu_components_orientationhelper_rotating-prop>`
    : bool
--  ****`transitionEnabled </sdk/apps/qml/Ubuntu.Components/OrientationHelper#transitionEnabled-prop>`__****
+-  :ref:`transitionEnabled <sdk_ubuntu_components_orientationhelper_transitionEnabled-prop>`
    : bool
 
 Detailed Description
@@ -34,8 +37,8 @@ Any Item placed inside an Orientation Helper will be automatically
 rotated following the orientation of the device.
 
 Note that
-`OrientationHelper </sdk/apps/qml/Ubuntu.Components/OrientationHelper/>`__
-is always filling its parent (anchors.parent: fill).
+:ref:`OrientationHelper <sdk_ubuntu_components_orientationhelper>` is
+always filling its parent (anchors.parent: fill).
 
 Example:
 
@@ -55,17 +58,21 @@ Example:
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_orientationhelper_anchorToKeyboard-prop:
+
 +--------------------------------------------------------------------------+
 |        \ anchorToKeyboard : bool                                         |
 +--------------------------------------------------------------------------+
 
 The property holds if the
-`OrientationHelper </sdk/apps/qml/Ubuntu.Components/OrientationHelper/>`__
-should automatically resize the contents when the input method appears
+:ref:`OrientationHelper <sdk_ubuntu_components_orientationhelper>` should
+automatically resize the contents when the input method appears
 
 The default value is false.
 
 | 
+
+.. _sdk_ubuntu_components_orientationhelper_automaticOrientation-prop:
 
 +--------------------------------------------------------------------------+
 |        \ automaticOrientation : bool                                     |
@@ -77,6 +84,8 @@ The default value is true.
 
 | 
 
+.. _sdk_ubuntu_components_orientationhelper_orientationAngle-prop:
+
 +--------------------------------------------------------------------------+
 |        \ orientationAngle : int                                          |
 +--------------------------------------------------------------------------+
@@ -85,6 +94,8 @@ Calculates the current orientation angle.
 
 | 
 
+.. _sdk_ubuntu_components_orientationhelper_[read-only] rotating-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [read-only] rotating : bool                                     |
 +--------------------------------------------------------------------------+
@@ -92,6 +103,8 @@ Calculates the current orientation angle.
 Exposes whether the orientationTransition is running.
 
 | 
+
+.. _sdk_ubuntu_components_orientationhelper_transitionEnabled-prop:
 
 +--------------------------------------------------------------------------+
 |        \ transitionEnabled : bool                                        |

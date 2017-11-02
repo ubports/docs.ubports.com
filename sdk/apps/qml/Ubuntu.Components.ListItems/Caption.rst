@@ -1,25 +1,28 @@
+.. _sdk_ubuntu_components_listitems_caption:
+Ubuntu.Components.ListItems Caption
+===================================
+
 List item that shows a piece of text.
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import Ubuntu.Components.ListItems   |
 |                                      | 1.3                                  |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Item </sdk/apps/qml/QtQuick/Item/>` |
-|                                      | __                                   |
+| Inherits:                            | :ref:`Item <sdk_qtquick_item>`       |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`text </sdk/apps/qml/Ubuntu.Components/ListItems.Caption#text-prop>`__****
+-  `text </sdk/apps/qml/Ubuntu.Components/ListItems.Caption/_text-prop>`_ 
    : string
 
 Detailed Description
 --------------------
 
 **Note:** **The component is deprecated. Use
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ and Captiopns
-components instead.**
+:ref:`ListItem <sdk_ubuntu_components_listitem>` and Captiopns components
+instead.**
 
 Examples:
 
@@ -37,6 +40,8 @@ Examples:
 
 Property Documentation
 ----------------------
+
+.. _sdk_ubuntu_components_listitems_caption_text-prop:
 
 +--------------------------------------------------------------------------+
 |        \ text : string                                                   |

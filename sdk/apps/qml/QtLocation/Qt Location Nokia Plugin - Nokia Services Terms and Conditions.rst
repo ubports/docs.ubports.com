@@ -1,8 +1,12 @@
+.. _sdk_qtlocation_qt_location_nokia_plugin_-_nokia_services_terms_and_conditions:
+QtLocation Qt Location Nokia Plugin - Nokia Services Terms and Conditions
+=========================================================================
+
 
 
 Use of the relevant Nokia services provided by Nokia via the `Qt
 Location Nokia
-Plugin </sdk/apps/qml/QtLocation/location-plugin-nokia/>`__ are governed
+Plugin </sdk/apps/qml/QtLocation/location-plugin-nokia/>`_  are governed
 by the terms and conditions available in the file
 src/plugins/geoservices/nokia/NOKIA\_TERMS\_AND\_CONDITIONS.txt in the
 Qt Location source package. The terms and conditions are reproduced
@@ -852,4 +856,4 @@ above, and You will not transfer the Service and the Location API
 Developer Package to any Government End User without a license.
 
 `Qt Location Nokia
-Plugin </sdk/apps/qml/QtLocation/location-plugin-nokia/>`__
+Plugin </sdk/apps/qml/QtLocation/location-plugin-nokia/>`_ 

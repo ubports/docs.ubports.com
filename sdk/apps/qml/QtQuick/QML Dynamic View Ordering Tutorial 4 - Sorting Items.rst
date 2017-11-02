@@ -1,3 +1,7 @@
+.. _sdk_qtquick_qml_dynamic_view_ordering_tutorial_4_-_sorting_items:
+QtQuick QML Dynamic View Ordering Tutorial 4 - Sorting Items
+============================================================
+
 
 
 Drag and drop isn't the only way items in a view can be re-ordered,
@@ -181,4 +185,4 @@ Files:
 -  tutorials/dynamicview/dynamicview4/dynamicview4.qmlproject
 
 `QML Dynamic View Ordering Tutorial 3 - Moving Dragged
-Items </sdk/apps/qml/QtQuick/tutorials-dynamicview-dynamicview3/>`__
+Items </sdk/apps/qml/QtQuick/tutorials-dynamicview-dynamicview3/>`_ 

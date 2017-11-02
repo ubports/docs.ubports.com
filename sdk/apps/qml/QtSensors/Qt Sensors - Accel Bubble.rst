@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_qt_sensors_-_accel_bubble:
+QtSensors Qt Sensors - Accel Bubble
+===================================
+
 
 
 |image0|

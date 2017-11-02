@@ -1,3 +1,7 @@
+.. _sdk_ubuntuui_popover:
+UbuntuUI Popover
+================
+
 
 A Popover is a div containng markup that can pop up and disappear.
 (Unlike a Dialog, Popovers are not full screen.)

@@ -1,3 +1,7 @@
+.. _sdk_qtorganizer_itemtype:
+QtOrganizer ItemType
+====================
+
 The ItemType element contains the type of an organizer item.
 
 +---------------------+--------------------------+
@@ -7,25 +11,26 @@ The ItemType element contains the type of an organizer item.
 Properties
 ----------
 
--  ****`itemType </sdk/apps/qml/QtOrganizer/ItemType#itemType-prop>`__****
-   : enum
+-  :ref:`itemType <sdk_qtorganizer_itemtype_itemType-prop>` : enum
 
 Signals
 -------
 
--  ****`onDetailChanged </sdk/apps/qml/QtOrganizer/ItemType#onDetailChanged-signal>`__****\ ()
+-  :ref:`onDetailChanged <sdk_qtorganizer_itemtype_onDetailChanged-signal>`\ ()
 
 Detailed Description
 --------------------
 
 The following fields are supported:
 
--  `ItemType </sdk/apps/qml/QtOrganizer/ItemType/>`__.FieldType
+-  :ref:`ItemType <sdk_qtorganizer_itemtype>`.FieldType
 
 **See also** QOrganizerItemType.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtorganizer_itemtype_itemType-prop:
 
 +--------------------------------------------------------------------------+
 |        \ itemType : enum                                                 |
@@ -33,24 +38,26 @@ Property Documentation
 
 This property holds the type of the item. The value can be one of:
 
--  `ItemType </sdk/apps/qml/QtOrganizer/ItemType/>`__.Event
--  `ItemType </sdk/apps/qml/QtOrganizer/ItemType/>`__.\ `EventOccurrence </sdk/apps/qml/QtOrganizer/EventOccurrence/>`__
--  `ItemType </sdk/apps/qml/QtOrganizer/ItemType/>`__.Todo
--  `ItemType </sdk/apps/qml/QtOrganizer/ItemType/>`__.\ `TodoOccurrence </sdk/apps/qml/QtOrganizer/TodoOccurrence/>`__
--  `ItemType </sdk/apps/qml/QtOrganizer/ItemType/>`__.Note
--  `ItemType </sdk/apps/qml/QtOrganizer/ItemType/>`__.Journal
--  `ItemType </sdk/apps/qml/QtOrganizer/ItemType/>`__.Customized
+-  :ref:`ItemType <sdk_qtorganizer_itemtype>`.Event
+-  :ref:`ItemType <sdk_qtorganizer_itemtype>`.\ `EventOccurrence <sdk_qtorganizer_eventoccurrence>`
+-  :ref:`ItemType <sdk_qtorganizer_itemtype>`.Todo
+-  :ref:`ItemType <sdk_qtorganizer_itemtype>`.\ `TodoOccurrence <sdk_qtorganizer_todooccurrence>`
+-  :ref:`ItemType <sdk_qtorganizer_itemtype>`.Note
+-  :ref:`ItemType <sdk_qtorganizer_itemtype>`.Journal
+-  :ref:`ItemType <sdk_qtorganizer_itemtype>`.Customized
 
 | 
 
 Signal Documentation
 --------------------
 
+.. _sdk_qtorganizer_itemtype_onDetailChanged()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ onDetailChanged()                                               |
 +--------------------------------------------------------------------------+
 
 **See also**
-`Detail::onDetailChanged </sdk/apps/qml/QtOrganizer/Detail#onDetailChanged-signal>`__.
+:ref:`Detail::onDetailChanged <sdk_qtorganizer_detail#onDetailChanged-signal>`.
 
 | 

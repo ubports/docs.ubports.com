@@ -1,3 +1,7 @@
+.. _sdk_qtmultimedia_changes_in_qt_multimedia:
+QtMultimedia Changes in Qt Multimedia
+=====================================
+
 
 
 The Qt Multimedia module in Qt 5 combines (and replaces) two older
@@ -5,7 +9,7 @@ modules, namely the Qt Multimedia module from Qt 4.x, and Qt Multimedia
 Kit module from Qt Mobility. Existing code that uses Qt Multimedia from
 Qt 4 can be ported with minimal effort, but porting code that uses Qt
 Multimedia Kit may be a more involved process. The `changed
-features </sdk/apps/qml/QtMultimedia/changes#changed-features>`__
+features </sdk/apps/qml/QtMultimedia/changes/#changed-features>`_ 
 section highlights changes relevant to porting.
 
 Also, note that widget-based classes, such as QVideoWidget, are now in a
@@ -18,11 +22,11 @@ There are a number of new features in Qt Multimedia:
 
 -  Expanded QML API
 -  In addition to the
-   `Video </sdk/apps/qml/QtMultimedia/qml-multimedia#video>`__ QML type,
-   there is now the option of using
-   `MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__ and
-   `VideoOutput </sdk/apps/qml/QtMultimedia/VideoOutput/>`__ together
--  QML `Torch </sdk/apps/qml/QtMultimedia/Torch/>`__ class
+   `Video </sdk/apps/qml/QtMultimedia/qml-multimedia/#video>`_  QML
+   type, there is now the option of using
+   :ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>` and
+   :ref:`VideoOutput <sdk_qtmultimedia_videooutput>` together
+-  QML :ref:`Torch <sdk_qtmultimedia_torch>` class
 -  New QAudioRecorder class
 -  Volume support for QAudioOutput and QAudioInput
 -  More examples and documentation

@@ -1,3 +1,7 @@
+.. _sdk_qtcontacts_organization:
+QtContacts Organization
+=======================
+
 The Organization element provides details about an organization that the
 contact is either a part of, or stands for.
 
@@ -8,20 +12,16 @@ contact is either a part of, or stands for.
 Properties
 ----------
 
--  ****`assistantName </sdk/apps/qml/QtContacts/Organization#assistantName-prop>`__****
+-  :ref:`assistantName <sdk_qtcontacts_organization_assistantName-prop>`
    : string
--  ****`department </sdk/apps/qml/QtContacts/Organization#department-prop>`__****
+-  :ref:`department <sdk_qtcontacts_organization_department-prop>`
    : list<string>
--  ****`location </sdk/apps/qml/QtContacts/Organization#location-prop>`__****
-   : string
--  ****`logoUrl </sdk/apps/qml/QtContacts/Organization#logoUrl-prop>`__****
-   : url
--  ****`name </sdk/apps/qml/QtContacts/Organization#name-prop>`__**** :
+-  :ref:`location <sdk_qtcontacts_organization_location-prop>` :
    string
--  ****`role </sdk/apps/qml/QtContacts/Organization#role-prop>`__**** :
-   string
--  ****`title </sdk/apps/qml/QtContacts/Organization#title-prop>`__****
-   : string
+-  :ref:`logoUrl <sdk_qtcontacts_organization_logoUrl-prop>` : url
+-  :ref:`name <sdk_qtcontacts_organization_name-prop>` : string
+-  :ref:`role <sdk_qtcontacts_organization_role-prop>` : string
+-  :ref:`title <sdk_qtcontacts_organization_title-prop>` : string
 
 Detailed Description
 --------------------
@@ -41,6 +41,8 @@ This element is part of the **QtContacts** module.
 Property Documentation
 ----------------------
 
+.. _sdk_qtcontacts_organization_assistantName-prop:
+
 +--------------------------------------------------------------------------+
 |        \ assistantName : string                                          |
 +--------------------------------------------------------------------------+
@@ -48,6 +50,8 @@ Property Documentation
 This property holds the value of the name of the contact's assistant.
 
 | 
+
+.. _sdk_qtcontacts_organization_department-prop:
 
 +--------------------------------------------------------------------------+
 |        \ department : list<string>                                       |
@@ -57,6 +61,8 @@ This property holds the value of the department name.
 
 | 
 
+.. _sdk_qtcontacts_organization_location-prop:
+
 +--------------------------------------------------------------------------+
 |        \ location : string                                               |
 +--------------------------------------------------------------------------+
@@ -64,6 +70,8 @@ This property holds the value of the department name.
 This property holds the value of the location of the organization.
 
 | 
+
+.. _sdk_qtcontacts_organization_logoUrl-prop:
 
 +--------------------------------------------------------------------------+
 |        \ logoUrl : url                                                   |
@@ -73,6 +81,8 @@ This property holds the URL of the organization logo image.
 
 | 
 
+.. _sdk_qtcontacts_organization_name-prop:
+
 +--------------------------------------------------------------------------+
 |        \ name : string                                                   |
 +--------------------------------------------------------------------------+
@@ -81,6 +91,8 @@ This property holds the value of the organization name.
 
 | 
 
+.. _sdk_qtcontacts_organization_role-prop:
+
 +--------------------------------------------------------------------------+
 |        \ role : string                                                   |
 +--------------------------------------------------------------------------+
@@ -88,6 +100,8 @@ This property holds the value of the organization name.
 This property holds the value of the contact's role in the organization.
 
 | 
+
+.. _sdk_qtcontacts_organization_title-prop:
 
 +--------------------------------------------------------------------------+
 |        \ title : string                                                  |

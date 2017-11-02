@@ -1,3 +1,7 @@
+.. _sdk_alarmapi_alarm:
+AlarmApi Alarm
+==============
+
 
 An Alarm.
 

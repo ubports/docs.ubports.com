@@ -1,3 +1,7 @@
+.. _sdk_qtcontacts_favorite:
+QtContacts Favorite
+===================
+
 The Favorite element indicates if a contact is a favorite contact as
 well as the position it should appear in an ordered list of favorites.
 
@@ -8,10 +12,8 @@ well as the position it should appear in an ordered list of favorites.
 Properties
 ----------
 
--  ****`favorite </sdk/apps/qml/QtContacts/Favorite#favorite-prop>`__****
-   : bool
--  ****`index </sdk/apps/qml/QtContacts/Favorite#index-prop>`__**** :
-   int
+-  :ref:`favorite <sdk_qtcontacts_favorite_favorite-prop>` : bool
+-  :ref:`index <sdk_qtcontacts_favorite_index-prop>` : int
 
 Detailed Description
 --------------------
@@ -26,6 +28,8 @@ This element is part of the **QtContacts** module.
 Property Documentation
 ----------------------
 
+.. _sdk_qtcontacts_favorite_favorite-prop:
+
 +--------------------------------------------------------------------------+
 |        \ favorite : bool                                                 |
 +--------------------------------------------------------------------------+
@@ -34,6 +38,8 @@ This property holds the value that indicates whether a contact is a
 favorite.
 
 | 
+
+.. _sdk_qtcontacts_favorite_index-prop:
 
 +--------------------------------------------------------------------------+
 |        \ index : int                                                     |

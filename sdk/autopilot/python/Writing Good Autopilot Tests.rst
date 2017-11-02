@@ -1,3 +1,7 @@
+.. _sdk_writing_good_autopilot_tests:
+Writing Good Autopilot Tests
+============================
+
 This document is an introduction to writing good autopilot tests. This
 should be treated as additional material on top of all the things you’d
 normally do to write good code. Put another way: test code follows all
@@ -8,7 +12,7 @@ Several points in this document are written with respect to the unity
 autopilot test suite. This is incidental, and doesn’t mean that these
 points do not apply to other test suites!
 
-.. rubric:: Write Expressive Tests\ ` <#write-expressive-tests>`__
+.. rubric:: Write Expressive Tests\ ` <#write-expressive-tests>`_ 
    :name: write-expressive-tests
 
 Unit tests are often used as a reference for how your public API should
@@ -59,10 +63,10 @@ still useful when reading the test code. For example:
         """The Save dialog box must cancel when the escape key is pressed."""
 
 We recommend following \ `**PEP
-257** <http://www.python.org/dev/peps/pep-0257>`__ when writing all
+257** <http://www.python.org/dev/peps/pep-0257>`_  when writing all
 docstrings.
 
-.. rubric:: Test One Thing Only\ ` <#test-one-thing-only>`__
+.. rubric:: Test One Thing Only\ ` <#test-one-thing-only>`_ 
    :name: test-one-thing-only
 
 Tests should test one thing, and one thing only. Since we’re not writing
@@ -116,7 +120,7 @@ parts of unity work as expected, as long as they’re covered by an
 autopilot test somewhere else - that’s why we don’t need to verify that
 the dash really did open when we called ``self.dash.ensure_visible()``.
 
-.. rubric:: Fail Well\ ` <#fail-well>`__
+.. rubric:: Fail Well\ ` <#fail-well>`_ 
    :name: fail-well
 
 Make sure your tests test what they’re supposed to. It’s very easy to
@@ -166,7 +170,7 @@ fails otherwise. There are two main ways to achieve this:
 
        </div>
 
-.. rubric:: Think about design\ ` <#think-about-design>`__
+.. rubric:: Think about design\ ` <#think-about-design>`_ 
    :name: think-about-design
 
 Much in the same way you might choose a functional or objective-oriented
@@ -175,9 +179,9 @@ good design pattern. One such design pattern is the page object model.
 The page object model can reduce testcase complexity and allow the
 testcase to grow and easily adapt to changes within the underlying
 application. Check out `*Page Object
-Pattern* </sdk/autopilot/python/guides-page_object#page-object-guide>`__.
+Pattern* </sdk/autopilot/python/guides-page_object/#page-object-guide>`_ .
 
-.. rubric:: Test Length\ ` <#test-length>`__
+.. rubric:: Test Length\ ` <#test-length>`_ 
    :name: test-length
 
 Tests should be short - as short as possible while maintaining
@@ -261,7 +265,7 @@ proxy classes could have a method to click an icon given a desktop id),
 but this is now perfectly readable and understandable within a few
 seconds of reading.
 
-.. rubric:: Good docstrings\ ` <#good-docstrings>`__
+.. rubric:: Good docstrings\ ` <#good-docstrings>`_ 
    :name: good-docstrings
 
 Test docstrings are used to communicate to other developers what the
@@ -271,8 +275,8 @@ test is supposed to be testing. Test Docstrings must:
 
        <div>
 
-    #. Conform to `PEP8 <http://www.python.org/dev/peps/pep-0008/>`__
-       and `PEP257 <http://www.python.org/dev/peps/pep-0257/>`__
+    #. Conform to `PEP8 <http://www.python.org/dev/peps/pep-0008/>`_ 
+       and `PEP257 <http://www.python.org/dev/peps/pep-0257/>`_ 
        guidelines.
     #. Avoid words like “should” in favor of stronger words like “must”.
     #. Contain a one-line summary of the test.
@@ -313,7 +317,7 @@ not what we want! A better version of this code might look like this:
 
 The difference between these two are subtle, but important.
 
-.. rubric:: Test Readability\ ` <#test-readability>`__
+.. rubric:: Test Readability\ ` <#test-readability>`_ 
    :name: test-readability
 
 The most important attribute for a test is that it is correct - it must
@@ -561,7 +565,7 @@ readability:
        </div>
 
 .. rubric:: Prefer ``wait_for`` and ``Eventually`` to
-   ``sleep``\ ` <#prefer-wait-for-and-eventually-to-sleep>`__
+   ``sleep``\ ` <#prefer-wait-for-and-eventually-to-sleep>`_ 
    :name: prefer-wait_for-and-eventually-to-sleep
 
 Early autopilot tests relied on extensive use of the python ``sleep``
@@ -596,7 +600,7 @@ There are several issues with this approach:
 
 There are two solutions to this problem:
 
-.. rubric:: In Tests\ ` <#in-tests>`__
+.. rubric:: In Tests\ ` <#in-tests>`_ 
    :name: in-tests
 
 Tests should use the ``Eventually`` matcher. This can be imported as
@@ -628,7 +632,7 @@ this:
 Note that you can pass any object that follows the testtools matcher
 protocol (so you can write your own matchers, if you like).
 
-.. rubric:: In Proxy Classes\ ` <#in-proxy-classes>`__
+.. rubric:: In Proxy Classes\ ` <#in-proxy-classes>`_ 
    :name: in-proxy-classes
 
 Proxy classes are not test cases, and do not have access to the
@@ -675,7 +679,7 @@ a testtools matcher:
 
     key_nav_selection.wait_for(NotEquals(old_selection))
 
-.. rubric:: Scenarios\ ` <#scenarios>`__
+.. rubric:: Scenarios\ ` <#scenarios>`_ 
    :name: scenarios
 
 Autopilot uses the ``python-testscenarios`` package to run a test
@@ -733,7 +737,7 @@ test environment based on these attributes. For example, you may wish to
 set certain unity options for the duration of the test based on a
 scenario parameter.
 
-.. rubric:: Multiplying Scenarios\ ` <#multiplying-scenarios>`__
+.. rubric:: Multiplying Scenarios\ ` <#multiplying-scenarios>`_ 
    :name: multiplying-scenarios
 
 Scenarios are very helpful, but only represent a single-dimension of
@@ -883,11 +887,11 @@ tests than it is to end up with fewer, less readable tests. Like all
 code, tests are read far more often than they’re written.
 
 .. rubric:: Do Not Depend on Object
-   Ordering\ ` <#do-not-depend-on-object-ordering>`__
+   Ordering\ ` <#do-not-depend-on-object-ordering>`_ 
    :name: do-not-depend-on-object-ordering
 
 Calls such as
-```select_many`` </sdk/autopilot/python/autopilot.introspection/ProxyBase#autopilot.introspection.ProxyBase.select_many>`__
+:ref:```select_many`` <sdk_autopilot_introspection_proxybase#autopilot.introspection.ProxyBase.select_many>`
 return several objects at once. These objects are explicitly unordered,
 and test authors must take care not to make assumptions about their
 order.

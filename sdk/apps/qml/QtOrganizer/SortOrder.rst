@@ -1,3 +1,7 @@
+.. _sdk_qtorganizer_sortorder:
+QtOrganizer SortOrder
+=====================
+
 The SortOrder element defines how a list of organizer item should be
 ordered according to some criteria.
 
@@ -8,27 +12,27 @@ ordered according to some criteria.
 Properties
 ----------
 
--  ****`blankPolicy </sdk/apps/qml/QtOrganizer/SortOrder#blankPolicy-prop>`__****
+-  :ref:`blankPolicy <sdk_qtorganizer_sortorder_blankPolicy-prop>`
    : enumeration
--  ****`caseSensitivity </sdk/apps/qml/QtOrganizer/SortOrder#caseSensitivity-prop>`__****
+-  :ref:`caseSensitivity <sdk_qtorganizer_sortorder_caseSensitivity-prop>`
    : enumeration
--  ****`detail </sdk/apps/qml/QtOrganizer/SortOrder#detail-prop>`__****
-   : string
--  ****`direction </sdk/apps/qml/QtOrganizer/SortOrder#direction-prop>`__****
-   : enumeration
--  ****`field </sdk/apps/qml/QtOrganizer/SortOrder#field-prop>`__**** :
-   string
+-  :ref:`detail <sdk_qtorganizer_sortorder_detail-prop>` : string
+-  :ref:`direction <sdk_qtorganizer_sortorder_direction-prop>` :
+   enumeration
+-  :ref:`field <sdk_qtorganizer_sortorder_field-prop>` : string
 
 Signals
 -------
 
--  ****`onSortOrderChanged </sdk/apps/qml/QtOrganizer/SortOrder#onSortOrderChanged-signal>`__****\ ()
+-  :ref:`onSortOrderChanged <sdk_qtorganizer_sortorder_onSortOrderChanged-signal>`\ ()
 
 Detailed Description
 --------------------
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtorganizer_sortorder_blankPolicy-prop:
 
 +--------------------------------------------------------------------------+
 |        \ blankPolicy : enumeration                                       |
@@ -37,14 +41,14 @@ Property Documentation
 This property enumerates the ways in which the sort order interprets
 blanks when sorting organizer.
 
--  `SortOrder </sdk/apps/qml/QtOrganizer/SortOrder/>`__.BlanksFirst
-   Considers blank values to evaluate to less than all other values in
-   comparisons.
--  `SortOrder </sdk/apps/qml/QtOrganizer/SortOrder/>`__.BlanksLast
-   Considers blank values to evaluate to greater than all other values
-   in comparisons.
+-  :ref:`SortOrder <sdk_qtorganizer_sortorder>`.BlanksFirst Considers blank
+   values to evaluate to less than all other values in comparisons.
+-  :ref:`SortOrder <sdk_qtorganizer_sortorder>`.BlanksLast Considers blank
+   values to evaluate to greater than all other values in comparisons.
 
 | 
+
+.. _sdk_qtorganizer_sortorder_caseSensitivity-prop:
 
 +--------------------------------------------------------------------------+
 |        \ caseSensitivity : enumeration                                   |
@@ -60,15 +64,19 @@ can be one of:
 
 | 
 
+.. _sdk_qtorganizer_sortorder_detail-prop:
+
 +--------------------------------------------------------------------------+
 |        \ detail : string                                                 |
 +--------------------------------------------------------------------------+
 
 This property holds the detail type of which the sorting will be
 performed to. The value should be the enumeration value of
-`Detail::type </sdk/apps/qml/QtOrganizer/Detail#type-prop>`__.
+:ref:`Detail::type <sdk_qtorganizer_detail#type-prop>`.
 
 | 
+
+.. _sdk_qtorganizer_sortorder_direction-prop:
 
 +--------------------------------------------------------------------------+
 |        \ direction : enumeration                                         |
@@ -83,6 +91,8 @@ one of:
 
 | 
 
+.. _sdk_qtorganizer_sortorder_field-prop:
+
 +--------------------------------------------------------------------------+
 |        \ field : string                                                  |
 +--------------------------------------------------------------------------+
@@ -91,37 +101,39 @@ This property holds the detail field type of which the sorting will be
 performed to. The value should be the filld enumeration value defined in
 each detail element.
 
-**See also** `EventTime </sdk/apps/qml/QtOrganizer/EventTime/>`__,
-`JournalTime </sdk/apps/qml/QtOrganizer/JournalTime/>`__,
-`TodoTime </sdk/apps/qml/QtOrganizer/TodoTime/>`__,
-`TodoProgress </sdk/apps/qml/QtOrganizer/TodoProgress/>`__,
-`Reminder </sdk/apps/qml/QtOrganizer/Reminder/>`__,
-`AudibleReminder </sdk/apps/qml/QtOrganizer/AudibleReminder/>`__,
-`VisualReminder </sdk/apps/qml/QtOrganizer/VisualReminder/>`__,
-`EmailReminder </sdk/apps/qml/QtOrganizer/EmailReminder/>`__,
-`Comment </sdk/apps/qml/QtOrganizer/Comment/>`__,
-`Description </sdk/apps/qml/QtOrganizer/Description/>`__,
-`DisplayLabel </sdk/apps/qml/QtOrganizer/DisplayLabel/>`__,
-`Guid </sdk/apps/qml/QtOrganizer/Guid/>`__,
-`Location </sdk/apps/qml/QtOrganizer/Location/>`__,
-`Parent </sdk/apps/qml/QtOrganizer/Parent/>`__,
-`Priority </sdk/apps/qml/QtOrganizer/Priority/>`__,
-`Recurrence </sdk/apps/qml/QtOrganizer/Recurrence/>`__,
-`Timestamp </sdk/apps/qml/QtOrganizer/Timestamp/>`__,
-`ItemType </sdk/apps/qml/QtOrganizer/ItemType/>`__, and
-`Tag </sdk/apps/qml/QtOrganizer/Tag/>`__.
+**See also** :ref:`EventTime <sdk_qtorganizer_eventtime>`,
+:ref:`JournalTime <sdk_qtorganizer_journaltime>`,
+:ref:`TodoTime <sdk_qtorganizer_todotime>`,
+:ref:`TodoProgress <sdk_qtorganizer_todoprogress>`,
+:ref:`Reminder <sdk_qtorganizer_reminder>`,
+:ref:`AudibleReminder <sdk_qtorganizer_audiblereminder>`,
+:ref:`VisualReminder <sdk_qtorganizer_visualreminder>`,
+:ref:`EmailReminder <sdk_qtorganizer_emailreminder>`,
+:ref:`Comment <sdk_qtorganizer_comment>`,
+:ref:`Description <sdk_qtorganizer_description>`,
+:ref:`DisplayLabel <sdk_qtorganizer_displaylabel>`,
+:ref:`Guid <sdk_qtorganizer_guid>`,
+:ref:`Location <sdk_qtorganizer_location>`,
+:ref:`Parent <sdk_qtorganizer_parent>`,
+:ref:`Priority <sdk_qtorganizer_priority>`,
+:ref:`Recurrence <sdk_qtorganizer_recurrence>`,
+:ref:`Timestamp <sdk_qtorganizer_timestamp>`,
+:ref:`ItemType <sdk_qtorganizer_itemtype>`, and
+:ref:`Tag <sdk_qtorganizer_tag>`.
 
 | 
 
 Signal Documentation
 --------------------
 
+.. _sdk_qtorganizer_sortorder_onSortOrderChanged()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ onSortOrderChanged()                                            |
 +--------------------------------------------------------------------------+
 
 This signal is emitted, when any of the
-`SortOrder </sdk/apps/qml/QtOrganizer/SortOrder/>`__'s properties have
-been changed.
+:ref:`SortOrder <sdk_qtorganizer_sortorder>`'s properties have been
+changed.
 
 | 

@@ -1,3 +1,7 @@
+.. _sdk_qtqml_string:
+QtQml String
+============
+
 The String object represents a string value
 
 +---------------------+--------------------+
@@ -7,20 +11,21 @@ The String object represents a string value
 Methods
 -------
 
--  string
-   ****`arg </sdk/apps/qml/QtQml/String#arg-method>`__****\ (value)
+-  string **:ref:`arg <sdk_qtqml_string#arg-method>`**\ (value)
 
 Detailed Description
 --------------------
 
 The QML String object extends the JS String object with the
-`arg() </sdk/apps/qml/QtQml/String#arg-method>`__ function.
+:ref:`arg() <sdk_qtqml_string#arg-method>` function.
 
 **See also** `ECMAScript Language
-Specification <http://www.ecma-international.org/publications/standards/Ecma-262.htm>`__.
+Specification <http://www.ecma-international.org/publications/standards/Ecma-262.htm>`_ .
 
 Method Documentation
 --------------------
+
+.. _sdk_qtqml_string_string arg-method:
 
 +--------------------------------------------------------------------------+
 |        \ string arg(value)                                               |

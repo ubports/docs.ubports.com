@@ -1,3 +1,7 @@
+.. _sdk_qtlocation_route:
+QtLocation Route
+================
+
 The Route type represents one geographical route.
 
 +---------------------+-------------------------+
@@ -9,16 +13,12 @@ The Route type represents one geographical route.
 Properties
 ----------
 
--  ****`bounds </sdk/apps/qml/QtLocation/Route#bounds-prop>`__**** :
-   georectangle
--  ****`distance </sdk/apps/qml/QtLocation/Route#distance-prop>`__**** :
-   real
--  ****`path </sdk/apps/qml/QtLocation/Route#path-prop>`__**** :
-   QJSValue
--  ****`segments </sdk/apps/qml/QtLocation/Route#segments-prop>`__**** :
+-  :ref:`bounds <sdk_qtlocation_route_bounds-prop>` : georectangle
+-  :ref:`distance <sdk_qtlocation_route_distance-prop>` : real
+-  :ref:`path <sdk_qtlocation_route_path-prop>` : QJSValue
+-  :ref:`segments <sdk_qtlocation_route_segments-prop>` :
    list<RouteSegment>
--  ****`travelTime </sdk/apps/qml/QtLocation/Route#travelTime-prop>`__****
-   : int
+-  :ref:`travelTime <sdk_qtlocation_route_travelTime-prop>` : int
 
 Detailed Description
 --------------------
@@ -31,7 +31,7 @@ The QGeoRoute object also contains a list of RouteSegment objects which
 describe subsections of the route in greater detail.
 
 The primary means of acquiring Route objects is
-`RouteModel </sdk/apps/qml/QtLocation/RouteModel/>`__.
+:ref:`RouteModel <sdk_qtlocation_routemodel>`.
 
 Example
 -------
@@ -65,6 +65,8 @@ This example shows how to display a route's maneuvers in a ListView:
 Property Documentation
 ----------------------
 
+.. _sdk_qtlocation_route_bounds-prop:
+
 +--------------------------------------------------------------------------+
 |        \ bounds : georectangle                                           |
 +--------------------------------------------------------------------------+
@@ -74,6 +76,8 @@ entire route.
 
 | 
 
+.. _sdk_qtlocation_route_distance-prop:
+
 +--------------------------------------------------------------------------+
 |        \ distance : real                                                 |
 +--------------------------------------------------------------------------+
@@ -82,6 +86,8 @@ Read-only property which holds distance covered by this route, in
 meters.
 
 | 
+
+.. _sdk_qtlocation_route_path-prop:
 
 +--------------------------------------------------------------------------+
 |        \ path : QJSValue                                                 |
@@ -99,22 +105,24 @@ from zero]' gives the actual object.
 
 | 
 
+.. _sdk_qtlocation_route_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ segments :                                                      |
-| list<`RouteSegment </sdk/apps/qml/QtLocation/RouteSegment/>`__>          |
+| :ref:` <>`\ segments : list<`RouteSegment <sdk_qtlocation_routesegment>`> |
 +--------------------------------------------------------------------------+
 
 Read-only property which holds the list of
-`RouteSegment </sdk/apps/qml/QtLocation/RouteSegment/>`__ objects of
-this route.
+:ref:`RouteSegment <sdk_qtlocation_routesegment>` objects of this route.
 
 To access individual segments you can use standard list accessors:
 'segments.length' indicates the number of objects and 'segments[index
 starting from zero]' gives the actual objects.
 
-**See also** `RouteSegment </sdk/apps/qml/QtLocation/RouteSegment/>`__.
+**See also** :ref:`RouteSegment <sdk_qtlocation_routesegment>`.
 
 | 
+
+.. _sdk_qtlocation_route_travelTime-prop:
 
 +--------------------------------------------------------------------------+
 |        \ travelTime : int                                                |

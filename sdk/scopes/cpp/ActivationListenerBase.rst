@@ -1,5 +1,9 @@
+.. _sdk_activationlistenerbase:
+ActivationListenerBase
+======================
+
 Base class to receive a response to a result activation request.
-`More... </sdk/scopes/cpp/unity.scopes.ActivationListenerBase#details>`__
+`More... </sdk/scopes/cpp/unity.scopes.ActivationListenerBase/#details>`_ 
 
 ``#include <unity/scopes/ActivationListenerBase.h>``
 
@@ -14,8 +18,8 @@ Inheritance diagram for unity::scopes::ActivationListenerBase:
 
 virtual void 
 
-`activated </sdk/scopes/cpp/unity.scopes.ActivationListenerBase#a52106ae2856a2dc7fd6035707bd0bee2>`__
-(`ActivationResponse </sdk/scopes/cpp/unity.scopes.ActivationResponse/>`__
+`activated </sdk/scopes/cpp/unity.scopes.ActivationListenerBase/#a52106ae2856a2dc7fd6035707bd0bee2>`_ 
+(`ActivationResponse </sdk/scopes/cpp/unity.scopes.ActivationResponse/>`_ 
 const &response)
 
  
@@ -26,8 +30,8 @@ const &response)
 
 virtual void 
 
-`finished </sdk/scopes/cpp/unity.scopes.ActivationListenerBase#a89f1e3697d62b098c73704368d3bc4c8>`__
-(`CompletionDetails </sdk/scopes/cpp/unity.scopes.CompletionDetails/>`__
+`finished </sdk/scopes/cpp/unity.scopes.ActivationListenerBase/#a89f1e3697d62b098c73704368d3bc4c8>`_ 
+(`CompletionDetails </sdk/scopes/cpp/unity.scopes.CompletionDetails/>`_ 
 const &details) override
 
  
@@ -38,12 +42,12 @@ const &details) override
  
 
 |-| Public Member Functions inherited from
-`unity::scopes::ListenerBase </sdk/scopes/cpp/unity.scopes.ListenerBase/>`__
+`unity::scopes::ListenerBase </sdk/scopes/cpp/unity.scopes.ListenerBase/>`_ 
 
 virtual void 
 
-`info </sdk/scopes/cpp/unity.scopes.ListenerBase#a3b38fa642754142f40968f3ff8d1bdc8>`__
-(`OperationInfo </sdk/scopes/cpp/unity.scopes.OperationInfo/>`__ const
+`info </sdk/scopes/cpp/unity.scopes.ListenerBase/#a3b38fa642754142f40968f3ff8d1bdc8>`_ 
+(`OperationInfo </sdk/scopes/cpp/unity.scopes.OperationInfo/>`_  const
 &op\_info)
 
  
@@ -99,9 +103,9 @@ Called once by the scopes runtime with the activation response.
 The default implementation does nothing.
 
 Parameters
-    +------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-    | response   | The response to the activation request, returned by a scope from `ActivationQueryBase::activate() </sdk/scopes/cpp/unity.scopes.ActivationQueryBase#a61ed49d8bc56e677ff2eb1f30e6a6b6b>`__.   |
-    +------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    +------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | response   | The response to the activation request, returned by a scope from `ActivationQueryBase::activate() </sdk/scopes/cpp/unity.scopes.ActivationQueryBase/#a61ed49d8bc56e677ff2eb1f30e6a6b6b>`_ .   |
+    +------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 +--------------------------------------+--------------------------------------+
 | +--------------+--------------+----- | overridevirtual                      |
@@ -123,7 +127,7 @@ Parameters
 | pletionD |              |            |                                      |
 |    |              |                  |                                      |
 | |              |              | etai |                                      |
-| ls/>`__  |              |            |                                      |
+| ls/>`_   |              |            |                                      |
 |    |              |                  |                                      |
 | |              |              | cons |                                      |
 | t &      |              |            |                                      |
@@ -137,11 +141,11 @@ Called once by the scopes runtime after the final result for a request
 was sent.
 
 Calls to
-`finished() </sdk/scopes/cpp/unity.scopes.ActivationListenerBase#a89f1e3697d62b098c73704368d3bc4c8>`__
+`finished() </sdk/scopes/cpp/unity.scopes.ActivationListenerBase/#a89f1e3697d62b098c73704368d3bc4c8>`_ 
 are made by an arbitrary thread.
 
 Exceptions thrown from
-`finished() </sdk/scopes/cpp/unity.scopes.ActivationListenerBase#a89f1e3697d62b098c73704368d3bc4c8>`__
+`finished() </sdk/scopes/cpp/unity.scopes.ActivationListenerBase/#a89f1e3697d62b098c73704368d3bc4c8>`_ 
 are ignored.
 
 Parameters
@@ -150,7 +154,7 @@ Parameters
     +-----------+-----------------------------------------------------------------------------------------------------------------------------------------+
 
 Implements
-`unity::scopes::ListenerBase </sdk/scopes/cpp/unity.scopes.ListenerBase#afb44937749b61c9e3ebfa20ec6e4634b>`__.
+`unity::scopes::ListenerBase </sdk/scopes/cpp/unity.scopes.ListenerBase/#afb44937749b61c9e3ebfa20ec6e4634b>`_ .
 
 .. |Inheritance graph| image:: /media/sdk/scopes/cpp/unity.scopes.ActivationListenerBase/classunity_1_1scopes_1_1_activation_listener_base__inherit__graph.png
 .. |-| image:: /media/sdk/scopes/cpp/unity.scopes.ActivationListenerBase/closed.png

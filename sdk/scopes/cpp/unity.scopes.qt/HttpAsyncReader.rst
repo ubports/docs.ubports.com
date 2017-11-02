@@ -1,5 +1,9 @@
+.. _sdk_unity_scopes_qt_httpasyncreader:
+unity.scopes.qt HttpAsyncReader
+===============================
+
 Class that downloads http files asynchronously.
-`More... </sdk/scopes/cpp/unity.scopes.qt/HttpAsyncReader#details>`__
+:ref:`More... <sdk_unity_scopes_qt_httpasyncreader#details>`
 
 ``#include <unity/scopes/qt/HttpAsyncReader.h>``
 
@@ -10,7 +14,7 @@ template<typename BASE , typename TYPE , typename PARSER >
 
 ResultsFuture< BASE > 
 
-`async\_get </sdk/scopes/cpp/unity.scopes.qt/HttpAsyncReader#aaf1d8c3889f748e3ddd7d96c5f2350fd>`__
+:ref:`async\_get <sdk_unity_scopes_qt_httpasyncreader#aaf1d8c3889f748e3ddd7d96c5f2350fd>`
 (std::string const &uri, std::string const &object\_name, FactoryFunc<
 PARSER > const &create, ParseFunc< BASE, PARSER > const &parse) const
 
@@ -31,7 +35,7 @@ template<typename TYPE , typename PARSER >
 
 ResultsFuture< TYPE > 
 
-`async\_get </sdk/scopes/cpp/unity.scopes.qt/HttpAsyncReader#ae46599f9b8490c17d6ed5780111ffbcd>`__
+:ref:`async\_get <sdk_unity_scopes_qt_httpasyncreader#ae46599f9b8490c17d6ed5780111ffbcd>`
 (std::string const &uri, std::string const &object\_name, FactoryFunc<
 PARSER > const &create, ParseFunc< TYPE, PARSER > const &parse) const
 
@@ -52,7 +56,7 @@ template<typename PARSER >
 
 ParserFuture< PARSER > 
 
-`async\_get\_parser </sdk/scopes/cpp/unity.scopes.qt/HttpAsyncReader#a9edea62503249b74b41689c2b524a740>`__
+:ref:`async\_get\_parser <sdk_unity_scopes_qt_httpasyncreader#a9edea62503249b74b41689c2b524a740>`
 (std::string const &uri, FactoryFunc< PARSER > const &create) const
 
  
@@ -64,7 +68,7 @@ ParserFuture< PARSER > 
 
         std::string 
 
-`get\_uri </sdk/scopes/cpp/unity.scopes.qt/HttpAsyncReader#a47ca526cf459e30e0d5191f1b97c4491>`__
+:ref:`get\_uri <sdk_unity_scopes_qt_httpasyncreader#a47ca526cf459e30e0d5191f1b97c4491>`
 (std::string const &host, std::vector< std::pair< std::string,
 std::string >> const &parameters) const
 
@@ -83,7 +87,7 @@ template<typename T >
 
 static T 
 
-`get\_or\_throw </sdk/scopes/cpp/unity.scopes.qt/HttpAsyncReader#ae2ce7cab02f7dba9b5326246802a65f3>`__
+:ref:`get\_or\_throw <sdk_unity_scopes_qt_httpasyncreader#ae2ce7cab02f7dba9b5326246802a65f3>`
 (std::future< T > &f, int64\_t seconds=20)
 
  
@@ -281,7 +285,7 @@ template<typename T >
 
 Gets the data of the given future in the gived timeout. If the time
 given expires and the data in the future is not ready throws a
-`unity::scopes::TimeoutException </sdk/scopes/cpp/unity.scopes.TimeoutException/>`__
+`unity::scopes::TimeoutException </sdk/scopes/cpp/unity.scopes.TimeoutException/>`_ 
 exception.
 
 Parameters
@@ -292,6 +296,6 @@ Parameters
     +-----------+---------------------------------------+
 
 Returns
-    `Result </sdk/scopes/cpp/unity.scopes.Result/>`__ of the given
+    `Result </sdk/scopes/cpp/unity.scopes.Result/>`_  of the given
     future.
 

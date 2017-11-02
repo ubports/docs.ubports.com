@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_altimeter:
+QtSensors Altimeter
+===================
+
 The Altimeter element reports on altitude.
 
 +--------------------------------------+--------------------------------------+
@@ -5,8 +9,7 @@ The Altimeter element reports on altitude.
 +--------------------------------------+--------------------------------------+
 | Since:                               | QtSensors 5.1                        |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Sensor </sdk/apps/qml/QtSensors/Sen |
-|                                      | sor/>`__                             |
+| Inherits:                            | :ref:`Sensor <sdk_qtsensors_sensor>` |
 +--------------------------------------+--------------------------------------+
 
 Detailed Description
@@ -17,5 +20,4 @@ The Altimeter element reports on altitude.
 This element wraps the QAltimeter class. Please see the documentation
 for QAltimeter for details.
 
-**See also**
-`AltimeterReading </sdk/apps/qml/QtSensors/AltimeterReading/>`__.
+**See also** :ref:`AltimeterReading <sdk_qtsensors_altimeterreading>`.

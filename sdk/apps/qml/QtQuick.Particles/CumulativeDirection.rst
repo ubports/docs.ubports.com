@@ -1,15 +1,19 @@
+.. _sdk_qtquick_particles_cumulativedirection:
+QtQuick.Particles CumulativeDirection
+=====================================
+
 For specifying a direction made of other directions
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtQuick.Particles 2.0         |
 +--------------------------------------+--------------------------------------+
 | Inherits:                            | `Direction </sdk/apps/qml/QtQuick/Pa |
-|                                      | rticles.Direction/>`__               |
+|                                      | rticles.Direction/>`_                |
 +--------------------------------------+--------------------------------------+
 
 Detailed Description
 --------------------
 
 The
-`CumulativeDirection </sdk/apps/qml/QtQuick/Particles.CumulativeDirection/>`__
+`CumulativeDirection </sdk/apps/qml/QtQuick/Particles.CumulativeDirection/>`_ 
 element will act as a direction that sums the directions within it.

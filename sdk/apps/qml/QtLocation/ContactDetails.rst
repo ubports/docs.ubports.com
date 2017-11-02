@@ -1,3 +1,7 @@
+.. _sdk_qtlocation_contactdetails:
+QtLocation ContactDetails
+=========================
+
 The ContactDetails type holds contact details for a Place.
 
 +---------------------+-------------------------+
@@ -10,21 +14,20 @@ Methods
 -------
 
 -  variant
-   ****`keys </sdk/apps/qml/QtLocation/ContactDetails#keys-method>`__****\ ()
+   **:ref:`keys <sdk_qtlocation_contactdetails#keys-method>`**\ ()
 
 Detailed Description
 --------------------
 
-The `ContactDetails </sdk/apps/qml/QtLocation/ContactDetails/>`__ type
-is a map of `ContactDetail </sdk/apps/qml/QtLocation/ContactDetail/>`__
-objects. To access contact details in the map use the
-`keys() </sdk/apps/qml/QtLocation/ContactDetails#keys-method>`__ method
-to get the list of keys stored in the map and then use the ``[]``
-operator to access the
-`ContactDetail </sdk/apps/qml/QtLocation/ContactDetail/>`__ items.
+The :ref:`ContactDetails <sdk_qtlocation_contactdetails>` type is a map of
+:ref:`ContactDetail <sdk_qtlocation_contactdetail>` objects. To access
+contact details in the map use the
+:ref:`keys() <sdk_qtlocation_contactdetails#keys-method>` method to get the
+list of keys stored in the map and then use the ``[]`` operator to
+access the :ref:`ContactDetail <sdk_qtlocation_contactdetail>` items.
 
 The following keys are defined in the API.
-`Plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__
+`Plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_ 
 implementations are free to define additional keys.
 
 -  phone
@@ -32,24 +35,22 @@ implementations are free to define additional keys.
 -  email
 -  website
 
-`ContactDetails </sdk/apps/qml/QtLocation/ContactDetails/>`__ instances
-are only ever used in the context of
-`Places </sdk/apps/qml/QtLocation/location-cpp-qml#place>`__. It is not
-possible to create a
-`ContactDetails </sdk/apps/qml/QtLocation/ContactDetails/>`__ instance
-directly or re-assign
-`ContactDetails </sdk/apps/qml/QtLocation/ContactDetails/>`__ instances
-to `Places </sdk/apps/qml/QtLocation/location-cpp-qml#place>`__.
-Modification of
-`ContactDetails </sdk/apps/qml/QtLocation/ContactDetails/>`__ can only
-be accomplished via Javascript.
+:ref:`ContactDetails <sdk_qtlocation_contactdetails>` instances are only
+ever used in the context of
+`Places </sdk/apps/qml/QtLocation/location-cpp-qml/#place>`_ . It is not
+possible to create a :ref:`ContactDetails <sdk_qtlocation_contactdetails>`
+instance directly or re-assign
+:ref:`ContactDetails <sdk_qtlocation_contactdetails>` instances to
+`Places </sdk/apps/qml/QtLocation/location-cpp-qml/#place>`_ .
+Modification of :ref:`ContactDetails <sdk_qtlocation_contactdetails>` can
+only be accomplished via Javascript.
 
 Examples
 --------
 
 The following example shows how to access all
-`ContactDetails </sdk/apps/qml/QtLocation/ContactDetail/>`__ and print
-them to the console:
+:ref:`ContactDetails <sdk_qtlocation_contactdetail>` and print them to the
+console:
 
 .. code:: qml
 
@@ -111,6 +112,8 @@ place in JavaScript:
 
 Method Documentation
 --------------------
+
+.. _sdk_qtlocation_contactdetails_variant keys-method:
 
 +--------------------------------------------------------------------------+
 |        \ variant keys()                                                  |

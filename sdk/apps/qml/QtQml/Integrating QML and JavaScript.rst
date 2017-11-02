@@ -1,3 +1,7 @@
+.. _sdk_qtqml_integrating_qml_and_javascript:
+QtQml Integrating QML and JavaScript
+====================================
+
 
 
 The QML language uses a JSON-like syntax and allows various expressions
@@ -13,17 +17,17 @@ logic.
    :name: javascript-expressions
 
 QML has a deep JavaScript integration, and allows `signal
-handlers </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes#signal-attributes>`__
+handlers </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes/#signal-attributes>`_ 
 and
-`methods </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes#method-attributes>`__
+`methods </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes/#method-attributes>`_ 
 to be defined in JavaScript. Another core feature of QML is the ability
 to specify and enforce relationships between object properties using
 `property
-bindings </sdk/apps/qml/QtQml/qtqml-syntax-propertybinding/>`__, which
+bindings </sdk/apps/qml/QtQml/qtqml-syntax-propertybinding/>`_ , which
 are also defined using JavaScript.
 
 See the documentation page titled `JavaScript Expressions in QML
-Documents </sdk/apps/qml/QtQml/qtqml-javascript-expressions/>`__ for
+Documents </sdk/apps/qml/QtQml/qtqml-javascript-expressions/>`_  for
 more information about using JavaScript expressions in QML.
 
 .. rubric:: JavaScript Resources
@@ -35,7 +39,7 @@ several different kinds of JavaScript resources, with different
 semantics.
 
 See the documentation page titled `Defining JavaScript Resources In
-QML </sdk/apps/qml/QtQml/qtqml-javascript-resources/>`__ for more
+QML </sdk/apps/qml/QtQml/qtqml-javascript-resources/>`_  for more
 information about defining JavaScript resources for QML.
 
 .. rubric:: JavaScript Imports
@@ -47,7 +51,7 @@ allows an application developer to provide application logic in modular,
 self-contained files.
 
 See the documentation page titled `Importing JavaScript
-Resources </sdk/apps/qml/QtQml/qtqml-javascript-imports/>`__ for more
+Resources </sdk/apps/qml/QtQml/qtqml-javascript-imports/>`_  for more
 information on how to import JavaScript resources and how to use the
 functionality they provide.
 
@@ -62,6 +66,6 @@ unfamiliar to JavaScript developers.
 
 These limitations and extensions are documented in the description of
 the `JavaScript Host
-Environment </sdk/apps/qml/QtQml/qtqml-javascript-hostenvironment/>`__
+Environment </sdk/apps/qml/QtQml/qtqml-javascript-hostenvironment/>`_ 
 provided by the QML engine.
 

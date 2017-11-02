@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_tiltreading:
+QtSensors TiltReading
+=====================
+
 The TiltReading element holds the most recent TiltSensor reading.
 
 +--------------------------------------+--------------------------------------+
@@ -5,24 +9,23 @@ The TiltReading element holds the most recent TiltSensor reading.
 +--------------------------------------+--------------------------------------+
 | Since:                               | QtSensors 5.0                        |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `SensorReading </sdk/apps/qml/QtSens |
-|                                      | ors/SensorReading/>`__               |
+| Inherits:                            | :ref:`SensorReading <sdk_qtsensors_sensor |
+|                                      | reading>`_                           |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`xRotation </sdk/apps/qml/QtSensors/TiltReading#xRotation-prop>`__****
-   : qreal
--  ****`yRotation </sdk/apps/qml/QtSensors/TiltReading#yRotation-prop>`__****
-   : qreal
+-  :ref:`xRotation <sdk_qtsensors_tiltreading_xRotation-prop>` :
+   qreal
+-  :ref:`yRotation <sdk_qtsensors_tiltreading_yRotation-prop>` :
+   qreal
 
 Detailed Description
 --------------------
 
-The `TiltReading </sdk/apps/qml/QtSensors/TiltReading/>`__ element holds
-the most recent `TiltSensor </sdk/apps/qml/QtSensors/TiltSensor/>`__
-reading.
+The :ref:`TiltReading <sdk_qtsensors_tiltreading>` element holds the most
+recent :ref:`TiltSensor <sdk_qtsensors_tiltsensor>` reading.
 
 This element wraps the QTiltReading class. Please see the documentation
 for QTiltReading for details.
@@ -31,6 +34,8 @@ This element cannot be directly created.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtsensors_tiltreading_xRotation-prop:
 
 +--------------------------------------------------------------------------+
 |        \ xRotation : qreal                                               |
@@ -41,6 +46,8 @@ This property holds the amount of tilt on the X axis.
 Please see QTiltReading::xRotation for information about this property.
 
 | 
+
+.. _sdk_qtsensors_tiltreading_yRotation-prop:
 
 +--------------------------------------------------------------------------+
 |        \ yRotation : qreal                                               |

@@ -1,3 +1,7 @@
+.. _sdk_qtquick_pathsvg:
+QtQuick PathSvg
+===============
+
 Defines a path using an SVG path data string
 
 +---------------------+----------------------+
@@ -7,7 +11,7 @@ Defines a path using an SVG path data string
 Properties
 ----------
 
--  ****`path </sdk/apps/qml/QtQuick/PathSvg#path-prop>`__**** : string
+-  :ref:`path <sdk_qtquick_pathsvg_path-prop>` : string
 
 Detailed Description
 --------------------
@@ -24,15 +28,17 @@ The following QML produces the path shown below:
 |                                      |     }                                |
 +--------------------------------------+--------------------------------------+
 
-**See also** `Path </sdk/apps/qml/QtQuick/Path/>`__,
-`PathLine </sdk/apps/qml/QtQuick/PathLine/>`__,
-`PathQuad </sdk/apps/qml/QtQuick/PathQuad/>`__,
-`PathCubic </sdk/apps/qml/QtQuick/PathCubic/>`__,
-`PathArc </sdk/apps/qml/QtQuick/PathArc/>`__, and
-`PathCurve </sdk/apps/qml/QtQuick/PathCurve/>`__.
+**See also** :ref:`Path <sdk_qtquick_path>`,
+:ref:`PathLine <sdk_qtquick_pathline>`,
+:ref:`PathQuad <sdk_qtquick_pathquad>`,
+:ref:`PathCubic <sdk_qtquick_pathcubic>`,
+:ref:`PathArc <sdk_qtquick_patharc>`, and
+:ref:`PathCurve <sdk_qtquick_pathcurve>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_pathsvg_path-prop:
 
 +--------------------------------------------------------------------------+
 |        \ path : string                                                   |
@@ -40,10 +46,10 @@ Property Documentation
 
 The SVG path data string specifying the path.
 
-See `W3C SVG Path Data <http://www.w3.org/TR/SVG/paths.html#PathData>`__
+See `W3C SVG Path Data <http://www.w3.org/TR/SVG/paths.html#PathData>`_ 
 for more details on this format.
 
 | 
 
-.. |image0| image:: /media/sdk/apps/qml/QtQuick/PathSvg/images/declarative-pathsvg.png
+.. |image0| image:: /mediasdk_qtquick_pathsvgimages/declarative-pathsvg.png
 

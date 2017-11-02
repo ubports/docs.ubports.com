@@ -1,3 +1,7 @@
+.. _sdk_u1db_synchronizer:
+U1db Synchronizer
+=================
+
 The Synchronizer class handles synchronizing between two databases.
 
 +--------------------------------------+--------------------------------------+
@@ -12,50 +16,46 @@ Public Functions
 ----------------
 
 +--------------------------------------+--------------------------------------+
-|                                      | **`Synchronizer </sdk/scopes/cpp/U1d |
-|                                      | b/Synchronizer#Synchronizer>`__**\ ( |
-|                                      | QObject                              |
+|                                      | **:ref:`Synchronizer <sdk_u1db_synchroniz |
+|                                      | er#Synchronizer>`_ **\ (QObject      |
 |                                      | \* *parent* = 0)                     |
 +--------------------------------------+--------------------------------------+
-| bool                                 | **`getResolveToSource </sdk/scopes/c |
-|                                      | pp/U1db/Synchronizer#getResolveToSou |
-|                                      | rce>`__**\ ()                        |
+| bool                                 | **:ref:`getResolveToSource <sdk_u1db_sync |
+|                                      | hronizer#getResolveToSource>`_ **\ ( |
+|                                      | )                                    |
 +--------------------------------------+--------------------------------------+
-| Database \*                          | **`getSource </sdk/scopes/cpp/U1db/S |
-|                                      | ynchronizer#getSource>`__**\ ()      |
+| Database \*                          | **:ref:`getSource <sdk_u1db_synchronizer# |
+|                                      | getSource>`_ **\ ()                  |
 +--------------------------------------+--------------------------------------+
-| bool                                 | **`getSync </sdk/scopes/cpp/U1db/Syn |
-|                                      | chronizer#getSync>`__**\ ()          |
+| bool                                 | **:ref:`getSync <sdk_u1db_synchronizer#ge |
+|                                      | tSync>`_ **\ ()                      |
 +--------------------------------------+--------------------------------------+
-| QList<QVariant>                      | **`getSyncOutput </sdk/scopes/cpp/U1 |
-|                                      | db/Synchronizer#getSyncOutput>`__**\ |
-|                                      |  ()                                  |
+| QList<QVariant>                      | **:ref:`getSyncOutput <sdk_u1db_synchroni |
+|                                      | zer#getSyncOutput>`_ **\ ()          |
 +--------------------------------------+--------------------------------------+
-| QVariant                             | **`getTargets </sdk/scopes/cpp/U1db/ |
-|                                      | Synchronizer#getTargets>`__**\ ()    |
+| QVariant                             | **:ref:`getTargets <sdk_u1db_synchronizer |
+|                                      | #getTargets>`_ **\ ()                |
 +--------------------------------------+--------------------------------------+
-| void                                 | **`setResolveToSource </sdk/scopes/c |
-|                                      | pp/U1db/Synchronizer#setResolveToSou |
-|                                      | rce>`__**\ (bool                     |
+| void                                 | **:ref:`setResolveToSource <sdk_u1db_sync |
+|                                      | hronizer#setResolveToSource>`_ **\ ( |
+|                                      | bool                                 |
 |                                      | *resolve\_to\_source*)               |
 +--------------------------------------+--------------------------------------+
-| void                                 | **`setSource </sdk/scopes/cpp/U1db/S |
-|                                      | ynchronizer#setSource>`__**\ (Databa |
-|                                      | se                                   |
+| void                                 | **:ref:`setSource <sdk_u1db_synchronizer# |
+|                                      | setSource>`_ **\ (Database           |
 |                                      | \* *source*)                         |
 +--------------------------------------+--------------------------------------+
-| void                                 | **`setSync </sdk/scopes/cpp/U1db/Syn |
-|                                      | chronizer#setSync>`__**\ (bool       |
+| void                                 | **:ref:`setSync <sdk_u1db_synchronizer#se |
+|                                      | tSync>`_ **\ (bool                   |
 |                                      | *synchronize*)                       |
 +--------------------------------------+--------------------------------------+
-| void                                 | **`setSyncOutput </sdk/scopes/cpp/U1 |
-|                                      | db/Synchronizer#setSyncOutput>`__**\ |
-|                                      |  (QList<QVariant>                    |
+| void                                 | **:ref:`setSyncOutput <sdk_u1db_synchroni |
+|                                      | zer#setSyncOutput>`_ **\ (QList<QVar |
+|                                      | iant>                                |
 |                                      | *sync\_output*)                      |
 +--------------------------------------+--------------------------------------+
-| void                                 | **`setTargets </sdk/scopes/cpp/U1db/ |
-|                                      | Synchronizer#setTargets>`__**\ (QVar |
-|                                      | iant                                 |
+| void                                 | **:ref:`setTargets <sdk_u1db_synchronizer |
+|                                      | #setTargets>`_ **\ (QVariant         |
 |                                      | *targets*)                           |
 +--------------------------------------+--------------------------------------+
 

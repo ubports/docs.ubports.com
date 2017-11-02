@@ -1,3 +1,7 @@
+.. _sdk_qtcontacts_tag:
+QtContacts Tag
+==============
+
 The Tag element provides a contains a tag associated with a contact.
 
 +---------------------+-------------------------+
@@ -7,7 +11,7 @@ The Tag element provides a contains a tag associated with a contact.
 Properties
 ----------
 
--  ****`tag </sdk/apps/qml/QtContacts/Tag#tag-prop>`__**** : string
+-  :ref:`tag <sdk_qtcontacts_tag_tag-prop>` : string
 
 Detailed Description
 --------------------
@@ -22,6 +26,8 @@ This element is part of the **QtContacts** module.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtcontacts_tag_tag-prop:
 
 +--------------------------------------------------------------------------+
 |        \ tag : string                                                    |

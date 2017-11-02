@@ -1,3 +1,7 @@
+.. _sdk_qtquick_qt_quick_examples_-_right_to_left:
+QtQuick Qt Quick Examples - Right to Left
+=========================================
+
 
 
 |image0|
@@ -5,7 +9,7 @@
 *Right to Left* is a collection of small QML examples relating to right
 to left (RTL) localization support. For more information, visit
 `Right-to-left User
-Interfaces </sdk/apps/qml/QtQuick/qtquick-positioning-righttoleft/>`__.
+Interfaces </sdk/apps/qml/QtQuick/qtquick-positioning-righttoleft/>`_ .
 
 These are the examples in Right to Left:
 

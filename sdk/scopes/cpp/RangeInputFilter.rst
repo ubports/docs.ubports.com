@@ -1,5 +1,9 @@
+.. _sdk_rangeinputfilter:
+RangeInputFilter
+================
+
 A range filter allows a start and end value to be entered by the user.
-`More... </sdk/scopes/cpp/unity.scopes.RangeInputFilter#details>`__
+`More... </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#details>`_ 
 
 ``#include <unity/scopes/RangeInputFilter.h>``
 
@@ -14,7 +18,7 @@ Inheritance diagram for unity::scopes::RangeInputFilter:
 
 std::string 
 
-`start\_prefix\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter#a1a4cf761c6bfa2e07eb24b6f584ec05b>`__
+`start\_prefix\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#a1a4cf761c6bfa2e07eb24b6f584ec05b>`_ 
 () const
 
  
@@ -25,7 +29,7 @@ std::string 
 
 std::string 
 
-`start\_postfix\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter#a9e2a6ec4e9c06234ee4759dce2644008>`__
+`start\_postfix\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#a9e2a6ec4e9c06234ee4759dce2644008>`_ 
 () const
 
  
@@ -36,7 +40,7 @@ std::string 
 
 std::string 
 
-`end\_prefix\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter#a8acb48c94b3e9b6ca228a0e7ebb26ae5>`__
+`end\_prefix\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#a8acb48c94b3e9b6ca228a0e7ebb26ae5>`_ 
 () const
 
  
@@ -47,7 +51,7 @@ std::string 
 
 std::string 
 
-`end\_postfix\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter#a81dde713bcfb2b2ca24683ba9e808e34>`__
+`end\_postfix\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#a81dde713bcfb2b2ca24683ba9e808e34>`_ 
 () const
 
  
@@ -58,7 +62,7 @@ std::string 
 
 std::string 
 
-`central\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter#a41f517d0071ca0f953c478f8272bf41b>`__
+`central\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#a41f517d0071ca0f953c478f8272bf41b>`_ 
 () const
 
  
@@ -67,9 +71,9 @@ std::string 
 
  
 
-`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`__ 
+`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`_  
 
-`default\_start\_value </sdk/scopes/cpp/unity.scopes.RangeInputFilter#adf545096dacbea4303361527450321fa>`__
+`default\_start\_value </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#adf545096dacbea4303361527450321fa>`_ 
 () const
 
  
@@ -78,9 +82,9 @@ std::string 
 
  
 
-`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`__ 
+`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`_  
 
-`default\_end\_value </sdk/scopes/cpp/unity.scopes.RangeInputFilter#aaf471258f02a8af0f7bfdb186ed61b0e>`__
+`default\_end\_value </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#aaf471258f02a8af0f7bfdb186ed61b0e>`_ 
 () const
 
  
@@ -91,8 +95,8 @@ std::string 
 
 bool 
 
-`has\_start\_value </sdk/scopes/cpp/unity.scopes.RangeInputFilter#a64f2c9ff7ed484f49d26f601f30e8616>`__
-(`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ const
+`has\_start\_value </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#a64f2c9ff7ed484f49d26f601f30e8616>`_ 
+(`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  const
 &filter\_state) const
 
  
@@ -103,8 +107,8 @@ bool 
 
 bool 
 
-`has\_end\_value </sdk/scopes/cpp/unity.scopes.RangeInputFilter#ae459a665a5dae27445547b1c0be8c7c3>`__
-(`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ const
+`has\_end\_value </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#ae459a665a5dae27445547b1c0be8c7c3>`_ 
+(`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  const
 &filter\_state) const
 
  
@@ -115,8 +119,8 @@ bool 
 
 double 
 
-`start\_value </sdk/scopes/cpp/unity.scopes.RangeInputFilter#afd86208a5f8fe8a81877bd0bf4588758>`__
-(`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ const
+`start\_value </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#afd86208a5f8fe8a81877bd0bf4588758>`_ 
+(`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  const
 &filter\_state) const
 
  
@@ -127,8 +131,8 @@ double 
 
 double 
 
-`end\_value </sdk/scopes/cpp/unity.scopes.RangeInputFilter#af5bee0ddf65a375a4a5e19b4313de940>`__
-(`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ const
+`end\_value </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#af5bee0ddf65a375a4a5e19b4313de940>`_ 
+(`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  const
 &filter\_state) const
 
  
@@ -139,13 +143,13 @@ double 
 
 void 
 
-`update\_state </sdk/scopes/cpp/unity.scopes.RangeInputFilter#a5fa97b63d86a89e7144a89e0996d1304>`__
-(`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__
-&filter\_state, `Variant </sdk/scopes/cpp/unity.scopes.Variant/>`__
+`update\_state </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#a5fa97b63d86a89e7144a89e0996d1304>`_ 
+(`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_ 
+&filter\_state, `Variant </sdk/scopes/cpp/unity.scopes.Variant/>`_ 
 const
-&\ `start\_value </sdk/scopes/cpp/unity.scopes.RangeInputFilter#afd86208a5f8fe8a81877bd0bf4588758>`__,
-`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`__ const
-&\ `end\_value </sdk/scopes/cpp/unity.scopes.RangeInputFilter#af5bee0ddf65a375a4a5e19b4313de940>`__)
+&\ `start\_value </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#afd86208a5f8fe8a81877bd0bf4588758>`_ ,
+`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`_  const
+&\ `end\_value </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#af5bee0ddf65a375a4a5e19b4313de940>`_ )
 const
 
  
@@ -155,11 +159,11 @@ const
  
 
 |-| Public Member Functions inherited from
-`unity::scopes::FilterBase </sdk/scopes/cpp/unity.scopes.FilterBase/>`__
+`unity::scopes::FilterBase </sdk/scopes/cpp/unity.scopes.FilterBase/>`_ 
 
 void 
 
-`set\_display\_hints </sdk/scopes/cpp/unity.scopes.FilterBase#ab4ab1b600ce3967dc50255e736c6d02e>`__
+`set\_display\_hints </sdk/scopes/cpp/unity.scopes.FilterBase/#ab4ab1b600ce3967dc50255e736c6d02e>`_ 
 (int hints)
 
  
@@ -170,7 +174,7 @@ void 
 
 int 
 
-`display\_hints </sdk/scopes/cpp/unity.scopes.FilterBase#a8f20819591155edaab29d535c5c4c261>`__
+`display\_hints </sdk/scopes/cpp/unity.scopes.FilterBase/#a8f20819591155edaab29d535c5c4c261>`_ 
 () const
 
  
@@ -181,7 +185,7 @@ int 
 
 std::string 
 
-`id </sdk/scopes/cpp/unity.scopes.FilterBase#a1f2d96647b23af77b1ff1cffc80f3868>`__
+`id </sdk/scopes/cpp/unity.scopes.FilterBase/#a1f2d96647b23af77b1ff1cffc80f3868>`_ 
 () const
 
  
@@ -192,7 +196,7 @@ std::string 
 
 std::string 
 
-`filter\_type </sdk/scopes/cpp/unity.scopes.FilterBase#aadc7344c951961331dcbe67149d56c78>`__
+`filter\_type </sdk/scopes/cpp/unity.scopes.FilterBase/#aadc7344c951961331dcbe67149d56c78>`_ 
 () const
 
  
@@ -203,9 +207,9 @@ std::string 
 
 void 
 
-`set\_title </sdk/scopes/cpp/unity.scopes.FilterBase#aec8ceae8141811833af087ba2ebe086c>`__
+`set\_title </sdk/scopes/cpp/unity.scopes.FilterBase/#aec8ceae8141811833af087ba2ebe086c>`_ 
 (std::string const
-&\ `title </sdk/scopes/cpp/unity.scopes.FilterBase#a3f0c324b3aac39bb8967fc900f3a909e>`__)
+&\ `title </sdk/scopes/cpp/unity.scopes.FilterBase/#a3f0c324b3aac39bb8967fc900f3a909e>`_ )
 
  
 
@@ -215,7 +219,7 @@ void 
 
 std::string 
 
-`title </sdk/scopes/cpp/unity.scopes.FilterBase#a3f0c324b3aac39bb8967fc900f3a909e>`__
+`title </sdk/scopes/cpp/unity.scopes.FilterBase/#a3f0c324b3aac39bb8967fc900f3a909e>`_ 
 () const
 
  
@@ -226,7 +230,7 @@ std::string 
 
 FilterGroup::SCPtr 
 
-`filter\_group </sdk/scopes/cpp/unity.scopes.FilterBase#afff4685371fe67e6f87f58e31f69a037>`__
+`filter\_group </sdk/scopes/cpp/unity.scopes.FilterBase/#afff4685371fe67e6f87f58e31f69a037>`_ 
 () const
 
  
@@ -240,19 +244,19 @@ FilterGroup::SCPtr 
 
 static RangeInputFilter::SPtr 
 
-`create </sdk/scopes/cpp/unity.scopes.RangeInputFilter#a0717644ec86abcdc9dabf30302fead5d>`__
+`create </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#a0717644ec86abcdc9dabf30302fead5d>`_ 
 (std::string const
-&\ `id </sdk/scopes/cpp/unity.scopes.FilterBase#a1f2d96647b23af77b1ff1cffc80f3868>`__,
+&\ `id </sdk/scopes/cpp/unity.scopes.FilterBase/#a1f2d96647b23af77b1ff1cffc80f3868>`_ ,
 std::string const
-&\ `start\_prefix\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter#a1a4cf761c6bfa2e07eb24b6f584ec05b>`__,
+&\ `start\_prefix\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#a1a4cf761c6bfa2e07eb24b6f584ec05b>`_ ,
 std::string const
-&\ `start\_postfix\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter#a9e2a6ec4e9c06234ee4759dce2644008>`__,
+&\ `start\_postfix\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#a9e2a6ec4e9c06234ee4759dce2644008>`_ ,
 std::string const
-&\ `central\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter#a41f517d0071ca0f953c478f8272bf41b>`__,
+&\ `central\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#a41f517d0071ca0f953c478f8272bf41b>`_ ,
 std::string const
-&\ `end\_prefix\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter#a8acb48c94b3e9b6ca228a0e7ebb26ae5>`__,
+&\ `end\_prefix\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#a8acb48c94b3e9b6ca228a0e7ebb26ae5>`_ ,
 std::string const
-&\ `end\_postfix\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter#a81dde713bcfb2b2ca24683ba9e808e34>`__)
+&\ `end\_postfix\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#a81dde713bcfb2b2ca24683ba9e808e34>`_ )
 
  
 
@@ -262,23 +266,23 @@ std::string const
 
 static RangeInputFilter::SPtr 
 
-`create </sdk/scopes/cpp/unity.scopes.RangeInputFilter#af011c6e541e7a3776cccacf88fdba2b5>`__
+`create </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#af011c6e541e7a3776cccacf88fdba2b5>`_ 
 (std::string const
-&\ `id </sdk/scopes/cpp/unity.scopes.FilterBase#a1f2d96647b23af77b1ff1cffc80f3868>`__,
-`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`__ const
-&\ `default\_start\_value </sdk/scopes/cpp/unity.scopes.RangeInputFilter#adf545096dacbea4303361527450321fa>`__,
-`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`__ const
-&\ `default\_end\_value </sdk/scopes/cpp/unity.scopes.RangeInputFilter#aaf471258f02a8af0f7bfdb186ed61b0e>`__,
+&\ `id </sdk/scopes/cpp/unity.scopes.FilterBase/#a1f2d96647b23af77b1ff1cffc80f3868>`_ ,
+`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`_  const
+&\ `default\_start\_value </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#adf545096dacbea4303361527450321fa>`_ ,
+`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`_  const
+&\ `default\_end\_value </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#aaf471258f02a8af0f7bfdb186ed61b0e>`_ ,
 std::string const
-&\ `start\_prefix\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter#a1a4cf761c6bfa2e07eb24b6f584ec05b>`__,
+&\ `start\_prefix\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#a1a4cf761c6bfa2e07eb24b6f584ec05b>`_ ,
 std::string const
-&\ `start\_postfix\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter#a9e2a6ec4e9c06234ee4759dce2644008>`__,
+&\ `start\_postfix\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#a9e2a6ec4e9c06234ee4759dce2644008>`_ ,
 std::string const
-&\ `central\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter#a41f517d0071ca0f953c478f8272bf41b>`__,
+&\ `central\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#a41f517d0071ca0f953c478f8272bf41b>`_ ,
 std::string const
-&\ `end\_prefix\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter#a8acb48c94b3e9b6ca228a0e7ebb26ae5>`__,
+&\ `end\_prefix\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#a8acb48c94b3e9b6ca228a0e7ebb26ae5>`_ ,
 std::string const
-&\ `end\_postfix\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter#a81dde713bcfb2b2ca24683ba9e808e34>`__)
+&\ `end\_postfix\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#a81dde713bcfb2b2ca24683ba9e808e34>`_ )
 
  
 
@@ -289,19 +293,19 @@ std::string const
 
 static RangeInputFilter::SPtr 
 
-`create </sdk/scopes/cpp/unity.scopes.RangeInputFilter#aba826b77159d4d51ec804c2132ff0f62>`__
+`create </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#aba826b77159d4d51ec804c2132ff0f62>`_ 
 (std::string const
-&\ `id </sdk/scopes/cpp/unity.scopes.FilterBase#a1f2d96647b23af77b1ff1cffc80f3868>`__,
+&\ `id </sdk/scopes/cpp/unity.scopes.FilterBase/#a1f2d96647b23af77b1ff1cffc80f3868>`_ ,
 std::string const
-&\ `start\_prefix\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter#a1a4cf761c6bfa2e07eb24b6f584ec05b>`__,
+&\ `start\_prefix\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#a1a4cf761c6bfa2e07eb24b6f584ec05b>`_ ,
 std::string const
-&\ `start\_postfix\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter#a9e2a6ec4e9c06234ee4759dce2644008>`__,
+&\ `start\_postfix\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#a9e2a6ec4e9c06234ee4759dce2644008>`_ ,
 std::string const
-&\ `central\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter#a41f517d0071ca0f953c478f8272bf41b>`__,
+&\ `central\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#a41f517d0071ca0f953c478f8272bf41b>`_ ,
 std::string const
-&\ `end\_prefix\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter#a8acb48c94b3e9b6ca228a0e7ebb26ae5>`__,
+&\ `end\_prefix\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#a8acb48c94b3e9b6ca228a0e7ebb26ae5>`_ ,
 std::string const
-&\ `end\_postfix\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter#a81dde713bcfb2b2ca24683ba9e808e34>`__,
+&\ `end\_postfix\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#a81dde713bcfb2b2ca24683ba9e808e34>`_ ,
 FilterGroup::SCPtr const &group)
 
  
@@ -312,23 +316,23 @@ FilterGroup::SCPtr const &group)
 
 static RangeInputFilter::SPtr 
 
-`create </sdk/scopes/cpp/unity.scopes.RangeInputFilter#ac782e01462c0f1868fca744119da91c6>`__
+`create </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#ac782e01462c0f1868fca744119da91c6>`_ 
 (std::string const
-&\ `id </sdk/scopes/cpp/unity.scopes.FilterBase#a1f2d96647b23af77b1ff1cffc80f3868>`__,
-`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`__ const
-&\ `default\_start\_value </sdk/scopes/cpp/unity.scopes.RangeInputFilter#adf545096dacbea4303361527450321fa>`__,
-`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`__ const
-&\ `default\_end\_value </sdk/scopes/cpp/unity.scopes.RangeInputFilter#aaf471258f02a8af0f7bfdb186ed61b0e>`__,
+&\ `id </sdk/scopes/cpp/unity.scopes.FilterBase/#a1f2d96647b23af77b1ff1cffc80f3868>`_ ,
+`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`_  const
+&\ `default\_start\_value </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#adf545096dacbea4303361527450321fa>`_ ,
+`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`_  const
+&\ `default\_end\_value </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#aaf471258f02a8af0f7bfdb186ed61b0e>`_ ,
 std::string const
-&\ `start\_prefix\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter#a1a4cf761c6bfa2e07eb24b6f584ec05b>`__,
+&\ `start\_prefix\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#a1a4cf761c6bfa2e07eb24b6f584ec05b>`_ ,
 std::string const
-&\ `start\_postfix\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter#a9e2a6ec4e9c06234ee4759dce2644008>`__,
+&\ `start\_postfix\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#a9e2a6ec4e9c06234ee4759dce2644008>`_ ,
 std::string const
-&\ `central\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter#a41f517d0071ca0f953c478f8272bf41b>`__,
+&\ `central\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#a41f517d0071ca0f953c478f8272bf41b>`_ ,
 std::string const
-&\ `end\_prefix\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter#a8acb48c94b3e9b6ca228a0e7ebb26ae5>`__,
+&\ `end\_prefix\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#a8acb48c94b3e9b6ca228a0e7ebb26ae5>`_ ,
 std::string const
-&\ `end\_postfix\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter#a81dde713bcfb2b2ca24683ba9e808e34>`__,
+&\ `end\_postfix\_label </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#a81dde713bcfb2b2ca24683ba9e808e34>`_ ,
 FilterGroup::SCPtr const &group)
 
  
@@ -340,13 +344,13 @@ FilterGroup::SCPtr const &group)
 
 static void 
 
-`update\_state </sdk/scopes/cpp/unity.scopes.RangeInputFilter#a7cb0b4523641ea4dec9b3c619f5b9c21>`__
-(`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__
+`update\_state </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#a7cb0b4523641ea4dec9b3c619f5b9c21>`_ 
+(`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_ 
 &filter\_state, std::string const &filter\_id,
-`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`__ const
-&\ `start\_value </sdk/scopes/cpp/unity.scopes.RangeInputFilter#afd86208a5f8fe8a81877bd0bf4588758>`__,
-`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`__ const
-&\ `end\_value </sdk/scopes/cpp/unity.scopes.RangeInputFilter#af5bee0ddf65a375a4a5e19b4313de940>`__)
+`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`_  const
+&\ `start\_value </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#afd86208a5f8fe8a81877bd0bf4588758>`_ ,
+`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`_  const
+&\ `end\_value </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#af5bee0ddf65a375a4a5e19b4313de940>`_ )
 
  
 
@@ -359,21 +363,21 @@ static void 
 ------------------------------------
 
 |-| Public Types inherited from
-`unity::scopes::FilterBase </sdk/scopes/cpp/unity.scopes.FilterBase/>`__
+`unity::scopes::FilterBase </sdk/scopes/cpp/unity.scopes.FilterBase/>`_ 
 
 enum  
 
-`DisplayHints </sdk/scopes/cpp/unity.scopes.FilterBase#ab9e833d5e4029fed745d15ba63715159>`__
+`DisplayHints </sdk/scopes/cpp/unity.scopes.FilterBase/#ab9e833d5e4029fed745d15ba63715159>`_ 
 {
-`Default </sdk/scopes/cpp/unity.scopes.FilterBase#ab9e833d5e4029fed745d15ba63715159a277f24de7d0bcc7e8ec8bfe0639f356f>`__
+`Default </sdk/scopes/cpp/unity.scopes.FilterBase/#ab9e833d5e4029fed745d15ba63715159a277f24de7d0bcc7e8ec8bfe0639f356f>`_ 
 = 0,
-`Primary </sdk/scopes/cpp/unity.scopes.FilterBase#ab9e833d5e4029fed745d15ba63715159a8c8262ffd071c61b213ec489b64bdf56>`__
+`Primary </sdk/scopes/cpp/unity.scopes.FilterBase/#ab9e833d5e4029fed745d15ba63715159a8c8262ffd071c61b213ec489b64bdf56>`_ 
 = 1 }
 
  
 
 | Display hints for the Shell UI.
-  `More... </sdk/scopes/cpp/unity.scopes.FilterBase#ab9e833d5e4029fed745d15ba63715159>`__
+  `More... </sdk/scopes/cpp/unity.scopes.FilterBase/#ab9e833d5e4029fed745d15ba63715159>`_ 
 
  
 
@@ -382,7 +386,7 @@ Detailed Description
 
 A range filter allows a start and end value to be entered by the user.
 
-A `RangeInputFilter </sdk/scopes/cpp/unity.scopes.RangeInputFilter/>`__
+A `RangeInputFilter </sdk/scopes/cpp/unity.scopes.RangeInputFilter/>`_ 
 is composed of two input boxes that accept numeric values (both of them
 optional). The filter can have prefix and/or postfix labels for the
 start and end value, respectively, plus a single label that is displayed
@@ -482,7 +486,7 @@ Returns
 +--------------------------------------+--------------------------------------+
 
 Creates a
-`RangeInputFilter </sdk/scopes/cpp/unity.scopes.RangeInputFilter/>`__.
+`RangeInputFilter </sdk/scopes/cpp/unity.scopes.RangeInputFilter/>`_ .
 
 Parameters
     +-------------------------+---------------------------------------------------------------------------------------------------+
@@ -501,7 +505,7 @@ Parameters
 
 Returns
     Instance of
-    `RangeInputFilter </sdk/scopes/cpp/unity.scopes.RangeInputFilter/>`__.
+    `RangeInputFilter </sdk/scopes/cpp/unity.scopes.RangeInputFilter/>`_ .
 
 +--------------------------------------+--------------------------------------+
 | +--------------------+-------------- | static                               |
@@ -532,7 +536,7 @@ Returns
 |       | pes/cpp/unity.scop | alue*,  |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
-|       | es.Variant/>`__    |         |                                      |
+|       | es.Variant/>`_     |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
 |       | const &            |         |                                      |
@@ -547,7 +551,7 @@ Returns
 |       | pes/cpp/unity.scop | ue*,    |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
-|       | es.Variant/>`__    |         |                                      |
+|       | es.Variant/>`_     |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
 |       | const &            |         |                                      |
@@ -609,7 +613,7 @@ Returns
 +--------------------------------------+--------------------------------------+
 
 Creates a
-`RangeInputFilter </sdk/scopes/cpp/unity.scopes.RangeInputFilter/>`__
+`RangeInputFilter </sdk/scopes/cpp/unity.scopes.RangeInputFilter/>`_ 
 with specific default values for start and end.
 
 Parameters
@@ -633,7 +637,7 @@ Parameters
 
 Returns
     Instance of
-    `RangeInputFilter </sdk/scopes/cpp/unity.scopes.RangeInputFilter/>`__.
+    `RangeInputFilter </sdk/scopes/cpp/unity.scopes.RangeInputFilter/>`_ .
 
 +--------------------------------------+--------------------------------------+
 | +--------------------+-------------- | static                               |
@@ -720,8 +724,8 @@ Returns
 +--------------------------------------+--------------------------------------+
 
 Creates a
-`RangeInputFilter </sdk/scopes/cpp/unity.scopes.RangeInputFilter/>`__
-inside a `FilterGroup </sdk/scopes/cpp/unity.scopes.FilterGroup/>`__.
+`RangeInputFilter </sdk/scopes/cpp/unity.scopes.RangeInputFilter/>`_ 
+inside a `FilterGroup </sdk/scopes/cpp/unity.scopes.FilterGroup/>`_ .
 
 Parameters
     +-------------------------+---------------------------------------------------------------------------------------------------+
@@ -742,7 +746,7 @@ Parameters
 
 Returns
     Instance of
-    `RangeInputFilter </sdk/scopes/cpp/unity.scopes.RangeInputFilter/>`__.
+    `RangeInputFilter </sdk/scopes/cpp/unity.scopes.RangeInputFilter/>`_ .
 
 +--------------------------------------+--------------------------------------+
 | +--------------------+-------------- | static                               |
@@ -773,7 +777,7 @@ Returns
 |       | pes/cpp/unity.scop | alue*,  |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
-|       | es.Variant/>`__    |         |                                      |
+|       | es.Variant/>`_     |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
 |       | const &            |         |                                      |
@@ -788,7 +792,7 @@ Returns
 |       | pes/cpp/unity.scop | ue*,    |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
-|       | es.Variant/>`__    |         |                                      |
+|       | es.Variant/>`_     |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
 |       | const &            |         |                                      |
@@ -859,9 +863,9 @@ Returns
 +--------------------------------------+--------------------------------------+
 
 Creates a
-`RangeInputFilter </sdk/scopes/cpp/unity.scopes.RangeInputFilter/>`__
+`RangeInputFilter </sdk/scopes/cpp/unity.scopes.RangeInputFilter/>`_ 
 with specific default values for start and end, inside a
-`FilterGroup </sdk/scopes/cpp/unity.scopes.FilterGroup/>`__.
+`FilterGroup </sdk/scopes/cpp/unity.scopes.FilterGroup/>`_ .
 
 Parameters
     +-------------------------+---------------------------------------------------------------------------------------------------+
@@ -886,13 +890,13 @@ Parameters
 
 Returns
     Instance of
-    `RangeInputFilter </sdk/scopes/cpp/unity.scopes.RangeInputFilter/>`__.
+    `RangeInputFilter </sdk/scopes/cpp/unity.scopes.RangeInputFilter/>`_ .
 
 +----------------+----------------+----------------+----------------+----------------+
 | `Variant </sdk | (              |                | )              | const          |
 | /scopes/cpp/un |                |                |                |                |
 | ity.scopes.Var |                |                |                |                |
-| iant/>`__      |                |                |                |                |
+| iant/>`_       |                |                |                |                |
 | unity::scopes: |                |                |                |                |
 | :RangeInputFil |                |                |                |                |
 | ter::default\_ |                |                |                |                |
@@ -902,17 +906,17 @@ Returns
 Get default end value if set (int, double or null).
 
 The default value should be used unless a value is present in the
-`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ - use
-`unity::scopes::RangeInputFilter::has\_end\_value() </sdk/scopes/cpp/unity.scopes.RangeInputFilter#ae459a665a5dae27445547b1c0be8c7c3>`__
+`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  - use
+`unity::scopes::RangeInputFilter::has\_end\_value() </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#ae459a665a5dae27445547b1c0be8c7c3>`_ 
 and
-`unity::scopes::RangeInputFilter::end\_value() </sdk/scopes/cpp/unity.scopes.RangeInputFilter#af5bee0ddf65a375a4a5e19b4313de940>`__
+`unity::scopes::RangeInputFilter::end\_value() </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#af5bee0ddf65a375a4a5e19b4313de940>`_ 
 before resorting to the default value.
 
 +----------------+----------------+----------------+----------------+----------------+
 | `Variant </sdk | (              |                | )              | const          |
 | /scopes/cpp/un |                |                |                |                |
 | ity.scopes.Var |                |                |                |                |
-| iant/>`__      |                |                |                |                |
+| iant/>`_       |                |                |                |                |
 | unity::scopes: |                |                |                |                |
 | :RangeInputFil |                |                |                |                |
 | ter::default\_ |                |                |                |                |
@@ -922,10 +926,10 @@ before resorting to the default value.
 Get the default start value if set (int, double or null).
 
 The default value should be used unless a value is present in the
-`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ - use
-`unity::scopes::RangeInputFilter::has\_start\_value() </sdk/scopes/cpp/unity.scopes.RangeInputFilter#a64f2c9ff7ed484f49d26f601f30e8616>`__
+`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  - use
+`unity::scopes::RangeInputFilter::has\_start\_value() </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#a64f2c9ff7ed484f49d26f601f30e8616>`_ 
 and
-`unity::scopes::RangeInputFilter::start\_value() </sdk/scopes/cpp/unity.scopes.RangeInputFilter#afd86208a5f8fe8a81877bd0bf4588758>`__
+`unity::scopes::RangeInputFilter::start\_value() </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#afd86208a5f8fe8a81877bd0bf4588758>`_ 
 before resorting to the default value.
 
 +----------------+----------------+----------------+----------------+----------------+
@@ -955,7 +959,7 @@ Returns
     The prefix label of end value.
 
 +------------------------------------------------------+-----+------------------------------------------------------------------------+-------------------+-----+---------+
-| double unity::scopes::RangeInputFilter::end\_value   | (   | `FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ const &    | *filter\_state*   | )   | const   |
+| double unity::scopes::RangeInputFilter::end\_value   | (   | `FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  const &    | *filter\_state*   | )   | const   |
 +------------------------------------------------------+-----+------------------------------------------------------------------------+-------------------+-----+---------+
 
 Get end value for this filter instance.
@@ -965,11 +969,11 @@ Returns
 
 Exceptions
     +------------------------------------------------------------------------------------------+------------------------------------------------------------------+
-    | `unity::scopes::NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/>`__   | if the end value is not set and the default end value is null.   |
+    | `unity::scopes::NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/>`_    | if the end value is not set and the default end value is null.   |
     +------------------------------------------------------------------------------------------+------------------------------------------------------------------+
 
 +---------------------------------------------------------+-----+------------------------------------------------------------------------+-------------------+-----+---------+
-| bool unity::scopes::RangeInputFilter::has\_end\_value   | (   | `FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ const &    | *filter\_state*   | )   | const   |
+| bool unity::scopes::RangeInputFilter::has\_end\_value   | (   | `FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  const &    | *filter\_state*   | )   | const   |
 +---------------------------------------------------------+-----+------------------------------------------------------------------------+-------------------+-----+---------+
 
 Check if filter state holds an end value for this filter instance.
@@ -983,7 +987,7 @@ Returns
     ``true`` if filter\_state has an end value for this filter.
 
 +-----------------------------------------------------------+-----+------------------------------------------------------------------------+-------------------+-----+---------+
-| bool unity::scopes::RangeInputFilter::has\_start\_value   | (   | `FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ const &    | *filter\_state*   | )   | const   |
+| bool unity::scopes::RangeInputFilter::has\_start\_value   | (   | `FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  const &    | *filter\_state*   | )   | const   |
 +-----------------------------------------------------------+-----+------------------------------------------------------------------------+-------------------+-----+---------+
 
 Check if filter state holds a start value for this filter instance.
@@ -1023,7 +1027,7 @@ Returns
     The prefix label of start value.
 
 +--------------------------------------------------------+-----+------------------------------------------------------------------------+-------------------+-----+---------+
-| double unity::scopes::RangeInputFilter::start\_value   | (   | `FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ const &    | *filter\_state*   | )   | const   |
+| double unity::scopes::RangeInputFilter::start\_value   | (   | `FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  const &    | *filter\_state*   | )   | const   |
 +--------------------------------------------------------+-----+------------------------------------------------------------------------+-------------------+-----+---------+
 
 Get the start value for this filter instance.
@@ -1033,24 +1037,24 @@ Returns
 
 Exceptions
     +------------------------------------------------------------------------------------------+----------------------------------------------------------------------+
-    | `unity::scopes::NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/>`__   | if the start value is not set and the default start value is null.   |
+    | `unity::scopes::NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/>`_    | if the start value is not set and the default start value is null.   |
     +------------------------------------------------------------------------------------------+----------------------------------------------------------------------+
 
 +--------------------+--------------------+--------------------+--------------------+
 | void               | (                  | `FilterState </sdk | *filter\_state*,   |
 | unity::scopes::Ran |                    | /scopes/cpp/unity. |                    |
 | geInputFilter::upd |                    | scopes.FilterState |                    |
-| ate\_state         |                    | />`__              |                    |
+| ate\_state         |                    | />`_               |                    |
 |                    |                    | &                  |                    |
 +--------------------+--------------------+--------------------+--------------------+
 |                    |                    | `Variant </sdk/sco | *start\_value*,    |
 |                    |                    | pes/cpp/unity.scop |                    |
-|                    |                    | es.Variant/>`__    |                    |
+|                    |                    | es.Variant/>`_     |                    |
 |                    |                    | const &            |                    |
 +--------------------+--------------------+--------------------+--------------------+
 |                    |                    | `Variant </sdk/sco | *end\_value*       |
 |                    |                    | pes/cpp/unity.scop |                    |
-|                    |                    | es.Variant/>`__    |                    |
+|                    |                    | es.Variant/>`_     |                    |
 |                    |                    | const &            |                    |
 +--------------------+--------------------+--------------------+--------------------+
 |                    | )                  |                    | const              |
@@ -1062,17 +1066,17 @@ Updates filter\_state with start and end values for this filter
 instance. Allowed data types for start\_value and end\_value are
 Variant::Type::Null, Variant::Type::Double and Variant::Type::Int.
 Integer values are converted to double when returned via
-`unity::scopes::RangeInputFilter::start\_value() </sdk/scopes/cpp/unity.scopes.RangeInputFilter#afd86208a5f8fe8a81877bd0bf4588758>`__
+`unity::scopes::RangeInputFilter::start\_value() </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#afd86208a5f8fe8a81877bd0bf4588758>`_ 
 and
-`unity::scopes::RangeInputFilter::end\_value() </sdk/scopes/cpp/unity.scopes.RangeInputFilter#af5bee0ddf65a375a4a5e19b4313de940>`__
+`unity::scopes::RangeInputFilter::end\_value() </sdk/scopes/cpp/unity.scopes.RangeInputFilter/#af5bee0ddf65a375a4a5e19b4313de940>`_ 
 methods. Pass
-`Variant::null() </sdk/scopes/cpp/unity.scopes.Variant#a2bd2d5425fdec9af9340c22e3b47ac1c>`__
+`Variant::null() </sdk/scopes/cpp/unity.scopes.Variant/#a2bd2d5425fdec9af9340c22e3b47ac1c>`_ 
 as start\_value or end\_value if that value is unspecified (hasn't been
 entered or was erased by the user from the input box).
 
 Parameters
     +-----------------+----------------------------------------------------------------------------------+
-    | filter\_state   | `FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ instance to update   |
+    | filter\_state   | `FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  instance to update   |
     +-----------------+----------------------------------------------------------------------------------+
     | start\_value    | Start value                                                                      |
     +-----------------+----------------------------------------------------------------------------------+
@@ -1093,7 +1097,7 @@ Parameters
 |       | scopes.FilterState |         |                                      |
 |             |                        |                                      |
 | | ate\_state         |               |                                      |
-|       | />`__              |         |                                      |
+|       | />`_               |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
 |       | &                  |         |                                      |
@@ -1117,7 +1121,7 @@ Parameters
 |       | pes/cpp/unity.scop |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
-|       | es.Variant/>`__    |         |                                      |
+|       | es.Variant/>`_     |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
 |       | const &            |         |                                      |
@@ -1132,7 +1136,7 @@ Parameters
 |       | pes/cpp/unity.scop |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
-|       | es.Variant/>`__    |         |                                      |
+|       | es.Variant/>`_     |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
 |       | const &            |         |                                      |
@@ -1150,17 +1154,17 @@ Parameters
 
 Store start and end value in the filter state, without having an
 instance of
-`RangeInputFilter </sdk/scopes/cpp/unity.scopes.RangeInputFilter/>`__.
+`RangeInputFilter </sdk/scopes/cpp/unity.scopes.RangeInputFilter/>`_ .
 
 Updates filter\_state with start and end values without an instance of
-`RangeInputFilter </sdk/scopes/cpp/unity.scopes.RangeInputFilter/>`__.
+`RangeInputFilter </sdk/scopes/cpp/unity.scopes.RangeInputFilter/>`_ .
 This is meant to be used when creating a
-`CannedQuery </sdk/scopes/cpp/unity.scopes.CannedQuery/>`__ that
+`CannedQuery </sdk/scopes/cpp/unity.scopes.CannedQuery/>`_  that
 references another scope.
 
 Parameters
     +-----------------+----------------------------------------------------------------------------------+
-    | filter\_state   | `FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ instance to update   |
+    | filter\_state   | `FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  instance to update   |
     +-----------------+----------------------------------------------------------------------------------+
     | filter\_id      | Unique identifier of filter                                                      |
     +-----------------+----------------------------------------------------------------------------------+

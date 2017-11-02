@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_page:
+Ubuntu.Components Page
+======================
+
 A page is the basic Item that represents a single view in an Ubuntu
 application. It is recommended to use the Page inside the MainView or
 AdaptivePageLayout.
@@ -11,28 +15,25 @@ AdaptivePageLayout.
 Properties
 ----------
 
--  ****`actionContext </sdk/apps/qml/Ubuntu.Components/Page#actionContext-prop>`__****
+-  :ref:`actionContext <sdk_ubuntu_components_page_actionContext-prop>`
    : ActrionContext
--  ****`header </sdk/apps/qml/Ubuntu.Components/Page#header-prop>`__****
-   : Item
+-  :ref:`header <sdk_ubuntu_components_page_header-prop>` : Item
 
 Detailed Description
 --------------------
 
-`MainView </sdk/apps/qml/Ubuntu.Components/MainView/>`__ provides a
-header for Pages it includes if no
-`header </sdk/apps/qml/Ubuntu.Components/Page#header-prop>`__ property
-was set. However, the application header is deprecated and it is
-recommended to set the
-`header </sdk/apps/qml/Ubuntu.Components/Page#header-prop>`__ property
+:ref:`MainView <sdk_ubuntu_components_mainview>` provides a header for
+Pages it includes if no
+:ref:`header <sdk_ubuntu_components_page#header-prop>` property was set.
+However, the application header is deprecated and it is recommended to
+set the :ref:`header <sdk_ubuntu_components_page#header-prop>` property
 instead.
 
 Anchors and height of a Page are automatically determined to align with
-the header of the
-`MainView </sdk/apps/qml/Ubuntu.Components/MainView/>`__, but can be
-overridden. Page contents does not automatically leave space for the
-Page `header </sdk/apps/qml/Ubuntu.Components/Page#header-prop>`__, so
-this must be taken into account when anchoring the contents of the Page.
+the header of the :ref:`MainView <sdk_ubuntu_components_mainview>`, but can
+be overridden. Page contents does not automatically leave space for the
+Page :ref:`header <sdk_ubuntu_components_page#header-prop>`, so this must
+be taken into account when anchoring the contents of the Page.
 
 Example:
 
@@ -68,6 +69,8 @@ Example:
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_page_[read-only] actionContext-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [read-only] actionContext : ActrionContext                      |
 +--------------------------------------------------------------------------+
@@ -78,14 +81,15 @@ This QML property was introduced in Ubuntu.Components 1.3.
 
 | 
 
+.. _sdk_ubuntu_components_page_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ header : `Item </sdk/apps/qml/QtQuick/Item/>`__                 |
+| :ref:` <>`\ header : `Item <sdk_qtquick_item>`                         |
 +--------------------------------------------------------------------------+
 
 The header property for this page. Setting this property will reparent
 the header to the page and disable the
-`MainView </sdk/apps/qml/Ubuntu.Components/MainView/>`__'s application
-header.
+:ref:`MainView <sdk_ubuntu_components_mainview>`'s application header.
 
 .. code:: qml
 
@@ -105,17 +109,16 @@ To avoid Page content being occluded by the header, the contents of the
 Page should anchor to the bottom of the header. When the Page contents
 is flickable, the contents does not need to be anchored to the header,
 but it is recommended to use a
-`PageHeader </sdk/apps/qml/Ubuntu.Components/PageHeader/>`__ or
-`Header </sdk/apps/qml/Ubuntu.Components/Header/>`__ component as the
-Page header, and set its
-`Header::flickable </sdk/apps/qml/Ubuntu.Components/Header#flickable-prop>`__
+:ref:`PageHeader <sdk_ubuntu_components_pageheader>` or
+:ref:`Header <sdk_ubuntu_components_header>` component as the Page header,
+and set its
+:ref:`Header::flickable <sdk_ubuntu_components_header#flickable-prop>`
 property so that the Flickable gets a top-margin that leaves enough
 space for the header.
 
 This QML property was introduced in Ubuntu.Components 1.3.
 
-**See also**
-`PageHeader </sdk/apps/qml/Ubuntu.Components/PageHeader/>`__ and
-`Header </sdk/apps/qml/Ubuntu.Components/Header/>`__.
+**See also** :ref:`PageHeader <sdk_ubuntu_components_pageheader>` and
+:ref:`Header <sdk_ubuntu_components_header>`.
 
 | 

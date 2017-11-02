@@ -1,9 +1,13 @@
+.. _sdk_qtmultimedia_declarative_radio_example:
+QtMultimedia Declarative Radio Example
+======================================
+
 
 
 This examples uses the `Qt
-Multimedia </sdk/apps/qml/QtMultimedia/qtmultimedia-index/>`__
-`Radio </sdk/apps/qml/QtMultimedia/Radio/>`__ QML type to list the
-available channels on the FM frequency.
+Multimedia </sdk/apps/qml/QtMultimedia/qtmultimedia-index/>`_ 
+:ref:`Radio <sdk_qtmultimedia_radio>` QML type to list the available
+channels on the FM frequency.
 
 .. rubric:: Running the Example
    :name: running-the-example

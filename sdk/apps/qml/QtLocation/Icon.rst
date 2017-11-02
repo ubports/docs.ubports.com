@@ -1,3 +1,7 @@
+.. _sdk_qtlocation_icon:
+QtLocation Icon
+===============
+
 The Icon type represents an icon image source which can have multiple
 sizes.
 
@@ -10,32 +14,28 @@ sizes.
 Properties
 ----------
 
--  ****`icon </sdk/apps/qml/QtLocation/Icon#icon-prop>`__**** :
-   QPlaceIcon
--  ****`parameters </sdk/apps/qml/QtLocation/Icon#parameters-prop>`__****
-   : Object
--  ****`plugin </sdk/apps/qml/QtLocation/Icon#plugin-prop>`__**** :
-   Plugin
+-  :ref:`icon <sdk_qtlocation_icon_icon-prop>` : QPlaceIcon
+-  :ref:`parameters <sdk_qtlocation_icon_parameters-prop>` : Object
+-  :ref:`plugin <sdk_qtlocation_icon_plugin-prop>` : Plugin
 
 Methods
 -------
 
--  url ****`url </sdk/apps/qml/QtLocation/Icon#url-method>`__****\ (size
-   *size*)
+-  url :ref:`url <sdk_qtlocation_icon_url-method>`\ (size *size*)
 
 Detailed Description
 --------------------
 
 The Icon type can be used in conjunction with an Image type to display
-an icon. The `url() </sdk/apps/qml/QtLocation/Icon#url-method>`__
-function is used to construct an icon URL of a requested size, the icon
-which most closely matches the requested size is returned.
+an icon. The :ref:`url() <sdk_qtlocation_icon#url-method>` function is used
+to construct an icon URL of a requested size, the icon which most
+closely matches the requested size is returned.
 
 The Icon type also has a parameters map which is a set of key value
 pairs. The precise keys to use depend on the
-`plugin </sdk/apps/qml/QtLocation/qtlocation-index#plugin-references-and-parameters>`__
+`plugin </sdk/apps/qml/QtLocation/qtlocation-index/#plugin-references-and-parameters>`_ 
 being used. The parameters map is used by the
-`Plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__ to
+`Plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_  to
 determine which URL to return.
 
 In the case where an icon can only possibly have one image URL, the
@@ -63,6 +63,8 @@ Alternatively, a default sized icon can be specified like so:
 Property Documentation
 ----------------------
 
+.. _sdk_qtlocation_icon_icon-prop:
+
 +--------------------------------------------------------------------------+
 |        \ icon : QPlaceIcon                                               |
 +--------------------------------------------------------------------------+
@@ -72,17 +74,19 @@ see "Interfaces between C++ and QML Code".
 
 | 
 
+.. _sdk_qtlocation_icon_parameters-prop:
+
 +--------------------------------------------------------------------------+
 |        \ parameters : Object                                             |
 +--------------------------------------------------------------------------+
 
 This property holds the parameters of the icon and is a map. These
 parameters are used by the plugin to return the appropriate URL when
-`url() </sdk/apps/qml/QtLocation/Icon#url-method>`__ is called and to
-specify locations to save to when saving icons.
+:ref:`url() <sdk_qtlocation_icon#url-method>` is called and to specify
+locations to save to when saving icons.
 
 Consult the `plugin
-documentation </sdk/apps/qml/QtLocation/qtlocation-index#plugin-references-and-parameters>`__
+documentation </sdk/apps/qml/QtLocation/qtlocation-index/#plugin-references-and-parameters>`_ 
 for what parameters are supported and how they should be used.
 
 Note, due to limitations of the QQmlPropertyMap, it is not possible to
@@ -91,8 +95,10 @@ keys and values can only be accomplished by JavaScript.
 
 | 
 
+.. _sdk_qtlocation_icon_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ plugin : `Plugin </sdk/apps/qml/QtLocation/Plugin/>`__          |
+| :ref:` <>`\ plugin : `Plugin <sdk_qtlocation_plugin>`                  |
 +--------------------------------------------------------------------------+
 
 The property holds the plugin that is responsible for managing this
@@ -103,9 +109,10 @@ icon.
 Method Documentation
 --------------------
 
+.. _sdk_qtlocation_icon_-method:
+
 +--------------------------------------------------------------------------+
-|        \ `url </sdk/apps/qml/QtLocation/Icon#url-method>`__ url(size     |
-| *size*)                                                                  |
+| :ref:` <>`\ `url <sdk_qtlocation_icon#url-method>` url(size *size*)       |
 +--------------------------------------------------------------------------+
 
 Returns a URL for the icon image that most closely matches the given

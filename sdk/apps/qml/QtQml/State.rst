@@ -1,3 +1,7 @@
+.. _sdk_qtqml_state:
+QtQml State
+===========
+
 Provides a general-purpose state for StateMachine.
 
 +--------------------------------------+--------------------------------------+
@@ -5,53 +9,51 @@ Provides a general-purpose state for StateMachine.
 +--------------------------------------+--------------------------------------+
 | Since:                               | Qt 5.4                               |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `QAbstractState </sdk/apps/qml/QtQml |
-|                                      | /QAbstractState/>`__                 |
+| Inherits:                            | :ref:`QAbstractState <sdk_qtqml_qabstract |
+|                                      | state>`_                             |
 +--------------------------------------+--------------------------------------+
-| Inherited By:                        | `StateMachine </sdk/apps/qml/QtQml/S |
-|                                      | tateMachine/>`__.                    |
+| Inherited By:                        | :ref:`StateMachine <sdk_qtqml_statemachin |
+|                                      | e>`_ .                               |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`childMode </sdk/apps/qml/QtQml/State#childMode-prop>`__**** :
-   enumeration
--  ****`errorState </sdk/apps/qml/QtQml/State#errorState-prop>`__**** :
+-  :ref:`childMode <sdk_qtqml_state_childMode-prop>` : enumeration
+-  :ref:`errorState <sdk_qtqml_state_errorState-prop>` :
    QAbstractState
--  ****`initialState </sdk/apps/qml/QtQml/State#initialState-prop>`__****
-   : QAbstractState
+-  :ref:`initialState <sdk_qtqml_state_initialState-prop>` :
+   QAbstractState
 
 Signals
 -------
 
--  ****`finished </sdk/apps/qml/QtQml/State#finished-signal>`__****\ ()
+-  :ref:`finished <sdk_qtqml_state_finished-signal>`\ ()
 
 Detailed Description
 --------------------
 
 State objects can have child states as well as transitions to other
 states. State is part of `The Declarative State Machine
-Framework </sdk/apps/qml/QtQml/qmlstatemachine/>`__.
+Framework </sdk/apps/qml/QtQml/qmlstatemachine/>`_ .
 
 States with Child States
 ------------------------
 
-The `childMode </sdk/apps/qml/QtQml/State#childMode-prop>`__ property
-determines how child states are treated. For non-parallel state groups,
-the `initialState </sdk/apps/qml/QtQml/State#initialState-prop>`__
-property must be used to set the initial state. The child states are
-mutually exclusive states, and the state machine needs to know which
-child state to enter when the parent state is the target of a
-transition.
+The :ref:`childMode <sdk_qtqml_state#childMode-prop>` property determines
+how child states are treated. For non-parallel state groups, the
+:ref:`initialState <sdk_qtqml_state#initialState-prop>` property must be
+used to set the initial state. The child states are mutually exclusive
+states, and the state machine needs to know which child state to enter
+when the parent state is the target of a transition.
 
 The state emits the State::finished() signal when a final child state
-(`FinalState </sdk/apps/qml/QtQml/FinalState/>`__) is entered.
+(:ref:`FinalState <sdk_qtqml_finalstate>`) is entered.
 
-The `errorState </sdk/apps/qml/QtQml/State#errorState-prop>`__ sets the
-state's error state. The error state is the state that the state machine
-will transition to if an error is detected when attempting to enter the
-state (e.g. because no initial state has been set).
+The :ref:`errorState <sdk_qtqml_state#errorState-prop>` sets the state's
+error state. The error state is the state that the state machine will
+transition to if an error is detected when attempting to enter the state
+(e.g. because no initial state has been set).
 
 Example Usage
 -------------
@@ -73,11 +75,13 @@ Example Usage
 
 | 
 
-**See also** `StateMachine </sdk/apps/qml/QtQml/StateMachine/>`__ and
-`FinalState </sdk/apps/qml/QtQml/FinalState/>`__.
+**See also** :ref:`StateMachine <sdk_qtqml_statemachine>` and
+:ref:`FinalState <sdk_qtqml_finalstate>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtqml_state_childMode-prop:
 
 +--------------------------------------------------------------------------+
 |        \ childMode : enumeration                                         |
@@ -91,25 +95,26 @@ This enum specifies how a state's child states are treated:
 
 -  QState.ExclusiveStates The child states are mutually exclusive and an
    initial state must be set by setting
-   `initialState </sdk/apps/qml/QtQml/State#initialState-prop>`__
-   property.
+   :ref:`initialState <sdk_qtqml_state#initialState-prop>` property.
 -  QState.ParallelStates The child states are parallel. When the parent
    state is entered, all its child states are entered in parallel.
 
 | 
 
+.. _sdk_qtqml_state_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ errorState :                                                    |
-| `QAbstractState </sdk/apps/qml/QtQml/QAbstractState/>`__                 |
+| :ref:` <>`\ errorState : `QAbstractState <sdk_qtqml_qabstractstate>`   |
 +--------------------------------------------------------------------------+
 
 The error state of this state.
 
 | 
 
+.. _sdk_qtqml_state_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ initialState :                                                  |
-| `QAbstractState </sdk/apps/qml/QtQml/QAbstractState/>`__                 |
+| :ref:` <>`\ initialState : `QAbstractState <sdk_qtqml_qabstractstate>` |
 +--------------------------------------------------------------------------+
 
 The initial state of this state (one of its child states).
@@ -118,6 +123,8 @@ The initial state of this state (one of its child states).
 
 Signal Documentation
 --------------------
+
+.. _sdk_qtqml_state_finished()-prop:
 
 +--------------------------------------------------------------------------+
 |        \ finished()                                                      |
@@ -129,9 +136,8 @@ entered.
 The corresponding handler is ``onFinished``.
 
 **See also**
-`QAbstractState::active </sdk/apps/qml/QtQml/QAbstractState#active-prop>`__,
-`QAbstractState::entered </sdk/apps/qml/QtQml/QAbstractState#entered-signal>`__,
-and
-`QAbstractState::exited </sdk/apps/qml/QtQml/QAbstractState#exited-signal>`__.
+:ref:`QAbstractState::active <sdk_qtqml_qabstractstate#active-prop>`,
+:ref:`QAbstractState::entered <sdk_qtqml_qabstractstate#entered-signal>`,
+and :ref:`QAbstractState::exited <sdk_qtqml_qabstractstate#exited-signal>`.
 
 | 

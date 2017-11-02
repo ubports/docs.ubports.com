@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_mainview:
+Ubuntu.Components MainView
+==========================
+
 MainView is the root Item that should be used for all applications.
 
 +---------------------+--------------------------------+
@@ -9,22 +13,21 @@ MainView is the root Item that should be used for all applications.
 Properties
 ----------
 
--  ****`actionContext </sdk/apps/qml/Ubuntu.Components/MainView#actionContext-prop>`__****
+-  :ref:`actionContext <sdk_ubuntu_components_mainview_actionContext-prop>`
    : ActionContext
--  ****`anchorToKeyboard </sdk/apps/qml/Ubuntu.Components/MainView#anchorToKeyboard-prop>`__****
+-  :ref:`anchorToKeyboard <sdk_ubuntu_components_mainview_anchorToKeyboard-prop>`
    : bool
--  ****`applicationName </sdk/apps/qml/Ubuntu.Components/MainView#applicationName-prop>`__****
+-  :ref:`applicationName <sdk_ubuntu_components_mainview_applicationName-prop>`
    : string
--  ****`backgroundColor </sdk/apps/qml/Ubuntu.Components/MainView#backgroundColor-prop>`__****
+-  :ref:`backgroundColor <sdk_ubuntu_components_mainview_backgroundColor-prop>`
    : color
 
 Detailed Description
 --------------------
 
-The simplest way to use a
-`MainView </sdk/apps/qml/Ubuntu.Components/MainView/>`__ is to include a
-single `Page </sdk/apps/qml/Ubuntu.Components/Page/>`__ object inside
-the `MainView </sdk/apps/qml/Ubuntu.Components/MainView/>`__:
+The simplest way to use a :ref:`MainView <sdk_ubuntu_components_mainview>`
+is to include a single :ref:`Page <sdk_ubuntu_components_page>` object
+inside the :ref:`MainView <sdk_ubuntu_components_mainview>`:
 
 .. code:: qml
 
@@ -52,20 +55,20 @@ the `MainView </sdk/apps/qml/Ubuntu.Components/MainView/>`__:
     }
 
 It is not required to set the anchors of the
-`Page </sdk/apps/qml/Ubuntu.Components/Page/>`__ as it will
-automatically fill its parent.
+:ref:`Page <sdk_ubuntu_components_page>` as it will automatically fill its
+parent.
 
 Do not include multiple Pages directly inside the
-`MainView </sdk/apps/qml/Ubuntu.Components/MainView/>`__, but use
-`AdaptivePageLayout </sdk/apps/qml/Ubuntu.Components/AdaptivePageLayout/>`__
-inside `MainView </sdk/apps/qml/Ubuntu.Components/MainView/>`__ to
-navigate between several Pages.
+:ref:`MainView <sdk_ubuntu_components_mainview>`, but use
+:ref:`AdaptivePageLayout <sdk_ubuntu_components_adaptivepagelayout>` inside
+:ref:`MainView <sdk_ubuntu_components_mainview>` to navigate between
+several Pages.
 
-If the `Page </sdk/apps/qml/Ubuntu.Components/Page/>`__ inside the
-`MainView </sdk/apps/qml/Ubuntu.Components/MainView/>`__ includes a
-Flickable, set the flickable property of the
-`PageHeader </sdk/apps/qml/Ubuntu.Components/PageHeader/>`__ to
-automatically hide and show the header when the user scrolls up or down:
+If the :ref:`Page <sdk_ubuntu_components_page>` inside the
+:ref:`MainView <sdk_ubuntu_components_mainview>` includes a Flickable, set
+the flickable property of the
+:ref:`PageHeader <sdk_ubuntu_components_pageheader>` to automatically hide
+and show the header when the user scrolls up or down:
 
 .. code:: qml
 
@@ -97,29 +100,32 @@ automatically hide and show the header when the user scrolls up or down:
     }
 
 The same header behavior is automatic when using a
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__ instead of a Flickable in
-the above example.
+:ref:`ListView <sdk_qtquick_listview>` instead of a Flickable in the above
+example.
 
 The examples above show how to include a single
-`Page </sdk/apps/qml/Ubuntu.Components/Page/>`__ inside a
-`MainView </sdk/apps/qml/Ubuntu.Components/MainView/>`__, but more
-advanced application structures are possible using
-`AdaptivePageLayout </sdk/apps/qml/Ubuntu.Components/AdaptivePageLayout/>`__.
+:ref:`Page <sdk_ubuntu_components_page>` inside a
+:ref:`MainView <sdk_ubuntu_components_mainview>`, but more advanced
+application structures are possible using
+:ref:`AdaptivePageLayout <sdk_ubuntu_components_adaptivepagelayout>`.
 
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_mainview_[read-only] actionContext-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [read-only] actionContext :                                     |
-| `ActionContext </sdk/apps/qml/Ubuntu.Components/ActionContext/>`__       |
+| :ref:`ActionContext <sdk_ubuntu_components_actioncontext>`                  |
 +--------------------------------------------------------------------------+
 
-The action context of the
-`MainView </sdk/apps/qml/Ubuntu.Components/MainView/>`__.
+The action context of the :ref:`MainView <sdk_ubuntu_components_mainview>`.
 
 This QML property was introduced in Ubuntu.Components 1.3.
 
 | 
+
+.. _sdk_ubuntu_components_mainview_anchorToKeyboard-prop:
 
 +--------------------------------------------------------------------------+
 |        \ anchorToKeyboard : bool                                         |
@@ -131,6 +137,8 @@ contents when the input method appears
 The default value is false.
 
 | 
+
+.. _sdk_ubuntu_components_mainview_applicationName-prop:
 
 +--------------------------------------------------------------------------+
 |        \ applicationName : string                                        |
@@ -144,6 +152,8 @@ writes files may use QStandardPaths::writableLocation with
 QStandardPaths::DataLocation or QStandardPaths::CacheLocation.
 
 | 
+
+.. _sdk_ubuntu_components_mainview_backgroundColor-prop:
 
 +--------------------------------------------------------------------------+
 |        \ backgroundColor : color                                         |

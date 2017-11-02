@@ -1,3 +1,7 @@
+.. _sdk_qtquick_qt_quick_examples_-_views:
+QtQuick Qt Quick Examples - Views
+=================================
+
 
 
 |image0|
@@ -5,7 +9,7 @@
 *Views* is a collection of small QML examples relating to model and view
 functionality. They demonstrate how to show data from a model using the
 Qt Quick view types. For more information, visit the `Models and Views
-in Qt Quick </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/>`__
+in Qt Quick </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/>`_ 
 page.
 
 .. rubric:: Running the Example
@@ -51,12 +55,12 @@ views.
    :name: dynamic-list
 
 *Dynamic List* demonstrates animation of runtime additions and removals
-to a `ListView </sdk/apps/qml/QtQuick/ListView/>`__.
+to a :ref:`ListView <sdk_qtquick_listview>`.
 
-The `ListView </sdk/apps/qml/QtQuick/ListView/>`__.onAdd signal handler
-runs an animation when new items are added to the view, and the
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__.onRemove another when
-they are removed.
+The :ref:`ListView <sdk_qtquick_listview>`.onAdd signal handler runs an
+animation when new items are added to the view, and the
+:ref:`ListView <sdk_qtquick_listview>`.onRemove another when they are
+removed.
 
 .. code:: qml
 
@@ -144,7 +148,7 @@ displacing other items in the view.
    :name: highlight
 
 *Highlight* demonstrates adding a custom highlight to a
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__.
+:ref:`ListView <sdk_qtquick_listview>`.
 
 .. code:: qml
 
@@ -175,7 +179,7 @@ displacing other items in the view.
    :name: highlight-ranges
 
 *Highlight Ranges* shows the three different highlight range modes of
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__.
+:ref:`ListView <sdk_qtquick_listview>`.
 
 .. code:: qml
 
@@ -247,7 +251,7 @@ displacing other items in the view.
    :name: sections
 
 *Sections* demonstrates the various section headers and footers
-available to `ListView </sdk/apps/qml/QtQuick/ListView/>`__.
+available to :ref:`ListView <sdk_qtquick_listview>`.
 
 .. code:: qml
 
@@ -349,9 +353,9 @@ items from the shared package delegate.
    :name: objectmodel
 
 *ObjectModel* uses an
-`ObjectModel </sdk/apps/qml/QtQuick/views#objectmodel>`__ for the model
+`ObjectModel </sdk/apps/qml/QtQuick/views/#objectmodel>`_  for the model
 instead of a
-`ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview#listmodel>`__.
+`ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#listmodel>`_ .
 
 .. code:: qml
 

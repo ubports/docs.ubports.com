@@ -1,3 +1,7 @@
+.. _sdk_qtqml_list_of_javascript_objects_and_functions:
+QtQml List of JavaScript Objects and Functions
+==============================================
+
 
 
 This reference contains a list of objects, functions and properties
@@ -163,9 +167,9 @@ ECMA-262 specification.
 -  trim()
 
 Additionally, the QML engine adds the following functions to the
-`String </sdk/apps/qml/QtQml/String/>`__ prototype:
+:ref:`String <sdk_qtqml_string>` prototype:
 
--  `arg() </sdk/apps/qml/QtQml/String#arg-method>`__
+-  :ref:`arg() <sdk_qtqml_string#arg-method>`
 
 .. rubric:: Boolean Objects
    :name: boolean-objects
@@ -195,14 +199,14 @@ Additionally, the QML engine adds the following functions to the
 -  toPrecision(precision)
 
 Additionally, the QML engine adds the following functions to the
-`Number </sdk/apps/qml/QtQml/Number/>`__ prototype:
+:ref:`Number <sdk_qtqml_number>` prototype:
 
 -  `fromLocaleString(locale,
-   number) </sdk/apps/qml/QtQml/Number#fromLocaleString-method>`__
+   number) <sdk_qtqml_number#fromLocaleString-method>:ref:`
 -  `toLocaleCurrencyString(locale,
-   symbol) </sdk/apps/qml/QtQml/Number#toLocaleCurrencyString-method>`__
+   symbol) <sdk_qtqml_number#toLocaleCurrencyString-method>:ref:`
 -  `toLocaleString(locale, format,
-   precision) </sdk/apps/qml/QtQml/Number#toLocaleString-method>`__
+   precision) <sdk_qtqml_number#toLocaleString-method>:ref:`
 
 .. rubric:: The Math Object
    :name: the-math-object
@@ -295,15 +299,15 @@ Additionally, the QML engine adds the following functions to the
 -  toJSON()
 
 Additionally, the QML engine adds the following functions to the
-`Date </sdk/apps/qml/QtQml/Date/>`__ prototype:
+:ref:`Date <sdk_qtqml_date>` prototype:
 
--  `timeZoneUpdated() </sdk/apps/qml/QtQml/Date#timeZoneUpdated-method>`__
+-  :ref:`timeZoneUpdated() <sdk_qtqml_date#timeZoneUpdated-method>`
 -  `toLocaleDateString(locale,
-   format) </sdk/apps/qml/QtQml/Date#toLocaleDateString-method>`__
+   format) <sdk_qtqml_date#toLocaleDateString-method>:ref:`
 -  `toLocaleString(locale,
-   format) </sdk/apps/qml/QtQml/Date#toLocaleString-method>`__
+   format) <sdk_qtqml_date#toLocaleString-method>:ref:`
 -  `toLocaleTimeString(locale,
-   format) </sdk/apps/qml/QtQml/Date#toLocaleTimeString-method>`__
+   format) <sdk_qtqml_date#toLocaleTimeString-method>:ref:`
 
 .. rubric:: RegExp Objects
    :name: regexp-objects

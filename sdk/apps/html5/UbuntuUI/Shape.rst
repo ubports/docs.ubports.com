@@ -1,3 +1,7 @@
+.. _sdk_ubuntuui_shape:
+UbuntuUI Shape
+==============
+
 
 An Ubuntu Shape contains and decorates (with CSS styles) some markup,
 often an <em>img</em>.

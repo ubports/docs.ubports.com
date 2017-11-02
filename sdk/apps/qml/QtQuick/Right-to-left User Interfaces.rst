@@ -1,3 +1,7 @@
+.. _sdk_qtquick_right-to-left_user_interfaces:
+QtQuick Right-to-left User Interfaces
+=====================================
+
 
 
 .. rubric:: Overview
@@ -31,9 +35,9 @@ buttons in music players.
    :name: text-alignment
 
 (This applies to the
-`Text </sdk/apps/qml/QtQuick/qtquick-releasenotes#text>`__,
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ and
-`TextEdit </sdk/apps/qml/QtQuick/TextEdit/>`__ types.)
+`Text </sdk/apps/qml/QtQuick/qtquick-releasenotes/#text>`_ ,
+:ref:`TextInput <sdk_qtquick_textinput>` and
+:ref:`TextEdit <sdk_qtquick_textedit>` types.)
 
 When the horizontal alignment of a text item is not explicitly set, the
 text element is automatically aligned to the natural reading direction
@@ -47,10 +51,10 @@ locale.
 This default locale-based alignment can be overridden by setting the
 ``horizontalAlignment`` property for the text element, or by enabling
 layout mirroring using the
-`LayoutMirroring </sdk/apps/qml/QtQuick/LayoutMirroring/>`__ attached
-property, which causes any explicit left and right horizontal alignments
-to be mirrored. Note that when
-`LayoutMirroring </sdk/apps/qml/QtQuick/LayoutMirroring/>`__ is set, the
+:ref:`LayoutMirroring <sdk_qtquick_layoutmirroring>` attached property,
+which causes any explicit left and right horizontal alignments to be
+mirrored. Note that when
+:ref:`LayoutMirroring <sdk_qtquick_layoutmirroring>` is set, the
 ``horizontalAlignment`` property value remains unchanged; the effective
 alignment of the text element that takes the mirroring into account can
 be read from the ``effectiveHorizontalAlignment`` property.
@@ -85,11 +89,11 @@ be read from the ``effectiveHorizontalAlignment`` property.
    :name: layout-direction-of-positioners-and-views
 
 (This applies to the
-`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#row>`__,
-`Grid </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#grid>`__,
-`Flow </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#flow>`__,
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__ and
-`GridView </sdk/apps/qml/QtQuick/draganddrop#gridview>`__ types.)
+`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#row>`_ ,
+`Grid </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#grid>`_ ,
+`Flow </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#flow>`_ ,
+:ref:`ListView <sdk_qtquick_listview>` and
+`GridView </sdk/apps/qml/QtQuick/draganddrop/#gridview>`_  types.)
 
 From Qt Quick 1.1 onwards, types used for horizontal positioning and
 model views have gained a ``layoutDirection`` property for controlling
@@ -98,12 +102,12 @@ the horizontal direction of the layouts. Setting ``layoutDirection`` to
 By default Qt Quick follows the left-to-right layout direction.
 
 The horizontal layout direction can also be reversed through the
-`LayoutMirroring </sdk/apps/qml/QtQuick/LayoutMirroring/>`__ attached
-property. This causes the effective ``layoutDirection`` of positioners
-and views to be mirrored. Note the actual value of the
-``layoutDirection`` property will remain unchanged; the effective layout
-direction of positioners and views that takes the mirroring into account
-can be read from the ``effectiveLayoutDirection`` property.
+:ref:`LayoutMirroring <sdk_qtquick_layoutmirroring>` attached property.
+This causes the effective ``layoutDirection`` of positioners and views
+to be mirrored. Note the actual value of the ``layoutDirection``
+property will remain unchanged; the effective layout direction of
+positioners and views that takes the mirroring into account can be read
+from the ``effectiveLayoutDirection`` property.
 
 .. code:: qml
 
@@ -129,20 +133,19 @@ can be read from the ``effectiveLayoutDirection`` property.
 .. rubric:: Layout Mirroring
    :name: layout-mirroring
 
-The attached property
-`LayoutMirroring </sdk/apps/qml/QtQuick/LayoutMirroring/>`__ is provided
-as a convenience for easily implementing right-to-left support for
-existing left-to-right Qt Quick applications. It mirrors the behavior of
-`Item
-anchors </sdk/apps/qml/QtQuick/qtquick-positioning-anchors#anchor-layout>`__,
+The attached property :ref:`LayoutMirroring <sdk_qtquick_layoutmirroring>`
+is provided as a convenience for easily implementing right-to-left
+support for existing left-to-right Qt Quick applications. It mirrors the
+behavior of `Item
+anchors </sdk/apps/qml/QtQuick/qtquick-positioning-anchors/#anchor-layout>`_ ,
 the layout direction of
-`positioners </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/>`__ and
+`positioners </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/>`_  and
 `model
-views </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/>`__, and
+views </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/>`_ , and
 the explicit text alignment of QML text types.
 
 You can enable layout mirroring for a particular
-`Item </sdk/apps/qml/QtQuick/Item/>`__:
+:ref:`Item <sdk_qtquick_item>`:
 
 .. code:: qml
 
@@ -181,25 +184,24 @@ the relevant anchor, ``layoutDirection`` or ``horizontalAlignment``
 properties. The separate read-only property ``effectiveLayoutDirection``
 can be used to query the effective layout direction of positioners and
 model views that takes the mirroring into account. Similarly the
-`Text </sdk/apps/qml/QtQuick/qtquick-releasenotes#text>`__,
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ and
-`TextEdit </sdk/apps/qml/QtQuick/TextEdit/>`__ types have gained the
-read-only property ``effectiveHorizontalAlignment`` for querying the
-effective visual alignment of text. For anchors, the read only
-`anchors.mirrored </sdk/apps/qml/QtQuick/Item#anchors.top-prop>`__
-property reflects whether anchors have been mirrored.
+`Text </sdk/apps/qml/QtQuick/qtquick-releasenotes/#text>`_ ,
+:ref:`TextInput <sdk_qtquick_textinput>` and
+:ref:`TextEdit <sdk_qtquick_textedit>` types have gained the read-only
+property ``effectiveHorizontalAlignment`` for querying the effective
+visual alignment of text. For anchors, the read only
+:ref:`anchors.mirrored <sdk_qtquick_item#anchors.top-prop>` property
+reflects whether anchors have been mirrored.
 
 Note that application layouts and animations that are defined using
-`x </sdk/apps/qml/QtQuick/Item#x-prop>`__ property values (as opposed to
-anchors or positioner types) are not affected by the
-`LayoutMirroring </sdk/apps/qml/QtQuick/LayoutMirroring/>`__ attached
-property. Therefore, adding right-to-left support to these types of
-layouts may require some code changes to your application, especially in
-views that rely on both the anchors and x coordinate-based positioning.
-Here is one way to use the
-`LayoutMirroring </sdk/apps/qml/QtQuick/LayoutMirroring/>`__ attached
-property to apply mirroring to an item that is positioned using
-`x </sdk/apps/qml/QtQuick/Item#x-prop>`__ coordinates:
+:ref:`x <sdk_qtquick_item#x-prop>` property values (as opposed to anchors
+or positioner types) are not affected by the
+:ref:`LayoutMirroring <sdk_qtquick_layoutmirroring>` attached property.
+Therefore, adding right-to-left support to these types of layouts may
+require some code changes to your application, especially in views that
+rely on both the anchors and x coordinate-based positioning. Here is one
+way to use the :ref:`LayoutMirroring <sdk_qtquick_layoutmirroring>`
+attached property to apply mirroring to an item that is positioned using
+:ref:`x <sdk_qtquick_item#x-prop>` coordinates:
 
 .. code:: qml
 
@@ -217,7 +219,7 @@ visual type is positioned to the right side of the screen for improved
 one-handed use, because most people are right-handed, and not because of
 the reading direction. In the case that a child type should not be
 affected by mirroring, set the
-`LayoutMirroring.enabled </sdk/apps/qml/QtQuick/LayoutMirroring#enabled-prop>`__
+:ref:`LayoutMirroring.enabled <sdk_qtquick_layoutmirroring#enabled-prop>`
 property for that type to false.
 
 Qt Quick is designed for developing animated, fluid user interfaces.
@@ -230,9 +232,9 @@ sure that text is translated and aligned properly.
 .. rubric:: Mirroring Icons
    :name: mirroring-icons
 
-(This applies to `Image </sdk/apps/qml/QtQuick/imageelements#image>`__,
-`BorderImage </sdk/apps/qml/QtQuick/imageelements#borderimage>`__ and
-`AnimatedImage </sdk/apps/qml/QtQuick/AnimatedImage/>`__ types.)
+(This applies to `Image </sdk/apps/qml/QtQuick/imageelements/#image>`_ ,
+`BorderImage </sdk/apps/qml/QtQuick/imageelements/#borderimage>`_  and
+:ref:`AnimatedImage <sdk_qtquick_animatedimage>` types.)
 
 Most images do not need to be mirrored, but some directional icons, such
 as arrows, may need to be mirrored. The painting of these icons can be

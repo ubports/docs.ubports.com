@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_popups_dialog:
+Ubuntu.Components.Popups Dialog
+===============================
+
 The Dialog caters for cases in which the application requires the user
 to determine between optional actions. The Dialog will interrupt the
 user flow and lock the view for further interaction before the user has
@@ -8,7 +12,7 @@ optional action confirming or cancelling the operation.
 | Import Statement:                    | import Ubuntu.Components.Popups 1.3  |
 +--------------------------------------+--------------------------------------+
 | Inherits:                            | `PopupBase </sdk/apps/qml/Ubuntu.Com |
-|                                      | ponents/Popups.PopupBase/>`__        |
+|                                      | ponents/Popups.PopupBase/>`_         |
 +--------------------------------------+--------------------------------------+
 
 -  Obsolete members
@@ -16,34 +20,34 @@ optional action confirming or cancelling the operation.
 Properties
 ----------
 
--  ****`callerMargin </sdk/apps/qml/Ubuntu.Components/Popups.Dialog#callerMargin-prop>`__****
+-  `callerMargin </sdk/apps/qml/Ubuntu.Components/Popups.Dialog/_callerMargin-prop>`_ 
    : real
--  ****`contentHeight </sdk/apps/qml/Ubuntu.Components/Popups.Dialog#contentHeight-prop>`__****
+-  `contentHeight </sdk/apps/qml/Ubuntu.Components/Popups.Dialog/_contentHeight-prop>`_ 
    : real
--  ****`contentWidth </sdk/apps/qml/Ubuntu.Components/Popups.Dialog#contentWidth-prop>`__****
+-  `contentWidth </sdk/apps/qml/Ubuntu.Components/Popups.Dialog/_contentWidth-prop>`_ 
    : real
--  ****`contents </sdk/apps/qml/Ubuntu.Components/Popups.Dialog#contents-prop>`__****
+-  `contents </sdk/apps/qml/Ubuntu.Components/Popups.Dialog/_contents-prop>`_ 
    : list<Object>
--  ****`edgeMargins </sdk/apps/qml/Ubuntu.Components/Popups.Dialog#edgeMargins-prop>`__****
+-  `edgeMargins </sdk/apps/qml/Ubuntu.Components/Popups.Dialog/_edgeMargins-prop>`_ 
    : real
--  ****`modal </sdk/apps/qml/Ubuntu.Components/Popups.Dialog#modal-prop>`__****
+-  `modal </sdk/apps/qml/Ubuntu.Components/Popups.Dialog/_modal-prop>`_ 
    : bool
--  ****`style </sdk/apps/qml/Ubuntu.Components/Popups.Dialog#style-prop>`__****
+-  `style </sdk/apps/qml/Ubuntu.Components/Popups.Dialog/_style-prop>`_ 
    : Component
--  ****`styleName </sdk/apps/qml/Ubuntu.Components/Popups.Dialog#styleName-prop>`__****
+-  `styleName </sdk/apps/qml/Ubuntu.Components/Popups.Dialog/_styleName-prop>`_ 
    : string
--  ****`text </sdk/apps/qml/Ubuntu.Components/Popups.Dialog#text-prop>`__****
+-  `text </sdk/apps/qml/Ubuntu.Components/Popups.Dialog/_text-prop>`_ 
    : string
--  ****`theme </sdk/apps/qml/Ubuntu.Components/Popups.Dialog#theme-prop>`__****
+-  `theme </sdk/apps/qml/Ubuntu.Components/Popups.Dialog/_theme-prop>`_ 
    : ThemeSettings
--  ****`title </sdk/apps/qml/Ubuntu.Components/Popups.Dialog#title-prop>`__****
+-  `title </sdk/apps/qml/Ubuntu.Components/Popups.Dialog/_title-prop>`_ 
    : string
 
 Detailed Description
 --------------------
 
 `See also the Design Guidelines on
-Dialogs <http://design.ubuntu.com/apps/building-blocks/dialog>`__.
+Dialogs <http://design.ubuntu.com/apps/building-blocks/dialog>`_ .
 
 Example:
 
@@ -88,6 +92,8 @@ Example:
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_popups_dialog_callerMargin-prop:
+
 +--------------------------------------------------------------------------+
 |        \ callerMargin : real                                             |
 +--------------------------------------------------------------------------+
@@ -96,6 +102,8 @@ The property holds the margin from the dialog's caller. The property is
 themed.
 
 | 
+
+.. _sdk_ubuntu_components_popups_dialog_contentHeight-prop:
 
 +--------------------------------------------------------------------------+
 |        \ contentHeight : real                                            |
@@ -107,6 +115,8 @@ This QML property was introduced in Ubuntu.Components 1.3.
 
 | 
 
+.. _sdk_ubuntu_components_popups_dialog_contentWidth-prop:
+
 +--------------------------------------------------------------------------+
 |        \ contentWidth : real                                             |
 +--------------------------------------------------------------------------+
@@ -117,6 +127,8 @@ This QML property was introduced in Ubuntu.Components 1.3.
 
 | 
 
+.. _sdk_ubuntu_components_popups_dialog_contents-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [default] contents : list<Object>                               |
 +--------------------------------------------------------------------------+
@@ -124,6 +136,8 @@ This QML property was introduced in Ubuntu.Components 1.3.
 Content will be put inside a column in the foreround of the Dialog.
 
 | 
+
+.. _sdk_ubuntu_components_popups_dialog_edgeMargins-prop:
 
 +--------------------------------------------------------------------------+
 |        \ edgeMargins : real                                              |
@@ -133,6 +147,8 @@ The property holds the margins from the dialog's dismissArea. The
 property is themed.
 
 | 
+
+.. _sdk_ubuntu_components_popups_dialog_modal-prop:
 
 +--------------------------------------------------------------------------+
 |        \ modal : bool                                                    |
@@ -147,20 +163,24 @@ The default value is true.
 
 | 
 
+.. _sdk_ubuntu_components_popups_dialog_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ style : `Component </sdk/apps/qml/QtQml/Component/>`__          |
+| :ref:` <>`\ style : `Component <sdk_qtqml_component>`                  |
 +--------------------------------------------------------------------------+
 
 The style of the foreground of the Dialog. This property takes
 precedence over
-`styleName </sdk/apps/qml/Ubuntu.Components/Popups.Dialog#styleName-prop>`__
+`styleName </sdk/apps/qml/Ubuntu.Components/Popups.Dialog/#styleName-prop>`_ 
 
 This QML property was introduced in Ubuntu.Components 1.3.
 
 **See also**
-`StyledItem::style </sdk/apps/qml/Ubuntu.Components/StyledItem#style-prop>`__.
+:ref:`StyledItem::style <sdk_ubuntu_components_styleditem#style-prop>`.
 
 | 
+
+.. _sdk_ubuntu_components_popups_dialog_styleName-prop:
 
 +--------------------------------------------------------------------------+
 |        \ styleName : string                                              |
@@ -171,9 +191,11 @@ The style name of the foreground of the Dialog.
 This QML property was introduced in Ubuntu.Components 1.3.
 
 **See also**
-`StyledItem::styleName </sdk/apps/qml/Ubuntu.Components/StyledItem#styleName-prop>`__.
+:ref:`StyledItem::styleName <sdk_ubuntu_components_styleditem#styleName-prop>`.
 
 | 
+
+.. _sdk_ubuntu_components_popups_dialog_text-prop:
 
 +--------------------------------------------------------------------------+
 |        \ text : string                                                   |
@@ -183,9 +205,10 @@ The question to the user.
 
 | 
 
+.. _sdk_ubuntu_components_popups_dialog_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ theme :                                                         |
-| `ThemeSettings </sdk/apps/qml/Ubuntu.Components/ThemeSettings/>`__       |
+| :ref:` <>`\ theme : `ThemeSettings <sdk_ubuntu_components_themesettings>` |
 +--------------------------------------------------------------------------+
 
 Configure the theme of the Dialog foreground and all its subcomponents.
@@ -228,9 +251,11 @@ Example:
 This QML property was introduced in Ubuntu.Components 1.3.
 
 **See also**
-`StyledItem::theme </sdk/apps/qml/Ubuntu.Components/StyledItem#theme-prop>`__.
+:ref:`StyledItem::theme <sdk_ubuntu_components_styleditem#theme-prop>`.
 
 | 
+
+.. _sdk_ubuntu_components_popups_dialog_title-prop:
 
 +--------------------------------------------------------------------------+
 |        \ title : string                                                  |

@@ -1,3 +1,7 @@
+.. _sdk_qtquick_important_concepts_in_qt_quick_-_visual_types:
+QtQuick Important Concepts In Qt Quick - Visual Types
+=====================================================
+
 
 
 Most user-interfaces include some visual aspect. While multimodal

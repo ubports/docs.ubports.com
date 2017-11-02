@@ -1,3 +1,7 @@
+.. _sdk_ubuntuuserinterfacetoolkit_sub-theming:
+UbuntuUserInterfaceToolkit Sub-theming
+======================================
+
 
 
 There can be situations when an application has a design which combines
@@ -6,8 +10,8 @@ hard to be combined in a single theme. In these situations developers
 can use different themes in the components and its child components.
 This is called sub-theming, which was introduced in Ubuntu.Components
 1.3. The only thing the application has to do is to define a
-`ThemeSettings </sdk/apps/qml/Ubuntu.Components/ThemeSettings/>`__
-instance for the component which is desired to use a different theme.
+:ref:`ThemeSettings <sdk_ubuntu_components_themesettings>` instance for the
+component which is desired to use a different theme.
 
 .. code:: qml
 
@@ -51,7 +55,7 @@ theme, so the application will be restricted to one given theme. If we
 want to have the same palette values to be used no matter where the
 component is used, we can override the palette values we want to change,
 by setting the theme palette to a
-`Palette </sdk/apps/qml/Ubuntu.Components/Themes.Palette/>`__ instance
+`Palette </sdk/apps/qml/Ubuntu.Components/Themes.Palette/>`_  instance
 where only the desired palette values are changed. This can be combined
 with sub-theming, which will make sure that the palette values are
 applied only on a certain component sub-tree.
@@ -123,7 +127,7 @@ application's theme. This means that the theme will actually be changed
 on the entire application, not only on the Button itself.
 
 The Dialog uses the
-`parentTheme </sdk/apps/qml/Ubuntu.Components/ThemeSettings#parentTheme-prop>`__
+:ref:`parentTheme <sdk_ubuntu_components_themesettings#parentTheme-prop>`
 property to load the same theme as its parent styled item is using,
 meaning that the Dialog will also load the same theme as the application
 does, and will change the loaded palette values with the ones defined in
@@ -142,8 +146,8 @@ fail.
 Let's take the example above, and assume that we want to show the Dialog
 with the same theme as the application but with an earlier version. We
 can do this by specifying the theme version with
-`Ubuntu.version() </sdk/apps/qml/Ubuntu.Components/Ubuntu#version-method>`__
-as follows:
+:ref:`Ubuntu.version() <sdk_ubuntu_components_ubuntu#version-method>` as
+follows:
 
 .. code:: qml
 
@@ -202,4 +206,4 @@ styles, how to use multiple themes in an application and how to set
 custom palette values runtime. If you have questions or need guidance,
 you can contact us on **#ubuntu-app-devel** IRC channel on freenode.
 
-`Themes </sdk/apps/qml/UbuntuUserInterfaceToolkit/ubuntu-theming-themes/>`__
+`Themes </sdk/apps/qml/UbuntuUserInterfaceToolkit/ubuntu-theming-themes/>`_ 

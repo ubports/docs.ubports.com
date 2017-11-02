@@ -1,3 +1,7 @@
+.. _sdk_qtqml_defining_object_types_through_qml_documents:
+QtQml Defining Object Types through QML Documents
+=================================================
+
 
 
 One of the core features of QML is that it enables QML object types to
@@ -74,7 +78,7 @@ If ``SquareButton.qml`` was not in the same directory as
 specifically made available through an *import* statement in
 ``myapplication.qml``. It could be imported from a relative path on the
 file system, or as an installed module; see
-`module </sdk/apps/qml/QtQml/qtqml-modules-topic/>`__ for more details.
+`module </sdk/apps/qml/QtQml/qtqml-modules-topic/>`_  for more details.
 
 .. rubric:: Accessible Attributes of Custom Types
    :name: accessible-attributes-of-custom-types
@@ -105,10 +109,10 @@ properties of the root Rectangle object of the ``SquareButton`` type:
 
 The attributes that are accessible to objects of the custom QML type
 include any `custom
-properties </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes#defining-property-attributes>`__,
-`methods </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes#defining-method-attributes>`__
+properties </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes/#defining-property-attributes>`_ ,
+`methods </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes/#defining-method-attributes>`_ 
 and
-`signals </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes#defining-signal-attributes>`__
+`signals </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes/#defining-signal-attributes>`_ 
 that have additionally been defined for an object. For example, suppose
 the Rectangle in ``SquareButton.qml`` had been defined as follows, with
 additional properties, methods and signals:

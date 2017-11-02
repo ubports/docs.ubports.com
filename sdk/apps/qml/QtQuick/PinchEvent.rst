@@ -1,3 +1,7 @@
+.. _sdk_qtquick_pinchevent:
+QtQuick PinchEvent
+==================
+
 For specifying information about a pinch event
 
 +---------------------+----------------------+
@@ -7,34 +11,26 @@ For specifying information about a pinch event
 Properties
 ----------
 
--  ****`accepted </sdk/apps/qml/QtQuick/PinchEvent#accepted-prop>`__****
-   : bool
--  ****`angle </sdk/apps/qml/QtQuick/PinchEvent#angle-prop>`__**** :
-   real
--  ****`center </sdk/apps/qml/QtQuick/PinchEvent#center-prop>`__**** :
-   QPointF
--  ****`point1 </sdk/apps/qml/QtQuick/PinchEvent#point1-prop>`__**** :
-   QPointF
--  ****`point2 </sdk/apps/qml/QtQuick/PinchEvent#point2-prop>`__**** :
-   QPointF
--  ****`pointCount </sdk/apps/qml/QtQuick/PinchEvent#pointCount-prop>`__****
-   : int
--  ****`previousAngle </sdk/apps/qml/QtQuick/PinchEvent#previousAngle-prop>`__****
+-  :ref:`accepted <sdk_qtquick_pinchevent_accepted-prop>` : bool
+-  :ref:`angle <sdk_qtquick_pinchevent_angle-prop>` : real
+-  :ref:`center <sdk_qtquick_pinchevent_center-prop>` : QPointF
+-  :ref:`point1 <sdk_qtquick_pinchevent_point1-prop>` : QPointF
+-  :ref:`point2 <sdk_qtquick_pinchevent_point2-prop>` : QPointF
+-  :ref:`pointCount <sdk_qtquick_pinchevent_pointCount-prop>` : int
+-  :ref:`previousAngle <sdk_qtquick_pinchevent_previousAngle-prop>`
    : real
--  ****`previousCenter </sdk/apps/qml/QtQuick/PinchEvent#previousCenter-prop>`__****
+-  :ref:`previousCenter <sdk_qtquick_pinchevent_previousCenter-prop>`
    : QPointF
--  ****`previousScale </sdk/apps/qml/QtQuick/PinchEvent#previousScale-prop>`__****
+-  :ref:`previousScale <sdk_qtquick_pinchevent_previousScale-prop>`
    : real
--  ****`rotation </sdk/apps/qml/QtQuick/PinchEvent#rotation-prop>`__****
-   : real
--  ****`scale </sdk/apps/qml/QtQuick/PinchEvent#scale-prop>`__**** :
-   real
--  ****`startCenter </sdk/apps/qml/QtQuick/PinchEvent#startCenter-prop>`__****
-   : QPointF
--  ****`startPoint1 </sdk/apps/qml/QtQuick/PinchEvent#startPoint1-prop>`__****
-   : QPointF
--  ****`startPoint2 </sdk/apps/qml/QtQuick/PinchEvent#startPoint2-prop>`__****
-   : QPointF
+-  :ref:`rotation <sdk_qtquick_pinchevent_rotation-prop>` : real
+-  :ref:`scale <sdk_qtquick_pinchevent_scale-prop>` : real
+-  :ref:`startCenter <sdk_qtquick_pinchevent_startCenter-prop>` :
+   QPointF
+-  :ref:`startPoint1 <sdk_qtquick_pinchevent_startPoint1-prop>` :
+   QPointF
+-  :ref:`startPoint2 <sdk_qtquick_pinchevent_startPoint2-prop>` :
+   QPointF
 
 Detailed Description
 --------------------
@@ -55,10 +51,12 @@ provide the positions of the touch points.
 The ``accepted`` property may be set to false in the ``onPinchStarted``
 handler if the gesture should not be handled.
 
-**See also** `PinchArea </sdk/apps/qml/QtQuick/PinchArea/>`__.
+**See also** :ref:`PinchArea <sdk_qtquick_pincharea>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_pinchevent_accepted-prop:
 
 +--------------------------------------------------------------------------+
 |        \ accepted : bool                                                 |
@@ -69,6 +67,8 @@ handler will result in no further pinch events being generated, and the
 gesture ignored.
 
 | 
+
+.. _sdk_qtquick_pinchevent_angle-prop:
 
 +--------------------------------------------------------------------------+
 |        \ angle : real                                                    |
@@ -85,6 +85,8 @@ When a pinch gesture is started, the rotation is ``0.0``.
 
 | 
 
+.. _sdk_qtquick_pinchevent_center-prop:
+
 +--------------------------------------------------------------------------+
 |        \ center : QPointF                                                |
 +--------------------------------------------------------------------------+
@@ -98,6 +100,8 @@ touch points.
 
 | 
 
+.. _sdk_qtquick_pinchevent_point1-prop:
+
 +--------------------------------------------------------------------------+
 |        \ point1 : QPointF                                                |
 +--------------------------------------------------------------------------+
@@ -109,6 +113,8 @@ These properties provide the actual touch points generating the pinch.
    when the second point was touched.
 
 | 
+
+.. _sdk_qtquick_pinchevent_point2-prop:
 
 +--------------------------------------------------------------------------+
 |        \ point2 : QPointF                                                |
@@ -122,16 +128,20 @@ These properties provide the actual touch points generating the pinch.
 
 | 
 
+.. _sdk_qtquick_pinchevent_pointCount-prop:
+
 +--------------------------------------------------------------------------+
 |        \ pointCount : int                                                |
 +--------------------------------------------------------------------------+
 
 Holds the number of points currently touched. The
-`PinchArea </sdk/apps/qml/QtQuick/PinchArea/>`__ will not react until
-two touch points have initited a gesture, but will remain active until
-all touch points have been released.
+:ref:`PinchArea <sdk_qtquick_pincharea>` will not react until two touch
+points have initited a gesture, but will remain active until all touch
+points have been released.
 
 | 
+
+.. _sdk_qtquick_pinchevent_previousAngle-prop:
 
 +--------------------------------------------------------------------------+
 |        \ previousAngle : real                                            |
@@ -148,6 +158,8 @@ When a pinch gesture is started, the rotation is ``0.0``.
 
 | 
 
+.. _sdk_qtquick_pinchevent_previousCenter-prop:
+
 +--------------------------------------------------------------------------+
 |        \ previousCenter : QPointF                                        |
 +--------------------------------------------------------------------------+
@@ -160,6 +172,8 @@ touch points.
 -  ``startCenter`` is the center point when the gesture began
 
 | 
+
+.. _sdk_qtquick_pinchevent_previousScale-prop:
 
 +--------------------------------------------------------------------------+
 |        \ previousScale : real                                            |
@@ -174,6 +188,8 @@ distance between the two touch points.
 When a pinch gesture is started, the scale is ``1.0``.
 
 | 
+
+.. _sdk_qtquick_pinchevent_rotation-prop:
 
 +--------------------------------------------------------------------------+
 |        \ rotation : real                                                 |
@@ -190,6 +206,8 @@ When a pinch gesture is started, the rotation is ``0.0``.
 
 | 
 
+.. _sdk_qtquick_pinchevent_scale-prop:
+
 +--------------------------------------------------------------------------+
 |        \ scale : real                                                    |
 +--------------------------------------------------------------------------+
@@ -204,6 +222,8 @@ When a pinch gesture is started, the scale is ``1.0``.
 
 | 
 
+.. _sdk_qtquick_pinchevent_startCenter-prop:
+
 +--------------------------------------------------------------------------+
 |        \ startCenter : QPointF                                           |
 +--------------------------------------------------------------------------+
@@ -217,6 +237,8 @@ touch points.
 
 | 
 
+.. _sdk_qtquick_pinchevent_startPoint1-prop:
+
 +--------------------------------------------------------------------------+
 |        \ startPoint1 : QPointF                                           |
 +--------------------------------------------------------------------------+
@@ -228,6 +250,8 @@ These properties provide the actual touch points generating the pinch.
    when the second point was touched.
 
 | 
+
+.. _sdk_qtquick_pinchevent_startPoint2-prop:
 
 +--------------------------------------------------------------------------+
 |        \ startPoint2 : QPointF                                           |

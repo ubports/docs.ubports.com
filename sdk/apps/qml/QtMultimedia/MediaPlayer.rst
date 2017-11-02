@@ -1,3 +1,7 @@
+.. _sdk_qtmultimedia_mediaplayer:
+QtMultimedia MediaPlayer
+========================
+
 Add media playback to a scene.
 
 +---------------------+---------------------------+
@@ -7,156 +11,152 @@ Add media playback to a scene.
 Properties
 ----------
 
--  ****`audioRole </sdk/apps/qml/QtMultimedia/MediaPlayer#audioRole-prop>`__****
+-  :ref:`audioRole <sdk_qtmultimedia_mediaplayer_audioRole-prop>` :
+   enumeration
+-  :ref:`autoLoad <sdk_qtmultimedia_mediaplayer_autoLoad-prop>` :
+   bool
+-  :ref:`autoPlay <sdk_qtmultimedia_mediaplayer_autoPlay-prop>` :
+   bool
+-  :ref:`availability <sdk_qtmultimedia_mediaplayer_availability-prop>`
    : enumeration
--  ****`autoLoad </sdk/apps/qml/QtMultimedia/MediaPlayer#autoLoad-prop>`__****
-   : bool
--  ****`autoPlay </sdk/apps/qml/QtMultimedia/MediaPlayer#autoPlay-prop>`__****
-   : bool
--  ****`availability </sdk/apps/qml/QtMultimedia/MediaPlayer#availability-prop>`__****
-   : enumeration
--  ****`bufferProgress </sdk/apps/qml/QtMultimedia/MediaPlayer#bufferProgress-prop>`__****
+-  :ref:`bufferProgress <sdk_qtmultimedia_mediaplayer_bufferProgress-prop>`
    : real
--  ****`duration </sdk/apps/qml/QtMultimedia/MediaPlayer#duration-prop>`__****
-   : int
--  ****`error </sdk/apps/qml/QtMultimedia/MediaPlayer#error-prop>`__****
-   : enumeration
--  ****`errorString </sdk/apps/qml/QtMultimedia/MediaPlayer#errorString-prop>`__****
+-  :ref:`duration <sdk_qtmultimedia_mediaplayer_duration-prop>` :
+   int
+-  :ref:`error <sdk_qtmultimedia_mediaplayer_error-prop>` :
+   enumeration
+-  :ref:`errorString <sdk_qtmultimedia_mediaplayer_errorString-prop>`
    : string
--  ****`hasAudio </sdk/apps/qml/QtMultimedia/MediaPlayer#hasAudio-prop>`__****
-   : bool
--  ****`hasVideo </sdk/apps/qml/QtMultimedia/MediaPlayer#hasVideo-prop>`__****
-   : bool
--  ****`loops </sdk/apps/qml/QtMultimedia/MediaPlayer#loops-prop>`__****
-   : int
--  ****`metaData.albumArtist </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.albumArtist-prop>`__****
+-  :ref:`hasAudio <sdk_qtmultimedia_mediaplayer_hasAudio-prop>` :
+   bool
+-  :ref:`hasVideo <sdk_qtmultimedia_mediaplayer_hasVideo-prop>` :
+   bool
+-  :ref:`loops <sdk_qtmultimedia_mediaplayer_loops-prop>` : int
+-  :ref:`metaData.albumArtist <sdk_qtmultimedia_mediaplayer_metaData.albumArtist-prop>`
    : variant
--  ****`metaData.albumTitle </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.albumTitle-prop>`__****
+-  :ref:`metaData.albumTitle <sdk_qtmultimedia_mediaplayer_metaData.albumTitle-prop>`
    : variant
--  ****`metaData.audioBitRate </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.audioBitRate-prop>`__****
+-  :ref:`metaData.audioBitRate <sdk_qtmultimedia_mediaplayer_metaData.audioBitRate-prop>`
    : variant
--  ****`metaData.audioCodec </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.audioCodec-prop>`__****
+-  :ref:`metaData.audioCodec <sdk_qtmultimedia_mediaplayer_metaData.audioCodec-prop>`
    : variant
--  ****`metaData.author </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.author-prop>`__****
+-  :ref:`metaData.author <sdk_qtmultimedia_mediaplayer_metaData.author-prop>`
    : variant
--  ****`metaData.averageLevel </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.averageLevel-prop>`__****
+-  :ref:`metaData.averageLevel <sdk_qtmultimedia_mediaplayer_metaData.averageLevel-prop>`
    : variant
--  ****`metaData.category </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.category-prop>`__****
+-  :ref:`metaData.category <sdk_qtmultimedia_mediaplayer_metaData.category-prop>`
    : variant
--  ****`metaData.channelCount </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.channelCount-prop>`__****
+-  :ref:`metaData.channelCount <sdk_qtmultimedia_mediaplayer_metaData.channelCount-prop>`
    : variant
--  ****`metaData.chapterNumber </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.chapterNumber-prop>`__****
+-  :ref:`metaData.chapterNumber <sdk_qtmultimedia_mediaplayer_metaData.chapterNumber-prop>`
    : variant
--  ****`metaData.comment </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.comment-prop>`__****
+-  :ref:`metaData.comment <sdk_qtmultimedia_mediaplayer_metaData.comment-prop>`
    : variant
--  ****`metaData.composer </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.composer-prop>`__****
+-  :ref:`metaData.composer <sdk_qtmultimedia_mediaplayer_metaData.composer-prop>`
    : variant
--  ****`metaData.conductor </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.conductor-prop>`__****
+-  :ref:`metaData.conductor <sdk_qtmultimedia_mediaplayer_metaData.conductor-prop>`
    : variant
--  ****`metaData.contributingArtist </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.contributingArtist-prop>`__****
+-  :ref:`metaData.contributingArtist <sdk_qtmultimedia_mediaplayer_metaData.contributingArtist-prop>`
    : variant
--  ****`metaData.copyright </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.copyright-prop>`__****
+-  :ref:`metaData.copyright <sdk_qtmultimedia_mediaplayer_metaData.copyright-prop>`
    : variant
--  ****`metaData.coverArtUrlLarge </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.coverArtUrlLarge-prop>`__****
+-  :ref:`metaData.coverArtUrlLarge <sdk_qtmultimedia_mediaplayer_metaData.coverArtUrlLarge-prop>`
    : variant
--  ****`metaData.coverArtUrlSmall </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.coverArtUrlSmall-prop>`__****
+-  :ref:`metaData.coverArtUrlSmall <sdk_qtmultimedia_mediaplayer_metaData.coverArtUrlSmall-prop>`
    : variant
--  ****`metaData.date </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.date-prop>`__****
+-  :ref:`metaData.date <sdk_qtmultimedia_mediaplayer_metaData.date-prop>`
    : variant
--  ****`metaData.description </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.description-prop>`__****
+-  :ref:`metaData.description <sdk_qtmultimedia_mediaplayer_metaData.description-prop>`
    : variant
--  ****`metaData.director </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.director-prop>`__****
+-  :ref:`metaData.director <sdk_qtmultimedia_mediaplayer_metaData.director-prop>`
    : variant
--  ****`metaData.genre </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.genre-prop>`__****
+-  :ref:`metaData.genre <sdk_qtmultimedia_mediaplayer_metaData.genre-prop>`
    : variant
--  ****`metaData.keywords </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.keywords-prop>`__****
+-  :ref:`metaData.keywords <sdk_qtmultimedia_mediaplayer_metaData.keywords-prop>`
    : variant
--  ****`metaData.language </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.language-prop>`__****
+-  :ref:`metaData.language <sdk_qtmultimedia_mediaplayer_metaData.language-prop>`
    : variant
--  ****`metaData.leadPerformer </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.leadPerformer-prop>`__****
+-  :ref:`metaData.leadPerformer <sdk_qtmultimedia_mediaplayer_metaData.leadPerformer-prop>`
    : variant
--  ****`metaData.lyrics </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.lyrics-prop>`__****
+-  :ref:`metaData.lyrics <sdk_qtmultimedia_mediaplayer_metaData.lyrics-prop>`
    : variant
--  ****`metaData.mediaType </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.mediaType-prop>`__****
+-  :ref:`metaData.mediaType <sdk_qtmultimedia_mediaplayer_metaData.mediaType-prop>`
    : variant
--  ****`metaData.mood </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.mood-prop>`__****
+-  :ref:`metaData.mood <sdk_qtmultimedia_mediaplayer_metaData.mood-prop>`
    : variant
--  ****`metaData.parentalRating </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.parentalRating-prop>`__****
+-  :ref:`metaData.parentalRating <sdk_qtmultimedia_mediaplayer_metaData.parentalRating-prop>`
    : variant
--  ****`metaData.peakValue </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.peakValue-prop>`__****
+-  :ref:`metaData.peakValue <sdk_qtmultimedia_mediaplayer_metaData.peakValue-prop>`
    : variant
--  ****`metaData.pixelAspectRatio </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.pixelAspectRatio-prop>`__****
+-  :ref:`metaData.pixelAspectRatio <sdk_qtmultimedia_mediaplayer_metaData.pixelAspectRatio-prop>`
    : variant
--  ****`metaData.posterUrl </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.posterUrl-prop>`__****
+-  :ref:`metaData.posterUrl <sdk_qtmultimedia_mediaplayer_metaData.posterUrl-prop>`
    : variant
--  ****`metaData.publisher </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.publisher-prop>`__****
+-  :ref:`metaData.publisher <sdk_qtmultimedia_mediaplayer_metaData.publisher-prop>`
    : variant
--  ****`metaData.ratingOrganization </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.ratingOrganization-prop>`__****
+-  :ref:`metaData.ratingOrganization <sdk_qtmultimedia_mediaplayer_metaData.ratingOrganization-prop>`
    : variant
--  ****`metaData.resolution </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.resolution-prop>`__****
+-  :ref:`metaData.resolution <sdk_qtmultimedia_mediaplayer_metaData.resolution-prop>`
    : variant
--  ****`metaData.sampleRate </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.sampleRate-prop>`__****
+-  :ref:`metaData.sampleRate <sdk_qtmultimedia_mediaplayer_metaData.sampleRate-prop>`
    : variant
--  ****`metaData.size </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.size-prop>`__****
+-  :ref:`metaData.size <sdk_qtmultimedia_mediaplayer_metaData.size-prop>`
    : variant
--  ****`metaData.subTitle </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.subTitle-prop>`__****
+-  :ref:`metaData.subTitle <sdk_qtmultimedia_mediaplayer_metaData.subTitle-prop>`
    : variant
--  ****`metaData.title </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.title-prop>`__****
+-  :ref:`metaData.title <sdk_qtmultimedia_mediaplayer_metaData.title-prop>`
    : variant
--  ****`metaData.trackCount </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.trackCount-prop>`__****
+-  :ref:`metaData.trackCount <sdk_qtmultimedia_mediaplayer_metaData.trackCount-prop>`
    : variant
--  ****`metaData.trackNumber </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.trackNumber-prop>`__****
+-  :ref:`metaData.trackNumber <sdk_qtmultimedia_mediaplayer_metaData.trackNumber-prop>`
    : variant
--  ****`metaData.userRating </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.userRating-prop>`__****
+-  :ref:`metaData.userRating <sdk_qtmultimedia_mediaplayer_metaData.userRating-prop>`
    : variant
--  ****`metaData.videoBitRate </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.videoBitRate-prop>`__****
+-  :ref:`metaData.videoBitRate <sdk_qtmultimedia_mediaplayer_metaData.videoBitRate-prop>`
    : variant
--  ****`metaData.videoCodec </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.videoCodec-prop>`__****
+-  :ref:`metaData.videoCodec <sdk_qtmultimedia_mediaplayer_metaData.videoCodec-prop>`
    : variant
--  ****`metaData.videoFrameRate </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.videoFrameRate-prop>`__****
+-  :ref:`metaData.videoFrameRate <sdk_qtmultimedia_mediaplayer_metaData.videoFrameRate-prop>`
    : variant
--  ****`metaData.writer </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.writer-prop>`__****
+-  :ref:`metaData.writer <sdk_qtmultimedia_mediaplayer_metaData.writer-prop>`
    : variant
--  ****`metaData.year </sdk/apps/qml/QtMultimedia/MediaPlayer#metaData.year-prop>`__****
+-  :ref:`metaData.year <sdk_qtmultimedia_mediaplayer_metaData.year-prop>`
    : variant
--  ****`muted </sdk/apps/qml/QtMultimedia/MediaPlayer#muted-prop>`__****
-   : bool
--  ****`playbackRate </sdk/apps/qml/QtMultimedia/MediaPlayer#playbackRate-prop>`__****
+-  :ref:`muted <sdk_qtmultimedia_mediaplayer_muted-prop>` : bool
+-  :ref:`playbackRate <sdk_qtmultimedia_mediaplayer_playbackRate-prop>`
    : real
--  ****`playbackState </sdk/apps/qml/QtMultimedia/MediaPlayer#playbackState-prop>`__****
+-  :ref:`playbackState <sdk_qtmultimedia_mediaplayer_playbackState-prop>`
    : enumeration
--  ****`playlist </sdk/apps/qml/QtMultimedia/MediaPlayer#playlist-prop>`__****
-   : Playlist
--  ****`position </sdk/apps/qml/QtMultimedia/MediaPlayer#position-prop>`__****
-   : int
--  ****`seekable </sdk/apps/qml/QtMultimedia/MediaPlayer#seekable-prop>`__****
-   : bool
--  ****`source </sdk/apps/qml/QtMultimedia/MediaPlayer#source-prop>`__****
-   : url
--  ****`status </sdk/apps/qml/QtMultimedia/MediaPlayer#status-prop>`__****
-   : enumeration
--  ****`volume </sdk/apps/qml/QtMultimedia/MediaPlayer#volume-prop>`__****
-   : real
+-  :ref:`playlist <sdk_qtmultimedia_mediaplayer_playlist-prop>` :
+   Playlist
+-  :ref:`position <sdk_qtmultimedia_mediaplayer_position-prop>` :
+   int
+-  :ref:`seekable <sdk_qtmultimedia_mediaplayer_seekable-prop>` :
+   bool
+-  :ref:`source <sdk_qtmultimedia_mediaplayer_source-prop>` : url
+-  :ref:`status <sdk_qtmultimedia_mediaplayer_status-prop>` :
+   enumeration
+-  :ref:`volume <sdk_qtmultimedia_mediaplayer_volume-prop>` : real
 
 Signals
 -------
 
--  ****`error </sdk/apps/qml/QtMultimedia/MediaPlayer#error-signal>`__****\ (error,
+-  :ref:`error <sdk_qtmultimedia_mediaplayer_error-signal>`\ (error,
    errorString)
--  ****`paused </sdk/apps/qml/QtMultimedia/MediaPlayer#paused-signal>`__****\ ()
--  ****`playbackStateChanged </sdk/apps/qml/QtMultimedia/MediaPlayer#playbackStateChanged-signal>`__****\ ()
--  ****`playing </sdk/apps/qml/QtMultimedia/MediaPlayer#playing-signal>`__****\ ()
--  ****`stopped </sdk/apps/qml/QtMultimedia/MediaPlayer#stopped-signal>`__****\ ()
+-  :ref:`paused <sdk_qtmultimedia_mediaplayer_paused-signal>`\ ()
+-  :ref:`playbackStateChanged <sdk_qtmultimedia_mediaplayer_playbackStateChanged-signal>`\ ()
+-  :ref:`playing <sdk_qtmultimedia_mediaplayer_playing-signal>`\ ()
+-  :ref:`stopped <sdk_qtmultimedia_mediaplayer_stopped-signal>`\ ()
 
 Methods
 -------
 
--  ****`pause </sdk/apps/qml/QtMultimedia/MediaPlayer#pause-method>`__****\ ()
--  ****`play </sdk/apps/qml/QtMultimedia/MediaPlayer#play-method>`__****\ ()
--  ****`seek </sdk/apps/qml/QtMultimedia/MediaPlayer#seek-method>`__****\ (offset)
--  ****`stop </sdk/apps/qml/QtMultimedia/MediaPlayer#stop-method>`__****\ ()
+-  :ref:`pause <sdk_qtmultimedia_mediaplayer_pause-method>`\ ()
+-  :ref:`play <sdk_qtmultimedia_mediaplayer_play-method>`\ ()
+-  :ref:`seek <sdk_qtmultimedia_mediaplayer_seek-method>`\ (offset)
+-  :ref:`stop <sdk_qtmultimedia_mediaplayer_stop-method>`\ ()
 -  list<int>
-   ****`supportedAudioRoles </sdk/apps/qml/QtMultimedia/MediaPlayer#supportedAudioRoles-method>`__****\ ()
+   **:ref:`supportedAudioRoles <sdk_qtmultimedia_mediaplayer#supportedAudioRoles-method>`**\ ()
 
 Detailed Description
 --------------------
@@ -182,12 +182,11 @@ MediaPlayer is part of the **QtMultimedia 5.0** module.
         }
     }
 
-You can use `MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__ by
-itself to play audio content (like
-`Audio </sdk/apps/qml/QtMultimedia/qml-multimedia#audio>`__), or you can
-use it in conjunction with a
-`VideoOutput </sdk/apps/qml/QtMultimedia/VideoOutput/>`__ for rendering
-video.
+You can use :ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>` by itself to
+play audio content (like
+`Audio </sdk/apps/qml/QtMultimedia/qml-multimedia/#audio>`_ ), or you
+can use it in conjunction with a
+:ref:`VideoOutput <sdk_qtmultimedia_videooutput>` for rendering video.
 
 .. code:: qml
 
@@ -209,10 +208,12 @@ video.
         }
     }
 
-**See also** `VideoOutput </sdk/apps/qml/QtMultimedia/VideoOutput/>`__.
+**See also** :ref:`VideoOutput <sdk_qtmultimedia_videooutput>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtmultimedia_mediaplayer_audioRole-prop:
 
 +--------------------------------------------------------------------------+
 |        \ audioRole : enumeration                                         |
@@ -226,7 +227,7 @@ post-processing.
 The audio role must be set before setting the source property.
 
 Supported values can be retrieved with
-`supportedAudioRoles() </sdk/apps/qml/QtMultimedia/MediaPlayer#supportedAudioRoles-method>`__.
+:ref:`supportedAudioRoles() <sdk_qtmultimedia_mediaplayer#supportedAudioRoles-method>`.
 
 The value can be one of:
 
@@ -246,6 +247,8 @@ This QML property was introduced in Qt 5.6.
 
 | 
 
+.. _sdk_qtmultimedia_mediaplayer_autoLoad-prop:
+
 +--------------------------------------------------------------------------+
 |        \ autoLoad : bool                                                 |
 +--------------------------------------------------------------------------+
@@ -257,6 +260,8 @@ started.
 
 | 
 
+.. _sdk_qtmultimedia_mediaplayer_autoPlay-prop:
+
 +--------------------------------------------------------------------------+
 |        \ autoPlay : bool                                                 |
 +--------------------------------------------------------------------------+
@@ -264,10 +269,12 @@ started.
 This property controls whether the media will begin to play on start up.
 
 Defaults to ``false``. If set to ``true``, the value of
-`autoLoad </sdk/apps/qml/QtMultimedia/MediaPlayer#autoLoad-prop>`__ will
-be overwritten to ``true``.
+:ref:`autoLoad <sdk_qtmultimedia_mediaplayer#autoLoad-prop>` will be
+overwritten to ``true``.
 
 | 
+
+.. _sdk_qtmultimedia_mediaplayer_availability-prop:
 
 +--------------------------------------------------------------------------+
 |        \ availability : enumeration                                      |
@@ -277,19 +284,26 @@ Returns the availability state of the media player.
 
 This is one of:
 
+.. _sdk_qtmultimedia_mediaplayer_Value              Description-prop:
+
 +-------------------+--------------------------------------------------------------------------------------------------------------------------------+
 | Value             | Description                                                                                                                    |
 +===================+================================================================================================================================+
+.. _sdk_qtmultimedia_mediaplayer_Busy               The media player is usually available, but some other process is utilizing the hardware necessary to play media.-prop:
 | Available         | The media player is available to use.                                                                                          |
 +-------------------+--------------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_qtmultimedia_mediaplayer_Unavailable        There are no supported media playback facilities.-prop:
 | Busy              | The media player is usually available, but some other process is utilizing the hardware necessary to play media.               |
 +-------------------+--------------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_qtmultimedia_mediaplayer_ResourceMissing    There is one or more resources missing, so the media player cannot be used. It may be possible to try again at a later time.-prop:
 | Unavailable       | There are no supported media playback facilities.                                                                              |
 +-------------------+--------------------------------------------------------------------------------------------------------------------------------+
 | ResourceMissing   | There is one or more resources missing, so the media player cannot be used. It may be possible to try again at a later time.   |
 +-------------------+--------------------------------------------------------------------------------------------------------------------------------+
 
 | 
+
+.. _sdk_qtmultimedia_mediaplayer_bufferProgress-prop:
 
 +--------------------------------------------------------------------------+
 |        \ bufferProgress : real                                           |
@@ -303,10 +317,11 @@ which case the status is ``MediaPlayer.Buffered`` or
 ``MediaPlayer.Buffering``. A value lower than ``1.0`` implies that the
 status is ``MediaPlayer.Stalled``.
 
-**See also**
-`status </sdk/apps/qml/QtMultimedia/MediaPlayer#status-prop>`__.
+**See also** :ref:`status <sdk_qtmultimedia_mediaplayer#status-prop>`.
 
 | 
+
+.. _sdk_qtmultimedia_mediaplayer_duration-prop:
 
 +--------------------------------------------------------------------------+
 |        \ duration : int                                                  |
@@ -319,29 +334,40 @@ this will be 0.
 
 | 
 
+.. _sdk_qtmultimedia_mediaplayer_error-prop:
+
 +--------------------------------------------------------------------------+
 |        \ error : enumeration                                             |
 +--------------------------------------------------------------------------+
 
 This property holds the error state of the audio. It can be one of:
 
+.. _sdk_qtmultimedia_mediaplayer_Value             Description-prop:
+
 +------------------+-----------------------------------------------------------------------------------+
 | Value            | Description                                                                       |
 +==================+===================================================================================+
+.. _sdk_qtmultimedia_mediaplayer_ResourceError     The audio cannot be played due to a problem allocating resources.-prop:
 | NoError          | There is no current error.                                                        |
 +------------------+-----------------------------------------------------------------------------------+
+.. _sdk_qtmultimedia_mediaplayer_FormatError       The audio format is not supported.-prop:
 | ResourceError    | The audio cannot be played due to a problem allocating resources.                 |
 +------------------+-----------------------------------------------------------------------------------+
+.. _sdk_qtmultimedia_mediaplayer_NetworkError      The audio cannot be played due to network issues.-prop:
 | FormatError      | The audio format is not supported.                                                |
 +------------------+-----------------------------------------------------------------------------------+
+.. _sdk_qtmultimedia_mediaplayer_AccessDenied      The audio cannot be played due to insufficient permissions.-prop:
 | NetworkError     | The audio cannot be played due to network issues.                                 |
 +------------------+-----------------------------------------------------------------------------------+
+.. _sdk_qtmultimedia_mediaplayer_ServiceMissing    The audio cannot be played because the media service could not be instantiated.-prop:
 | AccessDenied     | The audio cannot be played due to insufficient permissions.                       |
 +------------------+-----------------------------------------------------------------------------------+
 | ServiceMissing   | The audio cannot be played because the media service could not be instantiated.   |
 +------------------+-----------------------------------------------------------------------------------+
 
 | 
+
+.. _sdk_qtmultimedia_mediaplayer_errorString-prop:
 
 +--------------------------------------------------------------------------+
 |        \ errorString : string                                            |
@@ -352,6 +378,8 @@ more detail.
 
 | 
 
+.. _sdk_qtmultimedia_mediaplayer_hasAudio-prop:
+
 +--------------------------------------------------------------------------+
 |        \ hasAudio : bool                                                 |
 +--------------------------------------------------------------------------+
@@ -360,6 +388,8 @@ This property holds whether the media contains audio.
 
 | 
 
+.. _sdk_qtmultimedia_mediaplayer_hasVideo-prop:
+
 +--------------------------------------------------------------------------+
 |        \ hasVideo : bool                                                 |
 +--------------------------------------------------------------------------+
@@ -367,6 +397,8 @@ This property holds whether the media contains audio.
 This property holds whether the media contains video.
 
 | 
+
+.. _sdk_qtmultimedia_mediaplayer_loops-prop:
 
 +--------------------------------------------------------------------------+
 |        \ loops : int                                                     |
@@ -383,6 +415,8 @@ The default is ``1``.
 
 | 
 
+.. _sdk_qtmultimedia_mediaplayer_metaData.albumArtist-prop:
+
 +--------------------------------------------------------------------------+
 |        \ metaData.albumArtist : variant                                  |
 +--------------------------------------------------------------------------+
@@ -394,6 +428,8 @@ media belongs to.
 
 | 
 
+.. _sdk_qtmultimedia_mediaplayer_metaData.albumTitle-prop:
+
 +--------------------------------------------------------------------------+
 |        \ metaData.albumTitle : variant                                   |
 +--------------------------------------------------------------------------+
@@ -403,6 +439,8 @@ This property holds the title of the album the media belongs to.
 **See also** QMediaMetaData.
 
 | 
+
+.. _sdk_qtmultimedia_mediaplayer_metaData.audioBitRate-prop:
 
 +--------------------------------------------------------------------------+
 |        \ metaData.audioBitRate : variant                                 |
@@ -415,6 +453,8 @@ second.
 
 | 
 
+.. _sdk_qtmultimedia_mediaplayer_metaData.audioCodec-prop:
+
 +--------------------------------------------------------------------------+
 |        \ metaData.audioCodec : variant                                   |
 +--------------------------------------------------------------------------+
@@ -424,6 +464,8 @@ This property holds the encoding of the media audio stream.
 **See also** QMediaMetaData.
 
 | 
+
+.. _sdk_qtmultimedia_mediaplayer_metaData.author-prop:
 
 +--------------------------------------------------------------------------+
 |        \ metaData.author : variant                                       |
@@ -435,6 +477,8 @@ This property holds the author of the media.
 
 | 
 
+.. _sdk_qtmultimedia_mediaplayer_metaData.averageLevel-prop:
+
 +--------------------------------------------------------------------------+
 |        \ metaData.averageLevel : variant                                 |
 +--------------------------------------------------------------------------+
@@ -444,6 +488,8 @@ This property holds the average volume level of the media.
 **See also** QMediaMetaData.
 
 | 
+
+.. _sdk_qtmultimedia_mediaplayer_metaData.category-prop:
 
 +--------------------------------------------------------------------------+
 |        \ metaData.category : variant                                     |
@@ -455,6 +501,8 @@ This property holds the category of the media
 
 | 
 
+.. _sdk_qtmultimedia_mediaplayer_metaData.channelCount-prop:
+
 +--------------------------------------------------------------------------+
 |        \ metaData.channelCount : variant                                 |
 +--------------------------------------------------------------------------+
@@ -464,6 +512,8 @@ This property holds the number of channels in the media's audio stream.
 **See also** QMediaMetaData.
 
 | 
+
+.. _sdk_qtmultimedia_mediaplayer_metaData.chapterNumber-prop:
 
 +--------------------------------------------------------------------------+
 |        \ metaData.chapterNumber : variant                                |
@@ -475,6 +525,8 @@ This property holds the chapter number of the media.
 
 | 
 
+.. _sdk_qtmultimedia_mediaplayer_metaData.comment-prop:
+
 +--------------------------------------------------------------------------+
 |        \ metaData.comment : variant                                      |
 +--------------------------------------------------------------------------+
@@ -484,6 +536,8 @@ This property holds a user comment about the media.
 **See also** QMediaMetaData.
 
 | 
+
+.. _sdk_qtmultimedia_mediaplayer_metaData.composer-prop:
 
 +--------------------------------------------------------------------------+
 |        \ metaData.composer : variant                                     |
@@ -495,6 +549,8 @@ This property holds the composer of the media.
 
 | 
 
+.. _sdk_qtmultimedia_mediaplayer_metaData.conductor-prop:
+
 +--------------------------------------------------------------------------+
 |        \ metaData.conductor : variant                                    |
 +--------------------------------------------------------------------------+
@@ -504,6 +560,8 @@ This property holds the conductor of the media.
 **See also** QMediaMetaData.
 
 | 
+
+.. _sdk_qtmultimedia_mediaplayer_metaData.contributingArtist-prop:
 
 +--------------------------------------------------------------------------+
 |        \ metaData.contributingArtist : variant                           |
@@ -515,6 +573,8 @@ This property holds the names of artists contributing to the media.
 
 | 
 
+.. _sdk_qtmultimedia_mediaplayer_metaData.copyright-prop:
+
 +--------------------------------------------------------------------------+
 |        \ metaData.copyright : variant                                    |
 +--------------------------------------------------------------------------+
@@ -524,6 +584,8 @@ This property holds the media's copyright notice.
 **See also** QMediaMetaData.
 
 | 
+
+.. _sdk_qtmultimedia_mediaplayer_metaData.coverArtUrlLarge-prop:
 
 +--------------------------------------------------------------------------+
 |        \ metaData.coverArtUrlLarge : variant                             |
@@ -535,6 +597,8 @@ This property holds the URL of a large cover art image.
 
 | 
 
+.. _sdk_qtmultimedia_mediaplayer_metaData.coverArtUrlSmall-prop:
+
 +--------------------------------------------------------------------------+
 |        \ metaData.coverArtUrlSmall : variant                             |
 +--------------------------------------------------------------------------+
@@ -544,6 +608,8 @@ This property holds the URL of a small cover art image.
 **See also** QMediaMetaData.
 
 | 
+
+.. _sdk_qtmultimedia_mediaplayer_metaData.date-prop:
 
 +--------------------------------------------------------------------------+
 |        \ metaData.date : variant                                         |
@@ -555,6 +621,8 @@ This property holds the date of the media.
 
 | 
 
+.. _sdk_qtmultimedia_mediaplayer_metaData.description-prop:
+
 +--------------------------------------------------------------------------+
 |        \ metaData.description : variant                                  |
 +--------------------------------------------------------------------------+
@@ -564,6 +632,8 @@ This property holds a description of the media.
 **See also** QMediaMetaData.
 
 | 
+
+.. _sdk_qtmultimedia_mediaplayer_metaData.director-prop:
 
 +--------------------------------------------------------------------------+
 |        \ metaData.director : variant                                     |
@@ -575,6 +645,8 @@ This property holds the director of the media.
 
 | 
 
+.. _sdk_qtmultimedia_mediaplayer_metaData.genre-prop:
+
 +--------------------------------------------------------------------------+
 |        \ metaData.genre : variant                                        |
 +--------------------------------------------------------------------------+
@@ -584,6 +656,8 @@ This property holds the genre of the media.
 **See also** QMediaMetaData.
 
 | 
+
+.. _sdk_qtmultimedia_mediaplayer_metaData.keywords-prop:
 
 +--------------------------------------------------------------------------+
 |        \ metaData.keywords : variant                                     |
@@ -595,6 +669,8 @@ This property holds a list of keywords describing the media.
 
 | 
 
+.. _sdk_qtmultimedia_mediaplayer_metaData.language-prop:
+
 +--------------------------------------------------------------------------+
 |        \ metaData.language : variant                                     |
 +--------------------------------------------------------------------------+
@@ -604,6 +680,8 @@ This property holds the language of the media, as an ISO 639-2 code.
 **See also** QMediaMetaData.
 
 | 
+
+.. _sdk_qtmultimedia_mediaplayer_metaData.leadPerformer-prop:
 
 +--------------------------------------------------------------------------+
 |        \ metaData.leadPerformer : variant                                |
@@ -615,6 +693,8 @@ This property holds the lead performer in the media.
 
 | 
 
+.. _sdk_qtmultimedia_mediaplayer_metaData.lyrics-prop:
+
 +--------------------------------------------------------------------------+
 |        \ metaData.lyrics : variant                                       |
 +--------------------------------------------------------------------------+
@@ -624,6 +704,8 @@ This property holds the lyrics to the media.
 **See also** QMediaMetaData.
 
 | 
+
+.. _sdk_qtmultimedia_mediaplayer_metaData.mediaType-prop:
 
 +--------------------------------------------------------------------------+
 |        \ metaData.mediaType : variant                                    |
@@ -635,6 +717,8 @@ This property holds the type of the media.
 
 | 
 
+.. _sdk_qtmultimedia_mediaplayer_metaData.mood-prop:
+
 +--------------------------------------------------------------------------+
 |        \ metaData.mood : variant                                         |
 +--------------------------------------------------------------------------+
@@ -644,6 +728,8 @@ This property holds the mood of the media.
 **See also** QMediaMetaData.
 
 | 
+
+.. _sdk_qtmultimedia_mediaplayer_metaData.parentalRating-prop:
 
 +--------------------------------------------------------------------------+
 |        \ metaData.parentalRating : variant                               |
@@ -655,6 +741,8 @@ This property holds the parental rating of the media.
 
 | 
 
+.. _sdk_qtmultimedia_mediaplayer_metaData.peakValue-prop:
+
 +--------------------------------------------------------------------------+
 |        \ metaData.peakValue : variant                                    |
 +--------------------------------------------------------------------------+
@@ -664,6 +752,8 @@ This property holds the peak volume of media's audio stream.
 **See also** QMediaMetaData.
 
 | 
+
+.. _sdk_qtmultimedia_mediaplayer_metaData.pixelAspectRatio-prop:
 
 +--------------------------------------------------------------------------+
 |        \ metaData.pixelAspectRatio : variant                             |
@@ -675,6 +765,8 @@ This property holds the pixel aspect ratio of an image or video.
 
 | 
 
+.. _sdk_qtmultimedia_mediaplayer_metaData.posterUrl-prop:
+
 +--------------------------------------------------------------------------+
 |        \ metaData.posterUrl : variant                                    |
 +--------------------------------------------------------------------------+
@@ -685,6 +777,8 @@ This property holds the URL of a poster image.
 
 | 
 
+.. _sdk_qtmultimedia_mediaplayer_metaData.publisher-prop:
+
 +--------------------------------------------------------------------------+
 |        \ metaData.publisher : variant                                    |
 +--------------------------------------------------------------------------+
@@ -694,6 +788,8 @@ This property holds the publisher of the media.
 **See also** QMediaMetaData.
 
 | 
+
+.. _sdk_qtmultimedia_mediaplayer_metaData.ratingOrganization-prop:
 
 +--------------------------------------------------------------------------+
 |        \ metaData.ratingOrganization : variant                           |
@@ -706,6 +802,8 @@ the parental rating of the media.
 
 | 
 
+.. _sdk_qtmultimedia_mediaplayer_metaData.resolution-prop:
+
 +--------------------------------------------------------------------------+
 |        \ metaData.resolution : variant                                   |
 +--------------------------------------------------------------------------+
@@ -715,6 +813,8 @@ This property holds the dimension of an image or video.
 **See also** QMediaMetaData.
 
 | 
+
+.. _sdk_qtmultimedia_mediaplayer_metaData.sampleRate-prop:
 
 +--------------------------------------------------------------------------+
 |        \ metaData.sampleRate : variant                                   |
@@ -727,6 +827,8 @@ hertz.
 
 | 
 
+.. _sdk_qtmultimedia_mediaplayer_metaData.size-prop:
+
 +--------------------------------------------------------------------------+
 |        \ metaData.size : variant                                         |
 +--------------------------------------------------------------------------+
@@ -736,6 +838,8 @@ This property property holds the size of the media in bytes.
 **See also** QMediaMetaData.
 
 | 
+
+.. _sdk_qtmultimedia_mediaplayer_metaData.subTitle-prop:
 
 +--------------------------------------------------------------------------+
 |        \ metaData.subTitle : variant                                     |
@@ -747,6 +851,8 @@ This property holds the sub-title of the media.
 
 | 
 
+.. _sdk_qtmultimedia_mediaplayer_metaData.title-prop:
+
 +--------------------------------------------------------------------------+
 |        \ metaData.title : variant                                        |
 +--------------------------------------------------------------------------+
@@ -756,6 +862,8 @@ This property holds the title of the media.
 **See also** QMediaMetaData.
 
 | 
+
+.. _sdk_qtmultimedia_mediaplayer_metaData.trackCount-prop:
 
 +--------------------------------------------------------------------------+
 |        \ metaData.trackCount : variant                                   |
@@ -768,6 +876,8 @@ media.
 
 | 
 
+.. _sdk_qtmultimedia_mediaplayer_metaData.trackNumber-prop:
+
 +--------------------------------------------------------------------------+
 |        \ metaData.trackNumber : variant                                  |
 +--------------------------------------------------------------------------+
@@ -778,6 +888,8 @@ This property holds the track number of the media.
 
 | 
 
+.. _sdk_qtmultimedia_mediaplayer_metaData.userRating-prop:
+
 +--------------------------------------------------------------------------+
 |        \ metaData.userRating : variant                                   |
 +--------------------------------------------------------------------------+
@@ -787,6 +899,8 @@ This property holds a user rating of the media in the range of 0 to 100.
 **See also** QMediaMetaData.
 
 | 
+
+.. _sdk_qtmultimedia_mediaplayer_metaData.videoBitRate-prop:
 
 +--------------------------------------------------------------------------+
 |        \ metaData.videoBitRate : variant                                 |
@@ -799,6 +913,8 @@ second.
 
 | 
 
+.. _sdk_qtmultimedia_mediaplayer_metaData.videoCodec-prop:
+
 +--------------------------------------------------------------------------+
 |        \ metaData.videoCodec : variant                                   |
 +--------------------------------------------------------------------------+
@@ -808,6 +924,8 @@ This property holds the encoding of the media's video stream.
 **See also** QMediaMetaData.
 
 | 
+
+.. _sdk_qtmultimedia_mediaplayer_metaData.videoFrameRate-prop:
 
 +--------------------------------------------------------------------------+
 |        \ metaData.videoFrameRate : variant                               |
@@ -819,6 +937,8 @@ This property holds the frame rate of the media's video stream.
 
 | 
 
+.. _sdk_qtmultimedia_mediaplayer_metaData.writer-prop:
+
 +--------------------------------------------------------------------------+
 |        \ metaData.writer : variant                                       |
 +--------------------------------------------------------------------------+
@@ -828,6 +948,8 @@ This property holds the writer of the media.
 **See also** QMediaMetaData.
 
 | 
+
+.. _sdk_qtmultimedia_mediaplayer_metaData.year-prop:
 
 +--------------------------------------------------------------------------+
 |        \ metaData.year : variant                                         |
@@ -839,6 +961,8 @@ This property holds the year of release of the media.
 
 | 
 
+.. _sdk_qtmultimedia_mediaplayer_muted-prop:
+
 +--------------------------------------------------------------------------+
 |        \ muted : bool                                                    |
 +--------------------------------------------------------------------------+
@@ -848,6 +972,8 @@ This property holds whether the audio output is muted.
 Defaults to false.
 
 | 
+
+.. _sdk_qtmultimedia_mediaplayer_playbackRate-prop:
 
 +--------------------------------------------------------------------------+
 |        \ playbackRate : real                                             |
@@ -859,6 +985,8 @@ of the normal rate.
 Defaults to 1.0.
 
 | 
+
+.. _sdk_qtmultimedia_mediaplayer_playbackState-prop:
 
 +--------------------------------------------------------------------------+
 |        \ playbackState : enumeration                                     |
@@ -872,17 +1000,21 @@ This property holds the state of media playback. It can be one of:
 
 | 
 
+.. _sdk_qtmultimedia_mediaplayer_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ playlist : `Playlist </sdk/apps/qml/QtMultimedia/Playlist/>`__  |
+| :ref:` <>`\ playlist : `Playlist <sdk_qtmultimedia_playlist>`          |
 +--------------------------------------------------------------------------+
 
 This property holds the playlist used by the media player.
 
 Setting the playlist property resets the
-`source </sdk/apps/qml/QtMultimedia/MediaPlayer#source-prop>`__ to an
-empty string.
+:ref:`source <sdk_qtmultimedia_mediaplayer#source-prop>` to an empty
+string.
 
 | 
+
+.. _sdk_qtmultimedia_mediaplayer_position-prop:
 
 +--------------------------------------------------------------------------+
 |        \ position : int                                                  |
@@ -891,12 +1023,13 @@ empty string.
 This property holds the current playback position in milliseconds.
 
 To change this position, use the
-`seek() </sdk/apps/qml/QtMultimedia/MediaPlayer#seek-method>`__ method.
+:ref:`seek() <sdk_qtmultimedia_mediaplayer#seek-method>` method.
 
-**See also**
-`seek() </sdk/apps/qml/QtMultimedia/MediaPlayer#seek-method>`__.
+**See also** :ref:`seek() <sdk_qtmultimedia_mediaplayer#seek-method>`.
 
 | 
+
+.. _sdk_qtmultimedia_mediaplayer_seekable-prop:
 
 +--------------------------------------------------------------------------+
 |        \ seekable : bool                                                 |
@@ -905,10 +1038,12 @@ To change this position, use the
 This property holds whether position of the audio can be changed.
 
 If true, calling the
-`seek() </sdk/apps/qml/QtMultimedia/MediaPlayer#seek-method>`__ method
-will cause playback to seek to the new position.
+:ref:`seek() <sdk_qtmultimedia_mediaplayer#seek-method>` method will cause
+playback to seek to the new position.
 
 | 
+
+.. _sdk_qtmultimedia_mediaplayer_source-prop:
 
 +--------------------------------------------------------------------------+
 |        \ source : url                                                    |
@@ -917,10 +1052,11 @@ will cause playback to seek to the new position.
 This property holds the source URL of the media.
 
 Setting the source property clears the current
-`playlist </sdk/apps/qml/QtMultimedia/MediaPlayer#playlist-prop>`__, if
-any.
+:ref:`playlist <sdk_qtmultimedia_mediaplayer#playlist-prop>`, if any.
 
 | 
+
+.. _sdk_qtmultimedia_mediaplayer_status-prop:
 
 +--------------------------------------------------------------------------+
 |        \ status : enumeration                                            |
@@ -941,6 +1077,8 @@ This property holds the status of media loading. It can be one of:
 
 | 
 
+.. _sdk_qtmultimedia_mediaplayer_volume-prop:
+
 +--------------------------------------------------------------------------+
 |        \ volume : real                                                   |
 +--------------------------------------------------------------------------+
@@ -955,6 +1093,8 @@ Defaults to 1.0.
 Signal Documentation
 --------------------
 
+.. _sdk_qtmultimedia_mediaplayer_error(error, errorString)-prop:
+
 +--------------------------------------------------------------------------+
 |        \ error(error, errorString)                                       |
 +--------------------------------------------------------------------------+
@@ -966,6 +1106,8 @@ The corresponding handler is ``onError``.
 
 | 
 
+.. _sdk_qtmultimedia_mediaplayer_paused-method:
+
 +--------------------------------------------------------------------------+
 |        \ paused()                                                        |
 +--------------------------------------------------------------------------+
@@ -976,17 +1118,21 @@ The corresponding handler is ``onPaused``.
 
 | 
 
+.. _sdk_qtmultimedia_mediaplayer_playbackStateChanged-method:
+
 +--------------------------------------------------------------------------+
 |        \ playbackStateChanged()                                          |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the
-`playbackState </sdk/apps/qml/QtMultimedia/MediaPlayer#playbackState-prop>`__
+:ref:`playbackState <sdk_qtmultimedia_mediaplayer#playbackState-prop>`
 property is altered.
 
 The corresponding handler is ``onPlaybackStateChanged``.
 
 | 
+
+.. _sdk_qtmultimedia_mediaplayer_playing-method:
 
 +--------------------------------------------------------------------------+
 |        \ playing()                                                       |
@@ -997,6 +1143,8 @@ This signal is emitted when playback is started or resumed.
 The corresponding handler is ``onPlaying``.
 
 | 
+
+.. _sdk_qtmultimedia_mediaplayer_stopped-method:
 
 +--------------------------------------------------------------------------+
 |        \ stopped()                                                       |
@@ -1011,6 +1159,8 @@ The corresponding handler is ``onStopped``.
 Method Documentation
 --------------------
 
+.. _sdk_qtmultimedia_mediaplayer_pause-method:
+
 +--------------------------------------------------------------------------+
 |        \ pause()                                                         |
 +--------------------------------------------------------------------------+
@@ -1018,10 +1168,12 @@ Method Documentation
 Pauses playback of the media.
 
 Sets the
-`playbackState </sdk/apps/qml/QtMultimedia/MediaPlayer#playbackState-prop>`__
+:ref:`playbackState <sdk_qtmultimedia_mediaplayer#playbackState-prop>`
 property to PausedState.
 
 | 
+
+.. _sdk_qtmultimedia_mediaplayer_play-method:
 
 +--------------------------------------------------------------------------+
 |        \ play()                                                          |
@@ -1030,28 +1182,30 @@ property to PausedState.
 Starts playback of the media.
 
 Sets the
-`playbackState </sdk/apps/qml/QtMultimedia/MediaPlayer#playbackState-prop>`__
+:ref:`playbackState <sdk_qtmultimedia_mediaplayer#playbackState-prop>`
 property to PlayingState.
 
 | 
+
+.. _sdk_qtmultimedia_mediaplayer_seek-method:
 
 +--------------------------------------------------------------------------+
 |        \ seek(offset)                                                    |
 +--------------------------------------------------------------------------+
 
-If the
-`seekable </sdk/apps/qml/QtMultimedia/MediaPlayer#seekable-prop>`__
+If the :ref:`seekable <sdk_qtmultimedia_mediaplayer#seekable-prop>`
 property is true, seeks the current playback position to *offset*.
 
 Seeking may be asynchronous, so the
-`position </sdk/apps/qml/QtMultimedia/MediaPlayer#position-prop>`__
-property may not be updated immediately.
+:ref:`position <sdk_qtmultimedia_mediaplayer#position-prop>` property may
+not be updated immediately.
 
-**See also**
-`seekable </sdk/apps/qml/QtMultimedia/MediaPlayer#seekable-prop>`__ and
-`position </sdk/apps/qml/QtMultimedia/MediaPlayer#position-prop>`__.
+**See also** :ref:`seekable <sdk_qtmultimedia_mediaplayer#seekable-prop>`
+and :ref:`position <sdk_qtmultimedia_mediaplayer#position-prop>`.
 
 | 
+
+.. _sdk_qtmultimedia_mediaplayer_stop-method:
 
 +--------------------------------------------------------------------------+
 |        \ stop()                                                          |
@@ -1060,10 +1214,12 @@ property may not be updated immediately.
 Stops playback of the media.
 
 Sets the
-`playbackState </sdk/apps/qml/QtMultimedia/MediaPlayer#playbackState-prop>`__
+:ref:`playbackState <sdk_qtmultimedia_mediaplayer#playbackState-prop>`
 property to StoppedState.
 
 | 
+
+.. _sdk_qtmultimedia_mediaplayer_list<int> supportedAudioRoles-method:
 
 +--------------------------------------------------------------------------+
 |        \ list<int> supportedAudioRoles()                                 |
@@ -1076,6 +1232,6 @@ If setting the audio role is not supported, an empty list is returned.
 This QML method was introduced in Qt 5.6.
 
 **See also**
-`audioRole </sdk/apps/qml/QtMultimedia/MediaPlayer#audioRole-prop>`__.
+:ref:`audioRole <sdk_qtmultimedia_mediaplayer#audioRole-prop>`.
 
 | 

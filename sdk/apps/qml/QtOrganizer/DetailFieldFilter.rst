@@ -1,3 +1,7 @@
+.. _sdk_qtorganizer_detailfieldfilter:
+QtOrganizer DetailFieldFilter
+=============================
+
 The DetailFieldFilter element provides a filter based around a detail
 value criterion.
 
@@ -8,27 +12,26 @@ value criterion.
 Properties
 ----------
 
--  ****`detail </sdk/apps/qml/QtOrganizer/DetailFieldFilter#detail-prop>`__****
-   : enum
--  ****`field </sdk/apps/qml/QtOrganizer/DetailFieldFilter#field-prop>`__****
-   : enum
--  ****`matchFlags </sdk/apps/qml/QtOrganizer/DetailFieldFilter#matchFlags-prop>`__****
+-  :ref:`detail <sdk_qtorganizer_detailfieldfilter_detail-prop>` :
+   enum
+-  :ref:`field <sdk_qtorganizer_detailfieldfilter_field-prop>` :
+   enum
+-  :ref:`matchFlags <sdk_qtorganizer_detailfieldfilter_matchFlags-prop>`
    : enumeration
--  ****`value </sdk/apps/qml/QtOrganizer/DetailFieldFilter#value-prop>`__****
-   : variant
+-  :ref:`value <sdk_qtorganizer_detailfieldfilter_value-prop>` :
+   variant
 
 Signals
 -------
 
--  ****`onFilterChanged </sdk/apps/qml/QtOrganizer/DetailFieldFilter#onFilterChanged-signal>`__****\ ()
+-  :ref:`onFilterChanged <sdk_qtorganizer_detailfieldfilter_onFilterChanged-signal>`\ ()
 
 Detailed Description
 --------------------
 
 Simple example how to utilize
-`DetailFieldFilter </sdk/apps/qml/QtOrganizer/DetailFieldFilter/>`__
-element together with
-`OrganizerModel </sdk/apps/qml/QtOrganizer/OrganizerModel/>`__ and
+:ref:`DetailFieldFilter <sdk_qtorganizer_detailfieldfilter>` element
+together with :ref:`OrganizerModel <sdk_qtorganizer_organizermodel>` and
 ListView elements:
 
 .. code:: cpp
@@ -59,15 +62,19 @@ ListView elements:
 Property Documentation
 ----------------------
 
+.. _sdk_qtorganizer_detailfieldfilter_detail-prop:
+
 +--------------------------------------------------------------------------+
 |        \ detail : enum                                                   |
 +--------------------------------------------------------------------------+
 
 This property holds the detail type of which the detail filter will be
 matched to. The value shuold be the enumeration value of
-`Detail::type </sdk/apps/qml/QtOrganizer/Detail#type-prop>`__.
+:ref:`Detail::type <sdk_qtorganizer_detail#type-prop>`.
 
 | 
+
+.. _sdk_qtorganizer_detailfieldfilter_field-prop:
 
 +--------------------------------------------------------------------------+
 |        \ field : enum                                                    |
@@ -77,27 +84,29 @@ This property holds the detail field type of which the detail field
 filter will be matched to. The value should be the filld enumeration
 value defined in each detail element.
 
-**See also** `EventTime </sdk/apps/qml/QtOrganizer/EventTime/>`__,
-`JournalTime </sdk/apps/qml/QtOrganizer/JournalTime/>`__,
-`TodoTime </sdk/apps/qml/QtOrganizer/TodoTime/>`__,
-`TodoProgress </sdk/apps/qml/QtOrganizer/TodoProgress/>`__,
-`Reminder </sdk/apps/qml/QtOrganizer/Reminder/>`__,
-`AudibleReminder </sdk/apps/qml/QtOrganizer/AudibleReminder/>`__,
-`VisualReminder </sdk/apps/qml/QtOrganizer/VisualReminder/>`__,
-`EmailReminder </sdk/apps/qml/QtOrganizer/EmailReminder/>`__,
-`Comment </sdk/apps/qml/QtOrganizer/Comment/>`__,
-`Description </sdk/apps/qml/QtOrganizer/Description/>`__,
-`DisplayLabel </sdk/apps/qml/QtOrganizer/DisplayLabel/>`__,
-`Guid </sdk/apps/qml/QtOrganizer/Guid/>`__,
-`Location </sdk/apps/qml/QtOrganizer/Location/>`__,
-`Parent </sdk/apps/qml/QtOrganizer/Parent/>`__,
-`Priority </sdk/apps/qml/QtOrganizer/Priority/>`__,
-`Recurrence </sdk/apps/qml/QtOrganizer/Recurrence/>`__,
-`Timestamp </sdk/apps/qml/QtOrganizer/Timestamp/>`__,
-`ItemType </sdk/apps/qml/QtOrganizer/ItemType/>`__, and
-`Tag </sdk/apps/qml/QtOrganizer/Tag/>`__.
+**See also** :ref:`EventTime <sdk_qtorganizer_eventtime>`,
+:ref:`JournalTime <sdk_qtorganizer_journaltime>`,
+:ref:`TodoTime <sdk_qtorganizer_todotime>`,
+:ref:`TodoProgress <sdk_qtorganizer_todoprogress>`,
+:ref:`Reminder <sdk_qtorganizer_reminder>`,
+:ref:`AudibleReminder <sdk_qtorganizer_audiblereminder>`,
+:ref:`VisualReminder <sdk_qtorganizer_visualreminder>`,
+:ref:`EmailReminder <sdk_qtorganizer_emailreminder>`,
+:ref:`Comment <sdk_qtorganizer_comment>`,
+:ref:`Description <sdk_qtorganizer_description>`,
+:ref:`DisplayLabel <sdk_qtorganizer_displaylabel>`,
+:ref:`Guid <sdk_qtorganizer_guid>`,
+:ref:`Location <sdk_qtorganizer_location>`,
+:ref:`Parent <sdk_qtorganizer_parent>`,
+:ref:`Priority <sdk_qtorganizer_priority>`,
+:ref:`Recurrence <sdk_qtorganizer_recurrence>`,
+:ref:`Timestamp <sdk_qtorganizer_timestamp>`,
+:ref:`ItemType <sdk_qtorganizer_itemtype>`, and
+:ref:`Tag <sdk_qtorganizer_tag>`.
 
 | 
+
+.. _sdk_qtorganizer_detailfieldfilter_matchFlags-prop:
 
 +--------------------------------------------------------------------------+
 |        \ matchFlags : enumeration                                        |
@@ -117,6 +126,8 @@ valid match flags include:
 
 | 
 
+.. _sdk_qtorganizer_detailfieldfilter_value-prop:
+
 +--------------------------------------------------------------------------+
 |        \ value : variant                                                 |
 +--------------------------------------------------------------------------+
@@ -128,11 +139,13 @@ This property holds the value criterion of the detail field filter.
 Signal Documentation
 --------------------
 
+.. _sdk_qtorganizer_detailfieldfilter_onFilterChanged()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ onFilterChanged()                                               |
 +--------------------------------------------------------------------------+
 
 **See also**
-`QtOrganizer5::Filter::onFilterChanged </sdk/apps/qml/QtOrganizer/Filter#onFilterChanged-signal>`__.
+:ref:`QtOrganizer5::Filter::onFilterChanged <sdk_qtorganizer_filter#onFilterChanged-signal>`.
 
 | 

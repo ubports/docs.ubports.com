@@ -1,3 +1,7 @@
+.. _sdk_qtorganizer_extendeddetail:
+QtOrganizer ExtendedDetail
+==========================
+
 The ExtendedDetail element contains a extended detail of an organizer
 item.
 
@@ -8,28 +12,28 @@ item.
 Properties
 ----------
 
--  ****`data </sdk/apps/qml/QtOrganizer/ExtendedDetail#data-prop>`__****
-   : variant
--  ****`name </sdk/apps/qml/QtOrganizer/ExtendedDetail#name-prop>`__****
-   : string
+-  :ref:`data <sdk_qtorganizer_extendeddetail_data-prop>` : variant
+-  :ref:`name <sdk_qtorganizer_extendeddetail_name-prop>` : string
 
 Signals
 -------
 
--  ****`onDetailChanged </sdk/apps/qml/QtOrganizer/ExtendedDetail#onDetailChanged-signal>`__****\ ()
+-  :ref:`onDetailChanged <sdk_qtorganizer_extendeddetail_onDetailChanged-signal>`\ ()
 
 Detailed Description
 --------------------
 
 The following fields are supported:
 
--  `ExtendedDetail </sdk/apps/qml/QtOrganizer/ExtendedDetail/>`__.FieldName
--  `ExtendedDetail </sdk/apps/qml/QtOrganizer/ExtendedDetail/>`__.FieldData
+-  :ref:`ExtendedDetail <sdk_qtorganizer_extendeddetail>`.FieldName
+-  :ref:`ExtendedDetail <sdk_qtorganizer_extendeddetail>`.FieldData
 
 **See also** QOrganizerItemExtendedDetail.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtorganizer_extendeddetail_data-prop:
 
 +--------------------------------------------------------------------------+
 |        \ data : variant                                                  |
@@ -38,6 +42,8 @@ Property Documentation
 This property holds the data of the extended detail.
 
 | 
+
+.. _sdk_qtorganizer_extendeddetail_name-prop:
 
 +--------------------------------------------------------------------------+
 |        \ name : string                                                   |
@@ -50,11 +56,13 @@ This property holds the name of the extended detail.
 Signal Documentation
 --------------------
 
+.. _sdk_qtorganizer_extendeddetail_onDetailChanged()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ onDetailChanged()                                               |
 +--------------------------------------------------------------------------+
 
 **See also**
-`Detail::onDetailChanged </sdk/apps/qml/QtOrganizer/Detail#onDetailChanged-signal>`__.
+:ref:`Detail::onDetailChanged <sdk_qtorganizer_detail#onDetailChanged-signal>`.
 
 | 

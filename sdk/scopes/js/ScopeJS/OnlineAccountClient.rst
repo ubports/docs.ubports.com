@@ -1,3 +1,7 @@
+.. _sdk_scopejs_onlineaccountclient:
+ScopeJS OnlineAccountClient
+===========================
+
 
 A simple interface for integrating online accounts access and monitoring
 into scopes.
@@ -23,7 +27,7 @@ Register a result item that requires the user to be logged in.
 
 **Parameters:**
 
--  ``result`` **<`Result </sdk/scopes/js/ScopeJS/Result/>`__>**
+-  :ref:``result`` **<`Result <sdk_scopejs_result>`>**
 
    The result item that needs account access
 
@@ -45,8 +49,7 @@ Refresh all service statuses
 
 **Parameters:**
 
--  ``widget``
-   **<`PreviewWidget </sdk/scopes/js/ScopeJS/PreviewWidget/>`__>**
+-  :ref:``widget`` **<`PreviewWidget <sdk_scopejs_previewwidget>`>**
 
    The widget item that needs account access
 

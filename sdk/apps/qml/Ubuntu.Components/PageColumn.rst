@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_pagecolumn:
+Ubuntu.Components PageColumn
+============================
+
 Component configuring the metrics of a column in AdaptivePageLayout.
 
 +--------------------------------------+--------------------------------------+
@@ -5,20 +9,19 @@ Component configuring the metrics of a column in AdaptivePageLayout.
 +--------------------------------------+--------------------------------------+
 | Since:                               | Ubuntu.Components 1.3                |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `QtObject </sdk/apps/qml/QtQml/QtObj |
-|                                      | ect/>`__                             |
+| Inherits:                            | :ref:`QtObject <sdk_qtqml_qtobject>` |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`fillWidth </sdk/apps/qml/Ubuntu.Components/PageColumn#fillWidth-prop>`__****
+-  :ref:`fillWidth <sdk_ubuntu_components_pagecolumn_fillWidth-prop>`
    : bool
--  ****`maximumWidth </sdk/apps/qml/Ubuntu.Components/PageColumn#maximumWidth-prop>`__****
+-  :ref:`maximumWidth <sdk_ubuntu_components_pagecolumn_maximumWidth-prop>`
    : real
--  ****`minimumWidth </sdk/apps/qml/Ubuntu.Components/PageColumn#minimumWidth-prop>`__****
+-  :ref:`minimumWidth <sdk_ubuntu_components_pagecolumn_minimumWidth-prop>`
    : real
--  ****`preferredWidth </sdk/apps/qml/Ubuntu.Components/PageColumn#preferredWidth-prop>`__****
+-  :ref:`preferredWidth <sdk_ubuntu_components_pagecolumn_preferredWidth-prop>`
    : real
 
 Detailed Description
@@ -27,16 +30,20 @@ Detailed Description
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_pagecolumn_fillWidth-prop:
+
 +--------------------------------------------------------------------------+
 |        \ fillWidth : bool                                                |
 +--------------------------------------------------------------------------+
 
 Specifies whether the width of the column should fill the available
 space of the
-`AdaptivePageLayout </sdk/apps/qml/Ubuntu.Components/AdaptivePageLayout/>`__
-column or not. Defaults to *false*.
+:ref:`AdaptivePageLayout <sdk_ubuntu_components_adaptivepagelayout>` column
+or not. Defaults to *false*.
 
 | 
+
+.. _sdk_ubuntu_components_pagecolumn_maximumWidth-prop:
 
 +--------------------------------------------------------------------------+
 |        \ maximumWidth : real                                             |
@@ -47,6 +54,8 @@ ignored. Defaults to the maximum positive value.
 
 | 
 
+.. _sdk_ubuntu_components_pagecolumn_minimumWidth-prop:
+
 +--------------------------------------------------------------------------+
 |        \ minimumWidth : real                                             |
 +--------------------------------------------------------------------------+
@@ -55,21 +64,22 @@ Specifies the minimum width of the column. Defaults to 0.
 
 | 
 
+.. _sdk_ubuntu_components_pagecolumn_preferredWidth-prop:
+
 +--------------------------------------------------------------------------+
 |        \ preferredWidth : real                                           |
 +--------------------------------------------------------------------------+
 
 Specifies the preferred width of the column when the layout is
 initialized. Defaults to 0.
-`AdaptivePageLayout </sdk/apps/qml/Ubuntu.Components/AdaptivePageLayout/>`__
-clamps the given value between
-`minimumWidth </sdk/apps/qml/Ubuntu.Components/PageColumn#minimumWidth-prop>`__
+:ref:`AdaptivePageLayout <sdk_ubuntu_components_adaptivepagelayout>` clamps
+the given value between
+:ref:`minimumWidth <sdk_ubuntu_components_pagecolumn#minimumWidth-prop>`
 and
-`maximumWidth </sdk/apps/qml/Ubuntu.Components/PageColumn#maximumWidth-prop>`__.
+:ref:`maximumWidth <sdk_ubuntu_components_pagecolumn#maximumWidth-prop>`.
 The value must be set if the
-`fillWidth </sdk/apps/qml/Ubuntu.Components/PageColumn#fillWidth-prop>`__
-and
-`minimumWidth </sdk/apps/qml/Ubuntu.Components/PageColumn#minimumWidth-prop>`__
+:ref:`fillWidth <sdk_ubuntu_components_pagecolumn#fillWidth-prop>` and
+:ref:`minimumWidth <sdk_ubuntu_components_pagecolumn#minimumWidth-prop>`
 are not set.
 
 | 

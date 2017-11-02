@@ -1,40 +1,40 @@
+.. _sdk_qtquick_rotationanimation:
+QtQuick RotationAnimation
+=========================
+
 Animates changes in rotation values
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtQuick 2.4                   |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `PropertyAnimation </sdk/apps/qml/Qt |
-|                                      | Quick/PropertyAnimation/>`__         |
+| Inherits:                            | :ref:`PropertyAnimation <sdk_qtquick_prop |
+|                                      | ertyanimation>`_                     |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`direction </sdk/apps/qml/QtQuick/RotationAnimation#direction-prop>`__****
+-  :ref:`direction <sdk_qtquick_rotationanimation_direction-prop>`
    : enumeration
--  ****`from </sdk/apps/qml/QtQuick/RotationAnimation#from-prop>`__****
-   : real
--  ****`to </sdk/apps/qml/QtQuick/RotationAnimation#to-prop>`__**** :
-   real
+-  :ref:`from <sdk_qtquick_rotationanimation_from-prop>` : real
+-  :ref:`to <sdk_qtquick_rotationanimation_to-prop>` : real
 
 Detailed Description
 --------------------
 
-`RotationAnimation </sdk/apps/qml/QtQuick/RotationAnimation/>`__ is a
-specialized
-`PropertyAnimation </sdk/apps/qml/QtQuick/animation#propertyanimation>`__
+:ref:`RotationAnimation <sdk_qtquick_rotationanimation>` is a specialized
+`PropertyAnimation </sdk/apps/qml/QtQuick/animation/#propertyanimation>`_ 
 that gives control over the direction of rotation during an animation.
 
 By default, it rotates in the direction of the numerical change; a
 rotation from 0 to 240 will rotate 240 degrees clockwise, while a
 rotation from 240 to 0 will rotate 240 degrees counterclockwise. The
-`direction </sdk/apps/qml/QtQuick/RotationAnimation#direction-prop>`__
-property can be set to specify the direction in which the rotation
-should occur.
+:ref:`direction <sdk_qtquick_rotationanimation#direction-prop>` property
+can be set to specify the direction in which the rotation should occur.
 
 In the following example we use
-`RotationAnimation </sdk/apps/qml/QtQuick/RotationAnimation/>`__ to
-animate the rotation between states via the shortest path:
+:ref:`RotationAnimation <sdk_qtquick_rotationanimation>` to animate the
+rotation between states via the shortest path:
 
 .. code:: qml
 
@@ -57,41 +57,40 @@ animate the rotation between states via the shortest path:
         MouseArea { anchors.fill: parent; onClicked: rect.state = "rotated" }
     }
 
-Notice the
-`RotationAnimation </sdk/apps/qml/QtQuick/RotationAnimation/>`__ did not
+Notice the :ref:`RotationAnimation <sdk_qtquick_rotationanimation>` did not
 need to set a ``target`` value. As a convenience, when used in a
-transition,
-`RotationAnimation </sdk/apps/qml/QtQuick/RotationAnimation/>`__ will
+transition, :ref:`RotationAnimation <sdk_qtquick_rotationanimation>` will
 rotate all properties named "rotation" or "angle". You can override this
 by providing your own properties via
-`properties </sdk/apps/qml/QtQuick/PropertyAnimation#properties-prop>`__
-or `property </sdk/apps/qml/QtQuick/PropertyAnimation#property-prop>`__.
+:ref:`properties <sdk_qtquick_propertyanimation#properties-prop>` or
+:ref:`property <sdk_qtquick_propertyanimation#property-prop>`.
 
-Also, note the `Rectangle </sdk/apps/qml/QtQuick/Rectangle/>`__ will be
-rotated around its default
-`transformOrigin </sdk/apps/qml/QtQuick/Item#transformOrigin-prop>`__
-(which is ``Item.Center``). To use a different transform origin, set the
-origin in the
-`PropertyChanges </sdk/apps/qml/QtQuick/PropertyChanges/>`__ object and
-apply the change at the start of the animation using
-`PropertyAction </sdk/apps/qml/QtQuick/PropertyAction/>`__. See the
-`PropertyAction </sdk/apps/qml/QtQuick/PropertyAction/>`__ documentation
-for more details.
+Also, note the :ref:`Rectangle <sdk_qtquick_rectangle>` will be rotated
+around its default
+:ref:`transformOrigin <sdk_qtquick_item#transformOrigin-prop>` (which is
+``Item.Center``). To use a different transform origin, set the origin in
+the :ref:`PropertyChanges <sdk_qtquick_propertychanges>` object and apply
+the change at the start of the animation using
+:ref:`PropertyAction <sdk_qtquick_propertyaction>`. See the
+:ref:`PropertyAction <sdk_qtquick_propertyaction>` documentation for more
+details.
 
 Like any other animation type, a
-`RotationAnimation </sdk/apps/qml/QtQuick/RotationAnimation/>`__ can be
-applied in a number of ways, including transitions, behaviors and
-property value sources. The `Animation and Transitions in Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`__
+:ref:`RotationAnimation <sdk_qtquick_rotationanimation>` can be applied in
+a number of ways, including transitions, behaviors and property value
+sources. The `Animation and Transitions in Qt
+Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`_ 
 documentation shows a variety of methods for creating animations.
 
 **See also** `Animation and Transitions in Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`__
+Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`_ 
 and `Qt Quick Examples -
-Animation </sdk/apps/qml/QtQuick/animation/>`__.
+Animation </sdk/apps/qml/QtQuick/animation/>`_ .
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_rotationanimation_direction-prop:
 
 +--------------------------------------------------------------------------+
 |        \ direction : enumeration                                         |
@@ -101,18 +100,20 @@ This property holds the direction of the rotation.
 
 Possible values are:
 
--  `RotationAnimation </sdk/apps/qml/QtQuick/RotationAnimation/>`__.Numerical
+-  :ref:`RotationAnimation <sdk_qtquick_rotationanimation>`.Numerical
    (default) - Rotate by linearly interpolating between the two numbers.
    A rotation from 10 to 350 will rotate 340 degrees clockwise.
--  `RotationAnimation </sdk/apps/qml/QtQuick/RotationAnimation/>`__.Clockwise
-   - Rotate clockwise between the two values
--  `RotationAnimation </sdk/apps/qml/QtQuick/RotationAnimation/>`__.Counterclockwise
+-  :ref:`RotationAnimation <sdk_qtquick_rotationanimation>`.Clockwise -
+   Rotate clockwise between the two values
+-  :ref:`RotationAnimation <sdk_qtquick_rotationanimation>`.Counterclockwise
    - Rotate counterclockwise between the two values
--  `RotationAnimation </sdk/apps/qml/QtQuick/RotationAnimation/>`__.Shortest
-   - Rotate in the direction that produces the shortest animation path.
-   A rotation from 10 to 350 will rotate 20 degrees counterclockwise.
+-  :ref:`RotationAnimation <sdk_qtquick_rotationanimation>`.Shortest -
+   Rotate in the direction that produces the shortest animation path. A
+   rotation from 10 to 350 will rotate 20 degrees counterclockwise.
 
 | 
+
+.. _sdk_qtquick_rotationanimation_from-prop:
 
 +--------------------------------------------------------------------------+
 |        \ from : real                                                     |
@@ -134,19 +135,21 @@ value has reached 100:
         }
     }
 
-If the `RotationAnimation </sdk/apps/qml/QtQuick/RotationAnimation/>`__
-is defined within a
-`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch#transition>`__
-or `Behavior </sdk/apps/qml/QtQuick/Behavior/>`__, this value defaults
-to the value defined in the starting state of the
-`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch#transition>`__,
+If the :ref:`RotationAnimation <sdk_qtquick_rotationanimation>` is defined
+within a
+`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch/#transition>`_ 
+or :ref:`Behavior <sdk_qtquick_behavior>`, this value defaults to the value
+defined in the starting state of the
+`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch/#transition>`_ ,
 or the current value of the property at the moment the
-`Behavior </sdk/apps/qml/QtQuick/Behavior/>`__ is triggered.
+:ref:`Behavior <sdk_qtquick_behavior>` is triggered.
 
 **See also** `Animation and Transitions in Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`__.
+Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`_ .
 
 | 
+
+.. _sdk_qtquick_rotationanimation_to-prop:
 
 +--------------------------------------------------------------------------+
 |        \ to : real                                                       |
@@ -154,16 +157,16 @@ Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`__.
 
 This property holds the end value for the animation..
 
-If the `RotationAnimation </sdk/apps/qml/QtQuick/RotationAnimation/>`__
-is defined within a
-`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch#transition>`__
-or `Behavior </sdk/apps/qml/QtQuick/Behavior/>`__, this value defaults
-to the value defined in the end state of the
-`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch#transition>`__,
+If the :ref:`RotationAnimation <sdk_qtquick_rotationanimation>` is defined
+within a
+`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch/#transition>`_ 
+or :ref:`Behavior <sdk_qtquick_behavior>`, this value defaults to the value
+defined in the end state of the
+`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch/#transition>`_ ,
 or the value of the property change that triggered the
-`Behavior </sdk/apps/qml/QtQuick/Behavior/>`__.
+:ref:`Behavior <sdk_qtquick_behavior>`.
 
 **See also** `Animation and Transitions in Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`__.
+Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`_ .
 
 | 

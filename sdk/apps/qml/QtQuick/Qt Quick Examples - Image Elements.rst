@@ -1,3 +1,7 @@
+.. _sdk_qtquick_qt_quick_examples_-_image_elements:
+QtQuick Qt Quick Examples - Image Elements
+==========================================
+
 
 
 |image0|
@@ -16,21 +20,21 @@ Running an Example.
    :name: borderimage
 
 *BorderImage* shows off the various scaling modes of the
-`BorderImage </sdk/apps/qml/QtQuick/imageelements#borderimage>`__ type
+`BorderImage </sdk/apps/qml/QtQuick/imageelements/#borderimage>`_  type
 by setting its horizontalTileMode and verticalTileMode properties.
 
 .. rubric:: Image
    :name: image
 
 *Image* shows off the various fill modes of the
-`Image </sdk/apps/qml/QtQuick/imageelements#image>`__ type.
+`Image </sdk/apps/qml/QtQuick/imageelements/#image>`_  type.
 
 .. rubric:: Shadows
    :name: shadows
 
 *Shadows* shows how to create a drop shadow effect for a rectangular
 item using a
-`BorderImage </sdk/apps/qml/QtQuick/imageelements#borderimage>`__:
+`BorderImage </sdk/apps/qml/QtQuick/imageelements/#borderimage>`_ :
 
 .. code:: qml
 
@@ -45,7 +49,7 @@ item using a
    :name: animatedsprite
 
 *AnimatedSprite* shows how to display a simple animation using an
-`AnimatedSprite </sdk/apps/qml/QtQuick/qtquick-effects-sprites#animatedsprite>`__
+`AnimatedSprite </sdk/apps/qml/QtQuick/qtquick-effects-sprites/#animatedsprite>`_ 
 object:
 
 .. code:: qml
@@ -70,7 +74,7 @@ The sprite animation will loop three times.
 
 *SpriteSequence* demonstrates using a sprite sequence to draw an
 animated and interactive bear. The
-`SpriteSequence </sdk/apps/qml/QtQuick/imageelements#spritesequence>`__
+`SpriteSequence </sdk/apps/qml/QtQuick/imageelements/#spritesequence>`_ 
 object defines five different sprites. The bear is initially in a
 *still* state:
 

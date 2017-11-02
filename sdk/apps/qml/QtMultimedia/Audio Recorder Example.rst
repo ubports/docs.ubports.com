@@ -1,3 +1,7 @@
+.. _sdk_qtmultimedia_audio_recorder_example:
+QtMultimedia Audio Recorder Example
+===================================
+
 
 
 *Audio Recorder* demonstrates how to identify the available devices and

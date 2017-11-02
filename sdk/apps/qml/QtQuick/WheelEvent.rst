@@ -1,3 +1,7 @@
+.. _sdk_qtquick_wheelevent:
+QtQuick WheelEvent
+==================
+
 Provides information about a mouse wheel event
 
 +---------------------+----------------------+
@@ -7,30 +11,29 @@ Provides information about a mouse wheel event
 Properties
 ----------
 
--  ****`accepted </sdk/apps/qml/QtQuick/WheelEvent#accepted-prop>`__****
-   : bool
--  ****`angleDelta </sdk/apps/qml/QtQuick/WheelEvent#angleDelta-prop>`__****
-   : point
--  ****`buttons </sdk/apps/qml/QtQuick/WheelEvent#buttons-prop>`__**** :
-   int
--  ****`modifiers </sdk/apps/qml/QtQuick/WheelEvent#modifiers-prop>`__****
-   : int
--  ****`pixelDelta </sdk/apps/qml/QtQuick/WheelEvent#pixelDelta-prop>`__****
-   : point
--  ****`x </sdk/apps/qml/QtQuick/WheelEvent#x-prop>`__**** : int
--  ****`y </sdk/apps/qml/QtQuick/WheelEvent#y-prop>`__**** : int
+-  :ref:`accepted <sdk_qtquick_wheelevent_accepted-prop>` : bool
+-  :ref:`angleDelta <sdk_qtquick_wheelevent_angleDelta-prop>` :
+   point
+-  :ref:`buttons <sdk_qtquick_wheelevent_buttons-prop>` : int
+-  :ref:`modifiers <sdk_qtquick_wheelevent_modifiers-prop>` : int
+-  :ref:`pixelDelta <sdk_qtquick_wheelevent_pixelDelta-prop>` :
+   point
+-  :ref:`x <sdk_qtquick_wheelevent_x-prop>` : int
+-  :ref:`y <sdk_qtquick_wheelevent_y-prop>` : int
 
 Detailed Description
 --------------------
 
 The position of the mouse can be found via the
-`x </sdk/apps/qml/QtQuick/WheelEvent#x-prop>`__ and
-`y </sdk/apps/qml/QtQuick/WheelEvent#y-prop>`__ properties.
+:ref:`x <sdk_qtquick_wheelevent#x-prop>` and
+:ref:`y <sdk_qtquick_wheelevent#y-prop>` properties.
 
-**See also** `MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__.
+**See also** :ref:`MouseArea <sdk_qtquick_mousearea>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_wheelevent_accepted-prop:
 
 +--------------------------------------------------------------------------+
 |        \ accepted : bool                                                 |
@@ -44,6 +47,8 @@ accepted so that items lower in the stacking order do not also respond
 to the same event.
 
 | 
+
+.. _sdk_qtquick_wheelevent_angleDelta-prop:
 
 +--------------------------------------------------------------------------+
 |        \ angleDelta : point                                              |
@@ -61,6 +66,8 @@ value is a multiple of 120; i.e., 120 units \* 1/8 = 15 degrees.
 
 | 
 
+.. _sdk_qtquick_wheelevent_buttons-prop:
+
 +--------------------------------------------------------------------------+
 |        \ buttons : int                                                   |
 +--------------------------------------------------------------------------+
@@ -75,6 +82,8 @@ It contains a bitwise combination of:
 -  Qt.MiddleButton
 
 | 
+
+.. _sdk_qtquick_wheelevent_modifiers-prop:
 
 +--------------------------------------------------------------------------+
 |        \ modifiers : int                                                 |
@@ -109,6 +118,8 @@ For example, to react to a Control key pressed during the wheel event:
 
 | 
 
+.. _sdk_qtquick_wheelevent_pixelDelta-prop:
+
 +--------------------------------------------------------------------------+
 |        \ pixelDelta : point                                              |
 +--------------------------------------------------------------------------+
@@ -121,10 +132,12 @@ content on screen.
 
 For platforms without high-resolution trackpad support, pixelDelta will
 always be (0,0), and
-`angleDelta </sdk/apps/qml/QtQuick/WheelEvent#angleDelta-prop>`__ should
-be used instead.
+:ref:`angleDelta <sdk_qtquick_wheelevent#angleDelta-prop>` should be used
+instead.
 
 | 
+
+.. _sdk_qtquick_wheelevent_x-prop:
 
 +--------------------------------------------------------------------------+
 |        \ x : int                                                         |
@@ -134,6 +147,8 @@ These properties hold the coordinates of the position supplied by the
 wheel event.
 
 | 
+
+.. _sdk_qtquick_wheelevent_y-prop:
 
 +--------------------------------------------------------------------------+
 |        \ y : int                                                         |

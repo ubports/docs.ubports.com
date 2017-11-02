@@ -1,3 +1,7 @@
+.. _sdk_qtquick_scene_graph_-_custom_geometry:
+QtQuick Scene Graph - Custom Geometry
+=====================================
+
 
 
 The custom geometry example shows how to create a QQuickItem which uses

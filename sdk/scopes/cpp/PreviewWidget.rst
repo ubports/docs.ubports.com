@@ -1,16 +1,20 @@
+.. _sdk_previewwidget:
+PreviewWidget
+=============
+
 A widget for a preview.
-`More... </sdk/scopes/cpp/unity.scopes.PreviewWidget#details>`__
+`More... </sdk/scopes/cpp/unity.scopes.PreviewWidget/#details>`_ 
 
         Public Member Functions
 -------------------------------
 
  
 
-`PreviewWidget </sdk/scopes/cpp/unity.scopes.PreviewWidget#ace84578d55583c7c21f82d53ff6f0ed9>`__
+`PreviewWidget </sdk/scopes/cpp/unity.scopes.PreviewWidget/#ace84578d55583c7c21f82d53ff6f0ed9>`_ 
 (std::string const
-&\ `id </sdk/scopes/cpp/unity.scopes.PreviewWidget#a7706a5249a547ac55d77e815b9fe84af>`__,
+&\ `id </sdk/scopes/cpp/unity.scopes.PreviewWidget/#a7706a5249a547ac55d77e815b9fe84af>`_ ,
 std::string const
-&\ `widget\_type </sdk/scopes/cpp/unity.scopes.PreviewWidget#ad3d85940faa7109a7736d3b2be66b65e>`__)
+&\ `widget\_type </sdk/scopes/cpp/unity.scopes.PreviewWidget/#ad3d85940faa7109a7736d3b2be66b65e>`_ )
 
  
 
@@ -20,7 +24,7 @@ std::string const
 
  
 
-`PreviewWidget </sdk/scopes/cpp/unity.scopes.PreviewWidget#a751fd8b5f9eb0a921333b3a85cbc9518>`__
+`PreviewWidget </sdk/scopes/cpp/unity.scopes.PreviewWidget/#a751fd8b5f9eb0a921333b3a85cbc9518>`_ 
 (std::string const &definition)
 
  
@@ -31,9 +35,9 @@ std::string const
 
 void 
 
-`add\_attribute\_value </sdk/scopes/cpp/unity.scopes.PreviewWidget#a42dd64704890d72bcc6ecbd7bccbfcd9>`__
+`add\_attribute\_value </sdk/scopes/cpp/unity.scopes.PreviewWidget/#a42dd64704890d72bcc6ecbd7bccbfcd9>`_ 
 (std::string const &key,
-`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`__ const &value)
+`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`_  const &value)
 
  
 
@@ -43,7 +47,7 @@ void 
 
 void 
 
-`add\_attribute\_mapping </sdk/scopes/cpp/unity.scopes.PreviewWidget#a8bb890267a69dd6bb5ca70b663c75e74>`__
+`add\_attribute\_mapping </sdk/scopes/cpp/unity.scopes.PreviewWidget/#a8bb890267a69dd6bb5ca70b663c75e74>`_ 
 (std::string const &key, std::string const &field\_name)
 
  
@@ -54,8 +58,8 @@ void 
 
 void 
 
-`add\_widget </sdk/scopes/cpp/unity.scopes.PreviewWidget#a5607e323e7394cb8be842b79b5565205>`__
-(`PreviewWidget </sdk/scopes/cpp/unity.scopes.PreviewWidget/>`__ const
+`add\_widget </sdk/scopes/cpp/unity.scopes.PreviewWidget/#a5607e323e7394cb8be842b79b5565205>`_ 
+(`PreviewWidget </sdk/scopes/cpp/unity.scopes.PreviewWidget/>`_  const
 &widget)
 
  
@@ -66,7 +70,7 @@ void 
 
 std::string 
 
-`id </sdk/scopes/cpp/unity.scopes.PreviewWidget#a7706a5249a547ac55d77e815b9fe84af>`__
+`id </sdk/scopes/cpp/unity.scopes.PreviewWidget/#a7706a5249a547ac55d77e815b9fe84af>`_ 
 () const
 
  
@@ -77,7 +81,7 @@ std::string 
 
 std::string 
 
-`widget\_type </sdk/scopes/cpp/unity.scopes.PreviewWidget#ad3d85940faa7109a7736d3b2be66b65e>`__
+`widget\_type </sdk/scopes/cpp/unity.scopes.PreviewWidget/#ad3d85940faa7109a7736d3b2be66b65e>`_ 
 () const
 
  
@@ -88,7 +92,7 @@ std::string 
 
 std::map< std::string, std::string > 
 
-`attribute\_mappings </sdk/scopes/cpp/unity.scopes.PreviewWidget#a8a1ac22266b8827c5c5dcbb74dc81568>`__
+`attribute\_mappings </sdk/scopes/cpp/unity.scopes.PreviewWidget/#a8a1ac22266b8827c5c5dcbb74dc81568>`_ 
 () const
 
  
@@ -97,9 +101,9 @@ std::map< std::string, std::string > 
 
  
 
-`VariantMap </sdk/scopes/cpp/unity.scopes#ad5d8ccfa11a327fca6f3e4cee11f4c10>`__ 
+:ref:`VariantMap <sdk_unity_scopes#ad5d8ccfa11a327fca6f3e4cee11f4c10>` 
 
-`attribute\_values </sdk/scopes/cpp/unity.scopes.PreviewWidget#ac2ec5ecc111bc73aabb8ee5a27dcce9e>`__
+`attribute\_values </sdk/scopes/cpp/unity.scopes.PreviewWidget/#ac2ec5ecc111bc73aabb8ee5a27dcce9e>`_ 
 () const
 
  
@@ -108,9 +112,9 @@ std::map< std::string, std::string > 
 
  
 
-`PreviewWidgetList </sdk/scopes/cpp/unity.scopes#aed3b7b1daf2e49d0a820ef931caa792d>`__ 
+:ref:`PreviewWidgetList <sdk_unity_scopes#aed3b7b1daf2e49d0a820ef931caa792d>` 
 
-`widgets </sdk/scopes/cpp/unity.scopes.PreviewWidget#a879e64d5ee205b4db8cb6ab9b66d18ee>`__
+`widgets </sdk/scopes/cpp/unity.scopes.PreviewWidget/#a879e64d5ee205b4db8cb6ab9b66d18ee>`_ 
 () const
 
  
@@ -121,7 +125,7 @@ std::map< std::string, std::string > 
 
 std::string 
 
-`data </sdk/scopes/cpp/unity.scopes.PreviewWidget#a5ef4058058119df35be51c992da2c2a4>`__
+`data </sdk/scopes/cpp/unity.scopes.PreviewWidget/#a5ef4058058119df35be51c992da2c2a4>`_ 
 () const
 
  
@@ -138,7 +142,7 @@ usual value semantics.
          
 
 **PreviewWidget**
-(`PreviewWidget </sdk/scopes/cpp/unity.scopes.PreviewWidget/>`__ const
+(`PreviewWidget </sdk/scopes/cpp/unity.scopes.PreviewWidget/>`_  const
 &other)
 
  
@@ -146,7 +150,7 @@ usual value semantics.
          
 
 **PreviewWidget**
-(`PreviewWidget </sdk/scopes/cpp/unity.scopes.PreviewWidget/>`__
+(`PreviewWidget </sdk/scopes/cpp/unity.scopes.PreviewWidget/>`_ 
 &&other)
 
  
@@ -157,20 +161,20 @@ usual value semantics.
 
  
 
-        `PreviewWidget </sdk/scopes/cpp/unity.scopes.PreviewWidget/>`__
+        `PreviewWidget </sdk/scopes/cpp/unity.scopes.PreviewWidget/>`_ 
 & 
 
 **operator=**
-(`PreviewWidget </sdk/scopes/cpp/unity.scopes.PreviewWidget/>`__ const
+(`PreviewWidget </sdk/scopes/cpp/unity.scopes.PreviewWidget/>`_  const
 &other)
 
  
 
-        `PreviewWidget </sdk/scopes/cpp/unity.scopes.PreviewWidget/>`__
+        `PreviewWidget </sdk/scopes/cpp/unity.scopes.PreviewWidget/>`_ 
 & 
 
 **operator=**
-(`PreviewWidget </sdk/scopes/cpp/unity.scopes.PreviewWidget/>`__
+(`PreviewWidget </sdk/scopes/cpp/unity.scopes.PreviewWidget/>`_ 
 &&other)
 
  
@@ -184,48 +188,48 @@ This class describes an individual widget used when constructing a
 preview for a result item. Note that the data that applies to particular
 widget types is likely to change with different major versions of Unity;
 therefore, attributes are of type
-`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`__, that is, loosely
+`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`_ , that is, loosely
 typed.
 
 When Unity requests a preview for a particular result, the scope is
 expected to construct the preview by instantiating a
-`PreviewWidget </sdk/scopes/cpp/unity.scopes.PreviewWidget/>`__. Each
+`PreviewWidget </sdk/scopes/cpp/unity.scopes.PreviewWidget/>`_ . Each
 widget has a free-form id, a type, and a number of attributes whose
 names and types depend on the specific widget type (see `Preview
-Widgets </sdk/scopes/cpp/previewwidgets/>`__).
+Widgets </sdk/scopes/cpp/previewwidgets/>`_ ).
 
 The attribute values can either be filled in directly before pushing the
 widget to Unity (using
-`add\_attribute\_value() </sdk/scopes/cpp/unity.scopes.PreviewWidget#a42dd64704890d72bcc6ecbd7bccbfcd9>`__),
+`add\_attribute\_value() </sdk/scopes/cpp/unity.scopes.PreviewWidget/#a42dd64704890d72bcc6ecbd7bccbfcd9>`_ ),
 or they can be mapped from a result field in a similar fashion to the
 components mapping when specifying a
-`CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`__
+`CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`_ 
 (see
-`add\_attribute\_mapping() </sdk/scopes/cpp/unity.scopes.PreviewWidget#a8bb890267a69dd6bb5ca70b663c75e74>`__).
+`add\_attribute\_mapping() </sdk/scopes/cpp/unity.scopes.PreviewWidget/#a8bb890267a69dd6bb5ca70b663c75e74>`_ ).
 When using
-`add\_attribute\_mapping() </sdk/scopes/cpp/unity.scopes.PreviewWidget#a8bb890267a69dd6bb5ca70b663c75e74>`__,
+`add\_attribute\_mapping() </sdk/scopes/cpp/unity.scopes.PreviewWidget/#a8bb890267a69dd6bb5ca70b663c75e74>`_ ,
 the corresponding attribute need not be present in the result; instead,
 its value can be pushed later using the
-`PreviewReply::push() </sdk/scopes/cpp/unity.scopes.PreviewReply#a9fc593618b83ec444fb6c9b2b298764a>`__
+`PreviewReply::push() </sdk/scopes/cpp/unity.scopes.PreviewReply/#a9fc593618b83ec444fb6c9b2b298764a>`_ 
 method, which accepts the name of the field and its value as a
-`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`__.
+`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`_ .
 
 Preview widget can also be created entirely from a JSON string. See the
 documentation of
 `unity::scopes::PreviewWidget::PreviewWidget(std::string
-const&) </sdk/scopes/cpp/unity.scopes.PreviewWidget#a751fd8b5f9eb0a921333b3a85cbc9518>`__
+const&) </sdk/scopes/cpp/unity.scopes.PreviewWidget/#a751fd8b5f9eb0a921333b3a85cbc9518>`_ 
 constructor for details.
 
 Here is an example that creates a preview and illustrates three ways to
 associate a preview widget attribute with its value:
 
 void
-MyPreview::run(\ `PreviewReplyProxy </sdk/scopes/cpp/unity.scopes#a7b46ef0e880da4c75314fe60bdd55754>`__
+MyPreview::run(\ :ref:`PreviewReplyProxy <sdk_unity_scopes#a7b46ef0e880da4c75314fe60bdd55754>`
 const& reply)
 
 {
 
-`PreviewWidget </sdk/scopes/cpp/unity.scopes.PreviewWidget#ace84578d55583c7c21f82d53ff6f0ed9>`__
+`PreviewWidget </sdk/scopes/cpp/unity.scopes.PreviewWidget/#ace84578d55583c7c21f82d53ff6f0ed9>`_ 
 w1("img", "image");
 
 // directly specify source URI for the image widget
@@ -233,7 +237,7 @@ w1("img", "image");
 w1.add\_attribute\_value("source",
 Variant("http://www.example.org/graphics.png"));
 
-`PreviewWidget </sdk/scopes/cpp/unity.scopes.PreviewWidget#ace84578d55583c7c21f82d53ff6f0ed9>`__
+`PreviewWidget </sdk/scopes/cpp/unity.scopes.PreviewWidget/#ace84578d55583c7c21f82d53ff6f0ed9>`_ 
 w2("hdr", "header");
 
 // the result associated with this preview already had a title
@@ -245,8 +249,8 @@ w2.add\_attribute\_mapping("title", "title");
 
 w2.add\_attribute\_mapping("summary", "description");
 
-`PreviewWidgetList </sdk/scopes/cpp/unity.scopes#aed3b7b1daf2e49d0a820ef931caa792d>`__
-`widgets </sdk/scopes/cpp/unity.scopes.PreviewWidget#a879e64d5ee205b4db8cb6ab9b66d18ee>`__;
+:ref:`PreviewWidgetList <sdk_unity_scopes#aed3b7b1daf2e49d0a820ef931caa792d>`
+`widgets </sdk/scopes/cpp/unity.scopes.PreviewWidget/#a879e64d5ee205b4db8cb6ab9b66d18ee>`_ ;
 
 widgets.push\_back(w1);
 
@@ -296,10 +300,10 @@ Create a widget from a JSON definition.
 
 The JSON definition must be a dictionary that includes widget "id" and
 all the values of attributes required by desired `widget
-type </sdk/scopes/cpp/previewwidgets/>`__. For example, a definition of
+type </sdk/scopes/cpp/previewwidgets/>`_ . For example, a definition of
 image widget may look as follows:
 
-`PreviewWidget </sdk/scopes/cpp/unity.scopes.PreviewWidget#ace84578d55583c7c21f82d53ff6f0ed9>`__
+`PreviewWidget </sdk/scopes/cpp/unity.scopes.PreviewWidget/#ace84578d55583c7c21f82d53ff6f0ed9>`_ 
 img(R"({"id": "img", "type": "image", "source": "http://imageuri",
 
  "fallback": "file:///tmp/image.png"})");
@@ -307,7 +311,7 @@ img(R"({"id": "img", "type": "image", "source": "http://imageuri",
 For cases where attribute mappings are to be used instead of direct
 values, they need to be enclosed in the "components" dictionary, e.g.
 
-`PreviewWidget </sdk/scopes/cpp/unity.scopes.PreviewWidget#ace84578d55583c7c21f82d53ff6f0ed9>`__
+`PreviewWidget </sdk/scopes/cpp/unity.scopes.PreviewWidget/#ace84578d55583c7c21f82d53ff6f0ed9>`_ 
 img(R"({"id": "img", "type": "image", "fallback":
 "file:///tmp/image.png",
 
@@ -315,17 +319,17 @@ img(R"({"id": "img", "type": "image", "fallback":
 
 (this example assumes "screenshot-url" value is either available in the
 result object that's being previewed, or it will be pushed with
-`unity::scopes::PreviewReply::push() </sdk/scopes/cpp/unity.scopes.PreviewReply#a9fc593618b83ec444fb6c9b2b298764a>`__
+`unity::scopes::PreviewReply::push() </sdk/scopes/cpp/unity.scopes.PreviewReply/#a9fc593618b83ec444fb6c9b2b298764a>`_ 
 method)
 
 Note
     It is recommended to create widgets via
     `unity::scopes::PreviewWidget(std::string const&, std::string
-    const&) </sdk/scopes/cpp/unity.scopes.PreviewWidget/>`__ constructor
+    const&) </sdk/scopes/cpp/unity.scopes.PreviewWidget/>`_  constructor
     and
-    `unity::scopes::PreviewWidget::add\_attribute\_value() </sdk/scopes/cpp/unity.scopes.PreviewWidget#a42dd64704890d72bcc6ecbd7bccbfcd9>`__
+    `unity::scopes::PreviewWidget::add\_attribute\_value() </sdk/scopes/cpp/unity.scopes.PreviewWidget/#a42dd64704890d72bcc6ecbd7bccbfcd9>`_ 
     /
-    `unity::scopes::PreviewWidget::add\_attribute\_mapping() </sdk/scopes/cpp/unity.scopes.PreviewWidget#a8bb890267a69dd6bb5ca70b663c75e74>`__
+    `unity::scopes::PreviewWidget::add\_attribute\_mapping() </sdk/scopes/cpp/unity.scopes.PreviewWidget/#a8bb890267a69dd6bb5ca70b663c75e74>`_ 
     methods, rather than via JSON definition.
 
 Parameters
@@ -356,7 +360,7 @@ attribute name and given the field name.
 
 If an attribute value is not known, the scope is expected to push the
 attribute value using
-`unity::scopes::PreviewReply::push() </sdk/scopes/cpp/unity.scopes.PreviewReply#a9fc593618b83ec444fb6c9b2b298764a>`__;
+`unity::scopes::PreviewReply::push() </sdk/scopes/cpp/unity.scopes.PreviewReply/#a9fc593618b83ec444fb6c9b2b298764a>`_ ;
 otherwise, the value is automatically mapped from the result.
 
 +--------------------+--------------------+--------------------+--------------------+
@@ -367,7 +371,7 @@ otherwise, the value is automatically mapped from the result.
 +--------------------+--------------------+--------------------+--------------------+
 |                    |                    | `Variant </sdk/sco | *value*            |
 |                    |                    | pes/cpp/unity.scop |                    |
-|                    |                    | es.Variant/>`__    |                    |
+|                    |                    | es.Variant/>`_     |                    |
 |                    |                    | const &            |                    |
 +--------------------+--------------------+--------------------+--------------------+
 |                    | )                  |                    |                    |
@@ -388,7 +392,7 @@ Parameters
 | s::PreviewWi |              | pes/cpp/unit |              |              |              |
 | dget::add\_w |              | y.scopes.Pre |              |              |              |
 | idget        |              | viewWidget/> |              |              |              |
-|              |              | `__          |              |              |              |
+|              |              | `_           |              |              |              |
 |              |              | const &      |              |              |              |
 +--------------+--------------+--------------+--------------+--------------+--------------+
 
@@ -417,18 +421,17 @@ Get the components of this widget.
 
 The returned map is a dictionary of (key, field name) pairs, as defined
 by calls to
-`add\_attribute\_mapping() </sdk/scopes/cpp/unity.scopes.PreviewWidget#a8bb890267a69dd6bb5ca70b663c75e74>`__.
+`add\_attribute\_mapping() </sdk/scopes/cpp/unity.scopes.PreviewWidget/#a8bb890267a69dd6bb5ca70b663c75e74>`_ .
 
 Returns
     The components map.
 
 +----------------+----------------+----------------+----------------+----------------+
-| `VariantMap </ | (              |                | )              | const          |
-| sdk/scopes/cpp |                |                |                |                |
-| /unity.scopes# |                |                |                |                |
-| ad5d8ccfa11a32 |                |                |                |                |
-| 7fca6f3e4cee11 |                |                |                |                |
-| f4c10>`__      |                |                |                |                |
+| `VariantMap <s | (              |                | )              | const          |
+| dk_unity_scope |                |                |                |                |
+| s#ad5d8ccfa11a |                |                |                |                |
+| 327fca6f3e4cee |                |                |                |                |
+| 11f4c10>`_     |                |                |                |                |
 | unity::scopes: |                |                |                |                |
 | :PreviewWidget |                |                |                |                |
 | ::attribute\_v |                |                |                |                |
@@ -439,7 +442,7 @@ Get the attributes of this widget.
 
 The returned map is a dictionary of (key, value) pairs, as defined by
 calls to
-`add\_attribute\_value() </sdk/scopes/cpp/unity.scopes.PreviewWidget#a42dd64704890d72bcc6ecbd7bccbfcd9>`__.
+`add\_attribute\_value() </sdk/scopes/cpp/unity.scopes.PreviewWidget/#a42dd64704890d72bcc6ecbd7bccbfcd9>`_ .
 
 Returns
     The attribute map.
@@ -482,12 +485,11 @@ Returns
 
 +----------------+----------------+----------------+----------------+----------------+
 | `PreviewWidget | (              |                | )              | const          |
-| List </sdk/sco |                |                |                |                |
-| pes/cpp/unity. |                |                |                |                |
-| scopes#aed3b7b |                |                |                |                |
-| 1daf2e49d0a820 |                |                |                |                |
-| ef931caa792d>` |                |                |                |                |
-| __             |                |                |                |                |
+| List <sdk_unit |                |                |                |                |
+| y_scopes#aed3b |                |                |                |                |
+| 7b1daf2e49d0a8 |                |                |                |                |
+| 20ef931caa792d |                |                |                |                |
+| >`_            |                |                |                |                |
 | unity::scopes: |                |                |                |                |
 | :PreviewWidget |                |                |                |                |
 | ::widgets      |                |                |                |                |

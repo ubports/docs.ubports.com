@@ -1,3 +1,7 @@
+.. _sdk_qtquick_qt_quick_examples_-_text:
+QtQuick Qt Quick Examples - Text
+================================
+
 
 
 |image0|
@@ -11,10 +15,10 @@ example.
    :name: hello
 
 *Hello* shows how to change and animate the letter spacing of a
-`Text </sdk/apps/qml/QtQuick/qtquick-releasenotes#text>`__ type. It uses
-a sequential animation to first animate the font.letterSpacing property
-from ``0`` to ``50`` over three seconds and then move the text to a
-random position on screen:
+`Text </sdk/apps/qml/QtQuick/qtquick-releasenotes/#text>`_  type. It
+uses a sequential animation to first animate the font.letterSpacing
+property from ``0`` to ``50`` over three seconds and then move the text
+to a random position on screen:
 
 .. code:: qml
 
@@ -33,28 +37,28 @@ random position on screen:
    :name: fonts
 
 *Fonts* shows different ways of using fonts with the
-`Text </sdk/apps/qml/QtQuick/qtquick-releasenotes#text>`__ type. Simply
+`Text </sdk/apps/qml/QtQuick/qtquick-releasenotes/#text>`_  type. Simply
 by name, using the font.family property directly:
 
 .. code:: qml
 
                 font.family: "Times"
 
-or using a `FontLoader </sdk/apps/qml/QtQuick/FontLoader/>`__ type:
+or using a :ref:`FontLoader <sdk_qtquick_fontloader>` type:
 
 .. code:: qml
 
         FontLoader { id: fixedFont; name: "Courier" }
 
-or using a `FontLoader </sdk/apps/qml/QtQuick/FontLoader/>`__ and
-specifying a local font file:
+or using a :ref:`FontLoader <sdk_qtquick_fontloader>` and specifying a
+local font file:
 
 .. code:: qml
 
         FontLoader { id: localFont; source: "content/fonts/tarzeau_ocr_a.ttf" }
 
-or finally using a `FontLoader </sdk/apps/qml/QtQuick/FontLoader/>`__
-and specifying a remote font file:
+or finally using a :ref:`FontLoader <sdk_qtquick_fontloader>` and
+specifying a remote font file:
 
 .. code:: qml
 
@@ -65,8 +69,8 @@ and specifying a remote font file:
 
 *Available Fonts* shows how to use the QML Qt global object and a list
 view to display all the fonts available on the system. The
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__ type uses the list of
-fonts available as its model:
+:ref:`ListView <sdk_qtquick_listview>` type uses the list of fonts
+available as its model:
 
 .. code:: qml
 
@@ -82,8 +86,7 @@ Inside the delegate, the font family is set with the modelData:
    :name: banner
 
 *Banner* is a simple example showing how to create a banner using a row
-of text types and a
-`NumberAnimation </sdk/apps/qml/QtQuick/NumberAnimation/>`__.
+of text types and a :ref:`NumberAnimation <sdk_qtquick_numberanimation>`.
 
 .. rubric:: Img Tag
    :name: img-tag

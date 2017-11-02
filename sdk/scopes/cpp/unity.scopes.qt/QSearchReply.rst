@@ -1,5 +1,9 @@
+.. _sdk_unity_scopes_qt_qsearchreply:
+unity.scopes.qt QSearchReply
+============================
+
 Allows the results of a search query to be sent to the query source.
-`More... </sdk/scopes/cpp/unity.scopes.qt/QSearchReply#details>`__
+:ref:`More... <sdk_unity_scopes_qt_qsearchreply#details>`
 
 ``#include <unity/scopes/qt/QSearchReply.h>``
 
@@ -14,19 +18,18 @@ Inheritance diagram for unity::scopes::qt::QSearchReply:
 
         virtual 
 
-`~QSearchReply </sdk/scopes/cpp/unity.scopes.qt/QSearchReply#a6c9794d4fbbd36e2c6f4ce70495a580f>`__
+:ref:`~QSearchReply <sdk_unity_scopes_qt_qsearchreply#a6c9794d4fbbd36e2c6f4ce70495a580f>`
 ()
 
  
 
-| Destroys a
-  `QSearchReply </sdk/scopes/cpp/unity.scopes.qt/QSearchReply/>`__.
+| Destroys a :ref:`QSearchReply <sdk_unity_scopes_qt_qsearchreply>`.
 
  
 
 virtual void 
 
-`register\_departments </sdk/scopes/cpp/unity.scopes.qt/QSearchReply#acac93ea6c02ccccdae2c72384cc5c5fd>`__
+:ref:`register\_departments <sdk_unity_scopes_qt_qsearchreply#acac93ea6c02ccccdae2c72384cc5c5fd>`
 (QDepartment::SCPtr const &parent)
 
  
@@ -38,11 +41,11 @@ virtual void 
 
 virtual QCategory::SCPtr 
 
-`register\_category </sdk/scopes/cpp/unity.scopes.qt/QSearchReply#ac208a555cddc39f086b88804bb9bd26f>`__
+:ref:`register\_category <sdk_unity_scopes_qt_qsearchreply#ac208a555cddc39f086b88804bb9bd26f>`
 (QString const &id, QString const &title, QString const &icon,
-`unity::scopes::CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`__
+`unity::scopes::CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`_ 
 const
-&renderer\_template=\ `unity::scopes::CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`__\ ())
+&renderer\_template=\ `unity::scopes::CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`_ \ ())
 
  
 
@@ -52,9 +55,9 @@ const
 
 virtual bool 
 
-`push </sdk/scopes/cpp/unity.scopes.qt/QSearchReply#a17a9439fd592a2c76b7b74f46053bad5>`__
-(`QCategorisedResult </sdk/scopes/cpp/unity.scopes.qt/QCategorisedResult/>`__
-const &result)
+:ref:`push <sdk_unity_scopes_qt_qsearchreply#a17a9439fd592a2c76b7b74f46053bad5>`
+(:ref:`QCategorisedResult <sdk_unity_scopes_qt_qcategorisedresult>` const
+&result)
 
  
 
@@ -64,7 +67,7 @@ const &result)
 
 virtual void 
 
-`error </sdk/scopes/cpp/unity.scopes.qt/QSearchReply#a74f1e3d2dd82ef9810413fa38401e16e>`__
+:ref:`error <sdk_unity_scopes_qt_qsearchreply#a74f1e3d2dd82ef9810413fa38401e16e>`
 (std::exception\_ptr ex)
 
  
@@ -104,9 +107,9 @@ Informs the source of a query that the query was terminated due to an
 error.
 
 Multiple calls to
-`error() </sdk/scopes/cpp/unity.scopes.qt/QSearchReply#a74f1e3d2dd82ef9810413fa38401e16e>`__
+:ref:`error() <sdk_unity_scopes_qt_qsearchreply#a74f1e3d2dd82ef9810413fa38401e16e>`
 and calls to finished() after
-`error() </sdk/scopes/cpp/unity.scopes.qt/QSearchReply#a74f1e3d2dd82ef9810413fa38401e16e>`__
+:ref:`error() <sdk_unity_scopes_qt_qsearchreply#a74f1e3d2dd82ef9810413fa38401e16e>`
 was called are ignored.
 
 Parameters
@@ -122,21 +125,18 @@ Parameters
 | tegorise | *result*     | )          |                                      |
 |    |              |                  |                                      |
 | | QSearchReply |              | dRes |                                      |
-| ult </sd |              |            |                                      |
+| ult <sdk |              |            |                                      |
 |    |              |                  |                                      |
-| | ::push       |              | k/sc |                                      |
-| opes/cpp |              |            |                                      |
+| | ::push       |              | _uni |                                      |
+| ty_scope |              |            |                                      |
 |    |              |                  |                                      |
-| |              |              | /uni |                                      |
-| ty.scope |              |            |                                      |
-|    |              |                  |                                      |
-| |              |              | s.qt |                                      |
-| /QCatego |              |            |                                      |
+| |              |              | s_qt |                                      |
+| _qcatego |              |            |                                      |
 |    |              |                  |                                      |
 | |              |              | rise |                                      |
-| dResult/ |              |            |                                      |
+| dresult> |              |            |                                      |
 |    |              |                  |                                      |
-| |              |              | >`__ |                                      |
+| |              |              | `_   |                                      |
 |          |              |            |                                      |
 |    |              |                  |                                      |
 | |              |              | cons |                                      |
@@ -150,7 +150,7 @@ Parameters
 Sends a single result to the source of a query.
 
 Any calls to
-`push() </sdk/scopes/cpp/unity.scopes.qt/QSearchReply#a17a9439fd592a2c76b7b74f46053bad5>`__
+:ref:`push() <sdk_unity_scopes_qt_qsearchreply#a17a9439fd592a2c76b7b74f46053bad5>`
 after finished() was called are ignored.
 
 Returns
@@ -202,7 +202,7 @@ Returns
 |       | y.scopes.CategoryR | ``unity |                                      |
 | ::scopes::C |                        |                                      |
 | |                    |               |                                      |
-|       | enderer/>`__       | ategory |                                      |
+|       | enderer/>`_        | ategory |                                      |
 | Renderer()` |                        |                                      |
 | |                    |               |                                      |
 |       | const &            | `       |                                      |
@@ -266,23 +266,23 @@ current department.
 Departments are optional. If scope supports departments, it is expected
 to register departments on every search as follows:
 
--  create a `Department </sdk/scopes/cpp/unity.scopes.Department/>`__
+-  create a `Department </sdk/scopes/cpp/unity.scopes.Department/>`_ 
    node for current department and attach to it a list of its
    subdepartments (unless current department is a leaf department) using
-   `unity::scopes::Department::set\_subdepartments() </sdk/scopes/cpp/unity.scopes.Department#ab17057cef9ce35f1302f5421a087c067>`__
+   `unity::scopes::Department::set\_subdepartments() </sdk/scopes/cpp/unity.scopes.Department/#ab17057cef9ce35f1302f5421a087c067>`_ 
    method. For every subdepartment on the list set "has\_subdepartments"
    flag if applicable.
 -  provide an alternate label for current department with
-   `unity::scopes::Department::set\_alternate\_label() </sdk/scopes/cpp/unity.scopes.Department#a9ab1192cdfcbce44b9164df11290c217>`__.
--  create a `Department </sdk/scopes/cpp/unity.scopes.Department/>`__
+   `unity::scopes::Department::set\_alternate\_label() </sdk/scopes/cpp/unity.scopes.Department/#a9ab1192cdfcbce44b9164df11290c217>`_ .
+-  create a `Department </sdk/scopes/cpp/unity.scopes.Department/>`_ 
    node for parent of current department (if applicable - not when in
    root department), and attach current
-   `Department </sdk/scopes/cpp/unity.scopes.Department/>`__ node to it
+   `Department </sdk/scopes/cpp/unity.scopes.Department/>`_  node to it
    with
-   `unity::scopes::Department::set\_subdepartments() </sdk/scopes/cpp/unity.scopes.Department#ab17057cef9ce35f1302f5421a087c067>`__
+   `unity::scopes::Department::set\_subdepartments() </sdk/scopes/cpp/unity.scopes.Department/#ab17057cef9ce35f1302f5421a087c067>`_ 
    method.
 -  register the parent department with
-   `unity::scopes::qt::QSearchReply::register\_departments() </sdk/scopes/cpp/unity.scopes.qt/QSearchReply#acac93ea6c02ccccdae2c72384cc5c5fd>`__.
+   :ref:`unity::scopes::qt::QSearchReply::register\_departments() <sdk_unity_scopes_qt_qsearchreply#acac93ea6c02ccccdae2c72384cc5c5fd>`.
 
 For example, assuming the user is visiting a "History" department in
 "Books", and "History" has sub-departments such as "World War Two" and
@@ -290,7 +290,7 @@ For example, assuming the user is visiting a "History" department in
 "History" may look like this:
 
 unity::scopes::qt::QDepartment::SPtr books =
-move(\ `unity::scopes::qt::QDepartment::create </sdk/scopes/cpp/unity.scopes.qt/QDepartment#a9bf07a3b3b3e57a391100f15abb4c651>`__\ ("books",
+move(\ :ref:`unity::scopes::qt::QDepartment::create <sdk_unity_scopes_qt_qdepartment#a9bf07a3b3b3e57a391100f15abb4c651>`\ ("books",
 query, "Books"));
 
 // the
@@ -298,20 +298,20 @@ query, "Books"));
 parent of "History"
 
 unity::scopes::Department::SPtr history =
-move(\ `unity::scopes::qt::QDepartment::create </sdk/scopes/cpp/unity.scopes.qt/QDepartment#a9bf07a3b3b3e57a391100f15abb4c651>`__\ ("history",
+move(\ :ref:`unity::scopes::qt::QDepartment::create <sdk_unity_scopes_qt_qdepartment#a9bf07a3b3b3e57a391100f15abb4c651>`\ ("history",
 query,
 
 "History"));
 
-`unity::scopes::DepartmentList </sdk/scopes/cpp/unity.scopes#ab8effc4ea05a59f2ddea896833f07231>`__
+:ref:`unity::scopes::DepartmentList <sdk_unity_scopes#ab8effc4ea05a59f2ddea896833f07231>`
 history\_depts({
 
-move(\ `unity::scopes::qt::QDepartment::create </sdk/scopes/cpp/unity.scopes.qt/QDepartment#a9bf07a3b3b3e57a391100f15abb4c651>`__\ ("ww2",
+move(\ :ref:`unity::scopes::qt::QDepartment::create <sdk_unity_scopes_qt_qdepartment#a9bf07a3b3b3e57a391100f15abb4c651>`\ ("ww2",
 query, "World War
 
 Two")),
 
-move(\ `unity::scopes::qt::QDepartment::create </sdk/scopes/cpp/unity.scopes.qt/QDepartment#a9bf07a3b3b3e57a391100f15abb4c651>`__\ ("ancient",
+move(\ :ref:`unity::scopes::qt::QDepartment::create <sdk_unity_scopes_qt_qdepartment#a9bf07a3b3b3e57a391100f15abb4c651>`\ ("ancient",
 query,
 
 "Ancient"))});
@@ -323,7 +323,7 @@ books->set\_subdepartments({history});
 reply->register\_departments(books);
 
 Current department should be the department returned by
-`unity::scopes::CannedQuery::department\_id() </sdk/scopes/cpp/unity.scopes.CannedQuery#a61351960149bb4c0840f020c4e645f66>`__.
+`unity::scopes::CannedQuery::department\_id() </sdk/scopes/cpp/unity.scopes.CannedQuery/#a61351960149bb4c0840f020c4e645f66>`_ .
 Empty department id denotes the root deparment.
 
 Parameters
@@ -336,5 +336,5 @@ Exceptions
     | unity::LogicException   | if departments are invalid (nullptr passed, current department not present in the parent's tree, duplicated department ids present in the tree).   |
     +-------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. |Inheritance graph| image:: /media/sdk/scopes/cpp/unity.scopes.qt/QSearchReply/classunity_1_1scopes_1_1qt_1_1_q_search_reply__inherit__graph.png
+.. |Inheritance graph| image:: /mediasdk_unity_scopes_qt_qsearchreplyclassunity_1_1scopes_1_1qt_1_1_q_search_reply__inherit__graph.png
 

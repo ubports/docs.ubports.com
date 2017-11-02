@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_listitems_singlecontrol:
+Ubuntu.Components.ListItems SingleControl
+=========================================
+
 A list item containing a single control
 
 +--------------------------------------+--------------------------------------+
@@ -5,21 +9,20 @@ A list item containing a single control
 |                                      | 1.3                                  |
 +--------------------------------------+--------------------------------------+
 | Inherits:                            | `Empty </sdk/apps/qml/Ubuntu.Compone |
-|                                      | nts/ListItems.Empty/>`__             |
+|                                      | nts/ListItems.Empty/>`_              |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`control </sdk/apps/qml/Ubuntu.Components/ListItems.SingleControl#control-prop>`__****
+-  `control </sdk/apps/qml/Ubuntu.Components/ListItems.SingleControl/_control-prop>`_ 
    : Item
 
 Detailed Description
 --------------------
 
 **Note:** **The component is deprecated. Use
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ component
-instead.**
+:ref:`ListItem <sdk_ubuntu_components_listitem>` component instead.**
 
 Examples:
 
@@ -42,12 +45,14 @@ Examples:
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_listitems_singlecontrol_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ control : `Item </sdk/apps/qml/QtQuick/Item/>`__                |
+| :ref:` <>`\ control : `Item <sdk_qtquick_item>`                        |
 +--------------------------------------------------------------------------+
 
 The control of this
-`SingleControl </sdk/apps/qml/Ubuntu.Components/ListItems.SingleControl/>`__
+`SingleControl </sdk/apps/qml/Ubuntu.Components/ListItems.SingleControl/>`_ 
 list item. The control will automatically be re-parented to, and
 centered in, this list item.
 

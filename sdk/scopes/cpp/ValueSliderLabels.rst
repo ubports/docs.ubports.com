@@ -1,6 +1,10 @@
+.. _sdk_valuesliderlabels:
+ValueSliderLabels
+=================
+
 Labels used by a
-`ValueSliderFilter </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/>`__.
-`More... </sdk/scopes/cpp/unity.scopes.ValueSliderLabels#details>`__
+`ValueSliderFilter </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/>`_ .
+`More... </sdk/scopes/cpp/unity.scopes.ValueSliderLabels/#details>`_ 
 
 ``#include <unity/scopes/ValueSliderLabels.h>``
 
@@ -9,11 +13,11 @@ Labels used by a
 
  
 
-`ValueSliderLabels </sdk/scopes/cpp/unity.scopes.ValueSliderLabels#aee36eeedc9ec3d756e4b093575a5431e>`__
+`ValueSliderLabels </sdk/scopes/cpp/unity.scopes.ValueSliderLabels/#aee36eeedc9ec3d756e4b093575a5431e>`_ 
 (std::string const
-&\ `min\_label </sdk/scopes/cpp/unity.scopes.ValueSliderLabels#a199d67722ee50d4eec47c2f089670cf2>`__,
+&\ `min\_label </sdk/scopes/cpp/unity.scopes.ValueSliderLabels/#a199d67722ee50d4eec47c2f089670cf2>`_ ,
 std::string const
-&\ `max\_label </sdk/scopes/cpp/unity.scopes.ValueSliderLabels#a5f471aecdaa04dbdf13112a74f524a86>`__)
+&\ `max\_label </sdk/scopes/cpp/unity.scopes.ValueSliderLabels/#a5f471aecdaa04dbdf13112a74f524a86>`_ )
 
  
 
@@ -24,14 +28,14 @@ std::string const
 
  
 
-`ValueSliderLabels </sdk/scopes/cpp/unity.scopes.ValueSliderLabels#a6b31441606d8e090cad12908800fb409>`__
+`ValueSliderLabels </sdk/scopes/cpp/unity.scopes.ValueSliderLabels/#a6b31441606d8e090cad12908800fb409>`_ 
 (std::string const
-&\ `min\_label </sdk/scopes/cpp/unity.scopes.ValueSliderLabels#a199d67722ee50d4eec47c2f089670cf2>`__,
+&\ `min\_label </sdk/scopes/cpp/unity.scopes.ValueSliderLabels/#a199d67722ee50d4eec47c2f089670cf2>`_ ,
 std::string const
-&\ `max\_label </sdk/scopes/cpp/unity.scopes.ValueSliderLabels#a5f471aecdaa04dbdf13112a74f524a86>`__,
-`ValueLabelPairList </sdk/scopes/cpp/unity.scopes#aa2ccb5d7acadeb38f44e9405f1b55c6b>`__
+&\ `max\_label </sdk/scopes/cpp/unity.scopes.ValueSliderLabels/#a5f471aecdaa04dbdf13112a74f524a86>`_ ,
+:ref:`ValueLabelPairList <sdk_unity_scopes#aa2ccb5d7acadeb38f44e9405f1b55c6b>`
 const
-&\ `extra\_labels </sdk/scopes/cpp/unity.scopes.ValueSliderLabels#adcd0e3d956206f272b6fec704b87a386>`__)
+&\ `extra\_labels </sdk/scopes/cpp/unity.scopes.ValueSliderLabels/#adcd0e3d956206f272b6fec704b87a386>`_ )
 
  
 
@@ -42,7 +46,7 @@ const
 
 std::string 
 
-`min\_label </sdk/scopes/cpp/unity.scopes.ValueSliderLabels#a199d67722ee50d4eec47c2f089670cf2>`__
+`min\_label </sdk/scopes/cpp/unity.scopes.ValueSliderLabels/#a199d67722ee50d4eec47c2f089670cf2>`_ 
 () const
 
  
@@ -53,7 +57,7 @@ std::string 
 
 std::string 
 
-`max\_label </sdk/scopes/cpp/unity.scopes.ValueSliderLabels#a5f471aecdaa04dbdf13112a74f524a86>`__
+`max\_label </sdk/scopes/cpp/unity.scopes.ValueSliderLabels/#a5f471aecdaa04dbdf13112a74f524a86>`_ 
 () const
 
  
@@ -62,9 +66,9 @@ std::string 
 
  
 
-`ValueLabelPairList </sdk/scopes/cpp/unity.scopes#aa2ccb5d7acadeb38f44e9405f1b55c6b>`__ 
+:ref:`ValueLabelPairList <sdk_unity_scopes#aa2ccb5d7acadeb38f44e9405f1b55c6b>` 
 
-`extra\_labels </sdk/scopes/cpp/unity.scopes.ValueSliderLabels#adcd0e3d956206f272b6fec704b87a386>`__
+`extra\_labels </sdk/scopes/cpp/unity.scopes.ValueSliderLabels/#adcd0e3d956206f272b6fec704b87a386>`_ 
 () const
 
  
@@ -81,7 +85,7 @@ semantics.
          
 
 **ValueSliderLabels**
-(`ValueSliderLabels </sdk/scopes/cpp/unity.scopes.ValueSliderLabels/>`__
+(`ValueSliderLabels </sdk/scopes/cpp/unity.scopes.ValueSliderLabels/>`_ 
 const &other)
 
  
@@ -89,25 +93,25 @@ const &other)
          
 
 **ValueSliderLabels**
-(`ValueSliderLabels </sdk/scopes/cpp/unity.scopes.ValueSliderLabels/>`__
+(`ValueSliderLabels </sdk/scopes/cpp/unity.scopes.ValueSliderLabels/>`_ 
 &&)
 
  
 
-`ValueSliderLabels </sdk/scopes/cpp/unity.scopes.ValueSliderLabels/>`__
+`ValueSliderLabels </sdk/scopes/cpp/unity.scopes.ValueSliderLabels/>`_ 
 & 
 
 **operator=**
-(`ValueSliderLabels </sdk/scopes/cpp/unity.scopes.ValueSliderLabels/>`__
+(`ValueSliderLabels </sdk/scopes/cpp/unity.scopes.ValueSliderLabels/>`_ 
 const &other)
 
  
 
-`ValueSliderLabels </sdk/scopes/cpp/unity.scopes.ValueSliderLabels/>`__
+`ValueSliderLabels </sdk/scopes/cpp/unity.scopes.ValueSliderLabels/>`_ 
 & 
 
 **operator=**
-(`ValueSliderLabels </sdk/scopes/cpp/unity.scopes.ValueSliderLabels/>`__
+(`ValueSliderLabels </sdk/scopes/cpp/unity.scopes.ValueSliderLabels/>`_ 
 &&)
 
  
@@ -122,12 +126,12 @@ Detailed Description
 --------------------
 
 Labels used by a
-`ValueSliderFilter </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/>`__.
+`ValueSliderFilter </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/>`_ .
 
 The
-`ValueSliderLabels </sdk/scopes/cpp/unity.scopes.ValueSliderLabels/>`__
+`ValueSliderLabels </sdk/scopes/cpp/unity.scopes.ValueSliderLabels/>`_ 
 class holds labels for a
-`ValueSliderFilter </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/>`__.
+`ValueSliderFilter </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/>`_ .
 Labels for the minimum and maximum values must be provided. In addition,
 an arbitrary number of extra labels can be defined; these labels mark
 intermediate values between the minimum and maximum value.
@@ -147,7 +151,7 @@ Constructor & Destructor Documentation
 +--------------------+--------------------+--------------------+--------------------+
 
 Create a
-`ValueSliderLabels </sdk/scopes/cpp/unity.scopes.ValueSliderLabels/>`__
+`ValueSliderLabels </sdk/scopes/cpp/unity.scopes.ValueSliderLabels/>`_ 
 instance with labels for minimum and maximum values only.
 
 Exceptions
@@ -164,17 +168,17 @@ Exceptions
 |                    |                    | &                  |                    |
 +--------------------+--------------------+--------------------+--------------------+
 |                    |                    | `ValueLabelPairLis | *extra\_labels*    |
-|                    |                    | t </sdk/scopes/cpp |                    |
-|                    |                    | /unity.scopes#aa2c |                    |
-|                    |                    | cb5d7acadeb38f44e9 |                    |
-|                    |                    | 405f1b55c6b>`__    |                    |
+|                    |                    | t <sdk_unity_scope |                    |
+|                    |                    | s#aa2ccb5d7acadeb3 |                    |
+|                    |                    | 8f44e9405f1b55c6b> |                    |
+|                    |                    | `_                 |                    |
 |                    |                    | const &            |                    |
 +--------------------+--------------------+--------------------+--------------------+
 |                    | )                  |                    |                    |
 +--------------------+--------------------+--------------------+--------------------+
 
 Create a
-`ValueSliderLabels </sdk/scopes/cpp/unity.scopes.ValueSliderLabels/>`__
+`ValueSliderLabels </sdk/scopes/cpp/unity.scopes.ValueSliderLabels/>`_ 
 instance with labels for minimum and maximum, as well as extra labels.
 
 Note that any extra labels act only as a guidance for the user (i.e.
@@ -183,9 +187,9 @@ omit some or all of the labels depending on the available screen space.
 
 Parameters
     +-----------------+---------------------------------------------------------------------------------------------------------------------------------+
-    | min\_label      | The label for minimum value of the associated `ValueSliderFilter </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/>`__ filter.   |
+    | min\_label      | The label for minimum value of the associated `ValueSliderFilter </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/>`_  filter.   |
     +-----------------+---------------------------------------------------------------------------------------------------------------------------------+
-    | max\_label      | The label for maximum value of the associated `ValueSliderFilter </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/>`__ filter.   |
+    | max\_label      | The label for maximum value of the associated `ValueSliderFilter </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/>`_  filter.   |
     +-----------------+---------------------------------------------------------------------------------------------------------------------------------+
     | extra\_labels   | Additional labels for values between minimum and maximum values.                                                                |
     +-----------------+---------------------------------------------------------------------------------------------------------------------------------+

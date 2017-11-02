@@ -1,3 +1,7 @@
+.. _sdk_qtquick_qml_advanced_tutorial_4_-_finishing_touches:
+QtQuick QML Advanced Tutorial 4 - Finishing Touches
+===================================================
+
 
 
 .. rubric:: Adding some flair
@@ -19,11 +23,9 @@ renamed to ``BoomBlock.qml``.
 
 First we will animate the blocks so that they move in a fluid manner.
 QML has a number of methods for adding fluid movement, and in this case
-we're going to use the `Behavior </sdk/apps/qml/QtQuick/Behavior/>`__
-type to add a
-`SpringAnimation </sdk/apps/qml/QtQuick/SpringAnimation/>`__. In
-``BoomBlock.qml``, we apply a
-`SpringAnimation </sdk/apps/qml/QtQuick/SpringAnimation/>`__ behavior to
+we're going to use the :ref:`Behavior <sdk_qtquick_behavior>` type to add a
+:ref:`SpringAnimation <sdk_qtquick_springanimation>`. In ``BoomBlock.qml``,
+we apply a :ref:`SpringAnimation <sdk_qtquick_springanimation>` behavior to
 the ``x`` and ``y`` properties so that the block will follow and animate
 its movement in a spring-like fashion towards the specified position
 (whose values will be set by ``samegame.js``).Here is the code added to
@@ -45,23 +47,23 @@ spring-like effect of the animation.
 
 The ``enabled: spawned`` setting refers to the ``spawned`` value that is
 set from ``createBlock()`` in ``samegame.js``. This ensures the
-`SpringAnimation </sdk/apps/qml/QtQuick/SpringAnimation/>`__ on the
-``x`` is only enabled after ``createBlock()`` has set the block to the
-correct position. Otherwise, the blocks will slide out of the corner
-(0,0) when a game begins, instead of falling from the top in rows. (Try
-commenting out ``enabled: spawned`` and see for yourself.)
+:ref:`SpringAnimation <sdk_qtquick_springanimation>` on the ``x`` is only
+enabled after ``createBlock()`` has set the block to the correct
+position. Otherwise, the blocks will slide out of the corner (0,0) when
+a game begins, instead of falling from the top in rows. (Try commenting
+out ``enabled: spawned`` and see for yourself.)
 
 .. rubric:: Animating block opacity changes
    :name: animating-block-opacity-changes
 
 Next, we will add a smooth exit animation. For this, we'll use a
-`Behavior </sdk/apps/qml/QtQuick/Behavior/>`__ type, which allows us to
-specify a default animation when a property change occurs. In this case,
-when the ``opacity`` of a Block changes, we will animate the opacity
-value so that it gradually fades in and out, instead of abruptly
-changing between fully visible and invisible. To do this, we'll apply a
-`Behavior </sdk/apps/qml/QtQuick/Behavior/>`__ on the ``opacity``
-property of the ``Image`` type in ``BoomBlock.qml``:
+:ref:`Behavior <sdk_qtquick_behavior>` type, which allows us to specify a
+default animation when a property change occurs. In this case, when the
+``opacity`` of a Block changes, we will animate the opacity value so
+that it gradually fades in and out, instead of abruptly changing between
+fully visible and invisible. To do this, we'll apply a
+:ref:`Behavior <sdk_qtquick_behavior>` on the ``opacity`` property of the
+``Image`` type in ``BoomBlock.qml``:
 
 .. code:: qml
 
@@ -85,7 +87,7 @@ property of the ``Image`` type in ``BoomBlock.qml``:
 Note the ``opacity: 0`` which means the block is transparent when it is
 first created. We could set the opacity in ``samegame.js`` when we
 create and destroy the blocks, but instead we'll use
-`states </sdk/apps/qml/QtQuick/qtquick-statesanimations-states/>`__,
+`states </sdk/apps/qml/QtQuick/qtquick-statesanimations-states/>`_ ,
 since this is useful for the next animation we're going to add.
 Initially, we add these States to the root type of ``BoomBlock.qml``:
 
@@ -111,7 +113,7 @@ destroyed (in the ``floodFill()`` function).
 
 Finally, we'll add a cool-looking particle effect to the blocks when
 they are destroyed. To do this, we first add a
-`ParticleSystem </sdk/apps/qml/QtQuick/Particles.ParticleSystem/>`__ in
+`ParticleSystem </sdk/apps/qml/QtQuick/Particles.ParticleSystem/>`_  in
 ``BoomBlock.qml``, like so:
 
 .. code:: qml
@@ -143,7 +145,7 @@ they are destroyed. To do this, we first add a
     }
 
 To fully understand this you should read `Using the Qt Quick Particle
-System </sdk/apps/qml/QtQuick/qtquick-effects-particles/>`__, but it's
+System </sdk/apps/qml/QtQuick/qtquick-effects-particles/>`_ , but it's
 important to note that ``emitRate`` is set to zero so that particles are
 not emitted normally. Also, we extend the ``dying`` State, which creates
 a burst of particles by calling the ``burst()`` method on the particles
@@ -175,7 +177,7 @@ theming:
 
 The theme change here is produced simply by replacing the block images.
 This can be done at runtime by changing the
-`Image </sdk/apps/qml/QtQuick/imageelements#image>`__ ``source``
+`Image </sdk/apps/qml/QtQuick/imageelements/#image>`_  ``source``
 property, so for a further challenge, you could add a button that
 toggles between themes with different images.
 
@@ -300,7 +302,7 @@ First we call ``sendHighScore()`` (explained in the section below) if it
 is possible to send the high scores to an online database.
 
 Then, we use the `Local Storage
-API </sdk/apps/qml/QtQuick/qtquick-releasenotes#qtquick-localstorage>`__
+API </sdk/apps/qml/QtQuick/qtquick-releasenotes/#qtquick-localstorage>`_ 
 to maintain a persistent SQL database unique to this application. We
 create an offline storage database for the high scores using
 ``openDatabaseSync()`` and prepare the data and SQL query that we want
@@ -363,7 +365,7 @@ same way as you did with the blocks.
 
 An alternate way to access and submit web-based data would be to use QML
 types designed for this purpose.
-`XmlListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview#xmllistmodel>`__
+`XmlListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#xmllistmodel>`_ 
 makes it very easy to fetch and display XML based data such as RSS in a
 QML application (see the Flickr demo for an example).
 
@@ -375,16 +377,15 @@ functional application in QML:
 
 -  Build your application with QML types
 -  Add application logic with JavaScript code
--  Add animations with `Behaviors </sdk/apps/qml/QtQuick/Behavior/>`__
-   and
-   `states </sdk/apps/qml/QtQuick/qtquick-statesanimations-states/>`__
+-  Add animations with :ref:`Behaviors <sdk_qtquick_behavior>` and
+   `states </sdk/apps/qml/QtQuick/qtquick-statesanimations-states/>`_ 
 -  Store persistent application data using, for example,
-   `QtQuick.LocalStorage </sdk/apps/qml/QtQuick/qtquick-releasenotes#qtquick-localstorage>`__
+   `QtQuick.LocalStorage </sdk/apps/qml/QtQuick/qtquick-releasenotes/#qtquick-localstorage>`_ 
    or XMLHttpRequest
 
 There is so much more to learn about QML that we haven't been able to
 cover in this tutorial. Check out all the examples and the
-`documentation </sdk/apps/qml/QtQuick/qtquick-index/>`__ to see all the
+`documentation </sdk/apps/qml/QtQuick/qtquick-index/>`_  to see all the
 things you can do with QML!
 
 Files:
@@ -398,7 +399,7 @@ Files:
 -  tutorials/samegame/samegame4/samegame4.qmlproject
 
 `QML Advanced Tutorial 3 - Implementing the Game
-Logic </sdk/apps/qml/QtQuick/tutorials-samegame-samegame3/>`__
+Logic </sdk/apps/qml/QtQuick/tutorials-samegame-samegame3/>`_ 
 
 .. |image0| image:: /media/sdk/apps/qml/qtquick-tutorials-samegame-samegame4-example/images/declarative-adv-tutorial4.gif
 

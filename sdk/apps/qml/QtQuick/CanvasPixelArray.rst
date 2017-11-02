@@ -1,3 +1,7 @@
+.. _sdk_qtquick_canvaspixelarray:
+QtQuick CanvasPixelArray
+========================
+
 Provides ordered and indexed access to the components of each pixel in
 image data
 
@@ -8,35 +12,33 @@ image data
 Properties
 ----------
 
--  ****`length </sdk/apps/qml/QtQuick/CanvasPixelArray#length-prop>`__****
-   : int
+-  :ref:`length <sdk_qtquick_canvaspixelarray_length-prop>` : int
 
 Detailed Description
 --------------------
 
-The `CanvasPixelArray </sdk/apps/qml/QtQuick/CanvasPixelArray/>`__
-object provides ordered, indexed access to the color components of each
-pixel of the image data. The
-`CanvasPixelArray </sdk/apps/qml/QtQuick/CanvasPixelArray/>`__ can be
-accessed as normal Javascript array.
+The :ref:`CanvasPixelArray <sdk_qtquick_canvaspixelarray>` object provides
+ordered, indexed access to the color components of each pixel of the
+image data. The :ref:`CanvasPixelArray <sdk_qtquick_canvaspixelarray>` can
+be accessed as normal Javascript array.
 
-**See also**
-`CanvasImageData </sdk/apps/qml/QtQuick/CanvasImageData/>`__ and `W3C 2d
-context standard for
-PixelArray <http://www.w3.org/TR/2dcontext#canvaspixelarray>`__.
+**See also** :ref:`CanvasImageData <sdk_qtquick_canvasimagedata>` and `W3C
+2d context standard for
+PixelArray <http://www.w3.org/TR/2dcontext/#canvaspixelarray>`_ .
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_canvaspixelarray_length-prop:
 
 +--------------------------------------------------------------------------+
 |        \ length : int                                                    |
 +--------------------------------------------------------------------------+
 
-The `CanvasPixelArray </sdk/apps/qml/QtQuick/CanvasPixelArray/>`__
-object represents h×w×4 integers which w and h comes from
-`CanvasImageData </sdk/apps/qml/QtQuick/CanvasImageData/>`__. The length
-attribute of a
-`CanvasPixelArray </sdk/apps/qml/QtQuick/CanvasPixelArray/>`__ object
-must return this h×w×4 number value. This property is read only.
+The :ref:`CanvasPixelArray <sdk_qtquick_canvaspixelarray>` object
+represents h×w×4 integers which w and h comes from
+:ref:`CanvasImageData <sdk_qtquick_canvasimagedata>`. The length attribute
+of a :ref:`CanvasPixelArray <sdk_qtquick_canvaspixelarray>` object must
+return this h×w×4 number value. This property is read only.
 
 | 

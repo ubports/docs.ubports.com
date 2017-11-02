@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_qt_sensors_-_maze_qml_example:
+QtSensors Qt Sensors - Maze QML Example
+=======================================
+
 
 
 |image0|
@@ -6,8 +10,8 @@
    :name: maze-in-qml
 
 To write a QML application that will use the
-`TiltSensor </sdk/apps/qml/QtSensors/TiltSensor/>`__ QML sensors type
-you need to do the following steps:
+:ref:`TiltSensor <sdk_qtsensors_tiltsensor>` QML sensors type you need to
+do the following steps:
 
 Import the QtSensors 5.x declarative plugin:
 
@@ -17,9 +21,8 @@ Import the QtSensors 5.x declarative plugin:
 
 Add the Sensor QML types into your qml file.
 
-In this example we use the
-`TiltSensor </sdk/apps/qml/QtSensors/TiltSensor/>`__ with values based
-in degrees and an accuracy of 5 degree:
+In this example we use the :ref:`TiltSensor <sdk_qtsensors_tiltsensor>`
+with values based in degrees and an accuracy of 5 degree:
 
 .. code:: qml
 

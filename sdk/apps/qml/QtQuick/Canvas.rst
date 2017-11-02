@@ -1,3 +1,7 @@
+.. _sdk_qtquick_canvas:
+QtQuick Canvas
+==============
+
 Provides a 2D canvas item enabling drawing via JavaScript
 
 +--------------------------------------+--------------------------------------+
@@ -5,66 +9,59 @@ Provides a 2D canvas item enabling drawing via JavaScript
 +--------------------------------------+--------------------------------------+
 | Since:                               | Qt 5.0                               |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Item </sdk/apps/qml/QtQuick/Item/>` |
-|                                      | __                                   |
+| Inherits:                            | :ref:`Item <sdk_qtquick_item>`       |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`available </sdk/apps/qml/QtQuick/Canvas#available-prop>`__**** :
-   bool
--  ****`canvasSize </sdk/apps/qml/QtQuick/Canvas#canvasSize-prop>`__****
-   : size
--  ****`canvasWindow </sdk/apps/qml/QtQuick/Canvas#canvasWindow-prop>`__****
-   : rect
--  ****`context </sdk/apps/qml/QtQuick/Canvas#context-prop>`__**** :
-   object
--  ****`contextType </sdk/apps/qml/QtQuick/Canvas#contextType-prop>`__****
-   : string
--  ****`renderStrategy </sdk/apps/qml/QtQuick/Canvas#renderStrategy-prop>`__****
-   : enumeration
--  ****`renderTarget </sdk/apps/qml/QtQuick/Canvas#renderTarget-prop>`__****
-   : enumeration
--  ****`tileSize </sdk/apps/qml/QtQuick/Canvas#tileSize-prop>`__**** :
-   size
+-  :ref:`available <sdk_qtquick_canvas_available-prop>` : bool
+-  :ref:`canvasSize <sdk_qtquick_canvas_canvasSize-prop>` : size
+-  :ref:`canvasWindow <sdk_qtquick_canvas_canvasWindow-prop>` :
+   rect
+-  :ref:`context <sdk_qtquick_canvas_context-prop>` : object
+-  :ref:`contextType <sdk_qtquick_canvas_contextType-prop>` :
+   string
+-  :ref:`renderStrategy <sdk_qtquick_canvas_renderStrategy-prop>` :
+   enumeration
+-  :ref:`renderTarget <sdk_qtquick_canvas_renderTarget-prop>` :
+   enumeration
+-  :ref:`tileSize <sdk_qtquick_canvas_tileSize-prop>` : size
 
 Signals
 -------
 
--  ****`imageLoaded </sdk/apps/qml/QtQuick/Canvas#imageLoaded-signal>`__****\ ()
--  ****`paint </sdk/apps/qml/QtQuick/Canvas#paint-signal>`__****\ (rect
-   *region*)
--  ****`painted </sdk/apps/qml/QtQuick/Canvas#painted-signal>`__****\ ()
+-  :ref:`imageLoaded <sdk_qtquick_canvas_imageLoaded-signal>`\ ()
+-  :ref:`paint <sdk_qtquick_canvas_paint-signal>`\ (rect *region*)
+-  :ref:`painted <sdk_qtquick_canvas_painted-signal>`\ ()
 
 Methods
 -------
 
--  ****`cancelRequestAnimationFrame </sdk/apps/qml/QtQuick/Canvas#cancelRequestAnimationFrame-method>`__****\ (long
+-  :ref:`cancelRequestAnimationFrame <sdk_qtquick_canvas_cancelRequestAnimationFrame-method>`\ (long
    *handle*)
 -  object
-   ****`getContext </sdk/apps/qml/QtQuick/Canvas#getContext-method>`__****\ (string
+   **:ref:`getContext <sdk_qtquick_canvas#getContext-method>`**\ (string
    *contextId*, ... *args*)
--  ****`isImageError </sdk/apps/qml/QtQuick/Canvas#isImageError-method>`__****\ (url
+-  :ref:`isImageError <sdk_qtquick_canvas_isImageError-method>`\ (url
    *image*)
--  ****`isImageLoaded </sdk/apps/qml/QtQuick/Canvas#isImageLoaded-method>`__****\ (url
+-  :ref:`isImageLoaded <sdk_qtquick_canvas_isImageLoaded-method>`\ (url
    *image*)
--  ****`isImageLoading </sdk/apps/qml/QtQuick/Canvas#isImageLoading-method>`__****\ (url
+-  :ref:`isImageLoading <sdk_qtquick_canvas_isImageLoading-method>`\ (url
    *image*)
--  ****`loadImage </sdk/apps/qml/QtQuick/Canvas#loadImage-method>`__****\ (url
+-  :ref:`loadImage <sdk_qtquick_canvas_loadImage-method>`\ (url
    *image*)
--  ****`markDirty </sdk/apps/qml/QtQuick/Canvas#markDirty-method>`__****\ (rect
+-  :ref:`markDirty <sdk_qtquick_canvas_markDirty-method>`\ (rect
    *area*)
 -  long
-   ****`requestAnimationFrame </sdk/apps/qml/QtQuick/Canvas#requestAnimationFrame-method>`__****\ (callback)
--  ****`requestPaint </sdk/apps/qml/QtQuick/Canvas#requestPaint-method>`__****\ ()
--  bool
-   ****`save </sdk/apps/qml/QtQuick/Canvas#save-method>`__****\ (string
+   **:ref:`requestAnimationFrame <sdk_qtquick_canvas#requestAnimationFrame-method>`**\ (callback)
+-  :ref:`requestPaint <sdk_qtquick_canvas_requestPaint-method>`\ ()
+-  bool :ref:`save <sdk_qtquick_canvas_save-method>`\ (string
    *filename*)
 -  string
-   ****`toDataURL </sdk/apps/qml/QtQuick/Canvas#toDataURL-method>`__****\ (string
+   **:ref:`toDataURL <sdk_qtquick_canvas#toDataURL-method>`**\ (string
    *mimeType*)
--  ****`unloadImage </sdk/apps/qml/QtQuick/Canvas#unloadImage-method>`__****\ (url
+-  :ref:`unloadImage <sdk_qtquick_canvas_unloadImage-method>`\ (url
    *image*)
 
 Detailed Description
@@ -112,17 +109,16 @@ graphics memory when rendering strategy is anything other than
 Canvas.Cooperative.
 
 The default render target is Canvas.Image and the default
-`renderStrategy </sdk/apps/qml/QtQuick/Canvas#renderStrategy-prop>`__ is
+:ref:`renderStrategy <sdk_qtquick_canvas#renderStrategy-prop>` is
 Canvas.Immediate.
 
 Tiled Canvas
 ------------
 
 The Canvas item supports tiled rendering by setting
-`canvasSize </sdk/apps/qml/QtQuick/Canvas#canvasSize-prop>`__,
-`tileSize </sdk/apps/qml/QtQuick/Canvas#tileSize-prop>`__ and
-`canvasWindow </sdk/apps/qml/QtQuick/Canvas#canvasWindow-prop>`__
-properties.
+:ref:`canvasSize <sdk_qtquick_canvas#canvasSize-prop>`,
+:ref:`tileSize <sdk_qtquick_canvas#tileSize-prop>` and
+:ref:`canvasWindow <sdk_qtquick_canvas#canvasWindow-prop>` properties.
 
 Tiling allows efficient display of a very large virtual canvas via a
 smaller canvas window. The actual memory consumption is in relation to
@@ -142,7 +138,7 @@ target should be chosen. The *Canvas.FramebufferObject* render target
 requires the pixel data to be exchanged between the system memory and
 the graphic card, which is significantly more expensive. Rendering may
 also be synchronized with the V-sync signal (to avoid `screen
-tearing <http://en.wikipedia.org/wiki/Screen_tearing>`__) which will
+tearing <http://en.wikipedia.org/wiki/Screen_tearing>`_ ) which will
 further impact pixel operations with ``Canvas.FrambufferObject`` render
 target.
 
@@ -155,28 +151,28 @@ applications need to be modified to run in the Canvas item:
 -  Replace all DOM API calls with QML property bindings or Canvas item
    methods.
 -  Replace all HTML event handlers with the
-   `MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ item.
+   :ref:`MouseArea <sdk_qtquick_mousearea>` item.
 -  Change setInterval/setTimeout function calls with the Timer item or
    the use of
-   `requestAnimationFrame() </sdk/apps/qml/QtQuick/Canvas#requestAnimationFrame-method>`__.
+   :ref:`requestAnimationFrame() <sdk_qtquick_canvas#requestAnimationFrame-method>`.
 -  Place painting code into the ``onPaint`` handler and trigger painting
-   by calling the
-   `markDirty() </sdk/apps/qml/QtQuick/Canvas#markDirty-method>`__ or
-   `requestPaint() </sdk/apps/qml/QtQuick/Canvas#requestPaint-method>`__
+   by calling the :ref:`markDirty() <sdk_qtquick_canvas#markDirty-method>`
+   or :ref:`requestPaint() <sdk_qtquick_canvas#requestPaint-method>`
    methods.
 -  To draw images, load them by calling the Canvas's
-   `loadImage() </sdk/apps/qml/QtQuick/Canvas#loadImage-method>`__
-   method and then request to paint them in the ``onImageLoaded``
-   handler.
+   :ref:`loadImage() <sdk_qtquick_canvas#loadImage-method>` method and then
+   request to paint them in the ``onImageLoaded`` handler.
 
 Starting Qt 5.4, the Canvas is a texture provider and can be used
 directly in ShaderEffects and other classes that consume texture
 providers.
 
-**See also** `Context2D </sdk/apps/qml/QtQuick/Context2D/>`__.
+**See also** :ref:`Context2D <sdk_qtquick_context2d>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_canvas_available-prop:
 
 +--------------------------------------------------------------------------+
 |        \ available : bool                                                |
@@ -186,6 +182,8 @@ Indicates when Canvas is able to provide a drawing context to operate
 on.
 
 | 
+
+.. _sdk_qtquick_canvas_canvasSize-prop:
 
 +--------------------------------------------------------------------------+
 |        \ canvasSize : size                                               |
@@ -197,16 +195,18 @@ By default, the canvas size is the same size as the current canvas item
 size.
 
 By setting the canvasSize,
-`tileSize </sdk/apps/qml/QtQuick/Canvas#tileSize-prop>`__ and
-`canvasWindow </sdk/apps/qml/QtQuick/Canvas#canvasWindow-prop>`__, the
-Canvas item can act as a large virtual canvas with many separately
-rendered tile rectangles. Only those tiles within the current canvas
-window are painted by the Canvas render engine.
+:ref:`tileSize <sdk_qtquick_canvas#tileSize-prop>` and
+:ref:`canvasWindow <sdk_qtquick_canvas#canvasWindow-prop>`, the Canvas item
+can act as a large virtual canvas with many separately rendered tile
+rectangles. Only those tiles within the current canvas window are
+painted by the Canvas render engine.
 
-**See also** `tileSize </sdk/apps/qml/QtQuick/Canvas#tileSize-prop>`__
-and `canvasWindow </sdk/apps/qml/QtQuick/Canvas#canvasWindow-prop>`__.
+**See also** :ref:`tileSize <sdk_qtquick_canvas#tileSize-prop>` and
+:ref:`canvasWindow <sdk_qtquick_canvas#canvasWindow-prop>`.
 
 | 
+
+.. _sdk_qtquick_canvas_canvasWindow-prop:
 
 +--------------------------------------------------------------------------+
 |        \ canvasWindow : rect                                             |
@@ -217,15 +217,16 @@ Holds the current canvas visible window.
 By default the canvasWindow size is the same as the Canvas item size
 with the top-left point as (0, 0).
 
-If the `canvasSize </sdk/apps/qml/QtQuick/Canvas#canvasSize-prop>`__ is
-different to the Canvas item size, the Canvas item can display different
-visible areas by changing the canvas windowSize and/or position.
+If the :ref:`canvasSize <sdk_qtquick_canvas#canvasSize-prop>` is different
+to the Canvas item size, the Canvas item can display different visible
+areas by changing the canvas windowSize and/or position.
 
-**See also**
-`canvasSize </sdk/apps/qml/QtQuick/Canvas#canvasSize-prop>`__ and
-`tileSize </sdk/apps/qml/QtQuick/Canvas#tileSize-prop>`__.
+**See also** :ref:`canvasSize <sdk_qtquick_canvas#canvasSize-prop>` and
+:ref:`tileSize <sdk_qtquick_canvas#tileSize-prop>`.
 
 | 
+
+.. _sdk_qtquick_canvas_context-prop:
 
 +--------------------------------------------------------------------------+
 |        \ context : object                                                |
@@ -234,12 +235,14 @@ visible areas by changing the canvas windowSize and/or position.
 Holds the active drawing context.
 
 If the canvas is ready and there has been a successful call to
-`getContext() </sdk/apps/qml/QtQuick/Canvas#getContext-method>`__ or the
-`contextType </sdk/apps/qml/QtQuick/Canvas#contextType-prop>`__ property
-has been set with a supported context type, this property will contain
-the current drawing context, otherwise null.
+:ref:`getContext() <sdk_qtquick_canvas#getContext-method>` or the
+:ref:`contextType <sdk_qtquick_canvas#contextType-prop>` property has been
+set with a supported context type, this property will contain the
+current drawing context, otherwise null.
 
 | 
+
+.. _sdk_qtquick_canvas_contextType-prop:
 
 +--------------------------------------------------------------------------+
 |        \ contextType : string                                            |
@@ -253,14 +256,15 @@ If set explicitly the canvas will attempt to create a context of the
 named type after becoming available.
 
 The type name is the same as used in the
-`getContext() </sdk/apps/qml/QtQuick/Canvas#getContext-method>`__ call,
-for the 2d canvas the value will be "2d".
+:ref:`getContext() <sdk_qtquick_canvas#getContext-method>` call, for the 2d
+canvas the value will be "2d".
 
-**See also**
-`getContext() </sdk/apps/qml/QtQuick/Canvas#getContext-method>`__ and
-`available </sdk/apps/qml/QtQuick/Canvas#available-prop>`__.
+**See also** :ref:`getContext() <sdk_qtquick_canvas#getContext-method>` and
+:ref:`available <sdk_qtquick_canvas#available-prop>`.
 
 | 
+
+.. _sdk_qtquick_canvas_renderStrategy-prop:
 
 +--------------------------------------------------------------------------+
 |        \ renderStrategy : enumeration                                    |
@@ -276,12 +280,12 @@ Holds the current canvas rendering strategy.
    applications global render thread.
 
 This hint is supplied along with
-`renderTarget </sdk/apps/qml/QtQuick/Canvas#renderTarget-prop>`__ to the
-graphics context to determine the method of rendering. A renderStrategy,
-`renderTarget </sdk/apps/qml/QtQuick/Canvas#renderTarget-prop>`__ or a
-combination may not be supported by a graphics context, in which case
-the context will choose appropriate options and Canvas will signal the
-change to the properties.
+:ref:`renderTarget <sdk_qtquick_canvas#renderTarget-prop>` to the graphics
+context to determine the method of rendering. A renderStrategy,
+:ref:`renderTarget <sdk_qtquick_canvas#renderTarget-prop>` or a combination
+may not be supported by a graphics context, in which case the context
+will choose appropriate options and Canvas will signal the change to the
+properties.
 
 Configuration or runtime tests may cause the QML Scene Graph to render
 in the GUI thread. Selecting ``Canvas.Cooperative``, does not guarantee
@@ -289,10 +293,11 @@ rendering will occur on a thread separate from the GUI thread.
 
 The default value is ``Canvas.Immediate``.
 
-**See also**
-`renderTarget </sdk/apps/qml/QtQuick/Canvas#renderTarget-prop>`__.
+**See also** :ref:`renderTarget <sdk_qtquick_canvas#renderTarget-prop>`.
 
 | 
+
+.. _sdk_qtquick_canvas_renderTarget-prop:
 
 +--------------------------------------------------------------------------+
 |        \ renderTarget : enumeration                                      |
@@ -304,9 +309,9 @@ Holds the current canvas render target.
 -  Canvas.FramebufferObject - render to an OpenGL frame buffer
 
 This hint is supplied along with
-`renderStrategy </sdk/apps/qml/QtQuick/Canvas#renderStrategy-prop>`__ to
-the graphics context to determine the method of rendering. A
-`renderStrategy </sdk/apps/qml/QtQuick/Canvas#renderStrategy-prop>`__,
+:ref:`renderStrategy <sdk_qtquick_canvas#renderStrategy-prop>` to the
+graphics context to determine the method of rendering. A
+:ref:`renderStrategy <sdk_qtquick_canvas#renderStrategy-prop>`,
 renderTarget or a combination may not be supported by a graphics
 context, in which case the context will choose appropriate options and
 Canvas will signal the change to the properties.
@@ -315,6 +320,8 @@ The default render target is ``Canvas.Image``.
 
 | 
 
+.. _sdk_qtquick_canvas_tileSize-prop:
+
 +--------------------------------------------------------------------------+
 |        \ tileSize : size                                                 |
 +--------------------------------------------------------------------------+
@@ -322,26 +329,26 @@ The default render target is ``Canvas.Image``.
 Holds the canvas rendering tile size.
 
 The Canvas item enters tiled mode by setting
-`canvasSize </sdk/apps/qml/QtQuick/Canvas#canvasSize-prop>`__, tileSize
-and the
-`canvasWindow </sdk/apps/qml/QtQuick/Canvas#canvasWindow-prop>`__. This
-can improve rendering performance by rendering and caching tiles instead
-of rendering the whole canvas every time.
+:ref:`canvasSize <sdk_qtquick_canvas#canvasSize-prop>`, tileSize and the
+:ref:`canvasWindow <sdk_qtquick_canvas#canvasWindow-prop>`. This can
+improve rendering performance by rendering and caching tiles instead of
+rendering the whole canvas every time.
 
 Memory will be consumed only by those tiles within the current visible
 region.
 
 By default the tileSize is the same as the
-`canvasSize </sdk/apps/qml/QtQuick/Canvas#canvasSize-prop>`__.
+:ref:`canvasSize <sdk_qtquick_canvas#canvasSize-prop>`.
 
-**See also**
-`canvasSize </sdk/apps/qml/QtQuick/Canvas#canvasSize-prop>`__ and
-`canvasWindow </sdk/apps/qml/QtQuick/Canvas#canvasWindow-prop>`__.
+**See also** :ref:`canvasSize <sdk_qtquick_canvas#canvasSize-prop>` and
+:ref:`canvasWindow <sdk_qtquick_canvas#canvasWindow-prop>`.
 
 | 
 
 Signal Documentation
 --------------------
+
+.. _sdk_qtquick_canvas_imageLoaded()-prop:
 
 +--------------------------------------------------------------------------+
 |        \ imageLoaded()                                                   |
@@ -351,10 +358,11 @@ This signal is emitted when an image has been loaded.
 
 The corresponding handler is ``onImageLoaded``.
 
-**See also**
-`loadImage() </sdk/apps/qml/QtQuick/Canvas#loadImage-method>`__.
+**See also** :ref:`loadImage() <sdk_qtquick_canvas#loadImage-method>`.
 
 | 
+
+.. _sdk_qtquick_canvas_paint(rect *region*)-prop:
 
 +--------------------------------------------------------------------------+
 |        \ paint(rect *region*)                                            |
@@ -364,12 +372,14 @@ This signal is emitted when the *region* needs to be rendered. If a
 context is active it can be referenced from the context property.
 
 This signal can be triggered by markdirty(),
-`requestPaint() </sdk/apps/qml/QtQuick/Canvas#requestPaint-method>`__ or
-by changing the current canvas window.
+:ref:`requestPaint() <sdk_qtquick_canvas#requestPaint-method>` or by
+changing the current canvas window.
 
 The corresponding handler is ``onPaint``.
 
 | 
+
+.. _sdk_qtquick_canvas_painted()-prop:
 
 +--------------------------------------------------------------------------+
 |        \ painted()                                                       |
@@ -385,6 +395,8 @@ The corresponding handler is ``onPainted``.
 Method Documentation
 --------------------
 
+.. _sdk_qtquick_canvas_cancelRequestAnimationFrame-method:
+
 +--------------------------------------------------------------------------+
 |        \ cancelRequestAnimationFrame(long *handle*)                      |
 +--------------------------------------------------------------------------+
@@ -392,6 +404,8 @@ Method Documentation
 This function will cancel the animation callback referenced by *handle*.
 
 | 
+
+.. _sdk_qtquick_canvas_object getContext-method:
 
 +--------------------------------------------------------------------------+
 |        \ object getContext(string *contextId*, ... *args*)               |
@@ -412,16 +426,19 @@ Canvas only supports a 2d context.
 
 | 
 
+.. _sdk_qtquick_canvas_isImageError-method:
+
 +--------------------------------------------------------------------------+
 |        \ isImageError(url *image*)                                       |
 +--------------------------------------------------------------------------+
 
 Returns true if the *image* failed to load.
 
-**See also**
-`loadImage() </sdk/apps/qml/QtQuick/Canvas#loadImage-method>`__.
+**See also** :ref:`loadImage() <sdk_qtquick_canvas#loadImage-method>`.
 
 | 
+
+.. _sdk_qtquick_canvas_isImageLoaded-method:
 
 +--------------------------------------------------------------------------+
 |        \ isImageLoaded(url *image*)                                      |
@@ -429,10 +446,11 @@ Returns true if the *image* failed to load.
 
 Returns true if the *image* is successfully loaded and ready to use.
 
-**See also**
-`loadImage() </sdk/apps/qml/QtQuick/Canvas#loadImage-method>`__.
+**See also** :ref:`loadImage() <sdk_qtquick_canvas#loadImage-method>`.
 
 | 
+
+.. _sdk_qtquick_canvas_isImageLoading-method:
 
 +--------------------------------------------------------------------------+
 |        \ isImageLoading(url *image*)                                     |
@@ -440,10 +458,11 @@ Returns true if the *image* is successfully loaded and ready to use.
 
 Returns true if the *image* is currently loading.
 
-**See also**
-`loadImage() </sdk/apps/qml/QtQuick/Canvas#loadImage-method>`__.
+**See also** :ref:`loadImage() <sdk_qtquick_canvas#loadImage-method>`.
 
 | 
+
+.. _sdk_qtquick_canvas_loadImage-method:
 
 +--------------------------------------------------------------------------+
 |        \ loadImage(url *image*)                                          |
@@ -452,22 +471,21 @@ Returns true if the *image* is currently loading.
 Loads the given ``image`` asynchronously.
 
 When the image is ready,
-`imageLoaded </sdk/apps/qml/QtQuick/Canvas#imageLoaded-signal>`__ will
-be emitted. The loaded image can be unloaded by the
-`unloadImage() </sdk/apps/qml/QtQuick/Canvas#unloadImage-method>`__
-method.
+:ref:`imageLoaded <sdk_qtquick_canvas#imageLoaded-signal>` will be emitted.
+The loaded image can be unloaded by the
+:ref:`unloadImage() <sdk_qtquick_canvas#unloadImage-method>` method.
 
 Note: Only loaded images can be painted on the Canvas item.
 
-**See also**
-`unloadImage </sdk/apps/qml/QtQuick/Canvas#unloadImage-method>`__,
-`imageLoaded </sdk/apps/qml/QtQuick/Canvas#imageLoaded-signal>`__,
-`isImageLoaded() </sdk/apps/qml/QtQuick/Canvas#isImageLoaded-method>`__,
-`Context2D::createImageData() </sdk/apps/qml/QtQuick/Context2D#createImageData-method>`__,
-and
-`Context2D::drawImage() </sdk/apps/qml/QtQuick/Context2D#drawImage-method>`__.
+**See also** :ref:`unloadImage <sdk_qtquick_canvas#unloadImage-method>`,
+:ref:`imageLoaded <sdk_qtquick_canvas#imageLoaded-signal>`,
+:ref:`isImageLoaded() <sdk_qtquick_canvas#isImageLoaded-method>`,
+:ref:`Context2D::createImageData() <sdk_qtquick_context2d#createImageData-method>`,
+and :ref:`Context2D::drawImage() <sdk_qtquick_context2d#drawImage-method>`.
 
 | 
+
+.. _sdk_qtquick_canvas_markDirty-method:
 
 +--------------------------------------------------------------------------+
 |        \ markDirty(rect *area*)                                          |
@@ -476,10 +494,12 @@ and
 Mark the given *area* as dirty, so that when this area is visible the
 canvas renderer will redraw it. This will trigger the ``paint`` signal.
 
-**See also** `paint </sdk/apps/qml/QtQuick/Canvas#paint-signal>`__ and
-`requestPaint() </sdk/apps/qml/QtQuick/Canvas#requestPaint-method>`__.
+**See also** :ref:`paint <sdk_qtquick_canvas#paint-signal>` and
+:ref:`requestPaint() <sdk_qtquick_canvas#requestPaint-method>`.
 
 | 
+
+.. _sdk_qtquick_canvas_long requestAnimationFrame-method:
 
 +--------------------------------------------------------------------------+
 |        \ long requestAnimationFrame(callback)                            |
@@ -490,16 +510,19 @@ Quick scene.
 
 | 
 
+.. _sdk_qtquick_canvas_requestPaint-method:
+
 +--------------------------------------------------------------------------+
 |        \ requestPaint()                                                  |
 +--------------------------------------------------------------------------+
 
 Request the entire visible region be re-drawn.
 
-**See also**
-`markDirty() </sdk/apps/qml/QtQuick/Canvas#markDirty-method>`__.
+**See also** :ref:`markDirty() <sdk_qtquick_canvas#markDirty-method>`.
 
 | 
+
+.. _sdk_qtquick_canvas_bool save-method:
 
 +--------------------------------------------------------------------------+
 |        \ bool save(string *filename*)                                    |
@@ -511,12 +534,13 @@ image format is automatically decided by the *filename*'s suffix.
 Note: calling this method will force painting the whole canvas, not just
 the current canvas visible window.
 
-**See also**
-`canvasWindow </sdk/apps/qml/QtQuick/Canvas#canvasWindow-prop>`__,
-`canvasSize </sdk/apps/qml/QtQuick/Canvas#canvasSize-prop>`__, and
-`toDataURL() </sdk/apps/qml/QtQuick/Canvas#toDataURL-method>`__.
+**See also** :ref:`canvasWindow <sdk_qtquick_canvas#canvasWindow-prop>`,
+:ref:`canvasSize <sdk_qtquick_canvas#canvasSize-prop>`, and
+:ref:`toDataURL() <sdk_qtquick_canvas#toDataURL-method>`.
 
 | 
+
+.. _sdk_qtquick_canvas_string toDataURL-method:
 
 +--------------------------------------------------------------------------+
 |        \ string toDataURL(string *mimeType*)                             |
@@ -526,9 +550,11 @@ Returns a data URL for the image in the canvas.
 
 The default *mimeType* is "image/png".
 
-**See also** `save() </sdk/apps/qml/QtQuick/Canvas#save-method>`__.
+**See also** :ref:`save() <sdk_qtquick_canvas#save-method>`.
 
 | 
+
+.. _sdk_qtquick_canvas_unloadImage-method:
 
 +--------------------------------------------------------------------------+
 |        \ unloadImage(url *image*)                                        |
@@ -539,12 +565,10 @@ Unloads the ``image``.
 Once an image is unloaded it cannot be painted by the canvas context
 unless it is loaded again.
 
-**See also**
-`loadImage() </sdk/apps/qml/QtQuick/Canvas#loadImage-method>`__,
-`imageLoaded </sdk/apps/qml/QtQuick/Canvas#imageLoaded-signal>`__,
-`isImageLoaded() </sdk/apps/qml/QtQuick/Canvas#isImageLoaded-method>`__,
-`Context2D::createImageData() </sdk/apps/qml/QtQuick/Context2D#createImageData-method>`__,
-and
-`Context2D::drawImage </sdk/apps/qml/QtQuick/Context2D#drawImage-method>`__.
+**See also** :ref:`loadImage() <sdk_qtquick_canvas#loadImage-method>`,
+:ref:`imageLoaded <sdk_qtquick_canvas#imageLoaded-signal>`,
+:ref:`isImageLoaded() <sdk_qtquick_canvas#isImageLoaded-method>`,
+:ref:`Context2D::createImageData() <sdk_qtquick_context2d#createImageData-method>`,
+and :ref:`Context2D::drawImage <sdk_qtquick_context2d#drawImage-method>`.
 
 | 

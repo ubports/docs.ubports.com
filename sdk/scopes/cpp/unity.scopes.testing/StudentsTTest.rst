@@ -1,6 +1,10 @@
+.. _sdk_unity_scopes_testing_studentsttest:
+unity.scopes.testing StudentsTTest
+==================================
+
 Implements different variants of the Student's T-test (see
 http://en.wikipedia.org/wiki/Student's_t-test)
-`More... </sdk/scopes/cpp/unity.scopes.testing/StudentsTTest#details>`__
+:ref:`More... <sdk_unity_scopes_testing_studentsttest#details>`
 
 ``#include <unity/scopes/testing/Statistics.h>``
 
@@ -50,20 +54,20 @@ Detailed Description
 Implements different variants of the Student's T-test (see
 http://en.wikipedia.org/wiki/Student's_t-test)
 
-`unity::scopes::testing::OutOfProcessBenchmark </sdk/scopes/cpp/unity.scopes.testing/OutOfProcessBenchmark/>`__
+:ref:`unity::scopes::testing::OutOfProcessBenchmark <sdk_unity_scopes_testing_outofprocessbenchmark>`
 benchmark;
 
-`unity::scopes::testing::Result </sdk/scopes/cpp/unity.scopes.testing/Result/>`__
+:ref:`unity::scopes::testing::Result <sdk_unity_scopes_testing_result>`
 search\_result;
 
-`unity::scopes::ActionMetadata </sdk/scopes/cpp/unity.scopes.ActionMetadata/>`__
+`unity::scopes::ActionMetadata </sdk/scopes/cpp/unity.scopes.ActionMetadata/>`_ 
 meta\_data{default\_locale, default\_form\_factor};
 
 static const std::size\_t sample\_size{10};
 
 static const std::chrono::seconds per\_trial\_timeout{1};
 
-`unity::scopes::testing::Benchmark::PreviewConfiguration </sdk/scopes/cpp/unity.scopes.testing/Benchmark.PreviewConfiguration/>`__
+`unity::scopes::testing::Benchmark::PreviewConfiguration </sdk/scopes/cpp/unity.scopes.testing/Benchmark.PreviewConfiguration/>`_ 
 config
 
 {
@@ -82,11 +86,11 @@ per\_trial\_timeout
 };
 
 auto result =
-benchmark.\ `for\_preview </sdk/scopes/cpp/unity.scopes.testing/OutOfProcessBenchmark#a397be9ae5eaca3d6ca96fa2957498c86>`__\ (scope,
+benchmark.\ :ref:`for\_preview <sdk_unity_scopes_testing_outofprocessbenchmark#a397be9ae5eaca3d6ca96fa2957498c86>`\ (scope,
 config);
 
 auto test\_result =
-`unity::scopes::testing::StudentsTTest </sdk/scopes/cpp/unity.scopes.testing/StudentsTTest/>`__\ ().`one\_sample </sdk/scopes/cpp/unity.scopes.testing/StudentsTTest#aaf584b159766a0a0e605e8365f87107f>`__\ (
+:ref:`unity::scopes::testing::StudentsTTest <sdk_unity_scopes_testing_studentsttest>`\ ().`one\_sample <sdk_unity_scopes_testing_studentsttest#aaf584b159766a0a0e605e8365f87107f>`\ (
 
 reference\_preview\_performance,
 
@@ -109,25 +113,23 @@ Member Function Documentation
 
 +--------------------+--------------------+--------------------+--------------------+
 | unity::scopes::tes | (                  | const              | *sample*,          |
-| ting::StudentsTTes |                    | `Sample </sdk/scop |                    |
-| t::Result          |                    | es/cpp/unity.scope |                    |
-| unity::scopes::tes |                    | s.testing/Sample/> |                    |
-| ting::StudentsTTes |                    | `__                |                    |
-| t::one\_sample     |                    | &                  |                    |
+| ting::StudentsTTes |                    | :ref:`Sample <sdk_unity |                    |
+| t::Result          |                    | _scopes_testing_sa |                    |
+| unity::scopes::tes |                    | mple>`_            |                    |
+| ting::StudentsTTes |                    | &                  |                    |
+| t::one\_sample     |                    |                    |                    |
 +--------------------+--------------------+--------------------+--------------------+
 |                    |                    | `Sample::ValueType | *mean*,            |
-|                    |                    |  </sdk/scopes/cpp/ |                    |
-|                    |                    | unity.scopes.testi |                    |
-|                    |                    | ng/Sample#a9e02cfa |                    |
-|                    |                    | 261b23b40c9da59cda |                    |
-|                    |                    | 6ab0dc8>`__        |                    |
+|                    |                    |  <sdk_unity_scopes |                    |
+|                    |                    | _testing_sample#a9 |                    |
+|                    |                    | e02cfa261b23b40c9d |                    |
+|                    |                    | a59cda6ab0dc8>`_   |                    |
 +--------------------+--------------------+--------------------+--------------------+
 |                    |                    | `Sample::ValueType | *std\_dev*         |
-|                    |                    |  </sdk/scopes/cpp/ |                    |
-|                    |                    | unity.scopes.testi |                    |
-|                    |                    | ng/Sample#a9e02cfa |                    |
-|                    |                    | 261b23b40c9da59cda |                    |
-|                    |                    | 6ab0dc8>`__        |                    |
+|                    |                    |  <sdk_unity_scopes |                    |
+|                    |                    | _testing_sample#a9 |                    |
+|                    |                    | e02cfa261b23b40c9d |                    |
+|                    |                    | a59cda6ab0dc8>`_   |                    |
 +--------------------+--------------------+--------------------+--------------------+
 |                    | )                  |                    |                    |
 +--------------------+--------------------+--------------------+--------------------+
@@ -136,30 +138,29 @@ one\_sample calculates the Student's T test for one sample and a known
 mean and std. dev..
 
 Parameters
-    +------------+------------------------------------------------------------------------+
-    | sample     | `Sample </sdk/scopes/cpp/unity.scopes.testing/Sample/>`__ of values.   |
-    +------------+------------------------------------------------------------------------+
-    | mean       | The known mean of the underlying distribution                          |
-    +------------+------------------------------------------------------------------------+
-    | std\_dev   | The known std. dev. of the underlying distribution                     |
-    +------------+------------------------------------------------------------------------+
+    +------------+-----------------------------------------------------------+
+    | sample     | :ref:`Sample <sdk_unity_scopes_testing_sample>` of values.   |
+    +------------+-----------------------------------------------------------+
+    | mean       | The known mean of the underlying distribution             |
+    +------------+-----------------------------------------------------------+
+    | std\_dev   | The known std. dev. of the underlying distribution        |
+    +------------+-----------------------------------------------------------+
 
 Returns
 
 +--------------------+--------------------+--------------------+--------------------+
 | unity::scopes::tes | (                  | const              | *sample1*,         |
-| ting::StudentsTTes |                    | `Sample </sdk/scop |                    |
-| t::Result          |                    | es/cpp/unity.scope |                    |
-| unity::scopes::tes |                    | s.testing/Sample/> |                    |
-| ting::StudentsTTes |                    | `__                |                    |
-| t::two\_independen |                    | &                  |                    |
+| ting::StudentsTTes |                    | :ref:`Sample <sdk_unity |                    |
+| t::Result          |                    | _scopes_testing_sa |                    |
+| unity::scopes::tes |                    | mple>`_            |                    |
+| ting::StudentsTTes |                    | &                  |                    |
+| t::two\_independen |                    |                    |                    |
 | t\_samples         |                    |                    |                    |
 +--------------------+--------------------+--------------------+--------------------+
 |                    |                    | const              | *sample2*          |
-|                    |                    | `Sample </sdk/scop |                    |
-|                    |                    | es/cpp/unity.scope |                    |
-|                    |                    | s.testing/Sample/> |                    |
-|                    |                    | `__                |                    |
+|                    |                    | :ref:`Sample <sdk_unity |                    |
+|                    |                    | _scopes_testing_sa |                    |
+|                    |                    | mple>`_            |                    |
 |                    |                    | &                  |                    |
 +--------------------+--------------------+--------------------+--------------------+
 |                    | )                  |                    |                    |

@@ -1,3 +1,7 @@
+.. _sdk_qtorganizer_detail:
+QtOrganizer Detail
+==================
+
 The Detail element represents a single, complete detail about a
 organizer item.
 
@@ -8,24 +12,23 @@ organizer item.
 Properties
 ----------
 
--  ****`type </sdk/apps/qml/QtOrganizer/Detail#type-prop>`__**** :
-   enumeration
+-  :ref:`type <sdk_qtorganizer_detail_type-prop>` : enumeration
 
 Signals
 -------
 
--  ****`onDetailChanged </sdk/apps/qml/QtOrganizer/Detail#onDetailChanged-signal>`__****\ ()
+-  :ref:`onDetailChanged <sdk_qtorganizer_detail_onDetailChanged-signal>`\ ()
 
 Methods
 -------
 
 -  bool
-   ****`removeValue </sdk/apps/qml/QtOrganizer/Detail#removeValue-method>`__****\ (field)
+   **:ref:`removeValue <sdk_qtorganizer_detail#removeValue-method>`**\ (field)
 -  bool
-   ****`setValue </sdk/apps/qml/QtOrganizer/Detail#setValue-method>`__****\ (field,
+   **:ref:`setValue <sdk_qtorganizer_detail#setValue-method>`**\ (field,
    value)
 -  variant
-   ****`value </sdk/apps/qml/QtOrganizer/Detail#value-method>`__****\ (field)
+   **:ref:`value <sdk_qtorganizer_detail#value-method>`**\ (field)
 
 Detailed Description
 --------------------
@@ -34,6 +37,8 @@ Detailed Description
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtorganizer_detail_type-prop:
 
 +--------------------------------------------------------------------------+
 |        \ type : enumeration                                              |
@@ -46,8 +51,8 @@ one of:
 -  Detail.Classification
 -  Detail.Comment
 -  Detail.Description
--  Detail.\ `DisplayLabel </sdk/apps/qml/QtOrganizer/DisplayLabel/>`__
--  Detail.\ `ItemType </sdk/apps/qml/QtOrganizer/ItemType/>`__
+-  Detail.\ :ref:`DisplayLabel <sdk_qtorganizer_displaylabel>`
+-  Detail.\ :ref:`ItemType <sdk_qtorganizer_itemtype>`
 -  Detail.Guid
 -  Detail.Location
 -  Detail.Parent
@@ -57,61 +62,64 @@ one of:
 -  Detail.Timestamp
 -  Detail.Version
 -  Detail.Reminder
--  Detail.\ `AudibleReminder </sdk/apps/qml/QtOrganizer/AudibleReminder/>`__
--  Detail.\ `EmailReminder </sdk/apps/qml/QtOrganizer/EmailReminder/>`__
--  Detail.\ `VisualReminder </sdk/apps/qml/QtOrganizer/VisualReminder/>`__
--  Detail.\ `ExtendedDetail </sdk/apps/qml/QtOrganizer/ExtendedDetail/>`__
--  Detail.\ `EventAttendee </sdk/apps/qml/QtOrganizer/EventAttendee/>`__
--  Detail.\ `EventRsvp </sdk/apps/qml/QtOrganizer/EventRsvp/>`__
--  Detail.\ `EventTime </sdk/apps/qml/QtOrganizer/EventTime/>`__
--  Detail.\ `JournalTime </sdk/apps/qml/QtOrganizer/JournalTime/>`__
--  Detail.\ `TodoTime </sdk/apps/qml/QtOrganizer/TodoTime/>`__
--  Detail.\ `TodoProgress </sdk/apps/qml/QtOrganizer/TodoProgress/>`__
+-  Detail.\ :ref:`AudibleReminder <sdk_qtorganizer_audiblereminder>`
+-  Detail.\ :ref:`EmailReminder <sdk_qtorganizer_emailreminder>`
+-  Detail.\ :ref:`VisualReminder <sdk_qtorganizer_visualreminder>`
+-  Detail.\ :ref:`ExtendedDetail <sdk_qtorganizer_extendeddetail>`
+-  Detail.\ :ref:`EventAttendee <sdk_qtorganizer_eventattendee>`
+-  Detail.\ :ref:`EventRsvp <sdk_qtorganizer_eventrsvp>`
+-  Detail.\ :ref:`EventTime <sdk_qtorganizer_eventtime>`
+-  Detail.\ :ref:`JournalTime <sdk_qtorganizer_journaltime>`
+-  Detail.\ :ref:`TodoTime <sdk_qtorganizer_todotime>`
+-  Detail.\ :ref:`TodoProgress <sdk_qtorganizer_todoprogress>`
 
-**See also**
-`Classification </sdk/apps/qml/QtOrganizer/Classification/>`__,
-`Comment </sdk/apps/qml/QtOrganizer/Comment/>`__,
-`Description </sdk/apps/qml/QtOrganizer/Description/>`__,
-`DisplayLabel </sdk/apps/qml/QtOrganizer/DisplayLabel/>`__,
-`ItemType </sdk/apps/qml/QtOrganizer/ItemType/>`__,
-`Guid </sdk/apps/qml/QtOrganizer/Guid/>`__,
-`Location </sdk/apps/qml/QtOrganizer/Location/>`__,
-`Parent </sdk/apps/qml/QtOrganizer/Parent/>`__,
-`Priority </sdk/apps/qml/QtOrganizer/Priority/>`__,
-`Recurrence </sdk/apps/qml/QtOrganizer/Recurrence/>`__,
-`Tag </sdk/apps/qml/QtOrganizer/Tag/>`__,
-`Timestamp </sdk/apps/qml/QtOrganizer/Timestamp/>`__,
-`Version </sdk/apps/qml/QtOrganizer/Version/>`__,
-`Reminder </sdk/apps/qml/QtOrganizer/Reminder/>`__,
-`AudibleReminder </sdk/apps/qml/QtOrganizer/AudibleReminder/>`__,
-`EmailReminder </sdk/apps/qml/QtOrganizer/EmailReminder/>`__,
-`VisualReminder </sdk/apps/qml/QtOrganizer/VisualReminder/>`__,
-`ExtendedDetail </sdk/apps/qml/QtOrganizer/ExtendedDetail/>`__,
-`EventAttendee </sdk/apps/qml/QtOrganizer/EventAttendee/>`__,
-`EventRsvp </sdk/apps/qml/QtOrganizer/EventRsvp/>`__,
-`EventTime </sdk/apps/qml/QtOrganizer/EventTime/>`__,
-`JournalTime </sdk/apps/qml/QtOrganizer/JournalTime/>`__,
-`TodoTime </sdk/apps/qml/QtOrganizer/TodoTime/>`__, and
-`TodoProgress </sdk/apps/qml/QtOrganizer/TodoProgress/>`__.
+**See also** :ref:`Classification <sdk_qtorganizer_classification>`,
+:ref:`Comment <sdk_qtorganizer_comment>`,
+:ref:`Description <sdk_qtorganizer_description>`,
+:ref:`DisplayLabel <sdk_qtorganizer_displaylabel>`,
+:ref:`ItemType <sdk_qtorganizer_itemtype>`,
+:ref:`Guid <sdk_qtorganizer_guid>`,
+:ref:`Location <sdk_qtorganizer_location>`,
+:ref:`Parent <sdk_qtorganizer_parent>`,
+:ref:`Priority <sdk_qtorganizer_priority>`,
+:ref:`Recurrence <sdk_qtorganizer_recurrence>`,
+:ref:`Tag <sdk_qtorganizer_tag>`,
+:ref:`Timestamp <sdk_qtorganizer_timestamp>`,
+:ref:`Version <sdk_qtorganizer_version>`,
+:ref:`Reminder <sdk_qtorganizer_reminder>`,
+:ref:`AudibleReminder <sdk_qtorganizer_audiblereminder>`,
+:ref:`EmailReminder <sdk_qtorganizer_emailreminder>`,
+:ref:`VisualReminder <sdk_qtorganizer_visualreminder>`,
+:ref:`ExtendedDetail <sdk_qtorganizer_extendeddetail>`,
+:ref:`EventAttendee <sdk_qtorganizer_eventattendee>`,
+:ref:`EventRsvp <sdk_qtorganizer_eventrsvp>`,
+:ref:`EventTime <sdk_qtorganizer_eventtime>`,
+:ref:`JournalTime <sdk_qtorganizer_journaltime>`,
+:ref:`TodoTime <sdk_qtorganizer_todotime>`, and
+:ref:`TodoProgress <sdk_qtorganizer_todoprogress>`.
 
 | 
 
 Signal Documentation
 --------------------
 
+.. _sdk_qtorganizer_detail_onDetailChanged()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ onDetailChanged()                                               |
 +--------------------------------------------------------------------------+
 
 This signal is emitted, when any of the Details's or child element's
-(like `EventTime </sdk/apps/qml/QtOrganizer/EventTime/>`__,
-`DisplayLabel </sdk/apps/qml/QtOrganizer/DisplayLabel/>`__ etc)
-properties have been changed.
+(like :ref:`EventTime <sdk_qtorganizer_eventtime>`,
+:ref:`DisplayLabel <sdk_qtorganizer_displaylabel>` etc) properties have
+been changed.
 
 | 
 
 Method Documentation
 --------------------
+
+.. _sdk_qtorganizer_detail_bool removeValue-method:
 
 +--------------------------------------------------------------------------+
 |        \ bool removeValue(field)                                         |
@@ -122,6 +130,8 @@ true if a value was stored for the given key and the operation
 succeeded, and false otherwise.
 
 | 
+
+.. _sdk_qtorganizer_detail_bool setValue-method:
 
 +--------------------------------------------------------------------------+
 |        \ bool setValue(field, value)                                     |
@@ -135,6 +145,8 @@ value was invalid), otherwise returns false if the key was unable to be
 removed (and the value was invalid).
 
 | 
+
+.. _sdk_qtorganizer_detail_variant value-method:
 
 +--------------------------------------------------------------------------+
 |        \ variant value(field)                                            |

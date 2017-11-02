@@ -1,6 +1,10 @@
+.. _sdk_optionselectorfilter:
+OptionSelectorFilter
+====================
+
 A selection filter that displays a list of choices and allows one or
 more of them to be selected.
-`More... </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter#details>`__
+`More... </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter/#details>`_ 
 
 ``#include <unity/scopes/OptionSelectorFilter.h>``
 
@@ -15,7 +19,7 @@ Inheritance diagram for unity::scopes::OptionSelectorFilter:
 
 std::string 
 
-`label </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter#a125c5b43a776bb80f02293ae6d1801d3>`__
+`label </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter/#a125c5b43a776bb80f02293ae6d1801d3>`_ 
 () const
 
  
@@ -26,7 +30,7 @@ std::string 
 
 bool 
 
-`multi\_select </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter#aa1799eafbae1d5228d4520a2dc74f146>`__
+`multi\_select </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter/#aa1799eafbae1d5228d4520a2dc74f146>`_ 
 () const
 
  
@@ -37,11 +41,11 @@ bool 
 
 FilterOption::SCPtr 
 
-`add\_option </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter#adeebc09dbf919d0ba9015eae669a0d33>`__
+`add\_option </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter/#adeebc09dbf919d0ba9015eae669a0d33>`_ 
 (std::string const
-&\ `id </sdk/scopes/cpp/unity.scopes.FilterBase#a1f2d96647b23af77b1ff1cffc80f3868>`__,
+&\ `id </sdk/scopes/cpp/unity.scopes.FilterBase/#a1f2d96647b23af77b1ff1cffc80f3868>`_ ,
 std::string const
-&\ `label </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter#a125c5b43a776bb80f02293ae6d1801d3>`__)
+&\ `label </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter/#a125c5b43a776bb80f02293ae6d1801d3>`_ )
 
  
 
@@ -51,7 +55,7 @@ std::string const
 
 std::list< FilterOption::SCPtr > 
 
-`options </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter#a773c6364c3cee05042e975e927faf808>`__
+`options </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter/#a773c6364c3cee05042e975e927faf808>`_ 
 () const
 
  
@@ -62,8 +66,8 @@ std::list< FilterOption::SCPtr > 
 
 bool 
 
-`has\_active\_option </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter#a6b80b908411779b8bb402c9cbfa2f576>`__
-(`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ const
+`has\_active\_option </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter/#a6b80b908411779b8bb402c9cbfa2f576>`_ 
+(`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  const
 &filter\_state) const
 
  
@@ -74,8 +78,8 @@ bool 
 
 std::set< FilterOption::SCPtr > 
 
-`active\_options </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter#a3015abeb0439ccd29bd61afa9b7059df>`__
-(`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ const
+`active\_options </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter/#a3015abeb0439ccd29bd61afa9b7059df>`_ 
+(`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  const
 &filter\_state) const
 
  
@@ -86,8 +90,8 @@ std::set< FilterOption::SCPtr > 
 
 void 
 
-`update\_state </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter#a616c09732a25a01fc97341a74aac62f6>`__
-(`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__
+`update\_state </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter/#a616c09732a25a01fc97341a74aac62f6>`_ 
+(`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_ 
 &filter\_state, FilterOption::SCPtr option, bool active) const
 
  
@@ -99,11 +103,11 @@ void 
 
 FilterOption::SCPtr 
 
-`add\_option </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter#a02124402ba7551b06a10398850343109>`__
+`add\_option </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter/#a02124402ba7551b06a10398850343109>`_ 
 (std::string const
-&\ `id </sdk/scopes/cpp/unity.scopes.FilterBase#a1f2d96647b23af77b1ff1cffc80f3868>`__,
+&\ `id </sdk/scopes/cpp/unity.scopes.FilterBase/#a1f2d96647b23af77b1ff1cffc80f3868>`_ ,
 std::string const
-&\ `label </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter#a125c5b43a776bb80f02293ae6d1801d3>`__,
+&\ `label </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter/#a125c5b43a776bb80f02293ae6d1801d3>`_ ,
 bool value)
 
  
@@ -113,11 +117,11 @@ bool value)
  
 
 |-| Public Member Functions inherited from
-`unity::scopes::FilterBase </sdk/scopes/cpp/unity.scopes.FilterBase/>`__
+`unity::scopes::FilterBase </sdk/scopes/cpp/unity.scopes.FilterBase/>`_ 
 
 void 
 
-`set\_display\_hints </sdk/scopes/cpp/unity.scopes.FilterBase#ab4ab1b600ce3967dc50255e736c6d02e>`__
+`set\_display\_hints </sdk/scopes/cpp/unity.scopes.FilterBase/#ab4ab1b600ce3967dc50255e736c6d02e>`_ 
 (int hints)
 
  
@@ -128,7 +132,7 @@ void 
 
 int 
 
-`display\_hints </sdk/scopes/cpp/unity.scopes.FilterBase#a8f20819591155edaab29d535c5c4c261>`__
+`display\_hints </sdk/scopes/cpp/unity.scopes.FilterBase/#a8f20819591155edaab29d535c5c4c261>`_ 
 () const
 
  
@@ -139,7 +143,7 @@ int 
 
 std::string 
 
-`id </sdk/scopes/cpp/unity.scopes.FilterBase#a1f2d96647b23af77b1ff1cffc80f3868>`__
+`id </sdk/scopes/cpp/unity.scopes.FilterBase/#a1f2d96647b23af77b1ff1cffc80f3868>`_ 
 () const
 
  
@@ -150,7 +154,7 @@ std::string 
 
 std::string 
 
-`filter\_type </sdk/scopes/cpp/unity.scopes.FilterBase#aadc7344c951961331dcbe67149d56c78>`__
+`filter\_type </sdk/scopes/cpp/unity.scopes.FilterBase/#aadc7344c951961331dcbe67149d56c78>`_ 
 () const
 
  
@@ -161,9 +165,9 @@ std::string 
 
 void 
 
-`set\_title </sdk/scopes/cpp/unity.scopes.FilterBase#aec8ceae8141811833af087ba2ebe086c>`__
+`set\_title </sdk/scopes/cpp/unity.scopes.FilterBase/#aec8ceae8141811833af087ba2ebe086c>`_ 
 (std::string const
-&\ `title </sdk/scopes/cpp/unity.scopes.FilterBase#a3f0c324b3aac39bb8967fc900f3a909e>`__)
+&\ `title </sdk/scopes/cpp/unity.scopes.FilterBase/#a3f0c324b3aac39bb8967fc900f3a909e>`_ )
 
  
 
@@ -173,7 +177,7 @@ void 
 
 std::string 
 
-`title </sdk/scopes/cpp/unity.scopes.FilterBase#a3f0c324b3aac39bb8967fc900f3a909e>`__
+`title </sdk/scopes/cpp/unity.scopes.FilterBase/#a3f0c324b3aac39bb8967fc900f3a909e>`_ 
 () const
 
  
@@ -184,7 +188,7 @@ std::string 
 
 FilterGroup::SCPtr 
 
-`filter\_group </sdk/scopes/cpp/unity.scopes.FilterBase#afff4685371fe67e6f87f58e31f69a037>`__
+`filter\_group </sdk/scopes/cpp/unity.scopes.FilterBase/#afff4685371fe67e6f87f58e31f69a037>`_ 
 () const
 
  
@@ -198,13 +202,13 @@ FilterGroup::SCPtr 
 
 static OptionSelectorFilter::UPtr 
 
-`create </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter#a2930156d8f60172c9e926a3d6ebc85ee>`__
+`create </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter/#a2930156d8f60172c9e926a3d6ebc85ee>`_ 
 (std::string const
-&\ `id </sdk/scopes/cpp/unity.scopes.FilterBase#a1f2d96647b23af77b1ff1cffc80f3868>`__,
+&\ `id </sdk/scopes/cpp/unity.scopes.FilterBase/#a1f2d96647b23af77b1ff1cffc80f3868>`_ ,
 std::string const
-&\ `label </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter#a125c5b43a776bb80f02293ae6d1801d3>`__,
+&\ `label </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter/#a125c5b43a776bb80f02293ae6d1801d3>`_ ,
 bool
-`multi\_select </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter#aa1799eafbae1d5228d4520a2dc74f146>`__\ =false)
+`multi\_select </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter/#aa1799eafbae1d5228d4520a2dc74f146>`_ \ =false)
 
  
 
@@ -214,8 +218,8 @@ bool
 
 static void 
 
-`update\_state </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter#ad2f90f01ea9d197dbc089c9b64f0b5a7>`__
-(`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__
+`update\_state </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter/#ad2f90f01ea9d197dbc089c9b64f0b5a7>`_ 
+(`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_ 
 &filter\_state, std::string const &filter\_id, std::string const
 &option\_id, bool value)
 
@@ -228,13 +232,13 @@ static void 
 
 static OptionSelectorFilter::UPtr 
 
-`create </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter#a2b1dfa99fc949df95c7e4a5601aceaf6>`__
+`create </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter/#a2b1dfa99fc949df95c7e4a5601aceaf6>`_ 
 (std::string const
-&\ `id </sdk/scopes/cpp/unity.scopes.FilterBase#a1f2d96647b23af77b1ff1cffc80f3868>`__,
+&\ `id </sdk/scopes/cpp/unity.scopes.FilterBase/#a1f2d96647b23af77b1ff1cffc80f3868>`_ ,
 std::string const
-&\ `label </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter#a125c5b43a776bb80f02293ae6d1801d3>`__,
+&\ `label </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter/#a125c5b43a776bb80f02293ae6d1801d3>`_ ,
 FilterGroup::SCPtr const &group, bool
-`multi\_select </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter#aa1799eafbae1d5228d4520a2dc74f146>`__\ =false)
+`multi\_select </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter/#aa1799eafbae1d5228d4520a2dc74f146>`_ \ =false)
 
  
 
@@ -246,21 +250,21 @@ FilterGroup::SCPtr const &group, bool
 ------------------------------------
 
 |-| Public Types inherited from
-`unity::scopes::FilterBase </sdk/scopes/cpp/unity.scopes.FilterBase/>`__
+`unity::scopes::FilterBase </sdk/scopes/cpp/unity.scopes.FilterBase/>`_ 
 
 enum  
 
-`DisplayHints </sdk/scopes/cpp/unity.scopes.FilterBase#ab9e833d5e4029fed745d15ba63715159>`__
+`DisplayHints </sdk/scopes/cpp/unity.scopes.FilterBase/#ab9e833d5e4029fed745d15ba63715159>`_ 
 {
-`Default </sdk/scopes/cpp/unity.scopes.FilterBase#ab9e833d5e4029fed745d15ba63715159a277f24de7d0bcc7e8ec8bfe0639f356f>`__
+`Default </sdk/scopes/cpp/unity.scopes.FilterBase/#ab9e833d5e4029fed745d15ba63715159a277f24de7d0bcc7e8ec8bfe0639f356f>`_ 
 = 0,
-`Primary </sdk/scopes/cpp/unity.scopes.FilterBase#ab9e833d5e4029fed745d15ba63715159a8c8262ffd071c61b213ec489b64bdf56>`__
+`Primary </sdk/scopes/cpp/unity.scopes.FilterBase/#ab9e833d5e4029fed745d15ba63715159a8c8262ffd071c61b213ec489b64bdf56>`_ 
 = 1 }
 
  
 
 | Display hints for the Shell UI.
-  `More... </sdk/scopes/cpp/unity.scopes.FilterBase#ab9e833d5e4029fed745d15ba63715159>`__
+  `More... </sdk/scopes/cpp/unity.scopes.FilterBase/#ab9e833d5e4029fed745d15ba63715159>`_ 
 
  
 
@@ -274,11 +278,11 @@ Member Function Documentation
 -----------------------------
 
 +----------------------------------------------------------------------------------------+-----+------------------------------------------------------------------------+-------------------+-----+---------+
-| std::set< FilterOption::SCPtr > unity::scopes::OptionSelectorFilter::active\_options   | (   | `FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ const &    | *filter\_state*   | )   | const   |
+| std::set< FilterOption::SCPtr > unity::scopes::OptionSelectorFilter::active\_options   | (   | `FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  const &    | *filter\_state*   | )   | const   |
 +----------------------------------------------------------------------------------------+-----+------------------------------------------------------------------------+-------------------+-----+---------+
 
 Get the active options from a
-`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ instance for
+`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  instance for
 this filter.
 
 The returned set may be empty if the user de-selected all options.
@@ -332,7 +336,7 @@ Add a new option to this filter and provide its default value.
 
 Exceptions
     +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-    | unity::LogicException             | if multiple options with value of 'true' are provided for a single-selection `OptionSelectorFilter </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter/>`__.   |
+    | unity::LogicException             | if multiple options with value of 'true' are provided for a single-selection `OptionSelectorFilter </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter/>`_ .   |
     +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
     | unity::InvalidArgumentException   | on invalid id or label                                                                                                                                        |
     +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -402,7 +406,7 @@ Parameters
 Note
     The multi-selection cannot be combined with
     unity::scopes::FilterBase::DisplayHints::Primary flag set via
-    `unity::scopes::FilterBase::set\_display\_hints() </sdk/scopes/cpp/unity.scopes.FilterBase#ab4ab1b600ce3967dc50255e736c6d02e>`__.
+    `unity::scopes::FilterBase::set\_display\_hints() </sdk/scopes/cpp/unity.scopes.FilterBase/#ab4ab1b600ce3967dc50255e736c6d02e>`_ .
 
 +--------------------------------------+--------------------------------------+
 | +--------------------+-------------- | static                               |
@@ -462,7 +466,7 @@ Note
 +--------------------------------------+--------------------------------------+
 
 Creates an OpionSelectorFilter inside a
-`FilterGroup </sdk/scopes/cpp/unity.scopes.FilterGroup/>`__.
+`FilterGroup </sdk/scopes/cpp/unity.scopes.FilterGroup/>`_ .
 
 Parameters
     +-----------------+-----------------------------------------------------------------------------------------------------------------+
@@ -483,10 +487,10 @@ Exceptions
 Note
     The multi-selection cannot be combined with
     unity::scopes::FilterBase::DisplayHints::Primary flag set via
-    `unity::scopes::FilterBase::set\_display\_hints() </sdk/scopes/cpp/unity.scopes.FilterBase#ab4ab1b600ce3967dc50255e736c6d02e>`__.
+    `unity::scopes::FilterBase::set\_display\_hints() </sdk/scopes/cpp/unity.scopes.FilterBase/#ab4ab1b600ce3967dc50255e736c6d02e>`_ .
 
 +-----------------------------------------------------------------+-----+------------------------------------------------------------------------+-------------------+-----+---------+
-| bool unity::scopes::OptionSelectorFilter::has\_active\_option   | (   | `FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ const &    | *filter\_state*   | )   | const   |
+| bool unity::scopes::OptionSelectorFilter::has\_active\_option   | (   | `FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  const &    | *filter\_state*   | )   | const   |
 +-----------------------------------------------------------------+-----+------------------------------------------------------------------------+-------------------+-----+---------+
 
 Check if an option is active for this filter.
@@ -544,7 +548,7 @@ Returns
 | void               | (                  | `FilterState </sdk | *filter\_state*,   |
 | unity::scopes::Opt |                    | /scopes/cpp/unity. |                    |
 | ionSelectorFilter: |                    | scopes.FilterState |                    |
-| :update\_state     |                    | />`__              |                    |
+| :update\_state     |                    | />`_               |                    |
 |                    |                    | &                  |                    |
 +--------------------+--------------------+--------------------+--------------------+
 |                    |                    | FilterOption::SCPt | *option*,          |
@@ -556,16 +560,16 @@ Returns
 +--------------------+--------------------+--------------------+--------------------+
 
 Marks given
-`FilterOption </sdk/scopes/cpp/unity.scopes.FilterOption/>`__ of this
+`FilterOption </sdk/scopes/cpp/unity.scopes.FilterOption/>`_  of this
 filter instance as active (or not active) in a
-`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ object.
+`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  object.
 
 Records the given
-`FilterOption </sdk/scopes/cpp/unity.scopes.FilterOption/>`__ as
+`FilterOption </sdk/scopes/cpp/unity.scopes.FilterOption/>`_  as
 "selected" in the
-`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__. This is
+`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_ . This is
 meant to be used to modify a
-`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ received
+`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  received
 with a search request before sending it back to the client (UI shell).
 
 +--------------------------------------+--------------------------------------+
@@ -582,7 +586,7 @@ with a search request before sending it back to the client (UI shell).
 |       | scopes.FilterState |         |                                      |
 |             |                        |                                      |
 | | :update\_state     |               |                                      |
-|       | />`__              |         |                                      |
+|       | />`_               |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
 |       | &                  |         |                                      |
@@ -623,14 +627,14 @@ with a search request before sending it back to the client (UI shell).
 +--------------------------------------+--------------------------------------+
 
 Marks an option of a filter active/inactive in a
-`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ object,
+`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  object,
 without having an instance of
-`OptionSelectorFilter </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter/>`__.
+`OptionSelectorFilter </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter/>`_ .
 
 Updates an instance of
-`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__, without the
+`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_ , without the
 need for an
-`OptionSelectorFilter </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter/>`__
+`OptionSelectorFilter </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter/>`_ 
 instance. This is meant to be used when creating a canned Query that
 references another scope.
 

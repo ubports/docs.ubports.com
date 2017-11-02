@@ -1,3 +1,7 @@
+.. _sdk_scopejs_searchmetadata:
+ScopeJS SearchMetadata
+======================
+
 
 Metadata passed with search requests. Two forms of construction are
 allowed depending on the number and types of the parameters:

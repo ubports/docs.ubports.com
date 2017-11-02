@@ -1,16 +1,20 @@
+.. _sdk_qtquick_particles_maskshape:
+QtQuick.Particles MaskShape
+===========================
+
 For representing an image as a shape to affectors and emitters
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtQuick.Particles 2.0         |
 +--------------------------------------+--------------------------------------+
 | Inherits:                            | `Shape </sdk/apps/qml/QtQuick/Partic |
-|                                      | les.Shape/>`__                       |
+|                                      | les.Shape/>`_                        |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`source </sdk/apps/qml/QtQuick/Particles.MaskShape#source-prop>`__****
+-  `source </sdk/apps/qml/QtQuick/Particles.MaskShape/_source-prop>`_ 
    : url
 
 Detailed Description
@@ -18,6 +22,8 @@ Detailed Description
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_particles_maskshape_source-prop:
 
 +--------------------------------------------------------------------------+
 |        \ source : url                                                    |

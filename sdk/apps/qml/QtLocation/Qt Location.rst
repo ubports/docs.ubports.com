@@ -1,3 +1,7 @@
+.. _sdk_qtlocation_qt_location:
+QtLocation Qt Location
+======================
+
 
 
 The Qt Location API provides mapping, navigation, and place search via
@@ -59,7 +63,7 @@ the location, size and other vitals about a POI, the Places API can also
 retrieve images, reviews and other rich content related to the place.
 
 +------------------------+---------------------------------------------------------------+---------------------------------------------------------------+
-| Places introduction:   | `for QML </sdk/apps/qml/QtLocation/location-places-qml/>`__   | `for C++ </sdk/apps/qml/QtLocation/location-places-cpp/>`__   |
+| Places introduction:   | `for QML </sdk/apps/qml/QtLocation/location-places-qml/>`_    | `for C++ </sdk/apps/qml/QtLocation/location-places-cpp/>`_    |
 +------------------------+---------------------------------------------------------------+---------------------------------------------------------------+
 
 .. rubric:: Maps and Navigation
@@ -72,7 +76,7 @@ utilities for geocoding (finding a geographic coordinate from a street
 address) and navigation (including driving and walking directions).
 
 +-------------------------------------+-------------------------------------------------------------+-------------------------------------------------------------+
-| Maps and Navigation introduction:   | `for QML </sdk/apps/qml/QtLocation/location-maps-qml/>`__   | `for C++ </sdk/apps/qml/QtLocation/location-maps-cpp/>`__   |
+| Maps and Navigation introduction:   | `for QML </sdk/apps/qml/QtLocation/location-maps-qml/>`_    | `for C++ </sdk/apps/qml/QtLocation/location-maps-cpp/>`_    |
 +-------------------------------------+-------------------------------------------------------------+-------------------------------------------------------------+
 
 .. rubric:: API References and Examples
@@ -85,13 +89,13 @@ usage.
 +-----------------------------------------------------------------------------------+---------------------------------------------------------------------------------+
 | QML API Reference                                                                 | Full list of QML components in the Qt Location API                              |
 +-----------------------------------------------------------------------------------+---------------------------------------------------------------------------------+
-| `C++ API Reference by domain </sdk/apps/qml/QtLocation/qtlocation-cpp/>`__        | Full list of C++ classes and methods of the Qt Location APIs sorted by domain   |
+| `C++ API Reference by domain </sdk/apps/qml/QtLocation/qtlocation-cpp/>`_         | Full list of C++ classes and methods of the Qt Location APIs sorted by domain   |
 +-----------------------------------------------------------------------------------+---------------------------------------------------------------------------------+
 | C++ API Reference                                                                 | Full list of C++ classes and methods of the Qt Location APIs                    |
 +-----------------------------------------------------------------------------------+---------------------------------------------------------------------------------+
 | Example Apps                                                                      | Examples demonstrating use of the Qt Location APIs                              |
 +-----------------------------------------------------------------------------------+---------------------------------------------------------------------------------+
-| `Maps and Navigation Tutorial </sdk/apps/qml/QtLocation/qml-location5-maps/>`__   | Tutorial introducing the QML Maps Types                                         |
+| `Maps and Navigation Tutorial </sdk/apps/qml/QtLocation/qml-location5-maps/>`_    | Tutorial introducing the QML Maps Types                                         |
 +-----------------------------------------------------------------------------------+---------------------------------------------------------------------------------+
 
 .. rubric:: Plugin References and Parameters
@@ -103,11 +107,11 @@ that can be provided to influence their behavior.
 +--------------------------------------+--------------------------------------+
 | `Qt Location Nokia                   | Uses the relevant Nokia services     |
 | Plugin </sdk/apps/qml/QtLocation/loc | provided by Nokia.                   |
-| ation-plugin-nokia/>`__              |                                      |
+| ation-plugin-nokia/>`_               |                                      |
 +--------------------------------------+--------------------------------------+
 | `Qt Location Open Street Map         | Uses Open Street Map and related     |
 | Plugin </sdk/apps/qml/QtLocation/loc | services.                            |
-| ation-plugin-osm/>`__                |                                      |
+| ation-plugin-osm/>`_                 |                                      |
 +--------------------------------------+--------------------------------------+
 
 .. rubric:: Implementing New Back-Ends and Porting
@@ -117,9 +121,9 @@ For systems integrators and distributors, information relating to making
 Qt Location available for a new platform.
 
 +----------------------------------------------------------------------+---------------------------------------------------------+
-| `GeoServices </sdk/apps/qml/QtLocation/qtlocation-geoservices/>`__   | Information about the Qt Location GeoServices plugins   |
+| `GeoServices </sdk/apps/qml/QtLocation/qtlocation-geoservices/>`_    | Information about the Qt Location GeoServices plugins   |
 +----------------------------------------------------------------------+---------------------------------------------------------+
-| `Places </sdk/apps/qml/QtLocation/location-places-backend/>`__       | Information for places backend implementors             |
+| `Places </sdk/apps/qml/QtLocation/location-places-backend/>`_        | Information for places backend implementors             |
 +----------------------------------------------------------------------+---------------------------------------------------------+
 
 .. rubric:: New Since Qt 4
@@ -127,20 +131,20 @@ Qt Location available for a new platform.
 
 In Qt 4 Qt Mobility provided some location functionality for Positioning
 and Maps with Landmarks support. The new Qt Location API has had an
-extensive reworking of `Map </sdk/apps/qml/QtLocation/Map/>`__\ s and
-`Place </sdk/apps/qml/QtLocation/location-cpp-qml#place>`__\ s (formerly
-Landmarks). Also both C++ and QML APIs have been reworked to be simpler
-to use.
+extensive reworking of :ref:`Map <sdk_qtlocation_map>`\ s and
+`Place </sdk/apps/qml/QtLocation/location-cpp-qml/#place>`_ \ s
+(formerly Landmarks). Also both C++ and QML APIs have been reworked to
+be simpler to use.
 
 New features of Qt Location includes
 
 -  Maps are now part of the Qt Quick scenegraph, and rendered using
    hardware-accelerated OpenGL
 -  Arbitrary Qt Quick items on the map are supported using
-   `MapQuickItem </sdk/apps/qml/QtLocation/MapQuickItem/>`__
+   :ref:`MapQuickItem <sdk_qtlocation_mapquickitem>`
 -  Now possible to create map overlays with a model
 -  Built-in support for pinch-to-zoom gestures, flicking , and panning
-   (see `MapGestureArea </sdk/apps/qml/QtLocation/MapGestureArea/>`__)
+   (see :ref:`MapGestureArea <sdk_qtlocation_mapgesturearea>`)
 -  Vast performance improvements over Qt Mobility 1.2, especially for
    large map polylines and objects in general
 -  Full QML API now available for routing and geocoding -- compatible
@@ -148,14 +152,14 @@ New features of Qt Location includes
 -  Service provider feature detection without having to open all the
    available plugins
 -  Unified
-   `Plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__ QML
+   `Plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_  QML
    type used by routing/geocoding/maps etc with easy-to-set
-   `PluginParameter </sdk/apps/qml/QtLocation/PluginParameter/>`__
+   :ref:`PluginParameter <sdk_qtlocation_pluginparameter>`
 -  Two plugins are supplied with Qt (a Nokia and an OSM plugin for
    GeoServices).
 -  Landmarks API is replaced by the Places API
--  `Place </sdk/apps/qml/QtLocation/location-cpp-qml#place>`__ supports
+-  `Place </sdk/apps/qml/QtLocation/location-cpp-qml/#place>`_  supports
    viewing of richer content such as reviews, images, and editorials
--  `Place </sdk/apps/qml/QtLocation/location-cpp-qml#place>`__ supports
+-  `Place </sdk/apps/qml/QtLocation/location-cpp-qml/#place>`_  supports
    locale handling, sponsored search results, and supplier attribution
 

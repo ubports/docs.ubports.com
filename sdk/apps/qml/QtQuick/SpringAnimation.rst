@@ -1,50 +1,47 @@
+.. _sdk_qtquick_springanimation:
+QtQuick SpringAnimation
+=======================
+
 Allows a property to track a value in a spring-like motion
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtQuick 2.4                   |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `NumberAnimation </sdk/apps/qml/QtQu |
-|                                      | ick/NumberAnimation/>`__             |
+| Inherits:                            | :ref:`NumberAnimation <sdk_qtquick_number |
+|                                      | animation>`_                         |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`damping </sdk/apps/qml/QtQuick/SpringAnimation#damping-prop>`__****
-   : real
--  ****`epsilon </sdk/apps/qml/QtQuick/SpringAnimation#epsilon-prop>`__****
-   : real
--  ****`mass </sdk/apps/qml/QtQuick/SpringAnimation#mass-prop>`__**** :
+-  :ref:`damping <sdk_qtquick_springanimation_damping-prop>` : real
+-  :ref:`epsilon <sdk_qtquick_springanimation_epsilon-prop>` : real
+-  :ref:`mass <sdk_qtquick_springanimation_mass-prop>` : real
+-  :ref:`modulus <sdk_qtquick_springanimation_modulus-prop>` : real
+-  :ref:`spring <sdk_qtquick_springanimation_spring-prop>` : real
+-  :ref:`velocity <sdk_qtquick_springanimation_velocity-prop>` :
    real
--  ****`modulus </sdk/apps/qml/QtQuick/SpringAnimation#modulus-prop>`__****
-   : real
--  ****`spring </sdk/apps/qml/QtQuick/SpringAnimation#spring-prop>`__****
-   : real
--  ****`velocity </sdk/apps/qml/QtQuick/SpringAnimation#velocity-prop>`__****
-   : real
 
 Detailed Description
 --------------------
 
-`SpringAnimation </sdk/apps/qml/QtQuick/SpringAnimation/>`__ mimics the
-oscillatory behavior of a spring, with the appropriate
-`spring </sdk/apps/qml/QtQuick/SpringAnimation#spring-prop>`__ constant
-to control the acceleration and the
-`damping </sdk/apps/qml/QtQuick/SpringAnimation#damping-prop>`__ to
-control how quickly the effect dies away.
+:ref:`SpringAnimation <sdk_qtquick_springanimation>` mimics the oscillatory
+behavior of a spring, with the appropriate
+:ref:`spring <sdk_qtquick_springanimation#spring-prop>` constant to control
+the acceleration and the
+:ref:`damping <sdk_qtquick_springanimation#damping-prop>` to control how
+quickly the effect dies away.
 
 You can also limit the maximum
-`velocity </sdk/apps/qml/QtQuick/SpringAnimation#velocity-prop>`__ of
-the animation.
+:ref:`velocity <sdk_qtquick_springanimation#velocity-prop>` of the
+animation.
 
-The following `Rectangle </sdk/apps/qml/QtQuick/Rectangle/>`__ moves to
-the position of the mouse using a
-`SpringAnimation </sdk/apps/qml/QtQuick/SpringAnimation/>`__ when the
-mouse is clicked. The use of the
-`Behavior </sdk/apps/qml/QtQuick/Behavior/>`__ on the ``x`` and ``y``
-values indicates that whenever these values are changed, a
-`SpringAnimation </sdk/apps/qml/QtQuick/SpringAnimation/>`__ should be
-applied.
+The following :ref:`Rectangle <sdk_qtquick_rectangle>` moves to the
+position of the mouse using a
+:ref:`SpringAnimation <sdk_qtquick_springanimation>` when the mouse is
+clicked. The use of the :ref:`Behavior <sdk_qtquick_behavior>` on the ``x``
+and ``y`` values indicates that whenever these values are changed, a
+:ref:`SpringAnimation <sdk_qtquick_springanimation>` should be applied.
 
 .. code:: qml
 
@@ -68,21 +65,22 @@ applied.
     }
 
 Like any other animation type, a
-`SpringAnimation </sdk/apps/qml/QtQuick/SpringAnimation/>`__ can be
-applied in a number of ways, including transitions, behaviors and
-property value sources. The `Animation and Transitions in Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`__
+:ref:`SpringAnimation <sdk_qtquick_springanimation>` can be applied in a
+number of ways, including transitions, behaviors and property value
+sources. The `Animation and Transitions in Qt
+Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`_ 
 documentation shows a variety of methods for creating animations.
 
-**See also**
-`SmoothedAnimation </sdk/apps/qml/QtQuick/SmoothedAnimation/>`__,
+**See also** :ref:`SmoothedAnimation <sdk_qtquick_smoothedanimation>`,
 `Animation and Transitions in Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`__,
-`Qt Quick Examples - Animation </sdk/apps/qml/QtQuick/animation/>`__,
-and `Qt Quick Demo - Clocks </sdk/apps/qml/QtQuick/demos-clocks/>`__.
+Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`_ ,
+`Qt Quick Examples - Animation </sdk/apps/qml/QtQuick/animation/>`_ ,
+and `Qt Quick Demo - Clocks </sdk/apps/qml/QtQuick/demos-clocks/>`_ .
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_springanimation_damping-prop:
 
 +--------------------------------------------------------------------------+
 |        \ damping : real                                                  |
@@ -97,6 +95,8 @@ The useful value range is 0 - 1.0. The lower the value, the faster it
 comes to rest.
 
 | 
+
+.. _sdk_qtquick_springanimation_epsilon-prop:
 
 +--------------------------------------------------------------------------+
 |        \ epsilon : real                                                  |
@@ -114,6 +114,8 @@ improvements.
 
 | 
 
+.. _sdk_qtquick_springanimation_mass-prop:
+
 +--------------------------------------------------------------------------+
 |        \ mass : real                                                     |
 +--------------------------------------------------------------------------+
@@ -127,6 +129,8 @@ when an item comes to rest.
 
 | 
 
+.. _sdk_qtquick_springanimation_modulus-prop:
+
 +--------------------------------------------------------------------------+
 |        \ modulus : real                                                  |
 +--------------------------------------------------------------------------+
@@ -139,6 +143,8 @@ modulus. For example, setting the modulus to 360 will cause a value of
 
 | 
 
+.. _sdk_qtquick_springanimation_spring-prop:
+
 +--------------------------------------------------------------------------+
 |        \ spring : real                                                   |
 +--------------------------------------------------------------------------+
@@ -150,12 +156,14 @@ disabled).
 The useful value range is 0 - 5.0.
 
 When this property is set and the
-`velocity </sdk/apps/qml/QtQuick/SpringAnimation#velocity-prop>`__ value
-is greater than 0, the
-`velocity </sdk/apps/qml/QtQuick/SpringAnimation#velocity-prop>`__
-limits the maximum speed.
+:ref:`velocity <sdk_qtquick_springanimation#velocity-prop>` value is
+greater than 0, the
+:ref:`velocity <sdk_qtquick_springanimation#velocity-prop>` limits the
+maximum speed.
 
 | 
+
+.. _sdk_qtquick_springanimation_velocity-prop:
 
 +--------------------------------------------------------------------------+
 |        \ velocity : real                                                 |

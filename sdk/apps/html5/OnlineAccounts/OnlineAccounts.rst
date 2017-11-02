@@ -1,3 +1,7 @@
+.. _sdk_onlineaccounts_onlineaccounts:
+OnlineAccounts OnlineAccounts
+=============================
+
 
 The OnlineAccounts object is the entry point to online accounts service
 access.

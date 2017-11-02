@@ -1,3 +1,7 @@
+.. _sdk_qtquick_qt_quick_widgets_example:
+QtQuick Qt Quick Widgets Example
+================================
+
 
 
 |image0|

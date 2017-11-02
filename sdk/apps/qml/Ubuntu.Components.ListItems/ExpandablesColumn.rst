@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_listitems_expandablescolumn:
+Ubuntu.Components.ListItems ExpandablesColumn
+=============================================
+
 A column to be used together with the Expandable item. This lays out its
 content just like a regular Column inside a Flickable but when used
 together with items of type Expandable it provides additional features
@@ -8,23 +12,23 @@ collapsing it again when the user taps outside of it.
 | Import Statement:                    | import Ubuntu.Components.ListItems   |
 |                                      | 1.3                                  |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Flickable </sdk/apps/qml/QtQuick/Fl |
-|                                      | ickable/>`__                         |
+| Inherits:                            | :ref:`Flickable <sdk_qtquick_flickable>`_ |
+|                                      | _                                    |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`children </sdk/apps/qml/Ubuntu.Components/ListItems.ExpandablesColumn#children-prop>`__****
+-  `children </sdk/apps/qml/Ubuntu.Components/ListItems.ExpandablesColumn/_children-prop>`_ 
    : QtObject
--  ****`expandedItem </sdk/apps/qml/Ubuntu.Components/ListItems.ExpandablesColumn#expandedItem-prop>`__****
+-  `expandedItem </sdk/apps/qml/Ubuntu.Components/ListItems.ExpandablesColumn/_expandedItem-prop>`_ 
    : Item
 
 Methods
 -------
 
--  ****`collapse </sdk/apps/qml/Ubuntu.Components/ListItems.ExpandablesColumn#collapse-method>`__****\ ()
--  ****`expandItem </sdk/apps/qml/Ubuntu.Components/ListItems.ExpandablesColumn#expandItem-method>`__****\ (*item*)
+-  `collapse </sdk/apps/qml/Ubuntu.Components/ListItems.ExpandablesColumn/_collapse-method>`_ \ ()
+-  `expandItem </sdk/apps/qml/Ubuntu.Components/ListItems.ExpandablesColumn/_expandItem-method>`_ \ (*item*)
 
 Detailed Description
 --------------------
@@ -52,18 +56,20 @@ Examples:
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_listitems_expandablescolumn_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ [default] children :                                            |
-| `QtObject </sdk/apps/qml/QtQml/QtObject/>`__                             |
+| :ref:` <>`\ [default] children : `QtObject <sdk_qtqml_qtobject>`       |
 +--------------------------------------------------------------------------+
 
 Reparent any content to inside the Column.
 
 | 
 
+.. _sdk_ubuntu_components_listitems_expandablescolumn_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ [read-only] expandedItem :                                      |
-| `Item </sdk/apps/qml/QtQuick/Item/>`__                                   |
+| :ref:` <>`\ [read-only] expandedItem : `Item <sdk_qtquick_item>`       |
 +--------------------------------------------------------------------------+
 
 Points to the currently expanded item. Null if no item is expanded.
@@ -72,6 +78,8 @@ Points to the currently expanded item. Null if no item is expanded.
 
 Method Documentation
 --------------------
+
+.. _sdk_ubuntu_components_listitems_expandablescolumn_collapse-method:
 
 +--------------------------------------------------------------------------+
 |        \ collapse()                                                      |
@@ -82,11 +90,13 @@ this function does nothing.
 
 | 
 
+.. _sdk_ubuntu_components_listitems_expandablescolumn_expandItem-method:
+
 +--------------------------------------------------------------------------+
 |        \ expandItem( *item*)                                             |
 +--------------------------------------------------------------------------+
 
 Expand the given item. The item must be a child of this
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__.
+:ref:`ListView <sdk_qtquick_listview>`.
 
 | 

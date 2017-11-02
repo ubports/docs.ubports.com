@@ -1,6 +1,10 @@
+.. _sdk_valuesliderfilter:
+ValueSliderFilter
+=================
+
 A value slider filter that allows for selecting a value within a given
 range.
-`More... </sdk/scopes/cpp/unity.scopes.ValueSliderFilter#details>`__
+`More... </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/#details>`_ 
 
 ``#include <unity/scopes/ValueSliderFilter.h>``
 
@@ -15,7 +19,7 @@ Inheritance diagram for unity::scopes::ValueSliderFilter:
 
 void 
 
-`set\_default\_value </sdk/scopes/cpp/unity.scopes.ValueSliderFilter#ac868b40a91520b9a56c2ed98152f1a1a>`__
+`set\_default\_value </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/#ac868b40a91520b9a56c2ed98152f1a1a>`_ 
 (double val)
 
  
@@ -26,7 +30,7 @@ void 
 
 double 
 
-`default\_value </sdk/scopes/cpp/unity.scopes.ValueSliderFilter#a32344819474a1ef0956f63e87fb047a4>`__
+`default\_value </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/#a32344819474a1ef0956f63e87fb047a4>`_ 
 () const
 
  
@@ -37,7 +41,7 @@ double 
 
 double 
 
-`min </sdk/scopes/cpp/unity.scopes.ValueSliderFilter#ab6a8d69f025709d3ee09d7cb362eba03>`__
+`min </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/#ab6a8d69f025709d3ee09d7cb362eba03>`_ 
 () const
 
  
@@ -48,7 +52,7 @@ double 
 
 double 
 
-`max </sdk/scopes/cpp/unity.scopes.ValueSliderFilter#a5e2e527d77390dc02db1bd1cbdce6460>`__
+`max </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/#a5e2e527d77390dc02db1bd1cbdce6460>`_ 
 () const
 
  
@@ -59,8 +63,8 @@ double 
 
 bool 
 
-`has\_value </sdk/scopes/cpp/unity.scopes.ValueSliderFilter#a9a113cc7fbda26aed161067fb7892119>`__
-(`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ const
+`has\_value </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/#a9a113cc7fbda26aed161067fb7892119>`_ 
+(`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  const
 &filter\_state) const
 
  
@@ -71,8 +75,8 @@ bool 
 
 double 
 
-`value </sdk/scopes/cpp/unity.scopes.ValueSliderFilter#a7a81dec2e0595cf95effa6f9f24259ba>`__
-(`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ const
+`value </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/#a7a81dec2e0595cf95effa6f9f24259ba>`_ 
+(`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  const
 &filter\_state) const
 
  
@@ -81,10 +85,10 @@ double 
 
  
 
-`ValueSliderLabels </sdk/scopes/cpp/unity.scopes.ValueSliderLabels/>`__
+`ValueSliderLabels </sdk/scopes/cpp/unity.scopes.ValueSliderLabels/>`_ 
 const & 
 
-`labels </sdk/scopes/cpp/unity.scopes.ValueSliderFilter#a6dc105b666f967fa6a9bbf2eca2ee9dc>`__
+`labels </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/#a6dc105b666f967fa6a9bbf2eca2ee9dc>`_ 
 () const
 
  
@@ -95,10 +99,10 @@ const & 
 
 void 
 
-`update\_state </sdk/scopes/cpp/unity.scopes.ValueSliderFilter#a5b336122dcab4ed78974badb9016e622>`__
-(`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__
+`update\_state </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/#a5b336122dcab4ed78974badb9016e622>`_ 
+(`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_ 
 &filter\_state, double
-`value </sdk/scopes/cpp/unity.scopes.ValueSliderFilter#a7a81dec2e0595cf95effa6f9f24259ba>`__)
+`value </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/#a7a81dec2e0595cf95effa6f9f24259ba>`_ )
 const
 
  
@@ -108,11 +112,11 @@ const
  
 
 |-| Public Member Functions inherited from
-`unity::scopes::FilterBase </sdk/scopes/cpp/unity.scopes.FilterBase/>`__
+`unity::scopes::FilterBase </sdk/scopes/cpp/unity.scopes.FilterBase/>`_ 
 
 void 
 
-`set\_display\_hints </sdk/scopes/cpp/unity.scopes.FilterBase#ab4ab1b600ce3967dc50255e736c6d02e>`__
+`set\_display\_hints </sdk/scopes/cpp/unity.scopes.FilterBase/#ab4ab1b600ce3967dc50255e736c6d02e>`_ 
 (int hints)
 
  
@@ -123,7 +127,7 @@ void 
 
 int 
 
-`display\_hints </sdk/scopes/cpp/unity.scopes.FilterBase#a8f20819591155edaab29d535c5c4c261>`__
+`display\_hints </sdk/scopes/cpp/unity.scopes.FilterBase/#a8f20819591155edaab29d535c5c4c261>`_ 
 () const
 
  
@@ -134,7 +138,7 @@ int 
 
 std::string 
 
-`id </sdk/scopes/cpp/unity.scopes.FilterBase#a1f2d96647b23af77b1ff1cffc80f3868>`__
+`id </sdk/scopes/cpp/unity.scopes.FilterBase/#a1f2d96647b23af77b1ff1cffc80f3868>`_ 
 () const
 
  
@@ -145,7 +149,7 @@ std::string 
 
 std::string 
 
-`filter\_type </sdk/scopes/cpp/unity.scopes.FilterBase#aadc7344c951961331dcbe67149d56c78>`__
+`filter\_type </sdk/scopes/cpp/unity.scopes.FilterBase/#aadc7344c951961331dcbe67149d56c78>`_ 
 () const
 
  
@@ -156,9 +160,9 @@ std::string 
 
 void 
 
-`set\_title </sdk/scopes/cpp/unity.scopes.FilterBase#aec8ceae8141811833af087ba2ebe086c>`__
+`set\_title </sdk/scopes/cpp/unity.scopes.FilterBase/#aec8ceae8141811833af087ba2ebe086c>`_ 
 (std::string const
-&\ `title </sdk/scopes/cpp/unity.scopes.FilterBase#a3f0c324b3aac39bb8967fc900f3a909e>`__)
+&\ `title </sdk/scopes/cpp/unity.scopes.FilterBase/#a3f0c324b3aac39bb8967fc900f3a909e>`_ )
 
  
 
@@ -168,7 +172,7 @@ void 
 
 std::string 
 
-`title </sdk/scopes/cpp/unity.scopes.FilterBase#a3f0c324b3aac39bb8967fc900f3a909e>`__
+`title </sdk/scopes/cpp/unity.scopes.FilterBase/#a3f0c324b3aac39bb8967fc900f3a909e>`_ 
 () const
 
  
@@ -179,7 +183,7 @@ std::string 
 
 FilterGroup::SCPtr 
 
-`filter\_group </sdk/scopes/cpp/unity.scopes.FilterBase#afff4685371fe67e6f87f58e31f69a037>`__
+`filter\_group </sdk/scopes/cpp/unity.scopes.FilterBase/#afff4685371fe67e6f87f58e31f69a037>`_ 
 () const
 
  
@@ -193,16 +197,16 @@ FilterGroup::SCPtr 
 
 static ValueSliderFilter::UPtr 
 
-`create </sdk/scopes/cpp/unity.scopes.ValueSliderFilter#a5828d2bf89830af47ac5b2cd53cd4e57>`__
+`create </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/#a5828d2bf89830af47ac5b2cd53cd4e57>`_ 
 (std::string const
-&\ `id </sdk/scopes/cpp/unity.scopes.FilterBase#a1f2d96647b23af77b1ff1cffc80f3868>`__,
+&\ `id </sdk/scopes/cpp/unity.scopes.FilterBase/#a1f2d96647b23af77b1ff1cffc80f3868>`_ ,
 double
-`min </sdk/scopes/cpp/unity.scopes.ValueSliderFilter#ab6a8d69f025709d3ee09d7cb362eba03>`__,
+`min </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/#ab6a8d69f025709d3ee09d7cb362eba03>`_ ,
 double
-`max </sdk/scopes/cpp/unity.scopes.ValueSliderFilter#a5e2e527d77390dc02db1bd1cbdce6460>`__,
+`max </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/#a5e2e527d77390dc02db1bd1cbdce6460>`_ ,
 double
-`default\_value </sdk/scopes/cpp/unity.scopes.ValueSliderFilter#a32344819474a1ef0956f63e87fb047a4>`__,
-`ValueSliderLabels </sdk/scopes/cpp/unity.scopes.ValueSliderLabels/>`__
+`default\_value </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/#a32344819474a1ef0956f63e87fb047a4>`_ ,
+`ValueSliderLabels </sdk/scopes/cpp/unity.scopes.ValueSliderLabels/>`_ 
 const &value\_labels)
 
  
@@ -213,16 +217,16 @@ const &value\_labels)
 
 static ValueSliderFilter::UPtr 
 
-`create </sdk/scopes/cpp/unity.scopes.ValueSliderFilter#accaaa9011772ba4f297cb245b3d24738>`__
+`create </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/#accaaa9011772ba4f297cb245b3d24738>`_ 
 (std::string const
-&\ `id </sdk/scopes/cpp/unity.scopes.FilterBase#a1f2d96647b23af77b1ff1cffc80f3868>`__,
+&\ `id </sdk/scopes/cpp/unity.scopes.FilterBase/#a1f2d96647b23af77b1ff1cffc80f3868>`_ ,
 double
-`min </sdk/scopes/cpp/unity.scopes.ValueSliderFilter#ab6a8d69f025709d3ee09d7cb362eba03>`__,
+`min </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/#ab6a8d69f025709d3ee09d7cb362eba03>`_ ,
 double
-`max </sdk/scopes/cpp/unity.scopes.ValueSliderFilter#a5e2e527d77390dc02db1bd1cbdce6460>`__,
+`max </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/#a5e2e527d77390dc02db1bd1cbdce6460>`_ ,
 double
-`default\_value </sdk/scopes/cpp/unity.scopes.ValueSliderFilter#a32344819474a1ef0956f63e87fb047a4>`__,
-`ValueSliderLabels </sdk/scopes/cpp/unity.scopes.ValueSliderLabels/>`__
+`default\_value </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/#a32344819474a1ef0956f63e87fb047a4>`_ ,
+`ValueSliderLabels </sdk/scopes/cpp/unity.scopes.ValueSliderLabels/>`_ 
 const &value\_labels, FilterGroup::SCPtr const &group)
 
  
@@ -233,10 +237,10 @@ const &value\_labels, FilterGroup::SCPtr const &group)
 
 static void 
 
-`update\_state </sdk/scopes/cpp/unity.scopes.ValueSliderFilter#ae72a0d0a94095bd3d2fb6950a2c9221e>`__
-(`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__
+`update\_state </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/#ae72a0d0a94095bd3d2fb6950a2c9221e>`_ 
+(`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_ 
 &filter\_state, std::string const &filter\_id, double
-`value </sdk/scopes/cpp/unity.scopes.ValueSliderFilter#a7a81dec2e0595cf95effa6f9f24259ba>`__)
+`value </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/#a7a81dec2e0595cf95effa6f9f24259ba>`_ )
 
  
 
@@ -249,21 +253,21 @@ static void 
 ------------------------------------
 
 |-| Public Types inherited from
-`unity::scopes::FilterBase </sdk/scopes/cpp/unity.scopes.FilterBase/>`__
+`unity::scopes::FilterBase </sdk/scopes/cpp/unity.scopes.FilterBase/>`_ 
 
 enum  
 
-`DisplayHints </sdk/scopes/cpp/unity.scopes.FilterBase#ab9e833d5e4029fed745d15ba63715159>`__
+`DisplayHints </sdk/scopes/cpp/unity.scopes.FilterBase/#ab9e833d5e4029fed745d15ba63715159>`_ 
 {
-`Default </sdk/scopes/cpp/unity.scopes.FilterBase#ab9e833d5e4029fed745d15ba63715159a277f24de7d0bcc7e8ec8bfe0639f356f>`__
+`Default </sdk/scopes/cpp/unity.scopes.FilterBase/#ab9e833d5e4029fed745d15ba63715159a277f24de7d0bcc7e8ec8bfe0639f356f>`_ 
 = 0,
-`Primary </sdk/scopes/cpp/unity.scopes.FilterBase#ab9e833d5e4029fed745d15ba63715159a8c8262ffd071c61b213ec489b64bdf56>`__
+`Primary </sdk/scopes/cpp/unity.scopes.FilterBase/#ab9e833d5e4029fed745d15ba63715159a8c8262ffd071c61b213ec489b64bdf56>`_ 
 = 1 }
 
  
 
 | Display hints for the Shell UI.
-  `More... </sdk/scopes/cpp/unity.scopes.FilterBase#ab9e833d5e4029fed745d15ba63715159>`__
+  `More... </sdk/scopes/cpp/unity.scopes.FilterBase/#ab9e833d5e4029fed745d15ba63715159>`_ 
 
  
 
@@ -274,7 +278,7 @@ A value slider filter that allows for selecting a value within a given
 range.
 
 The
-`ValueSliderFilter </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/>`__
+`ValueSliderFilter </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/>`_ 
 allows for selecting a value within a range defined by minimum and
 maximum values. Both minimum and maximum values can have labels and, in
 addition, the scope may provide extra labels to mark other values from
@@ -333,7 +337,7 @@ Member Function Documentation
 |       | unity.scopes.Value |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
-|       | SliderLabels/>`__  |         |                                      |
+|       | SliderLabels/>`_   |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
 |       | const &            |         |                                      |
@@ -350,10 +354,10 @@ Member Function Documentation
 +--------------------------------------+--------------------------------------+
 
 Create
-`ValueSliderFilter </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/>`__.
+`ValueSliderFilter </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/>`_ .
 
 Creates
-`ValueSliderFilter </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/>`__
+`ValueSliderFilter </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/>`_ 
 of ValueSliderFilter::SliderType::LessThan type.
 
 Parameters
@@ -371,7 +375,7 @@ Parameters
 
 Returns
     Instance of
-    `ValueSliderFilter </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/>`__.
+    `ValueSliderFilter </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/>`_ .
 
 Exceptions
     +-------------------------+-----------------------------------------------------------+
@@ -428,7 +432,7 @@ Exceptions
 |       | unity.scopes.Value |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
-|       | SliderLabels/>`__  |         |                                      |
+|       | SliderLabels/>`_   |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
 |       | const &            |         |                                      |
@@ -454,11 +458,11 @@ Exceptions
 +--------------------------------------+--------------------------------------+
 
 Create
-`ValueSliderFilter </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/>`__
-inside a `FilterGroup </sdk/scopes/cpp/unity.scopes.FilterGroup/>`__.
+`ValueSliderFilter </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/>`_ 
+inside a `FilterGroup </sdk/scopes/cpp/unity.scopes.FilterGroup/>`_ .
 
 Creates
-`ValueSliderFilter </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/>`__
+`ValueSliderFilter </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/>`_ 
 of ValueSliderFilter::SliderType::LessThan type.
 
 Parameters
@@ -478,7 +482,7 @@ Parameters
 
 Returns
     Instance of
-    `ValueSliderFilter </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/>`__.
+    `ValueSliderFilter </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/>`_ .
 
 Exceptions
     +-------------------------+-----------------------------------------------------------+
@@ -497,14 +501,14 @@ Get the default value of this filter.
 
 The default value will be used by the shell if no value is present for
 this filter in the
-`unity::scopes::FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__
+`unity::scopes::FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_ 
 (no value has been set by the user).
 
 Returns
     The default value
 
 +-----------------------------------------------------+-----+------------------------------------------------------------------------+-------------------+-----+---------+
-| bool unity::scopes::ValueSliderFilter::has\_value   | (   | `FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ const &    | *filter\_state*   | )   | const   |
+| bool unity::scopes::ValueSliderFilter::has\_value   | (   | `FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  const &    | *filter\_state*   | )   | const   |
 +-----------------------------------------------------+-----+------------------------------------------------------------------------+-------------------+-----+---------+
 
 Check if filter state object holds a value of this filter.
@@ -567,7 +571,7 @@ Change the default value of this filter.
 
 The default value will be used by the shell if no value is present for
 this filter in the
-`unity::scopes::FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__
+`unity::scopes::FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_ 
 (no value has been set by the user).
 
 Parameters
@@ -579,7 +583,7 @@ Parameters
 | void               | (                  | `FilterState </sdk | *filter\_state*,   |
 | unity::scopes::Val |                    | /scopes/cpp/unity. |                    |
 | ueSliderFilter::up |                    | scopes.FilterState |                    |
-| date\_state        |                    | />`__              |                    |
+| date\_state        |                    | />`_               |                    |
 |                    |                    | &                  |                    |
 +--------------------+--------------------+--------------------+--------------------+
 |                    |                    | double             | *value*            |
@@ -590,7 +594,7 @@ Parameters
 Sets value of this filter instance in filter state object.
 
 This is meant to be used to modify a
-`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ received
+`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  received
 with a search request before sending it back to the client (UI shell).
 
 Exceptions
@@ -612,7 +616,7 @@ Exceptions
 |       | scopes.FilterState |         |                                      |
 |             |                        |                                      |
 | | date\_state        |               |                                      |
-|       | />`__              |         |                                      |
+|       | />`_               |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
 |       | &                  |         |                                      |
@@ -645,17 +649,17 @@ Exceptions
 
 Sets value of this filter instance in filter state object, without
 having an instance of
-`ValueSliderFilter </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/>`__.
+`ValueSliderFilter </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/>`_ .
 
 Updates an instance of
-`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__, without the
+`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_ , without the
 need for an
-`ValueSliderFilter </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/>`__
+`ValueSliderFilter </sdk/scopes/cpp/unity.scopes.ValueSliderFilter/>`_ 
 instance. This is meant to be used when creating a canned Query that
 references another scope.
 
 +--------------------------------------------------+-----+------------------------------------------------------------------------+-------------------+-----+---------+
-| double unity::scopes::ValueSliderFilter::value   | (   | `FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ const &    | *filter\_state*   | )   | const   |
+| double unity::scopes::ValueSliderFilter::value   | (   | `FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  const &    | *filter\_state*   | )   | const   |
 +--------------------------------------------------+-----+------------------------------------------------------------------------+-------------------+-----+---------+
 
 Get value of this filter from filter state object.

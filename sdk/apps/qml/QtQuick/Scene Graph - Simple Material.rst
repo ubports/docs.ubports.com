@@ -1,3 +1,7 @@
+.. _sdk_qtquick_scene_graph_-_simple_material:
+QtQuick Scene Graph - Simple Material
+=====================================
+
 
 
 |image0|

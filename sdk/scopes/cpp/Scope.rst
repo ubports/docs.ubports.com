@@ -1,5 +1,9 @@
+.. _sdk_scope:
+Scope
+=====
+
 Allows queries, preview requests, and activation requests to be sent to
-a scope. `More... </sdk/scopes/cpp/unity.scopes.Scope#details>`__
+a scope. `More... </sdk/scopes/cpp/unity.scopes.Scope/#details>`_ 
 
 ``#include <unity/scopes/Scope.h>``
 
@@ -13,11 +17,11 @@ Inheritance diagram for unity::scopes::Scope:
 -------------------------------
 
 virtual
-`QueryCtrlProxy </sdk/scopes/cpp/unity.scopes#a35e73cba26e0db0b36ffa0283a7d55dd>`__ 
+:ref:`QueryCtrlProxy <sdk_unity_scopes#a35e73cba26e0db0b36ffa0283a7d55dd>` 
 
-`search </sdk/scopes/cpp/unity.scopes.Scope#a09976690ca801ecada50687df6046a29>`__
+`search </sdk/scopes/cpp/unity.scopes.Scope/#a09976690ca801ecada50687df6046a29>`_ 
 (std::string const &query\_string,
-`SearchMetadata </sdk/scopes/cpp/unity.scopes.SearchMetadata/>`__ const
+`SearchMetadata </sdk/scopes/cpp/unity.scopes.SearchMetadata/>`_  const
 &metadata, SearchListenerBase::SPtr const &reply)=0
 
  
@@ -27,13 +31,13 @@ virtual
  
 
 virtual
-`QueryCtrlProxy </sdk/scopes/cpp/unity.scopes#a35e73cba26e0db0b36ffa0283a7d55dd>`__ 
+:ref:`QueryCtrlProxy <sdk_unity_scopes#a35e73cba26e0db0b36ffa0283a7d55dd>` 
 
-`search </sdk/scopes/cpp/unity.scopes.Scope#ab1a19b76666ac9d900122261ea209c62>`__
+`search </sdk/scopes/cpp/unity.scopes.Scope/#ab1a19b76666ac9d900122261ea209c62>`_ 
 (std::string const &query\_string,
-`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ const
+`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  const
 &filter\_state,
-`SearchMetadata </sdk/scopes/cpp/unity.scopes.SearchMetadata/>`__ const
+`SearchMetadata </sdk/scopes/cpp/unity.scopes.SearchMetadata/>`_  const
 &metadata, SearchListenerBase::SPtr const &reply)=0
 
  
@@ -43,13 +47,13 @@ virtual
  
 
 virtual
-`QueryCtrlProxy </sdk/scopes/cpp/unity.scopes#a35e73cba26e0db0b36ffa0283a7d55dd>`__ 
+:ref:`QueryCtrlProxy <sdk_unity_scopes#a35e73cba26e0db0b36ffa0283a7d55dd>` 
 
-`search </sdk/scopes/cpp/unity.scopes.Scope#a4aa5feb40055fd7edaa45e7d059438c7>`__
+`search </sdk/scopes/cpp/unity.scopes.Scope/#a4aa5feb40055fd7edaa45e7d059438c7>`_ 
 (std::string const &query\_string, std::string const &department\_id,
-`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ const
+`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  const
 &filter\_state,
-`SearchMetadata </sdk/scopes/cpp/unity.scopes.SearchMetadata/>`__ const
+`SearchMetadata </sdk/scopes/cpp/unity.scopes.SearchMetadata/>`_  const
 &metadata, SearchListenerBase::SPtr const &reply)=0
 
  
@@ -59,11 +63,11 @@ virtual
  
 
 virtual
-`QueryCtrlProxy </sdk/scopes/cpp/unity.scopes#a35e73cba26e0db0b36ffa0283a7d55dd>`__ 
+:ref:`QueryCtrlProxy <sdk_unity_scopes#a35e73cba26e0db0b36ffa0283a7d55dd>` 
 
-`activate </sdk/scopes/cpp/unity.scopes.Scope#a0af40d8e0032ea8b0344e380360dae18>`__
-(`Result </sdk/scopes/cpp/unity.scopes.Result/>`__ const &result,
-`ActionMetadata </sdk/scopes/cpp/unity.scopes.ActionMetadata/>`__ const
+`activate </sdk/scopes/cpp/unity.scopes.Scope/#a0af40d8e0032ea8b0344e380360dae18>`_ 
+(`Result </sdk/scopes/cpp/unity.scopes.Result/>`_  const &result,
+`ActionMetadata </sdk/scopes/cpp/unity.scopes.ActionMetadata/>`_  const
 &metadata, ActivationListenerBase::SPtr const &reply)=0
 
  
@@ -73,11 +77,11 @@ virtual
  
 
 virtual
-`QueryCtrlProxy </sdk/scopes/cpp/unity.scopes#a35e73cba26e0db0b36ffa0283a7d55dd>`__ 
+:ref:`QueryCtrlProxy <sdk_unity_scopes#a35e73cba26e0db0b36ffa0283a7d55dd>` 
 
-`perform\_action </sdk/scopes/cpp/unity.scopes.Scope#a61f749e46b8fbf1a687d1c055d349f4f>`__
-(`Result </sdk/scopes/cpp/unity.scopes.Result/>`__ const &result,
-`ActionMetadata </sdk/scopes/cpp/unity.scopes.ActionMetadata/>`__ const
+`perform\_action </sdk/scopes/cpp/unity.scopes.Scope/#a61f749e46b8fbf1a687d1c055d349f4f>`_ 
+(`Result </sdk/scopes/cpp/unity.scopes.Result/>`_  const &result,
+`ActionMetadata </sdk/scopes/cpp/unity.scopes.ActionMetadata/>`_  const
 &metadata, std::string const &widget\_id, std::string const &action\_id,
 ActivationListenerBase::SPtr const &reply)=0
 
@@ -88,11 +92,11 @@ ActivationListenerBase::SPtr const &reply)=0
  
 
 virtual
-`QueryCtrlProxy </sdk/scopes/cpp/unity.scopes#a35e73cba26e0db0b36ffa0283a7d55dd>`__ 
+:ref:`QueryCtrlProxy <sdk_unity_scopes#a35e73cba26e0db0b36ffa0283a7d55dd>` 
 
-`preview </sdk/scopes/cpp/unity.scopes.Scope#a82b24083994e676524b10c407f281aa4>`__
-(`Result </sdk/scopes/cpp/unity.scopes.Result/>`__ const &result,
-`ActionMetadata </sdk/scopes/cpp/unity.scopes.ActionMetadata/>`__ const
+`preview </sdk/scopes/cpp/unity.scopes.Scope/#a82b24083994e676524b10c407f281aa4>`_ 
+(`Result </sdk/scopes/cpp/unity.scopes.Result/>`_  const &result,
+`ActionMetadata </sdk/scopes/cpp/unity.scopes.ActionMetadata/>`_  const
 &metadata, PreviewListenerBase::SPtr const &reply)=0
 
  
@@ -103,7 +107,7 @@ virtual
 
 virtual 
 
-`~Scope </sdk/scopes/cpp/unity.scopes.Scope#a8d717a89a470cfa65080f132ea2ff4ab>`__
+`~Scope </sdk/scopes/cpp/unity.scopes.Scope/#a8d717a89a470cfa65080f132ea2ff4ab>`_ 
 ()
 
  
@@ -113,9 +117,9 @@ virtual 
  
 
 virtual
-`ChildScopeList </sdk/scopes/cpp/unity.scopes#a4daaa9ad07daf596af4dacd6e0b7be9a>`__ 
+:ref:`ChildScopeList <sdk_unity_scopes#a4daaa9ad07daf596af4dacd6e0b7be9a>` 
 
-`child\_scopes </sdk/scopes/cpp/unity.scopes.Scope#a1b9676ae625ffff0ee992da1f4bd8a5c>`__
+`child\_scopes </sdk/scopes/cpp/unity.scopes.Scope/#a1b9676ae625ffff0ee992da1f4bd8a5c>`_ 
 ()=0
 
  
@@ -126,10 +130,10 @@ virtual
 
 virtual bool 
 
-`set\_child\_scopes </sdk/scopes/cpp/unity.scopes.Scope#a7dcef44d071e0b0bcff34bf588408297>`__
-(`ChildScopeList </sdk/scopes/cpp/unity.scopes#a4daaa9ad07daf596af4dacd6e0b7be9a>`__
+`set\_child\_scopes </sdk/scopes/cpp/unity.scopes.Scope/#a7dcef44d071e0b0bcff34bf588408297>`_ 
+(:ref:`ChildScopeList <sdk_unity_scopes#a4daaa9ad07daf596af4dacd6e0b7be9a>`
 const
-&\ `child\_scopes </sdk/scopes/cpp/unity.scopes.Scope#a1b9676ae625ffff0ee992da1f4bd8a5c>`__)=0
+&\ `child\_scopes </sdk/scopes/cpp/unity.scopes.Scope/#a1b9676ae625ffff0ee992da1f4bd8a5c>`_ )=0
 
  
 
@@ -138,14 +142,14 @@ const
  
 
 virtual
-`QueryCtrlProxy </sdk/scopes/cpp/unity.scopes#a35e73cba26e0db0b36ffa0283a7d55dd>`__ 
+:ref:`QueryCtrlProxy <sdk_unity_scopes#a35e73cba26e0db0b36ffa0283a7d55dd>` 
 
-`search </sdk/scopes/cpp/unity.scopes.Scope#a27d05e99cc572508bcfe620d20158c91>`__
+`search </sdk/scopes/cpp/unity.scopes.Scope/#a27d05e99cc572508bcfe620d20158c91>`_ 
 (std::string const &query\_string, std::string const &department\_id,
-`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ const
-&filter\_state, `Variant </sdk/scopes/cpp/unity.scopes.Variant/>`__
+`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  const
+&filter\_state, `Variant </sdk/scopes/cpp/unity.scopes.Variant/>`_ 
 const &user\_data,
-`SearchMetadata </sdk/scopes/cpp/unity.scopes.SearchMetadata/>`__ const
+`SearchMetadata </sdk/scopes/cpp/unity.scopes.SearchMetadata/>`_  const
 &metadata, SearchListenerBase::SPtr const &reply)=0
 
  
@@ -155,11 +159,11 @@ const &user\_data,
  
 
 virtual
-`QueryCtrlProxy </sdk/scopes/cpp/unity.scopes#a35e73cba26e0db0b36ffa0283a7d55dd>`__ 
+:ref:`QueryCtrlProxy <sdk_unity_scopes#a35e73cba26e0db0b36ffa0283a7d55dd>` 
 
-`activate\_result\_action </sdk/scopes/cpp/unity.scopes.Scope#aa53e54f6d9b505913dafda9ffca24d58>`__
-(`Result </sdk/scopes/cpp/unity.scopes.Result/>`__ const &result,
-`ActionMetadata </sdk/scopes/cpp/unity.scopes.ActionMetadata/>`__ const
+`activate\_result\_action </sdk/scopes/cpp/unity.scopes.Scope/#aa53e54f6d9b505913dafda9ffca24d58>`_ 
+(`Result </sdk/scopes/cpp/unity.scopes.Result/>`_  const &result,
+`ActionMetadata </sdk/scopes/cpp/unity.scopes.ActionMetadata/>`_  const
 &metadata, std::string const &action\_id, ActivationListenerBase::SPtr
 const &reply)=0
 
@@ -170,11 +174,11 @@ const &reply)=0
  
 
 |-| Public Member Functions inherited from
-`unity::scopes::Object </sdk/scopes/cpp/unity.scopes.Object/>`__
+`unity::scopes::Object </sdk/scopes/cpp/unity.scopes.Object/>`_ 
 
 virtual std::string 
 
-`endpoint </sdk/scopes/cpp/unity.scopes.Object#ad7618cc9d878c40b389361d4acd473ae>`__
+`endpoint </sdk/scopes/cpp/unity.scopes.Object/#ad7618cc9d878c40b389361d4acd473ae>`_ 
 ()=0
 
  
@@ -185,7 +189,7 @@ virtual std::string 
 
 virtual std::string 
 
-`identity </sdk/scopes/cpp/unity.scopes.Object#a1b55aea886f0a68cb8a578f7ee0b1cfd>`__
+`identity </sdk/scopes/cpp/unity.scopes.Object/#a1b55aea886f0a68cb8a578f7ee0b1cfd>`_ 
 ()=0
 
  
@@ -196,7 +200,7 @@ virtual std::string 
 
 virtual std::string 
 
-`target\_category </sdk/scopes/cpp/unity.scopes.Object#a40a997516629df3dacca9742dbddd6cb>`__
+`target\_category </sdk/scopes/cpp/unity.scopes.Object/#a40a997516629df3dacca9742dbddd6cb>`_ 
 ()=0
 
  
@@ -207,7 +211,7 @@ virtual std::string 
 
 virtual int64\_t 
 
-`timeout </sdk/scopes/cpp/unity.scopes.Object#a41d9839f1e3cbcd6d8baee0736feccab>`__
+`timeout </sdk/scopes/cpp/unity.scopes.Object/#a41d9839f1e3cbcd6d8baee0736feccab>`_ 
 ()=0
 
  
@@ -218,7 +222,7 @@ virtual int64\_t 
 
 virtual std::string 
 
-`to\_string </sdk/scopes/cpp/unity.scopes.Object#a9ae27e1f30dc755abcd796a1e8a25150>`__
+`to\_string </sdk/scopes/cpp/unity.scopes.Object/#a9ae27e1f30dc755abcd796a1e8a25150>`_ 
 ()=0
 
  
@@ -254,9 +258,9 @@ Constructor & Destructor Documentation
 | -------------+                       |                                      |
 +--------------------------------------+--------------------------------------+
 
-Destroys a `Scope </sdk/scopes/cpp/unity.scopes.Scope/>`__.
+Destroys a `Scope </sdk/scopes/cpp/unity.scopes.Scope/>`_ .
 
-Destroying a `Scope </sdk/scopes/cpp/unity.scopes.Scope/>`__ has no
+Destroying a `Scope </sdk/scopes/cpp/unity.scopes.Scope/>`_  has no
 effect on any query that might still be in progress.
 
 Member Function Documentation
@@ -269,19 +273,16 @@ Member Function Documentation
 | | virtual            | (             |                                      |
 |       | `Result </sdk/scop | *result |                                      |
 | *,          |                        |                                      |
-| | `QueryCtrlProxy </ |               |                                      |
+| | `QueryCtrlProxy <s |               |                                      |
 |       | es/cpp/unity.scope |         |                                      |
 |             |                        |                                      |
-| | sdk/scopes/cpp/uni |               |                                      |
-|       | s.Result/>`__      |         |                                      |
+| | dk_unity_scopes#a3 |               |                                      |
+|       | s.Result/>`_       |         |                                      |
 |             |                        |                                      |
-| | ty.scopes#a35e73cb |               |                                      |
+| | 5e73cba26e0db0b36f |               |                                      |
 |       | const &            |         |                                      |
 |             |                        |                                      |
-| | a26e0db0b36ffa0283 |               |                                      |
-|       |                    |         |                                      |
-|             |                        |                                      |
-| | a7d55dd>`__        |               |                                      |
+| | fa0283a7d55dd>`_   |               |                                      |
 |       |                    |         |                                      |
 |             |                        |                                      |
 | | unity::scopes::Sco |               |                                      |
@@ -303,7 +304,7 @@ Member Function Documentation
 |       | ty.scopes.ActionMe |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
-|       | tadata/>`__        |         |                                      |
+|       | tadata/>`_         |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
 |       | const &            |         |                                      |
@@ -352,19 +353,16 @@ Returns
 | | virtual            | (             |                                      |
 |       | `Result </sdk/scop | *result |                                      |
 | *,          |                        |                                      |
-| | `QueryCtrlProxy </ |               |                                      |
+| | `QueryCtrlProxy <s |               |                                      |
 |       | es/cpp/unity.scope |         |                                      |
 |             |                        |                                      |
-| | sdk/scopes/cpp/uni |               |                                      |
-|       | s.Result/>`__      |         |                                      |
+| | dk_unity_scopes#a3 |               |                                      |
+|       | s.Result/>`_       |         |                                      |
 |             |                        |                                      |
-| | ty.scopes#a35e73cb |               |                                      |
+| | 5e73cba26e0db0b36f |               |                                      |
 |       | const &            |         |                                      |
 |             |                        |                                      |
-| | a26e0db0b36ffa0283 |               |                                      |
-|       |                    |         |                                      |
-|             |                        |                                      |
-| | a7d55dd>`__        |               |                                      |
+| | fa0283a7d55dd>`_   |               |                                      |
 |       |                    |         |                                      |
 |             |                        |                                      |
 | | unity::scopes::Sco |               |                                      |
@@ -389,7 +387,7 @@ Returns
 |       | ty.scopes.ActionMe |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
-|       | tadata/>`__        |         |                                      |
+|       | tadata/>`_         |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
 |       | const &            |         |                                      |
@@ -452,19 +450,19 @@ Returns
 | | `ChildScopeLis |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
-| | t </sdk/scopes |                |  |                                      |
+| | t <sdk_unity_s |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
-| | /cpp/unity.sco |                |  |                                      |
+| | copes#a4daaa9a |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
-| | pes#a4daaa9ad0 |                |  |                                      |
+| | d07daf596af4da |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
-| | 7daf596af4dacd |                |  |                                      |
+| | cd6e0b7be9a>`_ |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
-| | 6e0b7be9a>`__  |                |  |                                      |
+| | _              |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
 | | unity::scopes: |                |  |                                      |
@@ -493,19 +491,16 @@ Returns
 | | virtual            | (             |                                      |
 |       | `Result </sdk/scop | *result |                                      |
 | *,          |                        |                                      |
-| | `QueryCtrlProxy </ |               |                                      |
+| | `QueryCtrlProxy <s |               |                                      |
 |       | es/cpp/unity.scope |         |                                      |
 |             |                        |                                      |
-| | sdk/scopes/cpp/uni |               |                                      |
-|       | s.Result/>`__      |         |                                      |
+| | dk_unity_scopes#a3 |               |                                      |
+|       | s.Result/>`_       |         |                                      |
 |             |                        |                                      |
-| | ty.scopes#a35e73cb |               |                                      |
+| | 5e73cba26e0db0b36f |               |                                      |
 |       | const &            |         |                                      |
 |             |                        |                                      |
-| | a26e0db0b36ffa0283 |               |                                      |
-|       |                    |         |                                      |
-|             |                        |                                      |
-| | a7d55dd>`__        |               |                                      |
+| | fa0283a7d55dd>`_   |               |                                      |
 |       |                    |         |                                      |
 |             |                        |                                      |
 | | unity::scopes::Sco |               |                                      |
@@ -530,7 +525,7 @@ Returns
 |       | ty.scopes.ActionMe |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
-|       | tadata/>`__        |         |                                      |
+|       | tadata/>`_         |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
 |       | const &            |         |                                      |
@@ -601,19 +596,16 @@ Returns
 | | virtual            | (             |                                      |
 |       | `Result </sdk/scop | *result |                                      |
 | *,          |                        |                                      |
-| | `QueryCtrlProxy </ |               |                                      |
+| | `QueryCtrlProxy <s |               |                                      |
 |       | es/cpp/unity.scope |         |                                      |
 |             |                        |                                      |
-| | sdk/scopes/cpp/uni |               |                                      |
-|       | s.Result/>`__      |         |                                      |
+| | dk_unity_scopes#a3 |               |                                      |
+|       | s.Result/>`_       |         |                                      |
 |             |                        |                                      |
-| | ty.scopes#a35e73cb |               |                                      |
+| | 5e73cba26e0db0b36f |               |                                      |
 |       | const &            |         |                                      |
 |             |                        |                                      |
-| | a26e0db0b36ffa0283 |               |                                      |
-|       |                    |         |                                      |
-|             |                        |                                      |
-| | a7d55dd>`__        |               |                                      |
+| | fa0283a7d55dd>`_   |               |                                      |
 |       |                    |         |                                      |
 |             |                        |                                      |
 | | unity::scopes::Sco |               |                                      |
@@ -635,7 +627,7 @@ Returns
 |       | ty.scopes.ActionMe |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
-|       | tadata/>`__        |         |                                      |
+|       | tadata/>`_         |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
 |       | const &            |         |                                      |
@@ -684,19 +676,16 @@ Returns
 | | virtual            | (             |                                      |
 |       | std::string const  | *query\ |                                      |
 | _string*,   |                        |                                      |
-| | `QueryCtrlProxy </ |               |                                      |
+| | `QueryCtrlProxy <s |               |                                      |
 |       | &                  |         |                                      |
 |             |                        |                                      |
-| | sdk/scopes/cpp/uni |               |                                      |
+| | dk_unity_scopes#a3 |               |                                      |
 |       |                    |         |                                      |
 |             |                        |                                      |
-| | ty.scopes#a35e73cb |               |                                      |
+| | 5e73cba26e0db0b36f |               |                                      |
 |       |                    |         |                                      |
 |             |                        |                                      |
-| | a26e0db0b36ffa0283 |               |                                      |
-|       |                    |         |                                      |
-|             |                        |                                      |
-| | a7d55dd>`__        |               |                                      |
+| | fa0283a7d55dd>`_   |               |                                      |
 |       |                    |         |                                      |
 |             |                        |                                      |
 | | unity::scopes::Sco |               |                                      |
@@ -718,7 +707,7 @@ Returns
 |       | ty.scopes.SearchMe |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
-|       | tadata/>`__        |         |                                      |
+|       | tadata/>`_         |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
 |       | const &            |         |                                      |
@@ -749,17 +738,17 @@ Returns
 Initiates a search query.
 
 The
-`search() </sdk/scopes/cpp/unity.scopes.Scope#a09976690ca801ecada50687df6046a29>`__
+`search() </sdk/scopes/cpp/unity.scopes.Scope/#a09976690ca801ecada50687df6046a29>`_ 
 method expects a
-`SearchListenerBase </sdk/scopes/cpp/unity.scopes.SearchListenerBase/>`__,
+`SearchListenerBase </sdk/scopes/cpp/unity.scopes.SearchListenerBase/>`_ ,
 which it uses to return the results for the query.
-`search() </sdk/scopes/cpp/unity.scopes.Scope#a09976690ca801ecada50687df6046a29>`__
+`search() </sdk/scopes/cpp/unity.scopes.Scope/#a09976690ca801ecada50687df6046a29>`_ 
 may block for some time, for example, if the target scope is not running
 and needs to be started first. Results for the query may begin to arrive
 only after
-`search() </sdk/scopes/cpp/unity.scopes.Scope#a09976690ca801ecada50687df6046a29>`__
+`search() </sdk/scopes/cpp/unity.scopes.Scope/#a09976690ca801ecada50687df6046a29>`_ 
 completes (but may also arrive while
-`search() </sdk/scopes/cpp/unity.scopes.Scope#a09976690ca801ecada50687df6046a29>`__
+`search() </sdk/scopes/cpp/unity.scopes.Scope/#a09976690ca801ecada50687df6046a29>`_ 
 is still running).
 
 Parameters
@@ -781,19 +770,16 @@ Returns
 | | virtual            | (             |                                      |
 |       | std::string const  | *query\ |                                      |
 | _string*,   |                        |                                      |
-| | `QueryCtrlProxy </ |               |                                      |
+| | `QueryCtrlProxy <s |               |                                      |
 |       | &                  |         |                                      |
 |             |                        |                                      |
-| | sdk/scopes/cpp/uni |               |                                      |
+| | dk_unity_scopes#a3 |               |                                      |
 |       |                    |         |                                      |
 |             |                        |                                      |
-| | ty.scopes#a35e73cb |               |                                      |
+| | 5e73cba26e0db0b36f |               |                                      |
 |       |                    |         |                                      |
 |             |                        |                                      |
-| | a26e0db0b36ffa0283 |               |                                      |
-|       |                    |         |                                      |
-|             |                        |                                      |
-| | a7d55dd>`__        |               |                                      |
+| | fa0283a7d55dd>`_   |               |                                      |
 |       |                    |         |                                      |
 |             |                        |                                      |
 | | unity::scopes::Sco |               |                                      |
@@ -815,7 +801,7 @@ Returns
 |       | scopes.FilterState |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
-|       | />`__              |         |                                      |
+|       | />`_               |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
 |       | const &            |         |                                      |
@@ -833,7 +819,7 @@ Returns
 |       | ty.scopes.SearchMe |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
-|       | tadata/>`__        |         |                                      |
+|       | tadata/>`_         |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
 |       | const &            |         |                                      |
@@ -865,7 +851,7 @@ Initiates a search query (overloaded method).
 
 This method has same synopsis as previous method, but it takes
 additional
-`unity::scopes::FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__
+`unity::scopes::FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_ 
 argument.
 
 Parameters
@@ -889,19 +875,16 @@ Returns
 | | virtual            | (             |                                      |
 |       | std::string const  | *query\ |                                      |
 | _string*,   |                        |                                      |
-| | `QueryCtrlProxy </ |               |                                      |
+| | `QueryCtrlProxy <s |               |                                      |
 |       | &                  |         |                                      |
 |             |                        |                                      |
-| | sdk/scopes/cpp/uni |               |                                      |
+| | dk_unity_scopes#a3 |               |                                      |
 |       |                    |         |                                      |
 |             |                        |                                      |
-| | ty.scopes#a35e73cb |               |                                      |
+| | 5e73cba26e0db0b36f |               |                                      |
 |       |                    |         |                                      |
 |             |                        |                                      |
-| | a26e0db0b36ffa0283 |               |                                      |
-|       |                    |         |                                      |
-|             |                        |                                      |
-| | a7d55dd>`__        |               |                                      |
+| | fa0283a7d55dd>`_   |               |                                      |
 |       |                    |         |                                      |
 |             |                        |                                      |
 | | unity::scopes::Sco |               |                                      |
@@ -932,7 +915,7 @@ Returns
 |       | scopes.FilterState |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
-|       | />`__              |         |                                      |
+|       | />`_               |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
 |       | const &            |         |                                      |
@@ -950,7 +933,7 @@ Returns
 |       | ty.scopes.SearchMe |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
-|       | tadata/>`__        |         |                                      |
+|       | tadata/>`_         |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
 |       | const &            |         |                                      |
@@ -1006,19 +989,16 @@ Returns
 | | virtual            | (             |                                      |
 |       | std::string const  | *query\ |                                      |
 | _string*,   |                        |                                      |
-| | `QueryCtrlProxy </ |               |                                      |
+| | `QueryCtrlProxy <s |               |                                      |
 |       | &                  |         |                                      |
 |             |                        |                                      |
-| | sdk/scopes/cpp/uni |               |                                      |
+| | dk_unity_scopes#a3 |               |                                      |
 |       |                    |         |                                      |
 |             |                        |                                      |
-| | ty.scopes#a35e73cb |               |                                      |
+| | 5e73cba26e0db0b36f |               |                                      |
 |       |                    |         |                                      |
 |             |                        |                                      |
-| | a26e0db0b36ffa0283 |               |                                      |
-|       |                    |         |                                      |
-|             |                        |                                      |
-| | a7d55dd>`__        |               |                                      |
+| | fa0283a7d55dd>`_   |               |                                      |
 |       |                    |         |                                      |
 |             |                        |                                      |
 | | unity::scopes::Sco |               |                                      |
@@ -1049,7 +1029,7 @@ Returns
 |       | scopes.FilterState |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
-|       | />`__              |         |                                      |
+|       | />`_               |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
 |       | const &            |         |                                      |
@@ -1064,7 +1044,7 @@ Returns
 |       | pes/cpp/unity.scop |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
-|       | es.Variant/>`__    |         |                                      |
+|       | es.Variant/>`_     |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
 |       | const &            |         |                                      |
@@ -1082,7 +1062,7 @@ Returns
 |       | ty.scopes.SearchMe |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
-|       | tadata/>`__        |         |                                      |
+|       | tadata/>`_         |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
 |       | const &            |         |                                      |
@@ -1141,22 +1121,19 @@ Returns
 | ldScopeL | *child\_scop | )          |                                      |
 |    |              |                  |                                      |
 | | unity::scope |              | ist  |                                      |
-| </sdk/sc | es*          |            |                                      |
+| <sdk_uni | es*          |            |                                      |
 |    |              |                  |                                      |
-| | s::Scope::se |              | opes |                                      |
-| /cpp/uni |              |            |                                      |
-|    |              |                  |                                      |
-| | t\_child\_sc |              | ty.s |                                      |
+| | s::Scope::se |              | ty_s |                                      |
 | copes#a4 |              |            |                                      |
 |    |              |                  |                                      |
-| | opes         |              | daaa |                                      |
+| | t\_child\_sc |              | daaa |                                      |
 | 9ad07daf |              |            |                                      |
 |    |              |                  |                                      |
-| |              |              | 596a |                                      |
+| | opes         |              | 596a |                                      |
 | f4dacd6e |              |            |                                      |
 |    |              |                  |                                      |
 | |              |              | 0b7b |                                      |
-| e9a>`__  |              |            |                                      |
+| e9a>`_   |              |            |                                      |
 |    |              |                  |                                      |
 | |              |              | cons |                                      |
 | t &      |              |            |                                      |

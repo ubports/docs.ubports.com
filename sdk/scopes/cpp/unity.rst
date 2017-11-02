@@ -1,3 +1,7 @@
+.. _sdk_unity:
+unity
+=====
+
 Top-level namespace for all things Unity-related. More...
 
         Namespaces
@@ -5,7 +9,7 @@ Top-level namespace for all things Unity-related. More...
 
  
 
-`scopes </sdk/scopes/cpp/unity.scopes/>`__
+:ref:`scopes <sdk_unity_scopes>`
 
  
 

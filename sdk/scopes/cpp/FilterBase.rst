@@ -1,5 +1,9 @@
+.. _sdk_filterbase:
+FilterBase
+==========
+
 Base class for all implementations of filters.
-`More... </sdk/scopes/cpp/unity.scopes.FilterBase#details>`__
+`More... </sdk/scopes/cpp/unity.scopes.FilterBase/#details>`_ 
 
 ``#include <unity/scopes/FilterBase.h>``
 
@@ -14,17 +18,17 @@ Inheritance diagram for unity::scopes::FilterBase:
 
 enum  
 
-`DisplayHints </sdk/scopes/cpp/unity.scopes.FilterBase#ab9e833d5e4029fed745d15ba63715159>`__
+`DisplayHints </sdk/scopes/cpp/unity.scopes.FilterBase/#ab9e833d5e4029fed745d15ba63715159>`_ 
 {
-`Default </sdk/scopes/cpp/unity.scopes.FilterBase#ab9e833d5e4029fed745d15ba63715159a277f24de7d0bcc7e8ec8bfe0639f356f>`__
+`Default </sdk/scopes/cpp/unity.scopes.FilterBase/#ab9e833d5e4029fed745d15ba63715159a277f24de7d0bcc7e8ec8bfe0639f356f>`_ 
 = 0,
-`Primary </sdk/scopes/cpp/unity.scopes.FilterBase#ab9e833d5e4029fed745d15ba63715159a8c8262ffd071c61b213ec489b64bdf56>`__
+`Primary </sdk/scopes/cpp/unity.scopes.FilterBase/#ab9e833d5e4029fed745d15ba63715159a8c8262ffd071c61b213ec489b64bdf56>`_ 
 = 1 }
 
  
 
 | Display hints for the Shell UI.
-  `More... </sdk/scopes/cpp/unity.scopes.FilterBase#ab9e833d5e4029fed745d15ba63715159>`__
+  `More... </sdk/scopes/cpp/unity.scopes.FilterBase/#ab9e833d5e4029fed745d15ba63715159>`_ 
 
  
 
@@ -33,7 +37,7 @@ enum  
 
 void 
 
-`set\_display\_hints </sdk/scopes/cpp/unity.scopes.FilterBase#ab4ab1b600ce3967dc50255e736c6d02e>`__
+`set\_display\_hints </sdk/scopes/cpp/unity.scopes.FilterBase/#ab4ab1b600ce3967dc50255e736c6d02e>`_ 
 (int hints)
 
  
@@ -44,7 +48,7 @@ void 
 
 int 
 
-`display\_hints </sdk/scopes/cpp/unity.scopes.FilterBase#a8f20819591155edaab29d535c5c4c261>`__
+`display\_hints </sdk/scopes/cpp/unity.scopes.FilterBase/#a8f20819591155edaab29d535c5c4c261>`_ 
 () const
 
  
@@ -55,7 +59,7 @@ int 
 
 std::string 
 
-`id </sdk/scopes/cpp/unity.scopes.FilterBase#a1f2d96647b23af77b1ff1cffc80f3868>`__
+`id </sdk/scopes/cpp/unity.scopes.FilterBase/#a1f2d96647b23af77b1ff1cffc80f3868>`_ 
 () const
 
  
@@ -66,7 +70,7 @@ std::string 
 
 std::string 
 
-`filter\_type </sdk/scopes/cpp/unity.scopes.FilterBase#aadc7344c951961331dcbe67149d56c78>`__
+`filter\_type </sdk/scopes/cpp/unity.scopes.FilterBase/#aadc7344c951961331dcbe67149d56c78>`_ 
 () const
 
  
@@ -77,9 +81,9 @@ std::string 
 
 void 
 
-`set\_title </sdk/scopes/cpp/unity.scopes.FilterBase#aec8ceae8141811833af087ba2ebe086c>`__
+`set\_title </sdk/scopes/cpp/unity.scopes.FilterBase/#aec8ceae8141811833af087ba2ebe086c>`_ 
 (std::string const
-&\ `title </sdk/scopes/cpp/unity.scopes.FilterBase#a3f0c324b3aac39bb8967fc900f3a909e>`__)
+&\ `title </sdk/scopes/cpp/unity.scopes.FilterBase/#a3f0c324b3aac39bb8967fc900f3a909e>`_ )
 
  
 
@@ -89,7 +93,7 @@ void 
 
 std::string 
 
-`title </sdk/scopes/cpp/unity.scopes.FilterBase#a3f0c324b3aac39bb8967fc900f3a909e>`__
+`title </sdk/scopes/cpp/unity.scopes.FilterBase/#a3f0c324b3aac39bb8967fc900f3a909e>`_ 
 () const
 
  
@@ -100,7 +104,7 @@ std::string 
 
 FilterGroup::SCPtr 
 
-`filter\_group </sdk/scopes/cpp/unity.scopes.FilterBase#afff4685371fe67e6f87f58e31f69a037>`__
+`filter\_group </sdk/scopes/cpp/unity.scopes.FilterBase/#afff4685371fe67e6f87f58e31f69a037>`_ 
 () const
 
  
@@ -115,17 +119,17 @@ Detailed Description
 Base class for all implementations of filters.
 
 All implementations of
-`FilterBase </sdk/scopes/cpp/unity.scopes.FilterBase/>`__ define the
+`FilterBase </sdk/scopes/cpp/unity.scopes.FilterBase/>`_  define the
 "look" of a filter in the UI and do not hold any state information. The
 actual state of a filters is kept by a
-`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ object.
+`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  object.
 
 Member Enumeration Documentation
 --------------------------------
 
-+--------------------------------------------------------------------------------------------------------------------------------+
-| enum `unity::scopes::FilterBase::DisplayHints </sdk/scopes/cpp/unity.scopes.FilterBase#ab9e833d5e4029fed745d15ba63715159>`__   |
-+--------------------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------+
+| enum `unity::scopes::FilterBase::DisplayHints </sdk/scopes/cpp/unity.scopes.FilterBase/#ab9e833d5e4029fed745d15ba63715159>`_    |
++---------------------------------------------------------------------------------------------------------------------------------+
 
 Display hints for the Shell UI.
 
@@ -136,7 +140,7 @@ Default value (no hint)
        \ Primary 
 Display this filter as a primary navigation, if possible. Currently only
 the
-`OptionSelectorFilter </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter/>`__
+`OptionSelectorFilter </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter/>`_ 
 can act as primary navigation.
 
 Member Function Documentation

@@ -1,3 +1,7 @@
+.. _sdk_scopejs_department:
+ScopeJS Department
+==================
+
 
 A department with optional sub-department
 
@@ -8,7 +12,7 @@ Add sub-department to this department
 
 **Parameters:**
 
--  ``sub`` **<`Department </sdk/scopes/js/ScopeJS/Department/>`__>**
+-  :ref:``sub`` **<`Department <sdk_scopejs_department>`>**
 
    department
 

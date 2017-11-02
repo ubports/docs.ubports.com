@@ -1,3 +1,7 @@
+.. _sdk_qtaudioengine_sound:
+QtAudioEngine Sound
+===================
+
 Define a variety of samples and parameters to be used for SoundInstance.
 
 +---------------------+----------------------------+
@@ -9,39 +13,37 @@ Define a variety of samples and parameters to be used for SoundInstance.
 Properties
 ----------
 
--  ****`attenuationModel </sdk/apps/qml/QtAudioEngine/Sound#attenuationModel-prop>`__****
+-  :ref:`attenuationModel <sdk_qtaudioengine_sound_attenuationModel-prop>`
    : string
--  ****`category </sdk/apps/qml/QtAudioEngine/Sound#category-prop>`__****
-   : string
--  ****`name </sdk/apps/qml/QtAudioEngine/Sound#name-prop>`__**** :
-   string
--  ****`playType </sdk/apps/qml/QtAudioEngine/Sound#playType-prop>`__****
-   : enumeration
+-  :ref:`category <sdk_qtaudioengine_sound_category-prop>` : string
+-  :ref:`name <sdk_qtaudioengine_sound_name-prop>` : string
+-  :ref:`playType <sdk_qtaudioengine_sound_playType-prop>` :
+   enumeration
 
 Methods
 -------
 
--  ****`play </sdk/apps/qml/QtAudioEngine/Sound#play-method-12>`__****\ (position,
+-  :ref:`play <sdk_qtaudioengine_sound_play-method-12>`\ (position,
    velocity, direction, gain, pitch)
--  ****`play </sdk/apps/qml/QtAudioEngine/Sound#play-method-11>`__****\ (position,
+-  :ref:`play <sdk_qtaudioengine_sound_play-method-11>`\ (position,
    velocity, gain, pitch)
--  ****`play </sdk/apps/qml/QtAudioEngine/Sound#play-method-10>`__****\ (position,
+-  :ref:`play <sdk_qtaudioengine_sound_play-method-10>`\ (position,
    gain, pitch)
--  ****`play </sdk/apps/qml/QtAudioEngine/Sound#play-method-9>`__****\ (position,
+-  :ref:`play <sdk_qtaudioengine_sound_play-method-9>`\ (position,
    velocity, direction, gain)
--  ****`play </sdk/apps/qml/QtAudioEngine/Sound#play-method-8>`__****\ (position,
+-  :ref:`play <sdk_qtaudioengine_sound_play-method-8>`\ (position,
    velocity, gain)
--  ****`play </sdk/apps/qml/QtAudioEngine/Sound#play-method-7>`__****\ (position,
+-  :ref:`play <sdk_qtaudioengine_sound_play-method-7>`\ (position,
    gain)
--  ****`play </sdk/apps/qml/QtAudioEngine/Sound#play-method-6>`__****\ (position,
+-  :ref:`play <sdk_qtaudioengine_sound_play-method-6>`\ (position,
    velocity, direction)
--  ****`play </sdk/apps/qml/QtAudioEngine/Sound#play-method-5>`__****\ (position,
+-  :ref:`play <sdk_qtaudioengine_sound_play-method-5>`\ (position,
    velocity)
--  ****`play </sdk/apps/qml/QtAudioEngine/Sound#play-method-4>`__****\ (position)
--  ****`play </sdk/apps/qml/QtAudioEngine/Sound#play-method-3>`__****\ (gain,
+-  :ref:`play <sdk_qtaudioengine_sound_play-method-4>`\ (position)
+-  :ref:`play <sdk_qtaudioengine_sound_play-method-3>`\ (gain,
    pitch)
--  ****`play </sdk/apps/qml/QtAudioEngine/Sound#play-method-2>`__****\ (gain)
--  ****`play </sdk/apps/qml/QtAudioEngine/Sound#play-method>`__****\ ()
+-  :ref:`play <sdk_qtaudioengine_sound_play-method-2>`\ (gain)
+-  :ref:`play <sdk_qtaudioengine_sound_play-method>`\ ()
 
 Detailed Description
 --------------------
@@ -49,9 +51,9 @@ Detailed Description
 This type is part of the **QtAudioEngine 1.0** module.
 
 Sound can be accessed through
-`QtAudioEngine::AudioEngine::sounds </sdk/apps/qml/QtAudioEngine/AudioEngine#sounds-prop>`__
+:ref:`QtAudioEngine::AudioEngine::sounds <sdk_qtaudioengine_audioengine#sounds-prop>`
 with its unique name and must be defined inside
-`AudioEngine </sdk/apps/qml/QtAudioEngine/AudioEngine/>`__.
+:ref:`AudioEngine <sdk_qtaudioengine_audioengine>`.
 
 .. code:: qml
 
@@ -96,6 +98,8 @@ with its unique name and must be defined inside
 Property Documentation
 ----------------------
 
+.. _sdk_qtaudioengine_sound_attenuationModel-prop:
+
 +--------------------------------------------------------------------------+
 |        \ attenuationModel : string                                       |
 +--------------------------------------------------------------------------+
@@ -104,15 +108,19 @@ This property specifies which attenuation model this sound will apply.
 
 | 
 
+.. _sdk_qtaudioengine_sound_category-prop:
+
 +--------------------------------------------------------------------------+
 |        \ category : string                                               |
 +--------------------------------------------------------------------------+
 
 This property specifies which
-`AudioCategory </sdk/apps/qml/QtAudioEngine/AudioCategory/>`__ this
-sound belongs to.
+:ref:`AudioCategory <sdk_qtaudioengine_audiocategory>` this sound belongs
+to.
 
 | 
+
+.. _sdk_qtaudioengine_sound_name-prop:
 
 +--------------------------------------------------------------------------+
 |        \ name : string                                                   |
@@ -122,6 +130,8 @@ This property holds the name of Sound, must be unique among all sounds
 and only defined once.
 
 | 
+
+.. _sdk_qtaudioengine_sound_playType-prop:
 
 +--------------------------------------------------------------------------+
 |        \ playType : enumeration                                          |
@@ -141,132 +151,144 @@ The default value is Random.
 Method Documentation
 --------------------
 
+.. _sdk_qtaudioengine_sound_play-method:
+
 +--------------------------------------------------------------------------+
 |        \ play(position, velocity, direction, gain, pitch)                |
 +--------------------------------------------------------------------------+
 
-Creates a new
-`SoundInstance </sdk/apps/qml/QtAudioEngine/SoundInstance/>`__ and
+Creates a new :ref:`SoundInstance <sdk_qtaudioengine_soundinstance>` and
 starts playing with specified *position*, *velocity*, *direction*,
 adjusted *gain* and *pitch*.
 
 | 
 
+.. _sdk_qtaudioengine_sound_play-method:
+
 +--------------------------------------------------------------------------+
 |        \ play(position, velocity, gain, pitch)                           |
 +--------------------------------------------------------------------------+
 
-Creates a new
-`SoundInstance </sdk/apps/qml/QtAudioEngine/SoundInstance/>`__ and
+Creates a new :ref:`SoundInstance <sdk_qtaudioengine_soundinstance>` and
 starts playing with specified *position*, *velocity*, adjusted *gain*
 and *pitch*. Direction is set to ``"0,0,0"``.
 
 | 
 
+.. _sdk_qtaudioengine_sound_play-method:
+
 +--------------------------------------------------------------------------+
 |        \ play(position, gain, pitch)                                     |
 +--------------------------------------------------------------------------+
 
-Creates a new
-`SoundInstance </sdk/apps/qml/QtAudioEngine/SoundInstance/>`__ and
+Creates a new :ref:`SoundInstance <sdk_qtaudioengine_soundinstance>` and
 starts playing with specified *position*, adjusted *gain* and *pitch*.
 Direction and velocity are all set to ``"0,0,0"``.
 
 | 
 
+.. _sdk_qtaudioengine_sound_play-method:
+
 +--------------------------------------------------------------------------+
 |        \ play(position, velocity, direction, gain)                       |
 +--------------------------------------------------------------------------+
 
-Creates a new
-`SoundInstance </sdk/apps/qml/QtAudioEngine/SoundInstance/>`__ and
+Creates a new :ref:`SoundInstance <sdk_qtaudioengine_soundinstance>` and
 starts playing with specified *position*, *velocity*, *direction* and
 adjusted *gain*.
 
 | 
 
+.. _sdk_qtaudioengine_sound_play-method:
+
 +--------------------------------------------------------------------------+
 |        \ play(position, velocity, gain)                                  |
 +--------------------------------------------------------------------------+
 
-Creates a new
-`SoundInstance </sdk/apps/qml/QtAudioEngine/SoundInstance/>`__ and
+Creates a new :ref:`SoundInstance <sdk_qtaudioengine_soundinstance>` and
 starts playing with specified *position*, *velocity* and adjusted
 *gain*. Direction is set to ``"0,0,0"``.
 
 | 
 
+.. _sdk_qtaudioengine_sound_play-method:
+
 +--------------------------------------------------------------------------+
 |        \ play(position, gain)                                            |
 +--------------------------------------------------------------------------+
 
-Creates a new
-`SoundInstance </sdk/apps/qml/QtAudioEngine/SoundInstance/>`__ and
+Creates a new :ref:`SoundInstance <sdk_qtaudioengine_soundinstance>` and
 starts playing with specified *position* and adjusted *gain*. Direction
 and velocity are all set to ``"0,0,0"``.
 
 | 
 
+.. _sdk_qtaudioengine_sound_play-method:
+
 +--------------------------------------------------------------------------+
 |        \ play(position, velocity, direction)                             |
 +--------------------------------------------------------------------------+
 
-Creates a new
-`SoundInstance </sdk/apps/qml/QtAudioEngine/SoundInstance/>`__ and
+Creates a new :ref:`SoundInstance <sdk_qtaudioengine_soundinstance>` and
 starts playing with specified *position*, *velocity* and *direction*.
 
 | 
+
+.. _sdk_qtaudioengine_sound_play-method:
 
 +--------------------------------------------------------------------------+
 |        \ play(position, velocity)                                        |
 +--------------------------------------------------------------------------+
 
-Creates a new
-`SoundInstance </sdk/apps/qml/QtAudioEngine/SoundInstance/>`__ and
+Creates a new :ref:`SoundInstance <sdk_qtaudioengine_soundinstance>` and
 starts playing with specified *position* and *velocity*. Direction is
 set to ``"0,0,0"``.
 
 | 
 
+.. _sdk_qtaudioengine_sound_play-method:
+
 +--------------------------------------------------------------------------+
 |        \ play(position)                                                  |
 +--------------------------------------------------------------------------+
 
-Creates a new
-`SoundInstance </sdk/apps/qml/QtAudioEngine/SoundInstance/>`__ and
+Creates a new :ref:`SoundInstance <sdk_qtaudioengine_soundinstance>` and
 starts playing with specified *position*. Direction and velocity are all
 set to ``"0,0,0"``.
 
 | 
 
+.. _sdk_qtaudioengine_sound_play-method:
+
 +--------------------------------------------------------------------------+
 |        \ play(gain, pitch)                                               |
 +--------------------------------------------------------------------------+
 
-Creates a new
-`SoundInstance </sdk/apps/qml/QtAudioEngine/SoundInstance/>`__ and
+Creates a new :ref:`SoundInstance <sdk_qtaudioengine_soundinstance>` and
 starts playing with the adjusted *gain* and *pitch*. Position, direction
 and velocity are all set to ``"0,0,0"``.
 
 | 
 
+.. _sdk_qtaudioengine_sound_play-method:
+
 +--------------------------------------------------------------------------+
 |        \ play(gain)                                                      |
 +--------------------------------------------------------------------------+
 
-Creates a new
-`SoundInstance </sdk/apps/qml/QtAudioEngine/SoundInstance/>`__ and
+Creates a new :ref:`SoundInstance <sdk_qtaudioengine_soundinstance>` and
 starts playing with the adjusted *gain*. Position, direction and
 velocity are all set to ``"0,0,0"``.
 
 | 
 
+.. _sdk_qtaudioengine_sound_play-method:
+
 +--------------------------------------------------------------------------+
 |        \ play()                                                          |
 +--------------------------------------------------------------------------+
 
-Creates a new
-`SoundInstance </sdk/apps/qml/QtAudioEngine/SoundInstance/>`__ and
+Creates a new :ref:`SoundInstance <sdk_qtaudioengine_soundinstance>` and
 starts playing. Position, direction and velocity are all set to
 ``"0,0,0"``.
 

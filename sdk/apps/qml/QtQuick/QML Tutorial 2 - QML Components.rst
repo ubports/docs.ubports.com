@@ -1,3 +1,7 @@
+.. _sdk_qtquick_qml_tutorial_2_-_qml_components:
+QtQuick QML Tutorial 2 - QML Components
+=======================================
+
 
 
 This chapter adds a color picker to change the color of the text.
@@ -48,10 +52,9 @@ Here is the QML code for ``Cell.qml``:
         signal clicked(color cellColor)
         width: 40; height: 25
 
-The root type of our component is an
-`Item </sdk/apps/qml/QtQuick/Item/>`__ with the ``id`` *container*. An
-`Item </sdk/apps/qml/QtQuick/Item/>`__ is the most basic visual type in
-QML and is often used as a container for other types.
+The root type of our component is an :ref:`Item <sdk_qtquick_item>` with
+the :ref:``id`` *container*. An `Item <sdk_qtquick_item>` is the most basic
+visual type in QML and is often used as a container for other types.
 
 .. code:: qml
 
@@ -85,7 +88,7 @@ Our cell component is basically a colored rectangle with the ``id``
 The ``anchors.fill`` property is a convenient way to set the size of a
 visual type. In this case the rectangle will have the same size as its
 parent (see `Anchor-Based
-Layout </sdk/apps/qml/QtQuick/qtquick-positioning-anchors#anchor-layout>`__).
+Layout </sdk/apps/qml/QtQuick/qtquick-positioning-anchors/#anchor-layout>`_ ).
 
 .. code:: qml
 
@@ -95,11 +98,11 @@ Layout </sdk/apps/qml/QtQuick/qtquick-positioning-anchors#anchor-layout>`__).
         }
 
 In order to change the color of the text when clicking on a cell, we
-create a `MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ type with the
-same size as its parent.
+create a :ref:`MouseArea <sdk_qtquick_mousearea>` type with the same size
+as its parent.
 
-A `MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ defines a signal
-called *clicked*. When this signal is triggered we want to emit our own
+A :ref:`MouseArea <sdk_qtquick_mousearea>` defines a signal called
+*clicked*. When this signal is triggered we want to emit our own
 *clicked* signal with the color as parameter.
 
 .. rubric:: The main QML file
@@ -147,9 +150,9 @@ color of the text to the *cellColor* passed as a parameter. We can react
 to any signal of our component through a property of the name
 *'onSignalName'* (see Signal Attributes).
 
-`QML Tutorial 1 - Basic Types </sdk/apps/qml/QtQuick/qml-tutorial1/>`__
+`QML Tutorial 1 - Basic Types </sdk/apps/qml/QtQuick/qml-tutorial1/>`_ 
 `QML Tutorial 3 - States and
-Transitions </sdk/apps/qml/QtQuick/qml-tutorial3/>`__
+Transitions </sdk/apps/qml/QtQuick/qml-tutorial3/>`_ 
 
 .. |image0| image:: /media/sdk/apps/qml/qml-tutorial2/images/declarative-tutorial2.png
 

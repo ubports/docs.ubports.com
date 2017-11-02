@@ -1,7 +1,11 @@
+.. _sdk_qtquick_using_the_qt_quick_particle_system:
+QtQuick Using the Qt Quick Particle System
+==========================================
+
 
 
 Documentation for all Particle System types can be found on the
-`QtQuick.Particles </sdk/apps/qml/QtQuick/qtquick-releasenotes#qtquick-particles>`__
+`QtQuick.Particles </sdk/apps/qml/QtQuick/qtquick-releasenotes/#qtquick-particles>`_ 
 module page.
 
 Note that to use types from the particles module, you will need to
@@ -15,18 +19,18 @@ import the types with the following line:
    :name: the-particlesystem
 
 This particle system contains four main types of QML types:
-`ParticleSystem </sdk/apps/qml/QtQuick/Particles.ParticleSystem/>`__,
+`ParticleSystem </sdk/apps/qml/QtQuick/Particles.ParticleSystem/>`_ ,
 Painters, Emitters and Affectors.
 
-The `ParticleSystem </sdk/apps/qml/QtQuick/Particles.ParticleSystem/>`__
+The `ParticleSystem </sdk/apps/qml/QtQuick/Particles.ParticleSystem/>`_ 
 type ties all the other types together, and manages the shared timeline.
 Painters, Emitters and Affectors must all have the same
-`ParticleSystem </sdk/apps/qml/QtQuick/Particles.ParticleSystem/>`__ to
+`ParticleSystem </sdk/apps/qml/QtQuick/Particles.ParticleSystem/>`_  to
 be able to interact with each other.
 
 You may have as many ParticleSystems as you want subject to this
 constraint, so the logical separation is to have one
-`ParticleSystem </sdk/apps/qml/QtQuick/Particles.ParticleSystem/>`__ for
+`ParticleSystem </sdk/apps/qml/QtQuick/Particles.ParticleSystem/>`_  for
 all the types that you want to interact, or just one if the number of
 types is small and they are easily kept under control..
 
@@ -57,13 +61,13 @@ need to be in different groups.
 
 Particles can also change groups dynamically. When this happens the
 particles trajectory is unaltered, but it can be acted upon by different
-`ParticlePainters </sdk/apps/qml/QtQuick/qtquick-effects-particles#particlepainters>`__
+`ParticlePainters </sdk/apps/qml/QtQuick/qtquick-effects-particles/#particlepainters>`_ 
 or Affectors. Particles can either have their group changed by an
 Affector, or stochastic state transitions can be defined in a
-`ParticleGroup </sdk/apps/qml/QtQuick/Particles.ParticleGroup/>`__ type.
+`ParticleGroup </sdk/apps/qml/QtQuick/Particles.ParticleGroup/>`_  type.
 
 Generally, groups should only be defined in a
-`ParticleGroup </sdk/apps/qml/QtQuick/Particles.ParticleGroup/>`__ if
+`ParticleGroup </sdk/apps/qml/QtQuick/Particles.ParticleGroup/>`_  if
 they require stochastic state transitions. Otherwise, it is sufficient
 to have the groups be defined simply by the strings used in the
 particle/particles properties of the types.
@@ -78,10 +82,10 @@ emitted from the location of the Emitter.
 TrailEmitters are a special type of emitter which emits particles from
 the location of other logicial particles. Any logical particle of the
 followed type within the bounds of a
-`TrailEmitter </sdk/apps/qml/QtQuick/Particles.TrailEmitter/>`__ will
+`TrailEmitter </sdk/apps/qml/QtQuick/Particles.TrailEmitter/>`_  will
 cause particle emission from its location, as if there were an Emitter
 on it with the same properties as the
-`TrailEmitter </sdk/apps/qml/QtQuick/Particles.TrailEmitter/>`__.
+`TrailEmitter </sdk/apps/qml/QtQuick/Particles.TrailEmitter/>`_ .
 
 .. rubric:: ParticlePainters
    :name: particlepainters
@@ -90,22 +94,22 @@ Painters are the types that visualize logical particles. For each
 logical particle in the groups assigned to it, which are within its
 bounds (or outside, if you do not set the clip property on the type) it
 will be visualized in a manner dependent on the type of
-`ParticlePainter </sdk/apps/qml/QtQuick/Particles.ParticlePainter/>`__.
+`ParticlePainter </sdk/apps/qml/QtQuick/Particles.ParticlePainter/>`_ .
 The base type of
-`ParticlePainter </sdk/apps/qml/QtQuick/Particles.ParticlePainter/>`__
+`ParticlePainter </sdk/apps/qml/QtQuick/Particles.ParticlePainter/>`_ 
 does not draw anything.
-`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`__
+`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_ 
 renders an image at the particle location.
-`CustomParticle </sdk/apps/qml/QtQuick/Particles.CustomParticle/>`__
+`CustomParticle </sdk/apps/qml/QtQuick/Particles.CustomParticle/>`_ 
 allows you to write your own shaders to render the particles, passing in
 the logical particle state as vertex data.
-`ItemParticle </sdk/apps/qml/QtQuick/Particles.ItemParticle/>`__ allows
+`ItemParticle </sdk/apps/qml/QtQuick/Particles.ItemParticle/>`_  allows
 you to visualize logical particles using arbitrary QML delegates.
 ModelParticle is similar, but coordinates model data amongst the
 delegates in a similar manner to the view classes.
 
 As the
-`ParticlePainter </sdk/apps/qml/QtQuick/Particles.ParticlePainter/>`__
+`ParticlePainter </sdk/apps/qml/QtQuick/Particles.ParticlePainter/>`_ 
 is the QML type visualizing the particles in the scene, it is its Z
 value which is important when trying to place particles above or below
 other types visually.

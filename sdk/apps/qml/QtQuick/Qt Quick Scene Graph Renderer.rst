@@ -1,3 +1,7 @@
+.. _sdk_qtquick_qt_quick_scene_graph_renderer:
+QtQuick Qt Quick Scene Graph Renderer
+=====================================
+
 
 
 This document explains how the scene graph renderer works internally so
@@ -33,10 +37,10 @@ rendering. Batching of draw calls and retention of geometry on the GPU.
    :name: batching
 
 Where a traditional 2D API, such as QPainter, Cairo or
-`Context2D </sdk/apps/qml/QtQuick/Context2D/>`__, is written to handle
-thousands of individual draw calls per frame, OpenGL is a pure hardware
-API and performs best when the number of draw calls is very low and
-state changes are kept to a minimum. Consider the following use case:
+:ref:`Context2D <sdk_qtquick_context2d>`, is written to handle thousands of
+individual draw calls per frame, OpenGL is a pure hardware API and
+performs best when the number of draw calls is very low and state
+changes are kept to a minimum. Consider the following use case:
 
 |image0|
 
@@ -90,12 +94,12 @@ renderer still needs to take these nodes into account and the vertex
 shader is still run for every vertex in these primitives, so if the
 application knows that something is fully obscured, the best thing to do
 is to explicitly hide it using
-`Item::visible </sdk/apps/qml/QtQuick/Item#visible-prop>`__ or
-`Item::opacity </sdk/apps/qml/QtQuick/Item#opacity-prop>`__.
+:ref:`Item::visible <sdk_qtquick_item#visible-prop>` or
+:ref:`Item::opacity <sdk_qtquick_item#opacity-prop>`.
 
-**Note:** The `Item::z </sdk/apps/qml/QtQuick/Item#z-prop>`__ is used to
-control an Item's stacking order relative to its siblings. It has no
-direct relation to the renderer and OpenGL's Z-buffer.
+**Note:** The :ref:`Item::z <sdk_qtquick_item#z-prop>` is used to control
+an Item's stacking order relative to its siblings. It has no direct
+relation to the renderer and OpenGL's Z-buffer.
 
 .. rubric:: Alpha Blended Primitives
    :name: alpha-blended-primitives
@@ -123,8 +127,8 @@ calls.
 
 Z-wise, the alpha primitives are interleaved with the opaque nodes and
 may trigger early-z when available, but again, setting
-`Item::visible </sdk/apps/qml/QtQuick/Item#visible-prop>`__ to false is
-always faster.
+:ref:`Item::visible <sdk_qtquick_item#visible-prop>` to false is always
+faster.
 
 .. rubric:: Mixing with 3D primitives
    :name: mixing-with-3d-primitives
@@ -235,10 +239,10 @@ default renderer can use any shape for clipping.
 
 When applying a clip to a subtree, that subtree needs to be rendered
 with a unique OpenGL state. This means that when
-`Item::clip </sdk/apps/qml/QtQuick/Item#clip-prop>`__ is true, batching
-of that item is limited to its children. When there are many children,
-like a `ListView </sdk/apps/qml/QtQuick/ListView/>`__ or
-`GridView </sdk/apps/qml/QtQuick/draganddrop#gridview>`__, or complex
+:ref:`Item::clip <sdk_qtquick_item#clip-prop>` is true, batching of that
+item is limited to its children. When there are many children, like a
+:ref:`ListView <sdk_qtquick_listview>` or
+`GridView </sdk/apps/qml/QtQuick/draganddrop/#gridview>`_ , or complex
 children, like a TextArea, this is fine. One should, however, use clip
 on smaller items with caution as it prevents batching. This includes
 button label, text field or list delegate and table cells.
@@ -282,13 +286,12 @@ Multisample antialiasing does not.
    :name: vertex-antialiasing
 
 Vertex antialiasing can be enabled and disabled on a per-item basis
-using the
-`Item::antialiasing </sdk/apps/qml/QtQuick/Item#antialiasing-prop>`__
+using the :ref:`Item::antialiasing <sdk_qtquick_item#antialiasing-prop>`
 property. It will work regardless of what the underlying hardware
 supports and produces higher quality antialiasing, both for normally
 rendered primitives and also for primitives captured into framebuffer
 objects, for instance using the
-`ShaderEffectSource </sdk/apps/qml/QtQuick/ShaderEffectSource/>`__ type.
+:ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>` type.
 
 The downside to using vertex antialiasing is that each primitive with
 antialiasing enabled will have to be blended. In terms of batching, this
@@ -322,7 +325,7 @@ framebuffers. Typically ``GL_EXT_framebuffer_multisample`` and
 present, but they are less common in embedded chips. When framebuffer
 multisampling is not available in the hardware, content rendered into
 framebuffer objects will not be antialiased, including the content of a
-`ShaderEffectSource </sdk/apps/qml/QtQuick/ShaderEffectSource/>`__.
+:ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>`.
 
 .. rubric:: Performance
    :name: performance
@@ -438,11 +441,10 @@ of some of the variables using the following QML code:
         }
     }
 
-For the `ListView </sdk/apps/qml/QtQuick/ListView/>`__ on the left, we
-set its `clip </sdk/apps/qml/QtQuick/Item#clip-prop>`__ property to
-``true``. For the `ListView </sdk/apps/qml/QtQuick/ListView/>`__ on
-right, we also set each delegate's
-`clip </sdk/apps/qml/QtQuick/Item#clip-prop>`__ property to ``true`` to
+For the :ref:`ListView <sdk_qtquick_listview>` on the left, we set its
+:ref:`clip <sdk_qtquick_item#clip-prop>` property to ``true``. For the
+:ref:`ListView <sdk_qtquick_listview>` on right, we also set each
+delegate's :ref:`clip <sdk_qtquick_item#clip-prop>` property to ``true`` to
 illustrate the effects of clipping on batching.
 
 |"Original"|

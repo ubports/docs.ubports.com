@@ -1,5 +1,9 @@
+.. _sdk_accounts_watch:
+Accounts Watch
+==============
+
 Monitors an account key or group of keys.
-`More... </sdk/scopes/cpp/Accounts/Watch#details>`__
+:ref:`More... <sdk_accounts_watch#details>`
 
 ``#include <Accounts/Account>``
 
@@ -22,7 +26,7 @@ Inherits QObject.
 
         void 
 
-**error** (`Accounts::Error </sdk/scopes/cpp/Accounts/Error/>`__ error)
+**error** (:ref:`Accounts::Error <sdk_accounts_error>` error)
 
  
 
@@ -43,14 +47,14 @@ Inherits QObject.
 
 uint 
 
-`credentialsId </sdk/scopes/cpp/Accounts/Watch#a483d9a1edcbc46d7070eb70ae23b5989>`__
+:ref:`credentialsId <sdk_accounts_watch#a483d9a1edcbc46d7070eb70ae23b5989>`
 ()
 
  
 
 void 
 
-`setCredentialsId </sdk/scopes/cpp/Accounts/Watch#a54a9de969058292a257d9d692785ca63>`__
+:ref:`setCredentialsId <sdk_accounts_watch#a54a9de969058292a257d9d692785ca63>`
 (const uint id)
 
  
@@ -77,7 +81,7 @@ void 
 
  
 
-        `Provider </sdk/scopes/cpp/Accounts/Provider/>`__ 
+:ref:` <>` `Provider <sdk_accounts_provider>` 
 
 **provider** () const
 
@@ -85,12 +89,12 @@ void 
 
         void 
 
-**selectService** (const `Service </sdk/scopes/cpp/Accounts/Service/>`__
-&service=\ `Service </sdk/scopes/cpp/Accounts/Service/>`__\ ())
+**selectService** (const :ref:`Service <sdk_accounts_service>`
+&service=\ :ref:`Service <sdk_accounts_service>`\ ())
 
  
 
-        `Service </sdk/scopes/cpp/Accounts/Service/>`__ 
+:ref:` <>` `Service <sdk_accounts_service>` 
 
 **selectedService** () const
 
@@ -203,7 +207,7 @@ SettingSource \*source=0) const
 
  
 
-        `Watch </sdk/scopes/cpp/Accounts/Watch/>`__ \* 
+:ref:` <>` `Watch <sdk_accounts_watch>` \* 
 
 **watchKey** (const QString &key=QString())
 
@@ -268,17 +272,15 @@ Q\_SIGNALS: void notify(const char \*key); };
 
 class ACCOUNTS\_EXPORT Account: public QObject { Q\_OBJECT
 
-public: Account(\ `Manager </sdk/scopes/cpp/Accounts/Manager/>`__
-\*manager, const QString &provider, QObject \*parent = 0); virtual
-~Account();
+public: Account(\ :ref:`Manager <sdk_accounts_manager>` \*manager, const
+QString &provider, QObject \*parent = 0); virtual ~Account();
 
-static Account
-\*fromId(\ `Manager </sdk/scopes/cpp/Accounts/Manager/>`__ \*manager,
+static Account \*fromId(\ :ref:`Manager <sdk_accounts_manager>` \*manager,
 AccountId id, QObject \*parent = 0);
 
 AccountId id() const;
 
-`Manager </sdk/scopes/cpp/Accounts/Manager/>`__ \*manager() const;
+:ref:`Manager <sdk_accounts_manager>` \*manager() const;
 
 bool supportsService(const QString &serviceType) const;
 

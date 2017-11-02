@@ -1,17 +1,21 @@
+.. _sdk_qtqml_extending_qml_-_default_property_example:
+QtQml Extending QML - Default Property Example
+==============================================
+
 
 
 This example builds on:
 
 -  `Extending QML - Inheritance and Coercion
-   Example </sdk/apps/qml/QtQml/referenceexamples-coercion/>`__
+   Example </sdk/apps/qml/QtQml/referenceexamples-coercion/>`_ 
 -  `Extending QML - Object and List Property Types
-   Example </sdk/apps/qml/QtQml/referenceexamples-properties/>`__
+   Example </sdk/apps/qml/QtQml/referenceexamples-properties/>`_ 
 -  `Extending QML - Adding Types
-   Example </sdk/apps/qml/QtQml/referenceexamples-adding/>`__
+   Example </sdk/apps/qml/QtQml/referenceexamples-adding/>`_ 
 
 The Default Property Example is a minor modification of the `Extending
 QML - Inheritance and Coercion
-Example </sdk/apps/qml/QtQml/referenceexamples-coercion/>`__ that
+Example </sdk/apps/qml/QtQml/referenceexamples-coercion/>`_  that
 simplifies the specification of a BirthdayParty through the use of a
 default property.
 

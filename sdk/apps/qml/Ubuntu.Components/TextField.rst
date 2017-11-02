@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_textfield:
+Ubuntu.Components TextField
+===========================
+
 The TextField element displays a single line of editable plain text.
 Input constraints can be set through validator or inputMask. Setting
 echoMode to an appropriate value enables TextField to be used as
@@ -6,8 +10,8 @@ password input field.
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import Ubuntu.Components 1.3         |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Ubuntu </sdk/apps/qml/Ubuntu.Compon |
-|                                      | ents/Ubuntu/>`__                     |
+| Inherits:                            | :ref:`Ubuntu <sdk_ubuntu_components_ubunt |
+|                                      | u>`_                                 |
 +--------------------------------------+--------------------------------------+
 
 -  Obsolete members
@@ -15,132 +19,130 @@ password input field.
 Properties
 ----------
 
--  ****`acceptableInput </sdk/apps/qml/Ubuntu.Components/TextField#acceptableInput-prop>`__****
+-  :ref:`acceptableInput <sdk_ubuntu_components_textfield_acceptableInput-prop>`
    : bool
--  ****`activeFocusOnPress </sdk/apps/qml/Ubuntu.Components/TextField#activeFocusOnPress-prop>`__****
+-  :ref:`activeFocusOnPress <sdk_ubuntu_components_textfield_activeFocusOnPress-prop>`
    : bool
--  ****`autoScroll </sdk/apps/qml/Ubuntu.Components/TextField#autoScroll-prop>`__****
+-  :ref:`autoScroll <sdk_ubuntu_components_textfield_autoScroll-prop>`
    : bool
--  ****`canPaste </sdk/apps/qml/Ubuntu.Components/TextField#canPaste-prop>`__****
+-  :ref:`canPaste <sdk_ubuntu_components_textfield_canPaste-prop>`
    : bool
--  ****`canRedo </sdk/apps/qml/Ubuntu.Components/TextField#canRedo-prop>`__****
-   : bool
--  ****`canUndo </sdk/apps/qml/Ubuntu.Components/TextField#canUndo-prop>`__****
-   : bool
--  ****`color </sdk/apps/qml/Ubuntu.Components/TextField#color-prop>`__****
-   : color
--  ****`contentHeight </sdk/apps/qml/Ubuntu.Components/TextField#contentHeight-prop>`__****
+-  :ref:`canRedo <sdk_ubuntu_components_textfield_canRedo-prop>` :
+   bool
+-  :ref:`canUndo <sdk_ubuntu_components_textfield_canUndo-prop>` :
+   bool
+-  :ref:`color <sdk_ubuntu_components_textfield_color-prop>` :
+   color
+-  :ref:`contentHeight <sdk_ubuntu_components_textfield_contentHeight-prop>`
    : real
--  ****`contentWidth </sdk/apps/qml/Ubuntu.Components/TextField#contentWidth-prop>`__****
+-  :ref:`contentWidth <sdk_ubuntu_components_textfield_contentWidth-prop>`
    : real
--  ****`cursorDelegate </sdk/apps/qml/Ubuntu.Components/TextField#cursorDelegate-prop>`__****
+-  :ref:`cursorDelegate <sdk_ubuntu_components_textfield_cursorDelegate-prop>`
    : Component
--  ****`cursorPosition </sdk/apps/qml/Ubuntu.Components/TextField#cursorPosition-prop>`__****
+-  :ref:`cursorPosition <sdk_ubuntu_components_textfield_cursorPosition-prop>`
    : int
--  ****`cursorRectangle </sdk/apps/qml/Ubuntu.Components/TextField#cursorRectangle-prop>`__****
+-  :ref:`cursorRectangle <sdk_ubuntu_components_textfield_cursorRectangle-prop>`
    : rectangle
--  ****`cursorVisible </sdk/apps/qml/Ubuntu.Components/TextField#cursorVisible-prop>`__****
+-  :ref:`cursorVisible <sdk_ubuntu_components_textfield_cursorVisible-prop>`
    : bool
--  ****`displayText </sdk/apps/qml/Ubuntu.Components/TextField#displayText-prop>`__****
+-  :ref:`displayText <sdk_ubuntu_components_textfield_displayText-prop>`
    : string
--  ****`echoMode </sdk/apps/qml/Ubuntu.Components/TextField#echoMode-prop>`__****
+-  :ref:`echoMode <sdk_ubuntu_components_textfield_echoMode-prop>`
    : enumeration
--  ****`effectiveHorizontalAlignment </sdk/apps/qml/Ubuntu.Components/TextField#effectiveHorizontalAlignment-prop>`__****
+-  :ref:`effectiveHorizontalAlignment <sdk_ubuntu_components_textfield_effectiveHorizontalAlignment-prop>`
    : enumeration
--  ****`errorHighlight </sdk/apps/qml/Ubuntu.Components/TextField#errorHighlight-prop>`__****
+-  :ref:`errorHighlight <sdk_ubuntu_components_textfield_errorHighlight-prop>`
    : bool
--  ****`font </sdk/apps/qml/Ubuntu.Components/TextField#font-prop>`__****
-   : font
--  ****`hasClearButton </sdk/apps/qml/Ubuntu.Components/TextField#hasClearButton-prop>`__****
+-  :ref:`font <sdk_ubuntu_components_textfield_font-prop>` : font
+-  :ref:`hasClearButton <sdk_ubuntu_components_textfield_hasClearButton-prop>`
    : bool
--  ****`highlighted </sdk/apps/qml/Ubuntu.Components/TextField#highlighted-prop>`__****
+-  :ref:`highlighted <sdk_ubuntu_components_textfield_highlighted-prop>`
    : bool
--  ****`horizontalAlignment </sdk/apps/qml/Ubuntu.Components/TextField#horizontalAlignment-prop>`__****
+-  :ref:`horizontalAlignment <sdk_ubuntu_components_textfield_horizontalAlignment-prop>`
    : enumeration
--  ****`inputMask </sdk/apps/qml/Ubuntu.Components/TextField#inputMask-prop>`__****
+-  :ref:`inputMask <sdk_ubuntu_components_textfield_inputMask-prop>`
    : string
--  ****`inputMethodComposing </sdk/apps/qml/Ubuntu.Components/TextField#inputMethodComposing-prop>`__****
+-  :ref:`inputMethodComposing <sdk_ubuntu_components_textfield_inputMethodComposing-prop>`
    : bool
--  ****`inputMethodHints </sdk/apps/qml/Ubuntu.Components/TextField#inputMethodHints-prop>`__****
+-  :ref:`inputMethodHints <sdk_ubuntu_components_textfield_inputMethodHints-prop>`
    : enumeration
--  ****`length </sdk/apps/qml/Ubuntu.Components/TextField#length-prop>`__****
+-  :ref:`length <sdk_ubuntu_components_textfield_length-prop>` :
+   int
+-  :ref:`maximumLength <sdk_ubuntu_components_textfield_maximumLength-prop>`
    : int
--  ****`maximumLength </sdk/apps/qml/Ubuntu.Components/TextField#maximumLength-prop>`__****
-   : int
--  ****`mouseSelectionMode </sdk/apps/qml/Ubuntu.Components/TextField#mouseSelectionMode-prop>`__****
+-  :ref:`mouseSelectionMode <sdk_ubuntu_components_textfield_mouseSelectionMode-prop>`
    : enumeration
--  ****`passwordCharacter </sdk/apps/qml/Ubuntu.Components/TextField#passwordCharacter-prop>`__****
+-  :ref:`passwordCharacter <sdk_ubuntu_components_textfield_passwordCharacter-prop>`
    : string
--  ****`persistentSelection </sdk/apps/qml/Ubuntu.Components/TextField#persistentSelection-prop>`__****
+-  :ref:`persistentSelection <sdk_ubuntu_components_textfield_persistentSelection-prop>`
    : bool
--  ****`placeholderText </sdk/apps/qml/Ubuntu.Components/TextField#placeholderText-prop>`__****
+-  :ref:`placeholderText <sdk_ubuntu_components_textfield_placeholderText-prop>`
    : string
--  ****`popover </sdk/apps/qml/Ubuntu.Components/TextField#popover-prop>`__****
-   : var
--  ****`primaryItem </sdk/apps/qml/Ubuntu.Components/TextField#primaryItem-prop>`__****
+-  :ref:`popover <sdk_ubuntu_components_textfield_popover-prop>` :
+   var
+-  :ref:`primaryItem <sdk_ubuntu_components_textfield_primaryItem-prop>`
    : list<Object>
--  ****`readOnly </sdk/apps/qml/Ubuntu.Components/TextField#readOnly-prop>`__****
+-  :ref:`readOnly <sdk_ubuntu_components_textfield_readOnly-prop>`
    : bool
--  ****`renderType </sdk/apps/qml/Ubuntu.Components/TextField#renderType-prop>`__****
+-  :ref:`renderType <sdk_ubuntu_components_textfield_renderType-prop>`
    : enumeration
--  ****`secondaryItem </sdk/apps/qml/Ubuntu.Components/TextField#secondaryItem-prop>`__****
+-  :ref:`secondaryItem <sdk_ubuntu_components_textfield_secondaryItem-prop>`
    : list<Object>
--  ****`selectByMouse </sdk/apps/qml/Ubuntu.Components/TextField#selectByMouse-prop>`__****
+-  :ref:`selectByMouse <sdk_ubuntu_components_textfield_selectByMouse-prop>`
    : bool
--  ****`selectedText </sdk/apps/qml/Ubuntu.Components/TextField#selectedText-prop>`__****
+-  :ref:`selectedText <sdk_ubuntu_components_textfield_selectedText-prop>`
    : string
--  ****`selectedTextColor </sdk/apps/qml/Ubuntu.Components/TextField#selectedTextColor-prop>`__****
+-  :ref:`selectedTextColor <sdk_ubuntu_components_textfield_selectedTextColor-prop>`
    : color
--  ****`selectionColor </sdk/apps/qml/Ubuntu.Components/TextField#selectionColor-prop>`__****
+-  :ref:`selectionColor <sdk_ubuntu_components_textfield_selectionColor-prop>`
    : color
--  ****`selectionEnd </sdk/apps/qml/Ubuntu.Components/TextField#selectionEnd-prop>`__****
+-  :ref:`selectionEnd <sdk_ubuntu_components_textfield_selectionEnd-prop>`
    : int
--  ****`selectionStart </sdk/apps/qml/Ubuntu.Components/TextField#selectionStart-prop>`__****
+-  :ref:`selectionStart <sdk_ubuntu_components_textfield_selectionStart-prop>`
    : int
--  ****`text </sdk/apps/qml/Ubuntu.Components/TextField#text-prop>`__****
-   : string
--  ****`validator </sdk/apps/qml/Ubuntu.Components/TextField#validator-prop>`__****
+-  :ref:`text <sdk_ubuntu_components_textfield_text-prop>` : string
+-  :ref:`validator <sdk_ubuntu_components_textfield_validator-prop>`
    : Validator
--  ****`verticalAlignment </sdk/apps/qml/Ubuntu.Components/TextField#verticalAlignment-prop>`__****
+-  :ref:`verticalAlignment <sdk_ubuntu_components_textfield_verticalAlignment-prop>`
    : enumeration
 
 Signals
 -------
 
--  ****`accepted </sdk/apps/qml/Ubuntu.Components/TextField#accepted-signal>`__****\ ()
+-  :ref:`accepted <sdk_ubuntu_components_textfield_accepted-signal>`\ ()
 
 Methods
 -------
 
--  ****`copy </sdk/apps/qml/Ubuntu.Components/TextField#copy-method>`__****\ ()
--  ****`cut </sdk/apps/qml/Ubuntu.Components/TextField#cut-method>`__****\ ()
--  ****`deselect </sdk/apps/qml/Ubuntu.Components/TextField#deselect-method>`__****\ ()
--  ****`getText </sdk/apps/qml/Ubuntu.Components/TextField#getText-method>`__****\ (*start*,
+-  :ref:`copy <sdk_ubuntu_components_textfield_copy-method>`\ ()
+-  :ref:`cut <sdk_ubuntu_components_textfield_cut-method>`\ ()
+-  :ref:`deselect <sdk_ubuntu_components_textfield_deselect-method>`\ ()
+-  :ref:`getText <sdk_ubuntu_components_textfield_getText-method>`\ (*start*,
    *end*)
--  ****`insert </sdk/apps/qml/Ubuntu.Components/TextField#insert-method>`__****\ (*position*,
+-  :ref:`insert <sdk_ubuntu_components_textfield_insert-method>`\ (*position*,
    *text*)
--  ****`isRightToLeft </sdk/apps/qml/Ubuntu.Components/TextField#isRightToLeft-method>`__****\ (*start*,
+-  :ref:`isRightToLeft <sdk_ubuntu_components_textfield_isRightToLeft-method>`\ (*start*,
    *end*)
--  ****`moveCursorSelection </sdk/apps/qml/Ubuntu.Components/TextField#moveCursorSelection-method>`__****\ (*position*,
+-  :ref:`moveCursorSelection <sdk_ubuntu_components_textfield_moveCursorSelection-method>`\ (*position*,
    *mode*)
--  ****`paste </sdk/apps/qml/Ubuntu.Components/TextField#paste-method>`__****\ (*data*)
--  ****`positionAt </sdk/apps/qml/Ubuntu.Components/TextField#positionAt-method>`__****\ (*x*,
+-  :ref:`paste <sdk_ubuntu_components_textfield_paste-method>`\ (*data*)
+-  :ref:`positionAt <sdk_ubuntu_components_textfield_positionAt-method>`\ (*x*,
    *position*)
--  ****`positionToRectangle </sdk/apps/qml/Ubuntu.Components/TextField#positionToRectangle-method>`__****\ (*pos*)
--  ****`redo </sdk/apps/qml/Ubuntu.Components/TextField#redo-method>`__****\ ()
--  ****`remove </sdk/apps/qml/Ubuntu.Components/TextField#remove-method>`__****\ (*start*,
+-  :ref:`positionToRectangle <sdk_ubuntu_components_textfield_positionToRectangle-method>`\ (*pos*)
+-  :ref:`redo <sdk_ubuntu_components_textfield_redo-method>`\ ()
+-  :ref:`remove <sdk_ubuntu_components_textfield_remove-method>`\ (*start*,
    *end*)
--  ****`select </sdk/apps/qml/Ubuntu.Components/TextField#select-method>`__****\ (*start*,
+-  :ref:`select <sdk_ubuntu_components_textfield_select-method>`\ (*start*,
    *end*)
--  ****`selectAll </sdk/apps/qml/Ubuntu.Components/TextField#selectAll-method>`__****\ ()
--  ****`selectWord </sdk/apps/qml/Ubuntu.Components/TextField#selectWord-method>`__****\ ()
--  ****`undo </sdk/apps/qml/Ubuntu.Components/TextField#undo-method>`__****\ ()
+-  :ref:`selectAll <sdk_ubuntu_components_textfield_selectAll-method>`\ ()
+-  :ref:`selectWord <sdk_ubuntu_components_textfield_selectWord-method>`\ ()
+-  :ref:`undo <sdk_ubuntu_components_textfield_undo-method>`\ ()
 
 Detailed Description
 --------------------
 
 `See also the Design Guidelines on the Text
-Field <https://design.ubuntu.com/apps/building-blocks/text-input#text-field>`__.
+Field <https://design.ubuntu.com/apps/building-blocks/text-input#text-field>`_ .
 
 Example:
 
@@ -218,6 +220,8 @@ turned off.
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_textfield_acceptableInput-prop:
+
 +--------------------------------------------------------------------------+
 |        \ acceptableInput : bool                                          |
 +--------------------------------------------------------------------------+
@@ -229,56 +233,64 @@ as a final string (not as an intermediate string).
 
 | 
 
+.. _sdk_ubuntu_components_textfield_activeFocusOnPress-prop:
+
 +--------------------------------------------------------------------------+
 |        \ activeFocusOnPress : bool                                       |
 +--------------------------------------------------------------------------+
 
-Whether the `TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__
-should gain active focus on a mouse press. By default this is set to
-true.
+Whether the :ref:`TextField <sdk_ubuntu_components_textfield>` should gain
+active focus on a mouse press. By default this is set to true.
 
 | 
+
+.. _sdk_ubuntu_components_textfield_autoScroll-prop:
 
 +--------------------------------------------------------------------------+
 |        \ autoScroll : bool                                               |
 +--------------------------------------------------------------------------+
 
-Whether the `TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__
-should scroll when the text is longer than the width. By default this is
-set to true.
+Whether the :ref:`TextField <sdk_ubuntu_components_textfield>` should
+scroll when the text is longer than the width. By default this is set to
+true.
 
 | 
+
+.. _sdk_ubuntu_components_textfield_canPaste-prop:
 
 +--------------------------------------------------------------------------+
 |        \ canPaste : bool                                                 |
 +--------------------------------------------------------------------------+
 
-Returns true if the
-`TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__ is writable
-and the content of the clipboard is suitable for pasting into the
-`TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__.
+Returns true if the :ref:`TextField <sdk_ubuntu_components_textfield>` is
+writable and the content of the clipboard is suitable for pasting into
+the :ref:`TextField <sdk_ubuntu_components_textfield>`.
 
 | 
+
+.. _sdk_ubuntu_components_textfield_canRedo-prop:
 
 +--------------------------------------------------------------------------+
 |        \ canRedo : bool                                                  |
 +--------------------------------------------------------------------------+
 
-Returns true if the
-`TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__ is writable
-and there are undone operations that can be redone.
+Returns true if the :ref:`TextField <sdk_ubuntu_components_textfield>` is
+writable and there are undone operations that can be redone.
 
 | 
+
+.. _sdk_ubuntu_components_textfield_canUndo-prop:
 
 +--------------------------------------------------------------------------+
 |        \ canUndo : bool                                                  |
 +--------------------------------------------------------------------------+
 
-Returns true if the
-`TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__ is writable
-and there are previous operations that can be undone.
+Returns true if the :ref:`TextField <sdk_ubuntu_components_textfield>` is
+writable and there are previous operations that can be undone.
 
 | 
+
+.. _sdk_ubuntu_components_textfield_color-prop:
 
 +--------------------------------------------------------------------------+
 |        \ color : color                                                   |
@@ -287,6 +299,8 @@ and there are previous operations that can be undone.
 The text color.
 
 | 
+
+.. _sdk_ubuntu_components_textfield_contentHeight-prop:
 
 +--------------------------------------------------------------------------+
 |        \ contentHeight : real                                            |
@@ -297,6 +311,8 @@ that is covered if the text does not fit within the set height.
 
 | 
 
+.. _sdk_ubuntu_components_textfield_contentWidth-prop:
+
 +--------------------------------------------------------------------------+
 |        \ contentWidth : real                                             |
 +--------------------------------------------------------------------------+
@@ -306,35 +322,41 @@ is covered due to insufficient wrapping if wrapMode is set.
 
 | 
 
+.. _sdk_ubuntu_components_textfield_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ cursorDelegate : `Component </sdk/apps/qml/QtQml/Component/>`__ |
+| :ref:` <>`\ cursorDelegate : `Component <sdk_qtqml_component>`         |
 +--------------------------------------------------------------------------+
 
 The delegate for the cursor in the
-`TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__.
+:ref:`TextField <sdk_ubuntu_components_textfield>`.
 
 If you set a cursorDelegate for a
-`TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__, this
-delegate will be used for drawing the cursor instead of the standard
-cursor. An instance of the delegate will be created and managed by the
-`TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__ when a cursor
-is needed, and the x property of delegate instance will be set so as to
-be one pixel before the top left of the current character.
+:ref:`TextField <sdk_ubuntu_components_textfield>`, this delegate will be
+used for drawing the cursor instead of the standard cursor. An instance
+of the delegate will be created and managed by the
+:ref:`TextField <sdk_ubuntu_components_textfield>` when a cursor is needed,
+and the x property of delegate instance will be set so as to be one
+pixel before the top left of the current character.
 
 Note that the root item of the delegate component must be a
-`QQuickItem <http://doc.qt.io/qt-5/qquickitem.html>`__ or
-`QQuickItem <http://doc.qt.io/qt-5/qquickitem.html>`__ derived item.
+`QQuickItem <http://doc.qt.io/qt-5/qquickitem.html>`_  or
+`QQuickItem <http://doc.qt.io/qt-5/qquickitem.html>`_  derived item.
 
 | 
+
+.. _sdk_ubuntu_components_textfield_cursorPosition-prop:
 
 +--------------------------------------------------------------------------+
 |        \ cursorPosition : int                                            |
 +--------------------------------------------------------------------------+
 
 The position of the cursor in the
-`TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__.
+:ref:`TextField <sdk_ubuntu_components_textfield>`.
 
 | 
+
+.. _sdk_ubuntu_components_textfield_cursorRectangle-prop:
 
 +--------------------------------------------------------------------------+
 |        \ cursorRectangle : rectangle                                     |
@@ -344,27 +366,27 @@ The rectangle where the standard text cursor is rendered within the text
 input. Read only.
 
 The position and height of a custom
-`cursorDelegate </sdk/apps/qml/Ubuntu.Components/TextField#cursorDelegate-prop>`__
+:ref:`cursorDelegate <sdk_ubuntu_components_textfield#cursorDelegate-prop>`
 are updated to follow the cursorRectangle automatically when it changes.
 The width of the delegate is unaffected by changes in the cursor
 rectangle.
 
 | 
 
+.. _sdk_ubuntu_components_textfield_cursorVisible-prop:
+
 +--------------------------------------------------------------------------+
 |        \ cursorVisible : bool                                            |
 +--------------------------------------------------------------------------+
 
-Set to true when the
-`TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__ shows a
-cursor.
+Set to true when the :ref:`TextField <sdk_ubuntu_components_textfield>`
+shows a cursor.
 
 This property is set and unset when the
-`TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__ gets active
-focus, so that other properties can be bound to whether the cursor is
-currently showing. As it gets set and unset automatically, when you set
-the value yourself you must keep in mind that your value may be
-overwritten.
+:ref:`TextField <sdk_ubuntu_components_textfield>` gets active focus, so
+that other properties can be bound to whether the cursor is currently
+showing. As it gets set and unset automatically, when you set the value
+yourself you must keep in mind that your value may be overwritten.
 
 It can be set directly in script, for example if a KeyProxy might
 forward keys to it and you desire it to look active when this happens
@@ -381,74 +403,81 @@ specified value will be overridden an lost on focus changes.
     }
 
 In the above snippet the cursor will still become visible when the
-`TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__ gains active
-focus.
+:ref:`TextField <sdk_ubuntu_components_textfield>` gains active focus.
 
 | 
+
+.. _sdk_ubuntu_components_textfield_displayText-prop:
 
 +--------------------------------------------------------------------------+
 |        \ displayText : string                                            |
 +--------------------------------------------------------------------------+
 
 This is the text displayed in the
-`TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__.
+:ref:`TextField <sdk_ubuntu_components_textfield>`.
 
-If
-`echoMode </sdk/apps/qml/Ubuntu.Components/TextField#echoMode-prop>`__
-is set to TextInput::Normal, this holds the same value as the
-`text </sdk/apps/qml/Ubuntu.Components/TextField#text-prop>`__ property.
+If :ref:`echoMode <sdk_ubuntu_components_textfield#echoMode-prop>` is set
+to TextInput::Normal, this holds the same value as the
+:ref:`text <sdk_ubuntu_components_textfield#text-prop>` property.
 Otherwise, this property holds the text visible to the user, while the
 text property holds the actual entered text.
 
 | 
+
+.. _sdk_ubuntu_components_textfield_echoMode-prop:
 
 +--------------------------------------------------------------------------+
 |        \ echoMode : enumeration                                          |
 +--------------------------------------------------------------------------+
 
 Specifies how the text should be displayed in the
-`TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__.
+:ref:`TextField <sdk_ubuntu_components_textfield>`.
 
--  - `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.Normal - Displays
-   the text as it is. (Default)
--  - `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.Password -
-   Displays asterixes instead of characters.
--  - `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.NoEcho - Displays
-   nothing.
--  - `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.PasswordEchoOnEdit
-   - Displays characters as they are entered while editing, otherwise
-   displays asterisks.
+-  - :ref:`TextInput <sdk_qtquick_textinput>`.Normal - Displays the text as
+   it is. (Default)
+-  - :ref:`TextInput <sdk_qtquick_textinput>`.Password - Displays asterixes
+   instead of characters.
+-  - :ref:`TextInput <sdk_qtquick_textinput>`.NoEcho - Displays nothing.
+-  - :ref:`TextInput <sdk_qtquick_textinput>`.PasswordEchoOnEdit - Displays
+   characters as they are entered while editing, otherwise displays
+   asterisks.
 
 | 
+
+.. _sdk_ubuntu_components_textfield_effectiveHorizontalAlignment-prop:
 
 +--------------------------------------------------------------------------+
 |        \ effectiveHorizontalAlignment : enumeration                      |
 +--------------------------------------------------------------------------+
 
 See
-`horizontalAlignment </sdk/apps/qml/Ubuntu.Components/TextField#horizontalAlignment-prop>`__
+:ref:`horizontalAlignment <sdk_ubuntu_components_textfield#horizontalAlignment-prop>`
 for details.
 
 | 
+
+.. _sdk_ubuntu_components_textfield_errorHighlight-prop:
 
 +--------------------------------------------------------------------------+
 |        \ errorHighlight : bool                                           |
 +--------------------------------------------------------------------------+
 
 Allows highlighting errors in the
-`TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__.
+:ref:`TextField <sdk_ubuntu_components_textfield>`.
 
 | 
 
+.. _sdk_ubuntu_components_textfield_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ font :                                                          |
-| `font </sdk/apps/qml/Ubuntu.Components/TextField#font-prop>`__           |
+| :ref:` <>`\ font : `font <sdk_ubuntu_components_textfield#font-prop>`  |
 +--------------------------------------------------------------------------+
 
-Font used in the
-`TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__.
+Font used in the :ref:`TextField <sdk_ubuntu_components_textfield>`.
 
 | 
+
+.. _sdk_ubuntu_components_textfield_hasClearButton-prop:
 
 +--------------------------------------------------------------------------+
 |        \ hasClearButton : bool                                           |
@@ -458,18 +487,21 @@ Specifies whether the control has a clear button or not.
 
 | 
 
+.. _sdk_ubuntu_components_textfield_highlighted-prop:
+
 +--------------------------------------------------------------------------+
 |        \ highlighted : bool                                              |
 +--------------------------------------------------------------------------+
 
 The property presents whether the
-`TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__ is
-highlighted or not. By default the
-`TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__ gets
+:ref:`TextField <sdk_ubuntu_components_textfield>` is highlighted or not.
+By default the :ref:`TextField <sdk_ubuntu_components_textfield>` gets
 highlighted when gets the focus, so can accept text input. This property
 allows to control the highlight separately from the focused behavior.
 
 | 
+
+.. _sdk_ubuntu_components_textfield_horizontalAlignment-prop:
 
 +--------------------------------------------------------------------------+
 |        \ horizontalAlignment : enumeration                               |
@@ -480,75 +512,77 @@ height. By default, the text alignment follows the natural alignment of
 the text, for example text that is read from left to right will be
 aligned to the left.
 
-`TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__ does not have
-vertical alignment, as the natural height is exactly the height of the
-single line of text. If you set the height manually to something larger,
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ will always be top
-aligned vertically. You can use anchors to align it however you want
-within another item.
+:ref:`TextField <sdk_ubuntu_components_textfield>` does not have vertical
+alignment, as the natural height is exactly the height of the single
+line of text. If you set the height manually to something larger,
+:ref:`TextInput <sdk_qtquick_textinput>` will always be top aligned
+vertically. You can use anchors to align it however you want within
+another item.
 
 The valid values for horizontalAlignment are
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.AlignLeft,
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.AlignRight and
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.AlignHCenter.
+:ref:`TextInput <sdk_qtquick_textinput>`.AlignLeft,
+:ref:`TextInput <sdk_qtquick_textinput>`.AlignRight and
+:ref:`TextInput <sdk_qtquick_textinput>`.AlignHCenter.
 
 Valid values for
-`verticalAlignment </sdk/apps/qml/Ubuntu.Components/TextField#verticalAlignment-prop>`__
-are `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.AlignTop (default),
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.AlignBottom
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.AlignVCenter.
+:ref:`verticalAlignment <sdk_ubuntu_components_textfield#verticalAlignment-prop>`
+are :ref:`TextInput <sdk_qtquick_textinput>`.AlignTop (default),
+:ref:`TextInput <sdk_qtquick_textinput>`.AlignBottom
+:ref:`TextInput <sdk_qtquick_textinput>`.AlignVCenter.
 
 When using the attached property
-`LayoutMirroring::enabled </sdk/apps/qml/QtQuick/LayoutMirroring#enabled-prop>`__
+:ref:`LayoutMirroring::enabled <sdk_qtquick_layoutmirroring#enabled-prop>`
 to mirror application layouts, the horizontal alignment of text will
 also be mirrored. However, the property horizontalAlignment will remain
 unchanged. To query the effective horizontal alignment of
-`TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__, use the
-read-only property
-`effectiveHorizontalAlignment </sdk/apps/qml/Ubuntu.Components/TextField#effectiveHorizontalAlignment-prop>`__.
+:ref:`TextField <sdk_ubuntu_components_textfield>`, use the read-only
+property
+:ref:`effectiveHorizontalAlignment <sdk_ubuntu_components_textfield#effectiveHorizontalAlignment-prop>`.
 
 | 
+
+.. _sdk_ubuntu_components_textfield_inputMask-prop:
 
 +--------------------------------------------------------------------------+
 |        \ inputMask : string                                              |
 +--------------------------------------------------------------------------+
 
 Allows you to set an input mask on the
-`TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__, restricting
-the text inputs. See QLineEdit::inputMask for further details, as the
-exact same mask strings are used by
-`TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__.
+:ref:`TextField <sdk_ubuntu_components_textfield>`, restricting the text
+inputs. See QLineEdit::inputMask for further details, as the exact same
+mask strings are used by
+:ref:`TextField <sdk_ubuntu_components_textfield>`.
 
 Note that when using an inputMask together with
-`echoMode </sdk/apps/qml/Ubuntu.Components/TextField#echoMode-prop>`__
-to hide the input the empty
-`TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__ may still
-show masked characters - consider
-`validator </sdk/apps/qml/Ubuntu.Components/TextField#validator-prop>`__
-instead.
+:ref:`echoMode <sdk_ubuntu_components_textfield#echoMode-prop>` to hide the
+input the empty :ref:`TextField <sdk_ubuntu_components_textfield>` may
+still show masked characters - consider
+:ref:`validator <sdk_ubuntu_components_textfield#validator-prop>` instead.
 
 **See also**
-`acceptableInput </sdk/apps/qml/Ubuntu.Components/TextField#acceptableInput-prop>`__
-and
-`validator </sdk/apps/qml/Ubuntu.Components/TextField#validator-prop>`__.
+:ref:`acceptableInput <sdk_ubuntu_components_textfield#acceptableInput-prop>`
+and :ref:`validator <sdk_ubuntu_components_textfield#validator-prop>`.
 
 | 
+
+.. _sdk_ubuntu_components_textfield_inputMethodComposing-prop:
 
 +--------------------------------------------------------------------------+
 |        \ inputMethodComposing : bool                                     |
 +--------------------------------------------------------------------------+
 
-This property holds whether the
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ has partial text input
-from an input method.
+This property holds whether the :ref:`TextInput <sdk_qtquick_textinput>`
+has partial text input from an input method.
 
 While it is composing an input method may rely on mouse or key events
-from the `TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__ to
-edit or commit the partial text. This property can be used to determine
-when to disable events handlers that may interfere with the correct
-operation of an input method.
+from the :ref:`TextField <sdk_ubuntu_components_textfield>` to edit or
+commit the partial text. This property can be used to determine when to
+disable events handlers that may interfere with the correct operation of
+an input method.
 
 | 
+
+.. _sdk_ubuntu_components_textfield_inputMethodHints-prop:
 
 +--------------------------------------------------------------------------+
 |        \ inputMethodHints : enumeration                                  |
@@ -564,8 +598,8 @@ Flags that alter behaviour are:
 
 -  - Qt.ImhHiddenText - Characters should be hidden, as is typically
    used when entering passwords. This is automatically set when setting
-   `echoMode </sdk/apps/qml/Ubuntu.Components/TextField#echoMode-prop>`__
-   to ``TextInput.Password``.
+   :ref:`echoMode <sdk_ubuntu_components_textfield#echoMode-prop>` to
+   ``TextInput.Password``.
 -  - Qt.ImhSensitiveData - Typed text should not be stored by the active
    input method in any persistent storage like predictive user
    dictionary.
@@ -602,31 +636,34 @@ Masks:
 
 | 
 
+.. _sdk_ubuntu_components_textfield_length-prop:
+
 +--------------------------------------------------------------------------+
 |        \ length : int                                                    |
 +--------------------------------------------------------------------------+
 
 Returns the total number of characters in the
-`TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__ item.
+:ref:`TextField <sdk_ubuntu_components_textfield>` item.
 
-If the `TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__ has an
-`inputMask </sdk/apps/qml/Ubuntu.Components/TextField#inputMask-prop>`__
-the length will include mask characters and may differ from the length
-of the string returned by the text property.
+If the :ref:`TextField <sdk_ubuntu_components_textfield>` has an
+:ref:`inputMask <sdk_ubuntu_components_textfield#inputMask-prop>` the
+length will include mask characters and may differ from the length of
+the string returned by the text property.
 
 This property can be faster than querying the length the text property
 as it doesn't require any copying or conversion of the
-`TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__'s internal
-string data.
+:ref:`TextField <sdk_ubuntu_components_textfield>`'s internal string data.
 
 | 
+
+.. _sdk_ubuntu_components_textfield_maximumLength-prop:
 
 +--------------------------------------------------------------------------+
 |        \ maximumLength : int                                             |
 +--------------------------------------------------------------------------+
 
 The maximum permitted length of the text in the
-`TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__.
+:ref:`TextField <sdk_ubuntu_components_textfield>`.
 
 If the text is too long, it is truncated at the limit.
 
@@ -634,31 +671,35 @@ By default, this property contains a value of 32767.
 
 | 
 
+.. _sdk_ubuntu_components_textfield_mouseSelectionMode-prop:
+
 +--------------------------------------------------------------------------+
 |        \ mouseSelectionMode : enumeration                                |
 +--------------------------------------------------------------------------+
 
 Specifies how text should be selected using a mouse.
 
--  -`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.SelectCharacters -
-   The selection is updated with individual characters. (Default)
--  -`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.SelectWords - The
-   selection is updated with whole words.
+-  -:ref:`TextInput <sdk_qtquick_textinput>`.SelectCharacters - The
+   selection is updated with individual characters. (Default)
+-  -:ref:`TextInput <sdk_qtquick_textinput>`.SelectWords - The selection is
+   updated with whole words.
 
 This property only applies when
-`selectByMouse </sdk/apps/qml/Ubuntu.Components/TextField#selectByMouse-prop>`__
+:ref:`selectByMouse <sdk_ubuntu_components_textfield#selectByMouse-prop>`
 is true.
 
 | 
+
+.. _sdk_ubuntu_components_textfield_passwordCharacter-prop:
 
 +--------------------------------------------------------------------------+
 |        \ passwordCharacter : string                                      |
 +--------------------------------------------------------------------------+
 
 This is the character displayed when
-`echoMode </sdk/apps/qml/Ubuntu.Components/TextField#echoMode-prop>`__
-is set to Password or PasswordEchoOnEdit. By default it is the unicode
-character 2022.
+:ref:`echoMode <sdk_ubuntu_components_textfield#echoMode-prop>` is set to
+Password or PasswordEchoOnEdit. By default it is the unicode character
+2022.
 
 If this property is set to a string with more than one character, the
 first character is used. If the string is empty, the value is ignored
@@ -666,15 +707,19 @@ and the property is not set.
 
 | 
 
+.. _sdk_ubuntu_components_textfield_persistentSelection-prop:
+
 +--------------------------------------------------------------------------+
 |        \ persistentSelection : bool                                      |
 +--------------------------------------------------------------------------+
 
-Whether the `TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__
-should keep its selection when it loses active focus to another item in
-the scene. By default this is set to false.
+Whether the :ref:`TextField <sdk_ubuntu_components_textfield>` should keep
+its selection when it loses active focus to another item in the scene.
+By default this is set to false.
 
 | 
+
+.. _sdk_ubuntu_components_textfield_placeholderText-prop:
 
 +--------------------------------------------------------------------------+
 |        \ placeholderText : string                                        |
@@ -684,40 +729,48 @@ Text that appears when there is no content in the component.
 
 | 
 
+.. _sdk_ubuntu_components_textfield_popover-prop:
+
 +--------------------------------------------------------------------------+
-|        \ popover : `var <http://doc.qt.io/qt-5/qml-var.html>`__          |
+|        \ popover : `var <http://doc.qt.io/qt-5/qml-var.html>`_           |
 +--------------------------------------------------------------------------+
 
 The property overrides the default popover of the
-`TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__. When set,
-the `TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__ will open
-the given popover instead of the default one defined. The popover can
-either be a component or a URL to be loaded.
+:ref:`TextField <sdk_ubuntu_components_textfield>`. When set, the
+:ref:`TextField <sdk_ubuntu_components_textfield>` will open the given
+popover instead of the default one defined. The popover can either be a
+component or a URL to be loaded.
 
 | 
+
+.. _sdk_ubuntu_components_textfield_primaryItem-prop:
 
 +--------------------------------------------------------------------------+
 |        \ primaryItem : list<Object>                                      |
 +--------------------------------------------------------------------------+
 
 Overlaid component that can be set for the fore side of the
-`TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__, e.g.showing
-a magnifier to implement search functionality.
+:ref:`TextField <sdk_ubuntu_components_textfield>`, e.g.showing a magnifier
+to implement search functionality.
 
 | 
+
+.. _sdk_ubuntu_components_textfield_readOnly-prop:
 
 +--------------------------------------------------------------------------+
 |        \ readOnly : bool                                                 |
 +--------------------------------------------------------------------------+
 
 Sets whether user input can modify the contents of the
-`TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__.
+:ref:`TextField <sdk_ubuntu_components_textfield>`.
 
 If readOnly is set to true, then user input will not affect the text
 property. Any bindings or attempts to set the text property will still
 work.
 
 | 
+
+.. _sdk_ubuntu_components_textfield_renderType-prop:
 
 +--------------------------------------------------------------------------+
 |        \ renderType : enumeration                                        |
@@ -738,16 +791,20 @@ results.
 
 | 
 
+.. _sdk_ubuntu_components_textfield_secondaryItem-prop:
+
 +--------------------------------------------------------------------------+
 |        \ secondaryItem : list<Object>                                    |
 +--------------------------------------------------------------------------+
 
 Overlaid component that can be set for the rear side of the
-`TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__, e.g.showing
-a CAPS LOCK or NUM LOCK indication. The overlaid components will be
-placed right after the clear button.
+:ref:`TextField <sdk_ubuntu_components_textfield>`, e.g.showing a CAPS LOCK
+or NUM LOCK indication. The overlaid components will be placed right
+after the clear button.
 
 | 
+
+.. _sdk_ubuntu_components_textfield_selectByMouse-prop:
 
 +--------------------------------------------------------------------------+
 |        \ selectByMouse : bool                                            |
@@ -759,6 +816,8 @@ If false, the user cannot use the mouse to select text, only can use it
 to focus the input.
 
 | 
+
+.. _sdk_ubuntu_components_textfield_[read-only] selectedText-prop:
 
 +--------------------------------------------------------------------------+
 |        \ [read-only] selectedText : string                               |
@@ -777,6 +836,8 @@ use.
 
 | 
 
+.. _sdk_ubuntu_components_textfield_selectedTextColor-prop:
+
 +--------------------------------------------------------------------------+
 |        \ selectedTextColor : color                                       |
 +--------------------------------------------------------------------------+
@@ -784,6 +845,8 @@ use.
 The highlighted text color, used in selections.
 
 | 
+
+.. _sdk_ubuntu_components_textfield_selectionColor-prop:
 
 +--------------------------------------------------------------------------+
 |        \ selectionColor : color                                          |
@@ -793,6 +856,8 @@ The text highlight color, used behind selections.
 
 | 
 
+.. _sdk_ubuntu_components_textfield_selectionEnd-prop:
+
 +--------------------------------------------------------------------------+
 |        \ selectionEnd : int                                              |
 +--------------------------------------------------------------------------+
@@ -801,11 +866,12 @@ The cursor position after the last character in the current selection.
 
 This property is read-only. To change the selection, use
 select(start,end),
-`selectAll() </sdk/apps/qml/Ubuntu.Components/TextField#selectAll-method>`__,
-or
-`selectWord() </sdk/apps/qml/Ubuntu.Components/TextField#selectWord-method>`__.
+:ref:`selectAll() <sdk_ubuntu_components_textfield#selectAll-method>`, or
+:ref:`selectWord() <sdk_ubuntu_components_textfield#selectWord-method>`.
 
 | 
+
+.. _sdk_ubuntu_components_textfield_selectionStart-prop:
 
 +--------------------------------------------------------------------------+
 |        \ selectionStart : int                                            |
@@ -815,38 +881,40 @@ The cursor position before the first character in the current selection.
 
 This property is read-only. To change the selection, use
 select(start,end),
-`selectAll() </sdk/apps/qml/Ubuntu.Components/TextField#selectAll-method>`__,
-or
-`selectWord() </sdk/apps/qml/Ubuntu.Components/TextField#selectWord-method>`__.
+:ref:`selectAll() <sdk_ubuntu_components_textfield#selectAll-method>`, or
+:ref:`selectWord() <sdk_ubuntu_components_textfield#selectWord-method>`.
 
 | 
+
+.. _sdk_ubuntu_components_textfield_text-prop:
 
 +--------------------------------------------------------------------------+
 |        \ text : string                                                   |
 +--------------------------------------------------------------------------+
 
-The text in the
-`TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__.
+The text in the :ref:`TextField <sdk_ubuntu_components_textfield>`.
 
 | 
+
+.. _sdk_ubuntu_components_textfield_validator-prop:
 
 +--------------------------------------------------------------------------+
 |        \ validator : Validator                                           |
 +--------------------------------------------------------------------------+
 
 Allows you to set a validator on the
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__. When a validator is
-set the `TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__ will
-only accept input which leaves the text property in an acceptable or
-intermediate state. The accepted signal will only be sent if the text is
-in an acceptable state when enter is pressed.
+:ref:`TextInput <sdk_qtquick_textinput>`. When a validator is set the
+:ref:`TextField <sdk_ubuntu_components_textfield>` will only accept input
+which leaves the text property in an acceptable or intermediate state.
+The accepted signal will only be sent if the text is in an acceptable
+state when enter is pressed.
 
 Currently supported validators are
-`IntValidator </sdk/apps/qml/QtQuick/IntValidator/>`__,
-`DoubleValidator </sdk/apps/qml/QtQuick/DoubleValidator/>`__ and
-`RegExpValidator </sdk/apps/qml/QtQuick/RegExpValidator/>`__. An example
-of using validators is shown below, which allows input of integers
-between 11 and 31 into the text input:
+:ref:`IntValidator <sdk_qtquick_intvalidator>`,
+:ref:`DoubleValidator <sdk_qtquick_doublevalidator>` and
+:ref:`RegExpValidator <sdk_qtquick_regexpvalidator>`. An example of using
+validators is shown below, which allows input of integers between 11 and
+31 into the text input:
 
 .. code:: qml
 
@@ -871,18 +939,19 @@ characters.
     }
 
 **See also**
-`acceptableInput </sdk/apps/qml/Ubuntu.Components/TextField#acceptableInput-prop>`__
-and
-`inputMask </sdk/apps/qml/Ubuntu.Components/TextField#inputMask-prop>`__.
+:ref:`acceptableInput <sdk_ubuntu_components_textfield#acceptableInput-prop>`
+and :ref:`inputMask <sdk_ubuntu_components_textfield#inputMask-prop>`.
 
 | 
+
+.. _sdk_ubuntu_components_textfield_verticalAlignment-method:
 
 +--------------------------------------------------------------------------+
 |        \ verticalAlignment : enumeration                                 |
 +--------------------------------------------------------------------------+
 
 See
-`horizontalAlignment </sdk/apps/qml/Ubuntu.Components/TextField#horizontalAlignment-prop>`__
+:ref:`horizontalAlignment <sdk_ubuntu_components_textfield#horizontalAlignment-prop>`
 for details.
 
 | 
@@ -890,20 +959,24 @@ for details.
 Signal Documentation
 --------------------
 
+.. _sdk_ubuntu_components_textfield_accepted-method:
+
 +--------------------------------------------------------------------------+
 |        \ accepted()                                                      |
 +--------------------------------------------------------------------------+
 
 This handler is called when the Return or Enter key is pressed. Note
 that if there is a validator or
-`inputMask </sdk/apps/qml/Ubuntu.Components/TextField#inputMask-prop>`__
-set on the text input, the handler will only be emitted if the input is
-in an acceptable state.
+:ref:`inputMask <sdk_ubuntu_components_textfield#inputMask-prop>` set on
+the text input, the handler will only be emitted if the input is in an
+acceptable state.
 
 | 
 
 Method Documentation
 --------------------
+
+.. _sdk_ubuntu_components_textfield_copy-method:
 
 +--------------------------------------------------------------------------+
 |        \ copy()                                                          |
@@ -913,6 +986,8 @@ Copies the currently selected text to the system clipboard.
 
 | 
 
+.. _sdk_ubuntu_components_textfield_cut-method:
+
 +--------------------------------------------------------------------------+
 |        \ cut()                                                           |
 +--------------------------------------------------------------------------+
@@ -920,6 +995,8 @@ Copies the currently selected text to the system clipboard.
 Moves the currently selected text to the system clipboard.
 
 | 
+
+.. _sdk_ubuntu_components_textfield_deselect-method:
 
 +--------------------------------------------------------------------------+
 |        \ deselect()                                                      |
@@ -929,27 +1006,32 @@ Removes active text selection.
 
 | 
 
+.. _sdk_ubuntu_components_textfield_getText-method:
+
 +--------------------------------------------------------------------------+
 |        \ getText( *start*, *end*)                                        |
 +--------------------------------------------------------------------------+
 
 Returns the section of text that is between the start and end positions.
 
-If the `TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__ has an
-`inputMask </sdk/apps/qml/Ubuntu.Components/TextField#inputMask-prop>`__
-the length will include mask characters.
+If the :ref:`TextField <sdk_ubuntu_components_textfield>` has an
+:ref:`inputMask <sdk_ubuntu_components_textfield#inputMask-prop>` the
+length will include mask characters.
 
 | 
+
+.. _sdk_ubuntu_components_textfield_insert-method:
 
 +--------------------------------------------------------------------------+
 |        \ insert( *position*, *text*)                                     |
 +--------------------------------------------------------------------------+
 
-Inserts *text* into the
-`TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__ at
-*position*.
+Inserts *text* into the :ref:`TextField <sdk_ubuntu_components_textfield>`
+at *position*.
 
 | 
+
+.. _sdk_ubuntu_components_textfield_isRightToLeft-method:
 
 +--------------------------------------------------------------------------+
 |        \ isRightToLeft( *start*, *end*)                                  |
@@ -960,40 +1042,40 @@ between positions start and end is right to left.
 
 | 
 
+.. _sdk_ubuntu_components_textfield_moveCursorSelection-method:
+
 +--------------------------------------------------------------------------+
 |        \ moveCursorSelection( *position*, *mode*)                        |
 +--------------------------------------------------------------------------+
 
 Moves the cursor to position and updates the selection according to the
 optional mode parameter. (To only move the cursor, set the
-`cursorPosition </sdk/apps/qml/Ubuntu.Components/TextField#cursorPosition-prop>`__
+:ref:`cursorPosition <sdk_ubuntu_components_textfield#cursorPosition-prop>`
 property.)
 
 When this method is called it additionally sets either the
-`selectionStart </sdk/apps/qml/Ubuntu.Components/TextField#selectionStart-prop>`__
+:ref:`selectionStart <sdk_ubuntu_components_textfield#selectionStart-prop>`
 or the
-`selectionEnd </sdk/apps/qml/Ubuntu.Components/TextField#selectionEnd-prop>`__
+:ref:`selectionEnd <sdk_ubuntu_components_textfield#selectionEnd-prop>`
 (whichever was at the previous cursor position) to the specified
 position. This allows you to easily extend and contract the selected
 text range.
 
 The selection mode specifies whether the selection is updated on a per
 character or a per word basis. If not specified the selection mode will
-default to
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.SelectCharacters.
+default to :ref:`TextInput <sdk_qtquick_textinput>`.SelectCharacters.
 
--  - `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.SelectCharacters -
-   Sets either the
-   `selectionStart </sdk/apps/qml/Ubuntu.Components/TextField#selectionStart-prop>`__
+-  - :ref:`TextInput <sdk_qtquick_textinput>`.SelectCharacters - Sets
+   either the
+   :ref:`selectionStart <sdk_ubuntu_components_textfield#selectionStart-prop>`
    or
-   `selectionEnd </sdk/apps/qml/Ubuntu.Components/TextField#selectionEnd-prop>`__
+   :ref:`selectionEnd <sdk_ubuntu_components_textfield#selectionEnd-prop>`
    (whichever was at the previous cursor position) to the specified
    position.
--  - `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.SelectWords - Sets
-   the
-   `selectionStart </sdk/apps/qml/Ubuntu.Components/TextField#selectionStart-prop>`__
+-  - :ref:`TextInput <sdk_qtquick_textinput>`.SelectWords - Sets the
+   :ref:`selectionStart <sdk_ubuntu_components_textfield#selectionStart-prop>`
    and
-   `selectionEnd </sdk/apps/qml/Ubuntu.Components/TextField#selectionEnd-prop>`__
+   :ref:`selectionEnd <sdk_ubuntu_components_textfield#selectionEnd-prop>`
    to include all words between the specified position and the previous
    cursor position. Words partially in the range are included.
 
@@ -1009,12 +1091,13 @@ This moves the cursor to position 5, extend the selection end from 5 to
 9 and then retract the selection end from 9 to 7, leaving the text from
 position 5 to 7 selected (the 6th and 7th characters).
 
-The same sequence with
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.SelectWords will extend
-the selection start to a word boundary before or on position 5 and
-extend the selection end to a word boundary on or past position 9.
+The same sequence with :ref:`TextInput <sdk_qtquick_textinput>`.SelectWords
+will extend the selection start to a word boundary before or on position
+5 and extend the selection end to a word boundary on or past position 9.
 
 | 
+
+.. _sdk_ubuntu_components_textfield_paste-method:
 
 +--------------------------------------------------------------------------+
 |        \ paste( *data*)                                                  |
@@ -1025,15 +1108,17 @@ The selected text will be replaces with the data.
 
 | 
 
+.. _sdk_ubuntu_components_textfield_positionAt-method:
+
 +--------------------------------------------------------------------------+
 |        \ positionAt( *x*, *position*)                                    |
 +--------------------------------------------------------------------------+
 
 This function returns the character position at x pixels from the left
-of the `TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__.
-Position 0 is before the first character, position 1 is after the first
-character but before the second, and so on until position text.length,
-which is after all characters.
+of the :ref:`TextField <sdk_ubuntu_components_textfield>`. Position 0 is
+before the first character, position 1 is after the first character but
+before the second, and so on until position text.length, which is after
+all characters.
 
 This means that for all x values before the first character this
 function returns 0, and for all x values after the last character this
@@ -1042,13 +1127,14 @@ function returns text.length.
 The cursor position type specifies how the cursor position should be
 resolved.
 
--  -
-   `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.CursorBetweenCharacters
-   - Returns the position between characters that is nearest x.
--  - `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.CursorOnCharacter
-   - Returns the position before the character that is nearest x.
+-  - :ref:`TextInput <sdk_qtquick_textinput>`.CursorBetweenCharacters -
+   Returns the position between characters that is nearest x.
+-  - :ref:`TextInput <sdk_qtquick_textinput>`.CursorOnCharacter - Returns
+   the position before the character that is nearest x.
 
 | 
+
+.. _sdk_ubuntu_components_textfield_positionToRectangle-method:
 
 +--------------------------------------------------------------------------+
 |        \ positionToRectangle( *pos*)                                     |
@@ -1058,30 +1144,36 @@ This function takes a character position and returns the rectangle that
 the cursor would occupy, if it was placed at that character position.
 
 This is similar to setting the
-`cursorPosition </sdk/apps/qml/Ubuntu.Components/TextField#cursorPosition-prop>`__,
+:ref:`cursorPosition <sdk_ubuntu_components_textfield#cursorPosition-prop>`,
 and then querying the cursor rectangle, but the
-`cursorPosition </sdk/apps/qml/Ubuntu.Components/TextField#cursorPosition-prop>`__
+:ref:`cursorPosition <sdk_ubuntu_components_textfield#cursorPosition-prop>`
 is not changed.
 
 | 
+
+.. _sdk_ubuntu_components_textfield_redo-method:
 
 +--------------------------------------------------------------------------+
 |        \ redo()                                                          |
 +--------------------------------------------------------------------------+
 
 Redoes the last operation if redo is
-`available </sdk/apps/qml/Ubuntu.Components/TextField#canRedo-prop>`__.
+:ref:`available <sdk_ubuntu_components_textfield#canRedo-prop>`.
 
 | 
+
+.. _sdk_ubuntu_components_textfield_remove-method:
 
 +--------------------------------------------------------------------------+
 |        \ remove( *start*, *end*)                                         |
 +--------------------------------------------------------------------------+
 
 Removes the section of text that is between the start and end positions
-from the `TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__.
+from the :ref:`TextField <sdk_ubuntu_components_textfield>`.
 
 | 
+
+.. _sdk_ubuntu_components_textfield_select-method:
 
 +--------------------------------------------------------------------------+
 |        \ select( *start*, *end*)                                         |
@@ -1092,12 +1184,14 @@ Causes the text from start to end to be selected.
 If either start or end is out of range, the selection is not changed.
 
 After calling this,
-`selectionStart </sdk/apps/qml/Ubuntu.Components/TextField#selectionStart-prop>`__
+:ref:`selectionStart <sdk_ubuntu_components_textfield#selectionStart-prop>`
 will become the lesser and
-`selectionEnd </sdk/apps/qml/Ubuntu.Components/TextField#selectionEnd-prop>`__
+:ref:`selectionEnd <sdk_ubuntu_components_textfield#selectionEnd-prop>`
 will become the greater (regardless of the order passed to this method).
 
 | 
+
+.. _sdk_ubuntu_components_textfield_selectAll-method:
 
 +--------------------------------------------------------------------------+
 |        \ selectAll()                                                     |
@@ -1107,6 +1201,8 @@ Causes all text to be selected.
 
 | 
 
+.. _sdk_ubuntu_components_textfield_selectWord-method:
+
 +--------------------------------------------------------------------------+
 |        \ selectWord()                                                    |
 +--------------------------------------------------------------------------+
@@ -1115,13 +1211,15 @@ Causes the word closest to the current cursor position to be selected.
 
 | 
 
+.. _sdk_ubuntu_components_textfield_undo-method:
+
 +--------------------------------------------------------------------------+
 |        \ undo()                                                          |
 +--------------------------------------------------------------------------+
 
 Undoes the last operation if undo is
-`available </sdk/apps/qml/Ubuntu.Components/TextField#canUndo-prop>`__.
-Deselects any current selection, and updates the selection start to the
-current cursor position.
+:ref:`available <sdk_ubuntu_components_textfield#canUndo-prop>`. Deselects
+any current selection, and updates the selection start to the current
+cursor position.
 
 | 

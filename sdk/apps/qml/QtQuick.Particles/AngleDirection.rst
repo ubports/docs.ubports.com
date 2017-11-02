@@ -1,22 +1,26 @@
+.. _sdk_qtquick_particles_angledirection:
+QtQuick.Particles AngleDirection
+================================
+
 For specifying a direction that varies in angle
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtQuick.Particles 2.0         |
 +--------------------------------------+--------------------------------------+
 | Inherits:                            | `Direction </sdk/apps/qml/QtQuick/Pa |
-|                                      | rticles.Direction/>`__               |
+|                                      | rticles.Direction/>`_                |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`angle </sdk/apps/qml/QtQuick/Particles.AngleDirection#angle-prop>`__****
+-  `angle </sdk/apps/qml/QtQuick/Particles.AngleDirection/_angle-prop>`_ 
    : real
--  ****`angleVariation </sdk/apps/qml/QtQuick/Particles.AngleDirection#angleVariation-prop>`__****
+-  `angleVariation </sdk/apps/qml/QtQuick/Particles.AngleDirection/_angleVariation-prop>`_ 
    : real
--  ****`magnitude </sdk/apps/qml/QtQuick/Particles.AngleDirection#magnitude-prop>`__****
+-  `magnitude </sdk/apps/qml/QtQuick/Particles.AngleDirection/_magnitude-prop>`_ 
    : real
--  ****`magnitudeVariation </sdk/apps/qml/QtQuick/Particles.AngleDirection#magnitudeVariation-prop>`__****
+-  `magnitudeVariation </sdk/apps/qml/QtQuick/Particles.AngleDirection/_magnitudeVariation-prop>`_ 
    : real
 
 Detailed Description
@@ -29,13 +33,15 @@ magnitude.
 Property Documentation
 ----------------------
 
+.. _sdk_qtquick_particles_angledirection_angle-prop:
+
 +--------------------------------------------------------------------------+
 |        \ angle : real                                                    |
 +--------------------------------------------------------------------------+
 
 This property specifies the base angle for the direction. The angle of
 this direction will vary by no more than
-`angleVariation </sdk/apps/qml/QtQuick/Particles.AngleDirection#angleVariation-prop>`__
+`angleVariation </sdk/apps/qml/QtQuick/Particles.AngleDirection/#angleVariation-prop>`_ 
 from this angle.
 
 Angle is specified by degrees clockwise from straight right.
@@ -43,6 +49,8 @@ Angle is specified by degrees clockwise from straight right.
 The default value is zero.
 
 | 
+
+.. _sdk_qtquick_particles_angledirection_angleVariation-prop:
 
 +--------------------------------------------------------------------------+
 |        \ angleVariation : real                                           |
@@ -58,13 +66,15 @@ The default value is zero.
 
 | 
 
+.. _sdk_qtquick_particles_angledirection_magnitude-prop:
+
 +--------------------------------------------------------------------------+
 |        \ magnitude : real                                                |
 +--------------------------------------------------------------------------+
 
 This property specifies the base magnitude for the direction. The
 magnitude of this direction will vary by no more than
-`magnitudeVariation </sdk/apps/qml/QtQuick/Particles.AngleDirection#magnitudeVariation-prop>`__
+`magnitudeVariation </sdk/apps/qml/QtQuick/Particles.AngleDirection/#magnitudeVariation-prop>`_ 
 from this magnitude.
 
 Magnitude is specified in units of pixels per second.
@@ -72,6 +82,8 @@ Magnitude is specified in units of pixels per second.
 The default value is zero.
 
 | 
+
+.. _sdk_qtquick_particles_angledirection_magnitudeVariation-prop:
 
 +--------------------------------------------------------------------------+
 |        \ magnitudeVariation : real                                       |

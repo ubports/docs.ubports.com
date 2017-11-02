@@ -1,3 +1,7 @@
+.. _sdk_qtquick_viewtransition:
+QtQuick ViewTransition
+======================
+
 Specifies items under transition in a view
 
 +---------------------+----------------------+
@@ -7,22 +11,22 @@ Specifies items under transition in a view
 Attached Properties
 -------------------
 
--  ****`destination </sdk/apps/qml/QtQuick/ViewTransition#destination-attached-prop>`__****
+-  **:ref:`destination <sdk_qtquick_viewtransition#destination-attached-prop>`**
    : list
--  ****`index </sdk/apps/qml/QtQuick/ViewTransition#index-attached-prop>`__****
+-  **:ref:`index <sdk_qtquick_viewtransition#index-attached-prop>`** :
+   list
+-  **:ref:`item <sdk_qtquick_viewtransition#item-attached-prop>`** :
+   list
+-  **:ref:`targetIndexes <sdk_qtquick_viewtransition#targetIndexes-attached-prop>`**
    : list
--  ****`item </sdk/apps/qml/QtQuick/ViewTransition#item-attached-prop>`__****
-   : list
--  ****`targetIndexes </sdk/apps/qml/QtQuick/ViewTransition#targetIndexes-attached-prop>`__****
-   : list
--  ****`targetItems </sdk/apps/qml/QtQuick/ViewTransition#targetItems-attached-prop>`__****
+-  **:ref:`targetItems <sdk_qtquick_viewtransition#targetItems-attached-prop>`**
    : list
 
 Detailed Description
 --------------------
 
-With `ListView </sdk/apps/qml/QtQuick/ListView/>`__ and
-`GridView </sdk/apps/qml/QtQuick/draganddrop#gridview>`__, it is
+With :ref:`ListView <sdk_qtquick_listview>` and
+`GridView </sdk/apps/qml/QtQuick/draganddrop/#gridview>`_ , it is
 possible to specify transitions that should be applied whenever the
 items in the view change as a result of modifications to the view's
 model. They both have the following properties that can be set to the
@@ -43,10 +47,11 @@ appropriate transitions to be run for various operations:
    remove operations, respectively (these override the generic displaced
    transition if specified)
 
-For the `Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#row>`__,
-`Column </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#column>`__,
-`Grid </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#grid>`__ and
-`Flow </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#flow>`__
+For the
+`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#row>`_ ,
+`Column </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#column>`_ ,
+`Grid </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#grid>`_  and
+`Flow </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#flow>`_ 
 positioner types, which operate with collections of child items rather
 than data models, the following properties are used instead:
 
@@ -54,7 +59,7 @@ than data models, the following properties are used instead:
    to the positioner at the time of its creation
 -  ``add`` - the transition to apply to items that are added to or
    reparented to the positioner, or items that have become
-   `visible </sdk/apps/qml/QtQuick/Item#visible-prop>`__
+   :ref:`visible <sdk_qtquick_item#visible-prop>`
 -  ``move`` - the transition to apply to items that have moved within
    the positioner, including when they are displaced due to the addition
    or removal of other items, or when items are otherwise rearranged
@@ -62,38 +67,38 @@ than data models, the following properties are used instead:
    resizing of other items in the positioner
 
 View transitions have access to a
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__ attached
-property that provides details of the items that are under transition
-and the operation that triggered the transition. Since view transitions
-are run once per item, these details can be used to customize each
-transition for each individual item.
+:ref:`ViewTransition <sdk_qtquick_viewtransition>` attached property that
+provides details of the items that are under transition and the
+operation that triggered the transition. Since view transitions are run
+once per item, these details can be used to customize each transition
+for each individual item.
 
-The `ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__ attached
-property provides the following properties specific to the item to which
-the transition is applied:
+The :ref:`ViewTransition <sdk_qtquick_viewtransition>` attached property
+provides the following properties specific to the item to which the
+transition is applied:
 
--  `ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__.item - the
-   item that is under transition
--  `ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__.index -
-   the index of this item
--  `ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__.destination
-   - the (x,y) point to which this item is moving for the relevant view
+-  :ref:`ViewTransition <sdk_qtquick_viewtransition>`.item - the item that
+   is under transition
+-  :ref:`ViewTransition <sdk_qtquick_viewtransition>`.index - the index of
+   this item
+-  :ref:`ViewTransition <sdk_qtquick_viewtransition>`.destination - the
+   (x,y) point to which this item is moving for the relevant view
    operation
 
-In addition, `ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__
-provides properties specific to the items which are the target of the
-operation that triggered the transition:
+In addition, :ref:`ViewTransition <sdk_qtquick_viewtransition>` provides
+properties specific to the items which are the target of the operation
+that triggered the transition:
 
--  `ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__.\ `targetIndexes </sdk/apps/qml/QtQuick/ViewTransition#targetIndexes-attached-prop>`__
+-  :ref:`ViewTransition <sdk_qtquick_viewtransition>`.\ `targetIndexes <sdk_qtquick_viewtransition#targetIndexes-attached-prop>`
    - the indexes of the target items
--  `ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__.\ `targetItems </sdk/apps/qml/QtQuick/ViewTransition#targetItems-attached-prop>`__
+-  :ref:`ViewTransition <sdk_qtquick_viewtransition>`.\ `targetItems <sdk_qtquick_viewtransition#targetItems-attached-prop>`
    - the target items themselves
 
 (Note that for the
-`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#row>`__,
-`Column </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#column>`__,
-`Grid </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#grid>`__ and
-`Flow </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#flow>`__
+`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#row>`_ ,
+`Column </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#column>`_ ,
+`Grid </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#grid>`_  and
+`Flow </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#flow>`_ 
 positioner types, the ``move`` transition only provides these two
 additional details when the transition is triggered by the addition of
 items to a positioner.)
@@ -103,8 +108,8 @@ attributes listed above. These attributes merely provide extra details
 that are useful for customising view transitions.
 
 Following is an introduction to view transitions and the ways in which
-the `ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__ attached
-property can be used to augment view transitions.
+the :ref:`ViewTransition <sdk_qtquick_viewtransition>` attached property
+can be used to augment view transitions.
 
 View transitions: a simple example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -149,11 +154,10 @@ be this:
 
 |image0|
 
-Notice that the
-`NumberAnimation </sdk/apps/qml/QtQuick/NumberAnimation/>`__ objects
-above do not need to specify a ``target`` to animate the appropriate
-item. Also, the
-`NumberAnimation </sdk/apps/qml/QtQuick/NumberAnimation/>`__ in the
+Notice that the :ref:`NumberAnimation <sdk_qtquick_numberanimation>`
+objects above do not need to specify a ``target`` to animate the
+appropriate item. Also, the
+:ref:`NumberAnimation <sdk_qtquick_numberanimation>` in the
 ``addTransition`` does not need to specify the ``to`` value to move the
 item to its correct position in the view. This is because the view
 implicitly sets the ``target`` and ``to`` values with the correct item
@@ -164,46 +168,45 @@ At its simplest, a view transition may just animate an item to its new
 position following a view operation, just as the ``displaced``
 transition does above, or animate some item properties, as in the
 ``add`` transition above. Additionally, a view transition may make use
-of the `ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__
-attached property to customize animation behavior for different items.
-Following are some examples of how this can be achieved.
+of the :ref:`ViewTransition <sdk_qtquick_viewtransition>` attached property
+to customize animation behavior for different items. Following are some
+examples of how this can be achieved.
 
 Using the ViewTransition attached property
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-As stated, the various
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__ properties
-provide details specific to the individual item being transitioned as
-well as the operation that triggered the transition. In the animation
-above, five items are inserted in succession at index 0. When the fifth
-and final insertion takes place, adding "Item 4" to the view, the
-``add`` transition is run once (for the inserted item) and the
+As stated, the various :ref:`ViewTransition <sdk_qtquick_viewtransition>`
+properties provide details specific to the individual item being
+transitioned as well as the operation that triggered the transition. In
+the animation above, five items are inserted in succession at index 0.
+When the fifth and final insertion takes place, adding "Item 4" to the
+view, the ``add`` transition is run once (for the inserted item) and the
 ``displaced`` transition is run four times (once for each of the four
 existing items in the view).
 
 At this point, if we examined the ``displaced`` transition that was run
 for the bottom displaced item ("Item 0"), the
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__ property
-values provided to this transition would be as follows:
+:ref:`ViewTransition <sdk_qtquick_viewtransition>` property values provided
+to this transition would be as follows:
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
-| Property                                                                                                                                            | Value                                                        | Explanation                                                                                             |
-+=====================================================================================================================================================+==============================================================+=========================================================================================================+
-| `ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__.item                                                                                     | "Item 0" delegate instance                                   | The "Item 0" `Rectangle </sdk/apps/qml/QtQuick/Rectangle/>`__ object itself                             |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
-| `ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__.index                                                                                    | ``int`` value of 4                                           | The index of "Item 0" within the model following the add operation                                      |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
-| `ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__.destination                                                                              | point value of (0, 120)                                      | The position that "Item 0" is moving to                                                                 |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
-| `ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__.\ `targetIndexes </sdk/apps/qml/QtQuick/ViewTransition#targetIndexes-attached-prop>`__   | ``int`` array, just contains the integer "0" (zero)          | The index of "Item 4", the new item added to the view                                                   |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
-| `ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__.\ `targetItems </sdk/apps/qml/QtQuick/ViewTransition#targetItems-attached-prop>`__       | object array, just contains the "Item 4" delegate instance   | The "Item 4" `Rectangle </sdk/apps/qml/QtQuick/Rectangle/>`__ object - the new item added to the view   |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+----------------------------------------------------------------------------------------------+
+| Property                                                                                                                       | Value                                                        | Explanation                                                                                  |
++================================================================================================================================+==============================================================+==============================================================================================+
+| :ref:`ViewTransition <sdk_qtquick_viewtransition>`.item                                                                           | "Item 0" delegate instance                                   | The "Item 0" `Rectangle <sdk_qtquick_rectangle>` object itself                             |
++--------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+----------------------------------------------------------------------------------------------+
+| :ref:`ViewTransition <sdk_qtquick_viewtransition>`.index                                                                          | ``int`` value of 4                                           | The index of "Item 0" within the model following the add operation                           |
++--------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+----------------------------------------------------------------------------------------------+
+| :ref:`ViewTransition <sdk_qtquick_viewtransition>`.destination                                                                    | point value of (0, 120)                                      | The position that "Item 0" is moving to                                                      |
++--------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+----------------------------------------------------------------------------------------------+
+| :ref:`ViewTransition <sdk_qtquick_viewtransition>`.\ `targetIndexes <sdk_qtquick_viewtransition#targetIndexes-attached-prop>`| ``int`` array, just contains the integer "0" (zero)          | The index of "Item 4", the new item added to the view                                        |
++--------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+----------------------------------------------------------------------------------------------+
+| :ref:`ViewTransition <sdk_qtquick_viewtransition>`.\ `targetItems <sdk_qtquick_viewtransition#targetItems-attached-prop>`    | object array, just contains the "Item 4" delegate instance   | The "Item 4" `Rectangle <sdk_qtquick_rectangle>` object - the new item added to the view   |
++--------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+----------------------------------------------------------------------------------------------+
 
 The
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__.\ `targetIndexes </sdk/apps/qml/QtQuick/ViewTransition#targetIndexes-attached-prop>`__
+:ref:`ViewTransition <sdk_qtquick_viewtransition>`.\ `targetIndexes <sdk_qtquick_viewtransition#targetIndexes-attached-prop>`
 and
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__.\ `targetItems </sdk/apps/qml/QtQuick/ViewTransition#targetItems-attached-prop>`__
+:ref:`ViewTransition <sdk_qtquick_viewtransition>`.\ `targetItems <sdk_qtquick_viewtransition#targetItems-attached-prop>`
 lists provide the items and indexes of all delegate instances that are
 the targets of the relevant operation. For an add operation, these are
 all the items that are added into the view; for a remove, these are all
@@ -212,14 +215,13 @@ contain references to items that have been created within the view or
 its cached items; targets that are not within the visible area of the
 view or within the item cache will not be accessible.)
 
-So, while the
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__.item,
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__.index and
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__.destination
-values vary for each individual transition that is run, the
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__.\ `targetIndexes </sdk/apps/qml/QtQuick/ViewTransition#targetIndexes-attached-prop>`__
+So, while the :ref:`ViewTransition <sdk_qtquick_viewtransition>`.item,
+:ref:`ViewTransition <sdk_qtquick_viewtransition>`.index and
+:ref:`ViewTransition <sdk_qtquick_viewtransition>`.destination values vary
+for each individual transition that is run, the
+:ref:`ViewTransition <sdk_qtquick_viewtransition>`.\ `targetIndexes <sdk_qtquick_viewtransition#targetIndexes-attached-prop>`
 and
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__.\ `targetItems </sdk/apps/qml/QtQuick/ViewTransition#targetItems-attached-prop>`__
+:ref:`ViewTransition <sdk_qtquick_viewtransition>`.\ `targetItems <sdk_qtquick_viewtransition#targetItems-attached-prop>`
 values are the same for every ``add`` and ``displaced`` transition that
 is triggered by a particular add operation.
 
@@ -227,20 +229,19 @@ Delaying animations based on index
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Since each view transition is run once for each item affected by the
-transition, the
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__ properties
-can be used within a transition to define custom behavior for each
-item's transition. For example, the
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__ in the previous example
-could use this information to create a ripple-type effect on the
-movement of the displaced items.
+transition, the :ref:`ViewTransition <sdk_qtquick_viewtransition>`
+properties can be used within a transition to define custom behavior for
+each item's transition. For example, the
+:ref:`ListView <sdk_qtquick_listview>` in the previous example could use
+this information to create a ripple-type effect on the movement of the
+displaced items.
 
 This can be achieved by modifying the ``displaced`` transition so that
 it delays the animation of each displaced item based on the difference
 between its index (provided by
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__.index) and
-the first removed index (provided by
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__.\ `targetIndexes </sdk/apps/qml/QtQuick/ViewTransition#targetIndexes-attached-prop>`__):
+:ref:`ViewTransition <sdk_qtquick_viewtransition>`.index) and the first
+removed index (provided by
+:ref:`ViewTransition <sdk_qtquick_viewtransition>`.\ `targetIndexes <sdk_qtquick_viewtransition#targetIndexes-attached-prop>`):
 
 .. code:: qml
 
@@ -264,21 +265,20 @@ displaced by the add, like this:
 Animating items to intermediate positions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The `ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__.item
-property gives a reference to the item to which the transition is being
-applied. This can be used to access any of the item's attributes, custom
-``property`` values, and so on.
+The :ref:`ViewTransition <sdk_qtquick_viewtransition>`.item property gives
+a reference to the item to which the transition is being applied. This
+can be used to access any of the item's attributes, custom ``property``
+values, and so on.
 
 Below is a modification of the ``displaced`` transition from the
 previous example. It adds a
-`ParallelAnimation </sdk/apps/qml/QtQuick/ParallelAnimation/>`__ with
-nested `NumberAnimation </sdk/apps/qml/QtQuick/NumberAnimation/>`__
-objects that reference
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__.item to
-access each item's ``x`` and ``y`` values at the start of their
-transitions. This allows each item to animate to an intermediate
-position relative to its starting point for the transition, before
-animating to its final position in the view:
+:ref:`ParallelAnimation <sdk_qtquick_parallelanimation>` with nested
+:ref:`NumberAnimation <sdk_qtquick_numberanimation>` objects that reference
+:ref:`ViewTransition <sdk_qtquick_viewtransition>`.item to access each
+item's ``x`` and ``y`` values at the start of their transitions. This
+allows each item to animate to an intermediate position relative to its
+starting point for the transition, before animating to its final
+position in the view:
 
 .. code:: qml
 
@@ -309,19 +309,18 @@ view:
 
 |image2|
 
-Since the final
-`NumberAnimation </sdk/apps/qml/QtQuick/NumberAnimation/>`__ does not
-specify a ``to`` value, the view implicitly sets this value to the
+Since the final :ref:`NumberAnimation <sdk_qtquick_numberanimation>` does
+not specify a ``to`` value, the view implicitly sets this value to the
 item's final position in the view, and so this last animation will move
 this item to the correct place. If the transition requires the final
 position of the item for some calculation, this is accessible through
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__.destination.
+:ref:`ViewTransition <sdk_qtquick_viewtransition>`.destination.
 
 Instead of using multiple NumberAnimations, you could use a
-`PathAnimation </sdk/apps/qml/QtQuick/animation#pathanimation>`__ to
+`PathAnimation </sdk/apps/qml/QtQuick/animation/#pathanimation>`_  to
 animate an item over a curved path. For example, the ``add`` transition
 in the previous example could be augmented with a
-`PathAnimation </sdk/apps/qml/QtQuick/animation#pathanimation>`__ as
+`PathAnimation </sdk/apps/qml/QtQuick/animation/#pathanimation>`_  as
 follows: to animate newly added items along a path:
 
 .. code:: qml
@@ -439,20 +438,19 @@ Restrictions regarding ScriptAction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 When a view transition is initialized, any property bindings that refer
-to the `ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__
-attached property are evaluated in preparation for the transition. Due
-to the nature of the internal construction of a view transition, the
-attributes of the
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__ attached
-property are only valid for the relevant item when the transition is
-initialized, and may not be valid when the transition is actually run.
+to the :ref:`ViewTransition <sdk_qtquick_viewtransition>` attached property
+are evaluated in preparation for the transition. Due to the nature of
+the internal construction of a view transition, the attributes of the
+:ref:`ViewTransition <sdk_qtquick_viewtransition>` attached property are
+only valid for the relevant item when the transition is initialized, and
+may not be valid when the transition is actually run.
 
-Therefore, a `ScriptAction </sdk/apps/qml/QtQuick/ScriptAction/>`__
-within a view transition should not refer to the
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__ attached
-property, as it may not refer to the expected values at the time that
-the `ScriptAction </sdk/apps/qml/QtQuick/ScriptAction/>`__ is actually
-invoked. Consider the following example:
+Therefore, a :ref:`ScriptAction <sdk_qtquick_scriptaction>` within a view
+transition should not refer to the
+:ref:`ViewTransition <sdk_qtquick_viewtransition>` attached property, as it
+may not refer to the expected values at the time that the
+:ref:`ScriptAction <sdk_qtquick_scriptaction>` is actually invoked.
+Consider the following example:
 
 .. code:: qml
 
@@ -493,25 +491,23 @@ When the space key is pressed, three items are moved from index 5 to
 index 1. For each moved item, the ``moveTransition`` sequence presumably
 animates the item's color to "yellow", then animates it to its final
 position, then changes the item color back to "lightsteelblue" using a
-`ScriptAction </sdk/apps/qml/QtQuick/ScriptAction/>`__. However, when
-run, the transition does not produce the intended result:
+:ref:`ScriptAction <sdk_qtquick_scriptaction>`. However, when run, the
+transition does not produce the intended result:
 
 |image6|
 
 Only the last moved item is returned to the "lightsteelblue" color; the
 others remain yellow. This is because the
-`ScriptAction </sdk/apps/qml/QtQuick/ScriptAction/>`__ is not run until
-after the transition has already been initialized, by which time the
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__.item value
-has changed to refer to a different item; the item that the script had
-intended to refer to is not the one held by
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__.item at the
-time the `ScriptAction </sdk/apps/qml/QtQuick/ScriptAction/>`__ is
-actually invoked.
+:ref:`ScriptAction <sdk_qtquick_scriptaction>` is not run until after the
+transition has already been initialized, by which time the
+:ref:`ViewTransition <sdk_qtquick_viewtransition>`.item value has changed
+to refer to a different item; the item that the script had intended to
+refer to is not the one held by
+:ref:`ViewTransition <sdk_qtquick_viewtransition>`.item at the time the
+:ref:`ScriptAction <sdk_qtquick_scriptaction>` is actually invoked.
 
 In this instance, to avoid this issue, the view could set the property
-using a `PropertyAction </sdk/apps/qml/QtQuick/PropertyAction/>`__
-instead:
+using a :ref:`PropertyAction <sdk_qtquick_propertyaction>` instead:
 
 .. code:: qml
 
@@ -526,10 +522,10 @@ instead:
         }
 
 When the transition is initialized, the
-`PropertyAction </sdk/apps/qml/QtQuick/PropertyAction/>`__ ``target``
-will be set to the respective
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__.item for the
-transition and will later run with the correct item target as expected.
+:ref:`PropertyAction <sdk_qtquick_propertyaction>` ``target`` will be set
+to the respective :ref:`ViewTransition <sdk_qtquick_viewtransition>`.item
+for the transition and will later run with the correct item target as
+expected.
 
 Attached Property Documentation
 -------------------------------
@@ -588,7 +584,7 @@ are actually in view, or will be in the view once the relevant operation
 completes.
 
 **See also**
-`QtQuick::ViewTransition::targetItems </sdk/apps/qml/QtQuick/ViewTransition#targetItems-attached-prop>`__.
+:ref:`QtQuick::ViewTransition::targetItems <sdk_qtquick_viewtransition#targetItems-attached-prop>`.
 
 | 
 
@@ -614,19 +610,19 @@ view, or will be in the view once the relevant operation completes.
 outside of the transition as the items may become invalid. The
 targetItems are only valid when the Transition is initially created;
 this also means they should not be used by
-`ScriptAction </sdk/apps/qml/QtQuick/ScriptAction/>`__ objects in the
-Transition, which are not evaluated until the transition is run.
+:ref:`ScriptAction <sdk_qtquick_scriptaction>` objects in the Transition,
+which are not evaluated until the transition is run.
 
 **See also**
-`QtQuick::ViewTransition::targetIndexes </sdk/apps/qml/QtQuick/ViewTransition#targetIndexes-attached-prop>`__.
+:ref:`QtQuick::ViewTransition::targetIndexes <sdk_qtquick_viewtransition#targetIndexes-attached-prop>`.
 
 | 
 
-.. |image0| image:: /media/sdk/apps/qml/QtQuick/ViewTransition/images/viewtransitions-basic.gif
-.. |image1| image:: /media/sdk/apps/qml/QtQuick/ViewTransition/images/viewtransitions-delayedbyindex.gif
-.. |image2| image:: /media/sdk/apps/qml/QtQuick/ViewTransition/images/viewtransitions-intermediatemove.gif
-.. |image3| image:: /media/sdk/apps/qml/QtQuick/ViewTransition/images/viewtransitions-pathanim.gif
-.. |image4| image:: /media/sdk/apps/qml/QtQuick/ViewTransition/images/viewtransitions-interruptedbad.gif
-.. |image5| image:: /media/sdk/apps/qml/QtQuick/ViewTransition/images/viewtransitions-interruptedgood.gif
-.. |image6| image:: /media/sdk/apps/qml/QtQuick/ViewTransition/images/viewtransitions-scriptactionbad.gif
+.. |image0| image:: /mediasdk_qtquick_viewtransitionimages/viewtransitions-basic.gif
+.. |image1| image:: /mediasdk_qtquick_viewtransitionimages/viewtransitions-delayedbyindex.gif
+.. |image2| image:: /mediasdk_qtquick_viewtransitionimages/viewtransitions-intermediatemove.gif
+.. |image3| image:: /mediasdk_qtquick_viewtransitionimages/viewtransitions-pathanim.gif
+.. |image4| image:: /mediasdk_qtquick_viewtransitionimages/viewtransitions-interruptedbad.gif
+.. |image5| image:: /mediasdk_qtquick_viewtransitionimages/viewtransitions-interruptedgood.gif
+.. |image6| image:: /mediasdk_qtquick_viewtransitionimages/viewtransitions-scriptactionbad.gif
 

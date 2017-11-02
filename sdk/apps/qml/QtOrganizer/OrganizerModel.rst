@@ -1,3 +1,7 @@
+.. _sdk_qtorganizer_organizermodel:
+QtOrganizer OrganizerModel
+==========================
+
 The OrganizerModel element provides access to organizer items from the
 organizer store.
 
@@ -8,126 +12,124 @@ organizer store.
 Properties
 ----------
 
--  ****`ImportError </sdk/apps/qml/QtOrganizer/OrganizerModel#ImportError-prop>`__****
+-  :ref:`ImportError <sdk_qtorganizer_organizermodel_ImportError-prop>`
    : enumeration
--  ****`autoUpdate </sdk/apps/qml/QtOrganizer/OrganizerModel#autoUpdate-prop>`__****
+-  :ref:`autoUpdate <sdk_qtorganizer_organizermodel_autoUpdate-prop>`
    : bool
--  ****`availableManagers </sdk/apps/qml/QtOrganizer/OrganizerModel#availableManagers-prop>`__****
+-  :ref:`availableManagers <sdk_qtorganizer_organizermodel_availableManagers-prop>`
    : list<string>
--  ****`collections </sdk/apps/qml/QtOrganizer/OrganizerModel#collections-prop>`__****
+-  :ref:`collections <sdk_qtorganizer_organizermodel_collections-prop>`
    : list<Collection>
--  ****`endPeriod </sdk/apps/qml/QtOrganizer/OrganizerModel#endPeriod-prop>`__****
+-  :ref:`endPeriod <sdk_qtorganizer_organizermodel_endPeriod-prop>`
    : date
--  ****`error </sdk/apps/qml/QtOrganizer/OrganizerModel#error-prop>`__****
-   : string
--  ****`fetchHint </sdk/apps/qml/QtOrganizer/OrganizerModel#fetchHint-prop>`__****
+-  :ref:`error <sdk_qtorganizer_organizermodel_error-prop>` :
+   string
+-  :ref:`fetchHint <sdk_qtorganizer_organizermodel_fetchHint-prop>`
    : FetchHint
--  ****`filter </sdk/apps/qml/QtOrganizer/OrganizerModel#filter-prop>`__****
-   : Filter
--  ****`itemCount </sdk/apps/qml/QtOrganizer/OrganizerModel#itemCount-prop>`__****
+-  :ref:`filter <sdk_qtorganizer_organizermodel_filter-prop>` :
+   Filter
+-  :ref:`itemCount <sdk_qtorganizer_organizermodel_itemCount-prop>`
    : int
--  ****`items </sdk/apps/qml/QtOrganizer/OrganizerModel#items-prop>`__****
-   : list<OrganizerItem>
--  ****`manager </sdk/apps/qml/QtOrganizer/OrganizerModel#manager-prop>`__****
+-  :ref:`items <sdk_qtorganizer_organizermodel_items-prop>` :
+   list<OrganizerItem>
+-  :ref:`manager <sdk_qtorganizer_organizermodel_manager-prop>` :
+   string
+-  :ref:`managerName <sdk_qtorganizer_organizermodel_managerName-prop>`
    : string
--  ****`managerName </sdk/apps/qml/QtOrganizer/OrganizerModel#managerName-prop>`__****
-   : string
--  ****`sortOrders </sdk/apps/qml/QtOrganizer/OrganizerModel#sortOrders-prop>`__****
+-  :ref:`sortOrders <sdk_qtorganizer_organizermodel_sortOrders-prop>`
    : list<SortOrder>
--  ****`startPeriod </sdk/apps/qml/QtOrganizer/OrganizerModel#startPeriod-prop>`__****
+-  :ref:`startPeriod <sdk_qtorganizer_organizermodel_startPeriod-prop>`
    : date
 
 Signals
 -------
 
--  ****`onExportCompleted </sdk/apps/qml/QtOrganizer/OrganizerModel#onExportCompleted-signal>`__****\ ()
--  ****`onImportCompleted </sdk/apps/qml/QtOrganizer/OrganizerModel#onImportCompleted-signal>`__****\ (ImportError
+-  :ref:`onExportCompleted <sdk_qtorganizer_organizermodel_onExportCompleted-signal>`\ ()
+-  :ref:`onImportCompleted <sdk_qtorganizer_organizermodel_onImportCompleted-signal>`\ (ImportError
    *error*, URL *url*, list<string> *ids*)
--  ****`onItemsFetched </sdk/apps/qml/QtOrganizer/OrganizerModel#onItemsFetched-signal>`__****\ (int
+-  :ref:`onItemsFetched <sdk_qtorganizer_organizermodel_onItemsFetched-signal>`\ (int
    *requestId*, list<OrganizerItem> *fetchedItems*)
--  ****`onModelChanged </sdk/apps/qml/QtOrganizer/OrganizerModel#onModelChanged-signal>`__****\ ()
+-  :ref:`onModelChanged <sdk_qtorganizer_organizermodel_onModelChanged-signal>`\ ()
 
 Methods
 -------
 
--  ****`cancelUpdate </sdk/apps/qml/QtOrganizer/OrganizerModel#cancelUpdate-method>`__****\ ()
+-  :ref:`cancelUpdate <sdk_qtorganizer_organizermodel_cancelUpdate-method>`\ ()
 -  Collection
-   ****`collection </sdk/apps/qml/QtOrganizer/OrganizerModel#collection-method>`__****\ (string
+   **:ref:`collection <sdk_qtorganizer_organizermodel#collection-method>`**\ (string
    *collectionId*)
 -  bool
-   ****`containsItems </sdk/apps/qml/QtOrganizer/OrganizerModel#containsItems-method-2>`__****\ (date
+   **:ref:`containsItems <sdk_qtorganizer_organizermodel#containsItems-method-2>`**\ (date
    *start*, date *end*)
 -  list<bool>
-   ****`containsItems </sdk/apps/qml/QtOrganizer/OrganizerModel#containsItems-method>`__****\ (date
+   **:ref:`containsItems <sdk_qtorganizer_organizermodel#containsItems-method>`**\ (date
    *start*, date *end*, int *interval*)
 -  Collection
-   ****`defaultCollection </sdk/apps/qml/QtOrganizer/OrganizerModel#defaultCollection-method>`__****\ ()
--  ****`exportItems </sdk/apps/qml/QtOrganizer/OrganizerModel#exportItems-method>`__****\ (url
+   **:ref:`defaultCollection <sdk_qtorganizer_organizermodel#defaultCollection-method>`**\ ()
+-  :ref:`exportItems <sdk_qtorganizer_organizermodel_exportItems-method>`\ (url
    *url*, list<string> *profiles*)
--  ****`fetchCollections </sdk/apps/qml/QtOrganizer/OrganizerModel#fetchCollections-method>`__****\ ()
+-  :ref:`fetchCollections <sdk_qtorganizer_organizermodel_fetchCollections-method>`\ ()
 -  int
-   ****`fetchItems </sdk/apps/qml/QtOrganizer/OrganizerModel#fetchItems-method-2>`__****\ (stringlist
+   **:ref:`fetchItems <sdk_qtorganizer_organizermodel#fetchItems-method-2>`**\ (stringlist
    *itemIds*)
 -  int
-   ****`fetchItems </sdk/apps/qml/QtOrganizer/OrganizerModel#fetchItems-method>`__****\ (date
+   **:ref:`fetchItems <sdk_qtorganizer_organizermodel#fetchItems-method>`**\ (date
    *start*, date *end*, Filter *filter*, int *maxCount*, list<SortOrder>
    *sortOrders*, FetchHint *fetchHint*)
--  ****`importItems </sdk/apps/qml/QtOrganizer/OrganizerModel#importItems-method>`__****\ (url
+-  :ref:`importItems <sdk_qtorganizer_organizermodel_importItems-method>`\ (url
    *url*, list<string> *profiles*)
 -  OrganizerItem
-   ****`item </sdk/apps/qml/QtOrganizer/OrganizerModel#item-method>`__****\ (string
+   **:ref:`item <sdk_qtorganizer_organizermodel#item-method>`**\ (string
    *itemId*)
 -  list<string>
-   ****`itemIds </sdk/apps/qml/QtOrganizer/OrganizerModel#itemIds-method>`__****\ (date
+   **:ref:`itemIds <sdk_qtorganizer_organizermodel#itemIds-method>`**\ (date
    *start*, date *end*)
 -  list<OrganizerItem>
-   ****`itemsByTimePeriod </sdk/apps/qml/QtOrganizer/OrganizerModel#itemsByTimePeriod-method>`__****\ (date
+   **:ref:`itemsByTimePeriod <sdk_qtorganizer_organizermodel#itemsByTimePeriod-method>`**\ (date
    *start*, date *end*)
--  ****`removeCollection </sdk/apps/qml/QtOrganizer/OrganizerModel#removeCollection-method>`__****\ (string
+-  :ref:`removeCollection <sdk_qtorganizer_organizermodel_removeCollection-method>`\ (string
    *collectionId*)
--  ****`removeItem </sdk/apps/qml/QtOrganizer/OrganizerModel#removeItem-method-2>`__****\ (OrganizerItem
+-  :ref:`removeItem <sdk_qtorganizer_organizermodel_removeItem-method-2>`\ (OrganizerItem
    *item*)
--  ****`removeItem </sdk/apps/qml/QtOrganizer/OrganizerModel#removeItem-method>`__****\ (string
+-  :ref:`removeItem <sdk_qtorganizer_organizermodel_removeItem-method>`\ (string
    *itemId*)
--  ****`removeItems </sdk/apps/qml/QtOrganizer/OrganizerModel#removeItems-method-2>`__****\ (list<OrganizerItem>
+-  :ref:`removeItems <sdk_qtorganizer_organizermodel_removeItems-method-2>`\ (list<OrganizerItem>
    *items*)
--  ****`removeItems </sdk/apps/qml/QtOrganizer/OrganizerModel#removeItems-method>`__****\ (list<string>
+-  :ref:`removeItems <sdk_qtorganizer_organizermodel_removeItems-method>`\ (list<string>
    *itemId*)
--  ****`saveCollection </sdk/apps/qml/QtOrganizer/OrganizerModel#saveCollection-method>`__****\ (Collection
+-  :ref:`saveCollection <sdk_qtorganizer_organizermodel_saveCollection-method>`\ (Collection
    *collection*)
--  ****`saveItem </sdk/apps/qml/QtOrganizer/OrganizerModel#saveItem-method>`__****\ (OrganizerItem
+-  :ref:`saveItem <sdk_qtorganizer_organizermodel_saveItem-method>`\ (OrganizerItem
    *item*)
--  ****`update </sdk/apps/qml/QtOrganizer/OrganizerModel#update-method>`__****\ ()
--  ****`updateCollections </sdk/apps/qml/QtOrganizer/OrganizerModel#updateCollections-method>`__****\ ()
--  ****`updateItems </sdk/apps/qml/QtOrganizer/OrganizerModel#updateItems-method>`__****\ ()
+-  :ref:`update <sdk_qtorganizer_organizermodel_update-method>`\ ()
+-  :ref:`updateCollections <sdk_qtorganizer_organizermodel_updateCollections-method>`\ ()
+-  :ref:`updateItems <sdk_qtorganizer_organizermodel_updateItems-method>`\ ()
 
 Detailed Description
 --------------------
 
-`OrganizerModel </sdk/apps/qml/QtOrganizer/OrganizerModel/>`__ provides
-a model of organizer items from the organizer store. The contents of the
-model can be specified with
-`filter </sdk/apps/qml/QtOrganizer/OrganizerModel#filter-prop>`__,
-`sortOrders </sdk/apps/qml/QtOrganizer/OrganizerModel#sortOrders-prop>`__
-and
-`fetchHint </sdk/apps/qml/QtOrganizer/OrganizerModel#fetchHint-prop>`__
+:ref:`OrganizerModel <sdk_qtorganizer_organizermodel>` provides a model of
+organizer items from the organizer store. The contents of the model can
+be specified with
+:ref:`filter <sdk_qtorganizer_organizermodel#filter-prop>`,
+:ref:`sortOrders <sdk_qtorganizer_organizermodel#sortOrders-prop>` and
+:ref:`fetchHint <sdk_qtorganizer_organizermodel#fetchHint-prop>`
 properties. Whether the model is automatically updated when the store or
-`C++ organizer </sdk/apps/qml/QtOrganizer/organizer/>`__ item changes,
+`C++ organizer </sdk/apps/qml/QtOrganizer/organizer/>`_  item changes,
 can be controlled with
-`OrganizerModel::autoUpdate </sdk/apps/qml/QtOrganizer/OrganizerModel#autoUpdate-prop>`__
+:ref:`OrganizerModel::autoUpdate <sdk_qtorganizer_organizermodel#autoUpdate-prop>`
 property.
 
 There are two ways of accessing the organizer item data: via the model
 by using views and delegates, or alternatively via
-`items </sdk/apps/qml/QtOrganizer/organizer#items>`__ list property. Of
+`items </sdk/apps/qml/QtOrganizer/organizer/#items>`_  list property. Of
 the two, the model access is preferred. Direct list access (i.e.
 non-model) is not guaranteed to be in order set by sortOrder.
 
 At the moment the model roles provided by
-`OrganizerModel </sdk/apps/qml/QtOrganizer/OrganizerModel/>`__ are
-``display`` and ``item``. Through the ``item`` role can access any data
-provided by the
-`OrganizerItem </sdk/apps/qml/QtOrganizer/OrganizerItem/>`__ element.
+:ref:`OrganizerModel <sdk_qtorganizer_organizermodel>` are ``display`` and
+``item``. Through the ``item`` role can access any data provided by the
+:ref:`OrganizerItem <sdk_qtorganizer_organizeritem>` element.
 
 **Note:** Both the ``startPeriod`` and ``endPeriod`` are set by default
 to the current time (when the OrganizerModel was created). In most
@@ -143,12 +145,14 @@ items from now (the time of the OrganizerModel's creation) to the
 Property Documentation
 ----------------------
 
+.. _sdk_qtorganizer_organizermodel_ImportError-prop:
+
 +--------------------------------------------------------------------------+
 |        \ ImportError : enumeration                                       |
 +--------------------------------------------------------------------------+
 
 Defines the errors cases for
-`OrganizerModel::importItems() </sdk/apps/qml/QtOrganizer/OrganizerModel#importItems-method>`__
+:ref:`OrganizerModel::importItems() <sdk_qtorganizer_organizermodel#importItems-method>`
 -function.
 
 -  OrganizerModel::ImportNoError Completed successfully, no error.
@@ -161,6 +165,8 @@ Defines the errors cases for
 
 | 
 
+.. _sdk_qtorganizer_organizermodel_autoUpdate-prop:
+
 +--------------------------------------------------------------------------+
 |        \ autoUpdate : bool                                               |
 +--------------------------------------------------------------------------+
@@ -169,9 +175,11 @@ This property indicates whether or not the organizer model should be
 updated automatically, default value is true.
 
 **See also**
-`OrganizerModel::update() </sdk/apps/qml/QtOrganizer/OrganizerModel#update-method>`__.
+:ref:`OrganizerModel::update() <sdk_qtorganizer_organizermodel#update-method>`.
 
 | 
+
+.. _sdk_qtorganizer_organizermodel_availableManagers-prop:
 
 +--------------------------------------------------------------------------+
 |        \ availableManagers : list<string>                                |
@@ -182,16 +190,19 @@ is read only.
 
 | 
 
+.. _sdk_qtorganizer_organizermodel_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ collections :                                                   |
-| list<`Collection </sdk/apps/qml/QtOrganizer/Collection/>`__>             |
+| :ref:` <>`\ collections : list<`Collection <sdk_qtorganizer_collection>`> |
 +--------------------------------------------------------------------------+
 
 This property holds a list of collections in the organizer model.
 
-**See also** `Collection </sdk/apps/qml/QtOrganizer/Collection/>`__.
+**See also** :ref:`Collection <sdk_qtorganizer_collection>`.
 
 | 
+
+.. _sdk_qtorganizer_organizermodel_endPeriod-prop:
 
 +--------------------------------------------------------------------------+
 |        \ endPeriod : date                                                |
@@ -199,9 +210,11 @@ This property holds a list of collections in the organizer model.
 
 This property holds the end date and time period used by the organizer
 model to fetch organizer items. The default value is the datetime of
-`OrganizerModel </sdk/apps/qml/QtOrganizer/OrganizerModel/>`__ creation.
+:ref:`OrganizerModel <sdk_qtorganizer_organizermodel>` creation.
 
 | 
+
+.. _sdk_qtorganizer_organizermodel_error-prop:
 
 +--------------------------------------------------------------------------+
 |        \ error : string                                                  |
@@ -214,19 +227,22 @@ This property is read only.
 
 | 
 
+.. _sdk_qtorganizer_organizermodel_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ fetchHint :                                                     |
-| `FetchHint </sdk/apps/qml/QtOrganizer/FetchHint/>`__                     |
+| :ref:` <>`\ fetchHint : `FetchHint <sdk_qtorganizer_fetchhint>`        |
 +--------------------------------------------------------------------------+
 
 This property holds the fetch hint instance used by the organizer model.
 
-**See also** `FetchHint </sdk/apps/qml/QtOrganizer/FetchHint/>`__.
+**See also** :ref:`FetchHint <sdk_qtorganizer_fetchhint>`.
 
 | 
 
+.. _sdk_qtorganizer_organizermodel_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ filter : `Filter </sdk/apps/qml/QtOrganizer/Filter/>`__         |
+| :ref:` <>`\ filter : `Filter <sdk_qtorganizer_filter>`                 |
 +--------------------------------------------------------------------------+
 
 This property holds the filter instance used by the organizer model.
@@ -234,33 +250,36 @@ This property holds the filter instance used by the organizer model.
 Set filter property to 'null', when you want to reset it to default
 value.
 
-**See also** `Filter </sdk/apps/qml/QtOrganizer/Filter/>`__.
+**See also** :ref:`Filter <sdk_qtorganizer_filter>`.
 
 | 
+
+.. _sdk_qtorganizer_organizermodel_itemCount-prop:
 
 +--------------------------------------------------------------------------+
 |        \ itemCount : int                                                 |
 +--------------------------------------------------------------------------+
 
 This property holds the size of organizer items the
-`OrganizerModel </sdk/apps/qml/QtOrganizer/OrganizerModel/>`__ currently
-holds.
+:ref:`OrganizerModel <sdk_qtorganizer_organizermodel>` currently holds.
 
 This property is read only.
 
 | 
 
+.. _sdk_qtorganizer_organizermodel_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ items :                                                         |
-| list<`OrganizerItem </sdk/apps/qml/QtOrganizer/OrganizerItem/>`__>       |
+| :ref:` <>`\ items : list<`OrganizerItem <sdk_qtorganizer_organizeritem>`> |
 +--------------------------------------------------------------------------+
 
 This property holds a list of organizer items in the organizer model.
 
-**See also**
-`OrganizerItem </sdk/apps/qml/QtOrganizer/OrganizerItem/>`__.
+**See also** :ref:`OrganizerItem <sdk_qtorganizer_organizeritem>`.
 
 | 
+
+.. _sdk_qtorganizer_organizermodel_manager-prop:
 
 +--------------------------------------------------------------------------+
 |        \ manager : string                                                |
@@ -272,8 +291,8 @@ qtorganizer:<managerid>:<key>=<value>&<key>=<value>.
 
 For example, memory organizer engine has an optional id parameter, if
 user want to share the same memory engine with multiple
-`OrganizerModel </sdk/apps/qml/QtOrganizer/OrganizerModel/>`__
-instances, the manager property should declared like this:
+:ref:`OrganizerModel <sdk_qtorganizer_organizermodel>` instances, the
+manager property should declared like this:
 
 .. code:: cpp
 
@@ -293,6 +312,8 @@ instead of just the manager name:
 
 | 
 
+.. _sdk_qtorganizer_organizermodel_managerName-prop:
+
 +--------------------------------------------------------------------------+
 |        \ managerName : string                                            |
 +--------------------------------------------------------------------------+
@@ -304,16 +325,19 @@ This property is read only.
 
 | 
 
+.. _sdk_qtorganizer_organizermodel_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ sortOrders :                                                    |
-| list<`SortOrder </sdk/apps/qml/QtOrganizer/SortOrder/>`__>               |
+| :ref:` <>`\ sortOrders : list<`SortOrder <sdk_qtorganizer_sortorder>`>    |
 +--------------------------------------------------------------------------+
 
 This property holds a list of sort orders used by the organizer model.
 
-**See also** `SortOrder </sdk/apps/qml/QtOrganizer/SortOrder/>`__.
+**See also** :ref:`SortOrder <sdk_qtorganizer_sortorder>`.
 
 | 
+
+.. _sdk_qtorganizer_organizermodel_startPeriod-prop:
 
 +--------------------------------------------------------------------------+
 |        \ startPeriod : date                                              |
@@ -321,74 +345,79 @@ This property holds a list of sort orders used by the organizer model.
 
 This property holds the start date and time period used by the organizer
 model to fetch organizer items. The default value is the datetime of
-`OrganizerModel </sdk/apps/qml/QtOrganizer/OrganizerModel/>`__ creation.
+:ref:`OrganizerModel <sdk_qtorganizer_organizermodel>` creation.
 
 | 
 
 Signal Documentation
 --------------------
 
+.. _sdk_qtorganizer_organizermodel_onExportCompleted()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ onExportCompleted()                                             |
 +--------------------------------------------------------------------------+
 
 This signal is emitted, when
-`OrganizerModel::exportItems() </sdk/apps/qml/QtOrganizer/OrganizerModel#exportItems-method>`__
+:ref:`OrganizerModel::exportItems() <sdk_qtorganizer_organizermodel#exportItems-method>`
 completes. The success of operation can be seen on *error* which is
 defined in OrganizerModel::ExportError. *url* indicates the file, which
 was exported.
 
 | 
 
+.. _sdk_qtorganizer_organizermodel_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ onImportCompleted(`ImportError </sdk/apps/qml/QtOrganizer/Organ |
-| izerModel#ImportError-prop>`__                                           |
+| :ref:` <>`\ onImportCompleted(`ImportError <sdk_qtorganizer_organizermodel# |
+| ImportError-prop>`_                                                      |
 | *error*, URL *url*, list<string> *ids*)                                  |
 +--------------------------------------------------------------------------+
 
 This signal is emitted, when
-`OrganizerModel::importItems() </sdk/apps/qml/QtOrganizer/OrganizerModel#importItems-method>`__
+:ref:`OrganizerModel::importItems() <sdk_qtorganizer_organizermodel#importItems-method>`
 completes. The success of operation can be seen on *error* which is
 defined in
-`OrganizerModel::ImportError </sdk/apps/qml/QtOrganizer/OrganizerModel#ImportError-prop>`__.
+:ref:`OrganizerModel::ImportError <sdk_qtorganizer_organizermodel#ImportError-prop>`.
 *url* indicates the file, which was imported. *ids* contains the
 imported items ids.
 
 If the operation was successful, items are now imported to backend. If
-`OrganizerModel::autoUpdate </sdk/apps/qml/QtOrganizer/OrganizerModel#autoUpdate-prop>`__
+:ref:`OrganizerModel::autoUpdate <sdk_qtorganizer_organizermodel#autoUpdate-prop>`
 is enabled, OrganizerModel::modelChanged will be emitted when imported
 items are also visible on
-`OrganizerModel </sdk/apps/qml/QtOrganizer/OrganizerModel/>`__'s data
-model.
+:ref:`OrganizerModel <sdk_qtorganizer_organizermodel>`'s data model.
 
 **See also**
-`OrganizerModel::importItems </sdk/apps/qml/QtOrganizer/OrganizerModel#importItems-method>`__.
+:ref:`OrganizerModel::importItems <sdk_qtorganizer_organizermodel#importItems-method>`.
 
 | 
 
+.. _sdk_qtorganizer_organizermodel_onItemsFetched(int *requestId*,-prop:
+
 +--------------------------------------------------------------------------+
 |        \ onItemsFetched(int *requestId*,                                 |
-| list<`OrganizerItem </sdk/apps/qml/QtOrganizer/OrganizerItem/>`__>       |
-| *fetchedItems*)                                                          |
+| list<:ref:`OrganizerItem <sdk_qtorganizer_organizeritem>`> *fetchedItems*)  |
 +--------------------------------------------------------------------------+
 
 This handler is called when request of the given *requestId* is finished
 with the *fetchedItems*.
 
 **See also**
-`fetchItems </sdk/apps/qml/QtOrganizer/OrganizerModel#fetchItems-method>`__.
+:ref:`fetchItems <sdk_qtorganizer_organizermodel#fetchItems-method>`.
 
 | 
+
+.. _sdk_qtorganizer_organizermodel_onModelChanged()-prop:
 
 +--------------------------------------------------------------------------+
 |        \ onModelChanged()                                                |
 +--------------------------------------------------------------------------+
 
 This signal is emitted, when there are changes in items contained by
-`OrganizerModel </sdk/apps/qml/QtOrganizer/OrganizerModel/>`__'s data
-model. Items have either been added, removed or modified. This signal is
-also always emitted during
-`OrganizerModel </sdk/apps/qml/QtOrganizer/OrganizerModel/>`__
+:ref:`OrganizerModel <sdk_qtorganizer_organizermodel>`'s data model. Items
+have either been added, removed or modified. This signal is also always
+emitted during :ref:`OrganizerModel <sdk_qtorganizer_organizermodel>`
 construction when data model is ready for use, even in cases when data
 model is not having any items in it.
 
@@ -397,6 +426,8 @@ model is not having any items in it.
 Method Documentation
 --------------------
 
+.. _sdk_qtorganizer_organizermodel_cancelUpdate-method:
+
 +--------------------------------------------------------------------------+
 |        \ cancelUpdate()                                                  |
 +--------------------------------------------------------------------------+
@@ -404,15 +435,17 @@ Method Documentation
 Cancel the running organizer model content update request.
 
 **See also**
-`OrganizerModel::autoUpdate </sdk/apps/qml/QtOrganizer/OrganizerModel#autoUpdate-prop>`__
+:ref:`OrganizerModel::autoUpdate <sdk_qtorganizer_organizermodel#autoUpdate-prop>`
 and
-`OrganizerModel::update </sdk/apps/qml/QtOrganizer/OrganizerModel#update-method>`__.
+:ref:`OrganizerModel::update <sdk_qtorganizer_organizermodel#update-method>`.
 
 | 
 
+.. _sdk_qtorganizer_organizermodel_-method:
+
 +--------------------------------------------------------------------------+
-|        \ `Collection </sdk/apps/qml/QtOrganizer/Collection/>`__          |
-| collection(string *collectionId*)                                        |
+| :ref:` <>`\ `Collection <sdk_qtorganizer_collection>` collection(string   |
+| *collectionId*)                                                          |
 +--------------------------------------------------------------------------+
 
 Returns the Collection object which collection id is the given
@@ -420,21 +453,25 @@ Returns the Collection object which collection id is the given
 
 | 
 
+.. _sdk_qtorganizer_organizermodel_bool containsItems-method:
+
 +--------------------------------------------------------------------------+
 |        \ bool containsItems(date *start*, date *end*)                    |
 +--------------------------------------------------------------------------+
 
 Returns true if there is at least one
-`OrganizerItem </sdk/apps/qml/QtOrganizer/OrganizerItem/>`__ between the
-given date range. Both the *start* and *end* parameters are optional, if
-no *end* parameter, returns true if there are item(s) after *start*, if
-neither start nor end date time provided, returns true if items in the
-current model is not empty, otherwise return false.
+:ref:`OrganizerItem <sdk_qtorganizer_organizeritem>` between the given date
+range. Both the *start* and *end* parameters are optional, if no *end*
+parameter, returns true if there are item(s) after *start*, if neither
+start nor end date time provided, returns true if items in the current
+model is not empty, otherwise return false.
 
 **See also**
-`itemIds() </sdk/apps/qml/QtOrganizer/OrganizerModel#itemIds-method>`__.
+:ref:`itemIds() <sdk_qtorganizer_organizermodel#itemIds-method>`.
 
 | 
+
+.. _sdk_qtorganizer_organizermodel_list<bool> containsItems-method:
 
 +--------------------------------------------------------------------------+
 |        \ list<bool> containsItems(date *start*, date *end*, int          |
@@ -451,14 +488,17 @@ size 6 is returned, telling if there is any item falling in the range of
 
 | 
 
+.. _sdk_qtorganizer_organizermodel_-method:
+
 +--------------------------------------------------------------------------+
-|        \ `Collection </sdk/apps/qml/QtOrganizer/Collection/>`__          |
-| defaultCollection()                                                      |
+| :ref:` <>`\ `Collection <sdk_qtorganizer_collection>` defaultCollection() |
 +--------------------------------------------------------------------------+
 
 Returns the default Collection object.
 
 | 
+
+.. _sdk_qtorganizer_organizermodel_exportItems-method:
 
 +--------------------------------------------------------------------------+
 |        \ exportItems(url *url*, list<string> *profiles*)                 |
@@ -470,6 +510,8 @@ in export method.
 
 | 
 
+.. _sdk_qtorganizer_organizermodel_fetchCollections-method:
+
 +--------------------------------------------------------------------------+
 |        \ fetchCollections()                                              |
 +--------------------------------------------------------------------------+
@@ -478,6 +520,8 @@ Fetch asynchronously a list of organizer collections from the organizer
 backend.
 
 | 
+
+.. _sdk_qtorganizer_organizermodel_int fetchItems-method:
 
 +--------------------------------------------------------------------------+
 |        \ int fetchItems(stringlist *itemIds*)                            |
@@ -489,19 +533,21 @@ started.
 
 Note that the items fetched won't be added to the model, but can be
 accessed through the
-`onItemsFetched </sdk/apps/qml/QtOrganizer/OrganizerModel#onItemsFetched-signal>`__
+:ref:`onItemsFetched <sdk_qtorganizer_organizermodel#onItemsFetched-signal>`
 handler.
 
 **See also**
-`onItemsFetched </sdk/apps/qml/QtOrganizer/OrganizerModel#onItemsFetched-signal>`__.
+:ref:`onItemsFetched <sdk_qtorganizer_organizermodel#onItemsFetched-signal>`.
 
 | 
 
+.. _sdk_qtorganizer_organizermodel_int fetchItems-method:
+
 +--------------------------------------------------------------------------+
 |        \ int fetchItems(date *start*, date *end*,                        |
-| `Filter </sdk/apps/qml/QtOrganizer/Filter/>`__ *filter*, int *maxCount*, |
-| list<`SortOrder </sdk/apps/qml/QtOrganizer/SortOrder/>`__> *sortOrders*, |
-| `FetchHint </sdk/apps/qml/QtOrganizer/FetchHint/>`__ *fetchHint*)        |
+| :ref:`Filter <sdk_qtorganizer_filter>` *filter*, int *maxCount*,            |
+| list<:ref:`SortOrder <sdk_qtorganizer_sortorder>`> *sortOrders*,            |
+| :ref:`FetchHint <sdk_qtorganizer_fetchhint>` *fetchHint*)                   |
 +--------------------------------------------------------------------------+
 
 This method will start a request to fetch items between the given
@@ -517,13 +563,15 @@ for this method to start a fetch request.
 
 Note that the items fetched won't be added to the model, but can be
 accessed through the
-`onItemsFetched </sdk/apps/qml/QtOrganizer/OrganizerModel#onItemsFetched-signal>`__
+:ref:`onItemsFetched <sdk_qtorganizer_organizermodel#onItemsFetched-signal>`
 handler. No properties in the model are updated at all.
 
 **See also**
-`onItemsFetched </sdk/apps/qml/QtOrganizer/OrganizerModel#onItemsFetched-signal>`__.
+:ref:`onItemsFetched <sdk_qtorganizer_organizermodel#onItemsFetched-signal>`.
 
 | 
+
+.. _sdk_qtorganizer_organizermodel_importItems-method:
 
 +--------------------------------------------------------------------------+
 |        \ importItems(url *url*, list<string> *profiles*)                 |
@@ -534,15 +582,19 @@ Import organizer items from a vcalendar by the given *url* and optional
 
 | 
 
+.. _sdk_qtorganizer_organizermodel_-method:
+
 +--------------------------------------------------------------------------+
-|        \ `OrganizerItem </sdk/apps/qml/QtOrganizer/OrganizerItem/>`__    |
-| item(string *itemId*)                                                    |
+| :ref:` <>`\ `OrganizerItem <sdk_qtorganizer_organizeritem>` item(string   |
+| *itemId*)                                                                |
 +--------------------------------------------------------------------------+
 
-Returns the `OrganizerItem </sdk/apps/qml/QtOrganizer/OrganizerItem/>`__
-object with the given *itemId*.
+Returns the :ref:`OrganizerItem <sdk_qtorganizer_organizeritem>` object
+with the given *itemId*.
 
 | 
+
+.. _sdk_qtorganizer_organizermodel_list<string> itemIds-method:
 
 +--------------------------------------------------------------------------+
 |        \ list<string> itemIds(date *start*, date *end*)                  |
@@ -555,13 +607,14 @@ ids from *start*, if neither start nor end date time provided, returns
 all item ids in the current model.
 
 **See also**
-`containsItems() </sdk/apps/qml/QtOrganizer/OrganizerModel#containsItems-method>`__.
+:ref:`containsItems() <sdk_qtorganizer_organizermodel#containsItems-method>`.
 
 | 
 
+.. _sdk_qtorganizer_organizermodel_-method:
+
 +--------------------------------------------------------------------------+
-|        \ list<`OrganizerItem </sdk/apps/qml/QtOrganizer/OrganizerItem/>` |
-| __>                                                                      |
+| :ref:` <>`\ list<`OrganizerItem <sdk_qtorganizer_organizeritem>`>         |
 | itemsByTimePeriod(date *start*, date *end*)                              |
 +--------------------------------------------------------------------------+
 
@@ -569,6 +622,8 @@ Returns the list of organizer items between the given *start* and *end*
 period.
 
 | 
+
+.. _sdk_qtorganizer_organizermodel_removeCollection-method:
 
 +--------------------------------------------------------------------------+
 |        \ removeCollection(string *collectionId*)                         |
@@ -579,15 +634,18 @@ Removes asynchronously the organizer collection with the given
 
 | 
 
+.. _sdk_qtorganizer_organizermodel_-method:
+
 +--------------------------------------------------------------------------+
-|        \ removeItem(`OrganizerItem </sdk/apps/qml/QtOrganizer/OrganizerI |
-| tem/>`__                                                                 |
+| :ref:` <>`\ removeItem(`OrganizerItem <sdk_qtorganizer_organizeritem>` |
 | *item*)                                                                  |
 +--------------------------------------------------------------------------+
 
 Removes the given organizer *item* from the backend.
 
 | 
+
+.. _sdk_qtorganizer_organizermodel_removeItem-method:
 
 +--------------------------------------------------------------------------+
 |        \ removeItem(string *itemId*)                                     |
@@ -597,9 +655,11 @@ Removes the organizer item with the given *itemId* from the backend.
 
 | 
 
+.. _sdk_qtorganizer_organizermodel_-method:
+
 +--------------------------------------------------------------------------+
-|        \ removeItems(list<`OrganizerItem </sdk/apps/qml/QtOrganizer/Orga |
-| nizerItem/>`__>                                                          |
+| :ref:` <>`\ removeItems(list<`OrganizerItem <sdk_qtorganizer_organizeritem> |
+| `_ >                                                                     |
 | *items*)                                                                 |
 +--------------------------------------------------------------------------+
 
@@ -607,6 +667,8 @@ Removes asynchronously the organizer items in the given *items* list
 from the backend.
 
 | 
+
+.. _sdk_qtorganizer_organizermodel_removeItems-method:
 
 +--------------------------------------------------------------------------+
 |        \ removeItems(list<string> *itemId*)                              |
@@ -617,9 +679,10 @@ backend.
 
 | 
 
+.. _sdk_qtorganizer_organizermodel_-method:
+
 +--------------------------------------------------------------------------+
-|        \ saveCollection(`Collection </sdk/apps/qml/QtOrganizer/Collectio |
-| n/>`__                                                                   |
+| :ref:` <>`\ saveCollection(`Collection <sdk_qtorganizer_collection>`   |
 | *collection*)                                                            |
 +--------------------------------------------------------------------------+
 
@@ -627,15 +690,18 @@ Saves asynchronously the given *collection* into the organizer backend.
 
 | 
 
+.. _sdk_qtorganizer_organizermodel_-method:
+
 +--------------------------------------------------------------------------+
-|        \ saveItem(`OrganizerItem </sdk/apps/qml/QtOrganizer/OrganizerIte |
-| m/>`__                                                                   |
+| :ref:` <>`\ saveItem(`OrganizerItem <sdk_qtorganizer_organizeritem>`   |
 | *item*)                                                                  |
 +--------------------------------------------------------------------------+
 
 Saves asynchronously the given *item* into the organizer backend.
 
 | 
+
+.. _sdk_qtorganizer_organizermodel_update-method:
 
 +--------------------------------------------------------------------------+
 |        \ update()                                                        |
@@ -645,12 +711,14 @@ Manually update the organizer model content including both items and
 collections.
 
 **See also**
-`OrganizerModel::updateItems </sdk/apps/qml/QtOrganizer/OrganizerModel#updateItems-method>`__,
-`OrganizerModel::updateCollections </sdk/apps/qml/QtOrganizer/OrganizerModel#updateCollections-method>`__,
+:ref:`OrganizerModel::updateItems <sdk_qtorganizer_organizermodel#updateItems-method>`,
+:ref:`OrganizerModel::updateCollections <sdk_qtorganizer_organizermodel#updateCollections-method>`,
 and
-`OrganizerModel::autoUpdate </sdk/apps/qml/QtOrganizer/OrganizerModel#autoUpdate-prop>`__.
+:ref:`OrganizerModel::autoUpdate <sdk_qtorganizer_organizermodel#autoUpdate-prop>`.
 
 | 
+
+.. _sdk_qtorganizer_organizermodel_updateCollections-method:
 
 +--------------------------------------------------------------------------+
 |        \ updateCollections()                                             |
@@ -659,12 +727,14 @@ and
 Manually update the organizer model collections.
 
 **See also**
-`OrganizerModel::update </sdk/apps/qml/QtOrganizer/OrganizerModel#update-method>`__,
-`OrganizerModel::updateItems </sdk/apps/qml/QtOrganizer/OrganizerModel#updateItems-method>`__,
+:ref:`OrganizerModel::update <sdk_qtorganizer_organizermodel#update-method>`,
+:ref:`OrganizerModel::updateItems <sdk_qtorganizer_organizermodel#updateItems-method>`,
 and
-`OrganizerModel::autoUpdate </sdk/apps/qml/QtOrganizer/OrganizerModel#autoUpdate-prop>`__.
+:ref:`OrganizerModel::autoUpdate <sdk_qtorganizer_organizermodel#autoUpdate-prop>`.
 
 | 
+
+.. _sdk_qtorganizer_organizermodel_updateItems-method:
 
 +--------------------------------------------------------------------------+
 |        \ updateItems()                                                   |
@@ -673,9 +743,9 @@ and
 Manually update the organizer model items.
 
 **See also**
-`OrganizerModel::update </sdk/apps/qml/QtOrganizer/OrganizerModel#update-method>`__,
-`OrganizerModel::updateCollections </sdk/apps/qml/QtOrganizer/OrganizerModel#updateCollections-method>`__,
+:ref:`OrganizerModel::update <sdk_qtorganizer_organizermodel#update-method>`,
+:ref:`OrganizerModel::updateCollections <sdk_qtorganizer_organizermodel#updateCollections-method>`,
 and
-`OrganizerModel::autoUpdate </sdk/apps/qml/QtOrganizer/OrganizerModel#autoUpdate-prop>`__.
+:ref:`OrganizerModel::autoUpdate <sdk_qtorganizer_organizermodel#autoUpdate-prop>`.
 
 | 

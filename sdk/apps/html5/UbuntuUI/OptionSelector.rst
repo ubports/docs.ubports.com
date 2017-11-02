@@ -1,3 +1,7 @@
+.. _sdk_ubuntuui_optionselector:
+UbuntuUI OptionSelector
+=======================
+
 
 OptionSelector is a component displaying either a single selected value
 or expanded multiple choice with an optional image and subtext when not

@@ -1,3 +1,7 @@
+.. _sdk_qtquick_transition:
+QtQuick Transition
+==================
+
 Defines animated transitions that occur on state changes
 
 +---------------------+----------------------+
@@ -7,31 +11,27 @@ Defines animated transitions that occur on state changes
 Properties
 ----------
 
--  ****`animations </sdk/apps/qml/QtQuick/Transition#animations-prop>`__****
-   : list<Animation>
--  ****`enabled </sdk/apps/qml/QtQuick/Transition#enabled-prop>`__**** :
+-  :ref:`animations <sdk_qtquick_transition_animations-prop>` :
+   list<Animation>
+-  :ref:`enabled <sdk_qtquick_transition_enabled-prop>` : bool
+-  :ref:`from <sdk_qtquick_transition_from-prop>` : string
+-  :ref:`reversible <sdk_qtquick_transition_reversible-prop>` :
    bool
--  ****`from </sdk/apps/qml/QtQuick/Transition#from-prop>`__**** :
-   string
--  ****`reversible </sdk/apps/qml/QtQuick/Transition#reversible-prop>`__****
-   : bool
--  ****`running </sdk/apps/qml/QtQuick/Transition#running-prop>`__**** :
-   bool
--  ****`to </sdk/apps/qml/QtQuick/Transition#to-prop>`__**** : string
+-  :ref:`running <sdk_qtquick_transition_running-prop>` : bool
+-  :ref:`to <sdk_qtquick_transition_to-prop>` : string
 
 Detailed Description
 --------------------
 
 A Transition defines the animations to be applied when a
-`State </sdk/apps/qml/QtQuick/State/>`__ change occurs.
+:ref:`State <sdk_qtquick_state>` change occurs.
 
-For example, the following
-`Rectangle </sdk/apps/qml/QtQuick/Rectangle/>`__ has two states: the
-default state, and an added "moved" state. In the "moved state, the
-rectangle's position changes to (50, 50). The added Transition specifies
-that when the rectangle changes between the default and the "moved"
-state, any changes to the ``x`` and ``y`` properties should be animated,
-using an ``Easing.InOutQuad``.
+For example, the following :ref:`Rectangle <sdk_qtquick_rectangle>` has two
+states: the default state, and an added "moved" state. In the "moved
+state, the rectangle's position changes to (50, 50). The added
+Transition specifies that when the rectangle changes between the default
+and the "moved" state, any changes to the ``x`` and ``y`` properties
+should be animated, using an ``Easing.InOutQuad``.
 
 .. code:: qml
 
@@ -54,29 +54,27 @@ using an ``Easing.InOutQuad``.
     }
 
 Notice the example does not require
-`to </sdk/apps/qml/QtQuick/PropertyAnimation#to-prop>`__ and
-`from </sdk/apps/qml/QtQuick/PropertyAnimation#from-prop>`__ values for
-the `NumberAnimation </sdk/apps/qml/QtQuick/NumberAnimation/>`__. As a
-convenience, these properties are automatically set to the values of
-``x`` and ``y`` before and after the state change; the ``from`` values
-are provided by the current values of ``x`` and ``y``, and the ``to``
-values are provided by the
-`PropertyChanges </sdk/apps/qml/QtQuick/PropertyChanges/>`__ object. If
-you wish, you can provide
-`to </sdk/apps/qml/QtQuick/PropertyAnimation#to-prop>`__ and
-`from </sdk/apps/qml/QtQuick/PropertyAnimation#from-prop>`__ values
-anyway to override the default values.
+:ref:`to <sdk_qtquick_propertyanimation#to-prop>` and
+:ref:`from <sdk_qtquick_propertyanimation#from-prop>` values for the
+:ref:`NumberAnimation <sdk_qtquick_numberanimation>`. As a convenience,
+these properties are automatically set to the values of ``x`` and ``y``
+before and after the state change; the ``from`` values are provided by
+the current values of ``x`` and ``y``, and the ``to`` values are
+provided by the :ref:`PropertyChanges <sdk_qtquick_propertychanges>`
+object. If you wish, you can provide
+:ref:`to <sdk_qtquick_propertyanimation#to-prop>` and
+:ref:`from <sdk_qtquick_propertyanimation#from-prop>` values anyway to
+override the default values.
 
 By default, a Transition's animations are applied for any state change
 in the parent item. The Transition
-`from </sdk/apps/qml/QtQuick/Transition#from-prop>`__ and
-`to </sdk/apps/qml/QtQuick/Transition#to-prop>`__ values can be set to
-restrict the animations to only be applied when changing from one
-particular state to another.
+:ref:`from <sdk_qtquick_transition#from-prop>` and
+:ref:`to <sdk_qtquick_transition#to-prop>` values can be set to restrict
+the animations to only be applied when changing from one particular
+state to another.
 
 To define multiple transitions, specify
-`Item::transitions </sdk/apps/qml/QtQuick/Item#transitions-prop>`__ as a
-list:
+:ref:`Item::transitions <sdk_qtquick_item#transitions-prop>` as a list:
 
 .. code:: qml
 
@@ -98,22 +96,23 @@ example above, when changing to ``state1``, the first transition will be
 used, rather than the more generic second transition.
 
 If a state change has a Transition that matches the same property as a
-`Behavior </sdk/apps/qml/QtQuick/Behavior/>`__, the Transition animation
-overrides the `Behavior </sdk/apps/qml/QtQuick/Behavior/>`__ for that
-state change.
+:ref:`Behavior <sdk_qtquick_behavior>`, the Transition animation overrides
+the :ref:`Behavior <sdk_qtquick_behavior>` for that state change.
 
 **See also** `Animation and Transitions in Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`__,
-`States example </sdk/apps/qml/QtQuick/animation#states>`__, `Qt Quick
-States </sdk/apps/qml/QtQuick/qtquick-statesanimations-states/>`__, and
+Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`_ ,
+`States example </sdk/apps/qml/QtQuick/animation/#states>`_ , `Qt Quick
+States </sdk/apps/qml/QtQuick/qtquick-statesanimations-states/>`_ , and
 Qt QML.
 
 Property Documentation
 ----------------------
 
+.. _sdk_qtquick_transition_animations-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [default] animations :                                          |
-| list<`Animation </sdk/apps/qml/QtQuick/Animation/>`__>                   |
+| list<:ref:`Animation <sdk_qtquick_animation>`>                              |
 +--------------------------------------------------------------------------+
 
 This property holds a list of the animations to be run for this
@@ -123,7 +122,7 @@ transition.
 
 The top-level animations are run in parallel. To run them sequentially,
 define them within a
-`SequentialAnimation </sdk/apps/qml/QtQuick/SequentialAnimation/>`__:
+:ref:`SequentialAnimation <sdk_qtquick_sequentialanimation>`:
 
 .. code:: qml
 
@@ -135,6 +134,8 @@ define them within a
     }
 
 | 
+
+.. _sdk_qtquick_transition_enabled-prop:
 
 +--------------------------------------------------------------------------+
 |        \ enabled : bool                                                  |
@@ -168,6 +169,8 @@ animated by the second Transition instead.
     }
 
 | 
+
+.. _sdk_qtquick_transition_from-prop:
 
 +--------------------------------------------------------------------------+
 |        \ from : string                                                   |
@@ -213,10 +216,11 @@ release).
 Multiple ``to`` and ``from`` values can be set by using a
 comma-separated string.
 
-**See also**
-`reversible </sdk/apps/qml/QtQuick/Transition#reversible-prop>`__.
+**See also** :ref:`reversible <sdk_qtquick_transition#reversible-prop>`.
 
 | 
+
+.. _sdk_qtquick_transition_reversible-prop:
 
 +--------------------------------------------------------------------------+
 |        \ reversible : bool                                               |
@@ -229,20 +233,19 @@ reversed.
 The default value is false.
 
 By default, transitions run in parallel and are applied to all state
-changes if the `from </sdk/apps/qml/QtQuick/Transition#from-prop>`__ and
-`to </sdk/apps/qml/QtQuick/Transition#to-prop>`__ states have not been
-set. In this situation, the transition is automatically applied when a
-state change is reversed, and it is not necessary to set this property
-to reverse the transition.
+changes if the :ref:`from <sdk_qtquick_transition#from-prop>` and
+:ref:`to <sdk_qtquick_transition#to-prop>` states have not been set. In
+this situation, the transition is automatically applied when a state
+change is reversed, and it is not necessary to set this property to
+reverse the transition.
 
-However, if a
-`SequentialAnimation </sdk/apps/qml/QtQuick/SequentialAnimation/>`__ is
-used, or if the `from </sdk/apps/qml/QtQuick/Transition#from-prop>`__ or
-`to </sdk/apps/qml/QtQuick/Transition#to-prop>`__ properties have been
-set, this property will need to be set to reverse a transition when a
-state change is reverted. For example, the following transition applies
-a sequential animation when the mouse is pressed, and reverses the
-sequence of the animation when the mouse is released:
+However, if a :ref:`SequentialAnimation <sdk_qtquick_sequentialanimation>`
+is used, or if the :ref:`from <sdk_qtquick_transition#from-prop>` or
+:ref:`to <sdk_qtquick_transition#to-prop>` properties have been set, this
+property will need to be set to reverse a transition when a state change
+is reverted. For example, the following transition applies a sequential
+animation when the mouse is pressed, and reverses the sequence of the
+animation when the mouse is released:
 
 .. code:: qml
 
@@ -266,12 +269,14 @@ sequence of the animation when the mouse is released:
 
 If the transition did not set the ``to`` and ``reversible`` values, then
 on the mouse release, the transition would play the
-`PropertyAnimation </sdk/apps/qml/QtQuick/animation#propertyanimation>`__
+`PropertyAnimation </sdk/apps/qml/QtQuick/animation/#propertyanimation>`_ 
 before the
-`ColorAnimation </sdk/apps/qml/QtQuick/animation#coloranimation>`__
+`ColorAnimation </sdk/apps/qml/QtQuick/animation/#coloranimation>`_ 
 instead of reversing the sequence.
 
 | 
+
+.. _sdk_qtquick_transition_running-prop:
 
 +--------------------------------------------------------------------------+
 |        \ running : bool                                                  |
@@ -282,6 +287,8 @@ This property holds whether the transition is currently running.
 This property is read only.
 
 | 
+
+.. _sdk_qtquick_transition_to-prop:
 
 +--------------------------------------------------------------------------+
 |        \ to : string                                                     |
@@ -327,7 +334,6 @@ release).
 Multiple ``to`` and ``from`` values can be set by using a
 comma-separated string.
 
-**See also**
-`reversible </sdk/apps/qml/QtQuick/Transition#reversible-prop>`__.
+**See also** :ref:`reversible <sdk_qtquick_transition#reversible-prop>`.
 
 | 

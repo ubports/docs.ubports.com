@@ -1,5 +1,9 @@
+.. _sdk_unity_scopes_qt_xmlreader:
+unity.scopes.qt XmlReader
+=========================
+
 Class that downloads http XML files synchronously.
-`More... </sdk/scopes/cpp/unity.scopes.qt/XmlReader#details>`__
+:ref:`More... <sdk_unity_scopes_qt_xmlreader#details>`
 
 ``#include <unity/scopes/qt/XmlReader.h>``
 
@@ -8,7 +12,7 @@ Class that downloads http XML files synchronously.
 
 QXmlStreamReaderSptr 
 
-`read </sdk/scopes/cpp/unity.scopes.qt/XmlReader#a9a5eebad22c444bf8be96f1536dd1261>`__
+:ref:`read <sdk_unity_scopes_qt_xmlreader#a9a5eebad22c444bf8be96f1536dd1261>`
 (QUrl const &uri) const
 
  
@@ -20,7 +24,7 @@ QXmlStreamReaderSptr 
 
 QXmlStreamReaderSptr 
 
-`read </sdk/scopes/cpp/unity.scopes.qt/XmlReader#a63c00ae978813fc9d9a71e754d8e905f>`__
+:ref:`read <sdk_unity_scopes_qt_xmlreader#a63c00ae978813fc9d9a71e754d8e905f>`
 (QString const &host, QXmlStreamReaderParameters const &parameters)
 const
 

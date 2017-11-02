@@ -1,112 +1,104 @@
+.. _sdk_qtquick_pathview:
+QtQuick PathView
+================
+
 Lays out model-provided items on a path
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtQuick 2.4                   |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Item </sdk/apps/qml/QtQuick/Item/>` |
-|                                      | __                                   |
+| Inherits:                            | :ref:`Item <sdk_qtquick_item>`       |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`cacheItemCount </sdk/apps/qml/QtQuick/PathView#cacheItemCount-prop>`__****
+-  :ref:`cacheItemCount <sdk_qtquick_pathview_cacheItemCount-prop>`
    : int
--  ****`count </sdk/apps/qml/QtQuick/PathView#count-prop>`__**** : int
--  ****`currentIndex </sdk/apps/qml/QtQuick/PathView#currentIndex-prop>`__****
-   : int
--  ****`currentItem </sdk/apps/qml/QtQuick/PathView#currentItem-prop>`__****
-   : Item
--  ****`delegate </sdk/apps/qml/QtQuick/PathView#delegate-prop>`__**** :
+-  :ref:`count <sdk_qtquick_pathview_count-prop>` : int
+-  :ref:`currentIndex <sdk_qtquick_pathview_currentIndex-prop>` :
+   int
+-  :ref:`currentItem <sdk_qtquick_pathview_currentItem-prop>` :
+   Item
+-  :ref:`delegate <sdk_qtquick_pathview_delegate-prop>` : Component
+-  :ref:`dragMargin <sdk_qtquick_pathview_dragMargin-prop>` : real
+-  :ref:`dragging <sdk_qtquick_pathview_dragging-prop>` : bool
+-  :ref:`flickDeceleration <sdk_qtquick_pathview_flickDeceleration-prop>`
+   : real
+-  :ref:`flicking <sdk_qtquick_pathview_flicking-prop>` : bool
+-  :ref:`highlight <sdk_qtquick_pathview_highlight-prop>` :
    Component
--  ****`dragMargin </sdk/apps/qml/QtQuick/PathView#dragMargin-prop>`__****
-   : real
--  ****`dragging </sdk/apps/qml/QtQuick/PathView#dragging-prop>`__**** :
-   bool
--  ****`flickDeceleration </sdk/apps/qml/QtQuick/PathView#flickDeceleration-prop>`__****
-   : real
--  ****`flicking </sdk/apps/qml/QtQuick/PathView#flicking-prop>`__**** :
-   bool
--  ****`highlight </sdk/apps/qml/QtQuick/PathView#highlight-prop>`__****
-   : Component
--  ****`highlightItem </sdk/apps/qml/QtQuick/PathView#highlightItem-prop>`__****
-   : Item
--  ****`highlightMoveDuration </sdk/apps/qml/QtQuick/PathView#highlightMoveDuration-prop>`__****
+-  :ref:`highlightItem <sdk_qtquick_pathview_highlightItem-prop>` :
+   Item
+-  :ref:`highlightMoveDuration <sdk_qtquick_pathview_highlightMoveDuration-prop>`
    : int
--  ****`highlightRangeMode </sdk/apps/qml/QtQuick/PathView#highlightRangeMode-prop>`__****
+-  :ref:`highlightRangeMode <sdk_qtquick_pathview_highlightRangeMode-prop>`
    : enumeration
--  ****`interactive </sdk/apps/qml/QtQuick/PathView#interactive-prop>`__****
-   : bool
--  ****`maximumFlickVelocity </sdk/apps/qml/QtQuick/PathView#maximumFlickVelocity-prop>`__****
-   : real
--  ****`model </sdk/apps/qml/QtQuick/PathView#model-prop>`__**** : model
--  ****`moving </sdk/apps/qml/QtQuick/PathView#moving-prop>`__**** :
+-  :ref:`interactive <sdk_qtquick_pathview_interactive-prop>` :
    bool
--  ****`offset </sdk/apps/qml/QtQuick/PathView#offset-prop>`__**** :
-   real
--  ****`path </sdk/apps/qml/QtQuick/PathView#path-prop>`__**** : Path
--  ****`pathItemCount </sdk/apps/qml/QtQuick/PathView#pathItemCount-prop>`__****
-   : int
--  ****`preferredHighlightBegin </sdk/apps/qml/QtQuick/PathView#preferredHighlightBegin-prop>`__****
+-  :ref:`maximumFlickVelocity <sdk_qtquick_pathview_maximumFlickVelocity-prop>`
    : real
--  ****`preferredHighlightEnd </sdk/apps/qml/QtQuick/PathView#preferredHighlightEnd-prop>`__****
+-  :ref:`model <sdk_qtquick_pathview_model-prop>` : model
+-  :ref:`moving <sdk_qtquick_pathview_moving-prop>` : bool
+-  :ref:`offset <sdk_qtquick_pathview_offset-prop>` : real
+-  :ref:`path <sdk_qtquick_pathview_path-prop>` : Path
+-  :ref:`pathItemCount <sdk_qtquick_pathview_pathItemCount-prop>` :
+   int
+-  :ref:`preferredHighlightBegin <sdk_qtquick_pathview_preferredHighlightBegin-prop>`
    : real
--  ****`snapMode </sdk/apps/qml/QtQuick/PathView#snapMode-prop>`__**** :
+-  :ref:`preferredHighlightEnd <sdk_qtquick_pathview_preferredHighlightEnd-prop>`
+   : real
+-  :ref:`snapMode <sdk_qtquick_pathview_snapMode-prop>` :
    enumeration
 
 Attached Properties
 -------------------
 
--  ****`isCurrentItem </sdk/apps/qml/QtQuick/PathView#isCurrentItem-attached-prop>`__****
+-  :ref:`isCurrentItem <sdk_qtquick_pathview_isCurrentItem-attached-prop>`
    : bool
--  ****`onPath </sdk/apps/qml/QtQuick/PathView#onPath-attached-prop>`__****
-   : bool
--  ****`view </sdk/apps/qml/QtQuick/PathView#view-attached-prop>`__****
-   : PathView
+-  :ref:`onPath <sdk_qtquick_pathview_onPath-attached-prop>` : bool
+-  :ref:`view <sdk_qtquick_pathview_view-attached-prop>` : PathView
 
 Signals
 -------
 
--  ****`dragEnded </sdk/apps/qml/QtQuick/PathView#dragEnded-signal>`__****\ ()
--  ****`dragStarted </sdk/apps/qml/QtQuick/PathView#dragStarted-signal>`__****\ ()
--  ****`flickEnded </sdk/apps/qml/QtQuick/PathView#flickEnded-signal>`__****\ ()
--  ****`flickStarted </sdk/apps/qml/QtQuick/PathView#flickStarted-signal>`__****\ ()
--  ****`movementEnded </sdk/apps/qml/QtQuick/PathView#movementEnded-signal>`__****\ ()
--  ****`movementStarted </sdk/apps/qml/QtQuick/PathView#movementStarted-signal>`__****\ ()
+-  :ref:`dragEnded <sdk_qtquick_pathview_dragEnded-signal>`\ ()
+-  :ref:`dragStarted <sdk_qtquick_pathview_dragStarted-signal>`\ ()
+-  :ref:`flickEnded <sdk_qtquick_pathview_flickEnded-signal>`\ ()
+-  :ref:`flickStarted <sdk_qtquick_pathview_flickStarted-signal>`\ ()
+-  :ref:`movementEnded <sdk_qtquick_pathview_movementEnded-signal>`\ ()
+-  :ref:`movementStarted <sdk_qtquick_pathview_movementStarted-signal>`\ ()
 
 Methods
 -------
 
--  ****`decrementCurrentIndex </sdk/apps/qml/QtQuick/PathView#decrementCurrentIndex-method>`__****\ ()
--  ****`incrementCurrentIndex </sdk/apps/qml/QtQuick/PathView#incrementCurrentIndex-method>`__****\ ()
--  int
-   ****`indexAt </sdk/apps/qml/QtQuick/PathView#indexAt-method>`__****\ (int
+-  :ref:`decrementCurrentIndex <sdk_qtquick_pathview_decrementCurrentIndex-method>`\ ()
+-  :ref:`incrementCurrentIndex <sdk_qtquick_pathview_incrementCurrentIndex-method>`\ ()
+-  int :ref:`indexAt <sdk_qtquick_pathview_indexAt-method>`\ (int
    *x*, int *y*)
--  Item
-   ****`itemAt </sdk/apps/qml/QtQuick/PathView#itemAt-method>`__****\ (int
+-  Item :ref:`itemAt <sdk_qtquick_pathview_itemAt-method>`\ (int
    *x*, int *y*)
--  ****`positionViewAtIndex </sdk/apps/qml/QtQuick/PathView#positionViewAtIndex-method>`__****\ (int
+-  :ref:`positionViewAtIndex <sdk_qtquick_pathview_positionViewAtIndex-method>`\ (int
    *index*, PositionMode *mode*)
 
 Detailed Description
 --------------------
 
-A `PathView </sdk/apps/qml/QtQuick/PathView/>`__ displays data from
-models created from built-in QML types like
-`ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview#listmodel>`__
+A :ref:`PathView <sdk_qtquick_pathview>` displays data from models created
+from built-in QML types like
+`ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#listmodel>`_ 
 and
-`XmlListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview#xmllistmodel>`__,
+`XmlListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#xmllistmodel>`_ ,
 or custom model classes defined in C++ that inherit from
 QAbstractListModel.
 
-The view has a `model </sdk/apps/qml/QtQuick/PathView#model-prop>`__,
-which defines the data to be displayed, and a
-`delegate </sdk/apps/qml/QtQuick/PathView#delegate-prop>`__, which
-defines how the data should be displayed. The
-`delegate </sdk/apps/qml/QtQuick/PathView#delegate-prop>`__ is
-instantiated for each item on the
-`path </sdk/apps/qml/QtQuick/PathView#path-prop>`__. The items may be
-flicked to move them along the path.
+The view has a :ref:`model <sdk_qtquick_pathview#model-prop>`, which
+defines the data to be displayed, and a
+:ref:`delegate <sdk_qtquick_pathview#delegate-prop>`, which defines how the
+data should be displayed. The
+:ref:`delegate <sdk_qtquick_pathview#delegate-prop>` is instantiated for
+each item on the :ref:`path <sdk_qtquick_pathview#path-prop>`. The items
+may be flicked to move them along the path.
 
 For example, if there is a simple list model defined in a file
 ``ContactModel.qml`` like this:
@@ -129,8 +121,8 @@ For example, if there is a simple list model defined in a file
         }
     }
 
-This data can be represented as a
-`PathView </sdk/apps/qml/QtQuick/PathView/>`__, like this:
+This data can be represented as a :ref:`PathView <sdk_qtquick_pathview>`,
+like this:
 
 .. code:: qml
 
@@ -169,18 +161,17 @@ This data can be represented as a
 |image0|
 
 (Note the above example uses
-`PathAttribute </sdk/apps/qml/QtQuick/PathAttribute/>`__ to scale and
-modify the opacity of the items as they rotate. This additional code can
-be seen in the `PathAttribute </sdk/apps/qml/QtQuick/PathAttribute/>`__
-documentation.)
+:ref:`PathAttribute <sdk_qtquick_pathattribute>` to scale and modify the
+opacity of the items as they rotate. This additional code can be seen in
+the :ref:`PathAttribute <sdk_qtquick_pathattribute>` documentation.)
 
-`PathView </sdk/apps/qml/QtQuick/PathView/>`__ does not automatically
-handle keyboard navigation. This is because the keys to use for
-navigation will depend upon the shape of the path. Navigation can be
-added quite simply by setting ``focus`` to ``true`` and calling
-`decrementCurrentIndex() </sdk/apps/qml/QtQuick/PathView#decrementCurrentIndex-method>`__
+:ref:`PathView <sdk_qtquick_pathview>` does not automatically handle
+keyboard navigation. This is because the keys to use for navigation will
+depend upon the shape of the path. Navigation can be added quite simply
+by setting ``focus`` to ``true`` and calling
+:ref:`decrementCurrentIndex() <sdk_qtquick_pathview#decrementCurrentIndex-method>`
 or
-`incrementCurrentIndex() </sdk/apps/qml/QtQuick/PathView#incrementCurrentIndex-method>`__,
+:ref:`incrementCurrentIndex() <sdk_qtquick_pathview#incrementCurrentIndex-method>`,
 for example to navigate using the left and right arrow keys:
 
 .. code:: qml
@@ -193,17 +184,17 @@ for example to navigate using the left and right arrow keys:
     }
 
 The path view itself is a focus scope (see `Keyboard Focus in Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-input-focus/>`__ for more details).
+Quick </sdk/apps/qml/QtQuick/qtquick-input-focus/>`_  for more details).
 
 Delegates are instantiated as needed and may be destroyed at any time.
 State should *never* be stored in a delegate.
 
-`PathView </sdk/apps/qml/QtQuick/PathView/>`__ attaches a number of
-properties to the root item of the delegate, for example
-``PathView.isCurrentItem``. In the following example, the root delegate
-item can access this attached property directly as
-``PathView.isCurrentItem``, while the child ``nameText`` object must
-refer to this property as ``wrapper.PathView.isCurrentItem``.
+:ref:`PathView <sdk_qtquick_pathview>` attaches a number of properties to
+the root item of the delegate, for example ``PathView.isCurrentItem``.
+In the following example, the root delegate item can access this
+attached property directly as ``PathView.isCurrentItem``, while the
+child ``nameText`` object must refer to this property as
+``wrapper.PathView.isCurrentItem``.
 
 .. code:: qml
 
@@ -229,14 +220,16 @@ refer to this property as ``wrapper.PathView.isCurrentItem``.
 not clipped by another item or the screen, it will be necessary to set
 *clip: true* in order to have the out of view items clipped nicely.
 
-**See also** `Path </sdk/apps/qml/QtQuick/Path/>`__, `QML Data
-Models </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview#qml-data-models>`__,
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__,
-`GridView </sdk/apps/qml/QtQuick/draganddrop#gridview>`__, and `Qt Quick
-Examples - Views </sdk/apps/qml/QtQuick/views/>`__.
+**See also** :ref:`Path <sdk_qtquick_path>`, `QML Data
+Models </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#qml-data-models>`_ ,
+:ref:`ListView <sdk_qtquick_listview>`,
+`GridView </sdk/apps/qml/QtQuick/draganddrop/#gridview>`_ , and `Qt
+Quick Examples - Views </sdk/apps/qml/QtQuick/views/>`_ .
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_pathview_cacheItemCount-prop:
 
 +--------------------------------------------------------------------------+
 |        \ cacheItemCount : int                                            |
@@ -244,11 +237,11 @@ Property Documentation
 
 This property holds the maximum number of items to cache off the path.
 
-For example, a `PathView </sdk/apps/qml/QtQuick/PathView/>`__ with a
-model containing 20 items, a
-`pathItemCount </sdk/apps/qml/QtQuick/PathView#pathItemCount-prop>`__ of
-10, and an cacheItemCount of 4 will create up to 14 items, with 10
-visible on the path and 4 invisible cached items.
+For example, a :ref:`PathView <sdk_qtquick_pathview>` with a model
+containing 20 items, a
+:ref:`pathItemCount <sdk_qtquick_pathview#pathItemCount-prop>` of 10, and
+an cacheItemCount of 4 will create up to 14 items, with 10 visible on
+the path and 4 invisible cached items.
 
 The cached delegates are created asynchronously, allowing creation to
 occur across multiple frames and reducing the likelihood of skipping
@@ -260,9 +253,11 @@ creating efficient delegates; the fewer objects and bindings in a
 delegate, the faster a view can be moved.
 
 **See also**
-`pathItemCount </sdk/apps/qml/QtQuick/PathView#pathItemCount-prop>`__.
+:ref:`pathItemCount <sdk_qtquick_pathview#pathItemCount-prop>`.
 
 | 
+
+.. _sdk_qtquick_pathview_count-prop:
 
 +--------------------------------------------------------------------------+
 |        \ count : int                                                     |
@@ -272,6 +267,8 @@ This property holds the number of items in the model.
 
 | 
 
+.. _sdk_qtquick_pathview_currentIndex-prop:
+
 +--------------------------------------------------------------------------+
 |        \ currentIndex : int                                              |
 +--------------------------------------------------------------------------+
@@ -280,13 +277,17 @@ This property holds the index of the current item.
 
 | 
 
+.. _sdk_qtquick_pathview_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ currentItem : `Item </sdk/apps/qml/QtQuick/Item/>`__            |
+| :ref:` <>`\ currentItem : `Item <sdk_qtquick_item>`                    |
 +--------------------------------------------------------------------------+
 
 This property holds the current item in the view.
 
 | 
+
+.. _sdk_qtquick_pathview_delegate-prop:
 
 +--------------------------------------------------------------------------+
 |        \ delegate : Component                                            |
@@ -296,18 +297,18 @@ The delegate provides a template defining each item instantiated by the
 view. The index is exposed as an accessible ``index`` property.
 Properties of the model are also available depending upon the type of
 `Data
-Model </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview#qml-data-models>`__.
+Model </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#qml-data-models>`_ .
 
 The number of objects and bindings in the delegate has a direct effect
 on the flicking performance of the view when
-`pathItemCount </sdk/apps/qml/QtQuick/PathView#pathItemCount-prop>`__ is
+:ref:`pathItemCount <sdk_qtquick_pathview#pathItemCount-prop>` is
 specified. If at all possible, place functionality that is not needed
 for the normal display of the delegate in a
-`Loader </sdk/apps/qml/QtQuick/Loader/>`__ which can load additional
-components when needed.
+:ref:`Loader <sdk_qtquick_loader>` which can load additional components
+when needed.
 
-Note that the `PathView </sdk/apps/qml/QtQuick/PathView/>`__ will layout
-the items based on the size of the root item in the delegate.
+Note that the :ref:`PathView <sdk_qtquick_pathview>` will layout the items
+based on the size of the root item in the delegate.
 
 Here is an example delegate:
 
@@ -333,6 +334,8 @@ Here is an example delegate:
 
 | 
 
+.. _sdk_qtquick_pathview_dragMargin-prop:
+
 +--------------------------------------------------------------------------+
 |        \ dragMargin : real                                               |
 +--------------------------------------------------------------------------+
@@ -346,6 +349,8 @@ within dragMargin pixels of the path.
 
 | 
 
+.. _sdk_qtquick_pathview_dragging-prop:
+
 +--------------------------------------------------------------------------+
 |        \ dragging : bool                                                 |
 +--------------------------------------------------------------------------+
@@ -354,6 +359,8 @@ This property holds whether the view is currently moving due to the user
 dragging the view.
 
 | 
+
+.. _sdk_qtquick_pathview_flickDeceleration-prop:
 
 +--------------------------------------------------------------------------+
 |        \ flickDeceleration : real                                        |
@@ -365,6 +372,8 @@ The default is 100.
 
 | 
 
+.. _sdk_qtquick_pathview_flicking-prop:
+
 +--------------------------------------------------------------------------+
 |        \ flicking : bool                                                 |
 +--------------------------------------------------------------------------+
@@ -373,6 +382,8 @@ This property holds whether the view is currently moving due to the user
 flicking the view.
 
 | 
+
+.. _sdk_qtquick_pathview_highlight-prop:
 
 +--------------------------------------------------------------------------+
 |        \ highlight : Component                                           |
@@ -386,9 +397,9 @@ view so as to stay with the current item.
 
 The below example demonstrates how to make a simple highlight. Note the
 use of the
-`PathView.onPath </sdk/apps/qml/QtQuick/PathView#onPath-attached-prop>`__
-attached property to ensure that the highlight is hidden when flicked
-away from the path.
+:ref:`PathView.onPath <sdk_qtquick_pathview#onPath-attached-prop>` attached
+property to ensure that the highlight is hidden when flicked away from
+the path.
 
 .. code:: qml
 
@@ -399,23 +410,26 @@ away from the path.
         }
     }
 
-**See also**
-`highlightItem </sdk/apps/qml/QtQuick/PathView#highlightItem-prop>`__
+**See also** :ref:`highlightItem <sdk_qtquick_pathview#highlightItem-prop>`
 and
-`highlightRangeMode </sdk/apps/qml/QtQuick/PathView#highlightRangeMode-prop>`__.
+:ref:`highlightRangeMode <sdk_qtquick_pathview#highlightRangeMode-prop>`.
 
 | 
 
+.. _sdk_qtquick_pathview_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ highlightItem : `Item </sdk/apps/qml/QtQuick/Item/>`__          |
+| :ref:` <>`\ highlightItem : `Item <sdk_qtquick_item>`                  |
 +--------------------------------------------------------------------------+
 
 ``highlightItem`` holds the highlight item, which was created from the
-`highlight </sdk/apps/qml/QtQuick/views#highlight>`__ component.
+`highlight </sdk/apps/qml/QtQuick/views/#highlight>`_  component.
 
-**See also** `highlight </sdk/apps/qml/QtQuick/views#highlight>`__.
+**See also** `highlight </sdk/apps/qml/QtQuick/views/#highlight>`_ .
 
 | 
+
+.. _sdk_qtquick_pathview_highlightMoveDuration-prop:
 
 +--------------------------------------------------------------------------+
 |        \ highlightMoveDuration : int                                     |
@@ -425,13 +439,15 @@ This property holds the move animation duration of the highlight
 delegate.
 
 If the
-`highlightRangeMode </sdk/apps/qml/QtQuick/PathView#highlightRangeMode-prop>`__
-is StrictlyEnforceRange then this property determines the speed that the
+:ref:`highlightRangeMode <sdk_qtquick_pathview#highlightRangeMode-prop>` is
+StrictlyEnforceRange then this property determines the speed that the
 items move along the path.
 
 The default value for the duration is 300ms.
 
 | 
+
+.. _sdk_qtquick_pathview_highlightRangeMode-prop:
 
 +--------------------------------------------------------------------------+
 |        \ highlightRangeMode : enumeration                                |
@@ -469,18 +485,21 @@ than or equal to ``preferredHighlightBegin``.
 
 | 
 
+.. _sdk_qtquick_pathview_interactive-prop:
+
 +--------------------------------------------------------------------------+
 |        \ interactive : bool                                              |
 +--------------------------------------------------------------------------+
 
-A user cannot drag or flick a
-`PathView </sdk/apps/qml/QtQuick/PathView/>`__ that is not interactive.
+A user cannot drag or flick a :ref:`PathView <sdk_qtquick_pathview>` that
+is not interactive.
 
 This property is useful for temporarily disabling flicking. This allows
-special interaction with
-`PathView </sdk/apps/qml/QtQuick/PathView/>`__'s children.
+special interaction with :ref:`PathView <sdk_qtquick_pathview>`'s children.
 
 | 
+
+.. _sdk_qtquick_pathview_maximumFlickVelocity-prop:
 
 +--------------------------------------------------------------------------+
 |        \ maximumFlickVelocity : real                                     |
@@ -493,8 +512,10 @@ The default value is platform dependent.
 
 | 
 
+.. _sdk_qtquick_pathview_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ model : `model </sdk/apps/qml/QtQuick/PathView#model-prop>`__   |
+| :ref:` <>`\ model : `model <sdk_qtquick_pathview#model-prop>`          |
 +--------------------------------------------------------------------------+
 
 This property holds the model providing data for the view.
@@ -503,17 +524,18 @@ The model provides a set of data that is used to create the items for
 the view. For large or dynamic datasets the model is usually provided by
 a C++ model object. Models can also be created directly in QML, using
 the
-`ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview#listmodel>`__
+`ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#listmodel>`_ 
 type.
 
 **Note:** changing the model will reset the offset and
-`currentIndex </sdk/apps/qml/QtQuick/PathView#currentIndex-prop>`__ to
-0.
+:ref:`currentIndex <sdk_qtquick_pathview#currentIndex-prop>` to 0.
 
 **See also** `Data
-Models </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview#qml-data-models>`__.
+Models </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#qml-data-models>`_ .
 
 | 
+
+.. _sdk_qtquick_pathview_moving-prop:
 
 +--------------------------------------------------------------------------+
 |        \ moving : bool                                                   |
@@ -523,6 +545,8 @@ This property holds whether the view is currently moving due to the user
 either dragging or flicking the view.
 
 | 
+
+.. _sdk_qtquick_pathview_offset-prop:
 
 +--------------------------------------------------------------------------+
 |        \ offset : real                                                   |
@@ -534,15 +558,18 @@ count of items in the model.
 
 | 
 
+.. _sdk_qtquick_pathview_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ path : `Path </sdk/apps/qml/QtQuick/Path/>`__                   |
+| :ref:` <>`\ path : `Path <sdk_qtquick_path>`                           |
 +--------------------------------------------------------------------------+
 
 This property holds the path used to lay out the items. For more
-information see the `Path </sdk/apps/qml/QtQuick/Path/>`__
-documentation.
+information see the :ref:`Path <sdk_qtquick_path>` documentation.
 
 | 
+
+.. _sdk_qtquick_pathview_pathItemCount-prop:
 
 +--------------------------------------------------------------------------+
 |        \ pathItemCount : int                                             |
@@ -554,6 +581,8 @@ time.
 Setting pathItemCount to undefined will show all items on the path.
 
 | 
+
+.. _sdk_qtquick_pathview_preferredHighlightBegin-prop:
 
 +--------------------------------------------------------------------------+
 |        \ preferredHighlightBegin : real                                  |
@@ -580,8 +609,8 @@ Defining a highlight range is the correct way to influence where the
 current item ends up when the view moves. For example, if you want the
 currently selected item to be in the middle of the path, then set the
 highlight range to be 0.5,0.5 and
-`highlightRangeMode </sdk/apps/qml/QtQuick/PathView#highlightRangeMode-prop>`__
-to *PathView.StrictlyEnforceRange*. Then, when the path scrolls, the
+:ref:`highlightRangeMode <sdk_qtquick_pathview#highlightRangeMode-prop>` to
+*PathView.StrictlyEnforceRange*. Then, when the path scrolls, the
 currently selected item will be the item at that position. This also
 applies to when the currently selected item changes - it will scroll to
 within the preferred highlight range. Furthermore, the behaviour of the
@@ -591,6 +620,8 @@ current item index will occur whether or not a highlight exists.
 than or equal to ``preferredHighlightBegin``.
 
 | 
+
+.. _sdk_qtquick_pathview_preferredHighlightEnd-prop:
 
 +--------------------------------------------------------------------------+
 |        \ preferredHighlightEnd : real                                    |
@@ -617,8 +648,8 @@ Defining a highlight range is the correct way to influence where the
 current item ends up when the view moves. For example, if you want the
 currently selected item to be in the middle of the path, then set the
 highlight range to be 0.5,0.5 and
-`highlightRangeMode </sdk/apps/qml/QtQuick/PathView#highlightRangeMode-prop>`__
-to *PathView.StrictlyEnforceRange*. Then, when the path scrolls, the
+:ref:`highlightRangeMode <sdk_qtquick_pathview#highlightRangeMode-prop>` to
+*PathView.StrictlyEnforceRange*. Then, when the path scrolls, the
 currently selected item will be the item at that position. This also
 applies to when the currently selected item changes - it will scroll to
 within the preferred highlight range. Furthermore, the behaviour of the
@@ -629,6 +660,8 @@ than or equal to ``preferredHighlightBegin``.
 
 | 
 
+.. _sdk_qtquick_pathview_snapMode-prop:
+
 +--------------------------------------------------------------------------+
 |        \ snapMode : enumeration                                          |
 +--------------------------------------------------------------------------+
@@ -636,33 +669,34 @@ than or equal to ``preferredHighlightBegin``.
 This property determines how the items will settle following a drag or
 flick. The possible values are:
 
--  `PathView </sdk/apps/qml/QtQuick/PathView/>`__.NoSnap (default) - the
-   items stop anywhere along the path.
--  `PathView </sdk/apps/qml/QtQuick/PathView/>`__.SnapToItem - the items
-   settle with an item aligned with the
-   `preferredHighlightBegin </sdk/apps/qml/QtQuick/PathView#preferredHighlightBegin-prop>`__.
--  `PathView </sdk/apps/qml/QtQuick/PathView/>`__.SnapOneItem - the
-   items settle no more than one item away from the item nearest
-   `preferredHighlightBegin </sdk/apps/qml/QtQuick/PathView#preferredHighlightBegin-prop>`__
+-  :ref:`PathView <sdk_qtquick_pathview>`.NoSnap (default) - the items stop
+   anywhere along the path.
+-  :ref:`PathView <sdk_qtquick_pathview>`.SnapToItem - the items settle
+   with an item aligned with the
+   :ref:`preferredHighlightBegin <sdk_qtquick_pathview#preferredHighlightBegin-prop>`.
+-  :ref:`PathView <sdk_qtquick_pathview>`.SnapOneItem - the items settle no
+   more than one item away from the item nearest
+   :ref:`preferredHighlightBegin <sdk_qtquick_pathview#preferredHighlightBegin-prop>`
    at the time the press is released. This mode is particularly useful
    for moving one page at a time.
 
 ``snapMode`` does not affect the
-`currentIndex </sdk/apps/qml/QtQuick/PathView#currentIndex-prop>`__. To
-update the
-`currentIndex </sdk/apps/qml/QtQuick/PathView#currentIndex-prop>`__ as
-the view is moved, set
-`highlightRangeMode </sdk/apps/qml/QtQuick/PathView#highlightRangeMode-prop>`__
-to ``PathView.StrictlyEnforceRange`` (default for
-`PathView </sdk/apps/qml/QtQuick/PathView/>`__).
+:ref:`currentIndex <sdk_qtquick_pathview#currentIndex-prop>`. To update the
+:ref:`currentIndex <sdk_qtquick_pathview#currentIndex-prop>` as the view is
+moved, set
+:ref:`highlightRangeMode <sdk_qtquick_pathview#highlightRangeMode-prop>` to
+``PathView.StrictlyEnforceRange`` (default for
+:ref:`PathView <sdk_qtquick_pathview>`).
 
 **See also**
-`highlightRangeMode </sdk/apps/qml/QtQuick/PathView#highlightRangeMode-prop>`__.
+:ref:`highlightRangeMode <sdk_qtquick_pathview#highlightRangeMode-prop>`.
 
 | 
 
 Attached Property Documentation
 -------------------------------
+
+.. _sdk_qtquick_pathview_PathView.isCurrentItem-prop:
 
 +--------------------------------------------------------------------------+
 |        \ PathView.isCurrentItem : bool                                   |
@@ -697,17 +731,18 @@ This property may be used to adjust the appearance of the current item.
 
 | 
 
+.. _sdk_qtquick_pathview_PathView.onPath-prop:
+
 +--------------------------------------------------------------------------+
 |        \ PathView.onPath : bool                                          |
 +--------------------------------------------------------------------------+
 
 This attached property holds whether the item is currently on the path.
 
-If a
-`pathItemCount </sdk/apps/qml/QtQuick/PathView#pathItemCount-prop>`__
-has been set, it is possible that some items may be instantiated, but
-not considered to be currently on the path. Usually, these items would
-be set invisible, for example:
+If a :ref:`pathItemCount <sdk_qtquick_pathview#pathItemCount-prop>` has
+been set, it is possible that some items may be instantiated, but not
+considered to be currently on the path. Usually, these items would be
+set invisible, for example:
 
 .. code:: qml
 
@@ -722,8 +757,10 @@ It is attached to each instance of the delegate.
 
 | 
 
+.. _sdk_qtquick_pathview_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ PathView.view : `PathView </sdk/apps/qml/QtQuick/PathView/>`__  |
+| :ref:` <>`\ PathView.view : `PathView <sdk_qtquick_pathview>`          |
 +--------------------------------------------------------------------------+
 
 This attached property holds the view that manages this delegate
@@ -735,6 +772,8 @@ It is attached to each instance of the delegate.
 
 Signal Documentation
 --------------------
+
+.. _sdk_qtquick_pathview_dragEnded()-prop:
 
 +--------------------------------------------------------------------------+
 |        \ dragEnded()                                                     |
@@ -749,6 +788,8 @@ The corresponding handler is ``onDragEnded``.
 
 | 
 
+.. _sdk_qtquick_pathview_dragStarted()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ dragStarted()                                                   |
 +--------------------------------------------------------------------------+
@@ -760,6 +801,8 @@ The corresponding handler is ``onDragStarted``.
 
 | 
 
+.. _sdk_qtquick_pathview_flickEnded()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ flickEnded()                                                    |
 +--------------------------------------------------------------------------+
@@ -769,6 +812,8 @@ This signal is emitted when the view stops moving due to a flick.
 The corresponding handler is ``onFlickEnded``.
 
 | 
+
+.. _sdk_qtquick_pathview_flickStarted()-prop:
 
 +--------------------------------------------------------------------------+
 |        \ flickStarted()                                                  |
@@ -780,6 +825,8 @@ point that the mouse or touch is released, while still in motion.
 The corresponding handler is ``onFlickStarted``.
 
 | 
+
+.. _sdk_qtquick_pathview_movementEnded()-prop:
 
 +--------------------------------------------------------------------------+
 |        \ movementEnded()                                                 |
@@ -793,6 +840,8 @@ emitted when the user stops dragging - i.e. a mouse or touch release.
 The corresponding handler is ``onMovementEnded``.
 
 | 
+
+.. _sdk_qtquick_pathview_movementStarted-method:
 
 +--------------------------------------------------------------------------+
 |        \ movementStarted()                                               |
@@ -808,6 +857,8 @@ The corresponding handler is ``onMovementStarted``.
 Method Documentation
 --------------------
 
+.. _sdk_qtquick_pathview_decrementCurrentIndex-method:
+
 +--------------------------------------------------------------------------+
 |        \ decrementCurrentIndex()                                         |
 +--------------------------------------------------------------------------+
@@ -819,6 +870,8 @@ completed.
 
 | 
 
+.. _sdk_qtquick_pathview_incrementCurrentIndex-method:
+
 +--------------------------------------------------------------------------+
 |        \ incrementCurrentIndex()                                         |
 +--------------------------------------------------------------------------+
@@ -829,6 +882,8 @@ Increments the current index.
 completed.
 
 | 
+
+.. _sdk_qtquick_pathview_int indexAt-method:
 
 +--------------------------------------------------------------------------+
 |        \ int indexAt(int *x*, int *y*)                                   |
@@ -842,8 +897,10 @@ completed.
 
 | 
 
+.. _sdk_qtquick_pathview_-method:
+
 +--------------------------------------------------------------------------+
-|        \ `Item </sdk/apps/qml/QtQuick/Item/>`__ itemAt(int *x*, int *y*) |
+| :ref:` <>`\ `Item <sdk_qtquick_item>` itemAt(int *x*, int *y*)            |
 +--------------------------------------------------------------------------+
 
 Returns the item containing the point *x*, *y* in content coordinates.
@@ -854,6 +911,8 @@ completed.
 
 | 
 
+.. _sdk_qtquick_pathview_positionViewAtIndex-method:
+
 +--------------------------------------------------------------------------+
 |        \ positionViewAtIndex(int *index*, PositionMode *mode*)           |
 +--------------------------------------------------------------------------+
@@ -861,21 +920,21 @@ completed.
 Positions the view such that the *index* is at the position specified by
 *mode*:
 
--  `PathView </sdk/apps/qml/QtQuick/PathView/>`__.Beginning - position
-   item at the beginning of the path.
--  `PathView </sdk/apps/qml/QtQuick/PathView/>`__.Center - position item
-   in the center of the path.
--  `PathView </sdk/apps/qml/QtQuick/PathView/>`__.End - position item at
-   the end of the path.
--  `PathView </sdk/apps/qml/QtQuick/PathView/>`__.Contain - ensure the
-   item is positioned on the path.
--  `PathView </sdk/apps/qml/QtQuick/PathView/>`__.SnapPosition -
-   position the item at
-   `preferredHighlightBegin </sdk/apps/qml/QtQuick/PathView#preferredHighlightBegin-prop>`__.
+-  :ref:`PathView <sdk_qtquick_pathview>`.Beginning - position item at the
+   beginning of the path.
+-  :ref:`PathView <sdk_qtquick_pathview>`.Center - position item in the
+   center of the path.
+-  :ref:`PathView <sdk_qtquick_pathview>`.End - position item at the end of
+   the path.
+-  :ref:`PathView <sdk_qtquick_pathview>`.Contain - ensure the item is
+   positioned on the path.
+-  :ref:`PathView <sdk_qtquick_pathview>`.SnapPosition - position the item
+   at
+   :ref:`preferredHighlightBegin <sdk_qtquick_pathview#preferredHighlightBegin-prop>`.
    This mode is only valid if
-   `highlightRangeMode </sdk/apps/qml/QtQuick/PathView#highlightRangeMode-prop>`__
+   :ref:`highlightRangeMode <sdk_qtquick_pathview#highlightRangeMode-prop>`
    is StrictlyEnforceRange or snapping is enabled via
-   `snapMode </sdk/apps/qml/QtQuick/PathView#snapMode-prop>`__.
+   :ref:`snapMode <sdk_qtquick_pathview#snapMode-prop>`.
 
 **Note**: methods should only be called after the Component has
 completed. To position the view at startup, this method should be called
@@ -887,5 +946,5 @@ by Component.onCompleted. For example, to position the view at the end:
 
 | 
 
-.. |image0| image:: /media/sdk/apps/qml/QtQuick/PathView/images/pathview.gif
+.. |image0| image:: /mediasdk_qtquick_pathviewimages/pathview.gif
 

@@ -1,18 +1,22 @@
+.. _sdk_qtquick_particles_age:
+QtQuick.Particles Age
+=====================
+
 For altering particle ages
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtQuick.Particles 2.0         |
 +--------------------------------------+--------------------------------------+
 | Inherits:                            | `Affector </sdk/apps/qml/QtQuick/Par |
-|                                      | ticles.Affector/>`__                 |
+|                                      | ticles.Affector/>`_                  |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`advancePosition </sdk/apps/qml/QtQuick/Particles.Age#advancePosition-prop>`__****
+-  `advancePosition </sdk/apps/qml/QtQuick/Particles.Age/_advancePosition-prop>`_ 
    : bool
--  ****`lifeLeft </sdk/apps/qml/QtQuick/Particles.Age#lifeLeft-prop>`__****
+-  `lifeLeft </sdk/apps/qml/QtQuick/Particles.Age/_lifeLeft-prop>`_ 
    : int
 
 Detailed Description
@@ -31,6 +35,8 @@ The Age affector only applies to particles which are still alive.
 Property Documentation
 ----------------------
 
+.. _sdk_qtquick_particles_age_advancePosition-prop:
+
 +--------------------------------------------------------------------------+
 |        \ advancePosition : bool                                          |
 +--------------------------------------------------------------------------+
@@ -48,6 +54,8 @@ on screen.
 Default value is true.
 
 | 
+
+.. _sdk_qtquick_particles_age_lifeLeft-prop:
 
 +--------------------------------------------------------------------------+
 |        \ lifeLeft : int                                                  |

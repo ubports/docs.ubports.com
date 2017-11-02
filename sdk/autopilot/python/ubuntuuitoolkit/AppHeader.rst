@@ -1,11 +1,15 @@
+.. _sdk_ubuntuuitoolkit_appheader:
+ubuntuuitoolkit AppHeader
+=========================
+
  *class*
-``ubuntuuitoolkit.``\ ``AppHeader``\ (*\*args*)\ ` <#ubuntuuitoolkit.AppHeader>`__
+``ubuntuuitoolkit.``\ ``AppHeader``\ (*\*args*)\ ` <#ubuntuuitoolkit.AppHeader>`_ 
     Bases:
     ``ubuntuuitoolkit._custom_proxy_objects._common.UbuntuUIToolkitCustomProxyObjectBase``
 
     AppHeader Autopilot custom proxy object.
 
-    ``click_action_button``\ (*action\_object\_name*)\ ` <#ubuntuuitoolkit.AppHeader.click_action_button>`__
+    ``click_action_button``\ (*action\_object\_name*)\ ` <#ubuntuuitoolkit.AppHeader.click_action_button>`_ 
         Click an action button of the header.
 
         Parameters:
@@ -18,16 +22,16 @@
 
         If there is no action button with that object name.
 
-    ``click_back_button``\ ()` <#ubuntuuitoolkit.AppHeader.click_back_button>`__
+    ``click_back_button``\ ()` <#ubuntuuitoolkit.AppHeader.click_back_button>`_ 
 
-    ``click_custom_back_button``\ ()` <#ubuntuuitoolkit.AppHeader.click_custom_back_button>`__
+    ``click_custom_back_button``\ ()` <#ubuntuuitoolkit.AppHeader.click_custom_back_button>`_ 
 
-     ``ensure_visible``\ ()` <#ubuntuuitoolkit.AppHeader.ensure_visible>`__
+     ``ensure_visible``\ ()` <#ubuntuuitoolkit.AppHeader.ensure_visible>`_ 
 
-    ``get_selected_section_index``\ ()` <#ubuntuuitoolkit.AppHeader.get_selected_section_index>`__
+    ``get_selected_section_index``\ ()` <#ubuntuuitoolkit.AppHeader.get_selected_section_index>`_ 
 
      ``switch_to_next_tab``\ (*instance*, *\*args*,
-    *\*\*kwargs*)\ ` <#ubuntuuitoolkit.AppHeader.switch_to_next_tab>`__
+    *\*\*kwargs*)\ ` <#ubuntuuitoolkit.AppHeader.switch_to_next_tab>`_ 
         Open the next tab.
 
         Raises ToolkitException:
@@ -37,7 +41,7 @@
         If the main view has no tabs.
 
      ``switch_to_section_by_index``\ (*instance*, *\*args*,
-    *\*\*kwargs*)\ ` <#ubuntuuitoolkit.AppHeader.switch_to_section_by_index>`__
+    *\*\*kwargs*)\ ` <#ubuntuuitoolkit.AppHeader.switch_to_section_by_index>`_ 
         Select a section in the header divider
 
         Parameters:
@@ -52,7 +56,7 @@
         is set.
 
      ``switch_to_tab_by_index``\ (*instance*, *\*args*,
-    *\*\*kwargs*)\ ` <#ubuntuuitoolkit.AppHeader.switch_to_tab_by_index>`__
+    *\*\*kwargs*)\ ` <#ubuntuuitoolkit.AppHeader.switch_to_tab_by_index>`_ 
         Open a tab. This only supports the new tabs in the header
 
         Parameters:
@@ -65,9 +69,9 @@
 
         If the tab index is out of range or useDeprecatedToolbar is set.
 
-    ``wait_for_animation``\ ()` <#ubuntuuitoolkit.AppHeader.wait_for_animation>`__
+    ``wait_for_animation``\ ()` <#ubuntuuitoolkit.AppHeader.wait_for_animation>`_ 
 
-``ubuntuuitoolkit.``\ ``check_autopilot_version``\ ()` <#ubuntuuitoolkit.check_autopilot_version>`__
+``ubuntuuitoolkit.``\ ``check_autopilot_version``\ ()` <#ubuntuuitoolkit.check_autopilot_version>`_ 
     Check that the Autopilot installed version matches the one required.
 
     Raises ToolkitException:

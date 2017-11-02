@@ -1,3 +1,7 @@
+.. _sdk_qtorganizer_guid:
+QtOrganizer Guid
+================
+
 The Guid element contains the GUID string of an organizer item.
 
 +---------------------+--------------------------+
@@ -7,12 +11,12 @@ The Guid element contains the GUID string of an organizer item.
 Properties
 ----------
 
--  ****`guid </sdk/apps/qml/QtOrganizer/Guid#guid-prop>`__**** : string
+-  :ref:`guid <sdk_qtorganizer_guid_guid-prop>` : string
 
 Signals
 -------
 
--  ****`onDetailChanged </sdk/apps/qml/QtOrganizer/Guid#onDetailChanged-signal>`__****\ ()
+-  :ref:`onDetailChanged <sdk_qtorganizer_guid_onDetailChanged-signal>`\ ()
 
 Detailed Description
 --------------------
@@ -26,6 +30,8 @@ The following fields are supported:
 Property Documentation
 ----------------------
 
+.. _sdk_qtorganizer_guid_guid-prop:
+
 +--------------------------------------------------------------------------+
 |        \ guid : string                                                   |
 +--------------------------------------------------------------------------+
@@ -37,11 +43,13 @@ This property holds the GUID string.
 Signal Documentation
 --------------------
 
+.. _sdk_qtorganizer_guid_onDetailChanged()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ onDetailChanged()                                               |
 +--------------------------------------------------------------------------+
 
 **See also**
-`Detail::onDetailChanged </sdk/apps/qml/QtOrganizer/Detail#onDetailChanged-signal>`__.
+:ref:`Detail::onDetailChanged <sdk_qtorganizer_detail#onDetailChanged-signal>`.
 
 | 

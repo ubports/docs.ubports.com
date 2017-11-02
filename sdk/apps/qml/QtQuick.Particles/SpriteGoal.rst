@@ -1,20 +1,24 @@
+.. _sdk_qtquick_particles_spritegoal:
+QtQuick.Particles SpriteGoal
+============================
+
 For changing the state of a sprite particle
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtQuick.Particles 2.0         |
 +--------------------------------------+--------------------------------------+
 | Inherits:                            | `Affector </sdk/apps/qml/QtQuick/Par |
-|                                      | ticles.Affector/>`__                 |
+|                                      | ticles.Affector/>`_                  |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`goalState </sdk/apps/qml/QtQuick/Particles.SpriteGoal#goalState-prop>`__****
+-  `goalState </sdk/apps/qml/QtQuick/Particles.SpriteGoal/_goalState-prop>`_ 
    : string
--  ****`jump </sdk/apps/qml/QtQuick/Particles.SpriteGoal#jump-prop>`__****
+-  `jump </sdk/apps/qml/QtQuick/Particles.SpriteGoal/_jump-prop>`_ 
    : bool
--  ****`systemStates </sdk/apps/qml/QtQuick/Particles.SpriteGoal#systemStates-prop>`__****
+-  `systemStates </sdk/apps/qml/QtQuick/Particles.SpriteGoal/_systemStates-prop>`_ 
    : bool
 
 Detailed Description
@@ -22,6 +26,8 @@ Detailed Description
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_particles_spritegoal_goalState-prop:
 
 +--------------------------------------------------------------------------+
 |        \ goalState : string                                              |
@@ -36,6 +42,8 @@ quickest. It will pass through intermediate states on that path.
 
 | 
 
+.. _sdk_qtquick_particles_spritegoal_jump-prop:
+
 +--------------------------------------------------------------------------+
 |        \ jump : bool                                                     |
 +--------------------------------------------------------------------------+
@@ -49,11 +57,13 @@ Default is false.
 
 | 
 
+.. _sdk_qtquick_particles_spritegoal_systemStates-prop:
+
 +--------------------------------------------------------------------------+
 |        \ systemStates : bool                                             |
 +--------------------------------------------------------------------------+
 
 deprecated, use
-`GroupGoal </sdk/apps/qml/QtQuick/Particles.GroupGoal/>`__ instead
+`GroupGoal </sdk/apps/qml/QtQuick/Particles.GroupGoal/>`_  instead
 
 | 

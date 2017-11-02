@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_crossfadeimage:
+Ubuntu.Components CrossFadeImage
+================================
+
 An Image like component which smoothly fades when its source is updated.
 
 +---------------------+------------+
@@ -7,19 +11,19 @@ An Image like component which smoothly fades when its source is updated.
 Properties
 ----------
 
--  ****`fadeDuration </sdk/apps/qml/Ubuntu.Components/CrossFadeImage#fadeDuration-prop>`__****
+-  :ref:`fadeDuration <sdk_ubuntu_components_crossfadeimage_fadeDuration-prop>`
    : int
--  ****`fadeStyle </sdk/apps/qml/Ubuntu.Components/CrossFadeImage#fadeStyle-prop>`__****
+-  :ref:`fadeStyle <sdk_ubuntu_components_crossfadeimage_fadeStyle-prop>`
    : string
--  ****`fillMode </sdk/apps/qml/Ubuntu.Components/CrossFadeImage#fillMode-prop>`__****
+-  :ref:`fillMode <sdk_ubuntu_components_crossfadeimage_fillMode-prop>`
    : enumeration
--  ****`running </sdk/apps/qml/Ubuntu.Components/CrossFadeImage#running-prop>`__****
+-  :ref:`running <sdk_ubuntu_components_crossfadeimage_running-prop>`
    : bool
--  ****`source </sdk/apps/qml/Ubuntu.Components/CrossFadeImage#source-prop>`__****
+-  :ref:`source <sdk_ubuntu_components_crossfadeimage_source-prop>`
    : url
--  ****`sourceSize </sdk/apps/qml/Ubuntu.Components/CrossFadeImage#sourceSize-prop>`__****
+-  :ref:`sourceSize <sdk_ubuntu_components_crossfadeimage_sourceSize-prop>`
    : size
--  ****`status </sdk/apps/qml/Ubuntu.Components/CrossFadeImage#status-prop>`__****
+-  :ref:`status <sdk_ubuntu_components_crossfadeimage_status-prop>`
    : enumeration
 
 Detailed Description
@@ -43,6 +47,8 @@ Detailed Description
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_crossfadeimage_fadeDuration-prop:
+
 +--------------------------------------------------------------------------+
 |        \ fadeDuration : int                                              |
 +--------------------------------------------------------------------------+
@@ -51,9 +57,11 @@ The time over which to fade between images. Defaults to
 ``UbuntuAnimation.FastDuration``.
 
 **See also**
-`UbuntuAnimation </sdk/apps/qml/Ubuntu.Components/UbuntuAnimation/>`__.
+:ref:`UbuntuAnimation <sdk_ubuntu_components_ubuntuanimation>`.
 
 | 
+
+.. _sdk_ubuntu_components_crossfadeimage_fadeStyle-prop:
 
 +--------------------------------------------------------------------------+
 |        \ fadeStyle : string                                              |
@@ -69,6 +77,8 @@ Defaults to ``overlay``
 This QML property was introduced in Ubuntu.Components 1.1.
 
 | 
+
+.. _sdk_ubuntu_components_crossfadeimage_fillMode-prop:
 
 +--------------------------------------------------------------------------+
 |        \ fillMode : enumeration                                          |
@@ -90,6 +100,8 @@ Defaults to ``Image.PreserveAspectFit``
 
 | 
 
+.. _sdk_ubuntu_components_crossfadeimage_running-prop:
+
 +--------------------------------------------------------------------------+
 |        \ running : bool                                                  |
 +--------------------------------------------------------------------------+
@@ -98,14 +110,18 @@ Whether the animation is running
 
 | 
 
+.. _sdk_ubuntu_components_crossfadeimage_source-prop:
+
 +--------------------------------------------------------------------------+
-|        \ source : `url <http://doc.qt.io/qt-5/qml-url.html>`__           |
+|        \ source : `url <http://doc.qt.io/qt-5/qml-url.html>`_            |
 +--------------------------------------------------------------------------+
 
 The image being displayed. Can be a URL to any image format supported by
 Qt.
 
 | 
+
+.. _sdk_ubuntu_components_crossfadeimage_sourceSize-prop:
 
 +--------------------------------------------------------------------------+
 |        \ sourceSize : size                                               |
@@ -123,6 +139,8 @@ reloaded, potentially even from the network, if it is not in the disk
 cache.
 
 | 
+
+.. _sdk_ubuntu_components_crossfadeimage_status-prop:
 
 +--------------------------------------------------------------------------+
 |        \ status : enumeration                                            |

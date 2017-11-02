@@ -1,3 +1,7 @@
+.. _sdk_qtqml_legacy_modules:
+QtQml Legacy Modules
+====================
+
 
 
 Legacy modules are modules whose specification ``qmldir`` file does not

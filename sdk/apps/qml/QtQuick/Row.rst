@@ -1,24 +1,26 @@
+.. _sdk_qtquick_row:
+QtQuick Row
+===========
+
 Positions its children in a row
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtQuick 2.4                   |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Item </sdk/apps/qml/QtQuick/Item/>` |
-|                                      | __                                   |
+| Inherits:                            | :ref:`Item <sdk_qtquick_item>`       |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`add </sdk/apps/qml/QtQuick/Row#add-prop>`__**** : Transition
--  ****`effectiveLayoutDirection </sdk/apps/qml/QtQuick/Row#effectiveLayoutDirection-prop>`__****
+-  :ref:`add <sdk_qtquick_row_add-prop>` : Transition
+-  :ref:`effectiveLayoutDirection <sdk_qtquick_row_effectiveLayoutDirection-prop>`
    : enumeration
--  ****`layoutDirection </sdk/apps/qml/QtQuick/Row#layoutDirection-prop>`__****
-   : enumeration
--  ****`move </sdk/apps/qml/QtQuick/Row#move-prop>`__**** : Transition
--  ****`populate </sdk/apps/qml/QtQuick/Row#populate-prop>`__**** :
-   Transition
--  ****`spacing </sdk/apps/qml/QtQuick/Row#spacing-prop>`__**** : real
+-  :ref:`layoutDirection <sdk_qtquick_row_layoutDirection-prop>` :
+   enumeration
+-  :ref:`move <sdk_qtquick_row_move-prop>` : Transition
+-  :ref:`populate <sdk_qtquick_row_populate-prop>` : Transition
+-  :ref:`spacing <sdk_qtquick_row_spacing-prop>` : real
 
 Detailed Description
 --------------------
@@ -26,7 +28,7 @@ Detailed Description
 Row is a type that positions its child items along a single row. It can
 be used as a convenient way to horizontally position a series of items
 without using
-`anchors </sdk/apps/qml/QtQuick/qtquick-positioning-anchors/>`__.
+`anchors </sdk/apps/qml/QtQuick/qtquick-positioning-anchors/>`_ .
 
 Below is a Row that contains three rectangles of various sizes:
 
@@ -46,40 +48,41 @@ like this:
 |image0|
 
 If an item within a Row is not
-`visible </sdk/apps/qml/QtQuick/Item#visible-prop>`__, or if it has a
-width or height of 0, the item will not be laid out and it will not be
-visible within the row. Also, since a Row automatically positions its
-children horizontally, a child item within a Row should not set its
-`x </sdk/apps/qml/QtQuick/Item#x-prop>`__ position or horizontally
-anchor itself using the
-`left </sdk/apps/qml/QtQuick/Item#anchors.left-prop>`__,
-`right </sdk/apps/qml/QtQuick/Item#anchors.right-prop>`__,
-`anchors.horizontalCenter </sdk/apps/qml/QtQuick/Item#anchors.horizontalCenter-prop>`__,
-`fill </sdk/apps/qml/QtQuick/Item#anchors.fill-prop>`__ or
-`centerIn </sdk/apps/qml/QtQuick/Item#anchors.centerIn-prop>`__ anchors.
-If you need to perform these actions, consider positioning the items
-without the use of a Row.
+:ref:`visible <sdk_qtquick_item#visible-prop>`, or if it has a width or
+height of 0, the item will not be laid out and it will not be visible
+within the row. Also, since a Row automatically positions its children
+horizontally, a child item within a Row should not set its
+:ref:`x <sdk_qtquick_item#x-prop>` position or horizontally anchor itself
+using the :ref:`left <sdk_qtquick_item#anchors.left-prop>`,
+:ref:`right <sdk_qtquick_item#anchors.right-prop>`,
+:ref:`anchors.horizontalCenter <sdk_qtquick_item#anchors.horizontalCenter-prop>`,
+:ref:`fill <sdk_qtquick_item#anchors.fill-prop>` or
+:ref:`centerIn <sdk_qtquick_item#anchors.centerIn-prop>` anchors. If you
+need to perform these actions, consider positioning the items without
+the use of a Row.
 
 Note that items in a Row can use the
-`Positioner </sdk/apps/qml/QtQuick/Positioner/>`__ attached property to
-access more information about its position within the Row.
+:ref:`Positioner <sdk_qtquick_positioner>` attached property to access more
+information about its position within the Row.
 
 For more information on using Row and other related positioner-types,
 see `Item
-Positioners </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/>`__.
+Positioners </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/>`_ .
 
 **See also**
-`Column </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#column>`__,
-`Grid </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#grid>`__,
-`Flow </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#flow>`__,
-`Positioner </sdk/apps/qml/QtQuick/Positioner/>`__, RowLayout, and `Qt
-Quick Examples - Positioners </sdk/apps/qml/QtQuick/positioners/>`__.
+`Column </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#column>`_ ,
+`Grid </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#grid>`_ ,
+`Flow </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#flow>`_ ,
+:ref:`Positioner <sdk_qtquick_positioner>`, RowLayout, and `Qt Quick
+Examples - Positioners </sdk/apps/qml/QtQuick/positioners/>`_ .
 
 Property Documentation
 ----------------------
 
+.. _sdk_qtquick_row_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ add : `Transition </sdk/apps/qml/QtQuick/Transition/>`__        |
+| :ref:` <>`\ add : `Transition <sdk_qtquick_transition>`                |
 +--------------------------------------------------------------------------+
 
 This property holds the transition to be run for items that are added to
@@ -88,25 +91,27 @@ this positioner. For a positioner, this applies to:
 -  Items that are created or reparented as a child of the positioner
    after the positioner has been created
 -  Child items that change their
-   `Item::visible </sdk/apps/qml/QtQuick/Item#visible-prop>`__ property
-   from false to true, and thus are now visible
+   :ref:`Item::visible <sdk_qtquick_item#visible-prop>` property from false
+   to true, and thus are now visible
 
 The transition can use the
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__ property to
-access more details about the item that is being added. See the
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__ documentation
-for more details and examples on using these transitions.
+:ref:`ViewTransition <sdk_qtquick_viewtransition>` property to access more
+details about the item that is being added. See the
+:ref:`ViewTransition <sdk_qtquick_viewtransition>` documentation for more
+details and examples on using these transitions.
 
 **Note:** This transition is not applied to the items that already part
 of the positioner at the time of its creation. In this case, the
-`populate </sdk/apps/qml/QtQuick/Row#populate-prop>`__ transition is
-applied instead.
+:ref:`populate <sdk_qtquick_row#populate-prop>` transition is applied
+instead.
 
-**See also** `populate </sdk/apps/qml/QtQuick/Row#populate-prop>`__,
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__, and `Qt
-Quick Examples - Positioners </sdk/apps/qml/QtQuick/positioners/>`__.
+**See also** :ref:`populate <sdk_qtquick_row#populate-prop>`,
+:ref:`ViewTransition <sdk_qtquick_viewtransition>`, and `Qt Quick Examples
+- Positioners </sdk/apps/qml/QtQuick/positioners/>`_ .
 
 | 
+
+.. _sdk_qtquick_row_effectiveLayoutDirection-prop:
 
 +--------------------------------------------------------------------------+
 |        \ effectiveLayoutDirection : enumeration                          |
@@ -115,17 +120,19 @@ Quick Examples - Positioners </sdk/apps/qml/QtQuick/positioners/>`__.
 This property holds the effective layout direction of the row.
 
 When using the attached property
-`LayoutMirroring::enabled </sdk/apps/qml/QtQuick/LayoutMirroring#enabled-prop>`__
+:ref:`LayoutMirroring::enabled <sdk_qtquick_layoutmirroring#enabled-prop>`
 for locale layouts, the visual layout direction of the row positioner
 will be mirrored. However, the property
-`layoutDirection </sdk/apps/qml/QtQuick/Row#layoutDirection-prop>`__
-will remain unchanged.
+:ref:`layoutDirection <sdk_qtquick_row#layoutDirection-prop>` will remain
+unchanged.
 
 **See also**
-`Row::layoutDirection </sdk/apps/qml/QtQuick/Row#layoutDirection-prop>`__
-and `LayoutMirroring </sdk/apps/qml/QtQuick/LayoutMirroring/>`__.
+:ref:`Row::layoutDirection <sdk_qtquick_row#layoutDirection-prop>` and
+:ref:`LayoutMirroring <sdk_qtquick_layoutmirroring>`.
 
 | 
+
+.. _sdk_qtquick_row_layoutDirection-prop:
 
 +--------------------------------------------------------------------------+
 |        \ layoutDirection : enumeration                                   |
@@ -143,15 +150,17 @@ Possible values:
    of the row.
 
 **See also**
-`Grid::layoutDirection </sdk/apps/qml/QtQuick/Grid#layoutDirection-prop>`__,
-`Flow::layoutDirection </sdk/apps/qml/QtQuick/Flow#layoutDirection-prop>`__,
-and `Qt Quick Examples - Right to
-Left </sdk/apps/qml/QtQuick/righttoleft/>`__.
+:ref:`Grid::layoutDirection <sdk_qtquick_grid#layoutDirection-prop>`,
+:ref:`Flow::layoutDirection <sdk_qtquick_flow#layoutDirection-prop>`, and
+`Qt Quick Examples - Right to
+Left </sdk/apps/qml/QtQuick/righttoleft/>`_ .
 
 | 
 
+.. _sdk_qtquick_row_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ move : `Transition </sdk/apps/qml/QtQuick/Transition/>`__       |
+| :ref:` <>`\ move : `Transition <sdk_qtquick_transition>`               |
 +--------------------------------------------------------------------------+
 
 This property holds the transition to run for items that have moved
@@ -163,32 +172,32 @@ within the positioner. For a positioner, this applies to:
    in the positioner
 
 The transition can use the
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__ property to
-access more details about the item that is being moved. Note, however,
-that for this move transition, the
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__.targetIndexes
-and
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__.targetItems
-lists are only set when this transition is triggered by the addition of
-other items in the positioner; in other cases, these lists will be
-empty. See the
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__ documentation
-for more details and examples on using these transitions.
+:ref:`ViewTransition <sdk_qtquick_viewtransition>` property to access more
+details about the item that is being moved. Note, however, that for this
+move transition, the
+:ref:`ViewTransition <sdk_qtquick_viewtransition>`.targetIndexes and
+:ref:`ViewTransition <sdk_qtquick_viewtransition>`.targetItems lists are
+only set when this transition is triggered by the addition of other
+items in the positioner; in other cases, these lists will be empty. See
+the :ref:`ViewTransition <sdk_qtquick_viewtransition>` documentation for
+more details and examples on using these transitions.
 
 **Note:** In Qt Quick 1, this transition was applied to all items that
 were part of the positioner at the time of its creation. From `QtQuick
-2 </sdk/apps/qml/QtQuick/qtquick-index/>`__ onwards, positioners apply
-the `populate </sdk/apps/qml/QtQuick/Row#populate-prop>`__ transition to
-these items instead.
+2 </sdk/apps/qml/QtQuick/qtquick-index/>`_  onwards, positioners apply
+the :ref:`populate <sdk_qtquick_row#populate-prop>` transition to these
+items instead.
 
-**See also** `add </sdk/apps/qml/QtQuick/Row#add-prop>`__,
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__, and `Qt
-Quick Examples - Positioners </sdk/apps/qml/QtQuick/positioners/>`__.
+**See also** :ref:`add <sdk_qtquick_row#add-prop>`,
+:ref:`ViewTransition <sdk_qtquick_viewtransition>`, and `Qt Quick Examples
+- Positioners </sdk/apps/qml/QtQuick/positioners/>`_ .
 
 | 
 
+.. _sdk_qtquick_row_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ populate : `Transition </sdk/apps/qml/QtQuick/Transition/>`__   |
+| :ref:` <>`\ populate : `Transition <sdk_qtquick_transition>`           |
 +--------------------------------------------------------------------------+
 
 This property holds the transition to be run for items that are part of
@@ -196,16 +205,18 @@ this positioner at the time of its creation. The transition is run when
 the positioner is first created.
 
 The transition can use the
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__ property to
-access more details about the item that is being added. See the
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__ documentation
-for more details and examples on using these transitions.
+:ref:`ViewTransition <sdk_qtquick_viewtransition>` property to access more
+details about the item that is being added. See the
+:ref:`ViewTransition <sdk_qtquick_viewtransition>` documentation for more
+details and examples on using these transitions.
 
-**See also** `add </sdk/apps/qml/QtQuick/Row#add-prop>`__,
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__, and `Qt
-Quick Examples - Positioners </sdk/apps/qml/QtQuick/positioners/>`__.
+**See also** :ref:`add <sdk_qtquick_row#add-prop>`,
+:ref:`ViewTransition <sdk_qtquick_viewtransition>`, and `Qt Quick Examples
+- Positioners </sdk/apps/qml/QtQuick/positioners/>`_ .
 
 | 
+
+.. _sdk_qtquick_row_spacing-prop:
 
 +--------------------------------------------------------------------------+
 |        \ spacing : real                                                  |
@@ -214,10 +225,9 @@ Quick Examples - Positioners </sdk/apps/qml/QtQuick/positioners/>`__.
 The spacing is the amount in pixels left empty between adjacent items.
 The default spacing is 0.
 
-**See also**
-`Grid::spacing </sdk/apps/qml/QtQuick/Grid#spacing-prop>`__.
+**See also** :ref:`Grid::spacing <sdk_qtquick_grid#spacing-prop>`.
 
 | 
 
-.. |image0| image:: /media/sdk/apps/qml/QtQuick/Row/images/horizontalpositioner_example.png
+.. |image0| image:: /mediasdk_qtquick_rowimages/horizontalpositioner_example.png
 

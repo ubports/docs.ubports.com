@@ -1,19 +1,23 @@
+.. _sdk_ubuntu_components_listitems_thindivider:
+Ubuntu.Components.ListItems ThinDivider
+=======================================
+
 Narrow line used as a divider between ListItems.
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import Ubuntu.Components.ListItems   |
 |                                      | 1.3                                  |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Rectangle </sdk/apps/qml/QtQuick/Re |
-|                                      | ctangle/>`__                         |
+| Inherits:                            | :ref:`Rectangle <sdk_qtquick_rectangle>`_ |
+|                                      | _                                    |
 +--------------------------------------+--------------------------------------+
 
 Detailed Description
 --------------------
 
 **Note:** **The component is deprecated. Use
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ component's
-divider property instead.**
+:ref:`ListItem <sdk_ubuntu_components_listitem>` component's divider
+property instead.**
 
 ListItems will usually include this line at the bottom of the item to
 give a visually pleasing list of items. But a divider line can also be

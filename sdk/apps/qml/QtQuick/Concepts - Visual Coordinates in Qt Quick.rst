@@ -1,3 +1,7 @@
+.. _sdk_qtquick_concepts_-_visual_coordinates_in_qt_quick:
+QtQuick Concepts - Visual Coordinates in Qt Quick
+=================================================
+
 
 
 .. rubric:: Item Coordinates
@@ -25,9 +29,9 @@ item in the window.
 
 You can convert from item to scene coordinates using the functions on
 the item whose coordinate system you are interested in. See
-`Item::mapFromItem </sdk/apps/qml/QtQuick/Item#mapFromItem-method>`__
-and `Item::mapToItem </sdk/apps/qml/QtQuick/Item#mapToItem-method>`__
-for converting to scene coordinates, or another item's coordinates.
+:ref:`Item::mapFromItem <sdk_qtquick_item#mapFromItem-method>` and
+:ref:`Item::mapToItem <sdk_qtquick_item#mapToItem-method>` for converting
+to scene coordinates, or another item's coordinates.
 
 .. rubric:: Worked Example
    :name: worked-example

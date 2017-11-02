@@ -1,3 +1,7 @@
+.. _sdk_qtfeedback_themeeffect:
+QtFeedback themeeffect
+======================
+
 The ThemeEffect element represents a themed feedback effect.
 
 +---------------------+------------+
@@ -7,16 +11,16 @@ The ThemeEffect element represents a themed feedback effect.
 Properties
 ----------
 
--  ****`effect </sdk/apps/qml/QtFeedback/themeeffect#effect-prop>`__****
-   : ThemeEffect
--  ****`supported </sdk/apps/qml/QtFeedback/themeeffect#supported-prop>`__****
-   : bool
+-  :ref:`effect <sdk_qtfeedback_themeeffect_effect-prop>` :
+   ThemeEffect
+-  :ref:`supported <sdk_qtfeedback_themeeffect_supported-prop>` :
+   bool
 
 Methods
 -------
 
--  ****`play </sdk/apps/qml/QtFeedback/themeeffect#play-method-2>`__****\ (Effect)
--  ****`play </sdk/apps/qml/QtFeedback/themeeffect#play-method>`__****\ ()
+-  :ref:`play <sdk_qtfeedback_themeeffect_play-method-2>`\ (Effect)
+-  :ref:`play <sdk_qtfeedback_themeeffect_play-method>`\ ()
 
 Detailed Description
 --------------------
@@ -86,9 +90,10 @@ theme. The actual feedback might be haptic, audio or some other method.
 Property Documentation
 ----------------------
 
+.. _sdk_qtfeedback_themeeffect_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ effect :                                                        |
-| `ThemeEffect </sdk/apps/qml/QtFeedback/themeeffect/>`__                  |
+| :ref:` <>`\ effect : `ThemeEffect <sdk_qtfeedback_themeeffect>`        |
 +--------------------------------------------------------------------------+
 
 This property holds the specific themed effect type to play. It is one
@@ -129,6 +134,8 @@ Effect.Move - Feedback for dragging on screen.
 
 | 
 
+.. _sdk_qtfeedback_themeeffect_supported-prop:
+
 +--------------------------------------------------------------------------+
 |        \ supported : bool                                                |
 +--------------------------------------------------------------------------+
@@ -140,6 +147,8 @@ This property is true if the system supports themed feedback effects.
 Method Documentation
 --------------------
 
+.. _sdk_qtfeedback_themeeffect_play-method:
+
 +--------------------------------------------------------------------------+
 |        \ play(Effect)                                                    |
 +--------------------------------------------------------------------------+
@@ -147,6 +156,8 @@ Method Documentation
 Call this to play the themed effect passed as parameter.
 
 | 
+
+.. _sdk_qtfeedback_themeeffect_play-method:
 
 +--------------------------------------------------------------------------+
 |        \ play()                                                          |

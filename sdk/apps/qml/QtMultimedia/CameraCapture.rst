@@ -1,3 +1,7 @@
+.. _sdk_qtmultimedia_cameracapture:
+QtMultimedia CameraCapture
+==========================
+
 An interface for capturing camera images
 
 +---------------------+---------------------------+
@@ -7,34 +11,33 @@ An interface for capturing camera images
 Properties
 ----------
 
--  ****`capturedImagePath </sdk/apps/qml/QtMultimedia/CameraCapture#capturedImagePath-prop>`__****
+-  :ref:`capturedImagePath <sdk_qtmultimedia_cameracapture_capturedImagePath-prop>`
    : string
--  ****`errorString </sdk/apps/qml/QtMultimedia/CameraCapture#errorString-prop>`__****
+-  :ref:`errorString <sdk_qtmultimedia_cameracapture_errorString-prop>`
    : string
--  ****`ready </sdk/apps/qml/QtMultimedia/CameraCapture#ready-prop>`__****
-   : bool
--  ****`resolution </sdk/apps/qml/QtMultimedia/CameraCapture#resolution-prop>`__****
+-  :ref:`ready <sdk_qtmultimedia_cameracapture_ready-prop>` : bool
+-  :ref:`resolution <sdk_qtmultimedia_cameracapture_resolution-prop>`
    : size
 
 Signals
 -------
 
--  ****`captureFailed </sdk/apps/qml/QtMultimedia/CameraCapture#captureFailed-signal>`__****\ (requestId,
+-  :ref:`captureFailed <sdk_qtmultimedia_cameracapture_captureFailed-signal>`\ (requestId,
    message)
--  ****`imageCaptured </sdk/apps/qml/QtMultimedia/CameraCapture#imageCaptured-signal>`__****\ (requestId,
+-  :ref:`imageCaptured <sdk_qtmultimedia_cameracapture_imageCaptured-signal>`\ (requestId,
    preview)
--  ****`imageMetadataAvailable </sdk/apps/qml/QtMultimedia/CameraCapture#imageMetadataAvailable-signal>`__****\ (requestId,
+-  :ref:`imageMetadataAvailable <sdk_qtmultimedia_cameracapture_imageMetadataAvailable-signal>`\ (requestId,
    key, value)
--  ****`imageSaved </sdk/apps/qml/QtMultimedia/CameraCapture#imageSaved-signal>`__****\ (requestId,
+-  :ref:`imageSaved <sdk_qtmultimedia_cameracapture_imageSaved-signal>`\ (requestId,
    path)
 
 Methods
 -------
 
--  ****`cancelCapture </sdk/apps/qml/QtMultimedia/CameraCapture#cancelCapture-method>`__****\ ()
--  ****`capture </sdk/apps/qml/QtMultimedia/CameraCapture#capture-method>`__****\ ()
--  ****`captureToLocation </sdk/apps/qml/QtMultimedia/CameraCapture#captureToLocation-method>`__****\ (location)
--  ****`setMetadata </sdk/apps/qml/QtMultimedia/CameraCapture#setMetadata-method>`__****\ (key,
+-  :ref:`cancelCapture <sdk_qtmultimedia_cameracapture_cancelCapture-method>`\ ()
+-  :ref:`capture <sdk_qtmultimedia_cameracapture_capture-method>`\ ()
+-  :ref:`captureToLocation <sdk_qtmultimedia_cameracapture_captureToLocation-method>`\ (location)
+-  :ref:`setMetadata <sdk_qtmultimedia_cameracapture_setMetadata-method>`\ (key,
    value)
 
 Detailed Description
@@ -44,9 +47,9 @@ This type allows you to capture still images and be notified when they
 are available or saved to disk. You can adjust the resolution of the
 captured image and where the saved image should go.
 
-`CameraCapture </sdk/apps/qml/QtMultimedia/CameraCapture/>`__ is a child
-of a `Camera </sdk/apps/qml/QtMultimedia/qml-multimedia#camera>`__ (as
-the ``imageCapture`` property) and cannot be created directly.
+:ref:`CameraCapture <sdk_qtmultimedia_cameracapture>` is a child of a
+`Camera </sdk/apps/qml/QtMultimedia/qml-multimedia/#camera>`_  (as the
+``imageCapture`` property) and cannot be created directly.
 
 .. code:: qml
 
@@ -81,6 +84,8 @@ the ``imageCapture`` property) and cannot be created directly.
 Property Documentation
 ----------------------
 
+.. _sdk_qtmultimedia_cameracapture_capturedImagePath-prop:
+
 +--------------------------------------------------------------------------+
 |        \ capturedImagePath : string                                      |
 +--------------------------------------------------------------------------+
@@ -88,6 +93,8 @@ Property Documentation
 This property holds the location of the last captured image.
 
 | 
+
+.. _sdk_qtmultimedia_cameracapture_errorString-prop:
 
 +--------------------------------------------------------------------------+
 |        \ errorString : string                                            |
@@ -97,6 +104,8 @@ This property holds the error message related to the last capture.
 
 | 
 
+.. _sdk_qtmultimedia_cameracapture_ready-prop:
+
 +--------------------------------------------------------------------------+
 |        \ ready : bool                                                    |
 +--------------------------------------------------------------------------+
@@ -105,13 +114,15 @@ This property holds a bool value indicating whether the camera is ready
 to capture photos or not.
 
 It's permissible to call
-`capture() </sdk/apps/qml/QtMultimedia/CameraCapture#capture-method>`__
-while the camera is active regardless of the *ready* property value. If
-camera is not ready to capture image immediately, the capture request is
-queued with all the related camera settings, and the request will be
-executed as soon as possible.
+:ref:`capture() <sdk_qtmultimedia_cameracapture#capture-method>` while the
+camera is active regardless of the *ready* property value. If camera is
+not ready to capture image immediately, the capture request is queued
+with all the related camera settings, and the request will be executed
+as soon as possible.
 
 | 
+
+.. _sdk_qtmultimedia_cameracapture_resolution-prop:
 
 +--------------------------------------------------------------------------+
 |        \ resolution : size                                               |
@@ -125,6 +136,8 @@ empty, the system chooses the appropriate resolution.
 Signal Documentation
 --------------------
 
+.. _sdk_qtmultimedia_cameracapture_captureFailed(requestId, message)-prop:
+
 +--------------------------------------------------------------------------+
 |        \ captureFailed(requestId, message)                               |
 +--------------------------------------------------------------------------+
@@ -135,6 +148,8 @@ This signal is emitted when an error occurs during capture with
 The corresponding handler is ``onCaptureFailed``.
 
 | 
+
+.. _sdk_qtmultimedia_cameracapture_imageCaptured(requestId, preview)-prop:
 
 +--------------------------------------------------------------------------+
 |        \ imageCaptured(requestId, preview)                               |
@@ -147,9 +162,11 @@ as the URL supplied to an Image.
 The corresponding handler is ``onImageCaptured``.
 
 **See also**
-`imageSaved </sdk/apps/qml/QtMultimedia/CameraCapture#imageSaved-signal>`__.
+:ref:`imageSaved <sdk_qtmultimedia_cameracapture#imageSaved-signal>`.
 
 | 
+
+.. _sdk_qtmultimedia_cameracapture_imageMetadataAvailable(requestId, key, value)-prop:
 
 +--------------------------------------------------------------------------+
 |        \ imageMetadataAvailable(requestId, key, value)                   |
@@ -161,9 +178,11 @@ available with the key *key* and value *value*.
 The corresponding handler is ``onImageMetadataAvailable``.
 
 **See also**
-`imageCaptured </sdk/apps/qml/QtMultimedia/CameraCapture#imageCaptured-signal>`__.
+:ref:`imageCaptured <sdk_qtmultimedia_cameracapture#imageCaptured-signal>`.
 
 | 
+
+.. _sdk_qtmultimedia_cameracapture_imageSaved(requestId, path)-prop:
 
 +--------------------------------------------------------------------------+
 |        \ imageSaved(requestId, path)                                     |
@@ -175,12 +194,14 @@ to the filesystem. The *path* is a local file path, not a URL.
 The corresponding handler is ``onImageSaved``.
 
 **See also**
-`imageCaptured </sdk/apps/qml/QtMultimedia/CameraCapture#imageCaptured-signal>`__.
+:ref:`imageCaptured <sdk_qtmultimedia_cameracapture#imageCaptured-signal>`.
 
 | 
 
 Method Documentation
 --------------------
+
+.. _sdk_qtmultimedia_cameracapture_cancelCapture-method:
 
 +--------------------------------------------------------------------------+
 |        \ cancelCapture()                                                 |
@@ -190,14 +211,15 @@ Cancel pending image capture requests.
 
 | 
 
+.. _sdk_qtmultimedia_cameracapture_capture-method:
+
 +--------------------------------------------------------------------------+
 |        \ capture()                                                       |
 +--------------------------------------------------------------------------+
 
 Start image capture. The
-`imageCaptured </sdk/apps/qml/QtMultimedia/CameraCapture#imageCaptured-signal>`__
-and
-`imageSaved </sdk/apps/qml/QtMultimedia/CameraCapture#imageSaved-signal>`__
+:ref:`imageCaptured <sdk_qtmultimedia_cameracapture#imageCaptured-signal>`
+and :ref:`imageSaved <sdk_qtmultimedia_cameracapture#imageSaved-signal>`
 signals will be emitted when the capture is complete.
 
 The image will be captured to the default system location, typically
@@ -216,14 +238,15 @@ imageSaved() signals.
 
 | 
 
+.. _sdk_qtmultimedia_cameracapture_captureToLocation-method:
+
 +--------------------------------------------------------------------------+
 |        \ captureToLocation(location)                                     |
 +--------------------------------------------------------------------------+
 
 Start image capture to specified *location*. The
-`imageCaptured </sdk/apps/qml/QtMultimedia/CameraCapture#imageCaptured-signal>`__
-and
-`imageSaved </sdk/apps/qml/QtMultimedia/CameraCapture#imageSaved-signal>`__
+:ref:`imageCaptured <sdk_qtmultimedia_cameracapture#imageCaptured-signal>`
+and :ref:`imageSaved <sdk_qtmultimedia_cameracapture#imageSaved-signal>`
 signals will be emitted when the capture is complete.
 
 CameraCapture::captureToLocation returns the capture requestId
@@ -231,14 +254,15 @@ parameter, used with imageExposed(), imageCaptured(),
 imageMetadataAvailable() and imageSaved() signals.
 
 If the application is unable to write to the location specified by
-``location`` the
-`CameraCapture </sdk/apps/qml/QtMultimedia/CameraCapture/>`__ will emit
-an error. The most likely reasons for the application to be unable to
-write to a location is that the path is wrong and the location does not
-exists, or the application does not have write permission for that
+:ref:``location`` the `CameraCapture <sdk_qtmultimedia_cameracapture>` will
+emit an error. The most likely reasons for the application to be unable
+to write to a location is that the path is wrong and the location does
+not exists, or the application does not have write permission for that
 location.
 
 | 
+
+.. _sdk_qtmultimedia_cameracapture_setMetadata-method:
 
 +--------------------------------------------------------------------------+
 |        \ setMetadata(key, value)                                         |

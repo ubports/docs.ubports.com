@@ -1,77 +1,81 @@
+.. _sdk_qtquick_multipointtoucharea:
+QtQuick MultiPointTouchArea
+===========================
+
 Enables handling of multiple touch points
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtQuick 2.4                   |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Item </sdk/apps/qml/QtQuick/Item/>` |
-|                                      | __                                   |
+| Inherits:                            | :ref:`Item <sdk_qtquick_item>`       |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`maximumTouchPoints </sdk/apps/qml/QtQuick/MultiPointTouchArea#maximumTouchPoints-prop>`__****
+-  :ref:`maximumTouchPoints <sdk_qtquick_multipointtoucharea_maximumTouchPoints-prop>`
    : int
--  ****`minimumTouchPoints </sdk/apps/qml/QtQuick/MultiPointTouchArea#minimumTouchPoints-prop>`__****
+-  :ref:`minimumTouchPoints <sdk_qtquick_multipointtoucharea_minimumTouchPoints-prop>`
    : int
--  ****`mouseEnabled </sdk/apps/qml/QtQuick/MultiPointTouchArea#mouseEnabled-prop>`__****
+-  :ref:`mouseEnabled <sdk_qtquick_multipointtoucharea_mouseEnabled-prop>`
    : bool
--  ****`touchPoints </sdk/apps/qml/QtQuick/MultiPointTouchArea#touchPoints-prop>`__****
+-  :ref:`touchPoints <sdk_qtquick_multipointtoucharea_touchPoints-prop>`
    : list<TouchPoint>
 
 Signals
 -------
 
--  ****`canceled </sdk/apps/qml/QtQuick/MultiPointTouchArea#canceled-signal>`__****\ (list<TouchPoint>
+-  :ref:`canceled <sdk_qtquick_multipointtoucharea_canceled-signal>`\ (list<TouchPoint>
    *touchPoints*)
--  ****`gestureStarted </sdk/apps/qml/QtQuick/MultiPointTouchArea#gestureStarted-signal>`__****\ (GestureEvent
+-  :ref:`gestureStarted <sdk_qtquick_multipointtoucharea_gestureStarted-signal>`\ (GestureEvent
    *gesture*)
--  ****`pressed </sdk/apps/qml/QtQuick/MultiPointTouchArea#pressed-signal>`__****\ (list<TouchPoint>
+-  :ref:`pressed <sdk_qtquick_multipointtoucharea_pressed-signal>`\ (list<TouchPoint>
    *touchPoints*)
--  ****`released </sdk/apps/qml/QtQuick/MultiPointTouchArea#released-signal>`__****\ (list<TouchPoint>
+-  :ref:`released <sdk_qtquick_multipointtoucharea_released-signal>`\ (list<TouchPoint>
    *touchPoints*)
--  ****`touchUpdated </sdk/apps/qml/QtQuick/MultiPointTouchArea#touchUpdated-signal>`__****\ (list<TouchPoint>
+-  :ref:`touchUpdated <sdk_qtquick_multipointtoucharea_touchUpdated-signal>`\ (list<TouchPoint>
    *touchPoints*)
--  ****`updated </sdk/apps/qml/QtQuick/MultiPointTouchArea#updated-signal>`__****\ (list<TouchPoint>
+-  :ref:`updated <sdk_qtquick_multipointtoucharea_updated-signal>`\ (list<TouchPoint>
    *touchPoints*)
 
 Detailed Description
 --------------------
 
-A `MultiPointTouchArea </sdk/apps/qml/QtQuick/MultiPointTouchArea/>`__
-is an invisible item that is used to track multiple touch points.
+A :ref:`MultiPointTouchArea <sdk_qtquick_multipointtoucharea>` is an
+invisible item that is used to track multiple touch points.
 
-The `Item::enabled </sdk/apps/qml/QtQuick/Item#enabled-prop>`__ property
-is used to enable and disable touch handling. When disabled, the touch
-area becomes transparent to mouse and touch events.
+The :ref:`Item::enabled <sdk_qtquick_item#enabled-prop>` property is used
+to enable and disable touch handling. When disabled, the touch area
+becomes transparent to mouse and touch events.
 
 By default, the mouse will be handled the same way as a single touch
 point, and items under the touch area will not receive mouse events
 because the touch area is handling them. But if the
-`mouseEnabled </sdk/apps/qml/QtQuick/MultiPointTouchArea#mouseEnabled-prop>`__
+:ref:`mouseEnabled <sdk_qtquick_multipointtoucharea#mouseEnabled-prop>`
 property is set to false, it becomes transparent to mouse events so that
 another mouse-sensitive Item (such as a
-`MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__) can be used to handle
-mouse interaction separately.
+:ref:`MouseArea <sdk_qtquick_mousearea>`) can be used to handle mouse
+interaction separately.
 
-`MultiPointTouchArea </sdk/apps/qml/QtQuick/MultiPointTouchArea/>`__ can
-be used in two ways:
+:ref:`MultiPointTouchArea <sdk_qtquick_multipointtoucharea>` can be used in
+two ways:
 
 -  setting ``touchPoints`` to provide touch point objects with
    properties that can be bound to
 -  using the onTouchUpdated or onPressed, onUpdated and onReleased
    handlers
 
-While a
-`MultiPointTouchArea </sdk/apps/qml/QtQuick/MultiPointTouchArea/>`__
-*can* take exclusive ownership of certain touch points, it is also
-possible to have multiple MultiPointTouchAreas active at the same time,
-each operating on a different set of touch points.
+While a :ref:`MultiPointTouchArea <sdk_qtquick_multipointtoucharea>` *can*
+take exclusive ownership of certain touch points, it is also possible to
+have multiple MultiPointTouchAreas active at the same time, each
+operating on a different set of touch points.
 
-**See also** `TouchPoint </sdk/apps/qml/QtQuick/TouchPoint/>`__.
+**See also** :ref:`TouchPoint <sdk_qtquick_touchpoint>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_multipointtoucharea_maximumTouchPoints-prop:
 
 +--------------------------------------------------------------------------+
 |        \ maximumTouchPoints : int                                        |
@@ -86,14 +90,15 @@ handling three finger touches.
 
 By default, all touch points within the touch area are handled.
 
-If
-`mouseEnabled </sdk/apps/qml/QtQuick/MultiPointTouchArea#mouseEnabled-prop>`__
+If :ref:`mouseEnabled <sdk_qtquick_multipointtoucharea#mouseEnabled-prop>`
 is true, the mouse acts as a touch point, so it is also subject to these
 constraints: for example if maximumTouchPoints is two, you can use the
 mouse as one touch point and a finger as another touch point for a total
 of two.
 
 | 
+
+.. _sdk_qtquick_multipointtoucharea_minimumTouchPoints-prop:
 
 +--------------------------------------------------------------------------+
 |        \ minimumTouchPoints : int                                        |
@@ -108,39 +113,40 @@ handling three finger touches.
 
 By default, all touch points within the touch area are handled.
 
-If
-`mouseEnabled </sdk/apps/qml/QtQuick/MultiPointTouchArea#mouseEnabled-prop>`__
+If :ref:`mouseEnabled <sdk_qtquick_multipointtoucharea#mouseEnabled-prop>`
 is true, the mouse acts as a touch point, so it is also subject to these
 constraints: for example if
-`maximumTouchPoints </sdk/apps/qml/QtQuick/MultiPointTouchArea#maximumTouchPoints-prop>`__
+:ref:`maximumTouchPoints <sdk_qtquick_multipointtoucharea#maximumTouchPoints-prop>`
 is two, you can use the mouse as one touch point and a finger as another
 touch point for a total of two.
 
 | 
+
+.. _sdk_qtquick_multipointtoucharea_mouseEnabled-prop:
 
 +--------------------------------------------------------------------------+
 |        \ mouseEnabled : bool                                             |
 +--------------------------------------------------------------------------+
 
 This property controls whether the
-`MultiPointTouchArea </sdk/apps/qml/QtQuick/MultiPointTouchArea/>`__
-will handle mouse events too. If it is true (the default), the touch
-area will treat the mouse the same as a single touch point; if it is
-false, the touch area will ignore mouse events and allow them to "pass
-through" so that they can be handled by other items underneath.
+:ref:`MultiPointTouchArea <sdk_qtquick_multipointtoucharea>` will handle
+mouse events too. If it is true (the default), the touch area will treat
+the mouse the same as a single touch point; if it is false, the touch
+area will ignore mouse events and allow them to "pass through" so that
+they can be handled by other items underneath.
 
 | 
 
+.. _sdk_qtquick_multipointtoucharea_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ touchPoints :                                                   |
-| list<`TouchPoint </sdk/apps/qml/QtQuick/TouchPoint/>`__>                 |
+| :ref:` <>`\ touchPoints : list<`TouchPoint <sdk_qtquick_touchpoint>`>     |
 +--------------------------------------------------------------------------+
 
 This property holds a set of user-defined touch point objects that can
 be bound to.
 
-If
-`mouseEnabled </sdk/apps/qml/QtQuick/MultiPointTouchArea#mouseEnabled-prop>`__
+If :ref:`mouseEnabled <sdk_qtquick_multipointtoucharea#mouseEnabled-prop>`
 is true (the default) and the left mouse button is pressed while the
 mouse is over the touch area, the current mouse position will be one of
 these touch points.
@@ -176,16 +182,17 @@ touch points.
 
 By default this property holds an empty list.
 
-**See also** `TouchPoint </sdk/apps/qml/QtQuick/TouchPoint/>`__.
+**See also** :ref:`TouchPoint <sdk_qtquick_touchpoint>`.
 
 | 
 
 Signal Documentation
 --------------------
 
+.. _sdk_qtquick_multipointtoucharea_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ canceled(list<`TouchPoint </sdk/apps/qml/QtQuick/TouchPoint/>`_ |
-| _>                                                                       |
+| :ref:` <>`\ canceled(list<`TouchPoint <sdk_qtquick_touchpoint>`>          |
 | *touchPoints*)                                                           |
 +--------------------------------------------------------------------------+
 
@@ -193,28 +200,29 @@ This signal is emitted when new touch events have been canceled because
 another item stole the touch event handling.
 
 This signal is for advanced use: it is useful when there is more than
-one `MultiPointTouchArea </sdk/apps/qml/QtQuick/MultiPointTouchArea/>`__
-that is handling input, or when there is a
-`MultiPointTouchArea </sdk/apps/qml/QtQuick/MultiPointTouchArea/>`__
-inside a
-`Flickable </sdk/apps/qml/QtQuick/touchinteraction#flickable>`__. In the
-latter case, if you execute some logic in the ``onPressed`` signal
+one :ref:`MultiPointTouchArea <sdk_qtquick_multipointtoucharea>` that is
+handling input, or when there is a
+:ref:`MultiPointTouchArea <sdk_qtquick_multipointtoucharea>` inside a
+`Flickable </sdk/apps/qml/QtQuick/touchinteraction/#flickable>`_ . In
+the latter case, if you execute some logic in the ``onPressed`` signal
 handler and then start dragging, the
-`Flickable </sdk/apps/qml/QtQuick/touchinteraction#flickable>`__ may
+`Flickable </sdk/apps/qml/QtQuick/touchinteraction/#flickable>`_  may
 steal the touch handling from the
-`MultiPointTouchArea </sdk/apps/qml/QtQuick/MultiPointTouchArea/>`__. In
-these cases, to reset the logic when the
-`MultiPointTouchArea </sdk/apps/qml/QtQuick/MultiPointTouchArea/>`__ has
-lost the touch handling to the
-`Flickable </sdk/apps/qml/QtQuick/touchinteraction#flickable>`__,
+:ref:`MultiPointTouchArea <sdk_qtquick_multipointtoucharea>`. In these
+cases, to reset the logic when the
+:ref:`MultiPointTouchArea <sdk_qtquick_multipointtoucharea>` has lost the
+touch handling to the
+`Flickable </sdk/apps/qml/QtQuick/touchinteraction/#flickable>`_ ,
 ``canceled`` should be handled in addition to
-`released </sdk/apps/qml/QtQuick/MultiPointTouchArea#released-signal>`__.
+:ref:`released <sdk_qtquick_multipointtoucharea#released-signal>`.
 
 *touchPoints* is the list of canceled points.
 
 The corresponding handler is ``onCanceled``.
 
 | 
+
+.. _sdk_qtquick_multipointtoucharea_gestureStarted(GestureEvent *gesture*)-prop:
 
 +--------------------------------------------------------------------------+
 |        \ gestureStarted(GestureEvent *gesture*)                          |
@@ -223,14 +231,14 @@ The corresponding handler is ``onCanceled``.
 This signal is emitted when the global drag threshold has been reached.
 
 This signal is typically used when a
-`MultiPointTouchArea </sdk/apps/qml/QtQuick/MultiPointTouchArea/>`__ has
-been nested in a Flickable or another
-`MultiPointTouchArea </sdk/apps/qml/QtQuick/MultiPointTouchArea/>`__.
-When the threshold has been reached and the signal is handled, you can
-determine whether or not the touch area should grab the current touch
-points. By default they will not be grabbed; to grab them call
-``gesture.grab()``. If the gesture is not grabbed, the nesting
-Flickable, for example, would also have an opportunity to grab.
+:ref:`MultiPointTouchArea <sdk_qtquick_multipointtoucharea>` has been
+nested in a Flickable or another
+:ref:`MultiPointTouchArea <sdk_qtquick_multipointtoucharea>`. When the
+threshold has been reached and the signal is handled, you can determine
+whether or not the touch area should grab the current touch points. By
+default they will not be grabbed; to grab them call ``gesture.grab()``.
+If the gesture is not grabbed, the nesting Flickable, for example, would
+also have an opportunity to grab.
 
 The gesture object also includes information on the current set of
 ``touchPoints`` and the ``dragThreshold``.
@@ -239,9 +247,10 @@ The corresponding handler is ``onGestureStarted``.
 
 | 
 
+.. _sdk_qtquick_multipointtoucharea_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ pressed(list<`TouchPoint </sdk/apps/qml/QtQuick/TouchPoint/>`__ |
-| >                                                                        |
+| :ref:` <>`\ pressed(list<`TouchPoint <sdk_qtquick_touchpoint>`>           |
 | *touchPoints*)                                                           |
 +--------------------------------------------------------------------------+
 
@@ -249,7 +258,7 @@ This signal is emitted when new touch points are added. *touchPoints* is
 a list of these new points.
 
 If
-`minimumTouchPoints </sdk/apps/qml/QtQuick/MultiPointTouchArea#minimumTouchPoints-prop>`__
+:ref:`minimumTouchPoints <sdk_qtquick_multipointtoucharea#minimumTouchPoints-prop>`
 is set to a value greater than one, this signal will not be emitted
 until the minimum number of required touch points has been reached.
 
@@ -257,9 +266,10 @@ The corresponding handler is ``onPressed``.
 
 | 
 
+.. _sdk_qtquick_multipointtoucharea_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ released(list<`TouchPoint </sdk/apps/qml/QtQuick/TouchPoint/>`_ |
-| _>                                                                       |
+| :ref:` <>`\ released(list<`TouchPoint <sdk_qtquick_touchpoint>`>          |
 | *touchPoints*)                                                           |
 +--------------------------------------------------------------------------+
 
@@ -270,25 +280,27 @@ The corresponding handler is ``onReleased``.
 
 | 
 
+.. _sdk_qtquick_multipointtoucharea_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ touchUpdated(list<`TouchPoint </sdk/apps/qml/QtQuick/TouchPoint |
-| />`__>                                                                   |
+| :ref:` <>`\ touchUpdated(list<`TouchPoint <sdk_qtquick_touchpoint>`>      |
 | *touchPoints*)                                                           |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the touch points handled by the
-`MultiPointTouchArea </sdk/apps/qml/QtQuick/MultiPointTouchArea/>`__
-change. This includes adding new touch points, removing or canceling
-previous touch points, as well as updating current touch point data.
-*touchPoints* is the list of all current touch points.
+:ref:`MultiPointTouchArea <sdk_qtquick_multipointtoucharea>` change. This
+includes adding new touch points, removing or canceling previous touch
+points, as well as updating current touch point data. *touchPoints* is
+the list of all current touch points.
 
 The corresponding handler is ``onTouchUpdated``.
 
 | 
 
+.. _sdk_qtquick_multipointtoucharea_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ updated(list<`TouchPoint </sdk/apps/qml/QtQuick/TouchPoint/>`__ |
-| >                                                                        |
+| :ref:` <>`\ updated(list<`TouchPoint <sdk_qtquick_touchpoint>`>           |
 | *touchPoints*)                                                           |
 +--------------------------------------------------------------------------+
 

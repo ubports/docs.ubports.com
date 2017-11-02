@@ -1,31 +1,34 @@
+.. _sdk_qtfeedback_hapticseffect:
+QtFeedback HapticsEffect
+========================
+
 The HapticsEffect element represents a custom haptic feedback effect.
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import .                             |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `FeedbackEffect </sdk/apps/qml/QtFee |
-|                                      | dback/FeedbackEffect/>`__            |
+| Inherits:                            | :ref:`FeedbackEffect <sdk_qtfeedback_feed |
+|                                      | backeffect>`_                        |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`actuator </sdk/apps/qml/QtFeedback/hapticseffect#actuator-prop>`__****
-   : Actuator
--  ****`attackIntensity </sdk/apps/qml/QtFeedback/hapticseffect#attackIntensity-prop>`__****
+-  :ref:`actuator <sdk_qtfeedback_hapticseffect_actuator-prop>` :
+   Actuator
+-  :ref:`attackIntensity <sdk_qtfeedback_hapticseffect_attackIntensity-prop>`
    : double
--  ****`attackTime </sdk/apps/qml/QtFeedback/hapticseffect#attackTime-prop>`__****
+-  :ref:`attackTime <sdk_qtfeedback_hapticseffect_attackTime-prop>`
    : int
--  ****`availableActuators </sdk/apps/qml/QtFeedback/hapticseffect#availableActuators-prop>`__****
+-  :ref:`availableActuators <sdk_qtfeedback_hapticseffect_availableActuators-prop>`
    : list<Actuator>
--  ****`fadeIntensity </sdk/apps/qml/QtFeedback/hapticseffect#fadeIntensity-prop>`__****
+-  :ref:`fadeIntensity <sdk_qtfeedback_hapticseffect_fadeIntensity-prop>`
    : double
--  ****`fadeTime </sdk/apps/qml/QtFeedback/hapticseffect#fadeTime-prop>`__****
-   : int
--  ****`intensity </sdk/apps/qml/QtFeedback/hapticseffect#intensity-prop>`__****
-   : double
--  ****`period </sdk/apps/qml/QtFeedback/hapticseffect#period-prop>`__****
-   : int
+-  :ref:`fadeTime <sdk_qtfeedback_hapticseffect_fadeTime-prop>` :
+   int
+-  :ref:`intensity <sdk_qtfeedback_hapticseffect_intensity-prop>` :
+   double
+-  :ref:`period <sdk_qtfeedback_hapticseffect_period-prop>` : int
 
 Detailed Description
 --------------------
@@ -54,15 +57,19 @@ This class closely corresponds to the C++ QFeedbackHapticsEffect class.
 Property Documentation
 ----------------------
 
+.. _sdk_qtfeedback_hapticseffect_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ actuator : `Actuator </sdk/apps/qml/QtFeedback/actuator/>`__    |
+| :ref:` <>`\ actuator : `Actuator <sdk_qtfeedback_actuator>`            |
 +--------------------------------------------------------------------------+
 
 The actuator that is used for playing this effect.
 
-**See also** `Actuator </sdk/apps/qml/QtFeedback/actuator/>`__.
+**See also** :ref:`Actuator <sdk_qtfeedback_actuator>`.
 
 | 
+
+.. _sdk_qtfeedback_hapticseffect_attackIntensity-prop:
 
 +--------------------------------------------------------------------------+
 |        \ attackIntensity : double                                        |
@@ -73,6 +80,8 @@ The intensity of the attack (fade-in) part of the haptics effect, from
 
 | 
 
+.. _sdk_qtfeedback_hapticseffect_attackTime-prop:
+
 +--------------------------------------------------------------------------+
 |        \ attackTime : int                                                |
 +--------------------------------------------------------------------------+
@@ -81,17 +90,21 @@ The duration of the attack (fade-in) part of the haptics effect.
 
 | 
 
+.. _sdk_qtfeedback_hapticseffect_availableActuators-prop:
+
 +--------------------------------------------------------------------------+
 |        \ availableActuators :                                            |
-| list<`Actuator </sdk/apps/qml/QtFeedback/actuator/>`__>                  |
+| list<:ref:`Actuator <sdk_qtfeedback_actuator>`>                             |
 +--------------------------------------------------------------------------+
 
 This property holds a list of available actuators. This property is read
 only.
 
-**See also** `Actuator </sdk/apps/qml/QtFeedback/actuator/>`__.
+**See also** :ref:`Actuator <sdk_qtfeedback_actuator>`.
 
 | 
+
+.. _sdk_qtfeedback_hapticseffect_fadeIntensity-prop:
 
 +--------------------------------------------------------------------------+
 |        \ fadeIntensity : double                                          |
@@ -102,6 +115,8 @@ The intensity of the fade-out part of the haptics effect, from 0.0 to
 
 | 
 
+.. _sdk_qtfeedback_hapticseffect_fadeTime-prop:
+
 +--------------------------------------------------------------------------+
 |        \ fadeTime : int                                                  |
 +--------------------------------------------------------------------------+
@@ -110,6 +125,8 @@ The duration of the fade-out part of the haptics effect.
 
 | 
 
+.. _sdk_qtfeedback_hapticseffect_intensity-prop:
+
 +--------------------------------------------------------------------------+
 |        \ intensity : double                                              |
 +--------------------------------------------------------------------------+
@@ -117,6 +134,8 @@ The duration of the fade-out part of the haptics effect.
 The intensity of the main part of the haptics effect, from 0.0 to 1.0.
 
 | 
+
+.. _sdk_qtfeedback_hapticseffect_period-prop:
 
 +--------------------------------------------------------------------------+
 |        \ period : int                                                    |

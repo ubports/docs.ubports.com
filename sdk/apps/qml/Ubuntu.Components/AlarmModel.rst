@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_alarmmodel:
+Ubuntu.Components AlarmModel
+============================
+
 AlarmModel holds the list of alarms defined.
 
 +---------------------+--------------------------------+
@@ -7,28 +11,27 @@ AlarmModel holds the list of alarms defined.
 Properties
 ----------
 
--  ****`count </sdk/apps/qml/Ubuntu.Components/AlarmModel#count-prop>`__****
-   : int
+-  :ref:`count <sdk_ubuntu_components_alarmmodel_count-prop>` : int
 
 Methods
 -------
 
 -  Alarm
-   ****`get </sdk/apps/qml/Ubuntu.Components/AlarmModel#get-method>`__****\ (int
+   **:ref:`get <sdk_ubuntu_components_alarmmodel#get-method>`**\ (int
    *index*)
--  ****`refresh </sdk/apps/qml/Ubuntu.Components/AlarmModel#refresh-method>`__****\ ()
+-  :ref:`refresh <sdk_ubuntu_components_alarmmodel_refresh-method>`\ ()
 
 Detailed Description
 --------------------
 
-The `AlarmModel </sdk/apps/qml/Ubuntu.Components/AlarmModel/>`__ is a
-simple container of `Alarm </sdk/apps/qml/Ubuntu.Components/Alarm/>`__
-definitions stored in the alarm collection. The data provided by the
-model are read only, adding, modifying or removing data is only possible
-through `Alarm </sdk/apps/qml/Ubuntu.Components/Alarm/>`__ functions.
-Any modification on the alarms or any new alarm added to the collection
-will refresh all the model instances. This also means that the delegates
-visualizing the model elements will also be re-created.
+The :ref:`AlarmModel <sdk_ubuntu_components_alarmmodel>` is a simple
+container of :ref:`Alarm <sdk_ubuntu_components_alarm>` definitions stored
+in the alarm collection. The data provided by the model are read only,
+adding, modifying or removing data is only possible through
+:ref:`Alarm <sdk_ubuntu_components_alarm>` functions. Any modification on
+the alarms or any new alarm added to the collection will refresh all the
+model instances. This also means that the delegates visualizing the
+model elements will also be re-created.
 
 Example usage:
 
@@ -48,12 +51,12 @@ Example usage:
     }
 
 The model defines the same roles as the
-`Alarm </sdk/apps/qml/Ubuntu.Components/Alarm/>`__ properties. Note that
-the use of *enabled* role in delegates may be ambiguous. Therefore the
-model defines the additional role called *model*, which represents the
-`Alarm </sdk/apps/qml/Ubuntu.Components/Alarm/>`__ object from the index
-the delegate is showing the data, so the *enabled* role can then be
-accessed by simply dereferencing the model i.e. model.enabled.
+:ref:`Alarm <sdk_ubuntu_components_alarm>` properties. Note that the use of
+*enabled* role in delegates may be ambiguous. Therefore the model
+defines the additional role called *model*, which represents the
+:ref:`Alarm <sdk_ubuntu_components_alarm>` object from the index the
+delegate is showing the data, so the *enabled* role can then be accessed
+by simply dereferencing the model i.e. model.enabled.
 
 Example:
 
@@ -70,14 +73,13 @@ Example:
     }
 
 The number of alarm events can be obtained from the
-`count </sdk/apps/qml/Ubuntu.Components/AlarmModel#count-prop>`__
-property. To get a specific alarm event data from the model, use the
-`get() </sdk/apps/qml/Ubuntu.Components/AlarmModel#get-method>`__
-function.
+:ref:`count <sdk_ubuntu_components_alarmmodel#count-prop>` property. To get
+a specific alarm event data from the model, use the
+:ref:`get() <sdk_ubuntu_components_alarmmodel#get-method>` function.
 
-As the `get() </sdk/apps/qml/Ubuntu.Components/AlarmModel#get-method>`__
-function returns the alarm object from the given index. Combined with
-the alarm functions the alarms can be updated in place.
+As the :ref:`get() <sdk_ubuntu_components_alarmmodel#get-method>` function
+returns the alarm object from the given index. Combined with the alarm
+functions the alarms can be updated in place.
 
 Example:
 
@@ -128,6 +130,8 @@ same result:
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_alarmmodel_count-prop:
+
 +--------------------------------------------------------------------------+
 |        \ count : int                                                     |
 +--------------------------------------------------------------------------+
@@ -139,9 +143,10 @@ The number of data entries in the model.
 Method Documentation
 --------------------
 
+.. _sdk_ubuntu_components_alarmmodel_-method:
+
 +--------------------------------------------------------------------------+
-|        \ `Alarm </sdk/apps/qml/Ubuntu.Components/Alarm/>`__ get(int      |
-| *index*)                                                                 |
+| :ref:` <>`\ `Alarm <sdk_ubuntu_components_alarm>` get(int *index*)        |
 +--------------------------------------------------------------------------+
 
 Returns the reference of the alarm event at *index* in the model. This
@@ -170,13 +175,14 @@ code will not update the alarm in the model/collection:
 
 **Note:** The returned object is not guarantied to remain valid, it
 should not be used in property bindings. Also,
-`reset() </sdk/apps/qml/Ubuntu.Components/Alarm#reset-method>`__ should
-not be called either as the call will clear the alarm data from the
-cache.
+:ref:`reset() <sdk_ubuntu_components_alarm#reset-method>` should not be
+called either as the call will clear the alarm data from the cache.
 
-**See also** `Alarm </sdk/apps/qml/Ubuntu.Components/Alarm/>`__.
+**See also** :ref:`Alarm <sdk_ubuntu_components_alarm>`.
 
 | 
+
+.. _sdk_ubuntu_components_alarmmodel_refresh-method:
 
 +--------------------------------------------------------------------------+
 |        \ refresh()                                                       |

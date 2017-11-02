@@ -1,3 +1,7 @@
+.. _sdk_qtquick_qml_dynamic_view_ordering_tutorial_2_-_dragging_view_items:
+QtQuick QML Dynamic View Ordering Tutorial 2 - Dragging View Items
+==================================================================
+
 
 
 Now that we have a visible list of items we want to be able to interact
@@ -54,9 +58,9 @@ this:
    :name: walkthrough
 
 The major change here is the root item of the delegate is now a
-`MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ which provides handlers
-for mouse events and will allow us to drag the delegate's content item.
-It also acts as a container for the content item which is important as a
+:ref:`MouseArea <sdk_qtquick_mousearea>` which provides handlers for mouse
+events and will allow us to drag the delegate's content item. It also
+acts as a container for the content item which is important as a
 delegate's root item is positioned by the view and cannot be moved by
 other means.
 
@@ -77,17 +81,16 @@ other means.
             }
 
 Dragging the content item is enabled by binding it to the
-`MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__'s
-`drag.target </sdk/apps/qml/QtQuick/MouseArea#drag.target-prop>`__
-property. Because we still want the view to be flickable we wait until
-the `MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__'s
-`pressAndHold </sdk/apps/qml/QtQuick/MouseArea#pressAndHold-signal>`__
-signal is emitted before binding the drag target. This way when mouse
-moves before the hold timeout has expired it is interpreted as moving
-the list and if it moves after it is interpreted as dragging an item. To
-make it more obvious to the user when an item can be dragged we'll
-change the background color of the content item when the timeout has
-expired.
+:ref:`MouseArea <sdk_qtquick_mousearea>`'s
+:ref:`drag.target <sdk_qtquick_mousearea#drag.target-prop>` property.
+Because we still want the view to be flickable we wait until the
+:ref:`MouseArea <sdk_qtquick_mousearea>`'s
+:ref:`pressAndHold <sdk_qtquick_mousearea#pressAndHold-signal>` signal is
+emitted before binding the drag target. This way when mouse moves before
+the hold timeout has expired it is interpreted as moving the list and if
+it moves after it is interpreted as dragging an item. To make it more
+obvious to the user when an item can be dragged we'll change the
+background color of the content item when the timeout has expired.
 
 .. code:: qml
 
@@ -119,6 +122,6 @@ Files:
 -  tutorials/dynamicview/dynamicview2/dynamicview2.qmlproject
 
 `QML Dynamic View Ordering Tutorial 1 - A Simple ListView and
-Delegate </sdk/apps/qml/QtQuick/tutorials-dynamicview-dynamicview1/>`__
+Delegate </sdk/apps/qml/QtQuick/tutorials-dynamicview-dynamicview1/>`_ 
 `QML Dynamic View Ordering Tutorial 3 - Moving Dragged
-Items </sdk/apps/qml/QtQuick/tutorials-dynamicview-dynamicview3/>`__
+Items </sdk/apps/qml/QtQuick/tutorials-dynamicview-dynamicview3/>`_ 

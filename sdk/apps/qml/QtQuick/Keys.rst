@@ -1,3 +1,7 @@
+.. _sdk_qtquick_keys:
+QtQuick Keys
+============
+
 Provides key handling to Items
 
 +---------------------+----------------------+
@@ -7,92 +11,91 @@ Provides key handling to Items
 Properties
 ----------
 
--  ****`enabled </sdk/apps/qml/QtQuick/Keys#enabled-prop>`__**** : bool
--  ****`forwardTo </sdk/apps/qml/QtQuick/Keys#forwardTo-prop>`__**** :
+-  :ref:`enabled <sdk_qtquick_keys_enabled-prop>` : bool
+-  :ref:`forwardTo <sdk_qtquick_keys_forwardTo-prop>` :
    list<Object>
--  ****`priority </sdk/apps/qml/QtQuick/Keys#priority-prop>`__**** :
-   enumeration
+-  :ref:`priority <sdk_qtquick_keys_priority-prop>` : enumeration
 
 Signals
 -------
 
--  ****`asteriskPressed </sdk/apps/qml/QtQuick/Keys#asteriskPressed-signal>`__****\ (KeyEvent
+-  :ref:`asteriskPressed <sdk_qtquick_keys_asteriskPressed-signal>`\ (KeyEvent
    *event*)
--  ****`backPressed </sdk/apps/qml/QtQuick/Keys#backPressed-signal>`__****\ (KeyEvent
+-  :ref:`backPressed <sdk_qtquick_keys_backPressed-signal>`\ (KeyEvent
    *event*)
--  ****`backtabPressed </sdk/apps/qml/QtQuick/Keys#backtabPressed-signal>`__****\ (KeyEvent
+-  :ref:`backtabPressed <sdk_qtquick_keys_backtabPressed-signal>`\ (KeyEvent
    *event*)
--  ****`callPressed </sdk/apps/qml/QtQuick/Keys#callPressed-signal>`__****\ (KeyEvent
+-  :ref:`callPressed <sdk_qtquick_keys_callPressed-signal>`\ (KeyEvent
    *event*)
--  ****`cancelPressed </sdk/apps/qml/QtQuick/Keys#cancelPressed-signal>`__****\ (KeyEvent
+-  :ref:`cancelPressed <sdk_qtquick_keys_cancelPressed-signal>`\ (KeyEvent
    *event*)
--  ****`context1Pressed </sdk/apps/qml/QtQuick/Keys#context1Pressed-signal>`__****\ (KeyEvent
+-  :ref:`context1Pressed <sdk_qtquick_keys_context1Pressed-signal>`\ (KeyEvent
    *event*)
--  ****`context2Pressed </sdk/apps/qml/QtQuick/Keys#context2Pressed-signal>`__****\ (KeyEvent
+-  :ref:`context2Pressed <sdk_qtquick_keys_context2Pressed-signal>`\ (KeyEvent
    *event*)
--  ****`context3Pressed </sdk/apps/qml/QtQuick/Keys#context3Pressed-signal>`__****\ (KeyEvent
+-  :ref:`context3Pressed <sdk_qtquick_keys_context3Pressed-signal>`\ (KeyEvent
    *event*)
--  ****`context4Pressed </sdk/apps/qml/QtQuick/Keys#context4Pressed-signal>`__****\ (KeyEvent
+-  :ref:`context4Pressed <sdk_qtquick_keys_context4Pressed-signal>`\ (KeyEvent
    *event*)
--  ****`deletePressed </sdk/apps/qml/QtQuick/Keys#deletePressed-signal>`__****\ (KeyEvent
+-  :ref:`deletePressed <sdk_qtquick_keys_deletePressed-signal>`\ (KeyEvent
    *event*)
--  ****`digit0Pressed </sdk/apps/qml/QtQuick/Keys#digit0Pressed-signal>`__****\ (KeyEvent
+-  :ref:`digit0Pressed <sdk_qtquick_keys_digit0Pressed-signal>`\ (KeyEvent
    *event*)
--  ****`digit1Pressed </sdk/apps/qml/QtQuick/Keys#digit1Pressed-signal>`__****\ (KeyEvent
+-  :ref:`digit1Pressed <sdk_qtquick_keys_digit1Pressed-signal>`\ (KeyEvent
    *event*)
--  ****`digit2Pressed </sdk/apps/qml/QtQuick/Keys#digit2Pressed-signal>`__****\ (KeyEvent
+-  :ref:`digit2Pressed <sdk_qtquick_keys_digit2Pressed-signal>`\ (KeyEvent
    *event*)
--  ****`digit3Pressed </sdk/apps/qml/QtQuick/Keys#digit3Pressed-signal>`__****\ (KeyEvent
+-  :ref:`digit3Pressed <sdk_qtquick_keys_digit3Pressed-signal>`\ (KeyEvent
    *event*)
--  ****`digit4Pressed </sdk/apps/qml/QtQuick/Keys#digit4Pressed-signal>`__****\ (KeyEvent
+-  :ref:`digit4Pressed <sdk_qtquick_keys_digit4Pressed-signal>`\ (KeyEvent
    *event*)
--  ****`digit5Pressed </sdk/apps/qml/QtQuick/Keys#digit5Pressed-signal>`__****\ (KeyEvent
+-  :ref:`digit5Pressed <sdk_qtquick_keys_digit5Pressed-signal>`\ (KeyEvent
    *event*)
--  ****`digit6Pressed </sdk/apps/qml/QtQuick/Keys#digit6Pressed-signal>`__****\ (KeyEvent
+-  :ref:`digit6Pressed <sdk_qtquick_keys_digit6Pressed-signal>`\ (KeyEvent
    *event*)
--  ****`digit7Pressed </sdk/apps/qml/QtQuick/Keys#digit7Pressed-signal>`__****\ (KeyEvent
+-  :ref:`digit7Pressed <sdk_qtquick_keys_digit7Pressed-signal>`\ (KeyEvent
    *event*)
--  ****`digit8Pressed </sdk/apps/qml/QtQuick/Keys#digit8Pressed-signal>`__****\ (KeyEvent
+-  :ref:`digit8Pressed <sdk_qtquick_keys_digit8Pressed-signal>`\ (KeyEvent
    *event*)
--  ****`digit9Pressed </sdk/apps/qml/QtQuick/Keys#digit9Pressed-signal>`__****\ (KeyEvent
+-  :ref:`digit9Pressed <sdk_qtquick_keys_digit9Pressed-signal>`\ (KeyEvent
    *event*)
--  ****`downPressed </sdk/apps/qml/QtQuick/Keys#downPressed-signal>`__****\ (KeyEvent
+-  :ref:`downPressed <sdk_qtquick_keys_downPressed-signal>`\ (KeyEvent
    *event*)
--  ****`enterPressed </sdk/apps/qml/QtQuick/Keys#enterPressed-signal>`__****\ (KeyEvent
+-  :ref:`enterPressed <sdk_qtquick_keys_enterPressed-signal>`\ (KeyEvent
    *event*)
--  ****`escapePressed </sdk/apps/qml/QtQuick/Keys#escapePressed-signal>`__****\ (KeyEvent
+-  :ref:`escapePressed <sdk_qtquick_keys_escapePressed-signal>`\ (KeyEvent
    *event*)
--  ****`flipPressed </sdk/apps/qml/QtQuick/Keys#flipPressed-signal>`__****\ (KeyEvent
+-  :ref:`flipPressed <sdk_qtquick_keys_flipPressed-signal>`\ (KeyEvent
    *event*)
--  ****`hangupPressed </sdk/apps/qml/QtQuick/Keys#hangupPressed-signal>`__****\ (KeyEvent
+-  :ref:`hangupPressed <sdk_qtquick_keys_hangupPressed-signal>`\ (KeyEvent
    *event*)
--  ****`leftPressed </sdk/apps/qml/QtQuick/Keys#leftPressed-signal>`__****\ (KeyEvent
+-  :ref:`leftPressed <sdk_qtquick_keys_leftPressed-signal>`\ (KeyEvent
    *event*)
--  ****`menuPressed </sdk/apps/qml/QtQuick/Keys#menuPressed-signal>`__****\ (KeyEvent
+-  :ref:`menuPressed <sdk_qtquick_keys_menuPressed-signal>`\ (KeyEvent
    *event*)
--  ****`noPressed </sdk/apps/qml/QtQuick/Keys#noPressed-signal>`__****\ (KeyEvent
+-  :ref:`noPressed <sdk_qtquick_keys_noPressed-signal>`\ (KeyEvent
    *event*)
--  ****`pressed </sdk/apps/qml/QtQuick/Keys#pressed-signal>`__****\ (KeyEvent
+-  :ref:`pressed <sdk_qtquick_keys_pressed-signal>`\ (KeyEvent
    *event*)
--  ****`released </sdk/apps/qml/QtQuick/Keys#released-signal>`__****\ (KeyEvent
+-  :ref:`released <sdk_qtquick_keys_released-signal>`\ (KeyEvent
    *event*)
--  ****`returnPressed </sdk/apps/qml/QtQuick/Keys#returnPressed-signal>`__****\ (KeyEvent
+-  :ref:`returnPressed <sdk_qtquick_keys_returnPressed-signal>`\ (KeyEvent
    *event*)
--  ****`rightPressed </sdk/apps/qml/QtQuick/Keys#rightPressed-signal>`__****\ (KeyEvent
+-  :ref:`rightPressed <sdk_qtquick_keys_rightPressed-signal>`\ (KeyEvent
    *event*)
--  ****`selectPressed </sdk/apps/qml/QtQuick/Keys#selectPressed-signal>`__****\ (KeyEvent
+-  :ref:`selectPressed <sdk_qtquick_keys_selectPressed-signal>`\ (KeyEvent
    *event*)
--  ****`spacePressed </sdk/apps/qml/QtQuick/Keys#spacePressed-signal>`__****\ (KeyEvent
+-  :ref:`spacePressed <sdk_qtquick_keys_spacePressed-signal>`\ (KeyEvent
    *event*)
--  ****`tabPressed </sdk/apps/qml/QtQuick/Keys#tabPressed-signal>`__****\ (KeyEvent
+-  :ref:`tabPressed <sdk_qtquick_keys_tabPressed-signal>`\ (KeyEvent
    *event*)
--  ****`upPressed </sdk/apps/qml/QtQuick/Keys#upPressed-signal>`__****\ (KeyEvent
+-  :ref:`upPressed <sdk_qtquick_keys_upPressed-signal>`\ (KeyEvent
    *event*)
--  ****`volumeDownPressed </sdk/apps/qml/QtQuick/Keys#volumeDownPressed-signal>`__****\ (KeyEvent
+-  :ref:`volumeDownPressed <sdk_qtquick_keys_volumeDownPressed-signal>`\ (KeyEvent
    *event*)
--  ****`volumeUpPressed </sdk/apps/qml/QtQuick/Keys#volumeUpPressed-signal>`__****\ (KeyEvent
+-  :ref:`volumeUpPressed <sdk_qtquick_keys_volumeUpPressed-signal>`\ (KeyEvent
    *event*)
--  ****`yesPressed </sdk/apps/qml/QtQuick/Keys#yesPressed-signal>`__****\ (KeyEvent
+-  :ref:`yesPressed <sdk_qtquick_keys_yesPressed-signal>`\ (KeyEvent
    *event*)
 
 Detailed Description
@@ -102,11 +105,10 @@ All visual primitives support key handling via the Keys attached
 property. Keys can be handled via the onPressed and onReleased signal
 properties.
 
-The signal properties have a
-`KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`__ parameter, named *event*
-which contains details of the event. If a key is handled
-*event.accepted* should be set to true to prevent the event from
-propagating up the item hierarchy.
+The signal properties have a :ref:`KeyEvent <sdk_qtquick_keyevent>`
+parameter, named *event* which contains details of the event. If a key
+is handled *event.accepted* should be set to true to prevent the event
+from propagating up the item hierarchy.
 
 Example Usage
 -------------
@@ -149,20 +151,20 @@ or after the item it is attached to. This makes it possible to intercept
 events in order to override an item's default behavior, or act as a
 fallback for keys not handled by the item.
 
-If `priority </sdk/apps/qml/QtQuick/Keys#priority-prop>`__ is
-Keys.BeforeItem (default) the order of key event processing is:
+If :ref:`priority <sdk_qtquick_keys#priority-prop>` is Keys.BeforeItem
+(default) the order of key event processing is:
 
 #. Items specified in ``forwardTo``
 #. specific key handlers, e.g. onReturnPressed
 #. onPressed, onReleased handlers
 #. Item specific key handling, e.g.
-   `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ key handling
+   :ref:`TextInput <sdk_qtquick_textinput>` key handling
 #. parent item
 
 If priority is Keys.AfterItem the order of key event processing is:
 
 #. Item specific key handling, e.g.
-   `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ key handling
+   :ref:`TextInput <sdk_qtquick_textinput>` key handling
 #. Items specified in ``forwardTo``
 #. specific key handlers, e.g. onReturnPressed
 #. onPressed, onReleased handlers
@@ -171,12 +173,13 @@ If priority is Keys.AfterItem the order of key event processing is:
 If the event is accepted during any of the above steps, key propagation
 stops.
 
-**See also** `KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`__ and
-`KeyNavigation attached
-property </sdk/apps/qml/QtQuick/KeyNavigation/>`__.
+**See also** :ref:`KeyEvent <sdk_qtquick_keyevent>` and `KeyNavigation
+attached property <sdk_qtquick_keynavigation>:ref:`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_keys_enabled-prop:
 
 +--------------------------------------------------------------------------+
 |        \ enabled : bool                                                  |
@@ -186,6 +189,8 @@ This flags enables key handling if true (default); otherwise no key
 handlers will be called.
 
 | 
+
+.. _sdk_qtquick_keys_forwardTo-prop:
 
 +--------------------------------------------------------------------------+
 |        \ forwardTo : list<Object>                                        |
@@ -216,10 +221,11 @@ This example forwards key events to two lists:
     }
 
 To see the order in which events are received when using forwardTo, see
-`Key Handling
-Priorities </sdk/apps/qml/QtQuick/Keys#key-handling-priorities>`__.
+:ref:`Key Handling Priorities <sdk_qtquick_keys#key-handling-priorities>`.
 
 | 
+
+.. _sdk_qtquick_keys_priority-prop:
 
 +--------------------------------------------------------------------------+
 |        \ priority : enumeration                                          |
@@ -236,16 +242,17 @@ the attached item's own key handling.
    the Keys attached property handler.
 
 **See also** `Key Handling
-Priorities </sdk/apps/qml/QtQuick/Keys#key-handling-priorities>`__.
+Priorities <sdk_qtquick_keys#key-handling-priorities>:ref:`.
 
 | 
 
 Signal Documentation
 --------------------
 
+.. _sdk_qtquick_keys_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ asteriskPressed(`KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`__  |
-| *event*)                                                                 |
+| :ref:` <>`\ asteriskPressed(`KeyEvent <sdk_qtquick_keyevent>` *event*)    |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the Asterisk '\*' has been pressed. The
@@ -255,9 +262,10 @@ The corresponding handler is ``onAsteriskPressed``.
 
 | 
 
+.. _sdk_qtquick_keys_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ backPressed(`KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`__      |
-| *event*)                                                                 |
+| :ref:` <>`\ backPressed(`KeyEvent <sdk_qtquick_keyevent>` *event*)        |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the Back key has been pressed. The *event*
@@ -267,9 +275,10 @@ The corresponding handler is ``onBackPressed``.
 
 | 
 
+.. _sdk_qtquick_keys_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ backtabPressed(`KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`__   |
-| *event*)                                                                 |
+| :ref:` <>`\ backtabPressed(`KeyEvent <sdk_qtquick_keyevent>` *event*)     |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the Shift+Tab key combination (Backtab) has
@@ -280,9 +289,10 @@ The corresponding handler is ``onBacktabPressed``.
 
 | 
 
+.. _sdk_qtquick_keys_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ callPressed(`KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`__      |
-| *event*)                                                                 |
+| :ref:` <>`\ callPressed(`KeyEvent <sdk_qtquick_keyevent>` *event*)        |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the Call key has been pressed. The *event*
@@ -292,9 +302,10 @@ The corresponding handler is ``onCallPressed``.
 
 | 
 
+.. _sdk_qtquick_keys_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ cancelPressed(`KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`__    |
-| *event*)                                                                 |
+| :ref:` <>`\ cancelPressed(`KeyEvent <sdk_qtquick_keyevent>` *event*)      |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the Cancel key has been pressed. The *event*
@@ -304,9 +315,10 @@ The corresponding handler is ``onCancelPressed``.
 
 | 
 
+.. _sdk_qtquick_keys_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ context1Pressed(`KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`__  |
-| *event*)                                                                 |
+| :ref:` <>`\ context1Pressed(`KeyEvent <sdk_qtquick_keyevent>` *event*)    |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the Context1 key has been pressed. The
@@ -316,9 +328,10 @@ The corresponding handler is ``onContext1Pressed``.
 
 | 
 
+.. _sdk_qtquick_keys_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ context2Pressed(`KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`__  |
-| *event*)                                                                 |
+| :ref:` <>`\ context2Pressed(`KeyEvent <sdk_qtquick_keyevent>` *event*)    |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the Context2 key has been pressed. The
@@ -328,9 +341,10 @@ The corresponding handler is ``onContext2Pressed``.
 
 | 
 
+.. _sdk_qtquick_keys_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ context3Pressed(`KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`__  |
-| *event*)                                                                 |
+| :ref:` <>`\ context3Pressed(`KeyEvent <sdk_qtquick_keyevent>` *event*)    |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the Context3 key has been pressed. The
@@ -340,9 +354,10 @@ The corresponding handler is ``onContext3Pressed``.
 
 | 
 
+.. _sdk_qtquick_keys_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ context4Pressed(`KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`__  |
-| *event*)                                                                 |
+| :ref:` <>`\ context4Pressed(`KeyEvent <sdk_qtquick_keyevent>` *event*)    |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the Context4 key has been pressed. The
@@ -352,9 +367,10 @@ The corresponding handler is ``onContext4Pressed``.
 
 | 
 
+.. _sdk_qtquick_keys_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ deletePressed(`KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`__    |
-| *event*)                                                                 |
+| :ref:` <>`\ deletePressed(`KeyEvent <sdk_qtquick_keyevent>` *event*)      |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the Delete key has been pressed. The *event*
@@ -364,9 +380,10 @@ The corresponding handler is ``onDeletePressed``.
 
 | 
 
+.. _sdk_qtquick_keys_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ digit0Pressed(`KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`__    |
-| *event*)                                                                 |
+| :ref:` <>`\ digit0Pressed(`KeyEvent <sdk_qtquick_keyevent>` *event*)      |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the digit '0' has been pressed. The *event*
@@ -376,9 +393,10 @@ The corresponding handler is ``onDigit0Pressed``.
 
 | 
 
+.. _sdk_qtquick_keys_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ digit1Pressed(`KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`__    |
-| *event*)                                                                 |
+| :ref:` <>`\ digit1Pressed(`KeyEvent <sdk_qtquick_keyevent>` *event*)      |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the digit '1' has been pressed. The *event*
@@ -388,9 +406,10 @@ The corresponding handler is ``onDigit1Pressed``.
 
 | 
 
+.. _sdk_qtquick_keys_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ digit2Pressed(`KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`__    |
-| *event*)                                                                 |
+| :ref:` <>`\ digit2Pressed(`KeyEvent <sdk_qtquick_keyevent>` *event*)      |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the digit '2' has been pressed. The *event*
@@ -400,9 +419,10 @@ The corresponding handler is ``onDigit2Pressed``.
 
 | 
 
+.. _sdk_qtquick_keys_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ digit3Pressed(`KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`__    |
-| *event*)                                                                 |
+| :ref:` <>`\ digit3Pressed(`KeyEvent <sdk_qtquick_keyevent>` *event*)      |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the digit '3' has been pressed. The *event*
@@ -412,9 +432,10 @@ The corresponding handler is ``onDigit3Pressed``.
 
 | 
 
+.. _sdk_qtquick_keys_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ digit4Pressed(`KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`__    |
-| *event*)                                                                 |
+| :ref:` <>`\ digit4Pressed(`KeyEvent <sdk_qtquick_keyevent>` *event*)      |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the digit '4' has been pressed. The *event*
@@ -424,9 +445,10 @@ The corresponding handler is ``onDigit4Pressed``.
 
 | 
 
+.. _sdk_qtquick_keys_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ digit5Pressed(`KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`__    |
-| *event*)                                                                 |
+| :ref:` <>`\ digit5Pressed(`KeyEvent <sdk_qtquick_keyevent>` *event*)      |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the digit '5' has been pressed. The *event*
@@ -436,9 +458,10 @@ The corresponding handler is ``onDigit5Pressed``.
 
 | 
 
+.. _sdk_qtquick_keys_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ digit6Pressed(`KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`__    |
-| *event*)                                                                 |
+| :ref:` <>`\ digit6Pressed(`KeyEvent <sdk_qtquick_keyevent>` *event*)      |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the digit '6' has been pressed. The *event*
@@ -448,9 +471,10 @@ The corresponding handler is ``onDigit6Pressed``.
 
 | 
 
+.. _sdk_qtquick_keys_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ digit7Pressed(`KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`__    |
-| *event*)                                                                 |
+| :ref:` <>`\ digit7Pressed(`KeyEvent <sdk_qtquick_keyevent>` *event*)      |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the digit '7' has been pressed. The *event*
@@ -460,9 +484,10 @@ The corresponding handler is ``onDigit7Pressed``.
 
 | 
 
+.. _sdk_qtquick_keys_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ digit8Pressed(`KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`__    |
-| *event*)                                                                 |
+| :ref:` <>`\ digit8Pressed(`KeyEvent <sdk_qtquick_keyevent>` *event*)      |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the digit '8' has been pressed. The *event*
@@ -472,9 +497,10 @@ The corresponding handler is ``onDigit8Pressed``.
 
 | 
 
+.. _sdk_qtquick_keys_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ digit9Pressed(`KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`__    |
-| *event*)                                                                 |
+| :ref:` <>`\ digit9Pressed(`KeyEvent <sdk_qtquick_keyevent>` *event*)      |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the digit '9' has been pressed. The *event*
@@ -484,9 +510,10 @@ The corresponding handler is ``onDigit9Pressed``.
 
 | 
 
+.. _sdk_qtquick_keys_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ downPressed(`KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`__      |
-| *event*)                                                                 |
+| :ref:` <>`\ downPressed(`KeyEvent <sdk_qtquick_keyevent>` *event*)        |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the Down arrow has been pressed. The *event*
@@ -496,9 +523,10 @@ The corresponding handler is ``onDownPressed``.
 
 | 
 
+.. _sdk_qtquick_keys_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ enterPressed(`KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`__     |
-| *event*)                                                                 |
+| :ref:` <>`\ enterPressed(`KeyEvent <sdk_qtquick_keyevent>` *event*)       |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the Enter key has been pressed. The *event*
@@ -508,9 +536,10 @@ The corresponding handler is ``onEnterPressed``.
 
 | 
 
+.. _sdk_qtquick_keys_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ escapePressed(`KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`__    |
-| *event*)                                                                 |
+| :ref:` <>`\ escapePressed(`KeyEvent <sdk_qtquick_keyevent>` *event*)      |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the Escape key has been pressed. The *event*
@@ -520,9 +549,10 @@ The corresponding handler is ``onEscapePressed``.
 
 | 
 
+.. _sdk_qtquick_keys_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ flipPressed(`KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`__      |
-| *event*)                                                                 |
+| :ref:` <>`\ flipPressed(`KeyEvent <sdk_qtquick_keyevent>` *event*)        |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the Flip key has been pressed. The *event*
@@ -532,9 +562,10 @@ The corresponding handler is ``onFlipPressed``.
 
 | 
 
+.. _sdk_qtquick_keys_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ hangupPressed(`KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`__    |
-| *event*)                                                                 |
+| :ref:` <>`\ hangupPressed(`KeyEvent <sdk_qtquick_keyevent>` *event*)      |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the Hangup key has been pressed. The *event*
@@ -544,9 +575,10 @@ The corresponding handler is ``onHangupPressed``.
 
 | 
 
+.. _sdk_qtquick_keys_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ leftPressed(`KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`__      |
-| *event*)                                                                 |
+| :ref:` <>`\ leftPressed(`KeyEvent <sdk_qtquick_keyevent>` *event*)        |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the Left arrow has been pressed. The *event*
@@ -556,9 +588,10 @@ The corresponding handler is ``onLeftPressed``.
 
 | 
 
+.. _sdk_qtquick_keys_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ menuPressed(`KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`__      |
-| *event*)                                                                 |
+| :ref:` <>`\ menuPressed(`KeyEvent <sdk_qtquick_keyevent>` *event*)        |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the Menu key has been pressed. The *event*
@@ -568,9 +601,10 @@ The corresponding handler is ``onMenuPressed``.
 
 | 
 
+.. _sdk_qtquick_keys_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ noPressed(`KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`__        |
-| *event*)                                                                 |
+| :ref:` <>`\ noPressed(`KeyEvent <sdk_qtquick_keyevent>` *event*)          |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the No key has been pressed. The *event*
@@ -580,8 +614,10 @@ The corresponding handler is ``onNoPressed``.
 
 | 
 
+.. _sdk_qtquick_keys_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ pressed(`KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`__ *event*) |
+| :ref:` <>`\ pressed(`KeyEvent <sdk_qtquick_keyevent>` *event*)            |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when a key has been pressed. The *event*
@@ -591,9 +627,10 @@ The corresponding handler is ``onPressed``.
 
 | 
 
+.. _sdk_qtquick_keys_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ released(`KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`__         |
-| *event*)                                                                 |
+| :ref:` <>`\ released(`KeyEvent <sdk_qtquick_keyevent>` *event*)           |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when a key has been released. The *event*
@@ -603,9 +640,10 @@ The corresponding handler is ``onReleased``.
 
 | 
 
+.. _sdk_qtquick_keys_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ returnPressed(`KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`__    |
-| *event*)                                                                 |
+| :ref:` <>`\ returnPressed(`KeyEvent <sdk_qtquick_keyevent>` *event*)      |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the Return key has been pressed. The *event*
@@ -615,9 +653,10 @@ The corresponding handler is ``onReturnPressed``.
 
 | 
 
+.. _sdk_qtquick_keys_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ rightPressed(`KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`__     |
-| *event*)                                                                 |
+| :ref:` <>`\ rightPressed(`KeyEvent <sdk_qtquick_keyevent>` *event*)       |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the Right arrow has been pressed. The
@@ -627,9 +666,10 @@ The corresponding handler is ``onRightPressed``.
 
 | 
 
+.. _sdk_qtquick_keys_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ selectPressed(`KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`__    |
-| *event*)                                                                 |
+| :ref:` <>`\ selectPressed(`KeyEvent <sdk_qtquick_keyevent>` *event*)      |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the Select key has been pressed. The *event*
@@ -639,9 +679,10 @@ The corresponding handler is ``onSelectPressed``.
 
 | 
 
+.. _sdk_qtquick_keys_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ spacePressed(`KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`__     |
-| *event*)                                                                 |
+| :ref:` <>`\ spacePressed(`KeyEvent <sdk_qtquick_keyevent>` *event*)       |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the Space key has been pressed. The *event*
@@ -651,9 +692,10 @@ The corresponding handler is ``onSpacePressed``.
 
 | 
 
+.. _sdk_qtquick_keys_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ tabPressed(`KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`__       |
-| *event*)                                                                 |
+| :ref:` <>`\ tabPressed(`KeyEvent <sdk_qtquick_keyevent>` *event*)         |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the Tab key has been pressed. The *event*
@@ -663,9 +705,10 @@ The corresponding handler is ``onTabPressed``.
 
 | 
 
+.. _sdk_qtquick_keys_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ upPressed(`KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`__        |
-| *event*)                                                                 |
+| :ref:` <>`\ upPressed(`KeyEvent <sdk_qtquick_keyevent>` *event*)          |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the Up arrow has been pressed. The *event*
@@ -675,10 +718,10 @@ The corresponding handler is ``onUpPressed``.
 
 | 
 
+.. _sdk_qtquick_keys_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ volumeDownPressed(`KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`_ |
-| _                                                                        |
-| *event*)                                                                 |
+| :ref:` <>`\ volumeDownPressed(`KeyEvent <sdk_qtquick_keyevent>` *event*)  |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the VolumeDown key has been pressed. The
@@ -689,8 +732,7 @@ The corresponding handler is ``onVolumeDownPressed``.
 | 
 
 +--------------------------------------------------------------------------+
-|        \ volumeUpPressed(`KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`__  |
-| *event*)                                                                 |
+| :ref:` <>`\ volumeUpPressed(`KeyEvent <sdk_qtquick_keyevent>` *event*)    |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the VolumeUp key has been pressed. The
@@ -701,8 +743,7 @@ The corresponding handler is ``onVolumeUpPressed``.
 | 
 
 +--------------------------------------------------------------------------+
-|        \ yesPressed(`KeyEvent </sdk/apps/qml/QtQuick/KeyEvent/>`__       |
-| *event*)                                                                 |
+| :ref:` <>`\ yesPressed(`KeyEvent <sdk_qtquick_keyevent>` *event*)         |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the Yes key has been pressed. The *event*

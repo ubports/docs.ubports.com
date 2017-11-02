@@ -1,3 +1,7 @@
+.. _sdk_contenthub_contenthub:
+ContentHub ContentHub
+=====================
+
 
 The ContentHub object.
 
@@ -16,8 +20,7 @@ Creates a ContentStore object for the given ContentPeer.
 
    type of the content to import
 
--  ``peer``
-   **<`ContentPeer </sdk/apps/html5/ContentHub/ContentPeer/>`__>**
+-  :ref:``peer`` **<`ContentPeer <sdk_contenthub_contentpeer>`>**
 
    peer who's content should be imported
 

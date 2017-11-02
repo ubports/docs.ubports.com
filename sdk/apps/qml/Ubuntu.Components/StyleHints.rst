@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_stylehints:
+Ubuntu.Components StyleHints
+============================
+
 Component holding style specific properties to configure a particular
 StyledItem's style runtime.
 
@@ -10,20 +14,19 @@ StyledItem's style runtime.
 Properties
 ----------
 
--  ****`ignoreUnknownProperties </sdk/apps/qml/Ubuntu.Components/StyleHints#ignoreUnknownProperties-prop>`__****
+-  :ref:`ignoreUnknownProperties <sdk_ubuntu_components_stylehints_ignoreUnknownProperties-prop>`
    : bool
 
 Detailed Description
 --------------------
 
-`StyleHints </sdk/apps/qml/Ubuntu.Components/StyleHints/>`__ is a custom
-parser, meaning style properties can be listed without any property
-declaration, same way as in
-`PropertyChanges </sdk/apps/qml/QtQuick/PropertyChanges/>`__ or
+:ref:`StyleHints <sdk_ubuntu_components_stylehints>` is a custom parser,
+meaning style properties can be listed without any property declaration,
+same way as in :ref:`PropertyChanges <sdk_qtquick_propertychanges>` or
 Connections, which are similar custom parsers. Properties enumerated do
 not have to be present in the component's style as default, behavior
 which can be chenged by setting
-`ignoreUnknownProperties </sdk/apps/qml/Ubuntu.Components/StyleHints#ignoreUnknownProperties-prop>`__
+:ref:`ignoreUnknownProperties <sdk_ubuntu_components_stylehints#ignoreUnknownProperties-prop>`
 to true. In this case properties not found in the style will be
 displayed as warnings.
 
@@ -39,17 +42,18 @@ pressed, and colored as blue when pressed.
         }
     }
 
-`StyleHints </sdk/apps/qml/Ubuntu.Components/StyleHints/>`__ does not
-support signal properties (i.e signal handlers) and object declarations
-as property values.
+:ref:`StyleHints <sdk_ubuntu_components_stylehints>` does not support
+signal properties (i.e signal handlers) and object declarations as
+property values.
 
-`StyleHints </sdk/apps/qml/Ubuntu.Components/StyleHints/>`__ can be only
-declared in a
-`StyledItem </sdk/apps/qml/Ubuntu.Components/StyledItem/>`__ or as a
-derivate of it.
+:ref:`StyleHints <sdk_ubuntu_components_stylehints>` can be only declared
+in a :ref:`StyledItem <sdk_ubuntu_components_styleditem>` or as a derivate
+of it.
 
 Property Documentation
 ----------------------
+
+.. _sdk_ubuntu_components_stylehints_ignoreUnknownProperties-prop:
 
 +--------------------------------------------------------------------------+
 |        \ ignoreUnknownProperties : bool                                  |

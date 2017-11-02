@@ -1,12 +1,16 @@
+.. _sdk_qtqml_qt_quick_examples_-_xmlhttprequest:
+QtQml Qt Quick Examples - XMLHttpRequest
+========================================
+
 
 
 |image0|
 
 *XMLHttpRequest* contains a small QML example demonstrating `Qt
-QML </sdk/apps/qml/QtQml/qtqml-index/>`__'s
-`XMLHTTPRequest </sdk/apps/qml/QtQml/qtqml-javascript-qmlglobalobject#xmlhttprequest>`__
+QML </sdk/apps/qml/QtQml/qtqml-index/>`_ 's
+`XMLHTTPRequest </sdk/apps/qml/QtQml/qtqml-javascript-qmlglobalobject/#xmlhttprequest>`_ 
 functionality. For more information, visit the section about
-`XMLHttpRequest </sdk/apps/qml/QtQml/qtqml-javascript-qmlglobalobject#xmlhttprequest>`__.
+`XMLHttpRequest </sdk/apps/qml/QtQml/qtqml-javascript-qmlglobalobject/#xmlhttprequest>`_ .
 
 .. rubric:: Running the Example
    :name: running-the-example
@@ -19,7 +23,7 @@ Running an Example.
    :name: get-data
 
 *Get data* uses the
-`XMLHttpRequest </sdk/apps/qml/QtQml/qtqml-javascript-qmlglobalobject#xmlhttprequest>`__
+`XMLHttpRequest </sdk/apps/qml/QtQml/qtqml-javascript-qmlglobalobject/#xmlhttprequest>`_ 
 API to fetch an XML document from a server. It displays the header of
 the HTTP response and the body of the XML document.
 

@@ -1,22 +1,26 @@
+.. _sdk_qtquick_qt_quick_demo_-_photo_viewer:
+QtQuick Qt Quick Demo - Photo Viewer
+====================================
+
 
 
 |image0|
 
 *Photo Viewer* demonstrates the following `Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-index/>`__ features:
+Quick </sdk/apps/qml/QtQuick/qtquick-index/>`_  features:
 
 -  Using custom types to create screens and screen controls.
 -  Using Qt Quick Controls to create an application window.
 -  Using the Package type with a DelegateModel to provide delegates with
    a shared context to multiple views.
 -  Using XML list models to download Flickr feeds.
--  Using the `Flipable </sdk/apps/qml/QtQuick/Flipable/>`__ type to
-   create labels with different text on the front and back.
--  Using the `PathView </sdk/apps/qml/QtQuick/PathView/>`__,
-   `Path </sdk/apps/qml/QtQuick/Path/>`__,
-   `PathAttribute </sdk/apps/qml/QtQuick/PathAttribute/>`__, and
-   `PathLine </sdk/apps/qml/QtQuick/PathLine/>`__ types to lay out
-   photos on a path.
+-  Using the :ref:`Flipable <sdk_qtquick_flipable>` type to create labels
+   with different text on the front and back.
+-  Using the :ref:`PathView <sdk_qtquick_pathview>`,
+   :ref:`Path <sdk_qtquick_path>`,
+   :ref:`PathAttribute <sdk_qtquick_pathattribute>`, and
+   :ref:`PathLine <sdk_qtquick_pathline>` types to lay out photos on a
+   path.
 -  Providing feedback to users while data is loading.
 -  Localizing applications.
 
@@ -63,7 +67,7 @@ app main window:
         visible: true
 
 We use a
-`ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview#listmodel>`__
+`ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#listmodel>`_ 
 type with ListElement types to display photo albums:
 
 .. code:: qml
@@ -89,7 +93,7 @@ specifies the template defining each item instantiated by a view:
 
         DelegateModel { id: albumVisualModel; model: photosModel; delegate: AlbumDelegate {} }
 
-We use a `GridView </sdk/apps/qml/QtQuick/draganddrop#gridview>`__ type
+We use a `GridView </sdk/apps/qml/QtQuick/draganddrop/#gridview>`_  type
 to lay out the albums as a grid:
 
 .. code:: qml
@@ -132,8 +136,8 @@ The named items are used as the delegates by the views that reference
 the special DelegateModel::parts property to select the model that
 provides the chosen delegate.
 
-We use a `ListView </sdk/apps/qml/QtQuick/ListView/>`__ type to lay out
-albums in other views:
+We use a :ref:`ListView <sdk_qtquick_listview>` type to lay out albums in
+other views:
 
 .. code:: qml
 
@@ -169,7 +173,7 @@ JavaScript method:
                 z: stackItem.PathView.z; rotation: photoWrapper.randomAngle
 
 We use a
-`BorderImage </sdk/apps/qml/QtQuick/imageelements#borderimage>`__ type
+`BorderImage </sdk/apps/qml/QtQuick/imageelements/#borderimage>`_  type
 to create borders for the images:
 
 .. code:: qml
@@ -197,7 +201,7 @@ PhotoDelegate delegate to the RssModel model:
                 }
 
 In RssModel.qml, we use an
-`XmlListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview#xmllistmodel>`__
+`XmlListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#xmllistmodel>`_ 
 type as a data source for Package objects to download photos from the
 selected feeds:
 
@@ -223,14 +227,14 @@ tags attached from public Flickr feeds:
         namespaceDeclarations: "declare default element namespace 'http://www.w3.org/2005/Atom';"
 
 The ``query`` property specifies that the
-`XmlListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview#xmllistmodel>`__
+`XmlListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#xmllistmodel>`_ 
 generates a model item for each feed entry.
 
 The ``namespaceDeclarations`` property specifies that the requested
 document uses the namespace ``http://www.w3.org/2005/Atom``, which is
 declared as the default namespace.
 
-We use the `XmlRole </sdk/apps/qml/QtQuick/XmlListModel.XmlRole/>`__
+We use the `XmlRole </sdk/apps/qml/QtQuick/XmlListModel.XmlRole/>`_ 
 type to specify the model item attributes. Each model item has the
 ``title``, ``content``, and ``hq`` attributes that match the values of
 the corresponding feed entry:
@@ -264,8 +268,8 @@ The ``onTagChanged`` signal handler is used to change the tag based on
 which the model is populated. The ``onBackClicked`` signal handler is
 used to remove the album.
 
-In Tag.qml, we use a `Flipable </sdk/apps/qml/QtQuick/Flipable/>`__ type
-with custom properties and signals to create the labels:
+In Tag.qml, we use a :ref:`Flipable <sdk_qtquick_flipable>` type with
+custom properties and signals to create the labels:
 
 .. code:: qml
 
@@ -306,10 +310,9 @@ remove the album:
 .. rubric:: Laying out Photos on a Path
    :name: laying-out-photos-on-a-path
 
-In AlbumDelegate.qml, we use a
-`PathView </sdk/apps/qml/QtQuick/PathView/>`__ type to lay out the
-photos provided by the ``visualModel.parts.stack`` model on a path that
-has the form of a stack:
+In AlbumDelegate.qml, we use a :ref:`PathView <sdk_qtquick_pathview>` type
+to lay out the photos provided by the ``visualModel.parts.stack`` model
+on a path that has the form of a stack:
 
 .. code:: qml
 
@@ -324,14 +327,13 @@ has the form of a stack:
                     }
                 }
 
-The ``path`` property holds the `Path </sdk/apps/qml/QtQuick/Path/>`__
-type that defines the path used by the
-`PathView </sdk/apps/qml/QtQuick/PathView/>`__. The
-`PathAttribute </sdk/apps/qml/QtQuick/PathAttribute/>`__ types are used
-to set a range of ``0`` to ``9999`` for the ``z`` attribute. This way,
-the path creates a stack of album photos. Because each PhotoDelegate is
-slightly rotated at a random angle, this results in a realistic-looking
-stack of photos.
+The :ref:``path`` property holds the `Path <sdk_qtquick_path>` type that
+defines the path used by the :ref:`PathView <sdk_qtquick_pathview>`. The
+:ref:`PathAttribute <sdk_qtquick_pathattribute>` types are used to set a
+range of ``0`` to ``9999`` for the ``z`` attribute. This way, the path
+creates a stack of album photos. Because each PhotoDelegate is slightly
+rotated at a random angle, this results in a realistic-looking stack of
+photos.
 
 .. rubric:: Providing Feedback to Users
    :name: providing-feedback-to-users
@@ -359,10 +361,9 @@ being loaded:
                 BusyIndicator { anchors.centerIn: parent; on: originalImage.status != Image.Ready }
 
 We define the ``BusyIndicator`` type in ``BusyIndicator.qml``. We use an
-`Image </sdk/apps/qml/QtQuick/imageelements#image>`__ type to display an
-image and apply a
-`NumberAnimation </sdk/apps/qml/QtQuick/NumberAnimation/>`__ to its
-``rotation`` property to rotate the image in an infinite loop:
+`Image </sdk/apps/qml/QtQuick/imageelements/#image>`_  type to display
+an image and apply a :ref:`NumberAnimation <sdk_qtquick_numberanimation>`
+to its ``rotation`` property to rotate the image in an infinite loop:
 
 .. code:: qml
 
@@ -387,9 +388,8 @@ while a high quality version of a photo is being opened on full screen:
         }
 
 We define the ``ProgressBar`` type in ``ProgressBar.qml``. We use a
-`Rectangle </sdk/apps/qml/QtQuick/Rectangle/>`__ type to create the
-progress bar and apply a
-`NumberAnimation </sdk/apps/qml/QtQuick/NumberAnimation/>`__ to its
+:ref:`Rectangle <sdk_qtquick_rectangle>` type to create the progress bar
+and apply a :ref:`NumberAnimation <sdk_qtquick_numberanimation>` to its
 ``opacity`` property to change the color of the bar from black to white
 as data loading proceeds:
 
@@ -417,7 +417,7 @@ translated strings are loaded at runtime according to the current
 locale.
 
 We use a
-`Column </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#column>`__
+`Column </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#column>`_ 
 type in main.qml to position buttons for adding and editing albums and
 exiting the application:
 

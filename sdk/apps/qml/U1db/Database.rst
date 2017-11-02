@@ -1,3 +1,7 @@
+.. _sdk_u1db_database:
+U1db Database
+=============
+
 Database implements on-disk storage for documents and indexes.
 
 +---------------------+-----------------+
@@ -9,20 +13,19 @@ Database implements on-disk storage for documents and indexes.
 Properties
 ----------
 
--  ****`error </sdk/apps/qml/U1db/Database#error-prop>`__**** : string
--  ****`path </sdk/apps/qml/U1db/Database#path-prop>`__**** : string
+-  :ref:`error <sdk_u1db_database_error-prop>` : string
+-  :ref:`path <sdk_u1db_database_path-prop>` : string
 
 Methods
 -------
 
 -  void
-   ****`deleteDoc </sdk/apps/qml/U1db/Database#deleteDoc-method>`__****\ (string)
+   **:ref:`deleteDoc <sdk_u1db_database#deleteDoc-method>`**\ (string)
 -  Variant
-   ****`getDoc </sdk/apps/qml/U1db/Database#getDoc-method>`__****\ (string)
+   **:ref:`getDoc <sdk_u1db_database#getDoc-method>`**\ (string)
 -  list<string>
-   ****`listDocs </sdk/apps/qml/U1db/Database#listDocs-method>`__****\ ()
--  string
-   ****`putDoc </sdk/apps/qml/U1db/Database#putDoc-method>`__****\ (var,
+   **:ref:`listDocs <sdk_u1db_database#listDocs-method>`**\ ()
+-  string :ref:`putDoc <sdk_u1db_database_putDoc-method>`\ (var,
    string)
 
 Detailed Description
@@ -44,10 +47,12 @@ can be used.
         }
     }
 
-**See also** `Query </sdk/apps/qml/U1db/Query/>`__.
+**See also** :ref:`Query <sdk_u1db_query>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_u1db_database_error-prop:
 
 +--------------------------------------------------------------------------+
 |        \ error : string                                                  |
@@ -56,6 +61,8 @@ Property Documentation
 The last error as a string if the last operation failed.
 
 | 
+
+.. _sdk_u1db_database_path-prop:
 
 +--------------------------------------------------------------------------+
 |        \ path : string                                                   |
@@ -72,6 +79,8 @@ memory.
 Method Documentation
 --------------------
 
+.. _sdk_u1db_database_void deleteDoc-method:
+
 +--------------------------------------------------------------------------+
 |        \ void deleteDoc(string)                                          |
 +--------------------------------------------------------------------------+
@@ -79,6 +88,8 @@ Method Documentation
 Deletes the document identified by *docId*.
 
 | 
+
+.. _sdk_u1db_database_Variant getDoc-method:
 
 +--------------------------------------------------------------------------+
 |        \ Variant getDoc(string)                                          |
@@ -90,6 +101,8 @@ Document::getContents() with the same *docId*.
 
 | 
 
+.. _sdk_u1db_database_list<string> listDocs-method:
+
 +--------------------------------------------------------------------------+
 |        \ list<string> listDocs()                                         |
 +--------------------------------------------------------------------------+
@@ -97,6 +110,8 @@ Document::getContents() with the same *docId*.
 Returns a list of all stored documents by their docId.
 
 | 
+
+.. _sdk_u1db_database_string putDoc-method:
 
 +--------------------------------------------------------------------------+
 |        \ string putDoc(var, string)                                      |

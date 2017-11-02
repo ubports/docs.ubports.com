@@ -1,58 +1,56 @@
+.. _sdk_qtquick_borderimage:
+QtQuick BorderImage
+===================
+
 Paints a border based on an image
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtQuick 2.4                   |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Item </sdk/apps/qml/QtQuick/Item/>` |
-|                                      | __                                   |
+| Inherits:                            | :ref:`Item <sdk_qtquick_item>`       |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`asynchronous </sdk/apps/qml/QtQuick/BorderImage#asynchronous-prop>`__****
+-  :ref:`asynchronous <sdk_qtquick_borderimage_asynchronous-prop>`
    : bool
--  ****`border </sdk/apps/qml/QtQuick/BorderImage#border-prop>`__****
+-  :ref:`border <sdk_qtquick_borderimage_border-prop>`
 
-   -  ****`border.left </sdk/apps/qml/QtQuick/BorderImage#border.left-prop>`__****
+   -  :ref:`border.left <sdk_qtquick_borderimage_border.left-prop>`
       : int
-   -  ****`border.right </sdk/apps/qml/QtQuick/BorderImage#border.right-prop>`__****
+   -  :ref:`border.right <sdk_qtquick_borderimage_border.right-prop>`
       : int
-   -  ****`border.top </sdk/apps/qml/QtQuick/BorderImage#border.top-prop>`__****
-      : int
-   -  ****`border.bottom </sdk/apps/qml/QtQuick/BorderImage#border.bottom-prop>`__****
+   -  :ref:`border.top <sdk_qtquick_borderimage_border.top-prop>` :
+      int
+   -  :ref:`border.bottom <sdk_qtquick_borderimage_border.bottom-prop>`
       : int
 
--  ****`cache </sdk/apps/qml/QtQuick/BorderImage#cache-prop>`__**** :
-   bool
--  ****`horizontalTileMode </sdk/apps/qml/QtQuick/BorderImage#horizontalTileMode-prop>`__****
+-  :ref:`cache <sdk_qtquick_borderimage_cache-prop>` : bool
+-  :ref:`horizontalTileMode <sdk_qtquick_borderimage_horizontalTileMode-prop>`
    : enumeration
--  ****`mirror </sdk/apps/qml/QtQuick/BorderImage#mirror-prop>`__**** :
-   bool
--  ****`progress </sdk/apps/qml/QtQuick/BorderImage#progress-prop>`__****
-   : real
--  ****`smooth </sdk/apps/qml/QtQuick/BorderImage#smooth-prop>`__**** :
-   bool
--  ****`source </sdk/apps/qml/QtQuick/BorderImage#source-prop>`__**** :
-   url
--  ****`sourceSize </sdk/apps/qml/QtQuick/BorderImage#sourceSize-prop>`__****
-   : QSize
--  ****`status </sdk/apps/qml/QtQuick/BorderImage#status-prop>`__**** :
+-  :ref:`mirror <sdk_qtquick_borderimage_mirror-prop>` : bool
+-  :ref:`progress <sdk_qtquick_borderimage_progress-prop>` : real
+-  :ref:`smooth <sdk_qtquick_borderimage_smooth-prop>` : bool
+-  :ref:`source <sdk_qtquick_borderimage_source-prop>` : url
+-  :ref:`sourceSize <sdk_qtquick_borderimage_sourceSize-prop>` :
+   QSize
+-  :ref:`status <sdk_qtquick_borderimage_status-prop>` :
    enumeration
--  ****`verticalTileMode </sdk/apps/qml/QtQuick/BorderImage#verticalTileMode-prop>`__****
+-  :ref:`verticalTileMode <sdk_qtquick_borderimage_verticalTileMode-prop>`
    : enumeration
 
 Detailed Description
 --------------------
 
-The `BorderImage </sdk/apps/qml/QtQuick/imageelements#borderimage>`__
+The `BorderImage </sdk/apps/qml/QtQuick/imageelements/#borderimage>`_ 
 type is used to create borders out of images by scaling or tiling parts
 of each image.
 
-A `BorderImage </sdk/apps/qml/QtQuick/imageelements#borderimage>`__
+A `BorderImage </sdk/apps/qml/QtQuick/imageelements/#borderimage>`_ 
 breaks a source image, specified using the
-`source </sdk/apps/qml/QtQuick/BorderImage#source-prop>`__ property,
-into 9 regions, as shown below:
+:ref:`source <sdk_qtquick_borderimage#source-prop>` property, into 9
+regions, as shown below:
 
 |image0|
 
@@ -61,18 +59,18 @@ tiled to create the displayed border image in the following way:
 
 -  The corners (regions 1, 3, 7, and 9) are not scaled at all.
 -  Regions 2 and 8 are scaled according to
-   `horizontalTileMode </sdk/apps/qml/QtQuick/BorderImage#horizontalTileMode-prop>`__.
+   :ref:`horizontalTileMode <sdk_qtquick_borderimage#horizontalTileMode-prop>`.
 -  Regions 4 and 6 are scaled according to
-   `verticalTileMode </sdk/apps/qml/QtQuick/BorderImage#verticalTileMode-prop>`__.
+   :ref:`verticalTileMode <sdk_qtquick_borderimage#verticalTileMode-prop>`.
 -  The middle (region 5) is scaled according to both
-   `horizontalTileMode </sdk/apps/qml/QtQuick/BorderImage#horizontalTileMode-prop>`__
+   :ref:`horizontalTileMode <sdk_qtquick_borderimage#horizontalTileMode-prop>`
    and
-   `verticalTileMode </sdk/apps/qml/QtQuick/BorderImage#verticalTileMode-prop>`__.
+   :ref:`verticalTileMode <sdk_qtquick_borderimage#verticalTileMode-prop>`.
 
 The regions of the image are defined using the
-`border </sdk/apps/qml/QtQuick/BorderImage#border-prop>`__ property
-group, which describes the distance from each edge of the source image
-to use as a border.
+:ref:`border <sdk_qtquick_borderimage#border-prop>` property group, which
+describes the distance from each edge of the source image to use as a
+border.
 
 Example Usage
 -------------
@@ -84,10 +82,10 @@ regions of the image as described above.
 |image1|
 
 An unscaled image is displayed using an Image. The
-`border </sdk/apps/qml/QtQuick/BorderImage#border-prop>`__ property is
-used to determine the parts of the image that will lie inside the
-unscaled corner areas and the parts that will be stretched horizontally
-and vertically.
+:ref:`border <sdk_qtquick_borderimage#border-prop>` property is used to
+determine the parts of the image that will lie inside the unscaled
+corner areas and the parts that will be stretched horizontally and
+vertically.
 
 .. code:: qml
 
@@ -99,17 +97,16 @@ and vertically.
 
 |image2|
 
-A `BorderImage </sdk/apps/qml/QtQuick/imageelements#borderimage>`__ is
+A `BorderImage </sdk/apps/qml/QtQuick/imageelements/#borderimage>`_  is
 used to display the image, and it is given a size that is larger than
 the original image. Since the
-`horizontalTileMode </sdk/apps/qml/QtQuick/BorderImage#horizontalTileMode-prop>`__
+:ref:`horizontalTileMode <sdk_qtquick_borderimage#horizontalTileMode-prop>`
 property is set to
-`BorderImage.Stretch </sdk/apps/qml/QtQuick/BorderImage#horizontalTileMode-prop>`__,
+:ref:`BorderImage.Stretch <sdk_qtquick_borderimage#horizontalTileMode-prop>`,
 the parts of image in regions 2 and 8 are stretched horizontally. Since
-the
-`verticalTileMode </sdk/apps/qml/QtQuick/BorderImage#verticalTileMode-prop>`__
+the :ref:`verticalTileMode <sdk_qtquick_borderimage#verticalTileMode-prop>`
 property is set to
-`BorderImage.Stretch </sdk/apps/qml/QtQuick/BorderImage#verticalTileMode-prop>`__,
+:ref:`BorderImage.Stretch <sdk_qtquick_borderimage#verticalTileMode-prop>`,
 the parts of image in regions 4 and 6 are stretched vertically.
 
 .. code:: qml
@@ -127,16 +124,16 @@ the parts of image in regions 4 and 6 are stretched vertically.
 |image3|
 
 Again, a large
-`BorderImage </sdk/apps/qml/QtQuick/imageelements#borderimage>`__ is
+`BorderImage </sdk/apps/qml/QtQuick/imageelements/#borderimage>`_  is
 used to display the image. With the
-`horizontalTileMode </sdk/apps/qml/QtQuick/BorderImage#horizontalTileMode-prop>`__
+:ref:`horizontalTileMode <sdk_qtquick_borderimage#horizontalTileMode-prop>`
 property set to
-`BorderImage.Repeat </sdk/apps/qml/QtQuick/BorderImage#horizontalTileMode-prop>`__,
+:ref:`BorderImage.Repeat <sdk_qtquick_borderimage#horizontalTileMode-prop>`,
 the parts of image in regions 2 and 8 are tiled so that they fill the
 space at the top and bottom of the item. Similarly, the
-`verticalTileMode </sdk/apps/qml/QtQuick/BorderImage#verticalTileMode-prop>`__
+:ref:`verticalTileMode <sdk_qtquick_borderimage#verticalTileMode-prop>`
 property is set to
-`BorderImage.Repeat </sdk/apps/qml/QtQuick/BorderImage#verticalTileMode-prop>`__,
+:ref:`BorderImage.Repeat <sdk_qtquick_borderimage#verticalTileMode-prop>`,
 the parts of image in regions 4 and 6 are tiled so that they fill the
 space at the left and right of the item.
 
@@ -156,28 +153,30 @@ In some situations, the width of regions 2 and 8 may not be an exact
 multiple of the width of the corresponding regions in the source image.
 Similarly, the height of regions 4 and 6 may not be an exact multiple of
 the height of the corresponding regions. It can be useful to use
-`BorderImage.Round </sdk/apps/qml/QtQuick/BorderImage#horizontalTileMode-prop>`__
+:ref:`BorderImage.Round <sdk_qtquick_borderimage#horizontalTileMode-prop>`
 instead of
-`BorderImage.Repeat </sdk/apps/qml/QtQuick/BorderImage#horizontalTileMode-prop>`__
+:ref:`BorderImage.Repeat <sdk_qtquick_borderimage#horizontalTileMode-prop>`
 in cases like these.
 
 The Border Image example in `Qt Quick Examples - Image
-Elements </sdk/apps/qml/QtQuick/imageelements/>`__ shows how a
-`BorderImage </sdk/apps/qml/QtQuick/imageelements#borderimage>`__ can be
-used to simulate a shadow effect on a rectangular item.
+Elements </sdk/apps/qml/QtQuick/imageelements/>`_  shows how a
+`BorderImage </sdk/apps/qml/QtQuick/imageelements/#borderimage>`_  can
+be used to simulate a shadow effect on a rectangular item.
 
 Image Loading
 -------------
 
 The source image may not be loaded instantaneously, depending on its
 original location. Loading progress can be monitored with the
-`progress </sdk/apps/qml/QtQuick/BorderImage#progress-prop>`__ property.
+:ref:`progress <sdk_qtquick_borderimage#progress-prop>` property.
 
-**See also** `Image </sdk/apps/qml/QtQuick/imageelements#image>`__ and
-`AnimatedImage </sdk/apps/qml/QtQuick/AnimatedImage/>`__.
+**See also** `Image </sdk/apps/qml/QtQuick/imageelements/#image>`_  and
+:ref:`AnimatedImage <sdk_qtquick_animatedimage>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_borderimage_asynchronous-prop:
 
 +--------------------------------------------------------------------------+
 |        \ asynchronous : bool                                             |
@@ -195,13 +194,18 @@ loaded asynchronously.
 
 | 
 
+.. _sdk_qtquick_borderimage_**border group**-prop:
+
 +--------------------------------------------------------------------------+
 |        \ **border group**                                                |
 +==========================================================================+
+.. _sdk_qtquick_borderimage_border.right-prop:
 |        \ border.left : int                                               |
 +--------------------------------------------------------------------------+
+.. _sdk_qtquick_borderimage_border.top-prop:
 |        \ border.right : int                                              |
 +--------------------------------------------------------------------------+
+.. _sdk_qtquick_borderimage_border.bottom-prop:
 |        \ border.top : int                                                |
 +--------------------------------------------------------------------------+
 |        \ border.bottom : int                                             |
@@ -227,9 +231,11 @@ from the bottom of the image:
     }
 
 The border lines can also be specified using a `.sci
-file </sdk/apps/qml/QtQuick/BorderImage#source-prop>`__.
+file <sdk_qtquick_borderimage#source-prop>:ref:`.
 
 | 
+
+.. _sdk_qtquick_borderimage_cache-prop:
 
 +--------------------------------------------------------------------------+
 |        \ cache : bool                                                    |
@@ -242,6 +248,8 @@ images.
 
 | 
 
+.. _sdk_qtquick_borderimage_horizontalTileMode-prop:
+
 +--------------------------------------------------------------------------+
 |        \ horizontalTileMode : enumeration                                |
 +--------------------------------------------------------------------------+
@@ -249,19 +257,21 @@ images.
 This property describes how to repeat or stretch the middle parts of the
 border image.
 
--  `BorderImage </sdk/apps/qml/QtQuick/imageelements#borderimage>`__.Stretch
+-  `BorderImage </sdk/apps/qml/QtQuick/imageelements/#borderimage>`_ .Stretch
    - Scales the image to fit to the available area.
--  `BorderImage </sdk/apps/qml/QtQuick/imageelements#borderimage>`__.Repeat
+-  `BorderImage </sdk/apps/qml/QtQuick/imageelements/#borderimage>`_ .Repeat
    - Tile the image until there is no more space. May crop the last
    image.
--  `BorderImage </sdk/apps/qml/QtQuick/imageelements#borderimage>`__.Round
+-  `BorderImage </sdk/apps/qml/QtQuick/imageelements/#borderimage>`_ .Round
    - Like Repeat, but scales the images down to ensure that the last
    image is not cropped.
 
 The default tile mode for each property is
-`BorderImage </sdk/apps/qml/QtQuick/imageelements#borderimage>`__.Stretch.
+`BorderImage </sdk/apps/qml/QtQuick/imageelements/#borderimage>`_ .Stretch.
 
 | 
+
+.. _sdk_qtquick_borderimage_mirror-prop:
 
 +--------------------------------------------------------------------------+
 |        \ mirror : bool                                                   |
@@ -274,6 +284,8 @@ The default value is false.
 
 | 
 
+.. _sdk_qtquick_borderimage_progress-prop:
+
 +--------------------------------------------------------------------------+
 |        \ progress : real                                                 |
 +--------------------------------------------------------------------------+
@@ -281,9 +293,11 @@ The default value is false.
 This property holds the progress of image loading, from 0.0 (nothing
 loaded) to 1.0 (finished).
 
-**See also** `status </sdk/apps/qml/QtQuick/BorderImage#status-prop>`__.
+**See also** :ref:`status <sdk_qtquick_borderimage#status-prop>`.
 
 | 
+
+.. _sdk_qtquick_borderimage_smooth-prop:
 
 +--------------------------------------------------------------------------+
 |        \ smooth : bool                                                   |
@@ -298,13 +312,15 @@ By default, this property is set to true.
 
 | 
 
+.. _sdk_qtquick_borderimage_source-prop:
+
 +--------------------------------------------------------------------------+
 |        \ source : url                                                    |
 +--------------------------------------------------------------------------+
 
 This property holds the URL that refers to the source image.
 
-`BorderImage </sdk/apps/qml/QtQuick/imageelements#borderimage>`__ can
+`BorderImage </sdk/apps/qml/QtQuick/imageelements/#borderimage>`_  can
 handle any image format supported by Qt, loaded from any URL scheme
 supported by Qt.
 
@@ -329,19 +345,22 @@ The URL may be absolute, or relative to the URL of the component.
 
 | 
 
+.. _sdk_qtquick_borderimage_sourceSize-prop:
+
 +--------------------------------------------------------------------------+
 |        \ sourceSize : QSize                                              |
 +--------------------------------------------------------------------------+
 
 This property holds the actual width and height of the loaded image.
 
-In `BorderImage </sdk/apps/qml/QtQuick/imageelements#borderimage>`__,
+In `BorderImage </sdk/apps/qml/QtQuick/imageelements/#borderimage>`_ ,
 this property is read-only.
 
-**See also**
-`Image::sourceSize </sdk/apps/qml/QtQuick/Image#sourceSize-prop>`__.
+**See also** :ref:`Image::sourceSize <sdk_qtquick_image#sourceSize-prop>`.
 
 | 
+
+.. _sdk_qtquick_borderimage_status-prop:
 
 +--------------------------------------------------------------------------+
 |        \ status : enumeration                                            |
@@ -349,19 +368,20 @@ this property is read-only.
 
 This property describes the status of image loading. It can be one of:
 
--  `BorderImage </sdk/apps/qml/QtQuick/imageelements#borderimage>`__.Null
+-  `BorderImage </sdk/apps/qml/QtQuick/imageelements/#borderimage>`_ .Null
    - no image has been set
--  `BorderImage </sdk/apps/qml/QtQuick/imageelements#borderimage>`__.Ready
+-  `BorderImage </sdk/apps/qml/QtQuick/imageelements/#borderimage>`_ .Ready
    - the image has been loaded
--  `BorderImage </sdk/apps/qml/QtQuick/imageelements#borderimage>`__.Loading
+-  `BorderImage </sdk/apps/qml/QtQuick/imageelements/#borderimage>`_ .Loading
    - the image is currently being loaded
--  `BorderImage </sdk/apps/qml/QtQuick/imageelements#borderimage>`__.Error
+-  `BorderImage </sdk/apps/qml/QtQuick/imageelements/#borderimage>`_ .Error
    - an error occurred while loading the image
 
-**See also**
-`progress </sdk/apps/qml/QtQuick/BorderImage#progress-prop>`__.
+**See also** :ref:`progress <sdk_qtquick_borderimage#progress-prop>`.
 
 | 
+
+.. _sdk_qtquick_borderimage_verticalTileMode-prop:
 
 +--------------------------------------------------------------------------+
 |        \ verticalTileMode : enumeration                                  |
@@ -370,23 +390,23 @@ This property describes the status of image loading. It can be one of:
 This property describes how to repeat or stretch the middle parts of the
 border image.
 
--  `BorderImage </sdk/apps/qml/QtQuick/imageelements#borderimage>`__.Stretch
+-  `BorderImage </sdk/apps/qml/QtQuick/imageelements/#borderimage>`_ .Stretch
    - Scales the image to fit to the available area.
--  `BorderImage </sdk/apps/qml/QtQuick/imageelements#borderimage>`__.Repeat
+-  `BorderImage </sdk/apps/qml/QtQuick/imageelements/#borderimage>`_ .Repeat
    - Tile the image until there is no more space. May crop the last
    image.
--  `BorderImage </sdk/apps/qml/QtQuick/imageelements#borderimage>`__.Round
+-  `BorderImage </sdk/apps/qml/QtQuick/imageelements/#borderimage>`_ .Round
    - Like Repeat, but scales the images down to ensure that the last
    image is not cropped.
 
 The default tile mode for each property is
-`BorderImage </sdk/apps/qml/QtQuick/imageelements#borderimage>`__.Stretch.
+`BorderImage </sdk/apps/qml/QtQuick/imageelements/#borderimage>`_ .Stretch.
 
 | 
 
-.. |image0| image:: /media/sdk/apps/qml/QtQuick/BorderImage/images/declarative-scalegrid.png
-.. |image1| image:: /media/sdk/apps/qml/QtQuick/BorderImage/images/qml-borderimage-normal-image.png
-.. |image2| image:: /media/sdk/apps/qml/QtQuick/BorderImage/images/qml-borderimage-scaled.png
-.. |image3| image:: /media/sdk/apps/qml/QtQuick/BorderImage/images/qml-borderimage-tiled.png
-.. |image4| image:: /media/sdk/apps/qml/QtQuick/BorderImage/images/declarative-scalegrid.png
+.. |image0| image:: /mediasdk_qtquick_borderimageimages/declarative-scalegrid.png
+.. |image1| image:: /mediasdk_qtquick_borderimageimages/qml-borderimage-normal-image.png
+.. |image2| image:: /mediasdk_qtquick_borderimageimages/qml-borderimage-scaled.png
+.. |image3| image:: /mediasdk_qtquick_borderimageimages/qml-borderimage-tiled.png
+.. |image4| image:: /mediasdk_qtquick_borderimageimages/declarative-scalegrid.png
 

@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_distancereading:
+QtSensors DistanceReading
+=========================
+
 The DistanceReading element holds the most recent DistanceSensor
 reading.
 
@@ -6,22 +10,22 @@ reading.
 +--------------------------------------+--------------------------------------+
 | Since:                               | QtSensors 5.4                        |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `SensorReading </sdk/apps/qml/QtSens |
-|                                      | ors/SensorReading/>`__               |
+| Inherits:                            | :ref:`SensorReading <sdk_qtsensors_sensor |
+|                                      | reading>`_                           |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`distance </sdk/apps/qml/QtSensors/DistanceReading#distance-prop>`__****
-   : qreal
+-  :ref:`distance <sdk_qtsensors_distancereading_distance-prop>` :
+   qreal
 
 Detailed Description
 --------------------
 
-The `DistanceReading </sdk/apps/qml/QtSensors/DistanceReading/>`__
-element holds the most recent
-`DistanceSensor </sdk/apps/qml/QtSensors/DistanceSensor/>`__ reading.
+The :ref:`DistanceReading <sdk_qtsensors_distancereading>` element holds
+the most recent :ref:`DistanceSensor <sdk_qtsensors_distancesensor>`
+reading.
 
 This element wraps the QDistanceReading class. Please see the
 documentation for QDistanceReading for details.
@@ -30,6 +34,8 @@ This element cannot be directly created.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtsensors_distancereading_distance-prop:
 
 +--------------------------------------------------------------------------+
 |        \ distance : qreal                                                |

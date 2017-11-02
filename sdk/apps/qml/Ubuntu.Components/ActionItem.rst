@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_actionitem:
+Ubuntu.Components ActionItem
+============================
+
 A visual representation of an Action. The API of ActionItem is a copy of
 the API of Action, with additional properties to define visual aspects
 of the ActionItem.
@@ -5,65 +9,68 @@ of the ActionItem.
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import Ubuntu.Components 1.3         |
 +--------------------------------------+--------------------------------------+
-| Inherited By:                        | `AbstractButton </sdk/apps/qml/Ubunt |
-|                                      | u.Components/AbstractButton/>`__,    |
-|                                      | `BottomEdgeHint </sdk/apps/qml/Ubunt |
-|                                      | u.Components/BottomEdgeHint/>`__,    |
+| Inherited By:                        | :ref:`AbstractButton <sdk_ubuntu_componen |
+|                                      | ts_abstractbutton>`_ ,               |
+|                                      | :ref:`BottomEdgeHint <sdk_ubuntu_componen |
+|                                      | ts_bottomedgehint>`_ ,               |
 |                                      | and                                  |
 |                                      | `ToolbarButton </sdk/apps/qml/Ubuntu |
-|                                      | .Components/ToolbarButton/>`__.      |
+|                                      | .Components/ToolbarButton/>`_ .      |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`action </sdk/apps/qml/Ubuntu.Components/ActionItem#action-prop>`__****
-   : Action
--  ****`iconName </sdk/apps/qml/Ubuntu.Components/ActionItem#iconName-prop>`__****
+-  :ref:`action <sdk_ubuntu_components_actionitem_action-prop>` :
+   Action
+-  :ref:`iconName <sdk_ubuntu_components_actionitem_iconName-prop>`
    : string
--  ****`iconSource </sdk/apps/qml/Ubuntu.Components/ActionItem#iconSource-prop>`__****
+-  :ref:`iconSource <sdk_ubuntu_components_actionitem_iconSource-prop>`
    : url
--  ****`text </sdk/apps/qml/Ubuntu.Components/ActionItem#text-prop>`__****
-   : string
+-  :ref:`text <sdk_ubuntu_components_actionitem_text-prop>` :
+   string
 
 Signals
 -------
 
--  ****`triggered </sdk/apps/qml/Ubuntu.Components/ActionItem#triggered-signal>`__****\ (var
+-  :ref:`triggered <sdk_ubuntu_components_actionitem_triggered-signal>`\ (var
    *value*)
 
 Methods
 -------
 
 -  void
-   ****`trigger </sdk/apps/qml/Ubuntu.Components/ActionItem#trigger-method>`__****\ (var
+   **:ref:`trigger <sdk_ubuntu_components_actionitem#trigger-method>`**\ (var
    *value*)
 
 Detailed Description
 --------------------
 
-If `action </sdk/apps/qml/Ubuntu.Components/ActionItem#action-prop>`__
-is set, the values of the other properties will by default be identical
-to the `Action </sdk/apps/qml/Ubuntu.Components/Action/>`__'s property
-values. Setting the other properties will override the properties copied
-from the `Action </sdk/apps/qml/Ubuntu.Components/Action/>`__.
+If :ref:`action <sdk_ubuntu_components_actionitem#action-prop>` is set, the
+values of the other properties will by default be identical to the
+:ref:`Action <sdk_ubuntu_components_action>`'s property values. Setting the
+other properties will override the properties copied from the
+:ref:`Action <sdk_ubuntu_components_action>`.
 
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_actionitem_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ action : `Action </sdk/apps/qml/Ubuntu.Components/Action/>`__   |
+| :ref:` <>`\ action : `Action <sdk_ubuntu_components_action>`           |
 +--------------------------------------------------------------------------+
 
-The `Action </sdk/apps/qml/Ubuntu.Components/Action/>`__ associated with
-this `ActionItem </sdk/apps/qml/Ubuntu.Components/ActionItem/>`__. If
-action is set, the values of the
-`Action </sdk/apps/qml/Ubuntu.Components/Action/>`__ properties are
+The :ref:`Action <sdk_ubuntu_components_action>` associated with this
+:ref:`ActionItem <sdk_ubuntu_components_actionitem>`. If action is set, the
+values of the :ref:`Action <sdk_ubuntu_components_action>` properties are
 copied to the values of the
-`ActionItem </sdk/apps/qml/Ubuntu.Components/ActionItem/>`__ properties,
-unless those were previously overridden.
+:ref:`ActionItem <sdk_ubuntu_components_actionitem>` properties, unless
+those were previously overridden.
 
 | 
+
+.. _sdk_ubuntu_components_actionitem_iconName-prop:
 
 +--------------------------------------------------------------------------+
 |        \ iconName : string                                               |
@@ -82,26 +89,29 @@ are installed:
 These 2 separate icon themes will be merged soon.
 
 If both
-`iconSource </sdk/apps/qml/Ubuntu.Components/ActionItem#iconSource-prop>`__
-and iconName are defined, iconName will be ignored.
+:ref:`iconSource <sdk_ubuntu_components_actionitem#iconSource-prop>` and
+iconName are defined, iconName will be ignored.
 
 | 
 
+.. _sdk_ubuntu_components_actionitem_iconSource-prop:
+
 +--------------------------------------------------------------------------+
-|        \ iconSource : `url <http://doc.qt.io/qt-5/qml-url.html>`__       |
+|        \ iconSource : `url <http://doc.qt.io/qt-5/qml-url.html>`_        |
 +--------------------------------------------------------------------------+
 
 The image associated with the
-`ActionItem </sdk/apps/qml/Ubuntu.Components/ActionItem/>`__. Defaults
-to ``action.iconSource``.
+:ref:`ActionItem <sdk_ubuntu_components_actionitem>`. Defaults to
+``action.iconSource``.
 
 This is the URL of any image file. If both iconSource and
-`iconName </sdk/apps/qml/Ubuntu.Components/ActionItem#iconName-prop>`__
-are defined,
-`iconName </sdk/apps/qml/Ubuntu.Components/ActionItem#iconName-prop>`__
+:ref:`iconName <sdk_ubuntu_components_actionitem#iconName-prop>` are
+defined, :ref:`iconName <sdk_ubuntu_components_actionitem#iconName-prop>`
 will be ignored.
 
 | 
+
+.. _sdk_ubuntu_components_actionitem_text-prop:
 
 +--------------------------------------------------------------------------+
 |        \ text : string                                                   |
@@ -114,8 +124,10 @@ The title of the actionItem. Defaults to the ``action.text``.
 Signal Documentation
 --------------------
 
+.. _sdk_ubuntu_components_actionitem_triggered(`var <http-prop:
+
 +--------------------------------------------------------------------------+
-|        \ triggered(`var <http://doc.qt.io/qt-5/qml-var.html>`__ *value*) |
+|        \ triggered(`var <http://doc.qt.io/qt-5/qml-var.html>`_  *value*) |
 +--------------------------------------------------------------------------+
 
 Called when the actionItem is triggered.
@@ -125,8 +137,10 @@ Called when the actionItem is triggered.
 Method Documentation
 --------------------
 
+.. _sdk_ubuntu_components_actionitem_void trigger-method:
+
 +--------------------------------------------------------------------------+
-|        \ void trigger(`var <http://doc.qt.io/qt-5/qml-var.html>`__       |
+|        \ void trigger(`var <http://doc.qt.io/qt-5/qml-var.html>`_        |
 | *value*)                                                                 |
 +--------------------------------------------------------------------------+
 

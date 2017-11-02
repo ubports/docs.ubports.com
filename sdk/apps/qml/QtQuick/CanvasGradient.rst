@@ -1,3 +1,7 @@
+.. _sdk_qtquick_canvasgradient:
+QtQuick CanvasGradient
+======================
+
 Provides an opaque CanvasGradient interface
 
 +---------------------+----------------------+
@@ -10,7 +14,7 @@ Methods
 -------
 
 -  CanvasGradient
-   ****`addColorStop </sdk/apps/qml/QtQuick/CanvasGradient#addColorStop-method>`__****\ (real
+   **:ref:`addColorStop <sdk_qtquick_canvasgradient#addColorStop-method>`**\ (real
    *offsetof*, string *color*)
 
 Detailed Description
@@ -19,8 +23,10 @@ Detailed Description
 Method Documentation
 --------------------
 
+.. _sdk_qtquick_canvasgradient_-method:
+
 +--------------------------------------------------------------------------+
-|        \ `CanvasGradient </sdk/apps/qml/QtQuick/CanvasGradient/>`__      |
+| :ref:` <>`\ `CanvasGradient <sdk_qtquick_canvasgradient>`              |
 | addColorStop(real *offsetof*, string *color*)                            |
 +--------------------------------------------------------------------------+
 

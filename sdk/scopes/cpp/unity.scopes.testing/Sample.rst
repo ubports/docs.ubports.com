@@ -1,7 +1,10 @@
-The `Sample </sdk/scopes/cpp/unity.scopes.testing/Sample/>`__ class
-models the interface to a sample of raw observations and their
-statistical properties.
-`More... </sdk/scopes/cpp/unity.scopes.testing/Sample#details>`__
+.. _sdk_unity_scopes_testing_sample:
+unity.scopes.testing Sample
+===========================
+
+The :ref:`Sample <sdk_unity_scopes_testing_sample>` class models the
+interface to a sample of raw observations and their statistical
+properties. :ref:`More... <sdk_unity_scopes_testing_sample#details>`
 
 ``#include <unity/scopes/testing/Statistics.h>``
 
@@ -16,20 +19,20 @@ Inheritance diagram for unity::scopes::testing::Sample:
 
 typedef std::size\_t 
 
-`SizeType </sdk/scopes/cpp/unity.scopes.testing/Sample#a45542150c14b4486c58cb14cca3072e9>`__
+:ref:`SizeType <sdk_unity_scopes_testing_sample#a45542150c14b4486c58cb14cca3072e9>`
 
  
 
 typedef double 
 
-`ValueType </sdk/scopes/cpp/unity.scopes.testing/Sample#a9e02cfa261b23b40c9da59cda6ab0dc8>`__
+:ref:`ValueType <sdk_unity_scopes_testing_sample#a9e02cfa261b23b40c9da59cda6ab0dc8>`
 
  
 
 typedef std::function<
-void(\ `ValueType </sdk/scopes/cpp/unity.scopes.testing/Sample#a9e02cfa261b23b40c9da59cda6ab0dc8>`__)> 
+void(\ :ref:`ValueType <sdk_unity_scopes_testing_sample#a9e02cfa261b23b40c9da59cda6ab0dc8>`)> 
 
-`Enumerator </sdk/scopes/cpp/unity.scopes.testing/Sample#a4d588f4837a81c163ebd653d88648144>`__
+:ref:`Enumerator <sdk_unity_scopes_testing_sample#a4d588f4837a81c163ebd653d88648144>`
 
  
 
@@ -37,34 +40,34 @@ void(\ `ValueType </sdk/scopes/cpp/unity.scopes.testing/Sample#a9e02cfa261b23b40
 -------------------------------
 
 virtual
-`SizeType </sdk/scopes/cpp/unity.scopes.testing/Sample#a45542150c14b4486c58cb14cca3072e9>`__ 
+:ref:`SizeType <sdk_unity_scopes_testing_sample#a45542150c14b4486c58cb14cca3072e9>` 
 
-`get\_size </sdk/scopes/cpp/unity.scopes.testing/Sample#ab37cab3e43f1a8cbc9955ab6ec5e7e40>`__
+:ref:`get\_size <sdk_unity_scopes_testing_sample#ab37cab3e43f1a8cbc9955ab6ec5e7e40>`
 () const =0
 
  
 
 virtual
-`ValueType </sdk/scopes/cpp/unity.scopes.testing/Sample#a9e02cfa261b23b40c9da59cda6ab0dc8>`__ 
+:ref:`ValueType <sdk_unity_scopes_testing_sample#a9e02cfa261b23b40c9da59cda6ab0dc8>` 
 
-`get\_mean </sdk/scopes/cpp/unity.scopes.testing/Sample#aa4e03bd0ca10b2172954b50a3c544667>`__
+:ref:`get\_mean <sdk_unity_scopes_testing_sample#aa4e03bd0ca10b2172954b50a3c544667>`
 () const =0
 
  
 
 virtual
-`ValueType </sdk/scopes/cpp/unity.scopes.testing/Sample#a9e02cfa261b23b40c9da59cda6ab0dc8>`__ 
+:ref:`ValueType <sdk_unity_scopes_testing_sample#a9e02cfa261b23b40c9da59cda6ab0dc8>` 
 
-`get\_variance </sdk/scopes/cpp/unity.scopes.testing/Sample#a646d6b0dca1081f812958c86ce7e8d01>`__
+:ref:`get\_variance <sdk_unity_scopes_testing_sample#a646d6b0dca1081f812958c86ce7e8d01>`
 () const =0
 
  
 
 virtual void 
 
-`enumerate </sdk/scopes/cpp/unity.scopes.testing/Sample#a051bdf96e55f8da92bb3829bbf650cf4>`__
+:ref:`enumerate <sdk_unity_scopes_testing_sample#a051bdf96e55f8da92bb3829bbf650cf4>`
 (const
-`Enumerator </sdk/scopes/cpp/unity.scopes.testing/Sample#a4d588f4837a81c163ebd653d88648144>`__
+:ref:`Enumerator <sdk_unity_scopes_testing_sample#a4d588f4837a81c163ebd653d88648144>`
 &enumerator) const =0
 
  
@@ -72,28 +75,28 @@ virtual void 
 Detailed Description
 --------------------
 
-The `Sample </sdk/scopes/cpp/unity.scopes.testing/Sample/>`__ class
-models the interface to a sample of raw observations and their
-statistical properties.
+The :ref:`Sample <sdk_unity_scopes_testing_sample>` class models the
+interface to a sample of raw observations and their statistical
+properties.
 
 Member Typedef Documentation
 ----------------------------
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| typedef std::function<void(\ `ValueType </sdk/scopes/cpp/unity.scopes.testing/Sample#a9e02cfa261b23b40c9da59cda6ab0dc8>`__)> `unity::scopes::testing::Sample::Enumerator </sdk/scopes/cpp/unity.scopes.testing/Sample#a4d588f4837a81c163ebd653d88648144>`__   |
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| typedef std::function<void(\ :ref:`ValueType <sdk_unity_scopes_testing_sample#a9e02cfa261b23b40c9da59cda6ab0dc8>`)> `unity::scopes::testing::Sample::Enumerator <sdk_unity_scopes_testing_sample#a4d588f4837a81c163ebd653d88648144>`|
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Function signature for enumerating all raw observations.
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-| typedef std::size\_t `unity::scopes::testing::Sample::SizeType </sdk/scopes/cpp/unity.scopes.testing/Sample#a45542150c14b4486c58cb14cca3072e9>`__   |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+| typedef std::size\_t :ref:`unity::scopes::testing::Sample::SizeType <sdk_unity_scopes_testing_sample#a45542150c14b4486c58cb14cca3072e9>`|
++-----------------------------------------------------------------------------------------------------------------------------------------+
 
 Unsigned type describing the size of the sample.
 
-+------------------------------------------------------------------------------------------------------------------------------------------------+
-| typedef double `unity::scopes::testing::Sample::ValueType </sdk/scopes/cpp/unity.scopes.testing/Sample#a9e02cfa261b23b40c9da59cda6ab0dc8>`__   |
-+------------------------------------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------+
+| typedef double :ref:`unity::scopes::testing::Sample::ValueType <sdk_unity_scopes_testing_sample#a9e02cfa261b23b40c9da59cda6ab0dc8>`|
++------------------------------------------------------------------------------------------------------------------------------------+
 
 Floating point type describing an individual observation.
 
@@ -105,20 +108,20 @@ Member Function Documentation
 | -----------------------+-----+------ |                                      |
 | ------------------------------------ |                                      |
 | ------------------------------------ |                                      |
-| -----------------------------+------ |                                      |
-| ----------+-----+---------+          |                                      |
+| -----------------+----------------+- |                                      |
+| ----+---------+                      |                                      |
 | | virtual void unity::scopes::testin |                                      |
 | g::Sample::enumerate   | (   | const |                                      |
-|  `Enumerator </sdk/scopes/cpp/unity. |                                      |
-| scopes.testing/Sample#a4d588f4837a81 |                                      |
-| c163ebd653d88648144>`__ &    | *enum |                                      |
-| erator*   | )   | const   |          |                                      |
+|  :ref:`Enumerator <sdk_unity_scopes_testi |                                      |
+| ng_sample#a4d588f4837a81c163ebd653d8 |                                      |
+| 8648144>`_  &    | *enumerator*   |  |                                      |
+| )   | const   |                      |                                      |
 | +----------------------------------- |                                      |
 | -----------------------+-----+------ |                                      |
 | ------------------------------------ |                                      |
 | ------------------------------------ |                                      |
-| -----------------------------+------ |                                      |
-| ----------+-----+---------+          |                                      |
+| -----------------+----------------+- |                                      |
+| ----+---------+                      |                                      |
 +--------------------------------------+--------------------------------------+
 
 Enumerate all raw observations from the sample.
@@ -132,25 +135,22 @@ Implemented in unity::scopes::testing::Benchmark::Result::Timing.
 | | virtual        | (              |  |                                      |
 |                | )              | co |                                      |
 | nst          |                       |                                      |
-| | `ValueType </s |                |  |                                      |
+| | `ValueType <sd |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
-| | dk/scopes/cpp/ |                |  |                                      |
+| | k_unity_scopes |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
-| | unity.scopes.t |                |  |                                      |
+| | _testing_sampl |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
-| | esting/Sample# |                |  |                                      |
+| | e#a9e02cfa261b |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
-| | a9e02cfa261b23 |                |  |                                      |
+| | 23b40c9da59cda |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
-| | b40c9da59cda6a |                |  |                                      |
-|                |                |    |                                      |
-|              |                       |                                      |
-| | b0dc8>`__      |                |  |                                      |
+| | 6ab0dc8>`_     |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
 | | unity::scopes: |                |  |                                      |
@@ -178,25 +178,22 @@ Implemented in unity::scopes::testing::Benchmark::Result::Timing.
 | | virtual        | (              |  |                                      |
 |                | )              | co |                                      |
 | nst          |                       |                                      |
-| | `SizeType </sd |                |  |                                      |
+| | `SizeType <sdk |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
-| | k/scopes/cpp/u |                |  |                                      |
+| | _unity_scopes_ |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
-| | nity.scopes.te |                |  |                                      |
+| | testing_sample |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
-| | sting/Sample#a |                |  |                                      |
+| | #a45542150c14b |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
-| | 45542150c14b44 |                |  |                                      |
+| | 4486c58cb14cca |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
-| | 86c58cb14cca30 |                |  |                                      |
-|                |                |    |                                      |
-|              |                       |                                      |
-| | 72e9>`__       |                |  |                                      |
+| | 3072e9>`_      |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
 | | unity::scopes: |                |  |                                      |
@@ -224,25 +221,22 @@ Implemented in unity::scopes::testing::Benchmark::Result::Timing.
 | | virtual        | (              |  |                                      |
 |                | )              | co |                                      |
 | nst          |                       |                                      |
-| | `ValueType </s |                |  |                                      |
+| | `ValueType <sd |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
-| | dk/scopes/cpp/ |                |  |                                      |
+| | k_unity_scopes |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
-| | unity.scopes.t |                |  |                                      |
+| | _testing_sampl |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
-| | esting/Sample# |                |  |                                      |
+| | e#a9e02cfa261b |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
-| | a9e02cfa261b23 |                |  |                                      |
+| | 23b40c9da59cda |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
-| | b40c9da59cda6a |                |  |                                      |
-|                |                |    |                                      |
-|              |                       |                                      |
-| | b0dc8>`__      |                |  |                                      |
+| | 6ab0dc8>`_     |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
 | | unity::scopes: |                |  |                                      |
@@ -266,5 +260,5 @@ Query the empirical variance of the sample.
 
 Implemented in unity::scopes::testing::Benchmark::Result::Timing.
 
-.. |Inheritance graph| image:: /media/sdk/scopes/cpp/unity.scopes.testing/Sample/classunity_1_1scopes_1_1testing_1_1_sample__inherit__graph.png
+.. |Inheritance graph| image:: /mediasdk_unity_scopes_testing_sampleclassunity_1_1scopes_1_1testing_1_1_sample__inherit__graph.png
 

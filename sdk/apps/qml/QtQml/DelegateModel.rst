@@ -1,3 +1,7 @@
+.. _sdk_qtqml_delegatemodel:
+QtQml DelegateModel
+===================
+
 Encapsulates a model and delegate
 
 +---------------------+---------------------------+
@@ -7,72 +11,66 @@ Encapsulates a model and delegate
 Properties
 ----------
 
--  ****`count </sdk/apps/qml/QtQml/DelegateModel#count-prop>`__**** :
-   int
--  ****`delegate </sdk/apps/qml/QtQml/DelegateModel#delegate-prop>`__****
-   : Component
--  ****`filterOnGroup </sdk/apps/qml/QtQml/DelegateModel#filterOnGroup-prop>`__****
+-  :ref:`count <sdk_qtqml_delegatemodel_count-prop>` : int
+-  :ref:`delegate <sdk_qtqml_delegatemodel_delegate-prop>` :
+   Component
+-  :ref:`filterOnGroup <sdk_qtqml_delegatemodel_filterOnGroup-prop>`
    : string
--  ****`groups </sdk/apps/qml/QtQml/DelegateModel#groups-prop>`__**** :
+-  :ref:`groups <sdk_qtqml_delegatemodel_groups-prop>` :
    list<DelegateModelGroup>
--  ****`items </sdk/apps/qml/QtQml/DelegateModel#items-prop>`__**** :
+-  :ref:`items <sdk_qtqml_delegatemodel_items-prop>` :
    DelegateModelGroup
--  ****`model </sdk/apps/qml/QtQml/DelegateModel#model-prop>`__**** :
-   model
--  ****`parts </sdk/apps/qml/QtQml/DelegateModel#parts-prop>`__**** :
-   object
--  ****`persistedItems </sdk/apps/qml/QtQml/DelegateModel#persistedItems-prop>`__****
+-  :ref:`model <sdk_qtqml_delegatemodel_model-prop>` : model
+-  :ref:`parts <sdk_qtqml_delegatemodel_parts-prop>` : object
+-  :ref:`persistedItems <sdk_qtqml_delegatemodel_persistedItems-prop>`
    : DelegateModelGroup
--  ****`rootIndex </sdk/apps/qml/QtQml/DelegateModel#rootIndex-prop>`__****
-   : QModelIndex
+-  :ref:`rootIndex <sdk_qtqml_delegatemodel_rootIndex-prop>` :
+   QModelIndex
 
 Attached Properties
 -------------------
 
--  ****`groups </sdk/apps/qml/QtQml/DelegateModel#groups-attached-prop>`__****
-   : stringlist
--  ****`inItems </sdk/apps/qml/QtQml/DelegateModel#inItems-attached-prop>`__****
+-  :ref:`groups <sdk_qtqml_delegatemodel_groups-attached-prop>` :
+   stringlist
+-  :ref:`inItems <sdk_qtqml_delegatemodel_inItems-attached-prop>` :
+   int
+-  :ref:`inPersistedItems <sdk_qtqml_delegatemodel_inPersistedItems-attached-prop>`
    : int
--  ****`inPersistedItems </sdk/apps/qml/QtQml/DelegateModel#inPersistedItems-attached-prop>`__****
-   : int
--  ****`isUnresolved </sdk/apps/qml/QtQml/DelegateModel#isUnresolved-attached-prop>`__****
+-  :ref:`isUnresolved <sdk_qtqml_delegatemodel_isUnresolved-attached-prop>`
    : bool
--  ****`itemsIndex </sdk/apps/qml/QtQml/DelegateModel#itemsIndex-attached-prop>`__****
+-  :ref:`itemsIndex <sdk_qtqml_delegatemodel_itemsIndex-attached-prop>`
    : int
--  ****`model </sdk/apps/qml/QtQml/DelegateModel#model-attached-prop>`__****
-   : int
--  ****`persistedItemsIndex </sdk/apps/qml/QtQml/DelegateModel#persistedItemsIndex-attached-prop>`__****
+-  :ref:`model <sdk_qtqml_delegatemodel_model-attached-prop>` : int
+-  :ref:`persistedItemsIndex <sdk_qtqml_delegatemodel_persistedItemsIndex-attached-prop>`
    : int
 
 Methods
 -------
 
 -  QModelIndex
-   ****`modelIndex </sdk/apps/qml/QtQml/DelegateModel#modelIndex-method>`__****\ (int
+   **:ref:`modelIndex <sdk_qtqml_delegatemodel#modelIndex-method>`**\ (int
    *index*)
 -  QModelIndex
-   ****`parentModelIndex </sdk/apps/qml/QtQml/DelegateModel#parentModelIndex-method>`__****\ ()
+   **:ref:`parentModelIndex <sdk_qtqml_delegatemodel#parentModelIndex-method>`**\ ()
 
 Detailed Description
 --------------------
 
-The `DelegateModel </sdk/apps/qml/QtQml/DelegateModel/>`__ type
-encapsulates a model and the delegate that will be instantiated for
-items in the model.
+The :ref:`DelegateModel <sdk_qtqml_delegatemodel>` type encapsulates a
+model and the delegate that will be instantiated for items in the model.
 
 It is usually not necessary to create a
-`DelegateModel </sdk/apps/qml/QtQml/DelegateModel/>`__. However, it can
-be useful for manipulating and accessing the
-`modelIndex </sdk/apps/qml/QtQml/DelegateModel#modelIndex-method>`__
-when a QAbstractItemModel subclass is used as the model. Also,
-`DelegateModel </sdk/apps/qml/QtQml/DelegateModel/>`__ is used together
-with `Package </sdk/apps/qml/QtQml/Package/>`__ to provide delegates to
-multiple views, and with
-`DelegateModelGroup </sdk/apps/qml/QtQml/DelegateModelGroup/>`__ to sort
+:ref:`DelegateModel <sdk_qtqml_delegatemodel>`. However, it can be useful
+for manipulating and accessing the
+:ref:`modelIndex <sdk_qtqml_delegatemodel#modelIndex-method>` when a
+QAbstractItemModel subclass is used as the model. Also,
+:ref:`DelegateModel <sdk_qtqml_delegatemodel>` is used together with
+:ref:`Package <sdk_qtqml_package>` to provide delegates to multiple views,
+and with :ref:`DelegateModelGroup <sdk_qtqml_delegatemodelgroup>` to sort
 and filter delegate items.
 
 The example below illustrates using a
-`DelegateModel </sdk/apps/qml/QtQml/DelegateModel/>`__ with a ListView.
+:ref:`DelegateModel <sdk_qtqml_delegatemodel>` with a ListView.
 
 .. code:: qml
 
@@ -98,12 +96,14 @@ The example below illustrates using a
     }
 
 **Note:** This type is also available as
-`VisualDataModel </sdk/apps/qml/QtQml/VisualDataModel/>`__ in the `Qt
-QML </sdk/apps/qml/QtQml/qtqml-index/>`__ module due to compatibility
+:ref:`VisualDataModel <sdk_qtqml_visualdatamodel>` in the `Qt
+QML </sdk/apps/qml/QtQml/qtqml-index/>`_  module due to compatibility
 reasons.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtqml_delegatemodel_count-prop:
 
 +--------------------------------------------------------------------------+
 |        \ count : int                                                     |
@@ -111,8 +111,10 @@ Property Documentation
 
 | 
 
+.. _sdk_qtqml_delegatemodel_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ delegate : `Component </sdk/apps/qml/QtQml/Component/>`__       |
+| :ref:` <>`\ delegate : `Component <sdk_qtqml_component>`               |
 +--------------------------------------------------------------------------+
 
 The delegate provides a template defining each item instantiated by a
@@ -121,6 +123,8 @@ Properties of the model are also available depending upon the type of
 Data Model.
 
 | 
+
+.. _sdk_qtqml_delegatemodel_filterOnGroup-prop:
 
 +--------------------------------------------------------------------------+
 |        \ filterOnGroup : string                                          |
@@ -131,14 +135,16 @@ model.
 
 Only items which belong to this group are visible to a view.
 
-By default this is the
-`items </sdk/apps/qml/QtQml/DelegateModel#items-prop>`__ group.
+By default this is the :ref:`items <sdk_qtqml_delegatemodel#items-prop>`
+group.
 
 | 
 
+.. _sdk_qtqml_delegatemodel_groups-prop:
+
 +--------------------------------------------------------------------------+
 |        \ groups :                                                        |
-| list<`DelegateModelGroup </sdk/apps/qml/QtQml/DelegateModelGroup/>`__>   |
+| list<:ref:`DelegateModelGroup <sdk_qtqml_delegatemodelgroup>`>              |
 +--------------------------------------------------------------------------+
 
 This property holds a delegate model's group definitions.
@@ -146,13 +152,12 @@ This property holds a delegate model's group definitions.
 Groups define a sub-set of the items in a delegate model and can be used
 to filter a model.
 
-For every group defined in a
-`DelegateModel </sdk/apps/qml/QtQml/DelegateModel/>`__ two attached
-properties are added to each delegate item. The first of the form
-`DelegateModel </sdk/apps/qml/QtQml/DelegateModel/>`__.in\ *GroupName*
+For every group defined in a :ref:`DelegateModel <sdk_qtqml_delegatemodel>`
+two attached properties are added to each delegate item. The first of
+the form :ref:`DelegateModel <sdk_qtqml_delegatemodel>`.in\ *GroupName*
 holds whether the item belongs to the group and the second
-`DelegateModel </sdk/apps/qml/QtQml/DelegateModel/>`__.\ *groupName*\ Index
-holds the index of the item in that group.
+:ref:`DelegateModel <sdk_qtqml_delegatemodel>`.\ *groupName*\ Index holds
+the index of the item in that group.
 
 The following example illustrates using groups to select items in a
 model.
@@ -197,9 +202,10 @@ model.
 
 | 
 
+.. _sdk_qtqml_delegatemodel_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ items :                                                         |
-| `DelegateModelGroup </sdk/apps/qml/QtQml/DelegateModelGroup/>`__         |
+| :ref:` <>`\ items : `DelegateModelGroup <sdk_qtqml_delegatemodelgroup>`|
 +--------------------------------------------------------------------------+
 
 This property holds visual data model's default group to which all new
@@ -207,13 +213,14 @@ items are added.
 
 | 
 
+.. _sdk_qtqml_delegatemodel_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ model :                                                         |
-| `model </sdk/apps/qml/QtQml/DelegateModel#model-attached-prop>`__        |
+| :ref:` <>`\ model : `model <sdk_qtqml_delegatemodel#model-attached-prop>` |
 +--------------------------------------------------------------------------+
 
 This property holds the model providing data for the
-`DelegateModel </sdk/apps/qml/QtQml/DelegateModel/>`__.
+:ref:`DelegateModel <sdk_qtqml_delegatemodel>`.
 
 The model provides a set of data that is used to create the items for a
 view. For large or dynamic datasets the model is usually provided by a
@@ -221,23 +228,25 @@ C++ model object. The C++ model object must be a QAbstractItemModel
 subclass or a simple list.
 
 Models can also be created directly in QML, using a
-`ListModel </sdk/apps/qml/QtQml/ListModel/>`__ or XmlListModel.
+:ref:`ListModel <sdk_qtqml_listmodel>` or XmlListModel.
 
 **See also** Data Models.
 
 | 
+
+.. _sdk_qtqml_delegatemodel_parts-prop:
 
 +--------------------------------------------------------------------------+
 |        \ parts : object                                                  |
 +--------------------------------------------------------------------------+
 
 The *parts* property selects a
-`DelegateModel </sdk/apps/qml/QtQml/DelegateModel/>`__ which creates
-delegates from the part named. This is used in conjunction with the
-`Package </sdk/apps/qml/QtQml/Package/>`__ type.
+:ref:`DelegateModel <sdk_qtqml_delegatemodel>` which creates delegates from
+the part named. This is used in conjunction with the
+:ref:`Package <sdk_qtqml_package>` type.
 
 For example, the code below selects a model which creates delegates
-named *list* from a `Package </sdk/apps/qml/QtQml/Package/>`__:
+named *list* from a :ref:`Package <sdk_qtqml_package>`:
 
 .. code:: cpp
 
@@ -253,13 +262,15 @@ named *list* from a `Package </sdk/apps/qml/QtQml/Package/>`__:
         model: visualModel.parts.list
     }
 
-**See also** `Package </sdk/apps/qml/QtQml/Package/>`__.
+**See also** :ref:`Package <sdk_qtqml_package>`.
 
 | 
 
+.. _sdk_qtqml_delegatemodel_persistedItems-prop:
+
 +--------------------------------------------------------------------------+
 |        \ persistedItems :                                                |
-| `DelegateModelGroup </sdk/apps/qml/QtQml/DelegateModelGroup/>`__         |
+| :ref:`DelegateModelGroup <sdk_qtqml_delegatemodelgroup>`                    |
 +--------------------------------------------------------------------------+
 
 This property holds visual data model's persisted items group.
@@ -268,16 +279,18 @@ Items in this group are not destroyed when released by a view, instead
 they are persisted until removed from the group.
 
 An item can be removed from the persistedItems group by setting the
-`DelegateModel </sdk/apps/qml/QtQml/DelegateModel/>`__.\ `inPersistedItems </sdk/apps/qml/QtQml/DelegateModel#inPersistedItems-attached-prop>`__
+:ref:`DelegateModel <sdk_qtqml_delegatemodel>`.\ `inPersistedItems <sdk_qtqml_delegatemodel#inPersistedItems-attached-prop>`
 property to false. If the item is not referenced by a view at that time
 it will be destroyed. Adding an item to this group will not create a new
 instance.
 
 Items returned by the
-`QtQml.Models::DelegateModelGroup::create() </sdk/apps/qml/QtQml/DelegateModelGroup#create-method>`__
+:ref:`QtQml.Models::DelegateModelGroup::create() <sdk_qtqml_delegatemodelgroup#create-method>`
 function are automatically added to this group.
 
 | 
+
+.. _sdk_qtqml_delegatemodel_rootIndex-prop:
 
 +--------------------------------------------------------------------------+
 |        \ rootIndex : QModelIndex                                         |
@@ -335,21 +348,22 @@ show the new directory's contents.
         }
     }
 
-If the `model </sdk/apps/qml/QtQml/DelegateModel#model-attached-prop>`__
-is a QAbstractItemModel subclass, the delegate can also reference a
+If the :ref:`model <sdk_qtqml_delegatemodel#model-attached-prop>` is a
+QAbstractItemModel subclass, the delegate can also reference a
 ``hasModelChildren`` property (optionally qualified by a *model*.
 prefix) that indicates whether the delegate's model item has any child
 nodes.
 
 **See also**
-`modelIndex() </sdk/apps/qml/QtQml/DelegateModel#modelIndex-method>`__
-and
-`parentModelIndex() </sdk/apps/qml/QtQml/DelegateModel#parentModelIndex-method>`__.
+:ref:`modelIndex() <sdk_qtqml_delegatemodel#modelIndex-method>` and
+:ref:`parentModelIndex() <sdk_qtqml_delegatemodel#parentModelIndex-method>`.
 
 | 
 
 Attached Property Documentation
 -------------------------------
+
+.. _sdk_qtqml_delegatemodel_DelegateModel.groups-prop:
 
 +--------------------------------------------------------------------------+
 |        \ DelegateModel.groups : stringlist                               |
@@ -362,37 +376,42 @@ It is attached to each instance of the delegate.
 
 | 
 
+.. _sdk_qtqml_delegatemodel_DelegateModel.inItems-prop:
+
 +--------------------------------------------------------------------------+
 |        \ DelegateModel.inItems : int                                     |
 +--------------------------------------------------------------------------+
 
 This attached property holds whether the item belongs to the default
-`items </sdk/apps/qml/QtQml/DelegateModel#items-prop>`__
-`DelegateModelGroup </sdk/apps/qml/QtQml/DelegateModelGroup/>`__.
+:ref:`items <sdk_qtqml_delegatemodel#items-prop>`
+:ref:`DelegateModelGroup <sdk_qtqml_delegatemodelgroup>`.
 
 Changing this property will add or remove the item from the items group.
 
 It is attached to each instance of the delegate.
 
 | 
+
+.. _sdk_qtqml_delegatemodel_DelegateModel.inPersistedItems-prop:
 
 +--------------------------------------------------------------------------+
 |        \ DelegateModel.inPersistedItems : int                            |
 +--------------------------------------------------------------------------+
 
 This attached property holds whether the item belongs to the
-`persistedItems </sdk/apps/qml/QtQml/DelegateModel#persistedItems-prop>`__
-`DelegateModelGroup </sdk/apps/qml/QtQml/DelegateModelGroup/>`__.
+:ref:`persistedItems <sdk_qtqml_delegatemodel#persistedItems-prop>`
+:ref:`DelegateModelGroup <sdk_qtqml_delegatemodelgroup>`.
 
 Changing this property will add or remove the item from the items group.
 Change with caution as removing an item from the
-`persistedItems </sdk/apps/qml/QtQml/DelegateModel#persistedItems-prop>`__
-group will destroy the current instance if it is not referenced by a
-model.
+:ref:`persistedItems <sdk_qtqml_delegatemodel#persistedItems-prop>` group
+will destroy the current instance if it is not referenced by a model.
 
 It is attached to each instance of the delegate.
 
 | 
+
+.. _sdk_qtqml_delegatemodel_DelegateModel.isUnresolved-prop:
 
 +--------------------------------------------------------------------------+
 |        \ DelegateModel.isUnresolved : bool                               |
@@ -403,24 +422,28 @@ model index. Returns true if the item is not bound to the model, and
 false if it is.
 
 An unresolved item can be bound to the data model using the
-`DelegateModelGroup::resolve() </sdk/apps/qml/QtQml/DelegateModelGroup#resolve-method>`__
+:ref:`DelegateModelGroup::resolve() <sdk_qtqml_delegatemodelgroup#resolve-method>`
 function.
 
 It is attached to each instance of the delegate.
 
 | 
 
+.. _sdk_qtqml_delegatemodel_DelegateModel.itemsIndex-prop:
+
 +--------------------------------------------------------------------------+
 |        \ DelegateModel.itemsIndex : int                                  |
 +--------------------------------------------------------------------------+
 
 This attached property holds the index of the item in the default
-`items </sdk/apps/qml/QtQml/DelegateModel#items-prop>`__
-`DelegateModelGroup </sdk/apps/qml/QtQml/DelegateModelGroup/>`__.
+:ref:`items <sdk_qtqml_delegatemodel#items-prop>`
+:ref:`DelegateModelGroup <sdk_qtqml_delegatemodelgroup>`.
 
 It is attached to each instance of the delegate.
 
 | 
+
+.. _sdk_qtqml_delegatemodel_DelegateModel.model-prop:
 
 +--------------------------------------------------------------------------+
 |        \ DelegateModel.model : int                                       |
@@ -433,13 +456,15 @@ It is attached to each instance of the delegate.
 
 | 
 
+.. _sdk_qtqml_delegatemodel_DelegateModel.persistedItemsIndex-prop:
+
 +--------------------------------------------------------------------------+
 |        \ DelegateModel.persistedItemsIndex : int                         |
 +--------------------------------------------------------------------------+
 
 This attached property holds the index of the item in the
-`persistedItems </sdk/apps/qml/QtQml/DelegateModel#persistedItems-prop>`__
-`DelegateModelGroup </sdk/apps/qml/QtQml/DelegateModelGroup/>`__.
+:ref:`persistedItems <sdk_qtqml_delegatemodel#persistedItems-prop>`
+:ref:`DelegateModelGroup <sdk_qtqml_delegatemodelgroup>`.
 
 It is attached to each instance of the delegate.
 
@@ -447,6 +472,8 @@ It is attached to each instance of the delegate.
 
 Method Documentation
 --------------------
+
+.. _sdk_qtqml_delegatemodel_QModelIndex modelIndex-method:
 
 +--------------------------------------------------------------------------+
 |        \ QModelIndex modelIndex(int *index*)                             |
@@ -457,13 +484,13 @@ only operates on list data. This function assists in using tree models
 in QML.
 
 Returns a QModelIndex for the specified index. This value can be
-assigned to
-`rootIndex </sdk/apps/qml/QtQml/DelegateModel#rootIndex-prop>`__.
+assigned to :ref:`rootIndex <sdk_qtqml_delegatemodel#rootIndex-prop>`.
 
-**See also**
-`rootIndex </sdk/apps/qml/QtQml/DelegateModel#rootIndex-prop>`__.
+**See also** :ref:`rootIndex <sdk_qtqml_delegatemodel#rootIndex-prop>`.
 
 | 
+
+.. _sdk_qtqml_delegatemodel_QModelIndex parentModelIndex-method:
 
 +--------------------------------------------------------------------------+
 |        \ QModelIndex parentModelIndex()                                  |
@@ -474,11 +501,9 @@ only operates on list data. This function assists in using tree models
 in QML.
 
 Returns a QModelIndex for the parent of the current
-`rootIndex </sdk/apps/qml/QtQml/DelegateModel#rootIndex-prop>`__. This
-value can be assigned to
-`rootIndex </sdk/apps/qml/QtQml/DelegateModel#rootIndex-prop>`__.
+:ref:`rootIndex <sdk_qtqml_delegatemodel#rootIndex-prop>`. This value can
+be assigned to :ref:`rootIndex <sdk_qtqml_delegatemodel#rootIndex-prop>`.
 
-**See also**
-`rootIndex </sdk/apps/qml/QtQml/DelegateModel#rootIndex-prop>`__.
+**See also** :ref:`rootIndex <sdk_qtqml_delegatemodel#rootIndex-prop>`.
 
 | 

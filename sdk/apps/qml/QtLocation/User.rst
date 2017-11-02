@@ -1,3 +1,7 @@
+.. _sdk_qtlocation_user:
+QtLocation User
+===============
+
 The User type identifies a user who contributed a particular Place
 content item.
 
@@ -10,18 +14,16 @@ content item.
 Properties
 ----------
 
--  ****`name </sdk/apps/qml/QtLocation/User#name-prop>`__**** : string
--  ****`user </sdk/apps/qml/QtLocation/User#user-prop>`__**** :
-   QPlaceUser
--  ****`userId </sdk/apps/qml/QtLocation/User#userId-prop>`__**** :
-   string
+-  :ref:`name <sdk_qtlocation_user_name-prop>` : string
+-  :ref:`user <sdk_qtlocation_user_user-prop>` : QPlaceUser
+-  :ref:`userId <sdk_qtlocation_user_userId-prop>` : string
 
 Detailed Description
 --------------------
 
-Each `Place </sdk/apps/qml/QtLocation/location-cpp-qml#place>`__ content
-item has an associated user who contributed the content. This type
-provides information about that user.
+Each `Place </sdk/apps/qml/QtLocation/location-cpp-qml/#place>`_ 
+content item has an associated user who contributed the content. This
+type provides information about that user.
 
 Example
 -------
@@ -81,12 +83,14 @@ who submitted an editorial:
         }
     }
 
-**See also** `ImageModel </sdk/apps/qml/QtLocation/ImageModel/>`__,
-`ReviewModel </sdk/apps/qml/QtLocation/ReviewModel/>`__, and
-`EditorialModel </sdk/apps/qml/QtLocation/EditorialModel/>`__.
+**See also** :ref:`ImageModel <sdk_qtlocation_imagemodel>`,
+:ref:`ReviewModel <sdk_qtlocation_reviewmodel>`, and
+:ref:`EditorialModel <sdk_qtlocation_editorialmodel>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtlocation_user_name-prop:
 
 +--------------------------------------------------------------------------+
 |        \ name : string                                                   |
@@ -96,6 +100,8 @@ This property holds the name of a user.
 
 | 
 
+.. _sdk_qtlocation_user_user-prop:
+
 +--------------------------------------------------------------------------+
 |        \ user : QPlaceUser                                               |
 +--------------------------------------------------------------------------+
@@ -104,6 +110,8 @@ For details on how to use this property to interface between C++ and QML
 see "Interfaces between C++ and QML Code".
 
 | 
+
+.. _sdk_qtlocation_user_userId-prop:
 
 +--------------------------------------------------------------------------+
 |        \ userId : string                                                 |

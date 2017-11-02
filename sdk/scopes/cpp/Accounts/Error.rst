@@ -1,5 +1,9 @@
+.. _sdk_accounts_error:
+Accounts Error
+==============
+
 Base object definition for accounts error handling.
-`More... </sdk/scopes/cpp/Accounts/Error#details>`__
+:ref:`More... <sdk_accounts_error#details>`
 
 ``#include <Accounts/Error>``
 
@@ -8,20 +12,18 @@ Base object definition for accounts error handling.
 
 enum  
 
-| `ErrorType </sdk/scopes/cpp/Accounts/Error#ab0df38968e4f03a3f1f6d6df0f31f45a>`__
-  {
+| :ref:`ErrorType <sdk_accounts_error#ab0df38968e4f03a3f1f6d6df0f31f45a>` {
 |   **NoError** = 0, **Unknown**,
-  `Database </sdk/scopes/cpp/Accounts/Error#ab0df38968e4f03a3f1f6d6df0f31f45aa31884bb2cfbd4d8e2d428904eb1c3f98>`__,
-  `Deleted </sdk/scopes/cpp/Accounts/Error#ab0df38968e4f03a3f1f6d6df0f31f45aa04ba35ff69a05b2a16733a01fc003d88>`__,
-|   `DatabaseLocked </sdk/scopes/cpp/Accounts/Error#ab0df38968e4f03a3f1f6d6df0f31f45aa155f5bb6520a1d872efe0563428315bf>`__,
-  `AccountNotFound </sdk/scopes/cpp/Accounts/Error#ab0df38968e4f03a3f1f6d6df0f31f45aab49b276755b64c7a63a391e03aebbf49>`__
+  :ref:`Database <sdk_accounts_error#ab0df38968e4f03a3f1f6d6df0f31f45aa31884bb2cfbd4d8e2d428904eb1c3f98>`,
+  :ref:`Deleted <sdk_accounts_error#ab0df38968e4f03a3f1f6d6df0f31f45aa04ba35ff69a05b2a16733a01fc003d88>`,
+|   :ref:`DatabaseLocked <sdk_accounts_error#ab0df38968e4f03a3f1f6d6df0f31f45aa155f5bb6520a1d872efe0563428315bf>`,
+  :ref:`AccountNotFound <sdk_accounts_error#ab0df38968e4f03a3f1f6d6df0f31f45aab49b276755b64c7a63a391e03aebbf49>`
 | }
 
  
 
-| `Error </sdk/scopes/cpp/Accounts/Error/>`__ codes for all the accounts
-  errors.
-  `More... </sdk/scopes/cpp/Accounts/Error#ab0df38968e4f03a3f1f6d6df0f31f45a>`__
+| :ref:`Error <sdk_accounts_error>` codes for all the accounts errors.
+  :ref:`More... <sdk_accounts_error#ab0df38968e4f03a3f1f6d6df0f31f45a>`
 
  
 
@@ -30,8 +32,7 @@ enum  
 
          
 
-`Error </sdk/scopes/cpp/Accounts/Error#a17be1abe802fb9ab3acebe900748cf79>`__
-()
+:ref:`Error <sdk_accounts_error#a17be1abe802fb9ab3acebe900748cf79>` ()
 
  
 
@@ -41,8 +42,8 @@ enum  
 
  
 
-`Error </sdk/scopes/cpp/Accounts/Error#abc095ef325fbb7c22399270e62f400ca>`__
-(const `Error </sdk/scopes/cpp/Accounts/Error/>`__ &src)
+:ref:`Error <sdk_accounts_error#abc095ef325fbb7c22399270e62f400ca>` (const
+:ref:`Error <sdk_accounts_error>` &src)
 
  
 
@@ -52,11 +53,11 @@ enum  
 
  
 
-`Error </sdk/scopes/cpp/Accounts/Error#a43fd5cb964997186acb7f0297cefd666>`__
-(`ErrorType </sdk/scopes/cpp/Accounts/Error#ab0df38968e4f03a3f1f6d6df0f31f45a>`__
-`type </sdk/scopes/cpp/Accounts/Error#ac3b58ce6dc3ba4cbfbabd9d7d7774567>`__,
-const QString
-&\ `message </sdk/scopes/cpp/Accounts/Error#aba2e3009745c37baeaf086e1bc6a3b8d>`__\ =QString())
+:ref:`Error <sdk_accounts_error#a43fd5cb964997186acb7f0297cefd666>`
+(:ref:`ErrorType <sdk_accounts_error#ab0df38968e4f03a3f1f6d6df0f31f45a>`
+:ref:`type <sdk_accounts_error#ac3b58ce6dc3ba4cbfbabd9d7d7774567>`, const
+QString
+&\ :ref:`message <sdk_accounts_error#aba2e3009745c37baeaf086e1bc6a3b8d>`\ =QString())
 
  
 
@@ -64,10 +65,10 @@ const QString
 
  
 
-`Error </sdk/scopes/cpp/Accounts/Error/>`__ & 
+:ref:`Error <sdk_accounts_error>` & 
 
-`operator= </sdk/scopes/cpp/Accounts/Error#a25f9ffea919d1d0c265a93df49ee3b32>`__
-(const `Error </sdk/scopes/cpp/Accounts/Error/>`__ &src)
+:ref:`operator= <sdk_accounts_error#a25f9ffea919d1d0c265a93df49ee3b32>`
+(const :ref:`Error <sdk_accounts_error>` &src)
 
  
 
@@ -77,8 +78,7 @@ const QString
 
         virtual 
 
-`~Error </sdk/scopes/cpp/Accounts/Error#a810251c55fc575f642cf343c4413c2b1>`__
-()
+:ref:`~Error <sdk_accounts_error#a810251c55fc575f642cf343c4413c2b1>` ()
 
  
 
@@ -86,17 +86,16 @@ const QString
 
  
 
-`ErrorType </sdk/scopes/cpp/Accounts/Error#ab0df38968e4f03a3f1f6d6df0f31f45a>`__ 
+:ref:`ErrorType <sdk_accounts_error#ab0df38968e4f03a3f1f6d6df0f31f45a>` 
 
-`type </sdk/scopes/cpp/Accounts/Error#ac3b58ce6dc3ba4cbfbabd9d7d7774567>`__
-() const
+:ref:`type <sdk_accounts_error#ac3b58ce6dc3ba4cbfbabd9d7d7774567>` () const
 
  
 
 QString 
 
-`message </sdk/scopes/cpp/Accounts/Error#aba2e3009745c37baeaf086e1bc6a3b8d>`__
-() const
+:ref:`message <sdk_accounts_error#aba2e3009745c37baeaf086e1bc6a3b8d>` ()
+const
 
  
 
@@ -110,12 +109,11 @@ Definition at line 42 of file error.h.
 Member Enumeration Documentation
 --------------------------------
 
-+-----------------------------------------------------------------------------------------+
-| enum `ErrorType </sdk/scopes/cpp/Accounts/Error#ab0df38968e4f03a3f1f6d6df0f31f45a>`__   |
-+-----------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+| enum :ref:`ErrorType <sdk_accounts_error#ab0df38968e4f03a3f1f6d6df0f31f45a>`|
++-----------------------------------------------------------------------------+
 
-`Error </sdk/scopes/cpp/Accounts/Error/>`__ codes for all the accounts
-errors.
+:ref:`Error <sdk_accounts_error>` codes for all the accounts errors.
 
 Enumerator
        \ Database 
@@ -139,20 +137,17 @@ Constructor & Destructor Documentation
 | +--------------+--------------+----- | inline                               |
 | ---------+--------------+----------- |                                      |
 | ---+--------------+                  |                                      |
-| | `Error </sdk | (            | cons |                                      |
+| | :ref:`Error <sdk_ | (            | cons |                                      |
 | t        | *src*        | )          |                                      |
 |    |              |                  |                                      |
-| | /scopes/cpp/ |              | `Err |                                      |
-| or </sdk |              |            |                                      |
+| | accounts_err |              | `Err |                                      |
+| or <sdk_ |              |            |                                      |
 |    |              |                  |                                      |
-| | Accounts/Err |              | /sco |                                      |
-| pes/cpp/ |              |            |                                      |
+| | or>`_        |              | acco |                                      |
+| unts_err |              |            |                                      |
 |    |              |                  |                                      |
-| | or/>`__      |              | Acco |                                      |
-| unts/Err |              |            |                                      |
-|    |              |                  |                                      |
-| |              |              | or/> |                                      |
-| `__      |              |            |                                      |
+| |              |              | or>` |                                      |
+| __       |              |            |                                      |
 |    |              |                  |                                      |
 | |              |              | &    |                                      |
 |          |              |            |                                      |
@@ -165,9 +160,9 @@ Constructor & Destructor Documentation
 Copy constructor.
 
 Parameters
-    +-------+--------------------------------------------------------------------+
-    | src   | `Error </sdk/scopes/cpp/Accounts/Error/>`__ object to be copied.   |
-    +-------+--------------------------------------------------------------------+
+    +-------+-------------------------------------------------------+
+    | src   | :ref:`Error <sdk_accounts_error>` object to be copied.   |
+    +-------+-------------------------------------------------------+
 
 Definition at line 67 of file error.h.
 
@@ -175,20 +170,17 @@ Definition at line 67 of file error.h.
 | +--------------------+-------------- | inline                               |
 | ------+--------------------+-------- |                                      |
 | ------------+                        |                                      |
-| | `Error </sdk/scope | (             |                                      |
-|       | `ErrorType </sdk/s | *type*, |                                      |
+| | :ref:`Error <sdk_accoun | (             |                                      |
+|       | :ref:`ErrorType <sdk_ac | *type*, |                                      |
 |             |                        |                                      |
-| | s/cpp/Accounts/Err |               |                                      |
-|       | copes/cpp/Accounts |         |                                      |
-|             |                        |                                      |
-| | or/>`__            |               |                                      |
-|       | /Error#ab0df38968e |         |                                      |
+| | ts_error>`_        |               |                                      |
+|       | counts_error#ab0df |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
-|       | 4f03a3f1f6d6df0f31 |         |                                      |
+|       | 38968e4f03a3f1f6d6 |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
-|       | f45a>`__           |         |                                      |
+|       | df0f31f45a>`_      |         |                                      |
 |             |                        |                                      |
 | +--------------------+-------------- |                                      |
 | ------+--------------------+-------- |                                      |
@@ -250,20 +242,17 @@ Referenced by Error::operator=().
 | +--------------+--------------+----- | inline                               |
 | ---------+--------------+----------- |                                      |
 | ---+--------------+                  |                                      |
-| | `Error </sdk | (            | cons |                                      |
+| | :ref:`Error <sdk_ | (            | cons |                                      |
 | t        | *src*        | )          |                                      |
 |    |              |                  |                                      |
-| | /scopes/cpp/ |              | `Err |                                      |
-| or </sdk |              |            |                                      |
+| | accounts_err |              | `Err |                                      |
+| or <sdk_ |              |            |                                      |
 |    |              |                  |                                      |
-| | Accounts/Err |              | /sco |                                      |
-| pes/cpp/ |              |            |                                      |
+| | or>`_ \ &    |              | acco |                                      |
+| unts_err |              |            |                                      |
 |    |              |                  |                                      |
-| | or/>`__\ &   |              | Acco |                                      |
-| unts/Err |              |            |                                      |
-|    |              |                  |                                      |
-| | operator=    |              | or/> |                                      |
-| `__      |              |            |                                      |
+| | operator=    |              | or>` |                                      |
+| __       |              |            |                                      |
 |    |              |                  |                                      |
 | |              |              | &    |                                      |
 |          |              |            |                                      |
@@ -288,22 +277,19 @@ References Error::message(), and Error::type().
 | +----------------+----------------+- | inline                               |
 | ---------------+----------------+--- |                                      |
 | -------------+                       |                                      |
-| | `ErrorType </s | (              |  |                                      |
+| | `ErrorType <sd | (              |  |                                      |
 |                | )              | co |                                      |
 | nst          |                       |                                      |
-| | dk/scopes/cpp/ |                |  |                                      |
+| | k_accounts_err |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
-| | Accounts/Error |                |  |                                      |
+| | or#ab0df38968e |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
-| | #ab0df38968e4f |                |  |                                      |
+| | 4f03a3f1f6d6df |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
-| | 03a3f1f6d6df0f |                |  |                                      |
-|                |                |    |                                      |
-|              |                       |                                      |
-| | 31f45a>`__     |                |  |                                      |
+| | 0f31f45a>`_    |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
 | | type           |                |  |                                      |

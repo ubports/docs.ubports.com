@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_magnetometer:
+QtSensors Magnetometer
+======================
+
 The Magnetometer element reports on magnetic field strength along the Z,
 Y and Z axes.
 
@@ -6,14 +10,13 @@ Y and Z axes.
 +--------------------------------------+--------------------------------------+
 | Since:                               | QtSensors 5.0                        |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Sensor </sdk/apps/qml/QtSensors/Sen |
-|                                      | sor/>`__                             |
+| Inherits:                            | :ref:`Sensor <sdk_qtsensors_sensor>` |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`returnGeoValues </sdk/apps/qml/QtSensors/Magnetometer#returnGeoValues-prop>`__****
+-  :ref:`returnGeoValues <sdk_qtsensors_magnetometer_returnGeoValues-prop>`
    : bool
 
 Detailed Description
@@ -26,10 +29,12 @@ This element wraps the QMagnetometer class. Please see the documentation
 for QMagnetometer for details.
 
 **See also**
-`MagnetometerReading </sdk/apps/qml/QtSensors/MagnetometerReading/>`__.
+:ref:`MagnetometerReading <sdk_qtsensors_magnetometerreading>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtsensors_magnetometer_returnGeoValues-prop:
 
 +--------------------------------------------------------------------------+
 |        \ returnGeoValues : bool                                          |

@@ -1,3 +1,7 @@
+.. _sdk_unity_scopes_api:
+Unity Scopes API
+================
+
 
 .. rubric::         What are scopes
    :name: what-are-scopes
@@ -157,16 +161,16 @@ unity-scopes-api source project.
 A typical scope implementation needs to implement interfaces of the
 following classes from the Scopes API:
 
--  `unity::scopes::ScopeBase </sdk/scopes/cpp/unity.scopes.ScopeBase/>`__
+-  `unity::scopes::ScopeBase </sdk/scopes/cpp/unity.scopes.ScopeBase/>`_ 
    - the main scope class and entry point for all incoming requests
--  `unity::scopes::SearchQueryBase </sdk/scopes/cpp/unity.scopes.SearchQueryBase/>`__
+-  `unity::scopes::SearchQueryBase </sdk/scopes/cpp/unity.scopes.SearchQueryBase/>`_ 
    - the handler for search requests
--  `unity::scopes::PreviewQueryBase </sdk/scopes/cpp/unity.scopes.PreviewQueryBase/>`__
+-  `unity::scopes::PreviewQueryBase </sdk/scopes/cpp/unity.scopes.PreviewQueryBase/>`_ 
    - the handler for preview requests (only if handling previews)
--  `unity::scopes::ActivationQueryBase </sdk/scopes/cpp/unity.scopes.ActivationQueryBase/>`__
+-  `unity::scopes::ActivationQueryBase </sdk/scopes/cpp/unity.scopes.ActivationQueryBase/>`_ 
    - the handler for activation and preview action requests (only if
    handling previews and activation)
--  `unity::scopes::SearchListenerBase </sdk/scopes/cpp/unity.scopes.SearchListenerBase/>`__
+-  `unity::scopes::SearchListenerBase </sdk/scopes/cpp/unity.scopes.SearchListenerBase/>`_ 
    - the handler for search replies (only in aggreagator scopes, to pull
    results from other scopes)
 
@@ -183,14 +187,14 @@ queries coming from a client (that is, the Unity Dash or another scope).
    :name: implementing-scopebase
 
 You must create a class that derives from
-`ScopeBase </sdk/scopes/cpp/unity.scopes.ScopeBase/>`__ and implement a
+`ScopeBase </sdk/scopes/cpp/unity.scopes.ScopeBase/>`_  and implement a
 few methods. As a minimum, you must provide implementations of the
-`search() </sdk/scopes/cpp/unity.scopes.ScopeBase#a0e4969ff26dc1d396d74c56d896fd564>`__
+`search() </sdk/scopes/cpp/unity.scopes.ScopeBase/#a0e4969ff26dc1d396d74c56d896fd564>`_ 
 and
-`preview() </sdk/scopes/cpp/unity.scopes.ScopeBase#a154b9b4cfc0f40572cfec60dd819396f>`__
+`preview() </sdk/scopes/cpp/unity.scopes.ScopeBase/#a154b9b4cfc0f40572cfec60dd819396f>`_ 
 methods.
 
-using `unity::scopes </sdk/scopes/cpp/unity.scopes/>`__;
+using :ref:`unity::scopes <sdk_unity_scopes>`;
 
 class MyScope : public ScopeBase
 
@@ -216,7 +220,7 @@ ActionMetadata const& metadata) override;
 }
 
 The scopes runtime calls
-`start() </sdk/scopes/cpp/unity.scopes.ScopeBase#ac25f3f326e2cf25de2f2eca18de5926c>`__
+`start() </sdk/scopes/cpp/unity.scopes.ScopeBase/#ac25f3f326e2cf25de2f2eca18de5926c>`_ 
 once prior to sending any queries. You can use it to perform one-time
 initialization for your scope. Note that you should not perform any
 lengthy operations in ``start()``. Your implementation must return as
@@ -227,12 +231,12 @@ The scope ID passed to ``start()`` is taken from the name your scope's
 ``.ini`` configuration file.
 
 The scopes runtime calls
-`stop() </sdk/scopes/cpp/unity.scopes.ScopeBase#a80c5fec9e985dbb315d780ef2a56bfbf>`__
+`stop() </sdk/scopes/cpp/unity.scopes.ScopeBase/#a80c5fec9e985dbb315d780ef2a56bfbf>`_ 
 to inform your scope that it should shut down. You can use this method
 to perform any one-time clean-up.
 
 Prior to sending any queries, the scopes runtime calls
-`run() </sdk/scopes/cpp/unity.scopes.ScopeBase#a386e99b98318a70f25db84bbe11c0292>`__
+`run() </sdk/scopes/cpp/unity.scopes.ScopeBase/#a386e99b98318a70f25db84bbe11c0292>`_ 
 if your ``start()`` method completed successfully (did not throw an
 exception). The ``run()`` method is called by a separate thread that you
 can use for your own purposes, for example, to run an event loop. The
@@ -246,7 +250,7 @@ For typical and simple cases, you can ignore ``run()``.
    :name: handling-search
 
 The
-`unity::scopes::ScopeBase::search() </sdk/scopes/cpp/unity.scopes.ScopeBase#a0e4969ff26dc1d396d74c56d896fd564>`__
+`unity::scopes::ScopeBase::search() </sdk/scopes/cpp/unity.scopes.ScopeBase/#a0e4969ff26dc1d396d74c56d896fd564>`_ 
 method is called once for each query. Its purpose is to instantiate and
 return a new C++ instance that encapsulates the query, that is,
 ``search()`` is a factory method. (Do not start execution of the query
@@ -254,7 +258,7 @@ as part of ``search()``; the query object has a separate method for
 this.)
 
 ``search()`` must return an instance of an object that implements the
-`unity::scopes::SearchQueryBase </sdk/scopes/cpp/unity.scopes.SearchQueryBase/>`__
+`unity::scopes::SearchQueryBase </sdk/scopes/cpp/unity.scopes.SearchQueryBase/>`_ 
 interface, for example:
 
 class MyQuery : public SearchQueryBase { ... };
@@ -271,10 +275,10 @@ return q;
 }
 
 The search() method receives two arguments: a
-`unity::scopes::CannedQuery </sdk/scopes/cpp/unity.scopes.CannedQuery/>`__
+`unity::scopes::CannedQuery </sdk/scopes/cpp/unity.scopes.CannedQuery/>`_ 
 query object that (among other information) carries the actual query
 string, and additional parameters for the search request, passed as
-`unity::scopes::SearchMetadata </sdk/scopes/cpp/unity.scopes.SearchMetadata/>`__.
+`unity::scopes::SearchMetadata </sdk/scopes/cpp/unity.scopes.SearchMetadata/>`_ .
 The metadata includes information such as the current locale string, the
 form factor, and the query cardinality.
 
@@ -290,19 +294,19 @@ runtime ignores the additional results.)
 As previously stated, SearchMetadata contains additional information
 about the search requests you receive, including the methods:
 
--  `is\_aggregated() </sdk/scopes/cpp/unity.scopes.SearchMetadata#ab999e0fd62e31b4c5e3095264ed81672>`__
+-  `is\_aggregated() </sdk/scopes/cpp/unity.scopes.SearchMetadata/#ab999e0fd62e31b4c5e3095264ed81672>`_ 
    - true if the request was initiated by an aggregator,
 -  and
-   `aggregated\_keywords() </sdk/scopes/cpp/unity.scopes.SearchMetadata#ab00673c4b1264388e0673d525e6d883e>`__
+   `aggregated\_keywords() </sdk/scopes/cpp/unity.scopes.SearchMetadata/#ab00673c4b1264388e0673d525e6d883e>`_ 
    - the list of keywords used by the aggregator to find your scope.
 
 Note
     Please refer to the `Scope
-    Keywords <https://developer.ubuntu.com/en/scopes/tutorials/scope-keywords/>`__
+    Keywords <https://developer.ubuntu.com/en/scopes/tutorials/scope-keywords/>`_ 
     tutorial document for more detail on using keywords in your scope.
 
 You can use the is\_aggregated() method from within
-`SearchQueryBase::run() </sdk/scopes/cpp/unity.scopes.SearchQueryBase#afc4f15b2266838d7da75b05ea37d504b>`__
+`SearchQueryBase::run() </sdk/scopes/cpp/unity.scopes.SearchQueryBase/#afc4f15b2266838d7da75b05ea37d504b>`_ 
 in order to ensure that an appropriate set of results are returned when
 queried by an aggregator:
 
@@ -366,7 +370,7 @@ least some results (instead of being confronted with a blank screen).
 The runtime automatically saves the results of the most recent surfacing
 query. If a scope cannot produce a result for a surfacing query
 (presumably, due to connectivity problems), calling
-`push\_surfacing\_results\_from\_cache() </sdk/scopes/cpp/unity.scopes.SearchReply#a4ba805136164b11bb358917070cde24d>`__
+`push\_surfacing\_results\_from\_cache() </sdk/scopes/cpp/unity.scopes.SearchReply/#a4ba805136164b11bb358917070cde24d>`_ 
 pushes the results that were produced by the most recent successful
 surfacing query from the cache. If your scope cannot produce surfacing
 results, you can call this method to "replay" the results of the
@@ -379,7 +383,7 @@ a surfacing query (that is, a query with an empty query string). If
 called for a non-empty query, it does nothing.
 
 You must call this method before calling
-`finished() </sdk/scopes/cpp/unity.scopes.Reply#a9ca653d5d7f7c97a781bc362f2af7749>`__,
+`finished() </sdk/scopes/cpp/unity.scopes.Reply/#a9ca653d5d7f7c97a781bc362f2af7749>`_ ,
 otherwise no cached results will be pushed.
 (``push_surfacing_results_from_cache() implicitly calls``\ finished()\`);
 
@@ -387,27 +391,27 @@ otherwise no cached results will be pushed.
    :name: implementing-querybase
 
 You must implement a class that derives from
-`SearchQueryBase </sdk/scopes/cpp/unity.scopes.SearchQueryBase/>`__ and
+`SearchQueryBase </sdk/scopes/cpp/unity.scopes.SearchQueryBase/>`_  and
 return an instance of this class from ``search()``. Your class must
 implement a
-`run() </sdk/scopes/cpp/unity.scopes.SearchQueryBase#afc4f15b2266838d7da75b05ea37d504b>`__
+`run() </sdk/scopes/cpp/unity.scopes.SearchQueryBase/#afc4f15b2266838d7da75b05ea37d504b>`_ 
 method. The scopes runtime calls ``run()`` to execute the query.
 
 The
-`SearchReplyProxy </sdk/scopes/cpp/unity.scopes#a9cd604d9b842ac3b2b8636c2165dec1f>`__
+:ref:`SearchReplyProxy <sdk_unity_scopes#a9cd604d9b842ac3b2b8636c2165dec1f>`
 that is passed to ``run()`` is an invocation handle that allows you to
 push results for the query back towards the client.
 (``SearchReplyProxy`` is a ``shared_ptr`` to a
-`SearchReply </sdk/scopes/cpp/unity.scopes.SearchReply/>`__ object.)
+`SearchReply </sdk/scopes/cpp/unity.scopes.SearchReply/>`_  object.)
 
 Two important methods of ``SerchReply`` are
-`register\_category() </sdk/scopes/cpp/unity.scopes.SearchReply#aaa061806a96f50ff66abc6184135ea66>`__
+`register\_category() </sdk/scopes/cpp/unity.scopes.SearchReply/#aaa061806a96f50ff66abc6184135ea66>`_ 
 and
-`push() </sdk/scopes/cpp/unity.scopes.SearchReply#a63d6de93152b3a972901c2d406ef5760>`__.
+`push() </sdk/scopes/cpp/unity.scopes.SearchReply/#a63d6de93152b3a972901c2d406ef5760>`_ .
 
 ``register_category()`` is a factory method that registers new
 categories for the results of this query (see
-`unity::scopes::Category </sdk/scopes/cpp/unity.scopes.Category/>`__).
+`unity::scopes::Category </sdk/scopes/cpp/unity.scopes.Category/>`_ ).
 You can create new categories at any point during query processing.
 Categories serve to visually group query results in some way; when you
 push results for a query, you indicate which category each particular
@@ -442,15 +446,15 @@ query. In particular, do *not* create category IDs that are artificially
 unique per query (such as by appending a sequence number).
 
 When you create a category, you can provide a
-`unity::scopes::CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`__
+`unity::scopes::CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`_ 
 instance. The category renderer determines the visual appearance of the
 results in that category (such as display in a grid or in a carousel
 layout).
 
 You must wrap each actual search result inside a
-`CategorisedResult </sdk/scopes/cpp/unity.scopes.CategorisedResult/>`__
+`CategorisedResult </sdk/scopes/cpp/unity.scopes.CategorisedResult/>`_ 
 object and pass the result instance to
-`push </sdk/scopes/cpp/unity.scopes.SearchReply#a63d6de93152b3a972901c2d406ef5760>`__.
+`push </sdk/scopes/cpp/unity.scopes.SearchReply/#a63d6de93152b3a972901c2d406ef5760>`_ .
 
 A typical implementation of ``run()`` might look like this:
 
@@ -548,11 +552,11 @@ react to cancellation:
    returns ``false``, there is no point in continuing to provide more
    results.
 -  You can poll for cancellation by calling
-   `QueryBase::valid() </sdk/scopes/cpp/unity.scopes.QueryBase#a095e61eabe2042eeea5c4df1a444d7d4>`__.
+   `QueryBase::valid() </sdk/scopes/cpp/unity.scopes.QueryBase/#a095e61eabe2042eeea5c4df1a444d7d4>`_ .
    ``valid()`` returns ``false`` once a query is cancelled or has
    exceeded its cardinality limit.
 -  Your query implementation class must override the
-   `QueryBase::cancelled() </sdk/scopes/cpp/unity.scopes.QueryBase#a596b19dbfd6efe96b834be75a9b64c68>`__
+   `QueryBase::cancelled() </sdk/scopes/cpp/unity.scopes.QueryBase/#a596b19dbfd6efe96b834be75a9b64c68>`_ 
    method. The scopes runtime calls ``cancelled()`` if the UI has
    cancelled the query. (Note that calls to ``cancelled()`` are made by
    a separate thread.)
@@ -598,7 +602,7 @@ ValueSliderFilter::SPtr filter3 =
 ValueSliderFilter::create("horsepower", 1, 135, 50,
 ValueSliderLabels("Min", "Max"));
 
-`Filters </sdk/scopes/cpp/unity.scopes#adab58c13cf604e0e64bd6b1a745364d3>`__
+:ref:`Filters <sdk_unity_scopes#adab58c13cf604e0e64bd6b1a745364d3>`
 filters;
 
 filters.push\_back(filter1);
@@ -622,7 +626,7 @@ query that needs to be taken into account in the implementation of
 search handling inside run().
 
 To examine current state of the filters, pass the instance of
-`unity::scopes::FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__
+`unity::scopes::FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_ 
 received with search query to respective methods of the filters. For
 example:
 
@@ -680,11 +684,11 @@ panel icon.
 
 Your scope is responsible for handling preview requests for results it
 has returned; you implement this by overriding the
-`unity::scopes::ScopeBase::preview() </sdk/scopes/cpp/unity.scopes.ScopeBase#a154b9b4cfc0f40572cfec60dd819396f>`__
+`unity::scopes::ScopeBase::preview() </sdk/scopes/cpp/unity.scopes.ScopeBase/#a154b9b4cfc0f40572cfec60dd819396f>`_ 
 method:
 
 class MyScope : public
-`unity::scopes::ScopeBase </sdk/scopes/cpp/unity.scopes.ScopeBase/>`__
+`unity::scopes::ScopeBase </sdk/scopes/cpp/unity.scopes.ScopeBase/>`_ 
 
 {
 
@@ -693,7 +697,7 @@ public:
 ...
 
 virtual PreviewQueryBase::UPtr
-`preview </sdk/scopes/cpp/unity.scopes.ScopeBase#a154b9b4cfc0f40572cfec60dd819396f>`__\ (Result
+`preview </sdk/scopes/cpp/unity.scopes.ScopeBase/#a154b9b4cfc0f40572cfec60dd819396f>`_ \ (Result
 const& result, ActionMetadata const& metadata) override;
 
 ...
@@ -701,15 +705,15 @@ const& result, ActionMetadata const& metadata) override;
 }
 
 This method must return an instance derived from
-`unity::scopes::PreviewQueryBase </sdk/scopes/cpp/unity.scopes.PreviewQueryBase/>`__.
+`unity::scopes::PreviewQueryBase </sdk/scopes/cpp/unity.scopes.PreviewQueryBase/>`_ .
 Like ``search()``, ``preview()`` is a factory method; the scopes runtime
 initiates the actual preview by calling
-`run() </sdk/scopes/cpp/unity.scopes.PreviewQueryBase#a81b89daf29cd1ada55286f2a3a871347>`__
+`run() </sdk/scopes/cpp/unity.scopes.PreviewQueryBase/#a81b89daf29cd1ada55286f2a3a871347>`_ 
 on the instance you return. Your ``run()`` method is responsible for
 gathering preview data (from local or remote sources) and passing it to
 the UI along with the definition of the visual appearance of the preview
 by calling
-`push() </sdk/scopes/cpp/unity.scopes.PreviewReply#a9fc593618b83ec444fb6c9b2b298764a>`__
+`push() </sdk/scopes/cpp/unity.scopes.PreviewReply/#a9fc593618b83ec444fb6c9b2b298764a>`_ 
 on the reply proxy that is passed to ``run()``. (This is analogous to
 returning results from ``search()``.)
 
@@ -717,9 +721,9 @@ A preview consists of one or more preview widgets. Preview widgets are
 the basic building blocks for previews, such as a header with a title
 and subtitle, an image, a gallery with multiple images, a list of audio
 tracks, and so on.(See
-`unity::scopes::PreviewWidget </sdk/scopes/cpp/unity.scopes.PreviewWidget/>`__
+`unity::scopes::PreviewWidget </sdk/scopes/cpp/unity.scopes.PreviewWidget/>`_ 
 for a list of supported widget types.) Your implementation of
-`run() </sdk/scopes/cpp/unity.scopes.PreviewQueryBase#a81b89daf29cd1ada55286f2a3a871347>`__
+`run() </sdk/scopes/cpp/unity.scopes.PreviewQueryBase/#a81b89daf29cd1ada55286f2a3a871347>`_ 
 must create and populate one or more preview widgets and push them to
 the UI.
 
@@ -730,12 +734,12 @@ at an image), and a "zoomable" flag that determines if the image should
 be zoomable. You can specify the values of these attributes explicitly,
 or you can arrange for the values to be taken from a result that the
 corresponding query returned earlier, by referencing the corresponding
-`Result </sdk/scopes/cpp/unity.scopes.Result/>`__ instance. You can also
+`Result </sdk/scopes/cpp/unity.scopes.Result/>`_  instance. You can also
 push the value for a referenced attribute separately as part of your
 implementation of ``run()``.
 
 You provide attributes explicitly by calling
-`PreviewWidget::add\_attribute\_value() </sdk/scopes/cpp/unity.scopes.PreviewWidget#a42dd64704890d72bcc6ecbd7bccbfcd9>`__:
+`PreviewWidget::add\_attribute\_value() </sdk/scopes/cpp/unity.scopes.PreviewWidget/#a42dd64704890d72bcc6ecbd7bccbfcd9>`_ :
 
 PreviewWidget image\_widget("myimage", "image");
 
@@ -746,7 +750,7 @@ image\_widget.add\_attribute\_value("zoomable", Variant(false));
 
 To reference values from results or arbitrary values that you push
 separately, use
-`PreviewWidget::add\_attribute\_mapping() </sdk/scopes/cpp/unity.scopes.PreviewWidget#a8bb890267a69dd6bb5ca70b663c75e74>`__:
+`PreviewWidget::add\_attribute\_mapping() </sdk/scopes/cpp/unity.scopes.PreviewWidget/#a8bb890267a69dd6bb5ca70b663c75e74>`_ :
 
 PreviewWidget image\_widget("myimage", "image");
 
@@ -759,7 +763,7 @@ image\_widget.add\_attribute\_mapping("zoomable", "myzoomable"); //
 reply->push("myzoomable", Variant(true));
 
 To push preview widgets to the client, use
-`PreviewReply::push() </sdk/scopes/cpp/unity.scopes.PreviewReply#a9fc593618b83ec444fb6c9b2b298764a>`__:
+`PreviewReply::push() </sdk/scopes/cpp/unity.scopes.PreviewReply/#a9fc593618b83ec444fb6c9b2b298764a>`_ :
 
 PreviewWidget image\_widget("myimage", "image");
 
@@ -782,7 +786,7 @@ widget holds one or more action button definitions, where each
 definition has a unique identifier, a label, and an optional icon. For
 example, a widget with two buttons, "Open" and "Download", can be
 defined as follows (using the
-`VariantBuilder </sdk/scopes/cpp/unity.scopes.VariantBuilder/>`__ helper
+`VariantBuilder </sdk/scopes/cpp/unity.scopes.VariantBuilder/>`_  helper
 class):
 
 PreviewWidget buttons("mybuttons", "actions");
@@ -808,7 +812,7 @@ builder.add\_tuple({
 buttons.add\_attribute\_value("actions", builder.end());
 
 To respond to activation of preview actions, your scope must implement
-`ScopeBase::perform\_action </sdk/scopes/cpp/unity.scopes.ScopeBase#a2f4d476fa790349c9a7de52be3232d11>`__:
+`ScopeBase::perform\_action </sdk/scopes/cpp/unity.scopes.ScopeBase/#a2f4d476fa790349c9a7de52be3232d11>`_ :
 
 class MyScope : public ScopeBase
 
@@ -830,12 +834,12 @@ std::string const& action\_id) override
 
 Like ``search()`` and ``preview()``, ``perform_action()`` is a factory
 method. It must return an instance that derives from
-`ActivationQueryBase </sdk/scopes/cpp/unity.scopes.ActivationQueryBase/>`__.
+`ActivationQueryBase </sdk/scopes/cpp/unity.scopes.ActivationQueryBase/>`_ .
 Your derived class must implement the
-`activate() </sdk/scopes/cpp/unity.scopes.ActivationQueryBase#a61ed49d8bc56e677ff2eb1f30e6a6b6b>`__
+`activate() </sdk/scopes/cpp/unity.scopes.ActivationQueryBase/#a61ed49d8bc56e677ff2eb1f30e6a6b6b>`_ 
 method, whose job it is to respond to the activation (that is, the user
 pressing a button). ``activate`` must return an
-`ActivationResponse </sdk/scopes/cpp/unity.scopes.ActivationResponse/>`__,
+`ActivationResponse </sdk/scopes/cpp/unity.scopes.ActivationResponse/>`_ ,
 which tells the UI how it should behave in response to the activation.
 For example, your ``activate()`` could direct the UI to run a new search
 as follows:
@@ -845,7 +849,7 @@ class MyActivation : public ActivationQueryBase
 {
 
 MyActivation(Result const& result,
-`unity::scopes::ActionMetadata </sdk/scopes/cpp/unity.scopes.ActionMetadata/>`__
+`unity::scopes::ActionMetadata </sdk/scopes/cpp/unity.scopes.ActionMetadata/>`_ 
 const& metadata) :
 
 ActivationQueryBase(result, metadata)
@@ -891,7 +895,7 @@ by the user.)
 If you want to intercept such activations (either for schemas without a
 handler, or to generally intercept result activation), you must
 implement the
-`ScopeBase::activate() </sdk/scopes/cpp/unity.scopes.ScopeBase#a49a0b9ada0eeb4c71e6a2181c3d8c9e7>`__
+`ScopeBase::activate() </sdk/scopes/cpp/unity.scopes.ScopeBase/#a49a0b9ada0eeb4c71e6a2181c3d8c9e7>`_ 
 method:
 
 class MyScope : public ScopeBase
@@ -907,7 +911,7 @@ ActionMetadata const& metadata) override;
 }
 
 In addition, you must call
-`Result::set\_intercept\_activation() </sdk/scopes/cpp/unity.scopes.Result#a5a132eb82702829e2fd026e088e4aa08>`__
+`Result::set\_intercept\_activation() </sdk/scopes/cpp/unity.scopes.Result/#a5a132eb82702829e2fd026e088e4aa08>`_ 
 for all results that should trigger a call to your ``activate()``
 method. Your implementation of ``activate()`` should follow the same
 guidelines as for ``perform_action()`` (except that widget and action
@@ -923,7 +927,7 @@ case for this is to offer "social" actions, such as thumbs up/down
 buttons.
 
 The following snippet demonstrates how two actions can be added to a
-`CategorisedResult </sdk/scopes/cpp/unity.scopes.CategorisedResult/>`__:
+`CategorisedResult </sdk/scopes/cpp/unity.scopes.CategorisedResult/>`_ :
 
 CategorisedResult res(cat);
 
@@ -971,7 +975,7 @@ The attributes of result actions are as follows:
 -  label - the text shown next to the icon.
 
 To respond to activation of result actions, your scope must implement
-`ScopeBase::activate\_result\_action </sdk/scopes/cpp/unity.scopes.ScopeBase#a7ac39ca44f4790dd36900657692d0565>`__:
+`ScopeBase::activate\_result\_action </sdk/scopes/cpp/unity.scopes.ScopeBase/#a7ac39ca44f4790dd36900657692d0565>`_ :
 
 class MyScope : public ScopeBase
 
@@ -991,12 +995,12 @@ std::string const& action\_id) override;
 
 Like ``search()`` and ``preview()``, ``activate_result_action()`` is a
 factory method. It must return an instance that derives from
-`ActivationQueryBase </sdk/scopes/cpp/unity.scopes.ActivationQueryBase/>`__.
+`ActivationQueryBase </sdk/scopes/cpp/unity.scopes.ActivationQueryBase/>`_ .
 Your derived class must implement the
-`activate() </sdk/scopes/cpp/unity.scopes.ActivationQueryBase#a61ed49d8bc56e677ff2eb1f30e6a6b6b>`__
+`activate() </sdk/scopes/cpp/unity.scopes.ActivationQueryBase/#a61ed49d8bc56e677ff2eb1f30e6a6b6b>`_ 
 method, whose job it is to respond to the activation (that is, the user
 pressing action button). ``activate`` must return an
-`ActivationResponse </sdk/scopes/cpp/unity.scopes.ActivationResponse/>`__,
+`ActivationResponse </sdk/scopes/cpp/unity.scopes.ActivationResponse/>`_ ,
 which tells the UI how it should behave in response to the result action
 activation. For result actions the typical and recommended behavior is
 to update the card for the result whose action was activated.
@@ -1010,7 +1014,7 @@ class MyActivation : public ActivationQueryBase
 {
 
 MyActivation(Result const& result,
-`unity::scopes::ActionMetadata </sdk/scopes/cpp/unity.scopes.ActionMetadata/>`__
+`unity::scopes::ActionMetadata </sdk/scopes/cpp/unity.scopes.ActionMetadata/>`_ 
 const& metadata, std::string const& action\_id) :
 
 ActivationQueryBase(result, metadata, action\_id)
@@ -1181,7 +1185,7 @@ inline\_playback\_data["uri"] = uri;
 
 inline\_playback\_data["duration"] = song\_duration\_in\_seconds;
 
-`VariantArray </sdk/scopes/cpp/unity.scopes#aa3bf32d584efd902bca79698a07dd934>`__
+:ref:`VariantArray <sdk_unity_scopes#aa3bf32d584efd902bca79698a07dd934>`
 playlist;
 
 for (const std::string& song: album\_songs)
@@ -1206,7 +1210,7 @@ scopes rather than, say, a remote web service.
 
 To receive results from its child scopes, your scope must implement a
 class that derives from
-`SearchListenerBase </sdk/scopes/cpp/unity.scopes.SearchListenerBase/>`__.
+`SearchListenerBase </sdk/scopes/cpp/unity.scopes.SearchListenerBase/>`_ .
 You provide an instance of this class to each sub-query; the scopes
 runtime invokes callback methods on this class to let you know when a
 new result or status update arrives, and when a query completes.
@@ -1221,10 +1225,10 @@ available scopes (whether they are local scopes or remote scopes in the
 Smartscopes server).
 
 You can obtain the proxy for a child scope by calling
-`get\_metadata() </sdk/scopes/cpp/unity.scopes.Registry#a63778ac090804a1fb85dc48fccbc2822>`__
+`get\_metadata() </sdk/scopes/cpp/unity.scopes.Registry/#a63778ac090804a1fb85dc48fccbc2822>`_ 
 on the registry, supplying the ID of the child scope. The return value
 is an instance of type
-`ScopeMetadata </sdk/scopes/cpp/unity.scopes.ScopeMetadata/>`__ that
+`ScopeMetadata </sdk/scopes/cpp/unity.scopes.ScopeMetadata/>`_  that
 describes the scope and also provides access to the proxy for the scope.
 
 You can also aggregate scopes indirectly via keyword(s). Keywords
@@ -1232,7 +1236,7 @@ describe the type of content a scope provides (e.g. a scope with the
 keyword "music" will return music results, the "video" keyword indicates
 video content, and so on). You can obtain child scopes via keywords by
 calling
-`list\_if() </sdk/scopes/cpp/unity.scopes.Registry#aa15baf0154c4b58decf27f2e5815d680>`__
+`list\_if() </sdk/scopes/cpp/unity.scopes.Registry/#aa15baf0154c4b58decf27f2e5815d680>`_ 
 on the registry, supplying a predicate function. The return value is a
 map containing only those scopes for which the predicate returns true.
 Therefore, your predicate function should return true for all scopes
@@ -1240,23 +1244,23 @@ matching the keyword(s) you wish to aggregate.
 
 Note
     Please refer to the `Scope
-    Keywords <https://developer.ubuntu.com/en/scopes/tutorials/scope-keywords/>`__
+    Keywords <https://developer.ubuntu.com/en/scopes/tutorials/scope-keywords/>`_ 
     tutorial document for a list of recommended keywords to use.
 
 As an aggregator scope author you must provide an implementation of the
 virtual
-`ScopeBase::find\_child\_scopes() </sdk/scopes/cpp/unity.scopes.ScopeBase#abc864e2fa714b9424a89293fea6972bc>`__
+`ScopeBase::find\_child\_scopes() </sdk/scopes/cpp/unity.scopes.ScopeBase/#abc864e2fa714b9424a89293fea6972bc>`_ 
 method. All logic for finding your aggregator's child scopes should be
 implemented within this method. The return value is of type
-`ChildScopeList </sdk/scopes/cpp/unity.scopes#a4daaa9ad07daf596af4dacd6e0b7be9a>`__
+:ref:`ChildScopeList <sdk_unity_scopes#a4daaa9ad07daf596af4dacd6e0b7be9a>`
 and must contain an instance of
-`ChildScope </sdk/scopes/cpp/unity.scopes.ChildScope/>`__ for each scope
+`ChildScope </sdk/scopes/cpp/unity.scopes.ChildScope/>`_  for each scope
 your aggregator may collect results from.
 
 Here is how you could implement find\_child\_scopes() to return all
 scopes in the registry that contain the keywords "sports" and "news":
 
-`ChildScopeList </sdk/scopes/cpp/unity.scopes#a4daaa9ad07daf596af4dacd6e0b7be9a>`__
+:ref:`ChildScopeList <sdk_unity_scopes#a4daaa9ad07daf596af4dacd6e0b7be9a>`
 MyScope::find\_child\_scopes() const override
 
 {
@@ -1274,7 +1278,7 @@ return (keywords.find("sports") != keywords.end()) &&
 
 });
 
-`ChildScopeList </sdk/scopes/cpp/unity.scopes#a4daaa9ad07daf596af4dacd6e0b7be9a>`__
+:ref:`ChildScopeList <sdk_unity_scopes#a4daaa9ad07daf596af4dacd6e0b7be9a>`
 list;
 
 for (auto const& sportsnews\_scope : sportsnews\_scopes)
@@ -1300,30 +1304,30 @@ return list;
 
 To send a query to another scope, use one of the ``subsearch()``
 overloads of
-`unity::scopes::SearchQueryBase </sdk/scopes/cpp/unity.scopes.SearchQueryBase/>`__
+`unity::scopes::SearchQueryBase </sdk/scopes/cpp/unity.scopes.SearchQueryBase/>`_ 
 inside your implementation of
-`SearchQueryBase::run() </sdk/scopes/cpp/unity.scopes.SearchQueryBase#afc4f15b2266838d7da75b05ea37d504b>`__.
+`SearchQueryBase::run() </sdk/scopes/cpp/unity.scopes.SearchQueryBase/#afc4f15b2266838d7da75b05ea37d504b>`_ .
 This method requires a handle to the child scope to query (either via
 proxy or ChildScope handle), the query details
-(`CannedQuery </sdk/scopes/cpp/unity.scopes.CannedQuery/>`__), plus an
+(`CannedQuery </sdk/scopes/cpp/unity.scopes.CannedQuery/>`_ ), plus an
 instance of your ``SearchListenerBase`` implementation that will receive
 the query results.
 
 Note
     ``subsearch()`` is identical to
-    `search() </sdk/scopes/cpp/unity.scopes.ScopeBase#a0e4969ff26dc1d396d74c56d896fd564>`__
+    `search() </sdk/scopes/cpp/unity.scopes.ScopeBase/#a0e4969ff26dc1d396d74c56d896fd564>`_ 
     but, for ``subsearch()``, the scopes runtime transparently forwards
     query cancellation to child scopes, so your implementation of
-    `QueryBase::cancelled() </sdk/scopes/cpp/unity.scopes.QueryBase#a596b19dbfd6efe96b834be75a9b64c68>`__
+    `QueryBase::cancelled() </sdk/scopes/cpp/unity.scopes.QueryBase/#a596b19dbfd6efe96b834be75a9b64c68>`_ 
     does not need to forward cancellation to its children. (However,
     your query class still needs to react to cancellation and should
     terminate the current query is quickly as possible in response to a
     cancelled message.)
 
 You should always call
-`ScopeBase::child\_scopes() </sdk/scopes/cpp/unity.scopes.ScopeBase#a4016075ab95bbf1b5dfa1444e9d750e0>`__
+`ScopeBase::child\_scopes() </sdk/scopes/cpp/unity.scopes.ScopeBase/#a4016075ab95bbf1b5dfa1444e9d750e0>`_ 
 from within your aggregator's
-`search() </sdk/scopes/cpp/unity.scopes.ScopeBase#a0e4969ff26dc1d396d74c56d896fd564>`__
+`search() </sdk/scopes/cpp/unity.scopes.ScopeBase/#a0e4969ff26dc1d396d74c56d896fd564>`_ 
 method in order to retrieve the latest child scopes list containing the
 most recent "enabled" states. You can then pass this list into your
 instantiation of SearchQueryBase for later use.
@@ -1335,7 +1339,7 @@ Note
 Here is how you could implement an aggregating scope that passes a query
 to a single child scope "scope-A":
 
-`ChildScopeList </sdk/scopes/cpp/unity.scopes#a4daaa9ad07daf596af4dacd6e0b7be9a>`__
+:ref:`ChildScopeList <sdk_unity_scopes#a4daaa9ad07daf596af4dacd6e0b7be9a>`
 MyScope::find\_child\_scopes() const override
 
 {
@@ -1351,7 +1355,7 @@ locate child scopes");
 
 }
 
-`ChildScopeList </sdk/scopes/cpp/unity.scopes#a4daaa9ad07daf596af4dacd6e0b7be9a>`__
+:ref:`ChildScopeList <sdk_unity_scopes#a4daaa9ad07daf596af4dacd6e0b7be9a>`
 list;
 
 try
@@ -1460,7 +1464,7 @@ upstream\_reply\_(upstream\_reply)
 
 private:
 
-`SearchReplyProxy </sdk/scopes/cpp/unity.scopes#a9cd604d9b842ac3b2b8636c2165dec1f>`__
+:ref:`SearchReplyProxy <sdk_unity_scopes#a9cd604d9b842ac3b2b8636c2165dec1f>`
 upstream\_reply\_;
 
 };
@@ -1474,7 +1478,7 @@ often arrive in random order. To control the order in which categories
 are rendered, the aggregator must buffer and potentially re-order
 results by category before pushing them.
 
-`BufferedResultForwarder </sdk/scopes/cpp/unity.scopes.utility/BufferedResultForwarder/>`__
+:ref:`BufferedResultForwarder <sdk_unity_scopes_utility_bufferedresultforwarder>`
 makes it easier to do this. To use the class, you create one instance
 for each child scope and chain the instances together in the desired
 order of categories. Each forwarder buffers results until its
@@ -1492,11 +1496,11 @@ when the results are rendered.
 If an aggregator collates results from children that each produce
 results for more than one category, you can override the default
 implementation of
-`push() </sdk/scopes/cpp/unity.scopes.utility/BufferedResultForwarder#af712d8a72e6cd0818ab9d2c3274b25e6>`__
+:ref:`push() <sdk_unity_scopes_utility_bufferedresultforwarder#af712d8a72e6cd0818ab9d2c3274b25e6>`
 to change categories for results from its child, and/or indicate that it
 is ready only once the child has provided results for all expected
 categories. (See
-`BufferedResultForwarder </sdk/scopes/cpp/unity.scopes.utility/BufferedResultForwarder/>`__
+:ref:`BufferedResultForwarder <sdk_unity_scopes_utility_bufferedresultforwarder>`
 for more details.)
 
 .. rubric::         Activation and preview
@@ -1515,7 +1519,7 @@ must take extra care:
 -  If the original original scope should still handle preview (and
    activation) requests for a modified result, you must store a copy of
    the original result in the modified (or new) result by calling
-   `Result::store() </sdk/scopes/cpp/unity.scopes.Result#a744776333a9748ba41dace7c6943ca4d>`__.
+   `Result::store() </sdk/scopes/cpp/unity.scopes.Result/#a744776333a9748ba41dace7c6943ca4d>`_ .
    Preview requests for such a result will automatically trigger the
    scope that created the innermost stored result.
 
@@ -1530,8 +1534,8 @@ must take extra care:
    result, the aggregator *must* handle preview and activation requests
    (if the intercept flag is set). The actions to take are the same as
    for a non-aggregating scope (see `Handling
-   previews </sdk/scopes/cpp/index#handlingpreview>`__ and `Handling
-   result activation </sdk/scopes/cpp/index#handlingactivation>`__).
+   previews </sdk/scopes/cpp/index/#handlingpreview>`_  and `Handling
+   result activation </sdk/scopes/cpp/index/#handlingactivation>`_ ).
 
 Here is an example ``push()`` implementation that modifies a result and
 stores a copy, so the original scope can handle preview and activation:
@@ -1574,20 +1578,20 @@ single dedicated dispatch thread.
 
 -  UNITY\_SCOPE\_CREATE\_FUNCTION(), ScopeBase::start(),
    ScopeBase::stop(), and UNITY\_SCOPE\_DESTROY\_FUNCTION().
--  `ScopeBase::search() </sdk/scopes/cpp/unity.scopes.ScopeBase#a0e4969ff26dc1d396d74c56d896fd564>`__,
-   `ScopeBase::preview() </sdk/scopes/cpp/unity.scopes.ScopeBase#a154b9b4cfc0f40572cfec60dd819396f>`__,
+-  `ScopeBase::search() </sdk/scopes/cpp/unity.scopes.ScopeBase/#a0e4969ff26dc1d396d74c56d896fd564>`_ ,
+   `ScopeBase::preview() </sdk/scopes/cpp/unity.scopes.ScopeBase/#a154b9b4cfc0f40572cfec60dd819396f>`_ ,
    and
-   `ScopeBase::perform\_action() </sdk/scopes/cpp/unity.scopes.ScopeBase#a2f4d476fa790349c9a7de52be3232d11>`__.
--  `SearchQueryBase::run() </sdk/scopes/cpp/unity.scopes.SearchQueryBase#afc4f15b2266838d7da75b05ea37d504b>`__,
-   `PreviewQueryBase::run() </sdk/scopes/cpp/unity.scopes.PreviewQueryBase#a81b89daf29cd1ada55286f2a3a871347>`__,
+   `ScopeBase::perform\_action() </sdk/scopes/cpp/unity.scopes.ScopeBase/#a2f4d476fa790349c9a7de52be3232d11>`_ .
+-  `SearchQueryBase::run() </sdk/scopes/cpp/unity.scopes.SearchQueryBase/#afc4f15b2266838d7da75b05ea37d504b>`_ ,
+   `PreviewQueryBase::run() </sdk/scopes/cpp/unity.scopes.PreviewQueryBase/#a81b89daf29cd1ada55286f2a3a871347>`_ ,
    and
-   `ActivationQueryBase::activate() </sdk/scopes/cpp/unity.scopes.ActivationQueryBase#a61ed49d8bc56e677ff2eb1f30e6a6b6b>`__.
--  `QueryBase::cancelled() </sdk/scopes/cpp/unity.scopes.QueryBase#a596b19dbfd6efe96b834be75a9b64c68>`__.
--  `SearchListenerBase::push() </sdk/scopes/cpp/unity.scopes.SearchListenerBase#a93ba33c6e1a0064ac9756134ccb11705>`__,
-   `PreviewListenerBase::push() </sdk/scopes/cpp/unity.scopes.PreviewListenerBase#a5e9fe1fa664cbb65a0389e5a39caf78b>`__,
-   `ActivationListenerBase::activated() </sdk/scopes/cpp/unity.scopes.ActivationListenerBase#a52106ae2856a2dc7fd6035707bd0bee2>`__,
-   `ListenerBase::finished() </sdk/scopes/cpp/unity.scopes.ListenerBase#afb44937749b61c9e3ebfa20ec6e4634b>`__,
-   `ListenerBase::info() </sdk/scopes/cpp/unity.scopes.ListenerBase#a3b38fa642754142f40968f3ff8d1bdc8>`__.
+   `ActivationQueryBase::activate() </sdk/scopes/cpp/unity.scopes.ActivationQueryBase/#a61ed49d8bc56e677ff2eb1f30e6a6b6b>`_ .
+-  `QueryBase::cancelled() </sdk/scopes/cpp/unity.scopes.QueryBase/#a596b19dbfd6efe96b834be75a9b64c68>`_ .
+-  `SearchListenerBase::push() </sdk/scopes/cpp/unity.scopes.SearchListenerBase/#a93ba33c6e1a0064ac9756134ccb11705>`_ ,
+   `PreviewListenerBase::push() </sdk/scopes/cpp/unity.scopes.PreviewListenerBase/#a5e9fe1fa664cbb65a0389e5a39caf78b>`_ ,
+   `ActivationListenerBase::activated() </sdk/scopes/cpp/unity.scopes.ActivationListenerBase/#a52106ae2856a2dc7fd6035707bd0bee2>`_ ,
+   `ListenerBase::finished() </sdk/scopes/cpp/unity.scopes.ListenerBase/#afb44937749b61c9e3ebfa20ec6e4634b>`_ ,
+   `ListenerBase::info() </sdk/scopes/cpp/unity.scopes.ListenerBase/#a3b38fa642754142f40968f3ff8d1bdc8>`_ .
 
 For your scope implementation, keep in mind that ``cancelled()`` is
 *not* called by the same thread that called, for example, ``search()``
@@ -1622,7 +1626,7 @@ same directory (together with the scope's ``.so`` file).
 The shell constructs a user interface from the settings definitions. The
 user can change settings via that UI. The scope can retrieve the actual
 setting values at run time (see `Accessing
-settings </sdk/scopes/cpp/index#read_settings>`__).
+settings </sdk/scopes/cpp/index/#read_settings>`_ ).
 
 The following types are supported for settings:
 
@@ -1698,7 +1702,7 @@ value that is provided to the scope if the user has not changed anything
 (or has never used the settings UI before using the scope). It is
 possible to test for settings that do not have a default value and were
 never set by the user (see `Accessing
-settings </sdk/scopes/cpp/index#read_settings>`__).
+settings </sdk/scopes/cpp/index/#read_settings>`_ ).
 
 For settings of type ``list``, the ``displayValues`` field is mandatory.
 It must contain an array that lists the available choices. If you
@@ -1714,14 +1718,14 @@ found that matches the current locale, the non-localized value is used.
 
 The settings that are currently in effect are available to a scope via
 the
-`unity::scopes::ScopeBase::settings() </sdk/scopes/cpp/unity.scopes.ScopeBase#acddeebb3357c6941b3b77617133cda23>`__
+`unity::scopes::ScopeBase::settings() </sdk/scopes/cpp/unity.scopes.ScopeBase/#acddeebb3357c6941b3b77617133cda23>`_ 
 and
-`unity::scopes::QueryBase::settings() </sdk/scopes/cpp/unity.scopes.QueryBase#ab6a25ba587387a7f490b8b5a081e9ed6>`__
+`unity::scopes::QueryBase::settings() </sdk/scopes/cpp/unity.scopes.QueryBase/#ab6a25ba587387a7f490b8b5a081e9ed6>`_ 
 methods. These methods return a
-`unity::scopes::VariantMap </sdk/scopes/cpp/unity.scopes#ad5d8ccfa11a327fca6f3e4cee11f4c10>`__
+:ref:`unity::scopes::VariantMap <sdk_unity_scopes#ad5d8ccfa11a327fca6f3e4cee11f4c10>`
 with one entry per setting. The map contains an entry for each setting
 (using the group name as the key). The lookup value is a
-`unity::scopes::Variant </sdk/scopes/cpp/unity.scopes.Variant/>`__ that
+`unity::scopes::Variant </sdk/scopes/cpp/unity.scopes.Variant/>`_  that
 holds the current value of the setting.
 
 If a setting has a value, the corresponding entry in the map contains a
@@ -1746,11 +1750,11 @@ query.
 
 Here is an example of how to read the current settings values for the
 definition in `Defining
-settings </sdk/scopes/cpp/index#settings_definitions>`__ :
+settings </sdk/scopes/cpp/index/#settings_definitions>`_  :
 
 // In your \`ScopeBase\` or \`QueryBase\` implementation:
 
-`unity::scopes::VariantMap </sdk/scopes/cpp/unity.scopes#ad5d8ccfa11a327fca6f3e4cee11f4c10>`__
+:ref:`unity::scopes::VariantMap <sdk_unity_scopes#ad5d8ccfa11a327fca6f3e4cee11f4c10>`
 s = settings(); // The settings method is provided by the base class
 
 cout << s["location"].get\_string(); // Prints "London" unless the user
@@ -1774,33 +1778,33 @@ Scopes that are installed from click packages are subject to confinement
 and are not allowed to access most parts of the file system. However, a
 few locations are available to a scope. You can access these paths by
 calling methods on
-`ScopeBase </sdk/scopes/cpp/unity.scopes.ScopeBase/>`__.
+`ScopeBase </sdk/scopes/cpp/unity.scopes.ScopeBase/>`_ .
 
 Note
     Do not call these methods from the constructor of your ``ScopeBase``
     implementation. If you do, these methods throw ``LogicException``.
     Instead, call them from
-    `start() </sdk/scopes/cpp/unity.scopes.ScopeBase#ac25f3f326e2cf25de2f2eca18de5926c>`__
+    `start() </sdk/scopes/cpp/unity.scopes.ScopeBase/#ac25f3f326e2cf25de2f2eca18de5926c>`_ 
     or any time thereafter.
 
-`scope\_directory() </sdk/scopes/cpp/unity.scopes.ScopeBase#a32744a21076d9dacc98362412c6a63d5>`__
+`scope\_directory() </sdk/scopes/cpp/unity.scopes.ScopeBase/#a32744a21076d9dacc98362412c6a63d5>`_ 
 returns the path of the installation directory of the scope. This
 directory contains the scope's ``.so`` and ``.ini`` files, plus whatever
 other files you decide to package with your scope. The scope has
 read-only permission for this directory.
 
-`cache\_directory() </sdk/scopes/cpp/unity.scopes.ScopeBase#a36cfdda42db58da399390e7c5df2385e>`__
+`cache\_directory() </sdk/scopes/cpp/unity.scopes.ScopeBase/#a36cfdda42db58da399390e7c5df2385e>`_ 
 returns the path of a directory that is (exclusively) writable for the
 scope. You can use this directory to store persistent information, such
 as a cache of results.
 
-`app\_directory() </sdk/scopes/cpp/unity.scopes.ScopeBase#a4f54564b752a3451e05bd11171abb27e>`__
+`app\_directory() </sdk/scopes/cpp/unity.scopes.ScopeBase/#a4f54564b752a3451e05bd11171abb27e>`_ 
 returns the path of a read-only directory. If the scope is packaged
 together with an app, the app has permission to write files in this
 location, that is, this directory can be used make information provided
 by the app available to the scope (but not vice versa).
 
-`tmp\_directory() </sdk/scopes/cpp/unity.scopes.ScopeBase#ade8de1dca94e10aa9788624710ab49eb>`__
+`tmp\_directory() </sdk/scopes/cpp/unity.scopes.ScopeBase/#ade8de1dca94e10aa9788624710ab49eb>`_ 
 returns the path of a read-only directory that is (exclusively) writable
 for the scope. This directory is periodically cleaned of unused files.
 The exact amount of time may vary, but is on the order of a few hours.
@@ -1867,7 +1871,7 @@ There are 2 additional files that a scope must supply:
 
 <provider>google</provider>
 
-<translations>`unity </sdk/scopes/cpp/unity/>`__-scope-youtube</translations>
+<translations>:ref:`unity <sdk_unity>`-scope-youtube</translations>
 
 <template>
 
@@ -1986,7 +1990,7 @@ Finally, we can access online account services from within our scope
 implementation.
 
 The first thing we need to do is instantiate a
-`unity::scopes::OnlineAccountClient </sdk/scopes/cpp/unity.scopes.OnlineAccountClient/>`__
+`unity::scopes::OnlineAccountClient </sdk/scopes/cpp/unity.scopes.OnlineAccountClient/>`_ 
 object. On construction we must specify our account service name,
 service type, and provider name (These correspond to the values of the
 "service\_id", "type", and "provider" entries in your .service file).
@@ -1995,13 +1999,14 @@ The constructor accepts a fourth optional parameter which can be used to
 specify a dictionary of authentication data, whose contents will
 complement (or override) those authentication parameters specified in
 the ``<template>`` element of the ```.service``
-file </sdk/scopes/cpp/index#oa_service>`__. It can be used in those rare
-cases where the authentication parameters are known only at runtime.
+file </sdk/scopes/cpp/index/#oa_service>`_ . It can be used in those
+rare cases where the authentication parameters are known only at
+runtime.
 
 Via this object we can get the statuses of all account services, set a
 callback for status updates, and register results and widgets that
 require authorization (See:
-`unity::scopes::OnlineAccountClient </sdk/scopes/cpp/unity.scopes.OnlineAccountClient/>`__
+`unity::scopes::OnlineAccountClient </sdk/scopes/cpp/unity.scopes.OnlineAccountClient/>`_ 
 class documentation for more detail).
 
 Here's a simple example of how one could return a "Log-in" result to the
@@ -2012,14 +2017,14 @@ request to the user before executing one of the 2 post-login actions):
    :name: example-onlineaccountclient-usage
 
 void
-Query::run(\ `unity::scopes::SearchReplyProxy </sdk/scopes/cpp/unity.scopes#a9cd604d9b842ac3b2b8636c2165dec1f>`__
+Query::run(\ :ref:`unity::scopes::SearchReplyProxy <sdk_unity_scopes#a9cd604d9b842ac3b2b8636c2165dec1f>`
 const& reply)
 
 {
 
 // Instantiate a unity::scopes::OnlineAccountClient object
 
-`unity::scopes::OnlineAccountClient </sdk/scopes/cpp/unity.scopes.OnlineAccountClient/>`__
+`unity::scopes::OnlineAccountClient </sdk/scopes/cpp/unity.scopes.OnlineAccountClient/>`_ 
 oa\_client("com.ubuntu.scopes.youtube\_youtube", "sharing", "google");
 
 // Check if our service is authenticated under at least one account
@@ -2050,7 +2055,7 @@ if (!service\_authenticated)
 
 auto cat = reply->register\_category("youtube\_login", "", "");
 
-`unity::scopes::CategorisedResult </sdk/scopes/cpp/unity.scopes.CategorisedResult/>`__
+`unity::scopes::CategorisedResult </sdk/scopes/cpp/unity.scopes.CategorisedResult/>`_ 
 res(cat);
 
 res.set\_title("Log-in to YouTube");
@@ -2059,9 +2064,9 @@ oa\_client.register\_account\_login\_item(res,
 
 query(),
 
-`unity::scopes::OnlineAccountClient::InvalidateResults </sdk/scopes/cpp/unity.scopes.OnlineAccountClient#a4505ad39c78dcc9fbb78a594c33b9a22a4096156be602a8dd697c5a2f1d834cec>`__,
+`unity::scopes::OnlineAccountClient::InvalidateResults </sdk/scopes/cpp/unity.scopes.OnlineAccountClient/#a4505ad39c78dcc9fbb78a594c33b9a22a4096156be602a8dd697c5a2f1d834cec>`_ ,
 
-`unity::scopes::OnlineAccountClient::DoNothing </sdk/scopes/cpp/unity.scopes.OnlineAccountClient#a4505ad39c78dcc9fbb78a594c33b9a22a20868ed64ce21f859aae50ec76aa738d>`__);
+`unity::scopes::OnlineAccountClient::DoNothing </sdk/scopes/cpp/unity.scopes.OnlineAccountClient/#a4505ad39c78dcc9fbb78a594c33b9a22a20868ed64ce21f859aae50ec76aa738d>`_ );
 
 reply->push(res);
 
@@ -2074,8 +2079,8 @@ reply->push(res);
 
 The Unity Scopes API provides testing helpers based on the well-known
 and established testing frameworks,
-`googletest <https://code.google.com/p/googletest/>`__ and
-`googlemock <https://code.google.com/p/googlemock/>`__. Please see the
+`googletest <https://code.google.com/p/googletest/>`_  and
+`googlemock <https://code.google.com/p/googlemock/>`_ . Please see the
 respective documentation of these framework for general information on
 how to use them.
 
@@ -2092,21 +2097,21 @@ The most important ones are:
 -  unity::scopes::testing::MockPreviewReply - A mock of
    unity::scopes::PreviewReply that makes it possible to intercept and
    test responses to preview request sent from the scope to a client.
--  `unity::scopes::testing::Result </sdk/scopes/cpp/unity.scopes.testing/Result/>`__
+-  :ref:`unity::scopes::testing::Result <sdk_unity_scopes_testing_result>`
    - A simple Result class derived from
-   `unity::scopes::Result </sdk/scopes/cpp/unity.scopes.Result/>`__ that
+   `unity::scopes::Result </sdk/scopes/cpp/unity.scopes.Result/>`_  that
    provides a default constructor, so you can create dummy results
    (without attributes) for testing purposes.
 -  unity::scopes::testing::category - A simple class derived from
-   `unity::scopes::Category </sdk/scopes/cpp/unity.scopes.Category/>`__
+   `unity::scopes::Category </sdk/scopes/cpp/unity.scopes.Category/>`_ 
    that makes it possible to create dummy categories (which otherwise
    would require an instance of
-   `SearchReply </sdk/scopes/cpp/unity.scopes.SearchReply/>`__ and a
+   `SearchReply </sdk/scopes/cpp/unity.scopes.SearchReply/>`_  and a
    call to
-   `register\_category() </sdk/scopes/cpp/unity.scopes.SearchReply#aaa061806a96f50ff66abc6184135ea66>`__).
+   `register\_category() </sdk/scopes/cpp/unity.scopes.SearchReply/#aaa061806a96f50ff66abc6184135ea66>`_ ).
 
 Here is a test that checks if ``MyScope`` calls appropriate methods of
-`unity::scopes::SearchReply </sdk/scopes/cpp/unity.scopes.SearchReply/>`__.
+`unity::scopes::SearchReply </sdk/scopes/cpp/unity.scopes.SearchReply/>`_ .
 Note that the test only checks that the correct methods are called and
 uses ``_`` matchers that match any value. For a proper test, you will
 need to substitute values appropriate for your scope.
@@ -2121,7 +2126,7 @@ TEST\_F(TestScopeFixture, search\_results)
 {
 
 const
-`unity::scopes::CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`__
+`unity::scopes::CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`_ 
 renderer;
 
 NiceMock<unity::scopes::testing::MockSearchReply> reply;
@@ -2137,7 +2142,7 @@ EXPECT\_CALL(reply, register\_category(\_, \_, \_, \_))
 Return(
 
 unity::scopes::Category::SCPtr(new
-`unity::scopes::testing::Category </sdk/scopes/cpp/unity.scopes.testing/Category/>`__\ ("id",
+:ref:`unity::scopes::testing::Category <sdk_unity_scopes_testing_category>`\ ("id",
 "title", "icon", renderer))
 
 )
@@ -2159,13 +2164,13 @@ const&>(\_)))
 
 // note: this is a std::shared\_ptr with empty deleter
 
-`unity::scopes::SearchReplyProxy </sdk/scopes/cpp/unity.scopes#a9cd604d9b842ac3b2b8636c2165dec1f>`__
+:ref:`unity::scopes::SearchReplyProxy <sdk_unity_scopes#a9cd604d9b842ac3b2b8636c2165dec1f>`
 reply\_proxy(&reply, [](unity::scopes::SearchReplyBase\*) {});
 
-`unity::scopes::CannedQuery </sdk/scopes/cpp/unity.scopes.CannedQuery/>`__
+`unity::scopes::CannedQuery </sdk/scopes/cpp/unity.scopes.CannedQuery/>`_ 
 query(scope\_id, "", "");
 
-`unity::scopes::SearchMetadata </sdk/scopes/cpp/unity.scopes.SearchMetadata/>`__
+`unity::scopes::SearchMetadata </sdk/scopes/cpp/unity.scopes.SearchMetadata/>`_ 
 meta\_data("en\_EN", "phone");
 
 auto search\_query = scope->search(query, meta\_data);
@@ -2305,8 +2310,8 @@ valid for around an hour.
 
 ``LocationDataNeeded`` should be set to ``true`` if the scope requires
 location data. In that case, the
-`SearchMetadata </sdk/scopes/cpp/unity.scopes.SearchMetadata/>`__
-provides access to `Location </sdk/scopes/cpp/unity.scopes.Location/>`__
+`SearchMetadata </sdk/scopes/cpp/unity.scopes.SearchMetadata/>`_ 
+provides access to `Location </sdk/scopes/cpp/unity.scopes.Location/>`_ 
 information (assuming the user has granted location permission to the
 scope). If not set, the default value is ``false``.
 
@@ -2326,15 +2331,15 @@ used to customize the look of the scope. Some of the ``Appearance`` keys
 (such as ``PageHeader.Background``) require background scheme URIs.
 Valid URIs for these keys include:
 
--  color://#aarrggbb
+-  color:///#aarrggbb
 -  color:///black
--  gradient://#aarrggbb#aarrggbb
+-  gradient:///#aarrggbb/#aarrggbb
 -  /absolute/path/to/image
 -  http://remote-server.com/path/to/image
 
 Note
     Please refer to the `Scope
-    Keywords <https://developer.ubuntu.com/en/scopes/tutorials/scope-keywords/>`__
+    Keywords <https://developer.ubuntu.com/en/scopes/tutorials/scope-keywords/>`_ 
     tutorial document for more detail on using keywords in your scope.
 
 .. rubric::         The scope tool
@@ -2363,7 +2368,7 @@ Unity. The tool can also be used to fine-tune category definitions, as
 it allows you to manipulate the definitions on the fly. Once you are
 satisfied with the result, you can just copy the JSON definition back
 into your scope (see
-`unity::scopes::CategoryRenderer::CategoryRenderer() </sdk/scopes/cpp/unity.scopes.CategoryRenderer#a046414ae2092968686ee4ee00629054a>`__).
+`unity::scopes::CategoryRenderer::CategoryRenderer() </sdk/scopes/cpp/unity.scopes.CategoryRenderer/#a046414ae2092968686ee4ee00629054a>`_ ).
 
 The scope-tool supports a few command line arguments:
 

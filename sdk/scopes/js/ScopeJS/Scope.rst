@@ -1,3 +1,7 @@
+.. _sdk_scopejs_scope:
+ScopeJS Scope
+=============
+
 
 Scope corresponds to the bridge between the ubuntu scope runtime and the
 actual scope.

@@ -1,3 +1,7 @@
+.. _sdk_scopejs_actionmetadata:
+ScopeJS ActionMetadata
+======================
+
 
 Metadata passed to scopes for preview and activation
 

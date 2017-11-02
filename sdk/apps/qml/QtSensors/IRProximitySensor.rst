@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_irproximitysensor:
+QtSensors IRProximitySensor
+===========================
+
 The IRProximitySensor element reports on infra-red reflectance values.
 
 +--------------------------------------+--------------------------------------+
@@ -5,8 +9,7 @@ The IRProximitySensor element reports on infra-red reflectance values.
 +--------------------------------------+--------------------------------------+
 | Since:                               | QtSensors 5.0                        |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Sensor </sdk/apps/qml/QtSensors/Sen |
-|                                      | sor/>`__                             |
+| Inherits:                            | :ref:`Sensor <sdk_qtsensors_sensor>` |
 +--------------------------------------+--------------------------------------+
 
 Detailed Description
@@ -15,5 +18,4 @@ Detailed Description
 This element wraps the QIRProximitySensor class. Please see the
 documentation for QIRProximitySensor for details.
 
-**See also**
-`IRProximityReading </sdk/apps/qml/QtSensors/IRProximityReading/>`__.
+**See also** :ref:`IRProximityReading <sdk_qtsensors_irproximityreading>`.

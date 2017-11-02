@@ -1,6 +1,10 @@
+.. _sdk_unity_scopes_qt_qcategory:
+unity.scopes.qt QCategory
+=========================
+
 A set of related results returned by a scope and displayed within a
 single pane in the Unity dash.
-`More... </sdk/scopes/cpp/unity.scopes.qt/QCategory#details>`__
+:ref:`More... <sdk_unity_scopes_qt_qcategory#details>`
 
 ``#include <unity/scopes/qt/QCategory.h>``
 
@@ -9,7 +13,7 @@ single pane in the Unity dash.
 
 QString 
 
-`id </sdk/scopes/cpp/unity.scopes.qt/QCategory#a63a38bcb7635a7669c378b772892ef44>`__
+:ref:`id <sdk_unity_scopes_qt_qcategory#a63a38bcb7635a7669c378b772892ef44>`
 () const
 
  
@@ -20,7 +24,7 @@ QString 
 
 QString 
 
-`title </sdk/scopes/cpp/unity.scopes.qt/QCategory#a91ec8bb3764dc291bd7452fc74fde297>`__
+:ref:`title <sdk_unity_scopes_qt_qcategory#a91ec8bb3764dc291bd7452fc74fde297>`
 () const
 
  
@@ -31,7 +35,7 @@ QString 
 
 QString 
 
-`icon </sdk/scopes/cpp/unity.scopes.qt/QCategory#a534ad8fe06ec11c70a5438b47b93c27a>`__
+:ref:`icon <sdk_unity_scopes_qt_qcategory#a534ad8fe06ec11c70a5438b47b93c27a>`
 () const
 
  
@@ -42,7 +46,7 @@ QString 
 
 CannedQuery::SCPtr 
 
-`query </sdk/scopes/cpp/unity.scopes.qt/QCategory#a58567db06e8b5c981fed2911c86591f8>`__
+:ref:`query <sdk_unity_scopes_qt_qcategory#a58567db06e8b5c981fed2911c86591f8>`
 () const
 
  
@@ -51,10 +55,10 @@ CannedQuery::SCPtr 
 
  
 
-`CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`__
+`CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`_ 
 const & 
 
-`renderer\_template </sdk/scopes/cpp/unity.scopes.qt/QCategory#a6af889b4f3e3c5e70f48df0e09511ac8>`__
+:ref:`renderer\_template <sdk_unity_scopes_qt_qcategory#a6af889b4f3e3c5e70f48df0e09511ac8>`
 () const
 
  
@@ -69,8 +73,8 @@ Detailed Description
 A set of related results returned by a scope and displayed within a
 single pane in the Unity dash.
 
-To create a `QCategory </sdk/scopes/cpp/unity.scopes.qt/QCategory/>`__,
-use QReplyProxy::register\_category.
+To create a :ref:`QCategory <sdk_unity_scopes_qt_qcategory>`, use
+QReplyProxy::register\_category.
 
 Member Function Documentation
 -----------------------------
@@ -82,7 +86,7 @@ Member Function Documentation
 | ::icon         |                |                |                |                |
 +----------------+----------------+----------------+----------------+----------------+
 
-Get icon of this `Category </sdk/scopes/cpp/unity.scopes.Category/>`__.
+Get icon of this `Category </sdk/scopes/cpp/unity.scopes.Category/>`_ .
 
 Returns
     The category icon.
@@ -95,7 +99,7 @@ Returns
 +----------------+----------------+----------------+----------------+----------------+
 
 Get identifier of this
-`Category </sdk/scopes/cpp/unity.scopes.Category/>`__.
+`Category </sdk/scopes/cpp/unity.scopes.Category/>`_ .
 
 Returns
     The category identifier.
@@ -118,7 +122,7 @@ Returns
 | rer </sdk/scop |                |                |                |                |
 | es/cpp/unity.s |                |                |                |                |
 | copes.Category |                |                |                |                |
-| Renderer/>`__  |                |                |                |                |
+| Renderer/>`_   |                |                |                |                |
 | const&         |                |                |                |                |
 | unity::scopes: |                |                |                |                |
 | :qt::QCategory |                |                |                |                |
@@ -127,7 +131,7 @@ Returns
 +----------------+----------------+----------------+----------------+----------------+
 
 Get renderer template of this
-`Category </sdk/scopes/cpp/unity.scopes.Category/>`__.
+`Category </sdk/scopes/cpp/unity.scopes.Category/>`_ .
 
 Returns
     The category renderer template.
@@ -139,7 +143,7 @@ Returns
 | ::title        |                |                |                |                |
 +----------------+----------------+----------------+----------------+----------------+
 
-Get title of this `Category </sdk/scopes/cpp/unity.scopes.Category/>`__.
+Get title of this `Category </sdk/scopes/cpp/unity.scopes.Category/>`_ .
 
 Returns
     The category title.

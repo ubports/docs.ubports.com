@@ -1,3 +1,7 @@
+.. _sdk_qtquick_xmllistmodel_xmllistmodel:
+QtQuick.XmlListModel XmlListModel
+=================================
+
 For specifying a read-only model using XPath expressions
 
 +---------------------+-----------------------------------+
@@ -7,33 +11,33 @@ For specifying a read-only model using XPath expressions
 Properties
 ----------
 
--  ****`count </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel#count-prop>`__****
+-  `count </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel/_count-prop>`_ 
    : int
--  ****`namespaceDeclarations </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel#namespaceDeclarations-prop>`__****
+-  `namespaceDeclarations </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel/_namespaceDeclarations-prop>`_ 
    : string
--  ****`progress </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel#progress-prop>`__****
+-  `progress </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel/_progress-prop>`_ 
    : real
--  ****`query </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel#query-prop>`__****
+-  `query </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel/_query-prop>`_ 
    : string
--  ****`roles </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel#roles-prop>`__****
+-  `roles </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel/_roles-prop>`_ 
    : list<XmlRole>
--  ****`source </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel#source-prop>`__****
+-  `source </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel/_source-prop>`_ 
    : url
--  ****`status </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel#status-prop>`__****
+-  `status </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel/_status-prop>`_ 
    : enumeration
--  ****`xml </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel#xml-prop>`__****
+-  `xml </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel/_xml-prop>`_ 
    : string
 
 Methods
 -------
 
 -  void
-   ****`errorString </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel#errorString-method>`__****\ ()
+   **`errorString </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel/#errorString-method>`_ **\ ()
 -  object
-   ****`get </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel#get-method>`__****\ (int
+   **`get </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel/#get-method>`_ **\ (int
    *index*)
 -  void
-   ****`reload </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel#reload-method>`__****\ ()
+   **`reload </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel/#reload-method>`_ **\ ()
 
 Detailed Description
 --------------------
@@ -45,14 +49,14 @@ following line:
 
     import QtQuick.XmlListModel 2.0
 
-`XmlListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview#xmllistmodel>`__
+`XmlListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#xmllistmodel>`_ 
 is used to create a read-only model from XML data. It can be used as a
 data source for view elements (such as
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__,
-`PathView </sdk/apps/qml/QtQuick/PathView/>`__,
-`GridView </sdk/apps/qml/QtQuick/draganddrop#gridview>`__) and other
+:ref:`ListView <sdk_qtquick_listview>`,
+:ref:`PathView <sdk_qtquick_pathview>`,
+`GridView </sdk/apps/qml/QtQuick/draganddrop/#gridview>`_ ) and other
 elements that interact with model data (such as
-`Repeater </sdk/apps/qml/QtQuick/Repeater/>`__).
+:ref:`Repeater <sdk_qtquick_repeater>`).
 
 For example, if there is a XML document at
 http://www.mysite.com/feed.xml like this:
@@ -75,7 +79,7 @@ http://www.mysite.com/feed.xml like this:
     </rss>
 
 A
-`XmlListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview#xmllistmodel>`__
+`XmlListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#xmllistmodel>`_ 
 could create a model from this data, like this:
 
 .. code:: qml
@@ -91,21 +95,21 @@ could create a model from this data, like this:
     }
 
 The
-`query </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel#query-prop>`__
+`query </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel/#query-prop>`_ 
 value of "/rss/channel/item" specifies that the
-`XmlListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview#xmllistmodel>`__
+`XmlListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#xmllistmodel>`_ 
 should generate a model item for each ``<item>`` in the XML document.
 
-The `XmlRole </sdk/apps/qml/QtQuick/XmlListModel.XmlRole/>`__ objects
+The `XmlRole </sdk/apps/qml/QtQuick/XmlListModel.XmlRole/>`_  objects
 define the model item attributes. Here, each model item will have
 ``title`` and ``pubDate`` attributes that match the ``title`` and
 ``pubDate`` values of its corresponding ``<item>``. (See
-`XmlRole::query </sdk/apps/qml/QtQuick/XmlListModel.XmlRole#query-prop>`__
+`XmlRole::query </sdk/apps/qml/QtQuick/XmlListModel.XmlRole/#query-prop>`_ 
 for more examples of valid XPath expressions for
-`XmlRole </sdk/apps/qml/QtQuick/XmlListModel.XmlRole/>`__.)
+`XmlRole </sdk/apps/qml/QtQuick/XmlListModel.XmlRole/>`_ .)
 
-The model could be used in a
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__, like this:
+The model could be used in a :ref:`ListView <sdk_qtquick_listview>`, like
+this:
 
 .. code:: qml
 
@@ -118,19 +122,19 @@ The model could be used in a
 |image0|
 
 The
-`XmlListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview#xmllistmodel>`__
+`XmlListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#xmllistmodel>`_ 
 data is loaded asynchronously, and
-`status </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel#status-prop>`__
+`status </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel/#status-prop>`_ 
 is set to ``XmlListModel.Ready`` when loading is complete. Note this
 means when
-`XmlListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview#xmllistmodel>`__
+`XmlListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#xmllistmodel>`_ 
 is used for a view, the view is not populated until the model is loaded.
 
 Using key XML roles
 ~~~~~~~~~~~~~~~~~~~
 
 You can define certain roles as "keys" so that when
-`reload() </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel#reload-method>`__
+`reload() </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel/#reload-method>`_ 
 is called, the model will only add and refresh data that contains new
 values for these keys.
 
@@ -141,7 +145,7 @@ For example, if above role for "pubDate" was defined like this instead:
         XmlRole { name: "pubDate"; query: "pubDate/string()"; isKey: true }
 
 Then when
-`reload() </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel#reload-method>`__
+`reload() </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel/#reload-method>`_ 
 is called, the model will only add and reload items with a "pubDate"
 value that is not already present in the model.
 
@@ -154,10 +158,12 @@ items with a combined value of all key roles that is not already present
 in the model.
 
 **See also** `Qt Quick Demo - RSS
-News </sdk/apps/qml/QtQuick/demos-rssnews/>`__.
+News </sdk/apps/qml/QtQuick/demos-rssnews/>`_ .
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_xmllistmodel_xmllistmodel_count-prop:
 
 +--------------------------------------------------------------------------+
 |        \ count : int                                                     |
@@ -166,6 +172,8 @@ Property Documentation
 The number of data entries in the model.
 
 | 
+
+.. _sdk_qtquick_xmllistmodel_xmllistmodel_namespaceDeclarations-prop:
 
 +--------------------------------------------------------------------------+
 |        \ namespaceDeclarations : string                                  |
@@ -189,6 +197,8 @@ namespace:
 
 | 
 
+.. _sdk_qtquick_xmllistmodel_xmllistmodel_progress-prop:
+
 +--------------------------------------------------------------------------+
 |        \ progress : real                                                 |
 +--------------------------------------------------------------------------+
@@ -204,11 +214,13 @@ property to find out when the XML data has been read and loaded into the
 model.
 
 **See also**
-`status </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel#status-prop>`__
+`status </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel/#status-prop>`_ 
 and
-`source </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel#source-prop>`__.
+`source </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel/#source-prop>`_ .
 
 | 
+
+.. _sdk_qtquick_xmllistmodel_xmllistmodel_query-prop:
 
 +--------------------------------------------------------------------------+
 |        \ query : string                                                  |
@@ -216,19 +228,23 @@ and
 
 An absolute XPath query representing the base query for creating model
 items from this model's
-`XmlRole </sdk/apps/qml/QtQuick/XmlListModel.XmlRole/>`__ objects. The
+`XmlRole </sdk/apps/qml/QtQuick/XmlListModel.XmlRole/>`_  objects. The
 query should start with '/' or '//'.
 
 | 
 
+.. _sdk_qtquick_xmllistmodel_xmllistmodel_roles-prop:
+
 +--------------------------------------------------------------------------+
 |        \ roles :                                                         |
-| list<`XmlRole </sdk/apps/qml/QtQuick/XmlListModel.XmlRole/>`__>          |
+| list<`XmlRole </sdk/apps/qml/QtQuick/XmlListModel.XmlRole/>`_ >          |
 +--------------------------------------------------------------------------+
 
 The roles to make available for this model.
 
 | 
+
+.. _sdk_qtquick_xmllistmodel_xmllistmodel_source-prop:
 
 +--------------------------------------------------------------------------+
 |        \ source : url                                                    |
@@ -237,11 +253,13 @@ The roles to make available for this model.
 The location of the XML data source.
 
 If both ``source`` and
-`xml </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel#xml-prop>`__ are
-set, `xml </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel#xml-prop>`__
+`xml </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel/#xml-prop>`_  are
+set, `xml </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel/#xml-prop>`_ 
 is used.
 
 | 
+
+.. _sdk_qtquick_xmllistmodel_xmllistmodel_status-prop:
 
 +--------------------------------------------------------------------------+
 |        \ status : enumeration                                            |
@@ -249,21 +267,23 @@ is used.
 
 Specifies the model loading status, which can be one of the following:
 
--  `XmlListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview#xmllistmodel>`__.Null
+-  `XmlListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#xmllistmodel>`_ .Null
    - No XML data has been set for this model.
--  `XmlListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview#xmllistmodel>`__.Ready
+-  `XmlListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#xmllistmodel>`_ .Ready
    - The XML data has been loaded into the model.
--  `XmlListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview#xmllistmodel>`__.Loading
+-  `XmlListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#xmllistmodel>`_ .Loading
    - The model is in the process of reading and loading XML data.
--  `XmlListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview#xmllistmodel>`__.Error
+-  `XmlListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#xmllistmodel>`_ .Error
    - An error occurred while the model was loading. See
-   `errorString() </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel#errorString-method>`__
+   `errorString() </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel/#errorString-method>`_ 
    for details about the error.
 
 **See also**
-`progress </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel#progress-prop>`__.
+`progress </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel/#progress-prop>`_ .
 
 | 
+
+.. _sdk_qtquick_xmllistmodel_xmllistmodel_xml-prop:
 
 +--------------------------------------------------------------------------+
 |        \ xml : string                                                    |
@@ -274,7 +294,7 @@ This property holds the XML data for this model, if set.
 The text is assumed to be UTF-8 encoded.
 
 If both
-`source </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel#source-prop>`__
+`source </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel/#source-prop>`_ 
 and ``xml`` are set, ``xml`` is used.
 
 | 
@@ -282,15 +302,19 @@ and ``xml`` are set, ``xml`` is used.
 Method Documentation
 --------------------
 
+.. _sdk_qtquick_xmllistmodel_xmllistmodel_void errorString-method:
+
 +--------------------------------------------------------------------------+
 |        \ void errorString()                                              |
 +--------------------------------------------------------------------------+
 
 Returns a string description of the last error that occurred if
-`status </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel#status-prop>`__
+`status </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel/#status-prop>`_ 
 is XmlListModel::Error.
 
 | 
+
+.. _sdk_qtquick_xmllistmodel_xmllistmodel_object get-method:
 
 +--------------------------------------------------------------------------+
 |        \ object get(int *index*)                                         |
@@ -317,6 +341,8 @@ This will access the ``title`` value for the first item in the model:
 
 | 
 
+.. _sdk_qtquick_xmllistmodel_xmllistmodel_void reload-method:
+
 +--------------------------------------------------------------------------+
 |        \ void reload()                                                   |
 +--------------------------------------------------------------------------+
@@ -330,9 +356,9 @@ Otherwise, items are only added if the model does not already contain
 items with matching key role values.
 
 **See also** `Using key XML
-roles </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel#using-key-xml-roles>`__
+roles </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel/#using-key-xml-roles>`_ 
 and
-`XmlRole::isKey </sdk/apps/qml/QtQuick/XmlListModel.XmlRole#isKey-prop>`__.
+`XmlRole::isKey </sdk/apps/qml/QtQuick/XmlListModel.XmlRole/#isKey-prop>`_ .
 
 | 
 

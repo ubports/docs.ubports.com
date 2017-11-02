@@ -1,6 +1,10 @@
+.. _sdk_operationinfo:
+OperationInfo
+=============
+
 A container for details about something of interest that occurs during
 the operation of a request.
-`More... </sdk/scopes/cpp/unity.scopes.OperationInfo#details>`__
+`More... </sdk/scopes/cpp/unity.scopes.OperationInfo/#details>`_ 
 
 ``#include <unity/scopes/OperationInfo.h>``
 
@@ -9,7 +13,7 @@ the operation of a request.
 
 enum  
 
-| `InfoCode </sdk/scopes/cpp/unity.scopes.OperationInfo#a57178085d8ea6d116347b8fa3fe8878d>`__
+| `InfoCode </sdk/scopes/cpp/unity.scopes.OperationInfo/#a57178085d8ea6d116347b8fa3fe8878d>`_ 
   {
 |   **Unknown**, **NoInternet**, **PoorInternet**, **NoLocationData**,
 |   **InaccurateLocationData**, **ResultsIncomplete**,
@@ -20,7 +24,7 @@ enum  
  
 
 | Indicates the type of / cause for the information being reported.
-  `More... </sdk/scopes/cpp/unity.scopes.OperationInfo#a57178085d8ea6d116347b8fa3fe8878d>`__
+  `More... </sdk/scopes/cpp/unity.scopes.OperationInfo/#a57178085d8ea6d116347b8fa3fe8878d>`_ 
 
  
 
@@ -29,9 +33,9 @@ enum  
 
  
 
-`OperationInfo </sdk/scopes/cpp/unity.scopes.OperationInfo#a38875517344af4ca90565cc523af918b>`__
-(`InfoCode </sdk/scopes/cpp/unity.scopes.OperationInfo#a57178085d8ea6d116347b8fa3fe8878d>`__
-`code </sdk/scopes/cpp/unity.scopes.OperationInfo#a7e00ec86a3a0974df981146cea0202f9>`__)
+`OperationInfo </sdk/scopes/cpp/unity.scopes.OperationInfo/#a38875517344af4ca90565cc523af918b>`_ 
+(`InfoCode </sdk/scopes/cpp/unity.scopes.OperationInfo/#a57178085d8ea6d116347b8fa3fe8878d>`_ 
+`code </sdk/scopes/cpp/unity.scopes.OperationInfo/#a7e00ec86a3a0974df981146cea0202f9>`_ )
 
  
 
@@ -41,11 +45,11 @@ enum  
 
  
 
-`OperationInfo </sdk/scopes/cpp/unity.scopes.OperationInfo#a711cd4c4d7ca4a4ff884b81440fd3934>`__
-(`InfoCode </sdk/scopes/cpp/unity.scopes.OperationInfo#a57178085d8ea6d116347b8fa3fe8878d>`__
-`code </sdk/scopes/cpp/unity.scopes.OperationInfo#a7e00ec86a3a0974df981146cea0202f9>`__,
+`OperationInfo </sdk/scopes/cpp/unity.scopes.OperationInfo/#a711cd4c4d7ca4a4ff884b81440fd3934>`_ 
+(`InfoCode </sdk/scopes/cpp/unity.scopes.OperationInfo/#a57178085d8ea6d116347b8fa3fe8878d>`_ 
+`code </sdk/scopes/cpp/unity.scopes.OperationInfo/#a7e00ec86a3a0974df981146cea0202f9>`_ ,
 std::string
-`message </sdk/scopes/cpp/unity.scopes.OperationInfo#a2676a34824fc6c2481dbc30836d7ebf2>`__)
+`message </sdk/scopes/cpp/unity.scopes.OperationInfo/#a2676a34824fc6c2481dbc30836d7ebf2>`_ )
 
  
 
@@ -53,9 +57,9 @@ std::string
 
  
 
-`InfoCode </sdk/scopes/cpp/unity.scopes.OperationInfo#a57178085d8ea6d116347b8fa3fe8878d>`__ 
+`InfoCode </sdk/scopes/cpp/unity.scopes.OperationInfo/#a57178085d8ea6d116347b8fa3fe8878d>`_  
 
-`code </sdk/scopes/cpp/unity.scopes.OperationInfo#a7e00ec86a3a0974df981146cea0202f9>`__
+`code </sdk/scopes/cpp/unity.scopes.OperationInfo/#a7e00ec86a3a0974df981146cea0202f9>`_ 
 () const noexcept
 
  
@@ -66,7 +70,7 @@ std::string
 
 std::string 
 
-`message </sdk/scopes/cpp/unity.scopes.OperationInfo#a2676a34824fc6c2481dbc30836d7ebf2>`__
+`message </sdk/scopes/cpp/unity.scopes.OperationInfo/#a2676a34824fc6c2481dbc30836d7ebf2>`_ 
 () const
 
  
@@ -83,7 +87,7 @@ usual value semantics.
          
 
 **OperationInfo**
-(`OperationInfo </sdk/scopes/cpp/unity.scopes.OperationInfo/>`__ const
+(`OperationInfo </sdk/scopes/cpp/unity.scopes.OperationInfo/>`_  const
 &other)
 
  
@@ -91,24 +95,24 @@ usual value semantics.
          
 
 **OperationInfo**
-(`OperationInfo </sdk/scopes/cpp/unity.scopes.OperationInfo/>`__ &&)
+(`OperationInfo </sdk/scopes/cpp/unity.scopes.OperationInfo/>`_  &&)
 
  
 
-        `OperationInfo </sdk/scopes/cpp/unity.scopes.OperationInfo/>`__
+        `OperationInfo </sdk/scopes/cpp/unity.scopes.OperationInfo/>`_ 
 & 
 
 **operator=**
-(`OperationInfo </sdk/scopes/cpp/unity.scopes.OperationInfo/>`__ const
+(`OperationInfo </sdk/scopes/cpp/unity.scopes.OperationInfo/>`_  const
 &other)
 
  
 
-        `OperationInfo </sdk/scopes/cpp/unity.scopes.OperationInfo/>`__
+        `OperationInfo </sdk/scopes/cpp/unity.scopes.OperationInfo/>`_ 
 & 
 
 **operator=**
-(`OperationInfo </sdk/scopes/cpp/unity.scopes.OperationInfo/>`__ &&)
+(`OperationInfo </sdk/scopes/cpp/unity.scopes.OperationInfo/>`_  &&)
 
  
 
@@ -121,9 +125,9 @@ the operation of a request.
 Member Enumeration Documentation
 --------------------------------
 
-+----------------------------------------------------------------------------------------------------------------------------------+
-| enum `unity::scopes::OperationInfo::InfoCode </sdk/scopes/cpp/unity.scopes.OperationInfo#a57178085d8ea6d116347b8fa3fe8878d>`__   |
-+----------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------+
+| enum `unity::scopes::OperationInfo::InfoCode </sdk/scopes/cpp/unity.scopes.OperationInfo/#a57178085d8ea6d116347b8fa3fe8878d>`_    |
++-----------------------------------------------------------------------------------------------------------------------------------+
 
 Indicates the type of / cause for the information being reported.
 
@@ -139,13 +143,13 @@ Constructor & Destructor Documentation
 | s::Operation |              | sdk/scopes/c |              |              |              |
 | Info::Operat |              | pp/unity.sco |              |              |              |
 | ionInfo      |              | pes.Operatio |              |              |              |
-|              |              | nInfo#a57178 |              |              |              |
-|              |              | 085d8ea6d116 |              |              |              |
-|              |              | 347b8fa3fe88 |              |              |              |
-|              |              | 78d>`__      |              |              |              |
+|              |              | nInfo/#a5717 |              |              |              |
+|              |              | 8085d8ea6d11 |              |              |              |
+|              |              | 6347b8fa3fe8 |              |              |              |
+|              |              | 878d>`_      |              |              |              |
 +--------------+--------------+--------------+--------------+--------------+--------------+
 
-Create `OperationInfo </sdk/scopes/cpp/unity.scopes.OperationInfo/>`__
+Create `OperationInfo </sdk/scopes/cpp/unity.scopes.OperationInfo/>`_ 
 with the given info code.
 
 Parameters
@@ -156,17 +160,17 @@ Parameters
 +--------------------+--------------------+--------------------+--------------------+
 | unity::scopes::Ope | (                  | `InfoCode </sdk/sc | *code*,            |
 | rationInfo::Operat |                    | opes/cpp/unity.sco |                    |
-| ionInfo            |                    | pes.OperationInfo# |                    |
-|                    |                    | a57178085d8ea6d116 |                    |
-|                    |                    | 347b8fa3fe8878d>`_ |                    |
-|                    |                    | _                  |                    |
+| ionInfo            |                    | pes.OperationInfo/ |                    |
+|                    |                    | #a57178085d8ea6d11 |                    |
+|                    |                    | 6347b8fa3fe8878d>` |                    |
+|                    |                    | __                 |                    |
 +--------------------+--------------------+--------------------+--------------------+
 |                    |                    | std::string        | *message*          |
 +--------------------+--------------------+--------------------+--------------------+
 |                    | )                  |                    |                    |
 +--------------------+--------------------+--------------------+--------------------+
 
-Create `OperationInfo </sdk/scopes/cpp/unity.scopes.OperationInfo/>`__
+Create `OperationInfo </sdk/scopes/cpp/unity.scopes.OperationInfo/>`_ 
 with the given info code and message.
 
 Parameters
@@ -195,16 +199,16 @@ Member Function Documentation
 | | unity.scopes.O |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
-| | perationInfo#a |                |  |                                      |
+| | perationInfo/# |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
-| | 57178085d8ea6d |                |  |                                      |
+| | a57178085d8ea6 |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
-| | 116347b8fa3fe8 |                |  |                                      |
+| | d116347b8fa3fe |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
-| | 878d>`__       |                |  |                                      |
+| | 8878d>`_       |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
 | | unity::scopes: |                |  |                                      |

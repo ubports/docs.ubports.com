@@ -1,18 +1,22 @@
+.. _sdk_qtquick_positioning_with_anchors:
+QtQuick Positioning with Anchors
+================================
+
 
 
 In addition to the more traditional
-`Grid </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#grid>`__,
-`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#row>`__, and
-`Column </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#column>`__,
+`Grid </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#grid>`_ ,
+`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#row>`_ , and
+`Column </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#column>`_ ,
 Qt Quick also provides a way to layout items using the concept of
 *anchors*. Each item can be thought of as having a set of 7 invisible
-"anchor lines": `left </sdk/apps/qml/QtQuick/Item#anchors.left-prop>`__,
-`horizontalCenter </sdk/apps/qml/QtQuick/Item#anchors.horizontalCenter-prop>`__,
-`right </sdk/apps/qml/QtQuick/Item#anchors.right-prop>`__,
-`top </sdk/apps/qml/QtQuick/Item#anchors.top-prop>`__,
-`verticalCenter </sdk/apps/qml/QtQuick/Item#anchors.verticalCenter-prop>`__,
-`baseline </sdk/apps/qml/QtQuick/Item#anchors.baseline-prop>`__, and
-`bottom </sdk/apps/qml/QtQuick/Item#anchors.bottom-prop>`__.
+"anchor lines": :ref:`left <sdk_qtquick_item#anchors.left-prop>`,
+:ref:`horizontalCenter <sdk_qtquick_item#anchors.horizontalCenter-prop>`,
+:ref:`right <sdk_qtquick_item#anchors.right-prop>`,
+:ref:`top <sdk_qtquick_item#anchors.top-prop>`,
+:ref:`verticalCenter <sdk_qtquick_item#anchors.verticalCenter-prop>`,
+:ref:`baseline <sdk_qtquick_item#anchors.baseline-prop>`, and
+:ref:`bottom <sdk_qtquick_item#anchors.bottom-prop>`.
 
 |image0|
 
@@ -69,18 +73,16 @@ for an item's anchors. Margins specify the amount of empty space to
 leave to the outside of an item's anchor, while offsets allow
 positioning to be manipulated using the center anchor lines. An item can
 specify its anchor margins individually through
-`leftMargin </sdk/apps/qml/QtQuick/Item#anchors.leftMargin-prop>`__,
-`rightMargin </sdk/apps/qml/QtQuick/Item#anchors.rightMargin-prop>`__,
-`topMargin </sdk/apps/qml/QtQuick/Item#anchors.topMargin-prop>`__ and
-`bottomMargin </sdk/apps/qml/QtQuick/Item#anchors.bottomMargin-prop>`__,
-or use
-`anchors.margins </sdk/apps/qml/QtQuick/Item#anchors.margins-prop>`__ to
-specify the same margin value for all four edges. Anchor offsets are
-specified using
-`horizontalCenterOffset </sdk/apps/qml/QtQuick/Item#anchors.horizontalCenterOffset-prop>`__,
-`verticalCenterOffset </sdk/apps/qml/QtQuick/Item#anchors.verticalCenterOffset-prop>`__
-and
-`baselineOffset </sdk/apps/qml/QtQuick/Item#anchors.baselineOffset-prop>`__.
+:ref:`leftMargin <sdk_qtquick_item#anchors.leftMargin-prop>`,
+:ref:`rightMargin <sdk_qtquick_item#anchors.rightMargin-prop>`,
+:ref:`topMargin <sdk_qtquick_item#anchors.topMargin-prop>` and
+:ref:`bottomMargin <sdk_qtquick_item#anchors.bottomMargin-prop>`, or use
+:ref:`anchors.margins <sdk_qtquick_item#anchors.margins-prop>` to specify
+the same margin value for all four edges. Anchor offsets are specified
+using
+:ref:`horizontalCenterOffset <sdk_qtquick_item#anchors.horizontalCenterOffset-prop>`,
+:ref:`verticalCenterOffset <sdk_qtquick_item#anchors.verticalCenterOffset-prop>`
+and :ref:`baselineOffset <sdk_qtquick_item#anchors.baselineOffset-prop>`.
 
 |image4|
 
@@ -97,16 +99,15 @@ producing the following:
 |image5|
 
 **Note:** Anchor margins only apply to anchors; they are *not* a generic
-means of applying margins to an `Item </sdk/apps/qml/QtQuick/Item/>`__.
-If an anchor margin is specified for an edge but the item is not
-anchored to any item on that edge, the margin is not applied.
+means of applying margins to an :ref:`Item <sdk_qtquick_item>`. If an
+anchor margin is specified for an edge but the item is not anchored to
+any item on that edge, the margin is not applied.
 
 .. rubric:: Changing Anchors
    :name: changing-anchors
 
-Qt Quick provides the
-`AnchorChanges </sdk/apps/qml/QtQuick/AnchorChanges/>`__ type for
-specifying the anchors in a state.
+Qt Quick provides the :ref:`AnchorChanges <sdk_qtquick_anchorchanges>` type
+for specifying the anchors in a state.
 
 .. code:: qml
 
@@ -119,9 +120,8 @@ specifying the anchors in a state.
         }
     }
 
-`AnchorChanges </sdk/apps/qml/QtQuick/AnchorChanges/>`__ can be animated
-using the `AnchorAnimation </sdk/apps/qml/QtQuick/AnchorAnimation/>`__
-type.
+:ref:`AnchorChanges <sdk_qtquick_anchorchanges>` can be animated using the
+:ref:`AnchorAnimation <sdk_qtquick_anchoranimation>` type.
 
 .. code:: qml
 
@@ -193,9 +193,9 @@ update.
     }
 
 This should be rewritten to use
-`AnchorChanges </sdk/apps/qml/QtQuick/AnchorChanges/>`__ instead, as
-`AnchorChanges </sdk/apps/qml/QtQuick/AnchorChanges/>`__ will
-automatically handle ordering issues internally.
+:ref:`AnchorChanges <sdk_qtquick_anchorchanges>` instead, as
+:ref:`AnchorChanges <sdk_qtquick_anchorchanges>` will automatically handle
+ordering issues internally.
 
 .. rubric:: Restrictions
    :name: restrictions
@@ -217,25 +217,24 @@ produce a warning:
     }
 
 Also, anchor-based layouts cannot be mixed with absolute positioning. If
-an item specifies its `x </sdk/apps/qml/QtQuick/Item#x-prop>`__ position
-and also sets
-`anchors.left </sdk/apps/qml/QtQuick/Item#anchors.left-prop>`__, or
-anchors its left and right edges but additionally sets a
-`width </sdk/apps/qml/QtQuick/Item#width-prop>`__, the result is
-undefined, as it would not be clear whether the item should use
-anchoring or absolute positioning. The same can be said for setting an
-item's `y </sdk/apps/qml/QtQuick/Item#y-prop>`__ and
-`height </sdk/apps/qml/QtQuick/Item#height-prop>`__ with
-`anchors.top </sdk/apps/qml/QtQuick/Item#anchors.top-prop>`__ and
-`anchors.bottom </sdk/apps/qml/QtQuick/Item#anchors.bottom-prop>`__, or
-setting `anchors.fill </sdk/apps/qml/QtQuick/Item#anchors.fill-prop>`__
-as well as `width </sdk/apps/qml/QtQuick/Item#width-prop>`__ or
-`height </sdk/apps/qml/QtQuick/Item#height-prop>`__. The same applies
-when using positioners such as Row and Grid, which may set the item's
-`x </sdk/apps/qml/QtQuick/Item#x-prop>`__ and
-`y </sdk/apps/qml/QtQuick/Item#y-prop>`__ properties. If you wish to
-change from using anchor-based to absolute positioning, you can clear an
-anchor value by setting it to ``undefined``.
+an item specifies its :ref:`x <sdk_qtquick_item#x-prop>` position and also
+sets :ref:`anchors.left <sdk_qtquick_item#anchors.left-prop>`, or anchors
+its left and right edges but additionally sets a
+:ref:`width <sdk_qtquick_item#width-prop>`, the result is undefined, as it
+would not be clear whether the item should use anchoring or absolute
+positioning. The same can be said for setting an item's
+:ref:`y <sdk_qtquick_item#y-prop>` and
+:ref:`height <sdk_qtquick_item#height-prop>` with
+:ref:`anchors.top <sdk_qtquick_item#anchors.top-prop>` and
+:ref:`anchors.bottom <sdk_qtquick_item#anchors.bottom-prop>`, or setting
+:ref:`anchors.fill <sdk_qtquick_item#anchors.fill-prop>` as well as
+:ref:`width <sdk_qtquick_item#width-prop>` or
+:ref:`height <sdk_qtquick_item#height-prop>`. The same applies when using
+positioners such as Row and Grid, which may set the item's
+:ref:`x <sdk_qtquick_item#x-prop>` and `y <sdk_qtquick_item#y-prop>`
+properties. If you wish to change from using anchor-based to absolute
+positioning, you can clear an anchor value by setting it to
+``undefined``.
 
 .. |image0| image:: /media/sdk/apps/qml/qtquick-positioning-anchors/images/edges_qml.png
 .. |image1| image:: /media/sdk/apps/qml/qtquick-positioning-anchors/images/edge1.png

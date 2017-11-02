@@ -1,3 +1,7 @@
+.. _sdk_onlineaccounts_accountservice:
+OnlineAccounts AccountService
+=============================
+
 
 AccountService represents an instance of a service in an Online
 Accounts.

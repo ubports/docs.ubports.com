@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_listitem:
+Ubuntu.Components ListItem
+==========================
+
 The ListItem element provides Ubuntu design standards for list or grid
 views. The ListItem component was designed to be used in a list view. It
 does not define any specific layout, but while its contents can be
@@ -13,72 +17,71 @@ light in order to ensure good performance when used in long list views.
 Properties
 ----------
 
--  ****`action </sdk/apps/qml/Ubuntu.Components/ListItem#action-prop>`__****
-   : Action
--  ****`color </sdk/apps/qml/Ubuntu.Components/ListItem#color-prop>`__****
-   : color
--  ****`contentItem </sdk/apps/qml/Ubuntu.Components/ListItem#contentItem-prop>`__****
+-  :ref:`action <sdk_ubuntu_components_listitem_action-prop>` :
+   Action
+-  :ref:`color <sdk_ubuntu_components_listitem_color-prop>` : color
+-  :ref:`contentItem <sdk_ubuntu_components_listitem_contentItem-prop>`
    : Item
--  ****`contentMoving </sdk/apps/qml/Ubuntu.Components/ListItem#contentMoving-prop>`__****
+-  :ref:`contentMoving <sdk_ubuntu_components_listitem_contentMoving-prop>`
    : bool
--  ****`divider </sdk/apps/qml/Ubuntu.Components/ListItem#divider-prop>`__****
+-  :ref:`divider <sdk_ubuntu_components_listitem_divider-prop>`
 
-   -  ****`divider.colorFrom </sdk/apps/qml/Ubuntu.Components/ListItem#divider.colorFrom-prop>`__****
+   -  :ref:`divider.colorFrom <sdk_ubuntu_components_listitem_divider.colorFrom-prop>`
       : real
-   -  ****`divider.colorTo </sdk/apps/qml/Ubuntu.Components/ListItem#divider.colorTo-prop>`__****
+   -  :ref:`divider.colorTo <sdk_ubuntu_components_listitem_divider.colorTo-prop>`
       : real
 
--  ****`dragMode </sdk/apps/qml/Ubuntu.Components/ListItem#dragMode-prop>`__****
-   : bool
--  ****`dragging </sdk/apps/qml/Ubuntu.Components/ListItem#dragging-prop>`__****
-   : bool
--  ****`expansion </sdk/apps/qml/Ubuntu.Components/ListItem#expansion-prop>`__****
+-  :ref:`dragMode <sdk_ubuntu_components_listitem_dragMode-prop>` :
+   bool
+-  :ref:`dragging <sdk_ubuntu_components_listitem_dragging-prop>` :
+   bool
+-  :ref:`expansion <sdk_ubuntu_components_listitem_expansion-prop>`
 
-   -  ****`expansion.expanded </sdk/apps/qml/Ubuntu.Components/ListItem#expansion.expanded-prop>`__****
+   -  :ref:`expansion.expanded <sdk_ubuntu_components_listitem_expansion.expanded-prop>`
       : bool
-   -  ****`expansion.height </sdk/apps/qml/Ubuntu.Components/ListItem#expansion.height-prop>`__****
+   -  :ref:`expansion.height <sdk_ubuntu_components_listitem_expansion.height-prop>`
       : real
 
--  ****`highlightColor </sdk/apps/qml/Ubuntu.Components/ListItem#highlightColor-prop>`__****
+-  :ref:`highlightColor <sdk_ubuntu_components_listitem_highlightColor-prop>`
    : color
--  ****`highlighted </sdk/apps/qml/Ubuntu.Components/ListItem#highlighted-prop>`__****
+-  :ref:`highlighted <sdk_ubuntu_components_listitem_highlighted-prop>`
    : bool
--  ****`leadingActions </sdk/apps/qml/Ubuntu.Components/ListItem#leadingActions-prop>`__****
+-  :ref:`leadingActions <sdk_ubuntu_components_listitem_leadingActions-prop>`
    : ListItemActions
--  ****`selectMode </sdk/apps/qml/Ubuntu.Components/ListItem#selectMode-prop>`__****
+-  :ref:`selectMode <sdk_ubuntu_components_listitem_selectMode-prop>`
    : bool
--  ****`selected </sdk/apps/qml/Ubuntu.Components/ListItem#selected-prop>`__****
+-  :ref:`selected <sdk_ubuntu_components_listitem_selected-prop>` :
+   bool
+-  :ref:`swipeEnabled <sdk_ubuntu_components_listitem_swipeEnabled-prop>`
    : bool
--  ****`swipeEnabled </sdk/apps/qml/Ubuntu.Components/ListItem#swipeEnabled-prop>`__****
-   : bool
--  ****`swiped </sdk/apps/qml/Ubuntu.Components/ListItem#swiped-prop>`__****
-   : bool
--  ****`trailingActions </sdk/apps/qml/Ubuntu.Components/ListItem#trailingActions-prop>`__****
+-  :ref:`swiped <sdk_ubuntu_components_listitem_swiped-prop>` :
+   bool
+-  :ref:`trailingActions <sdk_ubuntu_components_listitem_trailingActions-prop>`
    : ListItemActions
 
 Signals
 -------
 
--  ****`clicked </sdk/apps/qml/Ubuntu.Components/ListItem#clicked-signal>`__****\ ()
--  ****`contentMovementEnded </sdk/apps/qml/Ubuntu.Components/ListItem#contentMovementEnded-signal>`__****\ ()
--  ****`contentMovementStarted </sdk/apps/qml/Ubuntu.Components/ListItem#contentMovementStarted-signal>`__****\ ()
--  ****`pressAndHold </sdk/apps/qml/Ubuntu.Components/ListItem#pressAndHold-signal>`__****\ ()
+-  :ref:`clicked <sdk_ubuntu_components_listitem_clicked-signal>`\ ()
+-  :ref:`contentMovementEnded <sdk_ubuntu_components_listitem_contentMovementEnded-signal>`\ ()
+-  :ref:`contentMovementStarted <sdk_ubuntu_components_listitem_contentMovementStarted-signal>`\ ()
+-  :ref:`pressAndHold <sdk_ubuntu_components_listitem_pressAndHold-signal>`\ ()
 
 Detailed Description
 --------------------
 
 The component provides two color properties which configures the item's
 background when normal or highlighted. This can be configured through
-`color </sdk/apps/qml/Ubuntu.Components/ListItem#color-prop>`__ and
-`highlightColor </sdk/apps/qml/Ubuntu.Components/ListItem#highlightColor-prop>`__
+:ref:`color <sdk_ubuntu_components_listitem#color-prop>` and
+:ref:`highlightColor <sdk_ubuntu_components_listitem#highlightColor-prop>`
 properties. The list item is highlighted if there is an action attached
 to it. This means that the list item must have an active component
 declared as child, at least leading- or trailing actions specified, or
 to have a slot connected to
-`clicked </sdk/apps/qml/Ubuntu.Components/ListItem#clicked-signal>`__ or
-`pressAndHold </sdk/apps/qml/Ubuntu.Components/ListItem#pressAndHold-signal>`__
+:ref:`clicked <sdk_ubuntu_components_listitem#clicked-signal>` or
+:ref:`pressAndHold <sdk_ubuntu_components_listitem#pressAndHold-signal>`
 signal. In any other case the component will not be highlighted, and
-`highlighted </sdk/apps/qml/Ubuntu.Components/ListItem#highlighted-prop>`__
+:ref:`highlighted <sdk_ubuntu_components_listitem#highlighted-prop>`
 property will not be toggled either. Also, there will be no highlight
 happening if the click happens on the active component.
 
@@ -146,41 +149,39 @@ happening if the click happens on the active component.
        }
     }
 
-`contentItem </sdk/apps/qml/Ubuntu.Components/ListItem#contentItem-prop>`__
-holds all components and resources declared as child to
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__. Being an Item,
-all properties can be accessed or altered. However, make sure you never
+:ref:`contentItem <sdk_ubuntu_components_listitem#contentItem-prop>` holds
+all components and resources declared as child to
+:ref:`ListItem <sdk_ubuntu_components_listitem>`. Being an Item, all
+properties can be accessed or altered. However, make sure you never
 change **x**, **y**, **width**, **height** or **anchors** properties as
 those are controlled by the
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ itself when
-leading or trailing actions are revealed or when selectable and
-draggable mode is turned on, and thus might cause the component to
-misbehave. Anchors margins are free to alter.
+:ref:`ListItem <sdk_ubuntu_components_listitem>` itself when leading or
+trailing actions are revealed or when selectable and draggable mode is
+turned on, and thus might cause the component to misbehave. Anchors
+margins are free to alter.
 
-Each `ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ has a thin
-divider shown on the bottom of the component. This divider can be
-configured through the
-`divider </sdk/apps/qml/Ubuntu.Components/ListItem#divider-prop>`__
+Each :ref:`ListItem <sdk_ubuntu_components_listitem>` has a thin divider
+shown on the bottom of the component. This divider can be configured
+through the :ref:`divider <sdk_ubuntu_components_listitem#divider-prop>`
 grouped property, which can configure its margins from the edges of the
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ as well as its
-visibility. When used in `ListView </sdk/apps/qml/QtQuick/ListView/>`__
-or `UbuntuListView </sdk/apps/qml/Ubuntu.Components/UbuntuListView/>`__,
-the last list item will not show the divider no matter of the visible
-property value set.
+:ref:`ListItem <sdk_ubuntu_components_listitem>` as well as its visibility.
+When used in :ref:`ListView <sdk_qtquick_listview>` or
+:ref:`UbuntuListView <sdk_ubuntu_components_ubuntulistview>`, the last list
+item will not show the divider no matter of the visible property value
+set.
 
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ can handle
-actions that can get swiped from front or back of the item. These
-actions are Action elements visualized in panels attached to the front
-or to the back of the item, and are revealed by swiping the item
-horizontally. The swipe is started only after the mouse/touch move had
-passed a given threshold. The actions are visualized by a panel, which
-is configurable through the
-`ListItemStyle </sdk/apps/qml/Ubuntu.Components/Styles.ListItemStyle/>`__.
+:ref:`ListItem <sdk_ubuntu_components_listitem>` can handle actions that
+can get swiped from front or back of the item. These actions are Action
+elements visualized in panels attached to the front or to the back of
+the item, and are revealed by swiping the item horizontally. The swipe
+is started only after the mouse/touch move had passed a given threshold.
+The actions are visualized by a panel, which is configurable through the
+`ListItemStyle </sdk/apps/qml/Ubuntu.Components/Styles.ListItemStyle/>`_ .
 
 The actions are configured through the
-`leadingActions </sdk/apps/qml/Ubuntu.Components/ListItem#leadingActions-prop>`__
+:ref:`leadingActions <sdk_ubuntu_components_listitem#leadingActions-prop>`
 as well as
-`trailingActions </sdk/apps/qml/Ubuntu.Components/ListItem#trailingActions-prop>`__
+:ref:`trailingActions <sdk_ubuntu_components_listitem#trailingActions-prop>`
 properties.
 
 .. code:: qml
@@ -209,10 +210,10 @@ properties.
 
 **Note:** When a list item is swiped, it automatically connects both
 leading and trailing actions to the list item. If needed, the same
-`ListItemActions </sdk/apps/qml/Ubuntu.Components/ListItemActions/>`__
-instance can be used in both leading and trailing side. In the following
-example the list item can be deleted through both leading and trailing
-actions using the same container:
+:ref:`ListItemActions <sdk_ubuntu_components_listitemactions>` instance can
+be used in both leading and trailing side. In the following example the
+list item can be deleted through both leading and trailing actions using
+the same container:
 
 .. code:: qml
 
@@ -231,26 +232,25 @@ actions using the same container:
 
 The action is triggered only after all the animations are completed.
 
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ provides a set
-of attached properties which are attached to each panel of the
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__. However not
-all properties are valid in all the circumstances.
+:ref:`ListItem <sdk_ubuntu_components_listitem>` provides a set of attached
+properties which are attached to each panel of the
+:ref:`ListItem <sdk_ubuntu_components_listitem>`. However not all
+properties are valid in all the circumstances.
 
 The component is styled using the
-`ListItemStyle </sdk/apps/qml/Ubuntu.Components/Styles.ListItemStyle/>`__
+`ListItemStyle </sdk/apps/qml/Ubuntu.Components/Styles.ListItemStyle/>`_ 
 style interface.
 
 Selection mode
 ~~~~~~~~~~~~~~
 
-The selection mode of a
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ is controlled
-by the
-`ViewItems::selectMode </sdk/apps/qml/Ubuntu.Components/ViewItems#selectMode-attached-prop>`__
+The selection mode of a :ref:`ListItem <sdk_ubuntu_components_listitem>` is
+controlled by the
+:ref:`ViewItems::selectMode <sdk_ubuntu_components_viewitems#selectMode-attached-prop>`
 attached property. This property is attached to each parent item of the
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ exception being
-when used as delegate in `ListView </sdk/apps/qml/QtQuick/ListView/>`__,
-where the property is attached to the view itself.
+:ref:`ListItem <sdk_ubuntu_components_listitem>` exception being when used
+as delegate in :ref:`ListView <sdk_qtquick_listview>`, where the property
+is attached to the view itself.
 
 .. code:: qml
 
@@ -277,54 +277,52 @@ where the property is attached to the view itself.
     }
 
 The indices selected are stored in
-`ViewItems::selectedIndices </sdk/apps/qml/Ubuntu.Components/ViewItems#selectedIndices-attached-prop>`__
+:ref:`ViewItems::selectedIndices <sdk_ubuntu_components_viewitems#selectedIndices-attached-prop>`
 attached property, attached the same way as the
-`ViewItems::selectMode </sdk/apps/qml/Ubuntu.Components/ViewItems#selectMode-attached-prop>`__
+:ref:`ViewItems::selectMode <sdk_ubuntu_components_viewitems#selectMode-attached-prop>`
 property is. This is a read/write property, meaning that initial
 selected item indices can be set up. The list contains the indices added
 in the order of selection, not sorted in any form.
 
 **Note:** When in selectable mode, the
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ content is not
-disabled and
-`clicked </sdk/apps/qml/Ubuntu.Components/ListItem#clicked-signal>`__
-and
-`pressAndHold </sdk/apps/qml/Ubuntu.Components/ListItem#pressAndHold-signal>`__
+:ref:`ListItem <sdk_ubuntu_components_listitem>` content is not disabled
+and :ref:`clicked <sdk_ubuntu_components_listitem#clicked-signal>` and
+:ref:`pressAndHold <sdk_ubuntu_components_listitem#pressAndHold-signal>`
 signals are also emitted. The only restriction the component implies is
 that leading and trailing actions cannot be swiped in. selectable
 property can be used to implement different behavior when
-`clicked </sdk/apps/qml/Ubuntu.Components/ListItem#clicked-signal>`__ or
-`pressAndHold </sdk/apps/qml/Ubuntu.Components/ListItem#pressAndHold-signal>`__.
+:ref:`clicked <sdk_ubuntu_components_listitem#clicked-signal>` or
+:ref:`pressAndHold <sdk_ubuntu_components_listitem#pressAndHold-signal>`.
 
 Dragging mode
 ~~~~~~~~~~~~~
 
 The dragging mode is only supported on
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__, as it requires a model
-supported view to be used. The drag mode can be activated through the
-`ViewItems::dragMode </sdk/apps/qml/Ubuntu.Components/ViewItems#dragMode-attached-prop>`__
+:ref:`ListView <sdk_qtquick_listview>`, as it requires a model supported
+view to be used. The drag mode can be activated through the
+:ref:`ViewItems::dragMode <sdk_ubuntu_components_viewitems#dragMode-attached-prop>`
 attached property, when attached to the
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__. The items will show a
-panel as defined in the style, and dragging will be possible when
-initiated over this panel. Pressing or clicking anywhere else on the
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ will invoke the
-item's action assigned to the touched area.
+:ref:`ListView <sdk_qtquick_listview>`. The items will show a panel as
+defined in the style, and dragging will be possible when initiated over
+this panel. Pressing or clicking anywhere else on the
+:ref:`ListItem <sdk_ubuntu_components_listitem>` will invoke the item's
+action assigned to the touched area.
 
 The dragging is realized through the
-`ViewItems::dragUpdated </sdk/apps/qml/Ubuntu.Components/ViewItems#dragUpdated-signal>`__
+:ref:`ViewItems::dragUpdated <sdk_ubuntu_components_viewitems#dragUpdated-signal>`
 signal, and a signal handler must be implemented in order to have the
 draging working. Implementations can drive the drag to be live (each
 time the dragged item is dragged over an other item will change the
 order of the items) or drag'n'drop way (the dragged item will be moved
 only when the user releases the item by dropping it to the desired
 position). The signal has a
-`ListItemDrag </sdk/apps/qml/Ubuntu.Components/ListItemDrag/>`__ *event*
-parameter, which gives detailed information about the drag event, like
-started, dragged up or downwards or dropped, allowing in this way
-various restrictions on the dragging.
+:ref:`ListItemDrag <sdk_ubuntu_components_listitemdrag>` *event* parameter,
+which gives detailed information about the drag event, like started,
+dragged up or downwards or dropped, allowing in this way various
+restrictions on the dragging.
 
 The dragging event provides three states reported in
-`ListItemDrag::status </sdk/apps/qml/Ubuntu.Components/ListItemDrag#status-prop>`__
+:ref:`ListItemDrag::status <sdk_ubuntu_components_listitemdrag#status-prop>`
 field, *Started*, *Moving* and *Dropped*. The other event field values
 depend on the status, therefore the status must be taken into account
 when implementing the signal handler. In case live dragging is needed,
@@ -410,25 +408,23 @@ Example of drag'n'drop implementation:
         }
     }
 
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ does not
-provide animations when the
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__'s model is updated. In
-order to have animation, use
-`UbuntuListView </sdk/apps/qml/Ubuntu.Components/UbuntuListView/>`__ or
-provide a transition animation to the moveDisplaced or displaced
-property of the `ListView </sdk/apps/qml/QtQuick/ListView/>`__.
+:ref:`ListItem <sdk_ubuntu_components_listitem>` does not provide
+animations when the :ref:`ListView <sdk_qtquick_listview>`'s model is
+updated. In order to have animation, use
+:ref:`UbuntuListView <sdk_ubuntu_components_ubuntulistview>` or provide a
+transition animation to the moveDisplaced or displaced property of the
+:ref:`ListView <sdk_qtquick_listview>`.
 
 Using non-QAbstractItemModel models
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Live dragging (moving content on the move) is only possible when the
 model is a derivate of the
-`QAbstractItemModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-cppmodels#qabstractitemmodel>`__.
-When a list model is used, the
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__ will re-create all the
-items in the view, meaning that the dragged item will no longer be
-controlled by the dragging. However, non-live drag'n'drop operations can
-still be implemented with these kind of lists as well.
+`QAbstractItemModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-cppmodels/#qabstractitemmodel>`_ .
+When a list model is used, the :ref:`ListView <sdk_qtquick_listview>` will
+re-create all the items in the view, meaning that the dragged item will
+no longer be controlled by the dragging. However, non-live drag'n'drop
+operations can still be implemented with these kind of lists as well.
 
 .. code:: qml
 
@@ -464,9 +460,9 @@ still be implemented with these kind of lists as well.
         }
     }
 
-When using `DelegateModel </sdk/apps/qml/QtQml/DelegateModel/>`__, it
-must be taken into account when implementing the
-`ViewItems::dragUpdated </sdk/apps/qml/Ubuntu.Components/ViewItems#dragUpdated-signal>`__
+When using :ref:`DelegateModel <sdk_qtqml_delegatemodel>`, it must be taken
+into account when implementing the
+:ref:`ViewItems::dragUpdated <sdk_ubuntu_components_viewitems#dragUpdated-signal>`
 signal handler.
 
 .. code:: qml
@@ -503,38 +499,36 @@ Expansion
 ~~~~~~~~~
 
 Since Ubuntu.Components 1.3,
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ supports
-expansion. ListItems declared in a view can expand exclusively, having
-leading and trailing panes locked when expanded and to be collapsed when
-tapping outside of the expanded area. The expansion is driven by the
-`expansion </sdk/apps/qml/Ubuntu.Components/ListItem#expansion>`__ group
-property, and the behavior by the
-`ViewItems::expansionFlags </sdk/apps/qml/Ubuntu.Components/ViewItems#expansionFlags-attached-prop>`__
+:ref:`ListItem <sdk_ubuntu_components_listitem>` supports expansion.
+ListItems declared in a view can expand exclusively, having leading and
+trailing panes locked when expanded and to be collapsed when tapping
+outside of the expanded area. The expansion is driven by the
+:ref:`expansion <sdk_ubuntu_components_listitem#expansion>` group property,
+and the behavior by the
+:ref:`ViewItems::expansionFlags <sdk_ubuntu_components_viewitems#expansionFlags-attached-prop>`
 and
-`ViewItems::expandedIndices </sdk/apps/qml/Ubuntu.Components/ViewItems#expandedIndices-attached-prop>`__
-attached properties. Each
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ which is
-required to expand should set a proper height in the
-`expansion.height </sdk/apps/qml/Ubuntu.Components/ListItem#expansion.height-prop>`__
+:ref:`ViewItems::expandedIndices <sdk_ubuntu_components_viewitems#expandedIndices-attached-prop>`
+attached properties. Each :ref:`ListItem <sdk_ubuntu_components_listitem>`
+which is required to expand should set a proper height in the
+:ref:`expansion.height <sdk_ubuntu_components_listitem#expansion.height-prop>`
 property, which should be bigger than the collapsed height of the
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ is. The
-expansion itself is driven by the
-`expansion.expanded </sdk/apps/qml/Ubuntu.Components/ListItem#expansion.expanded-prop>`__
+:ref:`ListItem <sdk_ubuntu_components_listitem>` is. The expansion itself
+is driven by the
+:ref:`expansion.expanded <sdk_ubuntu_components_listitem#expansion.expanded-prop>`
 property, which can be set freely depending on the use case, on click,
 on long press, etc.
 
 The default expansion behavior is set to be exclusive and locked,
 meaning there can be only one
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ expanded within
-a view and neither leading nor trailing action panels cannot be swiped
-in. Expanding an other
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ will collapse
-the previosuly expanded one. There can be cases when tapping outside of
-the expanded area of a
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ we woudl need
-the expanded one to collapse automatically. This can be achieved by
-setting ``ViewItems.CollapseOnOutsidePress`` flag to
-`ViewItems::expansionFlags </sdk/apps/qml/Ubuntu.Components/ViewItems#expansionFlags-attached-prop>`__.
+:ref:`ListItem <sdk_ubuntu_components_listitem>` expanded within a view and
+neither leading nor trailing action panels cannot be swiped in.
+Expanding an other :ref:`ListItem <sdk_ubuntu_components_listitem>` will
+collapse the previosuly expanded one. There can be cases when tapping
+outside of the expanded area of a
+:ref:`ListItem <sdk_ubuntu_components_listitem>` we woudl need the expanded
+one to collapse automatically. This can be achieved by setting
+``ViewItems.CollapseOnOutsidePress`` flag to
+:ref:`ViewItems::expansionFlags <sdk_ubuntu_components_viewitems#expansionFlags-attached-prop>`.
 This flag will also turn on ``ViewItems.Exclusive`` flag, as tapping
 outside practicly forbids more than one item to be expanded at a time.
 
@@ -582,58 +576,61 @@ The example above collapses the expanded item whenever it is tapped or
 mouse pressed outside of the expanded list item.
 
 **Note:** Set 0 to
-`ViewItems::expansionFlags </sdk/apps/qml/Ubuntu.Components/ViewItems#expansionFlags-attached-prop>`__
+:ref:`ViewItems::expansionFlags <sdk_ubuntu_components_viewitems#expansionFlags-attached-prop>`
 if no restrictions on expanded items is required (i.e multiple expanded
 items are allowed, swiping leading/trailing actions when expanded).
 
 **Note:** Do not bind
-`expansion.height </sdk/apps/qml/Ubuntu.Components/ListItem#expansion.height-prop>`__
-to the `ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__'s height
-as is will cause binding loops.
+:ref:`expansion.height <sdk_ubuntu_components_listitem#expansion.height-prop>`
+to the :ref:`ListItem <sdk_ubuntu_components_listitem>`'s height as is will
+cause binding loops.
 
 Note on styling
 ~~~~~~~~~~~~~~~
 
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__'s styling
-differs from the other components styling, as
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ loads the style
-only when either of the leadin/trailing panels are swiped, or when the
-item enters in select- or drag mode. The component does not assume any
-visuals to be present in the style.
+:ref:`ListItem <sdk_ubuntu_components_listitem>`'s styling differs from the
+other components styling, as
+:ref:`ListItem <sdk_ubuntu_components_listitem>` loads the style only when
+either of the leadin/trailing panels are swiped, or when the item enters
+in select- or drag mode. The component does not assume any visuals to be
+present in the style.
 
 **See also**
-`ListItemActions </sdk/apps/qml/Ubuntu.Components/ListItemActions/>`__,
-`ViewItems::dragMode </sdk/apps/qml/Ubuntu.Components/ViewItems#dragMode-attached-prop>`__,
-`ViewItems::dragUpdated </sdk/apps/qml/Ubuntu.Components/ViewItems#dragUpdated-signal>`__,
+:ref:`ListItemActions <sdk_ubuntu_components_listitemactions>`,
+:ref:`ViewItems::dragMode <sdk_ubuntu_components_viewitems#dragMode-attached-prop>`,
+:ref:`ViewItems::dragUpdated <sdk_ubuntu_components_viewitems#dragUpdated-signal>`,
 and
-`ListItemStyle </sdk/apps/qml/Ubuntu.Components/Styles.ListItemStyle/>`__.
+`ListItemStyle </sdk/apps/qml/Ubuntu.Components/Styles.ListItemStyle/>`_ .
 
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_listitem_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ action : `Action </sdk/apps/qml/Ubuntu.Components/Action/>`__   |
+| :ref:` <>`\ action : `Action <sdk_ubuntu_components_action>`           |
 +--------------------------------------------------------------------------+
 
 The property holds the action which will be triggered when the
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ is clicked.
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ will not
-visualize the action, that is the responsibility of the components
-placed inside the list item. However, when set, the
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ will be
-highlighted on press.
+:ref:`ListItem <sdk_ubuntu_components_listitem>` is clicked.
+:ref:`ListItem <sdk_ubuntu_components_listitem>` will not visualize the
+action, that is the responsibility of the components placed inside the
+list item. However, when set, the
+:ref:`ListItem <sdk_ubuntu_components_listitem>` will be highlighted on
+press.
 
 If the action set has no value type set,
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ will set its
-type to **Action.Integer** and the
-`triggered </sdk/apps/qml/Ubuntu.Components/Action#triggered-signal>`__
-signal will be getting the
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ index as
-*value* parameter.
+:ref:`ListItem <sdk_ubuntu_components_listitem>` will set its type to
+**Action.Integer** and the
+:ref:`triggered <sdk_ubuntu_components_action#triggered-signal>` signal
+will be getting the :ref:`ListItem <sdk_ubuntu_components_listitem>` index
+as *value* parameter.
 
 Defaults no null.
 
 | 
+
+.. _sdk_ubuntu_components_listitem_color-prop:
 
 +--------------------------------------------------------------------------+
 |        \ color : color                                                   |
@@ -644,19 +641,21 @@ transparent.
 
 | 
 
+.. _sdk_ubuntu_components_listitem_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ contentItem : `Item </sdk/apps/qml/QtQuick/Item/>`__            |
+| :ref:` <>`\ contentItem : `Item <sdk_qtquick_item>`                    |
 +--------------------------------------------------------------------------+
 
 contentItem holds the components placed on a
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__. It is anchored
-to the `ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ on left,
-top and right, and to the divider on the bottom, or to the
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__'s bottom in
-case the divider is not visible. The content is clipped by default. It
-is not recommended to change the anchors as the
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ controls them,
-however any other property value is free to change. Example:
+:ref:`ListItem <sdk_ubuntu_components_listitem>`. It is anchored to the
+:ref:`ListItem <sdk_ubuntu_components_listitem>` on left, top and right,
+and to the divider on the bottom, or to the
+:ref:`ListItem <sdk_ubuntu_components_listitem>`'s bottom in case the
+divider is not visible. The content is clipped by default. It is not
+recommended to change the anchors as the
+:ref:`ListItem <sdk_ubuntu_components_listitem>` controls them, however any
+other property value is free to change. Example:
 
 .. code:: qml
 
@@ -671,6 +670,8 @@ however any other property value is free to change. Example:
 
 | 
 
+.. _sdk_ubuntu_components_listitem_[read-only] contentMoving-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [read-only] contentMoving : bool                                |
 +--------------------------------------------------------------------------+
@@ -681,9 +682,12 @@ snapping animation completes.
 
 | 
 
+.. _sdk_ubuntu_components_listitem_**divider group**-prop:
+
 +--------------------------------------------------------------------------+
 |        \ **divider group**                                               |
 +==========================================================================+
+.. _sdk_ubuntu_components_listitem_divider.colorTo-prop:
 |        \ divider.colorFrom : real                                        |
 +--------------------------------------------------------------------------+
 |        \ divider.colorTo : real                                          |
@@ -696,48 +700,56 @@ swiped left or right to reveal the actions. **colorFrom** and
 Beside these properties all Item specific properties can be accessed.
 
 When **visible** is true, the
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__'s content size
-gets thinner with the divider's **thickness**. By default the divider is
+:ref:`ListItem <sdk_ubuntu_components_listitem>`'s content size gets
+thinner with the divider's **thickness**. By default the divider is
 anchored to the bottom, left right of the
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__, and has a 2dp
-height.
+:ref:`ListItem <sdk_ubuntu_components_listitem>`, and has a 2dp height.
 
 | 
+
+.. _sdk_ubuntu_components_listitem_dragMode-prop:
 
 +--------------------------------------------------------------------------+
 |        \ dragMode : bool                                                 |
 +--------------------------------------------------------------------------+
 
 The property reports whether a
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ is draggable or
-not. While in drag mode, the list item content cannot be swiped. The
-default value is false.
+:ref:`ListItem <sdk_ubuntu_components_listitem>` is draggable or not. While
+in drag mode, the list item content cannot be swiped. The default value
+is false.
 
 | 
+
+.. _sdk_ubuntu_components_listitem_dragging-prop:
 
 +--------------------------------------------------------------------------+
 |        \ dragging : bool                                                 |
 +--------------------------------------------------------------------------+
 
 The property informs about an ongoing dragging on a
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__.
+:ref:`ListItem <sdk_ubuntu_components_listitem>`.
 
 | 
+
+.. _sdk_ubuntu_components_listitem_**expansion group**-prop:
 
 +--------------------------------------------------------------------------+
 |        \ **expansion group**                                             |
 +==========================================================================+
+.. _sdk_ubuntu_components_listitem_expansion.height-prop:
 |        \ expansion.expanded : bool                                       |
 +--------------------------------------------------------------------------+
 |        \ expansion.height : real                                         |
 +--------------------------------------------------------------------------+
 
 The group drefines the expansion state of the
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__.
+:ref:`ListItem <sdk_ubuntu_components_listitem>`.
 
 This property group was introduced in Ubuntu.Components 1.3.
 
 | 
+
+.. _sdk_ubuntu_components_listitem_highlightColor-prop:
 
 +--------------------------------------------------------------------------+
 |        \ highlightColor : color                                          |
@@ -749,15 +761,17 @@ value.
 
 | 
 
+.. _sdk_ubuntu_components_listitem_highlighted-prop:
+
 +--------------------------------------------------------------------------+
 |        \ highlighted : bool                                              |
 +--------------------------------------------------------------------------+
 
 True when the item is pressed. The items stays highlighted when the
 mouse or touch is moved horizontally. When in Flickable (or
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__), the item gets
-un-highlighted (false) when the mouse or touch is moved towards the
-vertical direction causing the flickable to move.
+:ref:`ListView <sdk_qtquick_listview>`), the item gets un-highlighted
+(false) when the mouse or touch is moved towards the vertical direction
+causing the flickable to move.
 
 Configures the color when highlighted. Defaults to the theme palette's
 background color.
@@ -765,29 +779,25 @@ background color.
 An item is highlighted, thus highlight state toggled, when pressed and
 it has one of the following conditions fulfilled:
 
--  `leadingActions </sdk/apps/qml/Ubuntu.Components/ListItem#leadingActions-prop>`__
+-  :ref:`leadingActions <sdk_ubuntu_components_listitem#leadingActions-prop>`
    or
-   `trailingActions </sdk/apps/qml/Ubuntu.Components/ListItem#trailingActions-prop>`__
+   :ref:`trailingActions <sdk_ubuntu_components_listitem#trailingActions-prop>`
    set,
--  it has an
-   `action </sdk/apps/qml/Ubuntu.Components/ListItem#action-prop>`__
+-  it has an :ref:`action <sdk_ubuntu_components_listitem#action-prop>`
    attached
--  if the `ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ has
-   an active child component, such as a
-   `Button </sdk/apps/qml/Ubuntu.Components/Button/>`__, a
-   `Switch </sdk/apps/qml/Ubuntu.Components/Switch/>`__, etc.
+-  if the :ref:`ListItem <sdk_ubuntu_components_listitem>` has an active
+   child component, such as a :ref:`Button <sdk_ubuntu_components_button>`,
+   a :ref:`Switch <sdk_ubuntu_components_switch>`, etc.
 -  in general, if an active (enabled and visible) **MouseArea** is added
    as a child component
--  `clicked </sdk/apps/qml/Ubuntu.Components/ListItem#clicked-signal>`__
-   signal handler is implemented or there is a slot or function
-   connected to it
--  `pressAndHold </sdk/apps/qml/Ubuntu.Components/ListItem#pressAndHold-signal>`__
+-  :ref:`clicked <sdk_ubuntu_components_listitem#clicked-signal>` signal
+   handler is implemented or there is a slot or function connected to it
+-  :ref:`pressAndHold <sdk_ubuntu_components_listitem#pressAndHold-signal>`
    signal handler is implemented or there is a slot or function
    connected to it.
 
 **Note:** Adding an active component does not mean the component will be
-activated when the
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ will be
+activated when the :ref:`ListItem <sdk_ubuntu_components_listitem>` will be
 tapped/clicked outside of the component area. If such a behavior is
 needed, that must be done explicitly.
 
@@ -804,26 +814,29 @@ needed, that must be done explicitly.
         Component.onCompleted: clicked.connect(toggle.clicked)
     }
 
-**See also**
-`action </sdk/apps/qml/Ubuntu.Components/ListItem#action-prop>`__,
-`leadingActions </sdk/apps/qml/Ubuntu.Components/ListItem#leadingActions-prop>`__,
+**See also** :ref:`action <sdk_ubuntu_components_listitem#action-prop>`,
+:ref:`leadingActions <sdk_ubuntu_components_listitem#leadingActions-prop>`,
 and
-`trailingActions </sdk/apps/qml/Ubuntu.Components/ListItem#trailingActions-prop>`__.
+:ref:`trailingActions <sdk_ubuntu_components_listitem#trailingActions-prop>`.
 
 | 
 
+.. _sdk_ubuntu_components_listitem_leadingActions-prop:
+
 +--------------------------------------------------------------------------+
 |        \ leadingActions :                                                |
-| `ListItemActions </sdk/apps/qml/Ubuntu.Components/ListItemActions/>`__   |
+| :ref:`ListItemActions <sdk_ubuntu_components_listitemactions>`              |
 +--------------------------------------------------------------------------+
 
 The property holds the actions and its configuration to be revealed when
 swiped from left to right.
 
 **See also**
-`trailingActions </sdk/apps/qml/Ubuntu.Components/ListItem#trailingActions-prop>`__.
+:ref:`trailingActions <sdk_ubuntu_components_listitem#trailingActions-prop>`.
 
 | 
+
+.. _sdk_ubuntu_components_listitem_selectMode-prop:
 
 +--------------------------------------------------------------------------+
 |        \ selectMode : bool                                               |
@@ -831,17 +844,18 @@ swiped from left to right.
 
 The property reports whether the component and the view using the
 component is in selectable state. While selectable, the
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__'s leading- and
-trailing panels cannot be swiped in.
-`clicked </sdk/apps/qml/Ubuntu.Components/ListItem#clicked-signal>`__
-and
-`pressAndHold </sdk/apps/qml/Ubuntu.Components/ListItem#pressAndHold-signal>`__
+:ref:`ListItem <sdk_ubuntu_components_listitem>`'s leading- and trailing
+panels cannot be swiped in.
+:ref:`clicked <sdk_ubuntu_components_listitem#clicked-signal>` and
+:ref:`pressAndHold <sdk_ubuntu_components_listitem#pressAndHold-signal>`
 signals are also triggered. Selectable mode can be set either through
 this property or through the parent attached
-`ViewItems::selectMode </sdk/apps/qml/Ubuntu.Components/ViewItems#selectMode-attached-prop>`__
+:ref:`ViewItems::selectMode <sdk_ubuntu_components_viewitems#selectMode-attached-prop>`
 property.
 
 | 
+
+.. _sdk_ubuntu_components_listitem_selected-prop:
 
 +--------------------------------------------------------------------------+
 |        \ selected : bool                                                 |
@@ -851,11 +865,13 @@ The property drives whether a list item is selected or not. Defaults to
 false.
 
 **See also**
-`ListItem::selectMode </sdk/apps/qml/Ubuntu.Components/ListItem#selectMode-prop>`__
+:ref:`ListItem::selectMode <sdk_ubuntu_components_listitem#selectMode-prop>`
 and
-`ViewItems::selectMode </sdk/apps/qml/Ubuntu.Components/ViewItems#selectMode-attached-prop>`__.
+:ref:`ViewItems::selectMode <sdk_ubuntu_components_viewitems#selectMode-attached-prop>`.
 
 | 
+
+.. _sdk_ubuntu_components_listitem_swipeEnabled-prop:
 
 +--------------------------------------------------------------------------+
 |        \ swipeEnabled : bool                                             |
@@ -863,9 +879,8 @@ and
 
 The property enables the swiping of the leading- or trailing actions.
 This is useful when an overlay component needs to handle mouse moves or
-drag events without the
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ to steal the
-events. Defaults to true.
+drag events without the :ref:`ListItem <sdk_ubuntu_components_listitem>` to
+steal the events. Defaults to true.
 
 .. code:: qml
 
@@ -894,6 +909,8 @@ This QML property was introduced in Ubuntu.Components 1.3.
 
 | 
 
+.. _sdk_ubuntu_components_listitem_[read-only] swiped-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [read-only] swiped : bool                                       |
 +--------------------------------------------------------------------------+
@@ -905,41 +922,46 @@ This QML property was introduced in Ubuntu.Components 1.3.
 
 | 
 
+.. _sdk_ubuntu_components_listitem_trailingActions-prop:
+
 +--------------------------------------------------------------------------+
 |        \ trailingActions :                                               |
-| `ListItemActions </sdk/apps/qml/Ubuntu.Components/ListItemActions/>`__   |
+| :ref:`ListItemActions <sdk_ubuntu_components_listitemactions>`              |
 +--------------------------------------------------------------------------+
 
 The property holds the actions and its configuration to be revealed when
 swiped from right to left.
 
 **See also**
-`leadingActions </sdk/apps/qml/Ubuntu.Components/ListItem#leadingActions-prop>`__.
+:ref:`leadingActions <sdk_ubuntu_components_listitem#leadingActions-prop>`.
 
 | 
 
 Signal Documentation
 --------------------
 
+.. _sdk_ubuntu_components_listitem_clicked()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ clicked()                                                       |
 +--------------------------------------------------------------------------+
 
 The signal is emitted when the component gets released while the
-`highlighted </sdk/apps/qml/Ubuntu.Components/ListItem#highlighted-prop>`__
+:ref:`highlighted <sdk_ubuntu_components_listitem#highlighted-prop>`
 property is set. The signal is not emitted if the
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ content is
-swiped or when used in Flickable (or
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__,
-`GridView </sdk/apps/qml/QtQuick/qtquick-draganddrop-example#gridview>`__)
+:ref:`ListItem <sdk_ubuntu_components_listitem>` content is swiped or when
+used in Flickable (or :ref:`ListView <sdk_qtquick_listview>`,
+`GridView </sdk/apps/qml/QtQuick/qtquick-draganddrop-example/#gridview>`_ )
 and the Flickable gets moved.
 
-If the `ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ contains
-a component which contains an active
-`MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__, the clicked signal
-will be supressed when clicked over this area.
+If the :ref:`ListItem <sdk_ubuntu_components_listitem>` contains a
+component which contains an active
+:ref:`MouseArea <sdk_qtquick_mousearea>`, the clicked signal will be
+supressed when clicked over this area.
 
 | 
+
+.. _sdk_ubuntu_components_listitem_contentMovementEnded()-prop:
 
 +--------------------------------------------------------------------------+
 |        \ contentMovementEnded()                                          |
@@ -948,6 +970,8 @@ will be supressed when clicked over this area.
 The signal is emitted when the content movement has ended.
 
 | 
+
+.. _sdk_ubuntu_components_listitem_contentMovementStarted()-prop:
 
 +--------------------------------------------------------------------------+
 |        \ contentMovementStarted()                                        |
@@ -963,9 +987,9 @@ The signal is emitted when the content movement has started.
 
 The signal is emitted when the list item is long pressed.
 
-If the `ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ contains
-a component which contains an active
-`MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__, the pressAndHold
-signal will be supressed when pressed over this area.
+If the :ref:`ListItem <sdk_ubuntu_components_listitem>` contains a
+component which contains an active
+:ref:`MouseArea <sdk_qtquick_mousearea>`, the pressAndHold signal will be
+supressed when pressed over this area.
 
 | 

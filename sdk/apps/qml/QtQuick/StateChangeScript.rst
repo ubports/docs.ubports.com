@@ -1,3 +1,7 @@
+.. _sdk_qtquick_statechangescript:
+QtQuick StateChangeScript
+=========================
+
 Specifies how to run a script in a state
 
 +---------------------+----------------------+
@@ -7,20 +11,18 @@ Specifies how to run a script in a state
 Properties
 ----------
 
--  ****`name </sdk/apps/qml/QtQuick/StateChangeScript#name-prop>`__****
-   : string
--  ****`script </sdk/apps/qml/QtQuick/StateChangeScript#script-prop>`__****
-   : script
+-  :ref:`name <sdk_qtquick_statechangescript_name-prop>` : string
+-  :ref:`script <sdk_qtquick_statechangescript_script-prop>` :
+   script
 
 Detailed Description
 --------------------
 
-A `StateChangeScript </sdk/apps/qml/QtQuick/StateChangeScript/>`__ is
-run upon entering a state. You can optionally use
-`ScriptAction </sdk/apps/qml/QtQuick/ScriptAction/>`__ to specify the
-point in the transition at which the
-`StateChangeScript </sdk/apps/qml/QtQuick/StateChangeScript/>`__ should
-be run.
+A :ref:`StateChangeScript <sdk_qtquick_statechangescript>` is run upon
+entering a state. You can optionally use
+:ref:`ScriptAction <sdk_qtquick_scriptaction>` to specify the point in the
+transition at which the
+:ref:`StateChangeScript <sdk_qtquick_statechangescript>` should be run.
 
 .. code:: qml
 
@@ -42,27 +44,29 @@ be run.
         }
     }
 
-**See also** `ScriptAction </sdk/apps/qml/QtQuick/ScriptAction/>`__.
+**See also** :ref:`ScriptAction <sdk_qtquick_scriptaction>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_statechangescript_name-prop:
 
 +--------------------------------------------------------------------------+
 |        \ name : string                                                   |
 +--------------------------------------------------------------------------+
 
 This property holds the name of the script. This name can be used by a
-`ScriptAction </sdk/apps/qml/QtQuick/ScriptAction/>`__ to target a
-specific script.
+:ref:`ScriptAction <sdk_qtquick_scriptaction>` to target a specific script.
 
 **See also**
-`ScriptAction::scriptName </sdk/apps/qml/QtQuick/ScriptAction#scriptName-prop>`__.
+:ref:`ScriptAction::scriptName <sdk_qtquick_scriptaction#scriptName-prop>`.
 
 | 
 
+.. _sdk_qtquick_statechangescript_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ script :                                                        |
-| `script </sdk/apps/qml/QtQuick/StateChangeScript#script-prop>`__         |
+| :ref:` <>`\ script : `script <sdk_qtquick_statechangescript#script-prop>` |
 +--------------------------------------------------------------------------+
 
 This property holds the script to run when the state is current.

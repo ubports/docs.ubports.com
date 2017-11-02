@@ -1,3 +1,7 @@
+.. _sdk_qtmultimedia_videooutput:
+QtMultimedia VideoOutput
+========================
+
 Render video or camera viewfinder.
 
 +---------------------+---------------------------+
@@ -7,45 +11,45 @@ Render video or camera viewfinder.
 Properties
 ----------
 
--  ****`autoOrientation </sdk/apps/qml/QtMultimedia/VideoOutput#autoOrientation-prop>`__****
+-  :ref:`autoOrientation <sdk_qtmultimedia_videooutput_autoOrientation-prop>`
    : bool
--  ****`contentRect </sdk/apps/qml/QtMultimedia/VideoOutput#contentRect-prop>`__****
+-  :ref:`contentRect <sdk_qtmultimedia_videooutput_contentRect-prop>`
    : rectangle
--  ****`fillMode </sdk/apps/qml/QtMultimedia/VideoOutput#fillMode-prop>`__****
-   : enumeration
--  ****`orientation </sdk/apps/qml/QtMultimedia/VideoOutput#orientation-prop>`__****
+-  :ref:`fillMode <sdk_qtmultimedia_videooutput_fillMode-prop>` :
+   enumeration
+-  :ref:`orientation <sdk_qtmultimedia_videooutput_orientation-prop>`
    : int
--  ****`source </sdk/apps/qml/QtMultimedia/VideoOutput#source-prop>`__****
-   : variant
--  ****`sourceRect </sdk/apps/qml/QtMultimedia/VideoOutput#sourceRect-prop>`__****
+-  :ref:`source <sdk_qtmultimedia_videooutput_source-prop>` :
+   variant
+-  :ref:`sourceRect <sdk_qtmultimedia_videooutput_sourceRect-prop>`
    : rectangle
 
 Methods
 -------
 
 -  QPointF
-   ****`mapNormalizedPointToItem </sdk/apps/qml/QtMultimedia/VideoOutput#mapNormalizedPointToItem-method>`__****\ (const
+   **:ref:`mapNormalizedPointToItem <sdk_qtmultimedia_videooutput#mapNormalizedPointToItem-method>`**\ (const
    QPointF & *point*)
 -  QRectF
-   ****`mapNormalizedRectToItem </sdk/apps/qml/QtMultimedia/VideoOutput#mapNormalizedRectToItem-method>`__****\ (const
+   **:ref:`mapNormalizedRectToItem <sdk_qtmultimedia_videooutput#mapNormalizedRectToItem-method>`**\ (const
    QRectF & *rectangle*)
 -  QPointF
-   ****`mapPointToItem </sdk/apps/qml/QtMultimedia/VideoOutput#mapPointToItem-method>`__****\ (const
+   **:ref:`mapPointToItem <sdk_qtmultimedia_videooutput#mapPointToItem-method>`**\ (const
    QPointF & *point*)
 -  QPointF
-   ****`mapPointToSource </sdk/apps/qml/QtMultimedia/VideoOutput#mapPointToSource-method>`__****\ (const
+   **:ref:`mapPointToSource <sdk_qtmultimedia_videooutput#mapPointToSource-method>`**\ (const
    QPointF & *point*)
 -  QPointF
-   ****`mapPointToSourceNormalized </sdk/apps/qml/QtMultimedia/VideoOutput#mapPointToSourceNormalized-method>`__****\ (const
+   **:ref:`mapPointToSourceNormalized <sdk_qtmultimedia_videooutput#mapPointToSourceNormalized-method>`**\ (const
    QPointF & *point*)
 -  QRectF
-   ****`mapRectToItem </sdk/apps/qml/QtMultimedia/VideoOutput#mapRectToItem-method>`__****\ (const
+   **:ref:`mapRectToItem <sdk_qtmultimedia_videooutput#mapRectToItem-method>`**\ (const
    QRectF & *rectangle*)
 -  QRectF
-   ****`mapRectToSource </sdk/apps/qml/QtMultimedia/VideoOutput#mapRectToSource-method>`__****\ (const
+   **:ref:`mapRectToSource <sdk_qtmultimedia_videooutput#mapRectToSource-method>`**\ (const
    QRectF & *rectangle*)
 -  QRectF
-   ****`mapRectToSourceNormalized </sdk/apps/qml/QtMultimedia/VideoOutput#mapRectToSourceNormalized-method>`__****\ (const
+   **:ref:`mapRectToSourceNormalized <sdk_qtmultimedia_videooutput#mapRectToSourceNormalized-method>`**\ (const
    QRectF & *rectangle*)
 
 Detailed Description
@@ -73,12 +77,11 @@ Detailed Description
         }
     }
 
-The `VideoOutput </sdk/apps/qml/QtMultimedia/VideoOutput/>`__ item
-supports untransformed, stretched, and uniformly scaled video
-presentation. For a description of stretched uniformly scaled
-presentation, see the
-`fillMode </sdk/apps/qml/QtMultimedia/VideoOutput#fillMode-prop>`__
-property description.
+The :ref:`VideoOutput <sdk_qtmultimedia_videooutput>` item supports
+untransformed, stretched, and uniformly scaled video presentation. For a
+description of stretched uniformly scaled presentation, see the
+:ref:`fillMode <sdk_qtmultimedia_videooutput#fillMode-prop>` property
+description.
 
 The VideoOutput item works with backends that support either
 QVideoRendererControl or QVideoWindowControl. If the backend only
@@ -89,16 +92,18 @@ of backends:
 
 -  Some transformations like rotations
 -  Having other QtQuick items on top of the
-   `VideoOutput </sdk/apps/qml/QtMultimedia/VideoOutput/>`__ item
+   :ref:`VideoOutput <sdk_qtmultimedia_videooutput>` item
 
 Most backends however do support QVideoRendererControl and therefore
 don't have the limitations listed above.
 
-**See also** `MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__
-and `Camera </sdk/apps/qml/QtMultimedia/qml-multimedia#camera>`__.
+**See also** :ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>` and
+`Camera </sdk/apps/qml/QtMultimedia/qml-multimedia/#camera>`_ .
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtmultimedia_videooutput_autoOrientation-prop:
 
 +--------------------------------------------------------------------------+
 |        \ autoOrientation : bool                                          |
@@ -114,9 +119,11 @@ By default ``autoOrientation`` is disabled.
 This QML property was introduced in QtMultimedia 5.2.
 
 **See also**
-`orientation </sdk/apps/qml/QtMultimedia/VideoOutput#orientation-prop>`__.
+:ref:`orientation <sdk_qtmultimedia_videooutput#orientation-prop>`.
 
 | 
+
+.. _sdk_qtmultimedia_videooutput_contentRect-prop:
 
 +--------------------------------------------------------------------------+
 |        \ contentRect : rectangle                                         |
@@ -133,11 +140,13 @@ coordinates in the range of 0 to 1.0.
 Areas outside this will be transparent.
 
 **See also**
-`mapRectToItem() </sdk/apps/qml/QtMultimedia/VideoOutput#mapRectToItem-method>`__
+:ref:`mapRectToItem() <sdk_qtmultimedia_videooutput#mapRectToItem-method>`
 and
-`mapPointToItem() </sdk/apps/qml/QtMultimedia/VideoOutput#mapPointToItem-method>`__.
+:ref:`mapPointToItem() <sdk_qtmultimedia_videooutput#mapPointToItem-method>`.
 
 | 
+
+.. _sdk_qtmultimedia_videooutput_fillMode-prop:
 
 +--------------------------------------------------------------------------+
 |        \ fillMode : enumeration                                          |
@@ -156,6 +165,8 @@ The default fill mode is PreserveAspectFit.
 
 | 
 
+.. _sdk_qtmultimedia_videooutput_orientation-prop:
+
 +--------------------------------------------------------------------------+
 |        \ orientation : int                                               |
 +--------------------------------------------------------------------------+
@@ -173,16 +184,18 @@ The orientation change will also affect the mapping of coordinates from
 source to viewport.
 
 **See also**
-`autoOrientation </sdk/apps/qml/QtMultimedia/VideoOutput#autoOrientation-prop>`__.
+:ref:`autoOrientation <sdk_qtmultimedia_videooutput#autoOrientation-prop>`.
 
 | 
+
+.. _sdk_qtmultimedia_videooutput_source-prop:
 
 +--------------------------------------------------------------------------+
 |        \ source : variant                                                |
 +--------------------------------------------------------------------------+
 
 This property holds the source item providing the video frames like
-`MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__ or Camera.
+:ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>` or Camera.
 
 If you are extending your own C++ classes to interoperate with
 VideoOutput, you can either provide a QObject based class with a
@@ -193,6 +206,8 @@ QAbstractVideoSurface based class and can follow the correct protocol to
 deliver QVideoFrames to it.
 
 | 
+
+.. _sdk_qtmultimedia_videooutput_sourceRect-prop:
 
 +--------------------------------------------------------------------------+
 |        \ sourceRect : rectangle                                          |
@@ -217,6 +232,8 @@ QVideoSurfaceFormat::viewport().
 Method Documentation
 --------------------
 
+.. _sdk_qtmultimedia_videooutput_QPointF mapNormalizedPointToItem-method:
+
 +--------------------------------------------------------------------------+
 |        \ QPointF mapNormalizedPointToItem(const QPointF & *point*) const |
 +--------------------------------------------------------------------------+
@@ -229,6 +246,8 @@ Depending on the fill mode, this point may lie outside the rendered
 rectangle.
 
 | 
+
+.. _sdk_qtmultimedia_videooutput_QRectF mapNormalizedRectToItem-method:
 
 +--------------------------------------------------------------------------+
 |        \ QRectF mapNormalizedRectToItem(const QRectF & *rectangle*)      |
@@ -245,6 +264,8 @@ rendered rectangle.
 
 | 
 
+.. _sdk_qtmultimedia_videooutput_QPointF mapPointToItem-method:
+
 +--------------------------------------------------------------------------+
 |        \ QPointF mapPointToItem(const QPointF & *point*) const           |
 +--------------------------------------------------------------------------+
@@ -256,6 +277,8 @@ Depending on the fill mode, this point may lie outside the rendered
 rectangle.
 
 | 
+
+.. _sdk_qtmultimedia_videooutput_QPointF mapPointToSource-method:
 
 +--------------------------------------------------------------------------+
 |        \ QPointF mapPointToSource(const QPointF & *point*) const         |
@@ -269,6 +292,8 @@ If the supplied point lies outside the rendered area, the returned point
 will be outside the source rectangle.
 
 | 
+
+.. _sdk_qtmultimedia_videooutput_QPointF mapPointToSourceNormalized-method:
 
 +--------------------------------------------------------------------------+
 |        \ QPointF mapPointToSourceNormalized(const QPointF & *point*)     |
@@ -284,6 +309,8 @@ will be outside the source rectangle. No clamping is performed.
 
 | 
 
+.. _sdk_qtmultimedia_videooutput_QRectF mapRectToItem-method:
+
 +--------------------------------------------------------------------------+
 |        \ QRectF mapRectToItem(const QRectF & *rectangle*) const          |
 +--------------------------------------------------------------------------+
@@ -296,6 +323,8 @@ Depending on the fill mode, this rectangle may extend outside the
 rendered rectangle.
 
 | 
+
+.. _sdk_qtmultimedia_videooutput_QRectF mapRectToSource-method:
 
 +--------------------------------------------------------------------------+
 |        \ QRectF mapRectToSource(const QRectF & *rectangle*) const        |
@@ -311,6 +340,8 @@ If the supplied point lies outside the rendered area, the returned point
 will be outside the source rectangle.
 
 | 
+
+.. _sdk_qtmultimedia_videooutput_QRectF mapRectToSourceNormalized-method:
 
 +--------------------------------------------------------------------------+
 |        \ QRectF mapRectToSourceNormalized(const QRectF & *rectangle*)    |

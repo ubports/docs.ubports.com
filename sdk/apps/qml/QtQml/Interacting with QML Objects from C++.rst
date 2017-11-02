@@ -1,8 +1,12 @@
+.. _sdk_qtqml_interacting_with_qml_objects_from_c++:
+QtQml Interacting with QML Objects from C++
+===========================================
+
 
 
 All QML object types are QObject-derived types, whether they are
 internally implemented by the engine or `defined by third-party
-sources </sdk/apps/qml/QtQml/qtqml-cppintegration-definetypes/>`__. This
+sources </sdk/apps/qml/QtQml/qtqml-cppintegration-definetypes/>`_ . This
 means the QML engine can use the Qt Meta Object System to dynamically
 instantiate any QML object type and inspect the created objects.
 
@@ -73,9 +77,9 @@ methods with compile-time safety. In this case the base object of
 You can also connect to any signals or call methods defined in the
 component using QMetaObject::invokeMethod() and QObject::connect(). See
 `Invoking QML
-Methods </sdk/apps/qml/QtQml/qtqml-cppintegration-interactqmlfromcpp#invoking-qml-methods>`__
+Methods </sdk/apps/qml/QtQml/qtqml-cppintegration-interactqmlfromcpp/#invoking-qml-methods>`_ 
 and `Connecting to QML
-Signals </sdk/apps/qml/QtQml/qtqml-cppintegration-interactqmlfromcpp#connecting-to-qml-signals>`__
+Signals </sdk/apps/qml/QtQml/qtqml-cppintegration-interactqmlfromcpp/#connecting-to-qml-signals>`_ 
 below for further details.
 
 .. rubric:: Accessing Loaded QML Objects by Object Name
@@ -217,7 +221,7 @@ values.
 All QML signals are automatically available to C++, and can be connected
 to using QObject::connect() like any ordinary Qt C++ signal. In return,
 any C++ signal can be received by a QML object using `signal
-handlers </sdk/apps/qml/QtQml/qtqml-syntax-signals/>`__.
+handlers </sdk/apps/qml/QtQml/qtqml-syntax-signals/>`_ .
 
 Here is a QML component with a signal named ``qmlSignal`` that is
 emitted with a string-type parameter. This signal is connected to a C++

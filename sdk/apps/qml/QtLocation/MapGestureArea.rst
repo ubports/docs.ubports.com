@@ -1,3 +1,7 @@
+.. _sdk_qtlocation_mapgesturearea:
+QtLocation MapGestureArea
+=========================
+
 The MapGestureArea type provides Map gesture interaction.
 
 +---------------------+-------------------------+
@@ -9,68 +13,67 @@ The MapGestureArea type provides Map gesture interaction.
 Properties
 ----------
 
--  ****`activeGestures </sdk/apps/qml/QtLocation/MapGestureArea#activeGestures-prop>`__****
+-  :ref:`activeGestures <sdk_qtlocation_mapgesturearea_activeGestures-prop>`
    : enumeration
--  ****`enabled </sdk/apps/qml/QtLocation/MapGestureArea#enabled-prop>`__****
-   : bool
--  ****`flickDeceleration </sdk/apps/qml/QtLocation/MapGestureArea#flickDeceleration-prop>`__****
+-  :ref:`enabled <sdk_qtlocation_mapgesturearea_enabled-prop>` :
+   bool
+-  :ref:`flickDeceleration <sdk_qtlocation_mapgesturearea_flickDeceleration-prop>`
    : real
--  ****`isPanActive </sdk/apps/qml/QtLocation/MapGestureArea#isPanActive-prop>`__****
+-  :ref:`isPanActive <sdk_qtlocation_mapgesturearea_isPanActive-prop>`
    : bool
--  ****`isPinchActive </sdk/apps/qml/QtLocation/MapGestureArea#isPinchActive-prop>`__****
+-  :ref:`isPinchActive <sdk_qtlocation_mapgesturearea_isPinchActive-prop>`
    : bool
--  ****`maximumZoomLevelChange </sdk/apps/qml/QtLocation/MapGestureArea#maximumZoomLevelChange-prop>`__****
+-  :ref:`maximumZoomLevelChange <sdk_qtlocation_mapgesturearea_maximumZoomLevelChange-prop>`
    : real
--  ****`panEnabled </sdk/apps/qml/QtLocation/MapGestureArea#panEnabled-prop>`__****
+-  :ref:`panEnabled <sdk_qtlocation_mapgesturearea_panEnabled-prop>`
    : bool
--  ****`pinchEnabled </sdk/apps/qml/QtLocation/MapGestureArea#pinchEnabled-prop>`__****
+-  :ref:`pinchEnabled <sdk_qtlocation_mapgesturearea_pinchEnabled-prop>`
    : bool
 
 Signals
 -------
 
--  ****`flickFinished </sdk/apps/qml/QtLocation/MapGestureArea#flickFinished-signal>`__****\ ()
--  ****`flickStarted </sdk/apps/qml/QtLocation/MapGestureArea#flickStarted-signal>`__****\ ()
--  ****`panFinished </sdk/apps/qml/QtLocation/MapGestureArea#panFinished-signal>`__****\ ()
--  ****`panStarted </sdk/apps/qml/QtLocation/MapGestureArea#panStarted-signal>`__****\ ()
--  ****`pinchFinished </sdk/apps/qml/QtLocation/MapGestureArea#pinchFinished-signal>`__****\ (PinchEvent
+-  :ref:`flickFinished <sdk_qtlocation_mapgesturearea_flickFinished-signal>`\ ()
+-  :ref:`flickStarted <sdk_qtlocation_mapgesturearea_flickStarted-signal>`\ ()
+-  :ref:`panFinished <sdk_qtlocation_mapgesturearea_panFinished-signal>`\ ()
+-  :ref:`panStarted <sdk_qtlocation_mapgesturearea_panStarted-signal>`\ ()
+-  :ref:`pinchFinished <sdk_qtlocation_mapgesturearea_pinchFinished-signal>`\ (PinchEvent
    *event*)
--  ****`pinchStarted </sdk/apps/qml/QtLocation/MapGestureArea#pinchStarted-signal>`__****\ (PinchEvent
+-  :ref:`pinchStarted <sdk_qtlocation_mapgesturearea_pinchStarted-signal>`\ (PinchEvent
    *event*)
--  ****`pinchUpdated </sdk/apps/qml/QtLocation/MapGestureArea#pinchUpdated-signal>`__****\ (PinchEvent
+-  :ref:`pinchUpdated <sdk_qtlocation_mapgesturearea_pinchUpdated-signal>`\ (PinchEvent
    *event*)
 
 Detailed Description
 --------------------
 
-`MapGestureArea </sdk/apps/qml/QtLocation/MapGestureArea/>`__ objects
-are used as part of a Map, to provide for panning, flicking and
-pinch-to-zoom gesture used on touch displays.
+:ref:`MapGestureArea <sdk_qtlocation_mapgesturearea>` objects are used as
+part of a Map, to provide for panning, flicking and pinch-to-zoom
+gesture used on touch displays.
 
-A `MapGestureArea </sdk/apps/qml/QtLocation/MapGestureArea/>`__ is
-automatically created with a new Map and available with the
-`gesture </sdk/apps/qml/QtLocation/Map#gesture-prop>`__ property. This
-is the only way to create a
-`MapGestureArea </sdk/apps/qml/QtLocation/MapGestureArea/>`__, and once
-created this way cannot be destroyed without its parent Map.
+A :ref:`MapGestureArea <sdk_qtlocation_mapgesturearea>` is automatically
+created with a new Map and available with the
+:ref:`gesture <sdk_qtlocation_map#gesture-prop>` property. This is the only
+way to create a :ref:`MapGestureArea <sdk_qtlocation_mapgesturearea>`, and
+once created this way cannot be destroyed without its parent Map.
 
 The two most commonly used properties of the
-`MapGestureArea </sdk/apps/qml/QtLocation/MapGestureArea/>`__ are the
-`enabled </sdk/apps/qml/QtLocation/MapGestureArea#enabled-prop>`__ and
-`activeGestures </sdk/apps/qml/QtLocation/MapGestureArea#activeGestures-prop>`__
+:ref:`MapGestureArea <sdk_qtlocation_mapgesturearea>` are the
+:ref:`enabled <sdk_qtlocation_mapgesturearea#enabled-prop>` and
+:ref:`activeGestures <sdk_qtlocation_mapgesturearea#activeGestures-prop>`
 properties. Both of these must be set before a
-`MapGestureArea </sdk/apps/qml/QtLocation/MapGestureArea/>`__ will have
-any effect upon interaction with the Map. The
-`flickDeceleration </sdk/apps/qml/QtLocation/MapGestureArea#flickDeceleration-prop>`__
+:ref:`MapGestureArea <sdk_qtlocation_mapgesturearea>` will have any effect
+upon interaction with the Map. The
+:ref:`flickDeceleration <sdk_qtlocation_mapgesturearea#flickDeceleration-prop>`
 property controls how quickly the map pan slows after contact is
 released while panning the map.
 
 Performance
 ~~~~~~~~~~~
 
-The `MapGestureArea </sdk/apps/qml/QtLocation/MapGestureArea/>`__, when
-enabled, must process all incoming touch events in order to track the
-shape and size of the "pinch". The overhead added on touch events can be
+The :ref:`MapGestureArea <sdk_qtlocation_mapgesturearea>`, when enabled,
+must process all incoming touch events in order to track the shape and
+size of the "pinch". The overhead added on touch events can be
 considered constant time.
 
 Example Usage
@@ -90,6 +93,8 @@ the mouse button / touch.
 Property Documentation
 ----------------------
 
+.. _sdk_qtlocation_mapgesturearea_activeGestures-prop:
+
 +--------------------------------------------------------------------------+
 |        \ activeGestures : enumeration                                    |
 +--------------------------------------------------------------------------+
@@ -97,20 +102,22 @@ Property Documentation
 This property holds the gestures that will be active. By default the
 zoom, pan and flick gestures are enabled.
 
--  `MapGestureArea </sdk/apps/qml/QtLocation/MapGestureArea/>`__.NoGesture
-   - Don't support any additional gestures (value: 0x0000).
--  `MapGestureArea </sdk/apps/qml/QtLocation/MapGestureArea/>`__.ZoomGesture
-   - Support the map zoom gesture (value: 0x0001).
--  `MapGestureArea </sdk/apps/qml/QtLocation/MapGestureArea/>`__.PanGesture
-   - Support the map pan gesture (value: 0x0002).
--  `MapGestureArea </sdk/apps/qml/QtLocation/MapGestureArea/>`__.FlickGesture
-   - Support the map flick gesture (value: 0x0004).
+-  :ref:`MapGestureArea <sdk_qtlocation_mapgesturearea>`.NoGesture - Don't
+   support any additional gestures (value: 0x0000).
+-  :ref:`MapGestureArea <sdk_qtlocation_mapgesturearea>`.ZoomGesture -
+   Support the map zoom gesture (value: 0x0001).
+-  :ref:`MapGestureArea <sdk_qtlocation_mapgesturearea>`.PanGesture -
+   Support the map pan gesture (value: 0x0002).
+-  :ref:`MapGestureArea <sdk_qtlocation_mapgesturearea>`.FlickGesture -
+   Support the map flick gesture (value: 0x0004).
 
 **Note:** For the time being, only
-`MapGestureArea </sdk/apps/qml/QtLocation/MapGestureArea/>`__.ZoomGesture
-is supported.
+:ref:`MapGestureArea <sdk_qtlocation_mapgesturearea>`.ZoomGesture is
+supported.
 
 | 
+
+.. _sdk_qtlocation_mapgesturearea_enabled-prop:
 
 +--------------------------------------------------------------------------+
 |        \ enabled : bool                                                  |
@@ -122,6 +129,8 @@ potentially active current gesture.
 
 | 
 
+.. _sdk_qtlocation_mapgesturearea_flickDeceleration-prop:
+
 +--------------------------------------------------------------------------+
 |        \ flickDeceleration : real                                        |
 +--------------------------------------------------------------------------+
@@ -132,6 +141,8 @@ The default value is 2500.
 
 | 
 
+.. _sdk_qtlocation_mapgesturearea_isPanActive-prop:
+
 +--------------------------------------------------------------------------+
 |        \ isPanActive : bool                                              |
 +--------------------------------------------------------------------------+
@@ -141,6 +152,8 @@ flicking) is active.
 
 | 
 
+.. _sdk_qtlocation_mapgesturearea_isPinchActive-prop:
+
 +--------------------------------------------------------------------------+
 |        \ isPinchActive : bool                                            |
 +--------------------------------------------------------------------------+
@@ -148,6 +161,8 @@ flicking) is active.
 This read-only property holds whether any pinch gesture is active.
 
 | 
+
+.. _sdk_qtlocation_mapgesturearea_maximumZoomLevelChange-prop:
 
 +--------------------------------------------------------------------------+
 |        \ maximumZoomLevelChange : real                                   |
@@ -162,6 +177,8 @@ maximum pinch zoom. Default value is 2.0, maximum value is 10.0
 
 | 
 
+.. _sdk_qtlocation_mapgesturearea_panEnabled-prop:
+
 +--------------------------------------------------------------------------+
 |        \ panEnabled : bool                                               |
 +--------------------------------------------------------------------------+
@@ -171,6 +188,8 @@ disabling gestures during an active gesture does not have effect on the
 potentially active current gesture.
 
 | 
+
+.. _sdk_qtlocation_mapgesturearea_pinchEnabled-prop:
 
 +--------------------------------------------------------------------------+
 |        \ pinchEnabled : bool                                             |
@@ -185,6 +204,8 @@ potentially active current gesture.
 Signal Documentation
 --------------------
 
+.. _sdk_qtlocation_mapgesturearea_flickFinished()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ flickFinished()                                                 |
 +--------------------------------------------------------------------------+
@@ -196,6 +217,8 @@ The corresponding handler is ``onFlickFinished``.
 
 | 
 
+.. _sdk_qtlocation_mapgesturearea_flickStarted()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ flickStarted()                                                  |
 +--------------------------------------------------------------------------+
@@ -206,6 +229,8 @@ point that the mouse or touch is released, while still in motion.
 The corresponding handler is ``onFlichStarted``.
 
 | 
+
+.. _sdk_qtlocation_mapgesturearea_panFinished()-prop:
 
 +--------------------------------------------------------------------------+
 |        \ panFinished()                                                   |
@@ -220,6 +245,8 @@ The corresponding handler is ``onPanFinished``.
 
 | 
 
+.. _sdk_qtlocation_mapgesturearea_panStarted()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ panStarted()                                                    |
 +--------------------------------------------------------------------------+
@@ -232,6 +259,8 @@ The corresponding handler is ``onPanStarted``.
 
 | 
 
+.. _sdk_qtlocation_mapgesturearea_pinchFinished(PinchEvent *event*)-prop:
+
 +--------------------------------------------------------------------------+
 |        \ pinchFinished(PinchEvent *event*)                               |
 +--------------------------------------------------------------------------+
@@ -241,11 +270,12 @@ This signal is emitted at the end of a pinch gesture.
 The corresponding handler is ``onPinchFinished``.
 
 **See also**
-`pinchStarted </sdk/apps/qml/QtLocation/MapGestureArea#pinchStarted-signal>`__
-and
-`pinchUpdated </sdk/apps/qml/QtLocation/MapGestureArea#pinchUpdated-signal>`__.
+:ref:`pinchStarted <sdk_qtlocation_mapgesturearea#pinchStarted-signal>` and
+:ref:`pinchUpdated <sdk_qtlocation_mapgesturearea#pinchUpdated-signal>`.
 
 | 
+
+.. _sdk_qtlocation_mapgesturearea_pinchStarted(PinchEvent *event*)-prop:
 
 +--------------------------------------------------------------------------+
 |        \ pinchStarted(PinchEvent *event*)                                |
@@ -256,26 +286,25 @@ This signal is emitted when a pinch gesture is started.
 The corresponding handler is ``onPinchStarted``.
 
 **See also**
-`pinchUpdated </sdk/apps/qml/QtLocation/MapGestureArea#pinchUpdated-signal>`__
-and
-`pinchFinished </sdk/apps/qml/QtLocation/MapGestureArea#pinchFinished-signal>`__.
+:ref:`pinchUpdated <sdk_qtlocation_mapgesturearea#pinchUpdated-signal>` and
+:ref:`pinchFinished <sdk_qtlocation_mapgesturearea#pinchFinished-signal>`.
 
 | 
+
+.. _sdk_qtlocation_mapgesturearea_pinchUpdated(PinchEvent *event*)-prop:
 
 +--------------------------------------------------------------------------+
 |        \ pinchUpdated(PinchEvent *event*)                                |
 +--------------------------------------------------------------------------+
 
 This signal is emitted as the user's fingers move across the map, after
-the
-`pinchStarted </sdk/apps/qml/QtLocation/MapGestureArea#pinchStarted-signal>`__
+the :ref:`pinchStarted <sdk_qtlocation_mapgesturearea#pinchStarted-signal>`
 signal is emitted.
 
 The corresponding handler is ``onPinchUpdated``.
 
 **See also**
-`pinchStarted </sdk/apps/qml/QtLocation/MapGestureArea#pinchStarted-signal>`__
-and
-`pinchFinished </sdk/apps/qml/QtLocation/MapGestureArea#pinchFinished-signal>`__.
+:ref:`pinchStarted <sdk_qtlocation_mapgesturearea#pinchStarted-signal>` and
+:ref:`pinchFinished <sdk_qtlocation_mapgesturearea#pinchFinished-signal>`.
 
 | 

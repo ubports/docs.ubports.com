@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_qt_sensors_-_c++_sensor_gestures_example:
+QtSensors Qt Sensors - C++ Sensor Gestures Example
+==================================================
+
 
 
 |image0|

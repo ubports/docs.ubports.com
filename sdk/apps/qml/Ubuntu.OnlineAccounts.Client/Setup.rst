@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_onlineaccounts_client_setup:
+Ubuntu.OnlineAccounts.Client Setup
+==================================
+
 Invoke the Online Accounts panel
 
 +---------------------+-----------------------------------------+
@@ -7,32 +11,32 @@ Invoke the Online Accounts panel
 Properties
 ----------
 
--  ****`applicationId </sdk/apps/qml/Ubuntu.OnlineAccounts/Client.Setup#applicationId-prop>`__****
+-  `applicationId </sdk/apps/qml/Ubuntu.OnlineAccounts/Client.Setup/_applicationId-prop>`_ 
    : string
--  ****`providerId </sdk/apps/qml/Ubuntu.OnlineAccounts/Client.Setup#providerId-prop>`__****
+-  `providerId </sdk/apps/qml/Ubuntu.OnlineAccounts/Client.Setup/_providerId-prop>`_ 
    : string
--  ****`serviceId </sdk/apps/qml/Ubuntu.OnlineAccounts/Client.Setup#serviceId-prop>`__****
+-  `serviceId </sdk/apps/qml/Ubuntu.OnlineAccounts/Client.Setup/_serviceId-prop>`_ 
    : string
--  ****`serviceTypeId </sdk/apps/qml/Ubuntu.OnlineAccounts/Client.Setup#serviceTypeId-prop>`__****
+-  `serviceTypeId </sdk/apps/qml/Ubuntu.OnlineAccounts/Client.Setup/_serviceTypeId-prop>`_ 
    : string
 
 Signals
 -------
 
--  ****`finished </sdk/apps/qml/Ubuntu.OnlineAccounts/Client.Setup#finished-signal>`__****\ ()
+-  `finished </sdk/apps/qml/Ubuntu.OnlineAccounts/Client.Setup/_finished-signal>`_ \ ()
 
 Methods
 -------
 
 -  void
-   ****`exec </sdk/apps/qml/Ubuntu.OnlineAccounts/Client.Setup#exec-method>`__****\ ()
+   **`exec </sdk/apps/qml/Ubuntu.OnlineAccounts/Client.Setup/#exec-method>`_ **\ ()
 
 Detailed Description
 --------------------
 
 This object can be used by applications to request the creation of an
 account. By calling the
-`exec() </sdk/apps/qml/Ubuntu.OnlineAccounts/Client.Setup#exec-method>`__
+`exec() </sdk/apps/qml/Ubuntu.OnlineAccounts/Client.Setup/#exec-method>`_ 
 method, the Online Accounts panel will appear and guide the user through
 the creation of an account. Once done, the finished() signal will be
 emitted. The type of account to be created can be configured by this
@@ -63,6 +67,8 @@ Example:
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_onlineaccounts_client_setup_applicationId-prop:
+
 +--------------------------------------------------------------------------+
 |        \ applicationId : string                                          |
 +--------------------------------------------------------------------------+
@@ -75,6 +81,8 @@ suffix.
 
 | 
 
+.. _sdk_ubuntu_onlineaccounts_client_setup_providerId-prop:
+
 +--------------------------------------------------------------------------+
 |        \ providerId : string                                             |
 +--------------------------------------------------------------------------+
@@ -84,6 +92,8 @@ Account provided by this entity.
 
 | 
 
+.. _sdk_ubuntu_onlineaccounts_client_setup_serviceId-prop:
+
 +--------------------------------------------------------------------------+
 |        \ serviceId : string                                              |
 +--------------------------------------------------------------------------+
@@ -92,6 +102,8 @@ If set to a valid service ID, the user will be asked to create an Online
 Account which provides this service.
 
 | 
+
+.. _sdk_ubuntu_onlineaccounts_client_setup_serviceTypeId-prop:
 
 +--------------------------------------------------------------------------+
 |        \ serviceTypeId : string                                          |
@@ -105,6 +117,8 @@ Online Account which supports this service type.
 Signal Documentation
 --------------------
 
+.. _sdk_ubuntu_onlineaccounts_client_setup_finished()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ finished()                                                      |
 +--------------------------------------------------------------------------+
@@ -115,6 +129,8 @@ Emitted when the Online Accounts panel has been closed.
 
 Method Documentation
 --------------------
+
+.. _sdk_ubuntu_onlineaccounts_client_setup_void exec-method:
 
 +--------------------------------------------------------------------------+
 |        \ void exec()                                                     |

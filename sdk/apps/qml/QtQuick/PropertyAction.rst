@@ -1,44 +1,45 @@
+.. _sdk_qtquick_propertyaction:
+QtQuick PropertyAction
+======================
+
 Specifies immediate property changes during animation
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtQuick 2.4                   |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Animation </sdk/apps/qml/QtQuick/An |
-|                                      | imation/>`__                         |
+| Inherits:                            | :ref:`Animation <sdk_qtquick_animation>`_ |
+|                                      | _                                    |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`exclude </sdk/apps/qml/QtQuick/PropertyAction#exclude-prop>`__****
-   : list<Object>
--  ****`properties </sdk/apps/qml/QtQuick/PropertyAction#properties-prop>`__****
-   : string
--  ****`property </sdk/apps/qml/QtQuick/PropertyAction#property-prop>`__****
-   : string
--  ****`target </sdk/apps/qml/QtQuick/PropertyAction#target-prop>`__****
-   : Object
--  ****`targets </sdk/apps/qml/QtQuick/PropertyAction#targets-prop>`__****
-   : list<Object>
--  ****`value </sdk/apps/qml/QtQuick/PropertyAction#value-prop>`__**** :
-   any
+-  :ref:`exclude <sdk_qtquick_propertyaction_exclude-prop>` :
+   list<Object>
+-  :ref:`properties <sdk_qtquick_propertyaction_properties-prop>` :
+   string
+-  :ref:`property <sdk_qtquick_propertyaction_property-prop>` :
+   string
+-  :ref:`target <sdk_qtquick_propertyaction_target-prop>` : Object
+-  :ref:`targets <sdk_qtquick_propertyaction_targets-prop>` :
+   list<Object>
+-  :ref:`value <sdk_qtquick_propertyaction_value-prop>` : any
 
 Detailed Description
 --------------------
 
-`PropertyAction </sdk/apps/qml/QtQuick/PropertyAction/>`__ is used to
-specify an immediate property change during an animation. The property
-change is not animated.
+:ref:`PropertyAction <sdk_qtquick_propertyaction>` is used to specify an
+immediate property change during an animation. The property change is
+not animated.
 
 It is useful for setting non-animated property values during an
 animation.
 
 For example, here is a
-`SequentialAnimation </sdk/apps/qml/QtQuick/SequentialAnimation/>`__
-that sets the image's
-`opacity </sdk/apps/qml/QtQuick/Item#opacity-prop>`__ property to
-``.5``, animates the width of the image, then sets
-`opacity </sdk/apps/qml/QtQuick/Item#opacity-prop>`__ back to ``1``:
+:ref:`SequentialAnimation <sdk_qtquick_sequentialanimation>` that sets the
+image's :ref:`opacity <sdk_qtquick_item#opacity-prop>` property to ``.5``,
+animates the width of the image, then sets
+:ref:`opacity <sdk_qtquick_item#opacity-prop>` back to ``1``:
 
 .. code:: qml
 
@@ -48,15 +49,12 @@ that sets the image's
         PropertyAction { target: img; property: "opacity"; value: 1 }
     }
 
-`PropertyAction </sdk/apps/qml/QtQuick/PropertyAction/>`__ is also
-useful for setting the exact point at which a property change should
-occur during a
-`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch#transition>`__.
-For example, if
-`PropertyChanges </sdk/apps/qml/QtQuick/PropertyChanges/>`__ was used in
-a `State </sdk/apps/qml/QtQuick/State/>`__ to rotate an item around a
-particular
-`transformOrigin </sdk/apps/qml/QtQuick/Item#transformOrigin-prop>`__,
+:ref:`PropertyAction <sdk_qtquick_propertyaction>` is also useful for
+setting the exact point at which a property change should occur during a
+`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch/#transition>`_ .
+For example, if :ref:`PropertyChanges <sdk_qtquick_propertychanges>` was
+used in a :ref:`State <sdk_qtquick_state>` to rotate an item around a
+particular :ref:`transformOrigin <sdk_qtquick_item#transformOrigin-prop>`,
 it might be implemented like this:
 
 .. code:: qml
@@ -82,12 +80,12 @@ it might be implemented like this:
     }
 
 However, with this code, the ``transformOrigin`` is not set until
-*after* the animation, as a `State </sdk/apps/qml/QtQuick/State/>`__ is
-taken to define the values at the *end* of a transition. The animation
-would rotate at the default ``transformOrigin``, then jump to
+*after* the animation, as a :ref:`State <sdk_qtquick_state>` is taken to
+define the values at the *end* of a transition. The animation would
+rotate at the default ``transformOrigin``, then jump to
 ``Item.BottomRight``. To fix this, insert a
-`PropertyAction </sdk/apps/qml/QtQuick/PropertyAction/>`__ before the
-`RotationAnimation </sdk/apps/qml/QtQuick/RotationAnimation/>`__ begins:
+:ref:`PropertyAction <sdk_qtquick_propertyaction>` before the
+:ref:`RotationAnimation <sdk_qtquick_rotationanimation>` begins:
 
 .. code:: qml
 
@@ -100,17 +98,19 @@ would rotate at the default ``transformOrigin``, then jump to
 
 This immediately sets the ``transformOrigin`` property to the value
 defined in the end state of the
-`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch#transition>`__
+`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch/#transition>`_ 
 (i.e. the value defined in the
-`PropertyAction </sdk/apps/qml/QtQuick/PropertyAction/>`__ object) so
-that the rotation animation begins with the correct transform origin.
+:ref:`PropertyAction <sdk_qtquick_propertyaction>` object) so that the
+rotation animation begins with the correct transform origin.
 
 **See also** `Animation and Transitions in Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`__
+Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`_ 
 and Qt QML.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_propertyaction_exclude-prop:
 
 +--------------------------------------------------------------------------+
 |        \ exclude : list<Object>                                          |
@@ -119,10 +119,11 @@ Property Documentation
 This property holds the objects that should not be affected by this
 action.
 
-**See also**
-`targets </sdk/apps/qml/QtQuick/PropertyAction#targets-prop>`__.
+**See also** :ref:`targets <sdk_qtquick_propertyaction#targets-prop>`.
 
 | 
+
+.. _sdk_qtquick_propertyaction_properties-prop:
 
 +--------------------------------------------------------------------------+
 |        \ properties : string                                             |
@@ -133,14 +134,15 @@ affected by this action.
 
 The details of how these properties are interpreted in different
 situations is covered in the
-`corresponding </sdk/apps/qml/QtQuick/PropertyAnimation#properties-prop>`__
-`PropertyAnimation </sdk/apps/qml/QtQuick/animation#propertyanimation>`__
+:ref:`corresponding <sdk_qtquick_propertyanimation#properties-prop>`
+`PropertyAnimation </sdk/apps/qml/QtQuick/animation/#propertyanimation>`_ 
 documentation.
 
-**See also**
-`exclude </sdk/apps/qml/QtQuick/PropertyAction#exclude-prop>`__.
+**See also** :ref:`exclude <sdk_qtquick_propertyaction#exclude-prop>`.
 
 | 
+
+.. _sdk_qtquick_propertyaction_property-prop:
 
 +--------------------------------------------------------------------------+
 |        \ property : string                                               |
@@ -151,14 +153,15 @@ affected by this action.
 
 The details of how these properties are interpreted in different
 situations is covered in the
-`corresponding </sdk/apps/qml/QtQuick/PropertyAnimation#properties-prop>`__
-`PropertyAnimation </sdk/apps/qml/QtQuick/animation#propertyanimation>`__
+:ref:`corresponding <sdk_qtquick_propertyanimation#properties-prop>`
+`PropertyAnimation </sdk/apps/qml/QtQuick/animation/#propertyanimation>`_ 
 documentation.
 
-**See also**
-`exclude </sdk/apps/qml/QtQuick/PropertyAction#exclude-prop>`__.
+**See also** :ref:`exclude <sdk_qtquick_propertyaction#exclude-prop>`.
 
 | 
+
+.. _sdk_qtquick_propertyaction_target-prop:
 
 +--------------------------------------------------------------------------+
 |        \ target : Object                                                 |
@@ -169,14 +172,15 @@ affected by this action.
 
 The details of how these properties are interpreted in different
 situations is covered in the
-`corresponding </sdk/apps/qml/QtQuick/PropertyAnimation#properties-prop>`__
-`PropertyAnimation </sdk/apps/qml/QtQuick/animation#propertyanimation>`__
+:ref:`corresponding <sdk_qtquick_propertyanimation#properties-prop>`
+`PropertyAnimation </sdk/apps/qml/QtQuick/animation/#propertyanimation>`_ 
 documentation.
 
-**See also**
-`exclude </sdk/apps/qml/QtQuick/PropertyAction#exclude-prop>`__.
+**See also** :ref:`exclude <sdk_qtquick_propertyaction#exclude-prop>`.
 
 | 
+
+.. _sdk_qtquick_propertyaction_targets-prop:
 
 +--------------------------------------------------------------------------+
 |        \ targets : list<Object>                                          |
@@ -187,14 +191,15 @@ affected by this action.
 
 The details of how these properties are interpreted in different
 situations is covered in the
-`corresponding </sdk/apps/qml/QtQuick/PropertyAnimation#properties-prop>`__
-`PropertyAnimation </sdk/apps/qml/QtQuick/animation#propertyanimation>`__
+:ref:`corresponding <sdk_qtquick_propertyanimation#properties-prop>`
+`PropertyAnimation </sdk/apps/qml/QtQuick/animation/#propertyanimation>`_ 
 documentation.
 
-**See also**
-`exclude </sdk/apps/qml/QtQuick/PropertyAction#exclude-prop>`__.
+**See also** :ref:`exclude <sdk_qtquick_propertyaction#exclude-prop>`.
 
 | 
+
+.. _sdk_qtquick_propertyaction_value-prop:
 
 +--------------------------------------------------------------------------+
 |        \ value : any                                                     |
@@ -202,13 +207,13 @@ documentation.
 
 This property holds the value to be set on the property.
 
-If the `PropertyAction </sdk/apps/qml/QtQuick/PropertyAction/>`__ is
-defined within a
-`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch#transition>`__
-or `Behavior </sdk/apps/qml/QtQuick/Behavior/>`__, this value defaults
-to the value defined in the end state of the
-`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch#transition>`__,
+If the :ref:`PropertyAction <sdk_qtquick_propertyaction>` is defined within
+a
+`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch/#transition>`_ 
+or :ref:`Behavior <sdk_qtquick_behavior>`, this value defaults to the value
+defined in the end state of the
+`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch/#transition>`_ ,
 or the value of the property change that triggered the
-`Behavior </sdk/apps/qml/QtQuick/Behavior/>`__.
+:ref:`Behavior <sdk_qtquick_behavior>`.
 
 | 

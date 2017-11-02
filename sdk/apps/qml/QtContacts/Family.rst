@@ -1,3 +1,7 @@
+.. _sdk_qtcontacts_family:
+QtContacts Family
+=================
+
 The Family element contains names of family members of a contact.
 
 +---------------------+-------------------------+
@@ -7,10 +11,9 @@ The Family element contains names of family members of a contact.
 Properties
 ----------
 
--  ****`children </sdk/apps/qml/QtContacts/Family#children-prop>`__****
-   : list<string>
--  ****`spouse </sdk/apps/qml/QtContacts/Family#spouse-prop>`__**** :
-   string
+-  :ref:`children <sdk_qtcontacts_family_children-prop>` :
+   list<string>
+-  :ref:`spouse <sdk_qtcontacts_family_spouse-prop>` : string
 
 Detailed Description
 --------------------
@@ -25,6 +28,8 @@ This element is part of the **QtContacts** module.
 Property Documentation
 ----------------------
 
+.. _sdk_qtcontacts_family_children-prop:
+
 +--------------------------------------------------------------------------+
 |        \ children : list<string>                                         |
 +--------------------------------------------------------------------------+
@@ -32,6 +37,8 @@ Property Documentation
 This property holds the the names of children.
 
 | 
+
+.. _sdk_qtcontacts_family_spouse-prop:
 
 +--------------------------------------------------------------------------+
 |        \ spouse : string                                                 |

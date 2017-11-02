@@ -1,3 +1,7 @@
+.. _sdk_qtqml_qtobject:
+QtQml QtObject
+==============
+
 A basic QML type
 
 +---------------------+--------------------+
@@ -7,19 +11,18 @@ A basic QML type
 Properties
 ----------
 
--  ****`objectName </sdk/apps/qml/QtQml/QtObject#objectName-prop>`__****
-   : string
+-  :ref:`objectName <sdk_qtqml_qtobject_objectName-prop>` : string
 
 Detailed Description
 --------------------
 
-The `QtObject </sdk/apps/qml/QtQml/QtObject/>`__ type is a non-visual
-element which contains only the
-`objectName </sdk/apps/qml/QtQml/QtObject#objectName-prop>`__ property.
+The :ref:`QtObject <sdk_qtqml_qtobject>` type is a non-visual element which
+contains only the :ref:`objectName <sdk_qtqml_qtobject#objectName-prop>`
+property.
 
-It can be useful to create a
-`QtObject </sdk/apps/qml/QtQml/QtObject/>`__ if you need an extremely
-lightweight type to enclose a set of custom properties:
+It can be useful to create a :ref:`QtObject <sdk_qtqml_qtobject>` if you
+need an extremely lightweight type to enclose a set of custom
+properties:
 
 .. code:: qml
 
@@ -39,6 +42,8 @@ QObject. See the QObject documentation for further details.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtqml_qtobject_objectName-prop:
 
 +--------------------------------------------------------------------------+
 |        \ objectName : string                                             |

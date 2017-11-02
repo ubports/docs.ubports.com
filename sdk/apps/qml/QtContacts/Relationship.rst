@@ -1,3 +1,7 @@
+.. _sdk_qtcontacts_relationship:
+QtContacts Relationship
+=======================
+
 The Relationship element describes a one-to-one relationship between a
 locally-stored contact and another (possibly remote) contact.
 
@@ -8,12 +12,9 @@ locally-stored contact and another (possibly remote) contact.
 Properties
 ----------
 
--  ****`first </sdk/apps/qml/QtContacts/Relationship#first-prop>`__****
-   : int
--  ****`second </sdk/apps/qml/QtContacts/Relationship#second-prop>`__****
-   : int
--  ****`type </sdk/apps/qml/QtContacts/Relationship#type-prop>`__**** :
-   string
+-  :ref:`first <sdk_qtcontacts_relationship_first-prop>` : int
+-  :ref:`second <sdk_qtcontacts_relationship_second-prop>` : int
+-  :ref:`type <sdk_qtcontacts_relationship_type-prop>` : string
 
 Detailed Description
 --------------------
@@ -25,6 +26,8 @@ This element is part of the **QtContacts** module.
 Property Documentation
 ----------------------
 
+.. _sdk_qtcontacts_relationship_first-prop:
+
 +--------------------------------------------------------------------------+
 |        \ first : int                                                     |
 +--------------------------------------------------------------------------+
@@ -34,6 +37,8 @@ of the given type with the second contact.
 
 | 
 
+.. _sdk_qtcontacts_relationship_second-prop:
+
 +--------------------------------------------------------------------------+
 |        \ second : int                                                    |
 +--------------------------------------------------------------------------+
@@ -42,6 +47,8 @@ This property holds the contact with which the first contact has a
 relationship of the given type.
 
 | 
+
+.. _sdk_qtcontacts_relationship_type-prop:
 
 +--------------------------------------------------------------------------+
 |        \ type : string                                                   |

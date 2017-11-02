@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_actionmanager:
+Ubuntu.Components ActionManager
+===============================
+
 ActionManager manages actions and action contexts withion an
 application.
 
@@ -10,11 +14,11 @@ application.
 Properties
 ----------
 
--  ****`actions </sdk/apps/qml/Ubuntu.Components/ActionManager#actions-prop>`__****
+-  :ref:`actions <sdk_ubuntu_components_actionmanager_actions-prop>`
    : list<Action>
--  ****`globalContext </sdk/apps/qml/Ubuntu.Components/ActionManager#globalContext-prop>`__****
+-  :ref:`globalContext <sdk_ubuntu_components_actionmanager_globalContext-prop>`
    : ActionContext
--  ****`localContexts </sdk/apps/qml/Ubuntu.Components/ActionManager#localContexts-prop>`__****
+-  :ref:`localContexts <sdk_ubuntu_components_actionmanager_localContexts-prop>`
    : list<ActionContext>
 
 Detailed Description
@@ -24,40 +28,46 @@ Acts as an interface between the application and external components.
 Maintains the global context action registration.
 
 There can be many
-`ActionManager </sdk/apps/qml/Ubuntu.Components/ActionManager/>`__
-instances in an application, and all instances will have the
-ActionContexts shared between each other. If individual
-`ActionManager </sdk/apps/qml/Ubuntu.Components/ActionManager/>`__
-instances add more Action objects, those will be published as well.
+:ref:`ActionManager <sdk_ubuntu_components_actionmanager>` instances in an
+application, and all instances will have the ActionContexts shared
+between each other. If individual
+:ref:`ActionManager <sdk_ubuntu_components_actionmanager>` instances add
+more Action objects, those will be published as well.
 
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_actionmanager_actions-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [default] actions :                                             |
-| list<`Action </sdk/apps/qml/Ubuntu.Components/Action/>`__>               |
+| list<:ref:`Action <sdk_ubuntu_components_action>`>                          |
 +--------------------------------------------------------------------------+
 
 A list of actions in the global context.
 
 | 
 
+.. _sdk_ubuntu_components_actionmanager_globalContext-prop:
+
 +--------------------------------------------------------------------------+
 |        \ globalContext :                                                 |
-| `ActionContext </sdk/apps/qml/Ubuntu.Components/ActionContext/>`__       |
+| :ref:`ActionContext <sdk_ubuntu_components_actioncontext>`                  |
 +--------------------------------------------------------------------------+
 
 The globalContext of the Application.
 
 **Note:** Setting the
-`ActionContext::active </sdk/apps/qml/Ubuntu.Components/ActionContext#active-prop>`__
+:ref:`ActionContext::active <sdk_ubuntu_components_actioncontext#active-prop>`
 on the global context has no effect.
 
 | 
 
+.. _sdk_ubuntu_components_actionmanager_localContexts-prop:
+
 +--------------------------------------------------------------------------+
 |        \ localContexts :                                                 |
-| list<`ActionContext </sdk/apps/qml/Ubuntu.Components/ActionContext/>`__> |
+| list<:ref:`ActionContext <sdk_ubuntu_components_actioncontext>`>            |
 +--------------------------------------------------------------------------+
 
 List of local contexts.

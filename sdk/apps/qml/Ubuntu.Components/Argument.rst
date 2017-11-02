@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_argument:
+Ubuntu.Components Argument
+==========================
+
 The Argument class specifies what type a given command line parameter
 should be.
 
@@ -8,31 +12,28 @@ should be.
 Properties
 ----------
 
--  ****`help </sdk/apps/qml/Ubuntu.Components/Argument#help-prop>`__****
-   : string
--  ****`name </sdk/apps/qml/Ubuntu.Components/Argument#name-prop>`__****
-   : string
--  ****`required </sdk/apps/qml/Ubuntu.Components/Argument#required-prop>`__****
-   : bool
--  ****`valueNames </sdk/apps/qml/Ubuntu.Components/Argument#valueNames-prop>`__****
+-  :ref:`help <sdk_ubuntu_components_argument_help-prop>` : string
+-  :ref:`name <sdk_ubuntu_components_argument_name-prop>` : string
+-  :ref:`required <sdk_ubuntu_components_argument_required-prop>` :
+   bool
+-  :ref:`valueNames <sdk_ubuntu_components_argument_valueNames-prop>`
    : list<string>
 
 Methods
 -------
 
 -  string
-   ****`at </sdk/apps/qml/Ubuntu.Components/Argument#at-method>`__****\ (int
-   *i*)
+   **:ref:`at <sdk_ubuntu_components_argument#at-method>`**\ (int *i*)
 
 Detailed Description
 --------------------
 
 **Important**: Argument is not used on its own but must be a child of
-`Arguments </sdk/apps/qml/Ubuntu.Components/Arguments/>`__.
+:ref:`Arguments <sdk_ubuntu_components_arguments>`.
 
 An Argument is defined by its
-`name </sdk/apps/qml/Ubuntu.Components/Argument#name-prop>`__ and
-`valueNames </sdk/apps/qml/Ubuntu.Components/Argument#valueNames-prop>`__
+:ref:`name <sdk_ubuntu_components_argument#name-prop>` and
+:ref:`valueNames <sdk_ubuntu_components_argument#valueNames-prop>`
 properties which correspond to a command line parameter (e.g.
 *--target*) and the values passed to it (e.g.
 *--target=http://myaddress*).
@@ -50,12 +51,14 @@ command line of the form *--target=URL*:
     }
 
 To retrieve a value passed to the parameter knowing its position, use
-the `at </sdk/apps/qml/Ubuntu.Components/Argument#at-method>`__ method.
+the :ref:`at <sdk_ubuntu_components_argument#at-method>` method.
 
-**See also** `Arguments </sdk/apps/qml/Ubuntu.Components/Arguments/>`__.
+**See also** :ref:`Arguments <sdk_ubuntu_components_arguments>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_ubuntu_components_argument_help-prop:
 
 +--------------------------------------------------------------------------+
 |        \ help : string                                                   |
@@ -64,6 +67,8 @@ Property Documentation
 Help displayed when launching the application with --usage.
 
 | 
+
+.. _sdk_ubuntu_components_argument_name-prop:
 
 +--------------------------------------------------------------------------+
 |        \ name : string                                                   |
@@ -76,6 +81,8 @@ argument.
 
 | 
 
+.. _sdk_ubuntu_components_argument_required-prop:
+
 +--------------------------------------------------------------------------+
 |        \ required : bool                                                 |
 +--------------------------------------------------------------------------+
@@ -84,6 +91,8 @@ Whether or not this argument needs to be passed on the command line when
 launching the application.
 
 | 
+
+.. _sdk_ubuntu_components_argument_valueNames-prop:
 
 +--------------------------------------------------------------------------+
 |        \ valueNames : list<string>                                       |
@@ -98,6 +107,8 @@ Typically all capital letters (e.g. URL).
 
 Method Documentation
 --------------------
+
+.. _sdk_ubuntu_components_argument_string at-method:
 
 +--------------------------------------------------------------------------+
 |        \ string at(int *i*)                                              |

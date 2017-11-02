@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_downloadmanager_downloadmanager:
+Ubuntu.DownloadManager DownloadManager
+======================================
+
 Manage downloads for several files.
 
 +---------------------+-------------------------------------+
@@ -7,45 +11,45 @@ Manage downloads for several files.
 Properties
 ----------
 
--  ****`autoStart </sdk/apps/qml/Ubuntu.DownloadManager/DownloadManager#autoStart-prop>`__****
+-  :ref:`autoStart <sdk_ubuntu_downloadmanager_downloadmanager_autoStart-prop>`
    : bool
--  ****`cleanDownloads </sdk/apps/qml/Ubuntu.DownloadManager/DownloadManager#cleanDownloads-prop>`__****
+-  :ref:`cleanDownloads <sdk_ubuntu_downloadmanager_downloadmanager_cleanDownloads-prop>`
    : bool
--  ****`downloads </sdk/apps/qml/Ubuntu.DownloadManager/DownloadManager#downloads-prop>`__****
+-  :ref:`downloads <sdk_ubuntu_downloadmanager_downloadmanager_downloads-prop>`
    : list
--  ****`errorMessage </sdk/apps/qml/Ubuntu.DownloadManager/DownloadManager#errorMessage-prop>`__****
+-  :ref:`errorMessage <sdk_ubuntu_downloadmanager_downloadmanager_errorMessage-prop>`
    : string
 
 Signals
 -------
 
--  ****`downloadCanceled </sdk/apps/qml/Ubuntu.DownloadManager/DownloadManager#downloadCanceled-signal>`__****\ (SingleDownload
+-  :ref:`downloadCanceled <sdk_ubuntu_downloadmanager_downloadmanager_downloadCanceled-signal>`\ (SingleDownload
    *download*)
--  ****`downloadFinished </sdk/apps/qml/Ubuntu.DownloadManager/DownloadManager#downloadFinished-signal>`__****\ (SingleDownload
+-  :ref:`downloadFinished <sdk_ubuntu_downloadmanager_downloadmanager_downloadFinished-signal>`\ (SingleDownload
    *download*, QString *path*)
--  ****`downloadPaused </sdk/apps/qml/Ubuntu.DownloadManager/DownloadManager#downloadPaused-signal>`__****\ (SingleDownload
+-  :ref:`downloadPaused <sdk_ubuntu_downloadmanager_downloadmanager_downloadPaused-signal>`\ (SingleDownload
    *download*)
--  ****`downloadResumed </sdk/apps/qml/Ubuntu.DownloadManager/DownloadManager#downloadResumed-signal>`__****\ (SingleDownload
+-  :ref:`downloadResumed <sdk_ubuntu_downloadmanager_downloadmanager_downloadResumed-signal>`\ (SingleDownload
    *download*)
--  ****`errorFound </sdk/apps/qml/Ubuntu.DownloadManager/DownloadManager#errorFound-signal>`__****\ (SingleDownload
+-  :ref:`errorFound <sdk_ubuntu_downloadmanager_downloadmanager_errorFound-signal>`\ (SingleDownload
    *download*)
 
 Methods
 -------
 
 -  void
-   ****`download </sdk/apps/qml/Ubuntu.DownloadManager/DownloadManager#download-method>`__****\ (string
+   **:ref:`download <sdk_ubuntu_downloadmanager_downloadmanager#download-method>`**\ (string
    *url*)
 
 Detailed Description
 --------------------
 
-`DownloadManager </sdk/apps/qml/Ubuntu.DownloadManager/DownloadManager/>`__
+:ref:`DownloadManager <sdk_ubuntu_downloadmanager_downloadmanager>`
 provides facilities for downloading a several files, connect the
 downloads property to any Item that works with models, and dynamically
 update the content of those lists/repeaters/etc to show the current
 downloads and connect any UI to the
-`SingleDownload </sdk/apps/qml/Ubuntu.DownloadManager/SingleDownload/>`__
+:ref:`SingleDownload <sdk_ubuntu_downloadmanager_singledownload>`
 properties in the delegates.
 
 Example usage:
@@ -98,10 +102,12 @@ Example usage:
     }
 
 **See also**
-`SingleDownload </sdk/apps/qml/Ubuntu.DownloadManager/SingleDownload/>`__.
+:ref:`SingleDownload <sdk_ubuntu_downloadmanager_singledownload>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_ubuntu_downloadmanager_downloadmanager_autoStart-prop:
 
 +--------------------------------------------------------------------------+
 |        \ autoStart : bool                                                |
@@ -113,6 +119,8 @@ download.
 
 | 
 
+.. _sdk_ubuntu_downloadmanager_downloadmanager_cleanDownloads-prop:
+
 +--------------------------------------------------------------------------+
 |        \ cleanDownloads : bool                                           |
 +--------------------------------------------------------------------------+
@@ -122,6 +130,8 @@ cleaned when a download finish. Removing those completed transfers, and
 only showing current downloads.
 
 | 
+
+.. _sdk_ubuntu_downloadmanager_downloadmanager_downloads-prop:
 
 +--------------------------------------------------------------------------+
 |        \ downloads : list                                                |
@@ -134,6 +144,8 @@ how to represent the UI for each download.
 
 | 
 
+.. _sdk_ubuntu_downloadmanager_downloadmanager_errorMessage-prop:
+
 +--------------------------------------------------------------------------+
 |        \ errorMessage : string                                           |
 +--------------------------------------------------------------------------+
@@ -145,9 +157,11 @@ The error message associated with the current download, if there is any.
 Signal Documentation
 --------------------
 
+.. _sdk_ubuntu_downloadmanager_downloadmanager_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ downloadCanceled(`SingleDownload </sdk/apps/qml/Ubuntu.Download |
-| Manager/SingleDownload/>`__                                              |
+| :ref:` <>`\ downloadCanceled(`SingleDownload <sdk_ubuntu_downloadmanager_si |
+| ngledownload>`_                                                          |
 | *download*)                                                              |
 +--------------------------------------------------------------------------+
 
@@ -159,9 +173,11 @@ This QML signal was introduced in Ubuntu.DownloadManager 1.2.
 
 | 
 
+.. _sdk_ubuntu_downloadmanager_downloadmanager_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ downloadFinished(`SingleDownload </sdk/apps/qml/Ubuntu.Download |
-| Manager/SingleDownload/>`__                                              |
+| :ref:` <>`\ downloadFinished(`SingleDownload <sdk_ubuntu_downloadmanager_si |
+| ngledownload>`_                                                          |
 | *download*, QString *path*)                                              |
 +--------------------------------------------------------------------------+
 
@@ -174,9 +190,11 @@ This QML signal was introduced in Ubuntu.DownloadManager 1.2.
 
 | 
 
+.. _sdk_ubuntu_downloadmanager_downloadmanager_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ downloadPaused(`SingleDownload </sdk/apps/qml/Ubuntu.DownloadMa |
-| nager/SingleDownload/>`__                                                |
+| :ref:` <>`\ downloadPaused(`SingleDownload <sdk_ubuntu_downloadmanager_sing |
+| ledownload>`_                                                            |
 | *download*)                                                              |
 +--------------------------------------------------------------------------+
 
@@ -188,9 +206,11 @@ This QML signal was introduced in Ubuntu.DownloadManager 1.2.
 
 | 
 
+.. _sdk_ubuntu_downloadmanager_downloadmanager_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ downloadResumed(`SingleDownload </sdk/apps/qml/Ubuntu.DownloadM |
-| anager/SingleDownload/>`__                                               |
+| :ref:` <>`\ downloadResumed(`SingleDownload <sdk_ubuntu_downloadmanager_sin |
+| gledownload>`_                                                           |
 | *download*)                                                              |
 +--------------------------------------------------------------------------+
 
@@ -202,16 +222,18 @@ This QML signal was introduced in Ubuntu.DownloadManager 1.2.
 
 | 
 
+.. _sdk_ubuntu_downloadmanager_downloadmanager_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ errorFound(`SingleDownload </sdk/apps/qml/Ubuntu.DownloadManage |
-| r/SingleDownload/>`__                                                    |
+| :ref:` <>`\ errorFound(`SingleDownload <sdk_ubuntu_downloadmanager_singledo |
+| wnload>`_                                                                |
 | *download*)                                                              |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when an error occurs in a download. The download
 in which the error occurred is provided via the 'download' parameter,
 from which the error message can be accessed via
-download.\ `errorMessage </sdk/apps/qml/Ubuntu.DownloadManager/DownloadManager#errorMessage-prop>`__.
+download.\ :ref:`errorMessage <sdk_ubuntu_downloadmanager_downloadmanager#errorMessage-prop>`.
 The corresponding handler is ``onErrorFound``
 
 This QML signal was introduced in Ubuntu.DownloadManager 1.2.
@@ -220,6 +242,8 @@ This QML signal was introduced in Ubuntu.DownloadManager 1.2.
 
 Method Documentation
 --------------------
+
+.. _sdk_ubuntu_downloadmanager_downloadmanager_void download-method:
 
 +--------------------------------------------------------------------------+
 |        \ void download(string *url*)                                     |

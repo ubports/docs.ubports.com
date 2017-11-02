@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_captions:
+Ubuntu.Components Captions
+==========================
+
 Container providing captionStyles for a twin-label column that can be
 used in RowLayout or GridLayout.
 
@@ -10,20 +14,19 @@ used in RowLayout or GridLayout.
 Properties
 ----------
 
--  ****`captionStyle </sdk/apps/qml/Ubuntu.Components/Captions#captionStyle-prop>`__****
+-  :ref:`captionStyle <sdk_ubuntu_components_captions_captionStyle-prop>`
    : int
--  ****`subtitle </sdk/apps/qml/Ubuntu.Components/Captions#subtitle-prop>`__****
-   : Label
--  ****`title </sdk/apps/qml/Ubuntu.Components/Captions#title-prop>`__****
-   : Label
+-  :ref:`subtitle <sdk_ubuntu_components_captions_subtitle-prop>` :
+   Label
+-  :ref:`title <sdk_ubuntu_components_captions_title-prop>` : Label
 
 Detailed Description
 --------------------
 
 The labels are placed in a column and can be accessed through
-`title </sdk/apps/qml/Ubuntu.Components/Captions#title-prop>`__ and
-`subtitle </sdk/apps/qml/Ubuntu.Components/Captions#subtitle-prop>`__
-properties. The default spacing between the labels is 0.5 grid units.
+:ref:`title <sdk_ubuntu_components_captions#title-prop>` and
+:ref:`subtitle <sdk_ubuntu_components_captions#subtitle-prop>` properties.
+The default spacing between the labels is 0.5 grid units.
 
 The container only shows the labels which has its text property set to a
 valid string. The labels not having any text set are not occupying the
@@ -68,6 +71,8 @@ Additional items can also be added to the layout after the two labels.
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_captions_captionStyle-prop:
+
 +--------------------------------------------------------------------------+
 |        \ captionStyle : int                                              |
 +--------------------------------------------------------------------------+
@@ -83,18 +88,20 @@ the component. It can take the following values:
 
 | 
 
+.. _sdk_ubuntu_components_captions_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ [read-only] subtitle :                                          |
-| `Label </sdk/apps/qml/Ubuntu.Components/Label/>`__                       |
+| :ref:` <>`\ [read-only] subtitle : `Label <sdk_ubuntu_components_label>`  |
 +--------------------------------------------------------------------------+
 
 Label occupying the bottom area of the container.
 
 | 
 
+.. _sdk_ubuntu_components_captions_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ [read-only] title :                                             |
-| `Label </sdk/apps/qml/Ubuntu.Components/Label/>`__                       |
+| :ref:` <>`\ [read-only] title : `Label <sdk_ubuntu_components_label>`  |
 +--------------------------------------------------------------------------+
 
 Label occupying the top area of the container.

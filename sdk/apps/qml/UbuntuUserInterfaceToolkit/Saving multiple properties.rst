@@ -1,10 +1,14 @@
+.. _sdk_ubuntuuserinterfacetoolkit_saving_multiple_properties:
+UbuntuUserInterfaceToolkit Saving multiple properties
+=====================================================
+
 
 
 .. rubric:: Specifying more properties
    :name: specifying-more-properties
 
 So far we have saved one single property, but as the
-{`StateSaver::properties </sdk/apps/qml/Ubuntu.Components/StateSaver#properties-prop>`__}
+{:ref:`StateSaver::properties <sdk_ubuntu_components_statesaver#properties-prop>`}
 property name suggests, there can be more properties serialized at the
 same time. For example, to serialize both color and opacity of a
 Rectangle, the code would look as follows:
@@ -21,7 +25,7 @@ Rectangle, the code would look as follows:
 **Note** that not all types of properties can be saved. Object types or
 list models for example are excluded from the types that can be saved,
 but all properties listed as `QML base
-types </sdk/apps/qml/QtQml/qtqml-typesystem-basictypes/>`__ can be
+types </sdk/apps/qml/QtQml/qtqml-typesystem-basictypes/>`_  can be
 serialized.
 
 .. rubric:: Grouped properties
@@ -102,4 +106,4 @@ in the following way:
     }
 
 `Recap on state
-saving </sdk/apps/qml/UbuntuUserInterfaceToolkit/statesaving3/>`__
+saving </sdk/apps/qml/UbuntuUserInterfaceToolkit/statesaving3/>`_ 

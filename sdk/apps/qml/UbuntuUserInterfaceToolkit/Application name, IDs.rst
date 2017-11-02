@@ -1,3 +1,7 @@
+.. _sdk_ubuntuuserinterfacetoolkit_application_name,_ids:
+UbuntuUserInterfaceToolkit Application name, IDs
+================================================
+
 
 
 .. rubric:: Application name
@@ -14,9 +18,8 @@ archives can be serialized for the application. However runtime
 application name change would require application restart.
 
 Having these preconditions, we can deduct that
-`MainView </sdk/apps/qml/Ubuntu.Components/MainView/>`__'s
-applicationName property is one of the properties which cannot be
-serialized.
+:ref:`MainView <sdk_ubuntu_components_mainview>`'s applicationName property
+is one of the properties which cannot be serialized.
 
 .. rubric:: IDs
    :name: ids
@@ -57,4 +60,4 @@ hierarchy.
     }
 
 `Saving multiple
-properties </sdk/apps/qml/UbuntuUserInterfaceToolkit/statesaving2/>`__
+properties </sdk/apps/qml/UbuntuUserInterfaceToolkit/statesaving2/>`_ 

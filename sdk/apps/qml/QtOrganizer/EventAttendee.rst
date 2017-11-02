@@ -1,3 +1,7 @@
+.. _sdk_qtorganizer_eventattendee:
+QtOrganizer EventAttendee
+=========================
+
 The EventAttendee element contains information about an attendee of an
 event.
 
@@ -8,37 +12,38 @@ event.
 Properties
 ----------
 
--  ****`attendeeId </sdk/apps/qml/QtOrganizer/EventAttendee#attendeeId-prop>`__****
+-  :ref:`attendeeId <sdk_qtorganizer_eventattendee_attendeeId-prop>`
    : variant
--  ****`emailAddress </sdk/apps/qml/QtOrganizer/EventAttendee#emailAddress-prop>`__****
+-  :ref:`emailAddress <sdk_qtorganizer_eventattendee_emailAddress-prop>`
    : variant
--  ****`name </sdk/apps/qml/QtOrganizer/EventAttendee#name-prop>`__****
+-  :ref:`name <sdk_qtorganizer_eventattendee_name-prop>` : variant
+-  :ref:`participationRole <sdk_qtorganizer_eventattendee_participationRole-prop>`
    : variant
--  ****`participationRole </sdk/apps/qml/QtOrganizer/EventAttendee#participationRole-prop>`__****
-   : variant
--  ****`participationStatus </sdk/apps/qml/QtOrganizer/EventAttendee#participationStatus-prop>`__****
+-  :ref:`participationStatus <sdk_qtorganizer_eventattendee_participationStatus-prop>`
    : variant
 
 Signals
 -------
 
--  ****`onDetailChanged </sdk/apps/qml/QtOrganizer/EventAttendee#onDetailChanged-signal>`__****\ ()
+-  :ref:`onDetailChanged <sdk_qtorganizer_eventattendee_onDetailChanged-signal>`\ ()
 
 Detailed Description
 --------------------
 
 The following fields are supported:
 
--  `EventAttendee </sdk/apps/qml/QtOrganizer/EventAttendee/>`__.FieldName
--  `EventAttendee </sdk/apps/qml/QtOrganizer/EventAttendee/>`__.FieldEmailAddress
--  `EventAttendee </sdk/apps/qml/QtOrganizer/EventAttendee/>`__.FieldAddendeeId
--  `EventAttendee </sdk/apps/qml/QtOrganizer/EventAttendee/>`__.FieldParticipationStatus
--  `EventAttendee </sdk/apps/qml/QtOrganizer/EventAttendee/>`__.FieldParticipationRole
+-  :ref:`EventAttendee <sdk_qtorganizer_eventattendee>`.FieldName
+-  :ref:`EventAttendee <sdk_qtorganizer_eventattendee>`.FieldEmailAddress
+-  :ref:`EventAttendee <sdk_qtorganizer_eventattendee>`.FieldAddendeeId
+-  :ref:`EventAttendee <sdk_qtorganizer_eventattendee>`.FieldParticipationStatus
+-  :ref:`EventAttendee <sdk_qtorganizer_eventattendee>`.FieldParticipationRole
 
 **See also** QOrganizerEventAttendee.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtorganizer_eventattendee_attendeeId-prop:
 
 +--------------------------------------------------------------------------+
 |        \ attendeeId : variant                                            |
@@ -48,6 +53,8 @@ This property holds the unique identifier of the attendee.
 
 | 
 
+.. _sdk_qtorganizer_eventattendee_emailAddress-prop:
+
 +--------------------------------------------------------------------------+
 |        \ emailAddress : variant                                          |
 +--------------------------------------------------------------------------+
@@ -55,6 +62,8 @@ This property holds the unique identifier of the attendee.
 This property holds the email address of the attendee.
 
 | 
+
+.. _sdk_qtorganizer_eventattendee_name-prop:
 
 +--------------------------------------------------------------------------+
 |        \ name : variant                                                  |
@@ -64,6 +73,8 @@ This property holds the name of the attendee.
 
 | 
 
+.. _sdk_qtorganizer_eventattendee_participationRole-prop:
+
 +--------------------------------------------------------------------------+
 |        \ participationRole : variant                                     |
 +--------------------------------------------------------------------------+
@@ -71,15 +82,17 @@ This property holds the name of the attendee.
 This property holds the participation role of the attendee of the
 event.The value can be one of:
 
--  `EventAttendee </sdk/apps/qml/QtOrganizer/EventAttendee/>`__.RoleUnknown
--  `EventAttendee </sdk/apps/qml/QtOrganizer/EventAttendee/>`__.RoleOrganizer
--  `EventAttendee </sdk/apps/qml/QtOrganizer/EventAttendee/>`__.RoleChairperson
--  `EventAttendee </sdk/apps/qml/QtOrganizer/EventAttendee/>`__.RoleHost
--  `EventAttendee </sdk/apps/qml/QtOrganizer/EventAttendee/>`__.RoleRequiredParticipant
--  `EventAttendee </sdk/apps/qml/QtOrganizer/EventAttendee/>`__.RoleOptionalParticipant
--  `EventAttendee </sdk/apps/qml/QtOrganizer/EventAttendee/>`__.RoleNonParticipant
+-  :ref:`EventAttendee <sdk_qtorganizer_eventattendee>`.RoleUnknown
+-  :ref:`EventAttendee <sdk_qtorganizer_eventattendee>`.RoleOrganizer
+-  :ref:`EventAttendee <sdk_qtorganizer_eventattendee>`.RoleChairperson
+-  :ref:`EventAttendee <sdk_qtorganizer_eventattendee>`.RoleHost
+-  :ref:`EventAttendee <sdk_qtorganizer_eventattendee>`.RoleRequiredParticipant
+-  :ref:`EventAttendee <sdk_qtorganizer_eventattendee>`.RoleOptionalParticipant
+-  :ref:`EventAttendee <sdk_qtorganizer_eventattendee>`.RoleNonParticipant
 
 | 
+
+.. _sdk_qtorganizer_eventattendee_participationStatus-prop:
 
 +--------------------------------------------------------------------------+
 |        \ participationStatus : variant                                   |
@@ -88,24 +101,26 @@ event.The value can be one of:
 This property holds the participation status of the attendee of the
 event. The value can be one of:
 
--  `EventAttendee </sdk/apps/qml/QtOrganizer/EventAttendee/>`__.StatusUnknown
--  `EventAttendee </sdk/apps/qml/QtOrganizer/EventAttendee/>`__.StatusAccepted
--  `EventAttendee </sdk/apps/qml/QtOrganizer/EventAttendee/>`__.StatusDeclined
--  `EventAttendee </sdk/apps/qml/QtOrganizer/EventAttendee/>`__.StatusTentative
--  `EventAttendee </sdk/apps/qml/QtOrganizer/EventAttendee/>`__.StatusDelegated
--  `EventAttendee </sdk/apps/qml/QtOrganizer/EventAttendee/>`__.StatusInProcess
--  `EventAttendee </sdk/apps/qml/QtOrganizer/EventAttendee/>`__.StatusCompleted
+-  :ref:`EventAttendee <sdk_qtorganizer_eventattendee>`.StatusUnknown
+-  :ref:`EventAttendee <sdk_qtorganizer_eventattendee>`.StatusAccepted
+-  :ref:`EventAttendee <sdk_qtorganizer_eventattendee>`.StatusDeclined
+-  :ref:`EventAttendee <sdk_qtorganizer_eventattendee>`.StatusTentative
+-  :ref:`EventAttendee <sdk_qtorganizer_eventattendee>`.StatusDelegated
+-  :ref:`EventAttendee <sdk_qtorganizer_eventattendee>`.StatusInProcess
+-  :ref:`EventAttendee <sdk_qtorganizer_eventattendee>`.StatusCompleted
 
 | 
 
 Signal Documentation
 --------------------
 
+.. _sdk_qtorganizer_eventattendee_onDetailChanged()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ onDetailChanged()                                               |
 +--------------------------------------------------------------------------+
 
 **See also**
-`Detail::onDetailChanged </sdk/apps/qml/QtOrganizer/Detail#onDetailChanged-signal>`__.
+:ref:`Detail::onDetailChanged <sdk_qtorganizer_detail#onDetailChanged-signal>`.
 
 | 

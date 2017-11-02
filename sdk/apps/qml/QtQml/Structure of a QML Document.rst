@@ -1,3 +1,7 @@
+.. _sdk_qtqml_structure_of_a_qml_document:
+QtQml Structure of a QML Document
+=================================
+
 
 
 A QML document is a self contained piece of QML source code that
@@ -32,7 +36,7 @@ on the import statements. At least one ``import`` statement must be
 present such as ``import QtQuick 2.0``.
 
 Please see the `QML Syntax - Import
-Statements </sdk/apps/qml/QtQml/qtqml-syntax-imports/>`__ documentation
+Statements </sdk/apps/qml/QtQml/qtqml-syntax-imports/>`_  documentation
 for in-depth information about QML imports.
 
 .. rubric:: The Root Object Declaration
@@ -56,5 +60,5 @@ following is invalid and will generate an error:
 This is because a .qml file automatically defines a QML type, which
 encapsulates a *single* QML object definition. This is discussed further
 in `Documents as QML object type
-definitions </sdk/apps/qml/QtQml/qtqml-documents-definetypes/>`__.
+definitions </sdk/apps/qml/QtQml/qtqml-documents-definetypes/>`_ .
 

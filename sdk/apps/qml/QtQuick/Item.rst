@@ -1,3 +1,7 @@
+.. _sdk_qtquick_item:
+QtQuick Item
+============
+
 A basic visual QML type
 
 +--------------------------------------+--------------------------------------+
@@ -19,146 +23,138 @@ A basic visual QML type
 Properties
 ----------
 
--  ****`activeFocus </sdk/apps/qml/QtQuick/Item#activeFocus-prop>`__****
+-  :ref:`activeFocus <sdk_qtquick_item_activeFocus-prop>` : bool
+-  :ref:`activeFocusOnTab <sdk_qtquick_item_activeFocusOnTab-prop>`
    : bool
--  ****`activeFocusOnTab </sdk/apps/qml/QtQuick/Item#activeFocusOnTab-prop>`__****
-   : bool
--  ****`anchors </sdk/apps/qml/QtQuick/Item#anchors-prop>`__****
+-  :ref:`anchors <sdk_qtquick_item_anchors-prop>`
 
-   -  ****`anchors.top </sdk/apps/qml/QtQuick/Item#anchors.top-prop>`__****
+   -  :ref:`anchors.top <sdk_qtquick_item_anchors.top-prop>` :
+      AnchorLine
+   -  :ref:`anchors.bottom <sdk_qtquick_item_anchors.bottom-prop>`
       : AnchorLine
-   -  ****`anchors.bottom </sdk/apps/qml/QtQuick/Item#anchors.bottom-prop>`__****
+   -  :ref:`anchors.left <sdk_qtquick_item_anchors.left-prop>` :
+      AnchorLine
+   -  :ref:`anchors.right <sdk_qtquick_item_anchors.right-prop>` :
+      AnchorLine
+   -  :ref:`anchors.horizontalCenter <sdk_qtquick_item_anchors.horizontalCenter-prop>`
       : AnchorLine
-   -  ****`anchors.left </sdk/apps/qml/QtQuick/Item#anchors.left-prop>`__****
+   -  :ref:`anchors.verticalCenter <sdk_qtquick_item_anchors.verticalCenter-prop>`
       : AnchorLine
-   -  ****`anchors.right </sdk/apps/qml/QtQuick/Item#anchors.right-prop>`__****
+   -  :ref:`anchors.baseline <sdk_qtquick_item_anchors.baseline-prop>`
       : AnchorLine
-   -  ****`anchors.horizontalCenter </sdk/apps/qml/QtQuick/Item#anchors.horizontalCenter-prop>`__****
-      : AnchorLine
-   -  ****`anchors.verticalCenter </sdk/apps/qml/QtQuick/Item#anchors.verticalCenter-prop>`__****
-      : AnchorLine
-   -  ****`anchors.baseline </sdk/apps/qml/QtQuick/Item#anchors.baseline-prop>`__****
-      : AnchorLine
-   -  ****`anchors.fill </sdk/apps/qml/QtQuick/Item#anchors.fill-prop>`__****
+   -  :ref:`anchors.fill <sdk_qtquick_item_anchors.fill-prop>` :
+      Item
+   -  :ref:`anchors.centerIn <sdk_qtquick_item_anchors.centerIn-prop>`
       : Item
-   -  ****`anchors.centerIn </sdk/apps/qml/QtQuick/Item#anchors.centerIn-prop>`__****
-      : Item
-   -  ****`anchors.margins </sdk/apps/qml/QtQuick/Item#anchors.margins-prop>`__****
+   -  :ref:`anchors.margins <sdk_qtquick_item_anchors.margins-prop>`
       : real
-   -  ****`anchors.topMargin </sdk/apps/qml/QtQuick/Item#anchors.topMargin-prop>`__****
+   -  :ref:`anchors.topMargin <sdk_qtquick_item_anchors.topMargin-prop>`
       : real
-   -  ****`anchors.bottomMargin </sdk/apps/qml/QtQuick/Item#anchors.bottomMargin-prop>`__****
+   -  :ref:`anchors.bottomMargin <sdk_qtquick_item_anchors.bottomMargin-prop>`
       : real
-   -  ****`anchors.leftMargin </sdk/apps/qml/QtQuick/Item#anchors.leftMargin-prop>`__****
+   -  :ref:`anchors.leftMargin <sdk_qtquick_item_anchors.leftMargin-prop>`
       : real
-   -  ****`anchors.rightMargin </sdk/apps/qml/QtQuick/Item#anchors.rightMargin-prop>`__****
+   -  :ref:`anchors.rightMargin <sdk_qtquick_item_anchors.rightMargin-prop>`
       : real
-   -  ****`anchors.horizontalCenterOffset </sdk/apps/qml/QtQuick/Item#anchors.horizontalCenterOffset-prop>`__****
+   -  :ref:`anchors.horizontalCenterOffset <sdk_qtquick_item_anchors.horizontalCenterOffset-prop>`
       : real
-   -  ****`anchors.verticalCenterOffset </sdk/apps/qml/QtQuick/Item#anchors.verticalCenterOffset-prop>`__****
+   -  :ref:`anchors.verticalCenterOffset <sdk_qtquick_item_anchors.verticalCenterOffset-prop>`
       : real
-   -  ****`anchors.baselineOffset </sdk/apps/qml/QtQuick/Item#anchors.baselineOffset-prop>`__****
+   -  :ref:`anchors.baselineOffset <sdk_qtquick_item_anchors.baselineOffset-prop>`
       : real
-   -  ****`anchors.alignWhenCentered </sdk/apps/qml/QtQuick/Item#anchors.alignWhenCentered-prop>`__****
+   -  :ref:`anchors.alignWhenCentered <sdk_qtquick_item_anchors.alignWhenCentered-prop>`
       : bool
 
--  ****`antialiasing </sdk/apps/qml/QtQuick/Item#antialiasing-prop>`__****
-   : bool
--  ****`baselineOffset </sdk/apps/qml/QtQuick/Item#baselineOffset-prop>`__****
-   : int
--  ****`children </sdk/apps/qml/QtQuick/Item#children-prop>`__**** :
-   list<Item>
--  ****`childrenRect </sdk/apps/qml/QtQuick/Item#childrenRect-prop>`__****
+-  :ref:`antialiasing <sdk_qtquick_item_antialiasing-prop>` : bool
+-  :ref:`baselineOffset <sdk_qtquick_item_baselineOffset-prop>` :
+   int
+-  :ref:`children <sdk_qtquick_item_children-prop>` : list<Item>
+-  :ref:`childrenRect <sdk_qtquick_item_childrenRect-prop>`
 
-   -  ****`childrenRect.x </sdk/apps/qml/QtQuick/Item#childrenRect.x-prop>`__****
+   -  :ref:`childrenRect.x <sdk_qtquick_item_childrenRect.x-prop>`
       : real
-   -  ****`childrenRect.y </sdk/apps/qml/QtQuick/Item#childrenRect.y-prop>`__****
+   -  :ref:`childrenRect.y <sdk_qtquick_item_childrenRect.y-prop>`
       : real
-   -  ****`childrenRect.width </sdk/apps/qml/QtQuick/Item#childrenRect.width-prop>`__****
+   -  :ref:`childrenRect.width <sdk_qtquick_item_childrenRect.width-prop>`
       : real
-   -  ****`childrenRect.height </sdk/apps/qml/QtQuick/Item#childrenRect.height-prop>`__****
+   -  :ref:`childrenRect.height <sdk_qtquick_item_childrenRect.height-prop>`
       : real
 
--  ****`clip </sdk/apps/qml/QtQuick/Item#clip-prop>`__**** : bool
--  ****`data </sdk/apps/qml/QtQuick/Item#data-prop>`__**** :
-   list<Object>
--  ****`enabled </sdk/apps/qml/QtQuick/Item#enabled-prop>`__**** : bool
--  ****`focus </sdk/apps/qml/QtQuick/Item#focus-prop>`__**** : bool
--  ****`height </sdk/apps/qml/QtQuick/Item#height-prop>`__**** : real
--  ****`implicitHeight </sdk/apps/qml/QtQuick/Item#implicitHeight-prop>`__****
-   : real
--  ****`implicitWidth </sdk/apps/qml/QtQuick/Item#implicitWidth-prop>`__****
-   : real
--  ****`layer.effect </sdk/apps/qml/QtQuick/Item#layer.effect-prop>`__****
-   : Component
--  ****`layer.enabled </sdk/apps/qml/QtQuick/Item#layer.enabled-prop>`__****
-   : bool
--  ****`layer.format </sdk/apps/qml/QtQuick/Item#layer.format-prop>`__****
-   : enumeration
--  ****`layer.mipmap </sdk/apps/qml/QtQuick/Item#layer.mipmap-prop>`__****
-   : bool
--  ****`layer.samplerName </sdk/apps/qml/QtQuick/Item#layer.samplerName-prop>`__****
-   : string
--  ****`layer.smooth </sdk/apps/qml/QtQuick/Item#layer.smooth-prop>`__****
-   : bool
--  ****`layer.sourceRect </sdk/apps/qml/QtQuick/Item#layer.sourceRect-prop>`__****
-   : rect
--  ****`layer.textureSize </sdk/apps/qml/QtQuick/Item#layer.textureSize-prop>`__****
-   : size
--  ****`layer.wrapMode </sdk/apps/qml/QtQuick/Item#layer.wrapMode-prop>`__****
-   : enumeration
--  ****`opacity </sdk/apps/qml/QtQuick/Item#opacity-prop>`__**** : real
--  ****`parent </sdk/apps/qml/QtQuick/Item#parent-prop>`__**** : Item
--  ****`resources </sdk/apps/qml/QtQuick/Item#resources-prop>`__**** :
-   list<Object>
--  ****`rotation </sdk/apps/qml/QtQuick/Item#rotation-prop>`__**** :
+-  :ref:`clip <sdk_qtquick_item_clip-prop>` : bool
+-  :ref:`data <sdk_qtquick_item_data-prop>` : list<Object>
+-  :ref:`enabled <sdk_qtquick_item_enabled-prop>` : bool
+-  :ref:`focus <sdk_qtquick_item_focus-prop>` : bool
+-  :ref:`height <sdk_qtquick_item_height-prop>` : real
+-  :ref:`implicitHeight <sdk_qtquick_item_implicitHeight-prop>` :
    real
--  ****`scale </sdk/apps/qml/QtQuick/Item#scale-prop>`__**** : real
--  ****`smooth </sdk/apps/qml/QtQuick/Item#smooth-prop>`__**** : bool
--  ****`state </sdk/apps/qml/QtQuick/Item#state-prop>`__**** : string
--  ****`states </sdk/apps/qml/QtQuick/Item#states-prop>`__**** :
-   list<State>
--  ****`transform </sdk/apps/qml/QtQuick/Item#transform-prop>`__**** :
+-  :ref:`implicitWidth <sdk_qtquick_item_implicitWidth-prop>` :
+   real
+-  :ref:`layer.effect <sdk_qtquick_item_layer.effect-prop>` :
+   Component
+-  :ref:`layer.enabled <sdk_qtquick_item_layer.enabled-prop>` :
+   bool
+-  :ref:`layer.format <sdk_qtquick_item_layer.format-prop>` :
+   enumeration
+-  :ref:`layer.mipmap <sdk_qtquick_item_layer.mipmap-prop>` : bool
+-  :ref:`layer.samplerName <sdk_qtquick_item_layer.samplerName-prop>`
+   : string
+-  :ref:`layer.smooth <sdk_qtquick_item_layer.smooth-prop>` : bool
+-  :ref:`layer.sourceRect <sdk_qtquick_item_layer.sourceRect-prop>`
+   : rect
+-  :ref:`layer.textureSize <sdk_qtquick_item_layer.textureSize-prop>`
+   : size
+-  :ref:`layer.wrapMode <sdk_qtquick_item_layer.wrapMode-prop>` :
+   enumeration
+-  :ref:`opacity <sdk_qtquick_item_opacity-prop>` : real
+-  :ref:`parent <sdk_qtquick_item_parent-prop>` : Item
+-  :ref:`resources <sdk_qtquick_item_resources-prop>` :
+   list<Object>
+-  :ref:`rotation <sdk_qtquick_item_rotation-prop>` : real
+-  :ref:`scale <sdk_qtquick_item_scale-prop>` : real
+-  :ref:`smooth <sdk_qtquick_item_smooth-prop>` : bool
+-  :ref:`state <sdk_qtquick_item_state-prop>` : string
+-  :ref:`states <sdk_qtquick_item_states-prop>` : list<State>
+-  :ref:`transform <sdk_qtquick_item_transform-prop>` :
    list<Transform>
--  ****`transformOrigin </sdk/apps/qml/QtQuick/Item#transformOrigin-prop>`__****
-   : enumeration
--  ****`transitions </sdk/apps/qml/QtQuick/Item#transitions-prop>`__****
-   : list<Transition>
--  ****`visible </sdk/apps/qml/QtQuick/Item#visible-prop>`__**** : bool
--  ****`visibleChildren </sdk/apps/qml/QtQuick/Item#visibleChildren-prop>`__****
-   : list<Item>
--  ****`width </sdk/apps/qml/QtQuick/Item#width-prop>`__**** : real
--  ****`x </sdk/apps/qml/QtQuick/Item#x-prop>`__**** : real
--  ****`y </sdk/apps/qml/QtQuick/Item#y-prop>`__**** : real
--  ****`z </sdk/apps/qml/QtQuick/Item#z-prop>`__**** : real
+-  :ref:`transformOrigin <sdk_qtquick_item_transformOrigin-prop>` :
+   enumeration
+-  :ref:`transitions <sdk_qtquick_item_transitions-prop>` :
+   list<Transition>
+-  :ref:`visible <sdk_qtquick_item_visible-prop>` : bool
+-  :ref:`visibleChildren <sdk_qtquick_item_visibleChildren-prop>` :
+   list<Item>
+-  :ref:`width <sdk_qtquick_item_width-prop>` : real
+-  :ref:`x <sdk_qtquick_item_x-prop>` : real
+-  :ref:`y <sdk_qtquick_item_y-prop>` : real
+-  :ref:`z <sdk_qtquick_item_z-prop>` : real
 
 Methods
 -------
 
--  ****`childAt </sdk/apps/qml/QtQuick/Item#childAt-method>`__****\ (real
-   *x*, real *y*)
+-  :ref:`childAt <sdk_qtquick_item_childAt-method>`\ (real *x*,
+   real *y*)
 -  object
-   ****`contains </sdk/apps/qml/QtQuick/Item#contains-method>`__****\ (point
+   **:ref:`contains <sdk_qtquick_item#contains-method>`**\ (point
    *point*)
--  ****`forceActiveFocus </sdk/apps/qml/QtQuick/Item#forceActiveFocus-method-2>`__****\ (Qt::FocusReason
+-  :ref:`forceActiveFocus <sdk_qtquick_item_forceActiveFocus-method-2>`\ (Qt::FocusReason
    *reason*)
--  ****`forceActiveFocus </sdk/apps/qml/QtQuick/Item#forceActiveFocus-method>`__****\ ()
+-  :ref:`forceActiveFocus <sdk_qtquick_item_forceActiveFocus-method>`\ ()
 -  bool
-   ****`grabToImage </sdk/apps/qml/QtQuick/Item#grabToImage-method>`__****\ (callback,
+   **:ref:`grabToImage <sdk_qtquick_item#grabToImage-method>`**\ (callback,
    targetSize)
 -  object
-   ****`mapFromItem </sdk/apps/qml/QtQuick/Item#mapFromItem-method-2>`__****\ (Item
+   **:ref:`mapFromItem <sdk_qtquick_item#mapFromItem-method-2>`**\ (Item
    *item*, real *x*, real *y*, real *width*, real *height*)
 -  object
-   ****`mapFromItem </sdk/apps/qml/QtQuick/Item#mapFromItem-method>`__****\ (Item
+   **:ref:`mapFromItem <sdk_qtquick_item#mapFromItem-method>`**\ (Item
    *item*, real *x*, real *y*)
 -  object
-   ****`mapToItem </sdk/apps/qml/QtQuick/Item#mapToItem-method-2>`__****\ (Item
+   **:ref:`mapToItem <sdk_qtquick_item#mapToItem-method-2>`**\ (Item
    *item*, real *x*, real *y*, real *width*, real *height*)
 -  object
-   ****`mapToItem </sdk/apps/qml/QtQuick/Item#mapToItem-method>`__****\ (Item
+   **:ref:`mapToItem <sdk_qtquick_item#mapToItem-method>`**\ (Item
    *item*, real *x*, real *y*)
--  ****`nextItemInFocusChain </sdk/apps/qml/QtQuick/Item#nextItemInFocusChain-method>`__****\ (bool
+-  :ref:`nextItemInFocusChain <sdk_qtquick_item_nextItemInFocusChain-method>`\ (bool
    *forward*)
 
 Detailed Description
@@ -169,7 +165,7 @@ The Item type is the base type for all visual items in Qt Quick.
 All visual items in Qt Quick inherit from Item. Although an Item object
 has no visual appearance, it defines all the attributes that are common
 across visual items, such as x and y position, width and height,
-`anchoring </sdk/apps/qml/QtQuick/qtquick-positioning-anchors/>`__ and
+`anchoring </sdk/apps/qml/QtQuick/qtquick-positioning-anchors/>`_  and
 key handling support.
 
 The Item type can be useful for grouping several items under a single
@@ -201,14 +197,14 @@ Key Handling
 ~~~~~~~~~~~~
 
 Key handling is available to all Item-based visual types via the
-`Keys </sdk/apps/qml/QtQuick/Keys/>`__ attached property. The *Keys*
-attached property provides basic signals such as
-`pressed </sdk/apps/qml/QtQuick/Keys#pressed-signal>`__ and
-`released </sdk/apps/qml/QtQuick/Keys#released-signal>`__, as well as
-signals for specific keys, such as
-`spacePressed </sdk/apps/qml/QtQuick/Keys#spacePressed-signal>`__. The
-example below assigns `keyboard
-focus </sdk/apps/qml/QtQuick/qtquick-input-focus/>`__ to the item and
+:ref:`Keys <sdk_qtquick_keys>` attached property. The *Keys* attached
+property provides basic signals such as
+:ref:`pressed <sdk_qtquick_keys#pressed-signal>` and
+:ref:`released <sdk_qtquick_keys#released-signal>`, as well as signals for
+specific keys, such as
+:ref:`spacePressed <sdk_qtquick_keys#spacePressed-signal>`. The example
+below assigns `keyboard
+focus </sdk/apps/qml/QtQuick/qtquick-input-focus/>`_  to the item and
 handles the left key via the general ``onPressed`` handler and the
 return key via the ``onReturnPressed`` handler:
 
@@ -226,57 +222,55 @@ return key via the ``onReturnPressed`` handler:
         Keys.onReturnPressed: console.log("Pressed return");
     }
 
-See the `Keys </sdk/apps/qml/QtQuick/Keys/>`__ attached property for
-detailed documentation.
+See the :ref:`Keys <sdk_qtquick_keys>` attached property for detailed
+documentation.
 
 Layout Mirroring
 ~~~~~~~~~~~~~~~~
 
 Item layouts can be mirrored using the
-`LayoutMirroring </sdk/apps/qml/QtQuick/LayoutMirroring/>`__ attached
-property. This causes
-`anchors </sdk/apps/qml/QtQuick/Item#anchors.top-prop>`__ to be
+:ref:`LayoutMirroring <sdk_qtquick_layoutmirroring>` attached property.
+This causes :ref:`anchors <sdk_qtquick_item#anchors.top-prop>` to be
 horizontally reversed, and also causes items that lay out or position
-their children (such as `ListView </sdk/apps/qml/QtQuick/ListView/>`__
-or `Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#row>`__) to
+their children (such as :ref:`ListView <sdk_qtquick_listview>` or
+`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#row>`_ ) to
 horizontally reverse the direction of their layouts.
 
-See `LayoutMirroring </sdk/apps/qml/QtQuick/LayoutMirroring/>`__ for
-more details.
+See :ref:`LayoutMirroring <sdk_qtquick_layoutmirroring>` for more details.
 
 Item Layers
 -----------
 
 An Item will normally be rendered directly into the window it belongs
 to. However, by setting
-`layer.enabled </sdk/apps/qml/QtQuick/Item#layer.enabled-prop>`__, it is
-possible to delegate the item and its entire subtree into an offscreen
-surface. Only the offscreen surface, a texture, will be then drawn into
-the window.
+:ref:`layer.enabled <sdk_qtquick_item#layer.enabled-prop>`, it is possible
+to delegate the item and its entire subtree into an offscreen surface.
+Only the offscreen surface, a texture, will be then drawn into the
+window.
 
 If it is desired to have a texture size different from that of the item,
 this is possible using
-`layer.textureSize </sdk/apps/qml/QtQuick/Item#layer.textureSize-prop>`__.
-To render only a section of the item into the texture, use
-`layer.sourceRect </sdk/apps/qml/QtQuick/Item#layer.sourceRect-prop>`__.
-It is also possible to specify
-`layer.sourceRect </sdk/apps/qml/QtQuick/Item#layer.sourceRect-prop>`__
-so it extends beyond the bounds of the item. In this case, the exterior
-will be padded with transparent pixels.
+:ref:`layer.textureSize <sdk_qtquick_item#layer.textureSize-prop>`. To
+render only a section of the item into the texture, use
+:ref:`layer.sourceRect <sdk_qtquick_item#layer.sourceRect-prop>`. It is
+also possible to specify
+:ref:`layer.sourceRect <sdk_qtquick_item#layer.sourceRect-prop>` so it
+extends beyond the bounds of the item. In this case, the exterior will
+be padded with transparent pixels.
 
 The item will use linear interpolation for scaling if
-`layer.smooth </sdk/apps/qml/QtQuick/Item#layer.smooth-prop>`__ is set
-to ``true`` and will use mipmap for downsampling if
-`layer.mipmap </sdk/apps/qml/QtQuick/Item#layer.mipmap-prop>`__ is set
-to ``true``. Mipmapping may improve visual quality of downscaled items.
-For mipmapping of single Image items, prefer
-`Image::mipmap </sdk/apps/qml/QtQuick/Image#mipmap-prop>`__.
+:ref:`layer.smooth <sdk_qtquick_item#layer.smooth-prop>` is set to ``true``
+and will use mipmap for downsampling if
+:ref:`layer.mipmap <sdk_qtquick_item#layer.mipmap-prop>` is set to
+``true``. Mipmapping may improve visual quality of downscaled items. For
+mipmapping of single Image items, prefer
+:ref:`Image::mipmap <sdk_qtquick_image#mipmap-prop>`.
 
 Layer Opacity vs Item Opacity
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 When applying
-`opacity </sdk/apps/qml/QtQuick/qtquick-effects-topic#opacity>`__ to an
+`opacity </sdk/apps/qml/QtQuick/qtquick-effects-topic/#opacity>`_  to an
 item hierarchy the opacity is applied to each item individually. This
 can lead to undesired visual results when the opacity is applied to a
 subtree. Consider the following example:
@@ -354,13 +348,12 @@ In this example, we implement the shader effect manually. The Qt
 Graphical Effects module contains a suite of ready-made effects for use
 with Qt Quick.
 
-See `ShaderEffect </sdk/apps/qml/QtQuick/ShaderEffect/>`__ for more
-information about using effects.
+See :ref:`ShaderEffect <sdk_qtquick_shadereffect>` for more information
+about using effects.
 
-**Note:**
-`layer.enabled </sdk/apps/qml/QtQuick/Item#layer.enabled-prop>`__ is
+**Note:** :ref:`layer.enabled <sdk_qtquick_item#layer.enabled-prop>` is
 actually just a more convenient way of using
-`ShaderEffectSource </sdk/apps/qml/QtQuick/ShaderEffectSource/>`__.
+:ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>`.
 
 Memory and Performance
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -372,7 +365,7 @@ configurations, large layers should be used with care.
 In the QPainter / QWidget world, it is some times favorable to cache
 complex content in a pixmap, image or texture. In Qt Quick, because of
 the techniques already applied by the `scene graph
-renderer </sdk/apps/qml/QtQuick/qtquick-visualcanvas-scenegraph-renderer/>`__,
+renderer </sdk/apps/qml/QtQuick/qtquick-visualcanvas-scenegraph-renderer/>`_ ,
 this will in most cases not be the case. Excessive draw calls are
 already reduced because of batching and a cache will in most cases end
 up blending more pixels than the original content. The overhead of
@@ -381,7 +374,7 @@ resulting texture is therefore often more costly than simply letting the
 item and its children be drawn normally.
 
 Also, an item using a layer can not be
-`batched </sdk/apps/qml/QtQuick/qtquick-visualcanvas-scenegraph-renderer#batching>`__
+`batched </sdk/apps/qml/QtQuick/qtquick-visualcanvas-scenegraph-renderer/#batching>`_ 
 during rendering. This means that a scene with many layered items may
 have performance problems.
 
@@ -392,6 +385,8 @@ afterwards.
 Property Documentation
 ----------------------
 
+.. _sdk_qtquick_item_activeFocus-prop:
+
 +--------------------------------------------------------------------------+
 |        \ activeFocus : bool                                              |
 +--------------------------------------------------------------------------+
@@ -400,14 +395,14 @@ This read-only property indicates whether the item has active focus.
 
 If activeFocus is true, either this item is the one that currently
 receives keyboard input, or it is a
-`FocusScope </sdk/apps/qml/QtQuick/FocusScope/>`__ ancestor of the item
-that currently receives keyboard input.
+:ref:`FocusScope <sdk_qtquick_focusscope>` ancestor of the item that
+currently receives keyboard input.
 
 Usually, activeFocus is gained by setting
-`focus </sdk/apps/qml/QtQuick/Item#focus-prop>`__ on an item and its
-enclosing `FocusScope </sdk/apps/qml/QtQuick/FocusScope/>`__ objects. In
-the following example, the ``input`` and ``focusScope`` objects will
-have active focus, while the root rectangle object will not.
+:ref:`focus <sdk_qtquick_item#focus-prop>` on an item and its enclosing
+:ref:`FocusScope <sdk_qtquick_focusscope>` objects. In the following
+example, the ``input`` and ``focusScope`` objects will have active
+focus, while the root rectangle object will not.
 
 .. code:: qml
 
@@ -424,11 +419,12 @@ have active focus, while the root rectangle object will not.
         }
     }
 
-**See also** `focus </sdk/apps/qml/QtQuick/Item#focus-prop>`__ and
-`Keyboard Focus in Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-input-focus/>`__.
+**See also** :ref:`focus <sdk_qtquick_item#focus-prop>` and `Keyboard Focus
+in Qt Quick </sdk/apps/qml/QtQuick/qtquick-input-focus/>`_ .
 
 | 
+
+.. _sdk_qtquick_item_activeFocusOnTab-prop:
 
 +--------------------------------------------------------------------------+
 |        \ activeFocusOnTab : bool                                         |
@@ -444,48 +440,67 @@ keyboard focus to the next item in the chain. Pressing BackTab (normally
 Shift+Tab) will move focus to the previous item.
 
 To set up a manual tab focus chain, see
-`KeyNavigation </sdk/apps/qml/QtQuick/KeyNavigation/>`__. Tab key events
-used by Keys or `KeyNavigation </sdk/apps/qml/QtQuick/KeyNavigation/>`__
-have precedence over focus chain behavior, ignore the events in other
-key handlers to allow it to propagate.
+:ref:`KeyNavigation <sdk_qtquick_keynavigation>`. Tab key events used by
+Keys or :ref:`KeyNavigation <sdk_qtquick_keynavigation>` have precedence
+over focus chain behavior, ignore the events in other key handlers to
+allow it to propagate.
 
 | 
+
+.. _sdk_qtquick_item_**anchors group**-prop:
 
 +--------------------------------------------------------------------------+
 |        \ **anchors group**                                               |
 +==========================================================================+
+.. _sdk_qtquick_item_anchors.bottom-prop:
 |        \ anchors.top : AnchorLine                                        |
 +--------------------------------------------------------------------------+
+.. _sdk_qtquick_item_anchors.left-prop:
 |        \ anchors.bottom : AnchorLine                                     |
 +--------------------------------------------------------------------------+
+.. _sdk_qtquick_item_anchors.right-prop:
 |        \ anchors.left : AnchorLine                                       |
 +--------------------------------------------------------------------------+
+.. _sdk_qtquick_item_anchors.horizontalCenter-prop:
 |        \ anchors.right : AnchorLine                                      |
 +--------------------------------------------------------------------------+
+.. _sdk_qtquick_item_anchors.verticalCenter-prop:
 |        \ anchors.horizontalCenter : AnchorLine                           |
 +--------------------------------------------------------------------------+
+.. _sdk_qtquick_item_anchors.baseline-prop:
 |        \ anchors.verticalCenter : AnchorLine                             |
 +--------------------------------------------------------------------------+
+.. _sdk_qtquick_item_-prop:
 |        \ anchors.baseline : AnchorLine                                   |
 +--------------------------------------------------------------------------+
-|        \ anchors.fill : `Item </sdk/apps/qml/QtQuick/Item/>`__           |
+.. _sdk_qtquick_item_-prop:
+| :ref:` <>`\ anchors.fill : `Item <sdk_qtquick_item>`                   |
 +--------------------------------------------------------------------------+
-|        \ anchors.centerIn : `Item </sdk/apps/qml/QtQuick/Item/>`__       |
+.. _sdk_qtquick_item_anchors.margins-prop:
+| :ref:` <>`\ anchors.centerIn : `Item <sdk_qtquick_item>`               |
 +--------------------------------------------------------------------------+
+.. _sdk_qtquick_item_anchors.topMargin-prop:
 |        \ anchors.margins : real                                          |
 +--------------------------------------------------------------------------+
+.. _sdk_qtquick_item_anchors.bottomMargin-prop:
 |        \ anchors.topMargin : real                                        |
 +--------------------------------------------------------------------------+
+.. _sdk_qtquick_item_anchors.leftMargin-prop:
 |        \ anchors.bottomMargin : real                                     |
 +--------------------------------------------------------------------------+
+.. _sdk_qtquick_item_anchors.rightMargin-prop:
 |        \ anchors.leftMargin : real                                       |
 +--------------------------------------------------------------------------+
+.. _sdk_qtquick_item_anchors.horizontalCenterOffset-prop:
 |        \ anchors.rightMargin : real                                      |
 +--------------------------------------------------------------------------+
+.. _sdk_qtquick_item_anchors.verticalCenterOffset-prop:
 |        \ anchors.horizontalCenterOffset : real                           |
 +--------------------------------------------------------------------------+
+.. _sdk_qtquick_item_anchors.baselineOffset-prop:
 |        \ anchors.verticalCenterOffset : real                             |
 +--------------------------------------------------------------------------+
+.. _sdk_qtquick_item_anchors.alignWhenCentered-prop:
 |        \ anchors.baselineOffset : real                                   |
 +--------------------------------------------------------------------------+
 |        \ anchors.alignWhenCentered : bool                                |
@@ -495,15 +510,17 @@ Anchors provide a way to position an item by specifying its relationship
 with other items.
 
 Margins apply to top, bottom, left, right, and fill anchors. The
-`anchors.margins </sdk/apps/qml/QtQuick/Item#anchors.margins-prop>`__
-property can be used to set all of the various margins at once, to the
-same value. It will not override a specific margin that has been
-previously set; to clear an explicit margin set its value to
-``undefined``. Note that margins are anchor-specific and are not applied
-if an item does not use anchors.
+:ref:`anchors.margins <sdk_qtquick_item#anchors.margins-prop>` property can
+be used to set all of the various margins at once, to the same value. It
+will not override a specific margin that has been previously set; to
+clear an explicit margin set its value to ``undefined``. Note that
+margins are anchor-specific and are not applied if an item does not use
+anchors.
 
 Offsets apply for horizontal center, vertical center, and baseline
 anchors.
+
+.. _sdk_qtquick_item_image2                              Text anchored to Image, horizontally-prop:
 
 +--------------------------------------+--------------------------------------+
 | |image2|                             | Text anchored to Image, horizontally |
@@ -524,6 +541,7 @@ anchors.
 |                                      |             anchors.topMargin: 5     |
 |                                      |             // ...                   |
 |                                      |         }                            |
+.. _sdk_qtquick_item_image3                              Left of Text anchored to right of-prop:
 |                                      |     }                                |
 +--------------------------------------+--------------------------------------+
 | |image3|                             | Left of Text anchored to right of    |
@@ -545,28 +563,30 @@ anchors.
 |                                      |     }                                |
 +--------------------------------------+--------------------------------------+
 
-`anchors.fill </sdk/apps/qml/QtQuick/Item#anchors.fill-prop>`__ provides
-a convenient way for one item to have the same geometry as another item,
+:ref:`anchors.fill <sdk_qtquick_item#anchors.fill-prop>` provides a
+convenient way for one item to have the same geometry as another item,
 and is equivalent to connecting all four directional anchors.
 
 To clear an anchor value, set it to ``undefined``.
 
-`anchors.alignWhenCentered </sdk/apps/qml/QtQuick/Item#anchors.alignWhenCentered-prop>`__
+:ref:`anchors.alignWhenCentered <sdk_qtquick_item#anchors.alignWhenCentered-prop>`
 (default ``true``) forces centered anchors to align to a whole pixel; if
 the item being centered has an odd
-`width </sdk/apps/qml/QtQuick/Item#width-prop>`__ or
-`height </sdk/apps/qml/QtQuick/Item#height-prop>`__, the item will be
-positioned on a whole pixel rather than being placed on a half-pixel.
-This ensures the item is painted crisply. There are cases where this is
-not desirable, for example when rotating the item jitters may be
-apparent as the center is rounded.
+:ref:`width <sdk_qtquick_item#width-prop>` or
+:ref:`height <sdk_qtquick_item#height-prop>`, the item will be positioned
+on a whole pixel rather than being placed on a half-pixel. This ensures
+the item is painted crisply. There are cases where this is not
+desirable, for example when rotating the item jitters may be apparent as
+the center is rounded.
 
 **Note:** You can only anchor an item to siblings or a parent.
 
 For more information see `Anchor
-Layouts </sdk/apps/qml/QtQuick/qtquick-positioning-anchors#anchor-layout>`__.
+Layouts </sdk/apps/qml/QtQuick/qtquick-positioning-anchors/#anchor-layout>`_ .
 
 | 
+
+.. _sdk_qtquick_item_antialiasing-prop:
 
 +--------------------------------------------------------------------------+
 |        \ antialiasing : bool                                             |
@@ -575,12 +595,14 @@ Layouts </sdk/apps/qml/QtQuick/qtquick-positioning-anchors#anchor-layout>`__.
 Used by visual elements to decide if the item should use antialiasing or
 not. In some cases items with antialiasing require more memory and are
 potentially slower to render (see
-`Antialiasing </sdk/apps/qml/QtQuick/qtquick-visualcanvas-scenegraph-renderer#antialiasing>`__
+`Antialiasing </sdk/apps/qml/QtQuick/qtquick-visualcanvas-scenegraph-renderer/#antialiasing>`_ 
 for more details).
 
 The default is false, but may be overridden by derived elements.
 
 | 
+
+.. _sdk_qtquick_item_baselineOffset-prop:
 
 +--------------------------------------------------------------------------+
 |        \ baselineOffset : int                                            |
@@ -589,7 +611,7 @@ The default is false, but may be overridden by derived elements.
 Specifies the position of the item's baseline in local coordinates.
 
 The baseline of a
-`Text </sdk/apps/qml/QtQuick/qtquick-releasenotes#text>`__ item is the
+`Text </sdk/apps/qml/QtQuick/qtquick-releasenotes/#text>`_  item is the
 imaginary line on which the text sits. Controls containing text usually
 set their baseline to the baseline of their text.
 
@@ -597,8 +619,10 @@ For non-text items, a default baseline offset of 0 is used.
 
 | 
 
+.. _sdk_qtquick_item_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ children : list<`Item </sdk/apps/qml/QtQuick/Item/>`__>         |
+| :ref:` <>`\ children : list<`Item <sdk_qtquick_item>`>                    |
 +--------------------------------------------------------------------------+
 
 The children property contains the list of visual children of this item.
@@ -607,21 +631,25 @@ reference by name.
 
 It is not generally necessary to refer to these properties when adding
 child items or resources, as the default
-`data </sdk/apps/qml/QtQuick/Item#data-prop>`__ property will
-automatically assign child objects to the ``children`` and ``resources``
-properties as appropriate. See the
-`data </sdk/apps/qml/QtQuick/Item#data-prop>`__ documentation for
-details.
+:ref:`data <sdk_qtquick_item#data-prop>` property will automatically assign
+child objects to the ``children`` and ``resources`` properties as
+appropriate. See the :ref:`data <sdk_qtquick_item#data-prop>` documentation
+for details.
 
 | 
+
+.. _sdk_qtquick_item_**childrenRect group**-prop:
 
 +--------------------------------------------------------------------------+
 |        \ **childrenRect group**                                          |
 +==========================================================================+
+.. _sdk_qtquick_item_childrenRect.y-prop:
 |        \ childrenRect.x : real                                           |
 +--------------------------------------------------------------------------+
+.. _sdk_qtquick_item_childrenRect.width-prop:
 |        \ childrenRect.y : real                                           |
 +--------------------------------------------------------------------------+
+.. _sdk_qtquick_item_childrenRect.height-prop:
 |        \ childrenRect.width : real                                       |
 +--------------------------------------------------------------------------+
 |        \ childrenRect.height : real                                      |
@@ -635,6 +663,8 @@ an item's children in order to correctly size the item.
 
 | 
 
+.. _sdk_qtquick_item_clip-prop:
+
 +--------------------------------------------------------------------------+
 |        \ clip : bool                                                     |
 +--------------------------------------------------------------------------+
@@ -646,6 +676,8 @@ If clipping is enabled, an item will clip its own painting, as well as
 the painting of its children, to its bounding rectangle.
 
 | 
+
+.. _sdk_qtquick_item_data-prop:
 
 +--------------------------------------------------------------------------+
 |        \ [default] data : list<Object>                                   |
@@ -686,6 +718,8 @@ automatically assigned to this property.
 
 | 
 
+.. _sdk_qtquick_item_enabled-prop:
+
 +--------------------------------------------------------------------------+
 |        \ enabled : bool                                                  |
 +--------------------------------------------------------------------------+
@@ -700,21 +734,23 @@ child items are returned to ``true``, unless they have explicitly been
 set to ``false``.
 
 Setting this property to ``false`` automatically causes
-`activeFocus </sdk/apps/qml/QtQuick/Item#activeFocus-prop>`__ to be set
-to ``false``, and this item will longer receive keyboard events.
+:ref:`activeFocus <sdk_qtquick_item#activeFocus-prop>` to be set to
+``false``, and this item will longer receive keyboard events.
 
-**See also** `visible </sdk/apps/qml/QtQuick/Item#visible-prop>`__.
+**See also** :ref:`visible <sdk_qtquick_item#visible-prop>`.
 
 | 
+
+.. _sdk_qtquick_item_focus-prop:
 
 +--------------------------------------------------------------------------+
 |        \ focus : bool                                                    |
 +--------------------------------------------------------------------------+
 
 This property holds whether the item has focus within the enclosing
-`FocusScope </sdk/apps/qml/QtQuick/FocusScope/>`__. If true, this item
-will gain active focus when the enclosing
-`FocusScope </sdk/apps/qml/QtQuick/FocusScope/>`__ gains active focus.
+:ref:`FocusScope <sdk_qtquick_focusscope>`. If true, this item will gain
+active focus when the enclosing :ref:`FocusScope <sdk_qtquick_focusscope>`
+gains active focus.
 
 In the following example, ``input`` will be given active focus when
 ``scope`` gains active focus:
@@ -747,12 +783,13 @@ QML will give active focus to ``input`` on startup.
         }
     }
 
-**See also**
-`activeFocus </sdk/apps/qml/QtQuick/Item#activeFocus-prop>`__ and
+**See also** :ref:`activeFocus <sdk_qtquick_item#activeFocus-prop>` and
 `Keyboard Focus in Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-input-focus/>`__.
+Quick </sdk/apps/qml/QtQuick/qtquick-input-focus/>`_ .
 
 | 
+
+.. _sdk_qtquick_item_height-prop:
 
 +--------------------------------------------------------------------------+
 |        \ height : real                                                   |
@@ -761,7 +798,7 @@ Quick </sdk/apps/qml/QtQuick/qtquick-input-focus/>`__.
 Defines the item's position and size.
 
 The (x,y) position is relative to the
-`parent </sdk/apps/qml/QtQuick/Item#parent-prop>`__.
+:ref:`parent <sdk_qtquick_item#parent-prop>`.
 
 .. code:: qml
 
@@ -769,13 +806,15 @@ The (x,y) position is relative to the
 
 | 
 
+.. _sdk_qtquick_item_implicitHeight-prop:
+
 +--------------------------------------------------------------------------+
 |        \ implicitHeight : real                                           |
 +--------------------------------------------------------------------------+
 
 Defines the natural width or height of the Item if no
-`width </sdk/apps/qml/QtQuick/Item#width-prop>`__ or
-`height </sdk/apps/qml/QtQuick/Item#height-prop>`__ is specified.
+:ref:`width <sdk_qtquick_item#width-prop>` or
+:ref:`height <sdk_qtquick_item#height-prop>` is specified.
 
 The default implicit size for most items is 0x0, however some items have
 an inherent implicit size which cannot be overridden, e.g. Image, Text.
@@ -801,21 +840,22 @@ preferred size based on their content, for example:
         }
     }
 
-**Note**: using
-`implicitWidth </sdk/apps/qml/QtQuick/Item#implicitWidth-prop>`__ of
-Text or `TextEdit </sdk/apps/qml/QtQuick/TextEdit/>`__ and setting the
-width explicitly incurs a performance penalty as the text must be laid
-out twice.
+**Note**: using :ref:`implicitWidth <sdk_qtquick_item#implicitWidth-prop>`
+of Text or :ref:`TextEdit <sdk_qtquick_textedit>` and setting the width
+explicitly incurs a performance penalty as the text must be laid out
+twice.
 
 | 
+
+.. _sdk_qtquick_item_implicitWidth-prop:
 
 +--------------------------------------------------------------------------+
 |        \ implicitWidth : real                                            |
 +--------------------------------------------------------------------------+
 
 Defines the natural width or height of the Item if no
-`width </sdk/apps/qml/QtQuick/Item#width-prop>`__ or
-`height </sdk/apps/qml/QtQuick/Item#height-prop>`__ is specified.
+:ref:`width <sdk_qtquick_item#width-prop>` or
+:ref:`height <sdk_qtquick_item#height-prop>` is specified.
 
 The default implicit size for most items is 0x0, however some items have
 an inherent implicit size which cannot be overridden, e.g. Image, Text.
@@ -842,11 +882,12 @@ preferred size based on their content, for example:
     }
 
 **Note**: using implicitWidth of Text or
-`TextEdit </sdk/apps/qml/QtQuick/TextEdit/>`__ and setting the width
-explicitly incurs a performance penalty as the text must be laid out
-twice.
+:ref:`TextEdit <sdk_qtquick_textedit>` and setting the width explicitly
+incurs a performance penalty as the text must be laid out twice.
 
 | 
+
+.. _sdk_qtquick_item_layer.effect-prop:
 
 +--------------------------------------------------------------------------+
 |        \ layer.effect : Component                                        |
@@ -854,17 +895,18 @@ twice.
 
 Holds the effect that is applied to this layer.
 
-The effect is typically a
-`ShaderEffect </sdk/apps/qml/QtQuick/ShaderEffect/>`__ component,
-although any `Item </sdk/apps/qml/QtQuick/Item/>`__ component can be
+The effect is typically a :ref:`ShaderEffect <sdk_qtquick_shadereffect>`
+component, although any :ref:`Item <sdk_qtquick_item>` component can be
 assigned. The effect should have a source texture property with a name
 matching
-`layer.samplerName </sdk/apps/qml/QtQuick/Item#layer.samplerName-prop>`__.
+:ref:`layer.samplerName <sdk_qtquick_item#layer.samplerName-prop>`.
 
 **See also**
-`layer.samplerName </sdk/apps/qml/QtQuick/Item#layer.samplerName-prop>`__.
+:ref:`layer.samplerName <sdk_qtquick_item#layer.samplerName-prop>`.
 
 | 
+
+.. _sdk_qtquick_item_layer.enabled-prop:
 
 +--------------------------------------------------------------------------+
 |        \ layer.enabled : bool                                            |
@@ -882,6 +924,8 @@ disabled.
 
 | 
 
+.. _sdk_qtquick_item_layer.format-prop:
+
 +--------------------------------------------------------------------------+
 |        \ layer.format : enumeration                                      |
 +--------------------------------------------------------------------------+
@@ -891,21 +935,20 @@ Modifying this property makes most sense when the *layer.effect* is also
 specified. Depending on the OpenGL implementation, this property might
 allow you to save some texture memory.
 
--  `ShaderEffectSource </sdk/apps/qml/QtQuick/ShaderEffectSource/>`__.Alpha
-   - GL\_ALPHA;
--  `ShaderEffectSource </sdk/apps/qml/QtQuick/ShaderEffectSource/>`__.RGB
-   - GL\_RGB
--  `ShaderEffectSource </sdk/apps/qml/QtQuick/ShaderEffectSource/>`__.RGBA
-   - GL\_RGBA
+-  :ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>`.Alpha -
+   GL\_ALPHA;
+-  :ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>`.RGB - GL\_RGB
+-  :ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>`.RGBA -
+   GL\_RGBA
 
-**Note:**
-`ShaderEffectSource </sdk/apps/qml/QtQuick/ShaderEffectSource/>`__.RGB
-and
-`ShaderEffectSource </sdk/apps/qml/QtQuick/ShaderEffectSource/>`__.Alpha
-should be used with caution, as support for these formats in the
-underlying hardare and driver is often not present.
+**Note:** :ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>`.RGB
+and :ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>`.Alpha should
+be used with caution, as support for these formats in the underlying
+hardare and driver is often not present.
 
 | 
+
+.. _sdk_qtquick_item_layer.mipmap-prop:
 
 +--------------------------------------------------------------------------+
 |        \ layer.mipmap : bool                                             |
@@ -918,6 +961,8 @@ non-power-of-two textures.
 
 | 
 
+.. _sdk_qtquick_item_layer.samplerName-prop:
+
 +--------------------------------------------------------------------------+
 |        \ layer.samplerName : string                                      |
 +--------------------------------------------------------------------------+
@@ -928,11 +973,12 @@ This value must match the name of the effect's source texture property
 so that the Item can pass the layer's offscreen surface to the effect
 correctly.
 
-**See also**
-`layer.effect </sdk/apps/qml/QtQuick/Item#layer.effect-prop>`__ and
-`ShaderEffect </sdk/apps/qml/QtQuick/ShaderEffect/>`__.
+**See also** :ref:`layer.effect <sdk_qtquick_item#layer.effect-prop>` and
+:ref:`ShaderEffect <sdk_qtquick_shadereffect>`.
 
 | 
+
+.. _sdk_qtquick_item_layer.smooth-prop:
 
 +--------------------------------------------------------------------------+
 |        \ layer.smooth : bool                                             |
@@ -941,6 +987,8 @@ correctly.
 Holds whether the layer is smoothly transformed.
 
 | 
+
+.. _sdk_qtquick_item_layer.sourceRect-prop:
 
 +--------------------------------------------------------------------------+
 |        \ layer.sourceRect : rect                                         |
@@ -952,6 +1000,8 @@ item itself. If the rectangle is null, which is the default, then the
 whole item is rendered to the texture.
 
 | 
+
+.. _sdk_qtquick_item_layer.textureSize-prop:
 
 +--------------------------------------------------------------------------+
 |        \ layer.textureSize : size                                        |
@@ -966,6 +1016,8 @@ requested size.
 
 | 
 
+.. _sdk_qtquick_item_layer.wrapMode-prop:
+
 +--------------------------------------------------------------------------+
 |        \ layer.wrapMode : enumeration                                    |
 +--------------------------------------------------------------------------+
@@ -974,19 +1026,21 @@ This property defines the OpenGL wrap modes associated with the texture.
 Modifying this property makes most sense when the *layer.effect* is
 specified.
 
--  `ShaderEffectSource </sdk/apps/qml/QtQuick/ShaderEffectSource/>`__.ClampToEdge
-   - GL\_CLAMP\_TO\_EDGE both horizontally and vertically
--  `ShaderEffectSource </sdk/apps/qml/QtQuick/ShaderEffectSource/>`__.RepeatHorizontally
+-  :ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>`.ClampToEdge -
+   GL\_CLAMP\_TO\_EDGE both horizontally and vertically
+-  :ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>`.RepeatHorizontally
    - GL\_REPEAT horizontally, GL\_CLAMP\_TO\_EDGE vertically
--  `ShaderEffectSource </sdk/apps/qml/QtQuick/ShaderEffectSource/>`__.RepeatVertically
+-  :ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>`.RepeatVertically
    - GL\_CLAMP\_TO\_EDGE horizontally, GL\_REPEAT vertically
--  `ShaderEffectSource </sdk/apps/qml/QtQuick/ShaderEffectSource/>`__.Repeat
-   - GL\_REPEAT both horizontally and vertically
+-  :ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>`.Repeat -
+   GL\_REPEAT both horizontally and vertically
 
 **Note:** Some OpenGL ES 2 implementations do not support the GL\_REPEAT
 wrap mode with non-power-of-two textures.
 
 | 
+
+.. _sdk_qtquick_item_opacity-prop:
 
 +--------------------------------------------------------------------------+
 |        \ opacity : real                                                  |
@@ -1003,6 +1057,8 @@ red rectangle has specified an opacity of 0.5, which affects the opacity
 of its blue child rectangle even though the child has not specified an
 opacity.
 
+.. _sdk_qtquick_item_image4                              .. code-prop:
+
 +--------------------------------------+--------------------------------------+
 | |image4|                             | .. code:: qml                        |
 |                                      |                                      |
@@ -1016,6 +1072,7 @@ opacity.
 |                                      |  100; height: 100                    |
 |                                      |             }                        |
 |                                      |         }                            |
+.. _sdk_qtquick_item_image5                              .. code-prop:
 |                                      |     }                                |
 +--------------------------------------+--------------------------------------+
 | |image5|                             | .. code:: qml                        |
@@ -1036,18 +1093,19 @@ opacity.
 
 Changing an item's opacity does not affect whether the item receives
 user input events. (In contrast, setting
-`visible </sdk/apps/qml/QtQuick/Item#visible-prop>`__ property to
-``false`` stops mouse events, and setting the
-`enabled </sdk/apps/qml/QtQuick/Item#enabled-prop>`__ property to
-``false`` stops mouse and keyboard events, and also removes active focus
-from the item.)
+:ref:`visible <sdk_qtquick_item#visible-prop>` property to ``false`` stops
+mouse events, and setting the
+:ref:`enabled <sdk_qtquick_item#enabled-prop>` property to ``false`` stops
+mouse and keyboard events, and also removes active focus from the item.)
 
-**See also** `visible </sdk/apps/qml/QtQuick/Item#visible-prop>`__.
+**See also** :ref:`visible <sdk_qtquick_item#visible-prop>`.
 
 | 
 
+.. _sdk_qtquick_item_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ parent : `Item </sdk/apps/qml/QtQuick/Item/>`__                 |
+| :ref:` <>`\ parent : `Item <sdk_qtquick_item>`                         |
 +--------------------------------------------------------------------------+
 
 This property holds the visual parent of the item.
@@ -1055,10 +1113,12 @@ This property holds the visual parent of the item.
 **Note:** The concept of the *visual parent* differs from that of the
 *QObject parent*. An item's visual parent may not necessarily be the
 same as its object parent. See `Concepts - Visual Parent in Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-visualcanvas-visualparent/>`__ for
+Quick </sdk/apps/qml/QtQuick/qtquick-visualcanvas-visualparent/>`_  for
 more details.
 
 | 
+
+.. _sdk_qtquick_item_resources-prop:
 
 +--------------------------------------------------------------------------+
 |        \ resources : list<Object>                                        |
@@ -1070,23 +1130,25 @@ reference by name.
 
 It is not generally necessary to refer to these properties when adding
 child items or resources, as the default
-`data </sdk/apps/qml/QtQuick/Item#data-prop>`__ property will
-automatically assign child objects to the ``children`` and ``resources``
-properties as appropriate. See the
-`data </sdk/apps/qml/QtQuick/Item#data-prop>`__ documentation for
-details.
+:ref:`data <sdk_qtquick_item#data-prop>` property will automatically assign
+child objects to the ``children`` and ``resources`` properties as
+appropriate. See the :ref:`data <sdk_qtquick_item#data-prop>` documentation
+for details.
 
 | 
+
+.. _sdk_qtquick_item_rotation-prop:
 
 +--------------------------------------------------------------------------+
 |        \ rotation : real                                                 |
 +--------------------------------------------------------------------------+
 
 This property holds the rotation of the item in degrees clockwise around
-its
-`transformOrigin </sdk/apps/qml/QtQuick/Item#transformOrigin-prop>`__.
+its :ref:`transformOrigin <sdk_qtquick_item#transformOrigin-prop>`.
 
 The default value is 0 degrees (that is, no rotation).
+
+.. _sdk_qtquick_item_image6                              .. code-prop:
 
 +--------------------------------------+--------------------------------------+
 | |image6|                             | .. code:: qml                        |
@@ -1103,10 +1165,12 @@ The default value is 0 degrees (that is, no rotation).
 |                                      |     }                                |
 +--------------------------------------+--------------------------------------+
 
-**See also** `transform </sdk/apps/qml/QtQuick/Item#transform-prop>`__
-and `Rotation </sdk/apps/qml/QtQuick/Rotation/>`__.
+**See also** :ref:`transform <sdk_qtquick_item#transform-prop>` and
+:ref:`Rotation <sdk_qtquick_rotation>`.
 
 | 
+
+.. _sdk_qtquick_item_scale-prop:
 
 +--------------------------------------------------------------------------+
 |        \ scale : real                                                    |
@@ -1121,7 +1185,9 @@ negative scale causes the item to be mirrored when rendered.
 The default value is 1.0.
 
 Scaling is applied from the
-`transformOrigin </sdk/apps/qml/QtQuick/Item#transformOrigin-prop>`__.
+:ref:`transformOrigin <sdk_qtquick_item#transformOrigin-prop>`.
+
+.. _sdk_qtquick_item_image7                              .. code-prop:
 
 +--------------------------------------+--------------------------------------+
 | |image7|                             | .. code:: qml                        |
@@ -1143,10 +1209,12 @@ Scaling is applied from the
 |                                      |     }                                |
 +--------------------------------------+--------------------------------------+
 
-**See also** `transform </sdk/apps/qml/QtQuick/Item#transform-prop>`__
-and `Scale </sdk/apps/qml/QtQuick/Scale/>`__.
+**See also** :ref:`transform <sdk_qtquick_item#transform-prop>` and
+:ref:`Scale <sdk_qtquick_scale>`.
 
 | 
+
+.. _sdk_qtquick_item_smooth-prop:
 
 +--------------------------------------------------------------------------+
 |        \ smooth : bool                                                   |
@@ -1162,6 +1230,8 @@ By default is true.
 
 | 
 
+.. _sdk_qtquick_item_state-prop:
+
 +--------------------------------------------------------------------------+
 |        \ state : string                                                  |
 +--------------------------------------------------------------------------+
@@ -1174,24 +1244,25 @@ an item to its default state by setting this property to an empty
 string.
 
 **See also** `Qt Quick
-States </sdk/apps/qml/QtQuick/qtquick-statesanimations-states/>`__.
+States </sdk/apps/qml/QtQuick/qtquick-statesanimations-states/>`_ .
 
 | 
 
+.. _sdk_qtquick_item_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ states : list<`State </sdk/apps/qml/QtQuick/State/>`__>         |
+| :ref:` <>`\ states : list<`State <sdk_qtquick_state>`>                    |
 +--------------------------------------------------------------------------+
 
 This property holds the list of possible states for this item. To change
-the state of this item, set the
-`state </sdk/apps/qml/QtQuick/Item#state-prop>`__ property to one of
-these states, or set the
-`state </sdk/apps/qml/QtQuick/Item#state-prop>`__ property to an empty
-string to revert the item to its default state.
+the state of this item, set the :ref:`state <sdk_qtquick_item#state-prop>`
+property to one of these states, or set the
+:ref:`state <sdk_qtquick_item#state-prop>` property to an empty string to
+revert the item to its default state.
 
-This property is specified as a list of
-`State </sdk/apps/qml/QtQuick/State/>`__ objects. For example, below is
-an item with "red\_color" and "blue\_color" states:
+This property is specified as a list of :ref:`State <sdk_qtquick_state>`
+objects. For example, below is an item with "red\_color" and
+"blue\_color" states:
 
 .. code:: qml
 
@@ -1212,27 +1283,29 @@ an item with "red\_color" and "blue\_color" states:
     }
 
 See `Qt Quick
-States </sdk/apps/qml/QtQuick/qtquick-statesanimations-states/>`__ and
+States </sdk/apps/qml/QtQuick/qtquick-statesanimations-states/>`_  and
 `Animation and Transitions in Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`__
+Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`_ 
 for more details on using states and transitions.
 
 **See also**
-`transitions </sdk/apps/qml/QtQuick/qtquick-statesanimations-topic#transitions>`__.
+`transitions </sdk/apps/qml/QtQuick/qtquick-statesanimations-topic/#transitions>`_ .
 
 | 
 
+.. _sdk_qtquick_item_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ transform :                                                     |
-| list<`Transform </sdk/apps/qml/QtQuick/Transform/>`__>                   |
+| :ref:` <>`\ transform : list<`Transform <sdk_qtquick_transform>`>         |
 +--------------------------------------------------------------------------+
 
 This property holds the list of transformations to apply.
 
-For more information see
-`Transform </sdk/apps/qml/QtQuick/Transform/>`__.
+For more information see :ref:`Transform <sdk_qtquick_transform>`.
 
 | 
+
+.. _sdk_qtquick_item_transformOrigin-prop:
 
 +--------------------------------------------------------------------------+
 |        \ transformOrigin : enumeration                                   |
@@ -1257,23 +1330,23 @@ This example rotates an image around its bottom-right corner.
     }
 
 To set an arbitrary transform origin point use the
-`Scale </sdk/apps/qml/QtQuick/Scale/>`__ or
-`Rotation </sdk/apps/qml/QtQuick/Rotation/>`__ transform types with
-`transform </sdk/apps/qml/QtQuick/Item#transform-prop>`__.
+:ref:`Scale <sdk_qtquick_scale>` or `Rotation <sdk_qtquick_rotation>`
+transform types with :ref:`transform <sdk_qtquick_item#transform-prop>`.
 
 | 
 
+.. _sdk_qtquick_item_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ transitions :                                                   |
-| list<`Transition </sdk/apps/qml/QtQuick/Transition/>`__>                 |
+| :ref:` <>`\ transitions : list<`Transition <sdk_qtquick_transition>`>     |
 +--------------------------------------------------------------------------+
 
 This property holds the list of transitions for this item. These define
 the transitions to be applied to the item whenever it changes its
-`state </sdk/apps/qml/QtQuick/Item#state-prop>`__.
+:ref:`state <sdk_qtquick_item#state-prop>`.
 
 This property is specified as a list of
-`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch#transition>`__
+`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch/#transition>`_ 
 objects. For example:
 
 .. code:: qml
@@ -1291,15 +1364,17 @@ objects. For example:
     }
 
 See `Qt Quick
-States </sdk/apps/qml/QtQuick/qtquick-statesanimations-states/>`__ and
+States </sdk/apps/qml/QtQuick/qtquick-statesanimations-states/>`_  and
 `Animation and Transitions in Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`__
+Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`_ 
 for more details on using states and transitions.
 
 **See also**
-`states </sdk/apps/qml/QtQuick/qtquick-statesanimations-topic#states>`__.
+`states </sdk/apps/qml/QtQuick/qtquick-statesanimations-topic/#states>`_ .
 
 | 
+
+.. _sdk_qtquick_item_visible-prop:
 
 +--------------------------------------------------------------------------+
 |        \ visible : bool                                                  |
@@ -1317,31 +1392,32 @@ set to ``false``.
 (Because of this flow-on behavior, using the ``visible`` property may
 not have the intended effect if a property binding should only respond
 to explicit property changes. In such cases it may be better to use the
-`opacity </sdk/apps/qml/QtQuick/qtquick-effects-topic#opacity>`__
+`opacity </sdk/apps/qml/QtQuick/qtquick-effects-topic/#opacity>`_ 
 property instead.)
 
 If this property is set to ``false``, the item will no longer receive
 mouse events, but will continue to receive key events and will retain
-the keyboard `focus </sdk/apps/qml/QtQuick/Item#focus-prop>`__ if it has
-been set. (In contrast, setting the
-`enabled </sdk/apps/qml/QtQuick/Item#enabled-prop>`__ property to
-``false`` stops both mouse and keyboard events, and also removes focus
-from the item.)
+the keyboard :ref:`focus <sdk_qtquick_item#focus-prop>` if it has been set.
+(In contrast, setting the :ref:`enabled <sdk_qtquick_item#enabled-prop>`
+property to ``false`` stops both mouse and keyboard events, and also
+removes focus from the item.)
 
 **Note:** This property's value is only affected by changes to this
 property or the parent's ``visible`` property. It does not change, for
 example, if this item moves off-screen, or if the
-`opacity </sdk/apps/qml/QtQuick/qtquick-effects-topic#opacity>`__
+`opacity </sdk/apps/qml/QtQuick/qtquick-effects-topic/#opacity>`_ 
 changes to 0.
 
 **See also**
-`opacity </sdk/apps/qml/QtQuick/qtquick-effects-topic#opacity>`__ and
-`enabled </sdk/apps/qml/QtQuick/Item#enabled-prop>`__.
+`opacity </sdk/apps/qml/QtQuick/qtquick-effects-topic/#opacity>`_  and
+:ref:`enabled <sdk_qtquick_item#enabled-prop>`.
 
 | 
 
+.. _sdk_qtquick_item_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ visibleChildren : list<`Item </sdk/apps/qml/QtQuick/Item/>`__>  |
+| :ref:` <>`\ visibleChildren : list<`Item <sdk_qtquick_item>`>             |
 +--------------------------------------------------------------------------+
 
 This read-only property lists all of the item's children that are
@@ -1351,6 +1427,8 @@ another grandparent changed.
 
 | 
 
+.. _sdk_qtquick_item_width-prop:
+
 +--------------------------------------------------------------------------+
 |        \ width : real                                                    |
 +--------------------------------------------------------------------------+
@@ -1358,13 +1436,15 @@ another grandparent changed.
 Defines the item's position and size.
 
 The (x,y) position is relative to the
-`parent </sdk/apps/qml/QtQuick/Item#parent-prop>`__.
+:ref:`parent <sdk_qtquick_item#parent-prop>`.
 
 .. code:: qml
 
     Item { x: 100; y: 100; width: 100; height: 100 }
 
 | 
+
+.. _sdk_qtquick_item_x-prop:
 
 +--------------------------------------------------------------------------+
 |        \ x : real                                                        |
@@ -1373,13 +1453,15 @@ The (x,y) position is relative to the
 Defines the item's position and size.
 
 The (x,y) position is relative to the
-`parent </sdk/apps/qml/QtQuick/Item#parent-prop>`__.
+:ref:`parent <sdk_qtquick_item#parent-prop>`.
 
 .. code:: qml
 
     Item { x: 100; y: 100; width: 100; height: 100 }
 
 | 
+
+.. _sdk_qtquick_item_y-prop:
 
 +--------------------------------------------------------------------------+
 |        \ y : real                                                        |
@@ -1388,13 +1470,15 @@ The (x,y) position is relative to the
 Defines the item's position and size.
 
 The (x,y) position is relative to the
-`parent </sdk/apps/qml/QtQuick/Item#parent-prop>`__.
+:ref:`parent <sdk_qtquick_item#parent-prop>`.
 
 .. code:: qml
 
     Item { x: 100; y: 100; width: 100; height: 100 }
 
 | 
+
+.. _sdk_qtquick_item_z-prop:
 
 +--------------------------------------------------------------------------+
 |        \ z : real                                                        |
@@ -1409,6 +1493,8 @@ bottom up in the order they appear. Items with a negative stacking value
 are drawn under their parent's content.
 
 The following example shows the various effects of stacking order.
+
+.. _sdk_qtquick_item_image9                              Same ``z`` - later children above-prop:
 
 +--------------------------------------+--------------------------------------+
 | |image9|                             | Same ``z`` - later children above    |
@@ -1425,6 +1511,7 @@ The following example shows the various effects of stacking order.
 |                                      |             x: 50; y: 50; width: 100 |
 |                                      | ; height: 100                        |
 |                                      |         }                            |
+.. _sdk_qtquick_item_image10                             Higher ``z`` on top-method:
 |                                      |     }                                |
 +--------------------------------------+--------------------------------------+
 | |image10|                            | Higher ``z`` on top:                 |
@@ -1441,6 +1528,7 @@ The following example shows the various effects of stacking order.
 |                                      |             x: 50; y: 50; width: 100 |
 |                                      | ; height: 100                        |
 |                                      |         }                            |
+.. _sdk_qtquick_item_image11                             Same ``z`` - children above parents-method:
 |                                      |     }                                |
 +--------------------------------------+--------------------------------------+
 | |image11|                            | Same ``z`` - children above parents: |
@@ -1456,6 +1544,7 @@ The following example shows the various effects of stacking order.
 |                                      |  100; height: 100                    |
 |                                      |             }                        |
 |                                      |         }                            |
+.. _sdk_qtquick_item_image12                             Lower ``z`` below-method:
 |                                      |     }                                |
 +--------------------------------------+--------------------------------------+
 | |image12|                            | Lower ``z`` below:                   |
@@ -1480,6 +1569,8 @@ The following example shows the various effects of stacking order.
 Method Documentation
 --------------------
 
+.. _sdk_qtquick_item_childAt-method:
+
 +--------------------------------------------------------------------------+
 |        \ childAt(real *x*, real *y*)                                     |
 +--------------------------------------------------------------------------+
@@ -1491,6 +1582,8 @@ Returns ``null`` if there is no such item.
 
 | 
 
+.. _sdk_qtquick_item_object contains-method:
+
 +--------------------------------------------------------------------------+
 |        \ object contains(point *point*)                                  |
 +--------------------------------------------------------------------------+
@@ -1500,6 +1593,8 @@ coordinates; returns false otherwise.
 
 | 
 
+.. _sdk_qtquick_item_forceActiveFocus-method:
+
 +--------------------------------------------------------------------------+
 |        \ forceActiveFocus(Qt::FocusReason *reason*)                      |
 +--------------------------------------------------------------------------+
@@ -1507,17 +1602,17 @@ coordinates; returns false otherwise.
 Forces active focus on the item with the given *reason*.
 
 This method sets focus on the item and ensures that all ancestor
-`FocusScope </sdk/apps/qml/QtQuick/FocusScope/>`__ objects in the object
-hierarchy are also given
-`focus </sdk/apps/qml/QtQuick/Item#focus-prop>`__.
+:ref:`FocusScope <sdk_qtquick_focusscope>` objects in the object hierarchy
+are also given :ref:`focus <sdk_qtquick_item#focus-prop>`.
 
 This QML method was introduced in Qt 5.1.
 
-**See also**
-`activeFocus </sdk/apps/qml/QtQuick/Item#activeFocus-prop>`__ and
+**See also** :ref:`activeFocus <sdk_qtquick_item#activeFocus-prop>` and
 Qt::FocusReason.
 
 | 
+
+.. _sdk_qtquick_item_forceActiveFocus-method:
 
 +--------------------------------------------------------------------------+
 |        \ forceActiveFocus()                                              |
@@ -1528,18 +1623,18 @@ This is an overloaded function.
 Forces active focus on the item.
 
 This method sets focus on the item and ensures that all ancestor
-`FocusScope </sdk/apps/qml/QtQuick/FocusScope/>`__ objects in the object
-hierarchy are also given
-`focus </sdk/apps/qml/QtQuick/Item#focus-prop>`__.
+:ref:`FocusScope <sdk_qtquick_focusscope>` objects in the object hierarchy
+are also given :ref:`focus <sdk_qtquick_item#focus-prop>`.
 
 The reason for the focus change will be *Qt::OtherFocusReason*. Use the
 overloaded method to specify the focus reason to enable better handling
 of the focus change.
 
-**See also**
-`activeFocus </sdk/apps/qml/QtQuick/Item#activeFocus-prop>`__.
+**See also** :ref:`activeFocus <sdk_qtquick_item#activeFocus-prop>`.
 
 | 
+
+.. _sdk_qtquick_item_bool grabToImage-method:
 
 +--------------------------------------------------------------------------+
 |        \ bool grabToImage(callback, targetSize)                          |
@@ -1591,14 +1686,16 @@ another image element.
 **Note:** This function will render the item to an offscreen surface and
 copy that surface from the GPU's memory into the CPU's memory, which can
 be quite costly. For "live" preview, use
-`layers </sdk/apps/qml/QtQuick/Item#layer.enabled-prop>`__ or
-`ShaderEffectSource </sdk/apps/qml/QtQuick/ShaderEffectSource/>`__.
+:ref:`layers <sdk_qtquick_item#layer.enabled-prop>` or
+:ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>`.
 
 | 
 
+.. _sdk_qtquick_item_-method:
+
 +--------------------------------------------------------------------------+
-|        \ object mapFromItem(`Item </sdk/apps/qml/QtQuick/Item/>`__       |
-| *item*, real *x*, real *y*, real *width*, real *height*)                 |
+| :ref:` <>`\ object mapFromItem(`Item <sdk_qtquick_item>` *item*, real     |
+| *x*, real *y*, real *width*, real *height*)                              |
 +--------------------------------------------------------------------------+
 
 Maps the point (*x*, *y*) or rect (*x*, *y*, *width*, *height*), which
@@ -1611,9 +1708,11 @@ coordinate system of the root QML view.
 
 | 
 
+.. _sdk_qtquick_item_-method:
+
 +--------------------------------------------------------------------------+
-|        \ object mapFromItem(`Item </sdk/apps/qml/QtQuick/Item/>`__       |
-| *item*, real *x*, real *y*)                                              |
+| :ref:` <>`\ object mapFromItem(`Item <sdk_qtquick_item>` *item*, real     |
+| *x*, real *y*)                                                           |
 +--------------------------------------------------------------------------+
 
 Maps the point (*x*, *y*) or rect (*x*, *y*, *width*, *height*), which
@@ -1626,9 +1725,28 @@ coordinate system of the root QML view.
 
 | 
 
+.. _sdk_qtquick_item_-method:
+
 +--------------------------------------------------------------------------+
-|        \ object mapToItem(`Item </sdk/apps/qml/QtQuick/Item/>`__ *item*, |
-| real *x*, real *y*, real *width*, real *height*)                         |
+| :ref:` <>`\ object mapToItem(`Item <sdk_qtquick_item>` *item*, real *x*,  |
+| real *y*, real *width*, real *height*)                                   |
++--------------------------------------------------------------------------+
+
+Maps the point (*x*, *y*) or rect (*x*, *y*, *width*, *height*), which
+is in this item's coordinate system, to *item*'s coordinate system, and
+returns an object with ``x`` and ``y`` (and optionally ``width`` and
+``height``) properties matching the mapped coordinate.
+
+If *item* is a ``null`` value, this maps the point or rect to the
+coordinate system of the root QML view.
+
+| 
+
+.. _sdk_qtquick_item_-method:
+
++--------------------------------------------------------------------------+
+| :ref:` <>`\ object mapToItem(`Item <sdk_qtquick_item>` *item*, real *x*,  |
+| real *y*)                                                                |
 +--------------------------------------------------------------------------+
 
 Maps the point (*x*, *y*) or rect (*x*, *y*, *width*, *height*), which
@@ -1641,20 +1759,7 @@ coordinate system of the root QML view.
 
 | 
 
-+--------------------------------------------------------------------------+
-|        \ object mapToItem(`Item </sdk/apps/qml/QtQuick/Item/>`__ *item*, |
-| real *x*, real *y*)                                                      |
-+--------------------------------------------------------------------------+
-
-Maps the point (*x*, *y*) or rect (*x*, *y*, *width*, *height*), which
-is in this item's coordinate system, to *item*'s coordinate system, and
-returns an object with ``x`` and ``y`` (and optionally ``width`` and
-``height``) properties matching the mapped coordinate.
-
-If *item* is a ``null`` value, this maps the point or rect to the
-coordinate system of the root QML view.
-
-| 
+.. _sdk_qtquick_item_nextItemInFocusChain-method:
 
 +--------------------------------------------------------------------------+
 |        \ nextItemInFocusChain(bool *forward*)                            |
@@ -1669,17 +1774,17 @@ This QML method was introduced in Qt 5.1.
 
 | 
 
-.. |image0| image:: /media/sdk/apps/qml/QtQuick/Item/images/qml-blending-nonlayered.png
-.. |image1| image:: /media/sdk/apps/qml/QtQuick/Item/images/qml-blending-layered.png
-.. |image2| image:: /media/sdk/apps/qml/QtQuick/Item/images/declarative-anchors_example.png
-.. |image3| image:: /media/sdk/apps/qml/QtQuick/Item/images/declarative-anchors_example2.png
-.. |image4| image:: /media/sdk/apps/qml/QtQuick/Item/images/declarative-item_opacity1.png
-.. |image5| image:: /media/sdk/apps/qml/QtQuick/Item/images/declarative-item_opacity2.png
-.. |image6| image:: /media/sdk/apps/qml/QtQuick/Item/images/declarative-rotation.png
-.. |image7| image:: /media/sdk/apps/qml/QtQuick/Item/images/declarative-scale.png
-.. |image8| image:: /media/sdk/apps/qml/QtQuick/Item/images/declarative-transformorigin.png
-.. |image9| image:: /media/sdk/apps/qml/QtQuick/Item/images/declarative-item_stacking1.png
-.. |image10| image:: /media/sdk/apps/qml/QtQuick/Item/images/declarative-item_stacking2.png
-.. |image11| image:: /media/sdk/apps/qml/QtQuick/Item/images/declarative-item_stacking3.png
-.. |image12| image:: /media/sdk/apps/qml/QtQuick/Item/images/declarative-item_stacking4.png
+.. |image0| image:: /mediasdk_qtquick_itemimages/qml-blending-nonlayered.png
+.. |image1| image:: /mediasdk_qtquick_itemimages/qml-blending-layered.png
+.. |image2| image:: /mediasdk_qtquick_itemimages/declarative-anchors_example.png
+.. |image3| image:: /mediasdk_qtquick_itemimages/declarative-anchors_example2.png
+.. |image4| image:: /mediasdk_qtquick_itemimages/declarative-item_opacity1.png
+.. |image5| image:: /mediasdk_qtquick_itemimages/declarative-item_opacity2.png
+.. |image6| image:: /mediasdk_qtquick_itemimages/declarative-rotation.png
+.. |image7| image:: /mediasdk_qtquick_itemimages/declarative-scale.png
+.. |image8| image:: /mediasdk_qtquick_itemimages/declarative-transformorigin.png
+.. |image9| image:: /mediasdk_qtquick_itemimages/declarative-item_stacking1.png
+.. |image10| image:: /mediasdk_qtquick_itemimages/declarative-item_stacking2.png
+.. |image11| image:: /mediasdk_qtquick_itemimages/declarative-item_stacking3.png
+.. |image12| image:: /mediasdk_qtquick_itemimages/declarative-item_stacking4.png
 

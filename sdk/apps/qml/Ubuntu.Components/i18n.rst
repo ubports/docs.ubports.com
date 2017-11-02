@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_i18n:
+Ubuntu.Components i18n
+======================
+
 i18n is a context property that provides internationalization support.
 
 +---------------------+--------------------------------+
@@ -7,40 +11,38 @@ i18n is a context property that provides internationalization support.
 Properties
 ----------
 
--  ****`domain </sdk/apps/qml/Ubuntu.Components/i18n#domain-prop>`__****
-   : string
--  ****`language </sdk/apps/qml/Ubuntu.Components/i18n#language-prop>`__****
-   : string
+-  :ref:`domain <sdk_ubuntu_components_i18n_domain-prop>` : string
+-  :ref:`language <sdk_ubuntu_components_i18n_language-prop>` :
+   string
 
 Methods
 -------
 
 -  string
-   ****`ctr </sdk/apps/qml/Ubuntu.Components/i18n#ctr-method>`__****\ (string
+   **:ref:`ctr <sdk_ubuntu_components_i18n#ctr-method>`**\ (string
    *context*, string *text*)
 -  string
-   ****`dctr </sdk/apps/qml/Ubuntu.Components/i18n#dctr-method>`__****\ (string
+   **:ref:`dctr <sdk_ubuntu_components_i18n#dctr-method>`**\ (string
    *domain*, string *context*, string *text*)
 -  string
-   ****`dtr </sdk/apps/qml/Ubuntu.Components/i18n#dtr-method-2>`__****\ (string
+   **:ref:`dtr <sdk_ubuntu_components_i18n#dtr-method-2>`**\ (string
    *domain*, string *singular*, string *plural*, int *n*)
 -  string
-   ****`dtr </sdk/apps/qml/Ubuntu.Components/i18n#dtr-method>`__****\ (string
+   **:ref:`dtr <sdk_ubuntu_components_i18n#dtr-method>`**\ (string
    *domain*, string *text*)
 -  string
-   ****`relativeDateTime </sdk/apps/qml/Ubuntu.Components/i18n#relativeDateTime-method>`__****\ (datetime
+   **:ref:`relativeDateTime <sdk_ubuntu_components_i18n#relativeDateTime-method>`**\ (datetime
    *dateTime*)
 -  string
-   ****`tag </sdk/apps/qml/Ubuntu.Components/i18n#tag-method-2>`__****\ (string
+   **:ref:`tag <sdk_ubuntu_components_i18n#tag-method-2>`**\ (string
    *context*, string *text*)
 -  string
-   ****`tag </sdk/apps/qml/Ubuntu.Components/i18n#tag-method>`__****\ (string
+   **:ref:`tag <sdk_ubuntu_components_i18n#tag-method>`**\ (string
    *text*)
 -  string
-   ****`tr </sdk/apps/qml/Ubuntu.Components/i18n#tr-method-2>`__****\ (string
+   **:ref:`tr <sdk_ubuntu_components_i18n#tr-method-2>`**\ (string
    *singular*, string *plural*, int *n*)
--  string
-   ****`tr </sdk/apps/qml/Ubuntu.Components/i18n#tr-method>`__****\ (string
+-  string :ref:`tr <sdk_ubuntu_components_i18n_tr-method>`\ (string
    *text*)
 
 Detailed Description
@@ -48,7 +50,7 @@ Detailed Description
 
 i18n cannot be instantiated, and is already available as a context
 property. It is based on
-`gettext <https://www.gnu.org/software/gettext/>`__, and thus the
+`gettext <https://www.gnu.org/software/gettext/>`_ , and thus the
 standard gettext tools can be used for translating a project. Example:
 
 .. code:: qml
@@ -67,21 +69,24 @@ standard gettext tools can be used for translating a project. Example:
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_i18n_domain-prop:
+
 +--------------------------------------------------------------------------+
 |        \ domain : string                                                 |
 +--------------------------------------------------------------------------+
 
 The gettext domain to be used for the translation. The default domain is
 the applicationName specified in the application's
-`MainView </sdk/apps/qml/Ubuntu.Components/MainView/>`__, or the empty
-string "" if no applicationName was given or no
-`MainView </sdk/apps/qml/Ubuntu.Components/MainView/>`__ is used. Use
-`dtr() </sdk/apps/qml/Ubuntu.Components/i18n#dtr-method>`__ functions
-instead of `tr() </sdk/apps/qml/Ubuntu.Components/i18n#tr-method>`__ to
-use a different domain for a single translation that ignores
-i18n.domain.
+:ref:`MainView <sdk_ubuntu_components_mainview>`, or the empty string "" if
+no applicationName was given or no
+:ref:`MainView <sdk_ubuntu_components_mainview>` is used. Use
+:ref:`dtr() <sdk_ubuntu_components_i18n#dtr-method>` functions instead of
+:ref:`tr() <sdk_ubuntu_components_i18n#tr-method>` to use a different
+domain for a single translation that ignores i18n.domain.
 
 | 
+
+.. _sdk_ubuntu_components_i18n_language-prop:
 
 +--------------------------------------------------------------------------+
 |        \ language : string                                               |
@@ -96,6 +101,8 @@ of running the application. See the gettext manual for details.
 Method Documentation
 --------------------
 
+.. _sdk_ubuntu_components_i18n_string ctr-method:
+
 +--------------------------------------------------------------------------+
 |        \ string ctr(string *context*, string *text*)                     |
 +--------------------------------------------------------------------------+
@@ -106,6 +113,8 @@ texts
 
 | 
 
+.. _sdk_ubuntu_components_i18n_string dctr-method:
+
 +--------------------------------------------------------------------------+
 |        \ string dctr(string *domain*, string *context*, string *text*)   |
 +--------------------------------------------------------------------------+
@@ -115,6 +124,8 @@ instead of i18n.domain. *context* is only visible to the translator and
 helps disambiguating for very short texts
 
 | 
+
+.. _sdk_ubuntu_components_i18n_string dtr-method:
 
 +--------------------------------------------------------------------------+
 |        \ string dtr(string *domain*, string *singular*, string *plural*, |
@@ -128,6 +139,8 @@ for the translation depending on the number of items *n*.
 
 | 
 
+.. _sdk_ubuntu_components_i18n_string dtr-method:
+
 +--------------------------------------------------------------------------+
 |        \ string dtr(string *domain*, string *text*)                      |
 +--------------------------------------------------------------------------+
@@ -137,6 +150,8 @@ instead of i18n.domain.
 
 | 
 
+.. _sdk_ubuntu_components_i18n_string relativeDateTime-method:
+
 +--------------------------------------------------------------------------+
 |        \ string relativeDateTime(datetime *dateTime*)                    |
 +--------------------------------------------------------------------------+
@@ -144,6 +159,8 @@ instead of i18n.domain.
 Translate a datetime based on proximity to current time.
 
 | 
+
+.. _sdk_ubuntu_components_i18n_string tag-method:
 
 +--------------------------------------------------------------------------+
 |        \ string tag(string *context*, string *text*)                     |
@@ -155,6 +172,8 @@ API to take the original string and pass it to dctr (or g\_dpgettext2).
 very short texts
 
 | 
+
+.. _sdk_ubuntu_components_i18n_string tag-method:
 
 +--------------------------------------------------------------------------+
 |        \ string tag(string *text*)                                       |
@@ -181,17 +200,21 @@ lockscreen, where the same strings will be passed to i18n.tr.
 
 | 
 
+.. _sdk_ubuntu_components_i18n_string tr-method:
+
 +--------------------------------------------------------------------------+
 |        \ string tr(string *singular*, string *plural*, int *n*)          |
 +--------------------------------------------------------------------------+
 
 Translate the given input string *singular* or *plural* (depending on
 the number of items *n*) using gettext. Note that
-`tr() </sdk/apps/qml/Ubuntu.Components/i18n#tr-method>`__ does not
-automatically insert the values in the QString, so it should be called
-like this: tr("%1 file", "%1 files", count).arg(count)
+:ref:`tr() <sdk_ubuntu_components_i18n#tr-method>` does not automatically
+insert the values in the QString, so it should be called like this:
+tr("%1 file", "%1 files", count).arg(count)
 
 | 
+
+.. _sdk_ubuntu_components_i18n_string tr-method:
 
 +--------------------------------------------------------------------------+
 |        \ string tr(string *text*)                                        |

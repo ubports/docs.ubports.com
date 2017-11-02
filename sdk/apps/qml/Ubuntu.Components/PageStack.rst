@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_pagestack:
+Ubuntu.Components PageStack
+===========================
+
 A stack of Page items that is used for inter-Page navigation. Pages on
 the stack can be popped, and new Pages can be pushed. The page on top of
 the stack is the visible one.
@@ -9,40 +13,38 @@ the stack is the visible one.
 Properties
 ----------
 
--  ****`currentPage </sdk/apps/qml/Ubuntu.Components/PageStack#currentPage-prop>`__****
+-  :ref:`currentPage <sdk_ubuntu_components_pagestack_currentPage-prop>`
    : Item
--  ****`data </sdk/apps/qml/Ubuntu.Components/PageStack#data-prop>`__****
-   : list<Object>
--  ****`depth </sdk/apps/qml/Ubuntu.Components/PageStack#depth-prop>`__****
-   : int
+-  :ref:`data <sdk_ubuntu_components_pagestack_data-prop>` :
+   list<Object>
+-  :ref:`depth <sdk_ubuntu_components_pagestack_depth-prop>` : int
 
 Methods
 -------
 
--  ****`clear </sdk/apps/qml/Ubuntu.Components/PageStack#clear-method>`__****\ ()
--  ****`pop </sdk/apps/qml/Ubuntu.Components/PageStack#pop-method>`__****\ ()
--  ****`push </sdk/apps/qml/Ubuntu.Components/PageStack#push-method>`__****\ (*page*,
+-  :ref:`clear <sdk_ubuntu_components_pagestack_clear-method>`\ ()
+-  :ref:`pop <sdk_ubuntu_components_pagestack_pop-method>`\ ()
+-  :ref:`push <sdk_ubuntu_components_pagestack_push-method>`\ (*page*,
    *properties*)
 
 Detailed Description
 --------------------
 
-`PageStack </sdk/apps/qml/Ubuntu.Components/PageStack/>`__ should be
-used inside a `MainView </sdk/apps/qml/Ubuntu.Components/MainView/>`__
-in order to automatically add a header and toolbar to control the stack.
-The `PageStack </sdk/apps/qml/Ubuntu.Components/PageStack/>`__ will
-automatically set the header title to the title of the
-`Page </sdk/apps/qml/Ubuntu.Components/Page/>`__ that is currently on
-top of the stack, and the tools of the toolbar to the tools of the
-`Page </sdk/apps/qml/Ubuntu.Components/Page/>`__ on top of the stack.
-When more than one Pages are on the stack, the toolbar will
-automatically feature a back-button that pop the stack when triggered.
+:ref:`PageStack <sdk_ubuntu_components_pagestack>` should be used inside a
+:ref:`MainView <sdk_ubuntu_components_mainview>` in order to automatically
+add a header and toolbar to control the stack. The
+:ref:`PageStack <sdk_ubuntu_components_pagestack>` will automatically set
+the header title to the title of the
+:ref:`Page <sdk_ubuntu_components_page>` that is currently on top of the
+stack, and the tools of the toolbar to the tools of the
+:ref:`Page <sdk_ubuntu_components_page>` on top of the stack. When more
+than one Pages are on the stack, the toolbar will automatically feature
+a back-button that pop the stack when triggered.
 
-The anchors of the
-`PageStack </sdk/apps/qml/Ubuntu.Components/PageStack/>`__ are set to
-fill its parent by default. To use left/right/top/bottom anchors,
+The anchors of the :ref:`PageStack <sdk_ubuntu_components_pagestack>` are
+set to fill its parent by default. To use left/right/top/bottom anchors,
 explicitly set anchors.fill of the
-`PageStack </sdk/apps/qml/Ubuntu.Components/PageStack/>`__ to undefined:
+:ref:`PageStack <sdk_ubuntu_components_pagestack>` to undefined:
 
 .. code:: qml
 
@@ -75,11 +77,10 @@ explicitly set anchors.fill of the
     }
 
 Pages that are defined inside the
-`PageStack </sdk/apps/qml/Ubuntu.Components/PageStack/>`__ must
-initially set their visibility to false to avoid the pages occluding the
-`PageStack </sdk/apps/qml/Ubuntu.Components/PageStack/>`__ before they
-are pushed. When pushing a
-`Page </sdk/apps/qml/Ubuntu.Components/Page/>`__, its visibility is
+:ref:`PageStack <sdk_ubuntu_components_pagestack>` must initially set their
+visibility to false to avoid the pages occluding the
+:ref:`PageStack <sdk_ubuntu_components_pagestack>` before they are pushed.
+When pushing a :ref:`Page <sdk_ubuntu_components_page>`, its visibility is
 automatically updated.
 
 Example:
@@ -130,30 +131,35 @@ Example:
     }
 
 As shown in the example above, the
-`push() </sdk/apps/qml/Ubuntu.Components/PageStack#push-method>`__
-function can take an Item, Component or URL as input.
+:ref:`push() <sdk_ubuntu_components_pagestack#push-method>` function can
+take an Item, Component or URL as input.
 
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_pagestack_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ currentPage : `Item </sdk/apps/qml/QtQuick/Item/>`__            |
+| :ref:` <>`\ currentPage : `Item <sdk_qtquick_item>`                    |
 +--------------------------------------------------------------------------+
 
 The currently active page
 
 | 
 
+.. _sdk_ubuntu_components_pagestack_data-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [default] data : list<Object>                                   |
 +--------------------------------------------------------------------------+
 
-Children of `PageStack </sdk/apps/qml/Ubuntu.Components/PageStack/>`__
-are placed in a separate item such that they are not active by default
-until they are pushed on the
-`PageStack </sdk/apps/qml/Ubuntu.Components/PageStack/>`__.
+Children of :ref:`PageStack <sdk_ubuntu_components_pagestack>` are placed
+in a separate item such that they are not active by default until they
+are pushed on the :ref:`PageStack <sdk_ubuntu_components_pagestack>`.
 
 | 
+
+.. _sdk_ubuntu_components_pagestack_depth-prop:
 
 +--------------------------------------------------------------------------+
 |        \ depth : int                                                     |
@@ -166,6 +172,8 @@ The current size of the stack
 Method Documentation
 --------------------
 
+.. _sdk_ubuntu_components_pagestack_clear-method:
+
 +--------------------------------------------------------------------------+
 |        \ clear()                                                         |
 +--------------------------------------------------------------------------+
@@ -173,6 +181,8 @@ Method Documentation
 Deactivate the active page and clear the stack.
 
 | 
+
+.. _sdk_ubuntu_components_pagestack_pop-method:
 
 +--------------------------------------------------------------------------+
 |        \ pop()                                                           |
@@ -183,6 +193,8 @@ do anything if 0 items are on the stack.
 
 | 
 
+.. _sdk_ubuntu_components_pagestack_push-method:
+
 +--------------------------------------------------------------------------+
 |        \ push( *page*, *properties*)                                     |
 +--------------------------------------------------------------------------+
@@ -192,6 +204,6 @@ the page. The pushed page may be an Item, Component or URL. The function
 returns the Item that was pushed, or the Item that was created from the
 Component or URL. Depending on the animation of the header, the returned
 Page may or may not be active and on top of the
-`PageStack </sdk/apps/qml/Ubuntu.Components/PageStack/>`__ yet.
+:ref:`PageStack <sdk_ubuntu_components_pagestack>` yet.
 
 | 

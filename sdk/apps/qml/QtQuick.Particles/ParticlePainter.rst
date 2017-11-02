@@ -1,26 +1,29 @@
+.. _sdk_qtquick_particles_particlepainter:
+QtQuick.Particles ParticlePainter
+=================================
+
 For specifying how to paint particles
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtQuick.Particles 2.0         |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Item </sdk/apps/qml/QtQuick/Item/>` |
-|                                      | __                                   |
+| Inherits:                            | :ref:`Item <sdk_qtquick_item>`       |
 +--------------------------------------+--------------------------------------+
 | Inherited By:                        | `CustomParticle </sdk/apps/qml/QtQui |
-|                                      | ck/Particles.CustomParticle/>`__,    |
+|                                      | ck/Particles.CustomParticle/>`_ ,    |
 |                                      | `ImageParticle </sdk/apps/qml/QtQuic |
-|                                      | k/Particles.ImageParticle/>`__,      |
+|                                      | k/Particles.ImageParticle/>`_ ,      |
 |                                      | and                                  |
 |                                      | `ItemParticle </sdk/apps/qml/QtQuick |
-|                                      | /Particles.ItemParticle/>`__.        |
+|                                      | /Particles.ItemParticle/>`_ .        |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`groups </sdk/apps/qml/QtQuick/Particles.ParticlePainter#groups-prop>`__****
+-  `groups </sdk/apps/qml/QtQuick/Particles.ParticlePainter/_groups-prop>`_ 
    : list<string>
--  ****`system </sdk/apps/qml/QtQuick/Particles.ParticlePainter#system-prop>`__****
+-  `system </sdk/apps/qml/QtQuick/Particles.ParticlePainter/_system-prop>`_ 
    : ParticleSystem
 
 Detailed Description
@@ -32,6 +35,8 @@ want to paint something visible.
 Property Documentation
 ----------------------
 
+.. _sdk_qtquick_particles_particlepainter_groups-prop:
+
 +--------------------------------------------------------------------------+
 |        \ groups : list<string>                                           |
 +--------------------------------------------------------------------------+
@@ -42,15 +47,17 @@ If empty, it will paint the default particle group ("").
 
 | 
 
+.. _sdk_qtquick_particles_particlepainter_system-prop:
+
 +--------------------------------------------------------------------------+
 |        \ system :                                                        |
-| `ParticleSystem </sdk/apps/qml/QtQuick/Particles.ParticleSystem/>`__     |
+| `ParticleSystem </sdk/apps/qml/QtQuick/Particles.ParticleSystem/>`_      |
 +--------------------------------------------------------------------------+
 
 This is the system whose particles can be painted by the element. If the
-`ParticlePainter </sdk/apps/qml/QtQuick/Particles.ParticlePainter/>`__
+`ParticlePainter </sdk/apps/qml/QtQuick/Particles.ParticlePainter/>`_ 
 is a direct child of a
-`ParticleSystem </sdk/apps/qml/QtQuick/Particles.ParticleSystem/>`__, it
+`ParticleSystem </sdk/apps/qml/QtQuick/Particles.ParticleSystem/>`_ , it
 will automatically be associated with it.
 
 | 

@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_bottomedge:
+Ubuntu.Components BottomEdge
+============================
+
 A component to handle bottom edge gesture and content.
 
 +--------------------------------------+--------------------------------------+
@@ -5,74 +9,72 @@ A component to handle bottom edge gesture and content.
 +--------------------------------------+--------------------------------------+
 | Since:                               | Ubuntu.Components 1.3                |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `StyledItem </sdk/apps/qml/Ubuntu.Co |
-|                                      | mponents/StyledItem/>`__             |
+| Inherits:                            | :ref:`StyledItem <sdk_ubuntu_components_s |
+|                                      | tyleditem>`_                         |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`activeRegion </sdk/apps/qml/Ubuntu.Components/BottomEdge#activeRegion-prop>`__****
+-  :ref:`activeRegion <sdk_ubuntu_components_bottomedge_activeRegion-prop>`
    : BottomEdgeRegion
--  ****`contentComponent </sdk/apps/qml/Ubuntu.Components/BottomEdge#contentComponent-prop>`__****
+-  :ref:`contentComponent <sdk_ubuntu_components_bottomedge_contentComponent-prop>`
    : Component
--  ****`contentItem </sdk/apps/qml/Ubuntu.Components/BottomEdge#contentItem-prop>`__****
+-  :ref:`contentItem <sdk_ubuntu_components_bottomedge_contentItem-prop>`
    : Item
--  ****`contentUrl </sdk/apps/qml/Ubuntu.Components/BottomEdge#contentUrl-prop>`__****
+-  :ref:`contentUrl <sdk_ubuntu_components_bottomedge_contentUrl-prop>`
    : url
--  ****`dragDirection </sdk/apps/qml/Ubuntu.Components/BottomEdge#dragDirection-prop>`__****
+-  :ref:`dragDirection <sdk_ubuntu_components_bottomedge_dragDirection-prop>`
    : DragDirection
--  ****`dragProgress </sdk/apps/qml/Ubuntu.Components/BottomEdge#dragProgress-prop>`__****
+-  :ref:`dragProgress <sdk_ubuntu_components_bottomedge_dragProgress-prop>`
    : real
--  ****`hint </sdk/apps/qml/Ubuntu.Components/BottomEdge#hint-prop>`__****
-   : BottomEdgeHint
--  ****`preloadContent </sdk/apps/qml/Ubuntu.Components/BottomEdge#preloadContent-prop>`__****
+-  :ref:`hint <sdk_ubuntu_components_bottomedge_hint-prop>` :
+   BottomEdgeHint
+-  :ref:`preloadContent <sdk_ubuntu_components_bottomedge_preloadContent-prop>`
    : bool
--  ****`regions </sdk/apps/qml/Ubuntu.Components/BottomEdge#regions-prop>`__****
-   : list<BottomEdgeRegion>
--  ****`status </sdk/apps/qml/Ubuntu.Components/BottomEdge#status-prop>`__****
-   : Status
+-  :ref:`regions <sdk_ubuntu_components_bottomedge_regions-prop>` :
+   list<BottomEdgeRegion>
+-  :ref:`status <sdk_ubuntu_components_bottomedge_status-prop>` :
+   Status
 
 Signals
 -------
 
--  ****`collapseCompleted </sdk/apps/qml/Ubuntu.Components/BottomEdge#collapseCompleted-signal>`__****\ ()
--  ****`collapseStarted </sdk/apps/qml/Ubuntu.Components/BottomEdge#collapseStarted-signal>`__****\ ()
--  ****`commitCompleted </sdk/apps/qml/Ubuntu.Components/BottomEdge#commitCompleted-signal>`__****\ ()
--  ****`commitStarted </sdk/apps/qml/Ubuntu.Components/BottomEdge#commitStarted-signal>`__****\ ()
+-  :ref:`collapseCompleted <sdk_ubuntu_components_bottomedge_collapseCompleted-signal>`\ ()
+-  :ref:`collapseStarted <sdk_ubuntu_components_bottomedge_collapseStarted-signal>`\ ()
+-  :ref:`commitCompleted <sdk_ubuntu_components_bottomedge_commitCompleted-signal>`\ ()
+-  :ref:`commitStarted <sdk_ubuntu_components_bottomedge_commitStarted-signal>`\ ()
 
 Methods
 -------
 
 -  void
-   ****`collapse </sdk/apps/qml/Ubuntu.Components/BottomEdge#collapse-method>`__****\ ()
+   **:ref:`collapse <sdk_ubuntu_components_bottomedge#collapse-method>`**\ ()
 -  void
-   ****`commit </sdk/apps/qml/Ubuntu.Components/BottomEdge#commit-method>`__****\ ()
+   **:ref:`commit <sdk_ubuntu_components_bottomedge#commit-method>`**\ ()
 
 Detailed Description
 --------------------
 
 The component provides bottom edge content handling. The bottom egde
 feature is typically composed of a hint and some content. The
-`contentUrl </sdk/apps/qml/Ubuntu.Components/BottomEdge#contentUrl-prop>`__
-is committed (i.e. fully shown) when the drag is completed after it has
+:ref:`contentUrl <sdk_ubuntu_components_bottomedge#contentUrl-prop>` is
+committed (i.e. fully shown) when the drag is completed after it has
 been dragged for a certain amount, that is 30% of the height of the
-`BottomEdge </sdk/apps/qml/Ubuntu.Components/BottomEdge/>`__. The
-`contentUrl </sdk/apps/qml/Ubuntu.Components/BottomEdge#contentUrl-prop>`__
-can be anything, defined by
-`contentUrl </sdk/apps/qml/Ubuntu.Components/BottomEdge#contentUrl-prop>`__
-or
-`contentComponent </sdk/apps/qml/Ubuntu.Components/BottomEdge#contentComponent-prop>`__.
+:ref:`BottomEdge <sdk_ubuntu_components_bottomedge>`. The
+:ref:`contentUrl <sdk_ubuntu_components_bottomedge#contentUrl-prop>` can be
+anything, defined by
+:ref:`contentUrl <sdk_ubuntu_components_bottomedge#contentUrl-prop>` or
+:ref:`contentComponent <sdk_ubuntu_components_bottomedge#contentComponent-prop>`.
 
 As the name suggests, the component automatically anchors to the bottom
 of its parent and takes the width of the parent. The drag is detected
 within the parent area, and the height drives till what extent the
 bottom edge content should be exposed on
-`commit </sdk/apps/qml/Ubuntu.Components/BottomEdge#commit-method>`__
-call. The content is centered into a panel which is dragged from the
-bottom of the
-`BottomEdge </sdk/apps/qml/Ubuntu.Components/BottomEdge/>`__. The
-content must specify its width and height.
+:ref:`commit <sdk_ubuntu_components_bottomedge#commit-method>` call. The
+content is centered into a panel which is dragged from the bottom of the
+:ref:`BottomEdge <sdk_ubuntu_components_bottomedge>`. The content must
+specify its width and height.
 
 .. code:: qml
 
@@ -97,18 +99,17 @@ content must specify its width and height.
     }
 
 **Note:** The content is specified either through
-`contentUrl </sdk/apps/qml/Ubuntu.Components/BottomEdge#contentUrl-prop>`__
-or
-`contentComponent </sdk/apps/qml/Ubuntu.Components/BottomEdge#contentComponent-prop>`__,
+:ref:`contentUrl <sdk_ubuntu_components_bottomedge#contentUrl-prop>` or
+:ref:`contentComponent <sdk_ubuntu_components_bottomedge#contentComponent-prop>`,
 where
-`contentComponent </sdk/apps/qml/Ubuntu.Components/BottomEdge#contentComponent-prop>`__
+:ref:`contentComponent <sdk_ubuntu_components_bottomedge#contentComponent-prop>`
 has precedence over
-`contentUrl </sdk/apps/qml/Ubuntu.Components/BottomEdge#contentUrl-prop>`__.
+:ref:`contentUrl <sdk_ubuntu_components_bottomedge#contentUrl-prop>`.
 
 There can be situations when the content depends on the progress of the
 drag. There are two possibilities to follow this, depending on the use
 case. The
-`dragProgress </sdk/apps/qml/Ubuntu.Components/BottomEdge#dragProgress-prop>`__
+:ref:`dragProgress <sdk_ubuntu_components_bottomedge#dragProgress-prop>`
 provides live updates about the fraction of the drag.
 
 .. code:: qml
@@ -126,10 +127,9 @@ provides live updates about the fraction of the drag.
 
 The other use case is when the content needs to be completely different
 in certain regions of the area. These regions can be defined through
-`BottomEdgeRegion </sdk/apps/qml/Ubuntu.Components/BottomEdgeRegion/>`__
-elements listed in the
-`regions </sdk/apps/qml/Ubuntu.Components/BottomEdge#regions-prop>`__
-property.
+:ref:`BottomEdgeRegion <sdk_ubuntu_components_bottomedgeregion>` elements
+listed in the
+:ref:`regions <sdk_ubuntu_components_bottomedge#regions-prop>` property.
 
 .. code:: qml
 
@@ -168,20 +168,19 @@ property.
 
 **Note:** Custom regions override the default declared ones. Therefore
 there must be one region which has its
-`to </sdk/apps/qml/Ubuntu.Components/BottomEdgeRegion#to-prop>`__ limit
-set to 1.0 otherwise the content will not be committed at all.
+:ref:`to <sdk_ubuntu_components_bottomedgeregion#to-prop>` limit set to 1.0
+otherwise the content will not be committed at all.
 
 **Note:** Regions can also be declared as child elements the same way as
 resources.
 
-The `BottomEdge </sdk/apps/qml/Ubuntu.Components/BottomEdge/>`__ takes
-ownership over the custom BottomEdgeRegions, therefore we cannot 'reuse'
-regions declared in other
-`BottomEdge </sdk/apps/qml/Ubuntu.Components/BottomEdge/>`__ components,
-as those will be destroyed together with the reusing
-`BottomEdge </sdk/apps/qml/Ubuntu.Components/BottomEdge/>`__ component.
-The following scenario only works if the *customRegion* is not used in
-any other regions.
+The :ref:`BottomEdge <sdk_ubuntu_components_bottomedge>` takes ownership
+over the custom BottomEdgeRegions, therefore we cannot 'reuse' regions
+declared in other :ref:`BottomEdge <sdk_ubuntu_components_bottomedge>`
+components, as those will be destroyed together with the reusing
+:ref:`BottomEdge <sdk_ubuntu_components_bottomedge>` component. The
+following scenario only works if the *customRegion* is not used in any
+other regions.
 
 .. code:: qml
 
@@ -201,13 +200,13 @@ any other regions.
 Page As Content
 ~~~~~~~~~~~~~~~
 
-`BottomEdge </sdk/apps/qml/Ubuntu.Components/BottomEdge/>`__ accepts any
-component to be set as content. Also it can detect whether the content
-has a `PageHeader </sdk/apps/qml/Ubuntu.Components/PageHeader/>`__
-component declared, and will inject a collapse navigation action
-automatically. In case the content has no header, the collapse must be
-provided by the content itself by calling the
-`collapse </sdk/apps/qml/Ubuntu.Components/BottomEdge#collapse-method>`__
+:ref:`BottomEdge <sdk_ubuntu_components_bottomedge>` accepts any component
+to be set as content. Also it can detect whether the content has a
+:ref:`PageHeader <sdk_ubuntu_components_pageheader>` component declared,
+and will inject a collapse navigation action automatically. In case the
+content has no header, the collapse must be provided by the content
+itself by calling the
+:ref:`collapse <sdk_ubuntu_components_bottomedge#collapse-method>`
 function.
 
 .. code:: qml
@@ -228,8 +227,8 @@ function.
     }
 
 Alternatively you can put a
-`PageHeader </sdk/apps/qml/Ubuntu.Components/PageHeader/>`__ component
-in your custom content as follows:
+:ref:`PageHeader <sdk_ubuntu_components_pageheader>` component in your
+custom content as follows:
 
 .. code:: qml
 
@@ -252,33 +251,35 @@ Styling
 
 Similar to the other components the default style is expected to be
 defined in the theme's *BottomEdgeStyle*. However the style is not
-parented to the
-`BottomEdge </sdk/apps/qml/Ubuntu.Components/BottomEdge/>`__ itself, but
-to the `BottomEdge </sdk/apps/qml/Ubuntu.Components/BottomEdge/>`__'s
+parented to the :ref:`BottomEdge <sdk_ubuntu_components_bottomedge>`
+itself, but to the :ref:`BottomEdge <sdk_ubuntu_components_bottomedge>`'s
 parent item. When loaded, the style does not fill the parent but its
 bottom anchor is set to the bottom of the
-`BottomEdge </sdk/apps/qml/Ubuntu.Components/BottomEdge/>`__. Beside
-this the hint is also parented to the style instance. Custom styles are
-expected to implement the BottomEgdeStyle API.
+:ref:`BottomEdge <sdk_ubuntu_components_bottomedge>`. Beside this the hint
+is also parented to the style instance. Custom styles are expected to
+implement the BottomEgdeStyle API.
 
 **See also**
-`BottomEdgeRegion </sdk/apps/qml/Ubuntu.Components/BottomEdgeRegion/>`__.
+:ref:`BottomEdgeRegion <sdk_ubuntu_components_bottomedgeregion>`.
 
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_bottomedge_[read-only] activeRegion-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [read-only] activeRegion :                                      |
-| `BottomEdgeRegion </sdk/apps/qml/Ubuntu.Components/BottomEdgeRegion/>`__ |
+| :ref:`BottomEdgeRegion <sdk_ubuntu_components_bottomedgeregion>`            |
 +--------------------------------------------------------------------------+
 
 Specifies the current active region.
 
 | 
 
+.. _sdk_ubuntu_components_bottomedge_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ contentComponent :                                              |
-| `Component </sdk/apps/qml/QtQml/Component/>`__                           |
+| :ref:` <>`\ contentComponent : `Component <sdk_qtqml_component>`       |
 +--------------------------------------------------------------------------+
 
 The property holds the component defining the content of the bottom
@@ -287,21 +288,23 @@ property.
 
 | 
 
+.. _sdk_ubuntu_components_bottomedge_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ [read-only] contentItem :                                       |
-| `Item </sdk/apps/qml/QtQuick/Item/>`__                                   |
+| :ref:` <>`\ [read-only] contentItem : `Item <sdk_qtquick_item>`        |
 +--------------------------------------------------------------------------+
 
 The property holds the item created either from
-`contentUrl </sdk/apps/qml/Ubuntu.Components/BottomEdge#contentUrl-prop>`__
-or
-`contentComponent </sdk/apps/qml/Ubuntu.Components/BottomEdge#contentComponent-prop>`__
+:ref:`contentUrl <sdk_ubuntu_components_bottomedge#contentUrl-prop>` or
+:ref:`contentComponent <sdk_ubuntu_components_bottomedge#contentComponent-prop>`
 properties.
 
 | 
 
+.. _sdk_ubuntu_components_bottomedge_contentUrl-prop:
+
 +--------------------------------------------------------------------------+
-|        \ contentUrl : `url <http://doc.qt.io/qt-5/qml-url.html>`__       |
+|        \ contentUrl : `url <http://doc.qt.io/qt-5/qml-url.html>`_        |
 +--------------------------------------------------------------------------+
 
 The property holds the url to the document defining the content of the
@@ -310,6 +313,8 @@ property.
 
 | 
 
+.. _sdk_ubuntu_components_bottomedge_[read-only] dragDirection-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [read-only] dragDirection : DragDirection                       |
 +--------------------------------------------------------------------------+
@@ -317,11 +322,15 @@ property.
 The property reports the current direction of the drag. The direction is
 flipped when the drag passes the drag threshold.
 
+.. _sdk_ubuntu_components_bottomedge_DragDirection    Description-prop:
+
 +-----------------+--------------------------------------------------------------------------------------------------------------------------------+
 | DragDirection   | Description                                                                                                                    |
 +=================+================================================================================================================================+
+.. _sdk_ubuntu_components_bottomedge_Upwards          The drag is performed from bottom up or it passed the drag threshold from from the last point the drag was going downwards.-prop:
 | Undefined       | Default. The drag is not performed or the direction is not detected.                                                           |
 +-----------------+--------------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_ubuntu_components_bottomedge_Downwards        The drag is performed from up to bottom or it passed the drag threshold from from the last point the drag was going upwards.-prop:
 | Upwards         | The drag is performed from bottom up or it passed the drag threshold from from the last point the drag was going downwards.    |
 +-----------------+--------------------------------------------------------------------------------------------------------------------------------+
 | Downwards       | The drag is performed from up to bottom or it passed the drag threshold from from the last point the drag was going upwards.   |
@@ -331,6 +340,8 @@ Defaults to *Undefined*
 
 | 
 
+.. _sdk_ubuntu_components_bottomedge_[read-only] dragProgress-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [read-only] dragProgress : real                                 |
 +--------------------------------------------------------------------------+
@@ -339,15 +350,19 @@ The property specifies the proggress of the drag within [0..1] interval.
 
 | 
 
+.. _sdk_ubuntu_components_bottomedge_hint-prop:
+
 +--------------------------------------------------------------------------+
 |        \ hint :                                                          |
-| `BottomEdgeHint </sdk/apps/qml/Ubuntu.Components/BottomEdgeHint/>`__     |
+| :ref:`BottomEdgeHint <sdk_ubuntu_components_bottomedgehint>`                |
 +--------------------------------------------------------------------------+
 
 The property holds the component to display the hint for the bottom edge
 element.
 
 | 
+
+.. _sdk_ubuntu_components_bottomedge_preloadContent-prop:
 
 +--------------------------------------------------------------------------+
 |        \ preloadContent : bool                                           |
@@ -358,20 +373,23 @@ loaded in the background, so it will be available before it is revealed.
 
 | 
 
+.. _sdk_ubuntu_components_bottomedge_regions-prop:
+
 +--------------------------------------------------------------------------+
 |        \ regions :                                                       |
-| list<`BottomEdgeRegion </sdk/apps/qml/Ubuntu.Components/BottomEdgeRegion |
-| />`__>                                                                   |
+| list<:ref:`BottomEdgeRegion <sdk_ubuntu_components_bottomedgeregion>`>      |
 +--------------------------------------------------------------------------+
 
 The property holds the custom regions configured for the
-`BottomEdge </sdk/apps/qml/Ubuntu.Components/BottomEdge/>`__. The
-default configuration contains one region, which commits the content
-when reached. The defaults can be restored by setting an empty list to
-the property or by calling regions.clear(). See
-`BottomEdgeRegion </sdk/apps/qml/Ubuntu.Components/BottomEdgeRegion/>`__.
+:ref:`BottomEdge <sdk_ubuntu_components_bottomedge>`. The default
+configuration contains one region, which commits the content when
+reached. The defaults can be restored by setting an empty list to the
+property or by calling regions.clear(). See
+:ref:`BottomEdgeRegion <sdk_ubuntu_components_bottomedgeregion>`.
 
 | 
+
+.. _sdk_ubuntu_components_bottomedge_[read-only] status-prop:
 
 +--------------------------------------------------------------------------+
 |        \ [read-only] status : Status                                     |
@@ -380,15 +398,19 @@ the property or by calling regions.clear(). See
 The property reports the actual state of the bottom edge. It can have
 the following values:
 
-+-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Status      | Description                                                                                                                                                       |
-+=============+===================================================================================================================================================================+
-| Hidden      | The bottom edge is hidden. This does not contain the hint states.                                                                                                 |
-+-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Revealed    | The Bottom edge content is revealed. The state can be reached only if the `hint </sdk/apps/qml/Ubuntu.Components/BottomEdge#hint-prop>`__ is in "Active" state.   |
-+-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Committed   | The bottom edge content is fully exposed.                                                                                                                         |
-+-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_ubuntu_components_bottomedge_Status       Description-prop:
+
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Status      | Description                                                                                                                                             |
++=============+=========================================================================================================================================================+
+.. _sdk_ubuntu_components_bottomedge_Revealed     The Bottom edge content is revealed. The state can be reached only if the-prop:
+| Hidden      | The bottom edge is hidden. This does not contain the hint states.                                                                                       |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_ubuntu_components_bottomedge_Committed    The bottom edge content is fully exposed.-prop:
+| Revealed    | The Bottom edge content is revealed. The state can be reached only if the :ref:`hint <sdk_ubuntu_components_bottomedge#hint-prop>` is in "Active" state.   |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Committed   | The bottom edge content is fully exposed.                                                                                                               |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 **Note:** Once *Commited* status is set, no further draging is possible
 on the content.
@@ -398,6 +420,8 @@ on the content.
 Signal Documentation
 --------------------
 
+.. _sdk_ubuntu_components_bottomedge_collapseCompleted()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ collapseCompleted()                                             |
 +--------------------------------------------------------------------------+
@@ -405,6 +429,8 @@ Signal Documentation
 Signal emitted when the content collapse is completed.
 
 | 
+
+.. _sdk_ubuntu_components_bottomedge_collapseStarted()-prop:
 
 +--------------------------------------------------------------------------+
 |        \ collapseStarted()                                               |
@@ -414,6 +440,8 @@ Signal emitted when the content collapse is started.
 
 | 
 
+.. _sdk_ubuntu_components_bottomedge_commitCompleted()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ commitCompleted()                                               |
 +--------------------------------------------------------------------------+
@@ -421,6 +449,8 @@ Signal emitted when the content collapse is started.
 Signal emitted when the content commit is completed.
 
 | 
+
+.. _sdk_ubuntu_components_bottomedge_commitStarted-method:
 
 +--------------------------------------------------------------------------+
 |        \ commitStarted()                                                 |
@@ -433,27 +463,31 @@ Signal emitted when the content commit is started.
 Method Documentation
 --------------------
 
+.. _sdk_ubuntu_components_bottomedge_void collapse-method:
+
 +--------------------------------------------------------------------------+
 |        \ void collapse()                                                 |
 +--------------------------------------------------------------------------+
 
 The function forces the bottom edge content to be hidden. Emits
-`collapseStarted </sdk/apps/qml/Ubuntu.Components/BottomEdge#collapseStarted-signal>`__
+:ref:`collapseStarted <sdk_ubuntu_components_bottomedge#collapseStarted-signal>`
 and
-`collapseCompleted </sdk/apps/qml/Ubuntu.Components/BottomEdge#collapseCompleted-signal>`__
+:ref:`collapseCompleted <sdk_ubuntu_components_bottomedge#collapseCompleted-signal>`
 signals to notify the start and the completion of the collapse
 operation.
 
 | 
+
+.. _sdk_ubuntu_components_bottomedge_void commit-method:
 
 +--------------------------------------------------------------------------+
 |        \ void commit()                                                   |
 +--------------------------------------------------------------------------+
 
 The function forces the bottom edge content to be fully exposed. Emits
-`commitStarted </sdk/apps/qml/Ubuntu.Components/BottomEdge#commitStarted-signal>`__
+:ref:`commitStarted <sdk_ubuntu_components_bottomedge#commitStarted-signal>`
 and
-`commitCompleted </sdk/apps/qml/Ubuntu.Components/BottomEdge#commitCompleted-signal>`__
+:ref:`commitCompleted <sdk_ubuntu_components_bottomedge#commitCompleted-signal>`
 signals to notify the start and the completion of the commit operation.
 It is safe to call commit() multiple times.
 

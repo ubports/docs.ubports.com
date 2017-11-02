@@ -1,5 +1,9 @@
+.. _sdk_searchlistenerbase:
+SearchListenerBase
+==================
+
 Abstract base interface for a client to receive the results of a query.
-`More... </sdk/scopes/cpp/unity.scopes.SearchListenerBase#details>`__
+`More... </sdk/scopes/cpp/unity.scopes.SearchListenerBase/#details>`_ 
 
 ``#include <unity/scopes/SearchListenerBase.h>``
 
@@ -14,7 +18,7 @@ Inheritance diagram for unity::scopes::SearchListenerBase:
 
 virtual void 
 
-`push </sdk/scopes/cpp/unity.scopes.SearchListenerBase#a93ba33c6e1a0064ac9756134ccb11705>`__
+`push </sdk/scopes/cpp/unity.scopes.SearchListenerBase/#a93ba33c6e1a0064ac9756134ccb11705>`_ 
 (Department::SCPtr const &parent)
 
  
@@ -26,8 +30,8 @@ virtual void 
 
         virtual void 
 
-`push </sdk/scopes/cpp/unity.scopes.SearchListenerBase#a3ebd3e8be67824c7a34068da6075bd99>`__
-(`CategorisedResult </sdk/scopes/cpp/unity.scopes.CategorisedResult/>`__
+`push </sdk/scopes/cpp/unity.scopes.SearchListenerBase/#a3ebd3e8be67824c7a34068da6075bd99>`_ 
+(`CategorisedResult </sdk/scopes/cpp/unity.scopes.CategorisedResult/>`_ 
 result)=0
 
  
@@ -39,7 +43,7 @@ result)=0
 
 virtual void 
 
-`push </sdk/scopes/cpp/unity.scopes.SearchListenerBase#ab96864e4b3d6718e4b87b81aa14657e3>`__
+`push </sdk/scopes/cpp/unity.scopes.SearchListenerBase/#ab96864e4b3d6718e4b87b81aa14657e3>`_ 
 (experimental::Annotation annotation)
 
  
@@ -51,7 +55,7 @@ virtual void 
 
 virtual void 
 
-`push </sdk/scopes/cpp/unity.scopes.SearchListenerBase#af246bd38c8ba9cec36dfae3d0607dbfc>`__
+`push </sdk/scopes/cpp/unity.scopes.SearchListenerBase/#af246bd38c8ba9cec36dfae3d0607dbfc>`_ 
 (Category::SCPtr const &category)
 
  
@@ -63,11 +67,10 @@ virtual void 
 
 virtual void 
 
-`push </sdk/scopes/cpp/unity.scopes.SearchListenerBase#ac7904ac1f83fe60cddc8f08c6e7d971b>`__
-(`Filters </sdk/scopes/cpp/unity.scopes#adab58c13cf604e0e64bd6b1a745364d3>`__
-const &filters,
-`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ const
-&filter\_state)
+`push </sdk/scopes/cpp/unity.scopes.SearchListenerBase/#ac7904ac1f83fe60cddc8f08c6e7d971b>`_ 
+(:ref:`Filters <sdk_unity_scopes#adab58c13cf604e0e64bd6b1a745364d3>` const
+&filters, `FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_ 
+const &filter\_state)
 
  
 
@@ -77,9 +80,9 @@ const &filters,
 
 virtual void 
 
-`push </sdk/scopes/cpp/unity.scopes.SearchListenerBase#aaf1af46d5d7b1219558f15c22ef85b10>`__
-(`Filters </sdk/scopes/cpp/unity.scopes#adab58c13cf604e0e64bd6b1a745364d3>`__
-const &filters)
+`push </sdk/scopes/cpp/unity.scopes.SearchListenerBase/#aaf1af46d5d7b1219558f15c22ef85b10>`_ 
+(:ref:`Filters <sdk_unity_scopes#adab58c13cf604e0e64bd6b1a745364d3>` const
+&filters)
 
  
 
@@ -88,12 +91,12 @@ const &filters)
  
 
 |-| Public Member Functions inherited from
-`unity::scopes::ListenerBase </sdk/scopes/cpp/unity.scopes.ListenerBase/>`__
+`unity::scopes::ListenerBase </sdk/scopes/cpp/unity.scopes.ListenerBase/>`_ 
 
 virtual void 
 
-`finished </sdk/scopes/cpp/unity.scopes.ListenerBase#afb44937749b61c9e3ebfa20ec6e4634b>`__
-(`CompletionDetails </sdk/scopes/cpp/unity.scopes.CompletionDetails/>`__
+`finished </sdk/scopes/cpp/unity.scopes.ListenerBase/#afb44937749b61c9e3ebfa20ec6e4634b>`_ 
+(`CompletionDetails </sdk/scopes/cpp/unity.scopes.CompletionDetails/>`_ 
 const &details)=0
 
  
@@ -105,8 +108,8 @@ const &details)=0
 
 virtual void 
 
-`info </sdk/scopes/cpp/unity.scopes.ListenerBase#a3b38fa642754142f40968f3ff8d1bdc8>`__
-(`OperationInfo </sdk/scopes/cpp/unity.scopes.OperationInfo/>`__ const
+`info </sdk/scopes/cpp/unity.scopes.ListenerBase/#a3b38fa642754142f40968f3ff8d1bdc8>`_ 
+(`OperationInfo </sdk/scopes/cpp/unity.scopes.OperationInfo/>`_  const
 &op\_info)
 
  
@@ -122,17 +125,17 @@ Detailed Description
 Abstract base interface for a client to receive the results of a query.
 
 An instance of this interface must be passed to
-`Scope::search() </sdk/scopes/cpp/unity.scopes.Scope#a09976690ca801ecada50687df6046a29>`__.
+`Scope::search() </sdk/scopes/cpp/unity.scopes.Scope/#a09976690ca801ecada50687df6046a29>`_ .
 Results for the query are delivered to the client by the scopes run time
 by invoking the appropriate push method.
 
 If the implementation of a push method throws an exception, the scopes
 runtime calls
-`ListenerBase::finished() </sdk/scopes/cpp/unity.scopes.ListenerBase#afb44937749b61c9e3ebfa20ec6e4634b>`__
+`ListenerBase::finished() </sdk/scopes/cpp/unity.scopes.ListenerBase/#afb44937749b61c9e3ebfa20ec6e4634b>`_ 
 with an 'Error' status.
 
 See also
-    `ListenerBase </sdk/scopes/cpp/unity.scopes.ListenerBase/>`__
+    `ListenerBase </sdk/scopes/cpp/unity.scopes.ListenerBase/>`_ 
 
 Member Function Documentation
 -----------------------------
@@ -233,19 +236,16 @@ The default implementation does nothing.
 | ------+--------------------+-------- |                                      |
 | ------------+                        |                                      |
 | | virtual void       | (             |                                      |
-|       | `Filters </sdk/sco | *filter |                                      |
+|       | :ref:`Filters <sdk_unit | *filter |                                      |
 | s*,         |                        |                                      |
 | | unity::scopes::Sea |               |                                      |
-|       | pes/cpp/unity.scop |         |                                      |
+|       | y_scopes#adab58c13 |         |                                      |
 |             |                        |                                      |
 | | rchListenerBase::p |               |                                      |
-|       | es#adab58c13cf604e |         |                                      |
+|       | cf604e0e64bd6b1a74 |         |                                      |
 |             |                        |                                      |
 | | ush                |               |                                      |
-|       | 0e64bd6b1a745364d3 |         |                                      |
-|             |                        |                                      |
-| |                    |               |                                      |
-|       | >`__               |         |                                      |
+|       | 5364d3>`_          |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
 |       | const &            |         |                                      |
@@ -263,7 +263,7 @@ The default implementation does nothing.
 |       | scopes.FilterState |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
-|       | />`__              |         |                                      |
+|       | />`_               |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
 |       | const &            |         |                                      |
@@ -281,7 +281,7 @@ The default implementation does nothing.
 
 Called once by the scopes to send all the filters and their state.
 
-**`Deprecated: </sdk/scopes/cpp/deprecated#_deprecated000001>`__**
+**`Deprecated: </sdk/scopes/cpp/deprecated/#_deprecated000001>`_ **
     Please override the push(Filters& const) method instead. This method
     will be removed from future releases.
 
@@ -292,24 +292,21 @@ The default implementation does nothing.
 | ---------+--------------+----------- |                                      |
 | ---+--------------+                  |                                      |
 | | virtual void | (            | `Fil |                                      |
-| ters </s | *filters*    | )          |                                      |
+| ters <sd | *filters*    | )          |                                      |
 |    |              |                  |                                      |
-| | unity::scope |              | dk/s |                                      |
-| copes/cp |              |            |                                      |
+| | unity::scope |              | k_un |                                      |
+| ity_scop |              |            |                                      |
 |    |              |                  |                                      |
-| | s::SearchLis |              | p/un |                                      |
-| ity.scop |              |            |                                      |
-|    |              |                  |                                      |
-| | tenerBase::p |              | es#a |                                      |
+| | s::SearchLis |              | es#a |                                      |
 | dab58c13 |              |            |                                      |
 |    |              |                  |                                      |
-| | ush          |              | cf60 |                                      |
+| | tenerBase::p |              | cf60 |                                      |
 | 4e0e64bd |              |            |                                      |
 |    |              |                  |                                      |
-| |              |              | 6b1a |                                      |
+| | ush          |              | 6b1a |                                      |
 | 745364d3 |              |            |                                      |
 |    |              |                  |                                      |
-| |              |              | >`__ |                                      |
+| |              |              | >`_  |                                      |
 |          |              |            |                                      |
 |    |              |                  |                                      |
 | |              |              | cons |                                      |

@@ -1,3 +1,7 @@
+.. _sdk_qtmultimedia_audio_devices_example:
+QtMultimedia Audio Devices Example
+==================================
+
 
 
 *Audio Devices* demonstrates how to create a simple application to list

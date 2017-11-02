@@ -1,3 +1,7 @@
+.. _sdk_qtmultimedia_qt_multimedia_on_blackberry:
+QtMultimedia Qt Multimedia on BlackBerry
+========================================
+
 
 
 Qt Multimedia supports BlackBerry devices that run the BB10 operating
@@ -40,10 +44,10 @@ element can be put on top of the video, and QML shaders have no effect.
 The Qt Audio Engine QML module is fully supported, as it is based on
 OpenAL which is available in BB10.
 
-The `QCamera </sdk/apps/qml/QtMultimedia/qml-multimedia#camera>`__
+The `QCamera </sdk/apps/qml/QtMultimedia/qml-multimedia/#camera>`_ 
 support includes recording of videos and taking photos. The viewfinder
 is available through QCameraViewfinder and the
-`VideoOutput </sdk/apps/qml/QtMultimedia/VideoOutput/>`__ QML element.
+:ref:`VideoOutput <sdk_qtmultimedia_videooutput>` QML element.
 
 Note: To use the camera on BB10, your application needs the
 'access\_shared', 'use\_camera' and 'record\_audio' permissions set in

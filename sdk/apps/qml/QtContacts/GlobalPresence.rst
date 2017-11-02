@@ -1,3 +1,7 @@
+.. _sdk_qtcontacts_globalpresence:
+QtContacts GlobalPresence
+=========================
+
 The GlobalPresence element provides aggregated presence information for
 a contact, synthesized or supplied by the backend.
 
@@ -8,36 +12,38 @@ a contact, synthesized or supplied by the backend.
 Properties
 ----------
 
--  ****`customMessage </sdk/apps/qml/QtContacts/GlobalPresence#customMessage-prop>`__****
+-  :ref:`customMessage <sdk_qtcontacts_globalpresence_customMessage-prop>`
    : string
--  ****`imageUrl </sdk/apps/qml/QtContacts/GlobalPresence#imageUrl-prop>`__****
-   : url
--  ****`nickname </sdk/apps/qml/QtContacts/GlobalPresence#nickname-prop>`__****
+-  :ref:`imageUrl <sdk_qtcontacts_globalpresence_imageUrl-prop>` :
+   url
+-  :ref:`nickname <sdk_qtcontacts_globalpresence_nickname-prop>` :
+   string
+-  :ref:`state <sdk_qtcontacts_globalpresence_state-prop>` :
+   enumeration
+-  :ref:`stateText <sdk_qtcontacts_globalpresence_stateText-prop>`
    : string
--  ****`state </sdk/apps/qml/QtContacts/GlobalPresence#state-prop>`__****
-   : enumeration
--  ****`stateText </sdk/apps/qml/QtContacts/GlobalPresence#stateText-prop>`__****
-   : string
--  ****`timestamp </sdk/apps/qml/QtContacts/GlobalPresence#timestamp-prop>`__****
+-  :ref:`timestamp <sdk_qtcontacts_globalpresence_timestamp-prop>`
    : date
 
 Detailed Description
 --------------------
 
-`GlobalPresence </sdk/apps/qml/QtContacts/GlobalPresence/>`__ element
-contains the following field types:
+:ref:`GlobalPresence <sdk_qtcontacts_globalpresence>` element contains the
+following field types:
 
--  `GlobalPresence </sdk/apps/qml/QtContacts/GlobalPresence/>`__.Timestamp
--  `GlobalPresence </sdk/apps/qml/QtContacts/GlobalPresence/>`__.Nickname
--  `GlobalPresence </sdk/apps/qml/QtContacts/GlobalPresence/>`__.State
--  `GlobalPresence </sdk/apps/qml/QtContacts/GlobalPresence/>`__.StateText
--  `GlobalPresence </sdk/apps/qml/QtContacts/GlobalPresence/>`__.ImageUrl
--  `GlobalPresence </sdk/apps/qml/QtContacts/GlobalPresence/>`__.CustomMessage
+-  :ref:`GlobalPresence <sdk_qtcontacts_globalpresence>`.Timestamp
+-  :ref:`GlobalPresence <sdk_qtcontacts_globalpresence>`.Nickname
+-  :ref:`GlobalPresence <sdk_qtcontacts_globalpresence>`.State
+-  :ref:`GlobalPresence <sdk_qtcontacts_globalpresence>`.StateText
+-  :ref:`GlobalPresence <sdk_qtcontacts_globalpresence>`.ImageUrl
+-  :ref:`GlobalPresence <sdk_qtcontacts_globalpresence>`.CustomMessage
 
 This element is part of the **QtContacts** module.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtcontacts_globalpresence_customMessage-prop:
 
 +--------------------------------------------------------------------------+
 |        \ customMessage : string                                          |
@@ -48,6 +54,8 @@ online account about which this detail stores presence information.
 
 | 
 
+.. _sdk_qtcontacts_globalpresence_imageUrl-prop:
+
 +--------------------------------------------------------------------------+
 |        \ imageUrl : url                                                  |
 +--------------------------------------------------------------------------+
@@ -57,14 +65,18 @@ the online account about which this detail stores presence information.
 
 | 
 
+.. _sdk_qtcontacts_globalpresence_nickname-prop:
+
 +--------------------------------------------------------------------------+
 |        \ nickname : string                                               |
 +--------------------------------------------------------------------------+
 
 This property holds the nickname value of the
-`GlobalPresence </sdk/apps/qml/QtContacts/GlobalPresence/>`__.
+:ref:`GlobalPresence <sdk_qtcontacts_globalpresence>`.
 
 | 
+
+.. _sdk_qtcontacts_globalpresence_state-prop:
 
 +--------------------------------------------------------------------------+
 |        \ state : enumeration                                             |
@@ -84,6 +96,8 @@ This property holds the presence state enumeration value.
 
 | 
 
+.. _sdk_qtcontacts_globalpresence_stateText-prop:
+
 +--------------------------------------------------------------------------+
 |        \ stateText : string                                              |
 +--------------------------------------------------------------------------+
@@ -93,11 +107,13 @@ state.
 
 | 
 
+.. _sdk_qtcontacts_globalpresence_timestamp-prop:
+
 +--------------------------------------------------------------------------+
 |        \ timestamp : date                                                |
 +--------------------------------------------------------------------------+
 
 This property holds the timestamp value of the
-`GlobalPresence </sdk/apps/qml/QtContacts/GlobalPresence/>`__.
+:ref:`GlobalPresence <sdk_qtcontacts_globalpresence>`.
 
 | 

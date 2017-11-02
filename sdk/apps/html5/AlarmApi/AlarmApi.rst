@@ -1,3 +1,7 @@
+.. _sdk_alarmapi_alarmapi:
+AlarmApi AlarmApi
+=================
+
 
 The AlarmApi object
 

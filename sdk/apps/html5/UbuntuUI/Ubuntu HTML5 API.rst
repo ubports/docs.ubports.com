@@ -1,6 +1,10 @@
+.. _sdk_ubuntuui_ubuntu_html5_api:
+UbuntuUI Ubuntu HTML5 API
+=========================
+
 These pages provide reference docs for the Ubunbtu HTML5 framework.
 
-See `developer.ubuntu.com <http://developer.ubuntu.com>`__ for more
+See `developer.ubuntu.com <http://developer.ubuntu.com>`_  for more
 information on writing Ubuntu HTML5 apps, including: using the Ubuntu
 SDK, creating HTML5 app projects, importing Ubuntu HTML5 CSS and
 JavaScript into your app, and more.

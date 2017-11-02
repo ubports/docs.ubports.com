@@ -1,3 +1,7 @@
+.. _sdk_qtmultimedia_radio_overview:
+QtMultimedia Radio Overview
+===========================
+
 
 
 The Qt Multimedia API provides a number of radio related classes for
@@ -69,11 +73,11 @@ position of the current frequency inside the band.
    :name: qml-types
 
 +--------------------------------------+--------------------------------------+
-| `Radio </sdk/apps/qml/QtMultimedia/R | Access radio functionality from a    |
-| adio/>`__                            | QML application                      |
+| :ref:`Radio <sdk_qtmultimedia_radio>`| Access radio functionality from a    |
+|                                      | QML application                      |
 +--------------------------------------+--------------------------------------+
-| `RadioData </sdk/apps/qml/QtMultimed | Access RDS data from a QML           |
-| ia/RadioData/>`__                    | application                          |
+| :ref:`RadioData <sdk_qtmultimedia_radioda | Access RDS data from a QML           |
+| ta>`_                                | application                          |
 +--------------------------------------+--------------------------------------+
 
 .. |image0| image:: /media/sdk/apps/qml/radiooverview/images/radio-example.png

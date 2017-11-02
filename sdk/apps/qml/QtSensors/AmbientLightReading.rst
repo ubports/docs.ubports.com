@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_ambientlightreading:
+QtSensors AmbientLightReading
+=============================
+
 The AmbientLightReading element holds the most AmbientLightSensor
 reading.
 
@@ -6,23 +10,21 @@ reading.
 +--------------------------------------+--------------------------------------+
 | Since:                               | QtSensors 5.0                        |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `SensorReading </sdk/apps/qml/QtSens |
-|                                      | ors/SensorReading/>`__               |
+| Inherits:                            | :ref:`SensorReading <sdk_qtsensors_sensor |
+|                                      | reading>`_                           |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`lightLevel </sdk/apps/qml/QtSensors/AmbientLightReading#lightLevel-prop>`__****
+-  :ref:`lightLevel <sdk_qtsensors_ambientlightreading_lightLevel-prop>`
    : LightLevel
 
 Detailed Description
 --------------------
 
-The
-`AmbientLightReading </sdk/apps/qml/QtSensors/AmbientLightReading/>`__
-element holds the most
-`AmbientLightSensor </sdk/apps/qml/QtSensors/AmbientLightSensor/>`__
+The :ref:`AmbientLightReading <sdk_qtsensors_ambientlightreading>` element
+holds the most :ref:`AmbientLightSensor <sdk_qtsensors_ambientlightsensor>`
 reading.
 
 This element wraps the QAmbientLightReading class. Please see the
@@ -32,6 +34,8 @@ This element cannot be directly created.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtsensors_ambientlightreading_lightLevel-prop:
 
 +--------------------------------------------------------------------------+
 |        \ lightLevel : LightLevel                                         |
@@ -43,8 +47,7 @@ Please see QAmbientLightReading::lightLevel for information about this
 property.
 
 Note that LightLevel constants are exposed through the
-`AmbientLightReading </sdk/apps/qml/QtSensors/AmbientLightReading/>`__
-class.
+:ref:`AmbientLightReading <sdk_qtsensors_ambientlightreading>` class.
 
 .. code:: cpp
 

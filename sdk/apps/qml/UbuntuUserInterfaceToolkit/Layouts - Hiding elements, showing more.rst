@@ -1,3 +1,7 @@
+.. _sdk_ubuntuuserinterfacetoolkit_layouts_-_hiding_elements,_showing_more:
+UbuntuUserInterfaceToolkit Layouts - Hiding elements, showing more
+==================================================================
+
 
 
 Till this point we know how to define a layout block, what is the
@@ -89,7 +93,7 @@ activated when the layout block width exceeds 70 GU.
 |image1|
 
 `Layouts - Overlay items in an item
-host </sdk/apps/qml/UbuntuUserInterfaceToolkit/ubuntu-layouts6/>`__
+host </sdk/apps/qml/UbuntuUserInterfaceToolkit/ubuntu-layouts6/>`_ 
 
 .. |image0| image:: /media/sdk/apps/qml/ubuntu-layouts5/images/layout6.png
 .. |image1| image:: /media/sdk/apps/qml/ubuntu-layouts5/images/layout6-2.png

@@ -1,3 +1,7 @@
+.. _sdk_qtqml_package:
+QtQml Package
+=============
+
 Specifies a collection of named items
 
 +---------------------+--------------------+
@@ -7,19 +11,18 @@ Specifies a collection of named items
 Attached Properties
 -------------------
 
--  ****`name </sdk/apps/qml/QtQml/Package#name-attached-prop>`__**** :
-   string
+-  **:ref:`name <sdk_qtqml_package#name-attached-prop>`** : string
 
 Detailed Description
 --------------------
 
 The Package class is used in conjunction with
-`VisualDataModel </sdk/apps/qml/QtQml/VisualDataModel/>`__ to enable
-delegates with a shared context to be provided to multiple views.
+:ref:`VisualDataModel <sdk_qtqml_visualdatamodel>` to enable delegates with
+a shared context to be provided to multiple views.
 
 Any item within a Package may be assigned a name via the
-`Package.name </sdk/apps/qml/QtQml/Package#name-attached-prop>`__
-attached property.
+:ref:`Package.name <sdk_qtqml_package#name-attached-prop>` attached
+property.
 
 The example below creates a Package containing two named items; *list*
 and *grid*. The third item in the package (the Rectangle) is parented to
@@ -87,7 +90,7 @@ which provides the chosen delegate.
     }
 
 **See also** Qt Quick Examples - Views, Qt Quick Demo - Photo Viewer,
-and `Qt QML </sdk/apps/qml/QtQml/qtqml-index/>`__.
+and `Qt QML </sdk/apps/qml/QtQml/qtqml-index/>`_ .
 
 Attached Property Documentation
 -------------------------------

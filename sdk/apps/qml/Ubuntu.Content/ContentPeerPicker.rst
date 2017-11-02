@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_content_contentpeerpicker:
+Ubuntu.Content ContentPeerPicker
+================================
+
 Component that allows users to select a source/destination for content
 transfer
 
@@ -8,24 +12,24 @@ transfer
 Properties
 ----------
 
--  ****`contentType </sdk/apps/qml/Ubuntu.Content/ContentPeerPicker#contentType-prop>`__****
+-  :ref:`contentType <sdk_ubuntu_content_contentpeerpicker_contentType-prop>`
    : ContentType
--  ****`customerPeerModelLoader </sdk/apps/qml/Ubuntu.Content/ContentPeerPicker#customerPeerModelLoader-prop>`__****
+-  :ref:`customerPeerModelLoader <sdk_ubuntu_content_contentpeerpicker_customerPeerModelLoader-prop>`
    : Loader
--  ****`handler </sdk/apps/qml/Ubuntu.Content/ContentPeerPicker#handler-prop>`__****
+-  :ref:`handler <sdk_ubuntu_content_contentpeerpicker_handler-prop>`
    : ContentHandler
--  ****`headerText </sdk/apps/qml/Ubuntu.Content/ContentPeerPicker#headerText-prop>`__****
+-  :ref:`headerText <sdk_ubuntu_content_contentpeerpicker_headerText-prop>`
    : string
--  ****`peer </sdk/apps/qml/Ubuntu.Content/ContentPeerPicker#peer-prop>`__****
-   : ContentPeer
--  ****`showTitle </sdk/apps/qml/Ubuntu.Content/ContentPeerPicker#showTitle-prop>`__****
+-  :ref:`peer <sdk_ubuntu_content_contentpeerpicker_peer-prop>` :
+   ContentPeer
+-  :ref:`showTitle <sdk_ubuntu_content_contentpeerpicker_showTitle-prop>`
    : bool
 
 Signals
 -------
 
--  ****`cancelPressed </sdk/apps/qml/Ubuntu.Content/ContentPeerPicker#cancelPressed-signal>`__****\ ()
--  ****`peerSelected </sdk/apps/qml/Ubuntu.Content/ContentPeerPicker#peerSelected-signal>`__****\ ()
+-  :ref:`cancelPressed <sdk_ubuntu_content_contentpeerpicker_cancelPressed-signal>`\ ()
+-  :ref:`peerSelected <sdk_ubuntu_content_contentpeerpicker_peerSelected-signal>`\ ()
 
 Detailed Description
 --------------------
@@ -36,39 +40,45 @@ which are appropriate for transferring a given content type with.
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_content_contentpeerpicker_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ contentType :                                                   |
-| `ContentType </sdk/apps/qml/Ubuntu.Content/ContentType/>`__              |
+| :ref:` <>`\ contentType : `ContentType <sdk_ubuntu_content_contenttype>`  |
 +--------------------------------------------------------------------------+
 
-The `ContentType </sdk/apps/qml/Ubuntu.Content/ContentType/>`__ to use
-when finding peers.
+The :ref:`ContentType <sdk_ubuntu_content_contenttype>` to use when finding
+peers.
 
 | 
+
+.. _sdk_ubuntu_content_contentpeerpicker_customerPeerModelLoader-prop:
 
 +--------------------------------------------------------------------------+
 |        \ customerPeerModelLoader : Loader                                |
 +--------------------------------------------------------------------------+
 
 A Loader containing a
-`ContentPeerModel </sdk/apps/qml/Ubuntu.Content/ContentPeerModel/>`__.
+:ref:`ContentPeerModel <sdk_ubuntu_content_contentpeermodel>`.
 
 This can optionally be used to provide a pre-populated
-`ContentPeerModel </sdk/apps/qml/Ubuntu.Content/ContentPeerModel/>`__ to
-this
-`ContentPeerPicker </sdk/apps/qml/Ubuntu.Content/ContentPeerPicker/>`__.
+:ref:`ContentPeerModel <sdk_ubuntu_content_contentpeermodel>` to this
+:ref:`ContentPeerPicker <sdk_ubuntu_content_contentpeerpicker>`.
 
 | 
+
+.. _sdk_ubuntu_content_contentpeerpicker_handler-prop:
 
 +--------------------------------------------------------------------------+
 |        \ handler :                                                       |
-| `ContentHandler </sdk/apps/qml/Ubuntu.Content/ContentHandler/>`__        |
+| :ref:`ContentHandler <sdk_ubuntu_content_contenthandler>`                   |
 +--------------------------------------------------------------------------+
 
-The `ContentHandler </sdk/apps/qml/Ubuntu.Content/ContentHandler/>`__ to
-use when finding peers.
+The :ref:`ContentHandler <sdk_ubuntu_content_contenthandler>` to use when
+finding peers.
 
 | 
+
+.. _sdk_ubuntu_content_contentpeerpicker_headerText-prop:
 
 +--------------------------------------------------------------------------+
 |        \ headerText : string                                             |
@@ -78,20 +88,23 @@ Text to display in the header.
 
 | 
 
+.. _sdk_ubuntu_content_contentpeerpicker_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ peer :                                                          |
-| `ContentPeer </sdk/apps/qml/Ubuntu.Content/ContentPeer/>`__              |
+| :ref:` <>`\ peer : `ContentPeer <sdk_ubuntu_content_contentpeer>`      |
 +--------------------------------------------------------------------------+
 
 The peer selected by the user.
 
 Once the
-`peerSelected </sdk/apps/qml/Ubuntu.Content/ContentPeerPicker#peerSelected-signal>`__
+:ref:`peerSelected <sdk_ubuntu_content_contentpeerpicker#peerSelected-signal>`
 signal has been sent, this provides the
-`ContentPeer </sdk/apps/qml/Ubuntu.Content/ContentPeer/>`__ which the
-user has selected.
+:ref:`ContentPeer <sdk_ubuntu_content_contentpeer>` which the user has
+selected.
 
 | 
+
+.. _sdk_ubuntu_content_contentpeerpicker_showTitle-prop:
 
 +--------------------------------------------------------------------------+
 |        \ showTitle : bool                                                |
@@ -107,20 +120,22 @@ embedding the picker within another page or popup.
 Signal Documentation
 --------------------
 
+.. _sdk_ubuntu_content_contentpeerpicker_cancelPressed()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ cancelPressed()                                                 |
 +--------------------------------------------------------------------------+
 
 Emitted when the user clicks the cancel button.
 
-The
-`ContentPeerPicker </sdk/apps/qml/Ubuntu.Content/ContentPeerPicker/>`__
-will be hidden automatically when the user cancels the operations and
-the active
-`ContentTransfer </sdk/apps/qml/Ubuntu.Content/ContentTransfer/>`__ will
-be set to Aborted. ``onCancelPressed``
+The :ref:`ContentPeerPicker <sdk_ubuntu_content_contentpeerpicker>` will be
+hidden automatically when the user cancels the operations and the active
+:ref:`ContentTransfer <sdk_ubuntu_content_contenttransfer>` will be set to
+Aborted. ``onCancelPressed``
 
 | 
+
+.. _sdk_ubuntu_content_contentpeerpicker_peerSelected()-prop:
 
 +--------------------------------------------------------------------------+
 |        \ peerSelected()                                                  |

@@ -1,3 +1,7 @@
+.. _sdk_u1db_tutorial:
+U1db Tutorial
+=============
+
 
 
 .. rubric:: 1.0.0 Overview of U1Db-Qt
@@ -41,10 +45,10 @@ A Database element is also a valuable tool for cases where specific data
 from a repository needs to be retrieved quickly, without indexing or
 querying ahead of time. The 'contents' object associated with the
 Database element can be used together with base items such as
-`TextField </sdk/apps/qml/Ubuntu.Components/TextField/>`__ or
-`TextArea </sdk/apps/qml/Ubuntu.Components/TextArea/>`__ and model-based
-items like ListView and
-`ListItems.Standard </sdk/apps/qml/Ubuntu.Components/ListItems.Standard/>`__.
+:ref:`TextField <sdk_ubuntu_components_textfield>` or
+:ref:`TextArea <sdk_ubuntu_components_textarea>` and model-based items like
+ListView and
+`ListItems.Standard </sdk/apps/qml/Ubuntu.Components/ListItems.Standard/>`_ .
 
 .. rubric:: 2.0.1 Database Properties
    :name: 2-0-1-database-properties

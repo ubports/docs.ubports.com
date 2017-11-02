@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_holsterreading:
+QtSensors HolsterReading
+========================
+
 The HolsterReading element holds the most recent HolsterSensor reading.
 
 +--------------------------------------+--------------------------------------+
@@ -5,22 +9,21 @@ The HolsterReading element holds the most recent HolsterSensor reading.
 +--------------------------------------+--------------------------------------+
 | Since:                               | QtSensors 5.1                        |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `SensorReading </sdk/apps/qml/QtSens |
-|                                      | ors/SensorReading/>`__               |
+| Inherits:                            | :ref:`SensorReading <sdk_qtsensors_sensor |
+|                                      | reading>`_                           |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`holstered </sdk/apps/qml/QtSensors/HolsterReading#holstered-prop>`__****
-   : qreal
+-  :ref:`holstered <sdk_qtsensors_holsterreading_holstered-prop>` :
+   qreal
 
 Detailed Description
 --------------------
 
-The `HolsterReading </sdk/apps/qml/QtSensors/HolsterReading/>`__ element
-holds the most recent
-`HolsterSensor </sdk/apps/qml/QtSensors/HolsterSensor/>`__ reading.
+The :ref:`HolsterReading <sdk_qtsensors_holsterreading>` element holds the
+most recent :ref:`HolsterSensor <sdk_qtsensors_holstersensor>` reading.
 
 This element wraps the QHolsterReading class. Please see the
 documentation for QHolsterReading for details.
@@ -29,6 +32,8 @@ This element cannot be directly created.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtsensors_holsterreading_holstered-prop:
 
 +--------------------------------------------------------------------------+
 |        \ holstered : qreal                                               |

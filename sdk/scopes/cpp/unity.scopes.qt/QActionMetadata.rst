@@ -1,5 +1,9 @@
+.. _sdk_unity_scopes_qt_qactionmetadata:
+unity.scopes.qt QActionMetadata
+===============================
+
 Metadata passed to scopes for preview and activation.
-`More... </sdk/scopes/cpp/unity.scopes.qt/QActionMetadata#details>`__
+:ref:`More... <sdk_unity_scopes_qt_qactionmetadata#details>`
 
 ``#include <unity/scopes/qt/QActionMetadata.h>``
 
@@ -8,7 +12,7 @@ Metadata passed to scopes for preview and activation.
 
  
 
-`QActionMetadata </sdk/scopes/cpp/unity.scopes.qt/QActionMetadata#acc36c52fac186af3571cb29745d3981c>`__
+:ref:`QActionMetadata <sdk_unity_scopes_qt_qactionmetadata#acc36c52fac186af3571cb29745d3981c>`
 (QString const &locale, QString const &form\_factor)
 
  
@@ -19,7 +23,7 @@ Metadata passed to scopes for preview and activation.
 
 void 
 
-`set\_scope\_data </sdk/scopes/cpp/unity.scopes.qt/QActionMetadata#a5913d97d109db7b2e4596bc1b3f53ed1>`__
+:ref:`set\_scope\_data <sdk_unity_scopes_qt_qactionmetadata#a5913d97d109db7b2e4596bc1b3f53ed1>`
 (QVariant const &data)
 
  
@@ -30,7 +34,7 @@ void 
 
 QVariant 
 
-`scope\_data </sdk/scopes/cpp/unity.scopes.qt/QActionMetadata#ae1103e2a369e300f05f8fd3dea8020f7>`__
+:ref:`scope\_data <sdk_unity_scopes_qt_qactionmetadata#ae1103e2a369e300f05f8fd3dea8020f7>`
 () const
 
  
@@ -41,7 +45,7 @@ QVariant 
 
 void 
 
-`set\_hint </sdk/scopes/cpp/unity.scopes.qt/QActionMetadata#ab2b595bf273926b0bc5a00df98ff38e1>`__
+:ref:`set\_hint <sdk_unity_scopes_qt_qactionmetadata#ab2b595bf273926b0bc5a00df98ff38e1>`
 (QString const &key, QVariant const &value)
 
  
@@ -52,7 +56,7 @@ void 
 
 QVariantMap 
 
-`hints </sdk/scopes/cpp/unity.scopes.qt/QActionMetadata#a62be4635a002af1c69cb9a105009a6c2>`__
+:ref:`hints <sdk_unity_scopes_qt_qactionmetadata#a62be4635a002af1c69cb9a105009a6c2>`
 () const
 
  
@@ -63,7 +67,7 @@ QVariantMap 
 
 bool 
 
-`contains\_hint </sdk/scopes/cpp/unity.scopes.qt/QActionMetadata#a9016175d5f8ffe9725d95a68b1939553>`__
+:ref:`contains\_hint <sdk_unity_scopes_qt_qactionmetadata#a9016175d5f8ffe9725d95a68b1939553>`
 (QString const &key) const
 
  
@@ -74,7 +78,7 @@ bool 
 
 QVariant & 
 
-`operator[] </sdk/scopes/cpp/unity.scopes.qt/QActionMetadata#a666efb6091fba93a007736ffe1487c82>`__
+:ref:`operator[] <sdk_unity_scopes_qt_qactionmetadata#a666efb6091fba93a007736ffe1487c82>`
 (QString const &key)
 
  
@@ -85,7 +89,7 @@ QVariant & 
 
 QVariant const & 
 
-`operator[] </sdk/scopes/cpp/unity.scopes.qt/QActionMetadata#a607f33913139706424e925dac02a1a3d>`__
+:ref:`operator[] <sdk_unity_scopes_qt_qactionmetadata#a607f33913139706424e925dac02a1a3d>`
 (QString const &key) const
 
  
@@ -102,33 +106,27 @@ usual value semantics.
          
 
 **QActionMetadata**
-(`QActionMetadata </sdk/scopes/cpp/unity.scopes.qt/QActionMetadata/>`__
-const &other)
+(:ref:`QActionMetadata <sdk_unity_scopes_qt_qactionmetadata>` const &other)
 
  
 
          
 
 **QActionMetadata**
-(`QActionMetadata </sdk/scopes/cpp/unity.scopes.qt/QActionMetadata/>`__
-&&)
+(:ref:`QActionMetadata <sdk_unity_scopes_qt_qactionmetadata>` &&)
 
  
 
-`QActionMetadata </sdk/scopes/cpp/unity.scopes.qt/QActionMetadata/>`__
-& 
+:ref:` <>` `QActionMetadata <sdk_unity_scopes_qt_qactionmetadata>` & 
 
-**operator=**
-(`QActionMetadata </sdk/scopes/cpp/unity.scopes.qt/QActionMetadata/>`__
+**operator=** (:ref:`QActionMetadata <sdk_unity_scopes_qt_qactionmetadata>`
 const &other)
 
  
 
-`QActionMetadata </sdk/scopes/cpp/unity.scopes.qt/QActionMetadata/>`__
-& 
+:ref:` <>` `QActionMetadata <sdk_unity_scopes_qt_qactionmetadata>` & 
 
-**operator=**
-(`QActionMetadata </sdk/scopes/cpp/unity.scopes.qt/QActionMetadata/>`__
+**operator=** (:ref:`QActionMetadata <sdk_unity_scopes_qt_qactionmetadata>`
 &&)
 
  
@@ -139,9 +137,9 @@ Detailed Description
 Metadata passed to scopes for preview and activation.
 
 See also
-    `unity::scopes::qt::QScopeBase::preview </sdk/scopes/cpp/unity.scopes.qt/QScopeBase#afdedf1ba41623c1ac060ecc4b014f67f>`__,
-    `unity::scopes::ScopeBase::activate </sdk/scopes/cpp/unity.scopes.ScopeBase#a49a0b9ada0eeb4c71e6a2181c3d8c9e7>`__,
-    `unity::scopes::ScopeBase::perform\_action </sdk/scopes/cpp/unity.scopes.ScopeBase#a2f4d476fa790349c9a7de52be3232d11>`__
+    :ref:`unity::scopes::qt::QScopeBase::preview <sdk_unity_scopes_qt_qscopebase#afdedf1ba41623c1ac060ecc4b014f67f>`,
+    `unity::scopes::ScopeBase::activate </sdk/scopes/cpp/unity.scopes.ScopeBase/#a49a0b9ada0eeb4c71e6a2181c3d8c9e7>`_ ,
+    `unity::scopes::ScopeBase::perform\_action </sdk/scopes/cpp/unity.scopes.ScopeBase/#a2f4d476fa790349c9a7de52be3232d11>`_ 
 
 Constructor & Destructor Documentation
 --------------------------------------
@@ -156,7 +154,7 @@ Constructor & Destructor Documentation
 |                    | )                  |                    |                    |
 +--------------------+--------------------+--------------------+--------------------+
 
-Create `ActionMetadata </sdk/scopes/cpp/unity.scopes.ActionMetadata/>`__
+Create `ActionMetadata </sdk/scopes/cpp/unity.scopes.ActionMetadata/>`_ 
 with the given locale and form factor.
 
 Parameters
@@ -174,7 +172,7 @@ Member Function Documentation
 +-----------------------------------------------------------+-----+--------------------+---------+-----+---------+
 
 Check if this
-`SearchMetadata </sdk/scopes/cpp/unity.scopes.SearchMetadata/>`__ has a
+`SearchMetadata </sdk/scopes/cpp/unity.scopes.SearchMetadata/>`_  has a
 hint.
 
 Parameters
@@ -256,7 +254,7 @@ Exceptions
 +----------------+----------------+----------------+----------------+----------------+
 
 Get data attached to this
-`ActionMetadata </sdk/scopes/cpp/unity.scopes.ActionMetadata/>`__.
+`ActionMetadata </sdk/scopes/cpp/unity.scopes.ActionMetadata/>`_ .
 
 Returns
     The attached data, or QVariant::null.
@@ -291,7 +289,7 @@ Parameters
 +--------------+--------------+--------------+--------------+--------------+--------------+
 
 Attach arbitrary data to this
-`ActionMetadata </sdk/scopes/cpp/unity.scopes.ActionMetadata/>`__.
+`ActionMetadata </sdk/scopes/cpp/unity.scopes.ActionMetadata/>`_ .
 
 Parameters
     +--------+-----------------------------+

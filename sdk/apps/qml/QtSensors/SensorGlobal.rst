@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_sensorglobal:
+QtSensors SensorGlobal
+======================
+
 The SensorGlobal element provides the module API.
 
 +---------------------+------------------------+
@@ -10,17 +14,17 @@ Methods
 -------
 
 -  string
-   ****`defaultSensorForType </sdk/apps/qml/QtSensors/SensorGlobal#defaultSensorForType-method>`__****\ (type)
+   **:ref:`defaultSensorForType <sdk_qtsensors_sensorglobal#defaultSensorForType-method>`**\ (type)
 -  list<string>
-   ****`sensorTypes </sdk/apps/qml/QtSensors/SensorGlobal#sensorTypes-method>`__****\ ()
+   **:ref:`sensorTypes <sdk_qtsensors_sensorglobal#sensorTypes-method>`**\ ()
 -  list<string>
-   ****`sensorsForType </sdk/apps/qml/QtSensors/SensorGlobal#sensorsForType-method>`__****\ (type)
+   **:ref:`sensorsForType <sdk_qtsensors_sensorglobal#sensorsForType-method>`**\ (type)
 
 Detailed Description
 --------------------
 
-The `SensorGlobal </sdk/apps/qml/QtSensors/SensorGlobal/>`__ element
-provides the module API.
+The :ref:`SensorGlobal <sdk_qtsensors_sensorglobal>` element provides the
+module API.
 
 This element cannot be directly created. It can only be accessed via a
 namespace import.
@@ -38,6 +42,8 @@ namespace import.
 Method Documentation
 --------------------
 
+.. _sdk_qtsensors_sensorglobal_string defaultSensorForType-method:
+
 +--------------------------------------------------------------------------+
 |        \ string defaultSensorForType(type)                               |
 +--------------------------------------------------------------------------+
@@ -49,6 +55,8 @@ Please see QSensor::defaultSensorForType() for information.
 
 | 
 
+.. _sdk_qtsensors_sensorglobal_list<string> sensorTypes-method:
+
 +--------------------------------------------------------------------------+
 |        \ list<string> sensorTypes()                                      |
 +--------------------------------------------------------------------------+
@@ -58,6 +66,8 @@ Returns a list of the sensor types that have been registered.
 Please see QSensor::sensorTypes() for information.
 
 | 
+
+.. _sdk_qtsensors_sensorglobal_list<string> sensorsForType-method:
 
 +--------------------------------------------------------------------------+
 |        \ list<string> sensorsForType(type)                               |

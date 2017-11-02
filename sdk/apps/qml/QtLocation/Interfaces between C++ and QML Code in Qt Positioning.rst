@@ -1,3 +1,7 @@
+.. _sdk_qtlocation_interfaces_between_c++_and_qml_code_in_qt_positioning:
+QtLocation Interfaces between C++ and QML Code in Qt Positioning
+================================================================
+
 
 
 .. rubric:: Category - QPlaceCategory

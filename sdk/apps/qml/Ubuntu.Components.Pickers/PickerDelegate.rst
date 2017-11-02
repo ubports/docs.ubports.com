@@ -1,31 +1,37 @@
+.. _sdk_ubuntu_components_pickers_pickerdelegate:
+Ubuntu.Components.Pickers PickerDelegate
+========================================
+
 PickerDelegate component serves as base for Picker delegates.
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import Ubuntu.Components.Pickers 1.3 |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `AbstractButton </sdk/apps/qml/Ubunt |
-|                                      | u.Components/AbstractButton/>`__     |
+| Inherits:                            | :ref:`AbstractButton <sdk_ubuntu_componen |
+|                                      | ts_abstractbutton>`_                 |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`picker </sdk/apps/qml/Ubuntu.Components/Pickers.PickerDelegate#picker-prop>`__****
+-  `picker </sdk/apps/qml/Ubuntu.Components/Pickers.PickerDelegate/_picker-prop>`_ 
    : Picker
 
 Detailed Description
 --------------------
 
-`PickerDelegate </sdk/apps/qml/Ubuntu.Components/Pickers.PickerDelegate/>`__
+`PickerDelegate </sdk/apps/qml/Ubuntu.Components/Pickers.PickerDelegate/>`_ 
 is a holder component for delegates used in a Picker element. Each
 picker delegate must be derived from this type.
 
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_pickers_pickerdelegate_[read-only] picker-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [read-only] picker :                                            |
-| `Picker </sdk/apps/qml/Ubuntu.Components/Pickers.Picker/>`__             |
+| `Picker </sdk/apps/qml/Ubuntu.Components/Pickers.Picker/>`_              |
 +--------------------------------------------------------------------------+
 
 The property holds the Picker component the delegate belongs to.

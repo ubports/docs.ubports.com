@@ -1,177 +1,172 @@
+.. _sdk_qtquick_textinput:
+QtQuick TextInput
+=================
+
 Displays an editable line of text
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtQuick 2.4                   |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Item </sdk/apps/qml/QtQuick/Item/>` |
-|                                      | __                                   |
+| Inherits:                            | :ref:`Item <sdk_qtquick_item>`       |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`acceptableInput </sdk/apps/qml/QtQuick/TextInput#acceptableInput-prop>`__****
+-  :ref:`acceptableInput <sdk_qtquick_textinput_acceptableInput-prop>`
    : bool
--  ****`activeFocusOnPress </sdk/apps/qml/QtQuick/TextInput#activeFocusOnPress-prop>`__****
+-  :ref:`activeFocusOnPress <sdk_qtquick_textinput_activeFocusOnPress-prop>`
    : bool
--  ****`autoScroll </sdk/apps/qml/QtQuick/TextInput#autoScroll-prop>`__****
-   : bool
--  ****`canPaste </sdk/apps/qml/QtQuick/TextInput#canPaste-prop>`__****
-   : bool
--  ****`canRedo </sdk/apps/qml/QtQuick/TextInput#canRedo-prop>`__**** :
-   bool
--  ****`canUndo </sdk/apps/qml/QtQuick/TextInput#canUndo-prop>`__**** :
-   bool
--  ****`color </sdk/apps/qml/QtQuick/TextInput#color-prop>`__**** :
-   color
--  ****`contentHeight </sdk/apps/qml/QtQuick/TextInput#contentHeight-prop>`__****
+-  :ref:`autoScroll <sdk_qtquick_textinput_autoScroll-prop>` : bool
+-  :ref:`canPaste <sdk_qtquick_textinput_canPaste-prop>` : bool
+-  :ref:`canRedo <sdk_qtquick_textinput_canRedo-prop>` : bool
+-  :ref:`canUndo <sdk_qtquick_textinput_canUndo-prop>` : bool
+-  :ref:`color <sdk_qtquick_textinput_color-prop>` : color
+-  :ref:`contentHeight <sdk_qtquick_textinput_contentHeight-prop>`
    : real
--  ****`contentWidth </sdk/apps/qml/QtQuick/TextInput#contentWidth-prop>`__****
-   : real
--  ****`cursorDelegate </sdk/apps/qml/QtQuick/TextInput#cursorDelegate-prop>`__****
+-  :ref:`contentWidth <sdk_qtquick_textinput_contentWidth-prop>` :
+   real
+-  :ref:`cursorDelegate <sdk_qtquick_textinput_cursorDelegate-prop>`
    : Component
--  ****`cursorPosition </sdk/apps/qml/QtQuick/TextInput#cursorPosition-prop>`__****
+-  :ref:`cursorPosition <sdk_qtquick_textinput_cursorPosition-prop>`
    : int
--  ****`cursorRectangle </sdk/apps/qml/QtQuick/TextInput#cursorRectangle-prop>`__****
+-  :ref:`cursorRectangle <sdk_qtquick_textinput_cursorRectangle-prop>`
    : rectangle
--  ****`cursorVisible </sdk/apps/qml/QtQuick/TextInput#cursorVisible-prop>`__****
+-  :ref:`cursorVisible <sdk_qtquick_textinput_cursorVisible-prop>`
    : bool
--  ****`displayText </sdk/apps/qml/QtQuick/TextInput#displayText-prop>`__****
-   : string
--  ****`echoMode </sdk/apps/qml/QtQuick/TextInput#echoMode-prop>`__****
+-  :ref:`displayText <sdk_qtquick_textinput_displayText-prop>` :
+   string
+-  :ref:`echoMode <sdk_qtquick_textinput_echoMode-prop>` :
+   enumeration
+-  :ref:`effectiveHorizontalAlignment <sdk_qtquick_textinput_effectiveHorizontalAlignment-prop>`
    : enumeration
--  ****`effectiveHorizontalAlignment </sdk/apps/qml/QtQuick/TextInput#effectiveHorizontalAlignment-prop>`__****
+-  :ref:`font.bold <sdk_qtquick_textinput_font.bold-prop>` : bool
+-  :ref:`font.capitalization <sdk_qtquick_textinput_font.capitalization-prop>`
    : enumeration
--  ****`font.bold </sdk/apps/qml/QtQuick/TextInput#font.bold-prop>`__****
-   : bool
--  ****`font.capitalization </sdk/apps/qml/QtQuick/TextInput#font.capitalization-prop>`__****
-   : enumeration
--  ****`font.family </sdk/apps/qml/QtQuick/TextInput#font.family-prop>`__****
-   : string
--  ****`font.italic </sdk/apps/qml/QtQuick/TextInput#font.italic-prop>`__****
-   : bool
--  ****`font.letterSpacing </sdk/apps/qml/QtQuick/TextInput#font.letterSpacing-prop>`__****
+-  :ref:`font.family <sdk_qtquick_textinput_font.family-prop>` :
+   string
+-  :ref:`font.italic <sdk_qtquick_textinput_font.italic-prop>` :
+   bool
+-  :ref:`font.letterSpacing <sdk_qtquick_textinput_font.letterSpacing-prop>`
    : real
--  ****`font.pixelSize </sdk/apps/qml/QtQuick/TextInput#font.pixelSize-prop>`__****
+-  :ref:`font.pixelSize <sdk_qtquick_textinput_font.pixelSize-prop>`
    : int
--  ****`font.pointSize </sdk/apps/qml/QtQuick/TextInput#font.pointSize-prop>`__****
+-  :ref:`font.pointSize <sdk_qtquick_textinput_font.pointSize-prop>`
    : real
--  ****`font.strikeout </sdk/apps/qml/QtQuick/TextInput#font.strikeout-prop>`__****
+-  :ref:`font.strikeout <sdk_qtquick_textinput_font.strikeout-prop>`
    : bool
--  ****`font.underline </sdk/apps/qml/QtQuick/TextInput#font.underline-prop>`__****
+-  :ref:`font.underline <sdk_qtquick_textinput_font.underline-prop>`
    : bool
--  ****`font.weight </sdk/apps/qml/QtQuick/TextInput#font.weight-prop>`__****
-   : enumeration
--  ****`font.wordSpacing </sdk/apps/qml/QtQuick/TextInput#font.wordSpacing-prop>`__****
+-  :ref:`font.weight <sdk_qtquick_textinput_font.weight-prop>` :
+   enumeration
+-  :ref:`font.wordSpacing <sdk_qtquick_textinput_font.wordSpacing-prop>`
    : real
--  ****`horizontalAlignment </sdk/apps/qml/QtQuick/TextInput#horizontalAlignment-prop>`__****
+-  :ref:`horizontalAlignment <sdk_qtquick_textinput_horizontalAlignment-prop>`
    : enumeration
--  ****`inputMask </sdk/apps/qml/QtQuick/TextInput#inputMask-prop>`__****
+-  :ref:`inputMask <sdk_qtquick_textinput_inputMask-prop>` : string
+-  :ref:`inputMethodComposing <sdk_qtquick_textinput_inputMethodComposing-prop>`
+   : bool
+-  :ref:`inputMethodHints <sdk_qtquick_textinput_inputMethodHints-prop>`
+   : enumeration
+-  :ref:`length <sdk_qtquick_textinput_length-prop>` : int
+-  :ref:`maximumLength <sdk_qtquick_textinput_maximumLength-prop>`
+   : int
+-  :ref:`mouseSelectionMode <sdk_qtquick_textinput_mouseSelectionMode-prop>`
+   : enumeration
+-  :ref:`passwordCharacter <sdk_qtquick_textinput_passwordCharacter-prop>`
    : string
--  ****`inputMethodComposing </sdk/apps/qml/QtQuick/TextInput#inputMethodComposing-prop>`__****
+-  :ref:`passwordMaskDelay <sdk_qtquick_textinput_passwordMaskDelay-prop>`
+   : int
+-  :ref:`persistentSelection <sdk_qtquick_textinput_persistentSelection-prop>`
    : bool
--  ****`inputMethodHints </sdk/apps/qml/QtQuick/TextInput#inputMethodHints-prop>`__****
-   : enumeration
--  ****`length </sdk/apps/qml/QtQuick/TextInput#length-prop>`__**** :
+-  :ref:`readOnly <sdk_qtquick_textinput_readOnly-prop>` : bool
+-  :ref:`renderType <sdk_qtquick_textinput_renderType-prop>` :
+   enumeration
+-  :ref:`selectByMouse <sdk_qtquick_textinput_selectByMouse-prop>`
+   : bool
+-  :ref:`selectedText <sdk_qtquick_textinput_selectedText-prop>` :
+   string
+-  :ref:`selectedTextColor <sdk_qtquick_textinput_selectedTextColor-prop>`
+   : color
+-  :ref:`selectionColor <sdk_qtquick_textinput_selectionColor-prop>`
+   : color
+-  :ref:`selectionEnd <sdk_qtquick_textinput_selectionEnd-prop>` :
    int
--  ****`maximumLength </sdk/apps/qml/QtQuick/TextInput#maximumLength-prop>`__****
+-  :ref:`selectionStart <sdk_qtquick_textinput_selectionStart-prop>`
    : int
--  ****`mouseSelectionMode </sdk/apps/qml/QtQuick/TextInput#mouseSelectionMode-prop>`__****
+-  :ref:`text <sdk_qtquick_textinput_text-prop>` : string
+-  :ref:`validator <sdk_qtquick_textinput_validator-prop>` :
+   Validator
+-  :ref:`verticalAlignment <sdk_qtquick_textinput_verticalAlignment-prop>`
    : enumeration
--  ****`passwordCharacter </sdk/apps/qml/QtQuick/TextInput#passwordCharacter-prop>`__****
-   : string
--  ****`passwordMaskDelay </sdk/apps/qml/QtQuick/TextInput#passwordMaskDelay-prop>`__****
-   : int
--  ****`persistentSelection </sdk/apps/qml/QtQuick/TextInput#persistentSelection-prop>`__****
-   : bool
--  ****`readOnly </sdk/apps/qml/QtQuick/TextInput#readOnly-prop>`__****
-   : bool
--  ****`renderType </sdk/apps/qml/QtQuick/TextInput#renderType-prop>`__****
-   : enumeration
--  ****`selectByMouse </sdk/apps/qml/QtQuick/TextInput#selectByMouse-prop>`__****
-   : bool
--  ****`selectedText </sdk/apps/qml/QtQuick/TextInput#selectedText-prop>`__****
-   : string
--  ****`selectedTextColor </sdk/apps/qml/QtQuick/TextInput#selectedTextColor-prop>`__****
-   : color
--  ****`selectionColor </sdk/apps/qml/QtQuick/TextInput#selectionColor-prop>`__****
-   : color
--  ****`selectionEnd </sdk/apps/qml/QtQuick/TextInput#selectionEnd-prop>`__****
-   : int
--  ****`selectionStart </sdk/apps/qml/QtQuick/TextInput#selectionStart-prop>`__****
-   : int
--  ****`text </sdk/apps/qml/QtQuick/TextInput#text-prop>`__**** : string
--  ****`validator </sdk/apps/qml/QtQuick/TextInput#validator-prop>`__****
-   : Validator
--  ****`verticalAlignment </sdk/apps/qml/QtQuick/TextInput#verticalAlignment-prop>`__****
-   : enumeration
--  ****`wrapMode </sdk/apps/qml/QtQuick/TextInput#wrapMode-prop>`__****
-   : enumeration
+-  :ref:`wrapMode <sdk_qtquick_textinput_wrapMode-prop>` :
+   enumeration
 
 Signals
 -------
 
--  ****`accepted </sdk/apps/qml/QtQuick/TextInput#accepted-signal>`__****\ ()
--  ****`editingFinished </sdk/apps/qml/QtQuick/TextInput#editingFinished-signal>`__****\ ()
+-  :ref:`accepted <sdk_qtquick_textinput_accepted-signal>`\ ()
+-  :ref:`editingFinished <sdk_qtquick_textinput_editingFinished-signal>`\ ()
 
 Methods
 -------
 
--  ****`copy </sdk/apps/qml/QtQuick/TextInput#copy-method>`__****\ ()
--  ****`cut </sdk/apps/qml/QtQuick/TextInput#cut-method>`__****\ ()
--  ****`deselect </sdk/apps/qml/QtQuick/TextInput#deselect-method>`__****\ ()
--  ****`ensureVisible </sdk/apps/qml/QtQuick/TextInput#ensureVisible-method>`__****\ (int
+-  :ref:`copy <sdk_qtquick_textinput_copy-method>`\ ()
+-  :ref:`cut <sdk_qtquick_textinput_cut-method>`\ ()
+-  :ref:`deselect <sdk_qtquick_textinput_deselect-method>`\ ()
+-  :ref:`ensureVisible <sdk_qtquick_textinput_ensureVisible-method>`\ (int
    *position*)
 -  string
-   ****`getText </sdk/apps/qml/QtQuick/TextInput#getText-method>`__****\ (int
+   **:ref:`getText <sdk_qtquick_textinput#getText-method>`**\ (int
    *start*, int *end*)
--  ****`insert </sdk/apps/qml/QtQuick/TextInput#insert-method>`__****\ (int
+-  :ref:`insert <sdk_qtquick_textinput_insert-method>`\ (int
    *position*, string *text*)
--  ****`isRightToLeft </sdk/apps/qml/QtQuick/TextInput#isRightToLeft-method>`__****\ (int
+-  :ref:`isRightToLeft <sdk_qtquick_textinput_isRightToLeft-method>`\ (int
    *start*, int *end*)
--  ****`moveCursorSelection </sdk/apps/qml/QtQuick/TextInput#moveCursorSelection-method>`__****\ (int
+-  :ref:`moveCursorSelection <sdk_qtquick_textinput_moveCursorSelection-method>`\ (int
    *position*, SelectionMode *mode*)
--  ****`paste </sdk/apps/qml/QtQuick/TextInput#paste-method>`__****\ ()
+-  :ref:`paste <sdk_qtquick_textinput_paste-method>`\ ()
 -  int
-   ****`positionAt </sdk/apps/qml/QtQuick/TextInput#positionAt-method>`__****\ (real
+   **:ref:`positionAt <sdk_qtquick_textinput#positionAt-method>`**\ (real
    *x*, real *y*, CursorPosition *position*)
 -  rect
-   ****`positionToRectangle </sdk/apps/qml/QtQuick/TextInput#positionToRectangle-method>`__****\ (int
+   **:ref:`positionToRectangle <sdk_qtquick_textinput#positionToRectangle-method>`**\ (int
    *pos*)
--  ****`redo </sdk/apps/qml/QtQuick/TextInput#redo-method>`__****\ ()
--  ****`remove </sdk/apps/qml/QtQuick/TextInput#remove-method>`__****\ (int
+-  :ref:`redo <sdk_qtquick_textinput_redo-method>`\ ()
+-  :ref:`remove <sdk_qtquick_textinput_remove-method>`\ (int
    *start*, int *end*)
--  ****`select </sdk/apps/qml/QtQuick/TextInput#select-method>`__****\ (int
+-  :ref:`select <sdk_qtquick_textinput_select-method>`\ (int
    *start*, int *end*)
--  ****`selectAll </sdk/apps/qml/QtQuick/TextInput#selectAll-method>`__****\ ()
--  ****`selectWord </sdk/apps/qml/QtQuick/TextInput#selectWord-method>`__****\ ()
--  ****`undo </sdk/apps/qml/QtQuick/TextInput#undo-method>`__****\ ()
+-  :ref:`selectAll <sdk_qtquick_textinput_selectAll-method>`\ ()
+-  :ref:`selectWord <sdk_qtquick_textinput_selectWord-method>`\ ()
+-  :ref:`undo <sdk_qtquick_textinput_undo-method>`\ ()
 
 Detailed Description
 --------------------
 
-The `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ type displays a
-single line of editable plain text.
+The :ref:`TextInput <sdk_qtquick_textinput>` type displays a single line of
+editable plain text.
 
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ is used to accept a
-line of text input. Input constraints can be placed on a
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ item (for example,
-through a `validator </sdk/apps/qml/QtQuick/TextInput#validator-prop>`__
-or `inputMask </sdk/apps/qml/QtQuick/TextInput#inputMask-prop>`__), and
-setting `echoMode </sdk/apps/qml/QtQuick/TextInput#echoMode-prop>`__ to
-an appropriate value enables
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ to be used for a
+:ref:`TextInput <sdk_qtquick_textinput>` is used to accept a line of text
+input. Input constraints can be placed on a
+:ref:`TextInput <sdk_qtquick_textinput>` item (for example, through a
+:ref:`validator <sdk_qtquick_textinput#validator-prop>` or
+:ref:`inputMask <sdk_qtquick_textinput#inputMask-prop>`), and setting
+:ref:`echoMode <sdk_qtquick_textinput#echoMode-prop>` to an appropriate
+value enables :ref:`TextInput <sdk_qtquick_textinput>` to be used for a
 password input field.
 
 On Mac OS X, the Up/Down key bindings for Home/End are explicitly
 disabled. If you want such bindings (on any platform), you will need to
 construct them in QML.
 
-**See also** `TextEdit </sdk/apps/qml/QtQuick/TextEdit/>`__ and
-`Text </sdk/apps/qml/QtQuick/qtquick-releasenotes#text>`__.
+**See also** :ref:`TextEdit <sdk_qtquick_textedit>` and
+`Text </sdk/apps/qml/QtQuick/qtquick-releasenotes/#text>`_ .
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_textinput_acceptableInput-prop:
 
 +--------------------------------------------------------------------------+
 |        \ acceptableInput : bool                                          |
@@ -184,57 +179,67 @@ as a final string (not as an intermediate string).
 
 | 
 
+.. _sdk_qtquick_textinput_activeFocusOnPress-prop:
+
 +--------------------------------------------------------------------------+
 |        \ activeFocusOnPress : bool                                       |
 +--------------------------------------------------------------------------+
 
-Whether the `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ should gain
-active focus on a mouse press. By default this is set to true.
+Whether the :ref:`TextInput <sdk_qtquick_textinput>` should gain active
+focus on a mouse press. By default this is set to true.
 
 | 
+
+.. _sdk_qtquick_textinput_autoScroll-prop:
 
 +--------------------------------------------------------------------------+
 |        \ autoScroll : bool                                               |
 +--------------------------------------------------------------------------+
 
-Whether the `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ should
-scroll when the text is longer than the width. By default this is set to
-true.
+Whether the :ref:`TextInput <sdk_qtquick_textinput>` should scroll when the
+text is longer than the width. By default this is set to true.
 
 **See also**
-`ensureVisible() </sdk/apps/qml/QtQuick/TextInput#ensureVisible-method>`__.
+:ref:`ensureVisible() <sdk_qtquick_textinput#ensureVisible-method>`.
 
 | 
+
+.. _sdk_qtquick_textinput_canPaste-prop:
 
 +--------------------------------------------------------------------------+
 |        \ canPaste : bool                                                 |
 +--------------------------------------------------------------------------+
 
-Returns true if the `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ is
-writable and the content of the clipboard is suitable for pasting into
-the `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.
+Returns true if the :ref:`TextInput <sdk_qtquick_textinput>` is writable
+and the content of the clipboard is suitable for pasting into the
+:ref:`TextInput <sdk_qtquick_textinput>`.
 
 | 
+
+.. _sdk_qtquick_textinput_canRedo-prop:
 
 +--------------------------------------------------------------------------+
 |        \ canRedo : bool                                                  |
 +--------------------------------------------------------------------------+
 
-Returns true if the `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ is
-writable and there are
-`undone </sdk/apps/qml/QtQuick/TextInput#undo-method>`__ operations that
-can be redone.
+Returns true if the :ref:`TextInput <sdk_qtquick_textinput>` is writable
+and there are :ref:`undone <sdk_qtquick_textinput#undo-method>` operations
+that can be redone.
 
 | 
+
+.. _sdk_qtquick_textinput_canUndo-prop:
 
 +--------------------------------------------------------------------------+
 |        \ canUndo : bool                                                  |
 +--------------------------------------------------------------------------+
 
-Returns true if the `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ is
-writable and there are previous operations that can be undone.
+Returns true if the :ref:`TextInput <sdk_qtquick_textinput>` is writable
+and there are previous operations that can be undone.
 
 | 
+
+.. _sdk_qtquick_textinput_color-prop:
 
 +--------------------------------------------------------------------------+
 |        \ color : color                                                   |
@@ -243,6 +248,8 @@ writable and there are previous operations that can be undone.
 The text color.
 
 | 
+
+.. _sdk_qtquick_textinput_contentHeight-prop:
 
 +--------------------------------------------------------------------------+
 |        \ contentHeight : real                                            |
@@ -253,44 +260,50 @@ that is covered if the text does not fit within the set height.
 
 | 
 
+.. _sdk_qtquick_textinput_contentWidth-prop:
+
 +--------------------------------------------------------------------------+
 |        \ contentWidth : real                                             |
 +--------------------------------------------------------------------------+
 
 Returns the width of the text, including the width past the width which
 is covered due to insufficient wrapping if
-`wrapMode </sdk/apps/qml/QtQuick/TextInput#wrapMode-prop>`__ is set.
+:ref:`wrapMode <sdk_qtquick_textinput#wrapMode-prop>` is set.
 
 | 
+
+.. _sdk_qtquick_textinput_cursorDelegate-prop:
 
 +--------------------------------------------------------------------------+
 |        \ cursorDelegate : Component                                      |
 +--------------------------------------------------------------------------+
 
 The delegate for the cursor in the
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.
+:ref:`TextInput <sdk_qtquick_textinput>`.
 
-If you set a cursorDelegate for a
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__, this delegate will be
-used for drawing the cursor instead of the standard cursor. An instance
-of the delegate will be created and managed by the
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ when a cursor is
-needed, and the x property of delegate instance will be set so as to be
-one pixel before the top left of the current character.
+If you set a cursorDelegate for a :ref:`TextInput <sdk_qtquick_textinput>`,
+this delegate will be used for drawing the cursor instead of the
+standard cursor. An instance of the delegate will be created and managed
+by the :ref:`TextInput <sdk_qtquick_textinput>` when a cursor is needed,
+and the x property of delegate instance will be set so as to be one
+pixel before the top left of the current character.
 
 Note that the root item of the delegate component must be a QQuickItem
 or QQuickItem derived item.
 
 | 
 
+.. _sdk_qtquick_textinput_cursorPosition-prop:
+
 +--------------------------------------------------------------------------+
 |        \ cursorPosition : int                                            |
 +--------------------------------------------------------------------------+
 
-The position of the cursor in the
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.
+The position of the cursor in the :ref:`TextInput <sdk_qtquick_textinput>`.
 
 | 
+
+.. _sdk_qtquick_textinput_cursorRectangle-prop:
 
 +--------------------------------------------------------------------------+
 |        \ cursorRectangle : rectangle                                     |
@@ -300,25 +313,26 @@ The rectangle where the standard text cursor is rendered within the text
 input. Read only.
 
 The position and height of a custom
-`cursorDelegate </sdk/apps/qml/QtQuick/TextInput#cursorDelegate-prop>`__
-are updated to follow the cursorRectangle automatically when it changes.
-The width of the delegate is unaffected by changes in the cursor
-rectangle.
+:ref:`cursorDelegate <sdk_qtquick_textinput#cursorDelegate-prop>` are
+updated to follow the cursorRectangle automatically when it changes. The
+width of the delegate is unaffected by changes in the cursor rectangle.
 
 | 
+
+.. _sdk_qtquick_textinput_cursorVisible-prop:
 
 +--------------------------------------------------------------------------+
 |        \ cursorVisible : bool                                            |
 +--------------------------------------------------------------------------+
 
-Set to true when the `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__
-shows a cursor.
+Set to true when the :ref:`TextInput <sdk_qtquick_textinput>` shows a
+cursor.
 
 This property is set and unset when the
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ gets active focus, so
-that other properties can be bound to whether the cursor is currently
-showing. As it gets set and unset automatically, when you set the value
-yourself you must keep in mind that your value may be overwritten.
+:ref:`TextInput <sdk_qtquick_textinput>` gets active focus, so that other
+properties can be bound to whether the cursor is currently showing. As
+it gets set and unset automatically, when you set the value yourself you
+must keep in mind that your value may be overwritten.
 
 It can be set directly in script, for example if a KeyProxy might
 forward keys to it and you desire it to look active when this happens
@@ -335,66 +349,70 @@ specified value will be overridden an lost on focus changes.
     }
 
 In the above snippet the cursor will still become visible when the
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ gains active focus.
+:ref:`TextInput <sdk_qtquick_textinput>` gains active focus.
 
 | 
+
+.. _sdk_qtquick_textinput_[read-only] displayText-prop:
 
 +--------------------------------------------------------------------------+
 |        \ [read-only] displayText : string                                |
 +--------------------------------------------------------------------------+
 
-This is the text displayed in the
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.
+This is the text displayed in the :ref:`TextInput <sdk_qtquick_textinput>`.
 
-If `echoMode </sdk/apps/qml/QtQuick/TextInput#echoMode-prop>`__ is set
-to TextInput::Normal, this holds the same value as the
-`TextInput::text </sdk/apps/qml/QtQuick/TextInput#text-prop>`__
-property. Otherwise, this property holds the text visible to the user,
-while the `text </sdk/apps/qml/QtQuick/qtquick-releasenotes#text>`__
-property holds the actual entered text.
+If :ref:`echoMode <sdk_qtquick_textinput#echoMode-prop>` is set to
+TextInput::Normal, this holds the same value as the
+:ref:`TextInput::text <sdk_qtquick_textinput#text-prop>` property.
+Otherwise, this property holds the text visible to the user, while the
+`text </sdk/apps/qml/QtQuick/qtquick-releasenotes/#text>`_  property
+holds the actual entered text.
 
 **Note:** Unlike the
-`TextInput::text </sdk/apps/qml/QtQuick/TextInput#text-prop>`__
-property, this contains partial text input from an input method.
+:ref:`TextInput::text <sdk_qtquick_textinput#text-prop>` property, this
+contains partial text input from an input method.
 
 | 
+
+.. _sdk_qtquick_textinput_echoMode-prop:
 
 +--------------------------------------------------------------------------+
 |        \ echoMode : enumeration                                          |
 +--------------------------------------------------------------------------+
 
 Specifies how the text should be displayed in the
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.
+:ref:`TextInput <sdk_qtquick_textinput>`.
 
--  `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.Normal - Displays
-   the text as it is. (Default)
--  `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.Password - Displays
+-  :ref:`TextInput <sdk_qtquick_textinput>`.Normal - Displays the text as
+   it is. (Default)
+-  :ref:`TextInput <sdk_qtquick_textinput>`.Password - Displays
    platform-dependent password mask characters instead of the actual
    characters.
--  `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.NoEcho - Displays
-   nothing.
--  `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.PasswordEchoOnEdit -
-   Displays characters as they are entered while editing, otherwise
-   identical to ``TextInput.Password``.
+-  :ref:`TextInput <sdk_qtquick_textinput>`.NoEcho - Displays nothing.
+-  :ref:`TextInput <sdk_qtquick_textinput>`.PasswordEchoOnEdit - Displays
+   characters as they are entered while editing, otherwise identical to
+   ``TextInput.Password``.
 
 | 
+
+.. _sdk_qtquick_textinput_effectiveHorizontalAlignment-prop:
 
 +--------------------------------------------------------------------------+
 |        \ effectiveHorizontalAlignment : enumeration                      |
 +--------------------------------------------------------------------------+
 
 Sets the horizontal alignment of the text within the
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ item's width and
-height. By default, the text alignment follows the natural alignment of
-the text, for example text that is read from left to right will be
-aligned to the left.
+:ref:`TextInput <sdk_qtquick_textinput>` item's width and height. By
+default, the text alignment follows the natural alignment of the text,
+for example text that is read from left to right will be aligned to the
+left.
 
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ does not have vertical
-alignment, as the natural height is exactly the height of the single
-line of text. If you set the height manually to something larger,
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ will always be top
-aligned vertically. You can use anchors to align it however you want
-within another item.
+:ref:`TextInput <sdk_qtquick_textinput>` does not have vertical alignment,
+as the natural height is exactly the height of the single line of text.
+If you set the height manually to something larger,
+:ref:`TextInput <sdk_qtquick_textinput>` will always be top aligned
+vertically. You can use anchors to align it however you want within
+another item.
 
 The valid values for ``horizontalAlignment`` are
 ``TextInput.AlignLeft``, ``TextInput.AlignRight`` and
@@ -404,14 +422,16 @@ Valid values for ``verticalAlignment`` are ``TextInput.AlignTop``
 (default), ``TextInput.AlignBottom`` ``TextInput.AlignVCenter``.
 
 When using the attached property
-`LayoutMirroring::enabled </sdk/apps/qml/QtQuick/LayoutMirroring#enabled-prop>`__
+:ref:`LayoutMirroring::enabled <sdk_qtquick_layoutmirroring#enabled-prop>`
 to mirror application layouts, the horizontal alignment of text will
 also be mirrored. However, the property ``horizontalAlignment`` will
 remain unchanged. To query the effective horizontal alignment of
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__, use the read-only
-property ``effectiveHorizontalAlignment``.
+:ref:`TextInput <sdk_qtquick_textinput>`, use the read-only property
+``effectiveHorizontalAlignment``.
 
 | 
+
+.. _sdk_qtquick_textinput_font.bold-prop:
 
 +--------------------------------------------------------------------------+
 |        \ font.bold : bool                                                |
@@ -420,6 +440,8 @@ property ``effectiveHorizontalAlignment``.
 Sets whether the font weight is bold.
 
 | 
+
+.. _sdk_qtquick_textinput_font.capitalization-prop:
 
 +--------------------------------------------------------------------------+
 |        \ font.capitalization : enumeration                               |
@@ -444,6 +466,8 @@ Sets the capitalization for the text.
 
 | 
 
+.. _sdk_qtquick_textinput_font.family-prop:
+
 +--------------------------------------------------------------------------+
 |        \ font.family : string                                            |
 +--------------------------------------------------------------------------+
@@ -458,6 +482,8 @@ font matching algorithm.
 
 | 
 
+.. _sdk_qtquick_textinput_font.italic-prop:
+
 +--------------------------------------------------------------------------+
 |        \ font.italic : bool                                              |
 +--------------------------------------------------------------------------+
@@ -465,6 +491,8 @@ font matching algorithm.
 Sets whether the font has an italic style.
 
 | 
+
+.. _sdk_qtquick_textinput_font.letterSpacing-prop:
 
 +--------------------------------------------------------------------------+
 |        \ font.letterSpacing : real                                       |
@@ -478,6 +506,8 @@ corresponding pixels; a negative value decreases the spacing.
 
 | 
 
+.. _sdk_qtquick_textinput_font.pixelSize-prop:
+
 +--------------------------------------------------------------------------+
 |        \ font.pixelSize : int                                            |
 +--------------------------------------------------------------------------+
@@ -489,6 +519,8 @@ to set the size of the font in a device independent manner.
 
 | 
 
+.. _sdk_qtquick_textinput_font.pointSize-prop:
+
 +--------------------------------------------------------------------------+
 |        \ font.pointSize : real                                           |
 +--------------------------------------------------------------------------+
@@ -496,6 +528,8 @@ to set the size of the font in a device independent manner.
 Sets the font size in points. The point size must be greater than zero.
 
 | 
+
+.. _sdk_qtquick_textinput_font.strikeout-prop:
 
 +--------------------------------------------------------------------------+
 |        \ font.strikeout : bool                                           |
@@ -505,6 +539,8 @@ Sets whether the font has a strikeout style.
 
 | 
 
+.. _sdk_qtquick_textinput_font.underline-prop:
+
 +--------------------------------------------------------------------------+
 |        \ font.underline : bool                                           |
 +--------------------------------------------------------------------------+
@@ -512,6 +548,8 @@ Sets whether the font has a strikeout style.
 Sets whether the text is underlined.
 
 | 
+
+.. _sdk_qtquick_textinput_font.weight-prop:
 
 +--------------------------------------------------------------------------+
 |        \ font.weight : enumeration                                       |
@@ -533,6 +571,8 @@ The weight can be one of:
 
 | 
 
+.. _sdk_qtquick_textinput_font.wordSpacing-prop:
+
 +--------------------------------------------------------------------------+
 |        \ font.wordSpacing : real                                         |
 +--------------------------------------------------------------------------+
@@ -546,22 +586,24 @@ accordingly.
 
 | 
 
+.. _sdk_qtquick_textinput_horizontalAlignment-prop:
+
 +--------------------------------------------------------------------------+
 |        \ horizontalAlignment : enumeration                               |
 +--------------------------------------------------------------------------+
 
 Sets the horizontal alignment of the text within the
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ item's width and
-height. By default, the text alignment follows the natural alignment of
-the text, for example text that is read from left to right will be
-aligned to the left.
+:ref:`TextInput <sdk_qtquick_textinput>` item's width and height. By
+default, the text alignment follows the natural alignment of the text,
+for example text that is read from left to right will be aligned to the
+left.
 
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ does not have vertical
-alignment, as the natural height is exactly the height of the single
-line of text. If you set the height manually to something larger,
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ will always be top
-aligned vertically. You can use anchors to align it however you want
-within another item.
+:ref:`TextInput <sdk_qtquick_textinput>` does not have vertical alignment,
+as the natural height is exactly the height of the single line of text.
+If you set the height manually to something larger,
+:ref:`TextInput <sdk_qtquick_textinput>` will always be top aligned
+vertically. You can use anchors to align it however you want within
+another item.
 
 The valid values for ``horizontalAlignment`` are
 ``TextInput.AlignLeft``, ``TextInput.AlignRight`` and
@@ -571,46 +613,50 @@ Valid values for ``verticalAlignment`` are ``TextInput.AlignTop``
 (default), ``TextInput.AlignBottom`` ``TextInput.AlignVCenter``.
 
 When using the attached property
-`LayoutMirroring::enabled </sdk/apps/qml/QtQuick/LayoutMirroring#enabled-prop>`__
+:ref:`LayoutMirroring::enabled <sdk_qtquick_layoutmirroring#enabled-prop>`
 to mirror application layouts, the horizontal alignment of text will
 also be mirrored. However, the property ``horizontalAlignment`` will
 remain unchanged. To query the effective horizontal alignment of
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__, use the read-only
-property ``effectiveHorizontalAlignment``.
+:ref:`TextInput <sdk_qtquick_textinput>`, use the read-only property
+``effectiveHorizontalAlignment``.
 
 | 
+
+.. _sdk_qtquick_textinput_inputMask-prop:
 
 +--------------------------------------------------------------------------+
 |        \ inputMask : string                                              |
 +--------------------------------------------------------------------------+
 
 Allows you to set an input mask on the
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__, restricting the
-allowable text inputs. See QLineEdit::inputMask for further details, as
-the exact same mask strings are used by
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.
+:ref:`TextInput <sdk_qtquick_textinput>`, restricting the allowable text
+inputs. See QLineEdit::inputMask for further details, as the exact same
+mask strings are used by :ref:`TextInput <sdk_qtquick_textinput>`.
 
 **See also**
-`acceptableInput </sdk/apps/qml/QtQuick/TextInput#acceptableInput-prop>`__
-and `validator </sdk/apps/qml/QtQuick/TextInput#validator-prop>`__.
+:ref:`acceptableInput <sdk_qtquick_textinput#acceptableInput-prop>` and
+:ref:`validator <sdk_qtquick_textinput#validator-prop>`.
 
 | 
+
+.. _sdk_qtquick_textinput_inputMethodComposing-prop:
 
 +--------------------------------------------------------------------------+
 |        \ inputMethodComposing : bool                                     |
 +--------------------------------------------------------------------------+
 
-This property holds whether the
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ has partial text input
-from an input method.
+This property holds whether the :ref:`TextInput <sdk_qtquick_textinput>`
+has partial text input from an input method.
 
 While it is composing an input method may rely on mouse or key events
-from the `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ to edit or
-commit the partial text. This property can be used to determine when to
-disable events handlers that may interfere with the correct operation of
-an input method.
+from the :ref:`TextInput <sdk_qtquick_textinput>` to edit or commit the
+partial text. This property can be used to determine when to disable
+events handlers that may interfere with the correct operation of an
+input method.
 
 | 
+
+.. _sdk_qtquick_textinput_inputMethodHints-prop:
 
 +--------------------------------------------------------------------------+
 |        \ inputMethodHints : enumeration                                  |
@@ -626,7 +672,7 @@ Flags that alter behaviour are:
 
 -  Qt.ImhHiddenText - Characters should be hidden, as is typically used
    when entering passwords. This is automatically set when setting
-   `echoMode </sdk/apps/qml/QtQuick/TextInput#echoMode-prop>`__ to
+   :ref:`echoMode <sdk_qtquick_textinput#echoMode-prop>` to
    ``TextInput.Password``.
 -  Qt.ImhSensitiveData - Typed text should not be stored by the active
    input method in any persistent storage like predictive user
@@ -666,32 +712,36 @@ Masks:
 
 | 
 
+.. _sdk_qtquick_textinput_length-prop:
+
 +--------------------------------------------------------------------------+
 |        \ length : int                                                    |
 +--------------------------------------------------------------------------+
 
 Returns the total number of characters in the
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ item.
+:ref:`TextInput <sdk_qtquick_textinput>` item.
 
-If the `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ has an
-`inputMask </sdk/apps/qml/QtQuick/TextInput#inputMask-prop>`__ the
-length will include mask characters and may differ from the length of
-the string returned by the
-`text </sdk/apps/qml/QtQuick/qtquick-releasenotes#text>`__ property.
+If the :ref:`TextInput <sdk_qtquick_textinput>` has an
+:ref:`inputMask <sdk_qtquick_textinput#inputMask-prop>` the length will
+include mask characters and may differ from the length of the string
+returned by the
+`text </sdk/apps/qml/QtQuick/qtquick-releasenotes/#text>`_  property.
 
 This property can be faster than querying the length the
-`text </sdk/apps/qml/QtQuick/qtquick-releasenotes#text>`__ property as
+`text </sdk/apps/qml/QtQuick/qtquick-releasenotes/#text>`_  property as
 it doesn't require any copying or conversion of the
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__'s internal string data.
+:ref:`TextInput <sdk_qtquick_textinput>`'s internal string data.
 
 | 
+
+.. _sdk_qtquick_textinput_maximumLength-prop:
 
 +--------------------------------------------------------------------------+
 |        \ maximumLength : int                                             |
 +--------------------------------------------------------------------------+
 
 The maximum permitted length of the text in the
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.
+:ref:`TextInput <sdk_qtquick_textinput>`.
 
 If the text is too long, it is truncated at the limit.
 
@@ -699,37 +749,42 @@ By default, this property contains a value of 32767.
 
 | 
 
+.. _sdk_qtquick_textinput_mouseSelectionMode-prop:
+
 +--------------------------------------------------------------------------+
 |        \ mouseSelectionMode : enumeration                                |
 +--------------------------------------------------------------------------+
 
 Specifies how text should be selected using a mouse.
 
--  `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.SelectCharacters -
-   The selection is updated with individual characters. (Default)
--  `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.SelectWords - The
-   selection is updated with whole words.
+-  :ref:`TextInput <sdk_qtquick_textinput>`.SelectCharacters - The
+   selection is updated with individual characters. (Default)
+-  :ref:`TextInput <sdk_qtquick_textinput>`.SelectWords - The selection is
+   updated with whole words.
 
 This property only applies when
-`selectByMouse </sdk/apps/qml/QtQuick/TextInput#selectByMouse-prop>`__
-is true.
+:ref:`selectByMouse <sdk_qtquick_textinput#selectByMouse-prop>` is true.
 
 | 
+
+.. _sdk_qtquick_textinput_passwordCharacter-prop:
 
 +--------------------------------------------------------------------------+
 |        \ passwordCharacter : string                                      |
 +--------------------------------------------------------------------------+
 
 This is the character displayed when
-`echoMode </sdk/apps/qml/QtQuick/TextInput#echoMode-prop>`__ is set to
-Password or PasswordEchoOnEdit. By default it is the password character
-used by the platform theme.
+:ref:`echoMode <sdk_qtquick_textinput#echoMode-prop>` is set to Password or
+PasswordEchoOnEdit. By default it is the password character used by the
+platform theme.
 
 If this property is set to a string with more than one character, the
 first character is used. If the string is empty, the value is ignored
 and the property is not set.
 
 | 
+
+.. _sdk_qtquick_textinput_passwordMaskDelay-prop:
 
 +--------------------------------------------------------------------------+
 |        \ passwordMaskDelay : int                                         |
@@ -744,28 +799,34 @@ This QML property was introduced in Qt 5.4.
 
 | 
 
+.. _sdk_qtquick_textinput_persistentSelection-prop:
+
 +--------------------------------------------------------------------------+
 |        \ persistentSelection : bool                                      |
 +--------------------------------------------------------------------------+
 
-Whether the `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ should keep
-its selection when it loses active focus to another item in the scene.
-By default this is set to false;
+Whether the :ref:`TextInput <sdk_qtquick_textinput>` should keep its
+selection when it loses active focus to another item in the scene. By
+default this is set to false;
 
 | 
+
+.. _sdk_qtquick_textinput_readOnly-prop:
 
 +--------------------------------------------------------------------------+
 |        \ readOnly : bool                                                 |
 +--------------------------------------------------------------------------+
 
 Sets whether user input can modify the contents of the
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.
+:ref:`TextInput <sdk_qtquick_textinput>`.
 
 If readOnly is set to true, then user input will not affect the text
 property. Any bindings or attempts to set the text property will still
 work.
 
 | 
+
+.. _sdk_qtquick_textinput_renderType-prop:
 
 +--------------------------------------------------------------------------+
 |        \ renderType : enumeration                                        |
@@ -786,6 +847,8 @@ results.
 
 | 
 
+.. _sdk_qtquick_textinput_selectByMouse-prop:
+
 +--------------------------------------------------------------------------+
 |        \ selectByMouse : bool                                            |
 +--------------------------------------------------------------------------+
@@ -798,6 +861,8 @@ appropriate interaction (eg. may conflict with how the text needs to
 behave inside a Flickable.
 
 | 
+
+.. _sdk_qtquick_textinput_selectedText-prop:
 
 +--------------------------------------------------------------------------+
 |        \ selectedText : string                                           |
@@ -816,6 +881,8 @@ use.
 
 | 
 
+.. _sdk_qtquick_textinput_selectedTextColor-prop:
+
 +--------------------------------------------------------------------------+
 |        \ selectedTextColor : color                                       |
 +--------------------------------------------------------------------------+
@@ -823,6 +890,8 @@ use.
 The highlighted text color, used in selections.
 
 | 
+
+.. _sdk_qtquick_textinput_selectionColor-prop:
 
 +--------------------------------------------------------------------------+
 |        \ selectionColor : color                                          |
@@ -832,6 +901,8 @@ The text highlight color, used behind selections.
 
 | 
 
+.. _sdk_qtquick_textinput_selectionEnd-prop:
+
 +--------------------------------------------------------------------------+
 |        \ selectionEnd : int                                              |
 +--------------------------------------------------------------------------+
@@ -840,16 +911,17 @@ The cursor position after the last character in the current selection.
 
 This property is read-only. To change the selection, use
 select(start,end),
-`selectAll() </sdk/apps/qml/QtQuick/TextInput#selectAll-method>`__, or
-`selectWord() </sdk/apps/qml/QtQuick/TextInput#selectWord-method>`__.
+:ref:`selectAll() <sdk_qtquick_textinput#selectAll-method>`, or
+:ref:`selectWord() <sdk_qtquick_textinput#selectWord-method>`.
 
 **See also**
-`selectionStart </sdk/apps/qml/QtQuick/TextInput#selectionStart-prop>`__,
-`cursorPosition </sdk/apps/qml/QtQuick/TextInput#cursorPosition-prop>`__,
-and
-`selectedText </sdk/apps/qml/QtQuick/TextInput#selectedText-prop>`__.
+:ref:`selectionStart <sdk_qtquick_textinput#selectionStart-prop>`,
+:ref:`cursorPosition <sdk_qtquick_textinput#cursorPosition-prop>`, and
+:ref:`selectedText <sdk_qtquick_textinput#selectedText-prop>`.
 
 | 
+
+.. _sdk_qtquick_textinput_selectionStart-prop:
 
 +--------------------------------------------------------------------------+
 |        \ selectionStart : int                                            |
@@ -859,42 +931,44 @@ The cursor position before the first character in the current selection.
 
 This property is read-only. To change the selection, use
 select(start,end),
-`selectAll() </sdk/apps/qml/QtQuick/TextInput#selectAll-method>`__, or
-`selectWord() </sdk/apps/qml/QtQuick/TextInput#selectWord-method>`__.
+:ref:`selectAll() <sdk_qtquick_textinput#selectAll-method>`, or
+:ref:`selectWord() <sdk_qtquick_textinput#selectWord-method>`.
 
-**See also**
-`selectionEnd </sdk/apps/qml/QtQuick/TextInput#selectionEnd-prop>`__,
-`cursorPosition </sdk/apps/qml/QtQuick/TextInput#cursorPosition-prop>`__,
-and
-`selectedText </sdk/apps/qml/QtQuick/TextInput#selectedText-prop>`__.
+**See also** :ref:`selectionEnd <sdk_qtquick_textinput#selectionEnd-prop>`,
+:ref:`cursorPosition <sdk_qtquick_textinput#cursorPosition-prop>`, and
+:ref:`selectedText <sdk_qtquick_textinput#selectedText-prop>`.
 
 | 
+
+.. _sdk_qtquick_textinput_text-prop:
 
 +--------------------------------------------------------------------------+
 |        \ text : string                                                   |
 +--------------------------------------------------------------------------+
 
-The text in the `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.
+The text in the :ref:`TextInput <sdk_qtquick_textinput>`.
 
 | 
+
+.. _sdk_qtquick_textinput_validator-prop:
 
 +--------------------------------------------------------------------------+
 |        \ validator : Validator                                           |
 +--------------------------------------------------------------------------+
 
 Allows you to set a validator on the
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__. When a validator is
-set the `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ will only
-accept input which leaves the text property in an acceptable or
-intermediate state. The accepted signal will only be sent if the text is
-in an acceptable state when enter is pressed.
+:ref:`TextInput <sdk_qtquick_textinput>`. When a validator is set the
+:ref:`TextInput <sdk_qtquick_textinput>` will only accept input which
+leaves the text property in an acceptable or intermediate state. The
+accepted signal will only be sent if the text is in an acceptable state
+when enter is pressed.
 
 Currently supported validators are
-`IntValidator </sdk/apps/qml/QtQuick/IntValidator/>`__,
-`DoubleValidator </sdk/apps/qml/QtQuick/DoubleValidator/>`__ and
-`RegExpValidator </sdk/apps/qml/QtQuick/RegExpValidator/>`__. An example
-of using validators is shown below, which allows input of integers
-between 11 and 31 into the text input:
+:ref:`IntValidator <sdk_qtquick_intvalidator>`,
+:ref:`DoubleValidator <sdk_qtquick_doublevalidator>` and
+:ref:`RegExpValidator <sdk_qtquick_regexpvalidator>`. An example of using
+validators is shown below, which allows input of integers between 11 and
+31 into the text input:
 
 .. code:: cpp
 
@@ -905,27 +979,29 @@ between 11 and 31 into the text input:
     }
 
 **See also**
-`acceptableInput </sdk/apps/qml/QtQuick/TextInput#acceptableInput-prop>`__
-and `inputMask </sdk/apps/qml/QtQuick/TextInput#inputMask-prop>`__.
+:ref:`acceptableInput <sdk_qtquick_textinput#acceptableInput-prop>` and
+:ref:`inputMask <sdk_qtquick_textinput#inputMask-prop>`.
 
 | 
+
+.. _sdk_qtquick_textinput_verticalAlignment-prop:
 
 +--------------------------------------------------------------------------+
 |        \ verticalAlignment : enumeration                                 |
 +--------------------------------------------------------------------------+
 
 Sets the horizontal alignment of the text within the
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ item's width and
-height. By default, the text alignment follows the natural alignment of
-the text, for example text that is read from left to right will be
-aligned to the left.
+:ref:`TextInput <sdk_qtquick_textinput>` item's width and height. By
+default, the text alignment follows the natural alignment of the text,
+for example text that is read from left to right will be aligned to the
+left.
 
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ does not have vertical
-alignment, as the natural height is exactly the height of the single
-line of text. If you set the height manually to something larger,
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ will always be top
-aligned vertically. You can use anchors to align it however you want
-within another item.
+:ref:`TextInput <sdk_qtquick_textinput>` does not have vertical alignment,
+as the natural height is exactly the height of the single line of text.
+If you set the height manually to something larger,
+:ref:`TextInput <sdk_qtquick_textinput>` will always be top aligned
+vertically. You can use anchors to align it however you want within
+another item.
 
 The valid values for ``horizontalAlignment`` are
 ``TextInput.AlignLeft``, ``TextInput.AlignRight`` and
@@ -935,59 +1011,62 @@ Valid values for ``verticalAlignment`` are ``TextInput.AlignTop``
 (default), ``TextInput.AlignBottom`` ``TextInput.AlignVCenter``.
 
 When using the attached property
-`LayoutMirroring::enabled </sdk/apps/qml/QtQuick/LayoutMirroring#enabled-prop>`__
+:ref:`LayoutMirroring::enabled <sdk_qtquick_layoutmirroring#enabled-prop>`
 to mirror application layouts, the horizontal alignment of text will
 also be mirrored. However, the property ``horizontalAlignment`` will
 remain unchanged. To query the effective horizontal alignment of
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__, use the read-only
-property ``effectiveHorizontalAlignment``.
+:ref:`TextInput <sdk_qtquick_textinput>`, use the read-only property
+``effectiveHorizontalAlignment``.
 
 | 
+
+.. _sdk_qtquick_textinput_wrapMode-prop:
 
 +--------------------------------------------------------------------------+
 |        \ wrapMode : enumeration                                          |
 +--------------------------------------------------------------------------+
 
 Set this property to wrap the text to the
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ item's width. The text
-will only wrap if an explicit width has been set.
+:ref:`TextInput <sdk_qtquick_textinput>` item's width. The text will only
+wrap if an explicit width has been set.
 
--  `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.NoWrap - no wrapping
-   will be performed. If the text contains insufficient newlines, then
+-  :ref:`TextInput <sdk_qtquick_textinput>`.NoWrap - no wrapping will be
+   performed. If the text contains insufficient newlines, then
    implicitWidth will exceed a set width.
--  `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.WordWrap - wrapping
-   is done on word boundaries only. If a word is too long, implicitWidth
-   will exceed a set width.
--  `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.WrapAnywhere -
-   wrapping is done at any point on a line, even if it occurs in the
-   middle of a word.
--  `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.Wrap - if possible,
-   wrapping occurs at a word boundary; otherwise it will occur at the
-   appropriate point on the line, even in the middle of a word.
+-  :ref:`TextInput <sdk_qtquick_textinput>`.WordWrap - wrapping is done on
+   word boundaries only. If a word is too long, implicitWidth will
+   exceed a set width.
+-  :ref:`TextInput <sdk_qtquick_textinput>`.WrapAnywhere - wrapping is done
+   at any point on a line, even if it occurs in the middle of a word.
+-  :ref:`TextInput <sdk_qtquick_textinput>`.Wrap - if possible, wrapping
+   occurs at a word boundary; otherwise it will occur at the appropriate
+   point on the line, even in the middle of a word.
 
-The default is `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.NoWrap.
-If you set a width, consider using
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.Wrap.
+The default is :ref:`TextInput <sdk_qtquick_textinput>`.NoWrap. If you set
+a width, consider using :ref:`TextInput <sdk_qtquick_textinput>`.Wrap.
 
 | 
 
 Signal Documentation
 --------------------
 
+.. _sdk_qtquick_textinput_accepted-method:
+
 +--------------------------------------------------------------------------+
 |        \ accepted()                                                      |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the Return or Enter key is pressed. Note
-that if there is a
-`validator </sdk/apps/qml/QtQuick/TextInput#validator-prop>`__ or
-`inputMask </sdk/apps/qml/QtQuick/TextInput#inputMask-prop>`__ set on
-the text input, the signal will only be emitted if the input is in an
-acceptable state.
+that if there is a :ref:`validator <sdk_qtquick_textinput#validator-prop>`
+or :ref:`inputMask <sdk_qtquick_textinput#inputMask-prop>` set on the text
+input, the signal will only be emitted if the input is in an acceptable
+state.
 
 The corresponding handler is ``onAccepted``.
 
 | 
+
+.. _sdk_qtquick_textinput_editingFinished-method:
 
 +--------------------------------------------------------------------------+
 |        \ editingFinished()                                               |
@@ -995,11 +1074,11 @@ The corresponding handler is ``onAccepted``.
 
 This signal is emitted when the Return or Enter key is pressed or the
 text input loses focus. Note that if there is a validator or
-`inputMask </sdk/apps/qml/QtQuick/TextInput#inputMask-prop>`__ set on
-the text input and enter/return is pressed, this signal will only be
-emitted if the input follows the
-`inputMask </sdk/apps/qml/QtQuick/TextInput#inputMask-prop>`__ and the
-validator returns an acceptable state.
+:ref:`inputMask <sdk_qtquick_textinput#inputMask-prop>` set on the text
+input and enter/return is pressed, this signal will only be emitted if
+the input follows the
+:ref:`inputMask <sdk_qtquick_textinput#inputMask-prop>` and the validator
+returns an acceptable state.
 
 The corresponding handler is ``onEditingFinished``.
 
@@ -1010,6 +1089,8 @@ This QML signal was introduced in Qt 5.2.
 Method Documentation
 --------------------
 
+.. _sdk_qtquick_textinput_copy-method:
+
 +--------------------------------------------------------------------------+
 |        \ copy()                                                          |
 +--------------------------------------------------------------------------+
@@ -1017,6 +1098,8 @@ Method Documentation
 Copies the currently selected text to the system clipboard.
 
 | 
+
+.. _sdk_qtquick_textinput_cut-method:
 
 +--------------------------------------------------------------------------+
 |        \ cut()                                                           |
@@ -1026,6 +1109,8 @@ Moves the currently selected text to the system clipboard.
 
 | 
 
+.. _sdk_qtquick_textinput_deselect-method:
+
 +--------------------------------------------------------------------------+
 |        \ deselect()                                                      |
 +--------------------------------------------------------------------------+
@@ -1033,6 +1118,8 @@ Moves the currently selected text to the system clipboard.
 Removes active text selection.
 
 | 
+
+.. _sdk_qtquick_textinput_ensureVisible-method:
 
 +--------------------------------------------------------------------------+
 |        \ ensureVisible(int *position*)                                   |
@@ -1043,10 +1130,11 @@ Scrolls the contents of the text input so that the specified character
 
 This QML method was introduced in Qt 5.4.
 
-**See also**
-`autoScroll </sdk/apps/qml/QtQuick/TextInput#autoScroll-prop>`__.
+**See also** :ref:`autoScroll <sdk_qtquick_textinput#autoScroll-prop>`.
 
 | 
+
+.. _sdk_qtquick_textinput_string getText-method:
 
 +--------------------------------------------------------------------------+
 |        \ string getText(int *start*, int *end*)                          |
@@ -1055,20 +1143,24 @@ This QML method was introduced in Qt 5.4.
 Returns the section of text that is between the *start* and *end*
 positions.
 
-If the `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ has an
-`inputMask </sdk/apps/qml/QtQuick/TextInput#inputMask-prop>`__ the
-length will include mask characters.
+If the :ref:`TextInput <sdk_qtquick_textinput>` has an
+:ref:`inputMask <sdk_qtquick_textinput#inputMask-prop>` the length will
+include mask characters.
 
 | 
+
+.. _sdk_qtquick_textinput_insert-method:
 
 +--------------------------------------------------------------------------+
 |        \ insert(int *position*, string *text*)                           |
 +--------------------------------------------------------------------------+
 
-Inserts *text* into the `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__
-at position.
+Inserts *text* into the :ref:`TextInput <sdk_qtquick_textinput>` at
+position.
 
 | 
+
+.. _sdk_qtquick_textinput_isRightToLeft-method:
 
 +--------------------------------------------------------------------------+
 |        \ isRightToLeft(int *start*, int *end*)                           |
@@ -1079,6 +1171,8 @@ between positions *start* and *end* is right to left.
 
 | 
 
+.. _sdk_qtquick_textinput_moveCursorSelection-method:
+
 +--------------------------------------------------------------------------+
 |        \ moveCursorSelection(int *position*, SelectionMode *mode* =      |
 | TextInput.SelectCharacters)                                              |
@@ -1086,36 +1180,28 @@ between positions *start* and *end* is right to left.
 
 Moves the cursor to *position* and updates the selection according to
 the optional *mode* parameter. (To only move the cursor, set the
-`cursorPosition </sdk/apps/qml/QtQuick/TextInput#cursorPosition-prop>`__
+:ref:`cursorPosition <sdk_qtquick_textinput#cursorPosition-prop>`
 property.)
 
 When this method is called it additionally sets either the
-`selectionStart </sdk/apps/qml/QtQuick/TextInput#selectionStart-prop>`__
-or the
-`selectionEnd </sdk/apps/qml/QtQuick/TextInput#selectionEnd-prop>`__
-(whichever was at the previous cursor position) to the specified
-position. This allows you to easily extend and contract the selected
-text range.
+:ref:`selectionStart <sdk_qtquick_textinput#selectionStart-prop>` or the
+:ref:`selectionEnd <sdk_qtquick_textinput#selectionEnd-prop>` (whichever
+was at the previous cursor position) to the specified position. This
+allows you to easily extend and contract the selected text range.
 
 The selection mode specifies whether the selection is updated on a per
 character or a per word basis. If not specified the selection mode will
-default to
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.SelectCharacters.
+default to :ref:`TextInput <sdk_qtquick_textinput>`.SelectCharacters.
 
--  `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.SelectCharacters -
-   Sets either the
-   `selectionStart </sdk/apps/qml/QtQuick/TextInput#selectionStart-prop>`__
-   or
-   `selectionEnd </sdk/apps/qml/QtQuick/TextInput#selectionEnd-prop>`__
-   (whichever was at the previous cursor position) to the specified
-   position.
--  `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.SelectWords - Sets
-   the
-   `selectionStart </sdk/apps/qml/QtQuick/TextInput#selectionStart-prop>`__
-   and
-   `selectionEnd </sdk/apps/qml/QtQuick/TextInput#selectionEnd-prop>`__
-   to include all words between the specified position and the previous
-   cursor position. Words partially in the range are included.
+-  :ref:`TextInput <sdk_qtquick_textinput>`.SelectCharacters - Sets either
+   the :ref:`selectionStart <sdk_qtquick_textinput#selectionStart-prop>` or
+   :ref:`selectionEnd <sdk_qtquick_textinput#selectionEnd-prop>` (whichever
+   was at the previous cursor position) to the specified position.
+-  :ref:`TextInput <sdk_qtquick_textinput>`.SelectWords - Sets the
+   :ref:`selectionStart <sdk_qtquick_textinput#selectionStart-prop>` and
+   :ref:`selectionEnd <sdk_qtquick_textinput#selectionEnd-prop>` to include
+   all words between the specified position and the previous cursor
+   position. Words partially in the range are included.
 
 For example, take this sequence of calls:
 
@@ -1129,12 +1215,13 @@ This moves the cursor to position 5, extend the selection end from 5 to
 9 and then retract the selection end from 9 to 7, leaving the text from
 position 5 to 7 selected (the 6th and 7th characters).
 
-The same sequence with
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.SelectWords will extend
-the selection start to a word boundary before or on position 5 and
-extend the selection end to a word boundary on or past position 9.
+The same sequence with :ref:`TextInput <sdk_qtquick_textinput>`.SelectWords
+will extend the selection start to a word boundary before or on position
+5 and extend the selection end to a word boundary on or past position 9.
 
 | 
+
+.. _sdk_qtquick_textinput_paste-method:
 
 +--------------------------------------------------------------------------+
 |        \ paste()                                                         |
@@ -1144,6 +1231,8 @@ Replaces the currently selected text by the contents of the system
 clipboard.
 
 | 
+
+.. _sdk_qtquick_textinput_int positionAt-method:
 
 +--------------------------------------------------------------------------+
 |        \ int positionAt(real *x*, real *y*, CursorPosition *position* =  |
@@ -1165,12 +1254,14 @@ line will be returned.
 The cursor position type specifies how the cursor position should be
 resolved.
 
--  `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.CursorBetweenCharacters
-   - Returns the position between characters that is nearest x.
--  `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.CursorOnCharacter -
-   Returns the position before the character that is nearest x.
+-  :ref:`TextInput <sdk_qtquick_textinput>`.CursorBetweenCharacters -
+   Returns the position between characters that is nearest x.
+-  :ref:`TextInput <sdk_qtquick_textinput>`.CursorOnCharacter - Returns the
+   position before the character that is nearest x.
 
 | 
+
+.. _sdk_qtquick_textinput_rect positionToRectangle-method:
 
 +--------------------------------------------------------------------------+
 |        \ rect positionToRectangle(int *pos*)                             |
@@ -1180,30 +1271,36 @@ This function takes a character position and returns the rectangle that
 the cursor would occupy, if it was placed at that character position.
 
 This is similar to setting the
-`cursorPosition </sdk/apps/qml/QtQuick/TextInput#cursorPosition-prop>`__,
-and then querying the cursor rectangle, but the
-`cursorPosition </sdk/apps/qml/QtQuick/TextInput#cursorPosition-prop>`__
-is not changed.
+:ref:`cursorPosition <sdk_qtquick_textinput#cursorPosition-prop>`, and then
+querying the cursor rectangle, but the
+:ref:`cursorPosition <sdk_qtquick_textinput#cursorPosition-prop>` is not
+changed.
 
 | 
+
+.. _sdk_qtquick_textinput_redo-method:
 
 +--------------------------------------------------------------------------+
 |        \ redo()                                                          |
 +--------------------------------------------------------------------------+
 
 Redoes the last operation if redo is
-`available </sdk/apps/qml/QtQuick/TextInput#canRedo-prop>`__.
+:ref:`available <sdk_qtquick_textinput#canRedo-prop>`.
 
 | 
+
+.. _sdk_qtquick_textinput_remove-method:
 
 +--------------------------------------------------------------------------+
 |        \ remove(int *start*, int *end*)                                  |
 +--------------------------------------------------------------------------+
 
 Removes the section of text that is between the *start* and *end*
-positions from the `TextInput </sdk/apps/qml/QtQuick/TextInput/>`__.
+positions from the :ref:`TextInput <sdk_qtquick_textinput>`.
 
 | 
+
+.. _sdk_qtquick_textinput_select-method:
 
 +--------------------------------------------------------------------------+
 |        \ select(int *start*, int *end*)                                  |
@@ -1214,17 +1311,18 @@ Causes the text from *start* to *end* to be selected.
 If either start or end is out of range, the selection is not changed.
 
 After calling this,
-`selectionStart </sdk/apps/qml/QtQuick/TextInput#selectionStart-prop>`__
-will become the lesser and
-`selectionEnd </sdk/apps/qml/QtQuick/TextInput#selectionEnd-prop>`__
-will become the greater (regardless of the order passed to this method).
+:ref:`selectionStart <sdk_qtquick_textinput#selectionStart-prop>` will
+become the lesser and
+:ref:`selectionEnd <sdk_qtquick_textinput#selectionEnd-prop>` will become
+the greater (regardless of the order passed to this method).
 
 **See also**
-`selectionStart </sdk/apps/qml/QtQuick/TextInput#selectionStart-prop>`__
-and
-`selectionEnd </sdk/apps/qml/QtQuick/TextInput#selectionEnd-prop>`__.
+:ref:`selectionStart <sdk_qtquick_textinput#selectionStart-prop>` and
+:ref:`selectionEnd <sdk_qtquick_textinput#selectionEnd-prop>`.
 
 | 
+
+.. _sdk_qtquick_textinput_selectAll-method:
 
 +--------------------------------------------------------------------------+
 |        \ selectAll()                                                     |
@@ -1234,6 +1332,8 @@ Causes all text to be selected.
 
 | 
 
+.. _sdk_qtquick_textinput_selectWord-method:
+
 +--------------------------------------------------------------------------+
 |        \ selectWord()                                                    |
 +--------------------------------------------------------------------------+
@@ -1242,13 +1342,15 @@ Causes the word closest to the current cursor position to be selected.
 
 | 
 
+.. _sdk_qtquick_textinput_undo-method:
+
 +--------------------------------------------------------------------------+
 |        \ undo()                                                          |
 +--------------------------------------------------------------------------+
 
 Undoes the last operation if undo is
-`available </sdk/apps/qml/QtQuick/TextInput#canUndo-prop>`__. Deselects
-any current selection, and updates the selection start to the current
-cursor position.
+:ref:`available <sdk_qtquick_textinput#canUndo-prop>`. Deselects any
+current selection, and updates the selection start to the current cursor
+position.
 
 | 

@@ -1,22 +1,26 @@
+.. _sdk_qtquick_particles_wander:
+QtQuick.Particles Wander
+========================
+
 For applying random particle trajectory
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtQuick.Particles 2.0         |
 +--------------------------------------+--------------------------------------+
 | Inherits:                            | `Affector </sdk/apps/qml/QtQuick/Par |
-|                                      | ticles.Affector/>`__                 |
+|                                      | ticles.Affector/>`_                  |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`affectedParameter </sdk/apps/qml/QtQuick/Particles.Wander#affectedParameter-prop>`__****
+-  `affectedParameter </sdk/apps/qml/QtQuick/Particles.Wander/_affectedParameter-prop>`_ 
    : AffectableParameter
--  ****`pace </sdk/apps/qml/QtQuick/Particles.Wander#pace-prop>`__**** :
-   real
--  ****`xVariance </sdk/apps/qml/QtQuick/Particles.Wander#xVariance-prop>`__****
+-  `pace </sdk/apps/qml/QtQuick/Particles.Wander/_pace-prop>`_ 
    : real
--  ****`yVariance </sdk/apps/qml/QtQuick/Particles.Wander#yVariance-prop>`__****
+-  `xVariance </sdk/apps/qml/QtQuick/Particles.Wander/_xVariance-prop>`_ 
+   : real
+-  `yVariance </sdk/apps/qml/QtQuick/Particles.Wander/_yVariance-prop>`_ 
    : real
 
 Detailed Description
@@ -24,6 +28,8 @@ Detailed Description
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_particles_wander_affectedParameter-prop:
 
 +--------------------------------------------------------------------------+
 |        \ affectedParameter : AffectableParameter                         |
@@ -37,6 +43,8 @@ What attribute of particles is directly affected.
 
 | 
 
+.. _sdk_qtquick_particles_wander_pace-prop:
+
 +--------------------------------------------------------------------------+
 |        \ pace : real                                                     |
 +--------------------------------------------------------------------------+
@@ -44,6 +52,8 @@ What attribute of particles is directly affected.
 Maximum attribute change per second.
 
 | 
+
+.. _sdk_qtquick_particles_wander_xVariance-prop:
 
 +--------------------------------------------------------------------------+
 |        \ xVariance : real                                                |
@@ -54,6 +64,8 @@ Maximum attribute x value (as a result of Wander).
 If unset, Wander will not affect x values.
 
 | 
+
+.. _sdk_qtquick_particles_wander_yVariance-prop:
 
 +--------------------------------------------------------------------------+
 |        \ yVariance : real                                                |

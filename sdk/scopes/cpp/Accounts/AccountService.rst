@@ -1,5 +1,9 @@
+.. _sdk_accounts_accountservice:
+Accounts AccountService
+=======================
+
 Account settings for a specific service.
-`More... </sdk/scopes/cpp/Accounts/AccountService#details>`__
+:ref:`More... <sdk_accounts_accountservice#details>`
 
 ``#include <Accounts/AccountService>``
 
@@ -10,9 +14,9 @@ Inherits QObject.
 
         void 
 
-`enabled </sdk/scopes/cpp/Accounts/AccountService#ab2f0d21a6f535870b37dcb44b2f77205>`__
+:ref:`enabled <sdk_accounts_accountservice#ab2f0d21a6f535870b37dcb44b2f77205>`
 (bool
-`isEnabled </sdk/scopes/cpp/Accounts/AccountService#ae2931e09e0fd8eac15c83f0254b4e4ac>`__)
+:ref:`isEnabled <sdk_accounts_accountservice#ae2931e09e0fd8eac15c83f0254b4e4ac>`)
 
  
 
@@ -22,7 +26,7 @@ Inherits QObject.
 
 void 
 
-`changed </sdk/scopes/cpp/Accounts/AccountService#a4db9a5f1a7e34ec6902ff9630d98b777>`__
+:ref:`changed <sdk_accounts_accountservice#a4db9a5f1a7e34ec6902ff9630d98b777>`
 ()
 
  
@@ -36,11 +40,11 @@ void 
 
  
 
-`AccountService </sdk/scopes/cpp/Accounts/AccountService#aef5d4691113e384992926928928ae334>`__
+:ref:`AccountService <sdk_accounts_accountservice#aef5d4691113e384992926928928ae334>`
 (Account
-\*\ `account </sdk/scopes/cpp/Accounts/AccountService#a490333c2ed4d6f107c5493a9465d993b>`__,
-const `Service </sdk/scopes/cpp/Accounts/Service/>`__
-&\ `service </sdk/scopes/cpp/Accounts/AccountService#a256dc9d961214d5f60642a290a288998>`__)
+\*\ :ref:`account <sdk_accounts_accountservice#a490333c2ed4d6f107c5493a9465d993b>`,
+const :ref:`Service <sdk_accounts_service>`
+&\ :ref:`service <sdk_accounts_accountservice#a256dc9d961214d5f60642a290a288998>`)
 
  
 
@@ -50,11 +54,11 @@ const `Service </sdk/scopes/cpp/Accounts/Service/>`__
 
  
 
-`AccountService </sdk/scopes/cpp/Accounts/AccountService#a5183e298082ee83004c503197ff14e20>`__
+:ref:`AccountService <sdk_accounts_accountservice#a5183e298082ee83004c503197ff14e20>`
 (Account
-\*\ `account </sdk/scopes/cpp/Accounts/AccountService#a490333c2ed4d6f107c5493a9465d993b>`__,
-const `Service </sdk/scopes/cpp/Accounts/Service/>`__
-&\ `service </sdk/scopes/cpp/Accounts/AccountService#a256dc9d961214d5f60642a290a288998>`__,
+\*\ :ref:`account <sdk_accounts_accountservice#a490333c2ed4d6f107c5493a9465d993b>`,
+const :ref:`Service <sdk_accounts_service>`
+&\ :ref:`service <sdk_accounts_accountservice#a256dc9d961214d5f60642a290a288998>`,
 QObject \*parent)
 
  
@@ -65,7 +69,7 @@ QObject \*parent)
 
         virtual 
 
-`~AccountService </sdk/scopes/cpp/Accounts/AccountService#a0622bfbd6cf486c0b73712ff02c0294e>`__
+:ref:`~AccountService <sdk_accounts_accountservice#a0622bfbd6cf486c0b73712ff02c0294e>`
 ()
 
  
@@ -76,7 +80,7 @@ QObject \*parent)
 
         Account \* 
 
-`account </sdk/scopes/cpp/Accounts/AccountService#a490333c2ed4d6f107c5493a9465d993b>`__
+:ref:`account <sdk_accounts_accountservice#a490333c2ed4d6f107c5493a9465d993b>`
 () const
 
  
@@ -85,9 +89,9 @@ QObject \*parent)
 
  
 
-`Service </sdk/scopes/cpp/Accounts/Service/>`__ 
+:ref:`Service <sdk_accounts_service>` 
 
-`service </sdk/scopes/cpp/Accounts/AccountService#a256dc9d961214d5f60642a290a288998>`__
+:ref:`service <sdk_accounts_accountservice#a256dc9d961214d5f60642a290a288998>`
 () const
 
  
@@ -98,7 +102,7 @@ QObject \*parent)
 
 bool 
 
-`enabled </sdk/scopes/cpp/Accounts/AccountService#a1d79980f25d38aba3d6777d0afe544f3>`__
+:ref:`enabled <sdk_accounts_accountservice#a1d79980f25d38aba3d6777d0afe544f3>`
 () const
 
  
@@ -109,7 +113,7 @@ bool 
 
         bool 
 
-`isEnabled </sdk/scopes/cpp/Accounts/AccountService#ae2931e09e0fd8eac15c83f0254b4e4ac>`__
+:ref:`isEnabled <sdk_accounts_accountservice#ae2931e09e0fd8eac15c83f0254b4e4ac>`
 () const
 
  
@@ -120,7 +124,7 @@ bool 
 
         QStringList 
 
-`allKeys </sdk/scopes/cpp/Accounts/AccountService#a9936a9bd6fca45f1d03a63b1b485ed88>`__
+:ref:`allKeys <sdk_accounts_accountservice#a9936a9bd6fca45f1d03a63b1b485ed88>`
 () const
 
  
@@ -131,7 +135,7 @@ bool 
 
 void 
 
-`beginGroup </sdk/scopes/cpp/Accounts/AccountService#aa889966b87d4315aea74c30088e9c8fa>`__
+:ref:`beginGroup <sdk_accounts_accountservice#aa889966b87d4315aea74c30088e9c8fa>`
 (const QString &prefix)
 
  
@@ -142,7 +146,7 @@ void 
 
         QStringList 
 
-`childGroups </sdk/scopes/cpp/Accounts/AccountService#af5b653c82d3a3d7765da47fe5db0e128>`__
+:ref:`childGroups <sdk_accounts_accountservice#af5b653c82d3a3d7765da47fe5db0e128>`
 () const
 
  
@@ -153,7 +157,7 @@ void 
 
         QStringList 
 
-`childKeys </sdk/scopes/cpp/Accounts/AccountService#a09f8085bca6d1c8b4837beabcea7b639>`__
+:ref:`childKeys <sdk_accounts_accountservice#a09f8085bca6d1c8b4837beabcea7b639>`
 () const
 
  
@@ -164,7 +168,7 @@ void 
 
 void 
 
-`clear </sdk/scopes/cpp/Accounts/AccountService#ac8bb3912a3ce86b15842e79d0b421204>`__
+:ref:`clear <sdk_accounts_accountservice#ac8bb3912a3ce86b15842e79d0b421204>`
 ()
 
  
@@ -175,7 +179,7 @@ void 
 
 bool 
 
-`contains </sdk/scopes/cpp/Accounts/AccountService#aab9f06bc42480ab555a9757e14303e5f>`__
+:ref:`contains <sdk_accounts_accountservice#aab9f06bc42480ab555a9757e14303e5f>`
 (const QString &key) const
 
  
@@ -186,7 +190,7 @@ bool 
 
         void 
 
-`endGroup </sdk/scopes/cpp/Accounts/AccountService#af964cd7bde81d0f118ea09e201e155dd>`__
+:ref:`endGroup <sdk_accounts_accountservice#af964cd7bde81d0f118ea09e201e155dd>`
 ()
 
  
@@ -197,7 +201,7 @@ bool 
 
         QString 
 
-`group </sdk/scopes/cpp/Accounts/AccountService#a5adb315467de1866550658b4679bf9f9>`__
+:ref:`group <sdk_accounts_accountservice#a5adb315467de1866550658b4679bf9f9>`
 () const
 
  
@@ -208,7 +212,7 @@ bool 
 
 void 
 
-`remove </sdk/scopes/cpp/Accounts/AccountService#a89c0a3a6c660a5f577e5241a63052f2c>`__
+:ref:`remove <sdk_accounts_accountservice#a89c0a3a6c660a5f577e5241a63052f2c>`
 (const QString &key)
 
  
@@ -220,15 +224,15 @@ void 
         void 
 
 **setValue** (const char \*key, const QVariant
-&\ `value </sdk/scopes/cpp/Accounts/AccountService#a299df626e5ca7968fd8b70f9c87acfbb>`__)
+&\ :ref:`value <sdk_accounts_accountservice#a299df626e5ca7968fd8b70f9c87acfbb>`)
 
  
 
 void 
 
-`setValue </sdk/scopes/cpp/Accounts/AccountService#a48d1031ae51455e458b881c49c65a92e>`__
+:ref:`setValue <sdk_accounts_accountservice#a48d1031ae51455e458b881c49c65a92e>`
 (const QString &key, const QVariant
-&\ `value </sdk/scopes/cpp/Accounts/AccountService#a299df626e5ca7968fd8b70f9c87acfbb>`__)
+&\ :ref:`value <sdk_accounts_accountservice#a299df626e5ca7968fd8b70f9c87acfbb>`)
 
  
 
@@ -238,7 +242,7 @@ void 
 
 QVariant 
 
-`value </sdk/scopes/cpp/Accounts/AccountService#a299df626e5ca7968fd8b70f9c87acfbb>`__
+:ref:`value <sdk_accounts_accountservice#a299df626e5ca7968fd8b70f9c87acfbb>`
 (const QString &key, const QVariant &defaultValue, SettingSource
 \*source=0) const
 
@@ -250,7 +254,7 @@ QVariant 
 
 QVariant 
 
-`value </sdk/scopes/cpp/Accounts/AccountService#a53cc185b2ceff59c833ebe939a6e18cb>`__
+:ref:`value <sdk_accounts_accountservice#a53cc185b2ceff59c833ebe939a6e18cb>`
 (const QString &key, SettingSource \*source=0) const
 
  
@@ -267,7 +271,7 @@ QVariant 
 
 QStringList 
 
-`changedFields </sdk/scopes/cpp/Accounts/AccountService#a678e391f34362471f042719d3b388d81>`__
+:ref:`changedFields <sdk_accounts_accountservice#a678e391f34362471f042719d3b388d81>`
 () const
 
  
@@ -278,9 +282,9 @@ QStringList 
 
  
 
-`AuthData </sdk/scopes/cpp/Accounts/AuthData/>`__ 
+:ref:`AuthData <sdk_accounts_authdata>` 
 
-`authData </sdk/scopes/cpp/Accounts/AccountService#a49a9f7deccedeebacadc37ae01ac83ab>`__
+:ref:`authData <sdk_accounts_accountservice#a49a9f7deccedeebacadc37ae01ac83ab>`
 () const
 
  
@@ -295,24 +299,23 @@ Detailed Description
 
 Account settings for a specific service.
 
-The `AccountService </sdk/scopes/cpp/Accounts/AccountService/>`__ class
-provides access to the account settings for a specific service type. It
-is meant to be easier to use than the Account class because it hides the
+The :ref:`AccountService <sdk_accounts_accountservice>` class provides
+access to the account settings for a specific service type. It is meant
+to be easier to use than the Account class because it hides the
 complexity of the account structure and gives access to only the limited
 subset of account settings which are relevant to a service.
 
-To get an `AccountService </sdk/scopes/cpp/Accounts/AccountService/>`__
-one can use the `Manager </sdk/scopes/cpp/Accounts/Manager/>`__ methods
-accountServices() or enabledAccountServices(), which both return a QList
-of account services. Note that if the
-`Manager </sdk/scopes/cpp/Accounts/Manager/>`__ was instantiated for a
-specific service type, these lists will contain only those account
+To get an :ref:`AccountService <sdk_accounts_accountservice>` one can use
+the :ref:`Manager <sdk_accounts_manager>` methods accountServices() or
+enabledAccountServices(), which both return a QList of account services.
+Note that if the :ref:`Manager <sdk_accounts_manager>` was instantiated for
+a specific service type, these lists will contain only those account
 services matching that service type. The
-`AccountService </sdk/scopes/cpp/Accounts/AccountService/>`__ can also
-be instantiated with its
-`AccountService </sdk/scopes/cpp/Accounts/AccountService/>`__\ (Account
-\*account, `Service </sdk/scopes/cpp/Accounts/Service/>`__ \*service)
-constructor: this is useful if one already has an Account instance.
+:ref:`AccountService <sdk_accounts_accountservice>` can also be
+instantiated with its
+:ref:`AccountService <sdk_accounts_accountservice>`\ (Account \*account,
+:ref:`Service <sdk_accounts_service>` \*service) constructor: this is
+useful if one already has an Account instance.
 
 This is intended to be a convenient wrapper over the accounts settings
 specific for a service; as such, it doesn't offer all the editing
@@ -324,9 +327,8 @@ Example code:
 
 // Instantiate an account manager interested in e-mail services only.
 
-`Accounts::Manager </sdk/scopes/cpp/Accounts/Manager/>`__ \*manager =
-new
-`Accounts::Manager </sdk/scopes/cpp/Accounts/Manager/>`__\ ("e-mail");
+:ref:`Accounts::Manager <sdk_accounts_manager>` \*manager = new
+:ref:`Accounts::Manager <sdk_accounts_manager>`\ ("e-mail");
 
 // Get the list of enabled AccountService objects of type e-mail.
 
@@ -335,23 +337,22 @@ manager->enabledAccountServices();
 
 // Loop through the account services and do something useful with them.
 
-foreach
-(`Accounts::AccountService </sdk/scopes/cpp/Accounts/AccountService/>`__
-`service </sdk/scopes/cpp/Accounts/AccountService#a256dc9d961214d5f60642a290a288998>`__,
+foreach (:ref:`Accounts::AccountService <sdk_accounts_accountservice>`
+:ref:`service <sdk_accounts_accountservice#a256dc9d961214d5f60642a290a288998>`,
 services) {
 
 QString server =
-service.\ `value </sdk/scopes/cpp/Accounts/AccountService#a299df626e5ca7968fd8b70f9c87acfbb>`__\ ("pop3/hostname").toString();
+service.\ :ref:`value <sdk_accounts_accountservice#a299df626e5ca7968fd8b70f9c87acfbb>`\ ("pop3/hostname").toString();
 
 int port =
-service.\ `value </sdk/scopes/cpp/Accounts/AccountService#a299df626e5ca7968fd8b70f9c87acfbb>`__\ ("pop3/port").toInt();
+service.\ :ref:`value <sdk_accounts_accountservice#a299df626e5ca7968fd8b70f9c87acfbb>`\ ("pop3/port").toInt();
 
 // Suppose that the e-mail address is stored in the global account
 
 // settings; let's get it from there:
 
 QString fromAddress =
-service.\ `account </sdk/scopes/cpp/Accounts/AccountService#a490333c2ed4d6f107c5493a9465d993b>`__\ ()->valueAsString("username");
+service.\ :ref:`account <sdk_accounts_accountservice#a490333c2ed4d6f107c5493a9465d993b>`\ ()->valueAsString("username");
 
 ...
 
@@ -362,16 +363,15 @@ Note
     editing application) should never use account services which are not
     enabled, and should stop using an account when the account service
     becomes disabled. The latter can be done by connecting to the
-    `changed() </sdk/scopes/cpp/Accounts/AccountService#a4db9a5f1a7e34ec6902ff9630d98b777>`__
+    :ref:`changed() <sdk_accounts_accountservice#a4db9a5f1a7e34ec6902ff9630d98b777>`
     signal and checking if
-    `isEnabled() </sdk/scopes/cpp/Accounts/AccountService#ae2931e09e0fd8eac15c83f0254b4e4ac>`__
+    :ref:`isEnabled() <sdk_accounts_accountservice#ae2931e09e0fd8eac15c83f0254b4e4ac>`
     still returns true.
     Note that if the account gets deleted, it will always get disabled
     first; so, there is no need to connect to the Account::removed()
     signal; one can just monitor the
-    `changed() </sdk/scopes/cpp/Accounts/AccountService#a4db9a5f1a7e34ec6902ff9630d98b777>`__
-    signal from the
-    `AccountService </sdk/scopes/cpp/Accounts/AccountService/>`__
+    :ref:`changed() <sdk_accounts_accountservice#a4db9a5f1a7e34ec6902ff9630d98b777>`
+    signal from the :ref:`AccountService <sdk_accounts_accountservice>`
     objects.
 
 Definition at line 39 of file account-service.h.
@@ -383,16 +383,13 @@ Constructor & Destructor Documentation
 | +--------------------+-------------- | explicit                             |
 | ------+--------------------+-------- |                                      |
 | ------------+                        |                                      |
-| | `AccountService </ | (             |                                      |
+| | `AccountService <s | (             |                                      |
 |       | Account \*         | *accoun |                                      |
 | t*,         |                        |                                      |
-| | sdk/scopes/cpp/Acc |               |                                      |
+| | dk_accounts_accoun |               |                                      |
 |       |                    |         |                                      |
 |             |                        |                                      |
-| | ounts/AccountServi |               |                                      |
-|       |                    |         |                                      |
-|             |                        |                                      |
-| | ce/>`__            |               |                                      |
+| | tservice>`_        |               |                                      |
 |       |                    |         |                                      |
 |             |                        |                                      |
 | +--------------------+-------------- |                                      |
@@ -402,13 +399,10 @@ Constructor & Destructor Documentation
 |       | const              | *servic |                                      |
 | e*          |                        |                                      |
 | |                    |               |                                      |
-|       | `Service </sdk/sco |         |                                      |
+|       | :ref:`Service <sdk_acco |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
-|       | pes/cpp/Accounts/S |         |                                      |
-|             |                        |                                      |
-| |                    |               |                                      |
-|       | ervice/>`__        |         |                                      |
+|       | unts_service>`_    |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
 |       | &                  |         |                                      |
@@ -427,11 +421,11 @@ Constructor & Destructor Documentation
 Constructor.
 
 Parameters
-    +-----------+-------------------------------------------------------------------------------+
-    | account   | An Account.                                                                   |
-    +-----------+-------------------------------------------------------------------------------+
-    | service   | A `Service </sdk/scopes/cpp/Accounts/Service/>`__ supported by the account.   |
-    +-----------+-------------------------------------------------------------------------------+
+    +-----------+------------------------------------------------------------------+
+    | account   | An Account.                                                      |
+    +-----------+------------------------------------------------------------------+
+    | service   | A :ref:`Service <sdk_accounts_service>` supported by the account.   |
+    +-----------+------------------------------------------------------------------+
 
 Definition at line 179 of file account-service.cpp.
 
@@ -439,16 +433,13 @@ Definition at line 179 of file account-service.cpp.
 | +--------------------+-------------- | explicit                             |
 | ------+--------------------+-------- |                                      |
 | ------------+                        |                                      |
-| | `AccountService </ | (             |                                      |
+| | `AccountService <s | (             |                                      |
 |       | Account \*         | *accoun |                                      |
 | t*,         |                        |                                      |
-| | sdk/scopes/cpp/Acc |               |                                      |
+| | dk_accounts_accoun |               |                                      |
 |       |                    |         |                                      |
 |             |                        |                                      |
-| | ounts/AccountServi |               |                                      |
-|       |                    |         |                                      |
-|             |                        |                                      |
-| | ce/>`__            |               |                                      |
+| | tservice>`_        |               |                                      |
 |       |                    |         |                                      |
 |             |                        |                                      |
 | +--------------------+-------------- |                                      |
@@ -458,13 +449,10 @@ Definition at line 179 of file account-service.cpp.
 |       | const              | *servic |                                      |
 | e*,         |                        |                                      |
 | |                    |               |                                      |
-|       | `Service </sdk/sco |         |                                      |
+|       | :ref:`Service <sdk_acco |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
-|       | pes/cpp/Accounts/S |         |                                      |
-|             |                        |                                      |
-| |                    |               |                                      |
-|       | ervice/>`__        |         |                                      |
+|       | unts_service>`_    |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
 |       | &                  |         |                                      |
@@ -489,13 +477,13 @@ Definition at line 179 of file account-service.cpp.
 Constructor.
 
 Parameters
-    +-----------+-------------------------------------------------------------------------------+
-    | account   | An Account.                                                                   |
-    +-----------+-------------------------------------------------------------------------------+
-    | service   | A `Service </sdk/scopes/cpp/Accounts/Service/>`__ supported by the account.   |
-    +-----------+-------------------------------------------------------------------------------+
-    | parent    | The parent object.                                                            |
-    +-----------+-------------------------------------------------------------------------------+
+    +-----------+------------------------------------------------------------------+
+    | account   | An Account.                                                      |
+    +-----------+------------------------------------------------------------------+
+    | service   | A :ref:`Service <sdk_accounts_service>` supported by the account.   |
+    +-----------+------------------------------------------------------------------+
+    | parent    | The parent object.                                               |
+    +-----------+------------------------------------------------------------------+
 
 Definition at line 191 of file account-service.cpp.
 
@@ -503,10 +491,9 @@ Member Function Documentation
 -----------------------------
 
 +----------------+----------------+----------------+----------------+----------------+
-| `AuthData </sd | (              |                | )              | const          |
-| k/scopes/cpp/A |                |                |                |                |
-| ccounts/AuthDa |                |                |                |                |
-| ta/>`__        |                |                |                |                |
+| `AuthData <sdk | (              |                | )              | const          |
+| _accounts_auth |                |                |                |                |
+| data>`_        |                |                |                |                |
 | authData       |                |                |                |                |
 +----------------+----------------+----------------+----------------+----------------+
 
@@ -518,8 +505,8 @@ The method and mechanism are read from the "auth/method" and
 found under the "auth/<method>/<mechanism>/" group.
 
 Returns
-    an `AuthData </sdk/scopes/cpp/Accounts/AuthData/>`__ object,
-    describing the authentication settings.
+    an :ref:`AuthData <sdk_accounts_authdata>` object, describing the
+    authentication settings.
 
 Definition at line 501 of file account-service.cpp.
 
@@ -554,7 +541,7 @@ Definition at line 271 of file account-service.cpp.
 Emitted when some setting has changed on the account service.
 
 You can use the
-`changedFields() </sdk/scopes/cpp/Accounts/AccountService#a678e391f34362471f042719d3b388d81>`__
+:ref:`changedFields() <sdk_accounts_accountservice#a678e391f34362471f042719d3b388d81>`
 method to retrieve the list of the settings which have changed.
 
 +----------------+----------------+----------------+----------------+----------------+
@@ -563,7 +550,7 @@ method to retrieve the list of the settings which have changed.
 +----------------+----------------+----------------+----------------+----------------+
 
 This method should be called only in the context of a handler of the
-`AccountService::changed() </sdk/scopes/cpp/Accounts/AccountService#a4db9a5f1a7e34ec6902ff9630d98b777>`__
+:ref:`AccountService::changed() <sdk_accounts_accountservice#a4db9a5f1a7e34ec6902ff9630d98b777>`
 signal, and can be used to retrieve the set of changes.
 
 Returns
@@ -579,7 +566,7 @@ Remove all the keys.
 
 See also
     `remove(const QString
-    &key) </sdk/scopes/cpp/Accounts/AccountService#a89c0a3a6c660a5f577e5241a63052f2c>`__
+    &key) <sdk_accounts_accountservice#a89c0a3a6c660a5f577e5241a63052f2c>:ref:`
 
 Definition at line 316 of file account-service.cpp.
 
@@ -608,9 +595,9 @@ Note
     this is just a wrapper of isEnabled
 
 See also
-    `isEnabled() </sdk/scopes/cpp/Accounts/AccountService#ae2931e09e0fd8eac15c83f0254b4e4ac>`__
+    :ref:`isEnabled() <sdk_accounts_accountservice#ae2931e09e0fd8eac15c83f0254b4e4ac>`
 
-**`Deprecated: </sdk/scopes/cpp/Accounts/deprecated#_deprecated000001>`__**
+**`Deprecated: </sdk/scopes/cpp/Accounts/deprecated/#_deprecated000001>`_ **
     use isEnabled instead
 
 Definition at line 231 of file account-service.cpp.
@@ -637,14 +624,13 @@ Definition at line 363 of file account-service.cpp.
 References AccountService::allKeys().
 
 +----------------+----------------+----------------+----------------+----------------+
-| `Service </sdk | (              |                | )              | const          |
-| /scopes/cpp/Ac |                |                |                |                |
-| counts/Service |                |                |                |                |
-| />`__          |                |                |                |                |
+| :ref:`Service <sdk_ | (              |                | )              | const          |
+| accounts_servi |                |                |                |                |
+| ce>`_          |                |                |                |                |
 | service        |                |                |                |                |
 +----------------+----------------+----------------+----------------+----------------+
 
-Return the `Service </sdk/scopes/cpp/Accounts/Service/>`__.
+Return the :ref:`Service <sdk_accounts_service>`.
 
 Do not delete this object explicitly.
 

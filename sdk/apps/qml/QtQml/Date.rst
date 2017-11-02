@@ -1,3 +1,7 @@
+.. _sdk_qtqml_date:
+QtQml Date
+==========
+
 Provides date functions
 
 +---------------------+--------------------+
@@ -8,31 +12,31 @@ Methods
 -------
 
 -  string
-   ****`fromLocaleDateString </sdk/apps/qml/QtQml/Date#fromLocaleDateString-method>`__****\ (locale,
+   **:ref:`fromLocaleDateString <sdk_qtqml_date#fromLocaleDateString-method>`**\ (locale,
    dateString, format)
 -  string
-   ****`fromLocaleString </sdk/apps/qml/QtQml/Date#fromLocaleString-method>`__****\ (locale,
+   **:ref:`fromLocaleString <sdk_qtqml_date#fromLocaleString-method>`**\ (locale,
    dateTimeString, format)
 -  string
-   ****`fromLocaleTimeString </sdk/apps/qml/QtQml/Date#fromLocaleTimeString-method>`__****\ (locale,
+   **:ref:`fromLocaleTimeString <sdk_qtqml_date#fromLocaleTimeString-method>`**\ (locale,
    timeString, format)
 -  string
-   ****`timeZoneUpdated </sdk/apps/qml/QtQml/Date#timeZoneUpdated-method>`__****\ ()
+   **:ref:`timeZoneUpdated <sdk_qtqml_date#timeZoneUpdated-method>`**\ ()
 -  string
-   ****`toLocaleDateString </sdk/apps/qml/QtQml/Date#toLocaleDateString-method>`__****\ (locale,
+   **:ref:`toLocaleDateString <sdk_qtqml_date#toLocaleDateString-method>`**\ (locale,
    format)
 -  string
-   ****`toLocaleString </sdk/apps/qml/QtQml/Date#toLocaleString-method>`__****\ (locale,
+   **:ref:`toLocaleString <sdk_qtqml_date#toLocaleString-method>`**\ (locale,
    format)
 -  string
-   ****`toLocaleTimeString </sdk/apps/qml/QtQml/Date#toLocaleTimeString-method>`__****\ (locale,
+   **:ref:`toLocaleTimeString <sdk_qtqml_date#toLocaleTimeString-method>`**\ (locale,
    format)
 
 Detailed Description
 --------------------
 
 The QML Date object extends the `JS Date
-object <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date>`__
+object <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date>`_ 
 with locale aware functions.
 
 Functions that accept a locale format may be either an enumeration
@@ -152,20 +156,22 @@ it to a string using the locale-aware functions can yield a result
 incorrect by one hour, if DST is currently in effect, while it was not
 for the time specified, or vice versa.
 
-**See also** `Locale </sdk/apps/qml/QtQml/Locale/>`__.
+**See also** :ref:`Locale <sdk_qtqml_locale>`.
 
 Method Documentation
 --------------------
+
+.. _sdk_qtqml_date_string fromLocaleDateString-method:
 
 +--------------------------------------------------------------------------+
 |        \ string fromLocaleDateString(locale, dateString, format)         |
 +--------------------------------------------------------------------------+
 
-Converts the date string *dateString* to a
-`Date </sdk/apps/qml/QtQml/Date/>`__ object using *locale* and *format*.
+Converts the date string *dateString* to a :ref:`Date <sdk_qtqml_date>`
+object using *locale* and *format*.
 
-If *format* is not specified,
-`Locale.LongFormat </sdk/apps/qml/QtQml/Locale/>`__ will be used.
+If *format* is not specified, :ref:`Locale.LongFormat <sdk_qtqml_locale>`
+will be used.
 
 If *locale* is not specified, the default locale will be used.
 
@@ -188,15 +194,17 @@ in the same manner:
 
 | 
 
+.. _sdk_qtqml_date_string fromLocaleString-method:
+
 +--------------------------------------------------------------------------+
 |        \ string fromLocaleString(locale, dateTimeString, format)         |
 +--------------------------------------------------------------------------+
 
 Converts the datetime string *dateTimeString* to a
-`Date </sdk/apps/qml/QtQml/Date/>`__ object using *locale* and *format*.
+:ref:`Date <sdk_qtqml_date>` object using *locale* and *format*.
 
-If *format* is not specified,
-`Locale.LongFormat </sdk/apps/qml/QtQml/Locale/>`__ will be used.
+If *format* is not specified, :ref:`Locale.LongFormat <sdk_qtqml_locale>`
+will be used.
 
 If *locale* is not specified, the default locale will be used.
 
@@ -216,15 +224,17 @@ string in a certain format using the default locale:
 
 | 
 
+.. _sdk_qtqml_date_string fromLocaleTimeString-method:
+
 +--------------------------------------------------------------------------+
 |        \ string fromLocaleTimeString(locale, timeString, format)         |
 +--------------------------------------------------------------------------+
 
-Converts the time string *timeString* to a
-`Date </sdk/apps/qml/QtQml/Date/>`__ object using *locale* and *format*.
+Converts the time string *timeString* to a :ref:`Date <sdk_qtqml_date>`
+object using *locale* and *format*.
 
-If *format* is not specified,
-`Locale.LongFormat </sdk/apps/qml/QtQml/Locale/>`__ will be used.
+If *format* is not specified, :ref:`Locale.LongFormat <sdk_qtqml_locale>`
+will be used.
 
 If *locale* is not specified, the default locale will be used.
 
@@ -246,6 +256,8 @@ back again in the same manner:
     }
 
 | 
+
+.. _sdk_qtqml_date_string timeZoneUpdated-method:
 
 +--------------------------------------------------------------------------+
 |        \ string timeZoneUpdated()                                        |
@@ -276,6 +288,8 @@ timeZoneUpdated() after setting the new time zone:
 
 | 
 
+.. _sdk_qtqml_date_string toLocaleDateString-method:
+
 +--------------------------------------------------------------------------+
 |        \ string toLocaleDateString(locale, format)                       |
 +--------------------------------------------------------------------------+
@@ -283,8 +297,8 @@ timeZoneUpdated() after setting the new time zone:
 Converts the Date to a string containing the date suitable for the
 specified *locale* in the specified *format*.
 
-If *format* is not specified,
-`Locale.LongFormat </sdk/apps/qml/QtQml/Locale/>`__ will be used.
+If *format* is not specified, :ref:`Locale.LongFormat <sdk_qtqml_locale>`
+will be used.
 
 If *locale* is not specified, the default locale will be used.
 
@@ -300,6 +314,8 @@ locale:
 
 | 
 
+.. _sdk_qtqml_date_string toLocaleString-method:
+
 +--------------------------------------------------------------------------+
 |        \ string toLocaleString(locale, format)                           |
 +--------------------------------------------------------------------------+
@@ -307,8 +323,8 @@ locale:
 Converts the Date to a string containing the date and time suitable for
 the specified *locale* in the specified *format*.
 
-If *format* is not specified,
-`Locale.LongFormat </sdk/apps/qml/QtQml/Locale/>`__ will be used.
+If *format* is not specified, :ref:`Locale.LongFormat <sdk_qtqml_locale>`
+will be used.
 
 If *locale* is not specified, the default locale will be used.
 
@@ -324,6 +340,8 @@ German locale:
 
 | 
 
+.. _sdk_qtqml_date_string toLocaleTimeString-method:
+
 +--------------------------------------------------------------------------+
 |        \ string toLocaleTimeString(locale, format)                       |
 +--------------------------------------------------------------------------+
@@ -331,8 +349,8 @@ German locale:
 Converts the Date to a string containing the time suitable for the
 specified *locale* in the specified *format*.
 
-If *format* is not specified,
-`Locale.LongFormat </sdk/apps/qml/QtQml/Locale/>`__ will be used.
+If *format* is not specified, :ref:`Locale.LongFormat <sdk_qtqml_locale>`
+will be used.
 
 If *locale* is not specified, the default locale will be used.
 

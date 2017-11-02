@@ -1,3 +1,7 @@
+.. _sdk_qt_labs_settings_settings:
+Qt.labs.settings Settings
+=========================
+
 Provides persistent platform-independent application settings.
 
 +---------------------+-------------------------------+
@@ -7,8 +11,8 @@ Provides persistent platform-independent application settings.
 Properties
 ----------
 
--  ****`category </sdk/apps/qml/Qt.labs.settings/Settings#category-prop>`__****
-   : string
+-  :ref:`category <sdk_qt_labs_settings_settings_category-prop>` :
+   string
 
 Detailed Description
 --------------------
@@ -123,9 +127,9 @@ Categories
 
 Application settings may be divided into logical categories by
 specifying a category name via the
-`category </sdk/apps/qml/Qt.labs.settings/Settings#category-prop>`__
-property. Using logical categories not only provides a cleaner settings
-structure, but also prevents possible conflicts between setting keys.
+:ref:`category <sdk_qt_labs_settings_settings#category-prop>` property.
+Using logical categories not only provides a cleaner settings structure,
+but also prevents possible conflicts between setting keys.
 
 .. code:: qml
 
@@ -162,6 +166,8 @@ details.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qt_labs_settings_settings_category-prop:
 
 +--------------------------------------------------------------------------+
 |        \ category : string                                               |

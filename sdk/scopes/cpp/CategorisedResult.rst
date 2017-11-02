@@ -1,5 +1,9 @@
+.. _sdk_categorisedresult:
+CategorisedResult
+=================
+
 A result, including the category it belongs to.
-`More... </sdk/scopes/cpp/unity.scopes.CategorisedResult#details>`__
+`More... </sdk/scopes/cpp/unity.scopes.CategorisedResult/#details>`_ 
 
 ``#include <unity/scopes/CategorisedResult.h>``
 
@@ -14,9 +18,9 @@ Inheritance diagram for unity::scopes::CategorisedResult:
 
  
 
-`CategorisedResult </sdk/scopes/cpp/unity.scopes.CategorisedResult#a28968f35dc3dc3cc1d2d2407e180933c>`__
+`CategorisedResult </sdk/scopes/cpp/unity.scopes.CategorisedResult/#a28968f35dc3dc3cc1d2d2407e180933c>`_ 
 (Category::SCPtr
-`category </sdk/scopes/cpp/unity.scopes.CategorisedResult#aa6d3def1bc1a254046d7c5a34ecefa85>`__)
+`category </sdk/scopes/cpp/unity.scopes.CategorisedResult/#aa6d3def1bc1a254046d7c5a34ecefa85>`_ )
 
  
 
@@ -27,9 +31,9 @@ Inheritance diagram for unity::scopes::CategorisedResult:
 
 void 
 
-`set\_category </sdk/scopes/cpp/unity.scopes.CategorisedResult#a8978affd683add658580499c9e954dbe>`__
+`set\_category </sdk/scopes/cpp/unity.scopes.CategorisedResult/#a8978affd683add658580499c9e954dbe>`_ 
 (Category::SCPtr
-`category </sdk/scopes/cpp/unity.scopes.CategorisedResult#aa6d3def1bc1a254046d7c5a34ecefa85>`__)
+`category </sdk/scopes/cpp/unity.scopes.CategorisedResult/#aa6d3def1bc1a254046d7c5a34ecefa85>`_ )
 
  
 
@@ -39,7 +43,7 @@ void 
 
 Category::SCPtr 
 
-`category </sdk/scopes/cpp/unity.scopes.CategorisedResult#aa6d3def1bc1a254046d7c5a34ecefa85>`__
+`category </sdk/scopes/cpp/unity.scopes.CategorisedResult/#aa6d3def1bc1a254046d7c5a34ecefa85>`_ 
 () const
 
  
@@ -57,16 +61,16 @@ usual value semantics.
          
 
 **CategorisedResult**
-(`CategorisedResult </sdk/scopes/cpp/unity.scopes.CategorisedResult/>`__
+(`CategorisedResult </sdk/scopes/cpp/unity.scopes.CategorisedResult/>`_ 
 const &other)
 
  
 
-`CategorisedResult </sdk/scopes/cpp/unity.scopes.CategorisedResult/>`__
+`CategorisedResult </sdk/scopes/cpp/unity.scopes.CategorisedResult/>`_ 
 & 
 
 **operator=**
-(`CategorisedResult </sdk/scopes/cpp/unity.scopes.CategorisedResult/>`__
+(`CategorisedResult </sdk/scopes/cpp/unity.scopes.CategorisedResult/>`_ 
 const &other)
 
  
@@ -74,34 +78,34 @@ const &other)
          
 
 **CategorisedResult**
-(`CategorisedResult </sdk/scopes/cpp/unity.scopes.CategorisedResult/>`__
+(`CategorisedResult </sdk/scopes/cpp/unity.scopes.CategorisedResult/>`_ 
 &&)
 
  
 
-`CategorisedResult </sdk/scopes/cpp/unity.scopes.CategorisedResult/>`__
+`CategorisedResult </sdk/scopes/cpp/unity.scopes.CategorisedResult/>`_ 
 & 
 
 **operator=**
-(`CategorisedResult </sdk/scopes/cpp/unity.scopes.CategorisedResult/>`__
+(`CategorisedResult </sdk/scopes/cpp/unity.scopes.CategorisedResult/>`_ 
 &&)
 
  
 
 |-| Public Member Functions inherited from
-`unity::scopes::Result </sdk/scopes/cpp/unity.scopes.Result/>`__
+`unity::scopes::Result </sdk/scopes/cpp/unity.scopes.Result/>`_ 
 
 virtual 
 
-`~Result </sdk/scopes/cpp/unity.scopes.Result#af50d9e95694cc46f4c76369e97aec927>`__
+`~Result </sdk/scopes/cpp/unity.scopes.Result/#af50d9e95694cc46f4c76369e97aec927>`_ 
 ()
 
  
 
 void 
 
-`store </sdk/scopes/cpp/unity.scopes.Result#a744776333a9748ba41dace7c6943ca4d>`__
-(`Result </sdk/scopes/cpp/unity.scopes.Result/>`__ const &other, bool
+`store </sdk/scopes/cpp/unity.scopes.Result/#a744776333a9748ba41dace7c6943ca4d>`_ 
+(`Result </sdk/scopes/cpp/unity.scopes.Result/>`_  const &other, bool
 intercept\_activation=false)
 
  
@@ -112,7 +116,7 @@ intercept\_activation=false)
 
 bool 
 
-`has\_stored\_result </sdk/scopes/cpp/unity.scopes.Result#a8213bb7b0aedae09af8d621e1a7e136b>`__
+`has\_stored\_result </sdk/scopes/cpp/unity.scopes.Result/#a8213bb7b0aedae09af8d621e1a7e136b>`_ 
 () const
 
  
@@ -121,9 +125,9 @@ bool 
 
  
 
-`Result </sdk/scopes/cpp/unity.scopes.Result/>`__ 
+`Result </sdk/scopes/cpp/unity.scopes.Result/>`_  
 
-`retrieve </sdk/scopes/cpp/unity.scopes.Result#a99b158932252c709cb2d4861db566a0a>`__
+`retrieve </sdk/scopes/cpp/unity.scopes.Result/#a99b158932252c709cb2d4861db566a0a>`_ 
 () const
 
  
@@ -134,9 +138,9 @@ bool 
 
         void 
 
-`set\_uri </sdk/scopes/cpp/unity.scopes.Result#ad69c1e88a1245c4c1f13fcba333c8d7e>`__
+`set\_uri </sdk/scopes/cpp/unity.scopes.Result/#ad69c1e88a1245c4c1f13fcba333c8d7e>`_ 
 (std::string const
-&\ `uri </sdk/scopes/cpp/unity.scopes.Result#a5642d5984ba110c3b7d268cc2668f413>`__)
+&\ `uri </sdk/scopes/cpp/unity.scopes.Result/#a5642d5984ba110c3b7d268cc2668f413>`_ )
 
  
 
@@ -146,9 +150,9 @@ bool 
 
 void 
 
-`set\_title </sdk/scopes/cpp/unity.scopes.Result#adf8cf3d863babb02107fb5ef35acc925>`__
+`set\_title </sdk/scopes/cpp/unity.scopes.Result/#adf8cf3d863babb02107fb5ef35acc925>`_ 
 (std::string const
-&\ `title </sdk/scopes/cpp/unity.scopes.Result#a318887472ccc1034a64a3ec1d3b0d7d6>`__)
+&\ `title </sdk/scopes/cpp/unity.scopes.Result/#a318887472ccc1034a64a3ec1d3b0d7d6>`_ )
 
  
 
@@ -158,7 +162,7 @@ void 
 
 void 
 
-`set\_art </sdk/scopes/cpp/unity.scopes.Result#a3f2e512b10dbf2ed867d260ec33a89a1>`__
+`set\_art </sdk/scopes/cpp/unity.scopes.Result/#a3f2e512b10dbf2ed867d260ec33a89a1>`_ 
 (std::string const &image)
 
  
@@ -169,9 +173,9 @@ void 
 
 void 
 
-`set\_dnd\_uri </sdk/scopes/cpp/unity.scopes.Result#aaea2d65663a8553b90a87b5b92c47f8f>`__
+`set\_dnd\_uri </sdk/scopes/cpp/unity.scopes.Result/#aaea2d65663a8553b90a87b5b92c47f8f>`_ 
 (std::string const
-&\ `dnd\_uri </sdk/scopes/cpp/unity.scopes.Result#af98171266eeac7360f1c1ef7b0f58958>`__)
+&\ `dnd\_uri </sdk/scopes/cpp/unity.scopes.Result/#af98171266eeac7360f1c1ef7b0f58958>`_ )
 
  
 
@@ -181,7 +185,7 @@ void 
 
 void 
 
-`set\_intercept\_activation </sdk/scopes/cpp/unity.scopes.Result#a5a132eb82702829e2fd026e088e4aa08>`__
+`set\_intercept\_activation </sdk/scopes/cpp/unity.scopes.Result/#a5a132eb82702829e2fd026e088e4aa08>`_ 
 ()
 
  
@@ -193,7 +197,7 @@ void 
 
 bool 
 
-`direct\_activation </sdk/scopes/cpp/unity.scopes.Result#ac3e57ec9bf9a3bc5a517f91ff9605f6b>`__
+`direct\_activation </sdk/scopes/cpp/unity.scopes.Result/#ac3e57ec9bf9a3bc5a517f91ff9605f6b>`_ 
 () const
 
  
@@ -203,9 +207,9 @@ bool 
 
  
 
-`ScopeProxy </sdk/scopes/cpp/unity.scopes#a94db15da410f8419e4da711db842aaae>`__ 
+:ref:`ScopeProxy <sdk_unity_scopes#a94db15da410f8419e4da711db842aaae>` 
 
-`target\_scope\_proxy </sdk/scopes/cpp/unity.scopes.Result#a1a91e1cbb08e91366e92b7bcd76861d2>`__
+`target\_scope\_proxy </sdk/scopes/cpp/unity.scopes.Result/#a1a91e1cbb08e91366e92b7bcd76861d2>`_ 
 () const
 
  
@@ -215,9 +219,9 @@ bool 
 
  
 
-`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`__ & 
+`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`_  & 
 
-`operator[] </sdk/scopes/cpp/unity.scopes.Result#a157ebfcc5c28649af2761ef58f68de76>`__
+`operator[] </sdk/scopes/cpp/unity.scopes.Result/#a157ebfcc5c28649af2761ef58f68de76>`_ 
 (std::string const &key)
 
  
@@ -226,9 +230,9 @@ bool 
 
  
 
-`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`__ const & 
+`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`_  const & 
 
-`operator[] </sdk/scopes/cpp/unity.scopes.Result#a4e0664aba7b2613883a24f98450b71c0>`__
+`operator[] </sdk/scopes/cpp/unity.scopes.Result/#a4e0664aba7b2613883a24f98450b71c0>`_ 
 (std::string const &key) const
 
  
@@ -239,7 +243,7 @@ bool 
 
 std::string 
 
-`uri </sdk/scopes/cpp/unity.scopes.Result#a5642d5984ba110c3b7d268cc2668f413>`__
+`uri </sdk/scopes/cpp/unity.scopes.Result/#a5642d5984ba110c3b7d268cc2668f413>`_ 
 () const noexcept
 
  
@@ -250,7 +254,7 @@ std::string 
 
 std::string 
 
-`title </sdk/scopes/cpp/unity.scopes.Result#a318887472ccc1034a64a3ec1d3b0d7d6>`__
+`title </sdk/scopes/cpp/unity.scopes.Result/#a318887472ccc1034a64a3ec1d3b0d7d6>`_ 
 () const noexcept
 
  
@@ -261,7 +265,7 @@ std::string 
 
 std::string 
 
-`art </sdk/scopes/cpp/unity.scopes.Result#aeaeafd3fd83172104e501474191a6e4d>`__
+`art </sdk/scopes/cpp/unity.scopes.Result/#aeaeafd3fd83172104e501474191a6e4d>`_ 
 () const noexcept
 
  
@@ -272,7 +276,7 @@ std::string 
 
 std::string 
 
-`dnd\_uri </sdk/scopes/cpp/unity.scopes.Result#af98171266eeac7360f1c1ef7b0f58958>`__
+`dnd\_uri </sdk/scopes/cpp/unity.scopes.Result/#af98171266eeac7360f1c1ef7b0f58958>`_ 
 () const noexcept
 
  
@@ -283,7 +287,7 @@ std::string 
 
 bool 
 
-`contains </sdk/scopes/cpp/unity.scopes.Result#a442b87e28f762addb0d81ccd03a11532>`__
+`contains </sdk/scopes/cpp/unity.scopes.Result/#a442b87e28f762addb0d81ccd03a11532>`_ 
 (std::string const &key) const
 
  
@@ -292,9 +296,9 @@ bool 
 
  
 
-`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`__ const & 
+`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`_  const & 
 
-`value </sdk/scopes/cpp/unity.scopes.Result#a490b5b5da2c3d7b122cfadae25cde3af>`__
+`value </sdk/scopes/cpp/unity.scopes.Result/#a490b5b5da2c3d7b122cfadae25cde3af>`_ 
 (std::string const &key) const
 
  
@@ -303,9 +307,9 @@ bool 
 
  
 
-`VariantMap </sdk/scopes/cpp/unity.scopes#ad5d8ccfa11a327fca6f3e4cee11f4c10>`__ 
+:ref:`VariantMap <sdk_unity_scopes#ad5d8ccfa11a327fca6f3e4cee11f4c10>` 
 
-`serialize </sdk/scopes/cpp/unity.scopes.Result#acd3c05fe73b442facc1cb8d0fc0ffce2>`__
+`serialize </sdk/scopes/cpp/unity.scopes.Result/#acd3c05fe73b442facc1cb8d0fc0ffce2>`_ 
 () const
 
  
@@ -316,7 +320,7 @@ bool 
 
 bool 
 
-`is\_account\_login\_result </sdk/scopes/cpp/unity.scopes.Result#a454b78b004b954575c159deda871dd97>`__
+`is\_account\_login\_result </sdk/scopes/cpp/unity.scopes.Result/#a454b78b004b954575c159deda871dd97>`_ 
 () const
 
  
@@ -327,8 +331,8 @@ bool 
 
 bool 
 
-`operator== </sdk/scopes/cpp/unity.scopes.Result#aa60fe8b5e2b5959b5f6f3883e5f2facf>`__
-(`Result </sdk/scopes/cpp/unity.scopes.Result/>`__ const &other) const
+`operator== </sdk/scopes/cpp/unity.scopes.Result/#aa60fe8b5e2b5959b5f6f3883e5f2facf>`_ 
+(`Result </sdk/scopes/cpp/unity.scopes.Result/>`_  const &other) const
 
  
 
@@ -338,27 +342,27 @@ bool 
 
          
 
-**Result** (`Result </sdk/scopes/cpp/unity.scopes.Result/>`__ const
+**Result** (`Result </sdk/scopes/cpp/unity.scopes.Result/>`_  const
 &other)
 
  
 
          
 
-**Result** (`Result </sdk/scopes/cpp/unity.scopes.Result/>`__ &&)
+**Result** (`Result </sdk/scopes/cpp/unity.scopes.Result/>`_  &&)
 
  
 
-        `Result </sdk/scopes/cpp/unity.scopes.Result/>`__ & 
+        `Result </sdk/scopes/cpp/unity.scopes.Result/>`_  & 
 
-**operator=** (`Result </sdk/scopes/cpp/unity.scopes.Result/>`__ const
+**operator=** (`Result </sdk/scopes/cpp/unity.scopes.Result/>`_  const
 &other)
 
  
 
-        `Result </sdk/scopes/cpp/unity.scopes.Result/>`__ & 
+        `Result </sdk/scopes/cpp/unity.scopes.Result/>`_  & 
 
-**operator=** (`Result </sdk/scopes/cpp/unity.scopes.Result/>`__ &&)
+**operator=** (`Result </sdk/scopes/cpp/unity.scopes.Result/>`_  &&)
 
  
 
@@ -395,7 +399,7 @@ Constructor & Destructor Documentation
 +--------------------------------------+--------------------------------------+
 
 Creates a
-`CategorisedResult </sdk/scopes/cpp/unity.scopes.CategorisedResult/>`__
+`CategorisedResult </sdk/scopes/cpp/unity.scopes.CategorisedResult/>`_ 
 with given category, with all base attributes initially empty.
 
 Parameters

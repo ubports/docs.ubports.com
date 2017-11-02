@@ -1,3 +1,7 @@
+.. _sdk_u1db_u1db-qt_synchronizing_tutorial:
+U1db U1Db-Qt Synchronizing Tutorial
+===================================
+
 
 
 This tutorial is designed to demonstrate a variety of essential U1Db-Qt

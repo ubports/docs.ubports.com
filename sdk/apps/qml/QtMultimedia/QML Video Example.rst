@@ -1,9 +1,13 @@
+.. _sdk_qtmultimedia_qml_video_example:
+QtMultimedia QML Video Example
+==============================
+
 
 
 *QML Video* demonstrates the various transformations (move; resize;
 rotate; change aspect ratio) that can be applied to QML
-`VideoOutput </sdk/apps/qml/QtMultimedia/VideoOutput/>`__ and
-`Camera </sdk/apps/qml/QtMultimedia/qml-multimedia#camera>`__ types.
+:ref:`VideoOutput <sdk_qtmultimedia_videooutput>` and
+`Camera </sdk/apps/qml/QtMultimedia/qml-multimedia/#camera>`_  types.
 
 It also shows how native code can be combined with QML to implement more
 advanced functionality - in this case, C++ code is used to calculate the
@@ -13,7 +17,7 @@ overlaid on the video content.
 The following image shows the application executing the video-overlay
 scene, which creates a dummy overlay item (just a semi-transparent
 Rectangle), which moves across the
-`VideoOutput </sdk/apps/qml/QtMultimedia/VideoOutput/>`__ item.
+:ref:`VideoOutput <sdk_qtmultimedia_videooutput>` item.
 
 |image0|
 

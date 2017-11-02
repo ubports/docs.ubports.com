@@ -1,5 +1,9 @@
+.. _sdk_autopilot_introspection_types_size:
+autopilot.introspection.types Size
+==================================
+
  *class* ``autopilot.introspection.types.``\ ``Size``\ (*\*args*,
-*\*\*kwargs*)\ ` </sdk/autopilot/python/autopilot.introspection/types.Size#Size>`__\ ` <#autopilot.introspection.types.Size>`__
+*\*\*kwargs*)\ ` </sdk/autopilot/python/autopilot.introspection/types.Size/#Size>`_ \ ` <#autopilot.introspection.types.Size>`_ 
     The Size class represents a 2D size in cartesian space.
 
     To construct a Size, pass in the width, height parameters to the

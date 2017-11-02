@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_listitems_singlevalue:
+Ubuntu.Components.ListItems SingleValue
+=======================================
+
 A list item displaying a single value
 
 +--------------------------------------+--------------------------------------+
@@ -5,21 +9,20 @@ A list item displaying a single value
 |                                      | 1.3                                  |
 +--------------------------------------+--------------------------------------+
 | Inherits:                            | `Base </sdk/apps/qml/Ubuntu.Componen |
-|                                      | ts/ListItems.Base/>`__               |
+|                                      | ts/ListItems.Base/>`_                |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`value </sdk/apps/qml/Ubuntu.Components/ListItems.SingleValue#value-prop>`__****
+-  `value </sdk/apps/qml/Ubuntu.Components/ListItems.SingleValue/_value-prop>`_ 
    : string
 
 Detailed Description
 --------------------
 
 **Note:** **The component is deprecated. Use
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ component
-instead.**
+:ref:`ListItem <sdk_ubuntu_components_listitem>` component instead.**
 
 Examples:
 
@@ -43,6 +46,8 @@ Examples:
 
 Property Documentation
 ----------------------
+
+.. _sdk_ubuntu_components_listitems_singlevalue_value-prop:
 
 +--------------------------------------------------------------------------+
 |        \ value : string                                                  |

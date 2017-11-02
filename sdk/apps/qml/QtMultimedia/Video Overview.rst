@@ -1,3 +1,7 @@
+.. _sdk_qtmultimedia_video_overview:
+QtMultimedia Video Overview
+===========================
+
 
 
 .. rubric:: Video Features
@@ -6,8 +10,8 @@
 Qt Multimedia offers both high and low level C++ classes for playing and
 manipulating video data, and QML types for playback and control. Some of
 these classes also overlap with both
-`camera </sdk/apps/qml/QtMultimedia/cameraoverview/>`__ and
-`audio </sdk/apps/qml/QtMultimedia/audiooverview/>`__ classes, which can
+`camera </sdk/apps/qml/QtMultimedia/cameraoverview/>`_  and
+`audio </sdk/apps/qml/QtMultimedia/audiooverview/>`_  classes, which can
 be useful.
 
 .. rubric:: Video Implementation Details
@@ -49,19 +53,18 @@ And an example with QGraphicsVideoItem:
 .. rubric:: Playing Video in QML
    :name: playing-video-in-qml
 
-You can use `VideoOutput </sdk/apps/qml/QtMultimedia/VideoOutput/>`__ to
-render content that is provided by either a
-`MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__ or a
-`Camera </sdk/apps/qml/QtMultimedia/qml-multimedia#camera>`__. The
-`VideoOutput </sdk/apps/qml/QtMultimedia/VideoOutput/>`__ is a visual
-component that can be transformed or acted upon by shaders (as the `QML
-Video Shader Effects
-Example </sdk/apps/qml/QtMultimedia/video-qmlvideofx/>`__ shows), while
-all media decoding and playback control is handled by the
-`MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__.
+You can use :ref:`VideoOutput <sdk_qtmultimedia_videooutput>` to render
+content that is provided by either a
+:ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>` or a
+`Camera </sdk/apps/qml/QtMultimedia/qml-multimedia/#camera>`_ . The
+:ref:`VideoOutput <sdk_qtmultimedia_videooutput>` is a visual component
+that can be transformed or acted upon by shaders (as the `QML Video
+Shader Effects Example </sdk/apps/qml/QtMultimedia/video-qmlvideofx/>`_ 
+shows), while all media decoding and playback control is handled by the
+:ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>`.
 
 Alternatively there is also a higher level
-`Video </sdk/apps/qml/QtMultimedia/qml-multimedia#video>`__ type that
+`Video </sdk/apps/qml/QtMultimedia/qml-multimedia/#video>`_  type that
 acts as a single, visual element to play video and control playback.
 
 .. rubric:: Working with Low Level Video Frames
@@ -228,16 +231,16 @@ There are both C++ and QML examples available.
    :name: qml-types
 
 +--------------------------------------+--------------------------------------+
-| `MediaPlayer </sdk/apps/qml/QtMultim | Add media playback to a scene        |
-| edia/MediaPlayer/>`__                |                                      |
+| :ref:`MediaPlayer <sdk_qtmultimedia_media | Add media playback to a scene        |
+| player>`_                            |                                      |
 +--------------------------------------+--------------------------------------+
-| `Playlist </sdk/apps/qml/QtMultimedi | For specifying a list of media to be |
-| a/Playlist/>`__                      | played                               |
+| :ref:`Playlist <sdk_qtmultimedia_playlist | For specifying a list of media to be |
+| >`_                                  | played                               |
 +--------------------------------------+--------------------------------------+
-| `Video </sdk/apps/qml/QtMultimedia/V | A convenience type for showing a     |
-| ideo/>`__                            | specified video                      |
+| :ref:`Video <sdk_qtmultimedia_video>`| A convenience type for showing a     |
+|                                      | specified video                      |
 +--------------------------------------+--------------------------------------+
-| `VideoOutput </sdk/apps/qml/QtMultim | Render video or camera viewfinder    |
-| edia/VideoOutput/>`__                |                                      |
+| :ref:`VideoOutput <sdk_qtmultimedia_video | Render video or camera viewfinder    |
+| output>`_                            |                                      |
 +--------------------------------------+--------------------------------------+
 

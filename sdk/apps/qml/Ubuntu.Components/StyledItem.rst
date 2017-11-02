@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_styleditem:
+Ubuntu.Components StyledItem
+============================
+
 The StyledItem class allows items to be styled by the theme.
 
 +--------------------------------------+--------------------------------------+
@@ -5,56 +9,55 @@ The StyledItem class allows items to be styled by the theme.
 +--------------------------------------+--------------------------------------+
 | Since:                               | Ubuntu.Components 1.1                |
 +--------------------------------------+--------------------------------------+
-| Inherited By:                        | `ActionBar </sdk/apps/qml/Ubuntu.Com |
-|                                      | ponents/ActionBar/>`__,              |
-|                                      | `BottomEdge </sdk/apps/qml/Ubuntu.Co |
-|                                      | mponents/BottomEdge/>`__,            |
+| Inherited By:                        | :ref:`ActionBar <sdk_ubuntu_components_ac |
+|                                      | tionbar>`_ ,                         |
+|                                      | :ref:`BottomEdge <sdk_ubuntu_components_b |
+|                                      | ottomedge>`_ ,                       |
 |                                      | `DatePicker </sdk/apps/qml/Ubuntu.Co |
-|                                      | mponents/Pickers.DatePicker/>`__,    |
+|                                      | mponents/Pickers.DatePicker/>`_ ,    |
 |                                      | `Dialer </sdk/apps/qml/Ubuntu.Compon |
-|                                      | ents/Pickers.Dialer/>`__,            |
+|                                      | ents/Pickers.Dialer/>`_ ,            |
 |                                      | `DialerHand </sdk/apps/qml/Ubuntu.Co |
-|                                      | mponents/Pickers.DialerHand/>`__,    |
-|                                      | `Header </sdk/apps/qml/Ubuntu.Compon |
-|                                      | ents/Header/>`__,                    |
-|                                      | `MainView </sdk/apps/qml/Ubuntu.Comp |
-|                                      | onents/MainView/>`__,                |
-|                                      | `Page </sdk/apps/qml/Ubuntu.Componen |
-|                                      | ts/Page/>`__,                        |
+|                                      | mponents/Pickers.DialerHand/>`_ ,    |
+|                                      | :ref:`Header <sdk_ubuntu_components_heade |
+|                                      | r>`_ ,                               |
+|                                      | :ref:`MainView <sdk_ubuntu_components_mai |
+|                                      | nview>`_ ,                           |
+|                                      | :ref:`Page <sdk_ubuntu_components_page>`_ |
+|                                      | _,                                   |
 |                                      | `Picker </sdk/apps/qml/Ubuntu.Compon |
-|                                      | ents/Pickers.Picker/>`__,            |
-|                                      | `PullToRefresh </sdk/apps/qml/Ubuntu |
-|                                      | .Components/PullToRefresh/>`__,      |
-|                                      | `ScrollView </sdk/apps/qml/Ubuntu.Co |
-|                                      | mponents/ScrollView/>`__,            |
-|                                      | `Sections </sdk/apps/qml/Ubuntu.Comp |
-|                                      | onents/Sections/>`__,                |
+|                                      | ents/Pickers.Picker/>`_ ,            |
+|                                      | :ref:`PullToRefresh <sdk_ubuntu_component |
+|                                      | s_pulltorefresh>`_ ,                 |
+|                                      | :ref:`ScrollView <sdk_ubuntu_components_s |
+|                                      | crollview>`_ ,                       |
+|                                      | :ref:`Sections <sdk_ubuntu_components_sec |
+|                                      | tions>`_ ,                           |
 |                                      | and                                  |
-|                                      | `Toolbar </sdk/apps/qml/Ubuntu.Compo |
-|                                      | nents/Toolbar/>`__.                  |
+|                                      | :ref:`Toolbar <sdk_ubuntu_components_tool |
+|                                      | bar>`_ .                             |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`style </sdk/apps/qml/Ubuntu.Components/StyledItem#style-prop>`__****
-   : Component
--  ****`styleName </sdk/apps/qml/Ubuntu.Components/StyledItem#styleName-prop>`__****
+-  :ref:`style <sdk_ubuntu_components_styleditem_style-prop>` :
+   Component
+-  :ref:`styleName <sdk_ubuntu_components_styleditem_styleName-prop>`
    : string
--  ****`theme </sdk/apps/qml/Ubuntu.Components/StyledItem#theme-prop>`__****
-   : ThemeSettings
+-  :ref:`theme <sdk_ubuntu_components_styleditem_theme-prop>` :
+   ThemeSettings
 
 Detailed Description
 --------------------
 
-`StyledItem </sdk/apps/qml/Ubuntu.Components/StyledItem/>`__ provides
-facilities for making an Item stylable by the theme.
+:ref:`StyledItem <sdk_ubuntu_components_styleditem>` provides facilities
+for making an Item stylable by the theme.
 
 In order to make an Item stylable by the theme, it is enough to make the
-Item inherit from
-`StyledItem </sdk/apps/qml/Ubuntu.Components/StyledItem/>`__ and set its
-`style </sdk/apps/qml/Ubuntu.Components/StyledItem#style-prop>`__
-property to be the result of the appropriate call to
+Item inherit from :ref:`StyledItem <sdk_ubuntu_components_styleditem>` and
+set its :ref:`style <sdk_ubuntu_components_styleditem#style-prop>` property
+to be the result of the appropriate call to
 theme.createStyleComponent().
 
 Example definition of a custom Item MyItem.qml:
@@ -67,41 +70,40 @@ Example definition of a custom Item MyItem.qml:
     }
 
 The style set on
-`styleName </sdk/apps/qml/Ubuntu.Components/StyledItem#styleName-prop>`__
-is instantiated and placed below everything else that the Item contains.
+:ref:`styleName <sdk_ubuntu_components_styleditem#styleName-prop>` is
+instantiated and placed below everything else that the Item contains.
 When the style is defined in this way, the style is taken from the
-current theme the
-`StyledItem </sdk/apps/qml/Ubuntu.Components/StyledItem/>`__ is themed
-with. Another way tpo set the style of a component is to set the
-`style </sdk/apps/qml/Ubuntu.Components/StyledItem#style-prop>`__
-property. This property expects a component and it has precedence over
-the
-`styleName </sdk/apps/qml/Ubuntu.Components/StyledItem#styleName-prop>`__,
-meaning that when both
-`styleName </sdk/apps/qml/Ubuntu.Components/StyledItem#styleName-prop>`__
-and `style </sdk/apps/qml/Ubuntu.Components/StyledItem#style-prop>`__
-are set, the style will be created from the
-`style </sdk/apps/qml/Ubuntu.Components/StyledItem#style-prop>`__
-componment.
+current theme the :ref:`StyledItem <sdk_ubuntu_components_styleditem>` is
+themed with. Another way tpo set the style of a component is to set the
+:ref:`style <sdk_ubuntu_components_styleditem#style-prop>` property. This
+property expects a component and it has precedence over the
+:ref:`styleName <sdk_ubuntu_components_styleditem#styleName-prop>`, meaning
+that when both
+:ref:`styleName <sdk_ubuntu_components_styleditem#styleName-prop>` and
+:ref:`style <sdk_ubuntu_components_styleditem#style-prop>` are set, the
+style will be created from the
+:ref:`style <sdk_ubuntu_components_styleditem#style-prop>` componment.
 
 A reference to the Item being styled is accessible from the style and
 named 'styledItem'.
 
-**See also** `Theme </sdk/apps/qml/Ubuntu.Components/Theme/>`__.
+**See also** :ref:`Theme <sdk_ubuntu_components_theme>`.
 
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_styleditem_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ style : `Component </sdk/apps/qml/QtQml/Component/>`__          |
+| :ref:` <>`\ style : `Component <sdk_qtqml_component>`                  |
 +--------------------------------------------------------------------------+
 
 Style component instantiated immediately and placed below everything
 else. Has precedence over the
-`styleName </sdk/apps/qml/Ubuntu.Components/StyledItem#styleName-prop>`__.
-When both set, the style will be created from the component given as
-property value, and can be reset to the theme style when set to null or
-reset (set to undefined).
+:ref:`styleName <sdk_ubuntu_components_styleditem#styleName-prop>`. When
+both set, the style will be created from the component given as property
+value, and can be reset to the theme style when set to null or reset
+(set to undefined).
 
 .. code:: qml
 
@@ -122,6 +124,8 @@ reset (set to undefined).
 
 | 
 
+.. _sdk_ubuntu_components_styleditem_styleName-prop:
+
 +--------------------------------------------------------------------------+
 |        \ styleName : string                                              |
 +--------------------------------------------------------------------------+
@@ -137,21 +141,21 @@ extension. If specified an error will be shown.
         styleName: "MyItemStyle"
     }
 
-**Note:**
-`style </sdk/apps/qml/Ubuntu.Components/StyledItem#style-prop>`__
+**Note:** :ref:`style <sdk_ubuntu_components_styleditem#style-prop>`
 property has precedence over styleName.
 
 | 
 
+.. _sdk_ubuntu_components_styleditem_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ theme :                                                         |
-| `ThemeSettings </sdk/apps/qml/Ubuntu.Components/ThemeSettings/>`__       |
+| :ref:` <>`\ theme : `ThemeSettings <sdk_ubuntu_components_themesettings>` |
 +--------------------------------------------------------------------------+
 
 The property configures the theme the component and all its
 sub-components will use. By default it is set to the closest ancestor
-`StyledItem </sdk/apps/qml/Ubuntu.Components/StyledItem/>`__'s theme if
-any, or to the system default theme.
+:ref:`StyledItem <sdk_ubuntu_components_styleditem>`'s theme if any, or to
+the system default theme.
 
 This QML property was introduced in Ubuntu.Components 1.3.
 

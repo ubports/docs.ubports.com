@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_rotationreading:
+QtSensors RotationReading
+=========================
+
 The RotationReading element holds the most recent RotationSensor
 reading.
 
@@ -6,26 +10,23 @@ reading.
 +--------------------------------------+--------------------------------------+
 | Since:                               | QtSensors 5.0                        |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `SensorReading </sdk/apps/qml/QtSens |
-|                                      | ors/SensorReading/>`__               |
+| Inherits:                            | :ref:`SensorReading <sdk_qtsensors_sensor |
+|                                      | reading>`_                           |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`x </sdk/apps/qml/QtSensors/RotationReading#x-prop>`__**** :
-   qreal
--  ****`y </sdk/apps/qml/QtSensors/RotationReading#y-prop>`__**** :
-   qreal
--  ****`z </sdk/apps/qml/QtSensors/RotationReading#z-prop>`__**** :
-   qreal
+-  :ref:`x <sdk_qtsensors_rotationreading_x-prop>` : qreal
+-  :ref:`y <sdk_qtsensors_rotationreading_y-prop>` : qreal
+-  :ref:`z <sdk_qtsensors_rotationreading_z-prop>` : qreal
 
 Detailed Description
 --------------------
 
-The `RotationReading </sdk/apps/qml/QtSensors/RotationReading/>`__
-element holds the most recent
-`RotationSensor </sdk/apps/qml/QtSensors/RotationSensor/>`__ reading.
+The :ref:`RotationReading <sdk_qtsensors_rotationreading>` element holds
+the most recent :ref:`RotationSensor <sdk_qtsensors_rotationsensor>`
+reading.
 
 This element wraps the QRotationReading class. Please see the
 documentation for QRotationReading for details.
@@ -34,6 +35,8 @@ This element cannot be directly created.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtsensors_rotationreading_x-prop:
 
 +--------------------------------------------------------------------------+
 |        \ x : qreal                                                       |
@@ -45,6 +48,8 @@ Please see QRotationReading::x for information about this property.
 
 | 
 
+.. _sdk_qtsensors_rotationreading_y-prop:
+
 +--------------------------------------------------------------------------+
 |        \ y : qreal                                                       |
 +--------------------------------------------------------------------------+
@@ -54,6 +59,8 @@ This property holds the rotation around the y axis.
 Please see QRotationReading::y for information about this property.
 
 | 
+
+.. _sdk_qtsensors_rotationreading_z-prop:
 
 +--------------------------------------------------------------------------+
 |        \ z : qreal                                                       |

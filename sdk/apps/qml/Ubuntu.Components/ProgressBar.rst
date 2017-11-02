@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_progressbar:
+Ubuntu.Components ProgressBar
+=============================
+
 The ProgressBar component visually indicates the progress of a process
 of determinate or indeterminate duration.
 
@@ -10,14 +14,14 @@ of determinate or indeterminate duration.
 Properties
 ----------
 
--  ****`indeterminate </sdk/apps/qml/Ubuntu.Components/ProgressBar#indeterminate-prop>`__****
+-  :ref:`indeterminate <sdk_ubuntu_components_progressbar_indeterminate-prop>`
    : bool
--  ****`maximumValue </sdk/apps/qml/Ubuntu.Components/ProgressBar#maximumValue-prop>`__****
+-  :ref:`maximumValue <sdk_ubuntu_components_progressbar_maximumValue-prop>`
    : real
--  ****`minimumValue </sdk/apps/qml/Ubuntu.Components/ProgressBar#minimumValue-prop>`__****
+-  :ref:`minimumValue <sdk_ubuntu_components_progressbar_minimumValue-prop>`
    : real
--  ****`value </sdk/apps/qml/Ubuntu.Components/ProgressBar#value-prop>`__****
-   : real
+-  :ref:`value <sdk_ubuntu_components_progressbar_value-prop>` :
+   real
 
 Detailed Description
 --------------------
@@ -41,6 +45,8 @@ Example:
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_progressbar_indeterminate-prop:
+
 +--------------------------------------------------------------------------+
 |        \ indeterminate : bool                                            |
 +--------------------------------------------------------------------------+
@@ -51,6 +57,8 @@ default the property is set to false.
 
 | 
 
+.. _sdk_ubuntu_components_progressbar_maximumValue-prop:
+
 +--------------------------------------------------------------------------+
 |        \ maximumValue : real                                             |
 +--------------------------------------------------------------------------+
@@ -59,6 +67,8 @@ Specifies the maximum value of the progress.
 
 | 
 
+.. _sdk_ubuntu_components_progressbar_minimumValue-prop:
+
 +--------------------------------------------------------------------------+
 |        \ minimumValue : real                                             |
 +--------------------------------------------------------------------------+
@@ -66,6 +76,8 @@ Specifies the maximum value of the progress.
 Specifies the minimum value of the progress.
 
 | 
+
+.. _sdk_ubuntu_components_progressbar_value-prop:
 
 +--------------------------------------------------------------------------+
 |        \ value : real                                                    |

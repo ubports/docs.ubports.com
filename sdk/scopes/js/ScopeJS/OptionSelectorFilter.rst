@@ -1,3 +1,7 @@
+.. _sdk_scopejs_optionselectorfilter:
+ScopeJS OptionSelectorFilter
+============================
+
 
 A selection filter that displays a list of choices and allows one or
 more of them to be selected
@@ -82,7 +86,6 @@ client (UI shell).
 **Parameters:**
 
 -  ``filter_state`` **<FilterState>**
--  ``option``
-   **<`FilterOption </sdk/scopes/js/ScopeJS/FilterOption/>`__>**
+-  :ref:``option`` **<`FilterOption <sdk_scopejs_filteroption>`>**
 -  ``active`` **<Boolean>**
 

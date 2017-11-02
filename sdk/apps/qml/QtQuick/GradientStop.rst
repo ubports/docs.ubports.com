@@ -1,3 +1,7 @@
+.. _sdk_qtquick_gradientstop:
+QtQuick GradientStop
+====================
+
 Defines the color at a position in a Gradient
 
 +---------------------+----------------------+
@@ -7,18 +11,18 @@ Defines the color at a position in a Gradient
 Properties
 ----------
 
--  ****`color </sdk/apps/qml/QtQuick/GradientStop#color-prop>`__**** :
-   color
--  ****`position </sdk/apps/qml/QtQuick/GradientStop#position-prop>`__****
-   : real
+-  :ref:`color <sdk_qtquick_gradientstop_color-prop>` : color
+-  :ref:`position <sdk_qtquick_gradientstop_position-prop>` : real
 
 Detailed Description
 --------------------
 
-**See also** `Gradient </sdk/apps/qml/QtQuick/Gradient/>`__.
+**See also** :ref:`Gradient <sdk_qtquick_gradient>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_gradientstop_color-prop:
 
 +--------------------------------------------------------------------------+
 |        \ color : color                                                   |
@@ -29,9 +33,11 @@ position in a gradient, as represented by a gradient stop.
 
 The default position is 0.0; the default color is black.
 
-**See also** `Gradient </sdk/apps/qml/QtQuick/Gradient/>`__.
+**See also** :ref:`Gradient <sdk_qtquick_gradient>`.
 
 | 
+
+.. _sdk_qtquick_gradientstop_position-prop:
 
 +--------------------------------------------------------------------------+
 |        \ position : real                                                 |
@@ -42,6 +48,6 @@ position in a gradient, as represented by a gradient stop.
 
 The default position is 0.0; the default color is black.
 
-**See also** `Gradient </sdk/apps/qml/QtQuick/Gradient/>`__.
+**See also** :ref:`Gradient <sdk_qtquick_gradient>`.
 
 | 

@@ -1,3 +1,7 @@
+.. _sdk_qtqml_qsignaltransition:
+QtQml QSignalTransition
+=======================
+
 The QSignalTransition type provides a transition based on a Qt signal.
 
 +--------------------------------------+--------------------------------------+
@@ -5,38 +9,37 @@ The QSignalTransition type provides a transition based on a Qt signal.
 +--------------------------------------+--------------------------------------+
 | Since:                               | Qt 5.4                               |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `QAbstractTransition </sdk/apps/qml/ |
-|                                      | QtQml/QAbstractTransition/>`__       |
+| Inherits:                            | :ref:`QAbstractTransition <sdk_qtqml_qabs |
+|                                      | tracttransition>`_                   |
 +--------------------------------------+--------------------------------------+
-| Inherited By:                        | `SignalTransition </sdk/apps/qml/QtQ |
-|                                      | ml/SignalTransition/>`__             |
+| Inherited By:                        | :ref:`SignalTransition <sdk_qtqml_signalt |
+|                                      | ransition>`_                         |
 |                                      | and                                  |
-|                                      | `TimeoutTransition </sdk/apps/qml/Qt |
-|                                      | Qml/TimeoutTransition/>`__.          |
+|                                      | :ref:`TimeoutTransition <sdk_qtqml_timeou |
+|                                      | ttransition>`_ .                     |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`senderObject </sdk/apps/qml/QtQml/QSignalTransition#senderObject-prop>`__****
+-  :ref:`senderObject <sdk_qtqml_qsignaltransition_senderObject-prop>`
    : QObject
--  ****`signal </sdk/apps/qml/QtQml/QSignalTransition#signal-prop>`__****
-   : string
+-  :ref:`signal <sdk_qtqml_qsignaltransition_signal-prop>` : string
 
 Detailed Description
 --------------------
 
-Do not use
-`QSignalTransition </sdk/apps/qml/QtQml/QSignalTransition/>`__ directly;
-use `SignalTransition </sdk/apps/qml/QtQml/SignalTransition/>`__ or
-`TimeoutTransition </sdk/apps/qml/QtQml/TimeoutTransition/>`__ instead.
+Do not use :ref:`QSignalTransition <sdk_qtqml_qsignaltransition>` directly;
+use :ref:`SignalTransition <sdk_qtqml_signaltransition>` or
+:ref:`TimeoutTransition <sdk_qtqml_timeouttransition>` instead.
 
-**See also**
-`SignalTransition </sdk/apps/qml/QtQml/SignalTransition/>`__ and
-`TimeoutTransition </sdk/apps/qml/QtQml/TimeoutTransition/>`__.
+**See also** :ref:`SignalTransition <sdk_qtqml_signaltransition>` and
+:ref:`TimeoutTransition <sdk_qtqml_timeouttransition>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtqml_qsignaltransition_senderObject-prop:
 
 +--------------------------------------------------------------------------+
 |        \ senderObject : QObject                                          |
@@ -45,6 +48,8 @@ Property Documentation
 The sender object which is associated with this signal transition.
 
 | 
+
+.. _sdk_qtqml_qsignaltransition_signal-prop:
 
 +--------------------------------------------------------------------------+
 |        \ signal : string                                                 |

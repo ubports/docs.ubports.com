@@ -1,3 +1,7 @@
+.. _sdk_qtquick_particles_affector:
+QtQuick.Particles Affector
+==========================
+
 Applies alterations to the attributes of logical particles at any point
 in their lifetime
 
@@ -5,45 +9,45 @@ in their lifetime
 | Import Statement:                    | import QtQuick.Particles 2.0         |
 +--------------------------------------+--------------------------------------+
 | Inherited By:                        | `Age </sdk/apps/qml/QtQuick/Particle |
-|                                      | s.Age/>`__,                          |
+|                                      | s.Age/>`_ ,                          |
 |                                      | `Attractor </sdk/apps/qml/QtQuick/Pa |
-|                                      | rticles.Attractor/>`__,              |
+|                                      | rticles.Attractor/>`_ ,              |
 |                                      | `Friction </sdk/apps/qml/QtQuick/Par |
-|                                      | ticles.Friction/>`__,                |
+|                                      | ticles.Friction/>`_ ,                |
 |                                      | `Gravity </sdk/apps/qml/QtQuick/Part |
-|                                      | icles.Gravity/>`__,                  |
+|                                      | icles.Gravity/>`_ ,                  |
 |                                      | `GroupGoal </sdk/apps/qml/QtQuick/Pa |
-|                                      | rticles.GroupGoal/>`__,              |
+|                                      | rticles.GroupGoal/>`_ ,              |
 |                                      | `SpriteGoal </sdk/apps/qml/QtQuick/P |
-|                                      | articles.SpriteGoal/>`__,            |
+|                                      | articles.SpriteGoal/>`_ ,            |
 |                                      | `Turbulence </sdk/apps/qml/QtQuick/P |
-|                                      | articles.Turbulence/>`__,            |
+|                                      | articles.Turbulence/>`_ ,            |
 |                                      | and                                  |
 |                                      | `Wander </sdk/apps/qml/QtQuick/Parti |
-|                                      | cles.Wander/>`__.                    |
+|                                      | cles.Wander/>`_ .                    |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`enabled </sdk/apps/qml/QtQuick/Particles.Affector#enabled-prop>`__****
+-  `enabled </sdk/apps/qml/QtQuick/Particles.Affector/_enabled-prop>`_ 
    : bool
--  ****`groups </sdk/apps/qml/QtQuick/Particles.Affector#groups-prop>`__****
+-  `groups </sdk/apps/qml/QtQuick/Particles.Affector/_groups-prop>`_ 
    : list<string>
--  ****`once </sdk/apps/qml/QtQuick/Particles.Affector#once-prop>`__****
+-  `once </sdk/apps/qml/QtQuick/Particles.Affector/_once-prop>`_ 
    : bool
--  ****`shape </sdk/apps/qml/QtQuick/Particles.Affector#shape-prop>`__****
+-  `shape </sdk/apps/qml/QtQuick/Particles.Affector/_shape-prop>`_ 
    : Shape
--  ****`system </sdk/apps/qml/QtQuick/Particles.Affector#system-prop>`__****
+-  `system </sdk/apps/qml/QtQuick/Particles.Affector/_system-prop>`_ 
    : ParticleSystem
--  ****`whenCollidingWith </sdk/apps/qml/QtQuick/Particles.Affector#whenCollidingWith-prop>`__****
+-  `whenCollidingWith </sdk/apps/qml/QtQuick/Particles.Affector/_whenCollidingWith-prop>`_ 
    : list<string>
 
 Signals
 -------
 
 -  void
-   ****`affected </sdk/apps/qml/QtQuick/Particles.Affector#affected-signal>`__****\ (real
+   **`affected </sdk/apps/qml/QtQuick/Particles.Affector/#affected-signal>`_ **\ (real
    *x*, real *y*)
 
 Detailed Description
@@ -74,6 +78,8 @@ simulates with worse granularity.
 Property Documentation
 ----------------------
 
+.. _sdk_qtquick_particles_affector_enabled-prop:
+
 +--------------------------------------------------------------------------+
 |        \ enabled : bool                                                  |
 +--------------------------------------------------------------------------+
@@ -86,6 +92,8 @@ Default value is true.
 
 | 
 
+.. _sdk_qtquick_particles_affector_groups-prop:
+
 +--------------------------------------------------------------------------+
 |        \ groups : list<string>                                           |
 +--------------------------------------------------------------------------+
@@ -95,6 +103,8 @@ Which logical particle groups will be affected.
 If empty, it will affect all particles.
 
 | 
+
+.. _sdk_qtquick_particles_affector_once-prop:
 
 +--------------------------------------------------------------------------+
 |        \ once : bool                                                     |
@@ -109,8 +119,10 @@ Default value is false.
 
 | 
 
+.. _sdk_qtquick_particles_affector_shape-prop:
+
 +--------------------------------------------------------------------------+
-|        \ shape : `Shape </sdk/apps/qml/QtQuick/Particles.Shape/>`__      |
+|        \ shape : `Shape </sdk/apps/qml/QtQuick/Particles.Shape/>`_       |
 +--------------------------------------------------------------------------+
 
 If a size has been defined, the shape property can be used to affect a
@@ -118,17 +130,21 @@ non-rectangular area.
 
 | 
 
+.. _sdk_qtquick_particles_affector_system-prop:
+
 +--------------------------------------------------------------------------+
 |        \ system :                                                        |
-| `ParticleSystem </sdk/apps/qml/QtQuick/Particles.ParticleSystem/>`__     |
+| `ParticleSystem </sdk/apps/qml/QtQuick/Particles.ParticleSystem/>`_      |
 +--------------------------------------------------------------------------+
 
 This is the system which will be affected by the element. If the
 Affector is a direct child of a
-`ParticleSystem </sdk/apps/qml/QtQuick/Particles.ParticleSystem/>`__, it
+`ParticleSystem </sdk/apps/qml/QtQuick/Particles.ParticleSystem/>`_ , it
 will automatically be associated with it.
 
 | 
+
+.. _sdk_qtquick_particles_affector_whenCollidingWith-prop:
 
 +--------------------------------------------------------------------------+
 |        \ whenCollidingWith : list<string>                                |
@@ -150,6 +166,8 @@ By default, no groups are specified.
 
 Signal Documentation
 --------------------
+
+.. _sdk_qtquick_particles_affector_void affected(real *x*, real *y*)-prop:
 
 +--------------------------------------------------------------------------+
 |        \ void affected(real *x*, real *y*)                               |

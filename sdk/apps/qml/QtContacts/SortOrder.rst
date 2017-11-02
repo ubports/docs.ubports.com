@@ -1,3 +1,7 @@
+.. _sdk_qtcontacts_sortorder:
+QtContacts SortOrder
+====================
+
 The SortOrder element defines how a list of contacts should be ordered
 according to some criteria.
 
@@ -8,16 +12,15 @@ according to some criteria.
 Properties
 ----------
 
--  ****`blankPolicy </sdk/apps/qml/QtContacts/SortOrder#blankPolicy-prop>`__****
-   : enumeration
--  ****`caseSensitivity </sdk/apps/qml/QtContacts/SortOrder#caseSensitivity-prop>`__****
-   : enumeration
--  ****`detail </sdk/apps/qml/QtContacts/SortOrder#detail-prop>`__**** :
+-  :ref:`blankPolicy <sdk_qtcontacts_sortorder_blankPolicy-prop>` :
    enumeration
--  ****`direction </sdk/apps/qml/QtContacts/SortOrder#direction-prop>`__****
+-  :ref:`caseSensitivity <sdk_qtcontacts_sortorder_caseSensitivity-prop>`
    : enumeration
--  ****`field </sdk/apps/qml/QtContacts/SortOrder#field-prop>`__**** :
-   int
+-  :ref:`detail <sdk_qtcontacts_sortorder_detail-prop>` :
+   enumeration
+-  :ref:`direction <sdk_qtcontacts_sortorder_direction-prop>` :
+   enumeration
+-  :ref:`field <sdk_qtcontacts_sortorder_field-prop>` : int
 
 Detailed Description
 --------------------
@@ -29,6 +32,8 @@ This element is part of the **QtContacts** module.
 Property Documentation
 ----------------------
 
+.. _sdk_qtcontacts_sortorder_blankPolicy-prop:
+
 +--------------------------------------------------------------------------+
 |        \ blankPolicy : enumeration                                       |
 +--------------------------------------------------------------------------+
@@ -36,14 +41,15 @@ Property Documentation
 This property enumerates the ways in which the sort order interprets
 blanks when sorting contacts.
 
--  `SortOrder </sdk/apps/qml/QtContacts/SortOrder/>`__.BlanksFirst -
-   Considers blank values to evaluate to less than all other values in
+-  :ref:`SortOrder <sdk_qtcontacts_sortorder>`.BlanksFirst - Considers
+   blank values to evaluate to less than all other values in
    comparisons.
--  `SortOrder </sdk/apps/qml/QtContacts/SortOrder/>`__.BlanksLast -
-   Considers blank values to evaluate to greater than all other values
-   in comparisons.
+-  :ref:`SortOrder <sdk_qtcontacts_sortorder>`.BlanksLast - Considers blank
+   values to evaluate to greater than all other values in comparisons.
 
 | 
+
+.. _sdk_qtcontacts_sortorder_caseSensitivity-prop:
 
 +--------------------------------------------------------------------------+
 |        \ caseSensitivity : enumeration                                   |
@@ -57,6 +63,8 @@ can be one of:
 
 | 
 
+.. _sdk_qtcontacts_sortorder_detail-prop:
+
 +--------------------------------------------------------------------------+
 |        \ detail : enumeration                                            |
 +--------------------------------------------------------------------------+
@@ -65,9 +73,11 @@ This property holds the detail type of the details which will be
 inspected to perform sorting.
 
 **See also**
-`ContactDetail::type </sdk/apps/qml/QtContacts/ContactDetail#type-prop>`__.
+:ref:`ContactDetail::type <sdk_qtcontacts_contactdetail#type-prop>`.
 
 | 
+
+.. _sdk_qtcontacts_sortorder_direction-prop:
 
 +--------------------------------------------------------------------------+
 |        \ direction : enumeration                                         |
@@ -80,6 +90,8 @@ one of:
 -  Qt.DescendingOrder
 
 | 
+
+.. _sdk_qtcontacts_sortorder_field-prop:
 
 +--------------------------------------------------------------------------+
 |        \ field : int                                                     |

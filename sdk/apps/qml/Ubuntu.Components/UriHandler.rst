@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_urihandler:
+Ubuntu.Components UriHandler
+============================
+
 Singleton signalling for opened URIs.
 
 +---------------------+--------------------------------+
@@ -7,18 +11,18 @@ Singleton signalling for opened URIs.
 Signals
 -------
 
--  ****`onOpened </sdk/apps/qml/Ubuntu.Components/UriHandler#onOpened-signal>`__****\ (list<string>
+-  **:ref:`onOpened <sdk_ubuntu_components_urihandler#onOpened-signal>`**\ (list<string>
    *uris*)
 
 Detailed Description
 --------------------
 
-`UriHandler </sdk/apps/qml/Ubuntu.Components/UriHandler/>`__ is a
-singleton handling opened URIs. The application can be signalled of
-opened URIs through the opened signal. The content of the "APP\_ID"
-environment variable is used to determine the object path. If the D-Bus
-session bus is not connected or the "APP\_ID" variable is not set or
-empty, the handler stays uninitialized.
+:ref:`UriHandler <sdk_ubuntu_components_urihandler>` is a singleton
+handling opened URIs. The application can be signalled of opened URIs
+through the opened signal. The content of the "APP\_ID" environment
+variable is used to determine the object path. If the D-Bus session bus
+is not connected or the "APP\_ID" variable is not set or empty, the
+handler stays uninitialized.
 
 Example of use:
 

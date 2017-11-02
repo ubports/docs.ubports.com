@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_downloadmanager_metadata:
+Ubuntu.DownloadManager Metadata
+===============================
+
 Provides additional properties for downloads
 
 +---------------------+-------------------------------------+
@@ -7,22 +11,22 @@ Provides additional properties for downloads
 Properties
 ----------
 
--  ****`custom </sdk/apps/qml/Ubuntu.DownloadManager/Metadata#custom-prop>`__****
+-  :ref:`custom <sdk_ubuntu_downloadmanager_metadata_custom-prop>`
    : array
--  ****`extract </sdk/apps/qml/Ubuntu.DownloadManager/Metadata#extract-prop>`__****
+-  :ref:`extract <sdk_ubuntu_downloadmanager_metadata_extract-prop>`
    : bool
--  ****`showInIndicator </sdk/apps/qml/Ubuntu.DownloadManager/Metadata#showInIndicator-prop>`__****
+-  :ref:`showInIndicator <sdk_ubuntu_downloadmanager_metadata_showInIndicator-prop>`
    : bool
--  ****`title </sdk/apps/qml/Ubuntu.DownloadManager/Metadata#title-prop>`__****
-   : string
+-  :ref:`title <sdk_ubuntu_downloadmanager_metadata_title-prop>` :
+   string
 
 Detailed Description
 --------------------
 
 Metadata provides the ability to set a number of special properties on a
-`SingleDownload </sdk/apps/qml/Ubuntu.DownloadManager/SingleDownload/>`__,
-e.g. to display a download in the transfer indicator, or automatically
-extract a download of a zip file upon completion.
+:ref:`SingleDownload <sdk_ubuntu_downloadmanager_singledownload>`, e.g. to
+display a download in the transfer indicator, or automatically extract a
+download of a zip file upon completion.
 
 Example usage:
 
@@ -73,10 +77,12 @@ Example usage:
     }
 
 **See also**
-`DownloadManager </sdk/apps/qml/Ubuntu.DownloadManager/DownloadManager/>`__.
+:ref:`DownloadManager <sdk_ubuntu_downloadmanager_downloadmanager>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_ubuntu_downloadmanager_metadata_custom-prop:
 
 +--------------------------------------------------------------------------+
 |        \ custom : array                                                  |
@@ -86,6 +92,8 @@ Metadata specific to your application that you wish to associate with
 this download. This metadata will persist across application restarts.
 
 | 
+
+.. _sdk_ubuntu_downloadmanager_metadata_extract-prop:
 
 +--------------------------------------------------------------------------+
 |        \ extract : bool                                                  |
@@ -97,6 +105,8 @@ False.
 
 | 
 
+.. _sdk_ubuntu_downloadmanager_metadata_showInIndicator-prop:
+
 +--------------------------------------------------------------------------+
 |        \ showInIndicator : bool                                          |
 +--------------------------------------------------------------------------+
@@ -106,13 +116,15 @@ indicator, defaults to False.
 
 | 
 
+.. _sdk_ubuntu_downloadmanager_metadata_title-prop:
+
 +--------------------------------------------------------------------------+
 |        \ title : string                                                  |
 +--------------------------------------------------------------------------+
 
 This sets the name to display in the transfer indicator for this
 download, this property is only used if
-`showInIndicator </sdk/apps/qml/Ubuntu.DownloadManager/Metadata#showInIndicator-prop>`__
+:ref:`showInIndicator <sdk_ubuntu_downloadmanager_metadata#showInIndicator-prop>`
 is True.
 
 | 

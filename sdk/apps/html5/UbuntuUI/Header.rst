@@ -1,3 +1,7 @@
+.. _sdk_ubuntuui_header:
+UbuntuUI Header
+===============
+
 
 An Ubuntu Header wraps the general Tabs definitions and interaction in
 the case of a Tab navigation pattern or is used to display the title of

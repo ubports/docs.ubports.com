@@ -1,5 +1,9 @@
+.. _sdk_runtime:
+Runtime
+=======
+
 The main object for query originators to access the scopes runtime.
-`More... </sdk/scopes/cpp/unity.scopes.Runtime#details>`__
+`More... </sdk/scopes/cpp/unity.scopes.Runtime/#details>`_ 
 
 ``#include <unity/scopes/Runtime.h>``
 
@@ -8,7 +12,7 @@ The main object for query originators to access the scopes runtime.
 
 void 
 
-`destroy </sdk/scopes/cpp/unity.scopes.Runtime#a37009c392ed3a7c6ebaf37cdfdaf6d01>`__
+`destroy </sdk/scopes/cpp/unity.scopes.Runtime/#a37009c392ed3a7c6ebaf37cdfdaf6d01>`_ 
 ()
 
  
@@ -17,9 +21,9 @@ void 
 
  
 
-`RegistryProxy </sdk/scopes/cpp/unity.scopes#a45babc254d3548863d79ee54f266e84d>`__ 
+:ref:`RegistryProxy <sdk_unity_scopes#a45babc254d3548863d79ee54f266e84d>` 
 
-`registry </sdk/scopes/cpp/unity.scopes.Runtime#afc312448a4537b110bf1701bfb964501>`__
+`registry </sdk/scopes/cpp/unity.scopes.Runtime/#afc312448a4537b110bf1701bfb964501>`_ 
 () const
 
  
@@ -30,8 +34,8 @@ void 
 
 void 
 
-`run\_scope </sdk/scopes/cpp/unity.scopes.Runtime#a8924298a103d43313fe1974c040e7736>`__
-(`ScopeBase </sdk/scopes/cpp/unity.scopes.ScopeBase/>`__ \*const
+`run\_scope </sdk/scopes/cpp/unity.scopes.Runtime/#a8924298a103d43313fe1974c040e7736>`_ 
+(`ScopeBase </sdk/scopes/cpp/unity.scopes.ScopeBase/>`_  \*const
 scope\_base, std::string const &scope\_ini\_file)
 
  
@@ -40,9 +44,9 @@ scope\_base, std::string const &scope\_ini\_file)
 
  
 
-`ObjectProxy </sdk/scopes/cpp/unity.scopes#aa68ce1769f7a888d0b4b2951741ca75a>`__ 
+:ref:`ObjectProxy <sdk_unity_scopes#aa68ce1769f7a888d0b4b2951741ca75a>` 
 
-`string\_to\_proxy </sdk/scopes/cpp/unity.scopes.Runtime#a24eec46bc15975c219642fcfe8e5357f>`__
+`string\_to\_proxy </sdk/scopes/cpp/unity.scopes.Runtime/#a24eec46bc15975c219642fcfe8e5357f>`_ 
 (std::string const &s) const
 
  
@@ -53,8 +57,8 @@ scope\_base, std::string const &scope\_ini\_file)
 
 std::string 
 
-`proxy\_to\_string </sdk/scopes/cpp/unity.scopes.Runtime#ac96e508aa3d37d24eaf2aa65bdbfb43e>`__
-(`ObjectProxy </sdk/scopes/cpp/unity.scopes#aa68ce1769f7a888d0b4b2951741ca75a>`__
+`proxy\_to\_string </sdk/scopes/cpp/unity.scopes.Runtime/#ac96e508aa3d37d24eaf2aa65bdbfb43e>`_ 
+(:ref:`ObjectProxy <sdk_unity_scopes#aa68ce1769f7a888d0b4b2951741ca75a>`
 const &proxy) const
 
  
@@ -65,7 +69,7 @@ const &proxy) const
 
  
 
-`~Runtime </sdk/scopes/cpp/unity.scopes.Runtime#a96f5965eec2dd22c54cca9d99cb04653>`__
+`~Runtime </sdk/scopes/cpp/unity.scopes.Runtime/#a96f5965eec2dd22c54cca9d99cb04653>`_ 
 ()
 
  
@@ -79,7 +83,7 @@ const &proxy) const
 
 static UPtr 
 
-`create </sdk/scopes/cpp/unity.scopes.Runtime#a0c24bf97fe98f57c4fc7ad04456bd40c>`__
+`create </sdk/scopes/cpp/unity.scopes.Runtime/#a0c24bf97fe98f57c4fc7ad04456bd40c>`_ 
 (std::string const &configfile="")
 
  
@@ -91,7 +95,7 @@ static UPtr 
 
 static UPtr 
 
-`create\_scope\_runtime </sdk/scopes/cpp/unity.scopes.Runtime#aa729688b3c887476118c0ab5ad6a5a54>`__
+`create\_scope\_runtime </sdk/scopes/cpp/unity.scopes.Runtime/#aa729688b3c887476118c0ab5ad6a5a54>`_ 
 (std::string const &scope\_id, std::string const &configfile="")
 
  
@@ -106,22 +110,22 @@ Detailed Description
 The main object for query originators to access the scopes runtime.
 
 All interactions with the scopes runtime require a
-`Runtime </sdk/scopes/cpp/unity.scopes.Runtime/>`__ object to be
+`Runtime </sdk/scopes/cpp/unity.scopes.Runtime/>`_  object to be
 instantiated first. The
-`Runtime </sdk/scopes/cpp/unity.scopes.Runtime/>`__ instance controls
+`Runtime </sdk/scopes/cpp/unity.scopes.Runtime/>`_  instance controls
 the overall life cycle; once a
-`Runtime </sdk/scopes/cpp/unity.scopes.Runtime/>`__ instance goes out of
+`Runtime </sdk/scopes/cpp/unity.scopes.Runtime/>`_  instance goes out of
 scope, the application must not make further calls on any instance
 obtained via the destroyed
-`Runtime </sdk/scopes/cpp/unity.scopes.Runtime/>`__.
+`Runtime </sdk/scopes/cpp/unity.scopes.Runtime/>`_ .
 
 The application must instantiate a
-`Runtime </sdk/scopes/cpp/unity.scopes.Runtime/>`__ object only after
+`Runtime </sdk/scopes/cpp/unity.scopes.Runtime/>`_  object only after
 ``main()`` is entered, and it must destroy the instance before leaving
 ``main()``; failure to do so results in undefined behavior.
 
 Note that scope implementations do not need to instantiate a
-`Runtime </sdk/scopes/cpp/unity.scopes.Runtime/>`__ instance.
+`Runtime </sdk/scopes/cpp/unity.scopes.Runtime/>`_  instance.
 
 Constructor & Destructor Documentation
 --------------------------------------
@@ -132,12 +136,12 @@ Constructor & Destructor Documentation
 | time           |                |                |                |                |
 +----------------+----------------+----------------+----------------+----------------+
 
-Destroys a `Runtime </sdk/scopes/cpp/unity.scopes.Runtime/>`__ instance.
+Destroys a `Runtime </sdk/scopes/cpp/unity.scopes.Runtime/>`_  instance.
 
 The destructor implicitly calls
-`destroy() </sdk/scopes/cpp/unity.scopes.Runtime#a37009c392ed3a7c6ebaf37cdfdaf6d01>`__
+`destroy() </sdk/scopes/cpp/unity.scopes.Runtime/#a37009c392ed3a7c6ebaf37cdfdaf6d01>`_ 
 if the application code does not explicitly destroy the instance. You
-*must not* permit a `Runtime </sdk/scopes/cpp/unity.scopes.Runtime/>`__
+*must not* permit a `Runtime </sdk/scopes/cpp/unity.scopes.Runtime/>`_ 
 instance to persist beyond the end of ``main()``; doing so has undefined
 behavior.
 
@@ -175,10 +179,10 @@ The life time of the runtime is under control of the caller. Letting the
 returned ``unique_ptr`` go out of scope shuts down the runtime.
 
 You *must not* create a
-`Runtime </sdk/scopes/cpp/unity.scopes.Runtime/>`__ instance until after
+`Runtime </sdk/scopes/cpp/unity.scopes.Runtime/>`_  instance until after
 ``main()`` is entered, and you *must* destroy it before leaving
 ``main()`` (either by explicitly calling
-`destroy() </sdk/scopes/cpp/unity.scopes.Runtime#a37009c392ed3a7c6ebaf37cdfdaf6d01>`__,
+`destroy() </sdk/scopes/cpp/unity.scopes.Runtime/#a37009c392ed3a7c6ebaf37cdfdaf6d01>`_ ,
 or by letting the returned ``unique_ptr`` go out of scope). Failure to
 do so causes undefined behavior.
 
@@ -250,28 +254,28 @@ Returns
 Shuts down the runtime, reclaiming all associated resources.
 
 Calling
-`destroy() </sdk/scopes/cpp/unity.scopes.Runtime#a37009c392ed3a7c6ebaf37cdfdaf6d01>`__
+`destroy() </sdk/scopes/cpp/unity.scopes.Runtime/#a37009c392ed3a7c6ebaf37cdfdaf6d01>`_ 
 is optional; the destructor implicitly calls
-`destroy() </sdk/scopes/cpp/unity.scopes.Runtime#a37009c392ed3a7c6ebaf37cdfdaf6d01>`__
+`destroy() </sdk/scopes/cpp/unity.scopes.Runtime/#a37009c392ed3a7c6ebaf37cdfdaf6d01>`_ 
 if it was not called explicitly. However, no exceptions are thrown by
 the destructor. If you want to log or handle any exceptions during
 shutdown, call
-`destroy() </sdk/scopes/cpp/unity.scopes.Runtime#a37009c392ed3a7c6ebaf37cdfdaf6d01>`__
+`destroy() </sdk/scopes/cpp/unity.scopes.Runtime/#a37009c392ed3a7c6ebaf37cdfdaf6d01>`_ 
 explicitly before letting the ``unique_ptr`` returned by
-`create() </sdk/scopes/cpp/unity.scopes.Runtime#a0c24bf97fe98f57c4fc7ad04456bd40c>`__
+`create() </sdk/scopes/cpp/unity.scopes.Runtime/#a0c24bf97fe98f57c4fc7ad04456bd40c>`_ 
 go out of scope.
 
-+----------------------------------------------------+-----+---------------------------------------------------------------------------------------------+-----------+-----+---------+
-| string unity::scopes::Runtime::proxy\_to\_string   | (   | `ObjectProxy </sdk/scopes/cpp/unity.scopes#aa68ce1769f7a888d0b4b2951741ca75a>`__ const &    | *proxy*   | )   | const   |
-+----------------------------------------------------+-----+---------------------------------------------------------------------------------------------+-----------+-----+---------+
++----------------------------------------------------+-----+---------------------------------------------------------------------------------+-----------+-----+---------+
+| string unity::scopes::Runtime::proxy\_to\_string   | (   | :ref:`ObjectProxy <sdk_unity_scopes#aa68ce1769f7a888d0b4b2951741ca75a>` const &    | *proxy*   | )   | const   |
++----------------------------------------------------+-----+---------------------------------------------------------------------------------+-----------+-----+---------+
 
 Converts a proxy to a string.
 
-`proxy\_to\_string() </sdk/scopes/cpp/unity.scopes.Runtime#ac96e508aa3d37d24eaf2aa65bdbfb43e>`__
+`proxy\_to\_string() </sdk/scopes/cpp/unity.scopes.Runtime/#ac96e508aa3d37d24eaf2aa65bdbfb43e>`_ 
 converts the passed proxy to a string. Note that it is typically easier
 to call the ObjectProxy::to\_string() method to achieve the same thing.
 However,
-`proxy\_to\_string() </sdk/scopes/cpp/unity.scopes.Runtime#ac96e508aa3d37d24eaf2aa65bdbfb43e>`__
+`proxy\_to\_string() </sdk/scopes/cpp/unity.scopes.Runtime/#ac96e508aa3d37d24eaf2aa65bdbfb43e>`_ 
 is needed in order to obtain a string for a null proxy (because it is
 not possible to invoke a member function on a null proxy).
 
@@ -285,18 +289,17 @@ Returns
 
 +----------------+----------------+----------------+----------------+----------------+
 | `RegistryProxy | (              |                | )              | const          |
-|  </sdk/scopes/ |                |                |                |                |
-| cpp/unity.scop |                |                |                |                |
-| es#a45babc254d |                |                |                |                |
-| 3548863d79ee54 |                |                |                |                |
-| f266e84d>`__   |                |                |                |                |
+|  <sdk_unity_sc |                |                |                |                |
+| opes#a45babc25 |                |                |                |                |
+| 4d3548863d79ee |                |                |                |                |
+| 54f266e84d>`_  |                |                |                |                |
 | unity::scopes: |                |                |                |                |
 | :Runtime::regi |                |                |                |                |
 | stry           |                |                |                |                |
 +----------------+----------------+----------------+----------------+----------------+
 
 Returns a proxy to the
-`Registry </sdk/scopes/cpp/unity.scopes.Registry/>`__ object.
+`Registry </sdk/scopes/cpp/unity.scopes.Registry/>`_  object.
 
 The returned proxy allows application code to interact with the
 registry, which provides access to the available scopes.
@@ -327,16 +330,16 @@ Parameters
     | scope\_ini\_file   | The full path of scope configuration file   |
     +--------------------+---------------------------------------------+
 
-+------------------------------------------------------------------------------------------------------------------------------+-----+------------------------+-------+-----+---------+
-| `ObjectProxy </sdk/scopes/cpp/unity.scopes#aa68ce1769f7a888d0b4b2951741ca75a>`__ unity::scopes::Runtime::string\_to\_proxy   | (   | std::string const &    | *s*   | )   | const   |
-+------------------------------------------------------------------------------------------------------------------------------+-----+------------------------+-------+-----+---------+
++------------------------------------------------------------------------------------------------------------------+-----+------------------------+-------+-----+---------+
+| :ref:`ObjectProxy <sdk_unity_scopes#aa68ce1769f7a888d0b4b2951741ca75a>` unity::scopes::Runtime::string\_to\_proxy   | (   | std::string const &    | *s*   | )   | const   |
++------------------------------------------------------------------------------------------------------------------+-----+------------------------+-------+-----+---------+
 
 Convert a string to a proxy.
 
 This method is intended for testing purposes. Do not use
-`string\_to\_proxy() </sdk/scopes/cpp/unity.scopes.Runtime#a24eec46bc15975c219642fcfe8e5357f>`__
+`string\_to\_proxy() </sdk/scopes/cpp/unity.scopes.Runtime/#a24eec46bc15975c219642fcfe8e5357f>`_ 
 in production code!
-`string\_to\_proxy() </sdk/scopes/cpp/unity.scopes.Runtime#a24eec46bc15975c219642fcfe8e5357f>`__
+`string\_to\_proxy() </sdk/scopes/cpp/unity.scopes.Runtime/#a24eec46bc15975c219642fcfe8e5357f>`_ 
 converts a string to a proxy. The returned proxy must be down-cast using
 ``dynamic_pointer_cast`` to the correct type before it can be used.
 

@@ -1,11 +1,15 @@
+.. _sdk_qtqml_extending_qml_-_inheritance_and_coercion_example:
+QtQml Extending QML - Inheritance and Coercion Example
+======================================================
+
 
 
 This example builds on:
 
 -  `Extending QML - Object and List Property Types
-   Example </sdk/apps/qml/QtQml/referenceexamples-properties/>`__
+   Example </sdk/apps/qml/QtQml/referenceexamples-properties/>`_ 
 -  `Extending QML - Adding Types
-   Example </sdk/apps/qml/QtQml/referenceexamples-adding/>`__
+   Example </sdk/apps/qml/QtQml/referenceexamples-adding/>`_ 
 
 The Inheritance and Coercion Example shows how to use base classes to
 assign types of more than one type to a property. It specializes the

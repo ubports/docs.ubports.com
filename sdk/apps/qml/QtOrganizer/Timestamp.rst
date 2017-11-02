@@ -1,3 +1,7 @@
+.. _sdk_qtorganizer_timestamp:
+QtOrganizer Timestamp
+=====================
+
 The Timestamp element contains the created and last modified timestamp
 of an organizer item's creating date and time.
 
@@ -8,15 +12,14 @@ of an organizer item's creating date and time.
 Properties
 ----------
 
--  ****`created </sdk/apps/qml/QtOrganizer/Timestamp#created-prop>`__****
-   : date
--  ****`lastModified </sdk/apps/qml/QtOrganizer/Timestamp#lastModified-prop>`__****
+-  :ref:`created <sdk_qtorganizer_timestamp_created-prop>` : date
+-  :ref:`lastModified <sdk_qtorganizer_timestamp_lastModified-prop>`
    : date
 
 Signals
 -------
 
--  ****`onDetailChanged </sdk/apps/qml/QtOrganizer/Timestamp#onDetailChanged-signal>`__****\ ()
+-  :ref:`onDetailChanged <sdk_qtorganizer_timestamp_onDetailChanged-signal>`\ ()
 
 Detailed Description
 --------------------
@@ -31,6 +34,8 @@ The following fields are supported:
 Property Documentation
 ----------------------
 
+.. _sdk_qtorganizer_timestamp_created-prop:
+
 +--------------------------------------------------------------------------+
 |        \ created : date                                                  |
 +--------------------------------------------------------------------------+
@@ -38,6 +43,8 @@ Property Documentation
 This property holds the value of the item's creation date and time.
 
 | 
+
+.. _sdk_qtorganizer_timestamp_lastModified-prop:
 
 +--------------------------------------------------------------------------+
 |        \ lastModified : date                                             |
@@ -50,11 +57,13 @@ This property holds the value of the item's last modified date and time.
 Signal Documentation
 --------------------
 
+.. _sdk_qtorganizer_timestamp_onDetailChanged()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ onDetailChanged()                                               |
 +--------------------------------------------------------------------------+
 
 **See also**
-`Detail::onDetailChanged </sdk/apps/qml/QtOrganizer/Detail#onDetailChanged-signal>`__.
+:ref:`Detail::onDetailChanged <sdk_qtorganizer_detail#onDetailChanged-signal>`.
 
 | 

@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_content_contenthandler:
+Ubuntu.Content ContentHandler
+=============================
+
 Describes the type of transfer operation to perform
 
 +---------------------+-----------------------------+
@@ -7,17 +11,17 @@ Describes the type of transfer operation to perform
 Detailed Description
 --------------------
 
-*`ContentHandler </sdk/apps/qml/Ubuntu.Content/ContentHandler/>`__* is
-an enumeration of handler types:
+*:ref:`ContentHandler <sdk_ubuntu_content_contenthandler>`* is an
+enumeration of handler types:
 
-+---------------------------------------------------------------------------------+
-| Handler                                                                         |
-+=================================================================================+
-| `ContentHandler </sdk/apps/qml/Ubuntu.Content/ContentHandler/>`__.Source        |
-+---------------------------------------------------------------------------------+
-| `ContentHandler </sdk/apps/qml/Ubuntu.Content/ContentHandler/>`__.Destination   |
-+---------------------------------------------------------------------------------+
-| `ContentHandler </sdk/apps/qml/Ubuntu.Content/ContentHandler/>`__.Share         |
-+---------------------------------------------------------------------------------+
++----------------------------------------------------------------------+
+| Handler                                                              |
++======================================================================+
+| :ref:`ContentHandler <sdk_ubuntu_content_contenthandler>`.Source        |
++----------------------------------------------------------------------+
+| :ref:`ContentHandler <sdk_ubuntu_content_contenthandler>`.Destination   |
++----------------------------------------------------------------------+
+| :ref:`ContentHandler <sdk_ubuntu_content_contenthandler>`.Share         |
++----------------------------------------------------------------------+
 
-**See also** `ContentHub </sdk/apps/qml/Ubuntu.Content/ContentHub/>`__.
+**See also** :ref:`ContentHub <sdk_ubuntu_content_contenthub>`.

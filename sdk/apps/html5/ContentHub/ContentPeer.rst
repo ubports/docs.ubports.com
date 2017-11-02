@@ -1,3 +1,7 @@
+.. _sdk_contenthub_contentpeer:
+ContentHub ContentPeer
+======================
+
 
 ContentPeer is an object returned by the ContentHub. It represents a
 remote peer that can be used in a request to import, export or share
@@ -109,8 +113,7 @@ for permanent storage.
 
 **Parameters:**
 
--  ``store``
-   **<`ContentStore </sdk/apps/html5/ContentHub/ContentStore/>`__>**
+-  :ref:``store`` **<`ContentStore <sdk_contenthub_contentstore>`>**
 
    Store used as a permanent storage
 

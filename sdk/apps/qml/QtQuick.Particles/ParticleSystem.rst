@@ -1,3 +1,7 @@
+.. _sdk_qtquick_particles_particlesystem:
+QtQuick.Particles ParticleSystem
+================================
+
 A system which includes particle painter, emitter, and affector types
 
 +---------------------+--------------------------------+
@@ -7,36 +11,38 @@ A system which includes particle painter, emitter, and affector types
 Properties
 ----------
 
--  ****`empty </sdk/apps/qml/QtQuick/Particles.ParticleSystem#empty-prop>`__****
+-  `empty </sdk/apps/qml/QtQuick/Particles.ParticleSystem/_empty-prop>`_ 
    : bool
--  ****`particleStates </sdk/apps/qml/QtQuick/Particles.ParticleSystem#particleStates-prop>`__****
+-  `particleStates </sdk/apps/qml/QtQuick/Particles.ParticleSystem/_particleStates-prop>`_ 
    : list<Sprite>
--  ****`paused </sdk/apps/qml/QtQuick/Particles.ParticleSystem#paused-prop>`__****
+-  `paused </sdk/apps/qml/QtQuick/Particles.ParticleSystem/_paused-prop>`_ 
    : bool
--  ****`running </sdk/apps/qml/QtQuick/Particles.ParticleSystem#running-prop>`__****
+-  `running </sdk/apps/qml/QtQuick/Particles.ParticleSystem/_running-prop>`_ 
    : bool
 
 Methods
 -------
 
 -  void
-   ****`pause </sdk/apps/qml/QtQuick/Particles.ParticleSystem#pause-method>`__****\ ()
+   **`pause </sdk/apps/qml/QtQuick/Particles.ParticleSystem/#pause-method>`_ **\ ()
 -  void
-   ****`reset </sdk/apps/qml/QtQuick/Particles.ParticleSystem#reset-method>`__****\ ()
+   **`reset </sdk/apps/qml/QtQuick/Particles.ParticleSystem/#reset-method>`_ **\ ()
 -  void
-   ****`restart </sdk/apps/qml/QtQuick/Particles.ParticleSystem#restart-method>`__****\ ()
+   **`restart </sdk/apps/qml/QtQuick/Particles.ParticleSystem/#restart-method>`_ **\ ()
 -  void
-   ****`resume </sdk/apps/qml/QtQuick/Particles.ParticleSystem#resume-method>`__****\ ()
+   **`resume </sdk/apps/qml/QtQuick/Particles.ParticleSystem/#resume-method>`_ **\ ()
 -  void
-   ****`start </sdk/apps/qml/QtQuick/Particles.ParticleSystem#start-method>`__****\ ()
+   **`start </sdk/apps/qml/QtQuick/Particles.ParticleSystem/#start-method>`_ **\ ()
 -  void
-   ****`stop </sdk/apps/qml/QtQuick/Particles.ParticleSystem#stop-method>`__****\ ()
+   **`stop </sdk/apps/qml/QtQuick/Particles.ParticleSystem/#stop-method>`_ **\ ()
 
 Detailed Description
 --------------------
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_particles_particlesystem_empty-prop:
 
 +--------------------------------------------------------------------------+
 |        \ empty : bool                                                    |
@@ -53,23 +59,26 @@ To kill all the particles in the system, use an Age affector.
 
 | 
 
+.. _sdk_qtquick_particles_particlesystem_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ particleStates :                                                |
-| list<`Sprite </sdk/apps/qml/QtQuick/Sprite/>`__>                         |
+| :ref:` <>`\ particleStates : list<`Sprite <sdk_qtquick_sprite>`>          |
 +--------------------------------------------------------------------------+
 
 You can define a sub-set of particle groups in this property in order to
 provide them with stochastic state transitions.
 
-Each `QtQuick::Sprite </sdk/apps/qml/QtQuick/Sprite/>`__ in this list is
+Each :ref:`QtQuick::Sprite <sdk_qtquick_sprite>` in this list is
 interpreted as corresponding to the particle group with ths same name.
 Any transitions defined in these sprites will take effect on the
 particle groups as well. Additionally TrailEmitters, Affectors and
-`ParticlePainters </sdk/apps/qml/QtQuick/qtquick-effects-particles#particlepainters>`__
+`ParticlePainters </sdk/apps/qml/QtQuick/qtquick-effects-particles/#particlepainters>`_ 
 definined inside one of these sprites are automatically associated with
 the corresponding particle group.
 
 | 
+
+.. _sdk_qtquick_particles_particlesystem_paused-prop:
 
 +--------------------------------------------------------------------------+
 |        \ paused : bool                                                   |
@@ -83,12 +92,14 @@ The simulation will automatically pause if it detects that there are no
 live particles left, and unpause when new live particles are added.
 
 It can also be controlled with the
-`pause() </sdk/apps/qml/QtQuick/Particles.ParticleSystem#pause-method>`__
+`pause() </sdk/apps/qml/QtQuick/Particles.ParticleSystem/#pause-method>`_ 
 and
-`resume() </sdk/apps/qml/QtQuick/Particles.ParticleSystem#resume-method>`__
+`resume() </sdk/apps/qml/QtQuick/Particles.ParticleSystem/#resume-method>`_ 
 methods.
 
 | 
+
+.. _sdk_qtquick_particles_particlesystem_running-prop:
 
 +--------------------------------------------------------------------------+
 |        \ running : bool                                                  |
@@ -99,15 +110,17 @@ simulation. All particles will be destroyed when the system is set to
 running again.
 
 It can also be controlled with the
-`start() </sdk/apps/qml/QtQuick/Particles.ParticleSystem#start-method>`__
+`start() </sdk/apps/qml/QtQuick/Particles.ParticleSystem/#start-method>`_ 
 and
-`stop() </sdk/apps/qml/QtQuick/Particles.ParticleSystem#stop-method>`__
+`stop() </sdk/apps/qml/QtQuick/Particles.ParticleSystem/#stop-method>`_ 
 methods.
 
 | 
 
 Method Documentation
 --------------------
+
+.. _sdk_qtquick_particles_particlesystem_void pause-method:
 
 +--------------------------------------------------------------------------+
 |        \ void pause()                                                    |
@@ -116,11 +129,13 @@ Method Documentation
 Pauses the simulation if it is running.
 
 **See also**
-`resume </sdk/apps/qml/QtQuick/Particles.ParticleSystem#resume-method>`__
+`resume </sdk/apps/qml/QtQuick/Particles.ParticleSystem/#resume-method>`_ 
 and
-`paused </sdk/apps/qml/QtQuick/Particles.ParticleSystem#paused-prop>`__.
+`paused </sdk/apps/qml/QtQuick/Particles.ParticleSystem/#paused-prop>`_ .
 
 | 
+
+.. _sdk_qtquick_particles_particlesystem_void reset-method:
 
 +--------------------------------------------------------------------------+
 |        \ void reset()                                                    |
@@ -130,6 +145,8 @@ Discards all currently existing particles.
 
 | 
 
+.. _sdk_qtquick_particles_particlesystem_void restart-method:
+
 +--------------------------------------------------------------------------+
 |        \ void restart()                                                  |
 +--------------------------------------------------------------------------+
@@ -137,12 +154,14 @@ Discards all currently existing particles.
 Stops the simulation if it is running, and then starts it.
 
 **See also**
-`start </sdk/apps/qml/QtQuick/Particles.ParticleSystem#start-method>`__,
-`stop </sdk/apps/qml/QtQuick/Particles.ParticleSystem#stop-method>`__,
+`start </sdk/apps/qml/QtQuick/Particles.ParticleSystem/#start-method>`_ ,
+`stop </sdk/apps/qml/QtQuick/Particles.ParticleSystem/#stop-method>`_ ,
 and
-`running </sdk/apps/qml/QtQuick/Particles.ParticleSystem#running-prop>`__.
+`running </sdk/apps/qml/QtQuick/Particles.ParticleSystem/#running-prop>`_ .
 
 | 
+
+.. _sdk_qtquick_particles_particlesystem_void resume-method:
 
 +--------------------------------------------------------------------------+
 |        \ void resume()                                                   |
@@ -151,11 +170,13 @@ and
 Resumes the simulation if it is paused.
 
 **See also**
-`pause </sdk/apps/qml/QtQuick/Particles.ParticleSystem#pause-method>`__
+`pause </sdk/apps/qml/QtQuick/Particles.ParticleSystem/#pause-method>`_ 
 and
-`paused </sdk/apps/qml/QtQuick/Particles.ParticleSystem#paused-prop>`__.
+`paused </sdk/apps/qml/QtQuick/Particles.ParticleSystem/#paused-prop>`_ .
 
 | 
+
+.. _sdk_qtquick_particles_particlesystem_void start-method:
 
 +--------------------------------------------------------------------------+
 |        \ void start()                                                    |
@@ -164,12 +185,14 @@ and
 Starts the simulation if it has not already running.
 
 **See also**
-`stop </sdk/apps/qml/QtQuick/Particles.ParticleSystem#stop-method>`__,
-`restart </sdk/apps/qml/QtQuick/Particles.ParticleSystem#restart-method>`__,
+`stop </sdk/apps/qml/QtQuick/Particles.ParticleSystem/#stop-method>`_ ,
+`restart </sdk/apps/qml/QtQuick/Particles.ParticleSystem/#restart-method>`_ ,
 and
-`running </sdk/apps/qml/QtQuick/Particles.ParticleSystem#running-prop>`__.
+`running </sdk/apps/qml/QtQuick/Particles.ParticleSystem/#running-prop>`_ .
 
 | 
+
+.. _sdk_qtquick_particles_particlesystem_void stop-method:
 
 +--------------------------------------------------------------------------+
 |        \ void stop()                                                     |
@@ -178,9 +201,9 @@ and
 Stops the simulation if it is running.
 
 **See also**
-`start </sdk/apps/qml/QtQuick/Particles.ParticleSystem#start-method>`__,
-`restart </sdk/apps/qml/QtQuick/Particles.ParticleSystem#restart-method>`__,
+`start </sdk/apps/qml/QtQuick/Particles.ParticleSystem/#start-method>`_ ,
+`restart </sdk/apps/qml/QtQuick/Particles.ParticleSystem/#restart-method>`_ ,
 and
-`running </sdk/apps/qml/QtQuick/Particles.ParticleSystem#running-prop>`__.
+`running </sdk/apps/qml/QtQuick/Particles.ParticleSystem/#running-prop>`_ .
 
 | 

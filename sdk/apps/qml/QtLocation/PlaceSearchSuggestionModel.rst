@@ -1,3 +1,7 @@
+.. _sdk_qtlocation_placesearchsuggestionmodel:
+QtLocation PlaceSearchSuggestionModel
+=====================================
+
 Provides access to search term suggestions.
 
 +---------------------+-------------------------+
@@ -9,63 +13,57 @@ Provides access to search term suggestions.
 Properties
 ----------
 
--  ****`limit </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel#limit-prop>`__****
+-  :ref:`limit <sdk_qtlocation_placesearchsuggestionmodel_limit-prop>`
    : int
--  ****`offset </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel#offset-prop>`__****
+-  :ref:`offset <sdk_qtlocation_placesearchsuggestionmodel_offset-prop>`
    : int
--  ****`plugin </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel#plugin-prop>`__****
+-  :ref:`plugin <sdk_qtlocation_placesearchsuggestionmodel_plugin-prop>`
    : Plugin
--  ****`searchArea </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel#searchArea-prop>`__****
+-  :ref:`searchArea <sdk_qtlocation_placesearchsuggestionmodel_searchArea-prop>`
    : geoshape
--  ****`searchTerm </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel#searchTerm-prop>`__****
+-  :ref:`searchTerm <sdk_qtlocation_placesearchsuggestionmodel_searchTerm-prop>`
    : string
--  ****`status </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel#status-prop>`__****
+-  :ref:`status <sdk_qtlocation_placesearchsuggestionmodel_status-prop>`
    : enum
--  ****`suggestions </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel#suggestions-prop>`__****
+-  :ref:`suggestions <sdk_qtlocation_placesearchsuggestionmodel_suggestions-prop>`
    : stringlist
 
 Methods
 -------
 
--  ****`cancel </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel#cancel-method>`__****\ ()
+-  :ref:`cancel <sdk_qtlocation_placesearchsuggestionmodel_cancel-method>`\ ()
 -  string
-   ****`errorString </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel#errorString-method>`__****\ ()
--  ****`reset </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel#reset-method>`__****\ ()
--  ****`update </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel#update-method>`__****\ ()
+   **:ref:`errorString <sdk_qtlocation_placesearchsuggestionmodel#errorString-method>`**\ ()
+-  :ref:`reset <sdk_qtlocation_placesearchsuggestionmodel_reset-method>`\ ()
+-  :ref:`update <sdk_qtlocation_placesearchsuggestionmodel_update-method>`\ ()
 
 Detailed Description
 --------------------
 
 The
-`PlaceSearchSuggestionModel </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel/>`__
+:ref:`PlaceSearchSuggestionModel <sdk_qtlocation_placesearchsuggestionmodel>`
 can be used to provide search term suggestions as the user enters their
 search term. The properties of this model should match that of the
-`PlaceSearchModel </sdk/apps/qml/QtLocation/PlaceSearchModel/>`__, which
-will be used to perform the actual search query, to ensure that the
-search suggestion results are relevant.
+:ref:`PlaceSearchModel <sdk_qtlocation_placesearchmodel>`, which will be
+used to perform the actual search query, to ensure that the search
+suggestion results are relevant.
 
 There are two ways of accessing the data provided by this model, either
 through the
-`suggestions </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel#suggestions-prop>`__
+:ref:`suggestions <sdk_qtlocation_placesearchsuggestionmodel#suggestions-prop>`
 property or through views and delegates. The latter is the preferred
 method.
 
-The
-`offset </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel#offset-prop>`__
-and
-`limit </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel#limit-prop>`__
+The :ref:`offset <sdk_qtlocation_placesearchsuggestionmodel#offset-prop>`
+and :ref:`limit <sdk_qtlocation_placesearchsuggestionmodel#limit-prop>`
 properties can be used to access paged suggestions. When the
-`offset </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel#offset-prop>`__
-and
-`limit </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel#limit-prop>`__
+:ref:`offset <sdk_qtlocation_placesearchsuggestionmodel#offset-prop>` and
+:ref:`limit <sdk_qtlocation_placesearchsuggestionmodel#limit-prop>`
 properties are set the suggestions between
-`offset </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel#offset-prop>`__
-and
-(`offset </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel#offset-prop>`__
-+
-`limit </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel#limit-prop>`__
-- 1) will be returned. Support for paging may vary from plugin to
-plugin.
+:ref:`offset <sdk_qtlocation_placesearchsuggestionmodel#offset-prop>` and
+(:ref:`offset <sdk_qtlocation_placesearchsuggestionmodel#offset-prop>` +
+:ref:`limit <sdk_qtlocation_placesearchsuggestionmodel#limit-prop>` - 1)
+will be returned. Support for paging may vary from plugin to plugin.
 
 The model returns data for the following roles:
 
@@ -76,11 +74,11 @@ The model returns data for the following roles:
 +--------------+----------+--------------------------+
 
 The following example shows how to use the
-`PlaceSearchSuggestionModel </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel/>`__
+:ref:`PlaceSearchSuggestionModel <sdk_qtlocation_placesearchsuggestionmodel>`
 to get suggested search terms from a partial search term. The
-`searchArea </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel#searchArea-prop>`__
+:ref:`searchArea <sdk_qtlocation_placesearchsuggestionmodel#searchArea-prop>`
 is set to match what would be used to perform the actual place search
-with `PlaceSearchModel </sdk/apps/qml/QtLocation/PlaceSearchModel/>`__.
+with :ref:`PlaceSearchModel <sdk_qtlocation_placesearchmodel>`.
 
 .. code:: qml
 
@@ -104,6 +102,8 @@ with `PlaceSearchModel </sdk/apps/qml/QtLocation/PlaceSearchModel/>`__.
 Property Documentation
 ----------------------
 
+.. _sdk_qtlocation_placesearchsuggestionmodel_limit-prop:
+
 +--------------------------------------------------------------------------+
 |        \ limit : int                                                     |
 +--------------------------------------------------------------------------+
@@ -112,9 +112,11 @@ This property holds the limit of the number of items that will be
 returned.
 
 **See also**
-`offset </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel#offset-prop>`__.
+:ref:`offset <sdk_qtlocation_placesearchsuggestionmodel#offset-prop>`.
 
 | 
+
+.. _sdk_qtlocation_placesearchsuggestionmodel_offset-prop:
 
 +--------------------------------------------------------------------------+
 |        \ offset : int                                                    |
@@ -123,19 +125,23 @@ returned.
 This property holds the index of the first item in the model.
 
 **See also**
-`limit </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel#limit-prop>`__.
+:ref:`limit <sdk_qtlocation_placesearchsuggestionmodel#limit-prop>`.
 
 | 
 
+.. _sdk_qtlocation_placesearchsuggestionmodel_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ plugin : `Plugin </sdk/apps/qml/QtLocation/Plugin/>`__          |
+| :ref:` <>`\ plugin : `Plugin <sdk_qtlocation_plugin>`                  |
 +--------------------------------------------------------------------------+
 
 This property holds the provider
-`Plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__ which
+`Plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_  which
 will be used to perform the search.
 
 | 
+
+.. _sdk_qtlocation_placesearchsuggestionmodel_searchArea-prop:
 
 +--------------------------------------------------------------------------+
 |        \ searchArea : geoshape                                           |
@@ -146,10 +152,12 @@ by the model will be relevant to the given search area.
 
 If this property is set to a geocircle its radius property may be left
 unset, in which case the
-`Plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__ will
+`Plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_  will
 choose an appropriate radius for the search.
 
 | 
+
+.. _sdk_qtlocation_placesearchsuggestionmodel_searchTerm-prop:
 
 +--------------------------------------------------------------------------+
 |        \ searchTerm : string                                             |
@@ -159,23 +167,32 @@ This property holds the partial search term used in query.
 
 | 
 
+.. _sdk_qtlocation_placesearchsuggestionmodel_status-prop:
+
 +--------------------------------------------------------------------------+
 |        \ status : enum                                                   |
 +--------------------------------------------------------------------------+
 
 This property holds the status of the model. It can be one of:
 
-+-------------------------------------------------------------------------------------------------+------------------------------------------------------------------+
-| `PlaceSearchSuggestionModel </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel/>`__.Null      | No search query has been executed. The model is empty.           |
-+-------------------------------------------------------------------------------------------------+------------------------------------------------------------------+
-| `PlaceSearchSuggestionModel </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel/>`__.Ready     | The search query has completed, and the results are available.   |
-+-------------------------------------------------------------------------------------------------+------------------------------------------------------------------+
-| `PlaceSearchSuggestionModel </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel/>`__.Loading   | A search query is currently being executed.                      |
-+-------------------------------------------------------------------------------------------------+------------------------------------------------------------------+
-| `PlaceSearchSuggestionModel </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel/>`__.Error     | An error occurred when executing the previous search query.      |
-+-------------------------------------------------------------------------------------------------+------------------------------------------------------------------+
+.. _sdk_qtlocation_placesearchsuggestionmodel_-prop:
+
++--------------------------------------------------------------------------------------+------------------------------------------------------------------+
+.. _sdk_qtlocation_placesearchsuggestionmodel_-prop:
+| :ref:`PlaceSearchSuggestionModel <sdk_qtlocation_placesearchsuggestionmodel>`.Null      | No search query has been executed. The model is empty.           |
++--------------------------------------------------------------------------------------+------------------------------------------------------------------+
+.. _sdk_qtlocation_placesearchsuggestionmodel_-prop:
+| :ref:`PlaceSearchSuggestionModel <sdk_qtlocation_placesearchsuggestionmodel>`.Ready     | The search query has completed, and the results are available.   |
++--------------------------------------------------------------------------------------+------------------------------------------------------------------+
+.. _sdk_qtlocation_placesearchsuggestionmodel_-prop:
+| :ref:`PlaceSearchSuggestionModel <sdk_qtlocation_placesearchsuggestionmodel>`.Loading   | A search query is currently being executed.                      |
++--------------------------------------------------------------------------------------+------------------------------------------------------------------+
+| :ref:`PlaceSearchSuggestionModel <sdk_qtlocation_placesearchsuggestionmodel>`.Error     | An error occurred when executing the previous search query.      |
++--------------------------------------------------------------------------------------+------------------------------------------------------------------+
 
 | 
+
+.. _sdk_qtlocation_placesearchsuggestionmodel_suggestions-prop:
 
 +--------------------------------------------------------------------------+
 |        \ suggestions : stringlist                                        |
@@ -189,24 +206,27 @@ currently has.
 Method Documentation
 --------------------
 
+.. _sdk_qtlocation_placesearchsuggestionmodel_cancel-method:
+
 +--------------------------------------------------------------------------+
 |        \ cancel()                                                        |
 +--------------------------------------------------------------------------+
 
 Cancels an ongoing search suggestion operation immediately and sets the
 model status to
-`PlaceSearchSuggestionModel </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel/>`__.Ready.
+:ref:`PlaceSearchSuggestionModel <sdk_qtlocation_placesearchsuggestionmodel>`.Ready.
 The model retains any search suggestions it had before the operation was
 started.
 
 If an operation is not ongoing, invoking cancel() has no effect.
 
 **See also**
-`update() </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel#update-method>`__
-and
-`status </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel#status-prop>`__.
+:ref:`update() <sdk_qtlocation_placesearchsuggestionmodel#update-method>`
+and :ref:`status <sdk_qtlocation_placesearchsuggestionmodel#status-prop>`.
 
 | 
+
+.. _sdk_qtlocation_placesearchsuggestionmodel_string errorString-method:
 
 +--------------------------------------------------------------------------+
 |        \ string errorString() const                                      |
@@ -221,6 +241,8 @@ associated textual representation.
 
 | 
 
+.. _sdk_qtlocation_placesearchsuggestionmodel_reset-method:
+
 +--------------------------------------------------------------------------+
 |        \ reset()                                                         |
 +--------------------------------------------------------------------------+
@@ -228,9 +250,11 @@ associated textual representation.
 Resets the model. All search suggestions are cleared, any outstanding
 requests are aborted and possible errors are cleared. Model status will
 be set to
-`PlaceSearchSuggestionModel </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel/>`__.Null.
+:ref:`PlaceSearchSuggestionModel <sdk_qtlocation_placesearchsuggestionmodel>`.Null.
 
 | 
+
+.. _sdk_qtlocation_placesearchsuggestionmodel_update-method:
 
 +--------------------------------------------------------------------------+
 |        \ update()                                                        |
@@ -238,27 +262,26 @@ be set to
 
 Updates the model based on the provided query parameters. The model will
 be populated with a list of search suggestions for the partial
-`searchTerm </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel#searchTerm-prop>`__
+:ref:`searchTerm <sdk_qtlocation_placesearchsuggestionmodel#searchTerm-prop>`
 and
-`searchArea </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel#searchArea-prop>`__.
-If the `plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__
+:ref:`searchArea <sdk_qtlocation_placesearchsuggestionmodel#searchArea-prop>`.
+If the `plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_ 
 supports it, other parameters such as
-`limit </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel#limit-prop>`__
-and
-`offset </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel#offset-prop>`__
-may be specified. ``update()`` submits the set of parameters to the
-`plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__ to
+:ref:`limit <sdk_qtlocation_placesearchsuggestionmodel#limit-prop>` and
+:ref:`offset <sdk_qtlocation_placesearchsuggestionmodel#offset-prop>` may
+be specified. ``update()`` submits the set of parameters to the
+`plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_  to
 process.
 
 While the model is updating the
-`status </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel#status-prop>`__
-of the model is set to ``PlaceSearchSuggestionModel.Loading``. If the
-model is successfully updated, the
-`status </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel#status-prop>`__
-is set to ``PlaceSearchSuggestionModel.Ready``, while if it
-unsuccessfully completes, the
-`status </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel#status-prop>`__
-is set to ``PlaceSearchSuggestionModel.Error`` and the model cleared.
+:ref:`status <sdk_qtlocation_placesearchsuggestionmodel#status-prop>` of
+the model is set to ``PlaceSearchSuggestionModel.Loading``. If the model
+is successfully updated, the
+:ref:`status <sdk_qtlocation_placesearchsuggestionmodel#status-prop>` is
+set to ``PlaceSearchSuggestionModel.Ready``, while if it unsuccessfully
+completes, the
+:ref:`status <sdk_qtlocation_placesearchsuggestionmodel#status-prop>` is
+set to ``PlaceSearchSuggestionModel.Error`` and the model cleared.
 
 This example shows use of the model
 
@@ -281,12 +304,11 @@ This example shows use of the model
     }
 
 A more detailed example can be found in the in `Places
-(QML) </sdk/apps/qml/QtLocation/places#presenting-search-suggestions>`__
+(QML) </sdk/apps/qml/QtLocation/places/#presenting-search-suggestions>`_ 
 example.
 
 **See also**
-`cancel() </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel#cancel-method>`__
-and
-`status </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel#status-prop>`__.
+:ref:`cancel() <sdk_qtlocation_placesearchsuggestionmodel#cancel-method>`
+and :ref:`status <sdk_qtlocation_placesearchsuggestionmodel#status-prop>`.
 
 | 

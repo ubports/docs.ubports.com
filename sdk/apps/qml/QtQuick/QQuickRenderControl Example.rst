@@ -1,3 +1,7 @@
+.. _sdk_qtquick_qquickrendercontrol_example:
+QtQuick QQuickRenderControl Example
+===================================
+
 
 
 |image0|

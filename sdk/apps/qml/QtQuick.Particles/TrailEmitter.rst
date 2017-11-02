@@ -1,3 +1,7 @@
+.. _sdk_qtquick_particles_trailemitter:
+QtQuick.Particles TrailEmitter
+==============================
+
 Emits logical particles from other logical particles
 
 +---------------------+--------------------------------+
@@ -7,49 +11,53 @@ Emits logical particles from other logical particles
 Properties
 ----------
 
--  ****`emitHeight </sdk/apps/qml/QtQuick/Particles.TrailEmitter#emitHeight-prop>`__****
+-  `emitHeight </sdk/apps/qml/QtQuick/Particles.TrailEmitter/_emitHeight-prop>`_ 
    : real
--  ****`emitRatePerParticle </sdk/apps/qml/QtQuick/Particles.TrailEmitter#emitRatePerParticle-prop>`__****
+-  `emitRatePerParticle </sdk/apps/qml/QtQuick/Particles.TrailEmitter/_emitRatePerParticle-prop>`_ 
    : real
--  ****`emitShape </sdk/apps/qml/QtQuick/Particles.TrailEmitter#emitShape-prop>`__****
+-  `emitShape </sdk/apps/qml/QtQuick/Particles.TrailEmitter/_emitShape-prop>`_ 
    : Shape
--  ****`emitWidth </sdk/apps/qml/QtQuick/Particles.TrailEmitter#emitWidth-prop>`__****
+-  `emitWidth </sdk/apps/qml/QtQuick/Particles.TrailEmitter/_emitWidth-prop>`_ 
    : real
--  ****`follow </sdk/apps/qml/QtQuick/Particles.TrailEmitter#follow-prop>`__****
+-  `follow </sdk/apps/qml/QtQuick/Particles.TrailEmitter/_follow-prop>`_ 
    : string
--  ****`velocityFromMovement </sdk/apps/qml/QtQuick/Particles.TrailEmitter#velocityFromMovement-prop>`__****
+-  `velocityFromMovement </sdk/apps/qml/QtQuick/Particles.TrailEmitter/_velocityFromMovement-prop>`_ 
    : qreal
 
 Signals
 -------
 
 -  void
-   ****`emitFollowParticles </sdk/apps/qml/QtQuick/Particles.TrailEmitter#emitFollowParticles-signal>`__****\ (Array
+   **`emitFollowParticles </sdk/apps/qml/QtQuick/Particles.TrailEmitter/#emitFollowParticles-signal>`_ **\ (Array
    *particles*, Particle *followed*)
 
 Detailed Description
 --------------------
 
 This element emits logical particles into the
-`ParticleSystem </sdk/apps/qml/QtQuick/Particles.ParticleSystem/>`__,
+`ParticleSystem </sdk/apps/qml/QtQuick/Particles.ParticleSystem/>`_ ,
 with the starting positions based on those of other logical particles.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_particles_trailemitter_emitHeight-prop:
 
 +--------------------------------------------------------------------------+
 |        \ emitHeight : real                                               |
 +--------------------------------------------------------------------------+
 
 The height in pixels the
-`emitShape </sdk/apps/qml/QtQuick/Particles.TrailEmitter#emitShape-prop>`__
+`emitShape </sdk/apps/qml/QtQuick/Particles.TrailEmitter/#emitShape-prop>`_ 
 is scaled to. If set to
-`TrailEmitter </sdk/apps/qml/QtQuick/Particles.TrailEmitter/>`__.ParticleSize,
+`TrailEmitter </sdk/apps/qml/QtQuick/Particles.TrailEmitter/>`_ .ParticleSize,
 the height will be the current size of the particle being followed.
 
 Default is 0.
 
 | 
+
+.. _sdk_qtquick_particles_trailemitter_emitRatePerParticle-prop:
 
 +--------------------------------------------------------------------------+
 |        \ emitRatePerParticle : real                                      |
@@ -57,36 +65,42 @@ Default is 0.
 
 | 
 
+.. _sdk_qtquick_particles_trailemitter_emitShape-prop:
+
 +--------------------------------------------------------------------------+
-|        \ emitShape : `Shape </sdk/apps/qml/QtQuick/Particles.Shape/>`__  |
+|        \ emitShape : `Shape </sdk/apps/qml/QtQuick/Particles.Shape/>`_   |
 +--------------------------------------------------------------------------+
 
 As the area of a
-`TrailEmitter </sdk/apps/qml/QtQuick/Particles.TrailEmitter/>`__ is the
+`TrailEmitter </sdk/apps/qml/QtQuick/Particles.TrailEmitter/>`_  is the
 area it follows, a separate shape can be provided to be the shape it
 emits out of. This shape has width and height specified by
-`emitWidth </sdk/apps/qml/QtQuick/Particles.TrailEmitter#emitWidth-prop>`__
+`emitWidth </sdk/apps/qml/QtQuick/Particles.TrailEmitter/#emitWidth-prop>`_ 
 and
-`emitHeight </sdk/apps/qml/QtQuick/Particles.TrailEmitter#emitHeight-prop>`__,
+`emitHeight </sdk/apps/qml/QtQuick/Particles.TrailEmitter/#emitHeight-prop>`_ ,
 and is centered on the followed particle's position.
 
 The default shape is a filled Rectangle.
 
 | 
 
+.. _sdk_qtquick_particles_trailemitter_emitWidth-prop:
+
 +--------------------------------------------------------------------------+
 |        \ emitWidth : real                                                |
 +--------------------------------------------------------------------------+
 
 The width in pixels the
-`emitShape </sdk/apps/qml/QtQuick/Particles.TrailEmitter#emitShape-prop>`__
+`emitShape </sdk/apps/qml/QtQuick/Particles.TrailEmitter/#emitShape-prop>`_ 
 is scaled to. If set to
-`TrailEmitter </sdk/apps/qml/QtQuick/Particles.TrailEmitter/>`__.ParticleSize,
+`TrailEmitter </sdk/apps/qml/QtQuick/Particles.TrailEmitter/>`_ .ParticleSize,
 the width will be the current size of the particle being followed.
 
 Default is 0.
 
 | 
+
+.. _sdk_qtquick_particles_trailemitter_follow-prop:
 
 +--------------------------------------------------------------------------+
 |        \ follow : string                                                 |
@@ -95,6 +109,8 @@ Default is 0.
 The type of logical particle which this is emitting from.
 
 | 
+
+.. _sdk_qtquick_particles_trailemitter_velocityFromMovement-prop:
 
 +--------------------------------------------------------------------------+
 |        \ velocityFromMovement : qreal                                    |
@@ -113,9 +129,11 @@ Default value is 0.
 Signal Documentation
 --------------------
 
+.. _sdk_qtquick_particles_trailemitter_void emitFollowParticles(Array *particles*,-prop:
+
 +--------------------------------------------------------------------------+
 |        \ void emitFollowParticles(Array *particles*,                     |
-| `Particle </sdk/apps/qml/QtQuick/Particles.Particle/>`__ *followed*)     |
+| `Particle </sdk/apps/qml/QtQuick/Particles.Particle/>`_  *followed*)     |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when particles are emitted from the *followed*

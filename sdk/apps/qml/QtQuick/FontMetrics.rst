@@ -1,3 +1,7 @@
+.. _sdk_qtquick_fontmetrics:
+QtQuick FontMetrics
+===================
+
 Provides metrics for a given font
 
 +---------------------+----------------------+
@@ -9,61 +13,55 @@ Provides metrics for a given font
 Properties
 ----------
 
--  ****`ascent </sdk/apps/qml/QtQuick/FontMetrics#ascent-prop>`__**** :
+-  :ref:`ascent <sdk_qtquick_fontmetrics_ascent-prop>` : real
+-  :ref:`averageCharacterWidth <sdk_qtquick_fontmetrics_averageCharacterWidth-prop>`
+   : real
+-  :ref:`descent <sdk_qtquick_fontmetrics_descent-prop>` : real
+-  :ref:`font <sdk_qtquick_fontmetrics_font-prop>` : font
+-  :ref:`height <sdk_qtquick_fontmetrics_height-prop>` : real
+-  :ref:`leading <sdk_qtquick_fontmetrics_leading-prop>` : real
+-  :ref:`lineSpacing <sdk_qtquick_fontmetrics_lineSpacing-prop>` :
    real
--  ****`averageCharacterWidth </sdk/apps/qml/QtQuick/FontMetrics#averageCharacterWidth-prop>`__****
+-  :ref:`lineWidth <sdk_qtquick_fontmetrics_lineWidth-prop>` : real
+-  :ref:`maximumCharacterWidth <sdk_qtquick_fontmetrics_maximumCharacterWidth-prop>`
    : real
--  ****`descent </sdk/apps/qml/QtQuick/FontMetrics#descent-prop>`__****
+-  :ref:`minimumLeftBearing <sdk_qtquick_fontmetrics_minimumLeftBearing-prop>`
    : real
--  ****`font </sdk/apps/qml/QtQuick/FontMetrics#font-prop>`__**** : font
--  ****`height </sdk/apps/qml/QtQuick/FontMetrics#height-prop>`__**** :
-   real
--  ****`leading </sdk/apps/qml/QtQuick/FontMetrics#leading-prop>`__****
+-  :ref:`minimumRightBearing <sdk_qtquick_fontmetrics_minimumRightBearing-prop>`
    : real
--  ****`lineSpacing </sdk/apps/qml/QtQuick/FontMetrics#lineSpacing-prop>`__****
+-  :ref:`overlinePosition <sdk_qtquick_fontmetrics_overlinePosition-prop>`
    : real
--  ****`lineWidth </sdk/apps/qml/QtQuick/FontMetrics#lineWidth-prop>`__****
+-  :ref:`strikeOutPosition <sdk_qtquick_fontmetrics_strikeOutPosition-prop>`
    : real
--  ****`maximumCharacterWidth </sdk/apps/qml/QtQuick/FontMetrics#maximumCharacterWidth-prop>`__****
+-  :ref:`underlinePosition <sdk_qtquick_fontmetrics_underlinePosition-prop>`
    : real
--  ****`minimumLeftBearing </sdk/apps/qml/QtQuick/FontMetrics#minimumLeftBearing-prop>`__****
-   : real
--  ****`minimumRightBearing </sdk/apps/qml/QtQuick/FontMetrics#minimumRightBearing-prop>`__****
-   : real
--  ****`overlinePosition </sdk/apps/qml/QtQuick/FontMetrics#overlinePosition-prop>`__****
-   : real
--  ****`strikeOutPosition </sdk/apps/qml/QtQuick/FontMetrics#strikeOutPosition-prop>`__****
-   : real
--  ****`underlinePosition </sdk/apps/qml/QtQuick/FontMetrics#underlinePosition-prop>`__****
-   : real
--  ****`xHeight </sdk/apps/qml/QtQuick/FontMetrics#xHeight-prop>`__****
-   : real
+-  :ref:`xHeight <sdk_qtquick_fontmetrics_xHeight-prop>` : real
 
 Methods
 -------
 
 -  qreal
-   ****`advanceWidth </sdk/apps/qml/QtQuick/FontMetrics#advanceWidth-method>`__****\ (string
+   **:ref:`advanceWidth <sdk_qtquick_fontmetrics#advanceWidth-method>`**\ (string
    *text*)
 -  rect
-   ****`boundingRect </sdk/apps/qml/QtQuick/FontMetrics#boundingRect-method>`__****\ (string
+   **:ref:`boundingRect <sdk_qtquick_fontmetrics#boundingRect-method>`**\ (string
    *text*)
 -  string
-   ****`elidedText </sdk/apps/qml/QtQuick/FontMetrics#elidedText-method>`__****\ (string
+   **:ref:`elidedText <sdk_qtquick_fontmetrics#elidedText-method>`**\ (string
    *text*)
 -  rect
-   ****`tightBoundingRect </sdk/apps/qml/QtQuick/FontMetrics#tightBoundingRect-method>`__****\ (string
+   **:ref:`tightBoundingRect <sdk_qtquick_fontmetrics#tightBoundingRect-method>`**\ (string
    *text*)
 
 Detailed Description
 --------------------
 
-`FontMetrics </sdk/apps/qml/QtQuick/FontMetrics/>`__ calculates the size
-of characters and strings for a given font.
+:ref:`FontMetrics <sdk_qtquick_fontmetrics>` calculates the size of
+characters and strings for a given font.
 
 It provides a subset of the C++ QFontMetricsF API, with the added
 ability to change the font that is used for calculations via the
-`font </sdk/apps/qml/QtQuick/FontMetrics#font-prop>`__ property.
+:ref:`font <sdk_qtquick_fontmetrics#font-prop>` property.
 
 .. code:: cpp
 
@@ -77,10 +75,12 @@ ability to change the font that is used for calculations via the
     }
 
 **See also** QFontMetricsF and
-`TextMetrics </sdk/apps/qml/QtQuick/TextMetrics/>`__.
+:ref:`TextMetrics <sdk_qtquick_textmetrics>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_fontmetrics_ascent-prop:
 
 +--------------------------------------------------------------------------+
 |        \ ascent : real                                                   |
@@ -89,10 +89,12 @@ Property Documentation
 This property holds the ascent of the font.
 
 **See also** QFontMetricsF::ascent(),
-`descent </sdk/apps/qml/QtQuick/FontMetrics#descent-prop>`__, and
-`height </sdk/apps/qml/QtQuick/FontMetrics#height-prop>`__.
+:ref:`descent <sdk_qtquick_fontmetrics#descent-prop>`, and
+:ref:`height <sdk_qtquick_fontmetrics#height-prop>`.
 
 | 
+
+.. _sdk_qtquick_fontmetrics_averageCharacterWidth-prop:
 
 +--------------------------------------------------------------------------+
 |        \ averageCharacterWidth : real                                    |
@@ -104,6 +106,8 @@ This property holds the average width of glyphs in the font.
 
 | 
 
+.. _sdk_qtquick_fontmetrics_descent-prop:
+
 +--------------------------------------------------------------------------+
 |        \ descent : real                                                  |
 +--------------------------------------------------------------------------+
@@ -111,18 +115,22 @@ This property holds the average width of glyphs in the font.
 This property holds the descent of the font.
 
 **See also** QFontMetricsF::descent(),
-`ascent </sdk/apps/qml/QtQuick/FontMetrics#ascent-prop>`__, and
-`height </sdk/apps/qml/QtQuick/FontMetrics#height-prop>`__.
+:ref:`ascent <sdk_qtquick_fontmetrics#ascent-prop>`, and
+:ref:`height <sdk_qtquick_fontmetrics#height-prop>`.
 
 | 
 
+.. _sdk_qtquick_fontmetrics_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ font : `font </sdk/apps/qml/QtQuick/FontMetrics#font-prop>`__   |
+| :ref:` <>`\ font : `font <sdk_qtquick_fontmetrics#font-prop>`          |
 +--------------------------------------------------------------------------+
 
 This property holds the font used for the metrics calculations.
 
 | 
+
+.. _sdk_qtquick_fontmetrics_height-prop:
 
 +--------------------------------------------------------------------------+
 |        \ height : real                                                   |
@@ -134,6 +142,8 @@ This property holds the height of the font.
 
 | 
 
+.. _sdk_qtquick_fontmetrics_leading-prop:
+
 +--------------------------------------------------------------------------+
 |        \ leading : real                                                  |
 +--------------------------------------------------------------------------+
@@ -144,6 +154,8 @@ This property holds the leading of the font.
 
 | 
 
+.. _sdk_qtquick_fontmetrics_lineSpacing-prop:
+
 +--------------------------------------------------------------------------+
 |        \ lineSpacing : real                                              |
 +--------------------------------------------------------------------------+
@@ -153,6 +165,8 @@ This property holds the distance from one base line to the next.
 **See also** QFontMetricsF::lineSpacing().
 
 | 
+
+.. _sdk_qtquick_fontmetrics_lineWidth-prop:
 
 +--------------------------------------------------------------------------+
 |        \ lineWidth : real                                                |
@@ -165,6 +179,8 @@ adjusted for the point size of the font.
 
 | 
 
+.. _sdk_qtquick_fontmetrics_maximumCharacterWidth-prop:
+
 +--------------------------------------------------------------------------+
 |        \ maximumCharacterWidth : real                                    |
 +--------------------------------------------------------------------------+
@@ -174,6 +190,8 @@ This property holds the width of the widest character in the font.
 **See also** QFontMetricsF::maxWidth().
 
 | 
+
+.. _sdk_qtquick_fontmetrics_minimumLeftBearing-prop:
 
 +--------------------------------------------------------------------------+
 |        \ minimumLeftBearing : real                                       |
@@ -185,6 +203,8 @@ This property holds the minimum left bearing of the font.
 
 | 
 
+.. _sdk_qtquick_fontmetrics_minimumRightBearing-prop:
+
 +--------------------------------------------------------------------------+
 |        \ minimumRightBearing : real                                      |
 +--------------------------------------------------------------------------+
@@ -195,6 +215,8 @@ This property holds the minimum right bearing of the font.
 
 | 
 
+.. _sdk_qtquick_fontmetrics_overlinePosition-prop:
+
 +--------------------------------------------------------------------------+
 |        \ overlinePosition : real                                         |
 +--------------------------------------------------------------------------+
@@ -203,11 +225,13 @@ This property holds the distance from the base line to where an overline
 should be drawn.
 
 **See also** QFontMetricsF::overlinePos(),
-`underlinePosition </sdk/apps/qml/QtQuick/FontMetrics#underlinePosition-prop>`__,
+:ref:`underlinePosition <sdk_qtquick_fontmetrics#underlinePosition-prop>`,
 and
-`strikeOutPosition </sdk/apps/qml/QtQuick/FontMetrics#strikeOutPosition-prop>`__.
+:ref:`strikeOutPosition <sdk_qtquick_fontmetrics#strikeOutPosition-prop>`.
 
 | 
+
+.. _sdk_qtquick_fontmetrics_strikeOutPosition-prop:
 
 +--------------------------------------------------------------------------+
 |        \ strikeOutPosition : real                                        |
@@ -217,11 +241,13 @@ This property holds the distance from the base line to where the
 strikeout line should be drawn.
 
 **See also** QFontMetricsF::strikeOutPos(),
-`overlinePosition </sdk/apps/qml/QtQuick/FontMetrics#overlinePosition-prop>`__,
+:ref:`overlinePosition <sdk_qtquick_fontmetrics#overlinePosition-prop>`,
 and
-`underlinePosition </sdk/apps/qml/QtQuick/FontMetrics#underlinePosition-prop>`__.
+:ref:`underlinePosition <sdk_qtquick_fontmetrics#underlinePosition-prop>`.
 
 | 
+
+.. _sdk_qtquick_fontmetrics_underlinePosition-prop:
 
 +--------------------------------------------------------------------------+
 |        \ underlinePosition : real                                        |
@@ -231,11 +257,13 @@ This property holds the distance from the base line to where an
 underscore should be drawn.
 
 **See also** QFontMetricsF::underlinePos(),
-`overlinePosition </sdk/apps/qml/QtQuick/FontMetrics#overlinePosition-prop>`__,
+:ref:`overlinePosition <sdk_qtquick_fontmetrics#overlinePosition-prop>`,
 and
-`strikeOutPosition </sdk/apps/qml/QtQuick/FontMetrics#strikeOutPosition-prop>`__.
+:ref:`strikeOutPosition <sdk_qtquick_fontmetrics#strikeOutPosition-prop>`.
 
 | 
+
+.. _sdk_qtquick_fontmetrics_xHeight-prop:
 
 +--------------------------------------------------------------------------+
 |        \ xHeight : real                                                  |
@@ -249,6 +277,8 @@ This property holds the 'x' height of the font.
 
 Method Documentation
 --------------------
+
+.. _sdk_qtquick_fontmetrics_qreal advanceWidth-method:
 
 +--------------------------------------------------------------------------+
 |        \ qreal advanceWidth(string *text*)                               |
@@ -265,6 +295,8 @@ property of TextMetrics.
 
 | 
 
+.. _sdk_qtquick_fontmetrics_rect boundingRect-method:
+
 +--------------------------------------------------------------------------+
 |        \ rect boundingRect(string *text*)                                |
 +--------------------------------------------------------------------------+
@@ -276,15 +308,19 @@ This method is offered as an imperative alternative to the boundingRect
 property of TextMetrics.
 
 **See also** QFontMetricsF::boundingRect() and
-`tightBoundingRect() </sdk/apps/qml/QtQuick/FontMetrics#tightBoundingRect-method>`__.
+:ref:`tightBoundingRect() <sdk_qtquick_fontmetrics#tightBoundingRect-method>`.
 
 | 
+
+.. _sdk_qtquick_fontmetrics_string elidedText-method:
 
 +--------------------------------------------------------------------------+
 |        \ string elidedText(string *text*)                                |
 +--------------------------------------------------------------------------+
 
 | 
+
+.. _sdk_qtquick_fontmetrics_rect tightBoundingRect-method:
 
 +--------------------------------------------------------------------------+
 |        \ rect tightBoundingRect(string *text*)                           |
@@ -297,6 +333,6 @@ This method is offered as an imperative alternative to the
 tightBoundingRect property of TextMetrics.
 
 **See also** QFontMetricsF::tightBoundingRect() and
-`boundingRect() </sdk/apps/qml/QtQuick/FontMetrics#boundingRect-method>`__.
+:ref:`boundingRect() <sdk_qtquick_fontmetrics#boundingRect-method>`.
 
 | 

@@ -1,3 +1,7 @@
+.. _sdk_qtcontacts_relationshipfilter:
+QtContacts RelationshipFilter
+=============================
+
 The RelationshipFilter element provides a filter based around
 relationship criteria.
 
@@ -8,11 +12,11 @@ relationship criteria.
 Properties
 ----------
 
--  ****`relatedContactId </sdk/apps/qml/QtContacts/RelationshipFilter#relatedContactId-prop>`__****
+-  :ref:`relatedContactId <sdk_qtcontacts_relationshipfilter_relatedContactId-prop>`
    : int
--  ****`relatedContactRole </sdk/apps/qml/QtContacts/RelationshipFilter#relatedContactRole-prop>`__****
+-  :ref:`relatedContactRole <sdk_qtcontacts_relationshipfilter_relatedContactRole-prop>`
    : enumeration
--  ****`relationshipType </sdk/apps/qml/QtContacts/RelationshipFilter#relationshipType-prop>`__****
+-  :ref:`relationshipType <sdk_qtcontacts_relationshipfilter_relationshipType-prop>`
    : variant
 
 Detailed Description
@@ -26,6 +30,8 @@ QContactRelationshipFilter, and QContactRelationship.
 Property Documentation
 ----------------------
 
+.. _sdk_qtcontacts_relationshipfilter_relatedContactId-prop:
+
 +--------------------------------------------------------------------------+
 |        \ relatedContactId : int                                          |
 +--------------------------------------------------------------------------+
@@ -35,6 +41,8 @@ must have a relationship in order for the tested contact to match this
 filter
 
 | 
+
+.. _sdk_qtcontacts_relationshipfilter_relatedContactRole-prop:
 
 +--------------------------------------------------------------------------+
 |        \ relatedContactRole : enumeration                                |
@@ -53,6 +61,8 @@ match this filter. The role can be one of:
 
 | 
 
+.. _sdk_qtcontacts_relationshipfilter_relationshipType-prop:
+
 +--------------------------------------------------------------------------+
 |        \ relationshipType : variant                                      |
 +--------------------------------------------------------------------------+
@@ -61,6 +71,6 @@ This property holds the type of relationship that a contact must have in
 order to match the filter.
 
 **See also**
-`Relationship::type </sdk/apps/qml/QtContacts/Relationship#type-prop>`__.
+:ref:`Relationship::type <sdk_qtcontacts_relationship#type-prop>`.
 
 | 

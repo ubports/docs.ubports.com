@@ -1,16 +1,20 @@
+.. _sdk_ubuntuuitoolkit_uclistitem:
+ubuntuuitoolkit UCListItem
+==========================
+
  *class*
-``ubuntuuitoolkit.``\ ``UCListItem``\ (*\*args*)\ ` <#ubuntuuitoolkit.UCListItem>`__
+``ubuntuuitoolkit.``\ ``UCListItem``\ (*\*args*)\ ` <#ubuntuuitoolkit.UCListItem>`_ 
     Bases:
     ``ubuntuuitoolkit._custom_proxy_objects._common.UbuntuUIToolkitCustomProxyObjectBase``
 
     Base class to emulate swipe for leading and trailing actions.
 
      ``toggle_selected``\ (*instance*, *\*args*,
-    *\*\*kwargs*)\ ` <#ubuntuuitoolkit.UCListItem.toggle_selected>`__
+    *\*\*kwargs*)\ ` <#ubuntuuitoolkit.UCListItem.toggle_selected>`_ 
         Toggles selected state of the ListItem.
 
      ``trigger_leading_action``\ (*instance*, *\*args*,
-    *\*\*kwargs*)\ ` <#ubuntuuitoolkit.UCListItem.trigger_leading_action>`__
+    *\*\*kwargs*)\ ` <#ubuntuuitoolkit.UCListItem.trigger_leading_action>`_ 
         Swipe the item in from left to right to open leading actions and
         click on the button representing the requested action.
 
@@ -19,7 +23,7 @@
             till the action is triggered
 
      ``trigger_trailing_action``\ (*instance*, *\*args*,
-    *\*\*kwargs*)\ ` <#ubuntuuitoolkit.UCListItem.trigger_trailing_action>`__
+    *\*\*kwargs*)\ ` <#ubuntuuitoolkit.UCListItem.trigger_trailing_action>`_ 
         Swipe the item in from right to left to open trailing actions
         and click on the button representing the requested action.
 

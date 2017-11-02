@@ -1,9 +1,13 @@
+.. _sdk_qtquick_qt_quick_demo_-_rss_news:
+QtQuick Qt Quick Demo - RSS News
+================================
+
 
 
 |image0|
 
 *RSS News* demonstrates the following `Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-index/>`__ features:
+Quick </sdk/apps/qml/QtQuick/qtquick-index/>`_  features:
 
 -  Using custom types to create screens and screen controls.
 -  Using list models and list elements to represent data.
@@ -11,7 +15,7 @@ Quick </sdk/apps/qml/QtQuick/qtquick-index/>`__ features:
 -  Using list views to display data.
 -  Using the Component type to create a footer for the news item list
    view.
--  Using the `Image </sdk/apps/qml/QtQuick/imageelements#image>`__ type
+-  Using the `Image </sdk/apps/qml/QtQuick/imageelements/#image>`_  type
    to create a button for closing the app.
 
 .. rubric:: Running the Example
@@ -44,9 +48,8 @@ types are located:
 .. rubric:: Creating the Main Window
    :name: creating-the-main-window
 
-In rssnews.qml, we use a
-`Rectangle </sdk/apps/qml/QtQuick/Rectangle/>`__ type with custom
-properties to create the app main window:
+In rssnews.qml, we use a :ref:`Rectangle <sdk_qtquick_rectangle>` type with
+custom properties to create the app main window:
 
 .. code:: qml
 
@@ -72,7 +75,7 @@ RssFeeds.qml to create a list of feed categories:
         RssFeeds { id: rssFeeds }
 
 In RssFeeds.qml, we use a
-`ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview#listmodel>`__
+`ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#listmodel>`_ 
 type with a ListElement type to create a category list where list
 elements represent feed categories:
 
@@ -101,8 +104,8 @@ For each list element, we use the ``name`` role to specify the category
 name, the ``feed`` role to specify the URL to load the data from, and
 the ``image`` role to display an image for the category.
 
-In rssnews.qml, we use a `ListView </sdk/apps/qml/QtQuick/ListView/>`__
-type to display the category list:
+In rssnews.qml, we use a :ref:`ListView <sdk_qtquick_listview>` type to
+display the category list:
 
 .. code:: qml
 
@@ -135,8 +138,8 @@ in the list.
    :name: creating-list-elements
 
 In CategoryDelegate.qml, we use the
-`Rectangle </sdk/apps/qml/QtQuick/Rectangle/>`__ type with custom
-properties to create list elements:
+:ref:`Rectangle <sdk_qtquick_rectangle>` type with custom properties to
+create list elements:
 
 .. code:: qml
 
@@ -148,7 +151,7 @@ We set the ``selected`` property to the ``ListView.isCurrentItem``
 attached property to specify that ``selected`` is ``true`` if
 ``delegate`` is the current item.
 
-We use the `Image </sdk/apps/qml/QtQuick/imageelements#image>`__ type
+We use the `Image </sdk/apps/qml/QtQuick/imageelements/#image>`_  type
 ``source`` property to display the image, centered in the delegate,
 specified for the list element by the ``image`` role in the ``rssFeeds``
 list model:
@@ -160,8 +163,8 @@ list model:
             source: image
         }
 
-We use a `Text </sdk/apps/qml/QtQuick/qtquick-releasenotes#text>`__ type
-to add titles to list elements:
+We use a `Text </sdk/apps/qml/QtQuick/qtquick-releasenotes/#text>`_ 
+type to add titles to list elements:
 
 .. code:: qml
 
@@ -185,11 +188,11 @@ adjust font size and text formatting.
 
 We use the ``color`` property to brighten the text and to scale it
 slightly larger when the list item is the current item. By applying a
-`Behavior </sdk/apps/qml/QtQuick/Behavior/>`__ to the property, we
-animate the actions of selecting and deselecting list items.
+:ref:`Behavior <sdk_qtquick_behavior>` to the property, we animate the
+actions of selecting and deselecting list items.
 
-We use a `MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ type to
-download XML data when users tap a category list element:
+We use a :ref:`MouseArea <sdk_qtquick_mousearea>` type to download XML data
+when users tap a category list element:
 
 .. code:: qml
 
@@ -215,9 +218,9 @@ category list. If the tapped category is already current, the
    :name: downloading-xml-data
 
 In rssnews.qml, we use an
-`XmlListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview#xmllistmodel>`__
-type as a data source for `ListView </sdk/apps/qml/QtQuick/ListView/>`__
-elements to display news items in the selected category:
+`XmlListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#xmllistmodel>`_ 
+type as a data source for :ref:`ListView <sdk_qtquick_listview>` elements
+to display news items in the selected category:
 
 .. code:: qml
 
@@ -231,10 +234,10 @@ We use the ``source`` property and the ``window.currentFeed`` custom
 property to fetch news items for the selected category.
 
 The ``query`` property specifies that the
-`XmlListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview#xmllistmodel>`__
+`XmlListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#xmllistmodel>`_ 
 generates a model item for each ``<item>`` in the XML document.
 
-We use the `XmlRole </sdk/apps/qml/QtQuick/XmlListModel.XmlRole/>`__
+We use the `XmlRole </sdk/apps/qml/QtQuick/XmlListModel.XmlRole/>`_ 
 type to specify the model item attributes. Each model item has the
 ``title``, ``description``, ``image``, ``link``, and ``pubDate``
 attributes that match the values of the corresponding ``<item>`` in the
@@ -250,8 +253,8 @@ XML document:
             XmlRole { name: "pubDate"; query: "pubDate/string()" }
         }
 
-We use the ``feedModel`` model in a
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__ type to display the data:
+We use the :ref:``feedModel`` model in a `ListView <sdk_qtquick_listview>`
+type to display the data:
 
 .. code:: qml
 
@@ -289,7 +292,7 @@ model, and use ``NewsDelegate`` as the delegate to instantiate each item
 in the list.
 
 In NewsDelegate.qml, we use a
-`Column </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#column>`__
+`Column </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#column>`_ 
 type to lay out the XML data:
 
 .. code:: qml
@@ -300,7 +303,7 @@ type to lay out the XML data:
         spacing: 8
 
 Within the column, we use a
-`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#row>`__ and
+`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#row>`_  and
 another column to position images and title text:
 
 .. code:: qml
@@ -368,10 +371,9 @@ main window to display the indicator image when a category list item is
 the current item and XML data is being loaded.
 
 We define the ``BusyIndicator`` type in ``BusyIndicator.qml``. We use an
-`Image </sdk/apps/qml/QtQuick/imageelements#image>`__ type to display an
-image and apply a
-`NumberAnimation </sdk/apps/qml/QtQuick/NumberAnimation/>`__ to its
-``rotation`` property to rotate the image in an infinite loop:
+`Image </sdk/apps/qml/QtQuick/imageelements/#image>`_  type to display
+an image and apply a :ref:`NumberAnimation <sdk_qtquick_numberanimation>`
+to its ``rotation`` property to rotate the image in an infinite loop:
 
 .. code:: qml
 
@@ -443,8 +445,8 @@ the news item list in landscape orientation. We use the
 view bottom in both orientations.
 
 We define the ``ScrollBar`` type in ``ScrollBar.qml``. We use an
-`Item </sdk/apps/qml/QtQuick/Item/>`__ type with custom properties to
-create a container for the scroll bar:
+:ref:`Item <sdk_qtquick_item>` type with custom properties to create a
+container for the scroll bar:
 
 .. code:: qml
 
@@ -455,7 +457,7 @@ create a container for the scroll bar:
         opacity: 0
 
 We use a
-`BorderImage </sdk/apps/qml/QtQuick/imageelements#borderimage>`__ type
+`BorderImage </sdk/apps/qml/QtQuick/imageelements/#borderimage>`_  type
 to display the scroll bar thumb at the x and y position that we
 calculate by using the ``position()`` function:
 
@@ -487,9 +489,8 @@ scroll area:
         }
 
 We use ``transitions`` to apply a
-`NumberAnimation </sdk/apps/qml/QtQuick/NumberAnimation/>`__ to the
-``"opacity"`` property when the state changes from "visible" to the
-default state:
+:ref:`NumberAnimation <sdk_qtquick_numberanimation>` to the ``"opacity"``
+property when the state changes from "visible" to the default state:
 
 .. code:: qml
 
@@ -503,8 +504,8 @@ default state:
    :name: creating-footers
 
 In rssnews.qml, we use a Component type with a
-`Rectangle </sdk/apps/qml/QtQuick/Rectangle/>`__ type to create a footer
-for the news list view:
+:ref:`Rectangle <sdk_qtquick_rectangle>` type to create a footer for the
+news list view:
 
 .. code:: qml
 
@@ -530,7 +531,7 @@ are displayed.
    :name: creating-buttons
 
 In rssnews.qml, we use an
-`Image </sdk/apps/qml/QtQuick/imageelements#image>`__ type to create a
+`Image </sdk/apps/qml/QtQuick/imageelements/#image>`_  type to create a
 simple push button that users can tap to close the app:
 
 .. code:: qml
@@ -561,8 +562,8 @@ overlaps the category list in portrait orientation, we animate the
 users are scrolling the category list.
 
 We use the ``onClicked`` signal handler within a
-`MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ to call the ``quit()``
-function when users select the close button.
+:ref:`MouseArea <sdk_qtquick_mousearea>` to call the ``quit()`` function
+when users select the close button.
 
 Files:
 

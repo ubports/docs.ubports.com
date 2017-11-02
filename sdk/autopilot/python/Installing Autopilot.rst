@@ -1,19 +1,23 @@
+.. _sdk_installing_autopilot:
+Installing Autopilot
+====================
+
 
 Contents
 
 -  `Installing
-   Autopilot </sdk/autopilot/python/guides-installation#installing-autopilot>`__
+   Autopilot </sdk/autopilot/python/guides-installation/#installing-autopilot>`_ 
 
-   -  `Ubuntu </sdk/autopilot/python/guides-installation#ubuntu>`__
+   -  `Ubuntu </sdk/autopilot/python/guides-installation/#ubuntu>`_ 
    -  `Other
-      Linux’s </sdk/autopilot/python/guides-installation#other-linux-s>`__
+      Linux’s </sdk/autopilot/python/guides-installation/#other-linux-s>`_ 
 
 Autopilot is in continuous development, and the best way to get the
 latest version of autopilot is to run the latest Ubuntu development
 image. The autopilot developers traditionally support the Ubuntu release
 immediately prior to the development release via the autopilot PPA.
 
-.. rubric:: `Ubuntu </sdk/autopilot/python/guides-installation#id3>`__\ ` <#ubuntu>`__
+.. rubric:: `Ubuntu </sdk/autopilot/python/guides-installation/#id3>`_ \ ` <#ubuntu>`_ 
    :name: ubuntu
 
 **I am running the latest development image!**
@@ -57,11 +61,11 @@ Feel free to install both metapackages to ensure you have support for
 all autopilot tests.
 
 .. rubric:: `Other
-   Linux’s </sdk/autopilot/python/guides-installation#id4>`__\ ` <#other-linux-s>`__
+   Linux’s </sdk/autopilot/python/guides-installation/#id4>`_ \ ` <#other-linux-s>`_ 
    :name: other-linuxs
 
 You may have to download the source code, and either run from source, or
 build the packages locally. Your best bet is to ask in the autopilot IRC
 channel ( `*Q. Where can I get help /
-support?* </sdk/autopilot/python/faq-faq#help-and-support>`__).
+support?* </sdk/autopilot/python/faq-faq/#help-and-support>`_ ).
 

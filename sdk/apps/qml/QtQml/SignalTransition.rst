@@ -1,3 +1,7 @@
+.. _sdk_qtqml_signaltransition:
+QtQml SignalTransition
+======================
+
 The SignalTransition type provides a transition based on a Qt signal.
 
 +--------------------------------------+--------------------------------------+
@@ -5,24 +9,22 @@ The SignalTransition type provides a transition based on a Qt signal.
 +--------------------------------------+--------------------------------------+
 | Since:                               | Qt 5.4                               |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `QSignalTransition </sdk/apps/qml/Qt |
-|                                      | Qml/QSignalTransition/>`__           |
+| Inherits:                            | :ref:`QSignalTransition <sdk_qtqml_qsigna |
+|                                      | ltransition>`_                       |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`guard </sdk/apps/qml/QtQml/SignalTransition#guard-prop>`__**** :
-   bool
--  ****`signal </sdk/apps/qml/QtQml/SignalTransition#signal-prop>`__****
-   : signal
+-  :ref:`guard <sdk_qtqml_signaltransition_guard-prop>` : bool
+-  :ref:`signal <sdk_qtqml_signaltransition_signal-prop>` : signal
 
 Detailed Description
 --------------------
 
-`SignalTransition </sdk/apps/qml/QtQml/SignalTransition/>`__ is part of
-`The Declarative State Machine
-Framework </sdk/apps/qml/QtQml/qmlstatemachine/>`__.
+:ref:`SignalTransition <sdk_qtqml_signaltransition>` is part of `The
+Declarative State Machine
+Framework </sdk/apps/qml/QtQml/qmlstatemachine/>`_ .
 
 Example Usage
 -------------
@@ -65,12 +67,14 @@ Example Usage
 
 | 
 
-**See also** `StateMachine </sdk/apps/qml/QtQml/StateMachine/>`__,
-`FinalState </sdk/apps/qml/QtQml/FinalState/>`__, and
-`TimeoutTransition </sdk/apps/qml/QtQml/TimeoutTransition/>`__.
+**See also** :ref:`StateMachine <sdk_qtqml_statemachine>`,
+:ref:`FinalState <sdk_qtqml_finalstate>`, and
+:ref:`TimeoutTransition <sdk_qtqml_timeouttransition>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtqml_signaltransition_guard-prop:
 
 +--------------------------------------------------------------------------+
 |        \ guard : bool                                                    |
@@ -112,14 +116,14 @@ the signal can be used as demonstrated in the example below.
         }
     }
 
-**See also**
-`signal </sdk/apps/qml/QtQml/SignalTransition#signal-prop>`__.
+**See also** :ref:`signal <sdk_qtqml_signaltransition#signal-prop>`.
 
 | 
 
+.. _sdk_qtqml_signaltransition_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ signal :                                                        |
-| `signal </sdk/apps/qml/QtQml/SignalTransition#signal-prop>`__            |
+| :ref:` <>`\ signal : `signal <sdk_qtqml_signaltransition#signal-prop>` |
 +--------------------------------------------------------------------------+
 
 The signal which is associated with this signal transition.

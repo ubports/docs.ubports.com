@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_optionselector:
+Ubuntu.Components OptionSelector
+================================
+
 Component displaying either a single selected value or expanded multiple
 choice with an optional image and subtext when not expanded, when
 expanding it opens a listing of all the possible values for selection
@@ -8,37 +12,37 @@ is selected the list is expanded automatically.
 | Import Statement:                    | import Ubuntu.Components 1.3         |
 +--------------------------------------+--------------------------------------+
 | Inherits:                            | `Empty </sdk/apps/qml/Ubuntu.Compone |
-|                                      | nts/ListItems.Empty/>`__             |
+|                                      | nts/ListItems.Empty/>`_              |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`colourImage </sdk/apps/qml/Ubuntu.Components/OptionSelector#colourImage-prop>`__****
+-  :ref:`colourImage <sdk_ubuntu_components_optionselector_colourImage-prop>`
    : bool
--  ****`containerHeight </sdk/apps/qml/Ubuntu.Components/OptionSelector#containerHeight-prop>`__****
+-  :ref:`containerHeight <sdk_ubuntu_components_optionselector_containerHeight-prop>`
    : real
--  ****`currentlyExpanded </sdk/apps/qml/Ubuntu.Components/OptionSelector#currentlyExpanded-prop>`__****
+-  :ref:`currentlyExpanded <sdk_ubuntu_components_optionselector_currentlyExpanded-prop>`
    : bool
--  ****`delegate </sdk/apps/qml/Ubuntu.Components/OptionSelector#delegate-prop>`__****
+-  :ref:`delegate <sdk_ubuntu_components_optionselector_delegate-prop>`
    : Component
--  ****`expanded </sdk/apps/qml/Ubuntu.Components/OptionSelector#expanded-prop>`__****
+-  :ref:`expanded <sdk_ubuntu_components_optionselector_expanded-prop>`
    : bool
--  ****`itemHeight </sdk/apps/qml/Ubuntu.Components/OptionSelector#itemHeight-prop>`__****
+-  :ref:`itemHeight <sdk_ubuntu_components_optionselector_itemHeight-prop>`
    : real
--  ****`model </sdk/apps/qml/Ubuntu.Components/OptionSelector#model-prop>`__****
-   : var
--  ****`multiSelection </sdk/apps/qml/Ubuntu.Components/OptionSelector#multiSelection-prop>`__****
+-  :ref:`model <sdk_ubuntu_components_optionselector_model-prop>` :
+   var
+-  :ref:`multiSelection <sdk_ubuntu_components_optionselector_multiSelection-prop>`
    : bool
--  ****`selectedIndex </sdk/apps/qml/Ubuntu.Components/OptionSelector#selectedIndex-prop>`__****
+-  :ref:`selectedIndex <sdk_ubuntu_components_optionselector_selectedIndex-prop>`
    : int
 
 Signals
 -------
 
--  ****`delegateClicked </sdk/apps/qml/Ubuntu.Components/OptionSelector#delegateClicked-signal>`__****\ (int
+-  :ref:`delegateClicked <sdk_ubuntu_components_optionselector_delegateClicked-signal>`\ (int
    *index*)
--  ****`expansionCompleted </sdk/apps/qml/Ubuntu.Components/OptionSelector#expansionCompleted-signal>`__****\ ()
+-  :ref:`expansionCompleted <sdk_ubuntu_components_optionselector_expansionCompleted-signal>`\ ()
 
 Detailed Description
 --------------------
@@ -123,6 +127,8 @@ Examples:
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_optionselector_colourImage-prop:
+
 +--------------------------------------------------------------------------+
 |        \ colourImage : bool                                              |
 +--------------------------------------------------------------------------+
@@ -131,6 +137,8 @@ Colours image according to the fieldText colour of the theme, otherwise
 source colour is maintained.
 
 | 
+
+.. _sdk_ubuntu_components_optionselector_containerHeight-prop:
 
 +--------------------------------------------------------------------------+
 |        \ containerHeight : real                                          |
@@ -141,6 +149,8 @@ selector.
 
 | 
 
+.. _sdk_ubuntu_components_optionselector_currentlyExpanded-prop:
+
 +--------------------------------------------------------------------------+
 |        \ currentlyExpanded : bool                                        |
 +--------------------------------------------------------------------------+
@@ -149,13 +159,17 @@ Is our list currently expanded?
 
 | 
 
+.. _sdk_ubuntu_components_optionselector_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ delegate : `Component </sdk/apps/qml/QtQml/Component/>`__       |
+| :ref:` <>`\ delegate : `Component <sdk_qtqml_component>`               |
 +--------------------------------------------------------------------------+
 
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__ delegate.
+:ref:`ListView <sdk_qtquick_listview>` delegate.
 
 | 
+
+.. _sdk_ubuntu_components_optionselector_expanded-prop:
 
 +--------------------------------------------------------------------------+
 |        \ expanded : bool                                                 |
@@ -165,6 +179,8 @@ Specifies whether the list is always expanded.
 
 | 
 
+.. _sdk_ubuntu_components_optionselector_[read-only] itemHeight-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [read-only] itemHeight : real                                   |
 +--------------------------------------------------------------------------+
@@ -173,14 +189,18 @@ Height of an individual list item.
 
 | 
 
+.. _sdk_ubuntu_components_optionselector_model-prop:
+
 +--------------------------------------------------------------------------+
-|        \ model : `var <http://doc.qt.io/qt-5/qml-var.html>`__            |
+|        \ model : `var <http://doc.qt.io/qt-5/qml-var.html>`_             |
 +--------------------------------------------------------------------------+
 
 The list of values that will be shown under the label text. This is a
 model.
 
 | 
+
+.. _sdk_ubuntu_components_optionselector_multiSelection-prop:
 
 +--------------------------------------------------------------------------+
 |        \ multiSelection : bool                                           |
@@ -189,6 +209,8 @@ model.
 If the multiple choice selection is enabled the list is always expanded.
 
 | 
+
+.. _sdk_ubuntu_components_optionselector_selectedIndex-prop:
 
 +--------------------------------------------------------------------------+
 |        \ selectedIndex : int                                             |
@@ -201,6 +223,8 @@ The index of the currently selected element in our list.
 Signal Documentation
 --------------------
 
+.. _sdk_ubuntu_components_optionselector_delegateClicked(int *index*)-prop:
+
 +--------------------------------------------------------------------------+
 |        \ delegateClicked(int *index*)                                    |
 +--------------------------------------------------------------------------+
@@ -208,6 +232,8 @@ Signal Documentation
 Called when delegate is clicked.
 
 | 
+
+.. _sdk_ubuntu_components_optionselector_expansionCompleted()-prop:
 
 +--------------------------------------------------------------------------+
 |        \ expansionCompleted()                                            |

@@ -1,18 +1,22 @@
+.. _sdk_qtquick_particles_turbulence:
+QtQuick.Particles Turbulence
+============================
+
 Provides fluid-like forces from a noise image
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtQuick.Particles 2.0         |
 +--------------------------------------+--------------------------------------+
 | Inherits:                            | `Affector </sdk/apps/qml/QtQuick/Par |
-|                                      | ticles.Affector/>`__                 |
+|                                      | ticles.Affector/>`_                  |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`noiseSource </sdk/apps/qml/QtQuick/Particles.Turbulence#noiseSource-prop>`__****
+-  `noiseSource </sdk/apps/qml/QtQuick/Particles.Turbulence/_noiseSource-prop>`_ 
    : url
--  ****`strength </sdk/apps/qml/QtQuick/Particles.Turbulence#strength-prop>`__****
+-  `strength </sdk/apps/qml/QtQuick/Particles.Turbulence/_strength-prop>`_ 
    : real
 
 Detailed Description
@@ -30,6 +34,8 @@ perlin noise.
 Property Documentation
 ----------------------
 
+.. _sdk_qtquick_particles_turbulence_noiseSource-prop:
+
 +--------------------------------------------------------------------------+
 |        \ noiseSource : url                                               |
 +--------------------------------------------------------------------------+
@@ -43,6 +49,8 @@ The source should be a relatively smooth black and white noise image,
 such as perlin noise. A default image will be used if none is provided.
 
 | 
+
+.. _sdk_qtquick_particles_turbulence_strength-prop:
 
 +--------------------------------------------------------------------------+
 |        \ strength : real                                                 |

@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_sensor:
+QtSensors Sensor
+================
+
 The Sensor element serves as a base type for sensors.
 
 +--------------------------------------+--------------------------------------+
@@ -5,92 +9,83 @@ The Sensor element serves as a base type for sensors.
 +--------------------------------------+--------------------------------------+
 | Since:                               | QtSensors 5.0                        |
 +--------------------------------------+--------------------------------------+
-| Inherited By:                        | `Accelerometer </sdk/apps/qml/QtSens |
-|                                      | ors/Accelerometer/>`__,              |
-|                                      | `Altimeter </sdk/apps/qml/QtSensors/ |
-|                                      | Altimeter/>`__,                      |
-|                                      | `AmbientLightSensor </sdk/apps/qml/Q |
-|                                      | tSensors/AmbientLightSensor/>`__,    |
-|                                      | `AmbientTemperatureSensor </sdk/apps |
-|                                      | /qml/QtSensors/AmbientTemperatureSen |
-|                                      | sor/>`__,                            |
-|                                      | `Compass </sdk/apps/qml/QtSensors/Co |
-|                                      | mpass/>`__,                          |
-|                                      | `DistanceSensor </sdk/apps/qml/QtSen |
-|                                      | sors/DistanceSensor/>`__,            |
-|                                      | `Gyroscope </sdk/apps/qml/QtSensors/ |
-|                                      | Gyroscope/>`__,                      |
-|                                      | `HolsterSensor </sdk/apps/qml/QtSens |
-|                                      | ors/HolsterSensor/>`__,              |
-|                                      | `IRProximitySensor </sdk/apps/qml/Qt |
-|                                      | Sensors/IRProximitySensor/>`__,      |
-|                                      | `LightSensor </sdk/apps/qml/QtSensor |
-|                                      | s/LightSensor/>`__,                  |
-|                                      | `Magnetometer </sdk/apps/qml/QtSenso |
-|                                      | rs/Magnetometer/>`__,                |
-|                                      | `OrientationSensor </sdk/apps/qml/Qt |
-|                                      | Sensors/OrientationSensor/>`__,      |
-|                                      | `PressureSensor </sdk/apps/qml/QtSen |
-|                                      | sors/PressureSensor/>`__,            |
-|                                      | `ProximitySensor </sdk/apps/qml/QtSe |
-|                                      | nsors/ProximitySensor/>`__,          |
-|                                      | `RotationSensor </sdk/apps/qml/QtSen |
-|                                      | sors/RotationSensor/>`__,            |
-|                                      | `TapSensor </sdk/apps/qml/QtSensors/ |
-|                                      | TapSensor/>`__,                      |
+| Inherited By:                        | :ref:`Accelerometer <sdk_qtsensors_accele |
+|                                      | rometer>`_ ,                         |
+|                                      | :ref:`Altimeter <sdk_qtsensors_altimeter> |
+|                                      | `_ ,                                 |
+|                                      | :ref:`AmbientLightSensor <sdk_qtsensors_a |
+|                                      | mbientlightsensor>`_ ,               |
+|                                      | :ref:`AmbientTemperatureSensor <sdk_qtsen |
+|                                      | sors_ambienttemperaturesensor>`_ ,   |
+|                                      | :ref:`Compass <sdk_qtsensors_compass>`, |
+|                                      | :ref:`DistanceSensor <sdk_qtsensors_dista |
+|                                      | ncesensor>`_ ,                       |
+|                                      | :ref:`Gyroscope <sdk_qtsensors_gyroscope> |
+|                                      | `_ ,                                 |
+|                                      | :ref:`HolsterSensor <sdk_qtsensors_holste |
+|                                      | rsensor>`_ ,                         |
+|                                      | :ref:`IRProximitySensor <sdk_qtsensors_ir |
+|                                      | proximitysensor>`_ ,                 |
+|                                      | :ref:`LightSensor <sdk_qtsensors_lightsen |
+|                                      | sor>`_ ,                             |
+|                                      | :ref:`Magnetometer <sdk_qtsensors_magneto |
+|                                      | meter>`_ ,                           |
+|                                      | :ref:`OrientationSensor <sdk_qtsensors_or |
+|                                      | ientationsensor>`_ ,                 |
+|                                      | :ref:`PressureSensor <sdk_qtsensors_press |
+|                                      | uresensor>`_ ,                       |
+|                                      | :ref:`ProximitySensor <sdk_qtsensors_prox |
+|                                      | imitysensor>`_ ,                     |
+|                                      | :ref:`RotationSensor <sdk_qtsensors_rotat |
+|                                      | ionsensor>`_ ,                       |
+|                                      | :ref:`TapSensor <sdk_qtsensors_tapsensor> |
+|                                      | `_ ,                                 |
 |                                      | and                                  |
-|                                      | `TiltSensor </sdk/apps/qml/QtSensors |
-|                                      | /TiltSensor/>`__.                    |
+|                                      | :ref:`TiltSensor <sdk_qtsensors_tiltsenso |
+|                                      | r>`_ .                               |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`active </sdk/apps/qml/QtSensors/Sensor#active-prop>`__**** :
-   bool
--  ****`alwaysOn </sdk/apps/qml/QtSensors/Sensor#alwaysOn-prop>`__**** :
-   bool
--  ****`availableDataRates </sdk/apps/qml/QtSensors/Sensor#availableDataRates-prop>`__****
+-  :ref:`active <sdk_qtsensors_sensor_active-prop>` : bool
+-  :ref:`alwaysOn <sdk_qtsensors_sensor_alwaysOn-prop>` : bool
+-  :ref:`availableDataRates <sdk_qtsensors_sensor_availableDataRates-prop>`
    : list<Range>
--  ****`axesOrientationMode </sdk/apps/qml/QtSensors/Sensor#axesOrientationMode-prop>`__****
+-  :ref:`axesOrientationMode <sdk_qtsensors_sensor_axesOrientationMode-prop>`
    : Sensor::AxesOrientationMode
--  ****`bufferSize </sdk/apps/qml/QtSensors/Sensor#bufferSize-prop>`__****
-   : int
--  ****`busy </sdk/apps/qml/QtSensors/Sensor#busy-prop>`__**** : bool
--  ****`connectedToBackend </sdk/apps/qml/QtSensors/Sensor#connectedToBackend-prop>`__****
+-  :ref:`bufferSize <sdk_qtsensors_sensor_bufferSize-prop>` : int
+-  :ref:`busy <sdk_qtsensors_sensor_busy-prop>` : bool
+-  :ref:`connectedToBackend <sdk_qtsensors_sensor_connectedToBackend-prop>`
    : bool
--  ****`currentOrientation </sdk/apps/qml/QtSensors/Sensor#currentOrientation-prop>`__****
+-  :ref:`currentOrientation <sdk_qtsensors_sensor_currentOrientation-prop>`
    : int
--  ****`dataRate </sdk/apps/qml/QtSensors/Sensor#dataRate-prop>`__**** :
+-  :ref:`dataRate <sdk_qtsensors_sensor_dataRate-prop>` : int
+-  :ref:`description <sdk_qtsensors_sensor_description-prop>` :
+   string
+-  :ref:`efficientBufferSize <sdk_qtsensors_sensor_efficientBufferSize-prop>`
+   : int
+-  :ref:`error <sdk_qtsensors_sensor_error-prop>` : int
+-  :ref:`identifier <sdk_qtsensors_sensor_identifier-prop>` :
+   string
+-  :ref:`maxBufferSize <sdk_qtsensors_sensor_maxBufferSize-prop>` :
    int
--  ****`description </sdk/apps/qml/QtSensors/Sensor#description-prop>`__****
-   : string
--  ****`efficientBufferSize </sdk/apps/qml/QtSensors/Sensor#efficientBufferSize-prop>`__****
-   : int
--  ****`error </sdk/apps/qml/QtSensors/Sensor#error-prop>`__**** : int
--  ****`identifier </sdk/apps/qml/QtSensors/Sensor#identifier-prop>`__****
-   : string
--  ****`maxBufferSize </sdk/apps/qml/QtSensors/Sensor#maxBufferSize-prop>`__****
-   : int
--  ****`outputRange </sdk/apps/qml/QtSensors/Sensor#outputRange-prop>`__****
-   : int
--  ****`outputRanges </sdk/apps/qml/QtSensors/Sensor#outputRanges-prop>`__****
-   : list<OutputRange>
--  ****`reading </sdk/apps/qml/QtSensors/Sensor#reading-prop>`__**** :
+-  :ref:`outputRange <sdk_qtsensors_sensor_outputRange-prop>` : int
+-  :ref:`outputRanges <sdk_qtsensors_sensor_outputRanges-prop>` :
+   list<OutputRange>
+-  :ref:`reading <sdk_qtsensors_sensor_reading-prop>` :
    SensorReading
--  ****`skipDuplicates </sdk/apps/qml/QtSensors/Sensor#skipDuplicates-prop>`__****
+-  :ref:`skipDuplicates <sdk_qtsensors_sensor_skipDuplicates-prop>`
    : bool
--  ****`type </sdk/apps/qml/QtSensors/Sensor#type-prop>`__**** : string
--  ****`userOrientation </sdk/apps/qml/QtSensors/Sensor#userOrientation-prop>`__****
+-  :ref:`type <sdk_qtsensors_sensor_type-prop>` : string
+-  :ref:`userOrientation <sdk_qtsensors_sensor_userOrientation-prop>`
    : int
 
 Methods
 -------
 
--  bool
-   ****`start </sdk/apps/qml/QtSensors/Sensor#start-method>`__****\ ()
--  bool
-   ****`stop </sdk/apps/qml/QtSensors/Sensor#stop-method>`__****\ ()
+-  bool :ref:`start <sdk_qtsensors_sensor_start-method>`\ ()
+-  bool :ref:`stop <sdk_qtsensors_sensor_stop-method>`\ ()
 
 Detailed Description
 --------------------
@@ -106,6 +101,8 @@ sub-classes instead.
 Property Documentation
 ----------------------
 
+.. _sdk_qtsensors_sensor_active-prop:
+
 +--------------------------------------------------------------------------+
 |        \ active : bool                                                   |
 +--------------------------------------------------------------------------+
@@ -115,6 +112,8 @@ This property holds a value to indicate if the sensor is active.
 Please see QSensor::active for information about this property.
 
 | 
+
+.. _sdk_qtsensors_sensor_alwaysOn-prop:
 
 +--------------------------------------------------------------------------+
 |        \ alwaysOn : bool                                                 |
@@ -127,6 +126,8 @@ Please see QSensor::alwaysOn for information about this property.
 
 | 
 
+.. _sdk_qtsensors_sensor_availableDataRates-prop:
+
 +--------------------------------------------------------------------------+
 |        \ availableDataRates : list<Range>                                |
 +--------------------------------------------------------------------------+
@@ -137,6 +138,8 @@ Please see QSensor::availableDataRates for information about this
 property.
 
 | 
+
+.. _sdk_qtsensors_sensor_axesOrientationMode-prop:
 
 +--------------------------------------------------------------------------+
 |        \ axesOrientationMode : Sensor::AxesOrientationMode               |
@@ -152,6 +155,8 @@ This QML property was introduced in QtSensors 5.1.
 
 | 
 
+.. _sdk_qtsensors_sensor_bufferSize-prop:
+
 +--------------------------------------------------------------------------+
 |        \ bufferSize : int                                                |
 +--------------------------------------------------------------------------+
@@ -164,6 +169,8 @@ This QML property was introduced in QtSensors 5.1.
 
 | 
 
+.. _sdk_qtsensors_sensor_busy-prop:
+
 +--------------------------------------------------------------------------+
 |        \ busy : bool                                                     |
 +--------------------------------------------------------------------------+
@@ -173,6 +180,8 @@ This property holds a value to indicate if the sensor is busy.
 Please see QSensor::busy for information about this property.
 
 | 
+
+.. _sdk_qtsensors_sensor_connectedToBackend-prop:
 
 +--------------------------------------------------------------------------+
 |        \ connectedToBackend : bool                                       |
@@ -185,6 +194,8 @@ Please see QSensor::connectedToBackend for information about this
 property.
 
 | 
+
+.. _sdk_qtsensors_sensor_currentOrientation-prop:
 
 +--------------------------------------------------------------------------+
 |        \ currentOrientation : int                                        |
@@ -200,6 +211,8 @@ This QML property was introduced in QtSensors 5.1.
 
 | 
 
+.. _sdk_qtsensors_sensor_dataRate-prop:
+
 +--------------------------------------------------------------------------+
 |        \ dataRate : int                                                  |
 +--------------------------------------------------------------------------+
@@ -210,6 +223,8 @@ Please see QSensor::dataRate for information about this property.
 
 | 
 
+.. _sdk_qtsensors_sensor_description-prop:
+
 +--------------------------------------------------------------------------+
 |        \ description : string                                            |
 +--------------------------------------------------------------------------+
@@ -217,6 +232,8 @@ Please see QSensor::dataRate for information about this property.
 This property holds a descriptive string for the sensor.
 
 | 
+
+.. _sdk_qtsensors_sensor_efficientBufferSize-prop:
 
 +--------------------------------------------------------------------------+
 |        \ efficientBufferSize : int                                       |
@@ -231,6 +248,8 @@ This QML property was introduced in QtSensors 5.1.
 
 | 
 
+.. _sdk_qtsensors_sensor_error-prop:
+
 +--------------------------------------------------------------------------+
 |        \ error : int                                                     |
 +--------------------------------------------------------------------------+
@@ -238,6 +257,8 @@ This QML property was introduced in QtSensors 5.1.
 This property holds the last error code set on the sensor.
 
 | 
+
+.. _sdk_qtsensors_sensor_identifier-prop:
 
 +--------------------------------------------------------------------------+
 |        \ identifier : string                                             |
@@ -248,6 +269,8 @@ This property holds the backend identifier for the sensor.
 Please see QSensor::identifier for information about this property.
 
 | 
+
+.. _sdk_qtsensors_sensor_maxBufferSize-prop:
 
 +--------------------------------------------------------------------------+
 |        \ maxBufferSize : int                                             |
@@ -261,6 +284,8 @@ This QML property was introduced in QtSensors 5.1.
 
 | 
 
+.. _sdk_qtsensors_sensor_outputRange-prop:
+
 +--------------------------------------------------------------------------+
 |        \ outputRange : int                                               |
 +--------------------------------------------------------------------------+
@@ -270,6 +295,8 @@ This property holds the output range in use by the sensor.
 Please see QSensor::outputRange for information about this property.
 
 | 
+
+.. _sdk_qtsensors_sensor_outputRanges-prop:
 
 +--------------------------------------------------------------------------+
 |        \ outputRanges : list<OutputRange>                                |
@@ -281,9 +308,10 @@ Please see QSensor::outputRanges for information about this property.
 
 | 
 
+.. _sdk_qtsensors_sensor_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ reading :                                                       |
-| `SensorReading </sdk/apps/qml/QtSensors/SensorReading/>`__               |
+| :ref:` <>`\ reading : `SensorReading <sdk_qtsensors_sensorreading>`    |
 +--------------------------------------------------------------------------+
 
 This property holds the reading class.
@@ -293,6 +321,8 @@ Please see QSensor::reading for information about this property.
 **See also** QML Reading types.
 
 | 
+
+.. _sdk_qtsensors_sensor_skipDuplicates-prop:
 
 +--------------------------------------------------------------------------+
 |        \ skipDuplicates : bool                                           |
@@ -307,6 +337,8 @@ This QML property was introduced in QtSensors 5.1.
 
 | 
 
+.. _sdk_qtsensors_sensor_type-prop:
+
 +--------------------------------------------------------------------------+
 |        \ type : string                                                   |
 +--------------------------------------------------------------------------+
@@ -314,6 +346,8 @@ This QML property was introduced in QtSensors 5.1.
 This property holds the type of the sensor.
 
 | 
+
+.. _sdk_qtsensors_sensor_userOrientation-method:
 
 +--------------------------------------------------------------------------+
 |        \ userOrientation : int                                           |
@@ -331,6 +365,8 @@ This QML property was introduced in QtSensors 5.1.
 Method Documentation
 --------------------
 
+.. _sdk_qtsensors_sensor_bool start-method:
+
 +--------------------------------------------------------------------------+
 |        \ bool start()                                                    |
 +--------------------------------------------------------------------------+
@@ -341,6 +377,8 @@ started, false otherwise.
 Please see QSensor::start() for information.
 
 | 
+
+.. _sdk_qtsensors_sensor_bool stop-method:
 
 +--------------------------------------------------------------------------+
 |        \ bool stop()                                                     |

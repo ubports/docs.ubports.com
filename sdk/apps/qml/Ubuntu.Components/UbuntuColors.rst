@@ -1,10 +1,13 @@
+.. _sdk_ubuntu_components_ubuntucolors:
+Ubuntu.Components UbuntuColors
+==============================
+
 Singleton defining the Ubuntu color palette.
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import Ubuntu.Components 1.3         |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `QtObject </sdk/apps/qml/QtQml/QtObj |
-|                                      | ect/>`__                             |
+| Inherits:                            | :ref:`QtObject <sdk_qtqml_qtobject>` |
 +--------------------------------------+--------------------------------------+
 
 -  Obsolete members
@@ -12,30 +15,27 @@ Singleton defining the Ubuntu color palette.
 Properties
 ----------
 
--  ****`ash </sdk/apps/qml/Ubuntu.Components/UbuntuColors#ash-prop>`__****
+-  :ref:`ash <sdk_ubuntu_components_ubuntucolors_ash-prop>` : color
+-  :ref:`blue <sdk_ubuntu_components_ubuntucolors_blue-prop>` :
+   color
+-  :ref:`graphite <sdk_ubuntu_components_ubuntucolors_graphite-prop>`
    : color
--  ****`blue </sdk/apps/qml/Ubuntu.Components/UbuntuColors#blue-prop>`__****
+-  :ref:`green <sdk_ubuntu_components_ubuntucolors_green-prop>` :
+   color
+-  :ref:`inkstone <sdk_ubuntu_components_ubuntucolors_inkstone-prop>`
    : color
--  ****`graphite </sdk/apps/qml/Ubuntu.Components/UbuntuColors#graphite-prop>`__****
+-  :ref:`jet <sdk_ubuntu_components_ubuntucolors_jet-prop>` : color
+-  :ref:`orange <sdk_ubuntu_components_ubuntucolors_orange-prop>` :
+   color
+-  :ref:`porcelain <sdk_ubuntu_components_ubuntucolors_porcelain-prop>`
    : color
--  ****`green </sdk/apps/qml/Ubuntu.Components/UbuntuColors#green-prop>`__****
-   : color
--  ****`inkstone </sdk/apps/qml/Ubuntu.Components/UbuntuColors#inkstone-prop>`__****
-   : color
--  ****`jet </sdk/apps/qml/Ubuntu.Components/UbuntuColors#jet-prop>`__****
-   : color
--  ****`orange </sdk/apps/qml/Ubuntu.Components/UbuntuColors#orange-prop>`__****
-   : color
--  ****`porcelain </sdk/apps/qml/Ubuntu.Components/UbuntuColors#porcelain-prop>`__****
-   : color
--  ****`purple </sdk/apps/qml/Ubuntu.Components/UbuntuColors#purple-prop>`__****
-   : color
--  ****`red </sdk/apps/qml/Ubuntu.Components/UbuntuColors#red-prop>`__****
-   : color
--  ****`silk </sdk/apps/qml/Ubuntu.Components/UbuntuColors#silk-prop>`__****
-   : color
--  ****`slate </sdk/apps/qml/Ubuntu.Components/UbuntuColors#slate-prop>`__****
-   : color
+-  :ref:`purple <sdk_ubuntu_components_ubuntucolors_purple-prop>` :
+   color
+-  :ref:`red <sdk_ubuntu_components_ubuntucolors_red-prop>` : color
+-  :ref:`silk <sdk_ubuntu_components_ubuntucolors_silk-prop>` :
+   color
+-  :ref:`slate <sdk_ubuntu_components_ubuntucolors_slate-prop>` :
+   color
 
 Detailed Description
 --------------------
@@ -43,7 +43,7 @@ Detailed Description
 Each color of the Ubuntu color palette is accesible from it. For more
 information on how to appropriately use the colors according to the
 context, please refer to the `Ubuntu brand
-guidelines <http://design.ubuntu.com/brand/colour-palette>`__.
+guidelines <http://design.ubuntu.com/brand/colour-palette>`_ .
 
 Example of use:
 
@@ -56,6 +56,8 @@ Example of use:
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_ubuntucolors_[read-only] ash-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [read-only] ash : color                                         |
 +--------------------------------------------------------------------------+
@@ -65,6 +67,8 @@ Ash. Recommended for subtitles and other tertiary content.
 This QML property was introduced in Ubuntu.Components 1.3.
 
 | 
+
+.. _sdk_ubuntu_components_ubuntucolors_[read-only] blue-prop:
 
 +--------------------------------------------------------------------------+
 |        \ [read-only] blue : color                                        |
@@ -76,6 +80,8 @@ This QML property was introduced in Ubuntu.Components 1.1.
 
 | 
 
+.. _sdk_ubuntu_components_ubuntucolors_[read-only] graphite-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [read-only] graphite : color                                    |
 +--------------------------------------------------------------------------+
@@ -85,6 +91,8 @@ Graphite. Recommended for coloring dark themes' background.
 This QML property was introduced in Ubuntu.Components 1.3.
 
 | 
+
+.. _sdk_ubuntu_components_ubuntucolors_[read-only] green-prop:
 
 +--------------------------------------------------------------------------+
 |        \ [read-only] green : color                                       |
@@ -96,6 +104,8 @@ This QML property was introduced in Ubuntu.Components 1.1.
 
 | 
 
+.. _sdk_ubuntu_components_ubuntucolors_[read-only] inkstone-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [read-only] inkstone : color                                    |
 +--------------------------------------------------------------------------+
@@ -105,6 +115,8 @@ Inkstone. Recommended for foreground colors in dark themes.
 This QML property was introduced in Ubuntu.Components 1.3.
 
 | 
+
+.. _sdk_ubuntu_components_ubuntucolors_[read-only] jet-prop:
 
 +--------------------------------------------------------------------------+
 |        \ [read-only] jet : color                                         |
@@ -116,6 +128,8 @@ This QML property was introduced in Ubuntu.Components 1.3.
 
 | 
 
+.. _sdk_ubuntu_components_ubuntucolors_[read-only] orange-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [read-only] orange : color                                      |
 +--------------------------------------------------------------------------+
@@ -124,6 +138,8 @@ Orange. Recommended for branded elements, display progress and
 intensity, textual links on light backgrounds.
 
 | 
+
+.. _sdk_ubuntu_components_ubuntucolors_[read-only] porcelain-prop:
 
 +--------------------------------------------------------------------------+
 |        \ [read-only] porcelain : color                                   |
@@ -135,6 +151,8 @@ This QML property was introduced in Ubuntu.Components 1.3.
 
 | 
 
+.. _sdk_ubuntu_components_ubuntucolors_[read-only] purple-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [read-only] purple : color                                      |
 +--------------------------------------------------------------------------+
@@ -144,6 +162,8 @@ Purple. Recommended for proper nouns in list items.
 This QML property was introduced in Ubuntu.Components 1.1.
 
 | 
+
+.. _sdk_ubuntu_components_ubuntucolors_[read-only] red-prop:
 
 +--------------------------------------------------------------------------+
 |        \ [read-only] red : color                                         |
@@ -156,6 +176,8 @@ This QML property was introduced in Ubuntu.Components 1.1.
 
 | 
 
+.. _sdk_ubuntu_components_ubuntucolors_[read-only] silk-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [read-only] silk : color                                        |
 +--------------------------------------------------------------------------+
@@ -165,6 +187,8 @@ Silk. Recommended for neutral action buttons and secondary text.
 This QML property was introduced in Ubuntu.Components 1.3.
 
 | 
+
+.. _sdk_ubuntu_components_ubuntucolors_[read-only] slate-prop:
 
 +--------------------------------------------------------------------------+
 |        \ [read-only] slate : color                                       |

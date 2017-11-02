@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_pagecolumnslayout:
+Ubuntu.Components PageColumnsLayout
+===================================
+
 Component configuring a layout in an AdaptivePageLayout component.
 
 +--------------------------------------+--------------------------------------+
@@ -5,16 +9,15 @@ Component configuring a layout in an AdaptivePageLayout component.
 +--------------------------------------+--------------------------------------+
 | Since:                               | Ubuntu.Components 1.3                |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `QtObject </sdk/apps/qml/QtQml/QtObj |
-|                                      | ect/>`__                             |
+| Inherits:                            | :ref:`QtObject <sdk_qtqml_qtobject>` |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`data </sdk/apps/qml/Ubuntu.Components/PageColumnsLayout#data-prop>`__****
+-  :ref:`data <sdk_ubuntu_components_pagecolumnslayout_data-prop>`
    : list<PageColumn>
--  ****`when </sdk/apps/qml/Ubuntu.Components/PageColumnsLayout#when-prop>`__****
+-  :ref:`when <sdk_ubuntu_components_pagecolumnslayout_when-prop>`
    : bool
 
 Detailed Description
@@ -22,12 +25,12 @@ Detailed Description
 
 The component specifies the column configuration of a specific layout.
 The layout will have as many columns as many
-`PageColumn </sdk/apps/qml/Ubuntu.Components/PageColumn/>`__ elements
-will be declared. The layout will be activated when the
-`when </sdk/apps/qml/Ubuntu.Components/PageColumnsLayout#when-prop>`__
-property evaluates to ``true``. There can be many layouts evaluated to
-true, only the first one evaluated to true in the
-`AdaptivePageLayout::layouts </sdk/apps/qml/Ubuntu.Components/AdaptivePageLayout#layouts-prop>`__
+:ref:`PageColumn <sdk_ubuntu_components_pagecolumn>` elements will be
+declared. The layout will be activated when the
+:ref:`when <sdk_ubuntu_components_pagecolumnslayout#when-prop>` property
+evaluates to ``true``. There can be many layouts evaluated to true, only
+the first one evaluated to true in the
+:ref:`AdaptivePageLayout::layouts <sdk_ubuntu_components_adaptivepagelayout#layouts-prop>`
 list will be activated.
 
 .. code:: qml
@@ -91,28 +94,31 @@ In the example above the second PageColumnLayout's condition is always
 set to true, which means that that the layout will be always active
 unless the first layout's condition evaluates to true. The layout
 overrides the single column minimumWidth default value. Note that
-`PageColumn::fillWidth </sdk/apps/qml/Ubuntu.Components/PageColumn#fillWidth-prop>`__
+:ref:`PageColumn::fillWidth <sdk_ubuntu_components_pagecolumn#fillWidth-prop>`
 must be also set.
 
 **Note:** When none of the conditions is met, a single column layout
 will be used.
 
-**See also**
-`PageColumn </sdk/apps/qml/Ubuntu.Components/PageColumn/>`__.
+**See also** :ref:`PageColumn <sdk_ubuntu_components_pagecolumn>`.
 
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_pagecolumnslayout_data-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [default] data :                                                |
-| list<`PageColumn </sdk/apps/qml/Ubuntu.Components/PageColumn/>`__>       |
+| list<:ref:`PageColumn <sdk_ubuntu_components_pagecolumn>`>                  |
 +--------------------------------------------------------------------------+
 
 Default property holding the
-`PageColumn </sdk/apps/qml/Ubuntu.Components/PageColumn/>`__ elements
-configuring each column.
+:ref:`PageColumn <sdk_ubuntu_components_pagecolumn>` elements configuring
+each column.
 
 | 
+
+.. _sdk_ubuntu_components_pagecolumnslayout_when-prop:
 
 +--------------------------------------------------------------------------+
 |        \ when : bool                                                     |

@@ -1,3 +1,7 @@
+.. _sdk_qtquick_scale:
+QtQuick Scale
+=============
+
 Provides a way to scale an Item
 
 +---------------------+----------------------+
@@ -7,26 +11,23 @@ Provides a way to scale an Item
 Properties
 ----------
 
--  ****`origin </sdk/apps/qml/QtQuick/Scale#origin-prop>`__****
+-  :ref:`origin <sdk_qtquick_scale_origin-prop>`
 
-   -  ****`origin.x </sdk/apps/qml/QtQuick/Scale#origin.x-prop>`__**** :
-      real
-   -  ****`origin.y </sdk/apps/qml/QtQuick/Scale#origin.y-prop>`__**** :
-      real
+   -  :ref:`origin.x <sdk_qtquick_scale_origin.x-prop>` : real
+   -  :ref:`origin.y <sdk_qtquick_scale_origin.y-prop>` : real
 
--  ****`xScale </sdk/apps/qml/QtQuick/Scale#xScale-prop>`__**** : real
--  ****`yScale </sdk/apps/qml/QtQuick/Scale#yScale-prop>`__**** : real
+-  :ref:`xScale <sdk_qtquick_scale_xScale-prop>` : real
+-  :ref:`yScale <sdk_qtquick_scale_yScale-prop>` : real
 
 Detailed Description
 --------------------
 
-The Scale type provides a way to scale an
-`Item </sdk/apps/qml/QtQuick/Item/>`__ through a scale-type transform.
+The Scale type provides a way to scale an :ref:`Item <sdk_qtquick_item>`
+through a scale-type transform.
 
 It allows different scaling values for the x and y axes, and allows the
 scale to be relative to an arbitrary point. This gives more control over
-item scaling than the `scale </sdk/apps/qml/QtQuick/Item#scale-prop>`__
-property.
+item scaling than the :ref:`scale <sdk_qtquick_item#scale-prop>` property.
 
 The following example scales the X axis of the Rectangle, relative to
 its interior point (25, 25):
@@ -39,15 +40,18 @@ its interior point (25, 25):
         transform: Scale { origin.x: 25; origin.y: 25; xScale: 3}
     }
 
-**See also** `Rotation </sdk/apps/qml/QtQuick/Rotation/>`__ and
-`Translate </sdk/apps/qml/QtQuick/Translate/>`__.
+**See also** :ref:`Rotation <sdk_qtquick_rotation>` and
+:ref:`Translate <sdk_qtquick_translate>`.
 
 Property Documentation
 ----------------------
 
+.. _sdk_qtquick_scale_**origin group**-prop:
+
 +--------------------------------------------------------------------------+
 |        \ **origin group**                                                |
 +==========================================================================+
+.. _sdk_qtquick_scale_origin.y-prop:
 |        \ origin.x : real                                                 |
 +--------------------------------------------------------------------------+
 |        \ origin.y : real                                                 |
@@ -61,6 +65,8 @@ The default value of the origin is (0, 0).
 
 | 
 
+.. _sdk_qtquick_scale_xScale-prop:
+
 +--------------------------------------------------------------------------+
 |        \ xScale : real                                                   |
 +--------------------------------------------------------------------------+
@@ -70,6 +76,8 @@ The scaling factor for the X axis.
 The default value is 1.0.
 
 | 
+
+.. _sdk_qtquick_scale_yScale-prop:
 
 +--------------------------------------------------------------------------+
 |        \ yScale : real                                                   |

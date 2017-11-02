@@ -1,3 +1,7 @@
+.. _sdk_qtcontacts_extendeddetail:
+QtContacts ExtendedDetail
+=========================
+
 The ExtendedDetail element contains an extended detail of a contact.
 
 +---------------------+-------------------------+
@@ -7,10 +11,8 @@ The ExtendedDetail element contains an extended detail of a contact.
 Properties
 ----------
 
--  ****`data </sdk/apps/qml/QtContacts/ExtendedDetail#data-prop>`__****
-   : variant
--  ****`name </sdk/apps/qml/QtContacts/ExtendedDetail#name-prop>`__****
-   : string
+-  :ref:`data <sdk_qtcontacts_extendeddetail_data-prop>` : variant
+-  :ref:`name <sdk_qtcontacts_extendeddetail_name-prop>` : string
 
 Detailed Description
 --------------------
@@ -24,11 +26,11 @@ recommended to convert dates to strings before storing them to extended
 details. For example, javascript functions Date.toISOString() and
 Date.parse() can be used for the conversion.
 
-`ExtendedDetail </sdk/apps/qml/QtContacts/ExtendedDetail/>`__ element
-contains the following field types:
+:ref:`ExtendedDetail <sdk_qtcontacts_extendeddetail>` element contains the
+following field types:
 
--  `ExtendedDetail </sdk/apps/qml/QtContacts/ExtendedDetail/>`__.Name
--  `ExtendedDetail </sdk/apps/qml/QtContacts/ExtendedDetail/>`__.Data
+-  :ref:`ExtendedDetail <sdk_qtcontacts_extendeddetail>`.Name
+-  :ref:`ExtendedDetail <sdk_qtcontacts_extendeddetail>`.Data
 
 This element is part of the **QtContacts** module.
 
@@ -37,6 +39,8 @@ This element is part of the **QtContacts** module.
 Property Documentation
 ----------------------
 
+.. _sdk_qtcontacts_extendeddetail_data-prop:
+
 +--------------------------------------------------------------------------+
 |        \ data : variant                                                  |
 +--------------------------------------------------------------------------+
@@ -44,6 +48,8 @@ Property Documentation
 This property holds the data of the extended detail.
 
 | 
+
+.. _sdk_qtcontacts_extendeddetail_name-prop:
 
 +--------------------------------------------------------------------------+
 |        \ name : string                                                   |

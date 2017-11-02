@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_splitviewlayout:
+Ubuntu.Components SplitViewLayout
+=================================
+
 Layout configuration for SplitView.
 
 +---------------------+------------+
@@ -7,25 +11,27 @@ Layout configuration for SplitView.
 Properties
 ----------
 
--  ****`columns </sdk/apps/qml/Ubuntu.Components/SplitViewLayout#columns-prop>`__****
+-  :ref:`columns <sdk_ubuntu_components_splitviewlayout_columns-prop>`
    : list<ViewColumn>
--  ****`when </sdk/apps/qml/Ubuntu.Components/SplitViewLayout#when-prop>`__****
-   : bool
+-  :ref:`when <sdk_ubuntu_components_splitviewlayout_when-prop>` :
+   bool
 
 Detailed Description
 --------------------
 
-`SplitViewLayout </sdk/apps/qml/Ubuntu.Components/SplitViewLayout/>`__
-defines a layout configuration and the condition when the layout is
-expected to be applied. In case multiple layout conditions evaluate to
-true, the first one in the list will be activated.
+:ref:`SplitViewLayout <sdk_ubuntu_components_splitviewlayout>` defines a
+layout configuration and the condition when the layout is expected to be
+applied. In case multiple layout conditions evaluate to true, the first
+one in the list will be activated.
 
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_splitviewlayout_columns-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [default] columns :                                             |
-| list<`ViewColumn </sdk/apps/qml/Ubuntu.Components/ViewColumn/>`__>       |
+| list<:ref:`ViewColumn <sdk_ubuntu_components_viewcolumn>`>                  |
 +--------------------------------------------------------------------------+
 
 The property holds the column configurations for the layout. If the view
@@ -35,6 +41,8 @@ hidden column sizes may change, therefore size-sensitive content must be
 aware of this.
 
 | 
+
+.. _sdk_ubuntu_components_splitviewlayout_when-prop:
 
 +--------------------------------------------------------------------------+
 |        \ when : bool                                                     |

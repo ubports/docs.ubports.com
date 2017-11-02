@@ -1,3 +1,7 @@
+.. _sdk_u1db_query:
+U1db Query
+==========
+
 Query filters documents based on the query and index.
 
 +---------------------+-----------------+
@@ -9,12 +13,10 @@ Query filters documents based on the query and index.
 Properties
 ----------
 
--  ****`documents </sdk/apps/qml/U1db/Query#documents-prop>`__**** :
-   list<string>
--  ****`index </sdk/apps/qml/U1db/Query#index-prop>`__**** : Index
--  ****`query </sdk/apps/qml/U1db/Query#query-prop>`__**** : Variant
--  ****`results </sdk/apps/qml/U1db/Query#results-prop>`__**** :
-   list<Variant>
+-  :ref:`documents <sdk_u1db_query_documents-prop>` : list<string>
+-  :ref:`index <sdk_u1db_query_index-prop>` : Index
+-  :ref:`query <sdk_u1db_query_query-prop>` : Variant
+-  :ref:`results <sdk_u1db_query_results-prop>` : list<Variant>
 
 Detailed Description
 --------------------
@@ -38,10 +40,12 @@ In a ListView the Query can be used as a model.
         }
     }
 
-**See also** `Index </sdk/apps/qml/U1db/Index/>`__.
+**See also** :ref:`Index <sdk_u1db_index>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_u1db_query_documents-prop:
 
 +--------------------------------------------------------------------------+
 |        \ documents : list<string>                                        |
@@ -51,8 +55,10 @@ The docId's of all matched documents.
 
 | 
 
+.. _sdk_u1db_query_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ index : `Index </sdk/apps/qml/U1db/Index/>`__                   |
+| :ref:` <>`\ index : `Index <sdk_u1db_index>`                           |
 +--------------------------------------------------------------------------+
 
 Sets the Index to use. *index* must have a valid name and index
@@ -60,6 +66,8 @@ expressions. If no query is set, the default is all results of the
 index.
 
 | 
+
+.. _sdk_u1db_query_query-prop:
 
 +--------------------------------------------------------------------------+
 |        \ query : Variant                                                 |
@@ -69,6 +77,8 @@ A query in one of the allowed forms: 'value', ['value'] or
 [{'sub-field': 'value'}]. The default is equivalent to '\*'.
 
 | 
+
+.. _sdk_u1db_query_results-prop:
 
 +--------------------------------------------------------------------------+
 |        \ results : list<Variant>                                         |

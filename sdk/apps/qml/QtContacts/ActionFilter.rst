@@ -1,3 +1,7 @@
+.. _sdk_qtcontacts_actionfilter:
+QtContacts ActionFilter
+=======================
+
 The ActionFilter element provides a filter based around an action
 availability criterion.
 
@@ -8,7 +12,7 @@ availability criterion.
 Properties
 ----------
 
--  ****`actionName </sdk/apps/qml/QtContacts/ActionFilter#actionName-prop>`__****
+-  :ref:`actionName <sdk_qtcontacts_actionfilter_actionName-prop>`
    : string
 
 Detailed Description
@@ -20,6 +24,8 @@ This element is part of the **QtContacts** module.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtcontacts_actionfilter_actionName-prop:
 
 +--------------------------------------------------------------------------+
 |        \ actionName : string                                             |

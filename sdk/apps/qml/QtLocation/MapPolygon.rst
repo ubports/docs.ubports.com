@@ -1,3 +1,7 @@
+.. _sdk_qtlocation_mappolygon:
+QtLocation MapPolygon
+=====================
+
 The MapPolygon type displays a polygon on a Map
 
 +---------------------+-------------------------+
@@ -9,37 +13,36 @@ The MapPolygon type displays a polygon on a Map
 Properties
 ----------
 
--  ****`border </sdk/apps/qml/QtLocation/MapPolygon#border-prop>`__****
+-  :ref:`border <sdk_qtlocation_mappolygon_border-prop>`
 
-   -  ****`border.width </sdk/apps/qml/QtLocation/MapPolygon#border.width-prop>`__****
+   -  :ref:`border.width <sdk_qtlocation_mappolygon_border.width-prop>`
       : int
-   -  ****`border.color </sdk/apps/qml/QtLocation/MapPolygon#border.color-prop>`__****
+   -  :ref:`border.color <sdk_qtlocation_mappolygon_border.color-prop>`
       : color
 
--  ****`color </sdk/apps/qml/QtLocation/MapPolygon#color-prop>`__**** :
-   color
--  ****`path </sdk/apps/qml/QtLocation/MapPolygon#path-prop>`__**** :
+-  :ref:`color <sdk_qtlocation_mappolygon_color-prop>` : color
+-  :ref:`path <sdk_qtlocation_mappolygon_path-prop>` :
    list<coordinate>
 
 Methods
 -------
 
--  ****`addCoordinate </sdk/apps/qml/QtLocation/MapPolygon#addCoordinate-method>`__****\ (coordinate)
--  ****`removeCoordinate </sdk/apps/qml/QtLocation/MapPolygon#removeCoordinate-method>`__****\ (coordinate)
+-  :ref:`addCoordinate <sdk_qtlocation_mappolygon_addCoordinate-method>`\ (coordinate)
+-  :ref:`removeCoordinate <sdk_qtlocation_mappolygon_removeCoordinate-method>`\ (coordinate)
 
 Detailed Description
 --------------------
 
-The `MapPolygon </sdk/apps/qml/QtLocation/MapPolygon/>`__ type displays
-a polygon on a Map, specified in terms of an ordered list of
-coordinates. For best appearance and results, polygons should be simple
-(not self-intersecting).
+The :ref:`MapPolygon <sdk_qtlocation_mappolygon>` type displays a polygon
+on a Map, specified in terms of an ordered list of coordinates. For best
+appearance and results, polygons should be simple (not
+self-intersecting).
 
 The coordinates on the path cannot be directly changed after being added
 to the Polygon. Instead, copy the
-`path </sdk/apps/qml/QtLocation/MapPolygon#path-prop>`__ into a var,
-modify the copy and reassign the copy back to the
-`path </sdk/apps/qml/QtLocation/MapPolygon#path-prop>`__.
+:ref:`path <sdk_qtlocation_mappolygon#path-prop>` into a var, modify the
+copy and reassign the copy back to the
+:ref:`path <sdk_qtlocation_mappolygon#path-prop>`.
 
 .. code:: cpp
 
@@ -48,27 +51,25 @@ modify the copy and reassign the copy back to the
     mapPolygon.path = path;
 
 Coordinates can also be added and removed at any time using the
-`addCoordinate </sdk/apps/qml/QtLocation/MapPolygon#addCoordinate-method>`__
-and
-`removeCoordinate </sdk/apps/qml/QtLocation/MapPolygon#removeCoordinate-method>`__
+:ref:`addCoordinate <sdk_qtlocation_mappolygon#addCoordinate-method>` and
+:ref:`removeCoordinate <sdk_qtlocation_mappolygon#removeCoordinate-method>`
 methods.
 
 For drawing rectangles with "straight" edges (same latitude across one
 edge, same latitude across the other), the
-`MapRectangle </sdk/apps/qml/QtLocation/MapRectangle/>`__ type provides
-a simpler, two-point API.
+:ref:`MapRectangle <sdk_qtlocation_maprectangle>` type provides a simpler,
+two-point API.
 
 By default, the polygon is displayed as a 1 pixel black border with no
 fill. To change its appearance, use the
-`color </sdk/apps/qml/QtLocation/MapPolygon#color-prop>`__,
-`border.color </sdk/apps/qml/QtLocation/MapPolygon#border.color-prop>`__
-and
-`border.width </sdk/apps/qml/QtLocation/MapPolygon#border.width-prop>`__
+:ref:`color <sdk_qtlocation_mappolygon#color-prop>`,
+:ref:`border.color <sdk_qtlocation_mappolygon#border.color-prop>` and
+:ref:`border.width <sdk_qtlocation_mappolygon#border.width-prop>`
 properties.
 
 **Note:** Since MapPolygons are geographic items, dragging a
-`MapPolygon </sdk/apps/qml/QtLocation/MapPolygon/>`__ (through the use
-of MouseArea) causes its vertices to be recalculated in the geographic
+:ref:`MapPolygon <sdk_qtlocation_mappolygon>` (through the use of
+MouseArea) causes its vertices to be recalculated in the geographic
 coordinate space. The edges retain the same geographic lengths (latitude
 and longitude differences between the vertices), but they remain
 straight. Apparent stretching of the item occurs when dragged to a
@@ -84,19 +85,17 @@ the Polygon. There is an additional triangulation cost (approximately
 O(n log n)) which is currently paid with each frame, but in future may
 be paid only upon adding or removing points.
 
-Like the other map objects,
-`MapPolygon </sdk/apps/qml/QtLocation/MapPolygon/>`__ is normally drawn
-without a smooth appearance. Setting the opacity property will force the
-object to be blended, which decreases performance considerably depending
-on the hardware in use.
+Like the other map objects, :ref:`MapPolygon <sdk_qtlocation_mappolygon>`
+is normally drawn without a smooth appearance. Setting the opacity
+property will force the object to be blended, which decreases
+performance considerably depending on the hardware in use.
 
 Example Usage
 ~~~~~~~~~~~~~
 
-The following snippet shows a
-`MapPolygon </sdk/apps/qml/QtLocation/MapPolygon/>`__ being used to
-display a triangle, with three vertices near Brisbane, Australia. The
-triangle is filled in green, with a 1 pixel black border.
+The following snippet shows a :ref:`MapPolygon <sdk_qtlocation_mappolygon>`
+being used to display a triangle, with three vertices near Brisbane,
+Australia. The triangle is filled in green, with a 1 pixel black border.
 
 .. code:: cpp
 
@@ -116,9 +115,12 @@ triangle is filled in green, with a 1 pixel black border.
 Property Documentation
 ----------------------
 
+.. _sdk_qtlocation_mappolygon_**border group**-prop:
+
 +--------------------------------------------------------------------------+
 |        \ **border group**                                                |
 +==========================================================================+
+.. _sdk_qtlocation_mappolygon_border.color-prop:
 |        \ border.width : int                                              |
 +--------------------------------------------------------------------------+
 |        \ border.color : color                                            |
@@ -134,6 +136,8 @@ For no line, use a width of 0 or a transparent color.
 
 | 
 
+.. _sdk_qtlocation_mappolygon_color-prop:
+
 +--------------------------------------------------------------------------+
 |        \ color : color                                                   |
 +--------------------------------------------------------------------------+
@@ -144,6 +148,8 @@ The default value is transparent.
 
 | 
 
+.. _sdk_qtlocation_mappolygon_path-prop:
+
 +--------------------------------------------------------------------------+
 |        \ path : list<coordinate>                                         |
 +--------------------------------------------------------------------------+
@@ -152,14 +158,15 @@ This property holds the ordered list of coordinates which define the
 polygon.
 
 **See also**
-`addCoordinate </sdk/apps/qml/QtLocation/MapPolygon#addCoordinate-method>`__
-and
-`removeCoordinate </sdk/apps/qml/QtLocation/MapPolygon#removeCoordinate-method>`__.
+:ref:`addCoordinate <sdk_qtlocation_mappolygon#addCoordinate-method>` and
+:ref:`removeCoordinate <sdk_qtlocation_mappolygon#removeCoordinate-method>`.
 
 | 
 
 Method Documentation
 --------------------
+
+.. _sdk_qtlocation_mappolygon_addCoordinate-method:
 
 +--------------------------------------------------------------------------+
 |        \ addCoordinate(coordinate)                                       |
@@ -168,10 +175,12 @@ Method Documentation
 Adds a coordinate to the path.
 
 **See also**
-`removeCoordinate </sdk/apps/qml/QtLocation/MapPolygon#removeCoordinate-method>`__
-and `path </sdk/apps/qml/QtLocation/MapPolygon#path-prop>`__.
+:ref:`removeCoordinate <sdk_qtlocation_mappolygon#removeCoordinate-method>`
+and :ref:`path <sdk_qtlocation_mappolygon#path-prop>`.
 
 | 
+
+.. _sdk_qtlocation_mappolygon_removeCoordinate-method:
 
 +--------------------------------------------------------------------------+
 |        \ removeCoordinate(coordinate)                                    |
@@ -181,10 +190,10 @@ Removes a coordinate from the path. If there are multiple instances of
 the same coordinate, the one added last is removed.
 
 **See also**
-`addCoordinate </sdk/apps/qml/QtLocation/MapPolygon#addCoordinate-method>`__
-and `path </sdk/apps/qml/QtLocation/MapPolygon#path-prop>`__.
+:ref:`addCoordinate <sdk_qtlocation_mappolygon#addCoordinate-method>` and
+:ref:`path <sdk_qtlocation_mappolygon#path-prop>`.
 
 | 
 
-.. |image0| image:: /media/sdk/apps/qml/QtLocation/MapPolygon/images/sdk-mappolygon.png
+.. |image0| image:: /mediasdk_qtlocation_mappolygonimages/sdk-mappolygon.png
 

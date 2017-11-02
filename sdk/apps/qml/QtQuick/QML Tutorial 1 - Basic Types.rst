@@ -1,3 +1,7 @@
+.. _sdk_qtquick_qml_tutorial_1_-_basic_types:
+QtQuick QML Tutorial 1 - Basic Types
+====================================
+
 
 
 This first program is a very simple "Hello world" example that
@@ -32,8 +36,8 @@ Here is the QML code for the application:
 
 First, we need to import the types that we need for this example. Most
 QML files will import the built-in QML types (like
-`Rectangle </sdk/apps/qml/QtQuick/Rectangle/>`__,
-`Image </sdk/apps/qml/QtQuick/imageelements#image>`__, ...) that come
+:ref:`Rectangle <sdk_qtquick_rectangle>`,
+`Image </sdk/apps/qml/QtQuick/imageelements/#image>`_ , ...) that come
 with Qt, using:
 
 .. code:: qml
@@ -50,13 +54,13 @@ with Qt, using:
         width: 320; height: 480
         color: "lightgray"
 
-We declare a root object of type
-`Rectangle </sdk/apps/qml/QtQuick/Rectangle/>`__. It is one of the basic
-building blocks you can use to create an application in QML. We give it
-an ``id`` to be able to refer to it later. In this case, we call it
-"page". We also set the ``width``, ``height`` and ``color`` properties.
-The `Rectangle </sdk/apps/qml/QtQuick/Rectangle/>`__ type contains many
-other properties (such as ``x`` and ``y``), but these are left at their
+We declare a root object of type :ref:`Rectangle <sdk_qtquick_rectangle>`.
+It is one of the basic building blocks you can use to create an
+application in QML. We give it an ``id`` to be able to refer to it
+later. In this case, we call it "page". We also set the ``width``,
+``height`` and ``color`` properties. The
+:ref:`Rectangle <sdk_qtquick_rectangle>` type contains many other
+properties (such as ``x`` and ``y``), but these are left at their
 default values.
 
 .. rubric:: Text Type
@@ -72,8 +76,8 @@ default values.
             font.pointSize: 24; font.bold: true
         }
 
-We add a `Text </sdk/apps/qml/QtQuick/qtquick-releasenotes#text>`__ type
-as a child of the root Rectangle type that displays the text 'Hello
+We add a `Text </sdk/apps/qml/QtQuick/qtquick-releasenotes/#text>`_ 
+type as a child of the root Rectangle type that displays the text 'Hello
 world!'.
 
 The ``y`` property is used to position the text vertically at 30 pixels
@@ -82,7 +86,7 @@ from the top of its parent.
 The ``anchors.horizontalCenter`` property refers to the horizontal
 center of an type. In this case, we specify that our text type should be
 horizontally centered in the *page* element (see `Anchor-Based
-Layout </sdk/apps/qml/QtQuick/qtquick-positioning-anchors#anchor-layout>`__).
+Layout </sdk/apps/qml/QtQuick/qtquick-positioning-anchors/#anchor-layout>`_ ).
 
 The ``font.pointSize`` and ``font.bold`` properties are related to fonts
 and use the dot notation.
@@ -99,8 +103,8 @@ install location, you would type:
 
     qmlscene tutorials/helloworld/tutorial1.qml
 
-`QML Tutorial </sdk/apps/qml/QtQuick/qml-tutorial/>`__ `QML Tutorial 2 -
-QML Components </sdk/apps/qml/QtQuick/qml-tutorial2/>`__
+`QML Tutorial </sdk/apps/qml/QtQuick/qml-tutorial/>`_  `QML Tutorial 2 -
+QML Components </sdk/apps/qml/QtQuick/qml-tutorial2/>`_ 
 
 .. |image0| image:: /media/sdk/apps/qml/qml-tutorial1/images/declarative-tutorial1.png
 

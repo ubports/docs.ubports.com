@@ -1,3 +1,7 @@
+.. _sdk_qtcontacts_detailrangefilter:
+QtContacts DetailRangeFilter
+============================
+
 The DetailRangeFilter element provides a filter based around a detail
 value range criterion.
 
@@ -8,17 +12,14 @@ value range criterion.
 Properties
 ----------
 
--  ****`detail </sdk/apps/qml/QtContacts/DetailRangeFilter#detail-prop>`__****
+-  :ref:`detail <sdk_qtcontacts_detailrangefilter_detail-prop>` :
+   enumeration
+-  :ref:`field <sdk_qtcontacts_detailrangefilter_field-prop>` : int
+-  :ref:`matchFlags <sdk_qtcontacts_detailrangefilter_matchFlags-prop>`
    : enumeration
--  ****`field </sdk/apps/qml/QtContacts/DetailRangeFilter#field-prop>`__****
-   : int
--  ****`matchFlags </sdk/apps/qml/QtContacts/DetailRangeFilter#matchFlags-prop>`__****
-   : enumeration
--  ****`max </sdk/apps/qml/QtContacts/DetailRangeFilter#max-prop>`__****
-   : variant
--  ****`min </sdk/apps/qml/QtContacts/DetailRangeFilter#min-prop>`__****
-   : variant
--  ****`rangeFlags </sdk/apps/qml/QtContacts/DetailRangeFilter#rangeFlags-prop>`__****
+-  :ref:`max <sdk_qtcontacts_detailrangefilter_max-prop>` : variant
+-  :ref:`min <sdk_qtcontacts_detailrangefilter_min-prop>` : variant
+-  :ref:`rangeFlags <sdk_qtcontacts_detailrangefilter_rangeFlags-prop>`
    : enumeration
 
 Detailed Description
@@ -31,6 +32,8 @@ This element is part of the **QtContacts** module.
 Property Documentation
 ----------------------
 
+.. _sdk_qtcontacts_detailrangefilter_detail-prop:
+
 +--------------------------------------------------------------------------+
 |        \ detail : enumeration                                            |
 +--------------------------------------------------------------------------+
@@ -38,11 +41,12 @@ Property Documentation
 This property holds the detail type of which details will be matched to.
 
 **See also**
-`ContactDetail::type </sdk/apps/qml/QtContacts/ContactDetail#type-prop>`__
-and
-`DetailFilter::detail </sdk/apps/qml/QtContacts/DetailFilter#detail-prop>`__.
+:ref:`ContactDetail::type <sdk_qtcontacts_contactdetail#type-prop>` and
+:ref:`DetailFilter::detail <sdk_qtcontacts_detailfilter#detail-prop>`.
 
 | 
+
+.. _sdk_qtcontacts_detailrangefilter_field-prop:
 
 +--------------------------------------------------------------------------+
 |        \ field : int                                                     |
@@ -53,9 +57,11 @@ matched to. Detail field types are enumeration values defined in each
 detail elements.
 
 **See also**
-`DetailFilter::field </sdk/apps/qml/QtContacts/DetailFilter#field-prop>`__.
+:ref:`DetailFilter::field <sdk_qtcontacts_detailfilter#field-prop>`.
 
 | 
+
+.. _sdk_qtcontacts_detailrangefilter_matchFlags-prop:
 
 +--------------------------------------------------------------------------+
 |        \ matchFlags : enumeration                                        |
@@ -65,9 +71,11 @@ This property holds the match flags of the criterion, which define
 semantics such as case sensitivity, and exact matching.
 
 **See also**
-`DetailFilter::matchFlags </sdk/apps/qml/QtContacts/DetailFilter#matchFlags-prop>`__.
+:ref:`DetailFilter::matchFlags <sdk_qtcontacts_detailfilter#matchFlags-prop>`.
 
 | 
+
+.. _sdk_qtcontacts_detailrangefilter_max-prop:
 
 +--------------------------------------------------------------------------+
 |        \ max : variant                                                   |
@@ -78,6 +86,8 @@ default, there is no upper bound.
 
 | 
 
+.. _sdk_qtcontacts_detailrangefilter_min-prop:
+
 +--------------------------------------------------------------------------+
 |        \ min : variant                                                   |
 +--------------------------------------------------------------------------+
@@ -87,6 +97,8 @@ default, there is no lower bound.
 
 | 
 
+.. _sdk_qtcontacts_detailrangefilter_rangeFlags-prop:
+
 +--------------------------------------------------------------------------+
 |        \ rangeFlags : enumeration                                        |
 +--------------------------------------------------------------------------+
@@ -94,9 +106,9 @@ default, there is no lower bound.
 This property holds a set of flags which defines the boundary condition
 semantics of the value range criterion.The valid range flags include:
 
--  `DetailRangeFilter </sdk/apps/qml/QtContacts/DetailRangeFilter/>`__.IncludeLower
--  `DetailRangeFilter </sdk/apps/qml/QtContacts/DetailRangeFilter/>`__.IncludeUpper
--  `DetailRangeFilter </sdk/apps/qml/QtContacts/DetailRangeFilter/>`__.ExcludeLower
--  `DetailRangeFilter </sdk/apps/qml/QtContacts/DetailRangeFilter/>`__.ExcludeUpper
+-  :ref:`DetailRangeFilter <sdk_qtcontacts_detailrangefilter>`.IncludeLower
+-  :ref:`DetailRangeFilter <sdk_qtcontacts_detailrangefilter>`.IncludeUpper
+-  :ref:`DetailRangeFilter <sdk_qtcontacts_detailrangefilter>`.ExcludeLower
+-  :ref:`DetailRangeFilter <sdk_qtcontacts_detailrangefilter>`.ExcludeUpper
 
 | 

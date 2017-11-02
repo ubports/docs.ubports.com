@@ -1,8 +1,12 @@
+.. _sdk_running_autopilot:
+Running Autopilot
+=================
+
 Autopilot test suites can be run with any python test runner (for
 example, the built-in testtools runner). However, several autopilot
 features are only available if you use the autopilot runner.
 
-.. rubric:: List Tests\ ` <#list-tests>`__
+.. rubric:: List Tests\ ` <#list-tests>`_ 
    :name: list-tests
 
 Autopilot can list all tests found within a particular module:
@@ -42,7 +46,7 @@ The list command takes only one option:
 Display tests in the order in which they will be run, rather than
 alphabetical order (which is the default).
 
-.. rubric:: Run Tests\ ` <#run-tests>`__
+.. rubric:: Run Tests\ ` <#run-tests>`_ 
    :name: run-tests
 
 Running autopilot tests is very similar to listing tests:
@@ -76,7 +80,7 @@ Videos are stored in /tmp/autopilot.
 | -v, --verbose   | If set, autopilot will output test log data to stderr during a test run.   |
 +-----------------+----------------------------------------------------------------------------+
 
-.. rubric:: Common use cases\ ` <#common-use-cases>`__
+.. rubric:: Common use cases\ ` <#common-use-cases>`_ 
    :name: common-use-cases
 
 #. **Run autopilot and save the test log**:
@@ -184,7 +188,7 @@ Videos are stored in /tmp/autopilot.
        </div>
 
 .. rubric:: Launching an Application to
-   Introspect\ ` <#launching-an-application-to-introspect>`__
+   Introspect\ ` <#launching-an-application-to-introspect>`_ 
    :name: launching-an-application-to-introspect
 
 In order to be able to introspect an application, it must first be
@@ -231,10 +235,10 @@ the problem:
 Once an application has launched with introspection enabled, it will be
 possible to launch autopilot vis and view the introspection tree, see:
 `*Visualise Introspection
-Tree* </sdk/autopilot/python/guides-running_ap#visualise-introspection-tree>`__.
+Tree* </sdk/autopilot/python/guides-running_ap/#visualise-introspection-tree>`_ .
 
 .. rubric:: Visualise Introspection
-   Tree\ ` <#visualise-introspection-tree>`__
+   Tree\ ` <#visualise-introspection-tree>`_ 
    :name: visualise-introspection-tree
 
 A very common thing to want to do while writing autopilot tests is see
@@ -242,7 +246,7 @@ the structure of the application being tested. To support this,
 autopilot includes a simple application to help visualize the
 introspection tree. To start it, make sure the application you wish to
 test is running (see: `*Launching an Application to
-Introspect* </sdk/autopilot/python/guides-running_ap#launching-application-to-introspect>`__),
+Introspect* </sdk/autopilot/python/guides-running_ap/#launching-application-to-introspect>`_ ),
 and then run:
 
 ::

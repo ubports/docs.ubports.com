@@ -1,3 +1,7 @@
+.. _sdk_qtquick_qml_advanced_tutorial_2_-_populating_the_game_canvas:
+QtQuick QML Advanced Tutorial 2 - Populating the Game Canvas
+============================================================
+
 
 
 .. rubric:: Generating the blocks in JavaScript
@@ -8,8 +12,8 @@ Now that we've written some types, let's start writing the game.
 The first task is to generate the game blocks. Each time the New Game
 button is clicked, the game canvas is populated with a new, random set
 of blocks. Since we need to dynamically generate new blocks for each new
-game, we cannot use `Repeater </sdk/apps/qml/QtQuick/Repeater/>`__ to
-define the blocks. Instead, we will create the blocks in JavaScript.
+game, we cannot use :ref:`Repeater <sdk_qtquick_repeater>` to define the
+blocks. Instead, we will create the blocks in JavaScript.
 
 Here is the JavaScript code for generating the blocks, contained in a
 new file, ``samegame.js``. The code is explained below.
@@ -134,9 +138,9 @@ Files:
 -  tutorials/samegame/samegame2/samegame2.qmlproject
 
 `QML Advanced Tutorial 1 - Creating the Game Canvas and
-Blocks </sdk/apps/qml/QtQuick/tutorials-samegame-samegame1/>`__ `QML
+Blocks </sdk/apps/qml/QtQuick/tutorials-samegame-samegame1/>`_  `QML
 Advanced Tutorial 3 - Implementing the Game
-Logic </sdk/apps/qml/QtQuick/tutorials-samegame-samegame3/>`__
+Logic </sdk/apps/qml/QtQuick/tutorials-samegame-samegame3/>`_ 
 
 .. |image0| image:: /media/sdk/apps/qml/qtquick-tutorials-samegame-samegame2-example/images/declarative-adv-tutorial2.png
 

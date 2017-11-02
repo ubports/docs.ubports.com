@@ -1,3 +1,7 @@
+.. _sdk_qtquick_context2d:
+QtQuick Context2D
+=================
+
 Provides 2D context for shapes on a Canvas item
 
 +---------------------+----------------------+
@@ -9,174 +13,156 @@ Provides 2D context for shapes on a Canvas item
 Properties
 ----------
 
--  ****`canvas </sdk/apps/qml/QtQuick/Context2D#canvas-prop>`__**** :
+-  :ref:`canvas <sdk_qtquick_context2d_canvas-prop>` :
    QtQuick::Canvas
--  ****`fillRule </sdk/apps/qml/QtQuick/Context2D#fillRule-prop>`__****
-   : enumeration
--  ****`fillStyle </sdk/apps/qml/QtQuick/Context2D#fillStyle-prop>`__****
-   : variant
--  ****`font </sdk/apps/qml/QtQuick/Context2D#font-prop>`__**** : string
--  ****`globalAlpha </sdk/apps/qml/QtQuick/Context2D#globalAlpha-prop>`__****
-   : real
--  ****`globalCompositeOperation </sdk/apps/qml/QtQuick/Context2D#globalCompositeOperation-prop>`__****
+-  :ref:`fillRule <sdk_qtquick_context2d_fillRule-prop>` :
+   enumeration
+-  :ref:`fillStyle <sdk_qtquick_context2d_fillStyle-prop>` :
+   variant
+-  :ref:`font <sdk_qtquick_context2d_font-prop>` : string
+-  :ref:`globalAlpha <sdk_qtquick_context2d_globalAlpha-prop>` :
+   real
+-  :ref:`globalCompositeOperation <sdk_qtquick_context2d_globalCompositeOperation-prop>`
    : string
--  ****`lineCap </sdk/apps/qml/QtQuick/Context2D#lineCap-prop>`__**** :
+-  :ref:`lineCap <sdk_qtquick_context2d_lineCap-prop>` : string
+-  :ref:`lineJoin <sdk_qtquick_context2d_lineJoin-prop>` : string
+-  :ref:`lineWidth <sdk_qtquick_context2d_lineWidth-prop>` : real
+-  :ref:`miterLimit <sdk_qtquick_context2d_miterLimit-prop>` : real
+-  :ref:`shadowBlur <sdk_qtquick_context2d_shadowBlur-prop>` : real
+-  :ref:`shadowColor <sdk_qtquick_context2d_shadowColor-prop>` :
    string
--  ****`lineJoin </sdk/apps/qml/QtQuick/Context2D#lineJoin-prop>`__****
-   : string
--  ****`lineWidth </sdk/apps/qml/QtQuick/Context2D#lineWidth-prop>`__****
-   : real
--  ****`miterLimit </sdk/apps/qml/QtQuick/Context2D#miterLimit-prop>`__****
-   : real
--  ****`shadowBlur </sdk/apps/qml/QtQuick/Context2D#shadowBlur-prop>`__****
-   : real
--  ****`shadowColor </sdk/apps/qml/QtQuick/Context2D#shadowColor-prop>`__****
-   : string
--  ****`shadowOffsetX </sdk/apps/qml/QtQuick/Context2D#shadowOffsetX-prop>`__****
+-  :ref:`shadowOffsetX <sdk_qtquick_context2d_shadowOffsetX-prop>`
    : qreal
--  ****`shadowOffsetY </sdk/apps/qml/QtQuick/Context2D#shadowOffsetY-prop>`__****
+-  :ref:`shadowOffsetY <sdk_qtquick_context2d_shadowOffsetY-prop>`
    : qreal
--  ****`strokeStyle </sdk/apps/qml/QtQuick/Context2D#strokeStyle-prop>`__****
-   : variant
--  ****`textAlign </sdk/apps/qml/QtQuick/Context2D#textAlign-prop>`__****
-   : string
--  ****`textBaseline </sdk/apps/qml/QtQuick/Context2D#textBaseline-prop>`__****
-   : string
+-  :ref:`strokeStyle <sdk_qtquick_context2d_strokeStyle-prop>` :
+   variant
+-  :ref:`textAlign <sdk_qtquick_context2d_textAlign-prop>` : string
+-  :ref:`textBaseline <sdk_qtquick_context2d_textBaseline-prop>` :
+   string
 
 Methods
 -------
 
--  object
-   ****`arc </sdk/apps/qml/QtQuick/Context2D#arc-method>`__****\ (real
-   *x*, real *y*, real *radius*, real *startAngle*, real *endAngle*,
-   bool *anticlockwise*)
--  object
-   ****`arcTo </sdk/apps/qml/QtQuick/Context2D#arcTo-method>`__****\ (real
+-  object :ref:`arc <sdk_qtquick_context2d_arc-method>`\ (real *x*,
+   real *y*, real *radius*, real *startAngle*, real *endAngle*, bool
+   *anticlockwise*)
+-  object :ref:`arcTo <sdk_qtquick_context2d_arcTo-method>`\ (real
    *x1*, real *y1*, real *x2*, real *y2*, real *radius*)
 -  object
-   ****`beginPath </sdk/apps/qml/QtQuick/Context2D#beginPath-method>`__****\ ()
+   **:ref:`beginPath <sdk_qtquick_context2d#beginPath-method>`**\ ()
 -  object
-   ****`bezierCurveTo </sdk/apps/qml/QtQuick/Context2D#bezierCurveTo-method>`__****\ (real
+   **:ref:`bezierCurveTo <sdk_qtquick_context2d#bezierCurveTo-method>`**\ (real
    *cp1x*, real *cp1y*, real *cp2x*, real *cp2y*, real *x*, real *y*)
 -  object
-   ****`clearRect </sdk/apps/qml/QtQuick/Context2D#clearRect-method>`__****\ (real
+   **:ref:`clearRect <sdk_qtquick_context2d#clearRect-method>`**\ (real
    *x*, real *y*, real *w*, real *h*)
+-  object :ref:`clip <sdk_qtquick_context2d_clip-method>`\ ()
 -  object
-   ****`clip </sdk/apps/qml/QtQuick/Context2D#clip-method>`__****\ ()
+   **:ref:`closePath <sdk_qtquick_context2d#closePath-method>`**\ ()
 -  object
-   ****`closePath </sdk/apps/qml/QtQuick/Context2D#closePath-method>`__****\ ()
--  object
-   ****`createConicalGradient </sdk/apps/qml/QtQuick/Context2D#createConicalGradient-method>`__****\ (real
+   **:ref:`createConicalGradient <sdk_qtquick_context2d#createConicalGradient-method>`**\ (real
    *x*, real *y*, real *angle*)
 -  CanvasImageData
-   ****`createImageData </sdk/apps/qml/QtQuick/Context2D#createImageData-method-3>`__****\ (Url
+   **:ref:`createImageData <sdk_qtquick_context2d#createImageData-method-3>`**\ (Url
    *imageUrl*)
 -  CanvasImageData
-   ****`createImageData </sdk/apps/qml/QtQuick/Context2D#createImageData-method-2>`__****\ (CanvasImageData
+   **:ref:`createImageData <sdk_qtquick_context2d#createImageData-method-2>`**\ (CanvasImageData
    *imageData*)
 -  CanvasImageData
-   ****`createImageData </sdk/apps/qml/QtQuick/Context2D#createImageData-method>`__****\ (real
+   **:ref:`createImageData <sdk_qtquick_context2d#createImageData-method>`**\ (real
    *sw*, real *sh*)
 -  object
-   ****`createLinearGradient </sdk/apps/qml/QtQuick/Context2D#createLinearGradient-method>`__****\ (real
+   **:ref:`createLinearGradient <sdk_qtquick_context2d#createLinearGradient-method>`**\ (real
    *x0*, real *y0*, real *x1*, real *y1*)
 -  variant
-   ****`createPattern </sdk/apps/qml/QtQuick/Context2D#createPattern-method-2>`__****\ (Image
+   **:ref:`createPattern <sdk_qtquick_context2d#createPattern-method-2>`**\ (Image
    *image*, string *repetition*)
 -  variant
-   ****`createPattern </sdk/apps/qml/QtQuick/Context2D#createPattern-method>`__****\ (color
+   **:ref:`createPattern <sdk_qtquick_context2d#createPattern-method>`**\ (color
    *color*, enumeration *patternMode*)
 -  object
-   ****`createRadialGradient </sdk/apps/qml/QtQuick/Context2D#createRadialGradient-method>`__****\ (real
+   **:ref:`createRadialGradient <sdk_qtquick_context2d#createRadialGradient-method>`**\ (real
    *x0*, real *y0*, real *r0*, real *x1*, real *y1*, real *r1*)
--  ****`drawImage </sdk/apps/qml/QtQuick/Context2D#drawImage-method-3>`__****\ (variant
+-  :ref:`drawImage <sdk_qtquick_context2d_drawImage-method-3>`\ (variant
    *image*, real *sx*, real *sy*, real *sw*, real *sh*, real *dx*, real
    *dy*, real *dw*, real *dh*)
--  ****`drawImage </sdk/apps/qml/QtQuick/Context2D#drawImage-method-2>`__****\ (variant
+-  :ref:`drawImage <sdk_qtquick_context2d_drawImage-method-2>`\ (variant
    *image*, real *dx*, real *dy*, real *dw*, real *dh*)
--  ****`drawImage </sdk/apps/qml/QtQuick/Context2D#drawImage-method>`__****\ (variant
+-  :ref:`drawImage <sdk_qtquick_context2d_drawImage-method>`\ (variant
    *image*, real *dx*, real *dy*)
 -  object
-   ****`ellipse </sdk/apps/qml/QtQuick/Context2D#ellipse-method>`__****\ (real
+   **:ref:`ellipse <sdk_qtquick_context2d#ellipse-method>`**\ (real
+   *x*, real *y*, real *w*, real *h*)
+-  object :ref:`fill <sdk_qtquick_context2d_fill-method>`\ ()
+-  object
+   **:ref:`fillRect <sdk_qtquick_context2d#fillRect-method>`**\ (real
    *x*, real *y*, real *w*, real *h*)
 -  object
-   ****`fill </sdk/apps/qml/QtQuick/Context2D#fill-method>`__****\ ()
--  object
-   ****`fillRect </sdk/apps/qml/QtQuick/Context2D#fillRect-method>`__****\ (real
-   *x*, real *y*, real *w*, real *h*)
--  object
-   ****`fillText </sdk/apps/qml/QtQuick/Context2D#fillText-method>`__****\ (text,
+   **:ref:`fillText <sdk_qtquick_context2d#fillText-method>`**\ (text,
    x, y)
 -  CanvasImageData
-   ****`getImageData </sdk/apps/qml/QtQuick/Context2D#getImageData-method>`__****\ (real
+   **:ref:`getImageData <sdk_qtquick_context2d#getImageData-method>`**\ (real
    *sx*, real *sy*, real *sw*, real *sh*)
 -  object
-   ****`isPointInPath </sdk/apps/qml/QtQuick/Context2D#isPointInPath-method>`__****\ (real
+   **:ref:`isPointInPath <sdk_qtquick_context2d#isPointInPath-method>`**\ (real
    *x*, real *y*)
 -  object
-   ****`lineTo </sdk/apps/qml/QtQuick/Context2D#lineTo-method>`__****\ (real
-   *x*, real *y*)
+   **:ref:`lineTo <sdk_qtquick_context2d#lineTo-method>`**\ (real *x*,
+   real *y*)
 -  object
-   ****`measureText </sdk/apps/qml/QtQuick/Context2D#measureText-method>`__****\ (text)
+   **:ref:`measureText <sdk_qtquick_context2d#measureText-method>`**\ (text)
 -  object
-   ****`moveTo </sdk/apps/qml/QtQuick/Context2D#moveTo-method>`__****\ (real
-   *x*, real *y*)
+   **:ref:`moveTo <sdk_qtquick_context2d#moveTo-method>`**\ (real *x*,
+   real *y*)
 -  object
-   ****`putImageData </sdk/apps/qml/QtQuick/Context2D#putImageData-method>`__****\ (CanvasImageData
+   **:ref:`putImageData <sdk_qtquick_context2d#putImageData-method>`**\ (CanvasImageData
    *imageData*, real *dx*, real *dy*, real *dirtyX*, real *dirtyY*, real
    *dirtyWidth*, real *dirtyHeight*)
 -  object
-   ****`quadraticCurveTo </sdk/apps/qml/QtQuick/Context2D#quadraticCurveTo-method>`__****\ (real
+   **:ref:`quadraticCurveTo <sdk_qtquick_context2d#quadraticCurveTo-method>`**\ (real
    *cpx*, real *cpy*, real *x*, real *y*)
--  object
-   ****`rect </sdk/apps/qml/QtQuick/Context2D#rect-method>`__****\ (real
+-  object :ref:`rect <sdk_qtquick_context2d_rect-method>`\ (real
    *x*, real *y*, real *w*, real *h*)
+-  object :ref:`reset <sdk_qtquick_context2d_reset-method>`\ ()
 -  object
-   ****`reset </sdk/apps/qml/QtQuick/Context2D#reset-method>`__****\ ()
+   **:ref:`resetTransform <sdk_qtquick_context2d#resetTransform-method>`**\ ()
+-  object :ref:`restore <sdk_qtquick_context2d_restore-method>`\ ()
 -  object
-   ****`resetTransform </sdk/apps/qml/QtQuick/Context2D#resetTransform-method>`__****\ ()
--  object
-   ****`restore </sdk/apps/qml/QtQuick/Context2D#restore-method>`__****\ ()
--  object
-   ****`rotate </sdk/apps/qml/QtQuick/Context2D#rotate-method>`__****\ (real
+   **:ref:`rotate <sdk_qtquick_context2d#rotate-method>`**\ (real
    *angle*)
 -  object
-   ****`roundedRect </sdk/apps/qml/QtQuick/Context2D#roundedRect-method>`__****\ (real
+   **:ref:`roundedRect <sdk_qtquick_context2d#roundedRect-method>`**\ (real
    *x*, real *y*, real *w*, real *h*, real *xRadius*, real *yRadius*)
--  object
-   ****`save </sdk/apps/qml/QtQuick/Context2D#save-method>`__****\ ()
--  object
-   ****`scale </sdk/apps/qml/QtQuick/Context2D#scale-method>`__****\ (real
+-  object :ref:`save <sdk_qtquick_context2d_save-method>`\ ()
+-  object :ref:`scale <sdk_qtquick_context2d_scale-method>`\ (real
    *x*, real *y*)
 -  object
-   ****`setTransform </sdk/apps/qml/QtQuick/Context2D#setTransform-method>`__****\ (real
+   **:ref:`setTransform <sdk_qtquick_context2d#setTransform-method>`**\ (real
    *a*, real *b*, real *c*, real *d*, real *e*, real *f*)
--  object
-   ****`shear </sdk/apps/qml/QtQuick/Context2D#shear-method>`__****\ (real
+-  object :ref:`shear <sdk_qtquick_context2d_shear-method>`\ (real
    *sh*, real *sv*)
+-  object :ref:`stroke <sdk_qtquick_context2d_stroke-method>`\ ()
 -  object
-   ****`stroke </sdk/apps/qml/QtQuick/Context2D#stroke-method>`__****\ ()
--  object
-   ****`strokeRect </sdk/apps/qml/QtQuick/Context2D#strokeRect-method>`__****\ (real
+   **:ref:`strokeRect <sdk_qtquick_context2d#strokeRect-method>`**\ (real
    *x*, real *y*, real *w*, real *h*)
 -  object
-   ****`strokeText </sdk/apps/qml/QtQuick/Context2D#strokeText-method>`__****\ (text,
+   **:ref:`strokeText <sdk_qtquick_context2d#strokeText-method>`**\ (text,
    x, y)
--  object
-   ****`text </sdk/apps/qml/QtQuick/Context2D#text-method>`__****\ (string
+-  object :ref:`text <sdk_qtquick_context2d_text-method>`\ (string
    *text*, real *x*, real *y*)
 -  object
-   ****`transform </sdk/apps/qml/QtQuick/Context2D#transform-method>`__****\ (real
+   **:ref:`transform <sdk_qtquick_context2d#transform-method>`**\ (real
    *a*, real *b*, real *c*, real *d*, real *e*, real *f*)
 -  object
-   ****`translate </sdk/apps/qml/QtQuick/Context2D#translate-method>`__****\ (real
+   **:ref:`translate <sdk_qtquick_context2d#translate-method>`**\ (real
    *x*, real *y*)
 
 Detailed Description
 --------------------
 
-The `Context2D </sdk/apps/qml/QtQuick/Context2D/>`__ object can be
-created by ``Canvas`` item's ``getContext()`` method:
+The :ref:`Context2D <sdk_qtquick_context2d>` object can be created by
+``Canvas`` item's ``getContext()`` method:
 
 .. code:: cpp
 
@@ -188,33 +174,33 @@ created by ``Canvas`` item's ``getContext()`` method:
       }
     }
 
-The `Context2D </sdk/apps/qml/QtQuick/Context2D/>`__ API implements the
-same `W3C Canvas 2D Context API
-standard <http://www.w3.org/TR/2dcontext>`__ with some enhanced
-features.
+The :ref:`Context2D <sdk_qtquick_context2d>` API implements the same `W3C
+Canvas 2D Context API standard <http://www.w3.org/TR/2dcontext>`_  with
+some enhanced features.
 
-The `Context2D </sdk/apps/qml/QtQuick/Context2D/>`__ API provides the
-rendering **context** which defines the methods and attributes needed to
-draw on the ``Canvas`` item. The following assigns the canvas rendering
-context to a ``context`` variable:
+The :ref:`Context2D <sdk_qtquick_context2d>` API provides the rendering
+**context** which defines the methods and attributes needed to draw on
+the ``Canvas`` item. The following assigns the canvas rendering context
+to a ``context`` variable:
 
 .. code:: cpp
 
     var context = mycanvas.getContext("2d")
 
-The `Context2D </sdk/apps/qml/QtQuick/Context2D/>`__ API renders the
-canvas as a coordinate system whose origin (0,0) is at the top left
-corner, as shown in the figure below. Coordinates increase along the
-``x`` axis from left to right and along the ``y`` axis from top to
-bottom of the canvas.
+The :ref:`Context2D <sdk_qtquick_context2d>` API renders the canvas as a
+coordinate system whose origin (0,0) is at the top left corner, as shown
+in the figure below. Coordinates increase along the ``x`` axis from left
+to right and along the ``y`` axis from top to bottom of the canvas.
 
 |image0|
 
 Property Documentation
 ----------------------
 
+.. _sdk_qtquick_context2d_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ canvas : `QtQuick::Canvas </sdk/apps/qml/QtQuick/Canvas/>`__    |
+| :ref:` <>`\ canvas : `QtQuick::Canvas <sdk_qtquick_canvas>`            |
 +--------------------------------------------------------------------------+
 
 Holds the canvas item that the context paints on.
@@ -222,6 +208,8 @@ Holds the canvas item that the context paints on.
 This property is read only.
 
 | 
+
+.. _sdk_qtquick_context2d_fillRule-prop:
 
 +--------------------------------------------------------------------------+
 |        \ fillRule : enumeration                                          |
@@ -237,10 +225,11 @@ Note: Unlike the QPainterPath, the Canvas API uses the winding fill as
 the default fill rule. The fillRule property is part of the context
 rendering state.
 
-**See also**
-`fillStyle </sdk/apps/qml/QtQuick/Context2D#fillStyle-prop>`__.
+**See also** :ref:`fillStyle <sdk_qtquick_context2d#fillStyle-prop>`.
 
 | 
+
+.. _sdk_qtquick_context2d_fillStyle-prop:
 
 +--------------------------------------------------------------------------+
 |        \ fillStyle : variant                                             |
@@ -248,9 +237,9 @@ rendering state.
 
 Holds the current style used for filling shapes. The style can be either
 a string containing a CSS color, a
-`CanvasGradient </sdk/apps/qml/QtQuick/CanvasGradient/>`__ or
-CanvasPattern object. Invalid values are ignored. This property accepts
-several color syntaxes:
+:ref:`CanvasGradient <sdk_qtquick_canvasgradient>` or CanvasPattern object.
+Invalid values are ignored. This property accepts several color
+syntaxes:
 
 -  'rgb(red, green, blue)' - for example: 'rgb(255, 100, 55)' or
    'rgb(100%, 70%, 30%)'
@@ -263,20 +252,22 @@ several color syntaxes:
    1.0)
 
 If the ``fillStyle`` or
-`strokeStyle </sdk/apps/qml/QtQuick/Context2D#strokeStyle-prop>`__ is
-assigned many times in a loop, the last Qt.rgba() syntax should be
-chosen, as it has the best performance, because it's already a valid
-QColor value, does not need to be parsed everytime.
+:ref:`strokeStyle <sdk_qtquick_context2d#strokeStyle-prop>` is assigned
+many times in a loop, the last Qt.rgba() syntax should be chosen, as it
+has the best performance, because it's already a valid QColor value,
+does not need to be parsed everytime.
 
 The default value is '#000000'.
 
 **See also**
-`createLinearGradient() </sdk/apps/qml/QtQuick/Context2D#createLinearGradient-method>`__,
-`createRadialGradient() </sdk/apps/qml/QtQuick/Context2D#createRadialGradient-method>`__,
-`createPattern() </sdk/apps/qml/QtQuick/Context2D#createPattern-method>`__,
-and `strokeStyle </sdk/apps/qml/QtQuick/Context2D#strokeStyle-prop>`__.
+:ref:`createLinearGradient() <sdk_qtquick_context2d#createLinearGradient-method>`,
+:ref:`createRadialGradient() <sdk_qtquick_context2d#createRadialGradient-method>`,
+:ref:`createPattern() <sdk_qtquick_context2d#createPattern-method>`, and
+:ref:`strokeStyle <sdk_qtquick_context2d#strokeStyle-prop>`.
 
 | 
+
+.. _sdk_qtquick_context2d_font-prop:
 
 +--------------------------------------------------------------------------+
 |        \ font : string                                                   |
@@ -285,7 +276,7 @@ and `strokeStyle </sdk/apps/qml/QtQuick/Context2D#strokeStyle-prop>`__.
 Holds the current font settings.
 
 A subset of the `w3C 2d context standard for
-font <http://www.w3.org/TR/2dcontext#dom-context-2d-font>`__ is
+font <http://www.w3.org/TR/2dcontext/#dom-context-2d-font>`_  is
 supported:
 
 -  font-style (optional): normal \| italic \| oblique
@@ -303,6 +294,8 @@ The default font value is "10px sans-serif".
 
 | 
 
+.. _sdk_qtquick_context2d_globalAlpha-prop:
+
 +--------------------------------------------------------------------------+
 |        \ globalAlpha : real                                              |
 +--------------------------------------------------------------------------+
@@ -312,6 +305,8 @@ must be in the range from ``0.0`` (fully transparent) to ``1.0`` (fully
 opaque). The default value is ``1.0``.
 
 | 
+
+.. _sdk_qtquick_context2d_globalCompositeOperation-prop:
 
 +--------------------------------------------------------------------------+
 |        \ globalCompositeOperation : string                               |
@@ -356,6 +351,8 @@ syntax, for example: QPainter::CompositionMode\_Exclusion is provided as
 
 | 
 
+.. _sdk_qtquick_context2d_lineCap-prop:
+
 +--------------------------------------------------------------------------+
 |        \ lineCap : string                                                |
 +--------------------------------------------------------------------------+
@@ -373,6 +370,8 @@ Holds the current line cap style. The possible line cap styles are:
 Other values are ignored.
 
 | 
+
+.. _sdk_qtquick_context2d_lineJoin-prop:
 
 +--------------------------------------------------------------------------+
 |        \ lineJoin : string                                               |
@@ -397,6 +396,8 @@ Other values are ignored.
 
 | 
 
+.. _sdk_qtquick_context2d_lineWidth-prop:
+
 +--------------------------------------------------------------------------+
 |        \ lineWidth : real                                                |
 +--------------------------------------------------------------------------+
@@ -405,6 +406,8 @@ Holds the current line width. Values that are not finite values greater
 than zero are ignored.
 
 | 
+
+.. _sdk_qtquick_context2d_miterLimit-prop:
 
 +--------------------------------------------------------------------------+
 |        \ miterLimit : real                                               |
@@ -415,6 +418,8 @@ Holds the current miter limit ratio. The default miter limit value is
 
 | 
 
+.. _sdk_qtquick_context2d_shadowBlur-prop:
+
 +--------------------------------------------------------------------------+
 |        \ shadowBlur : real                                               |
 +--------------------------------------------------------------------------+
@@ -422,6 +427,8 @@ Holds the current miter limit ratio. The default miter limit value is
 Holds the current level of blur applied to shadows
 
 | 
+
+.. _sdk_qtquick_context2d_shadowColor-prop:
 
 +--------------------------------------------------------------------------+
 |        \ shadowColor : string                                            |
@@ -431,6 +438,8 @@ Holds the current shadow color.
 
 | 
 
+.. _sdk_qtquick_context2d_shadowOffsetX-prop:
+
 +--------------------------------------------------------------------------+
 |        \ shadowOffsetX : qreal                                           |
 +--------------------------------------------------------------------------+
@@ -438,9 +447,11 @@ Holds the current shadow color.
 Holds the current shadow offset in the positive horizontal distance.
 
 **See also**
-`shadowOffsetY </sdk/apps/qml/QtQuick/Context2D#shadowOffsetY-prop>`__.
+:ref:`shadowOffsetY <sdk_qtquick_context2d#shadowOffsetY-prop>`.
 
 | 
+
+.. _sdk_qtquick_context2d_shadowOffsetY-prop:
 
 +--------------------------------------------------------------------------+
 |        \ shadowOffsetY : qreal                                           |
@@ -449,9 +460,11 @@ Holds the current shadow offset in the positive horizontal distance.
 Holds the current shadow offset in the positive vertical distance.
 
 **See also**
-`shadowOffsetX </sdk/apps/qml/QtQuick/Context2D#shadowOffsetX-prop>`__.
+:ref:`shadowOffsetX <sdk_qtquick_context2d#shadowOffsetX-prop>`.
 
 | 
+
+.. _sdk_qtquick_context2d_strokeStyle-prop:
 
 +--------------------------------------------------------------------------+
 |        \ strokeStyle : variant                                           |
@@ -459,18 +472,20 @@ Holds the current shadow offset in the positive vertical distance.
 
 Holds the current color or style to use for the lines around shapes, The
 style can be either a string containing a CSS color, a
-`CanvasGradient </sdk/apps/qml/QtQuick/CanvasGradient/>`__ or
-CanvasPattern object. Invalid values are ignored.
+:ref:`CanvasGradient <sdk_qtquick_canvasgradient>` or CanvasPattern object.
+Invalid values are ignored.
 
 The default value is '#000000'.
 
 **See also**
-`createLinearGradient() </sdk/apps/qml/QtQuick/Context2D#createLinearGradient-method>`__,
-`createRadialGradient() </sdk/apps/qml/QtQuick/Context2D#createRadialGradient-method>`__,
-`createPattern() </sdk/apps/qml/QtQuick/Context2D#createPattern-method>`__,
-and `fillStyle </sdk/apps/qml/QtQuick/Context2D#fillStyle-prop>`__.
+:ref:`createLinearGradient() <sdk_qtquick_context2d#createLinearGradient-method>`,
+:ref:`createRadialGradient() <sdk_qtquick_context2d#createRadialGradient-method>`,
+:ref:`createPattern() <sdk_qtquick_context2d#createPattern-method>`, and
+:ref:`fillStyle <sdk_qtquick_context2d#fillStyle-prop>`.
 
 | 
+
+.. _sdk_qtquick_context2d_textAlign-prop:
 
 +--------------------------------------------------------------------------+
 |        \ textAlign : string                                              |
@@ -487,6 +502,8 @@ Holds the current text alignment settings. The possible values are:
 Other values are ignored. The default value is "start".
 
 | 
+
+.. _sdk_qtquick_context2d_textBaseline-prop:
 
 +--------------------------------------------------------------------------+
 |        \ textBaseline : string                                           |
@@ -508,6 +525,8 @@ Other values are ignored. The default value is "alphabetic".
 Method Documentation
 --------------------
 
+.. _sdk_qtquick_context2d_object arc-method:
+
 +--------------------------------------------------------------------------+
 |        \ object arc(real *x*, real *y*, real *radius*, real              |
 | *startAngle*, real *endAngle*, bool *anticlockwise*)                     |
@@ -527,11 +546,13 @@ radians.
 The *anticlockwise* parameter is ``true`` for each arc in the figure
 above because they are all drawn in the anticlockwise direction.
 
-**See also** `arcTo </sdk/apps/qml/QtQuick/Context2D#arcTo-method>`__
-and `W3C's 2D Context Standard for
-arc() <http://www.w3.org/TR/2dcontext#dom-context-2d-arc>`__.
+**See also** :ref:`arcTo <sdk_qtquick_context2d#arcTo-method>` and `W3C's
+2D Context Standard for
+arc() <http://www.w3.org/TR/2dcontext/#dom-context-2d-arc>`_ .
 
 | 
+
+.. _sdk_qtquick_context2d_object arcTo-method:
 
 +--------------------------------------------------------------------------+
 |        \ object arcTo(real *x1*, real *y1*, real *x2*, real *y2*, real   |
@@ -542,11 +563,9 @@ Adds an arc with the given control points and radius to the current
 subpath, connected to the previous point by a straight line. To draw an
 arc, you begin with the same steps you followed to create a line:
 
--  Call the
-   `beginPath() </sdk/apps/qml/QtQuick/Context2D#beginPath-method>`__
+-  Call the :ref:`beginPath() <sdk_qtquick_context2d#beginPath-method>`
    method to set a new path.
--  Call the
-   `moveTo </sdk/apps/qml/QtQuick/Context2D#moveTo-method>`__\ (``x``,
+-  Call the :ref:`moveTo <sdk_qtquick_context2d#moveTo-method>`\ (``x``,
    ``y``) method to set your starting position on the canvas at the
    point (``x``, ``y``).
 -  To draw an arc or circle, call the arcTo(\ *x1*, *y1*, *x2*, *y2*,
@@ -556,11 +575,13 @@ arc, you begin with the same steps you followed to create a line:
 
 |image2|
 
-**See also** `arc </sdk/apps/qml/QtQuick/Context2D#arc-method>`__ and
-`W3C's 2D Context Standard for
-arcTo() <http://www.w3.org/TR/2dcontext#dom-context-2d-arcto>`__.
+**See also** :ref:`arc <sdk_qtquick_context2d#arc-method>` and `W3C's 2D
+Context Standard for
+arcTo() <http://www.w3.org/TR/2dcontext/#dom-context-2d-arcto>`_ .
 
 | 
+
+.. _sdk_qtquick_context2d_object beginPath-method:
 
 +--------------------------------------------------------------------------+
 |        \ object beginPath()                                              |
@@ -569,6 +590,8 @@ arcTo() <http://www.w3.org/TR/2dcontext#dom-context-2d-arcto>`__.
 Resets the current path to a new path.
 
 | 
+
+.. _sdk_qtquick_context2d_object bezierCurveTo-method:
 
 +--------------------------------------------------------------------------+
 |        \ object bezierCurveTo(real *cp1x*, real *cp1y*, real *cp2x*,     |
@@ -593,11 +616,13 @@ following code produces the path shown below:
 |image3|
 
 **See also** `W3C 2d context standard for
-bezierCurveTo <http://www.w3.org/TR/2dcontext#dom-context-2d-beziercurveto>`__
+bezierCurveTo <http://www.w3.org/TR/2dcontext/#dom-context-2d-beziercurveto>`_ 
 and `The beautiful flower demo by using
-bezierCurveTo <http://www.openrise.com/lab/FlowerPower/>`__.
+bezierCurveTo <http://www.openrise.com/lab/FlowerPower/>`_ .
 
 | 
+
+.. _sdk_qtquick_context2d_object clearRect-method:
 
 +--------------------------------------------------------------------------+
 |        \ object clearRect(real *x*, real *y*, real *w*, real *h*)        |
@@ -607,6 +632,8 @@ Clears all pixels on the canvas in the given rectangle to transparent
 black.
 
 | 
+
+.. _sdk_qtquick_context2d_object clip-method:
 
 +--------------------------------------------------------------------------+
 |        \ object clip()                                                   |
@@ -627,15 +654,16 @@ modify how an image displays:
 
 |image4|
 
-**See also**
-`beginPath() </sdk/apps/qml/QtQuick/Context2D#beginPath-method>`__,
-`closePath() </sdk/apps/qml/QtQuick/Context2D#closePath-method>`__,
-`stroke() </sdk/apps/qml/QtQuick/Context2D#stroke-method>`__,
-`fill() </sdk/apps/qml/QtQuick/Context2D#fill-method>`__, and `W3C 2d
-context standard for
-clip <http://www.w3.org/TR/2dcontext#dom-context-2d-clip>`__.
+**See also** :ref:`beginPath() <sdk_qtquick_context2d#beginPath-method>`,
+:ref:`closePath() <sdk_qtquick_context2d#closePath-method>`,
+:ref:`stroke() <sdk_qtquick_context2d#stroke-method>`,
+:ref:`fill() <sdk_qtquick_context2d#fill-method>`, and `W3C 2d context
+standard for
+clip <http://www.w3.org/TR/2dcontext/#dom-context-2d-clip>`_ .
 
 | 
+
+.. _sdk_qtquick_context2d_object closePath-method:
 
 +--------------------------------------------------------------------------+
 |        \ object closePath()                                              |
@@ -646,81 +674,89 @@ subpath, automatically starting a new path. The current point of the new
 path is the previous subpath's first point.
 
 **See also** `W3C 2d context standard for
-closePath <http://www.w3.org/TR/2dcontext#dom-context-2d-closepath>`__.
+closePath <http://www.w3.org/TR/2dcontext/#dom-context-2d-closepath>`_ .
 
 | 
+
+.. _sdk_qtquick_context2d_object createConicalGradient-method:
 
 +--------------------------------------------------------------------------+
 |        \ object createConicalGradient(real *x*, real *y*, real *angle*)  |
 +--------------------------------------------------------------------------+
 
-Returns a `CanvasGradient </sdk/apps/qml/QtQuick/CanvasGradient/>`__
-object that represents a conical gradient that interpolate colors
-counter-clockwise around a center point (``x``, ``y``) with start angle
-``angle`` in units of radians.
+Returns a :ref:`CanvasGradient <sdk_qtquick_canvasgradient>` object that
+represents a conical gradient that interpolate colors counter-clockwise
+around a center point (``x``, ``y``) with start angle ``angle`` in units
+of radians.
 
 **See also**
-`CanvasGradient::addColorStop() </sdk/apps/qml/QtQuick/CanvasGradient#addColorStop-method>`__,
-`createLinearGradient() </sdk/apps/qml/QtQuick/Context2D#createLinearGradient-method>`__,
-`createRadialGradient() </sdk/apps/qml/QtQuick/Context2D#createRadialGradient-method>`__,
-`createPattern() </sdk/apps/qml/QtQuick/Context2D#createPattern-method>`__,
-`fillStyle </sdk/apps/qml/QtQuick/Context2D#fillStyle-prop>`__, and
-`strokeStyle </sdk/apps/qml/QtQuick/Context2D#strokeStyle-prop>`__.
+:ref:`CanvasGradient::addColorStop() <sdk_qtquick_canvasgradient#addColorStop-method>`,
+:ref:`createLinearGradient() <sdk_qtquick_context2d#createLinearGradient-method>`,
+:ref:`createRadialGradient() <sdk_qtquick_context2d#createRadialGradient-method>`,
+:ref:`createPattern() <sdk_qtquick_context2d#createPattern-method>`,
+:ref:`fillStyle <sdk_qtquick_context2d#fillStyle-prop>`, and
+:ref:`strokeStyle <sdk_qtquick_context2d#strokeStyle-prop>`.
 
 | 
 
+.. _sdk_qtquick_context2d_-method:
+
 +--------------------------------------------------------------------------+
-|        \ `CanvasImageData </sdk/apps/qml/QtQuick/CanvasImageData/>`__    |
+| :ref:` <>`\ `CanvasImageData <sdk_qtquick_canvasimagedata>`            |
 | createImageData(Url *imageUrl*)                                          |
 +--------------------------------------------------------------------------+
 
-Creates a `CanvasImageData </sdk/apps/qml/QtQuick/CanvasImageData/>`__
-object with the given image loaded from *imageUrl*.
+Creates a :ref:`CanvasImageData <sdk_qtquick_canvasimagedata>` object with
+the given image loaded from *imageUrl*.
 
 **Note:** The *imageUrl* must be already loaded before this function
 call, otherwise an empty
-`CanvasImageData </sdk/apps/qml/QtQuick/CanvasImageData/>`__ obect will
-be returned.
+:ref:`CanvasImageData <sdk_qtquick_canvasimagedata>` obect will be
+returned.
 
 **See also**
-`Canvas::loadImage() </sdk/apps/qml/QtQuick/Canvas#loadImage-method>`__,
-`QtQuick::Canvas::unloadImage() </sdk/apps/qml/QtQuick/Canvas#unloadImage-method>`__,
+:ref:`Canvas::loadImage() <sdk_qtquick_canvas#loadImage-method>`,
+:ref:`QtQuick::Canvas::unloadImage() <sdk_qtquick_canvas#unloadImage-method>`,
 and
-`QtQuick::Canvas::isImageLoaded </sdk/apps/qml/QtQuick/Canvas#isImageLoaded-method>`__.
+:ref:`QtQuick::Canvas::isImageLoaded <sdk_qtquick_canvas#isImageLoaded-method>`.
 
 | 
 
+.. _sdk_qtquick_context2d_-method:
+
 +--------------------------------------------------------------------------+
-|        \ `CanvasImageData </sdk/apps/qml/QtQuick/CanvasImageData/>`__    |
-| createImageData(`CanvasImageData </sdk/apps/qml/QtQuick/CanvasImageData/ |
-| >`__                                                                     |
+| :ref:` <>`\ `CanvasImageData <sdk_qtquick_canvasimagedata>`            |
+| createImageData(:ref:`CanvasImageData <sdk_qtquick_canvasimagedata>`        |
 | *imageData*)                                                             |
 +--------------------------------------------------------------------------+
 
-Creates a `CanvasImageData </sdk/apps/qml/QtQuick/CanvasImageData/>`__
-object with the same dimensions as the argument.
+Creates a :ref:`CanvasImageData <sdk_qtquick_canvasimagedata>` object with
+the same dimensions as the argument.
 
 | 
 
+.. _sdk_qtquick_context2d_-method:
+
 +--------------------------------------------------------------------------+
-|        \ `CanvasImageData </sdk/apps/qml/QtQuick/CanvasImageData/>`__    |
+| :ref:` <>`\ `CanvasImageData <sdk_qtquick_canvasimagedata>`            |
 | createImageData(real *sw*, real *sh*)                                    |
 +--------------------------------------------------------------------------+
 
-Creates a `CanvasImageData </sdk/apps/qml/QtQuick/CanvasImageData/>`__
-object with the given dimensions(\ *sw*, *sh*).
+Creates a :ref:`CanvasImageData <sdk_qtquick_canvasimagedata>` object with
+the given dimensions(\ *sw*, *sh*).
 
 | 
+
+.. _sdk_qtquick_context2d_object createLinearGradient-method:
 
 +--------------------------------------------------------------------------+
 |        \ object createLinearGradient(real *x0*, real *y0*, real *x1*,    |
 | real *y1*)                                                               |
 +--------------------------------------------------------------------------+
 
-Returns a `CanvasGradient </sdk/apps/qml/QtQuick/CanvasGradient/>`__
-object that represents a linear gradient that transitions the color
-along a line between the start point (*x0*, *y0*) and the end point
-(*x1*, *y1*).
+Returns a :ref:`CanvasGradient <sdk_qtquick_canvasgradient>` object that
+represents a linear gradient that transitions the color along a line
+between the start point (*x0*, *y0*) and the end point (*x1*, *y1*).
 
 A gradient is a smooth transition between colors. There are two types of
 gradients: linear and radial. Gradients must have two or more color
@@ -728,27 +764,28 @@ stops, representing color shifts positioned from 0 to 1 between to the
 gradient's starting and end points or circles.
 
 **See also**
-`CanvasGradient::addColorStop() </sdk/apps/qml/QtQuick/CanvasGradient#addColorStop-method>`__,
-`createRadialGradient() </sdk/apps/qml/QtQuick/Context2D#createRadialGradient-method>`__,
-`createConicalGradient() </sdk/apps/qml/QtQuick/Context2D#createConicalGradient-method>`__,
-`createPattern() </sdk/apps/qml/QtQuick/Context2D#createPattern-method>`__,
-`fillStyle </sdk/apps/qml/QtQuick/Context2D#fillStyle-prop>`__, and
-`strokeStyle </sdk/apps/qml/QtQuick/Context2D#strokeStyle-prop>`__.
+:ref:`CanvasGradient::addColorStop() <sdk_qtquick_canvasgradient#addColorStop-method>`,
+:ref:`createRadialGradient() <sdk_qtquick_context2d#createRadialGradient-method>`,
+:ref:`createConicalGradient() <sdk_qtquick_context2d#createConicalGradient-method>`,
+:ref:`createPattern() <sdk_qtquick_context2d#createPattern-method>`,
+:ref:`fillStyle <sdk_qtquick_context2d#fillStyle-prop>`, and
+:ref:`strokeStyle <sdk_qtquick_context2d#strokeStyle-prop>`.
 
 | 
 
+.. _sdk_qtquick_context2d_-method:
+
 +--------------------------------------------------------------------------+
-|        \ variant createPattern(`Image </sdk/apps/qml/QtQuick/Image/>`__  |
-| *image*, string *repetition*)                                            |
+| :ref:` <>`\ variant createPattern(`Image <sdk_qtquick_image>` *image*,    |
+| string *repetition*)                                                     |
 +--------------------------------------------------------------------------+
 
 Returns a CanvasPattern object that uses the given image and repeats in
 the direction(s) given by the repetition argument.
 
 The *image* parameter must be a valid Image item, a valid
-`CanvasImageData </sdk/apps/qml/QtQuick/CanvasImageData/>`__ object or
-loaded image url, if there is no image data, throws an
-INVALID\_STATE\_ERR exception.
+:ref:`CanvasImageData <sdk_qtquick_canvasimagedata>` object or loaded image
+url, if there is no image data, throws an INVALID\_STATE\_ERR exception.
 
 The allowed values for *repetition* are:
 
@@ -759,11 +796,12 @@ The allowed values for *repetition* are:
 
 If the repetition argument is empty or null, the value "repeat" is used.
 
-**See also**
-`strokeStyle </sdk/apps/qml/QtQuick/Context2D#strokeStyle-prop>`__ and
-`fillStyle </sdk/apps/qml/QtQuick/Context2D#fillStyle-prop>`__.
+**See also** :ref:`strokeStyle <sdk_qtquick_context2d#strokeStyle-prop>`
+and :ref:`fillStyle <sdk_qtquick_context2d#fillStyle-prop>`.
 
 | 
+
+.. _sdk_qtquick_context2d_variant createPattern-method:
 
 +--------------------------------------------------------------------------+
 |        \ variant createPattern(color *color*, enumeration *patternMode*) |
@@ -791,25 +829,29 @@ the given *color* and *patternMode*. The valid pattern modes are:
 
 | 
 
+.. _sdk_qtquick_context2d_object createRadialGradient-method:
+
 +--------------------------------------------------------------------------+
 |        \ object createRadialGradient(real *x0*, real *y0*, real *r0*,    |
 | real *x1*, real *y1*, real *r1*)                                         |
 +--------------------------------------------------------------------------+
 
-Returns a `CanvasGradient </sdk/apps/qml/QtQuick/CanvasGradient/>`__
-object that represents a radial gradient that paints along the cone
-given by the start circle with origin (x0, y0) and radius r0, and the
-end circle with origin (x1, y1) and radius r1.
+Returns a :ref:`CanvasGradient <sdk_qtquick_canvasgradient>` object that
+represents a radial gradient that paints along the cone given by the
+start circle with origin (x0, y0) and radius r0, and the end circle with
+origin (x1, y1) and radius r1.
 
 **See also**
-`CanvasGradient::addColorStop() </sdk/apps/qml/QtQuick/CanvasGradient#addColorStop-method>`__,
-`createLinearGradient() </sdk/apps/qml/QtQuick/Context2D#createLinearGradient-method>`__,
-`createConicalGradient() </sdk/apps/qml/QtQuick/Context2D#createConicalGradient-method>`__,
-`createPattern() </sdk/apps/qml/QtQuick/Context2D#createPattern-method>`__,
-`fillStyle </sdk/apps/qml/QtQuick/Context2D#fillStyle-prop>`__, and
-`strokeStyle </sdk/apps/qml/QtQuick/Context2D#strokeStyle-prop>`__.
+:ref:`CanvasGradient::addColorStop() <sdk_qtquick_canvasgradient#addColorStop-method>`,
+:ref:`createLinearGradient() <sdk_qtquick_context2d#createLinearGradient-method>`,
+:ref:`createConicalGradient() <sdk_qtquick_context2d#createConicalGradient-method>`,
+:ref:`createPattern() <sdk_qtquick_context2d#createPattern-method>`,
+:ref:`fillStyle <sdk_qtquick_context2d#fillStyle-prop>`, and
+:ref:`strokeStyle <sdk_qtquick_context2d#strokeStyle-prop>`.
 
 | 
+
+.. _sdk_qtquick_context2d_drawImage-method:
 
 +--------------------------------------------------------------------------+
 |        \ drawImage(variant *image*, real *sx*, real *sy*, real *sw*,     |
@@ -821,25 +863,25 @@ source point (*sx*, *sy*) and source width *sw*, source height *sh* onto
 the canvas at point (*dx*, *dy*) and with width *dw*, height *dh*.
 
 Note: The *image* type can be an Image or Canvas item, an image url or a
-`CanvasImageData </sdk/apps/qml/QtQuick/CanvasImageData/>`__ object.
-When given as Image item, if the image isn't fully loaded, this method
-draws nothing. When given as url string, the image should be loaded by
-calling Canvas item's
-`Canvas::loadImage() </sdk/apps/qml/QtQuick/Canvas#loadImage-method>`__
+:ref:`CanvasImageData <sdk_qtquick_canvasimagedata>` object. When given as
+Image item, if the image isn't fully loaded, this method draws nothing.
+When given as url string, the image should be loaded by calling Canvas
+item's :ref:`Canvas::loadImage() <sdk_qtquick_canvas#loadImage-method>`
 method first. This image been drawing is subject to the current context
 clip path, even the given ``image`` is a
-`CanvasImageData </sdk/apps/qml/QtQuick/CanvasImageData/>`__ object.
+:ref:`CanvasImageData <sdk_qtquick_canvasimagedata>` object.
 
-**See also**
-`CanvasImageData </sdk/apps/qml/QtQuick/CanvasImageData/>`__,
-`Image </sdk/apps/qml/QtQuick/imageelements#image>`__,
-`Canvas::loadImage() </sdk/apps/qml/QtQuick/Canvas#loadImage-method>`__,
-`Canvas::isImageLoaded </sdk/apps/qml/QtQuick/Canvas#isImageLoaded-method>`__,
-`Canvas::imageLoaded </sdk/apps/qml/QtQuick/Canvas#imageLoaded-signal>`__,
-and `W3C 2d context standard for
-drawImage <http://www.w3.org/TR/2dcontext#dom-context-2d-drawimage>`__.
+**See also** :ref:`CanvasImageData <sdk_qtquick_canvasimagedata>`,
+`Image </sdk/apps/qml/QtQuick/imageelements/#image>`_ ,
+:ref:`Canvas::loadImage() <sdk_qtquick_canvas#loadImage-method>`,
+:ref:`Canvas::isImageLoaded <sdk_qtquick_canvas#isImageLoaded-method>`,
+:ref:`Canvas::imageLoaded <sdk_qtquick_canvas#imageLoaded-signal>`, and
+`W3C 2d context standard for
+drawImage <http://www.w3.org/TR/2dcontext/#dom-context-2d-drawimage>`_ .
 
 | 
+
+.. _sdk_qtquick_context2d_drawImage-method:
 
 +--------------------------------------------------------------------------+
 |        \ drawImage(variant *image*, real *dx*, real *dy*, real *dw*,     |
@@ -850,25 +892,25 @@ This is an overloaded function. Draws the given item as *image* onto the
 canvas at point (*dx*, *dy*) and with width *dw*, height *dh*.
 
 Note: The *image* type can be an Image item, an image url or a
-`CanvasImageData </sdk/apps/qml/QtQuick/CanvasImageData/>`__ object.
-When given as Image item, if the image isn't fully loaded, this method
-draws nothing. When given as url string, the image should be loaded by
-calling Canvas item's
-`Canvas::loadImage() </sdk/apps/qml/QtQuick/Canvas#loadImage-method>`__
+:ref:`CanvasImageData <sdk_qtquick_canvasimagedata>` object. When given as
+Image item, if the image isn't fully loaded, this method draws nothing.
+When given as url string, the image should be loaded by calling Canvas
+item's :ref:`Canvas::loadImage() <sdk_qtquick_canvas#loadImage-method>`
 method first. This image been drawing is subject to the current context
 clip path, even the given ``image`` is a
-`CanvasImageData </sdk/apps/qml/QtQuick/CanvasImageData/>`__ object.
+:ref:`CanvasImageData <sdk_qtquick_canvasimagedata>` object.
 
-**See also**
-`CanvasImageData </sdk/apps/qml/QtQuick/CanvasImageData/>`__,
-`Image </sdk/apps/qml/QtQuick/imageelements#image>`__,
-`Canvas::loadImage() </sdk/apps/qml/QtQuick/Canvas#loadImage-method>`__,
-`Canvas::isImageLoaded </sdk/apps/qml/QtQuick/Canvas#isImageLoaded-method>`__,
-`Canvas::imageLoaded </sdk/apps/qml/QtQuick/Canvas#imageLoaded-signal>`__,
-and `W3C 2d context standard for
-drawImage <http://www.w3.org/TR/2dcontext#dom-context-2d-drawimage>`__.
+**See also** :ref:`CanvasImageData <sdk_qtquick_canvasimagedata>`,
+`Image </sdk/apps/qml/QtQuick/imageelements/#image>`_ ,
+:ref:`Canvas::loadImage() <sdk_qtquick_canvas#loadImage-method>`,
+:ref:`Canvas::isImageLoaded <sdk_qtquick_canvas#isImageLoaded-method>`,
+:ref:`Canvas::imageLoaded <sdk_qtquick_canvas#imageLoaded-signal>`, and
+`W3C 2d context standard for
+drawImage <http://www.w3.org/TR/2dcontext/#dom-context-2d-drawimage>`_ .
 
 | 
+
+.. _sdk_qtquick_context2d_drawImage-method:
 
 +--------------------------------------------------------------------------+
 |        \ drawImage(variant *image*, real *dx*, real *dy*)                |
@@ -876,25 +918,25 @@ drawImage <http://www.w3.org/TR/2dcontext#dom-context-2d-drawimage>`__.
 
 Draws the given *image* on the canvas at position (*dx*, *dy*). Note:
 The *image* type can be an Image item, an image url or a
-`CanvasImageData </sdk/apps/qml/QtQuick/CanvasImageData/>`__ object.
-When given as Image item, if the image isn't fully loaded, this method
-draws nothing. When given as url string, the image should be loaded by
-calling Canvas item's
-`Canvas::loadImage() </sdk/apps/qml/QtQuick/Canvas#loadImage-method>`__
+:ref:`CanvasImageData <sdk_qtquick_canvasimagedata>` object. When given as
+Image item, if the image isn't fully loaded, this method draws nothing.
+When given as url string, the image should be loaded by calling Canvas
+item's :ref:`Canvas::loadImage() <sdk_qtquick_canvas#loadImage-method>`
 method first. This image been drawing is subject to the current context
 clip path, even the given ``image`` is a
-`CanvasImageData </sdk/apps/qml/QtQuick/CanvasImageData/>`__ object.
+:ref:`CanvasImageData <sdk_qtquick_canvasimagedata>` object.
 
-**See also**
-`CanvasImageData </sdk/apps/qml/QtQuick/CanvasImageData/>`__,
-`Image </sdk/apps/qml/QtQuick/imageelements#image>`__,
-`Canvas::loadImage </sdk/apps/qml/QtQuick/Canvas#loadImage-method>`__,
-`Canvas::isImageLoaded </sdk/apps/qml/QtQuick/Canvas#isImageLoaded-method>`__,
-`Canvas::imageLoaded </sdk/apps/qml/QtQuick/Canvas#imageLoaded-signal>`__,
-and `W3C 2d context standard for
-drawImage <http://www.w3.org/TR/2dcontext#dom-context-2d-drawimage>`__.
+**See also** :ref:`CanvasImageData <sdk_qtquick_canvasimagedata>`,
+`Image </sdk/apps/qml/QtQuick/imageelements/#image>`_ ,
+:ref:`Canvas::loadImage <sdk_qtquick_canvas#loadImage-method>`,
+:ref:`Canvas::isImageLoaded <sdk_qtquick_canvas#isImageLoaded-method>`,
+:ref:`Canvas::imageLoaded <sdk_qtquick_canvas#imageLoaded-signal>`, and
+`W3C 2d context standard for
+drawImage <http://www.w3.org/TR/2dcontext/#dom-context-2d-drawimage>`_ .
 
 | 
+
+.. _sdk_qtquick_context2d_object ellipse-method:
 
 +--------------------------------------------------------------------------+
 |        \ object ellipse(real *x*, real *y*, real *w*, real *h*)          |
@@ -909,6 +951,8 @@ zero degrees (the 3 o'clock position).
 
 | 
 
+.. _sdk_qtquick_context2d_object fill-method:
+
 +--------------------------------------------------------------------------+
 |        \ object fill()                                                   |
 +--------------------------------------------------------------------------+
@@ -916,46 +960,53 @@ zero degrees (the 3 o'clock position).
 Fills the subpaths with the current fill style.
 
 **See also** `W3C 2d context standard for
-fill <http://www.w3.org/TR/2dcontext#dom-context-2d-fill>`__ and
-`fillStyle </sdk/apps/qml/QtQuick/Context2D#fillStyle-prop>`__.
+fill <http://www.w3.org/TR/2dcontext/#dom-context-2d-fill>`_  and
+:ref:`fillStyle <sdk_qtquick_context2d#fillStyle-prop>`.
 
 | 
+
+.. _sdk_qtquick_context2d_object fillRect-method:
 
 +--------------------------------------------------------------------------+
 |        \ object fillRect(real *x*, real *y*, real *w*, real *h*)         |
 +--------------------------------------------------------------------------+
 
 Paint the specified rectangular area using the
-`fillStyle </sdk/apps/qml/QtQuick/Context2D#fillStyle-prop>`__.
+:ref:`fillStyle <sdk_qtquick_context2d#fillStyle-prop>`.
 
-**See also**
-`fillStyle </sdk/apps/qml/QtQuick/Context2D#fillStyle-prop>`__.
+**See also** :ref:`fillStyle <sdk_qtquick_context2d#fillStyle-prop>`.
 
 | 
 
+.. _sdk_qtquick_context2d_-method:
+
 +--------------------------------------------------------------------------+
-|        \ object                                                          |
-| fillText(`text </sdk/apps/qml/QtQuick/Context2D#text-method>`__, x, y)   |
+| :ref:` <>`\ object fillText(`text <sdk_qtquick_context2d#text-method>`,   |
+| x, y)                                                                    |
 +--------------------------------------------------------------------------+
 
 Fills the given text at the given position.
 
-**See also** `font </sdk/apps/qml/QtQuick/Context2D#font-prop>`__,
-`textAlign </sdk/apps/qml/QtQuick/Context2D#textAlign-prop>`__,
-`textBaseline </sdk/apps/qml/QtQuick/Context2D#textBaseline-prop>`__,
-and `strokeText </sdk/apps/qml/QtQuick/Context2D#strokeText-method>`__.
+**See also** :ref:`font <sdk_qtquick_context2d#font-prop>`,
+:ref:`textAlign <sdk_qtquick_context2d#textAlign-prop>`,
+:ref:`textBaseline <sdk_qtquick_context2d#textBaseline-prop>`, and
+:ref:`strokeText <sdk_qtquick_context2d#strokeText-method>`.
 
 | 
 
+.. _sdk_qtquick_context2d_-method:
+
 +--------------------------------------------------------------------------+
-|        \ `CanvasImageData </sdk/apps/qml/QtQuick/CanvasImageData/>`__    |
+| :ref:` <>`\ `CanvasImageData <sdk_qtquick_canvasimagedata>`            |
 | getImageData(real *sx*, real *sy*, real *sw*, real *sh*)                 |
 +--------------------------------------------------------------------------+
 
-Returns an `CanvasImageData </sdk/apps/qml/QtQuick/CanvasImageData/>`__
-object containing the image data for the given rectangle of the canvas.
+Returns an :ref:`CanvasImageData <sdk_qtquick_canvasimagedata>` object
+containing the image data for the given rectangle of the canvas.
 
 | 
+
+.. _sdk_qtquick_context2d_object isPointInPath-method:
 
 +--------------------------------------------------------------------------+
 |        \ object isPointInPath(real *x*, real *y*)                        |
@@ -964,9 +1015,11 @@ object containing the image data for the given rectangle of the canvas.
 Returns true if the given point is in the current path.
 
 **See also** `W3C 2d context standard for
-isPointInPath <http://www.w3.org/TR/2dcontext#dom-context-2d-ispointinpath>`__.
+isPointInPath <http://www.w3.org/TR/2dcontext/#dom-context-2d-ispointinpath>`_ .
 
 | 
+
+.. _sdk_qtquick_context2d_object lineTo-method:
 
 +--------------------------------------------------------------------------+
 |        \ object lineTo(real *x*, real *y*)                               |
@@ -976,9 +1029,11 @@ Draws a line from the current position to the point (x, y).
 
 | 
 
+.. _sdk_qtquick_context2d_object-method:
+
 +--------------------------------------------------------------------------+
 |        \ object                                                          |
-| measureText(`text </sdk/apps/qml/QtQuick/Context2D#text-method>`__)      |
+| measureText(:ref:`text <sdk_qtquick_context2d#text-method>`)                |
 +--------------------------------------------------------------------------+
 
 Returns an object with a ``width`` property, whose value is equivalent
@@ -986,6 +1041,8 @@ to calling QFontMetrics::width() with the given *text* in the current
 font.
 
 | 
+
+.. _sdk_qtquick_context2d_object moveTo-method:
 
 +--------------------------------------------------------------------------+
 |        \ object moveTo(real *x*, real *y*)                               |
@@ -995,10 +1052,11 @@ Creates a new subpath with the given point.
 
 | 
 
+.. _sdk_qtquick_context2d_object-method:
+
 +--------------------------------------------------------------------------+
 |        \ object                                                          |
-| putImageData(`CanvasImageData </sdk/apps/qml/QtQuick/CanvasImageData/>`_ |
-| _                                                                        |
+| putImageData(:ref:`CanvasImageData <sdk_qtquick_canvasimagedata>`           |
 | *imageData*, real *dx*, real *dy*, real *dirtyX*, real *dirtyY*, real    |
 | *dirtyWidth*, real *dirtyHeight*)                                        |
 +--------------------------------------------------------------------------+
@@ -1009,6 +1067,8 @@ provided, only the pixels from that rectangle are painted.
 
 | 
 
+.. _sdk_qtquick_context2d_object quadraticCurveTo-method:
+
 +--------------------------------------------------------------------------+
 |        \ object quadraticCurveTo(real *cpx*, real *cpy*, real *x*, real  |
 | *y*)                                                                     |
@@ -1018,9 +1078,11 @@ Adds a quadratic bezier curve between the current point and the endpoint
 (``x``, ``y``) with the control point specified by (``cpx``, ``cpy``).
 
 See `W3C 2d context standard for
-quadraticCurveTo <http://www.w3.org/TR/2dcontext#dom-context-2d-quadraticcurveto>`__
+quadraticCurveTo <http://www.w3.org/TR/2dcontext/#dom-context-2d-quadraticcurveto>`_ 
 
 | 
+
+.. _sdk_qtquick_context2d_object rect-method:
 
 +--------------------------------------------------------------------------+
 |        \ object rect(real *x*, real *y*, real *w*, real *h*)             |
@@ -1031,6 +1093,8 @@ and height ``h``, as a closed subpath.
 
 | 
 
+.. _sdk_qtquick_context2d_object reset-method:
+
 +--------------------------------------------------------------------------+
 |        \ object reset()                                                  |
 +--------------------------------------------------------------------------+
@@ -1039,21 +1103,24 @@ Resets the context state and properties to the default values.
 
 | 
 
+.. _sdk_qtquick_context2d_object resetTransform-method:
+
 +--------------------------------------------------------------------------+
 |        \ object resetTransform()                                         |
 +--------------------------------------------------------------------------+
 
 Reset the transformation matrix to the default value (equivalent to
 calling
-`setTransform </sdk/apps/qml/QtQuick/Context2D#setTransform-method>`__\ (``1``,
+:ref:`setTransform <sdk_qtquick_context2d#setTransform-method>`\ (``1``,
 ``0``, ``0``, ``1``, ``0``, ``0``)).
 
-**See also**
-`transform() </sdk/apps/qml/QtQuick/Context2D#transform-method>`__,
-`setTransform() </sdk/apps/qml/QtQuick/Context2D#setTransform-method>`__,
-and `reset() </sdk/apps/qml/QtQuick/Context2D#reset-method>`__.
+**See also** :ref:`transform() <sdk_qtquick_context2d#transform-method>`,
+:ref:`setTransform() <sdk_qtquick_context2d#setTransform-method>`, and
+:ref:`reset() <sdk_qtquick_context2d#reset-method>`.
 
 | 
+
+.. _sdk_qtquick_context2d_object restore-method:
 
 +--------------------------------------------------------------------------+
 |        \ object restore()                                                |
@@ -1061,9 +1128,11 @@ and `reset() </sdk/apps/qml/QtQuick/Context2D#reset-method>`__.
 
 Pops the top state on the stack, restoring the context to that state.
 
-**See also** `save() </sdk/apps/qml/QtQuick/Context2D#save-method>`__.
+**See also** :ref:`save() <sdk_qtquick_context2d#save-method>`.
 
 | 
+
+.. _sdk_qtquick_context2d_object rotate-method:
 
 +--------------------------------------------------------------------------+
 |        \ object rotate(real *angle*)                                     |
@@ -1086,6 +1155,8 @@ where the *angle* of rotation is in radians.
 
 | 
 
+.. _sdk_qtquick_context2d_object roundedRect-method:
+
 +--------------------------------------------------------------------------+
 |        \ object roundedRect(real *x*, real *y*, real *w*, real *h*, real |
 | *xRadius*, real *yRadius*)                                               |
@@ -1096,6 +1167,8 @@ Adds the given rectangle rect with rounded corners to the path. The
 defining the corners of the rounded rectangle.
 
 | 
+
+.. _sdk_qtquick_context2d_object save-method:
 
 +--------------------------------------------------------------------------+
 |        \ object save()                                                   |
@@ -1108,29 +1181,30 @@ for future reference. The context maintains a stack of drawing states.
 Each state consists of the current transformation matrix, clipping
 region, and values of the following attributes:
 
--  `strokeStyle </sdk/apps/qml/QtQuick/Context2D#strokeStyle-prop>`__
--  `fillStyle </sdk/apps/qml/QtQuick/Context2D#fillStyle-prop>`__
--  `fillRule </sdk/apps/qml/QtQuick/Context2D#fillRule-prop>`__
--  `globalAlpha </sdk/apps/qml/QtQuick/Context2D#globalAlpha-prop>`__
--  `lineWidth </sdk/apps/qml/QtQuick/Context2D#lineWidth-prop>`__
--  `lineCap </sdk/apps/qml/QtQuick/Context2D#lineCap-prop>`__
--  `lineJoin </sdk/apps/qml/QtQuick/Context2D#lineJoin-prop>`__
--  `miterLimit </sdk/apps/qml/QtQuick/Context2D#miterLimit-prop>`__
--  `shadowOffsetX </sdk/apps/qml/QtQuick/Context2D#shadowOffsetX-prop>`__
--  `shadowOffsetY </sdk/apps/qml/QtQuick/Context2D#shadowOffsetY-prop>`__
--  `shadowBlur </sdk/apps/qml/QtQuick/Context2D#shadowBlur-prop>`__
--  `shadowColor </sdk/apps/qml/QtQuick/Context2D#shadowColor-prop>`__
--  `globalCompositeOperation </sdk/apps/qml/QtQuick/Context2D#globalCompositeOperation-prop>`__
--  `font </sdk/apps/qml/QtQuick/Context2D#font-prop>`__
--  `textAlign </sdk/apps/qml/QtQuick/Context2D#textAlign-prop>`__
--  `textBaseline </sdk/apps/qml/QtQuick/Context2D#textBaseline-prop>`__
+-  :ref:`strokeStyle <sdk_qtquick_context2d#strokeStyle-prop>`
+-  :ref:`fillStyle <sdk_qtquick_context2d#fillStyle-prop>`
+-  :ref:`fillRule <sdk_qtquick_context2d#fillRule-prop>`
+-  :ref:`globalAlpha <sdk_qtquick_context2d#globalAlpha-prop>`
+-  :ref:`lineWidth <sdk_qtquick_context2d#lineWidth-prop>`
+-  :ref:`lineCap <sdk_qtquick_context2d#lineCap-prop>`
+-  :ref:`lineJoin <sdk_qtquick_context2d#lineJoin-prop>`
+-  :ref:`miterLimit <sdk_qtquick_context2d#miterLimit-prop>`
+-  :ref:`shadowOffsetX <sdk_qtquick_context2d#shadowOffsetX-prop>`
+-  :ref:`shadowOffsetY <sdk_qtquick_context2d#shadowOffsetY-prop>`
+-  :ref:`shadowBlur <sdk_qtquick_context2d#shadowBlur-prop>`
+-  :ref:`shadowColor <sdk_qtquick_context2d#shadowColor-prop>`
+-  :ref:`globalCompositeOperation <sdk_qtquick_context2d#globalCompositeOperation-prop>`
+-  :ref:`font <sdk_qtquick_context2d#font-prop>`
+-  :ref:`textAlign <sdk_qtquick_context2d#textAlign-prop>`
+-  :ref:`textBaseline <sdk_qtquick_context2d#textBaseline-prop>`
 
 The current path is NOT part of the drawing state. The path can be reset
-by invoking the
-`beginPath() </sdk/apps/qml/QtQuick/Context2D#beginPath-method>`__
+by invoking the :ref:`beginPath() <sdk_qtquick_context2d#beginPath-method>`
 method.
 
 | 
+
+.. _sdk_qtquick_context2d_object scale-method:
 
 +--------------------------------------------------------------------------+
 |        \ object scale(real *x*, real *y*)                                |
@@ -1152,6 +1226,8 @@ canvas and halves its vertical size:
 
 | 
 
+.. _sdk_qtquick_context2d_object setTransform-method:
+
 +--------------------------------------------------------------------------+
 |        \ object setTransform(real *a*, real *b*, real *c*, real *d*,     |
 | real *e*, real *f*)                                                      |
@@ -1165,7 +1241,7 @@ scaling, rotating, and translating transformations in a single step.
 
 Each point on the canvas is multiplied by the matrix before anything is
 drawn. The `HTML Canvas 2D Context
-specification <http://www.w3.org/TR/2dcontext#transformations>`__
+specification <http://www.w3.org/TR/2dcontext/#transformations>`_ 
 defines the transformation matrix as:
 
 |image8|
@@ -1202,10 +1278,11 @@ The scale factors and skew factors are multiples; ``e`` and ``f`` are
 coordinate space units, just like the units in the translate(x,y)
 method.
 
-**See also**
-`transform() </sdk/apps/qml/QtQuick/Context2D#transform-method>`__.
+**See also** :ref:`transform() <sdk_qtquick_context2d#transform-method>`.
 
 | 
+
+.. _sdk_qtquick_context2d_object shear-method:
 
 +--------------------------------------------------------------------------+
 |        \ object shear(real *sh*, real *sv*)                              |
@@ -1216,6 +1293,8 @@ Shears the transformation matrix by *sh* in the horizontal direction and
 
 | 
 
+.. _sdk_qtquick_context2d_object stroke-method:
+
 +--------------------------------------------------------------------------+
 |        \ object stroke()                                                 |
 +--------------------------------------------------------------------------+
@@ -1223,46 +1302,48 @@ Shears the transformation matrix by *sh* in the horizontal direction and
 Strokes the subpaths with the current stroke style.
 
 See `W3C 2d context standard for
-stroke <http://www.w3.org/TR/2dcontext#dom-context-2d-stroke>`__
+stroke <http://www.w3.org/TR/2dcontext/#dom-context-2d-stroke>`_ 
 
-**See also**
-`strokeStyle </sdk/apps/qml/QtQuick/Context2D#strokeStyle-prop>`__.
+**See also** :ref:`strokeStyle <sdk_qtquick_context2d#strokeStyle-prop>`.
 
 | 
+
+.. _sdk_qtquick_context2d_object strokeRect-method:
 
 +--------------------------------------------------------------------------+
 |        \ object strokeRect(real *x*, real *y*, real *w*, real *h*)       |
 +--------------------------------------------------------------------------+
 
 Stroke the specified rectangle's path using the
-`strokeStyle </sdk/apps/qml/QtQuick/Context2D#strokeStyle-prop>`__,
-`lineWidth </sdk/apps/qml/QtQuick/Context2D#lineWidth-prop>`__,
-`lineJoin </sdk/apps/qml/QtQuick/Context2D#lineJoin-prop>`__, and (if
-appropriate)
-`miterLimit </sdk/apps/qml/QtQuick/Context2D#miterLimit-prop>`__
-attributes.
+:ref:`strokeStyle <sdk_qtquick_context2d#strokeStyle-prop>`,
+:ref:`lineWidth <sdk_qtquick_context2d#lineWidth-prop>`,
+:ref:`lineJoin <sdk_qtquick_context2d#lineJoin-prop>`, and (if appropriate)
+:ref:`miterLimit <sdk_qtquick_context2d#miterLimit-prop>` attributes.
 
-**See also**
-`strokeStyle </sdk/apps/qml/QtQuick/Context2D#strokeStyle-prop>`__,
-`lineWidth </sdk/apps/qml/QtQuick/Context2D#lineWidth-prop>`__,
-`lineJoin </sdk/apps/qml/QtQuick/Context2D#lineJoin-prop>`__, and
-`miterLimit </sdk/apps/qml/QtQuick/Context2D#miterLimit-prop>`__.
+**See also** :ref:`strokeStyle <sdk_qtquick_context2d#strokeStyle-prop>`,
+:ref:`lineWidth <sdk_qtquick_context2d#lineWidth-prop>`,
+:ref:`lineJoin <sdk_qtquick_context2d#lineJoin-prop>`, and
+:ref:`miterLimit <sdk_qtquick_context2d#miterLimit-prop>`.
 
 | 
 
+.. _sdk_qtquick_context2d_-method:
+
 +--------------------------------------------------------------------------+
-|        \ object                                                          |
-| strokeText(`text </sdk/apps/qml/QtQuick/Context2D#text-method>`__, x, y) |
+| :ref:` <>`\ object strokeText(`text <sdk_qtquick_context2d#text-method>`, |
+| x, y)                                                                    |
 +--------------------------------------------------------------------------+
 
 Strokes the given text at the given position.
 
-**See also** `font </sdk/apps/qml/QtQuick/Context2D#font-prop>`__,
-`textAlign </sdk/apps/qml/QtQuick/Context2D#textAlign-prop>`__,
-`textBaseline </sdk/apps/qml/QtQuick/Context2D#textBaseline-prop>`__,
-and `fillText </sdk/apps/qml/QtQuick/Context2D#fillText-method>`__.
+**See also** :ref:`font <sdk_qtquick_context2d#font-prop>`,
+:ref:`textAlign <sdk_qtquick_context2d#textAlign-prop>`,
+:ref:`textBaseline <sdk_qtquick_context2d#textBaseline-prop>`, and
+:ref:`fillText <sdk_qtquick_context2d#fillText-method>`.
 
 | 
+
+.. _sdk_qtquick_context2d_object text-method:
 
 +--------------------------------------------------------------------------+
 |        \ object text(string *text*, real *x*, real *y*)                  |
@@ -1275,26 +1356,29 @@ that the left end of the text's baseline lies at the point specified by
 
 | 
 
+.. _sdk_qtquick_context2d_object transform-method:
+
 +--------------------------------------------------------------------------+
 |        \ object transform(real *a*, real *b*, real *c*, real *d*, real   |
 | *e*, real *f*)                                                           |
 +--------------------------------------------------------------------------+
 
 This method is very similar to
-`setTransform() </sdk/apps/qml/QtQuick/Context2D#setTransform-method>`__,
-but instead of replacing the old transform matrix, this method applies
-the given tranform matrix to the current matrix by multiplying to it.
+:ref:`setTransform() <sdk_qtquick_context2d#setTransform-method>`, but
+instead of replacing the old transform matrix, this method applies the
+given tranform matrix to the current matrix by multiplying to it.
 
-The
-`setTransform </sdk/apps/qml/QtQuick/Context2D#setTransform-method>`__\ (a,
-b, c, d, e, f) method actually resets the current transform to the
-identity matrix, and then invokes the transform(a, b, c, d, e, f) method
-with the same arguments.
+The :ref:`setTransform <sdk_qtquick_context2d#setTransform-method>`\ (a, b,
+c, d, e, f) method actually resets the current transform to the identity
+matrix, and then invokes the transform(a, b, c, d, e, f) method with the
+same arguments.
 
 **See also**
-`setTransform() </sdk/apps/qml/QtQuick/Context2D#setTransform-method>`__.
+:ref:`setTransform() <sdk_qtquick_context2d#setTransform-method>`.
 
 | 
+
+.. _sdk_qtquick_context2d_object translate-method:
 
 +--------------------------------------------------------------------------+
 |        \ object translate(real *x*, real *y*)                            |
@@ -1309,19 +1393,19 @@ each shape.
 
 | 
 
-.. |image0| image:: /media/sdk/apps/qml/QtQuick/Context2D/images/qml-item-canvas-context.gif
-.. |image1| image:: /media/sdk/apps/qml/QtQuick/Context2D/images/qml-item-canvas-startAngle.png
-.. |image2| image:: /media/sdk/apps/qml/QtQuick/Context2D/images/qml-item-canvas-arcTo.png
-.. |image3| image:: /media/sdk/apps/qml/QtQuick/Context2D/images/qml-item-canvas-bezierCurveTo.png
-.. |image4| image:: /media/sdk/apps/qml/QtQuick/Context2D/images/qml-item-canvas-clip-complex.png
-.. |image5| image:: /media/sdk/apps/qml/QtQuick/Context2D/images/qml-item-canvas-rotate.png
-.. |image6| image:: /media/sdk/apps/qml/QtQuick/Context2D/images/qml-item-canvas-math-rotate.png
-.. |image7| image:: /media/sdk/apps/qml/QtQuick/Context2D/images/qml-item-canvas-scale.png
-.. |image8| image:: /media/sdk/apps/qml/QtQuick/Context2D/images/qml-item-canvas-math.png
-.. |image9| image:: /media/sdk/apps/qml/QtQuick/Context2D/images/qml-item-canvas-scalex.png
-.. |image10| image:: /media/sdk/apps/qml/QtQuick/Context2D/images/qml-item-canvas-skewx.png
-.. |image11| image:: /media/sdk/apps/qml/QtQuick/Context2D/images/qml-item-canvas-translate.png
-.. |image12| image:: /media/sdk/apps/qml/QtQuick/Context2D/images/qml-item-canvas-skewy.png
-.. |image13| image:: /media/sdk/apps/qml/QtQuick/Context2D/images/qml-item-canvas-scaley.png
-.. |image14| image:: /media/sdk/apps/qml/QtQuick/Context2D/images/qml-item-canvas-translatey.png
+.. |image0| image:: /mediasdk_qtquick_context2dimages/qml-item-canvas-context.gif
+.. |image1| image:: /mediasdk_qtquick_context2dimages/qml-item-canvas-startAngle.png
+.. |image2| image:: /mediasdk_qtquick_context2dimages/qml-item-canvas-arcTo.png
+.. |image3| image:: /mediasdk_qtquick_context2dimages/qml-item-canvas-bezierCurveTo.png
+.. |image4| image:: /mediasdk_qtquick_context2dimages/qml-item-canvas-clip-complex.png
+.. |image5| image:: /mediasdk_qtquick_context2dimages/qml-item-canvas-rotate.png
+.. |image6| image:: /mediasdk_qtquick_context2dimages/qml-item-canvas-math-rotate.png
+.. |image7| image:: /mediasdk_qtquick_context2dimages/qml-item-canvas-scale.png
+.. |image8| image:: /mediasdk_qtquick_context2dimages/qml-item-canvas-math.png
+.. |image9| image:: /mediasdk_qtquick_context2dimages/qml-item-canvas-scalex.png
+.. |image10| image:: /mediasdk_qtquick_context2dimages/qml-item-canvas-skewx.png
+.. |image11| image:: /mediasdk_qtquick_context2dimages/qml-item-canvas-translate.png
+.. |image12| image:: /mediasdk_qtquick_context2dimages/qml-item-canvas-skewy.png
+.. |image13| image:: /mediasdk_qtquick_context2dimages/qml-item-canvas-scaley.png
+.. |image14| image:: /mediasdk_qtquick_context2dimages/qml-item-canvas-translatey.png
 

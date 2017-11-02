@@ -1,7 +1,11 @@
+.. _sdk_autopilot_application_clickapplicationlauncher:
+autopilot.application ClickApplicationLauncher
+==============================================
+
  *class*
 ``autopilot.application.``\ ``ClickApplicationLauncher``\ (*case\_addDetail=None*,
 *emulator\_base=None*,
-*dbus\_bus='session'*)\ ` <#autopilot.application.ClickApplicationLauncher>`__
+*dbus\_bus='session'*)\ ` <#autopilot.application.ClickApplicationLauncher>`_ 
     Fixture to manage launching a Click application.A class that knows
     how to launch an application with a certain type of introspection
     enabled.
@@ -13,7 +17,7 @@
     +---------------+------------------------------------------------------------------------------------------------------------------------------+
 
      ``launch``\ (*package\_id*, *app\_name=None*,
-    *app\_uris=[]*)\ ` <#autopilot.application.ClickApplicationLauncher.launch>`__
+    *app\_uris=[]*)\ ` <#autopilot.application.ClickApplicationLauncher.launch>`_ 
         Launch a click package application with introspection enabled.
 
         This method takes care of launching a click package with

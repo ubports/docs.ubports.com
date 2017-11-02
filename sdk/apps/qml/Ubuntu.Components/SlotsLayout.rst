@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_slotslayout:
+Ubuntu.Components SlotsLayout
+=============================
+
 The SlotsLayout component provides an easy way to layout a list of
 user-interface elements horizontally following Ubuntu design standards.
 We call the elements which we want to layout "slots". **Slots** is just
@@ -8,52 +12,50 @@ another name for SlotsLayout's **visual children**.
 +--------------------------------------+--------------------------------------+
 | Since:                               | Ubuntu.Components 1.3                |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Item </sdk/apps/qml/QtQuick/Item/>` |
-|                                      | __                                   |
+| Inherits:                            | :ref:`Item <sdk_qtquick_item>`       |
 +--------------------------------------+--------------------------------------+
-| Inherited By:                        | `ListItemLayout </sdk/apps/qml/Ubunt |
-|                                      | u.Components/ListItemLayout/>`__.    |
+| Inherited By:                        | :ref:`ListItemLayout <sdk_ubuntu_componen |
+|                                      | ts_listitemlayout>`_ .               |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`mainSlot </sdk/apps/qml/Ubuntu.Components/SlotsLayout#mainSlot-prop>`__****
+-  :ref:`mainSlot <sdk_ubuntu_components_slotslayout_mainSlot-prop>`
    : Item
--  ****`padding </sdk/apps/qml/Ubuntu.Components/SlotsLayout#padding-prop>`__****
+-  :ref:`padding <sdk_ubuntu_components_slotslayout_padding-prop>`
 
-   -  ****`padding.top </sdk/apps/qml/Ubuntu.Components/SlotsLayout#padding.top-prop>`__****
+   -  :ref:`padding.top <sdk_ubuntu_components_slotslayout_padding.top-prop>`
       : real
-   -  ****`padding.bottom </sdk/apps/qml/Ubuntu.Components/SlotsLayout#padding.bottom-prop>`__****
+   -  :ref:`padding.bottom <sdk_ubuntu_components_slotslayout_padding.bottom-prop>`
       : real
-   -  ****`padding.leading </sdk/apps/qml/Ubuntu.Components/SlotsLayout#padding.leading-prop>`__****
+   -  :ref:`padding.leading <sdk_ubuntu_components_slotslayout_padding.leading-prop>`
       : real
-   -  ****`padding.trailing </sdk/apps/qml/Ubuntu.Components/SlotsLayout#padding.trailing-prop>`__****
+   -  :ref:`padding.trailing <sdk_ubuntu_components_slotslayout_padding.trailing-prop>`
       : real
 
 Attached Properties
 -------------------
 
--  ****`overrideVerticalPositioning </sdk/apps/qml/Ubuntu.Components/SlotsLayout#overrideVerticalPositioning-attached-prop>`__****
+-  :ref:`overrideVerticalPositioning <sdk_ubuntu_components_slotslayout_overrideVerticalPositioning-attached-prop>`
    : bool
--  ****`padding </sdk/apps/qml/Ubuntu.Components/SlotsLayout#padding-attached-prop>`__****
+-  :ref:`padding <sdk_ubuntu_components_slotslayout_padding-attached-prop>`
    : QtObject
--  ****`position </sdk/apps/qml/Ubuntu.Components/SlotsLayout#position-attached-prop>`__****
+-  :ref:`position <sdk_ubuntu_components_slotslayout_position-attached-prop>`
    : enumeration
 
 Detailed Description
 --------------------
 
-`SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__ will
-layout its children according to Ubuntu's visual design rules, providing
-automatic spacing and positioning (both horizontal and vertical, unless
-`overrideVerticalPositioning </sdk/apps/qml/Ubuntu.Components/SlotsLayout#overrideVerticalPositioning-attached-prop>`__
+:ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>` will layout its
+children according to Ubuntu's visual design rules, providing automatic
+spacing and positioning (both horizontal and vertical, unless
+:ref:`overrideVerticalPositioning <sdk_ubuntu_components_slotslayout#overrideVerticalPositioning-attached-prop>`
 is set) for each of them.
 
 **If you're building list items,** we recommend to use
-`ListItemLayout </sdk/apps/qml/Ubuntu.Components/ListItemLayout/>`__, as
-it is designed to accomodate up to 3 labels that follow our UI
-standards.
+:ref:`ListItemLayout <sdk_ubuntu_components_listitemlayout>`, as it is
+designed to accomodate up to 3 labels that follow our UI standards.
 
 There are three conceptual types of slots:
 
@@ -61,40 +63,40 @@ There are three conceptual types of slots:
    of the layout (i.e. they are the leftmost elements in left-to-right
    locales).
 -  The **trailing slots**, which are positioned after
-   `mainSlot </sdk/apps/qml/Ubuntu.Components/SlotsLayout#mainSlot-prop>`__,
-   if any, or after the leading slots otherwise.
+   :ref:`mainSlot <sdk_ubuntu_components_slotslayout#mainSlot-prop>`, if
+   any, or after the leading slots otherwise.
 -  The **main slot**, which drives the positioning of the vertical
    dimension of each slot as described in section `Automatic vertical
    positioning of
-   slots </sdk/apps/qml/Ubuntu.Components/SlotsLayout#automatic-vertical-positioning-of-slots>`__.
+   slots <sdk_ubuntu_components_slotslayout#automatic-vertical-positioning-of-slots>:ref:`.
    This slot sits between leading and trailing slots, and can be set
    using the property
-   `mainSlot </sdk/apps/qml/Ubuntu.Components/SlotsLayout#mainSlot-prop>`__.
+   :ref:`mainSlot <sdk_ubuntu_components_slotslayout#mainSlot-prop>`.
 
 In order to comply with Ubuntu design standards, this component hosts a
 maximum of 1 leading and 2 trailing slots. The layout algorithm will
 ignore any additional item.
 
-`SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__ also
-provides a series of properties which are attached to each slot. However
-not all properties are valid in all the circumstances. These properties
-allow an easy tweaking of slot's positioning within the layout.
-`SlotsLayout::position </sdk/apps/qml/Ubuntu.Components/SlotsLayout#position-attached-prop>`__
+:ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>` also provides a
+series of properties which are attached to each slot. However not all
+properties are valid in all the circumstances. These properties allow an
+easy tweaking of slot's positioning within the layout.
+:ref:`SlotsLayout::position <sdk_ubuntu_components_slotslayout#position-attached-prop>`
 can be used to set whether a slot should be a leading or trailing one.
-`SlotsLayout::padding </sdk/apps/qml/Ubuntu.Components/SlotsLayout#padding-attached-prop>`__
+:ref:`SlotsLayout::padding <sdk_ubuntu_components_slotslayout#padding-attached-prop>`
 can be used to tweak the padding around a slot.
-`SlotsLayout::overrideVerticalPositioning </sdk/apps/qml/Ubuntu.Components/SlotsLayout#overrideVerticalPositioning-attached-prop>`__
+:ref:`SlotsLayout::overrideVerticalPositioning <sdk_ubuntu_components_slotslayout#overrideVerticalPositioning-attached-prop>`
 allows to disable the automatic positioning of the vertical coordinate
 of a slot as described in `Automatic vertical positioning of
-slots </sdk/apps/qml/Ubuntu.Components/SlotsLayout#automatic-vertical-positioning-of-slots>`__,
+slots <sdk_ubuntu_components_slotslayout#automatic-vertical-positioning-of-slots>:ref:`,
 in case a custom behaviour is needed.
 
 The following example shows a very simple
-`SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__ with an
-`Icon </sdk/apps/qml/Ubuntu.Components/Icon/>`__ as leading slot, and a
-`CheckBox </sdk/apps/qml/Ubuntu.Components/CheckBox/>`__ as trailing
-slot. There is no need to specify any size or margin, everything is
-handled automatically by the layout component.
+:ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>` with an
+:ref:`Icon <sdk_ubuntu_components_icon>` as leading slot, and a
+:ref:`CheckBox <sdk_ubuntu_components_checkbox>` as trailing slot. There is
+no need to specify any size or margin, everything is handled
+automatically by the layout component.
 
 .. code:: qml
 
@@ -112,46 +114,43 @@ handled automatically by the layout component.
 
 The positioning of each slot should only be tweaked using its attached
 properties. Just like when using
-`QtQuick <http://doc.qt.io/qt-5/qtquick-qmlmodule.html>`__'s Row, a
+`QtQuick <http://doc.qt.io/qt-5/qtquick-qmlmodule.html>`_ 's Row, a
 child item within the layout should not set its **x** or **anchors**
 affecting the horizontal positioning (left, right, horizontalCenter,
 centerIn, fill). If you need to perform these actions, consider
 positioning the items without the use of a
-`SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__.
+:ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>`.
 
 The vertical **anchors** of a slot can be modified, **provided that**
-`SlotsLayout::overrideVerticalPositioning </sdk/apps/qml/Ubuntu.Components/SlotsLayout#overrideVerticalPositioning-attached-prop>`__
+:ref:`SlotsLayout::overrideVerticalPositioning <sdk_ubuntu_components_slotslayout#overrideVerticalPositioning-attached-prop>`
 for that slot is set. More about this in the `Advanced layout
-tweaks </sdk/apps/qml/Ubuntu.Components/SlotsLayout#advanced-layout-tweaks>`__
+tweaks <sdk_ubuntu_components_slotslayout#advanced-layout-tweaks>:ref:`
 section.
 
 Resizing the layout
 -------------------
 
-`SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__'s
-**implicit width** is by default set to the width of the parent (usually
-a `ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__). Changing
-the width of the layout is possible but should not be needed in most of
-the usecases: keeping the width in sync with the width of its parent
-allows the user interface to be scalable across devices with varying
-resolution and form factors.
+:ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>`'s **implicit width**
+is by default set to the width of the parent (usually a
+:ref:`ListItem <sdk_ubuntu_components_listitem>`). Changing the width of
+the layout is possible but should not be needed in most of the usecases:
+keeping the width in sync with the width of its parent allows the user
+interface to be scalable across devices with varying resolution and form
+factors.
 
 The **implicit height** is not fixed either. In order not to clip any of
-the slots, the
-`SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__ adapts to
-accomodate its highest slot with padding and the padding around the
-layout.
+the slots, the :ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>`
+adapts to accomodate its highest slot with padding and the padding
+around the layout.
 
 Because of the above, it is recommended to have items wrapping the
-layout bind to
-`SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__'s
-**height** (adding
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ **divider**'s
-height if needed), not the opposite. It is not recommended, for
-instance, to use anchors.fill to force
-`SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__ to fill
-another Item, because that item might not have enough space to accomdate
-all the slots, and therefore the slots will be clipped.
+layout bind to :ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>`'s
+**height** (adding :ref:`ListItem <sdk_ubuntu_components_listitem>`
+**divider**'s height if needed), not the opposite. It is not
+recommended, for instance, to use anchors.fill to force
+:ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>` to fill another
+Item, because that item might not have enough space to accomdate all the
+slots, and therefore the slots will be clipped.
 
 .. code:: qml
 
@@ -169,14 +168,12 @@ all the slots, and therefore the slots will be clipped.
         }
     }
 
-Manually resizing
-`SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__ (or
-`ListItemLayout </sdk/apps/qml/Ubuntu.Components/ListItemLayout/>`__) is
+Manually resizing :ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>`
+(or :ref:`ListItemLayout <sdk_ubuntu_components_listitemlayout>`) is
 usually not needed and we recommend to avoid it, as the component will
 already take care of doing the job for you. The following example shows
-what a standard
-`SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__ should
-look like:
+what a standard :ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>`
+should look like:
 
 .. code:: qml
 
@@ -192,54 +189,51 @@ Automatic vertical positioning of slots
 ---------------------------------------
 
 In order to provide a visually pleasing and consistent layout across the
-whole platform,
-`SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__
+whole platform, :ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>`
 automatically handles the vertical positioning of its slots so that they
 comply with the following rules:
 
 -  if there's any slot which is taller or as tall as
-   `mainSlot </sdk/apps/qml/Ubuntu.Components/SlotsLayout#mainSlot-prop>`__
-   or if no
-   `mainSlot </sdk/apps/qml/Ubuntu.Components/SlotsLayout#mainSlot-prop>`__
-   is defined, all slots will be **vertically centered** within the
-   layout (still taking
-   `SlotsLayout::padding.top </sdk/apps/qml/Ubuntu.Components/SlotsLayout#padding.top-prop>`__
+   :ref:`mainSlot <sdk_ubuntu_components_slotslayout#mainSlot-prop>` or if
+   no :ref:`mainSlot <sdk_ubuntu_components_slotslayout#mainSlot-prop>` is
+   defined, all slots will be **vertically centered** within the layout
+   (still taking
+   :ref:`SlotsLayout::padding.top <sdk_ubuntu_components_slotslayout#padding.top-prop>`
    and
-   `SlotsLayout::padding.bottom </sdk/apps/qml/Ubuntu.Components/SlotsLayout#padding.bottom-prop>`__
+   :ref:`SlotsLayout::padding.bottom <sdk_ubuntu_components_slotslayout#padding.bottom-prop>`
    into account).
 
    |image0|
 
 -  **Otherwise**, all the slots (including
-   `mainSlot </sdk/apps/qml/Ubuntu.Components/SlotsLayout#mainSlot-prop>`__)
-   will be **aligned to the top** of the layout with a padding of
-   `SlotsLayout::padding.top </sdk/apps/qml/Ubuntu.Components/SlotsLayout#padding.top-prop>`__
+   :ref:`mainSlot <sdk_ubuntu_components_slotslayout#mainSlot-prop>`) will
+   be **aligned to the top** of the layout with a padding of
+   :ref:`SlotsLayout::padding.top <sdk_ubuntu_components_slotslayout#padding.top-prop>`
    plus the top padding of the slot, defined in its attached properties.
 
    |image1|
 
 Even though it is **not recommended**, it is still possible to override
 this behaviour on a slot-by-slot basis by setting
-`SlotsLayout::overrideVerticalPositioning </sdk/apps/qml/Ubuntu.Components/SlotsLayout#overrideVerticalPositioning-attached-prop>`__
+:ref:`SlotsLayout::overrideVerticalPositioning <sdk_ubuntu_components_slotslayout#overrideVerticalPositioning-attached-prop>`
 to true. This is described in `Advanced layout
-tweaks </sdk/apps/qml/Ubuntu.Components/SlotsLayout#advanced-layout-tweaks>`__.
+tweaks <sdk_ubuntu_components_slotslayout#advanced-layout-tweaks>:ref:`.
 
 Input handling
 --------------
 
-The purpose of
-`SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__ is to
+The purpose of :ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>` is to
 position its slots following the rules defined in `Automatic vertical
 positioning of
-slots </sdk/apps/qml/Ubuntu.Components/SlotsLayout#automatic-vertical-positioning-of-slots>`__.
+slots <sdk_ubuntu_components_slotslayout#automatic-vertical-positioning-of-slots>:ref:`.
 There are two recommended ways to implement input handling: the first
 one, in case the target is to create a list item, is to put the
-`SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__ (or any
-derived component, like
-`ListItemLayout </sdk/apps/qml/Ubuntu.Components/ListItemLayout/>`__)
-inside a `ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__, and
-use `ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__'s onClicked
-handler to handle clicks and taps.
+:ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>` (or any derived
+component, like
+:ref:`ListItemLayout <sdk_ubuntu_components_listitemlayout>`) inside a
+:ref:`ListItem <sdk_ubuntu_components_listitem>`, and use
+:ref:`ListItem <sdk_ubuntu_components_listitem>`'s onClicked handler to
+handle clicks and taps.
 
 .. code:: qml
 
@@ -256,10 +250,9 @@ handler to handle clicks and taps.
         }
     }
 
-The second option is to use a
-`MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ as a wrapper around
-`SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__, as the
-following code demonstrates:
+The second option is to use a :ref:`MouseArea <sdk_qtquick_mousearea>` as a
+wrapper around :ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>`, as
+the following code demonstrates:
 
 .. code:: qml
 
@@ -279,43 +272,42 @@ following code demonstrates:
     }
 
 **Note**: as recommended in `Resizing the
-layout </sdk/apps/qml/Ubuntu.Components/SlotsLayout#resizing-the-layout>`__,
-since `SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__ has
-a dynamic height, it is important to have the parent item's height (in
-this case `MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__) follow
-`SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__'s
-**height**, and not the opposite, to avoid getting the slots clipped out
-of the layout.
+layout <sdk_ubuntu_components_slotslayout#resizing-the-layout>:ref:`, since
+:ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>` has a dynamic
+height, it is important to have the parent item's height (in this case
+:ref:`MouseArea <sdk_qtquick_mousearea>`) follow
+:ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>`'s **height**, and
+not the opposite, to avoid getting the slots clipped out of the layout.
 
 Advanced layout tweaks
 ----------------------
 
 The automatic layout provided by
-`SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__ is
-designed to cover most of the usecases. There could be times, however,
-where you might want to tweak the positioning of one particular slot.
+:ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>` is designed to cover
+most of the usecases. There could be times, however, where you might
+want to tweak the positioning of one particular slot.
 
 A slot can set its attached properties
-`SlotsLayout::padding </sdk/apps/qml/Ubuntu.Components/SlotsLayout#padding-attached-prop>`__
+:ref:`SlotsLayout::padding <sdk_ubuntu_components_slotslayout#padding-attached-prop>`
 and
-`SlotsLayout::overrideVerticalPositioning </sdk/apps/qml/Ubuntu.Components/SlotsLayout#overrideVerticalPositioning-attached-prop>`__
+:ref:`SlotsLayout::overrideVerticalPositioning <sdk_ubuntu_components_slotslayout#overrideVerticalPositioning-attached-prop>`
 to reach the desired position.
 
 When a slot enables
-`SlotsLayout::overrideVerticalPositioning </sdk/apps/qml/Ubuntu.Components/SlotsLayout#overrideVerticalPositioning-attached-prop>`__,
+:ref:`SlotsLayout::overrideVerticalPositioning <sdk_ubuntu_components_slotslayout#overrideVerticalPositioning-attached-prop>`,
 it gains control over its vertical anchors (top, bottom,
 verticalCenter). Moreover,
-`SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__ will
-ignore the height of that slot in the following computations of its
-implicitHeight (see `Resizing the
-layout </sdk/apps/qml/Ubuntu.Components/SlotsLayout#resizing-the-layout>`__).
+:ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>` will ignore the
+height of that slot in the following computations of its implicitHeight
+(see `Resizing the
+layout <sdk_ubuntu_components_slotslayout#resizing-the-layout>:ref:`).
 
 When manually positioning a slot, care must be taken to avoid pushing
 the slot outside of the layout perimeter, to avoid getting it clipped.
 
 The following example shows a
-`SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__ which has
-both custom padding and a slot which uses custom vertical positioning:
+:ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>` which has both
+custom padding and a slot which uses custom vertical positioning:
 
 .. code:: qml
 
@@ -335,20 +327,19 @@ both custom padding and a slot which uses custom vertical positioning:
 
 It is also possible to sort the slots in a relative fashion, by using
 positions such as
-`SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__.Leading+1,
-for instance, if we want that slot to always be positioned after items
-with position
-`SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__.Leading.
+:ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>`.Leading+1, for
+instance, if we want that slot to always be positioned after items with
+position :ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>`.Leading.
 This is particularly useful, for example, when subclassing
-`SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__-based
-components which already have predefined slots inside them. If, for
-instance, the component we're subclassing has a slot with position
-`SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__.Trailing,
-we can add a slot to our subclass with position
-`SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__.Trailing-1
-if we want to make sure our slot is always positioned before the one in
-the component we are deriving from. This scenario is shown in the
-following example code:
+:ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>`-based components
+which already have predefined slots inside them. If, for instance, the
+component we're subclassing has a slot with position
+:ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>`.Trailing, we can add
+a slot to our subclass with position
+:ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>`.Trailing-1 if we
+want to make sure our slot is always positioned before the one in the
+component we are deriving from. This scenario is shown in the following
+example code:
 
 .. code:: qml
 
@@ -372,29 +363,29 @@ following example code:
         }
     }
 
-**See also**
-`ListItemLayout </sdk/apps/qml/Ubuntu.Components/ListItemLayout/>`__.
+**See also** :ref:`ListItemLayout <sdk_ubuntu_components_listitemlayout>`.
 
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_slotslayout_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ mainSlot : `Item </sdk/apps/qml/QtQuick/Item/>`__               |
+| :ref:` <>`\ mainSlot : `Item <sdk_qtquick_item>`                       |
 +--------------------------------------------------------------------------+
 
 This property represents the main slot of the layout. By default,
-`SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__ has no
-mainSlot set.
+:ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>` has no mainSlot set.
 
 The main slot is the one that defines the vertical positioning of the
 other slots. Because of this, changing its position and
-`overrideVerticalPositioning </sdk/apps/qml/Ubuntu.Components/SlotsLayout#overrideVerticalPositioning-attached-prop>`__
+:ref:`overrideVerticalPositioning <sdk_ubuntu_components_slotslayout#overrideVerticalPositioning-attached-prop>`
 attached properties has no effect. More details can be found in the
 section `Automatic vertical positioning of
-slots </sdk/apps/qml/Ubuntu.Components/SlotsLayout#automatic-vertical-positioning-of-slots>`__.
+slots <sdk_ubuntu_components_slotslayout#automatic-vertical-positioning-of-slots>:ref:`.
 
 **Note**: because of limitations in
-`QtQuick <http://doc.qt.io/qt-5/qtquick-qmlmodule.html>`__/QML, it is
+`QtQuick <http://doc.qt.io/qt-5/qtquick-qmlmodule.html>`_ /QML, it is
 not possible to initialize mainSlot's attached properties. Setting
 mainSlot's attached properties has to be done via JS, for example inside
 Component.onCompleted, as shown in the following example:
@@ -417,13 +408,18 @@ Component.onCompleted, as shown in the following example:
 
 | 
 
+.. _sdk_ubuntu_components_slotslayout_**padding group**-prop:
+
 +--------------------------------------------------------------------------+
 |        \ **padding group**                                               |
 +==========================================================================+
+.. _sdk_ubuntu_components_slotslayout_padding.bottom-prop:
 |        \ padding.top : real                                              |
 +--------------------------------------------------------------------------+
+.. _sdk_ubuntu_components_slotslayout_padding.leading-prop:
 |        \ padding.bottom : real                                           |
 +--------------------------------------------------------------------------+
+.. _sdk_ubuntu_components_slotslayout_padding.trailing-prop:
 |        \ padding.leading : real                                          |
 +--------------------------------------------------------------------------+
 |        \ padding.trailing : real                                         |
@@ -438,15 +434,15 @@ slots which are in the layout:
 
 -  if, according to the rules defined in `Automatic vertical positioning
    of
-   slots </sdk/apps/qml/Ubuntu.Components/SlotsLayout#automatic-vertical-positioning-of-slots>`__,
+   slots <sdk_ubuntu_components_slotslayout#automatic-vertical-positioning-of-slots>:ref:`,
    the slots are supposed to align to the top of the layout, padding.top
    and padding.bottom will have a value of **2** Grid Units.
 -  otherwise, if according to the rules defined in `Automatic vertical
    positioning of
-   slots </sdk/apps/qml/Ubuntu.Components/SlotsLayout#automatic-vertical-positioning-of-slots>`__
+   slots <sdk_ubuntu_components_slotslayout#automatic-vertical-positioning-of-slots>:ref:`
    the slots are supposed to be vertically centered in the layout,
    **and** the tallest slot
-   (`mainSlot </sdk/apps/qml/Ubuntu.Components/SlotsLayout#mainSlot-prop>`__
+   (:ref:`mainSlot <sdk_ubuntu_components_slotslayout#mainSlot-prop>`
    excluded) has a height of at least 4 Grid Units, padding.top and
    padding.bottom will be set to **1** Grid Unit.
 
@@ -459,6 +455,8 @@ value.
 Attached Property Documentation
 -------------------------------
 
+.. _sdk_ubuntu_components_slotslayout_SlotsLayout.overrideVerticalPositioning-prop:
+
 +--------------------------------------------------------------------------+
 |        \ SlotsLayout.overrideVerticalPositioning : bool                  |
 +--------------------------------------------------------------------------+
@@ -470,16 +468,15 @@ The default value is **false**.
 If this property is set to true, the layout will ignore the
 corresponding slot during the computation of the **implicitHeight** of
 the whole layout (see `Resizing the
-layout </sdk/apps/qml/Ubuntu.Components/SlotsLayout#resizing-the-layout>`__)
-and will not modify its vertical position during the layout process. As
-a consequence, it is possible, in that case, to manually set the
-vertical anchors of that slot (verticalCenter, top, bottom) or even its
-**y** property.
+layout <sdk_ubuntu_components_slotslayout#resizing-the-layout>:ref:`) and
+will not modify its vertical position during the layout process. As a
+consequence, it is possible, in that case, to manually set the vertical
+anchors of that slot (verticalCenter, top, bottom) or even its **y**
+property.
 
 Care must be taken to avoid getting the slot clipped by positioning it
 partly or completely outside of the
-`SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__ that
-holds it.
+:ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>` that holds it.
 
 **Note**: changing the value of overrideVerticalPositioning of one slot
 after the layout has already been initialized will reset its top,
@@ -489,39 +486,42 @@ desired values only after setting overrideVerticalPositioning.
 
 **Note**: this property is only valid for standard slots. Changing the
 value of
-`mainSlot </sdk/apps/qml/Ubuntu.Components/SlotsLayout#mainSlot-prop>`__'s
+:ref:`mainSlot <sdk_ubuntu_components_slotslayout#mainSlot-prop>`'s
 overrideVerticalPositioning has no effect.
 
 | 
 
+.. _sdk_ubuntu_components_slotslayout_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ SlotsLayout.padding :                                           |
-| `QtObject </sdk/apps/qml/QtQml/QtObject/>`__                             |
+| :ref:` <>`\ SlotsLayout.padding : `QtObject <sdk_qtqml_qtobject>`      |
 +--------------------------------------------------------------------------+
 
-While `SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__'s
-padding property defines the padding around the whole layout, this
-attached property defines the padding around the slot it is attached to.
+While :ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>`'s padding
+property defines the padding around the whole layout, this attached
+property defines the padding around the slot it is attached to.
 
 It is a grouped property that exposes the properties padding.top,
 padding.bottom, padding.leading, padding.trailing.
 
 The default value for
-`SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__.padding.top
-is 0. The default value for
-`SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__.padding.bottom
-is 0. The default value for
-`SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__.padding.leading
-is 1 Grid Unit. The default value for
-`SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__.padding.trailing
-is 1 Grid Unit.
+:ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>`.padding.top is 0.
+The default value for
+:ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>`.padding.bottom is 0.
+The default value for
+:ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>`.padding.leading is 1
+Grid Unit. The default value for
+:ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>`.padding.trailing is
+1 Grid Unit.
 
 Please note that **top** and **bottom** paddings are only used when
-`SlotsLayout::overrideVerticalPositioning </sdk/apps/qml/Ubuntu.Components/SlotsLayout#overrideVerticalPositioning-attached-prop>`__
+:ref:`SlotsLayout::overrideVerticalPositioning <sdk_ubuntu_components_slotslayout#overrideVerticalPositioning-attached-prop>`
 is set to false. More about this in `Automatic vertical positioning of
-slots </sdk/apps/qml/Ubuntu.Components/SlotsLayout#automatic-vertical-positioning-of-slots>`__.
+slots <sdk_ubuntu_components_slotslayout#automatic-vertical-positioning-of-slots>:ref:`.
 
 | 
+
+.. _sdk_ubuntu_components_slotslayout_SlotsLayout.position-prop:
 
 +--------------------------------------------------------------------------+
 |        \ SlotsLayout.position : enumeration                              |
@@ -529,25 +529,24 @@ slots </sdk/apps/qml/Ubuntu.Components/SlotsLayout#automatic-vertical-positionin
 
 This attached property defines the relative position of the slot inside
 the layout. It is attached to each slot. The default value is
-`SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__.Trailing.
+:ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>`.Trailing.
 
 Valid values for position are:
 
--  `SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__.First:
-   the slot will be positioned at the beginning of the layout
--  `SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__.Leading:
-   the slot will be positioned in the leading slots
--  `SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__.Trailing:
-   the slot will be positioned in the trailing slots, i.e. the one
-   towards the end of the layout.
--  `SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__.Last:
-   the slot will be positioned at the end of the layout.
+-  :ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>`.First: the slot
+   will be positioned at the beginning of the layout
+-  :ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>`.Leading: the slot
+   will be positioned in the leading slots
+-  :ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>`.Trailing: the
+   slot will be positioned in the trailing slots, i.e. the one towards
+   the end of the layout.
+-  :ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>`.Last: the slot
+   will be positioned at the end of the layout.
 
-`ProgressionSlot </sdk/apps/qml/Ubuntu.Components/ProgressionSlot/>`__,
-for instance, has its position set to
-`SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__.Last, in
-order to make sure the chevron is always displayed as the last trailing
-slot.
+:ref:`ProgressionSlot <sdk_ubuntu_components_progressionslot>`, for
+instance, has its position set to
+:ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>`.Last, in order to
+make sure the chevron is always displayed as the last trailing slot.
 
 Whenever there are more slots with the same SlotsLayout::position, they
 will be positioned following the order in which they were added to the
@@ -555,19 +554,18 @@ layout.
 
 It is also possible to define relative positioning between the slots, by
 using values such as
-`SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__.Leading+1,
-or
-`SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__.Trailing-3.
-More about this in `Advanced layout
-tweaks </sdk/apps/qml/Ubuntu.Components/SlotsLayout#advanced-layout-tweaks>`__.
+:ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>`.Leading+1, or
+:ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>`.Trailing-3. More
+about this in `Advanced layout
+tweaks <sdk_ubuntu_components_slotslayout#advanced-layout-tweaks>:ref:`.
 
 **Note**: you can only change the position of standard slots. Changing
 the position of
-`mainSlot </sdk/apps/qml/Ubuntu.Components/SlotsLayout#mainSlot-prop>`__
-has no effect.
+:ref:`mainSlot <sdk_ubuntu_components_slotslayout#mainSlot-prop>` has no
+effect.
 
 | 
 
-.. |image0| image:: /media/sdk/apps/qml/Ubuntu.Components/SlotsLayout/images/SlotsLayout_centerVertically.png
-.. |image1| image:: /media/sdk/apps/qml/Ubuntu.Components/SlotsLayout/images/SlotsLayout_alignToTop.png
+.. |image0| image:: /mediasdk_ubuntu_components_slotslayoutimages/SlotsLayout_centerVertically.png
+.. |image1| image:: /mediasdk_ubuntu_components_slotslayoutimages/SlotsLayout_alignToTop.png
 

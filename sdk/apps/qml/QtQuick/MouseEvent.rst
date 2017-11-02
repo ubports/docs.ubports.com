@@ -1,3 +1,7 @@
+.. _sdk_qtquick_mouseevent:
+QtQuick MouseEvent
+==================
+
 Provides information about a mouse event
 
 +---------------------+----------------------+
@@ -7,32 +11,29 @@ Provides information about a mouse event
 Properties
 ----------
 
--  ****`accepted </sdk/apps/qml/QtQuick/MouseEvent#accepted-prop>`__****
-   : bool
--  ****`button </sdk/apps/qml/QtQuick/MouseEvent#button-prop>`__**** :
-   enumeration
--  ****`buttons </sdk/apps/qml/QtQuick/MouseEvent#buttons-prop>`__**** :
-   int
--  ****`modifiers </sdk/apps/qml/QtQuick/MouseEvent#modifiers-prop>`__****
-   : int
--  ****`wasHeld </sdk/apps/qml/QtQuick/MouseEvent#wasHeld-prop>`__**** :
-   bool
--  ****`x </sdk/apps/qml/QtQuick/MouseEvent#x-prop>`__**** : int
--  ****`y </sdk/apps/qml/QtQuick/MouseEvent#y-prop>`__**** : int
+-  :ref:`accepted <sdk_qtquick_mouseevent_accepted-prop>` : bool
+-  :ref:`button <sdk_qtquick_mouseevent_button-prop>` : enumeration
+-  :ref:`buttons <sdk_qtquick_mouseevent_buttons-prop>` : int
+-  :ref:`modifiers <sdk_qtquick_mouseevent_modifiers-prop>` : int
+-  :ref:`wasHeld <sdk_qtquick_mouseevent_wasHeld-prop>` : bool
+-  :ref:`x <sdk_qtquick_mouseevent_x-prop>` : int
+-  :ref:`y <sdk_qtquick_mouseevent_y-prop>` : int
 
 Detailed Description
 --------------------
 
 The position of the mouse can be found via the
-`x </sdk/apps/qml/QtQuick/MouseEvent#x-prop>`__ and
-`y </sdk/apps/qml/QtQuick/MouseEvent#y-prop>`__ properties. The button
-that caused the event is available via the
-`button </sdk/apps/qml/QtQuick/MouseEvent#button-prop>`__ property.
+:ref:`x <sdk_qtquick_mouseevent#x-prop>` and
+:ref:`y <sdk_qtquick_mouseevent#y-prop>` properties. The button that caused
+the event is available via the
+:ref:`button <sdk_qtquick_mouseevent#button-prop>` property.
 
-**See also** `MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__.
+**See also** :ref:`MouseArea <sdk_qtquick_mousearea>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_mouseevent_accepted-prop:
 
 +--------------------------------------------------------------------------+
 |        \ accepted : bool                                                 |
@@ -47,6 +48,8 @@ to the same event.
 
 | 
 
+.. _sdk_qtquick_mouseevent_button-prop:
+
 +--------------------------------------------------------------------------+
 |        \ button : enumeration                                            |
 +--------------------------------------------------------------------------+
@@ -58,6 +61,8 @@ This property holds the button that caused the event. It can be one of:
 -  Qt.MiddleButton
 
 | 
+
+.. _sdk_qtquick_mouseevent_buttons-prop:
 
 +--------------------------------------------------------------------------+
 |        \ buttons : int                                                   |
@@ -76,6 +81,8 @@ It contains a bitwise combination of:
 -  Qt.MiddleButton
 
 | 
+
+.. _sdk_qtquick_mouseevent_modifiers-prop:
 
 +--------------------------------------------------------------------------+
 |        \ modifiers : int                                                 |
@@ -106,6 +113,8 @@ For example, to react to a Shift key + Left mouse button click:
 
 | 
 
+.. _sdk_qtquick_mouseevent_wasHeld-prop:
+
 +--------------------------------------------------------------------------+
 |        \ wasHeld : bool                                                  |
 +--------------------------------------------------------------------------+
@@ -115,6 +124,8 @@ the threshold (800ms).
 
 | 
 
+.. _sdk_qtquick_mouseevent_x-prop:
+
 +--------------------------------------------------------------------------+
 |        \ x : int                                                         |
 +--------------------------------------------------------------------------+
@@ -123,6 +134,8 @@ These properties hold the coordinates of the position supplied by the
 mouse event.
 
 | 
+
+.. _sdk_qtquick_mouseevent_y-prop:
 
 +--------------------------------------------------------------------------+
 |        \ y : int                                                         |

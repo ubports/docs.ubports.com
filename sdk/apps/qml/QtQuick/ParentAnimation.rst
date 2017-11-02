@@ -1,3 +1,7 @@
+.. _sdk_qtquick_parentanimation:
+QtQuick ParentAnimation
+=======================
+
 Animates changes in parent values
 
 +--------------------------------------+--------------------------------------+
@@ -5,34 +9,31 @@ Animates changes in parent values
 +--------------------------------------+--------------------------------------+
 | Since:                               | Qt 5.0                               |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Animation </sdk/apps/qml/QtQuick/An |
-|                                      | imation/>`__                         |
+| Inherits:                            | :ref:`Animation <sdk_qtquick_animation>`_ |
+|                                      | _                                    |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`newParent </sdk/apps/qml/QtQuick/ParentAnimation#newParent-prop>`__****
-   : Item
--  ****`target </sdk/apps/qml/QtQuick/ParentAnimation#target-prop>`__****
-   : Item
--  ****`via </sdk/apps/qml/QtQuick/ParentAnimation#via-prop>`__**** :
+-  :ref:`newParent <sdk_qtquick_parentanimation_newParent-prop>` :
    Item
+-  :ref:`target <sdk_qtquick_parentanimation_target-prop>` : Item
+-  :ref:`via <sdk_qtquick_parentanimation_via-prop>` : Item
 
 Detailed Description
 --------------------
 
-`ParentAnimation </sdk/apps/qml/QtQuick/ParentAnimation/>`__ is used to
-animate a parent change for an `Item </sdk/apps/qml/QtQuick/Item/>`__.
+:ref:`ParentAnimation <sdk_qtquick_parentanimation>` is used to animate a
+parent change for an :ref:`Item <sdk_qtquick_item>`.
 
-For example, the following
-`ParentChange </sdk/apps/qml/QtQuick/ParentChange/>`__ changes
-``blueRect`` to become a child of ``redRect`` when it is clicked. The
-inclusion of the
-`ParentAnimation </sdk/apps/qml/QtQuick/ParentAnimation/>`__, which
-defines a `NumberAnimation </sdk/apps/qml/QtQuick/NumberAnimation/>`__
-to be applied during the transition, ensures the item animates smoothly
-as it moves to its new parent:
+For example, the following :ref:`ParentChange <sdk_qtquick_parentchange>`
+changes ``blueRect`` to become a child of ``redRect`` when it is
+clicked. The inclusion of the
+:ref:`ParentAnimation <sdk_qtquick_parentanimation>`, which defines a
+:ref:`NumberAnimation <sdk_qtquick_numberanimation>` to be applied during
+the transition, ensures the item animates smoothly as it moves to its
+new parent:
 
 .. code:: qml
 
@@ -62,64 +63,67 @@ as it moves to its new parent:
         }
     }
 
-A `ParentAnimation </sdk/apps/qml/QtQuick/ParentAnimation/>`__ can
-contain any number of animations. These animations will be run in
-parallel; to run them sequentially, define them within a
-`SequentialAnimation </sdk/apps/qml/QtQuick/SequentialAnimation/>`__.
+A :ref:`ParentAnimation <sdk_qtquick_parentanimation>` can contain any
+number of animations. These animations will be run in parallel; to run
+them sequentially, define them within a
+:ref:`SequentialAnimation <sdk_qtquick_sequentialanimation>`.
 
 In some cases, such as when reparenting between items with clipping
 enabled, it is useful to animate the parent change via another item that
 does not have clipping enabled. Such an item can be set using the
-`via </sdk/apps/qml/QtQuick/ParentAnimation#via-prop>`__ property.
+:ref:`via <sdk_qtquick_parentanimation#via-prop>` property.
 
-`ParentAnimation </sdk/apps/qml/QtQuick/ParentAnimation/>`__ is
-typically used within a
-`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch#transition>`__
-in conjunction with a
-`ParentChange </sdk/apps/qml/QtQuick/ParentChange/>`__. When used in
-this manner, it animates any
-`ParentChange </sdk/apps/qml/QtQuick/ParentChange/>`__ that has occurred
-during the state change. This can be overridden by setting a specific
-target item using the
-`target </sdk/apps/qml/QtQuick/ParentAnimation#target-prop>`__ property.
+:ref:`ParentAnimation <sdk_qtquick_parentanimation>` is typically used
+within a
+`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch/#transition>`_ 
+in conjunction with a :ref:`ParentChange <sdk_qtquick_parentchange>`. When
+used in this manner, it animates any
+:ref:`ParentChange <sdk_qtquick_parentchange>` that has occurred during the
+state change. This can be overridden by setting a specific target item
+using the :ref:`target <sdk_qtquick_parentanimation#target-prop>` property.
 
 **See also** `Animation and Transitions in Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`__
+Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`_ 
 and `Qt Quick Examples -
-Animation </sdk/apps/qml/QtQuick/animation/>`__.
+Animation </sdk/apps/qml/QtQuick/animation/>`_ .
 
 Property Documentation
 ----------------------
 
+.. _sdk_qtquick_parentanimation_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ newParent : `Item </sdk/apps/qml/QtQuick/Item/>`__              |
+| :ref:` <>`\ newParent : `Item <sdk_qtquick_item>`                      |
 +--------------------------------------------------------------------------+
 
 The new parent to animate to.
 
-If the `ParentAnimation </sdk/apps/qml/QtQuick/ParentAnimation/>`__ is
-defined within a
-`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch#transition>`__,
+If the :ref:`ParentAnimation <sdk_qtquick_parentanimation>` is defined
+within a
+`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch/#transition>`_ ,
 this value defaults to the value defined in the end state of the
-`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch#transition>`__.
+`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch/#transition>`_ .
 
 | 
 
+.. _sdk_qtquick_parentanimation_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ target : `Item </sdk/apps/qml/QtQuick/Item/>`__                 |
+| :ref:` <>`\ target : `Item <sdk_qtquick_item>`                         |
 +--------------------------------------------------------------------------+
 
 The item to reparent.
 
 When used in a transition, if no target is specified, all
-`ParentChange </sdk/apps/qml/QtQuick/ParentChange/>`__ occurrences are
-animated by the
-`ParentAnimation </sdk/apps/qml/QtQuick/ParentAnimation/>`__.
+:ref:`ParentChange <sdk_qtquick_parentchange>` occurrences are animated by
+the :ref:`ParentAnimation <sdk_qtquick_parentanimation>`.
 
 | 
 
+.. _sdk_qtquick_parentanimation_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ via : `Item </sdk/apps/qml/QtQuick/Item/>`__                    |
+| :ref:` <>`\ via : `Item <sdk_qtquick_item>`                            |
 +--------------------------------------------------------------------------+
 
 The item to reparent via. This provides a way to do an unclipped
@@ -134,10 +138,8 @@ animation when both the old parent and new parent are clipped.
     }
 
 **Note:** This only works when the
-`ParentAnimation </sdk/apps/qml/QtQuick/ParentAnimation/>`__ is used in
-a
-`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch#transition>`__
-in conjunction with a
-`ParentChange </sdk/apps/qml/QtQuick/ParentChange/>`__.
+:ref:`ParentAnimation <sdk_qtquick_parentanimation>` is used in a
+`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch/#transition>`_ 
+in conjunction with a :ref:`ParentChange <sdk_qtquick_parentchange>`.
 
 | 

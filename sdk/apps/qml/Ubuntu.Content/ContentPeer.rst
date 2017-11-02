@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_content_contentpeer:
+Ubuntu.Content ContentPeer
+==========================
+
 An application that can export or import a ContentType
 
 +---------------------+-----------------------------+
@@ -7,37 +11,36 @@ An application that can export or import a ContentType
 Properties
 ----------
 
--  ****`appId </sdk/apps/qml/Ubuntu.Content/ContentPeer#appId-prop>`__****
-   : string
--  ****`contentType </sdk/apps/qml/Ubuntu.Content/ContentPeer#contentType-prop>`__****
+-  :ref:`appId <sdk_ubuntu_content_contentpeer_appId-prop>` :
+   string
+-  :ref:`contentType <sdk_ubuntu_content_contentpeer_contentType-prop>`
    : ContentType
--  ****`handler </sdk/apps/qml/Ubuntu.Content/ContentPeer#handler-prop>`__****
-   : ContentHandler
--  ****`name </sdk/apps/qml/Ubuntu.Content/ContentPeer#name-prop>`__****
-   : string
--  ****`selectionType </sdk/apps/qml/Ubuntu.Content/ContentPeer#selectionType-prop>`__****
+-  :ref:`handler <sdk_ubuntu_content_contentpeer_handler-prop>` :
+   ContentHandler
+-  :ref:`name <sdk_ubuntu_content_contentpeer_name-prop>` : string
+-  :ref:`selectionType <sdk_ubuntu_content_contentpeer_selectionType-prop>`
    : ContentTransfer.SelectionType
 
 Methods
 -------
 
--  ****`request </sdk/apps/qml/Ubuntu.Content/ContentPeer#request-method-2>`__****\ (ContentStore)
--  ****`request </sdk/apps/qml/Ubuntu.Content/ContentPeer#request-method>`__****\ ()
+-  :ref:`request <sdk_ubuntu_content_contentpeer_request-method-2>`\ (ContentStore)
+-  :ref:`request <sdk_ubuntu_content_contentpeer_request-method>`\ ()
 
 Detailed Description
 --------------------
 
-A `ContentPeer </sdk/apps/qml/Ubuntu.Content/ContentPeer/>`__ is an
-application that is registered in the
-`ContentHub </sdk/apps/qml/Ubuntu.Content/ContentHub/>`__ as a source or
-destination of a
-`ContentType </sdk/apps/qml/Ubuntu.Content/ContentType/>`__
+A :ref:`ContentPeer <sdk_ubuntu_content_contentpeer>` is an application
+that is registered in the :ref:`ContentHub <sdk_ubuntu_content_contenthub>`
+as a source or destination of a
+:ref:`ContentType <sdk_ubuntu_content_contenttype>`
 
-See documentation for
-`ContentHub </sdk/apps/qml/Ubuntu.Content/ContentHub/>`__
+See documentation for :ref:`ContentHub <sdk_ubuntu_content_contenthub>`
 
 Property Documentation
 ----------------------
+
+.. _sdk_ubuntu_content_contentpeer_appId-prop:
 
 +--------------------------------------------------------------------------+
 |        \ appId : string                                                  |
@@ -48,27 +51,30 @@ a peer.
 
 | 
 
+.. _sdk_ubuntu_content_contentpeer_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ contentType :                                                   |
-| `ContentType </sdk/apps/qml/Ubuntu.Content/ContentType/>`__              |
+| :ref:` <>`\ contentType : `ContentType <sdk_ubuntu_content_contenttype>`  |
 +--------------------------------------------------------------------------+
 
-Specifies the
-`ContentType </sdk/apps/qml/Ubuntu.Content/ContentType/>`__ this peer
+Specifies the :ref:`ContentType <sdk_ubuntu_content_contenttype>` this peer
 should support.
 
 | 
 
+.. _sdk_ubuntu_content_contentpeer_handler-prop:
+
 +--------------------------------------------------------------------------+
 |        \ handler :                                                       |
-| `ContentHandler </sdk/apps/qml/Ubuntu.Content/ContentHandler/>`__        |
+| :ref:`ContentHandler <sdk_ubuntu_content_contenthandler>`                   |
 +--------------------------------------------------------------------------+
 
-Specifies which
-`ContentHandler </sdk/apps/qml/Ubuntu.Content/ContentHandler/>`__ this
-peer should support (e.g. Source, Destination, Share).
+Specifies which :ref:`ContentHandler <sdk_ubuntu_content_contenthandler>`
+this peer should support (e.g. Source, Destination, Share).
 
 | 
+
+.. _sdk_ubuntu_content_contentpeer_name-prop:
 
 +--------------------------------------------------------------------------+
 |        \ name : string                                                   |
@@ -78,10 +84,11 @@ Returns user friendly name of the peer.
 
 | 
 
+.. _sdk_ubuntu_content_contentpeer_selectionType-prop:
+
 +--------------------------------------------------------------------------+
 |        \ selectionType :                                                 |
-| `ContentTransfer </sdk/apps/qml/Ubuntu.Content/ContentTransfer/>`__.Sele |
-| ctionType                                                                |
+| :ref:`ContentTransfer <sdk_ubuntu_content_contenttransfer>`.SelectionType   |
 +--------------------------------------------------------------------------+
 
 Specifies whether this peer is allowed to return multiple items.
@@ -91,23 +98,26 @@ Specifies whether this peer is allowed to return multiple items.
 Method Documentation
 --------------------
 
+.. _sdk_ubuntu_content_contentpeer_-method:
+
 +--------------------------------------------------------------------------+
-|        \ request(`ContentStore </sdk/apps/qml/Ubuntu.Content/ContentStor |
-| e/>`__)                                                                  |
+| :ref:` <>`\ request(`ContentStore <sdk_ubuntu_content_contentstore>`)     |
 +--------------------------------------------------------------------------+
 
 Request to an active transfer from this
-`ContentPeer </sdk/apps/qml/Ubuntu.Content/ContentPeer/>`__ and use a
-`ContentStore </sdk/apps/qml/Ubuntu.Content/ContentStore/>`__ for
-permanent storage.
+:ref:`ContentPeer <sdk_ubuntu_content_contentpeer>` and use a
+:ref:`ContentStore <sdk_ubuntu_content_contentstore>` for permanent
+storage.
 
 | 
+
+.. _sdk_ubuntu_content_contentpeer_request-method:
 
 +--------------------------------------------------------------------------+
 |        \ request()                                                       |
 +--------------------------------------------------------------------------+
 
 Request an active transfer from this
-`ContentPeer </sdk/apps/qml/Ubuntu.Content/ContentPeer/>`__.
+:ref:`ContentPeer <sdk_ubuntu_content_contentpeer>`.
 
 | 

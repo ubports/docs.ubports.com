@@ -1,3 +1,7 @@
+.. _sdk_qtquick_qt_quick_examples_-_toggle_switch:
+QtQuick Qt Quick Examples - Toggle Switch
+=========================================
+
 
 
 This example shows how to create a reusable switch component in QML.
@@ -118,10 +122,10 @@ the text will only be visible when the switch is on.
 
 First, we create the background image of the switch. In order for the
 switch to toggle when the user clicks on the background, we add a
-`MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ as a child item of the
-image. A ``MouseArea`` has a ``onClicked`` property that is triggered
-when the item is clicked. For the moment we will just call a
-``toggle()`` function. We will see what this function does in a moment.
+:ref:`MouseArea <sdk_qtquick_mousearea>` as a child item of the image. A
+``MouseArea`` has a ``onClicked`` property that is triggered when the
+item is clicked. For the moment we will just call a ``toggle()``
+function. We will see what this function does in a moment.
 
 .. code:: qml
 
@@ -170,7 +174,7 @@ We define the two states of the switch:
    the ``on`` property is ``false``.
 
 For more information on states see `Qt Quick
-States </sdk/apps/qml/QtQuick/qtquick-statesanimations-states/>`__.
+States </sdk/apps/qml/QtQuick/qtquick-statesanimations-states/>`_ .
 
 .. rubric:: Functions
    :name: functions
@@ -225,7 +229,7 @@ the knob to move smoothly we add a transition that will animate the
 ``x`` property with an easing curve for a duration of 200ms.
 
 For more information on transitions see `Animation and Transitions in Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`__.
+Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`_ .
 
 .. rubric:: Usage
    :name: usage

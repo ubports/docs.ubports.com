@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_rotationsensor:
+QtSensors RotationSensor
+========================
+
 The RotationSensor element reports on device rotation around the X, Y
 and Z axes.
 
@@ -6,30 +10,29 @@ and Z axes.
 +--------------------------------------+--------------------------------------+
 | Since:                               | QtSensors 5.0                        |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Sensor </sdk/apps/qml/QtSensors/Sen |
-|                                      | sor/>`__                             |
+| Inherits:                            | :ref:`Sensor <sdk_qtsensors_sensor>` |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`hasZ </sdk/apps/qml/QtSensors/RotationSensor#hasZ-prop>`__**** :
-   qreal
+-  :ref:`hasZ <sdk_qtsensors_rotationsensor_hasZ-prop>` : qreal
 
 Detailed Description
 --------------------
 
-The `RotationSensor </sdk/apps/qml/QtSensors/RotationSensor/>`__ element
-reports on device rotation around the X, Y and Z axes.
+The :ref:`RotationSensor <sdk_qtsensors_rotationsensor>` element reports on
+device rotation around the X, Y and Z axes.
 
 This element wraps the QRotationSensor class. Please see the
 documentation for QRotationSensor for details.
 
-**See also**
-`RotationReading </sdk/apps/qml/QtSensors/RotationReading/>`__.
+**See also** :ref:`RotationReading <sdk_qtsensors_rotationreading>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtsensors_rotationsensor_hasZ-prop:
 
 +--------------------------------------------------------------------------+
 |        \ hasZ : qreal                                                    |

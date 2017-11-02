@@ -1,3 +1,7 @@
+.. _sdk_qtqml_finalstate:
+QtQml FinalState
+================
+
 Provides a final state.
 
 +--------------------------------------+--------------------------------------+
@@ -5,27 +9,25 @@ Provides a final state.
 +--------------------------------------+--------------------------------------+
 | Since:                               | Qt 5.4                               |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `QAbstractState </sdk/apps/qml/QtQml |
-|                                      | /QAbstractState/>`__                 |
+| Inherits:                            | :ref:`QAbstractState <sdk_qtqml_qabstract |
+|                                      | state>`_                             |
 +--------------------------------------+--------------------------------------+
 
 Detailed Description
 --------------------
 
 A final state is used to communicate that (part of) a
-`StateMachine </sdk/apps/qml/QtQml/StateMachine/>`__ has finished its
-work. When a final top-level state is entered, the state machine's
-`finished </sdk/apps/qml/QtQml/State#finished-signal>`__\ () signal is
-emitted. In general, when a final substate (a child of a State) is
-entered, the parent state's
-`finished </sdk/apps/qml/QtQml/State#finished-signal>`__\ () signal is
-emitted. `FinalState </sdk/apps/qml/QtQml/FinalState/>`__ is part of
-`The Declarative State Machine
-Framework </sdk/apps/qml/QtQml/qmlstatemachine/>`__.
+:ref:`StateMachine <sdk_qtqml_statemachine>` has finished its work. When a
+final top-level state is entered, the state machine's
+:ref:`finished <sdk_qtqml_state#finished-signal>`\ () signal is emitted. In
+general, when a final substate (a child of a State) is entered, the
+parent state's :ref:`finished <sdk_qtqml_state#finished-signal>`\ () signal
+is emitted. :ref:`FinalState <sdk_qtqml_finalstate>` is part of `The
+Declarative State Machine
+Framework </sdk/apps/qml/QtQml/qmlstatemachine/>`_ .
 
-To use a final state, you create a
-`FinalState </sdk/apps/qml/QtQml/FinalState/>`__ object and add a
-transition to it from another state.
+To use a final state, you create a :ref:`FinalState <sdk_qtqml_finalstate>`
+object and add a transition to it from another state.
 
 Example Usage
 -------------
@@ -55,5 +57,5 @@ Example Usage
 
 | 
 
-**See also** `StateMachine </sdk/apps/qml/QtQml/StateMachine/>`__ and
-`State </sdk/apps/qml/QtQml/State/>`__.
+**See also** :ref:`StateMachine <sdk_qtqml_statemachine>` and
+:ref:`State <sdk_qtqml_state>`.

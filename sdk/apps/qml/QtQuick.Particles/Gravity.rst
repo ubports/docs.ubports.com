@@ -1,20 +1,24 @@
+.. _sdk_qtquick_particles_gravity:
+QtQuick.Particles Gravity
+=========================
+
 For applying acceleration in an angle
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtQuick.Particles 2.0         |
 +--------------------------------------+--------------------------------------+
 | Inherits:                            | `Affector </sdk/apps/qml/QtQuick/Par |
-|                                      | ticles.Affector/>`__                 |
+|                                      | ticles.Affector/>`_                  |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`acceleration </sdk/apps/qml/QtQuick/Particles.Gravity#acceleration-prop>`__****
+-  `acceleration </sdk/apps/qml/QtQuick/Particles.Gravity/_acceleration-prop>`_ 
    : real
--  ****`angle </sdk/apps/qml/QtQuick/Particles.Gravity#angle-prop>`__****
+-  `angle </sdk/apps/qml/QtQuick/Particles.Gravity/_angle-prop>`_ 
    : real
--  ****`magnitude </sdk/apps/qml/QtQuick/Particles.Gravity#magnitude-prop>`__****
+-  `magnitude </sdk/apps/qml/QtQuick/Particles.Gravity/_magnitude-prop>`_ 
    : real
 
 Detailed Description
@@ -33,6 +37,8 @@ inside the scene, use PointAttractor.
 Property Documentation
 ----------------------
 
+.. _sdk_qtquick_particles_gravity_acceleration-prop:
+
 +--------------------------------------------------------------------------+
 |        \ acceleration : real                                             |
 +--------------------------------------------------------------------------+
@@ -41,6 +47,8 @@ Name changed to magnitude, will be removed soon.
 
 | 
 
+.. _sdk_qtquick_particles_gravity_angle-prop:
+
 +--------------------------------------------------------------------------+
 |        \ angle : real                                                    |
 +--------------------------------------------------------------------------+
@@ -48,6 +56,8 @@ Name changed to magnitude, will be removed soon.
 Angle of acceleration.
 
 | 
+
+.. _sdk_qtquick_particles_gravity_magnitude-prop:
 
 +--------------------------------------------------------------------------+
 |        \ magnitude : real                                                |

@@ -1,3 +1,7 @@
+.. _sdk_scopejs_filteroption:
+ScopeJS FilterOption
+====================
+
 
 Captures state of multiple filters.
 

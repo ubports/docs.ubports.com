@@ -1,3 +1,7 @@
+.. _sdk_qtqml_defining_javascript_resources_in_qml:
+QtQml Defining JavaScript Resources In QML
+==========================================
+
 
 
 The program logic for a QML application may be defined in JavaScript.
@@ -8,9 +12,9 @@ QML).
 There are two different kinds of JavaScript resources which are
 supported in QML: code-behind implementation files, and shared (library)
 files. Both kinds of JavaScript resource may be
-`imported </sdk/apps/qml/QtQml/qtqml-javascript-imports/>`__ by other
+`imported </sdk/apps/qml/QtQml/qtqml-javascript-imports/>`_  by other
 JavaScript resources, or included in `QML
-modules </sdk/apps/qml/QtQml/qtqml-modules-topic/>`__.
+modules </sdk/apps/qml/QtQml/qtqml-modules-topic/>`_ .
 
 .. rubric:: Code-Behind Implementation Resource
    :name: code-behind-implementation-resource

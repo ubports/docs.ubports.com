@@ -1,3 +1,7 @@
+.. _sdk_qtmultimedia_audio_output_example:
+QtMultimedia Audio Output Example
+=================================
+
 
 
 *Audio Output* demonstrates the basic use cases of QAudioOutput.

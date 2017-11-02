@@ -1,3 +1,7 @@
+.. _sdk_qtquick_qt_quick_particles_examples_-_affectors:
+QtQuick Qt Quick Particles Examples - Affectors
+===============================================
+
 
 
 |image0|
@@ -135,7 +139,7 @@ to particles inside it
         angle: ground.rotation + 90
     }
 
-`GroupGoal </sdk/apps/qml/QtQuick/Particles.GroupGoal/>`__ sets up two
+`GroupGoal </sdk/apps/qml/QtQuick/Particles.GroupGoal/>`_  sets up two
 particle groups for flaming and non-flaming balls, and gives you various
 ways to transition between them.
 
@@ -159,7 +163,7 @@ ways to transition between them.
 
 The non-flaming balls have a one in a hundred chance of lighting on
 their own each second, but they also have a
-`GroupGoal </sdk/apps/qml/QtQuick/Particles.GroupGoal/>`__ set on the
+`GroupGoal </sdk/apps/qml/QtQuick/Particles.GroupGoal/>`_  set on the
 whole group. This affector affects all particles of the unlit group,
 when colliding with particles in the lit group, and cause them to move
 to the lighting group.
@@ -199,7 +203,7 @@ after 100ms.
 
 The lit group also has TrailEmitters on it for additional fire and
 smoke, but does not transition anywhere. There are two more
-`GroupGoal </sdk/apps/qml/QtQuick/Particles.GroupGoal/>`__ objects that
+`GroupGoal </sdk/apps/qml/QtQuick/Particles.GroupGoal/>`_  objects that
 allow particles in the unlit group to transition to the lighting group
 (and then to the lit group).
 
@@ -289,10 +293,10 @@ decreases.
         acceleration: PointDirection { y: -80; }
     }
 
-`SpriteGoal </sdk/apps/qml/QtQuick/Particles.SpriteGoal/>`__ has an
+`SpriteGoal </sdk/apps/qml/QtQuick/Particles.SpriteGoal/>`_  has an
 affector which interacts with the sprite engine of particles, if they
 are being drawn as sprites by
-`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`__.
+`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_ .
 
 .. code:: qml
 
@@ -306,10 +310,10 @@ are being drawn as sprites by
         height: 60
     }
 
-The `SpriteGoal </sdk/apps/qml/QtQuick/Particles.SpriteGoal/>`__ follows
+The `SpriteGoal </sdk/apps/qml/QtQuick/Particles.SpriteGoal/>`_  follows
 the image of the rocket ship on screen, and when it interacts with
 particles drawn by
-`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`__ as
+`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_  as
 sprites, it instructs them to move immediately to the "explode" state,
 which in this case is the animation of the asteroid breaking into many
 pieces.

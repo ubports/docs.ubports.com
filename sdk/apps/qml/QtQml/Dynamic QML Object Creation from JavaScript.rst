@@ -1,3 +1,7 @@
+.. _sdk_qtqml_dynamic_qml_object_creation_from_javascript:
+QtQml Dynamic QML Object Creation from JavaScript
+=================================================
+
 
 
 QML supports the dynamic creation of objects from within JavaScript.
@@ -6,7 +10,7 @@ thereby improving application startup time. It also allows visual
 objects to be dynamically created and added to the scene in reaction to
 user input or other events.
 
-See the `Dynamic Scene example </sdk/apps/qml/QtQml/dynamicscene/>`__
+See the `Dynamic Scene example </sdk/apps/qml/QtQml/dynamicscene/>`_ 
 for a demonstration of the concepts discussed on this page.
 
 .. rubric:: Creating Objects Dynamically
@@ -14,38 +18,35 @@ for a demonstration of the concepts discussed on this page.
 
 There are two ways to create objects dynamically from JavaScript. You
 can either call
-`Qt.createComponent() </sdk/apps/qml/QtQml/Qt#createComponent-method>`__
-to dynamically create a `Component </sdk/apps/qml/QtQml/Component/>`__
-object, or use
-`Qt.createQmlObject() </sdk/apps/qml/QtQml/Qt#createQmlObject-method>`__
-to create an object from a string of QML. Creating a component is better
-if you have an existing component defined in a QML document and you want
-to dynamically create instances of that component. Otherwise, creating
-an object from a string of QML is useful when the object QML itself is
+:ref:`Qt.createComponent() <sdk_qtqml_qt#createComponent-method>` to
+dynamically create a :ref:`Component <sdk_qtqml_component>` object, or use
+:ref:`Qt.createQmlObject() <sdk_qtqml_qt#createQmlObject-method>` to create
+an object from a string of QML. Creating a component is better if you
+have an existing component defined in a QML document and you want to
+dynamically create instances of that component. Otherwise, creating an
+object from a string of QML is useful when the object QML itself is
 generated at runtime.
 
 .. rubric:: Creating a Component Dynamically
    :name: creating-a-component-dynamically
 
 To dynamically load a component defined in a QML file, call the
-`Qt.createComponent() </sdk/apps/qml/QtQml/Qt#createComponent-method>`__
-function in the `Qt
-object </sdk/apps/qml/QtQml/Qt#qmlglobalqtobject>`__. This function
+:ref:`Qt.createComponent() <sdk_qtqml_qt#createComponent-method>` function
+in the :ref:`Qt object <sdk_qtqml_qt#qmlglobalqtobject>`. This function
 takes the URL of the QML file as its only argument and creates a
-`Component </sdk/apps/qml/QtQml/Component/>`__ object from this URL.
+:ref:`Component <sdk_qtqml_component>` object from this URL.
 
-Once you have a `Component </sdk/apps/qml/QtQml/Component/>`__, you can
-call its
-`createObject() </sdk/apps/qml/QtQml/Component#createObject-method>`__
-method to create an instance of the component. This function can take
-one or two arguments:
+Once you have a :ref:`Component <sdk_qtqml_component>`, you can call its
+:ref:`createObject() <sdk_qtqml_component#createObject-method>` method to
+create an instance of the component. This function can take one or two
+arguments:
 
 -  The first is the parent for the new object. The parent can be a
    graphical object (i.e. of the Item type) or non-graphical object
-   (i.e. of the `QtObject </sdk/apps/qml/QtQml/QtObject/>`__ or C++
-   QObject type). Only graphical objects with graphical parent objects
-   will be rendered to the Qt Quick visual canvas. If you wish to set
-   the parent later you can safely pass ``null`` to this function.
+   (i.e. of the :ref:`QtObject <sdk_qtqml_qtobject>` or C++ QObject type).
+   Only graphical objects with graphical parent objects will be rendered
+   to the Qt Quick visual canvas. If you wish to set the parent later
+   you can safely pass ``null`` to this function.
 -  The second is optional and is a map of property-value pairs that
    define initial any property values for the object. Property values
    specified by this argument are applied to the object before its
@@ -78,11 +79,10 @@ objects:
     }
 
 Here is ``componentCreation.js``. Notice it checks whether the component
-`status </sdk/apps/qml/QtQml/Component#status-prop>`__ is
-``Component.Ready`` before calling
-`createObject() </sdk/apps/qml/QtQml/Component#createObject-method>`__
-in case the QML file is loaded over a network and thus is not ready
-immediately.
+:ref:`status <sdk_qtqml_component#status-prop>` is ``Component.Ready``
+before calling
+:ref:`createObject() <sdk_qtqml_component#createObject-method>` in case the
+QML file is loaded over a network and thus is not ready immediately.
 
 .. code:: js
 
@@ -110,7 +110,7 @@ immediately.
 
 If you are certain the QML file to be loaded is a local file, you could
 omit the ``finishCreation()`` function and call
-`createObject() </sdk/apps/qml/QtQml/Component#createObject-method>`__
+:ref:`createObject() <sdk_qtqml_component#createObject-method>`
 immediately:
 
 .. code:: js
@@ -125,25 +125,25 @@ immediately:
     }
 
 Notice in both instances,
-`createObject() </sdk/apps/qml/QtQml/Component#createObject-method>`__
-is called with ``appWindow`` passed as the parent argument, since the
-dynamically created object is a visual (Qt Quick) object. The created
-object will become a child of the ``appWindow`` object in ``main.qml``,
-and appear in the scene.
+:ref:`createObject() <sdk_qtqml_component#createObject-method>` is called
+with ``appWindow`` passed as the parent argument, since the dynamically
+created object is a visual (Qt Quick) object. The created object will
+become a child of the ``appWindow`` object in ``main.qml``, and appear
+in the scene.
 
 When using files with relative paths, the path should be relative to the
 file where
-`Qt.createComponent() </sdk/apps/qml/QtQml/Qt#createComponent-method>`__
-is executed.
+:ref:`Qt.createComponent() <sdk_qtqml_qt#createComponent-method>` is
+executed.
 
 To connect signals to (or receive signals from) dynamically created
 objects, use the signal ``connect()`` method. See `Connecting Signals to
 Methods and
-Signals </sdk/apps/qml/QtQml/qtqml-syntax-signals#connecting-signals-to-methods-and-signals>`__
+Signals </sdk/apps/qml/QtQml/qtqml-syntax-signals/#connecting-signals-to-methods-and-signals>`_ 
 for more information.
 
 It is also possible to instantiate components without blocking via the
-`incubateObject() </sdk/apps/qml/QtQml/Component#incubateObject-method>`__
+:ref:`incubateObject() <sdk_qtqml_component#incubateObject-method>`
 function.
 
 .. rubric:: Creating an Object from a String of QML
@@ -151,8 +151,8 @@ function.
 
 If the QML is not defined until runtime, you can create a QML object
 from a string of QML using the
-`Qt.createQmlObject() </sdk/apps/qml/QtQml/Qt#createQmlObject-method>`__
-function, as in the following example:
+:ref:`Qt.createQmlObject() <sdk_qtqml_qt#createQmlObject-method>` function,
+as in the following example:
 
 .. code:: qml
 
@@ -182,16 +182,14 @@ The actual creation context depends on how an object is created:
 
 -  If Qt.createComponent() is used, the creation context is the
    QQmlContext in which this method is called
--  If
-   `Qt.createQmlObject() </sdk/apps/qml/QtQml/Qt#createQmlObject-method>`__
-   is called, the creation context is the context of the parent object
+-  If :ref:`Qt.createQmlObject() <sdk_qtqml_qt#createQmlObject-method>` is
+   called, the creation context is the context of the parent object
    passed to this method
 -  If a ``Component{}`` object is defined and
-   `createObject() </sdk/apps/qml/QtQml/Component#createObject-method>`__
-   or
-   `incubateObject() </sdk/apps/qml/QtQml/Component#incubateObject-method>`__
-   is called on that object, the creation context is the context in
-   which the ``Component`` is defined
+   :ref:`createObject() <sdk_qtqml_component#createObject-method>` or
+   :ref:`incubateObject() <sdk_qtqml_component#incubateObject-method>` is
+   called on that object, the creation context is the context in which
+   the ``Component`` is defined
 
 Also, note that while dynamically created objects may be used the same
 as other objects, they do not have an id in QML.
@@ -266,8 +264,8 @@ This would result in an error, since objects can only be dynamically
 destroyed if they were dynamically created.
 
 Objects created with
-`Qt.createQmlObject() </sdk/apps/qml/QtQml/Qt#createQmlObject-method>`__
-can similarly be destroyed using ``destroy()``:
+:ref:`Qt.createQmlObject() <sdk_qtqml_qt#createQmlObject-method>` can
+similarly be destroyed using ``destroy()``:
 
 .. code:: qml
 

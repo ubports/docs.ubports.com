@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_layouts_conditionallayout:
+Ubuntu.Layouts ConditionalLayout
+================================
+
 ConditionalLayout defines the layout of a given form factor.
 
 +---------------------+-----------------------------+
@@ -7,20 +11,20 @@ ConditionalLayout defines the layout of a given form factor.
 Properties
 ----------
 
--  ****`layout </sdk/apps/qml/Ubuntu.Layouts/ConditionalLayout#layout-prop>`__****
+-  :ref:`layout <sdk_ubuntu_layouts_conditionallayout_layout-prop>`
    : Component
--  ****`name </sdk/apps/qml/Ubuntu.Layouts/ConditionalLayout#name-prop>`__****
-   : string
--  ****`when </sdk/apps/qml/Ubuntu.Layouts/ConditionalLayout#when-prop>`__****
-   : bool
+-  :ref:`name <sdk_ubuntu_layouts_conditionallayout_name-prop>` :
+   string
+-  :ref:`when <sdk_ubuntu_layouts_conditionallayout_when-prop>` :
+   bool
 
 Detailed Description
 --------------------
 
-`ConditionalLayout </sdk/apps/qml/Ubuntu.Layouts/ConditionalLayout/>`__
-is a non-visual element defining the actual layout to be applied when a
-given condition evaluates to true. The condition can be any valid
-boolean JavaScript expression.
+:ref:`ConditionalLayout <sdk_ubuntu_layouts_conditionallayout>` is a
+non-visual element defining the actual layout to be applied when a given
+condition evaluates to true. The condition can be any valid boolean
+JavaScript expression.
 
 As Layouts can be nested, it is recommended to choose properties of the
 Layouts item, often width and height, when defining the condition. Other
@@ -28,8 +32,8 @@ elements like Screen orientation can also be used to define the layout
 activation condition.
 
 There must be only a single component defined in the
-`ConditionalLayout </sdk/apps/qml/Ubuntu.Layouts/ConditionalLayout/>`__
-which will be instantiated upon activation.
+:ref:`ConditionalLayout <sdk_ubuntu_layouts_conditionallayout>` which will
+be instantiated upon activation.
 
 Each conditional layout must be named with a string, which identifies
 the layout when activated.
@@ -86,23 +90,26 @@ the layout when activated.
 All Items to be managed by the Layouts engine must identify themselves
 by setting the Layouts.item attached property to a unique name (string).
 These unique names are then used by the
-`ItemLayout </sdk/apps/qml/Ubuntu.Layouts/ItemLayout/>`__ component, so
-can apply the new layout to the correct Item.
+:ref:`ItemLayout <sdk_ubuntu_layouts_itemlayout>` component, so can apply
+the new layout to the correct Item.
 
-**See also** `ItemLayout </sdk/apps/qml/Ubuntu.Layouts/ItemLayout/>`__.
+**See also** :ref:`ItemLayout <sdk_ubuntu_layouts_itemlayout>`.
 
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_layouts_conditionallayout_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ [default] layout :                                              |
-| `Component </sdk/apps/qml/QtQml/Component/>`__                           |
+| :ref:` <>`\ [default] layout : `Component <sdk_qtqml_component>`       |
 +--------------------------------------------------------------------------+
 
 Default property holding the definition component of the layout. The
 component will be instantiated once the condition evaluates to true.
 
 | 
+
+.. _sdk_ubuntu_layouts_conditionallayout_name-prop:
 
 +--------------------------------------------------------------------------+
 |        \ name : string                                                   |
@@ -111,9 +118,11 @@ component will be instantiated once the condition evaluates to true.
 This property defines the name of the layout. Within the definition of
 Layouts, these names should be unique for each layout.
 
-**See also** `Layouts </sdk/apps/qml/Ubuntu.Layouts/Layouts/>`__.
+**See also** :ref:`Layouts <sdk_ubuntu_layouts_layouts>`.
 
 | 
+
+.. _sdk_ubuntu_layouts_conditionallayout_when-prop:
 
 +--------------------------------------------------------------------------+
 |        \ when : bool                                                     |
@@ -121,9 +130,8 @@ Layouts, these names should be unique for each layout.
 
 This property defines the condition that when evaluating to true,
 chooses this
-`ConditionalLayout </sdk/apps/qml/Ubuntu.Layouts/ConditionalLayout/>`__
-to become the active layout. When two ConditionalLayouts **when**
-condition is evaluated to true, the first one declared in the layouts
-list is chosen.
+:ref:`ConditionalLayout <sdk_ubuntu_layouts_conditionallayout>` to become
+the active layout. When two ConditionalLayouts **when** condition is
+evaluated to true, the first one declared in the layouts list is chosen.
 
 | 

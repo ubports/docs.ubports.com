@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_ambienttemperaturereading:
+QtSensors AmbientTemperatureReading
+===================================
+
 The AmbientTemperatureReading element holds the most recent temperature
 reading.
 
@@ -6,21 +10,21 @@ reading.
 +--------------------------------------+--------------------------------------+
 | Since:                               | QtSensors 5.1                        |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `SensorReading </sdk/apps/qml/QtSens |
-|                                      | ors/SensorReading/>`__               |
+| Inherits:                            | :ref:`SensorReading <sdk_qtsensors_sensor |
+|                                      | reading>`_                           |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`temperature </sdk/apps/qml/QtSensors/AmbientTemperatureReading#temperature-prop>`__****
+-  :ref:`temperature <sdk_qtsensors_ambienttemperaturereading_temperature-prop>`
    : qreal
 
 Detailed Description
 --------------------
 
 The
-`AmbientTemperatureReading </sdk/apps/qml/QtSensors/AmbientTemperatureReading/>`__
+:ref:`AmbientTemperatureReading <sdk_qtsensors_ambienttemperaturereading>`
 element holds the most recent temperature reading.
 
 This element wraps the QAmbientTemperatureReading class. Please see the
@@ -30,6 +34,8 @@ This element cannot be directly created.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtsensors_ambienttemperaturereading_temperature-prop:
 
 +--------------------------------------------------------------------------+
 |        \ temperature : qreal                                             |

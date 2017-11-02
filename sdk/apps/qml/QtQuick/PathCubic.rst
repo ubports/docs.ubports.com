@@ -1,3 +1,7 @@
+.. _sdk_qtquick_pathcubic:
+QtQuick PathCubic
+=================
+
 Defines a cubic Bezier curve with two control points
 
 +---------------------+----------------------+
@@ -7,28 +11,22 @@ Defines a cubic Bezier curve with two control points
 Properties
 ----------
 
--  ****`control1X </sdk/apps/qml/QtQuick/PathCubic#control1X-prop>`__****
+-  :ref:`control1X <sdk_qtquick_pathcubic_control1X-prop>` : real
+-  :ref:`control1Y <sdk_qtquick_pathcubic_control1Y-prop>` : real
+-  :ref:`control2X <sdk_qtquick_pathcubic_control2X-prop>` : real
+-  :ref:`control2Y <sdk_qtquick_pathcubic_control2Y-prop>` : real
+-  :ref:`relativeControl1X <sdk_qtquick_pathcubic_relativeControl1X-prop>`
    : real
--  ****`control1Y </sdk/apps/qml/QtQuick/PathCubic#control1Y-prop>`__****
+-  :ref:`relativeControl1Y <sdk_qtquick_pathcubic_relativeControl1Y-prop>`
    : real
--  ****`control2X </sdk/apps/qml/QtQuick/PathCubic#control2X-prop>`__****
+-  :ref:`relativeControl2X <sdk_qtquick_pathcubic_relativeControl2X-prop>`
    : real
--  ****`control2Y </sdk/apps/qml/QtQuick/PathCubic#control2Y-prop>`__****
+-  :ref:`relativeControl2Y <sdk_qtquick_pathcubic_relativeControl2Y-prop>`
    : real
--  ****`relativeControl1X </sdk/apps/qml/QtQuick/PathCubic#relativeControl1X-prop>`__****
-   : real
--  ****`relativeControl1Y </sdk/apps/qml/QtQuick/PathCubic#relativeControl1Y-prop>`__****
-   : real
--  ****`relativeControl2X </sdk/apps/qml/QtQuick/PathCubic#relativeControl2X-prop>`__****
-   : real
--  ****`relativeControl2Y </sdk/apps/qml/QtQuick/PathCubic#relativeControl2Y-prop>`__****
-   : real
--  ****`relativeX </sdk/apps/qml/QtQuick/PathCubic#relativeX-prop>`__****
-   : real
--  ****`relativeY </sdk/apps/qml/QtQuick/PathCubic#relativeY-prop>`__****
-   : real
--  ****`x </sdk/apps/qml/QtQuick/PathCubic#x-prop>`__**** : real
--  ****`y </sdk/apps/qml/QtQuick/PathCubic#y-prop>`__**** : real
+-  :ref:`relativeX <sdk_qtquick_pathcubic_relativeX-prop>` : real
+-  :ref:`relativeY <sdk_qtquick_pathcubic_relativeY-prop>` : real
+-  :ref:`x <sdk_qtquick_pathcubic_x-prop>` : real
+-  :ref:`y <sdk_qtquick_pathcubic_y-prop>` : real
 
 Detailed Description
 --------------------
@@ -50,15 +48,16 @@ The following QML produces the path shown below:
 |                                      |     }                                |
 +--------------------------------------+--------------------------------------+
 
-**See also** `Path </sdk/apps/qml/QtQuick/Path/>`__,
-`PathQuad </sdk/apps/qml/QtQuick/PathQuad/>`__,
-`PathLine </sdk/apps/qml/QtQuick/PathLine/>`__,
-`PathArc </sdk/apps/qml/QtQuick/PathArc/>`__,
-`PathCurve </sdk/apps/qml/QtQuick/PathCurve/>`__, and
-`PathSvg </sdk/apps/qml/QtQuick/PathSvg/>`__.
+**See also** :ref:`Path <sdk_qtquick_path>`,
+:ref:`PathQuad <sdk_qtquick_pathquad>`,
+:ref:`PathLine <sdk_qtquick_pathline>`, `PathArc <sdk_qtquick_patharc>`,
+:ref:`PathCurve <sdk_qtquick_pathcurve>`, and
+:ref:`PathSvg <sdk_qtquick_pathsvg>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_pathcubic_control1X-prop:
 
 +--------------------------------------------------------------------------+
 |        \ control1X : real                                                |
@@ -68,6 +67,8 @@ Defines the position of the first control point.
 
 | 
 
+.. _sdk_qtquick_pathcubic_control1Y-prop:
+
 +--------------------------------------------------------------------------+
 |        \ control1Y : real                                                |
 +--------------------------------------------------------------------------+
@@ -75,6 +76,8 @@ Defines the position of the first control point.
 Defines the position of the first control point.
 
 | 
+
+.. _sdk_qtquick_pathcubic_control2X-prop:
 
 +--------------------------------------------------------------------------+
 |        \ control2X : real                                                |
@@ -84,6 +87,8 @@ Defines the position of the second control point.
 
 | 
 
+.. _sdk_qtquick_pathcubic_control2Y-prop:
+
 +--------------------------------------------------------------------------+
 |        \ control2Y : real                                                |
 +--------------------------------------------------------------------------+
@@ -91,6 +96,8 @@ Defines the position of the second control point.
 Defines the position of the second control point.
 
 | 
+
+.. _sdk_qtquick_pathcubic_relativeControl1X-prop:
 
 +--------------------------------------------------------------------------+
 |        \ relativeControl1X : real                                        |
@@ -105,13 +112,14 @@ control point's axis, the relative position will be used.
 Relative and absolute positions can be mixed, for example it is valid to
 set a relative control1 x and an absolute control1 y.
 
-**See also**
-`control1X </sdk/apps/qml/QtQuick/PathCubic#control1X-prop>`__,
-`control1Y </sdk/apps/qml/QtQuick/PathCubic#control1Y-prop>`__,
-`control2X </sdk/apps/qml/QtQuick/PathCubic#control2X-prop>`__, and
-`control2Y </sdk/apps/qml/QtQuick/PathCubic#control2Y-prop>`__.
+**See also** :ref:`control1X <sdk_qtquick_pathcubic#control1X-prop>`,
+:ref:`control1Y <sdk_qtquick_pathcubic#control1Y-prop>`,
+:ref:`control2X <sdk_qtquick_pathcubic#control2X-prop>`, and
+:ref:`control2Y <sdk_qtquick_pathcubic#control2Y-prop>`.
 
 | 
+
+.. _sdk_qtquick_pathcubic_relativeControl1Y-prop:
 
 +--------------------------------------------------------------------------+
 |        \ relativeControl1Y : real                                        |
@@ -126,13 +134,14 @@ control point's axis, the relative position will be used.
 Relative and absolute positions can be mixed, for example it is valid to
 set a relative control1 x and an absolute control1 y.
 
-**See also**
-`control1X </sdk/apps/qml/QtQuick/PathCubic#control1X-prop>`__,
-`control1Y </sdk/apps/qml/QtQuick/PathCubic#control1Y-prop>`__,
-`control2X </sdk/apps/qml/QtQuick/PathCubic#control2X-prop>`__, and
-`control2Y </sdk/apps/qml/QtQuick/PathCubic#control2Y-prop>`__.
+**See also** :ref:`control1X <sdk_qtquick_pathcubic#control1X-prop>`,
+:ref:`control1Y <sdk_qtquick_pathcubic#control1Y-prop>`,
+:ref:`control2X <sdk_qtquick_pathcubic#control2X-prop>`, and
+:ref:`control2Y <sdk_qtquick_pathcubic#control2Y-prop>`.
 
 | 
+
+.. _sdk_qtquick_pathcubic_relativeControl2X-prop:
 
 +--------------------------------------------------------------------------+
 |        \ relativeControl2X : real                                        |
@@ -147,13 +156,14 @@ control point's axis, the relative position will be used.
 Relative and absolute positions can be mixed, for example it is valid to
 set a relative control1 x and an absolute control1 y.
 
-**See also**
-`control1X </sdk/apps/qml/QtQuick/PathCubic#control1X-prop>`__,
-`control1Y </sdk/apps/qml/QtQuick/PathCubic#control1Y-prop>`__,
-`control2X </sdk/apps/qml/QtQuick/PathCubic#control2X-prop>`__, and
-`control2Y </sdk/apps/qml/QtQuick/PathCubic#control2Y-prop>`__.
+**See also** :ref:`control1X <sdk_qtquick_pathcubic#control1X-prop>`,
+:ref:`control1Y <sdk_qtquick_pathcubic#control1Y-prop>`,
+:ref:`control2X <sdk_qtquick_pathcubic#control2X-prop>`, and
+:ref:`control2Y <sdk_qtquick_pathcubic#control2Y-prop>`.
 
 | 
+
+.. _sdk_qtquick_pathcubic_relativeControl2Y-prop:
 
 +--------------------------------------------------------------------------+
 |        \ relativeControl2Y : real                                        |
@@ -168,13 +178,14 @@ control point's axis, the relative position will be used.
 Relative and absolute positions can be mixed, for example it is valid to
 set a relative control1 x and an absolute control1 y.
 
-**See also**
-`control1X </sdk/apps/qml/QtQuick/PathCubic#control1X-prop>`__,
-`control1Y </sdk/apps/qml/QtQuick/PathCubic#control1Y-prop>`__,
-`control2X </sdk/apps/qml/QtQuick/PathCubic#control2X-prop>`__, and
-`control2Y </sdk/apps/qml/QtQuick/PathCubic#control2Y-prop>`__.
+**See also** :ref:`control1X <sdk_qtquick_pathcubic#control1X-prop>`,
+:ref:`control1Y <sdk_qtquick_pathcubic#control1Y-prop>`,
+:ref:`control2X <sdk_qtquick_pathcubic#control2X-prop>`, and
+:ref:`control2Y <sdk_qtquick_pathcubic#control2Y-prop>`.
 
 | 
+
+.. _sdk_qtquick_pathcubic_relativeX-prop:
 
 +--------------------------------------------------------------------------+
 |        \ relativeX : real                                                |
@@ -188,10 +199,12 @@ axis, the relative position will be used.
 Relative and absolute positions can be mixed, for example it is valid to
 set a relative x and an absolute y.
 
-**See also** `x </sdk/apps/qml/QtQuick/PathCubic#x-prop>`__ and
-`y </sdk/apps/qml/QtQuick/PathCubic#y-prop>`__.
+**See also** :ref:`x <sdk_qtquick_pathcubic#x-prop>` and
+:ref:`y <sdk_qtquick_pathcubic#y-prop>`.
 
 | 
+
+.. _sdk_qtquick_pathcubic_relativeY-prop:
 
 +--------------------------------------------------------------------------+
 |        \ relativeY : real                                                |
@@ -205,10 +218,12 @@ axis, the relative position will be used.
 Relative and absolute positions can be mixed, for example it is valid to
 set a relative x and an absolute y.
 
-**See also** `x </sdk/apps/qml/QtQuick/PathCubic#x-prop>`__ and
-`y </sdk/apps/qml/QtQuick/PathCubic#y-prop>`__.
+**See also** :ref:`x <sdk_qtquick_pathcubic#x-prop>` and
+:ref:`y <sdk_qtquick_pathcubic#y-prop>`.
 
 | 
+
+.. _sdk_qtquick_pathcubic_x-prop:
 
 +--------------------------------------------------------------------------+
 |        \ x : real                                                        |
@@ -216,11 +231,12 @@ set a relative x and an absolute y.
 
 Defines the end point of the curve.
 
-**See also**
-`relativeX </sdk/apps/qml/QtQuick/PathCubic#relativeX-prop>`__ and
-`relativeY </sdk/apps/qml/QtQuick/PathCubic#relativeY-prop>`__.
+**See also** :ref:`relativeX <sdk_qtquick_pathcubic#relativeX-prop>` and
+:ref:`relativeY <sdk_qtquick_pathcubic#relativeY-prop>`.
 
 | 
+
+.. _sdk_qtquick_pathcubic_y-prop:
 
 +--------------------------------------------------------------------------+
 |        \ y : real                                                        |
@@ -228,11 +244,10 @@ Defines the end point of the curve.
 
 Defines the end point of the curve.
 
-**See also**
-`relativeX </sdk/apps/qml/QtQuick/PathCubic#relativeX-prop>`__ and
-`relativeY </sdk/apps/qml/QtQuick/PathCubic#relativeY-prop>`__.
+**See also** :ref:`relativeX <sdk_qtquick_pathcubic#relativeX-prop>` and
+:ref:`relativeY <sdk_qtquick_pathcubic#relativeY-prop>`.
 
 | 
 
-.. |image0| image:: /media/sdk/apps/qml/QtQuick/PathCubic/images/declarative-pathcubic.png
+.. |image0| image:: /mediasdk_qtquick_pathcubicimages/declarative-pathcubic.png
 

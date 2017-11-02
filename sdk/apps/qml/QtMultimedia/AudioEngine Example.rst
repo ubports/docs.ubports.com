@@ -1,3 +1,7 @@
+.. _sdk_qtmultimedia_audioengine_example:
+QtMultimedia AudioEngine Example
+================================
+
 
 
 *Audio Engine* demonstrates 3D sound control using the Qt Audio Engine

@@ -1,3 +1,7 @@
+.. _sdk_qtcontacts_invalidfilter:
+QtContacts InvalidFilter
+========================
+
 the InvalidFilter element provides a filter which will never match any
 contacts.
 

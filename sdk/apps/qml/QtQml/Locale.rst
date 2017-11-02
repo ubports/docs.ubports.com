@@ -1,3 +1,7 @@
+.. _sdk_qtqml_locale:
+QtQml Locale
+============
+
 Provides locale specific properties and formatted data
 
 +---------------------+--------------------+
@@ -7,73 +11,67 @@ Provides locale specific properties and formatted data
 Properties
 ----------
 
--  ****`amText </sdk/apps/qml/QtQml/Locale#amText-prop>`__**** : string
--  ****`decimalPoint </sdk/apps/qml/QtQml/Locale#decimalPoint-prop>`__****
-   : string
--  ****`exponential </sdk/apps/qml/QtQml/Locale#exponential-prop>`__****
-   : string
--  ****`firstDayOfWeek </sdk/apps/qml/QtQml/Locale#firstDayOfWeek-prop>`__****
-   : enumeration
--  ****`groupSeparator </sdk/apps/qml/QtQml/Locale#groupSeparator-prop>`__****
-   : string
--  ****`measurementSystem </sdk/apps/qml/QtQml/Locale#measurementSystem-prop>`__****
-   : enumeration
--  ****`name </sdk/apps/qml/QtQml/Locale#name-prop>`__**** : string
--  ****`nativeCountryName </sdk/apps/qml/QtQml/Locale#nativeCountryName-prop>`__****
-   : string
--  ****`nativeLanguageName </sdk/apps/qml/QtQml/Locale#nativeLanguageName-prop>`__****
-   : string
--  ****`negativeSign </sdk/apps/qml/QtQml/Locale#negativeSign-prop>`__****
-   : string
--  ****`percent </sdk/apps/qml/QtQml/Locale#percent-prop>`__**** :
+-  :ref:`amText <sdk_qtqml_locale_amText-prop>` : string
+-  :ref:`decimalPoint <sdk_qtqml_locale_decimalPoint-prop>` :
    string
--  ****`pmText </sdk/apps/qml/QtQml/Locale#pmText-prop>`__**** : string
--  ****`positiveSign </sdk/apps/qml/QtQml/Locale#positiveSign-prop>`__****
-   : string
--  ****`textDirection </sdk/apps/qml/QtQml/Locale#textDirection-prop>`__****
-   : enumeration
--  ****`uiLanguages </sdk/apps/qml/QtQml/Locale#uiLanguages-prop>`__****
-   : Array<string>
--  ****`weekDays </sdk/apps/qml/QtQml/Locale#weekDays-prop>`__**** :
-   Array<int>
--  ****`zeroDigit </sdk/apps/qml/QtQml/Locale#zeroDigit-prop>`__**** :
+-  :ref:`exponential <sdk_qtqml_locale_exponential-prop>` : string
+-  :ref:`firstDayOfWeek <sdk_qtqml_locale_firstDayOfWeek-prop>` :
+   enumeration
+-  :ref:`groupSeparator <sdk_qtqml_locale_groupSeparator-prop>` :
    string
+-  :ref:`measurementSystem <sdk_qtqml_locale_measurementSystem-prop>`
+   : enumeration
+-  :ref:`name <sdk_qtqml_locale_name-prop>` : string
+-  :ref:`nativeCountryName <sdk_qtqml_locale_nativeCountryName-prop>`
+   : string
+-  :ref:`nativeLanguageName <sdk_qtqml_locale_nativeLanguageName-prop>`
+   : string
+-  :ref:`negativeSign <sdk_qtqml_locale_negativeSign-prop>` :
+   string
+-  :ref:`percent <sdk_qtqml_locale_percent-prop>` : string
+-  :ref:`pmText <sdk_qtqml_locale_pmText-prop>` : string
+-  :ref:`positiveSign <sdk_qtqml_locale_positiveSign-prop>` :
+   string
+-  :ref:`textDirection <sdk_qtqml_locale_textDirection-prop>` :
+   enumeration
+-  :ref:`uiLanguages <sdk_qtqml_locale_uiLanguages-prop>` :
+   Array<string>
+-  :ref:`weekDays <sdk_qtqml_locale_weekDays-prop>` : Array<int>
+-  :ref:`zeroDigit <sdk_qtqml_locale_zeroDigit-prop>` : string
 
 Methods
 -------
 
 -  string
-   ****`currencySymbol </sdk/apps/qml/QtQml/Locale#currencySymbol-method>`__****\ (format)
+   **:ref:`currencySymbol <sdk_qtqml_locale#currencySymbol-method>`**\ (format)
 -  string
-   ****`dateFormat </sdk/apps/qml/QtQml/Locale#dateFormat-method>`__****\ (type)
+   **:ref:`dateFormat <sdk_qtqml_locale#dateFormat-method>`**\ (type)
 -  string
-   ****`dateTimeFormat </sdk/apps/qml/QtQml/Locale#dateTimeFormat-method>`__****\ (type)
--  string
-   ****`dayName </sdk/apps/qml/QtQml/Locale#dayName-method>`__****\ (day,
+   **:ref:`dateTimeFormat <sdk_qtqml_locale#dateTimeFormat-method>`**\ (type)
+-  string :ref:`dayName <sdk_qtqml_locale_dayName-method>`\ (day,
    type)
 -  string
-   ****`monthName </sdk/apps/qml/QtQml/Locale#monthName-method>`__****\ (month,
+   **:ref:`monthName <sdk_qtqml_locale#monthName-method>`**\ (month,
    type)
 -  string
-   ****`standaloneDayName </sdk/apps/qml/QtQml/Locale#standaloneDayName-method>`__****\ (day,
+   **:ref:`standaloneDayName <sdk_qtqml_locale#standaloneDayName-method>`**\ (day,
    type)
 -  string
-   ****`standaloneMonthName </sdk/apps/qml/QtQml/Locale#standaloneMonthName-method>`__****\ (month,
+   **:ref:`standaloneMonthName <sdk_qtqml_locale#standaloneMonthName-method>`**\ (month,
    type)
 -  string
-   ****`timeFormat </sdk/apps/qml/QtQml/Locale#timeFormat-method>`__****\ (type)
+   **:ref:`timeFormat <sdk_qtqml_locale#timeFormat-method>`**\ (type)
 
 Detailed Description
 --------------------
 
 The Locale object may only be created via the
-`Qt.locale() </sdk/apps/qml/QtQml/Qt#locale-method>`__ function. It
-cannot be created directly.
+:ref:`Qt.locale() <sdk_qtqml_qt#locale-method>` function. It cannot be
+created directly.
 
-The `Qt.locale() </sdk/apps/qml/QtQml/Qt#locale-method>`__ function
-returns a JS Locale object representing the locale with the specified
-name, which has the format "language[\_territory][.codeset][@modifier]"
-or "C".
+The :ref:`Qt.locale() <sdk_qtqml_qt#locale-method>` function returns a JS
+Locale object representing the locale with the specified name, which has
+the format "language[\_territory][.codeset][@modifier]" or "C".
 
 Locale supports the concept of a default locale, which is determined
 from the system's locale settings at application startup. If no
@@ -83,9 +81,8 @@ returned.
 The Locale object provides a number of functions and properties
 providing data for the specified locale.
 
-The Locale object may also be passed to the
-`Date </sdk/apps/qml/QtQml/Date/>`__ and
-`Number </sdk/apps/qml/QtQml/Number/>`__ toLocaleString() and
+The Locale object may also be passed to the :ref:`Date <sdk_qtqml_date>`
+and :ref:`Number <sdk_qtqml_number>` toLocaleString() and
 fromLocaleString() methods in order to convert to/from strings using the
 specified locale.
 
@@ -115,12 +112,12 @@ Qt Quick Locale's data is based on Common Locale Data Repository v1.8.1.
 Locale String Format Types
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The `monthName() </sdk/apps/qml/QtQml/Locale#monthName-method>`__,
-`standaloneMonthName() </sdk/apps/qml/QtQml/Locale#standaloneMonthName-method>`__,
-`dayName() </sdk/apps/qml/QtQml/Locale#dayName-method>`__ and
-`standaloneDayName() </sdk/apps/qml/QtQml/Locale#standaloneDayName-method>`__
-can use the following enumeration values to specify the formatting of
-the string representation for a Date object.
+The :ref:`monthName() <sdk_qtqml_locale#monthName-method>`,
+:ref:`standaloneMonthName() <sdk_qtqml_locale#standaloneMonthName-method>`,
+:ref:`dayName() <sdk_qtqml_locale#dayName-method>` and
+:ref:`standaloneDayName() <sdk_qtqml_locale#standaloneDayName-method>` can
+use the following enumeration values to specify the formatting of the
+string representation for a Date object.
 
 -  Locale.LongFormat The long version of day and month names; for
    example, returning "January" as a month name.
@@ -153,11 +150,13 @@ THIS SOFTWARE OR ITS FITNESS FOR ANY PARTICULAR PURPOSE.
 This product includes software developed by the University of
 California, Berkeley and its contributors.
 
-**See also** `Date </sdk/apps/qml/QtQml/Date/>`__ and
-`Number </sdk/apps/qml/QtQml/Number/>`__.
+**See also** :ref:`Date <sdk_qtqml_date>` and
+:ref:`Number <sdk_qtqml_number>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtqml_locale_amText-prop:
 
 +--------------------------------------------------------------------------+
 |        \ amText : string                                                 |
@@ -168,6 +167,8 @@ conventions of the 12-hour clock.
 
 | 
 
+.. _sdk_qtqml_locale_decimalPoint-prop:
+
 +--------------------------------------------------------------------------+
 |        \ decimalPoint : string                                           |
 +--------------------------------------------------------------------------+
@@ -176,6 +177,8 @@ Holds the decimal point character of this locale.
 
 | 
 
+.. _sdk_qtqml_locale_exponential-prop:
+
 +--------------------------------------------------------------------------+
 |        \ exponential : string                                            |
 +--------------------------------------------------------------------------+
@@ -183,6 +186,8 @@ Holds the decimal point character of this locale.
 Holds the exponential character of this locale.
 
 | 
+
+.. _sdk_qtqml_locale_firstDayOfWeek-prop:
 
 +--------------------------------------------------------------------------+
 |        \ firstDayOfWeek : enumeration                                    |
@@ -203,6 +208,8 @@ from the Qt C++ API where Qt::Sunday = 7.
 
 | 
 
+.. _sdk_qtqml_locale_groupSeparator-prop:
+
 +--------------------------------------------------------------------------+
 |        \ groupSeparator : string                                         |
 +--------------------------------------------------------------------------+
@@ -210,6 +217,8 @@ from the Qt C++ API where Qt::Sunday = 7.
 Holds the group separator character of this locale.
 
 | 
+
+.. _sdk_qtqml_locale_measurementSystem-prop:
 
 +--------------------------------------------------------------------------+
 |        \ measurementSystem : enumeration                                 |
@@ -228,6 +237,8 @@ This property defines which units are used for measurement.
 
 | 
 
+.. _sdk_qtqml_locale_name-prop:
+
 +--------------------------------------------------------------------------+
 |        \ name : string                                                   |
 +--------------------------------------------------------------------------+
@@ -239,6 +250,8 @@ language code, and country is an uppercase, two- or three-letter ISO
 
 | 
 
+.. _sdk_qtqml_locale_nativeCountryName-prop:
+
 +--------------------------------------------------------------------------+
 |        \ nativeCountryName : string                                      |
 +--------------------------------------------------------------------------+
@@ -247,9 +260,11 @@ Holds a native name of the country for the locale. For example "España"
 for Spanish/Spain locale.
 
 **See also**
-`nativeLanguageName </sdk/apps/qml/QtQml/Locale#nativeLanguageName-prop>`__.
+:ref:`nativeLanguageName <sdk_qtqml_locale#nativeLanguageName-prop>`.
 
 | 
+
+.. _sdk_qtqml_locale_nativeLanguageName-prop:
 
 +--------------------------------------------------------------------------+
 |        \ nativeLanguageName : string                                     |
@@ -259,9 +274,11 @@ Holds a native name of the language for the locale. For example
 "Schwiizertüütsch" for Swiss-German locale.
 
 **See also**
-`nativeCountryName </sdk/apps/qml/QtQml/Locale#nativeCountryName-prop>`__.
+:ref:`nativeCountryName <sdk_qtqml_locale#nativeCountryName-prop>`.
 
 | 
+
+.. _sdk_qtqml_locale_negativeSign-prop:
 
 +--------------------------------------------------------------------------+
 |        \ negativeSign : string                                           |
@@ -271,6 +288,8 @@ Holds the negative sign character of this locale.
 
 | 
 
+.. _sdk_qtqml_locale_percent-prop:
+
 +--------------------------------------------------------------------------+
 |        \ percent : string                                                |
 +--------------------------------------------------------------------------+
@@ -278,6 +297,8 @@ Holds the negative sign character of this locale.
 Holds the percent character of this locale.
 
 | 
+
+.. _sdk_qtqml_locale_pmText-prop:
 
 +--------------------------------------------------------------------------+
 |        \ pmText : string                                                 |
@@ -288,6 +309,8 @@ conventions of the 12-hour clock.
 
 | 
 
+.. _sdk_qtqml_locale_positiveSign-prop:
+
 +--------------------------------------------------------------------------+
 |        \ positiveSign : string                                           |
 +--------------------------------------------------------------------------+
@@ -295,6 +318,8 @@ conventions of the 12-hour clock.
 Holds the positive sign character of this locale.
 
 | 
+
+.. _sdk_qtqml_locale_textDirection-prop:
 
 +--------------------------------------------------------------------------+
 |        \ textDirection : enumeration                                     |
@@ -306,6 +331,8 @@ Holds the text direction of the language:
 -  Qt.RightToLeft
 
 | 
+
+.. _sdk_qtqml_locale_uiLanguages-prop:
 
 +--------------------------------------------------------------------------+
 |        \ uiLanguages : Array<string>                                     |
@@ -321,6 +348,8 @@ The first item in the list is the most preferred one.
 
 | 
 
+.. _sdk_qtqml_locale_weekDays-prop:
+
 +--------------------------------------------------------------------------+
 |        \ weekDays : Array<int>                                           |
 +--------------------------------------------------------------------------+
@@ -328,10 +357,11 @@ The first item in the list is the most preferred one.
 Holds an array of days that are considered week days according to the
 current locale, where Sunday is 0 and Saturday is 6.
 
-**See also**
-`firstDayOfWeek </sdk/apps/qml/QtQml/Locale#firstDayOfWeek-prop>`__.
+**See also** :ref:`firstDayOfWeek <sdk_qtqml_locale#firstDayOfWeek-prop>`.
 
 | 
+
+.. _sdk_qtqml_locale_zeroDigit-method:
 
 +--------------------------------------------------------------------------+
 |        \ zeroDigit : string                                              |
@@ -344,6 +374,8 @@ Holds Returns the zero digit character of this locale.
 Method Documentation
 --------------------
 
+.. _sdk_qtqml_locale_string currencySymbol-method:
+
 +--------------------------------------------------------------------------+
 |        \ string currencySymbol(format)                                   |
 +--------------------------------------------------------------------------+
@@ -355,32 +387,37 @@ Returns the currency symbol for the specified *format*:
 -  Locale.CurrencyDisplayName a user readable name of the currency.
 
 **See also**
-`Number::toLocaleCurrencyString() </sdk/apps/qml/QtQml/Number#toLocaleCurrencyString-method>`__.
+:ref:`Number::toLocaleCurrencyString() <sdk_qtqml_number#toLocaleCurrencyString-method>`.
 
 | 
+
+.. _sdk_qtqml_locale_string dateFormat-method:
 
 +--------------------------------------------------------------------------+
 |        \ string dateFormat(type)                                         |
 +--------------------------------------------------------------------------+
 
 Returns the date format used for the current locale. *type* specifies
-the `FormatType </sdk/apps/qml/QtQml/Locale#formattype>`__ to return.
+the :ref:`FormatType <sdk_qtqml_locale#formattype>` to return.
 
-**See also** `Date </sdk/apps/qml/QtQml/Date/>`__.
+**See also** :ref:`Date <sdk_qtqml_date>`.
 
 | 
+
+.. _sdk_qtqml_locale_string dateTimeFormat-method:
 
 +--------------------------------------------------------------------------+
 |        \ string dateTimeFormat(type)                                     |
 +--------------------------------------------------------------------------+
 
 Returns the date time format used for the current locale. *type*
-specifies the `FormatType </sdk/apps/qml/QtQml/Locale#formattype>`__ to
-return.
+specifies the :ref:`FormatType <sdk_qtqml_locale#formattype>` to return.
 
-**See also** `Date </sdk/apps/qml/QtQml/Date/>`__.
+**See also** :ref:`Date <sdk_qtqml_date>`.
 
 | 
+
+.. _sdk_qtqml_locale_string dayName-method:
 
 +--------------------------------------------------------------------------+
 |        \ string dayName(day, type)                                       |
@@ -388,31 +425,31 @@ return.
 
 Returns the localized name of the *day* (where 0 represents Sunday, 1
 represents Monday and so on), in the optional
-`FormatType </sdk/apps/qml/QtQml/Locale#formattype>`__ specified by
-*type*.
+:ref:`FormatType <sdk_qtqml_locale#formattype>` specified by *type*.
 
-**See also**
-`monthName() </sdk/apps/qml/QtQml/Locale#monthName-method>`__ and
-`standaloneDayName() </sdk/apps/qml/QtQml/Locale#standaloneDayName-method>`__.
+**See also** :ref:`monthName() <sdk_qtqml_locale#monthName-method>` and
+:ref:`standaloneDayName() <sdk_qtqml_locale#standaloneDayName-method>`.
 
 | 
+
+.. _sdk_qtqml_locale_string monthName-method:
 
 +--------------------------------------------------------------------------+
 |        \ string monthName(month, type)                                   |
 +--------------------------------------------------------------------------+
 
 Returns the localized name of *month* (0-11), in the optional
-`FormatType </sdk/apps/qml/QtQml/Locale#formattype>`__ specified by
-*type*.
+:ref:`FormatType <sdk_qtqml_locale#formattype>` specified by *type*.
 
 **Note:** the QLocale C++ API expects a range of (1-12), however
 Locale.monthName() expects 0-11 as per the JS Date object.
 
-**See also** `dayName() </sdk/apps/qml/QtQml/Locale#dayName-method>`__
-and
-`standaloneMonthName() </sdk/apps/qml/QtQml/Locale#standaloneMonthName-method>`__.
+**See also** :ref:`dayName() <sdk_qtqml_locale#dayName-method>` and
+:ref:`standaloneMonthName() <sdk_qtqml_locale#standaloneMonthName-method>`.
 
 | 
+
+.. _sdk_qtqml_locale_string standaloneDayName-method:
 
 +--------------------------------------------------------------------------+
 |        \ string standaloneDayName(day, type)                             |
@@ -420,18 +457,18 @@ and
 
 Returns the localized name of the *day* (where 0 represents Sunday, 1
 represents Monday and so on) that is used as a standalone text, in the
-`FormatType </sdk/apps/qml/QtQml/Locale#formattype>`__ specified by
-*type*.
+:ref:`FormatType <sdk_qtqml_locale#formattype>` specified by *type*.
 
 If the locale information does not specify the standalone day name then
 return value is the same as in
-`dayName() </sdk/apps/qml/QtQml/Locale#dayName-method>`__.
+:ref:`dayName() <sdk_qtqml_locale#dayName-method>`.
 
-**See also** `dayName() </sdk/apps/qml/QtQml/Locale#dayName-method>`__
-and
-`standaloneMonthName() </sdk/apps/qml/QtQml/Locale#standaloneMonthName-method>`__.
+**See also** :ref:`dayName() <sdk_qtqml_locale#dayName-method>` and
+:ref:`standaloneMonthName() <sdk_qtqml_locale#standaloneMonthName-method>`.
 
 | 
+
+.. _sdk_qtqml_locale_string standaloneMonthName-method:
 
 +--------------------------------------------------------------------------+
 |        \ string standaloneMonthName(month, type)                         |
@@ -439,29 +476,29 @@ and
 
 Returns the localized name of *month* (0-11) that is used as a
 standalone text, in the optional
-`FormatType </sdk/apps/qml/QtQml/Locale#formattype>`__ specified by
-*type*.
+:ref:`FormatType <sdk_qtqml_locale#formattype>` specified by *type*.
 
 If the locale information doesn't specify the standalone month name then
 return value is the same as in
-`monthName() </sdk/apps/qml/QtQml/Locale#monthName-method>`__.
+:ref:`monthName() <sdk_qtqml_locale#monthName-method>`.
 
 **Note:** the QLocale C++ API expects a range of (1-12), however
 Locale.standaloneMonthName() expects 0-11 as per the JS Date object.
 
-**See also**
-`monthName() </sdk/apps/qml/QtQml/Locale#monthName-method>`__ and
-`standaloneDayName() </sdk/apps/qml/QtQml/Locale#standaloneDayName-method>`__.
+**See also** :ref:`monthName() <sdk_qtqml_locale#monthName-method>` and
+:ref:`standaloneDayName() <sdk_qtqml_locale#standaloneDayName-method>`.
 
 | 
+
+.. _sdk_qtqml_locale_string timeFormat-method:
 
 +--------------------------------------------------------------------------+
 |        \ string timeFormat(type)                                         |
 +--------------------------------------------------------------------------+
 
 Returns the time format used for the current locale. *type* specifies
-the `FormatType </sdk/apps/qml/QtQml/Locale#formattype>`__ to return.
+the :ref:`FormatType <sdk_qtqml_locale#formattype>` to return.
 
-**See also** `Date </sdk/apps/qml/QtQml/Date/>`__.
+**See also** :ref:`Date <sdk_qtqml_date>`.
 
 | 

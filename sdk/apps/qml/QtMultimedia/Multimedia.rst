@@ -1,7 +1,11 @@
+.. _sdk_qtmultimedia_multimedia:
+QtMultimedia Multimedia
+=======================
+
 
 
 Multimedia support in Qt is provided by the `Qt
-Multimedia </sdk/apps/qml/QtMultimedia/qtmultimedia-index/>`__ module.
+Multimedia </sdk/apps/qml/QtMultimedia/qtmultimedia-index/>`_  module.
 The Qt Multimedia module provides a rich feature set that enables you to
 easily take advantage of a platform's multimedia capabilities such as
 media playback and the use of camera and radio devices.
@@ -31,10 +35,10 @@ Qt's multimedia APIs are categorized into four main components. More
 information (including background information and class references) is
 available here:
 
--  `Audio Overview </sdk/apps/qml/QtMultimedia/audiooverview/>`__
--  `Video Overview </sdk/apps/qml/QtMultimedia/videooverview/>`__
--  `Camera Overview </sdk/apps/qml/QtMultimedia/cameraoverview/>`__
--  `Radio Overview </sdk/apps/qml/QtMultimedia/radiooverview/>`__
+-  `Audio Overview </sdk/apps/qml/QtMultimedia/audiooverview/>`_ 
+-  `Video Overview </sdk/apps/qml/QtMultimedia/videooverview/>`_ 
+-  `Camera Overview </sdk/apps/qml/QtMultimedia/cameraoverview/>`_ 
+-  `Radio Overview </sdk/apps/qml/QtMultimedia/radiooverview/>`_ 
 
 .. rubric:: Multimedia Recipes
    :name: multimedia-recipes
@@ -92,9 +96,9 @@ camera, declarative-camera
 Camera
 QCamera, QMediaRecorder
 3D sound sources
-`Audio Engine </sdk/apps/qml/QtMultimedia/audioengine/>`__
-`AudioEngine </sdk/apps/qml/QtAudioEngine/AudioEngine/>`__,
-`Sound </sdk/apps/qml/QtAudioEngine/Sound/>`__
+`Audio Engine </sdk/apps/qml/QtMultimedia/audioengine/>`_ 
+:ref:`AudioEngine <sdk_qtaudioengine_audioengine>`,
+:ref:`Sound <sdk_qtaudioengine_sound>`
 
 .. rubric:: Limitations
    :name: limitations
@@ -110,14 +114,14 @@ installed.
 For developers wishing to access some platform specific settings, or to
 port the Qt Multimedia APIs to a new platform or technology, see
 `Multimedia Backend
-Development </sdk/apps/qml/QtMultimedia/multimediabackend/>`__.
+Development </sdk/apps/qml/QtMultimedia/multimediabackend/>`_ .
 
 .. rubric:: Changes from Previous Versions
    :name: changes-from-previous-versions
 
 If you previously used Qt Multimedia in Qt 4, or used Qt Multimedia Kit
 in Qt Mobility, please see `Changes in Qt
-Multimedia </sdk/apps/qml/QtMultimedia/changes/>`__ for more information
+Multimedia </sdk/apps/qml/QtMultimedia/changes/>`_  for more information
 on what changed, and what you might need to change when porting code.
 
 .. rubric:: Reference Documentation
@@ -133,60 +137,58 @@ The QML types are accessed by using:
     import QtMultimedia 5.4
 
 +--------------------------------------+--------------------------------------+
-| `Audio </sdk/apps/qml/QtMultimedia/A | Add audio playback to a scene        |
-| udio/>`__                            |                                      |
+| :ref:`Audio <sdk_qtmultimedia_audio>`| Add audio playback to a scene        |
 +--------------------------------------+--------------------------------------+
-| `Camera </sdk/apps/qml/QtMultimedia/ | Access viewfinder frames, and take   |
-| Camera/>`__                          | photos and movies                    |
+| :ref:`Camera <sdk_qtmultimedia_camera>` | Access viewfinder frames, and take   |
+|                                      | photos and movies                    |
 +--------------------------------------+--------------------------------------+
-| `CameraCapture </sdk/apps/qml/QtMult | An interface for capturing camera    |
-| imedia/CameraCapture/>`__            | images                               |
+| :ref:`CameraCapture <sdk_qtmultimedia_cam | An interface for capturing camera    |
+| eracapture>`_                        | images                               |
 +--------------------------------------+--------------------------------------+
-| `CameraExposure </sdk/apps/qml/QtMul | An interface for exposure related    |
-| timedia/CameraExposure/>`__          | camera settings                      |
+| :ref:`CameraExposure <sdk_qtmultimedia_ca | An interface for exposure related    |
+| meraexposure>`_                      | camera settings                      |
 +--------------------------------------+--------------------------------------+
-| `CameraFlash </sdk/apps/qml/QtMultim | An interface for flash related       |
-| edia/CameraFlash/>`__                | camera settings                      |
+| :ref:`CameraFlash <sdk_qtmultimedia_camer | An interface for flash related       |
+| aflash>`_                            | camera settings                      |
 +--------------------------------------+--------------------------------------+
-| `CameraFocus </sdk/apps/qml/QtMultim | An interface for focus related       |
-| edia/CameraFocus/>`__                | camera settings                      |
+| :ref:`CameraFocus <sdk_qtmultimedia_camer | An interface for focus related       |
+| afocus>`_                            | camera settings                      |
 +--------------------------------------+--------------------------------------+
-| `CameraImageProcessing </sdk/apps/qm | An interface for camera capture      |
-| l/QtMultimedia/CameraImageProcessing | related settings                     |
-| />`__                                |                                      |
+| :ref:`CameraImageProcessing <sdk_qtmultim | An interface for camera capture      |
+| edia_cameraimageprocessing>`_        | related settings                     |
 +--------------------------------------+--------------------------------------+
-| `CameraRecorder </sdk/apps/qml/QtMul | Controls video recording with the    |
-| timedia/CameraRecorder/>`__          | Camera                               |
+| :ref:`CameraRecorder <sdk_qtmultimedia_ca | Controls video recording with the    |
+| merarecorder>`_                      | Camera                               |
 +--------------------------------------+--------------------------------------+
-| `MediaPlayer </sdk/apps/qml/QtMultim | Add media playback to a scene        |
-| edia/MediaPlayer/>`__                |                                      |
+| :ref:`MediaPlayer <sdk_qtmultimedia_media | Add media playback to a scene        |
+| player>`_                            |                                      |
 +--------------------------------------+--------------------------------------+
-| `Playlist </sdk/apps/qml/QtMultimedi | For specifying a list of media to be |
-| a/Playlist/>`__                      | played                               |
+| :ref:`Playlist <sdk_qtmultimedia_playlist | For specifying a list of media to be |
+| >`_                                  | played                               |
 +--------------------------------------+--------------------------------------+
-| `PlaylistItem </sdk/apps/qml/QtMulti | Defines an item in a Playlist        |
-| media/PlaylistItem/>`__              |                                      |
+| :ref:`PlaylistItem <sdk_qtmultimedia_play | Defines an item in a Playlist        |
+| listitem>`_                          |                                      |
 +--------------------------------------+--------------------------------------+
-| `QtMultimedia </sdk/apps/qml/QtMulti | Provides a global object with useful |
-| media/QtMultimedia/>`__              | functions from Qt Multimedia         |
+| :ref:`QtMultimedia <sdk_qtmultimedia_qtmu | Provides a global object with useful |
+| ltimedia>`_                          | functions from Qt Multimedia         |
 +--------------------------------------+--------------------------------------+
-| `Radio </sdk/apps/qml/QtMultimedia/R | Access radio functionality from a    |
-| adio/>`__                            | QML application                      |
+| :ref:`Radio <sdk_qtmultimedia_radio>`| Access radio functionality from a    |
+|                                      | QML application                      |
 +--------------------------------------+--------------------------------------+
-| `RadioData </sdk/apps/qml/QtMultimed | Access RDS data from a QML           |
-| ia/RadioData/>`__                    | application                          |
+| :ref:`RadioData <sdk_qtmultimedia_radioda | Access RDS data from a QML           |
+| ta>`_                                | application                          |
 +--------------------------------------+--------------------------------------+
-| `SoundEffect </sdk/apps/qml/QtMultim | Type provides a way to play sound    |
-| edia/SoundEffect/>`__                | effects in QML                       |
+| :ref:`SoundEffect <sdk_qtmultimedia_sound | Type provides a way to play sound    |
+| effect>`_                            | effects in QML                       |
 +--------------------------------------+--------------------------------------+
-| `Torch </sdk/apps/qml/QtMultimedia/T | Simple control over torch            |
-| orch/>`__                            | functionality                        |
+| :ref:`Torch <sdk_qtmultimedia_torch>`| Simple control over torch            |
+|                                      | functionality                        |
 +--------------------------------------+--------------------------------------+
-| `Video </sdk/apps/qml/QtMultimedia/V | A convenience type for showing a     |
-| ideo/>`__                            | specified video                      |
+| :ref:`Video <sdk_qtmultimedia_video>`| A convenience type for showing a     |
+|                                      | specified video                      |
 +--------------------------------------+--------------------------------------+
-| `VideoOutput </sdk/apps/qml/QtMultim | Render video or camera viewfinder    |
-| edia/VideoOutput/>`__                |                                      |
+| :ref:`VideoOutput <sdk_qtmultimedia_video | Render video or camera viewfinder    |
+| output>`_                            |                                      |
 +--------------------------------------+--------------------------------------+
 
 The following types are accessed by using Qt Audio Engine:
@@ -196,38 +198,36 @@ The following types are accessed by using Qt Audio Engine:
     import QtAudioEngine 1.0
 
 +--------------------------------------+--------------------------------------+
-| `AttenuationModelInverse </sdk/apps/ | Defines a non-linear attenuation     |
-| qml/QtAudioEngine/AttenuationModelIn | curve for a Sound                    |
-| verse/>`__                           |                                      |
+| :ref:`AttenuationModelInverse <sdk_qtaudi | Defines a non-linear attenuation     |
+| oengine_attenuationmodelinverse>`_   | curve for a Sound                    |
 +--------------------------------------+--------------------------------------+
-| `AttenuationModelLinear </sdk/apps/q | Defines a linear attenuation curve   |
-| ml/QtAudioEngine/AttenuationModelLin | for a Sound                          |
-| ear/>`__                             |                                      |
+| :ref:`AttenuationModelLinear <sdk_qtaudio | Defines a linear attenuation curve   |
+| engine_attenuationmodellinear>`_     | for a Sound                          |
 +--------------------------------------+--------------------------------------+
-| `AudioCategory </sdk/apps/qml/QtAudi | Control all active sound instances   |
-| oEngine/AudioCategory/>`__           | by group                             |
+| :ref:`AudioCategory <sdk_qtaudioengine_au | Control all active sound instances   |
+| diocategory>`_                       | by group                             |
 +--------------------------------------+--------------------------------------+
-| `AudioEngine </sdk/apps/qml/QtAudioE | Organize all your 3d audio content   |
-| ngine/AudioEngine/>`__               | in one place                         |
+| :ref:`AudioEngine <sdk_qtaudioengine_audi | Organize all your 3d audio content   |
+| oengine>`_                           | in one place                         |
 +--------------------------------------+--------------------------------------+
-| `AudioListener </sdk/apps/qml/QtAudi | Control global listener parameters   |
-| oEngine/AudioListener/>`__           |                                      |
+| :ref:`AudioListener <sdk_qtaudioengine_au | Control global listener parameters   |
+| diolistener>`_                       |                                      |
 +--------------------------------------+--------------------------------------+
-| `AudioSample </sdk/apps/qml/QtAudioE | Load audio samples, mostly .wav      |
-| ngine/AudioSample/>`__               |                                      |
+| :ref:`AudioSample <sdk_qtaudioengine_audi | Load audio samples, mostly .wav      |
+| osample>`_                           |                                      |
 +--------------------------------------+--------------------------------------+
-| `PlayVariation </sdk/apps/qml/QtAudi | Define a playback variation for      |
-| oEngine/PlayVariation/>`__           | sounds. So each time the playback of |
+| :ref:`PlayVariation <sdk_qtaudioengine_pl | Define a playback variation for      |
+| ayvariation>`_                       | sounds. So each time the playback of |
 |                                      | the same sound can be a slightly     |
 |                                      | different even with the same         |
 |                                      | AudioSample                          |
 +--------------------------------------+--------------------------------------+
-| `Sound </sdk/apps/qml/QtAudioEngine/ | Define a variety of samples and      |
-| Sound/>`__                           | parameters to be used for            |
+| :ref:`Sound <sdk_qtaudioengine_sound>`  | Define a variety of samples and      |
+|                                      | parameters to be used for            |
 |                                      | SoundInstance                        |
 +--------------------------------------+--------------------------------------+
-| `SoundInstance </sdk/apps/qml/QtAudi | Play 3d audio content                |
-| oEngine/SoundInstance/>`__           |                                      |
+| :ref:`SoundInstance <sdk_qtaudioengine_so | Play 3d audio content                |
+| undinstance>`_                       |                                      |
 +--------------------------------------+--------------------------------------+
 
 .. rubric:: Multimedia Classes

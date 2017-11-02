@@ -1,34 +1,38 @@
+.. _sdk_qtorganizer_reminder:
+QtOrganizer Reminder
+====================
+
 The Reminder element contains information about when and how the user
 wants to reminded of the item.
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtOrganizer 5.0               |
 +--------------------------------------+--------------------------------------+
-| Inherited By:                        | `AudibleReminder </sdk/apps/qml/QtOr |
-|                                      | ganizer/AudibleReminder/>`__,        |
-|                                      | `EmailReminder </sdk/apps/qml/QtOrga |
-|                                      | nizer/EmailReminder/>`__,            |
+| Inherited By:                        | :ref:`AudibleReminder <sdk_qtorganizer_au |
+|                                      | diblereminder>`_ ,                   |
+|                                      | :ref:`EmailReminder <sdk_qtorganizer_emai |
+|                                      | lreminder>`_ ,                       |
 |                                      | and                                  |
-|                                      | `VisualReminder </sdk/apps/qml/QtOrg |
-|                                      | anizer/VisualReminder/>`__.          |
+|                                      | :ref:`VisualReminder <sdk_qtorganizer_vis |
+|                                      | ualreminder>`_ .                     |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`reminderType </sdk/apps/qml/QtOrganizer/Reminder#reminderType-prop>`__****
+-  :ref:`reminderType <sdk_qtorganizer_reminder_reminderType-prop>`
    : enumeration
--  ****`repetitionCount </sdk/apps/qml/QtOrganizer/Reminder#repetitionCount-prop>`__****
+-  :ref:`repetitionCount <sdk_qtorganizer_reminder_repetitionCount-prop>`
    : int
--  ****`repetitionDelay </sdk/apps/qml/QtOrganizer/Reminder#repetitionDelay-prop>`__****
+-  :ref:`repetitionDelay <sdk_qtorganizer_reminder_repetitionDelay-prop>`
    : int
--  ****`secondsBeforeStart </sdk/apps/qml/QtOrganizer/Reminder#secondsBeforeStart-prop>`__****
+-  :ref:`secondsBeforeStart <sdk_qtorganizer_reminder_secondsBeforeStart-prop>`
    : int
 
 Signals
 -------
 
--  ****`onDetailChanged </sdk/apps/qml/QtOrganizer/Reminder#onDetailChanged-signal>`__****\ ()
+-  :ref:`onDetailChanged <sdk_qtorganizer_reminder_onDetailChanged-signal>`\ ()
 
 Detailed Description
 --------------------
@@ -44,6 +48,8 @@ The following fields are supported:
 Property Documentation
 ----------------------
 
+.. _sdk_qtorganizer_reminder_reminderType-prop:
+
 +--------------------------------------------------------------------------+
 |        \ reminderType : enumeration                                      |
 +--------------------------------------------------------------------------+
@@ -52,11 +58,13 @@ This property holds the reminder type of this reminder for an organizer
 item. The value can be one of:
 
 -  Reminder.NoReminder
--  Reminder.\ `VisualReminder </sdk/apps/qml/QtOrganizer/VisualReminder/>`__
--  Reminder.\ `AudibleReminder </sdk/apps/qml/QtOrganizer/AudibleReminder/>`__
--  Reminder.\ `EmailReminder </sdk/apps/qml/QtOrganizer/EmailReminder/>`__
+-  Reminder.\ :ref:`VisualReminder <sdk_qtorganizer_visualreminder>`
+-  Reminder.\ :ref:`AudibleReminder <sdk_qtorganizer_audiblereminder>`
+-  Reminder.\ :ref:`EmailReminder <sdk_qtorganizer_emailreminder>`
 
 | 
+
+.. _sdk_qtorganizer_reminder_repetitionCount-prop:
 
 +--------------------------------------------------------------------------+
 |        \ repetitionCount : int                                           |
@@ -67,6 +75,8 @@ the item.
 
 | 
 
+.. _sdk_qtorganizer_reminder_repetitionDelay-prop:
+
 +--------------------------------------------------------------------------+
 |        \ repetitionDelay : int                                           |
 +--------------------------------------------------------------------------+
@@ -75,6 +85,8 @@ This property holds the delay (in seconds) between each repetition of
 the reminder.
 
 | 
+
+.. _sdk_qtorganizer_reminder_secondsBeforeStart-prop:
 
 +--------------------------------------------------------------------------+
 |        \ secondsBeforeStart : int                                        |
@@ -88,11 +100,13 @@ item at which the user wants to be reminded of the item.
 Signal Documentation
 --------------------
 
+.. _sdk_qtorganizer_reminder_onDetailChanged()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ onDetailChanged()                                               |
 +--------------------------------------------------------------------------+
 
 **See also**
-`Detail::onDetailChanged </sdk/apps/qml/QtOrganizer/Detail#onDetailChanged-signal>`__.
+:ref:`Detail::onDetailChanged <sdk_qtorganizer_detail#onDetailChanged-signal>`.
 
 | 

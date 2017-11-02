@@ -1,6 +1,10 @@
+.. _sdk_unity_scopes_testing_andersondarlingtest:
+unity.scopes.testing AndersonDarlingTest
+========================================
+
 Implements the Anderson-Darling test for normality for the case of
 empirical mean and variance.
-`More... </sdk/scopes/cpp/unity.scopes.testing/AndersonDarlingTest#details>`__
+:ref:`More... <sdk_unity_scopes_testing_andersondarlingtest#details>`
 
 ``#include <unity/scopes/testing/Statistics.h>``
 
@@ -43,12 +47,12 @@ Member Function Documentation
 
 +--------------+--------------+--------------+--------------+--------------+--------------+
 | unity::scope | (            | const        | *sample*     | )            |              |
-| s::testing:: |              | `Sample </sd |              |              |              |
-| AndersonDarl |              | k/scopes/cpp |              |              |              |
-| ingTest::Res |              | /unity.scope |              |              |              |
-| ult          |              | s.testing/Sa |              |              |              |
-| unity::scope |              | mple/>`__    |              |              |              |
-| s::testing:: |              | &            |              |              |              |
+| s::testing:: |              | `Sample <sdk |              |              |              |
+| AndersonDarl |              | _unity_scope |              |              |              |
+| ingTest::Res |              | s_testing_sa |              |              |              |
+| ult          |              | mple>`_      |              |              |              |
+| unity::scope |              | &            |              |              |              |
+| s::testing:: |              |              |              |              |              |
 | AndersonDarl |              |              |              |              |              |
 | ingTest::for |              |              |              |              |              |
 | \_normality  |              |              |              |              |              |

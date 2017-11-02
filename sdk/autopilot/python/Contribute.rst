@@ -1,30 +1,34 @@
+.. _sdk_contribute:
+Contribute
+==========
+
 
 Contents
 
--  `Contribute </sdk/autopilot/python/faq-contribute#contribute>`__
+-  `Contribute </sdk/autopilot/python/faq-contribute/#contribute>`_ 
 
    -  `Autopilot:
-      Contributing </sdk/autopilot/python/faq-contribute#autopilot-contributing>`__
+      Contributing </sdk/autopilot/python/faq-contribute/#autopilot-contributing>`_ 
 
       -  `Q. How can I contribute to
-         autopilot? </sdk/autopilot/python/faq-contribute#q-how-can-i-contribute-to-autopilot>`__
+         autopilot? </sdk/autopilot/python/faq-contribute/#q-how-can-i-contribute-to-autopilot>`_ 
       -  `Q. Where can I get help /
-         support? </sdk/autopilot/python/faq-contribute#q-where-can-i-get-help-support>`__
+         support? </sdk/autopilot/python/faq-contribute/#q-where-can-i-get-help-support>`_ 
       -  `Q. How do I download the
-         code? </sdk/autopilot/python/faq-contribute#q-how-do-i-download-the-code>`__
+         code? </sdk/autopilot/python/faq-contribute/#q-how-do-i-download-the-code>`_ 
       -  `Q. How do I submit the code for a merge
-         proposal? </sdk/autopilot/python/faq-contribute#q-how-do-i-submit-the-code-for-a-merge-proposal>`__
+         proposal? </sdk/autopilot/python/faq-contribute/#q-how-do-i-submit-the-code-for-a-merge-proposal>`_ 
       -  `Q. How do I list or run the tests for the autopilot source
-         code? </sdk/autopilot/python/faq-contribute#q-how-do-i-list-or-run-the-tests-for-the-autopilot-source-code>`__
+         code? </sdk/autopilot/python/faq-contribute/#q-how-do-i-list-or-run-the-tests-for-the-autopilot-source-code>`_ 
       -  `Q. Which version of Python can Autopilot
-         use? </sdk/autopilot/python/faq-contribute#q-which-version-of-python-can-autopilot-use>`__
+         use? </sdk/autopilot/python/faq-contribute/#q-which-version-of-python-can-autopilot-use>`_ 
 
 .. rubric:: `Autopilot:
-   Contributing </sdk/autopilot/python/faq-contribute#id2>`__\ ` <#autopilot-contributing>`__
+   Contributing </sdk/autopilot/python/faq-contribute/#id2>`_ \ ` <#autopilot-contributing>`_ 
    :name: autopilot-contributing
 
 .. rubric:: `Q. How can I contribute to
-   autopilot? </sdk/autopilot/python/faq-contribute#id3>`__\ ` <#q-how-can-i-contribute-to-autopilot>`__
+   autopilot? </sdk/autopilot/python/faq-contribute/#id3>`_ \ ` <#q-how-can-i-contribute-to-autopilot>`_ 
    :name: q.-how-can-i-contribute-to-autopilot
 
 -  
@@ -32,34 +36,34 @@ Contents
    Documentation: We can always use more documentation.
        -  if you don’t know how to submit a merge proposal on launchpad,
           you can write a
-          `bug <https://bugs.launchpad.net/autopilot/+filebug>`__ with
+          `bug <https://bugs.launchpad.net/autopilot/+filebug>`_  with
           new documentation and someone will submit a merge proposal for
           you. They will give you credit for your documentation in the
           merge proposal.
 
 -  New Features: Check out our existing
-   `Blueprints <https://blueprints.launchpad.net/autopilot>`__ or create
+   `Blueprints <https://blueprints.launchpad.net/autopilot>`_  or create
    some yourself... Then code!
 
 -  Test and Fix: No project is perfect, log some
-   `bugs <https://bugs.launchpad.net/autopilot/+filebug>`__ or `fix some
-   bugs <https://bugs.launchpad.net/autopilot>`__.
+   `bugs <https://bugs.launchpad.net/autopilot/+filebug>`_  or `fix some
+   bugs <https://bugs.launchpad.net/autopilot>`_ .
 
 .. rubric:: `Q. Where can I get help /
-   support? </sdk/autopilot/python/faq-contribute#id4>`__\ ` <#q-where-can-i-get-help-support>`__
+   support? </sdk/autopilot/python/faq-contribute/#id4>`_ \ ` <#q-where-can-i-get-help-support>`_ 
    :name: q.-where-can-i-get-help-support
 
 The developers hang out in the #ubuntu-autopilot IRC channel on
 irc.freenode.net.
 
 .. rubric:: `Q. How do I download the
-   code? </sdk/autopilot/python/faq-contribute#id5>`__\ ` <#q-how-do-i-download-the-code>`__
+   code? </sdk/autopilot/python/faq-contribute/#id5>`_ \ ` <#q-how-do-i-download-the-code>`_ 
    :name: q.-how-do-i-download-the-code
 
 Autopilot is using Launchpad and Bazaar for source code hosting. If
 you’re new to Bazaar, or distributed version control in general, take a
 look at the `Bazaar mini-tutorial
-first. <http://doc.bazaar.canonical.com/bzr.dev/en/mini-tutorial/index.html>`__
+first. <http://doc.bazaar.canonical.com/bzr.dev/en/mini-tutorial/index.html>`_ 
 
 Install bzr open a terminal and type:
 
@@ -75,12 +79,12 @@ Download the code:
 
 This will create an autopilot directory and place the latest code there.
 You can also view the autopilot code `on the
-web <https://launchpad.net/autopilot>`__.
+web <https://launchpad.net/autopilot>`_ .
 
    class="section">
 
 .. rubric:: `Q. How do I submit the code for a merge
-   proposal? </sdk/autopilot/python/faq-contribute#id6>`__\ ` <#q-how-do-i-submit-the-code-for-a-merge-proposal>`__
+   proposal? </sdk/autopilot/python/faq-contribute/#id6>`_ \ ` <#q-how-do-i-submit-the-code-for-a-merge-proposal>`_ 
    :name: q.-how-do-i-submit-the-code-for-a-merge-proposal
 
 After making the desired changes to the code or documentation and making
@@ -94,7 +98,7 @@ Write a quick one line description of the bug that was fixed or the
 documentation that was written.
 
 Signup for a `launchpad
-account <https://help.launchpad.net/YourAccount/NewAccount>`__, if you
+account <https://help.launchpad.net/YourAccount/NewAccount>`_ , if you
 don’t have one. Then using your launchpad id type:
 
 ::
@@ -114,7 +118,7 @@ someone doesn’t remove or break your new code with a future commit.
    class="section">
 
 .. rubric:: `Q. How do I list or run the tests for the autopilot source
-   code? </sdk/autopilot/python/faq-contribute#id7>`__\ ` <#q-how-do-i-list-or-run-the-tests-for-the-autopilot-source-code>`__
+   code? </sdk/autopilot/python/faq-contribute/#id7>`_ \ ` <#q-how-do-i-list-or-run-the-tests-for-the-autopilot-source-code>`_ 
    :name: q.-how-do-i-list-or-run-the-tests-for-the-autopilot-source-code
 
 Running autopilot from the source code root directory (the directory
@@ -169,7 +173,7 @@ Or running a single test in the ‘test\_version\_utility\_fns’ suite:
    class="section">
 
 .. rubric:: `Q. Which version of Python can Autopilot
-   use? </sdk/autopilot/python/faq-contribute#id8>`__\ ` <#q-which-version-of-python-can-autopilot-use>`__
+   use? </sdk/autopilot/python/faq-contribute/#id8>`_ \ ` <#q-which-version-of-python-can-autopilot-use>`_ 
    :name: q.-which-version-of-python-can-autopilot-use
 
 Autopilot supports Python 3.4.

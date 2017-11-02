@@ -1,10 +1,14 @@
+.. _sdk_scopejs_registry:
+ScopeJS Registry
+================
+
 
 White pages service for available scopes
 
 -  Methods
 
-`ScopeMetadata </sdk/scopes/js/ScopeJS/ScopeMetadata/>`__
-**``get_metadata``**\ ( ``id `` )
+:ref:`ScopeMetadata <sdk_scopejs_scopemetadata>` **``get_metadata``**\ (
+``id `` )
 Returns the metadata for the scope with the given ID
 
 **Parameters:**
@@ -13,7 +17,7 @@ Returns the metadata for the scope with the given ID
 
    Attribute definition
 
-**Returns:** <`ScopeMetadata </sdk/scopes/js/ScopeJS/ScopeMetadata/>`__>
+**Returns:** <:ref:`ScopeMetadata <sdk_scopejs_scopemetadata>`>
 
 Boolean **``is_scope_running``**\ ( ``scope_id `` )
 Returns whether a scope is currently running or not

@@ -1,3 +1,7 @@
+.. _sdk_qtorganizer_collectionfilter:
+QtOrganizer CollectionFilter
+============================
+
 The CollectionFilter element provides a filter based around the
 collection one organizer item belongs to.
 
@@ -8,21 +12,23 @@ collection one organizer item belongs to.
 Properties
 ----------
 
--  ****`ids </sdk/apps/qml/QtOrganizer/CollectionFilter#ids-prop>`__****
-   : list<string>
+-  :ref:`ids <sdk_qtorganizer_collectionfilter_ids-prop>` :
+   list<string>
 
 Signals
 -------
 
--  ****`onFilterChanged </sdk/apps/qml/QtOrganizer/CollectionFilter#onFilterChanged-signal>`__****\ ()
+-  :ref:`onFilterChanged <sdk_qtorganizer_collectionfilter_onFilterChanged-signal>`\ ()
 
 Detailed Description
 --------------------
 
-**See also** `Collection </sdk/apps/qml/QtOrganizer/Collection/>`__.
+**See also** :ref:`Collection <sdk_qtorganizer_collection>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtorganizer_collectionfilter_ids-prop:
 
 +--------------------------------------------------------------------------+
 |        \ ids : list<string>                                              |
@@ -36,11 +42,13 @@ items should belong to.
 Signal Documentation
 --------------------
 
+.. _sdk_qtorganizer_collectionfilter_onFilterChanged()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ onFilterChanged()                                               |
 +--------------------------------------------------------------------------+
 
 **See also**
-`QtOrganizer5::Filter::onFilterChanged </sdk/apps/qml/QtOrganizer/Filter#onFilterChanged-signal>`__.
+:ref:`QtOrganizer5::Filter::onFilterChanged <sdk_qtorganizer_filter#onFilterChanged-signal>`.
 
 | 

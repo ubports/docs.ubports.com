@@ -1,16 +1,20 @@
+.. _sdk_qtquick_particles_lineshape:
+QtQuick.Particles LineShape
+===========================
+
 Represents a line for affectors and emitters
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtQuick.Particles 2.0         |
 +--------------------------------------+--------------------------------------+
 | Inherits:                            | `Shape </sdk/apps/qml/QtQuick/Partic |
-|                                      | les.Shape/>`__                       |
+|                                      | les.Shape/>`_                        |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`mirrored </sdk/apps/qml/QtQuick/Particles.LineShape#mirrored-prop>`__****
+-  `mirrored </sdk/apps/qml/QtQuick/Particles.LineShape/_mirrored-prop>`_ 
    : bool
 
 Detailed Description
@@ -18,6 +22,8 @@ Detailed Description
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_particles_lineshape_mirrored-prop:
 
 +--------------------------------------------------------------------------+
 |        \ mirrored : bool                                                 |

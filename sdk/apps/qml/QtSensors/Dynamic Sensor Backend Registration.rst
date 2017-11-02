@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_dynamic_sensor_backend_registration:
+QtSensors Dynamic Sensor Backend Registration
+=============================================
+
 
 
 .. rubric:: Static Backend Registration

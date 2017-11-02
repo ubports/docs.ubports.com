@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_content_ubuntu_content_api:
+Ubuntu.Content Ubuntu Content API
+=================================
+
 
                 Content Management & Exchange        
 .. rubric:: Introduction
@@ -23,25 +27,25 @@ To ease conversations, we start over with a set of definitions:
    meta-data and data. E.g., an image is a content item, where the
    actual pixels are the data, and information like size, image format,
    bit depth, location etc. is considered meta data. See also
-   `ContentItem </sdk/apps/qml/Ubuntu.Content/ContentItem/>`__.
+   :ref:`ContentItem <sdk_ubuntu_content_contentitem>`.
 -  **Content types**: A set of well-known content types. E.g., images or
    music files. See also
-   `ContentType </sdk/apps/qml/Ubuntu.Content/ContentType/>`__
+   :ref:`ContentType <sdk_ubuntu_content_contenttype>`
 -  **Content set**: A set of unique content items. Can be considered a
    content item itself, e.g., in the case of playlists.
 -  **Content owner**: The unique owner of a content item. A content item
    has to be owned by exactly one app. See also
-   `ContentPeer </sdk/apps/qml/Ubuntu.Content/ContentPeer/>`__
+   :ref:`ContentPeer <sdk_ubuntu_content_contentpeer>`
 -  **Content store**: A container (think of it as a top-level folder in
    the filesystem) that contains content items of a certain type.
    Different stores exist for different scopes, where scope refers to
    either system-wide, user-wide or app-specific storage locations. See
-   also `ContentStore </sdk/apps/qml/Ubuntu.Content/ContentStore/>`__
+   also :ref:`ContentStore <sdk_ubuntu_content_contentstore>`
 -  **Content transfer**: Transferring content item/s to and from a
    source or destination. A transfer is uniquely defined by a source,
    destination, direction (import or export), and a set of items that
    should be exchanged. See also
-   `ContentTransfer </sdk/apps/qml/Ubuntu.Content/ContentTransfer/>`__
+   :ref:`ContentTransfer <sdk_ubuntu_content_contenttransfer>`
 -  **Content picking**: Operation that allows a user to select content
    for subsequent import from a content source (e.g., an application).
    The content source is responsible for providing a UI to the user.
@@ -111,19 +115,19 @@ refer to this component as the content hub.
 
         General Topics
 
--  `ContentHub </sdk/apps/qml/Ubuntu.Content/ContentHub/>`__
--  `ContentPeer </sdk/apps/qml/Ubuntu.Content/ContentPeer/>`__
--  `ContentPeerModel </sdk/apps/qml/Ubuntu.Content/ContentPeerModel/>`__
--  `ContentPeerPicker </sdk/apps/qml/Ubuntu.Content/ContentPeerPicker/>`__
--  `ContentStore </sdk/apps/qml/Ubuntu.Content/ContentStore/>`__
--  `ContentTransfer </sdk/apps/qml/Ubuntu.Content/ContentTransfer/>`__
--  `ContentTransferHint </sdk/apps/qml/Ubuntu.Content/ContentTransferHint/>`__
--  `ContentType </sdk/apps/qml/Ubuntu.Content/ContentType/>`__
+-  :ref:`ContentHub <sdk_ubuntu_content_contenthub>`
+-  :ref:`ContentPeer <sdk_ubuntu_content_contentpeer>`
+-  :ref:`ContentPeerModel <sdk_ubuntu_content_contentpeermodel>`
+-  :ref:`ContentPeerPicker <sdk_ubuntu_content_contentpeerpicker>`
+-  :ref:`ContentStore <sdk_ubuntu_content_contentstore>`
+-  :ref:`ContentTransfer <sdk_ubuntu_content_contenttransfer>`
+-  :ref:`ContentTransferHint <sdk_ubuntu_content_contenttransferhint>`
+-  :ref:`ContentType <sdk_ubuntu_content_contenttype>`
 
         Reporting Bugs
 If you find any problems with the or this documentation, please file a
 bug in Ubuntu Content API `Launchpad
-page <https://bugs.launchpad.net/content-hub>`__
+page <https://bugs.launchpad.net/content-hub>`_ 
 
         Components
 Available through:
@@ -132,5 +136,5 @@ Available through:
 
         import Ubuntu.Content 1.1
 
-**See also** `ContentHub </sdk/apps/qml/Ubuntu.Content/ContentHub/>`__.
+**See also** :ref:`ContentHub <sdk_ubuntu_content_contenthub>`.
 

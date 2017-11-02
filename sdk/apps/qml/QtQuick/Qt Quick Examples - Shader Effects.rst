@@ -1,3 +1,7 @@
+.. _sdk_qtquick_qt_quick_examples_-_shader_effects:
+QtQuick Qt Quick Examples - Shader Effects
+==========================================
+
 
 
 |image0|
@@ -6,7 +10,7 @@ This example demonstrates a couple of visual effects that you can
 perform with shaders in Qt Quick. It applies five different effects on a
 text and a couple of images. For more information, visit `Important
 Concepts In Qt Quick - Graphical
-Effects </sdk/apps/qml/QtQuick/qtquick-effects-topic/>`__
+Effects </sdk/apps/qml/QtQuick/qtquick-effects-topic/>`_ 
 
 .. rubric:: Running the Example
    :name: running-the-example
@@ -18,9 +22,9 @@ Running an Example.
 .. rubric:: Using ShaderEffect
    :name: using-shadereffect
 
-The `ShaderEffect </sdk/apps/qml/QtQuick/ShaderEffect/>`__ type
-typically operates on other types, using a
-`ShaderEffectSource </sdk/apps/qml/QtQuick/ShaderEffectSource/>`__:
+The :ref:`ShaderEffect <sdk_qtquick_shadereffect>` type typically operates
+on other types, using a
+:ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>`:
 
 .. code:: qml
 
@@ -33,8 +37,8 @@ In the above snippet, ``theItem`` is the ID of a complex QML object in
 the file.
 
 ShaderEffects can use this
-`ShaderEffectSource </sdk/apps/qml/QtQuick/ShaderEffectSource/>`__ as a
-texture in their fragment shader:
+:ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>` as a texture in
+their fragment shader:
 
 .. code:: qml
 
@@ -51,8 +55,8 @@ texture in their fragment shader:
         "}"
 
 You can use any custom property on the
-`ShaderEffect </sdk/apps/qml/QtQuick/ShaderEffect/>`__ in your shader.
-This makes animated shader code very easy:
+:ref:`ShaderEffect <sdk_qtquick_shadereffect>` in your shader. This makes
+animated shader code very easy:
 
 .. code:: qml
 
@@ -77,8 +81,8 @@ This makes animated shader code very easy:
     }
 
 ShaderEffects can also have a custom vertext shader. Setting the mesh
-property on `ShaderEffect </sdk/apps/qml/QtQuick/ShaderEffect/>`__
-provides more vertices for you to manipulate, enabling more effects.
+property on :ref:`ShaderEffect <sdk_qtquick_shadereffect>` provides more
+vertices for you to manipulate, enabling more effects.
 
 .. code:: qml
 

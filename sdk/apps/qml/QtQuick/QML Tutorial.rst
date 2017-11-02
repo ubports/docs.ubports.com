@@ -1,3 +1,7 @@
+.. _sdk_qtquick_qml_tutorial:
+QtQuick QML Tutorial
+====================
+
 
 
 This tutorial gives an introduction to QML, the language for Qt Quick
@@ -17,8 +21,8 @@ The tutorial's source code is located in the
 
 Tutorial chapters:
 
-#. `Basic Types </sdk/apps/qml/QtQuick/qml-tutorial1/>`__
-#. `QML Components </sdk/apps/qml/QtQuick/qml-tutorial2/>`__
-#. `States and Transitions </sdk/apps/qml/QtQuick/qml-tutorial3/>`__
+#. `Basic Types </sdk/apps/qml/QtQuick/qml-tutorial1/>`_ 
+#. `QML Components </sdk/apps/qml/QtQuick/qml-tutorial2/>`_ 
+#. `States and Transitions </sdk/apps/qml/QtQuick/qml-tutorial3/>`_ 
 
-`QML Tutorial 1 - Basic Types </sdk/apps/qml/QtQuick/qml-tutorial1/>`__
+`QML Tutorial 1 - Basic Types </sdk/apps/qml/QtQuick/qml-tutorial1/>`_ 

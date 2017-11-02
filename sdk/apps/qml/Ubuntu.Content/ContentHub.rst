@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_content_contenthub:
+Ubuntu.Content ContentHub
+=========================
+
 The central manager for all content operations
 
 +---------------------+-----------------------------+
@@ -7,11 +11,11 @@ The central manager for all content operations
 Signals
 -------
 
--  ****`exportRequested </sdk/apps/qml/Ubuntu.Content/ContentHub#exportRequested-signal>`__****\ (ContentTransfer
+-  **:ref:`exportRequested <sdk_ubuntu_content_contenthub#exportRequested-signal>`**\ (ContentTransfer
    *transfer*)
--  ****`importRequested </sdk/apps/qml/Ubuntu.Content/ContentHub#importRequested-signal>`__****\ (ContentTransfer
+-  **:ref:`importRequested <sdk_ubuntu_content_contenthub#importRequested-signal>`**\ (ContentTransfer
    *transfer*)
--  ****`shareRequested </sdk/apps/qml/Ubuntu.Content/ContentHub#shareRequested-signal>`__****\ (ContentTransfer
+-  **:ref:`shareRequested <sdk_ubuntu_content_contenthub#shareRequested-signal>`**\ (ContentTransfer
    *transfer*)
 
 Detailed Description
@@ -92,8 +96,8 @@ Signal Documentation
 --------------------
 
 +--------------------------------------------------------------------------+
-|        \ exportRequested(`ContentTransfer </sdk/apps/qml/Ubuntu.Content/ |
-| ContentTransfer/>`__                                                     |
+| :ref:` <>`\ exportRequested(`ContentTransfer <sdk_ubuntu_content_contenttra |
+| nsfer>`_                                                                 |
 | *transfer*)                                                              |
 +--------------------------------------------------------------------------+
 
@@ -102,8 +106,8 @@ The signal is triggered when an export is requested.
 | 
 
 +--------------------------------------------------------------------------+
-|        \ importRequested(`ContentTransfer </sdk/apps/qml/Ubuntu.Content/ |
-| ContentTransfer/>`__                                                     |
+| :ref:` <>`\ importRequested(`ContentTransfer <sdk_ubuntu_content_contenttra |
+| nsfer>`_                                                                 |
 | *transfer*)                                                              |
 +--------------------------------------------------------------------------+
 
@@ -112,8 +116,8 @@ The signal is triggered when an import is requested.
 | 
 
 +--------------------------------------------------------------------------+
-|        \ shareRequested(`ContentTransfer </sdk/apps/qml/Ubuntu.Content/C |
-| ontentTransfer/>`__                                                      |
+| :ref:` <>`\ shareRequested(`ContentTransfer <sdk_ubuntu_content_contenttran |
+| sfer>`_                                                                  |
 | *transfer*)                                                              |
 +--------------------------------------------------------------------------+
 

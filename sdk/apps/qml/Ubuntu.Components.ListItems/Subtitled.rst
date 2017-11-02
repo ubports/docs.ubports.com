@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_listitems_subtitled:
+Ubuntu.Components.ListItems Subtitled
+=====================================
+
 List item displaying a second string under the main label.
 
 +--------------------------------------+--------------------------------------+
@@ -5,21 +9,20 @@ List item displaying a second string under the main label.
 |                                      | 1.3                                  |
 +--------------------------------------+--------------------------------------+
 | Inherits:                            | `Base </sdk/apps/qml/Ubuntu.Componen |
-|                                      | ts/ListItems.Base/>`__               |
+|                                      | ts/ListItems.Base/>`_                |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`subText </sdk/apps/qml/Ubuntu.Components/ListItems.Subtitled#subText-prop>`__****
+-  `subText </sdk/apps/qml/Ubuntu.Components/ListItems.Subtitled/_subText-prop>`_ 
    : string
 
 Detailed Description
 --------------------
 
 **Note:** **The component is deprecated. Use
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ component
-instead.**
+:ref:`ListItem <sdk_ubuntu_components_listitem>` component instead.**
 
 Examples:
 
@@ -65,6 +68,8 @@ Examples:
 
 Property Documentation
 ----------------------
+
+.. _sdk_ubuntu_components_listitems_subtitled_subText-prop:
 
 +--------------------------------------------------------------------------+
 |        \ subText : string                                                |

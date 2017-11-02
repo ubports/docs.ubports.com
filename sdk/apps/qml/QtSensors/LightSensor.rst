@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_lightsensor:
+QtSensors LightSensor
+=====================
+
 The LightSensor element reports on light levels using LUX.
 
 +--------------------------------------+--------------------------------------+
@@ -5,29 +9,30 @@ The LightSensor element reports on light levels using LUX.
 +--------------------------------------+--------------------------------------+
 | Since:                               | QtSensors 5.0                        |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Sensor </sdk/apps/qml/QtSensors/Sen |
-|                                      | sor/>`__                             |
+| Inherits:                            | :ref:`Sensor <sdk_qtsensors_sensor>` |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`fieldOfView </sdk/apps/qml/QtSensors/LightSensor#fieldOfView-prop>`__****
+-  :ref:`fieldOfView <sdk_qtsensors_lightsensor_fieldOfView-prop>`
    : qreal
 
 Detailed Description
 --------------------
 
-The `LightSensor </sdk/apps/qml/QtSensors/LightSensor/>`__ element
-reports on light levels using LUX.
+The :ref:`LightSensor <sdk_qtsensors_lightsensor>` element reports on light
+levels using LUX.
 
 This element wraps the QLightSensor class. Please see the documentation
 for QLightSensor for details.
 
-**See also** `LightReading </sdk/apps/qml/QtSensors/LightReading/>`__.
+**See also** :ref:`LightReading <sdk_qtsensors_lightreading>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtsensors_lightsensor_fieldOfView-prop:
 
 +--------------------------------------------------------------------------+
 |        \ fieldOfView : qreal                                             |

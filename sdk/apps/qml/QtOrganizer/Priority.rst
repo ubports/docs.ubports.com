@@ -1,3 +1,7 @@
+.. _sdk_qtorganizer_priority:
+QtOrganizer Priority
+====================
+
 The Priority element contains the priority of the organizer item, which
 may be used to resolve scheduling conflicts.
 
@@ -8,13 +12,13 @@ may be used to resolve scheduling conflicts.
 Properties
 ----------
 
--  ****`priority </sdk/apps/qml/QtOrganizer/Priority#priority-prop>`__****
-   : enumeration
+-  :ref:`priority <sdk_qtorganizer_priority_priority-prop>` :
+   enumeration
 
 Signals
 -------
 
--  ****`onDetailChanged </sdk/apps/qml/QtOrganizer/Priority#onDetailChanged-signal>`__****\ ()
+-  :ref:`onDetailChanged <sdk_qtorganizer_priority_onDetailChanged-signal>`\ ()
 
 Detailed Description
 --------------------
@@ -27,6 +31,8 @@ The following fields are supported:
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtorganizer_priority_priority-prop:
 
 +--------------------------------------------------------------------------+
 |        \ priority : enumeration                                          |
@@ -51,11 +57,13 @@ value can be one of:
 Signal Documentation
 --------------------
 
+.. _sdk_qtorganizer_priority_onDetailChanged()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ onDetailChanged()                                               |
 +--------------------------------------------------------------------------+
 
 **See also**
-`Detail::onDetailChanged </sdk/apps/qml/QtOrganizer/Detail#onDetailChanged-signal>`__.
+:ref:`Detail::onDetailChanged <sdk_qtorganizer_detail#onDetailChanged-signal>`.
 
 | 

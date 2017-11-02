@@ -1,3 +1,7 @@
+.. _sdk_qtlocation_editorialmodel:
+QtLocation EditorialModel
+=========================
+
 The EditorialModel type provides a model of place editorials.
 
 +---------------------+-------------------------+
@@ -9,21 +13,20 @@ The EditorialModel type provides a model of place editorials.
 Properties
 ----------
 
--  ****`batchSize </sdk/apps/qml/QtLocation/EditorialModel#batchSize-prop>`__****
+-  :ref:`batchSize <sdk_qtlocation_editorialmodel_batchSize-prop>`
    : int
--  ****`place </sdk/apps/qml/QtLocation/EditorialModel#place-prop>`__****
-   : Place
--  ****`totalCount </sdk/apps/qml/QtLocation/EditorialModel#totalCount-prop>`__****
+-  :ref:`place <sdk_qtlocation_editorialmodel_place-prop>` : Place
+-  :ref:`totalCount <sdk_qtlocation_editorialmodel_totalCount-prop>`
    : int
 
 Detailed Description
 --------------------
 
-The `EditorialModel </sdk/apps/qml/QtLocation/EditorialModel/>`__ is a
-read-only model used to fetch editorials related to a
-`Place </sdk/apps/qml/QtLocation/location-cpp-qml#place>`__. Binding a
-`Place </sdk/apps/qml/QtLocation/location-cpp-qml#place>`__ via
-`EditorialModel::place </sdk/apps/qml/QtLocation/EditorialModel#place-prop>`__
+The :ref:`EditorialModel <sdk_qtlocation_editorialmodel>` is a read-only
+model used to fetch editorials related to a
+`Place </sdk/apps/qml/QtLocation/location-cpp-qml/#place>`_ . Binding a
+`Place </sdk/apps/qml/QtLocation/location-cpp-qml/#place>`_  via
+:ref:`EditorialModel::place <sdk_qtlocation_editorialmodel#place-prop>`
 initiates an initial fetch of editorials. The model performs fetches
 incrementally and is intended to be used in conjunction with a View such
 as a ListView. When the View reaches the last of the editorials
@@ -31,29 +34,27 @@ currently in the model, a fetch is performed to retrieve more if they
 are available. The View is automatically updated as the editorials are
 received. The number of editorials which are fetched at a time is
 specified by the
-`batchSize </sdk/apps/qml/QtLocation/EditorialModel#batchSize-prop>`__
-property. The total number of editorials available can be accessed via
-the
-`totalCount </sdk/apps/qml/QtLocation/EditorialModel#totalCount-prop>`__
-property.
+:ref:`batchSize <sdk_qtlocation_editorialmodel#batchSize-prop>` property.
+The total number of editorials available can be accessed via the
+:ref:`totalCount <sdk_qtlocation_editorialmodel#totalCount-prop>` property.
 
 The model returns data for the following roles:
 
-+---------------+-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+
-| Role          | Type                                                | Description                                                                                                                            |
-+===============+=====================================================+========================================================================================================================================+
-| text          | string                                              | The editorial's textual description of the place. It can be either rich (HTML based) text or plain text depending upon the provider.   |
-+---------------+-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+
-| title         | string                                              | The title of the editorial.                                                                                                            |
-+---------------+-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+
-| language      | string                                              | The language that the editorial is written in.                                                                                         |
-+---------------+-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+
-| supplier      | `Supplier </sdk/apps/qml/QtLocation/Supplier/>`__   | The supplier of the editorial.                                                                                                         |
-+---------------+-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+
-| user          | `User </sdk/apps/qml/QtLocation/User/>`__           | The user who contributed the editorial.                                                                                                |
-+---------------+-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+
-| attribution   | string                                              | Attribution text which must be displayed when displaying the editorial.                                                                |
-+---------------+-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+
++---------------+------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| Role          | Type                                     | Description                                                                                                                            |
++===============+==========================================+========================================================================================================================================+
+| text          | string                                   | The editorial's textual description of the place. It can be either rich (HTML based) text or plain text depending upon the provider.   |
++---------------+------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| title         | string                                   | The title of the editorial.                                                                                                            |
++---------------+------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| language      | string                                   | The language that the editorial is written in.                                                                                         |
++---------------+------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| supplier      | :ref:`Supplier <sdk_qtlocation_supplier>`| The supplier of the editorial.                                                                                                         |
++---------------+------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| user          | :ref:`User <sdk_qtlocation_user>`        | The user who contributed the editorial.                                                                                                |
++---------------+------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| attribution   | string                                   | Attribution text which must be displayed when displaying the editorial.                                                                |
++---------------+------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+
 
 Example
 -------
@@ -115,6 +116,8 @@ The following example shows how to display editorials for a place:
 Property Documentation
 ----------------------
 
+.. _sdk_qtlocation_editorialmodel_batchSize-prop:
+
 +--------------------------------------------------------------------------+
 |        \ batchSize : int                                                 |
 +--------------------------------------------------------------------------+
@@ -124,13 +127,17 @@ items.
 
 | 
 
+.. _sdk_qtlocation_editorialmodel_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ place : `Place </sdk/apps/qml/QtLocation/Place/>`__             |
+| :ref:` <>`\ place : `Place <sdk_qtlocation_place>`                     |
 +--------------------------------------------------------------------------+
 
 This property holds the Place that the editorials are for.
 
 | 
+
+.. _sdk_qtlocation_editorialmodel_totalCount-prop:
 
 +--------------------------------------------------------------------------+
 |        \ totalCount : int                                                |

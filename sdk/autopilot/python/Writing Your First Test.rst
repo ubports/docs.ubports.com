@@ -1,10 +1,14 @@
+.. _sdk_writing_your_first_test:
+Writing Your First Test
+=======================
+
 This document contains everything you need to know to write your first
 autopilot test. It covers writing several simple tests for a sample
 Qt5/Qml application. However, it’s important to note that nothing in
 this tutorial is specific to Qt5/Qml, and will work equally well with
 any other kind of application.
 
-.. rubric:: Files and Directories\ ` <#files-and-directories>`__
+.. rubric:: Files and Directories\ ` <#files-and-directories>`_ 
    :name: files-and-directories
 
 Your autopilot test suite will grow to several files, possibly spread
@@ -19,15 +23,15 @@ directory layout:
 
 The ``autopilot`` folder can be anywhere within your project’s source
 tree. It will likely contain a
-`setup.py <http://docs.python.org/3/distutils/setupscript.html>`__ file.
+`setup.py <http://docs.python.org/3/distutils/setupscript.html>`_  file.
 
 The ``autopilot/<projectname>/`` folder is the base package for your
 autopilot tests. This folder, and all child folders, are python
 packages, and so must contain an `\_\_init\_\_.py
-file <http://docs.python.org/3/tutorial/modules.html#packages>`__. If
+file <http://docs.python.org/3/tutorial/modules.html#packages>`_ . If
 you ever find yourself writing custom proxy classes (This is an advanced
 topic, and is covered here: `*Writing Custom Proxy
-Classes* </sdk/autopilot/python/tutorial-advanced_autopilot#custom-proxy-classes>`__),
+Classes* </sdk/autopilot/python/tutorial-advanced_autopilot/#custom-proxy-classes>`_ ),
 they should be imported from this top-level package.
 
 Each test file should be named ``test_<component>.py``, where
@@ -35,12 +39,12 @@ Each test file should be named ``test_<component>.py``, where
 Test files must be written in the ``autopilot/<projectname>/tests/``
 folder.
 
-.. rubric:: A Minimal Test Case\ ` <#a-minimal-test-case>`__
+.. rubric:: A Minimal Test Case\ ` <#a-minimal-test-case>`_ 
    :name: a-minimal-test-case
 
 Autopilot tests follow a similar pattern to other python test libraries:
 you must declare a class that derives from
-```AutopilotTestCase`` </sdk/autopilot/python/autopilot.testcase/AutopilotTestCase#autopilot.testcase.AutopilotTestCase>`__.
+:ref:```AutopilotTestCase`` <sdk_autopilot_testcase_autopilottestcase#autopilot.testcase.AutopilotTestCase>`.
 A minimal test case looks like this:
 
 ::
@@ -62,13 +66,13 @@ Autopilot Says
 It’s important to make sure that your tests express your *intent* as
 clearly as possible. We recommend choosing long, descriptive names for
 test functions and classes (even breaking \ `**PEP
-8** <http://www.python.org/dev/peps/pep-0008>`__, if you need to), and
+8** <http://www.python.org/dev/peps/pep-0008>`_ , if you need to), and
 give your tests a detailed docstring explaining exactly what you are
 trying to test. For more detailed advice on this point, see `*Write
 Expressive
-Tests* </sdk/autopilot/python/guides-good_tests#write-expressive-tests>`__
+Tests* </sdk/autopilot/python/guides-good_tests/#write-expressive-tests>`_ 
 
-.. rubric:: The Setup Phase\ ` <#the-setup-phase>`__
+.. rubric:: The Setup Phase\ ` <#the-setup-phase>`_ 
    :name: the-setup-phase
 
 Before each test is run, the ``setUp`` method is called. Test authors
@@ -100,15 +104,15 @@ Note
 
 Any action you take in the setup phase must be undone if it alters the
 system state. See `*Cleaning
-Up* </sdk/autopilot/python/tutorial-advanced_autopilot#cleaning-up>`__
+Up* </sdk/autopilot/python/tutorial-advanced_autopilot/#cleaning-up>`_ 
 for more details.
 
-.. rubric:: Starting the Application\ ` <#starting-the-application>`__
+.. rubric:: Starting the Application\ ` <#starting-the-application>`_ 
    :name: starting-the-application
 
 At the start of your test, you need to tell autopilot to launch your
 application. To do this, call
-```launch_test_application`` </sdk/autopilot/python/autopilot.testcase/AutopilotTestCase#autopilot.testcase.AutopilotTestCase.launch_test_application>`__.
+:ref:```launch_test_application`` <sdk_autopilot_testcase_autopilottestcase#autopilot.testcase.AutopilotTestCase.launch_test_application>`.
 The minimum required argument to this method is the application name or
 path. If you pass in the application name, autopilot will look in the
 current working directory, and then will search the \ ``PATH``
@@ -136,11 +140,11 @@ keyword argument. For example:
                             )
 
 See the documentation for
-```launch_test_application`` </sdk/autopilot/python/autopilot.testcase/AutopilotTestCase#autopilot.testcase.AutopilotTestCase.launch_test_application>`__
+:ref:```launch_test_application`` <sdk_autopilot_testcase_autopilottestcase#autopilot.testcase.AutopilotTestCase.launch_test_application>`
 for more details.
 
 The return value from
-```launch_test_application`` </sdk/autopilot/python/autopilot.testcase/AutopilotTestCase#autopilot.testcase.AutopilotTestCase.launch_test_application>`__
+:ref:```launch_test_application`` <sdk_autopilot_testcase_autopilottestcase#autopilot.testcase.AutopilotTestCase.launch_test_application>`
 is a proxy object representing the root of the introspection tree of the
 application you just launched.
 
@@ -152,7 +156,7 @@ Autopilot Says
 
 Whenever you launch an application, autopilot gives you a “proxy
 object”. These are instances of the
-```ProxyBase`` </sdk/autopilot/python/autopilot.introspection/ProxyBase#autopilot.introspection.ProxyBase>`__
+:ref:```ProxyBase`` <sdk_autopilot_introspection_proxybase#autopilot.introspection.ProxyBase>`
 class, with all the data from your application mirrored in the proxy
 object instances. For example, if you have a proxy object for a push
 button class (say, ``QPushButton``, for example), the proxy object will
@@ -166,7 +170,7 @@ a number of methods on them for selecting child objects in the
 introspection tree, so test authors can easily inspect the parts of the
 UI tree they care about.
 
-.. rubric:: A Simple Test\ ` <#a-simple-test>`__
+.. rubric:: A Simple Test\ ` <#a-simple-test>`_ 
    :name: a-simple-test
 
 To demonstrate the material covered so far, this selection will outline
@@ -242,10 +246,10 @@ The entire directory structure looks like this:
     ./example/tests/test_window.py
     ./testapp.py
 
-The ``__init__.py`` files are empty, and are needed to make these
+The ``_ init__.py`` files are empty, and are needed to make these
 directories importable by python.
 
-.. rubric:: Running Autopilot\ ` <#running-autopilot>`__
+.. rubric:: Running Autopilot\ ` <#running-autopilot>`_ 
    :name: running-autopilot
 
 From the root of this directory structure, we can ask autopilot to list
@@ -289,7 +293,7 @@ more output from the run command, you may specify the ‘-v’ flag:
     Loading tests from: /home/thomi/code/canonical/autopilot/example_test
 
     Tests running...
-    13:41:11.614 INFO globals:49 - ************************************************************
+    13:41:11.614 INFO globals:49 - ******************************
     13:41:11.614 INFO globals:50 - Starting test example.tests.test_window.MainWindowTitleTests.test_main_window_title_string
     13:41:11.693 INFO __init__:136 - Launching process: ['/home/thomi/code/canonical/autopilot/example_test/testapp.py', '-testability']
     13:41:11.699 INFO __init__:169 - Looking for autopilot interface for PID 12013 (and children)
@@ -320,7 +324,7 @@ written, we can execute:
 
     $ autopilot3 run example.tests.test_window.MainWindowTitleTests.test_main_window_title_string
 
-.. rubric:: A Test with Interaction\ ` <#a-test-with-interaction>`__
+.. rubric:: A Test with Interaction\ ` <#a-test-with-interaction>`_ 
    :name: a-test-with-interaction
 
 Now lets take a look at some simple tests with some user interaction.
@@ -469,17 +473,17 @@ input action is triggered by instructing the ``mouse`` to click the
 matches the expected string. The second test repeats the same process
 with the ``Goodbye`` button.
 
-.. rubric:: The Eventually Matcher\ ` <#the-eventually-matcher>`__
+.. rubric:: The Eventually Matcher\ ` <#the-eventually-matcher>`_ 
    :name: the-eventually-matcher
 
 Notice that in the ButtonResponseTests tests above, the autopilot method
-```Eventually`` </sdk/autopilot/python/autopilot.matchers/Eventually#autopilot.matchers.Eventually>`__
+:ref:```Eventually`` <sdk_autopilot_matchers_eventually#autopilot.matchers.Eventually>`
 is used in the assertion. This allows the assertion to be retried
 continuously until it either becomes true, or times out (the default
 timout is 10 seconds). This is necessary because the application and the
 autopilot tests run in different processes. Autopilot could test the
 assert before the application has completed its action. Using
-```Eventually`` </sdk/autopilot/python/autopilot.matchers/Eventually#autopilot.matchers.Eventually>`__
+:ref:```Eventually`` <sdk_autopilot_matchers_eventually#autopilot.matchers.Eventually>`
 allows the application to complete its action without having to
 explicitly add delays to the tests.
 
@@ -492,7 +496,7 @@ Autopilot Says
 You may find that when running tests, the application is often ready
 with the outcome by the time autopilot is able to test the assertion
 without using
-```Eventually`` </sdk/autopilot/python/autopilot.matchers/Eventually#autopilot.matchers.Eventually>`__.
+:ref:```Eventually`` <sdk_autopilot_matchers_eventually#autopilot.matchers.Eventually>`.
 However, this may not always be true when running your test suite on
 different hardware.
 

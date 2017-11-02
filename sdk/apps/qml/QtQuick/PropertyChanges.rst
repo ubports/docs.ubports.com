@@ -1,3 +1,7 @@
+.. _sdk_qtquick_propertychanges:
+QtQuick PropertyChanges
+=======================
+
 Describes new property bindings or values for a state
 
 +---------------------+----------------------+
@@ -7,25 +11,22 @@ Describes new property bindings or values for a state
 Properties
 ----------
 
--  ****`explicit </sdk/apps/qml/QtQuick/PropertyChanges#explicit-prop>`__****
+-  :ref:`explicit <sdk_qtquick_propertychanges_explicit-prop>` :
+   bool
+-  :ref:`restoreEntryValues <sdk_qtquick_propertychanges_restoreEntryValues-prop>`
    : bool
--  ****`restoreEntryValues </sdk/apps/qml/QtQuick/PropertyChanges#restoreEntryValues-prop>`__****
-   : bool
--  ****`target </sdk/apps/qml/QtQuick/PropertyChanges#target-prop>`__****
-   : Object
+-  :ref:`target <sdk_qtquick_propertychanges_target-prop>` : Object
 
 Detailed Description
 --------------------
 
-`PropertyChanges </sdk/apps/qml/QtQuick/PropertyChanges/>`__ is used to
-define the property values or bindings in a
-`State </sdk/apps/qml/QtQuick/State/>`__. This enables an item's
-property values to be changed when it `changes between
-states </sdk/apps/qml/QtQuick/qtquick-statesanimations-states/>`__.
+:ref:`PropertyChanges <sdk_qtquick_propertychanges>` is used to define the
+property values or bindings in a :ref:`State <sdk_qtquick_state>`. This
+enables an item's property values to be changed when it `changes between
+states </sdk/apps/qml/QtQuick/qtquick-statesanimations-states/>`_ .
 
-To create a `PropertyChanges </sdk/apps/qml/QtQuick/PropertyChanges/>`__
-object, specify the
-`target </sdk/apps/qml/QtQuick/PropertyChanges#target-prop>`__ item
+To create a :ref:`PropertyChanges <sdk_qtquick_propertychanges>` object,
+specify the :ref:`target <sdk_qtquick_propertychanges#target-prop>` item
 whose properties are to be modified, and define the new property values
 or bindings. For example:
 
@@ -50,23 +51,22 @@ or bindings. For example:
         }
     }
 
-When the mouse is pressed, the
-`Rectangle </sdk/apps/qml/QtQuick/Rectangle/>`__ changes to the
-*resized* state. In this state, the
-`PropertyChanges </sdk/apps/qml/QtQuick/PropertyChanges/>`__ object sets
-the rectangle's color to blue and the ``height`` value to that of
+When the mouse is pressed, the :ref:`Rectangle <sdk_qtquick_rectangle>`
+changes to the *resized* state. In this state, the
+:ref:`PropertyChanges <sdk_qtquick_propertychanges>` object sets the
+rectangle's color to blue and the ``height`` value to that of
 ``container.height``.
 
 Note this automatically binds ``rect.height`` to ``container.height`` in
 the *resized* state. If a property binding should not be established,
 and the height should just be set to the value of ``container.height``
 at the time of the state change, set the
-`explicit </sdk/apps/qml/QtQuick/PropertyChanges#explicit-prop>`__
-property to ``true``.
+:ref:`explicit <sdk_qtquick_propertychanges#explicit-prop>` property to
+``true``.
 
-A `PropertyChanges </sdk/apps/qml/QtQuick/PropertyChanges/>`__ object
-can also override the default signal handler for an object to implement
-a signal handler specific to the new state:
+A :ref:`PropertyChanges <sdk_qtquick_propertychanges>` object can also
+override the default signal handler for an object to implement a signal
+handler specific to the new state:
 
 .. code:: qml
 
@@ -75,13 +75,12 @@ a signal handler specific to the new state:
         onClicked: doSomethingDifferent()
     }
 
-**Note:** `PropertyChanges </sdk/apps/qml/QtQuick/PropertyChanges/>`__
-can be used to change anchor margins, but not other anchor values; use
-`AnchorChanges </sdk/apps/qml/QtQuick/AnchorChanges/>`__ for this
-instead. Similarly, to change an
-`Item </sdk/apps/qml/QtQuick/Item/>`__'s
-`parent </sdk/apps/qml/QtQuick/Item#parent-prop>`__ value, use
-`ParentChange </sdk/apps/qml/QtQuick/ParentChange/>`__ instead.
+**Note:** :ref:`PropertyChanges <sdk_qtquick_propertychanges>` can be used
+to change anchor margins, but not other anchor values; use
+:ref:`AnchorChanges <sdk_qtquick_anchorchanges>` for this instead.
+Similarly, to change an :ref:`Item <sdk_qtquick_item>`'s
+:ref:`parent <sdk_qtquick_item#parent-prop>` value, use
+:ref:`ParentChange <sdk_qtquick_parentchange>` instead.
 
 Resetting property values
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -115,38 +114,38 @@ Immediate property changes in transitions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 When
-`Transitions </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`__
+`Transitions </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`_ 
 are used to animate state changes, they animate properties from their
 values in the current state to those defined in the new state (as
-defined by `PropertyChanges </sdk/apps/qml/QtQuick/PropertyChanges/>`__
-objects). However, it is sometimes desirable to set a property value
-*immediately* during a
-`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch#transition>`__,
+defined by :ref:`PropertyChanges <sdk_qtquick_propertychanges>` objects).
+However, it is sometimes desirable to set a property value *immediately*
+during a
+`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch/#transition>`_ ,
 without animation; in these cases, the
-`PropertyAction </sdk/apps/qml/QtQuick/PropertyAction/>`__ type can be
-used to force an immediate property change.
+:ref:`PropertyAction <sdk_qtquick_propertyaction>` type can be used to
+force an immediate property change.
 
-See the `PropertyAction </sdk/apps/qml/QtQuick/PropertyAction/>`__
-documentation for more details.
+See the :ref:`PropertyAction <sdk_qtquick_propertyaction>` documentation
+for more details.
 
-**Note:** The `visible </sdk/apps/qml/QtQuick/Item#visible-prop>`__ and
-`enabled </sdk/apps/qml/QtQuick/Item#enabled-prop>`__ properties of
-`Item </sdk/apps/qml/QtQuick/Item/>`__ do not behave exactly the same as
-other properties in
-`PropertyChanges </sdk/apps/qml/QtQuick/PropertyChanges/>`__. Since
+**Note:** The :ref:`visible <sdk_qtquick_item#visible-prop>` and
+:ref:`enabled <sdk_qtquick_item#enabled-prop>` properties of
+:ref:`Item <sdk_qtquick_item>` do not behave exactly the same as other
+properties in :ref:`PropertyChanges <sdk_qtquick_propertychanges>`. Since
 these properties can be changed implicitly through their parent's state,
 they should be set explicitly in all
-`PropertyChanges </sdk/apps/qml/QtQuick/PropertyChanges/>`__. An item
-will still not be enabled/visible if one of its parents is not enabled
-or visible.
+:ref:`PropertyChanges <sdk_qtquick_propertychanges>`. An item will still
+not be enabled/visible if one of its parents is not enabled or visible.
 
 **See also** `States
-example </sdk/apps/qml/QtQuick/animation#states>`__, `Qt Quick
-States </sdk/apps/qml/QtQuick/qtquick-statesanimations-states/>`__, and
+example </sdk/apps/qml/QtQuick/animation/#states>`_ , `Qt Quick
+States </sdk/apps/qml/QtQuick/qtquick-statesanimations-states/>`_ , and
 Qt QML.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_propertychanges_explicit-prop:
 
 +--------------------------------------------------------------------------+
 |        \ explicit : bool                                                 |
@@ -171,6 +170,8 @@ By default, explicit is false.
 
 | 
 
+.. _sdk_qtquick_propertychanges_restoreEntryValues-prop:
+
 +--------------------------------------------------------------------------+
 |        \ restoreEntryValues : bool                                       |
 +--------------------------------------------------------------------------+
@@ -182,6 +183,8 @@ The default value is ``true``. Setting this value to ``false`` creates a
 temporary state that has permanent effects on property values.
 
 | 
+
+.. _sdk_qtquick_propertychanges_target-prop:
 
 +--------------------------------------------------------------------------+
 |        \ target : Object                                                 |

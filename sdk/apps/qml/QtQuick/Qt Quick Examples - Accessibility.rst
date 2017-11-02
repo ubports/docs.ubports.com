@@ -1,3 +1,7 @@
+.. _sdk_qtquick_qt_quick_examples_-_accessibility:
+QtQuick Qt Quick Examples - Accessibility
+=========================================
+
 
 
 *Accessibility* demonstrates QML types that are augmented with meta-data
@@ -26,7 +30,7 @@ system:
         button.clicked()
     }
 
-Similarly, `Text </sdk/apps/qml/QtQuick/qtquick-releasenotes#text>`__
+Similarly, `Text </sdk/apps/qml/QtQuick/qtquick-releasenotes/#text>`_ 
 types inside the example also identify themselves:
 
 .. code:: qml

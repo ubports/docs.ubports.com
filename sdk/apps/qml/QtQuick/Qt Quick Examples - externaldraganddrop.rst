@@ -1,10 +1,14 @@
+.. _sdk_qtquick_qt_quick_examples_-_externaldraganddrop:
+QtQuick Qt Quick Examples - externaldraganddrop
+===============================================
+
 
 
 |image0|
 
 *externaldraganddrop* demonstrates how to perform drag and drop with
-`MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ and
-`DropArea </sdk/apps/qml/QtQuick/DropArea/>`__.
+:ref:`MouseArea <sdk_qtquick_mousearea>` and
+:ref:`DropArea <sdk_qtquick_droparea>`.
 
 The example allows you to drag the text to other boxes, out of boxes
 into other applications, and from other applications into the boxes. Use

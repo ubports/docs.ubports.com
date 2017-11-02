@@ -1,3 +1,7 @@
+.. _sdk_qtquick_parentchange:
+QtQuick ParentChange
+====================
+
 Specifies how to reparent an Item in a state change
 
 +---------------------+----------------------+
@@ -7,40 +11,34 @@ Specifies how to reparent an Item in a state change
 Properties
 ----------
 
--  ****`height </sdk/apps/qml/QtQuick/ParentChange#height-prop>`__**** :
-   real
--  ****`parent </sdk/apps/qml/QtQuick/ParentChange#parent-prop>`__**** :
-   Item
--  ****`rotation </sdk/apps/qml/QtQuick/ParentChange#rotation-prop>`__****
-   : real
--  ****`scale </sdk/apps/qml/QtQuick/ParentChange#scale-prop>`__**** :
-   real
--  ****`target </sdk/apps/qml/QtQuick/ParentChange#target-prop>`__**** :
-   Item
--  ****`width </sdk/apps/qml/QtQuick/ParentChange#width-prop>`__**** :
-   real
--  ****`x </sdk/apps/qml/QtQuick/ParentChange#x-prop>`__**** : real
--  ****`y </sdk/apps/qml/QtQuick/ParentChange#y-prop>`__**** : real
+-  :ref:`height <sdk_qtquick_parentchange_height-prop>` : real
+-  :ref:`parent <sdk_qtquick_parentchange_parent-prop>` : Item
+-  :ref:`rotation <sdk_qtquick_parentchange_rotation-prop>` : real
+-  :ref:`scale <sdk_qtquick_parentchange_scale-prop>` : real
+-  :ref:`target <sdk_qtquick_parentchange_target-prop>` : Item
+-  :ref:`width <sdk_qtquick_parentchange_width-prop>` : real
+-  :ref:`x <sdk_qtquick_parentchange_x-prop>` : real
+-  :ref:`y <sdk_qtquick_parentchange_y-prop>` : real
 
 Detailed Description
 --------------------
 
-`ParentChange </sdk/apps/qml/QtQuick/ParentChange/>`__ reparents an item
-while preserving its visual appearance (position, size, rotation, and
-scale) on screen. You can then specify a transition to
-move/resize/rotate/scale the item to its final intended appearance.
+:ref:`ParentChange <sdk_qtquick_parentchange>` reparents an item while
+preserving its visual appearance (position, size, rotation, and scale)
+on screen. You can then specify a transition to move/resize/rotate/scale
+the item to its final intended appearance.
 
-`ParentChange </sdk/apps/qml/QtQuick/ParentChange/>`__ can only preserve
-visual appearance if no complex transforms are involved. More
-specifically, it will not work if the transform property has been set
-for any items involved in the reparenting (i.e. items in the common
-ancestor tree for the original and new parent).
+:ref:`ParentChange <sdk_qtquick_parentchange>` can only preserve visual
+appearance if no complex transforms are involved. More specifically, it
+will not work if the transform property has been set for any items
+involved in the reparenting (i.e. items in the common ancestor tree for
+the original and new parent).
 
 The example below displays a large red rectangle and a small blue
 rectangle, side by side. When the ``blueRect`` is clicked, it changes to
 the "reparented" state: its parent is changed to ``redRect`` and it is
 positioned at (10, 10) within the red rectangle, as specified in the
-`ParentChange </sdk/apps/qml/QtQuick/ParentChange/>`__.
+:ref:`ParentChange <sdk_qtquick_parentchange>`.
 
 .. code:: qml
 
@@ -68,17 +66,18 @@ positioned at (10, 10) within the red rectangle, as specified in the
 |image0|
 
 You can specify at which point in a transition you want a
-`ParentChange </sdk/apps/qml/QtQuick/ParentChange/>`__ to occur by using
-a `ParentAnimation </sdk/apps/qml/QtQuick/ParentAnimation/>`__.
+:ref:`ParentChange <sdk_qtquick_parentchange>` to occur by using a
+:ref:`ParentAnimation <sdk_qtquick_parentanimation>`.
 
-Note that unlike
-`PropertyChanges </sdk/apps/qml/QtQuick/PropertyChanges/>`__,
-`ParentChange </sdk/apps/qml/QtQuick/ParentChange/>`__ expects an
-Item-based target; it will not work with arbitrary objects (for example,
-you couldn't use it to reparent a Timer).
+Note that unlike :ref:`PropertyChanges <sdk_qtquick_propertychanges>`,
+:ref:`ParentChange <sdk_qtquick_parentchange>` expects an Item-based
+target; it will not work with arbitrary objects (for example, you
+couldn't use it to reparent a Timer).
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_parentchange_height-prop:
 
 +--------------------------------------------------------------------------+
 |        \ height : real                                                   |
@@ -89,13 +88,17 @@ the item in this state.
 
 | 
 
+.. _sdk_qtquick_parentchange_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ parent : `Item </sdk/apps/qml/QtQuick/Item/>`__                 |
+| :ref:` <>`\ parent : `Item <sdk_qtquick_item>`                         |
 +--------------------------------------------------------------------------+
 
 This property holds the new parent for the item in this state.
 
 | 
+
+.. _sdk_qtquick_parentchange_rotation-prop:
 
 +--------------------------------------------------------------------------+
 |        \ rotation : real                                                 |
@@ -106,6 +109,8 @@ the item in this state.
 
 | 
 
+.. _sdk_qtquick_parentchange_scale-prop:
+
 +--------------------------------------------------------------------------+
 |        \ scale : real                                                    |
 +--------------------------------------------------------------------------+
@@ -115,13 +120,17 @@ the item in this state.
 
 | 
 
+.. _sdk_qtquick_parentchange_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ target : `Item </sdk/apps/qml/QtQuick/Item/>`__                 |
+| :ref:` <>`\ target : `Item <sdk_qtquick_item>`                         |
 +--------------------------------------------------------------------------+
 
 This property holds the item to be reparented
 
 | 
+
+.. _sdk_qtquick_parentchange_width-prop:
 
 +--------------------------------------------------------------------------+
 |        \ width : real                                                    |
@@ -132,6 +141,8 @@ the item in this state.
 
 | 
 
+.. _sdk_qtquick_parentchange_x-prop:
+
 +--------------------------------------------------------------------------+
 |        \ x : real                                                        |
 +--------------------------------------------------------------------------+
@@ -140,6 +151,8 @@ These properties hold the new position, size, scale, and rotation for
 the item in this state.
 
 | 
+
+.. _sdk_qtquick_parentchange_y-prop:
 
 +--------------------------------------------------------------------------+
 |        \ y : real                                                        |
@@ -150,5 +163,5 @@ the item in this state.
 
 | 
 
-.. |image0| image:: /media/sdk/apps/qml/QtQuick/ParentChange/images/parentchange.png
+.. |image0| image:: /mediasdk_qtquick_parentchangeimages/parentchange.png
 

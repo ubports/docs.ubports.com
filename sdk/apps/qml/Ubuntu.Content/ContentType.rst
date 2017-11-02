@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_content_contenttype:
+Ubuntu.Content ContentType
+==========================
+
 Describes the type of content to transfer
 
 +---------------------+-----------------------------+
@@ -7,31 +11,31 @@ Describes the type of content to transfer
 Detailed Description
 --------------------
 
-*`ContentType </sdk/apps/qml/Ubuntu.Content/ContentType/>`__* is an
-enumeration of well known content types:
+*:ref:`ContentType <sdk_ubuntu_content_contenttype>`* is an enumeration of
+well known content types:
 
-+-------------------------------------------------------------------------+----------------------------------+
-| Type                                                                    | Description                      |
-+=========================================================================+==================================+
-| `ContentType </sdk/apps/qml/Ubuntu.Content/ContentType/>`__.Unknown     | Unknown type                     |
-+-------------------------------------------------------------------------+----------------------------------+
-| `ContentType </sdk/apps/qml/Ubuntu.Content/ContentType/>`__.Documents   | Documents                        |
-+-------------------------------------------------------------------------+----------------------------------+
-| `ContentType </sdk/apps/qml/Ubuntu.Content/ContentType/>`__.Pictures    | Pictures                         |
-+-------------------------------------------------------------------------+----------------------------------+
-| `ContentType </sdk/apps/qml/Ubuntu.Content/ContentType/>`__.Music       | Music                            |
-+-------------------------------------------------------------------------+----------------------------------+
-| `ContentType </sdk/apps/qml/Ubuntu.Content/ContentType/>`__.Contacts    | Contacts                         |
-+-------------------------------------------------------------------------+----------------------------------+
-| `ContentType </sdk/apps/qml/Ubuntu.Content/ContentType/>`__.Videos      | Videos                           |
-+-------------------------------------------------------------------------+----------------------------------+
-| `ContentType </sdk/apps/qml/Ubuntu.Content/ContentType/>`__.Links       | Links                            |
-+-------------------------------------------------------------------------+----------------------------------+
-| `ContentType </sdk/apps/qml/Ubuntu.Content/ContentType/>`__.EBooks      | EBooks                           |
-+-------------------------------------------------------------------------+----------------------------------+
-| `ContentType </sdk/apps/qml/Ubuntu.Content/ContentType/>`__.Text        | Text                             |
-+-------------------------------------------------------------------------+----------------------------------+
-| `ContentType </sdk/apps/qml/Ubuntu.Content/ContentType/>`__.All         | Any of the above content types   |
-+-------------------------------------------------------------------------+----------------------------------+
++--------------------------------------------------------------+----------------------------------+
+| Type                                                         | Description                      |
++==============================================================+==================================+
+| :ref:`ContentType <sdk_ubuntu_content_contenttype>`.Unknown     | Unknown type                     |
++--------------------------------------------------------------+----------------------------------+
+| :ref:`ContentType <sdk_ubuntu_content_contenttype>`.Documents   | Documents                        |
++--------------------------------------------------------------+----------------------------------+
+| :ref:`ContentType <sdk_ubuntu_content_contenttype>`.Pictures    | Pictures                         |
++--------------------------------------------------------------+----------------------------------+
+| :ref:`ContentType <sdk_ubuntu_content_contenttype>`.Music       | Music                            |
++--------------------------------------------------------------+----------------------------------+
+| :ref:`ContentType <sdk_ubuntu_content_contenttype>`.Contacts    | Contacts                         |
++--------------------------------------------------------------+----------------------------------+
+| :ref:`ContentType <sdk_ubuntu_content_contenttype>`.Videos      | Videos                           |
++--------------------------------------------------------------+----------------------------------+
+| :ref:`ContentType <sdk_ubuntu_content_contenttype>`.Links       | Links                            |
++--------------------------------------------------------------+----------------------------------+
+| :ref:`ContentType <sdk_ubuntu_content_contenttype>`.EBooks      | EBooks                           |
++--------------------------------------------------------------+----------------------------------+
+| :ref:`ContentType <sdk_ubuntu_content_contenttype>`.Text        | Text                             |
++--------------------------------------------------------------+----------------------------------+
+| :ref:`ContentType <sdk_ubuntu_content_contenttype>`.All         | Any of the above content types   |
++--------------------------------------------------------------+----------------------------------+
 
-**See also** `ContentHub </sdk/apps/qml/Ubuntu.Content/ContentHub/>`__.
+**See also** :ref:`ContentHub <sdk_ubuntu_content_contenthub>`.

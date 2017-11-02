@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_compassreading:
+QtSensors CompassReading
+========================
+
 The CompassReading element holds the most recent Compass reading.
 
 +--------------------------------------+--------------------------------------+
@@ -5,23 +9,23 @@ The CompassReading element holds the most recent Compass reading.
 +--------------------------------------+--------------------------------------+
 | Since:                               | QtSensors 5.0                        |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `SensorReading </sdk/apps/qml/QtSens |
-|                                      | ors/SensorReading/>`__               |
+| Inherits:                            | :ref:`SensorReading <sdk_qtsensors_sensor |
+|                                      | reading>`_                           |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`azimuth </sdk/apps/qml/QtSensors/CompassReading#azimuth-prop>`__****
-   : qreal
--  ****`calibrationLevel </sdk/apps/qml/QtSensors/CompassReading#calibrationLevel-prop>`__****
+-  :ref:`azimuth <sdk_qtsensors_compassreading_azimuth-prop>` :
+   qreal
+-  :ref:`calibrationLevel <sdk_qtsensors_compassreading_calibrationLevel-prop>`
    : qreal
 
 Detailed Description
 --------------------
 
-The `CompassReading </sdk/apps/qml/QtSensors/CompassReading/>`__ element
-holds the most recent Compass reading.
+The :ref:`CompassReading <sdk_qtsensors_compassreading>` element holds the
+most recent Compass reading.
 
 This element wraps the QCompassReading class. Please see the
 documentation for QCompassReading for details.
@@ -30,6 +34,8 @@ This element cannot be directly created.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtsensors_compassreading_azimuth-prop:
 
 +--------------------------------------------------------------------------+
 |        \ azimuth : qreal                                                 |
@@ -40,6 +46,8 @@ This property holds the azimuth of the device.
 Please see QCompassReading::azimuth for information about this property.
 
 | 
+
+.. _sdk_qtsensors_compassreading_calibrationLevel-prop:
 
 +--------------------------------------------------------------------------+
 |        \ calibrationLevel : qreal                                        |

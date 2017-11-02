@@ -1,33 +1,39 @@
+.. _sdk_qtquick_particles_pointdirection:
+QtQuick.Particles PointDirection
+================================
+
 For specifying a direction that varies in x and y components
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtQuick.Particles 2.0         |
 +--------------------------------------+--------------------------------------+
 | Inherits:                            | `Direction </sdk/apps/qml/QtQuick/Pa |
-|                                      | rticles.Direction/>`__               |
+|                                      | rticles.Direction/>`_                |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`x </sdk/apps/qml/QtQuick/Particles.PointDirection#x-prop>`__****
+-  `x </sdk/apps/qml/QtQuick/Particles.PointDirection/_x-prop>`_ 
    : real
--  ****`xVariation </sdk/apps/qml/QtQuick/Particles.PointDirection#xVariation-prop>`__****
+-  `xVariation </sdk/apps/qml/QtQuick/Particles.PointDirection/_xVariation-prop>`_ 
    : real
--  ****`y </sdk/apps/qml/QtQuick/Particles.PointDirection#y-prop>`__****
+-  `y </sdk/apps/qml/QtQuick/Particles.PointDirection/_y-prop>`_ 
    : real
--  ****`yVariation </sdk/apps/qml/QtQuick/Particles.PointDirection#yVariation-prop>`__****
+-  `yVariation </sdk/apps/qml/QtQuick/Particles.PointDirection/_yVariation-prop>`_ 
    : real
 
 Detailed Description
 --------------------
 
-The `PointDirection </sdk/apps/qml/QtQuick/Particles.PointDirection/>`__
+The `PointDirection </sdk/apps/qml/QtQuick/Particles.PointDirection/>`_ 
 element allows both the specification of a direction by x and y
 components, as well as varying the parameters by x or y component.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_particles_pointdirection_x-prop:
 
 +--------------------------------------------------------------------------+
 |        \ x : real                                                        |
@@ -35,17 +41,23 @@ Property Documentation
 
 | 
 
+.. _sdk_qtquick_particles_pointdirection_xVariation-prop:
+
 +--------------------------------------------------------------------------+
 |        \ xVariation : real                                               |
 +--------------------------------------------------------------------------+
 
 | 
 
+.. _sdk_qtquick_particles_pointdirection_y-prop:
+
 +--------------------------------------------------------------------------+
 |        \ y : real                                                        |
 +--------------------------------------------------------------------------+
 
 | 
+
+.. _sdk_qtquick_particles_pointdirection_yVariation-prop:
 
 +--------------------------------------------------------------------------+
 |        \ yVariation : real                                               |

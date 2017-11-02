@@ -1,3 +1,7 @@
+.. _sdk_qtquick_rotationanimator:
+QtQuick RotationAnimator
+========================
+
 The RotationAnimator type animates the rotation of an Item.
 
 +---------------------+----------------------+
@@ -9,24 +13,23 @@ The RotationAnimator type animates the rotation of an Item.
 Properties
 ----------
 
--  ****`direction </sdk/apps/qml/QtQuick/RotationAnimator#direction-prop>`__****
-   : enumeration
+-  :ref:`direction <sdk_qtquick_rotationanimator_direction-prop>` :
+   enumeration
 
 Detailed Description
 --------------------
 
-`Animator </sdk/apps/qml/QtQuick/Animator/>`__ types are different from
-normal Animation types. When using an Animator, the animation can be run
-in the render thread and the property value will jump to the end when
-the animation is complete.
+:ref:`Animator <sdk_qtquick_animator>` types are different from normal
+Animation types. When using an Animator, the animation can be run in the
+render thread and the property value will jump to the end when the
+animation is complete.
 
-The value of
-`Item::rotation </sdk/apps/qml/QtQuick/Item#rotation-prop>`__ is updated
-after the animation has finished.
+The value of :ref:`Item::rotation <sdk_qtquick_item#rotation-prop>` is
+updated after the animation has finished.
 
 The following snippet shows how to use a
-`RotationAnimator </sdk/apps/qml/QtQuick/RotationAnimator/>`__ together
-with a Rectangle item.
+:ref:`RotationAnimator <sdk_qtquick_rotationanimator>` together with a
+Rectangle item.
 
 .. code:: qml
 
@@ -45,8 +48,8 @@ with a Rectangle item.
     }
 
 It is also possible to use the ``on`` keyword to tie the
-`RotationAnimator </sdk/apps/qml/QtQuick/RotationAnimator/>`__ directly
-to the ``rotation`` property of an Item instance.
+:ref:`RotationAnimator <sdk_qtquick_rotationanimator>` directly to the
+``rotation`` property of an Item instance.
 
 .. code:: qml
 
@@ -62,11 +65,13 @@ to the ``rotation`` property of an Item instance.
     }
 
 **See also**
-`Item::transformOrigin </sdk/apps/qml/QtQuick/Item#transformOrigin-prop>`__
-and `ScaleAnimator </sdk/apps/qml/QtQuick/ScaleAnimator/>`__.
+:ref:`Item::transformOrigin <sdk_qtquick_item#transformOrigin-prop>` and
+:ref:`ScaleAnimator <sdk_qtquick_scaleanimator>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_rotationanimator_direction-prop:
 
 +--------------------------------------------------------------------------+
 |        \ direction : enumeration                                         |
@@ -76,15 +81,15 @@ This property holds the direction of the rotation.
 
 Possible values are:
 
--  `RotationAnimator </sdk/apps/qml/QtQuick/RotationAnimator/>`__.Numerical
+-  :ref:`RotationAnimator <sdk_qtquick_rotationanimator>`.Numerical
    (default) - Rotate by linearly interpolating between the two numbers.
    A rotation from 10 to 350 will rotate 340 degrees clockwise.
--  `RotationAnimator </sdk/apps/qml/QtQuick/RotationAnimator/>`__.Clockwise
-   - Rotate clockwise between the two values
--  `RotationAnimator </sdk/apps/qml/QtQuick/RotationAnimator/>`__.Counterclockwise
+-  :ref:`RotationAnimator <sdk_qtquick_rotationanimator>`.Clockwise -
+   Rotate clockwise between the two values
+-  :ref:`RotationAnimator <sdk_qtquick_rotationanimator>`.Counterclockwise
    - Rotate counterclockwise between the two values
--  `RotationAnimator </sdk/apps/qml/QtQuick/RotationAnimator/>`__.Shortest
-   - Rotate in the direction that produces the shortest animation path.
-   A rotation from 10 to 350 will rotate 20 degrees counterclockwise.
+-  :ref:`RotationAnimator <sdk_qtquick_rotationanimator>`.Shortest - Rotate
+   in the direction that produces the shortest animation path. A
+   rotation from 10 to 350 will rotate 20 degrees counterclockwise.
 
 | 

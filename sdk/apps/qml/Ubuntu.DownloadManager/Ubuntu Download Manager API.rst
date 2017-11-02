@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_downloadmanager_ubuntu_download_manager_api:
+Ubuntu.DownloadManager Ubuntu Download Manager API
+==================================================
+
 
 
 .. rubric:: Introduction
@@ -38,9 +42,9 @@ Available through:
 
     import Ubuntu.DownloadManager 1.2
 
--  `DownloadManager </sdk/apps/qml/Ubuntu.DownloadManager/DownloadManager/>`__
--  `SingleDownload </sdk/apps/qml/Ubuntu.DownloadManager/SingleDownload/>`__
--  `Metadata </sdk/apps/qml/Ubuntu.DownloadManager/Metadata/>`__
+-  :ref:`DownloadManager <sdk_ubuntu_downloadmanager_downloadmanager>`
+-  :ref:`SingleDownload <sdk_ubuntu_downloadmanager_singledownload>`
+-  :ref:`Metadata <sdk_ubuntu_downloadmanager_metadata>`
 
 .. rubric:: Example usage - Downloading a file
    :name: example-usage-downloading-a-file
@@ -90,5 +94,5 @@ Available through:
         Reporting Bugs
 If you find any problems with the module or this documentation, please
 file a bug in the Ubuntu Download Manager `Launchpad
-page <https://bugs.launchpad.net/ubuntu-download-manager>`__
+page <https://bugs.launchpad.net/ubuntu-download-manager>`_ 
 

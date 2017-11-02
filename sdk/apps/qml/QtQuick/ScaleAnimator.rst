@@ -1,3 +1,7 @@
+.. _sdk_qtquick_scaleanimator:
+QtQuick ScaleAnimator
+=====================
+
 The ScaleAnimator type animates the scale factor of an Item.
 
 +---------------------+----------------------+
@@ -9,17 +13,17 @@ The ScaleAnimator type animates the scale factor of an Item.
 Detailed Description
 --------------------
 
-`Animator </sdk/apps/qml/QtQuick/Animator/>`__ types are different from
-normal Animation types. When using an Animator, the animation can be run
-in the render thread and the property value will jump to the end when
-the animation is complete.
+:ref:`Animator <sdk_qtquick_animator>` types are different from normal
+Animation types. When using an Animator, the animation can be run in the
+render thread and the property value will jump to the end when the
+animation is complete.
 
-The value of `Item::scale </sdk/apps/qml/QtQuick/Item#scale-prop>`__ is
-updated after the animation has finished.
+The value of :ref:`Item::scale <sdk_qtquick_item#scale-prop>` is updated
+after the animation has finished.
 
 The following snippet shows how to use a
-`ScaleAnimator </sdk/apps/qml/QtQuick/ScaleAnimator/>`__ together with a
-Rectangle item.
+:ref:`ScaleAnimator <sdk_qtquick_scaleanimator>` together with a Rectangle
+item.
 
 .. code:: qml
 
@@ -38,8 +42,8 @@ Rectangle item.
     }
 
 It is also possible to use the ``on`` keyword to tie the
-`ScaleAnimator </sdk/apps/qml/QtQuick/ScaleAnimator/>`__ directly to an
-Item instance.
+:ref:`ScaleAnimator <sdk_qtquick_scaleanimator>` directly to an Item
+instance.
 
 .. code:: qml
 
@@ -55,5 +59,5 @@ Item instance.
     }
 
 **See also**
-`Item::transformOrigin </sdk/apps/qml/QtQuick/Item#transformOrigin-prop>`__
-and `RotationAnimator </sdk/apps/qml/QtQuick/RotationAnimator/>`__.
+:ref:`Item::transformOrigin <sdk_qtquick_item#transformOrigin-prop>` and
+:ref:`RotationAnimator <sdk_qtquick_rotationanimator>`.

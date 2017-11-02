@@ -1,3 +1,7 @@
+.. _sdk_qtquick_window_screen:
+QtQuick.Window Screen
+=====================
+
 The Screen attached object provides information about the Screen an Item
 or Window is displayed on.
 
@@ -10,25 +14,25 @@ or Window is displayed on.
 Attached Properties
 -------------------
 
--  ****`desktopAvailableHeight </sdk/apps/qml/QtQuick/Window.Screen#desktopAvailableHeight-attached-prop>`__****
+-  **`desktopAvailableHeight </sdk/apps/qml/QtQuick/Window.Screen/#desktopAvailableHeight-attached-prop>`_ **
    : int
--  ****`desktopAvailableWidth </sdk/apps/qml/QtQuick/Window.Screen#desktopAvailableWidth-attached-prop>`__****
+-  **`desktopAvailableWidth </sdk/apps/qml/QtQuick/Window.Screen/#desktopAvailableWidth-attached-prop>`_ **
    : int
--  ****`devicePixelRatio </sdk/apps/qml/QtQuick/Window.Screen#devicePixelRatio-attached-prop>`__****
+-  **`devicePixelRatio </sdk/apps/qml/QtQuick/Window.Screen/#devicePixelRatio-attached-prop>`_ **
    : real
--  ****`height </sdk/apps/qml/QtQuick/Window.Screen#height-attached-prop>`__****
+-  **`height </sdk/apps/qml/QtQuick/Window.Screen/#height-attached-prop>`_ **
    : int
--  ****`name </sdk/apps/qml/QtQuick/Window.Screen#name-attached-prop>`__****
+-  **`name </sdk/apps/qml/QtQuick/Window.Screen/#name-attached-prop>`_ **
    : string
--  ****`orientation </sdk/apps/qml/QtQuick/Window.Screen#orientation-attached-prop>`__****
+-  **`orientation </sdk/apps/qml/QtQuick/Window.Screen/#orientation-attached-prop>`_ **
    : Qt::ScreenOrientation
--  ****`orientationUpdateMask </sdk/apps/qml/QtQuick/Window.Screen#orientationUpdateMask-attached-prop>`__****
+-  **`orientationUpdateMask </sdk/apps/qml/QtQuick/Window.Screen/#orientationUpdateMask-attached-prop>`_ **
    : Qt::ScreenOrientations
--  ****`pixelDensity </sdk/apps/qml/QtQuick/Window.Screen#pixelDensity-attached-prop>`__****
+-  **`pixelDensity </sdk/apps/qml/QtQuick/Window.Screen/#pixelDensity-attached-prop>`_ **
    : real
--  ****`primaryOrientation </sdk/apps/qml/QtQuick/Window.Screen#primaryOrientation-attached-prop>`__****
+-  **`primaryOrientation </sdk/apps/qml/QtQuick/Window.Screen/#primaryOrientation-attached-prop>`_ **
    : Qt::ScreenOrientation
--  ****`width </sdk/apps/qml/QtQuick/Window.Screen#width-attached-prop>`__****
+-  **`width </sdk/apps/qml/QtQuick/Window.Screen/#width-attached-prop>`_ **
    : int
 
 Detailed Description
@@ -139,19 +143,19 @@ accelerometer (if any). On a desktop computer, this value typically does
 not change.
 
 If
-`primaryOrientation </sdk/apps/qml/QtQuick/Window.Screen#primaryOrientation-attached-prop>`__
+`primaryOrientation </sdk/apps/qml/QtQuick/Window.Screen/#primaryOrientation-attached-prop>`_ 
 == orientation, it means that the screen automatically rotates all
 content which is displayed, depending on how you hold it. But if
 orientation changes while
-`primaryOrientation </sdk/apps/qml/QtQuick/Window.Screen#primaryOrientation-attached-prop>`__
+`primaryOrientation </sdk/apps/qml/QtQuick/Window.Screen/#primaryOrientation-attached-prop>`_ 
 does NOT change, then probably you are using a device which does not
 rotate its own display. In that case you may need to use
-`Item.rotation </sdk/apps/qml/QtQuick/Item#rotation-prop>`__ or
-`Item.transform </sdk/apps/qml/QtQuick/Item#transform-prop>`__ to rotate
-your content.
+:ref:`Item.rotation <sdk_qtquick_item#rotation-prop>` or
+:ref:`Item.transform <sdk_qtquick_item#transform-prop>` to rotate your
+content.
 
 **Note:** This property does not update unless a
-`Screen::orientationUpdateMask </sdk/apps/qml/QtQuick/Window.Screen#orientationUpdateMask-attached-prop>`__
+`Screen::orientationUpdateMask </sdk/apps/qml/QtQuick/Window.Screen/#orientationUpdateMask-attached-prop>`_ 
 is set to a value other than ``0``.
 
 | 
@@ -161,7 +165,7 @@ is set to a value other than ``0``.
 +--------------------------------------------------------------------------+
 
 This contains the update mask for the orientation.
-`Screen::orientation </sdk/apps/qml/QtQuick/Window.Screen#orientation-attached-prop>`__
+`Screen::orientation </sdk/apps/qml/QtQuick/Window.Screen/#orientation-attached-prop>`_ 
 only emits changes for the screen orientations matching this mask.
 
 By default it is set to the value of the QScreen that the window uses.

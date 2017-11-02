@@ -1,31 +1,33 @@
+.. _sdk_ubuntu_components_button:
+Ubuntu.Components Button
+========================
+
 Standard Ubuntu button.
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import Ubuntu.Components 1.3         |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `AbstractButton </sdk/apps/qml/Ubunt |
-|                                      | u.Components/AbstractButton/>`__     |
+| Inherits:                            | :ref:`AbstractButton <sdk_ubuntu_componen |
+|                                      | ts_abstractbutton>`_                 |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`color </sdk/apps/qml/Ubuntu.Components/Button#color-prop>`__****
-   : color
--  ****`font </sdk/apps/qml/Ubuntu.Components/Button#font-prop>`__**** :
-   font
--  ****`gradient </sdk/apps/qml/Ubuntu.Components/Button#gradient-prop>`__****
-   : Gradient
--  ****`iconPosition </sdk/apps/qml/Ubuntu.Components/Button#iconPosition-prop>`__****
+-  :ref:`color <sdk_ubuntu_components_button_color-prop>` : color
+-  :ref:`font <sdk_ubuntu_components_button_font-prop>` : font
+-  :ref:`gradient <sdk_ubuntu_components_button_gradient-prop>` :
+   Gradient
+-  :ref:`iconPosition <sdk_ubuntu_components_button_iconPosition-prop>`
    : string
--  ****`strokeColor </sdk/apps/qml/Ubuntu.Components/Button#strokeColor-prop>`__****
+-  :ref:`strokeColor <sdk_ubuntu_components_button_strokeColor-prop>`
    : color
 
 Detailed Description
 --------------------
 
 `See also the Design Guidelines on
-Buttons <http://design.ubuntu.com/apps/building-blocks/buttons>`__.
+Buttons <http://design.ubuntu.com/apps/building-blocks/buttons>`_ .
 
 Examples:
 
@@ -49,8 +51,8 @@ Examples:
         }
     }
 
-An `Action </sdk/apps/qml/Ubuntu.Components/Action/>`__ can be used to
-specify **clicked**, iconSource and text. Example:
+An :ref:`Action <sdk_ubuntu_components_action>` can be used to specify
+**clicked**, iconSource and text. Example:
 
 .. code:: qml
 
@@ -71,41 +73,46 @@ specify **clicked**, iconSource and text. Example:
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_button_color-prop:
+
 +--------------------------------------------------------------------------+
 |        \ color : color                                                   |
 +--------------------------------------------------------------------------+
 
 The background color of the button.
 
-**See also**
-`gradient </sdk/apps/qml/Ubuntu.Components/Button#gradient-prop>`__.
+**See also** :ref:`gradient <sdk_ubuntu_components_button#gradient-prop>`.
 
 | 
 
+.. _sdk_ubuntu_components_button_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ font :                                                          |
-| `font </sdk/apps/qml/Ubuntu.Components/Button#font-prop>`__              |
+| :ref:` <>`\ font : `font <sdk_ubuntu_components_button#font-prop>`     |
 +--------------------------------------------------------------------------+
 
 The font used for the button's text.
 
 | 
 
+.. _sdk_ubuntu_components_button_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ gradient : `Gradient </sdk/apps/qml/QtQuick/Gradient/>`__       |
+| :ref:` <>`\ gradient : `Gradient <sdk_qtquick_gradient>`               |
 +--------------------------------------------------------------------------+
 
 The gradient used to fill the background of the button.
 
 Standard Ubuntu gradients are defined in
-`UbuntuColors </sdk/apps/qml/Ubuntu.Components/UbuntuColors/>`__.
+:ref:`UbuntuColors <sdk_ubuntu_components_ubuntucolors>`.
 
 If both a gradient and a color are specified, the gradient will be used.
 
-**See also**
-`color </sdk/apps/qml/Ubuntu.Components/Button#color-prop>`__.
+**See also** :ref:`color <sdk_ubuntu_components_button#color-prop>`.
 
 | 
+
+.. _sdk_ubuntu_components_button_iconPosition-prop:
 
 +--------------------------------------------------------------------------+
 |        \ iconPosition : string                                           |
@@ -121,6 +128,8 @@ Currently this is a string value. We are waiting for support for enums:
 https://bugreports.qt-project.org/browse/QTBUG-14861
 
 | 
+
+.. _sdk_ubuntu_components_button_strokeColor-prop:
 
 +--------------------------------------------------------------------------+
 |        \ strokeColor : color                                             |

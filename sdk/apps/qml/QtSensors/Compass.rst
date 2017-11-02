@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_compass:
+QtSensors Compass
+=================
+
 The Compass element reports on heading using magnetic north as a
 reference.
 
@@ -6,8 +10,7 @@ reference.
 +--------------------------------------+--------------------------------------+
 | Since:                               | QtSensors 5.0                        |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Sensor </sdk/apps/qml/QtSensors/Sen |
-|                                      | sor/>`__                             |
+| Inherits:                            | :ref:`Sensor <sdk_qtsensors_sensor>` |
 +--------------------------------------+--------------------------------------+
 
 Detailed Description
@@ -19,5 +22,4 @@ reference.
 This element wraps the QCompass class. Please see the documentation for
 QCompass for details.
 
-**See also**
-`CompassReading </sdk/apps/qml/QtSensors/CompassReading/>`__.
+**See also** :ref:`CompassReading <sdk_qtsensors_compassreading>`.

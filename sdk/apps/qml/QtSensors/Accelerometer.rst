@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_accelerometer:
+QtSensors Accelerometer
+=======================
+
 The Accelerometer element reports on linear acceleration along the X, Y
 and Z axes.
 
@@ -6,14 +10,13 @@ and Z axes.
 +--------------------------------------+--------------------------------------+
 | Since:                               | QtSensors 5.0                        |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Sensor </sdk/apps/qml/QtSensors/Sen |
-|                                      | sor/>`__                             |
+| Inherits:                            | :ref:`Sensor <sdk_qtsensors_sensor>` |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`accelerationMode </sdk/apps/qml/QtSensors/Accelerometer#accelerationMode-prop>`__****
+-  :ref:`accelerationMode <sdk_qtsensors_accelerometer_accelerationMode-prop>`
    : AccelerationMode
 
 Detailed Description
@@ -26,10 +29,12 @@ This element wraps the QAccelerometer class. Please see the
 documentation for QAccelerometer for details.
 
 **See also**
-`AccelerometerReading </sdk/apps/qml/QtSensors/AccelerometerReading/>`__.
+:ref:`AccelerometerReading <sdk_qtsensors_accelerometerreading>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtsensors_accelerometer_accelerationMode-prop:
 
 +--------------------------------------------------------------------------+
 |        \ accelerationMode : AccelerationMode                             |

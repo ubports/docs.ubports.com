@@ -1,15 +1,18 @@
+.. _sdk_qtquick_qt_quick_text_input_handling_and_validators:
+QtQuick Qt Quick Text Input Handling and Validators
+===================================================
+
 
 
 .. rubric:: Text Visual Types
    :name: text-visual-types
 
 Qt Quick provides several types to display text onto the screen. The
-`Text </sdk/apps/qml/QtQuick/qtquick-releasenotes#text>`__ type will
+`Text </sdk/apps/qml/QtQuick/qtquick-releasenotes/#text>`_  type will
 display formatted text onto the screen, the
-`TextEdit </sdk/apps/qml/QtQuick/TextEdit/>`__ type will place a
-multiline line edit onto the screen, and the
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ will place a single
-editable line field onto the screen.
+:ref:`TextEdit <sdk_qtquick_textedit>` type will place a multiline line
+edit onto the screen, and the :ref:`TextInput <sdk_qtquick_textinput>` will
+place a single editable line field onto the screen.
 
 To learn more about their specific features and properties, visit their
 respective documentation.
@@ -18,7 +21,7 @@ respective documentation.
    :name: validating-input-text
 
 The *validator* types enforce the type and format of
-`TextInput </sdk/apps/qml/QtQuick/TextInput/>`__ objects.
+:ref:`TextInput <sdk_qtquick_textinput>` objects.
 
 .. code:: qml
 

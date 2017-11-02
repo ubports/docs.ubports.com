@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_mimedata:
+Ubuntu.Components MimeData
+==========================
+
 MimeData type provides interface to access and store data to the
 Clipboard.
 
@@ -8,18 +12,14 @@ Clipboard.
 Properties
 ----------
 
--  ****`color </sdk/apps/qml/Ubuntu.Components/MimeData#color-prop>`__****
-   : color
--  ****`data </sdk/apps/qml/Ubuntu.Components/MimeData#data-prop>`__****
-   : var
--  ****`format </sdk/apps/qml/Ubuntu.Components/MimeData#format-prop>`__****
-   : list<string>
--  ****`html </sdk/apps/qml/Ubuntu.Components/MimeData#html-prop>`__****
-   : string
--  ****`text </sdk/apps/qml/Ubuntu.Components/MimeData#text-prop>`__****
-   : string
--  ****`urls </sdk/apps/qml/Ubuntu.Components/MimeData#urls-prop>`__****
-   : list<url>
+-  :ref:`color <sdk_ubuntu_components_mimedata_color-prop>` : color
+-  :ref:`data <sdk_ubuntu_components_mimedata_data-prop>` : var
+-  :ref:`format <sdk_ubuntu_components_mimedata_format-prop>` :
+   list<string>
+-  :ref:`html <sdk_ubuntu_components_mimedata_html-prop>` : string
+-  :ref:`text <sdk_ubuntu_components_mimedata_text-prop>` : string
+-  :ref:`urls <sdk_ubuntu_components_mimedata_urls-prop>` :
+   list<url>
 
 Detailed Description
 --------------------
@@ -27,14 +27,18 @@ Detailed Description
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_mimedata_color-prop:
+
 +--------------------------------------------------------------------------+
 |        \ color : color                                                   |
 +--------------------------------------------------------------------------+
 
 | 
 
+.. _sdk_ubuntu_components_mimedata_data-prop:
+
 +--------------------------------------------------------------------------+
-|        \ data : `var <http://doc.qt.io/qt-5/qml-var.html>`__             |
+|        \ data : `var <http://doc.qt.io/qt-5/qml-var.html>`_              |
 +--------------------------------------------------------------------------+
 
 Reading the property returns a list of MIME type and data pairs
@@ -55,6 +59,8 @@ When setting the property value can take one of the following types:
 
 | 
 
+.. _sdk_ubuntu_components_mimedata_format-prop:
+
 +--------------------------------------------------------------------------+
 |        \ format : list<string>                                           |
 +--------------------------------------------------------------------------+
@@ -63,10 +69,11 @@ Returns a list of formats supported by the object. This is a list of
 MIME types for which the object can return suitable data. The formats in
 the list are in a priority order.
 
-**See also**
-`data </sdk/apps/qml/Ubuntu.Components/MimeData#data-prop>`__.
+**See also** :ref:`data <sdk_ubuntu_components_mimedata#data-prop>`.
 
 | 
+
+.. _sdk_ubuntu_components_mimedata_html-prop:
 
 +--------------------------------------------------------------------------+
 |        \ html : string                                                   |
@@ -77,6 +84,8 @@ text/html); otherwise contains an empty string.
 
 | 
 
+.. _sdk_ubuntu_components_mimedata_text-prop:
+
 +--------------------------------------------------------------------------+
 |        \ text : string                                                   |
 +--------------------------------------------------------------------------+
@@ -85,8 +94,10 @@ Contains a plain text (MIME type text/plain) representation of the data.
 
 | 
 
+.. _sdk_ubuntu_components_mimedata_urls-prop:
+
 +--------------------------------------------------------------------------+
-|        \ urls : list<`url <http://doc.qt.io/qt-5/qml-url.html>`__>       |
+|        \ urls : list<`url <http://doc.qt.io/qt-5/qml-url.html>`_ >       |
 +--------------------------------------------------------------------------+
 
 Contains a list of URLs contained within the MIME data object. URLs

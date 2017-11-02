@@ -1,3 +1,7 @@
+.. _sdk_scopejs_result:
+ScopeJS Result
+==============
+
 
 The attributes of a result returned by a Scope The Result API provides
 convenience methods for some typical attributes (title, art), but scopes
@@ -43,10 +47,10 @@ Check if this Result instance has a stored result
 
 **Returns:** <Boolean>
 
-`Result </sdk/scopes/js/ScopeJS/Result/>`__ **``retrieve``**\ ( ``  `` )
+:ref:`Result <sdk_scopejs_result>` **``retrieve``**\ ( ``  `` )
 Get a stored result
 
-**Returns:** <`Result </sdk/scopes/js/ScopeJS/Result/>`__>
+**Returns:** <:ref:`Result <sdk_scopejs_result>`>
 
 **``set``**\ ( ``key, value `` )
 Set the value of an attribute

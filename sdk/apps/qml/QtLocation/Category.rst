@@ -1,3 +1,7 @@
+.. _sdk_qtlocation_category:
+QtLocation Category
+===================
+
 The Category type represents a category that a Place can be associated
 with.
 
@@ -10,48 +14,41 @@ with.
 Properties
 ----------
 
--  ****`category </sdk/apps/qml/QtLocation/Category#category-prop>`__****
-   : QPlaceCategory
--  ****`categoryId </sdk/apps/qml/QtLocation/Category#categoryId-prop>`__****
-   : string
--  ****`icon </sdk/apps/qml/QtLocation/Category#icon-prop>`__**** :
-   PlaceIcon
--  ****`name </sdk/apps/qml/QtLocation/Category#name-prop>`__**** :
+-  :ref:`category <sdk_qtlocation_category_category-prop>` :
+   QPlaceCategory
+-  :ref:`categoryId <sdk_qtlocation_category_categoryId-prop>` :
    string
--  ****`plugin </sdk/apps/qml/QtLocation/Category#plugin-prop>`__**** :
-   Plugin
--  ****`status </sdk/apps/qml/QtLocation/Category#status-prop>`__**** :
+-  :ref:`icon <sdk_qtlocation_category_icon-prop>` : PlaceIcon
+-  :ref:`name <sdk_qtlocation_category_name-prop>` : string
+-  :ref:`plugin <sdk_qtlocation_category_plugin-prop>` : Plugin
+-  :ref:`status <sdk_qtlocation_category_status-prop>` :
    enumeration
--  ****`visibility </sdk/apps/qml/QtLocation/Category#visibility-prop>`__****
-   : enumeration
+-  :ref:`visibility <sdk_qtlocation_category_visibility-prop>` :
+   enumeration
 
 Methods
 -------
 
 -  string
-   ****`errorString </sdk/apps/qml/QtLocation/Category#errorString-method>`__****\ ()
--  void
-   ****`remove </sdk/apps/qml/QtLocation/Category#remove-method>`__****\ ()
--  void
-   ****`save </sdk/apps/qml/QtLocation/Category#save-method>`__****\ ()
+   **:ref:`errorString <sdk_qtlocation_category#errorString-method>`**\ ()
+-  void :ref:`remove <sdk_qtlocation_category_remove-method>`\ ()
+-  void :ref:`save <sdk_qtlocation_category_save-method>`\ ()
 
 Detailed Description
 --------------------
 
 Categories are used to search for places based on the categories they
 are associated with. The list of available categories can be obtained
-from the `CategoryModel </sdk/apps/qml/QtLocation/CategoryModel/>`__.
-The `PlaceSearchModel </sdk/apps/qml/QtLocation/PlaceSearchModel/>`__
-has a
-`categories </sdk/apps/qml/QtLocation/PlaceSearchModel#categories-prop>`__
+from the :ref:`CategoryModel <sdk_qtlocation_categorymodel>`. The
+:ref:`PlaceSearchModel <sdk_qtlocation_placesearchmodel>` has a
+:ref:`categories <sdk_qtlocation_placesearchmodel#categories-prop>`
 property that is used to limit the search results to places with the
 specified categories.
 
-If the `Plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__
+If the `Plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_ 
 supports it, categories can be created or removed. To create a new
 category construct a new Category object and set its properties, then
-invoke the `save() </sdk/apps/qml/QtLocation/Category#save-method>`__
-method.
+invoke the :ref:`save() <sdk_qtlocation_category#save-method>` method.
 
 .. code:: qml
 
@@ -67,16 +64,17 @@ method.
     category.save();
 
 To remove a category ensure that the
-`plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__ and
-`categoryId </sdk/apps/qml/QtLocation/Category#categoryId-prop>`__
-properties are set and call the
-`remove() </sdk/apps/qml/QtLocation/Category#remove-method>`__ method.
+`plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_  and
+:ref:`categoryId <sdk_qtlocation_category#categoryId-prop>` properties are
+set and call the :ref:`remove() <sdk_qtlocation_category#remove-method>`
+method.
 
-**See also**
-`CategoryModel </sdk/apps/qml/QtLocation/CategoryModel/>`__.
+**See also** :ref:`CategoryModel <sdk_qtlocation_categorymodel>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtlocation_category_category-prop:
 
 +--------------------------------------------------------------------------+
 |        \ category : QPlaceCategory                                       |
@@ -87,15 +85,19 @@ see "Interfaces between C++ and QML Code".
 
 | 
 
+.. _sdk_qtlocation_category_categoryId-prop:
+
 +--------------------------------------------------------------------------+
 |        \ categoryId : string                                             |
 +--------------------------------------------------------------------------+
 
 This property holds the identifier of the category. The categoryId is a
 string which uniquely identifies this category within the categories
-`plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__.
+`plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_ .
 
 | 
+
+.. _sdk_qtlocation_category_icon-prop:
 
 +--------------------------------------------------------------------------+
 |        \ icon : PlaceIcon                                                |
@@ -106,6 +108,8 @@ display the icon you can use the Image type.
 
 | 
 
+.. _sdk_qtlocation_category_name-prop:
+
 +--------------------------------------------------------------------------+
 |        \ name : string                                                   |
 +--------------------------------------------------------------------------+
@@ -114,8 +118,10 @@ This property holds string based name of the category.
 
 | 
 
+.. _sdk_qtlocation_category_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ plugin : `Plugin </sdk/apps/qml/QtLocation/Plugin/>`__          |
+| :ref:` <>`\ plugin : `Plugin <sdk_qtlocation_plugin>`                  |
 +--------------------------------------------------------------------------+
 
 This property holds the location based service to which the category
@@ -123,17 +129,24 @@ belongs.
 
 | 
 
+.. _sdk_qtlocation_category_status-prop:
+
 +--------------------------------------------------------------------------+
 |        \ status : enumeration                                            |
 +--------------------------------------------------------------------------+
 
 This property holds the status of the category. It can be one of:
 
+.. _sdk_qtlocation_category_Category.Ready       No error occurred during the last operation, further operations may be performed on the category.-prop:
+
 +---------------------+------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_qtlocation_category_Category.Saving      The category is currently being saved, no other operations may be performed until the current operation completes.-prop:
 | Category.Ready      | No error occurred during the last operation, further operations may be performed on the category.                      |
 +---------------------+------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_qtlocation_category_Category.Removing    The category is currently being removed, no other operations can be performed until the current operation completes.-prop:
 | Category.Saving     | The category is currently being saved, no other operations may be performed until the current operation completes.     |
 +---------------------+------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_qtlocation_category_Category.Error       An error occurred during the last operation, further operations can still be performed on the category.-prop:
 | Category.Removing   | The category is currently being removed, no other operations can be performed until the current operation completes.   |
 +---------------------+------------------------------------------------------------------------------------------------------------------------+
 | Category.Error      | An error occurred during the last operation, further operations can still be performed on the category.                |
@@ -141,24 +154,31 @@ This property holds the status of the category. It can be one of:
 
 | 
 
+.. _sdk_qtlocation_category_visibility-prop:
+
 +--------------------------------------------------------------------------+
 |        \ visibility : enumeration                                        |
 +--------------------------------------------------------------------------+
 
 This property holds the visibility of the category. It can be one of:
 
+.. _sdk_qtlocation_category_Category.UnspecifiedVisibility    The visibility of the category is unspecified. If saving a category, the plugin will automatically set a default visibility to the category saved in the backend. This default is dependent on the plugin implementation.-prop:
+
 +----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_qtlocation_category_Category.DeviceVisibility         The category is limited to the current device. The category will not be transferred off of the device.-prop:
 | Category.UnspecifiedVisibility   | The visibility of the category is unspecified. If saving a category, the plugin will automatically set a default visibility to the category saved in the backend. This default is dependent on the plugin implementation.   |
 +----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_qtlocation_category_Category.PrivateVisibility        The category is private to the current user. The category may be transferred to an online service but is only ever visible to the current user.-prop:
 | Category.DeviceVisibility        | The category is limited to the current device. The category will not be transferred off of the device.                                                                                                                      |
 +----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_qtlocation_category_Category.PublicVisibility         The category is public.-prop:
 | Category.PrivateVisibility       | The category is private to the current user. The category may be transferred to an online service but is only ever visible to the current user.                                                                             |
 +----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Category.PublicVisibility        | The category is public.                                                                                                                                                                                                     |
 +----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Note that visibility does not affect how
-`Place </sdk/apps/qml/QtLocation/location-cpp-qml#place>`__\ s
+`Place </sdk/apps/qml/QtLocation/location-cpp-qml/#place>`_ \ s
 associated with the category are displayed in the user-interface of an
 application on the device. Instead, it defines the sharing semantics of
 the category.
@@ -167,6 +187,8 @@ the category.
 
 Method Documentation
 --------------------
+
+.. _sdk_qtlocation_category_string errorString-method:
 
 +--------------------------------------------------------------------------+
 |        \ string errorString()                                            |
@@ -177,6 +199,8 @@ last operation completed successfully then the string is empty.
 
 | 
 
+.. _sdk_qtlocation_category_void remove-method:
+
 +--------------------------------------------------------------------------+
 |        \ void remove()                                                   |
 +--------------------------------------------------------------------------+
@@ -184,6 +208,8 @@ last operation completed successfully then the string is empty.
 This method permanently removes the category from the backend service.
 
 | 
+
+.. _sdk_qtlocation_category_void save-method:
 
 +--------------------------------------------------------------------------+
 |        \ void save()                                                     |

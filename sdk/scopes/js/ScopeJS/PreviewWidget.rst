@@ -1,3 +1,7 @@
+.. _sdk_scopejs_previewwidget:
+ScopeJS PreviewWidget
+=====================
+
 
 A widget for a preview.
 
@@ -34,8 +38,7 @@ Adds a widget into expandable widget
 
 **Parameters:**
 
--  ``widget``
-   **<`PreviewWidget </sdk/scopes/js/ScopeJS/PreviewWidget/>`__>**
+-  :ref:``widget`` **<`PreviewWidget <sdk_scopejs_previewwidget>`>**
 
    The widget that needs to be added
 

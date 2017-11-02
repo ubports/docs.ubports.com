@@ -1,7 +1,11 @@
+.. _sdk_autopilot_application_upstartapplicationlauncher:
+autopilot.application UpstartApplicationLauncher
+================================================
+
  *class*
 ``autopilot.application.``\ ``UpstartApplicationLauncher``\ (*case\_addDetail=None*,
 *emulator\_base=None*,
-*dbus\_bus='session'*)\ ` <#autopilot.application.UpstartApplicationLauncher>`__
+*dbus\_bus='session'*)\ ` <#autopilot.application.UpstartApplicationLauncher>`_ 
     A launcher class that launches applications with UpstartAppLaunch.A
     class that knows how to launch an application with a certain type of
     introspection enabled.
@@ -13,7 +17,7 @@
     +---------------+------------------------------------------------------------------------------------------------------------------------------+
 
      ``launch``\ (*app\_id*,
-    *app\_uris=[]*)\ ` <#autopilot.application.UpstartApplicationLauncher.launch>`__
+    *app\_uris=[]*)\ ` <#autopilot.application.UpstartApplicationLauncher.launch>`_ 
         Launch an application with upstart.
 
         This method launches an application via the
@@ -59,6 +63,6 @@
 
         proxy object for the launched package application
 
-``autopilot.application.``\ ``get_application_launcher_wrapper``\ (*app\_path*)\ ` <#autopilot.application.get_application_launcher_wrapper>`__
+``autopilot.application.``\ ``get_application_launcher_wrapper``\ (*app\_path*)\ ` <#autopilot.application.get_application_launcher_wrapper>`_ 
     Return an instance of ``ApplicationLauncher`` that knows how to
     launch the application at ‘app\_path’.

@@ -1,36 +1,37 @@
+.. _sdk_qtquick_grid:
+QtQuick Grid
+============
+
 Positions its children in grid formation
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtQuick 2.4                   |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Item </sdk/apps/qml/QtQuick/Item/>` |
-|                                      | __                                   |
+| Inherits:                            | :ref:`Item <sdk_qtquick_item>`       |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`add </sdk/apps/qml/QtQuick/Grid#add-prop>`__**** : Transition
--  ****`columnSpacing </sdk/apps/qml/QtQuick/Grid#columnSpacing-prop>`__****
-   : qreal
--  ****`columns </sdk/apps/qml/QtQuick/Grid#columns-prop>`__**** : int
--  ****`effectiveHorizontalItemAlignment </sdk/apps/qml/QtQuick/Grid#effectiveHorizontalItemAlignment-prop>`__****
-   : enumeration
--  ****`effectiveLayoutDirection </sdk/apps/qml/QtQuick/Grid#effectiveLayoutDirection-prop>`__****
-   : enumeration
--  ****`flow </sdk/apps/qml/QtQuick/Grid#flow-prop>`__**** : enumeration
--  ****`horizontalItemAlignment </sdk/apps/qml/QtQuick/Grid#horizontalItemAlignment-prop>`__****
-   : enumeration
--  ****`layoutDirection </sdk/apps/qml/QtQuick/Grid#layoutDirection-prop>`__****
-   : enumeration
--  ****`move </sdk/apps/qml/QtQuick/Grid#move-prop>`__**** : Transition
--  ****`populate </sdk/apps/qml/QtQuick/Grid#populate-prop>`__**** :
-   Transition
--  ****`rowSpacing </sdk/apps/qml/QtQuick/Grid#rowSpacing-prop>`__**** :
+-  :ref:`add <sdk_qtquick_grid_add-prop>` : Transition
+-  :ref:`columnSpacing <sdk_qtquick_grid_columnSpacing-prop>` :
    qreal
--  ****`rows </sdk/apps/qml/QtQuick/Grid#rows-prop>`__**** : int
--  ****`spacing </sdk/apps/qml/QtQuick/Grid#spacing-prop>`__**** : qreal
--  ****`verticalItemAlignment </sdk/apps/qml/QtQuick/Grid#verticalItemAlignment-prop>`__****
+-  :ref:`columns <sdk_qtquick_grid_columns-prop>` : int
+-  :ref:`effectiveHorizontalItemAlignment <sdk_qtquick_grid_effectiveHorizontalItemAlignment-prop>`
+   : enumeration
+-  :ref:`effectiveLayoutDirection <sdk_qtquick_grid_effectiveLayoutDirection-prop>`
+   : enumeration
+-  :ref:`flow <sdk_qtquick_grid_flow-prop>` : enumeration
+-  :ref:`horizontalItemAlignment <sdk_qtquick_grid_horizontalItemAlignment-prop>`
+   : enumeration
+-  :ref:`layoutDirection <sdk_qtquick_grid_layoutDirection-prop>` :
+   enumeration
+-  :ref:`move <sdk_qtquick_grid_move-prop>` : Transition
+-  :ref:`populate <sdk_qtquick_grid_populate-prop>` : Transition
+-  :ref:`rowSpacing <sdk_qtquick_grid_rowSpacing-prop>` : qreal
+-  :ref:`rows <sdk_qtquick_grid_rows-prop>` : int
+-  :ref:`spacing <sdk_qtquick_grid_spacing-prop>` : qreal
+-  :ref:`verticalItemAlignment <sdk_qtquick_grid_verticalItemAlignment-prop>`
    : enumeration
 
 Detailed Description
@@ -45,9 +46,8 @@ cell with position (0, 0).
 
 A Grid defaults to four columns, and creates as many rows as are
 necessary to fit all of its child items. The number of rows and columns
-can be constrained by setting the
-`rows </sdk/apps/qml/QtQuick/Grid#rows-prop>`__ and
-`columns </sdk/apps/qml/QtQuick/Grid#columns-prop>`__ properties.
+can be constrained by setting the :ref:`rows <sdk_qtquick_grid#rows-prop>`
+and :ref:`columns <sdk_qtquick_grid#columns-prop>` properties.
 
 For example, below is a Grid that contains five rectangles of various
 sizes:
@@ -70,31 +70,32 @@ The Grid automatically positions the child items in a grid formation:
 |image0|
 
 If an item within a Grid is not
-`visible </sdk/apps/qml/QtQuick/Item#visible-prop>`__, or if it has a
-width or height of 0, the item will not be laid out and it will not be
-visible within the column. Also, since a Grid automatically positions
-its children, a child item within a Grid should not set its
-`x </sdk/apps/qml/QtQuick/Item#x-prop>`__ or
-`y </sdk/apps/qml/QtQuick/Item#y-prop>`__ positions or anchor itself
-with any of the `anchor </sdk/apps/qml/QtQuick/Item#anchors-prop>`__
-properties.
+:ref:`visible <sdk_qtquick_item#visible-prop>`, or if it has a width or
+height of 0, the item will not be laid out and it will not be visible
+within the column. Also, since a Grid automatically positions its
+children, a child item within a Grid should not set its
+:ref:`x <sdk_qtquick_item#x-prop>` or `y <sdk_qtquick_item#y-prop>`
+positions or anchor itself with any of the
+:ref:`anchor <sdk_qtquick_item#anchors-prop>` properties.
 
 For more information on using Grid and other related positioner-types,
 see `Item
-Positioners </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/>`__.
+Positioners </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/>`_ .
 
 **See also**
-`Flow </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#flow>`__,
-`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#row>`__,
-`Column </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#column>`__,
-`Positioner </sdk/apps/qml/QtQuick/Positioner/>`__, GridLayout, and `Qt
-Quick Examples - Positioners </sdk/apps/qml/QtQuick/positioners/>`__.
+`Flow </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#flow>`_ ,
+`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#row>`_ ,
+`Column </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#column>`_ ,
+:ref:`Positioner <sdk_qtquick_positioner>`, GridLayout, and `Qt Quick
+Examples - Positioners </sdk/apps/qml/QtQuick/positioners/>`_ .
 
 Property Documentation
 ----------------------
 
+.. _sdk_qtquick_grid_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ add : `Transition </sdk/apps/qml/QtQuick/Transition/>`__        |
+| :ref:` <>`\ add : `Transition <sdk_qtquick_transition>`                |
 +--------------------------------------------------------------------------+
 
 This property holds the transition to be run for items that are added to
@@ -103,25 +104,27 @@ this positioner. For a positioner, this applies to:
 -  Items that are created or reparented as a child of the positioner
    after the positioner has been created
 -  Child items that change their
-   `Item::visible </sdk/apps/qml/QtQuick/Item#visible-prop>`__ property
-   from false to true, and thus are now visible
+   :ref:`Item::visible <sdk_qtquick_item#visible-prop>` property from false
+   to true, and thus are now visible
 
 The transition can use the
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__ property to
-access more details about the item that is being added. See the
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__ documentation
-for more details and examples on using these transitions.
+:ref:`ViewTransition <sdk_qtquick_viewtransition>` property to access more
+details about the item that is being added. See the
+:ref:`ViewTransition <sdk_qtquick_viewtransition>` documentation for more
+details and examples on using these transitions.
 
 **Note:** This transition is not applied to the items that already part
 of the positioner at the time of its creation. In this case, the
-`populate </sdk/apps/qml/QtQuick/Grid#populate-prop>`__ transition is
-applied instead.
+:ref:`populate <sdk_qtquick_grid#populate-prop>` transition is applied
+instead.
 
-**See also** `populate </sdk/apps/qml/QtQuick/Grid#populate-prop>`__,
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__, and `Qt
-Quick Examples - Positioners </sdk/apps/qml/QtQuick/positioners/>`__.
+**See also** :ref:`populate <sdk_qtquick_grid#populate-prop>`,
+:ref:`ViewTransition <sdk_qtquick_viewtransition>`, and `Qt Quick Examples
+- Positioners </sdk/apps/qml/QtQuick/positioners/>`_ .
 
 | 
+
+.. _sdk_qtquick_grid_columnSpacing-prop:
 
 +--------------------------------------------------------------------------+
 |        \ columnSpacing : qreal                                           |
@@ -136,10 +139,11 @@ By default this property is not set.
 
 This QML property was introduced in Qt 5.0.
 
-**See also**
-`rowSpacing </sdk/apps/qml/QtQuick/Grid#rowSpacing-prop>`__.
+**See also** :ref:`rowSpacing <sdk_qtquick_grid#rowSpacing-prop>`.
 
 | 
+
+.. _sdk_qtquick_grid_columns-prop:
 
 +--------------------------------------------------------------------------+
 |        \ columns : int                                                   |
@@ -153,6 +157,8 @@ columns, some columns will be of zero width.
 
 | 
 
+.. _sdk_qtquick_grid_effectiveHorizontalItemAlignment-prop:
+
 +--------------------------------------------------------------------------+
 |        \ effectiveHorizontalItemAlignment : enumeration                  |
 +--------------------------------------------------------------------------+
@@ -160,10 +166,10 @@ columns, some columns will be of zero width.
 Sets the horizontal and vertical alignment of items in the Grid. By
 default, the items are vertically aligned to the top. Horizontal
 alignment follows the
-`layoutDirection </sdk/apps/qml/QtQuick/Grid#layoutDirection-prop>`__ of
-the Grid, for example when having a
-`layoutDirection </sdk/apps/qml/QtQuick/Grid#layoutDirection-prop>`__
-from LeftToRight, the items will be aligned on the left.
+:ref:`layoutDirection <sdk_qtquick_grid#layoutDirection-prop>` of the Grid,
+for example when having a
+:ref:`layoutDirection <sdk_qtquick_grid#layoutDirection-prop>` from
+LeftToRight, the items will be aligned on the left.
 
 The valid values for ``horizontalItemAlignment`` are,
 ``Grid.AlignLeft``, ``Grid.AlignRight`` and ``Grid.AlignHCenter``.
@@ -173,29 +179,35 @@ The valid values for ``verticalItemAlignment`` are ``Grid.AlignTop``,
 
 The below images show three examples of how to align items.
 
+.. _sdk_qtquick_grid_image1            image2            image3-prop:
+
 +--------------------+--------------------+--------------------+--------------------+
+.. _sdk_qtquick_grid_Horizontal          AlignLeft           AlignHCenter        AlignHCenter-prop:
 |                    | |image1|           | |image2|           | |image3|           |
 +--------------------+--------------------+--------------------+--------------------+
 | Horizontal         | AlignLeft          | AlignHCenter       | AlignHCenter       |
+.. _sdk_qtquick_grid_Vertical alignment  AlignTop            AlignTop            AlignVCenter-prop:
 | alignment          |                    |                    |                    |
 +--------------------+--------------------+--------------------+--------------------+
 | Vertical alignment | AlignTop           | AlignTop           | AlignVCenter       |
 +--------------------+--------------------+--------------------+--------------------+
 
 When mirroring the layout using either the attached property
-`LayoutMirroring::enabled </sdk/apps/qml/QtQuick/LayoutMirroring#enabled-prop>`__
+:ref:`LayoutMirroring::enabled <sdk_qtquick_layoutmirroring#enabled-prop>`
 or by setting the
-`layoutDirection </sdk/apps/qml/QtQuick/Grid#layoutDirection-prop>`__,
-the horizontal alignment of items will be mirrored as well. However, the
+:ref:`layoutDirection <sdk_qtquick_grid#layoutDirection-prop>`, the
+horizontal alignment of items will be mirrored as well. However, the
 property ``horizontalItemAlignment`` will remain unchanged. To query the
 effective horizontal alignment of items, use the read-only property
 ``effectiveHorizontalItemAlignment``.
 
 **See also**
-`Grid::layoutDirection </sdk/apps/qml/QtQuick/Grid#layoutDirection-prop>`__
-and `LayoutMirroring </sdk/apps/qml/QtQuick/LayoutMirroring/>`__.
+:ref:`Grid::layoutDirection <sdk_qtquick_grid#layoutDirection-prop>` and
+:ref:`LayoutMirroring <sdk_qtquick_layoutmirroring>`.
 
 | 
+
+.. _sdk_qtquick_grid_effectiveLayoutDirection-prop:
 
 +--------------------------------------------------------------------------+
 |        \ effectiveLayoutDirection : enumeration                          |
@@ -204,17 +216,19 @@ and `LayoutMirroring </sdk/apps/qml/QtQuick/LayoutMirroring/>`__.
 This property holds the effective layout direction of the grid.
 
 When using the attached property
-`LayoutMirroring::enabled </sdk/apps/qml/QtQuick/LayoutMirroring#enabled-prop>`__
+:ref:`LayoutMirroring::enabled <sdk_qtquick_layoutmirroring#enabled-prop>`
 for locale layouts, the visual layout direction of the grid positioner
 will be mirrored. However, the property
-`layoutDirection </sdk/apps/qml/QtQuick/Grid#layoutDirection-prop>`__
-will remain unchanged.
+:ref:`layoutDirection <sdk_qtquick_grid#layoutDirection-prop>` will remain
+unchanged.
 
 **See also**
-`Grid::layoutDirection </sdk/apps/qml/QtQuick/Grid#layoutDirection-prop>`__
-and `LayoutMirroring </sdk/apps/qml/QtQuick/LayoutMirroring/>`__.
+:ref:`Grid::layoutDirection <sdk_qtquick_grid#layoutDirection-prop>` and
+:ref:`LayoutMirroring <sdk_qtquick_layoutmirroring>`.
 
 | 
+
+.. _sdk_qtquick_grid_flow-prop:
 
 +--------------------------------------------------------------------------+
 |        \ flow : enumeration                                              |
@@ -225,13 +239,14 @@ This property holds the flow of the layout.
 Possible values are:
 
 -  Grid.LeftToRight (default) - Items are positioned next to each other
-   in the
-   `layoutDirection </sdk/apps/qml/QtQuick/Grid#layoutDirection-prop>`__,
+   in the :ref:`layoutDirection <sdk_qtquick_grid#layoutDirection-prop>`,
    then wrapped to the next line.
 -  Grid.TopToBottom - Items are positioned next to each other from top
    to bottom, then wrapped to the next column.
 
 | 
+
+.. _sdk_qtquick_grid_horizontalItemAlignment-prop:
 
 +--------------------------------------------------------------------------+
 |        \ horizontalItemAlignment : enumeration                           |
@@ -240,10 +255,10 @@ Possible values are:
 Sets the horizontal and vertical alignment of items in the Grid. By
 default, the items are vertically aligned to the top. Horizontal
 alignment follows the
-`layoutDirection </sdk/apps/qml/QtQuick/Grid#layoutDirection-prop>`__ of
-the Grid, for example when having a
-`layoutDirection </sdk/apps/qml/QtQuick/Grid#layoutDirection-prop>`__
-from LeftToRight, the items will be aligned on the left.
+:ref:`layoutDirection <sdk_qtquick_grid#layoutDirection-prop>` of the Grid,
+for example when having a
+:ref:`layoutDirection <sdk_qtquick_grid#layoutDirection-prop>` from
+LeftToRight, the items will be aligned on the left.
 
 The valid values for ``horizontalItemAlignment`` are,
 ``Grid.AlignLeft``, ``Grid.AlignRight`` and ``Grid.AlignHCenter``.
@@ -253,29 +268,35 @@ The valid values for ``verticalItemAlignment`` are ``Grid.AlignTop``,
 
 The below images show three examples of how to align items.
 
+.. _sdk_qtquick_grid_image4            image5            image6-prop:
+
 +--------------------+--------------------+--------------------+--------------------+
+.. _sdk_qtquick_grid_Horizontal          AlignLeft           AlignHCenter        AlignHCenter-prop:
 |                    | |image4|           | |image5|           | |image6|           |
 +--------------------+--------------------+--------------------+--------------------+
 | Horizontal         | AlignLeft          | AlignHCenter       | AlignHCenter       |
+.. _sdk_qtquick_grid_Vertical alignment  AlignTop            AlignTop            AlignVCenter-prop:
 | alignment          |                    |                    |                    |
 +--------------------+--------------------+--------------------+--------------------+
 | Vertical alignment | AlignTop           | AlignTop           | AlignVCenter       |
 +--------------------+--------------------+--------------------+--------------------+
 
 When mirroring the layout using either the attached property
-`LayoutMirroring::enabled </sdk/apps/qml/QtQuick/LayoutMirroring#enabled-prop>`__
+:ref:`LayoutMirroring::enabled <sdk_qtquick_layoutmirroring#enabled-prop>`
 or by setting the
-`layoutDirection </sdk/apps/qml/QtQuick/Grid#layoutDirection-prop>`__,
-the horizontal alignment of items will be mirrored as well. However, the
+:ref:`layoutDirection <sdk_qtquick_grid#layoutDirection-prop>`, the
+horizontal alignment of items will be mirrored as well. However, the
 property ``horizontalItemAlignment`` will remain unchanged. To query the
 effective horizontal alignment of items, use the read-only property
 ``effectiveHorizontalItemAlignment``.
 
 **See also**
-`Grid::layoutDirection </sdk/apps/qml/QtQuick/Grid#layoutDirection-prop>`__
-and `LayoutMirroring </sdk/apps/qml/QtQuick/LayoutMirroring/>`__.
+:ref:`Grid::layoutDirection <sdk_qtquick_grid#layoutDirection-prop>` and
+:ref:`LayoutMirroring <sdk_qtquick_layoutmirroring>`.
 
 | 
+
+.. _sdk_qtquick_grid_layoutDirection-prop:
 
 +--------------------------------------------------------------------------+
 |        \ layoutDirection : enumeration                                   |
@@ -287,21 +308,22 @@ Possible values are:
 
 -  Qt.LeftToRight (default) - Items are positioned from the top to
    bottom, and left to right. The flow direction is dependent on the
-   `Grid::flow </sdk/apps/qml/QtQuick/Grid#flow-prop>`__ property.
+   :ref:`Grid::flow <sdk_qtquick_grid#flow-prop>` property.
 -  Qt.RightToLeft - Items are positioned from the top to bottom, and
    right to left. The flow direction is dependent on the
-   `Grid::flow </sdk/apps/qml/QtQuick/Grid#flow-prop>`__ property.
+   :ref:`Grid::flow <sdk_qtquick_grid#flow-prop>` property.
 
 **See also**
-`Flow::layoutDirection </sdk/apps/qml/QtQuick/Flow#layoutDirection-prop>`__,
-`Row::layoutDirection </sdk/apps/qml/QtQuick/Row#layoutDirection-prop>`__,
-and `Qt Quick Examples - Right to
-Left </sdk/apps/qml/QtQuick/righttoleft/>`__.
+:ref:`Flow::layoutDirection <sdk_qtquick_flow#layoutDirection-prop>`,
+:ref:`Row::layoutDirection <sdk_qtquick_row#layoutDirection-prop>`, and `Qt
+Quick Examples - Right to Left </sdk/apps/qml/QtQuick/righttoleft/>`_ .
 
 | 
 
+.. _sdk_qtquick_grid_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ move : `Transition </sdk/apps/qml/QtQuick/Transition/>`__       |
+| :ref:` <>`\ move : `Transition <sdk_qtquick_transition>`               |
 +--------------------------------------------------------------------------+
 
 This property holds the transition to run for items that have moved
@@ -313,32 +335,32 @@ within the positioner. For a positioner, this applies to:
    in the positioner
 
 The transition can use the
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__ property to
-access more details about the item that is being moved. Note, however,
-that for this move transition, the
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__.targetIndexes
-and
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__.targetItems
-lists are only set when this transition is triggered by the addition of
-other items in the positioner; in other cases, these lists will be
-empty. See the
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__ documentation
-for more details and examples on using these transitions.
+:ref:`ViewTransition <sdk_qtquick_viewtransition>` property to access more
+details about the item that is being moved. Note, however, that for this
+move transition, the
+:ref:`ViewTransition <sdk_qtquick_viewtransition>`.targetIndexes and
+:ref:`ViewTransition <sdk_qtquick_viewtransition>`.targetItems lists are
+only set when this transition is triggered by the addition of other
+items in the positioner; in other cases, these lists will be empty. See
+the :ref:`ViewTransition <sdk_qtquick_viewtransition>` documentation for
+more details and examples on using these transitions.
 
 **Note:** In Qt Quick 1, this transition was applied to all items that
 were part of the positioner at the time of its creation. From `QtQuick
-2 </sdk/apps/qml/QtQuick/qtquick-index/>`__ onwards, positioners apply
-the `populate </sdk/apps/qml/QtQuick/Grid#populate-prop>`__ transition
-to these items instead.
+2 </sdk/apps/qml/QtQuick/qtquick-index/>`_  onwards, positioners apply
+the :ref:`populate <sdk_qtquick_grid#populate-prop>` transition to these
+items instead.
 
-**See also** `add </sdk/apps/qml/QtQuick/Grid#add-prop>`__,
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__, and `Qt
-Quick Examples - Positioners </sdk/apps/qml/QtQuick/positioners/>`__.
+**See also** :ref:`add <sdk_qtquick_grid#add-prop>`,
+:ref:`ViewTransition <sdk_qtquick_viewtransition>`, and `Qt Quick Examples
+- Positioners </sdk/apps/qml/QtQuick/positioners/>`_ .
 
 | 
 
+.. _sdk_qtquick_grid_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ populate : `Transition </sdk/apps/qml/QtQuick/Transition/>`__   |
+| :ref:` <>`\ populate : `Transition <sdk_qtquick_transition>`           |
 +--------------------------------------------------------------------------+
 
 This property holds the transition to be run for items that are part of
@@ -346,16 +368,18 @@ this positioner at the time of its creation. The transition is run when
 the positioner is first created.
 
 The transition can use the
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__ property to
-access more details about the item that is being added. See the
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__ documentation
-for more details and examples on using these transitions.
+:ref:`ViewTransition <sdk_qtquick_viewtransition>` property to access more
+details about the item that is being added. See the
+:ref:`ViewTransition <sdk_qtquick_viewtransition>` documentation for more
+details and examples on using these transitions.
 
-**See also** `add </sdk/apps/qml/QtQuick/Grid#add-prop>`__,
-`ViewTransition </sdk/apps/qml/QtQuick/ViewTransition/>`__, and `Qt
-Quick Examples - Positioners </sdk/apps/qml/QtQuick/positioners/>`__.
+**See also** :ref:`add <sdk_qtquick_grid#add-prop>`,
+:ref:`ViewTransition <sdk_qtquick_viewtransition>`, and `Qt Quick Examples
+- Positioners </sdk/apps/qml/QtQuick/positioners/>`_ .
 
 | 
+
+.. _sdk_qtquick_grid_rowSpacing-prop:
 
 +--------------------------------------------------------------------------+
 |        \ rowSpacing : qreal                                              |
@@ -369,10 +393,11 @@ By default this property is not set.
 
 This QML property was introduced in Qt 5.0.
 
-**See also**
-`columnSpacing </sdk/apps/qml/QtQuick/Grid#columnSpacing-prop>`__.
+**See also** :ref:`columnSpacing <sdk_qtquick_grid#columnSpacing-prop>`.
 
 | 
+
+.. _sdk_qtquick_grid_rows-prop:
 
 +--------------------------------------------------------------------------+
 |        \ rows : int                                                      |
@@ -384,6 +409,8 @@ If the grid does not have enough items to fill the specified number of
 rows, some rows will be of zero width.
 
 | 
+
+.. _sdk_qtquick_grid_spacing-prop:
 
 +--------------------------------------------------------------------------+
 |        \ spacing : qreal                                                 |
@@ -400,10 +427,12 @@ default), and the positioner on the right has a spacing of 6.
 
 |image7| |image8|
 
-**See also** `rows </sdk/apps/qml/QtQuick/Grid#rows-prop>`__ and
-`columns </sdk/apps/qml/QtQuick/Grid#columns-prop>`__.
+**See also** :ref:`rows <sdk_qtquick_grid#rows-prop>` and
+:ref:`columns <sdk_qtquick_grid#columns-prop>`.
 
 | 
+
+.. _sdk_qtquick_grid_verticalItemAlignment-prop:
 
 +--------------------------------------------------------------------------+
 |        \ verticalItemAlignment : enumeration                             |
@@ -412,10 +441,10 @@ default), and the positioner on the right has a spacing of 6.
 Sets the horizontal and vertical alignment of items in the Grid. By
 default, the items are vertically aligned to the top. Horizontal
 alignment follows the
-`layoutDirection </sdk/apps/qml/QtQuick/Grid#layoutDirection-prop>`__ of
-the Grid, for example when having a
-`layoutDirection </sdk/apps/qml/QtQuick/Grid#layoutDirection-prop>`__
-from LeftToRight, the items will be aligned on the left.
+:ref:`layoutDirection <sdk_qtquick_grid#layoutDirection-prop>` of the Grid,
+for example when having a
+:ref:`layoutDirection <sdk_qtquick_grid#layoutDirection-prop>` from
+LeftToRight, the items will be aligned on the left.
 
 The valid values for ``horizontalItemAlignment`` are,
 ``Grid.AlignLeft``, ``Grid.AlignRight`` and ``Grid.AlignHCenter``.
@@ -425,40 +454,44 @@ The valid values for ``verticalItemAlignment`` are ``Grid.AlignTop``,
 
 The below images show three examples of how to align items.
 
+.. _sdk_qtquick_grid_image9            image10           image11-prop:
+
 +--------------------+--------------------+--------------------+--------------------+
+.. _sdk_qtquick_grid_Horizontal          AlignLeft           AlignHCenter        AlignHCenter-prop:
 |                    | |image9|           | |image10|          | |image11|          |
 +--------------------+--------------------+--------------------+--------------------+
 | Horizontal         | AlignLeft          | AlignHCenter       | AlignHCenter       |
+.. _sdk_qtquick_grid_Vertical alignment  AlignTop            AlignTop            AlignVCenter-prop:
 | alignment          |                    |                    |                    |
 +--------------------+--------------------+--------------------+--------------------+
 | Vertical alignment | AlignTop           | AlignTop           | AlignVCenter       |
 +--------------------+--------------------+--------------------+--------------------+
 
 When mirroring the layout using either the attached property
-`LayoutMirroring::enabled </sdk/apps/qml/QtQuick/LayoutMirroring#enabled-prop>`__
+:ref:`LayoutMirroring::enabled <sdk_qtquick_layoutmirroring#enabled-prop>`
 or by setting the
-`layoutDirection </sdk/apps/qml/QtQuick/Grid#layoutDirection-prop>`__,
-the horizontal alignment of items will be mirrored as well. However, the
+:ref:`layoutDirection <sdk_qtquick_grid#layoutDirection-prop>`, the
+horizontal alignment of items will be mirrored as well. However, the
 property ``horizontalItemAlignment`` will remain unchanged. To query the
 effective horizontal alignment of items, use the read-only property
 ``effectiveHorizontalItemAlignment``.
 
 **See also**
-`Grid::layoutDirection </sdk/apps/qml/QtQuick/Grid#layoutDirection-prop>`__
-and `LayoutMirroring </sdk/apps/qml/QtQuick/LayoutMirroring/>`__.
+:ref:`Grid::layoutDirection <sdk_qtquick_grid#layoutDirection-prop>` and
+:ref:`LayoutMirroring <sdk_qtquick_layoutmirroring>`.
 
 | 
 
-.. |image0| image:: /media/sdk/apps/qml/QtQuick/Grid/images/gridLayout_example.png
-.. |image1| image:: /media/sdk/apps/qml/QtQuick/Grid/images/gridLayout_aligntopleft.png
-.. |image2| image:: /media/sdk/apps/qml/QtQuick/Grid/images/gridLayout_aligntop.png
-.. |image3| image:: /media/sdk/apps/qml/QtQuick/Grid/images/gridLayout_aligncenter.png
-.. |image4| image:: /media/sdk/apps/qml/QtQuick/Grid/images/gridLayout_aligntopleft.png
-.. |image5| image:: /media/sdk/apps/qml/QtQuick/Grid/images/gridLayout_aligntop.png
-.. |image6| image:: /media/sdk/apps/qml/QtQuick/Grid/images/gridLayout_aligncenter.png
-.. |image7| image:: /media/sdk/apps/qml/QtQuick/Grid/images/qml-grid-no-spacing.png
-.. |image8| image:: /media/sdk/apps/qml/QtQuick/Grid/images/qml-grid-spacing.png
-.. |image9| image:: /media/sdk/apps/qml/QtQuick/Grid/images/gridLayout_aligntopleft.png
-.. |image10| image:: /media/sdk/apps/qml/QtQuick/Grid/images/gridLayout_aligntop.png
-.. |image11| image:: /media/sdk/apps/qml/QtQuick/Grid/images/gridLayout_aligncenter.png
+.. |image0| image:: /mediasdk_qtquick_gridimages/gridLayout_example.png
+.. |image1| image:: /mediasdk_qtquick_gridimages/gridLayout_aligntopleft.png
+.. |image2| image:: /mediasdk_qtquick_gridimages/gridLayout_aligntop.png
+.. |image3| image:: /mediasdk_qtquick_gridimages/gridLayout_aligncenter.png
+.. |image4| image:: /mediasdk_qtquick_gridimages/gridLayout_aligntopleft.png
+.. |image5| image:: /mediasdk_qtquick_gridimages/gridLayout_aligntop.png
+.. |image6| image:: /mediasdk_qtquick_gridimages/gridLayout_aligncenter.png
+.. |image7| image:: /mediasdk_qtquick_gridimages/qml-grid-no-spacing.png
+.. |image8| image:: /mediasdk_qtquick_gridimages/qml-grid-spacing.png
+.. |image9| image:: /mediasdk_qtquick_gridimages/gridLayout_aligntopleft.png
+.. |image10| image:: /mediasdk_qtquick_gridimages/gridLayout_aligntop.png
+.. |image11| image:: /mediasdk_qtquick_gridimages/gridLayout_aligncenter.png
 

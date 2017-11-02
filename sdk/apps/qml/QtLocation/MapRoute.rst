@@ -1,3 +1,7 @@
+.. _sdk_qtlocation_maproute:
+QtLocation MapRoute
+===================
+
 The MapRoute type displays a Route on a Map.
 
 +---------------------+-------------------------+
@@ -9,49 +13,44 @@ The MapRoute type displays a Route on a Map.
 Properties
 ----------
 
--  ****`line </sdk/apps/qml/QtLocation/MapRoute#line-prop>`__****
+-  :ref:`line <sdk_qtlocation_maproute_line-prop>`
 
-   -  ****`line.width </sdk/apps/qml/QtLocation/MapRoute#line.width-prop>`__****
-      : int
-   -  ****`line.color </sdk/apps/qml/QtLocation/MapRoute#line.color-prop>`__****
-      : color
+   -  :ref:`line.width <sdk_qtlocation_maproute_line.width-prop>` :
+      int
+   -  :ref:`line.color <sdk_qtlocation_maproute_line.color-prop>` :
+      color
 
--  ****`route </sdk/apps/qml/QtLocation/MapRoute#route-prop>`__**** :
-   Route
+-  :ref:`route <sdk_qtlocation_maproute_route-prop>` : Route
 
 Detailed Description
 --------------------
 
-The `MapRoute </sdk/apps/qml/QtLocation/MapRoute/>`__ type displays a
-Route obtained through a
-`RouteModel </sdk/apps/qml/QtLocation/RouteModel/>`__ or other means, on
-the Map as a Polyline following the path of the Route.
+The :ref:`MapRoute <sdk_qtlocation_maproute>` type displays a Route
+obtained through a :ref:`RouteModel <sdk_qtlocation_routemodel>` or other
+means, on the Map as a Polyline following the path of the Route.
 
-`MapRoute </sdk/apps/qml/QtLocation/MapRoute/>`__ is really a
-`MapPolyline </sdk/apps/qml/QtLocation/MapPolyline/>`__, but with the
-path specified using the
-`route </sdk/apps/qml/QtLocation/MapRoute#route-prop>`__ property
-instead of directly in coordinates.
+:ref:`MapRoute <sdk_qtlocation_maproute>` is really a
+:ref:`MapPolyline <sdk_qtlocation_mappolyline>`, but with the path
+specified using the :ref:`route <sdk_qtlocation_maproute#route-prop>`
+property instead of directly in coordinates.
 
 By default, the route is displayed as a 1-pixel thick black line. This
 can be changed using the
-`line.width </sdk/apps/qml/QtLocation/MapRoute#line.width-prop>`__ and
-`line.color </sdk/apps/qml/QtLocation/MapRoute#line.color-prop>`__
-properties.
+:ref:`line.width <sdk_qtlocation_maproute#line.width-prop>` and
+:ref:`line.color <sdk_qtlocation_maproute#line.color-prop>` properties.
 
 Performance
 ~~~~~~~~~~~
 
 For notes about the performance on
-`MapRoute </sdk/apps/qml/QtLocation/MapRoute/>`__, refer to the
-documentation for
-`MapPolyline </sdk/apps/qml/QtLocation/MapPolyline/>`__.
+:ref:`MapRoute <sdk_qtlocation_maproute>`, refer to the documentation for
+:ref:`MapPolyline <sdk_qtlocation_mappolyline>`.
 
 Example Usage
 ~~~~~~~~~~~~~
 
-Here is how to draw a `route </sdk/apps/qml/QtLocation/Route/>`__ on a
-`map </sdk/apps/qml/QtLocation/Map/>`__:
+Here is how to draw a :ref:`route <sdk_qtlocation_route>` on a
+:ref:`map <sdk_qtlocation_map>`:
 
 .. code:: qml
 
@@ -80,9 +79,12 @@ Here is how to draw a `route </sdk/apps/qml/QtLocation/Route/>`__ on a
 Property Documentation
 ----------------------
 
+.. _sdk_qtlocation_maproute_**line group**-prop:
+
 +--------------------------------------------------------------------------+
 |        \ **line group**                                                  |
 +==========================================================================+
+.. _sdk_qtlocation_maproute_line.color-prop:
 |        \ line.width : int                                                |
 +--------------------------------------------------------------------------+
 |        \ line.color : color                                              |
@@ -98,8 +100,10 @@ For no line, use a width of 0 or a transparent color.
 
 | 
 
+.. _sdk_qtlocation_maproute_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ route : `Route </sdk/apps/qml/QtLocation/Route/>`__             |
+| :ref:` <>`\ route : `Route <sdk_qtlocation_route>`                     |
 +--------------------------------------------------------------------------+
 
 This property holds the route to be drawn which can be used to represent

@@ -1,3 +1,7 @@
+.. _sdk_qtqml_property_binding:
+QtQml Property Binding
+======================
+
 
 
 An object's property can be assigned a static value which stays constant
@@ -177,6 +181,6 @@ refer to ``this.width`` (or alternatively, ``rect.width``):
 
 **Note:** The value of ``this`` is not defined outside of property
 bindings. See `JavaScript Environment
-Restrictions </sdk/apps/qml/QtQml/qtqml-javascript-hostenvironment#javascript-environment-restrictions>`__
+Restrictions </sdk/apps/qml/QtQml/qtqml-javascript-hostenvironment/#javascript-environment-restrictions>`_ 
 for details.
 

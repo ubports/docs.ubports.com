@@ -1,3 +1,7 @@
+.. _sdk_qtquick_canvasimagedata:
+QtQuick CanvasImageData
+=======================
+
 Contains image pixel data in RGBA order
 
 +---------------------+----------------------+
@@ -7,35 +11,33 @@ Contains image pixel data in RGBA order
 Properties
 ----------
 
--  ****`data </sdk/apps/qml/QtQuick/CanvasImageData#data-prop>`__**** :
-   object
--  ****`height </sdk/apps/qml/QtQuick/CanvasImageData#height-prop>`__****
-   : int
--  ****`width </sdk/apps/qml/QtQuick/CanvasImageData#width-prop>`__****
-   : int
+-  :ref:`data <sdk_qtquick_canvasimagedata_data-prop>` : object
+-  :ref:`height <sdk_qtquick_canvasimagedata_height-prop>` : int
+-  :ref:`width <sdk_qtquick_canvasimagedata_width-prop>` : int
 
 Detailed Description
 --------------------
 
-The `CanvasImageData </sdk/apps/qml/QtQuick/CanvasImageData/>`__ object
-holds the image pixel data.
+The :ref:`CanvasImageData <sdk_qtquick_canvasimagedata>` object holds the
+image pixel data.
 
-The `CanvasImageData </sdk/apps/qml/QtQuick/CanvasImageData/>`__ object
-has the actual dimensions of the data stored in this object and holds
-the one-dimensional array containing the data in RGBA order, as integers
-in the range 0 to 255.
+The :ref:`CanvasImageData <sdk_qtquick_canvasimagedata>` object has the
+actual dimensions of the data stored in this object and holds the
+one-dimensional array containing the data in RGBA order, as integers in
+the range 0 to 255.
 
-**See also**
-`width </sdk/apps/qml/QtQuick/CanvasImageData#width-prop>`__,
-`height </sdk/apps/qml/QtQuick/CanvasImageData#height-prop>`__,
-`data </sdk/apps/qml/QtQuick/CanvasImageData#data-prop>`__,
-`Context2D::createImageData() </sdk/apps/qml/QtQuick/Context2D#createImageData-method>`__,
-`Context2D::getImageData() </sdk/apps/qml/QtQuick/Context2D#getImageData-method>`__,
+**See also** :ref:`width <sdk_qtquick_canvasimagedata#width-prop>`,
+:ref:`height <sdk_qtquick_canvasimagedata#height-prop>`,
+:ref:`data <sdk_qtquick_canvasimagedata#data-prop>`,
+:ref:`Context2D::createImageData() <sdk_qtquick_context2d#createImageData-method>`,
+:ref:`Context2D::getImageData() <sdk_qtquick_context2d#getImageData-method>`,
 and
-`Context2D::putImageData() </sdk/apps/qml/QtQuick/Context2D#putImageData-method>`__.
+:ref:`Context2D::putImageData() <sdk_qtquick_context2d#putImageData-method>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_canvasimagedata_data-prop:
 
 +--------------------------------------------------------------------------+
 |        \ data : object                                                   |
@@ -46,6 +48,8 @@ integers in the range 0 to 255.
 
 | 
 
+.. _sdk_qtquick_canvasimagedata_height-prop:
+
 +--------------------------------------------------------------------------+
 |        \ height : int                                                    |
 +--------------------------------------------------------------------------+
@@ -54,6 +58,8 @@ Holds the actual height dimension of the data in the ImageData object,
 in device pixels.
 
 | 
+
+.. _sdk_qtquick_canvasimagedata_width-prop:
 
 +--------------------------------------------------------------------------+
 |        \ width : int                                                     |

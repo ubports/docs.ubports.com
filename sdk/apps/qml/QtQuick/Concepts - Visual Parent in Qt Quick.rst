@@ -1,3 +1,7 @@
+.. _sdk_qtquick_concepts_-_visual_parent_in_qt_quick:
+QtQuick Concepts - Visual Parent in Qt Quick
+============================================
+
 
 
 .. rubric:: Visual Parent
@@ -10,34 +14,30 @@ The concept of the visual parent in Qt Quick is separate from, but
 related to, the concept of the *object parent* within the QObject parent
 hierarchy. All QML objects have an *object parent*, which is determined
 by the object hierarchy in which the object is declared. When working
-with the ``QtQuick`` module, the `Item </sdk/apps/qml/QtQuick/Item/>`__
-type is the base type for all visual items provided by this module, and
-it provides the concept of an additional *visual parent*, as defined by
-an item's `parent </sdk/apps/qml/QtQuick/Item#parent-prop>`__ property.
-Every item has a visual parent; if an item's
-`parent </sdk/apps/qml/QtQuick/Item#parent-prop>`__ property value is
-``null``, the item will not be rendered in the scene.
+with the :ref:``QtQuick`` module, the `Item <sdk_qtquick_item>` type is the
+base type for all visual items provided by this module, and it provides
+the concept of an additional *visual parent*, as defined by an item's
+:ref:`parent <sdk_qtquick_item#parent-prop>` property. Every item has a
+visual parent; if an item's :ref:`parent <sdk_qtquick_item#parent-prop>`
+property value is ``null``, the item will not be rendered in the scene.
 
-Any object assigned to an item's
-`data </sdk/apps/qml/QtQuick/Item#data-prop>`__ property becomes a child
-of the item within its QObject hierarchy, for memory management
-purposes. Additionally, if an object added to the data property is of
-the `Item </sdk/apps/qml/QtQuick/Item/>`__ type, it is also assigned to
-the `Item::children </sdk/apps/qml/QtQuick/Item#children-prop>`__
-property and becomes a child of the item within the visual scene
-hierarchy. (Most Qt Quick hierarchy crawling algorithms, especially the
-rendering algorithms, only consider the visual parent hierarchy.)
+Any object assigned to an item's :ref:`data <sdk_qtquick_item#data-prop>`
+property becomes a child of the item within its QObject hierarchy, for
+memory management purposes. Additionally, if an object added to the data
+property is of the :ref:`Item <sdk_qtquick_item>` type, it is also assigned
+to the :ref:`Item::children <sdk_qtquick_item#children-prop>` property and
+becomes a child of the item within the visual scene hierarchy. (Most Qt
+Quick hierarchy crawling algorithms, especially the rendering
+algorithms, only consider the visual parent hierarchy.)
 
-For convenience, the Item
-`data </sdk/apps/qml/QtQuick/Item#data-prop>`__ property is its default
-property. This means that any child item declared within an
-`Item </sdk/apps/qml/QtQuick/Item/>`__ object without being assigned to
-a specific property is automatically assigned to the
-`data </sdk/apps/qml/QtQuick/Item#data-prop>`__ property and becomes a
-child of the item as described above. So, the two code blocks below
-produce the same result, and you will almost always see the form shown
-below left, rather than the explicit ``data`` assignment shown below
-right:
+For convenience, the Item :ref:`data <sdk_qtquick_item#data-prop>` property
+is its default property. This means that any child item declared within
+an :ref:`Item <sdk_qtquick_item>` object without being assigned to a
+specific property is automatically assigned to the
+:ref:`data <sdk_qtquick_item#data-prop>` property and becomes a child of
+the item as described above. So, the two code blocks below produce the
+same result, and you will almost always see the form shown below left,
+rather than the explicit ``data`` assignment shown below right:
 
 +--------------------------------------+--------------------------------------+
 | .. code:: cpp                        | .. code:: cpp                        |
@@ -53,29 +53,28 @@ right:
 +--------------------------------------+--------------------------------------+
 
 An item's visual parent can be changed at any time by setting its
-`parent </sdk/apps/qml/QtQuick/Item#parent-prop>`__ property. Thus, an
-item's visual parent may not necessarily be the same as its object
-parent.
+:ref:`parent <sdk_qtquick_item#parent-prop>` property. Thus, an item's
+visual parent may not necessarily be the same as its object parent.
 
 When an item becomes the child of another item:
 
--  The child's `parent </sdk/apps/qml/QtQuick/Item#parent-prop>`__
-   refers to its parent item
--  The parent's `children </sdk/apps/qml/QtQuick/Item#children-prop>`__
-   and `childrenRect </sdk/apps/qml/QtQuick/Item#childrenRect.x-prop>`__
-   properties takes that child into account
+-  The child's :ref:`parent <sdk_qtquick_item#parent-prop>` refers to its
+   parent item
+-  The parent's :ref:`children <sdk_qtquick_item#children-prop>` and
+   :ref:`childrenRect <sdk_qtquick_item#childrenRect.x-prop>` properties
+   takes that child into account
 
 Declaring an item as a child of another does not automatically mean that
 the child item will be appropriately positioned or sized to fit within
 its parent. Some QML types may have in-built behaviors that affect the
 positioning of child items — for example, a
-`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#row>`__ object
+`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#row>`_  object
 automatically re-positions its children into a horizontal formation —
 but these are behaviors enforced by the types' own specific
 implementations. Additionally, a parent item will not automatically clip
 its children to visually contain them within the parent's visual bounds,
-unless its `clip </sdk/apps/qml/QtQuick/Item#clip-prop>`__ property is
-set to true.
+unless its :ref:`clip <sdk_qtquick_item#clip-prop>` property is set to
+true.
 
 The visual parent of an item may come under consideration in particular
 circumstances, as described in the sections below.
@@ -85,7 +84,7 @@ circumstances, as described in the sections below.
 
 As item coordinates are relative to the visual parent, they can be
 affected by changes to the visual hierarchy. See the `Visual
-Coordinates </sdk/apps/qml/QtQuick/qtquick-visualcanvas-coordinates/>`__
+Coordinates </sdk/apps/qml/QtQuick/qtquick-visualcanvas-coordinates/>`_ 
 concept page for more detail.
 
 .. rubric:: Stacking Order
@@ -125,15 +124,15 @@ children of the green rectangle will also be drawn beneath the blue
 rectangle and beneath any of the blue rectangle's children.
 
 Stacking order can be influenced with the
-`Item::z </sdk/apps/qml/QtQuick/Item#z-prop>`__ property. Z values below
-0 will stack below the parent, and if z values are assigned then
-siblings will stack in z-order (with creation order used to break ties).
-Z values only affect stacking compared to siblings and the parent item.
-If you have an item who is obscured by a subtree rooted above its parent
-item, no z value on that item will increase its stacking order to stack
-above that subtree. To stack that item above the other subtree you'll
-have to alter z values farther up in the hierarchy, or re-arrange the
-visual item hierarchy.
+:ref:`Item::z <sdk_qtquick_item#z-prop>` property. Z values below 0 will
+stack below the parent, and if z values are assigned then siblings will
+stack in z-order (with creation order used to break ties). Z values only
+affect stacking compared to siblings and the parent item. If you have an
+item who is obscured by a subtree rooted above its parent item, no z
+value on that item will increase its stacking order to stack above that
+subtree. To stack that item above the other subtree you'll have to alter
+z values farther up in the hierarchy, or re-arrange the visual item
+hierarchy.
 
 .. code:: qml
 

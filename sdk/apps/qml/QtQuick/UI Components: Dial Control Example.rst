@@ -1,10 +1,14 @@
+.. _sdk_qtquick_ui_components:_dial_control_example:
+QtQuick UI Components: Dial Control Example
+===========================================
+
 
 
 This example shows how to create a dial-type control. It combines
-`Image </sdk/apps/qml/QtQuick/imageelements#image>`__ elements with
-`Rotation </sdk/apps/qml/QtQuick/Rotation/>`__ transforms and
-`SpringAnimation </sdk/apps/qml/QtQuick/SpringAnimation/>`__ behaviors
-to produce an interactive speedometer-type dial.
+`Image </sdk/apps/qml/QtQuick/imageelements/#image>`_  elements with
+:ref:`Rotation <sdk_qtquick_rotation>` transforms and
+:ref:`SpringAnimation <sdk_qtquick_springanimation>` behaviors to produce
+an interactive speedometer-type dial.
 
 |image0|
 

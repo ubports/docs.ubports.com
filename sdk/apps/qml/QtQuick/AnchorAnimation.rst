@@ -1,39 +1,43 @@
+.. _sdk_qtquick_anchoranimation:
+QtQuick AnchorAnimation
+=======================
+
 Animates changes in anchor values
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtQuick 2.4                   |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Animation </sdk/apps/qml/QtQuick/An |
-|                                      | imation/>`__                         |
+| Inherits:                            | :ref:`Animation <sdk_qtquick_animation>`_ |
+|                                      | _                                    |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`duration </sdk/apps/qml/QtQuick/AnchorAnimation#duration-prop>`__****
-   : int
--  ****`easing </sdk/apps/qml/QtQuick/AnchorAnimation#easing-prop>`__****
+-  :ref:`duration <sdk_qtquick_anchoranimation_duration-prop>` :
+   int
+-  :ref:`easing <sdk_qtquick_anchoranimation_easing-prop>`
 
-   -  ****`easing.type </sdk/apps/qml/QtQuick/AnchorAnimation#easing.type-prop>`__****
+   -  :ref:`easing.type <sdk_qtquick_anchoranimation_easing.type-prop>`
       : enumeration
-   -  ****`easing.amplitude </sdk/apps/qml/QtQuick/AnchorAnimation#easing.amplitude-prop>`__****
+   -  :ref:`easing.amplitude <sdk_qtquick_anchoranimation_easing.amplitude-prop>`
       : real
-   -  ****`easing.overshoot </sdk/apps/qml/QtQuick/AnchorAnimation#easing.overshoot-prop>`__****
+   -  :ref:`easing.overshoot <sdk_qtquick_anchoranimation_easing.overshoot-prop>`
       : real
-   -  ****`easing.period </sdk/apps/qml/QtQuick/AnchorAnimation#easing.period-prop>`__****
+   -  :ref:`easing.period <sdk_qtquick_anchoranimation_easing.period-prop>`
       : real
 
--  ****`targets </sdk/apps/qml/QtQuick/AnchorAnimation#targets-prop>`__****
-   : list<Item>
+-  :ref:`targets <sdk_qtquick_anchoranimation_targets-prop>` :
+   list<Item>
 
 Detailed Description
 --------------------
 
-`AnchorAnimation </sdk/apps/qml/QtQuick/AnchorAnimation/>`__ is used to
-animate an anchor change.
+:ref:`AnchorAnimation <sdk_qtquick_anchoranimation>` is used to animate an
+anchor change.
 
 In the following snippet we animate the addition of a right anchor to a
-`Rectangle </sdk/apps/qml/QtQuick/Rectangle/>`__:
+:ref:`Rectangle <sdk_qtquick_rectangle>`:
 
 .. code:: qml
 
@@ -57,28 +61,28 @@ In the following snippet we animate the addition of a right anchor to a
         Component.onCompleted: container.state = "reanchored"
     }
 
-When an `AnchorAnimation </sdk/apps/qml/QtQuick/AnchorAnimation/>`__ is
-used in a
-`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch#transition>`__,
-it will animate any
-`AnchorChanges </sdk/apps/qml/QtQuick/AnchorChanges/>`__ that have
-occurred during the state change. This can be overridden by setting a
-specific target item using the
-`AnchorChanges.target </sdk/apps/qml/QtQuick/AnchorChanges#target-prop>`__
+When an :ref:`AnchorAnimation <sdk_qtquick_anchoranimation>` is used in a
+`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch/#transition>`_ ,
+it will animate any :ref:`AnchorChanges <sdk_qtquick_anchorchanges>` that
+have occurred during the state change. This can be overridden by setting
+a specific target item using the
+:ref:`AnchorChanges.target <sdk_qtquick_anchorchanges#target-prop>`
 property.
 
-**Note:** `AnchorAnimation </sdk/apps/qml/QtQuick/AnchorAnimation/>`__
-can only be used in a
-`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch#transition>`__
+**Note:** :ref:`AnchorAnimation <sdk_qtquick_anchoranimation>` can only be
+used in a
+`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch/#transition>`_ 
 and in conjunction with an AnchorChange. It cannot be used in behaviors
 and other types of animations.
 
 **See also** `Animation and Transitions in Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`__
-and `AnchorChanges </sdk/apps/qml/QtQuick/AnchorChanges/>`__.
+Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`_ 
+and :ref:`AnchorChanges <sdk_qtquick_anchorchanges>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_anchoranimation_duration-prop:
 
 +--------------------------------------------------------------------------+
 |        \ duration : int                                                  |
@@ -90,13 +94,18 @@ The default value is 250.
 
 | 
 
+.. _sdk_qtquick_anchoranimation_**easing group**-prop:
+
 +--------------------------------------------------------------------------+
 |        \ **easing group**                                                |
 +==========================================================================+
+.. _sdk_qtquick_anchoranimation_easing.amplitude-prop:
 |        \ easing.type : enumeration                                       |
 +--------------------------------------------------------------------------+
+.. _sdk_qtquick_anchoranimation_easing.overshoot-prop:
 |        \ easing.amplitude : real                                         |
 +--------------------------------------------------------------------------+
+.. _sdk_qtquick_anchoranimation_easing.period-prop:
 |        \ easing.overshoot : real                                         |
 +--------------------------------------------------------------------------+
 |        \ easing.period : real                                            |
@@ -113,21 +122,22 @@ default easing curve is Linear.
     AnchorAnimation { easing.type: Easing.InOutQuad }
 
 See the
-`PropertyAnimation::easing.type </sdk/apps/qml/QtQuick/PropertyAnimation#easing.type-prop>`__
+:ref:`PropertyAnimation::easing.type <sdk_qtquick_propertyanimation#easing.type-prop>`
 documentation for information about the different types of easing
 curves.
 
 | 
 
+.. _sdk_qtquick_anchoranimation_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ targets : list<`Item </sdk/apps/qml/QtQuick/Item/>`__>          |
+| :ref:` <>`\ targets : list<`Item <sdk_qtquick_item>`>                     |
 +--------------------------------------------------------------------------+
 
 The items to reanchor.
 
 If no targets are specified all
-`AnchorChanges </sdk/apps/qml/QtQuick/AnchorChanges/>`__ will be
-animated by the
-`AnchorAnimation </sdk/apps/qml/QtQuick/AnchorAnimation/>`__.
+:ref:`AnchorChanges <sdk_qtquick_anchorchanges>` will be animated by the
+:ref:`AnchorAnimation <sdk_qtquick_anchoranimation>`.
 
 | 

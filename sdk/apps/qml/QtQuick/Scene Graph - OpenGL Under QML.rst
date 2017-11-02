@@ -1,3 +1,7 @@
+.. _sdk_qtquick_scene_graph_-_opengl_under_qml:
+QtQuick Scene Graph - OpenGL Under QML
+======================================
+
 
 
 |image0|
@@ -16,8 +20,8 @@ QQuickWindow::afterRendering() signal.
 In this example, we will also see how it is possible to have values that
 are exposed to QML which affect the OpenGL rendering. We animate the
 threshold value using a
-`NumberAnimation </sdk/apps/qml/QtQuick/NumberAnimation/>`__ in the QML
-file and this value is used by the OpenGL shader program that draws the
+:ref:`NumberAnimation <sdk_qtquick_numberanimation>` in the QML file and
+this value is used by the OpenGL shader program that draws the
 squircles.
 
 .. code:: cpp
@@ -274,8 +278,7 @@ export the ``Squircle`` class to QML using the qmlRegisterType() macro.
 
 We import the Squircle QML type with the name we registered in the
 ``main()`` function. We then instantiate it and create a running
-`NumberAnimation </sdk/apps/qml/QtQuick/NumberAnimation/>`__ on its
-``t`` property.
+:ref:`NumberAnimation <sdk_qtquick_numberanimation>` on its ``t`` property.
 
 .. code:: qml
 

@@ -1,3 +1,7 @@
+.. _sdk_qtorganizer_todoprogress:
+QtOrganizer TodoProgress
+========================
+
 The TodoProgress element contains information about the progress of a
 todo item.
 
@@ -8,31 +12,33 @@ todo item.
 Properties
 ----------
 
--  ****`finishedDateTime </sdk/apps/qml/QtOrganizer/TodoProgress#finishedDateTime-prop>`__****
+-  :ref:`finishedDateTime <sdk_qtorganizer_todoprogress_finishedDateTime-prop>`
    : date
--  ****`percentageComplete </sdk/apps/qml/QtOrganizer/TodoProgress#percentageComplete-prop>`__****
+-  :ref:`percentageComplete <sdk_qtorganizer_todoprogress_percentageComplete-prop>`
    : int
--  ****`status </sdk/apps/qml/QtOrganizer/TodoProgress#status-prop>`__****
-   : enumeration
+-  :ref:`status <sdk_qtorganizer_todoprogress_status-prop>` :
+   enumeration
 
 Signals
 -------
 
--  ****`onDetailChanged </sdk/apps/qml/QtOrganizer/TodoProgress#onDetailChanged-signal>`__****\ ()
+-  :ref:`onDetailChanged <sdk_qtorganizer_todoprogress_onDetailChanged-signal>`\ ()
 
 Detailed Description
 --------------------
 
 The following fields are supported:
 
--  `TodoProgress </sdk/apps/qml/QtOrganizer/TodoProgress/>`__.FieldStatus
--  `TodoProgress </sdk/apps/qml/QtOrganizer/TodoProgress/>`__.FieldPercentage
--  `TodoProgress </sdk/apps/qml/QtOrganizer/TodoProgress/>`__.FieldFinishedDateTime
+-  :ref:`TodoProgress <sdk_qtorganizer_todoprogress>`.FieldStatus
+-  :ref:`TodoProgress <sdk_qtorganizer_todoprogress>`.FieldPercentage
+-  :ref:`TodoProgress <sdk_qtorganizer_todoprogress>`.FieldFinishedDateTime
 
 **See also** QOrganizerTodoProgress.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtorganizer_todoprogress_finishedDateTime-prop:
 
 +--------------------------------------------------------------------------+
 |        \ finishedDateTime : date                                         |
@@ -43,6 +49,8 @@ at which the todo item was completed.
 
 | 
 
+.. _sdk_qtorganizer_todoprogress_percentageComplete-prop:
+
 +--------------------------------------------------------------------------+
 |        \ percentageComplete : int                                        |
 +--------------------------------------------------------------------------+
@@ -52,6 +60,8 @@ percentage of the todo item.
 
 | 
 
+.. _sdk_qtorganizer_todoprogress_status-prop:
+
 +--------------------------------------------------------------------------+
 |        \ status : enumeration                                            |
 +--------------------------------------------------------------------------+
@@ -59,20 +69,22 @@ percentage of the todo item.
 This property holds the value which describes the current completion
 status of the todo item. The value can be one of:
 
--  `TodoProgress </sdk/apps/qml/QtOrganizer/TodoProgress/>`__.NotStarted
--  `TodoProgress </sdk/apps/qml/QtOrganizer/TodoProgress/>`__.InProgress
--  `TodoProgress </sdk/apps/qml/QtOrganizer/TodoProgress/>`__.Complete
+-  :ref:`TodoProgress <sdk_qtorganizer_todoprogress>`.NotStarted
+-  :ref:`TodoProgress <sdk_qtorganizer_todoprogress>`.InProgress
+-  :ref:`TodoProgress <sdk_qtorganizer_todoprogress>`.Complete
 
 | 
 
 Signal Documentation
 --------------------
 
+.. _sdk_qtorganizer_todoprogress_onDetailChanged()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ onDetailChanged()                                               |
 +--------------------------------------------------------------------------+
 
 **See also**
-`Detail::onDetailChanged </sdk/apps/qml/QtOrganizer/Detail#onDetailChanged-signal>`__.
+:ref:`Detail::onDetailChanged <sdk_qtorganizer_detail#onDetailChanged-signal>`.
 
 | 

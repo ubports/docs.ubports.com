@@ -1,3 +1,7 @@
+.. _sdk_scopejs_scopemetadata:
+ScopeJS ScopeMetadata
+=====================
+
 
 Holds scope attributes such as name, description, icon etc
 

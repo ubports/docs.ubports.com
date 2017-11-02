@@ -1,3 +1,7 @@
+.. _sdk_qtorganizer_parent:
+QtOrganizer Parent
+==================
+
 The Parent element contains information about the event or todo that
 generated this item.
 
@@ -8,26 +12,25 @@ generated this item.
 Properties
 ----------
 
--  ****`isDetached </sdk/apps/qml/QtOrganizer/Parent#isDetached-prop>`__****
-   : string
--  ****`originalDate </sdk/apps/qml/QtOrganizer/Parent#originalDate-prop>`__****
-   : date
--  ****`parentId </sdk/apps/qml/QtOrganizer/Parent#parentId-prop>`__****
-   : string
+-  :ref:`isDetached <sdk_qtorganizer_parent_isDetached-prop>` :
+   string
+-  :ref:`originalDate <sdk_qtorganizer_parent_originalDate-prop>` :
+   date
+-  :ref:`parentId <sdk_qtorganizer_parent_parentId-prop>` : string
 
 Signals
 -------
 
--  ****`onDetailChanged </sdk/apps/qml/QtOrganizer/Parent#onDetailChanged-signal>`__****\ ()
+-  :ref:`onDetailChanged <sdk_qtorganizer_parent_onDetailChanged-signal>`\ ()
 
 Methods
 -------
 
 -  bool
-   ****`setValue </sdk/apps/qml/QtOrganizer/Parent#setValue-method>`__****\ (field,
+   **:ref:`setValue <sdk_qtorganizer_parent#setValue-method>`**\ (field,
    value)
 -  variant
-   ****`value </sdk/apps/qml/QtOrganizer/Parent#value-method>`__****\ (field)
+   **:ref:`value <sdk_qtorganizer_parent#value-method>`**\ (field)
 
 Detailed Description
 --------------------
@@ -42,6 +45,8 @@ The following fields are supported:
 Property Documentation
 ----------------------
 
+.. _sdk_qtorganizer_parent_isDetached-prop:
+
 +--------------------------------------------------------------------------+
 |        \ isDetached : string                                             |
 +--------------------------------------------------------------------------+
@@ -50,6 +55,8 @@ This property holds if the event is a detached recurrence or not.
 
 | 
 
+.. _sdk_qtorganizer_parent_originalDate-prop:
+
 +--------------------------------------------------------------------------+
 |        \ originalDate : date                                             |
 +--------------------------------------------------------------------------+
@@ -57,6 +64,8 @@ This property holds if the event is a detached recurrence or not.
 This property holds the original date of this instance origin item.
 
 | 
+
+.. _sdk_qtorganizer_parent_parentId-prop:
 
 +--------------------------------------------------------------------------+
 |        \ parentId : string                                               |
@@ -70,32 +79,37 @@ or todo.
 Signal Documentation
 --------------------
 
+.. _sdk_qtorganizer_parent_onDetailChanged()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ onDetailChanged()                                               |
 +--------------------------------------------------------------------------+
 
 **See also**
-`Detail::onDetailChanged </sdk/apps/qml/QtOrganizer/Detail#onDetailChanged-signal>`__.
+:ref:`Detail::onDetailChanged <sdk_qtorganizer_detail#onDetailChanged-signal>`.
 
 | 
 
 Method Documentation
 --------------------
 
+.. _sdk_qtorganizer_parent_bool setValue-method:
+
 +--------------------------------------------------------------------------+
 |        \ bool setValue(field, value)                                     |
 +--------------------------------------------------------------------------+
 
 **See also**
-`Detail::setValue </sdk/apps/qml/QtOrganizer/Detail#setValue-method>`__.
+:ref:`Detail::setValue <sdk_qtorganizer_detail#setValue-method>`.
 
 | 
+
+.. _sdk_qtorganizer_parent_variant value-method:
 
 +--------------------------------------------------------------------------+
 |        \ variant value(field)                                            |
 +--------------------------------------------------------------------------+
 
-**See also**
-`Detail::value </sdk/apps/qml/QtOrganizer/Detail#value-method>`__.
+**See also** :ref:`Detail::value <sdk_qtorganizer_detail#value-method>`.
 
 | 

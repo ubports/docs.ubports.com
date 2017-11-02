@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_creating_a_sensor_plugin:
+QtSensors Creating a sensor plugin
+==================================
+
 
 
 .. rubric:: How a Sensor Plugin is Loaded

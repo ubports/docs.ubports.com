@@ -1,5 +1,9 @@
+.. _sdk_unity_scopes_qt_qpreviewreply:
+unity.scopes.qt QPreviewReply
+=============================
+
 Allows the results of a preview to be sent to the preview requester.
-`More... </sdk/scopes/cpp/unity.scopes.qt/QPreviewReply#details>`__
+:ref:`More... <sdk_unity_scopes_qt_qpreviewreply#details>`
 
 ``#include <unity/scopes/qt/QPreviewReply.h>``
 
@@ -14,7 +18,7 @@ Inheritance diagram for unity::scopes::qt::QPreviewReply:
 
 bool 
 
-`register\_layout </sdk/scopes/cpp/unity.scopes.qt/QPreviewReply#abe5967042a22327f6ec9d5a1f595968c>`__
+:ref:`register\_layout <sdk_unity_scopes_qt_qpreviewreply#abe5967042a22327f6ec9d5a1f595968c>`
 (QColumnLayoutList const &layouts)
 
  
@@ -25,7 +29,7 @@ bool 
 
 bool 
 
-`push </sdk/scopes/cpp/unity.scopes.qt/QPreviewReply#a87571e9d961382e967ae6f12560bd755>`__
+:ref:`push <sdk_unity_scopes_qt_qpreviewreply#a87571e9d961382e967ae6f12560bd755>`
 (QPreviewWidgetList const &widget\_list)
 
  
@@ -36,7 +40,7 @@ bool 
 
 bool 
 
-`push </sdk/scopes/cpp/unity.scopes.qt/QPreviewReply#a31c34e45f1eab196c74d3c314881e147>`__
+:ref:`push <sdk_unity_scopes_qt_qpreviewreply#a31c34e45f1eab196c74d3c314881e147>`
 (QString const &key, QVariant const &value)
 
  
@@ -98,7 +102,7 @@ Returns
 Registers a list of column layouts for the current preview.
 
 Layouts must be registered before pushing a
-`unity::scopes::PreviewWidgetList </sdk/scopes/cpp/unity.scopes#aed3b7b1daf2e49d0a820ef931caa792d>`__,
+:ref:`unity::scopes::PreviewWidgetList <sdk_unity_scopes#aed3b7b1daf2e49d0a820ef931caa792d>`,
 and must be registered only once.
 
 Returns
@@ -106,9 +110,9 @@ Returns
     cancelled.
 
 Exceptions
-    +-------------------------+--------------------------------------------------------------------------------------------------------------------------------------+
-    | unity::LogicException   | `register\_layout() </sdk/scopes/cpp/unity.scopes.qt/QPreviewReply#abe5967042a22327f6ec9d5a1f595968c>`__ is called more than once.   |
-    +-------------------------+--------------------------------------------------------------------------------------------------------------------------------------+
+    +-------------------------+--------------------------------------------------------------------------------------------------------------------------+
+    | unity::LogicException   | :ref:`register\_layout() <sdk_unity_scopes_qt_qpreviewreply#abe5967042a22327f6ec9d5a1f595968c>` is called more than once.   |
+    +-------------------------+--------------------------------------------------------------------------------------------------------------------------+
 
-.. |Inheritance graph| image:: /media/sdk/scopes/cpp/unity.scopes.qt/QPreviewReply/classunity_1_1scopes_1_1qt_1_1_q_preview_reply__inherit__graph.png
+.. |Inheritance graph| image:: /mediasdk_unity_scopes_qt_qpreviewreplyclassunity_1_1scopes_1_1qt_1_1_q_preview_reply__inherit__graph.png
 

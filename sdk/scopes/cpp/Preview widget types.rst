@@ -1,3 +1,7 @@
+.. _sdk_preview_widget_types:
+Preview widget types
+====================
+
 
 .. rubric::         Recognized preview widget types
    :name: recognized-preview-widget-types
@@ -34,7 +38,7 @@ List of attributes:
    ``length`` (optional integer specifying the track length in seconds)
 
 You can construct composite attributes with
-`unity::scopes::VariantBuilder </sdk/scopes/cpp/unity.scopes.VariantBuilder/>`__:
+`unity::scopes::VariantBuilder </sdk/scopes/cpp/unity.scopes.VariantBuilder/>`_ :
 
 {
 
@@ -80,7 +84,7 @@ List of attributes:
 -  ``screenshot`` A URI pointing to a screenshot of the video (optional)
 -  ``share-data`` An optional dictionary for making this video shareable
    with Content Hub. See `content
-   sharing </sdk/scopes/cpp/previewwidgets#contentsharing>`__ below.
+   sharing </sdk/scopes/cpp/previewwidgets/#contentsharing>`_  below.
 
 {
 
@@ -106,7 +110,7 @@ List of attributes:
    cannot be retrieved (default: none)
 -  ``share-data`` An optional dictionary for making this image shareable
    with Content Hub. See `content
-   sharing </sdk/scopes/cpp/previewwidgets#contentsharing>`__ below.
+   sharing </sdk/scopes/cpp/previewwidgets/#contentsharing>`_  below.
 
 {
 
@@ -136,7 +140,7 @@ List of attributes:
 
 PreviewWidget w1("gal", "gallery");
 
-`VariantArray </sdk/scopes/cpp/unity.scopes#aa3bf32d584efd902bca79698a07dd934>`__
+:ref:`VariantArray <sdk_unity_scopes#aa3bf32d584efd902bca79698a07dd934>`
 arr;
 
 arr.push\_back(Variant("http://example.com/image1.jpg"));
@@ -198,7 +202,7 @@ List of attributes:
    (mandatory string), and ``icon`` (optional URI).
 
 You can construct composite attributes with
-`unity::scopes::VariantBuilder </sdk/scopes/cpp/unity.scopes.VariantBuilder/>`__:
+`unity::scopes::VariantBuilder </sdk/scopes/cpp/unity.scopes.VariantBuilder/>`_ :
 
 {
 
@@ -263,7 +267,7 @@ List of attributes:
 
 PreviewWidget w1("download", "progress");
 
-`VariantMap </sdk/scopes/cpp/unity.scopes#ad5d8ccfa11a327fca6f3e4cee11f4c10>`__
+:ref:`VariantMap <sdk_unity_scopes#ad5d8ccfa11a327fca6f3e4cee11f4c10>`
 tuple;
 
 tuple["dbus-name"] = "com.canonical.DownloadManager";
@@ -307,7 +311,7 @@ require them to be filled in.
 When a user presses the "Send" button, the scope receives a preview
 action activation with the id ``"rated"``. The actual rating and/or
 review can be accessed via
-`unity::scopes::ActionMetadata::scope\_data </sdk/scopes/cpp/unity.scopes.ActionMetadata#a34777e687ce700a7b6313f3dad6d3340>`__.
+`unity::scopes::ActionMetadata::scope\_data </sdk/scopes/cpp/unity.scopes.ActionMetadata/#a34777e687ce700a7b6313f3dad6d3340>`_ .
 The scope data will be a VariantMap with the following keys:
 
 -  ``"rating"`` - a double holding the number of stars the user selected
@@ -394,7 +398,7 @@ List of attributes:
    ``review`` (optional string).
 
 You can construct composite attributes with
-`unity::scopes::VariantBuilder </sdk/scopes/cpp/unity.scopes.VariantBuilder/>`__:
+`unity::scopes::VariantBuilder </sdk/scopes/cpp/unity.scopes.VariantBuilder/>`_ :
 
 {
 
@@ -439,7 +443,7 @@ input box along with "Send" button.
 When a user presses the "Send" button, the scope receives a preview
 action activation with the id ``"commented"``. The actual comment can be
 accessed via
-`unity::scopes::ActionMetadata::scope\_data </sdk/scopes/cpp/unity.scopes.ActionMetadata#a34777e687ce700a7b6313f3dad6d3340>`__.
+`unity::scopes::ActionMetadata::scope\_data </sdk/scopes/cpp/unity.scopes.ActionMetadata/#a34777e687ce700a7b6313f3dad6d3340>`_ .
 The scope data will be a VariantMap with the ``"comment"`` field holding
 the text entered by the user.
 
@@ -536,19 +540,19 @@ PreviewWidget table("details", "table");
 
 table.add\_attribute\_value("title", Variant("This is a table widget"));
 
-`VariantArray </sdk/scopes/cpp/unity.scopes#aa3bf32d584efd902bca79698a07dd934>`__
+:ref:`VariantArray <sdk_unity_scopes#aa3bf32d584efd902bca79698a07dd934>`
 values {
 
-Variant{\ `VariantArray </sdk/scopes/cpp/unity.scopes#aa3bf32d584efd902bca79698a07dd934>`__\ {Variant{\_("Version
+Variant{\ :ref:`VariantArray <sdk_unity_scopes#aa3bf32d584efd902bca79698a07dd934>`\ {Variant{\_("Version
 number")}, Variant{"0.83b"}}},
 
-Variant{\ `VariantArray </sdk/scopes/cpp/unity.scopes#aa3bf32d584efd902bca79698a07dd934>`__\ {Variant{\_("Last
+Variant{\ :ref:`VariantArray <sdk_unity_scopes#aa3bf32d584efd902bca79698a07dd934>`\ {Variant{\_("Last
 updated")}, Variant{"2015-01-15"}}},
 
-Variant{\ `VariantArray </sdk/scopes/cpp/unity.scopes#aa3bf32d584efd902bca79698a07dd934>`__\ {Variant{\_("First
+Variant{\ :ref:`VariantArray <sdk_unity_scopes#aa3bf32d584efd902bca79698a07dd934>`\ {Variant{\_("First
 released")}, Variant{"2013-12-16"}}},
 
-Variant{\ `VariantArray </sdk/scopes/cpp/unity.scopes#aa3bf32d584efd902bca79698a07dd934>`__\ {Variant{\_("Size")},
+Variant{\ :ref:`VariantArray <sdk_unity_scopes#aa3bf32d584efd902bca79698a07dd934>`\ {Variant{\_("Size")},
 Variant{"11.3 MiB"}}},
 
 };
@@ -579,7 +583,7 @@ PreviewWidget image("img", "image");
 image.add\_attribute\_value("source",
 Variant("http://www.example.org/graphics.png"));
 
-`VariantMap </sdk/scopes/cpp/unity.scopes#ad5d8ccfa11a327fca6f3e4cee11f4c10>`__
+:ref:`VariantMap <sdk_unity_scopes#ad5d8ccfa11a327fca6f3e4cee11f4c10>`
 share\_data;
 
 share\_data["uri"] =

@@ -1,5 +1,9 @@
+.. _sdk_autopilot_matchers_eventually:
+autopilot.matchers Eventually
+=============================
+
  *class* ``autopilot.matchers.``\ ``Eventually``\ (*matcher*,
-*\*\*kwargs*)\ ` </sdk/autopilot/python/autopilot.matchers/Eventually#Eventually>`__\ ` <#autopilot.matchers.Eventually>`__
+*\*\*kwargs*)\ :ref:` <sdk_autopilot_matchers_eventually#Eventually>`\ ` <#autopilot.matchers.Eventually>`
     Asserts that a value will eventually equal a given Matcher object.
 
     This matcher wraps another testtools matcher object. It makes that

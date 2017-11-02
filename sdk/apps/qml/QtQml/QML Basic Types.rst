@@ -1,10 +1,14 @@
+.. _sdk_qtqml_qml_basic_types:
+QtQml QML Basic Types
+=====================
+
 
 
 QML supports a number of basic types.
 
 A *basic type* is one that refers to a simple value, such as an ``int``
 or a ``string``. This contrasts with a `QML Object
-Types </sdk/apps/qml/QtQml/qtqml-typesystem-topic#qml-object-types>`__,
+Types </sdk/apps/qml/QtQml/qtqml-typesystem-topic/#qml-object-types>`_ ,
 which refers to an object with properties, signals, methods and so on.
 Unlike an object type, a basic type cannot be used to declare QML
 objects: it is not possible, for example, to declare an ``int{}`` object
@@ -22,7 +26,7 @@ Basic types can be used to refer to:
 
 Some basic types are supported by the engine by default and do not
 require an `import
-statement </sdk/apps/qml/QtQml/qtqml-syntax-imports/>`__ to be used,
+statement </sdk/apps/qml/QtQml/qtqml-syntax-imports/>`_  to be used,
 while others do require the client to import the module which provides
 them. All of the basic types listed below may be used as a ``property``
 type in a QML document, with the following exceptions:
@@ -76,8 +80,8 @@ below:
 |                                      | attributes                           |
 +--------------------------------------+--------------------------------------+
 
-The `Qt </sdk/apps/qml/QtQml/Qt/>`__ global object provides useful
-functions for manipulating values of basic types.
+The :ref:`Qt <sdk_qtqml_qt>` global object provides useful functions for
+manipulating values of basic types.
 
 Currently only QML modules which are provided by Qt may provide their
 own basic types, however this may change in future releases of Qt QML.
@@ -90,7 +94,7 @@ import that module in their QML documents.
 Some basic types have properties: for example, the font type has
 ``pixelSize``, ``family`` and ``b`` properties. Unlike properties of
 `object
-types </sdk/apps/qml/QtQml/qtqml-typesystem-topic#qml-object-types>`__,
+types </sdk/apps/qml/QtQml/qtqml-typesystem-topic/#qml-object-types>`_ ,
 properties of basic types do not provide their own property change
 signals. It is only possible to create a property change signal handler
 for the basic type property itself:
@@ -126,10 +130,10 @@ the property itself changes. Take the following code, for example:
     }
 
 In contrast, properties of an `object
-type </sdk/apps/qml/QtQml/qtqml-typesystem-topic#qml-object-types>`__
+type </sdk/apps/qml/QtQml/qtqml-typesystem-topic/#qml-object-types>`_ 
 emit their own property change signals, and a property change signal
 handler for an object-type property is only invoked when the property is
 reassigned to a different object value.
 
 **See also** `The QML Type
-System </sdk/apps/qml/QtQml/qtqml-typesystem-topic/>`__.
+System </sdk/apps/qml/QtQml/qtqml-typesystem-topic/>`_ .

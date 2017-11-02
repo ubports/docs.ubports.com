@@ -1,27 +1,30 @@
+.. _sdk_ubuntu_components_themes_palette:
+Ubuntu.Components.Themes Palette
+================================
+
 Provides the palette of colors from the theme that widgets use to draw
 themselves.
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import Ubuntu.Components.Themes 1.3  |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `QtObject </sdk/apps/qml/QtQml/QtObj |
-|                                      | ect/>`__                             |
+| Inherits:                            | :ref:`QtObject <sdk_qtqml_qtobject>` |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`disabled </sdk/apps/qml/Ubuntu.Components/Themes.Palette#disabled-prop>`__****
+-  `disabled </sdk/apps/qml/Ubuntu.Components/Themes.Palette/_disabled-prop>`_ 
    : PaletteValues
--  ****`focused </sdk/apps/qml/Ubuntu.Components/Themes.Palette#focused-prop>`__****
+-  `focused </sdk/apps/qml/Ubuntu.Components/Themes.Palette/_focused-prop>`_ 
    : PaletteValues
--  ****`highlighted </sdk/apps/qml/Ubuntu.Components/Themes.Palette#highlighted-prop>`__****
+-  `highlighted </sdk/apps/qml/Ubuntu.Components/Themes.Palette/_highlighted-prop>`_ 
    : PaletteValues
--  ****`normal </sdk/apps/qml/Ubuntu.Components/Themes.Palette#normal-prop>`__****
+-  `normal </sdk/apps/qml/Ubuntu.Components/Themes.Palette/_normal-prop>`_ 
    : PaletteValues
--  ****`selected </sdk/apps/qml/Ubuntu.Components/Themes.Palette#selected-prop>`__****
+-  `selected </sdk/apps/qml/Ubuntu.Components/Themes.Palette/_selected-prop>`_ 
    : PaletteValues
--  ****`selectedDisabled </sdk/apps/qml/Ubuntu.Components/Themes.Palette#selectedDisabled-prop>`__****
+-  `selectedDisabled </sdk/apps/qml/Ubuntu.Components/Themes.Palette/_selectedDisabled-prop>`_ 
    : PaletteValues
 
 Detailed Description
@@ -32,7 +35,7 @@ actual color palette to use depends on the state of the widget being
 drawn.
 
 A color palette
-(`PaletteValues </sdk/apps/qml/Ubuntu.Components/Themes.PaletteValues/>`__)
+(`PaletteValues </sdk/apps/qml/Ubuntu.Components/Themes.PaletteValues/>`_ )
 has various roles to choose from depending on what part of the widget is
 being drawn (the base of the widget, the foreground, etc.).
 
@@ -56,6 +59,8 @@ Example of a Text on top of a background Rectangle:
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_themes_palette_disabled-prop:
+
 +--------------------------------------------------------------------------+
 |        \ disabled :                                                      |
 | `PaletteValues </sdk/apps/qml/Ubuntu.Components/Themes.PaletteValues/>`_ |
@@ -69,6 +74,8 @@ This QML property was introduced in Ubuntu.Components.Themes 1.3.
 
 | 
 
+.. _sdk_ubuntu_components_themes_palette_focused-prop:
+
 +--------------------------------------------------------------------------+
 |        \ focused :                                                       |
 | `PaletteValues </sdk/apps/qml/Ubuntu.Components/Themes.PaletteValues/>`_ |
@@ -78,6 +85,8 @@ This QML property was introduced in Ubuntu.Components.Themes 1.3.
 Color palette to use when the widget is focused.
 
 | 
+
+.. _sdk_ubuntu_components_themes_palette_highlighted-prop:
 
 +--------------------------------------------------------------------------+
 |        \ highlighted :                                                   |
@@ -91,6 +100,8 @@ This QML property was introduced in Ubuntu.Components.Themes 1.3.
 
 | 
 
+.. _sdk_ubuntu_components_themes_palette_normal-prop:
+
 +--------------------------------------------------------------------------+
 |        \ normal :                                                        |
 | `PaletteValues </sdk/apps/qml/Ubuntu.Components/Themes.PaletteValues/>`_ |
@@ -100,6 +111,8 @@ This QML property was introduced in Ubuntu.Components.Themes 1.3.
 Color palette to use when the widget is in the default state.
 
 | 
+
+.. _sdk_ubuntu_components_themes_palette_selected-prop:
 
 +--------------------------------------------------------------------------+
 |        \ selected :                                                      |
@@ -111,6 +124,8 @@ Color palette to use when the widget is selected, for example when a tab
 is the current one.
 
 | 
+
+.. _sdk_ubuntu_components_themes_palette_selectedDisabled-prop:
 
 +--------------------------------------------------------------------------+
 |        \ selectedDisabled :                                              |

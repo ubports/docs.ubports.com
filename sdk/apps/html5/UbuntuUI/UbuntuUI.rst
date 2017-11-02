@@ -1,3 +1,7 @@
+.. _sdk_ubuntuui_ubuntuui:
+UbuntuUI UbuntuUI
+=================
+
 
 UbuntuUI is the critical Ubuntu HTML5 framework class. You need to
 construct an UbuntuUI object and initialize it to have an Ubuntu HTML5

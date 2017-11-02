@@ -1,3 +1,7 @@
+.. _sdk_qtqml_data_type_conversion_between_qml_and_c++:
+QtQml Data Type Conversion Between QML and C++
+==============================================
+
 
 
 When data values are exchanged between QML and C++, they are converted
@@ -32,7 +36,7 @@ of a QObject instance which already has a parent.
 
 By default, QML recognizes the following Qt data types, which are
 automatically converted to a corresponding `QML basic
-type </sdk/apps/qml/QtQml/qtqml-typesystem-basictypes/>`__ when passed
+type </sdk/apps/qml/QtQml/qtqml-typesystem-basictypes/>`_  when passed
 from C++ to QML and vice-versa:
 
 +-----------------------------------+--------------------------------+
@@ -90,7 +94,7 @@ function:
     }
 
 See documentation for each individual type under `QML Basic
-Types </sdk/apps/qml/QtQml/qtqml-typesystem-basictypes/>`__ for more
+Types </sdk/apps/qml/QtQml/qtqml-typesystem-basictypes/>`_  for more
 information.
 
 .. rubric:: QObject-derived Types
@@ -104,7 +108,7 @@ The engine allows the registration of both instantiable and
 non-instantiable types. Once a class is registered as a QML type, it can
 be used as a data type for exchanging data between QML and C++. See
 `Registering C++ types with the QML type
-system </sdk/apps/qml/QtQml/qtqml-cppintegration-definetypes#registering-c-types-with-the-qml-type-system>`__
+system </sdk/apps/qml/QtQml/qtqml-cppintegration-definetypes/#registering-c-types-with-the-qml-type-system>`_ 
 for further details on type registration.
 
 .. rubric:: Conversion Between Qt and JavaScript Types
@@ -119,7 +123,7 @@ types that provide access to the data values and their attributes.
 (Note that the JavaScript environment in QML modifies native JavaScript
 object prototypes, including those of ``String``, ``Date`` and
 ``Number``, to provide additional features. See the `JavaScript Host
-Environment </sdk/apps/qml/QtQml/qtqml-javascript-hostenvironment/>`__
+Environment </sdk/apps/qml/QtQml/qtqml-javascript-hostenvironment/>`_ 
 for further details.)
 
 .. rubric:: QVariantList and QVariantMap to JavaScript Array and Object
@@ -303,7 +307,7 @@ has a ``Status`` enum:
      };
 
 Providing the ``Message`` class has been
-`registered </sdk/apps/qml/QtQml/qtqml-cppintegration-definetypes#registering-c-types-with-the-qml-type-system>`__
+`registered </sdk/apps/qml/QtQml/qtqml-cppintegration-definetypes/#registering-c-types-with-the-qml-type-system>`_ 
 with the QML type system, its ``Status`` enum can be used from QML:
 
 .. code:: qml
@@ -324,11 +328,11 @@ order to be accessible from QML.
 C++ signals and methods with enumeration-type parameters can be used
 from QML provided that the enumeration and the signal or method are both
 declared within the same class, or that the enumeration value is one of
-those declared in the `Qt Namespace </sdk/apps/qml/QtQml/Qt/>`__.
+those declared in the :ref:`Qt Namespace <sdk_qtqml_qt>`.
 
 Additionally, if a C++ signal with an enum parameter should be
 connectable to a QML function using the
-`connect() </sdk/apps/qml/QtQml/qtqml-syntax-signals#connecting-signals-to-methods-and-signals>`__
+`connect() </sdk/apps/qml/QtQml/qtqml-syntax-signals/#connecting-signals-to-methods-and-signals>`_ 
 function, the enum type must be registered using qRegisterMetaType().
 
 For QML signals, enum values may be passed as signal parameters using

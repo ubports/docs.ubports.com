@@ -1,9 +1,13 @@
+.. _sdk_qtqml_extending_qml_-_extension_objects_example:
+QtQml Extending QML - Extension Objects Example
+===============================================
+
 
 
 This example builds on:
 
 -  `Extending QML - Adding Types
-   Example </sdk/apps/qml/QtQml/referenceexamples-adding/>`__
+   Example </sdk/apps/qml/QtQml/referenceexamples-adding/>`_ 
 
 Shows how to use qmlRegisterExtendedType() to provide an extension
 object to a QLineEdit without modifying or subclassing. The QML engine

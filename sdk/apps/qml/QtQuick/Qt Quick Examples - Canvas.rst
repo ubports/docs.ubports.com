@@ -1,10 +1,14 @@
+.. _sdk_qtquick_qt_quick_examples_-_canvas:
+QtQuick Qt Quick Examples - Canvas
+==================================
+
 
 
 |image0|
 
 *Canvas* is a collection of small QML examples relating to the
-`Canvas </sdk/apps/qml/QtQuick/Canvas/>`__ type. Each example is a small
-QML file emphasizing a particular type or feature.
+:ref:`Canvas <sdk_qtquick_canvas>` type. Each example is a small QML file
+emphasizing a particular type or feature.
 
 .. rubric:: Running the Example
    :name: running-the-example

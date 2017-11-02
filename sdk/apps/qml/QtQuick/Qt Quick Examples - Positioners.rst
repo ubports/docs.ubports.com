@@ -1,3 +1,7 @@
+.. _sdk_qtquick_qt_quick_examples_-_positioners:
+QtQuick Qt Quick Examples - Positioners
+=======================================
+
 
 
 |image0|
@@ -6,7 +10,7 @@
 positioners. Each example is a small QML file emphasizing a particular
 type or feature. For more information, visit `Important Concepts In Qt
 Quick -
-Positioning </sdk/apps/qml/QtQuick/qtquick-positioning-topic/>`__.
+Positioning </sdk/apps/qml/QtQuick/qtquick-positioning-topic/>`_ .
 
 .. rubric:: Running the Example
    :name: running-the-example
@@ -21,10 +25,10 @@ Running an Example.
 *Transitions* shows animated transitions when showing or hiding items in
 a positioner. It consists of a scene populated with items in a variety
 of positioners:
-`Column </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#column>`__,
-`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#row>`__,
-`Grid </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#grid>`__, and
-`Flow </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#flow>`__. Each
+`Column </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#column>`_ ,
+`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#row>`_ ,
+`Grid </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#grid>`_ , and
+`Flow </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#flow>`_ . Each
 positioner has animations described as Transitions.
 
 .. code:: qml

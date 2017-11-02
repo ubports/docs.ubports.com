@@ -1,18 +1,22 @@
+.. _sdk_qtquick_particles_customparticle:
+QtQuick.Particles CustomParticle
+================================
+
 For specifying shaders to paint particles
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtQuick.Particles 2.0         |
 +--------------------------------------+--------------------------------------+
 | Inherits:                            | `ParticlePainter </sdk/apps/qml/QtQu |
-|                                      | ick/Particles.ParticlePainter/>`__   |
+|                                      | ick/Particles.ParticlePainter/>`_    |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`fragmentShader </sdk/apps/qml/QtQuick/Particles.CustomParticle#fragmentShader-prop>`__****
+-  `fragmentShader </sdk/apps/qml/QtQuick/Particles.CustomParticle/_fragmentShader-prop>`_ 
    : string
--  ****`vertexShader </sdk/apps/qml/QtQuick/Particles.CustomParticle#vertexShader-prop>`__****
+-  `vertexShader </sdk/apps/qml/QtQuick/Particles.CustomParticle/_vertexShader-prop>`_ 
    : string
 
 Detailed Description
@@ -20,6 +24,8 @@ Detailed Description
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_particles_customparticle_fragmentShader-prop:
 
 +--------------------------------------------------------------------------+
 |        \ fragmentShader : string                                         |
@@ -31,6 +37,8 @@ shader as "varying highp vec2 qt\_TexCoord0", and it samples from a
 sampler2D named "source".
 
 | 
+
+.. _sdk_qtquick_particles_customparticle_vertexShader-prop:
 
 +--------------------------------------------------------------------------+
 |        \ vertexShader : string                                           |

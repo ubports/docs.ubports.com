@@ -1,3 +1,7 @@
+.. _sdk_qtlocation_mappolyline:
+QtLocation MapPolyline
+======================
+
 The MapPolyline type displays a polyline on a map.
 
 +---------------------+-------------------------+
@@ -9,32 +13,32 @@ The MapPolyline type displays a polyline on a map.
 Properties
 ----------
 
--  ****`line </sdk/apps/qml/QtLocation/MapPolyline#line-prop>`__****
+-  :ref:`line <sdk_qtlocation_mappolyline_line-prop>`
 
-   -  ****`line.width </sdk/apps/qml/QtLocation/MapPolyline#line.width-prop>`__****
+   -  :ref:`line.width <sdk_qtlocation_mappolyline_line.width-prop>`
       : int
-   -  ****`line.color </sdk/apps/qml/QtLocation/MapPolyline#line.color-prop>`__****
+   -  :ref:`line.color <sdk_qtlocation_mappolyline_line.color-prop>`
       : color
 
--  ****`path </sdk/apps/qml/QtLocation/MapPolyline#path-prop>`__**** :
+-  :ref:`path <sdk_qtlocation_mappolyline_path-prop>` :
    list<coordinate>
 
 Methods
 -------
 
--  ****`addCoordinate </sdk/apps/qml/QtLocation/MapPolyline#addCoordinate-method>`__****\ (coordinate)
--  ****`removeCoordinate </sdk/apps/qml/QtLocation/MapPolyline#removeCoordinate-method>`__****\ (coordinate)
+-  :ref:`addCoordinate <sdk_qtlocation_mappolyline_addCoordinate-method>`\ (coordinate)
+-  :ref:`removeCoordinate <sdk_qtlocation_mappolyline_removeCoordinate-method>`\ (coordinate)
 
 Detailed Description
 --------------------
 
-The `MapPolyline </sdk/apps/qml/QtLocation/MapPolyline/>`__ type
-displays a polyline on a map, specified in terms of an ordered list of
-coordinates. The coordinates on the path cannot be directly changed
-after being added to the Polyline. Instead, copy the
-`path </sdk/apps/qml/QtLocation/MapPolyline#path-prop>`__ into a var,
-modify the copy and reassign the copy back to the
-`path </sdk/apps/qml/QtLocation/MapPolyline#path-prop>`__.
+The :ref:`MapPolyline <sdk_qtlocation_mappolyline>` type displays a
+polyline on a map, specified in terms of an ordered list of coordinates.
+The coordinates on the path cannot be directly changed after being added
+to the Polyline. Instead, copy the
+:ref:`path <sdk_qtlocation_mappolyline#path-prop>` into a var, modify the
+copy and reassign the copy back to the
+:ref:`path <sdk_qtlocation_mappolyline#path-prop>`.
 
 .. code:: cpp
 
@@ -43,17 +47,14 @@ modify the copy and reassign the copy back to the
     mapPolyline.path = path;
 
 Coordinates can also be added and removed at any time using the
-`addCoordinate </sdk/apps/qml/QtLocation/MapPolyline#addCoordinate-method>`__
-and
-`removeCoordinate </sdk/apps/qml/QtLocation/MapPolyline#removeCoordinate-method>`__
+:ref:`addCoordinate <sdk_qtlocation_mappolyline#addCoordinate-method>` and
+:ref:`removeCoordinate <sdk_qtlocation_mappolyline#removeCoordinate-method>`
 methods.
 
 By default, the polyline is displayed as a 1-pixel thick black line.
 This can be changed using the
-`line.width </sdk/apps/qml/QtLocation/MapPolyline#line.width-prop>`__
-and
-`line.color </sdk/apps/qml/QtLocation/MapPolyline#line.color-prop>`__
-properties.
+:ref:`line.width <sdk_qtlocation_mappolyline#line.width-prop>` and
+:ref:`line.color <sdk_qtlocation_mappolyline#line.color-prop>` properties.
 
 Performance
 ~~~~~~~~~~~
@@ -63,11 +64,10 @@ number of vertices. This means that the per frame cost of having a
 polyline on the Map grows in direct proportion to the number of points
 in the polyline.
 
-Like the other map objects,
-`MapPolyline </sdk/apps/qml/QtLocation/MapPolyline/>`__ is normally
-drawn without a smooth appearance. Setting the opacity property will
-force the object to be blended, which decreases performance considerably
-depending on the hardware in use.
+Like the other map objects, :ref:`MapPolyline <sdk_qtlocation_mappolyline>`
+is normally drawn without a smooth appearance. Setting the opacity
+property will force the object to be blended, which decreases
+performance considerably depending on the hardware in use.
 
 **Note:** MapPolylines are implemented using the OpenGL GL\_LINES
 primitive. There have been occasional reports of issues and rendering
@@ -78,10 +78,9 @@ Example Usage
 ~~~~~~~~~~~~~
 
 The following snippet shows a
-`MapPolyline </sdk/apps/qml/QtLocation/MapPolyline/>`__ with 4 points,
-making a shape like the top part of a "question mark" (?), near
-Brisbane, Australia. The line drawn is 3 pixels in width and green in
-color.
+:ref:`MapPolyline <sdk_qtlocation_mappolyline>` with 4 points, making a
+shape like the top part of a "question mark" (?), near Brisbane,
+Australia. The line drawn is 3 pixels in width and green in color.
 
 .. code:: cpp
 
@@ -103,9 +102,12 @@ color.
 Property Documentation
 ----------------------
 
+.. _sdk_qtlocation_mappolyline_**line group**-prop:
+
 +--------------------------------------------------------------------------+
 |        \ **line group**                                                  |
 +==========================================================================+
+.. _sdk_qtlocation_mappolyline_line.color-prop:
 |        \ line.width : int                                                |
 +--------------------------------------------------------------------------+
 |        \ line.color : color                                              |
@@ -121,6 +123,8 @@ For no line, use a width of 0 or a transparent color.
 
 | 
 
+.. _sdk_qtlocation_mappolyline_path-prop:
+
 +--------------------------------------------------------------------------+
 |        \ path : list<coordinate>                                         |
 +--------------------------------------------------------------------------+
@@ -133,6 +137,8 @@ polyline.
 Method Documentation
 --------------------
 
+.. _sdk_qtlocation_mappolyline_addCoordinate-method:
+
 +--------------------------------------------------------------------------+
 |        \ addCoordinate(coordinate)                                       |
 +--------------------------------------------------------------------------+
@@ -140,10 +146,12 @@ Method Documentation
 Adds a coordinate to the path.
 
 **See also**
-`removeCoordinate </sdk/apps/qml/QtLocation/MapPolyline#removeCoordinate-method>`__
-and `path </sdk/apps/qml/QtLocation/MapPolyline#path-prop>`__.
+:ref:`removeCoordinate <sdk_qtlocation_mappolyline#removeCoordinate-method>`
+and :ref:`path <sdk_qtlocation_mappolyline#path-prop>`.
 
 | 
+
+.. _sdk_qtlocation_mappolyline_removeCoordinate-method:
 
 +--------------------------------------------------------------------------+
 |        \ removeCoordinate(coordinate)                                    |
@@ -153,10 +161,10 @@ Removes a coordinate from the path. If there are multiple instances of
 the same coordinate, the one added last is removed.
 
 **See also**
-`addCoordinate </sdk/apps/qml/QtLocation/MapPolyline#addCoordinate-method>`__
-and `path </sdk/apps/qml/QtLocation/MapPolyline#path-prop>`__.
+:ref:`addCoordinate <sdk_qtlocation_mappolyline#addCoordinate-method>` and
+:ref:`path <sdk_qtlocation_mappolyline#path-prop>`.
 
 | 
 
-.. |image0| image:: /media/sdk/apps/qml/QtLocation/MapPolyline/images/sdk-mappolyline.png
+.. |image0| image:: /mediasdk_qtlocation_mappolylineimages/sdk-mappolyline.png
 

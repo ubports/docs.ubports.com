@@ -1,3 +1,7 @@
+.. _sdk_qtlocation_mapitemview:
+QtLocation MapItemView
+======================
+
 The MapItemView is used to populate Map from a model.
 
 +---------------------+-------------------------+
@@ -9,28 +13,25 @@ The MapItemView is used to populate Map from a model.
 Properties
 ----------
 
--  ****`autoFitViewport </sdk/apps/qml/QtLocation/MapItemView#autoFitViewport-prop>`__****
+-  :ref:`autoFitViewport <sdk_qtlocation_mapitemview_autoFitViewport-prop>`
    : Component
--  ****`delegate </sdk/apps/qml/QtLocation/MapItemView#delegate-prop>`__****
-   : Component
--  ****`model </sdk/apps/qml/QtLocation/MapItemView#model-prop>`__**** :
-   model
+-  :ref:`delegate <sdk_qtlocation_mapitemview_delegate-prop>` :
+   Component
+-  :ref:`model <sdk_qtlocation_mapitemview_model-prop>` : model
 
 Detailed Description
 --------------------
 
-The `MapItemView </sdk/apps/qml/QtLocation/MapItemView/>`__ is used to
-populate Map with MapItems from a model. The
-`MapItemView </sdk/apps/qml/QtLocation/MapItemView/>`__ type only makes
-sense when contained in a Map, meaning that it has no standalone
-presentation.
+The :ref:`MapItemView <sdk_qtlocation_mapitemview>` is used to populate Map
+with MapItems from a model. The
+:ref:`MapItemView <sdk_qtlocation_mapitemview>` type only makes sense when
+contained in a Map, meaning that it has no standalone presentation.
 
 Example Usage
 ~~~~~~~~~~~~~
 
 This example demonstrates how to use the MapViewItem object to display a
-`route </sdk/apps/qml/QtLocation/Route/>`__ on a
-`map </sdk/apps/qml/QtLocation/Map/>`__:
+:ref:`route <sdk_qtlocation_route>` on a `map <sdk_qtlocation_map>`:
 
 .. code:: qml
 
@@ -59,6 +60,8 @@ This example demonstrates how to use the MapViewItem object to display a
 Property Documentation
 ----------------------
 
+.. _sdk_qtlocation_mapitemview_autoFitViewport-prop:
+
 +--------------------------------------------------------------------------+
 |        \ autoFitViewport : Component                                     |
 +--------------------------------------------------------------------------+
@@ -70,6 +73,8 @@ Defaults to false.
 
 | 
 
+.. _sdk_qtlocation_mapitemview_delegate-prop:
+
 +--------------------------------------------------------------------------+
 |        \ delegate : Component                                            |
 +--------------------------------------------------------------------------+
@@ -79,6 +84,8 @@ model should be displayed. The Component must contain exactly one
 MapItem -derived object as the root object.
 
 | 
+
+.. _sdk_qtlocation_mapitemview_model-prop:
 
 +--------------------------------------------------------------------------+
 |        \ model : model                                                   |

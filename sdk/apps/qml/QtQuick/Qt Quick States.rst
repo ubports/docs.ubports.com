@@ -1,3 +1,7 @@
+.. _sdk_qtquick_qt_quick_states:
+QtQuick Qt Quick States
+=======================
+
 
 
 .. rubric:: Related Types
@@ -11,8 +15,8 @@ while the yellow and the green lights will turn off. In the ``caution``
 state, the yellow light is on while the other lights are turned off.
 
 In QML, *states* are a set of property configurations defined in a
-`State </sdk/apps/qml/QtQuick/State/>`__ type. Different configurations
-could, for example:
+:ref:`State <sdk_qtquick_state>` type. Different configurations could, for
+example:
 
 -  Show some UI components and hide others
 -  Present different available actions to the user
@@ -21,24 +25,23 @@ could, for example:
 -  Change a property value for a particular item
 -  Show a different view or screen
 
-All `Item </sdk/apps/qml/QtQuick/Item/>`__-based objects have a
-``state`` property, and can specify additional states by adding new
-``State`` objects to the item's
-`states </sdk/apps/qml/QtQuick/Item#states-prop>`__ property. Each state
+All :ref:`Item <sdk_qtquick_item>`-based objects have a ``state`` property,
+and can specify additional states by adding new ``State`` objects to the
+item's :ref:`states <sdk_qtquick_item#states-prop>` property. Each state
 within a component has a unique ``name``, an empty string being the
 default. To change the current state of an item, set the
-`state </sdk/apps/qml/QtQuick/Item#state-prop>`__ property to the name
-of the state.
+:ref:`state <sdk_qtquick_item#state-prop>` property to the name of the
+state.
 
 Non-Item objects may use states through the
-`StateGroup </sdk/apps/qml/QtQuick/StateGroup/>`__ type.
+:ref:`StateGroup <sdk_qtquick_stategroup>` type.
 
 .. rubric:: Creating States
    :name: creating-states
 
-To create a state, add a `State </sdk/apps/qml/QtQuick/State/>`__ object
-to the item's `states </sdk/apps/qml/QtQuick/Item#states-prop>`__
-property, which holds a list of states for that item.
+To create a state, add a :ref:`State <sdk_qtquick_state>` object to the
+item's :ref:`states <sdk_qtquick_item#states-prop>` property, which holds a
+list of states for that item.
 
 A warning ``signal`` component may have two states, the ``NORMAL`` and
 the ``CRITICAL`` state. Suppose that in the ``NORMAL`` state, the
@@ -68,16 +71,16 @@ down. Meanwhile, in the ``CRITICAL`` state, the ``color`` should be
         ]
     }
 
-The `PropertyChanges </sdk/apps/qml/QtQuick/PropertyChanges/>`__ type
-will change the values of object properties. Objects are referenced
-through their id. Objects outside the component are also referenced
-using the ``id`` property, exemplified by the property change to the
-external ``flag`` object.
+The :ref:`PropertyChanges <sdk_qtquick_propertychanges>` type will change
+the values of object properties. Objects are referenced through their
+id. Objects outside the component are also referenced using the ``id``
+property, exemplified by the property change to the external ``flag``
+object.
 
 Further, the state may change by assigning the ``state`` property with
 the appropriate signal state. A state switch could be in a
-`MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ type, assigning a
-different state whenever the signal receives a mouse click.
+:ref:`MouseArea <sdk_qtquick_mousearea>` type, assigning a different state
+whenever the signal receives a mouse click.
 
 .. code:: qml
 
@@ -100,32 +103,32 @@ The State type is not limited to performing modifications on property
 values. It can also:
 
 -  Run some script using
-   `StateChangeScript </sdk/apps/qml/QtQuick/StateChangeScript/>`__
+   :ref:`StateChangeScript <sdk_qtquick_statechangescript>`
 -  Override an existing signal handler for an object using
-   `PropertyChanges </sdk/apps/qml/QtQuick/PropertyChanges/>`__
--  Re-parent an `Item </sdk/apps/qml/QtQuick/Item/>`__ using
-   `ParentChange </sdk/apps/qml/QtQuick/ParentChange/>`__
+   :ref:`PropertyChanges <sdk_qtquick_propertychanges>`
+-  Re-parent an :ref:`Item <sdk_qtquick_item>` using
+   :ref:`ParentChange <sdk_qtquick_parentchange>`
 -  Modify anchor values using
-   `AnchorChanges </sdk/apps/qml/QtQuick/AnchorChanges/>`__
+   :ref:`AnchorChanges <sdk_qtquick_anchorchanges>`
 
 .. rubric:: The Default State
    :name: the-default-state
 
-Every `Item </sdk/apps/qml/QtQuick/Item/>`__ based component has a
-``state`` property and a *default state*. The default state is the empty
-string (``""``) and contains all of an item's initial property values.
-The default state is useful for managing property values before state
+Every :ref:`Item <sdk_qtquick_item>` based component has a ``state``
+property and a *default state*. The default state is the empty string
+(``""``) and contains all of an item's initial property values. The
+default state is useful for managing property values before state
 changes. Setting the ``state`` property to an empty string will load the
 default state.
 
 .. rubric:: The ``when`` Property
    :name: the-when-property
 
-For convenience, the `State </sdk/apps/qml/QtQuick/State/>`__ type has a
-``when`` property that can bind to expressions to change the state
-whenever the bound expression evaluates to ``true``. The ``when``
-property will revert the state back to the `default
-state </sdk/apps/qml/QtQuick/qtquick-statesanimations-states#the-default-state>`__
+For convenience, the :ref:`State <sdk_qtquick_state>` type has a ``when``
+property that can bind to expressions to change the state whenever the
+bound expression evaluates to ``true``. The ``when`` property will
+revert the state back to the `default
+state </sdk/apps/qml/QtQuick/qtquick-statesanimations-states/#the-default-state>`_ 
 when the expression evaluates to false.
 
 .. code:: qml
@@ -148,17 +151,17 @@ The ``bell`` component will change to the ``RINGING`` state whenever the
    :name: animating-state-changes
 
 State changes induce abrupt value changes. The
-`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch#transition>`__
+`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch/#transition>`_ 
 type allow smoother changes during state changes. In transitions,
 animations and interpolation behaviors are definable. The `Animation and
-Transitions </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`__
+Transitions </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`_ 
 article has more information about creating state animations.
 
 The States and Transitions example demonstrates how to declare a basic
 set of states and apply animated transitions between them.
 
 `Using Qt Quick Behaviors with
-States </sdk/apps/qml/QtQuick/qtquick-statesanimations-behaviors/>`__
+States </sdk/apps/qml/QtQuick/qtquick-statesanimations-behaviors/>`_ 
 explains a common problem when using Behaviors to animate state changes.
 
 .. rubric:: State Fast Forwarding

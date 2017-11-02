@@ -1,5 +1,9 @@
+.. _sdk_autopilot_testcase_autopilottestcase:
+autopilot.testcase AutopilotTestCase
+====================================
+
  *class* ``autopilot.testcase.``\ ``AutopilotTestCase``\ (*\*args*,
-*\*\*kwargs*)\ ` </sdk/autopilot/python/autopilot.testcase/AutopilotTestCase#AutopilotTestCase>`__\ ` <#autopilot.testcase.AutopilotTestCase>`__
+*\*\*kwargs*)\ :ref:` <sdk_autopilot_testcase_autopilottestcase#AutopilotTestCase>`\ ` <#autopilot.testcase.AutopilotTestCase>`
     Wrapper around testtools.TestCase that adds significant
     functionality.
 
@@ -9,7 +13,7 @@
     failed-test recording tools.
 
      ``launch_test_application``\ (*application*, *\*arguments*,
-    *\*\*kwargs*)\ ` </sdk/autopilot/python/autopilot.testcase/AutopilotTestCase#AutopilotTestCase.launch_test_application>`__\ ` <#autopilot.testcase.AutopilotTestCase.launch_test_application>`__
+    *\*\*kwargs*)\ :ref:` <sdk_autopilot_testcase_autopilottestcase#AutopilotTestCase.launch_test_application>`\ ` <#autopilot.testcase.AutopilotTestCase.launch_test_application>`
         Launch ``application`` and return a proxy object for the
         application.
 
@@ -168,7 +172,7 @@
 
      ``launch_click_package``\ (*package\_id*, *app\_name=None*,
     *app\_uris=[]*,
-    *\*\*kwargs*)\ ` </sdk/autopilot/python/autopilot.testcase/AutopilotTestCase#AutopilotTestCase.launch_click_package>`__\ ` <#autopilot.testcase.AutopilotTestCase.launch_click_package>`__
+    *\*\*kwargs*)\ :ref:` <sdk_autopilot_testcase_autopilottestcase#AutopilotTestCase.launch_click_package>`\ ` <#autopilot.testcase.AutopilotTestCase.launch_click_package>`
         Launch a click package application with introspection enabled.
 
         This method takes care of launching a click package with
@@ -177,7 +181,7 @@
         started via upstart.
 
         Usage is similar to the
-        ```AutopilotTestCase.launch_test_application`` </sdk/autopilot/python/autopilot.testcase/AutopilotTestCase#autopilot.testcase.AutopilotTestCase.launch_test_application>`__:
+        :ref:```AutopilotTestCase.launch_test_application`` <sdk_autopilot_testcase_autopilottestcase#autopilot.testcase.AutopilotTestCase.launch_test_application>`:
 
         .. raw:: html
 
@@ -216,14 +220,14 @@
      ``launch_upstart_application``\ (*application\_name*, *uris=[]*,
     *launcher\_class=<class
     'autopilot.application.\_launcher.UpstartApplicationLauncher'>*,
-    *\*\*kwargs*)\ ` </sdk/autopilot/python/autopilot.testcase/AutopilotTestCase#AutopilotTestCase.launch_upstart_application>`__\ ` <#autopilot.testcase.AutopilotTestCase.launch_upstart_application>`__
+    *\*\*kwargs*)\ :ref:` <sdk_autopilot_testcase_autopilottestcase#AutopilotTestCase.launch_upstart_application>`\ ` <#autopilot.testcase.AutopilotTestCase.launch_upstart_application>`
         Launch an application with upstart.
 
         This method launched an application via the
         ``ubuntu-app-launch`` library, on platforms that support it.
 
         Usage is similar to the
-        ```AutopilotTestCase.launch_test_application`` </sdk/autopilot/python/autopilot.testcase/AutopilotTestCase#autopilot.testcase.AutopilotTestCase.launch_test_application>`__:
+        :ref:```AutopilotTestCase.launch_test_application`` <sdk_autopilot_testcase_autopilottestcase#autopilot.testcase.AutopilotTestCase.launch_test_application>`:
 
         .. raw:: html
 
@@ -265,7 +269,7 @@
 
         If the specified application cannot be launched.
 
-    ``take_screenshot``\ (*attachment\_name*)\ ` </sdk/autopilot/python/autopilot.testcase/AutopilotTestCase#AutopilotTestCase.take_screenshot>`__\ ` <#autopilot.testcase.AutopilotTestCase.take_screenshot>`__
+    :ref:``take_screenshot``\ (*attachment\_name*)\ ` <sdk_autopilot_testcase_autopilottestcase#AutopilotTestCase.take_screenshot>`\ ` <#autopilot.testcase.AutopilotTestCase.take_screenshot>`
         Take a screenshot of the current screen and adds it to the test
         as a detail named *attachment\_name*.
 
@@ -277,7 +281,7 @@
         successfully, False otherwise.
 
      ``patch_environment``\ (*key*,
-    *value*)\ ` </sdk/autopilot/python/autopilot.testcase/AutopilotTestCase#AutopilotTestCase.patch_environment>`__\ ` <#autopilot.testcase.AutopilotTestCase.patch_environment>`__
+    *value*)\ :ref:` <sdk_autopilot_testcase_autopilottestcase#AutopilotTestCase.patch_environment>`\ ` <#autopilot.testcase.AutopilotTestCase.patch_environment>`
         Patch environment using fixture.
 
         This function is deprecated and planned for removal in autopilot
@@ -311,7 +315,7 @@
         ‘key’ will be set to ‘value’. During tearDown, it will be reset
         to a previous value, if one is found, or unset if not.
 
-    ``assertVisibleWindowStack``\ (*stack\_start*)\ ` </sdk/autopilot/python/autopilot.testcase/AutopilotTestCase#AutopilotTestCase.assertVisibleWindowStack>`__\ ` <#autopilot.testcase.AutopilotTestCase.assertVisibleWindowStack>`__
+    :ref:``assertVisibleWindowStack``\ (*stack\_start*)\ ` <sdk_autopilot_testcase_autopilottestcase#AutopilotTestCase.assertVisibleWindowStack>`\ ` <#autopilot.testcase.AutopilotTestCase.assertVisibleWindowStack>`
         Check that the visible window stack starts with the windows
         passed in.
 
@@ -330,7 +334,7 @@
         Parameters:
 
         **stack\_start** – An iterable of
-        ```Window`` </sdk/autopilot/python/autopilot.process/Window#autopilot.process.Window>`__
+        :ref:```Window`` <sdk_autopilot_process_window#autopilot.process.Window>`
         instances.
 
         Raises AssertionError:
@@ -341,7 +345,7 @@
         the stack\_start parameter.
 
      ``assertProperty``\ (*obj*,
-    *\*\*kwargs*)\ ` </sdk/autopilot/python/autopilot.testcase/AutopilotTestCase#AutopilotTestCase.assertProperty>`__\ ` <#autopilot.testcase.AutopilotTestCase.assertProperty>`__
+    *\*\*kwargs*)\ :ref:` <sdk_autopilot_testcase_autopilottestcase#AutopilotTestCase.assertProperty>`\ ` <#autopilot.testcase.AutopilotTestCase.assertProperty>`
         Assert that *obj* has properties equal to the key/value pairs in
         kwargs.
 
@@ -394,7 +398,7 @@
         +---------------+------------------------------------------------------------------------------------------------------------------------------+
 
      ``assertProperties``\ (*obj*,
-    *\*\*kwargs*)\ ` <#autopilot.testcase.AutopilotTestCase.assertProperties>`__
+    *\*\*kwargs*)\ ` <#autopilot.testcase.AutopilotTestCase.assertProperties>`_ 
         Assert that *obj* has properties equal to the key/value pairs in
         kwargs.
 

@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_clipboard:
+Ubuntu.Components Clipboard
+===========================
+
 This is a singleton type providing access to the system clipboard.
 
 +---------------------+--------------------------------+
@@ -7,42 +11,40 @@ This is a singleton type providing access to the system clipboard.
 Properties
 ----------
 
--  ****`data </sdk/apps/qml/Ubuntu.Components/Clipboard#data-prop>`__****
-   : MimeData
+-  :ref:`data <sdk_ubuntu_components_clipboard_data-prop>` :
+   MimeData
 
 Signals
 -------
 
--  ****`dataChanged </sdk/apps/qml/Ubuntu.Components/Clipboard#dataChanged-signal>`__****\ ()
+-  :ref:`dataChanged <sdk_ubuntu_components_clipboard_dataChanged-signal>`\ ()
 
 Methods
 -------
 
--  ****`clear </sdk/apps/qml/Ubuntu.Components/Clipboard#clear-method>`__****\ ()
+-  :ref:`clear <sdk_ubuntu_components_clipboard_clear-method>`\ ()
 -  MimeData
-   ****`newData </sdk/apps/qml/Ubuntu.Components/Clipboard#newData-method>`__****\ ()
--  ****`push </sdk/apps/qml/Ubuntu.Components/Clipboard#push-method>`__****\ (var
+   **:ref:`newData <sdk_ubuntu_components_clipboard#newData-method>`**\ ()
+-  :ref:`push <sdk_ubuntu_components_clipboard_push-method>`\ (var
    *data*)
 
 Detailed Description
 --------------------
 
 Clipboard data can be retrieved through data property, which returns an
-object of `MimeData </sdk/apps/qml/Ubuntu.Components/MimeData/>`__ type.
-The actual content of the clipboard can be accessed through this object.
-Data can be pushed to the clipboard using
-`push() </sdk/apps/qml/Ubuntu.Components/Clipboard#push-method>`__
-function.
+object of :ref:`MimeData <sdk_ubuntu_components_mimedata>` type. The actual
+content of the clipboard can be accessed through this object. Data can
+be pushed to the clipboard using
+:ref:`push() <sdk_ubuntu_components_clipboard#push-method>` function.
 
 The clipboard data cannot be modified through the type returned by the
 data property, for this a new instance of
-`MimeData </sdk/apps/qml/Ubuntu.Components/MimeData/>`__ type must be
-used. This instance can be either a standalone MimeDala component or an
-object created using
-`newData() </sdk/apps/qml/Ubuntu.Components/Clipboard#newData-method>`__
-function. Remember that standalone
-`MimeData </sdk/apps/qml/Ubuntu.Components/MimeData/>`__ types duplicate
-the clipboard data which may cause extensive memory use.
+:ref:`MimeData <sdk_ubuntu_components_mimedata>` type must be used. This
+instance can be either a standalone MimeDala component or an object
+created using
+:ref:`newData() <sdk_ubuntu_components_clipboard#newData-method>` function.
+Remember that standalone :ref:`MimeData <sdk_ubuntu_components_mimedata>`
+types duplicate the clipboard data which may cause extensive memory use.
 
 Examples of use:
 
@@ -83,8 +85,8 @@ selected text from the text area into the clipboard pushing also a color
         }
     }
 
-3. Pushing data using
-`MimeData </sdk/apps/qml/Ubuntu.Components/MimeData/>`__ object
+3. Pushing data using :ref:`MimeData <sdk_ubuntu_components_mimedata>`
+object
 
 .. code:: qml
 
@@ -106,8 +108,10 @@ selected text from the text area into the clipboard pushing also a color
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_clipboard_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ data : `MimeData </sdk/apps/qml/Ubuntu.Components/MimeData/>`__ |
+| :ref:` <>`\ data : `MimeData <sdk_ubuntu_components_mimedata>`         |
 +--------------------------------------------------------------------------+
 
 Provides access to the Clipboard's current data.
@@ -116,6 +120,8 @@ Provides access to the Clipboard's current data.
 
 Signal Documentation
 --------------------
+
+.. _sdk_ubuntu_components_clipboard_dataChanged()-prop:
 
 +--------------------------------------------------------------------------+
 |        \ dataChanged()                                                   |
@@ -128,6 +134,8 @@ The signal is triggered when clipboard content gets changed.
 Method Documentation
 --------------------
 
+.. _sdk_ubuntu_components_clipboard_clear-method:
+
 +--------------------------------------------------------------------------+
 |        \ clear()                                                         |
 +--------------------------------------------------------------------------+
@@ -136,32 +144,32 @@ The function clears the clipboard content.
 
 | 
 
+.. _sdk_ubuntu_components_clipboard_-method:
+
 +--------------------------------------------------------------------------+
-|        \ `MimeData </sdk/apps/qml/Ubuntu.Components/MimeData/>`__        |
-| newData()                                                                |
+| :ref:` <>`\ `MimeData <sdk_ubuntu_components_mimedata>` newData()         |
 +--------------------------------------------------------------------------+
 
-The function returns a new
-`MimeData </sdk/apps/qml/Ubuntu.Components/MimeData/>`__ object that can
-be used in Java script code to push pultiple MIME types at the same
-time.
+The function returns a new :ref:`MimeData <sdk_ubuntu_components_mimedata>`
+object that can be used in Java script code to push pultiple MIME types
+at the same time.
 
 | 
 
+.. _sdk_ubuntu_components_clipboard_push-method:
+
 +--------------------------------------------------------------------------+
-|        \ push(`var <http://doc.qt.io/qt-5/qml-var.html>`__ *data*)       |
+|        \ push(`var <http://doc.qt.io/qt-5/qml-var.html>`_  *data*)       |
 +--------------------------------------------------------------------------+
 
 The function copies data provided as parameter to the clipboard. The
-parameter can be a
-`MimeData </sdk/apps/qml/Ubuntu.Components/MimeData/>`__ instance or
-object created using
-`newData() </sdk/apps/qml/Ubuntu.Components/Clipboard#newData-method>`__
-beside the ones listed at
-`MimeData::data </sdk/apps/qml/Ubuntu.Components/MimeData#data-prop>`__.
+parameter can be a :ref:`MimeData <sdk_ubuntu_components_mimedata>`
+instance or object created using
+:ref:`newData() <sdk_ubuntu_components_clipboard#newData-method>` beside
+the ones listed at
+:ref:`MimeData::data <sdk_ubuntu_components_mimedata#data-prop>`.
 
-When `MimeData </sdk/apps/qml/Ubuntu.Components/MimeData/>`__ instance
-or object is given, the entire object content will be pushed to the
-clipboard.
+When :ref:`MimeData <sdk_ubuntu_components_mimedata>` instance or object is
+given, the entire object content will be pushed to the clipboard.
 
 | 

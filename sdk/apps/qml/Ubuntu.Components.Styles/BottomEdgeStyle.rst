@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_styles_bottomedgestyle:
+Ubuntu.Components.Styles BottomEdgeStyle
+========================================
+
 Style API for BottomEdge content holder panel.
 
 +---------------------+---------------------------------------+
@@ -9,13 +13,13 @@ Style API for BottomEdge content holder panel.
 Properties
 ----------
 
--  ****`contentItem </sdk/apps/qml/Ubuntu.Components/Styles.BottomEdgeStyle#contentItem-prop>`__****
+-  `contentItem </sdk/apps/qml/Ubuntu.Components/Styles.BottomEdgeStyle/_contentItem-prop>`_ 
    : Item
--  ****`panel </sdk/apps/qml/Ubuntu.Components/Styles.BottomEdgeStyle#panel-prop>`__****
+-  `panel </sdk/apps/qml/Ubuntu.Components/Styles.BottomEdgeStyle/_panel-prop>`_ 
    : Item
--  ****`panelAnimation </sdk/apps/qml/Ubuntu.Components/Styles.BottomEdgeStyle#panelAnimation-prop>`__****
+-  `panelAnimation </sdk/apps/qml/Ubuntu.Components/Styles.BottomEdgeStyle/_panelAnimation-prop>`_ 
    : Animation
--  ****`revealThreshold </sdk/apps/qml/Ubuntu.Components/Styles.BottomEdgeStyle#revealThreshold-prop>`__****
+-  `revealThreshold </sdk/apps/qml/Ubuntu.Components/Styles.BottomEdgeStyle/_revealThreshold-prop>`_ 
    : real
 
 Detailed Description
@@ -24,36 +28,42 @@ Detailed Description
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_styles_bottomedgestyle_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ contentItem : `Item </sdk/apps/qml/QtQuick/Item/>`__            |
+| :ref:` <>`\ contentItem : `Item <sdk_qtquick_item>`                    |
 +--------------------------------------------------------------------------+
 
 Holds the current content item created from
-`BottomEdge::contentUrl </sdk/apps/qml/Ubuntu.Components/BottomEdge#contentUrl-prop>`__
+:ref:`BottomEdge::contentUrl <sdk_ubuntu_components_bottomedge#contentUrl-prop>`
 or
-`BottomEdge::contentComponent </sdk/apps/qml/Ubuntu.Components/BottomEdge#contentComponent-prop>`__.
+:ref:`BottomEdge::contentComponent <sdk_ubuntu_components_bottomedge#contentComponent-prop>`.
 
 | 
 
+.. _sdk_ubuntu_components_styles_bottomedgestyle_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ panel : `Item </sdk/apps/qml/QtQuick/Item/>`__                  |
+| :ref:` <>`\ panel : `Item <sdk_qtquick_item>`                          |
 +--------------------------------------------------------------------------+
 
 Represents the item holding the bottom edge content.
 
 | 
 
+.. _sdk_ubuntu_components_styles_bottomedgestyle_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ panelAnimation :                                                |
-| `Animation </sdk/apps/qml/QtQuick/Animation/>`__                         |
+| :ref:` <>`\ panelAnimation : `Animation <sdk_qtquick_animation>`       |
 +--------------------------------------------------------------------------+
 
 Holds the animation of the panel.
-`BottomEdge </sdk/apps/qml/Ubuntu.Components/BottomEdge/>`__ requires
-this property to know when the bottom edge is fully committed or
-collapsed.
+:ref:`BottomEdge <sdk_ubuntu_components_bottomedge>` requires this property
+to know when the bottom edge is fully committed or collapsed.
 
 | 
+
+.. _sdk_ubuntu_components_styles_bottomedgestyle_revealThreshold-prop:
 
 +--------------------------------------------------------------------------+
 |        \ revealThreshold : real                                          |

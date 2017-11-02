@@ -1,3 +1,7 @@
+.. _sdk_ubuntuui_toolbar:
+UbuntuUI Toolbar
+================
+
 
 A Toolbar is the JavaScript representation of an Ubuntu HTML5 app
 <em>footer</em>.

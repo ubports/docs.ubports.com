@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_popups_actionselectionpopover:
+Ubuntu.Components.Popups ActionSelectionPopover
+===============================================
+
 A special popover presenting actions to the user. The popover is closed
 automatically when the action is chosen.
 
@@ -5,28 +9,28 @@ automatically when the action is chosen.
 | Import Statement:                    | import Ubuntu.Components.Popups 1.3  |
 +--------------------------------------+--------------------------------------+
 | Inherits:                            | `Popover </sdk/apps/qml/Ubuntu.Compo |
-|                                      | nents/Popups.Popover/>`__            |
+|                                      | nents/Popups.Popover/>`_             |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`actions </sdk/apps/qml/Ubuntu.Components/Popups.ActionSelectionPopover#actions-prop>`__****
+-  `actions </sdk/apps/qml/Ubuntu.Components/Popups.ActionSelectionPopover/_actions-prop>`_ 
    : var
--  ****`delegate </sdk/apps/qml/Ubuntu.Components/Popups.ActionSelectionPopover#delegate-prop>`__****
+-  `delegate </sdk/apps/qml/Ubuntu.Components/Popups.ActionSelectionPopover/_delegate-prop>`_ 
    : Component
--  ****`target </sdk/apps/qml/Ubuntu.Components/Popups.ActionSelectionPopover#target-prop>`__****
+-  `target </sdk/apps/qml/Ubuntu.Components/Popups.ActionSelectionPopover/_target-prop>`_ 
    : Item
 
 Detailed Description
 --------------------
 
 The actions can be given either using
-`ActionList </sdk/apps/qml/Ubuntu.Components/ActionList/>`__ or as an
-array of action objects. The visualization of the actions is realized
-either using the default visualization, which is realised using list
-items having centered text, or using the component given as delegate.
-The actions are triggered with the specified target as parameter.
+:ref:`ActionList <sdk_ubuntu_components_actionlist>` or as an array of
+action objects. The visualization of the actions is realized either
+using the default visualization, which is realised using list items
+having centered text, or using the component given as delegate. The
+actions are triggered with the specified target as parameter.
 
 The popover recognizes the following properties from the delegate:
 
@@ -38,7 +42,7 @@ The popover recognizes the following properties from the delegate:
    the action's trigger.
 
 An example presenting list of actions using
-`ActionList </sdk/apps/qml/Ubuntu.Components/ActionList/>`__:
+:ref:`ActionList <sdk_ubuntu_components_actionlist>`:
 
 .. code:: qml
 
@@ -90,8 +94,10 @@ reused from a set of predefined actions:
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_popups_actionselectionpopover_actions-prop:
+
 +--------------------------------------------------------------------------+
-|        \ actions : `var <http://doc.qt.io/qt-5/qml-var.html>`__          |
+|        \ actions : `var <http://doc.qt.io/qt-5/qml-var.html>`_           |
 +--------------------------------------------------------------------------+
 
 The property holds the list of actions to be presented. Each action
@@ -99,8 +105,10 @@ triggered will use the actionHost as caller.
 
 | 
 
+.. _sdk_ubuntu_components_popups_actionselectionpopover_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ delegate : `Component </sdk/apps/qml/QtQml/Component/>`__       |
+| :ref:` <>`\ delegate : `Component <sdk_qtqml_component>`               |
 +--------------------------------------------------------------------------+
 
 The property holds the delegate to visualize the action. The delegate
@@ -109,8 +117,10 @@ popover in order to access action data.
 
 | 
 
+.. _sdk_ubuntu_components_popups_actionselectionpopover_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ target : `Item </sdk/apps/qml/QtQuick/Item/>`__                 |
+| :ref:` <>`\ target : `Item <sdk_qtquick_item>`                         |
 +--------------------------------------------------------------------------+
 
 The property holds the object on which the action will be performed.

@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_ubuntulistview:
+Ubuntu.Components UbuntuListView
+================================
+
 A ListView with special features tailored for a look and feel fitting
 the Ubuntu Touch platform. The UbuntuListView works just like a regular
 ListView, but it adds special features such as expanding/collapsing
@@ -8,8 +12,7 @@ expands and collapsing it again when the user taps outside of it.
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import Ubuntu.Components 1.3         |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `ListView </sdk/apps/qml/QtQuick/Lis |
-|                                      | tView/>`__                           |
+| Inherits:                            | :ref:`ListView <sdk_qtquick_listview>`  |
 +--------------------------------------+--------------------------------------+
 
 -  Obsolete members
@@ -17,7 +20,7 @@ expands and collapsing it again when the user taps outside of it.
 Properties
 ----------
 
--  ****`pullToRefresh </sdk/apps/qml/Ubuntu.Components/UbuntuListView#pullToRefresh-prop>`__****
+-  :ref:`pullToRefresh <sdk_ubuntu_components_ubuntulistview_pullToRefresh-prop>`
    : pullToRefresh
 
 Detailed Description
@@ -51,14 +54,15 @@ Examples:
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_ubuntulistview_[read-only] pullToRefresh-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [read-only] pullToRefresh :                                     |
-| `pullToRefresh </sdk/apps/qml/Ubuntu.Components/UbuntuListView#pullToRef |
-| resh-prop>`__                                                            |
+| :ref:`pullToRefresh <sdk_ubuntu_components_ubuntulistview#pullToRefresh-prop> |
+| `_                                                                       |
 +--------------------------------------------------------------------------+
 
-Attached
-`PullToRefresh </sdk/apps/qml/Ubuntu.Components/PullToRefresh/>`__ to
+Attached :ref:`PullToRefresh <sdk_ubuntu_components_pulltorefresh>` to
 control manual model refresh. The component is disabled by default.
 
 .. code:: qml

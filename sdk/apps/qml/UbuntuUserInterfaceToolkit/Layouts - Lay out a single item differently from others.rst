@@ -1,10 +1,14 @@
+.. _sdk_ubuntuuserinterfacetoolkit_layouts_-_lay_out_a_single_item_differently_from_others:
+UbuntuUserInterfaceToolkit Layouts - Lay out a single item differently from others
+==================================================================================
 
 
-As mentioned, `ItemLayout </sdk/apps/qml/Ubuntu.Layouts/ItemLayout/>`__
-has control over the size, anchors and visibility of the hosted element.
-Therefore we can have the blue button with a different size than the
-other two. Let's have the blue button's width set to 10 GUs and its
-height to 10 GUs less than the positioner's height.
+
+As mentioned, :ref:`ItemLayout <sdk_ubuntu_layouts_itemlayout>` has control
+over the size, anchors and visibility of the hosted element. Therefore
+we can have the blue button with a different size than the other two.
+Let's have the blue button's width set to 10 GUs and its height to 10
+GUs less than the positioner's height.
 
 The code will look as follows:
 
@@ -42,7 +46,7 @@ The code will look as follows:
 |image0|
 
 `Layouts - Hiding elements, showing
-more </sdk/apps/qml/UbuntuUserInterfaceToolkit/ubuntu-layouts5/>`__
+more </sdk/apps/qml/UbuntuUserInterfaceToolkit/ubuntu-layouts5/>`_ 
 
 .. |image0| image:: /media/sdk/apps/qml/ubuntu-layouts4/images/layout3.png
 

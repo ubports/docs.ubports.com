@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_proximitysensor:
+QtSensors ProximitySensor
+=========================
+
 The ProximitySensor element reports on object proximity.
 
 +--------------------------------------+--------------------------------------+
@@ -5,18 +9,16 @@ The ProximitySensor element reports on object proximity.
 +--------------------------------------+--------------------------------------+
 | Since:                               | QtSensors 5.0                        |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Sensor </sdk/apps/qml/QtSensors/Sen |
-|                                      | sor/>`__                             |
+| Inherits:                            | :ref:`Sensor <sdk_qtsensors_sensor>` |
 +--------------------------------------+--------------------------------------+
 
 Detailed Description
 --------------------
 
-The `ProximitySensor </sdk/apps/qml/QtSensors/ProximitySensor/>`__
-element reports on object proximity.
+The :ref:`ProximitySensor <sdk_qtsensors_proximitysensor>` element reports
+on object proximity.
 
 This element wraps the QProximitySensor class. Please see the
 documentation for QProximitySensor for details.
 
-**See also**
-`ProximityReading </sdk/apps/qml/QtSensors/ProximityReading/>`__.
+**See also** :ref:`ProximityReading <sdk_qtsensors_proximityreading>`.

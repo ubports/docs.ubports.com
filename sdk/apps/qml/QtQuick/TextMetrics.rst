@@ -1,3 +1,7 @@
+.. _sdk_qtquick_textmetrics:
+QtQuick TextMetrics
+===================
+
 Provides metrics for a given font and text
 
 +---------------------+----------------------+
@@ -9,29 +13,25 @@ Provides metrics for a given font and text
 Properties
 ----------
 
--  ****`advanceWidth </sdk/apps/qml/QtQuick/TextMetrics#advanceWidth-prop>`__****
+-  :ref:`advanceWidth <sdk_qtquick_textmetrics_advanceWidth-prop>`
    : real
--  ****`boundingRect </sdk/apps/qml/QtQuick/TextMetrics#boundingRect-prop>`__****
+-  :ref:`boundingRect <sdk_qtquick_textmetrics_boundingRect-prop>`
    : rect
--  ****`elide </sdk/apps/qml/QtQuick/TextMetrics#elide-prop>`__**** :
-   enumeration
--  ****`elideWidth </sdk/apps/qml/QtQuick/TextMetrics#elideWidth-prop>`__****
-   : real
--  ****`font </sdk/apps/qml/QtQuick/TextMetrics#font-prop>`__**** : font
--  ****`height </sdk/apps/qml/QtQuick/TextMetrics#height-prop>`__**** :
+-  :ref:`elide <sdk_qtquick_textmetrics_elide-prop>` : enumeration
+-  :ref:`elideWidth <sdk_qtquick_textmetrics_elideWidth-prop>` :
    real
--  ****`text </sdk/apps/qml/QtQuick/TextMetrics#text-prop>`__**** :
-   string
--  ****`tightBoundingRect </sdk/apps/qml/QtQuick/TextMetrics#tightBoundingRect-prop>`__****
+-  :ref:`font <sdk_qtquick_textmetrics_font-prop>` : font
+-  :ref:`height <sdk_qtquick_textmetrics_height-prop>` : real
+-  :ref:`text <sdk_qtquick_textmetrics_text-prop>` : string
+-  :ref:`tightBoundingRect <sdk_qtquick_textmetrics_tightBoundingRect-prop>`
    : rect
--  ****`width </sdk/apps/qml/QtQuick/TextMetrics#width-prop>`__**** :
-   real
+-  :ref:`width <sdk_qtquick_textmetrics_width-prop>` : real
 
 Detailed Description
 --------------------
 
-`TextMetrics </sdk/apps/qml/QtQuick/TextMetrics/>`__ calculates various
-properties of a given string of text for a particular font.
+:ref:`TextMetrics <sdk_qtquick_textmetrics>` calculates various properties
+of a given string of text for a particular font.
 
 It provides a declarative API for the functions in QFontMetricsF which
 take arguments.
@@ -50,17 +50,19 @@ take arguments.
     }
 
 **See also** QFontMetricsF and
-`FontMetrics </sdk/apps/qml/QtQuick/FontMetrics/>`__.
+:ref:`FontMetrics <sdk_qtquick_fontmetrics>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_textmetrics_advanceWidth-prop:
 
 +--------------------------------------------------------------------------+
 |        \ advanceWidth : real                                             |
 +--------------------------------------------------------------------------+
 
 This property holds the advance in pixels of the characters in
-`text </sdk/apps/qml/QtQuick/qtquick-releasenotes#text>`__. This is the
+`text </sdk/apps/qml/QtQuick/qtquick-releasenotes/#text>`_ . This is the
 distance from the position of the string to where the next string should
 be drawn.
 
@@ -68,18 +70,22 @@ be drawn.
 
 | 
 
+.. _sdk_qtquick_textmetrics_boundingRect-prop:
+
 +--------------------------------------------------------------------------+
 |        \ boundingRect : rect                                             |
 +--------------------------------------------------------------------------+
 
 This property holds the bounding rectangle of the characters in the
 string specified by
-`text </sdk/apps/qml/QtQuick/qtquick-releasenotes#text>`__.
+`text </sdk/apps/qml/QtQuick/qtquick-releasenotes/#text>`_ .
 
 **See also** QFontMetricsF::boundingRect() and
-`tightBoundingRect </sdk/apps/qml/QtQuick/TextMetrics#tightBoundingRect-prop>`__.
+:ref:`tightBoundingRect <sdk_qtquick_textmetrics#tightBoundingRect-prop>`.
 
 | 
+
+.. _sdk_qtquick_textmetrics_elide-prop:
 
 +--------------------------------------------------------------------------+
 |        \ elide : enumeration                                             |
@@ -93,11 +99,12 @@ position in which the string is elided. The possible values are:
 -  ``Qt::ElideMiddle`` - For example: "He...ld"
 -  ``Qt::ElideRight`` - For example: "Hello..."
 
-**See also**
-`elideWidth </sdk/apps/qml/QtQuick/TextMetrics#elideWidth-prop>`__ and
-elidedText.
+**See also** :ref:`elideWidth <sdk_qtquick_textmetrics#elideWidth-prop>`
+and elidedText.
 
 | 
+
+.. _sdk_qtquick_textmetrics_elideWidth-prop:
 
 +--------------------------------------------------------------------------+
 |        \ elideWidth : real                                               |
@@ -106,18 +113,22 @@ elidedText.
 This property holds the largest width the text can have (in pixels)
 before eliding will occur.
 
-**See also** `elide </sdk/apps/qml/QtQuick/TextMetrics#elide-prop>`__
-and elidedText.
+**See also** :ref:`elide <sdk_qtquick_textmetrics#elide-prop>` and
+elidedText.
 
 | 
 
+.. _sdk_qtquick_textmetrics_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ font : `font </sdk/apps/qml/QtQuick/TextMetrics#font-prop>`__   |
+| :ref:` <>`\ font : `font <sdk_qtquick_textmetrics#font-prop>`          |
 +--------------------------------------------------------------------------+
 
 This property holds the font used for the metrics calculations.
 
 | 
+
+.. _sdk_qtquick_textmetrics_height-prop:
 
 +--------------------------------------------------------------------------+
 |        \ height : real                                                   |
@@ -125,7 +136,7 @@ This property holds the font used for the metrics calculations.
 
 This property holds the height of the bounding rectangle of the
 characters in the string specified by
-`text </sdk/apps/qml/QtQuick/qtquick-releasenotes#text>`__. It is
+`text </sdk/apps/qml/QtQuick/qtquick-releasenotes/#text>`_ . It is
 equivalent to:
 
 .. code:: cpp
@@ -133,9 +144,11 @@ equivalent to:
     textMetrics.boundingRect.height
 
 **See also**
-`boundingRect </sdk/apps/qml/QtQuick/TextMetrics#boundingRect-prop>`__.
+:ref:`boundingRect <sdk_qtquick_textmetrics#boundingRect-prop>`.
 
 | 
+
+.. _sdk_qtquick_textmetrics_text-prop:
 
 +--------------------------------------------------------------------------+
 |        \ text : string                                                   |
@@ -145,18 +158,22 @@ This property holds the text used for the metrics calculations.
 
 | 
 
+.. _sdk_qtquick_textmetrics_tightBoundingRect-prop:
+
 +--------------------------------------------------------------------------+
 |        \ tightBoundingRect : rect                                        |
 +--------------------------------------------------------------------------+
 
 This property holds a tight bounding rectangle around the characters in
 the string specified by
-`text </sdk/apps/qml/QtQuick/qtquick-releasenotes#text>`__.
+`text </sdk/apps/qml/QtQuick/qtquick-releasenotes/#text>`_ .
 
 **See also** QFontMetricsF::tightBoundingRect() and
-`boundingRect </sdk/apps/qml/QtQuick/TextMetrics#boundingRect-prop>`__.
+:ref:`boundingRect <sdk_qtquick_textmetrics#boundingRect-prop>`.
 
 | 
+
+.. _sdk_qtquick_textmetrics_width-prop:
 
 +--------------------------------------------------------------------------+
 |        \ width : real                                                    |
@@ -164,7 +181,7 @@ the string specified by
 
 This property holds the width of the bounding rectangle of the
 characters in the string specified by
-`text </sdk/apps/qml/QtQuick/qtquick-releasenotes#text>`__. It is
+`text </sdk/apps/qml/QtQuick/qtquick-releasenotes/#text>`_ . It is
 equivalent to:
 
 .. code:: cpp
@@ -172,6 +189,6 @@ equivalent to:
     textMetrics.boundingRect.width
 
 **See also**
-`boundingRect </sdk/apps/qml/QtQuick/TextMetrics#boundingRect-prop>`__.
+:ref:`boundingRect <sdk_qtquick_textmetrics#boundingRect-prop>`.
 
 | 

@@ -1,55 +1,57 @@
+.. _sdk_qtquick_animation:
+QtQuick Animation
+=================
+
 Is the base of all QML animations
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtQuick 2.4                   |
 +--------------------------------------+--------------------------------------+
-| Inherited By:                        | `AnchorAnimation </sdk/apps/qml/QtQu |
-|                                      | ick/AnchorAnimation/>`__,            |
-|                                      | `ParallelAnimation </sdk/apps/qml/Qt |
-|                                      | Quick/ParallelAnimation/>`__,        |
-|                                      | `ParentAnimation </sdk/apps/qml/QtQu |
-|                                      | ick/ParentAnimation/>`__,            |
-|                                      | `PathAnimation </sdk/apps/qml/QtQuic |
-|                                      | k/PathAnimation/>`__,                |
-|                                      | `PauseAnimation </sdk/apps/qml/QtQui |
-|                                      | ck/PauseAnimation/>`__,              |
-|                                      | `PropertyAction </sdk/apps/qml/QtQui |
-|                                      | ck/PropertyAction/>`__,              |
-|                                      | `PropertyAnimation </sdk/apps/qml/Qt |
-|                                      | Quick/PropertyAnimation/>`__,        |
-|                                      | `ScriptAction </sdk/apps/qml/QtQuick |
-|                                      | /ScriptAction/>`__,                  |
+| Inherited By:                        | :ref:`AnchorAnimation <sdk_qtquick_anchor |
+|                                      | animation>`_ ,                       |
+|                                      | :ref:`ParallelAnimation <sdk_qtquick_para |
+|                                      | llelanimation>`_ ,                   |
+|                                      | :ref:`ParentAnimation <sdk_qtquick_parent |
+|                                      | animation>`_ ,                       |
+|                                      | :ref:`PathAnimation <sdk_qtquick_pathanim |
+|                                      | ation>`_ ,                           |
+|                                      | :ref:`PauseAnimation <sdk_qtquick_pausean |
+|                                      | imation>`_ ,                         |
+|                                      | :ref:`PropertyAction <sdk_qtquick_propert |
+|                                      | yaction>`_ ,                         |
+|                                      | :ref:`PropertyAnimation <sdk_qtquick_prop |
+|                                      | ertyanimation>`_ ,                   |
+|                                      | :ref:`ScriptAction <sdk_qtquick_scriptact |
+|                                      | ion>`_ ,                             |
 |                                      | and                                  |
-|                                      | `SequentialAnimation </sdk/apps/qml/ |
-|                                      | QtQuick/SequentialAnimation/>`__.    |
+|                                      | :ref:`SequentialAnimation <sdk_qtquick_se |
+|                                      | quentialanimation>`_ .               |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`alwaysRunToEnd </sdk/apps/qml/QtQuick/Animation#alwaysRunToEnd-prop>`__****
+-  :ref:`alwaysRunToEnd <sdk_qtquick_animation_alwaysRunToEnd-prop>`
    : bool
--  ****`loops </sdk/apps/qml/QtQuick/Animation#loops-prop>`__**** : int
--  ****`paused </sdk/apps/qml/QtQuick/Animation#paused-prop>`__**** :
-   bool
--  ****`running </sdk/apps/qml/QtQuick/Animation#running-prop>`__**** :
-   bool
+-  :ref:`loops <sdk_qtquick_animation_loops-prop>` : int
+-  :ref:`paused <sdk_qtquick_animation_paused-prop>` : bool
+-  :ref:`running <sdk_qtquick_animation_running-prop>` : bool
 
 Signals
 -------
 
--  ****`started </sdk/apps/qml/QtQuick/Animation#started-signal>`__****\ ()
--  ****`stopped </sdk/apps/qml/QtQuick/Animation#stopped-signal>`__****\ ()
+-  :ref:`started <sdk_qtquick_animation_started-signal>`\ ()
+-  :ref:`stopped <sdk_qtquick_animation_stopped-signal>`\ ()
 
 Methods
 -------
 
--  ****`complete </sdk/apps/qml/QtQuick/Animation#complete-method>`__****\ ()
--  ****`pause </sdk/apps/qml/QtQuick/Animation#pause-method>`__****\ ()
--  ****`restart </sdk/apps/qml/QtQuick/Animation#restart-method>`__****\ ()
--  ****`resume </sdk/apps/qml/QtQuick/Animation#resume-method>`__****\ ()
--  ****`start </sdk/apps/qml/QtQuick/Animation#start-method>`__****\ ()
--  ****`stop </sdk/apps/qml/QtQuick/Animation#stop-method>`__****\ ()
+-  :ref:`complete <sdk_qtquick_animation_complete-method>`\ ()
+-  :ref:`pause <sdk_qtquick_animation_pause-method>`\ ()
+-  :ref:`restart <sdk_qtquick_animation_restart-method>`\ ()
+-  :ref:`resume <sdk_qtquick_animation_resume-method>`\ ()
+-  :ref:`start <sdk_qtquick_animation_start-method>`\ ()
+-  :ref:`stop <sdk_qtquick_animation_stop-method>`\ ()
 
 Detailed Description
 --------------------
@@ -61,6 +63,8 @@ Animation type directly will result in an error.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_animation_alwaysRunToEnd-prop:
 
 +--------------------------------------------------------------------------+
 |        \ alwaysRunToEnd : bool                                           |
@@ -82,6 +86,8 @@ By default, the alwaysRunToEnd property is not set.
 **Note:** alwaysRunToEnd has no effect on animations in a Transition.
 
 | 
+
+.. _sdk_qtquick_animation_loops-prop:
 
 +--------------------------------------------------------------------------+
 |        \ loops : int                                                     |
@@ -111,6 +117,8 @@ In the following example, the rectangle will spin indefinitely.
 
 | 
 
+.. _sdk_qtquick_animation_paused-prop:
+
 +--------------------------------------------------------------------------+
 |        \ paused : bool                                                   |
 +--------------------------------------------------------------------------+
@@ -127,6 +135,8 @@ By default, animations are not paused.
 
 | 
 
+.. _sdk_qtquick_animation_running-prop:
+
 +--------------------------------------------------------------------------+
 |        \ running : bool                                                  |
 +--------------------------------------------------------------------------+
@@ -135,8 +145,7 @@ This property holds whether the animation is currently running.
 
 The ``running`` property can be set to declaratively control whether or
 not an animation is running. The following example will animate a
-rectangle whenever the `MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__
-is pressed.
+rectangle whenever the :ref:`MouseArea <sdk_qtquick_mousearea>` is pressed.
 
 .. code:: cpp
 
@@ -170,6 +179,8 @@ they are set to running by default.
 Signal Documentation
 --------------------
 
+.. _sdk_qtquick_animation_started()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ started()                                                       |
 +--------------------------------------------------------------------------+
@@ -184,6 +195,8 @@ The corresponding handler is ``onStarted``.
 
 | 
 
+.. _sdk_qtquick_animation_stopped()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ stopped()                                                       |
 +--------------------------------------------------------------------------+
@@ -197,10 +210,9 @@ It is only triggered for top-level, standalone animations. It will not
 be triggered for animations in a Behavior or Transition, or animations
 that are part of an animation group.
 
-If
-`alwaysRunToEnd </sdk/apps/qml/QtQuick/Animation#alwaysRunToEnd-prop>`__
-is true, this signal will not be emitted until the animation has
-completed its current iteration.
+If :ref:`alwaysRunToEnd <sdk_qtquick_animation#alwaysRunToEnd-prop>` is
+true, this signal will not be emitted until the animation has completed
+its current iteration.
 
 The corresponding handler is ``onStopped``.
 
@@ -208,6 +220,8 @@ The corresponding handler is ``onStopped``.
 
 Method Documentation
 --------------------
+
+.. _sdk_qtquick_animation_complete-method:
 
 +--------------------------------------------------------------------------+
 |        \ complete()                                                      |
@@ -234,6 +248,8 @@ way through.
 
 | 
 
+.. _sdk_qtquick_animation_pause-method:
+
 +--------------------------------------------------------------------------+
 |        \ pause()                                                         |
 +--------------------------------------------------------------------------+
@@ -246,6 +262,8 @@ call to ``pause()``.
 
 | 
 
+.. _sdk_qtquick_animation_restart-method:
+
 +--------------------------------------------------------------------------+
 |        \ restart()                                                       |
 +--------------------------------------------------------------------------+
@@ -256,6 +274,8 @@ This is a convenience method, and is equivalent to calling ``stop()``
 and then ``start()``.
 
 | 
+
+.. _sdk_qtquick_animation_resume-method:
 
 +--------------------------------------------------------------------------+
 |        \ resume()                                                        |
@@ -269,6 +289,8 @@ has no effect. The ``paused`` property will be false following a call to
 
 | 
 
+.. _sdk_qtquick_animation_start-method:
+
 +--------------------------------------------------------------------------+
 |        \ start()                                                         |
 +--------------------------------------------------------------------------+
@@ -279,6 +301,8 @@ If the animation is already running, calling this method has no effect.
 The ``running`` property will be true following a call to ``start()``.
 
 | 
+
+.. _sdk_qtquick_animation_stop-method:
 
 +--------------------------------------------------------------------------+
 |        \ stop()                                                          |

@@ -1,3 +1,7 @@
+.. _sdk_scopejs_previewreply:
+ScopeJS PreviewReply
+====================
+
 
 Allows the results of a preview to be sent to the preview requester.
 

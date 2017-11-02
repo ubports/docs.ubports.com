@@ -1,5 +1,9 @@
+.. _sdk_unity_scopes_qt_qcannedquery:
+unity.scopes.qt QCannedQuery
+============================
+
 Parameters of a search query.
-`More... </sdk/scopes/cpp/unity.scopes.qt/QCannedQuery#details>`__
+:ref:`More... <sdk_unity_scopes_qt_qcannedquery#details>`
 
 ``#include <unity/scopes/qt/QCannedQuery.h>``
 
@@ -8,9 +12,9 @@ Parameters of a search query.
 
          
 
-`QCannedQuery </sdk/scopes/cpp/unity.scopes.qt/QCannedQuery#adb7856712be37746fdc0038b4602b111>`__
+:ref:`QCannedQuery <sdk_unity_scopes_qt_qcannedquery#adb7856712be37746fdc0038b4602b111>`
 (QString const
-&\ `scope\_id </sdk/scopes/cpp/unity.scopes.qt/QCannedQuery#adf35e301629964cea60a0933e6d52110>`__)
+&\ :ref:`scope\_id <sdk_unity_scopes_qt_qcannedquery#adf35e301629964cea60a0933e6d52110>`)
 
  
 
@@ -20,11 +24,11 @@ Parameters of a search query.
 
          
 
-`QCannedQuery </sdk/scopes/cpp/unity.scopes.qt/QCannedQuery#a80403c0f728ed7af60a04c0debb06d6d>`__
+:ref:`QCannedQuery <sdk_unity_scopes_qt_qcannedquery#a80403c0f728ed7af60a04c0debb06d6d>`
 (QString const
-&\ `scope\_id </sdk/scopes/cpp/unity.scopes.qt/QCannedQuery#adf35e301629964cea60a0933e6d52110>`__,
+&\ :ref:`scope\_id <sdk_unity_scopes_qt_qcannedquery#adf35e301629964cea60a0933e6d52110>`,
 QString const &query\_str, QString const
-&\ `department\_id </sdk/scopes/cpp/unity.scopes.qt/QCannedQuery#aa8de764af79922d974e1bef6186be9ed>`__)
+&\ :ref:`department\_id <sdk_unity_scopes_qt_qcannedquery#aa8de764af79922d974e1bef6186be9ed>`)
 
  
 
@@ -35,7 +39,7 @@ QString const &query\_str, QString const
 
         void 
 
-`set\_department\_id </sdk/scopes/cpp/unity.scopes.qt/QCannedQuery#a848d48689bffc6f96cb70848201b8696>`__
+:ref:`set\_department\_id <sdk_unity_scopes_qt_qcannedquery#a848d48689bffc6f96cb70848201b8696>`
 (QString const &dep\_id)
 
  
@@ -46,7 +50,7 @@ QString const &query\_str, QString const
 
         void 
 
-`set\_query\_string </sdk/scopes/cpp/unity.scopes.qt/QCannedQuery#aecb3afcf45e6a7e1a17d81786b665bda>`__
+:ref:`set\_query\_string <sdk_unity_scopes_qt_qcannedquery#aecb3afcf45e6a7e1a17d81786b665bda>`
 (QString const &query\_str)
 
  
@@ -57,9 +61,9 @@ QString const &query\_str, QString const
 
         void 
 
-`set\_filter\_state </sdk/scopes/cpp/unity.scopes.qt/QCannedQuery#adab1469e1be84e02b0d2d2170b095673>`__
-(`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ const
-&\ `filter\_state </sdk/scopes/cpp/unity.scopes.qt/QCannedQuery#a4d9c022cf212f83907fc9cac6c314586>`__)
+:ref:`set\_filter\_state <sdk_unity_scopes_qt_qcannedquery#adab1469e1be84e02b0d2d2170b095673>`
+(`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  const
+&\ :ref:`filter\_state <sdk_unity_scopes_qt_qcannedquery#a4d9c022cf212f83907fc9cac6c314586>`)
 
  
 
@@ -69,7 +73,7 @@ QString const &query\_str, QString const
 
 QString 
 
-`scope\_id </sdk/scopes/cpp/unity.scopes.qt/QCannedQuery#adf35e301629964cea60a0933e6d52110>`__
+:ref:`scope\_id <sdk_unity_scopes_qt_qcannedquery#adf35e301629964cea60a0933e6d52110>`
 () const
 
  
@@ -80,7 +84,7 @@ QString 
 
 QString 
 
-`department\_id </sdk/scopes/cpp/unity.scopes.qt/QCannedQuery#aa8de764af79922d974e1bef6186be9ed>`__
+:ref:`department\_id <sdk_unity_scopes_qt_qcannedquery#aa8de764af79922d974e1bef6186be9ed>`
 () const
 
  
@@ -91,7 +95,7 @@ QString 
 
 QString 
 
-`query\_string </sdk/scopes/cpp/unity.scopes.qt/QCannedQuery#ad819a186fa6ad212959cd5c93b6fbf7e>`__
+:ref:`query\_string <sdk_unity_scopes_qt_qcannedquery#ad819a186fa6ad212959cd5c93b6fbf7e>`
 () const
 
  
@@ -102,7 +106,7 @@ QString 
 
 QString 
 
-`to\_uri </sdk/scopes/cpp/unity.scopes.qt/QCannedQuery#a1ff2ee31add772d96a954a61b0d1d6f6>`__
+:ref:`to\_uri <sdk_unity_scopes_qt_qcannedquery#a1ff2ee31add772d96a954a61b0d1d6f6>`
 () const
 
  
@@ -112,9 +116,9 @@ QString 
 
  
 
-`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ 
+`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  
 
-`filter\_state </sdk/scopes/cpp/unity.scopes.qt/QCannedQuery#a4d9c022cf212f83907fc9cac6c314586>`__
+:ref:`filter\_state <sdk_unity_scopes_qt_qcannedquery#a4d9c022cf212f83907fc9cac6c314586>`
 () const
 
  
@@ -125,7 +129,7 @@ QString 
 
 bool 
 
-`has\_user\_data </sdk/scopes/cpp/unity.scopes.qt/QCannedQuery#acc27503e32e26b584c831435c485763c>`__
+:ref:`has\_user\_data <sdk_unity_scopes_qt_qcannedquery#acc27503e32e26b584c831435c485763c>`
 () const
 
  
@@ -136,7 +140,7 @@ bool 
 
 QVariant 
 
-`user\_data </sdk/scopes/cpp/unity.scopes.qt/QCannedQuery#acac6151094bc731f152490b468a03471>`__
+:ref:`user\_data <sdk_unity_scopes_qt_qcannedquery#acac6151094bc731f152490b468a03471>`
 () const
 
  
@@ -152,42 +156,37 @@ usual value semantics.
 
          
 
-**QCannedQuery**
-(`QCannedQuery </sdk/scopes/cpp/unity.scopes.qt/QCannedQuery/>`__ const
-&other)
+**QCannedQuery** (:ref:`QCannedQuery <sdk_unity_scopes_qt_qcannedquery>`
+const &other)
 
  
 
          
 
-**QCannedQuery**
-(`QCannedQuery </sdk/scopes/cpp/unity.scopes.qt/QCannedQuery/>`__ &&)
+**QCannedQuery** (:ref:`QCannedQuery <sdk_unity_scopes_qt_qcannedquery>`
+&&)
 
  
 
-        `QCannedQuery </sdk/scopes/cpp/unity.scopes.qt/QCannedQuery/>`__
-& 
+:ref:` <>` `QCannedQuery <sdk_unity_scopes_qt_qcannedquery>` & 
 
-**operator=**
-(`QCannedQuery </sdk/scopes/cpp/unity.scopes.qt/QCannedQuery/>`__ const
+**operator=** (:ref:`QCannedQuery <sdk_unity_scopes_qt_qcannedquery>` const
 &other)
 
  
 
-        `QCannedQuery </sdk/scopes/cpp/unity.scopes.qt/QCannedQuery/>`__
-& 
+:ref:` <>` `QCannedQuery <sdk_unity_scopes_qt_qcannedquery>` & 
 
-**operator=**
-(`QCannedQuery </sdk/scopes/cpp/unity.scopes.qt/QCannedQuery/>`__ &&)
+**operator=** (:ref:`QCannedQuery <sdk_unity_scopes_qt_qcannedquery>` &&)
 
  
 
         Static Public Member Functions
 --------------------------------------
 
-static `QCannedQuery </sdk/scopes/cpp/unity.scopes.qt/QCannedQuery/>`__ 
+static :ref:`QCannedQuery <sdk_unity_scopes_qt_qcannedquery>` 
 
-`from\_uri </sdk/scopes/cpp/unity.scopes.qt/QCannedQuery#a7b049394639516f3895da0bc17b19bfc>`__
+:ref:`from\_uri <sdk_unity_scopes_qt_qcannedquery#a7b049394639516f3895da0bc17b19bfc>`
 (QString const &uri)
 
  
@@ -215,7 +214,7 @@ Member Function Documentation
 +----------------+----------------+----------------+----------------+----------------+
 
 Returns the department id of this
-`CannedQuery </sdk/scopes/cpp/unity.scopes.CannedQuery/>`__.
+`CannedQuery </sdk/scopes/cpp/unity.scopes.CannedQuery/>`_ .
 
 Returns
     The department id.
@@ -225,16 +224,16 @@ Returns
 | /sdk/scopes/cp |                |                |                |                |
 | p/unity.scopes |                |                |                |                |
 | .FilterState/> |                |                |                |                |
-| `__            |                |                |                |                |
+| `_             |                |                |                |                |
 | QCannedQuery:: |                |                |                |                |
 | filter\_state  |                |                |                |                |
 +----------------+----------------+----------------+----------------+----------------+
 
 Get state of the filters for this
-`CannedQuery </sdk/scopes/cpp/unity.scopes.CannedQuery/>`__.
+`CannedQuery </sdk/scopes/cpp/unity.scopes.CannedQuery/>`_ .
 
 Pass this state to methods of specific filter instances (such as
-`unity::scopes::OptionSelectorFilter::active\_options() </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter#a3015abeb0439ccd29bd61afa9b7059df>`__)to
+`unity::scopes::OptionSelectorFilter::active\_options() </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter/#a3015abeb0439ccd29bd61afa9b7059df>`_ )to
 examine filter state.
 
 Returns
@@ -247,19 +246,16 @@ Returns
 | | `QCannedQuer | (            | QStr |                                      |
 | ing      | *uri*        | )          |                                      |
 |    |              |                  |                                      |
-| | y </sdk/scop |              | cons |                                      |
+| | y <sdk_unity |              | cons |                                      |
 | t &      |              |            |                                      |
 |    |              |                  |                                      |
-| | es/cpp/unity |              |      |                                      |
+| | _scopes_qt_q |              |      |                                      |
 |          |              |            |                                      |
 |    |              |                  |                                      |
-| | .scopes.qt/Q |              |      |                                      |
+| | cannedquery> |              |      |                                      |
 |          |              |            |                                      |
 |    |              |                  |                                      |
-| | CannedQuery/ |              |      |                                      |
-|          |              |            |                                      |
-|    |              |                  |                                      |
-| | >`__         |              |      |                                      |
+| | `_           |              |      |                                      |
 |          |              |            |                                      |
 |    |              |                  |                                      |
 | | QCannedQuery |              |      |                                      |
@@ -273,11 +269,11 @@ Returns
 | ---+--------------+                  |                                      |
 +--------------------------------------+--------------------------------------+
 
-Recreates a `CannedQuery </sdk/scopes/cpp/unity.scopes.CannedQuery/>`__
+Recreates a `CannedQuery </sdk/scopes/cpp/unity.scopes.CannedQuery/>`_ 
 object from a scope:// URI.
 
 Returns
-    a `CannedQuery </sdk/scopes/cpp/unity.scopes.CannedQuery/>`__
+    a `CannedQuery </sdk/scopes/cpp/unity.scopes.CannedQuery/>`_ 
     instance
 
 Exceptions
@@ -304,7 +300,7 @@ Returns
 +----------------+----------------+----------------+----------------+----------------+
 
 Returns the query string of this
-`CannedQuery </sdk/scopes/cpp/unity.scopes.CannedQuery/>`__.
+`CannedQuery </sdk/scopes/cpp/unity.scopes.CannedQuery/>`_ .
 
 Returns
     The query string.
@@ -316,7 +312,7 @@ Returns
 +----------------+----------------+----------------+----------------+----------------+
 
 Returns the scope identifier of this
-`CannedQuery </sdk/scopes/cpp/unity.scopes.CannedQuery/>`__.
+`CannedQuery </sdk/scopes/cpp/unity.scopes.CannedQuery/>`_ .
 
 Returns
     The scope identifier.
@@ -328,7 +324,7 @@ Returns
 +----------------+----------------+----------------+----------------+----------------+
 
 Returns a string representation of this
-`CannedQuery </sdk/scopes/cpp/unity.scopes.CannedQuery/>`__ object as a
+`CannedQuery </sdk/scopes/cpp/unity.scopes.CannedQuery/>`_  object as a
 URI using scope:// schema.
 
 Returns

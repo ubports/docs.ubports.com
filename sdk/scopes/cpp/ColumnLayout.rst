@@ -1,12 +1,16 @@
+.. _sdk_columnlayout:
+ColumnLayout
+============
+
 Defines a layout for preview widgets with given column setup.
-`More... </sdk/scopes/cpp/unity.scopes.ColumnLayout#details>`__
+`More... </sdk/scopes/cpp/unity.scopes.ColumnLayout/#details>`_ 
 
         Public Member Functions
 -------------------------------
 
  
 
-`ColumnLayout </sdk/scopes/cpp/unity.scopes.ColumnLayout#ac93fd7c6681f2013b4dcf2ed16f95401>`__
+`ColumnLayout </sdk/scopes/cpp/unity.scopes.ColumnLayout/#ac93fd7c6681f2013b4dcf2ed16f95401>`_ 
 (int num\_of\_columns)
 
  
@@ -18,7 +22,7 @@ Defines a layout for preview widgets with given column setup.
 
 void 
 
-`add\_column </sdk/scopes/cpp/unity.scopes.ColumnLayout#a0a8db9f2725f9c56f8639c55412d931d>`__
+`add\_column </sdk/scopes/cpp/unity.scopes.ColumnLayout/#a0a8db9f2725f9c56f8639c55412d931d>`_ 
 (std::vector< std::string > widget\_ids)
 
  
@@ -29,7 +33,7 @@ void 
 
 int 
 
-`size </sdk/scopes/cpp/unity.scopes.ColumnLayout#abd5129b6d56ad2aaaeb4f454f13176dd>`__
+`size </sdk/scopes/cpp/unity.scopes.ColumnLayout/#abd5129b6d56ad2aaaeb4f454f13176dd>`_ 
 () const noexcept
 
  
@@ -40,7 +44,7 @@ int 
 
 int 
 
-`number\_of\_columns </sdk/scopes/cpp/unity.scopes.ColumnLayout#a3213620bbddcab29eb32a2eeff2bb8dd>`__
+`number\_of\_columns </sdk/scopes/cpp/unity.scopes.ColumnLayout/#a3213620bbddcab29eb32a2eeff2bb8dd>`_ 
 () const noexcept
 
  
@@ -52,7 +56,7 @@ int 
 
 std::vector< std::string > 
 
-`column </sdk/scopes/cpp/unity.scopes.ColumnLayout#a7457b565bd76d573f40241450a1f839f>`__
+`column </sdk/scopes/cpp/unity.scopes.ColumnLayout/#a7457b565bd76d573f40241450a1f839f>`_ 
 (int index) const
 
  
@@ -69,7 +73,7 @@ usual value semantics.
          
 
 **ColumnLayout**
-(`ColumnLayout </sdk/scopes/cpp/unity.scopes.ColumnLayout/>`__ const
+(`ColumnLayout </sdk/scopes/cpp/unity.scopes.ColumnLayout/>`_  const
 &other)
 
  
@@ -77,22 +81,22 @@ usual value semantics.
          
 
 **ColumnLayout**
-(`ColumnLayout </sdk/scopes/cpp/unity.scopes.ColumnLayout/>`__ &&)
+(`ColumnLayout </sdk/scopes/cpp/unity.scopes.ColumnLayout/>`_  &&)
 
  
 
-        `ColumnLayout </sdk/scopes/cpp/unity.scopes.ColumnLayout/>`__ & 
+        `ColumnLayout </sdk/scopes/cpp/unity.scopes.ColumnLayout/>`_  & 
 
 **operator=**
-(`ColumnLayout </sdk/scopes/cpp/unity.scopes.ColumnLayout/>`__ const
+(`ColumnLayout </sdk/scopes/cpp/unity.scopes.ColumnLayout/>`_  const
 &other)
 
  
 
-        `ColumnLayout </sdk/scopes/cpp/unity.scopes.ColumnLayout/>`__ & 
+        `ColumnLayout </sdk/scopes/cpp/unity.scopes.ColumnLayout/>`_  & 
 
 **operator=**
-(`ColumnLayout </sdk/scopes/cpp/unity.scopes.ColumnLayout/>`__ &&)
+(`ColumnLayout </sdk/scopes/cpp/unity.scopes.ColumnLayout/>`_  &&)
 
  
 
@@ -101,10 +105,10 @@ Detailed Description
 
 Defines a layout for preview widgets with given column setup.
 
-`ColumnLayout </sdk/scopes/cpp/unity.scopes.ColumnLayout/>`__ defines
+`ColumnLayout </sdk/scopes/cpp/unity.scopes.ColumnLayout/>`_  defines
 how widgets should be laid out on a display with a given number of
 columns. In typical use cases, a scope creates
-`ColumnLayout </sdk/scopes/cpp/unity.scopes.ColumnLayout/>`__ instances
+`ColumnLayout </sdk/scopes/cpp/unity.scopes.ColumnLayout/>`_  instances
 for all supported displays (number of columns), and defines for every
 instance what widgets belong to which columns. The shell uses the layout
 that is most appropriate for the device in use. Column layout
@@ -115,12 +119,12 @@ An example of creating two layouts, one for a screen with one column and
 and one for a screen with two columns.
 
 void
-MyPreview::run(\ `PreviewReplyProxy </sdk/scopes/cpp/unity.scopes#a7b46ef0e880da4c75314fe60bdd55754>`__
+MyPreview::run(\ :ref:`PreviewReplyProxy <sdk_unity_scopes#a7b46ef0e880da4c75314fe60bdd55754>`
 const& reply)
 
 // layout definition for a screen with just 1 column
 
-`ColumnLayout </sdk/scopes/cpp/unity.scopes.ColumnLayout#ac93fd7c6681f2013b4dcf2ed16f95401>`__
+`ColumnLayout </sdk/scopes/cpp/unity.scopes.ColumnLayout/#ac93fd7c6681f2013b4dcf2ed16f95401>`_ 
 layout1col(1);
 
 layout1col.add\_column({"art", "header", "actions"}); // all widgets in
@@ -128,7 +132,7 @@ a single column
 
 // layout definition for a screen with 2 columns
 
-`ColumnLayout </sdk/scopes/cpp/unity.scopes.ColumnLayout#ac93fd7c6681f2013b4dcf2ed16f95401>`__
+`ColumnLayout </sdk/scopes/cpp/unity.scopes.ColumnLayout/#ac93fd7c6681f2013b4dcf2ed16f95401>`_ 
 layout2col(2);
 
 layout2col.add\_column({"art"}); // widget in 1st column
@@ -169,7 +173,7 @@ Constructor & Destructor Documentation
 
 Creates a layout definition that expects num\_of\_columns columns to be
 added with
-`ColumnLayout::add\_column </sdk/scopes/cpp/unity.scopes.ColumnLayout#a0a8db9f2725f9c56f8639c55412d931d>`__.
+`ColumnLayout::add\_column </sdk/scopes/cpp/unity.scopes.ColumnLayout/#a0a8db9f2725f9c56f8639c55412d931d>`_ .
 
 Parameters
     +--------------------+-----------------------------------------+
@@ -194,16 +198,16 @@ Member Function Documentation
 
 Adds a new column and assigns widgets to it.
 
-`ColumnLayout </sdk/scopes/cpp/unity.scopes.ColumnLayout/>`__ expects
+`ColumnLayout </sdk/scopes/cpp/unity.scopes.ColumnLayout/>`_  expects
 exactly the number of columns passed to the constructor to be created
 with the add\_column method.
 
 Exceptions
-    +-------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-    | unity::LogicException   | if an attempt is made to add more columns than specified in the constructor.                                                                                                                            |
-    +-------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-    | unity::LogicException   | from `unity::scopes::PreviewReply::register\_layout </sdk/scopes/cpp/unity.scopes.PreviewReply#a16a757d821bd3792d1a69112b1f13964>`__ if a layout has fewer columns than specified in the constructor.   |
-    +-------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    +-------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | unity::LogicException   | if an attempt is made to add more columns than specified in the constructor.                                                                                                                             |
+    +-------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | unity::LogicException   | from `unity::scopes::PreviewReply::register\_layout </sdk/scopes/cpp/unity.scopes.PreviewReply/#a16a757d821bd3792d1a69112b1f13964>`_  if a layout has fewer columns than specified in the constructor.   |
+    +-------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 +------------------------------------------------------------------+-----+--------+-----------+-----+---------+
 | std::vector< std::string > unity::scopes::ColumnLayout::column   | (   | int    | *index*   | )   | const   |
@@ -279,5 +283,5 @@ Get the current number of columns in this layout.
 
 Returns
     The number of columns added with
-    `add\_column() </sdk/scopes/cpp/unity.scopes.ColumnLayout#a0a8db9f2725f9c56f8639c55412d931d>`__.
+    `add\_column() </sdk/scopes/cpp/unity.scopes.ColumnLayout/#a0a8db9f2725f9c56f8639c55412d931d>`_ .
 

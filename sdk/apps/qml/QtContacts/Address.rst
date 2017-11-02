@@ -1,3 +1,7 @@
+.. _sdk_qtcontacts_address:
+QtContacts Address
+==================
+
 The Address element contains an address of a contact.
 
 +---------------------+-------------------------+
@@ -7,20 +11,15 @@ The Address element contains an address of a contact.
 Properties
 ----------
 
--  ****`country </sdk/apps/qml/QtContacts/Address#country-prop>`__**** :
-   string
--  ****`locality </sdk/apps/qml/QtContacts/Address#locality-prop>`__****
+-  :ref:`country <sdk_qtcontacts_address_country-prop>` : string
+-  :ref:`locality <sdk_qtcontacts_address_locality-prop>` : string
+-  :ref:`postOfficeBox <sdk_qtcontacts_address_postOfficeBox-prop>`
    : string
--  ****`postOfficeBox </sdk/apps/qml/QtContacts/Address#postOfficeBox-prop>`__****
-   : string
--  ****`postcode </sdk/apps/qml/QtContacts/Address#postcode-prop>`__****
-   : string
--  ****`region </sdk/apps/qml/QtContacts/Address#region-prop>`__**** :
-   string
--  ****`street </sdk/apps/qml/QtContacts/Address#street-prop>`__**** :
-   string
--  ****`subTypes </sdk/apps/qml/QtContacts/Address#subTypes-prop>`__****
-   : list<variant>
+-  :ref:`postcode <sdk_qtcontacts_address_postcode-prop>` : string
+-  :ref:`region <sdk_qtcontacts_address_region-prop>` : string
+-  :ref:`street <sdk_qtcontacts_address_street-prop>` : string
+-  :ref:`subTypes <sdk_qtcontacts_address_subTypes-prop>` :
+   list<variant>
 
 Detailed Description
 --------------------
@@ -44,6 +43,8 @@ element is part of the **QtContacts** module.
 Property Documentation
 ----------------------
 
+.. _sdk_qtcontacts_address_country-prop:
+
 +--------------------------------------------------------------------------+
 |        \ country : string                                                |
 +--------------------------------------------------------------------------+
@@ -52,6 +53,8 @@ This property holds the name of the country of the address.
 
 | 
 
+.. _sdk_qtcontacts_address_locality-prop:
+
 +--------------------------------------------------------------------------+
 |        \ locality : string                                               |
 +--------------------------------------------------------------------------+
@@ -59,6 +62,8 @@ This property holds the name of the country of the address.
 This property holds the name of the city, town or suburb of the address.
 
 | 
+
+.. _sdk_qtcontacts_address_postOfficeBox-prop:
 
 +--------------------------------------------------------------------------+
 |        \ postOfficeBox : string                                          |
@@ -69,6 +74,8 @@ address.
 
 | 
 
+.. _sdk_qtcontacts_address_postcode-prop:
+
 +--------------------------------------------------------------------------+
 |        \ postcode : string                                               |
 +--------------------------------------------------------------------------+
@@ -76,6 +83,8 @@ address.
 This property holds the postal code for the address.
 
 | 
+
+.. _sdk_qtcontacts_address_region-prop:
 
 +--------------------------------------------------------------------------+
 |        \ region : string                                                 |
@@ -86,6 +95,8 @@ region of the address.
 
 | 
 
+.. _sdk_qtcontacts_address_street-prop:
+
 +--------------------------------------------------------------------------+
 |        \ street : string                                                 |
 +--------------------------------------------------------------------------+
@@ -93,6 +104,8 @@ region of the address.
 This property holds the street number and street name of the address.
 
 | 
+
+.. _sdk_qtcontacts_address_subTypes-prop:
 
 +--------------------------------------------------------------------------+
 |        \ subTypes : list<variant>                                        |

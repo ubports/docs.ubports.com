@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_units:
+Ubuntu.Components Units
+=======================
+
 Units of measurement for sizes, spacing, margin, etc.
 
 +---------------------+--------------------------------+
@@ -7,17 +11,15 @@ Units of measurement for sizes, spacing, margin, etc.
 Properties
 ----------
 
--  ****`gridUnit </sdk/apps/qml/Ubuntu.Components/Units#gridUnit-prop>`__****
-   : real
+-  :ref:`gridUnit <sdk_ubuntu_components_units_gridUnit-prop>` :
+   real
 
 Methods
 -------
 
--  real
-   ****`dp </sdk/apps/qml/Ubuntu.Components/Units#dp-method>`__****\ (real
+-  real :ref:`dp <sdk_ubuntu_components_units_dp-method>`\ (real
    *value*)
--  real
-   ****`gu </sdk/apps/qml/Ubuntu.Components/Units#gu-method>`__****\ (real
+-  real :ref:`gu <sdk_ubuntu_components_units_gu-method>`\ (real
    *value*)
 
 Detailed Description
@@ -39,10 +41,12 @@ Example usage:
     }
 
 **See also** `Resolution
-Independence </sdk/apps/qml/UbuntuUserInterfaceToolkit/resolution-independence/>`__.
+Independence </sdk/apps/qml/UbuntuUserInterfaceToolkit/resolution-independence/>`_ .
 
 Property Documentation
 ----------------------
+
+.. _sdk_ubuntu_components_units_gridUnit-prop:
 
 +--------------------------------------------------------------------------+
 |        \ gridUnit : real                                                 |
@@ -55,6 +59,8 @@ The number of pixels 1 grid unit corresponds to.
 Method Documentation
 --------------------
 
+.. _sdk_ubuntu_components_units_real dp-method:
+
 +--------------------------------------------------------------------------+
 |        \ real dp(real *value*)                                           |
 +--------------------------------------------------------------------------+
@@ -63,6 +69,8 @@ Returns the number of pixels *value* density independent pixels
 correspond to.
 
 | 
+
+.. _sdk_ubuntu_components_units_real gu-method:
 
 +--------------------------------------------------------------------------+
 |        \ real gu(real *value*)                                           |

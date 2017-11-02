@@ -1,6 +1,10 @@
+.. _sdk_category:
+Category
+========
+
 A set of related results returned by a scope and displayed within a
 single pane in the Unity dash.
-`More... </sdk/scopes/cpp/unity.scopes.Category#details>`__
+`More... </sdk/scopes/cpp/unity.scopes.Category/#details>`_ 
 
 ``#include <unity/scopes/Category.h>``
 
@@ -15,7 +19,7 @@ Inheritance diagram for unity::scopes::Category:
 
 std::string 
 
-`id </sdk/scopes/cpp/unity.scopes.Category#aa14a4f95af60187f890ef475d0d8cabe>`__
+`id </sdk/scopes/cpp/unity.scopes.Category/#aa14a4f95af60187f890ef475d0d8cabe>`_ 
 () const
 
  
@@ -26,7 +30,7 @@ std::string 
 
 std::string 
 
-`title </sdk/scopes/cpp/unity.scopes.Category#a6f11a12253de78d61761b49b45951221>`__
+`title </sdk/scopes/cpp/unity.scopes.Category/#a6f11a12253de78d61761b49b45951221>`_ 
 () const
 
  
@@ -37,7 +41,7 @@ std::string 
 
 std::string 
 
-`icon </sdk/scopes/cpp/unity.scopes.Category#acb98bc96e054fcdf787684cc7d0422ca>`__
+`icon </sdk/scopes/cpp/unity.scopes.Category/#acb98bc96e054fcdf787684cc7d0422ca>`_ 
 () const
 
  
@@ -48,7 +52,7 @@ std::string 
 
 CannedQuery::SCPtr 
 
-`query </sdk/scopes/cpp/unity.scopes.Category#a88034923f3493c2cfb5500e7aeae35cc>`__
+`query </sdk/scopes/cpp/unity.scopes.Category/#a88034923f3493c2cfb5500e7aeae35cc>`_ 
 () const
 
  
@@ -57,10 +61,10 @@ CannedQuery::SCPtr 
 
  
 
-`CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`__
+`CategoryRenderer </sdk/scopes/cpp/unity.scopes.CategoryRenderer/>`_ 
 const & 
 
-`renderer\_template </sdk/scopes/cpp/unity.scopes.Category#a2668bac76f600a009934faa8b7eeea6d>`__
+`renderer\_template </sdk/scopes/cpp/unity.scopes.Category/#a2668bac76f600a009934faa8b7eeea6d>`_ 
 () const
 
  
@@ -75,7 +79,7 @@ Detailed Description
 A set of related results returned by a scope and displayed within a
 single pane in the Unity dash.
 
-To create a `Category </sdk/scopes/cpp/unity.scopes.Category/>`__, use
+To create a `Category </sdk/scopes/cpp/unity.scopes.Category/>`_ , use
 SearchReplyProxy::register\_category.
 
 See also
@@ -91,7 +95,7 @@ Member Function Documentation
 | n              |                |                |                |                |
 +----------------+----------------+----------------+----------------+----------------+
 
-Get icon of this `Category </sdk/scopes/cpp/unity.scopes.Category/>`__.
+Get icon of this `Category </sdk/scopes/cpp/unity.scopes.Category/>`_ .
 
 Returns
     The category icon.
@@ -103,7 +107,7 @@ Returns
 +----------------+----------------+----------------+----------------+----------------+
 
 Get identifier of this
-`Category </sdk/scopes/cpp/unity.scopes.Category/>`__.
+`Category </sdk/scopes/cpp/unity.scopes.Category/>`_ .
 
 Returns
     The category identifier.
@@ -126,7 +130,7 @@ Returns
 | rer </sdk/scop |                |                |                |                |
 | es/cpp/unity.s |                |                |                |                |
 | copes.Category |                |                |                |                |
-| Renderer/>`__  |                |                |                |                |
+| Renderer/>`_   |                |                |                |                |
 | const&         |                |                |                |                |
 | unity::scopes: |                |                |                |                |
 | :Category::ren |                |                |                |                |
@@ -135,7 +139,7 @@ Returns
 +----------------+----------------+----------------+----------------+----------------+
 
 Get renderer template of this
-`Category </sdk/scopes/cpp/unity.scopes.Category/>`__.
+`Category </sdk/scopes/cpp/unity.scopes.Category/>`_ .
 
 Returns
     The category renderer template.
@@ -147,7 +151,7 @@ Returns
 | le             |                |                |                |                |
 +----------------+----------------+----------------+----------------+----------------+
 
-Get title of this `Category </sdk/scopes/cpp/unity.scopes.Category/>`__.
+Get title of this `Category </sdk/scopes/cpp/unity.scopes.Category/>`_ .
 
 Returns
     The category title.

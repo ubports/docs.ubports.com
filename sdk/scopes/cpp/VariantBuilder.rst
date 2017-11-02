@@ -1,6 +1,10 @@
+.. _sdk_variantbuilder:
+VariantBuilder
+==============
+
 Helper class for creating and populating
-`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`__ containers.
-`More... </sdk/scopes/cpp/unity.scopes.VariantBuilder#details>`__
+`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`_  containers.
+`More... </sdk/scopes/cpp/unity.scopes.VariantBuilder/#details>`_ 
 
 ``#include <unity/scopes/VariantBuilder.h>``
 
@@ -9,9 +13,9 @@ Helper class for creating and populating
 
 void 
 
-`add\_tuple </sdk/scopes/cpp/unity.scopes.VariantBuilder#a6636c251658079d95b2c9da9fac297d5>`__
+`add\_tuple </sdk/scopes/cpp/unity.scopes.VariantBuilder/#a6636c251658079d95b2c9da9fac297d5>`_ 
 (std::initializer\_list< std::pair< std::string,
-`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`__ >> const &tuple)
+`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`_  >> const &tuple)
 
  
 
@@ -21,9 +25,9 @@ void 
 
 void 
 
-`add\_tuple </sdk/scopes/cpp/unity.scopes.VariantBuilder#aea54406435e03542d10da70cd04a6b80>`__
+`add\_tuple </sdk/scopes/cpp/unity.scopes.VariantBuilder/#aea54406435e03542d10da70cd04a6b80>`_ 
 (std::vector< std::pair< std::string,
-`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`__ >> const &tuple)
+`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`_  >> const &tuple)
 
  
 
@@ -31,9 +35,9 @@ void 
 
  
 
-`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`__ 
+`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`_  
 
-`end </sdk/scopes/cpp/unity.scopes.VariantBuilder#abc6c1133cffc6730df7470185460e802>`__
+`end </sdk/scopes/cpp/unity.scopes.VariantBuilder/#abc6c1133cffc6730df7470185460e802>`_ 
 ()
 
  
@@ -50,7 +54,7 @@ usual value semantics.
          
 
 **VariantBuilder**
-(`VariantBuilder </sdk/scopes/cpp/unity.scopes.VariantBuilder/>`__ const
+(`VariantBuilder </sdk/scopes/cpp/unity.scopes.VariantBuilder/>`_  const
 &other)
 
  
@@ -58,23 +62,23 @@ usual value semantics.
          
 
 **VariantBuilder**
-(`VariantBuilder </sdk/scopes/cpp/unity.scopes.VariantBuilder/>`__
+(`VariantBuilder </sdk/scopes/cpp/unity.scopes.VariantBuilder/>`_ 
 &&other)
 
  
 
-`VariantBuilder </sdk/scopes/cpp/unity.scopes.VariantBuilder/>`__ & 
+`VariantBuilder </sdk/scopes/cpp/unity.scopes.VariantBuilder/>`_  & 
 
 **operator=**
-(`VariantBuilder </sdk/scopes/cpp/unity.scopes.VariantBuilder/>`__ const
+(`VariantBuilder </sdk/scopes/cpp/unity.scopes.VariantBuilder/>`_  const
 &other)
 
  
 
-`VariantBuilder </sdk/scopes/cpp/unity.scopes.VariantBuilder/>`__ & 
+`VariantBuilder </sdk/scopes/cpp/unity.scopes.VariantBuilder/>`_  & 
 
 **operator=**
-(`VariantBuilder </sdk/scopes/cpp/unity.scopes.VariantBuilder/>`__
+(`VariantBuilder </sdk/scopes/cpp/unity.scopes.VariantBuilder/>`_ 
 &&other)
 
  
@@ -83,11 +87,11 @@ Detailed Description
 --------------------
 
 Helper class for creating and populating
-`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`__ containers.
+`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`_  containers.
 
 The main purpose of this class is to ease creation of variant containers
 needed for
-`PreviewWidget </sdk/scopes/cpp/unity.scopes.PreviewWidget/>`__
+`PreviewWidget </sdk/scopes/cpp/unity.scopes.PreviewWidget/>`_ 
 instances or any other classes that require non-trivial variant
 definitions.
 
@@ -105,17 +109,17 @@ template
 }
 
 can be created with
-`VariantBuilder </sdk/scopes/cpp/unity.scopes.VariantBuilder/>`__ as
+`VariantBuilder </sdk/scopes/cpp/unity.scopes.VariantBuilder/>`_  as
 follows:
 
 VariantBuilder builder;
 
 builder.add\_tuple({{"rating",
-`Variant::null </sdk/scopes/cpp/unity.scopes.Variant#a2bd2d5425fdec9af9340c22e3b47ac1c>`__\ ())},
+`Variant::null </sdk/scopes/cpp/unity.scopes.Variant/#a2bd2d5425fdec9af9340c22e3b47ac1c>`_ \ ())},
 {"review",
-`Variant::null </sdk/scopes/cpp/unity.scopes.Variant#a2bd2d5425fdec9af9340c22e3b47ac1c>`__\ ()},
+`Variant::null </sdk/scopes/cpp/unity.scopes.Variant/#a2bd2d5425fdec9af9340c22e3b47ac1c>`_ \ ()},
 {"author",
-`Variant::null </sdk/scopes/cpp/unity.scopes.Variant#a2bd2d5425fdec9af9340c22e3b47ac1c>`__\ ()}});
+`Variant::null </sdk/scopes/cpp/unity.scopes.Variant/#a2bd2d5425fdec9af9340c22e3b47ac1c>`_ \ ()}});
 
 Member Function Documentation
 -----------------------------
@@ -129,7 +133,7 @@ Member Function Documentation
 |              |              | dk/scopes/cp |              |              |              |
 |              |              | p/unity.scop |              |              |              |
 |              |              | es.Variant/> |              |              |              |
-|              |              | `__          |              |              |              |
+|              |              | `_           |              |              |              |
 |              |              | >> const &   |              |              |              |
 +--------------+--------------+--------------+--------------+--------------+--------------+
 
@@ -155,7 +159,7 @@ builder.add\_tuple({{"c", Variant(2)}, {"d", Variant(3)}});
 | tuple        |              | dk/scopes/cp |              |              |              |
 |              |              | p/unity.scop |              |              |              |
 |              |              | es.Variant/> |              |              |              |
-|              |              | `__          |              |              |              |
+|              |              | `_           |              |              |              |
 |              |              | >> const &   |              |              |              |
 +--------------+--------------+--------------+--------------+--------------+--------------+
 
@@ -169,7 +173,7 @@ language bindings.
 | `Variant </sdk | (              |                | )              |                |
 | /scopes/cpp/un |                |                |                |                |
 | ity.scopes.Var |                |                |                |                |
-| iant/>`__      |                |                |                |                |
+| iant/>`_       |                |                |                |                |
 | unity::scopes: |                |                |                |                |
 | :VariantBuilde |                |                |                |                |
 | r::end         |                |                |                |                |

@@ -1,3 +1,7 @@
+.. _sdk_qtquick_intvalidator:
+QtQuick IntValidator
+====================
+
 Defines a validator for integer values
 
 +---------------------+----------------------+
@@ -7,27 +11,27 @@ Defines a validator for integer values
 Properties
 ----------
 
--  ****`bottom </sdk/apps/qml/QtQuick/IntValidator#bottom-prop>`__**** :
-   int
--  ****`locale </sdk/apps/qml/QtQuick/IntValidator#locale-prop>`__**** :
-   string
--  ****`top </sdk/apps/qml/QtQuick/IntValidator#top-prop>`__**** : int
+-  :ref:`bottom <sdk_qtquick_intvalidator_bottom-prop>` : int
+-  :ref:`locale <sdk_qtquick_intvalidator_locale-prop>` : string
+-  :ref:`top <sdk_qtquick_intvalidator_top-prop>` : int
 
 Detailed Description
 --------------------
 
-The `IntValidator </sdk/apps/qml/QtQuick/IntValidator/>`__ type provides
-a validator for integer values.
+The :ref:`IntValidator <sdk_qtquick_intvalidator>` type provides a
+validator for integer values.
 
-If no `locale </sdk/apps/qml/QtQuick/IntValidator#locale-prop>`__ is set
-`IntValidator </sdk/apps/qml/QtQuick/IntValidator/>`__ uses the default
-locale to interpret the number and will accept locale specific digits,
-group separators, and positive and negative signs. In addition,
-`IntValidator </sdk/apps/qml/QtQuick/IntValidator/>`__ is always
-guaranteed to accept a number formatted according to the "C" locale.
+If no :ref:`locale <sdk_qtquick_intvalidator#locale-prop>` is set
+:ref:`IntValidator <sdk_qtquick_intvalidator>` uses the default locale to
+interpret the number and will accept locale specific digits, group
+separators, and positive and negative signs. In addition,
+:ref:`IntValidator <sdk_qtquick_intvalidator>` is always guaranteed to
+accept a number formatted according to the "C" locale.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_intvalidator_bottom-prop:
 
 +--------------------------------------------------------------------------+
 |        \ bottom : int                                                    |
@@ -39,6 +43,8 @@ available (typically -2147483647).
 
 | 
 
+.. _sdk_qtquick_intvalidator_locale-prop:
+
 +--------------------------------------------------------------------------+
 |        \ locale : string                                                 |
 +--------------------------------------------------------------------------+
@@ -48,6 +54,8 @@ This property holds the name of the locale used to interpret the number.
 **See also** Qt.locale().
 
 | 
+
+.. _sdk_qtquick_intvalidator_top-prop:
 
 +--------------------------------------------------------------------------+
 |        \ top : int                                                       |

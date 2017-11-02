@@ -1,3 +1,7 @@
+.. _sdk_qtquick_pathanimation:
+QtQuick PathAnimation
+=====================
+
 Animates an item along a path
 
 +--------------------------------------+--------------------------------------+
@@ -5,42 +9,39 @@ Animates an item along a path
 +--------------------------------------+--------------------------------------+
 | Since:                               | Qt 5.0                               |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Animation </sdk/apps/qml/QtQuick/An |
-|                                      | imation/>`__                         |
+| Inherits:                            | :ref:`Animation <sdk_qtquick_animation>`_ |
+|                                      | _                                    |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`anchorPoint </sdk/apps/qml/QtQuick/PathAnimation#anchorPoint-prop>`__****
+-  :ref:`anchorPoint <sdk_qtquick_pathanimation_anchorPoint-prop>`
    : point
--  ****`duration </sdk/apps/qml/QtQuick/PathAnimation#duration-prop>`__****
-   : int
--  ****`easing </sdk/apps/qml/QtQuick/PathAnimation#easing-prop>`__****
+-  :ref:`duration <sdk_qtquick_pathanimation_duration-prop>` : int
+-  :ref:`easing <sdk_qtquick_pathanimation_easing-prop>`
 
-   -  ****`easing.type </sdk/apps/qml/QtQuick/PathAnimation#easing.type-prop>`__****
+   -  :ref:`easing.type <sdk_qtquick_pathanimation_easing.type-prop>`
       : enumeration
-   -  ****`easing.amplitude </sdk/apps/qml/QtQuick/PathAnimation#easing.amplitude-prop>`__****
+   -  :ref:`easing.amplitude <sdk_qtquick_pathanimation_easing.amplitude-prop>`
       : real
-   -  ****`easing.bezierCurve </sdk/apps/qml/QtQuick/PathAnimation#easing.bezierCurve-prop>`__****
+   -  :ref:`easing.bezierCurve <sdk_qtquick_pathanimation_easing.bezierCurve-prop>`
       : list<real>
-   -  ****`easing.overshoot </sdk/apps/qml/QtQuick/PathAnimation#easing.overshoot-prop>`__****
+   -  :ref:`easing.overshoot <sdk_qtquick_pathanimation_easing.overshoot-prop>`
       : real
-   -  ****`easing.period </sdk/apps/qml/QtQuick/PathAnimation#easing.period-prop>`__****
+   -  :ref:`easing.period <sdk_qtquick_pathanimation_easing.period-prop>`
       : real
 
--  ****`endRotation </sdk/apps/qml/QtQuick/PathAnimation#endRotation-prop>`__****
+-  :ref:`endRotation <sdk_qtquick_pathanimation_endRotation-prop>`
    : real
--  ****`orientation </sdk/apps/qml/QtQuick/PathAnimation#orientation-prop>`__****
+-  :ref:`orientation <sdk_qtquick_pathanimation_orientation-prop>`
    : enumeration
--  ****`orientationEntryDuration </sdk/apps/qml/QtQuick/PathAnimation#orientationEntryDuration-prop>`__****
+-  :ref:`orientationEntryDuration <sdk_qtquick_pathanimation_orientationEntryDuration-prop>`
    : real
--  ****`orientationExitDuration </sdk/apps/qml/QtQuick/PathAnimation#orientationExitDuration-prop>`__****
+-  :ref:`orientationExitDuration <sdk_qtquick_pathanimation_orientationExitDuration-prop>`
    : real
--  ****`path </sdk/apps/qml/QtQuick/PathAnimation#path-prop>`__**** :
-   Path
--  ****`target </sdk/apps/qml/QtQuick/PathAnimation#target-prop>`__****
-   : Item
+-  :ref:`path <sdk_qtquick_pathanimation_path-prop>` : Path
+-  :ref:`target <sdk_qtquick_pathanimation_target-prop>` : Item
 
 Detailed Description
 --------------------
@@ -62,12 +63,14 @@ In the above case, the path start will be the item's current position,
 and the path end will be the item's target position in the target state.
 
 **See also** `Animation and Transitions in Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`__
+Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`_ 
 and
-`PathInterpolator </sdk/apps/qml/QtQuick/animation#pathinterpolator>`__.
+`PathInterpolator </sdk/apps/qml/QtQuick/animation/#pathinterpolator>`_ .
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_pathanimation_anchorPoint-prop:
 
 +--------------------------------------------------------------------------+
 |        \ anchorPoint : point                                             |
@@ -83,6 +86,8 @@ follow the path.
 
 | 
 
+.. _sdk_qtquick_pathanimation_duration-prop:
+
 +--------------------------------------------------------------------------+
 |        \ duration : int                                                  |
 +--------------------------------------------------------------------------+
@@ -93,15 +98,21 @@ The default value is 250.
 
 | 
 
+.. _sdk_qtquick_pathanimation_**easing group**-prop:
+
 +--------------------------------------------------------------------------+
 |        \ **easing group**                                                |
 +==========================================================================+
+.. _sdk_qtquick_pathanimation_easing.amplitude-prop:
 |        \ easing.type : enumeration                                       |
 +--------------------------------------------------------------------------+
+.. _sdk_qtquick_pathanimation_easing.bezierCurve-prop:
 |        \ easing.amplitude : real                                         |
 +--------------------------------------------------------------------------+
+.. _sdk_qtquick_pathanimation_easing.overshoot-prop:
 |        \ easing.bezierCurve : list<real>                                 |
 +--------------------------------------------------------------------------+
+.. _sdk_qtquick_pathanimation_easing.period-prop:
 |        \ easing.overshoot : real                                         |
 +--------------------------------------------------------------------------+
 |        \ easing.period : real                                            |
@@ -114,11 +125,13 @@ some curves you can also specify amplitude, period, overshoot or custom
 bezierCurve data. The default easing curve is ``Easing.Linear``.
 
 See the
-`PropertyAnimation::easing.type </sdk/apps/qml/QtQuick/PropertyAnimation#easing.type-prop>`__
+:ref:`PropertyAnimation::easing.type <sdk_qtquick_propertyanimation#easing.type-prop>`
 documentation for information about the different types of easing
 curves.
 
 | 
+
+.. _sdk_qtquick_pathanimation_endRotation-prop:
 
 +--------------------------------------------------------------------------+
 |        \ endRotation : real                                              |
@@ -127,17 +140,19 @@ curves.
 This property holds the ending rotation for the target.
 
 If an orientation has been specified for the
-`PathAnimation </sdk/apps/qml/QtQuick/animation#pathanimation>`__, and
+`PathAnimation </sdk/apps/qml/QtQuick/animation/#pathanimation>`_ , and
 the path doesn't end with the item at the desired rotation, the
 endRotation property can be used to manually specify an end rotation.
 
 This property is typically used with
-`orientationExitDuration </sdk/apps/qml/QtQuick/PathAnimation#orientationExitDuration-prop>`__,
+:ref:`orientationExitDuration <sdk_qtquick_pathanimation#orientationExitDuration-prop>`,
 as specifying an endRotation without an
-`orientationExitDuration </sdk/apps/qml/QtQuick/PathAnimation#orientationExitDuration-prop>`__
+:ref:`orientationExitDuration <sdk_qtquick_pathanimation#orientationExitDuration-prop>`
 may cause a jump to the final rotation, rather than a smooth transition.
 
 | 
+
+.. _sdk_qtquick_pathanimation_orientation-prop:
 
 +--------------------------------------------------------------------------+
 |        \ orientation : enumeration                                       |
@@ -147,24 +162,26 @@ This property controls the rotation of the item as it animates along the
 path.
 
 If a value other than ``Fixed`` is specified, the
-`PathAnimation </sdk/apps/qml/QtQuick/animation#pathanimation>`__ will
+`PathAnimation </sdk/apps/qml/QtQuick/animation/#pathanimation>`_  will
 rotate the item to achieve the specified orientation as it travels along
 the path.
 
--  `PathAnimation </sdk/apps/qml/QtQuick/animation#pathanimation>`__.Fixed
+-  `PathAnimation </sdk/apps/qml/QtQuick/animation/#pathanimation>`_ .Fixed
    (default) - the
-   `PathAnimation </sdk/apps/qml/QtQuick/animation#pathanimation>`__
+   `PathAnimation </sdk/apps/qml/QtQuick/animation/#pathanimation>`_ 
    will not control the rotation of the item.
--  `PathAnimation </sdk/apps/qml/QtQuick/animation#pathanimation>`__.RightFirst
+-  `PathAnimation </sdk/apps/qml/QtQuick/animation/#pathanimation>`_ .RightFirst
    - The right side of the item will lead along the path.
--  `PathAnimation </sdk/apps/qml/QtQuick/animation#pathanimation>`__.LeftFirst
+-  `PathAnimation </sdk/apps/qml/QtQuick/animation/#pathanimation>`_ .LeftFirst
    - The left side of the item will lead along the path.
--  `PathAnimation </sdk/apps/qml/QtQuick/animation#pathanimation>`__.BottomFirst
+-  `PathAnimation </sdk/apps/qml/QtQuick/animation/#pathanimation>`_ .BottomFirst
    - The bottom of the item will lead along the path.
--  `PathAnimation </sdk/apps/qml/QtQuick/animation#pathanimation>`__.TopFirst
+-  `PathAnimation </sdk/apps/qml/QtQuick/animation/#pathanimation>`_ .TopFirst
    - The top of the item will lead along the path.
 
 | 
+
+.. _sdk_qtquick_pathanimation_orientationEntryDuration-prop:
 
 +--------------------------------------------------------------------------+
 |        \ orientationEntryDuration : real                                 |
@@ -174,13 +191,15 @@ This property holds the duration (in milliseconds) of the transition in
 to the orientation.
 
 If an orientation has been specified for the
-`PathAnimation </sdk/apps/qml/QtQuick/animation#pathanimation>`__, and
+`PathAnimation </sdk/apps/qml/QtQuick/animation/#pathanimation>`_ , and
 the starting rotation of the item does not match that given by the
 orientation, orientationEntryDuration can be used to smoothly transition
 from the item's starting rotation to the rotation given by the path
 orientation.
 
 | 
+
+.. _sdk_qtquick_pathanimation_orientationExitDuration-prop:
 
 +--------------------------------------------------------------------------+
 |        \ orientationExitDuration : real                                  |
@@ -190,28 +209,30 @@ This property holds the duration (in milliseconds) of the transition out
 of the orientation.
 
 If an orientation and
-`endRotation </sdk/apps/qml/QtQuick/PathAnimation#endRotation-prop>`__
-have been specified for the
-`PathAnimation </sdk/apps/qml/QtQuick/animation#pathanimation>`__,
+:ref:`endRotation <sdk_qtquick_pathanimation#endRotation-prop>` have been
+specified for the
+`PathAnimation </sdk/apps/qml/QtQuick/animation/#pathanimation>`_ ,
 orientationExitDuration can be used to smoothly transition from the
 rotation given by the path orientation to the specified
-`endRotation </sdk/apps/qml/QtQuick/PathAnimation#endRotation-prop>`__.
+:ref:`endRotation <sdk_qtquick_pathanimation#endRotation-prop>`.
 
 | 
 
+.. _sdk_qtquick_pathanimation_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ path : `Path </sdk/apps/qml/QtQuick/Path/>`__                   |
+| :ref:` <>`\ path : `Path <sdk_qtquick_path>`                           |
 +--------------------------------------------------------------------------+
 
 This property holds the path to animate along.
 
 For more information on defining a path see the
-`Path </sdk/apps/qml/QtQuick/Path/>`__ documentation.
+:ref:`Path <sdk_qtquick_path>` documentation.
 
 | 
 
 +--------------------------------------------------------------------------+
-|        \ target : `Item </sdk/apps/qml/QtQuick/Item/>`__                 |
+| :ref:` <>`\ target : `Item <sdk_qtquick_item>`                         |
 +--------------------------------------------------------------------------+
 
 This property holds the item to animate.

@@ -1,3 +1,7 @@
+.. _sdk_qtqml_qt:
+QtQml Qt
+========
+
 Provides a global object with useful enums and functions from Qt.
 
 +---------------------+--------------------+
@@ -7,101 +11,91 @@ Provides a global object with useful enums and functions from Qt.
 Properties
 ----------
 
--  ****`application </sdk/apps/qml/QtQml/Qt#application-prop>`__**** :
-   object
--  ****`inputMethod </sdk/apps/qml/QtQml/Qt#inputMethod-prop>`__**** :
-   object
--  ****`platform </sdk/apps/qml/QtQml/Qt#platform-prop>`__**** : object
+-  :ref:`application <sdk_qtqml_qt_application-prop>` : object
+-  :ref:`inputMethod <sdk_qtqml_qt_inputMethod-prop>` : object
+-  :ref:`platform <sdk_qtqml_qt_platform-prop>` : object
 
 Methods
 -------
 
--  string ****`atob </sdk/apps/qml/QtQml/Qt#atob-method>`__****\ (data)
--  ****`binding </sdk/apps/qml/QtQml/Qt#binding-method>`__****\ (function)
--  string ****`btoa </sdk/apps/qml/QtQml/Qt#btoa-method>`__****\ (data)
--  color
-   ****`colorEqual </sdk/apps/qml/QtQml/Qt#colorEqual-method>`__****\ (color
+-  string :ref:`atob <sdk_qtqml_qt_atob-method>`\ (data)
+-  :ref:`binding <sdk_qtqml_qt_binding-method>`\ (function)
+-  string :ref:`btoa <sdk_qtqml_qt_btoa-method>`\ (data)
+-  color :ref:`colorEqual <sdk_qtqml_qt_colorEqual-method>`\ (color
    *lhs*, string *rhs*)
 -  object
-   ****`createComponent </sdk/apps/qml/QtQml/Qt#createComponent-method>`__****\ (url,
+   **:ref:`createComponent <sdk_qtqml_qt#createComponent-method>`**\ (url,
    mode, parent)
 -  object
-   ****`createQmlObject </sdk/apps/qml/QtQml/Qt#createQmlObject-method>`__****\ (string
+   **:ref:`createQmlObject <sdk_qtqml_qt#createQmlObject-method>`**\ (string
    *qml*, object *parent*, string *filepath*)
--  color
-   ****`darker </sdk/apps/qml/QtQml/Qt#darker-method>`__****\ (color
+-  color :ref:`darker <sdk_qtqml_qt_darker-method>`\ (color
    *baseColor*, real *factor*)
--  ****`font </sdk/apps/qml/QtQml/Qt#font-method>`__****\ (object
-   *fontSpecifier*)
+-  :ref:`font <sdk_qtqml_qt_font-method>`\ (object *fontSpecifier*)
 -  list<string>
-   ****`fontFamilies </sdk/apps/qml/QtQml/Qt#fontFamilies-method>`__****\ ()
+   **:ref:`fontFamilies <sdk_qtqml_qt#fontFamilies-method>`**\ ()
 -  string
-   ****`formatDate </sdk/apps/qml/QtQml/Qt#formatDate-method>`__****\ (datetime
+   **:ref:`formatDate <sdk_qtqml_qt#formatDate-method>`**\ (datetime
    *date*, variant *format*)
 -  string
-   ****`formatDateTime </sdk/apps/qml/QtQml/Qt#formatDateTime-method>`__****\ (datetime
+   **:ref:`formatDateTime <sdk_qtqml_qt#formatDateTime-method>`**\ (datetime
    *dateTime*, variant *format*)
 -  string
-   ****`formatTime </sdk/apps/qml/QtQml/Qt#formatTime-method>`__****\ (datetime
+   **:ref:`formatTime <sdk_qtqml_qt#formatTime-method>`**\ (datetime
    *time*, variant *format*)
--  color ****`hsla </sdk/apps/qml/QtQml/Qt#hsla-method>`__****\ (real
-   *hue*, real *saturation*, real *lightness*, real *alpha*)
--  object
-   ****`include </sdk/apps/qml/QtQml/Qt#include-method>`__****\ (string
+-  color :ref:`hsla <sdk_qtqml_qt_hsla-method>`\ (real *hue*, real
+   *saturation*, real *lightness*, real *alpha*)
+-  object :ref:`include <sdk_qtqml_qt_include-method>`\ (string
    *url*, jsobject *callback*)
 -  bool
-   ****`isQtObject </sdk/apps/qml/QtQml/Qt#isQtObject-method>`__****\ (object)
--  color
-   ****`lighter </sdk/apps/qml/QtQml/Qt#lighter-method>`__****\ (color
+   **:ref:`isQtObject <sdk_qtqml_qt#isQtObject-method>`**\ (object)
+-  color :ref:`lighter <sdk_qtqml_qt_lighter-method>`\ (color
    *baseColor*, real *factor*)
--  ****`locale </sdk/apps/qml/QtQml/Qt#locale-method>`__****\ (name)
--  string ****`md5 </sdk/apps/qml/QtQml/Qt#md5-method>`__****\ (data)
--  ****`matrix4x4 </sdk/apps/qml/QtQml/Qt#matrix4x4-method>`__****\ (real
-   *m11*, real *m12*, real *m13*, real *m14*, real *m21*, real *m22*,
-   real *m23*, real *m24*, real *m31*, real *m32*, real *m33*, real
-   *m34*, real *m41*, real *m42*, real *m43*, real *m44*)
+-  :ref:`locale <sdk_qtqml_qt_locale-method>`\ (name)
+-  string :ref:`md5 <sdk_qtqml_qt_md5-method>`\ (data)
+-  :ref:`matrix4x4 <sdk_qtqml_qt_matrix4x4-method>`\ (real *m11*,
+   real *m12*, real *m13*, real *m14*, real *m21*, real *m22*, real
+   *m23*, real *m24*, real *m31*, real *m32*, real *m33*, real *m34*,
+   real *m41*, real *m42*, real *m43*, real *m44*)
 -  bool
-   ****`openUrlExternally </sdk/apps/qml/QtQml/Qt#openUrlExternally-method>`__****\ (url
+   **:ref:`openUrlExternally <sdk_qtqml_qt#openUrlExternally-method>`**\ (url
    *target*)
--  point ****`point </sdk/apps/qml/QtQml/Qt#point-method>`__****\ (int
-   *x*, int *y*)
--  string ****`qsTr </sdk/apps/qml/QtQml/Qt#qsTr-method>`__****\ (string
+-  point :ref:`point <sdk_qtqml_qt_point-method>`\ (int *x*, int
+   *y*)
+-  string :ref:`qsTr <sdk_qtqml_qt_qsTr-method>`\ (string
    *sourceText*, string *disambiguation*, int *n*)
+-  string :ref:`qsTrId <sdk_qtqml_qt_qsTrId-method>`\ (string *id*,
+   int *n*)
 -  string
-   ****`qsTrId </sdk/apps/qml/QtQml/Qt#qsTrId-method>`__****\ (string
-   *id*, int *n*)
--  string
-   ****`qsTrIdNoOp </sdk/apps/qml/QtQml/Qt#qsTrIdNoOp-method>`__****\ (string
+   **:ref:`qsTrIdNoOp <sdk_qtqml_qt#qsTrIdNoOp-method>`**\ (string
    *id*)
--  string
-   ****`qsTrNoOp </sdk/apps/qml/QtQml/Qt#qsTrNoOp-method>`__****\ (string
+-  string :ref:`qsTrNoOp <sdk_qtqml_qt_qsTrNoOp-method>`\ (string
    *sourceText*, string *disambiguation*)
 -  string
-   ****`qsTranslate </sdk/apps/qml/QtQml/Qt#qsTranslate-method>`__****\ (string
+   **:ref:`qsTranslate <sdk_qtqml_qt#qsTranslate-method>`**\ (string
    *context*, string *sourceText*, string *disambiguation*, int *n*)
 -  string
-   ****`qsTranslateNoOp </sdk/apps/qml/QtQml/Qt#qsTranslateNoOp-method>`__****\ (string
+   **:ref:`qsTranslateNoOp <sdk_qtqml_qt#qsTranslateNoOp-method>`**\ (string
    *context*, string *sourceText*, string *disambiguation*)
--  ****`quaternion </sdk/apps/qml/QtQml/Qt#quaternion-method>`__****\ (real
+-  :ref:`quaternion <sdk_qtqml_qt_quaternion-method>`\ (real
    *scalar*, real *x*, real *y*, real *z*)
--  ****`quit </sdk/apps/qml/QtQml/Qt#quit-method>`__****\ ()
--  rect ****`rect </sdk/apps/qml/QtQml/Qt#rect-method>`__****\ (int *x*,
-   int *y*, int *width*, int *height*)
--  url
-   ****`resolvedUrl </sdk/apps/qml/QtQml/Qt#resolvedUrl-method>`__****\ (url
+-  :ref:`quit <sdk_qtqml_qt_quit-method>`\ ()
+-  rect :ref:`rect <sdk_qtqml_qt_rect-method>`\ (int *x*, int *y*,
+   int *width*, int *height*)
+-  url :ref:`resolvedUrl <sdk_qtqml_qt_resolvedUrl-method>`\ (url
    *url*)
--  color ****`rgba </sdk/apps/qml/QtQml/Qt#rgba-method>`__****\ (real
-   *red*, real *green*, real *blue*, real *alpha*)
--  ****`size </sdk/apps/qml/QtQml/Qt#size-method>`__****\ (int *width*,
-   int *height*)
--  color ****`tint </sdk/apps/qml/QtQml/Qt#tint-method>`__****\ (color
+-  color :ref:`rgba <sdk_qtqml_qt_rgba-method>`\ (real *red*, real
+   *green*, real *blue*, real *alpha*)
+-  :ref:`size <sdk_qtqml_qt_size-method>`\ (int *width*, int
+   *height*)
+-  color :ref:`tint <sdk_qtqml_qt_tint-method>`\ (color
    *baseColor*, color *tintColor*)
--  ****`vector2d </sdk/apps/qml/QtQml/Qt#vector2d-method>`__****\ (real
-   *x*, real *y*)
--  ****`vector3d </sdk/apps/qml/QtQml/Qt#vector3d-method>`__****\ (real
-   *x*, real *y*, real *z*)
--  ****`vector4d </sdk/apps/qml/QtQml/Qt#vector4d-method>`__****\ (real
-   *x*, real *y*, real *z*, real *w*)
+-  :ref:`vector2d <sdk_qtqml_qt_vector2d-method>`\ (real *x*, real
+   *y*)
+-  :ref:`vector3d <sdk_qtqml_qt_vector3d-method>`\ (real *x*, real
+   *y*, real *z*)
+-  :ref:`vector4d <sdk_qtqml_qt_vector4d-method>`\ (real *x*, real
+   *y*, real *z*, real *w*)
 
 Detailed Description
 --------------------
@@ -124,7 +118,7 @@ Enums
 -----
 
 The Qt object contains the enums available in the `Qt
-Namespace </sdk/apps/qml/QtQml/Qt/>`__. For example, you can access the
+Namespace <sdk_qtqml_qt>:ref:`. For example, you can access the
 Qt::LeftButton and Qt::RightButton enumeration values as
 ``Qt.LeftButton`` and ``Qt.RightButton``.
 
@@ -135,33 +129,30 @@ The Qt object also contains helper functions for creating objects of
 specific data types. This is primarily useful when setting the
 properties of an item when the property has one of the following types:
 
--  ``rect`` - use `Qt.rect() </sdk/apps/qml/QtQml/Qt#rect-method>`__
--  ``point`` - use `Qt.point() </sdk/apps/qml/QtQml/Qt#point-method>`__
--  ``size`` - use `Qt.size() </sdk/apps/qml/QtQml/Qt#size-method>`__
+-  :ref:``rect`` - use `Qt.rect() <sdk_qtqml_qt#rect-method>`
+-  :ref:``point`` - use `Qt.point() <sdk_qtqml_qt#point-method>`
+-  :ref:``size`` - use `Qt.size() <sdk_qtqml_qt#size-method>`
 
 If the ``QtQuick`` module has been imported, the following helper
 functions for creating objects of specific data types are also available
 for clients to use:
 
--  ``color`` - use `Qt.rgba() </sdk/apps/qml/QtQml/Qt#rgba-method>`__,
-   `Qt.hsla() </sdk/apps/qml/QtQml/Qt#hsla-method>`__,
-   `Qt.darker() </sdk/apps/qml/QtQml/Qt#darker-method>`__,
-   `Qt.lighter() </sdk/apps/qml/QtQml/Qt#lighter-method>`__ or
-   `Qt.tint() </sdk/apps/qml/QtQml/Qt#tint-method>`__
--  ``font`` - use `Qt.font() </sdk/apps/qml/QtQml/Qt#font-method>`__
--  ``vector2d`` - use
-   `Qt.vector2d() </sdk/apps/qml/QtQml/Qt#vector2d-method>`__
--  ``vector3d`` - use
-   `Qt.vector3d() </sdk/apps/qml/QtQml/Qt#vector3d-method>`__
--  ``vector4d`` - use
-   `Qt.vector4d() </sdk/apps/qml/QtQml/Qt#vector4d-method>`__
+-  :ref:``color`` - use `Qt.rgba() <sdk_qtqml_qt#rgba-method>`,
+   :ref:`Qt.hsla() <sdk_qtqml_qt#hsla-method>`,
+   :ref:`Qt.darker() <sdk_qtqml_qt#darker-method>`,
+   :ref:`Qt.lighter() <sdk_qtqml_qt#lighter-method>` or
+   :ref:`Qt.tint() <sdk_qtqml_qt#tint-method>`
+-  :ref:``font`` - use `Qt.font() <sdk_qtqml_qt#font-method>`
+-  :ref:``vector2d`` - use `Qt.vector2d() <sdk_qtqml_qt#vector2d-method>`
+-  :ref:``vector3d`` - use `Qt.vector3d() <sdk_qtqml_qt#vector3d-method>`
+-  :ref:``vector4d`` - use `Qt.vector4d() <sdk_qtqml_qt#vector4d-method>`
 -  ``quaternion`` - use
-   `Qt.quaternion() </sdk/apps/qml/QtQml/Qt#quaternion-method>`__
+   :ref:`Qt.quaternion() <sdk_qtqml_qt#quaternion-method>`
 -  ``matrix4x4`` - use
-   `Qt.matrix4x4() </sdk/apps/qml/QtQml/Qt#matrix4x4-method>`__
+   :ref:`Qt.matrix4x4() <sdk_qtqml_qt#matrix4x4-method>`
 
 There are also string based constructors for these types. See `QML Basic
-Types </sdk/apps/qml/QtQml/qtqml-typesystem-basictypes/>`__ for more
+Types </sdk/apps/qml/QtQml/qtqml-typesystem-basictypes/>`_  for more
 information.
 
 Date/Time Formatters
@@ -171,14 +162,14 @@ The Qt object contains several functions for formatting QDateTime, QDate
 and QTime values.
 
 -  `string Qt.formatDateTime(datetime date, variant
-   format) </sdk/apps/qml/QtQml/Qt#formatDateTime-method>`__
+   format) <sdk_qtqml_qt#formatDateTime-method>:ref:`
 -  `string Qt.formatDate(datetime date, variant
-   format) </sdk/apps/qml/QtQml/Qt#formatDate-method>`__
+   format) <sdk_qtqml_qt#formatDate-method>:ref:`
 -  `string Qt.formatTime(datetime date, variant
-   format) </sdk/apps/qml/QtQml/Qt#formatTime-method>`__
+   format) <sdk_qtqml_qt#formatTime-method>:ref:`
 
 The format specification is described at
-`Qt.formatDateTime </sdk/apps/qml/QtQml/Qt#formatDateTime-method>`__.
+:ref:`Qt.formatDateTime <sdk_qtqml_qt#formatDateTime-method>`.
 
 Dynamic Object Creation
 -----------------------
@@ -186,34 +177,33 @@ Dynamic Object Creation
 The following functions on the global object allow you to dynamically
 create QML items from files or strings. See `Dynamic QML Object Creation
 from
-JavaScript </sdk/apps/qml/QtQml/qtqml-javascript-dynamicobjectcreation/>`__
+JavaScript </sdk/apps/qml/QtQml/qtqml-javascript-dynamicobjectcreation/>`_ 
 for an overview of their use.
 
 -  `object
-   Qt.createComponent(url) </sdk/apps/qml/QtQml/Qt#createComponent-method>`__
+   Qt.createComponent(url) <sdk_qtqml_qt#createComponent-method>:ref:`
 -  `object Qt.createQmlObject(string qml, object parent, string
-   filepath) </sdk/apps/qml/QtQml/Qt#createQmlObject-method>`__
+   filepath) <sdk_qtqml_qt#createQmlObject-method>:ref:`
 
 Other Functions
 ---------------
 
 The following functions are also on the Qt object.
 
--  `Qt.quit() </sdk/apps/qml/QtQml/Qt#quit-method>`__
--  `Qt.md5(string) </sdk/apps/qml/QtQml/Qt#md5-method>`__
--  `string Qt.btoa(string) </sdk/apps/qml/QtQml/Qt#btoa-method>`__
--  `string Qt.atob(string) </sdk/apps/qml/QtQml/Qt#atob-method>`__
--  `object
-   Qt.binding(function) </sdk/apps/qml/QtQml/Qt#binding-method>`__
--  `object Qt.locale() </sdk/apps/qml/QtQml/Qt#locale-method>`__
--  `string
-   Qt.resolvedUrl(string) </sdk/apps/qml/QtQml/Qt#resolvedUrl-method>`__
--  `Qt.openUrlExternally(string) </sdk/apps/qml/QtQml/Qt#openUrlExternally-method>`__
--  `list<string>
-   Qt.fontFamilies() </sdk/apps/qml/QtQml/Qt#fontFamilies-method>`__
+-  :ref:`Qt.quit() <sdk_qtqml_qt#quit-method>`
+-  :ref:`Qt.md5(string) <sdk_qtqml_qt#md5-method>`
+-  :ref:`string Qt.btoa(string) <sdk_qtqml_qt#btoa-method>`
+-  :ref:`string Qt.atob(string) <sdk_qtqml_qt#atob-method>`
+-  :ref:`object Qt.binding(function) <sdk_qtqml_qt#binding-method>`
+-  :ref:`object Qt.locale() <sdk_qtqml_qt#locale-method>`
+-  :ref:`string Qt.resolvedUrl(string) <sdk_qtqml_qt#resolvedUrl-method>`
+-  :ref:`Qt.openUrlExternally(string) <sdk_qtqml_qt#openUrlExternally-method>`
+-  :ref:`list<string> Qt.fontFamilies() <sdk_qtqml_qt#fontFamilies-method>`
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtqml_qt_application-prop:
 
 +--------------------------------------------------------------------------+
 |        \ application : object                                            |
@@ -224,8 +214,11 @@ properties shared by many QML components.
 
 Its properties are:
 
+.. _sdk_qtqml_qt_``application.active``                Deprecated, use Qt.application.state-prop:
+
 +--------------------------------------+--------------------------------------+
 | ``application.active``               | Deprecated, use Qt.application.state |
+.. _sdk_qtqml_qt_``application.state``                 This read-only property indicates-prop:
 |                                      | == Qt.ApplicationActive instead.     |
 +--------------------------------------+--------------------------------------+
 | ``application.state``                | This read-only property indicates    |
@@ -306,6 +299,7 @@ Its properties are:
 |                                      |    level. Instead, you should unload |
 |                                      |    the entire UI and reload the QML  |
 |                                      |    files whenever the application    |
+.. _sdk_qtqml_qt_``application.layoutDirection``       This read-only property can be used-prop:
 |                                      |    becomes active again.             |
 +--------------------------------------+--------------------------------------+
 | ``application.layoutDirection``      | This read-only property can be used  |
@@ -330,32 +324,38 @@ Its properties are:
 |                                      |    positioned from left to right.    |
 |                                      | -  Qt.RightToLeft - Text and         |
 |                                      |    graphics elements should be       |
+.. _sdk_qtqml_qt_``application.arguments``             This is a string list of the-prop:
 |                                      |    positioned from right to left.    |
 +--------------------------------------+--------------------------------------+
 | ``application.arguments``            | This is a string list of the         |
 |                                      | arguments the executable was invoked |
+.. _sdk_qtqml_qt_``application.name``                  This is the application name set on-prop:
 |                                      | with.                                |
 +--------------------------------------+--------------------------------------+
 | ``application.name``                 | This is the application name set on  |
 |                                      | the QCoreApplication instance. This  |
 |                                      | property can be written to in order  |
+.. _sdk_qtqml_qt_``application.version``               This is the application version set-prop:
 |                                      | to set the application name.         |
 +--------------------------------------+--------------------------------------+
 | ``application.version``              | This is the application version set  |
 |                                      | on the QCoreApplication instance.    |
 |                                      | This property can be written to in   |
 |                                      | order to set the application         |
+.. _sdk_qtqml_qt_``application.organization``          This is the organization name set on-prop:
 |                                      | version.                             |
 +--------------------------------------+--------------------------------------+
 | ``application.organization``         | This is the organization name set on |
 |                                      | the QCoreApplication instance. This  |
 |                                      | property can be written to in order  |
+.. _sdk_qtqml_qt_``application.domain``                This is the organization domain set-prop:
 |                                      | to set the organization name.        |
 +--------------------------------------+--------------------------------------+
 | ``application.domain``               | This is the organization domain set  |
 |                                      | on the QCoreApplication instance.    |
 |                                      | This property can be written to in   |
 |                                      | order to set the organization        |
+.. _sdk_qtqml_qt_``application.supportsMultipleWindow  This read-only property can be used-prop:
 |                                      | domain.                              |
 +--------------------------------------+--------------------------------------+
 | ``application.supportsMultipleWindow | This read-only property can be used  |
@@ -396,6 +396,8 @@ This QML property was introduced in Qt 5.1.
 
 | 
 
+.. _sdk_qtqml_qt_inputMethod-prop:
+
 +--------------------------------------------------------------------------+
 |        \ inputMethod : object                                            |
 +--------------------------------------------------------------------------+
@@ -408,6 +410,8 @@ This QML property was introduced in Qt 5.0.
 
 | 
 
+.. _sdk_qtqml_qt_platform-prop:
+
 +--------------------------------------------------------------------------+
 |        \ platform : object                                               |
 +--------------------------------------------------------------------------+
@@ -415,6 +419,8 @@ This QML property was introduced in Qt 5.0.
 The ``platform`` object provides info about the underlying platform.
 
 Its properties are:
+
+.. _sdk_qtqml_qt_``platform.os``                       This read-only property contains the-prop:
 
 +--------------------------------------+--------------------------------------+
 | ``platform.os``                      | This read-only property contains the |
@@ -438,6 +444,8 @@ This QML property was introduced in Qt 4.8.
 Method Documentation
 --------------------
 
+.. _sdk_qtqml_qt_string atob-method:
+
 +--------------------------------------------------------------------------+
 |        \ string atob(data)                                               |
 +--------------------------------------------------------------------------+
@@ -446,12 +454,14 @@ ASCII to binary - this function returns a base64 decoding of ``data``.
 
 | 
 
+.. _sdk_qtqml_qt_binding-method:
+
 +--------------------------------------------------------------------------+
 |        \ binding(function)                                               |
 +--------------------------------------------------------------------------+
 
 Returns a JavaScript object representing a `property
-binding </sdk/apps/qml/QtQml/qtqml-syntax-propertybinding/>`__.
+binding </sdk/apps/qml/QtQml/qtqml-syntax-propertybinding/>`_ .
 
 There are two main use-cases for the function: firstly, to apply a
 property binding imperatively from JavaScript code:
@@ -471,7 +481,7 @@ property binding imperatively from JavaScript code:
 
 and secondly, to apply a property binding when initializing property
 values of dynamically constructed objects (via
-`Component.createObject() </sdk/apps/qml/QtQml/Component#createObject-method>`__
+:ref:`Component.createObject() <sdk_qtqml_component#createObject-method>`
 or Loader.setSource()).
 
 For example, assuming the existence of a DynamicText component:
@@ -536,7 +546,7 @@ should both be:
 
 This function cannot be used in property binding declarations (see the
 documentation on `binding declarations and binding
-assignments </sdk/apps/qml/QtQml/qtqml-syntax-propertybinding#qml-javascript-assignment>`__)
+assignments </sdk/apps/qml/QtQml/qtqml-syntax-propertybinding/#qml-javascript-assignment>`_ )
 except when the result is stored in an array bound to a var property.
 
 .. code:: qml
@@ -558,6 +568,8 @@ This QML method was introduced in Qt 5.0.
 
 | 
 
+.. _sdk_qtqml_qt_string btoa-method:
+
 +--------------------------------------------------------------------------+
 |        \ string btoa(data)                                               |
 +--------------------------------------------------------------------------+
@@ -565,6 +577,8 @@ This QML method was introduced in Qt 5.0.
 Binary to ASCII - this function returns a base64 encoding of ``data``.
 
 | 
+
+.. _sdk_qtqml_qt_color colorEqual-method:
 
 +--------------------------------------------------------------------------+
 |        \ color colorEqual(color *lhs*, string *rhs*)                     |
@@ -577,6 +591,8 @@ color basic type.
 
 | 
 
+.. _sdk_qtqml_qt_object createComponent-method:
+
 +--------------------------------------------------------------------------+
 |        \ object createComponent(url, mode, parent)                       |
 +--------------------------------------------------------------------------+
@@ -585,25 +601,25 @@ Returns a Component object created using the QML file at the specified
 *url*, or ``null`` if an empty string was given.
 
 The returned component's
-`Component::status </sdk/apps/qml/QtQml/Component#status-prop>`__
-property indicates whether the component was successfully created. If
-the status is ``Component.Error``, see
-`Component::errorString() </sdk/apps/qml/QtQml/Component#errorString-method>`__
+:ref:`Component::status <sdk_qtqml_component#status-prop>` property
+indicates whether the component was successfully created. If the status
+is ``Component.Error``, see
+:ref:`Component::errorString() <sdk_qtqml_component#errorString-method>`
 for an error description.
 
 If the optional *mode* parameter is set to ``Component.Asynchronous``,
 the component will be loaded in a background thread. The
-`Component::status </sdk/apps/qml/QtQml/Component#status-prop>`__
-property will be ``Component.Loading`` while it is loading. The status
-will change to ``Component.Ready`` if the component loads successfully,
-or ``Component.Error`` if loading fails.
+:ref:`Component::status <sdk_qtqml_component#status-prop>` property will be
+``Component.Loading`` while it is loading. The status will change to
+``Component.Ready`` if the component loads successfully, or
+``Component.Error`` if loading fails.
 
 If the optional *parent* parameter is given, it should refer to the
 object that will become the parent for the created
-`Component </sdk/apps/qml/QtQml/Component/>`__ object.
+:ref:`Component <sdk_qtqml_component>` object.
 
 Call
-`Component.createObject() </sdk/apps/qml/QtQml/Component#createObject-method>`__
+:ref:`Component.createObject() <sdk_qtqml_component#createObject-method>`
 on the returned component to create an object instance of the component.
 
 For example:
@@ -625,14 +641,16 @@ For example:
     }
 
 See `Dynamic QML Object Creation from
-JavaScript </sdk/apps/qml/QtQml/qtqml-javascript-dynamicobjectcreation/>`__
+JavaScript </sdk/apps/qml/QtQml/qtqml-javascript-dynamicobjectcreation/>`_ 
 for more information on using this function.
 
 To create a QML object from an arbitrary string of QML (instead of a
 file), use
-`Qt.createQmlObject() </sdk/apps/qml/QtQml/Qt#createQmlObject-method>`__.
+:ref:`Qt.createQmlObject() <sdk_qtqml_qt#createQmlObject-method>`.
 
 | 
+
+.. _sdk_qtqml_qt_object createQmlObject-method:
 
 +--------------------------------------------------------------------------+
 |        \ object createQmlObject(string *qml*, object *parent*, string    |
@@ -665,14 +683,15 @@ assign to non-existent property "colro""}.
 Note that this function returns immediately, and therefore may not work
 if the *qml* string loads new components (that is, external QML files
 that have not yet been loaded). If this is the case, consider using
-`Qt.createComponent() </sdk/apps/qml/QtQml/Qt#createComponent-method>`__
-instead.
+:ref:`Qt.createComponent() <sdk_qtqml_qt#createComponent-method>` instead.
 
 See `Dynamic QML Object Creation from
-JavaScript </sdk/apps/qml/QtQml/qtqml-javascript-dynamicobjectcreation/>`__
+JavaScript </sdk/apps/qml/QtQml/qtqml-javascript-dynamicobjectcreation/>`_ 
 for more information on using this function.
 
 | 
+
+.. _sdk_qtqml_qt_color darker-method:
 
 +--------------------------------------------------------------------------+
 |        \ color darker(color *baseColor*, real *factor*)                  |
@@ -683,10 +702,9 @@ Returns a color darker than ``baseColor`` by the ``factor`` provided.
 If the factor is greater than 1.0, this function returns a darker color.
 Setting factor to 3.0 returns a color that has one-third the brightness.
 If the factor is less than 1.0, the return color is lighter, but we
-recommend using the
-Qt.\ `lighter() </sdk/apps/qml/QtQml/Qt#lighter-method>`__ function for
-this purpose. If the factor is 0 or negative, the return value is
-unspecified.
+recommend using the Qt.\ :ref:`lighter() <sdk_qtqml_qt#lighter-method>`
+function for this purpose. If the factor is 0 or negative, the return
+value is unspecified.
 
 The function converts the current RGB color to HSV, divides the value
 (V) component by factor and converts the color back to RGB.
@@ -695,6 +713,8 @@ If ``factor`` is not supplied, returns a color 50% darker than
 ``baseColor`` (factor 2.0).
 
 | 
+
+.. _sdk_qtqml_qt_font-method:
 
 +--------------------------------------------------------------------------+
 |        \ font(object *fontSpecifier*)                                    |
@@ -708,6 +728,8 @@ keys will be ignored.
 
 | 
 
+.. _sdk_qtqml_qt_list<string> fontFamilies-method:
+
 +--------------------------------------------------------------------------+
 |        \ list<string> fontFamilies()                                     |
 +--------------------------------------------------------------------------+
@@ -715,6 +737,8 @@ keys will be ignored.
 Returns a list of the font families available to the application.
 
 | 
+
+.. _sdk_qtqml_qt_string formatDate-method:
 
 +--------------------------------------------------------------------------+
 |        \ string formatDate(datetime *date*, variant *format*)            |
@@ -730,9 +754,11 @@ of the possible format values as described for Qt.formatDateTime().
 If *format* is not specified, *date* is formatted using
 Qt.DefaultLocaleShortDate.
 
-**See also** `Locale </sdk/apps/qml/QtQml/Locale/>`__.
+**See also** :ref:`Locale <sdk_qtqml_locale>`.
 
 | 
+
+.. _sdk_qtqml_qt_string formatDateTime-method:
 
 +--------------------------------------------------------------------------+
 |        \ string formatDateTime(datetime *dateTime*, variant *format*)    |
@@ -755,25 +781,36 @@ Qt.DefaultLocaleShortDate. Otherwise, *format* should be either:
 If *format* specifies a format string, it should use the following
 expressions to specify the date:
 
+.. _sdk_qtqml_qt_Expression    Output-method:
+
 +--------------+----------------------------------------------------------------------------------------------+
 | Expression   | Output                                                                                       |
 +==============+==============================================================================================+
+.. _sdk_qtqml_qt_dd            the day as number with a leading zero-method:
 | d            | the day as number without a leading zero (1 to 31)                                           |
 +--------------+----------------------------------------------------------------------------------------------+
+.. _sdk_qtqml_qt_ddd           the abbreviated localized day name-method:
 | dd           | the day as number with a leading zero (01 to 31)                                             |
 +--------------+----------------------------------------------------------------------------------------------+
+.. _sdk_qtqml_qt_dddd          the long localized day name-method:
 | ddd          | the abbreviated localized day name (e.g. 'Mon' to 'Sun'). Uses QDate::shortDayName().        |
 +--------------+----------------------------------------------------------------------------------------------+
+.. _sdk_qtqml_qt_M             the month as number without a leading zero-method:
 | dddd         | the long localized day name (e.g. 'Monday' to 'Qt::Sunday'). Uses QDate::longDayName().      |
 +--------------+----------------------------------------------------------------------------------------------+
+.. _sdk_qtqml_qt_MM            the month as number with a leading zero-method:
 | M            | the month as number without a leading zero (1-12)                                            |
 +--------------+----------------------------------------------------------------------------------------------+
+.. _sdk_qtqml_qt_MMM           the abbreviated localized month name-method:
 | MM           | the month as number with a leading zero (01-12)                                              |
 +--------------+----------------------------------------------------------------------------------------------+
+.. _sdk_qtqml_qt_MMMM          the long localized month name-method:
 | MMM          | the abbreviated localized month name (e.g. 'Jan' to 'Dec'). Uses QDate::shortMonthName().    |
 +--------------+----------------------------------------------------------------------------------------------+
+.. _sdk_qtqml_qt_yy            the year as two digit number-method:
 | MMMM         | the long localized month name (e.g. 'January' to 'December'). Uses QDate::longMonthName().   |
 +--------------+----------------------------------------------------------------------------------------------+
+.. _sdk_qtqml_qt_yyyy          the year as four digit number-method:
 | yy           | the year as two digit number (00-99)                                                         |
 +--------------+----------------------------------------------------------------------------------------------+
 | yyyy         | the year as four digit number                                                                |
@@ -781,25 +818,36 @@ expressions to specify the date:
 
 In addition the following expressions can be used to specify the time:
 
+.. _sdk_qtqml_qt_Expression    Output-method:
+
 +--------------+-------------------------------------------------------------------------+
 | Expression   | Output                                                                  |
 +==============+=========================================================================+
+.. _sdk_qtqml_qt_hh            the hour with a leading zero-method:
 | h            | the hour without a leading zero (0 to 23 or 1 to 12 if AM/PM display)   |
 +--------------+-------------------------------------------------------------------------+
+.. _sdk_qtqml_qt_m             the minute without a leading zero-method:
 | hh           | the hour with a leading zero (00 to 23 or 01 to 12 if AM/PM display)    |
 +--------------+-------------------------------------------------------------------------+
+.. _sdk_qtqml_qt_mm            the minute with a leading zero-method:
 | m            | the minute without a leading zero (0 to 59)                             |
 +--------------+-------------------------------------------------------------------------+
+.. _sdk_qtqml_qt_s             the second without a leading zero-method:
 | mm           | the minute with a leading zero (00 to 59)                               |
 +--------------+-------------------------------------------------------------------------+
+.. _sdk_qtqml_qt_ss            the second with a leading zero-method:
 | s            | the second without a leading zero (0 to 59)                             |
 +--------------+-------------------------------------------------------------------------+
+.. _sdk_qtqml_qt_z             the milliseconds without leading zeroes-method:
 | ss           | the second with a leading zero (00 to 59)                               |
 +--------------+-------------------------------------------------------------------------+
+.. _sdk_qtqml_qt_zzz           the milliseconds with leading zeroes-method:
 | z            | the milliseconds without leading zeroes (0 to 999)                      |
 +--------------+-------------------------------------------------------------------------+
+.. _sdk_qtqml_qt_AP            use AM/PM display. *AP* will be replaced by either "AM" or "PM".-method:
 | zzz          | the milliseconds with leading zeroes (000 to 999)                       |
 +--------------+-------------------------------------------------------------------------+
+.. _sdk_qtqml_qt_ap            use am/pm display. *ap* will be replaced by either "am" or "pm".-method:
 | AP           | use AM/PM display. *AP* will be replaced by either "AM" or "PM".        |
 +--------------+-------------------------------------------------------------------------+
 | ap           | use am/pm display. *ap* will be replaced by either "am" or "pm".        |
@@ -818,25 +866,32 @@ For example, if the following date/time value was specified:
     var dateTime = new Date(2001, 5, 21, 14, 13, 09)
 
 This *dateTime* value could be passed to ``Qt.formatDateTime()``,
-`Qt.formatDate() </sdk/apps/qml/QtQml/Qt#formatDate-method>`__ or
-`Qt.formatTime() </sdk/apps/qml/QtQml/Qt#formatTime-method>`__ with the
-*format* values below to produce the following results:
+:ref:`Qt.formatDate() <sdk_qtqml_qt#formatDate-method>` or
+:ref:`Qt.formatTime() <sdk_qtqml_qt#formatTime-method>` with the *format*
+values below to produce the following results:
+
+.. _sdk_qtqml_qt_Format             Result-method:
 
 +-------------------+-----------------+
 | Format            | Result          |
 +===================+=================+
+.. _sdk_qtqml_qt_"ddd MMMM d yy"    Tue May 21 01-method:
 | "dd.MM.yyyy"      | 21.05.2001      |
 +-------------------+-----------------+
+.. _sdk_qtqml_qt_"hh-method:
 | "ddd MMMM d yy"   | Tue May 21 01   |
 +-------------------+-----------------+
+.. _sdk_qtqml_qt_"h-method:
 | "hh:mm:ss.zzz"    | 14:13:09.042    |
 +-------------------+-----------------+
 | "h:m:s ap"        | 2:13:9 pm       |
 +-------------------+-----------------+
 
-**See also** `Locale </sdk/apps/qml/QtQml/Locale/>`__.
+**See also** :ref:`Locale <sdk_qtqml_locale>`.
 
 | 
+
+.. _sdk_qtqml_qt_string formatTime-method:
 
 +--------------------------------------------------------------------------+
 |        \ string formatTime(datetime *time*, variant *format*)            |
@@ -848,14 +903,16 @@ according to ``format``.
 The *time* parameter may be a JavaScript ``Date`` object, a QTime, or
 QDateTime value. The *format* parameter may be any of the possible
 format values as described for
-`Qt.formatDateTime() </sdk/apps/qml/QtQml/Qt#formatDateTime-method>`__.
+:ref:`Qt.formatDateTime() <sdk_qtqml_qt#formatDateTime-method>`.
 
 If *format* is not specified, *time* is formatted using
 Qt.DefaultLocaleShortDate.
 
-**See also** `Locale </sdk/apps/qml/QtQml/Locale/>`__.
+**See also** :ref:`Locale <sdk_qtqml_locale>`.
 
 | 
+
+.. _sdk_qtqml_qt_color hsla-method:
 
 +--------------------------------------------------------------------------+
 |        \ color hsla(real *hue*, real *saturation*, real *lightness*,     |
@@ -867,6 +924,8 @@ Returns a color with the specified ``hue``, ``saturation``,
 range 0-1 inclusive.
 
 | 
+
+.. _sdk_qtqml_qt_object include-method:
 
 +--------------------------------------------------------------------------+
 |        \ object include(string *url*, jsobject *callback*)               |
@@ -882,13 +941,18 @@ Qt.include() returns an object that describes the status of the
 operation. The object has a single property, ``status``, that is set to
 one of the following values:
 
+.. _sdk_qtqml_qt_Symbol                   Value    Description-method:
+
 +-------------------------+---------+-------------------------------------------------------------------------------------------------------------------------------------+
 | Symbol                  | Value   | Description                                                                                                                         |
 +=========================+=========+=====================================================================================================================================+
+.. _sdk_qtqml_qt_result.LOADING           1        Data is being loaded from the network.-method:
 | result.OK               | 0       | The include completed successfully.                                                                                                 |
 +-------------------------+---------+-------------------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_qtqml_qt_result.NETWORK_ERROR    2        A network error occurred while fetching the url.-method:
 | result.LOADING          | 1       | Data is being loaded from the network.                                                                                              |
 +-------------------------+---------+-------------------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_qtqml_qt_result.EXCEPTION         3        A JavaScript exception occurred while executing the included code. An additional ``exception`` property will be set in this case.-method:
 | result.NETWORK\_ERROR   | 2       | A network error occurred while fetching the url.                                                                                    |
 +-------------------------+---------+-------------------------------------------------------------------------------------------------------------------------------------+
 | result.EXCEPTION        | 3       | A JavaScript exception occurred while executing the included code. An additional ``exception`` property will be set in this case.   |
@@ -902,6 +966,8 @@ call.
 
 | 
 
+.. _sdk_qtqml_qt_bool isQtObject-method:
+
 +--------------------------------------------------------------------------+
 |        \ bool isQtObject(object)                                         |
 +--------------------------------------------------------------------------+
@@ -910,6 +976,8 @@ Returns true if ``object`` is a valid reference to a Qt or QML object,
 otherwise false.
 
 | 
+
+.. _sdk_qtqml_qt_color lighter-method:
 
 +--------------------------------------------------------------------------+
 |        \ color lighter(color *baseColor*, real *factor*)                 |
@@ -920,10 +988,9 @@ Returns a color lighter than ``baseColor`` by the ``factor`` provided.
 If the factor is greater than 1.0, this functions returns a lighter
 color. Setting factor to 1.5 returns a color that is 50% brighter. If
 the factor is less than 1.0, the return color is darker, but we
-recommend using the
-Qt.\ `darker() </sdk/apps/qml/QtQml/Qt#darker-method>`__ function for
-this purpose. If the factor is 0 or negative, the return value is
-unspecified.
+recommend using the Qt.\ :ref:`darker() <sdk_qtqml_qt#darker-method>`
+function for this purpose. If the factor is 0 or negative, the return
+value is unspecified.
 
 The function converts the current RGB color to HSV, multiplies the value
 (V) component by factor and converts the color back to RGB.
@@ -932,6 +999,8 @@ If ``factor`` is not supplied, returns a color 50% lighter than
 ``baseColor`` (factor 1.5).
 
 | 
+
+.. _sdk_qtqml_qt_locale-method:
 
 +--------------------------------------------------------------------------+
 |        \ locale(name)                                                    |
@@ -950,9 +1019,11 @@ If the string violates the locale format, or language is not a valid ISO
 is not a valid ISO 3166 code, the most appropriate country is chosen for
 the specified language.
 
-**See also** `Locale </sdk/apps/qml/QtQml/Locale/>`__.
+**See also** :ref:`Locale <sdk_qtqml_locale>`.
 
 | 
+
+.. _sdk_qtqml_qt_string md5-method:
 
 +--------------------------------------------------------------------------+
 |        \ string md5(data)                                                |
@@ -961,6 +1032,8 @@ the specified language.
 Returns a hex string of the md5 hash of ``data``.
 
 | 
+
+.. _sdk_qtqml_qt_matrix4x4-method:
 
 +--------------------------------------------------------------------------+
 |        \ matrix4x4(real *m11*, real *m12*, real *m13*, real *m14*, real  |
@@ -974,6 +1047,8 @@ JavaScript array which contains the sixteen matrix values.
 
 | 
 
+.. _sdk_qtqml_qt_bool openUrlExternally-method:
+
 +--------------------------------------------------------------------------+
 |        \ bool openUrlExternally(url *target*)                            |
 +--------------------------------------------------------------------------+
@@ -984,14 +1059,17 @@ succeeds, and false otherwise.
 
 | 
 
+.. _sdk_qtqml_qt_-method:
+
 +--------------------------------------------------------------------------+
-|        \ `point </sdk/apps/qml/QtQml/Qt#point-method>`__ point(int *x*,  |
-| int *y*)                                                                 |
+| :ref:` <>`\ `point <sdk_qtqml_qt#point-method>` point(int *x*, int *y*)   |
 +--------------------------------------------------------------------------+
 
 Returns a Point with the specified ``x`` and ``y`` coordinates.
 
 | 
+
+.. _sdk_qtqml_qt_string qsTr-method:
 
 +--------------------------------------------------------------------------+
 |        \ string qsTr(string *sourceText*, string *disambiguation*, int   |
@@ -1016,6 +1094,8 @@ Example:
 **See also** Internationalization and Localization with Qt Quick.
 
 | 
+
+.. _sdk_qtqml_qt_string qsTrId-method:
 
 +--------------------------------------------------------------------------+
 |        \ string qsTrId(string *id*, int *n*)                             |
@@ -1061,6 +1141,8 @@ with Qt Quick.
 
 | 
 
+.. _sdk_qtqml_qt_string qsTrIdNoOp-method:
+
 +--------------------------------------------------------------------------+
 |        \ string qsTrIdNoOp(string *id*)                                  |
 +--------------------------------------------------------------------------+
@@ -1070,10 +1152,10 @@ Marks *id* for dynamic translation.
 Returns the *id*.
 
 QT\_TRID\_NOOP is used in conjunction with the dynamic translation
-function `qsTrId() </sdk/apps/qml/QtQml/Qt#qsTrId-method>`__. It
-identifies a string as requiring translation (so it can be identified by
+function :ref:`qsTrId() <sdk_qtqml_qt#qsTrId-method>`. It identifies a
+string as requiring translation (so it can be identified by
 ``lupdate``), but leaves the actual translation to
-`qsTrId() </sdk/apps/qml/QtQml/Qt#qsTrId-method>`__.
+:ref:`qsTrId() <sdk_qtqml_qt#qsTrId-method>`.
 
 Example:
 
@@ -1084,10 +1166,12 @@ Example:
         Text { text: qsTrId(greetingId) }
     }
 
-**See also** `qsTrId() </sdk/apps/qml/QtQml/Qt#qsTrId-method>`__ and
+**See also** :ref:`qsTrId() <sdk_qtqml_qt#qsTrId-method>` and
 Internationalization and Localization with Qt Quick.
 
 | 
+
+.. _sdk_qtqml_qt_string qsTrNoOp-method:
 
 +--------------------------------------------------------------------------+
 |        \ string qsTrNoOp(string *sourceText*, string *disambiguation*)   |
@@ -1103,9 +1187,9 @@ for *disambiguation*.
 Returns the *sourceText*.
 
 QT\_TR\_NOOP is used in conjunction with the dynamic translation
-functions `qsTr() </sdk/apps/qml/QtQml/Qt#qsTr-method>`__ and
-`qsTranslate() </sdk/apps/qml/QtQml/Qt#qsTranslate-method>`__. It
-identifies a string as requiring translation (so it can be identified by
+functions :ref:`qsTr() <sdk_qtqml_qt#qsTr-method>` and
+:ref:`qsTranslate() <sdk_qtqml_qt#qsTranslate-method>`. It identifies a
+string as requiring translation (so it can be identified by
 ``lupdate``), but leaves the actual translation to the dynamic
 functions.
 
@@ -1121,6 +1205,8 @@ Example:
 **See also** Internationalization and Localization with Qt Quick.
 
 | 
+
+.. _sdk_qtqml_qt_string qsTranslate-method:
 
 +--------------------------------------------------------------------------+
 |        \ string qsTranslate(string *context*, string *sourceText*,       |
@@ -1146,6 +1232,8 @@ Example:
 
 | 
 
+.. _sdk_qtqml_qt_string qsTranslateNoOp-method:
+
 +--------------------------------------------------------------------------+
 |        \ string qsTranslateNoOp(string *context*, string *sourceText*,   |
 | string *disambiguation*)                                                 |
@@ -1161,9 +1249,9 @@ for *disambiguation*.
 Returns the *sourceText*.
 
 QT\_TRANSLATE\_NOOP is used in conjunction with the dynamic translation
-functions `qsTr() </sdk/apps/qml/QtQml/Qt#qsTr-method>`__ and
-`qsTranslate() </sdk/apps/qml/QtQml/Qt#qsTranslate-method>`__. It
-identifies a string as requiring translation (so it can be identified by
+functions :ref:`qsTr() <sdk_qtqml_qt#qsTr-method>` and
+:ref:`qsTranslate() <sdk_qtqml_qt#qsTranslate-method>`. It identifies a
+string as requiring translation (so it can be identified by
 ``lupdate``), but leaves the actual translation to the dynamic
 functions.
 
@@ -1180,6 +1268,8 @@ Example:
 
 | 
 
+.. _sdk_qtqml_qt_quaternion-method:
+
 +--------------------------------------------------------------------------+
 |        \ quaternion(real *scalar*, real *x*, real *y*, real *z*)         |
 +--------------------------------------------------------------------------+
@@ -1188,6 +1278,8 @@ Returns a Quaternion with the specified ``scalar``, ``x``, ``y``, and
 ``z``.
 
 | 
+
+.. _sdk_qtqml_qt_quit-method:
 
 +--------------------------------------------------------------------------+
 |        \ quit()                                                          |
@@ -1200,9 +1292,11 @@ QQmlEngine::quit() signal to the QCoreApplication::quit() slot.
 
 | 
 
+.. _sdk_qtqml_qt_-method:
+
 +--------------------------------------------------------------------------+
-|        \ `rect </sdk/apps/qml/QtQml/Qt#rect-method>`__ rect(int *x*, int |
-| *y*, int *width*, int *height*)                                          |
+| :ref:` <>`\ `rect <sdk_qtqml_qt#rect-method>` rect(int *x*, int *y*, int  |
+| *width*, int *height*)                                                   |
 +--------------------------------------------------------------------------+
 
 Returns a ``rect`` with the top-left corner at ``x``, ``y`` and the
@@ -1213,6 +1307,8 @@ attributes with the given values.
 
 | 
 
+.. _sdk_qtqml_qt_url resolvedUrl-method:
+
 +--------------------------------------------------------------------------+
 |        \ url resolvedUrl(url *url*)                                      |
 +--------------------------------------------------------------------------+
@@ -1220,6 +1316,8 @@ attributes with the given values.
 Returns *url* resolved relative to the URL of the caller.
 
 | 
+
+.. _sdk_qtqml_qt_color rgba-method:
 
 +--------------------------------------------------------------------------+
 |        \ color rgba(real *red*, real *green*, real *blue*, real *alpha*) |
@@ -1231,6 +1329,8 @@ inclusive.
 
 | 
 
+.. _sdk_qtqml_qt_size-method:
+
 +--------------------------------------------------------------------------+
 |        \ size(int *width*, int *height*)                                 |
 +--------------------------------------------------------------------------+
@@ -1238,6 +1338,8 @@ inclusive.
 Returns a Size with the specified ``width`` and ``height``.
 
 | 
+
+.. _sdk_qtqml_qt_color tint-method:
 
 +--------------------------------------------------------------------------+
 |        \ color tint(color *baseColor*, color *tintColor*)                |
@@ -1271,6 +1373,8 @@ visible color.
 
 | 
 
+.. _sdk_qtqml_qt_vector2d-method:
+
 +--------------------------------------------------------------------------+
 |        \ vector2d(real *x*, real *y*)                                    |
 +--------------------------------------------------------------------------+
@@ -1278,6 +1382,8 @@ visible color.
 Returns a Vector2D with the specified ``x`` and ``y``.
 
 | 
+
+.. _sdk_qtqml_qt_vector3d-method:
 
 +--------------------------------------------------------------------------+
 |        \ vector3d(real *x*, real *y*, real *z*)                          |
@@ -1287,6 +1393,8 @@ Returns a Vector3D with the specified ``x``, ``y`` and ``z``.
 
 | 
 
+.. _sdk_qtqml_qt_vector4d-method:
+
 +--------------------------------------------------------------------------+
 |        \ vector4d(real *x*, real *y*, real *z*, real *w*)                |
 +--------------------------------------------------------------------------+
@@ -1295,5 +1403,5 @@ Returns a Vector4D with the specified ``x``, ``y``, ``z`` and ``w``.
 
 | 
 
-.. |image0| image:: /media/sdk/apps/qml/QtQml/Qt/images/declarative-rect_tint.png
+.. |image0| image:: /mediasdk_qtqml_qtimages/declarative-rect_tint.png
 

@@ -1,38 +1,43 @@
+.. _sdk_ubuntu_components_styles_actionbarstyle:
+Ubuntu.Components.Styles ActionBarStyle
+=======================================
+
 Style API for action bar.
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import Ubuntu.Components.Styles 1.3  |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Item </sdk/apps/qml/QtQuick/Item/>` |
-|                                      | __                                   |
+| Inherits:                            | :ref:`Item <sdk_qtquick_item>`       |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`backgroundColor </sdk/apps/qml/Ubuntu.Components/Styles.ActionBarStyle#backgroundColor-prop>`__****
+-  `backgroundColor </sdk/apps/qml/Ubuntu.Components/Styles.ActionBarStyle/_backgroundColor-prop>`_ 
    : color
--  ****`buttons </sdk/apps/qml/Ubuntu.Components/Styles.ActionBarStyle#buttons-prop>`__****
+-  `buttons </sdk/apps/qml/Ubuntu.Components/Styles.ActionBarStyle/_buttons-prop>`_ 
    : ActionItemProperties
--  ****`defaultDelegate </sdk/apps/qml/Ubuntu.Components/Styles.ActionBarStyle#defaultDelegate-prop>`__****
+-  `defaultDelegate </sdk/apps/qml/Ubuntu.Components/Styles.ActionBarStyle/_defaultDelegate-prop>`_ 
    : Component
--  ****`defaultNumberOfSlots </sdk/apps/qml/Ubuntu.Components/Styles.ActionBarStyle#defaultNumberOfSlots-prop>`__****
+-  `defaultNumberOfSlots </sdk/apps/qml/Ubuntu.Components/Styles.ActionBarStyle/_defaultNumberOfSlots-prop>`_ 
    : int
--  ****`overflowIconName </sdk/apps/qml/Ubuntu.Components/Styles.ActionBarStyle#overflowIconName-prop>`__****
+-  `overflowIconName </sdk/apps/qml/Ubuntu.Components/Styles.ActionBarStyle/_overflowIconName-prop>`_ 
    : string
--  ****`overflowIconSource </sdk/apps/qml/Ubuntu.Components/Styles.ActionBarStyle#overflowIconSource-prop>`__****
+-  `overflowIconSource </sdk/apps/qml/Ubuntu.Components/Styles.ActionBarStyle/_overflowIconSource-prop>`_ 
    : url
--  ****`overflowText </sdk/apps/qml/Ubuntu.Components/Styles.ActionBarStyle#overflowText-prop>`__****
+-  `overflowText </sdk/apps/qml/Ubuntu.Components/Styles.ActionBarStyle/_overflowText-prop>`_ 
    : string
 
 Detailed Description
 --------------------
 
 The component defines the style API for the
-`ActionBar </sdk/apps/qml/Ubuntu.Components/ActionBar/>`__ component.
+:ref:`ActionBar <sdk_ubuntu_components_actionbar>` component.
 
 Property Documentation
 ----------------------
+
+.. _sdk_ubuntu_components_styles_actionbarstyle_backgroundColor-prop:
 
 +--------------------------------------------------------------------------+
 |        \ backgroundColor : color                                         |
@@ -42,25 +47,30 @@ The color of the background of the action bar.
 
 | 
 
+.. _sdk_ubuntu_components_styles_actionbarstyle_[read-only] buttons-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [read-only] buttons :                                           |
 | `ActionItemProperties </sdk/apps/qml/Ubuntu.Components/Styles.ActionItem |
-| Properties/>`__                                                          |
+| Properties/>`_                                                           |
 +--------------------------------------------------------------------------+
 
 Configuration of the colors of the action buttons in the action bar.
 
 | 
 
+.. _sdk_ubuntu_components_styles_actionbarstyle_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ defaultDelegate :                                               |
-| `Component </sdk/apps/qml/QtQml/Component/>`__                           |
+| :ref:` <>`\ defaultDelegate : `Component <sdk_qtqml_component>`        |
 +--------------------------------------------------------------------------+
 
 The default action delegate if the styled item does not provide a
 different delegate.
 
 | 
+
+.. _sdk_ubuntu_components_styles_actionbarstyle_defaultNumberOfSlots-prop:
 
 +--------------------------------------------------------------------------+
 |        \ defaultNumberOfSlots : int                                      |
@@ -70,6 +80,8 @@ The default number of slots for the action bar.
 
 | 
 
+.. _sdk_ubuntu_components_styles_actionbarstyle_overflowIconName-prop:
+
 +--------------------------------------------------------------------------+
 |        \ overflowIconName : string                                       |
 +--------------------------------------------------------------------------+
@@ -78,15 +90,19 @@ The icon name for action of the overflow button.
 
 | 
 
+.. _sdk_ubuntu_components_styles_actionbarstyle_overflowIconSource-prop:
+
 +--------------------------------------------------------------------------+
 |        \ overflowIconSource :                                            |
-| `url <http://doc.qt.io/qt-5/qml-url.html>`__                             |
+| `url <http://doc.qt.io/qt-5/qml-url.html>`_                              |
 +--------------------------------------------------------------------------+
 
 The icon source for the action of the overflow button. Setting the icon
 source will override the icon name.
 
 | 
+
+.. _sdk_ubuntu_components_styles_actionbarstyle_overflowText-prop:
 
 +--------------------------------------------------------------------------+
 |        \ overflowText : string                                           |

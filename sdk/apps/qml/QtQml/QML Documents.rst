@@ -1,3 +1,7 @@
+.. _sdk_qtqml_qml_documents:
+QtQml QML Documents
+===================
+
 
 
 A QML document is a string which conforms to QML document syntax. A
@@ -41,7 +45,7 @@ An example of a simple document is as follows:
     }
 
 See the `Structure of a QML
-Document </sdk/apps/qml/QtQml/qtqml-documents-structure/>`__ for more
+Document </sdk/apps/qml/QtQml/qtqml-documents-structure/>`_  for more
 information on the topic.
 
 .. rubric:: Syntax of the QML Language
@@ -49,17 +53,17 @@ information on the topic.
 
 The object declaration section of the document must specify a valid
 object hierarchy with appropriate `QML
-syntax </sdk/apps/qml/QtQml/qtqml-syntax-basics/>`__. An object
+syntax </sdk/apps/qml/QtQml/qtqml-syntax-basics/>`_ . An object
 declaration may include the specification of custom `object
-attributes </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes/>`__.
+attributes </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes/>`_ .
 Object method attributes may be specified as JavaScript functions, and
 object property attributes may be assigned `property binding
-expressions </sdk/apps/qml/QtQml/qtqml-syntax-propertybinding/>`__.
+expressions </sdk/apps/qml/QtQml/qtqml-syntax-propertybinding/>`_ .
 
 Please see the documentation about the `syntax of
-QML </sdk/apps/qml/QtQml/qtqml-syntax-basics/>`__ for more information
+QML </sdk/apps/qml/QtQml/qtqml-syntax-basics/>`_  for more information
 about valid syntax, and see the documentation about `integrating QML and
-JavaScript </sdk/apps/qml/QtQml/qtqml-javascript-topic/>`__ for in-depth
+JavaScript </sdk/apps/qml/QtQml/qtqml-javascript-topic/>`_  for in-depth
 information on that topic.
 
 .. rubric:: Defining Object Types through QML Documents
@@ -106,7 +110,7 @@ The ``Button`` type can then be used in an application:
 +--------------------------------------+--------------------------------------+
 
 Please see the documentation about `defining object types in
-documents </sdk/apps/qml/QtQml/qtqml-documents-definetypes/>`__ for
+documents </sdk/apps/qml/QtQml/qtqml-documents-definetypes/>`_  for
 in-depth information on the topic.
 
 .. rubric:: Resource Loading and Network Transparency
@@ -119,7 +123,7 @@ local URL, and the QML engine will handle any network communication
 involved.
 
 Please see the `Network
-Transparency </sdk/apps/qml/QtQml/qtqml-documents-networktransparency/>`__
+Transparency </sdk/apps/qml/QtQml/qtqml-documents-networktransparency/>`_ 
 documentation for more information about network transparency in
 imports.
 
@@ -131,7 +135,7 @@ objects, and since multiple objects may be defined and since different
 objects may have properties with the same name, some predefined symbol
 resolution semantics must be defined by QML. Please see the page on
 `scope and symbol
-resolution </sdk/apps/qml/QtQml/qtqml-documents-scope/>`__ for in-depth
+resolution </sdk/apps/qml/QtQml/qtqml-documents-scope/>`_  for in-depth
 information about the topic.
 
 .. |image0| image:: /media/sdk/apps/qml/qtqml-documents-topic/images/button-types.png

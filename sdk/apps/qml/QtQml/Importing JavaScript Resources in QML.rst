@@ -1,3 +1,7 @@
+.. _sdk_qtqml_importing_javascript_resources_in_qml:
+QtQml Importing JavaScript Resources in QML
+===========================================
+
 
 
 JavaScript resources may be imported by QML documents and other
@@ -42,7 +46,7 @@ objects defined in the importing QML document, via the
 resources may take parameters whose type can be any of the supported QML
 basic types or object types, as well as normal JavaScript types. The
 normal `data type conversion
-rules </sdk/apps/qml/QtQml/qtqml-cppintegration-data/>`__ will apply to
+rules </sdk/apps/qml/QtQml/qtqml-cppintegration-data/>`_  will apply to
 parameters and return values when calling such functions from QML.
 
 .. rubric:: Imports Within JavaScript Resources
@@ -110,7 +114,7 @@ provided via a singleton type; see qmlRegisterSingletonType() for more
 information.
 
 **Note:** The .import syntax doesn't work for scripts used in the
-`WorkerScript </sdk/apps/qml/QtQml/WorkerScript/>`__
+:ref:`WorkerScript <sdk_qtqml_workerscript>`
 
 .. rubric:: Including a JavaScript Resource from Another JavaScript
    Resource
@@ -122,15 +126,15 @@ importing script via the qualifier (that is, as
 ``Qualifier.functionName(params)``). Sometimes it is desirable to have
 the functions made available in the importing context without needing to
 qualify them, and in this circumstance the
-`Qt.include() </sdk/apps/qml/QtQml/Qt#include-method>`__ function may be
-used to include one JavaScript file from another. This copies all
-functions from the other file into the current file's namespace, but
-ignores all pragmas and imports defined in that file.
+:ref:`Qt.include() <sdk_qtqml_qt#include-method>` function may be used to
+include one JavaScript file from another. This copies all functions from
+the other file into the current file's namespace, but ignores all
+pragmas and imports defined in that file.
 
 For example, the QML code below left calls ``showCalculations()`` in
 ``script.js``, which in turn can call ``factorial()`` in
 ``factorial.js``, as it has included ``factorial.js`` using
-`Qt.include() </sdk/apps/qml/QtQml/Qt#include-method>`__.
+:ref:`Qt.include() <sdk_qtqml_qt#include-method>`.
 
 .. code:: qml
 
@@ -168,9 +172,8 @@ For example, the QML code below left calls ``showCalculations()`` in
             return a * factorial(a - 1);
     }
 
-Notice that calling
-`Qt.include() </sdk/apps/qml/QtQml/Qt#include-method>`__ copies all
-functions from ``factorial.js`` into the ``MyScript`` namespace, which
-means the QML component can also access ``factorial()`` directly as
-``MyScript.factorial()``.
+Notice that calling :ref:`Qt.include() <sdk_qtqml_qt#include-method>`
+copies all functions from ``factorial.js`` into the ``MyScript``
+namespace, which means the QML component can also access ``factorial()``
+directly as ``MyScript.factorial()``.
 

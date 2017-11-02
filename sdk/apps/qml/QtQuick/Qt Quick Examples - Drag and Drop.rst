@@ -1,3 +1,7 @@
+.. _sdk_qtquick_qt_quick_examples_-_drag_and_drop:
+QtQuick Qt Quick Examples - Drag and Drop
+=========================================
+
 
 
 |image0|
@@ -20,8 +24,7 @@ Running an Example.
 a specific grid.
 
 It has a DragTile component which uses a
-`MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ to move an item when
-dragged:
+:ref:`MouseArea <sdk_qtquick_mousearea>` to move an item when dragged:
 
 .. code:: qml
 
@@ -80,15 +83,15 @@ And a DropTile component which the dragged tiles can be dropped onto:
         }
     }
 
-The keys property of the `DropArea </sdk/apps/qml/QtQuick/DropArea/>`__
-will only allow an item with a matching key in its Drag.keys property to
-be dropped on it.
+The keys property of the :ref:`DropArea <sdk_qtquick_droparea>` will only
+allow an item with a matching key in its Drag.keys property to be
+dropped on it.
 
 .. rubric:: GridView
    :name: gridview
 
 *GridView* adds drag and drop to a
-`GridView </sdk/apps/qml/QtQuick/draganddrop#gridview>`__, allowing you
+`GridView </sdk/apps/qml/QtQuick/draganddrop/#gridview>`_ , allowing you
 to reorder the list. It also uses a DelegateModel to move a delegate
 item to the position of another item it is dragged over.
 

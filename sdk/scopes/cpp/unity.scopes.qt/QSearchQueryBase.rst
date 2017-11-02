@@ -1,5 +1,9 @@
+.. _sdk_unity_scopes_qt_qsearchquerybase:
+unity.scopes.qt QSearchQueryBase
+================================
+
 Abstract base class to represent a particular query.
-`More... </sdk/scopes/cpp/unity.scopes.qt/QSearchQueryBase#details>`__
+:ref:`More... <sdk_unity_scopes_qt_qsearchquerybase#details>`
 
 ``#include <unity/scopes/qt/QSearchQueryBase.h>``
 
@@ -12,9 +16,9 @@ Inheritance diagram for unity::scopes::qt::QSearchQueryBase:
         Public Member Functions
 -------------------------------
 
-`QCannedQuery </sdk/scopes/cpp/unity.scopes.qt/QCannedQuery/>`__ 
+:ref:`QCannedQuery <sdk_unity_scopes_qt_qcannedquery>` 
 
-`query </sdk/scopes/cpp/unity.scopes.qt/QSearchQueryBase#a1ad69c195d42ecaea4a7851f1dfc6023>`__
+:ref:`query <sdk_unity_scopes_qt_qsearchquerybase#a1ad69c195d42ecaea4a7851f1dfc6023>`
 () const
 
  
@@ -23,9 +27,9 @@ Inheritance diagram for unity::scopes::qt::QSearchQueryBase:
 
  
 
-`unity::scopes::SearchMetadata </sdk/scopes/cpp/unity.scopes.SearchMetadata/>`__ 
+`unity::scopes::SearchMetadata </sdk/scopes/cpp/unity.scopes.SearchMetadata/>`_  
 
-`search\_metadata </sdk/scopes/cpp/unity.scopes.qt/QSearchQueryBase#a222670a440c3712d1bf5cfe220d6f55a>`__
+:ref:`search\_metadata <sdk_unity_scopes_qt_qsearchquerybase#a222670a440c3712d1bf5cfe220d6f55a>`
 () const
 
  
@@ -40,60 +44,60 @@ Inheritance diagram for unity::scopes::qt::QSearchQueryBase:
        \ The subsearch() methods are for use by aggregating scopes. When
 an aggregator passes a query to its child scopes, it should use
 subsearch() instead of the normal
-`Scope::search() </sdk/scopes/cpp/unity.scopes.Scope#a09976690ca801ecada50687df6046a29>`__
+`Scope::search() </sdk/scopes/cpp/unity.scopes.Scope/#a09976690ca801ecada50687df6046a29>`_ 
 that would be called by a client. subsearch() takes care of
 automatically forwarding query cancellation to child scopes. This means
 that there is no need for an aggregating scope to explicitly forward
 cancellation to child scopes when its
-`QueryBase::cancelled() </sdk/scopes/cpp/unity.scopes.QueryBase#a596b19dbfd6efe96b834be75a9b64c68>`__
+`QueryBase::cancelled() </sdk/scopes/cpp/unity.scopes.QueryBase/#a596b19dbfd6efe96b834be75a9b64c68>`_ 
 method is called by the scopes run time.
 
-`QueryCtrlProxy </sdk/scopes/cpp/unity.scopes#a35e73cba26e0db0b36ffa0283a7d55dd>`__ 
+:ref:`QueryCtrlProxy <sdk_unity_scopes#a35e73cba26e0db0b36ffa0283a7d55dd>` 
 
 **subsearch**
-(`ScopeProxy </sdk/scopes/cpp/unity.scopes#a94db15da410f8419e4da711db842aaae>`__
+(:ref:`ScopeProxy <sdk_unity_scopes#a94db15da410f8419e4da711db842aaae>`
 const &scope, std::string const &query\_string, SearchListenerBase::SPtr
 const &reply)
 
  
 
-`QueryCtrlProxy </sdk/scopes/cpp/unity.scopes#a35e73cba26e0db0b36ffa0283a7d55dd>`__ 
+:ref:`QueryCtrlProxy <sdk_unity_scopes#a35e73cba26e0db0b36ffa0283a7d55dd>` 
 
 **subsearch**
-(`ScopeProxy </sdk/scopes/cpp/unity.scopes#a94db15da410f8419e4da711db842aaae>`__
+(:ref:`ScopeProxy <sdk_unity_scopes#a94db15da410f8419e4da711db842aaae>`
 const &scope, std::string const &query\_string,
-`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ const
+`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  const
 &filter\_state, SearchListenerBase::SPtr const &reply)
 
  
 
-`QueryCtrlProxy </sdk/scopes/cpp/unity.scopes#a35e73cba26e0db0b36ffa0283a7d55dd>`__ 
+:ref:`QueryCtrlProxy <sdk_unity_scopes#a35e73cba26e0db0b36ffa0283a7d55dd>` 
 
 **subsearch**
-(`ScopeProxy </sdk/scopes/cpp/unity.scopes#a94db15da410f8419e4da711db842aaae>`__
+(:ref:`ScopeProxy <sdk_unity_scopes#a94db15da410f8419e4da711db842aaae>`
 const &scope, std::string const &query\_string, std::string const
 &department\_id,
-`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ const
+`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  const
 &filter\_state, SearchListenerBase::SPtr const &reply)
 
  
 
-`QueryCtrlProxy </sdk/scopes/cpp/unity.scopes#a35e73cba26e0db0b36ffa0283a7d55dd>`__ 
+:ref:`QueryCtrlProxy <sdk_unity_scopes#a35e73cba26e0db0b36ffa0283a7d55dd>` 
 
 **subsearch**
-(`ScopeProxy </sdk/scopes/cpp/unity.scopes#a94db15da410f8419e4da711db842aaae>`__
+(:ref:`ScopeProxy <sdk_unity_scopes#a94db15da410f8419e4da711db842aaae>`
 const &scope, std::string const &query\_string, std::string const
 &department\_id,
-`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`__ const
+`FilterState </sdk/scopes/cpp/unity.scopes.FilterState/>`_  const
 &filter\_state,
-`SearchMetadata </sdk/scopes/cpp/unity.scopes.SearchMetadata/>`__ const
+`SearchMetadata </sdk/scopes/cpp/unity.scopes.SearchMetadata/>`_  const
 &hints, SearchListenerBase::SPtr const &reply)
 
  
 
 virtual void 
 
-`run </sdk/scopes/cpp/unity.scopes.qt/QSearchQueryBase#ae12e4040935c2240f2f02482acd49e89>`__
+:ref:`run <sdk_unity_scopes_qt_qsearchquerybase#ae12e4040935c2240f2f02482acd49e89>`
 (QSearchReplyProxy const &reply)=0
 
  
@@ -104,7 +108,7 @@ virtual void 
 
 virtual void 
 
-`cancelled </sdk/scopes/cpp/unity.scopes.qt/QSearchQueryBase#a811927afeb090c114fd8ad5b459ec4e7>`__
+:ref:`cancelled <sdk_unity_scopes_qt_qsearchquerybase#a811927afeb090c114fd8ad5b459ec4e7>`
 ()=0
 
  
@@ -120,7 +124,7 @@ Detailed Description
 Abstract base class to represent a particular query.
 
 A scope must return an instance of this class from its implementation of
-`ScopeBase::search() </sdk/scopes/cpp/unity.scopes.ScopeBase#a0e4969ff26dc1d396d74c56d896fd564>`__.
+`ScopeBase::search() </sdk/scopes/cpp/unity.scopes.ScopeBase/#a0e4969ff26dc1d396d74c56d896fd564>`_ .
 
 Note
     The constructor of the instance must complete in a timely manner. Do
@@ -163,10 +167,9 @@ to push after cancellation only wastes CPU cycles. (``push()`` returns
 
 +----------------+----------------+----------------+----------------+----------------+
 | `QCannedQuery  | (              |                | )              | const          |
-| </sdk/scopes/c |                |                |                |                |
-| pp/unity.scope |                |                |                |                |
-| s.qt/QCannedQu |                |                |                |                |
-| ery/>`__       |                |                |                |                |
+| <sdk_unity_sco |                |                |                |                |
+| pes_qt_qcanned |                |                |                |                |
+| query>`_       |                |                |                |                |
 | unity::scopes: |                |                |                |                |
 | :qt::QSearchQu |                |                |                |                |
 | eryBase::query |                |                |                |                |
@@ -209,20 +212,20 @@ Exceptions
 Called by scopes run time to start the query.
 
 Your implementation of
-`run() </sdk/scopes/cpp/unity.scopes.qt/QSearchQueryBase#ae12e4040935c2240f2f02482acd49e89>`__
+:ref:`run() <sdk_unity_scopes_qt_qsearchquerybase#ae12e4040935c2240f2f02482acd49e89>`
 can use the reply proxy to push results for the query. You can push
 results from within
-`run() </sdk/scopes/cpp/unity.scopes.qt/QSearchQueryBase#ae12e4040935c2240f2f02482acd49e89>`__,
+:ref:`run() <sdk_unity_scopes_qt_qsearchquerybase#ae12e4040935c2240f2f02482acd49e89>`,
 in which case the query implicitly completes when
-`run() </sdk/scopes/cpp/unity.scopes.qt/QSearchQueryBase#ae12e4040935c2240f2f02482acd49e89>`__
+:ref:`run() <sdk_unity_scopes_qt_qsearchquerybase#ae12e4040935c2240f2f02482acd49e89>`
 returns. Alternatively,
-`run() </sdk/scopes/cpp/unity.scopes.qt/QSearchQueryBase#ae12e4040935c2240f2f02482acd49e89>`__
+:ref:`run() <sdk_unity_scopes_qt_qsearchquerybase#ae12e4040935c2240f2f02482acd49e89>`
 can store the reply proxy and return immediately. In this case, you can
 use the stored proxy to push results from another thread. It is safe to
 call ``push()`` from multiple threads without synchronization.
 
 The query completes either when
-`run() </sdk/scopes/cpp/unity.scopes.qt/QSearchQueryBase#ae12e4040935c2240f2f02482acd49e89>`__
+:ref:`run() <sdk_unity_scopes_qt_qsearchquerybase#ae12e4040935c2240f2f02482acd49e89>`
 returns, or when the last stored reply proxy goes out of scope
 (whichever happens last).
 
@@ -237,7 +240,7 @@ Parameters
 | ta </sdk/scope |                |                |                |                |
 | s/cpp/unity.sc |                |                |                |                |
 | opes.SearchMet |                |                |                |                |
-| adata/>`__     |                |                |                |                |
+| adata/>`_      |                |                |                |                |
 | unity::scopes: |                |                |                |                |
 | :qt::QSearchQu |                |                |                |                |
 | eryBase::searc |                |                |                |                |
@@ -254,5 +257,5 @@ Exceptions
     | unity::LogicException   | if search metadata was not initialized (was default-constructed).   |
     +-------------------------+---------------------------------------------------------------------+
 
-.. |Inheritance graph| image:: /media/sdk/scopes/cpp/unity.scopes.qt/QSearchQueryBase/classunity_1_1scopes_1_1qt_1_1_q_search_query_base__inherit__graph.png
+.. |Inheritance graph| image:: /mediasdk_unity_scopes_qt_qsearchquerybaseclassunity_1_1scopes_1_1qt_1_1_q_search_query_base__inherit__graph.png
 

@@ -1,11 +1,14 @@
+.. _sdk_qtquick_keyboard_focus_in_qt_quick:
+QtQuick Keyboard Focus in Qt Quick
+==================================
+
 
 
 When a key is pressed or released, a key event is generated and
-delivered to the focused Qt Quick
-`Item </sdk/apps/qml/QtQuick/Item/>`__. To facilitate the construction
-of reusable components and to address some of the cases unique to fluid
-user interfaces, the Qt Quick items add a scope based extension to Qt's
-traditional keyboard focus model.
+delivered to the focused Qt Quick :ref:`Item <sdk_qtquick_item>`. To
+facilitate the construction of reusable components and to address some
+of the cases unique to fluid user interfaces, the Qt Quick items add a
+scope based extension to Qt's traditional keyboard focus model.
 
 .. rubric:: Key Handling Overview
    :name: key-handling-overview
@@ -16,8 +19,8 @@ When the user presses or releases a key, the following occurs:
 #. If a QQuickWindow is the active window, the key event is delivered to
    it.
 #. The key event is delivered by the scene to the
-   `Item </sdk/apps/qml/QtQuick/Item/>`__ with *active focus*. If no
-   item has active focus, the key event is ignored.
+   :ref:`Item <sdk_qtquick_item>` with *active focus*. If no item has
+   active focus, the key event is ignored.
 #. If the QQuickItem with active focus accepts the key event,
    propagation stops. Otherwise the event is sent to the Item's parent
    until the event is accepted, or the root item is reached.
@@ -40,20 +43,19 @@ When the user presses or releases a key, the following occurs:
            }
        }
 
-#. If the root `Item </sdk/apps/qml/QtQuick/Item/>`__ is reached, the
-   key event is ignored and regular Qt key handling continues.
+#. If the root :ref:`Item <sdk_qtquick_item>` is reached, the key event is
+   ignored and regular Qt key handling continues.
 
-See also the `Keys attached property </sdk/apps/qml/QtQuick/Keys/>`__
-and `KeyNavigation attached
-property </sdk/apps/qml/QtQuick/KeyNavigation/>`__.
+See also the :ref:`Keys attached property <sdk_qtquick_keys>` and
+:ref:`KeyNavigation attached property <sdk_qtquick_keynavigation>`.
 
 .. rubric:: Querying the Active Focus Item
    :name: querying-the-active-focus-item
 
-Whether or not an `Item </sdk/apps/qml/QtQuick/Item/>`__ has active
-focus can be queried through the property ``Item::activeFocus``
-property. For example, here we have a
-`Text </sdk/apps/qml/QtQuick/qtquick-releasenotes#text>`__ type whose
+Whether or not an :ref:`Item <sdk_qtquick_item>` has active focus can be
+queried through the property ``Item::activeFocus`` property. For
+example, here we have a
+`Text </sdk/apps/qml/QtQuick/qtquick-releasenotes/#text>`_  type whose
 text is determined by whether or not it has active focus.
 
 .. code:: qml
@@ -65,8 +67,8 @@ text is determined by whether or not it has active focus.
 .. rubric:: Acquiring Focus and Focus Scopes
    :name: acquiring-focus-and-focus-scopes
 
-An `Item </sdk/apps/qml/QtQuick/Item/>`__ requests focus by setting the
-``focus`` property to ``true``.
+An :ref:`Item <sdk_qtquick_item>` requests focus by setting the ``focus``
+property to ``true``.
 
 For very simple cases simply setting the ``focus`` property is sometimes
 sufficient. If we run the following example with qmlscene, we see that
@@ -164,11 +166,10 @@ to know if its imported components are requesting the focus.
 To solve this problem, the QML introduces a concept known as a *focus
 scope*. For existing Qt users, a focus scope is like an automatic focus
 proxy. A focus scope is created by declaring the
-`FocusScope </sdk/apps/qml/QtQuick/FocusScope/>`__ type.
+:ref:`FocusScope <sdk_qtquick_focusscope>` type.
 
-In the next example, a
-`FocusScope </sdk/apps/qml/QtQuick/FocusScope/>`__ type is added to the
-component, and the visual result shown.
+In the next example, a :ref:`FocusScope <sdk_qtquick_focusscope>` type is
+added to the component, and the visual result shown.
 
 .. code:: qml
 
@@ -199,28 +200,26 @@ component, and the visual result shown.
 Conceptually *focus scopes* are quite simple.
 
 -  Within each focus scope one object may have ``Item::focus`` set to
-   ``true``. If more than one `Item </sdk/apps/qml/QtQuick/Item/>`__ has
-   the ``focus`` property set, the last type to set the ``focus`` will
-   have the focus and the others are unset, similar to when there are no
+   :ref:``true``. If more than one `Item <sdk_qtquick_item>` has the
+   ``focus`` property set, the last type to set the ``focus`` will have
+   the focus and the others are unset, similar to when there are no
    focus scopes.
 -  When a focus scope receives active focus, the contained type with
    ``focus`` set (if any) also gets the active focus. If this type is
-   also a `FocusScope </sdk/apps/qml/QtQuick/FocusScope/>`__, the
-   proxying behavior continues. Both the focus scope and the sub-focused
-   item will have ``activeFocus`` property set.
+   also a :ref:`FocusScope <sdk_qtquick_focusscope>`, the proxying behavior
+   continues. Both the focus scope and the sub-focused item will have
+   ``activeFocus`` property set.
 
-Note that, since the `FocusScope </sdk/apps/qml/QtQuick/FocusScope/>`__
-type is not a visual type, the properties of its children need to be
-exposed to the parent item of the
-`FocusScope </sdk/apps/qml/QtQuick/FocusScope/>`__. Layouts and
+Note that, since the :ref:`FocusScope <sdk_qtquick_focusscope>` type is not
+a visual type, the properties of its children need to be exposed to the
+parent item of the :ref:`FocusScope <sdk_qtquick_focusscope>`. Layouts and
 positioning types will use these visual and styling properties to create
 the layout. In our example, the ``Column`` type cannot display the two
-widgets properly because the
-`FocusScope </sdk/apps/qml/QtQuick/FocusScope/>`__ lacks visual
-properties of its own. The MyWidget component directly binds to the
-``rectangle`` properties to allow the ``Column`` type to create the
-layout containing the children of the
-`FocusScope </sdk/apps/qml/QtQuick/FocusScope/>`__.
+widgets properly because the :ref:`FocusScope <sdk_qtquick_focusscope>`
+lacks visual properties of its own. The MyWidget component directly
+binds to the ``rectangle`` properties to allow the ``Column`` type to
+create the layout containing the children of the
+:ref:`FocusScope <sdk_qtquick_focusscope>`.
 
 So far, the example has the second component statically selected. It is
 trivial now to extend this component to make it clickable, and add it to
@@ -277,16 +276,15 @@ The MyClickableWidget code:
 
 |image3|
 
-When a QML `Item </sdk/apps/qml/QtQuick/Item/>`__ explicitly
-relinquishes focus (by setting its ``focus`` property to ``false`` while
-it has active focus), the system does not automatically select another
-type to receive focus. That is, it is possible for there to be no
-currently active focus.
+When a QML :ref:`Item <sdk_qtquick_item>` explicitly relinquishes focus (by
+setting its ``focus`` property to ``false`` while it has active focus),
+the system does not automatically select another type to receive focus.
+That is, it is possible for there to be no currently active focus.
 
 See `Qt Quick Examples - Key
-Interaction </sdk/apps/qml/QtQuick/keyinteraction/>`__ for a
+Interaction </sdk/apps/qml/QtQuick/keyinteraction/>`_  for a
 demonstration of moving keyboard focus between multiple areas using
-`FocusScope </sdk/apps/qml/QtQuick/FocusScope/>`__ types.
+:ref:`FocusScope <sdk_qtquick_focusscope>` types.
 
 .. rubric:: Advanced Uses of Focus Scopes
    :name: advanced-uses-of-focus-scopes
@@ -294,14 +292,13 @@ demonstration of moving keyboard focus between multiple areas using
 Focus scopes allow focus to allocation to be easily partitioned. Several
 QML items use it to this effect.
 
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__, for example, is itself a
-focus scope. Generally this isn't noticeable as
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__ doesn't usually have
-manually added visual children. By being a focus scope,
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__ can focus the current
-list item without worrying about how that will effect the rest of the
-application. This allows the current item delegate to react to key
-presses.
+:ref:`ListView <sdk_qtquick_listview>`, for example, is itself a focus
+scope. Generally this isn't noticeable as
+:ref:`ListView <sdk_qtquick_listview>` doesn't usually have manually added
+visual children. By being a focus scope,
+:ref:`ListView <sdk_qtquick_listview>` can focus the current list item
+without worrying about how that will effect the rest of the application.
+This allows the current item delegate to react to key presses.
 
 This contrived example shows how this works. Pressing the ``Return`` key
 will print the name of the current list item.
@@ -334,20 +331,18 @@ will print the name of the current list item.
 
 While the example is simple, there are a lot going on behind the scenes.
 Whenever the current item changes, the
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__ sets the delegate's
-``Item::focus`` property. As the
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__ is a focus scope, this
-doesn't affect the rest of the application. However, if the
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__ itself has active focus
-this causes the delegate itself to receive active focus. In this
-example, the root type of the delegate is also a focus scope, which in
-turn gives active focus to the ``Text`` type that actually performs the
-work of handling the ``Return`` key.
+:ref:`ListView <sdk_qtquick_listview>` sets the delegate's ``Item::focus``
+property. As the :ref:`ListView <sdk_qtquick_listview>` is a focus scope,
+this doesn't affect the rest of the application. However, if the
+:ref:`ListView <sdk_qtquick_listview>` itself has active focus this causes
+the delegate itself to receive active focus. In this example, the root
+type of the delegate is also a focus scope, which in turn gives active
+focus to the ``Text`` type that actually performs the work of handling
+the ``Return`` key.
 
-All of the QML view classes, such as
-`PathView </sdk/apps/qml/QtQuick/PathView/>`__ and
-`GridView </sdk/apps/qml/QtQuick/draganddrop#gridview>`__, behave in a
-similar manner to allow key handling in their respective delegates.
+All of the QML view classes, such as :ref:`PathView <sdk_qtquick_pathview>`
+and `GridView </sdk/apps/qml/QtQuick/draganddrop/#gridview>`_ , behave
+in a similar manner to allow key handling in their respective delegates.
 
 .. |image0| image:: /media/sdk/apps/qml/qtquick-input-focus/images/declarative-qmlfocus1.png
 .. |image1| image:: /media/sdk/apps/qml/qtquick-input-focus/images/declarative-qmlfocus2.png

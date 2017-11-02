@@ -1,3 +1,7 @@
+.. _sdk_qtcontacts_idfilter:
+QtContacts IdFilter
+===================
+
 The IdFilter element provides a filter based around a list of contact
 ids.
 
@@ -8,8 +12,7 @@ ids.
 Properties
 ----------
 
--  ****`ids </sdk/apps/qml/QtContacts/IdFilter#ids-prop>`__**** :
-   list<string>
+-  :ref:`ids <sdk_qtcontacts_idfilter_ids-prop>` : list<string>
 
 Detailed Description
 --------------------
@@ -20,6 +23,8 @@ This element is part of the **QtContacts** module.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtcontacts_idfilter_ids-prop:
 
 +--------------------------------------------------------------------------+
 |        \ ids : list<string>                                              |

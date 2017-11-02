@@ -1,6 +1,10 @@
+.. _sdk_qtqml_important_c++_classes_provided_by_the_qt_qml_module:
+QtQml Important C++ Classes Provided By The Qt QML Module
+=========================================================
 
 
-The `Qt QML </sdk/apps/qml/QtQml/qtqml-index/>`__ module provides C++
+
+The `Qt QML </sdk/apps/qml/QtQml/qtqml-index/>`_  module provides C++
 classes which implement the QML framework. Clients can use these classes
 to interact with the QML run-time (for example, by injecting data or
 invoking methods on objects), and to instantiate a hierarchy of objects
@@ -104,16 +108,16 @@ These pages describe how to create QML applications which interact with
 the C++ classes:
 
 -  `Integrating QML and
-   C++ </sdk/apps/qml/QtQml/qtqml-cppintegration-topic/>`__
+   C++ </sdk/apps/qml/QtQml/qtqml-cppintegration-topic/>`_ 
 
    -  `Exposing Attributes of C++ Classes to
-      QML </sdk/apps/qml/QtQml/qtqml-cppintegration-exposecppattributes/>`__
+      QML </sdk/apps/qml/QtQml/qtqml-cppintegration-exposecppattributes/>`_ 
    -  `Defining QML Types from
-      C++ </sdk/apps/qml/QtQml/qtqml-cppintegration-definetypes/>`__
+      C++ </sdk/apps/qml/QtQml/qtqml-cppintegration-definetypes/>`_ 
    -  `Embedding C++ Objects into QML with Context
-      Properties </sdk/apps/qml/QtQml/qtqml-cppintegration-contextproperties/>`__
+      Properties </sdk/apps/qml/QtQml/qtqml-cppintegration-contextproperties/>`_ 
    -  `Interacting with QML Objects from
-      C++ </sdk/apps/qml/QtQml/qtqml-cppintegration-interactqmlfromcpp/>`__
+      C++ </sdk/apps/qml/QtQml/qtqml-cppintegration-interactqmlfromcpp/>`_ 
    -  `Data Type Conversion Between QML and
-      C++ </sdk/apps/qml/QtQml/qtqml-cppintegration-data/>`__
+      C++ </sdk/apps/qml/QtQml/qtqml-cppintegration-data/>`_ 
 

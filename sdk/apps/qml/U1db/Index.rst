@@ -1,19 +1,22 @@
+.. _sdk_u1db_index:
+U1db Index
+==========
+
 An Index defines what fields can be filtered using Query.
 
-+---------------------+-------------------------------------------------------------------------------------+
-| Import Statement:   | import U1db .                                                                       |
-+---------------------+-------------------------------------------------------------------------------------+
-| Instantiates:       | ` </sdk/apps/qml/U1db/Index/>`__\ `Index </sdk/apps/qml/Ubuntu.Content/index/>`__   |
-+---------------------+-------------------------------------------------------------------------------------+
++---------------------+--------------------------------------------------------------------------+
+| Import Statement:   | import U1db .                                                            |
++---------------------+--------------------------------------------------------------------------+
+| Instantiates:       | :ref:` <sdk_u1db_index>`\ `Index </sdk/apps/qml/Ubuntu.Content/index/>`|
++---------------------+--------------------------------------------------------------------------+
 
 Properties
 ----------
 
--  ****`database </sdk/apps/qml/U1db/Index#database-prop>`__**** :
-   Database
--  ****`expression </sdk/apps/qml/U1db/Index#expression-prop>`__**** :
+-  :ref:`database <sdk_u1db_index_database-prop>` : Database
+-  :ref:`expression <sdk_u1db_index_expression-prop>` :
    list<string>
--  ****`name </sdk/apps/qml/U1db/Index#name-prop>`__**** : string
+-  :ref:`name <sdk_u1db_index_name-prop>` : string
 
 Detailed Description
 --------------------
@@ -29,13 +32,15 @@ the expression.
         expression: [ 'color' ]
     }
 
-**See also** `Query </sdk/apps/qml/U1db/Query/>`__.
+**See also** :ref:`Query <sdk_u1db_query>`.
 
 Property Documentation
 ----------------------
 
+.. _sdk_u1db_index_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ database : `Database </sdk/apps/qml/U1db/Database/>`__          |
+| :ref:` <>`\ database : `Database <sdk_u1db_database>`                  |
 +--------------------------------------------------------------------------+
 
 Sets the Database to lookup documents from and store the index in. The
@@ -43,6 +48,8 @@ dataInvalidated() signal will be emitted on all changes that could
 affect the index.
 
 | 
+
+.. _sdk_u1db_index_expression-prop:
 
 +--------------------------------------------------------------------------+
 |        \ expression : list<string>                                       |
@@ -55,6 +62,8 @@ Also starts the process of creating the Index result list, which can
 then be queried or populate the Query model as is.
 
 | 
+
+.. _sdk_u1db_index_name-prop:
 
 +--------------------------------------------------------------------------+
 |        \ name : string                                                   |

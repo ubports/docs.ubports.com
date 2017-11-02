@@ -1,3 +1,7 @@
+.. _sdk_ubuntuuserinterfacetoolkit_layouts_-_defining_more_layouts_for_different_form_factors:
+UbuntuUserInterfaceToolkit Layouts - Defining more layouts for different form factors
+=====================================================================================
+
 
 
 As mentioned, with Layouts we can achieve to have a single code base
@@ -369,7 +373,7 @@ to support different layouts with the same code base.
    :name: that-s-it
 
 You're ready to go. You can find the layouting components under
-`Layouting </sdk/apps/qml/UbuntuUserInterfaceToolkit/overview-ubuntu-sdk#layouting>`__.
+`Layouting </sdk/apps/qml/UbuntuUserInterfaceToolkit/overview-ubuntu-sdk/#layouting>`_ .
 For further questions please visit **#ubuntu-app-devel** irc channel on
 freenode.
 

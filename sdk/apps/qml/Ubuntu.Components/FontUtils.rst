@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_fontutils:
+Ubuntu.Components FontUtils
+===========================
+
 FontUtils is a context property, which provides utility functions for
 font manipulations.
 
@@ -9,19 +13,19 @@ Methods
 -------
 
 -  real
-   ****`modularScale </sdk/apps/qml/Ubuntu.Components/FontUtils#modularScale-method>`__****\ (string
+   **:ref:`modularScale <sdk_ubuntu_components_fontutils#modularScale-method>`**\ (string
    *size*)
 -  real
-   ****`sizeToPixels </sdk/apps/qml/Ubuntu.Components/FontUtils#sizeToPixels-method>`__****\ (string
+   **:ref:`sizeToPixels <sdk_ubuntu_components_fontutils#sizeToPixels-method>`**\ (string
    *size*)
 
 Detailed Description
 --------------------
 
-`FontUtils </sdk/apps/qml/Ubuntu.Components/FontUtils/>`__ cannot be
-instantiated and it is already available as a context property, i.e.
-'`FontUtils </sdk/apps/qml/Ubuntu.Components/FontUtils/>`__' is an
-instance that can be used from anywhere in the code.
+:ref:`FontUtils <sdk_ubuntu_components_fontutils>` cannot be instantiated
+and it is already available as a context property, i.e.
+':ref:`FontUtils <sdk_ubuntu_components_fontutils>`' is an instance that
+can be used from anywhere in the code.
 
 Example of a Label implementation which uses the default base scale for
 the font size:
@@ -51,6 +55,8 @@ property and a base font unit size to scale its font:
 Method Documentation
 --------------------
 
+.. _sdk_ubuntu_components_fontutils_real modularScale-method:
+
 +--------------------------------------------------------------------------+
 |        \ real modularScale(string *size*)                                |
 +--------------------------------------------------------------------------+
@@ -67,13 +73,15 @@ The scale can have one of the following values:
 
 | 
 
+.. _sdk_ubuntu_components_fontutils_real sizeToPixels-method:
+
 +--------------------------------------------------------------------------+
 |        \ real sizeToPixels(string *size*)                                |
 +--------------------------------------------------------------------------+
 
 The function calculates the pixel size of a given scale. The size scale
 can be one of the strings specified at
-`modularScale </sdk/apps/qml/Ubuntu.Components/FontUtils#modularScale-method>`__
+:ref:`modularScale <sdk_ubuntu_components_fontutils#modularScale-method>`
 function. On failure returns 0.
 
 | 

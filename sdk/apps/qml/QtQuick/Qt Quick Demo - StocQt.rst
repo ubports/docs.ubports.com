@@ -1,3 +1,7 @@
+.. _sdk_qtquick_qt_quick_demo_-_stocqt:
+QtQuick Qt Quick Demo - StocQt
+==============================
+
 
 
 |image0|
@@ -15,8 +19,8 @@ customize the trend chart. For example, the user can choose to view the
 yearly, monthly, or daily trends in the stock price.
 
 The application uses the
-`ObjectModel </sdk/apps/qml/QtQuick/views#objectmodel>`__ type to access
-the two visual data models that it depends on.
+`ObjectModel </sdk/apps/qml/QtQuick/views/#objectmodel>`_  type to
+access the two visual data models that it depends on.
 
 .. code:: qml
 

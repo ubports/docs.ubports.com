@@ -1,3 +1,7 @@
+.. _sdk_qtorganizer_location:
+QtOrganizer Location
+====================
+
 The Location element contains information about a location which is
 related to the organizer item in some manner.
 
@@ -8,17 +12,16 @@ related to the organizer item in some manner.
 Properties
 ----------
 
--  ****`label </sdk/apps/qml/QtOrganizer/Location#label-prop>`__**** :
-   string
--  ****`latitude </sdk/apps/qml/QtOrganizer/Location#latitude-prop>`__****
-   : double
--  ****`longitude </sdk/apps/qml/QtOrganizer/Location#longitude-prop>`__****
-   : double
+-  :ref:`label <sdk_qtorganizer_location_label-prop>` : string
+-  :ref:`latitude <sdk_qtorganizer_location_latitude-prop>` :
+   double
+-  :ref:`longitude <sdk_qtorganizer_location_longitude-prop>` :
+   double
 
 Signals
 -------
 
--  ****`onDetailChanged </sdk/apps/qml/QtOrganizer/Location#onDetailChanged-signal>`__****\ ()
+-  :ref:`onDetailChanged <sdk_qtorganizer_location_onDetailChanged-signal>`\ ()
 
 Detailed Description
 --------------------
@@ -34,6 +37,8 @@ The following fields are supported:
 Property Documentation
 ----------------------
 
+.. _sdk_qtorganizer_location_label-prop:
+
 +--------------------------------------------------------------------------+
 |        \ label : string                                                  |
 +--------------------------------------------------------------------------+
@@ -42,6 +47,8 @@ This property holds the location label value.
 
 | 
 
+.. _sdk_qtorganizer_location_latitude-prop:
+
 +--------------------------------------------------------------------------+
 |        \ latitude : double                                               |
 +--------------------------------------------------------------------------+
@@ -49,6 +56,8 @@ This property holds the location label value.
 This property holds the location latitude value.
 
 | 
+
+.. _sdk_qtorganizer_location_longitude-prop:
 
 +--------------------------------------------------------------------------+
 |        \ longitude : double                                              |
@@ -61,11 +70,13 @@ This property holds the location longitude value .
 Signal Documentation
 --------------------
 
+.. _sdk_qtorganizer_location_onDetailChanged()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ onDetailChanged()                                               |
 +--------------------------------------------------------------------------+
 
 **See also**
-`Detail::onDetailChanged </sdk/apps/qml/QtOrganizer/Detail#onDetailChanged-signal>`__.
+:ref:`Detail::onDetailChanged <sdk_qtorganizer_detail#onDetailChanged-signal>`.
 
 | 

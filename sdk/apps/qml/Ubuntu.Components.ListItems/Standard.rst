@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_listitems_standard:
+Ubuntu.Components.ListItems Standard
+====================================
+
 The standard list item class. It shows a basic list item with a label
 (text), and optionally an icon, a progression arrow, and it can have an
 embedded Item (control) that can be used for including Buttons, Switches
@@ -8,7 +12,7 @@ etc. inside the list item.
 |                                      | 1.3                                  |
 +--------------------------------------+--------------------------------------+
 | Inherits:                            | `Empty </sdk/apps/qml/Ubuntu.Compone |
-|                                      | nts/ListItems.Empty/>`__             |
+|                                      | nts/ListItems.Empty/>`_              |
 +--------------------------------------+--------------------------------------+
 
 -  Obsolete members
@@ -16,26 +20,25 @@ etc. inside the list item.
 Properties
 ----------
 
--  ****`control </sdk/apps/qml/Ubuntu.Components/ListItems.Standard#control-prop>`__****
+-  `control </sdk/apps/qml/Ubuntu.Components/ListItems.Standard/_control-prop>`_ 
    : Item
--  ****`fallbackIconName </sdk/apps/qml/Ubuntu.Components/ListItems.Standard#fallbackIconName-prop>`__****
+-  `fallbackIconName </sdk/apps/qml/Ubuntu.Components/ListItems.Standard/_fallbackIconName-prop>`_ 
    : string
--  ****`fallbackIconSource </sdk/apps/qml/Ubuntu.Components/ListItems.Standard#fallbackIconSource-prop>`__****
+-  `fallbackIconSource </sdk/apps/qml/Ubuntu.Components/ListItems.Standard/_fallbackIconSource-prop>`_ 
    : url
--  ****`iconFrame </sdk/apps/qml/Ubuntu.Components/ListItems.Standard#iconFrame-prop>`__****
+-  `iconFrame </sdk/apps/qml/Ubuntu.Components/ListItems.Standard/_iconFrame-prop>`_ 
    : bool
--  ****`progression </sdk/apps/qml/Ubuntu.Components/ListItems.Standard#progression-prop>`__****
+-  `progression </sdk/apps/qml/Ubuntu.Components/ListItems.Standard/_progression-prop>`_ 
    : bool
 
 Detailed Description
 --------------------
 
 **Note:** **The component is deprecated. Use
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ component
-instead.**
+:ref:`ListItem <sdk_ubuntu_components_listitem>` component instead.**
 
 `See also the Design Guidelines on List
-Items <http://design.ubuntu.com/apps/building-blocks/list-items>`__.
+Items <http://design.ubuntu.com/apps/building-blocks/list-items>`_ .
 
 Examples:
 
@@ -71,8 +74,10 @@ Examples:
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_listitems_standard_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ control : `Item </sdk/apps/qml/QtQuick/Item/>`__                |
+| :ref:` <>`\ control : `Item <sdk_qtquick_item>`                        |
 +--------------------------------------------------------------------------+
 
 An optional control that is displayed inside the list item. The width of
@@ -81,6 +86,8 @@ list item.
 
 | 
 
+.. _sdk_ubuntu_components_listitems_standard_fallbackIconName-prop:
+
 +--------------------------------------------------------------------------+
 |        \ fallbackIconName : string                                       |
 +--------------------------------------------------------------------------+
@@ -88,7 +95,7 @@ list item.
 The icon shown in the list item if iconName failed to load (optional).
 
 If both
-`fallbackIconSource </sdk/apps/qml/Ubuntu.Components/ListItems.Standard#fallbackIconSource-prop>`__
+`fallbackIconSource </sdk/apps/qml/Ubuntu.Components/ListItems.Standard/#fallbackIconSource-prop>`_ 
 and fallbackIconName are defined, fallbackIconName will be ignored.
 
 **Note:** The complete list of icons available in Ubuntu is not
@@ -102,15 +109,19 @@ These 2 separate icon themes will be merged soon.
 
 | 
 
+.. _sdk_ubuntu_components_listitems_standard_fallbackIconSource-prop:
+
 +--------------------------------------------------------------------------+
 |        \ fallbackIconSource :                                            |
-| `url <http://doc.qt.io/qt-5/qml-url.html>`__                             |
+| `url <http://doc.qt.io/qt-5/qml-url.html>`_                              |
 +--------------------------------------------------------------------------+
 
 The location of the icon to show in the list item if iconSource failed
 to load (optional).
 
 | 
+
+.. _sdk_ubuntu_components_listitems_standard_iconFrame-prop:
 
 +--------------------------------------------------------------------------+
 |        \ iconFrame : bool                                                |
@@ -119,6 +130,8 @@ to load (optional).
 Show or hide the frame around the icon
 
 | 
+
+.. _sdk_ubuntu_components_listitems_standard_progression-prop:
 
 +--------------------------------------------------------------------------+
 |        \ progression : bool                                              |

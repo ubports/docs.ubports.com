@@ -1,3 +1,7 @@
+.. _sdk_qtqml_the_qml_type_system:
+QtQml The QML Type System
+=========================
+
 
 
 The types which may be used in the definition of an object hierarchy in
@@ -23,7 +27,7 @@ and boolean values. Objects may have properties of these types, and
 values of these types may be passed as arguments to methods of objects.
 
 See the `QML Basic
-Types </sdk/apps/qml/QtQml/qtqml-typesystem-basictypes/>`__
+Types </sdk/apps/qml/QtQml/qtqml-typesystem-basictypes/>`_ 
 documentation for more information about basic types.
 
 .. rubric:: JavaScript Types
@@ -51,22 +55,21 @@ below:
     }
 
 See `JavaScript Expressions in QML
-Documents </sdk/apps/qml/QtQml/qtqml-javascript-expressions/>`__ for
+Documents </sdk/apps/qml/QtQml/qtqml-javascript-expressions/>`_  for
 more details.
 
 .. rubric:: QML Object Types
    :name: qml-object-types
 
 A QML object type is a type from which a QML object can be instantiated.
-QML object types are derived from
-`QtObject </sdk/apps/qml/QtQml/QtObject/>`__, and are provided by QML
-modules. Applications can import these modules to use the object types
-they provide. The ``QtQuick`` module provides the most common object
-types needed to create user interfaces in QML.
+QML object types are derived from :ref:`QtObject <sdk_qtqml_qtobject>`, and
+are provided by QML modules. Applications can import these modules to
+use the object types they provide. The ``QtQuick`` module provides the
+most common object types needed to create user interfaces in QML.
 
 Finally, every QML document implicitly defines a QML object type, which
 can be re-used in other QML documents. See the documentation about
 `object types in the QML type
-system </sdk/apps/qml/QtQml/qtqml-typesystem-objecttypes/>`__ for
+system </sdk/apps/qml/QtQml/qtqml-typesystem-objecttypes/>`_  for
 in-depth information about object types.
 

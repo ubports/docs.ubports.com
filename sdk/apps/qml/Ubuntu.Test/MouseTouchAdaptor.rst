@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_test_mousetouchadaptor:
+Ubuntu.Test MouseTouchAdaptor
+=============================
+
 Singleton type turning mouse events into single finger touch events.
 
 +---------------------+------------------------+
@@ -7,7 +11,7 @@ Singleton type turning mouse events into single finger touch events.
 Properties
 ----------
 
--  ****`enabled </sdk/apps/qml/Ubuntu.Test/MouseTouchAdaptor#enabled-prop>`__****
+-  :ref:`enabled <sdk_ubuntu_test_mousetouchadaptor_enabled-prop>`
    : bool
 
 Detailed Description
@@ -27,6 +31,8 @@ on component completion or through a binding.
 
 Property Documentation
 ----------------------
+
+.. _sdk_ubuntu_test_mousetouchadaptor_enabled-prop:
 
 +--------------------------------------------------------------------------+
 |        \ enabled : bool                                                  |

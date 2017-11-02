@@ -1,5 +1,9 @@
+.. _sdk_unity_scopes_qt_qcategorisedresult:
+unity.scopes.qt QCategorisedResult
+==================================
+
 A result, including the category it belongs to.
-`More... </sdk/scopes/cpp/unity.scopes.qt/QCategorisedResult#details>`__
+:ref:`More... <sdk_unity_scopes_qt_qcategorisedresult#details>`
 
 ``#include <unity/scopes/qt/QCategorisedResult.h>``
 
@@ -14,9 +18,9 @@ Inheritance diagram for unity::scopes::qt::QCategorisedResult:
 
  
 
-`QCategorisedResult </sdk/scopes/cpp/unity.scopes.qt/QCategorisedResult#aaa0d31b18c65dff255c13ff014d11b7d>`__
+:ref:`QCategorisedResult <sdk_unity_scopes_qt_qcategorisedresult#aaa0d31b18c65dff255c13ff014d11b7d>`
 (QCategory::SCPtr
-`category </sdk/scopes/cpp/unity.scopes.qt/QCategorisedResult#a8516116413e83bdedb978c71f803f118>`__)
+:ref:`category <sdk_unity_scopes_qt_qcategorisedresult#a8516116413e83bdedb978c71f803f118>`)
 
  
 
@@ -27,9 +31,9 @@ Inheritance diagram for unity::scopes::qt::QCategorisedResult:
 
 void 
 
-`set\_category </sdk/scopes/cpp/unity.scopes.qt/QCategorisedResult#ab24057bbd0ee446a40cb0b9d38ef696d>`__
+:ref:`set\_category <sdk_unity_scopes_qt_qcategorisedresult#ab24057bbd0ee446a40cb0b9d38ef696d>`
 (QCategory::SCPtr
-`category </sdk/scopes/cpp/unity.scopes.qt/QCategorisedResult#a8516116413e83bdedb978c71f803f118>`__)
+:ref:`category <sdk_unity_scopes_qt_qcategorisedresult#a8516116413e83bdedb978c71f803f118>`)
 
  
 
@@ -39,7 +43,7 @@ void 
 
 QCategory::SCPtr 
 
-`category </sdk/scopes/cpp/unity.scopes.qt/QCategorisedResult#a8516116413e83bdedb978c71f803f118>`__
+:ref:`category <sdk_unity_scopes_qt_qcategorisedresult#a8516116413e83bdedb978c71f803f118>`
 () const
 
  
@@ -57,52 +61,50 @@ usual value semantics.
          
 
 **QCategorisedResult**
-(`QCategorisedResult </sdk/scopes/cpp/unity.scopes.qt/QCategorisedResult/>`__
-const &other)
+(:ref:`QCategorisedResult <sdk_unity_scopes_qt_qcategorisedresult>` const
+&other)
 
  
 
-`QCategorisedResult </sdk/scopes/cpp/unity.scopes.qt/QCategorisedResult/>`__
+:ref:` <>` `QCategorisedResult <sdk_unity_scopes_qt_qcategorisedresult>`
 & 
 
 **operator=**
-(`QCategorisedResult </sdk/scopes/cpp/unity.scopes.qt/QCategorisedResult/>`__
-const &other)
+(:ref:`QCategorisedResult <sdk_unity_scopes_qt_qcategorisedresult>` const
+&other)
 
  
 
          
 
 **QCategorisedResult**
-(`QCategorisedResult </sdk/scopes/cpp/unity.scopes.qt/QCategorisedResult/>`__
-&&)
+(:ref:`QCategorisedResult <sdk_unity_scopes_qt_qcategorisedresult>` &&)
 
  
 
-`QCategorisedResult </sdk/scopes/cpp/unity.scopes.qt/QCategorisedResult/>`__
+:ref:` <>` `QCategorisedResult <sdk_unity_scopes_qt_qcategorisedresult>`
 & 
 
 **operator=**
-(`QCategorisedResult </sdk/scopes/cpp/unity.scopes.qt/QCategorisedResult/>`__
-&&)
+(:ref:`QCategorisedResult <sdk_unity_scopes_qt_qcategorisedresult>` &&)
 
  
 
 |-| Public Member Functions inherited from
-`unity::scopes::qt::QResult </sdk/scopes/cpp/unity.scopes.qt/QResult/>`__
+:ref:`unity::scopes::qt::QResult <sdk_unity_scopes_qt_qresult>`
 
 virtual 
 
-`~QResult </sdk/scopes/cpp/unity.scopes.qt/QResult#ad1bc050f67237c601821cc5836c76b94>`__
+:ref:`~QResult <sdk_unity_scopes_qt_qresult#ad1bc050f67237c601821cc5836c76b94>`
 ()
 
  
 
 void 
 
-`store </sdk/scopes/cpp/unity.scopes.qt/QResult#a56592ac2bbf7a752f9aa99ea26226cee>`__
-(`QResult </sdk/scopes/cpp/unity.scopes.qt/QResult/>`__ const &other,
-bool intercept\_activation=false)
+:ref:`store <sdk_unity_scopes_qt_qresult#a56592ac2bbf7a752f9aa99ea26226cee>`
+(:ref:`QResult <sdk_unity_scopes_qt_qresult>` const &other, bool
+intercept\_activation=false)
 
  
 
@@ -112,7 +114,7 @@ bool intercept\_activation=false)
 
 bool 
 
-`has\_stored\_result </sdk/scopes/cpp/unity.scopes.qt/QResult#affcb80d29930b57d8dc6aa268820d451>`__
+:ref:`has\_stored\_result <sdk_unity_scopes_qt_qresult#affcb80d29930b57d8dc6aa268820d451>`
 () const
 
  
@@ -121,9 +123,9 @@ bool 
 
  
 
-`QResult </sdk/scopes/cpp/unity.scopes.qt/QResult/>`__ 
+:ref:`QResult <sdk_unity_scopes_qt_qresult>` 
 
-`retrieve </sdk/scopes/cpp/unity.scopes.qt/QResult#a3827c6b06d202ca6079f08b666f2c0ea>`__
+:ref:`retrieve <sdk_unity_scopes_qt_qresult#a3827c6b06d202ca6079f08b666f2c0ea>`
 () const
 
  
@@ -134,9 +136,9 @@ bool 
 
         void 
 
-`set\_uri </sdk/scopes/cpp/unity.scopes.qt/QResult#a1aa2ae9082f1e6507d18dc650f4d6d9d>`__
+:ref:`set\_uri <sdk_unity_scopes_qt_qresult#a1aa2ae9082f1e6507d18dc650f4d6d9d>`
 (QString const
-&\ `uri </sdk/scopes/cpp/unity.scopes.qt/QResult#a253c1f08aae4338a3f89e192538e99f8>`__)
+&\ :ref:`uri <sdk_unity_scopes_qt_qresult#a253c1f08aae4338a3f89e192538e99f8>`)
 
  
 
@@ -146,9 +148,9 @@ bool 
 
 void 
 
-`set\_title </sdk/scopes/cpp/unity.scopes.qt/QResult#a1f3defe1265de15c763a591b0da87cf0>`__
+:ref:`set\_title <sdk_unity_scopes_qt_qresult#a1f3defe1265de15c763a591b0da87cf0>`
 (QString const
-&\ `title </sdk/scopes/cpp/unity.scopes.qt/QResult#aafcb8c20516636cadb4be0e285ab20f6>`__)
+&\ :ref:`title <sdk_unity_scopes_qt_qresult#aafcb8c20516636cadb4be0e285ab20f6>`)
 
  
 
@@ -158,7 +160,7 @@ void 
 
 void 
 
-`set\_art </sdk/scopes/cpp/unity.scopes.qt/QResult#a1f4f912a02b84f077bc85879a72a90be>`__
+:ref:`set\_art <sdk_unity_scopes_qt_qresult#a1f4f912a02b84f077bc85879a72a90be>`
 (QString const &image)
 
  
@@ -169,9 +171,9 @@ void 
 
 void 
 
-`set\_dnd\_uri </sdk/scopes/cpp/unity.scopes.qt/QResult#aa091842db377921d6b0dd388f823a245>`__
+:ref:`set\_dnd\_uri <sdk_unity_scopes_qt_qresult#aa091842db377921d6b0dd388f823a245>`
 (QString const
-&\ `dnd\_uri </sdk/scopes/cpp/unity.scopes.qt/QResult#a3da993e25ee4a714fc5feedb29892d05>`__)
+&\ :ref:`dnd\_uri <sdk_unity_scopes_qt_qresult#a3da993e25ee4a714fc5feedb29892d05>`)
 
  
 
@@ -181,7 +183,7 @@ void 
 
 void 
 
-`set\_intercept\_activation </sdk/scopes/cpp/unity.scopes.qt/QResult#a92fcf6ff2271c442c5190dab63ec4042>`__
+:ref:`set\_intercept\_activation <sdk_unity_scopes_qt_qresult#a92fcf6ff2271c442c5190dab63ec4042>`
 ()
 
  
@@ -193,7 +195,7 @@ void 
 
 bool 
 
-`direct\_activation </sdk/scopes/cpp/unity.scopes.qt/QResult#aa905c2b7854efd8d8031cb80044ccb9f>`__
+:ref:`direct\_activation <sdk_unity_scopes_qt_qresult#aa905c2b7854efd8d8031cb80044ccb9f>`
 () const
 
  
@@ -203,9 +205,9 @@ bool 
 
  
 
-`ScopeProxy </sdk/scopes/cpp/unity.scopes#a94db15da410f8419e4da711db842aaae>`__ 
+:ref:`ScopeProxy <sdk_unity_scopes#a94db15da410f8419e4da711db842aaae>` 
 
-`target\_scope\_proxy </sdk/scopes/cpp/unity.scopes.qt/QResult#a273100ac7b782044294250f939e3dba0>`__
+:ref:`target\_scope\_proxy <sdk_unity_scopes_qt_qresult#a273100ac7b782044294250f939e3dba0>`
 () const
 
  
@@ -217,7 +219,7 @@ bool 
 
 QVariant & 
 
-`operator[] </sdk/scopes/cpp/unity.scopes.qt/QResult#a3b939c0d073ad78286e3cb8b8525ba2a>`__
+:ref:`operator[] <sdk_unity_scopes_qt_qresult#a3b939c0d073ad78286e3cb8b8525ba2a>`
 (QString const &key)
 
  
@@ -228,7 +230,7 @@ QVariant & 
 
 QVariant const & 
 
-`operator[] </sdk/scopes/cpp/unity.scopes.qt/QResult#a205f7595cf44c96b610cc7813b126db2>`__
+:ref:`operator[] <sdk_unity_scopes_qt_qresult#a205f7595cf44c96b610cc7813b126db2>`
 (QString const &key) const
 
  
@@ -239,7 +241,7 @@ QVariant const & 
 
 QString 
 
-`uri </sdk/scopes/cpp/unity.scopes.qt/QResult#a253c1f08aae4338a3f89e192538e99f8>`__
+:ref:`uri <sdk_unity_scopes_qt_qresult#a253c1f08aae4338a3f89e192538e99f8>`
 () const noexcept
 
  
@@ -250,7 +252,7 @@ QString 
 
 QString 
 
-`title </sdk/scopes/cpp/unity.scopes.qt/QResult#aafcb8c20516636cadb4be0e285ab20f6>`__
+:ref:`title <sdk_unity_scopes_qt_qresult#aafcb8c20516636cadb4be0e285ab20f6>`
 () const noexcept
 
  
@@ -261,7 +263,7 @@ QString 
 
 QString 
 
-`art </sdk/scopes/cpp/unity.scopes.qt/QResult#ada4ef189c8a95ceb96bcf777dc312b24>`__
+:ref:`art <sdk_unity_scopes_qt_qresult#ada4ef189c8a95ceb96bcf777dc312b24>`
 () const noexcept
 
  
@@ -272,7 +274,7 @@ QString 
 
 QString 
 
-`dnd\_uri </sdk/scopes/cpp/unity.scopes.qt/QResult#a3da993e25ee4a714fc5feedb29892d05>`__
+:ref:`dnd\_uri <sdk_unity_scopes_qt_qresult#a3da993e25ee4a714fc5feedb29892d05>`
 () const noexcept
 
  
@@ -283,7 +285,7 @@ QString 
 
 bool 
 
-`contains </sdk/scopes/cpp/unity.scopes.qt/QResult#adde088969220153fde8dca7a4c4d117a>`__
+:ref:`contains <sdk_unity_scopes_qt_qresult#adde088969220153fde8dca7a4c4d117a>`
 (QString const &key) const
 
  
@@ -294,7 +296,7 @@ bool 
 
 QVariant const & 
 
-`value </sdk/scopes/cpp/unity.scopes.qt/QResult#a7ed3240ad58f23d88e9de63e15062598>`__
+:ref:`value <sdk_unity_scopes_qt_qresult#a7ed3240ad58f23d88e9de63e15062598>`
 (QString const &key) const
 
  
@@ -305,7 +307,7 @@ QVariant const & 
 
 QVariantMap 
 
-`serialize </sdk/scopes/cpp/unity.scopes.qt/QResult#a9188d2a2e431c71d85b142539f654e44>`__
+:ref:`serialize <sdk_unity_scopes_qt_qresult#a9188d2a2e431c71d85b142539f654e44>`
 () const
 
  
@@ -316,28 +318,25 @@ QVariantMap 
 
          
 
-**QResult** (`QResult </sdk/scopes/cpp/unity.scopes.qt/QResult/>`__
-const &other)
+**QResult** (:ref:`QResult <sdk_unity_scopes_qt_qresult>` const &other)
 
  
 
          
 
-**QResult** (`QResult </sdk/scopes/cpp/unity.scopes.qt/QResult/>`__ &&)
+**QResult** (:ref:`QResult <sdk_unity_scopes_qt_qresult>` &&)
 
  
 
-        `QResult </sdk/scopes/cpp/unity.scopes.qt/QResult/>`__ & 
+:ref:` <>` `QResult <sdk_unity_scopes_qt_qresult>` & 
 
-**operator=** (`QResult </sdk/scopes/cpp/unity.scopes.qt/QResult/>`__
-const &other)
+**operator=** (:ref:`QResult <sdk_unity_scopes_qt_qresult>` const &other)
 
  
 
-        `QResult </sdk/scopes/cpp/unity.scopes.qt/QResult/>`__ & 
+:ref:` <>` `QResult <sdk_unity_scopes_qt_qresult>` & 
 
-**operator=** (`QResult </sdk/scopes/cpp/unity.scopes.qt/QResult/>`__
-&&)
+**operator=** (:ref:`QResult <sdk_unity_scopes_qt_qresult>` &&)
 
  
 
@@ -374,7 +373,7 @@ Constructor & Destructor Documentation
 +--------------------------------------+--------------------------------------+
 
 Creates a
-`CategorisedResult </sdk/scopes/cpp/unity.scopes.CategorisedResult/>`__
+`CategorisedResult </sdk/scopes/cpp/unity.scopes.CategorisedResult/>`_ 
 with given category, with all base attributes initially empty.
 
 Parameters
@@ -416,6 +415,6 @@ Parameters
     | category   | The category for the result.   |
     +------------+--------------------------------+
 
-.. |Inheritance graph| image:: /media/sdk/scopes/cpp/unity.scopes.qt/QCategorisedResult/classunity_1_1scopes_1_1qt_1_1_q_categorised_result__inherit__graph.png
-.. |-| image:: /media/sdk/scopes/cpp/unity.scopes.qt/QCategorisedResult/closed.png
+.. |Inheritance graph| image:: /mediasdk_unity_scopes_qt_qcategorisedresultclassunity_1_1scopes_1_1qt_1_1_q_categorised_result__inherit__graph.png
+.. |-| image:: /mediasdk_unity_scopes_qt_qcategorisedresultclosed.png
 

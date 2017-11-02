@@ -1,3 +1,7 @@
+.. _sdk_scopejs_onlineaccountclientservicestatus:
+ScopeJS OnlineAccountClientServiceStatus
+========================================
+
 
 An object that contains the details about a service's status and
 authorization parameters

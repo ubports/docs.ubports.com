@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_listitems_base:
+Ubuntu.Components.ListItems Base
+================================
+
 Parent class of various list item classes that can have an icon and a
 progression symbol.
 
@@ -6,16 +10,16 @@ progression symbol.
 |                                      | 1.3                                  |
 +--------------------------------------+--------------------------------------+
 | Inherits:                            | `Empty </sdk/apps/qml/Ubuntu.Compone |
-|                                      | nts/ListItems.Empty/>`__             |
+|                                      | nts/ListItems.Empty/>`_              |
 +--------------------------------------+--------------------------------------+
 | Inherited By:                        | `MultiValue </sdk/apps/qml/Ubuntu.Co |
-|                                      | mponents/ListItems.MultiValue/>`__,  |
+|                                      | mponents/ListItems.MultiValue/>`_ ,  |
 |                                      | `SingleValue </sdk/apps/qml/Ubuntu.C |
-|                                      | omponents/ListItems.SingleValue/>`__ |
+|                                      | omponents/ListItems.SingleValue/>`_  |
 |                                      | ,                                    |
 |                                      | and                                  |
 |                                      | `Subtitled </sdk/apps/qml/Ubuntu.Com |
-|                                      | ponents/ListItems.Subtitled/>`__.    |
+|                                      | ponents/ListItems.Subtitled/>`_ .    |
 +--------------------------------------+--------------------------------------+
 
 -  Obsolete members
@@ -23,26 +27,27 @@ progression symbol.
 Properties
 ----------
 
--  ****`fallbackIconName </sdk/apps/qml/Ubuntu.Components/ListItems.Base#fallbackIconName-prop>`__****
+-  `fallbackIconName </sdk/apps/qml/Ubuntu.Components/ListItems.Base/_fallbackIconName-prop>`_ 
    : string
--  ****`fallbackIconSource </sdk/apps/qml/Ubuntu.Components/ListItems.Base#fallbackIconSource-prop>`__****
+-  `fallbackIconSource </sdk/apps/qml/Ubuntu.Components/ListItems.Base/_fallbackIconSource-prop>`_ 
    : url
--  ****`iconFrame </sdk/apps/qml/Ubuntu.Components/ListItems.Base#iconFrame-prop>`__****
+-  `iconFrame </sdk/apps/qml/Ubuntu.Components/ListItems.Base/_iconFrame-prop>`_ 
    : bool
--  ****`progression </sdk/apps/qml/Ubuntu.Components/ListItems.Base#progression-prop>`__****
+-  `progression </sdk/apps/qml/Ubuntu.Components/ListItems.Base/_progression-prop>`_ 
    : bool
 
 Detailed Description
 --------------------
 
 **Note:** **The component is deprecated. Use
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ component
-instead.**
+:ref:`ListItem <sdk_ubuntu_components_listitem>` component instead.**
 
 Examples: See subclasses
 
 Property Documentation
 ----------------------
+
+.. _sdk_ubuntu_components_listitems_base_fallbackIconName-prop:
 
 +--------------------------------------------------------------------------+
 |        \ fallbackIconName : string                                       |
@@ -51,7 +56,7 @@ Property Documentation
 The icon shown in the list item if iconName failed to load (optional).
 
 If both
-`fallbackIconSource </sdk/apps/qml/Ubuntu.Components/ListItems.Base#fallbackIconSource-prop>`__
+`fallbackIconSource </sdk/apps/qml/Ubuntu.Components/ListItems.Base/#fallbackIconSource-prop>`_ 
 and fallbackIconName are defined, fallbackIconName will be ignored.
 
 **Note:** The complete list of icons available in Ubuntu is not
@@ -65,15 +70,19 @@ These 2 separate icon themes will be merged soon.
 
 | 
 
+.. _sdk_ubuntu_components_listitems_base_fallbackIconSource-prop:
+
 +--------------------------------------------------------------------------+
 |        \ fallbackIconSource :                                            |
-| `url <http://doc.qt.io/qt-5/qml-url.html>`__                             |
+| `url <http://doc.qt.io/qt-5/qml-url.html>`_                              |
 +--------------------------------------------------------------------------+
 
 The location of the icon to show in the list item if iconSource failed
 to load (optional).
 
 | 
+
+.. _sdk_ubuntu_components_listitems_base_iconFrame-prop:
 
 +--------------------------------------------------------------------------+
 |        \ iconFrame : bool                                                |
@@ -82,6 +91,8 @@ to load (optional).
 Show or hide the frame around the icon
 
 | 
+
+.. _sdk_ubuntu_components_listitems_base_progression-prop:
 
 +--------------------------------------------------------------------------+
 |        \ progression : bool                                              |

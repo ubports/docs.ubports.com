@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_qt_sensors_-_shakeit_qml_example:
+QtSensors Qt Sensors - ShakeIt QML Example
+==========================================
+
 
 
 |image0|
@@ -14,16 +18,15 @@ Import the Sensors Declarative module.
 
     import QtSensors 5.0
 
-Add a `SensorGesture </sdk/apps/qml/QtSensors/SensorGesture/>`__ QML
-type.
+Add a :ref:`SensorGesture <sdk_qtsensors_sensorgesture>` QML type.
 
 .. code:: qml
 
         SensorGesture {
 
-In the `SensorGesture </sdk/apps/qml/QtSensors/SensorGesture/>`__ type,
-specify which gesture to be used. Note that this can be a comma
-separated list. Here we are only interested in one gesture recognizer.
+In the :ref:`SensorGesture <sdk_qtsensors_sensorgesture>` type, specify
+which gesture to be used. Note that this can be a comma separated list.
+Here we are only interested in one gesture recognizer.
 
 .. code:: qml
 

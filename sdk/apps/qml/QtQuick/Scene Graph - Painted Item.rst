@@ -1,3 +1,7 @@
+.. _sdk_qtquick_scene_graph_-_painted_item:
+QtQuick Scene Graph - Painted Item
+==================================
+
 
 
 The Painted Item example shows how to use the QML Scene Graph framework
@@ -17,7 +21,7 @@ text balloons.
 
 We will focus on the ``TextBalloon`` class first and continue with the
 ``textballoons.qml`` file. For an example on how to implement a `Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-index/>`__ plugin please look at
+Quick </sdk/apps/qml/QtQuick/qtquick-index/>`_  plugin please look at
 Writing an Extension Plugin
 
 .. rubric:: TextBalloon Class Declaration
@@ -138,9 +142,9 @@ textballoons and the controls button to add new balloons.
 
 The balloonModel contains two types at application start which will be
 displayed by the
-`balloonView </sdk/apps/qml/QtQuick/customitems-painteditem#balloonview>`__.
+`balloonView </sdk/apps/qml/QtQuick/customitems-painteditem/#balloonview>`_ .
 The
-`balloonView </sdk/apps/qml/QtQuick/customitems-painteditem#balloonview>`__
+`balloonView </sdk/apps/qml/QtQuick/customitems-painteditem/#balloonview>`_ 
 alernates the TextBalloon delegate items between left-aligned and
 right-aligned.
 
@@ -179,9 +183,9 @@ right-aligned.
     }
 
 The controls part of the UI contains a rectangle with a
-`MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ which changes color
-when the mouse hovers over it. This control 'button' adds a new object
-to the end of the model with a random width.
+:ref:`MouseArea <sdk_qtquick_mousearea>` which changes color when the mouse
+hovers over it. This control 'button' adds a new object to the end of
+the model with a random width.
 
 Files:
 

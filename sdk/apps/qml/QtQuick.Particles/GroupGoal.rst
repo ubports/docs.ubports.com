@@ -1,18 +1,22 @@
+.. _sdk_qtquick_particles_groupgoal:
+QtQuick.Particles GroupGoal
+===========================
+
 For changing the state of a group of a particle
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtQuick.Particles 2.0         |
 +--------------------------------------+--------------------------------------+
 | Inherits:                            | `Affector </sdk/apps/qml/QtQuick/Par |
-|                                      | ticles.Affector/>`__                 |
+|                                      | ticles.Affector/>`_                  |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`goalState </sdk/apps/qml/QtQuick/Particles.GroupGoal#goalState-prop>`__****
+-  `goalState </sdk/apps/qml/QtQuick/Particles.GroupGoal/_goalState-prop>`_ 
    : string
--  ****`jump </sdk/apps/qml/QtQuick/Particles.GroupGoal#jump-prop>`__****
+-  `jump </sdk/apps/qml/QtQuick/Particles.GroupGoal/_jump-prop>`_ 
    : bool
 
 Detailed Description
@@ -20,6 +24,8 @@ Detailed Description
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_particles_groupgoal_goalState-prop:
 
 +--------------------------------------------------------------------------+
 |        \ goalState : string                                              |
@@ -34,6 +40,8 @@ pass through intermediate groups on that path for their respective
 durations.
 
 | 
+
+.. _sdk_qtquick_particles_groupgoal_jump-prop:
 
 +--------------------------------------------------------------------------+
 |        \ jump : bool                                                     |

@@ -1,3 +1,7 @@
+.. _sdk_qtqml_number:
+QtQml Number
+============
+
 The Number object provides represents a number value
 
 +---------------------+--------------------+
@@ -8,13 +12,13 @@ Methods
 -------
 
 -  string
-   ****`fromLocaleString </sdk/apps/qml/QtQml/Number#fromLocaleString-method>`__****\ (locale,
+   **:ref:`fromLocaleString <sdk_qtqml_number#fromLocaleString-method>`**\ (locale,
    number)
 -  string
-   ****`toLocaleCurrencyString </sdk/apps/qml/QtQml/Number#toLocaleCurrencyString-method>`__****\ (locale,
+   **:ref:`toLocaleCurrencyString <sdk_qtqml_number#toLocaleCurrencyString-method>`**\ (locale,
    symbol)
 -  string
-   ****`toLocaleString </sdk/apps/qml/QtQml/Number#toLocaleString-method>`__****\ (locale,
+   **:ref:`toLocaleString <sdk_qtqml_number#toLocaleString-method>`**\ (locale,
    format, precision)
 
 Detailed Description
@@ -23,10 +27,12 @@ Detailed Description
 The QML Number object extends the JS Number object with locale aware
 functions.
 
-**See also** `Locale </sdk/apps/qml/QtQml/Locale/>`__.
+**See also** :ref:`Locale <sdk_qtqml_locale>`.
 
 Method Documentation
 --------------------
+
+.. _sdk_qtqml_number_string fromLocaleString-method:
 
 +--------------------------------------------------------------------------+
 |        \ string fromLocaleString(locale, number)                         |
@@ -50,6 +56,8 @@ For example, using the German locale:
 
 | 
 
+.. _sdk_qtqml_number_string toLocaleCurrencyString-method:
+
 +--------------------------------------------------------------------------+
 |        \ string toLocaleCurrencyString(locale, symbol)                   |
 +--------------------------------------------------------------------------+
@@ -59,9 +67,11 @@ the specified *locale*. If *symbol* is specified it will be used as the
 currency symbol.
 
 **See also**
-`Locale::currencySymbol() </sdk/apps/qml/QtQml/Locale#currencySymbol-method>`__.
+:ref:`Locale::currencySymbol() <sdk_qtqml_locale#currencySymbol-method>`.
 
 | 
+
+.. _sdk_qtqml_number_string toLocaleString-method:
 
 +--------------------------------------------------------------------------+
 |        \ string toLocaleString(locale, format, precision)                |

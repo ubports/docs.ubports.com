@@ -1,3 +1,7 @@
+.. _sdk_qtorganizer_tag:
+QtOrganizer Tag
+===============
+
 The Tag element contains the tag string of an organizer item.
 
 +---------------------+--------------------------+
@@ -7,12 +11,12 @@ The Tag element contains the tag string of an organizer item.
 Properties
 ----------
 
--  ****`tag </sdk/apps/qml/QtOrganizer/Tag#tag-prop>`__**** : string
+-  :ref:`tag <sdk_qtorganizer_tag_tag-prop>` : string
 
 Signals
 -------
 
--  ****`onDetailChanged </sdk/apps/qml/QtOrganizer/Tag#onDetailChanged-signal>`__****\ ()
+-  :ref:`onDetailChanged <sdk_qtorganizer_tag_onDetailChanged-signal>`\ ()
 
 Detailed Description
 --------------------
@@ -26,6 +30,8 @@ The following fields are supported:
 Property Documentation
 ----------------------
 
+.. _sdk_qtorganizer_tag_tag-prop:
+
 +--------------------------------------------------------------------------+
 |        \ tag : string                                                    |
 +--------------------------------------------------------------------------+
@@ -37,11 +43,13 @@ This property holds the tag string.
 Signal Documentation
 --------------------
 
+.. _sdk_qtorganizer_tag_onDetailChanged()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ onDetailChanged()                                               |
 +--------------------------------------------------------------------------+
 
 **See also**
-`Detail::onDetailChanged </sdk/apps/qml/QtOrganizer/Detail#onDetailChanged-signal>`__.
+:ref:`Detail::onDetailChanged <sdk_qtorganizer_detail#onDetailChanged-signal>`.
 
 | 

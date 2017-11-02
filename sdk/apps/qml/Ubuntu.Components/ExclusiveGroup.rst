@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_exclusivegroup:
+Ubuntu.Components ExclusiveGroup
+================================
+
 ExclusiveGroup provides a way to declare several checkable controls as
 mutually exclusive.
 
@@ -6,34 +10,34 @@ mutually exclusive.
 +--------------------------------------+--------------------------------------+
 | Since:                               | Ubuntu.Components 1.3                |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `ActionList </sdk/apps/qml/Ubuntu.Co |
-|                                      | mponents/ActionList/>`__             |
+| Inherits:                            | :ref:`ActionList <sdk_ubuntu_components_a |
+|                                      | ctionlist>`_                         |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`current </sdk/apps/qml/Ubuntu.Components/ExclusiveGroup#current-prop>`__****
+-  :ref:`current <sdk_ubuntu_components_exclusivegroup_current-prop>`
    : Action
 
 Methods
 -------
 
 -  void
-   ****`bindCheckable </sdk/apps/qml/Ubuntu.Components/ExclusiveGroup#bindCheckable-method>`__****\ (object
+   **:ref:`bindCheckable <sdk_ubuntu_components_exclusivegroup#bindCheckable-method>`**\ (object
    *object*)
 -  void
-   ****`unbindCheckable </sdk/apps/qml/Ubuntu.Components/ExclusiveGroup#unbindCheckable-method>`__****\ (object
+   **:ref:`unbindCheckable <sdk_ubuntu_components_exclusivegroup#unbindCheckable-method>`**\ (object
    *object*)
 
 Detailed Description
 --------------------
 
-The `ExclusiveGroup </sdk/apps/qml/Ubuntu.Components/ExclusiveGroup/>`__
-will only allow a single object to have it's checkable property set to
-"true" at any one time. The exclusive group accepts child Actions, but
-objects other than Actions can be used by using the
-`bindCheckable </sdk/apps/qml/Ubuntu.Components/ExclusiveGroup#bindCheckable-method>`__
+The :ref:`ExclusiveGroup <sdk_ubuntu_components_exclusivegroup>` will only
+allow a single object to have it's checkable property set to "true" at
+any one time. The exclusive group accepts child Actions, but objects
+other than Actions can be used by using the
+:ref:`bindCheckable <sdk_ubuntu_components_exclusivegroup#bindCheckable-method>`
 function as long as they support one of the required signals, and a
 "checked" property.
 
@@ -53,8 +57,10 @@ function as long as they support one of the required signals, and a
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_exclusivegroup_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ current : `Action </sdk/apps/qml/Ubuntu.Components/Action/>`__  |
+| :ref:` <>`\ current : `Action <sdk_ubuntu_components_action>`          |
 +--------------------------------------------------------------------------+
 
 Returns the currently checked action
@@ -63,6 +69,8 @@ Returns the currently checked action
 
 Method Documentation
 --------------------
+
+.. _sdk_ubuntu_components_exclusivegroup_void bindCheckable-method:
 
 +--------------------------------------------------------------------------+
 |        \ void bindCheckable(object *object*)                             |
@@ -92,9 +100,11 @@ signals signals:
     }
 
 **See also**
-`ExclusiveGroup::unbindCheckable </sdk/apps/qml/Ubuntu.Components/ExclusiveGroup#unbindCheckable-method>`__.
+:ref:`ExclusiveGroup::unbindCheckable <sdk_ubuntu_components_exclusivegroup#unbindCheckable-method>`.
 
 | 
+
+.. _sdk_ubuntu_components_exclusivegroup_void unbindCheckable-method:
 
 +--------------------------------------------------------------------------+
 |        \ void unbindCheckable(object *object*)                           |
@@ -103,6 +113,6 @@ signals signals:
 Explicitly unbind an objects checkability from this exclusive group.
 
 **See also**
-`ExclusiveGroup::bindCheckable </sdk/apps/qml/Ubuntu.Components/ExclusiveGroup#bindCheckable-method>`__.
+:ref:`ExclusiveGroup::bindCheckable <sdk_ubuntu_components_exclusivegroup#bindCheckable-method>`.
 
 | 

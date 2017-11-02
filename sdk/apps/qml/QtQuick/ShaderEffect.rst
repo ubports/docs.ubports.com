@@ -1,60 +1,59 @@
+.. _sdk_qtquick_shadereffect:
+QtQuick ShaderEffect
+====================
+
 Applies custom shaders to a rectangle
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtQuick 2.4                   |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Item </sdk/apps/qml/QtQuick/Item/>` |
-|                                      | __                                   |
+| Inherits:                            | :ref:`Item <sdk_qtquick_item>`       |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`blending </sdk/apps/qml/QtQuick/ShaderEffect#blending-prop>`__****
-   : bool
--  ****`cullMode </sdk/apps/qml/QtQuick/ShaderEffect#cullMode-prop>`__****
-   : enumeration
--  ****`fragmentShader </sdk/apps/qml/QtQuick/ShaderEffect#fragmentShader-prop>`__****
-   : string
--  ****`log </sdk/apps/qml/QtQuick/ShaderEffect#log-prop>`__**** :
-   string
--  ****`mesh </sdk/apps/qml/QtQuick/ShaderEffect#mesh-prop>`__**** :
-   variant
--  ****`status </sdk/apps/qml/QtQuick/ShaderEffect#status-prop>`__**** :
+-  :ref:`blending <sdk_qtquick_shadereffect_blending-prop>` : bool
+-  :ref:`cullMode <sdk_qtquick_shadereffect_cullMode-prop>` :
    enumeration
--  ****`supportsAtlasTextures </sdk/apps/qml/QtQuick/ShaderEffect#supportsAtlasTextures-prop>`__****
+-  :ref:`fragmentShader <sdk_qtquick_shadereffect_fragmentShader-prop>`
+   : string
+-  :ref:`log <sdk_qtquick_shadereffect_log-prop>` : string
+-  :ref:`mesh <sdk_qtquick_shadereffect_mesh-prop>` : variant
+-  :ref:`status <sdk_qtquick_shadereffect_status-prop>` :
+   enumeration
+-  :ref:`supportsAtlasTextures <sdk_qtquick_shadereffect_supportsAtlasTextures-prop>`
    : bool
--  ****`vertexShader </sdk/apps/qml/QtQuick/ShaderEffect#vertexShader-prop>`__****
+-  :ref:`vertexShader <sdk_qtquick_shadereffect_vertexShader-prop>`
    : string
 
 Detailed Description
 --------------------
 
-The `ShaderEffect </sdk/apps/qml/QtQuick/ShaderEffect/>`__ type applies
-a custom OpenGL
-`vertex </sdk/apps/qml/QtQuick/ShaderEffect#vertexShader-prop>`__ and
-`fragment </sdk/apps/qml/QtQuick/ShaderEffect#fragmentShader-prop>`__
-shader to a rectangle. It allows you to write effects such as drop
-shadow, blur, colorize and page curl directly in QML.
+The :ref:`ShaderEffect <sdk_qtquick_shadereffect>` type applies a custom
+OpenGL :ref:`vertex <sdk_qtquick_shadereffect#vertexShader-prop>` and
+:ref:`fragment <sdk_qtquick_shadereffect#fragmentShader-prop>` shader to a
+rectangle. It allows you to write effects such as drop shadow, blur,
+colorize and page curl directly in QML.
 
 There are two types of input to the
-`vertexShader </sdk/apps/qml/QtQuick/ShaderEffect#vertexShader-prop>`__:
-uniform variables and attributes. Some are predefined:
+:ref:`vertexShader <sdk_qtquick_shadereffect#vertexShader-prop>`: uniform
+variables and attributes. Some are predefined:
 
 -  uniform mat4 qt\_Matrix - combined transformation matrix, the product
    of the matrices from the root item to this
-   `ShaderEffect </sdk/apps/qml/QtQuick/ShaderEffect/>`__, and an
-   orthogonal projection.
+   :ref:`ShaderEffect <sdk_qtquick_shadereffect>`, and an orthogonal
+   projection.
 -  uniform float qt\_Opacity - combined opacity, the product of the
    opacities from the root item to this
-   `ShaderEffect </sdk/apps/qml/QtQuick/ShaderEffect/>`__.
+   :ref:`ShaderEffect <sdk_qtquick_shadereffect>`.
 -  attribute vec4 qt\_Vertex - vertex position, the top-left vertex has
    position (0, 0), the bottom-right
-   (`width </sdk/apps/qml/QtQuick/Item#width-prop>`__,
-   `height </sdk/apps/qml/QtQuick/Item#height-prop>`__).
+   (:ref:`width <sdk_qtquick_item#width-prop>`,
+   :ref:`height <sdk_qtquick_item#height-prop>`).
 -  attribute vec2 qt\_MultiTexCoord0 - texture coordinate, the top-left
    coordinate is (0, 0), the bottom-right (1, 1). If
-   `supportsAtlasTextures </sdk/apps/qml/QtQuick/ShaderEffect#supportsAtlasTextures-prop>`__
+   :ref:`supportsAtlasTextures <sdk_qtquick_shadereffect#supportsAtlasTextures-prop>`
    is true, coordinates will be based on position in the atlas instead.
 
 In addition, any property that can be mapped to an OpenGL Shading
@@ -74,19 +73,19 @@ list shows how properties are mapped to GLSL uniform variables:
 -  QTransform -> mat3
 -  QMatrix4x4 -> mat4
 -  QQuaternion -> vec4, scalar value is ``w``.
--  `Image </sdk/apps/qml/QtQuick/imageelements#image>`__,
-   `ShaderEffectSource </sdk/apps/qml/QtQuick/ShaderEffectSource/>`__ ->
-   sampler2D - Origin is in the top-left corner, and the color values
-   are premultiplied.
+-  `Image </sdk/apps/qml/QtQuick/imageelements/#image>`_ ,
+   :ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>` -> sampler2D
+   - Origin is in the top-left corner, and the color values are
+   premultiplied.
 
 The QML scene graph back-end may choose to allocate textures in texture
 atlases. If a texture allocated in an atlas is passed to a
-`ShaderEffect </sdk/apps/qml/QtQuick/ShaderEffect/>`__, it is by default
-copied from the texture atlas into a stand-alone texture so that the
-texture coordinates span from 0 to 1, and you get the expected wrap
-modes. However, this will increase the memory usage. To avoid the
-texture copy, set
-`supportsAtlasTextures </sdk/apps/qml/QtQuick/ShaderEffect#supportsAtlasTextures-prop>`__
+:ref:`ShaderEffect <sdk_qtquick_shadereffect>`, it is by default copied
+from the texture atlas into a stand-alone texture so that the texture
+coordinates span from 0 to 1, and you get the expected wrap modes.
+However, this will increase the memory usage. To avoid the texture copy,
+set
+:ref:`supportsAtlasTextures <sdk_qtquick_shadereffect#supportsAtlasTextures-prop>`
 for simple shaders using qt\_MultiTexCoord0, or for each "uniform
 sampler2D <name>" declare a "uniform vec4 qt\_SubRect\_<name>" which
 will be assigned the texture's normalized source rectangle. For
@@ -98,11 +97,11 @@ texture atlas is "qt\_SubRect\_source.xy + qt\_SubRect\_source.zw \*
 qt\_MultiTexCoord0".
 
 The output from the
-`fragmentShader </sdk/apps/qml/QtQuick/ShaderEffect#fragmentShader-prop>`__
-should be premultiplied. If
-`blending </sdk/apps/qml/QtQuick/ShaderEffect#blending-prop>`__ is
-enabled, source-over blending is used. However, additive blending can be
-achieved by outputting zero in the alpha channel.
+:ref:`fragmentShader <sdk_qtquick_shadereffect#fragmentShader-prop>` should
+be premultiplied. If
+:ref:`blending <sdk_qtquick_shadereffect#blending-prop>` is enabled,
+source-over blending is used. However, additive blending can be achieved
+by outputting zero in the alpha channel.
 
 +--------------------------------------+--------------------------------------+
 | |image0|                             | .. code:: qml                        |
@@ -154,18 +153,17 @@ achieved by outputting zero in the alpha channel.
 |                                      |     }                                |
 +--------------------------------------+--------------------------------------+
 
-By default, the `ShaderEffect </sdk/apps/qml/QtQuick/ShaderEffect/>`__
-consists of four vertices, one for each corner. For non-linear vertex
+By default, the :ref:`ShaderEffect <sdk_qtquick_shadereffect>` consists of
+four vertices, one for each corner. For non-linear vertex
 transformations, like page curl, you can specify a fine grid of vertices
-by specifying a `mesh </sdk/apps/qml/QtQuick/ShaderEffect#mesh-prop>`__
+by specifying a :ref:`mesh <sdk_qtquick_shadereffect#mesh-prop>`
 resolution.
 
 ShaderEffect and Item Layers
 ----------------------------
 
-The `ShaderEffect </sdk/apps/qml/QtQuick/ShaderEffect/>`__ type can be
-combined with `layered
-items </sdk/apps/qml/QtQuick/Item#item-layers>`__.
+The :ref:`ShaderEffect <sdk_qtquick_shadereffect>` type can be combined
+with :ref:`layered items <sdk_qtquick_item#item-layers>`.
 
 +--------------------------+--------------------------+--------------------------+
 | **Layer with effect      | **Layer with effect      | .. code:: qml            |
@@ -267,25 +265,29 @@ using with Qt Quick applications.
 than bottom-left which is common in OpenGL.
 
 For information about the GLSL version being used, see
-`QtQuick::OpenGLInfo </sdk/apps/qml/QtQuick/OpenGLInfo/>`__.
+:ref:`QtQuick::OpenGLInfo <sdk_qtquick_openglinfo>`.
 
-**See also** `Item Layers </sdk/apps/qml/QtQuick/Item#item-layers>`__.
+**See also** :ref:`Item Layers <sdk_qtquick_item#item-layers>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_shadereffect_blending-prop:
 
 +--------------------------------------------------------------------------+
 |        \ blending : bool                                                 |
 +--------------------------------------------------------------------------+
 
 If this property is true, the output from the
-`fragmentShader </sdk/apps/qml/QtQuick/ShaderEffect#fragmentShader-prop>`__
-is blended with the background using source-over blend mode. If false,
-the background is disregarded. Blending decreases the performance, so
-you should set this property to false when blending is not needed. The
+:ref:`fragmentShader <sdk_qtquick_shadereffect#fragmentShader-prop>` is
+blended with the background using source-over blend mode. If false, the
+background is disregarded. Blending decreases the performance, so you
+should set this property to false when blending is not needed. The
 default value is true.
 
 | 
+
+.. _sdk_qtquick_shadereffect_cullMode-prop:
 
 +--------------------------------------------------------------------------+
 |        \ cullMode : enumeration                                          |
@@ -293,16 +295,18 @@ default value is true.
 
 This property defines which sides of the item should be visible.
 
--  `ShaderEffect </sdk/apps/qml/QtQuick/ShaderEffect/>`__.NoCulling -
-   Both sides are visible
--  `ShaderEffect </sdk/apps/qml/QtQuick/ShaderEffect/>`__.BackFaceCulling
-   - only front side is visible
--  `ShaderEffect </sdk/apps/qml/QtQuick/ShaderEffect/>`__.FrontFaceCulling
-   - only back side is visible
+-  :ref:`ShaderEffect <sdk_qtquick_shadereffect>`.NoCulling - Both sides
+   are visible
+-  :ref:`ShaderEffect <sdk_qtquick_shadereffect>`.BackFaceCulling - only
+   front side is visible
+-  :ref:`ShaderEffect <sdk_qtquick_shadereffect>`.FrontFaceCulling - only
+   back side is visible
 
 The default is NoCulling.
 
 | 
+
+.. _sdk_qtquick_shadereffect_fragmentShader-prop:
 
 +--------------------------------------------------------------------------+
 |        \ fragmentShader : string                                         |
@@ -314,36 +318,40 @@ shader passes the texture coordinate along to the fragment shader as
 
 | 
 
+.. _sdk_qtquick_shadereffect_log-prop:
+
 +--------------------------------------------------------------------------+
 |        \ log : string                                                    |
 +--------------------------------------------------------------------------+
 
 This property holds a log of warnings and errors from the latest attempt
 at compiling and linking the OpenGL shader program. It is updated at the
-same time `status </sdk/apps/qml/QtQuick/ShaderEffect#status-prop>`__ is
-set to Compiled or Error.
+same time :ref:`status <sdk_qtquick_shadereffect#status-prop>` is set to
+Compiled or Error.
 
-**See also**
-`status </sdk/apps/qml/QtQuick/ShaderEffect#status-prop>`__.
+**See also** :ref:`status <sdk_qtquick_shadereffect#status-prop>`.
 
 | 
+
+.. _sdk_qtquick_shadereffect_mesh-prop:
 
 +--------------------------------------------------------------------------+
 |        \ mesh : variant                                                  |
 +--------------------------------------------------------------------------+
 
 This property defines the mesh used to draw the
-`ShaderEffect </sdk/apps/qml/QtQuick/ShaderEffect/>`__. It can hold any
-`GridMesh </sdk/apps/qml/QtQuick/GridMesh/>`__ object. If a size value
-is assigned to this property, the
-`ShaderEffect </sdk/apps/qml/QtQuick/ShaderEffect/>`__ implicitly uses a
-`GridMesh </sdk/apps/qml/QtQuick/GridMesh/>`__ with the value as `mesh
-resolution </sdk/apps/qml/QtQuick/GridMesh#resolution-prop>`__. By
-default, this property is the size 1x1.
+:ref:`ShaderEffect <sdk_qtquick_shadereffect>`. It can hold any
+:ref:`GridMesh <sdk_qtquick_gridmesh>` object. If a size value is assigned
+to this property, the :ref:`ShaderEffect <sdk_qtquick_shadereffect>`
+implicitly uses a :ref:`GridMesh <sdk_qtquick_gridmesh>` with the value as
+:ref:`mesh resolution <sdk_qtquick_gridmesh#resolution-prop>`. By default,
+this property is the size 1x1.
 
-**See also** `GridMesh </sdk/apps/qml/QtQuick/GridMesh/>`__.
+**See also** :ref:`GridMesh <sdk_qtquick_gridmesh>`.
 
 | 
+
+.. _sdk_qtquick_shadereffect_status-prop:
 
 +--------------------------------------------------------------------------+
 |        \ status : enumeration                                            |
@@ -351,32 +359,34 @@ default, this property is the size 1x1.
 
 This property tells the current status of the OpenGL shader program.
 
--  `ShaderEffect </sdk/apps/qml/QtQuick/ShaderEffect/>`__.Compiled - the
-   shader program was successfully compiled and linked.
--  `ShaderEffect </sdk/apps/qml/QtQuick/ShaderEffect/>`__.Uncompiled -
-   the shader program has not yet been compiled.
--  `ShaderEffect </sdk/apps/qml/QtQuick/ShaderEffect/>`__.Error - the
-   shader program failed to compile or link.
+-  :ref:`ShaderEffect <sdk_qtquick_shadereffect>`.Compiled - the shader
+   program was successfully compiled and linked.
+-  :ref:`ShaderEffect <sdk_qtquick_shadereffect>`.Uncompiled - the shader
+   program has not yet been compiled.
+-  :ref:`ShaderEffect <sdk_qtquick_shadereffect>`.Error - the shader
+   program failed to compile or link.
 
 When setting the fragment or vertex shader source code, the status will
 become Uncompiled. The first time the
-`ShaderEffect </sdk/apps/qml/QtQuick/ShaderEffect/>`__ is rendered with
-new shader source code, the shaders are compiled and linked, and the
-status is updated to Compiled or Error.
+:ref:`ShaderEffect <sdk_qtquick_shadereffect>` is rendered with new shader
+source code, the shaders are compiled and linked, and the status is
+updated to Compiled or Error.
 
-**See also** `log </sdk/apps/qml/QtQuick/ShaderEffect#log-prop>`__.
+**See also** :ref:`log <sdk_qtquick_shadereffect#log-prop>`.
 
 | 
+
+.. _sdk_qtquick_shadereffect_supportsAtlasTextures-prop:
 
 +--------------------------------------------------------------------------+
 |        \ supportsAtlasTextures : bool                                    |
 +--------------------------------------------------------------------------+
 
 Set this property true to indicate that the
-`ShaderEffect </sdk/apps/qml/QtQuick/ShaderEffect/>`__ is able to use
-the default source texture without first removing it from an atlas. In
-this case the range of qt\_MultiTexCoord0 will based on the position of
-the texture within the atlas, rather than (0,0) to (1,1).
+:ref:`ShaderEffect <sdk_qtquick_shadereffect>` is able to use the default
+source texture without first removing it from an atlas. In this case the
+range of qt\_MultiTexCoord0 will based on the position of the texture
+within the atlas, rather than (0,0) to (1,1).
 
 Setting this to true may enable some optimizations.
 
@@ -385,6 +395,8 @@ The default value is false.
 This QML property was introduced in QtQuick 2.4.
 
 | 
+
+.. _sdk_qtquick_shadereffect_vertexShader-prop:
 
 +--------------------------------------------------------------------------+
 |        \ vertexShader : string                                           |
@@ -397,8 +409,8 @@ sampler2D named "source".
 
 | 
 
-.. |image0| image:: /media/sdk/apps/qml/QtQuick/ShaderEffect/images/declarative-shadereffectitem.png
-.. |image1| image:: /media/sdk/apps/qml/QtQuick/ShaderEffect/images/qml-shadereffect-nolayereffect.png
-.. |image2| image:: /media/sdk/apps/qml/QtQuick/ShaderEffect/images/qml-shadereffect-layereffect.png
-.. |image3| image:: /media/sdk/apps/qml/QtQuick/ShaderEffect/images/qml-shadereffect-opacitymask.png
+.. |image0| image:: /mediasdk_qtquick_shadereffectimages/declarative-shadereffectitem.png
+.. |image1| image:: /mediasdk_qtquick_shadereffectimages/qml-shadereffect-nolayereffect.png
+.. |image2| image:: /mediasdk_qtquick_shadereffectimages/qml-shadereffect-layereffect.png
+.. |image3| image:: /mediasdk_qtquick_shadereffectimages/qml-shadereffect-opacitymask.png
 

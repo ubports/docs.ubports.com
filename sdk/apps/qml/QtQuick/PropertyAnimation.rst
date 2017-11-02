@@ -1,65 +1,67 @@
+.. _sdk_qtquick_propertyanimation:
+QtQuick PropertyAnimation
+=========================
+
 Animates changes in property values
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtQuick 2.4                   |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Animation </sdk/apps/qml/QtQuick/An |
-|                                      | imation/>`__                         |
+| Inherits:                            | :ref:`Animation <sdk_qtquick_animation>`_ |
+|                                      | _                                    |
 +--------------------------------------+--------------------------------------+
-| Inherited By:                        | `ColorAnimation </sdk/apps/qml/QtQui |
-|                                      | ck/ColorAnimation/>`__,              |
-|                                      | `NumberAnimation </sdk/apps/qml/QtQu |
-|                                      | ick/NumberAnimation/>`__,            |
-|                                      | `RotationAnimation </sdk/apps/qml/Qt |
-|                                      | Quick/RotationAnimation/>`__,        |
+| Inherited By:                        | :ref:`ColorAnimation <sdk_qtquick_coloran |
+|                                      | imation>`_ ,                         |
+|                                      | :ref:`NumberAnimation <sdk_qtquick_number |
+|                                      | animation>`_ ,                       |
+|                                      | :ref:`RotationAnimation <sdk_qtquick_rota |
+|                                      | tionanimation>`_ ,                   |
 |                                      | and                                  |
-|                                      | `Vector3dAnimation </sdk/apps/qml/Qt |
-|                                      | Quick/Vector3dAnimation/>`__.        |
+|                                      | :ref:`Vector3dAnimation <sdk_qtquick_vect |
+|                                      | or3danimation>`_ .                   |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`duration </sdk/apps/qml/QtQuick/PropertyAnimation#duration-prop>`__****
-   : int
--  ****`easing </sdk/apps/qml/QtQuick/PropertyAnimation#easing-prop>`__****
+-  :ref:`duration <sdk_qtquick_propertyanimation_duration-prop>` :
+   int
+-  :ref:`easing <sdk_qtquick_propertyanimation_easing-prop>`
 
-   -  ****`easing.type </sdk/apps/qml/QtQuick/PropertyAnimation#easing.type-prop>`__****
+   -  :ref:`easing.type <sdk_qtquick_propertyanimation_easing.type-prop>`
       : enumeration
-   -  ****`easing.amplitude </sdk/apps/qml/QtQuick/PropertyAnimation#easing.amplitude-prop>`__****
+   -  :ref:`easing.amplitude <sdk_qtquick_propertyanimation_easing.amplitude-prop>`
       : real
-   -  ****`easing.overshoot </sdk/apps/qml/QtQuick/PropertyAnimation#easing.overshoot-prop>`__****
+   -  :ref:`easing.overshoot <sdk_qtquick_propertyanimation_easing.overshoot-prop>`
       : real
-   -  ****`easing.period </sdk/apps/qml/QtQuick/PropertyAnimation#easing.period-prop>`__****
+   -  :ref:`easing.period <sdk_qtquick_propertyanimation_easing.period-prop>`
       : real
-   -  ****`easing.bezierCurve </sdk/apps/qml/QtQuick/PropertyAnimation#easing.bezierCurve-prop>`__****
+   -  :ref:`easing.bezierCurve <sdk_qtquick_propertyanimation_easing.bezierCurve-prop>`
       : list<real>
 
--  ****`exclude </sdk/apps/qml/QtQuick/PropertyAnimation#exclude-prop>`__****
-   : list<Object>
--  ****`from </sdk/apps/qml/QtQuick/PropertyAnimation#from-prop>`__****
-   : variant
--  ****`properties </sdk/apps/qml/QtQuick/PropertyAnimation#properties-prop>`__****
+-  :ref:`exclude <sdk_qtquick_propertyanimation_exclude-prop>` :
+   list<Object>
+-  :ref:`from <sdk_qtquick_propertyanimation_from-prop>` : variant
+-  :ref:`properties <sdk_qtquick_propertyanimation_properties-prop>`
    : string
--  ****`property </sdk/apps/qml/QtQuick/PropertyAnimation#property-prop>`__****
-   : string
--  ****`target </sdk/apps/qml/QtQuick/PropertyAnimation#target-prop>`__****
-   : Object
--  ****`targets </sdk/apps/qml/QtQuick/PropertyAnimation#targets-prop>`__****
-   : list<Object>
--  ****`to </sdk/apps/qml/QtQuick/PropertyAnimation#to-prop>`__**** :
-   variant
+-  :ref:`property <sdk_qtquick_propertyanimation_property-prop>` :
+   string
+-  :ref:`target <sdk_qtquick_propertyanimation_target-prop>` :
+   Object
+-  :ref:`targets <sdk_qtquick_propertyanimation_targets-prop>` :
+   list<Object>
+-  :ref:`to <sdk_qtquick_propertyanimation_to-prop>` : variant
 
 Detailed Description
 --------------------
 
-`PropertyAnimation </sdk/apps/qml/QtQuick/animation#propertyanimation>`__
+`PropertyAnimation </sdk/apps/qml/QtQuick/animation/#propertyanimation>`_ 
 provides a way to animate changes to a property's value.
 
 It can be used to define animations in a number of ways:
 
 -  In a
-   `Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch#transition>`__
+   `Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch/#transition>`_ 
 
    For example, to animate any objects that have changed their ``x`` or
    ``y`` properties as a result of a state change, using an
@@ -80,7 +82,7 @@ It can be used to define animations in a number of ways:
            }
        }
 
--  In a `Behavior </sdk/apps/qml/QtQuick/Behavior/>`__
+-  In a :ref:`Behavior <sdk_qtquick_behavior>`
 
    For example, to animate all changes to a rectangle's ``x`` property:
 
@@ -139,22 +141,24 @@ It can be used to define animations in a number of ways:
 Depending on how the animation is used, the set of properties normally
 used will be different. For more information see the individual property
 documentation, as well as the `Animation and Transitions in Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`__
+Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`_ 
 introduction.
 
 Note that
-`PropertyAnimation </sdk/apps/qml/QtQuick/animation#propertyanimation>`__
-inherits the abstract `Animation </sdk/apps/qml/QtQuick/Animation/>`__
-type. This includes additional properties and methods for controlling
-the animation.
+`PropertyAnimation </sdk/apps/qml/QtQuick/animation/#propertyanimation>`_ 
+inherits the abstract :ref:`Animation <sdk_qtquick_animation>` type. This
+includes additional properties and methods for controlling the
+animation.
 
 **See also** `Animation and Transitions in Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`__
+Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`_ 
 and `Qt Quick Examples -
-Animation </sdk/apps/qml/QtQuick/animation/>`__.
+Animation </sdk/apps/qml/QtQuick/animation/>`_ .
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_propertyanimation_duration-prop:
 
 +--------------------------------------------------------------------------+
 |        \ duration : int                                                  |
@@ -166,15 +170,21 @@ The default value is 250.
 
 | 
 
+.. _sdk_qtquick_propertyanimation_**easing group**-prop:
+
 +--------------------------------------------------------------------------+
 |        \ **easing group**                                                |
 +==========================================================================+
+.. _sdk_qtquick_propertyanimation_easing.amplitude-prop:
 |        \ easing.type : enumeration                                       |
 +--------------------------------------------------------------------------+
+.. _sdk_qtquick_propertyanimation_easing.overshoot-prop:
 |        \ easing.amplitude : real                                         |
 +--------------------------------------------------------------------------+
+.. _sdk_qtquick_propertyanimation_easing.period-prop:
 |        \ easing.overshoot : real                                         |
 +--------------------------------------------------------------------------+
+.. _sdk_qtquick_propertyanimation_easing.bezierCurve-prop:
 |        \ easing.period : real                                            |
 +--------------------------------------------------------------------------+
 |        \ easing.bezierCurve : list<real>                                 |
@@ -195,163 +205,194 @@ some curves you can also specify amplitude, period and/or overshoot
 
 Available types are:
 
+.. _sdk_qtquick_propertyanimation_``Easing.Linear``         Easing curve for a        image0-prop:
+
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.Linear``        | Easing curve for a       | |image0|                 |
 |                          | linear (t) function:     |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.InQuad``         Easing curve for a        image1-prop:
 |                          | velocity is constant.    |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.InQuad``        | Easing curve for a       | |image1|                 |
 |                          | quadratic (t^2)          |                          |
 |                          | function: accelerating   |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.OutQuad``        Easing curve for a        image2-prop:
 |                          | from zero velocity.      |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.OutQuad``       | Easing curve for a       | |image2|                 |
 |                          | quadratic (t^2)          |                          |
 |                          | function: decelerating   |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.InOutQuad``      Easing curve for a        image3-prop:
 |                          | to zero velocity.        |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.InOutQuad``     | Easing curve for a       | |image3|                 |
 |                          | quadratic (t^2)          |                          |
 |                          | function: acceleration   |                          |
 |                          | until halfway, then      |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.OutInQuad``      Easing curve for a        image4-prop:
 |                          | deceleration.            |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.OutInQuad``     | Easing curve for a       | |image4|                 |
 |                          | quadratic (t^2)          |                          |
 |                          | function: deceleration   |                          |
 |                          | until halfway, then      |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.InCubic``        Easing curve for a cubic  image5-prop:
 |                          | acceleration.            |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.InCubic``       | Easing curve for a cubic | |image5|                 |
 |                          | (t^3) function:          |                          |
 |                          | accelerating from zero   |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.OutCubic``       Easing curve for a cubic  image6-prop:
 |                          | velocity.                |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.OutCubic``      | Easing curve for a cubic | |image6|                 |
 |                          | (t^3) function:          |                          |
 |                          | decelerating from zero   |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.InOutCubic``     Easing curve for a cubic  image7-prop:
 |                          | velocity.                |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.InOutCubic``    | Easing curve for a cubic | |image7|                 |
 |                          | (t^3) function:          |                          |
 |                          | acceleration until       |                          |
 |                          | halfway, then            |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.OutInCubic``     Easing curve for a cubic  image8-prop:
 |                          | deceleration.            |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.OutInCubic``    | Easing curve for a cubic | |image8|                 |
 |                          | (t^3) function:          |                          |
 |                          | deceleration until       |                          |
 |                          | halfway, then            |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.InQuart``        Easing curve for a        image9-prop:
 |                          | acceleration.            |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.InQuart``       | Easing curve for a       | |image9|                 |
 |                          | quartic (t^4) function:  |                          |
 |                          | accelerating from zero   |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.OutQuart``       Easing curve for a        image10-prop:
 |                          | velocity.                |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.OutQuart``      | Easing curve for a       | |image10|                |
 |                          | quartic (t^4) function:  |                          |
 |                          | decelerating from zero   |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.InOutQuart``     Easing curve for a        image11-prop:
 |                          | velocity.                |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.InOutQuart``    | Easing curve for a       | |image11|                |
 |                          | quartic (t^4) function:  |                          |
 |                          | acceleration until       |                          |
 |                          | halfway, then            |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.OutInQuart``     Easing curve for a        image12-prop:
 |                          | deceleration.            |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.OutInQuart``    | Easing curve for a       | |image12|                |
 |                          | quartic (t^4) function:  |                          |
 |                          | deceleration until       |                          |
 |                          | halfway, then            |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.InQuint``        Easing curve for a        image13-prop:
 |                          | acceleration.            |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.InQuint``       | Easing curve for a       | |image13|                |
 |                          | quintic (t^5) function:  |                          |
 |                          | accelerating from zero   |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.OutQuint``       Easing curve for a        image14-prop:
 |                          | velocity.                |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.OutQuint``      | Easing curve for a       | |image14|                |
 |                          | quintic (t^5) function:  |                          |
 |                          | decelerating from zero   |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.InOutQuint``     Easing curve for a        image15-prop:
 |                          | velocity.                |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.InOutQuint``    | Easing curve for a       | |image15|                |
 |                          | quintic (t^5) function:  |                          |
 |                          | acceleration until       |                          |
 |                          | halfway, then            |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.OutInQuint``     Easing curve for a        image16-prop:
 |                          | deceleration.            |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.OutInQuint``    | Easing curve for a       | |image16|                |
 |                          | quintic (t^5) function:  |                          |
 |                          | deceleration until       |                          |
 |                          | halfway, then            |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.InSine``         Easing curve for a        image17-prop:
 |                          | acceleration.            |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.InSine``        | Easing curve for a       | |image17|                |
 |                          | sinusoidal (sin(t))      |                          |
 |                          | function: accelerating   |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.OutSine``        Easing curve for a        image18-prop:
 |                          | from zero velocity.      |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.OutSine``       | Easing curve for a       | |image18|                |
 |                          | sinusoidal (sin(t))      |                          |
 |                          | function: decelerating   |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.InOutSine``      Easing curve for a        image19-prop:
 |                          | from zero velocity.      |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.InOutSine``     | Easing curve for a       | |image19|                |
 |                          | sinusoidal (sin(t))      |                          |
 |                          | function: acceleration   |                          |
 |                          | until halfway, then      |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.OutInSine``      Easing curve for a        image20-prop:
 |                          | deceleration.            |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.OutInSine``     | Easing curve for a       | |image20|                |
 |                          | sinusoidal (sin(t))      |                          |
 |                          | function: deceleration   |                          |
 |                          | until halfway, then      |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.InExpo``         Easing curve for an       image21-prop:
 |                          | acceleration.            |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.InExpo``        | Easing curve for an      | |image21|                |
 |                          | exponential (2^t)        |                          |
 |                          | function: accelerating   |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.OutExpo``        Easing curve for an       image22-prop:
 |                          | from zero velocity.      |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.OutExpo``       | Easing curve for an      | |image22|                |
 |                          | exponential (2^t)        |                          |
 |                          | function: decelerating   |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.InOutExpo``      Easing curve for an       image23-prop:
 |                          | from zero velocity.      |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.InOutExpo``     | Easing curve for an      | |image23|                |
 |                          | exponential (2^t)        |                          |
 |                          | function: acceleration   |                          |
 |                          | until halfway, then      |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.OutInExpo``      Easing curve for an       image24-prop:
 |                          | deceleration.            |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.OutInExpo``     | Easing curve for an      | |image24|                |
 |                          | exponential (2^t)        |                          |
 |                          | function: deceleration   |                          |
 |                          | until halfway, then      |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.InCirc``         Easing curve for a        image25-prop:
 |                          | acceleration.            |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.InCirc``        | Easing curve for a       | |image25|                |
 |                          | circular (sqrt(1-t^2))   |                          |
 |                          | function: accelerating   |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.OutCirc``        Easing curve for a        image26-prop:
 |                          | from zero velocity.      |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.OutCirc``       | Easing curve for a       | |image26|                |
 |                          | circular (sqrt(1-t^2))   |                          |
 |                          | function: decelerating   |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.InOutCirc``      Easing curve for a        image27-prop:
 |                          | from zero velocity.      |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.InOutCirc``     | Easing curve for a       | |image27|                |
 |                          | circular (sqrt(1-t^2))   |                          |
 |                          | function: acceleration   |                          |
 |                          | until halfway, then      |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.OutInCirc``      Easing curve for a        image28-prop:
 |                          | deceleration.            |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.OutInCirc``     | Easing curve for a       | |image28|                |
 |                          | circular (sqrt(1-t^2))   |                          |
 |                          | function: deceleration   |                          |
 |                          | until halfway, then      |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.InElastic``      Easing curve for an       image29-prop:
 |                          | acceleration.            |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.InElastic``     | Easing curve for an      | |image29|                |
@@ -364,6 +405,7 @@ Available types are:
 |                          | *amplitude* parameter,   |                          |
 |                          | and the period of decay  |                          |
 |                          | by the *period*          |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.OutElastic``     Easing curve for an       image30-prop:
 |                          | parameter.               |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.OutElastic``    | Easing curve for an      | |image30|                |
@@ -376,6 +418,7 @@ Available types are:
 |                          | *amplitude* parameter,   |                          |
 |                          | and the period of decay  |                          |
 |                          | by the *period*          |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.InOutElastic``   Easing curve for an       image31-prop:
 |                          | parameter.               |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.InOutElastic``  | Easing curve for an      | |image31|                |
@@ -383,6 +426,7 @@ Available types are:
 |                          | decaying sine wave)      |                          |
 |                          | function: acceleration   |                          |
 |                          | until halfway, then      |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.OutInElastic``   Easing curve for an       image32-prop:
 |                          | deceleration.            |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.OutInElastic``  | Easing curve for an      | |image32|                |
@@ -390,6 +434,7 @@ Available types are:
 |                          | decaying sine wave)      |                          |
 |                          | function: deceleration   |                          |
 |                          | until halfway, then      |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.InBack``         Easing curve for a back   image33-prop:
 |                          | acceleration.            |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.InBack``        | Easing curve for a back  | |image33|                |
@@ -397,6 +442,7 @@ Available types are:
 |                          | function: (s+1)\*t^3 -   |                          |
 |                          | s\*t^2) easing in:       |                          |
 |                          | accelerating from zero   |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.OutBack``        Easing curve for a back   image34-prop:
 |                          | velocity.                |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.OutBack``       | Easing curve for a back  | |image34|                |
@@ -404,6 +450,7 @@ Available types are:
 |                          | function: (s+1)\*t^3 -   |                          |
 |                          | s\*t^2) easing out:      |                          |
 |                          | decelerating to zero     |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.InOutBack``      Easing curve for a back   image35-prop:
 |                          | velocity.                |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.InOutBack``     | Easing curve for a back  | |image35|                |
@@ -412,6 +459,7 @@ Available types are:
 |                          | s\*t^2) easing in/out:   |                          |
 |                          | acceleration until       |                          |
 |                          | halfway, then            |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.OutInBack``      Easing curve for a back   image36-prop:
 |                          | deceleration.            |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.OutInBack``     | Easing curve for a back  | |image36|                |
@@ -420,6 +468,7 @@ Available types are:
 |                          | s\*t^2) easing out/in:   |                          |
 |                          | deceleration until       |                          |
 |                          | halfway, then            |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.InBounce``       Easing curve for a        image37-prop:
 |                          | acceleration.            |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.InBounce``      | Easing curve for a       | |image37|                |
@@ -427,6 +476,7 @@ Available types are:
 |                          | decaying parabolic       |                          |
 |                          | bounce) function:        |                          |
 |                          | accelerating from zero   |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.OutBounce``      Easing curve for a        image38-prop:
 |                          | velocity.                |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.OutBounce``     | Easing curve for a       | |image38|                |
@@ -434,6 +484,7 @@ Available types are:
 |                          | decaying parabolic       |                          |
 |                          | bounce) function:        |                          |
 |                          | decelerating from zero   |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.InOutBounce``    Easing curve for a        image39-prop:
 |                          | velocity.                |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.InOutBounce``   | Easing curve for a       | |image39|                |
@@ -442,6 +493,7 @@ Available types are:
 |                          | bounce) function easing  |                          |
 |                          | in/out: acceleration     |                          |
 |                          | until halfway, then      |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.OutInBounce``    Easing curve for a        image40-prop:
 |                          | deceleration.            |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.OutInBounce``   | Easing curve for a       | |image40|                |
@@ -450,6 +502,7 @@ Available types are:
 |                          | bounce) function easing  |                          |
 |                          | out/in: deceleration     |                          |
 |                          | until halfway, then      |                          |
+.. _sdk_qtquick_propertyanimation_``Easing.Bezier``         Custom easing curve-prop:
 |                          | acceleration.            |                          |
 +--------------------------+--------------------------+--------------------------+
 | ``Easing.Bezier``        | Custom easing curve      |                          |
@@ -479,11 +532,13 @@ point: [cx1, cy1, cx2, cy2, endx, endy, ...]. The last point must be
 1,1.
 
 See the `Easing
-Curves </sdk/apps/qml/QtQuick/animation#easing-curves>`__ for a
+Curves </sdk/apps/qml/QtQuick/animation/#easing-curves>`_  for a
 demonstration of the different easing settings. //!
 propertyanimation.easing
 
 | 
+
+.. _sdk_qtquick_propertyanimation_exclude-prop:
 
 +--------------------------------------------------------------------------+
 |        \ exclude : list<Object>                                          |
@@ -492,9 +547,11 @@ propertyanimation.easing
 This property holds the items not to be affected by this animation.
 
 **See also**
-`PropertyAnimation::targets </sdk/apps/qml/QtQuick/PropertyAnimation#targets-prop>`__.
+:ref:`PropertyAnimation::targets <sdk_qtquick_propertyanimation#targets-prop>`.
 
 | 
+
+.. _sdk_qtquick_propertyanimation_from-prop:
 
 +--------------------------------------------------------------------------+
 |        \ from : variant                                                  |
@@ -503,19 +560,21 @@ This property holds the items not to be affected by this animation.
 This property holds the starting value for the animation.
 
 If the
-`PropertyAnimation </sdk/apps/qml/QtQuick/animation#propertyanimation>`__
+`PropertyAnimation </sdk/apps/qml/QtQuick/animation/#propertyanimation>`_ 
 is defined within a
-`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch#transition>`__
-or `Behavior </sdk/apps/qml/QtQuick/Behavior/>`__, this value defaults
-to the value defined in the starting state of the
-`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch#transition>`__,
+`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch/#transition>`_ 
+or :ref:`Behavior <sdk_qtquick_behavior>`, this value defaults to the value
+defined in the starting state of the
+`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch/#transition>`_ ,
 or the current value of the property at the moment the
-`Behavior </sdk/apps/qml/QtQuick/Behavior/>`__ is triggered.
+:ref:`Behavior <sdk_qtquick_behavior>` is triggered.
 
 **See also** `Animation and Transitions in Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`__.
+Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`_ .
 
 | 
+
+.. _sdk_qtquick_propertyanimation_properties-prop:
 
 +--------------------------------------------------------------------------+
 |        \ properties : string                                             |
@@ -548,6 +607,8 @@ this animates the ``x`` property of both ``itemA`` and ``itemB``:
 In many cases these properties do not need to be explicitly specified,
 as they can be inferred from the animation framework:
 
+.. _sdk_qtquick_propertyanimation_Value Source / Behavior               When an animation is used as a value-prop:
+
 +--------------------------------------+--------------------------------------+
 | Value Source / Behavior              | When an animation is used as a value |
 |                                      | source or in a Behavior, the default |
@@ -565,6 +626,7 @@ as they can be inferred from the animation framework:
 |                                      |            Behavior on y { NumberAni |
 |                                      | mation {} } //animate theRect's y pr |
 |                                      | operty                               |
+.. _sdk_qtquick_propertyanimation_Transition                            When used in a transition, a-prop:
 |                                      |        }                             |
 +--------------------------------------+--------------------------------------+
 | Transition                           | When used in a transition, a         |
@@ -600,6 +662,7 @@ as they can be inferred from the animation framework:
 |                                      |                NumberAnimation { tar |
 |                                      | get: theRect; property: "z" }        |
 |                                      |            }                         |
+.. _sdk_qtquick_propertyanimation_Standalone                            When an animation is used-prop:
 |                                      |        }                             |
 +--------------------------------------+--------------------------------------+
 | Standalone                           | When an animation is used            |
@@ -628,12 +691,13 @@ as they can be inferred from the animation framework:
 As seen in the above example, properties is specified as a
 comma-separated string of property names to animate.
 
-**See also**
-`exclude </sdk/apps/qml/QtQuick/PropertyAnimation#exclude-prop>`__ and
-`Animation and Transitions in Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`__.
+**See also** :ref:`exclude <sdk_qtquick_propertyanimation#exclude-prop>`
+and `Animation and Transitions in Qt
+Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`_ .
 
 | 
+
+.. _sdk_qtquick_propertyanimation_property-prop:
 
 +--------------------------------------------------------------------------+
 |        \ property : string                                               |
@@ -666,6 +730,8 @@ this animates the ``x`` property of both ``itemA`` and ``itemB``:
 In many cases these properties do not need to be explicitly specified,
 as they can be inferred from the animation framework:
 
+.. _sdk_qtquick_propertyanimation_Value Source / Behavior               When an animation is used as a value-prop:
+
 +--------------------------------------+--------------------------------------+
 | Value Source / Behavior              | When an animation is used as a value |
 |                                      | source or in a Behavior, the default |
@@ -683,6 +749,7 @@ as they can be inferred from the animation framework:
 |                                      |            Behavior on y { NumberAni |
 |                                      | mation {} } //animate theRect's y pr |
 |                                      | operty                               |
+.. _sdk_qtquick_propertyanimation_Transition                            When used in a transition, a-prop:
 |                                      |        }                             |
 +--------------------------------------+--------------------------------------+
 | Transition                           | When used in a transition, a         |
@@ -718,6 +785,7 @@ as they can be inferred from the animation framework:
 |                                      |                NumberAnimation { tar |
 |                                      | get: theRect; property: "z" }        |
 |                                      |            }                         |
+.. _sdk_qtquick_propertyanimation_Standalone                            When an animation is used-prop:
 |                                      |        }                             |
 +--------------------------------------+--------------------------------------+
 | Standalone                           | When an animation is used            |
@@ -746,12 +814,13 @@ as they can be inferred from the animation framework:
 As seen in the above example, properties is specified as a
 comma-separated string of property names to animate.
 
-**See also**
-`exclude </sdk/apps/qml/QtQuick/PropertyAnimation#exclude-prop>`__ and
-`Animation and Transitions in Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`__.
+**See also** :ref:`exclude <sdk_qtquick_propertyanimation#exclude-prop>`
+and `Animation and Transitions in Qt
+Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`_ .
 
 | 
+
+.. _sdk_qtquick_propertyanimation_target-prop:
 
 +--------------------------------------------------------------------------+
 |        \ target : Object                                                 |
@@ -784,6 +853,8 @@ this animates the ``x`` property of both ``itemA`` and ``itemB``:
 In many cases these properties do not need to be explicitly specified,
 as they can be inferred from the animation framework:
 
+.. _sdk_qtquick_propertyanimation_Value Source / Behavior               When an animation is used as a value-prop:
+
 +--------------------------------------+--------------------------------------+
 | Value Source / Behavior              | When an animation is used as a value |
 |                                      | source or in a Behavior, the default |
@@ -801,6 +872,7 @@ as they can be inferred from the animation framework:
 |                                      |            Behavior on y { NumberAni |
 |                                      | mation {} } //animate theRect's y pr |
 |                                      | operty                               |
+.. _sdk_qtquick_propertyanimation_Transition                            When used in a transition, a-prop:
 |                                      |        }                             |
 +--------------------------------------+--------------------------------------+
 | Transition                           | When used in a transition, a         |
@@ -836,6 +908,7 @@ as they can be inferred from the animation framework:
 |                                      |                NumberAnimation { tar |
 |                                      | get: theRect; property: "z" }        |
 |                                      |            }                         |
+.. _sdk_qtquick_propertyanimation_Standalone                            When an animation is used-prop:
 |                                      |        }                             |
 +--------------------------------------+--------------------------------------+
 | Standalone                           | When an animation is used            |
@@ -864,12 +937,13 @@ as they can be inferred from the animation framework:
 As seen in the above example, properties is specified as a
 comma-separated string of property names to animate.
 
-**See also**
-`exclude </sdk/apps/qml/QtQuick/PropertyAnimation#exclude-prop>`__ and
-`Animation and Transitions in Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`__.
+**See also** :ref:`exclude <sdk_qtquick_propertyanimation#exclude-prop>`
+and `Animation and Transitions in Qt
+Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`_ .
 
 | 
+
+.. _sdk_qtquick_propertyanimation_targets-prop:
 
 +--------------------------------------------------------------------------+
 |        \ targets : list<Object>                                          |
@@ -902,6 +976,8 @@ this animates the ``x`` property of both ``itemA`` and ``itemB``:
 In many cases these properties do not need to be explicitly specified,
 as they can be inferred from the animation framework:
 
+.. _sdk_qtquick_propertyanimation_Value Source / Behavior               When an animation is used as a value-prop:
+
 +--------------------------------------+--------------------------------------+
 | Value Source / Behavior              | When an animation is used as a value |
 |                                      | source or in a Behavior, the default |
@@ -919,6 +995,7 @@ as they can be inferred from the animation framework:
 |                                      |            Behavior on y { NumberAni |
 |                                      | mation {} } //animate theRect's y pr |
 |                                      | operty                               |
+.. _sdk_qtquick_propertyanimation_Transition                            When used in a transition, a-prop:
 |                                      |        }                             |
 +--------------------------------------+--------------------------------------+
 | Transition                           | When used in a transition, a         |
@@ -954,6 +1031,7 @@ as they can be inferred from the animation framework:
 |                                      |                NumberAnimation { tar |
 |                                      | get: theRect; property: "z" }        |
 |                                      |            }                         |
+.. _sdk_qtquick_propertyanimation_Standalone                            When an animation is used-prop:
 |                                      |        }                             |
 +--------------------------------------+--------------------------------------+
 | Standalone                           | When an animation is used            |
@@ -982,12 +1060,13 @@ as they can be inferred from the animation framework:
 As seen in the above example, properties is specified as a
 comma-separated string of property names to animate.
 
-**See also**
-`exclude </sdk/apps/qml/QtQuick/PropertyAnimation#exclude-prop>`__ and
-`Animation and Transitions in Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`__.
+**See also** :ref:`exclude <sdk_qtquick_propertyanimation#exclude-prop>`
+and `Animation and Transitions in Qt
+Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`_ .
 
 | 
+
+.. _sdk_qtquick_propertyanimation_to-prop:
 
 +--------------------------------------------------------------------------+
 |        \ to : variant                                                    |
@@ -996,59 +1075,59 @@ Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`__.
 This property holds the end value for the animation.
 
 If the
-`PropertyAnimation </sdk/apps/qml/QtQuick/animation#propertyanimation>`__
+`PropertyAnimation </sdk/apps/qml/QtQuick/animation/#propertyanimation>`_ 
 is defined within a
-`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch#transition>`__
-or `Behavior </sdk/apps/qml/QtQuick/Behavior/>`__, this value defaults
-to the value defined in the end state of the
-`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch#transition>`__,
+`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch/#transition>`_ 
+or :ref:`Behavior <sdk_qtquick_behavior>`, this value defaults to the value
+defined in the end state of the
+`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch/#transition>`_ ,
 or the value of the property change that triggered the
-`Behavior </sdk/apps/qml/QtQuick/Behavior/>`__.
+:ref:`Behavior <sdk_qtquick_behavior>`.
 
 **See also** `Animation and Transitions in Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`__.
+Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`_ .
 
 | 
 
-.. |image0| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-linear.png
-.. |image1| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-inquad.png
-.. |image2| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-outquad.png
-.. |image3| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-inoutquad.png
-.. |image4| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-outinquad.png
-.. |image5| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-incubic.png
-.. |image6| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-outcubic.png
-.. |image7| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-inoutcubic.png
-.. |image8| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-outincubic.png
-.. |image9| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-inquart.png
-.. |image10| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-outquart.png
-.. |image11| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-inoutquart.png
-.. |image12| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-outinquart.png
-.. |image13| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-inquint.png
-.. |image14| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-outquint.png
-.. |image15| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-inoutquint.png
-.. |image16| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-outinquint.png
-.. |image17| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-insine.png
-.. |image18| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-outsine.png
-.. |image19| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-inoutsine.png
-.. |image20| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-outinsine.png
-.. |image21| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-inexpo.png
-.. |image22| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-outexpo.png
-.. |image23| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-inoutexpo.png
-.. |image24| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-outinexpo.png
-.. |image25| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-incirc.png
-.. |image26| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-outcirc.png
-.. |image27| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-inoutcirc.png
-.. |image28| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-outincirc.png
-.. |image29| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-inelastic.png
-.. |image30| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-outelastic.png
-.. |image31| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-inoutelastic.png
-.. |image32| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-outinelastic.png
-.. |image33| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-inback.png
-.. |image34| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-outback.png
-.. |image35| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-inoutback.png
-.. |image36| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-outinback.png
-.. |image37| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-inbounce.png
-.. |image38| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-outbounce.png
-.. |image39| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-inoutbounce.png
-.. |image40| image:: /media/sdk/apps/qml/QtQuick/PropertyAnimation/images/qeasingcurve-outinbounce.png
+.. |image0| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-linear.png
+.. |image1| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-inquad.png
+.. |image2| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-outquad.png
+.. |image3| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-inoutquad.png
+.. |image4| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-outinquad.png
+.. |image5| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-incubic.png
+.. |image6| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-outcubic.png
+.. |image7| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-inoutcubic.png
+.. |image8| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-outincubic.png
+.. |image9| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-inquart.png
+.. |image10| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-outquart.png
+.. |image11| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-inoutquart.png
+.. |image12| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-outinquart.png
+.. |image13| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-inquint.png
+.. |image14| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-outquint.png
+.. |image15| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-inoutquint.png
+.. |image16| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-outinquint.png
+.. |image17| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-insine.png
+.. |image18| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-outsine.png
+.. |image19| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-inoutsine.png
+.. |image20| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-outinsine.png
+.. |image21| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-inexpo.png
+.. |image22| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-outexpo.png
+.. |image23| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-inoutexpo.png
+.. |image24| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-outinexpo.png
+.. |image25| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-incirc.png
+.. |image26| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-outcirc.png
+.. |image27| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-inoutcirc.png
+.. |image28| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-outincirc.png
+.. |image29| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-inelastic.png
+.. |image30| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-outelastic.png
+.. |image31| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-inoutelastic.png
+.. |image32| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-outinelastic.png
+.. |image33| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-inback.png
+.. |image34| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-outback.png
+.. |image35| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-inoutback.png
+.. |image36| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-outinback.png
+.. |image37| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-inbounce.png
+.. |image38| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-outbounce.png
+.. |image39| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-inoutbounce.png
+.. |image40| image:: /mediasdk_qtquick_propertyanimationimages/qeasingcurve-outinbounce.png
 

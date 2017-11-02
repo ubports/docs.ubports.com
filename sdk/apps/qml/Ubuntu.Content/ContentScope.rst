@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_content_contentscope:
+Ubuntu.Content ContentScope
+===========================
+
 Used with a ContentStore to specify the destination location for a
 transfer
 
@@ -8,18 +12,17 @@ transfer
 Detailed Description
 --------------------
 
-*`ContentScope </sdk/apps/qml/Ubuntu.Content/ContentScope/>`__* is an
-enumeration of scope types:
+*:ref:`ContentScope <sdk_ubuntu_content_contentscope>`* is an enumeration
+of scope types:
 
-+------------------------------------------------------------------------+
-| Scope                                                                  |
-+========================================================================+
-| `ContentScope </sdk/apps/qml/Ubuntu.Content/ContentScope/>`__.System   |
-+------------------------------------------------------------------------+
-| `ContentScope </sdk/apps/qml/Ubuntu.Content/ContentScope/>`__.User     |
-+------------------------------------------------------------------------+
-| `ContentScope </sdk/apps/qml/Ubuntu.Content/ContentScope/>`__.App      |
-+------------------------------------------------------------------------+
++-------------------------------------------------------------+
+| Scope                                                       |
++=============================================================+
+| :ref:`ContentScope <sdk_ubuntu_content_contentscope>`.System   |
++-------------------------------------------------------------+
+| :ref:`ContentScope <sdk_ubuntu_content_contentscope>`.User     |
++-------------------------------------------------------------+
+| :ref:`ContentScope <sdk_ubuntu_content_contentscope>`.App      |
++-------------------------------------------------------------+
 
-**See also**
-`ContentStore </sdk/apps/qml/Ubuntu.Content/ContentStore/>`__.
+**See also** :ref:`ContentStore <sdk_ubuntu_content_contentstore>`.

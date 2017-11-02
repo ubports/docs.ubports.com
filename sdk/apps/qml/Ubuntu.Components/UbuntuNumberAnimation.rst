@@ -1,11 +1,15 @@
+.. _sdk_ubuntu_components_ubuntunumberanimation:
+Ubuntu.Components UbuntuNumberAnimation
+=======================================
+
 UbuntuNumberAnimation is a NumberAnimation that has predefined settings
 to ensure that Ubuntu applications are consistent in their animations.
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import Ubuntu.Components 1.3         |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `NumberAnimation </sdk/apps/qml/QtQu |
-|                                      | ick/NumberAnimation/>`__             |
+| Inherits:                            | :ref:`NumberAnimation <sdk_qtquick_number |
+|                                      | animation>`_                         |
 +--------------------------------------+--------------------------------------+
 
 Detailed Description
@@ -23,19 +27,19 @@ Example of use:
         UbuntuNumberAnimation on x { to: 50 }
     }
 
-`UbuntuNumberAnimation </sdk/apps/qml/Ubuntu.Components/UbuntuNumberAnimation/>`__
+:ref:`UbuntuNumberAnimation <sdk_ubuntu_components_ubuntunumberanimation>`
 is predefined with the following settings:
 
 -  *duration*:
-   `UbuntuAnimation.FastDuration </sdk/apps/qml/Ubuntu.Components/UbuntuAnimation#FastDuration-prop>`__
+   :ref:`UbuntuAnimation.FastDuration <sdk_ubuntu_components_ubuntuanimation#FastDuration-prop>`
 -  *easing*:
-   `UbuntuAnimation.StandardEasing </sdk/apps/qml/Ubuntu.Components/UbuntuAnimation#StandardEasing-prop>`__
+   :ref:`UbuntuAnimation.StandardEasing <sdk_ubuntu_components_ubuntuanimation#StandardEasing-prop>`
 
 If the standard duration and easing used by
-`UbuntuNumberAnimation </sdk/apps/qml/Ubuntu.Components/UbuntuNumberAnimation/>`__
+:ref:`UbuntuNumberAnimation <sdk_ubuntu_components_ubuntunumberanimation>`
 do not satisfy a use case or you need to use a different type of
 Animation (e.g.
-`ColorAnimation </sdk/apps/qml/QtQuick/qtquick-animation-example#coloranimation>`__),
+`ColorAnimation </sdk/apps/qml/QtQuick/qtquick-animation-example/#coloranimation>`_ ),
 use standard durations and easing defined in
-`UbuntuAnimation </sdk/apps/qml/Ubuntu.Components/UbuntuAnimation/>`__
-manually in order to ensure consistency.
+:ref:`UbuntuAnimation <sdk_ubuntu_components_ubuntuanimation>` manually in
+order to ensure consistency.

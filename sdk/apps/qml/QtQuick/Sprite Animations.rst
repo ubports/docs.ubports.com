@@ -1,9 +1,13 @@
+.. _sdk_qtquick_sprite_animations:
+QtQuick Sprite Animations
+=========================
+
 
 
 .. rubric:: Sprite Engine
    :name: sprite-engine
 
-The `Qt Quick </sdk/apps/qml/QtQuick/qtquick-index/>`__ sprite engine is
+The `Qt Quick </sdk/apps/qml/QtQuick/qtquick-index/>`_  sprite engine is
 a stochastic state machine combined with the ability to chop up images
 containing multiple frames of an animation.
 
@@ -63,7 +67,7 @@ setting the animation, you can start playing the animation immediately.
 
 The file formats accepted by the sprite engine is the same as the file
 formats accepted by other QML types, such as
-`Image </sdk/apps/qml/QtQuick/imageelements#image>`__. In order to
+`Image </sdk/apps/qml/QtQuick/imageelements/#image>`_ . In order to
 animate the image however, the sprite engine requires the image file to
 contain all of the frames of the animation. They should be arranged in a
 contiguous line, which may wrap from the right edge of the file to a
@@ -154,39 +158,38 @@ http://www.imagemagick.org/script/montage.php
    :name: qml-types-using-the-sprite-engine
 
 Sprites for the sprite engine can be defined using the
-`Sprite </sdk/apps/qml/QtQuick/Sprite/>`__ type. This type includes the
-input parameters as well as the length of the animation and weighted
+:ref:`Sprite <sdk_qtquick_sprite>` type. This type includes the input
+parameters as well as the length of the animation and weighted
 transitions to other animations. It is purely a data class, and does not
 render anything.
 
-`SpriteSequence </sdk/apps/qml/QtQuick/imageelements#spritesequence>`__
+`SpriteSequence </sdk/apps/qml/QtQuick/imageelements/#spritesequence>`_ 
 is a type which uses a sprite engine to draw the sprites defined in it.
 It is a single and self-contained sprite engine, and does not interact
-with other sprite engines. `Sprite </sdk/apps/qml/QtQuick/Sprite/>`__
-types can be shared between sprite engine using types, but this is not
-done automatically. So if you have defined a sprite in one
-`SpriteSequence </sdk/apps/qml/QtQuick/imageelements#spritesequence>`__
+with other sprite engines. :ref:`Sprite <sdk_qtquick_sprite>` types can be
+shared between sprite engine using types, but this is not done
+automatically. So if you have defined a sprite in one
+`SpriteSequence </sdk/apps/qml/QtQuick/imageelements/#spritesequence>`_ 
 you will need to redefine it (or reference the same
-`Sprite </sdk/apps/qml/QtQuick/Sprite/>`__ type) in the sprites property
-of another
-`SpriteSequence </sdk/apps/qml/QtQuick/imageelements#spritesequence>`__
+:ref:`Sprite <sdk_qtquick_sprite>` type) in the sprites property of another
+`SpriteSequence </sdk/apps/qml/QtQuick/imageelements/#spritesequence>`_ 
 in order to transition to that animation.
 
 Additionally,
-`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`__ can
-use `Sprite </sdk/apps/qml/QtQuick/Sprite/>`__ types to define sprites
-for each particle. This is again a single sprite engine per type. This
-works similarly to
-`SpriteSequence </sdk/apps/qml/QtQuick/imageelements#spritesequence>`__,
+`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_  can
+use :ref:`Sprite <sdk_qtquick_sprite>` types to define sprites for each
+particle. This is again a single sprite engine per type. This works
+similarly to
+`SpriteSequence </sdk/apps/qml/QtQuick/imageelements/#spritesequence>`_ ,
 but it also has the parametrized variability provided by the
-`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`__ type.
+`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_  type.
 
 .. rubric:: AnimatedSprite
    :name: animatedsprite
 
 For use-cases which do not need to transition between animations,
 consider the
-`AnimatedSprite </sdk/apps/qml/QtQuick/qtquick-effects-sprites#animatedsprite>`__
+`AnimatedSprite </sdk/apps/qml/QtQuick/qtquick-effects-sprites/#animatedsprite>`_ 
 type. This type displays sprite animations with the same input format,
 but only one at a time. It also provides more fine-grained manual
 control, as there is no sprite engine managing the timing and

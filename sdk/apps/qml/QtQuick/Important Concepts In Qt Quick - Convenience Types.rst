@@ -1,3 +1,7 @@
+.. _sdk_qtquick_important_concepts_in_qt_quick_-_convenience_types:
+QtQuick Important Concepts In Qt Quick - Convenience Types
+==========================================================
+
 
 
 In a highly dynamic user interface, the application developer will often
@@ -16,12 +20,12 @@ Objects can be created dynamically from within imperative JavaScript
 code in various ways. See Dynamic QML object creation from JavaScript
 for more details.
 
-Qt Quick provides the `Loader </sdk/apps/qml/QtQuick/Loader/>`__,
-`Repeater </sdk/apps/qml/QtQuick/Repeater/>`__,
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__,
-`GridView </sdk/apps/qml/QtQuick/draganddrop#gridview>`__ and
-`PathView </sdk/apps/qml/QtQuick/PathView/>`__ types which also support
-dynamic object management, and provide a declarative API.
+Qt Quick provides the :ref:`Loader <sdk_qtquick_loader>`,
+:ref:`Repeater <sdk_qtquick_repeater>`,
+:ref:`ListView <sdk_qtquick_listview>`,
+`GridView </sdk/apps/qml/QtQuick/draganddrop/#gridview>`_  and
+:ref:`PathView <sdk_qtquick_pathview>` types which also support dynamic
+object management, and provide a declarative API.
 
 Please see the performance guide for more information on using dynamic
 instantiation and lazy initialization to improve application
@@ -40,7 +44,7 @@ from any object at run-time, and modify the binding target when required
    :name: dynamic-signal-connections
 
 QML supports dynamic signal connections through a signal's ``connect()``
-method. The `Qt Quick </sdk/apps/qml/QtQuick/qtquick-index/>`__ module
+method. The `Qt Quick </sdk/apps/qml/QtQuick/qtquick-index/>`_  module
 provides the convenience Connections type which allows setting up a
 signal connection involving an object which isn't part of the static
 object hierarchy. It also allows the connection to be dynamically

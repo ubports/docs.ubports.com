@@ -1,3 +1,7 @@
+.. _sdk_u1db_design_concepts:
+U1db Design Concepts
+====================
+
 
 
 This concept guide will describe a wide variety of U1Db-Qt functionality
@@ -160,7 +164,7 @@ application. It will contain all the main parts of the application.
                       }
 
 The following
-`TextArea <http://developer.ubuntu.com/sdk/ubuntu-15.04/qml/mobile//qml-ubuntu-components-textarea.html>`__
+`TextArea <http://developer.ubuntu.com/sdk/ubuntu-15.04/qml/mobile//qml-ubuntu-components-textarea.html>`_ 
 is for displaying contents for the current state of the global document,
 as defined by the key / name in the address bar.
 

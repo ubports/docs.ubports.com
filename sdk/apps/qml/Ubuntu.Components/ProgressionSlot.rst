@@ -1,31 +1,34 @@
+.. _sdk_ubuntu_components_progressionslot:
+Ubuntu.Components ProgressionSlot
+=================================
+
 ProgressionSlot holds an icon representing the progression symbol.
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import Ubuntu.Components 1.3         |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Icon </sdk/apps/qml/Ubuntu.Componen |
-|                                      | ts/Icon/>`__                         |
+| Inherits:                            | :ref:`Icon <sdk_ubuntu_components_icon>`_ |
+|                                      | _                                    |
 +--------------------------------------+--------------------------------------+
 
 Detailed Description
 --------------------
 
-`ProgressionSlot </sdk/apps/qml/Ubuntu.Components/ProgressionSlot/>`__
-is designed to provide an easy way for developers to add a progression
-symbol to the list item created using
-`ListItemLayout </sdk/apps/qml/Ubuntu.Components/ListItemLayout/>`__ or
-`SlotsLayout </sdk/apps/qml/Ubuntu.Components/SlotsLayout/>`__.
+:ref:`ProgressionSlot <sdk_ubuntu_components_progressionslot>` is designed
+to provide an easy way for developers to add a progression symbol to the
+list item created using
+:ref:`ListItemLayout <sdk_ubuntu_components_listitemlayout>` or
+:ref:`SlotsLayout <sdk_ubuntu_components_slotslayout>`.
 
-`ListItemLayout </sdk/apps/qml/Ubuntu.Components/ListItemLayout/>`__
-will automatically accomodate the progression symbol as the last
-trailing slot inside the layout. For more details, see
-`ListItemLayout </sdk/apps/qml/Ubuntu.Components/ListItemLayout/>`__
-documentation.
+:ref:`ListItemLayout <sdk_ubuntu_components_listitemlayout>` will
+automatically accomodate the progression symbol as the last trailing
+slot inside the layout. For more details, see
+:ref:`ListItemLayout <sdk_ubuntu_components_listitemlayout>` documentation.
 
 The following is an example of how easy it is to implement list items
-using `ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ with
-`ListItemLayout </sdk/apps/qml/Ubuntu.Components/ListItemLayout/>`__ and
-`ProgressionSlot </sdk/apps/qml/Ubuntu.Components/ProgressionSlot/>`__:
+using :ref:`ListItem <sdk_ubuntu_components_listitem>` with
+:ref:`ListItemLayout <sdk_ubuntu_components_listitemlayout>` and
+:ref:`ProgressionSlot <sdk_ubuntu_components_progressionslot>`:
 
 .. code:: qml
 
@@ -39,5 +42,4 @@ using `ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ with
         }
     }
 
-**See also**
-`ListItemLayout </sdk/apps/qml/Ubuntu.Components/ListItemLayout/>`__.
+**See also** :ref:`ListItemLayout <sdk_ubuntu_components_listitemlayout>`.

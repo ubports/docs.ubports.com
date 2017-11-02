@@ -1,3 +1,7 @@
+.. _sdk_qtcontacts_anniversary:
+QtContacts Anniversary
+======================
+
 The Anniversary element contains an anniversary of a contact.
 
 +---------------------+-------------------------+
@@ -7,14 +11,13 @@ The Anniversary element contains an anniversary of a contact.
 Properties
 ----------
 
--  ****`calendarId </sdk/apps/qml/QtContacts/Anniversary#calendarId-prop>`__****
-   : string
--  ****`event </sdk/apps/qml/QtContacts/Anniversary#event-prop>`__**** :
+-  :ref:`calendarId <sdk_qtcontacts_anniversary_calendarId-prop>` :
    string
--  ****`originalDate </sdk/apps/qml/QtContacts/Anniversary#originalDate-prop>`__****
+-  :ref:`event <sdk_qtcontacts_anniversary_event-prop>` : string
+-  :ref:`originalDate <sdk_qtcontacts_anniversary_originalDate-prop>`
    : date
--  ****`subType </sdk/apps/qml/QtContacts/Anniversary#subType-prop>`__****
-   : enumeration
+-  :ref:`subType <sdk_qtcontacts_anniversary_subType-prop>` :
+   enumeration
 
 Detailed Description
 --------------------
@@ -31,6 +34,8 @@ This element is part of the **QtContacts** module.
 Property Documentation
 ----------------------
 
+.. _sdk_qtcontacts_anniversary_calendarId-prop:
+
 +--------------------------------------------------------------------------+
 |        \ calendarId : string                                             |
 +--------------------------------------------------------------------------+
@@ -38,6 +43,8 @@ Property Documentation
 This property holds the id of the calendar event.
 
 | 
+
+.. _sdk_qtcontacts_anniversary_event-prop:
 
 +--------------------------------------------------------------------------+
 |        \ event : string                                                  |
@@ -47,6 +54,8 @@ This property holds the name of the event value.
 
 | 
 
+.. _sdk_qtcontacts_anniversary_originalDate-prop:
+
 +--------------------------------------------------------------------------+
 |        \ originalDate : date                                             |
 +--------------------------------------------------------------------------+
@@ -55,6 +64,8 @@ This property holds the original anniversary date value. This property
 is either a date, or a date and time.
 
 | 
+
+.. _sdk_qtcontacts_anniversary_subType-prop:
 
 +--------------------------------------------------------------------------+
 |        \ subType : enumeration                                           |

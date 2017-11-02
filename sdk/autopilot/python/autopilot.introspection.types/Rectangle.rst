@@ -1,5 +1,9 @@
+.. _sdk_autopilot_introspection_types_rectangle:
+autopilot.introspection.types Rectangle
+=======================================
+
  *class* ``autopilot.introspection.types.``\ ``Rectangle``\ (*\*args*,
-*\*\*kwargs*)\ ` </sdk/autopilot/python/autopilot.introspection/types.Rectangle#Rectangle>`__\ ` <#autopilot.introspection.types.Rectangle>`__
+*\*\*kwargs*)\ ` </sdk/autopilot/python/autopilot.introspection/types.Rectangle/#Rectangle>`_ \ ` <#autopilot.introspection.types.Rectangle>`_ 
     The RectangleType class represents a rectangle in cartesian space.
 
     To construct a rectangle, pass the x, y, width and height parameters

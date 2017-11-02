@@ -1,3 +1,7 @@
+.. _sdk_qtaudioengine_attenuationmodellinear:
+QtAudioEngine AttenuationModelLinear
+====================================
+
 Defines a linear attenuation curve for a Sound.
 
 +---------------------+----------------------------+
@@ -9,11 +13,11 @@ Defines a linear attenuation curve for a Sound.
 Properties
 ----------
 
--  ****`end </sdk/apps/qml/QtAudioEngine/AttenuationModelLinear#end-prop>`__****
-   : real
--  ****`name </sdk/apps/qml/QtAudioEngine/AttenuationModelLinear#name-prop>`__****
+-  :ref:`end <sdk_qtaudioengine_attenuationmodellinear_end-prop>` :
+   real
+-  :ref:`name <sdk_qtaudioengine_attenuationmodellinear_name-prop>`
    : string
--  ****`start </sdk/apps/qml/QtAudioEngine/AttenuationModelLinear#start-prop>`__****
+-  :ref:`start <sdk_qtaudioengine_attenuationmodellinear_start-prop>`
    : real
 
 Detailed Description
@@ -21,9 +25,8 @@ Detailed Description
 
 This type is part of the **QtAudioEngine 1.0** module.
 
-`AttenuationModelLinear </sdk/apps/qml/QtAudioEngine/AttenuationModelLinear/>`__
-must be defined inside
-`AudioEngine </sdk/apps/qml/QtAudioEngine/AudioEngine/>`__.
+:ref:`AttenuationModelLinear <sdk_qtaudioengine_attenuationmodellinear>`
+must be defined inside :ref:`AudioEngine <sdk_qtaudioengine_audioengine>`.
 
 .. code:: qml
 
@@ -57,6 +60,8 @@ must be defined inside
 Property Documentation
 ----------------------
 
+.. _sdk_qtaudioengine_attenuationmodellinear_end-prop:
+
 +--------------------------------------------------------------------------+
 |        \ end : real                                                      |
 +--------------------------------------------------------------------------+
@@ -67,15 +72,19 @@ value is 1.
 
 | 
 
+.. _sdk_qtaudioengine_attenuationmodellinear_name-prop:
+
 +--------------------------------------------------------------------------+
 |        \ name : string                                                   |
 +--------------------------------------------------------------------------+
 
 This property holds the name of
-`AttenuationModelLinear </sdk/apps/qml/QtAudioEngine/AttenuationModelLinear/>`__,
+:ref:`AttenuationModelLinear <sdk_qtaudioengine_attenuationmodellinear>`,
 must be unique among all attenuation models and only defined once.
 
 | 
+
+.. _sdk_qtaudioengine_attenuationmodellinear_start-prop:
 
 +--------------------------------------------------------------------------+
 |        \ start : real                                                    |

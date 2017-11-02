@@ -1,46 +1,50 @@
+.. _sdk_ubuntu_components_pickers_datepicker:
+Ubuntu.Components.Pickers DatePicker
+====================================
+
 DatePicker component provides date and time value picking functionality.
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import Ubuntu.Components.Pickers 1.3 |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `StyledItem </sdk/apps/qml/Ubuntu.Co |
-|                                      | mponents/StyledItem/>`__             |
+| Inherits:                            | :ref:`StyledItem <sdk_ubuntu_components_s |
+|                                      | tyleditem>`_                         |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`date </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker#date-prop>`__****
+-  `date </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/_date-prop>`_ 
    : date
--  ****`day </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker#day-prop>`__****
+-  `day </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/_day-prop>`_ 
    : int
--  ****`hours </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker#hours-prop>`__****
+-  `hours </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/_hours-prop>`_ 
    : int
--  ****`locale </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker#locale-prop>`__****
+-  `locale </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/_locale-prop>`_ 
    : var
--  ****`maximum </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker#maximum-prop>`__****
+-  `maximum </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/_maximum-prop>`_ 
    : date
--  ****`minimum </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker#minimum-prop>`__****
+-  `minimum </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/_minimum-prop>`_ 
    : date
--  ****`minutes </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker#minutes-prop>`__****
+-  `minutes </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/_minutes-prop>`_ 
    : int
--  ****`mode </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker#mode-prop>`__****
+-  `mode </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/_mode-prop>`_ 
    : string
--  ****`month </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker#month-prop>`__****
+-  `month </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/_month-prop>`_ 
    : int
--  ****`moving </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker#moving-prop>`__****
+-  `moving </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/_moving-prop>`_ 
    : bool
--  ****`seconds </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker#seconds-prop>`__****
+-  `seconds </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/_seconds-prop>`_ 
    : int
--  ****`week </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker#week-prop>`__****
+-  `week </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/_week-prop>`_ 
    : int
--  ****`year </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker#year-prop>`__****
+-  `year </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/_year-prop>`_ 
    : int
 
 Detailed Description
 --------------------
 
-`DatePicker </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/>`__
+`DatePicker </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/>`_ 
 combines up to three Picker elements providing different date or time
 value selection possibilities. It can be used to select full date (year,
 month, day), full time (hours, minutes, seconds) as well as to select a
@@ -48,12 +52,12 @@ combination of year and month, month and day, hours and minutes, minutes
 and seconds or individual time units (i.e. year, month or day as well as
 hours, minutes or seconds). The selected date as well as the initial one
 is provided by the
-`date </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker#date-prop>`__
+`date </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/#date-prop>`_ 
 property. For convenience the component provides also the *year*,
 *month*, *day*, *week*, *hours*, *minutes* and *seconds* values as
 separate properties, however these properties are not writable, and
 their initialization can happen only through the
-`date </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker#date-prop>`__
+`date </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/#date-prop>`_ 
 property.
 
 .. code:: qml
@@ -72,12 +76,12 @@ property.
     }
 
 The
-`mode </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker#mode-prop>`__
+`mode </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/#mode-prop>`_ 
 property specifies what time units should be shown by the picker. The
 property holds a string, combining **Years**, **Months**, **Days**,
 **Hours**, **Minutes** and **Seconds** strings sepatared with '\|'
 character. A
-`DatePicker </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/>`__
+`DatePicker </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/>`_ 
 which shows only year and month date units would look as follows:
 
 .. code:: qml
@@ -96,11 +100,11 @@ which shows only year and month date units would look as follows:
     }
 
 The **mode** of the
-`DatePicker </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/>`__ is
+`DatePicker </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/>`_  is
 set to date picking. In case time picking is needed, the model should be
 set to contain the time specific mode flags. The following example
 demonstrates how to use
-`DatePicker </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/>`__ for
+`DatePicker </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/>`_  for
 time picking.
 
 .. code:: qml
@@ -121,10 +125,10 @@ time picking.
 Note that the order in which the mode flags are specified does not
 influence the order the pickers are arranged. That is driven by the date
 format of the
-`locale </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker#locale-prop>`__
+`locale </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/#locale-prop>`_ 
 used in the picker. Also not all combinations of mode flags are
 supported. See
-`mode </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker#mode-prop>`__
+`mode </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/#mode-prop>`_ 
 for the supported combinations.
 
 The default interval the date values are chosen is a window starting at
@@ -133,14 +137,14 @@ the current date ending 50 years later. This window is defined by the
 considering the following rules:
 
 -  *minimum* must be less or equal than the
-   `date </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker#date-prop>`__;
+   `date </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/#date-prop>`_ ;
    if the *date* value is less than the given *minimum*, the date will
    be set to the minimum's value
 -  *maximum* value must be greater than the *minimum*, or invalid. When
    the maximum is smaller than the
-   `date </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker#date-prop>`__,
+   `date </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/#date-prop>`_ ,
    the
-   `date </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker#date-prop>`__
+   `date </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/#date-prop>`_ 
    property will be updated to get the maximum value. When set to
    invalid date (see Date.getInvalidDate()), the upper limit of the date
    interval becomes infinite, meaning the year picker will extend
@@ -168,7 +172,7 @@ considering the following rules:
     }
 
 **Note**: do not use the
-`date </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker#date-prop>`__
+`date </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/#date-prop>`_ 
 property when initializing minimum and maximum as it will cause binding
 loops.
 
@@ -176,11 +180,11 @@ Layout
 ~~~~~~
 
 As mentioned earlier,
-`DatePicker </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/>`__
+`DatePicker </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/>`_ 
 combines up to three Picker tumblers depending on the mode requested.
 These tumblers are laid out in a row in the order the default date
 format of the
-`locale </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker#locale-prop>`__
+`locale </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/#locale-prop>`_ 
 is.
 
 Date picker layout rules
@@ -221,40 +225,48 @@ picker will also be insensitive.
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_pickers_datepicker_date-prop:
+
 +--------------------------------------------------------------------------+
 |        \ date :                                                          |
-| `date </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker#date-prop>`__  |
+| `date </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/#date-prop>`_  |
 +--------------------------------------------------------------------------+
 
 The date chosen by the
-`DatePicker </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/>`__.
+`DatePicker </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/>`_ .
 The default value is the date at the component creation time. The
 property automatically updates year, month and day properties.
 
 | 
+
+.. _sdk_ubuntu_components_pickers_datepicker_[read-only] day-prop:
 
 +--------------------------------------------------------------------------+
 |        \ [read-only] day : int                                           |
 +--------------------------------------------------------------------------+
 
 For convenience, the **day** value of the
-`date </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker#date-prop>`__
+`date </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/#date-prop>`_ 
 property.
 
 | 
+
+.. _sdk_ubuntu_components_pickers_datepicker_[read-only] hours-prop:
 
 +--------------------------------------------------------------------------+
 |        \ [read-only] hours : int                                         |
 +--------------------------------------------------------------------------+
 
 For convenience, the **hours** value of the
-`date </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker#date-prop>`__
+`date </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/#date-prop>`_ 
 property.
 
 | 
 
+.. _sdk_ubuntu_components_pickers_datepicker_locale-prop:
+
 +--------------------------------------------------------------------------+
-|        \ locale : `var <http://doc.qt.io/qt-5/qml-var.html>`__           |
+|        \ locale : `var <http://doc.qt.io/qt-5/qml-var.html>`_            |
 +--------------------------------------------------------------------------+
 
 The property defines the locale used in the picker. The default value is
@@ -268,23 +280,27 @@ the system locale.
 
 | 
 
+.. _sdk_ubuntu_components_pickers_datepicker_maximum-prop:
+
 +--------------------------------------------------------------------------+
 |        \ maximum :                                                       |
-| `date </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker#date-prop>`__  |
+| `date </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/#date-prop>`_  |
 +--------------------------------------------------------------------------+
 
 The maximum date (inclusive) to be shown in the picker. Both year and
 month values will be considered from the properties.
 
 See
-`minimum </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker#minimum-prop>`__
+`minimum </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/#minimum-prop>`_ 
 for more details.
 
 | 
 
+.. _sdk_ubuntu_components_pickers_datepicker_minimum-prop:
+
 +--------------------------------------------------------------------------+
 |        \ minimum :                                                       |
-| `date </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker#date-prop>`__  |
+| `date </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/#date-prop>`_  |
 +--------------------------------------------------------------------------+
 
 The minimum date (inclusive) to be shown in the picker. Both year and
@@ -303,15 +319,19 @@ distance value for maximum.
 
 | 
 
+.. _sdk_ubuntu_components_pickers_datepicker_[read-only] minutes-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [read-only] minutes : int                                       |
 +--------------------------------------------------------------------------+
 
 For convenience, the **minutes** value of the
-`date </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker#date-prop>`__
+`date </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/#date-prop>`_ 
 property.
 
 | 
+
+.. _sdk_ubuntu_components_pickers_datepicker_mode-prop:
 
 +--------------------------------------------------------------------------+
 |        \ mode : string                                                   |
@@ -351,15 +371,19 @@ The default value is "*Years\|Months\|Days*".
 
 | 
 
+.. _sdk_ubuntu_components_pickers_datepicker_[read-only] month-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [read-only] month : int                                         |
 +--------------------------------------------------------------------------+
 
 For convenience, the **month** value of the
-`date </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker#date-prop>`__
+`date </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/#date-prop>`_ 
 property.
 
 | 
+
+.. _sdk_ubuntu_components_pickers_datepicker_[read-only] moving-prop:
 
 +--------------------------------------------------------------------------+
 |        \ [read-only] moving : bool                                       |
@@ -368,36 +392,42 @@ property.
 The property holds whether the component's pickers are moving.
 
 **See also**
-`Picker::moving </sdk/apps/qml/Ubuntu.Components/Pickers.Picker#moving-prop>`__.
+`Picker::moving </sdk/apps/qml/Ubuntu.Components/Pickers.Picker/#moving-prop>`_ .
 
 | 
+
+.. _sdk_ubuntu_components_pickers_datepicker_[read-only] seconds-prop:
 
 +--------------------------------------------------------------------------+
 |        \ [read-only] seconds : int                                       |
 +--------------------------------------------------------------------------+
 
 For convenience, the **seconds** value of the
-`date </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker#date-prop>`__
+`date </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/#date-prop>`_ 
 property.
 
 | 
+
+.. _sdk_ubuntu_components_pickers_datepicker_[read-only] week-prop:
 
 +--------------------------------------------------------------------------+
 |        \ [read-only] week : int                                          |
 +--------------------------------------------------------------------------+
 
 For convenience, the **week** value of the
-`date </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker#date-prop>`__
+`date </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/#date-prop>`_ 
 property.
 
 | 
+
+.. _sdk_ubuntu_components_pickers_datepicker_[read-only] year-prop:
 
 +--------------------------------------------------------------------------+
 |        \ [read-only] year : int                                          |
 +--------------------------------------------------------------------------+
 
 For convenience, the **year** value of the
-`date </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker#date-prop>`__
+`date </sdk/apps/qml/Ubuntu.Components/Pickers.DatePicker/#date-prop>`_ 
 property.
 
 | 

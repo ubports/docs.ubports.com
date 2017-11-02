@@ -1,17 +1,21 @@
+.. _sdk_ubuntuuserinterfacetoolkit_introduction:
+UbuntuUserInterfaceToolkit Introduction
+=======================================
+
 
 
 Table of contents:
 
--  `Introduction </sdk/apps/qml/UbuntuUserInterfaceToolkit/ubuntu-theming/>`__
--  `Styles </sdk/apps/qml/UbuntuUserInterfaceToolkit/ubuntu-theming-styles/>`__
--  `Themes </sdk/apps/qml/UbuntuUserInterfaceToolkit/ubuntu-theming-themes/>`__
--  `Sub-theming </sdk/apps/qml/UbuntuUserInterfaceToolkit/ubuntu-theming-subtheming/>`__
+-  `Introduction </sdk/apps/qml/UbuntuUserInterfaceToolkit/ubuntu-theming/>`_ 
+-  `Styles </sdk/apps/qml/UbuntuUserInterfaceToolkit/ubuntu-theming-styles/>`_ 
+-  `Themes </sdk/apps/qml/UbuntuUserInterfaceToolkit/ubuntu-theming-themes/>`_ 
+-  `Sub-theming </sdk/apps/qml/UbuntuUserInterfaceToolkit/ubuntu-theming-subtheming/>`_ 
 
 .. rubric:: Introduction
    :name: introduction
 
 The
-`style </sdk/apps/qml/UbuntuUserInterfaceToolkit/ubuntu-theming-styles/>`__
+`style </sdk/apps/qml/UbuntuUserInterfaceToolkit/ubuntu-theming-styles/>`_ 
 defines the visuals, the implicit size of the component and may provide
 additional logic for a given component. Some components have fixed style
 API the component relies on, and yet some others do not have any
@@ -29,7 +33,7 @@ components declared within the component itself.
 Styles can be declared as Components (like delegates), in a separate
 document loaded dynamically using a Loader or Qt.createComponent(), or
 can be grouped in
-`themes </sdk/apps/qml/UbuntuUserInterfaceToolkit/ubuntu-theming-themes/>`__.
+`themes </sdk/apps/qml/UbuntuUserInterfaceToolkit/ubuntu-theming-themes/>`_ .
 When declared in themes, with some exceptions, each component's style
 document name is compound of the component name having the *Style* word
 as postfix, followed by the typical QML file name extension. In this way
@@ -55,4 +59,4 @@ custom palette values.
         theme.name: "Ubuntu.Components.Themes.SuruDark"
     }
 
-`Styles </sdk/apps/qml/UbuntuUserInterfaceToolkit/ubuntu-theming-styles/>`__
+`Styles </sdk/apps/qml/UbuntuUserInterfaceToolkit/ubuntu-theming-styles/>`_ 

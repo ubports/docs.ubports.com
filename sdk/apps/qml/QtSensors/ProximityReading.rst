@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_proximityreading:
+QtSensors ProximityReading
+==========================
+
 The ProximityReading element holds the most recent ProximitySensor
 reading.
 
@@ -6,22 +10,21 @@ reading.
 +--------------------------------------+--------------------------------------+
 | Since:                               | QtSensors 5.0                        |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `SensorReading </sdk/apps/qml/QtSens |
-|                                      | ors/SensorReading/>`__               |
+| Inherits:                            | :ref:`SensorReading <sdk_qtsensors_sensor |
+|                                      | reading>`_                           |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`near </sdk/apps/qml/QtSensors/ProximityReading#near-prop>`__****
-   : bool
+-  :ref:`near <sdk_qtsensors_proximityreading_near-prop>` : bool
 
 Detailed Description
 --------------------
 
-The `ProximityReading </sdk/apps/qml/QtSensors/ProximityReading/>`__
-element holds the most recent
-`ProximitySensor </sdk/apps/qml/QtSensors/ProximitySensor/>`__ reading.
+The :ref:`ProximityReading <sdk_qtsensors_proximityreading>` element holds
+the most recent :ref:`ProximitySensor <sdk_qtsensors_proximitysensor>`
+reading.
 
 This element wraps the QProximityReading class. Please see the
 documentation for QProximityReading for details.
@@ -30,6 +33,8 @@ This element cannot be directly created.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtsensors_proximityreading_near-prop:
 
 +--------------------------------------------------------------------------+
 |        \ near : bool                                                     |

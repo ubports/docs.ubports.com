@@ -1,3 +1,7 @@
+.. _sdk_qtquick_gridmesh:
+QtQuick GridMesh
+================
+
 Defines a mesh with vertices arranged in a grid
 
 +---------------------+----------------------+
@@ -9,8 +13,7 @@ Defines a mesh with vertices arranged in a grid
 Properties
 ----------
 
--  ****`resolution </sdk/apps/qml/QtQuick/GridMesh#resolution-prop>`__****
-   : size
+-  :ref:`resolution <sdk_qtquick_gridmesh_resolution-prop>` : size
 
 Detailed Description
 --------------------
@@ -22,6 +25,8 @@ resolution is specified with the resolution property.
 Property Documentation
 ----------------------
 
+.. _sdk_qtquick_gridmesh_resolution-prop:
+
 +--------------------------------------------------------------------------+
 |        \ resolution : size                                               |
 +--------------------------------------------------------------------------+
@@ -32,6 +37,8 @@ horizontally and vertically respectively. The minimum and default is
 1x1, which corresponds to four vertices in total, one in each corner.
 For non-linear vertex transformations, you probably want to set the
 resolution higher.
+
+.. _sdk_qtquick_gridmesh_image0                              .. code-prop:
 
 +--------------------------------------+--------------------------------------+
 | |image0|                             | .. code:: qml                        |
@@ -79,5 +86,5 @@ resolution higher.
 
 | 
 
-.. |image0| image:: /media/sdk/apps/qml/QtQuick/GridMesh/images/declarative-gridmesh.png
+.. |image0| image:: /mediasdk_qtquick_gridmeshimages/declarative-gridmesh.png
 

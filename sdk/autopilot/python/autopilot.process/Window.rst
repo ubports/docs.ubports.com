@@ -1,16 +1,20 @@
- *class*
-``autopilot.process.``\ ``Window``\ ` </sdk/autopilot/python/autopilot.process/Window#Window>`__\ ` <#autopilot.process.Window>`__
+.. _sdk_autopilot_process_window:
+autopilot.process Window
+========================
 
-    ``x_id``\ ` </sdk/autopilot/python/autopilot.process/Window#Window.x_id>`__\ ` <#autopilot.process.Window.x_id>`__
+ *class*
+:ref:``autopilot.process.``\ ``Window``\ ` <sdk_autopilot_process_window#Window>`\ ` <#autopilot.process.Window>`
+
+    :ref:``x_id``\ ` <sdk_autopilot_process_window#Window.x_id>`\ ` <#autopilot.process.Window.x_id>`
         Get the X11 Window Id.
 
-    ``x_win``\ ` </sdk/autopilot/python/autopilot.process/Window#Window.x_win>`__\ ` <#autopilot.process.Window.x_win>`__
+    :ref:``x_win``\ ` <sdk_autopilot_process_window#Window.x_win>`\ ` <#autopilot.process.Window.x_win>`
         Get the X11 window object of the underlying window.
 
-    ``get_wm_state``\ ` </sdk/autopilot/python/autopilot.process/Window#Window.get_wm_state>`__\ ` <#autopilot.process.Window.get_wm_state>`__
+    :ref:``get_wm_state``\ ` <sdk_autopilot_process_window#Window.get_wm_state>`\ ` <#autopilot.process.Window.get_wm_state>`
         Get the state of the underlying window.
 
-    ``name``\ ` </sdk/autopilot/python/autopilot.process/Window#Window.name>`__\ ` <#autopilot.process.Window.name>`__
+    :ref:``name``\ ` <sdk_autopilot_process_window#Window.name>`\ ` <#autopilot.process.Window.name>`
         Get the window name.
 
         .. raw:: html
@@ -26,7 +30,7 @@
 
            </div>
 
-    ``title``\ ` </sdk/autopilot/python/autopilot.process/Window#Window.title>`__\ ` <#autopilot.process.Window.title>`__
+    :ref:``title``\ ` <sdk_autopilot_process_window#Window.title>`\ ` <#autopilot.process.Window.title>`
         Get the window title.
 
         This may be different from the application name.
@@ -43,52 +47,52 @@
 
            </div>
 
-    ``geometry``\ ` </sdk/autopilot/python/autopilot.process/Window#Window.geometry>`__\ ` <#autopilot.process.Window.geometry>`__
+    :ref:``geometry``\ ` <sdk_autopilot_process_window#Window.geometry>`\ ` <#autopilot.process.Window.geometry>`
         Get the geometry for this window.
 
         +------------+-------------------------------------------+
         | Returns:   | Tuple containing (x, y, width, height).   |
         +------------+-------------------------------------------+
 
-    ``is_maximized``\ ` </sdk/autopilot/python/autopilot.process/Window#Window.is_maximized>`__\ ` <#autopilot.process.Window.is_maximized>`__
+    :ref:``is_maximized``\ ` <sdk_autopilot_process_window#Window.is_maximized>`\ ` <#autopilot.process.Window.is_maximized>`
         Is the window maximized?
 
         Maximized in this case means both maximized vertically and
         horizontally. If a window is only maximized in one direction it
         is not considered maximized.
 
-    ``application``\ ` </sdk/autopilot/python/autopilot.process/Window#Window.application>`__\ ` <#autopilot.process.Window.application>`__
+    :ref:``application``\ ` <sdk_autopilot_process_window#Window.application>`\ ` <#autopilot.process.Window.application>`
         Get the application that owns this window.
 
         This method may return None if the window does not have an
         associated application. The ‘desktop’ window is one such
         example.
 
-    ``user_visible``\ ` </sdk/autopilot/python/autopilot.process/Window#Window.user_visible>`__\ ` <#autopilot.process.Window.user_visible>`__
+    :ref:``user_visible``\ ` <sdk_autopilot_process_window#Window.user_visible>`\ ` <#autopilot.process.Window.user_visible>`
         Is this window visible to the user in the switcher?
 
-    ``is_hidden``\ ` </sdk/autopilot/python/autopilot.process/Window#Window.is_hidden>`__\ ` <#autopilot.process.Window.is_hidden>`__
+    :ref:``is_hidden``\ ` <sdk_autopilot_process_window#Window.is_hidden>`\ ` <#autopilot.process.Window.is_hidden>`
         Is this window hidden?
 
         Windows are hidden when the ‘Show Desktop’ mode is activated.
 
-    ``is_focused``\ ` </sdk/autopilot/python/autopilot.process/Window#Window.is_focused>`__\ ` <#autopilot.process.Window.is_focused>`__
+    :ref:``is_focused``\ ` <sdk_autopilot_process_window#Window.is_focused>`\ ` <#autopilot.process.Window.is_focused>`
         Is this window focused?
 
-    ``is_valid``\ ` </sdk/autopilot/python/autopilot.process/Window#Window.is_valid>`__\ ` <#autopilot.process.Window.is_valid>`__
+    :ref:``is_valid``\ ` <sdk_autopilot_process_window#Window.is_valid>`\ ` <#autopilot.process.Window.is_valid>`
         Is this window object valid?
 
         Invalid windows are caused by windows closing during the
         construction of this object instance.
 
-    ``monitor``\ ` </sdk/autopilot/python/autopilot.process/Window#Window.monitor>`__\ ` <#autopilot.process.Window.monitor>`__
+    :ref:``monitor``\ ` <sdk_autopilot_process_window#Window.monitor>`\ ` <#autopilot.process.Window.monitor>`
         Returns the monitor to which the windows belongs to
 
-    ``closed``\ ` </sdk/autopilot/python/autopilot.process/Window#Window.closed>`__\ ` <#autopilot.process.Window.closed>`__
+    :ref:``closed``\ ` <sdk_autopilot_process_window#Window.closed>`\ ` <#autopilot.process.Window.closed>`
         Returns True if the window has been closed
 
-    ``close``\ ()` </sdk/autopilot/python/autopilot.process/Window#Window.close>`__\ ` <#autopilot.process.Window.close>`__
+    :ref:``close``\ ()` <sdk_autopilot_process_window#Window.close>`\ ` <#autopilot.process.Window.close>`
         Close the window.
 
-    ``set_focus``\ ()` </sdk/autopilot/python/autopilot.process/Window#Window.set_focus>`__\ ` <#autopilot.process.Window.set_focus>`__
+    :ref:``set_focus``\ ()` <sdk_autopilot_process_window#Window.set_focus>`\ ` <#autopilot.process.Window.set_focus>`
 

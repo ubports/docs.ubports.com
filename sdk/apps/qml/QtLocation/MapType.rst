@@ -1,3 +1,7 @@
+.. _sdk_qtlocation_maptype:
+QtLocation MapType
+==================
+
 The MapType type holds information about a map type.
 
 +---------------------+-------------------------+
@@ -9,29 +13,26 @@ The MapType type holds information about a map type.
 Properties
 ----------
 
--  ****`description </sdk/apps/qml/QtLocation/MapType#description-prop>`__****
-   : string
--  ****`mobile </sdk/apps/qml/QtLocation/MapType#mobile-prop>`__**** :
-   bool
--  ****`name </sdk/apps/qml/QtLocation/MapType#name-prop>`__**** :
+-  :ref:`description <sdk_qtlocation_maptype_description-prop>` :
    string
--  ****`night </sdk/apps/qml/QtLocation/MapType#night-prop>`__**** :
-   bool
--  ****`style </sdk/apps/qml/QtLocation/MapType#style-prop>`__**** :
-   enumeration
+-  :ref:`mobile <sdk_qtlocation_maptype_mobile-prop>` : bool
+-  :ref:`name <sdk_qtlocation_maptype_name-prop>` : string
+-  :ref:`night <sdk_qtlocation_maptype_night-prop>` : bool
+-  :ref:`style <sdk_qtlocation_maptype_style-prop>` : enumeration
 
 Detailed Description
 --------------------
 
-This includes the map type's
-`name </sdk/apps/qml/QtLocation/MapType#name-prop>`__ and
-`description </sdk/apps/qml/QtLocation/MapType#description-prop>`__, the
-`style </sdk/apps/qml/QtLocation/MapType#style-prop>`__ and a flag to
-indicate if the map type is optimized for mobile devices
-(`mobile </sdk/apps/qml/QtLocation/MapType#mobile-prop>`__).
+This includes the map type's :ref:`name <sdk_qtlocation_maptype#name-prop>`
+and :ref:`description <sdk_qtlocation_maptype#description-prop>`, the
+:ref:`style <sdk_qtlocation_maptype#style-prop>` and a flag to indicate if
+the map type is optimized for mobile devices
+(:ref:`mobile <sdk_qtlocation_maptype#mobile-prop>`).
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtlocation_maptype_description-prop:
 
 +--------------------------------------------------------------------------+
 |        \ description : string                                            |
@@ -41,6 +42,8 @@ This read-only property holds the description of the map type as a
 single formatted string.
 
 | 
+
+.. _sdk_qtlocation_maptype_mobile-prop:
 
 +--------------------------------------------------------------------------+
 |        \ mobile : bool                                                   |
@@ -53,6 +56,8 @@ the effects of sunlight and a reduced color for improved readability.
 
 | 
 
+.. _sdk_qtlocation_maptype_name-prop:
+
 +--------------------------------------------------------------------------+
 |        \ name : string                                                   |
 +--------------------------------------------------------------------------+
@@ -61,6 +66,8 @@ This read-only property holds the name of the map type as a single
 formatted string.
 
 | 
+
+.. _sdk_qtlocation_maptype_night-prop:
 
 +--------------------------------------------------------------------------+
 |        \ night : bool                                                    |
@@ -74,29 +81,28 @@ This QML property was introduced in Qt Location 5.4.
 
 | 
 
+.. _sdk_qtlocation_maptype_style-prop:
+
 +--------------------------------------------------------------------------+
 |        \ style : enumeration                                             |
 +--------------------------------------------------------------------------+
 
 This read-only property gives access to the style of the map type.
 
--  `MapType </sdk/apps/qml/QtLocation/MapType/>`__.NoMap - No map.
--  `MapType </sdk/apps/qml/QtLocation/MapType/>`__.StreetMap - A street
-   map.
--  `MapType </sdk/apps/qml/QtLocation/MapType/>`__.SatelliteMapDay - A
-   map with day-time satellite imagery.
--  `MapType </sdk/apps/qml/QtLocation/MapType/>`__.SatelliteMapNight - A
-   map with night-time satellite imagery.
--  `MapType </sdk/apps/qml/QtLocation/MapType/>`__.TerrainMap - A
-   terrain map.
--  `MapType </sdk/apps/qml/QtLocation/MapType/>`__.HybridMap - A map
-   with satellite imagery and street information.
--  `MapType </sdk/apps/qml/QtLocation/MapType/>`__.GrayStreetMap - A
-   gray-shaded street map.
+-  :ref:`MapType <sdk_qtlocation_maptype>`.NoMap - No map.
+-  :ref:`MapType <sdk_qtlocation_maptype>`.StreetMap - A street map.
+-  :ref:`MapType <sdk_qtlocation_maptype>`.SatelliteMapDay - A map with
+   day-time satellite imagery.
+-  :ref:`MapType <sdk_qtlocation_maptype>`.SatelliteMapNight - A map with
+   night-time satellite imagery.
+-  :ref:`MapType <sdk_qtlocation_maptype>`.TerrainMap - A terrain map.
+-  :ref:`MapType <sdk_qtlocation_maptype>`.HybridMap - A map with satellite
+   imagery and street information.
+-  :ref:`MapType <sdk_qtlocation_maptype>`.GrayStreetMap - A gray-shaded
+   street map.
 -  MapType::PedestrianMap - A street map suitable for pedestriants.
 -  MapType::CarNavigationMap - A street map suitable for car navigation.
 -  MapType::CycleMap - A street map suitable for cyclists.
--  `MapType </sdk/apps/qml/QtLocation/MapType/>`__.CustomMap - A custom
-   map type.
+-  :ref:`MapType <sdk_qtlocation_maptype>`.CustomMap - A custom map type.
 
 | 

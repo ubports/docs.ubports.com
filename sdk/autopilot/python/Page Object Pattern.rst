@@ -1,41 +1,45 @@
+.. _sdk_page_object_pattern:
+Page Object Pattern
+===================
+
 
 Contents
 
 -  `Page Object
-   Pattern </sdk/autopilot/python/guides-page_object#page-object-pattern>`__
+   Pattern </sdk/autopilot/python/guides-page_object/#page-object-pattern>`_ 
 
    -  `Introducing the Page Object
-      Pattern </sdk/autopilot/python/guides-page_object#introducing-the-page-object-pattern>`__
+      Pattern </sdk/autopilot/python/guides-page_object/#introducing-the-page-object-pattern>`_ 
 
       -  `1. The public methods represent the services that the page
-         offers. </sdk/autopilot/python/guides-page_object#the-public-methods-represent-the-services-that-the-page-offers>`__
+         offers. </sdk/autopilot/python/guides-page_object/#the-public-methods-represent-the-services-that-the-page-offers>`_ 
       -  `2. Try not to expose the internals of the
-         page. </sdk/autopilot/python/guides-page_object#try-not-to-expose-the-internals-of-the-page>`__
+         page. </sdk/autopilot/python/guides-page_object/#try-not-to-expose-the-internals-of-the-page>`_ 
       -  `3. Methods return other
-         PageObjects </sdk/autopilot/python/guides-page_object#methods-return-other-pageobjects>`__
+         PageObjects </sdk/autopilot/python/guides-page_object/#methods-return-other-pageobjects>`_ 
       -  `4. Assertions should exist only in
-         tests </sdk/autopilot/python/guides-page_object#assertions-should-exist-only-in-tests>`__
+         tests </sdk/autopilot/python/guides-page_object/#assertions-should-exist-only-in-tests>`_ 
       -  `5. Need not represent an entire
-         page </sdk/autopilot/python/guides-page_object#need-not-represent-an-entire-page>`__
+         page </sdk/autopilot/python/guides-page_object/#need-not-represent-an-entire-page>`_ 
       -  `6. Actions which produce multiple results should have a test
          for each
-         result </sdk/autopilot/python/guides-page_object#actions-which-produce-multiple-results-should-have-a-test-for-each-result>`__
+         result </sdk/autopilot/python/guides-page_object/#actions-which-produce-multiple-results-should-have-a-test-for-each-result>`_ 
 
 .. rubric:: `Introducing the Page Object
-   Pattern </sdk/autopilot/python/guides-page_object#id2>`__\ ` <#introducing-the-page-object-pattern>`__
+   Pattern </sdk/autopilot/python/guides-page_object/#id2>`_ \ ` <#introducing-the-page-object-pattern>`_ 
    :name: introducing-the-page-object-pattern
 
 Automated testing of an application through the Graphical User Interface
 (GUI) is inherently fragile. These tests require regular review and
 attention during the development cycle. This is known as Interface
 Sensitivity (`“even minor changes to the interface can cause tests to
-fail” <https://books.google.com/books?isbn=0132797461>`__). Utilizing
+fail” <https://books.google.com/books?isbn=0132797461>`_ ). Utilizing
 the page-object pattern, alleviates some of the problems stemming from
 this fragility, allowing us to do automated user acceptance testing
 (UAT) in a sustainable manner.
 
 The Page Object Pattern comes from the `Selenium
-community <https://code.google.com/p/selenium/wiki/PageObjects>`__ and
+community <https://code.google.com/p/selenium/wiki/PageObjects>`_  and
 is the best way to turn a flaky and unmaintainable user acceptance test
 into a stable and useful part of your release process. A page is what’s
 visible on the screen at a single moment. A user story consists of a
@@ -51,16 +55,16 @@ are modeled as objects following these guidelines:
    result
 
 Lets take the page objects of the `Ubuntu Clock
-App <http://bazaar.launchpad.net/~ubuntu-clock-dev/ubuntu-clock-app/trunk/view/399/tests/autopilot/ubuntu_clock_app/emulators.py>`__
+App <http://bazaar.launchpad.net/~ubuntu-clock-dev/ubuntu-clock-app/trunk/view/399/tests/autopilot/ubuntu_clock_app/emulators.py>`_ 
 as an example, with some simplifications. This application is written in
 QML and Javascript using the `Ubuntu
-SDK <http://developer.ubuntu.com/apps/sdk/>`__.
+SDK <http://developer.ubuntu.com/apps/sdk/>`_ .
 
    id="the-public-methods-represent-the-services-that-the-page-offers"
    class="section">
 
 .. rubric:: `1. The public methods represent the services that the page
-   offers. </sdk/autopilot/python/guides-page_object#id3>`__\ ` <#the-public-methods-represent-the-services-that-the-page-offers>`__
+   offers. </sdk/autopilot/python/guides-page_object/#id3>`_ \ ` <#the-public-methods-represent-the-services-that-the-page-offers>`_ 
    :name: the-public-methods-represent-the-services-that-the-page-offers.
 
 This application has a stopwatch page that lets users measure elapsed
@@ -83,7 +87,7 @@ by defining the stop watch page object as follows:
    class="section">
 
 .. rubric:: `2. Try not to expose the internals of the
-   page. </sdk/autopilot/python/guides-page_object#id4>`__\ ` <#try-not-to-expose-the-internals-of-the-page>`__
+   page. </sdk/autopilot/python/guides-page_object/#id4>`_ \ ` <#try-not-to-expose-the-internals-of-the-page>`_ 
    :name: try-not-to-expose-the-internals-of-the-page.
 
 The internals of the page are more likely to change than the services it
@@ -114,7 +118,7 @@ tests into a useful way to verify that a change in the GUI didn’t
 introduce any regressions.
 
 .. rubric:: `3. Methods return other
-   PageObjects </sdk/autopilot/python/guides-page_object#id5>`__\ ` <#methods-return-other-pageobjects>`__
+   PageObjects </sdk/autopilot/python/guides-page_object/#id5>`_ \ ` <#methods-return-other-pageobjects>`_ 
    :name: methods-return-other-pageobjects
 
 An UAT checks a user story. It will involve the journey of the user
@@ -149,7 +153,7 @@ user. Thus it can be chained as a user journey from one page to the
 other.
 
 .. rubric:: `4. Assertions should exist only in
-   tests </sdk/autopilot/python/guides-page_object#id6>`__\ ` <#assertions-should-exist-only-in-tests>`__
+   tests </sdk/autopilot/python/guides-page_object/#id6>`_ \ ` <#assertions-should-exist-only-in-tests>`_ 
    :name: assertions-should-exist-only-in-tests
 
 A well written UAT consists of a sequence of steps or user actions and
@@ -188,7 +192,7 @@ the test method the assertion that checks it’s the expected value.
                 'Label', objectName='time').text
 
 .. rubric:: `5. Need not represent an entire
-   page </sdk/autopilot/python/guides-page_object#id7>`__\ ` <#need-not-represent-an-entire-page>`__
+   page </sdk/autopilot/python/guides-page_object/#id7>`_ \ ` <#need-not-represent-an-entire-page>`_ 
    :name: need-not-represent-an-entire-page
 
 The objects we are modeling here can just represent a part of the page.
@@ -228,11 +232,11 @@ methods.
 
 .. rubric:: `6. Actions which produce multiple results should have a
    test for each
-   result </sdk/autopilot/python/guides-page_object#id8>`__\ ` <#actions-which-produce-multiple-results-should-have-a-test-for-each-result>`__
+   result </sdk/autopilot/python/guides-page_object/#id8>`_ \ ` <#actions-which-produce-multiple-results-should-have-a-test-for-each-result>`_ 
    :name: actions-which-produce-multiple-results-should-have-a-test-for-each-result
 
 According to the guideline `*3. Methods return other
-PageObjects* </sdk/autopilot/python/guides-page_object#page-object-guide-guideline-3>`__,
+PageObjects* </sdk/autopilot/python/guides-page_object/#page-object-guide-guideline-3>`_ ,
 we are returning page objects every time that a user action opens the
 option for new actions to execute. Sometimes the same action has
 different results depending on the context or the values used for the

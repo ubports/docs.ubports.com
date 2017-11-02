@@ -1,3 +1,7 @@
+.. _sdk_qtorganizer_eventtime:
+QtOrganizer EventTime
+=====================
+
 The EventTime element contains the start and end dates and times of a
 recurring event series, or occurrence of an event.
 
@@ -8,31 +12,32 @@ recurring event series, or occurrence of an event.
 Properties
 ----------
 
--  ****`allDay </sdk/apps/qml/QtOrganizer/EventTime#allDay-prop>`__****
+-  :ref:`allDay <sdk_qtorganizer_eventtime_allDay-prop>` : date
+-  :ref:`endDateTime <sdk_qtorganizer_eventtime_endDateTime-prop>`
    : date
--  ****`endDateTime </sdk/apps/qml/QtOrganizer/EventTime#endDateTime-prop>`__****
-   : date
--  ****`startDateTime </sdk/apps/qml/QtOrganizer/EventTime#startDateTime-prop>`__****
+-  :ref:`startDateTime <sdk_qtorganizer_eventtime_startDateTime-prop>`
    : date
 
 Signals
 -------
 
--  ****`onDetailChanged </sdk/apps/qml/QtOrganizer/EventTime#onDetailChanged-signal>`__****\ ()
+-  :ref:`onDetailChanged <sdk_qtorganizer_eventtime_onDetailChanged-signal>`\ ()
 
 Detailed Description
 --------------------
 
 The following fields are supported:
 
--  `EventTime </sdk/apps/qml/QtOrganizer/EventTime/>`__.FieldStartDateTime
--  `EventTime </sdk/apps/qml/QtOrganizer/EventTime/>`__.FieldEndDateTime
--  `EventTime </sdk/apps/qml/QtOrganizer/EventTime/>`__.FieldAllDay
+-  :ref:`EventTime <sdk_qtorganizer_eventtime>`.FieldStartDateTime
+-  :ref:`EventTime <sdk_qtorganizer_eventtime>`.FieldEndDateTime
+-  :ref:`EventTime <sdk_qtorganizer_eventtime>`.FieldAllDay
 
 **See also** QOrganizerEventTime.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtorganizer_eventtime_allDay-prop:
 
 +--------------------------------------------------------------------------+
 |        \ allDay : date                                                   |
@@ -43,6 +48,8 @@ datetime.
 
 | 
 
+.. _sdk_qtorganizer_eventtime_endDateTime-prop:
+
 +--------------------------------------------------------------------------+
 |        \ endDateTime : date                                              |
 +--------------------------------------------------------------------------+
@@ -50,6 +57,8 @@ datetime.
 This property holds the end date and time value of the event.
 
 | 
+
+.. _sdk_qtorganizer_eventtime_startDateTime-prop:
 
 +--------------------------------------------------------------------------+
 |        \ startDateTime : date                                            |
@@ -62,11 +71,13 @@ This property holds the start date and time value of the event.
 Signal Documentation
 --------------------
 
+.. _sdk_qtorganizer_eventtime_onDetailChanged()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ onDetailChanged()                                               |
 +--------------------------------------------------------------------------+
 
 **See also**
-`Detail::onDetailChanged </sdk/apps/qml/QtOrganizer/Detail#onDetailChanged-signal>`__.
+:ref:`Detail::onDetailChanged <sdk_qtorganizer_detail#onDetailChanged-signal>`.
 
 | 

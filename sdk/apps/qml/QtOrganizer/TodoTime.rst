@@ -1,3 +1,7 @@
+.. _sdk_qtorganizer_todotime:
+QtOrganizer TodoTime
+====================
+
 The TodoTime element contains the start and due dates and times of a
 recurring todo series, or occurrence of an todo item.
 
@@ -8,31 +12,32 @@ recurring todo series, or occurrence of an todo item.
 Properties
 ----------
 
--  ****`allDay </sdk/apps/qml/QtOrganizer/TodoTime#allDay-prop>`__**** :
+-  :ref:`allDay <sdk_qtorganizer_todotime_allDay-prop>` : date
+-  :ref:`dueDateTime <sdk_qtorganizer_todotime_dueDateTime-prop>` :
    date
--  ****`dueDateTime </sdk/apps/qml/QtOrganizer/TodoTime#dueDateTime-prop>`__****
-   : date
--  ****`startDateTime </sdk/apps/qml/QtOrganizer/TodoTime#startDateTime-prop>`__****
+-  :ref:`startDateTime <sdk_qtorganizer_todotime_startDateTime-prop>`
    : date
 
 Signals
 -------
 
--  ****`onDetailChanged </sdk/apps/qml/QtOrganizer/TodoTime#onDetailChanged-signal>`__****\ ()
+-  :ref:`onDetailChanged <sdk_qtorganizer_todotime_onDetailChanged-signal>`\ ()
 
 Detailed Description
 --------------------
 
 The following fields are supported:
 
--  `TodoTime </sdk/apps/qml/QtOrganizer/TodoTime/>`__.FieldStartDateTime
--  `TodoTime </sdk/apps/qml/QtOrganizer/TodoTime/>`__.FieldDueDateTime
--  `TodoTime </sdk/apps/qml/QtOrganizer/TodoTime/>`__.FieldAllDay
+-  :ref:`TodoTime <sdk_qtorganizer_todotime>`.FieldStartDateTime
+-  :ref:`TodoTime <sdk_qtorganizer_todotime>`.FieldDueDateTime
+-  :ref:`TodoTime <sdk_qtorganizer_todotime>`.FieldAllDay
 
 **See also** QOrganizerTodoTime.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtorganizer_todotime_allDay-prop:
 
 +--------------------------------------------------------------------------+
 |        \ allDay : date                                                   |
@@ -43,6 +48,8 @@ datetime.
 
 | 
 
+.. _sdk_qtorganizer_todotime_dueDateTime-prop:
+
 +--------------------------------------------------------------------------+
 |        \ dueDateTime : date                                              |
 +--------------------------------------------------------------------------+
@@ -50,6 +57,8 @@ datetime.
 This property holds the end date and time value of the todo item.
 
 | 
+
+.. _sdk_qtorganizer_todotime_startDateTime-prop:
 
 +--------------------------------------------------------------------------+
 |        \ startDateTime : date                                            |
@@ -62,11 +71,13 @@ This property holds the start date and time value of the todo item.
 Signal Documentation
 --------------------
 
+.. _sdk_qtorganizer_todotime_onDetailChanged()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ onDetailChanged()                                               |
 +--------------------------------------------------------------------------+
 
 **See also**
-`Detail::onDetailChanged </sdk/apps/qml/QtOrganizer/Detail#onDetailChanged-signal>`__.
+:ref:`Detail::onDetailChanged <sdk_qtorganizer_detail#onDetailChanged-signal>`.
 
 | 

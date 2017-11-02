@@ -1,3 +1,7 @@
+.. _sdk_qtqml_qt_qml:
+QtQml Qt QML
+============
+
 
 
 The Qt QML module provides a framework for developing applications and
@@ -43,20 +47,20 @@ To link against the module, add this line to your qmake ``.pro`` file:
 
 The Qt QML module contains the QML framework and important QML types
 used in applications. The constructs of QML are described in the `The
-QML Reference </sdk/apps/qml/QtQml/qmlreference/>`__.
+QML Reference </sdk/apps/qml/QtQml/qmlreference/>`_ .
 
 In addition to the `QML Basic
-Types </sdk/apps/qml/QtQml/qtqml-typesystem-basictypes/>`__, the module
+Types </sdk/apps/qml/QtQml/qtqml-typesystem-basictypes/>`_ , the module
 comes with the following QML object types:
 
--  `Component </sdk/apps/qml/QtQml/Component/>`__
--  `QtObject </sdk/apps/qml/QtQml/QtObject/>`__
--  `Binding </sdk/apps/qml/QtQml/Binding/>`__
--  `Connections </sdk/apps/qml/QtQml/Connections/>`__
--  `Timer </sdk/apps/qml/QtQml/Timer/>`__
+-  :ref:`Component <sdk_qtqml_component>`
+-  :ref:`QtObject <sdk_qtqml_qtobject>`
+-  :ref:`Binding <sdk_qtqml_binding>`
+-  :ref:`Connections <sdk_qtqml_connections>`
+-  :ref:`Timer <sdk_qtqml_timer>`
 
-The `Qt </sdk/apps/qml/QtQml/Qt/>`__ global object provides useful enums
-and functions for various QML types.
+The :ref:`Qt <sdk_qtqml_qt>` global object provides useful enums and
+functions for various QML types.
 
 .. rubric:: Lists and Models
    :name: lists-and-models
@@ -64,11 +68,11 @@ and functions for various QML types.
 New in Qt 5.1, the model types are moved to a submodule,
 ``QtQml.Models``. The Qt QML Models page has more information.
 
--  `DelegateModel </sdk/apps/qml/QtQml/DelegateModel/>`__
--  `DelegateModelGroup </sdk/apps/qml/QtQml/DelegateModelGroup/>`__
--  `ListElement </sdk/apps/qml/QtQml/ListElement/>`__
--  `ListModel </sdk/apps/qml/QtQml/ListModel/>`__
--  `ObjectModel </sdk/apps/qml/QtQml/ObjectModel/>`__
+-  :ref:`DelegateModel <sdk_qtqml_delegatemodel>`
+-  :ref:`DelegateModelGroup <sdk_qtqml_delegatemodelgroup>`
+-  :ref:`ListElement <sdk_qtqml_listelement>`
+-  :ref:`ListModel <sdk_qtqml_listmodel>`
+-  :ref:`ObjectModel <sdk_qtqml_objectmodel>`
 
 .. rubric:: JavaScript Environment for QML Applications
    :name: javascript-environment-for-qml-applications
@@ -78,19 +82,19 @@ QML provides the framework for running JavaScript expressions in QML and
 from C++.
 
 These sections are from `The QML
-Reference </sdk/apps/qml/QtQml/qmlreference/>`__. `Integrating QML and
-JavaScript </sdk/apps/qml/QtQml/qtqml-javascript-topic/>`__
+Reference </sdk/apps/qml/QtQml/qmlreference/>`_ . `Integrating QML and
+JavaScript </sdk/apps/qml/QtQml/qtqml-javascript-topic/>`_ 
 
 -  `Using JavaScript Expressions with
-   QML </sdk/apps/qml/QtQml/qtqml-javascript-expressions/>`__
+   QML </sdk/apps/qml/QtQml/qtqml-javascript-expressions/>`_ 
 -  `Dynamic QML Object Creation from
-   JavaScript </sdk/apps/qml/QtQml/qtqml-javascript-dynamicobjectcreation/>`__
+   JavaScript </sdk/apps/qml/QtQml/qtqml-javascript-dynamicobjectcreation/>`_ 
 -  `Defining JavaScript Resources In
-   QML </sdk/apps/qml/QtQml/qtqml-javascript-resources/>`__
+   QML </sdk/apps/qml/QtQml/qtqml-javascript-resources/>`_ 
 -  `Importing JavaScript Resources In
-   QML </sdk/apps/qml/QtQml/qtqml-javascript-imports/>`__
+   QML </sdk/apps/qml/QtQml/qtqml-javascript-imports/>`_ 
 -  `JavaScript Host
-   Environment </sdk/apps/qml/QtQml/qtqml-javascript-hostenvironment/>`__
+   Environment </sdk/apps/qml/QtQml/qtqml-javascript-hostenvironment/>`_ 
 
 .. rubric:: Integrating QML with C++ Applications
    :name: integrating-qml-with-c-applications
@@ -100,27 +104,27 @@ QML framework allows QML code to contain JavaScript expressions and for
 the QML code to interact with C++ code.
 
 -  `Important C++ Classes Provided By The Qt QML
-   Module </sdk/apps/qml/QtQml/qtqml-cppclasses-topic/>`__
+   Module </sdk/apps/qml/QtQml/qtqml-cppclasses-topic/>`_ 
 -  `Integrating QML and
-   C++ </sdk/apps/qml/QtQml/qtqml-cppintegration-topic/>`__
+   C++ </sdk/apps/qml/QtQml/qtqml-cppintegration-topic/>`_ 
 
 .. rubric:: Additional Frameworks
    :name: additional-frameworks
 
 -  `The Declarative State Machine
-   Framework </sdk/apps/qml/QtQml/qmlstatemachine/>`__
+   Framework </sdk/apps/qml/QtQml/qmlstatemachine/>`_ 
 
 .. rubric:: Guides and Other Information
    :name: guides-and-other-information
 
 Further information for writing QML applications:
 
--  `The QML Reference </sdk/apps/qml/QtQml/qmlreference/>`__
+-  `The QML Reference </sdk/apps/qml/QtQml/qmlreference/>`_ 
 -  QML Applications - essential information for application development
    with QML and Qt Quick
 -  Qt Quick - a module which provides a set of QML types and C++ classes
    for building user interfaces and applications with QML
--  `Qt QML Release Notes </sdk/apps/qml/QtQml/qtqml-releasenotes/>`__ -
+-  `Qt QML Release Notes </sdk/apps/qml/QtQml/qtqml-releasenotes/>`_  -
    list of changes and additions in the Qt QML module
 
 .. rubric:: Reference

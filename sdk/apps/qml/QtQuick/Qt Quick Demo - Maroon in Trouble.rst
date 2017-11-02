@@ -1,3 +1,7 @@
+.. _sdk_qtquick_qt_quick_demo_-_maroon_in_trouble:
+QtQuick Qt Quick Demo - Maroon in Trouble
+=========================================
+
 
 
 |image0|
@@ -7,31 +11,30 @@ developing games:
 
 -  Using custom QML types to create different screens for different
    stages of the game.
--  Using the `Item </sdk/apps/qml/QtQuick/Item/>`__ and
-   `Image </sdk/apps/qml/QtQuick/imageelements#image>`__ types to
+-  Using the :ref:`Item <sdk_qtquick_item>` and
+   `Image </sdk/apps/qml/QtQuick/imageelements/#image>`_  types to
    construct a game background.
--  Using the
-   `SequentialAnimation </sdk/apps/qml/QtQuick/SequentialAnimation/>`__,
-   `NumberAnimation </sdk/apps/qml/QtQuick/NumberAnimation/>`__,
-   `ParticleSystem </sdk/apps/qml/QtQuick/Particles.ParticleSystem/>`__,
-   `Emitter </sdk/apps/qml/QtQuick/Particles.Emitter/>`__, and
-   `Wander </sdk/apps/qml/QtQuick/Particles.Wander/>`__ types to animate
+-  Using the :ref:`SequentialAnimation <sdk_qtquick_sequentialanimation>`,
+   :ref:`NumberAnimation <sdk_qtquick_numberanimation>`,
+   `ParticleSystem </sdk/apps/qml/QtQuick/Particles.ParticleSystem/>`_ ,
+   `Emitter </sdk/apps/qml/QtQuick/Particles.Emitter/>`_ , and
+   `Wander </sdk/apps/qml/QtQuick/Particles.Wander/>`_  types to animate
    background objects.
--  Using the Timer and `Repeater </sdk/apps/qml/QtQuick/Repeater/>`__
-   types to display a countdown sequence before starting the game.
+-  Using the Timer and :ref:`Repeater <sdk_qtquick_repeater>` types to
+   display a countdown sequence before starting the game.
 -  Using a custom QML type with custom properties to construct a game
    board.
 -  Using the
-   `SpriteSequence </sdk/apps/qml/QtQuick/imageelements#spritesequence>`__
-   and `Sprite </sdk/apps/qml/QtQuick/Sprite/>`__ types to add animated
-   objects to the game board.
+   `SpriteSequence </sdk/apps/qml/QtQuick/imageelements/#spritesequence>`_ 
+   and :ref:`Sprite <sdk_qtquick_sprite>` types to add animated objects to
+   the game board.
 -  Using a custom QML type that uses the
-   `Image </sdk/apps/qml/QtQuick/imageelements#image>`__ type with some
+   `Image </sdk/apps/qml/QtQuick/imageelements/#image>`_  type with some
    custom properties to add a menu where the players can buy objects.
 -  Using custom properties with private functions to keep track of game
    statistics and a custom QML type to display them to the players.
--  Using the `State </sdk/apps/qml/QtQuick/State/>`__ type with
-   JavaScript functions to manage game states.
+-  Using the :ref:`State <sdk_qtquick_state>` type with JavaScript
+   functions to manage game states.
 -  Using the SoundEffect type to play individual sound effects depending
    on the object type and the action applied to the object.
 -  Using signal handlers to specify keyboard shortcuts for some game
@@ -67,7 +70,7 @@ types are located:
 We use the screen types at different stages of the game. The
 NewGameScreen type is used to create the screen that appears when the
 players start the app. In NewGameScreen.qml, we use an
-`Image </sdk/apps/qml/QtQuick/imageelements#image>`__ type to create a
+`Image </sdk/apps/qml/QtQuick/imageelements/#image>`_  type to create a
 New Game button that the players can press to start a new game.
 
 |image1|
@@ -93,9 +96,9 @@ same images and animations.
 .. rubric:: Constructing the Background
    :name: constructing-the-background
 
-In the maroon.qml file, we use an `Item </sdk/apps/qml/QtQuick/Item/>`__
-type with the id ``root`` and a fixed width and height to create a main
-window for the game:
+In the maroon.qml file, we use an :ref:`Item <sdk_qtquick_item>` type with
+the id ``root`` and a fixed width and height to create a main window for
+the game:
 
 .. code:: qml
 
@@ -109,7 +112,7 @@ window for the game:
 We declare two custom properties for the root item, ``gameState`` and
 ``passedSplash`` that we will use later to manage game states.
 
-We use an `Image </sdk/apps/qml/QtQuick/imageelements#image>`__ item to
+We use an `Image </sdk/apps/qml/QtQuick/imageelements/#image>`_  item to
 display the game background image:
 
 .. code:: qml
@@ -126,7 +129,7 @@ horizon.
 
 We use the ``anchors.bottom`` property to anchor the background image to
 the bottom of the
-`Column </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#column>`__
+`Column </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#column>`_ 
 layout that we use to position the screens:
 
 .. code:: qml
@@ -141,12 +144,11 @@ We set a negative value for the ``y`` property to set the first scene at
 the bottom of the sea. We calculate the position by subtracting the
 height of a screen from the ``height`` property.
 
-Within the column layout, we use an
-`Item </sdk/apps/qml/QtQuick/Item/>`__ type to add objects to the
-background. Within the item, we use
-`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#row>`__ layout
+Within the column layout, we use an :ref:`Item <sdk_qtquick_item>` type to
+add objects to the background. Within the item, we use
+`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#row>`_  layout
 objects to position
-`Image </sdk/apps/qml/QtQuick/imageelements#image>`__ objects that
+`Image </sdk/apps/qml/QtQuick/imageelements/#image>`_  objects that
 display waves on the game canvas and the game over screen:
 
 .. code:: qml
@@ -184,7 +186,7 @@ to the first row. We also use the ``opacity`` property to make the waves
 appear lighter in color than the first two waves, which gives the
 background some depth.
 
-We use `Image </sdk/apps/qml/QtQuick/imageelements#image>`__ objects to
+We use `Image </sdk/apps/qml/QtQuick/imageelements/#image>`_  objects to
 also display sunlight on the new game screen and on the game canvas:
 
 .. code:: qml
@@ -207,7 +209,7 @@ position the images at fixed locations on the y axis and the
 ``anchors.horizontalCenter`` property to center them horizontally in
 relation to their parent.
 
-We use an `Image </sdk/apps/qml/QtQuick/imageelements#image>`__ type to
+We use an `Image </sdk/apps/qml/QtQuick/imageelements/#image>`_  type to
 display an image that adds a deepening shadow to the background:
 
 .. code:: qml
@@ -226,11 +228,11 @@ we added to it.
 .. rubric:: Animating Background Objects
    :name: animating-background-objects
 
-We use `NumberAnimation </sdk/apps/qml/QtQuick/NumberAnimation/>`__ to
-move the waves horizontally across the screen in opposite directions and
-`SequentialAnimation </sdk/apps/qml/QtQuick/SequentialAnimation/>`__
-with `NumberAnimation </sdk/apps/qml/QtQuick/NumberAnimation/>`__ to
-move them up and down.
+We use :ref:`NumberAnimation <sdk_qtquick_numberanimation>` to move the
+waves horizontally across the screen in opposite directions and
+:ref:`SequentialAnimation <sdk_qtquick_sequentialanimation>` with
+:ref:`NumberAnimation <sdk_qtquick_numberanimation>` to move them up and
+down.
 
 We apply the number animation to the ``x`` property of ``wave`` as a
 property value source to animate the x value from its current value to
@@ -306,23 +308,23 @@ sunlight.png image similarly, but in the opposite direction:
                     }
 
 For examples of using
-`SequentialAnimation </sdk/apps/qml/QtQuick/SequentialAnimation/>`__ and
-`NumberAnimation </sdk/apps/qml/QtQuick/NumberAnimation/>`__ on the
-``x`` and ``y`` properties and the ``width`` and ``height`` properties,
-see NewGameScreen.qml.
+:ref:`SequentialAnimation <sdk_qtquick_sequentialanimation>` and
+:ref:`NumberAnimation <sdk_qtquick_numberanimation>` on the ``x`` and ``y``
+properties and the ``width`` and ``height`` properties, see
+NewGameScreen.qml.
 
 .. rubric:: Emitting Particles
    :name: emitting-particles
 
 In addition to animation, we use particles to generate motion on the
 game screens. We use the
-`ParticleSystem </sdk/apps/qml/QtQuick/Particles.ParticleSystem/>`__ QML
+`ParticleSystem </sdk/apps/qml/QtQuick/Particles.ParticleSystem/>`_  QML
 type in maroon.qml to make bubbles appear at the bottom of the new game
 screen and game canvas and slowly float towards the top on varying
 trajectories.
 
 To use the
-`ParticleSystem </sdk/apps/qml/QtQuick/Particles.ParticleSystem/>`__
+`ParticleSystem </sdk/apps/qml/QtQuick/Particles.ParticleSystem/>`_ 
 type, we must import Qt Quick Particles:
 
 .. code:: qml
@@ -330,8 +332,8 @@ type, we must import Qt Quick Particles:
     import QtQuick.Particles 2.0
 
 To have the particles appear on the game background, we place the
-`ParticleSystem </sdk/apps/qml/QtQuick/Particles.ParticleSystem/>`__
-type within the `Image </sdk/apps/qml/QtQuick/imageelements#image>`__
+`ParticleSystem </sdk/apps/qml/QtQuick/Particles.ParticleSystem/>`_ 
+type within the `Image </sdk/apps/qml/QtQuick/imageelements/#image>`_ 
 type that displays the game background:
 
 .. code:: qml
@@ -344,8 +346,8 @@ type that displays the game background:
                 anchors.fill: parent
 
 In the
-`ParticleSystem </sdk/apps/qml/QtQuick/Particles.ParticleSystem/>`__, we
-use an `Emitter </sdk/apps/qml/QtQuick/Particles.Emitter/>`__ type to
+`ParticleSystem </sdk/apps/qml/QtQuick/Particles.ParticleSystem/>`_ , we
+use an `Emitter </sdk/apps/qml/QtQuick/Particles.Emitter/>`_  type to
 emit particles from the location of the emitter at the rate of two per
 second with the life span of 15 seconds:
 
@@ -365,7 +367,7 @@ second with the life span of 15 seconds:
                 }
 
 The ``acceleration`` property uses the
-`PointDirection </sdk/apps/qml/QtQuick/Particles.PointDirection/>`__
+`PointDirection </sdk/apps/qml/QtQuick/Particles.PointDirection/>`_ 
 type to specify random variation of the x and y coordinates, so that the
 bubbles appear inside a rectangular area around the emitter that is
 anchored to the bottom of the image.
@@ -376,7 +378,7 @@ randomly increases or decreases the particle size by up to 16 pixels, so
 that we get bubbles in different sizes.
 
 As emitters have no visualization, we use the
-`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`__ type
+`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_  type
 to render the catch.png image at the particle location:
 
 .. code:: qml
@@ -388,7 +390,7 @@ to render the catch.png image at the particle location:
                     opacity: 0.25
                 }
 
-A `Wander </sdk/apps/qml/QtQuick/Particles.Wander/>`__ type applies a
+A `Wander </sdk/apps/qml/QtQuick/Particles.Wander/>`_  type applies a
 random trajectory to the particles, so that the bubbles follow random
 routes from the bottom to the top.
 
@@ -400,9 +402,9 @@ routes from the bottom to the top.
                 }
 
 For another example of using the
-`ParticleSystem </sdk/apps/qml/QtQuick/Particles.ParticleSystem/>`__
+`ParticleSystem </sdk/apps/qml/QtQuick/Particles.ParticleSystem/>`_ 
 type, see the GameOverScreen.qml file, where an
-`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`__ type
+`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_  type
 is used to make clouds move across the sky.
 
 .. rubric:: Using Timers
@@ -411,12 +413,12 @@ is used to make clouds move across the sky.
 |image4|
 
 In maroon.qml, we use the Timer type with a
-`Repeater </sdk/apps/qml/QtQuick/Repeater/>`__ type to display a
-countdown sequence before using another timer to start a new game. Both
-timers are started simultaneously in the ``"gameOn"`` state, that is
-when the players tap the New Game button and ``passedSplash`` is
-``true``. This is explained in more detail in `Managing Game
-States </sdk/apps/qml/QtQuick/demos-maroon#managing-game-states>`__.
+:ref:`Repeater <sdk_qtquick_repeater>` type to display a countdown sequence
+before using another timer to start a new game. Both timers are started
+simultaneously in the ``"gameOn"`` state, that is when the players tap
+the New Game button and ``passedSplash`` is ``true``. This is explained
+in more detail in `Managing Game
+States </sdk/apps/qml/QtQuick/demos-maroon/#managing-game-states>`_ .
 
 We use the ``countdownTimer`` to display the countdown sequence:
 
@@ -445,11 +447,10 @@ value of ``10``, so that ``countdownTimer`` is not running by default:
         property int countdown: 10
 
 Each time the timer is triggered, an image from the countdown sequence
-is displayed. We use a `Repeater </sdk/apps/qml/QtQuick/Repeater/>`__
-type to instantiate the
-`Image </sdk/apps/qml/QtQuick/imageelements#image>`__ delegate in the
-context of the repeater's parent, ``canvasArea`` item, seeded with data
-from the ``model``:
+is displayed. We use a :ref:`Repeater <sdk_qtquick_repeater>` type to
+instantiate the `Image </sdk/apps/qml/QtQuick/imageelements/#image>`_ 
+delegate in the context of the repeater's parent, ``canvasArea`` item,
+seeded with data from the ``model``:
 
 .. code:: qml
 
@@ -471,8 +472,8 @@ progresses. We also raise the opacity of the image that matches the
 current countdown step, keeping the others nearly transparent.
 
 By animating the changes in the ``opacity`` and ``scale`` properties
-using a `Behavior </sdk/apps/qml/QtQuick/Behavior/>`__ type, we achieve
-a countdown sequence where numbers zoom in towards the players.
+using a :ref:`Behavior <sdk_qtquick_behavior>` type, we achieve a countdown
+sequence where numbers zoom in towards the players.
 
 .. rubric:: Constructing the Game Board
    :name: constructing-the-game-board
@@ -497,9 +498,9 @@ parent item, ``canvasArea``:
 We set the ``focus`` property to ``true`` to give ``canvas`` active
 focus on startup.
 
-In GameCanvas.qml, we use an `Item </sdk/apps/qml/QtQuick/Item/>`__ type
-and define custom properties for it to create a grid of equally sized
-squares divided to 4 columns on 6 rows:
+In GameCanvas.qml, we use an :ref:`Item <sdk_qtquick_item>` type and define
+custom properties for it to create a grid of equally sized squares
+divided to 4 columns on 6 rows:
 
 .. code:: qml
 
@@ -519,9 +520,9 @@ size:
         width: cols * squareSize
         height: rows * squareSize
 
-We use an `Image </sdk/apps/qml/QtQuick/imageelements#image>`__ type
-with a `MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ type to display
-a help button that the players can tap to view an image that contains
+We use an `Image </sdk/apps/qml/QtQuick/imageelements/#image>`_  type
+with a :ref:`MouseArea <sdk_qtquick_mousearea>` type to display a help
+button that the players can tap to view an image that contains
 instructions for playing the game:
 
 .. code:: qml
@@ -552,9 +553,9 @@ instructions for playing the game:
 We declare the ``goAway()`` private function to disable the mouse area
 and make the image fully transparent and a ``comeBack()`` function to
 enable the mouse area and make the button fully opaque. We use a
-`Behavior </sdk/apps/qml/QtQuick/Behavior/>`__ type on the ``opacity``
-property to apply the default number animation when the value of
-``opacity`` changes.
+:ref:`Behavior <sdk_qtquick_behavior>` type on the ``opacity`` property to
+apply the default number animation when the value of ``opacity``
+changes.
 
 When the players tap the help button, the ``onClicked`` signal handler
 is called to hide the help button by setting the ``helpButton.visible``
@@ -566,7 +567,7 @@ property to ``false`` and to show the help image by setting the
 We use anchoring to position the help button at the bottom center of the
 game canvas.
 
-We use another `Image </sdk/apps/qml/QtQuick/imageelements#image>`__
+We use another `Image </sdk/apps/qml/QtQuick/imageelements/#image>`_ 
 type to display the help image:
 
 .. code:: qml
@@ -584,8 +585,8 @@ type to display the help image:
         }
 
 To hide the help image when the players tap it, the ``onClicked`` signal
-handler within the `MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ type
-is called to set the ``helpImage.visible`` property to ``true``.
+handler within the :ref:`MouseArea <sdk_qtquick_mousearea>` type is called
+to set the ``helpImage.visible`` property to ``true``.
 
 To ensure that the images are placed on top when they are visible, we
 set a high value for their ``z`` property.
@@ -598,7 +599,7 @@ players can add more objects to it.
    :name: animating-objects-on-the-game-board
 
 We use sprite animation to animate objects on the game board. The Qt
-Quick `sprite engine </sdk/apps/qml/QtQuick/qtquick-effects-sprites/>`__
+Quick `sprite engine </sdk/apps/qml/QtQuick/qtquick-effects-sprites/>`_ 
 is a stochastic state machine combined with the ability to chop up
 images containing multiple frames of an animation.
 
@@ -620,9 +621,9 @@ milliseconds:
 
 We use the MobBase custom type that is defined in MobBase.qml to animate
 mobs of fish that swim inside bubbles. We use an
-`Item </sdk/apps/qml/QtQuick/Item/>`__ type with custom properties and
-private functions to create the fish and the bubbles and to define the
-actions that can be applied to them:
+:ref:`Item <sdk_qtquick_item>` type with custom properties and private
+functions to create the fish and the bubbles and to define the actions
+that can be applied to them:
 
 .. code:: qml
 
@@ -644,7 +645,7 @@ actions that can be applied to them:
         ...
 
 We use a
-`SpriteSequence </sdk/apps/qml/QtQuick/imageelements#spritesequence>`__
+`SpriteSequence </sdk/apps/qml/QtQuick/imageelements/#spritesequence>`_ 
 type to animate the fish:
 
 .. code:: qml
@@ -657,9 +658,9 @@ type to animate the fish:
             goalSprite: ""
 
 The
-`SpriteSequence </sdk/apps/qml/QtQuick/imageelements#spritesequence>`__
+`SpriteSequence </sdk/apps/qml/QtQuick/imageelements/#spritesequence>`_ 
 type renders and controls a list of animations defined by
-`Sprite </sdk/apps/qml/QtQuick/Sprite/>`__ types:
+:ref:`Sprite <sdk_qtquick_sprite>` types:
 
 .. code:: qml
 
@@ -741,10 +742,10 @@ jump to the ``"left"`` or ``"right"`` sprite:
         }
 
 We then use the ``start()`` function to run a
-`NumberAnimation </sdk/apps/qml/QtQuick/NumberAnimation/>`__ that
-applies a number animation to the x value from its current value to
-``-360`` or ``360``, depending on whether the ``goingLeft`` custom
-property is ``true``, in 300 milliseconds:
+:ref:`NumberAnimation <sdk_qtquick_numberanimation>` that applies a number
+animation to the x value from its current value to ``-360`` or ``360``,
+depending on whether the ``goingLeft`` custom property is ``true``, in
+300 milliseconds:
 
 .. code:: qml
 
@@ -760,7 +761,7 @@ property is ``true``, in 300 milliseconds:
    :name: bursting-bubbles
 
 We use another
-`SpriteSequence </sdk/apps/qml/QtQuick/imageelements#spritesequence>`__
+`SpriteSequence </sdk/apps/qml/QtQuick/imageelements/#spritesequence>`_ 
 to animate the bubbles so that they become smaller and finally burst
 when they are attacked by a shooter or a melee. For this effect, we set
 the value of the ``scale`` property to decrease by ``0.2`` each time the
@@ -776,11 +777,11 @@ custom ``hp`` property changes:
             interpolate: false
             goalSprite: ""
 
-We use a `Behavior </sdk/apps/qml/QtQuick/Behavior/>`__ type to apply a
-`NumberAnimation </sdk/apps/qml/QtQuick/NumberAnimation/>`__ when the
-value of ``scale`` changes. We use the ``Easing.OutBack`` easing type
-for a back (overshooting cubic function: (s+1)\*t^3 - s\*t^2) easing out
-curve that decelerates the motion to zero velocity in 150 milliseconds:
+We use a :ref:`Behavior <sdk_qtquick_behavior>` type to apply a
+:ref:`NumberAnimation <sdk_qtquick_numberanimation>` when the value of
+``scale`` changes. We use the ``Easing.OutBack`` easing type for a back
+(overshooting cubic function: (s+1)\*t^3 - s\*t^2) easing out curve that
+decelerates the motion to zero velocity in 150 milliseconds:
 
 .. code:: qml
 
@@ -789,7 +790,7 @@ curve that decelerates the motion to zero velocity in 150 milliseconds:
             }
 
 The
-`SpriteSequence </sdk/apps/qml/QtQuick/imageelements#spritesequence>`__
+`SpriteSequence </sdk/apps/qml/QtQuick/imageelements/#spritesequence>`_ 
 consist of two sprites that display different images. The first sprite,
 ``"big"``, uses the catch.png image to display an empty bubble:
 
@@ -823,15 +824,13 @@ milliseconds.
             }
 
 Within the
-`SpriteSequence </sdk/apps/qml/QtQuick/imageelements#spritesequence>`__,
-we use
-`SequentialAnimation </sdk/apps/qml/QtQuick/SequentialAnimation/>`__
-with `NumberAnimation </sdk/apps/qml/QtQuick/NumberAnimation/>`__ to
-animate the transitions between the frames. To create a pulsating effect
-on the bubbles, we apply a sequential animation on the ``width``
-property with two number animations to first increase the bubble width
-from ``* 1`` to ``* 1.1`` over 800 milliseconds and then bring it back
-over 1 second:
+`SpriteSequence </sdk/apps/qml/QtQuick/imageelements/#spritesequence>`_ ,
+we use :ref:`SequentialAnimation <sdk_qtquick_sequentialanimation>` with
+:ref:`NumberAnimation <sdk_qtquick_numberanimation>` to animate the
+transitions between the frames. To create a pulsating effect on the
+bubbles, we apply a sequential animation on the ``width`` property with
+two number animations to first increase the bubble width from ``* 1`` to
+``* 1.1`` over 800 milliseconds and then bring it back over 1 second:
 
 .. code:: qml
 
@@ -853,7 +852,7 @@ Similarly, we increase the bubble height from ``* 1`` to ``* 1.15`` over
             }
 
 We use yet another
-`SpriteSequence </sdk/apps/qml/QtQuick/imageelements#spritesequence>`__
+`SpriteSequence </sdk/apps/qml/QtQuick/imageelements/#spritesequence>`_ 
 to display the effect of squid ink on the bubbles. For more examples of
 using sprite sequences, see the QML files in the ``towers`` directory.
 
@@ -863,7 +862,7 @@ using sprite sequences, see the QML files in the ``towers`` directory.
 |image7|
 
 In GameCanvas.qml, we use an
-`Image </sdk/apps/qml/QtQuick/imageelements#image>`__ type with some
+`Image </sdk/apps/qml/QtQuick/imageelements/#image>`_  type with some
 custom properties to create a menu where the players can buy tower
 objects:
 
@@ -885,8 +884,8 @@ We set the ``visible`` property to ``false`` to hide the menu by
 default. The ``z`` property is set to 1500 to ensure that the menu is
 displayed in front of all other items when it is visible.
 
-We use a `MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ type to open
-or close the menu when players tap on the canvas:
+We use a :ref:`MouseArea <sdk_qtquick_mousearea>` type to open or close the
+menu when players tap on the canvas:
 
 .. code:: qml
 
@@ -964,18 +963,18 @@ property is ``true`` and the ``gameOver`` property is ``false``:
 
 To set the visibility of the menu to ``"visible"`` without animating the
 property change, we use a
-`PropertyAction </sdk/apps/qml/QtQuick/PropertyAction/>`__ type. We do
-want to animate the changes in opacity and scale, though, so we use
-number animation to animate the value of the ``scale`` property from
-``0.9`` to ``1`` and the value of ``opacity`` property from ``0.7`` to
-``1``, over 500 milliseconds. We use the ``Easing.outElastic`` easing
-type for an elastic (exponentially decaying sine wave) function easing
-curve that decelerates from zero velocity.
+:ref:`PropertyAction <sdk_qtquick_propertyaction>` type. We do want to
+animate the changes in opacity and scale, though, so we use number
+animation to animate the value of the ``scale`` property from ``0.9`` to
+``1`` and the value of ``opacity`` property from ``0.7`` to ``1``, over
+500 milliseconds. We use the ``Easing.outElastic`` easing type for an
+elastic (exponentially decaying sine wave) function easing curve that
+decelerates from zero velocity.
 
 To construct the menu, we use a BuildButton custom type that is defined
 in BuildButton.qml. In GameCanvas.qml, we create one build button for
 each tower object that the players can buy and position them in a
-`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#row>`__ layout
+`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#row>`_  layout
 in front of the menu background image, dialog.png:
 
 .. code:: qml
@@ -1036,7 +1035,7 @@ button.
 
 Build buttons are enabled when the players have enough coins to buy the
 tower objects. We use an
-`Image </sdk/apps/qml/QtQuick/imageelements#image>`__ type in
+`Image </sdk/apps/qml/QtQuick/imageelements/#image>`_  type in
 BuildButton.qml to display images on the buttons:
 
 .. code:: qml
@@ -1051,8 +1050,8 @@ We use the ``opacity`` property to make the buttons appear enabled. If
 property is larger than or equal to the cost of a tower object, the
 images are fully opaque, otherwise their opacity is set to ``0.4``.
 
-We use a `Text </sdk/apps/qml/QtQuick/qtquick-releasenotes#text>`__ type
-to display the cost of each tower item, as specified by the
+We use a `Text </sdk/apps/qml/QtQuick/qtquick-releasenotes/#text>`_ 
+type to display the cost of each tower item, as specified by the
 ``towerData`` variable, depending on ``towerType``:
 
 .. code:: qml
@@ -1067,7 +1066,7 @@ to display the cost of each tower item, as specified by the
 
 To display a pointer on the screen at the position where the tower
 object will be added, we use the
-`Image </sdk/apps/qml/QtQuick/imageelements#image>`__ type. We use the
+`Image </sdk/apps/qml/QtQuick/imageelements/#image>`_  type. We use the
 ``visible`` property to determine whether the dialog-pointer.png image
 should be positioned below or above the menu. When the value of the
 ``col`` property equals the ``index`` and the value or the ``row``
@@ -1111,16 +1110,16 @@ We use the ``anchors.bottom`` and ``anchors.bottomMargin`` properties to
 position the info bar at 6 points from the top of the game canvas. We
 bind the ``width`` property of the info bar to that of its parent.
 
-In InfoBar.qml, we use an `Item </sdk/apps/qml/QtQuick/Item/>`__ type to
-create the info bar. Within it, we use a
-`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#row>`__ layout
+In InfoBar.qml, we use an :ref:`Item <sdk_qtquick_item>` type to create the
+info bar. Within it, we use a
+`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#row>`_  layout
 type to display the number of lives the players have left, the number of
 fish that have been saved, and the amount of coins that are available
 for use.
 
 We use the ``anchors`` property to position the rows in relationship to
 their parent and to each other. In the first
-`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#row>`__ object,
+`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#row>`_  object,
 we use the ``anchors.left`` and ``anchors.leftMargin`` properties to
 position the heart icons at 10 points from the left border of the parent
 item:
@@ -1141,16 +1140,16 @@ item:
             }
         }
 
-We use a `Repeater </sdk/apps/qml/QtQuick/Repeater/>`__ type with a
-``model`` and a ``delegate`` to display as many hearts as the players
-have lives left. We use the ``spacing`` property to leave 5 pixels
-between the displayed icons.
+We use a :ref:`Repeater <sdk_qtquick_repeater>` type with a ``model`` and a
+``delegate`` to display as many hearts as the players have lives left.
+We use the ``spacing`` property to leave 5 pixels between the displayed
+icons.
 
 In the second
-`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#row>`__ object,
+`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#row>`_  object,
 we use the ``anchors.right`` and ``anchors.rightMargin`` properties to
 position the number of fish saved at 20 points left of the third
-`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#row>`__ object
+`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#row>`_  object
 that displays the number of coins available (and has the id ``points``):
 
 .. code:: qml
@@ -1182,7 +1181,7 @@ that displays the number of coins available (and has the id ``points``):
 
 In these objects, we set spacing to 5 pixels to separate the icons from
 the numbers that we display by using a
-`Text </sdk/apps/qml/QtQuick/qtquick-releasenotes#text>`__ type.
+`Text </sdk/apps/qml/QtQuick/qtquick-releasenotes/#text>`_  type.
 
 In GameCanvas.qml, we define custom properties to hold the game
 statistics:
@@ -1221,9 +1220,9 @@ players set a fish free:
 .. rubric:: Managing Game States
    :name: managing-game-states
 
-In maroon.qml, we use a `State </sdk/apps/qml/QtQuick/State/>`__ type
-and JavaScript to switch between screens according to the game state.
-The logic.js file contains definitions for the functions. To use the
+In maroon.qml, we use a :ref:`State <sdk_qtquick_state>` type and
+JavaScript to switch between screens according to the game state. The
+logic.js file contains definitions for the functions. To use the
 functions in a QML file, we import logic.js as the ``Logic`` namespace
 in that file:
 
@@ -1296,10 +1295,9 @@ The game continues until ``gameState.gameOver`` is set to ``true`` and
 ``endGame()`` function when the value of the ``gameState.lives``
 property becomes less than or equal to ``0``.
 
-In GameOverScreen.qml, we use a
-`MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ type and an
-``onClicked`` signal handler within an
-`Image </sdk/apps/qml/QtQuick/imageelements#image>`__ type to return to
+In GameOverScreen.qml, we use a :ref:`MouseArea <sdk_qtquick_mousearea>`
+type and an ``onClicked`` signal handler within an
+`Image </sdk/apps/qml/QtQuick/imageelements/#image>`_  type to return to
 the game canvas when the players tap the New Game button:
 
 .. code:: qml

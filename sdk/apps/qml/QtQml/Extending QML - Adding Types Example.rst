@@ -1,3 +1,7 @@
+.. _sdk_qtqml_extending_qml_-_adding_types_example:
+QtQml Extending QML - Adding Types Example
+==========================================
+
 
 
 The Adding Types Example shows how to add a new object type, ``Person``,

@@ -1,3 +1,7 @@
+.. _sdk_qtquick_qml_advanced_tutorial_3_-_implementing_the_game_logic:
+QtQuick QML Advanced Tutorial 3 - Implementing the Game Logic
+=============================================================
+
 
 
 .. rubric:: Making a playable game
@@ -45,16 +49,15 @@ also accepts mouse input from the user. Here is the item code:
             }
 
 The ``gameCanvas`` item is the exact size of the board, and has a
-``score`` property and a
-`MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ to handle mouse clicks.
-The blocks are now created as its children, and its dimensions are used
-to determine the board size so that the application scales to the
-available screen size. Since its size is bound to a multiple of
-``blockSize``, ``blockSize`` was moved out of ``samegame.js`` and into
-``samegame.qml`` as a QML property. Note that it can still be accessed
-from the script.
+:ref:``score`` property and a `MouseArea <sdk_qtquick_mousearea>` to handle
+mouse clicks. The blocks are now created as its children, and its
+dimensions are used to determine the board size so that the application
+scales to the available screen size. Since its size is bound to a
+multiple of ``blockSize``, ``blockSize`` was moved out of
+``samegame.js`` and into ``samegame.qml`` as a QML property. Note that
+it can still be accessed from the script.
 
-When clicked, the `MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ calls
+When clicked, the :ref:`MouseArea <sdk_qtquick_mousearea>` calls
 ``handleClick()`` in ``samegame.js``, which determines whether the
 player's click should cause any blocks to be removed, and updates
 ``gameCanvas.score`` with the current score if necessary. Here is the
@@ -149,9 +152,9 @@ And this is how it is used in the main ``samegame.qml`` file:
             z: 100
         }
 
-We give the dialog a `z </sdk/apps/qml/QtQuick/Item#z-prop>`__ value of
-100 to ensure it is displayed on top of our other components. The
-default ``z`` value for an item is 0.
+We give the dialog a :ref:`z <sdk_qtquick_item#z-prop>` value of 100 to
+ensure it is displayed on top of our other components. The default ``z``
+value for an item is 0.
 
 .. rubric:: A dash of color
    :name: a-dash-of-color
@@ -263,9 +266,9 @@ Files:
 -  tutorials/samegame/samegame3/samegame3.qmlproject
 
 `QML Advanced Tutorial 2 - Populating the Game
-Canvas </sdk/apps/qml/QtQuick/tutorials-samegame-samegame2/>`__ `QML
+Canvas </sdk/apps/qml/QtQuick/tutorials-samegame-samegame2/>`_  `QML
 Advanced Tutorial 4 - Finishing
-Touches </sdk/apps/qml/QtQuick/tutorials-samegame-samegame4/>`__
+Touches </sdk/apps/qml/QtQuick/tutorials-samegame-samegame4/>`_ 
 
 .. |image0| image:: /media/sdk/apps/qml/qtquick-tutorials-samegame-samegame3-example/images/declarative-adv-tutorial3.png
 

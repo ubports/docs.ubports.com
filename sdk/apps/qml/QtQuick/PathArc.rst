@@ -1,3 +1,7 @@
+.. _sdk_qtquick_patharc:
+QtQuick PathArc
+===============
+
 Defines an arc with the given radius
 
 +---------------------+----------------------+
@@ -7,27 +11,22 @@ Defines an arc with the given radius
 Properties
 ----------
 
--  ****`direction </sdk/apps/qml/QtQuick/PathArc#direction-prop>`__****
-   : enumeration
--  ****`radiusX </sdk/apps/qml/QtQuick/PathArc#radiusX-prop>`__**** :
-   real
--  ****`radiusY </sdk/apps/qml/QtQuick/PathArc#radiusY-prop>`__**** :
-   real
--  ****`relativeX </sdk/apps/qml/QtQuick/PathArc#relativeX-prop>`__****
-   : real
--  ****`relativeY </sdk/apps/qml/QtQuick/PathArc#relativeY-prop>`__****
-   : real
--  ****`useLargeArc </sdk/apps/qml/QtQuick/PathArc#useLargeArc-prop>`__****
-   : bool
--  ****`x </sdk/apps/qml/QtQuick/PathArc#x-prop>`__**** : real
--  ****`y </sdk/apps/qml/QtQuick/PathArc#y-prop>`__**** : real
+-  :ref:`direction <sdk_qtquick_patharc_direction-prop>` :
+   enumeration
+-  :ref:`radiusX <sdk_qtquick_patharc_radiusX-prop>` : real
+-  :ref:`radiusY <sdk_qtquick_patharc_radiusY-prop>` : real
+-  :ref:`relativeX <sdk_qtquick_patharc_relativeX-prop>` : real
+-  :ref:`relativeY <sdk_qtquick_patharc_relativeY-prop>` : real
+-  :ref:`useLargeArc <sdk_qtquick_patharc_useLargeArc-prop>` : bool
+-  :ref:`x <sdk_qtquick_patharc_x-prop>` : real
+-  :ref:`y <sdk_qtquick_patharc_y-prop>` : real
 
 Detailed Description
 --------------------
 
-`PathArc </sdk/apps/qml/QtQuick/PathArc/>`__ provides a simple way of
-specifying an arc that ends at a given position and uses the specified
-radius. It is modeled after the SVG elliptical arc command.
+:ref:`PathArc <sdk_qtquick_patharc>` provides a simple way of specifying an
+arc that ends at a given position and uses the specified radius. It is
+modeled after the SVG elliptical arc command.
 
 The following QML produces the path shown below:
 
@@ -45,31 +44,35 @@ The following QML produces the path shown below:
 |                                      |     }                                |
 +--------------------------------------+--------------------------------------+
 
-Note that a single `PathArc </sdk/apps/qml/QtQuick/PathArc/>`__ cannot
-be used to specify a circle. Instead, you can use two
-`PathArc </sdk/apps/qml/QtQuick/PathArc/>`__ elements, each specifying
-half of the circle.
+Note that a single :ref:`PathArc <sdk_qtquick_patharc>` cannot be used to
+specify a circle. Instead, you can use two
+:ref:`PathArc <sdk_qtquick_patharc>` elements, each specifying half of the
+circle.
 
-**See also** `Path </sdk/apps/qml/QtQuick/Path/>`__,
-`PathLine </sdk/apps/qml/QtQuick/PathLine/>`__,
-`PathQuad </sdk/apps/qml/QtQuick/PathQuad/>`__,
-`PathCubic </sdk/apps/qml/QtQuick/PathCubic/>`__,
-`PathCurve </sdk/apps/qml/QtQuick/PathCurve/>`__, and
-`PathSvg </sdk/apps/qml/QtQuick/PathSvg/>`__.
+**See also** :ref:`Path <sdk_qtquick_path>`,
+:ref:`PathLine <sdk_qtquick_pathline>`,
+:ref:`PathQuad <sdk_qtquick_pathquad>`,
+:ref:`PathCubic <sdk_qtquick_pathcubic>`,
+:ref:`PathCurve <sdk_qtquick_pathcurve>`, and
+:ref:`PathSvg <sdk_qtquick_pathsvg>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_patharc_direction-prop:
 
 +--------------------------------------------------------------------------+
 |        \ direction : enumeration                                         |
 +--------------------------------------------------------------------------+
 
 Defines the direction of the arc. Possible values are
-`PathArc </sdk/apps/qml/QtQuick/PathArc/>`__.Clockwise (default) and
-`PathArc </sdk/apps/qml/QtQuick/PathArc/>`__.Counterclockwise.
+:ref:`PathArc <sdk_qtquick_patharc>`.Clockwise (default) and
+:ref:`PathArc <sdk_qtquick_patharc>`.Counterclockwise.
 
 The following QML can produce either of the two illustrated arcs below
 by changing the value of direction.
+
+.. _sdk_qtquick_patharc_image1                              .. code-prop:
 
 +--------------------------------------+--------------------------------------+
 | |image1|                             | .. code:: qml                        |
@@ -83,10 +86,11 @@ by changing the value of direction.
 |                                      |     }                                |
 +--------------------------------------+--------------------------------------+
 
-**See also**
-`useLargeArc </sdk/apps/qml/QtQuick/PathArc#useLargeArc-prop>`__.
+**See also** :ref:`useLargeArc <sdk_qtquick_patharc#useLargeArc-prop>`.
 
 | 
+
+.. _sdk_qtquick_patharc_radiusX-prop:
 
 +--------------------------------------------------------------------------+
 |        \ radiusX : real                                                  |
@@ -96,6 +100,8 @@ Defines the radius of the arc.
 
 The following QML demonstrates how different radius values can be used
 to change the shape of the arc:
+
+.. _sdk_qtquick_patharc_image2                              .. code-prop:
 
 +--------------------------------------+--------------------------------------+
 | |image2|                             | .. code:: qml                        |
@@ -124,6 +130,8 @@ to change the shape of the arc:
 
 | 
 
+.. _sdk_qtquick_patharc_radiusY-prop:
+
 +--------------------------------------------------------------------------+
 |        \ radiusY : real                                                  |
 +--------------------------------------------------------------------------+
@@ -132,6 +140,8 @@ Defines the radius of the arc.
 
 The following QML demonstrates how different radius values can be used
 to change the shape of the arc:
+
+.. _sdk_qtquick_patharc_image3                              .. code-prop:
 
 +--------------------------------------+--------------------------------------+
 | |image3|                             | .. code:: qml                        |
@@ -160,6 +170,8 @@ to change the shape of the arc:
 
 | 
 
+.. _sdk_qtquick_patharc_relativeX-prop:
+
 +--------------------------------------------------------------------------+
 |        \ relativeX : real                                                |
 +--------------------------------------------------------------------------+
@@ -172,10 +184,12 @@ axis, the relative position will be used.
 Relative and absolute positions can be mixed, for example it is valid to
 set a relative x and an absolute y.
 
-**See also** `x </sdk/apps/qml/QtQuick/PathArc#x-prop>`__ and
-`y </sdk/apps/qml/QtQuick/PathArc#y-prop>`__.
+**See also** :ref:`x <sdk_qtquick_patharc#x-prop>` and
+:ref:`y <sdk_qtquick_patharc#y-prop>`.
 
 | 
+
+.. _sdk_qtquick_patharc_relativeY-prop:
 
 +--------------------------------------------------------------------------+
 |        \ relativeY : real                                                |
@@ -189,10 +203,12 @@ axis, the relative position will be used.
 Relative and absolute positions can be mixed, for example it is valid to
 set a relative x and an absolute y.
 
-**See also** `x </sdk/apps/qml/QtQuick/PathArc#x-prop>`__ and
-`y </sdk/apps/qml/QtQuick/PathArc#y-prop>`__.
+**See also** :ref:`x <sdk_qtquick_patharc#x-prop>` and
+:ref:`y <sdk_qtquick_patharc#y-prop>`.
 
 | 
+
+.. _sdk_qtquick_patharc_useLargeArc-prop:
 
 +--------------------------------------------------------------------------+
 |        \ useLargeArc : bool                                              |
@@ -205,6 +221,8 @@ two possible arcs that can fit the data. useLargeArc is used to
 distinguish between these. For example, the following QML can produce
 either of the two illustrated arcs below by changing the value of
 useLargeArc.
+
+.. _sdk_qtquick_patharc_image4                              .. code-prop:
 
 +--------------------------------------+--------------------------------------+
 | |image4|                             | .. code:: qml                        |
@@ -225,17 +243,20 @@ The default value is false.
 
 | 
 
+.. _sdk_qtquick_patharc_x-prop:
+
 +--------------------------------------------------------------------------+
 |        \ x : real                                                        |
 +--------------------------------------------------------------------------+
 
 Defines the end point of the arc.
 
-**See also**
-`relativeX </sdk/apps/qml/QtQuick/PathArc#relativeX-prop>`__ and
-`relativeY </sdk/apps/qml/QtQuick/PathArc#relativeY-prop>`__.
+**See also** :ref:`relativeX <sdk_qtquick_patharc#relativeX-prop>` and
+:ref:`relativeY <sdk_qtquick_patharc#relativeY-prop>`.
 
 | 
+
+.. _sdk_qtquick_patharc_y-prop:
 
 +--------------------------------------------------------------------------+
 |        \ y : real                                                        |
@@ -243,15 +264,14 @@ Defines the end point of the arc.
 
 Defines the end point of the arc.
 
-**See also**
-`relativeX </sdk/apps/qml/QtQuick/PathArc#relativeX-prop>`__ and
-`relativeY </sdk/apps/qml/QtQuick/PathArc#relativeY-prop>`__.
+**See also** :ref:`relativeX <sdk_qtquick_patharc#relativeX-prop>` and
+:ref:`relativeY <sdk_qtquick_patharc#relativeY-prop>`.
 
 | 
 
-.. |image0| image:: /media/sdk/apps/qml/QtQuick/PathArc/images/declarative-patharc.png
-.. |image1| image:: /media/sdk/apps/qml/QtQuick/PathArc/images/declarative-arcdirection.png
-.. |image2| image:: /media/sdk/apps/qml/QtQuick/PathArc/images/declarative-arcradius.png
-.. |image3| image:: /media/sdk/apps/qml/QtQuick/PathArc/images/declarative-arcradius.png
-.. |image4| image:: /media/sdk/apps/qml/QtQuick/PathArc/images/declarative-largearc.png
+.. |image0| image:: /mediasdk_qtquick_patharcimages/declarative-patharc.png
+.. |image1| image:: /mediasdk_qtquick_patharcimages/declarative-arcdirection.png
+.. |image2| image:: /mediasdk_qtquick_patharcimages/declarative-arcradius.png
+.. |image3| image:: /mediasdk_qtquick_patharcimages/declarative-arcradius.png
+.. |image4| image:: /mediasdk_qtquick_patharcimages/declarative-largearc.png
 

@@ -1,3 +1,7 @@
+.. _sdk_qtquick_important_concepts_in_qt_quick_-_graphical_effects:
+QtQuick Important Concepts In Qt Quick - Graphical Effects
+==========================================================
+
 
 
 .. rubric:: Graphical Effects and Particles
@@ -20,7 +24,7 @@ occurring in an application.
 
 For information about visual transformations to visual objects, see the
 page titled `Qt Quick Transformation
-Types </sdk/apps/qml/QtQuick/qtquick-effects-transformations/>`__.
+Types </sdk/apps/qml/QtQuick/qtquick-effects-transformations/>`_ .
 
 .. rubric:: Shader Effects
    :name: shader-effects
@@ -33,8 +37,7 @@ complex and visually appealing effects to be applied to a visual object
 (for example, ripples in water).
 
 For information about shader effects, see the
-`ShaderEffect </sdk/apps/qml/QtQuick/ShaderEffect/>`__ reference
-documentation.
+:ref:`ShaderEffect <sdk_qtquick_shadereffect>` reference documentation.
 
 .. rubric:: Particles
    :name: particles
@@ -49,7 +52,7 @@ notifiers, and in games.
 
 For information about particles, see the documentation about the `Qt
 Quick Particle
-System </sdk/apps/qml/QtQuick/qtquick-effects-particles/>`__.
+System </sdk/apps/qml/QtQuick/qtquick-effects-particles/>`_ .
 
 .. rubric:: Sprites
    :name: sprites
@@ -60,7 +63,7 @@ well as a complex, stochastic, frame-transition controller for more
 complex applications which use sprites extensively (such as games).
 
 For information about sprite animations, see the page titled `Sprite
-Animations </sdk/apps/qml/QtQuick/qtquick-effects-sprites/>`__.
+Animations </sdk/apps/qml/QtQuick/qtquick-effects-sprites/>`_ .
 
 .. rubric:: Opacity
    :name: opacity
@@ -70,6 +73,6 @@ can make one visual object opaque and other visual objects translucent
 to focus the users attention on the opaque one. This is controlled using
 the ``opacity`` property of the Item.
 
-For more information about opacity, see the
-`Item </sdk/apps/qml/QtQuick/Item/>`__ documentation.
+For more information about opacity, see the :ref:`Item <sdk_qtquick_item>`
+documentation.
 

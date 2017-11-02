@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_orientationreading:
+QtSensors OrientationReading
+============================
+
 The OrientationReading element holds the most recent OrientationSensor
 reading.
 
@@ -6,23 +10,22 @@ reading.
 +--------------------------------------+--------------------------------------+
 | Since:                               | QtSensors 5.0                        |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `SensorReading </sdk/apps/qml/QtSens |
-|                                      | ors/SensorReading/>`__               |
+| Inherits:                            | :ref:`SensorReading <sdk_qtsensors_sensor |
+|                                      | reading>`_                           |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`orientation </sdk/apps/qml/QtSensors/OrientationReading#orientation-prop>`__****
+-  :ref:`orientation <sdk_qtsensors_orientationreading_orientation-prop>`
    : Orientation
 
 Detailed Description
 --------------------
 
-The `OrientationReading </sdk/apps/qml/QtSensors/OrientationReading/>`__
-element holds the most recent
-`OrientationSensor </sdk/apps/qml/QtSensors/OrientationSensor/>`__
-reading.
+The :ref:`OrientationReading <sdk_qtsensors_orientationreading>` element
+holds the most recent
+:ref:`OrientationSensor <sdk_qtsensors_orientationsensor>` reading.
 
 This element wraps the QOrientationReading class. Please see the
 documentation for QOrientationReading for details.
@@ -31,6 +34,8 @@ This element cannot be directly created.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtsensors_orientationreading_orientation-prop:
 
 +--------------------------------------------------------------------------+
 |        \ orientation : Orientation                                       |
@@ -42,8 +47,7 @@ Please see QOrientationReading::orientation for information about this
 property.
 
 Note that Orientation constants are exposed through the
-`OrientationReading </sdk/apps/qml/QtSensors/OrientationReading/>`__
-class.
+:ref:`OrientationReading <sdk_qtsensors_orientationreading>` class.
 
 .. code:: cpp
 

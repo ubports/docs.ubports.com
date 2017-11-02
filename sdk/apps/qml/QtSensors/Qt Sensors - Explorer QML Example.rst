@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_qt_sensors_-_explorer_qml_example:
+QtSensors Qt Sensors - Explorer QML Example
+===========================================
+
 
 
 |image0|
@@ -5,11 +9,11 @@
 This example is divided into two parts:
 
 -  A `C++
-   plugin </sdk/apps/qml/QtSensors/sensor_explorer#sensor-explorer-qml-import>`__
+   plugin </sdk/apps/qml/QtSensors/sensor_explorer/#sensor-explorer-qml-import>`_ 
    that provides QML alternatives for ``QSensorExplorer``,
    ``QPropertyInfo`` and ``QSensorItem`` C++ classes.
 -  A `QML
-   Application </sdk/apps/qml/QtSensors/sensor_explorer#sensor-explorer-qml-application>`__
+   Application </sdk/apps/qml/QtSensors/sensor_explorer/#sensor-explorer-qml-application>`_ 
    that uses the QML types to read the sensor meta-data and present it.
 
 This example is built as an executable with C++ code that runs the QML,

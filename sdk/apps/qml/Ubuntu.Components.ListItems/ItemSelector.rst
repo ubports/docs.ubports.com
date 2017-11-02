@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_listitems_itemselector:
+Ubuntu.Components.ListItems ItemSelector
+========================================
+
 ListItem displaying either a single selected value or expanded multiple
 choice with an optional image and subtext when not expanded, when
 expanding it opens a listing of all the possible values for selection
@@ -9,37 +13,37 @@ is selected the list is expanded automatically.
 |                                      | 1.3                                  |
 +--------------------------------------+--------------------------------------+
 | Inherits:                            | `Empty </sdk/apps/qml/Ubuntu.Compone |
-|                                      | nts/ListItems.Empty/>`__             |
+|                                      | nts/ListItems.Empty/>`_              |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`colourImage </sdk/apps/qml/Ubuntu.Components/ListItems.ItemSelector#colourImage-prop>`__****
+-  `colourImage </sdk/apps/qml/Ubuntu.Components/ListItems.ItemSelector/_colourImage-prop>`_ 
    : bool
--  ****`containerHeight </sdk/apps/qml/Ubuntu.Components/ListItems.ItemSelector#containerHeight-prop>`__****
+-  `containerHeight </sdk/apps/qml/Ubuntu.Components/ListItems.ItemSelector/_containerHeight-prop>`_ 
    : real
--  ****`currentlyExpanded </sdk/apps/qml/Ubuntu.Components/ListItems.ItemSelector#currentlyExpanded-prop>`__****
+-  `currentlyExpanded </sdk/apps/qml/Ubuntu.Components/ListItems.ItemSelector/_currentlyExpanded-prop>`_ 
    : bool
--  ****`delegate </sdk/apps/qml/Ubuntu.Components/ListItems.ItemSelector#delegate-prop>`__****
+-  `delegate </sdk/apps/qml/Ubuntu.Components/ListItems.ItemSelector/_delegate-prop>`_ 
    : Component
--  ****`expanded </sdk/apps/qml/Ubuntu.Components/ListItems.ItemSelector#expanded-prop>`__****
+-  `expanded </sdk/apps/qml/Ubuntu.Components/ListItems.ItemSelector/_expanded-prop>`_ 
    : bool
--  ****`itemHeight </sdk/apps/qml/Ubuntu.Components/ListItems.ItemSelector#itemHeight-prop>`__****
+-  `itemHeight </sdk/apps/qml/Ubuntu.Components/ListItems.ItemSelector/_itemHeight-prop>`_ 
    : real
--  ****`model </sdk/apps/qml/Ubuntu.Components/ListItems.ItemSelector#model-prop>`__****
+-  `model </sdk/apps/qml/Ubuntu.Components/ListItems.ItemSelector/_model-prop>`_ 
    : var
--  ****`multiSelection </sdk/apps/qml/Ubuntu.Components/ListItems.ItemSelector#multiSelection-prop>`__****
+-  `multiSelection </sdk/apps/qml/Ubuntu.Components/ListItems.ItemSelector/_multiSelection-prop>`_ 
    : bool
--  ****`selectedIndex </sdk/apps/qml/Ubuntu.Components/ListItems.ItemSelector#selectedIndex-prop>`__****
+-  `selectedIndex </sdk/apps/qml/Ubuntu.Components/ListItems.ItemSelector/_selectedIndex-prop>`_ 
    : int
 
 Signals
 -------
 
--  ****`delegateClicked </sdk/apps/qml/Ubuntu.Components/ListItems.ItemSelector#delegateClicked-signal>`__****\ (int
+-  `delegateClicked </sdk/apps/qml/Ubuntu.Components/ListItems.ItemSelector/_delegateClicked-signal>`_ \ (int
    *index*)
--  ****`expansionCompleted </sdk/apps/qml/Ubuntu.Components/ListItems.ItemSelector#expansionCompleted-signal>`__****\ ()
+-  `expansionCompleted </sdk/apps/qml/Ubuntu.Components/ListItems.ItemSelector/_expansionCompleted-signal>`_ \ ()
 
 Detailed Description
 --------------------
@@ -125,6 +129,8 @@ Examples:
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_listitems_itemselector_colourImage-prop:
+
 +--------------------------------------------------------------------------+
 |        \ colourImage : bool                                              |
 +--------------------------------------------------------------------------+
@@ -133,6 +139,8 @@ Colours image according to the fieldText colour of the theme, otherwise
 source colour is maintained.
 
 | 
+
+.. _sdk_ubuntu_components_listitems_itemselector_containerHeight-prop:
 
 +--------------------------------------------------------------------------+
 |        \ containerHeight : real                                          |
@@ -143,6 +151,8 @@ selector.
 
 | 
 
+.. _sdk_ubuntu_components_listitems_itemselector_currentlyExpanded-prop:
+
 +--------------------------------------------------------------------------+
 |        \ currentlyExpanded : bool                                        |
 +--------------------------------------------------------------------------+
@@ -151,13 +161,17 @@ Is our list currently expanded?
 
 | 
 
+.. _sdk_ubuntu_components_listitems_itemselector_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ delegate : `Component </sdk/apps/qml/QtQml/Component/>`__       |
+| :ref:` <>`\ delegate : `Component <sdk_qtqml_component>`               |
 +--------------------------------------------------------------------------+
 
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__ delegate.
+:ref:`ListView <sdk_qtquick_listview>` delegate.
 
 | 
+
+.. _sdk_ubuntu_components_listitems_itemselector_expanded-prop:
 
 +--------------------------------------------------------------------------+
 |        \ expanded : bool                                                 |
@@ -167,6 +181,8 @@ Specifies whether the list is always expanded.
 
 | 
 
+.. _sdk_ubuntu_components_listitems_itemselector_[read-only] itemHeight-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [read-only] itemHeight : real                                   |
 +--------------------------------------------------------------------------+
@@ -175,14 +191,18 @@ Height of an individual list item.
 
 | 
 
+.. _sdk_ubuntu_components_listitems_itemselector_model-prop:
+
 +--------------------------------------------------------------------------+
-|        \ model : `var <http://doc.qt.io/qt-5/qml-var.html>`__            |
+|        \ model : `var <http://doc.qt.io/qt-5/qml-var.html>`_             |
 +--------------------------------------------------------------------------+
 
 The list of values that will be shown under the label text. This is a
 model.
 
 | 
+
+.. _sdk_ubuntu_components_listitems_itemselector_multiSelection-prop:
 
 +--------------------------------------------------------------------------+
 |        \ multiSelection : bool                                           |
@@ -191,6 +211,8 @@ model.
 If multiple choice selection is enabled the list is always expanded.
 
 | 
+
+.. _sdk_ubuntu_components_listitems_itemselector_selectedIndex-prop:
 
 +--------------------------------------------------------------------------+
 |        \ selectedIndex : int                                             |
@@ -203,6 +225,8 @@ The index of the currently selected element in our list.
 Signal Documentation
 --------------------
 
+.. _sdk_ubuntu_components_listitems_itemselector_delegateClicked(int *index*)-prop:
+
 +--------------------------------------------------------------------------+
 |        \ delegateClicked(int *index*)                                    |
 +--------------------------------------------------------------------------+
@@ -210,6 +234,8 @@ Signal Documentation
 Called when delegate is clicked.
 
 | 
+
+.. _sdk_ubuntu_components_listitems_itemselector_expansionCompleted()-prop:
 
 +--------------------------------------------------------------------------+
 |        \ expansionCompleted()                                            |

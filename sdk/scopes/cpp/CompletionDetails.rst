@@ -1,6 +1,10 @@
+.. _sdk_completiondetails:
+CompletionDetails
+=================
+
 A container for details about the completion status of a query as well
 as any additional information regarding the operation of the request.
-`More... </sdk/scopes/cpp/unity.scopes.CompletionDetails#details>`__
+`More... </sdk/scopes/cpp/unity.scopes.CompletionDetails/#details>`_ 
 
 ``#include <unity/scopes/CompletionDetails.h>``
 
@@ -9,13 +13,13 @@ as any additional information regarding the operation of the request.
 
 enum  
 
-`CompletionStatus </sdk/scopes/cpp/unity.scopes.CompletionDetails#a38cbf8502d92a411d1c6ac5d1bd6ee1c>`__
+`CompletionStatus </sdk/scopes/cpp/unity.scopes.CompletionDetails/#a38cbf8502d92a411d1c6ac5d1bd6ee1c>`_ 
 { **OK**, **Cancelled**, **Error** }
 
  
 
 | Indicates the completion status for a query.
-  `More... </sdk/scopes/cpp/unity.scopes.CompletionDetails#a38cbf8502d92a411d1c6ac5d1bd6ee1c>`__
+  `More... </sdk/scopes/cpp/unity.scopes.CompletionDetails/#a38cbf8502d92a411d1c6ac5d1bd6ee1c>`_ 
 
  
 
@@ -24,9 +28,9 @@ enum  
 
  
 
-`CompletionDetails </sdk/scopes/cpp/unity.scopes.CompletionDetails#a7d7e63b4ef6a1286bfd9746efd58e926>`__
-(`CompletionStatus </sdk/scopes/cpp/unity.scopes.CompletionDetails#a38cbf8502d92a411d1c6ac5d1bd6ee1c>`__
-`status </sdk/scopes/cpp/unity.scopes.CompletionDetails#ad9fdc4fb9b50a64bf29b0427e48c8c07>`__)
+`CompletionDetails </sdk/scopes/cpp/unity.scopes.CompletionDetails/#a7d7e63b4ef6a1286bfd9746efd58e926>`_ 
+(`CompletionStatus </sdk/scopes/cpp/unity.scopes.CompletionDetails/#a38cbf8502d92a411d1c6ac5d1bd6ee1c>`_ 
+`status </sdk/scopes/cpp/unity.scopes.CompletionDetails/#ad9fdc4fb9b50a64bf29b0427e48c8c07>`_ )
 
  
 
@@ -36,11 +40,11 @@ enum  
 
  
 
-`CompletionDetails </sdk/scopes/cpp/unity.scopes.CompletionDetails#af85a27d3c36fc776f234712dcb4da55c>`__
-(`CompletionStatus </sdk/scopes/cpp/unity.scopes.CompletionDetails#a38cbf8502d92a411d1c6ac5d1bd6ee1c>`__
-`status </sdk/scopes/cpp/unity.scopes.CompletionDetails#ad9fdc4fb9b50a64bf29b0427e48c8c07>`__,
+`CompletionDetails </sdk/scopes/cpp/unity.scopes.CompletionDetails/#af85a27d3c36fc776f234712dcb4da55c>`_ 
+(`CompletionStatus </sdk/scopes/cpp/unity.scopes.CompletionDetails/#a38cbf8502d92a411d1c6ac5d1bd6ee1c>`_ 
+`status </sdk/scopes/cpp/unity.scopes.CompletionDetails/#ad9fdc4fb9b50a64bf29b0427e48c8c07>`_ ,
 std::string const
-&\ `message </sdk/scopes/cpp/unity.scopes.CompletionDetails#a08cb1da4948495694ef4f131e3f53bce>`__)
+&\ `message </sdk/scopes/cpp/unity.scopes.CompletionDetails/#a08cb1da4948495694ef4f131e3f53bce>`_ )
 
  
 
@@ -48,9 +52,9 @@ std::string const
 
  
 
-`CompletionStatus </sdk/scopes/cpp/unity.scopes.CompletionDetails#a38cbf8502d92a411d1c6ac5d1bd6ee1c>`__ 
+`CompletionStatus </sdk/scopes/cpp/unity.scopes.CompletionDetails/#a38cbf8502d92a411d1c6ac5d1bd6ee1c>`_  
 
-`status </sdk/scopes/cpp/unity.scopes.CompletionDetails#ad9fdc4fb9b50a64bf29b0427e48c8c07>`__
+`status </sdk/scopes/cpp/unity.scopes.CompletionDetails/#ad9fdc4fb9b50a64bf29b0427e48c8c07>`_ 
 () const noexcept
 
  
@@ -61,7 +65,7 @@ std::string const
 
 std::string 
 
-`message </sdk/scopes/cpp/unity.scopes.CompletionDetails#a08cb1da4948495694ef4f131e3f53bce>`__
+`message </sdk/scopes/cpp/unity.scopes.CompletionDetails/#a08cb1da4948495694ef4f131e3f53bce>`_ 
 () const
 
  
@@ -72,8 +76,8 @@ std::string 
 
 void 
 
-`add\_info </sdk/scopes/cpp/unity.scopes.CompletionDetails#af296751d26e25283e7287efaaf01878b>`__
-(`OperationInfo </sdk/scopes/cpp/unity.scopes.OperationInfo/>`__ const
+`add\_info </sdk/scopes/cpp/unity.scopes.CompletionDetails/#af296751d26e25283e7287efaaf01878b>`_ 
+(`OperationInfo </sdk/scopes/cpp/unity.scopes.OperationInfo/>`_  const
 &info)
 
  
@@ -83,9 +87,9 @@ void 
  
 
 std::vector<
-`OperationInfo </sdk/scopes/cpp/unity.scopes.OperationInfo/>`__ > 
+`OperationInfo </sdk/scopes/cpp/unity.scopes.OperationInfo/>`_  > 
 
-`info\_list </sdk/scopes/cpp/unity.scopes.CompletionDetails#ad1d378fbd9600558920faafbe08e5f74>`__
+`info\_list </sdk/scopes/cpp/unity.scopes.CompletionDetails/#ad1d378fbd9600558920faafbe08e5f74>`_ 
 () const
 
  
@@ -102,7 +106,7 @@ usual value semantics.
          
 
 **CompletionDetails**
-(`CompletionDetails </sdk/scopes/cpp/unity.scopes.CompletionDetails/>`__
+(`CompletionDetails </sdk/scopes/cpp/unity.scopes.CompletionDetails/>`_ 
 const &other)
 
  
@@ -110,25 +114,25 @@ const &other)
          
 
 **CompletionDetails**
-(`CompletionDetails </sdk/scopes/cpp/unity.scopes.CompletionDetails/>`__
+(`CompletionDetails </sdk/scopes/cpp/unity.scopes.CompletionDetails/>`_ 
 &&)
 
  
 
-`CompletionDetails </sdk/scopes/cpp/unity.scopes.CompletionDetails/>`__
+`CompletionDetails </sdk/scopes/cpp/unity.scopes.CompletionDetails/>`_ 
 & 
 
 **operator=**
-(`CompletionDetails </sdk/scopes/cpp/unity.scopes.CompletionDetails/>`__
+(`CompletionDetails </sdk/scopes/cpp/unity.scopes.CompletionDetails/>`_ 
 const &other)
 
  
 
-`CompletionDetails </sdk/scopes/cpp/unity.scopes.CompletionDetails/>`__
+`CompletionDetails </sdk/scopes/cpp/unity.scopes.CompletionDetails/>`_ 
 & 
 
 **operator=**
-(`CompletionDetails </sdk/scopes/cpp/unity.scopes.CompletionDetails/>`__
+(`CompletionDetails </sdk/scopes/cpp/unity.scopes.CompletionDetails/>`_ 
 &&)
 
  
@@ -142,9 +146,9 @@ as any additional information regarding the operation of the request.
 Member Enumeration Documentation
 --------------------------------
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------+
-| enum `unity::scopes::CompletionDetails::CompletionStatus </sdk/scopes/cpp/unity.scopes.CompletionDetails#a38cbf8502d92a411d1c6ac5d1bd6ee1c>`__   |
-+--------------------------------------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+| enum `unity::scopes::CompletionDetails::CompletionStatus </sdk/scopes/cpp/unity.scopes.CompletionDetails/#a38cbf8502d92a411d1c6ac5d1bd6ee1c>`_    |
++---------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Indicates the completion status for a query.
 
@@ -161,14 +165,14 @@ Constructor & Destructor Documentation
 | nDetails::Co |              | scopes/cpp/u |              |              |              |
 | mpletionDeta |              | nity.scopes. |              |              |              |
 | ils          |              | CompletionDe |              |              |              |
-|              |              | tails#a38cbf |              |              |              |
-|              |              | 8502d92a411d |              |              |              |
-|              |              | 1c6ac5d1bd6e |              |              |              |
-|              |              | e1c>`__      |              |              |              |
+|              |              | tails/#a38cb |              |              |              |
+|              |              | f8502d92a411 |              |              |              |
+|              |              | d1c6ac5d1bd6 |              |              |              |
+|              |              | ee1c>`_      |              |              |              |
 +--------------+--------------+--------------+--------------+--------------+--------------+
 
 Create
-`CompletionDetails </sdk/scopes/cpp/unity.scopes.CompletionDetails/>`__
+`CompletionDetails </sdk/scopes/cpp/unity.scopes.CompletionDetails/>`_ 
 with the given completion status.
 
 Parameters
@@ -180,9 +184,9 @@ Parameters
 | unity::scopes::Com | (                  | `CompletionStatus  | *status*,          |
 | pletionDetails::Co |                    | </sdk/scopes/cpp/u |                    |
 | mpletionDetails    |                    | nity.scopes.Comple |                    |
-|                    |                    | tionDetails#a38cbf |                    |
-|                    |                    | 8502d92a411d1c6ac5 |                    |
-|                    |                    | d1bd6ee1c>`__      |                    |
+|                    |                    | tionDetails/#a38cb |                    |
+|                    |                    | f8502d92a411d1c6ac |                    |
+|                    |                    | 5d1bd6ee1c>`_      |                    |
 +--------------------+--------------------+--------------------+--------------------+
 |                    |                    | std::string const  | *message*          |
 |                    |                    | &                  |                    |
@@ -191,7 +195,7 @@ Parameters
 +--------------------+--------------------+--------------------+--------------------+
 
 Create
-`CompletionDetails </sdk/scopes/cpp/unity.scopes.CompletionDetails/>`__
+`CompletionDetails </sdk/scopes/cpp/unity.scopes.CompletionDetails/>`_ 
 with the given completion status and message.
 
 Parameters
@@ -210,7 +214,7 @@ Member Function Documentation
 | s::Completio |              | pes/cpp/unit |              |              |              |
 | nDetails::ad |              | y.scopes.Ope |              |              |              |
 | d\_info      |              | rationInfo/> |              |              |              |
-|              |              | `__          |              |              |              |
+|              |              | `_           |              |              |              |
 |              |              | const &      |              |              |              |
 +--------------+--------------+--------------+--------------+--------------+--------------+
 
@@ -227,7 +231,7 @@ Parameters
 |  </sdk/scopes/ |                |                |                |                |
 | cpp/unity.scop |                |                |                |                |
 | es.OperationIn |                |                |                |                |
-| fo/>`__        |                |                |                |                |
+| fo/>`_         |                |                |                |                |
 | >              |                |                |                |                |
 | unity::scopes: |                |                |                |                |
 | :CompletionDet |                |                |                |                |
@@ -275,13 +279,13 @@ Returns
 | | pletionDetails |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
-| | #a38cbf8502d92 |                |  |                                      |
+| | /#a38cbf8502d9 |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
-| | a411d1c6ac5d1b |                |  |                                      |
+| | 2a411d1c6ac5d1 |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
-| | d6ee1c>`__     |                |  |                                      |
+| | bd6ee1c>`_     |                |  |                                      |
 |                |                |    |                                      |
 |              |                       |                                      |
 | | unity::scopes: |                |  |                                      |

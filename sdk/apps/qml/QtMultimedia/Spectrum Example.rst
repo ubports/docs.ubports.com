@@ -1,7 +1,11 @@
+.. _sdk_qtmultimedia_spectrum_example:
+QtMultimedia Spectrum Example
+=============================
+
 
 
 *Spectrum* demonstrates how the `Qt
-Multimedia </sdk/apps/qml/QtMultimedia/qtmultimedia-index/>`__ module
+Multimedia </sdk/apps/qml/QtMultimedia/qtmultimedia-index/>`_  module
 can be used to analyze an audio stream while recording it, and also play
 the recorded stream.
 
@@ -27,7 +31,7 @@ audio is being either captured or played back:
 
 Spectrum analysis is performed by calculating the Fast Fourier Transform
 (FFT) of a segment of audio data. An open-source library,
-`FFTReal <http://ldesoras.free.fr/prod.html>`__, against which the
+`FFTReal <http://ldesoras.free.fr/prod.html>`_ , against which the
 application is dynamically linked, is used to compute the transform.
 
 .. rubric:: Running the Example

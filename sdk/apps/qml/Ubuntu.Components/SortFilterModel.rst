@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_sortfiltermodel:
+Ubuntu.Components SortFilterModel
+=================================
+
 SortFilterModel sorts and filters rows from an existing model.
 
 +---------------------+--------------------------------+
@@ -7,32 +11,31 @@ SortFilterModel sorts and filters rows from an existing model.
 Properties
 ----------
 
--  ****`filter.pattern </sdk/apps/qml/Ubuntu.Components/SortFilterModel#filter.pattern-prop>`__****
+-  :ref:`filter.pattern <sdk_ubuntu_components_sortfiltermodel_filter.pattern-prop>`
    : string
--  ****`filter.property </sdk/apps/qml/Ubuntu.Components/SortFilterModel#filter.property-prop>`__****
+-  :ref:`filter.property <sdk_ubuntu_components_sortfiltermodel_filter.property-prop>`
    : string
--  ****`model </sdk/apps/qml/Ubuntu.Components/SortFilterModel#model-prop>`__****
+-  :ref:`model <sdk_ubuntu_components_sortfiltermodel_model-prop>`
    : QAbstractItemModel
--  ****`sort.order </sdk/apps/qml/Ubuntu.Components/SortFilterModel#sort.order-prop>`__****
+-  :ref:`sort.order <sdk_ubuntu_components_sortfiltermodel_sort.order-prop>`
    : string
--  ****`sort.property </sdk/apps/qml/Ubuntu.Components/SortFilterModel#sort.property-prop>`__****
+-  :ref:`sort.property <sdk_ubuntu_components_sortfiltermodel_sort.property-prop>`
    : string
 
 Detailed Description
 --------------------
 
-The
-`SortFilterModel </sdk/apps/qml/Ubuntu.Components/SortFilterModel/>`__
-takes an existing model such as a
-`ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview#listmodel>`__
+The :ref:`SortFilterModel <sdk_ubuntu_components_sortfiltermodel>` takes an
+existing model such as a
+`ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#listmodel>`_ 
 or any
-`QAbstractItemModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-cppmodels#qabstractitemmodel>`__
+`QAbstractItemModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-cppmodels/#qabstractitemmodel>`_ 
 implementation. The original rows and role names show up in the
-`SortFilterModel </sdk/apps/qml/Ubuntu.Components/SortFilterModel/>`__
-with two basic differences. For one if
-`sort.property </sdk/apps/qml/Ubuntu.Components/SortFilterModel#sort.property-prop>`__
+:ref:`SortFilterModel <sdk_ubuntu_components_sortfiltermodel>` with two
+basic differences. For one if
+:ref:`sort.property <sdk_ubuntu_components_sortfiltermodel#sort.property-prop>`
 is set all rows will be sorted. Further more if
-`filter.property </sdk/apps/qml/Ubuntu.Components/SortFilterModel#filter.property-prop>`__
+:ref:`filter.property <sdk_ubuntu_components_sortfiltermodel#filter.property-prop>`
 is set only rows matching the filter will be in the model.
 
 Example usage:
@@ -92,12 +95,14 @@ result:
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_sortfiltermodel_filter.pattern-prop:
+
 +--------------------------------------------------------------------------+
 |        \ filter.pattern : string                                         |
 +--------------------------------------------------------------------------+
 
 The pattern all rows must match, if
-`filter.property </sdk/apps/qml/Ubuntu.Components/SortFilterModel#filter.property-prop>`__
+:ref:`filter.property <sdk_ubuntu_components_sortfiltermodel#filter.property-prop>`
 is set.
 
 Some examples:
@@ -112,15 +117,19 @@ expressions.
 
 | 
 
+.. _sdk_ubuntu_components_sortfiltermodel_filter.property-prop:
+
 +--------------------------------------------------------------------------+
 |        \ filter.property : string                                        |
 +--------------------------------------------------------------------------+
 
 If set to a valid role name, only rows matching
-`filter.pattern </sdk/apps/qml/Ubuntu.Components/SortFilterModel#filter.pattern-prop>`__
+:ref:`filter.pattern <sdk_ubuntu_components_sortfiltermodel#filter.pattern-prop>`
 will be in the model.
 
 | 
+
+.. _sdk_ubuntu_components_sortfiltermodel_model-prop:
 
 +--------------------------------------------------------------------------+
 |        \ model : QAbstractItemModel                                      |
@@ -130,22 +139,26 @@ The source model to sort and/ or filter.
 
 | 
 
+.. _sdk_ubuntu_components_sortfiltermodel_sort.order-prop:
+
 +--------------------------------------------------------------------------+
 |        \ sort.order : string                                             |
 +--------------------------------------------------------------------------+
 
 The order, if
-`sort.property </sdk/apps/qml/Ubuntu.Components/SortFilterModel#sort.property-prop>`__
+:ref:`sort.property <sdk_ubuntu_components_sortfiltermodel#sort.property-prop>`
 is set. Qt::AscendingOrder sorts results from A to Z or 0 to 9.
 Qt::DescendingOrder sorts results from Z to A or 9 to 0.
 
 | 
+
+.. _sdk_ubuntu_components_sortfiltermodel_sort.property-prop:
 
 +--------------------------------------------------------------------------+
 |        \ sort.property : string                                          |
 +--------------------------------------------------------------------------+
 
 If set to a valid role name, all rows will be sorted according to
-`sort.order </sdk/apps/qml/Ubuntu.Components/SortFilterModel#sort.order-prop>`__.
+:ref:`sort.order <sdk_ubuntu_components_sortfiltermodel#sort.order-prop>`.
 
 | 

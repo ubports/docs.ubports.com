@@ -1,3 +1,7 @@
+.. _sdk_qtquick_accessible:
+QtQuick Accessible
+==================
+
 Enables accessibility of QML items
 
 +---------------------+----------------------+
@@ -7,52 +11,40 @@ Enables accessibility of QML items
 Properties
 ----------
 
--  ****`checkStateMixed </sdk/apps/qml/QtQuick/Accessible#checkStateMixed-prop>`__****
+-  :ref:`checkStateMixed <sdk_qtquick_accessible_checkStateMixed-prop>`
    : bool
--  ****`checkable </sdk/apps/qml/QtQuick/Accessible#checkable-prop>`__****
+-  :ref:`checkable <sdk_qtquick_accessible_checkable-prop>` : bool
+-  :ref:`checked <sdk_qtquick_accessible_checked-prop>` : bool
+-  :ref:`defaultButton <sdk_qtquick_accessible_defaultButton-prop>`
    : bool
--  ****`checked </sdk/apps/qml/QtQuick/Accessible#checked-prop>`__**** :
-   bool
--  ****`defaultButton </sdk/apps/qml/QtQuick/Accessible#defaultButton-prop>`__****
-   : bool
--  ****`description </sdk/apps/qml/QtQuick/Accessible#description-prop>`__****
-   : string
--  ****`editable </sdk/apps/qml/QtQuick/Accessible#editable-prop>`__****
-   : bool
--  ****`focusable </sdk/apps/qml/QtQuick/Accessible#focusable-prop>`__****
-   : bool
--  ****`focused </sdk/apps/qml/QtQuick/Accessible#focused-prop>`__**** :
-   bool
--  ****`ignored </sdk/apps/qml/QtQuick/Accessible#ignored-prop>`__**** :
-   bool
--  ****`multiLine </sdk/apps/qml/QtQuick/Accessible#multiLine-prop>`__****
-   : bool
--  ****`name </sdk/apps/qml/QtQuick/Accessible#name-prop>`__**** :
+-  :ref:`description <sdk_qtquick_accessible_description-prop>` :
    string
--  ****`passwordEdit </sdk/apps/qml/QtQuick/Accessible#passwordEdit-prop>`__****
-   : bool
--  ****`pressed </sdk/apps/qml/QtQuick/Accessible#pressed-prop>`__**** :
+-  :ref:`editable <sdk_qtquick_accessible_editable-prop>` : bool
+-  :ref:`focusable <sdk_qtquick_accessible_focusable-prop>` : bool
+-  :ref:`focused <sdk_qtquick_accessible_focused-prop>` : bool
+-  :ref:`ignored <sdk_qtquick_accessible_ignored-prop>` : bool
+-  :ref:`multiLine <sdk_qtquick_accessible_multiLine-prop>` : bool
+-  :ref:`name <sdk_qtquick_accessible_name-prop>` : string
+-  :ref:`passwordEdit <sdk_qtquick_accessible_passwordEdit-prop>` :
    bool
--  ****`readOnly </sdk/apps/qml/QtQuick/Accessible#readOnly-prop>`__****
+-  :ref:`pressed <sdk_qtquick_accessible_pressed-prop>` : bool
+-  :ref:`readOnly <sdk_qtquick_accessible_readOnly-prop>` : bool
+-  :ref:`role <sdk_qtquick_accessible_role-prop>` : enumeration
+-  :ref:`searchEdit <sdk_qtquick_accessible_searchEdit-prop>` :
+   bool
+-  :ref:`selectable <sdk_qtquick_accessible_selectable-prop>` :
+   bool
+-  :ref:`selectableText <sdk_qtquick_accessible_selectableText-prop>`
    : bool
--  ****`role </sdk/apps/qml/QtQuick/Accessible#role-prop>`__**** :
-   enumeration
--  ****`searchEdit </sdk/apps/qml/QtQuick/Accessible#searchEdit-prop>`__****
-   : bool
--  ****`selectable </sdk/apps/qml/QtQuick/Accessible#selectable-prop>`__****
-   : bool
--  ****`selectableText </sdk/apps/qml/QtQuick/Accessible#selectableText-prop>`__****
-   : bool
--  ****`selected </sdk/apps/qml/QtQuick/Accessible#selected-prop>`__****
-   : bool
+-  :ref:`selected <sdk_qtquick_accessible_selected-prop>` : bool
 
 Signals
 -------
 
--  ****`decreaseAction </sdk/apps/qml/QtQuick/Accessible#decreaseAction-signal>`__****\ ()
--  ****`increaseAction </sdk/apps/qml/QtQuick/Accessible#increaseAction-signal>`__****\ ()
--  ****`pressAction </sdk/apps/qml/QtQuick/Accessible#pressAction-signal>`__****\ ()
--  ****`toggleAction </sdk/apps/qml/QtQuick/Accessible#toggleAction-signal>`__****\ ()
+-  :ref:`decreaseAction <sdk_qtquick_accessible_decreaseAction-signal>`\ ()
+-  :ref:`increaseAction <sdk_qtquick_accessible_increaseAction-signal>`\ ()
+-  :ref:`pressAction <sdk_qtquick_accessible_pressAction-signal>`\ ()
+-  :ref:`toggleAction <sdk_qtquick_accessible_toggleAction-signal>`\ ()
 
 Detailed Description
 --------------------
@@ -66,9 +58,9 @@ interact with the application in various ways. This enables Qt Quick
 applications to be used with screen-readers for example.
 
 The most important properties are
-`name </sdk/apps/qml/QtQuick/Accessible#name-prop>`__,
-`description </sdk/apps/qml/QtQuick/Accessible#description-prop>`__ and
-`role </sdk/apps/qml/QtQuick/Accessible#role-prop>`__.
+:ref:`name <sdk_qtquick_accessible#name-prop>`,
+:ref:`description <sdk_qtquick_accessible#description-prop>` and
+:ref:`role <sdk_qtquick_accessible#role-prop>`.
 
 Example implementation of a simple button:
 
@@ -88,15 +80,14 @@ Example implementation of a simple button:
         }
     }
 
-The `role </sdk/apps/qml/QtQuick/Accessible#role-prop>`__ is set to
-``Button`` to indicate the type of control. Accessible.name is the most
-important information and bound to the text on the button. The name is a
-short and consise description of the control and should reflect the
-visual label. In this case it is not clear what the button does with the
-name only, so
-`description </sdk/apps/qml/QtQuick/Accessible#description-prop>`__
-contains an explanation. There is also a signal handler
-`Accessible.pressAction </sdk/apps/qml/QtQuick/Accessible#pressAction-signal>`__
+The :ref:`role <sdk_qtquick_accessible#role-prop>` is set to ``Button`` to
+indicate the type of control. Accessible.name is the most important
+information and bound to the text on the button. The name is a short and
+consise description of the control and should reflect the visual label.
+In this case it is not clear what the button does with the name only, so
+:ref:`description <sdk_qtquick_accessible#description-prop>` contains an
+explanation. There is also a signal handler
+:ref:`Accessible.pressAction <sdk_qtquick_accessible#pressAction-signal>`
 which can be invoked by assistive tools to trigger the button. This
 signal handler needs to have the same effect as tapping or clicking the
 button would have.
@@ -106,6 +97,8 @@ button would have.
 Property Documentation
 ----------------------
 
+.. _sdk_qtquick_accessible_checkStateMixed-prop:
+
 +--------------------------------------------------------------------------+
 |        \ checkStateMixed : bool                                          |
 +--------------------------------------------------------------------------+
@@ -114,10 +107,12 @@ This property holds whether this item is in the partially checked state.
 
 By default this property is ``false``.
 
-**See also** `checked </sdk/apps/qml/QtQuick/Accessible#checked-prop>`__
-and `checkable </sdk/apps/qml/QtQuick/Accessible#checkable-prop>`__.
+**See also** :ref:`checked <sdk_qtquick_accessible#checked-prop>` and
+:ref:`checkable <sdk_qtquick_accessible#checkable-prop>`.
 
 | 
+
+.. _sdk_qtquick_accessible_checkable-prop:
 
 +--------------------------------------------------------------------------+
 |        \ checkable : bool                                                |
@@ -128,10 +123,11 @@ some buttons).
 
 By default this property is ``false``.
 
-**See also**
-`checked </sdk/apps/qml/QtQuick/Accessible#checked-prop>`__.
+**See also** :ref:`checked <sdk_qtquick_accessible#checked-prop>`.
 
 | 
+
+.. _sdk_qtquick_accessible_checked-prop:
 
 +--------------------------------------------------------------------------+
 |        \ checked : bool                                                  |
@@ -141,10 +137,11 @@ This property holds whether this item is currently checked.
 
 By default this property is ``false``.
 
-**See also**
-`checkable </sdk/apps/qml/QtQuick/Accessible#checkable-prop>`__.
+**See also** :ref:`checkable <sdk_qtquick_accessible#checkable-prop>`.
 
 | 
+
+.. _sdk_qtquick_accessible_defaultButton-prop:
 
 +--------------------------------------------------------------------------+
 |        \ defaultButton : bool                                            |
@@ -155,6 +152,8 @@ This property holds whether this item is the default button of a dialog.
 By default this property is ``false``.
 
 | 
+
+.. _sdk_qtquick_accessible_description-prop:
 
 +--------------------------------------------------------------------------+
 |        \ description : string                                            |
@@ -167,6 +166,8 @@ describes.
 
 | 
 
+.. _sdk_qtquick_accessible_editable-prop:
+
 +--------------------------------------------------------------------------+
 |        \ editable : bool                                                 |
 +--------------------------------------------------------------------------+
@@ -176,6 +177,8 @@ This property holds whether this item has editable text.
 By default this property is ``false``.
 
 | 
+
+.. _sdk_qtquick_accessible_focusable-prop:
 
 +--------------------------------------------------------------------------+
 |        \ focusable : bool                                                |
@@ -188,10 +191,11 @@ is one of ``CheckBox``, ``RadioButton``, ``Button``, ``MenuItem``,
 ``PageTab``, ``EditableText``, ``SpinBox``, ``ComboBox``, ``Terminal``
 or ``ScrollBar``.
 
-**See also**
-`focused </sdk/apps/qml/QtQuick/Accessible#focused-prop>`__.
+**See also** :ref:`focused <sdk_qtquick_accessible#focused-prop>`.
 
 | 
+
+.. _sdk_qtquick_accessible_focused-prop:
 
 +--------------------------------------------------------------------------+
 |        \ focused : bool                                                  |
@@ -202,10 +206,11 @@ This property holds whether this item currently has the active focus.
 By default, this property is ``false``, but it will return ``true`` for
 items that have QQuickItem::hasActiveFocus() returning ``true``.
 
-**See also**
-`focusable </sdk/apps/qml/QtQuick/Accessible#focusable-prop>`__.
+**See also** :ref:`focusable <sdk_qtquick_accessible#focusable-prop>`.
 
 | 
+
+.. _sdk_qtquick_accessible_ignored-prop:
 
 +--------------------------------------------------------------------------+
 |        \ ignored : bool                                                  |
@@ -244,6 +249,8 @@ This QML property was introduced in Qt 5.4.
 
 | 
 
+.. _sdk_qtquick_accessible_multiLine-prop:
+
 +--------------------------------------------------------------------------+
 |        \ multiLine : bool                                                |
 +--------------------------------------------------------------------------+
@@ -253,6 +260,8 @@ This property holds whether this item has multiple text lines.
 By default this property is ``false``.
 
 | 
+
+.. _sdk_qtquick_accessible_name-prop:
 
 +--------------------------------------------------------------------------+
 |        \ name : string                                                   |
@@ -265,6 +274,8 @@ type of control you want to represent but just the name.
 
 | 
 
+.. _sdk_qtquick_accessible_passwordEdit-prop:
+
 +--------------------------------------------------------------------------+
 |        \ passwordEdit : bool                                             |
 +--------------------------------------------------------------------------+
@@ -274,6 +285,8 @@ This property holds whether this item is a password text edit.
 By default this property is ``false``.
 
 | 
+
+.. _sdk_qtquick_accessible_pressed-prop:
 
 +--------------------------------------------------------------------------+
 |        \ pressed : bool                                                  |
@@ -286,6 +299,8 @@ By default this property is ``false``.
 
 | 
 
+.. _sdk_qtquick_accessible_readOnly-prop:
+
 +--------------------------------------------------------------------------+
 |        \ readOnly : bool                                                 |
 +--------------------------------------------------------------------------+
@@ -297,6 +312,8 @@ read-only. By default this property is ``false``.
 
 | 
 
+.. _sdk_qtquick_accessible_role-prop:
+
 +--------------------------------------------------------------------------+
 |        \ role : enumeration                                              |
 +--------------------------------------------------------------------------+
@@ -307,21 +324,29 @@ would have "Button" as type. The value must be one of QAccessible::Role.
 Some roles have special semantics. In order to implement check boxes for
 example a "checked" property is expected.
 
-+------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Role**                           | **Properties and signals**                                                                                                                                                                                         | **Explanation**                                                                                                                                                                                                                                                                                           |
-+====================================+====================================================================================================================================================================================================================+===========================================================================================================================================================================================================================================================================================================+
-| All interactive elements           | `focusable </sdk/apps/qml/QtQuick/Accessible#focusable-prop>`__ and `focused </sdk/apps/qml/QtQuick/Accessible#focused-prop>`__                                                                                    | All elements that the user can interact with should have focusable set to ``true`` and set focus to ``true`` when they have the focus. This is important even for applications that run on touch-only devices since screen readers often implement a virtual focus that can be moved from item to item.   |
-+------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Button, CheckBox, RadioButton      | `Accessible.pressAction </sdk/apps/qml/QtQuick/Accessible#pressAction-signal>`__                                                                                                                                   | A button should have a signal handler with the name ``onPressAction``. This signal may be emitted by an assistive tool such as a screen-reader. The implementation needs to behave the same as a mouse click or tap on the button.                                                                        |
-+------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| CheckBox, RadioButton              | `checkable </sdk/apps/qml/QtQuick/Accessible#checkable-prop>`__, `checked </sdk/apps/qml/QtQuick/Accessible#checked-prop>`__, `Accessible.toggleAction </sdk/apps/qml/QtQuick/Accessible#toggleAction-signal>`__   | The check state of the check box. Updated on Press, Check and Uncheck actions.                                                                                                                                                                                                                            |
-+------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Slider, SpinBox, Dial, ScrollBar   | ``value``, ``minimumValue``, ``maximumValue``, ``stepSize``                                                                                                                                                        | These properties reflect the state and possible values for the elements.                                                                                                                                                                                                                                  |
-+------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Slider, SpinBox, Dial, ScrollBar   | `Accessible.increaseAction </sdk/apps/qml/QtQuick/Accessible#increaseAction-signal>`__, `Accessible.decreaseAction </sdk/apps/qml/QtQuick/Accessible#decreaseAction-signal>`__                                     | Actions to increase and decrease the value of the element.                                                                                                                                                                                                                                                |
-+------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_qtquick_accessible_**Role**                            **Properties and signals**                                                                                                                                                            **Explanation**-prop:
+
++------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Role**                           | **Properties and signals**                                                                                                                                                           | **Explanation**                                                                                                                                                                                                                                                                                           |
++====================================+======================================================================================================================================================================================+===========================================================================================================================================================================================================================================================================================================+
+.. _sdk_qtquick_accessible_Button, CheckBox, RadioButton-prop:
+| All interactive elements           | :ref:`focusable <sdk_qtquick_accessible#focusable-prop>` and `focused <sdk_qtquick_accessible#focused-prop>`                                                                          | All elements that the user can interact with should have focusable set to ``true`` and set focus to ``true`` when they have the focus. This is important even for applications that run on touch-only devices since screen readers often implement a virtual focus that can be moved from item to item.   |
++------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_qtquick_accessible_CheckBox, RadioButton-prop:
+| Button, CheckBox, RadioButton      | :ref:`Accessible.pressAction <sdk_qtquick_accessible#pressAction-signal>`                                                                                                            | A button should have a signal handler with the name ``onPressAction``. This signal may be emitted by an assistive tool such as a screen-reader. The implementation needs to behave the same as a mouse click or tap on the button.                                                                        |
++------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_qtquick_accessible_Slider, SpinBox, Dial, ScrollBar    ``value``, ``minimumValue``, ``maximumValue``, ``stepSize``                                                                                                                           These properties reflect the state and possible values for the elements.-prop:
+| CheckBox, RadioButton              | :ref:`checkable <sdk_qtquick_accessible#checkable-prop>`, `checked <sdk_qtquick_accessible#checked-prop>`, `Accessible.toggleAction <sdk_qtquick_accessible#toggleAction-signal>`| The check state of the check box. Updated on Press, Check and Uncheck actions.                                                                                                                                                                                                                            |
++------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_qtquick_accessible_Slider, SpinBox, Dial, ScrollBar-prop:
+| Slider, SpinBox, Dial, ScrollBar   | ``value``, ``minimumValue``, ``maximumValue``, ``stepSize``                                                                                                                          | These properties reflect the state and possible values for the elements.                                                                                                                                                                                                                                  |
++------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Slider, SpinBox, Dial, ScrollBar   | :ref:`Accessible.increaseAction <sdk_qtquick_accessible#increaseAction-signal>`, `Accessible.decreaseAction <sdk_qtquick_accessible#decreaseAction-signal>`                        | Actions to increase and decrease the value of the element.                                                                                                                                                                                                                                                |
++------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 | 
+
+.. _sdk_qtquick_accessible_searchEdit-prop:
 
 +--------------------------------------------------------------------------+
 |        \ searchEdit : bool                                               |
@@ -334,6 +359,8 @@ By default this property is ``false``.
 
 | 
 
+.. _sdk_qtquick_accessible_selectable-prop:
+
 +--------------------------------------------------------------------------+
 |        \ selectable : bool                                               |
 +--------------------------------------------------------------------------+
@@ -342,10 +369,11 @@ This property holds whether this item can be selected.
 
 By default this property is ``false``.
 
-**See also**
-`selected </sdk/apps/qml/QtQuick/Accessible#selected-prop>`__.
+**See also** :ref:`selected <sdk_qtquick_accessible#selected-prop>`.
 
 | 
+
+.. _sdk_qtquick_accessible_selectableText-prop:
 
 +--------------------------------------------------------------------------+
 |        \ selectableText : bool                                           |
@@ -357,6 +385,8 @@ By default this property is ``false``.
 
 | 
 
+.. _sdk_qtquick_accessible_selected-prop:
+
 +--------------------------------------------------------------------------+
 |        \ selected : bool                                                 |
 +--------------------------------------------------------------------------+
@@ -365,13 +395,14 @@ This property holds whether this item is selected.
 
 By default this property is ``false``.
 
-**See also**
-`selectable </sdk/apps/qml/QtQuick/Accessible#selectable-prop>`__.
+**See also** :ref:`selectable <sdk_qtquick_accessible#selectable-prop>`.
 
 | 
 
 Signal Documentation
 --------------------
+
+.. _sdk_qtquick_accessible_decreaseAction()-prop:
 
 +--------------------------------------------------------------------------+
 |        \ decreaseAction()                                                |
@@ -384,6 +415,8 @@ The corresponding handler is ``onDecreaseAction``.
 
 | 
 
+.. _sdk_qtquick_accessible_increaseAction()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ increaseAction()                                                |
 +--------------------------------------------------------------------------+
@@ -394,6 +427,8 @@ assistive tool such as a screen-reader.
 The corresponding handler is ``onIncreaseAction``.
 
 | 
+
+.. _sdk_qtquick_accessible_pressAction()-prop:
 
 +--------------------------------------------------------------------------+
 |        \ pressAction()                                                   |

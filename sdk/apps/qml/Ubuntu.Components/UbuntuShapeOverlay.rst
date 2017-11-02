@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_ubuntushapeoverlay:
+Ubuntu.Components UbuntuShapeOverlay
+====================================
+
 Extended UbuntuShape adding a colored overlay layer.
 
 +---------------------+--------------------------------+
@@ -7,18 +11,17 @@ Extended UbuntuShape adding a colored overlay layer.
 Properties
 ----------
 
--  ****`overlayColor </sdk/apps/qml/Ubuntu.Components/UbuntuShapeOverlay#overlayColor-prop>`__****
+-  :ref:`overlayColor <sdk_ubuntu_components_ubuntushapeoverlay_overlayColor-prop>`
    : color
--  ****`overlayRect </sdk/apps/qml/Ubuntu.Components/UbuntuShapeOverlay#overlayRect-prop>`__****
+-  :ref:`overlayRect <sdk_ubuntu_components_ubuntushapeoverlay_overlayRect-prop>`
    : rect
 
 Detailed Description
 --------------------
 
-The
-`UbuntuShapeOverlay </sdk/apps/qml/Ubuntu.Components/UbuntuShapeOverlay/>`__
-is a rounded rectangle (based on a
-`squircle <https://en.wikipedia.org/wiki/Squircle>`__) containing a set
+The :ref:`UbuntuShapeOverlay <sdk_ubuntu_components_ubuntushapeoverlay>` is
+a rounded rectangle (based on a
+`squircle <https://en.wikipedia.org/wiki/Squircle>`_ ) containing a set
 of layers composed, from top to bottom, of a colored rectangle overlay,
 an optional source image and a background color (solid or linear
 gradient). Different properties allow to change the look of the shape.
@@ -37,20 +40,24 @@ Example:
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_ubuntushapeoverlay_overlayColor-prop:
+
 +--------------------------------------------------------------------------+
 |        \ overlayColor : color                                            |
 +--------------------------------------------------------------------------+
 
 This property sets the color of the overlay rectangle defined by
-`overlayRect </sdk/apps/qml/Ubuntu.Components/UbuntuShapeOverlay#overlayRect-prop>`__.
+:ref:`overlayRect <sdk_ubuntu_components_ubuntushapeoverlay#overlayRect-prop>`.
 The default value is transparent black.
 
 This QML property was introduced in Ubuntu.Components 1.2.
 
 | 
 
+.. _sdk_ubuntu_components_ubuntushapeoverlay_overlayRect-prop:
+
 +--------------------------------------------------------------------------+
-|        \ overlayRect : `rect <http://doc.qt.io/qt-5/qml-rect.html>`__    |
+|        \ overlayRect : `rect <http://doc.qt.io/qt-5/qml-rect.html>`_     |
 +--------------------------------------------------------------------------+
 
 This property sets the overlay rectangle. The default value is the empty

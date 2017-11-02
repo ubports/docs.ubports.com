@@ -1,3 +1,7 @@
+.. _sdk_qtmultimedia_camera_overview:
+QtMultimedia Camera Overview
+============================
+
 
 
 The Qt Multimedia API provides a number of camera related classes, so
@@ -10,7 +14,7 @@ webcameras. There are both C++ and QML APIs for common tasks.
 In order to use the camera classes a quick overview of the way a camera
 works is needed. If you're already familiar with this, you can skip
 ahead to `Camera implementation
-details </sdk/apps/qml/QtMultimedia/cameraoverview#camera-tldr>`__.
+details </sdk/apps/qml/QtMultimedia/cameraoverview/#camera-tldr>`_ .
 
 .. rubric:: The Lens Assembly
    :name: the-lens-assembly
@@ -95,7 +99,7 @@ example below:
     }
 
 In QML, use the
-`QtMultimedia.availableCameras </sdk/apps/qml/QtMultimedia/QtMultimedia#availableCameras-prop>`__
+:ref:`QtMultimedia.availableCameras <sdk_qtmultimedia_qtmultimedia#availableCameras-prop>`
 property:
 
 .. code:: qml
@@ -122,9 +126,9 @@ In C++:
     }
 
 In QML, you can set the ``Camera``
-`deviceId </sdk/apps/qml/QtMultimedia/Camera#deviceId-prop>`__ property.
-All available IDs can be retrieved from
-`QtMultimedia.availableCameras </sdk/apps/qml/QtMultimedia/QtMultimedia#availableCameras-prop>`__:
+:ref:`deviceId <sdk_qtmultimedia_camera#deviceId-prop>` property. All
+available IDs can be retrieved from
+:ref:`QtMultimedia.availableCameras <sdk_qtmultimedia_qtmultimedia#availableCameras-prop>`:
 
 .. code:: qml
 
@@ -168,9 +172,9 @@ switch to a slower but higher resolution mode for capturing the image.
 
 Depending on whether you're using QML or C++, you can do this in
 multiple ways. In QML, you can use
-`Camera </sdk/apps/qml/QtMultimedia/qml-multimedia#camera>`__ and
-`VideoOutput </sdk/apps/qml/QtMultimedia/VideoOutput/>`__ together to
-show a simple viewfinder:
+`Camera </sdk/apps/qml/QtMultimedia/qml-multimedia/#camera>`_  and
+:ref:`VideoOutput <sdk_qtmultimedia_videooutput>` together to show a simple
+viewfinder:
 
 .. code:: qml
 
@@ -343,8 +347,8 @@ this point so that the image exposure is best at that point.
 Finally, you can control the flash hardware (if present) using this
 class. In some cases the hardware may also double as a torch (typically
 when the flash is LED based, rather than a xenon or other bulb). See
-also `Torch </sdk/apps/qml/QtMultimedia/Torch/>`__ for an easy to use
-API for torch functionality.
+also :ref:`Torch <sdk_qtmultimedia_torch>` for an easy to use API for torch
+functionality.
 
        \        
 .. rubric:: Image Processing
@@ -416,26 +420,25 @@ There are both C++ and QML examples available.
    :name: qml-types
 
 +--------------------------------------+--------------------------------------+
-| `Camera </sdk/apps/qml/QtMultimedia/ | Access viewfinder frames, and take   |
-| Camera/>`__                          | photos and movies                    |
+| :ref:`Camera <sdk_qtmultimedia_camera>` | Access viewfinder frames, and take   |
+|                                      | photos and movies                    |
 +--------------------------------------+--------------------------------------+
-| `CameraCapture </sdk/apps/qml/QtMult | An interface for capturing camera    |
-| imedia/CameraCapture/>`__            | images                               |
+| :ref:`CameraCapture <sdk_qtmultimedia_cam | An interface for capturing camera    |
+| eracapture>`_                        | images                               |
 +--------------------------------------+--------------------------------------+
-| `CameraExposure </sdk/apps/qml/QtMul | An interface for exposure related    |
-| timedia/CameraExposure/>`__          | camera settings                      |
+| :ref:`CameraExposure <sdk_qtmultimedia_ca | An interface for exposure related    |
+| meraexposure>`_                      | camera settings                      |
 +--------------------------------------+--------------------------------------+
-| `CameraFlash </sdk/apps/qml/QtMultim | An interface for flash related       |
-| edia/CameraFlash/>`__                | camera settings                      |
+| :ref:`CameraFlash <sdk_qtmultimedia_camer | An interface for flash related       |
+| aflash>`_                            | camera settings                      |
 +--------------------------------------+--------------------------------------+
-| `CameraFocus </sdk/apps/qml/QtMultim | An interface for focus related       |
-| edia/CameraFocus/>`__                | camera settings                      |
+| :ref:`CameraFocus <sdk_qtmultimedia_camer | An interface for focus related       |
+| afocus>`_                            | camera settings                      |
 +--------------------------------------+--------------------------------------+
-| `CameraImageProcessing </sdk/apps/qm | An interface for camera capture      |
-| l/QtMultimedia/CameraImageProcessing | related settings                     |
-| />`__                                |                                      |
+| :ref:`CameraImageProcessing <sdk_qtmultim | An interface for camera capture      |
+| edia_cameraimageprocessing>`_        | related settings                     |
 +--------------------------------------+--------------------------------------+
-| `CameraRecorder </sdk/apps/qml/QtMul | Controls video recording with the    |
-| timedia/CameraRecorder/>`__          | Camera                               |
+| :ref:`CameraRecorder <sdk_qtmultimedia_ca | Controls video recording with the    |
+| merarecorder>`_                      | Camera                               |
 +--------------------------------------+--------------------------------------+
 

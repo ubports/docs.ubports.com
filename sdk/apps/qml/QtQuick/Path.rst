@@ -1,3 +1,7 @@
+.. _sdk_qtquick_path:
+QtQuick Path
+============
+
 Defines a path for use by PathView
 
 +---------------------+----------------------+
@@ -7,41 +11,43 @@ Defines a path for use by PathView
 Properties
 ----------
 
--  ****`closed </sdk/apps/qml/QtQuick/Path#closed-prop>`__**** : bool
--  ****`pathElements </sdk/apps/qml/QtQuick/Path#pathElements-prop>`__****
-   : list<PathElement>
--  ****`startX </sdk/apps/qml/QtQuick/Path#startX-prop>`__**** : real
--  ****`startY </sdk/apps/qml/QtQuick/Path#startY-prop>`__**** : real
+-  :ref:`closed <sdk_qtquick_path_closed-prop>` : bool
+-  :ref:`pathElements <sdk_qtquick_path_pathElements-prop>` :
+   list<PathElement>
+-  :ref:`startX <sdk_qtquick_path_startX-prop>` : real
+-  :ref:`startY <sdk_qtquick_path_startY-prop>` : real
 
 Detailed Description
 --------------------
 
 A Path is composed of one or more path segments -
-`PathLine </sdk/apps/qml/QtQuick/PathLine/>`__,
-`PathQuad </sdk/apps/qml/QtQuick/PathQuad/>`__,
-`PathCubic </sdk/apps/qml/QtQuick/PathCubic/>`__,
-`PathArc </sdk/apps/qml/QtQuick/PathArc/>`__,
-`PathCurve </sdk/apps/qml/QtQuick/PathCurve/>`__,
-`PathSvg </sdk/apps/qml/QtQuick/PathSvg/>`__.
+:ref:`PathLine <sdk_qtquick_pathline>`,
+:ref:`PathQuad <sdk_qtquick_pathquad>`,
+:ref:`PathCubic <sdk_qtquick_pathcubic>`,
+:ref:`PathArc <sdk_qtquick_patharc>`,
+:ref:`PathCurve <sdk_qtquick_pathcurve>`,
+:ref:`PathSvg <sdk_qtquick_pathsvg>`.
 
 The spacing of the items along the Path can be adjusted via a
-`PathPercent </sdk/apps/qml/QtQuick/PathPercent/>`__ object.
+:ref:`PathPercent <sdk_qtquick_pathpercent>` object.
 
-`PathAttribute </sdk/apps/qml/QtQuick/PathAttribute/>`__ allows named
-attributes with values to be defined along the path.
+:ref:`PathAttribute <sdk_qtquick_pathattribute>` allows named attributes
+with values to be defined along the path.
 
-**See also** `PathView </sdk/apps/qml/QtQuick/PathView/>`__,
-`PathAttribute </sdk/apps/qml/QtQuick/PathAttribute/>`__,
-`PathPercent </sdk/apps/qml/QtQuick/PathPercent/>`__,
-`PathLine </sdk/apps/qml/QtQuick/PathLine/>`__,
-`PathQuad </sdk/apps/qml/QtQuick/PathQuad/>`__,
-`PathCubic </sdk/apps/qml/QtQuick/PathCubic/>`__,
-`PathArc </sdk/apps/qml/QtQuick/PathArc/>`__,
-`PathCurve </sdk/apps/qml/QtQuick/PathCurve/>`__, and
-`PathSvg </sdk/apps/qml/QtQuick/PathSvg/>`__.
+**See also** :ref:`PathView <sdk_qtquick_pathview>`,
+:ref:`PathAttribute <sdk_qtquick_pathattribute>`,
+:ref:`PathPercent <sdk_qtquick_pathpercent>`,
+:ref:`PathLine <sdk_qtquick_pathline>`,
+:ref:`PathQuad <sdk_qtquick_pathquad>`,
+:ref:`PathCubic <sdk_qtquick_pathcubic>`,
+:ref:`PathArc <sdk_qtquick_patharc>`,
+:ref:`PathCurve <sdk_qtquick_pathcurve>`, and
+:ref:`PathSvg <sdk_qtquick_pathsvg>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_path_closed-prop:
 
 +--------------------------------------------------------------------------+
 |        \ closed : bool                                                   |
@@ -51,31 +57,33 @@ This property holds whether the start and end of the path are identical.
 
 | 
 
+.. _sdk_qtquick_path_pathElements-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [default] pathElements :                                        |
-| list<`PathElement </sdk/apps/qml/QtQuick/PathElement/>`__>               |
+| list<:ref:`PathElement <sdk_qtquick_pathelement>`>                          |
 +--------------------------------------------------------------------------+
 
 This property holds the objects composing the path.
 
 A path can contain the following path objects:
 
--  `PathLine </sdk/apps/qml/QtQuick/PathLine/>`__ - a straight line to a
-   given position.
--  `PathQuad </sdk/apps/qml/QtQuick/PathQuad/>`__ - a quadratic Bezier
-   curve to a given position with a control point.
--  `PathCubic </sdk/apps/qml/QtQuick/PathCubic/>`__ - a cubic Bezier
-   curve to a given position with two control points.
--  `PathArc </sdk/apps/qml/QtQuick/PathArc/>`__ - an arc to a given
-   position with a radius.
--  `PathSvg </sdk/apps/qml/QtQuick/PathSvg/>`__ - a path specified as an
-   SVG path data string.
--  `PathCurve </sdk/apps/qml/QtQuick/PathCurve/>`__ - a point on a
-   Catmull-Rom curve.
--  `PathAttribute </sdk/apps/qml/QtQuick/PathAttribute/>`__ - an
-   attribute at a given position in the path.
--  `PathPercent </sdk/apps/qml/QtQuick/PathPercent/>`__ - a way to
-   spread out items along various segments of the path.
+-  :ref:`PathLine <sdk_qtquick_pathline>` - a straight line to a given
+   position.
+-  :ref:`PathQuad <sdk_qtquick_pathquad>` - a quadratic Bezier curve to a
+   given position with a control point.
+-  :ref:`PathCubic <sdk_qtquick_pathcubic>` - a cubic Bezier curve to a
+   given position with two control points.
+-  :ref:`PathArc <sdk_qtquick_patharc>` - an arc to a given position with a
+   radius.
+-  :ref:`PathSvg <sdk_qtquick_pathsvg>` - a path specified as an SVG path
+   data string.
+-  :ref:`PathCurve <sdk_qtquick_pathcurve>` - a point on a Catmull-Rom
+   curve.
+-  :ref:`PathAttribute <sdk_qtquick_pathattribute>` - an attribute at a
+   given position in the path.
+-  :ref:`PathPercent <sdk_qtquick_pathpercent>` - a way to spread out items
+   along various segments of the path.
 
 .. code:: qml
 
@@ -96,6 +104,8 @@ A path can contain the following path objects:
 
 | 
 
+.. _sdk_qtquick_path_startX-prop:
+
 +--------------------------------------------------------------------------+
 |        \ startX : real                                                   |
 +--------------------------------------------------------------------------+
@@ -103,6 +113,8 @@ A path can contain the following path objects:
 These properties hold the starting position of the path.
 
 | 
+
+.. _sdk_qtquick_path_startY-prop:
 
 +--------------------------------------------------------------------------+
 |        \ startY : real                                                   |

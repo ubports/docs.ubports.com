@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_listitemdrag:
+Ubuntu.Components ListItemDrag
+==============================
+
 Provides information about a ListItem drag event.
 
 +---------------------+--------------------------------+
@@ -9,43 +13,43 @@ Provides information about a ListItem drag event.
 Properties
 ----------
 
--  ****`accept </sdk/apps/qml/Ubuntu.Components/ListItemDrag#accept-prop>`__****
-   : bool
--  ****`from </sdk/apps/qml/Ubuntu.Components/ListItemDrag#from-prop>`__****
+-  :ref:`accept <sdk_ubuntu_components_listitemdrag_accept-prop>` :
+   bool
+-  :ref:`from <sdk_ubuntu_components_listitemdrag_from-prop>` : int
+-  :ref:`maximumIndex <sdk_ubuntu_components_listitemdrag_maximumIndex-prop>`
    : int
--  ****`maximumIndex </sdk/apps/qml/Ubuntu.Components/ListItemDrag#maximumIndex-prop>`__****
+-  :ref:`minimumIndex <sdk_ubuntu_components_listitemdrag_minimumIndex-prop>`
    : int
--  ****`minimumIndex </sdk/apps/qml/Ubuntu.Components/ListItemDrag#minimumIndex-prop>`__****
-   : int
--  ****`status </sdk/apps/qml/Ubuntu.Components/ListItemDrag#status-prop>`__****
-   : enum
--  ****`to </sdk/apps/qml/Ubuntu.Components/ListItemDrag#to-prop>`__****
-   : int
+-  :ref:`status <sdk_ubuntu_components_listitemdrag_status-prop>` :
+   enum
+-  :ref:`to <sdk_ubuntu_components_listitemdrag_to-prop>` : int
 
 Detailed Description
 --------------------
 
 The object cannot be instantiated and it is passed as parameter to
-`ViewItems::dragUpdated </sdk/apps/qml/Ubuntu.Components/ViewItems#dragUpdated-signal>`__
+:ref:`ViewItems::dragUpdated <sdk_ubuntu_components_viewitems#dragUpdated-signal>`
 attached signal. Developer can decide whether to accept or restrict the
 dragging event based on the input provided by this event.
 
 The direction of the drag can be found via the
-`status </sdk/apps/qml/Ubuntu.Components/ListItemDrag#status-prop>`__
-property and the source and destination the drag can be applied via
-`from </sdk/apps/qml/Ubuntu.Components/ListItemDrag#from-prop>`__ and
-`to </sdk/apps/qml/Ubuntu.Components/ListItemDrag#to-prop>`__
-properties. The allowed directions can be configured through
-`minimumIndex </sdk/apps/qml/Ubuntu.Components/ListItemDrag#minimumIndex-prop>`__
+:ref:`status <sdk_ubuntu_components_listitemdrag#status-prop>` property and
+the source and destination the drag can be applied via
+:ref:`from <sdk_ubuntu_components_listitemdrag#from-prop>` and
+:ref:`to <sdk_ubuntu_components_listitemdrag#to-prop>` properties. The
+allowed directions can be configured through
+:ref:`minimumIndex <sdk_ubuntu_components_listitemdrag#minimumIndex-prop>`
 and
-`maximumIndex </sdk/apps/qml/Ubuntu.Components/ListItemDrag#maximumIndex-prop>`__
+:ref:`maximumIndex <sdk_ubuntu_components_listitemdrag#maximumIndex-prop>`
 properties, and the event acceptance through
-`accept </sdk/apps/qml/Ubuntu.Components/ListItemDrag#accept-prop>`__
-property. If the event is not accepted, the drag action will be
-considered as cancelled.
+:ref:`accept <sdk_ubuntu_components_listitemdrag#accept-prop>` property. If
+the event is not accepted, the drag action will be considered as
+cancelled.
 
 Property Documentation
 ----------------------
+
+.. _sdk_ubuntu_components_listitemdrag_accept-prop:
 
 +--------------------------------------------------------------------------+
 |        \ accept : bool                                                   |
@@ -54,20 +58,22 @@ Property Documentation
 The property can be used to dismiss the event. By default its value is
 true, meaning the drag event is accepted. The value of false blocks the
 drag event to be handled by the
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__'s dragging
-mechanism.
+:ref:`ListItem <sdk_ubuntu_components_listitem>`'s dragging mechanism.
 
 | 
+
+.. _sdk_ubuntu_components_listitemdrag_[read-only] from-prop:
 
 +--------------------------------------------------------------------------+
 |        \ [read-only] from : int                                          |
 +--------------------------------------------------------------------------+
 
 Specifies the source index the
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ is dragged
-from.
+:ref:`ListItem <sdk_ubuntu_components_listitem>` is dragged from.
 
 | 
+
+.. _sdk_ubuntu_components_listitemdrag_maximumIndex-prop:
 
 +--------------------------------------------------------------------------+
 |        \ maximumIndex : int                                              |
@@ -75,17 +81,21 @@ from.
 
 | 
 
+.. _sdk_ubuntu_components_listitemdrag_minimumIndex-prop:
+
 +--------------------------------------------------------------------------+
 |        \ minimumIndex : int                                              |
 +--------------------------------------------------------------------------+
 
 These properties configure the minimum and maximum indexes the item can
 be dragged. The properties can be set in
-`ViewItems::dragUpdated </sdk/apps/qml/Ubuntu.Components/ViewItems#dragUpdated-signal>`__
+:ref:`ViewItems::dragUpdated <sdk_ubuntu_components_viewitems#dragUpdated-signal>`
 signal. A negative value means no restriction defined on the dragging
 interval side.
 
 | 
+
+.. _sdk_ubuntu_components_listitemdrag_[read-only] status-prop:
 
 +--------------------------------------------------------------------------+
 |        \ [read-only] status : enum                                       |
@@ -97,22 +107,22 @@ value can be one of the following:
 -  **ListItemDrag.Started** - indicates that the dragging is about to
    start, giving opportunities to define restrictions on the dragging
    indexes, like
-   `minimumIndex </sdk/apps/qml/Ubuntu.Components/ListItemDrag#minimumIndex-prop>`__,
-   `maximumIndex </sdk/apps/qml/Ubuntu.Components/ListItemDrag#maximumIndex-prop>`__
+   :ref:`minimumIndex <sdk_ubuntu_components_listitemdrag#minimumIndex-prop>`,
+   :ref:`maximumIndex <sdk_ubuntu_components_listitemdrag#maximumIndex-prop>`
 -  **ListItemDrag.Moving** - the dragged item is moved upwards or
-   downwards in the
-   `ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__
+   downwards in the :ref:`ListItem <sdk_ubuntu_components_listitem>`
 -  **ListItemDrag.Dropped** - indicates that the drag event is finished,
    and the dragged item is about to be dropped to the given position.
 
 | 
 
+.. _sdk_ubuntu_components_listitemdrag_[read-only] to-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [read-only] to : int                                            |
 +--------------------------------------------------------------------------+
 
-Specifies the index the
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ is dragged to
-or dropped.
+Specifies the index the :ref:`ListItem <sdk_ubuntu_components_listitem>` is
+dragged to or dropped.
 
 | 

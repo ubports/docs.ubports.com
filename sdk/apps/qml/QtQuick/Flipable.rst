@@ -1,34 +1,35 @@
+.. _sdk_qtquick_flipable:
+QtQuick Flipable
+================
+
 Provides a surface that can be flipped
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtQuick 2.4                   |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Item </sdk/apps/qml/QtQuick/Item/>` |
-|                                      | __                                   |
+| Inherits:                            | :ref:`Item <sdk_qtquick_item>`       |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`back </sdk/apps/qml/QtQuick/Flipable#back-prop>`__**** : Item
--  ****`front </sdk/apps/qml/QtQuick/Flipable#front-prop>`__**** : Item
--  ****`side </sdk/apps/qml/QtQuick/Flipable#side-prop>`__**** :
-   enumeration
+-  :ref:`back <sdk_qtquick_flipable_back-prop>` : Item
+-  :ref:`front <sdk_qtquick_flipable_front-prop>` : Item
+-  :ref:`side <sdk_qtquick_flipable_side-prop>` : enumeration
 
 Detailed Description
 --------------------
 
 Flipable is an item that can be visibly "flipped" between its front and
 back sides, like a card. It may used together with
-`Rotation </sdk/apps/qml/QtQuick/Rotation/>`__,
-`State </sdk/apps/qml/QtQuick/State/>`__ and
-`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch#transition>`__
+:ref:`Rotation <sdk_qtquick_rotation>`, `State <sdk_qtquick_state>` and
+`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch/#transition>`_ 
 types to produce a flipping effect.
 
-The `front </sdk/apps/qml/QtQuick/Flipable#front-prop>`__ and
-`back </sdk/apps/qml/QtQuick/Flipable#back-prop>`__ properties are used
-to hold the items that are shown respectively on the front and back
-sides of the flipable item.
+The :ref:`front <sdk_qtquick_flipable#front-prop>` and
+:ref:`back <sdk_qtquick_flipable#back-prop>` properties are used to hold
+the items that are shown respectively on the front and back sides of the
+flipable item.
 
 Example Usage
 -------------
@@ -37,12 +38,12 @@ The following example shows a Flipable item that flips whenever it is
 clicked, rotating about the y-axis.
 
 This flipable item has a ``flipped`` boolean property that is toggled
-whenever the `MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ within the
-flipable is clicked. When ``flipped`` is true, the item changes to the
-"back" state; in this state, the ``angle`` of the
-`Rotation </sdk/apps/qml/QtQuick/Rotation/>`__ item is changed to 180
-degrees to produce the flipping effect. When ``flipped`` is false, the
-item reverts to the default state, in which the ``angle`` value is 0.
+whenever the :ref:`MouseArea <sdk_qtquick_mousearea>` within the flipable
+is clicked. When ``flipped`` is true, the item changes to the "back"
+state; in this state, the ``angle`` of the
+:ref:`Rotation <sdk_qtquick_rotation>` item is changed to 180 degrees to
+produce the flipping effect. When ``flipped`` is false, the item reverts
+to the default state, in which the ``angle`` value is 0.
 
 .. code:: qml
 
@@ -78,40 +79,46 @@ item reverts to the default state, in which the ``angle`` value is 0.
 |image0|
 
 The
-`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch#transition>`__
+`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch/#transition>`_ 
 creates the animation that changes the angle over four seconds. When the
 item changes between its "back" and default states, the
-`NumberAnimation </sdk/apps/qml/QtQuick/NumberAnimation/>`__ animates
-the angle between its old and new values.
+:ref:`NumberAnimation <sdk_qtquick_numberanimation>` animates the angle
+between its old and new values.
 
 See `Qt Quick
-States </sdk/apps/qml/QtQuick/qtquick-statesanimations-states/>`__ for
+States </sdk/apps/qml/QtQuick/qtquick-statesanimations-states/>`_  for
 details on state changes and the default state, and `Animation and
 Transitions in Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`__
+Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`_ 
 for more information on how animations work within transitions.
 
 **See also** `UI Components: Flipable
-Example </sdk/apps/qml/QtQuick/customitems-flipable/>`__.
+Example </sdk/apps/qml/QtQuick/customitems-flipable/>`_ .
 
 Property Documentation
 ----------------------
 
+.. _sdk_qtquick_flipable_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ back : `Item </sdk/apps/qml/QtQuick/Item/>`__                   |
+| :ref:` <>`\ back : `Item <sdk_qtquick_item>`                           |
++--------------------------------------------------------------------------+
+
+The front and back sides of the flipable.
+
+| 
+
+.. _sdk_qtquick_flipable_-prop:
+
++--------------------------------------------------------------------------+
+| :ref:` <>`\ front : `Item <sdk_qtquick_item>`                          |
 +--------------------------------------------------------------------------+
 
 The front and back sides of the flipable.
 
 | 
 
-+--------------------------------------------------------------------------+
-|        \ front : `Item </sdk/apps/qml/QtQuick/Item/>`__                  |
-+--------------------------------------------------------------------------+
-
-The front and back sides of the flipable.
-
-| 
+.. _sdk_qtquick_flipable_side-prop:
 
 +--------------------------------------------------------------------------+
 |        \ side : enumeration                                              |
@@ -122,5 +129,5 @@ The side of the Flipable currently visible. Possible values are
 
 | 
 
-.. |image0| image:: /media/sdk/apps/qml/QtQuick/Flipable/images/flipable.gif
+.. |image0| image:: /mediasdk_qtquick_flipableimages/flipable.gif
 

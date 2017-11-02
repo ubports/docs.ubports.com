@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_activityindicator:
+Ubuntu.Components ActivityIndicator
+===================================
+
 The ActivityIndicator component visually indicates that a task of
 unknown duration is in progress, e.g. busy indication, connection in
 progress indication, etc.
@@ -9,14 +13,14 @@ progress indication, etc.
 Properties
 ----------
 
--  ****`running </sdk/apps/qml/Ubuntu.Components/ActivityIndicator#running-prop>`__****
+-  :ref:`running <sdk_ubuntu_components_activityindicator_running-prop>`
    : bool
 
 Detailed Description
 --------------------
 
 Note: for time consuming JavaScript operations use
-`WorkerScript </sdk/apps/qml/QtQuick/qtquick-threading-example#workerscript>`__,
+`WorkerScript </sdk/apps/qml/QtQuick/qtquick-threading-example/#workerscript>`_ ,
 otherwise no UI interaction will be possible and the ActicityIndicator
 animation will freeze.
 
@@ -37,6 +41,8 @@ Example:
 
 Property Documentation
 ----------------------
+
+.. _sdk_ubuntu_components_activityindicator_running-prop:
 
 +--------------------------------------------------------------------------+
 |        \ running : bool                                                  |

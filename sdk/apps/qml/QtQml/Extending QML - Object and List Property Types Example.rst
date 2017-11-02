@@ -1,9 +1,13 @@
+.. _sdk_qtqml_extending_qml_-_object_and_list_property_types_example:
+QtQml Extending QML - Object and List Property Types Example
+============================================================
+
 
 
 This example builds on:
 
 -  `Extending QML - Adding Types
-   Example </sdk/apps/qml/QtQml/referenceexamples-adding/>`__
+   Example </sdk/apps/qml/QtQml/referenceexamples-adding/>`_ 
 
 The Object and List Property Types example shows how to add object and
 list properties in QML. This example adds a BirthdayParty type that

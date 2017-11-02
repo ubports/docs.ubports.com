@@ -1,3 +1,7 @@
+.. _sdk_qtmultimedia_video:
+QtMultimedia Video
+==================
+
 A convenience type for showing a specified video.
 
 +---------------------+---------------------------+
@@ -7,75 +11,62 @@ A convenience type for showing a specified video.
 Properties
 ----------
 
--  ****`audioRole </sdk/apps/qml/QtMultimedia/Video#audioRole-prop>`__****
-   : enumeration
--  ****`autoLoad </sdk/apps/qml/QtMultimedia/Video#autoLoad-prop>`__****
-   : bool
--  ****`autoPlay </sdk/apps/qml/QtMultimedia/Video#autoPlay-prop>`__****
-   : bool
--  ****`availability </sdk/apps/qml/QtMultimedia/Video#availability-prop>`__****
-   : enumeration
--  ****`bufferProgress </sdk/apps/qml/QtMultimedia/Video#bufferProgress-prop>`__****
-   : real
--  ****`duration </sdk/apps/qml/QtMultimedia/Video#duration-prop>`__****
-   : int
--  ****`error </sdk/apps/qml/QtMultimedia/Video#error-prop>`__**** :
+-  :ref:`audioRole <sdk_qtmultimedia_video_audioRole-prop>` :
    enumeration
--  ****`errorString </sdk/apps/qml/QtMultimedia/Video#errorString-prop>`__****
-   : string
--  ****`fillMode </sdk/apps/qml/QtMultimedia/Video#fillMode-prop>`__****
-   : enumeration
--  ****`hasAudio </sdk/apps/qml/QtMultimedia/Video#hasAudio-prop>`__****
-   : bool
--  ****`hasVideo </sdk/apps/qml/QtMultimedia/Video#hasVideo-prop>`__****
-   : bool
--  ****`metaData </sdk/apps/qml/QtMultimedia/Video#metaData-prop>`__****
-   : object
--  ****`muted </sdk/apps/qml/QtMultimedia/Video#muted-prop>`__**** :
-   bool
--  ****`orientation </sdk/apps/qml/QtMultimedia/Video#orientation-prop>`__****
-   : int
--  ****`playbackRate </sdk/apps/qml/QtMultimedia/Video#playbackRate-prop>`__****
-   : real
--  ****`playbackState </sdk/apps/qml/QtMultimedia/Video#playbackState-prop>`__****
-   : enumeration
--  ****`playlist </sdk/apps/qml/QtMultimedia/Video#playlist-prop>`__****
-   : Playlist
--  ****`position </sdk/apps/qml/QtMultimedia/Video#position-prop>`__****
-   : int
--  ****`seekable </sdk/apps/qml/QtMultimedia/Video#seekable-prop>`__****
-   : bool
--  ****`source </sdk/apps/qml/QtMultimedia/Video#source-prop>`__**** :
-   url
--  ****`status </sdk/apps/qml/QtMultimedia/Video#status-prop>`__**** :
+-  :ref:`autoLoad <sdk_qtmultimedia_video_autoLoad-prop>` : bool
+-  :ref:`autoPlay <sdk_qtmultimedia_video_autoPlay-prop>` : bool
+-  :ref:`availability <sdk_qtmultimedia_video_availability-prop>` :
    enumeration
--  ****`volume </sdk/apps/qml/QtMultimedia/Video#volume-prop>`__**** :
+-  :ref:`bufferProgress <sdk_qtmultimedia_video_bufferProgress-prop>`
+   : real
+-  :ref:`duration <sdk_qtmultimedia_video_duration-prop>` : int
+-  :ref:`error <sdk_qtmultimedia_video_error-prop>` : enumeration
+-  :ref:`errorString <sdk_qtmultimedia_video_errorString-prop>` :
+   string
+-  :ref:`fillMode <sdk_qtmultimedia_video_fillMode-prop>` :
+   enumeration
+-  :ref:`hasAudio <sdk_qtmultimedia_video_hasAudio-prop>` : bool
+-  :ref:`hasVideo <sdk_qtmultimedia_video_hasVideo-prop>` : bool
+-  :ref:`metaData <sdk_qtmultimedia_video_metaData-prop>` : object
+-  :ref:`muted <sdk_qtmultimedia_video_muted-prop>` : bool
+-  :ref:`orientation <sdk_qtmultimedia_video_orientation-prop>` :
+   int
+-  :ref:`playbackRate <sdk_qtmultimedia_video_playbackRate-prop>` :
    real
+-  :ref:`playbackState <sdk_qtmultimedia_video_playbackState-prop>`
+   : enumeration
+-  :ref:`playlist <sdk_qtmultimedia_video_playlist-prop>` :
+   Playlist
+-  :ref:`position <sdk_qtmultimedia_video_position-prop>` : int
+-  :ref:`seekable <sdk_qtmultimedia_video_seekable-prop>` : bool
+-  :ref:`source <sdk_qtmultimedia_video_source-prop>` : url
+-  :ref:`status <sdk_qtmultimedia_video_status-prop>` : enumeration
+-  :ref:`volume <sdk_qtmultimedia_video_volume-prop>` : real
 
 Signals
 -------
 
--  ****`paused </sdk/apps/qml/QtMultimedia/Video#paused-signal>`__****\ ()
--  ****`playing </sdk/apps/qml/QtMultimedia/Video#playing-signal>`__****\ ()
--  ****`stopped </sdk/apps/qml/QtMultimedia/Video#stopped-signal>`__****\ ()
+-  :ref:`paused <sdk_qtmultimedia_video_paused-signal>`\ ()
+-  :ref:`playing <sdk_qtmultimedia_video_playing-signal>`\ ()
+-  :ref:`stopped <sdk_qtmultimedia_video_stopped-signal>`\ ()
 
 Methods
 -------
 
--  ****`pause </sdk/apps/qml/QtMultimedia/Video#pause-method>`__****\ ()
--  ****`play </sdk/apps/qml/QtMultimedia/Video#play-method>`__****\ ()
--  ****`seek </sdk/apps/qml/QtMultimedia/Video#seek-method>`__****\ (*offset*)
--  ****`stop </sdk/apps/qml/QtMultimedia/Video#stop-method>`__****\ ()
--  ****`supportedAudioRoles </sdk/apps/qml/QtMultimedia/Video#supportedAudioRoles-method>`__****\ ()
+-  :ref:`pause <sdk_qtmultimedia_video_pause-method>`\ ()
+-  :ref:`play <sdk_qtmultimedia_video_play-method>`\ ()
+-  :ref:`seek <sdk_qtmultimedia_video_seek-method>`\ (*offset*)
+-  :ref:`stop <sdk_qtmultimedia_video_stop-method>`\ ()
+-  :ref:`supportedAudioRoles <sdk_qtmultimedia_video_supportedAudioRoles-method>`\ ()
 
 Detailed Description
 --------------------
 
 ``Video`` is a convenience type combining the functionality of a
-`MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__ and a
-`VideoOutput </sdk/apps/qml/QtMultimedia/VideoOutput/>`__ into one. It
-provides simple video playback functionality without having to declare
-multiple types.
+:ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>` and a
+:ref:`VideoOutput <sdk_qtmultimedia_videooutput>` into one. It provides
+simple video playback functionality without having to declare multiple
+types.
 
 .. code:: qml
 
@@ -101,14 +92,16 @@ multiple types.
 ``Video`` supports untransformed, stretched, and uniformly scaled video
 presentation. For a description of stretched uniformly scaled
 presentation, see the
-`fillMode </sdk/apps/qml/QtMultimedia/Video#fillMode-prop>`__ property
+:ref:`fillMode <sdk_qtmultimedia_video#fillMode-prop>` property
 description.
 
-**See also** `MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__
-and `VideoOutput </sdk/apps/qml/QtMultimedia/VideoOutput/>`__.
+**See also** :ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>` and
+:ref:`VideoOutput <sdk_qtmultimedia_videooutput>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtmultimedia_video_audioRole-prop:
 
 +--------------------------------------------------------------------------+
 |        \ audioRole : enumeration                                         |
@@ -122,34 +115,33 @@ post-processing.
 The audio role must be set before setting the source property.
 
 Supported values can be retrieved with
-`supportedAudioRoles() </sdk/apps/qml/QtMultimedia/Video#supportedAudioRoles-method>`__.
+:ref:`supportedAudioRoles() <sdk_qtmultimedia_video#supportedAudioRoles-method>`.
 
 The value can be one of:
 
--  `MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__.UnknownRole
-   - the role is unknown or undefined.
--  `MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__.MusicRole -
-   music.
--  `MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__.VideoRole -
-   soundtrack from a movie or a video.
--  `MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__.VoiceCommunicationRole
+-  :ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>`.UnknownRole - the role
+   is unknown or undefined.
+-  :ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>`.MusicRole - music.
+-  :ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>`.VideoRole - soundtrack
+   from a movie or a video.
+-  :ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>`.VoiceCommunicationRole
    - voice communications, such as telephony.
--  `MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__.AlarmRole -
-   alarm.
--  `MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__.NotificationRole
-   - notification, such as an incoming e-mail or a chat request.
--  `MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__.RingtoneRole
-   - ringtone.
--  `MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__.AccessibilityRole
-   - for accessibility, such as with a screen reader.
--  `MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__.SonificationRole
-   - sonification, such as with user interface sounds.
--  `MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__.GameRole -
-   game audio.
+-  :ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>`.AlarmRole - alarm.
+-  :ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>`.NotificationRole -
+   notification, such as an incoming e-mail or a chat request.
+-  :ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>`.RingtoneRole -
+   ringtone.
+-  :ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>`.AccessibilityRole -
+   for accessibility, such as with a screen reader.
+-  :ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>`.SonificationRole -
+   sonification, such as with user interface sounds.
+-  :ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>`.GameRole - game audio.
 
 This QML property was introduced in Qt 5.6.
 
 | 
+
+.. _sdk_qtmultimedia_video_autoLoad-prop:
 
 +--------------------------------------------------------------------------+
 |        \ autoLoad : bool                                                 |
@@ -162,6 +154,8 @@ started.
 
 | 
 
+.. _sdk_qtmultimedia_video_autoPlay-prop:
+
 +--------------------------------------------------------------------------+
 |        \ autoPlay : bool                                                 |
 +--------------------------------------------------------------------------+
@@ -170,10 +164,12 @@ This property determines whether the media should begin playback
 automatically.
 
 Setting to ``true`` also sets
-`autoLoad </sdk/apps/qml/QtMultimedia/Video#autoLoad-prop>`__ to
-``true``. The default is ``false``.
+:ref:`autoLoad <sdk_qtmultimedia_video#autoLoad-prop>` to ``true``. The
+default is ``false``.
 
 | 
+
+.. _sdk_qtmultimedia_video_availability-prop:
 
 +--------------------------------------------------------------------------+
 |        \ availability : enumeration                                      |
@@ -183,19 +179,26 @@ Returns the availability state of the video instance.
 
 This is one of:
 
-+-----------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
-| Value                                                                       | Description                                                                                                                    |
-+=============================================================================+================================================================================================================================+
-| `MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__.Available         | The video player is available to use.                                                                                          |
-+-----------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
-| `MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__.Busy              | The video player is usually available, but some other process is utilizing the hardware necessary to play media.               |
-+-----------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
-| `MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__.Unavailable       | There are no supported video playback facilities.                                                                              |
-+-----------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
-| `MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__.ResourceMissing   | There is one or more resources missing, so the video player cannot be used. It may be possible to try again at a later time.   |
-+-----------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_qtmultimedia_video_Value                                                             Description-prop:
+
++------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
+| Value                                                            | Description                                                                                                                    |
++==================================================================+================================================================================================================================+
+.. _sdk_qtmultimedia_video_-prop:
+| :ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>`.Available         | The video player is available to use.                                                                                          |
++------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_qtmultimedia_video_-prop:
+| :ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>`.Busy              | The video player is usually available, but some other process is utilizing the hardware necessary to play media.               |
++------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_qtmultimedia_video_-prop:
+| :ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>`.Unavailable       | There are no supported video playback facilities.                                                                              |
++------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>`.ResourceMissing   | There is one or more resources missing, so the video player cannot be used. It may be possible to try again at a later time.   |
++------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
 
 | 
+
+.. _sdk_qtmultimedia_video_bufferProgress-prop:
 
 +--------------------------------------------------------------------------+
 |        \ bufferProgress : real                                           |
@@ -205,6 +208,8 @@ This property holds how much of the data buffer is currently filled,
 from 0.0 (empty) to 1.0 (full).
 
 | 
+
+.. _sdk_qtmultimedia_video_duration-prop:
 
 +--------------------------------------------------------------------------+
 |        \ duration : int                                                  |
@@ -217,27 +222,31 @@ this will be 0.
 
 | 
 
+.. _sdk_qtmultimedia_video_error-prop:
+
 +--------------------------------------------------------------------------+
 |        \ error : enumeration                                             |
 +--------------------------------------------------------------------------+
 
 This property holds the error state of the video. It can be one of:
 
--  `MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__.NoError -
-   there is no current error.
--  `MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__.ResourceError
-   - the video cannot be played due to a problem allocating resources.
--  `MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__.FormatError
-   - the video format is not supported.
--  `MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__.NetworkError
-   - the video cannot be played due to network issues.
--  `MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__.AccessDenied
-   - the video cannot be played due to insufficient permissions.
--  `MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__.ServiceMissing
-   - the video cannot be played because the media service could not be
+-  :ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>`.NoError - there is no
+   current error.
+-  :ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>`.ResourceError - the
+   video cannot be played due to a problem allocating resources.
+-  :ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>`.FormatError - the
+   video format is not supported.
+-  :ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>`.NetworkError - the
+   video cannot be played due to network issues.
+-  :ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>`.AccessDenied - the
+   video cannot be played due to insufficient permissions.
+-  :ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>`.ServiceMissing - the
+   video cannot be played because the media service could not be
    instantiated.
 
 | 
+
+.. _sdk_qtmultimedia_video_errorString-prop:
 
 +--------------------------------------------------------------------------+
 |        \ errorString : string                                            |
@@ -248,6 +257,8 @@ more detail.
 
 | 
 
+.. _sdk_qtmultimedia_video_fillMode-prop:
+
 +--------------------------------------------------------------------------+
 |        \ fillMode : enumeration                                          |
 +--------------------------------------------------------------------------+
@@ -255,12 +266,12 @@ more detail.
 Set this property to define how the video is scaled to fit the target
 area.
 
--  `VideoOutput </sdk/apps/qml/QtMultimedia/VideoOutput/>`__.Stretch -
-   the video is scaled to fit
--  `VideoOutput </sdk/apps/qml/QtMultimedia/VideoOutput/>`__.PreserveAspectFit
-   - the video is scaled uniformly to fit without cropping
--  `VideoOutput </sdk/apps/qml/QtMultimedia/VideoOutput/>`__.PreserveAspectCrop
-   - the video is scaled uniformly to fill, cropping if necessary
+-  :ref:`VideoOutput <sdk_qtmultimedia_videooutput>`.Stretch - the video is
+   scaled to fit
+-  :ref:`VideoOutput <sdk_qtmultimedia_videooutput>`.PreserveAspectFit -
+   the video is scaled uniformly to fit without cropping
+-  :ref:`VideoOutput <sdk_qtmultimedia_videooutput>`.PreserveAspectCrop -
+   the video is scaled uniformly to fill, cropping if necessary
 
 Because this type is for convenience in QML, it does not support
 enumerations directly, so enumerations from ``VideoOutput`` are used to
@@ -270,6 +281,8 @@ The default fill mode is preserveAspectFit.
 
 | 
 
+.. _sdk_qtmultimedia_video_hasAudio-prop:
+
 +--------------------------------------------------------------------------+
 |        \ hasAudio : bool                                                 |
 +--------------------------------------------------------------------------+
@@ -278,6 +291,8 @@ This property holds whether the current media has audio content.
 
 | 
 
+.. _sdk_qtmultimedia_video_hasVideo-prop:
+
 +--------------------------------------------------------------------------+
 |        \ hasVideo : bool                                                 |
 +--------------------------------------------------------------------------+
@@ -285,6 +300,8 @@ This property holds whether the current media has audio content.
 This property holds whether the current media has video content.
 
 | 
+
+.. _sdk_qtmultimedia_video_metaData-prop:
 
 +--------------------------------------------------------------------------+
 |        \ metaData : object                                               |
@@ -298,6 +315,8 @@ See MediaPlayer.metaData for details about each meta data key.
 
 | 
 
+.. _sdk_qtmultimedia_video_muted-prop:
+
 +--------------------------------------------------------------------------+
 |        \ muted : bool                                                    |
 +--------------------------------------------------------------------------+
@@ -305,6 +324,8 @@ See MediaPlayer.metaData for details about each meta data key.
 This property holds whether the audio output is muted.
 
 | 
+
+.. _sdk_qtmultimedia_video_orientation-prop:
 
 +--------------------------------------------------------------------------+
 |        \ orientation : int                                               |
@@ -315,6 +336,8 @@ degrees is supported, that is 0, 90, 180, 270, 360, etc.
 
 | 
 
+.. _sdk_qtmultimedia_video_playbackRate-prop:
+
 +--------------------------------------------------------------------------+
 |        \ playbackRate : real                                             |
 +--------------------------------------------------------------------------+
@@ -324,37 +347,42 @@ of the normal rate.
 
 | 
 
+.. _sdk_qtmultimedia_video_playbackState-prop:
+
 +--------------------------------------------------------------------------+
 |        \ playbackState : enumeration                                     |
 +--------------------------------------------------------------------------+
 
 This read only property indicates the playback state of the media.
 
--  `MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__.PlayingState
-   - the media is playing
--  `MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__.PausedState
-   - the media is paused
--  `MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__.StoppedState
-   - the media is stopped
+-  :ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>`.PlayingState - the
+   media is playing
+-  :ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>`.PausedState - the
+   media is paused
+-  :ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>`.StoppedState - the
+   media is stopped
 
 The default state is
-`MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__.StoppedState.
+:ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>`.StoppedState.
 
 | 
 
+.. _sdk_qtmultimedia_video_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ playlist : `Playlist </sdk/apps/qml/QtMultimedia/Playlist/>`__  |
+| :ref:` <>`\ playlist : `Playlist <sdk_qtmultimedia_playlist>`          |
 +--------------------------------------------------------------------------+
 
 This property holds the playlist used by the media player.
 
 Setting the playlist property resets the
-`source </sdk/apps/qml/QtMultimedia/Video#source-prop>`__ to an empty
-string.
+:ref:`source <sdk_qtmultimedia_video#source-prop>` to an empty string.
 
 This QML property was introduced in Qt 5.6.
 
 | 
+
+.. _sdk_qtmultimedia_video_position-prop:
 
 +--------------------------------------------------------------------------+
 |        \ position : int                                                  |
@@ -363,11 +391,13 @@ This QML property was introduced in Qt 5.6.
 This property holds the current playback position in milliseconds.
 
 To change this position, use the
-`seek() </sdk/apps/qml/QtMultimedia/Video#seek-method>`__ method.
+:ref:`seek() <sdk_qtmultimedia_video#seek-method>` method.
 
-**See also** `seek() </sdk/apps/qml/QtMultimedia/Video#seek-method>`__.
+**See also** :ref:`seek() <sdk_qtmultimedia_video#seek-method>`.
 
 | 
+
+.. _sdk_qtmultimedia_video_seekable-prop:
 
 +--------------------------------------------------------------------------+
 |        \ seekable : bool                                                 |
@@ -376,11 +406,12 @@ To change this position, use the
 This property holds whether the playback position of the video can be
 changed.
 
-If true, calling the
-`seek() </sdk/apps/qml/QtMultimedia/Video#seek-method>`__ method will
-cause playback to seek to the new position.
+If true, calling the :ref:`seek() <sdk_qtmultimedia_video#seek-method>`
+method will cause playback to seek to the new position.
 
 | 
+
+.. _sdk_qtmultimedia_video_source-prop:
 
 +--------------------------------------------------------------------------+
 |        \ source : url                                                    |
@@ -389,9 +420,11 @@ cause playback to seek to the new position.
 This property holds the source URL of the media.
 
 Setting the source property clears the current
-`playlist </sdk/apps/qml/QtMultimedia/Video#playlist-prop>`__, if any.
+:ref:`playlist <sdk_qtmultimedia_video#playlist-prop>`, if any.
 
 | 
+
+.. _sdk_qtmultimedia_video_status-prop:
 
 +--------------------------------------------------------------------------+
 |        \ status : enumeration                                            |
@@ -399,26 +432,28 @@ Setting the source property clears the current
 
 This property holds the status of media loading. It can be one of:
 
--  `MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__.NoMedia -
-   no media has been set.
--  `MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__.Loading -
-   the media is currently being loaded.
--  `MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__.Loaded -
-   the media has been loaded.
--  `MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__.Buffering -
-   the media is buffering data.
--  `MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__.Stalled -
-   playback has been interrupted while the media is buffering data.
--  `MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__.Buffered -
-   the media has buffered data.
--  `MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__.EndOfMedia
-   - the media has played to the end.
--  `MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__.InvalidMedia
-   - the media cannot be played.
--  `MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__.UnknownStatus
-   - the status of the media cannot be determined.
+-  :ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>`.NoMedia - no media has
+   been set.
+-  :ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>`.Loading - the media is
+   currently being loaded.
+-  :ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>`.Loaded - the media has
+   been loaded.
+-  :ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>`.Buffering - the media
+   is buffering data.
+-  :ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>`.Stalled - playback has
+   been interrupted while the media is buffering data.
+-  :ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>`.Buffered - the media
+   has buffered data.
+-  :ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>`.EndOfMedia - the media
+   has played to the end.
+-  :ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>`.InvalidMedia - the
+   media cannot be played.
+-  :ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>`.UnknownStatus - the
+   status of the media cannot be determined.
 
 | 
+
+.. _sdk_qtmultimedia_video_volume-prop:
 
 +--------------------------------------------------------------------------+
 |        \ volume : real                                                   |
@@ -432,6 +467,8 @@ This property holds the volume of the audio output, from 0.0 (silent) to
 Signal Documentation
 --------------------
 
+.. _sdk_qtmultimedia_video_paused()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ paused()                                                        |
 +--------------------------------------------------------------------------+
@@ -442,6 +479,8 @@ The corresponding handler is ``onPaused``.
 
 | 
 
+.. _sdk_qtmultimedia_video_playing()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ playing()                                                       |
 +--------------------------------------------------------------------------+
@@ -451,6 +490,8 @@ This signal is emitted when playback is started or continued.
 The corresponding handler is ``onPlaying``.
 
 | 
+
+.. _sdk_qtmultimedia_video_stopped-method:
 
 +--------------------------------------------------------------------------+
 |        \ stopped()                                                       |
@@ -465,6 +506,8 @@ The corresponding handler is ``onStopped``.
 Method Documentation
 --------------------
 
+.. _sdk_qtmultimedia_video_pause-method:
+
 +--------------------------------------------------------------------------+
 |        \ pause()                                                         |
 +--------------------------------------------------------------------------+
@@ -472,6 +515,8 @@ Method Documentation
 Pauses playback of the media.
 
 | 
+
+.. _sdk_qtmultimedia_video_play-method:
 
 +--------------------------------------------------------------------------+
 |        \ play()                                                          |
@@ -481,22 +526,25 @@ Starts playback of the media.
 
 | 
 
+.. _sdk_qtmultimedia_video_seek-method:
+
 +--------------------------------------------------------------------------+
 |        \ seek( *offset*)                                                 |
 +--------------------------------------------------------------------------+
 
-If the `seekable </sdk/apps/qml/QtMultimedia/Video#seekable-prop>`__
-property is true, seeks the current playback position to *offset*.
+If the :ref:`seekable <sdk_qtmultimedia_video#seekable-prop>` property is
+true, seeks the current playback position to *offset*.
 
 Seeking may be asynchronous, so the
-`position </sdk/apps/qml/QtMultimedia/Video#position-prop>`__ property
-may not be updated immediately.
+:ref:`position <sdk_qtmultimedia_video#position-prop>` property may not be
+updated immediately.
 
-**See also**
-`seekable </sdk/apps/qml/QtMultimedia/Video#seekable-prop>`__ and
-`position </sdk/apps/qml/QtMultimedia/Video#position-prop>`__.
+**See also** :ref:`seekable <sdk_qtmultimedia_video#seekable-prop>` and
+:ref:`position <sdk_qtmultimedia_video#position-prop>`.
 
 | 
+
+.. _sdk_qtmultimedia_video_stop-method:
 
 +--------------------------------------------------------------------------+
 |        \ stop()                                                          |
@@ -505,6 +553,8 @@ may not be updated immediately.
 Stops playback of the media.
 
 | 
+
+.. _sdk_qtmultimedia_video_supportedAudioRoles-method:
 
 +--------------------------------------------------------------------------+
 |        \ supportedAudioRoles()                                           |
@@ -516,7 +566,6 @@ If setting the audio role is not supported, an empty list is returned.
 
 This QML method was introduced in Qt 5.6.
 
-**See also**
-`audioRole </sdk/apps/qml/QtMultimedia/Video#audioRole-prop>`__.
+**See also** :ref:`audioRole <sdk_qtmultimedia_video#audioRole-prop>`.
 
 | 

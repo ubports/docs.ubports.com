@@ -1,3 +1,7 @@
+.. _sdk_qtorganizer_comment:
+QtOrganizer Comment
+===================
+
 The Comment element contains the comment text of an organizer item.
 
 +---------------------+--------------------------+
@@ -7,13 +11,12 @@ The Comment element contains the comment text of an organizer item.
 Properties
 ----------
 
--  ****`comment </sdk/apps/qml/QtOrganizer/Comment#comment-prop>`__****
-   : string
+-  :ref:`comment <sdk_qtorganizer_comment_comment-prop>` : string
 
 Signals
 -------
 
--  ****`onDetailChanged </sdk/apps/qml/QtOrganizer/Comment#onDetailChanged-signal>`__****\ ()
+-  :ref:`onDetailChanged <sdk_qtorganizer_comment_onDetailChanged-signal>`\ ()
 
 Detailed Description
 --------------------
@@ -27,6 +30,8 @@ The following fields are supported:
 Property Documentation
 ----------------------
 
+.. _sdk_qtorganizer_comment_comment-prop:
+
 +--------------------------------------------------------------------------+
 |        \ comment : string                                                |
 +--------------------------------------------------------------------------+
@@ -38,11 +43,13 @@ This property holds the text of the comment.
 Signal Documentation
 --------------------
 
+.. _sdk_qtorganizer_comment_onDetailChanged()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ onDetailChanged()                                               |
 +--------------------------------------------------------------------------+
 
 **See also**
-`Detail::onDetailChanged </sdk/apps/qml/QtOrganizer/Detail#onDetailChanged-signal>`__.
+:ref:`Detail::onDetailChanged <sdk_qtorganizer_detail#onDetailChanged-signal>`.
 
 | 

@@ -1,13 +1,17 @@
+.. _sdk_ubuntuuserinterfacetoolkit_layouts_-_overlay_items_in_an_item_host:
+UbuntuUserInterfaceToolkit Layouts - Overlay items in an item host
+==================================================================
+
 
 
 There is one more thing you can do with
-`ItemLayout </sdk/apps/qml/Ubuntu.Layouts/ItemLayout/>`__ container,
-which is to define overlay items for certain hosted items on certain
-layouts. If an `ItemLayout </sdk/apps/qml/Ubuntu.Layouts/ItemLayout/>`__
-has child elements defined, the hosted item will be stacked as topmost
-element, so all the child elements declared in
-`ItemLayout </sdk/apps/qml/Ubuntu.Layouts/ItemLayout/>`__ will be
-rendered as overlay on top of the hosted item.
+:ref:`ItemLayout <sdk_ubuntu_layouts_itemlayout>` container, which is to
+define overlay items for certain hosted items on certain layouts. If an
+:ref:`ItemLayout <sdk_ubuntu_layouts_itemlayout>` has child elements
+defined, the hosted item will be stacked as topmost element, so all the
+child elements declared in
+:ref:`ItemLayout <sdk_ubuntu_layouts_itemlayout>` will be rendered as
+overlay on top of the hosted item.
 
 |image0|
 
@@ -47,7 +51,7 @@ rendered as overlay on top of the hosted item.
     }
 
 `Layouts - Defining more layouts for different form
-factors </sdk/apps/qml/UbuntuUserInterfaceToolkit/ubuntu-layouts7/>`__
+factors </sdk/apps/qml/UbuntuUserInterfaceToolkit/ubuntu-layouts7/>`_ 
 
 .. |image0| image:: /media/sdk/apps/qml/ubuntu-layouts6/images/layout7.png
 

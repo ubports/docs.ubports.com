@@ -1,3 +1,7 @@
+.. _sdk_qtcontacts_gender:
+QtContacts Gender
+=================
+
 The Gender element contains the gender of a contact.
 
 +---------------------+-------------------------+
@@ -7,8 +11,7 @@ The Gender element contains the gender of a contact.
 Properties
 ----------
 
--  ****`gender </sdk/apps/qml/QtContacts/Gender#gender-prop>`__**** :
-   enumeration
+-  :ref:`gender <sdk_qtcontacts_gender_gender-prop>` : enumeration
 
 Detailed Description
 --------------------
@@ -21,6 +24,8 @@ This element is part of the **QtContacts** module.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtcontacts_gender_gender-prop:
 
 +--------------------------------------------------------------------------+
 |        \ gender : enumeration                                            |

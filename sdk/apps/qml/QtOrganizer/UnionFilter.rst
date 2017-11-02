@@ -1,3 +1,7 @@
+.. _sdk_qtorganizer_unionfilter:
+QtOrganizer UnionFilter
+=======================
+
 The UnionFilter element provides a filter which unions the results of
 other filters.
 
@@ -8,13 +12,13 @@ other filters.
 Properties
 ----------
 
--  ****`filters </sdk/apps/qml/QtOrganizer/UnionFilter#filters-prop>`__****
-   : list<filter>
+-  :ref:`filters <sdk_qtorganizer_unionfilter_filters-prop>` :
+   list<filter>
 
 Signals
 -------
 
--  ****`onFilterChanged </sdk/apps/qml/QtOrganizer/UnionFilter#onFilterChanged-signal>`__****\ ()
+-  :ref:`onFilterChanged <sdk_qtorganizer_unionfilter_onFilterChanged-signal>`\ ()
 
 Detailed Description
 --------------------
@@ -23,6 +27,8 @@ Detailed Description
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtorganizer_unionfilter_filters-prop:
 
 +--------------------------------------------------------------------------+
 |        \ filters : list<filter>                                          |
@@ -35,11 +41,13 @@ This property holds the list of filters which form the union filter.
 Signal Documentation
 --------------------
 
+.. _sdk_qtorganizer_unionfilter_onFilterChanged()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ onFilterChanged()                                               |
 +--------------------------------------------------------------------------+
 
 **See also**
-`QtOrganizer5::Filter::onFilterChanged </sdk/apps/qml/QtOrganizer/Filter#onFilterChanged-signal>`__.
+:ref:`QtOrganizer5::Filter::onFilterChanged <sdk_qtorganizer_filter#onFilterChanged-signal>`.
 
 | 

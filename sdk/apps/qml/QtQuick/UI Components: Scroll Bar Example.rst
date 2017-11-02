@@ -1,9 +1,13 @@
+.. _sdk_qtquick_ui_components:_scroll_bar_example:
+QtQuick UI Components: Scroll Bar Example
+=========================================
+
 
 
 This example shows how to create scroll bars for a
-`Flickable </sdk/apps/qml/QtQuick/touchinteraction#flickable>`__ element
-using the
-`Flickable::visibleArea </sdk/apps/qml/QtQuick/Flickable#visibleArea.xPosition-prop>`__
+`Flickable </sdk/apps/qml/QtQuick/touchinteraction/#flickable>`_ 
+element using the
+:ref:`Flickable::visibleArea <sdk_qtquick_flickable#visibleArea.xPosition-prop>`
 properties.
 
 |image0|

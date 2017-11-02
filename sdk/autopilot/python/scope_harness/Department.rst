@@ -1,5 +1,9 @@
+.. _sdk_scope_harness_department:
+scope_harness Department
+========================
+
  *class*
-``scope_harness.``\ ``Department``\ ` <#scope_harness.Department>`__
+``scope_harness.``\ ``Department``\ ` <#scope_harness.Department>`_ 
     Represents a read-only view of a department returned by a scope. Use
     id, label, all\_label properties to inspect it, and children
     property or child method to inspect child departments (instances of
@@ -8,25 +12,25 @@
     \_\_len\_\_ call, so python’s len(department) may be used instead of
     department.size
 
-     ``all_label``\ ` <#scope_harness.Department.all_label>`__
+     ``all_label``\ ` <#scope_harness.Department.all_label>`_ 
 
      ``child``\ (*(Department)arg1*, *(int)arg2*) → ChildDepartment
-    :` <#scope_harness.Department.child>`__
+    :` <#scope_harness.Department.child>`_ 
         Get child department by its index (a number)
 
-     ``children``\ ` <#scope_harness.Department.children>`__
+     ``children``\ ` <#scope_harness.Department.children>`_ 
 
-     ``id``\ ` <#scope_harness.Department.id>`__
+     ``id``\ ` <#scope_harness.Department.id>`_ 
 
-     ``is_hidden``\ ` <#scope_harness.Department.is_hidden>`__
+     ``is_hidden``\ ` <#scope_harness.Department.is_hidden>`_ 
 
-     ``is_root``\ ` <#scope_harness.Department.is_root>`__
+     ``is_root``\ ` <#scope_harness.Department.is_root>`_ 
 
-     ``label``\ ` <#scope_harness.Department.label>`__
+     ``label``\ ` <#scope_harness.Department.label>`_ 
 
-     ``parent_id``\ ` <#scope_harness.Department.parent_id>`__
+     ``parent_id``\ ` <#scope_harness.Department.parent_id>`_ 
 
-     ``parent_label``\ ` <#scope_harness.Department.parent_label>`__
+     ``parent_label``\ ` <#scope_harness.Department.parent_label>`_ 
 
-     ``size``\ ` <#scope_harness.Department.size>`__
+     ``size``\ ` <#scope_harness.Department.size>`_ 
 

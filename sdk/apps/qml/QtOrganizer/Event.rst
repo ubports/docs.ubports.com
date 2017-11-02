@@ -1,3 +1,7 @@
+.. _sdk_qtorganizer_event:
+QtOrganizer Event
+=================
+
 The Event element provides an event in time which may reoccur.
 
 +---------------------+--------------------------+
@@ -7,48 +11,46 @@ The Event element provides an event in time which may reoccur.
 Properties
 ----------
 
--  ****`allDay </sdk/apps/qml/QtOrganizer/Event#allDay-prop>`__**** :
-   bool
--  ****`attendees </sdk/apps/qml/QtOrganizer/Event#attendees-prop>`__****
-   : list<Detail>
--  ****`endDateTime </sdk/apps/qml/QtOrganizer/Event#endDateTime-prop>`__****
-   : date
--  ****`location </sdk/apps/qml/QtOrganizer/Event#location-prop>`__****
-   : string
--  ****`priority </sdk/apps/qml/QtOrganizer/Event#priority-prop>`__****
-   : enumeration
--  ****`recurrence </sdk/apps/qml/QtOrganizer/Event#recurrence-prop>`__****
-   : Recurrence
--  ****`startDateTime </sdk/apps/qml/QtOrganizer/Event#startDateTime-prop>`__****
+-  :ref:`allDay <sdk_qtorganizer_event_allDay-prop>` : bool
+-  :ref:`attendees <sdk_qtorganizer_event_attendees-prop>` :
+   list<Detail>
+-  :ref:`endDateTime <sdk_qtorganizer_event_endDateTime-prop>` :
+   date
+-  :ref:`location <sdk_qtorganizer_event_location-prop>` : string
+-  :ref:`priority <sdk_qtorganizer_event_priority-prop>` :
+   enumeration
+-  :ref:`recurrence <sdk_qtorganizer_event_recurrence-prop>` :
+   Recurrence
+-  :ref:`startDateTime <sdk_qtorganizer_event_startDateTime-prop>`
    : date
 
 Signals
 -------
 
--  ****`onItemChanged </sdk/apps/qml/QtOrganizer/Event#onItemChanged-signal>`__****\ ()
+-  :ref:`onItemChanged <sdk_qtorganizer_event_onItemChanged-signal>`\ ()
 
 Methods
 -------
 
--  ****`clearDetails </sdk/apps/qml/QtOrganizer/Event#clearDetails-method>`__****\ ()
+-  :ref:`clearDetails <sdk_qtorganizer_event_clearDetails-method>`\ ()
 -  void
-   ****`removeDetail </sdk/apps/qml/QtOrganizer/Event#removeDetail-method>`__****\ (detail)
+   **:ref:`removeDetail <sdk_qtorganizer_event#removeDetail-method>`**\ (detail)
 -  void
-   ****`setDetail </sdk/apps/qml/QtOrganizer/Event#setDetail-method>`__****\ (detail)
+   **:ref:`setDetail <sdk_qtorganizer_event#setDetail-method>`**\ (detail)
 
 Detailed Description
 --------------------
 
-**See also**
-`OrganizerItem </sdk/apps/qml/QtOrganizer/OrganizerItem/>`__,
-`EventOccurrence </sdk/apps/qml/QtOrganizer/EventOccurrence/>`__,
-`Journal </sdk/apps/qml/QtOrganizer/Journal/>`__,
-`Todo </sdk/apps/qml/QtOrganizer/Todo/>`__,
-`TodoOccurrence </sdk/apps/qml/QtOrganizer/TodoOccurrence/>`__,
-`Note </sdk/apps/qml/QtOrganizer/Note/>`__, and QOrganizerEvent.
+**See also** :ref:`OrganizerItem <sdk_qtorganizer_organizeritem>`,
+:ref:`EventOccurrence <sdk_qtorganizer_eventoccurrence>`,
+:ref:`Journal <sdk_qtorganizer_journal>`, `Todo <sdk_qtorganizer_todo>`,
+:ref:`TodoOccurrence <sdk_qtorganizer_todooccurrence>`,
+:ref:`Note <sdk_qtorganizer_note>`, and QOrganizerEvent.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtorganizer_event_allDay-prop:
 
 +--------------------------------------------------------------------------+
 |        \ allDay : bool                                                   |
@@ -61,14 +63,17 @@ will be an all-day item.
 
 | 
 
+.. _sdk_qtorganizer_event_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ attendees :                                                     |
-| list<`Detail </sdk/apps/qml/QtOrganizer/Detail/>`__>                     |
+| :ref:` <>`\ attendees : list<`Detail <sdk_qtorganizer_detail>`>           |
 +--------------------------------------------------------------------------+
 
 This property holds the attendees list of the event.
 
 | 
+
+.. _sdk_qtorganizer_event_endDateTime-prop:
 
 +--------------------------------------------------------------------------+
 |        \ endDateTime : date                                              |
@@ -78,6 +83,8 @@ This property holds the end date time of the event.
 
 | 
 
+.. _sdk_qtorganizer_event_location-prop:
+
 +--------------------------------------------------------------------------+
 |        \ location : string                                               |
 +--------------------------------------------------------------------------+
@@ -85,6 +92,8 @@ This property holds the end date time of the event.
 This property holds the label of the location at which the event occurs.
 
 | 
+
+.. _sdk_qtorganizer_event_priority-prop:
 
 +--------------------------------------------------------------------------+
 |        \ priority : enumeration                                          |
@@ -105,14 +114,17 @@ This property holds the priority of the event. The value can be one of:
 
 | 
 
+.. _sdk_qtorganizer_event_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ recurrence :                                                    |
-| `Recurrence </sdk/apps/qml/QtOrganizer/Recurrence/>`__                   |
+| :ref:` <>`\ recurrence : `Recurrence <sdk_qtorganizer_recurrence>`     |
 +--------------------------------------------------------------------------+
 
 This property holds the recurrence element of the event item.
 
 | 
+
+.. _sdk_qtorganizer_event_startDateTime-prop:
 
 +--------------------------------------------------------------------------+
 |        \ startDateTime : date                                            |
@@ -125,17 +137,21 @@ This property holds the start date time of the event.
 Signal Documentation
 --------------------
 
+.. _sdk_qtorganizer_event_onItemChanged()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ onItemChanged()                                                 |
 +--------------------------------------------------------------------------+
 
 **See also**
-`OrganizerItem::onItemChanged </sdk/apps/qml/QtOrganizer/OrganizerItem#onItemChanged-signal>`__.
+:ref:`OrganizerItem::onItemChanged <sdk_qtorganizer_organizeritem#onItemChanged-signal>`.
 
 | 
 
 Method Documentation
 --------------------
+
+.. _sdk_qtorganizer_event_clearDetails-method:
 
 +--------------------------------------------------------------------------+
 |        \ clearDetails()                                                  |
@@ -144,9 +160,11 @@ Method Documentation
 Removes all details from the organizer event.
 
 **See also**
-`removeDetail() </sdk/apps/qml/QtOrganizer/Event#removeDetail-method>`__.
+:ref:`removeDetail() <sdk_qtorganizer_event#removeDetail-method>`.
 
 | 
+
+.. _sdk_qtorganizer_event_void removeDetail-method:
 
 +--------------------------------------------------------------------------+
 |        \ void removeDetail(detail)                                       |
@@ -155,6 +173,8 @@ Removes all details from the organizer event.
 Removes given *detail* from the organizer event.
 
 | 
+
+.. _sdk_qtorganizer_event_void setDetail-method:
 
 +--------------------------------------------------------------------------+
 |        \ void setDetail(detail)                                          |

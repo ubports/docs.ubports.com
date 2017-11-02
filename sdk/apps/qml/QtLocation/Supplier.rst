@@ -1,3 +1,7 @@
+.. _sdk_qtlocation_supplier:
+QtLocation Supplier
+===================
+
 Holds data regarding the supplier of a place, a place's image, review,
 or editorial.
 
@@ -10,15 +14,13 @@ or editorial.
 Properties
 ----------
 
--  ****`icon </sdk/apps/qml/QtLocation/Supplier#icon-prop>`__**** :
-   PlaceIcon
--  ****`name </sdk/apps/qml/QtLocation/Supplier#name-prop>`__**** :
+-  :ref:`icon <sdk_qtlocation_supplier_icon-prop>` : PlaceIcon
+-  :ref:`name <sdk_qtlocation_supplier_name-prop>` : string
+-  :ref:`supplier <sdk_qtlocation_supplier_supplier-prop>` :
+   QPlaceSupplier
+-  :ref:`supplierId <sdk_qtlocation_supplier_supplierId-prop>` :
    string
--  ****`supplier </sdk/apps/qml/QtLocation/Supplier#supplier-prop>`__****
-   : QPlaceSupplier
--  ****`supplierId </sdk/apps/qml/QtLocation/Supplier#supplierId-prop>`__****
-   : string
--  ****`url </sdk/apps/qml/QtLocation/Supplier#url-prop>`__**** : url
+-  :ref:`url <sdk_qtlocation_supplier_url-prop>` : url
 
 Detailed Description
 --------------------
@@ -49,12 +51,14 @@ The following example shows how to create and display a supplier in QML:
         text: "This place is was provided by " + placeSupplier.name + "\n" + placeSupplier.url
     }
 
-**See also** `ImageModel </sdk/apps/qml/QtLocation/ImageModel/>`__,
-`ReviewModel </sdk/apps/qml/QtLocation/ReviewModel/>`__, and
-`EditorialModel </sdk/apps/qml/QtLocation/EditorialModel/>`__.
+**See also** :ref:`ImageModel <sdk_qtlocation_imagemodel>`,
+:ref:`ReviewModel <sdk_qtlocation_reviewmodel>`, and
+:ref:`EditorialModel <sdk_qtlocation_editorialmodel>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtlocation_supplier_icon-prop:
 
 +--------------------------------------------------------------------------+
 |        \ icon : PlaceIcon                                                |
@@ -63,6 +67,8 @@ Property Documentation
 This property holds the icon of the supplier.
 
 | 
+
+.. _sdk_qtlocation_supplier_name-prop:
 
 +--------------------------------------------------------------------------+
 |        \ name : string                                                   |
@@ -73,11 +79,13 @@ the user.
 
 The name can potentially be localized. The language is dependent on the
 entity that sets it, typically this is the
-`Plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__. The
-`Plugin::locales </sdk/apps/qml/QtLocation/Plugin#locales-prop>`__
-property defines what language is used.
+`Plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_ . The
+:ref:`Plugin::locales <sdk_qtlocation_plugin#locales-prop>` property
+defines what language is used.
 
 | 
+
+.. _sdk_qtlocation_supplier_supplier-prop:
 
 +--------------------------------------------------------------------------+
 |        \ supplier : QPlaceSupplier                                       |
@@ -87,6 +95,8 @@ For details on how to use this property to interface between C++ and QML
 see "Interfaces between C++ and QML Code".
 
 | 
+
+.. _sdk_qtlocation_supplier_supplierId-prop:
 
 +--------------------------------------------------------------------------+
 |        \ supplierId : string                                             |
@@ -98,8 +108,10 @@ generally not suitable for displaying to the user.
 
 | 
 
+.. _sdk_qtlocation_supplier_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ url : `url </sdk/apps/qml/QtLocation/Supplier#url-prop>`__      |
+| :ref:` <>`\ url : `url <sdk_qtlocation_supplier#url-prop>`             |
 +--------------------------------------------------------------------------+
 
 This property holds the URL of the supplier's website.

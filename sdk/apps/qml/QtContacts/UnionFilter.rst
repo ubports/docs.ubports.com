@@ -1,3 +1,7 @@
+.. _sdk_qtcontacts_unionfilter:
+QtContacts UnionFilter
+======================
+
 The UnionFilter element provides a filter which unions the results of
 other filters.
 
@@ -8,8 +12,8 @@ other filters.
 Properties
 ----------
 
--  ****`filters </sdk/apps/qml/QtContacts/UnionFilter#filters-prop>`__****
-   : list<Filter>
+-  :ref:`filters <sdk_qtcontacts_unionfilter_filters-prop>` :
+   list<Filter>
 
 Detailed Description
 --------------------
@@ -21,8 +25,10 @@ This element is part of the **QtContacts** module.
 Property Documentation
 ----------------------
 
+.. _sdk_qtcontacts_unionfilter_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ filters : list<`Filter </sdk/apps/qml/QtContacts/Filter/>`__>   |
+| :ref:` <>`\ filters : list<`Filter <sdk_qtcontacts_filter>`>              |
 +--------------------------------------------------------------------------+
 
 This property holds the list of filters which form the union filter.

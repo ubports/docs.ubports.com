@@ -1,3 +1,7 @@
+.. _sdk_u1db_document:
+U1db Document
+=============
+
 The Document class proxies a single document stored in the Database.
 
 +--------------------------------------+--------------------------------------+
@@ -12,46 +16,43 @@ Public Functions
 ----------------
 
 +--------------------------------------+--------------------------------------+
-|                                      | **`Document </sdk/scopes/cpp/U1db/Do |
-|                                      | cument#Document>`__**\ (QObject      |
+|                                      | **:ref:`Document <sdk_u1db_document#Docum |
+|                                      | ent>`_ **\ (QObject                  |
 |                                      | \* *parent* = 0)                     |
 +--------------------------------------+--------------------------------------+
-| QVariant                             | **`getContents </sdk/scopes/cpp/U1db |
-|                                      | /Document#getContents>`__**\ ()      |
+| QVariant                             | **:ref:`getContents <sdk_u1db_document#ge |
+|                                      | tContents>`_ **\ ()                  |
 +--------------------------------------+--------------------------------------+
-| bool                                 | **`getCreate </sdk/scopes/cpp/U1db/D |
-|                                      | ocument#getCreate>`__**\ ()          |
+| bool                                 | **:ref:`getCreate <sdk_u1db_document#getC |
+|                                      | reate>`_ **\ ()                      |
 +--------------------------------------+--------------------------------------+
-| Database \*                          | **`getDatabase </sdk/scopes/cpp/U1db |
-|                                      | /Document#getDatabase>`__**\ ()      |
+| Database \*                          | **:ref:`getDatabase <sdk_u1db_document#ge |
+|                                      | tDatabase>`_ **\ ()                  |
 +--------------------------------------+--------------------------------------+
-| QVariant                             | **`getDefaults </sdk/scopes/cpp/U1db |
-|                                      | /Document#getDefaults>`__**\ ()      |
+| QVariant                             | **:ref:`getDefaults <sdk_u1db_document#ge |
+|                                      | tDefaults>`_ **\ ()                  |
 +--------------------------------------+--------------------------------------+
-| QString                              | **`getDocId </sdk/scopes/cpp/U1db/Do |
-|                                      | cument#getDocId>`__**\ ()            |
+| QString                              | **:ref:`getDocId <sdk_u1db_document#getDo |
+|                                      | cId>`_ **\ ()                        |
 +--------------------------------------+--------------------------------------+
-| void                                 | **`setContents </sdk/scopes/cpp/U1db |
-|                                      | /Document#setContents>`__**\ (QVaria |
-|                                      | nt                                   |
+| void                                 | **:ref:`setContents <sdk_u1db_document#se |
+|                                      | tContents>`_ **\ (QVariant           |
 |                                      | *contents*)                          |
 +--------------------------------------+--------------------------------------+
-| void                                 | **`setCreate </sdk/scopes/cpp/U1db/D |
-|                                      | ocument#setCreate>`__**\ (bool       |
+| void                                 | **:ref:`setCreate <sdk_u1db_document#setC |
+|                                      | reate>`_ **\ (bool                   |
 |                                      | *create*)                            |
 +--------------------------------------+--------------------------------------+
-| void                                 | **`setDatabase </sdk/scopes/cpp/U1db |
-|                                      | /Document#setDatabase>`__**\ (Databa |
-|                                      | se                                   |
+| void                                 | **:ref:`setDatabase <sdk_u1db_document#se |
+|                                      | tDatabase>`_ **\ (Database           |
 |                                      | \* *database*)                       |
 +--------------------------------------+--------------------------------------+
-| void                                 | **`setDefaults </sdk/scopes/cpp/U1db |
-|                                      | /Document#setDefaults>`__**\ (QVaria |
-|                                      | nt                                   |
+| void                                 | **:ref:`setDefaults <sdk_u1db_document#se |
+|                                      | tDefaults>`_ **\ (QVariant           |
 |                                      | *defaults*)                          |
 +--------------------------------------+--------------------------------------+
-| void                                 | **`setDocId </sdk/scopes/cpp/U1db/Do |
-|                                      | cument#setDocId>`__**\ (const        |
+| void                                 | **:ref:`setDocId <sdk_u1db_document#setDo |
+|                                      | cId>`_ **\ (const                    |
 |                                      | QString & *docId*)                   |
 +--------------------------------------+--------------------------------------+
 
@@ -136,9 +137,8 @@ handle it.
    :class: fn
 
 The *docId* can be that of an existing document in the database and will
-determine what
-`getContents </sdk/scopes/cpp/U1db/Document#getContents>`__\ () returns.
-If no such documents exists,
-`setDefaults </sdk/scopes/cpp/U1db/Document#setDefaults>`__\ () can be
-used to supply a preset.
+determine what :ref:`getContents <sdk_u1db_document#getContents>`\ ()
+returns. If no such documents exists,
+:ref:`setDefaults <sdk_u1db_document#setDefaults>`\ () can be used to
+supply a preset.
 

@@ -1,3 +1,7 @@
+.. _sdk_qtlocation_extendedattributes:
+QtLocation ExtendedAttributes
+=============================
+
 The ExtendedAttributes type holds additional data about a Place.
 
 +---------------------+-------------------------+
@@ -10,31 +14,30 @@ Signals
 -------
 
 -  void
-   ****`valueChanged </sdk/apps/qml/QtLocation/ExtendedAttributes#valueChanged-signal>`__****\ (string
+   **:ref:`valueChanged <sdk_qtlocation_extendedattributes#valueChanged-signal>`**\ (string
    *key*, variant *value*)
 
 Methods
 -------
 
 -  variant
-   ****`keys </sdk/apps/qml/QtLocation/ExtendedAttributes#keys-method>`__****\ ()
+   **:ref:`keys <sdk_qtlocation_extendedattributes#keys-method>`**\ ()
 
 Detailed Description
 --------------------
 
-The
-`ExtendedAttributes </sdk/apps/qml/QtLocation/ExtendedAttributes/>`__
-type is a map of
-`PlaceAttributes </sdk/apps/qml/QtLocation/location-cpp-qml#placeattribute>`__.
+The :ref:`ExtendedAttributes <sdk_qtlocation_extendedattributes>` type is a
+map of
+`PlaceAttributes </sdk/apps/qml/QtLocation/location-cpp-qml/#placeattribute>`_ .
 To access attributes in the map use the
-`keys() </sdk/apps/qml/QtLocation/ExtendedAttributes#keys-method>`__
-method to get the list of keys stored in the map and use the ``[]``
-operator to access the
-`PlaceAttribute </sdk/apps/qml/QtLocation/location-cpp-qml#placeattribute>`__
+:ref:`keys() <sdk_qtlocation_extendedattributes#keys-method>` method to get
+the list of keys stored in the map and use the ``[]`` operator to access
+the
+`PlaceAttribute </sdk/apps/qml/QtLocation/location-cpp-qml/#placeattribute>`_ 
 items.
 
 The following are standard keys that are defined by the API.
-`Plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__
+`Plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_ 
 implementations are free to define additional keys. Custom keys should
 be qualified by a unique prefix to avoid clashes.
 
@@ -56,27 +59,26 @@ attributes over time or even allow attributes to be arbitrarily defined
 by the client application. The attributes could also vary on a place by
 place basis, for example one place may have opening hours while another
 does not. Consult the `plugin
-references </sdk/apps/qml/QtLocation/qtlocation-index#plugin-references-and-parameters>`__
+references </sdk/apps/qml/QtLocation/qtlocation-index/#plugin-references-and-parameters>`_ 
 for details.
 
 Some attributes may not be intended to be readable by end users, the
 label field of such attributes is empty to indicate this fact.
 
-**Note:**
-`ExtendedAttributes </sdk/apps/qml/QtLocation/ExtendedAttributes/>`__
+**Note:** :ref:`ExtendedAttributes <sdk_qtlocation_extendedattributes>`
 instances are only ever used in the context of
-`Place </sdk/apps/qml/QtLocation/location-cpp-qml#place>`__\ s. It is
+`Place </sdk/apps/qml/QtLocation/location-cpp-qml/#place>`_ \ s. It is
 not possible to create an
-`ExtendedAttributes </sdk/apps/qml/QtLocation/ExtendedAttributes/>`__
-instance directly or re-assign a
-`Place </sdk/apps/qml/QtLocation/location-cpp-qml#place>`__'s
-`ExtendedAttributes </sdk/apps/qml/QtLocation/ExtendedAttributes/>`__
-property. Modification of
-`ExtendedAttributes </sdk/apps/qml/QtLocation/ExtendedAttributes/>`__
-can only be accomplished via Javascript.
+:ref:`ExtendedAttributes <sdk_qtlocation_extendedattributes>` instance
+directly or re-assign a
+`Place </sdk/apps/qml/QtLocation/location-cpp-qml/#place>`_ 's
+:ref:`ExtendedAttributes <sdk_qtlocation_extendedattributes>` property.
+Modification of
+:ref:`ExtendedAttributes <sdk_qtlocation_extendedattributes>` can only be
+accomplished via Javascript.
 
 The following example shows how to access all
-`PlaceAttributes </sdk/apps/qml/QtLocation/location-cpp-qml#placeattribute>`__
+`PlaceAttributes </sdk/apps/qml/QtLocation/location-cpp-qml/#placeattribute>`_ 
 and print them to the console:
 
 .. code:: qml
@@ -105,7 +107,7 @@ The following example shows how to assign and modify an attribute:
         place.extendedAttributes.smoking.text = "Yes"
 
 **See also**
-`PlaceAttribute </sdk/apps/qml/QtLocation/location-cpp-qml#placeattribute>`__
+`PlaceAttribute </sdk/apps/qml/QtLocation/location-cpp-qml/#placeattribute>`_ 
 and QQmlPropertyMap.
 
 Signal Documentation
@@ -124,6 +126,8 @@ The corresponding handler is ``onValueChanged``.
 
 Method Documentation
 --------------------
+
+.. _sdk_qtlocation_extendedattributes_variant keys-method:
 
 +--------------------------------------------------------------------------+
 |        \ variant keys()                                                  |

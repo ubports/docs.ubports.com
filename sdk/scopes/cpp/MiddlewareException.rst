@@ -1,6 +1,10 @@
+.. _sdk_middlewareexception:
+MiddlewareException
+===================
+
 Exception to indicate that something went wrong with the middleware
 layer.
-`More... </sdk/scopes/cpp/unity.scopes.MiddlewareException#details>`__
+`More... </sdk/scopes/cpp/unity.scopes.MiddlewareException/#details>`_ 
 
 ``#include <unity/scopes/ScopeExceptions.h>``
 
@@ -15,7 +19,7 @@ Inheritance diagram for unity::scopes::MiddlewareException:
 
  
 
-`MiddlewareException </sdk/scopes/cpp/unity.scopes.MiddlewareException#af6250d2e529d103d30d3ebf06689c146>`__
+`MiddlewareException </sdk/scopes/cpp/unity.scopes.MiddlewareException/#af6250d2e529d103d30d3ebf06689c146>`_ 
 (std::string const &reason)
 
  
@@ -26,7 +30,7 @@ Inheritance diagram for unity::scopes::MiddlewareException:
 
 virtual std::exception\_ptr 
 
-`self </sdk/scopes/cpp/unity.scopes.MiddlewareException#a5317c0215a98eb896d1d706450d2919e>`__
+`self </sdk/scopes/cpp/unity.scopes.MiddlewareException/#a5317c0215a98eb896d1d706450d2919e>`_ 
 () const override
 
  
@@ -42,16 +46,16 @@ Copy constructor and assignment operator have the usual value semantics.
          
 
 **MiddlewareException**
-(`MiddlewareException </sdk/scopes/cpp/unity.scopes.MiddlewareException/>`__
+(`MiddlewareException </sdk/scopes/cpp/unity.scopes.MiddlewareException/>`_ 
 const &)
 
  
 
-`MiddlewareException </sdk/scopes/cpp/unity.scopes.MiddlewareException/>`__
+`MiddlewareException </sdk/scopes/cpp/unity.scopes.MiddlewareException/>`_ 
 & 
 
 **operator=**
-(`MiddlewareException </sdk/scopes/cpp/unity.scopes.MiddlewareException/>`__
+(`MiddlewareException </sdk/scopes/cpp/unity.scopes.MiddlewareException/>`_ 
 const &)
 
  
@@ -126,9 +130,9 @@ Returns
     ``std::exception_ptr`` to ``this``.
 
 Reimplemented in
-`unity::scopes::TimeoutException </sdk/scopes/cpp/unity.scopes.TimeoutException#a5b6ef04ea037bacfe594028306482720>`__,
+`unity::scopes::TimeoutException </sdk/scopes/cpp/unity.scopes.TimeoutException/#a5b6ef04ea037bacfe594028306482720>`_ ,
 and
-`unity::scopes::ObjectNotExistException </sdk/scopes/cpp/unity.scopes.ObjectNotExistException#af87f8d39791b7efb52cbba9dd0e4da25>`__.
+`unity::scopes::ObjectNotExistException </sdk/scopes/cpp/unity.scopes.ObjectNotExistException/#af87f8d39791b7efb52cbba9dd0e4da25>`_ .
 
 .. |Inheritance graph| image:: /media/sdk/scopes/cpp/unity.scopes.MiddlewareException/classunity_1_1scopes_1_1_middleware_exception__inherit__graph.png
 

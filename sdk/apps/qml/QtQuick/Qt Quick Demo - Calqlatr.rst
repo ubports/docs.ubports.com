@@ -1,9 +1,13 @@
+.. _sdk_qtquick_qt_quick_demo_-_calqlatr:
+QtQuick Qt Quick Demo - Calqlatr
+================================
+
 
 
 |image0|
 
 *Calqlatr* demonstrates various QML and `Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-index/>`__ features, such as
+Quick </sdk/apps/qml/QtQuick/qtquick-index/>`_  features, such as
 displaying custom components and using animation to move the components
 around in the application view. The application logic is implemented in
 JavaScript and the appearance is implemented in QML.
@@ -36,8 +40,8 @@ types are located:
 We can then display custom components by adding the component types to
 any QML file. For example, we use the NumberPad type in calqlatr.qml to
 create the number pad of the calculator. We place the type inside an
-`Item </sdk/apps/qml/QtQuick/Item/>`__ QML type, which is the base type
-for all visual items in Qt Quick:
+:ref:`Item <sdk_qtquick_item>` QML type, which is the base type for all
+visual items in Qt Quick:
 
 .. code:: qml
 
@@ -58,7 +62,7 @@ the property alias ``color`` and set the operator property to ``true``.
 We use the operator property in functions that perform the calculations.
 
 We place the buttons inside a
-`Grid </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#grid>`__ QML
+`Grid </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#grid>`_  QML
 type to position them in a grid:
 
 .. code:: qml
@@ -105,14 +109,14 @@ contains a grip. Users can drag the grip to move the display from left
 to right.
 
 When users release the grip, the
-`AnimationController </sdk/apps/qml/QtQuick/AnimationController/>`__ QML
-type that we define in the calqlatr.qml file finishes running the
-controlled animation in either a forwards or a backwards direction. To
-run the animation, we call either completeToEnd() or
-completeToBeginning(), depending on the direction. We do this in the
-`MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__'s ``onReleased`` signal
-handler, where ``controller`` is the id of our
-`AnimationController </sdk/apps/qml/QtQuick/AnimationController/>`__:
+:ref:`AnimationController <sdk_qtquick_animationcontroller>` QML type that
+we define in the calqlatr.qml file finishes running the controlled
+animation in either a forwards or a backwards direction. To run the
+animation, we call either completeToEnd() or completeToBeginning(),
+depending on the direction. We do this in the
+:ref:`MouseArea <sdk_qtquick_mousearea>`'s ``onReleased`` signal handler,
+where ``controller`` is the id of our
+:ref:`AnimationController <sdk_qtquick_animationcontroller>`:
 
 .. code:: qml
 
@@ -127,18 +131,17 @@ handler, where ``controller`` is the id of our
             }
 
 Unlike other QML animation types,
-`AnimationController </sdk/apps/qml/QtQuick/AnimationController/>`__ is
-not driven by internal timers but by explicitly setting its progress
-property to a value between ``0.0`` and ``1.0``.
+:ref:`AnimationController <sdk_qtquick_animationcontroller>` is not driven
+by internal timers but by explicitly setting its progress property to a
+value between ``0.0`` and ``1.0``.
 
-Inside the
-`AnimationController </sdk/apps/qml/QtQuick/AnimationController/>`__, we
-run two `NumberAnimation </sdk/apps/qml/QtQuick/NumberAnimation/>`__
-instances in parallel to move the number pad and the display components
+Inside the :ref:`AnimationController <sdk_qtquick_animationcontroller>`, we
+run two :ref:`NumberAnimation <sdk_qtquick_numberanimation>` instances in
+parallel to move the number pad and the display components
 simultaneously to the opposite sides of the view. In addition, we run a
-`SequentialAnimation </sdk/apps/qml/QtQuick/SequentialAnimation/>`__
-instance to scale the number pad during the transition, giving the
-animation some depth.
+:ref:`SequentialAnimation <sdk_qtquick_sequentialanimation>` instance to
+scale the number pad during the transition, giving the animation some
+depth.
 
 .. code:: qml
 
@@ -182,13 +185,12 @@ animated.
 
 We use Qt.darker() to darken the color when the button is dimmed, and
 Qt.lighter() to *light up* the button when pressed. The latter is done
-in a separate `state </sdk/apps/qml/QtQuick/State/>`__ called
-*"pressed"*, which activates when the ``pressed`` property of the
-button's `MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ is set.
+in a separate :ref:`state <sdk_qtquick_state>` called *"pressed"*, which
+activates when the ``pressed`` property of the button's
+:ref:`MouseArea <sdk_qtquick_mousearea>` is set.
 
 The color changes are animated by defining a
-`Behavior </sdk/apps/qml/QtQuick/Behavior/>`__ on the ``color``
-property.
+:ref:`Behavior <sdk_qtquick_behavior>` on the ``color`` property.
 
 In order to dynamically change the ``dimmed`` property of all the
 buttons of the ``NumberPad``, we connect its ``buttonPressed`` signal to

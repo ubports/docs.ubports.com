@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_downloadmanager_singledownload:
+Ubuntu.DownloadManager SingleDownload
+=====================================
+
 Manage file downloads and tracking the progress.
 
 +---------------------+-------------------------------------+
@@ -7,60 +11,60 @@ Manage file downloads and tracking the progress.
 Properties
 ----------
 
--  ****`algorithm </sdk/apps/qml/Ubuntu.DownloadManager/SingleDownload#algorithm-prop>`__****
+-  :ref:`algorithm <sdk_ubuntu_downloadmanager_singledownload_algorithm-prop>`
    : string
--  ****`allowMobileDownload </sdk/apps/qml/Ubuntu.DownloadManager/SingleDownload#allowMobileDownload-prop>`__****
+-  :ref:`allowMobileDownload <sdk_ubuntu_downloadmanager_singledownload_allowMobileDownload-prop>`
    : bool
--  ****`autoStart </sdk/apps/qml/Ubuntu.DownloadManager/SingleDownload#autoStart-prop>`__****
+-  :ref:`autoStart <sdk_ubuntu_downloadmanager_singledownload_autoStart-prop>`
    : bool
--  ****`downloadId </sdk/apps/qml/Ubuntu.DownloadManager/SingleDownload#downloadId-prop>`__****
+-  :ref:`downloadId <sdk_ubuntu_downloadmanager_singledownload_downloadId-prop>`
    : string
--  ****`downloadInProgress </sdk/apps/qml/Ubuntu.DownloadManager/SingleDownload#downloadInProgress-prop>`__****
+-  :ref:`downloadInProgress <sdk_ubuntu_downloadmanager_singledownload_downloadInProgress-prop>`
    : bool
--  ****`downloading </sdk/apps/qml/Ubuntu.DownloadManager/SingleDownload#downloading-prop>`__****
+-  :ref:`downloading <sdk_ubuntu_downloadmanager_singledownload_downloading-prop>`
    : bool
--  ****`errorMessage </sdk/apps/qml/Ubuntu.DownloadManager/SingleDownload#errorMessage-prop>`__****
+-  :ref:`errorMessage <sdk_ubuntu_downloadmanager_singledownload_errorMessage-prop>`
    : string
--  ****`hash </sdk/apps/qml/Ubuntu.DownloadManager/SingleDownload#hash-prop>`__****
+-  :ref:`hash <sdk_ubuntu_downloadmanager_singledownload_hash-prop>`
    : string
--  ****`headers </sdk/apps/qml/Ubuntu.DownloadManager/SingleDownload#headers-prop>`__****
+-  :ref:`headers <sdk_ubuntu_downloadmanager_singledownload_headers-prop>`
    : QVariantMap
--  ****`isCompleted </sdk/apps/qml/Ubuntu.DownloadManager/SingleDownload#isCompleted-prop>`__****
+-  :ref:`isCompleted <sdk_ubuntu_downloadmanager_singledownload_isCompleted-prop>`
    : bool
--  ****`metadata </sdk/apps/qml/Ubuntu.DownloadManager/SingleDownload#metadata-prop>`__****
+-  :ref:`metadata <sdk_ubuntu_downloadmanager_singledownload_metadata-prop>`
    : Metadata
--  ****`progress </sdk/apps/qml/Ubuntu.DownloadManager/SingleDownload#progress-prop>`__****
+-  :ref:`progress <sdk_ubuntu_downloadmanager_singledownload_progress-prop>`
    : int
--  ****`throttle </sdk/apps/qml/Ubuntu.DownloadManager/SingleDownload#throttle-prop>`__****
+-  :ref:`throttle <sdk_ubuntu_downloadmanager_singledownload_throttle-prop>`
    : long
 
 Signals
 -------
 
--  ****`finished </sdk/apps/qml/Ubuntu.DownloadManager/SingleDownload#finished-signal>`__****\ (QString
+-  :ref:`finished <sdk_ubuntu_downloadmanager_singledownload_finished-signal>`\ (QString
    *path*)
 
 Methods
 -------
 
 -  void
-   ****`cancel </sdk/apps/qml/Ubuntu.DownloadManager/SingleDownload#cancel-method>`__****\ ()
+   **:ref:`cancel <sdk_ubuntu_downloadmanager_singledownload#cancel-method>`**\ ()
 -  void
-   ****`download </sdk/apps/qml/Ubuntu.DownloadManager/SingleDownload#download-method>`__****\ (string
+   **:ref:`download <sdk_ubuntu_downloadmanager_singledownload#download-method>`**\ (string
    *url*)
 -  void
-   ****`pause </sdk/apps/qml/Ubuntu.DownloadManager/SingleDownload#pause-method>`__****\ ()
+   **:ref:`pause <sdk_ubuntu_downloadmanager_singledownload#pause-method>`**\ ()
 -  void
-   ****`resume </sdk/apps/qml/Ubuntu.DownloadManager/SingleDownload#resume-method>`__****\ ()
+   **:ref:`resume <sdk_ubuntu_downloadmanager_singledownload#resume-method>`**\ ()
 -  void
-   ****`start </sdk/apps/qml/Ubuntu.DownloadManager/SingleDownload#start-method>`__****\ ()
+   **:ref:`start <sdk_ubuntu_downloadmanager_singledownload#start-method>`**\ ()
 
 Detailed Description
 --------------------
 
-`SingleDownload </sdk/apps/qml/Ubuntu.DownloadManager/SingleDownload/>`__
-provides facilities for downloading a single file, track the process,
-react to error conditions, etc.
+:ref:`SingleDownload <sdk_ubuntu_downloadmanager_singledownload>` provides
+facilities for downloading a single file, track the process, react to
+error conditions, etc.
 
 Example usage:
 
@@ -107,10 +111,12 @@ Example usage:
     }
 
 **See also**
-`DownloadManager </sdk/apps/qml/Ubuntu.DownloadManager/DownloadManager/>`__.
+:ref:`DownloadManager <sdk_ubuntu_downloadmanager_downloadmanager>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_ubuntu_downloadmanager_singledownload_algorithm-prop:
 
 +--------------------------------------------------------------------------+
 |        \ algorithm : string                                              |
@@ -123,12 +129,14 @@ algorithm can be of one of the following string values:
 
 If no value is specified md5 will be used. If used, this should be set
 prior to calling the
-`download() </sdk/apps/qml/Ubuntu.DownloadManager/SingleDownload#download-method>`__
+:ref:`download() <sdk_ubuntu_downloadmanager_singledownload#download-method>`
 method.
 
 This QML property was introduced in Ubuntu.DownloadManager 1.3.
 
 | 
+
+.. _sdk_ubuntu_downloadmanager_singledownload_allowMobileDownload-prop:
 
 +--------------------------------------------------------------------------+
 |        \ allowMobileDownload : bool                                      |
@@ -139,16 +147,20 @@ under mobile data connection.
 
 | 
 
+.. _sdk_ubuntu_downloadmanager_singledownload_autoStart-prop:
+
 +--------------------------------------------------------------------------+
 |        \ autoStart : bool                                                |
 +--------------------------------------------------------------------------+
 
 This property sets if the downloads should start automatically, or let
 the user decide when to start them calling the
-"`start() </sdk/apps/qml/Ubuntu.DownloadManager/SingleDownload#start-method>`__"
+":ref:`start() <sdk_ubuntu_downloadmanager_singledownload#start-method>`"
 method.
 
 | 
+
+.. _sdk_ubuntu_downloadmanager_singledownload_downloadId-prop:
 
 +--------------------------------------------------------------------------+
 |        \ downloadId : string                                             |
@@ -158,6 +170,8 @@ This property provides the unique identifier that represents the
 download within the download manager.
 
 | 
+
+.. _sdk_ubuntu_downloadmanager_singledownload_downloadInProgress-prop:
 
 +--------------------------------------------------------------------------+
 |        \ downloadInProgress : bool                                       |
@@ -169,6 +183,8 @@ will become False when the download finished or get canceled.
 
 | 
 
+.. _sdk_ubuntu_downloadmanager_singledownload_downloading-prop:
+
 +--------------------------------------------------------------------------+
 |        \ downloading : bool                                              |
 +--------------------------------------------------------------------------+
@@ -179,6 +195,8 @@ downloaded.
 
 | 
 
+.. _sdk_ubuntu_downloadmanager_singledownload_errorMessage-prop:
+
 +--------------------------------------------------------------------------+
 |        \ errorMessage : string                                           |
 +--------------------------------------------------------------------------+
@@ -187,18 +205,22 @@ The error message associated with the current download, if there is any.
 
 | 
 
+.. _sdk_ubuntu_downloadmanager_singledownload_hash-prop:
+
 +--------------------------------------------------------------------------+
 |        \ hash : string                                                   |
 +--------------------------------------------------------------------------+
 
 This property specifies a hash to check against the downloaded file. If
 used, this should be set prior to calling the
-`download() </sdk/apps/qml/Ubuntu.DownloadManager/SingleDownload#download-method>`__
+:ref:`download() <sdk_ubuntu_downloadmanager_singledownload#download-method>`
 method.
 
 This QML property was introduced in Ubuntu.DownloadManager 1.3.
 
 | 
+
+.. _sdk_ubuntu_downloadmanager_singledownload_headers-prop:
 
 +--------------------------------------------------------------------------+
 |        \ headers : QVariantMap                                           |
@@ -210,6 +232,8 @@ QVariant should be able to convert them to strings.
 
 | 
 
+.. _sdk_ubuntu_downloadmanager_singledownload_isCompleted-prop:
+
 +--------------------------------------------------------------------------+
 |        \ isCompleted : bool                                              |
 +--------------------------------------------------------------------------+
@@ -219,15 +243,18 @@ finished, False otherwise.
 
 | 
 
+.. _sdk_ubuntu_downloadmanager_singledownload_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ metadata :                                                      |
-| `Metadata </sdk/apps/qml/Ubuntu.DownloadManager/Metadata/>`__            |
+| :ref:` <>`\ metadata : `Metadata <sdk_ubuntu_downloadmanager_metadata>`|
 +--------------------------------------------------------------------------+
 
 This property allows to get and set the metadata that will be linked to
 the download request.
 
 | 
+
+.. _sdk_ubuntu_downloadmanager_singledownload_progress-prop:
 
 +--------------------------------------------------------------------------+
 |        \ progress : int                                                  |
@@ -237,6 +264,8 @@ This property reports the current progress in percentage of the
 download, from 0 to 100.
 
 | 
+
+.. _sdk_ubuntu_downloadmanager_singledownload_throttle-prop:
 
 +--------------------------------------------------------------------------+
 |        \ throttle : long                                                 |
@@ -248,6 +277,8 @@ This property can be used to limit the bandwidth used for the download.
 
 Signal Documentation
 --------------------
+
+.. _sdk_ubuntu_downloadmanager_singledownload_finished(QString *path*)-prop:
 
 +--------------------------------------------------------------------------+
 |        \ finished(QString *path*)                                        |
@@ -262,6 +293,8 @@ path is provided via the 'path' paremeter. The corresponding handler is
 Method Documentation
 --------------------
 
+.. _sdk_ubuntu_downloadmanager_singledownload_void cancel-method:
+
 +--------------------------------------------------------------------------+
 |        \ void cancel()                                                   |
 +--------------------------------------------------------------------------+
@@ -269,6 +302,8 @@ Method Documentation
 Cancels a download.
 
 | 
+
+.. _sdk_ubuntu_downloadmanager_singledownload_void download-method:
 
 +--------------------------------------------------------------------------+
 |        \ void download(string *url*)                                     |
@@ -279,6 +314,8 @@ through the properties.
 
 | 
 
+.. _sdk_ubuntu_downloadmanager_singledownload_void pause-method:
+
 +--------------------------------------------------------------------------+
 |        \ void pause()                                                    |
 +--------------------------------------------------------------------------+
@@ -287,6 +324,8 @@ Pauses the download. An error is returned if the download was already
 paused.
 
 | 
+
+.. _sdk_ubuntu_downloadmanager_singledownload_void resume-method:
 
 +--------------------------------------------------------------------------+
 |        \ void resume()                                                   |
@@ -297,12 +336,14 @@ download was already resumed or not paused.
 
 | 
 
+.. _sdk_ubuntu_downloadmanager_singledownload_void start-method:
+
 +--------------------------------------------------------------------------+
 |        \ void start()                                                    |
 +--------------------------------------------------------------------------+
 
 Starts the download, used when
-`autoStart </sdk/apps/qml/Ubuntu.DownloadManager/SingleDownload#autoStart-prop>`__
+:ref:`autoStart <sdk_ubuntu_downloadmanager_singledownload#autoStart-prop>`
 is False.
 
 | 

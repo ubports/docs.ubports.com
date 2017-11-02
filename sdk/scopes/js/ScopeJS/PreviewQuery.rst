@@ -1,3 +1,7 @@
+.. _sdk_scopejs_previewquery:
+ScopeJS PreviewQuery
+====================
+
 
 Represents a particular preview
 

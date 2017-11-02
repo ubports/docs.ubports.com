@@ -1,51 +1,52 @@
+.. _sdk_qtquick_repeater:
+QtQuick Repeater
+================
+
 Instantiates a number of Item-based components using a provided model
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtQuick 2.4                   |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Item </sdk/apps/qml/QtQuick/Item/>` |
-|                                      | __                                   |
+| Inherits:                            | :ref:`Item <sdk_qtquick_item>`       |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`count </sdk/apps/qml/QtQuick/Repeater#count-prop>`__**** : int
--  ****`delegate </sdk/apps/qml/QtQuick/Repeater#delegate-prop>`__**** :
-   Component
--  ****`model </sdk/apps/qml/QtQuick/Repeater#model-prop>`__**** : any
+-  :ref:`count <sdk_qtquick_repeater_count-prop>` : int
+-  :ref:`delegate <sdk_qtquick_repeater_delegate-prop>` : Component
+-  :ref:`model <sdk_qtquick_repeater_model-prop>` : any
 
 Signals
 -------
 
--  ****`itemAdded </sdk/apps/qml/QtQuick/Repeater#itemAdded-signal>`__****\ (int
+-  :ref:`itemAdded <sdk_qtquick_repeater_itemAdded-signal>`\ (int
    *index*, Item *item*)
--  ****`itemRemoved </sdk/apps/qml/QtQuick/Repeater#itemRemoved-signal>`__****\ (int
+-  :ref:`itemRemoved <sdk_qtquick_repeater_itemRemoved-signal>`\ (int
    *index*, Item *item*)
 
 Methods
 -------
 
--  Item
-   ****`itemAt </sdk/apps/qml/QtQuick/Repeater#itemAt-method>`__****\ (index)
+-  Item :ref:`itemAt <sdk_qtquick_repeater_itemAt-method>`\ (index)
 
 Detailed Description
 --------------------
 
 The Repeater type is used to create a large number of similar items.
 Like other view types, a Repeater has a
-`model </sdk/apps/qml/QtQuick/Repeater#model-prop>`__ and a
-`delegate </sdk/apps/qml/QtQuick/Repeater#delegate-prop>`__: for each
-entry in the model, the delegate is instantiated in a context seeded
-with data from the model. A Repeater item is usually enclosed in a
-positioner type such as
-`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#row>`__ or
-`Column </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#column>`__ to
-visually position the multiple delegate items created by the Repeater.
+:ref:`model <sdk_qtquick_repeater#model-prop>` and a
+:ref:`delegate <sdk_qtquick_repeater#delegate-prop>`: for each entry in the
+model, the delegate is instantiated in a context seeded with data from
+the model. A Repeater item is usually enclosed in a positioner type such
+as `Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#row>`_  or
+`Column </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#column>`_ 
+to visually position the multiple delegate items created by the
+Repeater.
 
 The following Repeater creates three instances of a
-`Rectangle </sdk/apps/qml/QtQuick/Rectangle/>`__ item within a
-`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#row>`__:
+:ref:`Rectangle <sdk_qtquick_rectangle>` item within a
+`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#row>`_ :
 
 .. code:: qml
 
@@ -63,14 +64,14 @@ The following Repeater creates three instances of a
 
 |image0|
 
-A Repeater's `model </sdk/apps/qml/QtQuick/Repeater#model-prop>`__ can
-be any of the supported `data
-models </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview#qml-data-models>`__.
+A Repeater's :ref:`model <sdk_qtquick_repeater#model-prop>` can be any of
+the supported `data
+models </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#qml-data-models>`_ .
 Additionally, like delegates for other views, a Repeater delegate can
 access its index within the repeater, as well as the model data relevant
 to the delegate. See the
-`delegate </sdk/apps/qml/QtQuick/Repeater#delegate-prop>`__ property
-documentation for details.
+:ref:`delegate <sdk_qtquick_repeater#delegate-prop>` property documentation
+for details.
 
 Items instantiated by the Repeater are inserted, in order, as children
 of the Repeater's parent. The insertion starts immediately after the
@@ -102,13 +103,12 @@ The Repeater type creates all of its delegate items when the repeater is
 first created. This can be inefficient if there are a large number of
 delegate items and not all of the items are required to be visible at
 the same time. If this is the case, consider using other view types like
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__ (which only creates
-delegate items when they are scrolled into view) or use the Dynamic
-Object Creation methods to create items as they are required.
+:ref:`ListView <sdk_qtquick_listview>` (which only creates delegate items
+when they are scrolled into view) or use the Dynamic Object Creation
+methods to create items as they are required.
 
-Also, note that Repeater is
-`Item </sdk/apps/qml/QtQuick/Item/>`__-based, and can only repeat
-`Item </sdk/apps/qml/QtQuick/Item/>`__-derived objects. For example, it
+Also, note that Repeater is :ref:`Item <sdk_qtquick_item>`-based, and can
+only repeat :ref:`Item <sdk_qtquick_item>`-derived objects. For example, it
 cannot be used to repeat QtObjects:
 
 .. code:: cpp
@@ -125,6 +125,8 @@ cannot be used to repeat QtObjects:
 Property Documentation
 ----------------------
 
+.. _sdk_qtquick_repeater_count-prop:
+
 +--------------------------------------------------------------------------+
 |        \ count : int                                                     |
 +--------------------------------------------------------------------------+
@@ -132,6 +134,8 @@ Property Documentation
 This property holds the number of items in the repeater.
 
 | 
+
+.. _sdk_qtquick_repeater_delegate-prop:
 
 +--------------------------------------------------------------------------+
 |        \ [default] delegate : Component                                  |
@@ -142,8 +146,10 @@ repeater.
 
 Delegates are exposed to a read-only ``index`` property that indicates
 the index of the delegate within the repeater. For example, the
-following `Text </sdk/apps/qml/QtQuick/qtquick-releasenotes#text>`__
+following `Text </sdk/apps/qml/QtQuick/qtquick-releasenotes/#text>`_ 
 delegate displays the index of each repeated item:
+
+.. _sdk_qtquick_repeater_.. code-prop:
 
 +--------------------------------------+--------------------------------------+
 | .. code:: qml                        | |image2|                             |
@@ -157,13 +163,14 @@ delegate displays the index of each repeated item:
 |     }                                |                                      |
 +--------------------------------------+--------------------------------------+
 
-If the `model </sdk/apps/qml/QtQuick/Repeater#model-prop>`__ is a
-`string
-list </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-cppmodels#qstringlist-based-model>`__
+If the :ref:`model <sdk_qtquick_repeater#model-prop>` is a `string
+list </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-cppmodels/#qstringlist-based-model>`_ 
 or `object
-list </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-cppmodels#qobjectlist-based-model>`__,
+list </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-cppmodels/#qobjectlist-based-model>`_ ,
 the delegate is also exposed to a read-only ``modelData`` property that
 holds the string or object data. For example:
+
+.. _sdk_qtquick_repeater_.. code-prop:
 
 +--------------------------------------+--------------------------------------+
 | .. code:: qml                        | |image3|                             |
@@ -178,17 +185,19 @@ holds the string or object data. For example:
 |     }                                |                                      |
 +--------------------------------------+--------------------------------------+
 
-If the `model </sdk/apps/qml/QtQuick/Repeater#model-prop>`__ is a model
-object (such as a
-`ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview#listmodel>`__)
+If the :ref:`model <sdk_qtquick_repeater#model-prop>` is a model object
+(such as a
+`ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#listmodel>`_ )
 the delegate can access all model roles as named properties, in the same
 way that delegates do for view classes like
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__.
+:ref:`ListView <sdk_qtquick_listview>`.
 
 **See also** `QML Data
-Models </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview#qml-data-models>`__.
+Models </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#qml-data-models>`_ .
 
 | 
+
+.. _sdk_qtquick_repeater_model-prop:
 
 +--------------------------------------------------------------------------+
 |        \ model : any                                                     |
@@ -197,52 +206,54 @@ Models </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview#qml-data-models>`
 The model providing data for the repeater.
 
 This property can be set to any of the supported `data
-models </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview#qml-data-models>`__:
+models </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#qml-data-models>`_ :
 
 -  A number that indicates the number of delegates to be created by the
    repeater
 -  A model (e.g. a
-   `ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview#listmodel>`__
+   `ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#listmodel>`_ 
    item, or a
-   `QAbstractItemModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-cppmodels#qabstractitemmodel>`__
+   `QAbstractItemModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-cppmodels/#qabstractitemmodel>`_ 
    subclass)
 -  A string list
 -  An object list
 
 The type of model affects the properties that are exposed to the
-`delegate </sdk/apps/qml/QtQuick/Repeater#delegate-prop>`__.
+:ref:`delegate <sdk_qtquick_repeater#delegate-prop>`.
 
 **See also** `Data
-Models </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview#qml-data-models>`__.
+Models </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#qml-data-models>`_ .
 
 | 
 
 Signal Documentation
 --------------------
 
+.. _sdk_qtquick_repeater_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ itemAdded(int *index*, `Item </sdk/apps/qml/QtQuick/Item/>`__   |
-| *item*)                                                                  |
+| :ref:` <>`\ itemAdded(int *index*, `Item <sdk_qtquick_item>` *item*)      |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when an item is added to the repeater. The
 *index* parameter holds the index at which the item has been inserted
 within the repeater, and the *item* parameter holds the
-`Item </sdk/apps/qml/QtQuick/Item/>`__ that has been added.
+:ref:`Item <sdk_qtquick_item>` that has been added.
 
 The corresponding handler is ``onItemAdded``.
 
 | 
 
+.. _sdk_qtquick_repeater_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ itemRemoved(int *index*, `Item </sdk/apps/qml/QtQuick/Item/>`__ |
-| *item*)                                                                  |
+| :ref:` <>`\ itemRemoved(int *index*, `Item <sdk_qtquick_item>` *item*)    |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when an item is removed from the repeater. The
 *index* parameter holds the index at which the item was removed from the
-repeater, and the *item* parameter holds the
-`Item </sdk/apps/qml/QtQuick/Item/>`__ that was removed.
+repeater, and the *item* parameter holds the :ref:`Item <sdk_qtquick_item>`
+that was removed.
 
 Do not keep a reference to *item* if it was created by this repeater, as
 in these cases it will be deleted shortly after the signal is handled.
@@ -254,17 +265,19 @@ The corresponding handler is ``onItemRemoved``.
 Method Documentation
 --------------------
 
+.. _sdk_qtquick_repeater_-method:
+
 +--------------------------------------------------------------------------+
-|        \ `Item </sdk/apps/qml/QtQuick/Item/>`__ itemAt(index)            |
+| :ref:` <>`\ `Item <sdk_qtquick_item>` itemAt(index)                       |
 +--------------------------------------------------------------------------+
 
-Returns the `Item </sdk/apps/qml/QtQuick/Item/>`__ that has been created
-at the given *index*, or ``null`` if no item exists at *index*.
+Returns the :ref:`Item <sdk_qtquick_item>` that has been created at the
+given *index*, or ``null`` if no item exists at *index*.
 
 | 
 
-.. |image0| image:: /media/sdk/apps/qml/QtQuick/Repeater/images/repeater-simple.png
-.. |image1| image:: /media/sdk/apps/qml/QtQuick/Repeater/images/repeater.png
-.. |image2| image:: /media/sdk/apps/qml/QtQuick/Repeater/images/repeater-index.png
-.. |image3| image:: /media/sdk/apps/qml/QtQuick/Repeater/images/repeater-modeldata.png
+.. |image0| image:: /mediasdk_qtquick_repeaterimages/repeater-simple.png
+.. |image1| image:: /mediasdk_qtquick_repeaterimages/repeater.png
+.. |image2| image:: /mediasdk_qtquick_repeaterimages/repeater-index.png
+.. |image3| image:: /mediasdk_qtquick_repeaterimages/repeater-modeldata.png
 

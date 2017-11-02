@@ -1,5 +1,9 @@
+.. _sdk_department:
+Department
+==========
+
 A department with optional sub-departments.
-`More... </sdk/scopes/cpp/unity.scopes.Department#details>`__
+`More... </sdk/scopes/cpp/unity.scopes.Department/#details>`_ 
 
 ``#include <unity/scopes/Department.h>``
 
@@ -8,8 +12,8 @@ A department with optional sub-departments.
 
 void 
 
-`set\_subdepartments </sdk/scopes/cpp/unity.scopes.Department#ab17057cef9ce35f1302f5421a087c067>`__
-(`DepartmentList </sdk/scopes/cpp/unity.scopes#ab8effc4ea05a59f2ddea896833f07231>`__
+`set\_subdepartments </sdk/scopes/cpp/unity.scopes.Department/#ab17057cef9ce35f1302f5421a087c067>`_ 
+(:ref:`DepartmentList <sdk_unity_scopes#ab8effc4ea05a59f2ddea896833f07231>`
 const &departments)
 
  
@@ -20,7 +24,7 @@ const &departments)
 
 void 
 
-`add\_subdepartment </sdk/scopes/cpp/unity.scopes.Department#acfea57f2fcca24339e0b3c2f58cde567>`__
+`add\_subdepartment </sdk/scopes/cpp/unity.scopes.Department/#acfea57f2fcca24339e0b3c2f58cde567>`_ 
 (Department::SCPtr const &department)
 
  
@@ -31,9 +35,9 @@ void 
 
 void 
 
-`set\_alternate\_label </sdk/scopes/cpp/unity.scopes.Department#a9ab1192cdfcbce44b9164df11290c217>`__
+`set\_alternate\_label </sdk/scopes/cpp/unity.scopes.Department/#a9ab1192cdfcbce44b9164df11290c217>`_ 
 (std::string const
-&\ `label </sdk/scopes/cpp/unity.scopes.Department#aa84ff5c8a1ebaf43beceb8379330db42>`__)
+&\ `label </sdk/scopes/cpp/unity.scopes.Department/#aa84ff5c8a1ebaf43beceb8379330db42>`_ )
 
  
 
@@ -44,9 +48,9 @@ void 
 
 void 
 
-`set\_has\_subdepartments </sdk/scopes/cpp/unity.scopes.Department#af1adb3d18a901c0b8a1cb5b98e924dfa>`__
+`set\_has\_subdepartments </sdk/scopes/cpp/unity.scopes.Department/#af1adb3d18a901c0b8a1cb5b98e924dfa>`_ 
 (bool
-`subdepartments </sdk/scopes/cpp/unity.scopes.Department#aee8ee96bcd5a6ce0d6ca5786aa6f6450>`__\ =true)
+`subdepartments </sdk/scopes/cpp/unity.scopes.Department/#aee8ee96bcd5a6ce0d6ca5786aa6f6450>`_ \ =true)
 
  
 
@@ -56,7 +60,7 @@ void 
 
 std::string 
 
-`id </sdk/scopes/cpp/unity.scopes.Department#ad715a9991355c4f08efa6cf32c61b2c6>`__
+`id </sdk/scopes/cpp/unity.scopes.Department/#ad715a9991355c4f08efa6cf32c61b2c6>`_ 
 () const
 
  
@@ -67,7 +71,7 @@ std::string 
 
 std::string 
 
-`label </sdk/scopes/cpp/unity.scopes.Department#aa84ff5c8a1ebaf43beceb8379330db42>`__
+`label </sdk/scopes/cpp/unity.scopes.Department/#aa84ff5c8a1ebaf43beceb8379330db42>`_ 
 () const
 
  
@@ -78,7 +82,7 @@ std::string 
 
 std::string 
 
-`alternate\_label </sdk/scopes/cpp/unity.scopes.Department#a77c6faaed77693259c0862dca2fc2459>`__
+`alternate\_label </sdk/scopes/cpp/unity.scopes.Department/#a77c6faaed77693259c0862dca2fc2459>`_ 
 () const
 
  
@@ -87,9 +91,9 @@ std::string 
 
  
 
-`CannedQuery </sdk/scopes/cpp/unity.scopes.CannedQuery/>`__ 
+`CannedQuery </sdk/scopes/cpp/unity.scopes.CannedQuery/>`_  
 
-`query </sdk/scopes/cpp/unity.scopes.Department#a6256e78d1e3eece6e2afd8a63978bce4>`__
+`query </sdk/scopes/cpp/unity.scopes.Department/#a6256e78d1e3eece6e2afd8a63978bce4>`_ 
 () const
 
  
@@ -98,9 +102,9 @@ std::string 
 
  
 
-`DepartmentList </sdk/scopes/cpp/unity.scopes#ab8effc4ea05a59f2ddea896833f07231>`__ 
+:ref:`DepartmentList <sdk_unity_scopes#ab8effc4ea05a59f2ddea896833f07231>` 
 
-`subdepartments </sdk/scopes/cpp/unity.scopes.Department#aee8ee96bcd5a6ce0d6ca5786aa6f6450>`__
+`subdepartments </sdk/scopes/cpp/unity.scopes.Department/#aee8ee96bcd5a6ce0d6ca5786aa6f6450>`_ 
 () const
 
  
@@ -111,7 +115,7 @@ std::string 
 
 bool 
 
-`has\_subdepartments </sdk/scopes/cpp/unity.scopes.Department#a0ca9c7c16072e881f245063c19fae179>`__
+`has\_subdepartments </sdk/scopes/cpp/unity.scopes.Department/#a0ca9c7c16072e881f245063c19fae179>`_ 
 () const
 
  
@@ -129,27 +133,27 @@ usual value semantics.
          
 
 **Department**
-(`Department </sdk/scopes/cpp/unity.scopes.Department/>`__ const &other)
+(`Department </sdk/scopes/cpp/unity.scopes.Department/>`_  const &other)
 
  
 
          
 
 **Department**
-(`Department </sdk/scopes/cpp/unity.scopes.Department/>`__ &&)
+(`Department </sdk/scopes/cpp/unity.scopes.Department/>`_  &&)
 
  
 
-        `Department </sdk/scopes/cpp/unity.scopes.Department/>`__ & 
+        `Department </sdk/scopes/cpp/unity.scopes.Department/>`_  & 
 
-**operator=** (`Department </sdk/scopes/cpp/unity.scopes.Department/>`__
+**operator=** (`Department </sdk/scopes/cpp/unity.scopes.Department/>`_ 
 const &other)
 
  
 
-        `Department </sdk/scopes/cpp/unity.scopes.Department/>`__ & 
+        `Department </sdk/scopes/cpp/unity.scopes.Department/>`_  & 
 
-**operator=** (`Department </sdk/scopes/cpp/unity.scopes.Department/>`__
+**operator=** (`Department </sdk/scopes/cpp/unity.scopes.Department/>`_ 
 &&)
 
  
@@ -159,11 +163,11 @@ const &other)
 
 static Department::UPtr 
 
-`create </sdk/scopes/cpp/unity.scopes.Department#a11a3b8e9a3317f963d4bc9f46f79922b>`__
-(`CannedQuery </sdk/scopes/cpp/unity.scopes.CannedQuery/>`__ const
-&\ `query </sdk/scopes/cpp/unity.scopes.Department#a6256e78d1e3eece6e2afd8a63978bce4>`__,
+`create </sdk/scopes/cpp/unity.scopes.Department/#a11a3b8e9a3317f963d4bc9f46f79922b>`_ 
+(`CannedQuery </sdk/scopes/cpp/unity.scopes.CannedQuery/>`_  const
+&\ `query </sdk/scopes/cpp/unity.scopes.Department/#a6256e78d1e3eece6e2afd8a63978bce4>`_ ,
 std::string const
-&\ `label </sdk/scopes/cpp/unity.scopes.Department#aa84ff5c8a1ebaf43beceb8379330db42>`__)
+&\ `label </sdk/scopes/cpp/unity.scopes.Department/#aa84ff5c8a1ebaf43beceb8379330db42>`_ )
 
  
 
@@ -173,12 +177,12 @@ std::string const
 
 static Department::UPtr 
 
-`create </sdk/scopes/cpp/unity.scopes.Department#a1f4feec9298abd3eefbacf60d9ba1fd9>`__
+`create </sdk/scopes/cpp/unity.scopes.Department/#a1f4feec9298abd3eefbacf60d9ba1fd9>`_ 
 (std::string const &department\_id,
-`CannedQuery </sdk/scopes/cpp/unity.scopes.CannedQuery/>`__ const
-&\ `query </sdk/scopes/cpp/unity.scopes.Department#a6256e78d1e3eece6e2afd8a63978bce4>`__,
+`CannedQuery </sdk/scopes/cpp/unity.scopes.CannedQuery/>`_  const
+&\ `query </sdk/scopes/cpp/unity.scopes.Department/#a6256e78d1e3eece6e2afd8a63978bce4>`_ ,
 std::string const
-&\ `label </sdk/scopes/cpp/unity.scopes.Department#aa84ff5c8a1ebaf43beceb8379330db42>`__)
+&\ `label </sdk/scopes/cpp/unity.scopes.Department/#aa84ff5c8a1ebaf43beceb8379330db42>`_ )
 
  
 
@@ -243,7 +247,7 @@ Returns
 |       | scopes.CannedQuery |         |                                      |
 |             |                        |                                      |
 | | artment::create    |               |                                      |
-|       | />`__              |         |                                      |
+|       | />`_               |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
 |       | const &            |         |                                      |
@@ -272,7 +276,7 @@ Create a department with the given canned query and name.
 
 The identifier of this department instance is that of the ``query``
 instance
-(`CannedQuery::department\_id() </sdk/scopes/cpp/unity.scopes.CannedQuery#a61351960149bb4c0840f020c4e645f66>`__).
+(`CannedQuery::department\_id() </sdk/scopes/cpp/unity.scopes.CannedQuery/#a61351960149bb4c0840f020c4e645f66>`_ ).
 
 Parameters
     +---------+---------------------------------------------------------------------------------------------------------------------+
@@ -310,7 +314,7 @@ Parameters
 |       | scopes.CannedQuery |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
-|       | />`__              |         |                                      |
+|       | />`_               |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
 |       | const &            |         |                                      |
@@ -396,7 +400,7 @@ Returns
 | /sdk/scopes/cp |                |                |                |                |
 | p/unity.scopes |                |                |                |                |
 | .CannedQuery/> |                |                |                |                |
-| `__            |                |                |                |                |
+| `_             |                |                |                |                |
 | unity::scopes: |                |                |                |                |
 | :Department::q |                |                |                |                |
 | uery           |                |                |                |                |
@@ -442,24 +446,23 @@ This flag is a display hint for the Shell that indicates if this
 department has sub-departments and as such should be displayed in a way
 that suggests further navigation to the user. Setting this flag is not
 needed when sub-departments have been added with
-`set\_subdepartments() </sdk/scopes/cpp/unity.scopes.Department#ab17057cef9ce35f1302f5421a087c067>`__
+`set\_subdepartments() </sdk/scopes/cpp/unity.scopes.Department/#ab17057cef9ce35f1302f5421a087c067>`_ 
 method. Setting this flag to false after adding sub-departments with
-`set\_subdepartments() </sdk/scopes/cpp/unity.scopes.Department#ab17057cef9ce35f1302f5421a087c067>`__
+`set\_subdepartments() </sdk/scopes/cpp/unity.scopes.Department/#ab17057cef9ce35f1302f5421a087c067>`_ 
 throws unity::LogicException.
 
 Exceptions
-    +-------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-    | unity::LogicException   | if called with false after adding sub-departments with `unity::scopes::Department::set\_subdepartments() </sdk/scopes/cpp/unity.scopes.Department#ab17057cef9ce35f1302f5421a087c067>`__   |
-    +-------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    +-------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | unity::LogicException   | if called with false after adding sub-departments with `unity::scopes::Department::set\_subdepartments() </sdk/scopes/cpp/unity.scopes.Department/#ab17057cef9ce35f1302f5421a087c067>`_    |
+    +-------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 +--------------+--------------+--------------+--------------+--------------+--------------+
 | void         | (            | `DepartmentL | *departments | )            |              |
-| unity::scope |              | ist </sdk/sc | *            |              |              |
-| s::Departmen |              | opes/cpp/uni |              |              |              |
-| t::set\_subd |              | ty.scopes#ab |              |              |              |
-| epartments   |              | 8effc4ea05a5 |              |              |              |
-|              |              | 9f2ddea89683 |              |              |              |
-|              |              | 3f07231>`__  |              |              |              |
+| unity::scope |              | ist <sdk_uni | *            |              |              |
+| s::Departmen |              | ty_scopes#ab |              |              |              |
+| t::set\_subd |              | 8effc4ea05a5 |              |              |              |
+| epartments   |              | 9f2ddea89683 |              |              |              |
+|              |              | 3f07231>`_   |              |              |              |
 |              |              | const &      |              |              |              |
 +--------------+--------------+--------------+--------------+--------------+--------------+
 
@@ -472,11 +475,11 @@ Parameters
 
 +----------------+----------------+----------------+----------------+----------------+
 | `DepartmentLis | (              |                | )              | const          |
-| t </sdk/scopes |                |                |                |                |
-| /cpp/unity.sco |                |                |                |                |
-| pes#ab8effc4ea |                |                |                |                |
-| 05a59f2ddea896 |                |                |                |                |
-| 833f07231>`__  |                |                |                |                |
+| t <sdk_unity_s |                |                |                |                |
+| copes#ab8effc4 |                |                |                |                |
+| ea05a59f2ddea8 |                |                |                |                |
+| 96833f07231>`_ |                |                |                |                |
+| _              |                |                |                |                |
 | unity::scopes: |                |                |                |                |
 | :Department::s |                |                |                |                |
 | ubdepartments  |                |                |                |                |

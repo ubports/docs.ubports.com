@@ -1,3 +1,7 @@
+.. _sdk_ubuntuuserinterfacetoolkit_layouts_-_terminology:
+UbuntuUserInterfaceToolkit Layouts - Terminology
+================================================
+
 
 
 First let's introduce the terminology we are going to use across this
@@ -8,7 +12,7 @@ tutorial.
 
 A layout block is a component embedding several layout definitions and
 items to be laid out. It is typically defined by the
-`Layouts </sdk/apps/qml/Ubuntu.Layouts/Layouts/>`__ component.
+:ref:`Layouts <sdk_ubuntu_layouts_layouts>` component.
 
 Each layout defined in the block is compound of containers, which can
 host laid out items hosted by item holders.
@@ -68,13 +72,13 @@ Illustrating the layout on the image with code:
     }
 
 A container can be any item, however it is preferable to use positioners
-or `QtQuick <http://doc.qt.io/qt-5/qtquick-qmlmodule.html>`__ layout
+or `QtQuick <http://doc.qt.io/qt-5/qtquick-qmlmodule.html>`_  layout
 elements whenever possible.
 
 As next step let's create some layouts.
 
 `Layouts - The first conditional
-layout </sdk/apps/qml/UbuntuUserInterfaceToolkit/ubuntu-layouts2/>`__
+layout </sdk/apps/qml/UbuntuUserInterfaceToolkit/ubuntu-layouts2/>`_ 
 
 .. |image0| image:: /media/sdk/apps/qml/ubuntu-layouts1/images/sample-layout.png
 

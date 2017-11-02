@@ -1,3 +1,7 @@
+.. _sdk_qtlocation_maprectangle:
+QtLocation MapRectangle
+=======================
+
 The MapRectangle type displays a rectangle on a Map.
 
 +---------------------+-------------------------+
@@ -9,28 +13,26 @@ The MapRectangle type displays a rectangle on a Map.
 Properties
 ----------
 
--  ****`border </sdk/apps/qml/QtLocation/MapRectangle#border-prop>`__****
+-  :ref:`border <sdk_qtlocation_maprectangle_border-prop>`
 
-   -  ****`border.width </sdk/apps/qml/QtLocation/MapRectangle#border.width-prop>`__****
+   -  :ref:`border.width <sdk_qtlocation_maprectangle_border.width-prop>`
       : int
-   -  ****`border.color </sdk/apps/qml/QtLocation/MapRectangle#border.color-prop>`__****
+   -  :ref:`border.color <sdk_qtlocation_maprectangle_border.color-prop>`
       : color
 
--  ****`bottomRight </sdk/apps/qml/QtLocation/MapRectangle#bottomRight-prop>`__****
+-  :ref:`bottomRight <sdk_qtlocation_maprectangle_bottomRight-prop>`
    : coordinate
--  ****`color </sdk/apps/qml/QtLocation/MapRectangle#color-prop>`__****
-   : color
--  ****`opacity </sdk/apps/qml/QtLocation/MapRectangle#opacity-prop>`__****
-   : real
--  ****`topLeft </sdk/apps/qml/QtLocation/MapRectangle#topLeft-prop>`__****
-   : coordinate
+-  :ref:`color <sdk_qtlocation_maprectangle_color-prop>` : color
+-  :ref:`opacity <sdk_qtlocation_maprectangle_opacity-prop>` : real
+-  :ref:`topLeft <sdk_qtlocation_maprectangle_topLeft-prop>` :
+   coordinate
 
 Detailed Description
 --------------------
 
-The `MapRectangle </sdk/apps/qml/QtLocation/MapRectangle/>`__ type
-displays a rectangle on a Map. Rectangles are a special case of Polygon
-with exactly 4 vertices and 4 "straight" edges. In this case, "straight"
+The :ref:`MapRectangle <sdk_qtlocation_maprectangle>` type displays a
+rectangle on a Map. Rectangles are a special case of Polygon with
+exactly 4 vertices and 4 "straight" edges. In this case, "straight"
 means that the top-left point has the same latitude as the top-right
 point (the top edge), and the bottom-left point has the same latitude as
 the bottom-right point (the bottom edge). Similarly, the points on the
@@ -38,46 +40,44 @@ left side have the same longitude, and the points on the right side have
 the same longitude.
 
 To specify the rectangle, it requires a
-`topLeft </sdk/apps/qml/QtLocation/MapRectangle#topLeft-prop>`__ and
-`bottomRight </sdk/apps/qml/QtLocation/MapRectangle#bottomRight-prop>`__
-point, both given by a coordinate.
+:ref:`topLeft <sdk_qtlocation_maprectangle#topLeft-prop>` and
+:ref:`bottomRight <sdk_qtlocation_maprectangle#bottomRight-prop>` point,
+both given by a coordinate.
 
 By default, the rectangle is displayed with transparent fill and a
 1-pixel thick black border. This can be changed using the
-`color </sdk/apps/qml/QtLocation/MapRectangle#color-prop>`__,
-`border.color </sdk/apps/qml/QtLocation/MapRectangle#border.color-prop>`__
-and
-`border.width </sdk/apps/qml/QtLocation/MapRectangle#border.width-prop>`__
+:ref:`color <sdk_qtlocation_maprectangle#color-prop>`,
+:ref:`border.color <sdk_qtlocation_maprectangle#border.color-prop>` and
+:ref:`border.width <sdk_qtlocation_maprectangle#border.width-prop>`
 properties.
 
-**Note:** Similar to the
-`MapPolygon </sdk/apps/qml/QtLocation/MapPolygon/>`__ type,
-MapRectangles are geographic items, thus dragging a
-`MapRectangle </sdk/apps/qml/QtLocation/MapRectangle/>`__ causes its
-vertices to be recalculated in the geographic coordinate space. Apparent
-stretching of the item occurs when dragged to the a different latitude,
-however, its edges remain straight.
+**Note:** Similar to the :ref:`MapPolygon <sdk_qtlocation_mappolygon>`
+type, MapRectangles are geographic items, thus dragging a
+:ref:`MapRectangle <sdk_qtlocation_maprectangle>` causes its vertices to be
+recalculated in the geographic coordinate space. Apparent stretching of
+the item occurs when dragged to the a different latitude, however, its
+edges remain straight.
 
 Performance
 ~~~~~~~~~~~
 
 MapRectangles have a rendering cost identical to a
-`MapPolygon </sdk/apps/qml/QtLocation/MapPolygon/>`__ with 4 vertices.
+:ref:`MapPolygon <sdk_qtlocation_mappolygon>` with 4 vertices.
 
 Like the other map objects,
-`MapRectangle </sdk/apps/qml/QtLocation/MapRectangle/>`__ is normally
-drawn without a smooth appearance. Setting the
-`opacity </sdk/apps/qml/QtLocation/MapRectangle#opacity-prop>`__
-property will force the object to be blended, which decreases
-performance considerably depending on the hardware in use.
+:ref:`MapRectangle <sdk_qtlocation_maprectangle>` is normally drawn without
+a smooth appearance. Setting the
+:ref:`opacity <sdk_qtlocation_maprectangle#opacity-prop>` property will
+force the object to be blended, which decreases performance considerably
+depending on the hardware in use.
 
 Example Usage
 ~~~~~~~~~~~~~
 
 The following snippet shows a map containing a
-`MapRectangle </sdk/apps/qml/QtLocation/MapRectangle/>`__, spanning from
-(-27, 153) to (-28, 153.5), near Brisbane, Australia. The rectangle is
-filled in green, with a 2 pixel black border.
+:ref:`MapRectangle <sdk_qtlocation_maprectangle>`, spanning from (-27, 153)
+to (-28, 153.5), near Brisbane, Australia. The rectangle is filled in
+green, with a 2 pixel black border.
 
 .. code:: cpp
 
@@ -101,9 +101,12 @@ filled in green, with a 2 pixel black border.
 Property Documentation
 ----------------------
 
+.. _sdk_qtlocation_maprectangle_**border group**-prop:
+
 +--------------------------------------------------------------------------+
 |        \ **border group**                                                |
 +==========================================================================+
+.. _sdk_qtlocation_maprectangle_border.color-prop:
 |        \ border.width : int                                              |
 +--------------------------------------------------------------------------+
 |        \ border.color : color                                            |
@@ -119,15 +122,19 @@ For no line, use a width of 0 or a transparent color.
 
 | 
 
+.. _sdk_qtlocation_maprectangle_bottomRight-prop:
+
 +--------------------------------------------------------------------------+
 |        \ bottomRight : coordinate                                        |
 +--------------------------------------------------------------------------+
 
 This property holds the bottom-right coordinate of the
-`MapRectangle </sdk/apps/qml/QtLocation/MapRectangle/>`__ which can be
-used to retrieve its longitude, latitude and altitude.
+:ref:`MapRectangle <sdk_qtlocation_maprectangle>` which can be used to
+retrieve its longitude, latitude and altitude.
 
 | 
+
+.. _sdk_qtlocation_maprectangle_color-prop:
 
 +--------------------------------------------------------------------------+
 |        \ color : color                                                   |
@@ -137,6 +144,8 @@ This property holds the fill color of the rectangle. For no fill, use a
 transparent color.
 
 | 
+
+.. _sdk_qtlocation_maprectangle_opacity-prop:
 
 +--------------------------------------------------------------------------+
 |        \ opacity : real                                                  |
@@ -151,15 +160,17 @@ events, set the visible property of the item to false.
 
 | 
 
+.. _sdk_qtlocation_maprectangle_topLeft-prop:
+
 +--------------------------------------------------------------------------+
 |        \ topLeft : coordinate                                            |
 +--------------------------------------------------------------------------+
 
 This property holds the top-left coordinate of the
-`MapRectangle </sdk/apps/qml/QtLocation/MapRectangle/>`__ which can be
-used to retrieve its longitude, latitude and altitude.
+:ref:`MapRectangle <sdk_qtlocation_maprectangle>` which can be used to
+retrieve its longitude, latitude and altitude.
 
 | 
 
-.. |image0| image:: /media/sdk/apps/qml/QtLocation/MapRectangle/images/sdk-maprectangle.png
+.. |image0| image:: /mediasdk_qtlocation_maprectangleimages/sdk-maprectangle.png
 

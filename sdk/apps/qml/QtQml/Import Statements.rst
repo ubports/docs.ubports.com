@@ -1,3 +1,7 @@
+.. _sdk_qtqml_import_statements:
+QtQml Import Statements
+=======================
+
 
 
 .. rubric:: Syntax of an Import Statement
@@ -19,7 +23,7 @@ import types.
    :name: module-namespace-imports
 
 The most common type of import is a module import. Clients can import
-`QML modules </sdk/apps/qml/QtQml/qtqml-modules-identifiedmodules/>`__
+`QML modules </sdk/apps/qml/QtQml/qtqml-modules-identifiedmodules/>`_ 
 which register QML object types and JavaScript resources into a given
 namespace.
 
@@ -87,7 +91,7 @@ qualified module import is as follows:
 
 For more information about qualified imports, see the upcoming section
 on `Importing Into A Qualified Local
-Namespace </sdk/apps/qml/QtQml/qtqml-syntax-imports#importing-into-a-qualified-local-namespace>`__.
+Namespace </sdk/apps/qml/QtQml/qtqml-syntax-imports/#importing-into-a-qualified-local-namespace>`_ .
 
 Note that if a QML document does not import a module which provides a
 particular QML object type, but attempts to use that object type anyway,
@@ -191,21 +195,21 @@ The generic form of a directory import is as follows:
 **Note:** Import paths are network transparent: applications can import
 documents from remote paths just as simply as documents from local
 paths. See the general URL resolution rules for `Network
-Transparency </sdk/apps/qml/QtQml/qtqml-documents-networktransparency/>`__
+Transparency </sdk/apps/qml/QtQml/qtqml-documents-networktransparency/>`_ 
 in QML documents. If the directory is remote, it must contain a
 `directory import listing qmldir
-file </sdk/apps/qml/QtQml/qtqml-syntax-directoryimports#directory-listing-qmldir-files>`__
+file </sdk/apps/qml/QtQml/qtqml-syntax-directoryimports/#directory-listing-qmldir-files>`_ 
 as the QML engine cannot determine the contents of a remote directory if
 that ``qmldir`` file does not exist.
 
 Similar semantics for the ``<Qualifier>`` apply to directory imports as
 for module imports; for more information on the topic, please see the
 previous section about `Importing into a Qualified Local
-Namespace </sdk/apps/qml/QtQml/qtqml-syntax-imports#importing-into-a-qualified-local-namespace>`__.
+Namespace </sdk/apps/qml/QtQml/qtqml-syntax-imports/#importing-into-a-qualified-local-namespace>`_ .
 
 For more information about directory imports, please see the in-depth
 documentation about `directory
-imports </sdk/apps/qml/QtQml/qtqml-syntax-directoryimports/>`__.
+imports </sdk/apps/qml/QtQml/qtqml-syntax-directoryimports/>`_ .
 
 .. rubric:: JavaScript Resource Imports
    :name: javascript-resource-imports
@@ -272,17 +276,17 @@ qualifier in order to be used:
 
 For more information about JavaScript resources, please see the
 documentation about `defining JavaScript resources in
-QML </sdk/apps/qml/QtQml/qtqml-javascript-resources/>`__, and for more
+QML </sdk/apps/qml/QtQml/qtqml-javascript-resources/>`_ , and for more
 information about how to import JavaScript resources, and how imports
 can be used from within JavaScript resources, please see the in-depth
 documentation about `importing JavaScript resources in
-QML </sdk/apps/qml/QtQml/qtqml-javascript-imports/>`__.
+QML </sdk/apps/qml/QtQml/qtqml-javascript-imports/>`_ .
 
 .. rubric:: QML Import Path
    :name: qml-import-path
 
 When an `identified
-module </sdk/apps/qml/QtQml/qtqml-modules-identifiedmodules/>`__ is
+module </sdk/apps/qml/QtQml/qtqml-modules-identifiedmodules/>`_  is
 imported, the QML engine searches the *import path* for a matching
 module.
 

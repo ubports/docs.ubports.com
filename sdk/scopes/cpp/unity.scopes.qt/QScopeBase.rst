@@ -1,5 +1,9 @@
+.. _sdk_unity_scopes_qt_qscopebase:
+unity.scopes.qt QScopeBase
+==========================
+
 Base class for a scope implementation.
-`More... </sdk/scopes/cpp/unity.scopes.qt/QScopeBase#details>`__
+:ref:`More... <sdk_unity_scopes_qt_qscopebase#details>`
 
 ``#include <unity/scopes/qt/QScopeBase.h>``
 
@@ -14,33 +18,32 @@ Inheritance diagram for unity::scopes::qt::QScopeBase:
 
 virtual void 
 
-`start </sdk/scopes/cpp/unity.scopes.qt/QScopeBase#a948bd6ed6f465292db9ffb0eff11f1de>`__
+:ref:`start <sdk_unity_scopes_qt_qscopebase#a948bd6ed6f465292db9ffb0eff11f1de>`
 (QString const &)
 
  
 
 virtual void 
 
-`stop </sdk/scopes/cpp/unity.scopes.qt/QScopeBase#a4cd139ca1b5cb8a1943b39d0729d8ca5>`__
+:ref:`stop <sdk_unity_scopes_qt_qscopebase#a4cd139ca1b5cb8a1943b39d0729d8ca5>`
 ()
 
  
 
 virtual QPreviewQueryBase::UPtr 
 
-`preview </sdk/scopes/cpp/unity.scopes.qt/QScopeBase#afdedf1ba41623c1ac060ecc4b014f67f>`__
-(const `QResult </sdk/scopes/cpp/unity.scopes.qt/QResult/>`__ &, const
-`QActionMetadata </sdk/scopes/cpp/unity.scopes.qt/QActionMetadata/>`__
-&)=0
+:ref:`preview <sdk_unity_scopes_qt_qscopebase#afdedf1ba41623c1ac060ecc4b014f67f>`
+(const :ref:`QResult <sdk_unity_scopes_qt_qresult>` &, const
+:ref:`QActionMetadata <sdk_unity_scopes_qt_qactionmetadata>` &)=0
 
  
 
 virtual QSearchQueryBase::UPtr 
 
-`search </sdk/scopes/cpp/unity.scopes.qt/QScopeBase#a5132deae23a3916170dcfe6fa41810f4>`__
-(`unity::scopes::CannedQuery </sdk/scopes/cpp/unity.scopes.CannedQuery/>`__
+:ref:`search <sdk_unity_scopes_qt_qscopebase#a5132deae23a3916170dcfe6fa41810f4>`
+(`unity::scopes::CannedQuery </sdk/scopes/cpp/unity.scopes.CannedQuery/>`_ 
 const &q,
-`unity::scopes::SearchMetadata </sdk/scopes/cpp/unity.scopes.SearchMetadata/>`__
+`unity::scopes::SearchMetadata </sdk/scopes/cpp/unity.scopes.SearchMetadata/>`_ 
 const &)=0
 
  
@@ -52,13 +55,12 @@ Base class for a scope implementation.
 
 Scopes are accessed by the scopes run time as a shared library (one
 library per scope). Each scope must implement a class that derives from
-`QScopeBase </sdk/scopes/cpp/unity.scopes.qt/QScopeBase/>`__, for
-example:
+:ref:`QScopeBase <sdk_unity_scopes_qt_qscopebase>`, for example:
 
 #include <unity/scopes/qt/QScopeBase.h>
 
 class MyScope : public
-`unity::scopes::qt::QScopeBase </sdk/scopes/cpp/unity.scopes.qt/QScopeBase/>`__
+:ref:`unity::scopes::qt::QScopeBase <sdk_unity_scopes_qt_qscopebase>`
 
 {
 
@@ -69,11 +71,11 @@ MyScope();
 virtual ~MyScope();
 
 virtual void
-`start </sdk/scopes/cpp/unity.scopes.qt/QScopeBase#a948bd6ed6f465292db9ffb0eff11f1de>`__\ (QString
+:ref:`start <sdk_unity_scopes_qt_qscopebase#a948bd6ed6f465292db9ffb0eff11f1de>`\ (QString
 const& scope\_id); // Optional
 
 virtual void
-`stop </sdk/scopes/cpp/unity.scopes.qt/QScopeBase#a4cd139ca1b5cb8a1943b39d0729d8ca5>`__\ ();
+:ref:`stop <sdk_unity_scopes_qt_qscopebase#a4cd139ca1b5cb8a1943b39d0729d8ca5>`\ ();
 // Optional
 
 // ...
@@ -98,7 +100,7 @@ macros, for example:
 
 // pass this function to the QScopeBaseAPI constructor.
 
-`unity::scopes::qt::QScopeBase </sdk/scopes/cpp/unity.scopes.qt/QScopeBase/>`__
+:ref:`unity::scopes::qt::QScopeBase <sdk_unity_scopes_qt_qscopebase>`
 \*create\_my\_scope()
 
 {
@@ -107,7 +109,7 @@ return new MyScope();
 
 }
 
-`unity::scopes::ScopeBase </sdk/scopes/cpp/unity.scopes.ScopeBase/>`__\ \*
+`unity::scopes::ScopeBase </sdk/scopes/cpp/unity.scopes.ScopeBase/>`_ \ \*
 
 UNITY\_SCOPE\_CREATE\_FUNCTION()
 
@@ -138,7 +140,7 @@ delete scope;
 
 After the scopes run time has obtained a pointer to the class instance
 from the create function, it calls
-`start() </sdk/scopes/cpp/unity.scopes.qt/QScopeBase#a948bd6ed6f465292db9ffb0eff11f1de>`__,
+:ref:`start() <sdk_unity_scopes_qt_qscopebase#a948bd6ed6f465292db9ffb0eff11f1de>`,
 which allows the scope to initialize itself.
 
 Member Function Documentation
@@ -152,13 +154,13 @@ Member Function Documentation
 |       | const              | ,       |                                      |
 |             |                        |                                      |
 | | QPreviewQueryBase: |               |                                      |
-|       | `QResult </sdk/sco |         |                                      |
+|       | :ref:`QResult <sdk_unit |         |                                      |
 |             |                        |                                      |
 | | :UPtr              |               |                                      |
-|       | pes/cpp/unity.scop |         |                                      |
+|       | y_scopes_qt_qresul |         |                                      |
 |             |                        |                                      |
 | | unity::scopes::qt: |               |                                      |
-|       | es.qt/QResult/>`__ |         |                                      |
+|       | t>`_               |         |                                      |
 |             |                        |                                      |
 | | :QScopeBase::previ |               |                                      |
 |       | &                  |         |                                      |
@@ -176,13 +178,13 @@ Member Function Documentation
 |       | `QActionMetadata < |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
-|       | /sdk/scopes/cpp/un |         |                                      |
+|       | sdk_unity_scopes_q |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
-|       | ity.scopes.qt/QAct |         |                                      |
+|       | t_qactionmetadata> |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
-|       | ionMetadata/>`__   |         |                                      |
+|       | `_                 |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
 |       | &                  |         |                                      |
@@ -238,7 +240,7 @@ Called each time a new preview is requested
 |       | scopes.SearchMetad |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
-|       | ata/>`__           |         |                                      |
+|       | ata/>`_            |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
 |       | const &            |         |                                      |
@@ -296,5 +298,5 @@ Called once at startup
 
 Called at shutdown
 
-.. |Inheritance graph| image:: /media/sdk/scopes/cpp/unity.scopes.qt/QScopeBase/classunity_1_1scopes_1_1qt_1_1_q_scope_base__inherit__graph.png
+.. |Inheritance graph| image:: /mediasdk_unity_scopes_qt_qscopebaseclassunity_1_1scopes_1_1qt_1_1_q_scope_base__inherit__graph.png
 

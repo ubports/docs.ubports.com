@@ -1,3 +1,7 @@
+.. _sdk_qtcontacts_detailfilter:
+QtContacts DetailFilter
+=======================
+
 The DetailFilter element provides a filter based around a detail value
 criterion.
 
@@ -8,14 +12,12 @@ criterion.
 Properties
 ----------
 
--  ****`detail </sdk/apps/qml/QtContacts/DetailFilter#detail-prop>`__****
+-  :ref:`detail <sdk_qtcontacts_detailfilter_detail-prop>` :
+   enumeration
+-  :ref:`field <sdk_qtcontacts_detailfilter_field-prop>` : int
+-  :ref:`matchFlags <sdk_qtcontacts_detailfilter_matchFlags-prop>`
    : enumeration
--  ****`field </sdk/apps/qml/QtContacts/DetailFilter#field-prop>`__****
-   : int
--  ****`matchFlags </sdk/apps/qml/QtContacts/DetailFilter#matchFlags-prop>`__****
-   : enumeration
--  ****`value </sdk/apps/qml/QtContacts/DetailFilter#value-prop>`__****
-   : variant
+-  :ref:`value <sdk_qtcontacts_detailfilter_value-prop>` : variant
 
 Detailed Description
 --------------------
@@ -27,6 +29,8 @@ This element is part of the **QtContacts** module.
 Property Documentation
 ----------------------
 
+.. _sdk_qtcontacts_detailfilter_detail-prop:
+
 +--------------------------------------------------------------------------+
 |        \ detail : enumeration                                            |
 +--------------------------------------------------------------------------+
@@ -34,9 +38,11 @@ Property Documentation
 This property holds the detail type of which details will be matched to.
 
 **See also**
-`ContactDetail::type </sdk/apps/qml/QtContacts/ContactDetail#type-prop>`__.
+:ref:`ContactDetail::type <sdk_qtcontacts_contactdetail#type-prop>`.
 
 | 
+
+.. _sdk_qtcontacts_detailfilter_field-prop:
 
 +--------------------------------------------------------------------------+
 |        \ field : int                                                     |
@@ -46,33 +52,31 @@ This property holds the detail field type of which detail fields will be
 matched to. Detail field types are enumeration values defined in each
 detail elements.
 
-**See also** `Address </sdk/apps/qml/QtContacts/Address/>`__,
-`Anniversary </sdk/apps/qml/QtContacts/Anniversary/>`__,
-`Avatar </sdk/apps/qml/QtContacts/Avatar/>`__,
-`Birthday </sdk/apps/qml/QtContacts/Birthday/>`__,
-`DisplayLabel </sdk/apps/qml/QtContacts/DisplayLabel/>`__,
-`EmailAddress </sdk/apps/qml/QtContacts/EmailAddress/>`__,
-`Family </sdk/apps/qml/QtContacts/Family/>`__,
-`Favorite </sdk/apps/qml/QtContacts/Favorite/>`__,
-`Gender </sdk/apps/qml/QtContacts/Gender/>`__,
-`GeoLocation </sdk/apps/qml/QtContacts/GeoLocation/>`__,
-`GlobalPresence </sdk/apps/qml/QtContacts/GlobalPresence/>`__,
-`Guid </sdk/apps/qml/QtContacts/Guid/>`__,
-`Name </sdk/apps/qml/QtContacts/Name/>`__,
-`Nickname </sdk/apps/qml/QtContacts/Nickname/>`__,
-`Note </sdk/apps/qml/QtContacts/Note/>`__,
-`OnlineAccount </sdk/apps/qml/QtContacts/OnlineAccount/>`__,
-`Organization </sdk/apps/qml/QtContacts/Organization/>`__,
-`PhoneNumber </sdk/apps/qml/QtContacts/PhoneNumber/>`__,
-`Presence </sdk/apps/qml/QtContacts/Presence/>`__,
-`Ringtone </sdk/apps/qml/QtContacts/Ringtone/>`__,
-`SyncTarget </sdk/apps/qml/QtContacts/SyncTarget/>`__,
-`Tag </sdk/apps/qml/QtContacts/Tag/>`__,
-`Timestamp </sdk/apps/qml/QtContacts/Timestamp/>`__,
-`Url </sdk/apps/qml/QtContacts/Url/>`__, and
-`Hobby </sdk/apps/qml/QtContacts/Hobby/>`__.
+**See also** :ref:`Address <sdk_qtcontacts_address>`,
+:ref:`Anniversary <sdk_qtcontacts_anniversary>`,
+:ref:`Avatar <sdk_qtcontacts_avatar>`,
+:ref:`Birthday <sdk_qtcontacts_birthday>`,
+:ref:`DisplayLabel <sdk_qtcontacts_displaylabel>`,
+:ref:`EmailAddress <sdk_qtcontacts_emailaddress>`,
+:ref:`Family <sdk_qtcontacts_family>`,
+:ref:`Favorite <sdk_qtcontacts_favorite>`,
+:ref:`Gender <sdk_qtcontacts_gender>`,
+:ref:`GeoLocation <sdk_qtcontacts_geolocation>`,
+:ref:`GlobalPresence <sdk_qtcontacts_globalpresence>`,
+:ref:`Guid <sdk_qtcontacts_guid>`, `Name <sdk_qtcontacts_name>`,
+:ref:`Nickname <sdk_qtcontacts_nickname>`, `Note <sdk_qtcontacts_note>`,
+:ref:`OnlineAccount <sdk_qtcontacts_onlineaccount>`,
+:ref:`Organization <sdk_qtcontacts_organization>`,
+:ref:`PhoneNumber <sdk_qtcontacts_phonenumber>`,
+:ref:`Presence <sdk_qtcontacts_presence>`,
+:ref:`Ringtone <sdk_qtcontacts_ringtone>`,
+:ref:`SyncTarget <sdk_qtcontacts_synctarget>`,
+:ref:`Tag <sdk_qtcontacts_tag>`, `Timestamp <sdk_qtcontacts_timestamp>`,
+:ref:`Url <sdk_qtcontacts_url>`, and `Hobby <sdk_qtcontacts_hobby>`.
 
 | 
+
+.. _sdk_qtcontacts_detailfilter_matchFlags-prop:
 
 +--------------------------------------------------------------------------+
 |        \ matchFlags : enumeration                                        |
@@ -91,6 +95,8 @@ valid match flags include:
 -  MatchCaseSensitive - The search is case sensitive.
 
 | 
+
+.. _sdk_qtcontacts_detailfilter_value-prop:
 
 +--------------------------------------------------------------------------+
 |        \ value : variant                                                 |

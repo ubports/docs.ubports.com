@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_porting_applications_from_qtmobility_sensors_to_qt_sensors:
+QtSensors Porting Applications from QtMobility Sensors to Qt Sensors
+====================================================================
+
 
 
 .. rubric:: Overview

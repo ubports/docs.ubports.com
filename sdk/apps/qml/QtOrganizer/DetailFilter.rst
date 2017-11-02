@@ -1,3 +1,7 @@
+.. _sdk_qtorganizer_detailfilter:
+QtOrganizer DetailFilter
+========================
+
 The DetailFilter element provides a filter based around a detail value
 criterion.
 
@@ -8,22 +12,21 @@ criterion.
 Properties
 ----------
 
--  ****`detail </sdk/apps/qml/QtOrganizer/DetailFilter#detail-prop>`__****
-   : Detail
+-  :ref:`detail <sdk_qtorganizer_detailfilter_detail-prop>` :
+   Detail
 
 Signals
 -------
 
--  ****`onFilterChanged </sdk/apps/qml/QtOrganizer/DetailFilter#onFilterChanged-signal>`__****\ ()
+-  :ref:`onFilterChanged <sdk_qtorganizer_detailfilter_onFilterChanged-signal>`\ ()
 
 Detailed Description
 --------------------
 
 Simple example how to utilize
-`DetailFilter </sdk/apps/qml/QtOrganizer/DetailFilter/>`__ element
-together with
-`OrganizerModel </sdk/apps/qml/QtOrganizer/OrganizerModel/>`__ and
-ListView elements:
+:ref:`DetailFilter <sdk_qtorganizer_detailfilter>` element together with
+:ref:`OrganizerModel <sdk_qtorganizer_organizermodel>` and ListView
+elements:
 
 .. code:: cpp
 
@@ -55,8 +58,10 @@ ListView elements:
 Property Documentation
 ----------------------
 
+.. _sdk_qtorganizer_detailfilter_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ detail : `Detail </sdk/apps/qml/QtOrganizer/Detail/>`__         |
+| :ref:` <>`\ detail : `Detail <sdk_qtorganizer_detail>`                 |
 +--------------------------------------------------------------------------+
 
 This property holds the detail instance used by this filter for
@@ -67,11 +72,13 @@ matching.
 Signal Documentation
 --------------------
 
+.. _sdk_qtorganizer_detailfilter_onFilterChanged()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ onFilterChanged()                                               |
 +--------------------------------------------------------------------------+
 
 **See also**
-`QtOrganizer5::Filter::onFilterChanged </sdk/apps/qml/QtOrganizer/Filter#onFilterChanged-signal>`__.
+:ref:`QtOrganizer5::Filter::onFilterChanged <sdk_qtorganizer_filter#onFilterChanged-signal>`.
 
 | 

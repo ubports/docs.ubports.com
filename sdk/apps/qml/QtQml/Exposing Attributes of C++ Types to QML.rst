@@ -1,3 +1,7 @@
+.. _sdk_qtqml_exposing_attributes_of_c++_types_to_qml:
+QtQml Exposing Attributes of C++ Types to QML
+=============================================
+
 
 
 QML can easily be extended with functionality defined in C++ code. Due
@@ -18,12 +22,12 @@ members of an instance of a QObject-derived class:
 
 (Additionally, enums are available if they have been declared with
 Q\_ENUMS. See `Data Type Conversion Between QML and
-C++ </sdk/apps/qml/QtQml/qtqml-cppintegration-data/>`__ for more
+C++ </sdk/apps/qml/QtQml/qtqml-cppintegration-data/>`_  for more
 details.)
 
 In general, these are accessible from QML regardless of whether a
 QObject-derived class has been `registered with the QML type
-system </sdk/apps/qml/QtQml/qtqml-cppintegration-definetypes#registering-c-types-with-the-qml-type-system>`__.
+system </sdk/apps/qml/QtQml/qtqml-cppintegration-definetypes/#registering-c-types-with-the-qml-type-system>`_ .
 However, if a class is to be used in a way that requires the engine to
 access additional type information — for example, if the class itself is
 to be used as a method parameter or property, or if one of its enum
@@ -32,7 +36,7 @@ registered.
 
 Also note that a number of the important concepts covered in this
 document are demonstrated in the `Writing QML Extensions with
-C++ </sdk/apps/qml/QtQml/tutorials-extending-qml/>`__ tutorial.
+C++ </sdk/apps/qml/QtQml/tutorials-extending-qml/>`_  tutorial.
 
 .. rubric:: Data Type Handling and Ownership
    :name: data-type-handling-and-ownership
@@ -44,15 +48,15 @@ must be of a type that is supported by the QML engine.
 By default, the engine supports a number of Qt C++ types and can
 automatically convert them as appropriately when used from QML.
 Additionally, C++ classes that are
-`registered </sdk/apps/qml/QtQml/qtqml-cppintegration-definetypes#registering-c-types-with-the-qml-type-system>`__
+`registered </sdk/apps/qml/QtQml/qtqml-cppintegration-definetypes/#registering-c-types-with-the-qml-type-system>`_ 
 with the QML type system can be can be used as data types, as can their
 enums if appropriately registered. See `Data Type Conversion Between QML
-and C++ </sdk/apps/qml/QtQml/qtqml-cppintegration-data/>`__ for details
+and C++ </sdk/apps/qml/QtQml/qtqml-cppintegration-data/>`_  for details
 for further information.
 
 Additionally, data ownership rules are taken into consideration when
 data is transferred from C++ to QML. See `Data
-Ownership </sdk/apps/qml/QtQml/qtqml-cppintegration-data#data-ownership>`__
+Ownership </sdk/apps/qml/QtQml/qtqml-cppintegration-data/#data-ownership>`_ 
 for more details.
 
 .. rubric:: Exposing Properties
@@ -92,7 +96,7 @@ through the ``author()`` method, and writable through the
     };
 
 If an instance of this class was `set as a context
-property </sdk/apps/qml/QtQml/qtqml-cppintegration-contextproperties/>`__
+property </sdk/apps/qml/QtQml/qtqml-cppintegration-contextproperties/>`_ 
 when loading a file named ``MyItem.qml`` from C++:
 
 .. code:: cpp
@@ -125,7 +129,7 @@ For maximum interoperability with QML, **any property that is writable
 should have an associated NOTIFY signal** that is emitted whenever the
 property value has changed. This allows the property to be used with
 `property
-binding </sdk/apps/qml/QtQml/qtqml-syntax-propertybinding/>`__, which is
+binding </sdk/apps/qml/QtQml/qtqml-syntax-propertybinding/>`_ , which is
 an essential feature of QML that enforces relationships between
 properties by automatically updating a property whenever any of its
 dependencies change in value.
@@ -165,7 +169,7 @@ The presence of a NOTIFY signal does incur a small overhead. There are
 cases where a property's value is set at object construction time, and
 does not subsequently change. The most common case of this is when a
 type uses `Grouped
-Properties </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes#grouped-properties>`__,
+Properties </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes/#grouped-properties>`_ ,
 and the grouped property object is allocated once, and only freed when
 the object is deleted. In these cases, the CONSTANT attribute may be
 added to the property declaration instead of a NOTIFY signal.
@@ -179,7 +183,7 @@ that want to be used in bindings should have a NOTIFY signal instead.
 
 Object-type properties are accessible from QML providing that the object
 type has been appropriately
-`registered </sdk/apps/qml/QtQml/qtqml-cppintegration-definetypes#registering-c-types-with-the-qml-type-system>`__
+`registered </sdk/apps/qml/QtQml/qtqml-cppintegration-definetypes/#registering-c-types-with-the-qml-type-system>`_ 
 with the QML type system.
 
 For example, the ``Message`` type might have a ``body`` property of type
@@ -203,7 +207,7 @@ For example, the ``Message`` type might have a ``body`` property of type
     }
 
 Suppose the ``Message`` type was
-`registered </sdk/apps/qml/QtQml/qtqml-cppintegration-definetypes#registering-c-types-with-the-qml-type-system>`__
+`registered </sdk/apps/qml/QtQml/qtqml-cppintegration-definetypes/#registering-c-types-with-the-qml-type-system>`_ 
 with the QML type system, allowing it to be used as an object type from
 QML code:
 
@@ -313,7 +317,7 @@ For example, suppose the ``Message::author`` property was of type
     };
 
 The ``author`` property could be written to using the `grouped property
-syntax </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes#grouped-properties>`__
+syntax </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes/#grouped-properties>`_ 
 in QML, like this:
 
 .. code:: qml
@@ -325,7 +329,7 @@ in QML, like this:
 
 A type that is exposed as a grouped property differs from an
 `object-type
-property </sdk/apps/qml/QtQml/qtqml-cppintegration-exposecppattributes#properties-with-object-types>`__
+property </sdk/apps/qml/QtQml/qtqml-cppintegration-exposecppattributes/#properties-with-object-types>`_ 
 in that the grouped property is read-only, and is initialized to a valid
 value by the parent object at construction. The grouped property's
 sub-properties may be modified from QML but the grouped property object
@@ -406,7 +410,7 @@ accessed from JavaScript expressions in QML.
 Any public signal of a QObject-derived type is accessible from QML code.
 
 The QML engine automatically creates a `signal
-handler </sdk/apps/qml/QtQml/qtqml-syntax-signals/>`__ for any signal of
+handler </sdk/apps/qml/QtQml/qtqml-syntax-signals/>`_  for any signal of
 a QObject-derived type that is used from QML. Signal handlers are always
 named *on<Signal>* where ``<Signal>`` is the name of the signal, with
 the first letter capitalized. All parameters passed by the signal are
@@ -427,7 +431,7 @@ For example, suppose the ``MessageBoard`` class has a
      };
 
 If the ``MessageBoard`` type was
-`registered </sdk/apps/qml/QtQml/qtqml-cppintegration-definetypes#registering-c-types-with-the-qml-type-system>`__
+`registered </sdk/apps/qml/QtQml/qtqml-cppintegration-definetypes/#registering-c-types-with-the-qml-type-system>`_ 
 with the QML type system, then a ``MessageBoard`` object declared in QML
 could receive the ``newMessagePosted()`` signal using a signal handler
 named ``onNewMessagePosted``, and examine the ``subject`` parameter
@@ -442,7 +446,7 @@ value:
 As with property values and method parameters, a signal parameter must
 have a type that is supported by the QML engine; see `Data Type
 Conversion Between QML and
-C++ </sdk/apps/qml/QtQml/qtqml-cppintegration-data/>`__. (Using an
+C++ </sdk/apps/qml/QtQml/qtqml-cppintegration-data/>`_ . (Using an
 unregistered type will not generate an error, but the parameter value
 will not be accessible from the handler.)
 

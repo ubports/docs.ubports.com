@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_content_contenttransfer:
+Ubuntu.Content ContentTransfer
+==============================
+
 Represents a transfer of content between two ContentPeers
 
 +---------------------+-----------------------------+
@@ -7,49 +11,51 @@ Represents a transfer of content between two ContentPeers
 Properties
 ----------
 
--  ****`contentType </sdk/apps/qml/Ubuntu.Content/ContentTransfer#contentType-prop>`__****
+-  :ref:`contentType <sdk_ubuntu_content_contenttransfer_contentType-prop>`
    : ContentType
--  ****`destination </sdk/apps/qml/Ubuntu.Content/ContentTransfer#destination-prop>`__****
+-  :ref:`destination <sdk_ubuntu_content_contenttransfer_destination-prop>`
    : QString
--  ****`direction </sdk/apps/qml/Ubuntu.Content/ContentTransfer#direction-prop>`__****
+-  :ref:`direction <sdk_ubuntu_content_contenttransfer_direction-prop>`
    : ContentTransfer.Direction
--  ****`downloadId </sdk/apps/qml/Ubuntu.Content/ContentTransfer#downloadId-prop>`__****
+-  :ref:`downloadId <sdk_ubuntu_content_contenttransfer_downloadId-prop>`
    : string
--  ****`items </sdk/apps/qml/Ubuntu.Content/ContentTransfer#items-prop>`__****
-   : list<ContentItem>
--  ****`selectionType </sdk/apps/qml/Ubuntu.Content/ContentTransfer#selectionType-prop>`__****
+-  :ref:`items <sdk_ubuntu_content_contenttransfer_items-prop>` :
+   list<ContentItem>
+-  :ref:`selectionType <sdk_ubuntu_content_contenttransfer_selectionType-prop>`
    : ContentTransfer.SelectionType
--  ****`source </sdk/apps/qml/Ubuntu.Content/ContentTransfer#source-prop>`__****
-   : QString
--  ****`state </sdk/apps/qml/Ubuntu.Content/ContentTransfer#state-prop>`__****
-   : ContentTransfer.State
--  ****`store </sdk/apps/qml/Ubuntu.Content/ContentTransfer#store-prop>`__****
-   : string
+-  :ref:`source <sdk_ubuntu_content_contenttransfer_source-prop>` :
+   QString
+-  :ref:`state <sdk_ubuntu_content_contenttransfer_state-prop>` :
+   ContentTransfer.State
+-  :ref:`store <sdk_ubuntu_content_contenttransfer_store-prop>` :
+   string
 
 Methods
 -------
 
--  ****`finalize </sdk/apps/qml/Ubuntu.Content/ContentTransfer#finalize-method>`__****\ ()
--  ****`start </sdk/apps/qml/Ubuntu.Content/ContentTransfer#start-method>`__****\ ()
+-  :ref:`finalize <sdk_ubuntu_content_contenttransfer_finalize-method>`\ ()
+-  :ref:`start <sdk_ubuntu_content_contenttransfer_start-method>`\ ()
 
 Detailed Description
 --------------------
 
-See documentation for
-`ContentHub </sdk/apps/qml/Ubuntu.Content/ContentHub/>`__
+See documentation for :ref:`ContentHub <sdk_ubuntu_content_contenthub>`
 
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_content_contenttransfer_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ contentType :                                                   |
-| `ContentType </sdk/apps/qml/Ubuntu.Content/ContentType/>`__              |
+| :ref:` <>`\ contentType : `ContentType <sdk_ubuntu_content_contenttype>`  |
 +--------------------------------------------------------------------------+
 
-Specifies the
-`ContentType </sdk/apps/qml/Ubuntu.Content/ContentType/>`__ requested.
+Specifies the :ref:`ContentType <sdk_ubuntu_content_contenttype>`
+requested.
 
 | 
+
+.. _sdk_ubuntu_content_contenttransfer_destination-prop:
 
 +--------------------------------------------------------------------------+
 |        \ destination : QString                                           |
@@ -59,27 +65,30 @@ Provides the app id of the destination application for this transfer
 
 | 
 
+.. _sdk_ubuntu_content_contenttransfer_direction-prop:
+
 +--------------------------------------------------------------------------+
 |        \ direction :                                                     |
-| `ContentTransfer </sdk/apps/qml/Ubuntu.Content/ContentTransfer/>`__.Dire |
-| ction                                                                    |
+| :ref:`ContentTransfer <sdk_ubuntu_content_contenttransfer>`.Direction       |
 +--------------------------------------------------------------------------+
 
 ContentTransfer::direction indicates if this transferobject is used for
 import or export transaction
 
-*`ContentTransfer </sdk/apps/qml/Ubuntu.Content/ContentTransfer/>`__.Direction*
-is an enumeration:
+*:ref:`ContentTransfer <sdk_ubuntu_content_contenttransfer>`.Direction* is
+an enumeration:
 Direction
 Description
-`ContentTransfer </sdk/apps/qml/Ubuntu.Content/ContentTransfer/>`__.Import
+:ref:`ContentTransfer <sdk_ubuntu_content_contenttransfer>`.Import
 Transfer is a request to import content.
-`ContentTransfer </sdk/apps/qml/Ubuntu.Content/ContentTransfer/>`__.Export
+:ref:`ContentTransfer <sdk_ubuntu_content_contenttransfer>`.Export
 Transfer is a request to export content.
-`ContentTransfer </sdk/apps/qml/Ubuntu.Content/ContentTransfer/>`__.Share
+:ref:`ContentTransfer <sdk_ubuntu_content_contenttransfer>`.Share
 Transfer is a request to share content.
 
 | 
+
+.. _sdk_ubuntu_content_contenttransfer_downloadId-prop:
 
 +--------------------------------------------------------------------------+
 |        \ downloadId : string                                             |
@@ -90,35 +99,39 @@ transfered to the selected peer.
 
 | 
 
+.. _sdk_ubuntu_content_contenttransfer_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ items :                                                         |
-| list<`ContentItem </sdk/apps/qml/Ubuntu.Content/ContentItem/>`__>        |
+| :ref:` <>`\ items : list<`ContentItem <sdk_ubuntu_content_contentitem>`>  |
 +--------------------------------------------------------------------------+
 
 List of items included in the
-`ContentTransfer </sdk/apps/qml/Ubuntu.Content/ContentTransfer/>`__
+:ref:`ContentTransfer <sdk_ubuntu_content_contenttransfer>`
 
 | 
 
+.. _sdk_ubuntu_content_contenttransfer_selectionType-prop:
+
 +--------------------------------------------------------------------------+
 |        \ selectionType :                                                 |
-| `ContentTransfer </sdk/apps/qml/Ubuntu.Content/ContentTransfer/>`__.Sele |
-| ctionType                                                                |
+| :ref:`ContentTransfer <sdk_ubuntu_content_contenttransfer>`.SelectionType   |
 +--------------------------------------------------------------------------+
 
 ContentTransfer::selectionType indicates if this transfer object allows
 single or multiple selection of items
 
-*`ContentTransfer </sdk/apps/qml/Ubuntu.Content/ContentTransfer/>`__.SelectionType*
+*:ref:`ContentTransfer <sdk_ubuntu_content_contenttransfer>`.SelectionType*
 is an enumeration:
 Type
 Description
-`ContentTransfer </sdk/apps/qml/Ubuntu.Content/ContentTransfer/>`__.Single
+:ref:`ContentTransfer <sdk_ubuntu_content_contenttransfer>`.Single
 Transfer should contain a single item.
-`ContentTransfer </sdk/apps/qml/Ubuntu.Content/ContentTransfer/>`__.Multiple
+:ref:`ContentTransfer <sdk_ubuntu_content_contenttransfer>`.Multiple
 Transfer can contain multiple items.
 
 | 
+
+.. _sdk_ubuntu_content_contenttransfer_source-prop:
 
 +--------------------------------------------------------------------------+
 |        \ source : QString                                                |
@@ -128,68 +141,74 @@ Provides the app id of the source application for this transfer
 
 | 
 
+.. _sdk_ubuntu_content_contenttransfer_state-prop:
+
 +--------------------------------------------------------------------------+
 |        \ state :                                                         |
-| `ContentTransfer </sdk/apps/qml/Ubuntu.Content/ContentTransfer/>`__.Stat |
-| e                                                                        |
+| :ref:`ContentTransfer <sdk_ubuntu_content_contenttransfer>`.State           |
 +--------------------------------------------------------------------------+
 
-*`ContentTransfer </sdk/apps/qml/Ubuntu.Content/ContentTransfer/>`__.State*
-is an enumeration:
+*:ref:`ContentTransfer <sdk_ubuntu_content_contenttransfer>`.State* is an
+enumeration:
 State
 Description
-`ContentTransfer </sdk/apps/qml/Ubuntu.Content/ContentTransfer/>`__.Created
+:ref:`ContentTransfer <sdk_ubuntu_content_contenttransfer>`.Created
 Transfer created, waiting to be initiated.
-`ContentTransfer </sdk/apps/qml/Ubuntu.Content/ContentTransfer/>`__.Initiated
+:ref:`ContentTransfer <sdk_ubuntu_content_contenttransfer>`.Initiated
 Transfer has been initiated.
-`ContentTransfer </sdk/apps/qml/Ubuntu.Content/ContentTransfer/>`__.InProgress
+:ref:`ContentTransfer <sdk_ubuntu_content_contenttransfer>`.InProgress
 Transfer is in progress.
-`ContentTransfer </sdk/apps/qml/Ubuntu.Content/ContentTransfer/>`__.Downloading
+:ref:`ContentTransfer <sdk_ubuntu_content_contenttransfer>`.Downloading
 Transfer is downloading item specified by
-`downloadId </sdk/apps/qml/Ubuntu.Content/ContentTransfer#downloadId-prop>`__.
-`ContentTransfer </sdk/apps/qml/Ubuntu.Content/ContentTransfer/>`__.Downloaded
+:ref:`downloadId <sdk_ubuntu_content_contenttransfer#downloadId-prop>`.
+:ref:`ContentTransfer <sdk_ubuntu_content_contenttransfer>`.Downloaded
 Download specified by
-`downloadId </sdk/apps/qml/Ubuntu.Content/ContentTransfer#downloadId-prop>`__
-has completed.
-`ContentTransfer </sdk/apps/qml/Ubuntu.Content/ContentTransfer/>`__.Charged
+:ref:`downloadId <sdk_ubuntu_content_contenttransfer#downloadId-prop>` has
+completed.
+:ref:`ContentTransfer <sdk_ubuntu_content_contenttransfer>`.Charged
 Transfer is charged with items and ready to be collected.
-`ContentTransfer </sdk/apps/qml/Ubuntu.Content/ContentTransfer/>`__.Collected
+:ref:`ContentTransfer <sdk_ubuntu_content_contenttransfer>`.Collected
 Items in the transfer have been collected.
-`ContentTransfer </sdk/apps/qml/Ubuntu.Content/ContentTransfer/>`__.Aborted
+:ref:`ContentTransfer <sdk_ubuntu_content_contenttransfer>`.Aborted
 Transfer has been aborted.
-`ContentTransfer </sdk/apps/qml/Ubuntu.Content/ContentTransfer/>`__.Finalized
+:ref:`ContentTransfer <sdk_ubuntu_content_contenttransfer>`.Finalized
 Transfer has been finished and cleaned up.
 
 | 
+
+.. _sdk_ubuntu_content_contenttransfer_store-prop:
 
 +--------------------------------------------------------------------------+
 |        \ store : string                                                  |
 +--------------------------------------------------------------------------+
 
-`ContentStore </sdk/apps/qml/Ubuntu.Content/ContentStore/>`__ where the
-`ContentTransfer </sdk/apps/qml/Ubuntu.Content/ContentTransfer/>`__ will
-add items
+:ref:`ContentStore <sdk_ubuntu_content_contentstore>` where the
+:ref:`ContentTransfer <sdk_ubuntu_content_contenttransfer>` will add items
 
 | 
 
 Method Documentation
 --------------------
 
+.. _sdk_ubuntu_content_contenttransfer_finalize-method:
+
 +--------------------------------------------------------------------------+
 |        \ finalize()                                                      |
 +--------------------------------------------------------------------------+
 
 Sets State to
-`ContentTransfer </sdk/apps/qml/Ubuntu.Content/ContentTransfer/>`__.Finalized
-and cleans up temporary files
+:ref:`ContentTransfer <sdk_ubuntu_content_contenttransfer>`.Finalized and
+cleans up temporary files
 
 | 
+
+.. _sdk_ubuntu_content_contenttransfer_start-method:
 
 +--------------------------------------------------------------------------+
 |        \ start()                                                         |
 +--------------------------------------------------------------------------+
 
 Start the transfer, this sets the State to
-`ContentTransfer </sdk/apps/qml/Ubuntu.Content/ContentTransfer/>`__.Initiated
+:ref:`ContentTransfer <sdk_ubuntu_content_contenttransfer>`.Initiated
 
 | 

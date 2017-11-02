@@ -1,3 +1,7 @@
+.. _sdk_qtquick_pathquad:
+QtQuick PathQuad
+================
+
 Defines a quadratic Bezier curve with a control point
 
 +---------------------+----------------------+
@@ -7,20 +11,16 @@ Defines a quadratic Bezier curve with a control point
 Properties
 ----------
 
--  ****`controlX </sdk/apps/qml/QtQuick/PathQuad#controlX-prop>`__**** :
-   real
--  ****`controlY </sdk/apps/qml/QtQuick/PathQuad#controlY-prop>`__**** :
-   real
--  ****`relativeControlX </sdk/apps/qml/QtQuick/PathQuad#relativeControlX-prop>`__****
+-  :ref:`controlX <sdk_qtquick_pathquad_controlX-prop>` : real
+-  :ref:`controlY <sdk_qtquick_pathquad_controlY-prop>` : real
+-  :ref:`relativeControlX <sdk_qtquick_pathquad_relativeControlX-prop>`
    : real
--  ****`relativeControlY </sdk/apps/qml/QtQuick/PathQuad#relativeControlY-prop>`__****
+-  :ref:`relativeControlY <sdk_qtquick_pathquad_relativeControlY-prop>`
    : real
--  ****`relativeX </sdk/apps/qml/QtQuick/PathQuad#relativeX-prop>`__****
-   : real
--  ****`relativeY </sdk/apps/qml/QtQuick/PathQuad#relativeY-prop>`__****
-   : real
--  ****`x </sdk/apps/qml/QtQuick/PathQuad#x-prop>`__**** : real
--  ****`y </sdk/apps/qml/QtQuick/PathQuad#y-prop>`__**** : real
+-  :ref:`relativeX <sdk_qtquick_pathquad_relativeX-prop>` : real
+-  :ref:`relativeY <sdk_qtquick_pathquad_relativeY-prop>` : real
+-  :ref:`x <sdk_qtquick_pathquad_x-prop>` : real
+-  :ref:`y <sdk_qtquick_pathquad_y-prop>` : real
 
 Detailed Description
 --------------------
@@ -37,15 +37,16 @@ The following QML produces the path shown below:
 |                                      |     }                                |
 +--------------------------------------+--------------------------------------+
 
-**See also** `Path </sdk/apps/qml/QtQuick/Path/>`__,
-`PathCubic </sdk/apps/qml/QtQuick/PathCubic/>`__,
-`PathLine </sdk/apps/qml/QtQuick/PathLine/>`__,
-`PathArc </sdk/apps/qml/QtQuick/PathArc/>`__,
-`PathCurve </sdk/apps/qml/QtQuick/PathCurve/>`__, and
-`PathSvg </sdk/apps/qml/QtQuick/PathSvg/>`__.
+**See also** :ref:`Path <sdk_qtquick_path>`,
+:ref:`PathCubic <sdk_qtquick_pathcubic>`,
+:ref:`PathLine <sdk_qtquick_pathline>`, `PathArc <sdk_qtquick_patharc>`,
+:ref:`PathCurve <sdk_qtquick_pathcurve>`, and
+:ref:`PathSvg <sdk_qtquick_pathsvg>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_pathquad_controlX-prop:
 
 +--------------------------------------------------------------------------+
 |        \ controlX : real                                                 |
@@ -55,6 +56,8 @@ Defines the position of the control point.
 
 | 
 
+.. _sdk_qtquick_pathquad_controlY-prop:
+
 +--------------------------------------------------------------------------+
 |        \ controlY : real                                                 |
 +--------------------------------------------------------------------------+
@@ -62,6 +65,8 @@ Defines the position of the control point.
 Defines the position of the control point.
 
 | 
+
+.. _sdk_qtquick_pathquad_relativeControlX-prop:
 
 +--------------------------------------------------------------------------+
 |        \ relativeControlX : real                                         |
@@ -75,10 +80,12 @@ single axis, the relative position will be used.
 Relative and absolute positions can be mixed, for example it is valid to
 set a relative control x and an absolute control y.
 
-**See also** `controlX </sdk/apps/qml/QtQuick/PathQuad#controlX-prop>`__
-and `controlY </sdk/apps/qml/QtQuick/PathQuad#controlY-prop>`__.
+**See also** :ref:`controlX <sdk_qtquick_pathquad#controlX-prop>` and
+:ref:`controlY <sdk_qtquick_pathquad#controlY-prop>`.
 
 | 
+
+.. _sdk_qtquick_pathquad_relativeControlY-prop:
 
 +--------------------------------------------------------------------------+
 |        \ relativeControlY : real                                         |
@@ -92,10 +99,12 @@ single axis, the relative position will be used.
 Relative and absolute positions can be mixed, for example it is valid to
 set a relative control x and an absolute control y.
 
-**See also** `controlX </sdk/apps/qml/QtQuick/PathQuad#controlX-prop>`__
-and `controlY </sdk/apps/qml/QtQuick/PathQuad#controlY-prop>`__.
+**See also** :ref:`controlX <sdk_qtquick_pathquad#controlX-prop>` and
+:ref:`controlY <sdk_qtquick_pathquad#controlY-prop>`.
 
 | 
+
+.. _sdk_qtquick_pathquad_relativeX-prop:
 
 +--------------------------------------------------------------------------+
 |        \ relativeX : real                                                |
@@ -109,10 +118,12 @@ axis, the relative position will be used.
 Relative and absolute positions can be mixed, for example it is valid to
 set a relative x and an absolute y.
 
-**See also** `x </sdk/apps/qml/QtQuick/PathQuad#x-prop>`__ and
-`y </sdk/apps/qml/QtQuick/PathQuad#y-prop>`__.
+**See also** :ref:`x <sdk_qtquick_pathquad#x-prop>` and
+:ref:`y <sdk_qtquick_pathquad#y-prop>`.
 
 | 
+
+.. _sdk_qtquick_pathquad_relativeY-prop:
 
 +--------------------------------------------------------------------------+
 |        \ relativeY : real                                                |
@@ -126,10 +137,12 @@ axis, the relative position will be used.
 Relative and absolute positions can be mixed, for example it is valid to
 set a relative x and an absolute y.
 
-**See also** `x </sdk/apps/qml/QtQuick/PathQuad#x-prop>`__ and
-`y </sdk/apps/qml/QtQuick/PathQuad#y-prop>`__.
+**See also** :ref:`x <sdk_qtquick_pathquad#x-prop>` and
+:ref:`y <sdk_qtquick_pathquad#y-prop>`.
 
 | 
+
+.. _sdk_qtquick_pathquad_x-prop:
 
 +--------------------------------------------------------------------------+
 |        \ x : real                                                        |
@@ -137,11 +150,12 @@ set a relative x and an absolute y.
 
 Defines the end point of the curve.
 
-**See also**
-`relativeX </sdk/apps/qml/QtQuick/PathQuad#relativeX-prop>`__ and
-`relativeY </sdk/apps/qml/QtQuick/PathQuad#relativeY-prop>`__.
+**See also** :ref:`relativeX <sdk_qtquick_pathquad#relativeX-prop>` and
+:ref:`relativeY <sdk_qtquick_pathquad#relativeY-prop>`.
 
 | 
+
+.. _sdk_qtquick_pathquad_y-prop:
 
 +--------------------------------------------------------------------------+
 |        \ y : real                                                        |
@@ -149,11 +163,10 @@ Defines the end point of the curve.
 
 Defines the end point of the curve.
 
-**See also**
-`relativeX </sdk/apps/qml/QtQuick/PathQuad#relativeX-prop>`__ and
-`relativeY </sdk/apps/qml/QtQuick/PathQuad#relativeY-prop>`__.
+**See also** :ref:`relativeX <sdk_qtquick_pathquad#relativeX-prop>` and
+:ref:`relativeY <sdk_qtquick_pathquad#relativeY-prop>`.
 
 | 
 
-.. |image0| image:: /media/sdk/apps/qml/QtQuick/PathQuad/images/declarative-pathquad.png
+.. |image0| image:: /mediasdk_qtquick_pathquadimages/declarative-pathquad.png
 

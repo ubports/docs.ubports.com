@@ -1,3 +1,7 @@
+.. _sdk_qtquick_c++_extension_points_provided_by_qt_quick:
+QtQuick C++ Extension Points Provided By Qt Quick
+=================================================
+
 
 
 All QML applications can be extended from C++ in order to use additional
@@ -39,7 +43,7 @@ The Qt Quick C++ API provides various classes to enable custom nodes to
 be created in C++.
 
 See the `Qt Quick Scene
-Graph </sdk/apps/qml/QtQuick/qtquick-visualcanvas-scenegraph/>`__
+Graph </sdk/apps/qml/QtQuick/qtquick-visualcanvas-scenegraph/>`_ 
 documentation for details.
 
        \        

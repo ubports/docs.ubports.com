@@ -1,3 +1,7 @@
+.. _sdk_qtqml_listelement:
+QtQml ListElement
+=================
+
 Defines a data item in a ListModel
 
 +---------------------+---------------------------+
@@ -7,10 +11,9 @@ Defines a data item in a ListModel
 Detailed Description
 --------------------
 
-List elements are defined inside
-`ListModel </sdk/apps/qml/QtQml/ListModel/>`__ definitions, and
-represent items in a list that will be displayed using ListView or
-Repeater items.
+List elements are defined inside :ref:`ListModel <sdk_qtqml_listmodel>`
+definitions, and represent items in a list that will be displayed using
+ListView or Repeater items.
 
 List elements are defined like other QML elements except that they
 contain a collection of *role* definitions instead of properties. Using
@@ -70,4 +73,4 @@ referring to ``name`` and ``cost``:
         }
     }
 
-**See also** `ListModel </sdk/apps/qml/QtQml/ListModel/>`__.
+**See also** :ref:`ListModel <sdk_qtqml_listmodel>`.

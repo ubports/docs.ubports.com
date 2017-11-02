@@ -1,3 +1,7 @@
+.. _sdk_qtcontacts_url:
+QtContacts Url
+==============
+
 The Url element contains a url associated with a contact.
 
 +---------------------+-------------------------+
@@ -7,9 +11,8 @@ The Url element contains a url associated with a contact.
 Properties
 ----------
 
--  ****`subType </sdk/apps/qml/QtContacts/Url#subType-prop>`__**** :
-   enumeration
--  ****`url </sdk/apps/qml/QtContacts/Url#url-prop>`__**** : string
+-  :ref:`subType <sdk_qtcontacts_url_subType-prop>` : enumeration
+-  :ref:`url <sdk_qtcontacts_url_url-prop>` : string
 
 Detailed Description
 --------------------
@@ -24,6 +27,8 @@ This element is part of the **QtContacts** module.
 Property Documentation
 ----------------------
 
+.. _sdk_qtcontacts_url_subType-prop:
+
 +--------------------------------------------------------------------------+
 |        \ subType : enumeration                                           |
 +--------------------------------------------------------------------------+
@@ -36,6 +41,8 @@ This property holds the sub type of a QContactUrl.
    URLs (or bookmarks).
 
 | 
+
+.. _sdk_qtcontacts_url_url-prop:
 
 +--------------------------------------------------------------------------+
 |        \ url : string                                                    |

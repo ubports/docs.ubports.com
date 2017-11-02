@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_orientationsensor:
+QtSensors OrientationSensor
+===========================
+
 The OrientationSensor element reports device orientation.
 
 +--------------------------------------+--------------------------------------+
@@ -5,18 +9,16 @@ The OrientationSensor element reports device orientation.
 +--------------------------------------+--------------------------------------+
 | Since:                               | QtSensors 5.0                        |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Sensor </sdk/apps/qml/QtSensors/Sen |
-|                                      | sor/>`__                             |
+| Inherits:                            | :ref:`Sensor <sdk_qtsensors_sensor>` |
 +--------------------------------------+--------------------------------------+
 
 Detailed Description
 --------------------
 
-The `OrientationSensor </sdk/apps/qml/QtSensors/OrientationSensor/>`__
-element reports device orientation.
+The :ref:`OrientationSensor <sdk_qtsensors_orientationsensor>` element
+reports device orientation.
 
 This element wraps the QOrientationSensor class. Please see the
 documentation for QOrientationSensor for details.
 
-**See also**
-`OrientationReading </sdk/apps/qml/QtSensors/OrientationReading/>`__.
+**See also** :ref:`OrientationReading <sdk_qtsensors_orientationreading>`.

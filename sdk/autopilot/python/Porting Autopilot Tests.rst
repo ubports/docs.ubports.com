@@ -1,35 +1,39 @@
+.. _sdk_porting_autopilot_tests:
+Porting Autopilot Tests
+=======================
+
 This document contains hints as to what is required to port a test suite
 from any version of autopilot to any newer version.
 
 Contents
 
 -  `Porting Autopilot
-   Tests </sdk/autopilot/python/porting-porting#porting-autopilot-tests>`__
+   Tests </sdk/autopilot/python/porting-porting/#porting-autopilot-tests>`_ 
 
    -  `A note on
-      Versions </sdk/autopilot/python/porting-porting#a-note-on-versions>`__
+      Versions </sdk/autopilot/python/porting-porting/#a-note-on-versions>`_ 
    -  `Porting to Autopilot
-      v1.4.x </sdk/autopilot/python/porting-porting#porting-to-autopilot-v1-4-x>`__
+      v1.4.x </sdk/autopilot/python/porting-porting/#porting-to-autopilot-v1-4-x>`_ 
 
       -  `Gtk Tests and Boolean
-         Parameters </sdk/autopilot/python/porting-porting#gtk-tests-and-boolean-parameters>`__
+         Parameters </sdk/autopilot/python/porting-porting/#gtk-tests-and-boolean-parameters>`_ 
       -  ```select_single``
-         Changes </sdk/autopilot/python/porting-porting#select-single-changes>`__
+         Changes </sdk/autopilot/python/porting-porting/#select-single-changes>`_ 
       -  `DBus backends and ``DBusIntrospectionObject``
-         changes </sdk/autopilot/python/porting-porting#dbus-backends-and-dbusintrospectionobject-changes>`__
-      -  `Python 3 </sdk/autopilot/python/porting-porting#python-3>`__
+         changes </sdk/autopilot/python/porting-porting/#dbus-backends-and-dbusintrospectionobject-changes>`_ 
+      -  `Python 3 </sdk/autopilot/python/porting-porting/#python-3>`_ 
 
    -  `Porting to Autopilot
-      v1.3.x </sdk/autopilot/python/porting-porting#porting-to-autopilot-v1-3-x>`__
+      v1.3.x </sdk/autopilot/python/porting-porting/#porting-to-autopilot-v1-3-x>`_ 
 
       -  ```QtIntrospectionTestMixin`` and ``GtkIntrospectionTestMixin``
          no longer
-         exist </sdk/autopilot/python/porting-porting#qtintrospectiontestmixin-and-gtkintrospectiontestmixin-no-longer-exist>`__
+         exist </sdk/autopilot/python/porting-porting/#qtintrospectiontestmixin-and-gtkintrospectiontestmixin-no-longer-exist>`_ 
       -  ```autopilot.emulators`` namespace has been
-         deprecated </sdk/autopilot/python/porting-porting#autopilot-emulators-namespace-has-been-deprecated>`__
+         deprecated </sdk/autopilot/python/porting-porting/#autopilot-emulators-namespace-has-been-deprecated>`_ 
 
 .. rubric:: `A note on
-   Versions </sdk/autopilot/python/porting-porting#id2>`__\ ` <#a-note-on-versions>`__
+   Versions </sdk/autopilot/python/porting-porting/#id2>`_ \ ` <#a-note-on-versions>`_ 
    :name: a-note-on-versions
 
 Autopilot releases are reasonably tightly coupled with Ubuntu releases.
@@ -43,7 +47,7 @@ that version 1.2 is the lowest version of autopilot present “in the
 wild”.
 
 .. rubric:: `Porting to Autopilot
-   v1.4.x </sdk/autopilot/python/porting-porting#id3>`__\ ` <#porting-to-autopilot-v1-4-x>`__
+   v1.4.x </sdk/autopilot/python/porting-porting/#id3>`_ \ ` <#porting-to-autopilot-v1-4-x>`_ 
    :name: porting-to-autopilot-v1.4.x
 
 The 1.4 release contains several changes that required a break in the
@@ -51,11 +55,11 @@ DBus wire protocol between autopilot and the applications under test.
 Most of these changes require no change to test code.
 
 .. rubric:: `Gtk Tests and Boolean
-   Parameters </sdk/autopilot/python/porting-porting#id4>`__\ ` <#gtk-tests-and-boolean-parameters>`__
+   Parameters </sdk/autopilot/python/porting-porting/#id4>`_ \ ` <#gtk-tests-and-boolean-parameters>`_ 
    :name: gtk-tests-and-boolean-parameters
 
 Version 1.3 of the autopilot-gtk backend contained `a
-bug <https://bugs.launchpad.net/autopilot-gtk/+bug/1214249>`__ that
+bug <https://bugs.launchpad.net/autopilot-gtk/+bug/1214249>`_  that
 caused all Boolean properties to be exported as integers instead of
 boolean values. This in turn meant that test code would fail to return
 the correct objects when using selection criteria such as:
@@ -73,7 +77,7 @@ and instead had to write something like this:
 This bug has now been fixed, and using the integer selection will fail.
 
 .. rubric:: ```select_single``
-   Changes </sdk/autopilot/python/porting-porting#id5>`__\ ` <#select-single-changes>`__
+   Changes </sdk/autopilot/python/porting-porting/#id5>`_ \ ` <#select-single-changes>`_ 
    :name: select_single-changes
 
 The ``select_single`` method used to return ``None`` in the case where
@@ -126,7 +130,7 @@ situation, two changes have been made:
    class="section">
 
 .. rubric:: `DBus backends and ``DBusIntrospectionObject``
-   changes </sdk/autopilot/python/porting-porting#id6>`__\ ` <#dbus-backends-and-dbusintrospectionobject-changes>`__
+   changes </sdk/autopilot/python/porting-porting/#id6>`_ \ ` <#dbus-backends-and-dbusintrospectionobject-changes>`_ 
    :name: dbus-backends-and-dbusintrospectionobject-changes
 
 Due to a change in how ``DBusIntrospectionObject`` objects store their
@@ -159,14 +163,14 @@ You will instead need to have something like this instead:
     all_keys = app_proxy.select_many(KeyCustomProxy)
 
 .. rubric:: `Python
-   3 </sdk/autopilot/python/porting-porting#id7>`__\ ` <#python-3>`__
+   3 </sdk/autopilot/python/porting-porting/#id7>`_ \ ` <#python-3>`_ 
    :name: python-3
 
 Starting from version 1.4, autopilot supports python 3 as well as python
 2. Test authors can choose to target either version of python.
 
 .. rubric:: `Porting to Autopilot
-   v1.3.x </sdk/autopilot/python/porting-porting#id8>`__\ ` <#porting-to-autopilot-v1-3-x>`__
+   v1.3.x </sdk/autopilot/python/porting-porting/#id8>`_ \ ` <#porting-to-autopilot-v1-3-x>`_ 
    :name: porting-to-autopilot-v1.3.x
 
 The 1.3 release included many API breaking changes. Earlier versions of
@@ -206,7 +210,7 @@ Note
 
 There is an API breakage in autopilot 1.3. The changes outlined under
 the heading “\ `*DBus backends and DBusIntrospectionObject
-changes* </sdk/autopilot/python/porting-porting#dbus-backends>`__\ ”
+changes* </sdk/autopilot/python/porting-porting/#dbus-backends>`_ \ ”
 apply to version 1.3.1+13.10.20131003.1-0ubuntu1 and onwards .
 
    id="qtintrospectiontestmixin-and-gtkintrospectiontestmixin-no-longer-exist"
@@ -214,7 +218,7 @@ apply to version 1.3.1+13.10.20131003.1-0ubuntu1 and onwards .
 
 .. rubric:: ```QtIntrospectionTestMixin`` and
    ``GtkIntrospectionTestMixin`` no longer
-   exist </sdk/autopilot/python/porting-porting#id9>`__\ ` <#qtintrospectiontestmixin-and-gtkintrospectiontestmixin-no-longer-exist>`__
+   exist </sdk/autopilot/python/porting-porting/#id9>`_ \ ` <#qtintrospectiontestmixin-and-gtkintrospectiontestmixin-no-longer-exist>`_ 
    :name: qtintrospectiontestmixin-and-gtkintrospectiontestmixin-no-longer-exist
 
 In autopilot 1.2, tests enabled application introspection services by
@@ -236,7 +240,7 @@ like this:
             self.app = self.launch_test_application("../../my-app")
 
 In Autopilot 1.3, the
-```AutopilotTestCase`` </sdk/autopilot/python/autopilot.testcase/AutopilotTestCase#autopilot.testcase.AutopilotTestCase>`__
+:ref:```AutopilotTestCase`` <sdk_autopilot_testcase_autopilottestcase#autopilot.testcase.AutopilotTestCase>`
 class contains this functionality directly, so the
 ``QtIntrospectionTestMixin`` and ``GtkIntrospectionTestMixin`` classes
 no longer exist. The above example becomes simpler:
@@ -267,13 +271,13 @@ If this process fails, you can specify the application type manually:
 See also
 
 Method
-```autopilot.testcase.AutopilotTestCase.launch_test_application`` </sdk/autopilot/python/autopilot.testcase/AutopilotTestCase#autopilot.testcase.AutopilotTestCase.launch_test_application>`__
+:ref:```autopilot.testcase.AutopilotTestCase.launch_test_application`` <sdk_autopilot_testcase_autopilottestcase#autopilot.testcase.AutopilotTestCase.launch_test_application>`
     Launch test applications.
 
    class="section">
 
 .. rubric:: ```autopilot.emulators`` namespace has been
-   deprecated </sdk/autopilot/python/porting-porting#id10>`__\ ` <#autopilot-emulators-namespace-has-been-deprecated>`__
+   deprecated </sdk/autopilot/python/porting-porting/#id10>`_ \ ` <#autopilot-emulators-namespace-has-been-deprecated>`_ 
    :name: autopilot.emulators-namespace-has-been-deprecated
 
 In autopilot 1.2 and earlier, the ``autopilot.emulators`` package held

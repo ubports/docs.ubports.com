@@ -1,5 +1,9 @@
+.. _sdk_childscope:
+ChildScope
+==========
+
 A container for details about an aggregator's child scope.
-`More... </sdk/scopes/cpp/unity.scopes.ChildScope#details>`__
+`More... </sdk/scopes/cpp/unity.scopes.ChildScope/#details>`_ 
 
 ``#include <unity/scopes/ChildScope.h>``
 
@@ -8,15 +12,15 @@ A container for details about an aggregator's child scope.
 
  
 
-`ChildScope </sdk/scopes/cpp/unity.scopes.ChildScope#a53d12d33536c16052f7a086e7d71e0de>`__
+`ChildScope </sdk/scopes/cpp/unity.scopes.ChildScope/#a53d12d33536c16052f7a086e7d71e0de>`_ 
 (std::string const
-&\ `id </sdk/scopes/cpp/unity.scopes.ChildScope#a38d1886c0459736186d6b9be548c75f5>`__,
-`ScopeMetadata </sdk/scopes/cpp/unity.scopes.ScopeMetadata/>`__ const
-&\ `metadata </sdk/scopes/cpp/unity.scopes.ChildScope#aade25bfd5f842dacbfc068d2ede3818e>`__,
+&\ `id </sdk/scopes/cpp/unity.scopes.ChildScope/#a38d1886c0459736186d6b9be548c75f5>`_ ,
+`ScopeMetadata </sdk/scopes/cpp/unity.scopes.ScopeMetadata/>`_  const
+&\ `metadata </sdk/scopes/cpp/unity.scopes.ChildScope/#aade25bfd5f842dacbfc068d2ede3818e>`_ ,
 bool
-`enabled </sdk/scopes/cpp/unity.scopes.ChildScope#aec9331d1f603d0a8eb77fafa59e1e829>`__\ =true,
+`enabled </sdk/scopes/cpp/unity.scopes.ChildScope/#aec9331d1f603d0a8eb77fafa59e1e829>`_ \ =true,
 std::set< std::string > const
-&\ `keywords </sdk/scopes/cpp/unity.scopes.ChildScope#a728e308053d201dfb321f2ba49e4cdc8>`__\ ={})
+&\ `keywords </sdk/scopes/cpp/unity.scopes.ChildScope/#a728e308053d201dfb321f2ba49e4cdc8>`_ \ ={})
 
  
 
@@ -30,7 +34,7 @@ std::set< std::string > const
 
         std::string 
 
-`id </sdk/scopes/cpp/unity.scopes.ChildScope#a38d1886c0459736186d6b9be548c75f5>`__
+`id </sdk/scopes/cpp/unity.scopes.ChildScope/#a38d1886c0459736186d6b9be548c75f5>`_ 
 
  
 
@@ -38,9 +42,9 @@ std::set< std::string > const
 
  
 
-        `ScopeMetadata </sdk/scopes/cpp/unity.scopes.ScopeMetadata/>`__ 
+        `ScopeMetadata </sdk/scopes/cpp/unity.scopes.ScopeMetadata/>`_  
 
-`metadata </sdk/scopes/cpp/unity.scopes.ChildScope#aade25bfd5f842dacbfc068d2ede3818e>`__
+`metadata </sdk/scopes/cpp/unity.scopes.ChildScope/#aade25bfd5f842dacbfc068d2ede3818e>`_ 
 
  
 
@@ -50,7 +54,7 @@ std::set< std::string > const
 
         bool 
 
-`enabled </sdk/scopes/cpp/unity.scopes.ChildScope#aec9331d1f603d0a8eb77fafa59e1e829>`__
+`enabled </sdk/scopes/cpp/unity.scopes.ChildScope/#aec9331d1f603d0a8eb77fafa59e1e829>`_ 
 
  
 
@@ -60,7 +64,7 @@ std::set< std::string > const
 
         std::set< std::string > 
 
-`keywords </sdk/scopes/cpp/unity.scopes.ChildScope#a728e308053d201dfb321f2ba49e4cdc8>`__
+`keywords </sdk/scopes/cpp/unity.scopes.ChildScope/#a728e308053d201dfb321f2ba49e4cdc8>`_ 
 
  
 
@@ -84,7 +88,7 @@ Constructor & Destructor Documentation
 |                    |                    | `ScopeMetadata </s | *metadata*,        |
 |                    |                    | dk/scopes/cpp/unit |                    |
 |                    |                    | y.scopes.ScopeMeta |                    |
-|                    |                    | data/>`__          |                    |
+|                    |                    | data/>`_           |                    |
 |                    |                    | const &            |                    |
 +--------------------+--------------------+--------------------+--------------------+
 |                    |                    | bool               | *enabled* =        |
@@ -98,7 +102,7 @@ Constructor & Destructor Documentation
 +--------------------+--------------------+--------------------+--------------------+
 
 Construct a new
-`ChildScope </sdk/scopes/cpp/unity.scopes.ChildScope/>`__ with the
+`ChildScope </sdk/scopes/cpp/unity.scopes.ChildScope/>`_  with the
 specified id, metadata, enabled state and keywords list.
 
 Parameters

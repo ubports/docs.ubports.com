@@ -1,13 +1,17 @@
- *class*
-``autopilot.process.``\ ``Application``\ ` </sdk/autopilot/python/autopilot.process/Application#Application>`__\ ` <#autopilot.process.Application>`__
+.. _sdk_autopilot_process_application:
+autopilot.process Application
+=============================
 
-    ``desktop_file``\ ` </sdk/autopilot/python/autopilot.process/Application#Application.desktop_file>`__\ ` <#autopilot.process.Application.desktop_file>`__
+ *class*
+:ref:``autopilot.process.``\ ``Application``\ ` <sdk_autopilot_process_application#Application>`\ ` <#autopilot.process.Application>`
+
+    :ref:``desktop_file``\ ` <sdk_autopilot_process_application#Application.desktop_file>`\ ` <#autopilot.process.Application.desktop_file>`
         Get the application desktop file.
 
         This returns just the filename, not the full path. If the
         application no longer exists, this returns an empty string.
 
-    ``name``\ ` </sdk/autopilot/python/autopilot.process/Application#Application.name>`__\ ` <#autopilot.process.Application.name>`__
+    :ref:``name``\ ` <sdk_autopilot_process_application#Application.name>`\ ` <#autopilot.process.Application.name>`
         Get the application name.
 
         .. raw:: html
@@ -24,20 +28,20 @@
 
            </div>
 
-    ``icon``\ ` </sdk/autopilot/python/autopilot.process/Application#Application.icon>`__\ ` <#autopilot.process.Application.icon>`__
+    :ref:``icon``\ ` <sdk_autopilot_process_application#Application.icon>`\ ` <#autopilot.process.Application.icon>`
         Get the application icon.
 
         +------------+-------------------------+
         | Returns:   | The name of the icon.   |
         +------------+-------------------------+
 
-    ``is_active``\ ` </sdk/autopilot/python/autopilot.process/Application#Application.is_active>`__\ ` <#autopilot.process.Application.is_active>`__
+    :ref:``is_active``\ ` <sdk_autopilot_process_application#Application.is_active>`\ ` <#autopilot.process.Application.is_active>`
         Is the application active (i.e. has keyboard focus)?
 
-    ``is_urgent``\ ` </sdk/autopilot/python/autopilot.process/Application#Application.is_urgent>`__\ ` <#autopilot.process.Application.is_urgent>`__
+    :ref:``is_urgent``\ ` <sdk_autopilot_process_application#Application.is_urgent>`\ ` <#autopilot.process.Application.is_urgent>`
         Is the application currently signalling urgency?
 
-    ``user_visible``\ ` </sdk/autopilot/python/autopilot.process/Application#Application.user_visible>`__\ ` <#autopilot.process.Application.user_visible>`__
+    :ref:``user_visible``\ ` <sdk_autopilot_process_application#Application.user_visible>`\ ` <#autopilot.process.Application.user_visible>`
         Is this application visible to the user?
 
         .. raw:: html
@@ -53,5 +57,5 @@
 
            </div>
 
-    ``get_windows``\ ()` </sdk/autopilot/python/autopilot.process/Application#Application.get_windows>`__\ ` <#autopilot.process.Application.get_windows>`__
+    :ref:``get_windows``\ ()` <sdk_autopilot_process_application#Application.get_windows>`\ ` <#autopilot.process.Application.get_windows>`
         Get a list of the application windows.

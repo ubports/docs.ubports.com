@@ -1,3 +1,7 @@
+.. _sdk_qtquick_shadereffectsource:
+QtQuick ShaderEffectSource
+==========================
+
 Renders a Qt Quick item into a texture and displays it
 
 +--------------------------------------+--------------------------------------+
@@ -5,64 +9,58 @@ Renders a Qt Quick item into a texture and displays it
 +--------------------------------------+--------------------------------------+
 | Since:                               | Qt 5.0                               |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Item </sdk/apps/qml/QtQuick/Item/>` |
-|                                      | __                                   |
+| Inherits:                            | :ref:`Item <sdk_qtquick_item>`       |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`format </sdk/apps/qml/QtQuick/ShaderEffectSource#format-prop>`__****
-   : enumeration
--  ****`hideSource </sdk/apps/qml/QtQuick/ShaderEffectSource#hideSource-prop>`__****
+-  :ref:`format <sdk_qtquick_shadereffectsource_format-prop>` :
+   enumeration
+-  :ref:`hideSource <sdk_qtquick_shadereffectsource_hideSource-prop>`
    : bool
--  ****`live </sdk/apps/qml/QtQuick/ShaderEffectSource#live-prop>`__****
+-  :ref:`live <sdk_qtquick_shadereffectsource_live-prop>` : bool
+-  :ref:`mipmap <sdk_qtquick_shadereffectsource_mipmap-prop>` :
+   bool
+-  :ref:`recursive <sdk_qtquick_shadereffectsource_recursive-prop>`
    : bool
--  ****`mipmap </sdk/apps/qml/QtQuick/ShaderEffectSource#mipmap-prop>`__****
-   : bool
--  ****`recursive </sdk/apps/qml/QtQuick/ShaderEffectSource#recursive-prop>`__****
-   : bool
--  ****`sourceItem </sdk/apps/qml/QtQuick/ShaderEffectSource#sourceItem-prop>`__****
+-  :ref:`sourceItem <sdk_qtquick_shadereffectsource_sourceItem-prop>`
    : Item
--  ****`sourceRect </sdk/apps/qml/QtQuick/ShaderEffectSource#sourceRect-prop>`__****
+-  :ref:`sourceRect <sdk_qtquick_shadereffectsource_sourceRect-prop>`
    : rect
--  ****`textureSize </sdk/apps/qml/QtQuick/ShaderEffectSource#textureSize-prop>`__****
+-  :ref:`textureSize <sdk_qtquick_shadereffectsource_textureSize-prop>`
    : size
--  ****`wrapMode </sdk/apps/qml/QtQuick/ShaderEffectSource#wrapMode-prop>`__****
-   : enumeration
+-  :ref:`wrapMode <sdk_qtquick_shadereffectsource_wrapMode-prop>` :
+   enumeration
 
 Methods
 -------
 
--  ****`scheduleUpdate </sdk/apps/qml/QtQuick/ShaderEffectSource#scheduleUpdate-method>`__****\ ()
+-  :ref:`scheduleUpdate <sdk_qtquick_shadereffectsource_scheduleUpdate-method>`\ ()
 
 Detailed Description
 --------------------
 
-The `ShaderEffectSource </sdk/apps/qml/QtQuick/ShaderEffectSource/>`__
-type renders
-`sourceItem </sdk/apps/qml/QtQuick/ShaderEffectSource#sourceItem-prop>`__
-into a texture and displays it in the scene.
-`sourceItem </sdk/apps/qml/QtQuick/ShaderEffectSource#sourceItem-prop>`__
-is drawn into the texture as though it was a fully opaque root item.
-Thus
-`sourceItem </sdk/apps/qml/QtQuick/ShaderEffectSource#sourceItem-prop>`__
-itself can be invisible, but still appear in the texture.
+The :ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>` type renders
+:ref:`sourceItem <sdk_qtquick_shadereffectsource#sourceItem-prop>` into a
+texture and displays it in the scene.
+:ref:`sourceItem <sdk_qtquick_shadereffectsource#sourceItem-prop>` is drawn
+into the texture as though it was a fully opaque root item. Thus
+:ref:`sourceItem <sdk_qtquick_shadereffectsource#sourceItem-prop>` itself
+can be invisible, but still appear in the texture.
 
-`ShaderEffectSource </sdk/apps/qml/QtQuick/ShaderEffectSource/>`__ can
-be used as:
+:ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>` can be used as:
 
--  a texture source in a
-   `ShaderEffect </sdk/apps/qml/QtQuick/ShaderEffect/>`__. This allows
-   you to apply custom shader effects to any `Qt
-   Quick </sdk/apps/qml/QtQuick/qtquick-index/>`__ item.
+-  a texture source in a :ref:`ShaderEffect <sdk_qtquick_shadereffect>`.
+   This allows you to apply custom shader effects to any `Qt
+   Quick </sdk/apps/qml/QtQuick/qtquick-index/>`_  item.
 -  a cache for a complex item. The complex item can be rendered once
    into the texture, which can then be animated freely without the need
    to render the complex item again every frame.
 -  an opacity layer.
-   `ShaderEffectSource </sdk/apps/qml/QtQuick/ShaderEffectSource/>`__
-   allows you to apply an opacity to items as a group rather than each
-   item individually.
+   :ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>` allows you to
+   apply an opacity to items as a group rather than each item
+   individually.
 
 +--------------------------------------+--------------------------------------+
 | |image0|                             | .. code:: qml                        |
@@ -102,51 +100,51 @@ be used as:
 |                                      |     }                                |
 +--------------------------------------+--------------------------------------+
 
-The `ShaderEffectSource </sdk/apps/qml/QtQuick/ShaderEffectSource/>`__
-type does not redirect any mouse or keyboard input to
-`sourceItem </sdk/apps/qml/QtQuick/ShaderEffectSource#sourceItem-prop>`__.
-If you hide the
-`sourceItem </sdk/apps/qml/QtQuick/ShaderEffectSource#sourceItem-prop>`__
-by setting `visible </sdk/apps/qml/QtQuick/Item#visible-prop>`__ to
-false or `opacity </sdk/apps/qml/QtQuick/Item#opacity-prop>`__ to zero,
-it will no longer react to input. In cases where the
-`ShaderEffectSource </sdk/apps/qml/QtQuick/ShaderEffectSource/>`__ is
-meant to replace the
-`sourceItem </sdk/apps/qml/QtQuick/ShaderEffectSource#sourceItem-prop>`__,
-you typically want to hide the
-`sourceItem </sdk/apps/qml/QtQuick/ShaderEffectSource#sourceItem-prop>`__
-while still handling input. For this, you can use the
-`hideSource </sdk/apps/qml/QtQuick/ShaderEffectSource#hideSource-prop>`__
+The :ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>` type does
+not redirect any mouse or keyboard input to
+:ref:`sourceItem <sdk_qtquick_shadereffectsource#sourceItem-prop>`. If you
+hide the :ref:`sourceItem <sdk_qtquick_shadereffectsource#sourceItem-prop>`
+by setting :ref:`visible <sdk_qtquick_item#visible-prop>` to false or
+:ref:`opacity <sdk_qtquick_item#opacity-prop>` to zero, it will no longer
+react to input. In cases where the
+:ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>` is meant to
+replace the
+:ref:`sourceItem <sdk_qtquick_shadereffectsource#sourceItem-prop>`, you
+typically want to hide the
+:ref:`sourceItem <sdk_qtquick_shadereffectsource#sourceItem-prop>` while
+still handling input. For this, you can use the
+:ref:`hideSource <sdk_qtquick_shadereffectsource#hideSource-prop>`
 property.
 
 **Note:** If
-`sourceItem </sdk/apps/qml/QtQuick/ShaderEffectSource#sourceItem-prop>`__
-is a `Rectangle </sdk/apps/qml/QtQuick/Rectangle/>`__ with border, by
-default half the border width falls outside the texture. To get the
-whole border, you can extend the
-`sourceRect </sdk/apps/qml/QtQuick/ShaderEffectSource#sourceRect-prop>`__.
+:ref:`sourceItem <sdk_qtquick_shadereffectsource#sourceItem-prop>` is a
+:ref:`Rectangle <sdk_qtquick_rectangle>` with border, by default half the
+border width falls outside the texture. To get the whole border, you can
+extend the
+:ref:`sourceRect <sdk_qtquick_shadereffectsource#sourceRect-prop>`.
 
-**Note:** The
-`ShaderEffectSource </sdk/apps/qml/QtQuick/ShaderEffectSource/>`__
+**Note:** The :ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>`
 relies on FBO multisampling support to antialias edges. If the
 underlying hardware does not support this, which is the case for most
 embedded graphics chips, edges rendered inside a
-`ShaderEffectSource </sdk/apps/qml/QtQuick/ShaderEffectSource/>`__ will
-not be antialiased. One way to remedy this is to double the size of the
-effect source and render it with ``smooth: true`` (this is the default
-value of smooth). This will be equivalent to 4x multisampling, at the
-cost of lower performance and higher memory use.
+:ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>` will not be
+antialiased. One way to remedy this is to double the size of the effect
+source and render it with ``smooth: true`` (this is the default value of
+smooth). This will be equivalent to 4x multisampling, at the cost of
+lower performance and higher memory use.
 
 **Warning:** In most cases, using a
-`ShaderEffectSource </sdk/apps/qml/QtQuick/ShaderEffectSource/>`__ will
-decrease performance, and in all cases, it will increase video memory
-usage. Rendering through a
-`ShaderEffectSource </sdk/apps/qml/QtQuick/ShaderEffectSource/>`__ might
-also lead to lower quality since some OpenGL implementations support
-multisampled backbuffer, but not multisampled framebuffer objects.
+:ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>` will decrease
+performance, and in all cases, it will increase video memory usage.
+Rendering through a
+:ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>` might also lead
+to lower quality since some OpenGL implementations support multisampled
+backbuffer, but not multisampled framebuffer objects.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_shadereffectsource_format-prop:
 
 +--------------------------------------------------------------------------+
 |        \ format : enumeration                                            |
@@ -154,54 +152,58 @@ Property Documentation
 
 This property defines the internal OpenGL format of the texture.
 Modifying this property makes most sense when the item is used as a
-source texture of a
-`ShaderEffect </sdk/apps/qml/QtQuick/ShaderEffect/>`__. Depending on the
-OpenGL implementation, this property might allow you to save some
-texture memory.
+source texture of a :ref:`ShaderEffect <sdk_qtquick_shadereffect>`.
+Depending on the OpenGL implementation, this property might allow you to
+save some texture memory.
 
--  `ShaderEffectSource </sdk/apps/qml/QtQuick/ShaderEffectSource/>`__.Alpha
-   - GL\_ALPHA
--  `ShaderEffectSource </sdk/apps/qml/QtQuick/ShaderEffectSource/>`__.RGB
-   - GL\_RGB
--  `ShaderEffectSource </sdk/apps/qml/QtQuick/ShaderEffectSource/>`__.RGBA
-   - GL\_RGBA
+-  :ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>`.Alpha -
+   GL\_ALPHA
+-  :ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>`.RGB - GL\_RGB
+-  :ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>`.RGBA -
+   GL\_RGBA
 
 **Note:** Some OpenGL implementations do not support the GL\_ALPHA
 format.
 
 | 
 
+.. _sdk_qtquick_shadereffectsource_hideSource-prop:
+
 +--------------------------------------------------------------------------+
 |        \ hideSource : bool                                               |
 +--------------------------------------------------------------------------+
 
 If this property is true, the
-`sourceItem </sdk/apps/qml/QtQuick/ShaderEffectSource#sourceItem-prop>`__
-is hidden, though it will still be rendered into the texture. As opposed
-to hiding the
-`sourceItem </sdk/apps/qml/QtQuick/ShaderEffectSource#sourceItem-prop>`__
-by setting `visible </sdk/apps/qml/QtQuick/Item#visible-prop>`__ to
-false, setting this property to true will not prevent mouse or keyboard
-input from reaching
-`sourceItem </sdk/apps/qml/QtQuick/ShaderEffectSource#sourceItem-prop>`__.
-The property is useful when the
-`ShaderEffectSource </sdk/apps/qml/QtQuick/ShaderEffectSource/>`__ is
-anchored on top of, and meant to replace the
-`sourceItem </sdk/apps/qml/QtQuick/ShaderEffectSource#sourceItem-prop>`__.
+:ref:`sourceItem <sdk_qtquick_shadereffectsource#sourceItem-prop>` is
+hidden, though it will still be rendered into the texture. As opposed to
+hiding the
+:ref:`sourceItem <sdk_qtquick_shadereffectsource#sourceItem-prop>` by
+setting :ref:`visible <sdk_qtquick_item#visible-prop>` to false, setting
+this property to true will not prevent mouse or keyboard input from
+reaching
+:ref:`sourceItem <sdk_qtquick_shadereffectsource#sourceItem-prop>`. The
+property is useful when the
+:ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>` is anchored on
+top of, and meant to replace the
+:ref:`sourceItem <sdk_qtquick_shadereffectsource#sourceItem-prop>`.
 
 | 
+
+.. _sdk_qtquick_shadereffectsource_live-prop:
 
 +--------------------------------------------------------------------------+
 |        \ live : bool                                                     |
 +--------------------------------------------------------------------------+
 
 If this property is true, the texture is updated whenever the
-`sourceItem </sdk/apps/qml/QtQuick/ShaderEffectSource#sourceItem-prop>`__
-updates. Otherwise, it will be a frozen image, even if
-`sourceItem </sdk/apps/qml/QtQuick/ShaderEffectSource#sourceItem-prop>`__
-is assigned a new item. The property is true by default.
+:ref:`sourceItem <sdk_qtquick_shadereffectsource#sourceItem-prop>` updates.
+Otherwise, it will be a frozen image, even if
+:ref:`sourceItem <sdk_qtquick_shadereffectsource#sourceItem-prop>` is
+assigned a new item. The property is true by default.
 
 | 
+
+.. _sdk_qtquick_shadereffectsource_mipmap-prop:
 
 +--------------------------------------------------------------------------+
 |        \ mipmap : bool                                                   |
@@ -214,58 +216,63 @@ non-power-of-two textures.
 
 | 
 
+.. _sdk_qtquick_shadereffectsource_recursive-prop:
+
 +--------------------------------------------------------------------------+
 |        \ recursive : bool                                                |
 +--------------------------------------------------------------------------+
 
 Set this property to true if the
-`ShaderEffectSource </sdk/apps/qml/QtQuick/ShaderEffectSource/>`__ has a
-dependency on itself. ShaderEffectSources form a dependency chain, where
-one `ShaderEffectSource </sdk/apps/qml/QtQuick/ShaderEffectSource/>`__
-can be part of the
-`sourceItem </sdk/apps/qml/QtQuick/ShaderEffectSource#sourceItem-prop>`__
-of another. If there is a loop in this chain, a
-`ShaderEffectSource </sdk/apps/qml/QtQuick/ShaderEffectSource/>`__ could
-end up trying to render into the same texture it is using as source,
-which is not allowed by OpenGL. When this property is set to true, an
-extra texture is allocated so that
-`ShaderEffectSource </sdk/apps/qml/QtQuick/ShaderEffectSource/>`__ can
-keep a copy of the texture from the previous frame. It can then render
-into one texture and use the texture from the previous frame as source.
+:ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>` has a dependency
+on itself. ShaderEffectSources form a dependency chain, where one
+:ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>` can be part of
+the :ref:`sourceItem <sdk_qtquick_shadereffectsource#sourceItem-prop>` of
+another. If there is a loop in this chain, a
+:ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>` could end up
+trying to render into the same texture it is using as source, which is
+not allowed by OpenGL. When this property is set to true, an extra
+texture is allocated so that
+:ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>` can keep a copy
+of the texture from the previous frame. It can then render into one
+texture and use the texture from the previous frame as source.
 
 Setting both this property and
-`live </sdk/apps/qml/QtQuick/ShaderEffectSource#live-prop>`__ to true
-will cause the scene graph to render continuously. Since the
-`ShaderEffectSource </sdk/apps/qml/QtQuick/ShaderEffectSource/>`__
-depends on itself, updating it means that it immediately becomes dirty
-again.
+:ref:`live <sdk_qtquick_shadereffectsource#live-prop>` to true will cause
+the scene graph to render continuously. Since the
+:ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>` depends on
+itself, updating it means that it immediately becomes dirty again.
 
 | 
 
+.. _sdk_qtquick_shadereffectsource_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ sourceItem : `Item </sdk/apps/qml/QtQuick/Item/>`__             |
+| :ref:` <>`\ sourceItem : `Item <sdk_qtquick_item>`                     |
 +--------------------------------------------------------------------------+
 
 This property holds the item to be rendered into the texture. Setting
-this to null while
-`live </sdk/apps/qml/QtQuick/ShaderEffectSource#live-prop>`__ is true,
-will release the texture resources.
+this to null while :ref:`live <sdk_qtquick_shadereffectsource#live-prop>`
+is true, will release the texture resources.
 
 | 
+
+.. _sdk_qtquick_shadereffectsource_sourceRect-prop:
 
 +--------------------------------------------------------------------------+
 |        \ sourceRect : rect                                               |
 +--------------------------------------------------------------------------+
 
 This property defines which rectangular area of the
-`sourceItem </sdk/apps/qml/QtQuick/ShaderEffectSource#sourceItem-prop>`__
-to render into the texture. The source rectangle can be larger than
-`sourceItem </sdk/apps/qml/QtQuick/ShaderEffectSource#sourceItem-prop>`__
-itself. If the rectangle is null, which is the default, the whole
-`sourceItem </sdk/apps/qml/QtQuick/ShaderEffectSource#sourceItem-prop>`__
-is rendered to texture.
+:ref:`sourceItem <sdk_qtquick_shadereffectsource#sourceItem-prop>` to
+render into the texture. The source rectangle can be larger than
+:ref:`sourceItem <sdk_qtquick_shadereffectsource#sourceItem-prop>` itself.
+If the rectangle is null, which is the default, the whole
+:ref:`sourceItem <sdk_qtquick_shadereffectsource#sourceItem-prop>` is
+rendered to texture.
 
 | 
+
+.. _sdk_qtquick_shadereffectsource_textureSize-prop:
 
 +--------------------------------------------------------------------------+
 |        \ textureSize : size                                              |
@@ -280,23 +287,24 @@ requested size.
 
 | 
 
+.. _sdk_qtquick_shadereffectsource_wrapMode-prop:
+
 +--------------------------------------------------------------------------+
 |        \ wrapMode : enumeration                                          |
 +--------------------------------------------------------------------------+
 
 This property defines the OpenGL wrap modes associated with the texture.
 Modifying this property makes most sense when the item is used as a
-source texture of a
-`ShaderEffect </sdk/apps/qml/QtQuick/ShaderEffect/>`__.
+source texture of a :ref:`ShaderEffect <sdk_qtquick_shadereffect>`.
 
--  `ShaderEffectSource </sdk/apps/qml/QtQuick/ShaderEffectSource/>`__.ClampToEdge
-   - GL\_CLAMP\_TO\_EDGE both horizontally and vertically
--  `ShaderEffectSource </sdk/apps/qml/QtQuick/ShaderEffectSource/>`__.RepeatHorizontally
+-  :ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>`.ClampToEdge -
+   GL\_CLAMP\_TO\_EDGE both horizontally and vertically
+-  :ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>`.RepeatHorizontally
    - GL\_REPEAT horizontally, GL\_CLAMP\_TO\_EDGE vertically
--  `ShaderEffectSource </sdk/apps/qml/QtQuick/ShaderEffectSource/>`__.RepeatVertically
+-  :ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>`.RepeatVertically
    - GL\_CLAMP\_TO\_EDGE horizontally, GL\_REPEAT vertically
--  `ShaderEffectSource </sdk/apps/qml/QtQuick/ShaderEffectSource/>`__.Repeat
-   - GL\_REPEAT both horizontally and vertically
+-  :ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>`.Repeat -
+   GL\_REPEAT both horizontally and vertically
 
 **Note:** Some OpenGL ES 2 implementations do not support the GL\_REPEAT
 wrap mode with non-power-of-two textures.
@@ -306,15 +314,17 @@ wrap mode with non-power-of-two textures.
 Method Documentation
 --------------------
 
+.. _sdk_qtquick_shadereffectsource_scheduleUpdate-method:
+
 +--------------------------------------------------------------------------+
 |        \ scheduleUpdate()                                                |
 +--------------------------------------------------------------------------+
 
 Schedules a re-rendering of the texture for the next frame. Use this to
 update the texture when
-`live </sdk/apps/qml/QtQuick/ShaderEffectSource#live-prop>`__ is false.
+:ref:`live <sdk_qtquick_shadereffectsource#live-prop>` is false.
 
 | 
 
-.. |image0| image:: /media/sdk/apps/qml/QtQuick/ShaderEffectSource/images/declarative-shadereffectsource.png
+.. |image0| image:: /mediasdk_qtquick_shadereffectsourceimages/declarative-shadereffectsource.png
 

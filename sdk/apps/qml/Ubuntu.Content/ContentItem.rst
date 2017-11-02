@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_content_contentitem:
+Ubuntu.Content ContentItem
+==========================
+
 Content that can be imported or exported from a ContentPeer
 
 +---------------------+-----------------------------+
@@ -7,34 +11,33 @@ Content that can be imported or exported from a ContentPeer
 Properties
 ----------
 
--  ****`text </sdk/apps/qml/Ubuntu.Content/ContentItem#text-prop>`__****
-   : string
--  ****`url </sdk/apps/qml/Ubuntu.Content/ContentItem#url-prop>`__**** :
-   url
+-  :ref:`text <sdk_ubuntu_content_contentitem_text-prop>` : string
+-  :ref:`url <sdk_ubuntu_content_contentitem_url-prop>` : url
 
 Methods
 -------
 
 -  bool
-   ****`move </sdk/apps/qml/Ubuntu.Content/ContentItem#move-method-2>`__****\ (dir,
+   **:ref:`move <sdk_ubuntu_content_contentitem#move-method-2>`**\ (dir,
    fileName)
 -  bool
-   ****`move </sdk/apps/qml/Ubuntu.Content/ContentItem#move-method>`__****\ (dir)
+   **:ref:`move <sdk_ubuntu_content_contentitem#move-method>`**\ (dir)
 -  string
-   ****`toDataURI </sdk/apps/qml/Ubuntu.Content/ContentItem#toDataURI-method>`__****\ ()
+   **:ref:`toDataURI <sdk_ubuntu_content_contentitem#toDataURI-method>`**\ ()
 
 Detailed Description
 --------------------
 
-A `ContentItem </sdk/apps/qml/Ubuntu.Content/ContentItem/>`__ is an item
-that can be imported or exported from a
-`ContentPeer </sdk/apps/qml/Ubuntu.Content/ContentPeer/>`__
+A :ref:`ContentItem <sdk_ubuntu_content_contentitem>` is an item that can
+be imported or exported from a
+:ref:`ContentPeer <sdk_ubuntu_content_contentpeer>`
 
-See documentation for
-`ContentHub </sdk/apps/qml/Ubuntu.Content/ContentHub/>`__
+See documentation for :ref:`ContentHub <sdk_ubuntu_content_contenthub>`
 
 Property Documentation
 ----------------------
+
+.. _sdk_ubuntu_content_contentitem_text-prop:
 
 +--------------------------------------------------------------------------+
 |        \ text : string                                                   |
@@ -44,9 +47,10 @@ Content of the transfer
 
 | 
 
+.. _sdk_ubuntu_content_contentitem_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ url :                                                           |
-| `url </sdk/apps/qml/Ubuntu.Content/ContentItem#url-prop>`__              |
+| :ref:` <>`\ url : `url <sdk_ubuntu_content_contentitem#url-prop>`      |
 +--------------------------------------------------------------------------+
 
 URL of the content data
@@ -55,6 +59,8 @@ URL of the content data
 
 Method Documentation
 --------------------
+
+.. _sdk_ubuntu_content_contentitem_bool move-method:
 
 +--------------------------------------------------------------------------+
 |        \ bool move(dir, fileName)                                        |
@@ -71,6 +77,8 @@ the url wasn't a local file.
 
 | 
 
+.. _sdk_ubuntu_content_contentitem_bool move-method:
+
 +--------------------------------------------------------------------------+
 |        \ bool move(dir)                                                  |
 +--------------------------------------------------------------------------+
@@ -85,11 +93,13 @@ the url wasn't a local file.
 
 | 
 
+.. _sdk_ubuntu_content_contentitem_string toDataURI-method:
+
 +--------------------------------------------------------------------------+
 |        \ string toDataURI()                                              |
 +--------------------------------------------------------------------------+
 
-Returns the `ContentItem </sdk/apps/qml/Ubuntu.Content/ContentItem/>`__
-base64 encoded with the mimetype as a properly formated dataUri
+Returns the :ref:`ContentItem <sdk_ubuntu_content_contentitem>` base64
+encoded with the mimetype as a properly formated dataUri
 
 | 

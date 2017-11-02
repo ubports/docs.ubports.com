@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_content_contentpeermodel:
+Ubuntu.Content ContentPeerModel
+===============================
+
 A list of applications that can export or import a ContentType
 
 +---------------------+-----------------------------+
@@ -7,57 +11,57 @@ A list of applications that can export or import a ContentType
 Properties
 ----------
 
--  ****`contentType </sdk/apps/qml/Ubuntu.Content/ContentPeerModel#contentType-prop>`__****
+-  :ref:`contentType <sdk_ubuntu_content_contentpeermodel_contentType-prop>`
    : ContentType
--  ****`handler </sdk/apps/qml/Ubuntu.Content/ContentPeerModel#handler-prop>`__****
+-  :ref:`handler <sdk_ubuntu_content_contentpeermodel_handler-prop>`
    : ContentHandler
--  ****`peers </sdk/apps/qml/Ubuntu.Content/ContentPeerModel#peers-prop>`__****
-   : list<ContentPeer>
+-  :ref:`peers <sdk_ubuntu_content_contentpeermodel_peers-prop>` :
+   list<ContentPeer>
 
 Detailed Description
 --------------------
 
-A `ContentPeerModel </sdk/apps/qml/Ubuntu.Content/ContentPeerModel/>`__
-provides a list of all applications that are registered in the
-`ContentHub </sdk/apps/qml/Ubuntu.Content/ContentHub/>`__ as a source or
-destination of a
-`ContentType </sdk/apps/qml/Ubuntu.Content/ContentType/>`__
+A :ref:`ContentPeerModel <sdk_ubuntu_content_contentpeermodel>` provides a
+list of all applications that are registered in the
+:ref:`ContentHub <sdk_ubuntu_content_contenthub>` as a source or
+destination of a :ref:`ContentType <sdk_ubuntu_content_contenttype>`
 
-See documentation for
-`ContentPeer </sdk/apps/qml/Ubuntu.Content/ContentPeer/>`__
+See documentation for :ref:`ContentPeer <sdk_ubuntu_content_contentpeer>`
 
 Property Documentation
 ----------------------
 
-+--------------------------------------------------------------------------+
-|        \ contentType :                                                   |
-| `ContentType </sdk/apps/qml/Ubuntu.Content/ContentType/>`__              |
-+--------------------------------------------------------------------------+
-
-Specifies which
-`ContentType </sdk/apps/qml/Ubuntu.Content/ContentType/>`__ discovered
-peers should support.
-
-| 
+.. _sdk_ubuntu_content_contentpeermodel_-prop:
 
 +--------------------------------------------------------------------------+
-|        \ handler :                                                       |
-| `ContentHandler </sdk/apps/qml/Ubuntu.Content/ContentHandler/>`__        |
+| :ref:` <>`\ contentType : `ContentType <sdk_ubuntu_content_contenttype>`  |
 +--------------------------------------------------------------------------+
 
-Specifies which
-`ContentHandler </sdk/apps/qml/Ubuntu.Content/ContentHandler/>`__
+Specifies which :ref:`ContentType <sdk_ubuntu_content_contenttype>`
 discovered peers should support.
 
 | 
 
+.. _sdk_ubuntu_content_contentpeermodel_handler-prop:
+
 +--------------------------------------------------------------------------+
-|        \ peers :                                                         |
-| list<`ContentPeer </sdk/apps/qml/Ubuntu.Content/ContentPeer/>`__>        |
+|        \ handler :                                                       |
+| :ref:`ContentHandler <sdk_ubuntu_content_contenthandler>`                   |
++--------------------------------------------------------------------------+
+
+Specifies which :ref:`ContentHandler <sdk_ubuntu_content_contenthandler>`
+discovered peers should support.
+
+| 
+
+.. _sdk_ubuntu_content_contentpeermodel_-prop:
+
++--------------------------------------------------------------------------+
+| :ref:` <>`\ peers : list<`ContentPeer <sdk_ubuntu_content_contentpeer>`>  |
 +--------------------------------------------------------------------------+
 
 Provides a list of discovered peers matching the requested
-`ContentType </sdk/apps/qml/Ubuntu.Content/ContentType/>`__ and
-`ContentHandler </sdk/apps/qml/Ubuntu.Content/ContentHandler/>`__.
+:ref:`ContentType <sdk_ubuntu_content_contenttype>` and
+:ref:`ContentHandler <sdk_ubuntu_content_contenthandler>`.
 
 | 

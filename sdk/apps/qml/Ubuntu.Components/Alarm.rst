@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_alarm:
+Ubuntu.Components Alarm
+=======================
+
 Alarm component is a representation of an alarm event.
 
 +---------------------+--------------------------------+
@@ -7,29 +11,23 @@ Alarm component is a representation of an alarm event.
 Properties
 ----------
 
--  ****`date </sdk/apps/qml/Ubuntu.Components/Alarm#date-prop>`__**** :
-   Date
--  ****`daysOfWeek </sdk/apps/qml/Ubuntu.Components/Alarm#daysOfWeek-prop>`__****
+-  :ref:`date <sdk_ubuntu_components_alarm_date-prop>` : Date
+-  :ref:`daysOfWeek <sdk_ubuntu_components_alarm_daysOfWeek-prop>`
    : DaysOfWeek
--  ****`enabled </sdk/apps/qml/Ubuntu.Components/Alarm#enabled-prop>`__****
-   : bool
--  ****`error </sdk/apps/qml/Ubuntu.Components/Alarm#error-prop>`__****
-   : Error
--  ****`message </sdk/apps/qml/Ubuntu.Components/Alarm#message-prop>`__****
-   : string
--  ****`sound </sdk/apps/qml/Ubuntu.Components/Alarm#sound-prop>`__****
-   : url
--  ****`status </sdk/apps/qml/Ubuntu.Components/Alarm#status-prop>`__****
-   : Status
--  ****`type </sdk/apps/qml/Ubuntu.Components/Alarm#type-prop>`__**** :
-   AlarmType
+-  :ref:`enabled <sdk_ubuntu_components_alarm_enabled-prop>` : bool
+-  :ref:`error <sdk_ubuntu_components_alarm_error-prop>` : Error
+-  :ref:`message <sdk_ubuntu_components_alarm_message-prop>` :
+   string
+-  :ref:`sound <sdk_ubuntu_components_alarm_sound-prop>` : url
+-  :ref:`status <sdk_ubuntu_components_alarm_status-prop>` : Status
+-  :ref:`type <sdk_ubuntu_components_alarm_type-prop>` : AlarmType
 
 Methods
 -------
 
--  ****`cancel </sdk/apps/qml/Ubuntu.Components/Alarm#cancel-method>`__****\ ()
--  ****`reset </sdk/apps/qml/Ubuntu.Components/Alarm#reset-method>`__****\ ()
--  ****`save </sdk/apps/qml/Ubuntu.Components/Alarm#save-method>`__****\ ()
+-  :ref:`cancel <sdk_ubuntu_components_alarm_cancel-method>`\ ()
+-  :ref:`reset <sdk_ubuntu_components_alarm_reset-method>`\ ()
+-  :ref:`save <sdk_ubuntu_components_alarm_save-method>`\ ()
 
 Detailed Description
 --------------------
@@ -39,15 +37,13 @@ repeating alarms, where repeating can be either daily or weekly on one
 or several selected days.
 
 The alarm data is validated upon
-`save </sdk/apps/qml/Ubuntu.Components/Alarm#save-method>`__ operation,
-which can be used to save a new alarm or update existing alarm's
-properties.
+:ref:`save <sdk_ubuntu_components_alarm#save-method>` operation, which can
+be used to save a new alarm or update existing alarm's properties.
 
 During data validation the alarm properties may suffer changes. These
 changes will be reported back to each changed property. See what changes
-can occurr at
-`save </sdk/apps/qml/Ubuntu.Components/Alarm#save-method>`__ function
-documentation.
+can occurr at :ref:`save <sdk_ubuntu_components_alarm#save-method>`
+function documentation.
 
 Example usage:
 
@@ -99,35 +95,37 @@ Example usage:
     }
 
 An alarm can be cancelled using
-`cancel </sdk/apps/qml/Ubuntu.Components/Alarm#cancel-method>`__
-function but only if the event has previously been stored in the alarm
-collection.
+:ref:`cancel <sdk_ubuntu_components_alarm#cancel-method>` function but only
+if the event has previously been stored in the alarm collection.
 
-The `reset </sdk/apps/qml/Ubuntu.Components/Alarm#reset-method>`__
-function clears the properties of the alarm bringing them to the default
-values. In this way the same alarm component can be used to save several
-alarms at the same time.
+The :ref:`reset <sdk_ubuntu_components_alarm#reset-method>` function clears
+the properties of the alarm bringing them to the default values. In this
+way the same alarm component can be used to save several alarms at the
+same time.
 
 **Note:** Do not call reset function on an alarm event object when that
 was returned by the
-`AlarmModel::get </sdk/apps/qml/Ubuntu.Components/AlarmModel#get-method>`__
+:ref:`AlarmModel::get <sdk_ubuntu_components_alarmmodel#get-method>`
 function, as that will reset the alarm cache data!
 
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_alarm_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ date : `Date </sdk/apps/qml/QtQml/Date/>`__                     |
+| :ref:` <>`\ date : `Date <sdk_qtqml_date>`                             |
 +--------------------------------------------------------------------------+
 
 The property holds the date the alarm will be triggered. The default
 value is the current date and time the alarm object was created. Further
-`reset </sdk/apps/qml/Ubuntu.Components/Alarm#reset-method>`__ calls
-will bring the value back to the time the
-`reset </sdk/apps/qml/Ubuntu.Components/Alarm#reset-method>`__ was
-called.
+:ref:`reset <sdk_ubuntu_components_alarm#reset-method>` calls will bring
+the value back to the time the
+:ref:`reset <sdk_ubuntu_components_alarm#reset-method>` was called.
 
 | 
+
+.. _sdk_ubuntu_components_alarm_daysOfWeek-prop:
 
 +--------------------------------------------------------------------------+
 |        \ daysOfWeek : DaysOfWeek                                         |
@@ -171,6 +169,8 @@ The default value is Alarm.AutoDetect.
 
 | 
 
+.. _sdk_ubuntu_components_alarm_enabled-prop:
+
 +--------------------------------------------------------------------------+
 |        \ enabled : bool                                                  |
 +--------------------------------------------------------------------------+
@@ -180,6 +180,8 @@ dalarms are not scheduled. The default value is true;
 
 | 
 
+.. _sdk_ubuntu_components_alarm_error-prop:
+
 +--------------------------------------------------------------------------+
 |        \ error : Error                                                   |
 +--------------------------------------------------------------------------+
@@ -187,25 +189,35 @@ dalarms are not scheduled. The default value is true;
 The property holds the error code occurred during the last performed
 operation.
 
-+---------------------+---------+------------------------------------------------------------------------------------------------------------------------+
-| Error code          | Value   | Description                                                                                                            |
-+=====================+=========+========================================================================================================================+
-| NoError             | 0       | Successful operation completion.                                                                                       |
-+---------------------+---------+------------------------------------------------------------------------------------------------------------------------+
-| InvalidDate         | 1       | The date specified for the alarm was invalid.                                                                          |
-+---------------------+---------+------------------------------------------------------------------------------------------------------------------------+
-| EarlyDate           | 2       | The date specified for the alarm is an earlier date than the current one.                                              |
-+---------------------+---------+------------------------------------------------------------------------------------------------------------------------+
-| NoDaysOfWeek        | 3       | The `daysOfWeek </sdk/apps/qml/Ubuntu.Components/Alarm#daysOfWeek-prop>`__ parameter of the alarm was not specified.   |
-+---------------------+---------+------------------------------------------------------------------------------------------------------------------------+
-| OneTimeOnMoreDays   | 4       | The one-time alarm was set to be kicked in several days.                                                               |
-+---------------------+---------+------------------------------------------------------------------------------------------------------------------------+
-| InvalidEvent        | 5       | The alarm event is invalid.                                                                                            |
-+---------------------+---------+------------------------------------------------------------------------------------------------------------------------+
-| AdaptationError     | 100     | The error occurred in alarm adaptation layer. Adaptations may define additional behind this value.                     |
-+---------------------+---------+------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_ubuntu_components_alarm_Error code           Value    Description-prop:
+
++---------------------+---------+--------------------------------------------------------------------------------------------------------------+
+| Error code          | Value   | Description                                                                                                  |
++=====================+=========+==============================================================================================================+
+.. _sdk_ubuntu_components_alarm_InvalidDate          1        The date specified for the alarm was invalid.-prop:
+| NoError             | 0       | Successful operation completion.                                                                             |
++---------------------+---------+--------------------------------------------------------------------------------------------------------------+
+.. _sdk_ubuntu_components_alarm_EarlyDate            2        The date specified for the alarm is an earlier date than the current one.-prop:
+| InvalidDate         | 1       | The date specified for the alarm was invalid.                                                                |
++---------------------+---------+--------------------------------------------------------------------------------------------------------------+
+.. _sdk_ubuntu_components_alarm_NoDaysOfWeek         3        The-prop:
+| EarlyDate           | 2       | The date specified for the alarm is an earlier date than the current one.                                    |
++---------------------+---------+--------------------------------------------------------------------------------------------------------------+
+.. _sdk_ubuntu_components_alarm_OneTimeOnMoreDays    4        The one-time alarm was set to be kicked in several days.-prop:
+| NoDaysOfWeek        | 3       | The :ref:`daysOfWeek <sdk_ubuntu_components_alarm#daysOfWeek-prop>` parameter of the alarm was not specified.   |
++---------------------+---------+--------------------------------------------------------------------------------------------------------------+
+.. _sdk_ubuntu_components_alarm_InvalidEvent         5        The alarm event is invalid.-prop:
+| OneTimeOnMoreDays   | 4       | The one-time alarm was set to be kicked in several days.                                                     |
++---------------------+---------+--------------------------------------------------------------------------------------------------------------+
+.. _sdk_ubuntu_components_alarm_AdaptationError      100      The error occurred in alarm adaptation layer. Adaptations may define additional behind this value.-prop:
+| InvalidEvent        | 5       | The alarm event is invalid.                                                                                  |
++---------------------+---------+--------------------------------------------------------------------------------------------------------------+
+| AdaptationError     | 100     | The error occurred in alarm adaptation layer. Adaptations may define additional behind this value.           |
++---------------------+---------+--------------------------------------------------------------------------------------------------------------+
 
 | 
+
+.. _sdk_ubuntu_components_alarm_message-prop:
 
 +--------------------------------------------------------------------------+
 |        \ message : string                                                |
@@ -216,8 +228,10 @@ alarm is triggered. The default value is the localized "Alarm" text.
 
 | 
 
+.. _sdk_ubuntu_components_alarm_sound-prop:
+
 +--------------------------------------------------------------------------+
-|        \ sound : `url <http://doc.qt.io/qt-5/qml-url.html>`__            |
+|        \ sound : `url <http://doc.qt.io/qt-5/qml-url.html>`_             |
 +--------------------------------------------------------------------------+
 
 The property holds the alarm's sound to be played when the alarm is
@@ -227,6 +241,8 @@ The defaul tvalue is an empty url.
 
 | 
 
+.. _sdk_ubuntu_components_alarm_status-prop:
+
 +--------------------------------------------------------------------------+
 |        \ status : Status                                                 |
 +--------------------------------------------------------------------------+
@@ -234,29 +250,38 @@ The defaul tvalue is an empty url.
 The property holds the status of the last performed operation. It can
 take one of the following values:
 
-+---------------+---------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Status code   | Value   | Description                                                                                                                                             |
-+===============+=========+=========================================================================================================================================================+
-| Ready         | 1       | Specifies either that the Alarm object is ready to perform any operation or that the previous operation has been successfully completed.                |
-+---------------+---------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-| InProgress    | 2       | Specifies that there is an operation pending on Alarm object.                                                                                           |
-+---------------+---------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Fail          | 3       | Specifies that the last alarm operation has failed. The failure code is set in `error </sdk/apps/qml/Ubuntu.Components/Alarm#error-prop>`__ property.   |
-+---------------+---------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_ubuntu_components_alarm_Status code    Value    Description-prop:
+
++---------------+---------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+| Status code   | Value   | Description                                                                                                                                   |
++===============+=========+===============================================================================================================================================+
+.. _sdk_ubuntu_components_alarm_InProgress     2        Specifies that there is an operation pending on Alarm object.-prop:
+| Ready         | 1       | Specifies either that the Alarm object is ready to perform any operation or that the previous operation has been successfully completed.      |
++---------------+---------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_ubuntu_components_alarm_Fail           3        Specifies that the last alarm operation has failed. The failure code is set in-prop:
+| InProgress    | 2       | Specifies that there is an operation pending on Alarm object.                                                                                 |
++---------------+---------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+| Fail          | 3       | Specifies that the last alarm operation has failed. The failure code is set in :ref:`error <sdk_ubuntu_components_alarm#error-prop>` property.   |
++---------------+---------+-----------------------------------------------------------------------------------------------------------------------------------------------+
 
 The notification signal has a parameter specifying the *operation* the
 status refers to. The operation can take the following values:
 
+.. _sdk_ubuntu_components_alarm_Operation code    Description-prop:
+
 +------------------+--------------------------------------------------------------------------------------------------------------------------------------+
 | Operation code   | Description                                                                                                                          |
 +==================+======================================================================================================================================+
+.. _sdk_ubuntu_components_alarm_Saving            The status reported refers to an operation requested through-prop:
 | NoOperation      | There is no operation pending. This may be set when an error occured in the alarm adapters and the operation cannot be determined.   |
 +------------------+--------------------------------------------------------------------------------------------------------------------------------------+
-| Saving           | The status reported refers to an operation requested through `save() </sdk/apps/qml/Ubuntu.Components/Alarm#save-method>`__.         |
+.. _sdk_ubuntu_components_alarm_Canceling         The status reported refers to an operation requested through-prop:
+| Saving           | The status reported refers to an operation requested through :ref:`save() <sdk_ubuntu_components_alarm#save-method>`.                   |
 +------------------+--------------------------------------------------------------------------------------------------------------------------------------+
-| Canceling        | The status reported refers to an operation requested through `cancel() </sdk/apps/qml/Ubuntu.Components/Alarm#cancel-method>`__.     |
+.. _sdk_ubuntu_components_alarm_Reseting          The status reported refers to an operation requested through-prop:
+| Canceling        | The status reported refers to an operation requested through :ref:`cancel() <sdk_ubuntu_components_alarm#cancel-method>`.               |
 +------------------+--------------------------------------------------------------------------------------------------------------------------------------+
-| Reseting         | The status reported refers to an operation requested through `reset() </sdk/apps/qml/Ubuntu.Components/Alarm#reset-method>`__.       |
+| Reseting         | The status reported refers to an operation requested through :ref:`reset() <sdk_ubuntu_components_alarm#reset-method>`.                 |
 +------------------+--------------------------------------------------------------------------------------------------------------------------------------+
 
 For example an implementation which resets the alarm data whenever the
@@ -275,6 +300,8 @@ save or cancel operations succeed would look as follows:
     }
 
 | 
+
+.. _sdk_ubuntu_components_alarm_type-prop:
 
 +--------------------------------------------------------------------------+
 |        \ type : AlarmType                                                |
@@ -299,6 +326,8 @@ The default value is Alarm.OneTime.
 Method Documentation
 --------------------
 
+.. _sdk_ubuntu_components_alarm_cancel-method:
+
 +--------------------------------------------------------------------------+
 |        \ cancel()                                                        |
 +--------------------------------------------------------------------------+
@@ -307,12 +336,14 @@ The function removes the alarm from the collection. The function will
 fail for alarms which are not yet registered to the collection.
 
 The operation is asynchronous, and its status is reported through the
-`status </sdk/apps/qml/Ubuntu.Components/Alarm#status-prop>`__ property.
-Further operations should wait till the previous operation is completed.
-The operation result is stored in the
-`error </sdk/apps/qml/Ubuntu.Components/Alarm#error-prop>`__ property.
+:ref:`status <sdk_ubuntu_components_alarm#status-prop>` property. Further
+operations should wait till the previous operation is completed. The
+operation result is stored in the
+:ref:`error <sdk_ubuntu_components_alarm#error-prop>` property.
 
 | 
+
+.. _sdk_ubuntu_components_alarm_reset-method:
 
 +--------------------------------------------------------------------------+
 |        \ reset()                                                         |
@@ -322,10 +353,12 @@ The function resets the alarm properties to its defaults. After this
 call the object can be used to create a new alarm event.
 
 **Note**: do not call this function on alarm objects retrieved from
-`AlarmModel </sdk/apps/qml/Ubuntu.Components/AlarmModel/>`__, as calling
-it will result in the model being out of sync from the alarm database.
+:ref:`AlarmModel <sdk_ubuntu_components_alarmmodel>`, as calling it will
+result in the model being out of sync from the alarm database.
 
 | 
+
+.. _sdk_ubuntu_components_alarm_save-method:
 
 +--------------------------------------------------------------------------+
 |        \ save()                                                          |
@@ -334,34 +367,31 @@ it will result in the model being out of sync from the alarm database.
 Updates or adds an alarm to the alarm collection. The operation aligns
 properties according to the following rules:
 
--  - the
-   `daysOfWeek </sdk/apps/qml/Ubuntu.Components/Alarm#daysOfWeek-prop>`__
+-  - the :ref:`daysOfWeek <sdk_ubuntu_components_alarm#daysOfWeek-prop>`
    will be set to the alarm day if the
-   `daysOfWeek </sdk/apps/qml/Ubuntu.Components/Alarm#daysOfWeek-prop>`__
-   was set to Alarm.AutoDetect.
--  - if the
-   `daysOfWeek </sdk/apps/qml/Ubuntu.Components/Alarm#daysOfWeek-prop>`__
+   :ref:`daysOfWeek <sdk_ubuntu_components_alarm#daysOfWeek-prop>` was set
+   to Alarm.AutoDetect.
+-  - if the :ref:`daysOfWeek <sdk_ubuntu_components_alarm#daysOfWeek-prop>`
    is set to a day other than the one specified in the
-   `date </sdk/apps/qml/Ubuntu.Components/Alarm#date-prop>`__ field, the
-   `date </sdk/apps/qml/Ubuntu.Components/Alarm#date-prop>`__ will be
-   moved ahead to match the day from the
-   `daysOfWeek </sdk/apps/qml/Ubuntu.Components/Alarm#daysOfWeek-prop>`__.
+   :ref:`date <sdk_ubuntu_components_alarm#date-prop>` field, the
+   :ref:`date <sdk_ubuntu_components_alarm#date-prop>` will be moved ahead
+   to match the day from the
+   :ref:`daysOfWeek <sdk_ubuntu_components_alarm#daysOfWeek-prop>`.
 
 The function will fail if
 
--  - the `date </sdk/apps/qml/Ubuntu.Components/Alarm#date-prop>`__
-   property is invalid
+-  - the :ref:`date <sdk_ubuntu_components_alarm#date-prop>` property is
+   invalid
 -  - for one time alarm, the
-   `date </sdk/apps/qml/Ubuntu.Components/Alarm#date-prop>`__ property
-   falue is earlier than the current time
--  - the
-   `daysOfWeek </sdk/apps/qml/Ubuntu.Components/Alarm#daysOfWeek-prop>`__
+   :ref:`date <sdk_ubuntu_components_alarm#date-prop>` property falue is
+   earlier than the current time
+-  - the :ref:`daysOfWeek <sdk_ubuntu_components_alarm#daysOfWeek-prop>`
    property is set to multiple days for one time alarm
 
 The operation is asynchronous, and its status is reported through the
-`status </sdk/apps/qml/Ubuntu.Components/Alarm#status-prop>`__ property.
-Further operations should wait till the previous operation is completed.
-The operation result is stored in the
-`error </sdk/apps/qml/Ubuntu.Components/Alarm#error-prop>`__ property.
+:ref:`status <sdk_ubuntu_components_alarm#status-prop>` property. Further
+operations should wait till the previous operation is completed. The
+operation result is stored in the
+:ref:`error <sdk_ubuntu_components_alarm#error-prop>` property.
 
 | 

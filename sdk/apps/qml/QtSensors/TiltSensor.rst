@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_tiltsensor:
+QtSensors TiltSensor
+====================
+
 The TiltSensor element reports tilt events along the X and Y axes.
 
 +--------------------------------------+--------------------------------------+
@@ -5,28 +9,29 @@ The TiltSensor element reports tilt events along the X and Y axes.
 +--------------------------------------+--------------------------------------+
 | Since:                               | QtSensors 5.0                        |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Sensor </sdk/apps/qml/QtSensors/Sen |
-|                                      | sor/>`__                             |
+| Inherits:                            | :ref:`Sensor <sdk_qtsensors_sensor>` |
 +--------------------------------------+--------------------------------------+
 
 Methods
 -------
 
--  ****`calibrate </sdk/apps/qml/QtSensors/TiltSensor#calibrate-method>`__****\ ()
+-  **:ref:`calibrate <sdk_qtsensors_tiltsensor#calibrate-method>`**\ ()
 
 Detailed Description
 --------------------
 
-The `TiltSensor </sdk/apps/qml/QtSensors/TiltSensor/>`__ element reports
-tilt events along the X and Y axes.
+The :ref:`TiltSensor <sdk_qtsensors_tiltsensor>` element reports tilt
+events along the X and Y axes.
 
 This element wraps the QTiltSensor class. Please see the documentation
 for QTiltSensor for details.
 
-**See also** `TiltReading </sdk/apps/qml/QtSensors/TiltReading/>`__.
+**See also** :ref:`TiltReading <sdk_qtsensors_tiltreading>`.
 
 Method Documentation
 --------------------
+
+.. _sdk_qtsensors_tiltsensor_calibrate-method:
 
 +--------------------------------------------------------------------------+
 |        \ calibrate()                                                     |

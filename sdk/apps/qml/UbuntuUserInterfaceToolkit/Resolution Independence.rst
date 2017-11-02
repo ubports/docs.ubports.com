@@ -1,3 +1,7 @@
+.. _sdk_ubuntuuserinterfacetoolkit_resolution_independence:
+UbuntuUserInterfaceToolkit Resolution Independence
+==================================================
+
 
 
 The objective of resolution independence is to make it easy for
@@ -36,7 +40,7 @@ all measurements. Sizes of elements, spacing, margins, etc. should all
 use multiples of 1 gu.
 
 It is available from QML as a method of the global object **units**,
-instance of `Units </sdk/apps/qml/Ubuntu.Components/Units/>`__.
+instance of :ref:`Units <sdk_ubuntu_components_units>`.
 
 Example Usage:
 
@@ -140,4 +144,4 @@ pixel measurements:
 +-----------------+-----------+---------------------------------+-----------------------------+
 
 `Ubuntu User Interface
-Toolkit </sdk/apps/qml/UbuntuUserInterfaceToolkit/overview-ubuntu-sdk/>`__
+Toolkit </sdk/apps/qml/UbuntuUserInterfaceToolkit/overview-ubuntu-sdk/>`_ 

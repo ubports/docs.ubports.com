@@ -1,3 +1,7 @@
+.. _sdk_qtmultimedia_camerafocus:
+QtMultimedia CameraFocus
+========================
+
 An interface for focus related camera settings.
 
 +---------------------+---------------------------+
@@ -7,22 +11,22 @@ An interface for focus related camera settings.
 Properties
 ----------
 
--  ****`customFocusPoint </sdk/apps/qml/QtMultimedia/CameraFocus#customFocusPoint-prop>`__****
+-  :ref:`customFocusPoint <sdk_qtmultimedia_camerafocus_customFocusPoint-prop>`
    : point
--  ****`focusMode </sdk/apps/qml/QtMultimedia/CameraFocus#focusMode-prop>`__****
+-  :ref:`focusMode <sdk_qtmultimedia_camerafocus_focusMode-prop>` :
+   enumeration
+-  :ref:`focusPointMode <sdk_qtmultimedia_camerafocus_focusPointMode-prop>`
    : enumeration
--  ****`focusPointMode </sdk/apps/qml/QtMultimedia/CameraFocus#focusPointMode-prop>`__****
-   : enumeration
--  ****`focusZones </sdk/apps/qml/QtMultimedia/CameraFocus#focusZones-prop>`__****
+-  :ref:`focusZones <sdk_qtmultimedia_camerafocus_focusZones-prop>`
    : list<focusZone>
 
 Methods
 -------
 
 -  bool
-   ****`isFocusModeSupported </sdk/apps/qml/QtMultimedia/CameraFocus#isFocusModeSupported-method>`__****\ (mode)
+   **:ref:`isFocusModeSupported <sdk_qtmultimedia_camerafocus#isFocusModeSupported-method>`**\ (mode)
 -  bool
-   ****`isFocusPointModeSupported </sdk/apps/qml/QtMultimedia/CameraFocus#isFocusPointModeSupported-method>`__****\ (mode)
+   **:ref:`isFocusPointModeSupported <sdk_qtmultimedia_camerafocus#isFocusPointModeSupported-method>`**\ (mode)
 
 Detailed Description
 --------------------
@@ -34,7 +38,7 @@ including information about any parts of the camera frame that are
 selected for autofocusing.
 
 It should not be constructed separately, instead the ``focus`` property
-of a `Camera </sdk/apps/qml/QtMultimedia/qml-multimedia#camera>`__
+of a `Camera </sdk/apps/qml/QtMultimedia/qml-multimedia/#camera>`_ 
 should be used.
 
 .. code:: qml
@@ -61,6 +65,8 @@ should be used.
 Property Documentation
 ----------------------
 
+.. _sdk_qtmultimedia_camerafocus_customFocusPoint-prop:
+
 +--------------------------------------------------------------------------+
 |        \ customFocusPoint : point                                        |
 +--------------------------------------------------------------------------+
@@ -73,6 +79,8 @@ Custom focus point is used only in FocusPointCustom focus mode.
 
 | 
 
+.. _sdk_qtmultimedia_camerafocus_focusMode-prop:
+
 +--------------------------------------------------------------------------+
 |        \ focusMode : enumeration                                         |
 +--------------------------------------------------------------------------+
@@ -80,17 +88,24 @@ Custom focus point is used only in FocusPointCustom focus mode.
 This property holds the current camera focus mode, which can be one of
 the following values:
 
+.. _sdk_qtmultimedia_camerafocus_Value              Description-prop:
+
 +-------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Value             | Description                                                                                                                                                             |
 +===================+=========================================================================================================================================================================+
+.. _sdk_qtmultimedia_camerafocus_FocusHyperfocal    Focus to hyperfocal distance, with the maximum depth of field achieved. All objects at distances from half of this distance out to infinity will be acceptably sharp.-prop:
 | FocusManual       | Manual or fixed focus mode.                                                                                                                                             |
 +-------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_qtmultimedia_camerafocus_FocusInfinity      Focus strictly to infinity.-prop:
 | FocusHyperfocal   | Focus to hyperfocal distance, with the maximum depth of field achieved. All objects at distances from half of this distance out to infinity will be acceptably sharp.   |
 +-------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_qtmultimedia_camerafocus_FocusAuto          One-shot auto focus mode.-prop:
 | FocusInfinity     | Focus strictly to infinity.                                                                                                                                             |
 +-------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_qtmultimedia_camerafocus_FocusContinuous    Continuous auto focus mode.-prop:
 | FocusAuto         | One-shot auto focus mode.                                                                                                                                               |
 +-------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_qtmultimedia_camerafocus_FocusMacro         One shot auto focus to objects close to camera.-prop:
 | FocusContinuous   | Continuous auto focus mode.                                                                                                                                             |
 +-------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | FocusMacro        | One shot auto focus to objects close to camera.                                                                                                                         |
@@ -100,13 +115,15 @@ It's possible to combine multiple Camera::FocusMode values, for example
 Camera.FocusMacro + Camera.FocusContinuous.
 
 In automatic focusing modes, the
-`focusPointMode </sdk/apps/qml/QtMultimedia/CameraFocus#focusPointMode-prop>`__
+:ref:`focusPointMode <sdk_qtmultimedia_camerafocus#focusPointMode-prop>`
 property and
-`focusZones </sdk/apps/qml/QtMultimedia/CameraFocus#focusZones-prop>`__
-property provide information and control over how automatic focusing is
+:ref:`focusZones <sdk_qtmultimedia_camerafocus#focusZones-prop>` property
+provide information and control over how automatic focusing is
 performed.
 
 | 
+
+.. _sdk_qtmultimedia_camerafocus_focusPointMode-prop:
 
 +--------------------------------------------------------------------------+
 |        \ focusPointMode : enumeration                                    |
@@ -115,24 +132,31 @@ performed.
 This property holds the current camera focus point mode. It is used in
 automatic focusing modes to determine what to focus on. If the current
 focus point mode is ``Camera.FocusPointCustom``, the
-`customFocusPoint </sdk/apps/qml/QtMultimedia/CameraFocus#customFocusPoint-prop>`__
+:ref:`customFocusPoint <sdk_qtmultimedia_camerafocus#customFocusPoint-prop>`
 property allows you to specify which part of the frame to focus on.
 
 The property can take one of the following values:
 
-+---------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
-| Value                     | Description                                                                                                                               |
-+===========================+===========================================================================================================================================+
-| FocusPointAuto            | Automatically select one or multiple focus points.                                                                                        |
-+---------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
-| FocusPointCenter          | Focus to the frame center.                                                                                                                |
-+---------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
-| FocusPointFaceDetection   | Focus on faces in the frame.                                                                                                              |
-+---------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
-| FocusPointCustom          | Focus to the custom point, defined by the `customFocusPoint </sdk/apps/qml/QtMultimedia/CameraFocus#customFocusPoint-prop>`__ property.   |
-+---------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_qtmultimedia_camerafocus_Value                      Description-prop:
+
++---------------------------+---------------------------------------------------------------------------------------------------------------------------------+
+| Value                     | Description                                                                                                                     |
++===========================+=================================================================================================================================+
+.. _sdk_qtmultimedia_camerafocus_FocusPointCenter           Focus to the frame center.-prop:
+| FocusPointAuto            | Automatically select one or multiple focus points.                                                                              |
++---------------------------+---------------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_qtmultimedia_camerafocus_FocusPointFaceDetection    Focus on faces in the frame.-prop:
+| FocusPointCenter          | Focus to the frame center.                                                                                                      |
++---------------------------+---------------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_qtmultimedia_camerafocus_FocusPointCustom           Focus to the custom point, defined by the-prop:
+| FocusPointFaceDetection   | Focus on faces in the frame.                                                                                                    |
++---------------------------+---------------------------------------------------------------------------------------------------------------------------------+
+| FocusPointCustom          | Focus to the custom point, defined by the :ref:`customFocusPoint <sdk_qtmultimedia_camerafocus#customFocusPoint-prop>` property.   |
++---------------------------+---------------------------------------------------------------------------------------------------------------------------------+
 
 | 
+
+.. _sdk_qtmultimedia_camerafocus_focusZones-prop:
 
 +--------------------------------------------------------------------------+
 |        \ focusZones : list<focusZone>                                    |
@@ -140,14 +164,18 @@ The property can take one of the following values:
 
 This property holds the list of current camera focus zones, each
 including ``area`` specified in the same coordinates as
-`customFocusPoint </sdk/apps/qml/QtMultimedia/CameraFocus#customFocusPoint-prop>`__,
+:ref:`customFocusPoint <sdk_qtmultimedia_camerafocus#customFocusPoint-prop>`,
 and zone ``status`` as one of the following values:
+
+.. _sdk_qtmultimedia_camerafocus_Value                       Description-prop:
 
 +----------------------------+-----------------------------------------------------------------------+
 | Value                      | Description                                                           |
 +============================+=======================================================================+
+.. _sdk_qtmultimedia_camerafocus_Camera.FocusAreaSelected    This focus point area is used in autofocusing, but is not in focus.-prop:
 | Camera.FocusAreaUnused     | This focus point area is currently unused in autofocusing.            |
 +----------------------------+-----------------------------------------------------------------------+
+.. _sdk_qtmultimedia_camerafocus_Camera.FocusAreaFocused     This focus point is used in autofocusing, and is in focus.-prop:
 | Camera.FocusAreaSelected   | This focus point area is used in autofocusing, but is not in focus.   |
 +----------------------------+-----------------------------------------------------------------------+
 | Camera.FocusAreaFocused    | This focus point is used in autofocusing, and is in focus.            |
@@ -182,6 +210,8 @@ and zone ``status`` as one of the following values:
 Method Documentation
 --------------------
 
+.. _sdk_qtmultimedia_camerafocus_bool isFocusModeSupported-method:
+
 +--------------------------------------------------------------------------+
 |        \ bool isFocusModeSupported(mode) const                           |
 +--------------------------------------------------------------------------+
@@ -190,6 +220,8 @@ Returns true if the supplied *mode* is a supported focus mode, and false
 otherwise.
 
 | 
+
+.. _sdk_qtmultimedia_camerafocus_bool isFocusPointModeSupported-method:
 
 +--------------------------------------------------------------------------+
 |        \ bool isFocusPointModeSupported(mode) const                      |

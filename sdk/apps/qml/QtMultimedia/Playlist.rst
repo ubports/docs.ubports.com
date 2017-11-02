@@ -1,3 +1,7 @@
+.. _sdk_qtmultimedia_playlist:
+QtMultimedia Playlist
+=====================
+
 For specifying a list of media to be played.
 
 +---------------------+---------------------------+
@@ -7,55 +11,53 @@ For specifying a list of media to be played.
 Properties
 ----------
 
--  ****`currentIndex </sdk/apps/qml/QtMultimedia/Playlist#currentIndex-prop>`__****
+-  :ref:`currentIndex <sdk_qtmultimedia_playlist_currentIndex-prop>`
    : int
--  ****`currentItemsource </sdk/apps/qml/QtMultimedia/Playlist#currentItemsource-prop>`__****
+-  :ref:`currentItemsource <sdk_qtmultimedia_playlist_currentItemsource-prop>`
    : url
--  ****`error </sdk/apps/qml/QtMultimedia/Playlist#error-prop>`__**** :
+-  :ref:`error <sdk_qtmultimedia_playlist_error-prop>` :
    enumeration
--  ****`errorString </sdk/apps/qml/QtMultimedia/Playlist#errorString-prop>`__****
+-  :ref:`errorString <sdk_qtmultimedia_playlist_errorString-prop>`
    : string
--  ****`itemCount </sdk/apps/qml/QtMultimedia/Playlist#itemCount-prop>`__****
-   : int
--  ****`playbackMode </sdk/apps/qml/QtMultimedia/Playlist#playbackMode-prop>`__****
+-  :ref:`itemCount <sdk_qtmultimedia_playlist_itemCount-prop>` :
+   int
+-  :ref:`playbackMode <sdk_qtmultimedia_playlist_playbackMode-prop>`
    : enumeration
--  ****`readOnly </sdk/apps/qml/QtMultimedia/Playlist#readOnly-prop>`__****
-   : bool
+-  :ref:`readOnly <sdk_qtmultimedia_playlist_readOnly-prop>` : bool
 
 Methods
 -------
 
 -  bool
-   ****`addItem </sdk/apps/qml/QtMultimedia/Playlist#addItem-method>`__****\ (source)
+   **:ref:`addItem <sdk_qtmultimedia_playlist#addItem-method>`**\ (source)
 -  bool
-   ****`addItems </sdk/apps/qml/QtMultimedia/Playlist#addItems-method>`__****\ (sources)
+   **:ref:`addItems <sdk_qtmultimedia_playlist#addItems-method>`**\ (sources)
+-  bool :ref:`clear <sdk_qtmultimedia_playlist_clear-method>`\ ()
 -  bool
-   ****`clear </sdk/apps/qml/QtMultimedia/Playlist#clear-method>`__****\ ()
--  bool
-   ****`insertItem </sdk/apps/qml/QtMultimedia/Playlist#insertItem-method>`__****\ (index,
+   **:ref:`insertItem <sdk_qtmultimedia_playlist#insertItem-method>`**\ (index,
    source)
 -  url
-   ****`itemSource </sdk/apps/qml/QtMultimedia/Playlist#itemSource-method>`__****\ (index)
--  ****`load </sdk/apps/qml/QtMultimedia/Playlist#load-method>`__****\ (location,
+   **:ref:`itemSource <sdk_qtmultimedia_playlist#itemSource-method>`**\ (index)
+-  :ref:`load <sdk_qtmultimedia_playlist_load-method>`\ (location,
    format)
 -  bool
-   ****`moveItem </sdk/apps/qml/QtMultimedia/Playlist#moveItem-method>`__****\ (from,
+   **:ref:`moveItem <sdk_qtmultimedia_playlist#moveItem-method>`**\ (from,
    to)
--  ****`next </sdk/apps/qml/QtMultimedia/Playlist#next-method>`__****\ ()
+-  :ref:`next <sdk_qtmultimedia_playlist_next-method>`\ ()
 -  int
-   ****`nextIndex </sdk/apps/qml/QtMultimedia/Playlist#nextIndex-method>`__****\ (steps)
--  ****`previous </sdk/apps/qml/QtMultimedia/Playlist#previous-method>`__****\ ()
+   **:ref:`nextIndex <sdk_qtmultimedia_playlist#nextIndex-method>`**\ (steps)
+-  :ref:`previous <sdk_qtmultimedia_playlist_previous-method>`\ ()
 -  int
-   ****`previousIndex </sdk/apps/qml/QtMultimedia/Playlist#previousIndex-method>`__****\ (steps)
+   **:ref:`previousIndex <sdk_qtmultimedia_playlist#previousIndex-method>`**\ (steps)
 -  bool
-   ****`removeItem </sdk/apps/qml/QtMultimedia/Playlist#removeItem-method>`__****\ (index)
+   **:ref:`removeItem <sdk_qtmultimedia_playlist#removeItem-method>`**\ (index)
 -  bool
-   ****`removeItems </sdk/apps/qml/QtMultimedia/Playlist#removeItems-method>`__****\ (int
+   **:ref:`removeItems <sdk_qtmultimedia_playlist#removeItems-method>`**\ (int
    *start*, int *end*)
 -  bool
-   ****`save </sdk/apps/qml/QtMultimedia/Playlist#save-method>`__****\ (location,
+   **:ref:`save <sdk_qtmultimedia_playlist#save-method>`**\ (location,
    format)
--  ****`shuffle </sdk/apps/qml/QtMultimedia/Playlist#shuffle-method>`__****\ ()
+-  :ref:`shuffle <sdk_qtmultimedia_playlist_shuffle-method>`\ ()
 
 Detailed Description
 --------------------
@@ -63,11 +65,11 @@ Detailed Description
 **``\backported``**\ from 5.6
 
 The Playlist type provides a way to play a list of media with the
-`MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__, Audio and
-Video types. It can be used as a data source for view elements (such as
-ListView) and other elements that interact with model data (such as
-Repeater). When used as a data model, each playlist item's source URL
-can be accessed using the ``source`` role.
+:ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>`, Audio and Video types.
+It can be used as a data source for view elements (such as ListView) and
+other elements that interact with model data (such as Repeater). When
+used as a data model, each playlist item's source URL can be accessed
+using the ``source`` role.
 
 .. code:: qml
 
@@ -104,12 +106,14 @@ can be accessed using the ``source`` role.
         }
     }
 
-**See also** `MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__,
-`Audio </sdk/apps/qml/QtMultimedia/qml-multimedia#audio>`__, and
-`Video </sdk/apps/qml/QtMultimedia/qml-multimedia#video>`__.
+**See also** :ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>`,
+`Audio </sdk/apps/qml/QtMultimedia/qml-multimedia/#audio>`_ , and
+`Video </sdk/apps/qml/QtMultimedia/qml-multimedia/#video>`_ .
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtmultimedia_playlist_currentIndex-prop:
 
 +--------------------------------------------------------------------------+
 |        \ currentIndex : int                                              |
@@ -119,6 +123,8 @@ This property holds the position of the current item in the playlist.
 
 | 
 
+.. _sdk_qtmultimedia_playlist_currentItemsource-prop:
+
 +--------------------------------------------------------------------------+
 |        \ currentItemsource : url                                         |
 +--------------------------------------------------------------------------+
@@ -127,27 +133,37 @@ This property holds the source URL of the current item in the playlist.
 
 | 
 
+.. _sdk_qtmultimedia_playlist_error-prop:
+
 +--------------------------------------------------------------------------+
 |        \ error : enumeration                                             |
 +--------------------------------------------------------------------------+
 
 This property holds the error condition of the playlist.
 
+.. _sdk_qtmultimedia_playlist_Value                      Description-prop:
+
 +---------------------------+-------------------------+
 | Value                     | Description             |
 +===========================+=========================+
+.. _sdk_qtmultimedia_playlist_FormatError                Format error.-prop:
 | NoError                   | No errors               |
 +---------------------------+-------------------------+
+.. _sdk_qtmultimedia_playlist_FormatNotSupportedError    Format not supported.-prop:
 | FormatError               | Format error.           |
 +---------------------------+-------------------------+
+.. _sdk_qtmultimedia_playlist_NetworkError               Network error.-prop:
 | FormatNotSupportedError   | Format not supported.   |
 +---------------------------+-------------------------+
+.. _sdk_qtmultimedia_playlist_AccessDeniedError          Access denied error.-prop:
 | NetworkError              | Network error.          |
 +---------------------------+-------------------------+
 | AccessDeniedError         | Access denied error.    |
 +---------------------------+-------------------------+
 
 | 
+
+.. _sdk_qtmultimedia_playlist_errorString-prop:
 
 +--------------------------------------------------------------------------+
 |        \ errorString : string                                            |
@@ -158,6 +174,8 @@ the playlist.
 
 | 
 
+.. _sdk_qtmultimedia_playlist_itemCount-prop:
+
 +--------------------------------------------------------------------------+
 |        \ itemCount : int                                                 |
 +--------------------------------------------------------------------------+
@@ -166,27 +184,37 @@ This property holds the number of items in the playlist.
 
 | 
 
+.. _sdk_qtmultimedia_playlist_playbackMode-prop:
+
 +--------------------------------------------------------------------------+
 |        \ playbackMode : enumeration                                      |
 +--------------------------------------------------------------------------+
 
 This property holds the order in which items in the playlist are played.
 
+.. _sdk_qtmultimedia_playlist_Value                Description-prop:
+
 +---------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Value               | Description                                                                                                                                                                              |
 +=====================+==========================================================================================================================================================================================+
+.. _sdk_qtmultimedia_playlist_CurrentItemInLoop    The current item is played repeatedly in a loop.-prop:
 | CurrentItemOnce     | The current item is played only once.                                                                                                                                                    |
 +---------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_qtmultimedia_playlist_Sequential           Playback starts from the current and moves through each successive item until the last is reached and then stops. The next item is a null item when the last one is currently playing.-prop:
 | CurrentItemInLoop   | The current item is played repeatedly in a loop.                                                                                                                                         |
 +---------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_qtmultimedia_playlist_Loop                 Playback restarts at the first item after the last has finished playing.-prop:
 | Sequential          | Playback starts from the current and moves through each successive item until the last is reached and then stops. The next item is a null item when the last one is currently playing.   |
 +---------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_qtmultimedia_playlist_Random               Play items in random order.-prop:
 | Loop                | Playback restarts at the first item after the last has finished playing.                                                                                                                 |
 +---------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Random              | Play items in random order.                                                                                                                                                              |
 +---------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 | 
+
+.. _sdk_qtmultimedia_playlist_readOnly-method:
 
 +--------------------------------------------------------------------------+
 |        \ readOnly : bool                                                 |
@@ -199,6 +227,8 @@ This property indicates if the playlist can be modified.
 Method Documentation
 --------------------
 
+.. _sdk_qtmultimedia_playlist_bool addItem-method:
+
 +--------------------------------------------------------------------------+
 |        \ bool addItem(source)                                            |
 +--------------------------------------------------------------------------+
@@ -208,6 +238,8 @@ Appends the *source* URL to the playlist.
 Returns true if the *source* is added successfully.
 
 | 
+
+.. _sdk_qtmultimedia_playlist_bool addItems-method:
 
 +--------------------------------------------------------------------------+
 |        \ bool addItems(sources)                                          |
@@ -219,6 +251,8 @@ Returns true if the *sources* are added successfully.
 
 | 
 
+.. _sdk_qtmultimedia_playlist_bool clear-method:
+
 +--------------------------------------------------------------------------+
 |        \ bool clear()                                                    |
 +--------------------------------------------------------------------------+
@@ -228,6 +262,8 @@ Removes all the items from the playlist.
 Returns true if the operation is successful.
 
 | 
+
+.. _sdk_qtmultimedia_playlist_bool insertItem-method:
 
 +--------------------------------------------------------------------------+
 |        \ bool insertItem(index, source)                                  |
@@ -239,6 +275,8 @@ Returns true if the *source* is added successfully.
 
 | 
 
+.. _sdk_qtmultimedia_playlist_url itemSource-method:
+
 +--------------------------------------------------------------------------+
 |        \ url itemSource(index)                                           |
 +--------------------------------------------------------------------------+
@@ -246,6 +284,8 @@ Returns true if the *source* is added successfully.
 Returns the source URL of the item at the given *index* in the playlist.
 
 | 
+
+.. _sdk_qtmultimedia_playlist_load-method:
 
 +--------------------------------------------------------------------------+
 |        \ load(location, format)                                          |
@@ -259,11 +299,13 @@ New items are appended to the playlist.
 
 ``onloaded()`` is emitted if the playlist loads successfully, otherwise
 ``onLoadFailed()`` is emitted with
-`error </sdk/apps/qml/QtMultimedia/Playlist#error-prop>`__ and
-`errorString </sdk/apps/qml/QtMultimedia/Playlist#errorString-prop>`__
-defined accordingly.
+:ref:`error <sdk_qtmultimedia_playlist#error-prop>` and
+:ref:`errorString <sdk_qtmultimedia_playlist#errorString-prop>` defined
+accordingly.
 
 | 
+
+.. _sdk_qtmultimedia_playlist_bool moveItem-method:
 
 +--------------------------------------------------------------------------+
 |        \ bool moveItem(from, to)                                         |
@@ -275,6 +317,8 @@ Returns true if the *source* is moved successfully.
 
 | 
 
+.. _sdk_qtmultimedia_playlist_next-method:
+
 +--------------------------------------------------------------------------+
 |        \ next()                                                          |
 +--------------------------------------------------------------------------+
@@ -283,24 +327,26 @@ Advances to the next item in the playlist.
 
 | 
 
+.. _sdk_qtmultimedia_playlist_int nextIndex-method:
+
 +--------------------------------------------------------------------------+
 |        \ int nextIndex(steps)                                            |
 +--------------------------------------------------------------------------+
 
 Returns the index of the item in the playlist which would be current
-after calling
-`next() </sdk/apps/qml/QtMultimedia/Playlist#next-method>`__ *steps*
+after calling :ref:`next() <sdk_qtmultimedia_playlist#next-method>` *steps*
 times.
 
 Returned value depends on the size of the playlist, the current position
 and the playback mode.
 
 **See also**
-`playbackMode </sdk/apps/qml/QtMultimedia/Playlist#playbackMode-prop>`__
-and
-`previousIndex() </sdk/apps/qml/QtMultimedia/Playlist#previousIndex-method>`__.
+:ref:`playbackMode <sdk_qtmultimedia_playlist#playbackMode-prop>` and
+:ref:`previousIndex() <sdk_qtmultimedia_playlist#previousIndex-method>`.
 
 | 
+
+.. _sdk_qtmultimedia_playlist_previous-method:
 
 +--------------------------------------------------------------------------+
 |        \ previous()                                                      |
@@ -310,24 +356,26 @@ Returns to the previous item in the playlist.
 
 | 
 
+.. _sdk_qtmultimedia_playlist_int previousIndex-method:
+
 +--------------------------------------------------------------------------+
 |        \ int previousIndex(steps)                                        |
 +--------------------------------------------------------------------------+
 
 Returns the index of the item in the playlist which would be current
-after calling
-`previous() </sdk/apps/qml/QtMultimedia/Playlist#previous-method>`__
+after calling :ref:`previous() <sdk_qtmultimedia_playlist#previous-method>`
 *steps* times.
 
 Returned value depends on the size of the playlist, the current position
 and the playback mode.
 
 **See also**
-`playbackMode </sdk/apps/qml/QtMultimedia/Playlist#playbackMode-prop>`__
-and
-`nextIndex() </sdk/apps/qml/QtMultimedia/Playlist#nextIndex-method>`__.
+:ref:`playbackMode <sdk_qtmultimedia_playlist#playbackMode-prop>` and
+:ref:`nextIndex() <sdk_qtmultimedia_playlist#nextIndex-method>`.
 
 | 
+
+.. _sdk_qtmultimedia_playlist_bool removeItem-method:
 
 +--------------------------------------------------------------------------+
 |        \ bool removeItem(index)                                          |
@@ -339,6 +387,8 @@ Returns true if the *source* is removed successfully.
 
 | 
 
+.. _sdk_qtmultimedia_playlist_bool removeItems-method:
+
 +--------------------------------------------------------------------------+
 |        \ bool removeItems(int *start*, int *end*)                        |
 +--------------------------------------------------------------------------+
@@ -348,6 +398,8 @@ Removes items in the playlist from *start* to **``\end``** inclusive.
 Returns true if the items are removed successfully.
 
 | 
+
+.. _sdk_qtmultimedia_playlist_bool save-method:
 
 +--------------------------------------------------------------------------+
 |        \ bool save(location, format)                                     |
@@ -359,6 +411,8 @@ is used, otherwise the format is guessed from the location name.
 Returns true if the playlist is saved successfully.
 
 | 
+
+.. _sdk_qtmultimedia_playlist_shuffle-method:
 
 +--------------------------------------------------------------------------+
 |        \ shuffle()                                                       |

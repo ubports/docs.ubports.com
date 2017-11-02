@@ -1,3 +1,7 @@
+.. _sdk_qtqml_signal_and_handler_event_system:
+QtQml Signal and Handler Event System
+=====================================
+
 
 
 Application and user interface components need to communicate with each
@@ -103,18 +107,16 @@ the fact that the ``pressed`` property exists.
 
 In some cases it may be desirable to access a signal outside of the
 object that emits it. For these purposes, the ``QtQuick`` module
-provides the `Connections </sdk/apps/qml/QtQml/Connections/>`__ type for
-connecting to signals of arbitrary objects. A
-`Connections </sdk/apps/qml/QtQml/Connections/>`__ object can receive
-any signal from its specified
-`target </sdk/apps/qml/QtQml/Connections#target-prop>`__.
+provides the :ref:`Connections <sdk_qtqml_connections>` type for connecting
+to signals of arbitrary objects. A
+:ref:`Connections <sdk_qtqml_connections>` object can receive any signal
+from its specified :ref:`target <sdk_qtqml_connections#target-prop>`.
 
 For example, the ``onClicked`` handler in the earlier example could have
 been received by the root Rectangle instead, by placing the
-``onClicked`` handler in a
-`Connections </sdk/apps/qml/QtQml/Connections/>`__ object that has its
-`target </sdk/apps/qml/QtQml/Connections#target-prop>`__ set to the
-MouseArea:
+:ref:``onClicked`` handler in a `Connections <sdk_qtqml_connections>`
+object that has its :ref:`target <sdk_qtqml_connections#target-prop>` set
+to the MouseArea:
 
 .. code:: qml
 
@@ -138,7 +140,7 @@ MouseArea:
    :name: attached-signal-handlers
 
 An `attached signal
-handler </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes#attached-properties-and-attached-signal-handlers>`__
+handler </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes/#attached-properties-and-attached-signal-handlers>`_ 
 is a signal handler that receives a signal from an *attaching type*
 rather than the object within which the handler is declared.
 
@@ -174,7 +176,7 @@ mechanism enables objects to receive particular signals without these
 extra processes.
 
 See `Attached properties and attached signal
-handlers </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes#attached-properties-and-attached-signal-handlers>`__
+handlers </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes/#attached-properties-and-attached-signal-handlers>`_ 
 for more information on attached signal handlers.
 
 .. rubric:: Adding Signals to Custom QML Types
@@ -217,7 +219,7 @@ signal using an ``onActivated`` signal handler:
     }
 
 See `Signal
-Attributes </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes#signal-attributes>`__
+Attributes </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes/#signal-attributes>`_ 
 for more details on writing signals for custom QML types.
 
        \        
@@ -261,7 +263,7 @@ handlers rather than using the connect() function. However, using the
 shown above, which would not be possible with signal handlers as they
 must be uniquely named. Also, the ``connect`` method is useful when
 connecting signals to `dynamically created
-objects </sdk/apps/qml/QtQml/qtqml-javascript-dynamicobjectcreation/>`__.
+objects </sdk/apps/qml/QtQml/qtqml-javascript-dynamicobjectcreation/>`_ .
 
 There is a corresponding ``disconnect()`` method for removing connected
 signals:

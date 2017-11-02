@@ -1,3 +1,7 @@
+.. _sdk_qtquick_qml_advanced_tutorial_1_-_creating_the_game_canvas_and_blocks:
+QtQuick QML Advanced Tutorial 1 - Creating the Game Canvas and Blocks
+=====================================================================
+
 
 
 .. rubric:: Creating the application screen
@@ -52,9 +56,9 @@ This gives you a basic game window that includes the main canvas for the
 blocks, a "New Game" button and a score display.
 
 One item you may not recognize here is the
-`SystemPalette </sdk/apps/qml/QtQuick/SystemPalette/>`__ item. This
-provides access to the Qt system palette and is used to give the button
-a more native look-and-feel.
+:ref:`SystemPalette <sdk_qtquick_systempalette>` item. This provides access
+to the Qt system palette and is used to give the button a more native
+look-and-feel.
 
 Notice the anchors for the ``Item``, ``Button`` and ``Text`` types are
 set using group (dot) notation for readability.
@@ -64,10 +68,9 @@ set using group (dot) notation for readability.
 
 The ``Button`` item in the code above is defined in a separate component
 file named ``Button.qml``. To create a functional button, we use the QML
-types `Text </sdk/apps/qml/QtQuick/qtquick-releasenotes#text>`__ and
-`MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ inside a
-`Rectangle </sdk/apps/qml/QtQuick/Rectangle/>`__. Here is the
-``Button.qml`` code:
+types `Text </sdk/apps/qml/QtQuick/qtquick-releasenotes/#text>`_  and
+:ref:`MouseArea <sdk_qtquick_mousearea>` inside a
+:ref:`Rectangle <sdk_qtquick_rectangle>`. Here is the ``Button.qml`` code:
 
 .. code:: qml
 
@@ -107,7 +110,7 @@ types `Text </sdk/apps/qml/QtQuick/qtquick-releasenotes#text>`__ and
     }
 
 This essentially defines a rectangle that contains text and can be
-clicked. The `MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ has an
+clicked. The :ref:`MouseArea <sdk_qtquick_mousearea>` has an
 ``onClicked()`` handler that is implemented to emit the ``clicked()``
 signal of the ``container`` when the area is clicked.
 
@@ -139,7 +142,7 @@ scaled automatically to the correct size.
 
 Notice the relative path for the Image type's ``source`` property. This
 path is relative to the location of the file that contains the
-`Image </sdk/apps/qml/QtQuick/imageelements#image>`__ type.
+`Image </sdk/apps/qml/QtQuick/imageelements/#image>`_  type.
 Alternatively, you could set the Image source to an absolute file path
 or a URL that contains an image.
 
@@ -154,9 +157,9 @@ Files:
 -  tutorials/samegame/samegame1/samegame.qml
 -  tutorials/samegame/samegame1/samegame1.qmlproject
 
-`QML Advanced Tutorial </sdk/apps/qml/QtQuick/qml-advtutorial/>`__ `QML
+`QML Advanced Tutorial </sdk/apps/qml/QtQuick/qml-advtutorial/>`_  `QML
 Advanced Tutorial 2 - Populating the Game
-Canvas </sdk/apps/qml/QtQuick/tutorials-samegame-samegame2/>`__
+Canvas </sdk/apps/qml/QtQuick/tutorials-samegame-samegame2/>`_ 
 
 .. |image0| image:: /media/sdk/apps/qml/qtquick-tutorials-samegame-samegame1-example/images/declarative-adv-tutorial1.png
 

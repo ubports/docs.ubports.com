@@ -1,3 +1,7 @@
+.. _sdk_qtquick_qt_quick_examples_-_touch_interaction:
+QtQuick Qt Quick Examples - Touch Interaction
+=============================================
+
 
 
 |image0|
@@ -5,7 +9,7 @@
 *Touch Interaction* is a collection of small QML examples relating to
 touch interaction methods. For more information, visit `Important
 Concepts In Qt Quick - User
-Input </sdk/apps/qml/QtQuick/qtquick-input-topic/>`__.
+Input </sdk/apps/qml/QtQuick/qtquick-input-topic/>`_ .
 
 .. rubric:: Running the Example
    :name: running-the-example
@@ -18,8 +22,8 @@ Running an Example.
    :name: multipoint-flames
 
 *Multipoint Flames* demonstrates distinguishing different fingers in a
-`MultiPointTouchArea </sdk/apps/qml/QtQuick/MultiPointTouchArea/>`__, by
-assigning a different colored flame to each touch point.
+:ref:`MultiPointTouchArea <sdk_qtquick_multipointtoucharea>`, by assigning
+a different colored flame to each touch point.
 
 The MultipointTouchArea sets up multiple touch points:
 
@@ -54,14 +58,13 @@ and whether it is currently pressed, as follows:
    :name: bear-whack
 
 *Bear-Whack* demonstrates using
-`MultiPointTouchArea </sdk/apps/qml/QtQuick/MultiPointTouchArea/>`__ to
-add multiple finger support to a simple game. The interaction with the
-game is done through a
-`SpriteGoal </sdk/apps/qml/QtQuick/Particles.SpriteGoal/>`__ that
-follows the `TouchPoint </sdk/apps/qml/QtQuick/TouchPoint/>`__. The
-TouchPoints added to the
-`MultiPointTouchArea </sdk/apps/qml/QtQuick/MultiPointTouchArea/>`__ are
-a component with the relevant logic embedded into it:
+:ref:`MultiPointTouchArea <sdk_qtquick_multipointtoucharea>` to add
+multiple finger support to a simple game. The interaction with the game
+is done through a
+`SpriteGoal </sdk/apps/qml/QtQuick/Particles.SpriteGoal/>`_  that
+follows the :ref:`TouchPoint <sdk_qtquick_touchpoint>`. The TouchPoints
+added to the :ref:`MultiPointTouchArea <sdk_qtquick_multipointtoucharea>`
+are a component with the relevant logic embedded into it:
 
 .. code:: qml
 
@@ -97,10 +100,10 @@ a component with the relevant logic embedded into it:
 .. rubric:: Flick Resize
    :name: flick-resize
 
-*Flick Resize* uses a `PinchArea </sdk/apps/qml/QtQuick/PinchArea/>`__
-to implement a *pinch-to-resize* behavior. This is easily achieved by
-listening to the `PinchArea </sdk/apps/qml/QtQuick/PinchArea/>`__
-signals and responding to user input.
+*Flick Resize* uses a :ref:`PinchArea <sdk_qtquick_pincharea>` to implement
+a *pinch-to-resize* behavior. This is easily achieved by listening to
+the :ref:`PinchArea <sdk_qtquick_pincharea>` signals and responding to user
+input.
 
 .. code:: qml
 
@@ -124,7 +127,7 @@ signals and responding to user input.
    :name: flickable
 
 *Flickable* is a simple example demonstrating the
-`Flickable </sdk/apps/qml/QtQuick/touchinteraction#flickable>`__ type.
+`Flickable </sdk/apps/qml/QtQuick/touchinteraction/#flickable>`_  type.
 
 .. code:: qml
 
@@ -143,7 +146,7 @@ signals and responding to user input.
    :name: corkboards
 
 *Corkboards* shows another use for
-`Flickable </sdk/apps/qml/QtQuick/touchinteraction#flickable>`__, with
+`Flickable </sdk/apps/qml/QtQuick/touchinteraction/#flickable>`_ , with
 QML types within the flickable object that respond to mouse and keyboard
 interaction. This behavior does not require special code as the Qt Quick
 types already cooperate with the Flickable type for accepting touch

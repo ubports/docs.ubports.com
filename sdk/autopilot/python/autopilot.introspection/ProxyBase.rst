@@ -1,5 +1,9 @@
+.. _sdk_autopilot_introspection_proxybase:
+autopilot.introspection ProxyBase
+=================================
+
  *class* ``autopilot.introspection.``\ ``ProxyBase``\ (*state\_dict*,
-*path*, *backend*)\ ` <#autopilot.introspection.ProxyBase>`__
+*path*, *backend*)\ ` <#autopilot.introspection.ProxyBase>`_ 
     A class that supports transparent data retrieval from the
     application under test.
 
@@ -18,14 +22,14 @@
     See also
 
     Tutorial Section `*Writing Custom Proxy
-    Classes* </sdk/autopilot/python/tutorial-advanced_autopilot#custom-proxy-classes>`__
+    Classes* </sdk/autopilot/python/tutorial-advanced_autopilot/#custom-proxy-classes>`_ 
         Information on how to write custom proxy classes.
 
     .. raw:: html
 
        </div>
 
-    ``get_all_instances``\ ()` <#autopilot.introspection.ProxyBase.get_all_instances>`__
+    ``get_all_instances``\ ()` <#autopilot.introspection.ProxyBase.get_all_instances>`_ 
         Get all instances of this class that exist within the
         Application state tree.
 
@@ -71,20 +75,20 @@
         | Returns:   | List (possibly empty) of class instances.   |
         +------------+---------------------------------------------+
 
-    ``get_children``\ ()` <#autopilot.introspection.ProxyBase.get_children>`__
+    ``get_children``\ ()` <#autopilot.introspection.ProxyBase.get_children>`_ 
         Returns a list of all child objects.
 
         This returns a list of all children. To return only children of
         a specific type, use
-        ```get_children_by_type`` </sdk/autopilot/python/autopilot.introspection/ProxyBase#autopilot.introspection.ProxyBase.get_children_by_type>`__.
+        :ref:```get_children_by_type`` <sdk_autopilot_introspection_proxybase#autopilot.introspection.ProxyBase.get_children_by_type>`.
         To get objects further down the introspection tree (i.e.- nodes
         that may not necessarily be immeadiate children), use
-        ```select_single`` </sdk/autopilot/python/autopilot.introspection/ProxyBase#autopilot.introspection.ProxyBase.select_single>`__
+        :ref:```select_single`` <sdk_autopilot_introspection_proxybase#autopilot.introspection.ProxyBase.select_single>`
         and
-        ```select_many`` </sdk/autopilot/python/autopilot.introspection/ProxyBase#autopilot.introspection.ProxyBase.select_many>`__.
+        :ref:```select_many`` <sdk_autopilot_introspection_proxybase#autopilot.introspection.ProxyBase.select_many>`.
 
      ``get_children_by_type``\ (*desired\_type*,
-    *\*\*kwargs*)\ ` <#autopilot.introspection.ProxyBase.get_children_by_type>`__
+    *\*\*kwargs*)\ ` <#autopilot.introspection.ProxyBase.get_children_by_type>`_ 
         Get a list of children of the specified type.
 
         Keyword arguments can be used to restrict returned instances.
@@ -149,14 +153,14 @@
         See also
 
         Tutorial Section `*Writing Custom Proxy
-        Classes* </sdk/autopilot/python/tutorial-advanced_autopilot#custom-proxy-classes>`__
+        Classes* </sdk/autopilot/python/tutorial-advanced_autopilot/#custom-proxy-classes>`_ 
 
         .. raw:: html
 
            </div>
 
      ``get_parent``\ (*type\_name=''*,
-    *\*\*kwargs*)\ ` <#autopilot.introspection.ProxyBase.get_parent>`__
+    *\*\*kwargs*)\ ` <#autopilot.introspection.ProxyBase.get_parent>`_ 
         Returns the parent of this object.
 
         One may also use this method to get a specific parent node from
@@ -180,10 +184,10 @@
 
         if the requested object was not found.
 
-     ``get_path``\ ()` <#autopilot.introspection.ProxyBase.get_path>`__
+     ``get_path``\ ()` <#autopilot.introspection.ProxyBase.get_path>`_ 
         Return the absolute path of the dbus node
 
-    ``get_properties``\ ()` <#autopilot.introspection.ProxyBase.get_properties>`__
+    ``get_properties``\ ()` <#autopilot.introspection.ProxyBase.get_properties>`_ 
         Returns a dictionary of all the properties on this class.
 
         This can be useful when you want to log all the properties
@@ -191,14 +195,14 @@
         property in the returned dictionary can be accessed as
         attributes of the object as well.
 
-    ``get_root_instance``\ ()` <#autopilot.introspection.ProxyBase.get_root_instance>`__
+    ``get_root_instance``\ ()` <#autopilot.introspection.ProxyBase.get_root_instance>`_ 
         Get the object at the root of this tree.
 
         This will return an object that represents the root of the
         introspection tree.
 
      *classmethod*
-    ``get_type_query_name``\ ()` <#autopilot.introspection.ProxyBase.get_type_query_name>`__
+    ``get_type_query_name``\ ()` <#autopilot.introspection.ProxyBase.get_type_query_name>`_ 
         Return the Type node name to use within the search query.
 
         This allows for a Custom Proxy Object to be named differently to
@@ -251,7 +255,7 @@
         name (in this case RedRect) but this will not match any node
         type in the tree.
 
-    ``is_moving``\ (*gap\_interval=0.1*)\ ` <#autopilot.introspection.ProxyBase.is_moving>`__
+    ``is_moving``\ (*gap\_interval=0.1*)\ ` <#autopilot.introspection.ProxyBase.is_moving>`_ 
         Check if the element is moving.
 
         +---------------+---------------------------------------------------------------------------------------------------------------------------------------------+
@@ -260,7 +264,7 @@
         | Returns:      | True, if the element is moving, otherwise False.                                                                                            |
         +---------------+---------------------------------------------------------------------------------------------------------------------------------------------+
 
-    ``no_automatic_refreshing``\ ()` <#autopilot.introspection.ProxyBase.no_automatic_refreshing>`__
+    ``no_automatic_refreshing``\ ()` <#autopilot.introspection.ProxyBase.no_automatic_refreshing>`_ 
         Context manager function to disable automatic DBus refreshing
         when retrieving attributes.
 
@@ -282,7 +286,7 @@
         at once.
 
      ``print_tree``\ (*output=None*, *maxdepth=None*,
-    *\_curdepth=0*)\ ` <#autopilot.introspection.ProxyBase.print_tree>`__
+    *\_curdepth=0*)\ ` <#autopilot.introspection.ProxyBase.print_tree>`_ 
         Print properties of the object and its children to a stream.
 
         When writing new tests, this can be called when it is too
@@ -309,7 +313,7 @@
         |               | -  **maxdepth** – If given, limit the maximum recursion level to that number, i. e. only print children which have at most maxdepth-1 intermediate parents.   |
         +---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-    ``refresh_state``\ ()` <#autopilot.introspection.ProxyBase.refresh_state>`__
+    ``refresh_state``\ ()` <#autopilot.introspection.ProxyBase.refresh_state>`_ 
         Refreshes the object’s state.
 
         You should probably never have to call this directly. Autopilot
@@ -323,7 +327,7 @@
         if the object in the application under test has been destroyed.
 
      ``select_many``\ (*type\_name='\*'*, *ap\_result\_sort\_keys=None*,
-    *\*\*kwargs*)\ ` <#autopilot.introspection.ProxyBase.select_many>`__
+    *\*\*kwargs*)\ ` <#autopilot.introspection.ProxyBase.select_many>`_ 
         Get a list of nodes from the introspection tree, with type equal
         to *type\_name* and (optionally) matching the keyword filters
         present in *kwargs*.
@@ -332,10 +336,10 @@
 
         This method searches recursively from the instance this method
         is called on. Calling
-        ```select_many`` </sdk/autopilot/python/autopilot.introspection/ProxyBase#autopilot.introspection.ProxyBase.select_many>`__
+        :ref:```select_many`` <sdk_autopilot_introspection_proxybase#autopilot.introspection.ProxyBase.select_many>`
         on the application (root) proxy object will search the entire
         tree. Calling
-        ```select_many`` </sdk/autopilot/python/autopilot.introspection/ProxyBase#autopilot.introspection.ProxyBase.select_many>`__
+        :ref:```select_many`` <sdk_autopilot_introspection_proxybase#autopilot.introspection.ProxyBase.select_many>`
         on an object in the tree will only search it’s descendants.
 
         Example Usage:
@@ -396,7 +400,7 @@
         The order in which objects are returned is not guaranteed. It is
         bad practise to write tests that depend on the order in which
         this method returns objects. (see `*Do Not Depend on Object
-        Ordering* </sdk/autopilot/python/guides-good_tests#object-ordering>`__
+        Ordering* </sdk/autopilot/python/guides-good_tests/#object-ordering>`_ 
         for more information).
 
         .. raw:: html
@@ -405,9 +409,9 @@
 
         If you want to ensure a certain count of results retrieved from
         this method, use
-        ```wait_select_many`` </sdk/autopilot/python/autopilot.introspection/ProxyBase#autopilot.introspection.ProxyBase.wait_select_many>`__
+        :ref:```wait_select_many`` <sdk_autopilot_introspection_proxybase#autopilot.introspection.ProxyBase.wait_select_many>`
         or if you only want to get one item, use
-        ```select_single`` </sdk/autopilot/python/autopilot.introspection/ProxyBase#autopilot.introspection.ProxyBase.select_single>`__
+        :ref:```select_single`` <sdk_autopilot_introspection_proxybase#autopilot.introspection.ProxyBase.select_single>`
         instead.
 
         Parameters:
@@ -433,14 +437,14 @@
         See also
 
         Tutorial Section `*Writing Custom Proxy
-        Classes* </sdk/autopilot/python/tutorial-advanced_autopilot#custom-proxy-classes>`__
+        Classes* </sdk/autopilot/python/tutorial-advanced_autopilot/#custom-proxy-classes>`_ 
 
         .. raw:: html
 
            </div>
 
      ``select_single``\ (*type\_name='\*'*,
-    *\*\*kwargs*)\ ` <#autopilot.introspection.ProxyBase.select_single>`__
+    *\*\*kwargs*)\ ` <#autopilot.introspection.ProxyBase.select_single>`_ 
         Get a single node from the introspection tree, with type equal
         to *type\_name* and (optionally) matching the keyword filters
         present in *kwargs*.
@@ -449,10 +453,10 @@
 
         This method searches recursively from the instance this method
         is called on. Calling
-        ```select_single`` </sdk/autopilot/python/autopilot.introspection/ProxyBase#autopilot.introspection.ProxyBase.select_single>`__
+        :ref:```select_single`` <sdk_autopilot_introspection_proxybase#autopilot.introspection.ProxyBase.select_single>`
         on the application (root) proxy object will search the entire
         tree. Calling
-        ```select_single`` </sdk/autopilot/python/autopilot.introspection/ProxyBase#autopilot.introspection.ProxyBase.select_single>`__
+        :ref:```select_single`` <sdk_autopilot_introspection_proxybase#autopilot.introspection.ProxyBase.select_single>`
         on an object in the tree will only search it’s descendants.
 
         Example usage:
@@ -496,14 +500,14 @@
         See also
 
         Tutorial Section `*Writing Custom Proxy
-        Classes* </sdk/autopilot/python/tutorial-advanced_autopilot#custom-proxy-classes>`__
+        Classes* </sdk/autopilot/python/tutorial-advanced_autopilot/#custom-proxy-classes>`_ 
 
         .. raw:: html
 
            </div>
 
      *classmethod* ``validate_dbus_object``\ (*path*,
-    *\_state*)\ ` <#autopilot.introspection.ProxyBase.validate_dbus_object>`__
+    *\_state*)\ ` <#autopilot.introspection.ProxyBase.validate_dbus_object>`_ 
         Return whether this class is the appropriate proxy object class
         for a given dbus path and state.
 
@@ -520,13 +524,13 @@
 
      ``wait_select_many``\ (*type\_name='\*'*, *ap\_query\_timeout=10*,
     *ap\_result\_count=1*, *ap\_result\_sort\_keys=None*,
-    *\*\*kwargs*)\ ` <#autopilot.introspection.ProxyBase.wait_select_many>`__
+    *\*\*kwargs*)\ ` <#autopilot.introspection.ProxyBase.wait_select_many>`_ 
         Get a list of nodes from the introspection tree, with type equal
         to *type\_name* and (optionally) matching the keyword filters
         present in *kwargs*.
 
         This method is identical to the
-        ```select_many`` </sdk/autopilot/python/autopilot.introspection/ProxyBase#autopilot.introspection.ProxyBase.select_many>`__
+        :ref:```select_many`` <sdk_autopilot_introspection_proxybase#autopilot.introspection.ProxyBase.select_many>`
         method, except that this method will poll the application under
         test for *ap\_query\_timeout* seconds in the event that the
         search result count is not greater than or equal to
@@ -536,10 +540,10 @@
 
         This method searches recursively from the instance this method
         is called on. Calling
-        ```wait_select_many`` </sdk/autopilot/python/autopilot.introspection/ProxyBase#autopilot.introspection.ProxyBase.wait_select_many>`__
+        :ref:```wait_select_many`` <sdk_autopilot_introspection_proxybase#autopilot.introspection.ProxyBase.wait_select_many>`
         on the application (root) proxy object will search the entire
         tree. Calling
-        ```wait_select_many`` </sdk/autopilot/python/autopilot.introspection/ProxyBase#autopilot.introspection.ProxyBase.wait_select_many>`__
+        :ref:```wait_select_many`` <sdk_autopilot_introspection_proxybase#autopilot.introspection.ProxyBase.wait_select_many>`
         on an object in the tree will only search it’s descendants.
 
         Example Usage:
@@ -580,7 +584,7 @@
         The order in which objects are returned is not guaranteed. It is
         bad practise to write tests that depend on the order in which
         this method returns objects. (see `*Do Not Depend on Object
-        Ordering* </sdk/autopilot/python/guides-good_tests#object-ordering>`__
+        Ordering* </sdk/autopilot/python/guides-good_tests/#object-ordering>`_ 
         for more information).
 
         .. raw:: html
@@ -616,7 +620,7 @@
         See also
 
         Tutorial Section `*Writing Custom Proxy
-        Classes* </sdk/autopilot/python/tutorial-advanced_autopilot#custom-proxy-classes>`__
+        Classes* </sdk/autopilot/python/tutorial-advanced_autopilot/#custom-proxy-classes>`_ 
 
         .. raw:: html
 
@@ -624,12 +628,12 @@
 
      ``wait_select_single``\ (*type\_name='\*'*,
     *ap\_query\_timeout=10*,
-    *\*\*kwargs*)\ ` <#autopilot.introspection.ProxyBase.wait_select_single>`__
+    *\*\*kwargs*)\ ` <#autopilot.introspection.ProxyBase.wait_select_single>`_ 
         Get a proxy object matching some search criteria, retrying if no
         object is found until a timeout is reached.
 
         This method is identical to the
-        ```select_single`` </sdk/autopilot/python/autopilot.introspection/ProxyBase#autopilot.introspection.ProxyBase.select_single>`__
+        :ref:```select_single`` <sdk_autopilot_introspection_proxybase#autopilot.introspection.ProxyBase.select_single>`
         method, except that this method will poll the application under
         test for 10 seconds in the event that the search criteria does
         not match anything.
@@ -642,10 +646,10 @@
 
         This method searches recursively from the proxy object this
         method is called on. Calling
-        ```select_single`` </sdk/autopilot/python/autopilot.introspection/ProxyBase#autopilot.introspection.ProxyBase.select_single>`__
+        :ref:```select_single`` <sdk_autopilot_introspection_proxybase#autopilot.introspection.ProxyBase.select_single>`
         on the application (root) proxy object will search the entire
         tree. Calling
-        ```select_single`` </sdk/autopilot/python/autopilot.introspection/ProxyBase#autopilot.introspection.ProxyBase.select_single>`__
+        :ref:```select_single`` <sdk_autopilot_introspection_proxybase#autopilot.introspection.ProxyBase.select_single>`
         on an object in the tree will only search it’s descendants.
 
         Example usage:
@@ -692,13 +696,13 @@
         See also
 
         Tutorial Section `*Writing Custom Proxy
-        Classes* </sdk/autopilot/python/tutorial-advanced_autopilot#custom-proxy-classes>`__
+        Classes* </sdk/autopilot/python/tutorial-advanced_autopilot/#custom-proxy-classes>`_ 
 
         .. raw:: html
 
            </div>
 
-    ``wait_until_destroyed``\ (*timeout=10*)\ ` <#autopilot.introspection.ProxyBase.wait_until_destroyed>`__
+    ``wait_until_destroyed``\ (*timeout=10*)\ ` <#autopilot.introspection.ProxyBase.wait_until_destroyed>`_ 
         Block until this object is destroyed in the application.
 
         Block until the object this instance is a proxy for has been
@@ -717,7 +721,7 @@
         if the method timed out.
 
      ``wait_until_not_moving``\ (*retry\_attempts\_count=20*,
-    *retry\_interval=0.5*)\ ` <#autopilot.introspection.ProxyBase.wait_until_not_moving>`__
+    *retry\_interval=0.5*)\ ` <#autopilot.introspection.ProxyBase.wait_until_not_moving>`_ 
         Block until this object is not moving.
 
         Block until both x and y of the object stop changing. This is
@@ -738,36 +742,36 @@
         if DBus node is still moving after number of retries specified
         in *retry\_attempts\_count*.
 
-``autopilot.introspection.``\ ``CustomEmulatorBase``\ ` <#autopilot.introspection.CustomEmulatorBase>`__
+``autopilot.introspection.``\ ``CustomEmulatorBase``\ ` <#autopilot.introspection.CustomEmulatorBase>`_ 
     alias of
-    ```ProxyBase`` </sdk/autopilot/python/autopilot.introspection/ProxyBase#autopilot.introspection.ProxyBase>`__
+    :ref:```ProxyBase`` <sdk_autopilot_introspection_proxybase#autopilot.introspection.ProxyBase>`
 
  ``autopilot.introspection.``\ ``is_element``\ (*ap\_query\_func*,
-*\*args*, *\*\*kwargs*)\ ` <#autopilot.introspection.is_element>`__
+*\*args*, *\*\*kwargs*)\ ` <#autopilot.introspection.is_element>`_ 
     Call the *ap\_query\_func* with the args and indicate if it raises
     StateNotFoundError.
 
-    +------------+------------------------------------------------------------------------------------------------------------------------------+
-    | Param:     | ap\_query\_func: The dbus query call to be evaluated.                                                                        |
-    +------------+------------------------------------------------------------------------------------------------------------------------------+
-    | Param:     | *args: The \*ap\_query\_func* positional parameters.                                                                         |
-    +------------+------------------------------------------------------------------------------------------------------------------------------+
-    | Param:     | `\*\* </sdk/autopilot/python/autopilot.introspection/ProxyBase#id1>`__\ kwargs: The *ap\_query\_func* optional parameters.   |
-    +------------+------------------------------------------------------------------------------------------------------------------------------+
-    | Returns:   | False if the *ap\_query\_func* raises StateNotFoundError, True otherwise.                                                    |
-    +------------+------------------------------------------------------------------------------------------------------------------------------+
+    +------------+------------------------------------------------------------------------------------------------------------+
+    | Param:     | ap\_query\_func: The dbus query call to be evaluated.                                                      |
+    +------------+------------------------------------------------------------------------------------------------------------+
+    | Param:     | *args: The \*ap\_query\_func* positional parameters.                                                       |
+    +------------+------------------------------------------------------------------------------------------------------------+
+    | Param:     | :ref:`\*\* <sdk_autopilot_introspection_proxybase#id1>`\ kwargs: The *ap\_query\_func* optional parameters.   |
+    +------------+------------------------------------------------------------------------------------------------------------+
+    | Returns:   | False if the *ap\_query\_func* raises StateNotFoundError, True otherwise.                                  |
+    +------------+------------------------------------------------------------------------------------------------------------+
 
-``autopilot.introspection.``\ ``get_classname_from_path``\ (*object\_path*)\ ` <#autopilot.introspection.get_classname_from_path>`__
+``autopilot.introspection.``\ ``get_classname_from_path``\ (*object\_path*)\ ` <#autopilot.introspection.get_classname_from_path>`_ 
     Given an object path, return the class name component.
 
-``autopilot.introspection.``\ ``get_path_root``\ (*object\_path*)\ ` <#autopilot.introspection.get_path_root>`__
+``autopilot.introspection.``\ ``get_path_root``\ (*object\_path*)\ ` <#autopilot.introspection.get_path_root>`_ 
     Return the name of the root node of specified path.
 
  *exception*
-``autopilot.introspection.``\ ``ProcessSearchError``\ ` <#autopilot.introspection.ProcessSearchError>`__
+``autopilot.introspection.``\ ``ProcessSearchError``\ ` <#autopilot.introspection.ProcessSearchError>`_ 
     Object introspection error occured.
 
-``autopilot.introspection.``\ ``get_proxy_object_for_existing_process``\ (*\*\*kwargs*)\ ` <#autopilot.introspection.get_proxy_object_for_existing_process>`__
+``autopilot.introspection.``\ ``get_proxy_object_for_existing_process``\ (*\*\*kwargs*)\ ` <#autopilot.introspection.get_proxy_object_for_existing_process>`_ 
     Return a single proxy object for an application that is already
     running (i.e. launched outside of Autopilot).
 
@@ -911,7 +915,7 @@
        </div>
 
 ``autopilot.introspection.``\ ``get_proxy_object_for_existing_process_by_name``\ (*process\_name*,
-*emulator\_base=None*)\ ` <#autopilot.introspection.get_proxy_object_for_existing_process_by_name>`__
+*emulator\_base=None*)\ ` <#autopilot.introspection.get_proxy_object_for_existing_process_by_name>`_ 
     Return the proxy object for a process by its name.
 
     Parameters:

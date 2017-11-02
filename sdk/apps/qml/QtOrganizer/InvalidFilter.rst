@@ -1,3 +1,7 @@
+.. _sdk_qtorganizer_invalidfilter:
+QtOrganizer InvalidFilter
+=========================
+
 the InvalidFilter element provides a filter which will never match any
 organizer items.
 
@@ -8,8 +12,8 @@ organizer items.
 Signals
 -------
 
--  ****`onFilterChanged </sdk/apps/qml/QtOrganizer/InvalidFilter#onFilterChanged-signal>`__****\ ()
--  ****`onFilterChanged </sdk/apps/qml/QtOrganizer/InvalidFilter#onFilterChanged-signal>`__****\ ()
+-  **:ref:`onFilterChanged <sdk_qtorganizer_invalidfilter#onFilterChanged-signal>`**\ ()
+-  **:ref:`onFilterChanged <sdk_qtorganizer_invalidfilter#onFilterChanged-signal>`**\ ()
 
 Detailed Description
 --------------------
@@ -24,7 +28,7 @@ Signal Documentation
 +--------------------------------------------------------------------------+
 
 **See also**
-`QtOrganizer5::Filter::onFilterChanged </sdk/apps/qml/QtOrganizer/Filter#onFilterChanged-signal>`__.
+:ref:`QtOrganizer5::Filter::onFilterChanged <sdk_qtorganizer_filter#onFilterChanged-signal>`.
 
 | 
 
@@ -33,6 +37,6 @@ Signal Documentation
 +--------------------------------------------------------------------------+
 
 **See also**
-`QtOrganizer5::Filter::onFilterChanged </sdk/apps/qml/QtOrganizer/Filter#onFilterChanged-signal>`__.
+:ref:`QtOrganizer5::Filter::onFilterChanged <sdk_qtorganizer_filter#onFilterChanged-signal>`.
 
 | 

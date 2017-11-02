@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_checkbox:
+Ubuntu.Components CheckBox
+==========================
+
 CheckBox is a component with two states, checked or unchecked. It can be
 used to set boolean options. The behavior is the same as Switch, the
 only difference is the graphical style.
@@ -5,24 +9,24 @@ only difference is the graphical style.
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import Ubuntu.Components 1.3         |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `AbstractButton </sdk/apps/qml/Ubunt |
-|                                      | u.Components/AbstractButton/>`__     |
+| Inherits:                            | :ref:`AbstractButton <sdk_ubuntu_componen |
+|                                      | ts_abstractbutton>`_                 |
 +--------------------------------------+--------------------------------------+
-| Inherited By:                        | `Switch </sdk/apps/qml/Ubuntu.Compon |
-|                                      | ents/Switch/>`__.                    |
+| Inherited By:                        | :ref:`Switch <sdk_ubuntu_components_switc |
+|                                      | h>`_ .                               |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`checked </sdk/apps/qml/Ubuntu.Components/CheckBox#checked-prop>`__****
-   : bool
+-  :ref:`checked <sdk_ubuntu_components_checkbox_checked-prop>` :
+   bool
 
 Detailed Description
 --------------------
 
 `See also the Design Guidelines on
-selection <https://design.ubuntu.com/apps/building-blocks/selection>`__.
+selection <https://design.ubuntu.com/apps/building-blocks/selection>`_ .
 
 Example:
 
@@ -36,6 +40,8 @@ Example:
 
 Property Documentation
 ----------------------
+
+.. _sdk_ubuntu_components_checkbox_checked-prop:
 
 +--------------------------------------------------------------------------+
 |        \ checked : bool                                                  |

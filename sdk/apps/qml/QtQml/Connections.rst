@@ -1,3 +1,7 @@
+.. _sdk_qtqml_connections:
+QtQml Connections
+=================
+
 Describes generalized connections to signals
 
 +---------------------+--------------------+
@@ -7,10 +11,9 @@ Describes generalized connections to signals
 Properties
 ----------
 
--  ****`ignoreUnknownSignals </sdk/apps/qml/QtQml/Connections#ignoreUnknownSignals-prop>`__****
+-  :ref:`ignoreUnknownSignals <sdk_qtqml_connections_ignoreUnknownSignals-prop>`
    : bool
--  ****`target </sdk/apps/qml/QtQml/Connections#target-prop>`__**** :
-   Object
+-  :ref:`target <sdk_qtqml_connections_target-prop>` : Object
 
 Detailed Description
 --------------------
@@ -63,10 +66,12 @@ other than the sender of the signal:
         onClicked: foo(parameters)
     }
 
-**See also** `Qt QML </sdk/apps/qml/QtQml/qtqml-index/>`__.
+**See also** `Qt QML </sdk/apps/qml/QtQml/qtqml-index/>`_ .
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtqml_connections_ignoreUnknownSignals-prop:
 
 +--------------------------------------------------------------------------+
 |        \ ignoreUnknownSignals : bool                                     |
@@ -79,6 +84,8 @@ useful if you intend to connect to different types of objects, handling
 a different set of signals for each object.
 
 | 
+
+.. _sdk_qtqml_connections_target-prop:
 
 +--------------------------------------------------------------------------+
 |        \ target : Object                                                 |

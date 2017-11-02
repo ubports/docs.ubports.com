@@ -1,6 +1,10 @@
+.. _sdk_filteroption:
+FilterOption
+============
+
 Holds definition of filter option for
-`OptionSelectorFilter </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter/>`__.
-`More... </sdk/scopes/cpp/unity.scopes.FilterOption#details>`__
+`OptionSelectorFilter </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter/>`_ .
+`More... </sdk/scopes/cpp/unity.scopes.FilterOption/#details>`_ 
 
 ``#include <unity/scopes/FilterOption.h>``
 
@@ -9,7 +13,7 @@ Holds definition of filter option for
 
 std::string 
 
-`id </sdk/scopes/cpp/unity.scopes.FilterOption#af85bb24c630335f26a201e5d78af4fec>`__
+`id </sdk/scopes/cpp/unity.scopes.FilterOption/#af85bb24c630335f26a201e5d78af4fec>`_ 
 () const
 
  
@@ -20,7 +24,7 @@ std::string 
 
 std::string 
 
-`label </sdk/scopes/cpp/unity.scopes.FilterOption#ac8b998f42e5dd144b235d8a8d1f38ab3>`__
+`label </sdk/scopes/cpp/unity.scopes.FilterOption/#ac8b998f42e5dd144b235d8a8d1f38ab3>`_ 
 () const
 
  
@@ -31,7 +35,7 @@ std::string 
 
 bool 
 
-`default\_value </sdk/scopes/cpp/unity.scopes.FilterOption#ae202dadd8615a4c416c169f702c4f711>`__
+`default\_value </sdk/scopes/cpp/unity.scopes.FilterOption/#ae202dadd8615a4c416c169f702c4f711>`_ 
 () const
 
  
@@ -44,7 +48,7 @@ Detailed Description
 --------------------
 
 Holds definition of filter option for
-`OptionSelectorFilter </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter/>`__.
+`OptionSelectorFilter </sdk/scopes/cpp/unity.scopes.OptionSelectorFilter/>`_ .
 
 Member Function Documentation
 -----------------------------

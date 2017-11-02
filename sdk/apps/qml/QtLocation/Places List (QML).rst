@@ -1,3 +1,7 @@
+.. _sdk_qtlocation_places_list_(qml):
+QtLocation Places List (QML)
+============================
+
 
 
 |image0|
@@ -12,13 +16,13 @@ making the following import declarations.
     import QtLocation 5.3
 
 Instantiate a
-`Plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__
+`Plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_ 
 instance. The
-`Plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__ is
+`Plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_  is
 effectively the backend from where places are sourced from. Because the
 ``nokia`` plugin has been specified, some mandatory parameters need to
 be filled in, see the `Nokia
-Plugin </sdk/apps/qml/QtLocation/location-plugin-nokia#mandatory-parameters>`__
+Plugin </sdk/apps/qml/QtLocation/location-plugin-nokia/#mandatory-parameters>`_ 
 documentation for details:
 
 .. code:: qml
@@ -33,13 +37,13 @@ documentation for details:
     }
 
 Next we instantiate a
-`PlaceSearchModel </sdk/apps/qml/QtLocation/PlaceSearchModel/>`__ which
-we can use to specify search parameters and perform a places search
-operation. For illustrative purposes,
-`update() </sdk/apps/qml/QtLocation/PlaceSearchModel#update-method>`__
-is invoked once construction of the model is complete. Typically
-`update() </sdk/apps/qml/QtLocation/PlaceSearchModel#update-method>`__
-would be invoked in response to a user action such as a button click.
+:ref:`PlaceSearchModel <sdk_qtlocation_placesearchmodel>` which we can use
+to specify search parameters and perform a places search operation. For
+illustrative purposes,
+:ref:`update() <sdk_qtlocation_placesearchmodel#update-method>` is invoked
+once construction of the model is complete. Typically
+:ref:`update() <sdk_qtlocation_placesearchmodel#update-method>` would be
+invoked in response to a user action such as a button click.
 
 .. code:: qml
 
@@ -54,12 +58,12 @@ would be invoked in response to a user action such as a button click.
 Finally we instantiate a ListView to show the search results found by
 the model. An inline delegate has been used and we have assumed that
 every search result is of
-`type </sdk/apps/qml/QtLocation/PlaceSearchModel#search-result-types>`__
+:ref:`type <sdk_qtlocation_placesearchmodel#search-result-types>`
 ``PlaceSearchesult``. Consequently it is assumed that we always have
 access to the *place*
-`role </sdk/apps/qml/QtLocation/PlaceSearchModel#placesearchmodel-roles>`__,
-other search result types may not have a *place*
-`role </sdk/apps/qml/QtLocation/PlaceSearchModel#placesearchmodel-roles>`__.
+:ref:`role <sdk_qtlocation_placesearchmodel#placesearchmodel-roles>`, other
+search result types may not have a *place*
+:ref:`role <sdk_qtlocation_placesearchmodel#placesearchmodel-roles>`.
 
 .. code:: qml
 

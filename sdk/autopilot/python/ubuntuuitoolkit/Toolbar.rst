@@ -1,16 +1,20 @@
+.. _sdk_ubuntuuitoolkit_toolbar:
+ubuntuuitoolkit Toolbar
+=======================
+
  *class*
-``ubuntuuitoolkit.``\ ``Toolbar``\ (*\*args*)\ ` <#ubuntuuitoolkit.Toolbar>`__
+``ubuntuuitoolkit.``\ ``Toolbar``\ (*\*args*)\ ` <#ubuntuuitoolkit.Toolbar>`_ 
     Bases:
     ``ubuntuuitoolkit._custom_proxy_objects._common.UbuntuUIToolkitCustomProxyObjectBase``
 
     Toolbar Autopilot custom proxy object.
 
      ``click_back_button``\ (*instance*, *\*args*,
-    *\*\*kwargs*)\ ` <#ubuntuuitoolkit.Toolbar.click_back_button>`__
+    *\*\*kwargs*)\ ` <#ubuntuuitoolkit.Toolbar.click_back_button>`_ 
         Click the back button of the toolbar.
 
      ``click_button``\ (*instance*, *\*args*,
-    *\*\*kwargs*)\ ` <#ubuntuuitoolkit.Toolbar.click_button>`__
+    *\*\*kwargs*)\ ` <#ubuntuuitoolkit.Toolbar.click_button>`_ 
         Click a button of the toolbar.
 
         The toolbar should be opened before clicking the button, or an
@@ -30,11 +34,11 @@
         If there is no button with that object name.
 
      ``close``\ (*instance*, *\*args*,
-    *\*\*kwargs*)\ ` <#ubuntuuitoolkit.Toolbar.close>`__
+    *\*\*kwargs*)\ ` <#ubuntuuitoolkit.Toolbar.close>`_ 
         Close the toolbar if it’s opened.
 
      ``open``\ (*instance*, *\*args*,
-    *\*\*kwargs*)\ ` <#ubuntuuitoolkit.Toolbar.open>`__
+    *\*\*kwargs*)\ ` <#ubuntuuitoolkit.Toolbar.open>`_ 
         Open the toolbar if it’s not already opened.
 
         +------------+----------------+
@@ -42,7 +46,7 @@
         +------------+----------------+
 
  *exception*
-``ubuntuuitoolkit.``\ ``ToolkitException``\ ` <#ubuntuuitoolkit.ToolkitException>`__
+``ubuntuuitoolkit.``\ ``ToolkitException``\ ` <#ubuntuuitoolkit.ToolkitException>`_ 
     Bases: ``exceptions.Exception``
 
     Exception raised when there is an error with the custom proxy

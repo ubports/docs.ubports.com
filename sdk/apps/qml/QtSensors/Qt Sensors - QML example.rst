@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_qt_sensors_-_qml_example:
+QtSensors Qt Sensors - QML example
+==================================
+
 
 
 |image0|
@@ -16,8 +20,7 @@ Import the QtSensors 5.x declarative plugin:
 
 Add the Sensor QML types into your qml file.
 
-In this example we use the
-`TiltSensor </sdk/apps/qml/QtSensors/TiltSensor/>`__:
+In this example we use the :ref:`TiltSensor <sdk_qtsensors_tiltsensor>`:
 
 .. code:: qml
 
@@ -36,14 +39,14 @@ property to true or false.
 
 Reading the data can be done for each sensor type like following:
 
-`TiltSensor </sdk/apps/qml/QtSensors/TiltSensor/>`__
+:ref:`TiltSensor <sdk_qtsensors_tiltsensor>`
 
 .. code:: qml
 
     text: "X Rotation: " + tilt.xRotation + "��"
     text: "Y Rotation: " + tilt.yRotation +  "��"
 
-`AmbientLightSensor </sdk/apps/qml/QtSensors/AmbientLightSensor/>`__
+:ref:`AmbientLightSensor <sdk_qtsensors_ambientlightsensor>`
 
 .. code:: qml
 
@@ -62,7 +65,7 @@ Reading the data can be done for each sensor type like following:
             ambientlighttext.text = "Ambient light: Sunny";
     }
 
-`ProximitySensor </sdk/apps/qml/QtSensors/ProximitySensor/>`__
+:ref:`ProximitySensor <sdk_qtsensors_proximitysensor>`
 
 .. code:: qml
 

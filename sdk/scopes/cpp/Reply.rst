@@ -1,5 +1,9 @@
+.. _sdk_reply:
+Reply
+=====
+
 Allows query termination to be sent to the source of a query.
-`More... </sdk/scopes/cpp/unity.scopes.Reply#details>`__
+`More... </sdk/scopes/cpp/unity.scopes.Reply/#details>`_ 
 
 ``#include <unity/scopes/Reply.h>``
 
@@ -14,7 +18,7 @@ Inheritance diagram for unity::scopes::Reply:
 
 virtual void 
 
-`finished </sdk/scopes/cpp/unity.scopes.Reply#a9ca653d5d7f7c97a781bc362f2af7749>`__
+`finished </sdk/scopes/cpp/unity.scopes.Reply/#a9ca653d5d7f7c97a781bc362f2af7749>`_ 
 ()=0
 
  
@@ -25,7 +29,7 @@ virtual void 
 
 virtual void 
 
-`error </sdk/scopes/cpp/unity.scopes.Reply#a526c9cbb11f896210835fb3420324ba8>`__
+`error </sdk/scopes/cpp/unity.scopes.Reply/#a526c9cbb11f896210835fb3420324ba8>`_ 
 (std::exception\_ptr ex)=0
 
  
@@ -37,8 +41,8 @@ virtual void 
 
 virtual void 
 
-`info </sdk/scopes/cpp/unity.scopes.Reply#af35cbaba152e4919306f32b06bd81029>`__
-(`OperationInfo </sdk/scopes/cpp/unity.scopes.OperationInfo/>`__ const
+`info </sdk/scopes/cpp/unity.scopes.Reply/#af35cbaba152e4919306f32b06bd81029>`_ 
+(`OperationInfo </sdk/scopes/cpp/unity.scopes.OperationInfo/>`_  const
 &op\_info)=0
 
  
@@ -50,7 +54,7 @@ virtual void 
 
 virtual 
 
-`~Reply </sdk/scopes/cpp/unity.scopes.Reply#a9f0cfeeee75a27e111ebd955523e1bb0>`__
+`~Reply </sdk/scopes/cpp/unity.scopes.Reply/#a9f0cfeeee75a27e111ebd955523e1bb0>`_ 
 ()
 
  
@@ -60,11 +64,11 @@ virtual 
  
 
 |-| Public Member Functions inherited from
-`unity::scopes::Object </sdk/scopes/cpp/unity.scopes.Object/>`__
+`unity::scopes::Object </sdk/scopes/cpp/unity.scopes.Object/>`_ 
 
 virtual std::string 
 
-`endpoint </sdk/scopes/cpp/unity.scopes.Object#ad7618cc9d878c40b389361d4acd473ae>`__
+`endpoint </sdk/scopes/cpp/unity.scopes.Object/#ad7618cc9d878c40b389361d4acd473ae>`_ 
 ()=0
 
  
@@ -75,7 +79,7 @@ virtual std::string 
 
 virtual std::string 
 
-`identity </sdk/scopes/cpp/unity.scopes.Object#a1b55aea886f0a68cb8a578f7ee0b1cfd>`__
+`identity </sdk/scopes/cpp/unity.scopes.Object/#a1b55aea886f0a68cb8a578f7ee0b1cfd>`_ 
 ()=0
 
  
@@ -86,7 +90,7 @@ virtual std::string 
 
 virtual std::string 
 
-`target\_category </sdk/scopes/cpp/unity.scopes.Object#a40a997516629df3dacca9742dbddd6cb>`__
+`target\_category </sdk/scopes/cpp/unity.scopes.Object/#a40a997516629df3dacca9742dbddd6cb>`_ 
 ()=0
 
  
@@ -97,7 +101,7 @@ virtual std::string 
 
 virtual int64\_t 
 
-`timeout </sdk/scopes/cpp/unity.scopes.Object#a41d9839f1e3cbcd6d8baee0736feccab>`__
+`timeout </sdk/scopes/cpp/unity.scopes.Object/#a41d9839f1e3cbcd6d8baee0736feccab>`_ 
 ()=0
 
  
@@ -108,7 +112,7 @@ virtual int64\_t 
 
 virtual std::string 
 
-`to\_string </sdk/scopes/cpp/unity.scopes.Object#a9ae27e1f30dc755abcd796a1e8a25150>`__
+`to\_string </sdk/scopes/cpp/unity.scopes.Object/#a9ae27e1f30dc755abcd796a1e8a25150>`_ 
 ()=0
 
  
@@ -143,13 +147,13 @@ Constructor & Destructor Documentation
 | -------------+                       |                                      |
 +--------------------------------------+--------------------------------------+
 
-Destroys a `Reply </sdk/scopes/cpp/unity.scopes.Reply/>`__.
+Destroys a `Reply </sdk/scopes/cpp/unity.scopes.Reply/>`_ .
 
-If a `Reply </sdk/scopes/cpp/unity.scopes.Reply/>`__ goes out of scope
+If a `Reply </sdk/scopes/cpp/unity.scopes.Reply/>`_  goes out of scope
 without a prior call to
-`finished() </sdk/scopes/cpp/unity.scopes.Reply#a9ca653d5d7f7c97a781bc362f2af7749>`__,
+`finished() </sdk/scopes/cpp/unity.scopes.Reply/#a9ca653d5d7f7c97a781bc362f2af7749>`_ ,
 the destructor implicitly calls
-`finished() </sdk/scopes/cpp/unity.scopes.Reply#a9ca653d5d7f7c97a781bc362f2af7749>`__,
+`finished() </sdk/scopes/cpp/unity.scopes.Reply/#a9ca653d5d7f7c97a781bc362f2af7749>`_ ,
 provided QueryBase::run() has returned.
 
 Member Function Documentation
@@ -180,11 +184,11 @@ Informs the source of a query that the query was terminated due to an
 error.
 
 Multiple calls to
-`error() </sdk/scopes/cpp/unity.scopes.Reply#a526c9cbb11f896210835fb3420324ba8>`__
+`error() </sdk/scopes/cpp/unity.scopes.Reply/#a526c9cbb11f896210835fb3420324ba8>`_ 
 and calls to
-`finished() </sdk/scopes/cpp/unity.scopes.Reply#a9ca653d5d7f7c97a781bc362f2af7749>`__
+`finished() </sdk/scopes/cpp/unity.scopes.Reply/#a9ca653d5d7f7c97a781bc362f2af7749>`_ 
 after
-`error() </sdk/scopes/cpp/unity.scopes.Reply#a526c9cbb11f896210835fb3420324ba8>`__
+`error() </sdk/scopes/cpp/unity.scopes.Reply/#a526c9cbb11f896210835fb3420324ba8>`_ 
 was called are ignored.
 
 Parameters
@@ -216,24 +220,24 @@ Parameters
 Informs the source of a query that the query results are complete.
 
 Calling
-`finished() </sdk/scopes/cpp/unity.scopes.Reply#a9ca653d5d7f7c97a781bc362f2af7749>`__
+`finished() </sdk/scopes/cpp/unity.scopes.Reply/#a9ca653d5d7f7c97a781bc362f2af7749>`_ 
 informs the source of a query that the final result for the query was
 sent, that is, that the query is complete. Multiple calls to
-`finished() </sdk/scopes/cpp/unity.scopes.Reply#a9ca653d5d7f7c97a781bc362f2af7749>`__
+`finished() </sdk/scopes/cpp/unity.scopes.Reply/#a9ca653d5d7f7c97a781bc362f2af7749>`_ 
 and calls to
-`error() </sdk/scopes/cpp/unity.scopes.Reply#a526c9cbb11f896210835fb3420324ba8>`__
+`error() </sdk/scopes/cpp/unity.scopes.Reply/#a526c9cbb11f896210835fb3420324ba8>`_ 
 after
-`finished() </sdk/scopes/cpp/unity.scopes.Reply#a9ca653d5d7f7c97a781bc362f2af7749>`__
+`finished() </sdk/scopes/cpp/unity.scopes.Reply/#a9ca653d5d7f7c97a781bc362f2af7749>`_ 
 was called are ignored. The destructor implicitly calls
-`finished() </sdk/scopes/cpp/unity.scopes.Reply#a9ca653d5d7f7c97a781bc362f2af7749>`__
-if a `Reply </sdk/scopes/cpp/unity.scopes.Reply/>`__ goes out of scope
+`finished() </sdk/scopes/cpp/unity.scopes.Reply/#a9ca653d5d7f7c97a781bc362f2af7749>`_ 
+if a `Reply </sdk/scopes/cpp/unity.scopes.Reply/>`_  goes out of scope
 without a prior call to
-`finished() </sdk/scopes/cpp/unity.scopes.Reply#a9ca653d5d7f7c97a781bc362f2af7749>`__.
+`finished() </sdk/scopes/cpp/unity.scopes.Reply/#a9ca653d5d7f7c97a781bc362f2af7749>`_ .
 Similarly, QueryBase::run() implicitly calls
-`finished() </sdk/scopes/cpp/unity.scopes.Reply#a9ca653d5d7f7c97a781bc362f2af7749>`__
+`finished() </sdk/scopes/cpp/unity.scopes.Reply/#a9ca653d5d7f7c97a781bc362f2af7749>`_ 
 when it returns, provided there are no more reply proxies in scope. In
 other words, calling
-`finished() </sdk/scopes/cpp/unity.scopes.Reply#a9ca653d5d7f7c97a781bc362f2af7749>`__
+`finished() </sdk/scopes/cpp/unity.scopes.Reply/#a9ca653d5d7f7c97a781bc362f2af7749>`_ 
 is optional. The scopes runtime ensures that the call happens
 automatically, either when the last reply proxy goes out of scope, or
 when QueryBase::run() returns (whichever happens last).
@@ -257,7 +261,7 @@ when QueryBase::run() returns (whichever happens last).
 | |              |              | rati |                                      |
 | onInfo/> |              |            |                                      |
 |    |              |                  |                                      |
-| |              |              | `__  |                                      |
+| |              |              | `_   |                                      |
 |          |              |            |                                      |
 |    |              |                  |                                      |
 | |              |              | cons |                                      |
@@ -272,13 +276,13 @@ Informs the source of a query that additional information regarding the
 reply is available.
 
 Calling
-`info() </sdk/scopes/cpp/unity.scopes.Reply#af35cbaba152e4919306f32b06bd81029>`__
+`info() </sdk/scopes/cpp/unity.scopes.Reply/#af35cbaba152e4919306f32b06bd81029>`_ 
 does not terminate the query, it simply informs the source that
 something interesting occured during execution of the query (usually
 affecting the results returned in some way).
 
 Multiple calls to
-`info() </sdk/scopes/cpp/unity.scopes.Reply#af35cbaba152e4919306f32b06bd81029>`__
+`info() </sdk/scopes/cpp/unity.scopes.Reply/#af35cbaba152e4919306f32b06bd81029>`_ 
 for each condition are legal.
 
 Parameters

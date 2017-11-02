@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_mathutils:
+Ubuntu.Components mathUtils
+===========================
+
 Various mathematical utility functions.
 
 +---------------------+--------------------------------+
@@ -7,13 +11,13 @@ Various mathematical utility functions.
 Methods
 -------
 
--  ****`clamp </sdk/apps/qml/Ubuntu.Components/mathUtils#clamp-method>`__****\ (x,
+-  **:ref:`clamp <sdk_ubuntu_components_mathutils#clamp-method>`**\ (x,
    min, max)
--  ****`clampAndProject </sdk/apps/qml/Ubuntu.Components/mathUtils#clampAndProject-method>`__****\ (x,
+-  **:ref:`clampAndProject <sdk_ubuntu_components_mathutils#clampAndProject-method>`**\ (x,
    xmin, xmax, ymin, ymax)
--  ****`lerp </sdk/apps/qml/Ubuntu.Components/mathUtils#lerp-method>`__****\ (delta,
+-  **:ref:`lerp <sdk_ubuntu_components_mathutils#lerp-method>`**\ (delta,
    from, to)
--  ****`projectValue </sdk/apps/qml/Ubuntu.Components/mathUtils#projectValue-method>`__****\ (x,
+-  **:ref:`projectValue <sdk_ubuntu_components_mathutils#projectValue-method>`**\ (x,
    xmin, xmax, ymin, ymax)
 
 Detailed Description
@@ -21,6 +25,8 @@ Detailed Description
 
 Method Documentation
 --------------------
+
+.. _sdk_ubuntu_components_mathutils_clamp-method:
 
 +--------------------------------------------------------------------------+
 |        \ clamp(x, min, max)                                              |
@@ -30,15 +36,19 @@ Ensure the value x is between min and max
 
 | 
 
+.. _sdk_ubuntu_components_mathutils_clampAndProject-method:
+
 +--------------------------------------------------------------------------+
 |        \ clampAndProject(x, xmin, xmax, ymin, ymax)                      |
 +--------------------------------------------------------------------------+
 
 Linearly project a value x, but in addition to
-`projectValue </sdk/apps/qml/Ubuntu.Components/mathUtils#projectValue-method>`__
+:ref:`projectValue <sdk_ubuntu_components_mathutils#projectValue-method>`
 it's clamped to xmin/xmax first
 
 | 
+
+.. _sdk_ubuntu_components_mathutils_lerp-method:
 
 +--------------------------------------------------------------------------+
 |        \ lerp(delta, from, to)                                           |
@@ -47,6 +57,8 @@ it's clamped to xmin/xmax first
 Get the linear interpolation
 
 | 
+
+.. _sdk_ubuntu_components_mathutils_projectValue-method:
 
 +--------------------------------------------------------------------------+
 |        \ projectValue(x, xmin, xmax, ymin, ymax)                         |

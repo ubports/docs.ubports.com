@@ -1,37 +1,38 @@
+.. _sdk_qtquick_loader:
+QtQuick Loader
+==============
+
 Allows dynamic loading of a subtree from a URL or Component
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtQuick 2.4                   |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Item </sdk/apps/qml/QtQuick/Item/>` |
-|                                      | __                                   |
+| Inherits:                            | :ref:`Item <sdk_qtquick_item>`       |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`active </sdk/apps/qml/QtQuick/Loader#active-prop>`__**** : bool
--  ****`asynchronous </sdk/apps/qml/QtQuick/Loader#asynchronous-prop>`__****
-   : bool
--  ****`item </sdk/apps/qml/QtQuick/Loader#item-prop>`__**** : object
--  ****`progress </sdk/apps/qml/QtQuick/Loader#progress-prop>`__**** :
-   real
--  ****`source </sdk/apps/qml/QtQuick/Loader#source-prop>`__**** : url
--  ****`sourceComponent </sdk/apps/qml/QtQuick/Loader#sourceComponent-prop>`__****
+-  :ref:`active <sdk_qtquick_loader_active-prop>` : bool
+-  :ref:`asynchronous <sdk_qtquick_loader_asynchronous-prop>` :
+   bool
+-  :ref:`item <sdk_qtquick_loader_item-prop>` : object
+-  :ref:`progress <sdk_qtquick_loader_progress-prop>` : real
+-  :ref:`source <sdk_qtquick_loader_source-prop>` : url
+-  :ref:`sourceComponent <sdk_qtquick_loader_sourceComponent-prop>`
    : Component
--  ****`status </sdk/apps/qml/QtQuick/Loader#status-prop>`__**** :
-   enumeration
+-  :ref:`status <sdk_qtquick_loader_status-prop>` : enumeration
 
 Signals
 -------
 
--  ****`loaded </sdk/apps/qml/QtQuick/Loader#loaded-signal>`__****\ ()
+-  :ref:`loaded <sdk_qtquick_loader_loaded-signal>`\ ()
 
 Methods
 -------
 
 -  object
-   ****`setSource </sdk/apps/qml/QtQuick/Loader#setSource-method>`__****\ (url
+   **:ref:`setSource <sdk_qtquick_loader#setSource-method>`**\ (url
    *source*, object *properties*)
 
 Detailed Description
@@ -40,16 +41,16 @@ Detailed Description
 Loader is used to dynamically load QML components.
 
 Loader can load a QML file (using the
-`source </sdk/apps/qml/QtQuick/Loader#source-prop>`__ property) or a
-Component object (using the
-`sourceComponent </sdk/apps/qml/QtQuick/Loader#sourceComponent-prop>`__
-property). It is useful for delaying the creation of a component until
-it is required: for example, when a component should be created on
-demand, or when a component should not be created unnecessarily for
-performance reasons.
+:ref:`source <sdk_qtquick_loader#source-prop>` property) or a Component
+object (using the
+:ref:`sourceComponent <sdk_qtquick_loader#sourceComponent-prop>` property).
+It is useful for delaying the creation of a component until it is
+required: for example, when a component should be created on demand, or
+when a component should not be created unnecessarily for performance
+reasons.
 
 Here is a Loader that loads "Page1.qml" as a component when the
-`MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ is clicked:
+:ref:`MouseArea <sdk_qtquick_mousearea>` is clicked:
 
 .. code:: qml
 
@@ -64,15 +65,14 @@ Here is a Loader that loads "Page1.qml" as a component when the
     }
 
 The loaded object can be accessed using the
-`item </sdk/apps/qml/QtQuick/Loader#item-prop>`__ property.
+:ref:`item <sdk_qtquick_loader#item-prop>` property.
 
-If the `source </sdk/apps/qml/QtQuick/Loader#source-prop>`__ or
-`sourceComponent </sdk/apps/qml/QtQuick/Loader#sourceComponent-prop>`__
-changes, any previously instantiated items are destroyed. Setting
-`source </sdk/apps/qml/QtQuick/Loader#source-prop>`__ to an empty string
-or setting
-`sourceComponent </sdk/apps/qml/QtQuick/Loader#sourceComponent-prop>`__
-to ``undefined`` destroys the currently loaded object, freeing resources
+If the :ref:`source <sdk_qtquick_loader#source-prop>` or
+:ref:`sourceComponent <sdk_qtquick_loader#sourceComponent-prop>` changes,
+any previously instantiated items are destroyed. Setting
+:ref:`source <sdk_qtquick_loader#source-prop>` to an empty string or
+setting :ref:`sourceComponent <sdk_qtquick_loader#sourceComponent-prop>` to
+``undefined`` destroys the currently loaded object, freeing resources
 and leaving the Loader empty.
 
 Loader sizing behavior
@@ -152,25 +152,24 @@ loaded item through a Connections object:
 
 Alternatively, since ``MyItem.qml`` is loaded within the scope of the
 Loader, it could also directly call any function defined in the Loader
-or its parent `Item </sdk/apps/qml/QtQuick/Item/>`__.
+or its parent :ref:`Item <sdk_qtquick_item>`.
 
 Focus and key events
 ~~~~~~~~~~~~~~~~~~~~
 
-Loader is a focus scope. Its
-`focus </sdk/apps/qml/QtQuick/Item#focus-prop>`__ property must be set
-to ``true`` for any of its children to get the *active focus*. (See
-`Keyboard Focus in Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-input-focus/>`__ for more details.)
+Loader is a focus scope. Its :ref:`focus <sdk_qtquick_item#focus-prop>`
+property must be set to ``true`` for any of its children to get the
+*active focus*. (See `Keyboard Focus in Qt
+Quick </sdk/apps/qml/QtQuick/qtquick-input-focus/>`_  for more details.)
 Any key events received in the loaded item should likely also be
-`accepted </sdk/apps/qml/QtQuick/KeyEvent#accepted-prop>`__ so they are
-not propagated to the Loader.
+:ref:`accepted <sdk_qtquick_keyevent#accepted-prop>` so they are not
+propagated to the Loader.
 
 For example, the following ``application.qml`` loads ``KeyReader.qml``
-when the `MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ is clicked.
-Notice the `focus </sdk/apps/qml/QtQuick/Item#focus-prop>`__ property is
-set to ``true`` for the Loader as well as the
-`Item </sdk/apps/qml/QtQuick/Item/>`__ in the dynamically loaded object:
+when the :ref:`MouseArea <sdk_qtquick_mousearea>` is clicked. Notice the
+:ref:`focus <sdk_qtquick_item#focus-prop>` property is set to ``true`` for
+the Loader as well as the :ref:`Item <sdk_qtquick_item>` in the dynamically
+loaded object:
 
 +--------------------------------------+--------------------------------------+
 | application.qml                      | KeyReader.qml                        |
@@ -198,7 +197,7 @@ set to ``true`` for the Loader as well as the
 
 Once ``KeyReader.qml`` is loaded, it accepts key events and sets
 ``event.accepted`` to ``true`` so that the event is not propagated to
-the parent `Rectangle </sdk/apps/qml/QtQuick/Rectangle/>`__.
+the parent :ref:`Rectangle <sdk_qtquick_rectangle>`.
 
 Since ``QtQuick 2.0``, Loader can also load non-visual components.
 
@@ -211,11 +210,10 @@ there is one important issue to be aware of related to the creation
 context of a Component.
 
 In the following example, the ``index`` context property inserted by the
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__ into
-``delegateComponent``'s context will be inaccessible to Text, as the
-Loader will use the creation context of ``myComponent`` as the parent
-context when instantiating it, and ``index`` does not refer to anything
-within that context chain.
+:ref:`ListView <sdk_qtquick_listview>` into ``delegateComponent``'s context
+will be inaccessible to Text, as the Loader will use the creation
+context of ``myComponent`` as the parent context when instantiating it,
+and ``index`` does not refer to anything within that context chain.
 
 .. code:: qml
 
@@ -290,6 +288,8 @@ component it is loading).
 Property Documentation
 ----------------------
 
+.. _sdk_qtquick_loader_active-prop:
+
 +--------------------------------------------------------------------------+
 |        \ active : bool                                                   |
 +--------------------------------------------------------------------------+
@@ -298,24 +298,25 @@ This property is ``true`` if the Loader is currently active. The default
 value for this property is ``true``.
 
 If the Loader is inactive, changing the
-`source </sdk/apps/qml/QtQuick/Loader#source-prop>`__ or
-`sourceComponent </sdk/apps/qml/QtQuick/Loader#sourceComponent-prop>`__
-will not cause the item to be instantiated until the Loader is made
-active.
+:ref:`source <sdk_qtquick_loader#source-prop>` or
+:ref:`sourceComponent <sdk_qtquick_loader#sourceComponent-prop>` will not
+cause the item to be instantiated until the Loader is made active.
 
 Setting the value to inactive will cause any
-`item </sdk/apps/qml/QtQuick/Loader#item-prop>`__ loaded by the loader
-to be released, but will not affect the
-`source </sdk/apps/qml/QtQuick/Loader#source-prop>`__ or
-`sourceComponent </sdk/apps/qml/QtQuick/Loader#sourceComponent-prop>`__.
+:ref:`item <sdk_qtquick_loader#item-prop>` loaded by the loader to be
+released, but will not affect the
+:ref:`source <sdk_qtquick_loader#source-prop>` or
+:ref:`sourceComponent <sdk_qtquick_loader#sourceComponent-prop>`.
 
-The `status </sdk/apps/qml/QtQuick/Loader#status-prop>`__ of an inactive
-loader is always ``Null``.
+The :ref:`status <sdk_qtquick_loader#status-prop>` of an inactive loader is
+always ``Null``.
 
-**See also** `source </sdk/apps/qml/QtQuick/Loader#source-prop>`__ and
-`sourceComponent </sdk/apps/qml/QtQuick/Loader#sourceComponent-prop>`__.
+**See also** :ref:`source <sdk_qtquick_loader#source-prop>` and
+:ref:`sourceComponent <sdk_qtquick_loader#sourceComponent-prop>`.
 
 | 
+
+.. _sdk_qtquick_loader_asynchronous-prop:
 
 +--------------------------------------------------------------------------+
 |        \ asynchronous : bool                                             |
@@ -325,15 +326,15 @@ This property holds whether the component will be instantiated
 asynchronously.
 
 When used in conjunction with the
-`source </sdk/apps/qml/QtQuick/Loader#source-prop>`__ property, loading
-and compilation will also be performed in a background thread.
+:ref:`source <sdk_qtquick_loader#source-prop>` property, loading and
+compilation will also be performed in a background thread.
 
 Loading asynchronously creates the objects declared by the component
 across multiple frames, and reduces the likelihood of glitches in
 animation. When loading asynchronously the status will change to
 Loader.Loading. Once the entire component has been created, the
-`item </sdk/apps/qml/QtQuick/Loader#item-prop>`__ will be available and
-the status will change to Loader.Ready.
+:ref:`item <sdk_qtquick_loader#item-prop>` will be available and the status
+will change to Loader.Ready.
 
 To avoid seeing the items loading progressively set ``visible``
 appropriately, e.g.
@@ -351,6 +352,8 @@ unrelated to loading a component asynchronously via a network.
 
 | 
 
+.. _sdk_qtquick_loader_item-prop:
+
 +--------------------------------------------------------------------------+
 |        \ item : object                                                   |
 +--------------------------------------------------------------------------+
@@ -361,6 +364,8 @@ Since ``QtQuick 2.0``, Loader can load any object type.
 
 | 
 
+.. _sdk_qtquick_loader_progress-prop:
+
 +--------------------------------------------------------------------------+
 |        \ progress : real                                                 |
 +--------------------------------------------------------------------------+
@@ -369,9 +374,11 @@ This property holds the progress of loading QML data from the network,
 from 0.0 (nothing loaded) to 1.0 (finished). Most QML files are quite
 small, so this value will rapidly change from 0 to 1.
 
-**See also** `status </sdk/apps/qml/QtQuick/Loader#status-prop>`__.
+**See also** :ref:`status <sdk_qtquick_loader#status-prop>`.
 
 | 
+
+.. _sdk_qtquick_loader_source-prop:
 
 +--------------------------------------------------------------------------+
 |        \ source : url                                                    |
@@ -384,16 +391,18 @@ not restricted to Item types.
 
 To unload the currently loaded object, set this property to an empty
 string, or set
-`sourceComponent </sdk/apps/qml/QtQuick/Loader#sourceComponent-prop>`__
-to ``undefined``. Setting ``source`` to a new URL will also cause the
-item created by the previous URL to be unloaded.
+:ref:`sourceComponent <sdk_qtquick_loader#sourceComponent-prop>` to
+``undefined``. Setting ``source`` to a new URL will also cause the item
+created by the previous URL to be unloaded.
 
 **See also**
-`sourceComponent </sdk/apps/qml/QtQuick/Loader#sourceComponent-prop>`__,
-`status </sdk/apps/qml/QtQuick/Loader#status-prop>`__, and
-`progress </sdk/apps/qml/QtQuick/Loader#progress-prop>`__.
+:ref:`sourceComponent <sdk_qtquick_loader#sourceComponent-prop>`,
+:ref:`status <sdk_qtquick_loader#status-prop>`, and
+:ref:`progress <sdk_qtquick_loader#progress-prop>`.
 
 | 
+
+.. _sdk_qtquick_loader_sourceComponent-prop:
 
 +--------------------------------------------------------------------------+
 |        \ sourceComponent : Component                                     |
@@ -418,10 +427,12 @@ To unload the currently loaded object, set this property to
 Since ``QtQuick 2.0``, Loader is able to load any type of object; it is
 not restricted to Item types.
 
-**See also** `source </sdk/apps/qml/QtQuick/Loader#source-prop>`__ and
-`progress </sdk/apps/qml/QtQuick/Loader#progress-prop>`__.
+**See also** :ref:`source <sdk_qtquick_loader#source-prop>` and
+:ref:`progress <sdk_qtquick_loader#progress-prop>`.
 
 | 
+
+.. _sdk_qtquick_loader_status-prop:
 
 +--------------------------------------------------------------------------+
 |        \ status : enumeration                                            |
@@ -462,20 +473,22 @@ Note that if the source is a local file, the status will initially be
 Ready (or Error). While there will be no onStatusChanged signal in that
 case, the onLoaded will still be invoked.
 
-**See also** `progress </sdk/apps/qml/QtQuick/Loader#progress-prop>`__.
+**See also** :ref:`progress <sdk_qtquick_loader#progress-prop>`.
 
 | 
 
 Signal Documentation
 --------------------
 
+.. _sdk_qtquick_loader_loaded()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ loaded()                                                        |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the
-`status </sdk/apps/qml/QtQuick/Loader#status-prop>`__ becomes
-``Loader.Ready``, or on successful initial load.
+:ref:`status <sdk_qtquick_loader#status-prop>` becomes ``Loader.Ready``, or
+on successful initial load.
 
 The corresponding handler is ``onLoaded``.
 
@@ -484,6 +497,8 @@ The corresponding handler is ``onLoaded``.
 Method Documentation
 --------------------
 
+.. _sdk_qtquick_loader_object setSource-method:
+
 +--------------------------------------------------------------------------+
 |        \ object setSource(url *source*, object *properties*)             |
 +--------------------------------------------------------------------------+
@@ -491,28 +506,29 @@ Method Documentation
 Creates an object instance of the given *source* component that will
 have the given *properties*. The *properties* argument is optional. The
 instance will be accessible via the
-`item </sdk/apps/qml/QtQuick/Loader#item-prop>`__ property once loading
-and instantiation is complete.
+:ref:`item <sdk_qtquick_loader#item-prop>` property once loading and
+instantiation is complete.
 
-If the `active </sdk/apps/qml/QtQuick/Loader#active-prop>`__ property is
-``false`` at the time when this function is called, the given *source*
-component will not be loaded but the *source* and initial *properties*
-will be cached. When the loader is made
-`active </sdk/apps/qml/QtQuick/Loader#active-prop>`__, an instance of
-the *source* component will be created with the initial *properties*
-set.
+If the :ref:`active <sdk_qtquick_loader#active-prop>` property is ``false``
+at the time when this function is called, the given *source* component
+will not be loaded but the *source* and initial *properties* will be
+cached. When the loader is made
+:ref:`active <sdk_qtquick_loader#active-prop>`, an instance of the *source*
+component will be created with the initial *properties* set.
 
 Setting the initial property values of an instance of a component in
 this manner will **not** trigger any associated
-`Behavior </sdk/apps/qml/QtQuick/Behavior/>`__\ s.
+:ref:`Behavior <sdk_qtquick_behavior>`\ s.
 
 Note that the cached *properties* will be cleared if the
-`source </sdk/apps/qml/QtQuick/Loader#source-prop>`__ or
-`sourceComponent </sdk/apps/qml/QtQuick/Loader#sourceComponent-prop>`__
-is changed after calling this function but prior to setting the loader
-`active </sdk/apps/qml/QtQuick/Loader#active-prop>`__.
+:ref:`source <sdk_qtquick_loader#source-prop>` or
+:ref:`sourceComponent <sdk_qtquick_loader#sourceComponent-prop>` is changed
+after calling this function but prior to setting the loader
+:ref:`active <sdk_qtquick_loader#active-prop>`.
 
 Example:
+
+.. _sdk_qtquick_loader_.. code-method:
 
 +--------------------------------------+--------------------------------------+
 | .. code:: qml                        | .. code:: qml                        |
@@ -536,7 +552,7 @@ Example:
 |     }                                |     }                                |
 +--------------------------------------+--------------------------------------+
 
-**See also** `source </sdk/apps/qml/QtQuick/Loader#source-prop>`__ and
-`active </sdk/apps/qml/QtQuick/Loader#active-prop>`__.
+**See also** :ref:`source <sdk_qtquick_loader#source-prop>` and
+:ref:`active <sdk_qtquick_loader#active-prop>`.
 
 | 

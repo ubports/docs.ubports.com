@@ -1,63 +1,67 @@
+.. _sdk_frequently_asked_questions:
+Frequently Asked Questions
+==========================
+
 
 Contents
 
 -  `Frequently Asked
-   Questions </sdk/autopilot/python/faq-faq#frequently-asked-questions>`__
+   Questions </sdk/autopilot/python/faq-faq/#frequently-asked-questions>`_ 
 
    -  `Autopilot: The
-      Project </sdk/autopilot/python/faq-faq#autopilot-the-project>`__
+      Project </sdk/autopilot/python/faq-faq/#autopilot-the-project>`_ 
 
       -  `Q. Where can I get help /
-         support? </sdk/autopilot/python/faq-faq#q-where-can-i-get-help-support>`__
+         support? </sdk/autopilot/python/faq-faq/#q-where-can-i-get-help-support>`_ 
       -  `Q. Which version of autopilot should I
-         install? </sdk/autopilot/python/faq-faq#q-which-version-of-autopilot-should-i-install>`__
+         install? </sdk/autopilot/python/faq-faq/#q-which-version-of-autopilot-should-i-install>`_ 
       -  `Q. Should I write my tests in python2 or
-         python3? </sdk/autopilot/python/faq-faq#q-should-i-write-my-tests-in-python2-or-python3>`__
+         python3? </sdk/autopilot/python/faq-faq/#q-should-i-write-my-tests-in-python2-or-python3>`_ 
       -  `Q: Should I convert my existing tests to
-         python3? </sdk/autopilot/python/faq-faq#q-should-i-convert-my-existing-tests-to-python3>`__
+         python3? </sdk/autopilot/python/faq-faq/#q-should-i-convert-my-existing-tests-to-python3>`_ 
       -  `Q. Where can I report a
-         bug? </sdk/autopilot/python/faq-faq#q-where-can-i-report-a-bug>`__
+         bug? </sdk/autopilot/python/faq-faq/#q-where-can-i-report-a-bug>`_ 
       -  `Q. What type of applications can autopilot
-         test? </sdk/autopilot/python/faq-faq#q-what-type-of-applications-can-autopilot-test>`__
+         test? </sdk/autopilot/python/faq-faq/#q-what-type-of-applications-can-autopilot-test>`_ 
 
    -  `Autopilot
-      Tests </sdk/autopilot/python/faq-faq#autopilot-tests>`__
+      Tests </sdk/autopilot/python/faq-faq/#autopilot-tests>`_ 
 
       -  `Q. Autopilot tests often include multiple assertions. Isn’t
          this bad
-         practise? </sdk/autopilot/python/faq-faq#q-autopilot-tests-often-include-multiple-assertions-isn-t-this-bad-practise>`__
+         practise? </sdk/autopilot/python/faq-faq/#q-autopilot-tests-often-include-multiple-assertions-isn-t-this-bad-practise>`_ 
       -  `Q. How do I write a test that uses either a Mouse or a Touch
          device
-         interchangeably? </sdk/autopilot/python/faq-faq#q-how-do-i-write-a-test-that-uses-either-a-mouse-or-a-touch-device-interchangeably>`__
+         interchangeably? </sdk/autopilot/python/faq-faq/#q-how-do-i-write-a-test-that-uses-either-a-mouse-or-a-touch-device-interchangeably>`_ 
       -  `Q. How do I use the Onscreen Keyboard (OSK) to input text in
          my
-         test? </sdk/autopilot/python/faq-faq#q-how-do-i-use-the-onscreen-keyboard-osk-to-input-text-in-my-test>`__
+         test? </sdk/autopilot/python/faq-faq/#q-how-do-i-use-the-onscreen-keyboard-osk-to-input-text-in-my-test>`_ 
 
    -  `Autopilot Tests and Launching
-      Applications </sdk/autopilot/python/faq-faq#autopilot-tests-and-launching-applications>`__
+      Applications </sdk/autopilot/python/faq-faq/#autopilot-tests-and-launching-applications>`_ 
 
       -  `Q. How do I launch a Click application from within a test so I
          can introspect
-         it? </sdk/autopilot/python/faq-faq#q-how-do-i-launch-a-click-application-from-within-a-test-so-i-can-introspect-it>`__
+         it? </sdk/autopilot/python/faq-faq/#q-how-do-i-launch-a-click-application-from-within-a-test-so-i-can-introspect-it>`_ 
       -  `Q. How do I access an already running application so that I
          can test/introspect
-         it? </sdk/autopilot/python/faq-faq#q-how-do-i-access-an-already-running-application-so-that-i-can-test-introspect-it>`__
+         it? </sdk/autopilot/python/faq-faq/#q-how-do-i-access-an-already-running-application-so-that-i-can-test-introspect-it>`_ 
 
    -  `Autopilot Qt & Gtk
-      Support </sdk/autopilot/python/faq-faq#autopilot-qt-gtk-support>`__
+      Support </sdk/autopilot/python/faq-faq/#autopilot-qt-gtk-support>`_ 
 
       -  `Q. How do I launch my application so that I can explore it
          with the vis
-         tool? </sdk/autopilot/python/faq-faq#q-how-do-i-launch-my-application-so-that-i-can-explore-it-with-the-vis-tool>`__
+         tool? </sdk/autopilot/python/faq-faq/#q-how-do-i-launch-my-application-so-that-i-can-explore-it-with-the-vis-tool>`_ 
       -  `Q. What is the impact on memory of adding objectNames to QML
-         items? </sdk/autopilot/python/faq-faq#q-what-is-the-impact-on-memory-of-adding-objectnames-to-qml-items>`__
+         items? </sdk/autopilot/python/faq-faq/#q-what-is-the-impact-on-memory-of-adding-objectnames-to-qml-items>`_ 
 
 .. rubric:: `Autopilot: The
-   Project </sdk/autopilot/python/faq-faq#id2>`__\ ` <#autopilot-the-project>`__
+   Project </sdk/autopilot/python/faq-faq/#id2>`_ \ ` <#autopilot-the-project>`_ 
    :name: autopilot-the-project
 
 .. rubric:: `Q. Where can I get help /
-   support? </sdk/autopilot/python/faq-faq#id3>`__\ ` <#q-where-can-i-get-help-support>`__
+   support? </sdk/autopilot/python/faq-faq/#id3>`_ \ ` <#q-where-can-i-get-help-support>`_ 
    :name: q.-where-can-i-get-help-support
 
 The developers hang out in the #ubuntu-autopilot IRC channel on
@@ -66,24 +70,24 @@ irc.freenode.net.
    class="section">
 
 .. rubric:: `Q. Which version of autopilot should I
-   install? </sdk/autopilot/python/faq-faq#id4>`__\ ` <#q-which-version-of-autopilot-should-i-install>`__
+   install? </sdk/autopilot/python/faq-faq/#id4>`_ \ ` <#q-which-version-of-autopilot-should-i-install>`_ 
    :name: q.-which-version-of-autopilot-should-i-install
 
 Ideally you should adopt and utilize the latest version of autopilot. If
 your testcase requires you to utilize an older version of autopilot for
 reasons other than `*Porting Autopilot
-Tests* </sdk/autopilot/python/porting-porting#porting>`__, please `file
-a bug <https://bugs.launchpad.net/autopilot/+filebug>`__ and let the
+Tests* </sdk/autopilot/python/porting-porting/#porting>`_ , please `file
+a bug <https://bugs.launchpad.net/autopilot/+filebug>`_  and let the
 development team know about your issue.
 
    class="section">
 
 .. rubric:: `Q. Should I write my tests in python2 or
-   python3? </sdk/autopilot/python/faq-faq#id5>`__\ ` <#q-should-i-write-my-tests-in-python2-or-python3>`__
+   python3? </sdk/autopilot/python/faq-faq/#id5>`_ \ ` <#q-should-i-write-my-tests-in-python2-or-python3>`_ 
    :name: q.-should-i-write-my-tests-in-python2-or-python3
 
 As Autopilot fully supports python3 (see `*Python
-3* </sdk/autopilot/python/porting-porting#python3-support>`__), you
+3* </sdk/autopilot/python/porting-porting/#python3-support>`_ ), you
 should seek to use python3 for new tests. Before making a decision, you
 should also ensure any 3rd party modules your test may depend on also
 support python3.
@@ -91,28 +95,28 @@ support python3.
    class="section">
 
 .. rubric:: `Q: Should I convert my existing tests to
-   python3? </sdk/autopilot/python/faq-faq#id6>`__\ ` <#q-should-i-convert-my-existing-tests-to-python3>`__
+   python3? </sdk/autopilot/python/faq-faq/#id6>`_ \ ` <#q-should-i-convert-my-existing-tests-to-python3>`_ 
    :name: q-should-i-convert-my-existing-tests-to-python3
 
 See above. In a word, yes. Converting python2 to python3 (see `*Python
-3* </sdk/autopilot/python/porting-porting#python3-support>`__) is
+3* </sdk/autopilot/python/porting-porting/#python3-support>`_ ) is
 generally straightforward and converting a testcase is likely much
 easier than a full python application. You can also consider retaining
 python2 compatibility upon conversion.
 
 .. rubric:: `Q. Where can I report a
-   bug? </sdk/autopilot/python/faq-faq#id7>`__\ ` <#q-where-can-i-report-a-bug>`__
+   bug? </sdk/autopilot/python/faq-faq/#id7>`_ \ ` <#q-where-can-i-report-a-bug>`_ 
    :name: q.-where-can-i-report-a-bug
 
 Autopilot is hosted on launchpad - bugs can be reported on the
 `launchpad bug page for
-autopilot <https://bugs.launchpad.net/autopilot/+filebug>`__ (this
+autopilot <https://bugs.launchpad.net/autopilot/+filebug>`_  (this
 requires a launchpad account).
 
    class="section">
 
 .. rubric:: `Q. What type of applications can autopilot
-   test? </sdk/autopilot/python/faq-faq#id8>`__\ ` <#q-what-type-of-applications-can-autopilot-test>`__
+   test? </sdk/autopilot/python/faq-faq/#id8>`_ \ ` <#q-what-type-of-applications-can-autopilot-test>`_ 
    :name: q.-what-type-of-applications-can-autopilot-test
 
 Autopilot works with severall different types of applications,
@@ -125,7 +129,7 @@ Autopilot is designed to work across all the form factors Ubuntu runs
 on, including the phone and tablet.
 
 .. rubric:: `Autopilot
-   Tests </sdk/autopilot/python/faq-faq#id9>`__\ ` <#autopilot-tests>`__
+   Tests </sdk/autopilot/python/faq-faq/#id9>`_ \ ` <#autopilot-tests>`_ 
    :name: autopilot-tests
 
    id="q-autopilot-tests-often-include-multiple-assertions-isn-t-this-bad-practise"
@@ -133,7 +137,7 @@ on, including the phone and tablet.
 
 .. rubric:: `Q. Autopilot tests often include multiple assertions. Isn’t
    this bad
-   practise? </sdk/autopilot/python/faq-faq#id10>`__\ ` <#q-autopilot-tests-often-include-multiple-assertions-isn-t-this-bad-practise>`__
+   practise? </sdk/autopilot/python/faq-faq/#id10>`_ \ ` <#q-autopilot-tests-often-include-multiple-assertions-isn-t-this-bad-practise>`_ 
    :name: q.-autopilot-tests-often-include-multiple-assertions.-isnt-this-bad-practise
 
 Maybe. But probably not.
@@ -175,9 +179,9 @@ several very good reasons to have more than assertion in a single test:
 
 -  Some tests need to wait for the application to respond to user input
    before the test continues. The easiest way to do this is to use the
-   ```Eventually`` </sdk/autopilot/python/autopilot.matchers/Eventually#autopilot.matchers.Eventually>`__
+   :ref:```Eventually`` <sdk_autopilot_matchers_eventually#autopilot.matchers.Eventually>`
    matcher in the middle of your interaction with the application. For
-   example, if testing the `Firefox <http://www.mozilla.org/en-US/>`__
+   example, if testing the `Firefox <http://www.mozilla.org/en-US/>`_ 
    browsers ability to print a certain web comic, we might produce a
    test that looks similar to this:
 
@@ -224,7 +228,7 @@ that are as small and understandable as possible.
 
 .. rubric:: `Q. How do I write a test that uses either a Mouse or a
    Touch device
-   interchangeably? </sdk/autopilot/python/faq-faq#id11>`__\ ` <#q-how-do-i-write-a-test-that-uses-either-a-mouse-or-a-touch-device-interchangeably>`__
+   interchangeably? </sdk/autopilot/python/faq-faq/#id11>`_ \ ` <#q-how-do-i-write-a-test-that-uses-either-a-mouse-or-a-touch-device-interchangeably>`_ 
    :name: q.-how-do-i-write-a-test-that-uses-either-a-mouse-or-a-touch-device-interchangeably
 
 The ``autopilot.input.Pointer`` class is a simple wrapper that unifies
@@ -266,12 +270,12 @@ runtime.
 
 .. rubric:: `Q. How do I use the Onscreen Keyboard (OSK) to input text
    in my
-   test? </sdk/autopilot/python/faq-faq#id12>`__\ ` <#q-how-do-i-use-the-onscreen-keyboard-osk-to-input-text-in-my-test>`__
+   test? </sdk/autopilot/python/faq-faq/#id12>`_ \ ` <#q-how-do-i-use-the-onscreen-keyboard-osk-to-input-text-in-my-test>`_ 
    :name: q.-how-do-i-use-the-onscreen-keyboard-osk-to-input-text-in-my-test
 
 The OSK is an backend option for the ``autopilot.input.Keyboard.create``
 method (see this `*Advanced
-Autopilot* </sdk/autopilot/python/tutorial-advanced_autopilot#adv-picking-backend>`__
+Autopilot* </sdk/autopilot/python/tutorial-advanced_autopilot/#adv-picking-backend>`_ 
 section for details regarding backend selection.)
 
 Unlike the other backends (X11, UInput) the OSK has a GUI presence and
@@ -296,7 +300,7 @@ the scope of the context manager the OSK will be dismissed with a swipe:
     self.assertThat()
 
 .. rubric:: `Autopilot Tests and Launching
-   Applications </sdk/autopilot/python/faq-faq#id13>`__\ ` <#autopilot-tests-and-launching-applications>`__
+   Applications </sdk/autopilot/python/faq-faq/#id13>`_ \ ` <#autopilot-tests-and-launching-applications>`_ 
    :name: autopilot-tests-and-launching-applications
 
    id="q-how-do-i-launch-a-click-application-from-within-a-test-so-i-can-introspect-it"
@@ -304,12 +308,12 @@ the scope of the context manager the OSK will be dismissed with a swipe:
 
 .. rubric:: `Q. How do I launch a Click application from within a test
    so I can introspect
-   it? </sdk/autopilot/python/faq-faq#id14>`__\ ` <#q-how-do-i-launch-a-click-application-from-within-a-test-so-i-can-introspect-it>`__
+   it? </sdk/autopilot/python/faq-faq/#id14>`_ \ ` <#q-how-do-i-launch-a-click-application-from-within-a-test-so-i-can-introspect-it>`_ 
    :name: q.-how-do-i-launch-a-click-application-from-within-a-test-so-i-can-introspect-it
 
 Launching a Click application is similar to launching a traditional
 application and is as easy as using
-```launch_click_package`` </sdk/autopilot/python/autopilot.testcase/AutopilotTestCase#autopilot.testcase.AutopilotTestCase.launch_click_package>`__:
+:ref:```launch_click_package`` <sdk_autopilot_testcase_autopilottestcase#autopilot.testcase.AutopilotTestCase.launch_click_package>`:
 
 ::
 
@@ -322,7 +326,7 @@ application and is as easy as using
 
 .. rubric:: `Q. How do I access an already running application so that I
    can test/introspect
-   it? </sdk/autopilot/python/faq-faq#id15>`__\ ` <#q-how-do-i-access-an-already-running-application-so-that-i-can-test-introspect-it>`__
+   it? </sdk/autopilot/python/faq-faq/#id15>`_ \ ` <#q-how-do-i-access-an-already-running-application-so-that-i-can-test-introspect-it>`_ 
    :name: q.-how-do-i-access-an-already-running-application-so-that-i-can-testintrospect-it
 
 In instances where it’s impossible to launch the application-under-test
@@ -330,9 +334,9 @@ from within the testsuite use ``get_proxy_object_for_existing_process``
 to get a proxy object for the running application. In all other cases
 the recommended way to launch and retrieve a proxy object for an
 application is by calling either
-```launch_test_application`` </sdk/autopilot/python/autopilot.testcase/AutopilotTestCase#autopilot.testcase.AutopilotTestCase.launch_test_application>`__
+:ref:```launch_test_application`` <sdk_autopilot_testcase_autopilottestcase#autopilot.testcase.AutopilotTestCase.launch_test_application>`
 or
-```launch_click_package`` </sdk/autopilot/python/autopilot.testcase/AutopilotTestCase#autopilot.testcase.AutopilotTestCase.launch_click_package>`__
+:ref:```launch_click_package`` <sdk_autopilot_testcase_autopilottestcase#autopilot.testcase.AutopilotTestCase.launch_click_package>`
 
 For example, to access a long running process that is running before
 your test starts:
@@ -343,7 +347,7 @@ your test starts:
     app_proxy = get_proxy_object_for_existing_process(pid=application_pid)
 
 .. rubric:: `Autopilot Qt & Gtk
-   Support </sdk/autopilot/python/faq-faq#id16>`__\ ` <#autopilot-qt-gtk-support>`__
+   Support </sdk/autopilot/python/faq-faq/#id16>`_ \ ` <#autopilot-qt-gtk-support>`_ 
    :name: autopilot-qt-gtk-support
 
    id="q-how-do-i-launch-my-application-so-that-i-can-explore-it-with-the-vis-tool"
@@ -351,12 +355,12 @@ your test starts:
 
 .. rubric:: `Q. How do I launch my application so that I can explore it
    with the vis
-   tool? </sdk/autopilot/python/faq-faq#id17>`__\ ` <#q-how-do-i-launch-my-application-so-that-i-can-explore-it-with-the-vis-tool>`__
+   tool? </sdk/autopilot/python/faq-faq/#id17>`_ \ ` <#q-how-do-i-launch-my-application-so-that-i-can-explore-it-with-the-vis-tool>`_ 
    :name: q.-how-do-i-launch-my-application-so-that-i-can-explore-it-with-the-vis-tool
 
 Autopilot can launch applications with Autopilot support enabled
 allowing you to explore and introspect the application using the `*vis
-tool* <../../guides/running_ap#visualise-introspection-tree>`__
+tool* <../../guides/running_ap/#visualise-introspection-tree>`_ 
 
 For instance launching gedit is as easy as:
 
@@ -375,7 +379,7 @@ were required.
 
 If we want to use the vis tool to introspect something like the
 `*testapp.py
-script* <../../tutorial/getting_started#tut-test-with-interaction>`__
+script* <../../tutorial/getting_started/#tut-test-with-interaction>`_ 
 from an earlier tutorial we will need to inform autopilot that it is a
 Qt application so that it can enable the correct support:
 
@@ -385,14 +389,14 @@ Qt application so that it can enable the correct support:
 
 Now that it has been launched with Autopilot support we can introspect
 and explore out application using the `*vis
-tool* </sdk/autopilot/python/guides-running_ap#visualise-introspection-tree>`__.
+tool* </sdk/autopilot/python/guides-running_ap/#visualise-introspection-tree>`_ .
 
    id="q-what-is-the-impact-on-memory-of-adding-objectnames-to-qml-items"
    class="section">
 
 .. rubric:: `Q. What is the impact on memory of adding objectNames to
    QML
-   items? </sdk/autopilot/python/faq-faq#id18>`__\ ` <#q-what-is-the-impact-on-memory-of-adding-objectnames-to-qml-items>`__
+   items? </sdk/autopilot/python/faq-faq/#id18>`_ \ ` <#q-what-is-the-impact-on-memory-of-adding-objectnames-to-qml-items>`_ 
    :name: q.-what-is-the-impact-on-memory-of-adding-objectnames-to-qml-items
 
 The objectName is a QString property of QObject which defaults to an
@@ -450,5 +454,5 @@ property instead using helper code to assign it.
 Conclusion: If an objectName is needed for testing, this is definitely
 worth it. objectName’s should obviously not be added when not needed.
 When adding them, the `general QML guidelines for performance should be
-followed. <http://qt-project.org/doc/qt-5.0/qtquick/qtquick-performance.html>`__
+followed. <http://qt-project.org/doc/qt-5.0/qtquick/qtquick-performance.html>`_ 
 

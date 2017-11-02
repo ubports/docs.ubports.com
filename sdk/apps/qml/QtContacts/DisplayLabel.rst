@@ -1,3 +1,7 @@
+.. _sdk_qtcontacts_displaylabel:
+QtContacts DisplayLabel
+=======================
+
 The DisplayLabel element contains a label that can be used by clients
 when displaying a contact, for example in a list.
 
@@ -8,21 +12,22 @@ when displaying a contact, for example in a list.
 Properties
 ----------
 
--  ****`label </sdk/apps/qml/QtContacts/DisplayLabel#label-prop>`__****
-   : string
+-  :ref:`label <sdk_qtcontacts_displaylabel_label-prop>` : string
 
 Detailed Description
 --------------------
 
-`DisplayLabel </sdk/apps/qml/QtContacts/DisplayLabel/>`__ element
-contains the following field types:
+:ref:`DisplayLabel <sdk_qtcontacts_displaylabel>` element contains the
+following field types:
 
--  `DisplayLabel </sdk/apps/qml/QtContacts/DisplayLabel/>`__.Label
+-  :ref:`DisplayLabel <sdk_qtcontacts_displaylabel>`.Label
 
 This element is part of the **QtContacts** module.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtcontacts_displaylabel_label-prop:
 
 +--------------------------------------------------------------------------+
 |        \ label : string                                                  |

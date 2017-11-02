@@ -1,3 +1,7 @@
+.. _sdk_qtqml_defining_qml_types_from_c++:
+QtQml Defining QML Types from C++
+=================================
+
 
 
 When extending QML with C++ code, a C++ class can be registered with the
@@ -5,21 +9,21 @@ QML type system to enable the class to be used as a data type within QML
 code. While the properties, methods and signals of any QObject-derived
 class are accessible from QML, as discussed in `Exposing Attributes of
 C++ Types to
-QML </sdk/apps/qml/QtQml/qtqml-cppintegration-exposecppattributes/>`__,
+QML </sdk/apps/qml/QtQml/qtqml-cppintegration-exposecppattributes/>`_ ,
 such a class cannot be used as a data type from QML until it is
 registered with the type system. Additionally registration can provide
 other features, such as allowing a class to be used as an instantiable
-`QML object type </sdk/apps/qml/QtQml/qtqml-typesystem-objecttypes/>`__
+`QML object type </sdk/apps/qml/QtQml/qtqml-typesystem-objecttypes/>`_ 
 from QML, or enabling a singleton instance of the class to be imported
 and used from QML.
 
-Additionally, the `Qt QML </sdk/apps/qml/QtQml/qtqml-index/>`__ module
+Additionally, the `Qt QML </sdk/apps/qml/QtQml/qtqml-index/>`_  module
 provides mechanisms for implementing QML-specific features such as
 *attached properties* and *default properties* in C++.
 
 (Note that a number of the important concepts covered in this document
 are demonstrated in the `Writing QML Extensions with
-C++ </sdk/apps/qml/QtQml/tutorials-extending-qml/>`__ tutorial.)
+C++ </sdk/apps/qml/QtQml/tutorials-extending-qml/>`_  tutorial.)
 
 .. rubric:: Registering C++ Types with the QML Type System
    :name: registering-c-types-with-the-qml-type-system
@@ -47,12 +51,12 @@ instantiable.
 
 **Any QObject-derived C++ class can be registered as the definition of a
 `QML object
-type </sdk/apps/qml/QtQml/qtqml-typesystem-objecttypes/>`__**. Once a
+type </sdk/apps/qml/QtQml/qtqml-typesystem-objecttypes/>`_ **. Once a
 class is registered with the QML type system, the class can be declared
 and instantiated like any other object type from QML code. Once created,
 a class instance can be manipulated from QML; as `Exposing Attributes of
 C++ Types to
-QML </sdk/apps/qml/QtQml/qtqml-cppintegration-exposecppattributes/>`__
+QML </sdk/apps/qml/QtQml/qtqml-cppintegration-exposecppattributes/>`_ 
 explains, the properties, methods and signals of any QObject-derived
 class are accessible from QML code.
 
@@ -85,7 +89,7 @@ type available in the ``com.mycompany.messaging`` namespace with version
     qmlRegisterType<Message>("com.mycompany.messaging", 1, 0, "Message");
 
 The type can be used in an `object
-declaration </sdk/apps/qml/QtQml/qtqml-syntax-basics#object-declarations>`__
+declaration </sdk/apps/qml/QtQml/qtqml-syntax-basics/#object-declarations>`_ 
 from QML, and its properties can be read and written to, as per the
 example below:
 
@@ -111,7 +115,7 @@ case if a C++ class:
 -  is a type that should be provided to QML through a singleton
    instance, and should not be instantiable from QML
 
-The `Qt QML </sdk/apps/qml/QtQml/qtqml-index/>`__ module provides
+The `Qt QML </sdk/apps/qml/QtQml/qtqml-index/>`_  module provides
 several methods for registering non-instantiable types:
 
 -  qmlRegisterType() (with no parameters) registers a C++ type that is
@@ -320,7 +324,7 @@ the original is accessed, the corresponding property on the extension
 object is used instead.
 
 The `Extension Objects
-Example </sdk/apps/qml/QtQml/referenceexamples-extended/>`__
+Example </sdk/apps/qml/QtQml/referenceexamples-extended/>`_ 
 demonstrates a usage of extension objects.
 
 .. rubric:: Defining QML-Specific Types and Attributes
@@ -331,7 +335,7 @@ demonstrates a usage of extension objects.
 
 In the QML language syntax, there is a notion of `*attached properties*
 and *attached signal
-handlers* </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes#attached-properties-and-attached-signal-handlers>`__,
+handlers* </sdk/apps/qml/QtQml/qtqml-syntax-objectattributes/#attached-properties-and-attached-signal-handlers>`_ ,
 which are additional attributes that are attached to an object.
 Essentially, such attributes are implemented and provided by an
 *attaching type*, and these attributes may be *attached* to an object of
@@ -410,7 +414,7 @@ For the *attaching type*, provide a QObject-derived class that:
    :name: implementing-attached-objects-an-example
 
 For example, take the ``Message`` type described in an `earlier
-example </sdk/apps/qml/QtQml/qtqml-cppintegration-definetypes#registering-an-instantiable-object-type>`__:
+example </sdk/apps/qml/QtQml/qtqml-cppintegration-definetypes/#registering-an-instantiable-object-type>`_ :
 
 .. code:: cpp
 
@@ -708,7 +712,7 @@ a QML-based user interface.
 
 See the QQuickItem documentation for more information. Additionally, the
 `Writing QML Extensions with
-C++ </sdk/apps/qml/QtQml/tutorials-extending-qml/>`__ tutorial
+C++ </sdk/apps/qml/QtQml/tutorials-extending-qml/>`_  tutorial
 demonstrates how a QQuickItem-based visual item can be implemented in
 C++ and integrated into a Qt Quick-based user interface.
 

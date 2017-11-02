@@ -1,3 +1,7 @@
+.. _sdk_qtqml_historystate:
+QtQml HistoryState
+==================
+
 The HistoryState type provides a means of returning to a previously
 active substate.
 
@@ -6,17 +10,17 @@ active substate.
 +--------------------------------------+--------------------------------------+
 | Since:                               | Qt 5.4                               |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `QAbstractState </sdk/apps/qml/QtQml |
-|                                      | /QAbstractState/>`__                 |
+| Inherits:                            | :ref:`QAbstractState <sdk_qtqml_qabstract |
+|                                      | state>`_                             |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`defaultState </sdk/apps/qml/QtQml/HistoryState#defaultState-prop>`__****
-   : QAbstractState
--  ****`historyType </sdk/apps/qml/QtQml/HistoryState#historyType-prop>`__****
-   : enumeration
+-  :ref:`defaultState <sdk_qtqml_historystate_defaultState-prop>` :
+   QAbstractState
+-  :ref:`historyType <sdk_qtqml_historystate_historyType-prop>` :
+   enumeration
 
 Detailed Description
 --------------------
@@ -25,12 +29,10 @@ A history state is a pseudo-state that represents the child state that
 the parent state was in the last time the parent state was exited. A
 transition with a history state as its target is in fact a transition to
 one of the other child states of the parent state.
-`HistoryState </sdk/apps/qml/QtQml/HistoryState/>`__ is part of `The
-Declarative State Machine
-Framework </sdk/apps/qml/QtQml/qmlstatemachine/>`__.
+:ref:`HistoryState <sdk_qtqml_historystate>` is part of `The Declarative
+State Machine Framework </sdk/apps/qml/QtQml/qmlstatemachine/>`_ .
 
-Use the
-`defaultState </sdk/apps/qml/QtQml/HistoryState#defaultState-prop>`__
+Use the :ref:`defaultState <sdk_qtqml_historystate#defaultState-prop>`
 property to set the state that should be entered if the parent state has
 never been entered.
 
@@ -85,18 +87,18 @@ Example Usage
 
 By default, a history state is shallow, meaning that it will not
 remember nested states. This can be configured through the
-`historyType </sdk/apps/qml/QtQml/HistoryState#historyType-prop>`__
-property.
+:ref:`historyType <sdk_qtqml_historystate#historyType-prop>` property.
 
-**See also** `StateMachine </sdk/apps/qml/QtQml/StateMachine/>`__ and
-`State </sdk/apps/qml/QtQml/State/>`__.
+**See also** :ref:`StateMachine <sdk_qtqml_statemachine>` and
+:ref:`State <sdk_qtqml_state>`.
 
 Property Documentation
 ----------------------
 
+.. _sdk_qtqml_historystate_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ defaultState :                                                  |
-| `QAbstractState </sdk/apps/qml/QtQml/QAbstractState/>`__                 |
+| :ref:` <>`\ defaultState : `QAbstractState <sdk_qtqml_qabstractstate>` |
 +--------------------------------------------------------------------------+
 
 The default state of this history state.
@@ -105,6 +107,8 @@ The default state indicates the state to transition to if the parent
 state has never been entered before.
 
 | 
+
+.. _sdk_qtqml_historystate_historyType-prop:
 
 +--------------------------------------------------------------------------+
 |        \ historyType : enumeration                                       |

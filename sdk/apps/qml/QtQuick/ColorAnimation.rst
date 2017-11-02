@@ -1,33 +1,36 @@
+.. _sdk_qtquick_coloranimation:
+QtQuick ColorAnimation
+======================
+
 Animates changes in color values
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtQuick 2.4                   |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `PropertyAnimation </sdk/apps/qml/Qt |
-|                                      | Quick/PropertyAnimation/>`__         |
+| Inherits:                            | :ref:`PropertyAnimation <sdk_qtquick_prop |
+|                                      | ertyanimation>`_                     |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`from </sdk/apps/qml/QtQuick/ColorAnimation#from-prop>`__**** :
-   color
--  ****`to </sdk/apps/qml/QtQuick/ColorAnimation#to-prop>`__**** : color
+-  :ref:`from <sdk_qtquick_coloranimation_from-prop>` : color
+-  :ref:`to <sdk_qtquick_coloranimation_to-prop>` : color
 
 Detailed Description
 --------------------
 
-`ColorAnimation </sdk/apps/qml/QtQuick/animation#coloranimation>`__ is a
-specialized
-`PropertyAnimation </sdk/apps/qml/QtQuick/animation#propertyanimation>`__
+`ColorAnimation </sdk/apps/qml/QtQuick/animation/#coloranimation>`_  is
+a specialized
+`PropertyAnimation </sdk/apps/qml/QtQuick/animation/#propertyanimation>`_ 
 that defines an animation to be applied when a color value changes.
 
 Here is a
-`ColorAnimation </sdk/apps/qml/QtQuick/animation#coloranimation>`__
+`ColorAnimation </sdk/apps/qml/QtQuick/animation/#coloranimation>`_ 
 applied to the ``color`` property of a
-`Rectangle </sdk/apps/qml/QtQuick/Rectangle/>`__ as a property value
-source. It animates the ``color`` property's value from its current
-value to a value of "red", over 1000 milliseconds:
+:ref:`Rectangle <sdk_qtquick_rectangle>` as a property value source. It
+animates the ``color`` property's value from its current value to a
+value of "red", over 1000 milliseconds:
 
 .. code:: qml
 
@@ -39,29 +42,31 @@ value to a value of "red", over 1000 milliseconds:
     }
 
 Like any other animation type, a
-`ColorAnimation </sdk/apps/qml/QtQuick/animation#coloranimation>`__ can
+`ColorAnimation </sdk/apps/qml/QtQuick/animation/#coloranimation>`_  can
 be applied in a number of ways, including transitions, behaviors and
 property value sources. The `Animation and Transitions in Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`__
+Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`_ 
 documentation shows a variety of methods for creating animations.
 
 For convenience, when a
-`ColorAnimation </sdk/apps/qml/QtQuick/animation#coloranimation>`__ is
+`ColorAnimation </sdk/apps/qml/QtQuick/animation/#coloranimation>`_  is
 used in a
-`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch#transition>`__,
+`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch/#transition>`_ ,
 it will animate any ``color`` properties that have been modified during
 the state change. If a
-`property </sdk/apps/qml/QtQuick/PropertyAnimation#property-prop>`__ or
-`properties </sdk/apps/qml/QtQuick/PropertyAnimation#properties-prop>`__
-are explicitly set for the animation, then those are used instead.
+:ref:`property <sdk_qtquick_propertyanimation#property-prop>` or
+:ref:`properties <sdk_qtquick_propertyanimation#properties-prop>` are
+explicitly set for the animation, then those are used instead.
 
 **See also** `Animation and Transitions in Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`__
+Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`_ 
 and `Qt Quick Examples -
-Animation </sdk/apps/qml/QtQuick/animation/>`__.
+Animation </sdk/apps/qml/QtQuick/animation/>`_ .
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_coloranimation_from-prop:
 
 +--------------------------------------------------------------------------+
 |        \ from : color                                                    |
@@ -84,19 +89,21 @@ has reached "#c0c0c0":
     }
 
 If the
-`ColorAnimation </sdk/apps/qml/QtQuick/animation#coloranimation>`__ is
+`ColorAnimation </sdk/apps/qml/QtQuick/animation/#coloranimation>`_  is
 defined within a
-`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch#transition>`__
-or `Behavior </sdk/apps/qml/QtQuick/Behavior/>`__, this value defaults
-to the value defined in the starting state of the
-`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch#transition>`__,
+`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch/#transition>`_ 
+or :ref:`Behavior <sdk_qtquick_behavior>`, this value defaults to the value
+defined in the starting state of the
+`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch/#transition>`_ ,
 or the current value of the property at the moment the
-`Behavior </sdk/apps/qml/QtQuick/Behavior/>`__ is triggered.
+:ref:`Behavior <sdk_qtquick_behavior>` is triggered.
 
 **See also** `Animation and Transitions in Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`__.
+Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`_ .
 
 | 
+
+.. _sdk_qtquick_coloranimation_to-prop:
 
 +--------------------------------------------------------------------------+
 |        \ to : color                                                      |
@@ -105,16 +112,16 @@ Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`__.
 This property holds the color value at which the animation should end.
 
 If the
-`ColorAnimation </sdk/apps/qml/QtQuick/animation#coloranimation>`__ is
+`ColorAnimation </sdk/apps/qml/QtQuick/animation/#coloranimation>`_  is
 defined within a
-`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch#transition>`__
-or `Behavior </sdk/apps/qml/QtQuick/Behavior/>`__, this value defaults
-to the value defined in the end state of the
-`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch#transition>`__,
+`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch/#transition>`_ 
+or :ref:`Behavior <sdk_qtquick_behavior>`, this value defaults to the value
+defined in the end state of the
+`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch/#transition>`_ ,
 or the value of the property change that triggered the
-`Behavior </sdk/apps/qml/QtQuick/Behavior/>`__.
+:ref:`Behavior <sdk_qtquick_behavior>`.
 
 **See also** `Animation and Transitions in Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`__.
+Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`_ .
 
 | 

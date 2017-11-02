@@ -1,22 +1,25 @@
+.. _sdk_ubuntuuserinterfacetoolkit_styles:
+UbuntuUserInterfaceToolkit Styles
+=================================
+
 
 
 .. rubric:: Naming conventions
    :name: naming-conventions
 
 With few exception, each toolkit component is having
-`StyledItem </sdk/apps/qml/Ubuntu.Components/StyledItem/>`__ as its base
-component. The component is aimed to be the base component for all
-styled elements in the toolkit. Modules providing additional components
-to UI Toolkit can also use this component as base, especially if they
-want to provide styling capabilities.
+:ref:`StyledItem <sdk_ubuntu_components_styleditem>` as its base component.
+The component is aimed to be the base component for all styled elements
+in the toolkit. Modules providing additional components to UI Toolkit
+can also use this component as base, especially if they want to provide
+styling capabilities.
 
 As mentioned, each styled component is having a style pair in a theme
 which is implemented in a document named using the component name adding
-the *Style* word. The
-`Button </sdk/apps/qml/Ubuntu.Components/Button/>`__'s style is
-implemented by ``ButtonStyle.qml`` document in the theme, and
-`Button </sdk/apps/qml/Ubuntu.Components/Button/>`__ is loading this
-style from the theme:
+the *Style* word. The :ref:`Button <sdk_ubuntu_components_button>`'s style
+is implemented by ``ButtonStyle.qml`` document in the theme, and
+:ref:`Button <sdk_ubuntu_components_button>` is loading this style from the
+theme:
 
 .. code:: qml
 
@@ -47,35 +50,32 @@ the given component's style API, listed in ``Ubuntu.Components.Styles``
 module.
 
 A good example of such a style is the
-`ListItemStyle </sdk/apps/qml/Ubuntu.Components/Styles.ListItemStyle/>`__.
-The `ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ drives the
-style animation through the
-`ListItemStyle::animatePanels </sdk/apps/qml/Ubuntu.Components/Styles.ListItemStyle#animatePanels-prop>`__
+`ListItemStyle </sdk/apps/qml/Ubuntu.Components/Styles.ListItemStyle/>`_ .
+The :ref:`ListItem <sdk_ubuntu_components_listitem>` drives the style
+animation through the
+`ListItemStyle::animatePanels </sdk/apps/qml/Ubuntu.Components/Styles.ListItemStyle/#animatePanels-prop>`_ 
 property, value being false when the style is loaded during component
 creation, i.e. when the component requires some visuals to be present at
-creation time. Also,
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ informs the
-style when to execute leading or trailing panel
-`rebound </sdk/apps/qml/Ubuntu.Components/Styles.ListItemStyle#rebound-method>`__\ s
+creation time. Also, :ref:`ListItem <sdk_ubuntu_components_listitem>`
+informs the style when to execute leading or trailing panel
+`rebound </sdk/apps/qml/Ubuntu.Components/Styles.ListItemStyle/#rebound-method>`_ \ s
 and provides the style the ability to overrule the
-`swipe </sdk/apps/qml/Ubuntu.Components/Styles.ListItemStyle#swipeEvent-method>`__
+`swipe </sdk/apps/qml/Ubuntu.Components/Styles.ListItemStyle/#swipeEvent-method>`_ 
 coordinates calculated by the
-`ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__. On the other
-hand, the style must inform the component about the position of the
-`drag
-panel </sdk/apps/qml/Ubuntu.Components/Styles.ListItemStyle#dragPanel-prop>`__
+:ref:`ListItem <sdk_ubuntu_components_listitem>`. On the other hand, the
+style must inform the component about the position of the `drag
+panel </sdk/apps/qml/Ubuntu.Components/Styles.ListItemStyle/#dragPanel-prop>`_ 
 so the dragging (reordering of list items in a
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__) hot spot can be
-detected. A style implementation must use the API provided by
-`ListItemStyle </sdk/apps/qml/Ubuntu.Components/Styles.ListItemStyle/>`__,
-otherwise `ListItem </sdk/apps/qml/Ubuntu.Components/ListItem/>`__ will
-fail to function properly.
+:ref:`ListView <sdk_qtquick_listview>`) hot spot can be detected. A style
+implementation must use the API provided by
+`ListItemStyle </sdk/apps/qml/Ubuntu.Components/Styles.ListItemStyle/>`_ ,
+otherwise :ref:`ListItem <sdk_ubuntu_components_listitem>` will fail to
+function properly.
 
 Other styles are requested to provide additional *content* elements,
 which are then positioned by the styled component separately from the
 main visuals given by the style. A typical example of such a style API
-is the
-`PullToRefresh </sdk/apps/qml/Ubuntu.Components/PullToRefresh/>`__
+is the :ref:`PullToRefresh <sdk_ubuntu_components_pulltorefresh>`
 component's style:
 
 .. code:: qml
@@ -102,17 +102,16 @@ component's style:
 
 The default style implementation can be found under
 Ubuntu.Components.Themes.Ambiance theme
-`PullToRefreshStyle.qml <http://bazaar.launchpad.net/~ubuntu-sdk-team/ubuntu-ui-toolkit/trunk/view/head:/src/imports/Components/Themes/Ambiance/1.3/PullToRefreshStyle.qml>`__.
+`PullToRefreshStyle.qml <http://bazaar.launchpad.net/~ubuntu-sdk-team/ubuntu-ui-toolkit/trunk/view/head:/src/imports/Components/Themes/Ambiance/1.3/PullToRefreshStyle.qml>`_ .
 
 Beside these, component styles may provide default values for colors,
 fonts, widths, margins, thicknesses.
 
 Each style component has a ``styledItem`` context property defined by
-the `StyledItem </sdk/apps/qml/Ubuntu.Components/StyledItem/>`__, which
-points to the
-`StyledItem </sdk/apps/qml/Ubuntu.Components/StyledItem/>`__ instance
-that uses the style. Style implementations can access the actual styled
-item through this property.
+the :ref:`StyledItem <sdk_ubuntu_components_styleditem>`, which points to
+the :ref:`StyledItem <sdk_ubuntu_components_styleditem>` instance that uses
+the style. Style implementations can access the actual styled item
+through this property.
 
 .. rubric:: Overriding the default component style
    :name: overriding-the-default-component-style
@@ -123,7 +122,7 @@ item through this property.
 Returning back to the ways to override a component's style, overriding
 by using a different style from the theme can simply be done by
 assigning the document name to the
-`StyledItem.styleName </sdk/apps/qml/Ubuntu.Components/StyledItem#styleName-prop>`__
+:ref:`StyledItem.styleName <sdk_ubuntu_components_styleditem#styleName-prop>`
 property as follows:
 
 .. code:: qml
@@ -172,13 +171,13 @@ coloring.
     }
 
 **Note:** Specifying a component for the
-`StyledItem.style </sdk/apps/qml/Ubuntu.Components/StyledItem#style-prop>`__
-has precedence over the
-`StyledItem::styleName </sdk/apps/qml/Ubuntu.Components/StyledItem#styleName-prop>`__.
+:ref:`StyledItem.style <sdk_ubuntu_components_styleditem#style-prop>` has
+precedence over the
+:ref:`StyledItem::styleName <sdk_ubuntu_components_styleditem#styleName-prop>`.
 When both set, the stlke specified ``style`` property will be used. When
 this property is set to undefined or null, the style specified in
 ``styleName`` will be used. Obviously, when both properties are invalid,
 no style will be used.
 
-`Introduction </sdk/apps/qml/UbuntuUserInterfaceToolkit/ubuntu-theming/>`__
-`Themes </sdk/apps/qml/UbuntuUserInterfaceToolkit/ubuntu-theming-themes/>`__
+`Introduction </sdk/apps/qml/UbuntuUserInterfaceToolkit/ubuntu-theming/>`_ 
+`Themes </sdk/apps/qml/UbuntuUserInterfaceToolkit/ubuntu-theming-themes/>`_ 

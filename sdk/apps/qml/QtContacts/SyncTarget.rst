@@ -1,3 +1,7 @@
+.. _sdk_qtcontacts_synctarget:
+QtContacts SyncTarget
+=====================
+
 The SyncTarget element provides a sync target for a contact.
 
 +---------------------+-------------------------+
@@ -7,16 +11,16 @@ The SyncTarget element provides a sync target for a contact.
 Properties
 ----------
 
--  ****`syncTarget </sdk/apps/qml/QtContacts/SyncTarget#syncTarget-prop>`__****
-   : string
+-  :ref:`syncTarget <sdk_qtcontacts_synctarget_syncTarget-prop>` :
+   string
 
 Detailed Description
 --------------------
 
-`SyncTarget </sdk/apps/qml/QtContacts/SyncTarget/>`__ element contains
-the following field types:
+:ref:`SyncTarget <sdk_qtcontacts_synctarget>` element contains the
+following field types:
 
--  `SyncTarget </sdk/apps/qml/QtContacts/SyncTarget/>`__.\ `SyncTarget </sdk/apps/qml/QtContacts/SyncTarget/>`__
+-  :ref:`SyncTarget <sdk_qtcontacts_synctarget>`.\ `SyncTarget <sdk_qtcontacts_synctarget>`
 
 This element is part of the **QtContacts** module.
 
@@ -24,6 +28,8 @@ This element is part of the **QtContacts** module.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtcontacts_synctarget_syncTarget-prop:
 
 +--------------------------------------------------------------------------+
 |        \ syncTarget : string                                             |

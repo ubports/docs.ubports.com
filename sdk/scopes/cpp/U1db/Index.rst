@@ -1,3 +1,7 @@
+.. _sdk_u1db_index:
+U1db Index
+==========
+
 The Index class defines an index to be stored in the database and
 queried using Query. Changes in documents affected by the index also
 update the index in the database.
@@ -14,30 +18,29 @@ Public Functions
 ----------------
 
 +--------------------------------------+--------------------------------------+
-|                                      | **`Index </sdk/scopes/cpp/U1db/Index |
-|                                      | #Index>`__**\ (QObject               |
+|                                      | **:ref:`Index <sdk_u1db_index#Index>`** |
+|                                      | \ (QObject                           |
 |                                      | \* *parent* = 0)                     |
 +--------------------------------------+--------------------------------------+
-| Database \*                          | **`getDatabase </sdk/scopes/cpp/U1db |
-|                                      | /Index#getDatabase>`__**\ ()         |
+| Database \*                          | **:ref:`getDatabase <sdk_u1db_index#getDa |
+|                                      | tabase>`_ **\ ()                     |
 +--------------------------------------+--------------------------------------+
-| QStringList                          | **`getExpression </sdk/scopes/cpp/U1 |
-|                                      | db/Index#getExpression>`__**\ ()     |
+| QStringList                          | **:ref:`getExpression <sdk_u1db_index#get |
+|                                      | Expression>`_ **\ ()                 |
 +--------------------------------------+--------------------------------------+
-| QString                              | **`getName </sdk/scopes/cpp/U1db/Ind |
-|                                      | ex#getName>`__**\ ()                 |
+| QString                              | **:ref:`getName <sdk_u1db_index#getName>` |
+|                                      | __**\ ()                             |
 +--------------------------------------+--------------------------------------+
-| void                                 | **`setDatabase </sdk/scopes/cpp/U1db |
-|                                      | /Index#setDatabase>`__**\ (Database  |
+| void                                 | **:ref:`setDatabase <sdk_u1db_index#setDa |
+|                                      | tabase>`_ **\ (Database              |
 |                                      | \* *database*)                       |
 +--------------------------------------+--------------------------------------+
-| void                                 | **`setExpression </sdk/scopes/cpp/U1 |
-|                                      | db/Index#setExpression>`__**\ (QStri |
-|                                      | ngList                               |
+| void                                 | **:ref:`setExpression <sdk_u1db_index#set |
+|                                      | Expression>`_ **\ (QStringList       |
 |                                      | *expression*)                        |
 +--------------------------------------+--------------------------------------+
-| void                                 | **`setName </sdk/scopes/cpp/U1db/Ind |
-|                                      | ex#setName>`__**\ (const             |
+| void                                 | **:ref:`setName <sdk_u1db_index#setName>` |
+|                                      | __**\ (const                         |
 |                                      | QString & *name*)                    |
 +--------------------------------------+--------------------------------------+
 

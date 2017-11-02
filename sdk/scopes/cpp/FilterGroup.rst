@@ -1,5 +1,9 @@
+.. _sdk_filtergroup:
+FilterGroup
+===========
+
 Groups several filters into an expandable widget in the UI.
-`More... </sdk/scopes/cpp/unity.scopes.FilterGroup#details>`__
+`More... </sdk/scopes/cpp/unity.scopes.FilterGroup/#details>`_ 
 
 ``#include <unity/scopes/FilterGroup.h>``
 
@@ -8,7 +12,7 @@ Groups several filters into an expandable widget in the UI.
 
 std::string 
 
-`id </sdk/scopes/cpp/unity.scopes.FilterGroup#a0a42c7ad65a4115dfdfbdf2aa32a6ca4>`__
+`id </sdk/scopes/cpp/unity.scopes.FilterGroup/#a0a42c7ad65a4115dfdfbdf2aa32a6ca4>`_ 
 () const
 
  
@@ -19,7 +23,7 @@ std::string 
 
 std::string 
 
-`label </sdk/scopes/cpp/unity.scopes.FilterGroup#aef99f5048cc090da4b96f68c39020f44>`__
+`label </sdk/scopes/cpp/unity.scopes.FilterGroup/#aef99f5048cc090da4b96f68c39020f44>`_ 
 () const
 
  
@@ -33,11 +37,11 @@ std::string 
 
 static FilterGroup::SCPtr 
 
-`create </sdk/scopes/cpp/unity.scopes.FilterGroup#a8438bee537e5b4624875233f9e6ad4a9>`__
+`create </sdk/scopes/cpp/unity.scopes.FilterGroup/#a8438bee537e5b4624875233f9e6ad4a9>`_ 
 (std::string const
-&\ `id </sdk/scopes/cpp/unity.scopes.FilterGroup#a0a42c7ad65a4115dfdfbdf2aa32a6ca4>`__,
+&\ `id </sdk/scopes/cpp/unity.scopes.FilterGroup/#a0a42c7ad65a4115dfdfbdf2aa32a6ca4>`_ ,
 std::string const
-&\ `label </sdk/scopes/cpp/unity.scopes.FilterGroup#aef99f5048cc090da4b96f68c39020f44>`__)
+&\ `label </sdk/scopes/cpp/unity.scopes.FilterGroup/#aef99f5048cc090da4b96f68c39020f44>`_ )
 
  
 

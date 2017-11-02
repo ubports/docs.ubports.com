@@ -1,3 +1,7 @@
+.. _sdk_qtquick_item_positioners:
+QtQuick Item Positioners
+========================
+
 
 
 Positioner items are container items that manage the positions of items
@@ -24,13 +28,12 @@ graphical types:
 
 |image0|
 
-`Column </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#column>`__
+`Column </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#column>`_ 
 items are used to vertically arrange items. The following example uses a
-Column item to arrange three
-`Rectangle </sdk/apps/qml/QtQuick/Rectangle/>`__ items in an area
-defined by an outer `Item </sdk/apps/qml/QtQuick/Item/>`__. The
-`spacing </sdk/apps/qml/QtQuick/Column#spacing-prop>`__ property is set
-to include a small amount of space between the rectangles.
+Column item to arrange three :ref:`Rectangle <sdk_qtquick_rectangle>` items
+in an area defined by an outer :ref:`Item <sdk_qtquick_item>`. The
+:ref:`spacing <sdk_qtquick_column#spacing-prop>` property is set to include
+a small amount of space between the rectangles.
 
 .. code:: qml
 
@@ -64,13 +67,12 @@ color must be added to a parent Rectangle, if desired.
 
 |image1|
 
-`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#row>`__ items
+`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#row>`_  items
 are used to horizontally arrange items. The following example uses a Row
-item to arrange three rounded
-`Rectangle </sdk/apps/qml/QtQuick/Rectangle/>`__ items in an area
-defined by an outer colored Rectangle. The
-`spacing </sdk/apps/qml/QtQuick/Row#spacing-prop>`__ property is set to
-include a small amount of space between the rectangles.
+item to arrange three rounded :ref:`Rectangle <sdk_qtquick_rectangle>`
+items in an area defined by an outer colored Rectangle. The
+:ref:`spacing <sdk_qtquick_row#spacing-prop>` property is set to include a
+small amount of space between the rectangles.
 
 We ensure that the parent Rectangle is large enough so that there is
 some space left around the edges of the horizontally centered Row item.
@@ -99,13 +101,12 @@ some space left around the edges of the horizontally centered Row item.
 
 |image2|
 
-`Grid </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#grid>`__ items
+`Grid </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#grid>`_  items
 are used to place items in a grid or table arrangement. The following
 example uses a Grid item to place four
-`Rectangle </sdk/apps/qml/QtQuick/Rectangle/>`__ items in a 2-by-2 grid.
-As with the other positioners, the spacing between items can be
-specified using the
-`spacing </sdk/apps/qml/QtQuick/Grid#spacing-prop>`__ property.
+:ref:`Rectangle <sdk_qtquick_rectangle>` items in a 2-by-2 grid. As with
+the other positioners, the spacing between items can be specified using
+the :ref:`spacing <sdk_qtquick_grid#spacing-prop>` property.
 
 .. code:: qml
 
@@ -137,20 +138,20 @@ items at the appropriate places in the Grid definition.
 
 |image3| |image4|
 
-`Flow </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#flow>`__ items
+`Flow </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#flow>`_  items
 are used to place items like words on a page, with rows or columns of
 non-overlapping items.
 
 Flow items arrange items in a similar way to
-`Grid </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#grid>`__ items,
-with items arranged in lines along one axis (the minor axis), and lines
-of items placed next to each other along another axis (the major axis).
-The direction of flow, as well as the spacing between items, are
-controlled by the `flow </sdk/apps/qml/QtQuick/Flow#flow-prop>`__ and
-`spacing </sdk/apps/qml/QtQuick/Flow#spacing-prop>`__ properties.
+`Grid </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#grid>`_ 
+items, with items arranged in lines along one axis (the minor axis), and
+lines of items placed next to each other along another axis (the major
+axis). The direction of flow, as well as the spacing between items, are
+controlled by the :ref:`flow <sdk_qtquick_flow#flow-prop>` and
+:ref:`spacing <sdk_qtquick_flow#spacing-prop>` properties.
 
 The following example shows a Flow item containing a number of
-`Text </sdk/apps/qml/QtQuick/qtquick-releasenotes#text>`__ child items.
+`Text </sdk/apps/qml/QtQuick/qtquick-releasenotes/#text>`_  child items.
 These are arranged in a similar way to those shown in the screenshots.
 
 .. code:: qml
@@ -186,11 +187,11 @@ items.
 There are several other ways to position items in a user interface. In
 addition to the basic technique of specifying their coordinates
 directly, they can be positioned relative to other items with
-`anchors </sdk/apps/qml/QtQuick/qtquick-positioning-anchors#anchor-layout>`__,
+`anchors </sdk/apps/qml/QtQuick/qtquick-positioning-anchors/#anchor-layout>`_ ,
 or used with `QML Data
-Models </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview#qml-data-models>`__
+Models </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#qml-data-models>`_ 
 such as
-`VisualItemModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview#visualitemmodel>`__.
+`VisualItemModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#visualitemmodel>`_ .
 
 .. |image0| image:: /media/sdk/apps/qml/qtquick-positioning-layouts/images/qml-column.png
 .. |image1| image:: /media/sdk/apps/qml/qtquick-positioning-layouts/images/qml-row.png

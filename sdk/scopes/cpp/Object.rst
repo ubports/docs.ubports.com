@@ -1,5 +1,9 @@
+.. _sdk_object:
+Object
+======
+
 The root base class for all proxies.
-`More... </sdk/scopes/cpp/unity.scopes.Object#details>`__
+`More... </sdk/scopes/cpp/unity.scopes.Object/#details>`_ 
 
 ``#include <unity/scopes/Object.h>``
 
@@ -14,7 +18,7 @@ Inheritance diagram for unity::scopes::Object:
 
 virtual std::string 
 
-`endpoint </sdk/scopes/cpp/unity.scopes.Object#ad7618cc9d878c40b389361d4acd473ae>`__
+`endpoint </sdk/scopes/cpp/unity.scopes.Object/#ad7618cc9d878c40b389361d4acd473ae>`_ 
 ()=0
 
  
@@ -25,7 +29,7 @@ virtual std::string 
 
 virtual std::string 
 
-`identity </sdk/scopes/cpp/unity.scopes.Object#a1b55aea886f0a68cb8a578f7ee0b1cfd>`__
+`identity </sdk/scopes/cpp/unity.scopes.Object/#a1b55aea886f0a68cb8a578f7ee0b1cfd>`_ 
 ()=0
 
  
@@ -36,7 +40,7 @@ virtual std::string 
 
 virtual std::string 
 
-`target\_category </sdk/scopes/cpp/unity.scopes.Object#a40a997516629df3dacca9742dbddd6cb>`__
+`target\_category </sdk/scopes/cpp/unity.scopes.Object/#a40a997516629df3dacca9742dbddd6cb>`_ 
 ()=0
 
  
@@ -47,7 +51,7 @@ virtual std::string 
 
 virtual int64\_t 
 
-`timeout </sdk/scopes/cpp/unity.scopes.Object#a41d9839f1e3cbcd6d8baee0736feccab>`__
+`timeout </sdk/scopes/cpp/unity.scopes.Object/#a41d9839f1e3cbcd6d8baee0736feccab>`_ 
 ()=0
 
  
@@ -58,7 +62,7 @@ virtual int64\_t 
 
 virtual std::string 
 
-`to\_string </sdk/scopes/cpp/unity.scopes.Object#a9ae27e1f30dc755abcd796a1e8a25150>`__
+`to\_string </sdk/scopes/cpp/unity.scopes.Object/#a9ae27e1f30dc755abcd796a1e8a25150>`_ 
 ()=0
 
  
@@ -222,7 +226,7 @@ Returns
 Converts a proxy into its string representation.
 
 A proxy string can be converted back into a proxy by calling
-`Runtime::string\_to\_proxy() </sdk/scopes/cpp/unity.scopes.Runtime#a24eec46bc15975c219642fcfe8e5357f>`__.
+`Runtime::string\_to\_proxy() </sdk/scopes/cpp/unity.scopes.Runtime/#a24eec46bc15975c219642fcfe8e5357f>`_ .
 
 Returns
     The string representation of the proxy.

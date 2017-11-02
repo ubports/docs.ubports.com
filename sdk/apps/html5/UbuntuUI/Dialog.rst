@@ -1,3 +1,7 @@
+.. _sdk_ubuntuui_dialog:
+UbuntuUI Dialog
+===============
+
 
 Dialogs are modal full-screen popups that prevent other GUI interactions
 with the application until dismissed.

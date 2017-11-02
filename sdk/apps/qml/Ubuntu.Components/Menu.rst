@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_menu:
+Ubuntu.Components Menu
+======================
+
 Menu defines a context menu or submenu structure of a MenuBar
 
 +---------------------+--------------------------------+
@@ -7,20 +11,20 @@ Menu defines a context menu or submenu structure of a MenuBar
 Properties
 ----------
 
--  ****`data </sdk/apps/qml/Ubuntu.Components/Menu#data-prop>`__**** :
+-  :ref:`data <sdk_ubuntu_components_menu_data-prop>` :
    list<Object>
 
 Methods
 -------
 
--  ****`appendObject </sdk/apps/qml/Ubuntu.Components/Menu#appendObject-method>`__****\ (object
+-  :ref:`appendObject <sdk_ubuntu_components_menu_appendObject-method>`\ (object
    *o*)
--  ****`dismiss </sdk/apps/qml/Ubuntu.Components/Menu#dismiss-method>`__****\ ()
--  ****`insertObject </sdk/apps/qml/Ubuntu.Components/Menu#insertObject-method>`__****\ (int
+-  :ref:`dismiss <sdk_ubuntu_components_menu_dismiss-method>`\ ()
+-  :ref:`insertObject <sdk_ubuntu_components_menu_insertObject-method>`\ (int
    *index*, object *o*)
--  ****`removeObject </sdk/apps/qml/Ubuntu.Components/Menu#removeObject-method>`__****\ (object
+-  :ref:`removeObject <sdk_ubuntu_components_menu_removeObject-method>`\ (object
    *o*)
--  ****`show </sdk/apps/qml/Ubuntu.Components/Menu#show-method>`__****\ (point
+-  :ref:`show <sdk_ubuntu_components_menu_show-method>`\ (point
    *point*)
 
 Detailed Description
@@ -63,6 +67,8 @@ Example usage:
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_menu_data-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [default] data : list<Object>                                   |
 +--------------------------------------------------------------------------+
@@ -70,7 +76,7 @@ Property Documentation
 List of objects representing menu items within the menu.
 
 Currently supports Menu, Action, AcionList &
-`MenuGroup </sdk/apps/qml/Ubuntu.Components/MenuGroup/>`__ objects.
+:ref:`MenuGroup <sdk_ubuntu_components_menugroup>` objects.
 
 **Note:** Item object which do not support platformItem will not be
 exported for native menus.
@@ -80,6 +86,8 @@ exported for native menus.
 Method Documentation
 --------------------
 
+.. _sdk_ubuntu_components_menu_appendObject-method:
+
 +--------------------------------------------------------------------------+
 |        \ appendObject(object *o*)                                        |
 +--------------------------------------------------------------------------+
@@ -87,6 +95,8 @@ Method Documentation
 Add a object tto the menu
 
 | 
+
+.. _sdk_ubuntu_components_menu_dismiss-method:
 
 +--------------------------------------------------------------------------+
 |        \ dismiss()                                                       |
@@ -96,6 +106,8 @@ Dismiss and destroy the menu popup.
 
 | 
 
+.. _sdk_ubuntu_components_menu_insertObject-method:
+
 +--------------------------------------------------------------------------+
 |        \ insertObject(int *index*, object *o*)                           |
 +--------------------------------------------------------------------------+
@@ -103,12 +115,14 @@ Dismiss and destroy the menu popup.
 Inserts an item at the index in the menu.
 
 Currently supports Menu, Action, AcionList &
-`MenuGroup </sdk/apps/qml/Ubuntu.Components/MenuGroup/>`__ objects.
+:ref:`MenuGroup <sdk_ubuntu_components_menugroup>` objects.
 
 **Note:** Item object which do not support platformItem will not be
 exported for native menus.
 
 | 
+
+.. _sdk_ubuntu_components_menu_removeObject-method:
 
 +--------------------------------------------------------------------------+
 |        \ removeObject(object *o*)                                        |
@@ -118,8 +132,10 @@ Removes the item from the menu.
 
 | 
 
+.. _sdk_ubuntu_components_menu_show-method:
+
 +--------------------------------------------------------------------------+
-|        \ show(`point <http://doc.qt.io/qt-5/qml-point.html>`__ *point*)  |
+|        \ show(`point <http://doc.qt.io/qt-5/qml-point.html>`_  *point*)  |
 +--------------------------------------------------------------------------+
 
 Show the menu popup at the given point

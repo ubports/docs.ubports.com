@@ -1,3 +1,7 @@
+.. _sdk_qtlocation_ratings:
+QtLocation Ratings
+==================
+
 The Ratings type holds place rating information.
 
 +---------------------+-------------------------+
@@ -9,12 +13,10 @@ The Ratings type holds place rating information.
 Properties
 ----------
 
--  ****`average </sdk/apps/qml/QtLocation/Ratings#average-prop>`__**** :
-   real
--  ****`count </sdk/apps/qml/QtLocation/Ratings#count-prop>`__**** : int
--  ****`maximum </sdk/apps/qml/QtLocation/Ratings#maximum-prop>`__**** :
-   real
--  ****`ratings </sdk/apps/qml/QtLocation/Ratings#ratings-prop>`__**** :
+-  :ref:`average <sdk_qtlocation_ratings_average-prop>` : real
+-  :ref:`count <sdk_qtlocation_ratings_count-prop>` : int
+-  :ref:`maximum <sdk_qtlocation_ratings_maximum-prop>` : real
+-  :ref:`ratings <sdk_qtlocation_ratings_ratings-prop>` :
    QPlaceRatings
 
 Detailed Description
@@ -22,10 +24,9 @@ Detailed Description
 
 Rating information is used to describe how *good* a place is conceived
 to be. Typically this information is visualized as a number of stars.
-The `average </sdk/apps/qml/QtLocation/Ratings#average-prop>`__ property
-gives an aggregated ratings value out of a possible maximum as given by
-the `maximum </sdk/apps/qml/QtLocation/Ratings#maximum-prop>`__
-property.
+The :ref:`average <sdk_qtlocation_ratings#average-prop>` property gives an
+aggregated ratings value out of a possible maximum as given by the
+:ref:`maximum <sdk_qtlocation_ratings#maximum-prop>` property.
 
 .. code:: qml
 
@@ -39,16 +40,19 @@ property.
 Property Documentation
 ----------------------
 
+.. _sdk_qtlocation_ratings_average-prop:
+
 +--------------------------------------------------------------------------+
 |        \ average : real                                                  |
 +--------------------------------------------------------------------------+
 
 This property holds the average of the individual ratings.
 
-**See also**
-`maximum </sdk/apps/qml/QtLocation/Ratings#maximum-prop>`__.
+**See also** :ref:`maximum <sdk_qtlocation_ratings#maximum-prop>`.
 
 | 
+
+.. _sdk_qtlocation_ratings_count-prop:
 
 +--------------------------------------------------------------------------+
 |        \ count : int                                                     |
@@ -56,9 +60,11 @@ This property holds the average of the individual ratings.
 
 This property holds the total number of individual user ratings used in
 determining the overall ratings
-`average </sdk/apps/qml/QtLocation/Ratings#average-prop>`__.
+:ref:`average <sdk_qtlocation_ratings#average-prop>`.
 
 | 
+
+.. _sdk_qtlocation_ratings_maximum-prop:
 
 +--------------------------------------------------------------------------+
 |        \ maximum : real                                                  |
@@ -67,6 +73,8 @@ determining the overall ratings
 This property holds the maximum rating value.
 
 | 
+
+.. _sdk_qtlocation_ratings_ratings-prop:
 
 +--------------------------------------------------------------------------+
 |        \ ratings : QPlaceRatings                                         |

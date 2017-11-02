@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_qt_sensors_c++_overview:
+QtSensors Qt Sensors C++ Overview
+=================================
+
 
 
 .. rubric:: Sensor Types
@@ -10,7 +14,7 @@ sensors available on a device is found using the QSensor::sensorTypes()
 function.
 
 For a list of built-in sensor types, see the `Sensor
-Classes </sdk/apps/qml/QtSensors/qtsensors-cpp#sensor-classes>`__
+Classes </sdk/apps/qml/QtSensors/qtsensors-cpp/#sensor-classes>`_ 
 section below.
 
 .. rubric:: Common Conventions
@@ -18,7 +22,7 @@ section below.
 
 Unless specified otherwise, Qt Sensors uses the `Right Hand Cartesian
 coordinate
-system <http://en.wikipedia.org/wiki/Cartesian_coordinate_system>`__.
+system <http://en.wikipedia.org/wiki/Cartesian_coordinate_system>`_ .
 
 |image0|
 
@@ -67,7 +71,7 @@ Here is an example of creating a sensor on the heap and on the stack.
    :name: accessing-sensor-data-in-a-generic-fashion
 
 The preferred way to deal with sensor data is via the `Reading
-Classes </sdk/apps/qml/QtSensors/qtsensors-cpp#reading-classes>`__.
+Classes </sdk/apps/qml/QtSensors/qtsensors-cpp/#reading-classes>`_ .
 However, sometimes this may not be possible. For example, you may be
 deploying an application to a device that has a new sensor type but no
 C++ header describing the reading class is available.
@@ -94,7 +98,7 @@ QAccelerometer or QAccelerometerReading.
     qreal y = reading->value(1).value<qreal>();
 
 You can discover all of this information at runtime too. The
-`sensor\_explorer </sdk/apps/qml/QtSensors/sensor_explorer/>`__ example
+`sensor\_explorer </sdk/apps/qml/QtSensors/sensor_explorer/>`_  example
 shows you information about available sensors.
 
 .. rubric:: Front End, Back End
@@ -192,7 +196,7 @@ These classes provide convenience wrappers that reduce the need for
 casting. Each of these classes represents a sensor type that the Qt
 Sensors API knows about. Note that additional types may be made
 available at run-time. See `Sensor
-Types </sdk/apps/qml/QtSensors/qtsensors-cpp#sensor-types>`__ for more
+Types </sdk/apps/qml/QtSensors/qtsensors-cpp/#sensor-types>`_  for more
 information.
 
 +--------------------------------------+--------------------------------------+

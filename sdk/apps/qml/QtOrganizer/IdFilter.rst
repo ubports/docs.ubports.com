@@ -1,3 +1,7 @@
+.. _sdk_qtorganizer_idfilter:
+QtOrganizer IdFilter
+====================
+
 The IdFilter element provides a filter based around a list of organizer
 item IDs.
 
@@ -8,13 +12,12 @@ item IDs.
 Properties
 ----------
 
--  ****`ids </sdk/apps/qml/QtOrganizer/IdFilter#ids-prop>`__**** :
-   list<string>
+-  :ref:`ids <sdk_qtorganizer_idfilter_ids-prop>` : list<string>
 
 Signals
 -------
 
--  ****`onFilterChanged </sdk/apps/qml/QtOrganizer/IdFilter#onFilterChanged-signal>`__****\ ()
+-  :ref:`onFilterChanged <sdk_qtorganizer_idfilter_onFilterChanged-signal>`\ ()
 
 Detailed Description
 --------------------
@@ -23,6 +26,8 @@ Detailed Description
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtorganizer_idfilter_ids-prop:
 
 +--------------------------------------------------------------------------+
 |        \ ids : list<string>                                              |
@@ -36,11 +41,13 @@ filter.
 Signal Documentation
 --------------------
 
+.. _sdk_qtorganizer_idfilter_onFilterChanged()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ onFilterChanged()                                               |
 +--------------------------------------------------------------------------+
 
 **See also**
-`QtOrganizer5::Filter::onFilterChanged </sdk/apps/qml/QtOrganizer/Filter#onFilterChanged-signal>`__.
+:ref:`QtOrganizer5::Filter::onFilterChanged <sdk_qtorganizer_filter#onFilterChanged-signal>`.
 
 | 

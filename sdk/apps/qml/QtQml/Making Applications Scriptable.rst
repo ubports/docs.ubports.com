@@ -1,3 +1,7 @@
+.. _sdk_qtqml_making_applications_scriptable:
+QtQml Making Applications Scriptable
+====================================
+
 
 
 Qt provides support for application scripting with JavaScript. The

@@ -1,3 +1,7 @@
+.. _sdk_qtorganizer_journal:
+QtOrganizer Journal
+===================
+
 The Journal element provides a journal which is associated with a
 particular point in time.
 
@@ -8,27 +12,27 @@ particular point in time.
 Properties
 ----------
 
--  ****`dateTime </sdk/apps/qml/QtOrganizer/Journal#dateTime-prop>`__****
-   : date
+-  :ref:`dateTime <sdk_qtorganizer_journal_dateTime-prop>` : date
 
 Signals
 -------
 
--  ****`onItemChanged </sdk/apps/qml/QtOrganizer/Journal#onItemChanged-signal>`__****\ ()
+-  :ref:`onItemChanged <sdk_qtorganizer_journal_onItemChanged-signal>`\ ()
 
 Detailed Description
 --------------------
 
-**See also**
-`OrganizerItem </sdk/apps/qml/QtOrganizer/OrganizerItem/>`__,
-`Event </sdk/apps/qml/QtOrganizer/Event/>`__,
-`EventOccurrence </sdk/apps/qml/QtOrganizer/EventOccurrence/>`__,
-`Todo </sdk/apps/qml/QtOrganizer/Todo/>`__,
-`TodoOccurrence </sdk/apps/qml/QtOrganizer/TodoOccurrence/>`__,
-`Note </sdk/apps/qml/QtOrganizer/Note/>`__, and QOrganizerJournal.
+**See also** :ref:`OrganizerItem <sdk_qtorganizer_organizeritem>`,
+:ref:`Event <sdk_qtorganizer_event>`,
+:ref:`EventOccurrence <sdk_qtorganizer_eventoccurrence>`,
+:ref:`Todo <sdk_qtorganizer_todo>`,
+:ref:`TodoOccurrence <sdk_qtorganizer_todooccurrence>`,
+:ref:`Note <sdk_qtorganizer_note>`, and QOrganizerJournal.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtorganizer_journal_dateTime-prop:
 
 +--------------------------------------------------------------------------+
 |        \ dateTime : date                                                 |
@@ -41,11 +45,13 @@ This property holds the date time associated with this journal.
 Signal Documentation
 --------------------
 
+.. _sdk_qtorganizer_journal_onItemChanged()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ onItemChanged()                                                 |
 +--------------------------------------------------------------------------+
 
 **See also**
-`OrganizerItem::onItemChanged </sdk/apps/qml/QtOrganizer/OrganizerItem#onItemChanged-signal>`__.
+:ref:`OrganizerItem::onItemChanged <sdk_qtorganizer_organizeritem#onItemChanged-signal>`.
 
 | 

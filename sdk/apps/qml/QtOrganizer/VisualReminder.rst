@@ -1,42 +1,48 @@
+.. _sdk_qtorganizer_visualreminder:
+QtOrganizer VisualReminder
+==========================
+
 The VisualReminder element contains information about a visual reminder
 of an item.
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtOrganizer 5.0               |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Reminder </sdk/apps/qml/QtOrganizer |
-|                                      | /Reminder/>`__                       |
+| Inherits:                            | :ref:`Reminder <sdk_qtorganizer_reminder> |
+|                                      | `_                                   |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`dataUrl </sdk/apps/qml/QtOrganizer/VisualReminder#dataUrl-prop>`__****
-   : url
--  ****`message </sdk/apps/qml/QtOrganizer/VisualReminder#message-prop>`__****
-   : string
+-  :ref:`dataUrl <sdk_qtorganizer_visualreminder_dataUrl-prop>` :
+   url
+-  :ref:`message <sdk_qtorganizer_visualreminder_message-prop>` :
+   string
 
 Signals
 -------
 
--  ****`onDetailChanged </sdk/apps/qml/QtOrganizer/VisualReminder#onDetailChanged-signal>`__****\ ()
+-  :ref:`onDetailChanged <sdk_qtorganizer_visualreminder_onDetailChanged-signal>`\ ()
 
 Detailed Description
 --------------------
 
 The following fields are supported:
 
--  `VisualReminder </sdk/apps/qml/QtOrganizer/VisualReminder/>`__.FieldRepetitionCount
--  `VisualReminder </sdk/apps/qml/QtOrganizer/VisualReminder/>`__.FieldRepetitionDelay
--  `VisualReminder </sdk/apps/qml/QtOrganizer/VisualReminder/>`__.FieldSecondsBeforeStart
--  `VisualReminder </sdk/apps/qml/QtOrganizer/VisualReminder/>`__.FieldDataUrl
--  `VisualReminder </sdk/apps/qml/QtOrganizer/VisualReminder/>`__.FieldMessage
+-  :ref:`VisualReminder <sdk_qtorganizer_visualreminder>`.FieldRepetitionCount
+-  :ref:`VisualReminder <sdk_qtorganizer_visualreminder>`.FieldRepetitionDelay
+-  :ref:`VisualReminder <sdk_qtorganizer_visualreminder>`.FieldSecondsBeforeStart
+-  :ref:`VisualReminder <sdk_qtorganizer_visualreminder>`.FieldDataUrl
+-  :ref:`VisualReminder <sdk_qtorganizer_visualreminder>`.FieldMessage
 
-**See also** `Reminder </sdk/apps/qml/QtOrganizer/Reminder/>`__ and
+**See also** :ref:`Reminder <sdk_qtorganizer_reminder>` and
 QOrganizerItemVisualReminder.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtorganizer_visualreminder_dataUrl-prop:
 
 +--------------------------------------------------------------------------+
 |        \ dataUrl : url                                                   |
@@ -46,6 +52,8 @@ This property holds the url of the visual data which the user wishes to
 be displayed as part of the reminder.
 
 | 
+
+.. _sdk_qtorganizer_visualreminder_message-prop:
 
 +--------------------------------------------------------------------------+
 |        \ message : string                                                |
@@ -59,11 +67,13 @@ part of the reminder.
 Signal Documentation
 --------------------
 
+.. _sdk_qtorganizer_visualreminder_onDetailChanged()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ onDetailChanged()                                               |
 +--------------------------------------------------------------------------+
 
 **See also**
-`Detail::onDetailChanged </sdk/apps/qml/QtOrganizer/Detail#onDetailChanged-signal>`__.
+:ref:`Detail::onDetailChanged <sdk_qtorganizer_detail#onDetailChanged-signal>`.
 
 | 

@@ -1,5 +1,9 @@
+.. _sdk_autopilot_introspection_types_plaintype:
+autopilot.introspection.types PlainType
+=======================================
+
  *class*
-``autopilot.introspection.types.``\ ``PlainType``\ ` </sdk/autopilot/python/autopilot.introspection/types.PlainType#PlainType>`__\ ` <#autopilot.introspection.types.PlainType>`__
+``autopilot.introspection.types.``\ ``PlainType``\ ` </sdk/autopilot/python/autopilot.introspection/types.PlainType/#PlainType>`_ \ ` <#autopilot.introspection.types.PlainType>`_ 
     Plain type support in autopilot proxy objects.
 
     Instances of this class will be used for all plain attrubites. The

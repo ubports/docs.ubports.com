@@ -1,3 +1,7 @@
+.. _sdk_qtmultimedia_qml_camera_example:
+QtMultimedia QML Camera Example
+===============================
+
 
 
 |image0|

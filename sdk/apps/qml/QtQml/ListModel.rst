@@ -1,3 +1,7 @@
+.. _sdk_qtqml_listmodel:
+QtQml ListModel
+===============
+
 Defines a free-form list data source
 
 +---------------------+---------------------------+
@@ -7,62 +11,58 @@ Defines a free-form list data source
 Properties
 ----------
 
--  ****`count </sdk/apps/qml/QtQml/ListModel#count-prop>`__**** : int
--  ****`dynamicRoles </sdk/apps/qml/QtQml/ListModel#dynamicRoles-prop>`__****
-   : bool
+-  :ref:`count <sdk_qtqml_listmodel_count-prop>` : int
+-  :ref:`dynamicRoles <sdk_qtqml_listmodel_dynamicRoles-prop>` :
+   bool
 
 Methods
 -------
 
--  ****`append </sdk/apps/qml/QtQml/ListModel#append-method>`__****\ (jsobject
+-  :ref:`append <sdk_qtqml_listmodel_append-method>`\ (jsobject
    *dict*)
--  ****`clear </sdk/apps/qml/QtQml/ListModel#clear-method>`__****\ ()
--  object
-   ****`get </sdk/apps/qml/QtQml/ListModel#get-method>`__****\ (int
+-  :ref:`clear <sdk_qtqml_listmodel_clear-method>`\ ()
+-  object :ref:`get <sdk_qtqml_listmodel_get-method>`\ (int
    *index*)
--  ****`insert </sdk/apps/qml/QtQml/ListModel#insert-method>`__****\ (int
-   *index*, jsobject *dict*)
--  ****`move </sdk/apps/qml/QtQml/ListModel#move-method>`__****\ (int
-   *from*, int *to*, int *n*)
--  ****`remove </sdk/apps/qml/QtQml/ListModel#remove-method>`__****\ (int
-   *index*, int *count*)
--  ****`set </sdk/apps/qml/QtQml/ListModel#set-method>`__****\ (int
-   *index*, jsobject *dict*)
--  ****`setProperty </sdk/apps/qml/QtQml/ListModel#setProperty-method>`__****\ (int
+-  :ref:`insert <sdk_qtqml_listmodel_insert-method>`\ (int *index*,
+   jsobject *dict*)
+-  :ref:`move <sdk_qtqml_listmodel_move-method>`\ (int *from*, int
+   *to*, int *n*)
+-  :ref:`remove <sdk_qtqml_listmodel_remove-method>`\ (int *index*,
+   int *count*)
+-  :ref:`set <sdk_qtqml_listmodel_set-method>`\ (int *index*,
+   jsobject *dict*)
+-  :ref:`setProperty <sdk_qtqml_listmodel_setProperty-method>`\ (int
    *index*, string *property*, variant *value*)
--  ****`sync </sdk/apps/qml/QtQml/ListModel#sync-method>`__****\ ()
+-  :ref:`sync <sdk_qtqml_listmodel_sync-method>`\ ()
 
 Detailed Description
 --------------------
 
-The `ListModel </sdk/apps/qml/QtQml/ListModel/>`__ is a simple container
-of `ListElement </sdk/apps/qml/QtQml/ListElement/>`__ definitions, each
-containing data roles. The contents can be defined dynamically, or
-explicitly in QML.
+The :ref:`ListModel <sdk_qtqml_listmodel>` is a simple container of
+:ref:`ListElement <sdk_qtqml_listelement>` definitions, each containing
+data roles. The contents can be defined dynamically, or explicitly in
+QML.
 
 The number of elements in the model can be obtained from its
-`count </sdk/apps/qml/QtQml/ListModel#count-prop>`__ property. A number
-of familiar methods are also provided to manipulate the contents of the
-model, including
-`append() </sdk/apps/qml/QtQml/ListModel#append-method>`__,
-`insert() </sdk/apps/qml/QtQml/ListModel#insert-method>`__,
-`move() </sdk/apps/qml/QtQml/ListModel#move-method>`__,
-`remove() </sdk/apps/qml/QtQml/ListModel#remove-method>`__ and
-`set() </sdk/apps/qml/QtQml/ListModel#set-method>`__. These methods
-accept dictionaries as their arguments; these are translated to
-`ListElement </sdk/apps/qml/QtQml/ListElement/>`__ objects by the model.
+:ref:`count <sdk_qtqml_listmodel#count-prop>` property. A number of
+familiar methods are also provided to manipulate the contents of the
+model, including :ref:`append() <sdk_qtqml_listmodel#append-method>`,
+:ref:`insert() <sdk_qtqml_listmodel#insert-method>`,
+:ref:`move() <sdk_qtqml_listmodel#move-method>`,
+:ref:`remove() <sdk_qtqml_listmodel#remove-method>` and
+:ref:`set() <sdk_qtqml_listmodel#set-method>`. These methods accept
+dictionaries as their arguments; these are translated to
+:ref:`ListElement <sdk_qtqml_listelement>` objects by the model.
 
 Elements can be manipulated via the model using the
-`setProperty() </sdk/apps/qml/QtQml/ListModel#setProperty-method>`__
-method, which allows the roles of the specified element to be set and
-changed.
+:ref:`setProperty() <sdk_qtqml_listmodel#setProperty-method>` method, which
+allows the roles of the specified element to be set and changed.
 
 Example Usage
 -------------
 
-The following example shows a
-`ListModel </sdk/apps/qml/QtQml/ListModel/>`__ containing three
-elements, with the roles "name" and "cost".
+The following example shows a :ref:`ListModel <sdk_qtqml_listmodel>`
+containing three elements, with the roles "name" and "cost".
 
 |image0|
 
@@ -87,8 +87,8 @@ elements, with the roles "name" and "cost".
 
 Roles (properties) in each element must begin with a lower-case letter
 and should be common to all elements in a model. The
-`ListElement </sdk/apps/qml/QtQml/ListElement/>`__ documentation
-provides more guidelines for how elements should be defined.
+:ref:`ListElement <sdk_qtqml_listelement>` documentation provides more
+guidelines for how elements should be defined.
 
 Since the example model contains an ``id`` property, it can be
 referenced by views, such as the ListView in this example:
@@ -176,14 +176,13 @@ The delegate displays all the fruit attributes:
 Modifying List Models
 ---------------------
 
-The content of a `ListModel </sdk/apps/qml/QtQml/ListModel/>`__ may be
-created and modified using the
-`clear() </sdk/apps/qml/QtQml/ListModel#clear-method>`__,
-`append() </sdk/apps/qml/QtQml/ListModel#append-method>`__,
-`set() </sdk/apps/qml/QtQml/ListModel#set-method>`__,
-`insert() </sdk/apps/qml/QtQml/ListModel#insert-method>`__ and
-`setProperty() </sdk/apps/qml/QtQml/ListModel#setProperty-method>`__
-methods. For example:
+The content of a :ref:`ListModel <sdk_qtqml_listmodel>` may be created and
+modified using the :ref:`clear() <sdk_qtqml_listmodel#clear-method>`,
+:ref:`append() <sdk_qtqml_listmodel#append-method>`,
+:ref:`set() <sdk_qtqml_listmodel#set-method>`,
+:ref:`insert() <sdk_qtqml_listmodel#insert-method>` and
+:ref:`setProperty() <sdk_qtqml_listmodel#setProperty-method>` methods. For
+example:
 
 .. code:: qml
 
@@ -208,15 +207,14 @@ added to the model are the only permitted properties in the model.
 Using Threaded List Models with WorkerScript
 --------------------------------------------
 
-`ListModel </sdk/apps/qml/QtQml/ListModel/>`__ can be used together with
-`WorkerScript </sdk/apps/qml/QtQml/WorkerScript/>`__ access a list model
-from multiple threads. This is useful if list modifications are
-synchronous and take some time: the list operations can be moved to a
-different thread to avoid blocking of the main GUI thread.
+:ref:`ListModel <sdk_qtqml_listmodel>` can be used together with
+:ref:`WorkerScript <sdk_qtqml_workerscript>` access a list model from
+multiple threads. This is useful if list modifications are synchronous
+and take some time: the list operations can be moved to a different
+thread to avoid blocking of the main GUI thread.
 
-Here is an example that uses
-`WorkerScript </sdk/apps/qml/QtQml/WorkerScript/>`__ to periodically
-append the current time to a list model:
+Here is an example that uses :ref:`WorkerScript <sdk_qtqml_workerscript>`
+to periodically append the current time to a list model:
 
 .. code:: qml
 
@@ -245,21 +243,23 @@ The included file, ``dataloader.js``, looks like this:
 
 The timer in the main example sends messages to the worker script by
 calling
-`WorkerScript::sendMessage() </sdk/apps/qml/QtQml/WorkerScript#sendMessage-method>`__.
+:ref:`WorkerScript::sendMessage() <sdk_qtqml_workerscript#sendMessage-method>`.
 When this message is received, ``WorkerScript.onMessage()`` is invoked
 in ``dataloader.js``, which appends the current time to the list model.
 
-Note the call to `sync() </sdk/apps/qml/QtQml/ListModel#sync-method>`__
-from the external thread. You must call
-`sync() </sdk/apps/qml/QtQml/ListModel#sync-method>`__ or else the
-changes made to the list from that thread will not be reflected in the
-list model in the main thread.
+Note the call to :ref:`sync() <sdk_qtqml_listmodel#sync-method>` from the
+external thread. You must call
+:ref:`sync() <sdk_qtqml_listmodel#sync-method>` or else the changes made to
+the list from that thread will not be reflected in the list model in the
+main thread.
 
 **See also** Data Models, Qt Quick Examples - Threading, and `Qt
-QML </sdk/apps/qml/QtQml/qtqml-index/>`__.
+QML </sdk/apps/qml/QtQml/qtqml-index/>`_ .
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtqml_listmodel_count-prop:
 
 +--------------------------------------------------------------------------+
 |        \ count : int                                                     |
@@ -268,6 +268,8 @@ Property Documentation
 The number of data entries in the model.
 
 | 
+
+.. _sdk_qtqml_listmodel_dynamicRoles-prop:
 
 +--------------------------------------------------------------------------+
 |        \ dynamicRoles : bool                                             |
@@ -280,18 +282,17 @@ the dynamicRoles property is enabled, the type of a given role is not
 fixed and can be different between elements.
 
 The dynamicRoles property must be set before any data is added to the
-`ListModel </sdk/apps/qml/QtQml/ListModel/>`__, and must be set from the
-main thread.
+:ref:`ListModel <sdk_qtqml_listmodel>`, and must be set from the main
+thread.
 
-A `ListModel </sdk/apps/qml/QtQml/ListModel/>`__ that has data
-statically defined (via the
-`ListElement </sdk/apps/qml/QtQml/ListElement/>`__ QML syntax) cannot
-have the dynamicRoles property enabled.
+A :ref:`ListModel <sdk_qtqml_listmodel>` that has data statically defined
+(via the :ref:`ListElement <sdk_qtqml_listelement>` QML syntax) cannot have
+the dynamicRoles property enabled.
 
 There is a significant performance cost to using a
-`ListModel </sdk/apps/qml/QtQml/ListModel/>`__ with dynamic roles
-enabled. The cost varies from platform to platform but is typically
-somewhere between 4-6x slower than using static role types.
+:ref:`ListModel <sdk_qtqml_listmodel>` with dynamic roles enabled. The cost
+varies from platform to platform but is typically somewhere between 4-6x
+slower than using static role types.
 
 Due to the performance cost of using dynamic roles, they are disabled by
 default.
@@ -300,6 +301,8 @@ default.
 
 Method Documentation
 --------------------
+
+.. _sdk_qtqml_listmodel_append-method:
 
 +--------------------------------------------------------------------------+
 |        \ append(jsobject *dict*)                                         |
@@ -311,10 +314,12 @@ Adds a new item to the end of the list model, with the values in *dict*.
 
     fruitModel.append({"cost": 5.95, "name":"Pizza"})
 
-**See also** `set() </sdk/apps/qml/QtQml/ListModel#set-method>`__ and
-`remove() </sdk/apps/qml/QtQml/ListModel#remove-method>`__.
+**See also** :ref:`set() <sdk_qtqml_listmodel#set-method>` and
+:ref:`remove() <sdk_qtqml_listmodel#remove-method>`.
 
 | 
+
+.. _sdk_qtqml_listmodel_clear-method:
 
 +--------------------------------------------------------------------------+
 |        \ clear()                                                         |
@@ -322,10 +327,12 @@ Adds a new item to the end of the list model, with the values in *dict*.
 
 Deletes all content from the model.
 
-**See also** `append() </sdk/apps/qml/QtQml/ListModel#append-method>`__
-and `remove() </sdk/apps/qml/QtQml/ListModel#remove-method>`__.
+**See also** :ref:`append() <sdk_qtqml_listmodel#append-method>` and
+:ref:`remove() <sdk_qtqml_listmodel#remove-method>`.
 
 | 
+
+.. _sdk_qtqml_listmodel_object get-method:
 
 +--------------------------------------------------------------------------+
 |        \ object get(int *index*)                                         |
@@ -356,11 +363,13 @@ will also be models, and this get() method is used to access elements:
 
 **Warning:** The returned object is not guaranteed to remain valid. It
 should not be used in `property
-bindings </sdk/apps/qml/QtQml/qtqml-syntax-propertybinding/>`__.
+bindings </sdk/apps/qml/QtQml/qtqml-syntax-propertybinding/>`_ .
 
-**See also** `append() </sdk/apps/qml/QtQml/ListModel#append-method>`__.
+**See also** :ref:`append() <sdk_qtqml_listmodel#append-method>`.
 
 | 
+
+.. _sdk_qtqml_listmodel_insert-method:
 
 +--------------------------------------------------------------------------+
 |        \ insert(int *index*, jsobject *dict*)                            |
@@ -376,10 +385,12 @@ in *dict*.
 The *index* must be to an existing item in the list, or one past the end
 of the list (equivalent to append).
 
-**See also** `set() </sdk/apps/qml/QtQml/ListModel#set-method>`__ and
-`append() </sdk/apps/qml/QtQml/ListModel#append-method>`__.
+**See also** :ref:`set() <sdk_qtqml_listmodel#set-method>` and
+:ref:`append() <sdk_qtqml_listmodel#append-method>`.
 
 | 
+
+.. _sdk_qtqml_listmodel_move-method:
 
 +--------------------------------------------------------------------------+
 |        \ move(int *from*, int *to*, int *n*)                             |
@@ -394,9 +405,11 @@ items to the end of the list:
 
     fruitModel.move(0, fruitModel.count - 3, 3)
 
-**See also** `append() </sdk/apps/qml/QtQml/ListModel#append-method>`__.
+**See also** :ref:`append() <sdk_qtqml_listmodel#append-method>`.
 
 | 
+
+.. _sdk_qtqml_listmodel_remove-method:
 
 +--------------------------------------------------------------------------+
 |        \ remove(int *index*, int *count* = 1)                            |
@@ -404,9 +417,11 @@ items to the end of the list:
 
 Deletes the content at *index* from the model.
 
-**See also** `clear() </sdk/apps/qml/QtQml/ListModel#clear-method>`__.
+**See also** :ref:`clear() <sdk_qtqml_listmodel#clear-method>`.
 
 | 
+
+.. _sdk_qtqml_listmodel_set-method:
 
 +--------------------------------------------------------------------------+
 |        \ set(int *index*, jsobject *dict*)                               |
@@ -422,9 +437,11 @@ Properties not appearing in *dict* are left unchanged.
 If *index* is equal to count() then a new item is appended to the list.
 Otherwise, *index* must be an element in the list.
 
-**See also** `append() </sdk/apps/qml/QtQml/ListModel#append-method>`__.
+**See also** :ref:`append() <sdk_qtqml_listmodel#append-method>`.
 
 | 
+
+.. _sdk_qtqml_listmodel_setProperty-method:
 
 +--------------------------------------------------------------------------+
 |        \ setProperty(int *index*, string *property*, variant *value*)    |
@@ -439,9 +456,11 @@ Changes the *property* of the item at *index* in the list model to
 
 The *index* must be an element in the list.
 
-**See also** `append() </sdk/apps/qml/QtQml/ListModel#append-method>`__.
+**See also** :ref:`append() <sdk_qtqml_listmodel#append-method>`.
 
 | 
+
+.. _sdk_qtqml_listmodel_sync-method:
 
 +--------------------------------------------------------------------------+
 |        \ sync()                                                          |
@@ -452,6 +471,6 @@ from a worker script.
 
 | 
 
-.. |image0| image:: /media/sdk/apps/qml/QtQml/ListModel/images/listmodel.png
-.. |image1| image:: /media/sdk/apps/qml/QtQml/ListModel/images/listmodel-nested.png
+.. |image0| image:: /mediasdk_qtqml_listmodelimages/listmodel.png
+.. |image1| image:: /mediasdk_qtqml_listmodelimages/listmodel-nested.png
 

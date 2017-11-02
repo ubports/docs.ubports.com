@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_onlineaccounts_account:
+Ubuntu.OnlineAccounts Account
+=============================
+
 Representation of an online account
 
 +---------------------+----------------------------------+
@@ -7,32 +11,32 @@ Representation of an online account
 Properties
 ----------
 
--  ****`accountId </sdk/apps/qml/Ubuntu.OnlineAccounts/Account#accountId-prop>`__****
+-  :ref:`accountId <sdk_ubuntu_onlineaccounts_account_accountId-prop>`
    : int
--  ****`authenticationMethod </sdk/apps/qml/Ubuntu.OnlineAccounts/Account#authenticationMethod-prop>`__****
+-  :ref:`authenticationMethod <sdk_ubuntu_onlineaccounts_account_authenticationMethod-prop>`
    : enumeration
--  ****`displayName </sdk/apps/qml/Ubuntu.OnlineAccounts/Account#displayName-prop>`__****
+-  :ref:`displayName <sdk_ubuntu_onlineaccounts_account_displayName-prop>`
    : string
--  ****`service </sdk/apps/qml/Ubuntu.OnlineAccounts/Account#service-prop>`__****
+-  :ref:`service <sdk_ubuntu_onlineaccounts_account_service-prop>`
    : int
--  ****`serviceId </sdk/apps/qml/Ubuntu.OnlineAccounts/Account#serviceId-prop>`__****
+-  :ref:`serviceId <sdk_ubuntu_onlineaccounts_account_serviceId-prop>`
    : int
--  ****`settings </sdk/apps/qml/Ubuntu.OnlineAccounts/Account#settings-prop>`__****
+-  :ref:`settings <sdk_ubuntu_onlineaccounts_account_settings-prop>`
    : jsobject
--  ****`valid </sdk/apps/qml/Ubuntu.OnlineAccounts/Account#valid-prop>`__****
-   : bool
+-  :ref:`valid <sdk_ubuntu_onlineaccounts_account_valid-prop>` :
+   bool
 
 Signals
 -------
 
--  ****`authenticationReply </sdk/apps/qml/Ubuntu.OnlineAccounts/Account#authenticationReply-signal>`__****\ (jsobject
+-  :ref:`authenticationReply <sdk_ubuntu_onlineaccounts_account_authenticationReply-signal>`\ (jsobject
    *authenticationData*)
 
 Methods
 -------
 
 -  void
-   ****`authenticate </sdk/apps/qml/Ubuntu.OnlineAccounts/Account#authenticate-method>`__****\ (jsobject
+   **:ref:`authenticate <sdk_ubuntu_onlineaccounts_account#authenticate-method>`**\ (jsobject
    *params*)
 
 Detailed Description
@@ -41,9 +45,9 @@ Detailed Description
 The Account object holds the information related to an account and
 provides methods to interact with it. It's not possible to create such
 objects from QML; instead, they are returned by the
-`AccountModel </sdk/apps/qml/Ubuntu.OnlineAccounts/AccountModel/>`__ in
-the ``account`` role or in the
-```accountList`` </sdk/apps/qml/Ubuntu.OnlineAccounts/AccountModel#accountList-prop>`__
+:ref:`AccountModel <sdk_ubuntu_onlineaccounts_accountmodel>` in the
+``account`` role or in the
+:ref:```accountList`` <sdk_ubuntu_onlineaccounts_accountmodel#accountList-prop>`
 property.
 
 Here's an example on how to use the account object in a delegate:
@@ -72,9 +76,9 @@ Error codes used in this module
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Some operations, such as the
-`Account::authenticate() </sdk/apps/qml/Ubuntu.OnlineAccounts/Account#authenticate-method>`__
+:ref:`Account::authenticate() <sdk_ubuntu_onlineaccounts_account#authenticate-method>`
 and the
-`AccountModel::requestAccess() </sdk/apps/qml/Ubuntu.OnlineAccounts/AccountModel#requestAccess-method>`__
+:ref:`AccountModel::requestAccess() <sdk_ubuntu_onlineaccounts_accountmodel#requestAccess-method>`
 methods, can fail and return one of these error codes:
 
 -  ``Account.ErrorCodeNoAccount`` - The accounts is invalid
@@ -86,6 +90,8 @@ methods, can fail and return one of these error codes:
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_onlineaccounts_account_accountId-prop:
+
 +--------------------------------------------------------------------------+
 |        \ accountId : int                                                 |
 +--------------------------------------------------------------------------+
@@ -95,6 +101,8 @@ the lifetime of the account. Note, however, that if the user deletes the
 account and re-creates it, its ID will be different.
 
 | 
+
+.. _sdk_ubuntu_onlineaccounts_account_authenticationMethod-prop:
 
 +--------------------------------------------------------------------------+
 |        \ authenticationMethod : enumeration                              |
@@ -110,6 +118,8 @@ Currently, these authentication methods are supported:
 
 | 
 
+.. _sdk_ubuntu_onlineaccounts_account_displayName-prop:
+
 +--------------------------------------------------------------------------+
 |        \ displayName : string                                            |
 +--------------------------------------------------------------------------+
@@ -120,6 +130,8 @@ only for display purposes.
 
 | 
 
+.. _sdk_ubuntu_onlineaccounts_account_service-prop:
+
 +--------------------------------------------------------------------------+
 |        \ service : int                                                   |
 +--------------------------------------------------------------------------+
@@ -128,12 +140,14 @@ Service data associated with this account. This is an object containing
 the following properties:
 
 ``serviceId`` - same service ID returned by
-`Account::serviceId </sdk/apps/qml/Ubuntu.OnlineAccounts/Account#serviceId-prop>`__
+:ref:`Account::serviceId <sdk_ubuntu_onlineaccounts_account#serviceId-prop>`
 ``displayName`` - the localized display name for the service
 ``iconSource`` - URL for the icon; can be a "file://" URL to a local
 file, or an icon from the theme if the URL starts with "image://theme/"
 
 | 
+
+.. _sdk_ubuntu_onlineaccounts_account_serviceId-prop:
 
 +--------------------------------------------------------------------------+
 |        \ serviceId : int                                                 |
@@ -143,6 +157,8 @@ Identifier for the service used with the account.
 
 | 
 
+.. _sdk_ubuntu_onlineaccounts_account_settings-prop:
+
 +--------------------------------------------------------------------------+
 |        \ settings : jsobject                                             |
 +--------------------------------------------------------------------------+
@@ -150,6 +166,8 @@ Identifier for the service used with the account.
 A dictionary of the settings stored into the account.
 
 | 
+
+.. _sdk_ubuntu_onlineaccounts_account_valid-prop:
 
 +--------------------------------------------------------------------------+
 |        \ valid : bool                                                    |
@@ -167,6 +185,8 @@ application's access rights to use it). As soon as this property becomes
 Signal Documentation
 --------------------
 
+.. _sdk_ubuntu_onlineaccounts_account_authenticationReply(jsobject *authenticationData*)-prop:
+
 +--------------------------------------------------------------------------+
 |        \ authenticationReply(jsobject *authenticationData*)              |
 +--------------------------------------------------------------------------+
@@ -176,7 +196,7 @@ object will contain the authentication reply. If the authentication
 failed, the following two keys will be present:
 
 -  ``errorCode`` is an `error
-   code </sdk/apps/qml/Ubuntu.OnlineAccounts/Account#errorcode>`__
+   code <sdk_ubuntu_onlineaccounts_account#errorcode>:ref:`
 -  ``errorText`` is a textual description of the error, not meant for
    the end-user; it can be used for debugging purposes
 
@@ -184,6 +204,8 @@ failed, the following two keys will be present:
 
 Method Documentation
 --------------------
+
+.. _sdk_ubuntu_onlineaccounts_account_void authenticate-method:
 
 +--------------------------------------------------------------------------+
 |        \ void authenticate(jsobject *params*)                            |
@@ -206,12 +228,12 @@ regardless of the authentication method being used:
    ensure that no interaction with the user will occur.
 
 Each call to this method will cause the
-`authenticationReply </sdk/apps/qml/Ubuntu.OnlineAccounts/Account#authenticationReply-signal>`__
+:ref:`authenticationReply <sdk_ubuntu_onlineaccounts_account#authenticationReply-signal>`
 signal to be emitted at some time later. Note that the authentication
 might involve interactions with the network or with the end-user, so
 don't expect a reply to be emitted immediately.
 
 **See also**
-`authenticationReply </sdk/apps/qml/Ubuntu.OnlineAccounts/Account#authenticationReply-signal>`__.
+:ref:`authenticationReply <sdk_ubuntu_onlineaccounts_account#authenticationReply-signal>`.
 
 | 

@@ -1,3 +1,7 @@
+.. _sdk_qtquick_droparea:
+QtQuick DropArea
+================
+
 For specifying drag and drop handling in an area
 
 +---------------------+----------------------+
@@ -7,64 +11,64 @@ For specifying drag and drop handling in an area
 Properties
 ----------
 
--  ****`containsDrag </sdk/apps/qml/QtQuick/DropArea#containsDrag-prop>`__****
-   : bool
--  ****`drag </sdk/apps/qml/QtQuick/DropArea#drag-prop>`__****
+-  :ref:`containsDrag <sdk_qtquick_droparea_containsDrag-prop>` :
+   bool
+-  :ref:`drag <sdk_qtquick_droparea_drag-prop>`
 
-   -  ****`drag.x </sdk/apps/qml/QtQuick/DropArea#drag.x-prop>`__**** :
-      qreal
-   -  ****`drag.y </sdk/apps/qml/QtQuick/DropArea#drag.y-prop>`__**** :
-      qreal
+   -  :ref:`drag.x <sdk_qtquick_droparea_drag.x-prop>` : qreal
+   -  :ref:`drag.y <sdk_qtquick_droparea_drag.y-prop>` : qreal
 
--  ****`drag.source </sdk/apps/qml/QtQuick/DropArea#drag.source-prop>`__****
-   : Object
--  ****`keys </sdk/apps/qml/QtQuick/DropArea#keys-prop>`__**** :
-   stringlist
+-  :ref:`drag.source <sdk_qtquick_droparea_drag.source-prop>` :
+   Object
+-  :ref:`keys <sdk_qtquick_droparea_keys-prop>` : stringlist
 
 Signals
 -------
 
--  ****`dropped </sdk/apps/qml/QtQuick/DropArea#dropped-signal>`__****\ (DragEvent
+-  :ref:`dropped <sdk_qtquick_droparea_dropped-signal>`\ (DragEvent
    *drop*)
--  ****`entered </sdk/apps/qml/QtQuick/DropArea#entered-signal>`__****\ (DragEvent
+-  :ref:`entered <sdk_qtquick_droparea_entered-signal>`\ (DragEvent
    *drag*)
--  ****`exited </sdk/apps/qml/QtQuick/DropArea#exited-signal>`__****\ ()
--  ****`positionChanged </sdk/apps/qml/QtQuick/DropArea#positionChanged-signal>`__****\ (DragEvent
+-  :ref:`exited <sdk_qtquick_droparea_exited-signal>`\ ()
+-  :ref:`positionChanged <sdk_qtquick_droparea_positionChanged-signal>`\ (DragEvent
    *drag*)
 
 Detailed Description
 --------------------
 
-A `DropArea </sdk/apps/qml/QtQuick/DropArea/>`__ is an invisible item
-which receives events when other items are dragged over it.
+A :ref:`DropArea <sdk_qtquick_droparea>` is an invisible item which
+receives events when other items are dragged over it.
 
-The `Drag </sdk/apps/qml/QtQuick/Drag/>`__ attached property can be used
-to notify the `DropArea </sdk/apps/qml/QtQuick/DropArea/>`__ when an
-Item is dragged over it.
+The :ref:`Drag <sdk_qtquick_drag>` attached property can be used to notify
+the :ref:`DropArea <sdk_qtquick_droparea>` when an Item is dragged over it.
 
-The `keys </sdk/apps/qml/QtQuick/DropArea#keys-prop>`__ property can be
-used to filter drag events which don't include a matching key.
+The :ref:`keys <sdk_qtquick_droparea#keys-prop>` property can be used to
+filter drag events which don't include a matching key.
 
-The `drag.source </sdk/apps/qml/QtQuick/DropArea#drag.source-prop>`__
-property is communicated to the source of a drag event as the recipient
-of a drop on the drag target.
+The :ref:`drag.source <sdk_qtquick_droparea#drag.source-prop>` property is
+communicated to the source of a drag event as the recipient of a drop on
+the drag target.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_droparea_containsDrag-prop:
 
 +--------------------------------------------------------------------------+
 |        \ containsDrag : bool                                             |
 +--------------------------------------------------------------------------+
 
-This property identifies whether the
-`DropArea </sdk/apps/qml/QtQuick/DropArea/>`__ currently contains any
-dragged items.
+This property identifies whether the :ref:`DropArea <sdk_qtquick_droparea>`
+currently contains any dragged items.
 
 | 
+
+.. _sdk_qtquick_droparea_**drag group**-prop:
 
 +--------------------------------------------------------------------------+
 |        \ **drag group**                                                  |
 +==========================================================================+
+.. _sdk_qtquick_droparea_drag.y-prop:
 |        \ drag.x : qreal                                                  |
 +--------------------------------------------------------------------------+
 |        \ drag.y : qreal                                                  |
@@ -74,6 +78,8 @@ These properties hold the coordinates of the last drag event.
 
 | 
 
+.. _sdk_qtquick_droparea_drag.source-prop:
+
 +--------------------------------------------------------------------------+
 |        \ drag.source : Object                                            |
 +--------------------------------------------------------------------------+
@@ -82,64 +88,70 @@ This property holds the source of a drag.
 
 | 
 
+.. _sdk_qtquick_droparea_keys-prop:
+
 +--------------------------------------------------------------------------+
 |        \ keys : stringlist                                               |
 +--------------------------------------------------------------------------+
 
 This property holds a list of drag keys a
-`DropArea </sdk/apps/qml/QtQuick/DropArea/>`__ will accept.
+:ref:`DropArea <sdk_qtquick_droparea>` will accept.
 
-If no keys are listed the `DropArea </sdk/apps/qml/QtQuick/DropArea/>`__
-will accept events from any drag source, otherwise the drag source must
-have at least one compatible key.
+If no keys are listed the :ref:`DropArea <sdk_qtquick_droparea>` will
+accept events from any drag source, otherwise the drag source must have
+at least one compatible key.
 
 **See also**
-`QtQuick::Drag::keys </sdk/apps/qml/QtQuick/Drag#keys-attached-prop>`__.
+:ref:`QtQuick::Drag::keys <sdk_qtquick_drag#keys-attached-prop>`.
 
 | 
 
 Signal Documentation
 --------------------
 
+.. _sdk_qtquick_droparea_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ dropped(`DragEvent </sdk/apps/qml/QtQuick/DragEvent/>`__        |
-| *drop*)                                                                  |
+| :ref:` <>`\ dropped(`DragEvent <sdk_qtquick_dragevent>` *drop*)           |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when a drop event occurs within the bounds of a
-`DropArea </sdk/apps/qml/QtQuick/DropArea/>`__.
+:ref:`DropArea <sdk_qtquick_droparea>`.
 
 The corresponding handler is ``onDropped``.
 
 | 
 
+.. _sdk_qtquick_droparea_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ entered(`DragEvent </sdk/apps/qml/QtQuick/DragEvent/>`__        |
-| *drag*)                                                                  |
+| :ref:` <>`\ entered(`DragEvent <sdk_qtquick_dragevent>` *drag*)           |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when a *drag* enters the bounds of a
-`DropArea </sdk/apps/qml/QtQuick/DropArea/>`__.
+:ref:`DropArea <sdk_qtquick_droparea>`.
 
 The corresponding handler is ``onEntered``.
 
 | 
+
+.. _sdk_qtquick_droparea_exited()-prop:
 
 +--------------------------------------------------------------------------+
 |        \ exited()                                                        |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when a drag exits the bounds of a
-`DropArea </sdk/apps/qml/QtQuick/DropArea/>`__.
+:ref:`DropArea <sdk_qtquick_droparea>`.
 
 The corresponding handler is ``onExited``.
 
 | 
 
+.. _sdk_qtquick_droparea_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ positionChanged(`DragEvent </sdk/apps/qml/QtQuick/DragEvent/>`_ |
-| _                                                                        |
-| *drag*)                                                                  |
+| :ref:` <>`\ positionChanged(`DragEvent <sdk_qtquick_dragevent>` *drag*)   |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when the position of a drag has changed.

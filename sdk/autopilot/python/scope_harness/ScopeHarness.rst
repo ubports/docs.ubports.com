@@ -1,5 +1,9 @@
+.. _sdk_scope_harness_scopeharness:
+scope_harness ScopeHarness
+==========================
+
  *class*
-``scope_harness.``\ ``ScopeHarness``\ ` <#scope_harness.ScopeHarness>`__
+``scope_harness.``\ ``ScopeHarness``\ ` <#scope_harness.ScopeHarness>`_ 
     This is the main class for scope harness testing. An instance of it
     needs to be created using one of the static class methods
     (new\_from\_\*) before any tests can be performed. The instance of
@@ -14,16 +18,16 @@
 
      *static* ``new_from_pre_existing_config``\ (*(str)arg1*) →
     ScopeHarness
-    :` <#scope_harness.ScopeHarness.new_from_pre_existing_config>`__
+    :` <#scope_harness.ScopeHarness.new_from_pre_existing_config>`_ 
         Creates ScopeHarness instance from scope runtime configuration
         files in given directory
 
      *static* ``new_from_scope_list``\ (*(Parameters)arg1*) →
-    ScopeHarness :` <#scope_harness.ScopeHarness.new_from_scope_list>`__
+    ScopeHarness :` <#scope_harness.ScopeHarness.new_from_scope_list>`_ 
         Creates ScopeHarness instance from a configuration provided by
         an instance of CustomRegistry passed to this factory method
 
      *static* ``new_from_system``\ () → ScopeHarness
-    :` <#scope_harness.ScopeHarness.new_from_system>`__
+    :` <#scope_harness.ScopeHarness.new_from_system>`_ 
         Creates ScopeHarness instance using default configuration from
         the system

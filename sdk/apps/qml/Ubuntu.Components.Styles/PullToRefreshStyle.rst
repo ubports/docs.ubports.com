@@ -1,31 +1,35 @@
+.. _sdk_ubuntu_components_styles_pulltorefreshstyle:
+Ubuntu.Components.Styles PullToRefreshStyle
+===========================================
+
 Style API for PullToRefresh component.
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import Ubuntu.Components.Styles 1.3  |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Item </sdk/apps/qml/QtQuick/Item/>` |
-|                                      | __                                   |
+| Inherits:                            | :ref:`Item <sdk_qtquick_item>`       |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`activationThreshold </sdk/apps/qml/Ubuntu.Components/Styles.PullToRefreshStyle#activationThreshold-prop>`__****
+-  `activationThreshold </sdk/apps/qml/Ubuntu.Components/Styles.PullToRefreshStyle/_activationThreshold-prop>`_ 
    : real
--  ****`defaultContent </sdk/apps/qml/Ubuntu.Components/Styles.PullToRefreshStyle#defaultContent-prop>`__****
+-  `defaultContent </sdk/apps/qml/Ubuntu.Components/Styles.PullToRefreshStyle/_defaultContent-prop>`_ 
    : Component
--  ****`releaseToRefresh </sdk/apps/qml/Ubuntu.Components/Styles.PullToRefreshStyle#releaseToRefresh-prop>`__****
+-  `releaseToRefresh </sdk/apps/qml/Ubuntu.Components/Styles.PullToRefreshStyle/_releaseToRefresh-prop>`_ 
    : bool
 
 Detailed Description
 --------------------
 
 The component defines the style API for the
-`PullToRefresh </sdk/apps/qml/Ubuntu.Components/PullToRefresh/>`__
-component.
+:ref:`PullToRefresh <sdk_ubuntu_components_pulltorefresh>` component.
 
 Property Documentation
 ----------------------
+
+.. _sdk_ubuntu_components_styles_pulltorefreshstyle_activationThreshold-prop:
 
 +--------------------------------------------------------------------------+
 |        \ activationThreshold : real                                      |
@@ -37,16 +41,20 @@ is the height of the component styled.
 
 | 
 
+.. _sdk_ubuntu_components_styles_pulltorefreshstyle_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ defaultContent : `Component </sdk/apps/qml/QtQml/Component/>`__ |
+| :ref:` <>`\ defaultContent : `Component <sdk_qtqml_component>`         |
 +--------------------------------------------------------------------------+
 
 The property holds the style provided default content component. The
 value is assigned to the
-`PullToRefresh::content </sdk/apps/qml/Ubuntu.Components/PullToRefresh#content-prop>`__
+:ref:`PullToRefresh::content <sdk_ubuntu_components_pulltorefresh#content-prop>`
 property.
 
 | 
+
+.. _sdk_ubuntu_components_styles_pulltorefreshstyle_releaseToRefresh-prop:
 
 +--------------------------------------------------------------------------+
 |        \ releaseToRefresh : bool                                         |

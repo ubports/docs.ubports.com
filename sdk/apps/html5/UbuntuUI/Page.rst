@@ -1,3 +1,7 @@
+.. _sdk_ubuntuui_page:
+UbuntuUI Page
+=============
+
 
 One of the navigation pattern that can be used within an Ubuntu App is
 the deep navigation. This pattern is implemented by the Pagestack. A

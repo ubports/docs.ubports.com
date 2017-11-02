@@ -1,5 +1,9 @@
+.. _sdk_accounts_servicetype:
+Accounts ServiceType
+====================
+
 Representation of an account service type.
-`More... </sdk/scopes/cpp/Accounts/ServiceType#details>`__
+:ref:`More... <sdk_accounts_servicetype#details>`
 
 ``#include <Accounts/ServiceType>``
 
@@ -8,7 +12,7 @@ Representation of an account service type.
 
          
 
-`ServiceType </sdk/scopes/cpp/Accounts/ServiceType#a27a10810bcc047da5031725f77b398eb>`__
+:ref:`ServiceType <sdk_accounts_servicetype#a27a10810bcc047da5031725f77b398eb>`
 ()
 
  
@@ -19,8 +23,8 @@ Representation of an account service type.
 
  
 
-`ServiceType </sdk/scopes/cpp/Accounts/ServiceType#aae690d056ba06a78378f8adc8f95cddd>`__
-(const `ServiceType </sdk/scopes/cpp/Accounts/ServiceType/>`__ &other)
+:ref:`ServiceType <sdk_accounts_servicetype#aae690d056ba06a78378f8adc8f95cddd>`
+(const :ref:`ServiceType <sdk_accounts_servicetype>` &other)
 
  
 
@@ -28,16 +32,15 @@ Representation of an account service type.
 
  
 
-        `ServiceType </sdk/scopes/cpp/Accounts/ServiceType/>`__ & 
+:ref:` <>` `ServiceType <sdk_accounts_servicetype>` & 
 
-**operator=** (const
-`ServiceType </sdk/scopes/cpp/Accounts/ServiceType/>`__ &other)
+**operator=** (const :ref:`ServiceType <sdk_accounts_servicetype>` &other)
 
  
 
 bool 
 
-`isValid </sdk/scopes/cpp/Accounts/ServiceType#aac1b70a2ed67ead038c4d3f5ac4d8a81>`__
+:ref:`isValid <sdk_accounts_servicetype#aac1b70a2ed67ead038c4d3f5ac4d8a81>`
 () const
 
  
@@ -48,8 +51,8 @@ bool 
 
         QString 
 
-`name </sdk/scopes/cpp/Accounts/ServiceType#a2b0a198f837184bf6fff555cee3ce770>`__
-() const
+:ref:`name <sdk_accounts_servicetype#a2b0a198f837184bf6fff555cee3ce770>` ()
+const
 
  
 
@@ -59,28 +62,28 @@ bool 
 
 QString 
 
-`displayName </sdk/scopes/cpp/Accounts/ServiceType#a9def71dea12661002bb3a63b3b91d08d>`__
+:ref:`displayName <sdk_accounts_servicetype#a9def71dea12661002bb3a63b3b91d08d>`
 () const
 
  
 
 QString 
 
-`trCatalog </sdk/scopes/cpp/Accounts/ServiceType#a6c73afd4753195ea4eee794c95a770dd>`__
+:ref:`trCatalog <sdk_accounts_servicetype#a6c73afd4753195ea4eee794c95a770dd>`
 () const
 
  
 
 QString 
 
-`iconName </sdk/scopes/cpp/Accounts/ServiceType#a038b22680aca535f9972908fe2f1f6a1>`__
+:ref:`iconName <sdk_accounts_servicetype#a038b22680aca535f9972908fe2f1f6a1>`
 () const
 
  
 
 bool 
 
-`hasTag </sdk/scopes/cpp/Accounts/ServiceType#ab9544628f8c8af163b13eb6b47a3aead>`__
+:ref:`hasTag <sdk_accounts_servicetype#ab9544628f8c8af163b13eb6b47a3aead>`
 (const QString &tag) const
 
  
@@ -91,8 +94,8 @@ bool 
 
 QSet< QString > 
 
-`tags </sdk/scopes/cpp/Accounts/ServiceType#a4bfac5a5814d94c97ae61695f09e95ee>`__
-() const
+:ref:`tags <sdk_accounts_servicetype#a4bfac5a5814d94c97ae61695f09e95ee>` ()
+const
 
  
 
@@ -102,7 +105,7 @@ QSet< QString > 
 
 const QDomDocument 
 
-`domDocument </sdk/scopes/cpp/Accounts/ServiceType#a305fe3a04c76c8069c3465621a7967cc>`__
+:ref:`domDocument <sdk_accounts_servicetype#a305fe3a04c76c8069c3465621a7967cc>`
 () const
 
  
@@ -113,9 +116,8 @@ const QDomDocument 
         bool 
 
 **operator==** (const
-`Accounts::ServiceType </sdk/scopes/cpp/Accounts/ServiceType/>`__ &s1,
-const `Accounts::ServiceType </sdk/scopes/cpp/Accounts/ServiceType/>`__
-&s2)
+:ref:`Accounts::ServiceType <sdk_accounts_servicetype>` &s1, const
+:ref:`Accounts::ServiceType <sdk_accounts_servicetype>` &s2)
 
  
 
@@ -124,10 +126,10 @@ Detailed Description
 
 Representation of an account service type.
 
-The `ServiceType </sdk/scopes/cpp/Accounts/ServiceType/>`__ object
-represents an account service type. It can be used to retrieve some
-basic properties of the service type (such as name and icon) and to get
-access to the contents of the XML file which defines it.
+The :ref:`ServiceType <sdk_accounts_servicetype>` object represents an
+account service type. It can be used to retrieve some basic properties
+of the service type (such as name and icon) and to get access to the
+contents of the XML file which defines it.
 
 Definition at line 49 of file service-type.h.
 
@@ -136,18 +138,17 @@ Constructor & Destructor Documentation
 
 +--------------+--------------+--------------+--------------+--------------+--------------+
 | `ServiceType | (            | const        | *other*      | )            |              |
-|  </sdk/scope |              | `ServiceType |              |              |              |
-| s/cpp/Accoun |              |  </sdk/scope |              |              |              |
-| ts/ServiceTy |              | s/cpp/Accoun |              |              |              |
-| pe/>`__      |              | ts/ServiceTy |              |              |              |
-|              |              | pe/>`__      |              |              |              |
+|  <sdk_accoun |              | :ref:`ServiceType |              |              |              |
+| ts_servicety |              |  <sdk_accoun |              |              |              |
+| pe>`_        |              | ts_servicety |              |              |              |
+|              |              | pe>`_        |              |              |              |
 |              |              | &            |              |              |              |
 +--------------+--------------+--------------+--------------+--------------+--------------+
 
 Copy constructor.
 
-Copying a `ServiceType </sdk/scopes/cpp/Accounts/ServiceType/>`__ object
-is very cheap, because the data is shared among copies.
+Copying a :ref:`ServiceType <sdk_accounts_servicetype>` object is very
+cheap, because the data is shared among copies.
 
 Definition at line 69 of file service-type.cpp.
 
@@ -192,7 +193,7 @@ Parameters
     +-------+-------------------+
 
 Returns
-    `Service </sdk/scopes/cpp/Accounts/Service/>`__ type has the tag?
+    :ref:`Service <sdk_accounts_service>` type has the tag?
 
 Definition at line 163 of file service-type.cpp.
 
@@ -211,11 +212,11 @@ Definition at line 151 of file service-type.cpp.
 +----------------+----------------+----------------+----------------+----------------+
 
 Check whether this object represents a
-`ServiceType </sdk/scopes/cpp/Accounts/ServiceType/>`__.
+:ref:`ServiceType <sdk_accounts_servicetype>`.
 
 Returns
-    true if the `ServiceType </sdk/scopes/cpp/Accounts/ServiceType/>`__
-    is a valid one.
+    true if the :ref:`ServiceType <sdk_accounts_servicetype>` is a valid
+    one.
 
 Definition at line 104 of file service-type.cpp.
 
@@ -241,7 +242,7 @@ Definition at line 173 of file service-type.cpp.
 Returns
     The name of the translation catalog, which can be used to translate
     the
-    `displayName() </sdk/scopes/cpp/Accounts/ServiceType#a9def71dea12661002bb3a63b3b91d08d>`__
+    :ref:`displayName() <sdk_accounts_servicetype#a9def71dea12661002bb3a63b3b91d08d>`
 
 Definition at line 143 of file service-type.cpp.
 

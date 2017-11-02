@@ -1,3 +1,7 @@
+.. _sdk_qtmultimedia_soundeffect:
+QtMultimedia SoundEffect
+========================
+
 The SoundEffect type provides a way to play sound effects in QML.
 
 +---------------------+---------------------------+
@@ -9,43 +13,39 @@ The SoundEffect type provides a way to play sound effects in QML.
 Properties
 ----------
 
--  ****`category </sdk/apps/qml/QtMultimedia/SoundEffect#category-prop>`__****
-   : string
--  ****`loops </sdk/apps/qml/QtMultimedia/SoundEffect#loops-prop>`__****
+-  :ref:`category <sdk_qtmultimedia_soundeffect_category-prop>` :
+   string
+-  :ref:`loops <sdk_qtmultimedia_soundeffect_loops-prop>` : int
+-  :ref:`loopsRemaining <sdk_qtmultimedia_soundeffect_loopsRemaining-prop>`
    : int
--  ****`loopsRemaining </sdk/apps/qml/QtMultimedia/SoundEffect#loopsRemaining-prop>`__****
-   : int
--  ****`muted </sdk/apps/qml/QtMultimedia/SoundEffect#muted-prop>`__****
-   : bool
--  ****`playing </sdk/apps/qml/QtMultimedia/SoundEffect#playing-prop>`__****
-   : bool
--  ****`source </sdk/apps/qml/QtMultimedia/SoundEffect#source-prop>`__****
-   : url
--  ****`status </sdk/apps/qml/QtMultimedia/SoundEffect#status-prop>`__****
-   : enumeration
--  ****`volume </sdk/apps/qml/QtMultimedia/SoundEffect#volume-prop>`__****
-   : qreal
+-  :ref:`muted <sdk_qtmultimedia_soundeffect_muted-prop>` : bool
+-  :ref:`playing <sdk_qtmultimedia_soundeffect_playing-prop>` :
+   bool
+-  :ref:`source <sdk_qtmultimedia_soundeffect_source-prop>` : url
+-  :ref:`status <sdk_qtmultimedia_soundeffect_status-prop>` :
+   enumeration
+-  :ref:`volume <sdk_qtmultimedia_soundeffect_volume-prop>` : qreal
 
 Signals
 -------
 
--  ****`categoryChanged </sdk/apps/qml/QtMultimedia/SoundEffect#categoryChanged-signal>`__****\ ()
--  ****`loadedChanged </sdk/apps/qml/QtMultimedia/SoundEffect#loadedChanged-signal>`__****\ ()
--  ****`loopCountChanged </sdk/apps/qml/QtMultimedia/SoundEffect#loopCountChanged-signal>`__****\ ()
--  ****`loopsRemainingChanged </sdk/apps/qml/QtMultimedia/SoundEffect#loopsRemainingChanged-signal>`__****\ ()
--  ****`mutedChanged </sdk/apps/qml/QtMultimedia/SoundEffect#mutedChanged-signal>`__****\ ()
--  ****`playingChanged </sdk/apps/qml/QtMultimedia/SoundEffect#playingChanged-signal>`__****\ ()
--  ****`sourceChanged </sdk/apps/qml/QtMultimedia/SoundEffect#sourceChanged-signal>`__****\ ()
--  ****`statusChanged </sdk/apps/qml/QtMultimedia/SoundEffect#statusChanged-signal>`__****\ ()
--  ****`volumeChanged </sdk/apps/qml/QtMultimedia/SoundEffect#volumeChanged-signal>`__****\ ()
+-  :ref:`categoryChanged <sdk_qtmultimedia_soundeffect_categoryChanged-signal>`\ ()
+-  :ref:`loadedChanged <sdk_qtmultimedia_soundeffect_loadedChanged-signal>`\ ()
+-  :ref:`loopCountChanged <sdk_qtmultimedia_soundeffect_loopCountChanged-signal>`\ ()
+-  :ref:`loopsRemainingChanged <sdk_qtmultimedia_soundeffect_loopsRemainingChanged-signal>`\ ()
+-  :ref:`mutedChanged <sdk_qtmultimedia_soundeffect_mutedChanged-signal>`\ ()
+-  :ref:`playingChanged <sdk_qtmultimedia_soundeffect_playingChanged-signal>`\ ()
+-  :ref:`sourceChanged <sdk_qtmultimedia_soundeffect_sourceChanged-signal>`\ ()
+-  :ref:`statusChanged <sdk_qtmultimedia_soundeffect_statusChanged-signal>`\ ()
+-  :ref:`volumeChanged <sdk_qtmultimedia_soundeffect_volumeChanged-signal>`\ ()
 
 Methods
 -------
 
 -  bool
-   ****`isLoaded </sdk/apps/qml/QtMultimedia/SoundEffect#isLoaded-method>`__****\ ()
--  ****`play </sdk/apps/qml/QtMultimedia/SoundEffect#play-method>`__****\ ()
--  ****`stop </sdk/apps/qml/QtMultimedia/SoundEffect#stop-method>`__****\ ()
+   **:ref:`isLoaded <sdk_qtmultimedia_soundeffect#isLoaded-method>`**\ ()
+-  :ref:`play <sdk_qtmultimedia_soundeffect_play-method>`\ ()
+-  :ref:`stop <sdk_qtmultimedia_soundeffect_stop-method>`\ ()
 
 Detailed Description
 --------------------
@@ -57,15 +57,15 @@ files) in a generally lower latency way, and is suitable for "feedback"
 type sounds in response to user actions (e.g. virtual keyboard sounds,
 positive or negative feedback for popup dialogs, or game sounds). If low
 latency is not important, consider using the
-`MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__ or Audio types
-instead, since they support a wider variety of media formats and are
-less resource intensive.
+:ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>` or Audio types instead,
+since they support a wider variety of media formats and are less
+resource intensive.
 
 Typically the sound effect should be reused, which allows all the
 parsing and preparation to be done ahead of time, and only triggered
 when necessary. This is easy to achieve with QML, since you can declare
 your
-`SoundEffect </sdk/apps/qml/QtMultimedia/qml-multimedia#soundeffect>`__
+`SoundEffect </sdk/apps/qml/QtMultimedia/qml-multimedia/#soundeffect>`_ 
 instance and refer to it elsewhere.
 
 The following example plays a WAV file on mouse click.
@@ -90,12 +90,14 @@ The following example plays a WAV file on mouse click.
     }
 
 Since
-`SoundEffect </sdk/apps/qml/QtMultimedia/qml-multimedia#soundeffect>`__
+`SoundEffect </sdk/apps/qml/QtMultimedia/qml-multimedia/#soundeffect>`_ 
 requires slightly more resources to achieve lower latency playback, the
 platform may limit the number of simultaneously playing sound effects.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtmultimedia_soundeffect_category-prop:
 
 +--------------------------------------------------------------------------+
 |        \ category : string                                               |
@@ -112,13 +114,15 @@ categories.
 
 | 
 
+.. _sdk_qtmultimedia_soundeffect_loops-prop:
+
 +--------------------------------------------------------------------------+
 |        \ loops : int                                                     |
 +--------------------------------------------------------------------------+
 
 This property holds the number of times the sound is played. A value of
 0 or 1 means the sound will be played only once; set to
-`SoundEffect </sdk/apps/qml/QtMultimedia/qml-multimedia#soundeffect>`__.Infinite
+`SoundEffect </sdk/apps/qml/QtMultimedia/qml-multimedia/#soundeffect>`_ .Infinite
 to enable infinite looping.
 
 The value can be changed while the sound effect is playing, in which
@@ -126,17 +130,21 @@ case it will update the remaining loops to the new value.
 
 | 
 
+.. _sdk_qtmultimedia_soundeffect_loopsRemaining-prop:
+
 +--------------------------------------------------------------------------+
 |        \ loopsRemaining : int                                            |
 +--------------------------------------------------------------------------+
 
 This property contains the number of loops remaining before the sound
 effect stops by itself, or
-`SoundEffect </sdk/apps/qml/QtMultimedia/qml-multimedia#soundeffect>`__.Infinite
+`SoundEffect </sdk/apps/qml/QtMultimedia/qml-multimedia/#soundeffect>`_ .Infinite
 if that's what has been set in
-`loops </sdk/apps/qml/QtMultimedia/SoundEffect#loops-prop>`__.
+:ref:`loops <sdk_qtmultimedia_soundeffect#loops-prop>`.
 
 | 
+
+.. _sdk_qtmultimedia_soundeffect_muted-prop:
 
 +--------------------------------------------------------------------------+
 |        \ muted : bool                                                    |
@@ -144,10 +152,11 @@ if that's what has been set in
 
 This property provides a way to control muting. A value of ``true`` will
 mute this effect. Otherwise, playback will occur with the currently
-specified
-`volume </sdk/apps/qml/QtMultimedia/SoundEffect#volume-prop>`__.
+specified :ref:`volume <sdk_qtmultimedia_soundeffect#volume-prop>`.
 
 | 
+
+.. _sdk_qtmultimedia_soundeffect_playing-prop:
 
 +--------------------------------------------------------------------------+
 |        \ playing : bool                                                  |
@@ -157,44 +166,55 @@ This property indicates whether the sound effect is playing or not.
 
 | 
 
+.. _sdk_qtmultimedia_soundeffect_source-prop:
+
 +--------------------------------------------------------------------------+
 |        \ source : url                                                    |
 +--------------------------------------------------------------------------+
 
 This property holds the url for the sound to play. For the
-`SoundEffect </sdk/apps/qml/QtMultimedia/qml-multimedia#soundeffect>`__
+`SoundEffect </sdk/apps/qml/QtMultimedia/qml-multimedia/#soundeffect>`_ 
 to attempt to load the source, the URL must exist and the application
 must have read permission in the specified directory. If the desired
 source is a local file the URL may be specified using either absolute or
 relative (to the file that declared the
-`SoundEffect </sdk/apps/qml/QtMultimedia/qml-multimedia#soundeffect>`__)
+`SoundEffect </sdk/apps/qml/QtMultimedia/qml-multimedia/#soundeffect>`_ )
 pathing.
 
 | 
+
+.. _sdk_qtmultimedia_soundeffect_status-prop:
 
 +--------------------------------------------------------------------------+
 |        \ status : enumeration                                            |
 +--------------------------------------------------------------------------+
 
 This property indicates the current status of the
-`SoundEffect </sdk/apps/qml/QtMultimedia/qml-multimedia#soundeffect>`__
+`SoundEffect </sdk/apps/qml/QtMultimedia/qml-multimedia/#soundeffect>`_ 
 as enumerated within
-`SoundEffect </sdk/apps/qml/QtMultimedia/qml-multimedia#soundeffect>`__.
+`SoundEffect </sdk/apps/qml/QtMultimedia/qml-multimedia/#soundeffect>`_ .
 Possible statuses are listed below.
 
-+-----------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
-| Value                                                                             | Description                                                                                                 |
-+===================================================================================+=============================================================================================================+
-| `SoundEffect </sdk/apps/qml/QtMultimedia/qml-multimedia#soundeffect>`__.Null      | No source has been set or the source is null.                                                               |
-+-----------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
-| `SoundEffect </sdk/apps/qml/QtMultimedia/qml-multimedia#soundeffect>`__.Loading   | The `SoundEffect </sdk/apps/qml/QtMultimedia/qml-multimedia#soundeffect>`__ is trying to load the source.   |
-+-----------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
-| `SoundEffect </sdk/apps/qml/QtMultimedia/qml-multimedia#soundeffect>`__.Ready     | The source is loaded and ready for play.                                                                    |
-+-----------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
-| `SoundEffect </sdk/apps/qml/QtMultimedia/qml-multimedia#soundeffect>`__.Error     | An error occurred during operation, such as failure of loading the source.                                  |
-+-----------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
+.. _sdk_qtmultimedia_soundeffect_Value                                                                               Description-prop:
+
++------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+| Value                                                                              | Description                                                                                                  |
++====================================================================================+==============================================================================================================+
+.. _sdk_qtmultimedia_soundeffect_`SoundEffect </sdk/apps/qml/QtMultimedia/qml-multimedia/#soundeffect>`_ .Loading    The `SoundEffect </sdk/apps/qml/QtMultimedia/qml-multimedia/#soundeffect>`_  is trying to load the source.-prop:
+| `SoundEffect </sdk/apps/qml/QtMultimedia/qml-multimedia/#soundeffect>`_ .Null      | No source has been set or the source is null.                                                                |
++------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+.. _sdk_qtmultimedia_soundeffect_`SoundEffect </sdk/apps/qml/QtMultimedia/qml-multimedia/#soundeffect>`_ .Ready      The source is loaded and ready for play.-prop:
+| `SoundEffect </sdk/apps/qml/QtMultimedia/qml-multimedia/#soundeffect>`_ .Loading   | The `SoundEffect </sdk/apps/qml/QtMultimedia/qml-multimedia/#soundeffect>`_  is trying to load the source.   |
++------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+.. _sdk_qtmultimedia_soundeffect_`SoundEffect </sdk/apps/qml/QtMultimedia/qml-multimedia/#soundeffect>`_ .Error      An error occurred during operation, such as failure of loading the source.-prop:
+| `SoundEffect </sdk/apps/qml/QtMultimedia/qml-multimedia/#soundeffect>`_ .Ready     | The source is loaded and ready for play.                                                                     |
++------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+| `SoundEffect </sdk/apps/qml/QtMultimedia/qml-multimedia/#soundeffect>`_ .Error     | An error occurred during operation, such as failure of loading the source.                                   |
++------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
 
 | 
+
+.. _sdk_qtmultimedia_soundeffect_volume-prop:
 
 +--------------------------------------------------------------------------+
 |        \ volume : qreal                                                  |
@@ -208,6 +228,8 @@ This property holds the volume of the sound effect playback, from 0.0
 Signal Documentation
 --------------------
 
+.. _sdk_qtmultimedia_soundeffect_categoryChanged()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ categoryChanged()                                               |
 +--------------------------------------------------------------------------+
@@ -218,6 +240,8 @@ changed.
 The corresponding handler is ``onCategoryChanged``.
 
 | 
+
+.. _sdk_qtmultimedia_soundeffect_loadedChanged()-prop:
 
 +--------------------------------------------------------------------------+
 |        \ loadedChanged()                                                 |
@@ -230,6 +254,8 @@ The corresponding handler is ``onLoadedChanged``.
 
 | 
 
+.. _sdk_qtmultimedia_soundeffect_loopCountChanged()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ loopCountChanged()                                              |
 +--------------------------------------------------------------------------+
@@ -240,6 +266,8 @@ loops has changed.
 The corresponding handler is ``onLoopCountChanged``.
 
 | 
+
+.. _sdk_qtmultimedia_soundeffect_loopsRemainingChanged()-prop:
 
 +--------------------------------------------------------------------------+
 |        \ loopsRemainingChanged()                                         |
@@ -252,6 +280,8 @@ The corresponding handler is ``onLoopsRemainingChanged``.
 
 | 
 
+.. _sdk_qtmultimedia_soundeffect_mutedChanged()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ mutedChanged()                                                  |
 +--------------------------------------------------------------------------+
@@ -261,6 +291,8 @@ The ``mutedChanged`` signal is emitted when the mute state has changed.
 The corresponding handler is ``onMutedChanged``.
 
 | 
+
+.. _sdk_qtmultimedia_soundeffect_playingChanged()-prop:
 
 +--------------------------------------------------------------------------+
 |        \ playingChanged()                                                |
@@ -273,6 +305,8 @@ The corresponding handler is ``onPlayingChanged``.
 
 | 
 
+.. _sdk_qtmultimedia_soundeffect_sourceChanged()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ sourceChanged()                                                 |
 +--------------------------------------------------------------------------+
@@ -284,6 +318,8 @@ The corresponding handler is ``onSourceChanged``.
 
 | 
 
+.. _sdk_qtmultimedia_soundeffect_statusChanged()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ statusChanged()                                                 |
 +--------------------------------------------------------------------------+
@@ -294,6 +330,8 @@ changed.
 The corresponding handler is ``onStatusChanged``.
 
 | 
+
+.. _sdk_qtmultimedia_soundeffect_volumeChanged-method:
 
 +--------------------------------------------------------------------------+
 |        \ volumeChanged()                                                 |
@@ -308,14 +346,18 @@ The corresponding handler is ``onVolumeChanged``.
 Method Documentation
 --------------------
 
+.. _sdk_qtmultimedia_soundeffect_bool isLoaded-method:
+
 +--------------------------------------------------------------------------+
 |        \ bool isLoaded()                                                 |
 +--------------------------------------------------------------------------+
 
 Returns whether the sound effect has finished loading the
-`source </sdk/apps/qml/QtMultimedia/SoundEffect#source-prop>`__.
+:ref:`source <sdk_qtmultimedia_soundeffect#source-prop>`.
 
 | 
+
+.. _sdk_qtmultimedia_soundeffect_play-method:
 
 +--------------------------------------------------------------------------+
 |        \ play()                                                          |
@@ -325,7 +367,7 @@ Start playback of the sound effect, looping the effect for the number of
 times as specified in the loops property.
 
 This is the default method for
-`SoundEffect </sdk/apps/qml/QtMultimedia/qml-multimedia#soundeffect>`__.
+`SoundEffect </sdk/apps/qml/QtMultimedia/qml-multimedia/#soundeffect>`_ .
 
 .. code:: qml
 
@@ -340,6 +382,8 @@ This is the default method for
     }
 
 | 
+
+.. _sdk_qtmultimedia_soundeffect_stop-method:
 
 +--------------------------------------------------------------------------+
 |        \ stop()                                                          |

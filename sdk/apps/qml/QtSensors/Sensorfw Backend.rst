@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_sensorfw_backend:
+QtSensors Sensorfw Backend
+==========================
+
 
 
 The Sensorfw sensor backend requires the Sensorfw and sensor daemon.

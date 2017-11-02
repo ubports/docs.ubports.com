@@ -1,40 +1,37 @@
+.. _sdk_qtquick_image:
+QtQuick Image
+=============
+
 Displays an image
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtQuick 2.4                   |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Item </sdk/apps/qml/QtQuick/Item/>` |
-|                                      | __                                   |
+| Inherits:                            | :ref:`Item <sdk_qtquick_item>`       |
 +--------------------------------------+--------------------------------------+
-| Inherited By:                        | `AnimatedImage </sdk/apps/qml/QtQuic |
-|                                      | k/AnimatedImage/>`__.                |
+| Inherited By:                        | :ref:`AnimatedImage <sdk_qtquick_animated |
+|                                      | image>`_ .                           |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`asynchronous </sdk/apps/qml/QtQuick/Image#asynchronous-prop>`__****
-   : bool
--  ****`cache </sdk/apps/qml/QtQuick/Image#cache-prop>`__**** : bool
--  ****`fillMode </sdk/apps/qml/QtQuick/Image#fillMode-prop>`__**** :
-   enumeration
--  ****`horizontalAlignment </sdk/apps/qml/QtQuick/Image#horizontalAlignment-prop>`__****
+-  :ref:`asynchronous <sdk_qtquick_image_asynchronous-prop>` : bool
+-  :ref:`cache <sdk_qtquick_image_cache-prop>` : bool
+-  :ref:`fillMode <sdk_qtquick_image_fillMode-prop>` : enumeration
+-  :ref:`horizontalAlignment <sdk_qtquick_image_horizontalAlignment-prop>`
    : enumeration
--  ****`mipmap </sdk/apps/qml/QtQuick/Image#mipmap-prop>`__**** : bool
--  ****`mirror </sdk/apps/qml/QtQuick/Image#mirror-prop>`__**** : bool
--  ****`paintedHeight </sdk/apps/qml/QtQuick/Image#paintedHeight-prop>`__****
-   : real
--  ****`paintedWidth </sdk/apps/qml/QtQuick/Image#paintedWidth-prop>`__****
-   : real
--  ****`progress </sdk/apps/qml/QtQuick/Image#progress-prop>`__**** :
+-  :ref:`mipmap <sdk_qtquick_image_mipmap-prop>` : bool
+-  :ref:`mirror <sdk_qtquick_image_mirror-prop>` : bool
+-  :ref:`paintedHeight <sdk_qtquick_image_paintedHeight-prop>` :
    real
--  ****`smooth </sdk/apps/qml/QtQuick/Image#smooth-prop>`__**** : bool
--  ****`source </sdk/apps/qml/QtQuick/Image#source-prop>`__**** : url
--  ****`sourceSize </sdk/apps/qml/QtQuick/Image#sourceSize-prop>`__****
-   : QSize
--  ****`status </sdk/apps/qml/QtQuick/Image#status-prop>`__**** :
-   enumeration
--  ****`verticalAlignment </sdk/apps/qml/QtQuick/Image#verticalAlignment-prop>`__****
+-  :ref:`paintedWidth <sdk_qtquick_image_paintedWidth-prop>` : real
+-  :ref:`progress <sdk_qtquick_image_progress-prop>` : real
+-  :ref:`smooth <sdk_qtquick_image_smooth-prop>` : bool
+-  :ref:`source <sdk_qtquick_image_source-prop>` : url
+-  :ref:`sourceSize <sdk_qtquick_image_sourceSize-prop>` : QSize
+-  :ref:`status <sdk_qtquick_image_status-prop>` : enumeration
+-  :ref:`verticalAlignment <sdk_qtquick_image_verticalAlignment-prop>`
    : enumeration
 
 Detailed Description
@@ -43,20 +40,20 @@ Detailed Description
 The Image type displays an image.
 
 The source of the image is specified as a URL using the
-`source </sdk/apps/qml/QtQuick/Image#source-prop>`__ property. Images
-can be supplied in any of the standard image formats supported by Qt,
-including bitmap formats such as PNG and JPEG, and vector graphics
-formats such as SVG. If you need to display animated images, use
-`AnimatedSprite </sdk/apps/qml/QtQuick/qtquick-effects-sprites#animatedsprite>`__
-or `AnimatedImage </sdk/apps/qml/QtQuick/AnimatedImage/>`__.
+:ref:`source <sdk_qtquick_image#source-prop>` property. Images can be
+supplied in any of the standard image formats supported by Qt, including
+bitmap formats such as PNG and JPEG, and vector graphics formats such as
+SVG. If you need to display animated images, use
+`AnimatedSprite </sdk/apps/qml/QtQuick/qtquick-effects-sprites/#animatedsprite>`_ 
+or :ref:`AnimatedImage <sdk_qtquick_animatedimage>`.
 
-If the `width </sdk/apps/qml/QtQuick/Item#width-prop>`__ and
-`height </sdk/apps/qml/QtQuick/Item#height-prop>`__ properties are not
-specified, the Image automatically uses the size of the loaded image. By
-default, specifying the width and height of the item causes the image to
-be scaled to that size. This behavior can be changed by setting the
-`fillMode </sdk/apps/qml/QtQuick/Image#fillMode-prop>`__ property,
-allowing the image to be stretched and tiled instead.
+If the :ref:`width <sdk_qtquick_item#width-prop>` and
+:ref:`height <sdk_qtquick_item#height-prop>` properties are not specified,
+the Image automatically uses the size of the loaded image. By default,
+specifying the width and height of the item causes the image to be
+scaled to that size. This behavior can be changed by setting the
+:ref:`fillMode <sdk_qtquick_image#fillMode-prop>` property, allowing the
+image to be stretched and tiled instead.
 
 Example Usage
 -------------
@@ -82,30 +79,31 @@ By default, locally available images are loaded immediately, and the
 user interface is blocked until loading is complete. If a large image is
 to be loaded, it may be preferable to load the image in a low priority
 thread, by enabling the
-`asynchronous </sdk/apps/qml/QtQuick/Image#asynchronous-prop>`__
-property.
+:ref:`asynchronous <sdk_qtquick_image#asynchronous-prop>` property.
 
 If the image is obtained from a network rather than a local resource, it
 is automatically loaded asynchronously, and the
-`progress </sdk/apps/qml/QtQuick/Image#progress-prop>`__ and
-`status </sdk/apps/qml/QtQuick/Image#status-prop>`__ properties are
-updated as appropriate.
+:ref:`progress <sdk_qtquick_image#progress-prop>` and
+:ref:`status <sdk_qtquick_image#status-prop>` properties are updated as
+appropriate.
 
 Images are cached and shared internally, so if several Image items have
-the same `source </sdk/apps/qml/QtQuick/Image#source-prop>`__, only one
-copy of the image will be loaded.
+the same :ref:`source <sdk_qtquick_image#source-prop>`, only one copy of
+the image will be loaded.
 
 **Note**: Images are often the greatest user of memory in QML user
 interfaces. It is recommended that images which do not form part of the
 user interface have their size bounded via the
-`sourceSize </sdk/apps/qml/QtQuick/Image#sourceSize-prop>`__ property.
-This is especially important for content that is loaded from external
-sources or provided by the user.
+:ref:`sourceSize <sdk_qtquick_image#sourceSize-prop>` property. This is
+especially important for content that is loaded from external sources or
+provided by the user.
 
 **See also** Qt Quick Examples - Image Elements and QQuickImageProvider.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_image_asynchronous-prop:
 
 +--------------------------------------------------------------------------+
 |        \ asynchronous : bool                                             |
@@ -123,6 +121,8 @@ loaded asynchronously.
 
 | 
 
+.. _sdk_qtquick_image_cache-prop:
+
 +--------------------------------------------------------------------------+
 |        \ cache : bool                                                    |
 +--------------------------------------------------------------------------+
@@ -133,6 +133,8 @@ make sure that they aren't cached at the expense of small 'ui element'
 images.
 
 | 
+
+.. _sdk_qtquick_image_fillMode-prop:
 
 +--------------------------------------------------------------------------+
 |        \ fillMode : enumeration                                          |
@@ -153,6 +155,8 @@ different size than the item.
    horizontally
 -  Image.Pad - the image is not transformed
 
+.. _sdk_qtquick_image_image1                              Stretch (default)-prop:
+
 +--------------------------------------+--------------------------------------+
 | |image1|                             | Stretch (default)                    |
 |                                      | .. code:: qml                        |
@@ -160,6 +164,7 @@ different size than the item.
 |                                      |     Image {                          |
 |                                      |         width: 130; height: 100      |
 |                                      |         source: "qtlogo.png"         |
+.. _sdk_qtquick_image_image2                              PreserveAspectFit-prop:
 |                                      |     }                                |
 +--------------------------------------+--------------------------------------+
 | |image2|                             | PreserveAspectFit                    |
@@ -170,6 +175,7 @@ different size than the item.
 |                                      |         fillMode: Image.PreserveAspe |
 |                                      | ctFit                                |
 |                                      |         source: "qtlogo.png"         |
+.. _sdk_qtquick_image_image3                              PreserveAspectCrop-prop:
 |                                      |     }                                |
 +--------------------------------------+--------------------------------------+
 | |image3|                             | PreserveAspectCrop                   |
@@ -181,6 +187,7 @@ different size than the item.
 |                                      | ctCrop                               |
 |                                      |         source: "qtlogo.png"         |
 |                                      |         clip: true                   |
+.. _sdk_qtquick_image_image4                              Tile-prop:
 |                                      |     }                                |
 +--------------------------------------+--------------------------------------+
 | |image4|                             | Tile                                 |
@@ -194,6 +201,7 @@ different size than the item.
 |                                      |         verticalAlignment: Image.Ali |
 |                                      | gnTop                                |
 |                                      |         source: "qtlogo.png"         |
+.. _sdk_qtquick_image_image5                              TileVertically-prop:
 |                                      |     }                                |
 +--------------------------------------+--------------------------------------+
 | |image5|                             | TileVertically                       |
@@ -206,6 +214,7 @@ different size than the item.
 |                                      |         verticalAlignment: Image.Ali |
 |                                      | gnTop                                |
 |                                      |         source: "qtlogo.png"         |
+.. _sdk_qtquick_image_image6                              TileHorizontally-prop:
 |                                      |     }                                |
 +--------------------------------------+--------------------------------------+
 | |image6|                             | TileHorizontally                     |
@@ -226,9 +235,11 @@ might paint outside its bounding rectangle even if the fillMode is set
 to ``PreserveAspectCrop``.
 
 **See also** `Qt Quick Examples - Image
-Elements </sdk/apps/qml/QtQuick/imageelements/>`__.
+Elements </sdk/apps/qml/QtQuick/imageelements/>`_ .
 
 | 
+
+.. _sdk_qtquick_image_horizontalAlignment-prop:
 
 +--------------------------------------------------------------------------+
 |        \ horizontalAlignment : enumeration                               |
@@ -243,6 +254,8 @@ The valid values for ``horizontalAlignment`` are ``Image.AlignLeft``,
 ``Image.AlignVCenter``.
 
 | 
+
+.. _sdk_qtquick_image_mipmap-prop:
 
 +--------------------------------------------------------------------------+
 |        \ mipmap : bool                                                   |
@@ -259,9 +272,11 @@ By default, this property is set to false.
 
 This QML property was introduced in Qt 5.3.
 
-**See also** `smooth </sdk/apps/qml/QtQuick/Image#smooth-prop>`__.
+**See also** :ref:`smooth <sdk_qtquick_image#smooth-prop>`.
 
 | 
+
+.. _sdk_qtquick_image_mirror-prop:
 
 +--------------------------------------------------------------------------+
 |        \ mirror : bool                                                   |
@@ -273,6 +288,8 @@ This property holds whether the image should be horizontally inverted
 The default value is false.
 
 | 
+
+.. _sdk_qtquick_image_paintedHeight-prop:
 
 +--------------------------------------------------------------------------+
 |        \ paintedHeight : real                                            |
@@ -286,6 +303,8 @@ smaller or larger than ``width`` and ``height`` of the Image item.
 
 | 
 
+.. _sdk_qtquick_image_paintedWidth-prop:
+
 +--------------------------------------------------------------------------+
 |        \ paintedWidth : real                                             |
 +--------------------------------------------------------------------------+
@@ -298,6 +317,8 @@ smaller or larger than ``width`` and ``height`` of the Image item.
 
 | 
 
+.. _sdk_qtquick_image_progress-prop:
+
 +--------------------------------------------------------------------------+
 |        \ progress : real                                                 |
 +--------------------------------------------------------------------------+
@@ -305,9 +326,11 @@ smaller or larger than ``width`` and ``height`` of the Image item.
 This property holds the progress of image loading, from 0.0 (nothing
 loaded) to 1.0 (finished).
 
-**See also** `status </sdk/apps/qml/QtQuick/Image#status-prop>`__.
+**See also** :ref:`status <sdk_qtquick_image#status-prop>`.
 
 | 
+
+.. _sdk_qtquick_image_smooth-prop:
 
 +--------------------------------------------------------------------------+
 |        \ smooth : bool                                                   |
@@ -320,9 +343,11 @@ size, this property has no visual or performance effect.
 
 By default, this property is set to true.
 
-**See also** `mipmap </sdk/apps/qml/QtQuick/Image#mipmap-prop>`__.
+**See also** :ref:`mipmap <sdk_qtquick_image#mipmap-prop>`.
 
 | 
+
+.. _sdk_qtquick_image_source-prop:
 
 +--------------------------------------------------------------------------+
 |        \ source : url                                                    |
@@ -337,20 +362,22 @@ The URL may be absolute, or relative to the URL of the component.
 
 | 
 
+.. _sdk_qtquick_image_sourceSize-prop:
+
 +--------------------------------------------------------------------------+
 |        \ sourceSize : QSize                                              |
 +--------------------------------------------------------------------------+
 
 This property holds the actual width and height of the loaded image.
 
-Unlike the `width </sdk/apps/qml/QtQuick/Item#width-prop>`__ and
-`height </sdk/apps/qml/QtQuick/Item#height-prop>`__ properties, which
-scale the painting of the image, this property sets the actual number of
-pixels stored for the loaded image so that large images do not use more
-memory than necessary. For example, this ensures the image in memory is
-no larger than 1024x1024 pixels, regardless of the Image's
-`width </sdk/apps/qml/QtQuick/Item#width-prop>`__ and
-`height </sdk/apps/qml/QtQuick/Item#height-prop>`__ values:
+Unlike the :ref:`width <sdk_qtquick_item#width-prop>` and
+:ref:`height <sdk_qtquick_item#height-prop>` properties, which scale the
+painting of the image, this property sets the actual number of pixels
+stored for the loaded image so that large images do not use more memory
+than necessary. For example, this ensures the image in memory is no
+larger than 1024x1024 pixels, regardless of the Image's
+:ref:`width <sdk_qtquick_item#width-prop>` and
+:ref:`height <sdk_qtquick_item#height-prop>` values:
 
 .. code:: cpp
 
@@ -368,17 +395,15 @@ no larger than 1024x1024 pixels, regardless of the Image's
 If the image's actual size is larger than the sourceSize, the image is
 scaled down. If only one dimension of the size is set to greater than 0,
 the other dimension is set in proportion to preserve the source image's
-aspect ratio. (The
-`fillMode </sdk/apps/qml/QtQuick/Image#fillMode-prop>`__ is independent
-of this.)
+aspect ratio. (The :ref:`fillMode <sdk_qtquick_image#fillMode-prop>` is
+independent of this.)
 
 If both the sourceSize.width and sourceSize.height are set the image
 will be scaled down to fit within the specified size, maintaining the
 image's aspect ratio. The actual size of the image after scaling is
 available via
-`Item::implicitWidth </sdk/apps/qml/QtQuick/Item#implicitWidth-prop>`__
-and
-`Item::implicitHeight </sdk/apps/qml/QtQuick/Item#implicitHeight-prop>`__.
+:ref:`Item::implicitWidth <sdk_qtquick_item#implicitWidth-prop>` and
+:ref:`Item::implicitHeight <sdk_qtquick_item#implicitHeight-prop>`.
 
 If the source is an intrinsically scalable image (eg. SVG), this
 property determines the size of the loaded image regardless of intrinsic
@@ -397,6 +422,8 @@ be reloaded, potentially even from the network, if it is not in the disk
 cache.*
 
 | 
+
+.. _sdk_qtquick_image_status-prop:
 
 +--------------------------------------------------------------------------+
 |        \ status : enumeration                                            |
@@ -433,9 +460,11 @@ some way. For example, you could:
 
        Text { text: image.status == Image.Ready ? 'Loaded' : 'Not loaded' }
 
-**See also** `progress </sdk/apps/qml/QtQuick/Image#progress-prop>`__.
+**See also** :ref:`progress <sdk_qtquick_image#progress-prop>`.
 
 | 
+
+.. _sdk_qtquick_image_verticalAlignment-prop:
 
 +--------------------------------------------------------------------------+
 |        \ verticalAlignment : enumeration                                 |
@@ -451,11 +480,11 @@ The valid values for ``horizontalAlignment`` are ``Image.AlignLeft``,
 
 | 
 
-.. |image0| image:: /media/sdk/apps/qml/QtQuick/Image/images/declarative-qtlogo.png
-.. |image1| image:: /media/sdk/apps/qml/QtQuick/Image/images/declarative-qtlogo-stretch.png
-.. |image2| image:: /media/sdk/apps/qml/QtQuick/Image/images/declarative-qtlogo-preserveaspectfit.png
-.. |image3| image:: /media/sdk/apps/qml/QtQuick/Image/images/declarative-qtlogo-preserveaspectcrop.png
-.. |image4| image:: /media/sdk/apps/qml/QtQuick/Image/images/declarative-qtlogo-tile.png
-.. |image5| image:: /media/sdk/apps/qml/QtQuick/Image/images/declarative-qtlogo-tilevertically.png
-.. |image6| image:: /media/sdk/apps/qml/QtQuick/Image/images/declarative-qtlogo-tilehorizontally.png
+.. |image0| image:: /mediasdk_qtquick_imageimages/declarative-qtlogo.png
+.. |image1| image:: /mediasdk_qtquick_imageimages/declarative-qtlogo-stretch.png
+.. |image2| image:: /mediasdk_qtquick_imageimages/declarative-qtlogo-preserveaspectfit.png
+.. |image3| image:: /mediasdk_qtquick_imageimages/declarative-qtlogo-preserveaspectcrop.png
+.. |image4| image:: /mediasdk_qtquick_imageimages/declarative-qtlogo-tile.png
+.. |image5| image:: /mediasdk_qtquick_imageimages/declarative-qtlogo-tilevertically.png
+.. |image6| image:: /mediasdk_qtquick_imageimages/declarative-qtlogo-tilehorizontally.png
 

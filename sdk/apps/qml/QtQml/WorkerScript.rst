@@ -1,3 +1,7 @@
+.. _sdk_qtqml_workerscript:
+QtQml WorkerScript
+==================
+
 Enables the use of threads in a Qt Quick application
 
 +---------------------+--------------------+
@@ -7,32 +11,30 @@ Enables the use of threads in a Qt Quick application
 Properties
 ----------
 
--  ****`source </sdk/apps/qml/QtQml/WorkerScript#source-prop>`__**** :
-   url
+-  :ref:`source <sdk_qtqml_workerscript_source-prop>` : url
 
 Signals
 -------
 
--  ****`message </sdk/apps/qml/QtQml/WorkerScript#message-signal>`__****\ (jsobject
+-  :ref:`message <sdk_qtqml_workerscript_message-signal>`\ (jsobject
    *msg*)
 
 Methods
 -------
 
--  ****`sendMessage </sdk/apps/qml/QtQml/WorkerScript#sendMessage-method>`__****\ (jsobject
+-  :ref:`sendMessage <sdk_qtqml_workerscript_sendMessage-method>`\ (jsobject
    *message*)
 
 Detailed Description
 --------------------
 
-Use `WorkerScript </sdk/apps/qml/QtQml/WorkerScript/>`__ to run
-operations in a new thread. This is useful for running operations in the
-background so that the main GUI thread is not blocked.
+Use :ref:`WorkerScript <sdk_qtqml_workerscript>` to run operations in a new
+thread. This is useful for running operations in the background so that
+the main GUI thread is not blocked.
 
 Messages can be passed between the new thread and the parent thread
-using
-`sendMessage() </sdk/apps/qml/QtQml/WorkerScript#sendMessage-method>`__
-and the ``onMessage()`` handler.
+using :ref:`sendMessage() <sdk_qtqml_workerscript#sendMessage-method>` and
+the ``onMessage()`` handler.
 
 An example:
 
@@ -85,17 +87,19 @@ QQmlContext.
 
 Additionally, there are restrictions on the types of values that can be
 passed to and from the worker script. See the
-`sendMessage() </sdk/apps/qml/QtQml/WorkerScript#sendMessage-method>`__
+:ref:`sendMessage() <sdk_qtqml_workerscript#sendMessage-method>`
 documentation for details.
 
 Worker script can not use
-`.import </sdk/apps/qml/QtQml/qtqml-javascript-imports/>`__ syntax.
+`.import </sdk/apps/qml/QtQml/qtqml-javascript-imports/>`_  syntax.
 
 **See also** Qt Quick Examples - Threading and Threaded ListModel
 Example.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtqml_workerscript_source-prop:
 
 +--------------------------------------------------------------------------+
 |        \ source : url                                                    |
@@ -109,13 +113,15 @@ This holds the url of the JavaScript file that implements the
 Signal Documentation
 --------------------
 
+.. _sdk_qtqml_workerscript_message(jsobject *msg*)-prop:
+
 +--------------------------------------------------------------------------+
 |        \ message(jsobject *msg*)                                         |
 +--------------------------------------------------------------------------+
 
 This signal is emitted when a message *msg* is received from a worker
 script in another thread through a call to
-`sendMessage() </sdk/apps/qml/QtQml/WorkerScript#sendMessage-method>`__.
+:ref:`sendMessage() <sdk_qtqml_workerscript#sendMessage-method>`.
 
 The corresponding handler is ``onMessage``.
 
@@ -123,6 +129,8 @@ The corresponding handler is ``onMessage``.
 
 Method Documentation
 --------------------
+
+.. _sdk_qtqml_workerscript_sendMessage-method:
 
 +--------------------------------------------------------------------------+
 |        \ sendMessage(jsobject *message*)                                 |
@@ -136,12 +144,12 @@ The ``message`` object may only contain values of the following types:
 
 -  boolean, number, string
 -  JavaScript objects and arrays
--  `ListModel </sdk/apps/qml/QtQml/ListModel/>`__ objects (any other
-   type of QObject\* is not allowed)
+-  :ref:`ListModel <sdk_qtqml_listmodel>` objects (any other type of
+   QObject\* is not allowed)
 
 All objects and arrays are copied to the ``message``. With the exception
-of `ListModel </sdk/apps/qml/QtQml/ListModel/>`__ objects, any
-modifications by the other thread to an object passed in ``message``
-will not be reflected in the original object.
+of :ref:`ListModel <sdk_qtqml_listmodel>` objects, any modifications by the
+other thread to an object passed in ``message`` will not be reflected in
+the original object.
 
 | 

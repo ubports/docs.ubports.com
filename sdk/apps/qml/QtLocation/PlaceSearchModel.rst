@@ -1,3 +1,7 @@
+.. _sdk_qtlocation_placesearchmodel:
+QtLocation PlaceSearchModel
+===========================
+
 Provides access to place search results.
 
 +---------------------+-------------------------+
@@ -9,98 +13,94 @@ Provides access to place search results.
 Properties
 ----------
 
--  ****`categories </sdk/apps/qml/QtLocation/PlaceSearchModel#categories-prop>`__****
+-  :ref:`categories <sdk_qtlocation_placesearchmodel_categories-prop>`
    : list<Category>
--  ****`count </sdk/apps/qml/QtLocation/PlaceSearchModel#count-prop>`__****
-   : int
--  ****`favoritesMatchParameters </sdk/apps/qml/QtLocation/PlaceSearchModel#favoritesMatchParameters-prop>`__****
+-  :ref:`count <sdk_qtlocation_placesearchmodel_count-prop>` : int
+-  :ref:`favoritesMatchParameters <sdk_qtlocation_placesearchmodel_favoritesMatchParameters-prop>`
    : VariantMap
--  ****`favoritesPlugin </sdk/apps/qml/QtLocation/PlaceSearchModel#favoritesPlugin-prop>`__****
+-  :ref:`favoritesPlugin <sdk_qtlocation_placesearchmodel_favoritesPlugin-prop>`
    : Plugin
--  ****`limit </sdk/apps/qml/QtLocation/PlaceSearchModel#limit-prop>`__****
-   : int
--  ****`nextPagesAvailable </sdk/apps/qml/QtLocation/PlaceSearchModel#nextPagesAvailable-prop>`__****
+-  :ref:`limit <sdk_qtlocation_placesearchmodel_limit-prop>` : int
+-  :ref:`nextPagesAvailable <sdk_qtlocation_placesearchmodel_nextPagesAvailable-prop>`
    : bool
--  ****`plugin </sdk/apps/qml/QtLocation/PlaceSearchModel#plugin-prop>`__****
-   : Plugin
--  ****`previousPagesAvailable </sdk/apps/qml/QtLocation/PlaceSearchModel#previousPagesAvailable-prop>`__****
+-  :ref:`plugin <sdk_qtlocation_placesearchmodel_plugin-prop>` :
+   Plugin
+-  :ref:`previousPagesAvailable <sdk_qtlocation_placesearchmodel_previousPagesAvailable-prop>`
    : bool
--  ****`recommendationId </sdk/apps/qml/QtLocation/PlaceSearchModel#recommendationId-prop>`__****
+-  :ref:`recommendationId <sdk_qtlocation_placesearchmodel_recommendationId-prop>`
    : string
--  ****`relevanceHint </sdk/apps/qml/QtLocation/PlaceSearchModel#relevanceHint-prop>`__****
+-  :ref:`relevanceHint <sdk_qtlocation_placesearchmodel_relevanceHint-prop>`
    : enumeration
--  ****`searchArea </sdk/apps/qml/QtLocation/PlaceSearchModel#searchArea-prop>`__****
+-  :ref:`searchArea <sdk_qtlocation_placesearchmodel_searchArea-prop>`
    : variant
--  ****`searchTerm </sdk/apps/qml/QtLocation/PlaceSearchModel#searchTerm-prop>`__****
+-  :ref:`searchTerm <sdk_qtlocation_placesearchmodel_searchTerm-prop>`
    : string
--  ****`status </sdk/apps/qml/QtLocation/PlaceSearchModel#status-prop>`__****
-   : enum
--  ****`visibilityScope </sdk/apps/qml/QtLocation/PlaceSearchModel#visibilityScope-prop>`__****
+-  :ref:`status <sdk_qtlocation_placesearchmodel_status-prop>` :
+   enum
+-  :ref:`visibilityScope <sdk_qtlocation_placesearchmodel_visibilityScope-prop>`
    : enum
 
 Methods
 -------
 
--  ****`cancel </sdk/apps/qml/QtLocation/PlaceSearchModel#cancel-method>`__****\ ()
--  ****`data </sdk/apps/qml/QtLocation/PlaceSearchModel#data-method>`__****\ (int
+-  :ref:`cancel <sdk_qtlocation_placesearchmodel_cancel-method>`\ ()
+-  :ref:`data <sdk_qtlocation_placesearchmodel_data-method>`\ (int
    *index*, string *role*)
 -  string
-   ****`errorString </sdk/apps/qml/QtLocation/PlaceSearchModel#errorString-method>`__****\ ()
--  ****`nextPage </sdk/apps/qml/QtLocation/PlaceSearchModel#nextPage-method>`__****\ ()
--  ****`previousPage </sdk/apps/qml/QtLocation/PlaceSearchModel#previousPage-method>`__****\ ()
--  ****`reset </sdk/apps/qml/QtLocation/PlaceSearchModel#reset-method>`__****\ ()
--  ****`update </sdk/apps/qml/QtLocation/PlaceSearchModel#update-method>`__****\ ()
--  ****`updateWith </sdk/apps/qml/QtLocation/PlaceSearchModel#updateWith-method>`__****\ (int
+   **:ref:`errorString <sdk_qtlocation_placesearchmodel#errorString-method>`**\ ()
+-  :ref:`nextPage <sdk_qtlocation_placesearchmodel_nextPage-method>`\ ()
+-  :ref:`previousPage <sdk_qtlocation_placesearchmodel_previousPage-method>`\ ()
+-  :ref:`reset <sdk_qtlocation_placesearchmodel_reset-method>`\ ()
+-  :ref:`update <sdk_qtlocation_placesearchmodel_update-method>`\ ()
+-  :ref:`updateWith <sdk_qtlocation_placesearchmodel_updateWith-method>`\ (int
    *proposedSearchIndex*)
 
 Detailed Description
 --------------------
 
-`PlaceSearchModel </sdk/apps/qml/QtLocation/PlaceSearchModel/>`__
-provides a model of place search results within the
-`searchArea </sdk/apps/qml/QtLocation/PlaceSearchModel#searchArea-prop>`__.
-The
-`searchTerm </sdk/apps/qml/QtLocation/PlaceSearchModel#searchTerm-prop>`__
-and
-`categories </sdk/apps/qml/QtLocation/location-places-backend#categories>`__
+:ref:`PlaceSearchModel <sdk_qtlocation_placesearchmodel>` provides a model
+of place search results within the
+:ref:`searchArea <sdk_qtlocation_placesearchmodel#searchArea-prop>`. The
+:ref:`searchTerm <sdk_qtlocation_placesearchmodel#searchTerm-prop>` and
+`categories </sdk/apps/qml/QtLocation/location-places-backend/#categories>`_ 
 properties can be set to restrict the search results to places matching
 those criteria.
 
-The `PlaceSearchModel </sdk/apps/qml/QtLocation/PlaceSearchModel/>`__
-returns both sponsored and `organic search
-results <http://en.wikipedia.org/wiki/Organic_search>`__. Sponsored
+The :ref:`PlaceSearchModel <sdk_qtlocation_placesearchmodel>` returns both
+sponsored and `organic search
+results <http://en.wikipedia.org/wiki/Organic_search>`_ . Sponsored
 search results will have the ``sponsored`` role set to true.
 
 The model returns data for the following roles:
 
-+-------------+-----------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Role        | Type                                                                  | Description                                                                                                                                                                                                                                                                                                    |
-+=============+=======================================================================+================================================================================================================================================================================================================================================================================================================+
-| type        | enum                                                                  | The type of search result.                                                                                                                                                                                                                                                                                     |
-+-------------+-----------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| title       | string                                                                | A string describing the search result.                                                                                                                                                                                                                                                                         |
-+-------------+-----------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| icon        | `PlaceIcon </sdk/apps/qml/QtLocation/location-cpp-qml#placeicon>`__   | Icon representing the search result.                                                                                                                                                                                                                                                                           |
-+-------------+-----------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| distance    | real                                                                  | Valid only when the ``type`` role is ``PlaceResult``, the distance to the place from the center of the `searchArea </sdk/apps/qml/QtLocation/PlaceSearchModel#searchArea-prop>`__. If no `searchArea </sdk/apps/qml/QtLocation/PlaceSearchModel#searchArea-prop>`__ has been specified, the distance is NaN.   |
-+-------------+-----------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| place       | `Place </sdk/apps/qml/QtLocation/location-cpp-qml#place>`__           | Valid only when the ``type`` role is ``PlaceResult``, an object representing the place.                                                                                                                                                                                                                        |
-+-------------+-----------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| sponsored   | bool                                                                  | Valid only when the ``type`` role is ``PlaceResult``, true if the search result is a sponsored result.                                                                                                                                                                                                         |
-+-------------+-----------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++-------------+------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Role        | Type                                                                   | Description                                                                                                                                                                                                                                                                                |
++=============+========================================================================+============================================================================================================================================================================================================================================================================================+
+| type        | enum                                                                   | The type of search result.                                                                                                                                                                                                                                                                 |
++-------------+------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| title       | string                                                                 | A string describing the search result.                                                                                                                                                                                                                                                     |
++-------------+------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| icon        | `PlaceIcon </sdk/apps/qml/QtLocation/location-cpp-qml/#placeicon>`_    | Icon representing the search result.                                                                                                                                                                                                                                                       |
++-------------+------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| distance    | real                                                                   | Valid only when the :ref:``type`` role is ``PlaceResult``, the distance to the place from the center of the `searchArea <sdk_qtlocation_placesearchmodel#searchArea-prop>`. If no `searchArea <sdk_qtlocation_placesearchmodel#searchArea-prop>` has been specified, the distance is NaN.   |
++-------------+------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| place       | `Place </sdk/apps/qml/QtLocation/location-cpp-qml/#place>`_            | Valid only when the ``type`` role is ``PlaceResult``, an object representing the place.                                                                                                                                                                                                    |
++-------------+------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| sponsored   | bool                                                                   | Valid only when the ``type`` role is ``PlaceResult``, true if the search result is a sponsored result.                                                                                                                                                                                     |
++-------------+------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Search Result Types
 ~~~~~~~~~~~~~~~~~~~
 
 The ``type`` role can take on the following values:
 
-+------------------------------------------------------------------------------------------+-----------------------------------------------------------------------+
-| `PlaceSearchModel </sdk/apps/qml/QtLocation/PlaceSearchModel/>`__.UnknownSearchResult    | The contents of the search result are unknown.                        |
-+------------------------------------------------------------------------------------------+-----------------------------------------------------------------------+
-| `PlaceSearchModel </sdk/apps/qml/QtLocation/PlaceSearchModel/>`__.PlaceResult            | The search result contains a place.                                   |
-+------------------------------------------------------------------------------------------+-----------------------------------------------------------------------+
-| `PlaceSearchModel </sdk/apps/qml/QtLocation/PlaceSearchModel/>`__.ProposedSearchResult   | The search result contains a proposed search which may be relevant.   |
-+------------------------------------------------------------------------------------------+-----------------------------------------------------------------------+
++-------------------------------------------------------------------------------+-----------------------------------------------------------------------+
+| :ref:`PlaceSearchModel <sdk_qtlocation_placesearchmodel>`.UnknownSearchResult    | The contents of the search result are unknown.                        |
++-------------------------------------------------------------------------------+-----------------------------------------------------------------------+
+| :ref:`PlaceSearchModel <sdk_qtlocation_placesearchmodel>`.PlaceResult            | The search result contains a place.                                   |
++-------------------------------------------------------------------------------+-----------------------------------------------------------------------+
+| :ref:`PlaceSearchModel <sdk_qtlocation_placesearchmodel>`.ProposedSearchResult   | The search result contains a proposed search which may be relevant.   |
++-------------------------------------------------------------------------------+-----------------------------------------------------------------------+
 
 It can often be helpful to use a Loader to create a delegate that will
 choose different Components based on the search result type.
@@ -129,33 +129,30 @@ choose different Components based on the search result type.
 Detection of Updated and Removed Places
 ---------------------------------------
 
-The `PlaceSearchModel </sdk/apps/qml/QtLocation/PlaceSearchModel/>`__
-listens for places that have been updated or removed from its plugin's
-backend. If it detects that a place has been updated and that place is
-currently present in the model, then it will call
-`Place::getDetails </sdk/apps/qml/QtLocation/Place#getDetails-method>`__
-to refresh the details. If it detects that a place has been removed,
-then correspondingly the place will be removed from the model if it is
+The :ref:`PlaceSearchModel <sdk_qtlocation_placesearchmodel>` listens for
+places that have been updated or removed from its plugin's backend. If
+it detects that a place has been updated and that place is currently
+present in the model, then it will call
+:ref:`Place::getDetails <sdk_qtlocation_place#getDetails-method>` to
+refresh the details. If it detects that a place has been removed, then
+correspondingly the place will be removed from the model if it is
 currently present.
 
 Example
 -------
 
 The following example shows how to use the
-`PlaceSearchModel </sdk/apps/qml/QtLocation/PlaceSearchModel/>`__ to
-search for Pizza restaurants in close proximity of a given position. A
-`searchTerm </sdk/apps/qml/QtLocation/PlaceSearchModel#searchTerm-prop>`__
-and
-`searchArea </sdk/apps/qml/QtLocation/PlaceSearchModel#searchArea-prop>`__
-are provided to the model and
-`update() </sdk/apps/qml/QtLocation/PlaceSearchModel#update-method>`__
-is used to perform a lookup query. Note that the model does not
-incrementally fetch search results, but rather performs a single fetch
-when
-`update() </sdk/apps/qml/QtLocation/PlaceSearchModel#update-method>`__
-is run. The
-`count </sdk/apps/qml/QtLocation/PlaceSearchModel#count-prop>`__ is set
-to the number of search results returned during the fetch.
+:ref:`PlaceSearchModel <sdk_qtlocation_placesearchmodel>` to search for
+Pizza restaurants in close proximity of a given position. A
+:ref:`searchTerm <sdk_qtlocation_placesearchmodel#searchTerm-prop>` and
+:ref:`searchArea <sdk_qtlocation_placesearchmodel#searchArea-prop>` are
+provided to the model and
+:ref:`update() <sdk_qtlocation_placesearchmodel#update-method>` is used to
+perform a lookup query. Note that the model does not incrementally fetch
+search results, but rather performs a single fetch when
+:ref:`update() <sdk_qtlocation_placesearchmodel#update-method>` is run. The
+:ref:`count <sdk_qtlocation_placesearchmodel#count-prop>` is set to the
+number of search results returned during the fetch.
 
 .. code:: qml
 
@@ -173,42 +170,42 @@ to the number of search results returned during the fetch.
 Paging
 ------
 
-The `PlaceSearchModel </sdk/apps/qml/QtLocation/PlaceSearchModel/>`__
-API has some limited support for paging. The
-`nextPage() </sdk/apps/qml/QtLocation/PlaceSearchModel#nextPage-method>`__
-and
-`previousPage() </sdk/apps/qml/QtLocation/PlaceSearchModel#previousPage-method>`__
+The :ref:`PlaceSearchModel <sdk_qtlocation_placesearchmodel>` API has some
+limited support for paging. The
+:ref:`nextPage() <sdk_qtlocation_placesearchmodel#nextPage-method>` and
+:ref:`previousPage() <sdk_qtlocation_placesearchmodel#previousPage-method>`
 functions as well as the
-`limit </sdk/apps/qml/QtLocation/PlaceSearchModel#limit-prop>`__
-property can be used to access paged search results. When the
-`limit </sdk/apps/qml/QtLocation/PlaceSearchModel#limit-prop>`__
-property is set the search result page contains at most
-`limit </sdk/apps/qml/QtLocation/PlaceSearchModel#limit-prop>`__ entries
-(of type place result). For example, if the backend has 5 search results
-in total [a,b,c,d,e], and assuming the first page is shown and limit of
-3 has been set then a,b,c is returned. The
-`nextPage() </sdk/apps/qml/QtLocation/PlaceSearchModel#nextPage-method>`__
-would return d,e. The
-`nextPagesAvailable </sdk/apps/qml/QtLocation/PlaceSearchModel#nextPagesAvailable-prop>`__
+:ref:`limit <sdk_qtlocation_placesearchmodel#limit-prop>` property can be
+used to access paged search results. When the
+:ref:`limit <sdk_qtlocation_placesearchmodel#limit-prop>` property is set
+the search result page contains at most
+:ref:`limit <sdk_qtlocation_placesearchmodel#limit-prop>` entries (of type
+place result). For example, if the backend has 5 search results in total
+[a,b,c,d,e], and assuming the first page is shown and limit of 3 has
+been set then a,b,c is returned. The
+:ref:`nextPage() <sdk_qtlocation_placesearchmodel#nextPage-method>` would
+return d,e. The
+:ref:`nextPagesAvailable <sdk_qtlocation_placesearchmodel#nextPagesAvailable-prop>`
 and
-`previousPagesAvailable </sdk/apps/qml/QtLocation/PlaceSearchModel#previousPagesAvailable-prop>`__
+:ref:`previousPagesAvailable <sdk_qtlocation_placesearchmodel#previousPagesAvailable-prop>`
 properties can be used to check for further pages. At the moment the API
 does not support the means to retrieve the total number of items
 available from the backed. Note that support for
-`nextPage() </sdk/apps/qml/QtLocation/PlaceSearchModel#nextPage-method>`__,
-`previousPage() </sdk/apps/qml/QtLocation/PlaceSearchModel#previousPage-method>`__
-and `limit </sdk/apps/qml/QtLocation/PlaceSearchModel#limit-prop>`__ can
-vary according to the
-`plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__.
+:ref:`nextPage() <sdk_qtlocation_placesearchmodel#nextPage-method>`,
+:ref:`previousPage() <sdk_qtlocation_placesearchmodel#previousPage-method>`
+and :ref:`limit <sdk_qtlocation_placesearchmodel#limit-prop>` can vary
+according to the
+`plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_ .
 
 **See also** CategoryModel and QPlaceManager.
 
 Property Documentation
 ----------------------
 
+.. _sdk_qtlocation_placesearchmodel_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ categories :                                                    |
-| list<`Category </sdk/apps/qml/QtLocation/Category/>`__>                  |
+| :ref:` <>`\ categories : list<`Category <sdk_qtlocation_category>`>       |
 +--------------------------------------------------------------------------+
 
 This property holds a list of categories to be used when searching.
@@ -216,6 +213,8 @@ Returned search results will be for places that match at least one of
 the categories.
 
 | 
+
+.. _sdk_qtlocation_placesearchmodel_count-prop:
 
 +--------------------------------------------------------------------------+
 |        \ count : int                                                     |
@@ -229,46 +228,52 @@ currently supported by the API.
 
 | 
 
+.. _sdk_qtlocation_placesearchmodel_favoritesMatchParameters-prop:
+
 +--------------------------------------------------------------------------+
 |        \ favoritesMatchParameters : VariantMap                           |
 +--------------------------------------------------------------------------+
 
 This property holds a set of parameters used to specify how search
 result places are matched to favorites in the
-`favoritesPlugin </sdk/apps/qml/QtLocation/PlaceSearchModel#favoritesPlugin-prop>`__.
+:ref:`favoritesPlugin <sdk_qtlocation_placesearchmodel#favoritesPlugin-prop>`.
 
 By default the parameter map is empty and implies that the favorites
 plugin matches by `alternative
-identifiers </sdk/apps/qml/QtLocation/location-places-backend#alternative-identifier-cross-referencing>`__.
+identifiers </sdk/apps/qml/QtLocation/location-places-backend/#alternative-identifier-cross-referencing>`_ .
 Generally, an application developer will not need to set this property.
 
 In cases where the favorites plugin does not support matching by
 alternative identifiers, then the `plugin
-documentation </sdk/apps/qml/QtLocation/qtlocation-index#plugin-references-and-parameters>`__
+documentation </sdk/apps/qml/QtLocation/qtlocation-index/#plugin-references-and-parameters>`_ 
 should be consulted to see precisely what key-value parameters to set.
 
 | 
 
+.. _sdk_qtlocation_placesearchmodel_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ favoritesPlugin : `Plugin </sdk/apps/qml/QtLocation/Plugin/>`__ |
+| :ref:` <>`\ favoritesPlugin : `Plugin <sdk_qtlocation_plugin>`         |
 +--------------------------------------------------------------------------+
 
 This property holds the
-`Plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__ which
+`Plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_  which
 will be used to search for favorites. Any places from the search which
 can be cross-referenced or matched in the favoritesPlugin will have
-their `favorite </sdk/apps/qml/QtLocation/Place#favorite-prop>`__
-property set to the corresponding
-`Place </sdk/apps/qml/QtLocation/location-cpp-qml#place>`__ from the
+their :ref:`favorite <sdk_qtlocation_place#favorite-prop>` property set to
+the corresponding
+`Place </sdk/apps/qml/QtLocation/location-cpp-qml/#place>`_  from the
 favoritesPlugin.
 
 If the favoritesPlugin is not set, the
-`favorite </sdk/apps/qml/QtLocation/Place#favorite-prop>`__ property of
-the places in the results will always be null.
+:ref:`favorite <sdk_qtlocation_place#favorite-prop>` property of the places
+in the results will always be null.
 
-**See also** `Favorites </sdk/apps/qml/QtLocation/Place#favorites>`__.
+**See also** :ref:`Favorites <sdk_qtlocation_place#favorites>`.
 
 | 
+
+.. _sdk_qtlocation_placesearchmodel_limit-prop:
 
 +--------------------------------------------------------------------------+
 |        \ limit : int                                                     |
@@ -279,6 +284,8 @@ returned.
 
 | 
 
+.. _sdk_qtlocation_placesearchmodel_nextPagesAvailable-prop:
+
 +--------------------------------------------------------------------------+
 |        \ nextPagesAvailable : bool                                       |
 +--------------------------------------------------------------------------+
@@ -287,19 +294,23 @@ This property holds whether there is one or more additional pages of
 search results available.
 
 **See also**
-`nextPage() </sdk/apps/qml/QtLocation/PlaceSearchModel#nextPage-method>`__.
+:ref:`nextPage() <sdk_qtlocation_placesearchmodel#nextPage-method>`.
 
 | 
 
+.. _sdk_qtlocation_placesearchmodel_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ plugin : `Plugin </sdk/apps/qml/QtLocation/Plugin/>`__          |
+| :ref:` <>`\ plugin : `Plugin <sdk_qtlocation_plugin>`                  |
 +--------------------------------------------------------------------------+
 
 This property holds the
-`Plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__ which
+`Plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_  which
 will be used to perform the search.
 
 | 
+
+.. _sdk_qtlocation_placesearchmodel_previousPagesAvailable-prop:
 
 +--------------------------------------------------------------------------+
 |        \ previousPagesAvailable : bool                                   |
@@ -309,9 +320,11 @@ This property holds whether there is one or more previous pages of
 search results available.
 
 **See also**
-`previousPage() </sdk/apps/qml/QtLocation/PlaceSearchModel#previousPage-method>`__.
+:ref:`previousPage() <sdk_qtlocation_placesearchmodel#previousPage-method>`.
 
 | 
+
+.. _sdk_qtlocation_placesearchmodel_recommendationId-prop:
 
 +--------------------------------------------------------------------------+
 |        \ recommendationId : string                                       |
@@ -321,6 +334,8 @@ This property holds the placeId to be used in order to find
 recommendations for similar places.
 
 | 
+
+.. _sdk_qtlocation_placesearchmodel_relevanceHint-prop:
 
 +--------------------------------------------------------------------------+
 |        \ relevanceHint : enumeration                                     |
@@ -332,15 +347,21 @@ For example, the distance hint may give closer places a higher ranking
 but it does not necessarily mean the results will be strictly ordered
 according to distance. A provider may ignore the hint altogether.
 
+.. _sdk_qtlocation_placesearchmodel_SearchResultModel.UnspecifiedHint         No relevance hint is given to the provider.-prop:
+
 +------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_qtlocation_placesearchmodel_SearchResultModel.DistanceHint            The distance of the place from the user's current location is important to the user. This hint is only meaningful when a circular search area is used.-prop:
 | SearchResultModel.UnspecifiedHint        | No relevance hint is given to the provider.                                                                                                                     |
 +------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+.. _sdk_qtlocation_placesearchmodel_SearchResultModel.LexicalPlaceNameHint    The lexical ordering of place names (in ascending alphabetical order) is relevant to the user. This hint is useful for providers based on a local data store.-prop:
 | SearchResultModel.DistanceHint           | The distance of the place from the user's current location is important to the user. This hint is only meaningful when a circular search area is used.          |
 +------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | SearchResultModel.LexicalPlaceNameHint   | The lexical ordering of place names (in ascending alphabetical order) is relevant to the user. This hint is useful for providers based on a local data store.   |
 +------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 | 
+
+.. _sdk_qtlocation_placesearchmodel_searchArea-prop:
 
 +--------------------------------------------------------------------------+
 |        \ searchArea : variant                                            |
@@ -351,15 +372,17 @@ model will be within the search area.
 
 If this property is set to a geocircle its radius property may be left
 unset, in which case the
-`Plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__ will
+`Plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_  will
 choose an appropriate radius for the search.
 
 Support for specifying a search area can vary according to the
-`plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__ backend
-implementation. For example, some may support a search center only while
-others may only support geo rectangles.
+`plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_ 
+backend implementation. For example, some may support a search center
+only while others may only support geo rectangles.
 
 | 
+
+.. _sdk_qtlocation_placesearchmodel_searchTerm-prop:
 
 +--------------------------------------------------------------------------+
 |        \ searchTerm : string                                             |
@@ -370,23 +393,32 @@ free-form text string.
 
 | 
 
+.. _sdk_qtlocation_placesearchmodel_status-prop:
+
 +--------------------------------------------------------------------------+
 |        \ status : enum                                                   |
 +--------------------------------------------------------------------------+
 
 This property holds the status of the model. It can be one of:
 
-+-----------------------------------------------------------------------------+------------------------------------------------------------------+
-| `PlaceSearchModel </sdk/apps/qml/QtLocation/PlaceSearchModel/>`__.Null      | No search query has been executed. The model is empty.           |
-+-----------------------------------------------------------------------------+------------------------------------------------------------------+
-| `PlaceSearchModel </sdk/apps/qml/QtLocation/PlaceSearchModel/>`__.Ready     | The search query has completed, and the results are available.   |
-+-----------------------------------------------------------------------------+------------------------------------------------------------------+
-| `PlaceSearchModel </sdk/apps/qml/QtLocation/PlaceSearchModel/>`__.Loading   | A search query is currently being executed.                      |
-+-----------------------------------------------------------------------------+------------------------------------------------------------------+
-| `PlaceSearchModel </sdk/apps/qml/QtLocation/PlaceSearchModel/>`__.Error     | An error occurred when executing the previous search query.      |
-+-----------------------------------------------------------------------------+------------------------------------------------------------------+
+.. _sdk_qtlocation_placesearchmodel_-prop:
+
++------------------------------------------------------------------+------------------------------------------------------------------+
+.. _sdk_qtlocation_placesearchmodel_-prop:
+| :ref:`PlaceSearchModel <sdk_qtlocation_placesearchmodel>`.Null      | No search query has been executed. The model is empty.           |
++------------------------------------------------------------------+------------------------------------------------------------------+
+.. _sdk_qtlocation_placesearchmodel_-prop:
+| :ref:`PlaceSearchModel <sdk_qtlocation_placesearchmodel>`.Ready     | The search query has completed, and the results are available.   |
++------------------------------------------------------------------+------------------------------------------------------------------+
+.. _sdk_qtlocation_placesearchmodel_-prop:
+| :ref:`PlaceSearchModel <sdk_qtlocation_placesearchmodel>`.Loading   | A search query is currently being executed.                      |
++------------------------------------------------------------------+------------------------------------------------------------------+
+| :ref:`PlaceSearchModel <sdk_qtlocation_placesearchmodel>`.Error     | An error occurred when executing the previous search query.      |
++------------------------------------------------------------------+------------------------------------------------------------------+
 
 | 
+
+.. _sdk_qtlocation_placesearchmodel_visibilityScope-prop:
 
 +--------------------------------------------------------------------------+
 |        \ visibilityScope : enum                                          |
@@ -398,11 +430,16 @@ results.
 
 The visibility scope can be one of:
 
+.. _sdk_qtlocation_placesearchmodel_Place.UnspecifiedVisibility    No explicit visibility scope specified, places with any visibility may be part of search results.-method:
+
 +-------------------------------+-----------------------------------------------------------------------------------------------------+
+.. _sdk_qtlocation_placesearchmodel_Place.DeviceVisibility         Only places stored on the local device will be part of the search results.-method:
 | Place.UnspecifiedVisibility   | No explicit visibility scope specified, places with any visibility may be part of search results.   |
 +-------------------------------+-----------------------------------------------------------------------------------------------------+
+.. _sdk_qtlocation_placesearchmodel_Place.PrivateVisibility        Only places that are private to the current user will be part of the search results.-method:
 | Place.DeviceVisibility        | Only places stored on the local device will be part of the search results.                          |
 +-------------------------------+-----------------------------------------------------------------------------------------------------+
+.. _sdk_qtlocation_placesearchmodel_Place.PublicVisibility         Only places that are public will be part of the search results.-method:
 | Place.PrivateVisibility       | Only places that are private to the current user will be part of the search results.                |
 +-------------------------------+-----------------------------------------------------------------------------------------------------+
 | Place.PublicVisibility        | Only places that are public will be part of the search results.                                     |
@@ -413,23 +450,26 @@ The visibility scope can be one of:
 Method Documentation
 --------------------
 
+.. _sdk_qtlocation_placesearchmodel_cancel-method:
+
 +--------------------------------------------------------------------------+
 |        \ cancel()                                                        |
 +--------------------------------------------------------------------------+
 
 Cancels an ongoing search operation immediately and sets the model
-status to
-`PlaceSearchModel </sdk/apps/qml/QtLocation/PlaceSearchModel/>`__.Ready.
+status to :ref:`PlaceSearchModel <sdk_qtlocation_placesearchmodel>`.Ready.
 The model retains any search results it had before the operation was
 started.
 
 If an operation is not ongoing, invoking cancel() has no effect.
 
 **See also**
-`update() </sdk/apps/qml/QtLocation/PlaceSearchModel#update-method>`__
-and `status </sdk/apps/qml/QtLocation/PlaceSearchModel#status-prop>`__.
+:ref:`update() <sdk_qtlocation_placesearchmodel#update-method>` and
+:ref:`status <sdk_qtlocation_placesearchmodel#status-prop>`.
 
 | 
+
+.. _sdk_qtlocation_placesearchmodel_data-method:
 
 +--------------------------------------------------------------------------+
 |        \ data(int *index*, string *role*)                                |
@@ -438,6 +478,8 @@ and `status </sdk/apps/qml/QtLocation/PlaceSearchModel#status-prop>`__.
 Returns the data for a given *role* at the specified row *index*.
 
 | 
+
+.. _sdk_qtlocation_placesearchmodel_string errorString-method:
 
 +--------------------------------------------------------------------------+
 |        \ string errorString() const                                      |
@@ -452,6 +494,8 @@ associated textual representation.
 
 | 
 
+.. _sdk_qtlocation_placesearchmodel_nextPage-method:
+
 +--------------------------------------------------------------------------+
 |        \ nextPage()                                                      |
 +--------------------------------------------------------------------------+
@@ -460,6 +504,8 @@ Updates the model to display the next page of search results. If there
 is no next page then this method does nothing.
 
 | 
+
+.. _sdk_qtlocation_placesearchmodel_previousPage-method:
 
 +--------------------------------------------------------------------------+
 |        \ previousPage()                                                  |
@@ -470,16 +516,19 @@ there is no previous page then this method does nothing.
 
 | 
 
+.. _sdk_qtlocation_placesearchmodel_reset-method:
+
 +--------------------------------------------------------------------------+
 |        \ reset()                                                         |
 +--------------------------------------------------------------------------+
 
 Resets the model. All search results are cleared, any outstanding
 requests are aborted and possible errors are cleared. Model status will
-be set to
-`PlaceSearchModel </sdk/apps/qml/QtLocation/PlaceSearchModel/>`__.Null.
+be set to :ref:`PlaceSearchModel <sdk_qtlocation_placesearchmodel>`.Null.
 
 | 
+
+.. _sdk_qtlocation_placesearchmodel_update-method:
 
 +--------------------------------------------------------------------------+
 |        \ update()                                                        |
@@ -489,24 +538,23 @@ Updates the model based on the provided query parameters. The model will
 be populated with a list of places matching the search parameters
 specified by the type's properties. Search criteria is specified by
 setting properties such as the
-`searchTerm </sdk/apps/qml/QtLocation/PlaceSearchModel#searchTerm-prop>`__,
-`categories </sdk/apps/qml/QtLocation/location-places-backend#categories>`__,
-`searchArea </sdk/apps/qml/QtLocation/PlaceSearchModel#searchArea-prop>`__
-and `limit </sdk/apps/qml/QtLocation/PlaceSearchModel#limit-prop>`__.
-Support for these properties may vary according to
-`plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__.
+:ref:`searchTerm <sdk_qtlocation_placesearchmodel#searchTerm-prop>`,
+`categories </sdk/apps/qml/QtLocation/location-places-backend/#categories>`_ ,
+:ref:`searchArea <sdk_qtlocation_placesearchmodel#searchArea-prop>` and
+:ref:`limit <sdk_qtlocation_placesearchmodel#limit-prop>`. Support for
+these properties may vary according to
+`plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_ .
 ``update()`` then submits the set of criteria to the
-`plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__ to
+`plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_  to
 process.
 
 While the model is updating the
-`status </sdk/apps/qml/QtLocation/PlaceSearchModel#status-prop>`__ of
-the model is set to ``PlaceSearchModel.Loading``. If the model is
-successfully updated the
-`status </sdk/apps/qml/QtLocation/PlaceSearchModel#status-prop>`__ is
+:ref:`status <sdk_qtlocation_placesearchmodel#status-prop>` of the model is
+set to ``PlaceSearchModel.Loading``. If the model is successfully
+updated the :ref:`status <sdk_qtlocation_placesearchmodel#status-prop>` is
 set to ``PlaceSearchModel.Ready``, while if it unsuccessfully completes,
-the `status </sdk/apps/qml/QtLocation/PlaceSearchModel#status-prop>`__
-is set to ``PlaceSearchModel.Error`` and the model cleared.
+the :ref:`status <sdk_qtlocation_placesearchmodel#status-prop>` is set to
+``PlaceSearchModel.Error`` and the model cleared.
 
 .. code:: cpp
 
@@ -528,10 +576,12 @@ is set to ``PlaceSearchModel.Error`` and the model cleared.
     }
 
 **See also**
-`cancel() </sdk/apps/qml/QtLocation/PlaceSearchModel#cancel-method>`__
-and `status </sdk/apps/qml/QtLocation/PlaceSearchModel#status-prop>`__.
+:ref:`cancel() <sdk_qtlocation_placesearchmodel#cancel-method>` and
+:ref:`status <sdk_qtlocation_placesearchmodel#status-prop>`.
 
 | 
+
+.. _sdk_qtlocation_placesearchmodel_updateWith-method:
 
 +--------------------------------------------------------------------------+
 |        \ updateWith(int *proposedSearchIndex*)                           |
@@ -540,12 +590,12 @@ and `status </sdk/apps/qml/QtLocation/PlaceSearchModel#status-prop>`__.
 Updates the model based on the ProposedSearchResult at index
 *proposedSearchIndex*. The model will be populated with a list of places
 matching the proposed search. Model status will be set to
-`PlaceSearchModel </sdk/apps/qml/QtLocation/PlaceSearchModel/>`__.Loading.
-If the model is updated successfully status will be set to
-`PlaceSearchModel </sdk/apps/qml/QtLocation/PlaceSearchModel/>`__.Ready.
-If an error occurs status will be set to
-`PlaceSearchModel </sdk/apps/qml/QtLocation/PlaceSearchModel/>`__.Error
-and the model cleared.
+:ref:`PlaceSearchModel <sdk_qtlocation_placesearchmodel>`.Loading. If the
+model is updated successfully status will be set to
+:ref:`PlaceSearchModel <sdk_qtlocation_placesearchmodel>`.Ready. If an
+error occurs status will be set to
+:ref:`PlaceSearchModel <sdk_qtlocation_placesearchmodel>`.Error and the
+model cleared.
 
 If *proposedSearchIndex* does not reference a ProposedSearchResult this
 method does nothing.

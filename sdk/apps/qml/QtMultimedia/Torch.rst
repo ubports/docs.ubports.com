@@ -1,3 +1,7 @@
+.. _sdk_qtmultimedia_torch:
+QtMultimedia Torch
+==================
+
 Simple control over torch functionality
 
 +---------------------+---------------------------+
@@ -7,9 +11,8 @@ Simple control over torch functionality
 Properties
 ----------
 
--  ****`enabled </sdk/apps/qml/QtMultimedia/Torch#enabled-prop>`__**** :
-   bool
--  ****`power </sdk/apps/qml/QtMultimedia/Torch#power-prop>`__**** : int
+-  :ref:`enabled <sdk_qtmultimedia_torch_enabled-prop>` : bool
+-  :ref:`power <sdk_qtmultimedia_torch_power-prop>` : int
 
 Detailed Description
 --------------------
@@ -33,6 +36,8 @@ brighter but reduce battery life significantly).
 Property Documentation
 ----------------------
 
+.. _sdk_qtmultimedia_torch_enabled-prop:
+
 +--------------------------------------------------------------------------+
 |        \ enabled : bool                                                  |
 +--------------------------------------------------------------------------+
@@ -42,6 +47,8 @@ functionality is shared with the camera flash hardware, the camera will
 take priority over torch settings and the torch is disabled.
 
 | 
+
+.. _sdk_qtmultimedia_torch_power-prop:
 
 +--------------------------------------------------------------------------+
 |        \ power : int                                                     |

@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_qt_sensors_-_grue_sensor_example:
+QtSensors Qt Sensors - Grue Sensor Example
+==========================================
+
 
 
 |image0|
@@ -9,23 +13,23 @@ The sensor definition is placed in a library where client apps can
 access it. The actual implementation lives in a plugin.
 
 -  `Grue Sensor
-   Definition </sdk/apps/qml/QtSensors/grue#grue-sensor-definition>`__
+   Definition </sdk/apps/qml/QtSensors/grue/#grue-sensor-definition>`_ 
 -  `Grue Sensor
-   Implementation </sdk/apps/qml/QtSensors/grue#grue-sensor-implementation>`__
+   Implementation </sdk/apps/qml/QtSensors/grue/#grue-sensor-implementation>`_ 
 
 The sensor can now be used by a C++ application, even if the application
 does not have access to the definition.
 
 -  `Grue Sensor Console
-   Application </sdk/apps/qml/QtSensors/grue#grue-sensor-console-application>`__
+   Application </sdk/apps/qml/QtSensors/grue/#grue-sensor-console-application>`_ 
 
 To make the sensor available to a QML application an import must be
 created.
 
 -  `Grue Sensor QML
-   Import </sdk/apps/qml/QtSensors/grue#grue-sensor-qml-import>`__
+   Import </sdk/apps/qml/QtSensors/grue/#grue-sensor-qml-import>`_ 
 -  `Grue Sensor QML
-   Application </sdk/apps/qml/QtSensors/grue#grue-sensor-qml-application>`__
+   Application </sdk/apps/qml/QtSensors/grue/#grue-sensor-qml-application>`_ 
 
 .. rubric:: Grue Sensor Definition
    :name: grue-sensor-definition

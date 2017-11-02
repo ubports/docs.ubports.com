@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_accelerometerreading:
+QtSensors AccelerometerReading
+==============================
+
 The AccelerometerReading element holds the most recent Accelerometer
 reading.
 
@@ -6,25 +10,21 @@ reading.
 +--------------------------------------+--------------------------------------+
 | Since:                               | QtSensors 5.0                        |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `SensorReading </sdk/apps/qml/QtSens |
-|                                      | ors/SensorReading/>`__               |
+| Inherits:                            | :ref:`SensorReading <sdk_qtsensors_sensor |
+|                                      | reading>`_                           |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`x </sdk/apps/qml/QtSensors/AccelerometerReading#x-prop>`__**** :
-   qreal
--  ****`y </sdk/apps/qml/QtSensors/AccelerometerReading#y-prop>`__**** :
-   qreal
--  ****`z </sdk/apps/qml/QtSensors/AccelerometerReading#z-prop>`__**** :
-   qreal
+-  :ref:`x <sdk_qtsensors_accelerometerreading_x-prop>` : qreal
+-  :ref:`y <sdk_qtsensors_accelerometerreading_y-prop>` : qreal
+-  :ref:`z <sdk_qtsensors_accelerometerreading_z-prop>` : qreal
 
 Detailed Description
 --------------------
 
-The
-`AccelerometerReading </sdk/apps/qml/QtSensors/AccelerometerReading/>`__
+The :ref:`AccelerometerReading <sdk_qtsensors_accelerometerreading>`
 element holds the most recent Accelerometer reading.
 
 This element wraps the QAccelerometerReading class. Please see the
@@ -34,6 +34,8 @@ This element cannot be directly created.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtsensors_accelerometerreading_x-prop:
 
 +--------------------------------------------------------------------------+
 |        \ x : qreal                                                       |
@@ -45,6 +47,8 @@ Please see QAccelerometerReading::x for information about this property.
 
 | 
 
+.. _sdk_qtsensors_accelerometerreading_y-prop:
+
 +--------------------------------------------------------------------------+
 |        \ y : qreal                                                       |
 +--------------------------------------------------------------------------+
@@ -54,6 +58,8 @@ This property holds the acceleration on the Y axis.
 Please see QAccelerometerReading::y for information about this property.
 
 | 
+
+.. _sdk_qtsensors_accelerometerreading_z-prop:
 
 +--------------------------------------------------------------------------+
 |        \ z : qreal                                                       |

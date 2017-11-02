@@ -1,3 +1,7 @@
+.. _sdk_qtquick_animationcontroller:
+QtQuick AnimationController
+===========================
+
 Enables manual control of animations
 
 +---------------------+----------------------+
@@ -7,44 +11,46 @@ Enables manual control of animations
 Properties
 ----------
 
--  ****`animation </sdk/apps/qml/QtQuick/AnimationController#animation-prop>`__****
+-  :ref:`animation <sdk_qtquick_animationcontroller_animation-prop>`
    : Animation
--  ****`progress </sdk/apps/qml/QtQuick/AnimationController#progress-prop>`__****
+-  :ref:`progress <sdk_qtquick_animationcontroller_progress-prop>`
    : real
 
 Methods
 -------
 
--  ****`completeToBeginning </sdk/apps/qml/QtQuick/AnimationController#completeToBeginning-method>`__****\ ()
--  ****`completeToEnd </sdk/apps/qml/QtQuick/AnimationController#completeToEnd-method>`__****\ ()
--  ****`reload </sdk/apps/qml/QtQuick/AnimationController#reload-method>`__****\ ()
+-  :ref:`completeToBeginning <sdk_qtquick_animationcontroller_completeToBeginning-method>`\ ()
+-  :ref:`completeToEnd <sdk_qtquick_animationcontroller_completeToEnd-method>`\ ()
+-  :ref:`reload <sdk_qtquick_animationcontroller_reload-method>`\ ()
 
 Detailed Description
 --------------------
 
 Normally animations are driven by an internal timer, but the
-`AnimationController </sdk/apps/qml/QtQuick/AnimationController/>`__
-allows the given *animation* to be driven by a *progress* value
-explicitly.
+:ref:`AnimationController <sdk_qtquick_animationcontroller>` allows the
+given *animation* to be driven by a *progress* value explicitly.
 
 Property Documentation
 ----------------------
 
+.. _sdk_qtquick_animationcontroller_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ [default] animation :                                           |
-| `Animation </sdk/apps/qml/QtQuick/Animation/>`__                         |
+| :ref:` <>`\ [default] animation : `Animation <sdk_qtquick_animation>`  |
 +--------------------------------------------------------------------------+
 
 This property holds the animation to be controlled by the
-`AnimationController </sdk/apps/qml/QtQuick/AnimationController/>`__.
+:ref:`AnimationController <sdk_qtquick_animationcontroller>`.
 
 Note:An animation controlled by
-`AnimationController </sdk/apps/qml/QtQuick/AnimationController/>`__
-will always have its ``running`` and ``paused`` properties set to true.
-It can not be manually started or stopped (much like an animation in a
-Behavior can not be manually started or stopped).
+:ref:`AnimationController <sdk_qtquick_animationcontroller>` will always
+have its ``running`` and ``paused`` properties set to true. It can not
+be manually started or stopped (much like an animation in a Behavior can
+not be manually started or stopped).
 
 | 
+
+.. _sdk_qtquick_animationcontroller_progress-prop:
 
 +--------------------------------------------------------------------------+
 |        \ progress : real                                                 |
@@ -61,6 +67,8 @@ will be converted to 0, setting values great than 1 will be converted to
 Method Documentation
 --------------------
 
+.. _sdk_qtquick_animationcontroller_completeToBeginning-method:
+
 +--------------------------------------------------------------------------+
 |        \ completeToBeginning()                                           |
 +--------------------------------------------------------------------------+
@@ -74,11 +82,12 @@ The animation controller's progress value will be automatically updated
 while the animation is running.
 
 **See also**
-`completeToEnd() </sdk/apps/qml/QtQuick/AnimationController#completeToEnd-method>`__
-and
-`progress </sdk/apps/qml/QtQuick/AnimationController#progress-prop>`__.
+:ref:`completeToEnd() <sdk_qtquick_animationcontroller#completeToEnd-method>`
+and :ref:`progress <sdk_qtquick_animationcontroller#progress-prop>`.
 
 | 
+
+.. _sdk_qtquick_animationcontroller_completeToEnd-method:
 
 +--------------------------------------------------------------------------+
 |        \ completeToEnd()                                                 |
@@ -93,11 +102,12 @@ The animation controller's progress value will be automatically updated
 while the animation is running.
 
 **See also**
-`completeToBeginning() </sdk/apps/qml/QtQuick/AnimationController#completeToBeginning-method>`__
-and
-`progress </sdk/apps/qml/QtQuick/AnimationController#progress-prop>`__.
+:ref:`completeToBeginning() <sdk_qtquick_animationcontroller#completeToBeginning-method>`
+and :ref:`progress <sdk_qtquick_animationcontroller#progress-prop>`.
 
 | 
+
+.. _sdk_qtquick_animationcontroller_reload-method:
 
 +--------------------------------------------------------------------------+
 |        \ reload()                                                        |

@@ -1,5 +1,9 @@
+.. _sdk_autopilot_introspection_types_datetime:
+autopilot.introspection.types DateTime
+======================================
+
  *class* ``autopilot.introspection.types.``\ ``DateTime``\ (*\*args*,
-*\*\*kwargs*)\ ` </sdk/autopilot/python/autopilot.introspection/types.DateTime#DateTime>`__\ ` <#autopilot.introspection.types.DateTime>`__
+*\*\*kwargs*)\ ` </sdk/autopilot/python/autopilot.introspection/types.DateTime/#DateTime>`_ \ ` <#autopilot.introspection.types.DateTime>`_ 
     The DateTime class represents a date and time in the UTC timezone.
 
     DateTime is constructed by passing a unix timestamp in to the

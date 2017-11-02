@@ -1,5 +1,9 @@
+.. _sdk_location:
+Location
+========
+
 Holds location attributes such as latitude, longitude, etc.
-`More... </sdk/scopes/cpp/unity.scopes.Location#details>`__
+`More... </sdk/scopes/cpp/unity.scopes.Location/#details>`_ 
 
 ``#include <unity/scopes/Location.h>``
 
@@ -8,11 +12,11 @@ Holds location attributes such as latitude, longitude, etc.
 
  
 
-`Location </sdk/scopes/cpp/unity.scopes.Location#a29785026741614382c49237af463b134>`__
+`Location </sdk/scopes/cpp/unity.scopes.Location/#a29785026741614382c49237af463b134>`_ 
 (double
-`latitude </sdk/scopes/cpp/unity.scopes.Location#a50f5c02d7bab4a0d8dd57295a83d30a5>`__,
+`latitude </sdk/scopes/cpp/unity.scopes.Location/#a50f5c02d7bab4a0d8dd57295a83d30a5>`_ ,
 double
-`longitude </sdk/scopes/cpp/unity.scopes.Location#a29476cb6bb6134f775ced08f49653fbf>`__)
+`longitude </sdk/scopes/cpp/unity.scopes.Location/#a29476cb6bb6134f775ced08f49653fbf>`_ )
 
  
 
@@ -22,20 +26,20 @@ double
 
          
 
-`Location </sdk/scopes/cpp/unity.scopes.Location#acd547c0fd175dc09af7f21c2510455d8>`__
-(`VariantMap </sdk/scopes/cpp/unity.scopes#ad5d8ccfa11a327fca6f3e4cee11f4c10>`__
+`Location </sdk/scopes/cpp/unity.scopes.Location/#acd547c0fd175dc09af7f21c2510455d8>`_ 
+(:ref:`VariantMap <sdk_unity_scopes#ad5d8ccfa11a327fca6f3e4cee11f4c10>`
 const &variant)
 
  
 
-| Construct a `Location </sdk/scopes/cpp/unity.scopes.Location/>`__ from
+| Construct a `Location </sdk/scopes/cpp/unity.scopes.Location/>`_  from
   a the given serialized VariantMap.
 
  
 
 double 
 
-`altitude </sdk/scopes/cpp/unity.scopes.Location#a835ec1dcd3c73decf26efe07edde7de1>`__
+`altitude </sdk/scopes/cpp/unity.scopes.Location/#a835ec1dcd3c73decf26efe07edde7de1>`_ 
 () const
 
  
@@ -46,7 +50,7 @@ double 
 
 bool 
 
-`has\_altitude </sdk/scopes/cpp/unity.scopes.Location#acd12460c91fdfe505ca7c48c6d9ff8e0>`__
+`has\_altitude </sdk/scopes/cpp/unity.scopes.Location/#acd12460c91fdfe505ca7c48c6d9ff8e0>`_ 
 () const
 
  
@@ -57,7 +61,7 @@ bool 
 
 std::string 
 
-`area\_code </sdk/scopes/cpp/unity.scopes.Location#a62e2b1a20fca9c7aa7e193d35fc0de1d>`__
+`area\_code </sdk/scopes/cpp/unity.scopes.Location/#a62e2b1a20fca9c7aa7e193d35fc0de1d>`_ 
 () const
 
  
@@ -68,7 +72,7 @@ std::string 
 
 bool 
 
-`has\_area\_code </sdk/scopes/cpp/unity.scopes.Location#a8f50b410a669b84fabe6b2fb335322e9>`__
+`has\_area\_code </sdk/scopes/cpp/unity.scopes.Location/#a8f50b410a669b84fabe6b2fb335322e9>`_ 
 () const
 
  
@@ -79,7 +83,7 @@ bool 
 
 std::string 
 
-`city </sdk/scopes/cpp/unity.scopes.Location#af57bae33c7f02bb3aae6f3afdd8751b4>`__
+`city </sdk/scopes/cpp/unity.scopes.Location/#af57bae33c7f02bb3aae6f3afdd8751b4>`_ 
 () const
 
  
@@ -90,7 +94,7 @@ std::string 
 
 bool 
 
-`has\_city </sdk/scopes/cpp/unity.scopes.Location#ad87381d174720bdf4098ab073ad3036c>`__
+`has\_city </sdk/scopes/cpp/unity.scopes.Location/#ad87381d174720bdf4098ab073ad3036c>`_ 
 () const
 
  
@@ -101,7 +105,7 @@ bool 
 
 std::string 
 
-`country\_code </sdk/scopes/cpp/unity.scopes.Location#a12d1ffb8ebf540f09937f39bd93cf7a3>`__
+`country\_code </sdk/scopes/cpp/unity.scopes.Location/#a12d1ffb8ebf540f09937f39bd93cf7a3>`_ 
 () const
 
  
@@ -112,7 +116,7 @@ std::string 
 
 bool 
 
-`has\_country\_code </sdk/scopes/cpp/unity.scopes.Location#afa933efd7a44f0e28757d132c480091e>`__
+`has\_country\_code </sdk/scopes/cpp/unity.scopes.Location/#afa933efd7a44f0e28757d132c480091e>`_ 
 () const
 
  
@@ -123,7 +127,7 @@ bool 
 
 std::string 
 
-`country\_name </sdk/scopes/cpp/unity.scopes.Location#a8545a7b5d50011c18068f2a90ae7440a>`__
+`country\_name </sdk/scopes/cpp/unity.scopes.Location/#a8545a7b5d50011c18068f2a90ae7440a>`_ 
 () const
 
  
@@ -134,7 +138,7 @@ std::string 
 
 bool 
 
-`has\_country\_name </sdk/scopes/cpp/unity.scopes.Location#ade946afbcfe219ad046e35b9818bc6c2>`__
+`has\_country\_name </sdk/scopes/cpp/unity.scopes.Location/#ade946afbcfe219ad046e35b9818bc6c2>`_ 
 () const
 
  
@@ -145,7 +149,7 @@ bool 
 
 double 
 
-`horizontal\_accuracy </sdk/scopes/cpp/unity.scopes.Location#ab8cae20de2053fd966a895a72b4c4d23>`__
+`horizontal\_accuracy </sdk/scopes/cpp/unity.scopes.Location/#ab8cae20de2053fd966a895a72b4c4d23>`_ 
 () const
 
  
@@ -156,7 +160,7 @@ double 
 
 bool 
 
-`has\_horizontal\_accuracy </sdk/scopes/cpp/unity.scopes.Location#a849365d5a0a161e282badac69aa38e40>`__
+`has\_horizontal\_accuracy </sdk/scopes/cpp/unity.scopes.Location/#a849365d5a0a161e282badac69aa38e40>`_ 
 () const
 
  
@@ -167,7 +171,7 @@ bool 
 
 double 
 
-`latitude </sdk/scopes/cpp/unity.scopes.Location#a50f5c02d7bab4a0d8dd57295a83d30a5>`__
+`latitude </sdk/scopes/cpp/unity.scopes.Location/#a50f5c02d7bab4a0d8dd57295a83d30a5>`_ 
 () const
 
  
@@ -178,7 +182,7 @@ double 
 
 double 
 
-`longitude </sdk/scopes/cpp/unity.scopes.Location#a29476cb6bb6134f775ced08f49653fbf>`__
+`longitude </sdk/scopes/cpp/unity.scopes.Location/#a29476cb6bb6134f775ced08f49653fbf>`_ 
 () const
 
  
@@ -187,9 +191,9 @@ double 
 
  
 
-`VariantMap </sdk/scopes/cpp/unity.scopes#ad5d8ccfa11a327fca6f3e4cee11f4c10>`__ 
+:ref:`VariantMap <sdk_unity_scopes#ad5d8ccfa11a327fca6f3e4cee11f4c10>` 
 
-`serialize </sdk/scopes/cpp/unity.scopes.Location#a2d17dfecd743f6777e39f9e06653b7cd>`__
+`serialize </sdk/scopes/cpp/unity.scopes.Location/#a2d17dfecd743f6777e39f9e06653b7cd>`_ 
 () const
 
  
@@ -200,7 +204,7 @@ double 
 
 std::string 
 
-`region\_code </sdk/scopes/cpp/unity.scopes.Location#a16f0fbcf4a0811506c64452289878539>`__
+`region\_code </sdk/scopes/cpp/unity.scopes.Location/#a16f0fbcf4a0811506c64452289878539>`_ 
 () const
 
  
@@ -211,7 +215,7 @@ std::string 
 
 bool 
 
-`has\_region\_code </sdk/scopes/cpp/unity.scopes.Location#a18aa845b15b710fb32fa65bb02fcc8ec>`__
+`has\_region\_code </sdk/scopes/cpp/unity.scopes.Location/#a18aa845b15b710fb32fa65bb02fcc8ec>`_ 
 () const
 
  
@@ -222,7 +226,7 @@ bool 
 
 std::string 
 
-`region\_name </sdk/scopes/cpp/unity.scopes.Location#a4d13ccb82265c0622092d78fb708578c>`__
+`region\_name </sdk/scopes/cpp/unity.scopes.Location/#a4d13ccb82265c0622092d78fb708578c>`_ 
 () const
 
  
@@ -233,7 +237,7 @@ std::string 
 
 bool 
 
-`has\_region\_name </sdk/scopes/cpp/unity.scopes.Location#a244f6d61af0d09c6649ff352fd0da1e8>`__
+`has\_region\_name </sdk/scopes/cpp/unity.scopes.Location/#a244f6d61af0d09c6649ff352fd0da1e8>`_ 
 () const
 
  
@@ -244,7 +248,7 @@ bool 
 
 double 
 
-`vertical\_accuracy </sdk/scopes/cpp/unity.scopes.Location#a99f86caa4eecfeb278b1f8ec0ab640ed>`__
+`vertical\_accuracy </sdk/scopes/cpp/unity.scopes.Location/#a99f86caa4eecfeb278b1f8ec0ab640ed>`_ 
 () const
 
  
@@ -255,7 +259,7 @@ double 
 
 bool 
 
-`has\_vertical\_accuracy </sdk/scopes/cpp/unity.scopes.Location#a734214294d31266e581aceba1c43fa04>`__
+`has\_vertical\_accuracy </sdk/scopes/cpp/unity.scopes.Location/#a734214294d31266e581aceba1c43fa04>`_ 
 () const
 
  
@@ -266,7 +270,7 @@ bool 
 
 std::string 
 
-`zip\_postal\_code </sdk/scopes/cpp/unity.scopes.Location#a2b7a689928e29c415a894dbc1cf640af>`__
+`zip\_postal\_code </sdk/scopes/cpp/unity.scopes.Location/#a2b7a689928e29c415a894dbc1cf640af>`_ 
 () const
 
  
@@ -277,7 +281,7 @@ std::string 
 
 bool 
 
-`has\_zip\_postal\_code </sdk/scopes/cpp/unity.scopes.Location#aa49d5fcd4e67a86aea6a5354f01682a3>`__
+`has\_zip\_postal\_code </sdk/scopes/cpp/unity.scopes.Location/#aa49d5fcd4e67a86aea6a5354f01682a3>`_ 
 () const
 
  
@@ -288,9 +292,9 @@ bool 
 
 void 
 
-`set\_altitude </sdk/scopes/cpp/unity.scopes.Location#a6fe5248e04481732f75e2f51625ebf23>`__
+`set\_altitude </sdk/scopes/cpp/unity.scopes.Location/#a6fe5248e04481732f75e2f51625ebf23>`_ 
 (double
-`altitude </sdk/scopes/cpp/unity.scopes.Location#a835ec1dcd3c73decf26efe07edde7de1>`__)
+`altitude </sdk/scopes/cpp/unity.scopes.Location/#a835ec1dcd3c73decf26efe07edde7de1>`_ )
 
  
 
@@ -300,9 +304,9 @@ void 
 
 void 
 
-`set\_area\_code </sdk/scopes/cpp/unity.scopes.Location#aa2ae4c88a310152f375048fa9e109a70>`__
+`set\_area\_code </sdk/scopes/cpp/unity.scopes.Location/#aa2ae4c88a310152f375048fa9e109a70>`_ 
 (std::string const
-&\ `area\_code </sdk/scopes/cpp/unity.scopes.Location#a62e2b1a20fca9c7aa7e193d35fc0de1d>`__)
+&\ `area\_code </sdk/scopes/cpp/unity.scopes.Location/#a62e2b1a20fca9c7aa7e193d35fc0de1d>`_ )
 
  
 
@@ -312,9 +316,9 @@ void 
 
 void 
 
-`set\_city </sdk/scopes/cpp/unity.scopes.Location#aa8518fd0a3eb35fbe6242fd3bdbe7635>`__
+`set\_city </sdk/scopes/cpp/unity.scopes.Location/#aa8518fd0a3eb35fbe6242fd3bdbe7635>`_ 
 (std::string const
-&\ `city </sdk/scopes/cpp/unity.scopes.Location#af57bae33c7f02bb3aae6f3afdd8751b4>`__)
+&\ `city </sdk/scopes/cpp/unity.scopes.Location/#af57bae33c7f02bb3aae6f3afdd8751b4>`_ )
 
  
 
@@ -324,9 +328,9 @@ void 
 
 void 
 
-`set\_country\_code </sdk/scopes/cpp/unity.scopes.Location#a458adf562171b91a27cb8402364bd505>`__
+`set\_country\_code </sdk/scopes/cpp/unity.scopes.Location/#a458adf562171b91a27cb8402364bd505>`_ 
 (std::string const
-&\ `country\_code </sdk/scopes/cpp/unity.scopes.Location#a12d1ffb8ebf540f09937f39bd93cf7a3>`__)
+&\ `country\_code </sdk/scopes/cpp/unity.scopes.Location/#a12d1ffb8ebf540f09937f39bd93cf7a3>`_ )
 
  
 
@@ -336,9 +340,9 @@ void 
 
 void 
 
-`set\_country\_name </sdk/scopes/cpp/unity.scopes.Location#a6848dccd62f563a2ed7f3afe7deed9bf>`__
+`set\_country\_name </sdk/scopes/cpp/unity.scopes.Location/#a6848dccd62f563a2ed7f3afe7deed9bf>`_ 
 (std::string const
-&\ `country\_name </sdk/scopes/cpp/unity.scopes.Location#a8545a7b5d50011c18068f2a90ae7440a>`__)
+&\ `country\_name </sdk/scopes/cpp/unity.scopes.Location/#a8545a7b5d50011c18068f2a90ae7440a>`_ )
 
  
 
@@ -348,9 +352,9 @@ void 
 
 void 
 
-`set\_horizontal\_accuracy </sdk/scopes/cpp/unity.scopes.Location#a9874386c93fa5864fc459fc88e311ee5>`__
+`set\_horizontal\_accuracy </sdk/scopes/cpp/unity.scopes.Location/#a9874386c93fa5864fc459fc88e311ee5>`_ 
 (double
-`horizontal\_accuracy </sdk/scopes/cpp/unity.scopes.Location#ab8cae20de2053fd966a895a72b4c4d23>`__)
+`horizontal\_accuracy </sdk/scopes/cpp/unity.scopes.Location/#ab8cae20de2053fd966a895a72b4c4d23>`_ )
 
  
 
@@ -360,9 +364,9 @@ void 
 
 void 
 
-`set\_latitude </sdk/scopes/cpp/unity.scopes.Location#aef5aacbc207c4fff67c0fb5fbb3414be>`__
+`set\_latitude </sdk/scopes/cpp/unity.scopes.Location/#aef5aacbc207c4fff67c0fb5fbb3414be>`_ 
 (double
-`latitude </sdk/scopes/cpp/unity.scopes.Location#a50f5c02d7bab4a0d8dd57295a83d30a5>`__)
+`latitude </sdk/scopes/cpp/unity.scopes.Location/#a50f5c02d7bab4a0d8dd57295a83d30a5>`_ )
 
  
 
@@ -372,9 +376,9 @@ void 
 
 void 
 
-`set\_longitude </sdk/scopes/cpp/unity.scopes.Location#ae0fc9cc4e3d1fd8c2c0c9a7297c3e6b2>`__
+`set\_longitude </sdk/scopes/cpp/unity.scopes.Location/#ae0fc9cc4e3d1fd8c2c0c9a7297c3e6b2>`_ 
 (double
-`longitude </sdk/scopes/cpp/unity.scopes.Location#a29476cb6bb6134f775ced08f49653fbf>`__)
+`longitude </sdk/scopes/cpp/unity.scopes.Location/#a29476cb6bb6134f775ced08f49653fbf>`_ )
 
  
 
@@ -384,9 +388,9 @@ void 
 
 void 
 
-`set\_region\_code </sdk/scopes/cpp/unity.scopes.Location#a35ba30e0a576f416854f5962ae292a02>`__
+`set\_region\_code </sdk/scopes/cpp/unity.scopes.Location/#a35ba30e0a576f416854f5962ae292a02>`_ 
 (std::string const
-&\ `region\_code </sdk/scopes/cpp/unity.scopes.Location#a16f0fbcf4a0811506c64452289878539>`__)
+&\ `region\_code </sdk/scopes/cpp/unity.scopes.Location/#a16f0fbcf4a0811506c64452289878539>`_ )
 
  
 
@@ -396,9 +400,9 @@ void 
 
 void 
 
-`set\_region\_name </sdk/scopes/cpp/unity.scopes.Location#aeebff1a970e84a44f5f1cda7c8a9cdd9>`__
+`set\_region\_name </sdk/scopes/cpp/unity.scopes.Location/#aeebff1a970e84a44f5f1cda7c8a9cdd9>`_ 
 (std::string const
-&\ `region\_name </sdk/scopes/cpp/unity.scopes.Location#a4d13ccb82265c0622092d78fb708578c>`__)
+&\ `region\_name </sdk/scopes/cpp/unity.scopes.Location/#a4d13ccb82265c0622092d78fb708578c>`_ )
 
  
 
@@ -408,9 +412,9 @@ void 
 
 void 
 
-`set\_vertical\_accuracy </sdk/scopes/cpp/unity.scopes.Location#aa7e876729fdd07d5141203ad1a805e8c>`__
+`set\_vertical\_accuracy </sdk/scopes/cpp/unity.scopes.Location/#aa7e876729fdd07d5141203ad1a805e8c>`_ 
 (double
-`vertical\_accuracy </sdk/scopes/cpp/unity.scopes.Location#a99f86caa4eecfeb278b1f8ec0ab640ed>`__)
+`vertical\_accuracy </sdk/scopes/cpp/unity.scopes.Location/#a99f86caa4eecfeb278b1f8ec0ab640ed>`_ )
 
  
 
@@ -420,9 +424,9 @@ void 
 
 void 
 
-`set\_zip\_postal\_code </sdk/scopes/cpp/unity.scopes.Location#af0e7c149082d5d55ea6364b921fefcdf>`__
+`set\_zip\_postal\_code </sdk/scopes/cpp/unity.scopes.Location/#af0e7c149082d5d55ea6364b921fefcdf>`_ 
 (std::string const
-&\ `zip\_postal\_code </sdk/scopes/cpp/unity.scopes.Location#a2b7a689928e29c415a894dbc1cf640af>`__)
+&\ `zip\_postal\_code </sdk/scopes/cpp/unity.scopes.Location/#a2b7a689928e29c415a894dbc1cf640af>`_ )
 
  
 
@@ -437,27 +441,27 @@ usual value semantics.
 
          
 
-**Location** (`Location </sdk/scopes/cpp/unity.scopes.Location/>`__
+**Location** (`Location </sdk/scopes/cpp/unity.scopes.Location/>`_ 
 const &other)
 
  
 
          
 
-**Location** (`Location </sdk/scopes/cpp/unity.scopes.Location/>`__ &&)
+**Location** (`Location </sdk/scopes/cpp/unity.scopes.Location/>`_  &&)
 
  
 
-        `Location </sdk/scopes/cpp/unity.scopes.Location/>`__ & 
+        `Location </sdk/scopes/cpp/unity.scopes.Location/>`_  & 
 
-**operator=** (`Location </sdk/scopes/cpp/unity.scopes.Location/>`__
+**operator=** (`Location </sdk/scopes/cpp/unity.scopes.Location/>`_ 
 const &other)
 
  
 
-        `Location </sdk/scopes/cpp/unity.scopes.Location/>`__ & 
+        `Location </sdk/scopes/cpp/unity.scopes.Location/>`_  & 
 
-**operator=** (`Location </sdk/scopes/cpp/unity.scopes.Location/>`__ &&)
+**operator=** (`Location </sdk/scopes/cpp/unity.scopes.Location/>`_  &&)
 
  
 
@@ -478,7 +482,7 @@ Constructor & Destructor Documentation
 |                    | )                  |                    |                    |
 +--------------------+--------------------+--------------------+--------------------+
 
-Construct a new `Location </sdk/scopes/cpp/unity.scopes.Location/>`__
+Construct a new `Location </sdk/scopes/cpp/unity.scopes.Location/>`_ 
 with the specified latitude and longitude.
 
 Parameters
@@ -505,7 +509,7 @@ Returns
 
 Exceptions
     +------------------------------------------------------------------------------------------+---------------------------+
-    | `unity::scopes::NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/>`__   | if altitude is not set.   |
+    | `unity::scopes::NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/>`_    | if altitude is not set.   |
     +------------------------------------------------------------------------------------------+---------------------------+
 
 +----------------+----------------+----------------+----------------+----------------+
@@ -522,7 +526,7 @@ Returns
 
 Exceptions
     +------------------------------------------------------------------------------------------+----------------------------+
-    | `unity::scopes::NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/>`__   | if area code is not set.   |
+    | `unity::scopes::NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/>`_    | if area code is not set.   |
     +------------------------------------------------------------------------------------------+----------------------------+
 
 +----------------+----------------+----------------+----------------+----------------+
@@ -539,7 +543,7 @@ Returns
 
 Exceptions
     +------------------------------------------------------------------------------------------+-----------------------+
-    | `unity::scopes::NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/>`__   | if city is not set.   |
+    | `unity::scopes::NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/>`_    | if city is not set.   |
     +------------------------------------------------------------------------------------------+-----------------------+
 
 +----------------+----------------+----------------+----------------+----------------+
@@ -556,7 +560,7 @@ Returns
 
 Exceptions
     +------------------------------------------------------------------------------------------+-------------------------------+
-    | `unity::scopes::NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/>`__   | if country code is not set.   |
+    | `unity::scopes::NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/>`_    | if country code is not set.   |
     +------------------------------------------------------------------------------------------+-------------------------------+
 
 +----------------+----------------+----------------+----------------+----------------+
@@ -573,7 +577,7 @@ Returns
 
 Exceptions
     +------------------------------------------------------------------------------------------+-------------------------------+
-    | `unity::scopes::NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/>`__   | if country name is not set.   |
+    | `unity::scopes::NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/>`_    | if country name is not set.   |
     +------------------------------------------------------------------------------------------+-------------------------------+
 
 +----------------+----------------+----------------+----------------+----------------+
@@ -716,7 +720,7 @@ Returns
 
 Exceptions
     +------------------------------------------------------------------------------------------+--------------------------------------+
-    | `unity::scopes::NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/>`__   | if horizontal accuracy is not set.   |
+    | `unity::scopes::NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/>`_    | if horizontal accuracy is not set.   |
     +------------------------------------------------------------------------------------------+--------------------------------------+
 
 +----------------+----------------+----------------+----------------+----------------+
@@ -757,7 +761,7 @@ Returns
 
 Exceptions
     +------------------------------------------------------------------------------------------+------------------------------+
-    | `unity::scopes::NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/>`__   | if region code is not set.   |
+    | `unity::scopes::NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/>`_    | if region code is not set.   |
     +------------------------------------------------------------------------------------------+------------------------------+
 
 +----------------+----------------+----------------+----------------+----------------+
@@ -774,16 +778,15 @@ Returns
 
 Exceptions
     +------------------------------------------------------------------------------------------+------------------------------+
-    | `unity::scopes::NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/>`__   | if region name is not set.   |
+    | `unity::scopes::NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/>`_    | if region name is not set.   |
     +------------------------------------------------------------------------------------------+------------------------------+
 
 +----------------+----------------+----------------+----------------+----------------+
-| `VariantMap </ | (              |                | )              | const          |
-| sdk/scopes/cpp |                |                |                |                |
-| /unity.scopes# |                |                |                |                |
-| ad5d8ccfa11a32 |                |                |                |                |
-| 7fca6f3e4cee11 |                |                |                |                |
-| f4c10>`__      |                |                |                |                |
+| `VariantMap <s | (              |                | )              | const          |
+| dk_unity_scope |                |                |                |                |
+| s#ad5d8ccfa11a |                |                |                |                |
+| 327fca6f3e4cee |                |                |                |                |
+| 11f4c10>`_     |                |                |                |                |
 | unity::scopes: |                |                |                |                |
 | :Location::ser |                |                |                |                |
 | ialize         |                |                |                |                |
@@ -989,7 +992,7 @@ Returns
 
 Exceptions
     +------------------------------------------------------------------------------------------+------------------------------------+
-    | `unity::scopes::NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/>`__   | if vertical accuracy is not set.   |
+    | `unity::scopes::NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/>`_    | if vertical accuracy is not set.   |
     +------------------------------------------------------------------------------------------+------------------------------------+
 
 +----------------+----------------+----------------+----------------+----------------+
@@ -1006,6 +1009,6 @@ Returns
 
 Exceptions
     +------------------------------------------------------------------------------------------+------------------------------+
-    | `unity::scopes::NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/>`__   | if postal code is not set.   |
+    | `unity::scopes::NotFoundException </sdk/scopes/cpp/unity.scopes.NotFoundException/>`_    | if postal code is not set.   |
     +------------------------------------------------------------------------------------------+------------------------------+
 

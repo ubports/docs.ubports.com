@@ -1,38 +1,39 @@
+.. _sdk_qtquick_numberanimation:
+QtQuick NumberAnimation
+=======================
+
 Animates changes in qreal-type values
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtQuick 2.4                   |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `PropertyAnimation </sdk/apps/qml/Qt |
-|                                      | Quick/PropertyAnimation/>`__         |
+| Inherits:                            | :ref:`PropertyAnimation <sdk_qtquick_prop |
+|                                      | ertyanimation>`_                     |
 +--------------------------------------+--------------------------------------+
-| Inherited By:                        | `SmoothedAnimation </sdk/apps/qml/Qt |
-|                                      | Quick/SmoothedAnimation/>`__         |
+| Inherited By:                        | :ref:`SmoothedAnimation <sdk_qtquick_smoo |
+|                                      | thedanimation>`_                     |
 |                                      | and                                  |
-|                                      | `SpringAnimation </sdk/apps/qml/QtQu |
-|                                      | ick/SpringAnimation/>`__.            |
+|                                      | :ref:`SpringAnimation <sdk_qtquick_spring |
+|                                      | animation>`_ .                       |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`from </sdk/apps/qml/QtQuick/NumberAnimation#from-prop>`__**** :
-   real
--  ****`to </sdk/apps/qml/QtQuick/NumberAnimation#to-prop>`__**** : real
+-  :ref:`from <sdk_qtquick_numberanimation_from-prop>` : real
+-  :ref:`to <sdk_qtquick_numberanimation_to-prop>` : real
 
 Detailed Description
 --------------------
 
-`NumberAnimation </sdk/apps/qml/QtQuick/NumberAnimation/>`__ is a
-specialized
-`PropertyAnimation </sdk/apps/qml/QtQuick/animation#propertyanimation>`__
+:ref:`NumberAnimation <sdk_qtquick_numberanimation>` is a specialized
+`PropertyAnimation </sdk/apps/qml/QtQuick/animation/#propertyanimation>`_ 
 that defines an animation to be applied when a numerical value changes.
 
-Here is a `NumberAnimation </sdk/apps/qml/QtQuick/NumberAnimation/>`__
-applied to the ``x`` property of a
-`Rectangle </sdk/apps/qml/QtQuick/Rectangle/>`__ as a property value
-source. It animates the ``x`` value from its current value to a value of
-50, over 1000 milliseconds:
+Here is a :ref:`NumberAnimation <sdk_qtquick_numberanimation>` applied to
+the :ref:``x`` property of a `Rectangle <sdk_qtquick_rectangle>` as a
+property value source. It animates the ``x`` value from its current
+value to a value of 50, over 1000 milliseconds:
 
 .. code:: qml
 
@@ -44,25 +45,26 @@ source. It animates the ``x`` value from its current value to a value of
     }
 
 Like any other animation type, a
-`NumberAnimation </sdk/apps/qml/QtQuick/NumberAnimation/>`__ can be
-applied in a number of ways, including transitions, behaviors and
-property value sources. The `Animation and Transitions in Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`__
+:ref:`NumberAnimation <sdk_qtquick_numberanimation>` can be applied in a
+number of ways, including transitions, behaviors and property value
+sources. The `Animation and Transitions in Qt
+Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`_ 
 documentation shows a variety of methods for creating animations.
 
-Note that `NumberAnimation </sdk/apps/qml/QtQuick/NumberAnimation/>`__
-may not animate smoothly if there are irregular changes in the number
-value that it is tracking. If this is the case, use
-`SmoothedAnimation </sdk/apps/qml/QtQuick/SmoothedAnimation/>`__
-instead.
+Note that :ref:`NumberAnimation <sdk_qtquick_numberanimation>` may not
+animate smoothly if there are irregular changes in the number value that
+it is tracking. If this is the case, use
+:ref:`SmoothedAnimation <sdk_qtquick_smoothedanimation>` instead.
 
 **See also** `Animation and Transitions in Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`__
+Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`_ 
 and `Qt Quick Examples -
-Animation </sdk/apps/qml/QtQuick/animation/>`__.
+Animation </sdk/apps/qml/QtQuick/animation/>`_ .
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_numberanimation_from-prop:
 
 +--------------------------------------------------------------------------+
 |        \ from : real                                                     |
@@ -84,19 +86,21 @@ value has reached 100:
         }
     }
 
-If the `NumberAnimation </sdk/apps/qml/QtQuick/NumberAnimation/>`__ is
-defined within a
-`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch#transition>`__
-or `Behavior </sdk/apps/qml/QtQuick/Behavior/>`__, this value defaults
-to the value defined in the starting state of the
-`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch#transition>`__,
+If the :ref:`NumberAnimation <sdk_qtquick_numberanimation>` is defined
+within a
+`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch/#transition>`_ 
+or :ref:`Behavior <sdk_qtquick_behavior>`, this value defaults to the value
+defined in the starting state of the
+`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch/#transition>`_ ,
 or the current value of the property at the moment the
-`Behavior </sdk/apps/qml/QtQuick/Behavior/>`__ is triggered.
+:ref:`Behavior <sdk_qtquick_behavior>` is triggered.
 
 **See also** `Animation and Transitions in Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`__.
+Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`_ .
 
 | 
+
+.. _sdk_qtquick_numberanimation_to-prop:
 
 +--------------------------------------------------------------------------+
 |        \ to : real                                                       |
@@ -104,16 +108,16 @@ Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`__.
 
 This property holds the end value for the animation.
 
-If the `NumberAnimation </sdk/apps/qml/QtQuick/NumberAnimation/>`__ is
-defined within a
-`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch#transition>`__
-or `Behavior </sdk/apps/qml/QtQuick/Behavior/>`__, this value defaults
-to the value defined in the end state of the
-`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch#transition>`__,
+If the :ref:`NumberAnimation <sdk_qtquick_numberanimation>` is defined
+within a
+`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch/#transition>`_ 
+or :ref:`Behavior <sdk_qtquick_behavior>`, this value defaults to the value
+defined in the end state of the
+`Transition </sdk/apps/qml/QtQuick/qmlexampletoggleswitch/#transition>`_ ,
 or the value of the property change that triggered the
-`Behavior </sdk/apps/qml/QtQuick/Behavior/>`__.
+:ref:`Behavior <sdk_qtquick_behavior>`.
 
 **See also** `Animation and Transitions in Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`__.
+Quick </sdk/apps/qml/QtQuick/qtquick-statesanimations-animations/>`_ .
 
 | 

@@ -1,44 +1,48 @@
+.. _sdk_qtquick_spritesequence:
+QtQuick SpriteSequence
+======================
+
 Draws a sprite animation
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import QtQuick 2.4                   |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Item </sdk/apps/qml/QtQuick/Item/>` |
-|                                      | __                                   |
+| Inherits:                            | :ref:`Item <sdk_qtquick_item>`       |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`currentSprite </sdk/apps/qml/QtQuick/SpriteSequence#currentSprite-prop>`__****
+-  :ref:`currentSprite <sdk_qtquick_spritesequence_currentSprite-prop>`
    : string
--  ****`goalSprite </sdk/apps/qml/QtQuick/SpriteSequence#goalSprite-prop>`__****
-   : string
--  ****`interpolate </sdk/apps/qml/QtQuick/SpriteSequence#interpolate-prop>`__****
+-  :ref:`goalSprite <sdk_qtquick_spritesequence_goalSprite-prop>` :
+   string
+-  :ref:`interpolate <sdk_qtquick_spritesequence_interpolate-prop>`
    : bool
--  ****`running </sdk/apps/qml/QtQuick/SpriteSequence#running-prop>`__****
-   : bool
--  ****`sprites </sdk/apps/qml/QtQuick/SpriteSequence#sprites-prop>`__****
-   : list<Sprite>
+-  :ref:`running <sdk_qtquick_spritesequence_running-prop>` : bool
+-  :ref:`sprites <sdk_qtquick_spritesequence_sprites-prop>` :
+   list<Sprite>
 
 Methods
 -------
 
--  ****`jumpTo </sdk/apps/qml/QtQuick/SpriteSequence#jumpTo-method>`__****\ (string
+-  :ref:`jumpTo <sdk_qtquick_spritesequence_jumpTo-method>`\ (string
    *sprite*)
 
 Detailed Description
 --------------------
 
-`SpriteSequence </sdk/apps/qml/QtQuick/imageelements#spritesequence>`__
+`SpriteSequence </sdk/apps/qml/QtQuick/imageelements/#spritesequence>`_ 
 renders and controls a list of animations defined by
-`Sprite </sdk/apps/qml/QtQuick/Sprite/>`__ types.
+:ref:`Sprite <sdk_qtquick_sprite>` types.
 
 For full details, see the `Sprite
-Animations </sdk/apps/qml/QtQuick/qtquick-effects-sprites/>`__ overview.
+Animations </sdk/apps/qml/QtQuick/qtquick-effects-sprites/>`_  overview.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_spritesequence_currentSprite-prop:
 
 +--------------------------------------------------------------------------+
 |        \ currentSprite : string                                          |
@@ -47,6 +51,8 @@ Property Documentation
 The name of the Sprite which is currently animating.
 
 | 
+
+.. _sdk_qtquick_spritesequence_goalSprite-prop:
 
 +--------------------------------------------------------------------------+
 |        \ goalSprite : string                                             |
@@ -66,6 +72,8 @@ an unreachable state.
 
 | 
 
+.. _sdk_qtquick_spritesequence_interpolate-prop:
+
 +--------------------------------------------------------------------------+
 |        \ interpolate : bool                                              |
 +--------------------------------------------------------------------------+
@@ -77,6 +85,8 @@ Default is true.
 
 | 
 
+.. _sdk_qtquick_spritesequence_running-prop:
+
 +--------------------------------------------------------------------------+
 |        \ running : bool                                                  |
 +--------------------------------------------------------------------------+
@@ -87,8 +97,10 @@ Default is true
 
 | 
 
+.. _sdk_qtquick_spritesequence_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ sprites : list<`Sprite </sdk/apps/qml/QtQuick/Sprite/>`__>      |
+| :ref:` <>`\ sprites : list<`Sprite <sdk_qtquick_sprite>`>                 |
 +--------------------------------------------------------------------------+
 
 The sprite or sprites to draw. Sprites will be scaled to the size of
@@ -99,12 +111,14 @@ this item.
 Method Documentation
 --------------------
 
+.. _sdk_qtquick_spritesequence_jumpTo-method:
+
 +--------------------------------------------------------------------------+
 |        \ jumpTo(string *sprite*)                                         |
 +--------------------------------------------------------------------------+
 
 This function causes the
-`SpriteSequence </sdk/apps/qml/QtQuick/imageelements#spritesequence>`__
+`SpriteSequence </sdk/apps/qml/QtQuick/imageelements/#spritesequence>`_ 
 to jump to the specified sprite immediately, intermediate sprites are
 not played. The *sprite* argument is the name of the sprite you wish to
 jump to.

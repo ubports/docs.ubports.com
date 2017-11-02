@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_determining_the_default_sensor_for_a_type:
+QtSensors Determining the default sensor for a type
+===================================================
+
 
 
 .. rubric:: Multiple Sensors Can Exist for a Type

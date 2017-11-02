@@ -1,6 +1,10 @@
+.. _sdk_advanced_autopilot_features:
+Advanced Autopilot Features
+===========================
+
 This document covers advanced features in autopilot.
 
-.. rubric:: Cleaning Up\ ` <#cleaning-up>`__
+.. rubric:: Cleaning Up\ ` <#cleaning-up>`_ 
    :name: cleaning-up
 
 It is vitally important that every test you run leaves the system in
@@ -13,7 +17,7 @@ exactly the same state as it found it. This means that:
    again.
 
 All of the methods on
-```AutopilotTestCase`` </sdk/autopilot/python/autopilot.testcase/AutopilotTestCase#autopilot.testcase.AutopilotTestCase>`__
+:ref:```AutopilotTestCase`` <sdk_autopilot_testcase_autopilottestcase#autopilot.testcase.AutopilotTestCase>`
 that alter the system state will automatically revert those changes at
 the end of the test. Similarly, the various input devices will release
 any buttons or keys that were pressed during the test. However, for all
@@ -67,7 +71,7 @@ disk in a separate method, the test itself can ignore the fact that
 these resources need to be cleaned up. This makes the tests cleaner and
 easier to read.
 
-.. rubric:: Test Scenarios\ ` <#test-scenarios>`__
+.. rubric:: Test Scenarios\ ` <#test-scenarios>`_ 
    :name: test-scenarios
 
 Occasionally test authors will find themselves writing multiple tests
@@ -185,12 +189,12 @@ other strategies outlined above:
    This makes them more flexible than either of the approaches listed
    above.
 
-.. rubric:: Test Logging\ ` <#test-logging>`__
+.. rubric:: Test Logging\ ` <#test-logging>`_ 
    :name: test-logging
 
 Autopilot integrates the `python logging
-framework <http://docs.python.org/2/library/logging.html>`__ into the
-```AutopilotTestCase`` </sdk/autopilot/python/autopilot.testcase/AutopilotTestCase#autopilot.testcase.AutopilotTestCase>`__
+framework <http://docs.python.org/2/library/logging.html>`_  into the
+:ref:```AutopilotTestCase`` <sdk_autopilot_testcase_autopilottestcase#autopilot.testcase.AutopilotTestCase>`
 class. Various autopilot components write log messages to the logging
 framework, and all these log messages are attached to each test result
 when the test completes. By default, these log messages are shown when a
@@ -278,11 +282,11 @@ when running autopilot.
 
 For more information on the various logging levels, see the `python
 documentation on Logger
-objects <http://docs.python.org/2/library/logging.html#logger-objects>`__.
+objects <http://docs.python.org/2/library/logging.html#logger-objects>`_ .
 All messages logged in this way will be picked up by the autopilot test
 runner. This is a valuable tool when debugging failing tests.
 
-.. rubric:: Environment Patching\ ` <#environment-patching>`__
+.. rubric:: Environment Patching\ ` <#environment-patching>`_ 
    :name: environment-patching
 
 Sometimes you need to change the value of an environment variable for
@@ -311,24 +315,24 @@ altogether if the environment variable did not exist when
 ``fixtures.EnvironmentVariable`` was instantiated. This happens in the
 cleanup phase of the test execution.
 
-.. rubric:: Custom Assertions\ ` <#custom-assertions>`__
+.. rubric:: Custom Assertions\ ` <#custom-assertions>`_ 
    :name: custom-assertions
 
 Autopilot provides additional custom assertion methods within the
-```AutopilotTestCase`` </sdk/autopilot/python/autopilot.testcase/AutopilotTestCase#autopilot.testcase.AutopilotTestCase>`__
+:ref:```AutopilotTestCase`` <sdk_autopilot_testcase_autopilottestcase#autopilot.testcase.AutopilotTestCase>`
 base class. These assertion methods can be used for validating the
 visible window stack and also properties on objects whose attributes do
 not have the ``wait_for`` method, such as
-```Window`` </sdk/autopilot/python/autopilot.process/Window#autopilot.process.Window>`__
+:ref:```Window`` <sdk_autopilot_process_window#autopilot.process.Window>`
 objects (See `*In Proxy
-Classes* </sdk/autopilot/python/guides-good_tests#wait-for>`__ for more
+Classes* </sdk/autopilot/python/guides-good_tests/#wait-for>`_  for more
 information about ``wait_for``).
 
-```autopilot.testcase.AutopilotTestCase.assertVisibleWindowStack`` </sdk/autopilot/python/autopilot.testcase/AutopilotTestCase#autopilot.testcase.AutopilotTestCase.assertVisibleWindowStack>`__
+:ref:```autopilot.testcase.AutopilotTestCase.assertVisibleWindowStack`` <sdk_autopilot_testcase_autopilottestcase#autopilot.testcase.AutopilotTestCase.assertVisibleWindowStack>`
 
 This assertion allows the test to check the start of the visible window
 stack by passing an iterable item of
-```Window`` </sdk/autopilot/python/autopilot.process/Window#autopilot.process.Window>`__
+:ref:```Window`` <sdk_autopilot_process_window#autopilot.process.Window>`
 instances. Minimised windows will be ignored:
 
 ::
@@ -353,12 +357,12 @@ The process manager is only available on environments that use bamf,
 i.e. desktop running Unity 7. There is currently no process manager for
 any other platform.
 
-```autopilot.testcase.AutopilotTestCase.assertProperty`` </sdk/autopilot/python/autopilot.testcase/AutopilotTestCase#autopilot.testcase.AutopilotTestCase.assertProperty>`__
+:ref:```autopilot.testcase.AutopilotTestCase.assertProperty`` <sdk_autopilot_testcase_autopilottestcase#autopilot.testcase.AutopilotTestCase.assertProperty>`
 
 This assertion allows the test to check properties of an object that
 does not have a **wait\_for** method (i.e.- objects that do not come
 from the autopilot DBus interface). For example the
-```Window`` </sdk/autopilot/python/autopilot.process/Window#autopilot.process.Window>`__
+:ref:```Window`` <sdk_autopilot_process_window#autopilot.process.Window>`
 object:
 
 ::
@@ -377,7 +381,7 @@ object:
 
 Note
 
-```assertProperties`` </sdk/autopilot/python/autopilot.testcase/AutopilotTestCase#autopilot.testcase.AutopilotTestCase.assertProperties>`__
+:ref:```assertProperties`` <sdk_autopilot_testcase_autopilottestcase#autopilot.testcase.AutopilotTestCase.assertProperties>`
 is a synonym for this method.
 
 Note
@@ -386,17 +390,17 @@ The process manager is only available on environments that use bamf,
 i.e. desktop running Unity 7. There is currently no process manager for
 any other platform.
 
-```autopilot.testcase.AutopilotTestCase.assertProperties`` </sdk/autopilot/python/autopilot.testcase/AutopilotTestCase#autopilot.testcase.AutopilotTestCase.assertProperties>`__
+:ref:```autopilot.testcase.AutopilotTestCase.assertProperties`` <sdk_autopilot_testcase_autopilottestcase#autopilot.testcase.AutopilotTestCase.assertProperties>`
 
 See
-`*autopilot.testcase.AutopilotTestCase.assertProperty* </sdk/autopilot/python/tutorial-advanced_autopilot#custom-assertions-assertproperty>`__.
+`*autopilot.testcase.AutopilotTestCase.assertProperty* </sdk/autopilot/python/tutorial-advanced_autopilot/#custom-assertions-assertproperty>`_ .
 
 Note
 
-```assertProperty`` </sdk/autopilot/python/autopilot.testcase/AutopilotTestCase#autopilot.testcase.AutopilotTestCase.assertProperty>`__
+:ref:```assertProperty`` <sdk_autopilot_testcase_autopilottestcase#autopilot.testcase.AutopilotTestCase.assertProperty>`
 is a synonym for this method.
 
-.. rubric:: Platform Selection\ ` <#platform-selection>`__
+.. rubric:: Platform Selection\ ` <#platform-selection>`_ 
    :name: platform-selection
 
 Autopilot provides functionality that allows the test author to
@@ -405,21 +409,21 @@ change behaviour within the test or skipping the test all together.
 
 For examples and API documentaion please see ``autopilot.platform``.
 
-.. rubric:: Gestures and Multi-touch\ ` <#gestures-and-multi-touch>`__
+.. rubric:: Gestures and Multi-touch\ ` <#gestures-and-multi-touch>`_ 
    :name: gestures-and-multi-touch
 
 Autopilot provides API support for both
-`*single-touch* </sdk/autopilot/python/tutorial-advanced_autopilot#single-touch>`__
+`*single-touch* </sdk/autopilot/python/tutorial-advanced_autopilot/#single-touch>`_ 
 and
-`*multi-touch* </sdk/autopilot/python/tutorial-advanced_autopilot#multi-touch>`__
+`*multi-touch* </sdk/autopilot/python/tutorial-advanced_autopilot/#multi-touch>`_ 
 gestures which can be used to simulate user input required to drive an
 application or system under test. These APIs should be used in
 conjunction with `*Platform
-Selection* </sdk/autopilot/python/tutorial-advanced_autopilot#platform-selection>`__
+Selection* </sdk/autopilot/python/tutorial-advanced_autopilot/#platform-selection>`_ 
 to detect platform capabilities and ensure the correct input API is
 being used.
 
-.. rubric:: Single-Touch\ ` <#single-touch>`__
+.. rubric:: Single-Touch\ ` <#single-touch>`_ 
    :name: single-touch
 
 ``autopilot.input.Touch`` provides single-touch input gestures, which
@@ -443,11 +447,11 @@ performed on both of these input types.
 
 This example demonstrates swiping from the center of the screen to the
 left edge, which could for example be used in `Ubuntu
-Touch <http://www.ubuntu.com/phone/features>`__ to swipe a new scope
+Touch <http://www.ubuntu.com/phone/features>`_  to swipe a new scope
 into view.
 
 #. First calculate the center point of the screen (see: `*Display
-   Information* </sdk/autopilot/python/tutorial-advanced_autopilot#display-information>`__):
+   Information* </sdk/autopilot/python/tutorial-advanced_autopilot/#display-information>`_ ):
 
    .. raw:: html
 
@@ -497,7 +501,7 @@ into view.
 
       </div>
 
-.. rubric:: Multi-Touch\ ` <#multi-touch>`__
+.. rubric:: Multi-Touch\ ` <#multi-touch>`_ 
    :name: multi-touch
 
 ``autopilot.gestures`` provides support for multi-touch input which
@@ -508,7 +512,7 @@ includes:
 
 This example demonstrates how to use the pinch gesture, which for
 example could be used on `Ubuntu
-Touch <http://www.ubuntu.com/phone/features>`__ web-browser, or gallery
+Touch <http://www.ubuntu.com/phone/features>`_  web-browser, or gallery
 application to zoom in or out of currently displayed content.
 
 #. To zoom in, pinch vertically outwards from the center point by 100
@@ -565,7 +569,7 @@ device. However, if run on a desktop environment it will behave as if
 the mouse select button is pressed whilst moving the mouse pointer. For
 example to select some text in a document.
 
-.. rubric:: Advanced Backend Picking\ ` <#advanced-backend-picking>`__
+.. rubric:: Advanced Backend Picking\ ` <#advanced-backend-picking>`_ 
    :name: advanced-backend-picking
 
 Several features in autopilot are provided by more than one backend. For
@@ -583,7 +587,7 @@ Other autopilot systems that make use of multiple backends include the
 ``autopilot.display`` and ``autopilot.process`` modules. Every class in
 these modules follows the same construction pattern:
 
-.. rubric:: Default Creation\ ` <#default-creation>`__
+.. rubric:: Default Creation\ ` <#default-creation>`_ 
    :name: default-creation
 
 By default, calling the ``create()`` method with no arguments will
@@ -615,7 +619,7 @@ that uses X11 on Desktop systems, and UInput on other systems. On the
 rare occaison when test authors need to construct these objects
 themselves, we expect that the default creation pattern to be used.
 
-.. rubric:: Picking a Backend\ ` <#picking-a-backend>`__
+.. rubric:: Picking a Backend\ ` <#picking-a-backend>`_ 
    :name: picking-a-backend
 
 Test authors may sometimes want to pick a specific backend. The possible
@@ -659,7 +663,7 @@ see ``autopilot.input.Keyboard.create`` method documenation for further
 details.
 
 .. rubric:: Possible Errors when Creating
-   Backends\ ` <#possible-errors-when-creating-backends>`__
+   Backends\ ` <#possible-errors-when-creating-backends>`_ 
    :name: possible-errors-when-creating-backends
 
 Lots of things can go wrong when creating backends with the ``create``
@@ -716,13 +720,13 @@ usually handles for you):
     'UInputError(\'"/dev/uinput" cannot be opened for writing\',)'
     'BackendException(\'Error while initialising backend. Original exception was: "/dev/uinput" cannot be opened for writing\',)'
 
-.. rubric:: Keyboard Backends\ ` <#keyboard-backends>`__
+.. rubric:: Keyboard Backends\ ` <#keyboard-backends>`_ 
    :name: keyboard-backends
 
    class="section">
 
 .. rubric:: A quick introduction to the Keyboard
-   backends\ ` <#a-quick-introduction-to-the-keyboard-backends>`__
+   backends\ ` <#a-quick-introduction-to-the-keyboard-backends>`_ 
    :name: a-quick-introduction-to-the-keyboard-backends
 
 Each backend has a different method of operating behind the scenes to
@@ -748,7 +752,7 @@ Here is a quick overview of how each backend works.
    class="section">
 
 .. rubric:: Limitations of the different Keyboard
-   backends\ ` <#limitations-of-the-different-keyboard-backends>`__
+   backends\ ` <#limitations-of-the-different-keyboard-backends>`_ 
    :name: limitations-of-the-different-keyboard-backends
 
 While every effort has been made so that the Keyboard devices act the
@@ -807,7 +811,7 @@ Here is a list of known limitations:
       that is not supported by the OSK backend (or the current language
       layout).
 
-.. rubric:: Process Control\ ` <#process-control>`__
+.. rubric:: Process Control\ ` <#process-control>`_ 
    :name: process-control
 
 The ``autopilot.process`` module provides the ``ProcessManager`` class
@@ -819,33 +823,33 @@ that have been launched during testing.
 
 Note
 
-```ProcessManager`` </sdk/autopilot/python/autopilot.process/ProcessManager#autopilot.process.ProcessManager>`__
+:ref:```ProcessManager`` <sdk_autopilot_process_processmanager#autopilot.process.ProcessManager>`
 is not intended for introspecting an application’s object tree, for this
 see `*Launching
-Applications* </sdk/autopilot/python/tutorial-advanced_autopilot#launching-applications>`__.
+Applications* </sdk/autopilot/python/tutorial-advanced_autopilot/#launching-applications>`_ .
 Also it does not provide a method for interacting with an application’s
 UI or specific features.
 
 Properties of an application and its windows can be accessed using the
 classes
-```Application`` </sdk/autopilot/python/autopilot.process/Application#autopilot.process.Application>`__
+:ref:```Application`` <sdk_autopilot_process_application#autopilot.process.Application>`
 and
-```Window`` </sdk/autopilot/python/autopilot.process/Window#autopilot.process.Window>`__,
+:ref:```Window`` <sdk_autopilot_process_window#autopilot.process.Window>`,
 which also allows the window instance to be focused and closed.
 
 A list of known applications is defined in
-```KNOWN_APPS`` </sdk/autopilot/python/autopilot.process/ProcessManager#autopilot.process.ProcessManager.KNOWN_APPS>`__
+:ref:```KNOWN_APPS`` <sdk_autopilot_process_processmanager#autopilot.process.ProcessManager.KNOWN_APPS>`
 and these can easily be referenced by name. This list can also be
 updated using
-```register_known_application`` </sdk/autopilot/python/autopilot.process/ProcessManager#autopilot.process.ProcessManager.register_known_application>`__
+:ref:```register_known_application`` <sdk_autopilot_process_processmanager#autopilot.process.ProcessManager.register_known_application>`
 and
-```unregister_known_application`` </sdk/autopilot/python/autopilot.process/ProcessManager#autopilot.process.ProcessManager.unregister_known_application>`__
+:ref:```unregister_known_application`` <sdk_autopilot_process_processmanager#autopilot.process.ProcessManager.unregister_known_application>`
 for easier use during the test.
 
 To use the
-```ProcessManager`` </sdk/autopilot/python/autopilot.process/ProcessManager#autopilot.process.ProcessManager>`__
+:ref:```ProcessManager`` <sdk_autopilot_process_processmanager#autopilot.process.ProcessManager>`
 the static
-```create`` </sdk/autopilot/python/autopilot.process/ProcessManager#autopilot.process.ProcessManager.create>`__
+:ref:```create`` <sdk_autopilot_process_processmanager#autopilot.process.ProcessManager.create>`
 method should be called, which returns an initialised object instance.
 
 A simple example to launch the gedit text editor and check it is in
@@ -866,11 +870,11 @@ focus:
 
 Note
 
-```ProcessManager`` </sdk/autopilot/python/autopilot.process/ProcessManager#autopilot.process.ProcessManager>`__
+:ref:```ProcessManager`` <sdk_autopilot_process_processmanager#autopilot.process.ProcessManager>`
 is only available on environments that use bamf, i.e. desktop running
 Unity 7. There is currently no process manager for any other platform.
 
-.. rubric:: Display Information\ ` <#display-information>`__
+.. rubric:: Display Information\ ` <#display-information>`_ 
    :name: display-information
 
 Autopilot provides the ``autopilot.display`` module to get information
@@ -881,9 +885,9 @@ environment with multiple screens, or on a variety of touch devices that
 have different screen sizes.
 
 The user must call the static
-```create`` </sdk/autopilot/python/autopilot.display/Display#autopilot.display.Display.create>`__
+:ref:```create`` <sdk_autopilot_display_display#autopilot.display.Display.create>`
 method to get an instance of the
-```Display`` </sdk/autopilot/python/autopilot.display/Display#autopilot.display.Display>`__
+:ref:```Display`` <sdk_autopilot_display_display#autopilot.display.Display>`
 class.
 
 This example shows how to get the size of each available screen, which
@@ -902,13 +906,13 @@ events).:
         print('screen {0}: {1}x{2}'.format(screen, width, height))
 
 .. rubric:: Writing Custom Proxy
-   Classes\ ` <#writing-custom-proxy-classes>`__
+   Classes\ ` <#writing-custom-proxy-classes>`_ 
    :name: writing-custom-proxy-classes
 
 By default, autopilot will generate an object for every introspectable
 item in your application under test. These are generated on the fly, and
 derive from
-```ProxyBase`` </sdk/autopilot/python/autopilot.introspection/ProxyBase#autopilot.introspection.ProxyBase>`__.
+:ref:```ProxyBase`` <sdk_autopilot_introspection_proxybase#autopilot.introspection.ProxyBase>`.
 This gives you the usual methods of selecting other nodes in the object
 tree, as well the the means to inspect all the properties in that class.
 
@@ -921,7 +925,7 @@ couple of simple steps:
 #. First, you must define your own base class, to be used by all custom
    proxy objects in your test suite. This base class can be empty, but
    must derive from
-   ```ProxyBase`` </sdk/autopilot/python/autopilot.introspection/ProxyBase#autopilot.introspection.ProxyBase>`__.
+   :ref:```ProxyBase`` <sdk_autopilot_introspection_proxybase#autopilot.introspection.ProxyBase>`.
    An example class might look like this:
 
    .. raw:: html
@@ -951,7 +955,7 @@ For Ubuntu applications using Ubuntu UI Toolkit objects, you should
 derive your custom proxy object from
 UbuntuUIToolkitCustomProxyObjectBase. This base class is also derived
 from
-```ProxyBase`` </sdk/autopilot/python/autopilot.introspection/ProxyBase#autopilot.introspection.ProxyBase>`__
+:ref:```ProxyBase`` <sdk_autopilot_introspection_proxybase#autopilot.introspection.ProxyBase>`
 and is used for all Ubuntu UI Toolkit custom proxy objects. So if you
 are introspecting objects from Ubuntu UI Toolkit then this is the base
 class to use.
@@ -1057,7 +1061,7 @@ emulator\_base parameter should be:
     emulator_base=ubuntuuitoolkit.UbuntuUIToolkitCustomProxyObjectBase
 
 4. You can pass the custom proxy class to methods like
-   ```select_single`` </sdk/autopilot/python/autopilot.introspection/ProxyBase#autopilot.introspection.ProxyBase.select_single>`__
+   :ref:```select_single`` <sdk_autopilot_introspection_proxybase#autopilot.introspection.ProxyBase.select_single>`
    instead of a string. So, for example, the following is a valid way of
    selecting the QLabel instances in an application:
 
@@ -1085,7 +1089,7 @@ emulator\_base parameter should be:
 If you are introspecting an application that already has a custom proxy
 base class defined, then this class can simply be imported and passed to
 the appropriate application launcher method. See `*launching
-applications* </sdk/autopilot/python/tutorial-advanced_autopilot#launching-applications>`__
+applications* </sdk/autopilot/python/tutorial-advanced_autopilot/#launching-applications>`_ 
 for more details on launching an application for introspection. This
 will allow you to call all of the public methods of the application’s
 proxy base class directly in your test.
@@ -1107,22 +1111,22 @@ navigate to a url using the base class go\_to\_url() method:
             # main_window is a property of the Webbrowser class
             app.main_window.go_to_url('http://www.ubuntu.com')
 
-.. rubric:: Launching Applications\ ` <#launching-applications>`__
+.. rubric:: Launching Applications\ ` <#launching-applications>`_ 
    :name: launching-applications
 
 Applications can be launched inside of a testcase using the application
 launcher methods from the
-```AutopilotTestCase`` </sdk/autopilot/python/autopilot.testcase/AutopilotTestCase#autopilot.testcase.AutopilotTestCase>`__
+:ref:```AutopilotTestCase`` <sdk_autopilot_testcase_autopilottestcase#autopilot.testcase.AutopilotTestCase>`
 class. The exact method required will depend upon the type of
 application being launched:
 
--  ```launch_test_application`` </sdk/autopilot/python/autopilot.testcase/AutopilotTestCase#autopilot.testcase.AutopilotTestCase.launch_test_application>`__
+-  :ref:```launch_test_application`` <sdk_autopilot_testcase_autopilottestcase#autopilot.testcase.AutopilotTestCase.launch_test_application>`
    is used to launch regular executables
--  ```launch_upstart_application`` </sdk/autopilot/python/autopilot.testcase/AutopilotTestCase#autopilot.testcase.AutopilotTestCase.launch_upstart_application>`__
+-  :ref:```launch_upstart_application`` <sdk_autopilot_testcase_autopilottestcase#autopilot.testcase.AutopilotTestCase.launch_upstart_application>`
    is used to launch upstart-based applications
--  ```launch_click_package`` </sdk/autopilot/python/autopilot.testcase/AutopilotTestCase#autopilot.testcase.AutopilotTestCase.launch_click_package>`__
+-  :ref:```launch_click_package`` <sdk_autopilot_testcase_autopilottestcase#autopilot.testcase.AutopilotTestCase.launch_click_package>`
    is used to launch applications inside a `click
-   package <https://click.readthedocs.org/en/latest/>`__
+   package <https://click.readthedocs.org/en/latest/>`_ 
 
 This example shows how to launch an installed click application from
 within a test case:
@@ -1137,10 +1141,10 @@ within a test case:
             app_proxy = self.launch_click_package('com.ubuntu.calculator')
 
 Outside of testcase classes, the
-```NormalApplicationLauncher`` </sdk/autopilot/python/autopilot.application/NormalApplicationLauncher#autopilot.application.NormalApplicationLauncher>`__,
-```UpstartApplicationLauncher`` </sdk/autopilot/python/autopilot.application/UpstartApplicationLauncher#autopilot.application.UpstartApplicationLauncher>`__,
+:ref:```NormalApplicationLauncher`` <sdk_autopilot_application_normalapplicationlauncher#autopilot.application.NormalApplicationLauncher>`,
+:ref:```UpstartApplicationLauncher`` <sdk_autopilot_application_upstartapplicationlauncher#autopilot.application.UpstartApplicationLauncher>`,
 and
-```ClickApplicationLauncher`` </sdk/autopilot/python/autopilot.application/ClickApplicationLauncher#autopilot.application.ClickApplicationLauncher>`__
+:ref:```ClickApplicationLauncher`` <sdk_autopilot_application_clickapplicationlauncher#autopilot.application.ClickApplicationLauncher>`
 fixtures can be used, e.g.:
 
 ::
@@ -1194,10 +1198,10 @@ unavoidable.
 
 The main qml file of some click applications can also be launched
 directly from source. This can be done using the
-`qmlscene <https://developer.ubuntu.com/sdk/qml/sdk-1.0/QtQuick/qtquick-qmlscene/>`__
+`qmlscene <https://developer.ubuntu.com/sdk/qml/sdk-1.0/QtQuick/qtquick-qmlscene/>`_ 
 application directly on the target application’s main qml file. This
 example uses
-```launch_test_application`` </sdk/autopilot/python/autopilot.testcase/AutopilotTestCase#autopilot.testcase.AutopilotTestCase.launch_test_application>`__
+:ref:```launch_test_application`` <sdk_autopilot_testcase_autopilottestcase#autopilot.testcase.AutopilotTestCase.launch_test_application>`
 method from within a test case:
 
 ::
@@ -1206,5 +1210,5 @@ method from within a test case:
 
 However, using this method it will not be possible to return an
 application specific custom proxy object, see `*Writing Custom Proxy
-Classes* </sdk/autopilot/python/tutorial-advanced_autopilot#custom-proxy-classes>`__.
+Classes* </sdk/autopilot/python/tutorial-advanced_autopilot/#custom-proxy-classes>`_ .
 

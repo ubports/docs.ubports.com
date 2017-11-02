@@ -1,3 +1,7 @@
+.. _sdk_qtqml_module_definition_qmldir_files:
+QtQml Module Definition qmldir Files
+====================================
+
 
 
 There are two distinct types of ``qmldir`` files:
@@ -8,7 +12,7 @@ There are two distinct types of ``qmldir`` files:
 This documentation covers only the second form of ``qmldir`` file. For
 more information about the first form of ``qmldir`` file, please see the
 documentation about `directory listing qmldir
-files </sdk/apps/qml/QtQml/qtqml-syntax-directoryimports#directory-listing-qmldir-files>`__.
+files </sdk/apps/qml/QtQml/qtqml-syntax-directoryimports/#directory-listing-qmldir-files>`_ .
 
 .. rubric:: Contents of a Module Definition qmldir File
    :name: contents-of-a-module-definition-qmldir-file
@@ -31,9 +35,9 @@ consists of the following commands:
 |                          |                          | The `module identifier   |
 |                          |                          | directive </sdk/apps/qml |
 |                          |                          | /QtQml/qtqml-modules-ide |
-|                          |                          | ntifiedmodules#semantics |
-|                          |                          | -of-identified-modules>` |
-|                          |                          | __                       |
+|                          |                          | ntifiedmodules/#semantic |
+|                          |                          | s-of-identified-modules> |
+|                          |                          | `_                       |
 |                          |                          | must be the first line   |
 |                          |                          | of the file. Exactly one |
 |                          |                          | module identifier        |
@@ -49,7 +53,7 @@ consists of the following commands:
 | Object Type Declaration  | .. code:: cpp            | Declares a `QML object   |
 |                          |                          | type </sdk/apps/qml/QtQm |
 |                          |     <TypeName> <InitialV | l/qtqml-typesystem-objec |
-|                          | ersion> <File>           | ttypes/>`__              |
+|                          | ersion> <File>           | ttypes/>`_               |
 |                          |                          | to be made available by  |
 |                          |                          | the module.              |
 |                          |                          |                          |
@@ -104,9 +108,9 @@ consists of the following commands:
 |                          |                          | Installed Identified     |
 |                          |                          | Modules </sdk/apps/qml/Q |
 |                          |                          | tQml/qtqml-modules-ident |
-|                          |                          | ifiedmodules#remotely-in |
-|                          |                          | stalled-identified-modul |
-|                          |                          | es>`__)                  |
+|                          |                          | ifiedmodules/#remotely-i |
+|                          |                          | nstalled-identified-modu |
+|                          |                          | les>`_ )                 |
 |                          |                          | because if an exported   |
 |                          |                          | type depends on an       |
 |                          |                          | non-exported type within |
@@ -144,12 +148,12 @@ consists of the following commands:
 |                          |                          | JavaScript               |
 |                          |                          | resources </sdk/apps/qml |
 |                          |                          | /QtQml/qtqml-javascript- |
-|                          |                          | resources/>`__           |
+|                          |                          | resources/>`_            |
 |                          |                          | and `Importing           |
 |                          |                          | JavaScript Resources In  |
 |                          |                          | QML </sdk/apps/qml/QtQml |
 |                          |                          | /qtqml-javascript-import |
-|                          |                          | s/>`__                   |
+|                          |                          | s/>`_                    |
 |                          |                          | for more information.    |
 +--------------------------+--------------------------+--------------------------+
 | C++ Plugin Declaration   | .. code:: cpp            | Declares a plugin to be  |
@@ -234,9 +238,9 @@ consists of the following commands:
 | Type Information         | .. code:: cpp            | Declares a `type         |
 | Description File         |                          | description              |
 | Declaration              |     typeinfo <File>      | file </sdk/apps/qml/QtQm |
-|                          |                          | l/qtqml-modules-qmldir#w |
-|                          |                          | riting-a-qmltypes-file>` |
-|                          |                          | __                       |
+|                          |                          | l/qtqml-modules-qmldir/# |
+|                          |                          | writing-a-qmltypes-file> |
+|                          |                          | `_                       |
 |                          |                          | for the module that can  |
 |                          |                          | be read by QML tools     |
 |                          |                          | such as Qt Creator to    |
@@ -405,7 +409,7 @@ resource which is only available if version 2.0 or greater of the module
 is imported, accessible via the ``MathFunctions`` identifier.
 
 If the module is
-`installed </sdk/apps/qml/QtQml/qtqml-modules-identifiedmodules/>`__
+`installed </sdk/apps/qml/QtQml/qtqml-modules-identifiedmodules/>`_ 
 into the QML import path, clients could import and use the module in the
 following manner:
 

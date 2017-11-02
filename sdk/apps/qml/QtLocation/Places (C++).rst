@@ -1,3 +1,7 @@
+.. _sdk_qtlocation_places_(c++):
+QtLocation Places (C++)
+=======================
+
 
 
 .. rubric:: Overview
@@ -101,7 +105,7 @@ we delete the reply since they are for single use only.
 results may contain places which have further details that can be
 fetched on a place by place basis. To fetch these other details see
 `Fetching Place
-Details </sdk/apps/qml/QtLocation/location-places-cpp#fetching-place-details>`__.
+Details </sdk/apps/qml/QtLocation/location-places-cpp/#fetching-place-details>`_ .
 
 .. rubric:: Recommendations
    :name: recommendations
@@ -298,7 +302,7 @@ The Places API only supports saving of the following *core details*:
 
 It is possible that providers may only support a subset of these. See
 the `plugin
-documentation </sdk/apps/qml/QtLocation/qtlocation-index#plugin-references-and-parameters>`__
+documentation </sdk/apps/qml/QtLocation/qtlocation-index/#plugin-references-and-parameters>`_ 
 for more details.
 
 Saving of properties such as the rating, extended attributes, images,

@@ -1,3 +1,7 @@
+.. _sdk_scopejs_categoryrenderer:
+ScopeJS CategoryRenderer
+========================
+
 
 A category renderer template in JSON format.
 

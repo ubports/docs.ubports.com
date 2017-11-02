@@ -1,3 +1,7 @@
+.. _sdk_qtmultimedia_audio_overview:
+QtMultimedia Audio Overview
+===========================
+
 
 
 .. rubric:: Audio Features
@@ -215,19 +219,18 @@ There are both C++ and QML examples available.
    :name: qml-types
 
 +--------------------------------------+--------------------------------------+
-| `Audio </sdk/apps/qml/QtMultimedia/A | Add audio playback to a scene        |
-| udio/>`__                            |                                      |
+| :ref:`Audio <sdk_qtmultimedia_audio>`| Add audio playback to a scene        |
 +--------------------------------------+--------------------------------------+
-| `MediaPlayer </sdk/apps/qml/QtMultim | Add media playback to a scene        |
-| edia/MediaPlayer/>`__                |                                      |
+| :ref:`MediaPlayer <sdk_qtmultimedia_media | Add media playback to a scene        |
+| player>`_                            |                                      |
 +--------------------------------------+--------------------------------------+
-| `Playlist </sdk/apps/qml/QtMultimedi | For specifying a list of media to be |
-| a/Playlist/>`__                      | played                               |
+| :ref:`Playlist <sdk_qtmultimedia_playlist | For specifying a list of media to be |
+| >`_                                  | played                               |
 +--------------------------------------+--------------------------------------+
-| `PlaylistItem </sdk/apps/qml/QtMulti | Defines an item in a Playlist        |
-| media/PlaylistItem/>`__              |                                      |
+| :ref:`PlaylistItem <sdk_qtmultimedia_play | Defines an item in a Playlist        |
+| listitem>`_                          |                                      |
 +--------------------------------------+--------------------------------------+
-| `SoundEffect </sdk/apps/qml/QtMultim | Type provides a way to play sound    |
-| edia/SoundEffect/>`__                | effects in QML                       |
+| :ref:`SoundEffect <sdk_qtmultimedia_sound | Type provides a way to play sound    |
+| effect>`_                            | effects in QML                       |
 +--------------------------------------+--------------------------------------+
 

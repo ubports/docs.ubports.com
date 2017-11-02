@@ -1,8 +1,12 @@
+.. _sdk_unity_scopes_testing_outofprocessbenchmark:
+unity.scopes.testing OutOfProcessBenchmark
+==========================================
+
 The
-`OutOfProcessBenchmark </sdk/scopes/cpp/unity.scopes.testing/OutOfProcessBenchmark/>`__
+:ref:`OutOfProcessBenchmark <sdk_unity_scopes_testing_outofprocessbenchmark>`
 class provides scope authors with runtime benchmarking capabilities. The
 actual runs are executed in another process.
-`More... </sdk/scopes/cpp/unity.scopes.testing/OutOfProcessBenchmark#details>`__
+:ref:`More... <sdk_unity_scopes_testing_outofprocessbenchmark#details>`
 
 ``#include <unity/scopes/testing/OutOfProcessBenchmark.h>``
 
@@ -15,13 +19,13 @@ Inheritance diagram for unity::scopes::testing::OutOfProcessBenchmark:
         Public Member Functions
 -------------------------------
 
-`Result </sdk/scopes/cpp/unity.scopes.testing/Benchmark.Result/>`__ 
+`Result </sdk/scopes/cpp/unity.scopes.testing/Benchmark.Result/>`_  
 
-`for\_query </sdk/scopes/cpp/unity.scopes.testing/OutOfProcessBenchmark#a530a08db775c38ea13478a3d8e1c5bbc>`__
+:ref:`for\_query <sdk_unity_scopes_testing_outofprocessbenchmark#a530a08db775c38ea13478a3d8e1c5bbc>`
 (const std::shared\_ptr<
-`unity::scopes::ScopeBase </sdk/scopes/cpp/unity.scopes.ScopeBase/>`__ >
+`unity::scopes::ScopeBase </sdk/scopes/cpp/unity.scopes.ScopeBase/>`_  >
 &scope,
-`QueryConfiguration </sdk/scopes/cpp/unity.scopes.testing/Benchmark.QueryConfiguration/>`__
+`QueryConfiguration </sdk/scopes/cpp/unity.scopes.testing/Benchmark.QueryConfiguration/>`_ 
 configuration) override
 
  
@@ -31,13 +35,13 @@ configuration) override
 
  
 
-`Result </sdk/scopes/cpp/unity.scopes.testing/Benchmark.Result/>`__ 
+`Result </sdk/scopes/cpp/unity.scopes.testing/Benchmark.Result/>`_  
 
-`for\_preview </sdk/scopes/cpp/unity.scopes.testing/OutOfProcessBenchmark#a397be9ae5eaca3d6ca96fa2957498c86>`__
+:ref:`for\_preview <sdk_unity_scopes_testing_outofprocessbenchmark#a397be9ae5eaca3d6ca96fa2957498c86>`
 (const std::shared\_ptr<
-`unity::scopes::ScopeBase </sdk/scopes/cpp/unity.scopes.ScopeBase/>`__ >
+`unity::scopes::ScopeBase </sdk/scopes/cpp/unity.scopes.ScopeBase/>`_  >
 &scope,
-`PreviewConfiguration </sdk/scopes/cpp/unity.scopes.testing/Benchmark.PreviewConfiguration/>`__
+`PreviewConfiguration </sdk/scopes/cpp/unity.scopes.testing/Benchmark.PreviewConfiguration/>`_ 
 preview\_configuration) override
 
  
@@ -47,13 +51,13 @@ preview\_configuration) override
 
  
 
-`Result </sdk/scopes/cpp/unity.scopes.testing/Benchmark.Result/>`__ 
+`Result </sdk/scopes/cpp/unity.scopes.testing/Benchmark.Result/>`_  
 
-`for\_activation </sdk/scopes/cpp/unity.scopes.testing/OutOfProcessBenchmark#ad918f6c89543eabb3492eb834712e38f>`__
+:ref:`for\_activation <sdk_unity_scopes_testing_outofprocessbenchmark#ad918f6c89543eabb3492eb834712e38f>`
 (const std::shared\_ptr<
-`unity::scopes::ScopeBase </sdk/scopes/cpp/unity.scopes.ScopeBase/>`__ >
+`unity::scopes::ScopeBase </sdk/scopes/cpp/unity.scopes.ScopeBase/>`_  >
 &scope,
-`ActivationConfiguration </sdk/scopes/cpp/unity.scopes.testing/Benchmark.ActivationConfiguration/>`__
+`ActivationConfiguration </sdk/scopes/cpp/unity.scopes.testing/Benchmark.ActivationConfiguration/>`_ 
 activation\_configuration) override
 
  
@@ -63,13 +67,13 @@ activation\_configuration) override
 
  
 
-`Result </sdk/scopes/cpp/unity.scopes.testing/Benchmark.Result/>`__ 
+`Result </sdk/scopes/cpp/unity.scopes.testing/Benchmark.Result/>`_  
 
-`for\_action </sdk/scopes/cpp/unity.scopes.testing/OutOfProcessBenchmark#a47874911c026c201699d8fce0443e4bb>`__
+:ref:`for\_action <sdk_unity_scopes_testing_outofprocessbenchmark#a47874911c026c201699d8fce0443e4bb>`
 (const std::shared\_ptr<
-`unity::scopes::ScopeBase </sdk/scopes/cpp/unity.scopes.ScopeBase/>`__ >
+`unity::scopes::ScopeBase </sdk/scopes/cpp/unity.scopes.ScopeBase/>`_  >
 &scope,
-`ActionConfiguration </sdk/scopes/cpp/unity.scopes.testing/Benchmark.ActionConfiguration/>`__
+`ActionConfiguration </sdk/scopes/cpp/unity.scopes.testing/Benchmark.ActionConfiguration/>`_ 
 activation\_configuration) override
 
  
@@ -83,32 +87,32 @@ Detailed Description
 --------------------
 
 The
-`OutOfProcessBenchmark </sdk/scopes/cpp/unity.scopes.testing/OutOfProcessBenchmark/>`__
+:ref:`OutOfProcessBenchmark <sdk_unity_scopes_testing_outofprocessbenchmark>`
 class provides scope authors with runtime benchmarking capabilities. The
 actual runs are executed in another process.
 
 Please note that this class provides better test isolation than the
 class
-`InProcessBenchmark </sdk/scopes/cpp/unity.scopes.testing/InProcessBenchmark/>`__
-and we promote use of this implementation due to this feature. However,
-as the internal implementation relies on fork(), the results in case of
+:ref:`InProcessBenchmark <sdk_unity_scopes_testing_inprocessbenchmark>` and
+we promote use of this implementation due to this feature. However, as
+the internal implementation relies on fork(), the results in case of
 multi-threaded environments that exist before the execution of the
 benchmark are undefined.
 
-`unity::scopes::testing::OutOfProcessBenchmark </sdk/scopes/cpp/unity.scopes.testing/OutOfProcessBenchmark/>`__
+:ref:`unity::scopes::testing::OutOfProcessBenchmark <sdk_unity_scopes_testing_outofprocessbenchmark>`
 benchmark;
 
 unity::scopes::Query query{scope\_id};
 
 query.set\_query\_string(scope\_query\_string);
 
-`unity::scopes::SearchMetadata </sdk/scopes/cpp/unity.scopes.SearchMetadata/>`__
+`unity::scopes::SearchMetadata </sdk/scopes/cpp/unity.scopes.SearchMetadata/>`_ 
 meta\_data{default\_locale, default\_form\_factor};
 
-`unity::scopes::testing::Benchmark::QueryConfiguration </sdk/scopes/cpp/unity.scopes.testing/Benchmark.QueryConfiguration/>`__
+`unity::scopes::testing::Benchmark::QueryConfiguration </sdk/scopes/cpp/unity.scopes.testing/Benchmark.QueryConfiguration/>`_ 
 config;
 
-config.\ `sampler </sdk/scopes/cpp/unity.scopes.testing/Benchmark.QueryConfiguration#a164536c278d29914d24fdbca3a3fa4a8>`__
+config.\ `sampler </sdk/scopes/cpp/unity.scopes.testing/Benchmark.QueryConfiguration/#a164536c278d29914d24fdbca3a3fa4a8>`_ 
 = [query, meta\_data]()
 
 {
@@ -118,7 +122,7 @@ return std::make\_pair(query, meta\_data);
 };
 
 auto result =
-benchmark.\ `for\_query </sdk/scopes/cpp/unity.scopes.testing/OutOfProcessBenchmark#a530a08db775c38ea13478a3d8e1c5bbc>`__\ (scope,
+benchmark.\ :ref:`for\_query <sdk_unity_scopes_testing_outofprocessbenchmark#a530a08db775c38ea13478a3d8e1c5bbc>`\ (scope,
 config);
 
 Member Function Documentation
@@ -137,14 +141,14 @@ Member Function Documentation
 | | s.testing/Benchmar |               |                                      |
 |       | `unity::scopes::Sc |         |                                      |
 |             |                        |                                      |
-| | k.Result/>`__      |               |                                      |
+| | k.Result/>`_       |               |                                      |
 |       | opeBase </sdk/scop |         |                                      |
 |             |                        |                                      |
 | | unity::scopes::tes |               |                                      |
 |       | es/cpp/unity.scope |         |                                      |
 |             |                        |                                      |
 | | ting::OutOfProcess |               |                                      |
-|       | s.ScopeBase/>`__   |         |                                      |
+|       | s.ScopeBase/>`_    |         |                                      |
 |             |                        |                                      |
 | | Benchmark::for\_ac |               |                                      |
 |       | > &                |         |                                      |
@@ -171,7 +175,7 @@ Member Function Documentation
 |       | ionConfiguration/> |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
-|       | `__                |         |                                      |
+|       | `_                 |         |                                      |
 |             |                        |                                      |
 | +--------------------+-------------- |                                      |
 | ------+--------------------+-------- |                                      |
@@ -202,11 +206,10 @@ Parameters
     +-----------------+---------------------------------------+
 
 Returns
-    An instance of
-    `Result </sdk/scopes/cpp/unity.scopes.testing/Result/>`__.
+    An instance of :ref:`Result <sdk_unity_scopes_testing_result>`.
 
 Reimplemented from
-`unity::scopes::testing::InProcessBenchmark </sdk/scopes/cpp/unity.scopes.testing/InProcessBenchmark#a570e17bc7fbb0c7aafb3ed720a5fc35c>`__.
+:ref:`unity::scopes::testing::InProcessBenchmark <sdk_unity_scopes_testing_inprocessbenchmark#a570e17bc7fbb0c7aafb3ed720a5fc35c>`.
 
 +--------------------------------------+--------------------------------------+
 | +--------------------+-------------- | overridevirtual                      |
@@ -221,14 +224,14 @@ Reimplemented from
 | | s.testing/Benchmar |               |                                      |
 |       | `unity::scopes::Sc |         |                                      |
 |             |                        |                                      |
-| | k.Result/>`__      |               |                                      |
+| | k.Result/>`_       |               |                                      |
 |       | opeBase </sdk/scop |         |                                      |
 |             |                        |                                      |
 | | unity::scopes::tes |               |                                      |
 |       | es/cpp/unity.scope |         |                                      |
 |             |                        |                                      |
 | | ting::OutOfProcess |               |                                      |
-|       | s.ScopeBase/>`__   |         |                                      |
+|       | s.ScopeBase/>`_    |         |                                      |
 |             |                        |                                      |
 | | Benchmark::for\_ac |               |                                      |
 |       | > &                |         |                                      |
@@ -255,7 +258,7 @@ Reimplemented from
 |       | .ActivationConfigu |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
-|       | ration/>`__        |         |                                      |
+|       | ration/>`_         |         |                                      |
 |             |                        |                                      |
 | +--------------------+-------------- |                                      |
 | ------+--------------------+-------- |                                      |
@@ -286,11 +289,10 @@ Parameters
     +-----------------+---------------------------------------+
 
 Returns
-    An instance of
-    `Result </sdk/scopes/cpp/unity.scopes.testing/Result/>`__.
+    An instance of :ref:`Result <sdk_unity_scopes_testing_result>`.
 
 Reimplemented from
-`unity::scopes::testing::InProcessBenchmark </sdk/scopes/cpp/unity.scopes.testing/InProcessBenchmark#adc815bde331263487183e38836811610>`__.
+:ref:`unity::scopes::testing::InProcessBenchmark <sdk_unity_scopes_testing_inprocessbenchmark#adc815bde331263487183e38836811610>`.
 
 +--------------------------------------+--------------------------------------+
 | +--------------------+-------------- | overridevirtual                      |
@@ -305,14 +307,14 @@ Reimplemented from
 | | s.testing/Benchmar |               |                                      |
 |       | `unity::scopes::Sc |         |                                      |
 |             |                        |                                      |
-| | k.Result/>`__      |               |                                      |
+| | k.Result/>`_       |               |                                      |
 |       | opeBase </sdk/scop |         |                                      |
 |             |                        |                                      |
 | | unity::scopes::tes |               |                                      |
 |       | es/cpp/unity.scope |         |                                      |
 |             |                        |                                      |
 | | ting::OutOfProcess |               |                                      |
-|       | s.ScopeBase/>`__   |         |                                      |
+|       | s.ScopeBase/>`_    |         |                                      |
 |             |                        |                                      |
 | | Benchmark::for\_pr |               |                                      |
 |       | > &                |         |                                      |
@@ -339,7 +341,7 @@ Reimplemented from
 |       | eviewConfiguration |         |                                      |
 |             |                        |                                      |
 | |                    |               |                                      |
-|       | />`__              |         |                                      |
+|       | />`_               |         |                                      |
 |             |                        |                                      |
 | +--------------------+-------------- |                                      |
 | ------+--------------------+-------- |                                      |
@@ -370,11 +372,10 @@ Parameters
     +-----------------+---------------------------------------+
 
 Returns
-    An instance of
-    `Result </sdk/scopes/cpp/unity.scopes.testing/Result/>`__.
+    An instance of :ref:`Result <sdk_unity_scopes_testing_result>`.
 
 Reimplemented from
-`unity::scopes::testing::InProcessBenchmark </sdk/scopes/cpp/unity.scopes.testing/InProcessBenchmark#a8823d30698cba5f6a03c4989e7356195>`__.
+:ref:`unity::scopes::testing::InProcessBenchmark <sdk_unity_scopes_testing_inprocessbenchmark#a8823d30698cba5f6a03c4989e7356195>`.
 
 +--------------------------------------+--------------------------------------+
 | +--------------------+-------------- | overridevirtual                      |
@@ -389,14 +390,14 @@ Reimplemented from
 | | s.testing/Benchmar |               |                                      |
 |       | `unity::scopes::Sc |         |                                      |
 |             |                        |                                      |
-| | k.Result/>`__      |               |                                      |
+| | k.Result/>`_       |               |                                      |
 |       | opeBase </sdk/scop |         |                                      |
 |             |                        |                                      |
 | | unity::scopes::tes |               |                                      |
 |       | es/cpp/unity.scope |         |                                      |
 |             |                        |                                      |
 | | ting::OutOfProcess |               |                                      |
-|       | s.ScopeBase/>`__   |         |                                      |
+|       | s.ScopeBase/>`_    |         |                                      |
 |             |                        |                                      |
 | | Benchmark::for\_qu |               |                                      |
 |       | > &                |         |                                      |
@@ -454,11 +455,10 @@ Parameters
     +-----------------+---------------------------------------+
 
 Returns
-    An instance of
-    `Result </sdk/scopes/cpp/unity.scopes.testing/Result/>`__.
+    An instance of :ref:`Result <sdk_unity_scopes_testing_result>`.
 
 Reimplemented from
-`unity::scopes::testing::InProcessBenchmark </sdk/scopes/cpp/unity.scopes.testing/InProcessBenchmark#a72460e26d0aa98ae7091f634d0089aa9>`__.
+:ref:`unity::scopes::testing::InProcessBenchmark <sdk_unity_scopes_testing_inprocessbenchmark#a72460e26d0aa98ae7091f634d0089aa9>`.
 
-.. |Inheritance graph| image:: /media/sdk/scopes/cpp/unity.scopes.testing/OutOfProcessBenchmark/classunity_1_1scopes_1_1testing_1_1_out_of_process_benchmark__inherit__graph.png
+.. |Inheritance graph| image:: /mediasdk_unity_scopes_testing_outofprocessbenchmarkclassunity_1_1scopes_1_1testing_1_1_out_of_process_benchmark__inherit__graph.png
 

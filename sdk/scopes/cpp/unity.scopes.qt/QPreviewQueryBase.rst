@@ -1,5 +1,9 @@
+.. _sdk_unity_scopes_qt_qpreviewquerybase:
+unity.scopes.qt QPreviewQueryBase
+=================================
+
 Abstract base class to represent a particular preview.
-`More... </sdk/scopes/cpp/unity.scopes.qt/QPreviewQueryBase#details>`__
+:ref:`More... <sdk_unity_scopes_qt_qpreviewquerybase#details>`
 
 ``#include <unity/scopes/qt/QPreviewQueryBase.h>``
 
@@ -14,7 +18,7 @@ Inheritance diagram for unity::scopes::qt::QPreviewQueryBase:
 
 virtual void 
 
-`run </sdk/scopes/cpp/unity.scopes.qt/QPreviewQueryBase#ad78a0506cb7e2522fc351bfb70ba45dc>`__
+:ref:`run <sdk_unity_scopes_qt_qpreviewquerybase#ad78a0506cb7e2522fc351bfb70ba45dc>`
 (unity::scopes::qt::QPreviewReplyProxy const &reply)=0
 
  
@@ -25,7 +29,7 @@ virtual void 
 
 virtual void 
 
-`cancelled </sdk/scopes/cpp/unity.scopes.qt/QPreviewQueryBase#a9940e957abbea418e3e5975da60afda7>`__
+:ref:`cancelled <sdk_unity_scopes_qt_qpreviewquerybase#a9940e957abbea418e3e5975da60afda7>`
 ()=0
 
  
@@ -35,9 +39,9 @@ virtual void 
 
  
 
-`QResult </sdk/scopes/cpp/unity.scopes.qt/QResult/>`__ 
+:ref:`QResult <sdk_unity_scopes_qt_qresult>` 
 
-`result </sdk/scopes/cpp/unity.scopes.qt/QPreviewQueryBase#ac2085be111dbd8e624af95d0205efc75>`__
+:ref:`result <sdk_unity_scopes_qt_qpreviewquerybase#ac2085be111dbd8e624af95d0205efc75>`
 () const
 
  
@@ -46,9 +50,9 @@ virtual void 
 
  
 
-`QActionMetadata </sdk/scopes/cpp/unity.scopes.qt/QActionMetadata/>`__ 
+:ref:`QActionMetadata <sdk_unity_scopes_qt_qactionmetadata>` 
 
-`action\_metadata </sdk/scopes/cpp/unity.scopes.qt/QPreviewQueryBase#a6fe3ece7ffc9258e9c9fc17ac3bb8f5e>`__
+:ref:`action\_metadata <sdk_unity_scopes_qt_qpreviewquerybase#a6fe3ece7ffc9258e9c9fc17ac3bb8f5e>`
 () const
 
  
@@ -63,7 +67,7 @@ Detailed Description
 Abstract base class to represent a particular preview.
 
 A scope must return an instance of this class from its implementation of
-`ScopeBase::preview() </sdk/scopes/cpp/unity.scopes.ScopeBase#a154b9b4cfc0f40572cfec60dd819396f>`__.
+`ScopeBase::preview() </sdk/scopes/cpp/unity.scopes.ScopeBase/#a154b9b4cfc0f40572cfec60dd819396f>`_ .
 
 Note
     The constructor of the instance must complete in a timely manner. Do
@@ -74,10 +78,10 @@ Member Function Documentation
 
 +----------------+----------------+----------------+----------------+----------------+
 | `QActionMetada | (              |                | )              | const          |
-| ta </sdk/scope |                |                |                |                |
-| s/cpp/unity.sc |                |                |                |                |
-| opes.qt/QActio |                |                |                |                |
-| nMetadata/>`__ |                |                |                |                |
+| ta <sdk_unity_ |                |                |                |                |
+| scopes_qt_qact |                |                |                |                |
+| ionmetadata>`_ |                |                |                |                |
+| _              |                |                |                |                |
 | unity::scopes: |                |                |                |                |
 | :qt::QPreviewQ |                |                |                |                |
 | ueryBase::acti |                |                |                |                |
@@ -127,10 +131,9 @@ to push after cancellation only wastes CPU cycles. (``push()`` returns
 ``false`` once a query is cancelled or exceeds its cardinality limit.)
 
 +----------------+----------------+----------------+----------------+----------------+
-| `QResult </sdk | (              |                | )              | const          |
-| /scopes/cpp/un |                |                |                |                |
-| ity.scopes.qt/ |                |                |                |                |
-| QResult/>`__   |                |                |                |                |
+| :ref:`QResult <sdk_ | (              |                | )              | const          |
+| unity_scopes_q |                |                |                |                |
+| t_qresult>`_   |                |                |                |                |
 | unity::scopes: |                |                |                |                |
 | :qt::QPreviewQ |                |                |                |                |
 | ueryBase::resu |                |                |                |                |
@@ -174,20 +177,20 @@ Returns
 Called by scopes run time to start the query.
 
 Your implementation of
-`run() </sdk/scopes/cpp/unity.scopes.qt/QPreviewQueryBase#ad78a0506cb7e2522fc351bfb70ba45dc>`__
+:ref:`run() <sdk_unity_scopes_qt_qpreviewquerybase#ad78a0506cb7e2522fc351bfb70ba45dc>`
 can use the reply proxy to push results for the query. You can push
 results from within
-`run() </sdk/scopes/cpp/unity.scopes.qt/QPreviewQueryBase#ad78a0506cb7e2522fc351bfb70ba45dc>`__,
+:ref:`run() <sdk_unity_scopes_qt_qpreviewquerybase#ad78a0506cb7e2522fc351bfb70ba45dc>`,
 in which case the query implicitly completes when
-`run() </sdk/scopes/cpp/unity.scopes.qt/QPreviewQueryBase#ad78a0506cb7e2522fc351bfb70ba45dc>`__
+:ref:`run() <sdk_unity_scopes_qt_qpreviewquerybase#ad78a0506cb7e2522fc351bfb70ba45dc>`
 returns. Alternatively,
-`run() </sdk/scopes/cpp/unity.scopes.qt/QPreviewQueryBase#ad78a0506cb7e2522fc351bfb70ba45dc>`__
+:ref:`run() <sdk_unity_scopes_qt_qpreviewquerybase#ad78a0506cb7e2522fc351bfb70ba45dc>`
 can store the reply proxy and return immediately. In this case, you can
 use the stored proxy to push results from another thread. It is safe to
 call ``push()`` from multiple threads without synchronization.
 
 The query completes either when
-`run() </sdk/scopes/cpp/unity.scopes.qt/QPreviewQueryBase#ad78a0506cb7e2522fc351bfb70ba45dc>`__
+:ref:`run() <sdk_unity_scopes_qt_qpreviewquerybase#ad78a0506cb7e2522fc351bfb70ba45dc>`
 returns, or when the last stored reply proxy goes out of scope
 (whichever happens last).
 
@@ -196,5 +199,5 @@ Parameters
     | reply   | The proxy on which to push results for the query.   |
     +---------+-----------------------------------------------------+
 
-.. |Inheritance graph| image:: /media/sdk/scopes/cpp/unity.scopes.qt/QPreviewQueryBase/classunity_1_1scopes_1_1qt_1_1_q_preview_query_base__inherit__graph.png
+.. |Inheritance graph| image:: /mediasdk_unity_scopes_qt_qpreviewquerybaseclassunity_1_1scopes_1_1qt_1_1_q_preview_query_base__inherit__graph.png
 

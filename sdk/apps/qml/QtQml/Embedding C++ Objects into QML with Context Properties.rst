@@ -1,3 +1,7 @@
+.. _sdk_qtqml_embedding_c++_objects_into_qml_with_context_properties:
+QtQml Embedding C++ Objects into QML with Context Properties
+============================================================
+
 
 
 When loading a QML object into a C++ application, it can be useful to
@@ -80,16 +84,15 @@ value, and the QML code invokes a method on the object instance:
 +--------------------------------------+--------------------------------------+
 
 (Note that date/time values returned from C++ to QML can be formatted
-through
-`Qt.formatDateTime() </sdk/apps/qml/QtQml/Qt#formatDateTime-method>`__
-and associated functions.)
+through :ref:`Qt.formatDateTime() <sdk_qtqml_qt#formatDateTime-method>` and
+associated functions.)
 
 If the QML item needs to receive signals from the context property, it
-can connect to them using the
-`Connections </sdk/apps/qml/QtQml/Connections/>`__ type. For example, if
-``ApplicationData`` has a signal named ``dataChanged()``, this signal
-can be connected to using an ``onDataChanged`` handler within a
-`Connections </sdk/apps/qml/QtQml/Connections/>`__ object:
+can connect to them using the :ref:`Connections <sdk_qtqml_connections>`
+type. For example, if ``ApplicationData`` has a signal named
+``dataChanged()``, this signal can be connected to using an
+``onDataChanged`` handler within a
+:ref:`Connections <sdk_qtqml_connections>` object:
 
 .. code:: qml
 

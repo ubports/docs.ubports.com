@@ -1,7 +1,11 @@
+.. _sdk_qtquick_ui_components:_flipable_example:
+QtQuick UI Components: Flipable Example
+=======================================
 
 
-This example shows how to use the
-`Flipable </sdk/apps/qml/QtQuick/Flipable/>`__ element.
+
+This example shows how to use the :ref:`Flipable <sdk_qtquick_flipable>`
+element.
 
 |image0|
 

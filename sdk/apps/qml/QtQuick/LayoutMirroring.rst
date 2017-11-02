@@ -1,3 +1,7 @@
+.. _sdk_qtquick_layoutmirroring:
+QtQuick LayoutMirroring
+=======================
+
 Property used to mirror layout behavior
 
 +---------------------+----------------------+
@@ -7,44 +11,42 @@ Property used to mirror layout behavior
 Properties
 ----------
 
--  ****`childrenInherit </sdk/apps/qml/QtQuick/LayoutMirroring#childrenInherit-prop>`__****
+-  :ref:`childrenInherit <sdk_qtquick_layoutmirroring_childrenInherit-prop>`
    : bool
--  ****`enabled </sdk/apps/qml/QtQuick/LayoutMirroring#enabled-prop>`__****
-   : bool
+-  :ref:`enabled <sdk_qtquick_layoutmirroring_enabled-prop>` : bool
 
 Detailed Description
 --------------------
 
-The `LayoutMirroring </sdk/apps/qml/QtQuick/LayoutMirroring/>`__
-attached property is used to horizontally mirror `Item
-anchors </sdk/apps/qml/QtQuick/qtquick-positioning-anchors#anchor-layout>`__,
-`positioner </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/>`__
+The :ref:`LayoutMirroring <sdk_qtquick_layoutmirroring>` attached property
+is used to horizontally mirror `Item
+anchors </sdk/apps/qml/QtQuick/qtquick-positioning-anchors/#anchor-layout>`_ ,
+`positioner </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/>`_ 
 types (such as
-`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#row>`__ and
-`Grid </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#grid>`__) and
-views (such as `GridView </sdk/apps/qml/QtQuick/draganddrop#gridview>`__
-and horizontal `ListView </sdk/apps/qml/QtQuick/ListView/>`__).
-Mirroring is a visual change: left anchors become right anchors, and
-positioner types like
-`Grid </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#grid>`__ and
-`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#row>`__ reverse
+`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#row>`_  and
+`Grid </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#grid>`_ ) and
+views (such as
+`GridView </sdk/apps/qml/QtQuick/draganddrop/#gridview>`_  and
+horizontal :ref:`ListView <sdk_qtquick_listview>`). Mirroring is a visual
+change: left anchors become right anchors, and positioner types like
+`Grid </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#grid>`_  and
+`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#row>`_  reverse
 the horizontal layout of child items.
 
 Mirroring is enabled for an item by setting the
-`enabled </sdk/apps/qml/QtQuick/LayoutMirroring#enabled-prop>`__
-property to true. By default, this only affects the item itself; setting
-the
-`childrenInherit </sdk/apps/qml/QtQuick/LayoutMirroring#childrenInherit-prop>`__
+:ref:`enabled <sdk_qtquick_layoutmirroring#enabled-prop>` property to true.
+By default, this only affects the item itself; setting the
+:ref:`childrenInherit <sdk_qtquick_layoutmirroring#childrenInherit-prop>`
 property to true propagates the mirroring behavior to all child items as
 well. If the ``LayoutMirroring`` attached property has not been defined
 for an item, mirroring is not enabled.
 
 The following example shows mirroring in action. The
-`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#row>`__ below is
-specified as being anchored to the left of its parent. However, since
+`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#row>`_  below
+is specified as being anchored to the left of its parent. However, since
 mirroring has been enabled, the anchor is horizontally reversed and it
 is now anchored to the right. Also, since items in a
-`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#row>`__ are
+`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#row>`_  are
 positioned from left to right by default, they are now positioned from
 right to left instead, as demonstrated by the numbering and opacity of
 the items:
@@ -81,38 +83,42 @@ the items:
 Layout mirroring is useful when it is necessary to support both
 left-to-right and right-to-left layout versions of an application to
 target different language areas. The
-`childrenInherit </sdk/apps/qml/QtQuick/LayoutMirroring#childrenInherit-prop>`__
+:ref:`childrenInherit <sdk_qtquick_layoutmirroring#childrenInherit-prop>`
 property allows layout mirroring to be applied without manually setting
 layout configurations for every item in an application. Keep in mind,
 however, that mirroring does not affect any positioning that is defined
-by the `Item </sdk/apps/qml/QtQuick/Item/>`__
-`x </sdk/apps/qml/QtQuick/Item#x-prop>`__ coordinate value, so even with
-mirroring enabled, it will often be necessary to apply some layout fixes
-to support the desired layout direction. Also, it may be necessary to
-disable the mirroring of individual child items (by setting
-`LayoutMirroring.enabled </sdk/apps/qml/QtQuick/LayoutMirroring#enabled-prop>`__
+by the :ref:`Item <sdk_qtquick_item>` `x <sdk_qtquick_item#x-prop>`
+coordinate value, so even with mirroring enabled, it will often be
+necessary to apply some layout fixes to support the desired layout
+direction. Also, it may be necessary to disable the mirroring of
+individual child items (by setting
+:ref:`LayoutMirroring.enabled <sdk_qtquick_layoutmirroring#enabled-prop>`
 to false for such items) if mirroring is not the desired behavior, or if
 the child item already implements mirroring in some custom way.
 
 See `Right-to-left User
-Interfaces </sdk/apps/qml/QtQuick/qtquick-positioning-righttoleft/>`__
+Interfaces </sdk/apps/qml/QtQuick/qtquick-positioning-righttoleft/>`_ 
 for further details on using ``LayoutMirroring`` and other related
 features to implement right-to-left support for an application.
 
 Property Documentation
 ----------------------
 
+.. _sdk_qtquick_layoutmirroring_childrenInherit-prop:
+
 +--------------------------------------------------------------------------+
 |        \ childrenInherit : bool                                          |
 +--------------------------------------------------------------------------+
 
 This property holds whether the
-`LayoutMirroring.enabled </sdk/apps/qml/QtQuick/LayoutMirroring#enabled-prop>`__
+:ref:`LayoutMirroring.enabled <sdk_qtquick_layoutmirroring#enabled-prop>`
 value for this item is inherited by its children.
 
 The default value is false.
 
 | 
+
+.. _sdk_qtquick_layoutmirroring_enabled-prop:
 
 +--------------------------------------------------------------------------+
 |        \ enabled : bool                                                  |
@@ -120,21 +126,21 @@ The default value is false.
 
 This property holds whether the item's layout is mirrored horizontally.
 Setting this to true horizontally reverses
-`anchor </sdk/apps/qml/QtQuick/qtquick-positioning-anchors#anchor-layout>`__
+`anchor </sdk/apps/qml/QtQuick/qtquick-positioning-anchors/#anchor-layout>`_ 
 settings such that left anchors become right, and right anchors become
 left. For
-`positioner </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/>`__
+`positioner </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/>`_ 
 types (such as
-`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#row>`__ and
-`Grid </sdk/apps/qml/QtQuick/qtquick-positioning-layouts#grid>`__) and
+`Row </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#row>`_  and
+`Grid </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#grid>`_ ) and
 view types (such as
-`GridView </sdk/apps/qml/QtQuick/draganddrop#gridview>`__ and
-`ListView </sdk/apps/qml/QtQuick/ListView/>`__) this also mirrors the
-horizontal layout direction of the item.
+`GridView </sdk/apps/qml/QtQuick/draganddrop/#gridview>`_  and
+:ref:`ListView <sdk_qtquick_listview>`) this also mirrors the horizontal
+layout direction of the item.
 
 The default value is false.
 
 | 
 
-.. |image0| image:: /media/sdk/apps/qml/QtQuick/LayoutMirroring/images/layoutmirroring.png
+.. |image0| image:: /mediasdk_qtquick_layoutmirroringimages/layoutmirroring.png
 

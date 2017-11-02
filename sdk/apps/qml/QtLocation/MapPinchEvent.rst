@@ -1,3 +1,7 @@
+.. _sdk_qtlocation_mappinchevent:
+QtLocation MapPinchEvent
+========================
+
 MapPinchEvent type provides basic information about pinch event.
 
 +---------------------+-------------------------+
@@ -9,29 +13,27 @@ MapPinchEvent type provides basic information about pinch event.
 Properties
 ----------
 
--  ****`accepted </sdk/apps/qml/QtLocation/MapPinchEvent#accepted-prop>`__****
-   : bool
--  ****`angle </sdk/apps/qml/QtLocation/MapPinchEvent#angle-prop>`__****
-   : real
--  ****`center </sdk/apps/qml/QtLocation/MapPinchEvent#center-prop>`__****
-   : QPoint
--  ****`point1 </sdk/apps/qml/QtLocation/MapPinchEvent#point1-prop>`__****
-   : QPoint
--  ****`point2 </sdk/apps/qml/QtLocation/MapPinchEvent#point2-prop>`__****
-   : QPoint
--  ****`pointCount </sdk/apps/qml/QtLocation/MapPinchEvent#pointCount-prop>`__****
+-  :ref:`accepted <sdk_qtlocation_mappinchevent_accepted-prop>` :
+   bool
+-  :ref:`angle <sdk_qtlocation_mappinchevent_angle-prop>` : real
+-  :ref:`center <sdk_qtlocation_mappinchevent_center-prop>` :
+   QPoint
+-  :ref:`point1 <sdk_qtlocation_mappinchevent_point1-prop>` :
+   QPoint
+-  :ref:`point2 <sdk_qtlocation_mappinchevent_point2-prop>` :
+   QPoint
+-  :ref:`pointCount <sdk_qtlocation_mappinchevent_pointCount-prop>`
    : int
 
 Detailed Description
 --------------------
 
-`MapPinchEvent </sdk/apps/qml/QtLocation/MapPinchEvent/>`__ type
-provides basic information about pinch event. They are present in
-handlers of MapPinch (for example pinchStarted/pinchUpdated). Events are
-only guaranteed to be valid for the duration of the handler.
+:ref:`MapPinchEvent <sdk_qtlocation_mappinchevent>` type provides basic
+information about pinch event. They are present in handlers of MapPinch
+(for example pinchStarted/pinchUpdated). Events are only guaranteed to
+be valid for the duration of the handler.
 
-Except for the
-`accepted </sdk/apps/qml/QtLocation/MapPinchEvent#accepted-prop>`__
+Except for the :ref:`accepted <sdk_qtlocation_mappinchevent#accepted-prop>`
 property, all properties are read-only.
 
 Example Usage
@@ -57,6 +59,8 @@ the finished event.
 Property Documentation
 ----------------------
 
+.. _sdk_qtlocation_mappinchevent_accepted-prop:
+
 +--------------------------------------------------------------------------+
 |        \ accepted : bool                                                 |
 +--------------------------------------------------------------------------+
@@ -66,6 +70,8 @@ handler will result in no further pinch events being generated, and the
 gesture ignored.
 
 | 
+
+.. _sdk_qtlocation_mappinchevent_angle-prop:
 
 +--------------------------------------------------------------------------+
 |        \ angle : real                                                    |
@@ -78,6 +84,8 @@ Zero degrees is at the 3 o'clock position.
 
 | 
 
+.. _sdk_qtlocation_mappinchevent_center-prop:
+
 +--------------------------------------------------------------------------+
 |        \ center : QPoint                                                 |
 +--------------------------------------------------------------------------+
@@ -85,6 +93,8 @@ Zero degrees is at the 3 o'clock position.
 This read-only property holds the current center point.
 
 | 
+
+.. _sdk_qtlocation_mappinchevent_point1-prop:
 
 +--------------------------------------------------------------------------+
 |        \ point1 : QPoint                                                 |
@@ -95,6 +105,8 @@ pinch. The points are not in any particular order.
 
 | 
 
+.. _sdk_qtlocation_mappinchevent_point2-prop:
+
 +--------------------------------------------------------------------------+
 |        \ point2 : QPoint                                                 |
 +--------------------------------------------------------------------------+
@@ -103,6 +115,8 @@ These read-only properties hold the actual touch points generating the
 pinch. The points are not in any particular order.
 
 | 
+
+.. _sdk_qtlocation_mappinchevent_pointCount-prop:
 
 +--------------------------------------------------------------------------+
 |        \ pointCount : int                                                |

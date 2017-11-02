@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_theme:
+Ubuntu.Components Theme
+=======================
+
 The Theme class provides facilities to interact with the current theme.
 
 +---------------------+--------------------------------+
@@ -7,16 +11,15 @@ The Theme class provides facilities to interact with the current theme.
 Properties
 ----------
 
--  ****`name </sdk/apps/qml/Ubuntu.Components/Theme#name-prop>`__**** :
-   string
--  ****`palette </sdk/apps/qml/Ubuntu.Components/Theme#palette-prop>`__****
-   : Palette
+-  :ref:`name <sdk_ubuntu_components_theme_name-prop>` : string
+-  :ref:`palette <sdk_ubuntu_components_theme_palette-prop>` :
+   Palette
 
 Methods
 -------
 
 -  Component
-   ****`createStyleComponent </sdk/apps/qml/Ubuntu.Components/Theme#createStyleComponent-method>`__****\ (string
+   **:ref:`createStyleComponent <sdk_ubuntu_components_theme#createStyleComponent-method>`**\ (string
    *styleName*, object *parent*)
 
 Detailed Description
@@ -49,11 +52,12 @@ Example creating a style component:
         style: Theme.createStyleComponent("MyItemStyle.qml", myItem)
     }
 
-**See also**
-`StyledItem </sdk/apps/qml/Ubuntu.Components/StyledItem/>`__.
+**See also** :ref:`StyledItem <sdk_ubuntu_components_styleditem>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_ubuntu_components_theme_name-prop:
 
 +--------------------------------------------------------------------------+
 |        \ name : string                                                   |
@@ -62,6 +66,8 @@ Property Documentation
 The name of the current theme.
 
 | 
+
+.. _sdk_ubuntu_components_theme_palette-prop:
 
 +--------------------------------------------------------------------------+
 |        \ palette : Palette                                               |
@@ -74,9 +80,11 @@ The palette of the current theme.
 Method Documentation
 --------------------
 
+.. _sdk_ubuntu_components_theme_-method:
+
 +--------------------------------------------------------------------------+
-|        \ `Component </sdk/apps/qml/QtQml/Component/>`__                  |
-| createStyleComponent(string *styleName*, object *parent*)                |
+| :ref:` <>`\ `Component <sdk_qtqml_component>` createStyleComponent(string |
+| *styleName*, object *parent*)                                            |
 +--------------------------------------------------------------------------+
 
 Returns an instance of the style component named *styleName*.

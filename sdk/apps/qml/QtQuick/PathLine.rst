@@ -1,3 +1,7 @@
+.. _sdk_qtquick_pathline:
+QtQuick PathLine
+================
+
 Defines a straight line
 
 +---------------------+----------------------+
@@ -7,12 +11,10 @@ Defines a straight line
 Properties
 ----------
 
--  ****`relativeX </sdk/apps/qml/QtQuick/PathLine#relativeX-prop>`__****
-   : real
--  ****`relativeY </sdk/apps/qml/QtQuick/PathLine#relativeY-prop>`__****
-   : real
--  ****`x </sdk/apps/qml/QtQuick/PathLine#x-prop>`__**** : real
--  ****`y </sdk/apps/qml/QtQuick/PathLine#y-prop>`__**** : real
+-  :ref:`relativeX <sdk_qtquick_pathline_relativeX-prop>` : real
+-  :ref:`relativeY <sdk_qtquick_pathline_relativeY-prop>` : real
+-  :ref:`x <sdk_qtquick_pathline_x-prop>` : real
+-  :ref:`y <sdk_qtquick_pathline_y-prop>` : real
 
 Detailed Description
 --------------------
@@ -27,15 +29,17 @@ The example below creates a path consisting of a straight line from
         PathLine { x: 200; y: 100 }
     }
 
-**See also** `Path </sdk/apps/qml/QtQuick/Path/>`__,
-`PathQuad </sdk/apps/qml/QtQuick/PathQuad/>`__,
-`PathCubic </sdk/apps/qml/QtQuick/PathCubic/>`__,
-`PathArc </sdk/apps/qml/QtQuick/PathArc/>`__,
-`PathCurve </sdk/apps/qml/QtQuick/PathCurve/>`__, and
-`PathSvg </sdk/apps/qml/QtQuick/PathSvg/>`__.
+**See also** :ref:`Path <sdk_qtquick_path>`,
+:ref:`PathQuad <sdk_qtquick_pathquad>`,
+:ref:`PathCubic <sdk_qtquick_pathcubic>`,
+:ref:`PathArc <sdk_qtquick_patharc>`,
+:ref:`PathCurve <sdk_qtquick_pathcurve>`, and
+:ref:`PathSvg <sdk_qtquick_pathsvg>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_pathline_relativeX-prop:
 
 +--------------------------------------------------------------------------+
 |        \ relativeX : real                                                |
@@ -49,10 +53,12 @@ axis, the relative position will be used.
 Relative and absolute positions can be mixed, for example it is valid to
 set a relative x and an absolute y.
 
-**See also** `x </sdk/apps/qml/QtQuick/PathLine#x-prop>`__ and
-`y </sdk/apps/qml/QtQuick/PathLine#y-prop>`__.
+**See also** :ref:`x <sdk_qtquick_pathline#x-prop>` and
+:ref:`y <sdk_qtquick_pathline#y-prop>`.
 
 | 
+
+.. _sdk_qtquick_pathline_relativeY-prop:
 
 +--------------------------------------------------------------------------+
 |        \ relativeY : real                                                |
@@ -66,10 +72,12 @@ axis, the relative position will be used.
 Relative and absolute positions can be mixed, for example it is valid to
 set a relative x and an absolute y.
 
-**See also** `x </sdk/apps/qml/QtQuick/PathLine#x-prop>`__ and
-`y </sdk/apps/qml/QtQuick/PathLine#y-prop>`__.
+**See also** :ref:`x <sdk_qtquick_pathline#x-prop>` and
+:ref:`y <sdk_qtquick_pathline#y-prop>`.
 
 | 
+
+.. _sdk_qtquick_pathline_x-prop:
 
 +--------------------------------------------------------------------------+
 |        \ x : real                                                        |
@@ -77,11 +85,12 @@ set a relative x and an absolute y.
 
 Defines the end point of the line.
 
-**See also**
-`relativeX </sdk/apps/qml/QtQuick/PathLine#relativeX-prop>`__ and
-`relativeY </sdk/apps/qml/QtQuick/PathLine#relativeY-prop>`__.
+**See also** :ref:`relativeX <sdk_qtquick_pathline#relativeX-prop>` and
+:ref:`relativeY <sdk_qtquick_pathline#relativeY-prop>`.
 
 | 
+
+.. _sdk_qtquick_pathline_y-prop:
 
 +--------------------------------------------------------------------------+
 |        \ y : real                                                        |
@@ -89,8 +98,7 @@ Defines the end point of the line.
 
 Defines the end point of the line.
 
-**See also**
-`relativeX </sdk/apps/qml/QtQuick/PathLine#relativeX-prop>`__ and
-`relativeY </sdk/apps/qml/QtQuick/PathLine#relativeY-prop>`__.
+**See also** :ref:`relativeX <sdk_qtquick_pathline#relativeX-prop>` and
+:ref:`relativeY <sdk_qtquick_pathline#relativeY-prop>`.
 
 | 

@@ -1,3 +1,7 @@
+.. _sdk_qtquick_pathcurve:
+QtQuick PathCurve
+=================
+
 Defines a point on a Catmull-Rom curve
 
 +---------------------+----------------------+
@@ -7,20 +11,17 @@ Defines a point on a Catmull-Rom curve
 Properties
 ----------
 
--  ****`relativeX </sdk/apps/qml/QtQuick/PathCurve#relativeX-prop>`__****
-   : real
--  ****`relativeY </sdk/apps/qml/QtQuick/PathCurve#relativeY-prop>`__****
-   : real
--  ****`x </sdk/apps/qml/QtQuick/PathCurve#x-prop>`__**** : real
--  ****`y </sdk/apps/qml/QtQuick/PathCurve#y-prop>`__**** : real
+-  :ref:`relativeX <sdk_qtquick_pathcurve_relativeX-prop>` : real
+-  :ref:`relativeY <sdk_qtquick_pathcurve_relativeY-prop>` : real
+-  :ref:`x <sdk_qtquick_pathcurve_x-prop>` : real
+-  :ref:`y <sdk_qtquick_pathcurve_y-prop>` : real
 
 Detailed Description
 --------------------
 
-`PathCurve </sdk/apps/qml/QtQuick/PathCurve/>`__ provides an easy way to
-specify a curve passing directly through a set of points. Typically
-multiple PathCurves are used in a series, as the following example
-demonstrates:
+:ref:`PathCurve <sdk_qtquick_pathcurve>` provides an easy way to specify a
+curve passing directly through a set of points. Typically multiple
+PathCurves are used in a series, as the following example demonstrates:
 
 .. code:: qml
 
@@ -44,20 +45,21 @@ demonstrates:
     }
 
 This example produces the following path (with the starting point and
-`PathCurve </sdk/apps/qml/QtQuick/PathCurve/>`__ points highlighted in
-red):
+:ref:`PathCurve <sdk_qtquick_pathcurve>` points highlighted in red):
 
 |image0|
 
-**See also** `Path </sdk/apps/qml/QtQuick/Path/>`__,
-`PathLine </sdk/apps/qml/QtQuick/PathLine/>`__,
-`PathQuad </sdk/apps/qml/QtQuick/PathQuad/>`__,
-`PathCubic </sdk/apps/qml/QtQuick/PathCubic/>`__,
-`PathArc </sdk/apps/qml/QtQuick/PathArc/>`__, and
-`PathSvg </sdk/apps/qml/QtQuick/PathSvg/>`__.
+**See also** :ref:`Path <sdk_qtquick_path>`,
+:ref:`PathLine <sdk_qtquick_pathline>`,
+:ref:`PathQuad <sdk_qtquick_pathquad>`,
+:ref:`PathCubic <sdk_qtquick_pathcubic>`,
+:ref:`PathArc <sdk_qtquick_patharc>`, and
+:ref:`PathSvg <sdk_qtquick_pathsvg>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtquick_pathcurve_relativeX-prop:
 
 +--------------------------------------------------------------------------+
 |        \ relativeX : real                                                |
@@ -71,10 +73,12 @@ axis, the relative position will be used.
 Relative and absolute positions can be mixed, for example it is valid to
 set a relative x and an absolute y.
 
-**See also** `x </sdk/apps/qml/QtQuick/PathCurve#x-prop>`__ and
-`y </sdk/apps/qml/QtQuick/PathCurve#y-prop>`__.
+**See also** :ref:`x <sdk_qtquick_pathcurve#x-prop>` and
+:ref:`y <sdk_qtquick_pathcurve#y-prop>`.
 
 | 
+
+.. _sdk_qtquick_pathcurve_relativeY-prop:
 
 +--------------------------------------------------------------------------+
 |        \ relativeY : real                                                |
@@ -88,10 +92,12 @@ axis, the relative position will be used.
 Relative and absolute positions can be mixed, for example it is valid to
 set a relative x and an absolute y.
 
-**See also** `x </sdk/apps/qml/QtQuick/PathCurve#x-prop>`__ and
-`y </sdk/apps/qml/QtQuick/PathCurve#y-prop>`__.
+**See also** :ref:`x <sdk_qtquick_pathcurve#x-prop>` and
+:ref:`y <sdk_qtquick_pathcurve#y-prop>`.
 
 | 
+
+.. _sdk_qtquick_pathcurve_x-prop:
 
 +--------------------------------------------------------------------------+
 |        \ x : real                                                        |
@@ -99,11 +105,12 @@ set a relative x and an absolute y.
 
 Defines the end point of the curve.
 
-**See also**
-`relativeX </sdk/apps/qml/QtQuick/PathCurve#relativeX-prop>`__ and
-`relativeY </sdk/apps/qml/QtQuick/PathCurve#relativeY-prop>`__.
+**See also** :ref:`relativeX <sdk_qtquick_pathcurve#relativeX-prop>` and
+:ref:`relativeY <sdk_qtquick_pathcurve#relativeY-prop>`.
 
 | 
+
+.. _sdk_qtquick_pathcurve_y-prop:
 
 +--------------------------------------------------------------------------+
 |        \ y : real                                                        |
@@ -111,11 +118,10 @@ Defines the end point of the curve.
 
 Defines the end point of the curve.
 
-**See also**
-`relativeX </sdk/apps/qml/QtQuick/PathCurve#relativeX-prop>`__ and
-`relativeY </sdk/apps/qml/QtQuick/PathCurve#relativeY-prop>`__.
+**See also** :ref:`relativeX <sdk_qtquick_pathcurve#relativeX-prop>` and
+:ref:`relativeY <sdk_qtquick_pathcurve#relativeY-prop>`.
 
 | 
 
-.. |image0| image:: /media/sdk/apps/qml/QtQuick/PathCurve/images/declarative-pathcurve.png
+.. |image0| image:: /mediasdk_qtquick_pathcurveimages/declarative-pathcurve.png
 

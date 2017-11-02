@@ -1,5 +1,9 @@
+.. _sdk_querymetadata:
+QueryMetadata
+=============
+
 Base class for extra metadata passed to scopes as a part of a request.
-`More... </sdk/scopes/cpp/unity.scopes.QueryMetadata#details>`__
+`More... </sdk/scopes/cpp/unity.scopes.QueryMetadata/#details>`_ 
 
 ``#include <unity/scopes/QueryMetadata.h>``
 
@@ -14,13 +18,13 @@ Inheritance diagram for unity::scopes::QueryMetadata:
 
 enum  
 
-`ConnectivityStatus </sdk/scopes/cpp/unity.scopes.QueryMetadata#a20eb916661728a7d9c00485e28f88701>`__
+`ConnectivityStatus </sdk/scopes/cpp/unity.scopes.QueryMetadata/#a20eb916661728a7d9c00485e28f88701>`_ 
 { **Unknown**, **Connected**, **Disconnected** }
 
  
 
 | Indicates the internet connectivity status.
-  `More... </sdk/scopes/cpp/unity.scopes.QueryMetadata#a20eb916661728a7d9c00485e28f88701>`__
+  `More... </sdk/scopes/cpp/unity.scopes.QueryMetadata/#a20eb916661728a7d9c00485e28f88701>`_ 
 
  
 
@@ -29,7 +33,7 @@ enum  
 
 std::string 
 
-`locale </sdk/scopes/cpp/unity.scopes.QueryMetadata#a3ca25150669d96171aec6ab56ef6bb0e>`__
+`locale </sdk/scopes/cpp/unity.scopes.QueryMetadata/#a3ca25150669d96171aec6ab56ef6bb0e>`_ 
 () const
 
  
@@ -40,7 +44,7 @@ std::string 
 
 std::string 
 
-`form\_factor </sdk/scopes/cpp/unity.scopes.QueryMetadata#a494f592f3055fba4da6554a6d8fb7c42>`__
+`form\_factor </sdk/scopes/cpp/unity.scopes.QueryMetadata/#a494f592f3055fba4da6554a6d8fb7c42>`_ 
 () const
 
  
@@ -51,8 +55,8 @@ std::string 
 
 void 
 
-`set\_internet\_connectivity </sdk/scopes/cpp/unity.scopes.QueryMetadata#a5b2395aff97cbe1009759de03f270bf3>`__
-(`ConnectivityStatus </sdk/scopes/cpp/unity.scopes.QueryMetadata#a20eb916661728a7d9c00485e28f88701>`__
+`set\_internet\_connectivity </sdk/scopes/cpp/unity.scopes.QueryMetadata/#a5b2395aff97cbe1009759de03f270bf3>`_ 
+(`ConnectivityStatus </sdk/scopes/cpp/unity.scopes.QueryMetadata/#a20eb916661728a7d9c00485e28f88701>`_ 
 connectivity\_status)
 
  
@@ -61,9 +65,9 @@ connectivity\_status)
 
  
 
-`ConnectivityStatus </sdk/scopes/cpp/unity.scopes.QueryMetadata#a20eb916661728a7d9c00485e28f88701>`__ 
+`ConnectivityStatus </sdk/scopes/cpp/unity.scopes.QueryMetadata/#a20eb916661728a7d9c00485e28f88701>`_  
 
-`internet\_connectivity </sdk/scopes/cpp/unity.scopes.QueryMetadata#a3da06f370e53b5e381ec8cf33d8ee191>`__
+`internet\_connectivity </sdk/scopes/cpp/unity.scopes.QueryMetadata/#a3da06f370e53b5e381ec8cf33d8ee191>`_ 
 () const
 
  
@@ -80,14 +84,14 @@ Base class for extra metadata passed to scopes as a part of a request.
 Member Enumeration Documentation
 --------------------------------
 
-+--------------------------------------------------------------------------------------------------------------------------------------------+
-| enum `unity::scopes::QueryMetadata::ConnectivityStatus </sdk/scopes/cpp/unity.scopes.QueryMetadata#a20eb916661728a7d9c00485e28f88701>`__   |
-+--------------------------------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+| enum `unity::scopes::QueryMetadata::ConnectivityStatus </sdk/scopes/cpp/unity.scopes.QueryMetadata/#a20eb916661728a7d9c00485e28f88701>`_    |
++---------------------------------------------------------------------------------------------------------------------------------------------+
 
 Indicates the internet connectivity status.
 
 The ``Unknown`` enumerator indicates that
-`set\_internet\_connectivity() </sdk/scopes/cpp/unity.scopes.QueryMetadata#a5b2395aff97cbe1009759de03f270bf3>`__
+`set\_internet\_connectivity() </sdk/scopes/cpp/unity.scopes.QueryMetadata/#a5b2395aff97cbe1009759de03f270bf3>`_ 
 has not yet been called, hence the connectivity status is currently
 unknown.
 
@@ -120,10 +124,10 @@ Returns
 | Status </sdk/s |                |                |                |                |
 | copes/cpp/unit |                |                |                |                |
 | y.scopes.Query |                |                |                |                |
-| Metadata#a20eb |                |                |                |                |
-| 916661728a7d9c |                |                |                |                |
-| 00485e28f88701 |                |                |                |                |
-| >`__           |                |                |                |                |
+| Metadata/#a20e |                |                |                |                |
+| b916661728a7d9 |                |                |                |                |
+| c00485e28f8870 |                |                |                |                |
+| 1>`_           |                |                |                |                |
 | unity::scopes: |                |                |                |                |
 | :QueryMetadata |                |                |                |                |
 | ::internet\_co |                |                |                |                |
@@ -153,10 +157,10 @@ Returns
 | s::QueryMeta |              | k/scopes/cpp |              |              |              |
 | data::set\_i |              | /unity.scope |              |              |              |
 | nternet\_con |              | s.QueryMetad |              |              |              |
-| nectivity    |              | ata#a20eb916 |              |              |              |
-|              |              | 661728a7d9c0 |              |              |              |
-|              |              | 0485e28f8870 |              |              |              |
-|              |              | 1>`__        |              |              |              |
+| nectivity    |              | ata/#a20eb91 |              |              |              |
+|              |              | 6661728a7d9c |              |              |              |
+|              |              | 00485e28f887 |              |              |              |
+|              |              | 01>`_        |              |              |              |
 +--------------+--------------+--------------+--------------+--------------+--------------+
 
 Set internet connectivity status.

@@ -1,3 +1,7 @@
+.. _sdk_qtqml_importing_qml_document_directories:
+QtQml Importing QML Document Directories
+========================================
+
 
 
 A local directory of QML files can be imported without any additional
@@ -14,7 +18,7 @@ which should be made available to importers.
 Any QML file on the local file system can import a local directory as
 using an import statement that refers to the directory's absolute or
 relative file system path, enabling the file to use the `object
-types </sdk/apps/qml/QtQml/qtqml-typesystem-objecttypes/>`__ defined
+types </sdk/apps/qml/QtQml/qtqml-typesystem-objecttypes/>`_  defined
 within that directory.
 
 If the local directory contains a directory listing ``qmldir`` file, the
@@ -73,7 +77,7 @@ in-application component sets and application prototyping, although any
 code that imports such modules must update their relevant ``import``
 statements if the module directory moves to another location. This can
 be avoided if `QML
-modules </sdk/apps/qml/QtQml/qtqml-modules-identifiedmodules/>`__ are
+modules </sdk/apps/qml/QtQml/qtqml-modules-identifiedmodules/>`_  are
 used instead, as an installed module is imported with a unique
 identifier string rather than a file system path.
 
@@ -120,7 +124,7 @@ to avoid loading malicious code.
    :name: directory-listing-qmldir-files
 
 A directory listing ``qmldir`` file distinctly different from a `module
-definition qmldir file </sdk/apps/qml/QtQml/qtqml-modules-qmldir/>`__. A
+definition qmldir file </sdk/apps/qml/QtQml/qtqml-modules-qmldir/>`_ . A
 directory listing ``qmldir`` file allows a group of QML documents to be
 quickly and easily shared, but it does not define a type namespace into
 which the QML object types defined by the documents are registered, nor

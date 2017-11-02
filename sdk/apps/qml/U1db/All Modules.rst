@@ -1,11 +1,15 @@
+.. _sdk_u1db_all_modules:
+U1db All Modules
+================
+
 
                 General Topics
 
--  `Tutorial </sdk/apps/qml/U1db/tutorial/>`__ gives a quick start guide
+-  `Tutorial </sdk/apps/qml/U1db/tutorial/>`_  gives a quick start guide
    from storing a document to querying a database and displaying it in
    `Ubuntu
-   Components </sdk/apps/qml/UbuntuUserInterfaceToolkit/overview-ubuntu-sdk/>`__.
--  `Design Concepts </sdk/apps/qml/U1db/concepts/>`__ provides an
+   Components </sdk/apps/qml/UbuntuUserInterfaceToolkit/overview-ubuntu-sdk/>`_ .
+-  `Design Concepts </sdk/apps/qml/U1db/concepts/>`_  provides an
    overview of the design and terminology.
 
         Document Storage
@@ -16,19 +20,19 @@ Available through:
     import U1db 1.0 as U1db
 
 +--------------------------------------+--------------------------------------+
-| `Database </sdk/apps/qml/U1db/Databa | Implements on-disk storage for       |
-| se/>`__                              | documents and indexes                |
+| :ref:`Database <sdk_u1db_database>`  | Implements on-disk storage for       |
+|                                      | documents and indexes                |
 +--------------------------------------+--------------------------------------+
-| `Document </sdk/apps/qml/U1db/Docume | Proxies a single document stored in  |
-| nt/>`__                              | the Database                         |
+| :ref:`Document <sdk_u1db_document>`  | Proxies a single document stored in  |
+|                                      | the Database                         |
 +--------------------------------------+--------------------------------------+
-| `Index </sdk/apps/qml/U1db/Index/>`_ | An Index defines what fields can be  |
-| _                                    | filtered using Query                 |
+| :ref:`Index <sdk_u1db_index>`        | An Index defines what fields can be  |
+|                                      | filtered using Query                 |
 +--------------------------------------+--------------------------------------+
-| `Query </sdk/apps/qml/U1db/Query/>`_ | Filters documents based on the query |
-| _                                    | and index                            |
+| :ref:`Query <sdk_u1db_query>`        | Filters documents based on the query |
+|                                      | and index                            |
 +--------------------------------------+--------------------------------------+
-| `Synchronizer </sdk/apps/qml/U1db/Sy | Handles synchronizing between two    |
-| nchronizer/>`__                      | databases                            |
+| :ref:`Synchronizer <sdk_u1db_synchronizer | Handles synchronizing between two    |
+| >`_                                  | databases                            |
 +--------------------------------------+--------------------------------------+
 

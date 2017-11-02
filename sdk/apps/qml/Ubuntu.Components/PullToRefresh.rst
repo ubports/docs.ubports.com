@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_pulltorefresh:
+Ubuntu.Components PullToRefresh
+===============================
+
 Pull-to-refresh component for Flickables to reload a model upon pull.
 
 +--------------------------------------+--------------------------------------+
@@ -5,28 +9,28 @@ Pull-to-refresh component for Flickables to reload a model upon pull.
 +--------------------------------------+--------------------------------------+
 | Since:                               | Ubuntu.Components 1.1                |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `StyledItem </sdk/apps/qml/Ubuntu.Co |
-|                                      | mponents/StyledItem/>`__             |
+| Inherits:                            | :ref:`StyledItem <sdk_ubuntu_components_s |
+|                                      | tyleditem>`_                         |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`content </sdk/apps/qml/Ubuntu.Components/PullToRefresh#content-prop>`__****
+-  :ref:`content <sdk_ubuntu_components_pulltorefresh_content-prop>`
    : Component
--  ****`offset </sdk/apps/qml/Ubuntu.Components/PullToRefresh#offset-prop>`__****
+-  :ref:`offset <sdk_ubuntu_components_pulltorefresh_offset-prop>`
    : real
--  ****`refreshing </sdk/apps/qml/Ubuntu.Components/PullToRefresh#refreshing-prop>`__****
+-  :ref:`refreshing <sdk_ubuntu_components_pulltorefresh_refreshing-prop>`
    : bool
--  ****`releaseToRefresh </sdk/apps/qml/Ubuntu.Components/PullToRefresh#releaseToRefresh-prop>`__****
+-  :ref:`releaseToRefresh <sdk_ubuntu_components_pulltorefresh_releaseToRefresh-prop>`
    : bool
--  ****`target </sdk/apps/qml/Ubuntu.Components/PullToRefresh#target-prop>`__****
+-  :ref:`target <sdk_ubuntu_components_pulltorefresh_target-prop>`
    : Flickable
 
 Signals
 -------
 
--  ****`refresh </sdk/apps/qml/Ubuntu.Components/PullToRefresh#refresh-signal>`__****\ ()
+-  :ref:`refresh <sdk_ubuntu_components_pulltorefresh_refresh-signal>`\ ()
 
 Detailed Description
 --------------------
@@ -36,10 +40,10 @@ the attached Flickable's content. The refresh can be initiated when the
 flickable content is at its top boundary. By dragging the content
 further, reaching the threshold value defined by the style will initiate
 the manual refresh by emitting the
-`refresh </sdk/apps/qml/Ubuntu.Components/PullToRefresh#refresh-signal>`__
-signal. The progress of the refresh must be notified to the component by
+:ref:`refresh <sdk_ubuntu_components_pulltorefresh#refresh-signal>` signal.
+The progress of the refresh must be notified to the component by
 defining the completion clause to the
-`refreshing </sdk/apps/qml/Ubuntu.Components/PullToRefresh#refreshing-prop>`__
+:ref:`refreshing <sdk_ubuntu_components_pulltorefresh#refreshing-prop>`
 property.
 
 .. code:: qml
@@ -76,13 +80,11 @@ property.
         }
     }
 
-**Note:**
-`UbuntuListView </sdk/apps/qml/Ubuntu.Components/UbuntuListView/>`__ has
-a built-in
-`PullToRefresh </sdk/apps/qml/Ubuntu.Components/PullToRefresh/>`__,
+**Note:** :ref:`UbuntuListView <sdk_ubuntu_components_ubuntulistview>` has
+a built-in :ref:`PullToRefresh <sdk_ubuntu_components_pulltorefresh>`,
 therefore it is recommended to use
-`UbuntuListView </sdk/apps/qml/Ubuntu.Components/UbuntuListView/>`__
-instead of `ListView </sdk/apps/qml/QtQuick/ListView/>`__.
+:ref:`UbuntuListView <sdk_ubuntu_components_ubuntulistview>` instead of
+:ref:`ListView <sdk_qtquick_listview>`.
 
 The component will also show the progress of the model's update when the
 refresh gets initiated by the model or from other party. Style
@@ -92,12 +94,11 @@ As default, the component displays a Label visualizing the two states of
 the component, which is pull to refresh and release to refresh. As
 mentioned, this is driven by the threshold value specified by the style,
 and the state is reported by the
-`releaseToRefresh </sdk/apps/qml/Ubuntu.Components/PullToRefresh#releaseToRefresh-prop>`__
+:ref:`releaseToRefresh <sdk_ubuntu_components_pulltorefresh#releaseToRefresh-prop>`
 property. The
-`content </sdk/apps/qml/Ubuntu.Components/PullToRefresh#content-prop>`__
-specifies the visuals to be shown by the component. Custom
-implementations can hold any component, which will be anchor filled to
-the component itself.
+:ref:`content <sdk_ubuntu_components_pulltorefresh#content-prop>` specifies
+the visuals to be shown by the component. Custom implementations can
+hold any component, which will be anchor filled to the component itself.
 
 .. code:: qml
 
@@ -193,15 +194,17 @@ Styling
 ~~~~~~~
 
 The component style API is defined by the
-`PullToRefreshStyle </sdk/apps/qml/Ubuntu.Components/Styles.PullToRefreshStyle/>`__
+`PullToRefreshStyle </sdk/apps/qml/Ubuntu.Components/Styles.PullToRefreshStyle/>`_ 
 component. Styles may define different ways to initiate refresh upon
 dragging.
 
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_pulltorefresh_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ content : `Component </sdk/apps/qml/QtQml/Component/>`__        |
+| :ref:` <>`\ content : `Component <sdk_qtqml_component>`                |
 +--------------------------------------------------------------------------+
 
 The property holds the visuals to be displayed when the component is
@@ -211,16 +214,20 @@ activation threshold, and "Release to refresh..." after that.
 
 | 
 
+.. _sdk_ubuntu_components_pulltorefresh_[read-only] offset-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [read-only] offset : real                                       |
 +--------------------------------------------------------------------------+
 
 The property holds the offset the component is pulled from the
-`target </sdk/apps/qml/Ubuntu.Components/PullToRefresh#target-prop>`__
-Flickable's *topMargin*. The property can be used to provide animations
-in custom contents.
+:ref:`target <sdk_ubuntu_components_pulltorefresh#target-prop>` Flickable's
+*topMargin*. The property can be used to provide animations in custom
+contents.
 
 | 
+
+.. _sdk_ubuntu_components_pulltorefresh_refreshing-prop:
 
 +--------------------------------------------------------------------------+
 |        \ refreshing : bool                                               |
@@ -230,6 +237,8 @@ The property notifies the component about the ongoing refresh operation.
 
 | 
 
+.. _sdk_ubuntu_components_pulltorefresh_[read-only] releaseToRefresh-prop:
+
 +--------------------------------------------------------------------------+
 |        \ [read-only] releaseToRefresh : bool                             |
 +--------------------------------------------------------------------------+
@@ -238,12 +247,14 @@ The property specifies when the component is ready to trigger the
 refresh() signal. The logic is defined by the style and the value is
 transferred from the style's releaseToRefresh property. The property can
 be used to define custom visuals for
-`content </sdk/apps/qml/Ubuntu.Components/PullToRefresh#content-prop>`__.
+:ref:`content <sdk_ubuntu_components_pulltorefresh#content-prop>`.
 
 | 
 
+.. _sdk_ubuntu_components_pulltorefresh_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ target : `Flickable </sdk/apps/qml/QtQuick/Flickable/>`__       |
+| :ref:` <>`\ target : `Flickable <sdk_qtquick_flickable>`               |
 +--------------------------------------------------------------------------+
 
 The Flickable or derivate the component is attached to. This can only be
@@ -253,6 +264,8 @@ the parent or a sibling of the component. Defaults to the parent.
 
 Signal Documentation
 --------------------
+
+.. _sdk_ubuntu_components_pulltorefresh_refresh()-prop:
 
 +--------------------------------------------------------------------------+
 |        \ refresh()                                                       |

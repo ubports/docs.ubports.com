@@ -1,3 +1,7 @@
+.. _sdk_qtcontacts_emailaddress:
+QtContacts EmailAddress
+=======================
+
 The EmailAddress element contains an email address of a contact.
 
 +---------------------+-------------------------+
@@ -7,21 +11,23 @@ The EmailAddress element contains an email address of a contact.
 Properties
 ----------
 
--  ****`emailAddress </sdk/apps/qml/QtContacts/EmailAddress#emailAddress-prop>`__****
+-  :ref:`emailAddress <sdk_qtcontacts_emailaddress_emailAddress-prop>`
    : string
 
 Detailed Description
 --------------------
 
-`EmailAddress </sdk/apps/qml/QtContacts/EmailAddress/>`__ element
-contains the following field types:
+:ref:`EmailAddress <sdk_qtcontacts_emailaddress>` element contains the
+following field types:
 
--  `EmailAddress </sdk/apps/qml/QtContacts/EmailAddress/>`__.\ `EmailAddress </sdk/apps/qml/QtContacts/EmailAddress/>`__
+-  :ref:`EmailAddress <sdk_qtcontacts_emailaddress>`.\ `EmailAddress <sdk_qtcontacts_emailaddress>`
 
 This element is part of the **QtContacts** module.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtcontacts_emailaddress_emailAddress-prop:
 
 +--------------------------------------------------------------------------+
 |        \ emailAddress : string                                           |

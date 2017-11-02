@@ -1,6 +1,10 @@
-`QueryCtrl </sdk/scopes/cpp/unity.scopes.QueryCtrl/>`__ allows a query
+.. _sdk_queryctrl:
+QueryCtrl
+=========
+
+`QueryCtrl </sdk/scopes/cpp/unity.scopes.QueryCtrl/>`_  allows a query
 to be cancelled.
-`More... </sdk/scopes/cpp/unity.scopes.QueryCtrl#details>`__
+`More... </sdk/scopes/cpp/unity.scopes.QueryCtrl/#details>`_ 
 
 ``#include <unity/scopes/QueryCtrl.h>``
 
@@ -15,7 +19,7 @@ Inheritance diagram for unity::scopes::QueryCtrl:
 
 virtual void 
 
-`cancel </sdk/scopes/cpp/unity.scopes.QueryCtrl#a83e309fba452407f79365ba2645f4e4d>`__
+`cancel </sdk/scopes/cpp/unity.scopes.QueryCtrl/#a83e309fba452407f79365ba2645f4e4d>`_ 
 ()=0
 
  
@@ -26,7 +30,7 @@ virtual void 
 
 virtual 
 
-`~QueryCtrl </sdk/scopes/cpp/unity.scopes.QueryCtrl#a041d668bdde675b264baf6b0c0df716b>`__
+`~QueryCtrl </sdk/scopes/cpp/unity.scopes.QueryCtrl/#a041d668bdde675b264baf6b0c0df716b>`_ 
 ()
 
  
@@ -36,11 +40,11 @@ virtual 
  
 
 |-| Public Member Functions inherited from
-`unity::scopes::Object </sdk/scopes/cpp/unity.scopes.Object/>`__
+`unity::scopes::Object </sdk/scopes/cpp/unity.scopes.Object/>`_ 
 
 virtual std::string 
 
-`endpoint </sdk/scopes/cpp/unity.scopes.Object#ad7618cc9d878c40b389361d4acd473ae>`__
+`endpoint </sdk/scopes/cpp/unity.scopes.Object/#ad7618cc9d878c40b389361d4acd473ae>`_ 
 ()=0
 
  
@@ -51,7 +55,7 @@ virtual std::string 
 
 virtual std::string 
 
-`identity </sdk/scopes/cpp/unity.scopes.Object#a1b55aea886f0a68cb8a578f7ee0b1cfd>`__
+`identity </sdk/scopes/cpp/unity.scopes.Object/#a1b55aea886f0a68cb8a578f7ee0b1cfd>`_ 
 ()=0
 
  
@@ -62,7 +66,7 @@ virtual std::string 
 
 virtual std::string 
 
-`target\_category </sdk/scopes/cpp/unity.scopes.Object#a40a997516629df3dacca9742dbddd6cb>`__
+`target\_category </sdk/scopes/cpp/unity.scopes.Object/#a40a997516629df3dacca9742dbddd6cb>`_ 
 ()=0
 
  
@@ -73,7 +77,7 @@ virtual std::string 
 
 virtual int64\_t 
 
-`timeout </sdk/scopes/cpp/unity.scopes.Object#a41d9839f1e3cbcd6d8baee0736feccab>`__
+`timeout </sdk/scopes/cpp/unity.scopes.Object/#a41d9839f1e3cbcd6d8baee0736feccab>`_ 
 ()=0
 
  
@@ -84,7 +88,7 @@ virtual int64\_t 
 
 virtual std::string 
 
-`to\_string </sdk/scopes/cpp/unity.scopes.Object#a9ae27e1f30dc755abcd796a1e8a25150>`__
+`to\_string </sdk/scopes/cpp/unity.scopes.Object/#a9ae27e1f30dc755abcd796a1e8a25150>`_ 
 ()=0
 
  
@@ -96,7 +100,7 @@ virtual std::string 
 Detailed Description
 --------------------
 
-`QueryCtrl </sdk/scopes/cpp/unity.scopes.QueryCtrl/>`__ allows a query
+`QueryCtrl </sdk/scopes/cpp/unity.scopes.QueryCtrl/>`_  allows a query
 to be cancelled.
 
 Constructor & Destructor Documentation
@@ -123,12 +127,12 @@ Constructor & Destructor Documentation
 | -------------+                       |                                      |
 +--------------------------------------+--------------------------------------+
 
-Destroys a `QueryCtrl </sdk/scopes/cpp/unity.scopes.QueryCtrl/>`__.
+Destroys a `QueryCtrl </sdk/scopes/cpp/unity.scopes.QueryCtrl/>`_ .
 
-Letting a `QueryCtrl </sdk/scopes/cpp/unity.scopes.QueryCtrl/>`__ go out
+Letting a `QueryCtrl </sdk/scopes/cpp/unity.scopes.QueryCtrl/>`_  go out
 of scope has no effect on the query, that is, the destructor does *not*
 implicitly call
-`cancel() </sdk/scopes/cpp/unity.scopes.QueryCtrl#a83e309fba452407f79365ba2645f4e4d>`__.
+`cancel() </sdk/scopes/cpp/unity.scopes.QueryCtrl/#a83e309fba452407f79365ba2645f4e4d>`_ .
 
 Member Function Documentation
 -----------------------------
@@ -157,12 +161,12 @@ Member Function Documentation
 Cancels an executing query.
 
 Calling
-`cancel() </sdk/scopes/cpp/unity.scopes.QueryCtrl#a83e309fba452407f79365ba2645f4e4d>`__
+`cancel() </sdk/scopes/cpp/unity.scopes.QueryCtrl/#a83e309fba452407f79365ba2645f4e4d>`_ 
 informs the scope to which a query was sent that the query should be
 cancelled. Calling
-`cancel() </sdk/scopes/cpp/unity.scopes.QueryCtrl#a83e309fba452407f79365ba2645f4e4d>`__
+`cancel() </sdk/scopes/cpp/unity.scopes.QueryCtrl/#a83e309fba452407f79365ba2645f4e4d>`_ 
 on a query that is complete has no effect.
-`cancel() </sdk/scopes/cpp/unity.scopes.QueryCtrl#a83e309fba452407f79365ba2645f4e4d>`__
+`cancel() </sdk/scopes/cpp/unity.scopes.QueryCtrl/#a83e309fba452407f79365ba2645f4e4d>`_ 
 is guaranteed to not block the caller.
 
 .. |Inheritance graph| image:: /media/sdk/scopes/cpp/unity.scopes.QueryCtrl/classunity_1_1scopes_1_1_query_ctrl__inherit__graph.png

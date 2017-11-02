@@ -1,5 +1,9 @@
+.. _sdk_accounts_provider:
+Accounts Provider
+=================
+
 Representation of an account provider.
-`More... </sdk/scopes/cpp/Accounts/Provider#details>`__
+:ref:`More... <sdk_accounts_provider#details>`
 
 ``#include <Accounts/Provider>``
 
@@ -8,7 +12,7 @@ Representation of an account provider.
 
          
 
-`Provider </sdk/scopes/cpp/Accounts/Provider#a0a281cda2c25f17e851f76142d4527a0>`__
+:ref:`Provider <sdk_accounts_provider#a0a281cda2c25f17e851f76142d4527a0>`
 ()
 
  
@@ -19,8 +23,8 @@ Representation of an account provider.
 
  
 
-`Provider </sdk/scopes/cpp/Accounts/Provider#abff16d2acc53f89d7f633e85a4b90634>`__
-(const `Provider </sdk/scopes/cpp/Accounts/Provider/>`__ &other)
+:ref:`Provider <sdk_accounts_provider#abff16d2acc53f89d7f633e85a4b90634>`
+(const :ref:`Provider <sdk_accounts_provider>` &other)
 
  
 
@@ -28,17 +32,16 @@ Representation of an account provider.
 
  
 
-        `Provider </sdk/scopes/cpp/Accounts/Provider/>`__ & 
+:ref:` <>` `Provider <sdk_accounts_provider>` & 
 
-**operator=** (const `Provider </sdk/scopes/cpp/Accounts/Provider/>`__
-&other)
+**operator=** (const :ref:`Provider <sdk_accounts_provider>` &other)
 
  
 
 bool 
 
-`isValid </sdk/scopes/cpp/Accounts/Provider#aac1b70a2ed67ead038c4d3f5ac4d8a81>`__
-() const
+:ref:`isValid <sdk_accounts_provider#aac1b70a2ed67ead038c4d3f5ac4d8a81>` ()
+const
 
  
 
@@ -48,8 +51,8 @@ bool 
 
 QString 
 
-`name </sdk/scopes/cpp/Accounts/Provider#a2b0a198f837184bf6fff555cee3ce770>`__
-() const
+:ref:`name <sdk_accounts_provider#a2b0a198f837184bf6fff555cee3ce770>` ()
+const
 
  
 
@@ -59,7 +62,7 @@ QString 
 
 QString 
 
-`displayName </sdk/scopes/cpp/Accounts/Provider#a9def71dea12661002bb3a63b3b91d08d>`__
+:ref:`displayName <sdk_accounts_provider#a9def71dea12661002bb3a63b3b91d08d>`
 () const
 
  
@@ -70,7 +73,7 @@ QString 
 
 QString 
 
-`description </sdk/scopes/cpp/Accounts/Provider#aeaebc63d2181b1a4506603f4e03f1275>`__
+:ref:`description <sdk_accounts_provider#aeaebc63d2181b1a4506603f4e03f1275>`
 () const
 
  
@@ -81,7 +84,7 @@ QString 
 
 QString 
 
-`pluginName </sdk/scopes/cpp/Accounts/Provider#ac7fe5a9dd669a037edfa2930803311a5>`__
+:ref:`pluginName <sdk_accounts_provider#ac7fe5a9dd669a037edfa2930803311a5>`
 () const
 
  
@@ -92,35 +95,35 @@ QString 
 
 QString 
 
-`trCatalog </sdk/scopes/cpp/Accounts/Provider#a6c73afd4753195ea4eee794c95a770dd>`__
+:ref:`trCatalog <sdk_accounts_provider#a6c73afd4753195ea4eee794c95a770dd>`
 () const
 
  
 
 QString 
 
-`iconName </sdk/scopes/cpp/Accounts/Provider#a038b22680aca535f9972908fe2f1f6a1>`__
+:ref:`iconName <sdk_accounts_provider#a038b22680aca535f9972908fe2f1f6a1>`
 () const
 
  
 
 QString 
 
-`domainsRegExp </sdk/scopes/cpp/Accounts/Provider#ab0c2fc656cae3b09e456ec0747315ecc>`__
+:ref:`domainsRegExp <sdk_accounts_provider#ab0c2fc656cae3b09e456ec0747315ecc>`
 () const
 
  
 
 bool 
 
-`isSingleAccount </sdk/scopes/cpp/Accounts/Provider#aa785668bfd84285ad40299410c02367d>`__
+:ref:`isSingleAccount <sdk_accounts_provider#aa785668bfd84285ad40299410c02367d>`
 () const
 
  
 
 const QDomDocument 
 
-`domDocument </sdk/scopes/cpp/Accounts/Provider#a305fe3a04c76c8069c3465621a7967cc>`__
+:ref:`domDocument <sdk_accounts_provider#a305fe3a04c76c8069c3465621a7967cc>`
 () const
 
  
@@ -130,9 +133,8 @@ const QDomDocument 
 
         bool 
 
-**operator==** (const
-`Accounts::Provider </sdk/scopes/cpp/Accounts/Provider/>`__ &p1, const
-`Accounts::Provider </sdk/scopes/cpp/Accounts/Provider/>`__ &p2)
+**operator==** (const :ref:`Accounts::Provider <sdk_accounts_provider>`
+&p1, const :ref:`Accounts::Provider <sdk_accounts_provider>` &p2)
 
  
 
@@ -141,10 +143,10 @@ Detailed Description
 
 Representation of an account provider.
 
-The `Provider </sdk/scopes/cpp/Accounts/Provider/>`__ object represents
-an account provider. It can be used to retrieve some basic properties of
-the provider (such as the name) and to get access to the contents of the
-XML file which defines it.
+The :ref:`Provider <sdk_accounts_provider>` object represents an account
+provider. It can be used to retrieve some basic properties of the
+provider (such as the name) and to get access to the contents of the XML
+file which defines it.
 
 Definition at line 48 of file provider.h.
 
@@ -152,19 +154,17 @@ Constructor & Destructor Documentation
 --------------------------------------
 
 +--------------+--------------+--------------+--------------+--------------+--------------+
-| `Provider </ | (            | const        | *other*      | )            |              |
-| sdk/scopes/c |              | `Provider </ |              |              |              |
-| pp/Accounts/ |              | sdk/scopes/c |              |              |              |
-| Provider/>`_ |              | pp/Accounts/ |              |              |              |
-| _            |              | Provider/>`_ |              |              |              |
-|              |              | _            |              |              |              |
+| `Provider <s | (            | const        | *other*      | )            |              |
+| dk_accounts_ |              | `Provider <s |              |              |              |
+| provider>`_  |              | dk_accounts_ |              |              |              |
+|              |              | provider>`_  |              |              |              |
 |              |              | &            |              |              |              |
 +--------------+--------------+--------------+--------------+--------------+--------------+
 
 Copy constructor.
 
-Copying a `Provider </sdk/scopes/cpp/Accounts/Provider/>`__ object is
-very cheap, because the data is shared among copies.
+Copying a :ref:`Provider <sdk_accounts_provider>` object is very cheap,
+because the data is shared among copies.
 
 Definition at line 65 of file provider.cpp.
 
@@ -243,11 +243,10 @@ Definition at line 169 of file provider.cpp.
 +----------------+----------------+----------------+----------------+----------------+
 
 Check whether this object represents a
-`Provider </sdk/scopes/cpp/Accounts/Provider/>`__.
+:ref:`Provider <sdk_accounts_provider>`.
 
 Returns
-    true if the `Provider </sdk/scopes/cpp/Accounts/Provider/>`__ is a
-    valid one.
+    true if the :ref:`Provider <sdk_accounts_provider>` is a valid one.
 
 Definition at line 95 of file provider.cpp.
 
@@ -292,7 +291,7 @@ Definition at line 135 of file provider.cpp.
 Returns
     The name of the translation catalog, which can be used to translate
     the
-    `displayName() </sdk/scopes/cpp/Accounts/Provider#a9def71dea12661002bb3a63b3b91d08d>`__.
+    :ref:`displayName() <sdk_accounts_provider#a9def71dea12661002bb3a63b3b91d08d>`.
 
 Definition at line 144 of file provider.cpp.
 

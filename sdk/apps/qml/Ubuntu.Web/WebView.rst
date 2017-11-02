@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_web_webview:
+Ubuntu.Web WebView
+==================
+
 A webview that can be used to render web content in an application.
 
 +---------------------+-------------------------+
@@ -7,61 +11,54 @@ A webview that can be used to render web content in an application.
 Properties
 ----------
 
--  ****`alertDialog </sdk/apps/qml/Ubuntu.Web/WebView#alertDialog-prop>`__****
+-  :ref:`alertDialog <sdk_ubuntu_web_webview_alertDialog-prop>` :
+   component
+-  :ref:`beforeUnloadDialog <sdk_ubuntu_web_webview_beforeUnloadDialog-prop>`
    : component
--  ****`beforeUnloadDialog </sdk/apps/qml/Ubuntu.Web/WebView#beforeUnloadDialog-prop>`__****
-   : component
--  ****`canGoBack </sdk/apps/qml/Ubuntu.Web/WebView#canGoBack-prop>`__****
-   : bool
--  ****`canGoForward </sdk/apps/qml/Ubuntu.Web/WebView#canGoForward-prop>`__****
-   : bool
--  ****`confirmDialog </sdk/apps/qml/Ubuntu.Web/WebView#confirmDialog-prop>`__****
-   : component
--  ****`context </sdk/apps/qml/Ubuntu.Web/WebView#context-prop>`__**** :
-   WebContext
--  ****`contextualActions </sdk/apps/qml/Ubuntu.Web/WebView#contextualActions-prop>`__****
-   : ActionList
--  ****`contextualData </sdk/apps/qml/Ubuntu.Web/WebView#contextualData-prop>`__****
-   : QtObject
--  ****`filePicker </sdk/apps/qml/Ubuntu.Web/WebView#filePicker-prop>`__****
-   : component
--  ****`fullscreen </sdk/apps/qml/Ubuntu.Web/WebView#fullscreen-prop>`__****
-   : bool
--  ****`icon </sdk/apps/qml/Ubuntu.Web/WebView#icon-prop>`__**** : url
--  ****`incognito </sdk/apps/qml/Ubuntu.Web/WebView#incognito-prop>`__****
-   : bool
--  ****`loadProgress </sdk/apps/qml/Ubuntu.Web/WebView#loadProgress-prop>`__****
-   : int
--  ****`loading </sdk/apps/qml/Ubuntu.Web/WebView#loading-prop>`__**** :
+-  :ref:`canGoBack <sdk_ubuntu_web_webview_canGoBack-prop>` : bool
+-  :ref:`canGoForward <sdk_ubuntu_web_webview_canGoForward-prop>` :
    bool
--  ****`navigationHistory </sdk/apps/qml/Ubuntu.Web/WebView#navigationHistory-prop>`__****
-   : list
--  ****`promptDialog </sdk/apps/qml/Ubuntu.Web/WebView#promptDialog-prop>`__****
+-  :ref:`confirmDialog <sdk_ubuntu_web_webview_confirmDialog-prop>`
    : component
--  ****`title </sdk/apps/qml/Ubuntu.Web/WebView#title-prop>`__**** :
-   string
--  ****`url </sdk/apps/qml/Ubuntu.Web/WebView#url-prop>`__**** : url
+-  :ref:`context <sdk_ubuntu_web_webview_context-prop>` :
+   WebContext
+-  :ref:`contextualActions <sdk_ubuntu_web_webview_contextualActions-prop>`
+   : ActionList
+-  :ref:`contextualData <sdk_ubuntu_web_webview_contextualData-prop>`
+   : QtObject
+-  :ref:`filePicker <sdk_ubuntu_web_webview_filePicker-prop>` :
+   component
+-  :ref:`fullscreen <sdk_ubuntu_web_webview_fullscreen-prop>` :
+   bool
+-  :ref:`icon <sdk_ubuntu_web_webview_icon-prop>` : url
+-  :ref:`incognito <sdk_ubuntu_web_webview_incognito-prop>` : bool
+-  :ref:`loadProgress <sdk_ubuntu_web_webview_loadProgress-prop>` :
+   int
+-  :ref:`loading <sdk_ubuntu_web_webview_loading-prop>` : bool
+-  :ref:`navigationHistory <sdk_ubuntu_web_webview_navigationHistory-prop>`
+   : list
+-  :ref:`promptDialog <sdk_ubuntu_web_webview_promptDialog-prop>` :
+   component
+-  :ref:`title <sdk_ubuntu_web_webview_title-prop>` : string
+-  :ref:`url <sdk_ubuntu_web_webview_url-prop>` : url
 
 Methods
 -------
 
+-  void :ref:`goBack <sdk_ubuntu_web_webview_goBack-method>`\ ()
 -  void
-   ****`goBack </sdk/apps/qml/Ubuntu.Web/WebView#goBack-method>`__****\ ()
+   **:ref:`goForward <sdk_ubuntu_web_webview#goForward-method>`**\ ()
 -  void
-   ****`goForward </sdk/apps/qml/Ubuntu.Web/WebView#goForward-method>`__****\ ()
--  void
-   ****`loadHtml </sdk/apps/qml/Ubuntu.Web/WebView#loadHtml-method>`__****\ (string
+   **:ref:`loadHtml <sdk_ubuntu_web_webview#loadHtml-method>`**\ (string
    *html*, url *baseUrl*)
--  void
-   ****`reload </sdk/apps/qml/Ubuntu.Web/WebView#reload-method>`__****\ ()
--  void
-   ****`stop </sdk/apps/qml/Ubuntu.Web/WebView#stop-method>`__****\ ()
+-  void :ref:`reload <sdk_ubuntu_web_webview_reload-method>`\ ()
+-  void :ref:`stop <sdk_ubuntu_web_webview_stop-method>`\ ()
 
 Detailed Description
 --------------------
 
 Here is a very simple example of how to use a
-`WebView </sdk/apps/qml/Ubuntu.Web/WebView/>`__ to render a web page:
+:ref:`WebView <sdk_ubuntu_web_webview>` to render a web page:
 
 .. code:: qml
 
@@ -72,14 +69,15 @@ Here is a very simple example of how to use a
     }
 
 The ``WebView`` component defaults to using a `shared
-``WebContext`` </sdk/apps/qml/Ubuntu.Web/SharedWebContext/>`__ that is
-shared across all ``WebView`` instances in a given application.
+:ref:``WebContext`` <sdk_ubuntu_web_sharedwebcontext>` that is shared
+across all ``WebView`` instances in a given application.
 
-**See also**
-`SharedWebContext </sdk/apps/qml/Ubuntu.Web/SharedWebContext/>`__.
+**See also** :ref:`SharedWebContext <sdk_ubuntu_web_sharedwebcontext>`.
 
 Property Documentation
 ----------------------
+
+.. _sdk_ubuntu_web_webview_alertDialog-prop:
 
 +--------------------------------------------------------------------------+
 |        \ alertDialog : component                                         |
@@ -89,12 +87,13 @@ The QML component that will be instantiated to display a JavaScript
 alert dialog.
 
 **See also**
-`confirmDialog </sdk/apps/qml/Ubuntu.Web/WebView#confirmDialog-prop>`__,
-`promptDialog </sdk/apps/qml/Ubuntu.Web/WebView#promptDialog-prop>`__,
-and
-`beforeUnloadDialog </sdk/apps/qml/Ubuntu.Web/WebView#beforeUnloadDialog-prop>`__.
+:ref:`confirmDialog <sdk_ubuntu_web_webview#confirmDialog-prop>`,
+:ref:`promptDialog <sdk_ubuntu_web_webview#promptDialog-prop>`, and
+:ref:`beforeUnloadDialog <sdk_ubuntu_web_webview#beforeUnloadDialog-prop>`.
 
 | 
+
+.. _sdk_ubuntu_web_webview_beforeUnloadDialog-prop:
 
 +--------------------------------------------------------------------------+
 |        \ beforeUnloadDialog : component                                  |
@@ -104,13 +103,13 @@ The QML component that will be instantiated to display a JavaScript
 confirmation when the user initiates a navigation away from the current
 page, if the page has defined an ``onBeforeUnload`` handler.
 
-**See also**
-`alertDialog </sdk/apps/qml/Ubuntu.Web/WebView#alertDialog-prop>`__,
-`confirmDialog </sdk/apps/qml/Ubuntu.Web/WebView#confirmDialog-prop>`__,
-and
-`promptDialog </sdk/apps/qml/Ubuntu.Web/WebView#promptDialog-prop>`__.
+**See also** :ref:`alertDialog <sdk_ubuntu_web_webview#alertDialog-prop>`,
+:ref:`confirmDialog <sdk_ubuntu_web_webview#confirmDialog-prop>`, and
+:ref:`promptDialog <sdk_ubuntu_web_webview#promptDialog-prop>`.
 
 | 
+
+.. _sdk_ubuntu_web_webview_canGoBack-prop:
 
 +--------------------------------------------------------------------------+
 |        \ canGoBack : bool                                                |
@@ -118,11 +117,12 @@ and
 
 Whether the navigation history has a previous entry to navigate back.
 
-**See also** `goBack </sdk/apps/qml/Ubuntu.Web/WebView#goBack-method>`__
-and
-`canGoForward </sdk/apps/qml/Ubuntu.Web/WebView#canGoForward-prop>`__.
+**See also** :ref:`goBack <sdk_ubuntu_web_webview#goBack-method>` and
+:ref:`canGoForward <sdk_ubuntu_web_webview#canGoForward-prop>`.
 
 | 
+
+.. _sdk_ubuntu_web_webview_canGoForward-prop:
 
 +--------------------------------------------------------------------------+
 |        \ canGoForward : bool                                             |
@@ -130,11 +130,12 @@ and
 
 Whether the navigation history has a next entry to navigate forward.
 
-**See also**
-`goForward </sdk/apps/qml/Ubuntu.Web/WebView#goForward-method>`__ and
-`canGoBack </sdk/apps/qml/Ubuntu.Web/WebView#canGoBack-prop>`__.
+**See also** :ref:`goForward <sdk_ubuntu_web_webview#goForward-method>` and
+:ref:`canGoBack <sdk_ubuntu_web_webview#canGoBack-prop>`.
 
 | 
+
+.. _sdk_ubuntu_web_webview_confirmDialog-prop:
 
 +--------------------------------------------------------------------------+
 |        \ confirmDialog : component                                       |
@@ -143,25 +144,26 @@ Whether the navigation history has a next entry to navigate forward.
 The QML component that will be instantiated to display a JavaScript
 confirmation dialog.
 
-**See also**
-`alertDialog </sdk/apps/qml/Ubuntu.Web/WebView#alertDialog-prop>`__,
-`promptDialog </sdk/apps/qml/Ubuntu.Web/WebView#promptDialog-prop>`__,
-and
-`beforeUnloadDialog </sdk/apps/qml/Ubuntu.Web/WebView#beforeUnloadDialog-prop>`__.
+**See also** :ref:`alertDialog <sdk_ubuntu_web_webview#alertDialog-prop>`,
+:ref:`promptDialog <sdk_ubuntu_web_webview#promptDialog-prop>`, and
+:ref:`beforeUnloadDialog <sdk_ubuntu_web_webview#beforeUnloadDialog-prop>`.
 
 | 
 
+.. _sdk_ubuntu_web_webview_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ context : `WebContext </sdk/apps/qml/Ubuntu.Web/WebContext/>`__ |
+| :ref:` <>`\ context : `WebContext <sdk_ubuntu_web_webcontext>`         |
 +--------------------------------------------------------------------------+
 
-The web context associated to this
-`WebView </sdk/apps/qml/Ubuntu.Web/WebView/>`__. By default a `shared
-context </sdk/apps/qml/Ubuntu.Web/SharedWebContext/>`__ is used which
-should fit most use cases, do not override unless you really need a
-finer control over the context.
+The web context associated to this :ref:`WebView <sdk_ubuntu_web_webview>`.
+By default a :ref:`shared context <sdk_ubuntu_web_sharedwebcontext>` is
+used which should fit most use cases, do not override unless you really
+need a finer control over the context.
 
 | 
+
+.. _sdk_ubuntu_web_webview_contextualActions-prop:
 
 +--------------------------------------------------------------------------+
 |        \ contextualActions : ActionList                                  |
@@ -171,8 +173,7 @@ A list of actions that the user will be presented with when invoking a
 context menu (by way of a right click on desktop, or a long press on a
 touch-enabled device, on an image or a hyperlink). By default the list
 is empty, and no menu is shown. User-defined actions can access the
-`contextual
-data </sdk/apps/qml/Ubuntu.Web/WebView#contextualData-prop>`__.
+:ref:`contextual data <sdk_ubuntu_web_webview#contextualData-prop>`.
 
 Example of user-defined actions:
 
@@ -191,9 +192,11 @@ Example of user-defined actions:
     }
 
 **See also**
-`contextualData </sdk/apps/qml/Ubuntu.Web/WebView#contextualData-prop>`__.
+:ref:`contextualData <sdk_ubuntu_web_webview#contextualData-prop>`.
 
 | 
+
+.. _sdk_ubuntu_web_webview_contextualData-prop:
 
 +--------------------------------------------------------------------------+
 |        \ contextualData : QtObject                                       |
@@ -201,8 +204,8 @@ Example of user-defined actions:
 
 An object that holds the contextual data associated with the current
 context menu. User-defined `contextual
-actions </sdk/apps/qml/Ubuntu.Web/WebView#contextualActions-prop>`__ can
-use this data to process it when triggered.
+actions <sdk_ubuntu_web_webview#contextualActions-prop>:ref:` can use this
+data to process it when triggered.
 
 It has the following properties:
 
@@ -215,9 +218,11 @@ Note that in the case of an image enclosed inside a hyperlink, both
 contextual action to operate on both elements.
 
 **See also**
-`contextualActions </sdk/apps/qml/Ubuntu.Web/WebView#contextualActions-prop>`__.
+:ref:`contextualActions <sdk_ubuntu_web_webview#contextualActions-prop>`.
 
 | 
+
+.. _sdk_ubuntu_web_webview_filePicker-prop:
 
 +--------------------------------------------------------------------------+
 |        \ filePicker : component                                          |
@@ -229,6 +234,8 @@ page.
 
 | 
 
+.. _sdk_ubuntu_web_webview_fullscreen-prop:
+
 +--------------------------------------------------------------------------+
 |        \ fullscreen : bool                                               |
 +--------------------------------------------------------------------------+
@@ -237,23 +244,28 @@ Whether the current page requested fullscreen display.
 
 | 
 
+.. _sdk_ubuntu_web_webview_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ icon : `url </sdk/apps/qml/Ubuntu.Web/WebView#url-prop>`__      |
+| :ref:` <>`\ icon : `url <sdk_ubuntu_web_webview#url-prop>`             |
 +--------------------------------------------------------------------------+
 
 The URL of the favicon of the current page.
 
 | 
 
+.. _sdk_ubuntu_web_webview_incognito-prop:
+
 +--------------------------------------------------------------------------+
 |        \ incognito : bool                                                |
 +--------------------------------------------------------------------------+
 
-Whether the `WebView </sdk/apps/qml/Ubuntu.Web/WebView/>`__ is being
-used in private browsing mode, where no data is persisted across
-sessions.
+Whether the :ref:`WebView <sdk_ubuntu_web_webview>` is being used in
+private browsing mode, where no data is persisted across sessions.
 
 | 
+
+.. _sdk_ubuntu_web_webview_loadProgress-prop:
 
 +--------------------------------------------------------------------------+
 |        \ loadProgress : int                                              |
@@ -262,10 +274,11 @@ sessions.
 The load progress of the current page (as a integer value between 0 and
 100).
 
-**See also**
-`loading </sdk/apps/qml/Ubuntu.Web/WebView#loading-prop>`__.
+**See also** :ref:`loading <sdk_ubuntu_web_webview#loading-prop>`.
 
 | 
+
+.. _sdk_ubuntu_web_webview_loading-prop:
 
 +--------------------------------------------------------------------------+
 |        \ loading : bool                                                  |
@@ -274,11 +287,13 @@ The load progress of the current page (as a integer value between 0 and
 Whether the current page is loading.
 
 **See also**
-`loadProgress </sdk/apps/qml/Ubuntu.Web/WebView#loadProgress-prop>`__,
-`stop </sdk/apps/qml/Ubuntu.Web/WebView#stop-method>`__, and
-`reload </sdk/apps/qml/Ubuntu.Web/WebView#reload-method>`__.
+:ref:`loadProgress <sdk_ubuntu_web_webview#loadProgress-prop>`,
+:ref:`stop <sdk_ubuntu_web_webview#stop-method>`, and
+:ref:`reload <sdk_ubuntu_web_webview#reload-method>`.
 
 | 
+
+.. _sdk_ubuntu_web_webview_navigationHistory-prop:
 
 +--------------------------------------------------------------------------+
 |        \ navigationHistory : list                                        |
@@ -291,6 +306,8 @@ visited.
 
 | 
 
+.. _sdk_ubuntu_web_webview_promptDialog-prop:
+
 +--------------------------------------------------------------------------+
 |        \ promptDialog : component                                        |
 +--------------------------------------------------------------------------+
@@ -298,13 +315,13 @@ visited.
 The QML component that will be instantiated to display a JavaScript
 prompt dialog.
 
-**See also**
-`alertDialog </sdk/apps/qml/Ubuntu.Web/WebView#alertDialog-prop>`__,
-`confirmDialog </sdk/apps/qml/Ubuntu.Web/WebView#confirmDialog-prop>`__,
-and
-`beforeUnloadDialog </sdk/apps/qml/Ubuntu.Web/WebView#beforeUnloadDialog-prop>`__.
+**See also** :ref:`alertDialog <sdk_ubuntu_web_webview#alertDialog-prop>`,
+:ref:`confirmDialog <sdk_ubuntu_web_webview#confirmDialog-prop>`, and
+:ref:`beforeUnloadDialog <sdk_ubuntu_web_webview#beforeUnloadDialog-prop>`.
 
 | 
+
+.. _sdk_ubuntu_web_webview_title-prop:
 
 +--------------------------------------------------------------------------+
 |        \ title : string                                                  |
@@ -314,8 +331,10 @@ The title of the current page.
 
 | 
 
+.. _sdk_ubuntu_web_webview_-method:
+
 +--------------------------------------------------------------------------+
-|        \ url : `url </sdk/apps/qml/Ubuntu.Web/WebView#url-prop>`__       |
+| :ref:` <>`\ url : `url <sdk_ubuntu_web_webview#url-prop>`              |
 +--------------------------------------------------------------------------+
 
 The URL of the current page.
@@ -325,17 +344,20 @@ The URL of the current page.
 Method Documentation
 --------------------
 
+.. _sdk_ubuntu_web_webview_void goBack-method:
+
 +--------------------------------------------------------------------------+
 |        \ void goBack()                                                   |
 +--------------------------------------------------------------------------+
 
 Go back one entry in the navigation history.
 
-**See also**
-`canGoBack </sdk/apps/qml/Ubuntu.Web/WebView#canGoBack-prop>`__ and
-`goForward </sdk/apps/qml/Ubuntu.Web/WebView#goForward-method>`__.
+**See also** :ref:`canGoBack <sdk_ubuntu_web_webview#canGoBack-prop>` and
+:ref:`goForward <sdk_ubuntu_web_webview#goForward-method>`.
 
 | 
+
+.. _sdk_ubuntu_web_webview_void goForward-method:
 
 +--------------------------------------------------------------------------+
 |        \ void goForward()                                                |
@@ -343,15 +365,16 @@ Go back one entry in the navigation history.
 
 Go forward one entry in the navigation history.
 
-**See also**
-`canGoForward </sdk/apps/qml/Ubuntu.Web/WebView#canGoForward-prop>`__
-and `goBack </sdk/apps/qml/Ubuntu.Web/WebView#goBack-method>`__.
+**See also** :ref:`canGoForward <sdk_ubuntu_web_webview#canGoForward-prop>`
+and :ref:`goBack <sdk_ubuntu_web_webview#goBack-method>`.
 
 | 
 
+.. _sdk_ubuntu_web_webview_void loadHtml-method:
+
 +--------------------------------------------------------------------------+
 |        \ void loadHtml(string *html*,                                    |
-| `url </sdk/apps/qml/Ubuntu.Web/WebView#url-prop>`__ *baseUrl*)           |
+| :ref:`url <sdk_ubuntu_web_webview#url-prop>` *baseUrl*)                     |
 +--------------------------------------------------------------------------+
 
 Load HTML content from memory instead of loading it from a URL. The
@@ -360,15 +383,19 @@ content.
 
 | 
 
+.. _sdk_ubuntu_web_webview_void reload-method:
+
 +--------------------------------------------------------------------------+
 |        \ void reload()                                                   |
 +--------------------------------------------------------------------------+
 
 Reload the current page.
 
-**See also** `stop </sdk/apps/qml/Ubuntu.Web/WebView#stop-method>`__.
+**See also** :ref:`stop <sdk_ubuntu_web_webview#stop-method>`.
 
 | 
+
+.. _sdk_ubuntu_web_webview_void stop-method:
 
 +--------------------------------------------------------------------------+
 |        \ void stop()                                                     |
@@ -377,7 +404,7 @@ Reload the current page.
 Stop loading the current page. Does nothing if there is no page
 currently loading.
 
-**See also** `reload </sdk/apps/qml/Ubuntu.Web/WebView#reload-method>`__
-and `loading </sdk/apps/qml/Ubuntu.Web/WebView#loading-prop>`__.
+**See also** :ref:`reload <sdk_ubuntu_web_webview#reload-method>` and
+:ref:`loading <sdk_ubuntu_web_webview#loading-prop>`.
 
 | 

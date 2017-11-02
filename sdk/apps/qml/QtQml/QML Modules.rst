@@ -1,3 +1,7 @@
+.. _sdk_qtqml_qml_modules:
+QtQml QML Modules
+=================
+
 
 
 A QML module provides versioned types and JavaScript resources in a type
@@ -20,7 +24,7 @@ Defining of a QML module allows:
    :name: defining-a-qml-module
 
 A module is defined by a `module definition qmldir
-file </sdk/apps/qml/QtQml/qtqml-modules-qmldir/>`__. Each module has an
+file </sdk/apps/qml/QtQml/qtqml-modules-qmldir/>`_ . Each module has an
 associated type namespace, which is the module's identifier. A module
 can provide QML object types (defined either by QML documents or via a
 C++ plugin) and JavaScript resources, and may be imported by clients.
@@ -28,15 +32,15 @@ C++ plugin) and JavaScript resources, and may be imported by clients.
 To define a module, a developer should gather together the various QML
 documents, JavaScript resources and C++ plugins which belong in the
 module into a single directory, and write an appropriate `module
-definition qmldir file </sdk/apps/qml/QtQml/qtqml-modules-qmldir/>`__
+definition qmldir file </sdk/apps/qml/QtQml/qtqml-modules-qmldir/>`_ 
 which should also be placed into the directory. The directory can then
 be installed into the `QML import
-path </sdk/apps/qml/QtQml/qtqml-syntax-imports#qml-import-path>`__ as a
+path </sdk/apps/qml/QtQml/qtqml-syntax-imports/#qml-import-path>`_  as a
 module.
 
 Note that defining a module is not the only way to share common QML
 types within a project - a simple `QML document directory
-import </sdk/apps/qml/QtQml/qtqml-syntax-directoryimports/>`__ may also
+import </sdk/apps/qml/QtQml/qtqml-syntax-directoryimports/>`_  may also
 be used for this purpose.
 
 .. rubric:: Supported QML Module Types
@@ -45,8 +49,8 @@ be used for this purpose.
 There are two different types of modules supported by QML:
 
 -  `Identified
-   Modules </sdk/apps/qml/QtQml/qtqml-modules-identifiedmodules/>`__
--  `Legacy Modules </sdk/apps/qml/QtQml/qtqml-modules-legacymodules/>`__
+   Modules </sdk/apps/qml/QtQml/qtqml-modules-identifiedmodules/>`_ 
+-  `Legacy Modules </sdk/apps/qml/QtQml/qtqml-modules-legacymodules/>`_ 
    (deprecated)
 
 Identified modules explicitly define their identifier and are installed
@@ -58,7 +62,7 @@ latest version of QML, and should be avoided by clients if possible.
 
 Clients may import a QML module from within QML documents or JavaScript
 files. Please see the documentation about `importing a QML
-module </sdk/apps/qml/QtQml/qtqml-syntax-imports#module-namespace-imports>`__
+module </sdk/apps/qml/QtQml/qtqml-syntax-imports/#module-namespace-imports>`_ 
 for more information on the topic.
 
 .. rubric:: Providing Types and Functionality in a C++ Plugin
@@ -76,6 +80,6 @@ function must register any types that the plugin provides, but must not
 do anything else (for example, instantiating QObjects is not allowed).
 
 See `Creating C++ Plugins For
-QML </sdk/apps/qml/QtQml/qtqml-modules-cppplugins/>`__ for more
+QML </sdk/apps/qml/QtQml/qtqml-modules-cppplugins/>`_  for more
 information.
 

@@ -1,3 +1,7 @@
+.. _sdk_qtsensors_pressuresensor:
+QtSensors PressureSensor
+========================
+
 The PressureSensor element reports on atmospheric pressure values.
 
 +--------------------------------------+--------------------------------------+
@@ -5,18 +9,16 @@ The PressureSensor element reports on atmospheric pressure values.
 +--------------------------------------+--------------------------------------+
 | Since:                               | QtSensors 5.1                        |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Sensor </sdk/apps/qml/QtSensors/Sen |
-|                                      | sor/>`__                             |
+| Inherits:                            | :ref:`Sensor <sdk_qtsensors_sensor>` |
 +--------------------------------------+--------------------------------------+
 
 Detailed Description
 --------------------
 
-The `PressureSensor </sdk/apps/qml/QtSensors/PressureSensor/>`__ element
-reports on atmospheric pressure values.
+The :ref:`PressureSensor <sdk_qtsensors_pressuresensor>` element reports on
+atmospheric pressure values.
 
 This element wraps the QPressureSensor class. Please see the
 documentation for QPressureSensor for details.
 
-**See also**
-`PressureReading </sdk/apps/qml/QtSensors/PressureReading/>`__.
+**See also** :ref:`PressureReading <sdk_qtsensors_pressurereading>`.

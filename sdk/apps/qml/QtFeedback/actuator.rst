@@ -1,3 +1,7 @@
+.. _sdk_qtfeedback_actuator:
+QtFeedback actuator
+===================
+
 The Actuator element represents a feedback actuator.
 
 +---------------------+---------------------+
@@ -9,22 +13,18 @@ The Actuator element represents a feedback actuator.
 Properties
 ----------
 
--  ****`actuatorId </sdk/apps/qml/QtFeedback/actuator#actuatorId-prop>`__****
-   : int
--  ****`enabled </sdk/apps/qml/QtFeedback/actuator#enabled-prop>`__****
-   : bool
--  ****`name </sdk/apps/qml/QtFeedback/actuator#name-prop>`__**** :
-   string
--  ****`state </sdk/apps/qml/QtFeedback/actuator#state-prop>`__**** :
-   enumeration
--  ****`valid </sdk/apps/qml/QtFeedback/actuator#valid-prop>`__**** :
-   bool
+-  :ref:`actuatorId <sdk_qtfeedback_actuator_actuatorId-prop>` :
+   int
+-  :ref:`enabled <sdk_qtfeedback_actuator_enabled-prop>` : bool
+-  :ref:`name <sdk_qtfeedback_actuator_name-prop>` : string
+-  :ref:`state <sdk_qtfeedback_actuator_state-prop>` : enumeration
+-  :ref:`valid <sdk_qtfeedback_actuator_valid-prop>` : bool
 
 Methods
 -------
 
 -  bool
-   ****`isCapabilitySupported </sdk/apps/qml/QtFeedback/actuator#isCapabilitySupported-method>`__****\ (enumeration
+   **:ref:`isCapabilitySupported <sdk_qtfeedback_actuator#isCapabilitySupported-method>`**\ (enumeration
    *capability*)
 
 Detailed Description
@@ -53,6 +53,8 @@ object:
 Property Documentation
 ----------------------
 
+.. _sdk_qtfeedback_actuator_actuatorId-prop:
+
 +--------------------------------------------------------------------------+
 |        \ actuatorId : int                                                |
 +--------------------------------------------------------------------------+
@@ -62,6 +64,8 @@ read only.
 
 | 
 
+.. _sdk_qtfeedback_actuator_enabled-prop:
+
 +--------------------------------------------------------------------------+
 |        \ enabled : bool                                                  |
 +--------------------------------------------------------------------------+
@@ -69,6 +73,8 @@ read only.
 This property is true if the feedback actuator is enabled.
 
 | 
+
+.. _sdk_qtfeedback_actuator_name-prop:
 
 +--------------------------------------------------------------------------+
 |        \ name : string                                                   |
@@ -79,6 +85,8 @@ read only.
 
 | 
 
+.. _sdk_qtfeedback_actuator_state-prop:
+
 +--------------------------------------------------------------------------+
 |        \ state : enumeration                                             |
 +--------------------------------------------------------------------------+
@@ -87,6 +95,8 @@ This property holds the state of the feedback actuator. This property is
 read only.
 
 | 
+
+.. _sdk_qtfeedback_actuator_valid-prop:
 
 +--------------------------------------------------------------------------+
 |        \ valid : bool                                                    |
@@ -99,6 +109,8 @@ only.
 
 Method Documentation
 --------------------
+
+.. _sdk_qtfeedback_actuator_bool isCapabilitySupported-method:
 
 +--------------------------------------------------------------------------+
 |        \ bool isCapabilitySupported(enumeration *capability*)            |

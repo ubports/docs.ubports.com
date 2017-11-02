@@ -1,5 +1,9 @@
+.. _sdk_autopilot_introspection_types_time:
+autopilot.introspection.types Time
+==================================
+
  *class* ``autopilot.introspection.types.``\ ``Time``\ (*\*args*,
-*\*\*kwargs*)\ ` </sdk/autopilot/python/autopilot.introspection/types.Time#Time>`__\ ` <#autopilot.introspection.types.Time>`__
+*\*\*kwargs*)\ ` </sdk/autopilot/python/autopilot.introspection/types.Time/#Time>`_ \ ` <#autopilot.introspection.types.Time>`_ 
     The Time class represents a time, without a date component.
 
     You can construct a Time instnace by passing the hours, minutes,

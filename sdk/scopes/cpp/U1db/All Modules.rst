@@ -1,11 +1,15 @@
+.. _sdk_u1db_all_modules:
+U1db All Modules
+================
+
 
                 General Topics
 
--  `Tutorial </sdk/scopes/cpp/U1db/tutorial/>`__ gives a quick start
+-  `Tutorial </sdk/scopes/cpp/U1db/tutorial/>`_  gives a quick start
    guide from storing a document to querying a database and displaying
    it in `Ubuntu
-   Components </sdk/apps/qml/UbuntuUserInterfaceToolkit/overview-ubuntu-sdk/>`__.
--  `Design Concepts </sdk/scopes/cpp/U1db/concepts/>`__ provides an
+   Components </sdk/apps/qml/UbuntuUserInterfaceToolkit/overview-ubuntu-sdk/>`_ .
+-  `Design Concepts </sdk/scopes/cpp/U1db/concepts/>`_  provides an
    overview of the design and terminology.
 
         Document Storage

@@ -1,3 +1,7 @@
+.. _sdk_ubuntuuserinterfacetoolkit_automatic_state_saving:
+UbuntuUserInterfaceToolkit Automatic State Saving
+=================================================
+
 
 
 During application development it is often required to start an
@@ -9,16 +13,16 @@ from the same position.
 
 Ubuntu UI toolkit provides a simple way to save the state of any
 component within an application, by using the attached component
-`StateSaver </sdk/apps/qml/Ubuntu.Components/StateSaver/>`__. By simply
-attaching this component to any
-`QtQuick <http://doc.qt.io/qt-5/qtquick-qmlmodule.html>`__ component and
+:ref:`StateSaver <sdk_ubuntu_components_statesaver>`. By simply attaching
+this component to any
+`QtQuick <http://doc.qt.io/qt-5/qtquick-qmlmodule.html>`_  component and
 specifying the
-`properties </sdk/apps/qml/Ubuntu.Components/StateSaver#properties-prop>`__
-to be saved, applications can be restored to any previous state they
-were before being closed.
+:ref:`properties <sdk_ubuntu_components_statesaver#properties-prop>` to be
+saved, applications can be restored to any previous state they were
+before being closed.
 
 Consider the following simple
-`QtQuick <http://doc.qt.io/qt-5/qtquick-qmlmodule.html>`__ application,
+`QtQuick <http://doc.qt.io/qt-5/qtquick-qmlmodule.html>`_  application,
 which on button press randomly changes its background.
 
 .. code:: qml
@@ -44,4 +48,4 @@ But let's see what else is neded to properly save an application's
 components proeprties.
 
 `Application name,
-IDs </sdk/apps/qml/UbuntuUserInterfaceToolkit/statesaving1/>`__
+IDs </sdk/apps/qml/UbuntuUserInterfaceToolkit/statesaving1/>`_ 

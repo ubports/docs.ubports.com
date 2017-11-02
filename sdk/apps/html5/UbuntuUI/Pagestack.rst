@@ -1,3 +1,7 @@
+.. _sdk_ubuntuui_pagestack:
+UbuntuUI Pagestack
+==================
+
 
 The Pagestack manages all Pages in a stack data structure. Initially,
 the Pagestack contains no Pages. The <em>push()</em> method is normally

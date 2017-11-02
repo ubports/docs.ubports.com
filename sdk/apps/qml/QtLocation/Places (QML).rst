@@ -1,3 +1,7 @@
+.. _sdk_qtlocation_places_(qml):
+QtLocation Places (QML)
+=======================
+
 
 
 |image0|
@@ -34,11 +38,10 @@ save the category.
 
 The Places example can work with any of the available geo services
 plugins. However, some plugins may require additional `plugin
-parameters </sdk/apps/qml/QtLocation/PluginParameter/>`__ in order to
-function correctly. `Plugin
-parameters </sdk/apps/qml/QtLocation/PluginParameter/>`__ can be passed
-on the command line using the ``--plugin`` argument, which takes the
-form:
+parameters <sdk_qtlocation_pluginparameter>:ref:` in order to function
+correctly. :ref:`Plugin parameters <sdk_qtlocation_pluginparameter>` can be
+passed on the command line using the ``--plugin`` argument, which takes
+the form:
 
 .. code:: cpp
 
@@ -48,7 +51,7 @@ Refer to the documentation for each of the geo services plugins for
 details on what plugin parameters they support. The Nokia services
 plugin supplied with Qt requires an *app\_id* and *token* pair. See "`Qt
 Location Nokia
-Plugin </sdk/apps/qml/QtLocation/location-plugin-nokia/>`__" for
+Plugin </sdk/apps/qml/QtLocation/location-plugin-nokia/>`_ " for
 details.
 
 .. rubric:: Displaying Categories
@@ -56,7 +59,7 @@ details.
 
 Before search by category can be performed, the list of available
 categories needs to be retrieved. This is achieved by creating a
-`CategoryModel </sdk/apps/qml/QtLocation/CategoryModel/>`__.
+:ref:`CategoryModel <sdk_qtlocation_categorymodel>`.
 
 .. code:: qml
 
@@ -66,15 +69,15 @@ categories needs to be retrieved. This is achieved by creating a
         hierarchical: true
     }
 
-The `CategoryModel </sdk/apps/qml/QtLocation/CategoryModel/>`__ type
-provides a model of the available categories. It can provide either a
-flat list or a hierarchical tree model. In this example, we use a
-hierarchical tree model, by setting the
-`hierarchical </sdk/apps/qml/QtLocation/CategoryModel#hierarchical-prop>`__
+The :ref:`CategoryModel <sdk_qtlocation_categorymodel>` type provides a
+model of the available categories. It can provide either a flat list or
+a hierarchical tree model. In this example, we use a hierarchical tree
+model, by setting the
+:ref:`hierarchical <sdk_qtlocation_categorymodel#hierarchical-prop>`
 property to *true*. The
-`plugin </sdk/apps/qml/QtLocation/CategoryModel#plugin-prop>`__ property
-is set to *placesPlugin* which is the *identifier* of the
-`Plugin </sdk/apps/qml/QtLocation/location-places-qml#plugin>`__ object
+:ref:`plugin <sdk_qtlocation_categorymodel#plugin-prop>` property is set to
+*placesPlugin* which is the *identifier* of the
+`Plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_  object
 used for place search throughout the example.
 
 Next we create a view to display the category model.
@@ -111,8 +114,8 @@ Next we create a view to display the category model.
 
 Because a hierarchical model is being used, a DelegateModel is needed to
 provide navigation functionality. If flat list model was being used the
-view could use the
-`CategoryModel </sdk/apps/qml/QtLocation/CategoryModel/>`__ directly.
+view could use the :ref:`CategoryModel <sdk_qtlocation_categorymodel>`
+directly.
 
 The view contains a header item that is used as a back button to
 navigate up the category tree. The *onClicked* handler sets the root
@@ -123,10 +126,9 @@ index causing the sub categories of the selected category to be
 displayed. The *onClicked* handler emits the **categoryClicked()**
 signal with a category parameter indicating which specific category has
 been chosen. The *onCrossClicked* handler will invoke the categories
-`remove() </sdk/apps/qml/QtLocation/Category#remove-method>`__ method.
-The *onEditClicked* handler invokes the **editClicked()** signal of the
-root item, this is used to notify which particular category is to be
-edited.
+:ref:`remove() <sdk_qtlocation_category#remove-method>` method. The
+*onEditClicked* handler invokes the **editClicked()** signal of the root
+item, this is used to notify which particular category is to be edited.
 
 The *CategoryDelegate* displays the category name and emits the
 *clicked* signal when the text is clicked:
@@ -191,7 +193,7 @@ only then in cases where the function is supported.
    :name: presenting-search-suggestions
 
 The
-`PlaceSearchSuggestionModel </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel/>`__
+:ref:`PlaceSearchSuggestionModel <sdk_qtlocation_placesearchsuggestionmodel>`
 type is used to fetch suggested search terms based on a partially
 entered search term.
 
@@ -220,7 +222,7 @@ search term is three or more characters, otherwise the search boxes
 state is reset.
 
 When the status of the
-`PlaceSearchSuggestionModel </sdk/apps/qml/QtLocation/PlaceSearchSuggestionModel/>`__
+:ref:`PlaceSearchSuggestionModel <sdk_qtlocation_placesearchsuggestionmodel>`
 changes, the state of the search box is changed to display the search
 suggestions.
 
@@ -267,8 +269,8 @@ triggers a place search using the search suggestion.
 .. rubric:: Searching for Places
    :name: searching-for-places
 
-The `PlaceSearchModel </sdk/apps/qml/QtLocation/PlaceSearchModel/>`__
-type is used to search for places.
+The :ref:`PlaceSearchModel <sdk_qtlocation_placesearchmodel>` type is used
+to search for places.
 
 .. code:: qml
 
@@ -313,20 +315,18 @@ type is used to search for places.
 
 First some of the model's properties are set, which will be used to form
 the search request. The
-`searchArea </sdk/apps/qml/QtLocation/PlaceSearchModel#searchArea-prop>`__
+:ref:`searchArea <sdk_qtlocation_placesearchmodel#searchArea-prop>`
 property is set to the *searchRegion* object which is a GeoCircle with a
 center that is linked to the current location displayed on the
-`Map </sdk/apps/qml/QtLocation/Map/>`__.
+:ref:`Map <sdk_qtlocation_map>`.
 
 Finally, we define two helper functions **searchForCategory()** and
 **searchForText()**, which set either the
-`categories </sdk/apps/qml/QtLocation/PlaceSearchModel#categories-prop>`__
-or
-`searchTerm </sdk/apps/qml/QtLocation/PlaceSearchModel#searchTerm-prop>`__
+:ref:`categories <sdk_qtlocation_placesearchmodel#categories-prop>` or
+:ref:`searchTerm <sdk_qtlocation_placesearchmodel#searchTerm-prop>`
 properties and invokes the
-`update() </sdk/apps/qml/QtLocation/PlaceSearchModel#update-method>`__
-method to start the place search. The search results are displayed in a
-ListView.
+:ref:`update() <sdk_qtlocation_placesearchmodel#update-method>` method to
+start the place search. The search results are displayed in a ListView.
 
 .. code:: qml
 
@@ -439,11 +439,10 @@ Places can have additional rich content, including editorials, reviews
 and images. Rich content is accessed via a set of models. Content models
 are generally not created directly by the application developer, instead
 models are obtained from the
-`editorialModel </sdk/apps/qml/QtLocation/Place#editorialModel-prop>`__,
-`reviewModel </sdk/apps/qml/QtLocation/Place#reviewModel-prop>`__ and
-`imageModel </sdk/apps/qml/QtLocation/Place#imageModel-prop>`__
-properties of the
-`Place </sdk/apps/qml/QtLocation/location-cpp-qml#place>`__ type.
+:ref:`editorialModel <sdk_qtlocation_place#editorialModel-prop>`,
+:ref:`reviewModel <sdk_qtlocation_place#reviewModel-prop>` and
+:ref:`imageModel <sdk_qtlocation_place#imageModel-prop>` properties of the
+`Place </sdk/apps/qml/QtLocation/location-cpp-qml/#place>`_  type.
 
 .. code:: qml
 
@@ -458,14 +457,14 @@ properties of the
 
 Some backends may support creation and saving of new places and
 categories. Plugin support can be checked an run-time with the
-`Plugin::supportsPlaces </sdk/apps/qml/QtLocation/Plugin#supportsPlaces-method>`__\ ()
+:ref:`Plugin::supportsPlaces <sdk_qtlocation_plugin#supportsPlaces-method>`\ ()
 method.
 
 To save a new place, first create a new
-`Place </sdk/apps/qml/QtLocation/location-cpp-qml#place>`__ object,
+`Place </sdk/apps/qml/QtLocation/location-cpp-qml/#place>`_  object,
 using the Qt.createQmlObject() method. Assign the appropriate plugin and
 place properties and invoke the
-`save() </sdk/apps/qml/QtLocation/Place#save-method>`__ method.
+:ref:`save() <sdk_qtlocation_place#save-method>` method.
 
 .. code:: qml
 
@@ -516,17 +515,17 @@ Category creation is similar:
 
 Support for place and category removal can be checked at run-time by
 using the
-`Plugin::supportsPlaces </sdk/apps/qml/QtLocation/Plugin#supportsPlaces-method>`__
+:ref:`Plugin::supportsPlaces <sdk_qtlocation_plugin#supportsPlaces-method>`
 method, passing in a
-`Plugin::PlacesFeatures </sdk/apps/qml/QtLocation/Plugin#supportsPlaces-method>`__
+:ref:`Plugin::PlacesFeatures <sdk_qtlocation_plugin#supportsPlaces-method>`
 flag and getting back *true* if the feature is supported. For example
 one would invoke *supportsPlaces(Plugin.RemovePlaceFeature)* to check if
 the *Plugin.RemovePlaceFeature* is supported.
 
 To remove a place, invoke its
-`remove() </sdk/apps/qml/QtLocation/Place#remove-method>`__ method. To
-remove a category, invoke its
-`remove() </sdk/apps/qml/QtLocation/Category#remove-method>`__ method.
+:ref:`remove() <sdk_qtlocation_place#remove-method>` method. To remove a
+category, invoke its
+:ref:`remove() <sdk_qtlocation_category#remove-method>` method.
 
 .. rubric:: Running the Example
    :name: running-the-example

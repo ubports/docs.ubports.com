@@ -1,3 +1,7 @@
+.. _sdk_scopejs_category:
+ScopeJS Category
+================
+
 
 A set of related results returned by a scope and displayed within a
 single pane in the Unity dash. To create a Category, use

@@ -1,3 +1,7 @@
+.. _sdk_qtorganizer_eventoccurrence:
+QtOrganizer EventOccurrence
+===========================
+
 The EventOccurrence element provides an occurrence of an event.
 
 +---------------------+--------------------------+
@@ -7,40 +11,39 @@ The EventOccurrence element provides an occurrence of an event.
 Properties
 ----------
 
--  ****`allDay </sdk/apps/qml/QtOrganizer/EventOccurrence#allDay-prop>`__****
-   : bool
--  ****`endDateTime </sdk/apps/qml/QtOrganizer/EventOccurrence#endDateTime-prop>`__****
+-  :ref:`allDay <sdk_qtorganizer_eventoccurrence_allDay-prop>` :
+   bool
+-  :ref:`endDateTime <sdk_qtorganizer_eventoccurrence_endDateTime-prop>`
    : date
--  ****`location </sdk/apps/qml/QtOrganizer/EventOccurrence#location-prop>`__****
+-  :ref:`location <sdk_qtorganizer_eventoccurrence_location-prop>`
    : string
--  ****`originalDate </sdk/apps/qml/QtOrganizer/EventOccurrence#originalDate-prop>`__****
+-  :ref:`originalDate <sdk_qtorganizer_eventoccurrence_originalDate-prop>`
    : date
--  ****`parentId </sdk/apps/qml/QtOrganizer/EventOccurrence#parentId-prop>`__****
+-  :ref:`parentId <sdk_qtorganizer_eventoccurrence_parentId-prop>`
    : int
--  ****`priority </sdk/apps/qml/QtOrganizer/EventOccurrence#priority-prop>`__****
+-  :ref:`priority <sdk_qtorganizer_eventoccurrence_priority-prop>`
    : enumeration
--  ****`startDateTime </sdk/apps/qml/QtOrganizer/EventOccurrence#startDateTime-prop>`__****
+-  :ref:`startDateTime <sdk_qtorganizer_eventoccurrence_startDateTime-prop>`
    : date
 
 Signals
 -------
 
--  ****`onItemChanged </sdk/apps/qml/QtOrganizer/EventOccurrence#onItemChanged-signal>`__****\ ()
+-  :ref:`onItemChanged <sdk_qtorganizer_eventoccurrence_onItemChanged-signal>`\ ()
 
 Detailed Description
 --------------------
 
-**See also**
-`OrganizerItem </sdk/apps/qml/QtOrganizer/OrganizerItem/>`__,
-`Event </sdk/apps/qml/QtOrganizer/Event/>`__,
-`Journal </sdk/apps/qml/QtOrganizer/Journal/>`__,
-`Todo </sdk/apps/qml/QtOrganizer/Todo/>`__,
-`TodoOccurrence </sdk/apps/qml/QtOrganizer/TodoOccurrence/>`__,
-`Note </sdk/apps/qml/QtOrganizer/Note/>`__, and
-QOrganizerEventOccurrence.
+**See also** :ref:`OrganizerItem <sdk_qtorganizer_organizeritem>`,
+:ref:`Event <sdk_qtorganizer_event>`,
+:ref:`Journal <sdk_qtorganizer_journal>`, `Todo <sdk_qtorganizer_todo>`,
+:ref:`TodoOccurrence <sdk_qtorganizer_todooccurrence>`,
+:ref:`Note <sdk_qtorganizer_note>`, and QOrganizerEventOccurrence.
 
 Property Documentation
 ----------------------
+
+.. _sdk_qtorganizer_eventoccurrence_allDay-prop:
 
 +--------------------------------------------------------------------------+
 |        \ allDay : bool                                                   |
@@ -53,6 +56,8 @@ and the event occurrence will be an all-day item.
 
 | 
 
+.. _sdk_qtorganizer_eventoccurrence_endDateTime-prop:
+
 +--------------------------------------------------------------------------+
 |        \ endDateTime : date                                              |
 +--------------------------------------------------------------------------+
@@ -60,6 +65,8 @@ and the event occurrence will be an all-day item.
 This property holds the date time at which the event occurrence ends.
 
 | 
+
+.. _sdk_qtorganizer_eventoccurrence_location-prop:
 
 +--------------------------------------------------------------------------+
 |        \ location : string                                               |
@@ -70,6 +77,8 @@ occurrence is held.
 
 | 
 
+.. _sdk_qtorganizer_eventoccurrence_originalDate-prop:
+
 +--------------------------------------------------------------------------+
 |        \ originalDate : date                                             |
 +--------------------------------------------------------------------------+
@@ -79,6 +88,8 @@ going to occur.
 
 | 
 
+.. _sdk_qtorganizer_eventoccurrence_parentId-prop:
+
 +--------------------------------------------------------------------------+
 |        \ parentId : int                                                  |
 +--------------------------------------------------------------------------+
@@ -87,6 +98,8 @@ This property holds the id of the event which is this occurrence's
 parent.
 
 | 
+
+.. _sdk_qtorganizer_eventoccurrence_priority-prop:
 
 +--------------------------------------------------------------------------+
 |        \ priority : enumeration                                          |
@@ -108,6 +121,8 @@ be one of:
 
 | 
 
+.. _sdk_qtorganizer_eventoccurrence_startDateTime-prop:
+
 +--------------------------------------------------------------------------+
 |        \ startDateTime : date                                            |
 +--------------------------------------------------------------------------+
@@ -119,11 +134,13 @@ This property holds the start date time of the event occurrence.
 Signal Documentation
 --------------------
 
+.. _sdk_qtorganizer_eventoccurrence_onItemChanged()-prop:
+
 +--------------------------------------------------------------------------+
 |        \ onItemChanged()                                                 |
 +--------------------------------------------------------------------------+
 
 **See also**
-`OrganizerItem::onItemChanged </sdk/apps/qml/QtOrganizer/OrganizerItem#onItemChanged-signal>`__.
+:ref:`OrganizerItem::onItemChanged <sdk_qtorganizer_organizeritem#onItemChanged-signal>`.
 
 | 

@@ -1,3 +1,7 @@
+.. _sdk_ubuntu_components_actionbar:
+Ubuntu.Components ActionBar
+===========================
+
 Show a row of buttons that trigger actions. When the number of visible
 actions specified is larger than numberOfSlots, an overflow button will
 be shown which triggers an overflow panel that shows the remaining
@@ -6,18 +10,18 @@ actions.
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import Ubuntu.Components 1.3         |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `StyledItem </sdk/apps/qml/Ubuntu.Co |
-|                                      | mponents/StyledItem/>`__             |
+| Inherits:                            | :ref:`StyledItem <sdk_ubuntu_components_s |
+|                                      | tyleditem>`_                         |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`actions </sdk/apps/qml/Ubuntu.Components/ActionBar#actions-prop>`__****
-   : Action
--  ****`delegate </sdk/apps/qml/Ubuntu.Components/ActionBar#delegate-prop>`__****
+-  :ref:`actions <sdk_ubuntu_components_actionbar_actions-prop>` :
+   Action
+-  :ref:`delegate <sdk_ubuntu_components_actionbar_delegate-prop>`
    : Component
--  ****`numberOfSlots </sdk/apps/qml/Ubuntu.Components/ActionBar#numberOfSlots-prop>`__****
+-  :ref:`numberOfSlots <sdk_ubuntu_components_actionbar_numberOfSlots-prop>`
    : int
 
 Detailed Description
@@ -48,8 +52,10 @@ Example:
 Property Documentation
 ----------------------
 
+.. _sdk_ubuntu_components_actionbar_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ actions : `Action </sdk/apps/qml/Ubuntu.Components/Action/>`__  |
+| :ref:` <>`\ actions : `Action <sdk_ubuntu_components_action>`          |
 +--------------------------------------------------------------------------+
 
 The actions to display in the bar. If more actions are specified than
@@ -58,14 +64,16 @@ with the actions that did not fit in the bar directly.
 
 | 
 
+.. _sdk_ubuntu_components_actionbar_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ delegate : `Component </sdk/apps/qml/QtQml/Component/>`__       |
+| :ref:` <>`\ delegate : `Component <sdk_qtqml_component>`               |
 +--------------------------------------------------------------------------+
 
 Set this to override the default delegate button that shows the actions
-in the `ActionBar </sdk/apps/qml/Ubuntu.Components/ActionBar/>`__. Uses
-the defaultDelegate of
-`ActionBarStyle </sdk/apps/qml/Ubuntu.Components/Styles.ActionBarStyle/>`__
+in the :ref:`ActionBar <sdk_ubuntu_components_actionbar>`. Uses the
+defaultDelegate of
+`ActionBarStyle </sdk/apps/qml/Ubuntu.Components/Styles.ActionBarStyle/>`_ 
 by default.
 
 Example:
@@ -87,6 +95,8 @@ Example:
     }
 
 | 
+
+.. _sdk_ubuntu_components_actionbar_numberOfSlots-prop:
 
 +--------------------------------------------------------------------------+
 |        \ numberOfSlots : int                                             |

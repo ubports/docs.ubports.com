@@ -1,3 +1,7 @@
+.. _sdk_qtquick_regexpvalidator:
+QtQuick RegExpValidator
+=======================
+
 Provides a string validator
 
 +---------------------+----------------------+
@@ -7,22 +11,22 @@ Provides a string validator
 Properties
 ----------
 
--  ****`regExp </sdk/apps/qml/QtQuick/RegExpValidator#regExp-prop>`__****
-   : regExp
+-  :ref:`regExp <sdk_qtquick_regexpvalidator_regExp-prop>` : regExp
 
 Detailed Description
 --------------------
 
-The `RegExpValidator </sdk/apps/qml/QtQuick/RegExpValidator/>`__ type
-provides a validator, which counts as valid any string which matches a
-specified regular expression.
+The :ref:`RegExpValidator <sdk_qtquick_regexpvalidator>` type provides a
+validator, which counts as valid any string which matches a specified
+regular expression.
 
 Property Documentation
 ----------------------
 
+.. _sdk_qtquick_regexpvalidator_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ regExp :                                                        |
-| `regExp </sdk/apps/qml/QtQuick/RegExpValidator#regExp-prop>`__           |
+| :ref:` <>`\ regExp : `regExp <sdk_qtquick_regexpvalidator#regExp-prop>`|
 +--------------------------------------------------------------------------+
 
 This property holds the regular expression used for validation.

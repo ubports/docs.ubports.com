@@ -1,3 +1,7 @@
+.. _sdk_qtquick_important_concepts_in_qt_quick_-_user_input:
+QtQuick Important Concepts In Qt Quick - User Input
+===================================================
+
 
 
 Being able to respond to user-input is a fundamental part of
@@ -15,11 +19,10 @@ like smartphones and tablets.
 Qt Quick was designed specifically with touch-driven user-interfaces in
 mind, and thus touch events are supported in various visual object
 types, from
-`Flickable </sdk/apps/qml/QtQuick/touchinteraction#flickable>`__ lists
-to the generic
-`MultiPointTouchArea </sdk/apps/qml/QtQuick/MultiPointTouchArea/>`__
-type, as well as in the `MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__
-type (which will be documented thoroughly in a proceeding section).
+`Flickable </sdk/apps/qml/QtQuick/touchinteraction/#flickable>`_  lists
+to the generic :ref:`MultiPointTouchArea <sdk_qtquick_multipointtoucharea>`
+type, as well as in the :ref:`MouseArea <sdk_qtquick_mousearea>` type
+(which will be documented thoroughly in a proceeding section).
 
 .. rubric:: Mouse
    :name: mouse
@@ -28,12 +31,12 @@ Mouse input is another important user input for user interfaces.
 Detecting and reacting to clicks and presses according to the mouse
 cursor position is a fundamental concept in user-interface design.
 
-Qt Quick provides the `MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__
-visual object type which automatically receives mouse events (including
-clicks and wheel events) which allows developers to create custom
+Qt Quick provides the :ref:`MouseArea <sdk_qtquick_mousearea>` visual
+object type which automatically receives mouse events (including clicks
+and wheel events) which allows developers to create custom
 user-interface objects to handle mouse input. Please see the
 documentation about `mouse events in Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-input-mouseevents/>`__ for more
+Quick </sdk/apps/qml/QtQuick/qtquick-input-mouseevents/>`_  for more
 information on the topic.
 
 .. rubric:: Keyboard Input and Keyboard Focus
@@ -43,17 +46,17 @@ Supporting input from a keyboard is a vital component of the user
 interface of many applications.
 
 Any visual item can receive keyboard input through the
-`Keys </sdk/apps/qml/QtQuick/Keys/>`__ attached type. Additionally, the
-issue of *keyboard focus* arises when multiple items are required to
-receive key events, as these events must be passed to the correct item.
-See the documentation about `Keyboard focus in Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-input-focus/>`__ for more
+:ref:`Keys <sdk_qtquick_keys>` attached type. Additionally, the issue of
+*keyboard focus* arises when multiple items are required to receive key
+events, as these events must be passed to the correct item. See the
+documentation about `Keyboard focus in Qt
+Quick </sdk/apps/qml/QtQuick/qtquick-input-focus/>`_  for more
 information on this topic.
 
 Qt Quick also provides visual text items which automatically receive
 keyboard events and key-presses, and displays the appropriate text. See
 the documentation about `text
-input </sdk/apps/qml/QtQuick/qtquick-input-textinput/>`__ for in-depth
+input </sdk/apps/qml/QtQuick/qtquick-input-textinput/>`_  for in-depth
 information on the topic.
 
 .. rubric:: Device Motion Gestures

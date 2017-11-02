@@ -1,26 +1,29 @@
+.. _sdk_qtfeedback_feedbackeffect:
+QtFeedback FeedbackEffect
+=========================
+
 The FeedbackEffect element is the base class for all feedback effects.
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import .                             |
 +--------------------------------------+--------------------------------------+
 | Inherited By:                        | FileEffect and                       |
-|                                      | `HapticsEffect </sdk/apps/qml/QtFeed |
-|                                      | back/hapticseffect/>`__.             |
+|                                      | :ref:`HapticsEffect <sdk_qtfeedback_hapti |
+|                                      | cseffect>`_ .                        |
 +--------------------------------------+--------------------------------------+
 
 Properties
 ----------
 
--  ****`duration </sdk/apps/qml/QtFeedback/FeedbackEffect#duration-prop>`__****
-   : int
--  ****`error </sdk/apps/qml/QtFeedback/FeedbackEffect#error-prop>`__****
-   : Feedback::ErrorType
--  ****`paused </sdk/apps/qml/QtFeedback/FeedbackEffect#paused-prop>`__****
-   : bool
--  ****`running </sdk/apps/qml/QtFeedback/FeedbackEffect#running-prop>`__****
-   : bool
--  ****`state </sdk/apps/qml/QtFeedback/FeedbackEffect#state-prop>`__****
-   : FeedbackEffect::State
+-  :ref:`duration <sdk_qtfeedback_feedbackeffect_duration-prop>` :
+   int
+-  :ref:`error <sdk_qtfeedback_feedbackeffect_error-prop>` :
+   Feedback::ErrorType
+-  :ref:`paused <sdk_qtfeedback_feedbackeffect_paused-prop>` : bool
+-  :ref:`running <sdk_qtfeedback_feedbackeffect_running-prop>` :
+   bool
+-  :ref:`state <sdk_qtfeedback_feedbackeffect_state-prop>` :
+   FeedbackEffect::State
 
 Detailed Description
 --------------------
@@ -60,6 +63,8 @@ QFeedbackEffect.
 Property Documentation
 ----------------------
 
+.. _sdk_qtfeedback_feedbackeffect_duration-prop:
+
 +--------------------------------------------------------------------------+
 |        \ duration : int                                                  |
 +--------------------------------------------------------------------------+
@@ -71,13 +76,15 @@ unknown duration, or Feedback.Infinite for effects that don't stop.
 
 | 
 
+.. _sdk_qtfeedback_feedbackeffect_error-prop:
+
 +--------------------------------------------------------------------------+
 |        \ error : Feedback::ErrorType                                     |
 +--------------------------------------------------------------------------+
 
 This property holds the error status of the
-`FeedbackEffect </sdk/apps/qml/QtFeedback/FeedbackEffect/>`__. The error
-is one of the following values:
+:ref:`FeedbackEffect <sdk_qtfeedback_feedbackeffect>`. The error is one of
+the following values:
 
 -  Feedback.UnknownError - An unknown error occurred.
 -  Feedback.DeviceBusy - The device resource is already being used.
@@ -85,6 +92,8 @@ is one of the following values:
 **See also** Feedback and QFeedbackEffect::ErrorType.
 
 | 
+
+.. _sdk_qtfeedback_feedbackeffect_paused-prop:
 
 +--------------------------------------------------------------------------+
 |        \ paused : bool                                                   |
@@ -94,6 +103,8 @@ This property is true if this feedback effect is paused.
 
 | 
 
+.. _sdk_qtfeedback_feedbackeffect_running-prop:
+
 +--------------------------------------------------------------------------+
 |        \ running : bool                                                  |
 +--------------------------------------------------------------------------+
@@ -101,6 +112,8 @@ This property is true if this feedback effect is paused.
 This property is true if this feedback effect is running.
 
 | 
+
+.. _sdk_qtfeedback_feedbackeffect_state-prop:
 
 +--------------------------------------------------------------------------+
 |        \ state : FeedbackEffect::State                                   |

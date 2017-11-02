@@ -1,3 +1,7 @@
+.. _sdk_qtlocation_maps_and_navigation_(c++):
+QtLocation Maps and Navigation (C++)
+====================================
+
 
 
 **Maps and Navigation** provides C++ utilities for geocoding (finding a
@@ -6,7 +10,7 @@ driving and walking directions).
 
 Currently it is not possible to interact with maps via C++. Mapping
 applications must use the `Maps and Navigation
-(QML) </sdk/apps/qml/QtLocation/location-maps-qml/>`__ API.
+(QML) </sdk/apps/qml/QtLocation/location-maps-qml/>`_  API.
 
 .. rubric:: Geocoding
    :name: geocoding

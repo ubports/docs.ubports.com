@@ -1,14 +1,18 @@
+.. _sdk_qtquick_qt_quick_demo_-_photo_surface:
+QtQuick Qt Quick Demo - Photo Surface
+=====================================
+
 
 
 |image0|
 
 *Photo Surface* demonstrates how to use a
-`Repeater </sdk/apps/qml/QtQuick/Repeater/>`__ with a
-`FolderListModel </sdk/apps/qml/Qt.labs.folderlistmodel/FolderListModel/>`__
-and a FileDialog to access images from a folder selected by a user and
-how to handle dragging, rotation and pinch zooming within the same item
-using a `PinchArea </sdk/apps/qml/QtQuick/PinchArea/>`__ that contains a
-`MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__.
+:ref:`Repeater <sdk_qtquick_repeater>` with a
+:ref:`FolderListModel <sdk_qt_labs_folderlistmodel_folderlistmodel>` and a
+FileDialog to access images from a folder selected by a user and how to
+handle dragging, rotation and pinch zooming within the same item using a
+:ref:`PinchArea <sdk_qtquick_pincharea>` that contains a
+:ref:`MouseArea <sdk_qtquick_mousearea>`.
 
 All the app code is contained in one QML file, photosurface.qml. Inline
 JavaScript code is used to place, rotate, and scale images on the photo
@@ -25,9 +29,9 @@ Running an Example.
    :name: creating-the-main-window
 
 To create the main window for the Photo Surface app, we use the
-`Window </sdk/apps/qml/QtQuick/Window.Window/>`__ QML type as the root
+`Window </sdk/apps/qml/QtQuick/Window.Window/>`_  QML type as the root
 item. It automatically sets up the window for use with `Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-index/>`__ graphical types:
+Quick </sdk/apps/qml/QtQuick/qtquick-index/>`_  graphical types:
 
 .. code:: qml
 
@@ -40,7 +44,7 @@ Quick </sdk/apps/qml/QtQuick/qtquick-index/>`__ graphical types:
         property real defaultSize: 200
         property var currentFrame: undefined
 
-To use the `Window </sdk/apps/qml/QtQuick/Window.Window/>`__ type, we
+To use the `Window </sdk/apps/qml/QtQuick/Window.Window/>`_  type, we
 must import it:
 
 .. code:: cpp
@@ -50,10 +54,9 @@ must import it:
 .. rubric:: Accessing Folder Contents
    :name: accessing-folder-contents
 
-We use a `Repeater </sdk/apps/qml/QtQuick/Repeater/>`__ QML type
-together with the
-`FolderListModel </sdk/apps/qml/Qt.labs.folderlistmodel/FolderListModel/>`__
-to display GIF, JPG, and PNG images located in a folder:
+We use a :ref:`Repeater <sdk_qtquick_repeater>` QML type together with the
+:ref:`FolderListModel <sdk_qt_labs_folderlistmodel_folderlistmodel>` to
+display GIF, JPG, and PNG images located in a folder:
 
 .. code:: qml
 
@@ -66,8 +69,8 @@ to display GIF, JPG, and PNG images located in a folder:
             }
 
 To use the
-`FolderListModel </sdk/apps/qml/Qt.labs.folderlistmodel/FolderListModel/>`__
-type, we must import it:
+:ref:`FolderListModel <sdk_qt_labs_folderlistmodel_folderlistmodel>` type,
+we must import it:
 
 .. code:: cpp
 
@@ -99,11 +102,11 @@ the app starts:
     Component.onCompleted: fileDialog.open()
 
 Users can also click the file dialog icon to open the file dialog. We
-use an `Image </sdk/apps/qml/QtQuick/imageelements#image>`__ QML type to
-display the icon. Inside the
-`Image </sdk/apps/qml/QtQuick/imageelements#image>`__ type, we use a
-`MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ with the ``onClicked``
-signal handler to call the ``fileDialog.open()`` function:
+use an `Image </sdk/apps/qml/QtQuick/imageelements/#image>`_  QML type
+to display the icon. Inside the
+`Image </sdk/apps/qml/QtQuick/imageelements/#image>`_  type, we use a
+:ref:`MouseArea <sdk_qtquick_mousearea>` with the ``onClicked`` signal
+handler to call the ``fileDialog.open()`` function:
 
 .. code:: qml
 
@@ -122,13 +125,13 @@ signal handler to call the ``fileDialog.open()`` function:
 .. rubric:: Displaying Images on the Photo Surface
    :name: displaying-images-on-the-photo-surface
 
-We use a `Rectangle </sdk/apps/qml/QtQuick/Rectangle/>`__ as a delegate
-for a `Repeater </sdk/apps/qml/QtQuick/Repeater/>`__ to provide a frame
-for each image that the
-`FolderListModel </sdk/apps/qml/Qt.labs.folderlistmodel/FolderListModel/>`__
-finds in the selected folder. We use JavaScript ``Math()`` methods to
-place the frames randomly on the photo surface and to rotate them at
-random angles, as well as to scale the images:
+We use a :ref:`Rectangle <sdk_qtquick_rectangle>` as a delegate for a
+:ref:`Repeater <sdk_qtquick_repeater>` to provide a frame for each image
+that the
+:ref:`FolderListModel <sdk_qt_labs_folderlistmodel_folderlistmodel>` finds
+in the selected folder. We use JavaScript ``Math()`` methods to place
+the frames randomly on the photo surface and to rotate them at random
+angles, as well as to scale the images:
 
 .. code:: qml
 
@@ -155,9 +158,9 @@ random angles, as well as to scale the images:
 .. rubric:: Handling Pinch Gestures
    :name: handling-pinch-gestures
 
-We use a `PinchArea </sdk/apps/qml/QtQuick/PinchArea/>`__ that contains
-a `MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__ in the photo frames
-to handle dragging, rotation and pinch zooming of the frame:
+We use a :ref:`PinchArea <sdk_qtquick_pincharea>` that contains a
+:ref:`MouseArea <sdk_qtquick_mousearea>` in the photo frames to handle
+dragging, rotation and pinch zooming of the frame:
 
 .. code:: qml
 
@@ -176,12 +179,11 @@ item to manipulate. The rotation properties specify that the frames can
 be rotated at all angles and the scale properties specify that they can
 be scaled between ``0.1`` and ``10``.
 
-In the `MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__'s ``onPressed``
-signal handler, we raise the selected photo frame to the top by
-increasing the value of its ``z`` property. The root item stores the z
-value of the top-most frame. The border color of the photo frame is
-controlled in the ``onEntered`` signal handler to highlight the selected
-image:
+In the :ref:`MouseArea <sdk_qtquick_mousearea>`'s ``onPressed`` signal
+handler, we raise the selected photo frame to the top by increasing the
+value of its ``z`` property. The root item stores the z value of the
+top-most frame. The border color of the photo frame is controlled in the
+``onEntered`` signal handler to highlight the selected image:
 
 .. code:: qml
 
@@ -197,8 +199,8 @@ image:
                         onEntered: parent.setFrameColor();
 
 To enable you to test the example on the desktop, we use the
-`MouseArea </sdk/apps/qml/QtQuick/MouseArea/>`__'s ``onWheel`` signal
-handler to simulate pinch gestures by using a mouse:
+:ref:`MouseArea <sdk_qtquick_mousearea>`'s ``onWheel`` signal handler to
+simulate pinch gestures by using a mouse:
 
 .. code:: qml
 

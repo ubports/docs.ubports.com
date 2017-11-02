@@ -1,3 +1,7 @@
+.. _sdk_qtcontacts_contactmodel:
+QtContacts ContactModel
+=======================
+
 The ContactModel element provides access to contacts from the contacts
 store.
 
@@ -8,55 +12,53 @@ store.
 Properties
 ----------
 
--  ****`ImportError </sdk/apps/qml/QtContacts/ContactModel#ImportError-prop>`__****
+-  :ref:`ImportError <sdk_qtcontacts_contactmodel_ImportError-prop>`
    : enumeration
--  ****`StorageLocation </sdk/apps/qml/QtContacts/ContactModel#StorageLocation-prop>`__****
+-  :ref:`StorageLocation <sdk_qtcontacts_contactmodel_StorageLocation-prop>`
    : enumeration
--  ****`autoUpdate </sdk/apps/qml/QtContacts/ContactModel#autoUpdate-prop>`__****
+-  :ref:`autoUpdate <sdk_qtcontacts_contactmodel_autoUpdate-prop>`
    : bool
--  ****`availableManagers </sdk/apps/qml/QtContacts/ContactModel#availableManagers-prop>`__****
+-  :ref:`availableManagers <sdk_qtcontacts_contactmodel_availableManagers-prop>`
    : list<string>
--  ****`contacts </sdk/apps/qml/QtContacts/ContactModel#contacts-prop>`__****
-   : list<Contact>
--  ****`error </sdk/apps/qml/QtContacts/ContactModel#error-prop>`__****
-   : string
--  ****`fetchHint </sdk/apps/qml/QtContacts/ContactModel#fetchHint-prop>`__****
-   : FetchHint
--  ****`filter </sdk/apps/qml/QtContacts/ContactModel#filter-prop>`__****
-   : Filter
--  ****`manager </sdk/apps/qml/QtContacts/ContactModel#manager-prop>`__****
-   : string
--  ****`sortOrders </sdk/apps/qml/QtContacts/ContactModel#sortOrders-prop>`__****
+-  :ref:`contacts <sdk_qtcontacts_contactmodel_contacts-prop>` :
+   list<Contact>
+-  :ref:`error <sdk_qtcontacts_contactmodel_error-prop>` : string
+-  :ref:`fetchHint <sdk_qtcontacts_contactmodel_fetchHint-prop>` :
+   FetchHint
+-  :ref:`filter <sdk_qtcontacts_contactmodel_filter-prop>` : Filter
+-  :ref:`manager <sdk_qtcontacts_contactmodel_manager-prop>` :
+   string
+-  :ref:`sortOrders <sdk_qtcontacts_contactmodel_sortOrders-prop>`
    : list<SortOrder>
--  ****`storageLocations </sdk/apps/qml/QtContacts/ContactModel#storageLocations-prop>`__****
+-  :ref:`storageLocations <sdk_qtcontacts_contactmodel_storageLocations-prop>`
    : int
 
 Signals
 -------
 
--  ****`contactsFetched </sdk/apps/qml/QtContacts/ContactModel#contactsFetched-signal>`__****\ (int
+-  :ref:`contactsFetched <sdk_qtcontacts_contactmodel_contactsFetched-signal>`\ (int
    *requestId*, list<Contact> *fetchedContacts*)
--  ****`onImportCompleted </sdk/apps/qml/QtContacts/ContactModel#onImportCompleted-signal>`__****\ (ImportError
+-  :ref:`onImportCompleted <sdk_qtcontacts_contactmodel_onImportCompleted-signal>`\ (ImportError
    *error*, URL *url*, list<string> *ids*)
--  ****`storageLocationsChanged </sdk/apps/qml/QtContacts/ContactModel#storageLocationsChanged-signal>`__****\ ()
+-  :ref:`storageLocationsChanged <sdk_qtcontacts_contactmodel_storageLocationsChanged-signal>`\ ()
 
 Methods
 -------
 
 -  void
-   ****`exportContacts </sdk/apps/qml/QtContacts/ContactModel#exportContacts-method>`__****\ (url
+   **:ref:`exportContacts <sdk_qtcontacts_contactmodel#exportContacts-method>`**\ (url
    *url*, list<string> *profiles*, list<variant> *declarativeContacts*)
 -  int
-   ****`fetchContacts </sdk/apps/qml/QtContacts/ContactModel#fetchContacts-method>`__****\ (list<string>
+   **:ref:`fetchContacts <sdk_qtcontacts_contactmodel#fetchContacts-method>`**\ (list<string>
    *contactIds*)
 -  void
-   ****`importContacts </sdk/apps/qml/QtContacts/ContactModel#importContacts-method>`__****\ (url
+   **:ref:`importContacts <sdk_qtcontacts_contactmodel#importContacts-method>`**\ (url
    *url*, list<string> *profiles*)
--  ****`removeContact </sdk/apps/qml/QtContacts/ContactModel#removeContact-method>`__****\ (string
+-  :ref:`removeContact <sdk_qtcontacts_contactmodel_removeContact-method>`\ (string
    *contactId*)
--  ****`removeContacts </sdk/apps/qml/QtContacts/ContactModel#removeContacts-method>`__****\ (list<string>
+-  :ref:`removeContacts <sdk_qtcontacts_contactmodel_removeContacts-method>`\ (list<string>
    *contactIds*)
--  ****`saveContact </sdk/apps/qml/QtContacts/ContactModel#saveContact-method>`__****\ (Contact
+-  :ref:`saveContact <sdk_qtcontacts_contactmodel_saveContact-method>`\ (Contact
    *contact*, StorageLocation *storageLocation*)
 
 Detailed Description
@@ -64,40 +66,41 @@ Detailed Description
 
 This element is part of the **QtContacts** module.
 
-`ContactModel </sdk/apps/qml/QtContacts/ContactModel/>`__ provides a
-model of contacts from the contacts store. The contents of the model can
-be specified with
-`filter </sdk/apps/qml/QtContacts/ContactModel#filter-prop>`__,
-`sortOrders </sdk/apps/qml/QtContacts/ContactModel#sortOrders-prop>`__
-and `fetchHint </sdk/apps/qml/QtContacts/ContactModel#fetchHint-prop>`__
-properties. Whether the model is automatically updated when the store or
-`contacts </sdk/apps/qml/QtContacts/ContactModel#contacts-prop>`__
-changes, can be controlled with
-`ContactModel::autoUpdate </sdk/apps/qml/QtContacts/ContactModel#autoUpdate-prop>`__
+:ref:`ContactModel <sdk_qtcontacts_contactmodel>` provides a model of
+contacts from the contacts store. The contents of the model can be
+specified with :ref:`filter <sdk_qtcontacts_contactmodel#filter-prop>`,
+:ref:`sortOrders <sdk_qtcontacts_contactmodel#sortOrders-prop>` and
+:ref:`fetchHint <sdk_qtcontacts_contactmodel#fetchHint-prop>` properties.
+Whether the model is automatically updated when the store or
+:ref:`contacts <sdk_qtcontacts_contactmodel#contacts-prop>` changes, can be
+controlled with
+:ref:`ContactModel::autoUpdate <sdk_qtcontacts_contactmodel#autoUpdate-prop>`
 property.
 
 There are two ways of accessing the contact data: via model by using
 views and delegates, or alternatively via
-`contacts </sdk/apps/qml/QtContacts/ContactModel#contacts-prop>`__ list
-property. Of the two, the model access is preferred. Direct list access
-(i.e. non-model) is not guaranteed to be in order set by sortOrder.
+:ref:`contacts <sdk_qtcontacts_contactmodel#contacts-prop>` list property.
+Of the two, the model access is preferred. Direct list access (i.e.
+non-model) is not guaranteed to be in order set by sortOrder.
 
 At the moment the model roles provided by
-`ContactModel </sdk/apps/qml/QtContacts/ContactModel/>`__ are display,
-decoration and ``contact``. Through the ``contact`` role can access any
-data provided by the Contact element.
+:ref:`ContactModel <sdk_qtcontacts_contactmodel>` are display, decoration
+and ``contact``. Through the ``contact`` role can access any data
+provided by the Contact element.
 
 **See also** RelationshipModel, Contact, and QContactManager.
 
 Property Documentation
 ----------------------
 
+.. _sdk_qtcontacts_contactmodel_ImportError-prop:
+
 +--------------------------------------------------------------------------+
 |        \ ImportError : enumeration                                       |
 +--------------------------------------------------------------------------+
 
 Defines the errors cases for
-`ContactModel::importContacts() </sdk/apps/qml/QtContacts/ContactModel#importContacts-method>`__
+:ref:`ContactModel::importContacts() <sdk_qtcontacts_contactmodel#importContacts-method>`
 -function.
 
 -  ContactModel::ImportNoError Completed successfully, no error.
@@ -109,6 +112,8 @@ Defines the errors cases for
 -  ContactModel::ImportParseError Error during parsing.
 
 | 
+
+.. _sdk_qtcontacts_contactmodel_StorageLocation-prop:
 
 +--------------------------------------------------------------------------+
 |        \ StorageLocation : enumeration                                   |
@@ -126,11 +131,13 @@ Depending on the backend implementation, the access rights for different
 storage locations might vary.
 
 **See also**
-`ContactModel::storageLocations </sdk/apps/qml/QtContacts/ContactModel#storageLocations-prop>`__
+:ref:`ContactModel::storageLocations <sdk_qtcontacts_contactmodel#storageLocations-prop>`
 and
-`ContactModel::saveContact </sdk/apps/qml/QtContacts/ContactModel#saveContact-method>`__.
+:ref:`ContactModel::saveContact <sdk_qtcontacts_contactmodel#saveContact-method>`.
 
 | 
+
+.. _sdk_qtcontacts_contactmodel_autoUpdate-prop:
 
 +--------------------------------------------------------------------------+
 |        \ autoUpdate : bool                                               |
@@ -141,6 +148,8 @@ updated automatically, default value is true.
 
 | 
 
+.. _sdk_qtcontacts_contactmodel_availableManagers-prop:
+
 +--------------------------------------------------------------------------+
 |        \ availableManagers : list<string>                                |
 +--------------------------------------------------------------------------+
@@ -150,17 +159,20 @@ is read only.
 
 | 
 
+.. _sdk_qtcontacts_contactmodel_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ contacts :                                                      |
-| list<`Contact </sdk/apps/qml/QtContacts/Contact/>`__>                    |
+| :ref:` <>`\ contacts : list<`Contact <sdk_qtcontacts_contact>`>           |
 +--------------------------------------------------------------------------+
 
 This property holds the list of contacts.
 
 **See also**
-`Contact </sdk/apps/qml/QtContacts/qtcontacts-overview#contact>`__.
+`Contact </sdk/apps/qml/QtContacts/qtcontacts-overview/#contact>`_ .
 
 | 
+
+.. _sdk_qtcontacts_contactmodel_error-prop:
 
 +--------------------------------------------------------------------------+
 |        \ error : string                                                  |
@@ -173,25 +185,31 @@ This property is read only.
 
 | 
 
+.. _sdk_qtcontacts_contactmodel_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ fetchHint : `FetchHint </sdk/apps/qml/QtContacts/FetchHint/>`__ |
+| :ref:` <>`\ fetchHint : `FetchHint <sdk_qtcontacts_fetchhint>`         |
 +--------------------------------------------------------------------------+
 
 This property holds the fetch hint instance used by the contact model.
 
-**See also** `FetchHint </sdk/apps/qml/QtContacts/FetchHint/>`__.
+**See also** :ref:`FetchHint <sdk_qtcontacts_fetchhint>`.
 
 | 
 
+.. _sdk_qtcontacts_contactmodel_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ filter : `Filter </sdk/apps/qml/QtContacts/Filter/>`__          |
+| :ref:` <>`\ filter : `Filter <sdk_qtcontacts_filter>`                  |
 +--------------------------------------------------------------------------+
 
 This property holds the filter instance used by the contact model.
 
-**See also** `Filter </sdk/apps/qml/QtContacts/Filter/>`__.
+**See also** :ref:`Filter <sdk_qtcontacts_filter>`.
 
 | 
+
+.. _sdk_qtcontacts_contactmodel_manager-prop:
 
 +--------------------------------------------------------------------------+
 |        \ manager : string                                                |
@@ -201,16 +219,19 @@ This property holds the manager uri of the contact backend engine.
 
 | 
 
+.. _sdk_qtcontacts_contactmodel_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ sortOrders :                                                    |
-| list<`SortOrder </sdk/apps/qml/QtContacts/SortOrder/>`__>                |
+| :ref:` <>`\ sortOrders : list<`SortOrder <sdk_qtcontacts_sortorder>`>     |
 +--------------------------------------------------------------------------+
 
 This property holds a list of sort orders used by the contacts model.
 
-**See also** `SortOrder </sdk/apps/qml/QtContacts/SortOrder/>`__.
+**See also** :ref:`SortOrder <sdk_qtcontacts_sortorder>`.
 
 | 
+
+.. _sdk_qtcontacts_contactmodel_storageLocations-prop:
 
 +--------------------------------------------------------------------------+
 |        \ storageLocations : int                                          |
@@ -227,68 +248,76 @@ requirements and they're not met, backend returns
 StorageLocationsNotExistingError.
 
 **See also**
-`ContactModel::StorageLocation </sdk/apps/qml/QtContacts/ContactModel#StorageLocation-prop>`__
+:ref:`ContactModel::StorageLocation <sdk_qtcontacts_contactmodel#StorageLocation-prop>`
 and
-`ContactModel::saveContact </sdk/apps/qml/QtContacts/ContactModel#saveContact-method>`__.
+:ref:`ContactModel::saveContact <sdk_qtcontacts_contactmodel#saveContact-method>`.
 
 | 
 
 Signal Documentation
 --------------------
 
+.. _sdk_qtcontacts_contactmodel_contactsFetched(int *requestId*,-prop:
+
 +--------------------------------------------------------------------------+
 |        \ contactsFetched(int *requestId*,                                |
-| list<`Contact </sdk/apps/qml/QtContacts/Contact/>`__> *fetchedContacts*) |
+| list<:ref:`Contact <sdk_qtcontacts_contact>`> *fetchedContacts*)            |
 +--------------------------------------------------------------------------+
 
 This signal is emitted, when a contact fetch request is finished.
 
 **See also**
-`ContactModel::fetchContacts </sdk/apps/qml/QtContacts/ContactModel#fetchContacts-method>`__.
+:ref:`ContactModel::fetchContacts <sdk_qtcontacts_contactmodel#fetchContacts-method>`.
 
 | 
 
+.. _sdk_qtcontacts_contactmodel_-prop:
+
 +--------------------------------------------------------------------------+
-|        \ onImportCompleted(`ImportError </sdk/apps/qml/QtContacts/Contac |
-| tModel#ImportError-prop>`__                                              |
+| :ref:` <>`\ onImportCompleted(`ImportError <sdk_qtcontacts_contactmodel#Imp |
+| ortError-prop>`_                                                         |
 | *error*, URL *url*, list<string> *ids*)                                  |
 +--------------------------------------------------------------------------+
 
 This signal is emitted, when
-`ContactModel::importContacts() </sdk/apps/qml/QtContacts/ContactModel#importContacts-method>`__
+:ref:`ContactModel::importContacts() <sdk_qtcontacts_contactmodel#importContacts-method>`
 completes. The success of operation can be seen on *error* which is
 defined in
-`ContactModel::ImportError </sdk/apps/qml/QtContacts/ContactModel#ImportError-prop>`__.
+:ref:`ContactModel::ImportError <sdk_qtcontacts_contactmodel#ImportError-prop>`.
 *url* indicates the file, which was imported. *ids* contains the
 imported contacts ids.
 
 If the operation was successful, contacts are now imported to backend.
 If
-`ContactModel::autoUpdate </sdk/apps/qml/QtContacts/ContactModel#autoUpdate-prop>`__
+:ref:`ContactModel::autoUpdate <sdk_qtcontacts_contactmodel#autoUpdate-prop>`
 is enabled, ContactModel::modelChanged will be emitted when imported
 contacts are also visible on
-`ContactModel </sdk/apps/qml/QtContacts/ContactModel/>`__'s data model.
+:ref:`ContactModel <sdk_qtcontacts_contactmodel>`'s data model.
 
 **See also**
-`ContactModel::importContacts </sdk/apps/qml/QtContacts/ContactModel#importContacts-method>`__.
+:ref:`ContactModel::importContacts <sdk_qtcontacts_contactmodel#importContacts-method>`.
 
 | 
+
+.. _sdk_qtcontacts_contactmodel_storageLocationsChanged()-prop:
 
 +--------------------------------------------------------------------------+
 |        \ storageLocationsChanged()                                       |
 +--------------------------------------------------------------------------+
 
 This signal is emitted, when
-`ContactModel::storageLocations </sdk/apps/qml/QtContacts/ContactModel#storageLocations-prop>`__
+:ref:`ContactModel::storageLocations <sdk_qtcontacts_contactmodel#storageLocations-prop>`
 property changes.
 
 **See also**
-`ContactModel::storageLocations </sdk/apps/qml/QtContacts/ContactModel#storageLocations-prop>`__.
+:ref:`ContactModel::storageLocations <sdk_qtcontacts_contactmodel#storageLocations-prop>`.
 
 | 
 
 Method Documentation
 --------------------
+
+.. _sdk_qtcontacts_contactmodel_void exportContacts-method:
 
 +--------------------------------------------------------------------------+
 |        \ void exportContacts(url *url*, list<string> *profiles*,         |
@@ -315,6 +344,8 @@ QVersitContactHandlerFactory::ProfileBackup().
 
 | 
 
+.. _sdk_qtcontacts_contactmodel_int fetchContacts-method:
+
 +--------------------------------------------------------------------------+
 |        \ int fetchContacts(list<string> *contactIds*)                    |
 +--------------------------------------------------------------------------+
@@ -325,13 +356,15 @@ can't be started.
 
 Note that the contacts fetched won't be added to the model, but can be
 accessed through the
-`contactsFetched </sdk/apps/qml/QtContacts/ContactModel#contactsFetched-signal>`__
+:ref:`contactsFetched <sdk_qtcontacts_contactmodel#contactsFetched-signal>`
 signal handler.
 
 **See also**
-`ContactModel::contactsFetched </sdk/apps/qml/QtContacts/ContactModel#contactsFetched-signal>`__.
+:ref:`ContactModel::contactsFetched <sdk_qtcontacts_contactmodel#contactsFetched-signal>`.
 
 | 
+
+.. _sdk_qtcontacts_contactmodel_void importContacts-method:
 
 +--------------------------------------------------------------------------+
 |        \ void importContacts(url *url*, list<string> *profiles*)         |
@@ -352,6 +385,8 @@ QVersitContactHandlerFactory::ProfileBackup().
 
 | 
 
+.. _sdk_qtcontacts_contactmodel_removeContact-method:
+
 +--------------------------------------------------------------------------+
 |        \ removeContact(string *contactId*)                               |
 +--------------------------------------------------------------------------+
@@ -360,9 +395,11 @@ Remove the contact from the contacts store by given *contactId*. After
 removing a contact it is not possible to save it again.
 
 **See also**
-`Contact::contactId </sdk/apps/qml/QtContacts/Contact#contactId-prop>`__.
+:ref:`Contact::contactId <sdk_qtcontacts_contact#contactId-prop>`.
 
 | 
+
+.. _sdk_qtcontacts_contactmodel_removeContacts-method:
 
 +--------------------------------------------------------------------------+
 |        \ removeContacts(list<string> *contactIds*)                       |
@@ -372,15 +409,15 @@ Remove the list of contacts from the contacts store by given
 *contactIds*.
 
 **See also**
-`Contact::contactId </sdk/apps/qml/QtContacts/Contact#contactId-prop>`__.
+:ref:`Contact::contactId <sdk_qtcontacts_contact#contactId-prop>`.
 
 | 
 
+.. _sdk_qtcontacts_contactmodel_-method:
+
 +--------------------------------------------------------------------------+
-|        \ saveContact(`Contact </sdk/apps/qml/QtContacts/Contact/>`__     |
-| *contact*,                                                               |
-| `StorageLocation </sdk/apps/qml/QtContacts/ContactModel#StorageLocation- |
-| prop>`__                                                                 |
+| :ref:` <>`\ saveContact(`Contact <sdk_qtcontacts_contact>` *contact*,     |
+| :ref:`StorageLocation <sdk_qtcontacts_contactmodel#StorageLocation-prop>`   |
 | *storageLocation* = UserDataStorage)                                     |
 +--------------------------------------------------------------------------+
 
@@ -394,6 +431,6 @@ the same location as it were before.
 Once saved successfully, the dirty flags of this contact will be reset.
 
 **See also**
-`Contact::modified </sdk/apps/qml/QtContacts/Contact#modified-prop>`__.
+:ref:`Contact::modified <sdk_qtcontacts_contact#modified-prop>`.
 
 | 

@@ -1,3 +1,7 @@
+.. _sdk_qtmultimedia_qt_multimedia:
+QtMultimedia Qt Multimedia
+==========================
+
 
 
 Qt Multimedia is an essential module that provides a rich set of QML
@@ -42,21 +46,21 @@ your ``qmake`` project file:
 The following is a list of important QML types and C++ classes provided
 by this module:
 
-+-------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Type                                                        | Description                                                                                                                                                                                                                   |
-+=============================================================+===============================================================================================================================================================================================================================+
-| `Audio </sdk/apps/qml/QtMultimedia/Audio/>`__               | Add audio playback functionality to a scene                                                                                                                                                                                   |
-+-------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `Playlist </sdk/apps/qml/QtMultimedia/Playlist/>`__         | Add playlist functionality                                                                                                                                                                                                    |
-+-------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `Camera </sdk/apps/qml/QtMultimedia/Camera/>`__             | Access camera viewfinder frames                                                                                                                                                                                               |
-+-------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__   | Add media playback functionality to a scene. It is same as Audio type, but can be used for video playback with the `VideoOutput </sdk/apps/qml/QtMultimedia/VideoOutput/>`__ type.                                            |
-+-------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `Radio </sdk/apps/qml/QtMultimedia/Radio/>`__               | Access radio functionality                                                                                                                                                                                                    |
-+-------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `Video </sdk/apps/qml/QtMultimedia/Video/>`__               | Add Video playback functionality to a scene. It uses `MediaPlayer </sdk/apps/qml/QtMultimedia/MediaPlayer/>`__ and `VideoOutput </sdk/apps/qml/QtMultimedia/VideoOutput/>`__ types to provide video playback functionality.   |
-+-------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Type                                             | Description                                                                                                                                                                                             |
++==================================================+=========================================================================================================================================================================================================+
+| :ref:`Audio <sdk_qtmultimedia_audio>`               | Add audio playback functionality to a scene                                                                                                                                                             |
++--------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`Playlist <sdk_qtmultimedia_playlist>`      | Add playlist functionality                                                                                                                                                                              |
++--------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`Camera <sdk_qtmultimedia_camera>`          | Access camera viewfinder frames                                                                                                                                                                         |
++--------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>`| Add media playback functionality to a scene. It is same as Audio type, but can be used for video playback with the `VideoOutput <sdk_qtmultimedia_videooutput>` type.                                 |
++--------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`Radio <sdk_qtmultimedia_radio>`            | Access radio functionality                                                                                                                                                                              |
++--------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`Video <sdk_qtmultimedia_video>`            | Add Video playback functionality to a scene. It uses `MediaPlayer <sdk_qtmultimedia_mediaplayer>` and `VideoOutput <sdk_qtmultimedia_videooutput>` types to provide video playback functionality.   |
++--------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 +-------------------------+---------------------------------------------------------------------------+
 | Class                   | Description                                                               |
@@ -82,18 +86,18 @@ by this module:
 .. rubric:: Guides
    :name: guides
 
--  `Multimedia </sdk/apps/qml/QtMultimedia/multimediaoverview/>`__ -
+-  `Multimedia </sdk/apps/qml/QtMultimedia/multimediaoverview/>`_  -
    overview of multimedia support in Qt
--  `Audio Overview </sdk/apps/qml/QtMultimedia/audiooverview/>`__
--  `Video Overview </sdk/apps/qml/QtMultimedia/videooverview/>`__
--  `Camera Overview </sdk/apps/qml/QtMultimedia/cameraoverview/>`__
--  `Radio Overview </sdk/apps/qml/QtMultimedia/radiooverview/>`__
+-  `Audio Overview </sdk/apps/qml/QtMultimedia/audiooverview/>`_ 
+-  `Video Overview </sdk/apps/qml/QtMultimedia/videooverview/>`_ 
+-  `Camera Overview </sdk/apps/qml/QtMultimedia/cameraoverview/>`_ 
+-  `Radio Overview </sdk/apps/qml/QtMultimedia/radiooverview/>`_ 
 
 .. rubric:: Platform Notes
    :name: platform-notes
 
--  `BlackBerry </sdk/apps/qml/QtMultimedia/blackberry/>`__
--  `Windows </sdk/apps/qml/QtMultimedia/qtmultimedia-windows/>`__
+-  `BlackBerry </sdk/apps/qml/QtMultimedia/blackberry/>`_ 
+-  `Windows </sdk/apps/qml/QtMultimedia/qtmultimedia-windows/>`_ 
 
 .. rubric:: Reference
    :name: reference

@@ -1,10 +1,13 @@
+.. _sdk_ubuntu_components_label:
+Ubuntu.Components Label
+=======================
+
 Extended Text item with Ubuntu styling.
 
 +--------------------------------------+--------------------------------------+
 | Import Statement:                    | import Ubuntu.Components 1.3         |
 +--------------------------------------+--------------------------------------+
-| Inherits:                            | `Text </sdk/apps/qml/QtQuick/Text/>` |
-|                                      | __                                   |
+| Inherits:                            | :ref:`Text <sdk_qtquick_text>`       |
 +--------------------------------------+--------------------------------------+
 
 -  Obsolete members
@@ -12,8 +15,8 @@ Extended Text item with Ubuntu styling.
 Properties
 ----------
 
--  ****`textSize </sdk/apps/qml/Ubuntu.Components/Label#textSize-prop>`__****
-   : enumeration
+-  :ref:`textSize <sdk_ubuntu_components_label_textSize-prop>` :
+   enumeration
 
 Detailed Description
 --------------------
@@ -39,6 +42,8 @@ Example:
 
 Property Documentation
 ----------------------
+
+.. _sdk_ubuntu_components_label_textSize-prop:
 
 +--------------------------------------------------------------------------+
 |        \ textSize : enumeration                                          |

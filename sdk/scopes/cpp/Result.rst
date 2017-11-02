@@ -1,6 +1,10 @@
+.. _sdk_result:
+Result
+======
+
 The attributes of a result returned by a
-`Scope </sdk/scopes/cpp/unity.scopes.Scope/>`__.
-`More... </sdk/scopes/cpp/unity.scopes.Result#details>`__
+`Scope </sdk/scopes/cpp/unity.scopes.Scope/>`_ .
+`More... </sdk/scopes/cpp/unity.scopes.Result/#details>`_ 
 
 ``#include <unity/scopes/Result.h>``
 
@@ -15,15 +19,15 @@ Inheritance diagram for unity::scopes::Result:
 
 virtual 
 
-`~Result </sdk/scopes/cpp/unity.scopes.Result#af50d9e95694cc46f4c76369e97aec927>`__
+`~Result </sdk/scopes/cpp/unity.scopes.Result/#af50d9e95694cc46f4c76369e97aec927>`_ 
 ()
 
  
 
 void 
 
-`store </sdk/scopes/cpp/unity.scopes.Result#a744776333a9748ba41dace7c6943ca4d>`__
-(`Result </sdk/scopes/cpp/unity.scopes.Result/>`__ const &other, bool
+`store </sdk/scopes/cpp/unity.scopes.Result/#a744776333a9748ba41dace7c6943ca4d>`_ 
+(`Result </sdk/scopes/cpp/unity.scopes.Result/>`_  const &other, bool
 intercept\_activation=false)
 
  
@@ -34,7 +38,7 @@ intercept\_activation=false)
 
 bool 
 
-`has\_stored\_result </sdk/scopes/cpp/unity.scopes.Result#a8213bb7b0aedae09af8d621e1a7e136b>`__
+`has\_stored\_result </sdk/scopes/cpp/unity.scopes.Result/#a8213bb7b0aedae09af8d621e1a7e136b>`_ 
 () const
 
  
@@ -43,9 +47,9 @@ bool 
 
  
 
-`Result </sdk/scopes/cpp/unity.scopes.Result/>`__ 
+`Result </sdk/scopes/cpp/unity.scopes.Result/>`_  
 
-`retrieve </sdk/scopes/cpp/unity.scopes.Result#a99b158932252c709cb2d4861db566a0a>`__
+`retrieve </sdk/scopes/cpp/unity.scopes.Result/#a99b158932252c709cb2d4861db566a0a>`_ 
 () const
 
  
@@ -56,9 +60,9 @@ bool 
 
         void 
 
-`set\_uri </sdk/scopes/cpp/unity.scopes.Result#ad69c1e88a1245c4c1f13fcba333c8d7e>`__
+`set\_uri </sdk/scopes/cpp/unity.scopes.Result/#ad69c1e88a1245c4c1f13fcba333c8d7e>`_ 
 (std::string const
-&\ `uri </sdk/scopes/cpp/unity.scopes.Result#a5642d5984ba110c3b7d268cc2668f413>`__)
+&\ `uri </sdk/scopes/cpp/unity.scopes.Result/#a5642d5984ba110c3b7d268cc2668f413>`_ )
 
  
 
@@ -68,9 +72,9 @@ bool 
 
 void 
 
-`set\_title </sdk/scopes/cpp/unity.scopes.Result#adf8cf3d863babb02107fb5ef35acc925>`__
+`set\_title </sdk/scopes/cpp/unity.scopes.Result/#adf8cf3d863babb02107fb5ef35acc925>`_ 
 (std::string const
-&\ `title </sdk/scopes/cpp/unity.scopes.Result#a318887472ccc1034a64a3ec1d3b0d7d6>`__)
+&\ `title </sdk/scopes/cpp/unity.scopes.Result/#a318887472ccc1034a64a3ec1d3b0d7d6>`_ )
 
  
 
@@ -80,7 +84,7 @@ void 
 
 void 
 
-`set\_art </sdk/scopes/cpp/unity.scopes.Result#a3f2e512b10dbf2ed867d260ec33a89a1>`__
+`set\_art </sdk/scopes/cpp/unity.scopes.Result/#a3f2e512b10dbf2ed867d260ec33a89a1>`_ 
 (std::string const &image)
 
  
@@ -91,9 +95,9 @@ void 
 
 void 
 
-`set\_dnd\_uri </sdk/scopes/cpp/unity.scopes.Result#aaea2d65663a8553b90a87b5b92c47f8f>`__
+`set\_dnd\_uri </sdk/scopes/cpp/unity.scopes.Result/#aaea2d65663a8553b90a87b5b92c47f8f>`_ 
 (std::string const
-&\ `dnd\_uri </sdk/scopes/cpp/unity.scopes.Result#af98171266eeac7360f1c1ef7b0f58958>`__)
+&\ `dnd\_uri </sdk/scopes/cpp/unity.scopes.Result/#af98171266eeac7360f1c1ef7b0f58958>`_ )
 
  
 
@@ -103,7 +107,7 @@ void 
 
 void 
 
-`set\_intercept\_activation </sdk/scopes/cpp/unity.scopes.Result#a5a132eb82702829e2fd026e088e4aa08>`__
+`set\_intercept\_activation </sdk/scopes/cpp/unity.scopes.Result/#a5a132eb82702829e2fd026e088e4aa08>`_ 
 ()
 
  
@@ -115,7 +119,7 @@ void 
 
 bool 
 
-`direct\_activation </sdk/scopes/cpp/unity.scopes.Result#ac3e57ec9bf9a3bc5a517f91ff9605f6b>`__
+`direct\_activation </sdk/scopes/cpp/unity.scopes.Result/#ac3e57ec9bf9a3bc5a517f91ff9605f6b>`_ 
 () const
 
  
@@ -125,9 +129,9 @@ bool 
 
  
 
-`ScopeProxy </sdk/scopes/cpp/unity.scopes#a94db15da410f8419e4da711db842aaae>`__ 
+:ref:`ScopeProxy <sdk_unity_scopes#a94db15da410f8419e4da711db842aaae>` 
 
-`target\_scope\_proxy </sdk/scopes/cpp/unity.scopes.Result#a1a91e1cbb08e91366e92b7bcd76861d2>`__
+`target\_scope\_proxy </sdk/scopes/cpp/unity.scopes.Result/#a1a91e1cbb08e91366e92b7bcd76861d2>`_ 
 () const
 
  
@@ -137,9 +141,9 @@ bool 
 
  
 
-`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`__ & 
+`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`_  & 
 
-`operator[] </sdk/scopes/cpp/unity.scopes.Result#a157ebfcc5c28649af2761ef58f68de76>`__
+`operator[] </sdk/scopes/cpp/unity.scopes.Result/#a157ebfcc5c28649af2761ef58f68de76>`_ 
 (std::string const &key)
 
  
@@ -148,9 +152,9 @@ bool 
 
  
 
-`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`__ const & 
+`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`_  const & 
 
-`operator[] </sdk/scopes/cpp/unity.scopes.Result#a4e0664aba7b2613883a24f98450b71c0>`__
+`operator[] </sdk/scopes/cpp/unity.scopes.Result/#a4e0664aba7b2613883a24f98450b71c0>`_ 
 (std::string const &key) const
 
  
@@ -161,7 +165,7 @@ bool 
 
 std::string 
 
-`uri </sdk/scopes/cpp/unity.scopes.Result#a5642d5984ba110c3b7d268cc2668f413>`__
+`uri </sdk/scopes/cpp/unity.scopes.Result/#a5642d5984ba110c3b7d268cc2668f413>`_ 
 () const noexcept
 
  
@@ -172,7 +176,7 @@ std::string 
 
 std::string 
 
-`title </sdk/scopes/cpp/unity.scopes.Result#a318887472ccc1034a64a3ec1d3b0d7d6>`__
+`title </sdk/scopes/cpp/unity.scopes.Result/#a318887472ccc1034a64a3ec1d3b0d7d6>`_ 
 () const noexcept
 
  
@@ -183,7 +187,7 @@ std::string 
 
 std::string 
 
-`art </sdk/scopes/cpp/unity.scopes.Result#aeaeafd3fd83172104e501474191a6e4d>`__
+`art </sdk/scopes/cpp/unity.scopes.Result/#aeaeafd3fd83172104e501474191a6e4d>`_ 
 () const noexcept
 
  
@@ -194,7 +198,7 @@ std::string 
 
 std::string 
 
-`dnd\_uri </sdk/scopes/cpp/unity.scopes.Result#af98171266eeac7360f1c1ef7b0f58958>`__
+`dnd\_uri </sdk/scopes/cpp/unity.scopes.Result/#af98171266eeac7360f1c1ef7b0f58958>`_ 
 () const noexcept
 
  
@@ -205,7 +209,7 @@ std::string 
 
 bool 
 
-`contains </sdk/scopes/cpp/unity.scopes.Result#a442b87e28f762addb0d81ccd03a11532>`__
+`contains </sdk/scopes/cpp/unity.scopes.Result/#a442b87e28f762addb0d81ccd03a11532>`_ 
 (std::string const &key) const
 
  
@@ -214,9 +218,9 @@ bool 
 
  
 
-`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`__ const & 
+`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`_  const & 
 
-`value </sdk/scopes/cpp/unity.scopes.Result#a490b5b5da2c3d7b122cfadae25cde3af>`__
+`value </sdk/scopes/cpp/unity.scopes.Result/#a490b5b5da2c3d7b122cfadae25cde3af>`_ 
 (std::string const &key) const
 
  
@@ -225,9 +229,9 @@ bool 
 
  
 
-`VariantMap </sdk/scopes/cpp/unity.scopes#ad5d8ccfa11a327fca6f3e4cee11f4c10>`__ 
+:ref:`VariantMap <sdk_unity_scopes#ad5d8ccfa11a327fca6f3e4cee11f4c10>` 
 
-`serialize </sdk/scopes/cpp/unity.scopes.Result#acd3c05fe73b442facc1cb8d0fc0ffce2>`__
+`serialize </sdk/scopes/cpp/unity.scopes.Result/#acd3c05fe73b442facc1cb8d0fc0ffce2>`_ 
 () const
 
  
@@ -238,7 +242,7 @@ bool 
 
 bool 
 
-`is\_account\_login\_result </sdk/scopes/cpp/unity.scopes.Result#a454b78b004b954575c159deda871dd97>`__
+`is\_account\_login\_result </sdk/scopes/cpp/unity.scopes.Result/#a454b78b004b954575c159deda871dd97>`_ 
 () const
 
  
@@ -249,8 +253,8 @@ bool 
 
 bool 
 
-`operator== </sdk/scopes/cpp/unity.scopes.Result#aa60fe8b5e2b5959b5f6f3883e5f2facf>`__
-(`Result </sdk/scopes/cpp/unity.scopes.Result/>`__ const &other) const
+`operator== </sdk/scopes/cpp/unity.scopes.Result/#aa60fe8b5e2b5959b5f6f3883e5f2facf>`_ 
+(`Result </sdk/scopes/cpp/unity.scopes.Result/>`_  const &other) const
 
  
 
@@ -265,27 +269,27 @@ semantics.
 
          
 
-**Result** (`Result </sdk/scopes/cpp/unity.scopes.Result/>`__ const
+**Result** (`Result </sdk/scopes/cpp/unity.scopes.Result/>`_  const
 &other)
 
  
 
          
 
-**Result** (`Result </sdk/scopes/cpp/unity.scopes.Result/>`__ &&)
+**Result** (`Result </sdk/scopes/cpp/unity.scopes.Result/>`_  &&)
 
  
 
-        `Result </sdk/scopes/cpp/unity.scopes.Result/>`__ & 
+        `Result </sdk/scopes/cpp/unity.scopes.Result/>`_  & 
 
-**operator=** (`Result </sdk/scopes/cpp/unity.scopes.Result/>`__ const
+**operator=** (`Result </sdk/scopes/cpp/unity.scopes.Result/>`_  const
 &other)
 
  
 
-        `Result </sdk/scopes/cpp/unity.scopes.Result/>`__ & 
+        `Result </sdk/scopes/cpp/unity.scopes.Result/>`_  & 
 
-**operator=** (`Result </sdk/scopes/cpp/unity.scopes.Result/>`__ &&)
+**operator=** (`Result </sdk/scopes/cpp/unity.scopes.Result/>`_  &&)
 
  
 
@@ -293,9 +297,9 @@ Detailed Description
 --------------------
 
 The attributes of a result returned by a
-`Scope </sdk/scopes/cpp/unity.scopes.Scope/>`__.
+`Scope </sdk/scopes/cpp/unity.scopes.Scope/>`_ .
 
-The `Result </sdk/scopes/cpp/unity.scopes.Result/>`__ API provides
+The `Result </sdk/scopes/cpp/unity.scopes.Result/>`_  API provides
 convenience methods for some typical attributes (title, art), but scopes
 are free to add and use any custom attributes with ``operator[]``. The
 only required attribute is 'uri' and it must not be empty before calling
@@ -349,7 +353,7 @@ Member Function Documentation
 +--------------------------------------+--------------------------------------+
 
 Get the "art" property of this
-`Result </sdk/scopes/cpp/unity.scopes.Result/>`__.
+`Result </sdk/scopes/cpp/unity.scopes.Result/>`_ .
 
 This method returns an empty string if this attribute is not of type
 Variant::Type::String (e.g. it was set with operator[]).
@@ -361,7 +365,7 @@ Returns
 | bool unity::scopes::Result::contains   | (   | std::string const &    | *key*   | )   | const   |
 +----------------------------------------+-----+------------------------+---------+-----+---------+
 
-Check if this `Result </sdk/scopes/cpp/unity.scopes.Result/>`__ has an
+Check if this `Result </sdk/scopes/cpp/unity.scopes.Result/>`_  has an
 attribute.
 
 Parameters
@@ -407,7 +411,7 @@ Returns
 +--------------------------------------+--------------------------------------+
 
 Get the "dnd\_uri" property of this
-`Result </sdk/scopes/cpp/unity.scopes.Result/>`__.
+`Result </sdk/scopes/cpp/unity.scopes.Result/>`_ .
 
 This method returns an empty string if this attribute is not of type
 Variant::Type::String type (e.g. it was set with operator[]).
@@ -422,7 +426,7 @@ Returns
 | stored\_result |                |                |                |                |
 +----------------+----------------+----------------+----------------+----------------+
 
-Check if this `Result </sdk/scopes/cpp/unity.scopes.Result/>`__ instance
+Check if this `Result </sdk/scopes/cpp/unity.scopes.Result/>`_  instance
 has a stored result.
 
 Returns
@@ -442,7 +446,7 @@ Returns
     True if this result is an online account login result.
 
 +------------------------------------------+-----+--------------------------------------------------------------+-----------+-----+---------+
-| bool unity::scopes::Result::operator==   | (   | `Result </sdk/scopes/cpp/unity.scopes.Result/>`__ const &    | *other*   | )   | const   |
+| bool unity::scopes::Result::operator==   | (   | `Result </sdk/scopes/cpp/unity.scopes.Result/>`_  const &    | *other*   | )   | const   |
 +------------------------------------------+-----+--------------------------------------------------------------+-----------+-----+---------+
 
 Compare result.
@@ -455,13 +459,13 @@ Returns
 | dk/scopes/cp |              | const &      |              |              |              |
 | p/unity.scop |              |              |              |              |              |
 | es.Variant/> |              |              |              |              |              |
-| `__\ &       |              |              |              |              |              |
+| `_ \ &       |              |              |              |              |              |
 | unity::scope |              |              |              |              |              |
 | s::Result::o |              |              |              |              |              |
 | perator[]    |              |              |              |              |              |
 +--------------+--------------+--------------+--------------+--------------+--------------+
 
-Returns reference of a `Result </sdk/scopes/cpp/unity.scopes.Result/>`__
+Returns reference of a `Result </sdk/scopes/cpp/unity.scopes.Result/>`_ 
 attribute.
 
 This method can be used to read or initialize both standard ("uri",
@@ -483,11 +487,11 @@ Exceptions
     +--------------------------+-----------------------------------------------+
 
 +------------------------------------------------------------------------------------------------+-----+------------------------+---------+-----+---------+
-| `Variant </sdk/scopes/cpp/unity.scopes.Variant/>`__ const& unity::scopes::Result::operator[]   | (   | std::string const &    | *key*   | )   | const   |
+| `Variant </sdk/scopes/cpp/unity.scopes.Variant/>`_  const& unity::scopes::Result::operator[]   | (   | std::string const &    | *key*   | )   | const   |
 +------------------------------------------------------------------------------------------------+-----+------------------------+---------+-----+---------+
 
 Returns a const reference to a
-`Result </sdk/scopes/cpp/unity.scopes.Result/>`__ attribute.
+`Result </sdk/scopes/cpp/unity.scopes.Result/>`_  attribute.
 
 This method can be used for read-only access to both standard ("uri",
 "title", "art", "dnd\_uri") and custom metadata attributes. Referencing
@@ -510,7 +514,7 @@ Exceptions
 | `Result </sdk/ | (              |                | )              | const          |
 | scopes/cpp/uni |                |                |                |                |
 | ty.scopes.Resu |                |                |                |                |
-| lt/>`__        |                |                |                |                |
+| lt/>`_         |                |                |                |                |
 | unity::scopes: |                |                |                |                |
 | :Result::retri |                |                |                |                |
 | eve            |                |                |                |                |
@@ -523,23 +527,22 @@ Returns
 
 Exceptions
     +-----------------------------------+-----------------------------------------------------------------------------------------------+
-    | unity::InvalidArgumentException   | if no result was stored in this `Result </sdk/scopes/cpp/unity.scopes.Result/>`__ instance.   |
+    | unity::InvalidArgumentException   | if no result was stored in this `Result </sdk/scopes/cpp/unity.scopes.Result/>`_  instance.   |
     +-----------------------------------+-----------------------------------------------------------------------------------------------+
 
 +----------------+----------------+----------------+----------------+----------------+
-| `VariantMap </ | (              |                | )              | const          |
-| sdk/scopes/cpp |                |                |                |                |
-| /unity.scopes# |                |                |                |                |
-| ad5d8ccfa11a32 |                |                |                |                |
-| 7fca6f3e4cee11 |                |                |                |                |
-| f4c10>`__      |                |                |                |                |
+| `VariantMap <s | (              |                | )              | const          |
+| dk_unity_scope |                |                |                |                |
+| s#ad5d8ccfa11a |                |                |                |                |
+| 327fca6f3e4cee |                |                |                |                |
+| 11f4c10>`_     |                |                |                |                |
 | unity::scopes: |                |                |                |                |
 | :Result::seria |                |                |                |                |
 | lize           |                |                |                |                |
 +----------------+----------------+----------------+----------------+----------------+
 
 Returns a dictionary of all attributes of this
-`Result </sdk/scopes/cpp/unity.scopes.Result/>`__ instance.
+`Result </sdk/scopes/cpp/unity.scopes.Result/>`_  instance.
 
 Returns
     All base attributes and custom attributes set with add\_metadata().
@@ -582,12 +585,12 @@ creates, but does not receive activation requests (they are handled
 directly by the shell). Intercepting activation implies intercepting
 preview requests as well; this is important for scopes that forward
 results from other scopes and call
-`set\_intercept\_activation() </sdk/scopes/cpp/unity.scopes.Result#a5a132eb82702829e2fd026e088e4aa08>`__
+`set\_intercept\_activation() </sdk/scopes/cpp/unity.scopes.Result/#a5a132eb82702829e2fd026e088e4aa08>`_ 
 on these scopes. A scope that sets intercept activation flag for a
 result should re-implement
-`ScopeBase::activate() </sdk/scopes/cpp/unity.scopes.ScopeBase#a49a0b9ada0eeb4c71e6a2181c3d8c9e7>`__
+`ScopeBase::activate() </sdk/scopes/cpp/unity.scopes.ScopeBase/#a49a0b9ada0eeb4c71e6a2181c3d8c9e7>`_ 
 and provide an implementation of
-`ActivationQueryBase </sdk/scopes/cpp/unity.scopes.ActivationQueryBase/>`__
+`ActivationQueryBase </sdk/scopes/cpp/unity.scopes.ActivationQueryBase/>`_ 
 that handles the actual activation. If not called, the result will be
 activated directly by the Unity shell whithout involving the scope,
 assuming an appropriate URI schema handler is present on the system.
@@ -606,7 +609,7 @@ Equivalent to calling ``result["title"] = title;``
 +--------------------+--------------------+--------------------+--------------------+
 | void               | (                  | `Result </sdk/scop | *other*,           |
 | unity::scopes::Res |                    | es/cpp/unity.scope |                    |
-| ult::store         |                    | s.Result/>`__      |                    |
+| ult::store         |                    | s.Result/>`_       |                    |
 |                    |                    | const &            |                    |
 +--------------------+--------------------+--------------------+--------------------+
 |                    |                    | bool               | *intercept\_activa |
@@ -616,8 +619,8 @@ Equivalent to calling ``result["title"] = title;``
 |                    | )                  |                    |                    |
 +--------------------+--------------------+--------------------+--------------------+
 
-Stores a `Result </sdk/scopes/cpp/unity.scopes.Result/>`__ inside this
-`Result </sdk/scopes/cpp/unity.scopes.Result/>`__ instance.
+Stores a `Result </sdk/scopes/cpp/unity.scopes.Result/>`_  inside this
+`Result </sdk/scopes/cpp/unity.scopes.Result/>`_  instance.
 
 This method is meant to be used by aggregator scopes which want to
 modify results they receive, but want to keep a copy of the original
@@ -634,12 +637,11 @@ Parameters
     +-------------------------+----------------------------------------------------------------------+
 
 +----------------+----------------+----------------+----------------+----------------+
-| `ScopeProxy </ | (              |                | )              | const          |
-| sdk/scopes/cpp |                |                |                |                |
-| /unity.scopes# |                |                |                |                |
-| a94db15da410f8 |                |                |                |                |
-| 419e4da711db84 |                |                |                |                |
-| 2aaae>`__      |                |                |                |                |
+| `ScopeProxy <s | (              |                | )              | const          |
+| dk_unity_scope |                |                |                |                |
+| s#a94db15da410 |                |                |                |                |
+| f8419e4da711db |                |                |                |                |
+| 842aaae>`_     |                |                |                |                |
 | unity::scopes: |                |                |                |                |
 | :Result::targe |                |                |                |                |
 | t\_scope\_prox |                |                |                |                |
@@ -652,7 +654,7 @@ result.
 The proxy is available only when receiving this result from a scope,
 otherwise this method throws LogicException. Activation requests should
 be sent to a scope returned by this method only if
-`direct\_activation() </sdk/scopes/cpp/unity.scopes.Result#ac3e57ec9bf9a3bc5a517f91ff9605f6b>`__
+`direct\_activation() </sdk/scopes/cpp/unity.scopes.Result/#ac3e57ec9bf9a3bc5a517f91ff9605f6b>`_ 
 is false.
 
 Returns
@@ -677,7 +679,7 @@ Returns
 +--------------------------------------+--------------------------------------+
 
 Get the "title" property of this
-`Result </sdk/scopes/cpp/unity.scopes.Result/>`__.
+`Result </sdk/scopes/cpp/unity.scopes.Result/>`_ .
 
 This method returns an empty string if this attribute is not of type
 Variant::Type::String (e.g. it was set with operator[]).
@@ -704,7 +706,7 @@ Returns
 +--------------------------------------+--------------------------------------+
 
 Get the "uri" property of this
-`Result </sdk/scopes/cpp/unity.scopes.Result/>`__.
+`Result </sdk/scopes/cpp/unity.scopes.Result/>`_ .
 
 This method returns an empty string if this attribute is not of type
 Variant::Type::String (e.g. it was set with operator[]).
@@ -713,18 +715,18 @@ Returns
     The value of "uri" or the empty string.
 
 +-------------------------------------------------------------------------------------------+-----+------------------------+---------+-----+---------+
-| `Variant </sdk/scopes/cpp/unity.scopes.Variant/>`__ const& unity::scopes::Result::value   | (   | std::string const &    | *key*   | )   | const   |
+| `Variant </sdk/scopes/cpp/unity.scopes.Variant/>`_  const& unity::scopes::Result::value   | (   | std::string const &    | *key*   | )   | const   |
 +-------------------------------------------------------------------------------------------+-----+------------------------+---------+-----+---------+
 
 Get the value of an attribute.
 
 Note: if int64\_t value has been stored in the
-`Result </sdk/scopes/cpp/unity.scopes.Result/>`__ but it doesn't exceed
+`Result </sdk/scopes/cpp/unity.scopes.Result/>`_  but it doesn't exceed
 maxium range of 32 bit integer and if results come from the cache (see
-`SearchReply::push\_surfacing\_results\_from\_cache() </sdk/scopes/cpp/unity.scopes.SearchReply#a4ba805136164b11bb358917070cde24d>`__),
+`SearchReply::push\_surfacing\_results\_from\_cache() </sdk/scopes/cpp/unity.scopes.SearchReply/#a4ba805136164b11bb358917070cde24d>`_ ),
 then the value may be made available as 32 bit int; therefore the code
 should always check the type of returned
-`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`__ and depending on
+`Variant </sdk/scopes/cpp/unity.scopes.Variant/>`_  and depending on
 that use Variant::get\_int() or Variant::get\_int\_64\_t() when dealing
 with 64-bit integers. This is not needed when using 32 bit integers
 only.

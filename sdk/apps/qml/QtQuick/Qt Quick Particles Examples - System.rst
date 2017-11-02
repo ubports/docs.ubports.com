@@ -1,3 +1,7 @@
+.. _sdk_qtquick_qt_quick_particles_examples_-_system:
+QtQuick Qt Quick Particles Examples - System
+============================================
+
 
 
 |image0|
@@ -47,13 +51,13 @@ Image types.
 Note how the Image objects are not able to be randomly colorized.
 
 Start and Stop simply sets the running and paused states of a
-`ParticleSystem </sdk/apps/qml/QtQuick/Particles.ParticleSystem/>`__.
+`ParticleSystem </sdk/apps/qml/QtQuick/Particles.ParticleSystem/>`_ .
 While the system does not perform any simulation when stopped or paused,
 a restart restarts the simulation from the beginning, while unpausing
 resumes the simulation from where it was.
 
 Timed group changes is an example that highlights the
-`ParticleGroup </sdk/apps/qml/QtQuick/Particles.ParticleGroup/>`__ type.
+`ParticleGroup </sdk/apps/qml/QtQuick/Particles.ParticleGroup/>`_  type.
 While normally referring to groups with a string name is sufficient,
 additional effects can be done by setting properties on groups. The
 first group has a variable duration on it, but always transitions to the
@@ -69,11 +73,11 @@ second group.
     }
 
 The second group has a
-`TrailEmitter </sdk/apps/qml/QtQuick/Particles.TrailEmitter/>`__ on it,
+`TrailEmitter </sdk/apps/qml/QtQuick/Particles.TrailEmitter/>`_  on it,
 and a fixed duration for emitting into the third group. By placing the
-`TrailEmitter </sdk/apps/qml/QtQuick/Particles.TrailEmitter/>`__ as a
+`TrailEmitter </sdk/apps/qml/QtQuick/Particles.TrailEmitter/>`_  as a
 direct child of the
-`ParticleGroup </sdk/apps/qml/QtQuick/Particles.ParticleGroup/>`__, it
+`ParticleGroup </sdk/apps/qml/QtQuick/Particles.ParticleGroup/>`_ , it
 automatically selects that group to follow.
 
 .. code:: qml
@@ -109,10 +113,10 @@ another emitter, using the x,y positions of this particle.
         }
     }
 
-If `TrailEmitter </sdk/apps/qml/QtQuick/Particles.TrailEmitter/>`__ does
+If `TrailEmitter </sdk/apps/qml/QtQuick/Particles.TrailEmitter/>`_  does
 not suit your needs for multiple emitters, you can also dynamically
 create Emitters while still using the same
-`ParticleSystem </sdk/apps/qml/QtQuick/Particles.ParticleSystem/>`__ and
+`ParticleSystem </sdk/apps/qml/QtQuick/Particles.ParticleSystem/>`_  and
 image particle
 
 .. code:: qml
@@ -130,16 +134,16 @@ image particle
 
 Note that this effect, a flurry of flying rainbow spears, would be
 better served with
-`TrailEmitter </sdk/apps/qml/QtQuick/Particles.TrailEmitter/>`__. It is
+`TrailEmitter </sdk/apps/qml/QtQuick/Particles.TrailEmitter/>`_ . It is
 only done with dynamic emitters in this example to show the concept more
 simply.
 
 Multiple Painters shows how to control paint ordering of individual
 particles. While the paint ordering of particles within one ImagePainter
 is not strictly defined,
-`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`__
+`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_ 
 objects follow the normal Z-ordering rules for `Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-index/>`__ items. This example
+Quick </sdk/apps/qml/QtQuick/qtquick-index/>`_  items. This example
 allow you to paint the inside of the particles above the black borders
 using a pair of ImageParticles each painting different parts of the same
 logical particle.
