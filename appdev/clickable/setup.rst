@@ -34,7 +34,7 @@ Install
     cd ~
     git clone https://github.com/bhdouglass/clickable.git
     echo "export PATH=\$PATH:~/clickable" >> ~/.bashrc
-    . ~/.bashrc
+    source ~/.bashrc
     clickable setup-lxd
 
 First app
