@@ -1,59 +1,38 @@
 .. _sdk_ubuntu_components_bottomedgeregion:
+
 Ubuntu.Components BottomEdgeRegion
 ==================================
 
 Defines an active region within the BottomEdge component.
 
-+--------------------------------------+--------------------------------------+
-| Import Statement:                    | import .                             |
-+--------------------------------------+--------------------------------------+
-| Since:                               | Ubuntu.Components 1.3                |
-+--------------------------------------+--------------------------------------+
-| Inherits:                            | :ref:`QtObject <sdk_qtqml_qtobject>` |
-+--------------------------------------+--------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Import Statement:                                                                                                                                      | import .                                                                                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Since:                                                                                                                                                 | Ubuntu.Components 1.3                                                                                                                                     |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Inherits:                                                                                                                                              | :ref:`QtObject <sdk_qtqml_qtobject>`                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Properties
 ----------
 
--  :ref:`contentComponent <sdk_ubuntu_components_bottomedgeregion_contentComponent-prop>`
-   : Component
--  :ref:`contentUrl <sdk_ubuntu_components_bottomedgeregion_contentUrl-prop>`
-   : url
--  :ref:`enabled <sdk_ubuntu_components_bottomedgeregion_enabled-prop>`
-   : bool
--  :ref:`from <sdk_ubuntu_components_bottomedgeregion_from-prop>` :
-   real
--  :ref:`to <sdk_ubuntu_components_bottomedgeregion_to-prop>` :
-   real
+-  :ref:`contentComponent <sdk_ubuntu_components_bottomedgeregion_contentComponent>` : Component
+-  :ref:`contentUrl <sdk_ubuntu_components_bottomedgeregion_contentUrl>` : url
+-  :ref:`enabled <sdk_ubuntu_components_bottomedgeregion_enabled>` : bool
+-  :ref:`from <sdk_ubuntu_components_bottomedgeregion_from>` : real
+-  :ref:`to <sdk_ubuntu_components_bottomedgeregion_to>` : real
 
 Signals
 -------
 
--  void
-   **:ref:`dragEnded <sdk_ubuntu_components_bottomedgeregion#dragEnded-signal>`**\ ()
--  void
-   **:ref:`entered <sdk_ubuntu_components_bottomedgeregion#entered-signal>`**\ ()
--  void
-   **:ref:`exited <sdk_ubuntu_components_bottomedgeregion#exited-signal>`**\ ()
+-  void :ref:`dragEnded <sdk_ubuntu_components_bottomedgeregion_dragEnded>`\ ()
+-  void :ref:`entered <sdk_ubuntu_components_bottomedgeregion_entered>`\ ()
+-  void :ref:`exited <sdk_ubuntu_components_bottomedgeregion_exited>`\ ()
 
 Detailed Description
 --------------------
 
-Bottom edge regions are portions within the bottom edge area which can
-define different content or action whenever the drag enters in the area.
-The area is defined by
-:ref:`from <sdk_ubuntu_components_bottomedgeregion#from-prop>` and
-:ref:`to <sdk_ubuntu_components_bottomedgeregion#to-prop>` properties
-vertically, whereas horizontally is stretched across bottom edge width.
-Custom content can be defined through
-:ref:`contentUrl <sdk_ubuntu_components_bottomedgeregion#contentUrl-prop>`
-or
-:ref:`contentComponent <sdk_ubuntu_components_bottomedgeregion#contentComponent-prop>`
-properties, which will override the
-:ref:`BottomEdge::contentUrl <sdk_ubuntu_components_bottomedge#contentUrl-prop>`
-and
-:ref:`BottomEdge::contentComponent <sdk_ubuntu_components_bottomedge#contentComponent-prop>`
-properties for the time the gesture is in the section area.
+Bottom edge regions are portions within the bottom edge area which can define different content or action whenever the drag enters in the area. The area is defined by :ref:`from <sdk_ubuntu_components_bottomedgeregion_from>` and :ref:`to <sdk_ubuntu_components_bottomedgeregion_to>` properties vertically, whereas horizontally is stretched across bottom edge width. Custom content can be defined through :ref:`contentUrl <sdk_ubuntu_components_bottomedgeregion_contentUrl>` or :ref:`contentComponent <sdk_ubuntu_components_bottomedgeregion_contentComponent>` properties, which will override the :ref:`BottomEdge::contentUrl <sdk_ubuntu_components_bottomedge_contentUrl>` and :ref:`BottomEdge::contentComponent <sdk_ubuntu_components_bottomedge_contentComponent>` properties for the time the gesture is in the section area.
 
 .. code:: qml
 
@@ -93,132 +72,79 @@ properties for the time the gesture is in the section area.
         }
     }
 
-Entering into the section area is signalled by the
-:ref:`entered <sdk_ubuntu_components_bottomedgeregion#entered-signal>`
-signal and when drag leaves the area the
-:ref:`exited <sdk_ubuntu_components_bottomedgeregion#exited-signal>` signal
-is emitted. If the drag ends within the section area, the
-:ref:`dragEnded <sdk_ubuntu_components_bottomedgeregion#dragEnded-signal>`
-signal is emitted. In case the section's
-:ref:`to <sdk_ubuntu_components_bottomedgeregion#to-prop>` property is less
-than 1.0, the bottom edge content will only be exposed to that value,
-and the
-:ref:`BottomEdge::status <sdk_ubuntu_components_bottomedge#status-prop>`
-will get the *Committed* value. No further drag is possible after
-reaching *Commited* state.
+Entering into the section area is signalled by the :ref:`entered <sdk_ubuntu_components_bottomedgeregion_entered>` signal and when drag leaves the area the :ref:`exited <sdk_ubuntu_components_bottomedgeregion_exited>` signal is emitted. If the drag ends within the section area, the :ref:`dragEnded <sdk_ubuntu_components_bottomedgeregion_dragEnded>` signal is emitted. In case the section's :ref:`to <sdk_ubuntu_components_bottomedgeregion_to>` property is less than 1.0, the bottom edge content will only be exposed to that value, and the :ref:`BottomEdge::status <sdk_ubuntu_components_bottomedge_status>` will get the *Committed* value. No further drag is possible after reaching *Commited* state.
 
-**Note:** Whereas there is no restriction on making overlapping
-sections, beware that overlapping sections changing the content through
-the
-:ref:`contentUrl <sdk_ubuntu_components_bottomedgeregion#contentUrl-prop>`
-or
-:ref:`contentComponent <sdk_ubuntu_components_bottomedgeregion#contentComponent-prop>`
-properties will cause unpredictable results.
+**Note:** Whereas there is no restriction on making overlapping sections, beware that overlapping sections changing the content through the :ref:`contentUrl <sdk_ubuntu_components_bottomedgeregion_contentUrl>` or :ref:`contentComponent <sdk_ubuntu_components_bottomedgeregion_contentComponent>` properties will cause unpredictable results.
 
 Property Documentation
 ----------------------
 
-.. _sdk_ubuntu_components_bottomedgeregion_-prop:
+.. _sdk_ubuntu_components_bottomedgeregion_contentComponent:
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ contentComponent : `Component <sdk_qtqml_component>`       |
-+--------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| contentComponent : :ref:`Component <sdk_qtqml_component>`                                                                                                                                                                                                                                                       |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Specifies the component defining the section specific content. This
-propery will temporarily override the
-:ref:`BottomEdge::contentComponent <sdk_ubuntu_components_bottomedge#contentComponent-prop>`
-property value when the drag gesture enters the section area. The
-orginal value will be restored once the gesture leaves the section area.
+Specifies the component defining the section specific content. This propery will temporarily override the :ref:`BottomEdge::contentComponent <sdk_ubuntu_components_bottomedge_contentComponent>` property value when the drag gesture enters the section area. The orginal value will be restored once the gesture leaves the section area.
 
-| 
+.. _sdk_ubuntu_components_bottomedgeregion_contentUrl:
 
-.. _sdk_ubuntu_components_bottomedgeregion_contentUrl-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| contentUrl : `url <http://doc.qt.io/qt-5/qml-url.html>`_                                                                                                                                                                                                                                                     |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ contentUrl : `url <http://doc.qt.io/qt-5/qml-url.html>`_        |
-+--------------------------------------------------------------------------+
+Specifies the url to the document defining the section specific content. This propery will temporarily override the :ref:`BottomEdge::contentUrl <sdk_ubuntu_components_bottomedge_contentUrl>` property value when the drag gesture enters the section area. The orginal value will be restored once the gesture leaves the section area.
 
-Specifies the url to the document defining the section specific content.
-This propery will temporarily override the
-:ref:`BottomEdge::contentUrl <sdk_ubuntu_components_bottomedge#contentUrl-prop>`
-property value when the drag gesture enters the section area. The
-orginal value will be restored once the gesture leaves the section area.
+.. _sdk_ubuntu_components_bottomedgeregion_enabled:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| enabled : bool                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_ubuntu_components_bottomedgeregion_enabled-prop:
+Enables the section. Disabled sections do not trigger nor change the :ref:`BottomEdge <sdk_ubuntu_components_bottomedge>` content. Defaults to false.
 
-+--------------------------------------------------------------------------+
-|        \ enabled : bool                                                  |
-+--------------------------------------------------------------------------+
+.. _sdk_ubuntu_components_bottomedgeregion_from:
 
-Enables the section. Disabled sections do not trigger nor change the
-:ref:`BottomEdge <sdk_ubuntu_components_bottomedge>` content. Defaults to
-false.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| from : real                                                                                                                                                                                                                                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-| 
+Specifies the starting ratio of the bottom erge area. The value must be bigger or equal to 0 but strictly smaller than :ref:`to <sdk_ubuntu_components_bottomedgeregion_to>`. Defaults to 0.0.
 
-.. _sdk_ubuntu_components_bottomedgeregion_from-prop:
+.. _sdk_ubuntu_components_bottomedgeregion_to:
 
-+--------------------------------------------------------------------------+
-|        \ from : real                                                     |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| to : real                                                                                                                                                                                                                                                                                                    |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Specifies the starting ratio of the bottom erge area. The value must be
-bigger or equal to 0 but strictly smaller than
-:ref:`to <sdk_ubuntu_components_bottomedgeregion#to-prop>`. Defaults to
-0.0.
+Specifies the ending ratio of the bottom edge area. The value must be bigger than :ref:`from <sdk_ubuntu_components_bottomedgeregion_from>` and smaller or equal to 1.0.
 
-| 
-
-.. _sdk_ubuntu_components_bottomedgeregion_to-prop:
-
-+--------------------------------------------------------------------------+
-|        \ to : real                                                       |
-+--------------------------------------------------------------------------+
-
-Specifies the ending ratio of the bottom edge area. The value must be
-bigger than :ref:`from <sdk_ubuntu_components_bottomedgeregion#from-prop>`
-and smaller or equal to 1.0.
-
-**Note:** If the end point is less than 1.0, ending the drag within the
-section will result in exposing the bottom edge content only till the
-ration specified by this property.
-
-| 
+**Note:** If the end point is less than 1.0, ending the drag within the section will result in exposing the bottom edge content only till the ration specified by this property.
 
 Signal Documentation
 --------------------
 
-.. _sdk_ubuntu_components_bottomedgeregion_void dragEnded()-prop:
+.. _sdk_ubuntu_components_bottomedgeregion_dragEnded:
 
-+--------------------------------------------------------------------------+
-|        \ void dragEnded()                                                |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| void dragEnded()                                                                                                                                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Signal triggered when the drag ends within the active bottom edge
-section area.
+Signal triggered when the drag ends within the active bottom edge section area.
 
-| 
+.. _sdk_ubuntu_components_bottomedgeregion_entered:
 
-.. _sdk_ubuntu_components_bottomedgeregion_void entered()-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| void entered()                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ void entered()                                                  |
-+--------------------------------------------------------------------------+
+Signal triggered when the drag enters into the area defined by the bottom edge section.
 
-Signal triggered when the drag enters into the area defined by the
-bottom edge section.
+.. _sdk_ubuntu_components_bottomedgeregion_exited:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| void exited()                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_ubuntu_components_bottomedgeregion_void exited()-prop:
+Signal triggered when the drag leaves the area defined by the bottom edge section.
 
-+--------------------------------------------------------------------------+
-|        \ void exited()                                                   |
-+--------------------------------------------------------------------------+
-
-Signal triggered when the drag leaves the area defined by the bottom
-edge section.
-
-| 

@@ -1,10 +1,9 @@
 .. _sdk_qtorganizer_recurrence:
+
 QtOrganizer Recurrence
 ======================
 
-The Recurrence element contains a list of rules and dates on which the
-recurrent item occurs, and a list of rules and dates on which exceptions
-occur.
+The Recurrence element contains a list of rules and dates on which the recurrent item occurs, and a list of rules and dates on which exceptions occur.
 
 +---------------------+--------------------------+
 | Import Statement:   | import QtOrganizer 5.0   |
@@ -13,28 +12,21 @@ occur.
 Properties
 ----------
 
--  :ref:`exceptionDates <sdk_qtorganizer_recurrence_exceptionDates-prop>`
-   : list<date>
--  :ref:`exceptionRules <sdk_qtorganizer_recurrence_exceptionRules-prop>`
-   : list<RecurrenceRule>
--  :ref:`recurrenceDates <sdk_qtorganizer_recurrence_recurrenceDates-prop>`
-   : list<date>
--  :ref:`recurrenceRules <sdk_qtorganizer_recurrence_recurrenceRules-prop>`
-   : list<RecurrenceRule>
+-  :ref:`exceptionDates <sdk_qtorganizer_recurrence_exceptionDates>` : list<date>
+-  :ref:`exceptionRules <sdk_qtorganizer_recurrence_exceptionRules>` : list<RecurrenceRule>
+-  :ref:`recurrenceDates <sdk_qtorganizer_recurrence_recurrenceDates>` : list<date>
+-  :ref:`recurrenceRules <sdk_qtorganizer_recurrence_recurrenceRules>` : list<RecurrenceRule>
 
 Signals
 -------
 
--  :ref:`onDetailChanged <sdk_qtorganizer_recurrence_onDetailChanged-signal>`\ ()
+-  :ref:`onDetailChanged <sdk_qtorganizer_recurrence_onDetailChanged>`\ ()
 
 Methods
 -------
 
--  bool
-   **:ref:`setValue <sdk_qtorganizer_recurrence#setValue-method>`**\ (field,
-   value)
--  variant
-   **:ref:`value <sdk_qtorganizer_recurrence#value-method>`**\ (field)
+-  bool :ref:`setValue <sdk_qtorganizer_recurrence_setValue>`\ (field, value)
+-  variant :ref:`value <sdk_qtorganizer_recurrence_value>`\ (field)
 
 Detailed Description
 --------------------
@@ -49,86 +41,69 @@ The following fields are supported:
 Property Documentation
 ----------------------
 
-.. _sdk_qtorganizer_recurrence_exceptionDates-prop:
+.. _sdk_qtorganizer_recurrence_exceptionDates:
 
-+--------------------------------------------------------------------------+
-|        \ exceptionDates : list<date>                                     |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| exceptionDates : list<date>                                                                                                                                                                                                                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the list of exception dates.
 
-| 
+.. _sdk_qtorganizer_recurrence_exceptionRules:
 
-.. _sdk_qtorganizer_recurrence_exceptionRules-prop:
-
-+--------------------------------------------------------------------------+
-|        \ exceptionRules :                                                |
-| list<:ref:`RecurrenceRule <sdk_qtorganizer_recurrencerule>`>                |
-+--------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| exceptionRules : list<:ref:`RecurrenceRule <sdk_qtorganizer_recurrencerule>`>                                                                                                                                                                                                                                   |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the list of exception rules.
 
 **See also** :ref:`RecurrenceRule <sdk_qtorganizer_recurrencerule>`.
 
-| 
+.. _sdk_qtorganizer_recurrence_recurrenceDates:
 
-.. _sdk_qtorganizer_recurrence_recurrenceDates-prop:
-
-+--------------------------------------------------------------------------+
-|        \ recurrenceDates : list<date>                                    |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| recurrenceDates : list<date>                                                                                                                                                                                                                                                                                 |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the list of recurrence dates.
 
-| 
+.. _sdk_qtorganizer_recurrence_recurrenceRules:
 
-.. _sdk_qtorganizer_recurrence_recurrenceRules-prop:
-
-+--------------------------------------------------------------------------+
-|        \ recurrenceRules :                                               |
-| list<:ref:`RecurrenceRule <sdk_qtorganizer_recurrencerule>`>                |
-+--------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| recurrenceRules : list<:ref:`RecurrenceRule <sdk_qtorganizer_recurrencerule>`>                                                                                                                                                                                                                                  |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the list of recurrence rules.
 
 **See also** :ref:`RecurrenceRule <sdk_qtorganizer_recurrencerule>`.
 
-| 
-
 Signal Documentation
 --------------------
 
-.. _sdk_qtorganizer_recurrence_onDetailChanged()-prop:
+.. _sdk_qtorganizer_recurrence_onDetailChanged:
 
-+--------------------------------------------------------------------------+
-|        \ onDetailChanged()                                               |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| onDetailChanged()                                                                                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-**See also**
-:ref:`Detail::onDetailChanged <sdk_qtorganizer_detail#onDetailChanged-signal>`.
-
-| 
+**See also** :ref:`Detail::onDetailChanged <sdk_qtorganizer_detail_onDetailChanged>`.
 
 Method Documentation
 --------------------
 
-.. _sdk_qtorganizer_recurrence_bool setValue-method:
+.. _sdk_qtorganizer_recurrence_setValue:
 
-+--------------------------------------------------------------------------+
-|        \ bool setValue(field, value)                                     |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| bool setValue(field, value)                                                                                                                                                                                                                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-**See also**
-:ref:`Detail::setValue <sdk_qtorganizer_detail#setValue-method>`.
+**See also** :ref:`Detail::setValue <sdk_qtorganizer_detail_setValue>`.
 
-| 
+.. _sdk_qtorganizer_recurrence_value:
 
-.. _sdk_qtorganizer_recurrence_variant value-method:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| variant value(field)                                                                                                                                                                                                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ variant value(field)                                            |
-+--------------------------------------------------------------------------+
+**See also** :ref:`Detail::value <sdk_qtorganizer_detail_value>`.
 
-**See also** :ref:`Detail::value <sdk_qtorganizer_detail#value-method>`.
-
-| 

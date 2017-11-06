@@ -1,41 +1,24 @@
 .. _sdk_qtquick_qt_quick_demo_-_photo_viewer:
+
 QtQuick Qt Quick Demo - Photo Viewer
 ====================================
 
 
 
-|image0|
-
-*Photo Viewer* demonstrates the following `Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-index/>`_  features:
+*Photo Viewer* demonstrates the following `Qt Quick </sdk/apps/qml/QtQuick/qtquick-index/>`_  features:
 
 -  Using custom types to create screens and screen controls.
 -  Using Qt Quick Controls to create an application window.
--  Using the Package type with a DelegateModel to provide delegates with
-   a shared context to multiple views.
+-  Using the Package type with a DelegateModel to provide delegates with a shared context to multiple views.
 -  Using XML list models to download Flickr feeds.
--  Using the :ref:`Flipable <sdk_qtquick_flipable>` type to create labels
-   with different text on the front and back.
--  Using the :ref:`PathView <sdk_qtquick_pathview>`,
-   :ref:`Path <sdk_qtquick_path>`,
-   :ref:`PathAttribute <sdk_qtquick_pathattribute>`, and
-   :ref:`PathLine <sdk_qtquick_pathline>` types to lay out photos on a
-   path.
+-  Using the :ref:`Flipable <sdk_qtquick_flipable>` type to create labels with different text on the front and back.
+-  Using the :ref:`PathView <sdk_qtquick_pathview>`, :ref:`Path <sdk_qtquick_path>`, :ref:`PathAttribute <sdk_qtquick_pathattribute>`, and :ref:`PathLine <sdk_qtquick_pathline>` types to lay out photos on a path.
 -  Providing feedback to users while data is loading.
 -  Localizing applications.
 
-.. rubric:: Running the Example
-   :name: running-the-example
+To run the example from Qt Creator, open the **Welcome** mode and select the example from **Examples**. For more information, visit Building and Running an Example.
 
-To run the example from Qt Creator, open the **Welcome** mode and select
-the example from **Examples**. For more information, visit Building and
-Running an Example.
-
-.. rubric:: Using Custom Types
-   :name: using-custom-types
-
-In the Photo Viewer app, we use the following custom types that are each
-defined in a separate .qml file:
+In the Photo Viewer app, we use the following custom types that are each defined in a separate .qml file:
 
 -  ``AlbumDelegate.qml``
 -  ``BusyIndicator.qml``
@@ -46,19 +29,13 @@ defined in a separate .qml file:
 -  ``RssModel.qml``
 -  ``Tag.qml``
 
-To use the custom types, we add an import statement to the main QML
-file, main.qml, that imports the folder called ``PhotoViewerCore`` where
-the types are located:
+To use the custom types, we add an import statement to the main QML file, main.qml, that imports the folder called ``PhotoViewerCore`` where the types are located:
 
 .. code:: qml
 
     import "PhotoViewerCore"
 
-.. rubric:: Creating the Main Window
-   :name: creating-the-main-window
-
-In main.qml, we use the ApplicationWindow Qt Quick Control to create the
-app main window:
+In main.qml, we use the ApplicationWindow Qt Quick Control to create the app main window:
 
 .. code:: qml
 
@@ -66,9 +43,7 @@ app main window:
         id: mainWindow
         visible: true
 
-We use a
-`ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#listmodel>`_ 
-type with ListElement types to display photo albums:
+We use a `ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#listmodel>`_  type with ListElement types to display photo albums:
 
 .. code:: qml
 
@@ -79,22 +54,15 @@ type with ListElement types to display photo albums:
             ListElement { tag: "Prague" }
         }
 
-List elements are defined like other QML types except that they contain
-a collection of *role* definitions instead of properties. Roles both
-define how the data is accessed and include the data itself. For each
-list element, we use the ``tag`` role to specify the photos to download.
+List elements are defined like other QML types except that they contain a collection of *role* definitions instead of properties. Roles both define how the data is accessed and include the data itself. For each list element, we use the ``tag`` role to specify the photos to download.
 
-A DelegateModel type is used together with the Package type to provide
-delegates to multiple views. The ``model`` property holds the model
-providing data for the delegate model and the ``delegate`` property
-specifies the template defining each item instantiated by a view:
+A DelegateModel type is used together with the Package type to provide delegates to multiple views. The ``model`` property holds the model providing data for the delegate model and the ``delegate`` property specifies the template defining each item instantiated by a view:
 
 .. code:: qml
 
         DelegateModel { id: albumVisualModel; model: photosModel; delegate: AlbumDelegate {} }
 
-We use a `GridView </sdk/apps/qml/QtQuick/draganddrop/#gridview>`_  type
-to lay out the albums as a grid:
+We use a `GridView </sdk/apps/qml/QtQuick/draganddrop/#gridview>`_  type to lay out the albums as a grid:
 
 .. code:: qml
 
@@ -103,10 +71,7 @@ to lay out the albums as a grid:
             model: albumVisualModel.parts.album; visible: albumsShade.opacity != 1.0
         }
 
-The ``model`` property references the package name ``album`` that we
-specify in AlbumDelegate.qml. We use the Package type to allow the
-photos to move between different views. The Package contains the named
-items ``browser``, ``fullscreen``, and ``album``:
+The ``model`` property references the package name ``album`` that we specify in AlbumDelegate.qml. We use the Package type to allow the photos to move between different views. The Package contains the named items ``browser``, ``fullscreen``, and ``album``:
 
 .. code:: qml
 
@@ -132,24 +97,16 @@ items ``browser``, ``fullscreen``, and ``album``:
                 Package.name: 'album'
                 id: albumWrapper; width: 210; height: 220
 
-The named items are used as the delegates by the views that reference
-the special DelegateModel::parts property to select the model that
-provides the chosen delegate.
+The named items are used as the delegates by the views that reference the special DelegateModel::parts property to select the model that provides the chosen delegate.
 
-We use a :ref:`ListView <sdk_qtquick_listview>` type to lay out albums in
-other views:
+We use a :ref:`ListView <sdk_qtquick_listview>` type to lay out albums in other views:
 
 .. code:: qml
 
         ListView { anchors.fill: parent; model: albumVisualModel.parts.browser; interactive: false }
         ListView { anchors.fill: parent; model: albumVisualModel.parts.fullscreen; interactive: false }
 
-.. rubric:: Displaying Photos
-   :name: displaying-photos
-
-We use the PhotoDelegate custom type that is specified in
-PhotoDelegate.qml to display photos. We use a Package type to lay out
-the photos either in a stack, list, or a grid:
+We use the PhotoDelegate custom type that is specified in PhotoDelegate.qml to display photos. We use a Package type to lay out the photos either in a stack, list, or a grid:
 
 .. code:: qml
 
@@ -158,8 +115,7 @@ the photos either in a stack, list, or a grid:
         Item { id: listItem; Package.name: 'list'; width: mainWindow.width + 40; height: 153 }
         Item { id: gridItem; Package.name: 'grid'; width: 160; height: 153 }
 
-The photos are rotated at random angles by using the ``Math.random()``
-JavaScript method:
+The photos are rotated at random angles by using the ``Math.random()`` JavaScript method:
 
 .. code:: qml
 
@@ -172,9 +128,7 @@ JavaScript method:
                 x: 0; y: 0; width: 140; height: 133
                 z: stackItem.PathView.z; rotation: photoWrapper.randomAngle
 
-We use a
-`BorderImage </sdk/apps/qml/QtQuick/imageelements/#borderimage>`_  type
-to create borders for the images:
+We use a `BorderImage </sdk/apps/qml/QtQuick/imageelements/#borderimage>`_  type to create borders for the images:
 
 .. code:: qml
 
@@ -187,11 +141,7 @@ to create borders for the images:
                     border.left: 10; border.top: 10; border.right: 10; border.bottom: 10
                 }
 
-.. rubric:: Downloading Flickr Feeds
-   :name: downloading-flickr-feeds
-
-In AlbumDelegate.qml, we use the DelegateModel to provide the
-PhotoDelegate delegate to the RssModel model:
+In AlbumDelegate.qml, we use the DelegateModel to provide the PhotoDelegate delegate to the RssModel model:
 
 .. code:: qml
 
@@ -200,10 +150,7 @@ PhotoDelegate delegate to the RssModel model:
                     model: RssModel { id: rssModel; tags: tag }
                 }
 
-In RssModel.qml, we use an
-`XmlListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#xmllistmodel>`_ 
-type as a data source for Package objects to download photos from the
-selected feeds:
+In RssModel.qml, we use an `XmlListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#xmllistmodel>`_  type as a data source for Package objects to download photos from the selected feeds:
 
 .. code:: qml
 
@@ -212,13 +159,9 @@ selected feeds:
         property string tags : ""
         function encodeTags(x) { return encodeURIComponent(x.replace(' ',',')); }
 
-We use the ``tags`` custom property to specify which photos to download.
-The ``encodeTags`` custom function uses the ``encodeURIComponent``
-JavaScript method to ensure that the requests to the server are
-correctly formatted.
+We use the ``tags`` custom property to specify which photos to download. The ``encodeTags`` custom function uses the ``encodeURIComponent`` JavaScript method to ensure that the requests to the server are correctly formatted.
 
-We use the ``source`` property to fetch photos that have the specified
-tags attached from public Flickr feeds:
+We use the ``source`` property to fetch photos that have the specified tags attached from public Flickr feeds:
 
 .. code:: qml
 
@@ -226,18 +169,11 @@ tags attached from public Flickr feeds:
         query: "/feed/entry"
         namespaceDeclarations: "declare default element namespace 'http://www.w3.org/2005/Atom';"
 
-The ``query`` property specifies that the
-`XmlListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#xmllistmodel>`_ 
-generates a model item for each feed entry.
+The ``query`` property specifies that the `XmlListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#xmllistmodel>`_  generates a model item for each feed entry.
 
-The ``namespaceDeclarations`` property specifies that the requested
-document uses the namespace ``http://www.w3.org/2005/Atom``, which is
-declared as the default namespace.
+The ``namespaceDeclarations`` property specifies that the requested document uses the namespace ``http://www.w3.org/2005/Atom``, which is declared as the default namespace.
 
-We use the `XmlRole </sdk/apps/qml/QtQuick/XmlListModel.XmlRole/>`_ 
-type to specify the model item attributes. Each model item has the
-``title``, ``content``, and ``hq`` attributes that match the values of
-the corresponding feed entry:
+We use the `XmlRole </sdk/apps/qml/QtQuick/XmlListModel.XmlRole/>`_  type to specify the model item attributes. Each model item has the ``title``, ``content``, and ``hq`` attributes that match the values of the corresponding feed entry:
 
 .. code:: qml
 
@@ -245,15 +181,9 @@ the corresponding feed entry:
         XmlRole { name: "content"; query: "content/string()" }
         XmlRole { name: "hq"; query: "link[@rel='enclosure']/@href/string()" }
 
-.. rubric:: Creating Flipable Labels
-   :name: creating-flipable-labels
+When users select the **Edit** button, the album labels are flipped from their front side to their back side and the text on them changes from album name to **Remove**.
 
-When users select the **Edit** button, the album labels are flipped from
-their front side to their back side and the text on them changes from
-album name to **Remove**.
-
-In AlbumDelegate.qml, we use the Tag custom type to specify the text to
-display on the front and back sides of album labels:
+In AlbumDelegate.qml, we use the Tag custom type to specify the text to display on the front and back sides of album labels:
 
 .. code:: qml
 
@@ -264,12 +194,9 @@ display on the front and back sides of album labels:
                     onBackClicked: if (mainWindow.editMode) photosModel.remove(index);
                 }
 
-The ``onTagChanged`` signal handler is used to change the tag based on
-which the model is populated. The ``onBackClicked`` signal handler is
-used to remove the album.
+The ``onTagChanged`` signal handler is used to change the tag based on which the model is populated. The ``onBackClicked`` signal handler is used to remove the album.
 
-In Tag.qml, we use a :ref:`Flipable <sdk_qtquick_flipable>` type with
-custom properties and signals to create the labels:
+In Tag.qml, we use a :ref:`Flipable <sdk_qtquick_flipable>` type with custom properties and signals to create the labels:
 
 .. code:: qml
 
@@ -284,8 +211,7 @@ custom properties and signals to create the labels:
         signal backClicked
         signal tagChanged(string tag)
 
-The ``front`` property holds the EditableButton custom type that enables
-users to edit the label text:
+The ``front`` property holds the EditableButton custom type that enables users to edit the label text:
 
 .. code:: qml
 
@@ -296,8 +222,7 @@ users to edit the label text:
             onLabelChanged: flipable.tagChanged(label)
         }
 
-The ``back`` property holds the ``Button`` custom type that is used to
-remove the album:
+The ``back`` property holds the ``Button`` custom type that is used to remove the album:
 
 .. code:: qml
 
@@ -307,12 +232,7 @@ remove the album:
             onClicked: flipable.backClicked()
         }
 
-.. rubric:: Laying out Photos on a Path
-   :name: laying-out-photos-on-a-path
-
-In AlbumDelegate.qml, we use a :ref:`PathView <sdk_qtquick_pathview>` type
-to lay out the photos provided by the ``visualModel.parts.stack`` model
-on a path that has the form of a stack:
+In AlbumDelegate.qml, we use a :ref:`PathView <sdk_qtquick_pathview>` type to lay out the photos provided by the ``visualModel.parts.stack`` model on a path that has the form of a stack:
 
 .. code:: qml
 
@@ -327,23 +247,11 @@ on a path that has the form of a stack:
                     }
                 }
 
-The :ref:``path`` property holds the `Path <sdk_qtquick_path>` type that
-defines the path used by the :ref:`PathView <sdk_qtquick_pathview>`. The
-:ref:`PathAttribute <sdk_qtquick_pathattribute>` types are used to set a
-range of ``0`` to ``9999`` for the ``z`` attribute. This way, the path
-creates a stack of album photos. Because each PhotoDelegate is slightly
-rotated at a random angle, this results in a realistic-looking stack of
-photos.
+The ``path`` property holds the :ref:`Path <sdk_qtquick_path>` type that defines the path used by the :ref:`PathView <sdk_qtquick_pathview>`. The :ref:`PathAttribute <sdk_qtquick_pathattribute>` types are used to set a range of ``0`` to ``9999`` for the ``z`` attribute. This way, the path creates a stack of album photos. Because each PhotoDelegate is slightly rotated at a random angle, this results in a realistic-looking stack of photos.
 
-.. rubric:: Providing Feedback to Users
-   :name: providing-feedback-to-users
+We use a busy indicator and a progress bar to indicate activity while Flickr feeds and photos are being loaded.
 
-We use a busy indicator and a progress bar to indicate activity while
-Flickr feeds and photos are being loaded.
-
-In AlbumDelegate.qml, we use the ``BusyIndicator`` custom type and the
-``on`` custom property to display a rotating image while the Flickr feed
-is being loaded:
+In AlbumDelegate.qml, we use the ``BusyIndicator`` custom type and the ``on`` custom property to display a rotating image while the Flickr feed is being loaded:
 
 .. code:: qml
 
@@ -353,17 +261,13 @@ is being loaded:
                     on: rssModel.status != XmlListModel.Ready
                 }
 
-In PhotoDelegate.qml, we use them to indicate activity while a photo is
-being loaded:
+In PhotoDelegate.qml, we use them to indicate activity while a photo is being loaded:
 
 .. code:: qml
 
                 BusyIndicator { anchors.centerIn: parent; on: originalImage.status != Image.Ready }
 
-We define the ``BusyIndicator`` type in ``BusyIndicator.qml``. We use an
-`Image </sdk/apps/qml/QtQuick/imageelements/#image>`_  type to display
-an image and apply a :ref:`NumberAnimation <sdk_qtquick_numberanimation>`
-to its ``rotation`` property to rotate the image in an infinite loop:
+We define the ``BusyIndicator`` type in ``BusyIndicator.qml``. We use an `Image </sdk/apps/qml/QtQuick/imageelements/#image>`_  type to display an image and apply a :ref:`NumberAnimation <sdk_qtquick_numberanimation>` to its ``rotation`` property to rotate the image in an infinite loop:
 
 .. code:: qml
 
@@ -374,11 +278,9 @@ to its ``rotation`` property to rotate the image in an infinite loop:
         NumberAnimation on rotation { running: container.on; from: 0; to: 360; loops: Animation.Infinite; duration: 1200 }
     }
 
-In your apps, you can also use the BusyIndicator type from the Qt Quick
-Controls module.
+In your apps, you can also use the BusyIndicator type from the Qt Quick Controls module.
 
-In main.qml, we use the ``ProgressBar`` custom type to indicate progress
-while a high quality version of a photo is being opened on full screen:
+In main.qml, we use the ``ProgressBar`` custom type to indicate progress while a high quality version of a photo is being opened on full screen:
 
 .. code:: qml
 
@@ -387,11 +289,7 @@ while a high quality version of a photo is being opened on full screen:
             anchors.bottom: parent.bottom; opacity: mainWindow.imageLoading; visible: opacity != 0.0
         }
 
-We define the ``ProgressBar`` type in ``ProgressBar.qml``. We use a
-:ref:`Rectangle <sdk_qtquick_rectangle>` type to create the progress bar
-and apply a :ref:`NumberAnimation <sdk_qtquick_numberanimation>` to its
-``opacity`` property to change the color of the bar from black to white
-as data loading proceeds:
+We define the ``ProgressBar`` type in ``ProgressBar.qml``. We use a :ref:`Rectangle <sdk_qtquick_rectangle>` type to create the progress bar and apply a :ref:`NumberAnimation <sdk_qtquick_numberanimation>` to its ``opacity`` property to change the color of the bar from black to white as data loading proceeds:
 
 .. code:: qml
 
@@ -406,20 +304,11 @@ as data loading proceeds:
         }
     }
 
-In your apps, you can also use the ProgressBar type from the Qt Quick
-Controls module.
+In your apps, you can also use the ProgressBar type from the Qt Quick Controls module.
 
-.. rubric:: Localizing Applications
-   :name: localizing-applications
+The example application is translated into German and French. The translated strings are loaded at runtime according to the current locale.
 
-The example application is translated into German and French. The
-translated strings are loaded at runtime according to the current
-locale.
-
-We use a
-`Column </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#column>`_ 
-type in main.qml to position buttons for adding and editing albums and
-exiting the application:
+We use a `Column </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#column>`_  type in main.qml to position buttons for adding and editing albums and exiting the application:
 
 .. code:: qml
 
@@ -448,15 +337,9 @@ exiting the application:
 
 We use the qsTr() command to mark the button labels translatable.
 
-We use the lupdate tool to generate the translation source files and the
-lrelease tool to convert the translated strings to the QM files used by
-the application at runtime. These files are stored in the ``i18n``
-directory.
+We use the lupdate tool to generate the translation source files and the lrelease tool to convert the translated strings to the QM files used by the application at runtime. These files are stored in the ``i18n`` directory.
 
-To make the application aware of the translations, we add code to the
-``main()`` function in the main.cpp file. The code creates a QTranslator
-object, loads a translation according to the current locale at runtime,
-and installs the translator object into the application:
+To make the application aware of the translations, we add code to the ``main()`` function in the main.cpp file. The code creates a QTranslator object, loads a translation according to the current locale at runtime, and installs the translator object into the application:
 
 .. code:: qml
 
@@ -486,6 +369,4 @@ Files:
 -  demos/photoviewer/qml.qrc
 
 **See also** QML Applications.
-
-.. |image0| image:: /media/sdk/apps/qml/qtquick-demos-photoviewer-example/images/qtquick-demo-photoviewer-small.png
 

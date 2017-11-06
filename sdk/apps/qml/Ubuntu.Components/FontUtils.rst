@@ -1,9 +1,9 @@
 .. _sdk_ubuntu_components_fontutils:
+
 Ubuntu.Components FontUtils
 ===========================
 
-FontUtils is a context property, which provides utility functions for
-font manipulations.
+FontUtils is a context property, which provides utility functions for font manipulations.
 
 +---------------------+--------------------------------+
 | Import Statement:   | import Ubuntu.Components 1.3   |
@@ -12,23 +12,15 @@ font manipulations.
 Methods
 -------
 
--  real
-   **:ref:`modularScale <sdk_ubuntu_components_fontutils#modularScale-method>`**\ (string
-   *size*)
--  real
-   **:ref:`sizeToPixels <sdk_ubuntu_components_fontutils#sizeToPixels-method>`**\ (string
-   *size*)
+-  real :ref:`modularScale <sdk_ubuntu_components_fontutils_modularScale>`\ (string *size*)
+-  real :ref:`sizeToPixels <sdk_ubuntu_components_fontutils_sizeToPixels>`\ (string *size*)
 
 Detailed Description
 --------------------
 
-:ref:`FontUtils <sdk_ubuntu_components_fontutils>` cannot be instantiated
-and it is already available as a context property, i.e.
-':ref:`FontUtils <sdk_ubuntu_components_fontutils>`' is an instance that
-can be used from anywhere in the code.
+:ref:`FontUtils <sdk_ubuntu_components_fontutils>` cannot be instantiated and it is already available as a context property, i.e. ':ref:`FontUtils <sdk_ubuntu_components_fontutils>`' is an instance that can be used from anywhere in the code.
 
-Example of a Label implementation which uses the default base scale for
-the font size:
+Example of a Label implementation which uses the default base scale for the font size:
 
 .. code:: qml
 
@@ -39,8 +31,7 @@ the font size:
         font.pixelSize: FontUtils.sizeToPixels(fontSize)
     }
 
-Another example of a custom text input component exposing a fontSize
-property and a base font unit size to scale its font:
+Another example of a custom text input component exposing a fontSize property and a base font unit size to scale its font:
 
 .. code:: qml
 
@@ -55,14 +46,13 @@ property and a base font unit size to scale its font:
 Method Documentation
 --------------------
 
-.. _sdk_ubuntu_components_fontutils_real modularScale-method:
+.. _sdk_ubuntu_components_fontutils_modularScale:
 
-+--------------------------------------------------------------------------+
-|        \ real modularScale(string *size*)                                |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| real modularScale(string *size*)                                                                                                                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-The function returns the number interpretation of a given font scale.
-The scale can have one of the following values:
+The function returns the number interpretation of a given font scale. The scale can have one of the following values:
 
 -  **xx-small**
 -  **x-small**
@@ -71,17 +61,11 @@ The scale can have one of the following values:
 -  **large**
 -  **x-large**
 
-| 
+.. _sdk_ubuntu_components_fontutils_sizeToPixels:
 
-.. _sdk_ubuntu_components_fontutils_real sizeToPixels-method:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| real sizeToPixels(string *size*)                                                                                                                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ real sizeToPixels(string *size*)                                |
-+--------------------------------------------------------------------------+
+The function calculates the pixel size of a given scale. The size scale can be one of the strings specified at :ref:`modularScale <sdk_ubuntu_components_fontutils_modularScale>` function. On failure returns 0.
 
-The function calculates the pixel size of a given scale. The size scale
-can be one of the strings specified at
-:ref:`modularScale <sdk_ubuntu_components_fontutils#modularScale-method>`
-function. On failure returns 0.
-
-| 

@@ -1,4 +1,5 @@
 .. _sdk_qtcontacts_ringtone:
+
 QtContacts Ringtone
 ===================
 
@@ -11,10 +12,8 @@ The Ringtone element provides a ringtone associated with a contact.
 Properties
 ----------
 
--  :ref:`audioRingtoneUrl <sdk_qtcontacts_ringtone_audioRingtoneUrl-prop>`
-   : url
--  :ref:`videoRingtoneUrl <sdk_qtcontacts_ringtone_videoRingtoneUrl-prop>`
-   : url
+-  :ref:`audioRingtoneUrl <sdk_qtcontacts_ringtone_audioRingtoneUrl>` : url
+-  :ref:`videoRingtoneUrl <sdk_qtcontacts_ringtone_videoRingtoneUrl>` : url
 
 Detailed Description
 --------------------
@@ -29,22 +28,19 @@ This element is part of the **QtContacts** module.
 Property Documentation
 ----------------------
 
-.. _sdk_qtcontacts_ringtone_audioRingtoneUrl-prop:
+.. _sdk_qtcontacts_ringtone_audioRingtoneUrl:
 
-+--------------------------------------------------------------------------+
-|        \ audioRingtoneUrl : url                                          |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| audioRingtoneUrl : url                                                                                                                                                                                                                                                                                       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the value of the URL for an audio ringtone.
 
-| 
+.. _sdk_qtcontacts_ringtone_videoRingtoneUrl:
 
-.. _sdk_qtcontacts_ringtone_videoRingtoneUrl-prop:
-
-+--------------------------------------------------------------------------+
-|        \ videoRingtoneUrl : url                                          |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| videoRingtoneUrl : url                                                                                                                                                                                                                                                                                       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the value of the URL for a video ringtone.
 
-| 

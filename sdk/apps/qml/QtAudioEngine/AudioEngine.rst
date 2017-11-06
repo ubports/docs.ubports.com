@@ -1,4 +1,5 @@
 .. _sdk_qtaudioengine_audioengine:
+
 QtAudioEngine AudioEngine
 =========================
 
@@ -13,29 +14,22 @@ Organize all your 3d audio content in one place.
 Properties
 ----------
 
--  :ref:`categories <sdk_qtaudioengine_audioengine_categories-prop>`
-   : map
--  :ref:`dopplerFactor <sdk_qtaudioengine_audioengine_dopplerFactor-prop>`
-   : real
--  :ref:`listener <sdk_qtaudioengine_audioengine_listener-prop>` :
-   QtAudioEngine::AudioListener
--  :ref:`liveInstances <sdk_qtaudioengine_audioengine_liveInstances-prop>`
-   : int
--  :ref:`loading <sdk_qtaudioengine_audioengine_loading-prop>` :
-   bool
--  :ref:`samples <sdk_qtaudioengine_audioengine_samples-prop>` :
-   map
--  :ref:`sounds <sdk_qtaudioengine_audioengine_sounds-prop>` : map
--  :ref:`speedOfSound <sdk_qtaudioengine_audioengine_speedOfSound-prop>`
-   : real
+-  :ref:`categories <sdk_qtaudioengine_audioengine_categories>` : map
+-  :ref:`dopplerFactor <sdk_qtaudioengine_audioengine_dopplerFactor>` : real
+-  :ref:`listener <sdk_qtaudioengine_audioengine_listener>` : QtAudioEngine::AudioListener
+-  :ref:`liveInstances <sdk_qtaudioengine_audioengine_liveInstances>` : int
+-  :ref:`loading <sdk_qtaudioengine_audioengine_loading>` : bool
+-  :ref:`samples <sdk_qtaudioengine_audioengine_samples>` : map
+-  :ref:`sounds <sdk_qtaudioengine_audioengine_sounds>` : map
+-  :ref:`speedOfSound <sdk_qtaudioengine_audioengine_speedOfSound>` : real
 
 Signals
 -------
 
--  :ref:`finishedLoading <sdk_qtaudioengine_audioengine_finishedLoading-signal>`\ ()
--  :ref:`isLoadingChanged <sdk_qtaudioengine_audioengine_isLoadingChanged-signal>`\ ()
--  :ref:`liveInstanceCountChanged <sdk_qtaudioengine_audioengine_liveInstanceCountChanged-signal>`\ ()
--  :ref:`ready <sdk_qtaudioengine_audioengine_ready-signal>`\ ()
+-  :ref:`finishedLoading <sdk_qtaudioengine_audioengine_finishedLoading>`\ ()
+-  :ref:`isLoadingChanged <sdk_qtaudioengine_audioengine_isLoadingChanged>`\ ()
+-  :ref:`liveInstanceCountChanged <sdk_qtaudioengine_audioengine_liveInstanceCountChanged>`\ ()
+-  :ref:`ready <sdk_qtaudioengine_audioengine_ready>`\ ()
 
 Detailed Description
 --------------------
@@ -77,176 +71,123 @@ Detailed Description
         }
     }
 
-``AudioEngine`` acts as a central library for configuring all 3d audio
-content in an app, so you should define only one in your app.
+``AudioEngine`` acts as a central library for configuring all 3d audio content in an app, so you should define only one in your app.
 
-It is mostly used as a container to access other types such as
-:ref:`AudioCategory <sdk_qtaudioengine_audiocategory>`,
-:ref:`AudioSample <sdk_qtaudioengine_audiosample>` and Sound.
+It is mostly used as a container to access other types such as :ref:`AudioCategory <sdk_qtaudioengine_audiocategory>`, :ref:`AudioSample <sdk_qtaudioengine_audiosample>` and Sound.
 
-**See also** :ref:`AudioCategory <sdk_qtaudioengine_audiocategory>`,
-:ref:`AudioSample <sdk_qtaudioengine_audiosample>`,
-:ref:`Sound <sdk_qtaudioengine_sound>`,
-:ref:`SoundInstance <sdk_qtaudioengine_soundinstance>`,
-:ref:`AttenuationModelLinear <sdk_qtaudioengine_attenuationmodellinear>`,
-and
-:ref:`AttenuationModelInverse <sdk_qtaudioengine_attenuationmodelinverse>`.
+**See also** :ref:`AudioCategory <sdk_qtaudioengine_audiocategory>`, :ref:`AudioSample <sdk_qtaudioengine_audiosample>`, :ref:`Sound <sdk_qtaudioengine_sound>`, :ref:`SoundInstance <sdk_qtaudioengine_soundinstance>`, :ref:`AttenuationModelLinear <sdk_qtaudioengine_attenuationmodellinear>`, and :ref:`AttenuationModelInverse <sdk_qtaudioengine_attenuationmodelinverse>`.
 
 Property Documentation
 ----------------------
 
-.. _sdk_qtaudioengine_audioengine_categories-prop:
+.. _sdk_qtaudioengine_audioengine_categories:
 
-+--------------------------------------------------------------------------+
-|        \ categories : map                                                |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| categories : map                                                                                                                                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Container of all :ref:`AudioCategory <sdk_qtaudioengine_audiocategory>`
-instances.
+Container of all :ref:`AudioCategory <sdk_qtaudioengine_audiocategory>` instances.
 
-| 
+.. _sdk_qtaudioengine_audioengine_dopplerFactor:
 
-.. _sdk_qtaudioengine_audioengine_dopplerFactor-prop:
-
-+--------------------------------------------------------------------------+
-|        \ dopplerFactor : real                                            |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| dopplerFactor : real                                                                                                                                                                                                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds a simple scaling for the effect of doppler shift.
 
-| 
+.. _sdk_qtaudioengine_audioengine_listener:
 
-.. _sdk_qtaudioengine_audioengine_listener-prop:
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| listener : :ref:`QtAudioEngine::AudioListener <sdk_qtaudioengine_audiolistener>`                                                                                                                                                                                                                                |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ listener :                                                      |
-| :ref:`QtAudioEngine::AudioListener <sdk_qtaudioengine_audiolistener>`       |
-+--------------------------------------------------------------------------+
-
-This property holds the listener object. You can change various
-properties to affect the 3D positioning of sounds.
+This property holds the listener object. You can change various properties to affect the 3D positioning of sounds.
 
 **See also** :ref:`AudioListener <sdk_qtaudioengine_audiolistener>`.
 
-| 
+.. _sdk_qtaudioengine_audioengine_liveInstances:
 
-.. _sdk_qtaudioengine_audioengine_liveInstances-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| liveInstances : int                                                                                                                                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ liveInstances : int                                             |
-+--------------------------------------------------------------------------+
+This property indicates how many live sound instances there are at the moment.
 
-This property indicates how many live sound instances there are at the
-moment.
+.. _sdk_qtaudioengine_audioengine_loading:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| loading : bool                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_qtaudioengine_audioengine_loading-prop:
+This property indicates if the audio engine is loading any audio sample at the moment. This may be useful if you specified the preloaded property in :ref:`AudioSample <sdk_qtaudioengine_audiosample>` and would like to show a loading screen to the user before all audio samples are loaded.
 
-+--------------------------------------------------------------------------+
-|        \ loading : bool                                                  |
-+--------------------------------------------------------------------------+
+/sa :ref:`finishedLoading <sdk_qtaudioengine_audioengine_finishedLoading>`, :ref:`AudioSample::preloaded <sdk_qtaudioengine_audiosample_preloaded>`
 
-This property indicates if the audio engine is loading any audio sample
-at the moment. This may be useful if you specified the preloaded
-property in :ref:`AudioSample <sdk_qtaudioengine_audiosample>` and would
-like to show a loading screen to the user before all audio samples are
-loaded.
+.. _sdk_qtaudioengine_audioengine_samples:
 
-/sa
-:ref:`finishedLoading <sdk_qtaudioengine_audioengine#finishedLoading-signal>`,
-:ref:`AudioSample::preloaded <sdk_qtaudioengine_audiosample#preloaded-prop>`
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| samples : map                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-| 
+Container of all :ref:`AudioSample <sdk_qtaudioengine_audiosample>` instances.
 
-.. _sdk_qtaudioengine_audioengine_samples-prop:
+.. _sdk_qtaudioengine_audioengine_sounds:
 
-+--------------------------------------------------------------------------+
-|        \ samples : map                                                   |
-+--------------------------------------------------------------------------+
-
-Container of all :ref:`AudioSample <sdk_qtaudioengine_audiosample>`
-instances.
-
-| 
-
-.. _sdk_qtaudioengine_audioengine_sounds-prop:
-
-+--------------------------------------------------------------------------+
-|        \ sounds : map                                                    |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| sounds : map                                                                                                                                                                                                                                                                                                 |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Container of all Sound instances.
 
-| 
+.. _sdk_qtaudioengine_audioengine_speedOfSound:
 
-.. _sdk_qtaudioengine_audioengine_speedOfSound-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| speedOfSound : real                                                                                                                                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ speedOfSound : real                                             |
-+--------------------------------------------------------------------------+
-
-This property holds the reference value of the sound speed (in meters
-per second) which will be used in doppler shift calculation. The doppler
-shift calculation is used to emulate the change in frequency in sound
-that is perceived by an observer when the sound source is travelling
-towards or away from the observer. The speed of sound depends on the
-medium the sound is propagating through.
-
-| 
+This property holds the reference value of the sound speed (in meters per second) which will be used in doppler shift calculation. The doppler shift calculation is used to emulate the change in frequency in sound that is perceived by an observer when the sound source is travelling towards or away from the observer. The speed of sound depends on the medium the sound is propagating through.
 
 Signal Documentation
 --------------------
 
-.. _sdk_qtaudioengine_audioengine_finishedLoading()-prop:
+.. _sdk_qtaudioengine_audioengine_finishedLoading:
 
-+--------------------------------------------------------------------------+
-|        \ finishedLoading()                                               |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| finishedLoading()                                                                                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-This signal is emitted when
-:ref:`loading <sdk_qtaudioengine_audioengine#loading-prop>` has completed.
+This signal is emitted when :ref:`loading <sdk_qtaudioengine_audioengine_loading>` has completed.
 
 The corresponding handler is ``onFinishedLoading``.
 
-| 
+.. _sdk_qtaudioengine_audioengine_isLoadingChanged:
 
-.. _sdk_qtaudioengine_audioengine_isLoadingChanged()-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| isLoadingChanged()                                                                                                                                                                                                                                                                                           |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ isLoadingChanged()                                              |
-+--------------------------------------------------------------------------+
-
-This signal is emitted when the
-:ref:`loading <sdk_qtaudioengine_audioengine#loading-prop>` property
-changes.
+This signal is emitted when the :ref:`loading <sdk_qtaudioengine_audioengine_loading>` property changes.
 
 The corresponding handler is ``onIsLoadingChanged``.
 
-| 
+.. _sdk_qtaudioengine_audioengine_liveInstanceCountChanged:
 
-.. _sdk_qtaudioengine_audioengine_liveInstanceCountChanged()-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| liveInstanceCountChanged()                                                                                                                                                                                                                                                                                   |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ liveInstanceCountChanged()                                      |
-+--------------------------------------------------------------------------+
-
-This signal is emitted when the number of live instances managed by the
-:ref:`AudioEngine <sdk_qtaudioengine_audioengine>` is changed.
+This signal is emitted when the number of live instances managed by the :ref:`AudioEngine <sdk_qtaudioengine_audioengine>` is changed.
 
 The corresponding handler is ``onLiveInstanceCountChanged``.
 
-| 
+.. _sdk_qtaudioengine_audioengine_ready:
 
-.. _sdk_qtaudioengine_audioengine_ready()-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ready()                                                                                                                                                                                                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ ready()                                                         |
-+--------------------------------------------------------------------------+
-
-This signal is emitted when the
-:ref:`AudioEngine <sdk_qtaudioengine_audioengine>` is ready to use.
+This signal is emitted when the :ref:`AudioEngine <sdk_qtaudioengine_audioengine>` is ready to use.
 
 The corresponding handler is ``onReady``.
 
-| 

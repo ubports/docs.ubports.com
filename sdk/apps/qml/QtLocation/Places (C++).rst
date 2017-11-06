@@ -1,57 +1,24 @@
 .. _sdk_qtlocation_places_(c++):
+
 QtLocation Places (C++)
 =======================
 
 
 
-.. rubric:: Overview
-   :name: overview
+The Places API allows users to discover places/points of interest and view details about them such as address and contact information; some places may even have rich content such as images and reviews. The Places API also facilitates management of places and categories, allowing users to save and remove them.
 
-The Places API allows users to discover places/points of interest and
-view details about them such as address and contact information; some
-places may even have rich content such as images and reviews. The Places
-API also facilitates management of places and categories, allowing users
-to save and remove them.
-
-.. rubric:: Place Definition
-   :name: place-definition
-
-A place is a point of interest, it could be a favorite restaurant, a
-park or someone's home. A QPlace object represents a place by acting as
-a container for various information about that place.
+A place is a point of interest, it could be a favorite restaurant, a park or someone's home. A QPlace object represents a place by acting as a container for various information about that place.
 
 This information can be divided into 2 broad classifications
 
 -  Details
 -  Rich content
 
-The place details consist of properties of the place, such as the name,
-location, contact information and so on. When a place is returned during
-a search, these details are filled in. Sometimes in order to save
-bandwidth, there are further details about the place that can be
-retrieved on an individual place by place basis, if the user is
-interested. The QPlace::detailsFetched() function can be queried to see
-if all available details have been fetched, and if not,
-QPlaceManager::getPlaceDetails() can be used to retrieve them. Precisely
-which details are populated during a search and which need to be fetched
-individually may vary from provider to provider. See plugin
-documentation for more details.
+The place details consist of properties of the place, such as the name, location, contact information and so on. When a place is returned during a search, these details are filled in. Sometimes in order to save bandwidth, there are further details about the place that can be retrieved on an individual place by place basis, if the user is interested. The QPlace::detailsFetched() function can be queried to see if all available details have been fetched, and if not, QPlaceManager::getPlaceDetails() can be used to retrieve them. Precisely which details are populated during a search and which need to be fetched individually may vary from provider to provider. See plugin documentation for more details.
 
-The rich content of a place consists of items such as images, reviews
-and editorials. Potentially there may be many rich content items, so
-they are treated separately from the place details. They can be
-retrieved in a paged fashion via QPlaceManager::getPlaceContent(). If
-necessary, the content may be assigned to a place so it can act as a
-convenient container.
+The rich content of a place consists of items such as images, reviews and editorials. Potentially there may be many rich content items, so they are treated separately from the place details. They can be retrieved in a paged fashion via QPlaceManager::getPlaceContent(). If necessary, the content may be assigned to a place so it can act as a convenient container.
 
-.. rubric:: Common Operations
-   :name: common-operations
-
-.. rubric:: Initializing a Manager
-   :name: initializing-a-manager
-
-All places functionality is facilitated by a QPlaceManager instance. One
-must specify a QGeoServiceProvider in order to create the QPlaceManager
+All places functionality is facilitated by a QPlaceManager instance. One must specify a QGeoServiceProvider in order to create the QPlaceManager
 
 .. code:: cpp
 
@@ -59,12 +26,7 @@ must specify a QGeoServiceProvider in order to create the QPlaceManager
     QGeoServiceProvider *provider = new QGeoServiceProvider("provider name");
     QPlaceManager *manager = provider->placeManager();
 
-.. rubric:: Discovery/Search
-   :name: discoverysearch
-
-In order to perform a search operation we simply create a
-QPlaceSearchRequest and set the desired search parameters, such as a
-search term and search center.
+In order to perform a search operation we simply create a QPlaceSearchRequest and set the desired search parameters, such as a search term and search center.
 
 .. code:: cpp
 
@@ -77,11 +39,7 @@ search term and search center.
     //connect a slot to handle the reply
     connect(searchReply, SIGNAL(finished()), this, SLOT(handleSearchReply()));
 
-The request is an asynchronous operation so we need a slot to handle the
-completion of the request. In the handler we check that there are no
-errors and that our search result type is a place. If so we can then
-retrieve some of the core details of the place. At the end of the slot,
-we delete the reply since they are for single use only.
+The request is an asynchronous operation so we need a slot to handle the completion of the request. In the handler we check that there are no errors and that our search result type is a place. If so we can then retrieve some of the core details of the place. At the end of the slot, we delete the reply since they are for single use only.
 
 .. code:: cpp
 
@@ -101,36 +59,18 @@ we delete the reply since they are for single use only.
         searchReply = 0;
     }
 
-**Note:** Depending upon the plugin backend that was chosen, the search
-results may contain places which have further details that can be
-fetched on a place by place basis. To fetch these other details see
-`Fetching Place
-Details </sdk/apps/qml/QtLocation/location-places-cpp/#fetching-place-details>`_ .
+**Note:** Depending upon the plugin backend that was chosen, the search results may contain places which have further details that can be fetched on a place by place basis. To fetch these other details see `Fetching Place Details </sdk/apps/qml/QtLocation/location-places-cpp/#fetching-place-details>`_ .
 
-.. rubric:: Recommendations
-   :name: recommendations
+Recommendations can be retrieved by supplying a place id via QPlaceSearchRequest::setRecommendationId(). Any places similar to the given place are retrieved.
 
-Recommendations can be retrieved by supplying a place id via
-QPlaceSearchRequest::setRecommendationId(). Any places similar to the
-given place are retrieved.
-
-.. rubric:: Paging
-   :name: paging
-
-If the plugin supports paging, the limit parameter may be provided to
-the search request.
+If the plugin supports paging, the limit parameter may be provided to the search request.
 
 .. code:: cpp
 
     QPlaceSearchRequest searchRequest;
     searchRequest.setLimit(15); //specify how many results are to be retrieved.
 
-.. rubric:: Fetching Place Details
-   :name: fetching-place-details
-
-A place that has been returned from a search request may have more
-details that can be fetched. The following demonstrates how to check if
-there are further details and if so how to request them.
+A place that has been returned from a search request may have more details that can be fetched. The following demonstrates how to check if there are further details and if so how to request them.
 
 .. code:: cpp
 
@@ -148,11 +88,7 @@ there are further details and if so how to request them.
         detailsReply = 0;
     }
 
-.. rubric:: Fetching Rich Content
-   :name: fetching-rich-content
-
-Rich content such as images and reviews is retrieved through the manager
-and then if required assigned to a place.
+Rich content such as images and reviews is retrieved through the manager and then if required assigned to a place.
 
 .. code:: cpp
 
@@ -191,27 +127,15 @@ We can handle the content request as shown below.
         contentReply = 0;
     }
 
-It is important to note that the results in the QPlaceContentReply, is a
-QPlaceContent::Collection which is essentially a QMap<int,
-QPlaceContent>. The key ``int`` in this case is the index of the
-content, and the value is the content itself. Due to the way Content is
-implemented it is possible to convert a content type as follows
+It is important to note that the results in the QPlaceContentReply, is a QPlaceContent::Collection which is essentially a QMap<int, QPlaceContent>. The key ``int`` in this case is the index of the content, and the value is the content itself. Due to the way Content is implemented it is possible to convert a content type as follows
 
 .. code:: cpp
 
     QPlaceImage image = content; //provided that 'content' has a type QPlace::ImageType
 
-The usage of the QPlaceContent::Collection and the conversion between
-content and its subtypes means that code for handling the mechanics of
-paging reviews, images and editorials can be easily shared.
+The usage of the QPlaceContent::Collection and the conversion between content and its subtypes means that code for handling the mechanics of paging reviews, images and editorials can be easily shared.
 
-.. rubric:: Search Suggestions
-   :name: search-suggestions
-
-The retrieval of search term suggestions is very similar to performing a
-place search. A QPlaceSearchRequest is used just like a place search,
-the only difference being that the search term is set to a partially
-completed string.
+The retrieval of search term suggestions is very similar to performing a place search. A QPlaceSearchRequest is used just like a place search, the only difference being that the search term is set to a partially completed string.
 
 .. code:: cpp
 
@@ -221,8 +145,7 @@ completed string.
     /* QPlaceSearchSuggestion * */suggestionReply = manager->searchSuggestions(request);
     connect(suggestionReply, SIGNAL(finished()), this, SLOT(handleSuggestionReply()));
 
-And when the request is done, we can use the reply to show the
-suggestions.
+And when the request is done, we can use the reply to show the suggestions.
 
 .. code:: cpp
 
@@ -235,14 +158,7 @@ suggestions.
         suggestionReply = 0;
     }
 
-       \        
-.. rubric:: Saving a Place
-   :name: saving-a-place
-
-The saving of a new place is performed as follows, we create a QPlace
-instance and populate it with information such as a name, address and
-coordinate. Once done we can invoke QPlaceManager::savePlace() to begin
-a save operation.
+The saving of a new place is performed as follows, we create a QPlace instance and populate it with information such as a name, address and coordinate. Once done we can invoke QPlaceManager::savePlace() to begin a save operation.
 
 .. code:: cpp
 
@@ -258,8 +174,7 @@ a save operation.
     /* QPlaceIdReply * */savePlaceReply = manager->savePlace(place);
     connect(savePlaceReply, SIGNAL(finished()), this, SLOT(handleSavePlaceReply()));
 
-Once a place is saved the reply contains the new identifier for that
-place.
+Once a place is saved the reply contains the new identifier for that place.
 
 .. code:: cpp
 
@@ -270,25 +185,11 @@ place.
         savePlaceReply = 0;
     }
 
-Note that to save an already *existing* place, the QPlace::placeId()
-must be filled in with the correct identifier. Otherwise a new place
-will be created if empty or the wrong place overwritten if the
-identifier is incorrect.
+Note that to save an already *existing* place, the QPlace::placeId() must be filled in with the correct identifier. Otherwise a new place will be created if empty or the wrong place overwritten if the identifier is incorrect.
 
-When a place is saved, the QPlaceManager may emit
-QPlaceManager::placedAdded() or QPlaceManager::placeUpdated() signals.
-However whether a manager does so or not is provider specific, managers
-accessing places from a web service will typically not emit these
-signals while managers accessing places locally stored generally will.
+When a place is saved, the QPlaceManager may emit QPlaceManager::placedAdded() or QPlaceManager::placeUpdated() signals. However whether a manager does so or not is provider specific, managers accessing places from a web service will typically not emit these signals while managers accessing places locally stored generally will.
 
-.. rubric:: Caveats
-   :name: caveats
-
-The Places API is currently designed for only saving *core* details.
-Saving rich content like images and reviews or details like supplier and
-rating is not a supported use case. Typically a manager will generally
-ignore these fields upon save and may produce a warning message if they
-are populated.
+The Places API is currently designed for only saving *core* details. Saving rich content like images and reviews or details like supplier and rating is not a supported use case. Typically a manager will generally ignore these fields upon save and may produce a warning message if they are populated.
 
 The Places API only supports saving of the following *core details*:
 
@@ -300,41 +201,19 @@ The Places API only supports saving of the following *core details*:
 -  categories (tag-like names to describe a place)
 -  visibility scope
 
-It is possible that providers may only support a subset of these. See
-the `plugin
-documentation </sdk/apps/qml/QtLocation/qtlocation-index/#plugin-references-and-parameters>`_ 
-for more details.
+It is possible that providers may only support a subset of these. See the `plugin documentation </sdk/apps/qml/QtLocation/qtlocation-index/#plugin-references-and-parameters>`_  for more details.
 
-Saving of properties such as the rating, extended attributes, images,
-reviews, editorials and supplier is explicitly not supported by the
-Places API.
+Saving of properties such as the rating, extended attributes, images, reviews, editorials and supplier is explicitly not supported by the Places API.
 
-.. rubric:: Saving Between Managers
-   :name: saving-between-managers
+When saving places between managers, there are a few things to be aware of. Some fields of a place such as the id, categories and icons are manager specific entities for example the categories in one manager may not be recognized in another. Therefore trying to save a place directly from one manager to another is not possible.
 
-When saving places between managers, there are a few things to be aware
-of. Some fields of a place such as the id, categories and icons are
-manager specific entities for example the categories in one manager may
-not be recognized in another. Therefore trying to save a place directly
-from one manager to another is not possible.
-
-The typical approach is to use the QPlaceManager::compatiblePlace()
-function, it creates a copy of a place, but only copies data that the
-manager supports. Manager specific data such as the place identifier is
-not copied over. The new copy is now suitable for saving into the
-manager. If the manager supports matching by alternative identifiers, an
-alternative identifier attribute is assigned to the copy (see Matching
-places between managers)
+The typical approach is to use the QPlaceManager::compatiblePlace() function, it creates a copy of a place, but only copies data that the manager supports. Manager specific data such as the place identifier is not copied over. The new copy is now suitable for saving into the manager. If the manager supports matching by alternative identifiers, an alternative identifier attribute is assigned to the copy (see Matching places between managers)
 
 .. code:: cpp
 
     //result retrieved from a different manager)
     QPlace place = manager->compatiblePlace(result.place());
     saveReply = manager->savePlace(place);
-
-       \        
-.. rubric:: Removing a Place
-   :name: removing-a-place
 
 The removal of a place is performed as follows:
 
@@ -352,18 +231,9 @@ The removal of a place is performed as follows:
         removePlaceReply = 0;
     }
 
-When a place is removed, the QPlaceManager may emit the
-QPlaceManager::placeRemoved() signal. Whether a manager does so is
-provider specific. Managers accessing places from a web service will
-typically not emit these signals, while managers accessing places stored
-locally generally will.
+When a place is removed, the QPlaceManager may emit the QPlaceManager::placeRemoved() signal. Whether a manager does so is provider specific. Managers accessing places from a web service will typically not emit these signals, while managers accessing places stored locally generally will.
 
-.. rubric:: Using Categories
-   :name: using-categories
-
-Categories are keywords that can describe a place. For example, 'park',
-'theater', 'restaurant'. A place could be described by many categories,
-it could be a park and a music venue and a ferry or bus stop.
+Categories are keywords that can describe a place. For example, 'park', 'theater', 'restaurant'. A place could be described by many categories, it could be a park and a music venue and a ferry or bus stop.
 
 To use categories they must first be initialized.
 
@@ -382,17 +252,14 @@ To use categories they must first be initialized.
         initCatReply = 0;
     }
 
-After the categories have been initialized we can then use these
-category functions.
+After the categories have been initialized we can then use these category functions.
 
 -  QPlaceManager::childCategories()
 -  QPlaceManager::category()
 -  QPlaceManager::parentCategoryId()
 -  QPlaceManager::childCategoryIds();
 
-To retrieve the top level categories we use the
-QPlaceManager::childCategories() function but do not provide a category
-identifier.
+To retrieve the top level categories we use the QPlaceManager::childCategories() function but do not provide a category identifier.
 
 .. code:: cpp
 
@@ -400,15 +267,11 @@ identifier.
     foreach (const QPlaceCategory &category, topLevelCategories)
         qDebug() << category.name();
 
-If we did provide an identifier then we could retrieve a category's
-children.
+If we did provide an identifier then we could retrieve a category's children.
 
 .. code:: cpp
 
     QList<QPlaceCategory> childCategories = manager->childCategories(pizza.categoryId());
-
-.. rubric:: Saving a Category
-   :name: saving-a-category
 
 The following shows how to save a category
 
@@ -431,15 +294,7 @@ The following shows how to save a category
         saveCategoryReply = 0;
     }
 
-When a category is saved, the QPlaceManager may emit
-QPlaceManager::categoryAdded() or QPlaceManager::categoryUpdated()
-signals. However whether a manager does so or not is provider specific,
-managers accessing places from a web service will typically not emit
-these signals while managers accessing places locally stored generally
-will.
-
-.. rubric:: Removing a Category
-   :name: removing-a-category
+When a category is saved, the QPlaceManager may emit QPlaceManager::categoryAdded() or QPlaceManager::categoryUpdated() signals. However whether a manager does so or not is provider specific, managers accessing places from a web service will typically not emit these signals while managers accessing places locally stored generally will.
 
 Category removal is very similar to removing a place
 
@@ -457,33 +312,11 @@ Category removal is very similar to removing a place
         removeCategoryReply = 0;
     }
 
-When a category is removed, the QPlaceManager may emit the
-QPlaceManager::categoryRemoved() signal. Whether a manager does so is
-provider specific. Managers accessing places from a web service will
-typically not emit these signals, while managers accessing places stored
-locally generally will.
+When a category is removed, the QPlaceManager may emit the QPlaceManager::categoryRemoved() signal. Whether a manager does so is provider specific. Managers accessing places from a web service will typically not emit these signals, while managers accessing places stored locally generally will.
 
-.. rubric:: Matching Places Between Managers
-   :name: matching-places-between-managers
+Sometimes you may want to cross reference whether places from one manager match those from another manager. Such a situation may arise where one manager provides read-only access to places (origin manager) while another second r/w manager (destination manager) is used to save selected favorites from the first. During a search of the origin manager we may want to know which ones have been 'favorited' into the destination manager and perhaps display a customized favorite name rather than the original name.
 
-Sometimes you may want to cross reference whether places from one
-manager match those from another manager. Such a situation may arise
-where one manager provides read-only access to places (origin manager)
-while another second r/w manager (destination manager) is used to save
-selected favorites from the first. During a search of the origin manager
-we may want to know which ones have been 'favorited' into the
-destination manager and perhaps display a customized favorite name
-rather than the original name.
-
-The matching mechanism can vary between managers, but is typically
-accomplished through an alternative identifier. As part of the save
-process, the place identifier from the origin manager is saved as an
-alternative identifier attribute in the destination manager (which can
-have its own place identifier scheme). In the following example, the
-origin manager is from the 'nokia' QGeoServiceProider, therefore as part
-of the saving process an alternative identifier attribute, x\_id\_nokia,
-is set for the place saved into the destination manager (when
-QPlaceManager::compatiblePlace() is called)
+The matching mechanism can vary between managers, but is typically accomplished through an alternative identifier. As part of the save process, the place identifier from the origin manager is saved as an alternative identifier attribute in the destination manager (which can have its own place identifier scheme). In the following example, the origin manager is from the 'nokia' QGeoServiceProider, therefore as part of the saving process an alternative identifier attribute, x\_id\_nokia, is set for the place saved into the destination manager (when QPlaceManager::compatiblePlace() is called)
 
 .. code:: cpp
 
@@ -493,15 +326,7 @@ QPlaceManager::compatiblePlace() is called)
     Attribute type: x_provider      Attribute type: x_id_nokia
     Attribute value: nokia          Attribute text value: ae246
 
-In order to perform the matching, we create a QPlaceMatchRequest and
-assign it the search results from the origin manager. The
-QPlaceMatchRequest will be used on the destination manager to return
-corresponding places. We also specify matching parameters which are key
-value pairs. As mentioned previously, this can vary depending on the
-manager but typically the key is QPlaceMatchRequest::AlternativeId to
-indicate we are matching by alternative id, the value in this case would
-be x\_id\_nokia which specifies which alternative identifier attribute
-we are using to do the matching.
+In order to perform the matching, we create a QPlaceMatchRequest and assign it the search results from the origin manager. The QPlaceMatchRequest will be used on the destination manager to return corresponding places. We also specify matching parameters which are key value pairs. As mentioned previously, this can vary depending on the manager but typically the key is QPlaceMatchRequest::AlternativeId to indicate we are matching by alternative id, the value in this case would be x\_id\_nokia which specifies which alternative identifier attribute we are using to do the matching.
 
 .. code:: cpp
 
@@ -526,117 +351,65 @@ we are using to do the matching.
         matchReply = 0;
     }
 
-.. rubric:: Classes in Places
-   :name: classes-in-places
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QPlace                                                                                                                                                 | Represents a set of data about a place                                                                                                                 |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QPlaceAttribute                                                                                                                                        | Represents generic attribute information about a place                                                                                                 |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QPlaceCategory                                                                                                                                         | Represents a category that a QPlace can be associated with                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QPlaceContactDetail                                                                                                                                    | Represents a contact detail such as a phone number or website url                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QPlaceContent                                                                                                                                          | Serves as the base class for rich content types                                                                                                        |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QPlaceEditorial                                                                                                                                        | Represents a publisher's article describing a place                                                                                                    |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QPlaceIcon                                                                                                                                             | Represents an icon                                                                                                                                     |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QPlaceImage                                                                                                                                            | Represents a reference to an image                                                                                                                     |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QPlaceProposedSearchResult                                                                                                                             | Represents a search result containing a proposed search                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QPlaceRatings                                                                                                                                          | Holds rating information about a place                                                                                                                 |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QPlaceResult                                                                                                                                           | Represents a search result containing a place                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QPlaceReview                                                                                                                                           | Represents a review of a place                                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QPlaceSearchResult                                                                                                                                     | The base class for search results                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QPlaceSupplier                                                                                                                                         | Represents a supplier of a place or content associated with a place                                                                                    |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QPlaceUser                                                                                                                                             | Represents an individual user                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. rubric:: Data Classes
-   :name: data-classes
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QPlaceContentRequest                                                                                                                                   | Represents the parameters of a content request                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QPlaceMatchRequest                                                                                                                                     | Used to find places from one manager that match those from another. It represents a set of request parameters                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QPlaceSearchRequest                                                                                                                                    | Represents the set of parameters for a search request                                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------+--------------------------------------+
-| QPlace                               | Represents a set of data about a     |
-|                                      | place                                |
-+--------------------------------------+--------------------------------------+
-| QPlaceAttribute                      | Represents generic attribute         |
-|                                      | information about a place            |
-+--------------------------------------+--------------------------------------+
-| QPlaceCategory                       | Represents a category that a QPlace  |
-|                                      | can be associated with               |
-+--------------------------------------+--------------------------------------+
-| QPlaceContactDetail                  | Represents a contact detail such as  |
-|                                      | a phone number or website url        |
-+--------------------------------------+--------------------------------------+
-| QPlaceContent                        | Serves as the base class for rich    |
-|                                      | content types                        |
-+--------------------------------------+--------------------------------------+
-| QPlaceEditorial                      | Represents a publisher's article     |
-|                                      | describing a place                   |
-+--------------------------------------+--------------------------------------+
-| QPlaceIcon                           | Represents an icon                   |
-+--------------------------------------+--------------------------------------+
-| QPlaceImage                          | Represents a reference to an image   |
-+--------------------------------------+--------------------------------------+
-| QPlaceProposedSearchResult           | Represents a search result           |
-|                                      | containing a proposed search         |
-+--------------------------------------+--------------------------------------+
-| QPlaceRatings                        | Holds rating information about a     |
-|                                      | place                                |
-+--------------------------------------+--------------------------------------+
-| QPlaceResult                         | Represents a search result           |
-|                                      | containing a place                   |
-+--------------------------------------+--------------------------------------+
-| QPlaceReview                         | Represents a review of a place       |
-+--------------------------------------+--------------------------------------+
-| QPlaceSearchResult                   | The base class for search results    |
-+--------------------------------------+--------------------------------------+
-| QPlaceSupplier                       | Represents a supplier of a place or  |
-|                                      | content associated with a place      |
-+--------------------------------------+--------------------------------------+
-| QPlaceUser                           | Represents an individual user        |
-+--------------------------------------+--------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QPlaceContentReply                                                                                                                                     | Manages a content retrieval operation started by an instance of QPlaceManager                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QPlaceDetailsReply                                                                                                                                     | Manages a place details fetch operation started by an instance of QPlaceManager                                                                        |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QPlaceIdReply                                                                                                                                          | Manages operations which return an identifier such as saving and removal operations of places and categories                                           |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QPlaceMatchReply                                                                                                                                       | Manages a place matching operation started by an instance of QPlaceManager                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QPlaceReply                                                                                                                                            | Manages an operation started by an instance of QPlaceManager and serves as a base class for more specialized replies                                   |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QPlaceSearchReply                                                                                                                                      | Manages a place search operation started by an instance of QPlaceManager                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QPlaceSearchSuggestionReply                                                                                                                            | Manages a search suggestion operation started by an instance of QPlaceManager                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. rubric:: Request Classes
-   :name: request-classes
-
-+--------------------------------------+--------------------------------------+
-| QPlaceContentRequest                 | Represents the parameters of a       |
-|                                      | content request                      |
-+--------------------------------------+--------------------------------------+
-| QPlaceMatchRequest                   | Used to find places from one manager |
-|                                      | that match those from another. It    |
-|                                      | represents a set of request          |
-|                                      | parameters                           |
-+--------------------------------------+--------------------------------------+
-| QPlaceSearchRequest                  | Represents the set of parameters for |
-|                                      | a search request                     |
-+--------------------------------------+--------------------------------------+
-
-       \        
-.. rubric:: Reply classes
-   :name: reply-classes
-
-+--------------------------------------+--------------------------------------+
-| QPlaceContentReply                   | Manages a content retrieval          |
-|                                      | operation started by an instance of  |
-|                                      | QPlaceManager                        |
-+--------------------------------------+--------------------------------------+
-| QPlaceDetailsReply                   | Manages a place details fetch        |
-|                                      | operation started by an instance of  |
-|                                      | QPlaceManager                        |
-+--------------------------------------+--------------------------------------+
-| QPlaceIdReply                        | Manages operations which return an   |
-|                                      | identifier such as saving and        |
-|                                      | removal operations of places and     |
-|                                      | categories                           |
-+--------------------------------------+--------------------------------------+
-| QPlaceMatchReply                     | Manages a place matching operation   |
-|                                      | started by an instance of            |
-|                                      | QPlaceManager                        |
-+--------------------------------------+--------------------------------------+
-| QPlaceReply                          | Manages an operation started by an   |
-|                                      | instance of QPlaceManager and serves |
-|                                      | as a base class for more specialized |
-|                                      | replies                              |
-+--------------------------------------+--------------------------------------+
-| QPlaceSearchReply                    | Manages a place search operation     |
-|                                      | started by an instance of            |
-|                                      | QPlaceManager                        |
-+--------------------------------------+--------------------------------------+
-| QPlaceSearchSuggestionReply          | Manages a search suggestion          |
-|                                      | operation started by an instance of  |
-|                                      | QPlaceManager                        |
-+--------------------------------------+--------------------------------------+
-
-.. rubric:: Manager Classes
-   :name: manager-classes
-
-+--------------------------------------+--------------------------------------+
-| QPlaceManager                        | The interface which allows clients   |
-|                                      | to access places stored in a         |
-|                                      | particular backend                   |
-+--------------------------------------+--------------------------------------+
-| QPlaceManagerEngine                  | Interface for implementers of        |
-|                                      | QGeoServiceProvider plugins who want |
-|                                      | to provide access to place           |
-|                                      | functionality                        |
-+--------------------------------------+--------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QPlaceManager                                                                                                                                          | The interface which allows clients to access places stored in a particular backend                                                                     |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QPlaceManagerEngine                                                                                                                                    | Interface for implementers of QGeoServiceProvider plugins who want to provide access to place functionality                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
 

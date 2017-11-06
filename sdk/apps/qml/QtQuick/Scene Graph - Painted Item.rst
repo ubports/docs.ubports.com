@@ -1,35 +1,18 @@
 .. _sdk_qtquick_scene_graph_-_painted_item:
+
 QtQuick Scene Graph - Painted Item
 ==================================
 
 
+The Painted Item example shows how to use the QML Scene Graph framework to implement custom scenegraph items using QPainter.
 
-The Painted Item example shows how to use the QML Scene Graph framework
-to implement custom scenegraph items using QPainter.
+The QQuickPaintedItem class is a class derived from QQuickItem for implementing custom QML Scene Graph items using the QPainter interfaces.
 
-|image0|
+The example consists of an item class, a plugin class and a QML file to use this plugin. The ``TextBalloon`` class represents the individual text balloons extending QQuickPaintedItem, the ``TextBalloonPlugin`` class represents the skeleton code for a Qt Quick plugin and the ``textballoons.qml`` file is used to load the plugin and display the text balloons.
 
-The QQuickPaintedItem class is a class derived from QQuickItem for
-implementing custom QML Scene Graph items using the QPainter interfaces.
+We will focus on the ``TextBalloon`` class first and continue with the ``textballoons.qml`` file. For an example on how to implement a `Qt Quick </sdk/apps/qml/QtQuick/qtquick-index/>`_  plugin please look at Writing an Extension Plugin
 
-The example consists of an item class, a plugin class and a QML file to
-use this plugin. The ``TextBalloon`` class represents the individual
-text balloons extending QQuickPaintedItem, the ``TextBalloonPlugin``
-class represents the skeleton code for a Qt Quick plugin and the
-``textballoons.qml`` file is used to load the plugin and display the
-text balloons.
-
-We will focus on the ``TextBalloon`` class first and continue with the
-``textballoons.qml`` file. For an example on how to implement a `Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-index/>`_  plugin please look at
-Writing an Extension Plugin
-
-.. rubric:: TextBalloon Class Declaration
-   :name: textballoon-class-declaration
-
-The ``TextBalloon`` class inherits from QQuickPaintedItem.
-QQuickPaintedItem is the base class for all QPainter based items in the
-QML Scene Graph framework.
+The ``TextBalloon`` class inherits from QQuickPaintedItem. QQuickPaintedItem is the base class for all QPainter based items in the QML Scene Graph framework.
 
 .. code:: cpp
 
@@ -48,14 +31,9 @@ QML Scene Graph framework.
             void rightAlignedChanged();
     };
 
-To implement a QQuickPaintedItem you must implement QQuickPaintedIem's
-pure virtual function paint() which implements the painting of the type.
+To implement a QQuickPaintedItem you must implement QQuickPaintedIem's pure virtual function paint() which implements the painting of the type.
 
-.. rubric:: TextBalloon Class Definition
-   :name: textballoon-class-definition
-
-We have to be sure to initialize the rightAligned property for a
-TextBalloon item.
+We have to be sure to initialize the rightAligned property for a TextBalloon item.
 
 .. code:: cpp
 
@@ -65,9 +43,7 @@ TextBalloon item.
     {
     }
 
-Then we implement the ``paint()`` function which is automatically called
-by the Scene Graph framework to paint the contents of the item. The
-function paints the item in local coordinates.
+Then we implement the ``paint()`` function which is automatically called by the Scene Graph framework to paint the contents of the item. The function paints the item in local coordinates.
 
 .. code:: cpp
 
@@ -98,20 +74,9 @@ function paints the item in local coordinates.
         }
     }
 
-We start with setting the pen and brush on the item to define the look
-of the item. After that we start drawing. Note that the
-contentsBoundingRect() item is called to draw depending on the size of
-the item. The rectangle returned by the contentsBoundingRect() function
-is the size of the item as defined in the QML file.
+We start with setting the pen and brush on the item to define the look of the item. After that we start drawing. Note that the contentsBoundingRect() item is called to draw depending on the size of the item. The rectangle returned by the contentsBoundingRect() function is the size of the item as defined in the QML file.
 
-.. rubric:: Textballoons.qml File
-   :name: textballoons-qml-file
-
-The Interface consists of two main parts. The scrollable area with the
-textballoons and the controls button to add new balloons.
-
-.. rubric:: BalloonView
-   :name: balloonview
+The Interface consists of two main parts. The scrollable area with the textballoons and the controls button to add new balloons.
 
 .. code:: qml
 
@@ -140,16 +105,7 @@ textballoons and the controls button to add new balloons.
         width: parent.width
     }
 
-The balloonModel contains two types at application start which will be
-displayed by the
-`balloonView </sdk/apps/qml/QtQuick/customitems-painteditem/#balloonview>`_ .
-The
-`balloonView </sdk/apps/qml/QtQuick/customitems-painteditem/#balloonview>`_ 
-alernates the TextBalloon delegate items between left-aligned and
-right-aligned.
-
-.. rubric:: Controls
-   :name: controls
+The balloonModel contains two types at application start which will be displayed by the `balloonView </sdk/apps/qml/QtQuick/customitems-painteditem/#balloonview>`_ . The `balloonView </sdk/apps/qml/QtQuick/customitems-painteditem/#balloonview>`_  alernates the TextBalloon delegate items between left-aligned and right-aligned.
 
 .. code:: qml
 
@@ -182,10 +138,7 @@ right-aligned.
         }
     }
 
-The controls part of the UI contains a rectangle with a
-:ref:`MouseArea <sdk_qtquick_mousearea>` which changes color when the mouse
-hovers over it. This control 'button' adds a new object to the end of
-the model with a random width.
+The controls part of the UI contains a rectangle with a :ref:`MouseArea <sdk_qtquick_mousearea>` which changes color when the mouse hovers over it. This control 'button' adds a new object to the end of the model with a random width.
 
 Files:
 
@@ -196,6 +149,4 @@ Files:
 -  customitems/painteditem/painteditem.pro
 -  customitems/painteditem/painteditem.qrc
 -  customitems/painteditem/TextBalloonPlugin/qmldir
-
-.. |image0| image:: /media/sdk/apps/qml/qtquick-customitems-painteditem-example/images/declarative-textballoons_example.png
 

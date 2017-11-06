@@ -1,4 +1,5 @@
 .. _sdk_qtquick_xmllistmodel_xmlrole:
+
 QtQuick.XmlListModel XmlRole
 ============================
 
@@ -11,12 +12,9 @@ For specifying a role to an XmlListModel
 Properties
 ----------
 
--  `isKey </sdk/apps/qml/QtQuick/XmlListModel.XmlRole/_isKey-prop>`_ 
-   : bool
--  `name </sdk/apps/qml/QtQuick/XmlListModel.XmlRole/_name-prop>`_ 
-   : string
--  `query </sdk/apps/qml/QtQuick/XmlListModel.XmlRole/_query-prop>`_ 
-   : string
+-  `isKey </sdk/apps/qml/QtQuick/XmlListModel.XmlRole/#isKey-prop>`_  : bool
+-  `name </sdk/apps/qml/QtQuick/XmlListModel.XmlRole/#name-prop>`_  : string
+-  `query </sdk/apps/qml/QtQuick/XmlListModel.XmlRole/#query-prop>`_  : string
 
 Detailed Description
 --------------------
@@ -26,34 +24,25 @@ Detailed Description
 Property Documentation
 ----------------------
 
-.. _sdk_qtquick_xmllistmodel_xmlrole_isKey-prop:
+.. _sdk_qtquick_xmllistmodel_xmlrole_isKey:
 
-+--------------------------------------------------------------------------+
-|        \ isKey : bool                                                    |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| isKey : bool                                                                                                                                                                                                                                                                                                 |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Defines whether this is a key role. Key roles are used to determine
-whether a set of values should be updated or added to the XML list model
-when
-`XmlListModel::reload() </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel/#reload-method>`_ 
-is called.
+Defines whether this is a key role. Key roles are used to determine whether a set of values should be updated or added to the XML list model when `XmlListModel::reload() </sdk/apps/qml/QtQuick/XmlListModel.XmlListModel/#reload-method>`_  is called.
 
-**See also**
-`XmlListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#xmllistmodel>`_ .
+**See also** `XmlListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#xmllistmodel>`_ .
 
-| 
+.. _sdk_qtquick_xmllistmodel_xmlrole_name:
 
-.. _sdk_qtquick_xmllistmodel_xmlrole_name-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| name : string                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ name : string                                                   |
-+--------------------------------------------------------------------------+
+The name for the role. This name is used to access the model data for this role.
 
-The name for the role. This name is used to access the model data for
-this role.
-
-For example, the following model has a role named "title", which can be
-accessed from the view's delegate:
+For example, the following model has a role named "title", which can be accessed from the view's delegate:
 
 .. code:: qml
 
@@ -73,16 +62,13 @@ accessed from the view's delegate:
         delegate: Text { text: title }
     }
 
-| 
+.. _sdk_qtquick_xmllistmodel_xmlrole_query:
 
-.. _sdk_qtquick_xmllistmodel_xmlrole_query-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| query : string                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ query : string                                                  |
-+--------------------------------------------------------------------------+
-
-The relative XPath expression query for this role. The query must be
-relative; it cannot start with a '/'.
+The relative XPath expression query for this role. The query must be relative; it cannot start with a '/'.
 
 For example, if there is an XML document like this:
 
@@ -109,9 +95,7 @@ For example, if there is an XML document like this:
         </book>
      </catalog>
 
-Here are some valid XPath expressions for
-`XmlRole </sdk/apps/qml/QtQuick/XmlListModel.XmlRole/>`_  queries on
-this document:
+Here are some valid XPath expressions for `XmlRole </sdk/apps/qml/QtQuick/XmlListModel.XmlRole/>`_  queries on this document:
 
 .. code:: qml
 
@@ -145,7 +129,5 @@ Accessing the model data for the above roles from a delegate:
             Text { text: year }
         }
 
-See the `W3C XPath 2.0 specification <http://www.w3.org/TR/xpath20/>`_ 
-for more information.
+See the `W3C XPath 2.0 specification <http://www.w3.org/TR/xpath20/>`_  for more information.
 
-| 

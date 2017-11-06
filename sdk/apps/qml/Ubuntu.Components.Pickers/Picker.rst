@@ -1,56 +1,40 @@
 .. _sdk_ubuntu_components_pickers_picker:
+
 Ubuntu.Components.Pickers Picker
 ================================
 
 Picker is a slot-machine style value selection component.
 
-+--------------------------------------+--------------------------------------+
-| Import Statement:                    | import Ubuntu.Components.Pickers 1.3 |
-+--------------------------------------+--------------------------------------+
-| Inherits:                            | :ref:`StyledItem <sdk_ubuntu_components_s |
-|                                      | tyleditem>`_                         |
-+--------------------------------------+--------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Import Statement:                                                                                                                                      | import Ubuntu.Components.Pickers 1.3                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Inherits:                                                                                                                                              | :ref:`StyledItem <sdk_ubuntu_components_styleditem>`                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Properties
 ----------
 
--  `circular </sdk/apps/qml/Ubuntu.Components/Pickers.Picker/_circular-prop>`_ 
-   : bool
--  `delegate </sdk/apps/qml/Ubuntu.Components/Pickers.Picker/_delegate-prop>`_ 
-   : Component
--  `itemHeight </sdk/apps/qml/Ubuntu.Components/Pickers.Picker/_itemHeight-prop>`_ 
-   : real
--  `live </sdk/apps/qml/Ubuntu.Components/Pickers.Picker/_live-prop>`_ 
-   : bool
--  `model </sdk/apps/qml/Ubuntu.Components/Pickers.Picker/_model-prop>`_ 
-   : var
--  `moving </sdk/apps/qml/Ubuntu.Components/Pickers.Picker/_moving-prop>`_ 
-   : bool
--  `selectedIndex </sdk/apps/qml/Ubuntu.Components/Pickers.Picker/_selectedIndex-prop>`_ 
-   : int
+-  `circular </sdk/apps/qml/Ubuntu.Components/Pickers.Picker/#circular-prop>`_  : bool
+-  `delegate </sdk/apps/qml/Ubuntu.Components/Pickers.Picker/#delegate-prop>`_  : Component
+-  `itemHeight </sdk/apps/qml/Ubuntu.Components/Pickers.Picker/#itemHeight-prop>`_  : real
+-  `live </sdk/apps/qml/Ubuntu.Components/Pickers.Picker/#live-prop>`_  : bool
+-  `model </sdk/apps/qml/Ubuntu.Components/Pickers.Picker/#model-prop>`_  : var
+-  `moving </sdk/apps/qml/Ubuntu.Components/Pickers.Picker/#moving-prop>`_  : bool
+-  `selectedIndex </sdk/apps/qml/Ubuntu.Components/Pickers.Picker/#selectedIndex-prop>`_  : int
 
 Methods
 -------
 
--  `positionViewAtIndex </sdk/apps/qml/Ubuntu.Components/Pickers.Picker/_positionViewAtIndex-method>`_ \ (*index*)
+-  `positionViewAtIndex </sdk/apps/qml/Ubuntu.Components/Pickers.Picker/#positionViewAtIndex-method>`_ \ (*index*)
 
 Detailed Description
 --------------------
 
-The Picker lists the elements specified by the
-`model </sdk/apps/qml/Ubuntu.Components/Pickers.Picker/#model-prop>`_ 
-using the
-`delegate </sdk/apps/qml/Ubuntu.Components/Pickers.Picker/#delegate-prop>`_ 
-vertically using a slot-machine tumbler-like list. The selected item is
-always the one in the center of the component, and it is represented by
-the
-`selectedIndex </sdk/apps/qml/Ubuntu.Components/Pickers.Picker/#selectedIndex-prop>`_ 
-property.
+The Picker lists the elements specified by the `model </sdk/apps/qml/Ubuntu.Components/Pickers.Picker/#model-prop>`_  using the `delegate </sdk/apps/qml/Ubuntu.Components/Pickers.Picker/#delegate-prop>`_  vertically using a slot-machine tumbler-like list. The selected item is always the one in the center of the component, and it is represented by the `selectedIndex </sdk/apps/qml/Ubuntu.Components/Pickers.Picker/#selectedIndex-prop>`_  property.
 
 The elements can be either in a circular list or in a normal list.
 
-Delegates must be composed using
-`PickerDelegate </sdk/apps/qml/Ubuntu.Components/Pickers.PickerDelegate/>`_ .
+Delegates must be composed using `PickerDelegate </sdk/apps/qml/Ubuntu.Components/Pickers.PickerDelegate/>`_ .
 
 Example:
 
@@ -72,11 +56,7 @@ Example:
         }
     }
 
-**Note**: the
-`selectedIndex </sdk/apps/qml/Ubuntu.Components/Pickers.Picker/#selectedIndex-prop>`_ 
-must be set explicitly to the desired index if the model is set, filled
-or changed after the component is complete. In the following example the
-selected item must be set after the model is set.
+**Note**: the `selectedIndex </sdk/apps/qml/Ubuntu.Components/Pickers.Picker/#selectedIndex-prop>`_  must be set explicitly to the desired index if the model is set, filled or changed after the component is complete. In the following example the selected item must be set after the model is set.
 
 .. code:: qml
 
@@ -101,116 +81,80 @@ selected item must be set after the model is set.
 Known issues
 ^^^^^^^^^^^^
 
--  [1] Circular picker does not react on touch generated flicks (on
-   touch enabled devices) when nested into a Flickable -
-   https://bugreports.qt-project.org/browse/QTBUG-30840
--  [2] Circular picker sets
-   `selectedIndex </sdk/apps/qml/Ubuntu.Components/Pickers.Picker/#selectedIndex-prop>`_ 
-   to 0 when the model is cleared, contrary to linear one, which sets it
-   to -1 - https://bugreports.qt-project.org/browse/QTBUG-35400
+-  [1] Circular picker does not react on touch generated flicks (on touch enabled devices) when nested into a Flickable - https://bugreports.qt-project.org/browse/QTBUG-30840
+-  [2] Circular picker sets `selectedIndex </sdk/apps/qml/Ubuntu.Components/Pickers.Picker/#selectedIndex-prop>`_  to 0 when the model is cleared, contrary to linear one, which sets it to -1 - https://bugreports.qt-project.org/browse/QTBUG-35400
 
 Property Documentation
 ----------------------
 
-.. _sdk_ubuntu_components_pickers_picker_circular-prop:
+.. _sdk_ubuntu_components_pickers_picker_circular:
 
-+--------------------------------------------------------------------------+
-|        \ circular : bool                                                 |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| circular : bool                                                                                                                                                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Property specifying whether the tumbler list is wrap-around (*true*), or
-normal (*false*). Default value is true.
+Property specifying whether the tumbler list is wrap-around (*true*), or normal (*false*). Default value is true.
 
-| 
+.. _sdk_ubuntu_components_pickers_picker_delegate:
 
-.. _sdk_ubuntu_components_pickers_picker_-prop:
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| delegate : :ref:`Component <sdk_qtqml_component>`                                                                                                                                                                                                                                                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ delegate : `Component <sdk_qtqml_component>`               |
-+--------------------------------------------------------------------------+
+The delegate visualizing the model elements. Any kind of component can be used as delegate, however it is recommended to use `PickerDelegate </sdk/apps/qml/Ubuntu.Components/Pickers.PickerDelegate/>`_ , which integrates selection functionality into the Picker.
 
-The delegate visualizing the model elements. Any kind of component can
-be used as delegate, however it is recommended to use
-`PickerDelegate </sdk/apps/qml/Ubuntu.Components/Pickers.PickerDelegate/>`_ ,
-which integrates selection functionality into the Picker.
+.. _sdk_ubuntu_components_pickers_picker_itemHeight:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| itemHeight : real                                                                                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_ubuntu_components_pickers_picker_itemHeight-prop:
-
-+--------------------------------------------------------------------------+
-|        \ itemHeight : real                                               |
-+--------------------------------------------------------------------------+
-
-The property specifies the defautl height of the PickerDelegates. It is
-recommended to change the delegate height through this property rather
-than changing it from the delegate itself.
+The property specifies the defautl height of the PickerDelegates. It is recommended to change the delegate height through this property rather than changing it from the delegate itself.
 
 This QML property was introduced in Ubuntu.Components.Pickers 1.3.
 
-| 
+.. _sdk_ubuntu_components_pickers_picker_live:
 
-.. _sdk_ubuntu_components_pickers_picker_live-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| live : bool                                                                                                                                                                                                                                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ live : bool                                                     |
-+--------------------------------------------------------------------------+
+Defines whether the `selectedIndex </sdk/apps/qml/Ubuntu.Components/Pickers.Picker/#selectedIndex-prop>`_  should be updated while the tumbler changes the selected item during draggingm or only when the tumbler's motion ends. The default behavior is non-live update.
 
-Defines whether the
-`selectedIndex </sdk/apps/qml/Ubuntu.Components/Pickers.Picker/#selectedIndex-prop>`_ 
-should be updated while the tumbler changes the selected item during
-draggingm or only when the tumbler's motion ends. The default behavior
-is non-live update.
+.. _sdk_ubuntu_components_pickers_picker_model:
 
-| 
-
-.. _sdk_ubuntu_components_pickers_picker_model-prop:
-
-+--------------------------------------------------------------------------+
-|        \ model : `var <http://doc.qt.io/qt-5/qml-var.html>`_             |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| model : `var <http://doc.qt.io/qt-5/qml-var.html>`_                                                                                                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Specifies the model listing the content of the picker.
 
-| 
+.. _sdk_ubuntu_components_pickers_picker_moving:
 
-.. _sdk_ubuntu_components_pickers_picker_[read-only] moving-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| [read-only] moving : bool                                                                                                                                                                                                                                                                                    |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ [read-only] moving : bool                                       |
-+--------------------------------------------------------------------------+
+The property holds whether the picker's view is moving due to the user interaction either by dragging, flicking or due to the manual change of the `selectedIndex </sdk/apps/qml/Ubuntu.Components/Pickers.Picker/#selectedIndex-prop>`_  property.
 
-The property holds whether the picker's view is moving due to the user
-interaction either by dragging, flicking or due to the manual change of
-the
-`selectedIndex </sdk/apps/qml/Ubuntu.Components/Pickers.Picker/#selectedIndex-prop>`_ 
-property.
+.. _sdk_ubuntu_components_pickers_picker_selectedIndex:
 
-| 
-
-.. _sdk_ubuntu_components_pickers_picker_selectedIndex-prop:
-
-+--------------------------------------------------------------------------+
-|        \ selectedIndex : int                                             |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| selectedIndex : int                                                                                                                                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The property holds the index of the selected item
-
-| 
 
 Method Documentation
 --------------------
 
-.. _sdk_ubuntu_components_pickers_picker_positionViewAtIndex-method:
+.. _sdk_ubuntu_components_pickers_picker_positionViewAtIndex:
 
-+--------------------------------------------------------------------------+
-|        \ positionViewAtIndex( *index*)                                   |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| positionViewAtIndex( *index*)                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-The function positions the picker's view to the given index without
-animating the view. The component must be ready when calling the
-function, e.g. to make sure the Picker shows up at the given index, do
-the following:
+The function positions the picker's view to the given index without animating the view. The component must be ready when calling the function, e.g. to make sure the Picker shows up at the given index, do the following:
 
 .. code:: qml
 
@@ -226,4 +170,3 @@ the following:
         Component.onCompleted: positionViewAtIndex(10)
     }
 
-| 

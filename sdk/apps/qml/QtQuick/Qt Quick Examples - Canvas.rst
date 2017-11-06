@@ -1,24 +1,13 @@
 .. _sdk_qtquick_qt_quick_examples_-_canvas:
+
 QtQuick Qt Quick Examples - Canvas
 ==================================
 
 
 
-|image0|
+*Canvas* is a collection of small QML examples relating to the :ref:`Canvas <sdk_qtquick_canvas>` type. Each example is a small QML file emphasizing a particular type or feature.
 
-*Canvas* is a collection of small QML examples relating to the
-:ref:`Canvas <sdk_qtquick_canvas>` type. Each example is a small QML file
-emphasizing a particular type or feature.
-
-.. rubric:: Running the Example
-   :name: running-the-example
-
-To run the example from Qt Creator, open the **Welcome** mode and select
-the example from **Examples**. For more information, visit Building and
-Running an Example.
-
-.. rubric:: Red Heart
-   :name: red-heart
+To run the example from Qt Creator, open the **Welcome** mode and select the example from **Examples**. For more information, visit Building and Running an Example.
 
 *Red heart* uses the bezier curve API to stroke and fill a red heart.
 
@@ -34,11 +23,7 @@ Running an Example.
     ctx.bezierCurveTo(85,25,75,37,75,40);
     ctx.closePath();
 
-.. rubric:: Talk Bubble
-   :name: talk-bubble
-
-*Talk bubble* uses the quadraticCurveTo() API to stroke and fill a
-customized talk bubble:
+*Talk bubble* uses the quadraticCurveTo() API to stroke and fill a customized talk bubble:
 
 .. code:: qml
 
@@ -60,25 +45,11 @@ This example also demonstrates the fillText() API:
     ctx.font = "bold 17px sans-serif";
     ctx.fillText("Qt Quick", 40, 70);
 
-.. rubric:: Squircle
-   :name: squircle
+*Squircle* uses a collection of simple moveTo() and lineTo() path APIs to draw a smooth squircle.
 
-*Squircle* uses a collection of simple moveTo() and lineTo() path APIs
-to draw a smooth squircle.
-
-.. rubric:: Rounded Rectangle
-   :name: rounded-rectangle
-
-*Rounded rectangle* uses a collection of lineTo() and arcTo() path APIs
-to draw a rounded rectangle.
-
-.. rubric:: Smile Face
-   :name: smile-face
+*Rounded rectangle* uses a collection of lineTo() and arcTo() path APIs to draw a rounded rectangle.
 
 *Smile face* uses several paths to draw and fill a smiling face.
-
-.. rubric:: Clip
-   :name: clip
 
 *Clip* uses the clip API to clip a given image.
 
@@ -87,11 +58,7 @@ to draw a rounded rectangle.
     ctx.clip();
     ctx.drawImage(canvas.imagefile, 0, 0);
 
-.. rubric:: Tiger
-   :name: tiger
-
-*Tiger* uses the SVG path API to draw a tiger with a collection of SVG
-path strings.
+*Tiger* uses the SVG path API to draw a tiger with a collection of SVG path strings.
 
 .. code:: qml
 
@@ -124,6 +91,4 @@ Files:
 -  canvas/main.cpp
 -  canvas/canvas.pro
 -  canvas/canvas.qrc
-
-.. |image0| image:: /media/sdk/apps/qml/qtquick-canvas-example/images/qml-canvas-example.png
 

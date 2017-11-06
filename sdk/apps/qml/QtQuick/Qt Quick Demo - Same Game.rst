@@ -1,27 +1,14 @@
 .. _sdk_qtquick_qt_quick_demo_-_same_game:
+
 QtQuick Qt Quick Demo - Same Game
 =================================
 
 
+*Same Game* demonstrates a QML game with custom types and logic written in JavaScript. The game uses various `Qt Quick </sdk/apps/qml/QtQuick/qtquick-index/>`_  features such as particles, animation, and loading images.
 
-*Same Game* demonstrates a QML game with custom types and logic written
-in JavaScript. The game uses various `Qt
-Quick </sdk/apps/qml/QtQuick/qtquick-index/>`_  features such as
-particles, animation, and loading images.
+For more details about different parts of the example, see `QML Advanced Tutorial </sdk/apps/qml/QtQuick/qml-advtutorial/>`_ .
 
-|image0|
-
-|image1|
-
-For more details about different parts of the example, see `QML Advanced
-Tutorial </sdk/apps/qml/QtQuick/qml-advtutorial/>`_ .
-
-.. rubric:: Running the Example
-   :name: running-the-example
-
-To run the example from Qt Creator, open the **Welcome** mode and select
-the example from **Examples**. For more information, visit Building and
-Running an Example.
+To run the example from Qt Creator, open the **Welcome** mode and select the example from **Examples**. For more information, visit Building and Running an Example.
 
 Files:
 
@@ -60,7 +47,4 @@ Files:
 -  demos/samegame/content/qmldir
 
 **See also** QML Applications.
-
-.. |image0| image:: /media/sdk/apps/qml/qtquick-demos-samegame-example/images/qtquick-demo-samegame-med-1.png
-.. |image1| image:: /media/sdk/apps/qml/qtquick-demos-samegame-example/images/qtquick-demo-samegame-med-2.png
 

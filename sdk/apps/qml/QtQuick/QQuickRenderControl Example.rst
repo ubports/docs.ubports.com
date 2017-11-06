@@ -1,10 +1,9 @@
 .. _sdk_qtquick_qquickrendercontrol_example:
+
 QtQuick QQuickRenderControl Example
 ===================================
 
 
-
-|image0|
 
 Files:
 
@@ -14,6 +13,4 @@ Files:
 -  rendercontrol/main.cpp
 -  rendercontrol/rendercontrol.pro
 -  rendercontrol/rendercontrol.qrc
-
-.. |image0| image:: /media/sdk/apps/qml/qtquick-rendercontrol-example/images/rendercontrol-example.jpg
 

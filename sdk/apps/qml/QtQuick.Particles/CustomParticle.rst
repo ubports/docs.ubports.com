@@ -1,23 +1,21 @@
 .. _sdk_qtquick_particles_customparticle:
+
 QtQuick.Particles CustomParticle
 ================================
 
 For specifying shaders to paint particles
 
-+--------------------------------------+--------------------------------------+
-| Import Statement:                    | import QtQuick.Particles 2.0         |
-+--------------------------------------+--------------------------------------+
-| Inherits:                            | `ParticlePainter </sdk/apps/qml/QtQu |
-|                                      | ick/Particles.ParticlePainter/>`_    |
-+--------------------------------------+--------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Import Statement:                                                                                                                                      | import QtQuick.Particles 2.0                                                                                                                           |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Inherits:                                                                                                                                              | `ParticlePainter </sdk/apps/qml/QtQuick/Particles.ParticlePainter/>`_                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Properties
 ----------
 
--  `fragmentShader </sdk/apps/qml/QtQuick/Particles.CustomParticle/_fragmentShader-prop>`_ 
-   : string
--  `vertexShader </sdk/apps/qml/QtQuick/Particles.CustomParticle/_vertexShader-prop>`_ 
-   : string
+-  `fragmentShader </sdk/apps/qml/QtQuick/Particles.CustomParticle/#fragmentShader-prop>`_  : string
+-  `vertexShader </sdk/apps/qml/QtQuick/Particles.CustomParticle/#vertexShader-prop>`_  : string
 
 Detailed Description
 --------------------
@@ -25,32 +23,25 @@ Detailed Description
 Property Documentation
 ----------------------
 
-.. _sdk_qtquick_particles_customparticle_fragmentShader-prop:
+.. _sdk_qtquick_particles_customparticle_fragmentShader:
 
-+--------------------------------------------------------------------------+
-|        \ fragmentShader : string                                         |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| fragmentShader : string                                                                                                                                                                                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-This property holds the fragment shader's GLSL source code. The default
-shader expects the texture coordinate to be passed from the vertex
-shader as "varying highp vec2 qt\_TexCoord0", and it samples from a
-sampler2D named "source".
+This property holds the fragment shader's GLSL source code. The default shader expects the texture coordinate to be passed from the vertex shader as "varying highp vec2 qt\_TexCoord0", and it samples from a sampler2D named "source".
 
-| 
+.. _sdk_qtquick_particles_customparticle_vertexShader:
 
-.. _sdk_qtquick_particles_customparticle_vertexShader-prop:
-
-+--------------------------------------------------------------------------+
-|        \ vertexShader : string                                           |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| vertexShader : string                                                                                                                                                                                                                                                                                        |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the vertex shader's GLSL source code.
 
-The default shader passes the texture coordinate along to the fragment
-shader as "varying highp vec2 qt\_TexCoord0".
+The default shader passes the texture coordinate along to the fragment shader as "varying highp vec2 qt\_TexCoord0".
 
-To aid writing a particle vertex shader, the following GLSL code is
-prepended to your vertex shader:
+To aid writing a particle vertex shader, the following GLSL code is prepended to your vertex shader:
 
 .. code:: cpp
 
@@ -77,10 +68,5 @@ prepended to your vertex shader:
         gl_Position = qt_Matrix * vec4(pos.x, pos.y, 0, 1);
     }
 
-defaultMain() is the same code as in the default shader, you can call
-this for basic particle functions and then add additional variables for
-custom effects. Note that the vertex shader for particles is responsible
-for simulating the movement of particles over time, the particle data
-itself only has the starting position and spawn time.
+defaultMain() is the same code as in the default shader, you can call this for basic particle functions and then add additional variables for custom effects. Note that the vertex shader for particles is responsible for simulating the movement of particles over time, the particle data itself only has the starting position and spawn time.
 
-| 

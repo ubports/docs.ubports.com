@@ -1,22 +1,15 @@
 .. _sdk_qtquick_qml_advanced_tutorial_2_-_populating_the_game_canvas:
+
 QtQuick QML Advanced Tutorial 2 - Populating the Game Canvas
 ============================================================
 
 
 
-.. rubric:: Generating the blocks in JavaScript
-   :name: generating-the-blocks-in-javascript
-
 Now that we've written some types, let's start writing the game.
 
-The first task is to generate the game blocks. Each time the New Game
-button is clicked, the game canvas is populated with a new, random set
-of blocks. Since we need to dynamically generate new blocks for each new
-game, we cannot use :ref:`Repeater <sdk_qtquick_repeater>` to define the
-blocks. Instead, we will create the blocks in JavaScript.
+The first task is to generate the game blocks. Each time the New Game button is clicked, the game canvas is populated with a new, random set of blocks. Since we need to dynamically generate new blocks for each new game, we cannot use :ref:`Repeater <sdk_qtquick_repeater>` to define the blocks. Instead, we will create the blocks in JavaScript.
 
-Here is the JavaScript code for generating the blocks, contained in a
-new file, ``samegame.js``. The code is explained below.
+Here is the JavaScript code for generating the blocks, contained in a new file, ``samegame.js``. The code is explained below.
 
 .. code:: js
 
@@ -75,43 +68,22 @@ new file, ``samegame.js``. The code is explained below.
         return true;
     }
 
-The ``startNewGame()`` function deletes the blocks created in the
-previous game and calculates the number of rows and columns of blocks
-required to fill the game window for the new game. Then, it creates an
-array to store all the game blocks, and calls ``createBlock()`` to
-create enough blocks to fill the game window.
+The ``startNewGame()`` function deletes the blocks created in the previous game and calculates the number of rows and columns of blocks required to fill the game window for the new game. Then, it creates an array to store all the game blocks, and calls ``createBlock()`` to create enough blocks to fill the game window.
 
-The ``createBlock()`` function creates a block from the ``Block.qml``
-file and moves the new block to its position on the game canvas. This
-involves several steps:
+The ``createBlock()`` function creates a block from the ``Block.qml`` file and moves the new block to its position on the game canvas. This involves several steps:
 
--  Qt.createComponent() is called to generate a type from ``Block.qml``.
-   If the component is ready, we can call ``createObject()`` to create
-   an instance of the ``Block`` item.
--  If ``createObject()`` returned null (i.e. if there was an error while
-   loading the object), print the error information.
--  Place the block in its position on the board and set its width and
-   height. Also, store it in the blocks array for future reference.
--  Finally, print error information to the console if the component
-   could not be loaded for some reason (for example, if the file is
-   missing).
+-  Qt.createComponent() is called to generate a type from ``Block.qml``. If the component is ready, we can call ``createObject()`` to create an instance of the ``Block`` item.
+-  If ``createObject()`` returned null (i.e. if there was an error while loading the object), print the error information.
+-  Place the block in its position on the board and set its width and height. Also, store it in the blocks array for future reference.
+-  Finally, print error information to the console if the component could not be loaded for some reason (for example, if the file is missing).
 
-.. rubric:: Connecting JavaScript components to QML
-   :name: connecting-javascript-components-to-qml
-
-Now we need to call the JavaScript code in ``samegame.js`` from our QML
-files. To do this, we add this line to ``samegame.qml`` which imports
-the JavaScript file as a module:
+Now we need to call the JavaScript code in ``samegame.js`` from our QML files. To do this, we add this line to ``samegame.qml`` which imports the JavaScript file as a module:
 
 .. code:: qml
 
     import "samegame.js" as SameGame
 
-This allows us to refer to any functions within ``samegame.js`` using
-"SameGame" as a prefix: for example, ``SameGame.startNewGame()`` or
-``SameGame.createBlock()``. This means we can now connect the New Game
-button's ``onClicked`` handler to the ``startNewGame()`` function, like
-this:
+This allows us to refer to any functions within ``samegame.js`` using "SameGame" as a prefix: for example, ``SameGame.startNewGame()`` or ``SameGame.createBlock()``. This means we can now connect the New Game button's ``onClicked`` handler to the ``startNewGame()`` function, like this:
 
 .. code:: qml
 
@@ -121,13 +93,9 @@ this:
                 onClicked: SameGame.startNewGame()
             }
 
-So, when you click the New Game button, ``startNewGame()`` is called and
-generates a field of blocks, like this:
+So, when you click the New Game button, ``startNewGame()`` is called and generates a field of blocks, like this:
 
-|image0|
-
-Now, we have a screen of blocks, and we can begin to add the game
-mechanics.
+Now, we have a screen of blocks, and we can begin to add the game mechanics.
 
 Files:
 
@@ -137,10 +105,5 @@ Files:
 -  tutorials/samegame/samegame2/samegame.qml
 -  tutorials/samegame/samegame2/samegame2.qmlproject
 
-`QML Advanced Tutorial 1 - Creating the Game Canvas and
-Blocks </sdk/apps/qml/QtQuick/tutorials-samegame-samegame1/>`_  `QML
-Advanced Tutorial 3 - Implementing the Game
-Logic </sdk/apps/qml/QtQuick/tutorials-samegame-samegame3/>`_ 
-
-.. |image0| image:: /media/sdk/apps/qml/qtquick-tutorials-samegame-samegame2-example/images/declarative-adv-tutorial2.png
+`QML Advanced Tutorial 1 - Creating the Game Canvas and Blocks </sdk/apps/qml/QtQuick/tutorials-samegame-samegame1/>`_  `QML Advanced Tutorial 3 - Implementing the Game Logic </sdk/apps/qml/QtQuick/tutorials-samegame-samegame3/>`_ 
 

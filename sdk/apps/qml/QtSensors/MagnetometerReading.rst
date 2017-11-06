@@ -1,87 +1,75 @@
 .. _sdk_qtsensors_magnetometerreading:
+
 QtSensors MagnetometerReading
 =============================
 
-The MagnetometerReading element holds the most recent Magnetometer
-reading.
+The MagnetometerReading element holds the most recent Magnetometer reading.
 
-+--------------------------------------+--------------------------------------+
-| Import Statement:                    | import QtSensors 5.0                 |
-+--------------------------------------+--------------------------------------+
-| Since:                               | QtSensors 5.0                        |
-+--------------------------------------+--------------------------------------+
-| Inherits:                            | :ref:`SensorReading <sdk_qtsensors_sensor |
-|                                      | reading>`_                           |
-+--------------------------------------+--------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Import Statement:                                                                                                                                      | import QtSensors 5.0                                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Since:                                                                                                                                                 | QtSensors 5.0                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Inherits:                                                                                                                                              | :ref:`SensorReading <sdk_qtsensors_sensorreading>`                                                                                                        |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Properties
 ----------
 
--  :ref:`calibrationLevel <sdk_qtsensors_magnetometerreading_calibrationLevel-prop>`
-   : qreal
--  :ref:`x <sdk_qtsensors_magnetometerreading_x-prop>` : qreal
--  :ref:`y <sdk_qtsensors_magnetometerreading_y-prop>` : qreal
--  :ref:`z <sdk_qtsensors_magnetometerreading_z-prop>` : qreal
+-  :ref:`calibrationLevel <sdk_qtsensors_magnetometerreading_calibrationLevel>` : qreal
+-  :ref:`x <sdk_qtsensors_magnetometerreading_x>` : qreal
+-  :ref:`y <sdk_qtsensors_magnetometerreading_y>` : qreal
+-  :ref:`z <sdk_qtsensors_magnetometerreading_z>` : qreal
 
 Detailed Description
 --------------------
 
-The :ref:`MagnetometerReading <sdk_qtsensors_magnetometerreading>` element
-holds the most recent Magnetometer reading.
+The :ref:`MagnetometerReading <sdk_qtsensors_magnetometerreading>` element holds the most recent Magnetometer reading.
 
-This element wraps the QMagnetometerReading class. Please see the
-documentation for QMagnetometerReading for details.
+This element wraps the QMagnetometerReading class. Please see the documentation for QMagnetometerReading for details.
 
 This element cannot be directly created.
 
 Property Documentation
 ----------------------
 
-.. _sdk_qtsensors_magnetometerreading_calibrationLevel-prop:
+.. _sdk_qtsensors_magnetometerreading_calibrationLevel:
 
-+--------------------------------------------------------------------------+
-|        \ calibrationLevel : qreal                                        |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| calibrationLevel : qreal                                                                                                                                                                                                                                                                                     |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the accuracy of the reading.
 
-Please see QMagnetometerReading::calibrationLevel for information about
-this property.
+Please see QMagnetometerReading::calibrationLevel for information about this property.
 
-| 
+.. _sdk_qtsensors_magnetometerreading_x:
 
-.. _sdk_qtsensors_magnetometerreading_x-prop:
-
-+--------------------------------------------------------------------------+
-|        \ x : qreal                                                       |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| x : qreal                                                                                                                                                                                                                                                                                                    |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the raw magnetic flux density on the X axis.
 
 Please see QMagnetometerReading::x for information about this property.
 
-| 
+.. _sdk_qtsensors_magnetometerreading_y:
 
-.. _sdk_qtsensors_magnetometerreading_y-prop:
-
-+--------------------------------------------------------------------------+
-|        \ y : qreal                                                       |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| y : qreal                                                                                                                                                                                                                                                                                                    |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the raw magnetic flux density on the Y axis.
 
 Please see QMagnetometerReading::y for information about this property.
 
-| 
+.. _sdk_qtsensors_magnetometerreading_z:
 
-.. _sdk_qtsensors_magnetometerreading_z-prop:
-
-+--------------------------------------------------------------------------+
-|        \ z : qreal                                                       |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| z : qreal                                                                                                                                                                                                                                                                                                    |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the raw magnetic flux density on the Z axis.
 
 Please see QMagnetometerReading::z for information about this property.
 
-| 

@@ -1,4 +1,5 @@
 .. _sdk_qtquick_pathsvg:
+
 QtQuick PathSvg
 ===============
 
@@ -11,45 +12,34 @@ Defines a path using an SVG path data string
 Properties
 ----------
 
--  :ref:`path <sdk_qtquick_pathsvg_path-prop>` : string
+-  :ref:`path <sdk_qtquick_pathsvg_path>` : string
 
 Detailed Description
 --------------------
 
 The following QML produces the path shown below:
 
-+--------------------------------------+--------------------------------------+
-| |image0|                             | .. code:: qml                        |
-|                                      |                                      |
-|                                      |     Path {                           |
-|                                      |         startX: 50; startY: 50       |
-|                                      |         PathSvg { path: "L 150 50 L  |
-|                                      | 100 150 z" }                         |
-|                                      |     }                                |
-+--------------------------------------+--------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                                                                                                | .. code:: qml                                                                                                                                                  |
+|                                                                                                                                                        |                                                                                                                                                        |
+|                                                                                                                                                        |     Path {                                                                                                                                             |
+|                                                                                                                                                        |         startX: 50; startY: 50                                                                                                                         |
+|                                                                                                                                                        |         PathSvg { path: "L 150 50 L 100 150 z" }                                                                                                       |
+|                                                                                                                                                        |     }                                                                                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-**See also** :ref:`Path <sdk_qtquick_path>`,
-:ref:`PathLine <sdk_qtquick_pathline>`,
-:ref:`PathQuad <sdk_qtquick_pathquad>`,
-:ref:`PathCubic <sdk_qtquick_pathcubic>`,
-:ref:`PathArc <sdk_qtquick_patharc>`, and
-:ref:`PathCurve <sdk_qtquick_pathcurve>`.
+**See also** :ref:`Path <sdk_qtquick_path>`, :ref:`PathLine <sdk_qtquick_pathline>`, :ref:`PathQuad <sdk_qtquick_pathquad>`, :ref:`PathCubic <sdk_qtquick_pathcubic>`, :ref:`PathArc <sdk_qtquick_patharc>`, and :ref:`PathCurve <sdk_qtquick_pathcurve>`.
 
 Property Documentation
 ----------------------
 
-.. _sdk_qtquick_pathsvg_path-prop:
+.. _sdk_qtquick_pathsvg_path:
 
-+--------------------------------------------------------------------------+
-|        \ path : string                                                   |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| path : string                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The SVG path data string specifying the path.
 
-See `W3C SVG Path Data <http://www.w3.org/TR/SVG/paths.html#PathData>`_ 
-for more details on this format.
-
-| 
-
-.. |image0| image:: /mediasdk_qtquick_pathsvgimages/declarative-pathsvg.png
+See `W3C SVG Path Data <http://www.w3.org/TR/SVG/paths.html#PathData>`_  for more details on this format.
 

@@ -1,9 +1,9 @@
 .. _sdk_qtlocation_user:
+
 QtLocation User
 ===============
 
-The User type identifies a user who contributed a particular Place
-content item.
+The User type identifies a user who contributed a particular Place content item.
 
 +---------------------+-------------------------+
 | Import Statement:   | import QtLocation 5.3   |
@@ -14,22 +14,19 @@ content item.
 Properties
 ----------
 
--  :ref:`name <sdk_qtlocation_user_name-prop>` : string
--  :ref:`user <sdk_qtlocation_user_user-prop>` : QPlaceUser
--  :ref:`userId <sdk_qtlocation_user_userId-prop>` : string
+-  :ref:`name <sdk_qtlocation_user_name>` : string
+-  :ref:`user <sdk_qtlocation_user_user>` : QPlaceUser
+-  :ref:`userId <sdk_qtlocation_user_userId>` : string
 
 Detailed Description
 --------------------
 
-Each `Place </sdk/apps/qml/QtLocation/location-cpp-qml/#place>`_ 
-content item has an associated user who contributed the content. This
-type provides information about that user.
+Each `Place </sdk/apps/qml/QtLocation/location-cpp-qml/#place>`_  content item has an associated user who contributed the content. This type provides information about that user.
 
 Example
 -------
 
-The following example shows how to display information about the user
-who submitted an editorial:
+The following example shows how to display information about the user who submitted an editorial:
 
 .. code:: qml
 
@@ -83,40 +80,32 @@ who submitted an editorial:
         }
     }
 
-**See also** :ref:`ImageModel <sdk_qtlocation_imagemodel>`,
-:ref:`ReviewModel <sdk_qtlocation_reviewmodel>`, and
-:ref:`EditorialModel <sdk_qtlocation_editorialmodel>`.
+**See also** :ref:`ImageModel <sdk_qtlocation_imagemodel>`, :ref:`ReviewModel <sdk_qtlocation_reviewmodel>`, and :ref:`EditorialModel <sdk_qtlocation_editorialmodel>`.
 
 Property Documentation
 ----------------------
 
-.. _sdk_qtlocation_user_name-prop:
+.. _sdk_qtlocation_user_name:
 
-+--------------------------------------------------------------------------+
-|        \ name : string                                                   |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| name : string                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the name of a user.
 
-| 
+.. _sdk_qtlocation_user_user:
 
-.. _sdk_qtlocation_user_user-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| user : QPlaceUser                                                                                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ user : QPlaceUser                                               |
-+--------------------------------------------------------------------------+
+For details on how to use this property to interface between C++ and QML see "Interfaces between C++ and QML Code".
 
-For details on how to use this property to interface between C++ and QML
-see "Interfaces between C++ and QML Code".
+.. _sdk_qtlocation_user_userId:
 
-| 
-
-.. _sdk_qtlocation_user_userId-prop:
-
-+--------------------------------------------------------------------------+
-|        \ userId : string                                                 |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| userId : string                                                                                                                                                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the unique identifier of the user.
 
-| 

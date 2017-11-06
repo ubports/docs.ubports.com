@@ -1,10 +1,9 @@
 .. _sdk_qtquick_qt_quick_widgets_example:
+
 QtQuick Qt Quick Widgets Example
 ================================
 
 
-
-|image0|
 
 Files:
 
@@ -12,6 +11,4 @@ Files:
 -  quickwidgets/quickwidget/main.cpp
 -  quickwidgets/quickwidget/quickwidget.pro
 -  quickwidgets/quickwidget/quickwidget.qrc
-
-.. |image0| image:: /media/sdk/apps/qml/qtquick-quickwidgets-quickwidget-example/images/qtquickwidgets-example.png
 

@@ -1,40 +1,32 @@
 .. _sdk_ubuntuui_popover:
+
 UbuntuUI Popover
 ================
 
 
-A Popover is a div containng markup that can pop up and disappear.
-(Unlike a Dialog, Popovers are not full screen.)
+A Popover is a div containng markup that can pop up and disappear. (Unlike a Dialog, Popovers are not full screen.)
 
-A Popoves often contain a List whose items are connected to useful
-JavaScript functions.
+A Popoves often contain a List whose items are connected to useful JavaScript functions.
 
-######Popover Position The Popover's position is set relative to a
-specified base element with the <em>data-gravity="LETTER"</em>
-attribute. LETTER values:
+######Popover Position The Popover's position is set relative to a specified base element with the <em>data-gravity="LETTER"</em> attribute. LETTER values:
 
 -  'n': the base element is above the Popover
 -  's': the base element is below the Popover
--  'e': the base element is to the east of (to the right of) the Popover
-   (in right-to-left locales)
--  'w': the base element is to the west of (to the left of) the Popover
-   (in right-to-left locale)
+-  'e': the base element is to the east of (to the right of) the Popover (in right-to-left locales)
+-  'w': the base element is to the west of (to the left of) the Popover (in right-to-left locale)
 
-**``UbuntuUI.Popover``**\ ( ``elem, id `` )
+**UbuntuUI.Popover**\ (``elem, id``)
 **Parameters:**
 
--  ``elem`` **<String>**
+- ``elem`` **<String>**
 
    -  The element to which the Popover's position is relative
 
--  ``id`` **<ID>**
+- ``id`` **<ID>**
 
    -  The id attribute of the Popover in HTML
 
-.. rubric:: Example
-   :name: example
-
-.. code:: code
+.. code:: html
 
      <p id="popoverBase">Text</p>
          <div class="popover active" data-gravity="n" id="popover">
@@ -50,22 +42,19 @@ attribute. LETTER values:
 
 -  Methods
 
-**``element``**\ ( ``  `` )
+**element**\ ()
 Returns the DOM element associated with the id this widget is bind to.
 
-.. rubric:: Example
-   :name: example-1
-
-.. code:: code
+.. code:: html
 
        var mypopover = UI.popover("popoverid").element();
 
-**``hide``**\ ( ``  `` )
+**hide**\ ()
 Hide a Popover
 
-**``show``**\ ( ``  `` )
+**show**\ ()
 Display a Popover
 
-**``toggle``**\ ( ``  `` )
+**toggle**\ ()
 Toggle show/hide status of a Popover
 

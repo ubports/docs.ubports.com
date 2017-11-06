@@ -1,40 +1,17 @@
 .. _sdk_qtlocation_qml_maps:
+
 QtLocation QML Maps
 ===================
 
 
 
-.. rubric:: Overview
-   :name: overview
+The :ref:`Map <sdk_qtlocation_map>` type allows the display of a map and placing objects within the map. Various points of interest can be defined and added to the map for display. Also the :ref:`Map <sdk_qtlocation_map>` has features to control how the map is displayed. With the Map item you can center the map, zoom, pinch and make the item flickable.
 
-The :ref:`Map <sdk_qtlocation_map>` type allows the display of a map and
-placing objects within the map. Various points of interest can be
-defined and added to the map for display. Also the
-:ref:`Map <sdk_qtlocation_map>` has features to control how the map is
-displayed. With the Map item you can center the map, zoom, pinch and
-make the item flickable.
+The places to be added to the map are `MapItems </sdk/apps/qml/QtLocation/location-maps-qml/#putting-objects-on-a-map-map-overlay-objects>`_ . The item's position is defined by a coordinate which includes latitude, longitude and altitude. The item is then displayed automatically after it is added to the Map. `MapItems </sdk/apps/qml/QtLocation/location-maps-qml/#putting-objects-on-a-map-map-overlay-objects>`_  or :ref:`Map <sdk_qtlocation_map>`.
 
-The places to be added to the map are
-`MapItems </sdk/apps/qml/QtLocation/location-maps-qml/#putting-objects-on-a-map-map-overlay-objects>`_ .
-The item's position is defined by a coordinate which includes latitude,
-longitude and altitude. The item is then displayed automatically after
-it is added to the Map.
-`MapItems </sdk/apps/qml/QtLocation/location-maps-qml/#putting-objects-on-a-map-map-overlay-objects>`_ 
-or :ref:`Map <sdk_qtlocation_map>`.
+All position APIs are part of the QtPositioning module. The basic piece of position information is the coordinate. A coordinate encapsulates data for the latitude, longitude and altitude of the location. Altitude is in meters. It also has a method to determine distance to another coordinate. The coordinate type may also be held within a Location element, this will also have information on a bounding box size to determine sufficient proximity to the location and a location address.
 
-.. rubric:: Position on map
-   :name: position-on-map
-
-All position APIs are part of the QtPositioning module. The basic piece
-of position information is the coordinate. A coordinate encapsulates
-data for the latitude, longitude and altitude of the location. Altitude
-is in meters. It also has a method to determine distance to another
-coordinate. The coordinate type may also be held within a Location
-element, this will also have information on a bounding box size to
-determine sufficient proximity to the location and a location address.
-
-Here is an example of a client that uses a position source to center a
-:ref:`map <sdk_qtlocation_map>` on the current position:
+Here is an example of a client that uses a position source to center a :ref:`map <sdk_qtlocation_map>` on the current position:
 
 .. code:: cpp
 
@@ -54,25 +31,11 @@ Here is an example of a client that uses a position source to center a
         }
     }
 
-.. rubric:: Geocoding
-   :name: geocoding
+`Geocoding <http://en.wikipedia.org/wiki/Geocoding>`_  is the derivation of geographical coordinates (latitude and longitude) from other geographical references to the locations. For example, this can be a street address. Reverse geocoding is also possible with a street address being used to determine a geographical coordinate. Geocoding is performed by using the GeoCodeModel type.
 
-`Geocoding <http://en.wikipedia.org/wiki/Geocoding>`_  is the derivation
-of geographical coordinates (latitude and longitude) from other
-geographical references to the locations. For example, this can be a
-street address. Reverse geocoding is also possible with a street address
-being used to determine a geographical coordinate. Geocoding is
-performed by using the GeoCodeModel type.
+The following code examples are a small part of the ``map`` component in the `Map Viewer (QML) </sdk/apps/qml/QtLocation/mapviewer/>`_  example. The snippets demonstrate the declaration of the :ref:`GeocodeModel <sdk_qtlocation_geocodemodel>` component.
 
-The following code examples are a small part of the ``map`` component in
-the `Map Viewer (QML) </sdk/apps/qml/QtLocation/mapviewer/>`_  example.
-The snippets demonstrate the declaration of the
-:ref:`GeocodeModel <sdk_qtlocation_geocodemodel>` component.
-
-In the snippet we see that the ``geocodeModel`` property contains the
-plugin and two signal handlers. One for changes in status
-(``onStatusChanged`` ) and the other to update the centering of the Map
-object (``onLocationsChanged`` ).
+In the snippet we see that the ``geocodeModel`` property contains the plugin and two signal handlers. One for changes in status (``onStatusChanged`` ) and the other to update the centering of the Map object (``onLocationsChanged`` ).
 
 .. code:: qml
 
@@ -95,11 +58,7 @@ object (``onLocationsChanged`` ).
             delegate: pointDelegate
         }
 
-These geocoding features are called from a higher level piece of code.
-In this snippet we see an ``onGoButtonClicked`` signal handler that
-extracts the address from the user interface and then creates a query
-for the :ref:`GeocodeModel <sdk_qtlocation_geocodemodel>` to process and
-determine the geographical coordinates.
+These geocoding features are called from a higher level piece of code. In this snippet we see an ``onGoButtonClicked`` signal handler that extracts the address from the user interface and then creates a query for the :ref:`GeocodeModel <sdk_qtlocation_geocodemodel>` to process and determine the geographical coordinates.
 
 .. code:: qml
 
@@ -121,53 +80,31 @@ determine the geographical coordinates.
                 map.geocodeModel.update()
             }
 
-.. rubric:: Navigation
-   :name: navigation
+A very important function of the :ref:`Map <sdk_qtlocation_map>` type is navigation from one place to a destination with possible waypoints along the route. The route will be divided up into a series of segments. At the end of each segment is a vertex called a *maneuver*. The *segments* contain information about the time and distance to the end of the segment. The *maneuvers* contain information about what to do next, how to get onto the next segment, if there is one. So a *maneuver* contains navigational information, for example "turn right now".
 
-A very important function of the :ref:`Map <sdk_qtlocation_map>` type is
-navigation from one place to a destination with possible waypoints along
-the route. The route will be divided up into a series of segments. At
-the end of each segment is a vertex called a *maneuver*. The *segments*
-contain information about the time and distance to the end of the
-segment. The *maneuvers* contain information about what to do next, how
-to get onto the next segment, if there is one. So a *maneuver* contains
-navigational information, for example "turn right now".
+To find a suitable route we will need to use a :ref:`RouteQuery <sdk_qtlocation_routequery>` to define the selection criteria and adding any required waypoints. The :ref:`RouteModel <sdk_qtlocation_routemodel>` should return a list of :ref:`RouteSegment <sdk_qtlocation_routesegment>`\ s that defines the route to the destination complete with navigation advice at the joins between segments, called :ref:`RouteManeuver <sdk_qtlocation_routemaneuver>`\ s
 
-To find a suitable route we will need to use a
-:ref:`RouteQuery <sdk_qtlocation_routequery>` to define the selection
-criteria and adding any required waypoints. The
-:ref:`RouteModel <sdk_qtlocation_routemodel>` should return a list of
-:ref:`RouteSegment <sdk_qtlocation_routesegment>`\ s that defines the route
-to the destination complete with navigation advice at the joins between
-segments, called :ref:`RouteManeuver <sdk_qtlocation_routemaneuver>`\ s
-
-There are many options that you can add to the query to narrow the
-criteria. The :ref:`RouteQuery <sdk_qtlocation_routequery>` properties can
-include
+There are many options that you can add to the query to narrow the criteria. The :ref:`RouteQuery <sdk_qtlocation_routequery>` properties can include
 
 +----------------------------------------------------------------------------------------+----------------------------------------------------------+
-| :ref:`numberAlternativeRoutes <sdk_qtlocation_routequery#numberAlternativeRoutes-prop>`| The number of alternative routes                         |
+| :ref:`numberAlternativeRoutes <sdk_qtlocation_routequery_numberAlternativeRoutes>`   | The number of alternative routes                           |
 +----------------------------------------------------------------------------------------+----------------------------------------------------------+
-| :ref:`travelModes <sdk_qtlocation_routequery#travelModes-prop>`                        | Travel modes                                             |
+| :ref:`travelModes <sdk_qtlocation_routequery_travelModes>`                           | Travel modes                                               |
 +----------------------------------------------------------------------------------------+----------------------------------------------------------+
-| :ref:`routeOptimizations <sdk_qtlocation_routequery#routeOptimizations-prop>`          | Required route optimizations                             |
+| :ref:`routeOptimizations <sdk_qtlocation_routequery_routeOptimizations>`             | Required route optimizations                               |
 +----------------------------------------------------------------------------------------+----------------------------------------------------------+
-| :ref:`segmentDetail <sdk_qtlocation_routequery#segmentDetail-prop>`                    | Level of detail in segments                              |
+| :ref:`segmentDetail <sdk_qtlocation_routequery_segmentDetail>`                       | Level of detail in segments                                |
 +----------------------------------------------------------------------------------------+----------------------------------------------------------+
-| :ref:`maneuverDetail <sdk_qtlocation_routequery#maneuverDetail-prop>`                  | Level of detail in maneuvers between segments            |
+| :ref:`maneuverDetail <sdk_qtlocation_routequery_maneuverDetail>`                     | Level of detail in maneuvers between segments              |
 +----------------------------------------------------------------------------------------+----------------------------------------------------------+
-| :ref:`waypoints <sdk_qtlocation_routequery#waypoints-prop>`                            | A list of waypoints                                      |
+| :ref:`waypoints <sdk_qtlocation_routequery_waypoints>`                               | A list of waypoints                                        |
 +----------------------------------------------------------------------------------------+----------------------------------------------------------+
-| :ref:`excludedAreas <sdk_qtlocation_routequery#excludedAreas-prop>`                    | A list of excluded areas that the route must not cross   |
+| :ref:`excludedAreas <sdk_qtlocation_routequery_excludedAreas>`                       | A list of excluded areas that the route must not cross     |
 +----------------------------------------------------------------------------------------+----------------------------------------------------------+
-| :ref:`featureTypes <sdk_qtlocation_routequery#featureTypes-prop>`                      | Relevant map features, for example highway, ferry        |
+| :ref:`featureTypes <sdk_qtlocation_routequery_featureTypes>`                         | Relevant map features, for example highway, ferry          |
 +----------------------------------------------------------------------------------------+----------------------------------------------------------+
 
-In the following example a default
-:ref:`RouteQuery <sdk_qtlocation_routequery>` is declared, later to be
-defined by some user input, and used in ``routeModel`` as the query. The
-``routeInfoModel`` is a ListModel that can be updated using an
-``update()`` function that we will look at later.
+In the following example a default :ref:`RouteQuery <sdk_qtlocation_routequery>` is declared, later to be defined by some user input, and used in ``routeModel`` as the query. The ``routeInfoModel`` is a ListModel that can be updated using an ``update()`` function that we will look at later.
 
 .. code:: qml
 
@@ -196,11 +133,7 @@ defined by some user input, and used in ``routeModel`` as the query. The
             }
         }
 
-The user enters, via a dialog, some information such as the starting
-point of the route, some waypoints and the destination. All of these
-locations are waypoints so the locations from start to finish will be
-entered as a sequence of waypoints. Then other query properties can be
-set that may be specific to this trip.
+The user enters, via a dialog, some information such as the starting point of the route, some waypoints and the destination. All of these locations are waypoints so the locations from start to finish will be entered as a sequence of waypoints. Then other query properties can be set that may be specific to this trip.
 
 .. code:: qml
 
@@ -223,12 +156,7 @@ set that may be specific to this trip.
                 map.center = startCoordinate;
         }
 
-The ``routeInfoModel`` ListModel is used to grab the results of the
-query and construct a suitable list for display. The ListModel
-``routeInfoModel`` contains an ``update()`` function that loops through
-the segments extracting the segment length, instruction text and
-distance to the next instruction. The extracted data is formatted for
-display as it is retrieved.
+The ``routeInfoModel`` ListModel is used to grab the results of the query and construct a suitable list for display. The ListModel ``routeInfoModel`` contains an ``update()`` function that loops through the segments extracting the segment length, instruction text and distance to the next instruction. The extracted data is formatted for display as it is retrieved.
 
 .. code:: qml
 
@@ -256,18 +184,11 @@ display as it is retrieved.
             autoFitViewport: true
         }
 
-For more information on the example see the `Map Viewer
-(QML) </sdk/apps/qml/QtLocation/mapviewer/>`_  example.
+For more information on the example see the `Map Viewer (QML) </sdk/apps/qml/QtLocation/mapviewer/>`_  example.
 
-.. rubric:: Zoom, Pinch and Flickable
-   :name: zoom-pinch-and-flickable
+The :ref:`Map <sdk_qtlocation_map>` item also supports user interface interactions with the map using tactile and mouse gestures. That is features such as swiping to pan, pinching to zoom.
 
-The :ref:`Map <sdk_qtlocation_map>` item also supports user interface
-interactions with the map using tactile and mouse gestures. That is
-features such as swiping to pan, pinching to zoom.
-
-Enabling and configuring pinch and flickable is easy within the
-:ref:`Map <sdk_qtlocation_map>` type.
+Enabling and configuring pinch and flickable is easy within the :ref:`Map <sdk_qtlocation_map>` type.
 
 .. code:: qml
 
@@ -283,83 +204,47 @@ Enabling and configuring pinch and flickable is easy within the
         gesture.enabled: true
     }
 
-Zoom can also be controlled by other objects like sliders, as shown in
-the example, by implementing the ``onValueChanged`` handler to update
-the Map :ref:`zoomLevel <sdk_qtlocation_map#zoomLevel-prop>`.
+Zoom can also be controlled by other objects like sliders, as shown in the example, by implementing the ``onValueChanged`` handler to update the Map :ref:`zoomLevel <sdk_qtlocation_map_zoomLevel>`.
 
-.. rubric:: Types
-   :name: types
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`Map <sdk_qtlocation_map>`                                                                                                                           | Type displays a map                                                                                                                                    |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`MapCircle <sdk_qtlocation_mapcircle>`                                                                                                               | Type displays a geographic circle on a Map                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`MapGestureArea <sdk_qtlocation_mapgesturearea>`                                                                                                     | Type provides Map gesture interaction                                                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`MapItemView <sdk_qtlocation_mapitemview>`                                                                                                           | Used to populate Map from a model                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`MapPinchEvent <sdk_qtlocation_mappinchevent>`                                                                                                       | Type provides basic information about pinch event                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`MapPolygon <sdk_qtlocation_mappolygon>`                                                                                                             | Type displays a polygon on a Map                                                                                                                       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`MapPolyline <sdk_qtlocation_mappolyline>`                                                                                                           | Type displays a polyline on a map                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`MapQuickItem <sdk_qtlocation_mapquickitem>`                                                                                                         | Type displays an arbitrary Qt Quick object on a Map                                                                                                    |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`MapRectangle <sdk_qtlocation_maprectangle>`                                                                                                         | Type displays a rectangle on a Map                                                                                                                     |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`MapRoute <sdk_qtlocation_maproute>`                                                                                                                 | Type displays a Route on a Map                                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`MapType <sdk_qtlocation_maptype>`                                                                                                                   | Type holds information about a map type                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. rubric:: Maps
-   :name: maps
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`GeocodeModel <sdk_qtlocation_geocodemodel>`                                                                                                         | Type provides support for searching operations related to geographic information                                                                       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------+--------------------------------------+
-| :ref:`Map <sdk_qtlocation_map>`      | Type displays a map                  |
-+--------------------------------------+--------------------------------------+
-| :ref:`MapCircle <sdk_qtlocation_mapcircle | Type displays a geographic circle on |
-| >`_                                  | a Map                                |
-+--------------------------------------+--------------------------------------+
-| :ref:`MapGestureArea <sdk_qtlocation_mapg | Type provides Map gesture            |
-| esturearea>`_                        | interaction                          |
-+--------------------------------------+--------------------------------------+
-| :ref:`MapItemView <sdk_qtlocation_mapitem | Used to populate Map from a model    |
-| view>`_                              |                                      |
-+--------------------------------------+--------------------------------------+
-| :ref:`MapPinchEvent <sdk_qtlocation_mappi | Type provides basic information      |
-| nchevent>`_                          | about pinch event                    |
-+--------------------------------------+--------------------------------------+
-| :ref:`MapPolygon <sdk_qtlocation_mappolyg | Type displays a polygon on a Map     |
-| on>`_                                |                                      |
-+--------------------------------------+--------------------------------------+
-| :ref:`MapPolyline <sdk_qtlocation_mappoly | Type displays a polyline on a map    |
-| line>`_                              |                                      |
-+--------------------------------------+--------------------------------------+
-| :ref:`MapQuickItem <sdk_qtlocation_mapqui | Type displays an arbitrary Qt Quick  |
-| ckitem>`_                            | object on a Map                      |
-+--------------------------------------+--------------------------------------+
-| :ref:`MapRectangle <sdk_qtlocation_maprec | Type displays a rectangle on a Map   |
-| tangle>`_                            |                                      |
-+--------------------------------------+--------------------------------------+
-| :ref:`MapRoute <sdk_qtlocation_maproute>` | Type displays a Route on a Map       |
-| __                                   |                                      |
-+--------------------------------------+--------------------------------------+
-| :ref:`MapType <sdk_qtlocation_maptype>` | Type holds information about a map   |
-|                                      | type                                 |
-+--------------------------------------+--------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`Route <sdk_qtlocation_route>`                                                                                                                       | Type represents one geographical route                                                                                                                 |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`RouteManeuver <sdk_qtlocation_routemaneuver>`                                                                                                       | Type represents the information relevant to the point at which two RouteSegments meet                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`RouteModel <sdk_qtlocation_routemodel>`                                                                                                             | Type provides access to routes                                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`RouteQuery <sdk_qtlocation_routequery>`                                                                                                             | Type is used to provide query parameters to a RouteModel                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`RouteSegment <sdk_qtlocation_routesegment>`                                                                                                         | Type represents a segment of a Route                                                                                                                   |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. rubric:: Geocoding
-   :name: geocoding-1
-
-+--------------------------------------+--------------------------------------+
-| :ref:`GeocodeModel <sdk_qtlocation_geocod | Type provides support for searching  |
-| emodel>`_                            | operations related to geographic     |
-|                                      | information                          |
-+--------------------------------------+--------------------------------------+
-
-.. rubric:: Routing
-   :name: routing
-
-+--------------------------------------+--------------------------------------+
-| :ref:`Route <sdk_qtlocation_route>`  | Type represents one geographical     |
-|                                      | route                                |
-+--------------------------------------+--------------------------------------+
-| :ref:`RouteManeuver <sdk_qtlocation_route | Type represents the information      |
-| maneuver>`_                          | relevant to the point at which two   |
-|                                      | RouteSegments meet                   |
-+--------------------------------------+--------------------------------------+
-| :ref:`RouteModel <sdk_qtlocation_routemod | Type provides access to routes       |
-| el>`_                                |                                      |
-+--------------------------------------+--------------------------------------+
-| :ref:`RouteQuery <sdk_qtlocation_routeque | Type is used to provide query        |
-| ry>`_                                | parameters to a RouteModel           |
-+--------------------------------------+--------------------------------------+
-| :ref:`RouteSegment <sdk_qtlocation_routes | Type represents a segment of a Route |
-| egment>`_                            |                                      |
-+--------------------------------------+--------------------------------------+
-
-.. rubric:: Example
-   :name: example
-
-The above snippets are taken from the `Map Viewer
-(QML) </sdk/apps/qml/QtLocation/mapviewer/>`_  example.
+The above snippets are taken from the `Map Viewer (QML) </sdk/apps/qml/QtLocation/mapviewer/>`_  example.
 

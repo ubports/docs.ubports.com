@@ -1,9 +1,9 @@
 .. _sdk_qtorganizer_version:
+
 QtOrganizer Version
 ===================
 
-The Version element contains versioning information of an organizer
-item.
+The Version element contains versioning information of an organizer item.
 
 +---------------------+--------------------------+
 | Import Statement:   | import QtOrganizer 5.0   |
@@ -12,14 +12,13 @@ item.
 Properties
 ----------
 
--  :ref:`extendedVersion <sdk_qtorganizer_version_extendedVersion-prop>`
-   : string
--  :ref:`version <sdk_qtorganizer_version_version-prop>` : int
+-  :ref:`extendedVersion <sdk_qtorganizer_version_extendedVersion>` : string
+-  :ref:`version <sdk_qtorganizer_version_version>` : int
 
 Signals
 -------
 
--  :ref:`onDetailChanged <sdk_qtorganizer_version_onDetailChanged-signal>`\ ()
+-  :ref:`onDetailChanged <sdk_qtorganizer_version_onDetailChanged>`\ ()
 
 Detailed Description
 --------------------
@@ -29,38 +28,30 @@ Detailed Description
 Property Documentation
 ----------------------
 
-.. _sdk_qtorganizer_version_extendedVersion-prop:
+.. _sdk_qtorganizer_version_extendedVersion:
 
-+--------------------------------------------------------------------------+
-|        \ extendedVersion : string                                        |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| extendedVersion : string                                                                                                                                                                                                                                                                                     |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-This property holds the extended version of an organizer item, which can
-be used to represent the version stored in the back-end.
+This property holds the extended version of an organizer item, which can be used to represent the version stored in the back-end.
 
-| 
+.. _sdk_qtorganizer_version_version:
 
-.. _sdk_qtorganizer_version_version-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| version : int                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ version : int                                                   |
-+--------------------------------------------------------------------------+
-
-This property holds the integer version of an organizer item, which can
-be used as the sequence number as per iCalendar spec.
-
-| 
+This property holds the integer version of an organizer item, which can be used as the sequence number as per iCalendar spec.
 
 Signal Documentation
 --------------------
 
-.. _sdk_qtorganizer_version_onDetailChanged()-prop:
+.. _sdk_qtorganizer_version_onDetailChanged:
 
-+--------------------------------------------------------------------------+
-|        \ onDetailChanged()                                               |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| onDetailChanged()                                                                                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-**See also**
-:ref:`Detail::onDetailChanged <sdk_qtorganizer_detail#onDetailChanged-signal>`.
+**See also** :ref:`Detail::onDetailChanged <sdk_qtorganizer_detail_onDetailChanged>`.
 
-| 

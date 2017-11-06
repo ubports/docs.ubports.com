@@ -1,4 +1,5 @@
 .. _sdk_qtqml_objectmodel:
+
 QtQml ObjectModel
 =================
 
@@ -11,24 +12,19 @@ Defines a set of items to be used as a model
 Properties
 ----------
 
--  :ref:`count <sdk_qtqml_objectmodel_count-prop>` : int
+-  :ref:`count <sdk_qtqml_objectmodel_count>` : int
 
 Attached Properties
 -------------------
 
--  :ref:`index <sdk_qtqml_objectmodel_index-attached-prop>` : int
+-  :ref:`index <sdk_qtqml_objectmodel_index>` : int
 
 Detailed Description
 --------------------
 
-A :ref:`ObjectModel <sdk_qtqml_objectmodel>` contains the visual items to
-be used in a view. When a :ref:`ObjectModel <sdk_qtqml_objectmodel>` is
-used in a view, the view does not require a delegate since the
-:ref:`ObjectModel <sdk_qtqml_objectmodel>` already contains the visual
-delegate (items).
+A :ref:`ObjectModel <sdk_qtqml_objectmodel>` contains the visual items to be used in a view. When a :ref:`ObjectModel <sdk_qtqml_objectmodel>` is used in a view, the view does not require a delegate since the :ref:`ObjectModel <sdk_qtqml_objectmodel>` already contains the visual delegate (items).
 
-An item can determine its index within the model via the
-:ref:`index <sdk_qtqml_objectmodel#index-attached-prop>` attached property.
+An item can determine its index within the model via the :ref:`index <sdk_qtqml_objectmodel_index>` attached property.
 
 The example below places three colored rectangles in a ListView.
 
@@ -49,38 +45,29 @@ The example below places three colored rectangles in a ListView.
         }
     }
 
-|image0|
-
 **See also** Qt Quick Examples - Views.
 
 Property Documentation
 ----------------------
 
-.. _sdk_qtqml_objectmodel_count-prop:
+.. _sdk_qtqml_objectmodel_count:
 
-+--------------------------------------------------------------------------+
-|        \ count : int                                                     |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| count : int                                                                                                                                                                                                                                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The number of items in the model. This property is readonly.
-
-| 
 
 Attached Property Documentation
 -------------------------------
 
-.. _sdk_qtqml_objectmodel_ObjectModel.index-prop:
+.. _sdk_qtqml_objectmodel_index:
 
-+--------------------------------------------------------------------------+
-|        \ ObjectModel.index : int                                         |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ObjectModel.index : int                                                                                                                                                                                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-This attached property holds the index of this delegate's item within
-the model.
+This attached property holds the index of this delegate's item within the model.
 
 It is attached to each instance of the delegate.
-
-| 
-
-.. |image0| image:: /mediasdk_qtqml_objectmodelimages/visualitemmodel.png
 

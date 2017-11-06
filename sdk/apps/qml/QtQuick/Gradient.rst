@@ -1,4 +1,5 @@
 .. _sdk_qtquick_gradient:
+
 QtQuick Gradient
 ================
 
@@ -11,38 +12,23 @@ Defines a gradient fill
 Properties
 ----------
 
--  :ref:`stops <sdk_qtquick_gradient_stops-prop>` :
-   list<GradientStop>
+-  :ref:`stops <sdk_qtquick_gradient_stops>` : list<GradientStop>
 
 Detailed Description
 --------------------
 
-A gradient is defined by two or more colors, which will be blended
-seamlessly.
+A gradient is defined by two or more colors, which will be blended seamlessly.
 
-The colors are specified as a set of
-:ref:`GradientStop <sdk_qtquick_gradientstop>` child items, each of which
-defines a position on the gradient from 0.0 to 1.0 and a color. The
-position of each :ref:`GradientStop <sdk_qtquick_gradientstop>` is defined
-by setting its :ref:`position <sdk_qtquick_gradientstop#position-prop>`
-property; its color is defined using its
-:ref:`color <sdk_qtquick_gradientstop#color-prop>` property.
+The colors are specified as a set of :ref:`GradientStop <sdk_qtquick_gradientstop>` child items, each of which defines a position on the gradient from 0.0 to 1.0 and a color. The position of each :ref:`GradientStop <sdk_qtquick_gradientstop>` is defined by setting its :ref:`position <sdk_qtquick_gradientstop_position>` property; its color is defined using its :ref:`color <sdk_qtquick_gradientstop_color>` property.
 
 A gradient without any gradient stops is rendered as a solid white fill.
 
-Note that this item is not a visual representation of a gradient. To
-display a gradient, use a visual item (like
-:ref:`Rectangle <sdk_qtquick_rectangle>`) which supports the use of
-gradients.
+Note that this item is not a visual representation of a gradient. To display a gradient, use a visual item (like :ref:`Rectangle <sdk_qtquick_rectangle>`) which supports the use of gradients.
 
 Example Usage
 -------------
 
-|image0|
-
-The following example declares a :ref:`Rectangle <sdk_qtquick_rectangle>`
-item with a gradient starting with red, blending to yellow at one third
-of the height of the rectangle, and ending with green:
+The following example declares a :ref:`Rectangle <sdk_qtquick_rectangle>` item with a gradient starting with red, blending to yellow at one third of the height of the rectangle, and ending with green:
 
 .. code:: qml
 
@@ -55,45 +41,29 @@ of the height of the rectangle, and ending with green:
         }
     }
 
-| 
-|        
-
 Performance and Limitations
 ---------------------------
 
-Calculating gradients can be computationally expensive compared to the
-use of solid color fills or images. Consider using gradients for static
-items in a user interface.
+Calculating gradients can be computationally expensive compared to the use of solid color fills or images. Consider using gradients for static items in a user interface.
 
-In Qt 5.0, only vertical, linear gradients can be applied to items. If
-you need to apply different orientations of gradients, a combination of
-rotation and clipping will need to be applied to the relevant items.
-This can introduce additional performance requirements for your
-application.
+In Qt 5.0, only vertical, linear gradients can be applied to items. If you need to apply different orientations of gradients, a combination of rotation and clipping will need to be applied to the relevant items. This can introduce additional performance requirements for your application.
 
-The use of animations involving gradient stops may not give the desired
-result. An alternative way to animate gradients is to use pre-generated
-images or SVG drawings containing gradients.
+The use of animations involving gradient stops may not give the desired result. An alternative way to animate gradients is to use pre-generated images or SVG drawings containing gradients.
 
 **See also** :ref:`GradientStop <sdk_qtquick_gradientstop>`.
 
 Property Documentation
 ----------------------
 
-.. _sdk_qtquick_gradient_stops-prop:
+.. _sdk_qtquick_gradient_stops:
 
-+--------------------------------------------------------------------------+
-|        \ [default] stops :                                               |
-| list<:ref:`GradientStop <sdk_qtquick_gradientstop>`>                        |
-+--------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| [default] stops : list<:ref:`GradientStop <sdk_qtquick_gradientstop>`>                                                                                                                                                                                                                                          |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the gradient stops describing the gradient.
 
 By default, this property contains an empty list.
 
 To set the gradient stops, define them as children of the Gradient.
-
-| 
-
-.. |image0| image:: /mediasdk_qtquick_gradientimages/qml-gradient.png
 

@@ -1,29 +1,26 @@
 .. _sdk_qtorganizer_visualreminder:
+
 QtOrganizer VisualReminder
 ==========================
 
-The VisualReminder element contains information about a visual reminder
-of an item.
+The VisualReminder element contains information about a visual reminder of an item.
 
-+--------------------------------------+--------------------------------------+
-| Import Statement:                    | import QtOrganizer 5.0               |
-+--------------------------------------+--------------------------------------+
-| Inherits:                            | :ref:`Reminder <sdk_qtorganizer_reminder> |
-|                                      | `_                                   |
-+--------------------------------------+--------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Import Statement:                                                                                                                                      | import QtOrganizer 5.0                                                                                                                                    |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Inherits:                                                                                                                                              | :ref:`Reminder <sdk_qtorganizer_reminder>`                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Properties
 ----------
 
--  :ref:`dataUrl <sdk_qtorganizer_visualreminder_dataUrl-prop>` :
-   url
--  :ref:`message <sdk_qtorganizer_visualreminder_message-prop>` :
-   string
+-  :ref:`dataUrl <sdk_qtorganizer_visualreminder_dataUrl>` : url
+-  :ref:`message <sdk_qtorganizer_visualreminder_message>` : string
 
 Signals
 -------
 
--  :ref:`onDetailChanged <sdk_qtorganizer_visualreminder_onDetailChanged-signal>`\ ()
+-  :ref:`onDetailChanged <sdk_qtorganizer_visualreminder_onDetailChanged>`\ ()
 
 Detailed Description
 --------------------
@@ -36,44 +33,35 @@ The following fields are supported:
 -  :ref:`VisualReminder <sdk_qtorganizer_visualreminder>`.FieldDataUrl
 -  :ref:`VisualReminder <sdk_qtorganizer_visualreminder>`.FieldMessage
 
-**See also** :ref:`Reminder <sdk_qtorganizer_reminder>` and
-QOrganizerItemVisualReminder.
+**See also** :ref:`Reminder <sdk_qtorganizer_reminder>` and QOrganizerItemVisualReminder.
 
 Property Documentation
 ----------------------
 
-.. _sdk_qtorganizer_visualreminder_dataUrl-prop:
+.. _sdk_qtorganizer_visualreminder_dataUrl:
 
-+--------------------------------------------------------------------------+
-|        \ dataUrl : url                                                   |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| dataUrl : url                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-This property holds the url of the visual data which the user wishes to
-be displayed as part of the reminder.
+This property holds the url of the visual data which the user wishes to be displayed as part of the reminder.
 
-| 
+.. _sdk_qtorganizer_visualreminder_message:
 
-.. _sdk_qtorganizer_visualreminder_message-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| message : string                                                                                                                                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ message : string                                                |
-+--------------------------------------------------------------------------+
-
-This property holds the message which the user wishes to be displayed as
-part of the reminder.
-
-| 
+This property holds the message which the user wishes to be displayed as part of the reminder.
 
 Signal Documentation
 --------------------
 
-.. _sdk_qtorganizer_visualreminder_onDetailChanged()-prop:
+.. _sdk_qtorganizer_visualreminder_onDetailChanged:
 
-+--------------------------------------------------------------------------+
-|        \ onDetailChanged()                                               |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| onDetailChanged()                                                                                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-**See also**
-:ref:`Detail::onDetailChanged <sdk_qtorganizer_detail#onDetailChanged-signal>`.
+**See also** :ref:`Detail::onDetailChanged <sdk_qtorganizer_detail_onDetailChanged>`.
 
-| 

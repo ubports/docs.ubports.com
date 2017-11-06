@@ -1,10 +1,9 @@
 .. _sdk_qtquick_scene_graph_-_graph:
+
 QtQuick Scene Graph - Graph
 ===========================
 
 
-
-|image0|
 
 Files:
 
@@ -20,6 +19,4 @@ Files:
 -  scenegraph/graph/main.cpp
 -  scenegraph/graph/graph.pro
 -  scenegraph/graph/graph.qrc
-
-.. |image0| image:: /media/sdk/apps/qml/qtquick-scenegraph-graph-example/images/graph-example.jpg
 

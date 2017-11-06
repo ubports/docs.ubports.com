@@ -1,9 +1,9 @@
 .. _sdk_qtorganizer_unionfilter:
+
 QtOrganizer UnionFilter
 =======================
 
-The UnionFilter element provides a filter which unions the results of
-other filters.
+The UnionFilter element provides a filter which unions the results of other filters.
 
 +---------------------+--------------------------+
 | Import Statement:   | import QtOrganizer 5.0   |
@@ -12,13 +12,12 @@ other filters.
 Properties
 ----------
 
--  :ref:`filters <sdk_qtorganizer_unionfilter_filters-prop>` :
-   list<filter>
+-  :ref:`filters <sdk_qtorganizer_unionfilter_filters>` : list<filter>
 
 Signals
 -------
 
--  :ref:`onFilterChanged <sdk_qtorganizer_unionfilter_onFilterChanged-signal>`\ ()
+-  :ref:`onFilterChanged <sdk_qtorganizer_unionfilter_onFilterChanged>`\ ()
 
 Detailed Description
 --------------------
@@ -28,26 +27,22 @@ Detailed Description
 Property Documentation
 ----------------------
 
-.. _sdk_qtorganizer_unionfilter_filters-prop:
+.. _sdk_qtorganizer_unionfilter_filters:
 
-+--------------------------------------------------------------------------+
-|        \ filters : list<filter>                                          |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| filters : list<filter>                                                                                                                                                                                                                                                                                       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the list of filters which form the union filter.
-
-| 
 
 Signal Documentation
 --------------------
 
-.. _sdk_qtorganizer_unionfilter_onFilterChanged()-prop:
+.. _sdk_qtorganizer_unionfilter_onFilterChanged:
 
-+--------------------------------------------------------------------------+
-|        \ onFilterChanged()                                               |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| onFilterChanged()                                                                                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-**See also**
-:ref:`QtOrganizer5::Filter::onFilterChanged <sdk_qtorganizer_filter#onFilterChanged-signal>`.
+**See also** :ref:`QtOrganizer5::Filter::onFilterChanged <sdk_qtorganizer_filter_onFilterChanged>`.
 
-| 

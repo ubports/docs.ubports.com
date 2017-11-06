@@ -1,38 +1,30 @@
 .. _sdk_ubuntu_components_popups_popupbase:
+
 Ubuntu.Components.Popups PopupBase
 ==================================
 
-The base class for all dialogs, sheets and popovers. Do not use
-directly.
+The base class for all dialogs, sheets and popovers. Do not use directly.
 
-+--------------------------------------+--------------------------------------+
-| Import Statement:                    | import Ubuntu.Components.Popups 1.3  |
-+--------------------------------------+--------------------------------------+
-| Inherits:                            | :ref:`OrientationHelper <sdk_ubuntu_compo |
-|                                      | nents_orientationhelper>`_           |
-+--------------------------------------+--------------------------------------+
-| Inherited By:                        | `Dialog </sdk/apps/qml/Ubuntu.Compon |
-|                                      | ents/Popups.Dialog/>`_ ,             |
-|                                      | `Popover </sdk/apps/qml/Ubuntu.Compo |
-|                                      | nents/Popups.Popover/>`_ ,           |
-|                                      | and                                  |
-|                                      | `SheetBase </sdk/apps/qml/Ubuntu.Com |
-|                                      | ponents/Popups.SheetBase/>`_ .       |
-+--------------------------------------+--------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Import Statement:                                                                                                                                      | import Ubuntu.Components.Popups 1.3                                                                                                                       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Inherits:                                                                                                                                              | :ref:`OrientationHelper <sdk_ubuntu_components_orientationhelper>`                                                                                        |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Inherited By:                                                                                                                                          | `Dialog </sdk/apps/qml/Ubuntu.Components/Popups.Dialog/>`_ , `Popover </sdk/apps/qml/Ubuntu.Components/Popups.Popover/>`_ , and                           |
+|                                                                                                                                                        | `SheetBase </sdk/apps/qml/Ubuntu.Components/Popups.SheetBase/>`_ .                                                                                        |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Properties
 ----------
 
--  `dismissArea </sdk/apps/qml/Ubuntu.Components/Popups.PopupBase/_dismissArea-prop>`_ 
-   : Item
--  `grabDismissAreaEvents </sdk/apps/qml/Ubuntu.Components/Popups.PopupBase/_grabDismissAreaEvents-prop>`_ 
-   : bool
+-  `dismissArea </sdk/apps/qml/Ubuntu.Components/Popups.PopupBase/#dismissArea-prop>`_  : Item
+-  `grabDismissAreaEvents </sdk/apps/qml/Ubuntu.Components/Popups.PopupBase/#grabDismissAreaEvents-prop>`_  : bool
 
 Methods
 -------
 
--  `hide </sdk/apps/qml/Ubuntu.Components/Popups.PopupBase/_hide-method>`_ \ ()
--  `show </sdk/apps/qml/Ubuntu.Components/Popups.PopupBase/_show-method>`_ \ ()
+-  `hide </sdk/apps/qml/Ubuntu.Components/Popups.PopupBase/#hide-method>`_ \ ()
+-  `show </sdk/apps/qml/Ubuntu.Components/Popups.PopupBase/#show-method>`_ \ ()
 
 Detailed Description
 --------------------
@@ -42,52 +34,38 @@ Examples: See subclasses.
 Property Documentation
 ----------------------
 
-.. _sdk_ubuntu_components_popups_popupbase_-prop:
+.. _sdk_ubuntu_components_popups_popupbase_dismissArea:
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ dismissArea : `Item <sdk_qtquick_item>`                    |
-+--------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| dismissArea : :ref:`Item <sdk_qtquick_item>`                                                                                                                                                                                                                                                                    |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-The property holds the area used to dismiss the popups, the area from
-where mouse and touch events will be grabbed. By default this area is
-the Popup itself.
+The property holds the area used to dismiss the popups, the area from where mouse and touch events will be grabbed. By default this area is the Popup itself.
 
-| 
+.. _sdk_ubuntu_components_popups_popupbase_grabDismissAreaEvents:
 
-.. _sdk_ubuntu_components_popups_popupbase_grabDismissAreaEvents-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| grabDismissAreaEvents : bool                                                                                                                                                                                                                                                                                 |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ grabDismissAreaEvents : bool                                    |
-+--------------------------------------------------------------------------+
-
-The property specifies whether to forward or not the mouse and touch
-events happening outside of the popover. By default all events are
-grabbed.
-
-| 
+The property specifies whether to forward or not the mouse and touch events happening outside of the popover. By default all events are grabbed.
 
 Method Documentation
 --------------------
 
-.. _sdk_ubuntu_components_popups_popupbase_hide-method:
+.. _sdk_ubuntu_components_popups_popupbase_hide:
 
-+--------------------------------------------------------------------------+
-|        \ hide()                                                          |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| hide()                                                                                                                                                                                                                                                                                                       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Hide the popup. Only use this function if you handle memory management.
-Otherwise use PopupUtils.close() to do it automatically.
+Hide the popup. Only use this function if you handle memory management. Otherwise use PopupUtils.close() to do it automatically.
 
-| 
+.. _sdk_ubuntu_components_popups_popupbase_show:
 
-.. _sdk_ubuntu_components_popups_popupbase_show-method:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| show()                                                                                                                                                                                                                                                                                                       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ show()                                                          |
-+--------------------------------------------------------------------------+
+Make the popup visible. Reparent to the background area object first if needed. Only use this function if you handle memory management. Otherwise use PopupUtils.open() to do it automatically.
 
-Make the popup visible. Reparent to the background area object first if
-needed. Only use this function if you handle memory management.
-Otherwise use PopupUtils.open() to do it automatically.
-
-| 

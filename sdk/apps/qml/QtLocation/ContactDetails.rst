@@ -1,4 +1,5 @@
 .. _sdk_qtlocation_contactdetails:
+
 QtLocation ContactDetails
 =========================
 
@@ -13,44 +14,26 @@ The ContactDetails type holds contact details for a Place.
 Methods
 -------
 
--  variant
-   **:ref:`keys <sdk_qtlocation_contactdetails#keys-method>`**\ ()
+-  variant :ref:`keys <sdk_qtlocation_contactdetails_keys>`\ ()
 
 Detailed Description
 --------------------
 
-The :ref:`ContactDetails <sdk_qtlocation_contactdetails>` type is a map of
-:ref:`ContactDetail <sdk_qtlocation_contactdetail>` objects. To access
-contact details in the map use the
-:ref:`keys() <sdk_qtlocation_contactdetails#keys-method>` method to get the
-list of keys stored in the map and then use the ``[]`` operator to
-access the :ref:`ContactDetail <sdk_qtlocation_contactdetail>` items.
+The :ref:`ContactDetails <sdk_qtlocation_contactdetails>` type is a map of :ref:`ContactDetail <sdk_qtlocation_contactdetail>` objects. To access contact details in the map use the :ref:`keys() <sdk_qtlocation_contactdetails_keys>` method to get the list of keys stored in the map and then use the ``[]`` operator to access the :ref:`ContactDetail <sdk_qtlocation_contactdetail>` items.
 
-The following keys are defined in the API.
-`Plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_ 
-implementations are free to define additional keys.
+The following keys are defined in the API. `Plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_  implementations are free to define additional keys.
 
 -  phone
 -  fax
 -  email
 -  website
 
-:ref:`ContactDetails <sdk_qtlocation_contactdetails>` instances are only
-ever used in the context of
-`Places </sdk/apps/qml/QtLocation/location-cpp-qml/#place>`_ . It is not
-possible to create a :ref:`ContactDetails <sdk_qtlocation_contactdetails>`
-instance directly or re-assign
-:ref:`ContactDetails <sdk_qtlocation_contactdetails>` instances to
-`Places </sdk/apps/qml/QtLocation/location-cpp-qml/#place>`_ .
-Modification of :ref:`ContactDetails <sdk_qtlocation_contactdetails>` can
-only be accomplished via Javascript.
+:ref:`ContactDetails <sdk_qtlocation_contactdetails>` instances are only ever used in the context of `Places </sdk/apps/qml/QtLocation/location-cpp-qml/#place>`_ . It is not possible to create a :ref:`ContactDetails <sdk_qtlocation_contactdetails>` instance directly or re-assign :ref:`ContactDetails <sdk_qtlocation_contactdetails>` instances to `Places </sdk/apps/qml/QtLocation/location-cpp-qml/#place>`_ . Modification of :ref:`ContactDetails <sdk_qtlocation_contactdetails>` can only be accomplished via Javascript.
 
 Examples
 --------
 
-The following example shows how to access all
-:ref:`ContactDetails <sdk_qtlocation_contactdetail>` and print them to the
-console:
+The following example shows how to access all :ref:`ContactDetails <sdk_qtlocation_contactdetail>` and print them to the console:
 
 .. code:: qml
 
@@ -66,9 +49,7 @@ console:
         }
     }
 
-The returned list of contact details is an object list and so can be
-used directly as a data model. For example, the following demonstrates
-how to display a list of contact phone numbers in a list view:
+The returned list of contact details is an object list and so can be used directly as a data model. For example, the following demonstrates how to display a list of contact phone numbers in a list view:
 
 .. code:: qml
 
@@ -80,8 +61,7 @@ how to display a list of contact phone numbers in a list view:
         delegate: Text { text: modelData.label + ": " + modelData.value }
     }
 
-The following example demonstrates how to assign a single phone number
-to a place in JavaScript:
+The following example demonstrates how to assign a single phone number to a place in JavaScript:
 
 .. code:: qml
 
@@ -92,8 +72,7 @@ to a place in JavaScript:
         place.contactDetails.phone = phoneNumber;
     }
 
-The following demonstrates how to assign multiple phone numbers to a
-place in JavaScript:
+The following demonstrates how to assign multiple phone numbers to a place in JavaScript:
 
 .. code:: qml
 
@@ -113,12 +92,11 @@ place in JavaScript:
 Method Documentation
 --------------------
 
-.. _sdk_qtlocation_contactdetails_variant keys-method:
+.. _sdk_qtlocation_contactdetails_keys:
 
-+--------------------------------------------------------------------------+
-|        \ variant keys()                                                  |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| variant keys()                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Returns an array of contact detail keys currently stored in the map.
 
-| 

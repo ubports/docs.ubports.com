@@ -1,30 +1,28 @@
 .. _sdk_qtqml_signaltransition:
+
 QtQml SignalTransition
 ======================
 
 The SignalTransition type provides a transition based on a Qt signal.
 
-+--------------------------------------+--------------------------------------+
-| Import Statement:                    | import QtQml.StateMachine 1.0        |
-+--------------------------------------+--------------------------------------+
-| Since:                               | Qt 5.4                               |
-+--------------------------------------+--------------------------------------+
-| Inherits:                            | :ref:`QSignalTransition <sdk_qtqml_qsigna |
-|                                      | ltransition>`_                       |
-+--------------------------------------+--------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Import Statement:                                                                                                                                      | import QtQml.StateMachine 1.0                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Since:                                                                                                                                                 | Qt 5.4                                                                                                                                                    |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Inherits:                                                                                                                                              | :ref:`QSignalTransition <sdk_qtqml_qsignaltransition>`                                                                                                    |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Properties
 ----------
 
--  :ref:`guard <sdk_qtqml_signaltransition_guard-prop>` : bool
--  :ref:`signal <sdk_qtqml_signaltransition_signal-prop>` : signal
+-  :ref:`guard <sdk_qtqml_signaltransition_guard>` : bool
+-  :ref:`signal <sdk_qtqml_signaltransition_signal>` : signal
 
 Detailed Description
 --------------------
 
-:ref:`SignalTransition <sdk_qtqml_signaltransition>` is part of `The
-Declarative State Machine
-Framework </sdk/apps/qml/QtQml/qmlstatemachine/>`_ .
+:ref:`SignalTransition <sdk_qtqml_signaltransition>` is part of `The Declarative State Machine Framework </sdk/apps/qml/QtQml/qmlstatemachine/>`_ .
 
 Example Usage
 -------------
@@ -65,28 +63,20 @@ Example Usage
         }
     }
 
-| 
-
-**See also** :ref:`StateMachine <sdk_qtqml_statemachine>`,
-:ref:`FinalState <sdk_qtqml_finalstate>`, and
-:ref:`TimeoutTransition <sdk_qtqml_timeouttransition>`.
+**See also** :ref:`StateMachine <sdk_qtqml_statemachine>`, :ref:`FinalState <sdk_qtqml_finalstate>`, and :ref:`TimeoutTransition <sdk_qtqml_timeouttransition>`.
 
 Property Documentation
 ----------------------
 
-.. _sdk_qtqml_signaltransition_guard-prop:
+.. _sdk_qtqml_signaltransition_guard:
 
-+--------------------------------------------------------------------------+
-|        \ guard : bool                                                    |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| guard : bool                                                                                                                                                                                                                                                                                                 |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Guard conditions affect the behavior of a state machine by enabling
-transitions only when they evaluate to true and disabling them when they
-evaluate to false.
+Guard conditions affect the behavior of a state machine by enabling transitions only when they evaluate to true and disabling them when they evaluate to false.
 
-When the signal associated with this signal transition is emitted the
-guard condition is evaluated. In the guard condition the arguments of
-the signal can be used as demonstrated in the example below.
+When the signal associated with this signal transition is emitted the guard condition is evaluated. In the guard condition the arguments of the signal can be used as demonstrated in the example below.
 
 .. code:: qml
 
@@ -116,15 +106,13 @@ the signal can be used as demonstrated in the example below.
         }
     }
 
-**See also** :ref:`signal <sdk_qtqml_signaltransition#signal-prop>`.
+**See also** :ref:`signal <sdk_qtqml_signaltransition_signal>`.
 
-| 
+.. _sdk_qtqml_signaltransition_signal:
 
-.. _sdk_qtqml_signaltransition_-prop:
-
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ signal : `signal <sdk_qtqml_signaltransition#signal-prop>` |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| signal : :ref:`signal <sdk_qtqml_signaltransition_signal>`                                                                                                                                                                                                                                                   |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The signal which is associated with this signal transition.
 
@@ -150,4 +138,3 @@ The signal which is associated with this signal transition.
         }
     }
 
-| 

@@ -1,4 +1,5 @@
 .. _sdk_qtcontacts_url:
+
 QtContacts Url
 ==============
 
@@ -11,8 +12,8 @@ The Url element contains a url associated with a contact.
 Properties
 ----------
 
--  :ref:`subType <sdk_qtcontacts_url_subType-prop>` : enumeration
--  :ref:`url <sdk_qtcontacts_url_url-prop>` : string
+-  :ref:`subType <sdk_qtcontacts_url_subType>` : enumeration
+-  :ref:`url <sdk_qtcontacts_url_url>` : string
 
 Detailed Description
 --------------------
@@ -27,27 +28,23 @@ This element is part of the **QtContacts** module.
 Property Documentation
 ----------------------
 
-.. _sdk_qtcontacts_url_subType-prop:
+.. _sdk_qtcontacts_url_subType:
 
-+--------------------------------------------------------------------------+
-|        \ subType : enumeration                                           |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| subType : enumeration                                                                                                                                                                                                                                                                                        |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the sub type of a QContactUrl.
 
 -  Url.Unknown - indicating this url type is unknown (default).
 -  Url.HomePage - indicating this url is a contact's home page.
--  Url.Favourite - indicating this url is one of the contact's favourite
-   URLs (or bookmarks).
+-  Url.Favourite - indicating this url is one of the contact's favourite URLs (or bookmarks).
 
-| 
+.. _sdk_qtcontacts_url_url:
 
-.. _sdk_qtcontacts_url_url-prop:
-
-+--------------------------------------------------------------------------+
-|        \ url : string                                                    |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| url : string                                                                                                                                                                                                                                                                                                 |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the value of the URL.
 
-| 

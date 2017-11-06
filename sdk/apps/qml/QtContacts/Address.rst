@@ -1,4 +1,5 @@
 .. _sdk_qtcontacts_address:
+
 QtContacts Address
 ==================
 
@@ -11,21 +12,18 @@ The Address element contains an address of a contact.
 Properties
 ----------
 
--  :ref:`country <sdk_qtcontacts_address_country-prop>` : string
--  :ref:`locality <sdk_qtcontacts_address_locality-prop>` : string
--  :ref:`postOfficeBox <sdk_qtcontacts_address_postOfficeBox-prop>`
-   : string
--  :ref:`postcode <sdk_qtcontacts_address_postcode-prop>` : string
--  :ref:`region <sdk_qtcontacts_address_region-prop>` : string
--  :ref:`street <sdk_qtcontacts_address_street-prop>` : string
--  :ref:`subTypes <sdk_qtcontacts_address_subTypes-prop>` :
-   list<variant>
+-  :ref:`country <sdk_qtcontacts_address_country>` : string
+-  :ref:`locality <sdk_qtcontacts_address_locality>` : string
+-  :ref:`postOfficeBox <sdk_qtcontacts_address_postOfficeBox>` : string
+-  :ref:`postcode <sdk_qtcontacts_address_postcode>` : string
+-  :ref:`region <sdk_qtcontacts_address_region>` : string
+-  :ref:`street <sdk_qtcontacts_address_street>` : string
+-  :ref:`subTypes <sdk_qtcontacts_address_subTypes>` : list<variant>
 
 Detailed Description
 --------------------
 
-The fields in the Address element are based on the segments of the ADR
-property of a Versit vCard file.
+The fields in the Address element are based on the segments of the ADR property of a Versit vCard file.
 
 Address element contains the following field types:
 
@@ -37,79 +35,64 @@ Address element contains the following field types:
 -  Address.SubTypes
 -  Address.PostOfficeBox
 
-Versit :sup:`®` is a trademark of the Internet Mail Consortium. This
-element is part of the **QtContacts** module.
+Versit :sup:`®` is a trademark of the Internet Mail Consortium. This element is part of the **QtContacts** module.
 
 Property Documentation
 ----------------------
 
-.. _sdk_qtcontacts_address_country-prop:
+.. _sdk_qtcontacts_address_country:
 
-+--------------------------------------------------------------------------+
-|        \ country : string                                                |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| country : string                                                                                                                                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the name of the country of the address.
 
-| 
+.. _sdk_qtcontacts_address_locality:
 
-.. _sdk_qtcontacts_address_locality-prop:
-
-+--------------------------------------------------------------------------+
-|        \ locality : string                                               |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| locality : string                                                                                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the name of the city, town or suburb of the address.
 
-| 
+.. _sdk_qtcontacts_address_postOfficeBox:
 
-.. _sdk_qtcontacts_address_postOfficeBox-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| postOfficeBox : string                                                                                                                                                                                                                                                                                       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ postOfficeBox : string                                          |
-+--------------------------------------------------------------------------+
+This property holds the post office box identifier of the mailing address.
 
-This property holds the post office box identifier of the mailing
-address.
+.. _sdk_qtcontacts_address_postcode:
 
-| 
-
-.. _sdk_qtcontacts_address_postcode-prop:
-
-+--------------------------------------------------------------------------+
-|        \ postcode : string                                               |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| postcode : string                                                                                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the postal code for the address.
 
-| 
+.. _sdk_qtcontacts_address_region:
 
-.. _sdk_qtcontacts_address_region-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| region : string                                                                                                                                                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ region : string                                                 |
-+--------------------------------------------------------------------------+
+This property holds the name or identifier of the state, province or region of the address.
 
-This property holds the name or identifier of the state, province or
-region of the address.
+.. _sdk_qtcontacts_address_street:
 
-| 
-
-.. _sdk_qtcontacts_address_street-prop:
-
-+--------------------------------------------------------------------------+
-|        \ street : string                                                 |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| street : string                                                                                                                                                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the street number and street name of the address.
 
-| 
+.. _sdk_qtcontacts_address_subTypes:
 
-.. _sdk_qtcontacts_address_subTypes-prop:
-
-+--------------------------------------------------------------------------+
-|        \ subTypes : list<variant>                                        |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| subTypes : list<variant>                                                                                                                                                                                                                                                                                     |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property stores the sub types of the address.
 
@@ -118,4 +101,3 @@ This property stores the sub types of the address.
 -  Address.Domestic - An address for domestic mail delivery.
 -  Address.International - An address for international mail delivery.
 
-| 

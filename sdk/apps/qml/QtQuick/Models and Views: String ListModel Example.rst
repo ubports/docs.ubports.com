@@ -1,10 +1,9 @@
 .. _sdk_qtquick_models_and_views:_string_listmodel_example:
+
 QtQuick Models and Views: String ListModel Example
 ==================================================
 
 
-
-|image0|
 
 Files:
 
@@ -12,6 +11,4 @@ Files:
 -  models/stringlistmodel/main.cpp
 -  models/stringlistmodel/stringlistmodel.pro
 -  models/stringlistmodel/stringlistmodel.qrc
-
-.. |image0| image:: /media/sdk/apps/qml/qtquick-models-stringlistmodel-example/images/qml-stringlistmodel-example.png
 

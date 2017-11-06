@@ -1,4 +1,5 @@
 .. _sdk_qtquick_pinchevent:
+
 QtQuick PinchEvent
 ==================
 
@@ -11,256 +12,202 @@ For specifying information about a pinch event
 Properties
 ----------
 
--  :ref:`accepted <sdk_qtquick_pinchevent_accepted-prop>` : bool
--  :ref:`angle <sdk_qtquick_pinchevent_angle-prop>` : real
--  :ref:`center <sdk_qtquick_pinchevent_center-prop>` : QPointF
--  :ref:`point1 <sdk_qtquick_pinchevent_point1-prop>` : QPointF
--  :ref:`point2 <sdk_qtquick_pinchevent_point2-prop>` : QPointF
--  :ref:`pointCount <sdk_qtquick_pinchevent_pointCount-prop>` : int
--  :ref:`previousAngle <sdk_qtquick_pinchevent_previousAngle-prop>`
-   : real
--  :ref:`previousCenter <sdk_qtquick_pinchevent_previousCenter-prop>`
-   : QPointF
--  :ref:`previousScale <sdk_qtquick_pinchevent_previousScale-prop>`
-   : real
--  :ref:`rotation <sdk_qtquick_pinchevent_rotation-prop>` : real
--  :ref:`scale <sdk_qtquick_pinchevent_scale-prop>` : real
--  :ref:`startCenter <sdk_qtquick_pinchevent_startCenter-prop>` :
-   QPointF
--  :ref:`startPoint1 <sdk_qtquick_pinchevent_startPoint1-prop>` :
-   QPointF
--  :ref:`startPoint2 <sdk_qtquick_pinchevent_startPoint2-prop>` :
-   QPointF
+-  :ref:`accepted <sdk_qtquick_pinchevent_accepted>` : bool
+-  :ref:`angle <sdk_qtquick_pinchevent_angle>` : real
+-  :ref:`center <sdk_qtquick_pinchevent_center>` : QPointF
+-  :ref:`point1 <sdk_qtquick_pinchevent_point1>` : QPointF
+-  :ref:`point2 <sdk_qtquick_pinchevent_point2>` : QPointF
+-  :ref:`pointCount <sdk_qtquick_pinchevent_pointCount>` : int
+-  :ref:`previousAngle <sdk_qtquick_pinchevent_previousAngle>` : real
+-  :ref:`previousCenter <sdk_qtquick_pinchevent_previousCenter>` : QPointF
+-  :ref:`previousScale <sdk_qtquick_pinchevent_previousScale>` : real
+-  :ref:`rotation <sdk_qtquick_pinchevent_rotation>` : real
+-  :ref:`scale <sdk_qtquick_pinchevent_scale>` : real
+-  :ref:`startCenter <sdk_qtquick_pinchevent_startCenter>` : QPointF
+-  :ref:`startPoint1 <sdk_qtquick_pinchevent_startPoint1>` : QPointF
+-  :ref:`startPoint2 <sdk_qtquick_pinchevent_startPoint2>` : QPointF
 
 Detailed Description
 --------------------
 
 **The PinchEvent type was added in QtQuick 1.1**
 
-The ``center``, ``startCenter``, ``previousCenter`` properties provide
-the center position between the two touch points.
+The ``center``, ``startCenter``, ``previousCenter`` properties provide the center position between the two touch points.
 
 The ``scale`` and ``previousScale`` properties provide the scale factor.
 
-The ``angle``, ``previousAngle`` and ``rotation`` properties provide the
-angle between the two points and the amount of rotation.
+The ``angle``, ``previousAngle`` and ``rotation`` properties provide the angle between the two points and the amount of rotation.
 
-The ``point1``, ``point2``, ``startPoint1``, ``startPoint2`` properties
-provide the positions of the touch points.
+The ``point1``, ``point2``, ``startPoint1``, ``startPoint2`` properties provide the positions of the touch points.
 
-The ``accepted`` property may be set to false in the ``onPinchStarted``
-handler if the gesture should not be handled.
+The ``accepted`` property may be set to false in the ``onPinchStarted`` handler if the gesture should not be handled.
 
 **See also** :ref:`PinchArea <sdk_qtquick_pincharea>`.
 
 Property Documentation
 ----------------------
 
-.. _sdk_qtquick_pinchevent_accepted-prop:
+.. _sdk_qtquick_pinchevent_accepted:
 
-+--------------------------------------------------------------------------+
-|        \ accepted : bool                                                 |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| accepted : bool                                                                                                                                                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Setting this property to false in the ``PinchArea::onPinchStarted``
-handler will result in no further pinch events being generated, and the
-gesture ignored.
+Setting this property to false in the ``PinchArea::onPinchStarted`` handler will result in no further pinch events being generated, and the gesture ignored.
 
-| 
+.. _sdk_qtquick_pinchevent_angle:
 
-.. _sdk_qtquick_pinchevent_angle-prop:
-
-+--------------------------------------------------------------------------+
-|        \ angle : real                                                    |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| angle : real                                                                                                                                                                                                                                                                                                 |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 These properties hold the angle between the two touch points.
 
--  ``angle`` is the current angle between the two points in the range
-   -180 to 180.
+-  ``angle`` is the current angle between the two points in the range -180 to 180.
 -  ``previousAngle`` is the angle of the previous event.
 -  ``rotation`` is the total rotation since the pinch gesture started.
 
 When a pinch gesture is started, the rotation is ``0.0``.
 
-| 
+.. _sdk_qtquick_pinchevent_center:
 
-.. _sdk_qtquick_pinchevent_center-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| center : QPointF                                                                                                                                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ center : QPointF                                                |
-+--------------------------------------------------------------------------+
-
-These properties hold the position of the center point between the two
-touch points.
+These properties hold the position of the center point between the two touch points.
 
 -  ``center`` is the current center point
 -  ``previousCenter`` is the center point of the previous event.
 -  ``startCenter`` is the center point when the gesture began
 
-| 
+.. _sdk_qtquick_pinchevent_point1:
 
-.. _sdk_qtquick_pinchevent_point1-prop:
-
-+--------------------------------------------------------------------------+
-|        \ point1 : QPointF                                                |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| point1 : QPointF                                                                                                                                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 These properties provide the actual touch points generating the pinch.
 
 -  ``point1`` and ``point2`` hold the current positions of the points.
--  ``startPoint1`` and ``startPoint2`` hold the positions of the points
-   when the second point was touched.
+-  ``startPoint1`` and ``startPoint2`` hold the positions of the points when the second point was touched.
 
-| 
+.. _sdk_qtquick_pinchevent_point2:
 
-.. _sdk_qtquick_pinchevent_point2-prop:
-
-+--------------------------------------------------------------------------+
-|        \ point2 : QPointF                                                |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| point2 : QPointF                                                                                                                                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 These properties provide the actual touch points generating the pinch.
 
 -  ``point1`` and ``point2`` hold the current positions of the points.
--  ``startPoint1`` and ``startPoint2`` hold the positions of the points
-   when the second point was touched.
+-  ``startPoint1`` and ``startPoint2`` hold the positions of the points when the second point was touched.
 
-| 
+.. _sdk_qtquick_pinchevent_pointCount:
 
-.. _sdk_qtquick_pinchevent_pointCount-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| pointCount : int                                                                                                                                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ pointCount : int                                                |
-+--------------------------------------------------------------------------+
+Holds the number of points currently touched. The :ref:`PinchArea <sdk_qtquick_pincharea>` will not react until two touch points have initited a gesture, but will remain active until all touch points have been released.
 
-Holds the number of points currently touched. The
-:ref:`PinchArea <sdk_qtquick_pincharea>` will not react until two touch
-points have initited a gesture, but will remain active until all touch
-points have been released.
+.. _sdk_qtquick_pinchevent_previousAngle:
 
-| 
-
-.. _sdk_qtquick_pinchevent_previousAngle-prop:
-
-+--------------------------------------------------------------------------+
-|        \ previousAngle : real                                            |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| previousAngle : real                                                                                                                                                                                                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 These properties hold the angle between the two touch points.
 
--  ``angle`` is the current angle between the two points in the range
-   -180 to 180.
+-  ``angle`` is the current angle between the two points in the range -180 to 180.
 -  ``previousAngle`` is the angle of the previous event.
 -  ``rotation`` is the total rotation since the pinch gesture started.
 
 When a pinch gesture is started, the rotation is ``0.0``.
 
-| 
+.. _sdk_qtquick_pinchevent_previousCenter:
 
-.. _sdk_qtquick_pinchevent_previousCenter-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| previousCenter : QPointF                                                                                                                                                                                                                                                                                     |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ previousCenter : QPointF                                        |
-+--------------------------------------------------------------------------+
-
-These properties hold the position of the center point between the two
-touch points.
+These properties hold the position of the center point between the two touch points.
 
 -  ``center`` is the current center point
 -  ``previousCenter`` is the center point of the previous event.
 -  ``startCenter`` is the center point when the gesture began
 
-| 
+.. _sdk_qtquick_pinchevent_previousScale:
 
-.. _sdk_qtquick_pinchevent_previousScale-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| previousScale : real                                                                                                                                                                                                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ previousScale : real                                            |
-+--------------------------------------------------------------------------+
-
-These properties hold the scale factor determined by the change in
-distance between the two touch points.
+These properties hold the scale factor determined by the change in distance between the two touch points.
 
 -  ``scale`` is the current scale factor.
 -  ``previousScale`` is the scale factor of the previous event.
 
 When a pinch gesture is started, the scale is ``1.0``.
 
-| 
+.. _sdk_qtquick_pinchevent_rotation:
 
-.. _sdk_qtquick_pinchevent_rotation-prop:
-
-+--------------------------------------------------------------------------+
-|        \ rotation : real                                                 |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| rotation : real                                                                                                                                                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 These properties hold the angle between the two touch points.
 
--  ``angle`` is the current angle between the two points in the range
-   -180 to 180.
+-  ``angle`` is the current angle between the two points in the range -180 to 180.
 -  ``previousAngle`` is the angle of the previous event.
 -  ``rotation`` is the total rotation since the pinch gesture started.
 
 When a pinch gesture is started, the rotation is ``0.0``.
 
-| 
+.. _sdk_qtquick_pinchevent_scale:
 
-.. _sdk_qtquick_pinchevent_scale-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| scale : real                                                                                                                                                                                                                                                                                                 |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ scale : real                                                    |
-+--------------------------------------------------------------------------+
-
-These properties hold the scale factor determined by the change in
-distance between the two touch points.
+These properties hold the scale factor determined by the change in distance between the two touch points.
 
 -  ``scale`` is the current scale factor.
 -  ``previousScale`` is the scale factor of the previous event.
 
 When a pinch gesture is started, the scale is ``1.0``.
 
-| 
+.. _sdk_qtquick_pinchevent_startCenter:
 
-.. _sdk_qtquick_pinchevent_startCenter-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| startCenter : QPointF                                                                                                                                                                                                                                                                                        |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ startCenter : QPointF                                           |
-+--------------------------------------------------------------------------+
-
-These properties hold the position of the center point between the two
-touch points.
+These properties hold the position of the center point between the two touch points.
 
 -  ``center`` is the current center point
 -  ``previousCenter`` is the center point of the previous event.
 -  ``startCenter`` is the center point when the gesture began
 
-| 
+.. _sdk_qtquick_pinchevent_startPoint1:
 
-.. _sdk_qtquick_pinchevent_startPoint1-prop:
-
-+--------------------------------------------------------------------------+
-|        \ startPoint1 : QPointF                                           |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| startPoint1 : QPointF                                                                                                                                                                                                                                                                                        |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 These properties provide the actual touch points generating the pinch.
 
 -  ``point1`` and ``point2`` hold the current positions of the points.
--  ``startPoint1`` and ``startPoint2`` hold the positions of the points
-   when the second point was touched.
+-  ``startPoint1`` and ``startPoint2`` hold the positions of the points when the second point was touched.
 
-| 
+.. _sdk_qtquick_pinchevent_startPoint2:
 
-.. _sdk_qtquick_pinchevent_startPoint2-prop:
-
-+--------------------------------------------------------------------------+
-|        \ startPoint2 : QPointF                                           |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| startPoint2 : QPointF                                                                                                                                                                                                                                                                                        |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 These properties provide the actual touch points generating the pinch.
 
 -  ``point1`` and ``point2`` hold the current positions of the points.
--  ``startPoint1`` and ``startPoint2`` hold the positions of the points
-   when the second point was touched.
+-  ``startPoint1`` and ``startPoint2`` hold the positions of the points when the second point was touched.
 
-| 

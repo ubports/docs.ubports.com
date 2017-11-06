@@ -1,4 +1,5 @@
 .. _sdk_qtqml_date:
+
 QtQml Date
 ==========
 
@@ -11,36 +12,20 @@ Provides date functions
 Methods
 -------
 
--  string
-   **:ref:`fromLocaleDateString <sdk_qtqml_date#fromLocaleDateString-method>`**\ (locale,
-   dateString, format)
--  string
-   **:ref:`fromLocaleString <sdk_qtqml_date#fromLocaleString-method>`**\ (locale,
-   dateTimeString, format)
--  string
-   **:ref:`fromLocaleTimeString <sdk_qtqml_date#fromLocaleTimeString-method>`**\ (locale,
-   timeString, format)
--  string
-   **:ref:`timeZoneUpdated <sdk_qtqml_date#timeZoneUpdated-method>`**\ ()
--  string
-   **:ref:`toLocaleDateString <sdk_qtqml_date#toLocaleDateString-method>`**\ (locale,
-   format)
--  string
-   **:ref:`toLocaleString <sdk_qtqml_date#toLocaleString-method>`**\ (locale,
-   format)
--  string
-   **:ref:`toLocaleTimeString <sdk_qtqml_date#toLocaleTimeString-method>`**\ (locale,
-   format)
+-  string :ref:`fromLocaleDateString <sdk_qtqml_date_fromLocaleDateString>`\ (locale, dateString, format)
+-  string :ref:`fromLocaleString <sdk_qtqml_date_fromLocaleString>`\ (locale, dateTimeString, format)
+-  string :ref:`fromLocaleTimeString <sdk_qtqml_date_fromLocaleTimeString>`\ (locale, timeString, format)
+-  string :ref:`timeZoneUpdated <sdk_qtqml_date_timeZoneUpdated>`\ ()
+-  string :ref:`toLocaleDateString <sdk_qtqml_date_toLocaleDateString>`\ (locale, format)
+-  string :ref:`toLocaleString <sdk_qtqml_date_toLocaleString>`\ (locale, format)
+-  string :ref:`toLocaleTimeString <sdk_qtqml_date_toLocaleTimeString>`\ (locale, format)
 
 Detailed Description
 --------------------
 
-The QML Date object extends the `JS Date
-object <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date>`_ 
-with locale aware functions.
+The QML Date object extends the `JS Date object <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date>`_  with locale aware functions.
 
-Functions that accept a locale format may be either an enumeration
-value:
+Functions that accept a locale format may be either an enumeration value:
 
 +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Locale.LongFormat     | The long version of the string; for example, returning "January" as a month name.                                                                                                                                                                                                                                                                                                        |
@@ -50,8 +35,7 @@ value:
 | Locale.NarrowFormat   | A special version for use when space is limited; for example, returning "J" as a month name. Note that the narrow format might contain the same text for different months and days or it can even be an empty string if the locale doesn't support narrow names, so you should avoid using it for date formatting. Also, for the system locale this format is the same as ShortFormat.   |
 +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-or a string specifying the format These expressions may be used for
-format dates:
+or a string specifying the format These expressions may be used for format dates:
 
 +--------------+--------------------------------------------------------------------------------------------------+
 | Expression   | Output                                                                                           |
@@ -77,10 +61,7 @@ format dates:
 | yyyy         | the year as four digit number. If the year is negative, a minus sign is prepended in addition.   |
 +--------------+--------------------------------------------------------------------------------------------------+
 
-All other input characters will be ignored. Any sequence of characters
-that are enclosed in singlequotes will be treated as text and not be
-used as an expression. Two consecutive singlequotes ("''") are replaced
-by a singlequote in the output.
+All other input characters will be ignored. Any sequence of characters that are enclosed in singlequotes will be treated as text and not be used as an expression. Two consecutive singlequotes ("''") are replaced by a singlequote in the output.
 
 Example format strings (assuming that the Date is the 20 July 1969):
 
@@ -126,10 +107,7 @@ These expressions may be used for formatting time:
 | t            | the timezone (for example "CEST")                                       |
 +--------------+-------------------------------------------------------------------------+
 
-All other input characters will be ignored. Any sequence of characters
-that are enclosed in singlequotes will be treated as text and not be
-used as an expression. Two consecutive singlequotes ("''") are replaced
-by a singlequote in the output.
+All other input characters will be ignored. Any sequence of characters that are enclosed in singlequotes will be treated as text and not be used as an expression. Two consecutive singlequotes ("''") are replaced by a singlequote in the output.
 
 Example format strings (assuming that the QTime is 14:13:09.042)
 
@@ -145,39 +123,26 @@ Example format strings (assuming that the QTime is 14:13:09.042)
 
 If the date is invalid, an empty string will be returned.
 
-Note: Using the locale-aware functions to perform date or time
-formatting can result in incorrectly formatted times, due to an
-inconsistency in specification between Qt and JS. ECMA-262 specifies
-that historical dates should be intrepreted by projecting the current
-rules for daylight-saving onto past years, while Qt uses historical data
-(where available) to determine whether daylight-saving was in effect for
-a given date. Therefore, constructing a Date value in JS and converting
-it to a string using the locale-aware functions can yield a result
-incorrect by one hour, if DST is currently in effect, while it was not
-for the time specified, or vice versa.
+Note: Using the locale-aware functions to perform date or time formatting can result in incorrectly formatted times, due to an inconsistency in specification between Qt and JS. ECMA-262 specifies that historical dates should be intrepreted by projecting the current rules for daylight-saving onto past years, while Qt uses historical data (where available) to determine whether daylight-saving was in effect for a given date. Therefore, constructing a Date value in JS and converting it to a string using the locale-aware functions can yield a result incorrect by one hour, if DST is currently in effect, while it was not for the time specified, or vice versa.
 
 **See also** :ref:`Locale <sdk_qtqml_locale>`.
 
 Method Documentation
 --------------------
 
-.. _sdk_qtqml_date_string fromLocaleDateString-method:
+.. _sdk_qtqml_date_fromLocaleDateString:
 
-+--------------------------------------------------------------------------+
-|        \ string fromLocaleDateString(locale, dateString, format)         |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| string fromLocaleDateString(locale, dateString, format)                                                                                                                                                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Converts the date string *dateString* to a :ref:`Date <sdk_qtqml_date>`
-object using *locale* and *format*.
+Converts the date string *dateString* to a :ref:`Date <sdk_qtqml_date>` object using *locale* and *format*.
 
-If *format* is not specified, :ref:`Locale.LongFormat <sdk_qtqml_locale>`
-will be used.
+If *format* is not specified, :ref:`Locale.LongFormat <sdk_qtqml_locale>` will be used.
 
 If *locale* is not specified, the default locale will be used.
 
-The following example shows the current date first being formatted as a
-date string using the default locale and format, then parsed back again
-in the same manner:
+The following example shows the current date first being formatted as a date string using the default locale and format, then parsed back again in the same manner:
 
 .. code:: cpp
 
@@ -192,24 +157,19 @@ in the same manner:
         }
     }
 
-| 
+.. _sdk_qtqml_date_fromLocaleString:
 
-.. _sdk_qtqml_date_string fromLocaleString-method:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| string fromLocaleString(locale, dateTimeString, format)                                                                                                                                                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ string fromLocaleString(locale, dateTimeString, format)         |
-+--------------------------------------------------------------------------+
+Converts the datetime string *dateTimeString* to a :ref:`Date <sdk_qtqml_date>` object using *locale* and *format*.
 
-Converts the datetime string *dateTimeString* to a
-:ref:`Date <sdk_qtqml_date>` object using *locale* and *format*.
-
-If *format* is not specified, :ref:`Locale.LongFormat <sdk_qtqml_locale>`
-will be used.
+If *format* is not specified, :ref:`Locale.LongFormat <sdk_qtqml_locale>` will be used.
 
 If *locale* is not specified, the default locale will be used.
 
-The following example shows a datetime being parsed from a datetime
-string in a certain format using the default locale:
+The following example shows a datetime being parsed from a datetime string in a certain format using the default locale:
 
 .. code:: cpp
 
@@ -222,25 +182,19 @@ string in a certain format using the default locale:
         }
     }
 
-| 
+.. _sdk_qtqml_date_fromLocaleTimeString:
 
-.. _sdk_qtqml_date_string fromLocaleTimeString-method:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| string fromLocaleTimeString(locale, timeString, format)                                                                                                                                                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ string fromLocaleTimeString(locale, timeString, format)         |
-+--------------------------------------------------------------------------+
+Converts the time string *timeString* to a :ref:`Date <sdk_qtqml_date>` object using *locale* and *format*.
 
-Converts the time string *timeString* to a :ref:`Date <sdk_qtqml_date>`
-object using *locale* and *format*.
-
-If *format* is not specified, :ref:`Locale.LongFormat <sdk_qtqml_locale>`
-will be used.
+If *format* is not specified, :ref:`Locale.LongFormat <sdk_qtqml_locale>` will be used.
 
 If *locale* is not specified, the default locale will be used.
 
-The following example shows the current time first being formatted as a
-time string using the default locale and a short format, then parsed
-back again in the same manner:
+The following example shows the current time first being formatted as a time string using the default locale and a short format, then parsed back again in the same manner:
 
 .. code:: cpp
 
@@ -255,28 +209,19 @@ back again in the same manner:
         }
     }
 
-| 
+.. _sdk_qtqml_date_timeZoneUpdated:
 
-.. _sdk_qtqml_date_string timeZoneUpdated-method:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| string timeZoneUpdated()                                                                                                                                                                                                                                                                                     |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ string timeZoneUpdated()                                        |
-+--------------------------------------------------------------------------+
+Informs the JS engine that the system's timezone has been changed, which is necessary for the correct manipulation of datetime data.
 
-Informs the JS engine that the system's timezone has been changed, which
-is necessary for the correct manipulation of datetime data.
+JS stores Date objects in UTC time; all access to and from Date components in local time involves the application of the current offset from UTC. If the current offset changes due to the timezone being updated, the JS engine needs to be informed so that it can recalculate the offset.
 
-JS stores Date objects in UTC time; all access to and from Date
-components in local time involves the application of the current offset
-from UTC. If the current offset changes due to the timezone being
-updated, the JS engine needs to be informed so that it can recalculate
-the offset.
+This function should be called after the system's timezone has been updated.
 
-This function should be called after the system's timezone has been
-updated.
-
-For example, an application that changes the timezone would call
-timeZoneUpdated() after setting the new time zone:
+For example, an application that changes the timezone would call timeZoneUpdated() after setting the new time zone:
 
 .. code:: cpp
 
@@ -286,24 +231,19 @@ timeZoneUpdated() after setting the new time zone:
         Date.timeZoneUpdated()
     }
 
-| 
+.. _sdk_qtqml_date_toLocaleDateString:
 
-.. _sdk_qtqml_date_string toLocaleDateString-method:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| string toLocaleDateString(locale, format)                                                                                                                                                                                                                                                                    |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ string toLocaleDateString(locale, format)                       |
-+--------------------------------------------------------------------------+
+Converts the Date to a string containing the date suitable for the specified *locale* in the specified *format*.
 
-Converts the Date to a string containing the date suitable for the
-specified *locale* in the specified *format*.
-
-If *format* is not specified, :ref:`Locale.LongFormat <sdk_qtqml_locale>`
-will be used.
+If *format* is not specified, :ref:`Locale.LongFormat <sdk_qtqml_locale>` will be used.
 
 If *locale* is not specified, the default locale will be used.
 
-The following example shows the current date formatted for the German
-locale:
+The following example shows the current date formatted for the German locale:
 
 .. code:: cpp
 
@@ -312,24 +252,19 @@ locale:
         text: "The date is: " + new Date().toLocaleDateString(Qt.locale("de_DE"))
     }
 
-| 
+.. _sdk_qtqml_date_toLocaleString:
 
-.. _sdk_qtqml_date_string toLocaleString-method:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| string toLocaleString(locale, format)                                                                                                                                                                                                                                                                        |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ string toLocaleString(locale, format)                           |
-+--------------------------------------------------------------------------+
+Converts the Date to a string containing the date and time suitable for the specified *locale* in the specified *format*.
 
-Converts the Date to a string containing the date and time suitable for
-the specified *locale* in the specified *format*.
-
-If *format* is not specified, :ref:`Locale.LongFormat <sdk_qtqml_locale>`
-will be used.
+If *format* is not specified, :ref:`Locale.LongFormat <sdk_qtqml_locale>` will be used.
 
 If *locale* is not specified, the default locale will be used.
 
-The following example shows the current date and time formatted for the
-German locale:
+The following example shows the current date and time formatted for the German locale:
 
 .. code:: cpp
 
@@ -338,24 +273,19 @@ German locale:
         text: "The date is: " + new Date().toLocaleString(Qt.locale("de_DE"))
     }
 
-| 
+.. _sdk_qtqml_date_toLocaleTimeString:
 
-.. _sdk_qtqml_date_string toLocaleTimeString-method:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| string toLocaleTimeString(locale, format)                                                                                                                                                                                                                                                                    |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ string toLocaleTimeString(locale, format)                       |
-+--------------------------------------------------------------------------+
+Converts the Date to a string containing the time suitable for the specified *locale* in the specified *format*.
 
-Converts the Date to a string containing the time suitable for the
-specified *locale* in the specified *format*.
-
-If *format* is not specified, :ref:`Locale.LongFormat <sdk_qtqml_locale>`
-will be used.
+If *format* is not specified, :ref:`Locale.LongFormat <sdk_qtqml_locale>` will be used.
 
 If *locale* is not specified, the default locale will be used.
 
-The following example shows the current time formatted for the German
-locale:
+The following example shows the current time formatted for the German locale:
 
 .. code:: cpp
 
@@ -364,4 +294,3 @@ locale:
         text: "The date is: " + new Date().toLocaleTimeString(Qt.locale("de_DE"))
     }
 
-| 

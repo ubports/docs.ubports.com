@@ -1,19 +1,13 @@
 .. _sdk_qtquick_qt_quick_particles_examples_-_customparticle:
+
 QtQuick Qt Quick Particles Examples - CustomParticle
 ====================================================
 
 
 
-|image0|
+This is a collection of small QML examples relating to using `CustomParticle </sdk/apps/qml/QtQuick/Particles.CustomParticle/>`_  in the particle system. Each example is a small QML file emphasizing a different way to use `CustomParticle </sdk/apps/qml/QtQuick/Particles.CustomParticle/>`_ .
 
-This is a collection of small QML examples relating to using
-`CustomParticle </sdk/apps/qml/QtQuick/Particles.CustomParticle/>`_  in
-the particle system. Each example is a small QML file emphasizing a
-different way to use
-`CustomParticle </sdk/apps/qml/QtQuick/Particles.CustomParticle/>`_ .
-
-Blur Particles adds a blur effect to the particles, which increases over
-the particle's life time. It uses a custom vertex shader:
+Blur Particles adds a blur effect to the particles, which increases over the particle's life time. It uses a custom vertex shader:
 
 .. code:: qml
 
@@ -45,11 +39,9 @@ to propagate life time simulation to a custom fragment shader:
             gl_FragColor = mix(texture2D(source, qt_TexCoord0), texture2D(blurred, qt_TexCoord0), min(1.0,fBlur*3.0)) * fFade;
         }"
 
-which has access to both the normal image sampler and a blurred sampler,
-the image plus a :ref:`ShaderEffect <sdk_qtquick_shadereffect>`.
+which has access to both the normal image sampler and a blurred sampler, the image plus a :ref:`ShaderEffect <sdk_qtquick_shadereffect>`.
 
-Fragment Shader just uses the particle system as a vertex delivery
-system.
+Fragment Shader just uses the particle system as a vertex delivery system.
 
 .. code:: qml
 
@@ -64,10 +56,7 @@ system.
             gl_FragColor = vec4(fPos.x*2.0 - fPos.y, fPos.y*2.0 - fPos.x, fPos.x*fPos.y*2.0, 0.0) * circleFactor * fFade;
         }"
 
-Image Colors uses
-`CustomParticle </sdk/apps/qml/QtQuick/Particles.CustomParticle/>`_  to
-assign colors to particles based on their location in a picture. The
-vertex shader,
+Image Colors uses `CustomParticle </sdk/apps/qml/QtQuick/Particles.CustomParticle/>`_  to assign colors to particles based on their location in a picture. The vertex shader,
 
 .. code:: qml
 
@@ -88,8 +77,7 @@ vertex shader,
         }
     "
 
-passes along the starting position for each vertex to the fragment
-shader,
+passes along the starting position for each vertex to the fragment shader,
 
 .. code:: qml
 
@@ -115,6 +103,4 @@ Files:
 -  particles/customparticle/customparticle.pro
 -  particles/customparticle/customparticle.qmlproject
 -  particles/customparticle/customparticle.qrc
-
-.. |image0| image:: /media/sdk/apps/qml/qtquick-particles-customparticle-example/images/qml-customparticle-example.png
 

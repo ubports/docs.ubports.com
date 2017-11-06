@@ -1,4 +1,5 @@
 .. _sdk_qtqml_connections:
+
 QtQml Connections
 =================
 
@@ -11,17 +12,15 @@ Describes generalized connections to signals
 Properties
 ----------
 
--  :ref:`ignoreUnknownSignals <sdk_qtqml_connections_ignoreUnknownSignals-prop>`
-   : bool
--  :ref:`target <sdk_qtqml_connections_target-prop>` : Object
+-  :ref:`ignoreUnknownSignals <sdk_qtqml_connections_ignoreUnknownSignals>` : bool
+-  :ref:`target <sdk_qtqml_connections_target>` : Object
 
 Detailed Description
 --------------------
 
 A Connections object creates a connection to a QML signal.
 
-When connecting to signals in QML, the usual way is to create an
-"on<Signal>" handler that reacts when a signal is received, like this:
+When connecting to signals in QML, the usual way is to create an "on<Signal>" handler that reacts when a signal is received, like this:
 
 .. code:: qml
 
@@ -29,8 +28,7 @@ When connecting to signals in QML, the usual way is to create an
         onClicked: { foo(parameters) }
     }
 
-However, it is not possible to connect to a signal in this way in some
-cases, such as when:
+However, it is not possible to connect to a signal in this way in some cases, such as when:
 
 -  Multiple connections to the same signal are required
 -  Creating connections outside the scope of the signal sender
@@ -38,8 +36,7 @@ cases, such as when:
 
 When any of these are needed, the Connections type can be used instead.
 
-For example, the above code can be changed to use a Connections object,
-like this:
+For example, the above code can be changed to use a Connections object, like this:
 
 .. code:: qml
 
@@ -49,8 +46,7 @@ like this:
         }
     }
 
-More generally, the Connections object can be a child of some object
-other than the sender of the signal:
+More generally, the Connections object can be a child of some object other than the sender of the signal:
 
 .. code:: qml
 
@@ -71,32 +67,25 @@ other than the sender of the signal:
 Property Documentation
 ----------------------
 
-.. _sdk_qtqml_connections_ignoreUnknownSignals-prop:
+.. _sdk_qtqml_connections_ignoreUnknownSignals:
 
-+--------------------------------------------------------------------------+
-|        \ ignoreUnknownSignals : bool                                     |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ignoreUnknownSignals : bool                                                                                                                                                                                                                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Normally, a connection to a non-existent signal produces runtime errors.
 
-If this property is set to ``true``, such errors are ignored. This is
-useful if you intend to connect to different types of objects, handling
-a different set of signals for each object.
+If this property is set to ``true``, such errors are ignored. This is useful if you intend to connect to different types of objects, handling a different set of signals for each object.
 
-| 
+.. _sdk_qtqml_connections_target:
 
-.. _sdk_qtqml_connections_target-prop:
-
-+--------------------------------------------------------------------------+
-|        \ target : Object                                                 |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| target : Object                                                                                                                                                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the object that sends the signal.
 
-If this property is not set, the ``target`` defaults to the parent of
-the Connection.
+If this property is not set, the ``target`` defaults to the parent of the Connection.
 
-If set to null, no connection is made and any signal handlers are
-ignored until the target is not null.
+If set to null, no connection is made and any signal handlers are ignored until the target is not null.
 
-| 

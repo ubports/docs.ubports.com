@@ -1,17 +1,13 @@
 .. _sdk_qtquick_qt_quick_particles_examples_-_emitters:
+
 QtQuick Qt Quick Particles Examples - Emitters
 ==============================================
 
 
 
-|image0|
+This is a collection of small QML examples relating to using Emitters in the particle system. Each example is a small QML file emphasizing a particular type or feature.
 
-This is a collection of small QML examples relating to using Emitters in
-the particle system. Each example is a small QML file emphasizing a
-particular type or feature.
-
-Velocity from motion gives the effect of strong particle motion through
-primarily moving the emitters:
+Velocity from motion gives the effect of strong particle motion through primarily moving the emitters:
 
 .. code:: qml
 
@@ -29,8 +25,7 @@ primarily moving the emitters:
         sizeVariation: 4
     }
 
-Burst and pulse calls the burst and pulse methods on two idential
-emitters.
+Burst and pulse calls the burst and pulse methods on two idential emitters.
 
 .. code:: qml
 
@@ -42,13 +37,9 @@ emitters.
             lastWasPulse = true;
         }
 
-Note how burst takes an argument of number of particles to emit, and
-pulse takes an argument of number of milliseconds to emit for. This
-gives a slightly different behaviour, which is easy to see in this
-example.
+Note how burst takes an argument of number of particles to emit, and pulse takes an argument of number of milliseconds to emit for. This gives a slightly different behaviour, which is easy to see in this example.
 
-Custom Emitter connects to the emitParticles signal to set arbitrary
-values on particle data as they're emitted;
+Custom Emitter connects to the emitParticles signal to set arbitrary values on particle data as they're emitted;
 
 .. code:: qml
 
@@ -72,8 +63,7 @@ values on particle data as they're emitted;
 
 This is used to emit curving particles in six rotating spokes.
 
-Emit mask sets an image mask on the Emitter, to emit out of an arbitrary
-shape.
+Emit mask sets an image mask on the Emitter, to emit out of an arbitrary shape.
 
 .. code:: qml
 
@@ -81,13 +71,9 @@ shape.
         source: "../../images/starfish_mask.png"
     }
 
-Maximum emitted emits no more than a certain number of particles at a
-time. This example makes it easy to see what happens when the limit is
-reached.
+Maximum emitted emits no more than a certain number of particles at a time. This example makes it easy to see what happens when the limit is reached.
 
-Shape and Direction emits particles out of an unfilled Ellipse shape,
-using a
-`TargetDirection </sdk/apps/qml/QtQuick/Particles.TargetDirection/>`_ 
+Shape and Direction emits particles out of an unfilled Ellipse shape, using a `TargetDirection </sdk/apps/qml/QtQuick/Particles.TargetDirection/>`_ 
 
 .. code:: qml
 
@@ -99,13 +85,9 @@ using a
         magnitude: 0.5
     }
 
-This sends the particles towards the center of the ellipse with
-proportional speed, keeping the ellipse outline as they move to the
-center.
+This sends the particles towards the center of the ellipse with proportional speed, keeping the ellipse outline as they move to the center.
 
-`TrailEmitter </sdk/apps/qml/QtQuick/Particles.TrailEmitter/>`_  uses
-that type to add smoke particles to trail the fire particles in the
-scene.
+`TrailEmitter </sdk/apps/qml/QtQuick/Particles.TrailEmitter/>`_  uses that type to add smoke particles to trail the fire particles in the scene.
 
 .. code:: qml
 
@@ -141,6 +123,4 @@ Files:
 -  particles/emitters/emitters.pro
 -  particles/emitters/emitters.qmlproject
 -  particles/emitters/emitters.qrc
-
-.. |image0| image:: /media/sdk/apps/qml/qtquick-particles-emitters-example/images/qml-emitters-example.png
 

@@ -1,4 +1,5 @@
 .. _sdk_qtquick_regexpvalidator:
+
 QtQuick RegExpValidator
 =======================
 
@@ -11,30 +12,25 @@ Provides a string validator
 Properties
 ----------
 
--  :ref:`regExp <sdk_qtquick_regexpvalidator_regExp-prop>` : regExp
+-  :ref:`regExp <sdk_qtquick_regexpvalidator_regExp>` : regExp
 
 Detailed Description
 --------------------
 
-The :ref:`RegExpValidator <sdk_qtquick_regexpvalidator>` type provides a
-validator, which counts as valid any string which matches a specified
-regular expression.
+The :ref:`RegExpValidator <sdk_qtquick_regexpvalidator>` type provides a validator, which counts as valid any string which matches a specified regular expression.
 
 Property Documentation
 ----------------------
 
-.. _sdk_qtquick_regexpvalidator_-prop:
+.. _sdk_qtquick_regexpvalidator_regExp:
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ regExp : `regExp <sdk_qtquick_regexpvalidator#regExp-prop>`|
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| regExp : :ref:`regExp <sdk_qtquick_regexpvalidator_regExp>`                                                                                                                                                                                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the regular expression used for validation.
 
-Note that this property should be a regular expression in JS syntax, e.g
-/a/ for the regular expression matching "a".
+Note that this property should be a regular expression in JS syntax, e.g /a/ for the regular expression matching "a".
 
-By default, this property contains a regular expression with the pattern
-.\* that matches any string.
+By default, this property contains a regular expression with the pattern .\* that matches any string.
 
-| 

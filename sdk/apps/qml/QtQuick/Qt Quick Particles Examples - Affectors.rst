@@ -1,17 +1,13 @@
 .. _sdk_qtquick_qt_quick_particles_examples_-_affectors:
+
 QtQuick Qt Quick Particles Examples - Affectors
 ===============================================
 
 
 
-|image0|
+This is a collection of small QML examples relating to using Affectors in the particle system. Each example is a small QML file emphasizing a particular type or feature.
 
-This is a collection of small QML examples relating to using Affectors
-in the particle system. Each example is a small QML file emphasizing a
-particular type or feature.
-
-Age demonstrates using an Age affector to prematurely end the lives of
-particles.
+Age demonstrates using an Age affector to prematurely end the lives of particles.
 
 .. code:: qml
 
@@ -23,14 +19,9 @@ particles.
         advancePosition: false
     }
 
-As you move the affector around the screen, the particles inside it
-(which haven't already been affected) jump to a period near the end of
-their life. This gives them a short period to finish fading out, but
-changing lifeLeft to 0 (the default), would cause them to reach the end
-of their life instantly.
+As you move the affector around the screen, the particles inside it (which haven't already been affected) jump to a period near the end of their life. This gives them a short period to finish fading out, but changing lifeLeft to 0 (the default), would cause them to reach the end of their life instantly.
 
-Attractor demonstrates using an Attractor affector to simulate a black
-hole
+Attractor demonstrates using an Attractor affector to simulate a black hole
 
 .. code:: qml
 
@@ -40,16 +31,9 @@ hole
         proportionalToDistance: Attractor.InverseQuadratic
     }
 
-All particles in the scene, including the rocket ship's exhaust and
-pellets, are pulled towards the black hole. This effect is stronger
-closer to the black hole, so the asteroids near the top of the screen
-are barely affected at all, while the ones towards the middle sometimes
-curve drastically. To complete the effect, an Age affector covers the
-black hole to destroy particles which come in contact with it.
+All particles in the scene, including the rocket ship's exhaust and pellets, are pulled towards the black hole. This effect is stronger closer to the black hole, so the asteroids near the top of the screen are barely affected at all, while the ones towards the middle sometimes curve drastically. To complete the effect, an Age affector covers the black hole to destroy particles which come in contact with it.
 
-Custom Affector manipulates the properties of the particles directly in
-javascript. One Affector is used to make the leaves rock back and forth
-as they fall, looking more leaf-like than just spinning in circles:
+Custom Affector manipulates the properties of the particles directly in javascript. One Affector is used to make the leaves rock back and forth as they fall, looking more leaf-like than just spinning in circles:
 
 .. code:: qml
 
@@ -87,8 +71,7 @@ as they fall, looking more leaf-like than just spinning in circles:
         }
     }
 
-Another is used to provide a slightly varying friction to the leaves as
-they 'land', to look more natural:
+Another is used to provide a slightly varying friction to the leaves as they 'land', to look more natural:
 
 .. code:: qml
 
@@ -116,9 +99,7 @@ they 'land', to look more natural:
         }
     }
 
-Friction is similar to the falling leaves in the custom affector, except
-that it uses a flat friction the whole way down instead of custom
-affectors.
+Friction is similar to the falling leaves in the custom affector, except that it uses a flat friction the whole way down instead of custom affectors.
 
 .. code:: qml
 
@@ -128,8 +109,7 @@ affectors.
         factor: 0.4
     }
 
-Gravity is a convenience affector for applying a constant acceleration
-to particles inside it
+Gravity is a convenience affector for applying a constant acceleration to particles inside it
 
 .. code:: qml
 
@@ -139,9 +119,7 @@ to particles inside it
         angle: ground.rotation + 90
     }
 
-`GroupGoal </sdk/apps/qml/QtQuick/Particles.GroupGoal/>`_  sets up two
-particle groups for flaming and non-flaming balls, and gives you various
-ways to transition between them.
+`GroupGoal </sdk/apps/qml/QtQuick/Particles.GroupGoal/>`_  sets up two particle groups for flaming and non-flaming balls, and gives you various ways to transition between them.
 
 .. code:: qml
 
@@ -161,12 +139,7 @@ ways to transition between them.
         }
     }
 
-The non-flaming balls have a one in a hundred chance of lighting on
-their own each second, but they also have a
-`GroupGoal </sdk/apps/qml/QtQuick/Particles.GroupGoal/>`_  set on the
-whole group. This affector affects all particles of the unlit group,
-when colliding with particles in the lit group, and cause them to move
-to the lighting group.
+The non-flaming balls have a one in a hundred chance of lighting on their own each second, but they also have a `GroupGoal </sdk/apps/qml/QtQuick/Particles.GroupGoal/>`_  set on the whole group. This affector affects all particles of the unlit group, when colliding with particles in the lit group, and cause them to move to the lighting group.
 
 .. code:: qml
 
@@ -176,9 +149,7 @@ to the lighting group.
         to: {"lit":1}
     }
 
-lighting is an intermediate group so that the glow builds up and the
-transition is less jarring. So it automatically moves into the lit group
-after 100ms.
+lighting is an intermediate group so that the glow builds up and the transition is less jarring. So it automatically moves into the lit group after 100ms.
 
 .. code:: qml
 
@@ -201,11 +172,7 @@ after 100ms.
             id: fireballSmoke
             group: "smoke"
 
-The lit group also has TrailEmitters on it for additional fire and
-smoke, but does not transition anywhere. There are two more
-`GroupGoal </sdk/apps/qml/QtQuick/Particles.GroupGoal/>`_  objects that
-allow particles in the unlit group to transition to the lighting group
-(and then to the lit group).
+The lit group also has TrailEmitters on it for additional fire and smoke, but does not transition anywhere. There are two more `GroupGoal </sdk/apps/qml/QtQuick/Particles.GroupGoal/>`_  objects that allow particles in the unlit group to transition to the lighting group (and then to the lit group).
 
 .. code:: qml
 
@@ -221,9 +188,7 @@ allow particles in the unlit group to transition to the lighting group
         shape: MaskShape {source: "../../images/matchmask.png"}
     }
 
-The first is just an area bound to the location of an image of a pilot
-flame. When unlit balls pass through the flame, they go straight to lit
-because the pilot flame is so hot.
+The first is just an area bound to the location of an image of a pilot flame. When unlit balls pass through the flame, they go straight to lit because the pilot flame is so hot.
 
 .. code:: qml
 
@@ -239,13 +204,9 @@ because the pilot flame is so hot.
         y: ma.mouseY - height/2
     }
 
-The second is bound to the location of the last pointer interaction, so
-that touching or clicking on unlit balls (which is hard due to their
-constant movement) causes them to move to the lighting group.
+The second is bound to the location of the last pointer interaction, so that touching or clicking on unlit balls (which is hard due to their constant movement) causes them to move to the lighting group.
 
-Move shows some simple effects you can get by altering trajectory
-midway. The red particles have an affector that affects their position,
-jumping them forwards by 120px.
+Move shows some simple effects you can get by altering trajectory midway. The red particles have an affector that affects their position, jumping them forwards by 120px.
 
 .. code:: qml
 
@@ -258,9 +219,7 @@ jumping them forwards by 120px.
         position: PointDirection { x: 120; }
     }
 
-The green particles have an affector that affects their velocity, but
-with some angle variation. By adding some random direction velocity to
-their existing forwards velocity, they begin to spray off in a cone.
+The green particles have an affector that affects their velocity, but with some angle variation. By adding some random direction velocity to their existing forwards velocity, they begin to spray off in a cone.
 
 .. code:: qml
 
@@ -274,11 +233,7 @@ their existing forwards velocity, they begin to spray off in a cone.
         velocity: AngleDirection { angleVariation:360; magnitude: 72 }
     }
 
-The blue particles have an affector that affects their acceleration, and
-because it sets relative to false this resets the acceleration instead
-of adding to it. Once the blue particles reach the affector, their
-horizontal velocity stops increasing as their vertical velocity
-decreases.
+The blue particles have an affector that affects their acceleration, and because it sets relative to false this resets the acceleration instead of adding to it. Once the blue particles reach the affector, their horizontal velocity stops increasing as their vertical velocity decreases.
 
 .. code:: qml
 
@@ -293,10 +248,7 @@ decreases.
         acceleration: PointDirection { y: -80; }
     }
 
-`SpriteGoal </sdk/apps/qml/QtQuick/Particles.SpriteGoal/>`_  has an
-affector which interacts with the sprite engine of particles, if they
-are being drawn as sprites by
-`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_ .
+`SpriteGoal </sdk/apps/qml/QtQuick/Particles.SpriteGoal/>`_  has an affector which interacts with the sprite engine of particles, if they are being drawn as sprites by `ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_ .
 
 .. code:: qml
 
@@ -310,16 +262,9 @@ are being drawn as sprites by
         height: 60
     }
 
-The `SpriteGoal </sdk/apps/qml/QtQuick/Particles.SpriteGoal/>`_  follows
-the image of the rocket ship on screen, and when it interacts with
-particles drawn by
-`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_  as
-sprites, it instructs them to move immediately to the "explode" state,
-which in this case is the animation of the asteroid breaking into many
-pieces.
+The `SpriteGoal </sdk/apps/qml/QtQuick/Particles.SpriteGoal/>`_  follows the image of the rocket ship on screen, and when it interacts with particles drawn by `ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_  as sprites, it instructs them to move immediately to the "explode" state, which in this case is the animation of the asteroid breaking into many pieces.
 
-Turbulence has a flame with smoke, and both sets of particles being
-affected by a Turbulence affector. This gives a faint wind effect.
+Turbulence has a flame with smoke, and both sets of particles being affected by a Turbulence affector. This gives a faint wind effect.
 
 .. code:: qml
 
@@ -334,12 +279,9 @@ affected by a Turbulence affector. This gives a faint wind effect.
         NumberAnimation on strength{from: 16; to: 64; easing.type: Easing.InOutBounce; duration: 1800; loops: -1}
     }
 
-To make the wind change direction, subsitute a black and white noise
-image in the noiseSource parameter (it currently uses a default noise
-source).
+To make the wind change direction, subsitute a black and white noise image in the noiseSource parameter (it currently uses a default noise source).
 
-Wander uses a Wander affector to add some horizontal drift to snowflakes
-as they fall down.
+Wander uses a Wander affector to add some horizontal drift to snowflakes as they fall down.
 
 .. code:: qml
 
@@ -351,9 +293,7 @@ as they fall down.
         pace: 100*(wanderer.affectedParameter+1);
     }
 
-There are different movements given by applying the Wander to different
-attributes of the trajectory, so the example makes it easy to play
-around and see the difference.
+There are different movements given by applying the Wander to different attributes of the trajectory, so the example makes it easy to play around and see the difference.
 
 Files:
 
@@ -373,6 +313,4 @@ Files:
 -  particles/affectors/affectors.pro
 -  particles/affectors/affectors.qmlproject
 -  particles/affectors/affectors.qrc
-
-.. |image0| image:: /media/sdk/apps/qml/qtquick-particles-affectors-example/images/qml-affectors-example.png
 

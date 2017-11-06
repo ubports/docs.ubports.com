@@ -1,4 +1,5 @@
 .. _sdk_qtqml_package:
+
 QtQml Package
 =============
 
@@ -11,23 +12,16 @@ Specifies a collection of named items
 Attached Properties
 -------------------
 
--  **:ref:`name <sdk_qtqml_package#name-attached-prop>`** : string
+-  :ref:`name <sdk_qtqml_package_name>` : string
 
 Detailed Description
 --------------------
 
-The Package class is used in conjunction with
-:ref:`VisualDataModel <sdk_qtqml_visualdatamodel>` to enable delegates with
-a shared context to be provided to multiple views.
+The Package class is used in conjunction with :ref:`VisualDataModel <sdk_qtqml_visualdatamodel>` to enable delegates with a shared context to be provided to multiple views.
 
-Any item within a Package may be assigned a name via the
-:ref:`Package.name <sdk_qtqml_package#name-attached-prop>` attached
-property.
+Any item within a Package may be assigned a name via the :ref:`Package.name <sdk_qtqml_package_name>` attached property.
 
-The example below creates a Package containing two named items; *list*
-and *grid*. The third item in the package (the Rectangle) is parented to
-whichever delegate it should appear in. This allows an item to move
-between views.
+The example below creates a Package containing two named items; *list* and *grid*. The third item in the package (the Rectangle) is parented to whichever delegate it should appear in. This allows an item to move between views.
 
 .. code:: qml
 
@@ -63,9 +57,7 @@ between views.
         }
     }
 
-These named items are used as the delegates by the two views who
-reference the special VisualDataModel::parts property to select a model
-which provides the chosen delegate.
+These named items are used as the delegates by the two views who reference the special VisualDataModel::parts property to select a model which provides the chosen delegate.
 
 .. code:: qml
 
@@ -89,16 +81,16 @@ which provides the chosen delegate.
         model: visualModel.parts.grid
     }
 
-**See also** Qt Quick Examples - Views, Qt Quick Demo - Photo Viewer,
-and `Qt QML </sdk/apps/qml/QtQml/qtqml-index/>`_ .
+**See also** Qt Quick Examples - Views, Qt Quick Demo - Photo Viewer, and `Qt QML </sdk/apps/qml/QtQml/qtqml-index/>`_ .
 
 Attached Property Documentation
 -------------------------------
 
-+--------------------------------------------------------------------------+
-|        \ Package.name : string                                           |
-+--------------------------------------------------------------------------+
+.. _sdk_qtqml_package_name:
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Package.name : string                                                                                                                                                                                                                                                                                        |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This attached property holds the name of an item within a Package.
 
-| 

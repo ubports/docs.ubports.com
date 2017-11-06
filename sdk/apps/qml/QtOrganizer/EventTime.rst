@@ -1,9 +1,9 @@
 .. _sdk_qtorganizer_eventtime:
+
 QtOrganizer EventTime
 =====================
 
-The EventTime element contains the start and end dates and times of a
-recurring event series, or occurrence of an event.
+The EventTime element contains the start and end dates and times of a recurring event series, or occurrence of an event.
 
 +---------------------+--------------------------+
 | Import Statement:   | import QtOrganizer 5.0   |
@@ -12,16 +12,14 @@ recurring event series, or occurrence of an event.
 Properties
 ----------
 
--  :ref:`allDay <sdk_qtorganizer_eventtime_allDay-prop>` : date
--  :ref:`endDateTime <sdk_qtorganizer_eventtime_endDateTime-prop>`
-   : date
--  :ref:`startDateTime <sdk_qtorganizer_eventtime_startDateTime-prop>`
-   : date
+-  :ref:`allDay <sdk_qtorganizer_eventtime_allDay>` : date
+-  :ref:`endDateTime <sdk_qtorganizer_eventtime_endDateTime>` : date
+-  :ref:`startDateTime <sdk_qtorganizer_eventtime_startDateTime>` : date
 
 Signals
 -------
 
--  :ref:`onDetailChanged <sdk_qtorganizer_eventtime_onDetailChanged-signal>`\ ()
+-  :ref:`onDetailChanged <sdk_qtorganizer_eventtime_onDetailChanged>`\ ()
 
 Detailed Description
 --------------------
@@ -37,47 +35,38 @@ The following fields are supported:
 Property Documentation
 ----------------------
 
-.. _sdk_qtorganizer_eventtime_allDay-prop:
+.. _sdk_qtorganizer_eventtime_allDay:
 
-+--------------------------------------------------------------------------+
-|        \ allDay : date                                                   |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| allDay : date                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-This property holds whether the time is significant in the start
-datetime.
+This property holds whether the time is significant in the start datetime.
 
-| 
+.. _sdk_qtorganizer_eventtime_endDateTime:
 
-.. _sdk_qtorganizer_eventtime_endDateTime-prop:
-
-+--------------------------------------------------------------------------+
-|        \ endDateTime : date                                              |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| endDateTime : date                                                                                                                                                                                                                                                                                           |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the end date and time value of the event.
 
-| 
+.. _sdk_qtorganizer_eventtime_startDateTime:
 
-.. _sdk_qtorganizer_eventtime_startDateTime-prop:
-
-+--------------------------------------------------------------------------+
-|        \ startDateTime : date                                            |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| startDateTime : date                                                                                                                                                                                                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the start date and time value of the event.
-
-| 
 
 Signal Documentation
 --------------------
 
-.. _sdk_qtorganizer_eventtime_onDetailChanged()-prop:
+.. _sdk_qtorganizer_eventtime_onDetailChanged:
 
-+--------------------------------------------------------------------------+
-|        \ onDetailChanged()                                               |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| onDetailChanged()                                                                                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-**See also**
-:ref:`Detail::onDetailChanged <sdk_qtorganizer_detail#onDetailChanged-signal>`.
+**See also** :ref:`Detail::onDetailChanged <sdk_qtorganizer_detail_onDetailChanged>`.
 
-| 

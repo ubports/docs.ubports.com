@@ -1,4 +1,5 @@
 .. _sdk_ubuntu_downloadmanager_metadata:
+
 Ubuntu.DownloadManager Metadata
 ===============================
 
@@ -11,22 +12,15 @@ Provides additional properties for downloads
 Properties
 ----------
 
--  :ref:`custom <sdk_ubuntu_downloadmanager_metadata_custom-prop>`
-   : array
--  :ref:`extract <sdk_ubuntu_downloadmanager_metadata_extract-prop>`
-   : bool
--  :ref:`showInIndicator <sdk_ubuntu_downloadmanager_metadata_showInIndicator-prop>`
-   : bool
--  :ref:`title <sdk_ubuntu_downloadmanager_metadata_title-prop>` :
-   string
+-  :ref:`custom <sdk_ubuntu_downloadmanager_metadata_custom>` : array
+-  :ref:`extract <sdk_ubuntu_downloadmanager_metadata_extract>` : bool
+-  :ref:`showInIndicator <sdk_ubuntu_downloadmanager_metadata_showInIndicator>` : bool
+-  :ref:`title <sdk_ubuntu_downloadmanager_metadata_title>` : string
 
 Detailed Description
 --------------------
 
-Metadata provides the ability to set a number of special properties on a
-:ref:`SingleDownload <sdk_ubuntu_downloadmanager_singledownload>`, e.g. to
-display a download in the transfer indicator, or automatically extract a
-download of a zip file upon completion.
+Metadata provides the ability to set a number of special properties on a :ref:`SingleDownload <sdk_ubuntu_downloadmanager_singledownload>`, e.g. to display a download in the transfer indicator, or automatically extract a download of a zip file upon completion.
 
 Example usage:
 
@@ -76,55 +70,40 @@ Example usage:
         }
     }
 
-**See also**
-:ref:`DownloadManager <sdk_ubuntu_downloadmanager_downloadmanager>`.
+**See also** :ref:`DownloadManager <sdk_ubuntu_downloadmanager_downloadmanager>`.
 
 Property Documentation
 ----------------------
 
-.. _sdk_ubuntu_downloadmanager_metadata_custom-prop:
+.. _sdk_ubuntu_downloadmanager_metadata_custom:
 
-+--------------------------------------------------------------------------+
-|        \ custom : array                                                  |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| custom : array                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Metadata specific to your application that you wish to associate with
-this download. This metadata will persist across application restarts.
+Metadata specific to your application that you wish to associate with this download. This metadata will persist across application restarts.
 
-| 
+.. _sdk_ubuntu_downloadmanager_metadata_extract:
 
-.. _sdk_ubuntu_downloadmanager_metadata_extract-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| extract : bool                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ extract : bool                                                  |
-+--------------------------------------------------------------------------+
+When set to True the download manager will attempt to automatically extract zip files when the download finishes. This property defaults to False.
 
-When set to True the download manager will attempt to automatically
-extract zip files when the download finishes. This property defaults to
-False.
+.. _sdk_ubuntu_downloadmanager_metadata_showInIndicator:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| showInIndicator : bool                                                                                                                                                                                                                                                                                       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_ubuntu_downloadmanager_metadata_showInIndicator-prop:
+Specifies whether this download should be displayed in the transfers indicator, defaults to False.
 
-+--------------------------------------------------------------------------+
-|        \ showInIndicator : bool                                          |
-+--------------------------------------------------------------------------+
+.. _sdk_ubuntu_downloadmanager_metadata_title:
 
-Specifies whether this download should be displayed in the transfers
-indicator, defaults to False.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| title : string                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-| 
+This sets the name to display in the transfer indicator for this download, this property is only used if :ref:`showInIndicator <sdk_ubuntu_downloadmanager_metadata_showInIndicator>` is True.
 
-.. _sdk_ubuntu_downloadmanager_metadata_title-prop:
-
-+--------------------------------------------------------------------------+
-|        \ title : string                                                  |
-+--------------------------------------------------------------------------+
-
-This sets the name to display in the transfer indicator for this
-download, this property is only used if
-:ref:`showInIndicator <sdk_ubuntu_downloadmanager_metadata#showInIndicator-prop>`
-is True.
-
-| 

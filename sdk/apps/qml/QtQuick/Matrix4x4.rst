@@ -1,4 +1,5 @@
 .. _sdk_qtquick_matrix4x4:
+
 QtQuick Matrix4x4
 =================
 
@@ -11,16 +12,14 @@ Provides a way to apply a 4x4 tranformation matrix to an Item
 Properties
 ----------
 
--  :ref:`matrix <sdk_qtquick_matrix4x4_matrix-prop>` : QMatrix4x4
+-  :ref:`matrix <sdk_qtquick_matrix4x4_matrix>` : QMatrix4x4
 
 Detailed Description
 --------------------
 
-The Matrix4x4 type provides a way to apply a transformation to an
-:ref:`Item <sdk_qtquick_item>` through a 4x4 matrix.
+The Matrix4x4 type provides a way to apply a transformation to an :ref:`Item <sdk_qtquick_item>` through a 4x4 matrix.
 
-It allows for a combination of rotation, scale, translatation and
-shearing by using just one tranformation provided in a 4x4-matrix.
+It allows for a combination of rotation, scale, translatation and shearing by using just one tranformation provided in a 4x4-matrix.
 
 The following example rotates a Rectangle 45 degress (PI/4):
 
@@ -42,13 +41,11 @@ The following example rotates a Rectangle 45 degress (PI/4):
 Property Documentation
 ----------------------
 
-.. _sdk_qtquick_matrix4x4_matrix-prop:
+.. _sdk_qtquick_matrix4x4_matrix:
 
-+--------------------------------------------------------------------------+
-|        \ matrix : QMatrix4x4                                             |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| matrix : QMatrix4x4                                                                                                                                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-4x4-matrix which will be used in the tranformation of an
-:ref:`Item <sdk_qtquick_item>`
+4x4-matrix which will be used in the tranformation of an :ref:`Item <sdk_qtquick_item>`
 
-| 

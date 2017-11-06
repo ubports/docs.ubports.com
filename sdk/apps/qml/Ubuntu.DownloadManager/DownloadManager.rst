@@ -1,4 +1,5 @@
 .. _sdk_ubuntu_downloadmanager_downloadmanager:
+
 Ubuntu.DownloadManager DownloadManager
 ======================================
 
@@ -11,46 +12,29 @@ Manage downloads for several files.
 Properties
 ----------
 
--  :ref:`autoStart <sdk_ubuntu_downloadmanager_downloadmanager_autoStart-prop>`
-   : bool
--  :ref:`cleanDownloads <sdk_ubuntu_downloadmanager_downloadmanager_cleanDownloads-prop>`
-   : bool
--  :ref:`downloads <sdk_ubuntu_downloadmanager_downloadmanager_downloads-prop>`
-   : list
--  :ref:`errorMessage <sdk_ubuntu_downloadmanager_downloadmanager_errorMessage-prop>`
-   : string
+-  :ref:`autoStart <sdk_ubuntu_downloadmanager_downloadmanager_autoStart>` : bool
+-  :ref:`cleanDownloads <sdk_ubuntu_downloadmanager_downloadmanager_cleanDownloads>` : bool
+-  :ref:`downloads <sdk_ubuntu_downloadmanager_downloadmanager_downloads>` : list
+-  :ref:`errorMessage <sdk_ubuntu_downloadmanager_downloadmanager_errorMessage>` : string
 
 Signals
 -------
 
--  :ref:`downloadCanceled <sdk_ubuntu_downloadmanager_downloadmanager_downloadCanceled-signal>`\ (SingleDownload
-   *download*)
--  :ref:`downloadFinished <sdk_ubuntu_downloadmanager_downloadmanager_downloadFinished-signal>`\ (SingleDownload
-   *download*, QString *path*)
--  :ref:`downloadPaused <sdk_ubuntu_downloadmanager_downloadmanager_downloadPaused-signal>`\ (SingleDownload
-   *download*)
--  :ref:`downloadResumed <sdk_ubuntu_downloadmanager_downloadmanager_downloadResumed-signal>`\ (SingleDownload
-   *download*)
--  :ref:`errorFound <sdk_ubuntu_downloadmanager_downloadmanager_errorFound-signal>`\ (SingleDownload
-   *download*)
+-  :ref:`downloadCanceled <sdk_ubuntu_downloadmanager_downloadmanager_downloadCanceled>`\ (SingleDownload *download*)
+-  :ref:`downloadFinished <sdk_ubuntu_downloadmanager_downloadmanager_downloadFinished>`\ (SingleDownload *download*, QString *path*)
+-  :ref:`downloadPaused <sdk_ubuntu_downloadmanager_downloadmanager_downloadPaused>`\ (SingleDownload *download*)
+-  :ref:`downloadResumed <sdk_ubuntu_downloadmanager_downloadmanager_downloadResumed>`\ (SingleDownload *download*)
+-  :ref:`errorFound <sdk_ubuntu_downloadmanager_downloadmanager_errorFound>`\ (SingleDownload *download*)
 
 Methods
 -------
 
--  void
-   **:ref:`download <sdk_ubuntu_downloadmanager_downloadmanager#download-method>`**\ (string
-   *url*)
+-  void :ref:`download <sdk_ubuntu_downloadmanager_downloadmanager_download>`\ (string *url*)
 
 Detailed Description
 --------------------
 
-:ref:`DownloadManager <sdk_ubuntu_downloadmanager_downloadmanager>`
-provides facilities for downloading a several files, connect the
-downloads property to any Item that works with models, and dynamically
-update the content of those lists/repeaters/etc to show the current
-downloads and connect any UI to the
-:ref:`SingleDownload <sdk_ubuntu_downloadmanager_singledownload>`
-properties in the delegates.
+:ref:`DownloadManager <sdk_ubuntu_downloadmanager_downloadmanager>` provides facilities for downloading a several files, connect the downloads property to any Item that works with models, and dynamically update the content of those lists/repeaters/etc to show the current downloads and connect any UI to the :ref:`SingleDownload <sdk_ubuntu_downloadmanager_singledownload>` properties in the delegates.
 
 Example usage:
 
@@ -101,155 +85,104 @@ Example usage:
         }
     }
 
-**See also**
-:ref:`SingleDownload <sdk_ubuntu_downloadmanager_singledownload>`.
+**See also** :ref:`SingleDownload <sdk_ubuntu_downloadmanager_singledownload>`.
 
 Property Documentation
 ----------------------
 
-.. _sdk_ubuntu_downloadmanager_downloadmanager_autoStart-prop:
+.. _sdk_ubuntu_downloadmanager_downloadmanager_autoStart:
 
-+--------------------------------------------------------------------------+
-|        \ autoStart : bool                                                |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| autoStart : bool                                                                                                                                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-This property sets if the downloads should start automatically, or let
-the user decide when to start them calling the "start()" method on each
-download.
+This property sets if the downloads should start automatically, or let the user decide when to start them calling the "start()" method on each download.
 
-| 
+.. _sdk_ubuntu_downloadmanager_downloadmanager_cleanDownloads:
 
-.. _sdk_ubuntu_downloadmanager_downloadmanager_cleanDownloads-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| cleanDownloads : bool                                                                                                                                                                                                                                                                                        |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ cleanDownloads : bool                                           |
-+--------------------------------------------------------------------------+
+This property sets if the model with the list of downloads should be cleaned when a download finish. Removing those completed transfers, and only showing current downloads.
 
-This property sets if the model with the list of downloads should be
-cleaned when a download finish. Removing those completed transfers, and
-only showing current downloads.
+.. _sdk_ubuntu_downloadmanager_downloadmanager_downloads:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| downloads : list                                                                                                                                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_ubuntu_downloadmanager_downloadmanager_downloads-prop:
+This property provides a model that can be used for Lists, Repeaters, etc. To handle those downloads in a UI component that changes automatically when a new download is started, and let a custom delegate how to represent the UI for each download.
 
-+--------------------------------------------------------------------------+
-|        \ downloads : list                                                |
-+--------------------------------------------------------------------------+
+.. _sdk_ubuntu_downloadmanager_downloadmanager_errorMessage:
 
-This property provides a model that can be used for Lists, Repeaters,
-etc. To handle those downloads in a UI component that changes
-automatically when a new download is started, and let a custom delegate
-how to represent the UI for each download.
-
-| 
-
-.. _sdk_ubuntu_downloadmanager_downloadmanager_errorMessage-prop:
-
-+--------------------------------------------------------------------------+
-|        \ errorMessage : string                                           |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| errorMessage : string                                                                                                                                                                                                                                                                                        |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The error message associated with the current download, if there is any.
-
-| 
 
 Signal Documentation
 --------------------
 
-.. _sdk_ubuntu_downloadmanager_downloadmanager_-prop:
+.. _sdk_ubuntu_downloadmanager_downloadmanager_downloadCanceled:
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ downloadCanceled(`SingleDownload <sdk_ubuntu_downloadmanager_si |
-| ngledownload>`_                                                          |
-| *download*)                                                              |
-+--------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| downloadCanceled(:ref:`SingleDownload <sdk_ubuntu_downloadmanager_singledownload>` *download*)                                                                                                                                                                                                                  |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-This signal is emitted when a download has been canceled. The canceled
-download is provided via the 'download' parameter. The corresponding
-handler is ``onDownloadCanceled``
+This signal is emitted when a download has been canceled. The canceled download is provided via the 'download' parameter. The corresponding handler is ``onDownloadCanceled``
 
 This QML signal was introduced in Ubuntu.DownloadManager 1.2.
 
-| 
+.. _sdk_ubuntu_downloadmanager_downloadmanager_downloadFinished:
 
-.. _sdk_ubuntu_downloadmanager_downloadmanager_-prop:
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| downloadFinished(:ref:`SingleDownload <sdk_ubuntu_downloadmanager_singledownload>` *download*, QString *path*)                                                                                                                                                                                                  |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ downloadFinished(`SingleDownload <sdk_ubuntu_downloadmanager_si |
-| ngledownload>`_                                                          |
-| *download*, QString *path*)                                              |
-+--------------------------------------------------------------------------+
-
-This signal is emitted when a download has finished. The finished
-download is provided via the 'download' parameter and the downloaded
-file path is provided via the 'path' paremeter. The corresponding
-handler is ``onDownloadFinished``
+This signal is emitted when a download has finished. The finished download is provided via the 'download' parameter and the downloaded file path is provided via the 'path' paremeter. The corresponding handler is ``onDownloadFinished``
 
 This QML signal was introduced in Ubuntu.DownloadManager 1.2.
 
-| 
+.. _sdk_ubuntu_downloadmanager_downloadmanager_downloadPaused:
 
-.. _sdk_ubuntu_downloadmanager_downloadmanager_-prop:
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| downloadPaused(:ref:`SingleDownload <sdk_ubuntu_downloadmanager_singledownload>` *download*)                                                                                                                                                                                                                    |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ downloadPaused(`SingleDownload <sdk_ubuntu_downloadmanager_sing |
-| ledownload>`_                                                            |
-| *download*)                                                              |
-+--------------------------------------------------------------------------+
-
-This signal is emitted when a download has been paused. The paused
-download is provided via the 'download' parameter. The corresponding
-handler is ``onDownloadPaused``
+This signal is emitted when a download has been paused. The paused download is provided via the 'download' parameter. The corresponding handler is ``onDownloadPaused``
 
 This QML signal was introduced in Ubuntu.DownloadManager 1.2.
 
-| 
+.. _sdk_ubuntu_downloadmanager_downloadmanager_downloadResumed:
 
-.. _sdk_ubuntu_downloadmanager_downloadmanager_-prop:
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| downloadResumed(:ref:`SingleDownload <sdk_ubuntu_downloadmanager_singledownload>` *download*)                                                                                                                                                                                                                   |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ downloadResumed(`SingleDownload <sdk_ubuntu_downloadmanager_sin |
-| gledownload>`_                                                           |
-| *download*)                                                              |
-+--------------------------------------------------------------------------+
-
-This signal is emitted when a download has been resumed. The resumed
-download is provided via the 'download' parameter. The corresponding
-handler is ``onDownloadResumed``
+This signal is emitted when a download has been resumed. The resumed download is provided via the 'download' parameter. The corresponding handler is ``onDownloadResumed``
 
 This QML signal was introduced in Ubuntu.DownloadManager 1.2.
 
-| 
+.. _sdk_ubuntu_downloadmanager_downloadmanager_errorFound:
 
-.. _sdk_ubuntu_downloadmanager_downloadmanager_-prop:
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| errorFound(:ref:`SingleDownload <sdk_ubuntu_downloadmanager_singledownload>` *download*)                                                                                                                                                                                                                        |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ errorFound(`SingleDownload <sdk_ubuntu_downloadmanager_singledo |
-| wnload>`_                                                                |
-| *download*)                                                              |
-+--------------------------------------------------------------------------+
-
-This signal is emitted when an error occurs in a download. The download
-in which the error occurred is provided via the 'download' parameter,
-from which the error message can be accessed via
-download.\ :ref:`errorMessage <sdk_ubuntu_downloadmanager_downloadmanager#errorMessage-prop>`.
-The corresponding handler is ``onErrorFound``
+This signal is emitted when an error occurs in a download. The download in which the error occurred is provided via the 'download' parameter, from which the error message can be accessed via download.\ :ref:`errorMessage <sdk_ubuntu_downloadmanager_downloadmanager_errorMessage>`. The corresponding handler is ``onErrorFound``
 
 This QML signal was introduced in Ubuntu.DownloadManager 1.2.
-
-| 
 
 Method Documentation
 --------------------
 
-.. _sdk_ubuntu_downloadmanager_downloadmanager_void download-method:
+.. _sdk_ubuntu_downloadmanager_downloadmanager_download:
 
-+--------------------------------------------------------------------------+
-|        \ void download(string *url*)                                     |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| void download(string *url*)                                                                                                                                                                                                                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Starts the download for the given url and update the model with the list
-of the different downloads.
+Starts the download for the given url and update the model with the list of the different downloads.
 
-| 

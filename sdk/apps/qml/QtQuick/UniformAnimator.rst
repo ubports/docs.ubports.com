@@ -1,4 +1,5 @@
 .. _sdk_qtquick_uniformanimator:
+
 QtQuick UniformAnimator
 =======================
 
@@ -13,23 +14,16 @@ The UniformAnimator type animates a uniform of a ShaderEffect.
 Properties
 ----------
 
--  :ref:`uniform <sdk_qtquick_uniformanimator_uniform-prop>` :
-   string
+-  :ref:`uniform <sdk_qtquick_uniformanimator_uniform>` : string
 
 Detailed Description
 --------------------
 
-:ref:`Animator <sdk_qtquick_animator>` types are different from normal
-Animation types. When using an Animator, the animation can be run in the
-render thread and the property value will jump to the end when the
-animation is complete.
+:ref:`Animator <sdk_qtquick_animator>` types are different from normal Animation types. When using an Animator, the animation can be run in the render thread and the property value will jump to the end when the animation is complete.
 
-The value of the QML property defining the uniform is updated after the
-animation has finished.
+The value of the QML property defining the uniform is updated after the animation has finished.
 
-The following snippet shows how to use a
-:ref:`UniformAnimator <sdk_qtquick_uniformanimator>` together with a
-:ref:`ShaderEffect <sdk_qtquick_shadereffect>` item.
+The following snippet shows how to use a :ref:`UniformAnimator <sdk_qtquick_uniformanimator>` together with a :ref:`ShaderEffect <sdk_qtquick_shadereffect>` item.
 
 .. code:: qml
 
@@ -57,9 +51,7 @@ The following snippet shows how to use a
         "
     }
 
-It is also possible to use the ``on`` keyword to tie the
-:ref:`UniformAnimator <sdk_qtquick_uniformanimator>` directly to a uniform
-of a :ref:`ShaderEffect <sdk_qtquick_shadereffect>` instance.
+It is also possible to use the ``on`` keyword to tie the :ref:`UniformAnimator <sdk_qtquick_uniformanimator>` directly to a uniform of a :ref:`ShaderEffect <sdk_qtquick_shadereffect>` instance.
 
 .. code:: qml
 
@@ -83,22 +75,18 @@ of a :ref:`ShaderEffect <sdk_qtquick_shadereffect>` instance.
         "
     }
 
-**See also** :ref:`ShaderEffect <sdk_qtquick_shadereffect>` and
-:ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>`.
+**See also** :ref:`ShaderEffect <sdk_qtquick_shadereffect>` and :ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>`.
 
 Property Documentation
 ----------------------
 
-.. _sdk_qtquick_uniformanimator_uniform-prop:
+.. _sdk_qtquick_uniformanimator_uniform:
 
-+--------------------------------------------------------------------------+
-|        \ uniform : string                                                |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| uniform : string                                                                                                                                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the name of the uniform to animate.
 
-The value of the uniform must correspond to both a property on the
-target :ref:`ShaderEffect <sdk_qtquick_shadereffect>` and must be a uniform
-of type ``float`` in the fragment or vertex shader.
+The value of the uniform must correspond to both a property on the target :ref:`ShaderEffect <sdk_qtquick_shadereffect>` and must be a uniform of type ``float`` in the fragment or vertex shader.
 
-| 

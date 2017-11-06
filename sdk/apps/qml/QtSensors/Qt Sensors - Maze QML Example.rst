@@ -1,17 +1,11 @@
 .. _sdk_qtsensors_qt_sensors_-_maze_qml_example:
+
 QtSensors Qt Sensors - Maze QML Example
 =======================================
 
 
 
-|image0|
-
-.. rubric:: Maze in QML
-   :name: maze-in-qml
-
-To write a QML application that will use the
-:ref:`TiltSensor <sdk_qtsensors_tiltsensor>` QML sensors type you need to
-do the following steps:
+To write a QML application that will use the :ref:`TiltSensor <sdk_qtsensors_tiltsensor>` QML sensors type you need to do the following steps:
 
 Import the QtSensors 5.x declarative plugin:
 
@@ -21,8 +15,7 @@ Import the QtSensors 5.x declarative plugin:
 
 Add the Sensor QML types into your qml file.
 
-In this example we use the :ref:`TiltSensor <sdk_qtsensors_tiltsensor>`
-with values based in degrees and an accuracy of 5 degree:
+In this example we use the :ref:`TiltSensor <sdk_qtsensors_tiltsensor>` with values based in degrees and an accuracy of 5 degree:
 
 .. code:: qml
 
@@ -31,8 +24,7 @@ with values based in degrees and an accuracy of 5 degree:
             active: true
         }
 
-Starting the sensor can be done by setting the 'enabled' property to
-true:
+Starting the sensor can be done by setting the 'enabled' property to true:
 
 .. code:: qml
 
@@ -49,8 +41,7 @@ The mouse should move by a factor of the tilt value:
                     var ystep = 0;
                     ystep = tiltSensor.reading.xRotation * 0.1 //acceleration
 
-The walk direction of the mouse takes into account some collision
-detection:
+The walk direction of the mouse takes into account some collision detection:
 
 .. code:: qml
 
@@ -80,8 +71,7 @@ detection:
                         yval = mouseCtrl.y
                     mouseCtrl.move(xval, yval);
 
-The rotation of the mouse image is determined according to the angle
-that the mouse is moving.
+The rotation of the mouse image is determined according to the angle that the mouse is moving.
 
 .. code:: qml
 
@@ -116,6 +106,4 @@ Files:
 -  maze/main.cpp
 -  maze/maze.pro
 -  maze/maze.qrc
-
-.. |image0| image:: /media/sdk/apps/qml/qtsensors-maze-example/images/maze.png
 

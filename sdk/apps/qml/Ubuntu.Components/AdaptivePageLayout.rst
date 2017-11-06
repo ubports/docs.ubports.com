@@ -1,4 +1,5 @@
 .. _sdk_ubuntu_components_adaptivepagelayout:
+
 Ubuntu.Components AdaptivePageLayout
 ====================================
 
@@ -13,67 +14,29 @@ View with multiple columns of Pages.
 Properties
 ----------
 
--  :ref:`asynchronous <sdk_ubuntu_components_adaptivepagelayout_asynchronous-prop>`
-   : bool
--  :ref:`columns <sdk_ubuntu_components_adaptivepagelayout_columns-prop>`
-   : int
--  :ref:`layouts <sdk_ubuntu_components_adaptivepagelayout_layouts-prop>`
-   : PageColumnsLayout
--  :ref:`primaryPage <sdk_ubuntu_components_adaptivepagelayout_primaryPage-prop>`
-   : Page
--  :ref:`primaryPageSource <sdk_ubuntu_components_adaptivepagelayout_primaryPageSource-prop>`
-   : var
+-  :ref:`asynchronous <sdk_ubuntu_components_adaptivepagelayout_asynchronous>` : bool
+-  :ref:`columns <sdk_ubuntu_components_adaptivepagelayout_columns>` : int
+-  :ref:`layouts <sdk_ubuntu_components_adaptivepagelayout_layouts>` : PageColumnsLayout
+-  :ref:`primaryPage <sdk_ubuntu_components_adaptivepagelayout_primaryPage>` : Page
+-  :ref:`primaryPageSource <sdk_ubuntu_components_adaptivepagelayout_primaryPageSource>` : var
 
 Methods
 -------
 
--  :ref:`addPageToCurrentColumn <sdk_ubuntu_components_adaptivepagelayout_addPageToCurrentColumn-method>`\ (*sourcePage*,
-   *page*, *properties*)
--  :ref:`addPageToNextColumn <sdk_ubuntu_components_adaptivepagelayout_addPageToNextColumn-method>`\ (*sourcePage*,
-   *page*, *properties*)
--  :ref:`removePages <sdk_ubuntu_components_adaptivepagelayout_removePages-method>`\ (*page*)
+-  :ref:`addPageToCurrentColumn <sdk_ubuntu_components_adaptivepagelayout_addPageToCurrentColumn>`\ (*sourcePage*, *page*, *properties*)
+-  :ref:`addPageToNextColumn <sdk_ubuntu_components_adaptivepagelayout_addPageToNextColumn>`\ (*sourcePage*, *page*, *properties*)
+-  :ref:`removePages <sdk_ubuntu_components_adaptivepagelayout_removePages>`\ (*page*)
 
 Detailed Description
 --------------------
 
-The component provides a flexible way of viewing a stack of pages in one
-or more columns. Unlike in
-:ref:`PageStack <sdk_ubuntu_components_pagestack>`, there can be more than
-one Page active at a time, depending on the number of the columns in the
-view.
+The component provides a flexible way of viewing a stack of pages in one or more columns. Unlike in :ref:`PageStack <sdk_ubuntu_components_pagestack>`, there can be more than one Page active at a time, depending on the number of the columns in the view.
 
-:ref:`AdaptivePageLayout <sdk_ubuntu_components_adaptivepagelayout>` stores
-pages added in a tree. Pages are added relative to a given page, either
-as sibling
-(:ref:`addPageToCurrentColumn <sdk_ubuntu_components_adaptivepagelayout#addPageToCurrentColumn-method>`)
-or as child
-(:ref:`addPageToNextColumn <sdk_ubuntu_components_adaptivepagelayout#addPageToNextColumn-method>`).
-This means that removing a non-leaf page from the Page tree will remove
-all its children from the page tree.
+:ref:`AdaptivePageLayout <sdk_ubuntu_components_adaptivepagelayout>` stores pages added in a tree. Pages are added relative to a given page, either as sibling (:ref:`addPageToCurrentColumn <sdk_ubuntu_components_adaptivepagelayout_addPageToCurrentColumn>`) or as child (:ref:`addPageToNextColumn <sdk_ubuntu_components_adaptivepagelayout_addPageToNextColumn>`). This means that removing a non-leaf page from the Page tree will remove all its children from the page tree.
 
-The columns are populated from left to right. The column a page is added
-to is detected based on the source page that is given to the functions
-adding the page. The pages can be added either to the same column the
-source page resides or to the column next to the source page. Giving a
-null value to the source page will add the page to the leftmost column
-of the view.
+The columns are populated from left to right. The column a page is added to is detected based on the source page that is given to the functions adding the page. The pages can be added either to the same column the source page resides or to the column next to the source page. Giving a null value to the source page will add the page to the leftmost column of the view.
 
-The primary page, the very first page must be specified either through
-the
-:ref:`primaryPage <sdk_ubuntu_components_adaptivepagelayout#primaryPage-prop>`
-or
-:ref:`primaryPageSource <sdk_ubuntu_components_adaptivepagelayout#primaryPageSource-prop>`
-properties.
-:ref:`primaryPage <sdk_ubuntu_components_adaptivepagelayout#primaryPage-prop>`
-can only hold a Page instance,
-:ref:`primaryPageSource <sdk_ubuntu_components_adaptivepagelayout#primaryPageSource-prop>`
-can either be a Component or a url to a document defining a Page.
-:ref:`primaryPageSource <sdk_ubuntu_components_adaptivepagelayout#primaryPageSource-prop>`
-has precedence over
-:ref:`primaryPage <sdk_ubuntu_components_adaptivepagelayout#primaryPage-prop>`,
-and when set it will report the loaded Page through
-:ref:`primaryPage <sdk_ubuntu_components_adaptivepagelayout#primaryPage-prop>`
-property, and will replace any value set into that property.
+The primary page, the very first page must be specified either through the :ref:`primaryPage <sdk_ubuntu_components_adaptivepagelayout_primaryPage>` or :ref:`primaryPageSource <sdk_ubuntu_components_adaptivepagelayout_primaryPageSource>` properties. :ref:`primaryPage <sdk_ubuntu_components_adaptivepagelayout_primaryPage>` can only hold a Page instance, :ref:`primaryPageSource <sdk_ubuntu_components_adaptivepagelayout_primaryPageSource>` can either be a Component or a url to a document defining a Page. :ref:`primaryPageSource <sdk_ubuntu_components_adaptivepagelayout_primaryPageSource>` has precedence over :ref:`primaryPage <sdk_ubuntu_components_adaptivepagelayout_primaryPage>`, and when set it will report the loaded Page through :ref:`primaryPage <sdk_ubuntu_components_adaptivepagelayout_primaryPage>` property, and will replace any value set into that property.
 
 .. code:: qml
 
@@ -118,34 +81,11 @@ property, and will replace any value set into that property.
         }
     }
 
-**Note:** Observe the use of the ``Page::pageStack`` property in the
-example above. The same property is used to share the
-:ref:`AdaptivePageLayout <sdk_ubuntu_components_adaptivepagelayout>`
-instance the Page is used in, therefore the same page can be used in a
-:ref:`PageStack <sdk_ubuntu_components_pagestack>` or in an
-:ref:`AdaptivePageLayout <sdk_ubuntu_components_adaptivepagelayout>`.
-However implementations must make sure the desired
-:ref:`PageStack <sdk_ubuntu_components_pagestack>` or
-:ref:`AdaptivePageLayout <sdk_ubuntu_components_adaptivepagelayout>`
-function exists in the instance before using it.
+**Note:** Observe the use of the ``Page::pageStack`` property in the example above. The same property is used to share the :ref:`AdaptivePageLayout <sdk_ubuntu_components_adaptivepagelayout>` instance the Page is used in, therefore the same page can be used in a :ref:`PageStack <sdk_ubuntu_components_pagestack>` or in an :ref:`AdaptivePageLayout <sdk_ubuntu_components_adaptivepagelayout>`. However implementations must make sure the desired :ref:`PageStack <sdk_ubuntu_components_pagestack>` or :ref:`AdaptivePageLayout <sdk_ubuntu_components_adaptivepagelayout>` function exists in the instance before using it.
 
-:ref:`AdaptivePageLayout <sdk_ubuntu_components_adaptivepagelayout>`
-supports adaptive column handling. When the number of columns changes at
-runtime the pages are automatically rearranged.
+:ref:`AdaptivePageLayout <sdk_ubuntu_components_adaptivepagelayout>` supports adaptive column handling. When the number of columns changes at runtime the pages are automatically rearranged.
 
-By default the component splits the layout in two columns when the width
-of the layout exceeds 80 grid units. The first column is sized to 40
-grid unit width and the second one to fill the rest of the remaining
-space. When the 80 grid unit breakpoint is reached, the component will
-switch from one column to two, and vice versa. These defaults can be
-overridden through the
-:ref:`layouts <sdk_ubuntu_components_adaptivepagelayout#layouts-prop>`
-property by defining the possible layouts, their column sizing and the
-breakpoints when the layouts should be activated.
-:ref:`PageColumn <sdk_ubuntu_components_pagecolumn>` configurations must
-appear in the same order (from left to right) as the columns appear in
-the layout. If none of the layouts condition is met, a one column layout
-will be used.
+By default the component splits the layout in two columns when the width of the layout exceeds 80 grid units. The first column is sized to 40 grid unit width and the second one to fill the rest of the remaining space. When the 80 grid unit breakpoint is reached, the component will switch from one column to two, and vice versa. These defaults can be overridden through the :ref:`layouts <sdk_ubuntu_components_adaptivepagelayout_layouts>` property by defining the possible layouts, their column sizing and the breakpoints when the layouts should be activated. :ref:`PageColumn <sdk_ubuntu_components_pagecolumn>` configurations must appear in the same order (from left to right) as the columns appear in the layout. If none of the layouts condition is met, a one column layout will be used.
 
 .. code:: qml
 
@@ -206,129 +146,69 @@ will be used.
         }
     }
 
-A column is considered to be resizable if the
-:ref:`PageColumn::minimumWidth <sdk_ubuntu_components_pagecolumn#minimumWidth-prop>`
-and
-:ref:`PageColumn::maximumWidth <sdk_ubuntu_components_pagecolumn#maximumWidth-prop>`
-configuration differs. This implies that if a column is not meant to be
-resized, it should have
-:ref:`PageColumn::minimumWidth <sdk_ubuntu_components_pagecolumn#minimumWidth-prop>`
-and
-:ref:`PageColumn::maximumWidth <sdk_ubuntu_components_pagecolumn#maximumWidth-prop>`
-set to the same value. In the example above, the first column can be
-resized to a minimum of 30, and a maximum of 60 grid units, and the
-preferred width is set to 40 grid units. This width is set every time
-the layout is activated.
+A column is considered to be resizable if the :ref:`PageColumn::minimumWidth <sdk_ubuntu_components_pagecolumn_minimumWidth>` and :ref:`PageColumn::maximumWidth <sdk_ubuntu_components_pagecolumn_maximumWidth>` configuration differs. This implies that if a column is not meant to be resized, it should have :ref:`PageColumn::minimumWidth <sdk_ubuntu_components_pagecolumn_minimumWidth>` and :ref:`PageColumn::maximumWidth <sdk_ubuntu_components_pagecolumn_maximumWidth>` set to the same value. In the example above, the first column can be resized to a minimum of 30, and a maximum of 60 grid units, and the preferred width is set to 40 grid units. This width is set every time the layout is activated.
 
-When a :ref:`Page <sdk_ubuntu_components_page>` with the
-:ref:`Page::header <sdk_ubuntu_components_page#header-prop>` property set
-is added to an
-:ref:`AdaptivePageLayout <sdk_ubuntu_components_adaptivepagelayout>`, the
-:ref:`AdaptivePageLayout <sdk_ubuntu_components_adaptivepagelayout>` will
-synchronize the height of that header with the height of the headers in
-other columns, i.e., the height of each of the headers will be set to
-the maximum implicitHeight of all the headers.
+When a :ref:`Page <sdk_ubuntu_components_page>` with the :ref:`Page::header <sdk_ubuntu_components_page_header>` property set is added to an :ref:`AdaptivePageLayout <sdk_ubuntu_components_adaptivepagelayout>`, the :ref:`AdaptivePageLayout <sdk_ubuntu_components_adaptivepagelayout>` will synchronize the height of that header with the height of the headers in other columns, i.e., the height of each of the headers will be set to the maximum implicitHeight of all the headers.
 
-**See also** :ref:`PageStack <sdk_ubuntu_components_pagestack>`,
-:ref:`PageColumnsLayout <sdk_ubuntu_components_pagecolumnslayout>`, and
-:ref:`PageColumn <sdk_ubuntu_components_pagecolumn>`.
+**See also** :ref:`PageStack <sdk_ubuntu_components_pagestack>`, :ref:`PageColumnsLayout <sdk_ubuntu_components_pagecolumnslayout>`, and :ref:`PageColumn <sdk_ubuntu_components_pagecolumn>`.
 
 Property Documentation
 ----------------------
 
-.. _sdk_ubuntu_components_adaptivepagelayout_asynchronous-prop:
+.. _sdk_ubuntu_components_adaptivepagelayout_asynchronous:
 
-+--------------------------------------------------------------------------+
-|        \ asynchronous : bool                                             |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| asynchronous : bool                                                                                                                                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-The property drives the way the pages should be loaded, synchronously or
-asynchronously. Defaults to true.
+The property drives the way the pages should be loaded, synchronously or asynchronously. Defaults to true.
 
-| 
+.. _sdk_ubuntu_components_adaptivepagelayout_columns:
 
-.. _sdk_ubuntu_components_adaptivepagelayout_[read-only] columns-prop:
-
-+--------------------------------------------------------------------------+
-|        \ [read-only] columns : int                                       |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| [read-only] columns : int                                                                                                                                                                                                                                                                                    |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The property holds the number of columns shown in the layout.
 
-| 
+.. _sdk_ubuntu_components_adaptivepagelayout_layouts:
 
-.. _sdk_ubuntu_components_adaptivepagelayout_layouts-prop:
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| layouts : :ref:`PageColumnsLayout <sdk_ubuntu_components_pagecolumnslayout>`                                                                                                                                                                                                                                    |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ layouts :                                                       |
-| :ref:`PageColumnsLayout <sdk_ubuntu_components_pagecolumnslayout>`          |
-+--------------------------------------------------------------------------+
+The property holds the different layout configurations overriding the default configurations. Defaults to an empty list.
 
-The property holds the different layout configurations overriding the
-default configurations. Defaults to an empty list.
+**See also** :ref:`PageColumnsLayout <sdk_ubuntu_components_pagecolumnslayout>`.
 
-**See also**
-:ref:`PageColumnsLayout <sdk_ubuntu_components_pagecolumnslayout>`.
+.. _sdk_ubuntu_components_adaptivepagelayout_primaryPage:
 
-| 
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| primaryPage : :ref:`Page <sdk_ubuntu_components_page>`                                                                                                                                                                                                                                                          |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_ubuntu_components_adaptivepagelayout_-prop:
+The property holds the first Page which will be added to the view. If the view has more than one column, the page will be added to the leftmost column. The property can only hold a Page instance. When changed runtime (not by the :ref:`AdaptivePageLayout <sdk_ubuntu_components_adaptivepagelayout>` component itself), the :ref:`primaryPageSource <sdk_ubuntu_components_adaptivepagelayout_primaryPageSource>` property will be reset.
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ primaryPage : `Page <sdk_ubuntu_components_page>`          |
-+--------------------------------------------------------------------------+
+.. _sdk_ubuntu_components_adaptivepagelayout_primaryPageSource:
 
-The property holds the first Page which will be added to the view. If
-the view has more than one column, the page will be added to the
-leftmost column. The property can only hold a Page instance. When
-changed runtime (not by the
-:ref:`AdaptivePageLayout <sdk_ubuntu_components_adaptivepagelayout>`
-component itself), the
-:ref:`primaryPageSource <sdk_ubuntu_components_adaptivepagelayout#primaryPageSource-prop>`
-property will be reset.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| primaryPageSource : `var <http://doc.qt.io/qt-5/qml-var.html>`_                                                                                                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-| 
-
-.. _sdk_ubuntu_components_adaptivepagelayout_primaryPageSource-prop:
-
-+--------------------------------------------------------------------------+
-|        \ primaryPageSource :                                             |
-| `var <http://doc.qt.io/qt-5/qml-var.html>`_                              |
-+--------------------------------------------------------------------------+
-
-The property specifies the source of the
-:ref:`primaryPage <sdk_ubuntu_components_adaptivepagelayout#primaryPage-prop>`
-in case the primary page is created from a Component or loaded from an
-external document. It has precedence over
-:ref:`primaryPage <sdk_ubuntu_components_adaptivepagelayout#primaryPage-prop>`.
-
-| 
+The property specifies the source of the :ref:`primaryPage <sdk_ubuntu_components_adaptivepagelayout_primaryPage>` in case the primary page is created from a Component or loaded from an external document. It has precedence over :ref:`primaryPage <sdk_ubuntu_components_adaptivepagelayout_primaryPage>`.
 
 Method Documentation
 --------------------
 
-.. _sdk_ubuntu_components_adaptivepagelayout_addPageToCurrentColumn-method:
+.. _sdk_ubuntu_components_adaptivepagelayout_addPageToCurrentColumn:
 
-+--------------------------------------------------------------------------+
-|        \ addPageToCurrentColumn( *sourcePage*, *page*, *properties*)     |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| addPageToCurrentColumn( *sourcePage*, *page*, *properties*)                                                                                                                                                                                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Adds a ``page`` to the column the ``sourcePage`` resides in and removes
-all pages from the higher columns. ``page`` can be a Component or a
-file. ``properties`` is a JSON object containing properties to be set
-when page is created. ``sourcePage`` must be active.
+Adds a ``page`` to the column the ``sourcePage`` resides in and removes all pages from the higher columns. ``page`` can be a Component or a file. ``properties`` is a JSON object containing properties to be set when page is created. ``sourcePage`` must be active.
 
-The function creates the new page asynchronously if the new ``page`` to
-be added is a Component or a QML document and the
-:ref:`asynchronous <sdk_ubuntu_components_adaptivepagelayout#asynchronous-prop>`
-property is set to true. In this case the function returns an incubator
-which can be used to track the page creation. For more about incubation
-in QML and creating components asynchronously, see
-:ref:`Component.incubateObject() <sdk_qtqml_component#incubateObject-method>`.
-The following example removes an element from the list model whenever
-the page opened in the second column is closed. Note, the example must
-be run on desktop or on a device with at least 90 grid units screen
-width.
+The function creates the new page asynchronously if the new ``page`` to be added is a Component or a QML document and the :ref:`asynchronous <sdk_ubuntu_components_adaptivepagelayout_asynchronous>` property is set to true. In this case the function returns an incubator which can be used to track the page creation. For more about incubation in QML and creating components asynchronously, see :ref:`Component.incubateObject() <sdk_qtqml_component_incubateObject>`. The following example removes an element from the list model whenever the page opened in the second column is closed. Note, the example must be run on desktop or on a device with at least 90 grid units screen width.
 
 .. code:: qml
 
@@ -384,36 +264,21 @@ width.
         }
     }
 
-**See also**
-:ref:`Component.incubateObject <sdk_qtqml_component#incubateObject-method>`.
+**See also** :ref:`Component.incubateObject <sdk_qtqml_component_incubateObject>`.
 
-| 
+.. _sdk_ubuntu_components_adaptivepagelayout_addPageToNextColumn:
 
-.. _sdk_ubuntu_components_adaptivepagelayout_addPageToNextColumn-method:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| addPageToNextColumn( *sourcePage*, *page*, *properties*)                                                                                                                                                                                                                                                     |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ addPageToNextColumn( *sourcePage*, *page*, *properties*)        |
-+--------------------------------------------------------------------------+
+Remove all previous pages from the next column (relative to the column that holds ``sourcePage``) and all following columns, and then add ``page`` to the next column. If ``sourcePage`` is located in the rightmost column, the new page will be pushed to the same column as ``sourcePage``. The return value is the same as in :ref:`addPageToCurrentColumn <sdk_ubuntu_components_adaptivepagelayout_addPageToCurrentColumn>` case.
 
-Remove all previous pages from the next column (relative to the column
-that holds ``sourcePage``) and all following columns, and then add
-``page`` to the next column. If ``sourcePage`` is located in the
-rightmost column, the new page will be pushed to the same column as
-``sourcePage``. The return value is the same as in
-:ref:`addPageToCurrentColumn <sdk_ubuntu_components_adaptivepagelayout#addPageToCurrentColumn-method>`
-case.
+.. _sdk_ubuntu_components_adaptivepagelayout_removePages:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| removePages( *page*)                                                                                                                                                                                                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_ubuntu_components_adaptivepagelayout_removePages-method:
+The function removes and deletes all pages up to and including ``page`` is reached. If the *page* is the same as the :ref:`primaryPage <sdk_ubuntu_components_adaptivepagelayout_primaryPage>`, only its child pages will be removed.
 
-+--------------------------------------------------------------------------+
-|        \ removePages( *page*)                                            |
-+--------------------------------------------------------------------------+
-
-The function removes and deletes all pages up to and including ``page``
-is reached. If the *page* is the same as the
-:ref:`primaryPage <sdk_ubuntu_components_adaptivepagelayout#primaryPage-prop>`,
-only its child pages will be removed.
-
-| 

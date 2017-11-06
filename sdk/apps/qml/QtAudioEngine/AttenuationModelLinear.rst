@@ -1,4 +1,5 @@
 .. _sdk_qtaudioengine_attenuationmodellinear:
+
 QtAudioEngine AttenuationModelLinear
 ====================================
 
@@ -13,20 +14,16 @@ Defines a linear attenuation curve for a Sound.
 Properties
 ----------
 
--  :ref:`end <sdk_qtaudioengine_attenuationmodellinear_end-prop>` :
-   real
--  :ref:`name <sdk_qtaudioengine_attenuationmodellinear_name-prop>`
-   : string
--  :ref:`start <sdk_qtaudioengine_attenuationmodellinear_start-prop>`
-   : real
+-  :ref:`end <sdk_qtaudioengine_attenuationmodellinear_end>` : real
+-  :ref:`name <sdk_qtaudioengine_attenuationmodellinear_name>` : string
+-  :ref:`start <sdk_qtaudioengine_attenuationmodellinear_start>` : real
 
 Detailed Description
 --------------------
 
 This type is part of the **QtAudioEngine 1.0** module.
 
-:ref:`AttenuationModelLinear <sdk_qtaudioengine_attenuationmodellinear>`
-must be defined inside :ref:`AudioEngine <sdk_qtaudioengine_audioengine>`.
+:ref:`AttenuationModelLinear <sdk_qtaudioengine_attenuationmodellinear>` must be defined inside :ref:`AudioEngine <sdk_qtaudioengine_audioengine>`.
 
 .. code:: qml
 
@@ -60,38 +57,27 @@ must be defined inside :ref:`AudioEngine <sdk_qtaudioengine_audioengine>`.
 Property Documentation
 ----------------------
 
-.. _sdk_qtaudioengine_attenuationmodellinear_end-prop:
+.. _sdk_qtaudioengine_attenuationmodellinear_end:
 
-+--------------------------------------------------------------------------+
-|        \ end : real                                                      |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| end : real                                                                                                                                                                                                                                                                                                   |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-This property holds the end distance. There will be no sound hearable if
-the distance from sound to listener is larger than this. The default
-value is 1.
+This property holds the end distance. There will be no sound hearable if the distance from sound to listener is larger than this. The default value is 1.
 
-| 
+.. _sdk_qtaudioengine_attenuationmodellinear_name:
 
-.. _sdk_qtaudioengine_attenuationmodellinear_name-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| name : string                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ name : string                                                   |
-+--------------------------------------------------------------------------+
+This property holds the name of :ref:`AttenuationModelLinear <sdk_qtaudioengine_attenuationmodellinear>`, must be unique among all attenuation models and only defined once.
 
-This property holds the name of
-:ref:`AttenuationModelLinear <sdk_qtaudioengine_attenuationmodellinear>`,
-must be unique among all attenuation models and only defined once.
+.. _sdk_qtaudioengine_attenuationmodellinear_start:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| start : real                                                                                                                                                                                                                                                                                                 |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_qtaudioengine_attenuationmodellinear_start-prop:
+This property holds the start distance. There will be no attenuation if the distance from sound to listener is within this range. The default value is 0.
 
-+--------------------------------------------------------------------------+
-|        \ start : real                                                    |
-+--------------------------------------------------------------------------+
-
-This property holds the start distance. There will be no attenuation if
-the distance from sound to listener is within this range. The default
-value is 0.
-
-| 

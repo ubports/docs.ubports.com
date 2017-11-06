@@ -1,4 +1,5 @@
 .. _sdk_ubuntu_test_mousetouchadaptor:
+
 Ubuntu.Test MouseTouchAdaptor
 =============================
 
@@ -11,15 +12,12 @@ Singleton type turning mouse events into single finger touch events.
 Properties
 ----------
 
--  :ref:`enabled <sdk_ubuntu_test_mousetouchadaptor_enabled-prop>`
-   : bool
+-  :ref:`enabled <sdk_ubuntu_test_mousetouchadaptor_enabled>` : bool
 
 Detailed Description
 --------------------
 
-When enabled, mouse events will be translated into single finger touch
-events. Being a singleton, the feature must be enabled explicitly either
-on component completion or through a binding.
+When enabled, mouse events will be translated into single finger touch events. Being a singleton, the feature must be enabled explicitly either on component completion or through a binding.
 
 .. code:: qml
 
@@ -32,12 +30,11 @@ on component completion or through a binding.
 Property Documentation
 ----------------------
 
-.. _sdk_ubuntu_test_mousetouchadaptor_enabled-prop:
+.. _sdk_ubuntu_test_mousetouchadaptor_enabled:
 
-+--------------------------------------------------------------------------+
-|        \ enabled : bool                                                  |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| enabled : bool                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Enables the mouse to touch conversion functionality. Defaults to true.
 
-| 

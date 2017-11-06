@@ -1,9 +1,9 @@
 .. _sdk_qtorganizer_classification:
+
 QtOrganizer Classification
 ==========================
 
-The Classification element contains classification-information of an
-item.
+The Classification element contains classification-information of an item.
 
 +---------------------+--------------------------+
 | Import Statement:   | import QtOrganizer 5.0   |
@@ -12,50 +12,43 @@ item.
 Properties
 ----------
 
--  :ref:`classification <sdk_qtorganizer_classification_classification-prop>`
-   : enumeration
+-  :ref:`classification <sdk_qtorganizer_classification_classification>` : enumeration
 
 Signals
 -------
 
--  :ref:`onDetailChanged <sdk_qtorganizer_classification_onDetailChanged-signal>`\ ()
+-  :ref:`onDetailChanged <sdk_qtorganizer_classification_onDetailChanged>`\ ()
 
 Detailed Description
 --------------------
 
-The Classification detail contains classification related information.
-This can be used as a part of security model for the organizer.
+The Classification detail contains classification related information. This can be used as a part of security model for the organizer.
 
 **See also** QOrganizerItemClassification.
 
 Property Documentation
 ----------------------
 
-.. _sdk_qtorganizer_classification_classification-prop:
+.. _sdk_qtorganizer_classification_classification:
 
-+--------------------------------------------------------------------------+
-|        \ classification : enumeration                                    |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| classification : enumeration                                                                                                                                                                                                                                                                                 |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-This property holds the calendar item's classification related
-information. The value can be one of:
+This property holds the calendar item's classification related information. The value can be one of:
 
 -  Classification.AccessPublic
 -  Classification.AccessConfidential
 -  Classification.AccessPrivate
 
-| 
-
 Signal Documentation
 --------------------
 
-.. _sdk_qtorganizer_classification_onDetailChanged()-prop:
+.. _sdk_qtorganizer_classification_onDetailChanged:
 
-+--------------------------------------------------------------------------+
-|        \ onDetailChanged()                                               |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| onDetailChanged()                                                                                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-**See also**
-:ref:`Detail::onDetailChanged <sdk_qtorganizer_detail#onDetailChanged-signal>`.
+**See also** :ref:`Detail::onDetailChanged <sdk_qtorganizer_detail_onDetailChanged>`.
 
-| 

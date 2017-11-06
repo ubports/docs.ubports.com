@@ -1,9 +1,9 @@
 .. _sdk_qtquick_positioner:
+
 QtQuick Positioner
 ==================
 
-Provides attached properties that contain details on where an item
-exists in a positioner
+Provides attached properties that contain details on where an item exists in a positioner
 
 +---------------------+----------------------+
 | Import Statement:   | import QtQuick 2.4   |
@@ -12,29 +12,16 @@ exists in a positioner
 Attached Properties
 -------------------
 
--  **:ref:`index <sdk_qtquick_positioner#index-attached-prop>`** : int
--  **:ref:`isFirstItem <sdk_qtquick_positioner#isFirstItem-attached-prop>`**
-   : bool
--  **:ref:`isLastItem <sdk_qtquick_positioner#isLastItem-attached-prop>`**
-   : bool
+-  :ref:`index <sdk_qtquick_positioner_index>` : int
+-  :ref:`isFirstItem <sdk_qtquick_positioner_isFirstItem>` : bool
+-  :ref:`isLastItem <sdk_qtquick_positioner_isLastItem>` : bool
 
 Detailed Description
 --------------------
 
-An object of type Positioner is attached to the top-level child item
-within a Column, Row, Flow or Grid. It provides properties that allow a
-child item to determine where it exists within the layout of its parent
-Column, Row, Flow or Grid.
+An object of type Positioner is attached to the top-level child item within a Column, Row, Flow or Grid. It provides properties that allow a child item to determine where it exists within the layout of its parent Column, Row, Flow or Grid.
 
-For example, below is a
-`Grid </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#grid>`_  with
-16 child rectangles, as created through a
-:ref:`Repeater <sdk_qtquick_repeater>`. Each
-:ref:`Rectangle <sdk_qtquick_rectangle>` displays its index in the Grid
-using :ref:`Positioner.index <sdk_qtquick_positioner#index-attached-prop>`,
-and the first item is colored differently by taking
-:ref:`Positioner.isFirstItem <sdk_qtquick_positioner#isFirstItem-attached-prop>`
-into account:
+For example, below is a `Grid </sdk/apps/qml/QtQuick/qtquick-positioning-layouts/#grid>`_  with 16 child rectangles, as created through a :ref:`Repeater <sdk_qtquick_repeater>`. Each :ref:`Rectangle <sdk_qtquick_rectangle>` displays its index in the Grid using :ref:`Positioner.index <sdk_qtquick_positioner_index>`, and the first item is colored differently by taking :ref:`Positioner.isFirstItem <sdk_qtquick_positioner_isFirstItem>` into account:
 
 .. code:: cpp
 
@@ -51,37 +38,30 @@ into account:
         }
     }
 
-|image0|
-
 Attached Property Documentation
 -------------------------------
 
-+--------------------------------------------------------------------------+
-|        \ Positioner.index : int                                          |
-+--------------------------------------------------------------------------+
+.. _sdk_qtquick_positioner_index:
 
-This property allows the item to determine its index within the
-positioner.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Positioner.index : int                                                                                                                                                                                                                                                                                       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-| 
+This property allows the item to determine its index within the positioner.
 
-+--------------------------------------------------------------------------+
-|        \ Positioner.isFirstItem : bool                                   |
-+--------------------------------------------------------------------------+
+.. _sdk_qtquick_positioner_isFirstItem:
 
-These properties allow the item to determine if it is the first or last
-item in the positioner, respectively.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Positioner.isFirstItem : bool                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-| 
+These properties allow the item to determine if it is the first or last item in the positioner, respectively.
 
-+--------------------------------------------------------------------------+
-|        \ Positioner.isLastItem : bool                                    |
-+--------------------------------------------------------------------------+
+.. _sdk_qtquick_positioner_isLastItem:
 
-These properties allow the item to determine if it is the first or last
-item in the positioner, respectively.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Positioner.isLastItem : bool                                                                                                                                                                                                                                                                                 |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-| 
-
-.. |image0| image:: /mediasdk_qtquick_positionerimages/positioner-example.png
+These properties allow the item to determine if it is the first or last item in the positioner, respectively.
 

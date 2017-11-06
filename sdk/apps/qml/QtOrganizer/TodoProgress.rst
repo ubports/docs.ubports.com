@@ -1,9 +1,9 @@
 .. _sdk_qtorganizer_todoprogress:
+
 QtOrganizer TodoProgress
 ========================
 
-The TodoProgress element contains information about the progress of a
-todo item.
+The TodoProgress element contains information about the progress of a todo item.
 
 +---------------------+--------------------------+
 | Import Statement:   | import QtOrganizer 5.0   |
@@ -12,17 +12,14 @@ todo item.
 Properties
 ----------
 
--  :ref:`finishedDateTime <sdk_qtorganizer_todoprogress_finishedDateTime-prop>`
-   : date
--  :ref:`percentageComplete <sdk_qtorganizer_todoprogress_percentageComplete-prop>`
-   : int
--  :ref:`status <sdk_qtorganizer_todoprogress_status-prop>` :
-   enumeration
+-  :ref:`finishedDateTime <sdk_qtorganizer_todoprogress_finishedDateTime>` : date
+-  :ref:`percentageComplete <sdk_qtorganizer_todoprogress_percentageComplete>` : int
+-  :ref:`status <sdk_qtorganizer_todoprogress_status>` : enumeration
 
 Signals
 -------
 
--  :ref:`onDetailChanged <sdk_qtorganizer_todoprogress_onDetailChanged-signal>`\ ()
+-  :ref:`onDetailChanged <sdk_qtorganizer_todoprogress_onDetailChanged>`\ ()
 
 Detailed Description
 --------------------
@@ -38,53 +35,42 @@ The following fields are supported:
 Property Documentation
 ----------------------
 
-.. _sdk_qtorganizer_todoprogress_finishedDateTime-prop:
+.. _sdk_qtorganizer_todoprogress_finishedDateTime:
 
-+--------------------------------------------------------------------------+
-|        \ finishedDateTime : date                                         |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| finishedDateTime : date                                                                                                                                                                                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-This property holds the date time value which contains the date and time
-at which the todo item was completed.
+This property holds the date time value which contains the date and time at which the todo item was completed.
 
-| 
+.. _sdk_qtorganizer_todoprogress_percentageComplete:
 
-.. _sdk_qtorganizer_todoprogress_percentageComplete-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| percentageComplete : int                                                                                                                                                                                                                                                                                     |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ percentageComplete : int                                        |
-+--------------------------------------------------------------------------+
+This property holds the value which contains the current completion percentage of the todo item.
 
-This property holds the value which contains the current completion
-percentage of the todo item.
+.. _sdk_qtorganizer_todoprogress_status:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| status : enumeration                                                                                                                                                                                                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_qtorganizer_todoprogress_status-prop:
-
-+--------------------------------------------------------------------------+
-|        \ status : enumeration                                            |
-+--------------------------------------------------------------------------+
-
-This property holds the value which describes the current completion
-status of the todo item. The value can be one of:
+This property holds the value which describes the current completion status of the todo item. The value can be one of:
 
 -  :ref:`TodoProgress <sdk_qtorganizer_todoprogress>`.NotStarted
 -  :ref:`TodoProgress <sdk_qtorganizer_todoprogress>`.InProgress
 -  :ref:`TodoProgress <sdk_qtorganizer_todoprogress>`.Complete
 
-| 
-
 Signal Documentation
 --------------------
 
-.. _sdk_qtorganizer_todoprogress_onDetailChanged()-prop:
+.. _sdk_qtorganizer_todoprogress_onDetailChanged:
 
-+--------------------------------------------------------------------------+
-|        \ onDetailChanged()                                               |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| onDetailChanged()                                                                                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-**See also**
-:ref:`Detail::onDetailChanged <sdk_qtorganizer_detail#onDetailChanged-signal>`.
+**See also** :ref:`Detail::onDetailChanged <sdk_qtorganizer_detail_onDetailChanged>`.
 
-| 

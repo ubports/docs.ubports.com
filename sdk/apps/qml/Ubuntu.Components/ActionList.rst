@@ -1,38 +1,32 @@
 .. _sdk_ubuntu_components_actionlist:
+
 Ubuntu.Components ActionList
 ============================
 
-List of Action items An ActionList provies a way of grouping actions
-together.
+List of Action items An ActionList provies a way of grouping actions together.
 
-+--------------------------------------+--------------------------------------+
-| Import Statement:                    | import Ubuntu.Components 1.3         |
-+--------------------------------------+--------------------------------------+
-| Inherited By:                        | :ref:`ExclusiveGroup <sdk_ubuntu_componen |
-|                                      | ts_exclusivegroup>`_ .               |
-+--------------------------------------+--------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Import Statement:                                                                                                                                      | import Ubuntu.Components 1.3                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Inherited By:                                                                                                                                          | :ref:`ExclusiveGroup <sdk_ubuntu_components_exclusivegroup>`.                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Properties
 ----------
 
--  :ref:`actions <sdk_ubuntu_components_actionlist_actions-prop>` :
-   list<Action>
+-  :ref:`actions <sdk_ubuntu_components_actionlist_actions>` : list<Action>
 
 Signals
 -------
 
--  :ref:`added <sdk_ubuntu_components_actionlist_added-signal>`\ (Action
-   *action*)
--  :ref:`removed <sdk_ubuntu_components_actionlist_removed-signal>`\ (Action
-   *action*)
+-  :ref:`added <sdk_ubuntu_components_actionlist_added>`\ (Action *action*)
+-  :ref:`removed <sdk_ubuntu_components_actionlist_removed>`\ (Action *action*)
 
 Methods
 -------
 
--  :ref:`addAction <sdk_ubuntu_components_actionlist_addAction-method>`\ (Action
-   *action*)
--  :ref:`removeAction <sdk_ubuntu_components_actionlist_removeAction-method>`\ (Action
-   *action*)
+-  :ref:`addAction <sdk_ubuntu_components_actionlist_addAction>`\ (Action *action*)
+-  :ref:`removeAction <sdk_ubuntu_components_actionlist_removeAction>`\ (Action *action*)
 
 Detailed Description
 --------------------
@@ -51,60 +45,47 @@ Detailed Description
 Property Documentation
 ----------------------
 
-.. _sdk_ubuntu_components_actionlist_actions-prop:
+.. _sdk_ubuntu_components_actionlist_actions:
 
-+--------------------------------------------------------------------------+
-|        \ [default] actions :                                             |
-| list<:ref:`Action <sdk_ubuntu_components_action>`>                          |
-+--------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| [default] actions : list<:ref:`Action <sdk_ubuntu_components_action>`>                                                                                                                                                                                                                                          |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-List of Actions in this
-:ref:`ActionList <sdk_ubuntu_components_actionlist>` Note that when you set
-this property, the children of the
-:ref:`ActionList <sdk_ubuntu_components_actionlist>` will be ignored, so do
-not set the list and define children.
+List of Actions in this :ref:`ActionList <sdk_ubuntu_components_actionlist>` Note that when you set this property, the children of the :ref:`ActionList <sdk_ubuntu_components_actionlist>` will be ignored, so do not set the list and define children.
 
-The advantage of setting actions over using the children is that the
-same :ref:`Action <sdk_ubuntu_components_action>` items can be used in
-several sets of actions.
-
-| 
+The advantage of setting actions over using the children is that the same :ref:`Action <sdk_ubuntu_components_action>` items can be used in several sets of actions.
 
 Signal Documentation
 --------------------
 
-.. _sdk_ubuntu_components_actionlist_-prop:
+.. _sdk_ubuntu_components_actionlist_added:
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ added(`Action <sdk_ubuntu_components_action>` *action*)       |
-+--------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| added(:ref:`Action <sdk_ubuntu_components_action>` *action*)                                                                                                                                                                                                                                                    |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Signal called when an action is added to the list
 
 This QML signal was introduced in Ubuntu.Components 1.3.
 
-| 
+.. _sdk_ubuntu_components_actionlist_removed:
 
-.. _sdk_ubuntu_components_actionlist_-prop:
-
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ removed(`Action <sdk_ubuntu_components_action>` *action*)     |
-+--------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| removed(:ref:`Action <sdk_ubuntu_components_action>` *action*)                                                                                                                                                                                                                                                  |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Signal called when an action is removed from the list
 
 This QML signal was introduced in Ubuntu.Components 1.3.
 
-| 
-
 Method Documentation
 --------------------
 
-.. _sdk_ubuntu_components_actionlist_-method:
+.. _sdk_ubuntu_components_actionlist_addAction:
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ addAction(`Action <sdk_ubuntu_components_action>` *action*)   |
-+--------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| addAction(:ref:`Action <sdk_ubuntu_components_action>` *action*)                                                                                                                                                                                                                                                |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Adds an Action to the list programatically.
 
@@ -124,23 +105,17 @@ Adds an Action to the list programatically.
 
 This QML method was introduced in Ubuntu.Components 1.3.
 
-**See also**
-:ref:`ActionList::removeAction <sdk_ubuntu_components_actionlist#removeAction-method>`.
+**See also** :ref:`ActionList::removeAction <sdk_ubuntu_components_actionlist_removeAction>`.
 
-| 
+.. _sdk_ubuntu_components_actionlist_removeAction:
 
-.. _sdk_ubuntu_components_actionlist_-method:
-
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ removeAction(`Action <sdk_ubuntu_components_action>`       |
-| *action*)                                                                |
-+--------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| removeAction(:ref:`Action <sdk_ubuntu_components_action>` *action*)                                                                                                                                                                                                                                             |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Removes an action from the list programatically.
 
 This QML method was introduced in Ubuntu.Components 1.3.
 
-**See also**
-:ref:`ActionList::addAction <sdk_ubuntu_components_actionlist#addAction-method>`.
+**See also** :ref:`ActionList::addAction <sdk_ubuntu_components_actionlist_addAction>`.
 
-| 

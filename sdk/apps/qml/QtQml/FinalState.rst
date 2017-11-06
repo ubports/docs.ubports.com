@@ -1,33 +1,24 @@
 .. _sdk_qtqml_finalstate:
+
 QtQml FinalState
 ================
 
 Provides a final state.
 
-+--------------------------------------+--------------------------------------+
-| Import Statement:                    | import QtQml.StateMachine 1.0        |
-+--------------------------------------+--------------------------------------+
-| Since:                               | Qt 5.4                               |
-+--------------------------------------+--------------------------------------+
-| Inherits:                            | :ref:`QAbstractState <sdk_qtqml_qabstract |
-|                                      | state>`_                             |
-+--------------------------------------+--------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Import Statement:                                                                                                                                      | import QtQml.StateMachine 1.0                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Since:                                                                                                                                                 | Qt 5.4                                                                                                                                                    |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Inherits:                                                                                                                                              | :ref:`QAbstractState <sdk_qtqml_qabstractstate>`                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Detailed Description
 --------------------
 
-A final state is used to communicate that (part of) a
-:ref:`StateMachine <sdk_qtqml_statemachine>` has finished its work. When a
-final top-level state is entered, the state machine's
-:ref:`finished <sdk_qtqml_state#finished-signal>`\ () signal is emitted. In
-general, when a final substate (a child of a State) is entered, the
-parent state's :ref:`finished <sdk_qtqml_state#finished-signal>`\ () signal
-is emitted. :ref:`FinalState <sdk_qtqml_finalstate>` is part of `The
-Declarative State Machine
-Framework </sdk/apps/qml/QtQml/qmlstatemachine/>`_ .
+A final state is used to communicate that (part of) a :ref:`StateMachine <sdk_qtqml_statemachine>` has finished its work. When a final top-level state is entered, the state machine's :ref:`finished <sdk_qtqml_state_finished>`\ () signal is emitted. In general, when a final substate (a child of a State) is entered, the parent state's :ref:`finished <sdk_qtqml_state_finished>`\ () signal is emitted. :ref:`FinalState <sdk_qtqml_finalstate>` is part of `The Declarative State Machine Framework </sdk/apps/qml/QtQml/qmlstatemachine/>`_ .
 
-To use a final state, you create a :ref:`FinalState <sdk_qtqml_finalstate>`
-object and add a transition to it from another state.
+To use a final state, you create a :ref:`FinalState <sdk_qtqml_finalstate>` object and add a transition to it from another state.
 
 Example Usage
 -------------
@@ -55,7 +46,4 @@ Example Usage
         }
     }
 
-| 
-
-**See also** :ref:`StateMachine <sdk_qtqml_statemachine>` and
-:ref:`State <sdk_qtqml_state>`.
+**See also** :ref:`StateMachine <sdk_qtqml_statemachine>` and :ref:`State <sdk_qtqml_state>`.

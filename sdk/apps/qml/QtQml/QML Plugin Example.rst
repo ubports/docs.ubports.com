@@ -1,10 +1,9 @@
 .. _sdk_qtqml_qml_plugin_example:
+
 QtQml QML Plugin Example
 ========================
 
 
-
-|image0|
 
 To run this example, use the following commands on the prompt:
 
@@ -22,6 +21,4 @@ Files:
 -  qmlextensionplugins/plugins.qmlproject
 -  qmlextensionplugins/qmlextensionplugins.pro
 -  qmlextensionplugins/imports/TimeExample/qmldir
-
-.. |image0| image:: /media/sdk/apps/qml/qtqml-qmlextensionplugins-example/images/qml-plugins-example.png
 

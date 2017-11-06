@@ -1,4 +1,5 @@
 .. _sdk_qtquick_window_window:
+
 QtQuick.Window Window
 =====================
 
@@ -13,162 +14,106 @@ Creates a new top-level window
 Properties
 ----------
 
--  `activeFocusItem </sdk/apps/qml/QtQuick/Window.Window/_activeFocusItem-prop>`_ 
-   : Item
--  `color </sdk/apps/qml/QtQuick/Window.Window/_color-prop>`_  :
-   color
--  `contentOrientation </sdk/apps/qml/QtQuick/Window.Window/_contentOrientation-prop>`_ 
-   : Qt::ScreenOrientation
--  `data </sdk/apps/qml/QtQuick/Window.Window/_data-prop>`_  :
-   list<Object>
--  `flags </sdk/apps/qml/QtQuick/Window.Window/_flags-prop>`_  :
-   Qt::WindowFlags
--  `height </sdk/apps/qml/QtQuick/Window.Window/_height-prop>`_ 
-   : int
--  `maximumHeight </sdk/apps/qml/QtQuick/Window.Window/_maximumHeight-prop>`_ 
-   : int
--  `maximumWidth </sdk/apps/qml/QtQuick/Window.Window/_maximumWidth-prop>`_ 
-   : int
--  `minimumHeight </sdk/apps/qml/QtQuick/Window.Window/_minimumHeight-prop>`_ 
-   : int
--  `minimumWidth </sdk/apps/qml/QtQuick/Window.Window/_minimumWidth-prop>`_ 
-   : int
--  `modality </sdk/apps/qml/QtQuick/Window.Window/_modality-prop>`_ 
-   : Qt::WindowModality
--  `opacity </sdk/apps/qml/QtQuick/Window.Window/_opacity-prop>`_ 
-   : real
--  `title </sdk/apps/qml/QtQuick/Window.Window/_title-prop>`_  :
-   string
--  `visibility </sdk/apps/qml/QtQuick/Window.Window/_visibility-prop>`_ 
-   : QWindow::Visibility
--  `visible </sdk/apps/qml/QtQuick/Window.Window/_visible-prop>`_ 
-   : bool
--  `width </sdk/apps/qml/QtQuick/Window.Window/_width-prop>`_  :
-   int
--  `x </sdk/apps/qml/QtQuick/Window.Window/_x-prop>`_  : int
--  `y </sdk/apps/qml/QtQuick/Window.Window/_y-prop>`_  : int
+-  :ref:`activeFocusItem <sdk_qtquick_window_window_activeFocusItem>` : Item
+-  :ref:`color <sdk_qtquick_window_window_color>` : color
+-  :ref:`contentOrientation <sdk_qtquick_window_window_contentOrientation>` : Qt::ScreenOrientation
+-  :ref:`data <sdk_qtquick_window_window_data>` : list<Object>
+-  :ref:`flags <sdk_qtquick_window_window_flags>` : Qt::WindowFlags
+-  :ref:`height <sdk_qtquick_window_window_height>` : int
+-  :ref:`maximumHeight <sdk_qtquick_window_window_maximumHeight>` : int
+-  :ref:`maximumWidth <sdk_qtquick_window_window_maximumWidth>` : int
+-  :ref:`minimumHeight <sdk_qtquick_window_window_minimumHeight>` : int
+-  :ref:`minimumWidth <sdk_qtquick_window_window_minimumWidth>` : int
+-  :ref:`modality <sdk_qtquick_window_window_modality>` : Qt::WindowModality
+-  :ref:`opacity <sdk_qtquick_window_window_opacity>` : real
+-  :ref:`title <sdk_qtquick_window_window_title>` : string
+-  :ref:`visibility <sdk_qtquick_window_window_visibility>` : QWindow::Visibility
+-  :ref:`visible <sdk_qtquick_window_window_visible>` : bool
+-  :ref:`width <sdk_qtquick_window_window_width>` : int
+-  :ref:`x <sdk_qtquick_window_window_x>` : int
+-  :ref:`y <sdk_qtquick_window_window_y>` : int
 
 Attached Properties
 -------------------
 
--  `active </sdk/apps/qml/QtQuick/Window.Window/_active-attached-prop>`_ 
-   : bool
--  `activeFocusItem </sdk/apps/qml/QtQuick/Window.Window/_activeFocusItem-attached-prop>`_ 
-   : Item
--  `contentItem </sdk/apps/qml/QtQuick/Window.Window/_contentItem-attached-prop>`_ 
-   : Item
--  `visibility </sdk/apps/qml/QtQuick/Window.Window/_visibility-attached-prop>`_ 
-   : QWindow::Visibility
+-  :ref:`active <sdk_qtquick_window_window_active>` : bool
+-  :ref:`activeFocusItem <sdk_qtquick_window_window_activeFocusItem>` : Item
+-  :ref:`contentItem <sdk_qtquick_window_window_contentItem>` : Item
+-  :ref:`visibility <sdk_qtquick_window_window_visibility>` : QWindow::Visibility
 
 Signals
 -------
 
--  void
-   **`closing </sdk/apps/qml/QtQuick/Window.Window/#closing-signal>`_ **\ (CloseEvent
-   *close*)
+-  void :ref:`closing <sdk_qtquick_window_window_closing>`\ (CloseEvent *close*)
 
 Methods
 -------
 
--  `alert </sdk/apps/qml/QtQuick/Window.Window/_alert-method>`_ \ (int
-   *msec*)
--  `close </sdk/apps/qml/QtQuick/Window.Window/_close-method>`_ \ ()
--  `hide </sdk/apps/qml/QtQuick/Window.Window/_hide-method>`_ \ ()
--  `lower </sdk/apps/qml/QtQuick/Window.Window/_lower-method>`_ \ ()
--  `raise </sdk/apps/qml/QtQuick/Window.Window/_raise-method>`_ \ ()
--  `requestActivate </sdk/apps/qml/QtQuick/Window.Window/_requestActivate-method>`_ \ ()
--  `show </sdk/apps/qml/QtQuick/Window.Window/_show-method>`_ \ ()
--  `showFullScreen </sdk/apps/qml/QtQuick/Window.Window/_showFullScreen-method>`_ \ ()
--  `showMaximized </sdk/apps/qml/QtQuick/Window.Window/_showMaximized-method>`_ \ ()
--  `showMinimized </sdk/apps/qml/QtQuick/Window.Window/_showMinimized-method>`_ \ ()
--  `showNormal </sdk/apps/qml/QtQuick/Window.Window/_showNormal-method>`_ \ ()
+-  :ref:`alert <sdk_qtquick_window_window_alert>`\ (int *msec*)
+-  :ref:`close <sdk_qtquick_window_window_close>`\ ()
+-  :ref:`hide <sdk_qtquick_window_window_hide>`\ ()
+-  :ref:`lower <sdk_qtquick_window_window_lower>`\ ()
+-  :ref:`raise <sdk_qtquick_window_window_raise>`\ ()
+-  :ref:`requestActivate <sdk_qtquick_window_window_requestActivate>`\ ()
+-  :ref:`show <sdk_qtquick_window_window_show>`\ ()
+-  :ref:`showFullScreen <sdk_qtquick_window_window_showFullScreen>`\ ()
+-  :ref:`showMaximized <sdk_qtquick_window_window_showMaximized>`\ ()
+-  :ref:`showMinimized <sdk_qtquick_window_window_showMinimized>`\ ()
+-  :ref:`showNormal <sdk_qtquick_window_window_showNormal>`\ ()
 
 Detailed Description
 --------------------
 
-The Window object creates a new top-level window for a Qt Quick scene.
-It automatically sets up the window for use with ``QtQuick 2.x``
-graphical types.
+The Window object creates a new top-level window for a Qt Quick scene. It automatically sets up the window for use with ``QtQuick 2.x`` graphical types.
 
-To use this type, you will need to import the module with the following
-line:
+To use this type, you will need to import the module with the following line:
 
 .. code:: cpp
 
     import QtQuick.Window 2.2
 
-Omitting this import will allow you to have a QML environment without
-access to window system features.
+Omitting this import will allow you to have a QML environment without access to window system features.
 
-A Window can be declared inside an Item or inside another Window; in
-that case the inner Window will automatically become "transient for" the
-outer Window: that is, most platforms will show it centered upon the
-outer window by default, and there may be other platform-dependent
-behaviors, depending also on the
-`flags </sdk/apps/qml/QtQuick/Window.Window/#flags-prop>`_ . If the
-nested window is intended to be a dialog in your application, you should
-also set `flags </sdk/apps/qml/QtQuick/Window.Window/#flags-prop>`_  to
-Qt.Dialog, because some window managers will not provide the centering
-behavior without that flag. You can also declare multiple windows inside
-a top-level QtObject, in which case the windows will have no transient
-relationship.
+A Window can be declared inside an Item or inside another Window; in that case the inner Window will automatically become "transient for" the outer Window: that is, most platforms will show it centered upon the outer window by default, and there may be other platform-dependent behaviors, depending also on the :ref:`flags <sdk_qtquick_window_window_flags>`. If the nested window is intended to be a dialog in your application, you should also set :ref:`flags <sdk_qtquick_window_window_flags>` to Qt.Dialog, because some window managers will not provide the centering behavior without that flag. You can also declare multiple windows inside a top-level QtObject, in which case the windows will have no transient relationship.
 
-Alternatively you can set or bind
-`x </sdk/apps/qml/QtQuick/Window.Window/#x-prop>`_  and
-`y </sdk/apps/qml/QtQuick/Window.Window/#y-prop>`_  to position the
-Window explicitly on the screen.
+Alternatively you can set or bind :ref:`x <sdk_qtquick_window_window_x>` and :ref:`y <sdk_qtquick_window_window_y>` to position the Window explicitly on the screen.
 
-When the user attempts to close a window, the
-`closing </sdk/apps/qml/QtQuick/Window.Window/#closing-signal>`_  signal
-will be emitted. You can force the window to stay open (for example to
-prompt the user to save changes) by writing an ``onClosing`` handler and
-setting ``close.accepted = false``.
+When the user attempts to close a window, the :ref:`closing <sdk_qtquick_window_window_closing>` signal will be emitted. You can force the window to stay open (for example to prompt the user to save changes) by writing an ``onClosing`` handler and setting ``close.accepted = false``.
 
 Property Documentation
 ----------------------
 
-.. _sdk_qtquick_window_window_-prop:
+.. _sdk_qtquick_window_window_activeFocusItem:
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ activeFocusItem : `Item <sdk_qtquick_item>`                |
-+--------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| activeFocusItem : :ref:`Item <sdk_qtquick_item>`                                                                                                                                                                                                                                                                |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-The item which currently has active focus or ``null`` if there is no
-item with active focus.
+The item which currently has active focus or ``null`` if there is no item with active focus.
 
 This QML property was introduced in Qt 5.1.
 
-| 
+.. _sdk_qtquick_window_window_color:
 
-.. _sdk_qtquick_window_window_color-prop:
-
-+--------------------------------------------------------------------------+
-|        \ color : color                                                   |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| color : color                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The background color for the window.
 
 Setting this property is more efficient than using a separate Rectangle.
 
-| 
+.. _sdk_qtquick_window_window_contentOrientation:
 
-.. _sdk_qtquick_window_window_contentOrientation-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| contentOrientation : Qt::ScreenOrientation                                                                                                                                                                                                                                                                   |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ contentOrientation : Qt::ScreenOrientation                      |
-+--------------------------------------------------------------------------+
+This is a hint to the window manager in case it needs to display additional content like popups, dialogs, status bars, or similar in relation to the window.
 
-This is a hint to the window manager in case it needs to display
-additional content like popups, dialogs, status bars, or similar in
-relation to the window.
+The recommended orientation is `Screen.orientation </sdk/apps/qml/QtQuick/Window.Screen/#orientation-attached-prop>`_ , but an application doesn't have to support all possible orientations, and thus can opt to ignore the current screen orientation.
 
-The recommended orientation is
-`Screen.orientation </sdk/apps/qml/QtQuick/Window.Screen/#orientation-attached-prop>`_ ,
-but an application doesn't have to support all possible orientations,
-and thus can opt to ignore the current screen orientation.
-
-The difference between the window and the content orientation determines
-how much to rotate the content by.
+The difference between the window and the content orientation determines how much to rotate the content by.
 
 The default value is Qt::PrimaryOrientation.
 
@@ -176,304 +121,218 @@ This QML property was introduced in Qt 5.1.
 
 **See also** `Screen </sdk/apps/qml/QtQuick/Window.Screen/>`_ .
 
-| 
+.. _sdk_qtquick_window_window_data:
 
-.. _sdk_qtquick_window_window_data-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| [default] data : list<Object>                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ [default] data : list<Object>                                   |
-+--------------------------------------------------------------------------+
+The data property allows you to freely mix visual children, resources and other Windows in a Window.
 
-The data property allows you to freely mix visual children, resources
-and other Windows in a Window.
+If you assign another Window to the data list, the nested window will become "transient for" the outer Window.
 
-If you assign another Window to the data list, the nested window will
-become "transient for" the outer Window.
-
-If you assign an :ref:`Item <sdk_qtquick_item>` to the data list, it
-becomes a child of the Window's
-`contentItem </sdk/apps/qml/QtQuick/Window.Window/#contentItem-attached-prop>`_ ,
-so that it appears inside the window. The item's parent will be the
-window's
-`contentItem </sdk/apps/qml/QtQuick/Window.Window/#contentItem-attached-prop>`_ ,
-which is the root of the Item ownership tree within that Window.
+If you assign an :ref:`Item <sdk_qtquick_item>` to the data list, it becomes a child of the Window's :ref:`contentItem <sdk_qtquick_window_window_contentItem>`, so that it appears inside the window. The item's parent will be the window's :ref:`contentItem <sdk_qtquick_window_window_contentItem>`, which is the root of the Item ownership tree within that Window.
 
 If you assign any other object type, it is added as a resource.
 
-It should not generally be necessary to refer to the ``data`` property,
-as it is the default property for Window and thus all child items are
-automatically assigned to this property.
+It should not generally be necessary to refer to the ``data`` property, as it is the default property for Window and thus all child items are automatically assigned to this property.
 
 **See also** QWindow::transientParent().
 
-| 
+.. _sdk_qtquick_window_window_flags:
 
-.. _sdk_qtquick_window_window_flags-prop:
-
-+--------------------------------------------------------------------------+
-|        \ flags : Qt::WindowFlags                                         |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| flags : Qt::WindowFlags                                                                                                                                                                                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The window flags of the window.
 
-The window flags control the window's appearance in the windowing
-system, whether it's a dialog, popup, or a regular window, and whether
-it should have a title bar, etc.
+The window flags control the window's appearance in the windowing system, whether it's a dialog, popup, or a regular window, and whether it should have a title bar, etc.
 
-The flags which you read from this property might differ from the ones
-that you set if the requested flags could not be fulfilled.
+The flags which you read from this property might differ from the ones that you set if the requested flags could not be fulfilled.
 
-| 
+.. _sdk_qtquick_window_window_height:
 
-.. _sdk_qtquick_window_window_height-prop:
-
-+--------------------------------------------------------------------------+
-|        \ height : int                                                    |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| height : int                                                                                                                                                                                                                                                                                                 |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Defines the window's position and size.
 
-The (x,y) position is relative to the
-`Screen </sdk/apps/qml/QtQuick/Window.Screen/>`_  if there is only one,
-or to the virtual desktop (arrangement of multiple screens).
+The (x,y) position is relative to the `Screen </sdk/apps/qml/QtQuick/Window.Screen/>`_  if there is only one, or to the virtual desktop (arrangement of multiple screens).
 
 .. code:: qml
 
     Window { x: 100; y: 100; width: 100; height: 100 }
 
-|image0|
+.. _sdk_qtquick_window_window_maximumHeight:
 
-| 
-
-.. _sdk_qtquick_window_window_maximumHeight-prop:
-
-+--------------------------------------------------------------------------+
-|        \ maximumHeight : int                                             |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| maximumHeight : int                                                                                                                                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Defines the window's maximum size.
 
-This is a hint to the window manager to prevent resizing above the
-specified width and height.
+This is a hint to the window manager to prevent resizing above the specified width and height.
 
 This QML property was introduced in Qt 5.1.
 
-| 
+.. _sdk_qtquick_window_window_maximumWidth:
 
-.. _sdk_qtquick_window_window_maximumWidth-prop:
-
-+--------------------------------------------------------------------------+
-|        \ maximumWidth : int                                              |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| maximumWidth : int                                                                                                                                                                                                                                                                                           |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Defines the window's maximum size.
 
-This is a hint to the window manager to prevent resizing above the
-specified width and height.
+This is a hint to the window manager to prevent resizing above the specified width and height.
 
 This QML property was introduced in Qt 5.1.
 
-| 
+.. _sdk_qtquick_window_window_minimumHeight:
 
-.. _sdk_qtquick_window_window_minimumHeight-prop:
-
-+--------------------------------------------------------------------------+
-|        \ minimumHeight : int                                             |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| minimumHeight : int                                                                                                                                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Defines the window's minimum size.
 
-This is a hint to the window manager to prevent resizing below the
-specified width and height.
+This is a hint to the window manager to prevent resizing below the specified width and height.
 
 This QML property was introduced in Qt 5.1.
 
-| 
+.. _sdk_qtquick_window_window_minimumWidth:
 
-.. _sdk_qtquick_window_window_minimumWidth-prop:
-
-+--------------------------------------------------------------------------+
-|        \ minimumWidth : int                                              |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| minimumWidth : int                                                                                                                                                                                                                                                                                           |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Defines the window's minimum size.
 
-This is a hint to the window manager to prevent resizing below the
-specified width and height.
+This is a hint to the window manager to prevent resizing below the specified width and height.
 
 This QML property was introduced in Qt 5.1.
 
-| 
+.. _sdk_qtquick_window_window_modality:
 
-.. _sdk_qtquick_window_window_modality-prop:
-
-+--------------------------------------------------------------------------+
-|        \ modality : Qt::WindowModality                                   |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| modality : Qt::WindowModality                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The modality of the window.
 
-A modal window prevents other windows from receiving input events.
-Possible values are Qt.NonModal (the default), Qt.WindowModal, and
-Qt.ApplicationModal.
+A modal window prevents other windows from receiving input events. Possible values are Qt.NonModal (the default), Qt.WindowModal, and Qt.ApplicationModal.
 
-| 
+.. _sdk_qtquick_window_window_opacity:
 
-.. _sdk_qtquick_window_window_opacity-prop:
-
-+--------------------------------------------------------------------------+
-|        \ opacity : real                                                  |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| opacity : real                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The opacity of the window.
 
-If the windowing system supports window opacity, this can be used to
-fade the window in and out, or to make it semitransparent.
+If the windowing system supports window opacity, this can be used to fade the window in and out, or to make it semitransparent.
 
-A value of 1.0 or above is treated as fully opaque, whereas a value of
-0.0 or below is treated as fully transparent. Values inbetween represent
-varying levels of translucency between the two extremes.
+A value of 1.0 or above is treated as fully opaque, whereas a value of 0.0 or below is treated as fully transparent. Values inbetween represent varying levels of translucency between the two extremes.
 
 The default value is 1.0.
 
 This QML property was introduced in Qt 5.1.
 
-| 
+.. _sdk_qtquick_window_window_title:
 
-.. _sdk_qtquick_window_window_title-prop:
-
-+--------------------------------------------------------------------------+
-|        \ title : string                                                  |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| title : string                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The window's title in the windowing system.
 
-The window title might appear in the title area of the window
-decorations, depending on the windowing system and the window flags. It
-might also be used by the windowing system to identify the window in
-other contexts, such as in the task switcher.
+The window title might appear in the title area of the window decorations, depending on the windowing system and the window flags. It might also be used by the windowing system to identify the window in other contexts, such as in the task switcher.
 
-| 
+.. _sdk_qtquick_window_window_visibility:
 
-.. _sdk_qtquick_window_window_visibility-prop:
-
-+--------------------------------------------------------------------------+
-|        \ visibility : QWindow::Visibility                                |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| visibility : QWindow::Visibility                                                                                                                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The screen-occupation state of the window.
 
-Visibility is whether the window should appear in the windowing system
-as normal, minimized, maximized, fullscreen or hidden.
+Visibility is whether the window should appear in the windowing system as normal, minimized, maximized, fullscreen or hidden.
 
-To set the visibility to AutomaticVisibility means to give the window a
-default visible state, which might be FullScreen or Windowed depending
-on the platform. However when reading the visibility property you will
-always get the actual state, never ``AutomaticVisibility``.
+To set the visibility to AutomaticVisibility means to give the window a default visible state, which might be FullScreen or Windowed depending on the platform. However when reading the visibility property you will always get the actual state, never ``AutomaticVisibility``.
 
-When a window is not visible its visibility is Hidden, and setting
-visibility to Hidden is the same as setting
-`visible </sdk/apps/qml/QtQuick/Window.Window/#visible-prop>`_  to
-``false``.
+When a window is not visible its visibility is Hidden, and setting visibility to Hidden is the same as setting :ref:`visible <sdk_qtquick_window_window_visible>` to ``false``.
 
 This QML property was introduced in Qt 5.1.
 
-**See also**
-`visible </sdk/apps/qml/QtQuick/Window.Window/#visible-prop>`_ .
+**See also** :ref:`visible <sdk_qtquick_window_window_visible>`.
 
-| 
+.. _sdk_qtquick_window_window_visible:
 
-.. _sdk_qtquick_window_window_visible-prop:
-
-+--------------------------------------------------------------------------+
-|        \ visible : bool                                                  |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| visible : bool                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Whether the window is visible on the screen.
 
-Setting visible to false is the same as setting
-`visibility </sdk/apps/qml/QtQuick/Window.Window/#visibility-attached-prop>`_ 
-to Hidden.
+Setting visible to false is the same as setting :ref:`visibility <sdk_qtquick_window_window_visibility>` to Hidden.
 
-**See also**
-`visibility </sdk/apps/qml/QtQuick/Window.Window/#visibility-attached-prop>`_ .
+**See also** :ref:`visibility <sdk_qtquick_window_window_visibility>`.
 
-| 
+.. _sdk_qtquick_window_window_width:
 
-.. _sdk_qtquick_window_window_width-prop:
-
-+--------------------------------------------------------------------------+
-|        \ width : int                                                     |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| width : int                                                                                                                                                                                                                                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Defines the window's position and size.
 
-The (x,y) position is relative to the
-`Screen </sdk/apps/qml/QtQuick/Window.Screen/>`_  if there is only one,
-or to the virtual desktop (arrangement of multiple screens).
+The (x,y) position is relative to the `Screen </sdk/apps/qml/QtQuick/Window.Screen/>`_  if there is only one, or to the virtual desktop (arrangement of multiple screens).
 
 .. code:: qml
 
     Window { x: 100; y: 100; width: 100; height: 100 }
 
-|image1|
+.. _sdk_qtquick_window_window_x:
 
-| 
-
-.. _sdk_qtquick_window_window_x-prop:
-
-+--------------------------------------------------------------------------+
-|        \ x : int                                                         |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| x : int                                                                                                                                                                                                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Defines the window's position and size.
 
-The (x,y) position is relative to the
-`Screen </sdk/apps/qml/QtQuick/Window.Screen/>`_  if there is only one,
-or to the virtual desktop (arrangement of multiple screens).
+The (x,y) position is relative to the `Screen </sdk/apps/qml/QtQuick/Window.Screen/>`_  if there is only one, or to the virtual desktop (arrangement of multiple screens).
 
 .. code:: qml
 
     Window { x: 100; y: 100; width: 100; height: 100 }
 
-|image2|
+.. _sdk_qtquick_window_window_y:
 
-| 
-
-.. _sdk_qtquick_window_window_y-prop:
-
-+--------------------------------------------------------------------------+
-|        \ y : int                                                         |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| y : int                                                                                                                                                                                                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Defines the window's position and size.
 
-The (x,y) position is relative to the
-`Screen </sdk/apps/qml/QtQuick/Window.Screen/>`_  if there is only one,
-or to the virtual desktop (arrangement of multiple screens).
+The (x,y) position is relative to the `Screen </sdk/apps/qml/QtQuick/Window.Screen/>`_  if there is only one, or to the virtual desktop (arrangement of multiple screens).
 
 .. code:: qml
 
     Window { x: 100; y: 100; width: 100; height: 100 }
-
-|image3|
-
-| 
 
 Attached Property Documentation
 -------------------------------
 
-.. _sdk_qtquick_window_window_Window.active-prop:
+.. _sdk_qtquick_window_window_active:
 
-+--------------------------------------------------------------------------+
-|        \ Window.active : bool                                            |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Window.active : bool                                                                                                                                                                                                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-This attached property tells whether the window is active. The Window
-attached property can be attached to any Item.
+This attached property tells whether the window is active. The Window attached property can be attached to any Item.
 
-Here is an example which changes a label to show the active state of the
-window in which it is shown:
+Here is an example which changes a label to show the active state of the window in which it is shown:
 
 .. code:: qml
 
@@ -485,256 +344,171 @@ window in which it is shown:
 
 This QML property was introduced in Qt 5.4.
 
-| 
+.. _sdk_qtquick_window_window_activeFocusItem1:
 
-.. _sdk_qtquick_window_window_-prop:
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Window.activeFocusItem : :ref:`Item <sdk_qtquick_item>`                                                                                                                                                                                                                                                         |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ Window.activeFocusItem : `Item <sdk_qtquick_item>`         |
-+--------------------------------------------------------------------------+
-
-This attached property holds the item which currently has active focus
-or ``null`` if there is no item with active focus. The Window attached
-property can be attached to any Item.
+This attached property holds the item which currently has active focus or ``null`` if there is no item with active focus. The Window attached property can be attached to any Item.
 
 This QML property was introduced in Qt 5.4.
 
-| 
+.. _sdk_qtquick_window_window_contentItem:
 
-.. _sdk_qtquick_window_window_-prop:
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Window.contentItem : :ref:`Item <sdk_qtquick_item>`                                                                                                                                                                                                                                                             |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ Window.contentItem : `Item <sdk_qtquick_item>`             |
-+--------------------------------------------------------------------------+
-
-This attached property holds the invisible root item of the scene or
-``null`` if the item is not in a window. The Window attached property
-can be attached to any Item.
+This attached property holds the invisible root item of the scene or ``null`` if the item is not in a window. The Window attached property can be attached to any Item.
 
 This QML property was introduced in Qt 5.4.
 
-| 
+.. _sdk_qtquick_window_window_visibility1:
 
-.. _sdk_qtquick_window_window_Window.visibility-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Window.visibility : QWindow::Visibility                                                                                                                                                                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ Window.visibility : QWindow::Visibility                         |
-+--------------------------------------------------------------------------+
-
-This attached property holds whether the window is currently shown in
-the windowing system as normal, minimized, maximized, fullscreen or
-hidden. The ``Window`` attached property can be attached to any Item. If
-the item is not shown in any window, the value will be Hidden.
+This attached property holds whether the window is currently shown in the windowing system as normal, minimized, maximized, fullscreen or hidden. The ``Window`` attached property can be attached to any Item. If the item is not shown in any window, the value will be Hidden.
 
 This QML property was introduced in Qt 5.4.
 
-**See also**
-`visible </sdk/apps/qml/QtQuick/Window.Window/#visible-prop>`_  and
-visibility.
-
-| 
+**See also** :ref:`visible <sdk_qtquick_window_window_visible>` and visibility.
 
 Signal Documentation
 --------------------
 
-.. _sdk_qtquick_window_window_void-prop:
+.. _sdk_qtquick_window_window_closing:
 
-+--------------------------------------------------------------------------+
-|        \ void                                                            |
-| closing(`CloseEvent </sdk/apps/qml/QtQuick/Window.CloseEvent/>`_         |
-| *close*)                                                                 |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| void closing(`CloseEvent </sdk/apps/qml/QtQuick/Window.CloseEvent/>`_  *close*)                                                                                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This signal is emitted when the user tries to close the window.
 
-This signal includes a *close* parameter. The *close* accepted property
-is true by default so that the window is allowed to close; but you can
-implement an ``onClosing`` handler and set ``close.accepted = false`` if
-you need to do something else before the window can be closed.
+This signal includes a *close* parameter. The *close* accepted property is true by default so that the window is allowed to close; but you can implement an ``onClosing`` handler and set ``close.accepted = false`` if you need to do something else before the window can be closed.
 
 The corresponding handler is ``onClosing``.
 
 This QML signal was introduced in Qt 5.1.
 
-| 
-
 Method Documentation
 --------------------
 
-.. _sdk_qtquick_window_window_alert-method:
+.. _sdk_qtquick_window_window_alert:
 
-+--------------------------------------------------------------------------+
-|        \ alert(int *msec*)                                               |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| alert(int *msec*)                                                                                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Causes an alert to be shown for *msec* milliseconds. If *msec* is ``0``
-(the default), then the alert is shown indefinitely until the window
-becomes active again.
+Causes an alert to be shown for *msec* milliseconds. If *msec* is ``0`` (the default), then the alert is shown indefinitely until the window becomes active again.
 
-In alert state, the window indicates that it demands attention, for
-example by flashing or bouncing the taskbar entry.
+In alert state, the window indicates that it demands attention, for example by flashing or bouncing the taskbar entry.
 
 This QML method was introduced in Qt 5.1.
 
-| 
+.. _sdk_qtquick_window_window_close:
 
-.. _sdk_qtquick_window_window_close-method:
-
-+--------------------------------------------------------------------------+
-|        \ close()                                                         |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| close()                                                                                                                                                                                                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Closes the window.
 
-When this method is called, or when the user tries to close the window
-by its title bar button, the
-`closing </sdk/apps/qml/QtQuick/Window.Window/#closing-signal>`_  signal
-will be emitted. If there is no handler, or the handler does not revoke
-permission to close, the window will subsequently close. If the
-QGuiApplication::quitOnLastWindowClosed property is ``true``, and there
-are no other windows open, the application will quit.
+When this method is called, or when the user tries to close the window by its title bar button, the :ref:`closing <sdk_qtquick_window_window_closing>` signal will be emitted. If there is no handler, or the handler does not revoke permission to close, the window will subsequently close. If the QGuiApplication::quitOnLastWindowClosed property is ``true``, and there are no other windows open, the application will quit.
 
-| 
+.. _sdk_qtquick_window_window_hide:
 
-.. _sdk_qtquick_window_window_hide-method:
-
-+--------------------------------------------------------------------------+
-|        \ hide()                                                          |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| hide()                                                                                                                                                                                                                                                                                                       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Hides the window.
 
-Equivalent to setting
-`visible </sdk/apps/qml/QtQuick/Window.Window/#visible-prop>`_  to
-``false`` or
-`visibility </sdk/apps/qml/QtQuick/Window.Window/#visibility-attached-prop>`_ 
-to Hidden.
+Equivalent to setting :ref:`visible <sdk_qtquick_window_window_visible>` to ``false`` or :ref:`visibility <sdk_qtquick_window_window_visibility>` to Hidden.
 
-**See also**
-`show() </sdk/apps/qml/QtQuick/Window.Window/#show-method>`_ .
+**See also** :ref:`show() <sdk_qtquick_window_window_show>`.
 
-| 
+.. _sdk_qtquick_window_window_lower:
 
-.. _sdk_qtquick_window_window_lower-method:
-
-+--------------------------------------------------------------------------+
-|        \ lower()                                                         |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| lower()                                                                                                                                                                                                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Lowers the window in the windowing system.
 
 Requests that the window be lowered to appear below other windows.
 
-| 
+.. _sdk_qtquick_window_window_raise:
 
-.. _sdk_qtquick_window_window_raise-method:
-
-+--------------------------------------------------------------------------+
-|        \ raise()                                                         |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| raise()                                                                                                                                                                                                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Raises the window in the windowing system.
 
 Requests that the window be raised to appear above other windows.
 
-| 
+.. _sdk_qtquick_window_window_requestActivate:
 
-.. _sdk_qtquick_window_window_requestActivate-method:
-
-+--------------------------------------------------------------------------+
-|        \ requestActivate()                                               |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| requestActivate()                                                                                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Requests the window to be activated, i.e. receive keyboard focus.
 
 This QML method was introduced in Qt 5.1.
 
-| 
+.. _sdk_qtquick_window_window_show:
 
-.. _sdk_qtquick_window_window_show-method:
-
-+--------------------------------------------------------------------------+
-|        \ show()                                                          |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| show()                                                                                                                                                                                                                                                                                                       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Shows the window.
 
-This is equivalent to calling
-`showFullScreen() </sdk/apps/qml/QtQuick/Window.Window/#showFullScreen-method>`_ ,
-`showMaximized() </sdk/apps/qml/QtQuick/Window.Window/#showMaximized-method>`_ ,
-or
-`showNormal() </sdk/apps/qml/QtQuick/Window.Window/#showNormal-method>`_ ,
-depending on the platform's default behavior for the window type and
-flags.
+This is equivalent to calling :ref:`showFullScreen() <sdk_qtquick_window_window_showFullScreen>`, :ref:`showMaximized() <sdk_qtquick_window_window_showMaximized>`, or :ref:`showNormal() <sdk_qtquick_window_window_showNormal>`, depending on the platform's default behavior for the window type and flags.
 
-**See also**
-`showFullScreen() </sdk/apps/qml/QtQuick/Window.Window/#showFullScreen-method>`_ ,
-`showMaximized() </sdk/apps/qml/QtQuick/Window.Window/#showMaximized-method>`_ ,
-`showNormal() </sdk/apps/qml/QtQuick/Window.Window/#showNormal-method>`_ ,
-`hide() </sdk/apps/qml/QtQuick/Window.Window/#hide-method>`_ , and
-flags().
+**See also** :ref:`showFullScreen() <sdk_qtquick_window_window_showFullScreen>`, :ref:`showMaximized() <sdk_qtquick_window_window_showMaximized>`, :ref:`showNormal() <sdk_qtquick_window_window_showNormal>`, :ref:`hide() <sdk_qtquick_window_window_hide>`, and flags().
 
-| 
+.. _sdk_qtquick_window_window_showFullScreen:
 
-.. _sdk_qtquick_window_window_showFullScreen-method:
-
-+--------------------------------------------------------------------------+
-|        \ showFullScreen()                                                |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| showFullScreen()                                                                                                                                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Shows the window as fullscreen.
 
-Equivalent to setting
-`visibility </sdk/apps/qml/QtQuick/Window.Window/#visibility-attached-prop>`_ 
-to FullScreen.
+Equivalent to setting :ref:`visibility <sdk_qtquick_window_window_visibility>` to FullScreen.
 
-| 
+.. _sdk_qtquick_window_window_showMaximized:
 
-.. _sdk_qtquick_window_window_showMaximized-method:
-
-+--------------------------------------------------------------------------+
-|        \ showMaximized()                                                 |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| showMaximized()                                                                                                                                                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Shows the window as maximized.
 
-Equivalent to setting
-`visibility </sdk/apps/qml/QtQuick/Window.Window/#visibility-attached-prop>`_ 
-to Maximized.
+Equivalent to setting :ref:`visibility <sdk_qtquick_window_window_visibility>` to Maximized.
 
-| 
+.. _sdk_qtquick_window_window_showMinimized:
 
-.. _sdk_qtquick_window_window_showMinimized-method:
-
-+--------------------------------------------------------------------------+
-|        \ showMinimized()                                                 |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| showMinimized()                                                                                                                                                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Shows the window as minimized.
 
-Equivalent to setting
-`visibility </sdk/apps/qml/QtQuick/Window.Window/#visibility-attached-prop>`_ 
-to Minimized.
+Equivalent to setting :ref:`visibility <sdk_qtquick_window_window_visibility>` to Minimized.
 
-| 
+.. _sdk_qtquick_window_window_showNormal:
 
-.. _sdk_qtquick_window_window_showNormal-method:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| showNormal()                                                                                                                                                                                                                                                                                                 |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ showNormal()                                                    |
-+--------------------------------------------------------------------------+
+Shows the window as normal, i.e. neither maximized, minimized, nor fullscreen.
 
-Shows the window as normal, i.e. neither maximized, minimized, nor
-fullscreen.
-
-Equivalent to setting
-`visibility </sdk/apps/qml/QtQuick/Window.Window/#visibility-attached-prop>`_ 
-to Windowed.
-
-| 
-
-.. |image0| image:: /media/sdk/apps/qml/QtQuick/Window.Window/images/screen-and-window-dimensions.jpg
-.. |image1| image:: /media/sdk/apps/qml/QtQuick/Window.Window/images/screen-and-window-dimensions.jpg
-.. |image2| image:: /media/sdk/apps/qml/QtQuick/Window.Window/images/screen-and-window-dimensions.jpg
-.. |image3| image:: /media/sdk/apps/qml/QtQuick/Window.Window/images/screen-and-window-dimensions.jpg
+Equivalent to setting :ref:`visibility <sdk_qtquick_window_window_visibility>` to Windowed.
 

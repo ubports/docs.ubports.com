@@ -1,9 +1,9 @@
 .. _sdk_qtorganizer_invalidfilter:
+
 QtOrganizer InvalidFilter
 =========================
 
-the InvalidFilter element provides a filter which will never match any
-organizer items.
+the InvalidFilter element provides a filter which will never match any organizer items.
 
 +---------------------+--------------------------+
 | Import Statement:   | import QtOrganizer 5.0   |
@@ -12,8 +12,8 @@ organizer items.
 Signals
 -------
 
--  **:ref:`onFilterChanged <sdk_qtorganizer_invalidfilter#onFilterChanged-signal>`**\ ()
--  **:ref:`onFilterChanged <sdk_qtorganizer_invalidfilter#onFilterChanged-signal>`**\ ()
+-  :ref:`onFilterChanged <sdk_qtorganizer_invalidfilter_onFilterChanged>`\ ()
+-  :ref:`onFilterChanged <sdk_qtorganizer_invalidfilter_onFilterChanged>`\ ()
 
 Detailed Description
 --------------------
@@ -23,20 +23,19 @@ Detailed Description
 Signal Documentation
 --------------------
 
-+--------------------------------------------------------------------------+
-|        \ onFilterChanged()                                               |
-+--------------------------------------------------------------------------+
+.. _sdk_qtorganizer_invalidfilter_onFilterChanged:
 
-**See also**
-:ref:`QtOrganizer5::Filter::onFilterChanged <sdk_qtorganizer_filter#onFilterChanged-signal>`.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| onFilterChanged()                                                                                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-| 
+**See also** :ref:`QtOrganizer5::Filter::onFilterChanged <sdk_qtorganizer_filter_onFilterChanged>`.
 
-+--------------------------------------------------------------------------+
-|        \ onFilterChanged()                                               |
-+--------------------------------------------------------------------------+
+.. _sdk_qtorganizer_invalidfilter_onFilterChanged1:
 
-**See also**
-:ref:`QtOrganizer5::Filter::onFilterChanged <sdk_qtorganizer_filter#onFilterChanged-signal>`.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| onFilterChanged()                                                                                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-| 
+**See also** :ref:`QtOrganizer5::Filter::onFilterChanged <sdk_qtorganizer_filter_onFilterChanged>`.
+

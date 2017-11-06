@@ -1,4 +1,5 @@
 .. _sdk_qtquick_keyevent:
+
 QtQuick KeyEvent
 ================
 
@@ -11,28 +12,23 @@ Provides information about a key event
 Properties
 ----------
 
--  :ref:`accepted <sdk_qtquick_keyevent_accepted-prop>` : bool
--  :ref:`count <sdk_qtquick_keyevent_count-prop>` : int
--  :ref:`isAutoRepeat <sdk_qtquick_keyevent_isAutoRepeat-prop>` :
-   bool
--  :ref:`key <sdk_qtquick_keyevent_key-prop>` : int
--  :ref:`modifiers <sdk_qtquick_keyevent_modifiers-prop>` : int
--  :ref:`nativeScanCode <sdk_qtquick_keyevent_nativeScanCode-prop>`
-   : quint32
--  :ref:`text <sdk_qtquick_keyevent_text-prop>` : string
+-  :ref:`accepted <sdk_qtquick_keyevent_accepted>` : bool
+-  :ref:`count <sdk_qtquick_keyevent_count>` : int
+-  :ref:`isAutoRepeat <sdk_qtquick_keyevent_isAutoRepeat>` : bool
+-  :ref:`key <sdk_qtquick_keyevent_key>` : int
+-  :ref:`modifiers <sdk_qtquick_keyevent_modifiers>` : int
+-  :ref:`nativeScanCode <sdk_qtquick_keyevent_nativeScanCode>` : quint32
+-  :ref:`text <sdk_qtquick_keyevent_text>` : string
 
 Methods
 -------
 
--  bool
-   **:ref:`matches <sdk_qtquick_keyevent#matches-method>`**\ (StandardKey
-   *key*)
+-  bool :ref:`matches <sdk_qtquick_keyevent_matches>`\ (StandardKey *key*)
 
 Detailed Description
 --------------------
 
-For example, the following changes the Item's state property when the
-Enter key is pressed:
+For example, the following changes the Item's state property when the Enter key is pressed:
 
 .. code:: qml
 
@@ -44,69 +40,51 @@ Enter key is pressed:
 Property Documentation
 ----------------------
 
-.. _sdk_qtquick_keyevent_accepted-prop:
+.. _sdk_qtquick_keyevent_accepted:
 
-+--------------------------------------------------------------------------+
-|        \ accepted : bool                                                 |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| accepted : bool                                                                                                                                                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Setting *accepted* to true prevents the key event from being propagated
-to the item's parent.
+Setting *accepted* to true prevents the key event from being propagated to the item's parent.
 
-Generally, if the item acts on the key event then it should be accepted
-so that ancestor items do not also respond to the same event.
+Generally, if the item acts on the key event then it should be accepted so that ancestor items do not also respond to the same event.
 
-| 
+.. _sdk_qtquick_keyevent_count:
 
-.. _sdk_qtquick_keyevent_count-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| count : int                                                                                                                                                                                                                                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ count : int                                                     |
-+--------------------------------------------------------------------------+
+This property holds the number of keys involved in this event. If :ref:`KeyEvent::text <sdk_qtquick_keyevent_text>` is not empty, this is simply the length of the string.
 
-This property holds the number of keys involved in this event. If
-:ref:`KeyEvent::text <sdk_qtquick_keyevent#text-prop>` is not empty, this
-is simply the length of the string.
+.. _sdk_qtquick_keyevent_isAutoRepeat:
 
-| 
-
-.. _sdk_qtquick_keyevent_isAutoRepeat-prop:
-
-+--------------------------------------------------------------------------+
-|        \ isAutoRepeat : bool                                             |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| isAutoRepeat : bool                                                                                                                                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds whether this event comes from an auto-repeating key.
 
-| 
+.. _sdk_qtquick_keyevent_key:
 
-.. _sdk_qtquick_keyevent_key-prop:
-
-+--------------------------------------------------------------------------+
-|        \ key : int                                                       |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| key : int                                                                                                                                                                                                                                                                                                    |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the code of the key that was pressed or released.
 
-See Qt.Key for the list of keyboard codes. These codes are independent
-of the underlying window system. Note that this function does not
-distinguish between capital and non-capital letters; use the
-:ref:`text <sdk_qtquick_keyevent#text-prop>` property for this purpose.
+See Qt.Key for the list of keyboard codes. These codes are independent of the underlying window system. Note that this function does not distinguish between capital and non-capital letters; use the :ref:`text <sdk_qtquick_keyevent_text>` property for this purpose.
 
-A value of either 0 or Qt.Key\_Unknown means that the event is not the
-result of a known key; for example, it may be the result of a compose
-sequence, a keyboard macro, or due to key event compression.
+A value of either 0 or Qt.Key\_Unknown means that the event is not the result of a known key; for example, it may be the result of a compose sequence, a keyboard macro, or due to key event compression.
 
-| 
+.. _sdk_qtquick_keyevent_modifiers:
 
-.. _sdk_qtquick_keyevent_modifiers-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| modifiers : int                                                                                                                                                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ modifiers : int                                                 |
-+--------------------------------------------------------------------------+
-
-This property holds the keyboard modifier flags that existed immediately
-before the event occurred.
+This property holds the keyboard modifier flags that existed immediately before the event occurred.
 
 It contains a bitwise combination of:
 
@@ -129,45 +107,34 @@ For example, to react to a Shift key + Enter key combination:
         }
     }
 
-| 
+.. _sdk_qtquick_keyevent_nativeScanCode:
 
-.. _sdk_qtquick_keyevent_nativeScanCode-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| nativeScanCode : quint32                                                                                                                                                                                                                                                                                     |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ nativeScanCode : quint32                                        |
-+--------------------------------------------------------------------------+
-
-This property contains the native scan code of the key that was pressed.
-It is passed through from QKeyEvent unchanged.
+This property contains the native scan code of the key that was pressed. It is passed through from QKeyEvent unchanged.
 
 **See also** QKeyEvent::nativeScanCode().
 
-| 
+.. _sdk_qtquick_keyevent_text:
 
-.. _sdk_qtquick_keyevent_text-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| text : string                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ text : string                                                   |
-+--------------------------------------------------------------------------+
-
-This property holds the Unicode text that the key generated. The text
-returned can be an empty string in cases where modifier keys, such as
-Shift, Control, Alt, and Meta, are being pressed or released. In such
-cases ``key`` will contain a valid value
-
-| 
+This property holds the Unicode text that the key generated. The text returned can be an empty string in cases where modifier keys, such as Shift, Control, Alt, and Meta, are being pressed or released. In such cases ``key`` will contain a valid value
 
 Method Documentation
 --------------------
 
-.. _sdk_qtquick_keyevent_bool matches-method:
+.. _sdk_qtquick_keyevent_matches:
 
-+--------------------------------------------------------------------------+
-|        \ bool matches(StandardKey *key*)                                 |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| bool matches(StandardKey *key*)                                                                                                                                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Returns ``true`` if the key event matches the given standard *key*;
-otherwise returns ``false``.
+Returns ``true`` if the key event matches the given standard *key*; otherwise returns ``false``.
 
 .. code:: qml
 
@@ -185,4 +152,3 @@ This QML method was introduced in Qt 5.2.
 
 **See also** QKeySequence::StandardKey.
 
-| 

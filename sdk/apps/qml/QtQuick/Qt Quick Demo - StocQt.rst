@@ -1,26 +1,15 @@
 .. _sdk_qtquick_qt_quick_demo_-_stocqt:
+
 QtQuick Qt Quick Demo - StocQt
 ==============================
 
 
 
-|image0|
+The *StocQt* application presents a trend chart for the first stock in the list of NASDAQ-100 stocks maintained by it. It allows the user to choose another stock from the list, and fetches the required data for the selected stock by sending an ``XMLHttpRequest`` to http://finance.yahoo.com.
 
-The *StocQt* application presents a trend chart for the first stock in
-the list of NASDAQ-100 stocks maintained by it. It allows the user to
-choose another stock from the list, and fetches the required data for
-the selected stock by sending an ``XMLHttpRequest`` to
-http://finance.yahoo.com.
+The application uses several custom types such as Button, CheckBox, StockChart, StockInfo, StockView, and so on. These types are used to present the stock data in a readable form and also let the user customize the trend chart. For example, the user can choose to view the yearly, monthly, or daily trends in the stock price.
 
-The application uses several custom types such as Button, CheckBox,
-StockChart, StockInfo, StockView, and so on. These types are used to
-present the stock data in a readable form and also let the user
-customize the trend chart. For example, the user can choose to view the
-yearly, monthly, or daily trends in the stock price.
-
-The application uses the
-`ObjectModel </sdk/apps/qml/QtQuick/views/#objectmodel>`_  type to
-access the two visual data models that it depends on.
+The application uses the `ObjectModel </sdk/apps/qml/QtQuick/views/#objectmodel>`_  type to access the two visual data models that it depends on.
 
 .. code:: qml
 
@@ -43,15 +32,9 @@ access the two visual data models that it depends on.
             }
         }
 
-The StockListView model is a static data model listing the NASDAQ-100
-stocks with basic information such as stockId, name, value, change, and
-so on. This data model is used by the application if the user wants to
-choose another stock from the list.
+The StockListView model is a static data model listing the NASDAQ-100 stocks with basic information such as stockId, name, value, change, and so on. This data model is used by the application if the user wants to choose another stock from the list.
 
-StockView is a complex data model that presents a trend chart for the
-selected stock. It uses another custom type, StockChart, which presents
-the graphical trend of the stock price using a Canvas. This data model
-is used for most of the time during the lifetime of the application.
+StockView is a complex data model that presents a trend chart for the selected stock. It uses another custom type, StockChart, which presents the graphical trend of the stock price using a Canvas. This data model is used for most of the time during the lifetime of the application.
 
 .. code:: qml
 
@@ -109,15 +92,9 @@ is used for most of the time during the lifetime of the application.
         }
     }
 
-To understand the application better, browse through its code using Qt
-Creator.
+To understand the application better, browse through its code using Qt Creator.
 
-.. rubric:: Running the Example
-   :name: running-the-example
-
-To run the example from Qt Creator, open the **Welcome** mode and select
-the example from **Examples**. For more information, visit Building and
-Running an Example.
+To run the example from Qt Creator, open the **Welcome** mode and select the example from **Examples**. For more information, visit Building and Running an Example.
 
 Files:
 
@@ -137,6 +114,4 @@ Files:
 -  demos/stocqt/stocqt.qrc
 
 **See also** QML Applications.
-
-.. |image0| image:: /media/sdk/apps/qml/qtquick-demos-stocqt-example/images/qtquick-demo-stocqt.png
 

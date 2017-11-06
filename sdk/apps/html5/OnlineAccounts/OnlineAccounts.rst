@@ -1,42 +1,31 @@
 .. _sdk_onlineaccounts_onlineaccounts:
+
 OnlineAccounts OnlineAccounts
 =============================
 
 
-The OnlineAccounts object is the entry point to online accounts service
-access.
+The OnlineAccounts object is the entry point to online accounts service access.
 
 -  Methods
 
-**``api.getAccounts``**\ ( ``filters, callback `` )
+**api.getAccounts**\ (``filters, callback``)
 Gets the configured accounts satisfying the given filters.
 
 **Parameters:**
 
--  ``filters`` **<Object>**
+- ``filters`` **<Object>**
 
-   A dictionary of parameters to filter the result. The filtering keys
-   are:
+   A dictionary of parameters to filter the result. The filtering keys are:
 
-   -  applicationId: the ID of a application (see
-      /usr/share/accounts/applications/ or
-      ~/.local/share/accounts/applications/ for a list of the available
-      applications)
-   -  provider: the ID of a provider (see /usr/share/accounts/providers/
-      or ~/.local/share/accounts/providers/ for a list of the available
-      providers)
-   -  service: the ID of a service (see /usr/share/accounts/services/ or
-      ~/.local/share/accounts/services/ for a list of the available
-      services)
+   -  applicationId: the ID of a application (see /usr/share/accounts/applications/ or ~/.local/share/accounts/applications/ for a list of the available applications)
+   -  provider: the ID of a provider (see /usr/share/accounts/providers/ or ~/.local/share/accounts/providers/ for a list of the available providers)
+   -  service: the ID of a service (see /usr/share/accounts/services/ or ~/.local/share/accounts/services/ for a list of the available services)
 
--  ``callback`` **<Function(List of AccountService objects)>**
+- ``callback`` **<Function(List of AccountService objects)>**
 
    Callback that receives the result or null
 
-.. rubric:: Example
-   :name: example
-
-.. code:: code
+.. code:: html
 
               var api = external.getUnityObject(1.0);
                               var oa = api.OnlineAccounts;
@@ -51,31 +40,22 @@ Gets the configured accounts satisfying the given filters.
                                 }               
                               });
 
-**``api.getProviders``**\ ( ``filters, callback `` )
+**api.getProviders**\ (``filters, callback``)
 Gets list of available providers.
 
 **Parameters:**
 
--  ``filters`` **<Object>**
+- ``filters`` **<Object>**
 
-   A dictionary of parameters to filter the result. The filtering keys
-   are:
+   A dictionary of parameters to filter the result. The filtering keys are:
 
-   -  applicationId: the ID of a application (see
-      /usr/share/accounts/applications/ or
-      ~/.local/share/accounts/applications/ for a list of the available
-      applications)
+   -  applicationId: the ID of a application (see /usr/share/accounts/applications/ or ~/.local/share/accounts/applications/ for a list of the available applications)
 
--  ``callback`` **<Function(List of AccountService objects)>**
+- ``callback`` **<Function(List of AccountService objects)>**
 
-   Callback that receives the result or null. The result is a dictionary
-   with the following keys: - displayName: the display name for the
-   corresponding provider - providerId: the provider id
+   Callback that receives the result or null. The result is a dictionary with the following keys: - displayName: the display name for the corresponding provider - providerId: the provider id
 
-.. rubric:: Example
-   :name: example-1
-
-.. code:: code
+.. code:: html
 
               var api = external.getUnityObject(1.0);
                               var oa = api.OnlineAccounts;
@@ -87,38 +67,26 @@ Gets list of available providers.
                                 }
                               });
 
-**``api.requestAccount``**\ ( ``applicationId, providerId, callback `` )
+**api.requestAccount**\ (``applicationId, providerId, callback``)
 Requests access to an account.
 
-Applications must invoke this method in order to obtain access to an
-account. The user will be prompted to grant access to either an existing
-account, to create a new one or to decline the request.
+Applications must invoke this method in order to obtain access to an account. The user will be prompted to grant access to either an existing account, to create a new one or to decline the request.
 
 **Parameters:**
 
--  ``applicationId`` **<String>**
+- ``applicationId`` **<String>**
 
-   The ID of the application requesting the account (see
-   /usr/share/accounts/applications/ or
-   ~/.local/share/accounts/applications/ for a list of the available
-   applications)
+   The ID of the application requesting the account (see /usr/share/accounts/applications/ or ~/.local/share/accounts/applications/ for a list of the available applications)
 
--  ``providerId`` **<String>**
+- ``providerId`` **<String>**
 
-   The ID of the provider of the desired account (see
-   /usr/share/accounts/providers/ or ~/.local/share/accounts/providers/
-   for a list of the available providers)
+   The ID of the provider of the desired account (see /usr/share/accounts/providers/ or ~/.local/share/accounts/providers/ for a list of the available providers)
 
--  ``callback`` **<Function()>**
+- ``callback`` **<Function()>**
 
-   Callback which will be invoked after the access request has been
-   decided (either with the access to an account being granted, or with
-   a refusal).
+   Callback which will be invoked after the access request has been decided (either with the access to an account being granted, or with a refusal).
 
-.. rubric:: Example
-   :name: example-2
-
-.. code:: code
+.. code:: html
 
               var api = external.getUnityObject(1.0);
                               var oa = api.OnlineAccounts;

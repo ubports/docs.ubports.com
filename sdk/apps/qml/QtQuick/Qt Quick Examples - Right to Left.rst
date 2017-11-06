@@ -1,30 +1,19 @@
 .. _sdk_qtquick_qt_quick_examples_-_right_to_left:
+
 QtQuick Qt Quick Examples - Right to Left
 =========================================
 
 
 
-|image0|
-
-*Right to Left* is a collection of small QML examples relating to right
-to left (RTL) localization support. For more information, visit
-`Right-to-left User
-Interfaces </sdk/apps/qml/QtQuick/qtquick-positioning-righttoleft/>`_ .
+*Right to Left* is a collection of small QML examples relating to right to left (RTL) localization support. For more information, visit `Right-to-left User Interfaces </sdk/apps/qml/QtQuick/qtquick-positioning-righttoleft/>`_ .
 
 These are the examples in Right to Left:
 
 -  *Layout Direction* - shows RTL layout direction
--  *Layout Mirroring* - shows automatic mirroring of horizontal layouts
-   in RTL locales
--  *Text Alignment* - shows automatic mirroring of text alignment in RTL
-   locales
+-  *Layout Mirroring* - shows automatic mirroring of horizontal layouts in RTL locales
+-  *Text Alignment* - shows automatic mirroring of text alignment in RTL locales
 
-.. rubric:: Running the Example
-   :name: running-the-example
-
-To run the example from Qt Creator, open the **Welcome** mode and select
-the example from **Examples**. For more information, visit Building and
-Running an Example.
+To run the example from Qt Creator, open the **Welcome** mode and select the example from **Examples**. For more information, visit Building and Running an Example.
 
 Files:
 
@@ -39,6 +28,4 @@ Files:
 -  righttoleft/layoutdirection/layoutdirection.qmlproject
 -  righttoleft/layoutmirroring/layoutmirroring.qmlproject
 -  righttoleft/textalignment/textalignment.qmlproject
-
-.. |image0| image:: /media/sdk/apps/qml/qtquick-righttoleft-example/images/qml-righttoleft-example.png
 

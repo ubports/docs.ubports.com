@@ -1,4 +1,5 @@
 .. _sdk_qtaudioengine_soundinstance:
+
 QtAudioEngine SoundInstance
 ===========================
 
@@ -13,50 +14,39 @@ Play 3d audio content.
 Properties
 ----------
 
--  :ref:`direction <sdk_qtaudioengine_soundinstance_direction-prop>`
-   : vector3d
--  :ref:`engine <sdk_qtaudioengine_soundinstance_engine-prop>` :
-   QtAudioEngine::AudioEngine
--  :ref:`gain <sdk_qtaudioengine_soundinstance_gain-prop>` :
-   vector3d
--  :ref:`pitch <sdk_qtaudioengine_soundinstance_pitch-prop>` :
-   vector3d
--  :ref:`position <sdk_qtaudioengine_soundinstance_position-prop>`
-   : vector3d
--  :ref:`sound <sdk_qtaudioengine_soundinstance_sound-prop>` :
-   string
--  :ref:`state <sdk_qtaudioengine_soundinstance_state-prop>` :
-   enumeration
--  :ref:`velocity <sdk_qtaudioengine_soundinstance_velocity-prop>`
-   : vector3d
+-  :ref:`direction <sdk_qtaudioengine_soundinstance_direction>` : vector3d
+-  :ref:`engine <sdk_qtaudioengine_soundinstance_engine>` : QtAudioEngine::AudioEngine
+-  :ref:`gain <sdk_qtaudioengine_soundinstance_gain>` : vector3d
+-  :ref:`pitch <sdk_qtaudioengine_soundinstance_pitch>` : vector3d
+-  :ref:`position <sdk_qtaudioengine_soundinstance_position>` : vector3d
+-  :ref:`sound <sdk_qtaudioengine_soundinstance_sound>` : string
+-  :ref:`state <sdk_qtaudioengine_soundinstance_state>` : enumeration
+-  :ref:`velocity <sdk_qtaudioengine_soundinstance_velocity>` : vector3d
 
 Signals
 -------
 
--  :ref:`directionChanged <sdk_qtaudioengine_soundinstance_directionChanged-signal>`\ ()
--  :ref:`gainChanged <sdk_qtaudioengine_soundinstance_gainChanged-signal>`\ ()
--  :ref:`pitchChanged <sdk_qtaudioengine_soundinstance_pitchChanged-signal>`\ ()
--  :ref:`positionChanged <sdk_qtaudioengine_soundinstance_positionChanged-signal>`\ ()
--  :ref:`soundChanged <sdk_qtaudioengine_soundinstance_soundChanged-signal>`\ ()
--  :ref:`stateChanged <sdk_qtaudioengine_soundinstance_stateChanged-signal>`\ (state)
--  :ref:`velocityChanged <sdk_qtaudioengine_soundinstance_velocityChanged-signal>`\ ()
+-  :ref:`directionChanged <sdk_qtaudioengine_soundinstance_directionChanged>`\ ()
+-  :ref:`gainChanged <sdk_qtaudioengine_soundinstance_gainChanged>`\ ()
+-  :ref:`pitchChanged <sdk_qtaudioengine_soundinstance_pitchChanged>`\ ()
+-  :ref:`positionChanged <sdk_qtaudioengine_soundinstance_positionChanged>`\ ()
+-  :ref:`soundChanged <sdk_qtaudioengine_soundinstance_soundChanged>`\ ()
+-  :ref:`stateChanged <sdk_qtaudioengine_soundinstance_stateChanged>`\ (state)
+-  :ref:`velocityChanged <sdk_qtaudioengine_soundinstance_velocityChanged>`\ ()
 
 Methods
 -------
 
--  :ref:`play <sdk_qtaudioengine_soundinstance_play-method-3>`\ ()
--  :ref:`play <sdk_qtaudioengine_soundinstance_play-method-2>`\ ()
--  :ref:`play <sdk_qtaudioengine_soundinstance_play-method>`\ ()
+-  :ref:`play <sdk_qtaudioengine_soundinstance_play>`\ ()
+-  :ref:`play <sdk_qtaudioengine_soundinstance_play>`\ ()
+-  :ref:`play <sdk_qtaudioengine_soundinstance_play>`\ ()
 
 Detailed Description
 --------------------
 
 This type is part of the **QtAudioEngine 1.0** module.
 
-There are two ways to create
-:ref:`SoundInstance <sdk_qtaudioengine_soundinstance>` objects. You can
-obtain it by calling newInstance method of a
-:ref:`Sound <sdk_qtaudioengine_sound>`:
+There are two ways to create :ref:`SoundInstance <sdk_qtaudioengine_soundinstance>` objects. You can obtain it by calling newInstance method of a :ref:`Sound <sdk_qtaudioengine_sound>`:
 
 .. code:: qml
 
@@ -89,9 +79,7 @@ obtain it by calling newInstance method of a
         }
     }
 
-Or alternatively, you can explicitly define
-:ref:`SoundInstance <sdk_qtaudioengine_soundinstance>` outside of
-:ref:`AudioEngine <sdk_qtaudioengine_audioengine>` for easier qml bindings:
+Or alternatively, you can explicitly define :ref:`SoundInstance <sdk_qtaudioengine_soundinstance>` outside of :ref:`AudioEngine <sdk_qtaudioengine_audioengine>` for easier qml bindings:
 
 .. code:: qml
 
@@ -147,233 +135,177 @@ Or alternatively, you can explicitly define
 Property Documentation
 ----------------------
 
-.. _sdk_qtaudioengine_soundinstance_direction-prop:
+.. _sdk_qtaudioengine_soundinstance_direction:
 
-+--------------------------------------------------------------------------+
-|        \ direction : vector3d                                            |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| direction : vector3d                                                                                                                                                                                                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the current 3d direction.
 
-| 
+.. _sdk_qtaudioengine_soundinstance_engine:
 
-.. _sdk_qtaudioengine_soundinstance_engine-prop:
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| engine : :ref:`QtAudioEngine::AudioEngine <sdk_qtaudioengine_audioengine>`                                                                                                                                                                                                                                      |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ engine :                                                        |
-| :ref:`QtAudioEngine::AudioEngine <sdk_qtaudioengine_audioengine>`           |
-+--------------------------------------------------------------------------+
+This property holds the reference to :ref:`AudioEngine <sdk_qtaudioengine_audioengine>`, must be set only once.
 
-This property holds the reference to
-:ref:`AudioEngine <sdk_qtaudioengine_audioengine>`, must be set only once.
+.. _sdk_qtaudioengine_soundinstance_gain:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| gain : vector3d                                                                                                                                                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_qtaudioengine_soundinstance_gain-prop:
+This property holds the gain adjustment which will be used to modulate the audio output level from this :ref:`SoundInstance <sdk_qtaudioengine_soundinstance>`.
 
-+--------------------------------------------------------------------------+
-|        \ gain : vector3d                                                 |
-+--------------------------------------------------------------------------+
+.. _sdk_qtaudioengine_soundinstance_pitch:
 
-This property holds the gain adjustment which will be used to modulate
-the audio output level from this
-:ref:`SoundInstance <sdk_qtaudioengine_soundinstance>`.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| pitch : vector3d                                                                                                                                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-| 
+This property holds the pitch adjustment which will be used to modulate the audio pitch from this :ref:`SoundInstance <sdk_qtaudioengine_soundinstance>`.
 
-.. _sdk_qtaudioengine_soundinstance_pitch-prop:
+.. _sdk_qtaudioengine_soundinstance_position:
 
-+--------------------------------------------------------------------------+
-|        \ pitch : vector3d                                                |
-+--------------------------------------------------------------------------+
-
-This property holds the pitch adjustment which will be used to modulate
-the audio pitch from this
-:ref:`SoundInstance <sdk_qtaudioengine_soundinstance>`.
-
-| 
-
-.. _sdk_qtaudioengine_soundinstance_position-prop:
-
-+--------------------------------------------------------------------------+
-|        \ position : vector3d                                             |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| position : vector3d                                                                                                                                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the current 3d position.
 
-| 
+.. _sdk_qtaudioengine_soundinstance_sound:
 
-.. _sdk_qtaudioengine_soundinstance_sound-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| sound : string                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ sound : string                                                  |
-+--------------------------------------------------------------------------+
+This property specifies which Sound this :ref:`SoundInstance <sdk_qtaudioengine_soundinstance>` will use. Unlike some properties in other types, this property can be changed dynamically.
 
-This property specifies which Sound this
-:ref:`SoundInstance <sdk_qtaudioengine_soundinstance>` will use. Unlike
-some properties in other types, this property can be changed
-dynamically.
+.. _sdk_qtaudioengine_soundinstance_state:
 
-| 
-
-.. _sdk_qtaudioengine_soundinstance_state-prop:
-
-+--------------------------------------------------------------------------+
-|        \ state : enumeration                                             |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| state : enumeration                                                                                                                                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the current playback state. It can be one of:
 
-.. _sdk_qtaudioengine_soundinstance_Value            Description-prop:
-
-+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Value           | Description                                                                                                                                                   |
-+=================+===============================================================================================================================================================+
-.. _sdk_qtaudioengine_soundinstance_PlayingState     The-prop:
++-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Value           | Description                                                                                                                                                      |
++=================+==================================================================================================================================================================+
 | StopppedState   | The :ref:`SoundInstance <sdk_qtaudioengine_soundinstance>` is not playing, and when playback begins next it will play from position zero.                        |
-+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-.. _sdk_qtaudioengine_soundinstance_PausedState      The-prop:
++-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | PlayingState    | The :ref:`SoundInstance <sdk_qtaudioengine_soundinstance>` is playing the media.                                                                                 |
-+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
++-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | PausedState     | The :ref:`SoundInstance <sdk_qtaudioengine_soundinstance>` is not playing, and when playback begins next it will play from the position that it was paused at.   |
-+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
++-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-| 
+.. _sdk_qtaudioengine_soundinstance_velocity:
 
-.. _sdk_qtaudioengine_soundinstance_velocity-prop:
-
-+--------------------------------------------------------------------------+
-|        \ velocity : vector3d                                             |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| velocity : vector3d                                                                                                                                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the current 3d velocity.
-
-| 
 
 Signal Documentation
 --------------------
 
-.. _sdk_qtaudioengine_soundinstance_directionChanged()-prop:
+.. _sdk_qtaudioengine_soundinstance_directionChanged:
 
-+--------------------------------------------------------------------------+
-|        \ directionChanged()                                              |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| directionChanged()                                                                                                                                                                                                                                                                                           |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-This signal is emitted when
-:ref:`direction <sdk_qtaudioengine_soundinstance#direction-prop>` is
-changed
+This signal is emitted when :ref:`direction <sdk_qtaudioengine_soundinstance_direction>` is changed
 
 The corresponding handler is ``onDirectionChanged``.
 
-| 
+.. _sdk_qtaudioengine_soundinstance_gainChanged:
 
-.. _sdk_qtaudioengine_soundinstance_gainChanged()-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| gainChanged()                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ gainChanged()                                                   |
-+--------------------------------------------------------------------------+
-
-This signal is emitted when
-:ref:`gain <sdk_qtaudioengine_soundinstance#gain-prop>` is changed
+This signal is emitted when :ref:`gain <sdk_qtaudioengine_soundinstance_gain>` is changed
 
 The corresponding handler is ``onGainChanged``.
 
-| 
+.. _sdk_qtaudioengine_soundinstance_pitchChanged:
 
-.. _sdk_qtaudioengine_soundinstance_pitchChanged()-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| pitchChanged()                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ pitchChanged()                                                  |
-+--------------------------------------------------------------------------+
-
-This signal is emitted when
-:ref:`pitch <sdk_qtaudioengine_soundinstance#pitch-prop>` is changed
+This signal is emitted when :ref:`pitch <sdk_qtaudioengine_soundinstance_pitch>` is changed
 
 The corresponding handler is ``onPitchChanged``.
 
-| 
+.. _sdk_qtaudioengine_soundinstance_positionChanged:
 
-.. _sdk_qtaudioengine_soundinstance_positionChanged()-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| positionChanged()                                                                                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ positionChanged()                                               |
-+--------------------------------------------------------------------------+
-
-This signal is emitted when
-:ref:`position <sdk_qtaudioengine_soundinstance#position-prop>` is changed
+This signal is emitted when :ref:`position <sdk_qtaudioengine_soundinstance_position>` is changed
 
 The corresponding handler is ``onPositionChanged``.
 
-| 
+.. _sdk_qtaudioengine_soundinstance_soundChanged:
 
-.. _sdk_qtaudioengine_soundinstance_soundChanged()-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| soundChanged()                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ soundChanged()                                                  |
-+--------------------------------------------------------------------------+
-
-This signal is emitted when
-:ref:`sound <sdk_qtaudioengine_soundinstance#sound-prop>` is changed
+This signal is emitted when :ref:`sound <sdk_qtaudioengine_soundinstance_sound>` is changed
 
 The corresponding handler is ``onSoundChanged``.
 
-| 
+.. _sdk_qtaudioengine_soundinstance_stateChanged:
 
-.. _sdk_qtaudioengine_soundinstance_stateChanged(state)-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| stateChanged(state)                                                                                                                                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ stateChanged(state)                                             |
-+--------------------------------------------------------------------------+
-
-This signal is emitted when
-:ref:`state <sdk_qtaudioengine_soundinstance#state-prop>` is changed
+This signal is emitted when :ref:`state <sdk_qtaudioengine_soundinstance_state>` is changed
 
 The corresponding handler is ``onStateChanged``.
 
-| 
+.. _sdk_qtaudioengine_soundinstance_velocityChanged:
 
-.. _sdk_qtaudioengine_soundinstance_velocityChanged-method:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| velocityChanged()                                                                                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ velocityChanged()                                               |
-+--------------------------------------------------------------------------+
-
-This signal is emitted when
-:ref:`velocity <sdk_qtaudioengine_soundinstance#velocity-prop>` is changed
+This signal is emitted when :ref:`velocity <sdk_qtaudioengine_soundinstance_velocity>` is changed
 
 The corresponding handler is ``onVelocityChanged``.
-
-| 
 
 Method Documentation
 --------------------
 
-.. _sdk_qtaudioengine_soundinstance_play-method:
+.. _sdk_qtaudioengine_soundinstance_play:
 
-+--------------------------------------------------------------------------+
-|        \ play()                                                          |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| play()                                                                                                                                                                                                                                                                                                       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Pauses current playback.
 
-| 
+.. _sdk_qtaudioengine_soundinstance_play1:
 
-.. _sdk_qtaudioengine_soundinstance_play-method:
-
-+--------------------------------------------------------------------------+
-|        \ play()                                                          |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| play()                                                                                                                                                                                                                                                                                                       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Stops current playback.
 
-| 
+.. _sdk_qtaudioengine_soundinstance_play2:
 
-.. _sdk_qtaudioengine_soundinstance_play-method:
-
-+--------------------------------------------------------------------------+
-|        \ play()                                                          |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| play()                                                                                                                                                                                                                                                                                                       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Starts playback.
 
-| 

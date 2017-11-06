@@ -1,20 +1,18 @@
 .. _sdk_ubuntuui_dialog:
+
 UbuntuUI Dialog
 ===============
 
 
-Dialogs are modal full-screen popups that prevent other GUI interactions
-with the application until dismissed.
+Dialogs are modal full-screen popups that prevent other GUI interactions with the application until dismissed.
 
 Dialogs wrap arbitrary markup.
 
 Dialogs are declared at the top level inside the <em>content</em> div.
 
-**``UbuntuUI.Dialog``**\ ( ``  `` )
-.. rubric:: Example
-   :name: example
+**UbuntuUI.Dialog**\ ()
 
-.. code:: code
+.. code:: html
 
      <div data-role="content">
            <div data-role="pagestack">
@@ -30,25 +28,21 @@ Dialogs are declared at the top level inside the <em>content</em> div.
 
 -  Methods
 
-DOMElement **``element``**\ ( ``  `` )
+DOMElement **element**\ ()
 Returns the DOM element associated with the id this widget is bind to.
 
 **Returns:** <DOMElement>
 
-.. rubric:: Example
-   :name: example-1
-
-.. code:: code
+.. code:: html
 
        var mydialog = UI.dialog("dialogid").element();
 
-**``hide``**\ ( ``  `` )
+**hide**\ ()
 Hide a dialog by removing 'active' class
 
-**``show``**\ ( ``  `` )
+**show**\ ()
 Display a dialog by adding 'active' CSS class
 
-**``toggle``**\ ( ``  `` )
-Toggle a dialog, which means removing its 'active' class if it has one,
-or adding the 'active' class if it does not have one
+**toggle**\ ()
+Toggle a dialog, which means removing its 'active' class if it has one, or adding the 'active' class if it does not have one
 

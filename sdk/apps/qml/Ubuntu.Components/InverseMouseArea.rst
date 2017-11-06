@@ -1,9 +1,9 @@
 .. _sdk_ubuntu_components_inversemousearea:
+
 Ubuntu.Components InverseMouseArea
 ==================================
 
-The InverseMouseArea captures mouse events happening outside of a given
-area.
+The InverseMouseArea captures mouse events happening outside of a given area.
 
 +---------------------+--------------------------------+
 | Import Statement:   | import Ubuntu.Components 1.3   |
@@ -12,19 +12,13 @@ area.
 Properties
 ----------
 
--  :ref:`sensingArea <sdk_ubuntu_components_inversemousearea_sensingArea-prop>`
-   : Item
--  :ref:`topmostItem <sdk_ubuntu_components_inversemousearea_topmostItem-prop>`
-   : bool
+-  :ref:`sensingArea <sdk_ubuntu_components_inversemousearea_sensingArea>` : Item
+-  :ref:`topmostItem <sdk_ubuntu_components_inversemousearea_topmostItem>` : bool
 
 Detailed Description
 --------------------
 
-A typical use case is hiding of a popup or tooltip when the user presses
-or taps outside of the popup or tooltip area. The following example
-illustrates the use of
-:ref:`InverseMouseArea <sdk_ubuntu_components_inversemousearea>` in a
-Popup.
+A typical use case is hiding of a popup or tooltip when the user presses or taps outside of the popup or tooltip area. The following example illustrates the use of :ref:`InverseMouseArea <sdk_ubuntu_components_inversemousearea>` in a Popup.
 
 Popup.qml
 
@@ -44,8 +38,7 @@ Popup.qml
         }
     }
 
-In the Popup above the mouse presses happening outside the area will
-cause closing and destroying the popup.
+In the Popup above the mouse presses happening outside the area will cause closing and destroying the popup.
 
 .. code:: qml
 
@@ -65,15 +58,7 @@ cause closing and destroying the popup.
         }
     }
 
-By default the
-:ref:`InverseMouseArea <sdk_ubuntu_components_inversemousearea>` sensing
-area (the area from which the mouse clicks will be taken) is the
-application's root component, or the Window in which the topmost parent
-component of the mouse area resides. This area can be however altered to
-a different area by setting the
-:ref:`sensingArea <sdk_ubuntu_components_inversemousearea#sensingArea-prop>`
-property to a component which is either a parent of the mouse area or a
-sibling of it.
+By default the :ref:`InverseMouseArea <sdk_ubuntu_components_inversemousearea>` sensing area (the area from which the mouse clicks will be taken) is the application's root component, or the Window in which the topmost parent component of the mouse area resides. This area can be however altered to a different area by setting the :ref:`sensingArea <sdk_ubuntu_components_inversemousearea_sensingArea>` property to a component which is either a parent of the mouse area or a sibling of it.
 
 .. code:: qml
 
@@ -106,20 +91,9 @@ sibling of it.
         }
     }
 
-In this example the inverse mouse area will get mouse presses only when
-those happen on the blue rectangle area. When clicked outside of the
-blue rectangle or inside the red rectangle, the mouse area covering the
-root item will get click signals.
+In this example the inverse mouse area will get mouse presses only when those happen on the blue rectangle area. When clicked outside of the blue rectangle or inside the red rectangle, the mouse area covering the root item will get click signals.
 
-:ref:`InverseMouseArea <sdk_ubuntu_components_inversemousearea>`, being
-derived from :ref:`MouseArea <sdk_qtquick_mousearea>` respects the stacking
-and z-order of the components. This should be taken into account when
-combining it with MouseAreas within the same level of the component
-hierarchy or when combined with :ref:`MouseArea <sdk_qtquick_mousearea>`
-siblings. In these cases it is recommended to have the
-:ref:`InverseMouseArea <sdk_ubuntu_components_inversemousearea>` declared
-as last component, having it in this way as last one oin the component
-stack.
+:ref:`InverseMouseArea <sdk_ubuntu_components_inversemousearea>`, being derived from :ref:`MouseArea <sdk_qtquick_mousearea>` respects the stacking and z-order of the components. This should be taken into account when combining it with MouseAreas within the same level of the component hierarchy or when combined with :ref:`MouseArea <sdk_qtquick_mousearea>` siblings. In these cases it is recommended to have the :ref:`InverseMouseArea <sdk_ubuntu_components_inversemousearea>` declared as last component, having it in this way as last one oin the component stack.
 
 .. code:: qml
 
@@ -167,16 +141,7 @@ stack.
         }
     }
 
-When this is not enough, and you want to grab all the mouse events that
-have been sent to the
-:ref:`sensingArea <sdk_ubuntu_components_inversemousearea#sensingArea-prop>`,
-you can use
-:ref:`topmostItem <sdk_ubuntu_components_inversemousearea#topmostItem-prop>`
-to place the mouse area above all the components that were instantiated
-under the sensing area. Beware that setting this property will no longer
-consider neither the z-order nor the component stack order anymore, as
-it will steal all the mouse events from the component set as
-:ref:`sensingArea <sdk_ubuntu_components_inversemousearea#sensingArea-prop>`.
+When this is not enough, and you want to grab all the mouse events that have been sent to the :ref:`sensingArea <sdk_ubuntu_components_inversemousearea_sensingArea>`, you can use :ref:`topmostItem <sdk_ubuntu_components_inversemousearea_topmostItem>` to place the mouse area above all the components that were instantiated under the sensing area. Beware that setting this property will no longer consider neither the z-order nor the component stack order anymore, as it will steal all the mouse events from the component set as :ref:`sensingArea <sdk_ubuntu_components_inversemousearea_sensingArea>`.
 
 .. code:: qml
 
@@ -220,29 +185,19 @@ it will steal all the mouse events from the component set as
 Property Documentation
 ----------------------
 
-.. _sdk_ubuntu_components_inversemousearea_-prop:
+.. _sdk_ubuntu_components_inversemousearea_sensingArea:
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ sensingArea : `Item <sdk_qtquick_item>`                    |
-+--------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| sensingArea : :ref:`Item <sdk_qtquick_item>`                                                                                                                                                                                                                                                                    |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-This property holds the sensing area of the inverse mouse area. By
-default it is the root item but it can be set to any other area. The
-area can be reset to the root item by setting null to the property.
+This property holds the sensing area of the inverse mouse area. By default it is the root item but it can be set to any other area. The area can be reset to the root item by setting null to the property.
 
-| 
+.. _sdk_ubuntu_components_inversemousearea_topmostItem:
 
-.. _sdk_ubuntu_components_inversemousearea_topmostItem-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| topmostItem : bool                                                                                                                                                                                                                                                                                           |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ topmostItem : bool                                              |
-+--------------------------------------------------------------------------+
+The property specifies whether the :ref:`InverseMouseArea <sdk_ubuntu_components_inversemousearea>` should be above all components taking all mouse, wheel and hover events from the application's or from the area specified by the :ref:`sensingArea <sdk_ubuntu_components_inversemousearea_sensingArea>` (true), or only from the siblings (false). The default value is false.
 
-The property specifies whether the
-:ref:`InverseMouseArea <sdk_ubuntu_components_inversemousearea>` should be
-above all components taking all mouse, wheel and hover events from the
-application's or from the area specified by the
-:ref:`sensingArea <sdk_ubuntu_components_inversemousearea#sensingArea-prop>`
-(true), or only from the siblings (false). The default value is false.
-
-| 

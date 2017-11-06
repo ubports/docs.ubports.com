@@ -1,4 +1,5 @@
 .. _sdk_qtquick_opacityanimator:
+
 QtQuick OpacityAnimator
 =======================
 
@@ -13,17 +14,11 @@ The OpacityAnimator type animates the opacity of an Item.
 Detailed Description
 --------------------
 
-:ref:`Animator <sdk_qtquick_animator>` types are different from normal
-Animation types. When using an Animator, the animation can be run in the
-render thread and the property value will jump to the end when the
-animation is complete.
+:ref:`Animator <sdk_qtquick_animator>` types are different from normal Animation types. When using an Animator, the animation can be run in the render thread and the property value will jump to the end when the animation is complete.
 
-The value of :ref:`Item::opacity <sdk_qtquick_item#opacity-prop>` is
-updated after the animation has finished.
+The value of :ref:`Item::opacity <sdk_qtquick_item_opacity>` is updated after the animation has finished.
 
-The following snippet shows how to use a
-:ref:`OpacityAnimator <sdk_qtquick_opacityanimator>` together with a
-Rectangle item.
+The following snippet shows how to use a :ref:`OpacityAnimator <sdk_qtquick_opacityanimator>` together with a Rectangle item.
 
 .. code:: qml
 
@@ -41,9 +36,7 @@ Rectangle item.
         }
     }
 
-It is also possible to use the ``on`` keyword to tie the
-:ref:`OpacityAnimator <sdk_qtquick_opacityanimator>` directly to an Item
-instance.
+It is also possible to use the ``on`` keyword to tie the :ref:`OpacityAnimator <sdk_qtquick_opacityanimator>` directly to an Item instance.
 
 .. code:: qml
 

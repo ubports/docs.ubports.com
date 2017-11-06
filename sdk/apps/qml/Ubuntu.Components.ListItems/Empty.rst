@@ -1,80 +1,49 @@
 .. _sdk_ubuntu_components_listitems_empty:
+
 Ubuntu.Components.ListItems Empty
 =================================
 
 A list item with no contents.
 
-+--------------------------------------+--------------------------------------+
-| Import Statement:                    | import Ubuntu.Components.ListItems   |
-|                                      | 1.3                                  |
-+--------------------------------------+--------------------------------------+
-| Inherits:                            | :ref:`AbstractButton <sdk_ubuntu_componen |
-|                                      | ts_abstractbutton>`_                 |
-+--------------------------------------+--------------------------------------+
-| Inherited By:                        | `Base </sdk/apps/qml/Ubuntu.Componen |
-|                                      | ts/ListItems.Base/>`_ ,              |
-|                                      | `Expandable </sdk/apps/qml/Ubuntu.Co |
-|                                      | mponents/ListItems.Expandable/>`_ ,  |
-|                                      | `SingleControl </sdk/apps/qml/Ubuntu |
-|                                      | .Components/ListItems.SingleControl/ |
-|                                      | >`_ ,                                |
-|                                      | `Standard </sdk/apps/qml/Ubuntu.Comp |
-|                                      | onents/ListItems.Standard/>`_ ,      |
-|                                      | and                                  |
-|                                      | `ValueSelector </sdk/apps/qml/Ubuntu |
-|                                      | .Components/ListItems.ValueSelector/ |
-|                                      | >`_ .                                |
-+--------------------------------------+--------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Import Statement:                                                                                                                                      | import Ubuntu.Components.ListItems 1.3                                                                                                                    |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Inherits:                                                                                                                                              | :ref:`AbstractButton <sdk_ubuntu_components_abstractbutton>`                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Inherited By:                                                                                                                                          | `Base </sdk/apps/qml/Ubuntu.Components/ListItems.Base/>`_ , `Expandable </sdk/apps/qml/Ubuntu.Components/ListItems.Expandable/>`_ ,                       |
+|                                                                                                                                                        | `SingleControl </sdk/apps/qml/Ubuntu.Components/ListItems.SingleControl/>`_ , `Standard </sdk/apps/qml/Ubuntu.Components/ListItems.Standard/>`_ , and     |
+|                                                                                                                                                        | `ValueSelector </sdk/apps/qml/Ubuntu.Components/ListItems.ValueSelector/>`_ .                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Properties
 ----------
 
--  `backgroundIndicator </sdk/apps/qml/Ubuntu.Components/ListItems.Empty/_backgroundIndicator-prop>`_ 
-   : list<Item>
--  `confirmRemoval </sdk/apps/qml/Ubuntu.Components/ListItems.Empty/_confirmRemoval-prop>`_ 
-   : bool
--  `divider </sdk/apps/qml/Ubuntu.Components/ListItems.Empty/_divider-prop>`_ 
-   : ThinDivider
--  `highlightWhenPressed </sdk/apps/qml/Ubuntu.Components/ListItems.Empty/_highlightWhenPressed-prop>`_ 
-   : bool
--  `removable </sdk/apps/qml/Ubuntu.Components/ListItems.Empty/_removable-prop>`_ 
-   : bool
--  `selected </sdk/apps/qml/Ubuntu.Components/ListItems.Empty/_selected-prop>`_ 
-   : bool
--  `showDivider </sdk/apps/qml/Ubuntu.Components/ListItems.Empty/_showDivider-prop>`_ 
-   : bool
--  `swipingState </sdk/apps/qml/Ubuntu.Components/ListItems.Empty/_swipingState-prop>`_ 
-   : string
--  `waitingConfirmationForRemoval </sdk/apps/qml/Ubuntu.Components/ListItems.Empty/_waitingConfirmationForRemoval-prop>`_ 
-   : bool
+-  `backgroundIndicator </sdk/apps/qml/Ubuntu.Components/ListItems.Empty/#backgroundIndicator-prop>`_  : list<Item>
+-  `confirmRemoval </sdk/apps/qml/Ubuntu.Components/ListItems.Empty/#confirmRemoval-prop>`_  : bool
+-  `divider </sdk/apps/qml/Ubuntu.Components/ListItems.Empty/#divider-prop>`_  : ThinDivider
+-  `highlightWhenPressed </sdk/apps/qml/Ubuntu.Components/ListItems.Empty/#highlightWhenPressed-prop>`_  : bool
+-  `removable </sdk/apps/qml/Ubuntu.Components/ListItems.Empty/#removable-prop>`_  : bool
+-  `selected </sdk/apps/qml/Ubuntu.Components/ListItems.Empty/#selected-prop>`_  : bool
+-  `showDivider </sdk/apps/qml/Ubuntu.Components/ListItems.Empty/#showDivider-prop>`_  : bool
+-  `swipingState </sdk/apps/qml/Ubuntu.Components/ListItems.Empty/#swipingState-prop>`_  : string
+-  `waitingConfirmationForRemoval </sdk/apps/qml/Ubuntu.Components/ListItems.Empty/#waitingConfirmationForRemoval-prop>`_  : bool
 
 Signals
 -------
 
--  `itemRemoved </sdk/apps/qml/Ubuntu.Components/ListItems.Empty/_itemRemoved-signal>`_ \ ()
+-  `itemRemoved </sdk/apps/qml/Ubuntu.Components/ListItems.Empty/#itemRemoved-signal>`_ \ ()
 
 Methods
 -------
 
--  `cancelItemRemoval </sdk/apps/qml/Ubuntu.Components/ListItems.Empty/_cancelItemRemoval-method>`_ \ ()
+-  `cancelItemRemoval </sdk/apps/qml/Ubuntu.Components/ListItems.Empty/#cancelItemRemoval-method>`_ \ ()
 
 Detailed Description
 --------------------
 
-**Note:** **The component is deprecated. Use
-:ref:`ListItem <sdk_ubuntu_components_listitem>` component instead.** The
-Empty class can be used for generic list items containing other
-components such as buttons. It is selectable and can take mouse clicks.
-It will attempt to detect if a thin dividing line at the bottom of the
-item is suitable, but this behaviour can be overridden (using
-`showDivider </sdk/apps/qml/Ubuntu.Components/ListItems.Empty/#showDivider-prop>`_ ).
-For specific types of list items, see its subclasses.
+**Note:** **The component is deprecated. Use :ref:`ListItem <sdk_ubuntu_components_listitem>` component instead.** The Empty class can be used for generic list items containing other components such as buttons. It is selectable and can take mouse clicks. It will attempt to detect if a thin dividing line at the bottom of the item is suitable, but this behaviour can be overridden (using `showDivider </sdk/apps/qml/Ubuntu.Components/ListItems.Empty/#showDivider-prop>`_ ). For specific types of list items, see its subclasses.
 
-The item will still remain in memory after being removed from the list
-so it is up to the application to destroy it. This can be handled by the
-signal
-`itemRemoved </sdk/apps/qml/Ubuntu.Components/ListItems.Empty/#itemRemoved-signal>`_ 
-that is fired after all animation is done.
+The item will still remain in memory after being removed from the list so it is up to the application to destroy it. This can be handled by the signal `itemRemoved </sdk/apps/qml/Ubuntu.Components/ListItems.Empty/#itemRemoved-signal>`_  that is fired after all animation is done.
 
 Examples:
 
@@ -114,127 +83,97 @@ See the documentation of the derived classes of Empty for more examples.
 Property Documentation
 ----------------------
 
-.. _sdk_ubuntu_components_listitems_empty_-prop:
+.. _sdk_ubuntu_components_listitems_empty_backgroundIndicator:
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ backgroundIndicator : list<`Item <sdk_qtquick_item>`>         |
-+--------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| backgroundIndicator : list<:ref:`Item <sdk_qtquick_item>`>                                                                                                                                                                                                                                                      |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Defines the item background item to be showed during the item swiping
 
-| 
+.. _sdk_ubuntu_components_listitems_empty_confirmRemoval:
 
-.. _sdk_ubuntu_components_listitems_empty_confirmRemoval-prop:
-
-+--------------------------------------------------------------------------+
-|        \ confirmRemoval : bool                                           |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| confirmRemoval : bool                                                                                                                                                                                                                                                                                        |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Defines if the item needs confirmation before removing by swiping.
 
-| 
+.. _sdk_ubuntu_components_listitems_empty_divider:
 
-.. _sdk_ubuntu_components_listitems_empty_divider-prop:
-
-+--------------------------------------------------------------------------+
-|        \ divider :                                                       |
-| `ThinDivider </sdk/apps/qml/Ubuntu.Components/ListItems.ThinDivider/>`_  |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| divider : `ThinDivider </sdk/apps/qml/Ubuntu.Components/ListItems.ThinDivider/>`_                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Exposes our the bottom line divider.
 
-| 
+.. _sdk_ubuntu_components_listitems_empty_highlightWhenPressed:
 
-.. _sdk_ubuntu_components_listitems_empty_highlightWhenPressed-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| highlightWhenPressed : bool                                                                                                                                                                                                                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ highlightWhenPressed : bool                                     |
-+--------------------------------------------------------------------------+
+Highlight the list item when it is pressed. This is used to disable the highlighting of the full list item when custom highlighting needs to be implemented (for example in :ref:`ListItem <sdk_ubuntu_components_listitem>`.Standard which can have a split).
 
-Highlight the list item when it is pressed. This is used to disable the
-highlighting of the full list item when custom highlighting needs to be
-implemented (for example in
-:ref:`ListItem <sdk_ubuntu_components_listitem>`.Standard which can have a
-split).
+.. _sdk_ubuntu_components_listitems_empty_removable:
 
-| 
-
-.. _sdk_ubuntu_components_listitems_empty_removable-prop:
-
-+--------------------------------------------------------------------------+
-|        \ removable : bool                                                |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| removable : bool                                                                                                                                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Defines if this item can be removed or not.
 
-| 
+.. _sdk_ubuntu_components_listitems_empty_selected:
 
-.. _sdk_ubuntu_components_listitems_empty_selected-prop:
-
-+--------------------------------------------------------------------------+
-|        \ selected : bool                                                 |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| selected : bool                                                                                                                                                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Specifies whether the list item is selected.
 
-| 
+.. _sdk_ubuntu_components_listitems_empty_showDivider:
 
-.. _sdk_ubuntu_components_listitems_empty_showDivider-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| showDivider : bool                                                                                                                                                                                                                                                                                           |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ showDivider : bool                                              |
-+--------------------------------------------------------------------------+
+Set to show or hide the thin bottom divider line (drawn by the `ThinDivider </sdk/apps/qml/Ubuntu.Components/ListItems.ThinDivider/>`_  component). This line is shown by default except in cases where this item is the delegate of a :ref:`ListView <sdk_qtquick_listview>`.
 
-Set to show or hide the thin bottom divider line (drawn by the
-`ThinDivider </sdk/apps/qml/Ubuntu.Components/ListItems.ThinDivider/>`_ 
-component). This line is shown by default except in cases where this
-item is the delegate of a :ref:`ListView <sdk_qtquick_listview>`.
+.. _sdk_ubuntu_components_listitems_empty_swipingState:
 
-| 
-
-.. _sdk_ubuntu_components_listitems_empty_[read-only] swipingState-prop:
-
-+--------------------------------------------------------------------------+
-|        \ [read-only] swipingState : string                               |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| [read-only] swipingState : string                                                                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The current swiping state ("SwipingRight" or "")
 
-| 
+.. _sdk_ubuntu_components_listitems_empty_waitingConfirmationForRemoval:
 
-.. _sdk_ubuntu_components_listitems_empty_[read-only] waitingConfirmationForRemoval-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| [read-only] waitingConfirmationForRemoval : bool                                                                                                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ [read-only] waitingConfirmationForRemoval : bool                |
-+--------------------------------------------------------------------------+
-
-Defines if the item is waiting for the user interaction during the swipe
-to delete
-
-| 
+Defines if the item is waiting for the user interaction during the swipe to delete
 
 Signal Documentation
 --------------------
 
-.. _sdk_ubuntu_components_listitems_empty_itemRemoved()-prop:
+.. _sdk_ubuntu_components_listitems_empty_itemRemoved:
 
-+--------------------------------------------------------------------------+
-|        \ itemRemoved()                                                   |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| itemRemoved()                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This handler is called when the item is removed from the list
-
-| 
 
 Method Documentation
 --------------------
 
-.. _sdk_ubuntu_components_listitems_empty_cancelItemRemoval-method:
+.. _sdk_ubuntu_components_listitems_empty_cancelItemRemoval:
 
-+--------------------------------------------------------------------------+
-|        \ cancelItemRemoval()                                             |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| cancelItemRemoval()                                                                                                                                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Cancel item romoval
 
-| 

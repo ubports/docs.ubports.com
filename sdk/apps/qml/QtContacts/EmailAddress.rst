@@ -1,4 +1,5 @@
 .. _sdk_qtcontacts_emailaddress:
+
 QtContacts EmailAddress
 =======================
 
@@ -11,28 +12,25 @@ The EmailAddress element contains an email address of a contact.
 Properties
 ----------
 
--  :ref:`emailAddress <sdk_qtcontacts_emailaddress_emailAddress-prop>`
-   : string
+-  :ref:`emailAddress <sdk_qtcontacts_emailaddress_emailAddress>` : string
 
 Detailed Description
 --------------------
 
-:ref:`EmailAddress <sdk_qtcontacts_emailaddress>` element contains the
-following field types:
+:ref:`EmailAddress <sdk_qtcontacts_emailaddress>` element contains the following field types:
 
--  :ref:`EmailAddress <sdk_qtcontacts_emailaddress>`.\ `EmailAddress <sdk_qtcontacts_emailaddress>`
+-  :ref:`EmailAddress <sdk_qtcontacts_emailaddress>`.\ :ref:`EmailAddress <sdk_qtcontacts_emailaddress>`
 
 This element is part of the **QtContacts** module.
 
 Property Documentation
 ----------------------
 
-.. _sdk_qtcontacts_emailaddress_emailAddress-prop:
+.. _sdk_qtcontacts_emailaddress_emailAddress:
 
-+--------------------------------------------------------------------------+
-|        \ emailAddress : string                                           |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| emailAddress : string                                                                                                                                                                                                                                                                                        |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the email address value.
 
-| 

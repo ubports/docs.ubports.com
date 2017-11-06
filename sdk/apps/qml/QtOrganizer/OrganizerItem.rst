@@ -1,9 +1,9 @@
 .. _sdk_qtorganizer_organizeritem:
+
 QtOrganizer OrganizerItem
 =========================
 
-The OrganizerItem element represents the in-memory version of a
-organizer item.
+The OrganizerItem element represents the in-memory version of a organizer item.
 
 +---------------------+--------------------------+
 | Import Statement:   | import QtOrganizer 5.0   |
@@ -12,252 +12,184 @@ organizer item.
 Properties
 ----------
 
--  :ref:`collectionId <sdk_qtorganizer_organizeritem_collectionId-prop>`
-   : string
--  :ref:`description <sdk_qtorganizer_organizeritem_description-prop>`
-   : string
--  :ref:`displayLabel <sdk_qtorganizer_organizeritem_displayLabel-prop>`
-   : string
--  :ref:`guid <sdk_qtorganizer_organizeritem_guid-prop>` : string
--  :ref:`itemDetails <sdk_qtorganizer_organizeritem_itemDetails-prop>`
-   : list<Detail>
--  :ref:`itemId <sdk_qtorganizer_organizeritem_itemId-prop>` :
-   string
--  :ref:`itemType <sdk_qtorganizer_organizeritem_itemType-prop>` :
-   enum
--  :ref:`manager <sdk_qtorganizer_organizeritem_manager-prop>` :
-   string
--  :ref:`modified <sdk_qtorganizer_organizeritem_modified-prop>` :
-   bool
+-  :ref:`collectionId <sdk_qtorganizer_organizeritem_collectionId>` : string
+-  :ref:`description <sdk_qtorganizer_organizeritem_description>` : string
+-  :ref:`displayLabel <sdk_qtorganizer_organizeritem_displayLabel>` : string
+-  :ref:`guid <sdk_qtorganizer_organizeritem_guid>` : string
+-  :ref:`itemDetails <sdk_qtorganizer_organizeritem_itemDetails>` : list<Detail>
+-  :ref:`itemId <sdk_qtorganizer_organizeritem_itemId>` : string
+-  :ref:`itemType <sdk_qtorganizer_organizeritem_itemType>` : enum
+-  :ref:`manager <sdk_qtorganizer_organizeritem_manager>` : string
+-  :ref:`modified <sdk_qtorganizer_organizeritem_modified>` : bool
 
 Signals
 -------
 
--  :ref:`onItemChanged <sdk_qtorganizer_organizeritem_onItemChanged-signal>`\ ()
+-  :ref:`onItemChanged <sdk_qtorganizer_organizeritem_onItemChanged>`\ ()
 
 Methods
 -------
 
--  :ref:`clearDetails <sdk_qtorganizer_organizeritem_clearDetails-method>`\ ()
--  Detail
-   **:ref:`detail <sdk_qtorganizer_organizeritem#detail-method>`**\ (type)
--  list<Detail>
-   **:ref:`details <sdk_qtorganizer_organizeritem#details-method>`**\ (type)
--  void
-   **:ref:`removeDetail <sdk_qtorganizer_organizeritem#removeDetail-method>`**\ (detail)
--  :ref:`save <sdk_qtorganizer_organizeritem_save-method>`\ ()
--  void
-   **:ref:`setDetail <sdk_qtorganizer_organizeritem#setDetail-method>`**\ (detail)
+-  :ref:`clearDetails <sdk_qtorganizer_organizeritem_clearDetails>`\ ()
+-  Detail :ref:`detail <sdk_qtorganizer_organizeritem_detail>`\ (type)
+-  list<Detail> :ref:`details <sdk_qtorganizer_organizeritem_details>`\ (type)
+-  void :ref:`removeDetail <sdk_qtorganizer_organizeritem_removeDetail>`\ (detail)
+-  :ref:`save <sdk_qtorganizer_organizeritem_save>`\ ()
+-  void :ref:`setDetail <sdk_qtorganizer_organizeritem_setDetail>`\ (detail)
 
 Detailed Description
 --------------------
 
-A :ref:`OrganizerItem <sdk_qtorganizer_organizeritem>` has a number of
-mandatory details. Different subclasses of
-:ref:`OrganizerItem <sdk_qtorganizer_organizeritem>` (i.e., Event,
-:ref:`EventOccurrence <sdk_qtorganizer_eventoccurrence>`, Journal, Todo,
-:ref:`TodoOccurrence <sdk_qtorganizer_todooccurrence>`, Note) may have more
-mandatory details.
+A :ref:`OrganizerItem <sdk_qtorganizer_organizeritem>` has a number of mandatory details. Different subclasses of :ref:`OrganizerItem <sdk_qtorganizer_organizeritem>` (i.e., Event, :ref:`EventOccurrence <sdk_qtorganizer_eventoccurrence>`, Journal, Todo, :ref:`TodoOccurrence <sdk_qtorganizer_todooccurrence>`, Note) may have more mandatory details.
 
-Most frequently-used details can also be accessed through convenient
-properties, e.g.
-:ref:`displayLabel <sdk_qtorganizer_organizeritem#displayLabel-prop>`,
-while all details can be accessed through
-:ref:`detail() <sdk_qtorganizer_organizeritem#detail-method>`,
-:ref:`details() <sdk_qtorganizer_organizeritem#details-method>`,
-saveDetail(), among others.
+Most frequently-used details can also be accessed through convenient properties, e.g. :ref:`displayLabel <sdk_qtorganizer_organizeritem_displayLabel>`, while all details can be accessed through :ref:`detail() <sdk_qtorganizer_organizeritem_detail>`, :ref:`details() <sdk_qtorganizer_organizeritem_details>`, saveDetail(), among others.
 
-**See also** Event, EventOccurrence, Journal, Todo, TodoOccurrence,
-Note, QOrganizerManager, and QOrganizerItem.
+**See also** Event, EventOccurrence, Journal, Todo, TodoOccurrence, Note, QOrganizerManager, and QOrganizerItem.
 
 Property Documentation
 ----------------------
 
-.. _sdk_qtorganizer_organizeritem_collectionId-prop:
+.. _sdk_qtorganizer_organizeritem_collectionId:
 
-+--------------------------------------------------------------------------+
-|        \ collectionId : string                                           |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| collectionId : string                                                                                                                                                                                                                                                                                        |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the id of collection where the item belongs to.
 
-| 
+.. _sdk_qtorganizer_organizeritem_description:
 
-.. _sdk_qtorganizer_organizeritem_description-prop:
-
-+--------------------------------------------------------------------------+
-|        \ description : string                                            |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| description : string                                                                                                                                                                                                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the description text of the organizer item.
 
-| 
+.. _sdk_qtorganizer_organizeritem_displayLabel:
 
-.. _sdk_qtorganizer_organizeritem_displayLabel-prop:
-
-+--------------------------------------------------------------------------+
-|        \ displayLabel : string                                           |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| displayLabel : string                                                                                                                                                                                                                                                                                        |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the display label of the organizer item.
 
-| 
+.. _sdk_qtorganizer_organizeritem_guid:
 
-.. _sdk_qtorganizer_organizeritem_guid-prop:
-
-+--------------------------------------------------------------------------+
-|        \ guid : string                                                   |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| guid : string                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the GUID string of the organizer item.
 
-| 
+.. _sdk_qtorganizer_organizeritem_itemDetails:
 
-.. _sdk_qtorganizer_organizeritem_-prop:
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| itemDetails : list<:ref:`Detail <sdk_qtorganizer_detail>`>                                                                                                                                                                                                                                                      |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ itemDetails : list<`Detail <sdk_qtorganizer_detail>`>         |
-+--------------------------------------------------------------------------+
+This property holds the details of the :ref:`OrganizerItem <sdk_qtorganizer_organizeritem>` object.
 
-This property holds the details of the
-:ref:`OrganizerItem <sdk_qtorganizer_organizeritem>` object.
+.. _sdk_qtorganizer_organizeritem_itemId:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| itemId : string                                                                                                                                                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_qtorganizer_organizeritem_itemId-prop:
+This property holds the id of the :ref:`OrganizerItem <sdk_qtorganizer_organizeritem>` object.
 
-+--------------------------------------------------------------------------+
-|        \ itemId : string                                                 |
-+--------------------------------------------------------------------------+
+.. _sdk_qtorganizer_organizeritem_itemType:
 
-This property holds the id of the
-:ref:`OrganizerItem <sdk_qtorganizer_organizeritem>` object.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| itemType : enum                                                                                                                                                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-| 
+This property holds the type of the :ref:`OrganizerItem <sdk_qtorganizer_organizeritem>` object.
 
-.. _sdk_qtorganizer_organizeritem_itemType-prop:
+.. _sdk_qtorganizer_organizeritem_manager:
 
-+--------------------------------------------------------------------------+
-|        \ itemType : enum                                                 |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| manager : string                                                                                                                                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-This property holds the type of the
-:ref:`OrganizerItem <sdk_qtorganizer_organizeritem>` object.
+This property holds the manager uri which the :ref:`OrganizerItem <sdk_qtorganizer_organizeritem>` object comes from.
 
-| 
+.. _sdk_qtorganizer_organizeritem_modified:
 
-.. _sdk_qtorganizer_organizeritem_manager-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| modified : bool                                                                                                                                                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ manager : string                                                |
-+--------------------------------------------------------------------------+
+This property holds the dirty flag of the :ref:`OrganizerItem <sdk_qtorganizer_organizeritem>` object.
 
-This property holds the manager uri which the
-:ref:`OrganizerItem <sdk_qtorganizer_organizeritem>` object comes from.
-
-| 
-
-.. _sdk_qtorganizer_organizeritem_modified-prop:
-
-+--------------------------------------------------------------------------+
-|        \ modified : bool                                                 |
-+--------------------------------------------------------------------------+
-
-This property holds the dirty flag of the
-:ref:`OrganizerItem <sdk_qtorganizer_organizeritem>` object.
-
-**See also** :ref:`save <sdk_qtorganizer_organizeritem#save-method>`.
-
-| 
+**See also** :ref:`save <sdk_qtorganizer_organizeritem_save>`.
 
 Signal Documentation
 --------------------
 
-.. _sdk_qtorganizer_organizeritem_onItemChanged()-prop:
+.. _sdk_qtorganizer_organizeritem_onItemChanged:
 
-+--------------------------------------------------------------------------+
-|        \ onItemChanged()                                                 |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| onItemChanged()                                                                                                                                                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-This signal is emitted, when any of the
-:ref:`OrganizerItem <sdk_qtorganizer_organizeritem>`'s or child element's
-(like Event, Todo etc) properties have been changed.
-
-| 
+This signal is emitted, when any of the :ref:`OrganizerItem <sdk_qtorganizer_organizeritem>`'s or child element's (like Event, Todo etc) properties have been changed.
 
 Method Documentation
 --------------------
 
-.. _sdk_qtorganizer_organizeritem_clearDetails-method:
+.. _sdk_qtorganizer_organizeritem_clearDetails:
 
-+--------------------------------------------------------------------------+
-|        \ clearDetails()                                                  |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| clearDetails()                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Removes all details from the organizer item.
 
-**See also**
-:ref:`removeDetail <sdk_qtorganizer_organizeritem#removeDetail-method>`.
+**See also** :ref:`removeDetail <sdk_qtorganizer_organizeritem_removeDetail>`.
 
-| 
+.. _sdk_qtorganizer_organizeritem_:
 
-.. _sdk_qtorganizer_organizeritem_-method:
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`Detail <sdk_qtorganizer_detail>` detail(type)                                                                                                                                                                                                                                                             |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ `Detail <sdk_qtorganizer_detail>` detail(type)                |
-+--------------------------------------------------------------------------+
+Returns the first detail stored in the organizer item with the given *type*.
 
-Returns the first detail stored in the organizer item with the given
-*type*.
+**See also** :ref:`Detail::type <sdk_qtorganizer_detail_type>`.
 
-**See also** :ref:`Detail::type <sdk_qtorganizer_detail#type-prop>`.
+.. _sdk_qtorganizer_organizeritem_list<:
 
-| 
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| list<:ref:`Detail <sdk_qtorganizer_detail>`> details(type)                                                                                                                                                                                                                                                      |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_qtorganizer_organizeritem_-method:
+Returns all the details stored in the organizer item with the given *type*.
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ list<`Detail <sdk_qtorganizer_detail>`> details(type)         |
-+--------------------------------------------------------------------------+
+**See also** :ref:`Detail::type <sdk_qtorganizer_detail_type>`.
 
-Returns all the details stored in the organizer item with the given
-*type*.
+.. _sdk_qtorganizer_organizeritem_removeDetail:
 
-**See also** :ref:`Detail::type <sdk_qtorganizer_detail#type-prop>`.
-
-| 
-
-.. _sdk_qtorganizer_organizeritem_void-method:
-
-+--------------------------------------------------------------------------+
-|        \ void                                                            |
-| removeDetail(:ref:`detail <sdk_qtorganizer_organizeritem#detail-method>`)   |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| void removeDetail(:ref:`detail <sdk_qtorganizer_organizeritem_detail>`)                                                                                                                                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Removes given *detail* from the organizer item.
 
-| 
+.. _sdk_qtorganizer_organizeritem_save:
 
-.. _sdk_qtorganizer_organizeritem_save-method:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| save()                                                                                                                                                                                                                                                                                                       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ save()                                                          |
-+--------------------------------------------------------------------------+
+Saves this :ref:`OrganizerItem <sdk_qtorganizer_organizeritem>` if the item has been modified.
 
-Saves this :ref:`OrganizerItem <sdk_qtorganizer_organizeritem>` if the item
-has been modified.
+**See also** :ref:`modified <sdk_qtorganizer_organizeritem_modified>`.
 
-**See also** :ref:`modified <sdk_qtorganizer_organizeritem#modified-prop>`.
+.. _sdk_qtorganizer_organizeritem_setDetail:
 
-| 
-
-.. _sdk_qtorganizer_organizeritem_void-method:
-
-+--------------------------------------------------------------------------+
-|        \ void                                                            |
-| setDetail(:ref:`detail <sdk_qtorganizer_organizeritem#detail-method>`)      |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| void setDetail(:ref:`detail <sdk_qtorganizer_organizeritem_detail>`)                                                                                                                                                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Saves the given *detail* in the organizer item, and sets its id.
 
-| 

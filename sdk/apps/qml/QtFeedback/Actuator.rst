@@ -1,4 +1,5 @@
 .. _sdk_qtfeedback_actuator:
+
 QtFeedback Actuator
 ===================
 
@@ -13,33 +14,27 @@ The Actuator element represents a feedback actuator.
 Properties
 ----------
 
--  :ref:`actuatorId <sdk_qtfeedback_actuator_actuatorId-prop>` :
-   int
--  :ref:`enabled <sdk_qtfeedback_actuator_enabled-prop>` : bool
--  :ref:`name <sdk_qtfeedback_actuator_name-prop>` : string
--  :ref:`state <sdk_qtfeedback_actuator_state-prop>` : enumeration
--  :ref:`valid <sdk_qtfeedback_actuator_valid-prop>` : bool
+-  `actuatorId </sdk/apps/qml/QtFeedback/actuator/#actuatorId-prop>`_  : int
+-  `enabled </sdk/apps/qml/QtFeedback/actuator/#enabled-prop>`_  : bool
+-  `name </sdk/apps/qml/QtFeedback/actuator/#name-prop>`_  : string
+-  `state </sdk/apps/qml/QtFeedback/actuator/#state-prop>`_  : enumeration
+-  `valid </sdk/apps/qml/QtFeedback/actuator/#valid-prop>`_  : bool
 
 Methods
 -------
 
--  bool
-   **:ref:`isCapabilitySupported <sdk_qtfeedback_actuator#isCapabilitySupported-method>`**\ (enumeration
-   *capability*)
+-  bool `isCapabilitySupported </sdk/apps/qml/QtFeedback/actuator/#isCapabilitySupported-method>`_ \ (enumeration *capability*)
 
 Detailed Description
 --------------------
 
-The Actuator class maps directly to the QFeedbackActuator C++ class, and
-can be used with HapticsEffect elements.
+The Actuator class maps directly to the QFeedbackActuator C++ class, and can be used with HapticsEffect elements.
 
-There are several predefined enumerations and constants provided in this
-object:
+There are several predefined enumerations and constants provided in this object:
 
 1. Capability
 
--  Envelope - Value specifying that the device can bound its intensity
-   by an envelope.
+-  Envelope - Value specifying that the device can bound its intensity by an envelope.
 -  Period - Value specifying that the device can play periodic effects.
 
 2. State
@@ -53,73 +48,57 @@ object:
 Property Documentation
 ----------------------
 
-.. _sdk_qtfeedback_actuator_actuatorId-prop:
+.. _sdk_qtfeedback_actuator_actuatorId:
 
-+--------------------------------------------------------------------------+
-|        \ actuatorId : int                                                |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| actuatorId : int                                                                                                                                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-This property holds the id of the feedback actuator. This property is
-read only.
+This property holds the id of the feedback actuator. This property is read only.
 
-| 
+.. _sdk_qtfeedback_actuator_enabled:
 
-.. _sdk_qtfeedback_actuator_enabled-prop:
-
-+--------------------------------------------------------------------------+
-|        \ enabled : bool                                                  |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| enabled : bool                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property is true if the feedback actuator is enabled.
 
-| 
+.. _sdk_qtfeedback_actuator_name:
 
-.. _sdk_qtfeedback_actuator_name-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| name : string                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ name : string                                                   |
-+--------------------------------------------------------------------------+
+This property holds the name of the feedback actuator. This property is read only.
 
-This property holds the name of the feedback actuator. This property is
-read only.
+.. _sdk_qtfeedback_actuator_state:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| state : enumeration                                                                                                                                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_qtfeedback_actuator_state-prop:
+This property holds the state of the feedback actuator. This property is read only.
 
-+--------------------------------------------------------------------------+
-|        \ state : enumeration                                             |
-+--------------------------------------------------------------------------+
+.. _sdk_qtfeedback_actuator_valid:
 
-This property holds the state of the feedback actuator. This property is
-read only.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| valid : bool                                                                                                                                                                                                                                                                                                 |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-| 
-
-.. _sdk_qtfeedback_actuator_valid-prop:
-
-+--------------------------------------------------------------------------+
-|        \ valid : bool                                                    |
-+--------------------------------------------------------------------------+
-
-This property is true if the actuator is valid. This property is read
-only.
-
-| 
+This property is true if the actuator is valid. This property is read only.
 
 Method Documentation
 --------------------
 
-.. _sdk_qtfeedback_actuator_bool isCapabilitySupported-method:
+.. _sdk_qtfeedback_actuator_isCapabilitySupported:
 
-+--------------------------------------------------------------------------+
-|        \ bool isCapabilitySupported(enumeration *capability*)            |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| bool isCapabilitySupported(enumeration *capability*)                                                                                                                                                                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Returns if the actuator supports the supplied *capability*, available
-capabilities are:
+Returns if the actuator supports the supplied *capability*, available capabilities are:
 
--  Envelope - Value specifying that the device can bound its intensity
-   by an Envelope.
+-  Envelope - Value specifying that the device can bound its intensity by an Envelope.
 -  Period - Value specifying that the device can play periodic effects.
 

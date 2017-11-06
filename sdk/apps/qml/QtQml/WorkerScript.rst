@@ -1,4 +1,5 @@
 .. _sdk_qtqml_workerscript:
+
 QtQml WorkerScript
 ==================
 
@@ -11,30 +12,24 @@ Enables the use of threads in a Qt Quick application
 Properties
 ----------
 
--  :ref:`source <sdk_qtqml_workerscript_source-prop>` : url
+-  :ref:`source <sdk_qtqml_workerscript_source>` : url
 
 Signals
 -------
 
--  :ref:`message <sdk_qtqml_workerscript_message-signal>`\ (jsobject
-   *msg*)
+-  :ref:`message <sdk_qtqml_workerscript_message>`\ (jsobject *msg*)
 
 Methods
 -------
 
--  :ref:`sendMessage <sdk_qtqml_workerscript_sendMessage-method>`\ (jsobject
-   *message*)
+-  :ref:`sendMessage <sdk_qtqml_workerscript_sendMessage>`\ (jsobject *message*)
 
 Detailed Description
 --------------------
 
-Use :ref:`WorkerScript <sdk_qtqml_workerscript>` to run operations in a new
-thread. This is useful for running operations in the background so that
-the main GUI thread is not blocked.
+Use :ref:`WorkerScript <sdk_qtqml_workerscript>` to run operations in a new thread. This is useful for running operations in the background so that the main GUI thread is not blocked.
 
-Messages can be passed between the new thread and the parent thread
-using :ref:`sendMessage() <sdk_qtqml_workerscript#sendMessage-method>` and
-the ``onMessage()`` handler.
+Messages can be passed between the new thread and the parent thread using :ref:`sendMessage() <sdk_qtqml_workerscript_sendMessage>` and the ``onMessage()`` handler.
 
 An example:
 
@@ -58,9 +53,7 @@ An example:
         }
     }
 
-The above worker script specifies a JavaScript file, "script.js", that
-handles the operations to be performed in the new thread. Here is
-``script.js``:
+The above worker script specifies a JavaScript file, "script.js", that handles the operations to be performed in the new thread. Here is ``script.js``:
 
 .. code:: cpp
 
@@ -69,87 +62,59 @@ handles the operations to be performed in the new thread. Here is
         WorkerScript.sendMessage({ 'reply': 'Mouse is at ' + message.x + ',' + message.y })
     }
 
-When the user clicks anywhere within the rectangle, ``sendMessage()`` is
-called, triggering the ``WorkerScript.onMessage()`` handler in
-``script.js``. This in turn sends a reply message that is then received
-by the ``onMessage()`` handler of ``myWorker``.
+When the user clicks anywhere within the rectangle, ``sendMessage()`` is called, triggering the ``WorkerScript.onMessage()`` handler in ``script.js``. This in turn sends a reply message that is then received by the ``onMessage()`` handler of ``myWorker``.
 
 Restrictions
 ^^^^^^^^^^^^
 
-Since the ``WorkerScript.onMessage()`` function is run in a separate
-thread, the JavaScript file is evaluated in a context separate from the
-main QML engine. This means that unlike an ordinary JavaScript file that
-is imported into QML, the ``script.js`` in the above example cannot
-access the properties, methods or other attributes of the QML item, nor
-can it access any context properties set on the QML object through
-QQmlContext.
+Since the ``WorkerScript.onMessage()`` function is run in a separate thread, the JavaScript file is evaluated in a context separate from the main QML engine. This means that unlike an ordinary JavaScript file that is imported into QML, the ``script.js`` in the above example cannot access the properties, methods or other attributes of the QML item, nor can it access any context properties set on the QML object through QQmlContext.
 
-Additionally, there are restrictions on the types of values that can be
-passed to and from the worker script. See the
-:ref:`sendMessage() <sdk_qtqml_workerscript#sendMessage-method>`
-documentation for details.
+Additionally, there are restrictions on the types of values that can be passed to and from the worker script. See the :ref:`sendMessage() <sdk_qtqml_workerscript_sendMessage>` documentation for details.
 
-Worker script can not use
-`.import </sdk/apps/qml/QtQml/qtqml-javascript-imports/>`_  syntax.
+Worker script can not use `.import </sdk/apps/qml/QtQml/qtqml-javascript-imports/>`_  syntax.
 
-**See also** Qt Quick Examples - Threading and Threaded ListModel
-Example.
+**See also** Qt Quick Examples - Threading and Threaded ListModel Example.
 
 Property Documentation
 ----------------------
 
-.. _sdk_qtqml_workerscript_source-prop:
+.. _sdk_qtqml_workerscript_source:
 
-+--------------------------------------------------------------------------+
-|        \ source : url                                                    |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| source : url                                                                                                                                                                                                                                                                                                 |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-This holds the url of the JavaScript file that implements the
-``WorkerScript.onMessage()`` handler for threaded operations.
-
-| 
+This holds the url of the JavaScript file that implements the ``WorkerScript.onMessage()`` handler for threaded operations.
 
 Signal Documentation
 --------------------
 
-.. _sdk_qtqml_workerscript_message(jsobject *msg*)-prop:
+.. _sdk_qtqml_workerscript_message:
 
-+--------------------------------------------------------------------------+
-|        \ message(jsobject *msg*)                                         |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| message(jsobject *msg*)                                                                                                                                                                                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-This signal is emitted when a message *msg* is received from a worker
-script in another thread through a call to
-:ref:`sendMessage() <sdk_qtqml_workerscript#sendMessage-method>`.
+This signal is emitted when a message *msg* is received from a worker script in another thread through a call to :ref:`sendMessage() <sdk_qtqml_workerscript_sendMessage>`.
 
 The corresponding handler is ``onMessage``.
-
-| 
 
 Method Documentation
 --------------------
 
-.. _sdk_qtqml_workerscript_sendMessage-method:
+.. _sdk_qtqml_workerscript_sendMessage:
 
-+--------------------------------------------------------------------------+
-|        \ sendMessage(jsobject *message*)                                 |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| sendMessage(jsobject *message*)                                                                                                                                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Sends the given *message* to a worker script handler in another thread.
-The other worker script handler can receive this message through the
-onMessage() handler.
+Sends the given *message* to a worker script handler in another thread. The other worker script handler can receive this message through the onMessage() handler.
 
 The ``message`` object may only contain values of the following types:
 
 -  boolean, number, string
 -  JavaScript objects and arrays
--  :ref:`ListModel <sdk_qtqml_listmodel>` objects (any other type of
-   QObject\* is not allowed)
+-  :ref:`ListModel <sdk_qtqml_listmodel>` objects (any other type of QObject\* is not allowed)
 
-All objects and arrays are copied to the ``message``. With the exception
-of :ref:`ListModel <sdk_qtqml_listmodel>` objects, any modifications by the
-other thread to an object passed in ``message`` will not be reflected in
-the original object.
+All objects and arrays are copied to the ``message``. With the exception of :ref:`ListModel <sdk_qtqml_listmodel>` objects, any modifications by the other thread to an object passed in ``message`` will not be reflected in the original object.
 
-| 

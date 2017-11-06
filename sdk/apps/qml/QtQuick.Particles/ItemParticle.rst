@@ -1,39 +1,29 @@
 .. _sdk_qtquick_particles_itemparticle:
+
 QtQuick.Particles ItemParticle
 ==============================
 
 For specifying a delegate to paint particles
 
-+--------------------------------------+--------------------------------------+
-| Import Statement:                    | import QtQuick.Particles 2.0         |
-+--------------------------------------+--------------------------------------+
-| Inherits:                            | `ParticlePainter </sdk/apps/qml/QtQu |
-|                                      | ick/Particles.ParticlePainter/>`_    |
-+--------------------------------------+--------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Import Statement:                                                                                                                                      | import QtQuick.Particles 2.0                                                                                                                           |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Inherits:                                                                                                                                              | `ParticlePainter </sdk/apps/qml/QtQuick/Particles.ParticlePainter/>`_                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Properties
 ----------
 
--  `delegate </sdk/apps/qml/QtQuick/Particles.ItemParticle/_delegate-prop>`_ 
-   : Component
--  `fade </sdk/apps/qml/QtQuick/Particles.ItemParticle/_fade-prop>`_ 
-   : bool
+-  `delegate </sdk/apps/qml/QtQuick/Particles.ItemParticle/#delegate-prop>`_  : Component
+-  `fade </sdk/apps/qml/QtQuick/Particles.ItemParticle/#fade-prop>`_  : bool
 
 Methods
 -------
 
--  void
-   **`freeze </sdk/apps/qml/QtQuick/Particles.ItemParticle/#freeze-method>`_ **\ (Item
-   *item*)
--  void
-   **`give </sdk/apps/qml/QtQuick/Particles.ItemParticle/#give-method>`_ **\ (Item
-   *item*)
--  void
-   **`take </sdk/apps/qml/QtQuick/Particles.ItemParticle/#take-method>`_ **\ (Item
-   *item*, bool *prioritize*)
--  void
-   **`unfreeze </sdk/apps/qml/QtQuick/Particles.ItemParticle/#unfreeze-method>`_ **\ (Item
-   *item*)
+-  void `freeze </sdk/apps/qml/QtQuick/Particles.ItemParticle/#freeze-method>`_ \ (Item *item*)
+-  void `give </sdk/apps/qml/QtQuick/Particles.ItemParticle/#give-method>`_ \ (Item *item*)
+-  void `take </sdk/apps/qml/QtQuick/Particles.ItemParticle/#take-method>`_ \ (Item *item*, bool *prioritize*)
+-  void `unfreeze </sdk/apps/qml/QtQuick/Particles.ItemParticle/#unfreeze-method>`_ \ (Item *item*)
 
 Detailed Description
 --------------------
@@ -41,83 +31,58 @@ Detailed Description
 Property Documentation
 ----------------------
 
-.. _sdk_qtquick_particles_itemparticle_delegate-prop:
+.. _sdk_qtquick_particles_itemparticle_delegate:
 
-+--------------------------------------------------------------------------+
-|        \ delegate : Component                                            |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| delegate : Component                                                                                                                                                                                                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-An instance of the delegate will be created for every logical particle,
-and moved along with it.
+An instance of the delegate will be created for every logical particle, and moved along with it.
 
-| 
+.. _sdk_qtquick_particles_itemparticle_fade:
 
-.. _sdk_qtquick_particles_itemparticle_fade-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| fade : bool                                                                                                                                                                                                                                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ fade : bool                                                     |
-+--------------------------------------------------------------------------+
-
-If true, the item will automatically be faded in and out at the ends of
-its lifetime. If false, you will have to implement any entry effect
-yourself.
+If true, the item will automatically be faded in and out at the ends of its lifetime. If false, you will have to implement any entry effect yourself.
 
 Default is true.
-
-| 
 
 Method Documentation
 --------------------
 
-.. _sdk_qtquick_particles_itemparticle_-method:
+.. _sdk_qtquick_particles_itemparticle_freeze:
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ void freeze(`Item <sdk_qtquick_item>` *item*)                 |
-+--------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| void freeze(:ref:`Item <sdk_qtquick_item>` *item*)                                                                                                                                                                                                                                                              |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Suspends the flow of time for the logical particle which item
-represents, allowing you to control its movement.
+Suspends the flow of time for the logical particle which item represents, allowing you to control its movement.
 
-| 
+.. _sdk_qtquick_particles_itemparticle_give:
 
-.. _sdk_qtquick_particles_itemparticle_-method:
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| void give(:ref:`Item <sdk_qtquick_item>` *item*)                                                                                                                                                                                                                                                                |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ void give(`Item <sdk_qtquick_item>` *item*)                   |
-+--------------------------------------------------------------------------+
+Orders the `ItemParticle </sdk/apps/qml/QtQuick/Particles.ItemParticle/>`_  to give you control of the item. It will cease controlling it and the item will lose its association to the logical particle.
 
-Orders the
-`ItemParticle </sdk/apps/qml/QtQuick/Particles.ItemParticle/>`_  to give
-you control of the item. It will cease controlling it and the item will
-lose its association to the logical particle.
+.. _sdk_qtquick_particles_itemparticle_take:
 
-| 
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| void take(:ref:`Item <sdk_qtquick_item>` *item*, bool *prioritize*)                                                                                                                                                                                                                                             |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_qtquick_particles_itemparticle_-method:
+Asks the `ItemParticle </sdk/apps/qml/QtQuick/Particles.ItemParticle/>`_  to take over control of item. It will be emitted when there is a logical particle available.
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ void take(`Item <sdk_qtquick_item>` *item*, bool              |
-| *prioritize*)                                                            |
-+--------------------------------------------------------------------------+
+By default items form a queue when waiting for a logical particle, but if prioritize is true then it will go immediately to the head of the queue.
 
-Asks the
-`ItemParticle </sdk/apps/qml/QtQuick/Particles.ItemParticle/>`_  to take
-over control of item. It will be emitted when there is a logical
-particle available.
+.. _sdk_qtquick_particles_itemparticle_unfreeze:
 
-By default items form a queue when waiting for a logical particle, but
-if prioritize is true then it will go immediately to the head of the
-queue.
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| void unfreeze(:ref:`Item <sdk_qtquick_item>` *item*)                                                                                                                                                                                                                                                            |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-| 
+Restarts the flow of time for the logical particle which item represents, allowing it to be moved by the particle system again.
 
-.. _sdk_qtquick_particles_itemparticle_-method:
-
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ void unfreeze(`Item <sdk_qtquick_item>` *item*)               |
-+--------------------------------------------------------------------------+
-
-Restarts the flow of time for the logical particle which item
-represents, allowing it to be moved by the particle system again.
-
-| 

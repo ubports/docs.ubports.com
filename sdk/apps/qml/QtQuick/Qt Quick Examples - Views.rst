@@ -1,29 +1,15 @@
 .. _sdk_qtquick_qt_quick_examples_-_views:
+
 QtQuick Qt Quick Examples - Views
 =================================
 
 
 
-|image0|
+*Views* is a collection of small QML examples relating to model and view functionality. They demonstrate how to show data from a model using the Qt Quick view types. For more information, visit the `Models and Views in Qt Quick </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/>`_  page.
 
-*Views* is a collection of small QML examples relating to model and view
-functionality. They demonstrate how to show data from a model using the
-Qt Quick view types. For more information, visit the `Models and Views
-in Qt Quick </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/>`_ 
-page.
+To run the example from Qt Creator, open the **Welcome** mode and select the example from **Examples**. For more information, visit Building and Running an Example.
 
-.. rubric:: Running the Example
-   :name: running-the-example
-
-To run the example from Qt Creator, open the **Welcome** mode and select
-the example from **Examples**. For more information, visit Building and
-Running an Example.
-
-.. rubric:: GridView and PathView
-   :name: gridview-and-pathview
-
-*GridView* and *PathView* demonstrate usage of these types to display
-views.
+*GridView* and *PathView* demonstrate usage of these types to display views.
 
 .. code:: qml
 
@@ -51,16 +37,9 @@ views.
             }
         }
 
-.. rubric:: Dynamic List
-   :name: dynamic-list
+*Dynamic List* demonstrates animation of runtime additions and removals to a :ref:`ListView <sdk_qtquick_listview>`.
 
-*Dynamic List* demonstrates animation of runtime additions and removals
-to a :ref:`ListView <sdk_qtquick_listview>`.
-
-The :ref:`ListView <sdk_qtquick_listview>`.onAdd signal handler runs an
-animation when new items are added to the view, and the
-:ref:`ListView <sdk_qtquick_listview>`.onRemove another when they are
-removed.
+The :ref:`ListView <sdk_qtquick_listview>`.onAdd signal handler runs an animation when new items are added to the view, and the :ref:`ListView <sdk_qtquick_listview>`.onRemove another when they are removed.
 
 .. code:: qml
 
@@ -77,13 +56,9 @@ removed.
                 }
             }
 
-.. rubric:: Expanding Delegates
-   :name: expanding-delegates
-
 *Expanding Delegates* demonstrates delegates that expand when activated.
 
-It has a complex delegate the size and appearance of which can change,
-displacing other items in the view.
+It has a complex delegate the size and appearance of which can change, displacing other items in the view.
 
 .. code:: qml
 
@@ -144,11 +119,7 @@ displacing other items in the view.
                 }
             }
 
-.. rubric:: Highlight
-   :name: highlight
-
-*Highlight* demonstrates adding a custom highlight to a
-:ref:`ListView <sdk_qtquick_listview>`.
+*Highlight* demonstrates adding a custom highlight to a :ref:`ListView <sdk_qtquick_listview>`.
 
 .. code:: qml
 
@@ -175,11 +146,7 @@ displacing other items in the view.
             highlightFollowsCurrentItem: false
         }
 
-.. rubric:: Highlight Ranges
-   :name: highlight-ranges
-
-*Highlight Ranges* shows the three different highlight range modes of
-:ref:`ListView <sdk_qtquick_listview>`.
+*Highlight Ranges* shows the three different highlight range modes of :ref:`ListView <sdk_qtquick_listview>`.
 
 .. code:: qml
 
@@ -247,11 +214,7 @@ displacing other items in the view.
         }
     }
 
-.. rubric:: Sections
-   :name: sections
-
-*Sections* demonstrates the various section headers and footers
-available to :ref:`ListView <sdk_qtquick_listview>`.
+*Sections* demonstrates the various section headers and footers available to :ref:`ListView <sdk_qtquick_listview>`.
 
 .. code:: qml
 
@@ -281,14 +244,9 @@ available to :ref:`ListView <sdk_qtquick_listview>`.
             section.delegate: sectionHeading
         }
 
-.. rubric:: Packages
-   :name: packages
+*Packages* uses the Package type to transition delegates between two views.
 
-*Packages* uses the Package type to transition delegates between two
-views.
-
-It has a Package object which defines delegate items for each view and
-an item that can be transferred between delegates.
+It has a Package object which defines delegate items for each view and an item that can be transferred between delegates.
 
 .. code:: qml
 
@@ -324,8 +282,7 @@ an item that can be transferred between delegates.
         }
     }
 
-A DelegateModel allows the individual views to access their specific
-items from the shared package delegate.
+A DelegateModel allows the individual views to access their specific items from the shared package delegate.
 
 .. code:: qml
 
@@ -349,13 +306,7 @@ items from the shared package delegate.
         model: visualModel.parts.grid
     }
 
-.. rubric:: ObjectModel
-   :name: objectmodel
-
-*ObjectModel* uses an
-`ObjectModel </sdk/apps/qml/QtQuick/views/#objectmodel>`_  for the model
-instead of a
-`ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#listmodel>`_ .
+*ObjectModel* uses an `ObjectModel </sdk/apps/qml/QtQuick/views/#objectmodel>`_  for the model instead of a `ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#listmodel>`_ .
 
 .. code:: qml
 
@@ -391,11 +342,7 @@ instead of a
             cacheBuffer: 200
         }
 
-.. rubric:: Display Margins
-   :name: display-margins
-
-*Display Margins* uses delegates to display items and implements a
-simple header and footer components.
+*Display Margins* uses delegates to display items and implements a simple header and footer components.
 
 Files:
 
@@ -430,6 +377,4 @@ Files:
 -  views/views.qmlproject
 -  views/views.qrc
 -  views/visualdatamodel/visualdatamodel.qmlproject
-
-.. |image0| image:: /media/sdk/apps/qml/qtquick-views-example/images/qml-modelviews-example.png
 

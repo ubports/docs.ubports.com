@@ -1,4 +1,5 @@
 .. _sdk_qtlocation_mapitemview:
+
 QtLocation MapItemView
 ======================
 
@@ -13,25 +14,19 @@ The MapItemView is used to populate Map from a model.
 Properties
 ----------
 
--  :ref:`autoFitViewport <sdk_qtlocation_mapitemview_autoFitViewport-prop>`
-   : Component
--  :ref:`delegate <sdk_qtlocation_mapitemview_delegate-prop>` :
-   Component
--  :ref:`model <sdk_qtlocation_mapitemview_model-prop>` : model
+-  :ref:`autoFitViewport <sdk_qtlocation_mapitemview_autoFitViewport>` : Component
+-  :ref:`delegate <sdk_qtlocation_mapitemview_delegate>` : Component
+-  :ref:`model <sdk_qtlocation_mapitemview_model>` : model
 
 Detailed Description
 --------------------
 
-The :ref:`MapItemView <sdk_qtlocation_mapitemview>` is used to populate Map
-with MapItems from a model. The
-:ref:`MapItemView <sdk_qtlocation_mapitemview>` type only makes sense when
-contained in a Map, meaning that it has no standalone presentation.
+The :ref:`MapItemView <sdk_qtlocation_mapitemview>` is used to populate Map with MapItems from a model. The :ref:`MapItemView <sdk_qtlocation_mapitemview>` type only makes sense when contained in a Map, meaning that it has no standalone presentation.
 
 Example Usage
 ~~~~~~~~~~~~~
 
-This example demonstrates how to use the MapViewItem object to display a
-:ref:`route <sdk_qtlocation_route>` on a `map <sdk_qtlocation_map>`:
+This example demonstrates how to use the MapViewItem object to display a :ref:`route <sdk_qtlocation_route>` on a :ref:`map <sdk_qtlocation_map>`:
 
 .. code:: qml
 
@@ -60,39 +55,29 @@ This example demonstrates how to use the MapViewItem object to display a
 Property Documentation
 ----------------------
 
-.. _sdk_qtlocation_mapitemview_autoFitViewport-prop:
+.. _sdk_qtlocation_mapitemview_autoFitViewport:
 
-+--------------------------------------------------------------------------+
-|        \ autoFitViewport : Component                                     |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| autoFitViewport : Component                                                                                                                                                                                                                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-This property controls whether to automatically pan and zoom the
-viewport to display all map items when items are added or removed.
+This property controls whether to automatically pan and zoom the viewport to display all map items when items are added or removed.
 
 Defaults to false.
 
-| 
+.. _sdk_qtlocation_mapitemview_delegate:
 
-.. _sdk_qtlocation_mapitemview_delegate-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| delegate : Component                                                                                                                                                                                                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ delegate : Component                                            |
-+--------------------------------------------------------------------------+
+This property holds the delegate which defines how each item in the model should be displayed. The Component must contain exactly one MapItem -derived object as the root object.
 
-This property holds the delegate which defines how each item in the
-model should be displayed. The Component must contain exactly one
-MapItem -derived object as the root object.
+.. _sdk_qtlocation_mapitemview_model:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| model : model                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_qtlocation_mapitemview_model-prop:
+This property holds the model that provides data used for creating the map items defined by the delegate. Only QAbstractItemModel based models are supported.
 
-+--------------------------------------------------------------------------+
-|        \ model : model                                                   |
-+--------------------------------------------------------------------------+
-
-This property holds the model that provides data used for creating the
-map items defined by the delegate. Only QAbstractItemModel based models
-are supported.
-
-| 

@@ -1,16 +1,11 @@
 .. _sdk_qtsensors_qt_sensors_-_accel_bubble:
+
 QtSensors Qt Sensors - Accel Bubble
 ===================================
 
 
 
-|image0|
-
-.. rubric:: Overview
-   :name: overview
-
-Writing a QML application that uses the Accelerometer QML sensors type
-requires the following steps:
+Writing a QML application that uses the Accelerometer QML sensors type requires the following steps:
 
 Import the Sensors Declarative module.
 
@@ -61,6 +56,4 @@ Files:
 -  accelbubble/main.cpp
 -  accelbubble/accelbubble.pro
 -  accelbubble/accelbubble.qrc
-
-.. |image0| image:: /media/sdk/apps/qml/qtsensors-accelbubble-example/images/accelbubble.png
 

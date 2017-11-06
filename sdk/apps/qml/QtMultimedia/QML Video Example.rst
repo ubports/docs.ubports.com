@@ -1,55 +1,25 @@
 .. _sdk_qtmultimedia_qml_video_example:
+
 QtMultimedia QML Video Example
 ==============================
 
 
+*QML Video* demonstrates the various transformations (move; resize; rotate; change aspect ratio) that can be applied to QML :ref:`VideoOutput <sdk_qtmultimedia_videooutput>` and `Camera </sdk/apps/qml/QtMultimedia/qml-multimedia/#camera>`_  types.
 
-*QML Video* demonstrates the various transformations (move; resize;
-rotate; change aspect ratio) that can be applied to QML
-:ref:`VideoOutput <sdk_qtmultimedia_videooutput>` and
-`Camera </sdk/apps/qml/QtMultimedia/qml-multimedia/#camera>`_  types.
+It also shows how native code can be combined with QML to implement more advanced functionality - in this case, C++ code is used to calculate the QML frame rate. This value is rendered in QML in a semi-transparent item overlaid on the video content.
 
-It also shows how native code can be combined with QML to implement more
-advanced functionality - in this case, C++ code is used to calculate the
-QML frame rate. This value is rendered in QML in a semi-transparent item
-overlaid on the video content.
+The following image shows the application executing the video-overlay scene, which creates a dummy overlay item (just a semi-transparent Rectangle), which moves across the :ref:`VideoOutput <sdk_qtmultimedia_videooutput>` item.
 
-The following image shows the application executing the video-overlay
-scene, which creates a dummy overlay item (just a semi-transparent
-Rectangle), which moves across the
-:ref:`VideoOutput <sdk_qtmultimedia_videooutput>` item.
+To run the example from Qt Creator, open the **Welcome** mode and select the example from **Examples**. For more information, visit Building and Running an Example.
 
-|image0|
+The video/qmlvideo/qml/qmlvideo/main.qml file creates a UI which includes the following items:
 
-.. rubric:: Running the Example
-   :name: running-the-example
-
-To run the example from Qt Creator, open the **Welcome** mode and select
-the example from **Examples**. For more information, visit Building and
-Running an Example.
-
-.. rubric:: Application Structure
-   :name: application-structure
-
-The video/qmlvideo/qml/qmlvideo/main.qml file creates a UI which
-includes the following items:
-
--  Two Button instances, each of which displays a filename, and can be
-   used to launch a FileBrowser
+-  Two Button instances, each of which displays a filename, and can be used to launch a FileBrowser
 -  An exit Button
--  A SceneSelectionPanel, which is a flickable list displaying the
-   available scenes
--  At the lower left, an item which displays the QML repainting rate -
-   the upper number is the instantaneous frame rate and the lower number
-   is the average over the past second.
+-  A SceneSelectionPanel, which is a flickable list displaying the available scenes
+-  At the lower left, an item which displays the QML repainting rate - the upper number is the instantaneous frame rate and the lower number is the average over the past second.
 
-|image1|
-
-Each scene in the flickable list is implemented in its own QML file -
-for example the video-basic scene (which just displays a static
-VideoOutput in the center of the screen) is implemented in the
-VideoBasic.qml file. As you can see from the code, this makes use of a
-type of inheritance: a VideoBasic item ...
+Each scene in the flickable list is implemented in its own QML file - for example the video-basic scene (which just displays a static VideoOutput in the center of the screen) is implemented in the VideoBasic.qml file. As you can see from the code, this makes use of a type of inheritance: a VideoBasic item ...
 
 .. code:: qml
 
@@ -122,28 +92,13 @@ type of inheritance: a VideoBasic item ...
         }
     }
 
-SceneBasic describes the structure and behaviour of the scene, but is
-agnostic of the type of content which will be displayed - this is
-abstracted by Content.
+SceneBasic describes the structure and behaviour of the scene, but is agnostic of the type of content which will be displayed - this is abstracted by Content.
 
-This pattern allows us to define a particular use case (in this case,
-simply display a static piece of content), and then instantiate that use
-case for both video content (VideoBasic) and camera content
-(CameraBasic). This approach is used to implement many of the other
-scenes - for example, "repeatedly slide the content from left to right
-and back again" is implemented by SceneMove, on which VideoMove and
-CameraMove are based.
+This pattern allows us to define a particular use case (in this case, simply display a static piece of content), and then instantiate that use case for both video content (VideoBasic) and camera content (CameraBasic). This approach is used to implement many of the other scenes - for example, "repeatedly slide the content from left to right and back again" is implemented by SceneMove, on which VideoMove and CameraMove are based.
 
-Depending on the value of the contentType property in the top-level
-scene instance, the embedded Content item creates either a MediaPlayer
-or a Camera item.
+Depending on the value of the contentType property in the top-level scene instance, the embedded Content item creates either a MediaPlayer or a Camera item.
 
-.. rubric:: Calculating and Displaying QML Painting Rate
-   :name: calculating-and-displaying-qml-painting-rate
-
-The QML painting rate is calculated by the FrequencyMonitor class, which
-turns a stream of events (received via the notify() slot), into an
-instantaneous and an averaged frequency:
+The QML painting rate is calculated by the FrequencyMonitor class, which turns a stream of events (received via the notify() slot), into an instantaneous and an averaged frequency:
 
 .. code:: qml
 
@@ -168,8 +123,7 @@ The FrequencyMonitor class is exposed to QML like this
         ::qmlRegisterType<FrequencyMonitor>("FrequencyMonitor", 1, 0, "FrequencyMonitor");
     }
 
-and its data is displayed by defining a QML item called FrequencyItem,
-like this:
+and its data is displayed by defining a QML item called FrequencyItem, like this:
 
 .. code:: qml
 
@@ -213,11 +167,7 @@ like this:
 
 The result looks like this:
 
-|image2|
-
-All that remains is to connect the afterRendering() signal of the
-QQuickView object to a JavaScript function, which will eventually call
-frequencyItem.notify():
+All that remains is to connect the afterRendering() signal of the QQuickView object to a JavaScript function, which will eventually call frequencyItem.notify():
 
 .. code:: qml
 
@@ -292,8 +242,4 @@ Images:
 -  video/qmlvideo/images/folder.png
 -  video/qmlvideo/images/leaves.jpg
 -  video/qmlvideo/images/up.png
-
-.. |image0| image:: /media/sdk/apps/qml/qtmultimedia-video-qmlvideo-example/images/qmlvideo-overlay.jpg
-.. |image1| image:: /media/sdk/apps/qml/qtmultimedia-video-qmlvideo-example/images/qmlvideo-menu.jpg
-.. |image2| image:: /media/sdk/apps/qml/qtmultimedia-video-qmlvideo-example/images/video-qml-paint-rate.png
 

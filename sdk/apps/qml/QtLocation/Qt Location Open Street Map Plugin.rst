@@ -1,32 +1,17 @@
 .. _sdk_qtlocation_qt_location_open_street_map_plugin:
+
 QtLocation Qt Location Open Street Map Plugin
 =============================================
 
 
 
-.. rubric:: Overview
-   :name: overview
+This geo services plugin allows applications to access `Open Street Map <http://openstreetmap.org>`_  location based services using the Qt Location API.
 
-This geo services plugin allows applications to access `Open Street
-Map <http://openstreetmap.org>`_  location based services using the Qt
-Location API.
+Data, imagery and map information provided by `MapQuest <http://www.mapquest.com>`_ , OpenStreetMap and contributors. The data is available under the `Open Database License <http://www.opendatacommons.org/licenses/odbl>`_ .
 
-Data, imagery and map information provided by
-`MapQuest <http://www.mapquest.com>`_ , OpenStreetMap and contributors.
-The data is available under the `Open Database
-License <http://www.opendatacommons.org/licenses/odbl>`_ .
+The Open Street Map geo services plugin can be loaded by using the plugin key "osm".
 
-The Open Street Map geo services plugin can be loaded by using the
-plugin key "osm".
-
-.. rubric:: Parameters
-   :name: parameters
-
-.. rubric:: Optional parameters
-   :name: optional-parameters
-
-The following table lists optional parameters that can be passed to the
-Open Street Map plugin.
+The following table lists optional parameters that can be passed to the Open Street Map plugin.
 
 +-------------+-----------------------------------------------------------------------------------------------------------------------------------------+
 | Parameter   | Description                                                                                                                             |

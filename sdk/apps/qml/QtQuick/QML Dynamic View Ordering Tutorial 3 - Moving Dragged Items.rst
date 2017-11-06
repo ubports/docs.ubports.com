@@ -1,13 +1,10 @@
 .. _sdk_qtquick_qml_dynamic_view_ordering_tutorial_3_-_moving_dragged_items:
+
 QtQuick QML Dynamic View Ordering Tutorial 3 - Moving Dragged Items
 ===================================================================
 
 
-
-The next step in our application to move items within the list as
-they're dragged so that we can re-order the list. To achieve this we
-introduce three new types to our application; DelegateModel,
-:ref:`Drag <sdk_qtquick_drag>` and `DropArea <sdk_qtquick_droparea>`.
+The next step in our application to move items within the list as they're dragged so that we can re-order the list. To achieve this we introduce three new types to our application; DelegateModel, :ref:`Drag <sdk_qtquick_drag>` and :ref:`DropArea <sdk_qtquick_droparea>`.
 
 .. code:: qml
 
@@ -44,13 +41,7 @@ introduce three new types to our application; DelegateModel,
         }
     }
 
-.. rubric:: Walkthrough
-   :name: walkthrough
-
-In order to re-order the view we need to determine when one item has
-been dragged over another. With the Drag attached property we can
-generate events that are sent to the scene graph whenever the item it is
-attached to moves.
+In order to re-order the view we need to determine when one item has been dragged over another. With the Drag attached property we can generate events that are sent to the scene graph whenever the item it is attached to moves.
 
 .. code:: qml
 
@@ -59,17 +50,9 @@ attached to moves.
                     Drag.hotSpot.x: width / 2
                     Drag.hotSpot.y: height / 2
 
-Drag events are only sent while the active property is true, so in this
-example the first event would be sent when the delegate was held with
-additional event sents when dragging. The
-:ref:`hotSpot <sdk_qtquick_drag#hotSpot-attached-prop>` property specifies
-the relative position of the drag events within the dragged item, the
-center of the item in this instance.
+Drag events are only sent while the active property is true, so in this example the first event would be sent when the delegate was held with additional event sents when dragging. The :ref:`hotSpot <sdk_qtquick_drag_hotSpot>` property specifies the relative position of the drag events within the dragged item, the center of the item in this instance.
 
-Then we use a :ref:`DropArea <sdk_qtquick_droparea>` in each view item to
-determine when the hot spot of the dragged item intersects another item,
-when a drag enters one of these DropAreas we can move the dragged item
-to the index of the item it was dragged over.
+Then we use a :ref:`DropArea <sdk_qtquick_droparea>` in each view item to determine when the hot spot of the dragged item intersects another item, when a drag enters one of these DropAreas we can move the dragged item to the index of the item it was dragged over.
 
 .. code:: qml
 
@@ -82,19 +65,9 @@ to the index of the item it was dragged over.
                     }
                 }
 
-To move the items within the view we use a DelegateModel. The
-DelegateModel type is used by the view types to instantiate delegate
-items from model data and when constructed explicitly can be used to
-filter and re-order the model items provided to
-:ref:`ListView <sdk_qtquick_listview>`. The items property of DelegateModel
-provides access to the view's items and allows us to change the visible
-order without modifying the source model. To determine the current
-visible index of the items we use itemsIndex property on the
-DelegateModel attached property of the delegate item.
+To move the items within the view we use a DelegateModel. The DelegateModel type is used by the view types to instantiate delegate items from model data and when constructed explicitly can be used to filter and re-order the model items provided to :ref:`ListView <sdk_qtquick_listview>`. The items property of DelegateModel provides access to the view's items and allows us to change the visible order without modifying the source model. To determine the current visible index of the items we use itemsIndex property on the DelegateModel attached property of the delegate item.
 
-To utilize a DelegateModel with a :ref:`ListView <sdk_qtquick_listview>` we
-bind it to the :ref:`model <sdk_qtquick_listview#model-prop>` property of
-the view and bind the model and delegate to the DelegateModel.
+To utilize a DelegateModel with a :ref:`ListView <sdk_qtquick_listview>` we bind it to the :ref:`model <sdk_qtquick_listview_model>` property of the view and bind the model and delegate to the DelegateModel.
 
 .. code:: qml
 
@@ -117,7 +90,4 @@ Files:
 -  tutorials/dynamicview/dynamicview3/dynamicview.qml
 -  tutorials/dynamicview/dynamicview3/dynamicview3.qmlproject
 
-`QML Dynamic View Ordering Tutorial 2 - Dragging View
-Items </sdk/apps/qml/QtQuick/tutorials-dynamicview-dynamicview2/>`_ 
-`QML Dynamic View Ordering Tutorial 4 - Sorting
-Items </sdk/apps/qml/QtQuick/tutorials-dynamicview-dynamicview4/>`_ 
+`QML Dynamic View Ordering Tutorial 2 - Dragging View Items </sdk/apps/qml/QtQuick/tutorials-dynamicview-dynamicview2/>`_  `QML Dynamic View Ordering Tutorial 4 - Sorting Items </sdk/apps/qml/QtQuick/tutorials-dynamicview-dynamicview4/>`_ 

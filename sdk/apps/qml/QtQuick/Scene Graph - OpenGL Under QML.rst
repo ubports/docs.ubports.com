@@ -1,28 +1,15 @@
 .. _sdk_qtquick_scene_graph_-_opengl_under_qml:
+
 QtQuick Scene Graph - OpenGL Under QML
 ======================================
 
 
 
-|image0|
+The OpenGL under QML example shows how an application can make use of the QQuickWindow::beforeRendering() signal to draw custom OpenGL content under a Qt Quick scene. This signal is emitted at the start of every frame, before the scene graph starts its rendering, thus any OpenGL draw calls that are made as a response to this signal, will stack under the Qt Quick items.
 
-The OpenGL under QML example shows how an application can make use of
-the QQuickWindow::beforeRendering() signal to draw custom OpenGL content
-under a Qt Quick scene. This signal is emitted at the start of every
-frame, before the scene graph starts its rendering, thus any OpenGL draw
-calls that are made as a response to this signal, will stack under the
-Qt Quick items.
+As an alternative, applications that wish to render OpenGL content on top of the Qt Quick scene, can do so by connecting to the QQuickWindow::afterRendering() signal.
 
-As an alternative, applications that wish to render OpenGL content on
-top of the Qt Quick scene, can do so by connecting to the
-QQuickWindow::afterRendering() signal.
-
-In this example, we will also see how it is possible to have values that
-are exposed to QML which affect the OpenGL rendering. We animate the
-threshold value using a
-:ref:`NumberAnimation <sdk_qtquick_numberanimation>` in the QML file and
-this value is used by the OpenGL shader program that draws the
-squircles.
+In this example, we will also see how it is possible to have values that are exposed to QML which affect the OpenGL rendering. We animate the threshold value using a :ref:`NumberAnimation <sdk_qtquick_numberanimation>` in the QML file and this value is used by the OpenGL shader program that draws the squircles.
 
 .. code:: cpp
 
@@ -46,8 +33,7 @@ squircles.
         SquircleRenderer *m_renderer;
     };
 
-First of all, we need an object we can expose to QML. This is a subclass
-of QQuickItem so we can easily access QQuickItem::window().
+First of all, we need an object we can expose to QML. This is a subclass of QQuickItem so we can easily access QQuickItem::window().
 
 .. code:: cpp
 
@@ -67,16 +53,9 @@ of QQuickItem so we can easily access QQuickItem::window().
         QOpenGLShaderProgram *m_program;
     };
 
-Then we need an object to take care of the rendering. This instance
-needs to be separated from the QQuickItem because the item lives in the
-GUI thread and the rendering potentially happens on the render thread.
-Since we want to connect to QQuickWindow::beforeRendering(), we make the
-renderer a QObject. The renderer contains a copy of all the state it
-needs, independent of the GUI thread.
+Then we need an object to take care of the rendering. This instance needs to be separated from the QQuickItem because the item lives in the GUI thread and the rendering potentially happens on the render thread. Since we want to connect to QQuickWindow::beforeRendering(), we make the renderer a QObject. The renderer contains a copy of all the state it needs, independent of the GUI thread.
 
-**Note:** Don't be tempted to merge the two objects into one.
-QQuickItems may be deleted on the GUI thread while the render thread is
-rendering.
+**Note:** Don't be tempted to merge the two objects into one. QQuickItems may be deleted on the GUI thread while the render thread is rendering.
 
 Lets move on to the implementation.
 
@@ -89,9 +68,7 @@ Lets move on to the implementation.
         connect(this, SIGNAL(windowChanged(QQuickWindow*)), this, SLOT(handleWindowChanged(QQuickWindow*)));
     }
 
-The constructor of the ``Squircle`` class simply initializes the values
-and connects to the window changed signal which we will use to prepare
-our renderer.
+The constructor of the ``Squircle`` class simply initializes the values and connects to the window changed signal which we will use to prepare our renderer.
 
 .. code:: cpp
 
@@ -101,17 +78,9 @@ our renderer.
             connect(win, SIGNAL(beforeSynchronizing()), this, SLOT(sync()), Qt::DirectConnection);
             connect(win, SIGNAL(sceneGraphInvalidated()), this, SLOT(cleanup()), Qt::DirectConnection);
 
-Once we have a window, we attach to the
-QQuickWindow::beforeSynchronizing() signal which we will use to create
-the renderer and to copy state into it safely. We also connect to the
-QQuickWindow::sceneGraphInvalidated() signal to handle the cleanup of
-the renderer.
+Once we have a window, we attach to the QQuickWindow::beforeSynchronizing() signal which we will use to create the renderer and to copy state into it safely. We also connect to the QQuickWindow::sceneGraphInvalidated() signal to handle the cleanup of the renderer.
 
-**Note:** Since the Squircle object has affinity to the GUI thread and
-the signals are emitted from the rendering thread, it is crucial that
-the connections are made with Qt::DirectConnection. Failing to do so,
-will result in that the slots are invoked on the wrong thread with no
-OpenGL context present.
+**Note:** Since the Squircle object has affinity to the GUI thread and the signals are emitted from the rendering thread, it is crucial that the connections are made with Qt::DirectConnection. Failing to do so, will result in that the slots are invoked on the wrong thread with no OpenGL context present.
 
 .. code:: cpp
 
@@ -119,10 +88,7 @@ OpenGL context present.
         }
     }
 
-The default behavior of the scene graph is to clear the framebuffer
-before rendering. Since we render before the scene graph, we need to
-turn this clearing off. This means that we need to clear ourselves in
-the ``paint()`` function.
+The default behavior of the scene graph is to clear the framebuffer before rendering. Since we render before the scene graph, we need to turn this clearing off. This means that we need to clear ourselves in the ``paint()`` function.
 
 .. code:: cpp
 
@@ -136,14 +102,9 @@ the ``paint()`` function.
         m_renderer->setT(m_t);
     }
 
-We use the ``sync()`` function to initialize the renderer and to copy
-the state in our item into the renderer. When the renderer is created,
-we also connect the QQuickWindow::beforeRendering() to the renderer's
-``paint()`` slot.
+We use the ``sync()`` function to initialize the renderer and to copy the state in our item into the renderer. When the renderer is created, we also connect the QQuickWindow::beforeRendering() to the renderer's ``paint()`` slot.
 
-**Note:** The QQuickWindow::beforeSynchronizing() signal is emitted on
-the rendering thread while the GUI thread is blocked, so it is safe to
-simply copy the value without any additional protection.
+**Note:** The QQuickWindow::beforeSynchronizing() signal is emitted on the rendering thread while the GUI thread is blocked, so it is safe to simply copy the value without any additional protection.
 
 .. code:: cpp
 
@@ -159,8 +120,7 @@ simply copy the value without any additional protection.
         delete m_program;
     }
 
-In the ``cleanup()`` function we delete the renderer which in turn
-cleans up its own resources.
+In the ``cleanup()`` function we delete the renderer which in turn cleans up its own resources.
 
 .. code:: cpp
 
@@ -174,10 +134,7 @@ cleans up its own resources.
             window()->update();
     }
 
-When the value of ``t`` changes, we call QQuickWindow::update() rather
-than QQuickItem::update() because the former will force the entire
-window to be redrawn, even when the scene graph has not changed since
-the last frame.
+When the value of ``t`` changes, we call QQuickWindow::update() rather than QQuickItem::update() because the former will force the entire window to be redrawn, even when the scene graph has not changed since the last frame.
 
 .. code:: cpp
 
@@ -206,10 +163,7 @@ the last frame.
             m_program->link();
         }
 
-In the SquircleRenderer's ``paint()`` function we start by initializing
-the shader program. By initializing the shader program here, we make
-sure that the OpenGL context is bound and that we are on the correct
-thread.
+In the SquircleRenderer's ``paint()`` function we start by initializing the shader program. By initializing the shader program here, we make sure that the OpenGL context is bound and that we are on the correct thread.
 
 .. code:: cpp
 
@@ -234,14 +188,9 @@ thread.
         m_program->release();
     }
 
-We use the shader program to draw the squircle. At the end of the
-``paint`` function we release the program and disable the attributes we
-used so that the OpenGL context is in a "clean" state for the scene
-graph to pick it up.
+We use the shader program to draw the squircle. At the end of the ``paint`` function we release the program and disable the attributes we used so that the OpenGL context is in a "clean" state for the scene graph to pick it up.
 
-**Note:** If tracking the changes in the OpenGL context's state is not
-feasible, one can use the function QQuickWindow::resetOpenGLState()
-which will reset all state that the scene graph relies on.
+**Note:** If tracking the changes in the OpenGL context's state is not feasible, one can use the function QQuickWindow::resetOpenGLState() which will reset all state that the scene graph relies on.
 
 .. code:: cpp
 
@@ -256,9 +205,7 @@ which will reset all state that the scene graph relies on.
         return app.exec();
     }
 
-The application's ``main()`` function instantiates a QQuickView and
-launches the ``main.qml`` file. The only thing worth noting is that we
-export the ``Squircle`` class to QML using the qmlRegisterType() macro.
+The application's ``main()`` function instantiates a QQuickView and launches the ``main.qml`` file. The only thing worth noting is that we export the ``Squircle`` class to QML using the qmlRegisterType() macro.
 
 .. code:: qml
 
@@ -276,9 +223,7 @@ export the ``Squircle`` class to QML using the qmlRegisterType() macro.
             }
         }
 
-We import the Squircle QML type with the name we registered in the
-``main()`` function. We then instantiate it and create a running
-:ref:`NumberAnimation <sdk_qtquick_numberanimation>` on its ``t`` property.
+We import the Squircle QML type with the name we registered in the ``main()`` function. We then instantiate it and create a running :ref:`NumberAnimation <sdk_qtquick_numberanimation>` on its ``t`` property.
 
 .. code:: qml
 
@@ -302,8 +247,7 @@ We import the Squircle QML type with the name we registered in the
         }
     }
 
-Then we overlay a short descriptive text, so that it is clearly visible
-that we are in fact rendering OpenGL under our Qt Quick scene.
+Then we overlay a short descriptive text, so that it is clearly visible that we are in fact rendering OpenGL under our Qt Quick scene.
 
 Files:
 
@@ -313,6 +257,4 @@ Files:
 -  scenegraph/openglunderqml/main.cpp
 -  scenegraph/openglunderqml/openglunderqml.pro
 -  scenegraph/openglunderqml/openglunderqml.qrc
-
-.. |image0| image:: /media/sdk/apps/qml/qtquick-scenegraph-openglunderqml-example/images/openglunderqml-example.jpg
 

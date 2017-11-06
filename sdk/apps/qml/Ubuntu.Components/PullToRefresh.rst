@@ -1,50 +1,36 @@
 .. _sdk_ubuntu_components_pulltorefresh:
+
 Ubuntu.Components PullToRefresh
 ===============================
 
 Pull-to-refresh component for Flickables to reload a model upon pull.
 
-+--------------------------------------+--------------------------------------+
-| Import Statement:                    | import Ubuntu.Components 1.3         |
-+--------------------------------------+--------------------------------------+
-| Since:                               | Ubuntu.Components 1.1                |
-+--------------------------------------+--------------------------------------+
-| Inherits:                            | :ref:`StyledItem <sdk_ubuntu_components_s |
-|                                      | tyleditem>`_                         |
-+--------------------------------------+--------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Import Statement:                                                                                                                                      | import Ubuntu.Components 1.3                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Since:                                                                                                                                                 | Ubuntu.Components 1.1                                                                                                                                     |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Inherits:                                                                                                                                              | :ref:`StyledItem <sdk_ubuntu_components_styleditem>`                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Properties
 ----------
 
--  :ref:`content <sdk_ubuntu_components_pulltorefresh_content-prop>`
-   : Component
--  :ref:`offset <sdk_ubuntu_components_pulltorefresh_offset-prop>`
-   : real
--  :ref:`refreshing <sdk_ubuntu_components_pulltorefresh_refreshing-prop>`
-   : bool
--  :ref:`releaseToRefresh <sdk_ubuntu_components_pulltorefresh_releaseToRefresh-prop>`
-   : bool
--  :ref:`target <sdk_ubuntu_components_pulltorefresh_target-prop>`
-   : Flickable
+-  :ref:`content <sdk_ubuntu_components_pulltorefresh_content>` : Component
+-  :ref:`offset <sdk_ubuntu_components_pulltorefresh_offset>` : real
+-  :ref:`refreshing <sdk_ubuntu_components_pulltorefresh_refreshing>` : bool
+-  :ref:`releaseToRefresh <sdk_ubuntu_components_pulltorefresh_releaseToRefresh>` : bool
+-  :ref:`target <sdk_ubuntu_components_pulltorefresh_target>` : Flickable
 
 Signals
 -------
 
--  :ref:`refresh <sdk_ubuntu_components_pulltorefresh_refresh-signal>`\ ()
+-  :ref:`refresh <sdk_ubuntu_components_pulltorefresh_refresh>`\ ()
 
 Detailed Description
 --------------------
 
-The component provides ability to initiate data model refresh by pulling
-the attached Flickable's content. The refresh can be initiated when the
-flickable content is at its top boundary. By dragging the content
-further, reaching the threshold value defined by the style will initiate
-the manual refresh by emitting the
-:ref:`refresh <sdk_ubuntu_components_pulltorefresh#refresh-signal>` signal.
-The progress of the refresh must be notified to the component by
-defining the completion clause to the
-:ref:`refreshing <sdk_ubuntu_components_pulltorefresh#refreshing-prop>`
-property.
+The component provides ability to initiate data model refresh by pulling the attached Flickable's content. The refresh can be initiated when the flickable content is at its top boundary. By dragging the content further, reaching the threshold value defined by the style will initiate the manual refresh by emitting the :ref:`refresh <sdk_ubuntu_components_pulltorefresh_refresh>` signal. The progress of the refresh must be notified to the component by defining the completion clause to the :ref:`refreshing <sdk_ubuntu_components_pulltorefresh_refreshing>` property.
 
 .. code:: qml
 
@@ -80,25 +66,11 @@ property.
         }
     }
 
-**Note:** :ref:`UbuntuListView <sdk_ubuntu_components_ubuntulistview>` has
-a built-in :ref:`PullToRefresh <sdk_ubuntu_components_pulltorefresh>`,
-therefore it is recommended to use
-:ref:`UbuntuListView <sdk_ubuntu_components_ubuntulistview>` instead of
-:ref:`ListView <sdk_qtquick_listview>`.
+**Note:** :ref:`UbuntuListView <sdk_ubuntu_components_ubuntulistview>` has a built-in :ref:`PullToRefresh <sdk_ubuntu_components_pulltorefresh>`, therefore it is recommended to use :ref:`UbuntuListView <sdk_ubuntu_components_ubuntulistview>` instead of :ref:`ListView <sdk_qtquick_listview>`.
 
-The component will also show the progress of the model's update when the
-refresh gets initiated by the model or from other party. Style
-implementations can decide whether to visualize that or not.
+The component will also show the progress of the model's update when the refresh gets initiated by the model or from other party. Style implementations can decide whether to visualize that or not.
 
-As default, the component displays a Label visualizing the two states of
-the component, which is pull to refresh and release to refresh. As
-mentioned, this is driven by the threshold value specified by the style,
-and the state is reported by the
-:ref:`releaseToRefresh <sdk_ubuntu_components_pulltorefresh#releaseToRefresh-prop>`
-property. The
-:ref:`content <sdk_ubuntu_components_pulltorefresh#content-prop>` specifies
-the visuals to be shown by the component. Custom implementations can
-hold any component, which will be anchor filled to the component itself.
+As default, the component displays a Label visualizing the two states of the component, which is pull to refresh and release to refresh. As mentioned, this is driven by the threshold value specified by the style, and the state is reported by the :ref:`releaseToRefresh <sdk_ubuntu_components_pulltorefresh_releaseToRefresh>` property. The :ref:`content <sdk_ubuntu_components_pulltorefresh_content>` specifies the visuals to be shown by the component. Custom implementations can hold any component, which will be anchor filled to the component itself.
 
 .. code:: qml
 
@@ -143,9 +115,7 @@ hold any component, which will be anchor filled to the component itself.
         }
     }
 
-**Note:** When declared as child of Flickable, set parent to the
-flickable explicitly so the component does not land in the ``content``
-of Flickable.
+**Note:** When declared as child of Flickable, set parent to the flickable explicitly so the component does not land in the ``content`` of Flickable.
 
 .. code:: qml
 
@@ -193,84 +163,59 @@ of Flickable.
 Styling
 ~~~~~~~
 
-The component style API is defined by the
-`PullToRefreshStyle </sdk/apps/qml/Ubuntu.Components/Styles.PullToRefreshStyle/>`_ 
-component. Styles may define different ways to initiate refresh upon
-dragging.
+The component style API is defined by the `PullToRefreshStyle </sdk/apps/qml/Ubuntu.Components/Styles.PullToRefreshStyle/>`_  component. Styles may define different ways to initiate refresh upon dragging.
 
 Property Documentation
 ----------------------
 
-.. _sdk_ubuntu_components_pulltorefresh_-prop:
+.. _sdk_ubuntu_components_pulltorefresh_content:
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ content : `Component <sdk_qtqml_component>`                |
-+--------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| content : :ref:`Component <sdk_qtqml_component>`                                                                                                                                                                                                                                                                |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-The property holds the visuals to be displayed when the component is
-revealed upon manual refresh. The default value is a Label showing "Pull
-to refresh..." text when the component is pulled down till the
-activation threshold, and "Release to refresh..." after that.
+The property holds the visuals to be displayed when the component is revealed upon manual refresh. The default value is a Label showing "Pull to refresh..." text when the component is pulled down till the activation threshold, and "Release to refresh..." after that.
 
-| 
+.. _sdk_ubuntu_components_pulltorefresh_offset:
 
-.. _sdk_ubuntu_components_pulltorefresh_[read-only] offset-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| [read-only] offset : real                                                                                                                                                                                                                                                                                    |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ [read-only] offset : real                                       |
-+--------------------------------------------------------------------------+
+The property holds the offset the component is pulled from the :ref:`target <sdk_ubuntu_components_pulltorefresh_target>` Flickable's *topMargin*. The property can be used to provide animations in custom contents.
 
-The property holds the offset the component is pulled from the
-:ref:`target <sdk_ubuntu_components_pulltorefresh#target-prop>` Flickable's
-*topMargin*. The property can be used to provide animations in custom
-contents.
+.. _sdk_ubuntu_components_pulltorefresh_refreshing:
 
-| 
-
-.. _sdk_ubuntu_components_pulltorefresh_refreshing-prop:
-
-+--------------------------------------------------------------------------+
-|        \ refreshing : bool                                               |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| refreshing : bool                                                                                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The property notifies the component about the ongoing refresh operation.
 
-| 
+.. _sdk_ubuntu_components_pulltorefresh_releaseToRefresh:
 
-.. _sdk_ubuntu_components_pulltorefresh_[read-only] releaseToRefresh-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| [read-only] releaseToRefresh : bool                                                                                                                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ [read-only] releaseToRefresh : bool                             |
-+--------------------------------------------------------------------------+
+The property specifies when the component is ready to trigger the refresh() signal. The logic is defined by the style and the value is transferred from the style's releaseToRefresh property. The property can be used to define custom visuals for :ref:`content <sdk_ubuntu_components_pulltorefresh_content>`.
 
-The property specifies when the component is ready to trigger the
-refresh() signal. The logic is defined by the style and the value is
-transferred from the style's releaseToRefresh property. The property can
-be used to define custom visuals for
-:ref:`content <sdk_ubuntu_components_pulltorefresh#content-prop>`.
+.. _sdk_ubuntu_components_pulltorefresh_target:
 
-| 
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| target : :ref:`Flickable <sdk_qtquick_flickable>`                                                                                                                                                                                                                                                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_ubuntu_components_pulltorefresh_-prop:
-
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ target : `Flickable <sdk_qtquick_flickable>`               |
-+--------------------------------------------------------------------------+
-
-The Flickable or derivate the component is attached to. This can only be
-the parent or a sibling of the component. Defaults to the parent.
-
-| 
+The Flickable or derivate the component is attached to. This can only be the parent or a sibling of the component. Defaults to the parent.
 
 Signal Documentation
 --------------------
 
-.. _sdk_ubuntu_components_pulltorefresh_refresh()-prop:
+.. _sdk_ubuntu_components_pulltorefresh_refresh:
 
-+--------------------------------------------------------------------------+
-|        \ refresh()                                                       |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| refresh()                                                                                                                                                                                                                                                                                                    |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Signal emitted when the model refresh is initiated by the component.
 
-| 

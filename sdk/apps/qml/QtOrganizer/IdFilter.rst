@@ -1,9 +1,9 @@
 .. _sdk_qtorganizer_idfilter:
+
 QtOrganizer IdFilter
 ====================
 
-The IdFilter element provides a filter based around a list of organizer
-item IDs.
+The IdFilter element provides a filter based around a list of organizer item IDs.
 
 +---------------------+--------------------------+
 | Import Statement:   | import QtOrganizer 5.0   |
@@ -12,12 +12,12 @@ item IDs.
 Properties
 ----------
 
--  :ref:`ids <sdk_qtorganizer_idfilter_ids-prop>` : list<string>
+-  :ref:`ids <sdk_qtorganizer_idfilter_ids>` : list<string>
 
 Signals
 -------
 
--  :ref:`onFilterChanged <sdk_qtorganizer_idfilter_onFilterChanged-signal>`\ ()
+-  :ref:`onFilterChanged <sdk_qtorganizer_idfilter_onFilterChanged>`\ ()
 
 Detailed Description
 --------------------
@@ -27,27 +27,22 @@ Detailed Description
 Property Documentation
 ----------------------
 
-.. _sdk_qtorganizer_idfilter_ids-prop:
+.. _sdk_qtorganizer_idfilter_ids:
 
-+--------------------------------------------------------------------------+
-|        \ ids : list<string>                                              |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ids : list<string>                                                                                                                                                                                                                                                                                           |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-This property holds the list of IDs of organizer items which match this
-filter.
-
-| 
+This property holds the list of IDs of organizer items which match this filter.
 
 Signal Documentation
 --------------------
 
-.. _sdk_qtorganizer_idfilter_onFilterChanged()-prop:
+.. _sdk_qtorganizer_idfilter_onFilterChanged:
 
-+--------------------------------------------------------------------------+
-|        \ onFilterChanged()                                               |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| onFilterChanged()                                                                                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-**See also**
-:ref:`QtOrganizer5::Filter::onFilterChanged <sdk_qtorganizer_filter#onFilterChanged-signal>`.
+**See also** :ref:`QtOrganizer5::Filter::onFilterChanged <sdk_qtorganizer_filter_onFilterChanged>`.
 
-| 

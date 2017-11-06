@@ -1,4 +1,5 @@
 .. _sdk_ubuntu_components_units:
+
 Ubuntu.Components Units
 =======================
 
@@ -11,25 +12,20 @@ Units of measurement for sizes, spacing, margin, etc.
 Properties
 ----------
 
--  :ref:`gridUnit <sdk_ubuntu_components_units_gridUnit-prop>` :
-   real
+-  :ref:`gridUnit <sdk_ubuntu_components_units_gridUnit>` : real
 
 Methods
 -------
 
--  real :ref:`dp <sdk_ubuntu_components_units_dp-method>`\ (real
-   *value*)
--  real :ref:`gu <sdk_ubuntu_components_units_gu-method>`\ (real
-   *value*)
+-  real :ref:`dp <sdk_ubuntu_components_units_dp>`\ (real *value*)
+-  real :ref:`gu <sdk_ubuntu_components_units_gu>`\ (real *value*)
 
 Detailed Description
 --------------------
 
-Units provides facilities for measuring UI elements in a variety of
-units other than just pixels.
+Units provides facilities for measuring UI elements in a variety of units other than just pixels.
 
-A global instance of Units is exposed as the **units** context property.
-Example usage:
+A global instance of Units is exposed as the **units** context property. Example usage:
 
 .. code:: qml
 
@@ -40,42 +36,35 @@ Example usage:
         height: units.gu(5)
     }
 
-**See also** `Resolution
-Independence </sdk/apps/qml/UbuntuUserInterfaceToolkit/resolution-independence/>`_ .
+**See also** `Resolution Independence </sdk/apps/qml/UbuntuUserInterfaceToolkit/resolution-independence/>`_ .
 
 Property Documentation
 ----------------------
 
-.. _sdk_ubuntu_components_units_gridUnit-prop:
+.. _sdk_ubuntu_components_units_gridUnit:
 
-+--------------------------------------------------------------------------+
-|        \ gridUnit : real                                                 |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| gridUnit : real                                                                                                                                                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The number of pixels 1 grid unit corresponds to.
-
-| 
 
 Method Documentation
 --------------------
 
-.. _sdk_ubuntu_components_units_real dp-method:
+.. _sdk_ubuntu_components_units_dp:
 
-+--------------------------------------------------------------------------+
-|        \ real dp(real *value*)                                           |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| real dp(real *value*)                                                                                                                                                                                                                                                                                        |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Returns the number of pixels *value* density independent pixels
-correspond to.
+Returns the number of pixels *value* density independent pixels correspond to.
 
-| 
+.. _sdk_ubuntu_components_units_gu:
 
-.. _sdk_ubuntu_components_units_real gu-method:
-
-+--------------------------------------------------------------------------+
-|        \ real gu(real *value*)                                           |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| real gu(real *value*)                                                                                                                                                                                                                                                                                        |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Returns the number of pixels *value* grid units correspond to.
 
-| 

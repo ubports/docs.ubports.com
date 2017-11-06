@@ -1,4 +1,5 @@
 .. _sdk_qtquick_xanimator:
+
 QtQuick XAnimator
 =================
 
@@ -13,16 +14,11 @@ The XAnimator type animates the x position of an Item.
 Detailed Description
 --------------------
 
-:ref:`Animator <sdk_qtquick_animator>` types are different from normal
-Animation types. When using an Animator, the animation can be run in the
-render thread and the property value will jump to the end when the
-animation is complete.
+:ref:`Animator <sdk_qtquick_animator>` types are different from normal Animation types. When using an Animator, the animation can be run in the render thread and the property value will jump to the end when the animation is complete.
 
-The value of :ref:`Item::x <sdk_qtquick_item#x-prop>` is updated after the
-animation has finished.
+The value of :ref:`Item::x <sdk_qtquick_item_x>` is updated after the animation has finished.
 
-The following snippet shows how to use a
-:ref:`XAnimator <sdk_qtquick_xanimator>` together with a Rectangle item.
+The following snippet shows how to use a :ref:`XAnimator <sdk_qtquick_xanimator>` together with a Rectangle item.
 
 .. code:: qml
 
@@ -40,8 +36,7 @@ The following snippet shows how to use a
         }
     }
 
-It is also possible to use the ``on`` keyword to tie the
-:ref:`XAnimator <sdk_qtquick_xanimator>` directly to an Item instance.
+It is also possible to use the ``on`` keyword to tie the :ref:`XAnimator <sdk_qtquick_xanimator>` directly to an Item instance.
 
 .. code:: qml
 

@@ -1,4 +1,5 @@
 .. _sdk_qtcontacts_synctarget:
+
 QtContacts SyncTarget
 =====================
 
@@ -11,16 +12,14 @@ The SyncTarget element provides a sync target for a contact.
 Properties
 ----------
 
--  :ref:`syncTarget <sdk_qtcontacts_synctarget_syncTarget-prop>` :
-   string
+-  :ref:`syncTarget <sdk_qtcontacts_synctarget_syncTarget>` : string
 
 Detailed Description
 --------------------
 
-:ref:`SyncTarget <sdk_qtcontacts_synctarget>` element contains the
-following field types:
+:ref:`SyncTarget <sdk_qtcontacts_synctarget>` element contains the following field types:
 
--  :ref:`SyncTarget <sdk_qtcontacts_synctarget>`.\ `SyncTarget <sdk_qtcontacts_synctarget>`
+-  :ref:`SyncTarget <sdk_qtcontacts_synctarget>`.\ :ref:`SyncTarget <sdk_qtcontacts_synctarget>`
 
 This element is part of the **QtContacts** module.
 
@@ -29,12 +28,11 @@ This element is part of the **QtContacts** module.
 Property Documentation
 ----------------------
 
-.. _sdk_qtcontacts_synctarget_syncTarget-prop:
+.. _sdk_qtcontacts_synctarget_syncTarget:
 
-+--------------------------------------------------------------------------+
-|        \ syncTarget : string                                             |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| syncTarget : string                                                                                                                                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the sync target value.
 
-| 

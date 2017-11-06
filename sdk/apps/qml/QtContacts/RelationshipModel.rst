@@ -1,9 +1,9 @@
 .. _sdk_qtcontacts_relationshipmodel:
+
 QtContacts RelationshipModel
 ============================
 
-The RelationshipModel provides a model of contact relationships from the
-contacts store.
+The RelationshipModel provides a model of contact relationships from the contacts store.
 
 +---------------------+-------------------------+
 | Import Statement:   | import QtContacts 5.0   |
@@ -12,168 +12,118 @@ contacts store.
 Properties
 ----------
 
--  :ref:`autoUpdate <sdk_qtcontacts_relationshipmodel_autoUpdate-prop>`
-   : bool
--  :ref:`error <sdk_qtcontacts_relationshipmodel_error-prop>` :
-   string
--  :ref:`manager <sdk_qtcontacts_relationshipmodel_manager-prop>` :
-   string
--  :ref:`participantId <sdk_qtcontacts_relationshipmodel_participantId-prop>`
-   : int
--  :ref:`relationshipType <sdk_qtcontacts_relationshipmodel_relationshipType-prop>`
-   : variant
--  :ref:`relationships <sdk_qtcontacts_relationshipmodel_relationships-prop>`
-   : list<Relationship>
--  :ref:`role <sdk_qtcontacts_relationshipmodel_role-prop>` :
-   enumeration
+-  :ref:`autoUpdate <sdk_qtcontacts_relationshipmodel_autoUpdate>` : bool
+-  :ref:`error <sdk_qtcontacts_relationshipmodel_error>` : string
+-  :ref:`manager <sdk_qtcontacts_relationshipmodel_manager>` : string
+-  :ref:`participantId <sdk_qtcontacts_relationshipmodel_participantId>` : int
+-  :ref:`relationshipType <sdk_qtcontacts_relationshipmodel_relationshipType>` : variant
+-  :ref:`relationships <sdk_qtcontacts_relationshipmodel_relationships>` : list<Relationship>
+-  :ref:`role <sdk_qtcontacts_relationshipmodel_role>` : enumeration
 
 Methods
 -------
 
--  :ref:`addRelationship <sdk_qtcontacts_relationshipmodel_addRelationship-method>`\ (relationship)
--  :ref:`removeRelationship <sdk_qtcontacts_relationshipmodel_removeRelationship-method>`\ (relationship)
+-  :ref:`addRelationship <sdk_qtcontacts_relationshipmodel_addRelationship>`\ (relationship)
+-  :ref:`removeRelationship <sdk_qtcontacts_relationshipmodel_removeRelationship>`\ (relationship)
 
 Detailed Description
 --------------------
 
 This element is part of the **QtContacts** module.
 
-The contents of the model can be specified with
-:ref:`participantId <sdk_qtcontacts_relationshipmodel#participantId-prop>`,
-:ref:`role <sdk_qtcontacts_relationshipmodel#role-prop>` and
-:ref:`relationshipType <sdk_qtcontacts_relationshipmodel#relationshipType-prop>`
-properties. Whether the model is automatically updated when the store or
-filter changes, can be controlled with
-:ref:`RelationshipModel::autoUpdate <sdk_qtcontacts_relationshipmodel#autoUpdate-prop>`
-property.
+The contents of the model can be specified with :ref:`participantId <sdk_qtcontacts_relationshipmodel_participantId>`, :ref:`role <sdk_qtcontacts_relationshipmodel_role>` and :ref:`relationshipType <sdk_qtcontacts_relationshipmodel_relationshipType>` properties. Whether the model is automatically updated when the store or filter changes, can be controlled with :ref:`RelationshipModel::autoUpdate <sdk_qtcontacts_relationshipmodel_autoUpdate>` property.
 
-There are two ways of accessing the relationship data: through model by
-using views and delegates, or alternatively via
-`relationships </sdk/apps/qml/QtContacts/qtcontacts-overview/#relationships>`_ 
-list property.
+There are two ways of accessing the relationship data: through model by using views and delegates, or alternatively via `relationships </sdk/apps/qml/QtContacts/qtcontacts-overview/#relationships>`_  list property.
 
-At the moment only data role provided by the model is ``relationship``
-(:ref:`Relationship <sdk_qtcontacts_relationship>`). Through that one can
-access any data provided by the Relationship element.
+At the moment only data role provided by the model is ``relationship`` (:ref:`Relationship <sdk_qtcontacts_relationship>`). Through that one can access any data provided by the Relationship element.
 
 **See also** Relationship and QContactRelationship.
 
 Property Documentation
 ----------------------
 
-.. _sdk_qtcontacts_relationshipmodel_autoUpdate-prop:
+.. _sdk_qtcontacts_relationshipmodel_autoUpdate:
 
-+--------------------------------------------------------------------------+
-|        \ autoUpdate : bool                                               |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| autoUpdate : bool                                                                                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-This property indicates whether or not the relationship model should be
-updated automatically, default value is true.
+This property indicates whether or not the relationship model should be updated automatically, default value is true.
 
-| 
+.. _sdk_qtcontacts_relationshipmodel_error:
 
-.. _sdk_qtcontacts_relationshipmodel_error-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| error : string                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ error : string                                                  |
-+--------------------------------------------------------------------------+
-
-This property holds the latest error code returned by the contact
-manager.
+This property holds the latest error code returned by the contact manager.
 
 This property is read only.
 
-| 
+.. _sdk_qtcontacts_relationshipmodel_manager:
 
-.. _sdk_qtcontacts_relationshipmodel_manager-prop:
-
-+--------------------------------------------------------------------------+
-|        \ manager : string                                                |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| manager : string                                                                                                                                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the manager uri of the contact backend engine.
 
-| 
+.. _sdk_qtcontacts_relationshipmodel_participantId:
 
-.. _sdk_qtcontacts_relationshipmodel_participantId-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| participantId : int                                                                                                                                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ participantId : int                                             |
-+--------------------------------------------------------------------------+
+This property holds the participant which the list of relationships returned by :ref:`RelationshipModel <sdk_qtcontacts_relationshipmodel>` should contain.
 
-This property holds the participant which the list of relationships
-returned by :ref:`RelationshipModel <sdk_qtcontacts_relationshipmodel>`
-should contain.
+**See also** :ref:`RelationshipFilter::relatedContactId <sdk_qtcontacts_relationshipfilter_relatedContactId>` and :ref:`RelationshipModel::role <sdk_qtcontacts_relationshipmodel_role>`.
 
-**See also**
-:ref:`RelationshipFilter::relatedContactId <sdk_qtcontacts_relationshipfilter#relatedContactId-prop>`
-and
-:ref:`RelationshipModel::role <sdk_qtcontacts_relationshipmodel#role-prop>`.
+.. _sdk_qtcontacts_relationshipmodel_relationshipType:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| relationshipType : variant                                                                                                                                                                                                                                                                                   |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_qtcontacts_relationshipmodel_relationshipType-prop:
+This property holds the relationship type which the list of relationships returned by :ref:`RelationshipModel <sdk_qtcontacts_relationshipmodel>` should contain.
 
-+--------------------------------------------------------------------------+
-|        \ relationshipType : variant                                      |
-+--------------------------------------------------------------------------+
+**See also** :ref:`Relationship::type <sdk_qtcontacts_relationship_type>`.
 
-This property holds the relationship type which the list of
-relationships returned by
-:ref:`RelationshipModel <sdk_qtcontacts_relationshipmodel>` should contain.
+.. _sdk_qtcontacts_relationshipmodel_relationships:
 
-**See also**
-:ref:`Relationship::type <sdk_qtcontacts_relationship#type-prop>`.
-
-| 
-
-.. _sdk_qtcontacts_relationshipmodel_relationships-prop:
-
-+--------------------------------------------------------------------------+
-|        \ relationships :                                                 |
-| list<:ref:`Relationship <sdk_qtcontacts_relationship>`>                     |
-+--------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| relationships : list<:ref:`Relationship <sdk_qtcontacts_relationship>`>                                                                                                                                                                                                                                         |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds a list of relationships.
 
 **See also** :ref:`Relationship <sdk_qtcontacts_relationship>`.
 
-| 
+.. _sdk_qtcontacts_relationshipmodel_role:
 
-.. _sdk_qtcontacts_relationshipmodel_role-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| role : enumeration                                                                                                                                                                                                                                                                                           |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ role : enumeration                                              |
-+--------------------------------------------------------------------------+
+This property holds the relationship role which the list of relationships returned by :ref:`RelationshipModel <sdk_qtcontacts_relationshipmodel>` should contain.
 
-This property holds the relationship role which the list of
-relationships returned by
-:ref:`RelationshipModel <sdk_qtcontacts_relationshipmodel>` should contain.
-
-**See also**
-:ref:`RelationshipFilter::relatedContactRole <sdk_qtcontacts_relationshipfilter#relatedContactRole-prop>`.
-
-| 
+**See also** :ref:`RelationshipFilter::relatedContactRole <sdk_qtcontacts_relationshipfilter_relatedContactRole>`.
 
 Method Documentation
 --------------------
 
-.. _sdk_qtcontacts_relationshipmodel_addRelationship-method:
+.. _sdk_qtcontacts_relationshipmodel_addRelationship:
 
-+--------------------------------------------------------------------------+
-|        \ addRelationship(relationship)                                   |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| addRelationship(relationship)                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Addes the given *relationship* to the backend store.
 
-| 
+.. _sdk_qtcontacts_relationshipmodel_removeRelationship:
 
-.. _sdk_qtcontacts_relationshipmodel_removeRelationship-method:
-
-+--------------------------------------------------------------------------+
-|        \ removeRelationship(relationship)                                |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| removeRelationship(relationship)                                                                                                                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Removes the given *relationship* from the backend store.
 
-| 

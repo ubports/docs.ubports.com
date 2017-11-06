@@ -1,9 +1,9 @@
 .. _sdk_qtlocation_categorymodel:
+
 QtLocation CategoryModel
 ========================
 
-The CategoryModel type provides a model of the categories supported by a
-Plugin.
+The CategoryModel type provides a model of the categories supported by a Plugin.
 
 +---------------------+-------------------------+
 | Import Statement:   | import QtLocation 5.3   |
@@ -14,34 +14,24 @@ Plugin.
 Properties
 ----------
 
--  :ref:`hierarchical <sdk_qtlocation_categorymodel_hierarchical-prop>`
-   : bool
--  :ref:`plugin <sdk_qtlocation_categorymodel_plugin-prop>` :
-   Plugin
--  :ref:`status <sdk_qtlocation_categorymodel_status-prop>` :
-   enumeration
+-  :ref:`hierarchical <sdk_qtlocation_categorymodel_hierarchical>` : bool
+-  :ref:`plugin <sdk_qtlocation_categorymodel_plugin>` : Plugin
+-  :ref:`status <sdk_qtlocation_categorymodel_status>` : enumeration
 
 Signals
 -------
 
--  :ref:`dataChanged <sdk_qtlocation_categorymodel_dataChanged-signal>`\ ()
+-  :ref:`dataChanged <sdk_qtlocation_categorymodel_dataChanged>`\ ()
 
 Methods
 -------
 
--  string
-   **:ref:`errorString <sdk_qtlocation_categorymodel#errorString-method>`**\ ()
+-  string :ref:`errorString <sdk_qtlocation_categorymodel_errorString>`\ ()
 
 Detailed Description
 --------------------
 
-The :ref:`CategoryModel <sdk_qtlocation_categorymodel>` type provides a
-model of the categories that are available from the current
-`Plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_ . The
-model supports both a flat list of categories and a hierarchical tree
-representing category groupings. This can be controlled by the
-:ref:`hierarchical <sdk_qtlocation_categorymodel#hierarchical-prop>`
-property.
+The :ref:`CategoryModel <sdk_qtlocation_categorymodel>` type provides a model of the categories that are available from the current `Plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_ . The model supports both a flat list of categories and a hierarchical tree representing category groupings. This can be controlled by the :ref:`hierarchical <sdk_qtlocation_categorymodel_hierarchical>` property.
 
 The model supports the following roles:
 
@@ -68,95 +58,70 @@ The following example displays a flat list of all available categories:
         delegate: Text { text: category.name }
     }
 
-To access the hierarchical category model it is necessary to use a
-DelegateModel to access the child items.
+To access the hierarchical category model it is necessary to use a DelegateModel to access the child items.
 
 Property Documentation
 ----------------------
 
-.. _sdk_qtlocation_categorymodel_hierarchical-prop:
+.. _sdk_qtlocation_categorymodel_hierarchical:
 
-+--------------------------------------------------------------------------+
-|        \ hierarchical : bool                                             |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| hierarchical : bool                                                                                                                                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-This property holds whether the model provides a hierarchical tree of
-categories or a flat list. The default is true.
+This property holds whether the model provides a hierarchical tree of categories or a flat list. The default is true.
 
-| 
+.. _sdk_qtlocation_categorymodel_plugin:
 
-.. _sdk_qtlocation_categorymodel_-prop:
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| plugin : :ref:`Plugin <sdk_qtlocation_plugin>`                                                                                                                                                                                                                                                                  |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ plugin : `Plugin <sdk_qtlocation_plugin>`                  |
-+--------------------------------------------------------------------------+
+This property holds the provider `Plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_  used by this model.
 
-This property holds the provider
-`Plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_  used
-by this model.
+.. _sdk_qtlocation_categorymodel_status:
 
-| 
-
-.. _sdk_qtlocation_categorymodel_status-prop:
-
-+--------------------------------------------------------------------------+
-|        \ status : enumeration                                            |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| status : enumeration                                                                                                                                                                                                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the status of the model. It can be one of:
 
-.. _sdk_qtlocation_categorymodel_-prop:
-
-+------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
-.. _sdk_qtlocation_categorymodel_-prop:
++------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+
 | :ref:`CategoryModel <sdk_qtlocation_categorymodel>`.Null      | No category fetch query has been executed. The model is empty.                                         |
-+------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
-.. _sdk_qtlocation_categorymodel_-prop:
++------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+
 | :ref:`CategoryModel <sdk_qtlocation_categorymodel>`.Ready     | No error occurred during the last operation, further operations may be performed on the model.         |
-+------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
-.. _sdk_qtlocation_categorymodel_-prop:
++------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+
 | :ref:`CategoryModel <sdk_qtlocation_categorymodel>`.Loading   | The model is being updated, no other operations may be performed until complete.                       |
-+------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+
 | :ref:`CategoryModel <sdk_qtlocation_categorymodel>`.Error     | An error occurred during the last operation, further operations can still be performed on the model.   |
-+------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
-
-| 
++------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+
 
 Signal Documentation
 --------------------
 
-.. _sdk_qtlocation_categorymodel_dataChanged()-prop:
+.. _sdk_qtlocation_categorymodel_dataChanged:
 
-+--------------------------------------------------------------------------+
-|        \ dataChanged()                                                   |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| dataChanged()                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-This signal is emitted when significant changes have been made to the
-underlying datastore.
+This signal is emitted when significant changes have been made to the underlying datastore.
 
-Applications should act on this signal at their own discretion. The data
-provided by the model could be out of date and so the model should be
-reupdated sometime, however an immediate reupdate may be disconcerting
-to users if the categories change without any action on their part.
+Applications should act on this signal at their own discretion. The data provided by the model could be out of date and so the model should be reupdated sometime, however an immediate reupdate may be disconcerting to users if the categories change without any action on their part.
 
 The corresponding handler is ``onDataChanged``.
-
-| 
 
 Method Documentation
 --------------------
 
-.. _sdk_qtlocation_categorymodel_string errorString-method:
+.. _sdk_qtlocation_categorymodel_errorString:
 
-+--------------------------------------------------------------------------+
-|        \ string errorString() const                                      |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| string errorString() const                                                                                                                                                                                                                                                                                   |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-This read-only property holds the textual presentation of latest
-category model error. If no error has occurred, an empty string is
-returned.
+This read-only property holds the textual presentation of latest category model error. If no error has occurred, an empty string is returned.
 
-An empty string may also be returned if an error occurred which has no
-associated textual representation.
+An empty string may also be returned if an error occurred which has no associated textual representation.
 
-| 

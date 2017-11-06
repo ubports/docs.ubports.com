@@ -1,18 +1,13 @@
 .. _sdk_qtquick_qt_quick_particles_examples_-_image_particles:
+
 QtQuick Qt Quick Particles Examples - Image Particles
 =====================================================
 
 
 
-|image0|
+This is a collection of small QML examples relating to using Affectors in the particle system. Each example is a small QML file emphasizing a particular type or feature.
 
-This is a collection of small QML examples relating to using Affectors
-in the particle system. Each example is a small QML file emphasizing a
-particular type or feature.
-
-All at once shows off several of the features of
-`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_  at
-the same time.
+All at once shows off several of the features of `ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_  at the same time.
 
 .. code:: qml
 
@@ -28,9 +23,7 @@ the same time.
     rotationVelocityVariation: 360
     colorTable: "../../images/colortable.png"
 
-Colored shows a simple
-`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_  with
-some color variation.
+Colored shows a simple `ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_  with some color variation.
 
 .. code:: qml
 
@@ -42,8 +35,7 @@ some color variation.
         colorVariation: 1.0
     }
 
-Color Table sets the color over life on the particles to provide a fixed
-rainbow effect.
+Color Table sets the color over life on the particles to provide a fixed rainbow effect.
 
 .. code:: qml
 
@@ -71,13 +63,9 @@ Deformation spins and squishes a starfish particle.
         yVector: PointDirection { y: 0.5; yVariation: 0.25; xVariation: 0.25; }
     }
 
-Rotation demonstrates the autoRotate property, so that particles rotate
-in the direction that they travel.
+Rotation demonstrates the autoRotate property, so that particles rotate in the direction that they travel.
 
-Sharing demonstrates what happens when multiple ImageParticles try to
-render the same particle. The following
-`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_ 
-renders the particles inside the :ref:`ListView <sdk_qtquick_listview>`:
+Sharing demonstrates what happens when multiple ImageParticles try to render the same particle. The following `ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_  renders the particles inside the :ref:`ListView <sdk_qtquick_listview>`:
 
 .. code:: qml
 
@@ -91,11 +79,7 @@ renders the particles inside the :ref:`ListView <sdk_qtquick_listview>`:
         z: -1
     }
 
-The following
-`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_  is
-placed inside the list highlight, and renders the particles above the
-other
-`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_ .
+The following `ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_  is placed inside the list highlight, and renders the particles above the other `ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_ .
 
 .. code:: qml
 
@@ -108,18 +92,9 @@ other
         alpha: 1.0
     }
 
-Note that because it sets the color and alpha in this
-`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_ , it
-renders the particles in a different color. Since it doesn't specify
-anything about the rotation, it shares the rotation with the other
-`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_  so
-that the flowers are rotated the same way in both. Note that you can
-undo rotation in another
-`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_ , you
-just need to explicitly set rotationVariation to 0.
+Note that because it sets the color and alpha in this `ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_ , it renders the particles in a different color. Since it doesn't specify anything about the rotation, it shares the rotation with the other `ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_  so that the flowers are rotated the same way in both. Note that you can undo rotation in another `ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_ , you just need to explicitly set rotationVariation to 0.
 
-Sprites demonstrates using an image particle to render animated sprites
-instead of static images for each particle.
+Sprites demonstrates using an image particle to render animated sprites instead of static images for each particle.
 
 Files:
 
@@ -135,6 +110,4 @@ Files:
 -  particles/imageparticle/imageparticle.pro
 -  particles/imageparticle/imageparticle.qmlproject
 -  particles/imageparticle/imageparticle.qrc
-
-.. |image0| image:: /media/sdk/apps/qml/qtquick-particles-imageparticle-example/images/qml-imageparticle-example.png
 

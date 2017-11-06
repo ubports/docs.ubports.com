@@ -1,4 +1,5 @@
 .. _sdk_ubuntu_web_webview:
+
 Ubuntu.Web WebView
 ==================
 
@@ -11,54 +12,38 @@ A webview that can be used to render web content in an application.
 Properties
 ----------
 
--  :ref:`alertDialog <sdk_ubuntu_web_webview_alertDialog-prop>` :
-   component
--  :ref:`beforeUnloadDialog <sdk_ubuntu_web_webview_beforeUnloadDialog-prop>`
-   : component
--  :ref:`canGoBack <sdk_ubuntu_web_webview_canGoBack-prop>` : bool
--  :ref:`canGoForward <sdk_ubuntu_web_webview_canGoForward-prop>` :
-   bool
--  :ref:`confirmDialog <sdk_ubuntu_web_webview_confirmDialog-prop>`
-   : component
--  :ref:`context <sdk_ubuntu_web_webview_context-prop>` :
-   WebContext
--  :ref:`contextualActions <sdk_ubuntu_web_webview_contextualActions-prop>`
-   : ActionList
--  :ref:`contextualData <sdk_ubuntu_web_webview_contextualData-prop>`
-   : QtObject
--  :ref:`filePicker <sdk_ubuntu_web_webview_filePicker-prop>` :
-   component
--  :ref:`fullscreen <sdk_ubuntu_web_webview_fullscreen-prop>` :
-   bool
--  :ref:`icon <sdk_ubuntu_web_webview_icon-prop>` : url
--  :ref:`incognito <sdk_ubuntu_web_webview_incognito-prop>` : bool
--  :ref:`loadProgress <sdk_ubuntu_web_webview_loadProgress-prop>` :
-   int
--  :ref:`loading <sdk_ubuntu_web_webview_loading-prop>` : bool
--  :ref:`navigationHistory <sdk_ubuntu_web_webview_navigationHistory-prop>`
-   : list
--  :ref:`promptDialog <sdk_ubuntu_web_webview_promptDialog-prop>` :
-   component
--  :ref:`title <sdk_ubuntu_web_webview_title-prop>` : string
--  :ref:`url <sdk_ubuntu_web_webview_url-prop>` : url
+-  :ref:`alertDialog <sdk_ubuntu_web_webview_alertDialog>` : component
+-  :ref:`beforeUnloadDialog <sdk_ubuntu_web_webview_beforeUnloadDialog>` : component
+-  :ref:`canGoBack <sdk_ubuntu_web_webview_canGoBack>` : bool
+-  :ref:`canGoForward <sdk_ubuntu_web_webview_canGoForward>` : bool
+-  :ref:`confirmDialog <sdk_ubuntu_web_webview_confirmDialog>` : component
+-  :ref:`context <sdk_ubuntu_web_webview_context>` : WebContext
+-  :ref:`contextualActions <sdk_ubuntu_web_webview_contextualActions>` : ActionList
+-  :ref:`contextualData <sdk_ubuntu_web_webview_contextualData>` : QtObject
+-  :ref:`filePicker <sdk_ubuntu_web_webview_filePicker>` : component
+-  :ref:`fullscreen <sdk_ubuntu_web_webview_fullscreen>` : bool
+-  :ref:`icon <sdk_ubuntu_web_webview_icon>` : url
+-  :ref:`incognito <sdk_ubuntu_web_webview_incognito>` : bool
+-  :ref:`loadProgress <sdk_ubuntu_web_webview_loadProgress>` : int
+-  :ref:`loading <sdk_ubuntu_web_webview_loading>` : bool
+-  :ref:`navigationHistory <sdk_ubuntu_web_webview_navigationHistory>` : list
+-  :ref:`promptDialog <sdk_ubuntu_web_webview_promptDialog>` : component
+-  :ref:`title <sdk_ubuntu_web_webview_title>` : string
+-  :ref:`url <sdk_ubuntu_web_webview_url>` : url
 
 Methods
 -------
 
--  void :ref:`goBack <sdk_ubuntu_web_webview_goBack-method>`\ ()
--  void
-   **:ref:`goForward <sdk_ubuntu_web_webview#goForward-method>`**\ ()
--  void
-   **:ref:`loadHtml <sdk_ubuntu_web_webview#loadHtml-method>`**\ (string
-   *html*, url *baseUrl*)
--  void :ref:`reload <sdk_ubuntu_web_webview_reload-method>`\ ()
--  void :ref:`stop <sdk_ubuntu_web_webview_stop-method>`\ ()
+-  void :ref:`goBack <sdk_ubuntu_web_webview_goBack>`\ ()
+-  void :ref:`goForward <sdk_ubuntu_web_webview_goForward>`\ ()
+-  void :ref:`loadHtml <sdk_ubuntu_web_webview_loadHtml>`\ (string *html*, url *baseUrl*)
+-  void :ref:`reload <sdk_ubuntu_web_webview_reload>`\ ()
+-  void :ref:`stop <sdk_ubuntu_web_webview_stop>`\ ()
 
 Detailed Description
 --------------------
 
-Here is a very simple example of how to use a
-:ref:`WebView <sdk_ubuntu_web_webview>` to render a web page:
+Here is a very simple example of how to use a :ref:`WebView <sdk_ubuntu_web_webview>` to render a web page:
 
 .. code:: qml
 
@@ -68,112 +53,78 @@ Here is a very simple example of how to use a
         url: "http://ubuntu.com"
     }
 
-The ``WebView`` component defaults to using a `shared
-:ref:``WebContext`` <sdk_ubuntu_web_sharedwebcontext>` that is shared
-across all ``WebView`` instances in a given application.
+The ``WebView`` component defaults to using a `shared ``WebContext`:ref:` <sdk_ubuntu_web_sharedwebcontext>` that is shared across all ``WebView`` instances in a given application.
 
 **See also** :ref:`SharedWebContext <sdk_ubuntu_web_sharedwebcontext>`.
 
 Property Documentation
 ----------------------
 
-.. _sdk_ubuntu_web_webview_alertDialog-prop:
+.. _sdk_ubuntu_web_webview_alertDialog:
 
-+--------------------------------------------------------------------------+
-|        \ alertDialog : component                                         |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| alertDialog : component                                                                                                                                                                                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-The QML component that will be instantiated to display a JavaScript
-alert dialog.
+The QML component that will be instantiated to display a JavaScript alert dialog.
 
-**See also**
-:ref:`confirmDialog <sdk_ubuntu_web_webview#confirmDialog-prop>`,
-:ref:`promptDialog <sdk_ubuntu_web_webview#promptDialog-prop>`, and
-:ref:`beforeUnloadDialog <sdk_ubuntu_web_webview#beforeUnloadDialog-prop>`.
+**See also** :ref:`confirmDialog <sdk_ubuntu_web_webview_confirmDialog>`, :ref:`promptDialog <sdk_ubuntu_web_webview_promptDialog>`, and :ref:`beforeUnloadDialog <sdk_ubuntu_web_webview_beforeUnloadDialog>`.
 
-| 
+.. _sdk_ubuntu_web_webview_beforeUnloadDialog:
 
-.. _sdk_ubuntu_web_webview_beforeUnloadDialog-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| beforeUnloadDialog : component                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ beforeUnloadDialog : component                                  |
-+--------------------------------------------------------------------------+
+The QML component that will be instantiated to display a JavaScript confirmation when the user initiates a navigation away from the current page, if the page has defined an ``onBeforeUnload`` handler.
 
-The QML component that will be instantiated to display a JavaScript
-confirmation when the user initiates a navigation away from the current
-page, if the page has defined an ``onBeforeUnload`` handler.
+**See also** :ref:`alertDialog <sdk_ubuntu_web_webview_alertDialog>`, :ref:`confirmDialog <sdk_ubuntu_web_webview_confirmDialog>`, and :ref:`promptDialog <sdk_ubuntu_web_webview_promptDialog>`.
 
-**See also** :ref:`alertDialog <sdk_ubuntu_web_webview#alertDialog-prop>`,
-:ref:`confirmDialog <sdk_ubuntu_web_webview#confirmDialog-prop>`, and
-:ref:`promptDialog <sdk_ubuntu_web_webview#promptDialog-prop>`.
+.. _sdk_ubuntu_web_webview_canGoBack:
 
-| 
-
-.. _sdk_ubuntu_web_webview_canGoBack-prop:
-
-+--------------------------------------------------------------------------+
-|        \ canGoBack : bool                                                |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| canGoBack : bool                                                                                                                                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Whether the navigation history has a previous entry to navigate back.
 
-**See also** :ref:`goBack <sdk_ubuntu_web_webview#goBack-method>` and
-:ref:`canGoForward <sdk_ubuntu_web_webview#canGoForward-prop>`.
+**See also** :ref:`goBack <sdk_ubuntu_web_webview_goBack>` and :ref:`canGoForward <sdk_ubuntu_web_webview_canGoForward>`.
 
-| 
+.. _sdk_ubuntu_web_webview_canGoForward:
 
-.. _sdk_ubuntu_web_webview_canGoForward-prop:
-
-+--------------------------------------------------------------------------+
-|        \ canGoForward : bool                                             |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| canGoForward : bool                                                                                                                                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Whether the navigation history has a next entry to navigate forward.
 
-**See also** :ref:`goForward <sdk_ubuntu_web_webview#goForward-method>` and
-:ref:`canGoBack <sdk_ubuntu_web_webview#canGoBack-prop>`.
+**See also** :ref:`goForward <sdk_ubuntu_web_webview_goForward>` and :ref:`canGoBack <sdk_ubuntu_web_webview_canGoBack>`.
 
-| 
+.. _sdk_ubuntu_web_webview_confirmDialog:
 
-.. _sdk_ubuntu_web_webview_confirmDialog-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| confirmDialog : component                                                                                                                                                                                                                                                                                    |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ confirmDialog : component                                       |
-+--------------------------------------------------------------------------+
+The QML component that will be instantiated to display a JavaScript confirmation dialog.
 
-The QML component that will be instantiated to display a JavaScript
-confirmation dialog.
+**See also** :ref:`alertDialog <sdk_ubuntu_web_webview_alertDialog>`, :ref:`promptDialog <sdk_ubuntu_web_webview_promptDialog>`, and :ref:`beforeUnloadDialog <sdk_ubuntu_web_webview_beforeUnloadDialog>`.
 
-**See also** :ref:`alertDialog <sdk_ubuntu_web_webview#alertDialog-prop>`,
-:ref:`promptDialog <sdk_ubuntu_web_webview#promptDialog-prop>`, and
-:ref:`beforeUnloadDialog <sdk_ubuntu_web_webview#beforeUnloadDialog-prop>`.
+.. _sdk_ubuntu_web_webview_context:
 
-| 
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| context : :ref:`WebContext <sdk_ubuntu_web_webcontext>`                                                                                                                                                                                                                                                         |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_ubuntu_web_webview_-prop:
+The web context associated to this :ref:`WebView <sdk_ubuntu_web_webview>`. By default a :ref:`shared context <sdk_ubuntu_web_sharedwebcontext>` is used which should fit most use cases, do not override unless you really need a finer control over the context.
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ context : `WebContext <sdk_ubuntu_web_webcontext>`         |
-+--------------------------------------------------------------------------+
+.. _sdk_ubuntu_web_webview_contextualActions:
 
-The web context associated to this :ref:`WebView <sdk_ubuntu_web_webview>`.
-By default a :ref:`shared context <sdk_ubuntu_web_sharedwebcontext>` is
-used which should fit most use cases, do not override unless you really
-need a finer control over the context.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| contextualActions : ActionList                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-| 
-
-.. _sdk_ubuntu_web_webview_contextualActions-prop:
-
-+--------------------------------------------------------------------------+
-|        \ contextualActions : ActionList                                  |
-+--------------------------------------------------------------------------+
-
-A list of actions that the user will be presented with when invoking a
-context menu (by way of a right click on desktop, or a long press on a
-touch-enabled device, on an image or a hyperlink). By default the list
-is empty, and no menu is shown. User-defined actions can access the
-:ref:`contextual data <sdk_ubuntu_web_webview#contextualData-prop>`.
+A list of actions that the user will be presented with when invoking a context menu (by way of a right click on desktop, or a long press on a touch-enabled device, on an image or a hyperlink). By default the list is empty, and no menu is shown. User-defined actions can access the :ref:`contextual data <sdk_ubuntu_web_webview_contextualData>`.
 
 Example of user-defined actions:
 
@@ -191,21 +142,15 @@ Example of user-defined actions:
         }
     }
 
-**See also**
-:ref:`contextualData <sdk_ubuntu_web_webview#contextualData-prop>`.
+**See also** :ref:`contextualData <sdk_ubuntu_web_webview_contextualData>`.
 
-| 
+.. _sdk_ubuntu_web_webview_contextualData:
 
-.. _sdk_ubuntu_web_webview_contextualData-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| contextualData : QtObject                                                                                                                                                                                                                                                                                    |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ contextualData : QtObject                                       |
-+--------------------------------------------------------------------------+
-
-An object that holds the contextual data associated with the current
-context menu. User-defined `contextual
-actions <sdk_ubuntu_web_webview#contextualActions-prop>:ref:` can use this
-data to process it when triggered.
+An object that holds the contextual data associated with the current context menu. User-defined :ref:`contextual actions <sdk_ubuntu_web_webview_contextualActions>` can use this data to process it when triggered.
 
 It has the following properties:
 
@@ -213,198 +158,144 @@ It has the following properties:
 -  title (string): the title of the hyperlink, if any
 -  img (url): the full URI of the image
 
-Note that in the case of an image enclosed inside a hyperlink, both
-``href`` and ``img`` will be available, allowing a user-defined
-contextual action to operate on both elements.
+Note that in the case of an image enclosed inside a hyperlink, both ``href`` and ``img`` will be available, allowing a user-defined contextual action to operate on both elements.
 
-**See also**
-:ref:`contextualActions <sdk_ubuntu_web_webview#contextualActions-prop>`.
+**See also** :ref:`contextualActions <sdk_ubuntu_web_webview_contextualActions>`.
 
-| 
+.. _sdk_ubuntu_web_webview_filePicker:
 
-.. _sdk_ubuntu_web_webview_filePicker-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| filePicker : component                                                                                                                                                                                                                                                                                       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ filePicker : component                                          |
-+--------------------------------------------------------------------------+
+The QML component that will be instantiated to let the user select files when the user clicks an ``<input type="file">`` element on the current page.
 
-The QML component that will be instantiated to let the user select files
-when the user clicks an ``<input type="file">`` element on the current
-page.
+.. _sdk_ubuntu_web_webview_fullscreen:
 
-| 
-
-.. _sdk_ubuntu_web_webview_fullscreen-prop:
-
-+--------------------------------------------------------------------------+
-|        \ fullscreen : bool                                               |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| fullscreen : bool                                                                                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Whether the current page requested fullscreen display.
 
-| 
+.. _sdk_ubuntu_web_webview_icon:
 
-.. _sdk_ubuntu_web_webview_-prop:
-
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ icon : `url <sdk_ubuntu_web_webview#url-prop>`             |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| icon : :ref:`url <sdk_ubuntu_web_webview_url>`                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The URL of the favicon of the current page.
 
-| 
+.. _sdk_ubuntu_web_webview_incognito:
 
-.. _sdk_ubuntu_web_webview_incognito-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| incognito : bool                                                                                                                                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ incognito : bool                                                |
-+--------------------------------------------------------------------------+
+Whether the :ref:`WebView <sdk_ubuntu_web_webview>` is being used in private browsing mode, where no data is persisted across sessions.
 
-Whether the :ref:`WebView <sdk_ubuntu_web_webview>` is being used in
-private browsing mode, where no data is persisted across sessions.
+.. _sdk_ubuntu_web_webview_loadProgress:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| loadProgress : int                                                                                                                                                                                                                                                                                           |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_ubuntu_web_webview_loadProgress-prop:
+The load progress of the current page (as a integer value between 0 and 100).
 
-+--------------------------------------------------------------------------+
-|        \ loadProgress : int                                              |
-+--------------------------------------------------------------------------+
+**See also** :ref:`loading <sdk_ubuntu_web_webview_loading>`.
 
-The load progress of the current page (as a integer value between 0 and
-100).
+.. _sdk_ubuntu_web_webview_loading:
 
-**See also** :ref:`loading <sdk_ubuntu_web_webview#loading-prop>`.
-
-| 
-
-.. _sdk_ubuntu_web_webview_loading-prop:
-
-+--------------------------------------------------------------------------+
-|        \ loading : bool                                                  |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| loading : bool                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Whether the current page is loading.
 
-**See also**
-:ref:`loadProgress <sdk_ubuntu_web_webview#loadProgress-prop>`,
-:ref:`stop <sdk_ubuntu_web_webview#stop-method>`, and
-:ref:`reload <sdk_ubuntu_web_webview#reload-method>`.
+**See also** :ref:`loadProgress <sdk_ubuntu_web_webview_loadProgress>`, :ref:`stop <sdk_ubuntu_web_webview_stop>`, and :ref:`reload <sdk_ubuntu_web_webview_reload>`.
 
-| 
+.. _sdk_ubuntu_web_webview_navigationHistory:
 
-.. _sdk_ubuntu_web_webview_navigationHistory-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| navigationHistory : list                                                                                                                                                                                                                                                                                     |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ navigationHistory : list                                        |
-+--------------------------------------------------------------------------+
+The navigation history (back/forward entries) stored as a list model with a ``currentIndex`` property. Each entry exposes the URL and title of the corresponding page, as well as a timestamp of when it was visited.
 
-The navigation history (back/forward entries) stored as a list model
-with a ``currentIndex`` property. Each entry exposes the URL and title
-of the corresponding page, as well as a timestamp of when it was
-visited.
+.. _sdk_ubuntu_web_webview_promptDialog:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| promptDialog : component                                                                                                                                                                                                                                                                                     |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_ubuntu_web_webview_promptDialog-prop:
+The QML component that will be instantiated to display a JavaScript prompt dialog.
 
-+--------------------------------------------------------------------------+
-|        \ promptDialog : component                                        |
-+--------------------------------------------------------------------------+
+**See also** :ref:`alertDialog <sdk_ubuntu_web_webview_alertDialog>`, :ref:`confirmDialog <sdk_ubuntu_web_webview_confirmDialog>`, and :ref:`beforeUnloadDialog <sdk_ubuntu_web_webview_beforeUnloadDialog>`.
 
-The QML component that will be instantiated to display a JavaScript
-prompt dialog.
+.. _sdk_ubuntu_web_webview_title:
 
-**See also** :ref:`alertDialog <sdk_ubuntu_web_webview#alertDialog-prop>`,
-:ref:`confirmDialog <sdk_ubuntu_web_webview#confirmDialog-prop>`, and
-:ref:`beforeUnloadDialog <sdk_ubuntu_web_webview#beforeUnloadDialog-prop>`.
-
-| 
-
-.. _sdk_ubuntu_web_webview_title-prop:
-
-+--------------------------------------------------------------------------+
-|        \ title : string                                                  |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| title : string                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The title of the current page.
 
-| 
+.. _sdk_ubuntu_web_webview_url:
 
-.. _sdk_ubuntu_web_webview_-method:
-
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ url : `url <sdk_ubuntu_web_webview#url-prop>`              |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| url : :ref:`url <sdk_ubuntu_web_webview_url>`                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The URL of the current page.
-
-| 
 
 Method Documentation
 --------------------
 
-.. _sdk_ubuntu_web_webview_void goBack-method:
+.. _sdk_ubuntu_web_webview_goBack:
 
-+--------------------------------------------------------------------------+
-|        \ void goBack()                                                   |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| void goBack()                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Go back one entry in the navigation history.
 
-**See also** :ref:`canGoBack <sdk_ubuntu_web_webview#canGoBack-prop>` and
-:ref:`goForward <sdk_ubuntu_web_webview#goForward-method>`.
+**See also** :ref:`canGoBack <sdk_ubuntu_web_webview_canGoBack>` and :ref:`goForward <sdk_ubuntu_web_webview_goForward>`.
 
-| 
+.. _sdk_ubuntu_web_webview_goForward:
 
-.. _sdk_ubuntu_web_webview_void goForward-method:
-
-+--------------------------------------------------------------------------+
-|        \ void goForward()                                                |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| void goForward()                                                                                                                                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Go forward one entry in the navigation history.
 
-**See also** :ref:`canGoForward <sdk_ubuntu_web_webview#canGoForward-prop>`
-and :ref:`goBack <sdk_ubuntu_web_webview#goBack-method>`.
+**See also** :ref:`canGoForward <sdk_ubuntu_web_webview_canGoForward>` and :ref:`goBack <sdk_ubuntu_web_webview_goBack>`.
 
-| 
+.. _sdk_ubuntu_web_webview_loadHtml:
 
-.. _sdk_ubuntu_web_webview_void loadHtml-method:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| void loadHtml(string *html*, :ref:`url <sdk_ubuntu_web_webview_url>` *baseUrl*)                                                                                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ void loadHtml(string *html*,                                    |
-| :ref:`url <sdk_ubuntu_web_webview#url-prop>` *baseUrl*)                     |
-+--------------------------------------------------------------------------+
+Load HTML content from memory instead of loading it from a URL. The ``baseUrl`` argument is used to resolve relative URLs in the provided content.
 
-Load HTML content from memory instead of loading it from a URL. The
-``baseUrl`` argument is used to resolve relative URLs in the provided
-content.
+.. _sdk_ubuntu_web_webview_reload:
 
-| 
-
-.. _sdk_ubuntu_web_webview_void reload-method:
-
-+--------------------------------------------------------------------------+
-|        \ void reload()                                                   |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| void reload()                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Reload the current page.
 
-**See also** :ref:`stop <sdk_ubuntu_web_webview#stop-method>`.
+**See also** :ref:`stop <sdk_ubuntu_web_webview_stop>`.
 
-| 
+.. _sdk_ubuntu_web_webview_stop:
 
-.. _sdk_ubuntu_web_webview_void stop-method:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| void stop()                                                                                                                                                                                                                                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ void stop()                                                     |
-+--------------------------------------------------------------------------+
+Stop loading the current page. Does nothing if there is no page currently loading.
 
-Stop loading the current page. Does nothing if there is no page
-currently loading.
+**See also** :ref:`reload <sdk_ubuntu_web_webview_reload>` and :ref:`loading <sdk_ubuntu_web_webview_loading>`.
 
-**See also** :ref:`reload <sdk_ubuntu_web_webview#reload-method>` and
-:ref:`loading <sdk_ubuntu_web_webview#loading-prop>`.
-
-| 

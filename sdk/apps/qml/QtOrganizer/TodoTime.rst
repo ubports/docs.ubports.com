@@ -1,9 +1,9 @@
 .. _sdk_qtorganizer_todotime:
+
 QtOrganizer TodoTime
 ====================
 
-The TodoTime element contains the start and due dates and times of a
-recurring todo series, or occurrence of an todo item.
+The TodoTime element contains the start and due dates and times of a recurring todo series, or occurrence of an todo item.
 
 +---------------------+--------------------------+
 | Import Statement:   | import QtOrganizer 5.0   |
@@ -12,16 +12,14 @@ recurring todo series, or occurrence of an todo item.
 Properties
 ----------
 
--  :ref:`allDay <sdk_qtorganizer_todotime_allDay-prop>` : date
--  :ref:`dueDateTime <sdk_qtorganizer_todotime_dueDateTime-prop>` :
-   date
--  :ref:`startDateTime <sdk_qtorganizer_todotime_startDateTime-prop>`
-   : date
+-  :ref:`allDay <sdk_qtorganizer_todotime_allDay>` : date
+-  :ref:`dueDateTime <sdk_qtorganizer_todotime_dueDateTime>` : date
+-  :ref:`startDateTime <sdk_qtorganizer_todotime_startDateTime>` : date
 
 Signals
 -------
 
--  :ref:`onDetailChanged <sdk_qtorganizer_todotime_onDetailChanged-signal>`\ ()
+-  :ref:`onDetailChanged <sdk_qtorganizer_todotime_onDetailChanged>`\ ()
 
 Detailed Description
 --------------------
@@ -37,47 +35,38 @@ The following fields are supported:
 Property Documentation
 ----------------------
 
-.. _sdk_qtorganizer_todotime_allDay-prop:
+.. _sdk_qtorganizer_todotime_allDay:
 
-+--------------------------------------------------------------------------+
-|        \ allDay : date                                                   |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| allDay : date                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-This property holds whether the time is significant in the start
-datetime.
+This property holds whether the time is significant in the start datetime.
 
-| 
+.. _sdk_qtorganizer_todotime_dueDateTime:
 
-.. _sdk_qtorganizer_todotime_dueDateTime-prop:
-
-+--------------------------------------------------------------------------+
-|        \ dueDateTime : date                                              |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| dueDateTime : date                                                                                                                                                                                                                                                                                           |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the end date and time value of the todo item.
 
-| 
+.. _sdk_qtorganizer_todotime_startDateTime:
 
-.. _sdk_qtorganizer_todotime_startDateTime-prop:
-
-+--------------------------------------------------------------------------+
-|        \ startDateTime : date                                            |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| startDateTime : date                                                                                                                                                                                                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the start date and time value of the todo item.
-
-| 
 
 Signal Documentation
 --------------------
 
-.. _sdk_qtorganizer_todotime_onDetailChanged()-prop:
+.. _sdk_qtorganizer_todotime_onDetailChanged:
 
-+--------------------------------------------------------------------------+
-|        \ onDetailChanged()                                               |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| onDetailChanged()                                                                                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-**See also**
-:ref:`Detail::onDetailChanged <sdk_qtorganizer_detail#onDetailChanged-signal>`.
+**See also** :ref:`Detail::onDetailChanged <sdk_qtorganizer_detail_onDetailChanged>`.
 
-| 

@@ -1,29 +1,27 @@
 .. _sdk_ubuntu_components_label:
+
 Ubuntu.Components Label
 =======================
 
 Extended Text item with Ubuntu styling.
 
-+--------------------------------------+--------------------------------------+
-| Import Statement:                    | import Ubuntu.Components 1.3         |
-+--------------------------------------+--------------------------------------+
-| Inherits:                            | :ref:`Text <sdk_qtquick_text>`       |
-+--------------------------------------+--------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Import Statement:                                                                                                                                      | import Ubuntu.Components 1.3                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Inherits:                                                                                                                                              | :ref:`Text <sdk_qtquick_text>`                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 -  Obsolete members
 
 Properties
 ----------
 
--  :ref:`textSize <sdk_ubuntu_components_label_textSize-prop>` :
-   enumeration
+-  :ref:`textSize <sdk_ubuntu_components_label_textSize>` : enumeration
 
 Detailed Description
 --------------------
 
-Label is an extended Text item with Ubuntu styling. It exposes an
-additional property that provides adaptive resizing based on the
-measurement unit.
+Label is an extended Text item with Ubuntu styling. It exposes an additional property that provides adaptive resizing based on the measurement unit.
 
 Example:
 
@@ -43,18 +41,15 @@ Example:
 Property Documentation
 ----------------------
 
-.. _sdk_ubuntu_components_label_textSize-prop:
+.. _sdk_ubuntu_components_label_textSize:
 
-+--------------------------------------------------------------------------+
-|        \ textSize : enumeration                                          |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| textSize : enumeration                                                                                                                                                                                                                                                                                       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-This property holds an abstract size that allows adaptive resizing based
-on the measurement unit (see Units). The default value is
-``Label.Medium``.
+This property holds an abstract size that allows adaptive resizing based on the measurement unit (see Units). The default value is ``Label.Medium``.
 
-**Note:** Setting this disables support for the deprecated fontSize
-property.
+**Note:** Setting this disables support for the deprecated fontSize property.
 
 -  **Label.XxSmall** - extremely small font size
 -  **Label.XSmall** - very small font size
@@ -65,4 +60,3 @@ property.
 
 This QML property was introduced in Ubuntu.Components 1.3.
 
-| 

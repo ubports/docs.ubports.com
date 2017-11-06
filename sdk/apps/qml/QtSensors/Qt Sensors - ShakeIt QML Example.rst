@@ -1,16 +1,11 @@
 .. _sdk_qtsensors_qt_sensors_-_shakeit_qml_example:
+
 QtSensors Qt Sensors - ShakeIt QML Example
 ==========================================
 
 
 
-|image0|
-
-.. rubric:: ShakeIt in QML
-   :name: shakeit-in-qml
-
-Writing a QML application that uses the Shake QML sensorgestures type
-requires the following steps:
+Writing a QML application that uses the Shake QML sensorgestures type requires the following steps:
 
 Import the Sensors Declarative module.
 
@@ -24,9 +19,7 @@ Add a :ref:`SensorGesture <sdk_qtsensors_sensorgesture>` QML type.
 
         SensorGesture {
 
-In the :ref:`SensorGesture <sdk_qtsensors_sensorgesture>` type, specify
-which gesture to be used. Note that this can be a comma separated list.
-Here we are only interested in one gesture recognizer.
+In the :ref:`SensorGesture <sdk_qtsensors_sensorgesture>` type, specify which gesture to be used. Note that this can be a comma separated list. Here we are only interested in one gesture recognizer.
 
 .. code:: qml
 
@@ -90,8 +83,7 @@ Use the onDetected signal to do stuff.
                 }
             }
 
-There are additional gestures to shake which are supported: whip,
-twistRight, hover, cover, turnover and pickup.
+There are additional gestures to shake which are supported: whip, twistRight, hover, cover, turnover and pickup.
 
 Files:
 
@@ -99,6 +91,4 @@ Files:
 -  shakeit/main.cpp
 -  shakeit/shakeit.pro
 -  shakeit/shakeit.qrc
-
-.. |image0| image:: /media/sdk/apps/qml/qtsensors-shakeit-example/images/shakeit.png
 

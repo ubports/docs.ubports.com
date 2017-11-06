@@ -1,9 +1,9 @@
 .. _sdk_qtlocation_contactdetail:
+
 QtLocation ContactDetail
 ========================
 
-The ContactDetail type holds a contact detail such as a phone number or
-a website address.
+The ContactDetail type holds a contact detail such as a phone number or a website address.
 
 +---------------------+-------------------------+
 | Import Statement:   | import QtLocation 5.3   |
@@ -14,28 +14,19 @@ a website address.
 Properties
 ----------
 
--  :ref:`contactDetail <sdk_qtlocation_contactdetail_contactDetail-prop>`
-   : QPlaceContactDetail
--  :ref:`label <sdk_qtlocation_contactdetail_label-prop>` : string
--  :ref:`value <sdk_qtlocation_contactdetail_value-prop>` : string
+-  :ref:`contactDetail <sdk_qtlocation_contactdetail_contactDetail>` : QPlaceContactDetail
+-  :ref:`label <sdk_qtlocation_contactdetail_label>` : string
+-  :ref:`value <sdk_qtlocation_contactdetail_value>` : string
 
 Detailed Description
 --------------------
 
-The :ref:`ContactDetail <sdk_qtlocation_contactdetail>` provides a single
-detail on how one could contact a
-`Place </sdk/apps/qml/QtLocation/location-cpp-qml/#place>`_ . The
-:ref:`ContactDetail <sdk_qtlocation_contactdetail>` consists of a
-:ref:`label <sdk_qtlocation_contactdetail#label-prop>`, which is a
-localized string describing the contact method, and a
-:ref:`value <sdk_qtlocation_contactdetail#value-prop>` representing the
-actual contact detail.
+The :ref:`ContactDetail <sdk_qtlocation_contactdetail>` provides a single detail on how one could contact a `Place </sdk/apps/qml/QtLocation/location-cpp-qml/#place>`_ . The :ref:`ContactDetail <sdk_qtlocation_contactdetail>` consists of a :ref:`label <sdk_qtlocation_contactdetail_label>`, which is a localized string describing the contact method, and a :ref:`value <sdk_qtlocation_contactdetail_value>` representing the actual contact detail.
 
 Examples
 --------
 
-The following example demonstrates how to assign a single phone number
-to a place in JavaScript:
+The following example demonstrates how to assign a single phone number to a place in JavaScript:
 
 .. code:: qml
 
@@ -46,8 +37,7 @@ to a place in JavaScript:
         place.contactDetails.phone = phoneNumber;
     }
 
-The following demonstrates how to assign multiple phone numbers to a
-place in JavaScript:
+The following demonstrates how to assign multiple phone numbers to a place in JavaScript:
 
 .. code:: qml
 
@@ -64,47 +54,34 @@ place in JavaScript:
         place.contactDetails.phone = numbers;
     }
 
-Note, due to limitations of the QQmlPropertyMap, it is not possible to
-declaratively specify the contact details in QML, it can only be
-accomplished via JavaScript.
+Note, due to limitations of the QQmlPropertyMap, it is not possible to declaratively specify the contact details in QML, it can only be accomplished via JavaScript.
 
 Property Documentation
 ----------------------
 
-.. _sdk_qtlocation_contactdetail_contactDetail-prop:
+.. _sdk_qtlocation_contactdetail_contactDetail:
 
-+--------------------------------------------------------------------------+
-|        \ contactDetail : QPlaceContactDetail                             |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| contactDetail : QPlaceContactDetail                                                                                                                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-For details on how to use this property to interface between C++ and QML
-see "Interfaces between C++ and QML Code".
+For details on how to use this property to interface between C++ and QML see "Interfaces between C++ and QML Code".
 
-| 
+.. _sdk_qtlocation_contactdetail_label:
 
-.. _sdk_qtlocation_contactdetail_label-prop:
-
-+--------------------------------------------------------------------------+
-|        \ label : string                                                  |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| label : string                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds a label describing the contact detail.
 
-The label can potentially be localized. The language is dependent on the
-entity that sets it, typically this is the
-`Plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_ . The
-:ref:`Plugin::locales <sdk_qtlocation_plugin#locales-prop>` property
-defines what language is used.
+The label can potentially be localized. The language is dependent on the entity that sets it, typically this is the `Plugin </sdk/apps/qml/QtLocation/location-places-qml/#plugin>`_ . The :ref:`Plugin::locales <sdk_qtlocation_plugin_locales>` property defines what language is used.
 
-| 
+.. _sdk_qtlocation_contactdetail_value:
 
-.. _sdk_qtlocation_contactdetail_value-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| value : string                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ value : string                                                  |
-+--------------------------------------------------------------------------+
+This property holds the value of the contact detail which may be a phone number, an email address, a website url and so on.
 
-This property holds the value of the contact detail which may be a phone
-number, an email address, a website url and so on.
-
-| 

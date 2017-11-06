@@ -1,28 +1,26 @@
 .. _sdk_qtquick_scriptaction:
+
 QtQuick ScriptAction
 ====================
 
 Defines scripts to be run during an animation
 
-+--------------------------------------+--------------------------------------+
-| Import Statement:                    | import QtQuick 2.4                   |
-+--------------------------------------+--------------------------------------+
-| Inherits:                            | :ref:`Animation <sdk_qtquick_animation>`_ |
-|                                      | _                                    |
-+--------------------------------------+--------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Import Statement:                                                                                                                                      | import QtQuick 2.4                                                                                                                                        |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Inherits:                                                                                                                                              | :ref:`Animation <sdk_qtquick_animation>`                                                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Properties
 ----------
 
--  :ref:`script <sdk_qtquick_scriptaction_script-prop>` : script
--  :ref:`scriptName <sdk_qtquick_scriptaction_scriptName-prop>` :
-   string
+-  :ref:`script <sdk_qtquick_scriptaction_script>` : script
+-  :ref:`scriptName <sdk_qtquick_scriptaction_scriptName>` : string
 
 Detailed Description
 --------------------
 
-:ref:`ScriptAction <sdk_qtquick_scriptaction>` can be used to run a script
-at a specific point in an animation.
+:ref:`ScriptAction <sdk_qtquick_scriptaction>` can be used to run a script at a specific point in an animation.
 
 .. code:: qml
 
@@ -36,9 +34,7 @@ at a specific point in an animation.
         }
     }
 
-When used as part of a Transition, you can also target a specific
-:ref:`StateChangeScript <sdk_qtquick_statechangescript>` to run using the
-``scriptName`` property.
+When used as part of a Transition, you can also target a specific :ref:`StateChangeScript <sdk_qtquick_statechangescript>` to run using the ``scriptName`` property.
 
 .. code:: qml
 
@@ -65,31 +61,23 @@ When used as part of a Transition, you can also target a specific
 Property Documentation
 ----------------------
 
-.. _sdk_qtquick_scriptaction_-prop:
+.. _sdk_qtquick_scriptaction_script:
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ script : `script <sdk_qtquick_scriptaction#script-prop>`   |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| script : :ref:`script <sdk_qtquick_scriptaction_script>`                                                                                                                                                                                                                                                     |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the script to run.
 
-| 
+.. _sdk_qtquick_scriptaction_scriptName:
 
-.. _sdk_qtquick_scriptaction_scriptName-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| scriptName : string                                                                                                                                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ scriptName : string                                             |
-+--------------------------------------------------------------------------+
+This property holds the name of the :ref:`StateChangeScript <sdk_qtquick_statechangescript>` to run.
 
-This property holds the name of the
-:ref:`StateChangeScript <sdk_qtquick_statechangescript>` to run.
+This property is only valid when :ref:`ScriptAction <sdk_qtquick_scriptaction>` is used as part of a transition. If both script and scriptName are set, scriptName will be used.
 
-This property is only valid when
-:ref:`ScriptAction <sdk_qtquick_scriptaction>` is used as part of a
-transition. If both script and scriptName are set, scriptName will be
-used.
+**Note:** When using scriptName in a reversible transition, the script will only be run when the transition is being run forwards.
 
-**Note:** When using scriptName in a reversible transition, the script
-will only be run when the transition is being run forwards.
-
-| 

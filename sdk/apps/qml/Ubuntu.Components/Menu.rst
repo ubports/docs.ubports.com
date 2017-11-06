@@ -1,4 +1,5 @@
 .. _sdk_ubuntu_components_menu:
+
 Ubuntu.Components Menu
 ======================
 
@@ -11,21 +12,16 @@ Menu defines a context menu or submenu structure of a MenuBar
 Properties
 ----------
 
--  :ref:`data <sdk_ubuntu_components_menu_data-prop>` :
-   list<Object>
+-  :ref:`data <sdk_ubuntu_components_menu_data>` : list<Object>
 
 Methods
 -------
 
--  :ref:`appendObject <sdk_ubuntu_components_menu_appendObject-method>`\ (object
-   *o*)
--  :ref:`dismiss <sdk_ubuntu_components_menu_dismiss-method>`\ ()
--  :ref:`insertObject <sdk_ubuntu_components_menu_insertObject-method>`\ (int
-   *index*, object *o*)
--  :ref:`removeObject <sdk_ubuntu_components_menu_removeObject-method>`\ (object
-   *o*)
--  :ref:`show <sdk_ubuntu_components_menu_show-method>`\ (point
-   *point*)
+-  :ref:`appendObject <sdk_ubuntu_components_menu_appendObject>`\ (object *o*)
+-  :ref:`dismiss <sdk_ubuntu_components_menu_dismiss>`\ ()
+-  :ref:`insertObject <sdk_ubuntu_components_menu_insertObject>`\ (int *index*, object *o*)
+-  :ref:`removeObject <sdk_ubuntu_components_menu_removeObject>`\ (object *o*)
+-  :ref:`show <sdk_ubuntu_components_menu_show>`\ (point *point*)
 
 Detailed Description
 --------------------
@@ -67,77 +63,62 @@ Example usage:
 Property Documentation
 ----------------------
 
-.. _sdk_ubuntu_components_menu_data-prop:
+.. _sdk_ubuntu_components_menu_data:
 
-+--------------------------------------------------------------------------+
-|        \ [default] data : list<Object>                                   |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| [default] data : list<Object>                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 List of objects representing menu items within the menu.
 
-Currently supports Menu, Action, AcionList &
-:ref:`MenuGroup <sdk_ubuntu_components_menugroup>` objects.
+Currently supports Menu, Action, AcionList & :ref:`MenuGroup <sdk_ubuntu_components_menugroup>` objects.
 
-**Note:** Item object which do not support platformItem will not be
-exported for native menus.
-
-| 
+**Note:** Item object which do not support platformItem will not be exported for native menus.
 
 Method Documentation
 --------------------
 
-.. _sdk_ubuntu_components_menu_appendObject-method:
+.. _sdk_ubuntu_components_menu_appendObject:
 
-+--------------------------------------------------------------------------+
-|        \ appendObject(object *o*)                                        |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| appendObject(object *o*)                                                                                                                                                                                                                                                                                     |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Add a object tto the menu
 
-| 
+.. _sdk_ubuntu_components_menu_dismiss:
 
-.. _sdk_ubuntu_components_menu_dismiss-method:
-
-+--------------------------------------------------------------------------+
-|        \ dismiss()                                                       |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| dismiss()                                                                                                                                                                                                                                                                                                    |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Dismiss and destroy the menu popup.
 
-| 
+.. _sdk_ubuntu_components_menu_insertObject:
 
-.. _sdk_ubuntu_components_menu_insertObject-method:
-
-+--------------------------------------------------------------------------+
-|        \ insertObject(int *index*, object *o*)                           |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| insertObject(int *index*, object *o*)                                                                                                                                                                                                                                                                        |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Inserts an item at the index in the menu.
 
-Currently supports Menu, Action, AcionList &
-:ref:`MenuGroup <sdk_ubuntu_components_menugroup>` objects.
+Currently supports Menu, Action, AcionList & :ref:`MenuGroup <sdk_ubuntu_components_menugroup>` objects.
 
-**Note:** Item object which do not support platformItem will not be
-exported for native menus.
+**Note:** Item object which do not support platformItem will not be exported for native menus.
 
-| 
+.. _sdk_ubuntu_components_menu_removeObject:
 
-.. _sdk_ubuntu_components_menu_removeObject-method:
-
-+--------------------------------------------------------------------------+
-|        \ removeObject(object *o*)                                        |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| removeObject(object *o*)                                                                                                                                                                                                                                                                                     |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Removes the item from the menu.
 
-| 
+.. _sdk_ubuntu_components_menu_show:
 
-.. _sdk_ubuntu_components_menu_show-method:
-
-+--------------------------------------------------------------------------+
-|        \ show(`point <http://doc.qt.io/qt-5/qml-point.html>`_  *point*)  |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| show(`point <http://doc.qt.io/qt-5/qml-point.html>`_  *point*)                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Show the menu popup at the given point
 
-| 

@@ -1,10 +1,9 @@
 .. _sdk_qtquick_scene_graph_-_rendering_fbos_in_a_thread:
+
 QtQuick Scene Graph - Rendering FBOs in a thread
 ================================================
 
 
-
-|image0|
 
 Files:
 
@@ -15,6 +14,4 @@ Files:
 -  scenegraph/textureinthread/main.cpp
 -  scenegraph/textureinthread/textureinthread.pro
 -  scenegraph/textureinthread/textureinthread.qrc
-
-.. |image0| image:: /media/sdk/apps/qml/qtquick-scenegraph-textureinthread-example/images/textureinthread-example.jpg
 

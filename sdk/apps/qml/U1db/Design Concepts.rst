@@ -1,11 +1,10 @@
 .. _sdk_u1db_design_concepts:
+
 U1db Design Concepts
 ====================
 
 
-
-This concept guide will describe a wide variety of U1Db-Qt functionality
-and usage. It will cover:
+This concept guide will describe a wide variety of U1Db-Qt functionality and usage. It will cover:
 
 #. Overview of U1Db Documents and Databases
 #. Creating Documents and Databases
@@ -24,27 +23,11 @@ and usage. It will cover:
 #. Using U1Db-Qt with elements and components that do not utilize models
 #. Using a Document without a Database
 
-.. rubric:: Brief Description of U1DB
-   :name: brief-description-of-u1db
+U1DB is a database API for synchronised databases of JSON documents. Itâ€™s simple to use in applications, and allows apps to store documents and synchronise them between machines and devices. U1DB is the database designed to work everywhere, backed by the platformâ€™s native data storage capabilities. This means that you can use u1db on different platforms, from different languages, and backed on to different databases, and sync between all of them.
 
-U1DB is a database API for synchronised databases of JSON documents.
-Itâ€™s simple to use in applications, and allows apps to store documents
-and synchronise them between machines and devices. U1DB is the database
-designed to work everywhere, backed by the platformâ€™s native data
-storage capabilities. This means that you can use u1db on different
-platforms, from different languages, and backed on to different
-databases, and sync between all of them.
+U1Db-Qt is the QML implementation of U1DB. It is a QML plugin written in C++ and allows for creating and manipulating U1DB databases via a more declarative approach within a QML application.
 
-.. rubric:: What is the difference between U1DB and U1Db-Qt
-   :name: what-is-the-difference-between-u1db-and-u1db-qt
-
-U1Db-Qt is the QML implementation of U1DB. It is a QML plugin written in
-C++ and allows for creating and manipulating U1DB databases via a more
-declarative approach within a QML application.
-
-A Database is very simple to create. It only needs an id and a path
-where the file will be created. A Database is a model, which can be used
-by elements, such as the ListView further in this example.
+A Database is very simple to create. It only needs an id and a path where the file will be created. A Database is a model, which can be used by elements, such as the ListView further in this example.
 
 .. code:: qml
 
@@ -53,15 +36,9 @@ by elements, such as the ListView further in this example.
         path: "aU1DbDSatabase2"
     }
 
-A Document can be declared at runtime. It requires at the very least a
-unique 'docId', but that alone won't do anything special. The snipet
-below snippet demonstrates the basic requirements.
+A Document can be declared at runtime. It requires at the very least a unique 'docId', but that alone won't do anything special. The snipet below snippet demonstrates the basic requirements.
 
-In addition to this, this example displays text from the database for a
-specific docId and id key in a text area called 'documentContent. To
-update the text area at startup with either the default value or a value
-from the database the onCompleted function is utilized, which is also
-demonstrated below.
+In addition to this, this example displays text from the database for a specific docId and id key in a text area called 'documentContent. To update the text area at startup with either the default value or a value from the database the onCompleted function is utilized, which is also demonstrated below.
 
 .. code:: qml
 
@@ -76,14 +53,7 @@ demonstrated below.
         }
     }
 
-It should be possible to use a document without a database, as
-demonstrated in this snippet. Additionally this document will use the
-concept of sub-keys, as exemplified by the "bookmarks" id key +
-contents. This example will attempt to use the bookmark document to
-store docId values from the database, which will be displayed in a
-ListView on the second tab of the application. The user will be able to
-select a value from the ListView and the first tab will be modified
-accordingly.
+It should be possible to use a document without a database, as demonstrated in this snippet. Additionally this document will use the concept of sub-keys, as exemplified by the "bookmarks" id key + contents. This example will attempt to use the bookmark document to store docId values from the database, which will be displayed in a ListView on the second tab of the application. The user will be able to select a value from the ListView and the first tab will be modified accordingly.
 
 .. code:: qml
 
@@ -94,10 +64,7 @@ accordingly.
          defaults: { "bookmarks": [{}] }
     }
 
-The listDocs method retrieves all the docId values from the current
-database. In this demonstration the values are put into an array, which
-is then checked to locate the docId for the current and previous
-documents within the database.
+The listDocs method retrieves all the docId values from the current database. In this demonstration the values are put into an array, which is then checked to locate the docId for the current and previous documents within the database.
 
 .. code:: cpp
 
@@ -111,10 +78,7 @@ documents within the database.
                 }
             }
 
-These steps demonstrate the creation of a temporary document, based on a
-copy of the global document. This will then be used to determine if
-there is already a document in the database with the same docId as the
-address bar, and additionally with a key id with the same name.
+These steps demonstrate the creation of a temporary document, based on a copy of the global document. This will then be used to determine if there is already a document in the database with the same docId as the address bar, and additionally with a key id with the same name.
 
 .. code:: cpp
 
@@ -123,13 +87,9 @@ address bar, and additionally with a key id with the same name.
              tempDocument.docId = addressBarText;
              var tempContents = tempDocument.contents
 
-**Note: For simplicity sake this example sometimes uses the same value
-for both the docId and the key id, as seen here. Real life
-implimentations can and will differ, and this will be demonstrated
-elsewhere in the example code.**
+**Note: For simplicity sake this example sometimes uses the same value for both the docId and the key id, as seen here. Real life implimentations can and will differ, and this will be demonstrated elsewhere in the example code.**
 
-Here the contents of the temporary document are modified, which then
-replaces the global document.
+Here the contents of the temporary document are modified, which then replaces the global document.
 
 .. code:: cpp
 
@@ -139,9 +99,7 @@ replaces the global document.
                  tempDocument.contents = tempContents
                  aDocument = tempDocument
 
-In this instance the current document's content is updated from the text
-view. The unique key and docId are not modified because the database
-already contains a record with those properties.
+In this instance the current document's content is updated from the text view. The unique key and docId are not modified because the database already contains a record with those properties.
 
 .. code:: cpp
 
@@ -150,8 +108,7 @@ already contains a record with those properties.
              tempContents[tempFieldName] = documentContent.text
              aDocument.contents = tempContents
 
-Here a rectangle is defined that represents the lower portion of our
-application. It will contain all the main parts of the application.
+Here a rectangle is defined that represents the lower portion of our application. It will contain all the main parts of the application.
 
 .. code:: qml
 
@@ -163,9 +120,7 @@ application. It will contain all the main parts of the application.
                       // The remainder of the main part of the application goes here ...
                       }
 
-The following :ref:`TextArea <sdk_ubuntu_components_textarea>` is for
-displaying contents for the current state of the global document, as
-defined by the key / name in the address bar.
+The following :ref:`TextArea <sdk_ubuntu_components_textarea>` is for displaying contents for the current state of the global document, as defined by the key / name in the address bar.
 
 .. code:: qml
 
@@ -179,11 +134,7 @@ defined by the key / name in the address bar.
                              color: "#000000"
                          }
 
-There is an object within in the 'aDocument' model defined earlier
-called 'contents', which contains a key called 'hello', which represents
-a search string. In this example the key will represent the name of a
-document in the database, which will be displayed in the address bar.
-Displaying the key is demonstrated here:
+There is an object within in the 'aDocument' model defined earlier called 'contents', which contains a key called 'hello', which represents a search string. In this example the key will represent the name of a document in the database, which will be displayed in the address bar. Displaying the key is demonstrated here:
 
 .. code:: qml
 

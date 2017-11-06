@@ -1,4 +1,5 @@
 .. _sdk_qtmultimedia_cameraimageprocessing:
+
 QtMultimedia CameraImageProcessing
 ==================================
 
@@ -11,31 +12,19 @@ An interface for camera capture related settings.
 Properties
 ----------
 
--  :ref:`contrast <sdk_qtmultimedia_cameraimageprocessing_contrast-prop>`
-   : qreal
--  :ref:`denoisingLevel <sdk_qtmultimedia_cameraimageprocessing_denoisingLevel-prop>`
-   : qreal
--  :ref:`manualWhiteBalance <sdk_qtmultimedia_cameraimageprocessing_manualWhiteBalance-prop>`
-   : qreal
--  :ref:`saturation <sdk_qtmultimedia_cameraimageprocessing_saturation-prop>`
-   : qreal
--  :ref:`sharpeningLevel <sdk_qtmultimedia_cameraimageprocessing_sharpeningLevel-prop>`
-   : qreal
--  :ref:`whiteBalanceMode <sdk_qtmultimedia_cameraimageprocessing_whiteBalanceMode-prop>`
-   : enumeration
+-  :ref:`contrast <sdk_qtmultimedia_cameraimageprocessing_contrast>` : qreal
+-  :ref:`denoisingLevel <sdk_qtmultimedia_cameraimageprocessing_denoisingLevel>` : qreal
+-  :ref:`manualWhiteBalance <sdk_qtmultimedia_cameraimageprocessing_manualWhiteBalance>` : qreal
+-  :ref:`saturation <sdk_qtmultimedia_cameraimageprocessing_saturation>` : qreal
+-  :ref:`sharpeningLevel <sdk_qtmultimedia_cameraimageprocessing_sharpeningLevel>` : qreal
+-  :ref:`whiteBalanceMode <sdk_qtmultimedia_cameraimageprocessing_whiteBalanceMode>` : enumeration
 
 Detailed Description
 --------------------
 
-:ref:`CameraImageProcessing <sdk_qtmultimedia_cameraimageprocessing>`
-provides control over post-processing done by the camera middleware,
-including white balance adjustments, contrast, saturation, sharpening,
-and denoising
+:ref:`CameraImageProcessing <sdk_qtmultimedia_cameraimageprocessing>` provides control over post-processing done by the camera middleware, including white balance adjustments, contrast, saturation, sharpening, and denoising
 
-It should not be constructed separately, instead the ``imageProcessing``
-property of a
-`Camera </sdk/apps/qml/QtMultimedia/qml-multimedia/#camera>`_  should be
-used.
+It should not be constructed separately, instead the ``imageProcessing`` property of a `Camera </sdk/apps/qml/QtMultimedia/qml-multimedia/#camera>`_  should be used.
 
 .. code:: qml
 
@@ -53,100 +42,73 @@ used.
 Property Documentation
 ----------------------
 
-.. _sdk_qtmultimedia_cameraimageprocessing_contrast-prop:
+.. _sdk_qtmultimedia_cameraimageprocessing_contrast:
 
-+--------------------------------------------------------------------------+
-|        \ contrast : qreal                                                |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| contrast : qreal                                                                                                                                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Image contrast adjustment. Valid contrast adjustment values range
-between -1.0 and 1.0, with a default of 0.
+Image contrast adjustment. Valid contrast adjustment values range between -1.0 and 1.0, with a default of 0.
 
-| 
+.. _sdk_qtmultimedia_cameraimageprocessing_denoisingLevel:
 
-.. _sdk_qtmultimedia_cameraimageprocessing_denoisingLevel-prop:
-
-+--------------------------------------------------------------------------+
-|        \ denoisingLevel : qreal                                          |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| denoisingLevel : qreal                                                                                                                                                                                                                                                                                       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Adjustment of denoising applied to image.
 
-Valid denoising level values range between -1.0 for for denoising
-disabled, 0 for default denoising level and 1.0 for maximum denoising
-applied.
+Valid denoising level values range between -1.0 for for denoising disabled, 0 for default denoising level and 1.0 for maximum denoising applied.
 
-| 
+.. _sdk_qtmultimedia_cameraimageprocessing_manualWhiteBalance:
 
-.. _sdk_qtmultimedia_cameraimageprocessing_manualWhiteBalance-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| manualWhiteBalance : qreal                                                                                                                                                                                                                                                                                   |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ manualWhiteBalance : qreal                                      |
-+--------------------------------------------------------------------------+
+The color temperature used when in manual white balance mode (WhiteBalanceManual). The units are Kelvin.
 
-The color temperature used when in manual white balance mode
-(WhiteBalanceManual). The units are Kelvin.
+**See also** :ref:`whiteBalanceMode <sdk_qtmultimedia_cameraimageprocessing_whiteBalanceMode>`.
 
-**See also**
-:ref:`whiteBalanceMode <sdk_qtmultimedia_cameraimageprocessing#whiteBalanceMode-prop>`.
+.. _sdk_qtmultimedia_cameraimageprocessing_saturation:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| saturation : qreal                                                                                                                                                                                                                                                                                           |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_qtmultimedia_cameraimageprocessing_saturation-prop:
+Image saturation adjustment. Valid saturation adjustment values range between -1.0 and 1.0, the default is 0.
 
-+--------------------------------------------------------------------------+
-|        \ saturation : qreal                                              |
-+--------------------------------------------------------------------------+
+.. _sdk_qtmultimedia_cameraimageprocessing_sharpeningLevel:
 
-Image saturation adjustment. Valid saturation adjustment values range
-between -1.0 and 1.0, the default is 0.
-
-| 
-
-.. _sdk_qtmultimedia_cameraimageprocessing_sharpeningLevel-prop:
-
-+--------------------------------------------------------------------------+
-|        \ sharpeningLevel : qreal                                         |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| sharpeningLevel : qreal                                                                                                                                                                                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Adjustment of sharpening level applied to image.
 
-Valid sharpening level values range between -1.0 for for sharpening
-disabled, 0 for default sharpening level and 1.0 for maximum sharpening
-applied.
+Valid sharpening level values range between -1.0 for for sharpening disabled, 0 for default sharpening level and 1.0 for maximum sharpening applied.
 
-| 
+.. _sdk_qtmultimedia_cameraimageprocessing_whiteBalanceMode:
 
-.. _sdk_qtmultimedia_cameraimageprocessing_whiteBalanceMode-prop:
-
-+--------------------------------------------------------------------------+
-|        \ whiteBalanceMode : enumeration                                  |
-+--------------------------------------------------------------------------+
-
-.. _sdk_qtmultimedia_cameraimageprocessing_Value                      Description-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| whiteBalanceMode : enumeration                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 +---------------------------+---------------------------------------------------------------------------------------+
 | Value                     | Description                                                                           |
 +===========================+=======================================================================================+
-.. _sdk_qtmultimedia_cameraimageprocessing_WhiteBalanceAuto           Auto white balance mode.-prop:
 | WhiteBalanceManual        | Manual white balance. In this mode the manual white balance property value is used.   |
 +---------------------------+---------------------------------------------------------------------------------------+
-.. _sdk_qtmultimedia_cameraimageprocessing_WhiteBalanceSunlight       Sunlight white balance mode.-prop:
 | WhiteBalanceAuto          | Auto white balance mode.                                                              |
 +---------------------------+---------------------------------------------------------------------------------------+
-.. _sdk_qtmultimedia_cameraimageprocessing_WhiteBalanceCloudy         Cloudy white balance mode.-prop:
 | WhiteBalanceSunlight      | Sunlight white balance mode.                                                          |
 +---------------------------+---------------------------------------------------------------------------------------+
-.. _sdk_qtmultimedia_cameraimageprocessing_WhiteBalanceShade          Shade white balance mode.-prop:
 | WhiteBalanceCloudy        | Cloudy white balance mode.                                                            |
 +---------------------------+---------------------------------------------------------------------------------------+
-.. _sdk_qtmultimedia_cameraimageprocessing_WhiteBalanceTungsten       Tungsten white balance mode.-prop:
 | WhiteBalanceShade         | Shade white balance mode.                                                             |
 +---------------------------+---------------------------------------------------------------------------------------+
-.. _sdk_qtmultimedia_cameraimageprocessing_WhiteBalanceFluorescent    Fluorescent white balance mode.-prop:
 | WhiteBalanceTungsten      | Tungsten white balance mode.                                                          |
 +---------------------------+---------------------------------------------------------------------------------------+
-.. _sdk_qtmultimedia_cameraimageprocessing_WhiteBalanceFlash          Flash white balance mode.-prop:
 | WhiteBalanceFluorescent   | Fluorescent white balance mode.                                                       |
 +---------------------------+---------------------------------------------------------------------------------------+
 | WhiteBalanceFlash         | Flash white balance mode.                                                             |
@@ -156,7 +118,5 @@ applied.
 | WhiteBalanceVendor        | Vendor defined white balance mode.                                                    |
 +---------------------------+---------------------------------------------------------------------------------------+
 
-**See also**
-:ref:`manualWhiteBalance <sdk_qtmultimedia_cameraimageprocessing#manualWhiteBalance-prop>`.
+**See also** :ref:`manualWhiteBalance <sdk_qtmultimedia_cameraimageprocessing_manualWhiteBalance>`.
 
-| 

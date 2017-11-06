@@ -1,18 +1,12 @@
 .. _sdk_qtmultimedia_audioengine_example:
+
 QtMultimedia AudioEngine Example
 ================================
 
 
+*Audio Engine* demonstrates 3D sound control using the Qt Audio Engine API.
 
-*Audio Engine* demonstrates 3D sound control using the Qt Audio Engine
-API.
-
-.. rubric:: Running the Example
-   :name: running-the-example
-
-To run the example from Qt Creator, open the **Welcome** mode and select
-the example from **Examples**. For more information, visit Building and
-Running an Example.
+To run the example from Qt Creator, open the **Welcome** mode and select the example from **Examples**. For more information, visit Building and Running an Example.
 
 Files:
 

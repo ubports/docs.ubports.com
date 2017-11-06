@@ -1,21 +1,16 @@
 .. _sdk_ubuntuui_tab:
+
 UbuntuUI Tab
 ============
 
 
-One of the navigation pattern that can be used within an Ubuntu App is
-the flat navigation. Tabs are the standard way to provide such a
-navigation pattern from within your application.
+One of the navigation pattern that can be used within an Ubuntu App is the flat navigation. Tabs are the standard way to provide such a navigation pattern from within your application.
 
-A Tab represents the UI element that hosts your tab content. This UI
-element is being activated by the user selecting it as part of the
-Header element.
+A Tab represents the UI element that hosts your tab content. This UI element is being activated by the user selecting it as part of the Header element.
 
-**``UbuntuUI.Tab``**\ ( ``  `` )
-.. rubric:: Example
-   :name: example
+**UbuntuUI.Tab**\ ()
 
-.. code:: code
+.. code:: html
 
      </body>
 
@@ -48,26 +43,22 @@ Header element.
 
 -  Methods
 
-**``activate``**\ ( ``  `` )
+**activate**\ ()
 Activates the current tab.
 
-**``deactivate``**\ ( ``  `` )
+**deactivate**\ ()
 Deactivates the current tab.
 
-DOMElement **``element``**\ ( ``  `` )
-Returns the DOM element associated with the selector this widget is bind
-to.
+DOMElement **element**\ ()
+Returns the DOM element associated with the selector this widget is bind to.
 
 **Returns:** <DOMElement>
 
-.. rubric:: Example
-   :name: example-1
-
-.. code:: code
+.. code:: html
 
       var mytab = UI.tab("tabid").element();
 
-Boolean **``isTab``**\ ( ``  `` )
+Boolean **isTab**\ ()
 Validates that a given DOM node element is a Ubuntu UI Tab.
 
 **Returns:** <Boolean>

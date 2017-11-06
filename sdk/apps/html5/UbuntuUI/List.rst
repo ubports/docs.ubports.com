@@ -1,17 +1,14 @@
 .. _sdk_ubuntuui_list:
+
 UbuntuUI List
 =============
 
 
-A List comes with various options, including: a <em>header</em>, main
-text (pushed left), an icon (pushed left), and a secondary label (pushed
-right).
+A List comes with various options, including: a <em>header</em>, main text (pushed left), an icon (pushed left), and a secondary label (pushed right).
 
-**``UbuntuUI.List``**\ ( ``  `` )
-.. rubric:: Example
-   :name: example
+**UbuntuUI.List**\ ()
 
-.. code:: code
+.. code:: html
 
     <section data-role="list" id="testlist">
           <header>My header text</header>
@@ -38,29 +35,28 @@ right).
 
 -  Methods
 
-Element **``append``**\ ( ``text, label, id, onclick, user_data `` )
+Element **append**\ (``text, label, id, onclick, user_data``)
 Append an item to a list
 
 **Parameters:**
 
--  ``text`` **<String>**
+- ``text`` **<String>**
 
    -  The main text, flushed left (no markup)
 
--  ``label`` **<String>**
+- ``label`` **<String>**
 
    -  Additional text, flushed right (no markup)
 
--  ``id`` **<ID>**
+- ``id`` **<ID>**
 
-   -  An id attribute value set for the new list item (must be unique in
-      DOM)
+   -  An id attribute value set for the new list item (must be unique in DOM)
 
--  ``onclick`` **<Function>**
+- ``onclick`` **<Function>**
 
    -  The click callback function
 
--  ``user_data`` **<Object>**
+- ``user_data`` **<Object>**
 
    -  Additional data that is passed to the click callback
 
@@ -68,55 +64,50 @@ Append an item to a list
 
 -  The created list item, or null on failure ot create
 
-**``at``**\ ( ``index `` )
+**at**\ (``index``)
 Gets a list item <li> by its index, where index counting starts from 1
 
 **Parameters:**
 
--  ``index`` **<Number>**
+- ``index`` **<Number>**
 
 **Returns:**
 The list item, or null on failure
 
-DOMElement **``element``**\ ( ``  `` )
-Returns the DOM element associated with the selector this widget is bind
-to.
+DOMElement **element**\ ()
+Returns the DOM element associated with the selector this widget is bind to.
 
 **Returns:** <DOMElement>
 
-.. rubric:: Example
-   :name: example-1
-
-.. code:: code
+.. code:: html
 
            var mylist = UI.list("#listid").element();
 
-**``forEach``**\ ( ``func `` )
+**forEach**\ (``func``)
 Iterates over all list items and runs a provided function on each
 
 **Parameters:**
 
--  ``func`` **<Function>**
+- ``func`` **<Function>**
 
    -  The function to run on each list item
 
-**``remove``**\ ( ``index `` )
-Removes a list item <li> by its index, where index counting starts from
-1
+**remove**\ (``index``)
+Removes a list item <li> by its index, where index counting starts from 1
 
 **Parameters:**
 
--  ``index`` **<Number>**
+- ``index`` **<Number>**
 
-**``removeAllItems``**\ ( ``  `` )
+**removeAllItems**\ ()
 Removes all items from a list
 
-**``setHeader``**\ ( ``text `` )
+**setHeader**\ (``text``)
 Add or Set the List Header
 
 **Parameters:**
 
--  ``text`` **<String>**
+- ``text`` **<String>**
 
    -  The header text
 

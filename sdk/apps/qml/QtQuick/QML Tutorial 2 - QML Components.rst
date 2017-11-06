@@ -1,21 +1,12 @@
 .. _sdk_qtquick_qml_tutorial_2_-_qml_components:
+
 QtQuick QML Tutorial 2 - QML Components
 =======================================
 
 
-
 This chapter adds a color picker to change the color of the text.
 
-|image0|
-
-Our color picker is made of six cells with different colors. To avoid
-writing the same code multiple times for each cell, we create a new
-``Cell`` component. A component provides a way of defining a new type
-that we can re-use in other QML files. A QML component is like a
-black-box and interacts with the outside world through properties,
-signals and functions and is generally defined in its own QML file. (For
-more details, see the Component documentation). The component's filename
-must always start with a capital letter.
+Our color picker is made of six cells with different colors. To avoid writing the same code multiple times for each cell, we create a new ``Cell`` component. A component provides a way of defining a new type that we can re-use in other QML files. A QML component is like a black-box and interacts with the outside world through properties, signals and functions and is generally defined in its own QML file. (For more details, see the Component documentation). The component's filename must always start with a capital letter.
 
 Here is the QML code for ``Cell.qml``:
 
@@ -38,12 +29,6 @@ Here is the QML code for ``Cell.qml``:
         }
     }
 
-.. rubric:: Walkthrough
-   :name: walkthrough
-
-.. rubric:: The Cell Component
-   :name: the-cell-component
-
 .. code:: qml
 
     Item {
@@ -52,27 +37,19 @@ Here is the QML code for ``Cell.qml``:
         signal clicked(color cellColor)
         width: 40; height: 25
 
-The root type of our component is an :ref:`Item <sdk_qtquick_item>` with
-the :ref:``id`` *container*. An `Item <sdk_qtquick_item>` is the most basic
-visual type in QML and is often used as a container for other types.
+The root type of our component is an :ref:`Item <sdk_qtquick_item>` with the ``id`` *container*. An :ref:`Item <sdk_qtquick_item>` is the most basic visual type in QML and is often used as a container for other types.
 
 .. code:: qml
 
         property alias cellColor: rectangle.color
 
-We declare a ``cellColor`` property. This property is accessible from
-*outside* our component, this allows us to instantiate the cells with
-different colors. This property is just an alias to an existing property
-- the color of the rectangle that compose the cell (see Property
-Binding).
+We declare a ``cellColor`` property. This property is accessible from *outside* our component, this allows us to instantiate the cells with different colors. This property is just an alias to an existing property - the color of the rectangle that compose the cell (see Property Binding).
 
 .. code:: qml
 
         signal clicked(color cellColor)
 
-We want our component to also have a signal that we call *clicked* with
-a *cellColor* parameter of type *color*. We will use this signal to
-change the color of the text in the main QML file later.
+We want our component to also have a signal that we call *clicked* with a *cellColor* parameter of type *color*. We will use this signal to change the color of the text in the main QML file later.
 
 .. code:: qml
 
@@ -82,13 +59,9 @@ change the color of the text in the main QML file later.
             anchors.fill: parent
         }
 
-Our cell component is basically a colored rectangle with the ``id``
-*rectangle*.
+Our cell component is basically a colored rectangle with the ``id`` *rectangle*.
 
-The ``anchors.fill`` property is a convenient way to set the size of a
-visual type. In this case the rectangle will have the same size as its
-parent (see `Anchor-Based
-Layout </sdk/apps/qml/QtQuick/qtquick-positioning-anchors/#anchor-layout>`_ ).
+The ``anchors.fill`` property is a convenient way to set the size of a visual type. In this case the rectangle will have the same size as its parent (see `Anchor-Based Layout </sdk/apps/qml/QtQuick/qtquick-positioning-anchors/#anchor-layout>`_ ).
 
 .. code:: qml
 
@@ -97,19 +70,11 @@ Layout </sdk/apps/qml/QtQuick/qtquick-positioning-anchors/#anchor-layout>`_ ).
             onClicked: container.clicked(container.cellColor)
         }
 
-In order to change the color of the text when clicking on a cell, we
-create a :ref:`MouseArea <sdk_qtquick_mousearea>` type with the same size
-as its parent.
+In order to change the color of the text when clicking on a cell, we create a :ref:`MouseArea <sdk_qtquick_mousearea>` type with the same size as its parent.
 
-A :ref:`MouseArea <sdk_qtquick_mousearea>` defines a signal called
-*clicked*. When this signal is triggered we want to emit our own
-*clicked* signal with the color as parameter.
+A :ref:`MouseArea <sdk_qtquick_mousearea>` defines a signal called *clicked*. When this signal is triggered we want to emit our own *clicked* signal with the color as parameter.
 
-.. rubric:: The main QML file
-   :name: the-main-qml-file
-
-In our main QML file, we use our ``Cell`` component to create the color
-picker:
+In our main QML file, we use our ``Cell`` component to create the color picker:
 
 .. code:: qml
 
@@ -138,21 +103,13 @@ picker:
         }
     }
 
-We create the color picker by putting 6 cells with different colors in a
-grid.
+We create the color picker by putting 6 cells with different colors in a grid.
 
 .. code:: qml
 
             Cell { cellColor: "red"; onClicked: helloText.color = cellColor }
 
-When the *clicked* signal of our cell is triggered, we want to set the
-color of the text to the *cellColor* passed as a parameter. We can react
-to any signal of our component through a property of the name
-*'onSignalName'* (see Signal Attributes).
+When the *clicked* signal of our cell is triggered, we want to set the color of the text to the *cellColor* passed as a parameter. We can react to any signal of our component through a property of the name *'onSignalName'* (see Signal Attributes).
 
-`QML Tutorial 1 - Basic Types </sdk/apps/qml/QtQuick/qml-tutorial1/>`_ 
-`QML Tutorial 3 - States and
-Transitions </sdk/apps/qml/QtQuick/qml-tutorial3/>`_ 
-
-.. |image0| image:: /media/sdk/apps/qml/qml-tutorial2/images/declarative-tutorial2.png
+`QML Tutorial 1 - Basic Types </sdk/apps/qml/QtQuick/qml-tutorial1/>`_  `QML Tutorial 3 - States and Transitions </sdk/apps/qml/QtQuick/qml-tutorial3/>`_ 
 

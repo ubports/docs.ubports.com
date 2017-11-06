@@ -1,26 +1,23 @@
 .. _sdk_qtsensors_ambienttemperaturesensor:
+
 QtSensors AmbientTemperatureSensor
 ==================================
 
 The AmbientTemperatureSensor element reports on the ambient temperature.
 
-+--------------------------------------+--------------------------------------+
-| Import Statement:                    | import QtSensors 5.0                 |
-+--------------------------------------+--------------------------------------+
-| Since:                               | QtSensors 5.1                        |
-+--------------------------------------+--------------------------------------+
-| Inherits:                            | :ref:`Sensor <sdk_qtsensors_sensor>` |
-+--------------------------------------+--------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Import Statement:                                                                                                                                      | import QtSensors 5.0                                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Since:                                                                                                                                                 | QtSensors 5.1                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Inherits:                                                                                                                                              | :ref:`Sensor <sdk_qtsensors_sensor>`                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Detailed Description
 --------------------
 
-The
-:ref:`AmbientTemperatureSensor <sdk_qtsensors_ambienttemperaturesensor>`
-element reports on the ambient temperature.
+The :ref:`AmbientTemperatureSensor <sdk_qtsensors_ambienttemperaturesensor>` element reports on the ambient temperature.
 
-This element wraps the QAmbientTemperatureSensor class. Please see the
-documentation for QAmbientTemperatureSensor for details.
+This element wraps the QAmbientTemperatureSensor class. Please see the documentation for QAmbientTemperatureSensor for details.
 
-**See also**
-:ref:`AmbientTemperatureReading <sdk_qtsensors_ambienttemperaturereading>`.
+**See also** :ref:`AmbientTemperatureReading <sdk_qtsensors_ambienttemperaturereading>`.

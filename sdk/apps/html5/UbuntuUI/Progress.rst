@@ -1,4 +1,5 @@
 .. _sdk_ubuntuui_progress:
+
 UbuntuUI Progress
 =================
 
@@ -7,11 +8,9 @@ A Progress.
 
 Note the Ubuntu CSS style classes: <em>infinite</em>
 
-**``UbuntuUI.Progress``**\ ( ``  `` )
-.. rubric:: Example
-   :name: example
+**UbuntuUI.Progress**\ ()
 
-.. code:: code
+.. code:: html
 
      <progress value="80" max="100"></progress>
 
@@ -20,23 +19,17 @@ Note the Ubuntu CSS style classes: <em>infinite</em>
 
 -  Methods
 
-**``element``**\ ( ``  `` )
+**element**\ ()
 Returns the DOM element associated with the id this widget is bind to.
 
-.. rubric:: Example
-   :name: example-1
-
-.. code:: code
+.. code:: html
 
            var myprogress = UI.progress("progressid").element();
 
-**``update``**\ ( ``  `` )
+**update**\ ()
 Updates the value of the progress bar
 
-.. rubric:: Example
-   :name: example-2
-
-.. code:: code
+.. code:: html
 
            myprogress.update(30);
 

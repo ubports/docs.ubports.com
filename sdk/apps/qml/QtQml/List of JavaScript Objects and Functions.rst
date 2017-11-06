@@ -1,25 +1,14 @@
 .. _sdk_qtqml_list_of_javascript_objects_and_functions:
+
 QtQml List of JavaScript Objects and Functions
 ==============================================
 
 
-
-This reference contains a list of objects, functions and properties
-supported by the QML engine. For a detailed description, see the
-ECMA-262 specification.
-
-.. rubric:: The Global Object
-   :name: the-global-object
-
-.. rubric:: Value Properties
-   :name: value-properties
+This reference contains a list of objects, functions and properties supported by the QML engine. For a detailed description, see the ECMA-262 specification.
 
 -  NaN
 -  Infinity
 -  undefined
-
-.. rubric:: Function Properties
-   :name: function-properties
 
 -  eval(x)
 -  parseInt(string, radix)
@@ -30,9 +19,6 @@ ECMA-262 specification.
 -  decodeURIComponent(encodedURIComponent)
 -  encodeURI(uri)
 -  encodeURIComponent(uriComponent)
-
-.. rubric:: Constructor Properties
-   :name: constructor-properties
 
 -  Object
 -  Function
@@ -50,20 +36,8 @@ ECMA-262 specification.
 -  TypeError
 -  URIError
 
-.. rubric:: Other Properties
-   :name: other-properties
-
 -  Math
 -  JSON
-
-.. rubric:: The Object Object
-   :name: the-object-object
-
-.. rubric:: Object Constructor
-   :name: object-constructor
-
-.. rubric:: Function Properties
-   :name: function-properties-1
 
 -  getPrototypeOf(O)
 -  getOwnPropertyDescriptor(O, P)
@@ -79,12 +53,6 @@ ECMA-262 specification.
 -  preventExtensions(O)
 -  isExtensible(O)
 
-.. rubric:: Object Prototype
-   :name: object-prototype
-
-.. rubric:: Function Properties
-   :name: function-properties-2
-
 -  toString()
 -  toLocaleString()
 -  valueOf()
@@ -92,28 +60,10 @@ ECMA-262 specification.
 -  isPrototypeOf(V)
 -  propertyIsEnumerable(V)
 
-.. rubric:: Function Objects
-   :name: function-objects
-
-.. rubric:: Function Prototype
-   :name: function-prototype
-
-.. rubric:: Function Properties
-   :name: function-properties-3
-
 -  toString()
 -  apply(thisArg, argArray)
 -  call(thisArg [, arg1 [, arg2, ...]])
 -  bind((thisArg [, arg1 [, arg2, …]])
-
-.. rubric:: Array Objects
-   :name: array-objects
-
-.. rubric:: Array Prototype Object
-   :name: array-prototype-object
-
-.. rubric:: Function Properties
-   :name: function-properties-4
 
 -  toString()
 -  toLocaleString()
@@ -137,15 +87,6 @@ ECMA-262 specification.
 -  reduce(callbackfn [, initialValue])
 -  reduceRight(callbackfn [, initialValue])
 
-.. rubric:: String Objects
-   :name: string-objects
-
-.. rubric:: String Prototype Object
-   :name: string-prototype-object
-
-.. rubric:: Function Properties
-   :name: function-properties-5
-
 -  toString()
 -  valueOf()
 -  charAt(pos)
@@ -166,31 +107,12 @@ ECMA-262 specification.
 -  toLocaleUpperCase()
 -  trim()
 
-Additionally, the QML engine adds the following functions to the
-:ref:`String <sdk_qtqml_string>` prototype:
+Additionally, the QML engine adds the following functions to the :ref:`String <sdk_qtqml_string>` prototype:
 
--  :ref:`arg() <sdk_qtqml_string#arg-method>`
-
-.. rubric:: Boolean Objects
-   :name: boolean-objects
-
-.. rubric:: Boolean Prototype Object
-   :name: boolean-prototype-object
-
-.. rubric:: Function Properties
-   :name: function-properties-6
+-  :ref:`arg() <sdk_qtqml_string_arg>`
 
 -  toString()
 -  valueOf()
-
-.. rubric:: Number Objects
-   :name: number-objects
-
-.. rubric:: Number Prototype Object
-   :name: number-prototype-object
-
-.. rubric:: Function Properties
-   :name: function-properties-7
 
 -  toString(radix)
 -  toLocaleString()
@@ -198,21 +120,11 @@ Additionally, the QML engine adds the following functions to the
 -  toExponential(fractionDigits)
 -  toPrecision(precision)
 
-Additionally, the QML engine adds the following functions to the
-:ref:`Number <sdk_qtqml_number>` prototype:
+Additionally, the QML engine adds the following functions to the :ref:`Number <sdk_qtqml_number>` prototype:
 
--  `fromLocaleString(locale,
-   number) <sdk_qtqml_number#fromLocaleString-method>:ref:`
--  `toLocaleCurrencyString(locale,
-   symbol) <sdk_qtqml_number#toLocaleCurrencyString-method>:ref:`
--  `toLocaleString(locale, format,
-   precision) <sdk_qtqml_number#toLocaleString-method>:ref:`
-
-.. rubric:: The Math Object
-   :name: the-math-object
-
-.. rubric:: Value Properties
-   :name: value-properties-1
+-  :ref:`fromLocaleString(locale, number) <sdk_qtqml_number_fromLocaleString>`
+-  :ref:`toLocaleCurrencyString(locale, symbol) <sdk_qtqml_number_toLocaleCurrencyString>`
+-  :ref:`toLocaleString(locale, format, precision) <sdk_qtqml_number_toLocaleString>`
 
 -  E
 -  LN10
@@ -222,9 +134,6 @@ Additionally, the QML engine adds the following functions to the
 -  PI
 -  SQRT1\_2
 -  SQRT2
-
-.. rubric:: Function Properties
-   :name: function-properties-8
 
 -  abs(x)
 -  acos(x)
@@ -244,15 +153,6 @@ Additionally, the QML engine adds the following functions to the
 -  sin(x)
 -  sqrt(x)
 -  tan(x)
-
-.. rubric:: Date Objects
-   :name: date-objects
-
-.. rubric:: Date Prototype Object
-   :name: date-prototype-object
-
-.. rubric:: Function Properties
-   :name: function-properties-9
 
 -  toString()
 -  toDateString()
@@ -298,52 +198,21 @@ Additionally, the QML engine adds the following functions to the
 -  toISOString()
 -  toJSON()
 
-Additionally, the QML engine adds the following functions to the
-:ref:`Date <sdk_qtqml_date>` prototype:
+Additionally, the QML engine adds the following functions to the :ref:`Date <sdk_qtqml_date>` prototype:
 
--  :ref:`timeZoneUpdated() <sdk_qtqml_date#timeZoneUpdated-method>`
--  `toLocaleDateString(locale,
-   format) <sdk_qtqml_date#toLocaleDateString-method>:ref:`
--  `toLocaleString(locale,
-   format) <sdk_qtqml_date#toLocaleString-method>:ref:`
--  `toLocaleTimeString(locale,
-   format) <sdk_qtqml_date#toLocaleTimeString-method>:ref:`
-
-.. rubric:: RegExp Objects
-   :name: regexp-objects
-
-.. rubric:: RegExp Prototype Object
-   :name: regexp-prototype-object
-
-.. rubric:: Function Properties
-   :name: function-properties-10
+-  :ref:`timeZoneUpdated() <sdk_qtqml_date_timeZoneUpdated>`
+-  :ref:`toLocaleDateString(locale, format) <sdk_qtqml_date_toLocaleDateString>`
+-  :ref:`toLocaleString(locale, format) <sdk_qtqml_date_toLocaleString>`
+-  :ref:`toLocaleTimeString(locale, format) <sdk_qtqml_date_toLocaleTimeString>`
 
 -  exec(string)
 -  test(string)
 -  toString()
 
-.. rubric:: Error Objects
-   :name: error-objects
-
-.. rubric:: Error Prototype Object
-   :name: error-prototype-object
-
-.. rubric:: Value Properties
-   :name: value-properties-2
-
 -  name
 -  message
 
-.. rubric:: Function Properties
-   :name: function-properties-11
-
 -  toString()
-
-.. rubric:: The JSON Object
-   :name: the-json-object
-
-.. rubric:: Function Properties
-   :name: function-properties-12
 
 -  parse(text [, reviver])
 -  stringify(value [, replacer [, space]])

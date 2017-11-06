@@ -1,4 +1,5 @@
 .. _sdk_qtquick_particles_rectangleshape:
+
 QtQuick.Particles RectangleShape
 ================================
 

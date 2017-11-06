@@ -1,4 +1,5 @@
 .. _sdk_qtsensors_sensorgesture:
+
 QtSensors SensorGesture
 =======================
 
@@ -13,34 +14,25 @@ Provides notifications when sensor-based gestures are detected.
 Properties
 ----------
 
--  :ref:`availableGestures <sdk_qtsensors_sensorgesture_availableGestures-prop>`
-   : stringlist
--  :ref:`enabled <sdk_qtsensors_sensorgesture_enabled-prop>` : bool
--  :ref:`gestures <sdk_qtsensors_sensorgesture_gestures-prop>` :
-   stringlist
--  :ref:`invalidGestures <sdk_qtsensors_sensorgesture_invalidGestures-prop>`
-   : stringlist
--  :ref:`validGestures <sdk_qtsensors_sensorgesture_validGestures-prop>`
-   : stringlist
+-  :ref:`availableGestures <sdk_qtsensors_sensorgesture_availableGestures>` : stringlist
+-  :ref:`enabled <sdk_qtsensors_sensorgesture_enabled>` : bool
+-  :ref:`gestures <sdk_qtsensors_sensorgesture_gestures>` : stringlist
+-  :ref:`invalidGestures <sdk_qtsensors_sensorgesture_invalidGestures>` : stringlist
+-  :ref:`validGestures <sdk_qtsensors_sensorgesture_validGestures>` : stringlist
 
 Signals
 -------
 
--  :ref:`detected <sdk_qtsensors_sensorgesture_detected-signal>`\ (string
-   *gesture*)
+-  :ref:`detected <sdk_qtsensors_sensorgesture_detected>`\ (string *gesture*)
 
 Detailed Description
 --------------------
 
 This type provides notification when sensor gestures are triggered.
 
-The following QML code creates a "shake" and "SecondCounter"
-:ref:`SensorGesture <sdk_qtsensors_sensorgesture>` QML type, and displays
-the detected gesture in a text type.
+The following QML code creates a "shake" and "SecondCounter" :ref:`SensorGesture <sdk_qtsensors_sensorgesture>` QML type, and displays the detected gesture in a text type.
 
-QtSensors.shake gesture is available with the Qt Sensors API, but the
-QtSensors.SecondCounter sensor gesture is provided as example code for
-the Qt Sensors - SensorGesture QML Type example
+QtSensors.shake gesture is available with the Qt Sensors API, but the QtSensors.SecondCounter sensor gesture is provided as example code for the Qt Sensors - SensorGesture QML Type example
 
 .. code:: qml
 
@@ -60,94 +52,67 @@ the Qt Sensors - SensorGesture QML Type example
        }
     }
 
-Qt Sensor Gestures contains a list of currently supported sensor
-gestures and their descriptions.
+Qt Sensor Gestures contains a list of currently supported sensor gestures and their descriptions.
 
 Property Documentation
 ----------------------
 
-.. _sdk_qtsensors_sensorgesture_availableGestures-prop:
+.. _sdk_qtsensors_sensorgesture_availableGestures:
 
-+--------------------------------------------------------------------------+
-|        \ availableGestures : stringlist                                  |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| availableGestures : stringlist                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-This property can be used to determine all available gestures on the
-system.
+This property can be used to determine all available gestures on the system.
 
-| 
+.. _sdk_qtsensors_sensorgesture_enabled:
 
-.. _sdk_qtsensors_sensorgesture_enabled-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| enabled : bool                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ enabled : bool                                                  |
-+--------------------------------------------------------------------------+
+This property can be used to activate or deactivate the sensor gesture. Default value is false;
 
-This property can be used to activate or deactivate the sensor gesture.
-Default value is false;
+**See also** :ref:`SensorGesture::detected <sdk_qtsensors_sensorgesture_detected>` and :ref:`detected <sdk_qtsensors_sensorgesture_detected>`.
 
-**See also**
-:ref:`SensorGesture::detected <sdk_qtsensors_sensorgesture#detected-signal>`
-and :ref:`detected <sdk_qtsensors_sensorgesture#detected-signal>`.
+.. _sdk_qtsensors_sensorgesture_gestures:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| gestures : stringlist                                                                                                                                                                                                                                                                                        |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_qtsensors_sensorgesture_gestures-prop:
+Set this property to a list of the gestures that the application is interested in detecting. This property cannot be changed while the type is enabled.
 
-+--------------------------------------------------------------------------+
-|        \ gestures : stringlist                                           |
-+--------------------------------------------------------------------------+
-
-Set this property to a list of the gestures that the application is
-interested in detecting. This property cannot be changed while the type
-is enabled.
-
-The properties
-:ref:`validGestures <sdk_qtsensors_sensorgesture#validGestures-prop>` and
-:ref:`invalidGestures <sdk_qtsensors_sensorgesture#invalidGestures-prop>`
-will be set as appropriate immediately. To determine all available
-getures on the system please use the
-:ref:`availableGestures <sdk_qtsensors_sensorgesture#availableGestures-prop>`
-property.
+The properties :ref:`validGestures <sdk_qtsensors_sensorgesture_validGestures>` and :ref:`invalidGestures <sdk_qtsensors_sensorgesture_invalidGestures>` will be set as appropriate immediately. To determine all available getures on the system please use the :ref:`availableGestures <sdk_qtsensors_sensorgesture_availableGestures>` property.
 
 **See also** QtSensorGestures Plugins.
 
-| 
+.. _sdk_qtsensors_sensorgesture_invalidGestures:
 
-.. _sdk_qtsensors_sensorgesture_invalidGestures-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| invalidGestures : stringlist                                                                                                                                                                                                                                                                                 |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ invalidGestures : stringlist                                    |
-+--------------------------------------------------------------------------+
+This property holds the requested gestures that were not found on the system.
 
-This property holds the requested gestures that were not found on the
-system.
+.. _sdk_qtsensors_sensorgesture_validGestures:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| validGestures : stringlist                                                                                                                                                                                                                                                                                   |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_qtsensors_sensorgesture_validGestures-prop:
-
-+--------------------------------------------------------------------------+
-|        \ validGestures : stringlist                                      |
-+--------------------------------------------------------------------------+
-
-This property holds the requested gestures that were found on the
-system.
-
-| 
+This property holds the requested gestures that were found on the system.
 
 Signal Documentation
 --------------------
 
-.. _sdk_qtsensors_sensorgesture_detected(string *gesture*)-prop:
+.. _sdk_qtsensors_sensorgesture_detected:
 
-+--------------------------------------------------------------------------+
-|        \ detected(string *gesture*)                                      |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| detected(string *gesture*)                                                                                                                                                                                                                                                                                   |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-This signal is emitted whenever a gesture is detected. The gesture
-parameter contains the gesture that was detected.
+This signal is emitted whenever a gesture is detected. The gesture parameter contains the gesture that was detected.
 
 The corresponding handler is ``onDetected``.
 
-| 

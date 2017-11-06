@@ -1,14 +1,11 @@
 .. _sdk_qtsensors_qt_sensors_-_sensorgesture_qml_type_example:
+
 QtSensors Qt Sensors - SensorGesture QML Type example
 =====================================================
 
 
 
-.. rubric:: Overview
-   :name: overview
-
-To write a QML application that will use the gesture plugin, following
-steps are needed:
+To write a QML application that will use the gesture plugin, following steps are needed:
 
 Import the QtSensors 5.x module:
 
@@ -16,8 +13,7 @@ Import the QtSensors 5.x module:
 
     import QtSensors 5.0
 
-Add the :ref:`SensorGesture <sdk_qtsensors_sensorgesture>` QML type into
-your qml file.
+Add the :ref:`SensorGesture <sdk_qtsensors_sensorgesture>` QML type into your qml file.
 
 .. code:: qml
 
@@ -36,9 +32,7 @@ your qml file.
             }
         }
 
-Each :ref:`SensorGesture <sdk_qtsensors_sensorgesture>` QML type contains a
-property called gestures. This example uses an alias ``gestureId`` for
-this property.
+Each :ref:`SensorGesture <sdk_qtsensors_sensorgesture>` QML type contains a property called gestures. This example uses an alias ``gestureId`` for this property.
 
 .. code:: qml
 
@@ -54,8 +48,7 @@ Then, the gesture or gestures to use can be specified using the alias:
                 ...
             }
 
-A list of all available gestures is accessible through the
-``availableGestures`` property:
+A list of all available gestures is accessible through the ``availableGestures`` property:
 
 .. code:: qml
 

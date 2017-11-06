@@ -1,23 +1,18 @@
 .. _sdk_ubuntuui_tabs:
+
 UbuntuUI Tabs
 =============
 
 
-One of the navigation pattern that can be used within an Ubuntu App is
-the flat navigation. Tabs are the standard way to provide such a
-navigation pattern from within your application.
+One of the navigation pattern that can be used within an Ubuntu App is the flat navigation. Tabs are the standard way to provide such a navigation pattern from within your application.
 
-Tabs are defined from within the Header part of your application HTML.
-See the Header class for more information.
+Tabs are defined from within the Header part of your application HTML. See the Header class for more information.
 
-Declare the Header and Tabs in HTML as a direct child of the top level
-Page as a sibling to the content div.
+Declare the Header and Tabs in HTML as a direct child of the top level Page as a sibling to the content div.
 
-**``UbuntuUI.Tabs``**\ ( ``  `` )
-.. rubric:: Example
-   :name: example
+**UbuntuUI.Tabs**\ ()
 
-.. code:: code
+.. code:: html
 
      <body>
            <div data-role="mainview">

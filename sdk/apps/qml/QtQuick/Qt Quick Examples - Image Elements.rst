@@ -1,40 +1,19 @@
 .. _sdk_qtquick_qt_quick_examples_-_image_elements:
+
 QtQuick Qt Quick Examples - Image Elements
 ==========================================
 
 
 
-|image0|
+*Image Elements* is a collection of small QML examples relating to image types. For more information, visit Use Case - Visual Elements In QML.
 
-*Image Elements* is a collection of small QML examples relating to image
-types. For more information, visit Use Case - Visual Elements In QML.
+To run the example from Qt Creator, open the **Welcome** mode and select the example from **Examples**. For more information, visit Building and Running an Example.
 
-.. rubric:: Running the Example
-   :name: running-the-example
+*BorderImage* shows off the various scaling modes of the `BorderImage </sdk/apps/qml/QtQuick/imageelements/#borderimage>`_  type by setting its horizontalTileMode and verticalTileMode properties.
 
-To run the example from Qt Creator, open the **Welcome** mode and select
-the example from **Examples**. For more information, visit Building and
-Running an Example.
+*Image* shows off the various fill modes of the `Image </sdk/apps/qml/QtQuick/imageelements/#image>`_  type.
 
-.. rubric:: BorderImage
-   :name: borderimage
-
-*BorderImage* shows off the various scaling modes of the
-`BorderImage </sdk/apps/qml/QtQuick/imageelements/#borderimage>`_  type
-by setting its horizontalTileMode and verticalTileMode properties.
-
-.. rubric:: Image
-   :name: image
-
-*Image* shows off the various fill modes of the
-`Image </sdk/apps/qml/QtQuick/imageelements/#image>`_  type.
-
-.. rubric:: Shadows
-   :name: shadows
-
-*Shadows* shows how to create a drop shadow effect for a rectangular
-item using a
-`BorderImage </sdk/apps/qml/QtQuick/imageelements/#borderimage>`_ :
+*Shadows* shows how to create a drop shadow effect for a rectangular item using a `BorderImage </sdk/apps/qml/QtQuick/imageelements/#borderimage>`_ :
 
 .. code:: qml
 
@@ -45,12 +24,7 @@ item using a
             source: "shadow.png"
         }
 
-.. rubric:: AnimatedSprite
-   :name: animatedsprite
-
-*AnimatedSprite* shows how to display a simple animation using an
-`AnimatedSprite </sdk/apps/qml/QtQuick/qtquick-effects-sprites/#animatedsprite>`_ 
-object:
+*AnimatedSprite* shows how to display a simple animation using an `AnimatedSprite </sdk/apps/qml/QtQuick/qtquick-effects-sprites/#animatedsprite>`_  object:
 
 .. code:: qml
 
@@ -69,14 +43,7 @@ object:
 
 The sprite animation will loop three times.
 
-.. rubric:: SpriteSequence
-   :name: spritesequence
-
-*SpriteSequence* demonstrates using a sprite sequence to draw an
-animated and interactive bear. The
-`SpriteSequence </sdk/apps/qml/QtQuick/imageelements/#spritesequence>`_ 
-object defines five different sprites. The bear is initially in a
-*still* state:
+*SpriteSequence* demonstrates using a sprite sequence to draw an animated and interactive bear. The `SpriteSequence </sdk/apps/qml/QtQuick/imageelements/#spritesequence>`_  object defines five different sprites. The bear is initially in a *still* state:
 
 .. code:: qml
 
@@ -90,8 +57,7 @@ object defines five different sprites. The bear is initially in a
                 to: {"still":1, "blink":0.1, "floating":0}
             }
 
-When the scene is clicked, an animation sets the sprite sequence to the
-*falling* states and animates the bear's y property.
+When the scene is clicked, an animation sets the sprite sequence to the *falling* states and animates the bear's y property.
 
 .. code:: qml
 
@@ -121,6 +87,4 @@ Files:
 -  imageelements/imageelements.pro
 -  imageelements/imageelements.qmlproject
 -  imageelements/imageelements.qrc
-
-.. |image0| image:: /media/sdk/apps/qml/qtquick-imageelements-example/images/qml-imageelements-example.png
 

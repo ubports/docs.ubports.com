@@ -1,62 +1,44 @@
 .. _sdk_ubuntu_components_popups_popover:
+
 Ubuntu.Components.Popups Popover
 ================================
 
-A popover allows an application to present additional content without
-changing the view. A popover has a fixed width and automatic height,
-depending on is contents. It can be closed by clicking anywhere outside
-of the popover area.
+A popover allows an application to present additional content without changing the view. A popover has a fixed width and automatic height, depending on is contents. It can be closed by clicking anywhere outside of the popover area.
 
-+--------------------------------------+--------------------------------------+
-| Import Statement:                    | import Ubuntu.Components.Popups 1.3  |
-+--------------------------------------+--------------------------------------+
-| Inherits:                            | `PopupBase </sdk/apps/qml/Ubuntu.Com |
-|                                      | ponents/Popups.PopupBase/>`_         |
-+--------------------------------------+--------------------------------------+
-| Inherited By:                        | `ActionSelectionPopover </sdk/apps/q |
-|                                      | ml/Ubuntu.Components/Popups.ActionSe |
-|                                      | lectionPopover/>`_ .                 |
-+--------------------------------------+--------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Import Statement:                                                                                                                                      | import Ubuntu.Components.Popups 1.3                                                                                                                    |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Inherits:                                                                                                                                              | `PopupBase </sdk/apps/qml/Ubuntu.Components/Popups.PopupBase/>`_                                                                                       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Inherited By:                                                                                                                                          | `ActionSelectionPopover </sdk/apps/qml/Ubuntu.Components/Popups.ActionSelectionPopover/>`_ .                                                           |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Properties
 ----------
 
--  `autoClose </sdk/apps/qml/Ubuntu.Components/Popups.Popover/_autoClose-prop>`_ 
-   : bool
--  `caller </sdk/apps/qml/Ubuntu.Components/Popups.Popover/_caller-prop>`_ 
-   : Item
--  `callerMargin </sdk/apps/qml/Ubuntu.Components/Popups.Popover/_callerMargin-prop>`_ 
-   : real
--  `container </sdk/apps/qml/Ubuntu.Components/Popups.Popover/_container-prop>`_ 
-   : list<Object>
--  `contentHeight </sdk/apps/qml/Ubuntu.Components/Popups.Popover/_contentHeight-prop>`_ 
-   : real
--  `contentWidth </sdk/apps/qml/Ubuntu.Components/Popups.Popover/_contentWidth-prop>`_ 
-   : real
--  `edgeMargins </sdk/apps/qml/Ubuntu.Components/Popups.Popover/_edgeMargins-prop>`_ 
-   : real
--  `foregroundStyle </sdk/apps/qml/Ubuntu.Components/Popups.Popover/_foregroundStyle-prop>`_ 
-   : Component
--  `pointerTarget </sdk/apps/qml/Ubuntu.Components/Popups.Popover/_pointerTarget-prop>`_ 
-   : Item
--  `style </sdk/apps/qml/Ubuntu.Components/Popups.Popover/_style-prop>`_ 
-   : Component
--  `styleName </sdk/apps/qml/Ubuntu.Components/Popups.Popover/_styleName-prop>`_ 
-   : string
--  `theme </sdk/apps/qml/Ubuntu.Components/Popups.Popover/_theme-prop>`_ 
-   : ThemeSettings
+-  `autoClose </sdk/apps/qml/Ubuntu.Components/Popups.Popover/#autoClose-prop>`_  : bool
+-  `caller </sdk/apps/qml/Ubuntu.Components/Popups.Popover/#caller-prop>`_  : Item
+-  `callerMargin </sdk/apps/qml/Ubuntu.Components/Popups.Popover/#callerMargin-prop>`_  : real
+-  `container </sdk/apps/qml/Ubuntu.Components/Popups.Popover/#container-prop>`_  : list<Object>
+-  `contentHeight </sdk/apps/qml/Ubuntu.Components/Popups.Popover/#contentHeight-prop>`_  : real
+-  `contentWidth </sdk/apps/qml/Ubuntu.Components/Popups.Popover/#contentWidth-prop>`_  : real
+-  `edgeMargins </sdk/apps/qml/Ubuntu.Components/Popups.Popover/#edgeMargins-prop>`_  : real
+-  `foregroundStyle </sdk/apps/qml/Ubuntu.Components/Popups.Popover/#foregroundStyle-prop>`_  : Component
+-  `pointerTarget </sdk/apps/qml/Ubuntu.Components/Popups.Popover/#pointerTarget-prop>`_  : Item
+-  `style </sdk/apps/qml/Ubuntu.Components/Popups.Popover/#style-prop>`_  : Component
+-  `styleName </sdk/apps/qml/Ubuntu.Components/Popups.Popover/#styleName-prop>`_  : string
+-  `theme </sdk/apps/qml/Ubuntu.Components/Popups.Popover/#theme-prop>`_  : ThemeSettings
 
 Methods
 -------
 
--  `hide </sdk/apps/qml/Ubuntu.Components/Popups.Popover/_hide-method>`_ \ ()
--  `show </sdk/apps/qml/Ubuntu.Components/Popups.Popover/_show-method>`_ \ ()
+-  `hide </sdk/apps/qml/Ubuntu.Components/Popups.Popover/#hide-method>`_ \ ()
+-  `show </sdk/apps/qml/Ubuntu.Components/Popups.Popover/#show-method>`_ \ ()
 
 Detailed Description
 --------------------
 
-`See also the Design Guidelines on
-Popovers <https://design.ubuntu.com/apps/building-blocks/dialog#popover>`_ .
+`See also the Design Guidelines on Popovers <https://design.ubuntu.com/apps/building-blocks/dialog#popover>`_ .
 
 Example:
 
@@ -124,181 +106,132 @@ Example:
 Property Documentation
 ----------------------
 
-.. _sdk_ubuntu_components_popups_popover_autoClose-prop:
+.. _sdk_ubuntu_components_popups_popover_autoClose:
 
-+--------------------------------------------------------------------------+
-|        \ autoClose : bool                                                |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| autoClose : bool                                                                                                                                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-The property drives the automatic closing of the Popover when user taps
-on the dismissArea. The default behavior is to close the Popover,
-therefore set to true.
+The property drives the automatic closing of the Popover when user taps on the dismissArea. The default behavior is to close the Popover, therefore set to true.
 
-When set to false, closing the Popover is the responsibility of the
-caller. Also, the mouse and touch events are not blocked from the
-dismissArea.
+When set to false, closing the Popover is the responsibility of the caller. Also, the mouse and touch events are not blocked from the dismissArea.
 
-| 
+.. _sdk_ubuntu_components_popups_popover_caller:
 
-.. _sdk_ubuntu_components_popups_popover_-prop:
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| caller : :ref:`Item <sdk_qtquick_item>`                                                                                                                                                                                                                                                                         |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ caller : `Item <sdk_qtquick_item>`                         |
-+--------------------------------------------------------------------------+
+The Item such as a :ref:`Button <sdk_ubuntu_components_button>` that the user interacted with to open the Dialog. This property will be used for the automatic positioning of the Dialog next to the caller, if possible.
 
-The Item such as a :ref:`Button <sdk_ubuntu_components_button>` that the
-user interacted with to open the Dialog. This property will be used for
-the automatic positioning of the Dialog next to the caller, if possible.
+.. _sdk_ubuntu_components_popups_popover_callerMargin:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| callerMargin : real                                                                                                                                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_ubuntu_components_popups_popover_callerMargin-prop:
+The property holds the margin from the popover's caller. The property is themed.
 
-+--------------------------------------------------------------------------+
-|        \ callerMargin : real                                             |
-+--------------------------------------------------------------------------+
+.. _sdk_ubuntu_components_popups_popover_container:
 
-The property holds the margin from the popover's caller. The property is
-themed.
-
-| 
-
-.. _sdk_ubuntu_components_popups_popover_container-prop:
-
-+--------------------------------------------------------------------------+
-|        \ [default] container : list<Object>                              |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| [default] container : list<Object>                                                                                                                                                                                                                                                                           |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Content will be put inside the foreround of the Popover.
 
-| 
+.. _sdk_ubuntu_components_popups_popover_contentHeight:
 
-.. _sdk_ubuntu_components_popups_popover_contentHeight-prop:
-
-+--------------------------------------------------------------------------+
-|        \ contentHeight : real                                            |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| contentHeight : real                                                                                                                                                                                                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Use this property to override the default content height.
 
-| 
+.. _sdk_ubuntu_components_popups_popover_contentWidth:
 
-.. _sdk_ubuntu_components_popups_popover_contentWidth-prop:
-
-+--------------------------------------------------------------------------+
-|        \ contentWidth : real                                             |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| contentWidth : real                                                                                                                                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Use this property to override the default content width.
 
-| 
+.. _sdk_ubuntu_components_popups_popover_edgeMargins:
 
-.. _sdk_ubuntu_components_popups_popover_edgeMargins-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| edgeMargins : real                                                                                                                                                                                                                                                                                           |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ edgeMargins : real                                              |
-+--------------------------------------------------------------------------+
+The property holds the margins from the popover's dismissArea. The property is themed.
 
-The property holds the margins from the popover's dismissArea. The
-property is themed.
+.. _sdk_ubuntu_components_popups_popover_foregroundStyle:
 
-| 
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| foregroundStyle : :ref:`Component <sdk_qtqml_component>`                                                                                                                                                                                                                                                        |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_ubuntu_components_popups_popover_-prop:
+Exposes the style property of the :ref:`StyledItem <sdk_ubuntu_components_styleditem>` contained in the Popover. Refer to :ref:`StyledItem <sdk_ubuntu_components_styleditem>` how to use it.
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ foregroundStyle : `Component <sdk_qtqml_component>`        |
-+--------------------------------------------------------------------------+
+.. _sdk_ubuntu_components_popups_popover_pointerTarget:
 
-Exposes the style property of the
-:ref:`StyledItem <sdk_ubuntu_components_styleditem>` contained in the
-Popover. Refer to :ref:`StyledItem <sdk_ubuntu_components_styleditem>` how
-to use it.
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| pointerTarget : :ref:`Item <sdk_qtquick_item>`                                                                                                                                                                                                                                                                  |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-| 
+The property holds the item to which the pointer should be anchored to. This can be same as the caller or any child of the caller. By default the property is set to caller.
 
-.. _sdk_ubuntu_components_popups_popover_-prop:
+.. _sdk_ubuntu_components_popups_popover_style:
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ pointerTarget : `Item <sdk_qtquick_item>`                  |
-+--------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| style : :ref:`Component <sdk_qtqml_component>`                                                                                                                                                                                                                                                                  |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-The property holds the item to which the pointer should be anchored to.
-This can be same as the caller or any child of the caller. By default
-the property is set to caller.
-
-| 
-
-.. _sdk_ubuntu_components_popups_popover_-prop:
-
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ style : `Component <sdk_qtqml_component>`                  |
-+--------------------------------------------------------------------------+
-
-The style of the foreground of the Popover. This property takes
-precedence over
-`styleName </sdk/apps/qml/Ubuntu.Components/Popups.Popover/#styleName-prop>`_ 
+The style of the foreground of the Popover. This property takes precedence over `styleName </sdk/apps/qml/Ubuntu.Components/Popups.Popover/#styleName-prop>`_ 
 
 This QML property was introduced in Ubuntu.Components 1.3.
 
-**See also**
-:ref:`StyledItem::style <sdk_ubuntu_components_styleditem#style-prop>`.
+**See also** :ref:`StyledItem::style <sdk_ubuntu_components_styleditem_style>`.
 
-| 
+.. _sdk_ubuntu_components_popups_popover_styleName:
 
-.. _sdk_ubuntu_components_popups_popover_styleName-prop:
-
-+--------------------------------------------------------------------------+
-|        \ styleName : string                                              |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| styleName : string                                                                                                                                                                                                                                                                                           |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The style name of the foreground of the Popover.
 
 This QML property was introduced in Ubuntu.Components 1.3.
 
-**See also**
-:ref:`StyledItem::styleName <sdk_ubuntu_components_styleditem#styleName-prop>`.
+**See also** :ref:`StyledItem::styleName <sdk_ubuntu_components_styleditem_styleName>`.
 
-| 
+.. _sdk_ubuntu_components_popups_popover_theme:
 
-.. _sdk_ubuntu_components_popups_popover_-prop:
-
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ theme : `ThemeSettings <sdk_ubuntu_components_themesettings>` |
-+--------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| theme : :ref:`ThemeSettings <sdk_ubuntu_components_themesettings>`                                                                                                                                                                                                                                              |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Configure the theme of the Popover foreground and all its subcomponents.
 
 This QML property was introduced in Ubuntu.Components 1.3.
 
-**See also**
-:ref:`StyledItem::theme <sdk_ubuntu_components_styleditem#theme-prop>` and
-`Dialog::theme </sdk/apps/qml/Ubuntu.Components/Popups.Dialog/#theme-prop>`_ .
-
-| 
+**See also** :ref:`StyledItem::theme <sdk_ubuntu_components_styleditem_theme>` and `Dialog::theme </sdk/apps/qml/Ubuntu.Components/Popups.Dialog/#theme-prop>`_ .
 
 Method Documentation
 --------------------
 
-.. _sdk_ubuntu_components_popups_popover_hide-method:
+.. _sdk_ubuntu_components_popups_popover_hide:
 
-+--------------------------------------------------------------------------+
-|        \ hide()                                                          |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| hide()                                                                                                                                                                                                                                                                                                       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Hide the popover. Only use this function if you handle memory
-management. Otherwise use PopupUtils.close() to do it automatically.
+Hide the popover. Only use this function if you handle memory management. Otherwise use PopupUtils.close() to do it automatically.
 
-| 
+.. _sdk_ubuntu_components_popups_popover_show:
 
-.. _sdk_ubuntu_components_popups_popover_show-method:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| show()                                                                                                                                                                                                                                                                                                       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ show()                                                          |
-+--------------------------------------------------------------------------+
+Make the popover visible. Reparent to the background area object first if needed. Only use this function if you handle memory management. Otherwise use PopupUtils.open() to do it automatically.
 
-Make the popover visible. Reparent to the background area object first
-if needed. Only use this function if you handle memory management.
-Otherwise use PopupUtils.open() to do it automatically.
-
-| 

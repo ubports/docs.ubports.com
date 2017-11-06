@@ -1,18 +1,16 @@
 .. _sdk_ubuntuui_button:
+
 UbuntuUI Button
 ===============
 
 
 A Button.
 
-Note the Ubuntu CSS style classes: <em>positive</em>,
-<em>information</em>, <em>secondary</em>, and <em>negative</em>
+Note the Ubuntu CSS style classes: <em>positive</em>, <em>information</em>, <em>secondary</em>, and <em>negative</em>
 
-**``UbuntuUI.Button``**\ ( ``  `` )
-.. rubric:: Example
-   :name: example
+**UbuntuUI.Button**\ ()
 
-.. code:: code
+.. code:: html
 
      <button data-role="button" id="buttonID">text</button>
 
@@ -21,33 +19,27 @@ Note the Ubuntu CSS style classes: <em>positive</em>,
 
 -  Methods
 
-**``click``**\ ( ``callback `` )
+**click**\ (``callback``)
 Associate a function with the button's Click event
 
 **Parameters:**
 
--  ``callback`` **<Function>**
+- ``callback`` **<Function>**
 
    -  The function to execute on click
 
-.. rubric:: Example
-   :name: example-1
-
-.. code:: code
+.. code:: html
 
        UI.button("buttonid").click(function(){
                         console.log("clicked");
                        });
 
-DOMElement **``element``**\ ( ``  `` )
+DOMElement **element**\ ()
 Returns the DOM element associated with the id this widget is bind to.
 
 **Returns:** <DOMElement>
 
-.. rubric:: Example
-   :name: example-2
-
-.. code:: code
+.. code:: html
 
        var mybutton = UI.button("buttonid").element();
 

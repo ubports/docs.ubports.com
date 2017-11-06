@@ -1,16 +1,11 @@
 .. _sdk_qtsensors_qt_sensors_-_qml_example:
+
 QtSensors Qt Sensors - QML example
 ==================================
 
 
 
-|image0|
-
-.. rubric:: Qt Sensors in QML
-   :name: qt-sensors-in-qml
-
-To write a QML application that will use the QML sensors types in the
-QtSensors 5 import you need to to the following steps:
+To write a QML application that will use the QML sensors types in the QtSensors 5 import you need to to the following steps:
 
 Import the QtSensors 5.x declarative plugin:
 
@@ -29,9 +24,7 @@ In this example we use the :ref:`TiltSensor <sdk_qtsensors_tiltsensor>`:
         active: false
     }
 
-The Tilt-, AmbientLight- and the Proximity QML sensor types have the
-'enabled' property in common. To start or stop the sensor set this
-property to true or false.
+The Tilt-, AmbientLight- and the Proximity QML sensor types have the 'enabled' property in common. To start or stop the sensor set this property to true or false.
 
 .. code:: qml
 
@@ -81,6 +74,4 @@ Files:
 -  qmlqtsensors/main.cpp
 -  qmlqtsensors/qmlqtsensors.pro
 -  qmlqtsensors/qmlqtsensors.qrc
-
-.. |image0| image:: /media/sdk/apps/qml/qtsensors-qmlqtsensors-example/images/qmlqtsensors.png
 

@@ -1,4 +1,5 @@
 .. _sdk_ubuntu_components_menubar:
+
 Ubuntu.Components MenuBar
 =========================
 
@@ -11,21 +12,14 @@ MenuBar defines an application menu bar structure
 Properties
 ----------
 
--  :ref:`menus <sdk_ubuntu_components_menubar_menus-prop>` :
-   list<Menu>
+-  :ref:`menus <sdk_ubuntu_components_menubar_menus>` : list<Menu>
 
 Methods
 -------
 
--  void
-   **:ref:`appendMenu <sdk_ubuntu_components_menubar#appendMenu-method>`**\ (Menu
-   *menu*)
--  void
-   **:ref:`insertMenu <sdk_ubuntu_components_menubar#insertMenu-method>`**\ (int
-   *index*, Menu *menu*)
--  void
-   **:ref:`removeMenu <sdk_ubuntu_components_menubar#removeMenu-method>`**\ (Menu
-   *menu*)
+-  void :ref:`appendMenu <sdk_ubuntu_components_menubar_appendMenu>`\ (Menu *menu*)
+-  void :ref:`insertMenu <sdk_ubuntu_components_menubar_insertMenu>`\ (int *index*, Menu *menu*)
+-  void :ref:`removeMenu <sdk_ubuntu_components_menubar_removeMenu>`\ (Menu *menu*)
 
 Detailed Description
 --------------------
@@ -81,47 +75,38 @@ Example usage:
 Property Documentation
 ----------------------
 
-.. _sdk_ubuntu_components_menubar_-prop:
+.. _sdk_ubuntu_components_menubar_menus:
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ [default] menus : list<`Menu <sdk_ubuntu_components_menu>`>   |
-+--------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| [default] menus : list<:ref:`Menu <sdk_ubuntu_components_menu>`>                                                                                                                                                                                                                                                |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 List of Menus in this :ref:`MenuBar <sdk_ubuntu_components_menubar>`.
-
-| 
 
 Method Documentation
 --------------------
 
-.. _sdk_ubuntu_components_menubar_-method:
+.. _sdk_ubuntu_components_menubar_appendMenu:
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ void appendMenu(`Menu <sdk_ubuntu_components_menu>` *menu*)   |
-+--------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| void appendMenu(:ref:`Menu <sdk_ubuntu_components_menu>` *menu*)                                                                                                                                                                                                                                                |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 \* \* Append a Menu to the :ref:`MenuBar <sdk_ubuntu_components_menubar>`
 
-| 
+.. _sdk_ubuntu_components_menubar_insertMenu:
 
-.. _sdk_ubuntu_components_menubar_void insertMenu-method:
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| void insertMenu(int *index*, :ref:`Menu <sdk_ubuntu_components_menu>` *menu*)                                                                                                                                                                                                                                   |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ void insertMenu(int *index*,                                    |
-| :ref:`Menu <sdk_ubuntu_components_menu>` *menu*)                            |
-+--------------------------------------------------------------------------+
+\* \* Insert a Menu to the :ref:`MenuBar <sdk_ubuntu_components_menubar>` at the specified position
 
-\* \* Insert a Menu to the :ref:`MenuBar <sdk_ubuntu_components_menubar>`
-at the specified position
+.. _sdk_ubuntu_components_menubar_removeMenu:
 
-| 
-
-.. _sdk_ubuntu_components_menubar_-method:
-
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ void removeMenu(`Menu <sdk_ubuntu_components_menu>` *menu*)   |
-+--------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| void removeMenu(:ref:`Menu <sdk_ubuntu_components_menu>` *menu*)                                                                                                                                                                                                                                                |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 \* \* Remove a Menu from the :ref:`MenuBar <sdk_ubuntu_components_menubar>`
 
-| 

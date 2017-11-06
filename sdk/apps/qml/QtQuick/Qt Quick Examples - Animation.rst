@@ -1,28 +1,15 @@
 .. _sdk_qtquick_qt_quick_examples_-_animation:
+
 QtQuick Qt Quick Examples - Animation
 =====================================
 
 
 
-|image0|
+*Animation* is a collection of small QML examples relating to animation. Each example is a small QML file emphasizing a particular type or feature.
 
-*Animation* is a collection of small QML examples relating to animation.
-Each example is a small QML file emphasizing a particular type or
-feature.
+For more information about animations, visit `Important Concepts in Qt Quick - States, Transitions and Animations </sdk/apps/qml/QtQuick/qtquick-statesanimations-topic/>`_ .
 
-For more information about animations, visit `Important Concepts in Qt
-Quick - States, Transitions and
-Animations </sdk/apps/qml/QtQuick/qtquick-statesanimations-topic/>`_ .
-
-.. rubric:: Running the Example
-   :name: running-the-example
-
-To run the example from Qt Creator, open the **Welcome** mode and select
-the example from **Examples**. For more information, visit Building and
-Running an Example.
-
-.. rubric:: ColorAnimation
-   :name: coloranimation
+To run the example from Qt Creator, open the **Welcome** mode and select the example from **Examples**. For more information, visit Building and Running an Example.
 
 *ColorAnimation* uses color animations to fade a sky from day to night.
 
@@ -47,11 +34,7 @@ Running an Example.
         }
     }
 
-.. rubric:: PropertyAnimation
-   :name: propertyanimation
-
-*PropertyAnimation* uses number animations to bounce a circle up and
-down.
+*PropertyAnimation* uses number animations to bounce a circle up and down.
 
 .. code:: qml
 
@@ -72,9 +55,6 @@ down.
         // Then pause for 500ms
         PauseAnimation { duration: 500 }
     }
-
-.. rubric:: Animators
-   :name: animators
 
 *Animators* uses animators to bounce an icon up and down.
 
@@ -120,9 +100,6 @@ down.
         loops: Animation.Infinite
     }
 
-.. rubric:: Behaviors
-   :name: behaviors
-
 *Behaviors* uses behaviors to move a rectangle to where you click.
 
 .. code:: qml
@@ -132,12 +109,7 @@ down.
         NumberAnimation { easing.type: Easing.OutElastic; easing.amplitude: 3.0; easing.period: 2.0; duration: 300 }
     }
 
-.. rubric:: Wiggly Text
-   :name: wiggly-text
-
-*Wiggly Text* demonstrates using more complex behaviors to animate and
-wiggle some text around as you drag it. It does this by assigning a
-complex binding to each letter:
+*Wiggly Text* demonstrates using more complex behaviors to animate and wiggle some text around as you drag it. It does this by assigning a complex binding to each letter:
 
 .. code:: qml
 
@@ -151,30 +123,16 @@ Then, it uses behaviors to animate the movement of each letter:
                 Behavior on x { enabled: container.animated; SpringAnimation { spring: 3; damping: 0.3; mass: 1.0 } }
                 Behavior on y { enabled: container.animated; SpringAnimation { spring: 3; damping: 0.3; mass: 1.0 } }
 
-.. rubric:: Tv Tennis
-   :name: tv-tennis
-
-*Tv Tennis* uses complex behaviors to make the paddles follow a ball to
-simulate an infinite tennis game. Again, a binding which depends on
-other values is applied to the position and a behavior provided the
-animation.
+*Tv Tennis* uses complex behaviors to make the paddles follow a ball to simulate an infinite tennis game. Again, a binding which depends on other values is applied to the position and a behavior provided the animation.
 
 .. code:: qml
 
     y: ball.direction == 'left' ? ball.y - 45 : page.height/2 -45;
     Behavior on y { SpringAnimation{ velocity: 300 } }
 
-.. rubric:: Easing Curves
-   :name: easing-curves
+*Easing Curves* shows off all the easing curves available in Qt Quick animations.
 
-*Easing Curves* shows off all the easing curves available in Qt Quick
-animations.
-
-.. rubric:: States
-   :name: states
-
-*States* demonstrates how the properties of an item can vary between
-`states </sdk/apps/qml/QtQuick/qtquick-statesanimations-states/>`_ .
+*States* demonstrates how the properties of an item can vary between `states </sdk/apps/qml/QtQuick/qtquick-statesanimations-states/>`_ .
 
 It defines several states:
 
@@ -191,11 +149,7 @@ It defines several states:
         PropertyChanges { target: userIcon; x: bottomLeftRect.x; y: bottomLeftRect.y  }
     }
 
-.. rubric:: Transitions
-   :name: transitions
-
-*Transitions* takes the States example and animates the property changes
-by setting transitions:
+*Transitions* takes the States example and animates the property changes by setting transitions:
 
 .. code:: qml
 
@@ -218,11 +172,7 @@ by setting transitions:
             NumberAnimation { properties: "x,y"; duration: 200 }
         }
 
-.. rubric:: PathAnimation
-   :name: pathanimation
-
-*PathAnimation* animates an image along a bezier curve using a
-`PathAnimation </sdk/apps/qml/QtQuick/animation/#pathanimation>`_ .
+*PathAnimation* animates an image along a bezier curve using a `PathAnimation </sdk/apps/qml/QtQuick/animation/#pathanimation>`_ .
 
 .. code:: qml
 
@@ -245,13 +195,7 @@ by setting transitions:
         }
     }
 
-.. rubric:: PathInterpolator
-   :name: pathinterpolator
-
-*PathInterpolator* animates an image along the same bezier curve, using
-a
-`PathInterpolator </sdk/apps/qml/QtQuick/animation/#pathinterpolator>`_ 
-instead.
+*PathInterpolator* animates an image along the same bezier curve, using a `PathInterpolator </sdk/apps/qml/QtQuick/animation/#pathinterpolator>`_  instead.
 
 .. code:: qml
 
@@ -300,6 +244,4 @@ Files:
 -  animation/animation.pro
 -  animation/animation.qmlproject
 -  animation/animation.qrc
-
-.. |image0| image:: /media/sdk/apps/qml/qtquick-animation-example/images/qml-animations-example.png
 

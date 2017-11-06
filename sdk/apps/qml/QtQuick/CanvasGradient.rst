@@ -1,4 +1,5 @@
 .. _sdk_qtquick_canvasgradient:
+
 QtQuick CanvasGradient
 ======================
 
@@ -13,9 +14,7 @@ Provides an opaque CanvasGradient interface
 Methods
 -------
 
--  CanvasGradient
-   **:ref:`addColorStop <sdk_qtquick_canvasgradient#addColorStop-method>`**\ (real
-   *offsetof*, string *color*)
+-  CanvasGradient :ref:`addColorStop <sdk_qtquick_canvasgradient_addColorStop>`\ (real *offsetof*, string *color*)
 
 Detailed Description
 --------------------
@@ -23,16 +22,13 @@ Detailed Description
 Method Documentation
 --------------------
 
-.. _sdk_qtquick_canvasgradient_-method:
+.. _sdk_qtquick_canvasgradient_:
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ `CanvasGradient <sdk_qtquick_canvasgradient>`              |
-| addColorStop(real *offsetof*, string *color*)                            |
-+--------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`CanvasGradient <sdk_qtquick_canvasgradient>` addColorStop(real *offsetof*, string *color*)                                                                                                                                                                                                                |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Adds a color stop with the given color to the gradient at the given
-offset. 0.0 is the offset at one end of the gradient, 1.0 is the offset
-at the other end.
+Adds a color stop with the given color to the gradient at the given offset. 0.0 is the offset at one end of the gradient, 1.0 is the offset at the other end.
 
 For example:
 
@@ -42,4 +38,3 @@ For example:
     gradient.addColorStop(0.3, Qt.rgba(1, 0, 0, 1));
     gradient.addColorStop(0.7, 'rgba(0, 255, 255, 1');
 
-| 

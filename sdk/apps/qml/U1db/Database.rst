@@ -1,4 +1,5 @@
 .. _sdk_u1db_database:
+
 U1db Database
 =============
 
@@ -13,27 +14,21 @@ Database implements on-disk storage for documents and indexes.
 Properties
 ----------
 
--  :ref:`error <sdk_u1db_database_error-prop>` : string
--  :ref:`path <sdk_u1db_database_path-prop>` : string
+-  :ref:`error <sdk_u1db_database_error>` : string
+-  :ref:`path <sdk_u1db_database_path>` : string
 
 Methods
 -------
 
--  void
-   **:ref:`deleteDoc <sdk_u1db_database#deleteDoc-method>`**\ (string)
--  Variant
-   **:ref:`getDoc <sdk_u1db_database#getDoc-method>`**\ (string)
--  list<string>
-   **:ref:`listDocs <sdk_u1db_database#listDocs-method>`**\ ()
--  string :ref:`putDoc <sdk_u1db_database_putDoc-method>`\ (var,
-   string)
+-  void :ref:`deleteDoc <sdk_u1db_database_deleteDoc>`\ (string)
+-  Variant :ref:`getDoc <sdk_u1db_database_getDoc>`\ (string)
+-  list<string> :ref:`listDocs <sdk_u1db_database_listDocs>`\ ()
+-  string :ref:`putDoc <sdk_u1db_database_putDoc>`\ (var, string)
 
 Detailed Description
 --------------------
 
-In a ListView the Database can be used as a model which includes all
-documents in the database. For listing only a subset of documents Query
-can be used.
+In a ListView the Database can be used as a model which includes all documents in the database. For listing only a subset of documents Query can be used.
 
 .. code:: qml
 
@@ -52,74 +47,54 @@ can be used.
 Property Documentation
 ----------------------
 
-.. _sdk_u1db_database_error-prop:
+.. _sdk_u1db_database_error:
 
-+--------------------------------------------------------------------------+
-|        \ error : string                                                  |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| error : string                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The last error as a string if the last operation failed.
 
-| 
+.. _sdk_u1db_database_path:
 
-.. _sdk_u1db_database_path-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| path : string                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ path : string                                                   |
-+--------------------------------------------------------------------------+
-
-A relative *path* can be given to store the database in an app-specific
-writable folder. This is recommended as it ensures to work with
-confinement. If more control is needed absolute paths or local file URIs
-can be used. By default or if the path is empty everything is stored in
-memory.
-
-| 
+A relative *path* can be given to store the database in an app-specific writable folder. This is recommended as it ensures to work with confinement. If more control is needed absolute paths or local file URIs can be used. By default or if the path is empty everything is stored in memory.
 
 Method Documentation
 --------------------
 
-.. _sdk_u1db_database_void deleteDoc-method:
+.. _sdk_u1db_database_deleteDoc:
 
-+--------------------------------------------------------------------------+
-|        \ void deleteDoc(string)                                          |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| void deleteDoc(string)                                                                                                                                                                                                                                                                                       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Deletes the document identified by *docId*.
 
-| 
+.. _sdk_u1db_database_getDoc:
 
-.. _sdk_u1db_database_Variant getDoc-method:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Variant getDoc(string)                                                                                                                                                                                                                                                                                       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ Variant getDoc(string)                                          |
-+--------------------------------------------------------------------------+
+Returns the contents of a document by *docId* in a form that QML recognizes as a Variant object, it's identical to Document::getContents() with the same *docId*.
 
-Returns the contents of a document by *docId* in a form that QML
-recognizes as a Variant object, it's identical to
-Document::getContents() with the same *docId*.
+.. _sdk_u1db_database_listDocs:
 
-| 
-
-.. _sdk_u1db_database_list<string> listDocs-method:
-
-+--------------------------------------------------------------------------+
-|        \ list<string> listDocs()                                         |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| list<string> listDocs()                                                                                                                                                                                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Returns a list of all stored documents by their docId.
 
-| 
+.. _sdk_u1db_database_putDoc:
 
-.. _sdk_u1db_database_string putDoc-method:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| string putDoc(var, string)                                                                                                                                                                                                                                                                                   |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ string putDoc(var, string)                                      |
-+--------------------------------------------------------------------------+
+Updates the existing *contents* of the document identified by *docId* if there's no error. If no *docId* is given or *docId* is an empty string the *contents* will be stored under an autogenerated name. Returns the new revision of the document, or -1 on failure.
 
-Updates the existing *contents* of the document identified by *docId* if
-there's no error. If no *docId* is given or *docId* is an empty string
-the *contents* will be stored under an autogenerated name. Returns the
-new revision of the document, or -1 on failure.
-
-| 

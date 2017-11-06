@@ -1,9 +1,9 @@
 .. _sdk_qtorganizer_description:
+
 QtOrganizer Description
 =======================
 
-The Description element contains the description text of an organizer
-item.
+The Description element contains the description text of an organizer item.
 
 +---------------------+--------------------------+
 | Import Statement:   | import QtOrganizer 5.0   |
@@ -12,13 +12,12 @@ item.
 Properties
 ----------
 
--  :ref:`description <sdk_qtorganizer_description_description-prop>`
-   : string
+-  :ref:`description <sdk_qtorganizer_description_description>` : string
 
 Signals
 -------
 
--  :ref:`onDetailChanged <sdk_qtorganizer_description_onDetailChanged-signal>`\ ()
+-  :ref:`onDetailChanged <sdk_qtorganizer_description_onDetailChanged>`\ ()
 
 Detailed Description
 --------------------
@@ -32,26 +31,22 @@ The following fields are supported:
 Property Documentation
 ----------------------
 
-.. _sdk_qtorganizer_description_description-prop:
+.. _sdk_qtorganizer_description_description:
 
-+--------------------------------------------------------------------------+
-|        \ description : string                                            |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| description : string                                                                                                                                                                                                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the text of the description.
-
-| 
 
 Signal Documentation
 --------------------
 
-.. _sdk_qtorganizer_description_onDetailChanged()-prop:
+.. _sdk_qtorganizer_description_onDetailChanged:
 
-+--------------------------------------------------------------------------+
-|        \ onDetailChanged()                                               |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| onDetailChanged()                                                                                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-**See also**
-:ref:`Detail::onDetailChanged <sdk_qtorganizer_detail#onDetailChanged-signal>`.
+**See also** :ref:`Detail::onDetailChanged <sdk_qtorganizer_detail_onDetailChanged>`.
 
-| 

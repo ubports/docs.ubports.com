@@ -1,30 +1,15 @@
 .. _sdk_qtquick_qt_quick_examples_-_shader_effects:
+
 QtQuick Qt Quick Examples - Shader Effects
 ==========================================
 
 
 
-|image0|
+This example demonstrates a couple of visual effects that you can perform with shaders in Qt Quick. It applies five different effects on a text and a couple of images. For more information, visit `Important Concepts In Qt Quick - Graphical Effects </sdk/apps/qml/QtQuick/qtquick-effects-topic/>`_ 
 
-This example demonstrates a couple of visual effects that you can
-perform with shaders in Qt Quick. It applies five different effects on a
-text and a couple of images. For more information, visit `Important
-Concepts In Qt Quick - Graphical
-Effects </sdk/apps/qml/QtQuick/qtquick-effects-topic/>`_ 
+To run the example from Qt Creator, open the **Welcome** mode and select the example from **Examples**. For more information, visit Building and Running an Example.
 
-.. rubric:: Running the Example
-   :name: running-the-example
-
-To run the example from Qt Creator, open the **Welcome** mode and select
-the example from **Examples**. For more information, visit Building and
-Running an Example.
-
-.. rubric:: Using ShaderEffect
-   :name: using-shadereffect
-
-The :ref:`ShaderEffect <sdk_qtquick_shadereffect>` type typically operates
-on other types, using a
-:ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>`:
+The :ref:`ShaderEffect <sdk_qtquick_shadereffect>` type typically operates on other types, using a :ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>`:
 
 .. code:: qml
 
@@ -33,12 +18,9 @@ on other types, using a
         sourceItem: theItem
     }
 
-In the above snippet, ``theItem`` is the ID of a complex QML object in
-the file.
+In the above snippet, ``theItem`` is the ID of a complex QML object in the file.
 
-ShaderEffects can use this
-:ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>` as a texture in
-their fragment shader:
+ShaderEffects can use this :ref:`ShaderEffectSource <sdk_qtquick_shadereffectsource>` as a texture in their fragment shader:
 
 .. code:: qml
 
@@ -54,9 +36,7 @@ their fragment shader:
         "    gl_FragColor = texture2D(source, qt_TexCoord0 + amplitude * vec2(p.y, -p.x)) * qt_Opacity;" +
         "}"
 
-You can use any custom property on the
-:ref:`ShaderEffect <sdk_qtquick_shadereffect>` in your shader. This makes
-animated shader code very easy:
+You can use any custom property on the :ref:`ShaderEffect <sdk_qtquick_shadereffect>` in your shader. This makes animated shader code very easy:
 
 .. code:: qml
 
@@ -80,9 +60,7 @@ animated shader code very easy:
         PauseAnimation { duration: 1300 }
     }
 
-ShaderEffects can also have a custom vertext shader. Setting the mesh
-property on :ref:`ShaderEffect <sdk_qtquick_shadereffect>` provides more
-vertices for you to manipulate, enabling more effects.
+ShaderEffects can also have a custom vertext shader. Setting the mesh property on :ref:`ShaderEffect <sdk_qtquick_shadereffect>` provides more vertices for you to manipulate, enabling more effects.
 
 .. code:: qml
 
@@ -115,6 +93,4 @@ Files:
 -  shadereffects/shadereffects.pro
 -  shadereffects/shadereffects.qmlproject
 -  shadereffects/shadereffects.qrc
-
-.. |image0| image:: /media/sdk/apps/qml/qtquick-shadereffects-example/images/qml-shadereffects-example.png
 

@@ -1,9 +1,9 @@
 .. _sdk_qtcontacts_sortorder:
+
 QtContacts SortOrder
 ====================
 
-The SortOrder element defines how a list of contacts should be ordered
-according to some criteria.
+The SortOrder element defines how a list of contacts should be ordered according to some criteria.
 
 +---------------------+-------------------------+
 | Import Statement:   | import QtContacts 5.0   |
@@ -12,15 +12,11 @@ according to some criteria.
 Properties
 ----------
 
--  :ref:`blankPolicy <sdk_qtcontacts_sortorder_blankPolicy-prop>` :
-   enumeration
--  :ref:`caseSensitivity <sdk_qtcontacts_sortorder_caseSensitivity-prop>`
-   : enumeration
--  :ref:`detail <sdk_qtcontacts_sortorder_detail-prop>` :
-   enumeration
--  :ref:`direction <sdk_qtcontacts_sortorder_direction-prop>` :
-   enumeration
--  :ref:`field <sdk_qtcontacts_sortorder_field-prop>` : int
+-  :ref:`blankPolicy <sdk_qtcontacts_sortorder_blankPolicy>` : enumeration
+-  :ref:`caseSensitivity <sdk_qtcontacts_sortorder_caseSensitivity>` : enumeration
+-  :ref:`detail <sdk_qtcontacts_sortorder_detail>` : enumeration
+-  :ref:`direction <sdk_qtcontacts_sortorder_direction>` : enumeration
+-  :ref:`field <sdk_qtcontacts_sortorder_field>` : int
 
 Detailed Description
 --------------------
@@ -32,73 +28,54 @@ This element is part of the **QtContacts** module.
 Property Documentation
 ----------------------
 
-.. _sdk_qtcontacts_sortorder_blankPolicy-prop:
+.. _sdk_qtcontacts_sortorder_blankPolicy:
 
-+--------------------------------------------------------------------------+
-|        \ blankPolicy : enumeration                                       |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| blankPolicy : enumeration                                                                                                                                                                                                                                                                                    |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-This property enumerates the ways in which the sort order interprets
-blanks when sorting contacts.
+This property enumerates the ways in which the sort order interprets blanks when sorting contacts.
 
--  :ref:`SortOrder <sdk_qtcontacts_sortorder>`.BlanksFirst - Considers
-   blank values to evaluate to less than all other values in
-   comparisons.
--  :ref:`SortOrder <sdk_qtcontacts_sortorder>`.BlanksLast - Considers blank
-   values to evaluate to greater than all other values in comparisons.
+-  :ref:`SortOrder <sdk_qtcontacts_sortorder>`.BlanksFirst - Considers blank values to evaluate to less than all other values in comparisons.
+-  :ref:`SortOrder <sdk_qtcontacts_sortorder>`.BlanksLast - Considers blank values to evaluate to greater than all other values in comparisons.
 
-| 
+.. _sdk_qtcontacts_sortorder_caseSensitivity:
 
-.. _sdk_qtcontacts_sortorder_caseSensitivity-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| caseSensitivity : enumeration                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ caseSensitivity : enumeration                                   |
-+--------------------------------------------------------------------------+
-
-This property holds the case sensitivity of the sort order, the value
-can be one of:
+This property holds the case sensitivity of the sort order, the value can be one of:
 
 -  Qt.CaseInsensitive
 -  Qt.CaseSensitive - (default)
 
-| 
+.. _sdk_qtcontacts_sortorder_detail:
 
-.. _sdk_qtcontacts_sortorder_detail-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| detail : enumeration                                                                                                                                                                                                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ detail : enumeration                                            |
-+--------------------------------------------------------------------------+
+This property holds the detail type of the details which will be inspected to perform sorting.
 
-This property holds the detail type of the details which will be
-inspected to perform sorting.
+**See also** :ref:`ContactDetail::type <sdk_qtcontacts_contactdetail_type>`.
 
-**See also**
-:ref:`ContactDetail::type <sdk_qtcontacts_contactdetail#type-prop>`.
+.. _sdk_qtcontacts_sortorder_direction:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| direction : enumeration                                                                                                                                                                                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_qtcontacts_sortorder_direction-prop:
-
-+--------------------------------------------------------------------------+
-|        \ direction : enumeration                                         |
-+--------------------------------------------------------------------------+
-
-This property holds the direction of the sort order, the value can be
-one of:
+This property holds the direction of the sort order, the value can be one of:
 
 -  Qt.AscendingOrder - (default)
 -  Qt.DescendingOrder
 
-| 
+.. _sdk_qtcontacts_sortorder_field:
 
-.. _sdk_qtcontacts_sortorder_field-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| field : int                                                                                                                                                                                                                                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ field : int                                                     |
-+--------------------------------------------------------------------------+
+This property holds the detail field type of the details which will be inspected to perform sorting. For each detail elements, there are predefined field types.
 
-This property holds the detail field type of the details which will be
-inspected to perform sorting. For each detail elements, there are
-predefined field types.
-
-| 

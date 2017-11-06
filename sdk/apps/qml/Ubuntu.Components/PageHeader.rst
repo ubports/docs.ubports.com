@@ -1,43 +1,33 @@
 .. _sdk_ubuntu_components_pageheader:
+
 Ubuntu.Components PageHeader
 ============================
 
-The PageHeader shows a title with a leading and a trailing ActionBar
-that add action buttons to the header.
+The PageHeader shows a title with a leading and a trailing ActionBar that add action buttons to the header.
 
-+--------------------------------------+--------------------------------------+
-| Import Statement:                    | import Ubuntu.Components 1.3         |
-+--------------------------------------+--------------------------------------+
-| Inherits:                            | :ref:`Header <sdk_ubuntu_components_heade |
-|                                      | r>`_                                 |
-+--------------------------------------+--------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Import Statement:                                                                                                                                      | import Ubuntu.Components 1.3                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Inherits:                                                                                                                                              | :ref:`Header <sdk_ubuntu_components_header>`                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 -  Obsolete members
 
 Properties
 ----------
 
--  :ref:`contents <sdk_ubuntu_components_pageheader_contents-prop>`
-   : Item
--  :ref:`extension <sdk_ubuntu_components_pageheader_extension-prop>`
-   : Item
--  :ref:`leadingActionBar <sdk_ubuntu_components_pageheader_leadingActionBar-prop>`
-   : ActionBar
--  :ref:`navigationActions <sdk_ubuntu_components_pageheader_navigationActions-prop>`
-   : Action
--  :ref:`subtitle <sdk_ubuntu_components_pageheader_subtitle-prop>`
-   : string
--  :ref:`title <sdk_ubuntu_components_pageheader_title-prop>` :
-   string
--  :ref:`trailingActionBar <sdk_ubuntu_components_pageheader_trailingActionBar-prop>`
-   : ActionBar
+-  :ref:`contents <sdk_ubuntu_components_pageheader_contents>` : Item
+-  :ref:`extension <sdk_ubuntu_components_pageheader_extension>` : Item
+-  :ref:`leadingActionBar <sdk_ubuntu_components_pageheader_leadingActionBar>` : ActionBar
+-  :ref:`navigationActions <sdk_ubuntu_components_pageheader_navigationActions>` : Action
+-  :ref:`subtitle <sdk_ubuntu_components_pageheader_subtitle>` : string
+-  :ref:`title <sdk_ubuntu_components_pageheader_title>` : string
+-  :ref:`trailingActionBar <sdk_ubuntu_components_pageheader_trailingActionBar>` : ActionBar
 
 Detailed Description
 --------------------
 
-The colors for foreground, background and the divider are configured in
-the style, so they may be set using
-:ref:`StyleHints <sdk_ubuntu_components_stylehints>`:
+The colors for foreground, background and the divider are configured in the style, so they may be set using :ref:`StyleHints <sdk_ubuntu_components_stylehints>`:
 
 .. code:: qml
 
@@ -50,22 +40,18 @@ the style, so they may be set using
         }
     }
 
-See :ref:`Header <sdk_ubuntu_components_header>` properties that are
-inherited by :ref:`PageHeader <sdk_ubuntu_components_pageheader>` to
-control the visibility of the header.
+See :ref:`Header <sdk_ubuntu_components_header>` properties that are inherited by :ref:`PageHeader <sdk_ubuntu_components_pageheader>` to control the visibility of the header.
 
 Property Documentation
 ----------------------
 
-.. _sdk_ubuntu_components_pageheader_-prop:
+.. _sdk_ubuntu_components_pageheader_contents:
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ contents : `Item <sdk_qtquick_item>`                       |
-+--------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| contents : :ref:`Item <sdk_qtquick_item>`                                                                                                                                                                                                                                                                       |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-The contents item to display in the header. By default the contents is
-undefined, and setting it will disable showing of the title and
-subtitle.
+The contents item to display in the header. By default the contents is undefined, and setting it will disable showing of the title and subtitle.
 
 Example:
 
@@ -85,21 +71,13 @@ Example:
         }
     }
 
-| 
+.. _sdk_ubuntu_components_pageheader_extension:
 
-.. _sdk_ubuntu_components_pageheader_-prop:
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| extension : :ref:`Item <sdk_qtquick_item>`                                                                                                                                                                                                                                                                      |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ extension : `Item <sdk_qtquick_item>`                      |
-+--------------------------------------------------------------------------+
-
-Item shown at the bottom of the header. The extension can be any Item,
-but it must have a height so that the
-:ref:`PageHeader <sdk_ubuntu_components_pageheader>` correctly adjusts its
-height for the extension to fit. The extension Item should anchor to the
-left, right and bottom of its parent so that it will be automatically
-positioned above the header divider. This property replaces the sections
-property. Sections can now be added to the header as follows:
+Item shown at the bottom of the header. The extension can be any Item, but it must have a height so that the :ref:`PageHeader <sdk_ubuntu_components_pageheader>` correctly adjusts its height for the extension to fit. The extension Item should anchor to the left, right and bottom of its parent so that it will be automatically positioned above the header divider. This property replaces the sections property. Sections can now be added to the header as follows:
 
 .. code:: qml
 
@@ -115,20 +93,15 @@ property. Sections can now be added to the header as follows:
         }
     }
 
-See :ref:`Toolbar <sdk_ubuntu_components_toolbar>` and
-:ref:`Sections <sdk_ubuntu_components_sections>`.
+See :ref:`Toolbar <sdk_ubuntu_components_toolbar>` and :ref:`Sections <sdk_ubuntu_components_sections>`.
 
-| 
+.. _sdk_ubuntu_components_pageheader_leadingActionBar:
 
-.. _sdk_ubuntu_components_pageheader_[read-only] leadingActionBar-prop:
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| [read-only] leadingActionBar : :ref:`ActionBar <sdk_ubuntu_components_actionbar>`                                                                                                                                                                                                                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ [read-only] leadingActionBar :                                  |
-| :ref:`ActionBar <sdk_ubuntu_components_actionbar>`                          |
-+--------------------------------------------------------------------------+
-
-The :ref:`ActionBar <sdk_ubuntu_components_actionbar>` for the leading
-navigation actions. Example:
+The :ref:`ActionBar <sdk_ubuntu_components_actionbar>` for the leading navigation actions. Example:
 
 .. code:: qml
 
@@ -141,65 +114,39 @@ navigation actions. Example:
         ]
     }
 
-The default value of leadingActionBar actions is
-:ref:`navigationActions <sdk_ubuntu_components_pageheader#navigationActions-prop>`,
-but that value can be changed to show different actions in front of the
-title. The leading action bar has only one slot. See
-:ref:`ActionBar <sdk_ubuntu_components_actionbar>`.
+The default value of leadingActionBar actions is :ref:`navigationActions <sdk_ubuntu_components_pageheader_navigationActions>`, but that value can be changed to show different actions in front of the title. The leading action bar has only one slot. See :ref:`ActionBar <sdk_ubuntu_components_actionbar>`.
 
-| 
+.. _sdk_ubuntu_components_pageheader_navigationActions:
 
-.. _sdk_ubuntu_components_pageheader_-prop:
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| navigationActions : :ref:`Action <sdk_ubuntu_components_action>`                                                                                                                                                                                                                                                |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ navigationActions : `Action <sdk_ubuntu_components_action>`|
-+--------------------------------------------------------------------------+
+The actions to be shown in the leading action bar. This property is automatically set by the :ref:`AdaptivePageLayout <sdk_ubuntu_components_adaptivepagelayout>` and other navigation components to configure the back action for the :ref:`Page <sdk_ubuntu_components_page>`. Application developers should not set this property, because the value may be overridden by Ubuntu components that have navigation. Instead, set :ref:`leadingActionBar <sdk_ubuntu_components_pageheader_leadingActionBar>`'s actions property.
 
-The actions to be shown in the leading action bar. This property is
-automatically set by the
-:ref:`AdaptivePageLayout <sdk_ubuntu_components_adaptivepagelayout>` and
-other navigation components to configure the back action for the
-:ref:`Page <sdk_ubuntu_components_page>`. Application developers should not
-set this property, because the value may be overridden by Ubuntu
-components that have navigation. Instead, set
-:ref:`leadingActionBar <sdk_ubuntu_components_pageheader#leadingActionBar-prop>`'s
-actions property.
+.. _sdk_ubuntu_components_pageheader_subtitle:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| subtitle : string                                                                                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_ubuntu_components_pageheader_subtitle-prop:
+Displayed under the title. Hidden when the :ref:`contents <sdk_ubuntu_components_pageheader_contents>` Item is set.
 
-+--------------------------------------------------------------------------+
-|        \ subtitle : string                                               |
-+--------------------------------------------------------------------------+
+.. _sdk_ubuntu_components_pageheader_title:
 
-Displayed under the title. Hidden when the
-:ref:`contents <sdk_ubuntu_components_pageheader#contents-prop>` Item is
-set.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| title : string                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-| 
+The title to display in the header. Note that the title will be hidden if the :ref:`contents <sdk_ubuntu_components_pageheader_contents>` Item is set.
 
-.. _sdk_ubuntu_components_pageheader_title-prop:
+.. _sdk_ubuntu_components_pageheader_trailingActionBar:
 
-+--------------------------------------------------------------------------+
-|        \ title : string                                                  |
-+--------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| [read-only] trailingActionBar : :ref:`ActionBar <sdk_ubuntu_components_actionbar>`                                                                                                                                                                                                                              |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-The title to display in the header. Note that the title will be hidden
-if the :ref:`contents <sdk_ubuntu_components_pageheader#contents-prop>`
-Item is set.
-
-| 
-
-.. _sdk_ubuntu_components_pageheader_[read-only] trailingActionBar-prop:
-
-+--------------------------------------------------------------------------+
-|        \ [read-only] trailingActionBar :                                 |
-| :ref:`ActionBar <sdk_ubuntu_components_actionbar>`                          |
-+--------------------------------------------------------------------------+
-
-The :ref:`ActionBar <sdk_ubuntu_components_actionbar>` with trailing
-actions. Example:
+The :ref:`ActionBar <sdk_ubuntu_components_actionbar>` with trailing actions. Example:
 
 .. code:: qml
 
@@ -223,8 +170,5 @@ actions. Example:
         }
     }
 
-By default the trailing action bar automatically adapts its number of
-slots to the available space in the range from 3 to 6. See
-:ref:`ActionBar <sdk_ubuntu_components_actionbar>`.
+By default the trailing action bar automatically adapts its number of slots to the available space in the range from 3 to 6. See :ref:`ActionBar <sdk_ubuntu_components_actionbar>`.
 
-| 

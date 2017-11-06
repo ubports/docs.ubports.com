@@ -1,46 +1,26 @@
 .. _sdk_qtsensors_qt_sensors_-_explorer_qml_example:
+
 QtSensors Qt Sensors - Explorer QML Example
 ===========================================
 
 
 
-|image0|
-
 This example is divided into two parts:
 
--  A `C++
-   plugin </sdk/apps/qml/QtSensors/sensor_explorer/#sensor-explorer-qml-import>`_ 
-   that provides QML alternatives for ``QSensorExplorer``,
-   ``QPropertyInfo`` and ``QSensorItem`` C++ classes.
--  A `QML
-   Application </sdk/apps/qml/QtSensors/sensor_explorer/#sensor-explorer-qml-application>`_ 
-   that uses the QML types to read the sensor meta-data and present it.
+-  A `C++ plugin </sdk/apps/qml/QtSensors/sensor_explorer/#sensor-explorer-qml-import>`_  that provides QML alternatives for ``QSensorExplorer``, ``QPropertyInfo`` and ``QSensorItem`` C++ classes.
+-  A `QML Application </sdk/apps/qml/QtSensors/sensor_explorer/#sensor-explorer-qml-application>`_  that uses the QML types to read the sensor meta-data and present it.
 
-This example is built as an executable with C++ code that runs the QML,
-but it can also be launched directly using the ``qmlscene`` tool. You
-should build the top-level *sensor\_explorer* project before trying to
-run this example or it will not be able to find its dependencies.
+This example is built as an executable with C++ code that runs the QML, but it can also be launched directly using the ``qmlscene`` tool. You should build the top-level *sensor\_explorer* project before trying to run this example or it will not be able to find its dependencies.
 
 .. code:: cpp
 
     qmlscene -I . sensor_explorer.qml
 
-Above, the -I . parameter adds the current directory as a module import
-path to locate the Explorer QML module.
+Above, the -I . parameter adds the current directory as a module import path to locate the Explorer QML module.
 
-.. rubric:: Sensor Explorer QML Import
-   :name: sensor-explorer-qml-import
+The Sensor Explorer QML import defines the *Explorer* QML module, exporting ``QSensorExplorer``, ``QPropertyInfo`` and ``QSensorItem`` C++ classes as QML types. The source code is available in the ``sensor_explorer/import`` subdirectory.
 
-The Sensor Explorer QML import defines the *Explorer* QML module,
-exporting ``QSensorExplorer``, ``QPropertyInfo`` and ``QSensorItem`` C++
-classes as QML types. The source code is available in the
-``sensor_explorer/import`` subdirectory.
-
-.. rubric:: Sensor Explorer QML Application
-   :name: sensor-explorer-qml-application
-
-To write a QML application that will use the QML types exposed by the
-Explorer module, following steps are needed:
+To write a QML application that will use the QML types exposed by the Explorer module, following steps are needed:
 
 Import the Explorer 1.0 declarative plugin:
 
@@ -56,15 +36,13 @@ Create a SensorExplorer QML item:
         id: explorer
     }
 
-You can retrieve a list of all available sensors using
-``SensorExplorer.availableSensors``:
+You can retrieve a list of all available sensors using ``SensorExplorer.availableSensors``:
 
 .. code:: qml
 
     model: explorer.availableSensors
 
-The example uses the returned list as a model to populate a view of
-available sensors.
+The example uses the returned list as a model to populate a view of available sensors.
 
 To retrieve the properties of a sensor, use ``SensorItem.properties``:
 
@@ -72,20 +50,15 @@ To retrieve the properties of a sensor, use ``SensorItem.properties``:
 
     propertyList.model = explorer.selectedSensorItem.properties
 
-The property list is used as a model for another view that displays the
-property names and values.
+The property list is used as a model for another view that displays the property names and values.
 
-It is possible to edit the values of certain sensor properties.
-Selecting a writable property value will open an editor.
-``SensorExplorer`` QML type allows you to pass a new value for a sensor
-property value as follows:
+It is possible to edit the values of certain sensor properties. Selecting a writable property value will open an editor. ``SensorExplorer`` QML type allows you to pass a new value for a sensor property value as follows:
 
 .. code:: qml
 
     explorer.selectedSensorItem.changePropertyValue(propertyList.selectedItem, loaderEditor.item.text);
 
-Starting and stopping a sensor can be done by setting the
-``SensorItem.start`` property:
+Starting and stopping a sensor can be done by setting the ``SensorItem.start`` property:
 
 .. code:: qml
 
@@ -114,6 +87,4 @@ Files:
 -  sensor\_explorer/sensor\_explorer.pro
 -  sensor\_explorer/import/import.pro
 -  sensor\_explorer/import/qmldir
-
-.. |image0| image:: /media/sdk/apps/qml/qtsensors-sensor-explorer-example/images/qtsensors-examples-explorer.png
 

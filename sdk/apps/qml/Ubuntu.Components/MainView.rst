@@ -1,4 +1,5 @@
 .. _sdk_ubuntu_components_mainview:
+
 Ubuntu.Components MainView
 ==========================
 
@@ -13,21 +14,15 @@ MainView is the root Item that should be used for all applications.
 Properties
 ----------
 
--  :ref:`actionContext <sdk_ubuntu_components_mainview_actionContext-prop>`
-   : ActionContext
--  :ref:`anchorToKeyboard <sdk_ubuntu_components_mainview_anchorToKeyboard-prop>`
-   : bool
--  :ref:`applicationName <sdk_ubuntu_components_mainview_applicationName-prop>`
-   : string
--  :ref:`backgroundColor <sdk_ubuntu_components_mainview_backgroundColor-prop>`
-   : color
+-  :ref:`actionContext <sdk_ubuntu_components_mainview_actionContext>` : ActionContext
+-  :ref:`anchorToKeyboard <sdk_ubuntu_components_mainview_anchorToKeyboard>` : bool
+-  :ref:`applicationName <sdk_ubuntu_components_mainview_applicationName>` : string
+-  :ref:`backgroundColor <sdk_ubuntu_components_mainview_backgroundColor>` : color
 
 Detailed Description
 --------------------
 
-The simplest way to use a :ref:`MainView <sdk_ubuntu_components_mainview>`
-is to include a single :ref:`Page <sdk_ubuntu_components_page>` object
-inside the :ref:`MainView <sdk_ubuntu_components_mainview>`:
+The simplest way to use a :ref:`MainView <sdk_ubuntu_components_mainview>` is to include a single :ref:`Page <sdk_ubuntu_components_page>` object inside the :ref:`MainView <sdk_ubuntu_components_mainview>`:
 
 .. code:: qml
 
@@ -54,21 +49,11 @@ inside the :ref:`MainView <sdk_ubuntu_components_mainview>`:
         }
     }
 
-It is not required to set the anchors of the
-:ref:`Page <sdk_ubuntu_components_page>` as it will automatically fill its
-parent.
+It is not required to set the anchors of the :ref:`Page <sdk_ubuntu_components_page>` as it will automatically fill its parent.
 
-Do not include multiple Pages directly inside the
-:ref:`MainView <sdk_ubuntu_components_mainview>`, but use
-:ref:`AdaptivePageLayout <sdk_ubuntu_components_adaptivepagelayout>` inside
-:ref:`MainView <sdk_ubuntu_components_mainview>` to navigate between
-several Pages.
+Do not include multiple Pages directly inside the :ref:`MainView <sdk_ubuntu_components_mainview>`, but use :ref:`AdaptivePageLayout <sdk_ubuntu_components_adaptivepagelayout>` inside :ref:`MainView <sdk_ubuntu_components_mainview>` to navigate between several Pages.
 
-If the :ref:`Page <sdk_ubuntu_components_page>` inside the
-:ref:`MainView <sdk_ubuntu_components_mainview>` includes a Flickable, set
-the flickable property of the
-:ref:`PageHeader <sdk_ubuntu_components_pageheader>` to automatically hide
-and show the header when the user scrolls up or down:
+If the :ref:`Page <sdk_ubuntu_components_page>` inside the :ref:`MainView <sdk_ubuntu_components_mainview>` includes a Flickable, set the flickable property of the :ref:`PageHeader <sdk_ubuntu_components_pageheader>` to automatically hide and show the header when the user scrolls up or down:
 
 .. code:: qml
 
@@ -99,65 +84,46 @@ and show the header when the user scrolls up or down:
         }
     }
 
-The same header behavior is automatic when using a
-:ref:`ListView <sdk_qtquick_listview>` instead of a Flickable in the above
-example.
+The same header behavior is automatic when using a :ref:`ListView <sdk_qtquick_listview>` instead of a Flickable in the above example.
 
-The examples above show how to include a single
-:ref:`Page <sdk_ubuntu_components_page>` inside a
-:ref:`MainView <sdk_ubuntu_components_mainview>`, but more advanced
-application structures are possible using
-:ref:`AdaptivePageLayout <sdk_ubuntu_components_adaptivepagelayout>`.
+The examples above show how to include a single :ref:`Page <sdk_ubuntu_components_page>` inside a :ref:`MainView <sdk_ubuntu_components_mainview>`, but more advanced application structures are possible using :ref:`AdaptivePageLayout <sdk_ubuntu_components_adaptivepagelayout>`.
 
 Property Documentation
 ----------------------
 
-.. _sdk_ubuntu_components_mainview_[read-only] actionContext-prop:
+.. _sdk_ubuntu_components_mainview_actionContext:
 
-+--------------------------------------------------------------------------+
-|        \ [read-only] actionContext :                                     |
-| :ref:`ActionContext <sdk_ubuntu_components_actioncontext>`                  |
-+--------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| [read-only] actionContext : :ref:`ActionContext <sdk_ubuntu_components_actioncontext>`                                                                                                                                                                                                                          |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The action context of the :ref:`MainView <sdk_ubuntu_components_mainview>`.
 
 This QML property was introduced in Ubuntu.Components 1.3.
 
-| 
+.. _sdk_ubuntu_components_mainview_anchorToKeyboard:
 
-.. _sdk_ubuntu_components_mainview_anchorToKeyboard-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| anchorToKeyboard : bool                                                                                                                                                                                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ anchorToKeyboard : bool                                         |
-+--------------------------------------------------------------------------+
-
-The property holds if the application should automatically resize the
-contents when the input method appears
+The property holds if the application should automatically resize the contents when the input method appears
 
 The default value is false.
 
-| 
+.. _sdk_ubuntu_components_mainview_applicationName:
 
-.. _sdk_ubuntu_components_mainview_applicationName-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| applicationName : string                                                                                                                                                                                                                                                                                     |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ applicationName : string                                        |
-+--------------------------------------------------------------------------+
+The property holds the application's name, which must be the same as the desktop file's name. The name also sets the name of the QCoreApplication and defaults for data and cache folders that work on the desktop and under confinement, as well as the default gettext domain. C++ code that writes files may use QStandardPaths::writableLocation with QStandardPaths::DataLocation or QStandardPaths::CacheLocation.
 
-The property holds the application's name, which must be the same as the
-desktop file's name. The name also sets the name of the QCoreApplication
-and defaults for data and cache folders that work on the desktop and
-under confinement, as well as the default gettext domain. C++ code that
-writes files may use QStandardPaths::writableLocation with
-QStandardPaths::DataLocation or QStandardPaths::CacheLocation.
+.. _sdk_ubuntu_components_mainview_backgroundColor:
 
-| 
-
-.. _sdk_ubuntu_components_mainview_backgroundColor-prop:
-
-+--------------------------------------------------------------------------+
-|        \ backgroundColor : color                                         |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| backgroundColor : color                                                                                                                                                                                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Color of the background.
 
@@ -173,4 +139,3 @@ Example:
         backgroundColor: UbuntuColors.blue
     }
 
-| 

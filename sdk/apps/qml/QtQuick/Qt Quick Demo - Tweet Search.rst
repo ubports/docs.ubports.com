@@ -1,44 +1,21 @@
 .. _sdk_qtquick_qt_quick_demo_-_tweet_search:
+
 QtQuick Qt Quick Demo - Tweet Search
 ====================================
 
 
 
-|image0|
+*Tweet Search* is a QML application that searches items posted to Twitter service using a number of query parameters. Search can be done for tweets from a specified user, a hashtag, or a search phrase.
 
-|image1|
+The search result is a list of items showing the contents of the tweet as well as the name and image of the user who posted it. Hashtags, names and links in the content are clickable. Clicking on the image will flip the item to reveal more information.
 
-*Tweet Search* is a QML application that searches items posted to
-Twitter service using a number of query parameters. Search can be done
-for tweets from a specified user, a hashtag, or a search phrase.
-
-The search result is a list of items showing the contents of the tweet
-as well as the name and image of the user who posted it. Hashtags, names
-and links in the content are clickable. Clicking on the image will flip
-the item to reveal more information.
-
-.. rubric:: Running the Example
-   :name: running-the-example
-
-To run the example from Qt Creator, open the **Welcome** mode and select
-the example from **Examples**. For more information, visit Building and
-Running an Example.
+To run the example from Qt Creator, open the **Welcome** mode and select the example from **Examples**. For more information, visit Building and Running an Example.
 
 Tweet Search uses Twitter API v1.1 for running seaches.
 
-.. rubric:: Request Authentication
-   :name: request-authentication
+Each request must be authenticated on behalf of the application. For demonstration purposes, the application uses a hard-coded token for identifying itself to the Twitter service. However, this token is subject to rate limits for the number of requests as well as possible expiration.
 
-Each request must be authenticated on behalf of the application. For
-demonstration purposes, the application uses a hard-coded token for
-identifying itself to the Twitter service. However, this token is
-subject to rate limits for the number of requests as well as possible
-expiration.
-
-If you are having authentication or rate limit problems running the
-demo, obtain a set of application-specific tokens (consumer key and
-consumer secret) by registering a new application on
-https://dev.twitter.com/apps.
+If you are having authentication or rate limit problems running the demo, obtain a set of application-specific tokens (consumer key and consumer secret) by registering a new application on https://dev.twitter.com/apps.
 
 Type in the two token values in *TweetsModel.qml*:
 
@@ -49,15 +26,7 @@ Type in the two token values in *TweetsModel.qml*:
 
 Rebuild and run the demo.
 
-.. rubric:: JSON Parsing
-   :name: json-parsing
-
-Search results are returned in JSON (JavaScript Object Notation) format.
-``TweetsModel`` uses an XMLHTTPRequest object to send an HTTP GET
-request, and calls JSON.parse() on the returned text string to convert
-it to a JavaScript object. Each object representing a tweet is then
-added to a
-`ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#listmodel>`_ :
+Search results are returned in JSON (JavaScript Object Notation) format. ``TweetsModel`` uses an XMLHTTPRequest object to send an HTTP GET request, and calls JSON.parse() on the returned text string to convert it to a JavaScript object. Each object representing a tweet is then added to a `ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#listmodel>`_ :
 
 .. code:: qml
 
@@ -101,7 +70,4 @@ Files:
 -  demos/tweetsearch/tweetsearch.qrc
 
 **See also** QML Applications.
-
-.. |image0| image:: /media/sdk/apps/qml/qtquick-demos-tweetsearch-example/images/qtquick-demo-tweetsearch-med-1.png
-.. |image1| image:: /media/sdk/apps/qml/qtquick-demos-tweetsearch-example/images/qtquick-demo-tweetsearch-med-2.png
 

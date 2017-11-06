@@ -1,4 +1,5 @@
 .. _sdk_qtquick_dragevent:
+
 QtQuick DragEvent
 =================
 
@@ -11,89 +12,65 @@ Provides information about a drag event
 Properties
 ----------
 
--  :ref:`accepted <sdk_qtquick_dragevent_accepted-prop>` : bool
--  :ref:`action <sdk_qtquick_dragevent_action-prop>` : enumeration
--  :ref:`colorData <sdk_qtquick_dragevent_colorData-prop>` : color
--  :ref:`drag.source <sdk_qtquick_dragevent_drag.source-prop>` :
-   Object
--  :ref:`formats <sdk_qtquick_dragevent_formats-prop>` : stringlist
--  :ref:`hasColor <sdk_qtquick_dragevent_hasColor-prop>` : bool
--  :ref:`hasHtml <sdk_qtquick_dragevent_hasHtml-prop>` : bool
--  :ref:`hasText <sdk_qtquick_dragevent_hasText-prop>` : bool
--  :ref:`hasUrls <sdk_qtquick_dragevent_hasUrls-prop>` : bool
--  :ref:`html <sdk_qtquick_dragevent_html-prop>` : string
--  :ref:`keys <sdk_qtquick_dragevent_keys-prop>` : stringlist
--  :ref:`proposedAction <sdk_qtquick_dragevent_proposedAction-prop>`
-   : flags
--  :ref:`supportedActions <sdk_qtquick_dragevent_supportedActions-prop>`
-   : flags
--  :ref:`text <sdk_qtquick_dragevent_text-prop>` : string
--  :ref:`urls <sdk_qtquick_dragevent_urls-prop>` : urllist
--  :ref:`x <sdk_qtquick_dragevent_x-prop>` : real
--  :ref:`y <sdk_qtquick_dragevent_y-prop>` : real
+-  :ref:`accepted <sdk_qtquick_dragevent_accepted>` : bool
+-  :ref:`action <sdk_qtquick_dragevent_action>` : enumeration
+-  :ref:`colorData <sdk_qtquick_dragevent_colorData>` : color
+-  :ref:`drag.source <sdk_qtquick_dragevent_drag_source>` : Object
+-  :ref:`formats <sdk_qtquick_dragevent_formats>` : stringlist
+-  :ref:`hasColor <sdk_qtquick_dragevent_hasColor>` : bool
+-  :ref:`hasHtml <sdk_qtquick_dragevent_hasHtml>` : bool
+-  :ref:`hasText <sdk_qtquick_dragevent_hasText>` : bool
+-  :ref:`hasUrls <sdk_qtquick_dragevent_hasUrls>` : bool
+-  :ref:`html <sdk_qtquick_dragevent_html>` : string
+-  :ref:`keys <sdk_qtquick_dragevent_keys>` : stringlist
+-  :ref:`proposedAction <sdk_qtquick_dragevent_proposedAction>` : flags
+-  :ref:`supportedActions <sdk_qtquick_dragevent_supportedActions>` : flags
+-  :ref:`text <sdk_qtquick_dragevent_text>` : string
+-  :ref:`urls <sdk_qtquick_dragevent_urls>` : urllist
+-  :ref:`x <sdk_qtquick_dragevent_x>` : real
+-  :ref:`y <sdk_qtquick_dragevent_y>` : real
 
 Methods
 -------
 
--  :ref:`accept <sdk_qtquick_dragevent_accept-method-2>`\ (enumeration
-   *action*)
--  :ref:`accept <sdk_qtquick_dragevent_accept-method>`\ ()
--  :ref:`acceptProposedAction <sdk_qtquick_dragevent_acceptProposedAction-method>`\ ()
--  string
-   **:ref:`getDataAsString <sdk_qtquick_dragevent#getDataAsString-method>`**\ (string
-   *format*)
+-  :ref:`accept <sdk_qtquick_dragevent_accept>`\ (enumeration *action*)
+-  :ref:`accept <sdk_qtquick_dragevent_accept>`\ ()
+-  :ref:`acceptProposedAction <sdk_qtquick_dragevent_acceptProposedAction>`\ ()
+-  string :ref:`getDataAsString <sdk_qtquick_dragevent_getDataAsString>`\ (string *format*)
 
 Detailed Description
 --------------------
 
-The position of the drag event can be obtained from the
-:ref:`x <sdk_qtquick_dragevent#x-prop>` and
-:ref:`y <sdk_qtquick_dragevent#y-prop>` properties, and the
-:ref:`keys <sdk_qtquick_dragevent#keys-prop>` property identifies the drag
-keys of the event :ref:`source <sdk_qtquick_dragevent#drag.source-prop>`.
+The position of the drag event can be obtained from the :ref:`x <sdk_qtquick_dragevent_x>` and :ref:`y <sdk_qtquick_dragevent_y>` properties, and the :ref:`keys <sdk_qtquick_dragevent_keys>` property identifies the drag keys of the event :ref:`source <sdk_qtquick_dragevent_drag.source>`.
 
-The existence of specific drag types can be determined using the
-:ref:`hasColor <sdk_qtquick_dragevent#hasColor-prop>`,
-:ref:`hasHtml <sdk_qtquick_dragevent#hasHtml-prop>`,
-:ref:`hasText <sdk_qtquick_dragevent#hasText-prop>`, and
-:ref:`hasUrls <sdk_qtquick_dragevent#hasUrls-prop>` properties.
+The existence of specific drag types can be determined using the :ref:`hasColor <sdk_qtquick_dragevent_hasColor>`, :ref:`hasHtml <sdk_qtquick_dragevent_hasHtml>`, :ref:`hasText <sdk_qtquick_dragevent_hasText>`, and :ref:`hasUrls <sdk_qtquick_dragevent_hasUrls>` properties.
 
-The list of all supplied formats can be determined using the
-:ref:`formats <sdk_qtquick_dragevent#formats-prop>` property.
+The list of all supplied formats can be determined using the :ref:`formats <sdk_qtquick_dragevent_formats>` property.
 
-Specific drag types can be obtained using the
-:ref:`colorData <sdk_qtquick_dragevent#colorData-prop>`,
-:ref:`html <sdk_qtquick_dragevent#html-prop>`,
-`text </sdk/apps/qml/QtQuick/qtquick-releasenotes/#text>`_ , and
-:ref:`urls <sdk_qtquick_dragevent#urls-prop>` properties.
+Specific drag types can be obtained using the :ref:`colorData <sdk_qtquick_dragevent_colorData>`, :ref:`html <sdk_qtquick_dragevent_html>`, `text </sdk/apps/qml/QtQuick/qtquick-releasenotes/#text>`_ , and :ref:`urls <sdk_qtquick_dragevent_urls>` properties.
 
-A string version of any available mimeType can be obtained using
-:ref:`getDataAsString <sdk_qtquick_dragevent#getDataAsString-method>`.
+A string version of any available mimeType can be obtained using :ref:`getDataAsString <sdk_qtquick_dragevent_getDataAsString>`.
 
 Property Documentation
 ----------------------
 
-.. _sdk_qtquick_dragevent_accepted-prop:
+.. _sdk_qtquick_dragevent_accepted:
 
-+--------------------------------------------------------------------------+
-|        \ accepted : bool                                                 |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| accepted : bool                                                                                                                                                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds whether the drag event was accepted by a handler.
 
 The default value is true.
 
-| 
+.. _sdk_qtquick_dragevent_action:
 
-.. _sdk_qtquick_dragevent_action-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| action : enumeration                                                                                                                                                                                                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ action : enumeration                                            |
-+--------------------------------------------------------------------------+
-
-This property holds the action that the
-:ref:`source <sdk_qtquick_dragevent#drag.source-prop>` is to perform on an
-accepted drop.
+This property holds the action that the :ref:`source <sdk_qtquick_dragevent_drag.source>` is to perform on an accepted drop.
 
 The drop action may be one of:
 
@@ -102,237 +79,186 @@ The drop action may be one of:
 -  Qt.LinkAction Create a link from the source to the target.
 -  Qt.IgnoreAction Ignore the action (do nothing with the data).
 
-| 
+.. _sdk_qtquick_dragevent_colorData:
 
-.. _sdk_qtquick_dragevent_colorData-prop:
-
-+--------------------------------------------------------------------------+
-|        \ colorData : color                                               |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| colorData : color                                                                                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds color data, if any.
 
 This QML property was introduced in Qt 5.2.
 
-| 
+.. _sdk_qtquick_dragevent_drag_source:
 
-.. _sdk_qtquick_dragevent_drag.source-prop:
-
-+--------------------------------------------------------------------------+
-|        \ drag.source : Object                                            |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| drag.source : Object                                                                                                                                                                                                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the source of a drag event.
 
-| 
+.. _sdk_qtquick_dragevent_formats:
 
-.. _sdk_qtquick_dragevent_formats-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| formats : stringlist                                                                                                                                                                                                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ formats : stringlist                                            |
-+--------------------------------------------------------------------------+
-
-This property holds a list of mime type formats contained in the drag
-data.
+This property holds a list of mime type formats contained in the drag data.
 
 This QML property was introduced in Qt 5.2.
 
-| 
+.. _sdk_qtquick_dragevent_hasColor:
 
-.. _sdk_qtquick_dragevent_hasColor-prop:
-
-+--------------------------------------------------------------------------+
-|        \ hasColor : bool                                                 |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| hasColor : bool                                                                                                                                                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds whether the drag event contains a color item.
 
 This QML property was introduced in Qt 5.2.
 
-| 
+.. _sdk_qtquick_dragevent_hasHtml:
 
-.. _sdk_qtquick_dragevent_hasHtml-prop:
-
-+--------------------------------------------------------------------------+
-|        \ hasHtml : bool                                                  |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| hasHtml : bool                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds whether the drag event contains a html item.
 
 This QML property was introduced in Qt 5.2.
 
-| 
+.. _sdk_qtquick_dragevent_hasText:
 
-.. _sdk_qtquick_dragevent_hasText-prop:
-
-+--------------------------------------------------------------------------+
-|        \ hasText : bool                                                  |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| hasText : bool                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds whether the drag event contains a text item.
 
 This QML property was introduced in Qt 5.2.
 
-| 
+.. _sdk_qtquick_dragevent_hasUrls:
 
-.. _sdk_qtquick_dragevent_hasUrls-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| hasUrls : bool                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ hasUrls : bool                                                  |
-+--------------------------------------------------------------------------+
-
-This property holds whether the drag event contains one or more url
-items.
+This property holds whether the drag event contains one or more url items.
 
 This QML property was introduced in Qt 5.2.
 
-| 
+.. _sdk_qtquick_dragevent_html:
 
-.. _sdk_qtquick_dragevent_html-prop:
-
-+--------------------------------------------------------------------------+
-|        \ html : string                                                   |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| html : string                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds html data, if any.
 
 This QML property was introduced in Qt 5.2.
 
-| 
+.. _sdk_qtquick_dragevent_keys:
 
-.. _sdk_qtquick_dragevent_keys-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| keys : stringlist                                                                                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ keys : stringlist                                               |
-+--------------------------------------------------------------------------+
+This property holds a list of keys identifying the data type or source of a drag event.
 
-This property holds a list of keys identifying the data type or source
-of a drag event.
+.. _sdk_qtquick_dragevent_proposedAction:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| proposedAction : flags                                                                                                                                                                                                                                                                                       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_qtquick_dragevent_proposedAction-prop:
-
-+--------------------------------------------------------------------------+
-|        \ proposedAction : flags                                          |
-+--------------------------------------------------------------------------+
-
-This property holds the set of
-:ref:`actions <sdk_qtquick_dragevent#action-prop>` proposed by the drag
-source.
+This property holds the set of :ref:`actions <sdk_qtquick_dragevent_action>` proposed by the drag source.
 
 This QML property was introduced in Qt 5.2.
 
-| 
+.. _sdk_qtquick_dragevent_supportedActions:
 
-.. _sdk_qtquick_dragevent_supportedActions-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| supportedActions : flags                                                                                                                                                                                                                                                                                     |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ supportedActions : flags                                        |
-+--------------------------------------------------------------------------+
+This property holds the set of :ref:`actions <sdk_qtquick_dragevent_action>` supported by the drag source.
 
-This property holds the set of
-:ref:`actions <sdk_qtquick_dragevent#action-prop>` supported by the drag
-source.
+.. _sdk_qtquick_dragevent_text:
 
-| 
-
-.. _sdk_qtquick_dragevent_text-prop:
-
-+--------------------------------------------------------------------------+
-|        \ text : string                                                   |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| text : string                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds text data, if any.
 
 This QML property was introduced in Qt 5.2.
 
-| 
+.. _sdk_qtquick_dragevent_urls:
 
-.. _sdk_qtquick_dragevent_urls-prop:
-
-+--------------------------------------------------------------------------+
-|        \ urls : urllist                                                  |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| urls : urllist                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds a list of urls, if any.
 
 This QML property was introduced in Qt 5.2.
 
-| 
+.. _sdk_qtquick_dragevent_x:
 
-.. _sdk_qtquick_dragevent_x-prop:
-
-+--------------------------------------------------------------------------+
-|        \ x : real                                                        |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| x : real                                                                                                                                                                                                                                                                                                     |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the x coordinate of a drag event.
 
-| 
+.. _sdk_qtquick_dragevent_y:
 
-.. _sdk_qtquick_dragevent_y-method:
-
-+--------------------------------------------------------------------------+
-|        \ y : real                                                        |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| y : real                                                                                                                                                                                                                                                                                                     |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the y coordinate of a drag event.
-
-| 
 
 Method Documentation
 --------------------
 
-.. _sdk_qtquick_dragevent_accept-method:
+.. _sdk_qtquick_dragevent_accept:
 
-+--------------------------------------------------------------------------+
-|        \ accept(enumeration *action*)                                    |
-+--------------------------------------------------------------------------+
-
-Accepts the drag event.
-
-If an *action* is specified it will overwrite the value of the
-:ref:`action <sdk_qtquick_dragevent#action-prop>` property.
-
-| 
-
-.. _sdk_qtquick_dragevent_accept-method:
-
-+--------------------------------------------------------------------------+
-|        \ accept()                                                        |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| accept(enumeration *action*)                                                                                                                                                                                                                                                                                 |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Accepts the drag event.
 
-If an *action* is specified it will overwrite the value of the
-:ref:`action <sdk_qtquick_dragevent#action-prop>` property.
+If an *action* is specified it will overwrite the value of the :ref:`action <sdk_qtquick_dragevent_action>` property.
 
-| 
+.. _sdk_qtquick_dragevent_accept1:
 
-.. _sdk_qtquick_dragevent_acceptProposedAction-method:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| accept()                                                                                                                                                                                                                                                                                                     |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ acceptProposedAction()                                          |
-+--------------------------------------------------------------------------+
+Accepts the drag event.
 
-Accepts the drag event with the
-:ref:`proposedAction <sdk_qtquick_dragevent#proposedAction-prop>`.
+If an *action* is specified it will overwrite the value of the :ref:`action <sdk_qtquick_dragevent_action>` property.
 
-This QML method was introduced in Qt 5.2.
+.. _sdk_qtquick_dragevent_acceptProposedAction:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| acceptProposedAction()                                                                                                                                                                                                                                                                                       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_qtquick_dragevent_string getDataAsString-method:
-
-+--------------------------------------------------------------------------+
-|        \ string getDataAsString(string *format*)                         |
-+--------------------------------------------------------------------------+
-
-Returns the data for the given *format* converted to a string. *format*
-should be one contained in the
-:ref:`formats <sdk_qtquick_dragevent#formats-prop>` property.
+Accepts the drag event with the :ref:`proposedAction <sdk_qtquick_dragevent_proposedAction>`.
 
 This QML method was introduced in Qt 5.2.
 
-| 
+.. _sdk_qtquick_dragevent_getDataAsString:
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| string getDataAsString(string *format*)                                                                                                                                                                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Returns the data for the given *format* converted to a string. *format* should be one contained in the :ref:`formats <sdk_qtquick_dragevent_formats>` property.
+
+This QML method was introduced in Qt 5.2.
+

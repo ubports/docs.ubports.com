@@ -1,4 +1,5 @@
 .. _sdk_ubuntu_content_contenthub:
+
 Ubuntu.Content ContentHub
 =========================
 
@@ -11,12 +12,9 @@ The central manager for all content operations
 Signals
 -------
 
--  **:ref:`exportRequested <sdk_ubuntu_content_contenthub#exportRequested-signal>`**\ (ContentTransfer
-   *transfer*)
--  **:ref:`importRequested <sdk_ubuntu_content_contenthub#importRequested-signal>`**\ (ContentTransfer
-   *transfer*)
--  **:ref:`shareRequested <sdk_ubuntu_content_contenthub#shareRequested-signal>`**\ (ContentTransfer
-   *transfer*)
+-  :ref:`exportRequested <sdk_ubuntu_content_contenthub_exportRequested>`\ (ContentTransfer *transfer*)
+-  :ref:`importRequested <sdk_ubuntu_content_contenthub_importRequested>`\ (ContentTransfer *transfer*)
+-  :ref:`shareRequested <sdk_ubuntu_content_contenthub_shareRequested>`\ (ContentTransfer *transfer*)
 
 Detailed Description
 --------------------
@@ -95,32 +93,27 @@ Example usage for providing a content export:
 Signal Documentation
 --------------------
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ exportRequested(`ContentTransfer <sdk_ubuntu_content_contenttra |
-| nsfer>`_                                                                 |
-| *transfer*)                                                              |
-+--------------------------------------------------------------------------+
+.. _sdk_ubuntu_content_contenthub_exportRequested:
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| exportRequested(:ref:`ContentTransfer <sdk_ubuntu_content_contenttransfer>` *transfer*)                                                                                                                                                                                                                         |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The signal is triggered when an export is requested.
 
-| 
+.. _sdk_ubuntu_content_contenthub_importRequested:
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ importRequested(`ContentTransfer <sdk_ubuntu_content_contenttra |
-| nsfer>`_                                                                 |
-| *transfer*)                                                              |
-+--------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| importRequested(:ref:`ContentTransfer <sdk_ubuntu_content_contenttransfer>` *transfer*)                                                                                                                                                                                                                         |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The signal is triggered when an import is requested.
 
-| 
+.. _sdk_ubuntu_content_contenthub_shareRequested:
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ shareRequested(`ContentTransfer <sdk_ubuntu_content_contenttran |
-| sfer>`_                                                                  |
-| *transfer*)                                                              |
-+--------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| shareRequested(:ref:`ContentTransfer <sdk_ubuntu_content_contenttransfer>` *transfer*)                                                                                                                                                                                                                          |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The signal is triggered when a share is requested.
 
-| 

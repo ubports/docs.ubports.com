@@ -1,9 +1,9 @@
 .. _sdk_qtcontacts_relationship:
+
 QtContacts Relationship
 =======================
 
-The Relationship element describes a one-to-one relationship between a
-locally-stored contact and another (possibly remote) contact.
+The Relationship element describes a one-to-one relationship between a locally-stored contact and another (possibly remote) contact.
 
 +---------------------+-------------------------+
 | Import Statement:   | import QtContacts 5.0   |
@@ -12,9 +12,9 @@ locally-stored contact and another (possibly remote) contact.
 Properties
 ----------
 
--  :ref:`first <sdk_qtcontacts_relationship_first-prop>` : int
--  :ref:`second <sdk_qtcontacts_relationship_second-prop>` : int
--  :ref:`type <sdk_qtcontacts_relationship_type-prop>` : string
+-  :ref:`first <sdk_qtcontacts_relationship_first>` : int
+-  :ref:`second <sdk_qtcontacts_relationship_second>` : int
+-  :ref:`type <sdk_qtcontacts_relationship_type>` : string
 
 Detailed Description
 --------------------
@@ -26,37 +26,29 @@ This element is part of the **QtContacts** module.
 Property Documentation
 ----------------------
 
-.. _sdk_qtcontacts_relationship_first-prop:
+.. _sdk_qtcontacts_relationship_first:
 
-+--------------------------------------------------------------------------+
-|        \ first : int                                                     |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| first : int                                                                                                                                                                                                                                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-This property holds the locally-stored contact which has a relationship
-of the given type with the second contact.
+This property holds the locally-stored contact which has a relationship of the given type with the second contact.
 
-| 
+.. _sdk_qtcontacts_relationship_second:
 
-.. _sdk_qtcontacts_relationship_second-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| second : int                                                                                                                                                                                                                                                                                                 |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ second : int                                                    |
-+--------------------------------------------------------------------------+
+This property holds the contact with which the first contact has a relationship of the given type.
 
-This property holds the contact with which the first contact has a
-relationship of the given type.
+.. _sdk_qtcontacts_relationship_type:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| type : string                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_qtcontacts_relationship_type-prop:
-
-+--------------------------------------------------------------------------+
-|        \ type : string                                                   |
-+--------------------------------------------------------------------------+
-
-This property holds the type of relationship which the source contact
-has with the destination contacts. The value for this property can be
-one of:
+This property holds the type of relationship which the source contact has with the destination contacts. The value for this property can be one of:
 
 -  HasMember
 -  Aggregates
@@ -67,4 +59,3 @@ one of:
 
 or any other customized relationship type string.
 
-| 

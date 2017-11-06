@@ -1,9 +1,9 @@
 .. _sdk_qtorganizer_displaylabel:
+
 QtOrganizer DisplayLabel
 ========================
 
-The DisplayLabel element contains the display label of an organizer
-item.
+The DisplayLabel element contains the display label of an organizer item.
 
 +---------------------+--------------------------+
 | Import Statement:   | import QtOrganizer 5.0   |
@@ -12,12 +12,12 @@ item.
 Properties
 ----------
 
--  :ref:`label <sdk_qtorganizer_displaylabel_label-prop>` : string
+-  :ref:`label <sdk_qtorganizer_displaylabel_label>` : string
 
 Signals
 -------
 
--  :ref:`onDetailChanged <sdk_qtorganizer_displaylabel_onDetailChanged-signal>`\ ()
+-  :ref:`onDetailChanged <sdk_qtorganizer_displaylabel_onDetailChanged>`\ ()
 
 Detailed Description
 --------------------
@@ -31,26 +31,22 @@ The following fields are supported:
 Property Documentation
 ----------------------
 
-.. _sdk_qtorganizer_displaylabel_label-prop:
+.. _sdk_qtorganizer_displaylabel_label:
 
-+--------------------------------------------------------------------------+
-|        \ label : string                                                  |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| label : string                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the display label text.
-
-| 
 
 Signal Documentation
 --------------------
 
-.. _sdk_qtorganizer_displaylabel_onDetailChanged()-prop:
+.. _sdk_qtorganizer_displaylabel_onDetailChanged:
 
-+--------------------------------------------------------------------------+
-|        \ onDetailChanged()                                               |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| onDetailChanged()                                                                                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-**See also**
-:ref:`Detail::onDetailChanged <sdk_qtorganizer_detail#onDetailChanged-signal>`.
+**See also** :ref:`Detail::onDetailChanged <sdk_qtorganizer_detail_onDetailChanged>`.
 
-| 

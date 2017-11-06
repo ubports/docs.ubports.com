@@ -1,27 +1,22 @@
 .. _sdk_ubuntu_components_ubuntulistview:
+
 Ubuntu.Components UbuntuListView
 ================================
 
-A ListView with special features tailored for a look and feel fitting
-the Ubuntu Touch platform. The UbuntuListView works just like a regular
-ListView, but it adds special features such as expanding/collapsing
-items (when used together with the Expandable item). It provides
-features like automatically positioning the expanding item when it
-expands and collapsing it again when the user taps outside of it.
+A ListView with special features tailored for a look and feel fitting the Ubuntu Touch platform. The UbuntuListView works just like a regular ListView, but it adds special features such as expanding/collapsing items (when used together with the Expandable item). It provides features like automatically positioning the expanding item when it expands and collapsing it again when the user taps outside of it.
 
-+--------------------------------------+--------------------------------------+
-| Import Statement:                    | import Ubuntu.Components 1.3         |
-+--------------------------------------+--------------------------------------+
-| Inherits:                            | :ref:`ListView <sdk_qtquick_listview>`  |
-+--------------------------------------+--------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Import Statement:                                                                                                                                      | import Ubuntu.Components 1.3                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Inherits:                                                                                                                                              | :ref:`ListView <sdk_qtquick_listview>`                                                                                                                    |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 -  Obsolete members
 
 Properties
 ----------
 
--  :ref:`pullToRefresh <sdk_ubuntu_components_ubuntulistview_pullToRefresh-prop>`
-   : pullToRefresh
+-  :ref:`pullToRefresh <sdk_ubuntu_components_ubuntulistview_pullToRefresh>` : pullToRefresh
 
 Detailed Description
 --------------------
@@ -54,16 +49,13 @@ Examples:
 Property Documentation
 ----------------------
 
-.. _sdk_ubuntu_components_ubuntulistview_[read-only] pullToRefresh-prop:
+.. _sdk_ubuntu_components_ubuntulistview_pullToRefresh:
 
-+--------------------------------------------------------------------------+
-|        \ [read-only] pullToRefresh :                                     |
-| :ref:`pullToRefresh <sdk_ubuntu_components_ubuntulistview#pullToRefresh-prop> |
-| `_                                                                       |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| [read-only] pullToRefresh : :ref:`pullToRefresh <sdk_ubuntu_components_ubuntulistview_pullToRefresh>`                                                                                                                                                                                                        |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Attached :ref:`PullToRefresh <sdk_ubuntu_components_pulltorefresh>` to
-control manual model refresh. The component is disabled by default.
+Attached :ref:`PullToRefresh <sdk_ubuntu_components_pulltorefresh>` to control manual model refresh. The component is disabled by default.
 
 .. code:: qml
 
@@ -95,4 +87,3 @@ control manual model refresh. The component is disabled by default.
 
 This QML property was introduced in Ubuntu.Components 1.1.
 
-| 

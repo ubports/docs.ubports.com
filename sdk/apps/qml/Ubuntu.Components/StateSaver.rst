@@ -1,4 +1,5 @@
 .. _sdk_ubuntu_components_statesaver:
+
 Ubuntu.Components StateSaver
 ============================
 
@@ -11,33 +12,17 @@ Attached properties to save component property states.
 Properties
 ----------
 
--  :ref:`enabled <sdk_ubuntu_components_statesaver_enabled-prop>` :
-   bool
--  :ref:`properties <sdk_ubuntu_components_statesaver_properties-prop>`
-   : string
+-  :ref:`enabled <sdk_ubuntu_components_statesaver_enabled>` : bool
+-  :ref:`properties <sdk_ubuntu_components_statesaver_properties>` : string
 
 Detailed Description
 --------------------
 
-:ref:`StateSaver <sdk_ubuntu_components_statesaver>` attached object
-provides the ability to save component property values that can be
-restored after an inproper application close. The properties subject of
-serialization must be given in the
-:ref:`properties <sdk_ubuntu_components_statesaver#properties-prop>` as a
-string, separated with commas. The serialization will happen
-automatically on component's completion time, as well as when the
-application is deactivated. Automatic serialization of a component can
-be turned off by simply setting false to
-:ref:`enabled <sdk_ubuntu_components_statesaver#enabled-prop>` property.
+:ref:`StateSaver <sdk_ubuntu_components_statesaver>` attached object provides the ability to save component property values that can be restored after an inproper application close. The properties subject of serialization must be given in the :ref:`properties <sdk_ubuntu_components_statesaver_properties>` as a string, separated with commas. The serialization will happen automatically on component's completion time, as well as when the application is deactivated. Automatic serialization of a component can be turned off by simply setting false to :ref:`enabled <sdk_ubuntu_components_statesaver_enabled>` property.
 
-**Note:** The application name must be set correctly to the package name
-so that state saving can work (e.g. com.ubuntu.calendar) through
-:ref:`MainView <sdk_ubuntu_components_mainview>`'s applicationName
-property.
+**Note:** The application name must be set correctly to the package name so that state saving can work (e.g. com.ubuntu.calendar) through :ref:`MainView <sdk_ubuntu_components_mainview>`'s applicationName property.
 
-States saved are discarded when the application is closed properly. The
-state loading is ignored (but not discarded) when the application is
-launched through :ref:`UriHandler <sdk_ubuntu_components_urihandler>`.
+States saved are discarded when the application is closed properly. The state loading is ignored (but not discarded) when the application is launched through :ref:`UriHandler <sdk_ubuntu_components_urihandler>`.
 
 Example:
 
@@ -53,8 +38,7 @@ Example:
 
 In this example the state saver is synchronized with the attachee's one.
 
-Group properties can also be serialized by specifying the path to their
-individual properties.
+Group properties can also be serialized by specifying the path to their individual properties.
 
 .. code:: qml
 
@@ -68,13 +52,9 @@ individual properties.
         StateSaver.properties: "color, border.color, border.width"
     }
 
-:ref:`StateSaver <sdk_ubuntu_components_statesaver>` computes a unique
-identifier for the attachee using the component's and all its parents'
-*id*. Therefore attachee component as well as all its parents must have
-a valid ID set.
+:ref:`StateSaver <sdk_ubuntu_components_statesaver>` computes a unique identifier for the attachee using the component's and all its parents' *id*. Therefore attachee component as well as all its parents must have a valid ID set.
 
-The following example will give error for the *input*, as the root
-component has no id specified:
+The following example will give error for the *input*, as the root component has no id specified:
 
 .. code:: qml
 
@@ -107,9 +87,7 @@ but the following example will successfully save the text field content
         }
     }
 
-When used with Repeater, each created item from the Repeater's delegate
-will be saved separately. Note that due to the way Repeater works,
-Repeaters do not need to have id specified.
+When used with Repeater, each created item from the Repeater's delegate will be saved separately. Note that due to the way Repeater works, Repeaters do not need to have id specified.
 
 .. code:: qml
 
@@ -127,45 +105,32 @@ Repeaters do not need to have id specified.
         // [...]
     }
 
-It can be used in the same way in :ref:`ListView <sdk_qtquick_listview>` or
-`GridView </sdk/apps/qml/QtQuick/qtquick-draganddrop-example/#gridview>`_ ,
-except that both :ref:`ListView <sdk_qtquick_listview>` and
-`GridView </sdk/apps/qml/QtQuick/qtquick-draganddrop-example/#gridview>`_ 
-must have an id set.
+It can be used in the same way in :ref:`ListView <sdk_qtquick_listview>` or `GridView </sdk/apps/qml/QtQuick/qtquick-draganddrop-example/#gridview>`_ , except that both :ref:`ListView <sdk_qtquick_listview>` and `GridView </sdk/apps/qml/QtQuick/qtquick-draganddrop-example/#gridview>`_  must have an id set.
 
-The :ref:`StateSaver <sdk_ubuntu_components_statesaver>` can save all `QML
-base types </sdk/apps/qml/QtQml/qtqml-typesystem-basictypes/>`_ ,
-Objects, list of objects or variants containing any of these cannot be
-saved.
+The :ref:`StateSaver <sdk_ubuntu_components_statesaver>` can save all `QML base types </sdk/apps/qml/QtQml/qtqml-typesystem-basictypes/>`_ , Objects, list of objects or variants containing any of these cannot be saved.
 
 Property Documentation
 ----------------------
 
-.. _sdk_ubuntu_components_statesaver_enabled-prop:
+.. _sdk_ubuntu_components_statesaver_enabled:
 
-+--------------------------------------------------------------------------+
-|        \ enabled : bool                                                  |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| enabled : bool                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-The property drives the automatic state saving. When disabled, state
-saving will not happen on properties.
+The property drives the automatic state saving. When disabled, state saving will not happen on properties.
 
 The default value is true.
 
-| 
+.. _sdk_ubuntu_components_statesaver_properties:
 
-.. _sdk_ubuntu_components_statesaver_properties-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| properties : string                                                                                                                                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ properties : string                                             |
-+--------------------------------------------------------------------------+
+List of properties to be serialized, separated with commas. Properties must be writable and can only be `QML base types </sdk/apps/qml/QtQml/qtqml-typesystem-basictypes/>`_ .
 
-List of properties to be serialized, separated with commas. Properties
-must be writable and can only be `QML base
-types </sdk/apps/qml/QtQml/qtqml-typesystem-basictypes/>`_ .
-
-A custom single line input which saves the text, placeholderText, font
-and color would look as follows:
+A custom single line input which saves the text, placeholderText, font and color would look as follows:
 
 .. code:: qml
 
@@ -174,4 +139,3 @@ and color would look as follows:
         StateSaver.properties: "text, placeholderText, font, color"
     }
 
-| 

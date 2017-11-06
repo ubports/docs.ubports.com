@@ -1,23 +1,16 @@
 .. _sdk_qtqml_extending_qml_-_default_property_example:
+
 QtQml Extending QML - Default Property Example
 ==============================================
 
 
-
 This example builds on:
 
--  `Extending QML - Inheritance and Coercion
-   Example </sdk/apps/qml/QtQml/referenceexamples-coercion/>`_ 
--  `Extending QML - Object and List Property Types
-   Example </sdk/apps/qml/QtQml/referenceexamples-properties/>`_ 
--  `Extending QML - Adding Types
-   Example </sdk/apps/qml/QtQml/referenceexamples-adding/>`_ 
+-  `Extending QML - Inheritance and Coercion Example </sdk/apps/qml/QtQml/referenceexamples-coercion/>`_ 
+-  `Extending QML - Object and List Property Types Example </sdk/apps/qml/QtQml/referenceexamples-properties/>`_ 
+-  `Extending QML - Adding Types Example </sdk/apps/qml/QtQml/referenceexamples-adding/>`_ 
 
-The Default Property Example is a minor modification of the `Extending
-QML - Inheritance and Coercion
-Example </sdk/apps/qml/QtQml/referenceexamples-coercion/>`_  that
-simplifies the specification of a BirthdayParty through the use of a
-default property.
+The Default Property Example is a minor modification of the `Extending QML - Inheritance and Coercion Example </sdk/apps/qml/QtQml/referenceexamples-coercion/>`_  that simplifies the specification of a BirthdayParty through the use of a default property.
 
 .. code:: qml
 
@@ -31,11 +24,7 @@ default property.
         Girl { name: "Anne Brown" }
     }
 
-.. rubric:: Declaring the BirthdayParty Class
-   :name: declaring-the-birthdayparty-class
-
-The only difference between this example and the last, is the addition
-of the ``DefaultProperty`` class info annotation.
+The only difference between this example and the last, is the addition of the ``DefaultProperty`` class info annotation.
 
 .. code:: cpp
 
@@ -57,18 +46,9 @@ of the ``DefaultProperty`` class info annotation.
         QList<Person *> m_guests;
     };
 
-The default property specifies the property to assign to whenever an
-explicit property is not specified, in the case of the BirthdayParty
-type the guest property. It is purely a syntactic simplification, the
-behavior is identical to specifying the property by name, but it can add
-a more natural feel in many situations. The default property must be
-either an object or list property.
+The default property specifies the property to assign to whenever an explicit property is not specified, in the case of the BirthdayParty type the guest property. It is purely a syntactic simplification, the behavior is identical to specifying the property by name, but it can add a more natural feel in many situations. The default property must be either an object or list property.
 
-.. rubric:: Running the Example
-   :name: running-the-example
-
-The main.cpp file in the example includes a simple shell application
-that loads and runs the QML snippet shown at the beginning of this page.
+The main.cpp file in the example includes a simple shell application that loads and runs the QML snippet shown at the beginning of this page.
 
 Files:
 

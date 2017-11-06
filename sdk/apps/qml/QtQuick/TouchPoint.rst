@@ -1,4 +1,5 @@
 .. _sdk_qtquick_touchpoint:
+
 QtQuick TouchPoint
 ==================
 
@@ -11,190 +12,149 @@ Describes a touch point in a MultiPointTouchArea
 Properties
 ----------
 
--  :ref:`area <sdk_qtquick_touchpoint_area-prop>` : rectangle
--  :ref:`pointId <sdk_qtquick_touchpoint_pointId-prop>` : int
--  :ref:`pressed <sdk_qtquick_touchpoint_pressed-prop>` : bool
--  :ref:`pressure <sdk_qtquick_touchpoint_pressure-prop>` : real
--  :ref:`previousX <sdk_qtquick_touchpoint_previousX-prop>` : real
--  :ref:`previousY <sdk_qtquick_touchpoint_previousY-prop>` : real
--  :ref:`sceneX <sdk_qtquick_touchpoint_sceneX-prop>` : real
--  :ref:`sceneY <sdk_qtquick_touchpoint_sceneY-prop>` : real
--  :ref:`startX <sdk_qtquick_touchpoint_startX-prop>` : real
--  :ref:`startY <sdk_qtquick_touchpoint_startY-prop>` : real
--  :ref:`velocity <sdk_qtquick_touchpoint_velocity-prop>` :
-   vector2d
--  :ref:`x <sdk_qtquick_touchpoint_x-prop>` : real
--  :ref:`y <sdk_qtquick_touchpoint_y-prop>` : real
+-  :ref:`area <sdk_qtquick_touchpoint_area>` : rectangle
+-  :ref:`pointId <sdk_qtquick_touchpoint_pointId>` : int
+-  :ref:`pressed <sdk_qtquick_touchpoint_pressed>` : bool
+-  :ref:`pressure <sdk_qtquick_touchpoint_pressure>` : real
+-  :ref:`previousX <sdk_qtquick_touchpoint_previousX>` : real
+-  :ref:`previousY <sdk_qtquick_touchpoint_previousY>` : real
+-  :ref:`sceneX <sdk_qtquick_touchpoint_sceneX>` : real
+-  :ref:`sceneY <sdk_qtquick_touchpoint_sceneY>` : real
+-  :ref:`startX <sdk_qtquick_touchpoint_startX>` : real
+-  :ref:`startY <sdk_qtquick_touchpoint_startY>` : real
+-  :ref:`velocity <sdk_qtquick_touchpoint_velocity>` : vector2d
+-  :ref:`x <sdk_qtquick_touchpoint_x>` : real
+-  :ref:`y <sdk_qtquick_touchpoint_y>` : real
 
 Detailed Description
 --------------------
 
-The :ref:`TouchPoint <sdk_qtquick_touchpoint>` type contains information
-about a touch point, such as the current position, pressure, and area.
+The :ref:`TouchPoint <sdk_qtquick_touchpoint>` type contains information about a touch point, such as the current position, pressure, and area.
 
 Property Documentation
 ----------------------
 
-.. _sdk_qtquick_touchpoint_area-prop:
+.. _sdk_qtquick_touchpoint_area:
 
-+--------------------------------------------------------------------------+
-|        \ area : rectangle                                                |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| area : rectangle                                                                                                                                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-These properties hold additional information about the current state of
-the touch point.
+These properties hold additional information about the current state of the touch point.
 
 -  ``pressure`` is a value in the range of 0.0 to 1.0.
--  ``velocity`` is a vector with magnitude reported in pixels per
-   second.
--  ``area`` is a rectangle covering the area of the touch point,
-   centered on the current position of the touch point.
+-  ``velocity`` is a vector with magnitude reported in pixels per second.
+-  ``area`` is a rectangle covering the area of the touch point, centered on the current position of the touch point.
 
-Not all touch devices support velocity. If velocity is not supported, it
-will be reported as 0,0.
+Not all touch devices support velocity. If velocity is not supported, it will be reported as 0,0.
 
-| 
+.. _sdk_qtquick_touchpoint_pointId:
 
-.. _sdk_qtquick_touchpoint_pointId-prop:
-
-+--------------------------------------------------------------------------+
-|        \ pointId : int                                                   |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| pointId : int                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the point id of the touch point.
 
-Each touch point within a
-:ref:`MultiPointTouchArea <sdk_qtquick_multipointtoucharea>` will have a
-unique id.
+Each touch point within a :ref:`MultiPointTouchArea <sdk_qtquick_multipointtoucharea>` will have a unique id.
 
-| 
+.. _sdk_qtquick_touchpoint_pressed:
 
-.. _sdk_qtquick_touchpoint_pressed-prop:
-
-+--------------------------------------------------------------------------+
-|        \ pressed : bool                                                  |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| pressed : bool                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds whether the touch point is currently pressed.
 
-| 
+.. _sdk_qtquick_touchpoint_pressure:
 
-.. _sdk_qtquick_touchpoint_pressure-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| pressure : real                                                                                                                                                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ pressure : real                                                 |
-+--------------------------------------------------------------------------+
-
-These properties hold additional information about the current state of
-the touch point.
+These properties hold additional information about the current state of the touch point.
 
 -  ``pressure`` is a value in the range of 0.0 to 1.0.
--  ``velocity`` is a vector with magnitude reported in pixels per
-   second.
--  ``area`` is a rectangle covering the area of the touch point,
-   centered on the current position of the touch point.
+-  ``velocity`` is a vector with magnitude reported in pixels per second.
+-  ``area`` is a rectangle covering the area of the touch point, centered on the current position of the touch point.
 
-Not all touch devices support velocity. If velocity is not supported, it
-will be reported as 0,0.
+Not all touch devices support velocity. If velocity is not supported, it will be reported as 0,0.
 
-| 
+.. _sdk_qtquick_touchpoint_previousX:
 
-.. _sdk_qtquick_touchpoint_previousX-prop:
-
-+--------------------------------------------------------------------------+
-|        \ previousX : real                                                |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| previousX : real                                                                                                                                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 These properties hold the previous position of the touch point.
 
-| 
+.. _sdk_qtquick_touchpoint_previousY:
 
-.. _sdk_qtquick_touchpoint_previousY-prop:
-
-+--------------------------------------------------------------------------+
-|        \ previousY : real                                                |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| previousY : real                                                                                                                                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 These properties hold the previous position of the touch point.
 
-| 
+.. _sdk_qtquick_touchpoint_sceneX:
 
-.. _sdk_qtquick_touchpoint_sceneX-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| sceneX : real                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ sceneX : real                                                   |
-+--------------------------------------------------------------------------+
+These properties hold the current position of the touch point in scene coordinates.
 
-These properties hold the current position of the touch point in scene
-coordinates.
+.. _sdk_qtquick_touchpoint_sceneY:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| sceneY : real                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_qtquick_touchpoint_sceneY-prop:
+These properties hold the current position of the touch point in scene coordinates.
 
-+--------------------------------------------------------------------------+
-|        \ sceneY : real                                                   |
-+--------------------------------------------------------------------------+
+.. _sdk_qtquick_touchpoint_startX:
 
-These properties hold the current position of the touch point in scene
-coordinates.
-
-| 
-
-.. _sdk_qtquick_touchpoint_startX-prop:
-
-+--------------------------------------------------------------------------+
-|        \ startX : real                                                   |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| startX : real                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 These properties hold the starting position of the touch point.
 
-| 
+.. _sdk_qtquick_touchpoint_startY:
 
-.. _sdk_qtquick_touchpoint_startY-prop:
-
-+--------------------------------------------------------------------------+
-|        \ startY : real                                                   |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| startY : real                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 These properties hold the starting position of the touch point.
 
-| 
+.. _sdk_qtquick_touchpoint_velocity:
 
-.. _sdk_qtquick_touchpoint_velocity-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| velocity : vector2d                                                                                                                                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ velocity : vector2d                                             |
-+--------------------------------------------------------------------------+
-
-These properties hold additional information about the current state of
-the touch point.
+These properties hold additional information about the current state of the touch point.
 
 -  ``pressure`` is a value in the range of 0.0 to 1.0.
--  ``velocity`` is a vector with magnitude reported in pixels per
-   second.
--  ``area`` is a rectangle covering the area of the touch point,
-   centered on the current position of the touch point.
+-  ``velocity`` is a vector with magnitude reported in pixels per second.
+-  ``area`` is a rectangle covering the area of the touch point, centered on the current position of the touch point.
 
-Not all touch devices support velocity. If velocity is not supported, it
-will be reported as 0,0.
+Not all touch devices support velocity. If velocity is not supported, it will be reported as 0,0.
 
-| 
+.. _sdk_qtquick_touchpoint_x:
 
-.. _sdk_qtquick_touchpoint_x-prop:
-
-+--------------------------------------------------------------------------+
-|        \ x : real                                                        |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| x : real                                                                                                                                                                                                                                                                                                     |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 These properties hold the current position of the touch point.
 
-| 
+.. _sdk_qtquick_touchpoint_y:
 
-+--------------------------------------------------------------------------+
-|        \ y : real                                                        |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| y : real                                                                                                                                                                                                                                                                                                     |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 These properties hold the current position of the touch point.
 
-| 

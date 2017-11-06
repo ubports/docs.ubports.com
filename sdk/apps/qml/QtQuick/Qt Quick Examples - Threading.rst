@@ -1,32 +1,15 @@
 .. _sdk_qtquick_qt_quick_examples_-_threading:
+
 QtQuick Qt Quick Examples - Threading
 =====================================
 
 
 
-|image0|
-
 *Threading* is a collection of QML multithreading examples.
 
-.. rubric:: Running the Example
-   :name: running-the-example
+To run the example from Qt Creator, open the **Welcome** mode and select the example from **Examples**. For more information, visit Building and Running an Example.
 
-To run the example from Qt Creator, open the **Welcome** mode and select
-the example from **Examples**. For more information, visit Building and
-Running an Example.
-
-.. rubric:: Threaded ListModel
-   :name: threaded-listmodel
-
-*Threaded
-`ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#listmodel>`_ *
-contains a :ref:`ListView <sdk_qtquick_listview>` and a
-`ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#listmodel>`_ .
-The
-`ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#listmodel>`_ 
-object is updated asynchronously in another thread, and the results
-propagate back to the main thread. A timer requests updates from the
-worker thread periodically:
+*Threaded `ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#listmodel>`_ * contains a :ref:`ListView <sdk_qtquick_listview>` and a `ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#listmodel>`_ . The `ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#listmodel>`_  object is updated asynchronously in another thread, and the results propagate back to the main thread. A timer requests updates from the worker thread periodically:
 
 .. code:: qml
 
@@ -41,9 +24,7 @@ worker thread periodically:
                 }
             }
 
-Inside the worker thread, the
-`ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#listmodel>`_ 
-is synchronized once the data is finished loading:
+Inside the worker thread, the `ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#listmodel>`_  is synchronized once the data is finished loading:
 
 .. code:: js
 
@@ -55,20 +36,9 @@ is synchronized once the data is finished loading:
         }
     }
 
-.. rubric:: WorkerScript
-   :name: workerscript
+*WorkerScript* contains an example of using a `WorkerScript </sdk/apps/qml/QtQuick/threading/#workerscript>`_  to offload expensive calculations into another thread. This keeps the UI from being blocked. This example calculates numbers in Pascal's Triangle, and not in a very optimal way, so it will often take several seconds to complete the calculation. By doing this in a `WorkerScript </sdk/apps/qml/QtQuick/threading/#workerscript>`_  in another thread, the UI is not blocked during this time.
 
-*WorkerScript* contains an example of using a
-`WorkerScript </sdk/apps/qml/QtQuick/threading/#workerscript>`_  to
-offload expensive calculations into another thread. This keeps the UI
-from being blocked. This example calculates numbers in Pascal's
-Triangle, and not in a very optimal way, so it will often take several
-seconds to complete the calculation. By doing this in a
-`WorkerScript </sdk/apps/qml/QtQuick/threading/#workerscript>`_  in
-another thread, the UI is not blocked during this time.
-
-When the UI needs another value, a request is sent to the
-`WorkerScript </sdk/apps/qml/QtQuick/threading/#workerscript>`_ :
+When the UI needs another value, a request is sent to the `WorkerScript </sdk/apps/qml/QtQuick/threading/#workerscript>`_ :
 
 .. code:: qml
 
@@ -81,8 +51,7 @@ When the UI needs another value, a request is sent to the
                 }
             }
 
-The workerscript then is free to take a really long time to calculate
-it:
+The workerscript then is free to take a really long time to calculate it:
 
 .. code:: js
 
@@ -95,8 +64,7 @@ it:
                                     result: calculatedResult} );
     }
 
-When it's done, the result returns to the main scene via the
-`WorkerScript </sdk/apps/qml/QtQuick/threading/#workerscript>`_  type:
+When it's done, the result returns to the main scene via the `WorkerScript </sdk/apps/qml/QtQuick/threading/#workerscript>`_  type:
 
 .. code:: qml
 
@@ -127,6 +95,4 @@ Files:
 -  threading/threading.qrc
 -  threading/threadedlistmodel/threadedlistmodel.qmlproject
 -  threading/workerscript/workerscript.qmlproject
-
-.. |image0| image:: /media/sdk/apps/qml/qtquick-threading-example/images/qml-threading-example.png
 

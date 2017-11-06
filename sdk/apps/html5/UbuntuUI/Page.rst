@@ -1,24 +1,16 @@
 .. _sdk_ubuntuui_page:
+
 UbuntuUI Page
 =============
 
 
-One of the navigation pattern that can be used within an Ubuntu App is
-the deep navigation. This pattern is implemented by the Pagestack. A
-Pagestack contains one or more Pages. Each page displays full-screen.
-See the Pagestack class.
+One of the navigation pattern that can be used within an Ubuntu App is the deep navigation. This pattern is implemented by the Pagestack. A Pagestack contains one or more Pages. Each page displays full-screen. See the Pagestack class.
 
-Each Page must have <em>id</em> and <em>data-title</em> attributes. The
-<em>id</em> attribute is used a unique reference to push the Page to the
-top of the Pagestack (see the Pagestack class). The <em>data-title</em>
-attribute is used to update the Header title as pages are pushed and
-poped.
+Each Page must have <em>id</em> and <em>data-title</em> attributes. The <em>id</em> attribute is used a unique reference to push the Page to the top of the Pagestack (see the Pagestack class). The <em>data-title</em> attribute is used to update the Header title as pages are pushed and poped.
 
-**``UbuntuUI.Page``**\ ( ``  `` )
-.. rubric:: Example
-   :name: example
+**UbuntuUI.Page**\ ()
 
-.. code:: code
+.. code:: html
 
      </body>
            <div data-role="mainview">
@@ -46,45 +38,39 @@ poped.
 -  Methods
 -  Properties
 
-**``activate``**\ ( ``properties `` )
+**activate**\ (``properties``)
 Activates the current page.
 
 **Parameters:**
 
--  ``properties`` **<Object>**
+- ``properties`` **<Object>**
 
-   -  Data to be passed down to any activation callback listening for
-      the page activation (see Page.onactivated)
+   -  Data to be passed down to any activation callback listening for the page activation (see Page.onactivated)
 
-**``deactivate``**\ ( ``  `` )
+**deactivate**\ ()
 Deactivates the current page.
 
-**``element``**\ ( ``  `` )
-Returns the DOM element associated with the selector this widget is bind
-to.
+**element**\ ()
+Returns the DOM element associated with the selector this widget is bind to.
 
-.. rubric:: Example
-   :name: example-1
-
-.. code:: code
+.. code:: html
 
       var mypage = UI.page("pageid").element();
 
-Boolean **``isPage``**\ ( ``  `` )
+Boolean **isPage**\ ()
 Validates that a given DOM node element is a Ubuntu UI Page.
 
 **Returns:** <Boolean>
 if the DOM element is a page
 
-**``onactivated``**\ ( ``callback `` )
+**onactivated**\ (``callback``)
 Activates the current page.
 
 **Parameters:**
 
--  ``callback`` **<Function>**
+- ``callback`` **<Function>**
 
-   -  Callback function called with activation properties (from
-      Pagestack.push) when the page is activated
+   -  Callback function called with activation properties (from Pagestack.push) when the page is activated
 
 ``actions`` <**List**>
 actions property.

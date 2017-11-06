@@ -1,63 +1,41 @@
 .. _sdk_qtquick_particles_imageparticle:
+
 QtQuick.Particles ImageParticle
 ===============================
 
 For visualizing logical particles using an image
 
-+--------------------------------------+--------------------------------------+
-| Import Statement:                    | import QtQuick.Particles 2.0         |
-+--------------------------------------+--------------------------------------+
-| Inherits:                            | `ParticlePainter </sdk/apps/qml/QtQu |
-|                                      | ick/Particles.ParticlePainter/>`_    |
-+--------------------------------------+--------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Import Statement:                                                                                                                                      | import QtQuick.Particles 2.0                                                                                                                           |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Inherits:                                                                                                                                              | `ParticlePainter </sdk/apps/qml/QtQuick/Particles.ParticlePainter/>`_                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Properties
 ----------
 
--  `alpha </sdk/apps/qml/QtQuick/Particles.ImageParticle/_alpha-prop>`_ 
-   : real
--  `alphaVariation </sdk/apps/qml/QtQuick/Particles.ImageParticle/_alphaVariation-prop>`_ 
-   : real
--  `autoRotation </sdk/apps/qml/QtQuick/Particles.ImageParticle/_autoRotation-prop>`_ 
-   : bool
--  `blueVariation </sdk/apps/qml/QtQuick/Particles.ImageParticle/_blueVariation-prop>`_ 
-   : real
--  `color </sdk/apps/qml/QtQuick/Particles.ImageParticle/_color-prop>`_ 
-   : color
--  `colorTable </sdk/apps/qml/QtQuick/Particles.ImageParticle/_colorTable-prop>`_ 
-   : url
--  `colorVariation </sdk/apps/qml/QtQuick/Particles.ImageParticle/_colorVariation-prop>`_ 
-   : real
--  `entryEffect </sdk/apps/qml/QtQuick/Particles.ImageParticle/_entryEffect-prop>`_ 
-   : EntryEffect
--  `greenVariation </sdk/apps/qml/QtQuick/Particles.ImageParticle/_greenVariation-prop>`_ 
-   : real
--  `opacityTable </sdk/apps/qml/QtQuick/Particles.ImageParticle/_opacityTable-prop>`_ 
-   : url
--  `redVariation </sdk/apps/qml/QtQuick/Particles.ImageParticle/_redVariation-prop>`_ 
-   : real
--  `rotation </sdk/apps/qml/QtQuick/Particles.ImageParticle/_rotation-prop>`_ 
-   : real
--  `rotationVariation </sdk/apps/qml/QtQuick/Particles.ImageParticle/_rotationVariation-prop>`_ 
-   : real
--  `rotationVelocity </sdk/apps/qml/QtQuick/Particles.ImageParticle/_rotationVelocity-prop>`_ 
-   : real
--  `rotationVelocityVariation </sdk/apps/qml/QtQuick/Particles.ImageParticle/_rotationVelocityVariation-prop>`_ 
-   : real
--  `sizeTable </sdk/apps/qml/QtQuick/Particles.ImageParticle/_sizeTable-prop>`_ 
-   : url
--  `source </sdk/apps/qml/QtQuick/Particles.ImageParticle/_source-prop>`_ 
-   : url
--  `sprites </sdk/apps/qml/QtQuick/Particles.ImageParticle/_sprites-prop>`_ 
-   : list<Sprite>
--  `spritesInterpolate </sdk/apps/qml/QtQuick/Particles.ImageParticle/_spritesInterpolate-prop>`_ 
-   : bool
--  `status </sdk/apps/qml/QtQuick/Particles.ImageParticle/_status-prop>`_ 
-   : Status
--  `xVector </sdk/apps/qml/QtQuick/Particles.ImageParticle/_xVector-prop>`_ 
-   : StochasticDirection
--  `yVector </sdk/apps/qml/QtQuick/Particles.ImageParticle/_yVector-prop>`_ 
-   : StochasticDirection
+-  `alpha </sdk/apps/qml/QtQuick/Particles.ImageParticle/#alpha-prop>`_  : real
+-  `alphaVariation </sdk/apps/qml/QtQuick/Particles.ImageParticle/#alphaVariation-prop>`_  : real
+-  `autoRotation </sdk/apps/qml/QtQuick/Particles.ImageParticle/#autoRotation-prop>`_  : bool
+-  `blueVariation </sdk/apps/qml/QtQuick/Particles.ImageParticle/#blueVariation-prop>`_  : real
+-  `color </sdk/apps/qml/QtQuick/Particles.ImageParticle/#color-prop>`_  : color
+-  `colorTable </sdk/apps/qml/QtQuick/Particles.ImageParticle/#colorTable-prop>`_  : url
+-  `colorVariation </sdk/apps/qml/QtQuick/Particles.ImageParticle/#colorVariation-prop>`_  : real
+-  `entryEffect </sdk/apps/qml/QtQuick/Particles.ImageParticle/#entryEffect-prop>`_  : EntryEffect
+-  `greenVariation </sdk/apps/qml/QtQuick/Particles.ImageParticle/#greenVariation-prop>`_  : real
+-  `opacityTable </sdk/apps/qml/QtQuick/Particles.ImageParticle/#opacityTable-prop>`_  : url
+-  `redVariation </sdk/apps/qml/QtQuick/Particles.ImageParticle/#redVariation-prop>`_  : real
+-  `rotation </sdk/apps/qml/QtQuick/Particles.ImageParticle/#rotation-prop>`_  : real
+-  `rotationVariation </sdk/apps/qml/QtQuick/Particles.ImageParticle/#rotationVariation-prop>`_  : real
+-  `rotationVelocity </sdk/apps/qml/QtQuick/Particles.ImageParticle/#rotationVelocity-prop>`_  : real
+-  `rotationVelocityVariation </sdk/apps/qml/QtQuick/Particles.ImageParticle/#rotationVelocityVariation-prop>`_  : real
+-  `sizeTable </sdk/apps/qml/QtQuick/Particles.ImageParticle/#sizeTable-prop>`_  : url
+-  `source </sdk/apps/qml/QtQuick/Particles.ImageParticle/#source-prop>`_  : url
+-  `sprites </sdk/apps/qml/QtQuick/Particles.ImageParticle/#sprites-prop>`_  : list<Sprite>
+-  `spritesInterpolate </sdk/apps/qml/QtQuick/Particles.ImageParticle/#spritesInterpolate-prop>`_  : bool
+-  `status </sdk/apps/qml/QtQuick/Particles.ImageParticle/#status-prop>`_  : Status
+-  `xVector </sdk/apps/qml/QtQuick/Particles.ImageParticle/#xVector-prop>`_  : StochasticDirection
+-  `yVector </sdk/apps/qml/QtQuick/Particles.ImageParticle/#yVector-prop>`_  : StochasticDirection
 
 Detailed Description
 --------------------
@@ -69,54 +47,32 @@ This element renders a logical particle as an image. The image can be
 -  deformed
 -  a sprite-based animation
 
-ImageParticles implictly share data on particles if multiple
-ImageParticles are painting the same logical particle group. This is
-broken down along the four capabilities listed above. So if one
-`ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_ 
-defines data for rendering the particles in one of those capabilities,
-and the other does not, then both will draw the particles the same in
-that aspect automatically. This is primarily useful when there is some
-random variation on the particle which is supposed to stay with it when
-switching painters. If both ImageParticles define how they should appear
-for that aspect, they diverge and each appears as it is defined.
+ImageParticles implictly share data on particles if multiple ImageParticles are painting the same logical particle group. This is broken down along the four capabilities listed above. So if one `ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_  defines data for rendering the particles in one of those capabilities, and the other does not, then both will draw the particles the same in that aspect automatically. This is primarily useful when there is some random variation on the particle which is supposed to stay with it when switching painters. If both ImageParticles define how they should appear for that aspect, they diverge and each appears as it is defined.
 
-This sharing of data happens behind the scenes based off of whether
-properties were implicitly or explicitly set. One drawback of the
-current implementation is that it is only possible to reset the
-capabilities as a whole. So if you explicitly set an attribute affecting
-color, such as
-`redVariation </sdk/apps/qml/QtQuick/Particles.ImageParticle/#redVariation-prop>`_ ,
-and then reset it (by setting
-`redVariation </sdk/apps/qml/QtQuick/Particles.ImageParticle/#redVariation-prop>`_ 
-to undefined), all color data will be reset and it will begin to have an
-implicit value of any shared color from other ImageParticles.
+This sharing of data happens behind the scenes based off of whether properties were implicitly or explicitly set. One drawback of the current implementation is that it is only possible to reset the capabilities as a whole. So if you explicitly set an attribute affecting color, such as `redVariation </sdk/apps/qml/QtQuick/Particles.ImageParticle/#redVariation-prop>`_ , and then reset it (by setting `redVariation </sdk/apps/qml/QtQuick/Particles.ImageParticle/#redVariation-prop>`_  to undefined), all color data will be reset and it will begin to have an implicit value of any shared color from other ImageParticles.
 
 Property Documentation
 ----------------------
 
-.. _sdk_qtquick_particles_imageparticle_alpha-prop:
+.. _sdk_qtquick_particles_imageparticle_alpha:
 
-+--------------------------------------------------------------------------+
-|        \ alpha : real                                                    |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| alpha : real                                                                                                                                                                                                                                                                                                 |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-An alpha to be applied to the image. This value is multiplied by the
-value in the image, and the value in the color property.
+An alpha to be applied to the image. This value is multiplied by the value in the image, and the value in the color property.
 
-Particles have additive blending, so lower alpha on single particles
-leads to stronger effects when multiple particles overlap.
+Particles have additive blending, so lower alpha on single particles leads to stronger effects when multiple particles overlap.
 
 Alpha is measured from 0.0 to 1.0.
 
 Default is 1.0
 
-| 
+.. _sdk_qtquick_particles_imageparticle_alphaVariation:
 
-.. _sdk_qtquick_particles_imageparticle_alphaVariation-prop:
-
-+--------------------------------------------------------------------------+
-|        \ alphaVariation : real                                           |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| alphaVariation : real                                                                                                                                                                                                                                                                                        |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The variation in the alpha channel between particles.
 
@@ -124,27 +80,21 @@ Alpha is measured from 0.0 to 1.0.
 
 Default is 0.0
 
-| 
+.. _sdk_qtquick_particles_imageparticle_autoRotation:
 
-.. _sdk_qtquick_particles_imageparticle_autoRotation-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| autoRotation : bool                                                                                                                                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ autoRotation : bool                                             |
-+--------------------------------------------------------------------------+
-
-If set to true then a rotation will be applied on top of the particles
-rotation, so that it faces the direction of travel. So to face away from
-the direction of travel, set autoRotation to true and rotation to 180.
+If set to true then a rotation will be applied on top of the particles rotation, so that it faces the direction of travel. So to face away from the direction of travel, set autoRotation to true and rotation to 180.
 
 Default is false
 
-| 
+.. _sdk_qtquick_particles_imageparticle_blueVariation:
 
-.. _sdk_qtquick_particles_imageparticle_blueVariation-prop:
-
-+--------------------------------------------------------------------------+
-|        \ blueVariation : real                                            |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| blueVariation : real                                                                                                                                                                                                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The variation in the blue color channel between particles.
 
@@ -152,90 +102,61 @@ Color is measured, per channel, from 0.0 to 1.0.
 
 Default is 0.0
 
-| 
+.. _sdk_qtquick_particles_imageparticle_color:
 
-.. _sdk_qtquick_particles_imageparticle_color-prop:
-
-+--------------------------------------------------------------------------+
-|        \ color : color                                                   |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| color : color                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 If a color is specified, the provided image will be colorized with it.
 
 Default is white (no change).
 
-| 
+.. _sdk_qtquick_particles_imageparticle_colorTable:
 
-.. _sdk_qtquick_particles_imageparticle_colorTable-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| colorTable : url                                                                                                                                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ colorTable : url                                                |
-+--------------------------------------------------------------------------+
+An image whose color will be used as a 1D texture to determine color over life. E.g. when the particle is halfway through its lifetime, it will have the color specified halfway across the image.
 
-An image whose color will be used as a 1D texture to determine color
-over life. E.g. when the particle is halfway through its lifetime, it
-will have the color specified halfway across the image.
+This color is blended with the color property and the color of the source image.
 
-This color is blended with the color property and the color of the
-source image.
+.. _sdk_qtquick_particles_imageparticle_colorVariation:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| colorVariation : real                                                                                                                                                                                                                                                                                        |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_qtquick_particles_imageparticle_colorVariation-prop:
+This number represents the color variation applied to individual particles. Setting colorVariation is the same as setting `redVariation </sdk/apps/qml/QtQuick/Particles.ImageParticle/#redVariation-prop>`_ , `greenVariation </sdk/apps/qml/QtQuick/Particles.ImageParticle/#greenVariation-prop>`_ , and `blueVariation </sdk/apps/qml/QtQuick/Particles.ImageParticle/#blueVariation-prop>`_  to the same number.
 
-+--------------------------------------------------------------------------+
-|        \ colorVariation : real                                           |
-+--------------------------------------------------------------------------+
-
-This number represents the color variation applied to individual
-particles. Setting colorVariation is the same as setting
-`redVariation </sdk/apps/qml/QtQuick/Particles.ImageParticle/#redVariation-prop>`_ ,
-`greenVariation </sdk/apps/qml/QtQuick/Particles.ImageParticle/#greenVariation-prop>`_ ,
-and
-`blueVariation </sdk/apps/qml/QtQuick/Particles.ImageParticle/#blueVariation-prop>`_ 
-to the same number.
-
-Each channel can vary between particle by up to colorVariation from its
-usual color.
+Each channel can vary between particle by up to colorVariation from its usual color.
 
 Color is measured, per channel, from 0.0 to 1.0.
 
 Default is 0.0
 
-| 
+.. _sdk_qtquick_particles_imageparticle_entryEffect:
 
-.. _sdk_qtquick_particles_imageparticle_entryEffect-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| entryEffect : EntryEffect                                                                                                                                                                                                                                                                                    |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ entryEffect : EntryEffect                                       |
-+--------------------------------------------------------------------------+
-
-This property provides basic and cheap entrance and exit effects for the
-particles. For fine-grained control, see
-`sizeTable </sdk/apps/qml/QtQuick/Particles.ImageParticle/#sizeTable-prop>`_ 
-and
-`opacityTable </sdk/apps/qml/QtQuick/Particles.ImageParticle/#opacityTable-prop>`_ .
+This property provides basic and cheap entrance and exit effects for the particles. For fine-grained control, see `sizeTable </sdk/apps/qml/QtQuick/Particles.ImageParticle/#sizeTable-prop>`_  and `opacityTable </sdk/apps/qml/QtQuick/Particles.ImageParticle/#opacityTable-prop>`_ .
 
 Acceptable values are
 
--  `ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_ .None:
-   Particles just appear and disappear.
--  `ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_ .Fade:
-   Particles fade in from 0 opacity at the start of their life, and fade
-   out to 0 at the end.
--  `ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_ .Scale:
-   Particles scale in from 0 size at the start of their life, and scale
-   back to 0 at the end.
+-  `ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_ .None: Particles just appear and disappear.
+-  `ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_ .Fade: Particles fade in from 0 opacity at the start of their life, and fade out to 0 at the end.
+-  `ImageParticle </sdk/apps/qml/QtQuick/Particles.ImageParticle/>`_ .Scale: Particles scale in from 0 size at the start of their life, and scale back to 0 at the end.
 
 Default value is Fade.
 
-| 
+.. _sdk_qtquick_particles_imageparticle_greenVariation:
 
-.. _sdk_qtquick_particles_imageparticle_greenVariation-prop:
-
-+--------------------------------------------------------------------------+
-|        \ greenVariation : real                                           |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| greenVariation : real                                                                                                                                                                                                                                                                                        |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The variation in the green color channel between particles.
 
@@ -243,27 +164,21 @@ Color is measured, per channel, from 0.0 to 1.0.
 
 Default is 0.0
 
-| 
+.. _sdk_qtquick_particles_imageparticle_opacityTable:
 
-.. _sdk_qtquick_particles_imageparticle_opacityTable-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| opacityTable : url                                                                                                                                                                                                                                                                                           |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ opacityTable : url                                              |
-+--------------------------------------------------------------------------+
+An image whose opacity will be used as a 1D texture to determine size over life.
 
-An image whose opacity will be used as a 1D texture to determine size
-over life.
+This property is expected to be removed shortly, in favor of custom easing curves to determine opacity over life.
 
-This property is expected to be removed shortly, in favor of custom
-easing curves to determine opacity over life.
+.. _sdk_qtquick_particles_imageparticle_redVariation:
 
-| 
-
-.. _sdk_qtquick_particles_imageparticle_redVariation-prop:
-
-+--------------------------------------------------------------------------+
-|        \ redVariation : real                                             |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| redVariation : real                                                                                                                                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The variation in the red color channel between particles.
 
@@ -271,160 +186,115 @@ Color is measured, per channel, from 0.0 to 1.0.
 
 Default is 0.0
 
-| 
+.. _sdk_qtquick_particles_imageparticle_rotation:
 
-.. _sdk_qtquick_particles_imageparticle_rotation-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| rotation : real                                                                                                                                                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ rotation : real                                                 |
-+--------------------------------------------------------------------------+
-
-If set the image will be rotated by this many degrees before it is
-drawn.
+If set the image will be rotated by this many degrees before it is drawn.
 
 The particle coordinates are not transformed.
 
-| 
+.. _sdk_qtquick_particles_imageparticle_rotationVariation:
 
-.. _sdk_qtquick_particles_imageparticle_rotationVariation-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| rotationVariation : real                                                                                                                                                                                                                                                                                     |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ rotationVariation : real                                        |
-+--------------------------------------------------------------------------+
+If set the rotation of individual particles will vary by up to this much between particles.
 
-If set the rotation of individual particles will vary by up to this much
-between particles.
+.. _sdk_qtquick_particles_imageparticle_rotationVelocity:
 
-| 
-
-.. _sdk_qtquick_particles_imageparticle_rotationVelocity-prop:
-
-+--------------------------------------------------------------------------+
-|        \ rotationVelocity : real                                         |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| rotationVelocity : real                                                                                                                                                                                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 If set particles will rotate at this velocity in degrees/second.
 
-| 
+.. _sdk_qtquick_particles_imageparticle_rotationVelocityVariation:
 
-.. _sdk_qtquick_particles_imageparticle_rotationVelocityVariation-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| rotationVelocityVariation : real                                                                                                                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ rotationVelocityVariation : real                                |
-+--------------------------------------------------------------------------+
+If set the `rotationVelocity </sdk/apps/qml/QtQuick/Particles.ImageParticle/#rotationVelocity-prop>`_  of individual particles will vary by up to this much between particles.
 
-If set the
-`rotationVelocity </sdk/apps/qml/QtQuick/Particles.ImageParticle/#rotationVelocity-prop>`_ 
-of individual particles will vary by up to this much between particles.
+.. _sdk_qtquick_particles_imageparticle_sizeTable:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| sizeTable : url                                                                                                                                                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_qtquick_particles_imageparticle_sizeTable-prop:
+An image whose opacity will be used as a 1D texture to determine size over life.
 
-+--------------------------------------------------------------------------+
-|        \ sizeTable : url                                                 |
-+--------------------------------------------------------------------------+
+This property is expected to be removed shortly, in favor of custom easing curves to determine size over life.
 
-An image whose opacity will be used as a 1D texture to determine size
-over life.
+.. _sdk_qtquick_particles_imageparticle_source:
 
-This property is expected to be removed shortly, in favor of custom
-easing curves to determine size over life.
-
-| 
-
-.. _sdk_qtquick_particles_imageparticle_source-prop:
-
-+--------------------------------------------------------------------------+
-|        \ source : url                                                    |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| source : url                                                                                                                                                                                                                                                                                                 |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The source image to be used.
 
 If the image is a sprite animation, use the sprite property instead.
 
-Since Qt 5.2, some default images are provided as resources to aid
-prototyping:
-
-.. _sdk_qtquick_particles_imageparticle_qrc-prop:
+Since Qt 5.2, some default images are provided as resources to aid prototyping:
 
 +-----------------------------------------+------------+
-.. _sdk_qtquick_particles_imageparticle_qrc-prop:
-| qrc:///particleresources/star.png       | |image0|   |
+| qrc:///particleresources/star.png       |            |
 +-----------------------------------------+------------+
-.. _sdk_qtquick_particles_imageparticle_qrc-prop:
-| qrc:///particleresources/glowdot.png    | |image1|   |
+| qrc:///particleresources/glowdot.png    |            |
 +-----------------------------------------+------------+
-| qrc:///particleresources/fuzzydot.png   | |image2|   |
+| qrc:///particleresources/fuzzydot.png   |            |
 +-----------------------------------------+------------+
 
-Note that the images are white and semi-transparent, to allow
-colorization and alpha levels to have maximum effect.
+Note that the images are white and semi-transparent, to allow colorization and alpha levels to have maximum effect.
 
-| 
+.. _sdk_qtquick_particles_imageparticle_sprites:
 
-.. _sdk_qtquick_particles_imageparticle_-prop:
-
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ sprites : list<`Sprite <sdk_qtquick_sprite>`>                 |
-+--------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| sprites : list<:ref:`Sprite <sdk_qtquick_sprite>`>                                                                                                                                                                                                                                                              |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The sprite or sprites used to draw this particle.
 
-Note that the sprite image will be scaled to a square based on the size
-of the particle being rendered.
+Note that the sprite image will be scaled to a square based on the size of the particle being rendered.
 
-For full details, see the `Sprite
-Animations </sdk/apps/qml/QtQuick/qtquick-effects-sprites/>`_  overview.
+For full details, see the `Sprite Animations </sdk/apps/qml/QtQuick/qtquick-effects-sprites/>`_  overview.
 
-| 
+.. _sdk_qtquick_particles_imageparticle_spritesInterpolate:
 
-.. _sdk_qtquick_particles_imageparticle_spritesInterpolate-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| spritesInterpolate : bool                                                                                                                                                                                                                                                                                    |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ spritesInterpolate : bool                                       |
-+--------------------------------------------------------------------------+
-
-If set to true, sprite particles will interpolate between sprite frames
-each rendered frame, making the sprites look smoother.
+If set to true, sprite particles will interpolate between sprite frames each rendered frame, making the sprites look smoother.
 
 Default is true.
 
-| 
+.. _sdk_qtquick_particles_imageparticle_status:
 
-.. _sdk_qtquick_particles_imageparticle_status-prop:
-
-+--------------------------------------------------------------------------+
-|        \ status : Status                                                 |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| status : Status                                                                                                                                                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The status of loading the image.
 
-| 
+.. _sdk_qtquick_particles_imageparticle_xVector:
 
-.. _sdk_qtquick_particles_imageparticle_xVector-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| xVector : StochasticDirection                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ xVector : StochasticDirection                                   |
-+--------------------------------------------------------------------------+
+Allows you to deform the particle image when drawn. The rectangular image will be deformed so that the horizontal sides are in the shape of this vector instead of (1,0).
 
-Allows you to deform the particle image when drawn. The rectangular
-image will be deformed so that the horizontal sides are in the shape of
-this vector instead of (1,0).
+.. _sdk_qtquick_particles_imageparticle_yVector:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| yVector : StochasticDirection                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ yVector : StochasticDirection                                   |
-+--------------------------------------------------------------------------+
-
-Allows you to deform the particle image when drawn. The rectangular
-image will be deformed so that the vertical sides are in the shape of
-this vector instead of (0,1).
-
-| 
-
-.. |image0| image:: /media/sdk/apps/qml/QtQuick/Particles.ImageParticle/images/star.png
-.. |image1| image:: /media/sdk/apps/qml/QtQuick/Particles.ImageParticle/images/glowdot.png
-.. |image2| image:: /media/sdk/apps/qml/QtQuick/Particles.ImageParticle/images/fuzzydot.png
+Allows you to deform the particle image when drawn. The rectangular image will be deformed so that the vertical sides are in the shape of this vector instead of (0,1).
 

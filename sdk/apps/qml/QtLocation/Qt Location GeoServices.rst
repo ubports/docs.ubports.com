@@ -1,19 +1,12 @@
 .. _sdk_qtlocation_qt_location_geoservices:
+
 QtLocation Qt Location GeoServices
 ==================================
 
 
+The Qt Location provides the majority of its functionality through GeoService plugins. This document outlines how to develop a new GeoService plugin.
 
-The Qt Location provides the majority of its functionality through
-GeoService plugins. This document outlines how to develop a new
-GeoService plugin.
-
-.. rubric:: Plugin Description
-   :name: plugin-description
-
-Each plugin is described by a json file. The json describes the plugins
-capabilities and version. Below is an example of a json file used by the
-OpenStreenMap plugin:
+Each plugin is described by a json file. The json describes the plugins capabilities and version. Below is an example of a json file used by the OpenStreenMap plugin:
 
 .. code:: cpp
 
@@ -47,41 +40,23 @@ The entries have the following meaning:
 | Features       | List of features provided by the plugin/service. Each feature is a string representation of the corresponding features in QGeoServiceProvider. For more details see QGeoServiceProvider::routingFeatures(), QGeoServiceProvider::geocodingFeatures() and QGeoServiceProvider::placesFeatures().   |
 +----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. rubric:: Implementing Plugins
-   :name: implementing-plugins
+A plugin implementer needs to subclass QGeoServiceProviderFactory and as many of the ManagerEngine classes as they want to provide implementations for.
 
-A plugin implementer needs to subclass QGeoServiceProviderFactory and as
-many of the ManagerEngine classes as they want to provide
-implementations for.
-
-Subclassing QGeoServiceProviderFactory will only involves overriding of
-one of the following methods:
+Subclassing QGeoServiceProviderFactory will only involves overriding of one of the following methods:
 
 -  QGeoServiceProviderFactory::createGeocodingManagerEngine()
 -  QGeoServiceProviderFactory::createRoutingManagerEngine()
 -  QGeoServiceProviderFactory::createPlaceManagerEngine()
 
-If a plugin does not provide an engine the relevant function should
-return 0.
+If a plugin does not provide an engine the relevant function should return 0.
 
-+--------------------------------------+--------------------------------------+
-| QGeoCodingManagerEngine              | Interface and convenience methods to |
-|                                      | implementers of QGeoServiceProvider  |
-|                                      | plugins who want to provide support  |
-|                                      | for geocoding operations             |
-+--------------------------------------+--------------------------------------+
-| QGeoRoutingManagerEngine             | Interface and convenience methods to |
-|                                      | implementers of QGeoServiceProvider  |
-|                                      | plugins who want to provide access   |
-|                                      | to geographic routing information    |
-+--------------------------------------+--------------------------------------+
-| QGeoServiceProviderFactory           | Factory class used as the plugin     |
-|                                      | interface for services related to    |
-|                                      | geographical information             |
-+--------------------------------------+--------------------------------------+
-| QPlaceManagerEngine                  | Interface for implementers of        |
-|                                      | QGeoServiceProvider plugins who want |
-|                                      | to provide access to place           |
-|                                      | functionality                        |
-+--------------------------------------+--------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QGeoCodingManagerEngine                                                                                                                                | Interface and convenience methods to implementers of QGeoServiceProvider plugins who want to provide support for geocoding operations                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QGeoRoutingManagerEngine                                                                                                                               | Interface and convenience methods to implementers of QGeoServiceProvider plugins who want to provide access to geographic routing information          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QGeoServiceProviderFactory                                                                                                                             | Factory class used as the plugin interface for services related to geographical information                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| QPlaceManagerEngine                                                                                                                                    | Interface for implementers of QGeoServiceProvider plugins who want to provide access to place functionality                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
 

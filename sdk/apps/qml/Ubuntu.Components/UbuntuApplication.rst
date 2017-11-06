@@ -1,4 +1,5 @@
 .. _sdk_ubuntu_components_ubuntuapplication:
+
 Ubuntu.Components UbuntuApplication
 ===================================
 
@@ -11,5 +12,4 @@ UbuntuApplication is a QML binding for a subset of QCoreApplication.
 Detailed Description
 --------------------
 
-:ref:`UbuntuApplication <sdk_ubuntu_components_ubuntuapplication>` is a
-context property in QML.
+:ref:`UbuntuApplication <sdk_ubuntu_components_ubuntuapplication>` is a context property in QML.

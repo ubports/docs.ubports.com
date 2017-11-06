@@ -1,18 +1,16 @@
 .. _sdk_contenthub_contentstore:
+
 ContentHub ContentStore
 =======================
 
 
 ContentStore is an object returned by the ContentHub.
 
-It represents a location where the resources imported or exported from a
-peer during a transfer operation are to be either saved or found.
+It represents a location where the resources imported or exported from a peer during a transfer operation are to be either saved or found.
 
-**``ContentStore``**\ ( ``  `` )
-.. rubric:: Example
-   :name: example
+**ContentStore**\ ()
 
-.. code:: code
+.. code:: html
 
       var api = external.getUnityObject('1.0');
           var hub = api.ContentHub;
@@ -25,43 +23,41 @@ peer during a transfer operation are to be either saved or found.
 
 -  Methods
 
-**``destroy``**\ ( ``  `` )
+**destroy**\ ()
 Destroys the remote object. This proxy object is not valid anymore.
 
-ContentScope **``scope``**\ ( ``callback `` )
+ContentScope **scope**\ (``callback``)
 Retrieves the current scope.
 
-If the callback parameter is not set, the current "local" value is
-retrieved.
+If the callback parameter is not set, the current "local" value is retrieved.
 
 **Parameters:**
 
--  ``callback`` **<Function(ContentScope)>**
+- ``callback`` **<Function(ContentScope)>**
 
    (optional)
 
 **Returns:** <ContentScope>
 current scope
 
-**``setScope``**\ ( ``scope, callback `` )
+**setScope**\ (``scope, callback``)
 Sets the current scope.
 
 **Parameters:**
 
--  ``scope`` **<ContentScope>**
--  ``callback`` **<Function()>**
+- ``scope`` **<ContentScope>**
+- ``callback`` **<Function()>**
 
    called when the scope has been updated
 
-String **``uri``**\ ( ``callback `` )
+String **uri**\ (``callback``)
 Retrieves the uri of the associated store.
 
-If the callback parameter is not set, the current "local" value is
-retrieved.
+If the callback parameter is not set, the current "local" value is retrieved.
 
 **Parameters:**
 
--  ``callback`` **<Function(String)>**
+- ``callback`` **<Function(String)>**
 
    (optional)
 

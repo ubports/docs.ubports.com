@@ -1,4 +1,5 @@
 .. _sdk_qtquick_fontloader:
+
 QtQuick FontLoader
 ==================
 
@@ -11,19 +12,16 @@ Allows fonts to be loaded by name or URL
 Properties
 ----------
 
--  :ref:`name <sdk_qtquick_fontloader_name-prop>` : string
--  :ref:`source <sdk_qtquick_fontloader_source-prop>` : url
--  :ref:`status <sdk_qtquick_fontloader_status-prop>` : enumeration
+-  :ref:`name <sdk_qtquick_fontloader_name>` : string
+-  :ref:`source <sdk_qtquick_fontloader_source>` : url
+-  :ref:`status <sdk_qtquick_fontloader_status>` : enumeration
 
 Detailed Description
 --------------------
 
-The :ref:`FontLoader <sdk_qtquick_fontloader>` type is used to load fonts
-by name or URL.
+The :ref:`FontLoader <sdk_qtquick_fontloader>` type is used to load fonts by name or URL.
 
-The :ref:`status <sdk_qtquick_fontloader#status-prop>` indicates when the
-font has been loaded, which is useful for fonts loaded from remote
-sources.
+The :ref:`status <sdk_qtquick_fontloader_status>` indicates when the font has been loaded, which is useful for fonts loaded from remote sources.
 
 For example:
 
@@ -37,20 +35,18 @@ For example:
         Text { text: "Fancy font"; font.family: webFont.name }
     }
 
-**See also** `Qt Quick Examples - Text
-Fonts </sdk/apps/qml/QtQuick/text/#fonts>`_ .
+**See also** `Qt Quick Examples - Text Fonts </sdk/apps/qml/QtQuick/text/#fonts>`_ .
 
 Property Documentation
 ----------------------
 
-.. _sdk_qtquick_fontloader_name-prop:
+.. _sdk_qtquick_fontloader_name:
 
-+--------------------------------------------------------------------------+
-|        \ name : string                                                   |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| name : string                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-This property holds the name of the font family. It is set automatically
-when a font is loaded using the ``url`` property.
+This property holds the name of the font family. It is set automatically when a font is loaded using the ``url`` property.
 
 Use this to set the ``font.family`` property of a ``Text`` item.
 
@@ -70,36 +66,28 @@ Example:
         }
     }
 
-| 
+.. _sdk_qtquick_fontloader_source:
 
-.. _sdk_qtquick_fontloader_source-prop:
-
-+--------------------------------------------------------------------------+
-|        \ source : url                                                    |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| source : url                                                                                                                                                                                                                                                                                                 |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The url of the font to load.
 
-| 
+.. _sdk_qtquick_fontloader_status:
 
-.. _sdk_qtquick_fontloader_status-prop:
-
-+--------------------------------------------------------------------------+
-|        \ status : enumeration                                            |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| status : enumeration                                                                                                                                                                                                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the status of font loading. It can be one of:
 
 -  :ref:`FontLoader <sdk_qtquick_fontloader>`.Null - no font has been set
--  :ref:`FontLoader <sdk_qtquick_fontloader>`.Ready - the font has been
-   loaded
--  :ref:`FontLoader <sdk_qtquick_fontloader>`.Loading - the font is
-   currently being loaded
--  :ref:`FontLoader <sdk_qtquick_fontloader>`.Error - an error occurred
-   while loading the font
+-  :ref:`FontLoader <sdk_qtquick_fontloader>`.Ready - the font has been loaded
+-  :ref:`FontLoader <sdk_qtquick_fontloader>`.Loading - the font is currently being loaded
+-  :ref:`FontLoader <sdk_qtquick_fontloader>`.Error - an error occurred while loading the font
 
-Use this status to provide an update or respond to the status change in
-some way. For example, you could:
+Use this status to provide an update or respond to the status change in some way. For example, you could:
 
 -  Trigger a state change:
 
@@ -122,4 +110,3 @@ some way. For example, you could:
 
        Text { text: loader.status == FontLoader.Ready ? 'Loaded' : 'Not loaded' }
 
-| 

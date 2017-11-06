@@ -1,20 +1,16 @@
 .. _sdk_ubuntuui_ubuntuui:
+
 UbuntuUI UbuntuUI
 =================
 
 
-UbuntuUI is the critical Ubuntu HTML5 framework class. You need to
-construct an UbuntuUI object and initialize it to have an Ubuntu HTML5
-app. You then use this object to access Ubuntu HTML5 objects (and object
-methods) that correspond to the Ubuntu HTML5 DOM elements.
+UbuntuUI is the critical Ubuntu HTML5 framework class. You need to construct an UbuntuUI object and initialize it to have an Ubuntu HTML5 app. You then use this object to access Ubuntu HTML5 objects (and object methods) that correspond to the Ubuntu HTML5 DOM elements.
 
 Note: The UbuntuUI object is "UI" in all API doc examples.
 
-**``UbuntuUI``**\ ( ``  `` )
-.. rubric:: Example
-   :name: example
+**UbuntuUI**\ ()
 
-.. code:: code
+.. code:: html
 
      var UI = new UbuntuUI();
          window.onload = function () {
@@ -25,12 +21,12 @@ Note: The UbuntuUI object is "UI" in all API doc examples.
 
 -  Methods
 
-Button **``button``**\ ( ``id `` )
+Button **button**\ (``id``)
 Gets an Ubuntu Button object
 
 **Parameters:**
 
--  ``id`` **<ID>**
+- ``id`` **<ID>**
 
    -  The element's id attribute
 
@@ -38,12 +34,12 @@ Gets an Ubuntu Button object
 
 -  The Button with the specified id
 
-Dialog **``dialog``**\ ( ``id `` )
+Dialog **dialog**\ (``id``)
 Gets an Ubuntu Dialog object
 
 **Parameters:**
 
--  ``id`` **<ID>**
+- ``id`` **<ID>**
 
    -  The element's id attribute
 
@@ -51,20 +47,19 @@ Gets an Ubuntu Dialog object
 
 -  The Dialog with the specified id
 
-Element **``element``**\ ( ``  `` )
+Element **element**\ ()
 Gets the DOM element from a given selector
 
 **Returns:** <Element>
 
--  The DOM element Gets the HTML element associated with an Ubuntu HTML5
-   JavaScript object
+-  The DOM element Gets the HTML element associated with an Ubuntu HTML5 JavaScript object
 
-Header **``header``**\ ( ``id `` )
+Header **header**\ (``id``)
 Gets an Ubuntu Header object
 
 **Parameters:**
 
--  ``id`` **<ID>**
+- ``id`` **<ID>**
 
    -  The element's id attribute
 
@@ -72,47 +67,45 @@ Gets an Ubuntu Header object
 
 -  The Header with the specified id
 
-**``init``**\ ( ``  `` )
+**init**\ ()
 Required call that initializes the UbuntuUI object
 
-List **``list``**\ ( ``selector `` )
+List **list**\ (``selector``)
 Gets an Ubuntu List
 
 **Parameters:**
 
--  ``selector`` **<Selector>**
+- ``selector`` **<Selector>**
 
    -  A selector that JavaScript querySelector method understands
 
 **Returns:** <List>
 
-OptionSelector **``optionselector``**\ (
-``id, expanded, multiSelection `` )
+OptionSelector **optionselector**\ (``id, expanded, multiSelection``)
 Gets an Ubuntu Option Selector
 
 **Parameters:**
 
--  ``id`` **<ID>**
+- ``id`` **<ID>**
 
    -  The element's id attribute
 
--  ``expanded`` **<Boolean>**
+- ``expanded`` **<Boolean>**
 
    -  Specifies whether the list is always expanded
 
--  ``multiSelection`` **<Boolean>**
+- ``multiSelection`` **<Boolean>**
 
-   -  If multiple choice selection is enabled the list is always
-      expanded.
+   -  If multiple choice selection is enabled the list is always expanded.
 
 **Returns:** <OptionSelector>
 
-Page **``page``**\ ( ``id `` )
+Page **page**\ (``id``)
 Gets an Ubuntu Page object
 
 **Parameters:**
 
--  ``id`` **<ID>**
+- ``id`` **<ID>**
 
    -  The element's id attribute
 
@@ -120,23 +113,23 @@ Gets an Ubuntu Page object
 
 -  The Page with the specified id
 
-Pagestack **``pagestack``**\ ( ``  `` )
+Pagestack **pagestack**\ ()
 Gets this UbuntuUI's single Pagestack object
 
 **Returns:** <Pagestack>
 
 -  The Pagestack
 
-Popover **``popover``**\ ( ``el, id `` )
+Popover **popover**\ (``el, id``)
 Gets an Ubuntu Popover object
 
 **Parameters:**
 
--  ``el`` **<Element>**
+- ``el`` **<Element>**
 
    -  The element to which the Popover's position is relative
 
--  ``id`` **<ID>**
+- ``id`` **<ID>**
 
    -  The element's id attribute
 
@@ -144,12 +137,12 @@ Gets an Ubuntu Popover object
 
 -  The Popover with the specified id
 
-Progress **``progress``**\ ( ``id `` )
+Progress **progress**\ (``id``)
 Gets an Ubuntu Progress object
 
 **Parameters:**
 
--  ``id`` **<ID>**
+- ``id`` **<ID>**
 
    -  The element's id attribute
 
@@ -157,12 +150,12 @@ Gets an Ubuntu Progress object
 
 -  The Progress with the specified id
 
-Shape **``shape``**\ ( ``id `` )
+Shape **shape**\ (``id``)
 Gets an Ubuntu Shape object
 
 **Parameters:**
 
--  ``id`` **<ID>**
+- ``id`` **<ID>**
 
    -  The element's id attribute
 
@@ -170,12 +163,12 @@ Gets an Ubuntu Shape object
 
 -  The Shape with the specified id
 
-Tab **``tab``**\ ( ``id `` )
+Tab **tab**\ (``id``)
 Gets an Ubuntu Tab object
 
 **Parameters:**
 
--  ``id`` **<ID>**
+- ``id`` **<ID>**
 
    -  The element's id attribute
 
@@ -183,19 +176,19 @@ Gets an Ubuntu Tab object
 
 -  The Tab with the specified id
 
-Tabs **``tabs``**\ ( ``  `` )
+Tabs **tabs**\ ()
 Gets this UbuntuUI's single Tabs object
 
 **Returns:** <Tabs>
 
 -  The Tabs
 
-Toolbar **``toolbar``**\ ( ``id `` )
+Toolbar **toolbar**\ (``id``)
 Gets an Ubuntu Toolbar object
 
 **Parameters:**
 
--  ``id`` **<ID>**
+- ``id`` **<ID>**
 
    -  The element's id attribute
 

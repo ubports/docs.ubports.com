@@ -1,4 +1,5 @@
 .. _sdk_ubuntu_components_ubuntushapeoverlay:
+
 Ubuntu.Components UbuntuShapeOverlay
 ====================================
 
@@ -11,20 +12,13 @@ Extended UbuntuShape adding a colored overlay layer.
 Properties
 ----------
 
--  :ref:`overlayColor <sdk_ubuntu_components_ubuntushapeoverlay_overlayColor-prop>`
-   : color
--  :ref:`overlayRect <sdk_ubuntu_components_ubuntushapeoverlay_overlayRect-prop>`
-   : rect
+-  :ref:`overlayColor <sdk_ubuntu_components_ubuntushapeoverlay_overlayColor>` : color
+-  :ref:`overlayRect <sdk_ubuntu_components_ubuntushapeoverlay_overlayRect>` : rect
 
 Detailed Description
 --------------------
 
-The :ref:`UbuntuShapeOverlay <sdk_ubuntu_components_ubuntushapeoverlay>` is
-a rounded rectangle (based on a
-`squircle <https://en.wikipedia.org/wiki/Squircle>`_ ) containing a set
-of layers composed, from top to bottom, of a colored rectangle overlay,
-an optional source image and a background color (solid or linear
-gradient). Different properties allow to change the look of the shape.
+The :ref:`UbuntuShapeOverlay <sdk_ubuntu_components_ubuntushapeoverlay>` is a rounded rectangle (based on a `squircle <https://en.wikipedia.org/wiki/Squircle>`_ ) containing a set of layers composed, from top to bottom, of a colored rectangle overlay, an optional source image and a background color (solid or linear gradient). Different properties allow to change the look of the shape.
 
 Example:
 
@@ -40,33 +34,25 @@ Example:
 Property Documentation
 ----------------------
 
-.. _sdk_ubuntu_components_ubuntushapeoverlay_overlayColor-prop:
+.. _sdk_ubuntu_components_ubuntushapeoverlay_overlayColor:
 
-+--------------------------------------------------------------------------+
-|        \ overlayColor : color                                            |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| overlayColor : color                                                                                                                                                                                                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-This property sets the color of the overlay rectangle defined by
-:ref:`overlayRect <sdk_ubuntu_components_ubuntushapeoverlay#overlayRect-prop>`.
-The default value is transparent black.
+This property sets the color of the overlay rectangle defined by :ref:`overlayRect <sdk_ubuntu_components_ubuntushapeoverlay_overlayRect>`. The default value is transparent black.
 
 This QML property was introduced in Ubuntu.Components 1.2.
 
-| 
+.. _sdk_ubuntu_components_ubuntushapeoverlay_overlayRect:
 
-.. _sdk_ubuntu_components_ubuntushapeoverlay_overlayRect-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| overlayRect : `rect <http://doc.qt.io/qt-5/qml-rect.html>`_                                                                                                                                                                                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ overlayRect : `rect <http://doc.qt.io/qt-5/qml-rect.html>`_     |
-+--------------------------------------------------------------------------+
+This property sets the overlay rectangle. The default value is the empty rectangle.
 
-This property sets the overlay rectangle. The default value is the empty
-rectangle.
-
-It is defined by a position and a size in normalized item coordinates
-(in the range between 0 and 1) with the origin at the top-left corner.
-An overlay covering the bottom part and starting at the vertical center
-can be done like that:
+It is defined by a position and a size in normalized item coordinates (in the range between 0 and 1) with the origin at the top-left corner. An overlay covering the bottom part and starting at the vertical center can be done like that:
 
 .. code:: qml
 
@@ -76,9 +62,7 @@ can be done like that:
         overlayRect: Qt.rect(0.0, 0.5, 1.0, 0.5)
     }
 
-Converting a position and a size in pixels to normalized item
-coordinates can be done with a division by the size. Here is an
-equivalent of the previous code sample:
+Converting a position and a size in pixels to normalized item coordinates can be done with a division by the size. Here is an equivalent of the previous code sample:
 
 .. code:: qml
 
@@ -92,4 +76,3 @@ A geometry exceeding the item area is cropped.
 
 This QML property was introduced in Ubuntu.Components 1.2.
 
-| 

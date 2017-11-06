@@ -1,9 +1,9 @@
 .. _sdk_qtorganizer_timestamp:
+
 QtOrganizer Timestamp
 =====================
 
-The Timestamp element contains the created and last modified timestamp
-of an organizer item's creating date and time.
+The Timestamp element contains the created and last modified timestamp of an organizer item's creating date and time.
 
 +---------------------+--------------------------+
 | Import Statement:   | import QtOrganizer 5.0   |
@@ -12,14 +12,13 @@ of an organizer item's creating date and time.
 Properties
 ----------
 
--  :ref:`created <sdk_qtorganizer_timestamp_created-prop>` : date
--  :ref:`lastModified <sdk_qtorganizer_timestamp_lastModified-prop>`
-   : date
+-  :ref:`created <sdk_qtorganizer_timestamp_created>` : date
+-  :ref:`lastModified <sdk_qtorganizer_timestamp_lastModified>` : date
 
 Signals
 -------
 
--  :ref:`onDetailChanged <sdk_qtorganizer_timestamp_onDetailChanged-signal>`\ ()
+-  :ref:`onDetailChanged <sdk_qtorganizer_timestamp_onDetailChanged>`\ ()
 
 Detailed Description
 --------------------
@@ -34,36 +33,30 @@ The following fields are supported:
 Property Documentation
 ----------------------
 
-.. _sdk_qtorganizer_timestamp_created-prop:
+.. _sdk_qtorganizer_timestamp_created:
 
-+--------------------------------------------------------------------------+
-|        \ created : date                                                  |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| created : date                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the value of the item's creation date and time.
 
-| 
+.. _sdk_qtorganizer_timestamp_lastModified:
 
-.. _sdk_qtorganizer_timestamp_lastModified-prop:
-
-+--------------------------------------------------------------------------+
-|        \ lastModified : date                                             |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| lastModified : date                                                                                                                                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the value of the item's last modified date and time.
-
-| 
 
 Signal Documentation
 --------------------
 
-.. _sdk_qtorganizer_timestamp_onDetailChanged()-prop:
+.. _sdk_qtorganizer_timestamp_onDetailChanged:
 
-+--------------------------------------------------------------------------+
-|        \ onDetailChanged()                                               |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| onDetailChanged()                                                                                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-**See also**
-:ref:`Detail::onDetailChanged <sdk_qtorganizer_detail#onDetailChanged-signal>`.
+**See also** :ref:`Detail::onDetailChanged <sdk_qtorganizer_detail_onDetailChanged>`.
 
-| 

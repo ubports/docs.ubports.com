@@ -1,11 +1,10 @@
 .. _sdk_qtqml_extending_qml_-_adding_types_example:
+
 QtQml Extending QML - Adding Types Example
 ==========================================
 
 
-
-The Adding Types Example shows how to add a new object type, ``Person``,
-to QML. The ``Person`` type can be used from QML like this:
+The Adding Types Example shows how to add a new object type, ``Person``, to QML. The ``Person`` type can be used from QML like this:
 
 .. code:: qml
 
@@ -15,14 +14,7 @@ to QML. The ``Person`` type can be used from QML like this:
         shoeSize: 12
     }
 
-.. rubric:: Declare the Person Class
-   :name: declare-the-person-class
-
-All QML types map to C++ types. Here we declare a basic C++ Person class
-with the two properties we want accessible on the QML type - name and
-shoeSize. Although in this example we use the same name for the C++
-class as the QML type, the C++ class can be named differently, or appear
-in a namespace.
+All QML types map to C++ types. Here we declare a basic C++ Person class with the two properties we want accessible on the QML type - name and shoeSize. Although in this example we use the same name for the C++ class as the QML type, the C++ class can be named differently, or appear in a namespace.
 
 .. code:: cpp
 
@@ -41,9 +33,6 @@ in a namespace.
         QString m_name;
         int m_shoeSize;
     };
-
-.. rubric:: Define the Person Class
-   :name: define-the-person-class
 
 .. code:: cpp
 
@@ -68,19 +57,11 @@ in a namespace.
         m_shoeSize = s;
     }
 
-The Person class implementation is quite basic. The property accessors
-simply return members of the object instance.
+The Person class implementation is quite basic. The property accessors simply return members of the object instance.
 
-The ``main.cpp`` file also calls the ``qmlRegisterType()`` function to
-register the ``Person`` type with QML as a type in the People library
-version 1.0, and defines the mapping between the C++ and QML class
-names.
+The ``main.cpp`` file also calls the ``qmlRegisterType()`` function to register the ``Person`` type with QML as a type in the People library version 1.0, and defines the mapping between the C++ and QML class names.
 
-.. rubric:: Running the Example
-   :name: running-the-example
-
-The main.cpp file in the example includes a simple shell application
-that loads and runs the QML snippet shown at the beginning of this page.
+The main.cpp file in the example includes a simple shell application that loads and runs the QML snippet shown at the beginning of this page.
 
 Files:
 

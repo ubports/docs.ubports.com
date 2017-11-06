@@ -1,16 +1,14 @@
 .. _sdk_contenthub_contenttransfer:
+
 ContentHub ContentTransfer
 ==========================
 
 
-ContentTransfer is an object created by the ContentHub to and allows one
-to properly setup and manage a data transfer between two peers.
+ContentTransfer is an object created by the ContentHub to and allows one to properly setup and manage a data transfer between two peers.
 
-**``ContentTransfer``**\ ( ``  `` )
-.. rubric:: Example
-   :name: example
+**ContentTransfer**\ ()
 
-.. code:: code
+.. code:: html
 
       var api = external.getUnityObject('1.0');
           var hub = api.ContentHub;
@@ -31,129 +29,125 @@ to properly setup and manage a data transfer between two peers.
 
 -  Methods
 
-**``destroy``**\ ( ``  `` )
+**destroy**\ ()
 Destroys the remote object. This proxy object is not valid anymore.
 
-**``direction``**\ ( ``callback `` )
+**direction**\ (``callback``)
 Retrieves the current transfer direction.
 
-If the callback parameter is not set, the current "local" value is
-retrieved.
+If the callback parameter is not set, the current "local" value is retrieved.
 
 **Parameters:**
 
--  ``callback`` **<Function(ContentTransfer.Direction)>**
+- ``callback`` **<Function(ContentTransfer.Direction)>**
 
    (optional)
 
-**``finalize``**\ ( ``  `` )
+**finalize**\ ()
 Sets State to ContentTransfer.Finalized and cleans up temporary files.
 
-**``items``**\ ( ``callback `` )
+**items**\ (``callback``)
 Retrieves the list of items associated with the ContentTransfer.
 
 **Parameters:**
 
--  ``callback`` **<Function( Objectname: , url:>**
+- ``callback`` **<Function( Objectname: , url:>**
 
    } )}
 
-**``onStateChanged``**\ ( ``callback `` )
+**onStateChanged**\ (``callback``)
 Notifies the listener when the state of the transfer changes.
 
 **Parameters:**
 
--  ``callback`` **<Function(ContentTransfer.State)>**
+- ``callback`` **<Function(ContentTransfer.State)>**
 
-**``selectionType``**\ ( ``callback `` )
+**selectionType**\ (``callback``)
 Retrieves the current selection type.
 
 **Parameters:**
 
--  ``callback`` **<Function(ContentTransfer.SelectionType)>**
+- ``callback`` **<Function(ContentTransfer.SelectionType)>**
 
-**``setDirection``**\ ( ``direction, callback `` )
+**setDirection**\ (``direction, callback``)
 Sets the transfer direction (import or export).
 
 **Parameters:**
 
--  ``direction`` **<ContentTransfer.Direction>**
--  ``callback`` **<Function()>**
+- ``direction`` **<ContentTransfer.Direction>**
+- ``callback`` **<Function()>**
 
    called when the state has been updated
 
-**``setItems``**\ ( ``items, callback `` )
-Sets the list of items for the associated ContentTransfer (used when
-exporting).
+**setItems**\ (``items, callback``)
+Sets the list of items for the associated ContentTransfer (used when exporting).
 
 **Parameters:**
 
--  ``items`` **<Array of Objectname: String, url: String>**
+- ``items`` **<Array of Objectname: String, url: String>**
 
    }
 
--  ``callback`` **<Function()>**
+- ``callback`` **<Function()>**
 
    called when the state has been updated
 
-**``setSelectionType``**\ ( ``selectionType, callback `` )
+**setSelectionType**\ (``selectionType, callback``)
 Sets the selection type (single or multiple).
 
 **Parameters:**
 
--  ``selectionType`` **<ContentTransfer.SelectionType>**
--  ``callback`` **<Function()>**
+- ``selectionType`` **<ContentTransfer.SelectionType>**
+- ``callback`` **<Function()>**
 
    called when the state has been updated
 
-**``setState``**\ ( ``state, callback `` )
+**setState**\ (``state, callback``)
 Sets the state of the transfer.
 
 **Parameters:**
 
--  ``state`` **<ContentTransfer.State>**
--  ``callback`` **<Function()>**
+- ``state`` **<ContentTransfer.State>**
+- ``callback`` **<Function()>**
 
    called when the state has been updated
 
-**``setStore``**\ ( ``store, callback `` )
+**setStore**\ (``store, callback``)
 Sets the current store for the ContentTransfer.
 
 **Parameters:**
 
--  :ref:``store`` **<`ContentStore <sdk_contenthub_contentstore>`>**
--  ``callback`` **<Function()>**
+- ``store`` **<:ref:`ContentStore <sdk_contenthub_contentstore>`>**
+- ``callback`` **<Function()>**
 
    (optional) called when the store has been updated
 
-**``start``**\ ( ``callback `` )
+**start**\ (``callback``)
 Starts a transfer
 
 **Parameters:**
 
--  ``callback`` **<Function(ContentTransfer.State)>**
+- ``callback`` **<Function(ContentTransfer.State)>**
 
-**``state``**\ ( ``callback `` )
+**state**\ (``callback``)
 Retrieves the current state.
 
-If the callback parameter is not set, the current "local" value is
-retrieved.
+If the callback parameter is not set, the current "local" value is retrieved.
 
 **Parameters:**
 
--  ``callback`` **<Function(ContentTransfer.State)>**
+- ``callback`` **<Function(ContentTransfer.State)>**
 
    (optional)
 
-**``store``**\ ( ``callback `` )
+**store**\ (``callback``)
 Retrieves the current store.
 
-If the callback parameter is not set, the current "local" value is
-retrieved.
+If the callback parameter is not set, the current "local" value is retrieved.
 
 **Parameters:**
 
--  ``callback`` **<Function(String)>**
+- ``callback`` **<Function(String)>**
 
    (optional)
 

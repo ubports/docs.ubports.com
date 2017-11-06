@@ -8,6 +8,3 @@ QtFeedback
     FeedbackEffect
     HapticsEffect
     ThemeEffect
-    actuator
-    hapticseffect
-    themeeffect

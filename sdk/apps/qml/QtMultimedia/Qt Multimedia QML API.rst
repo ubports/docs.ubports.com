@@ -1,25 +1,13 @@
 .. _sdk_qtmultimedia_qt_multimedia_qml_api:
+
 QtMultimedia Qt Multimedia QML API
 ==================================
 
 
 
-.. rubric:: Overview
-   :name: overview
+The Qt Multimedia module gives developers a simplified way to use audio and video playback, and access camera functionality. The Multimedia QML API provides a QML friendly interface to these features.
 
-The Qt Multimedia module gives developers a simplified way to use audio
-and video playback, and access camera functionality. The Multimedia QML
-API provides a QML friendly interface to these features.
-
-.. rubric:: Types
-   :name: types
-
-.. rubric:: Audio
-   :name: audio
-
-`Audio </sdk/apps/qml/QtMultimedia/qml-multimedia/#audio>`_  is an easy
-way to add audio playback to a Qt Quick scene. Qt Multimedia provides
-properties for control, methods (functions) and signals.
+`Audio </sdk/apps/qml/QtMultimedia/qml-multimedia/#audio>`_  is an easy way to add audio playback to a Qt Quick scene. Qt Multimedia provides properties for control, methods (functions) and signals.
 
 The code extract below shows the creation and use of an Audio instance.
 
@@ -42,85 +30,61 @@ The code extract below shows the creation and use of an Audio instance.
         }
     }
 
-The snippet above shows how the inclusion of *playMusic* enables audio
-features on the type that contains it. So that when the parent's
-MouseArea is clicked the :ref:`play() <sdk_qtmultimedia_audio#play-method>`
-method of Audio is run. Other typical audio control methods are
-available such as :ref:`pause() <sdk_qtmultimedia_audio#pause-method>` and
-:ref:`stop() <sdk_qtmultimedia_audio#stop-method>`.
+The snippet above shows how the inclusion of *playMusic* enables audio features on the type that contains it. So that when the parent's MouseArea is clicked the :ref:`play() <sdk_qtmultimedia_audio_play>` method of Audio is run. Other typical audio control methods are available such as :ref:`pause() <sdk_qtmultimedia_audio_pause>` and :ref:`stop() <sdk_qtmultimedia_audio_stop>`.
 
-Much of the getting / setting of
-`Audio </sdk/apps/qml/QtMultimedia/qml-multimedia/#audio>`_  parameters
-is done through properties. These include
+Much of the getting / setting of `Audio </sdk/apps/qml/QtMultimedia/qml-multimedia/#audio>`_  parameters is done through properties. These include
 
 +-------------------------------------------------------------------+--------------------------------------------------------------------------+
 | Property                                                          | Description                                                              |
 +===================================================================+==========================================================================+
-| :ref:`source <sdk_qtmultimedia_audio#source-prop>`                   | The source URL of the media.                                             |
+| :ref:`source <sdk_qtmultimedia_audio_source>`                   | The source URL of the media.                                               |
 +-------------------------------------------------------------------+--------------------------------------------------------------------------+
-| :ref:`autoLoad <sdk_qtmultimedia_audio#autoLoad-prop>`            | Indicates if loading of media should begin immediately.                  |
+| :ref:`autoLoad <sdk_qtmultimedia_audio_autoLoad>`               | Indicates if loading of media should begin immediately.                    |
 +-------------------------------------------------------------------+--------------------------------------------------------------------------+
-| :ref:`playing <sdk_qtmultimedia_audio#playing-signal>`            | Indicates that the media is playing.                                     |
+| :ref:`playing <sdk_qtmultimedia_audio_playing>`               | Indicates that the media is playing.                                         |
 +-------------------------------------------------------------------+--------------------------------------------------------------------------+
-| :ref:`paused <sdk_qtmultimedia_audio#paused-signal>`              | The media is paused.                                                     |
+| :ref:`paused <sdk_qtmultimedia_audio_paused>`                 | The media is paused.                                                         |
 +-------------------------------------------------------------------+--------------------------------------------------------------------------+
-| :ref:`status <sdk_qtmultimedia_audio#status-prop>`                | The status of media loading.                                             |
+| :ref:`status <sdk_qtmultimedia_audio_status>`                   | The status of media loading.                                               |
 +-------------------------------------------------------------------+--------------------------------------------------------------------------+
-| :ref:`duration <sdk_qtmultimedia_audio#duration-prop>`            | Amount of time in milliseconds the media will play.                      |
+| :ref:`duration <sdk_qtmultimedia_audio_duration>`               | Amount of time in milliseconds the media will play.                        |
 +-------------------------------------------------------------------+--------------------------------------------------------------------------+
-| :ref:`position <sdk_qtmultimedia_audio#position-prop>`            | Current position in the media in milliseconds of play.                   |
+| :ref:`position <sdk_qtmultimedia_audio_position>`               | Current position in the media in milliseconds of play.                     |
 +-------------------------------------------------------------------+--------------------------------------------------------------------------+
-| :ref:`volume <sdk_qtmultimedia_audio#volume-prop>`                | Audio output volume: from 0.0 (silent) to 1.0 (maximum)                  |
+| :ref:`volume <sdk_qtmultimedia_audio_volume>`                   | Audio output volume: from 0.0 (silent) to 1.0 (maximum)                    |
 +-------------------------------------------------------------------+--------------------------------------------------------------------------+
-| :ref:`muted <sdk_qtmultimedia_audio#muted-prop>`                  | Indicates audio is muted.                                                |
+| :ref:`muted <sdk_qtmultimedia_audio_muted>`                     | Indicates audio is muted.                                                  |
 +-------------------------------------------------------------------+--------------------------------------------------------------------------+
-| :ref:`bufferProgress <sdk_qtmultimedia_audio#bufferProgress-prop>`| Indicates how full the data buffer is: 0.0 (empty) to 1.0 (full).        |
+| :ref:`bufferProgress <sdk_qtmultimedia_audio_bufferProgress>`   | Indicates how full the data buffer is: 0.0 (empty) to 1.0 (full).          |
 +-------------------------------------------------------------------+--------------------------------------------------------------------------+
-| :ref:`seekable <sdk_qtmultimedia_audio#seekable-prop>`            | Indicates whether the audio position can be changed.                     |
+| :ref:`seekable <sdk_qtmultimedia_audio_seekable>`               | Indicates whether the audio position can be changed.                       |
 +-------------------------------------------------------------------+--------------------------------------------------------------------------+
-| :ref:`playbackRate <sdk_qtmultimedia_audio#playbackRate-prop>`    | The rate at which audio is played at as a multiple of the normal rate.   |
+| :ref:`playbackRate <sdk_qtmultimedia_audio_playbackRate>`       | The rate at which audio is played at as a multiple of the normal rate.     |
 +-------------------------------------------------------------------+--------------------------------------------------------------------------+
-| :ref:`error <sdk_qtmultimedia_audio#error-signal>`                | An error code for the error state including NoError                      |
+| :ref:`error <sdk_qtmultimedia_audio_error>`                   | An error code for the error state including NoError                          |
 +-------------------------------------------------------------------+--------------------------------------------------------------------------+
-| :ref:`errorString <sdk_qtmultimedia_audio#errorString-prop>`      | A description of the current error condition.                            |
+| :ref:`errorString <sdk_qtmultimedia_audio_errorString>`         | A description of the current error condition.                              |
 +-------------------------------------------------------------------+--------------------------------------------------------------------------+
 
-The set of signals available allow the developer to create custom
-behavior when the following events occur,
+The set of signals available allow the developer to create custom behavior when the following events occur,
 
 +-------------------------------------------------------+-----------------------------------------------------------------------+
 | Signal                                                | Description                                                           |
 +=======================================================+=======================================================================+
-| :ref:`playing <sdk_qtmultimedia_audio#playing-signal>`   | Called when playback is started, or when resumed from paused state.   |
+| :ref:`playing <sdk_qtmultimedia_audio_playing>`   | Called when playback is started, or when resumed from paused state.       |
 +-------------------------------------------------------+-----------------------------------------------------------------------+
-| :ref:`paused <sdk_qtmultimedia_audio#paused-signal>`  | Called when playback is paused.                                       |
+| :ref:`paused <sdk_qtmultimedia_audio_paused>`     | Called when playback is paused.                                           |
 +-------------------------------------------------------+-----------------------------------------------------------------------+
-| :ref:`stopped <sdk_qtmultimedia_audio#stopped-signal>`| Called when playback is stopped.                                      |
+| :ref:`stopped <sdk_qtmultimedia_audio_stopped>`   | Called when playback is stopped.                                          |
 +-------------------------------------------------------+-----------------------------------------------------------------------+
-| :ref:`error <sdk_qtmultimedia_audio#error-signal>`    | Called when the specified error occurs.                               |
+| :ref:`error <sdk_qtmultimedia_audio_error>`       | Called when the specified error occurs.                                   |
 +-------------------------------------------------------+-----------------------------------------------------------------------+
 
-.. rubric:: Camera
-   :name: camera
+`Camera </sdk/apps/qml/QtMultimedia/qml-multimedia/#camera>`_  enables still image and video capture using QML. It has a number of properties that help setting it up.
 
-`Camera </sdk/apps/qml/QtMultimedia/qml-multimedia/#camera>`_  enables
-still image and video capture using QML. It has a number of properties
-that help setting it up.
+The details of using a `Camera </sdk/apps/qml/QtMultimedia/qml-multimedia/#camera>`_  are described in further depth in the `Camera Overview </sdk/apps/qml/QtMultimedia/cameraoverview/>`_  and in the corresponding reference documentation.
 
-The details of using a
-`Camera </sdk/apps/qml/QtMultimedia/qml-multimedia/#camera>`_  are
-described in further depth in the `Camera
-Overview </sdk/apps/qml/QtMultimedia/cameraoverview/>`_  and in the
-corresponding reference documentation.
-
-.. rubric:: Video
-   :name: video
-
-Adding video playback, with sound, to a Qt Quick scene is also easy. The
-process is very similar to that of Audio above, in fact
-`Video </sdk/apps/qml/QtMultimedia/qml-multimedia/#video>`_  shares many
-of the property names, methods and signals. Here is the equivalent
-sample code to implement video playback in a scene
+Adding video playback, with sound, to a Qt Quick scene is also easy. The process is very similar to that of Audio above, in fact `Video </sdk/apps/qml/QtMultimedia/qml-multimedia/#video>`_  shares many of the property names, methods and signals. Here is the equivalent sample code to implement video playback in a scene
 
 .. code:: qml
 
@@ -141,31 +105,13 @@ sample code to implement video playback in a scene
         Keys.onRightPressed: video.position += 5000
     }
 
-There are similar features like
-:ref:`play() <sdk_qtmultimedia_video#play-method>` with new features
-specific to video.
+There are similar features like :ref:`play() <sdk_qtmultimedia_video_play>` with new features specific to video.
 
-In the above sample when the parent of MouseArea is clicked, an area of
-800x600 pixels with an id of 'video', the source "video.avi" will play
-in that area. Notice also that signals for the Keys have been defined so
-that a spacebar will toggle the pause button; the left arrow will move
-the current position in the video to 5 seconds previously; and the right
-arrow will advance the current position in the video by 5 seconds.
+In the above sample when the parent of MouseArea is clicked, an area of 800x600 pixels with an id of 'video', the source "video.avi" will play in that area. Notice also that signals for the Keys have been defined so that a spacebar will toggle the pause button; the left arrow will move the current position in the video to 5 seconds previously; and the right arrow will advance the current position in the video by 5 seconds.
 
-Most of the differences will obviously be about video control and
-information. There are many properties associated with
-`Video </sdk/apps/qml/QtMultimedia/qml-multimedia/#video>`_ , most of
-them deal with meta-data, control of the video media and aspects of
-presentation.
+Most of the differences will obviously be about video control and information. There are many properties associated with `Video </sdk/apps/qml/QtMultimedia/qml-multimedia/#video>`_ , most of them deal with meta-data, control of the video media and aspects of presentation.
 
-.. rubric:: SoundEffect
-   :name: soundeffect
-
-`SoundEffect </sdk/apps/qml/QtMultimedia/qml-multimedia/#soundeffect>`_ 
-provides a way to play short sound effects, like in video games.
-Multiple sound effect instances can be played simultaneously. You should
-use `Audio </sdk/apps/qml/QtMultimedia/qml-multimedia/#audio>`_  for
-music playback.
+`SoundEffect </sdk/apps/qml/QtMultimedia/qml-multimedia/#soundeffect>`_  provides a way to play short sound effects, like in video games. Multiple sound effect instances can be played simultaneously. You should use `Audio </sdk/apps/qml/QtMultimedia/qml-multimedia/#audio>`_  for music playback.
 
 .. code:: qml
 
@@ -185,67 +131,45 @@ music playback.
         }
     }
 
-In the above sample the sound effect will be played when the MouseArea
-is clicked.
+In the above sample the sound effect will be played when the MouseArea is clicked.
 
-For a complete description of this type, see
-`SoundEffect </sdk/apps/qml/QtMultimedia/qml-multimedia/#soundeffect>`_ 
+For a complete description of this type, see `SoundEffect </sdk/apps/qml/QtMultimedia/qml-multimedia/#soundeffect>`_ 
 
-.. rubric:: Multimedia QML Types
-   :name: multimedia-qml-types
-
-+--------------------------------------+--------------------------------------+
-| :ref:`Audio <sdk_qtmultimedia_audio>`| Add audio playback to a scene        |
-+--------------------------------------+--------------------------------------+
-| :ref:`Camera <sdk_qtmultimedia_camera>` | Access viewfinder frames, and take   |
-|                                      | photos and movies                    |
-+--------------------------------------+--------------------------------------+
-| :ref:`CameraCapture <sdk_qtmultimedia_cam | An interface for capturing camera    |
-| eracapture>`_                        | images                               |
-+--------------------------------------+--------------------------------------+
-| :ref:`CameraExposure <sdk_qtmultimedia_ca | An interface for exposure related    |
-| meraexposure>`_                      | camera settings                      |
-+--------------------------------------+--------------------------------------+
-| :ref:`CameraFlash <sdk_qtmultimedia_camer | An interface for flash related       |
-| aflash>`_                            | camera settings                      |
-+--------------------------------------+--------------------------------------+
-| :ref:`CameraFocus <sdk_qtmultimedia_camer | An interface for focus related       |
-| afocus>`_                            | camera settings                      |
-+--------------------------------------+--------------------------------------+
-| :ref:`CameraImageProcessing <sdk_qtmultim | An interface for camera capture      |
-| edia_cameraimageprocessing>`_        | related settings                     |
-+--------------------------------------+--------------------------------------+
-| :ref:`CameraRecorder <sdk_qtmultimedia_ca | Controls video recording with the    |
-| merarecorder>`_                      | Camera                               |
-+--------------------------------------+--------------------------------------+
-| :ref:`MediaPlayer <sdk_qtmultimedia_media | Add media playback to a scene        |
-| player>`_                            |                                      |
-+--------------------------------------+--------------------------------------+
-| :ref:`Playlist <sdk_qtmultimedia_playlist | For specifying a list of media to be |
-| >`_                                  | played                               |
-+--------------------------------------+--------------------------------------+
-| :ref:`PlaylistItem <sdk_qtmultimedia_play | Defines an item in a Playlist        |
-| listitem>`_                          |                                      |
-+--------------------------------------+--------------------------------------+
-| :ref:`QtMultimedia <sdk_qtmultimedia_qtmu | Provides a global object with useful |
-| ltimedia>`_                          | functions from Qt Multimedia         |
-+--------------------------------------+--------------------------------------+
-| :ref:`Radio <sdk_qtmultimedia_radio>`| Access radio functionality from a    |
-|                                      | QML application                      |
-+--------------------------------------+--------------------------------------+
-| :ref:`RadioData <sdk_qtmultimedia_radioda | Access RDS data from a QML           |
-| ta>`_                                | application                          |
-+--------------------------------------+--------------------------------------+
-| :ref:`SoundEffect <sdk_qtmultimedia_sound | Type provides a way to play sound    |
-| effect>`_                            | effects in QML                       |
-+--------------------------------------+--------------------------------------+
-| :ref:`Torch <sdk_qtmultimedia_torch>`| Simple control over torch            |
-|                                      | functionality                        |
-+--------------------------------------+--------------------------------------+
-| :ref:`Video <sdk_qtmultimedia_video>`| A convenience type for showing a     |
-|                                      | specified video                      |
-+--------------------------------------+--------------------------------------+
-| :ref:`VideoOutput <sdk_qtmultimedia_video | Render video or camera viewfinder    |
-| output>`_                            |                                      |
-+--------------------------------------+--------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`Audio <sdk_qtmultimedia_audio>`                                                                                                                     | Add audio playback to a scene                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`Camera <sdk_qtmultimedia_camera>`                                                                                                                   | Access viewfinder frames, and take photos and movies                                                                                                   |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`CameraCapture <sdk_qtmultimedia_cameracapture>`                                                                                                     | An interface for capturing camera images                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`CameraExposure <sdk_qtmultimedia_cameraexposure>`                                                                                                   | An interface for exposure related camera settings                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`CameraFlash <sdk_qtmultimedia_cameraflash>`                                                                                                         | An interface for flash related camera settings                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`CameraFocus <sdk_qtmultimedia_camerafocus>`                                                                                                         | An interface for focus related camera settings                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`CameraImageProcessing <sdk_qtmultimedia_cameraimageprocessing>`                                                                                     | An interface for camera capture related settings                                                                                                       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`CameraRecorder <sdk_qtmultimedia_camerarecorder>`                                                                                                   | Controls video recording with the Camera                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`MediaPlayer <sdk_qtmultimedia_mediaplayer>`                                                                                                         | Add media playback to a scene                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`Playlist <sdk_qtmultimedia_playlist>`                                                                                                               | For specifying a list of media to be played                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`PlaylistItem <sdk_qtmultimedia_playlistitem>`                                                                                                       | Defines an item in a Playlist                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`QtMultimedia <sdk_qtmultimedia_qtmultimedia>`                                                                                                       | Provides a global object with useful functions from Qt Multimedia                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`Radio <sdk_qtmultimedia_radio>`                                                                                                                     | Access radio functionality from a QML application                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`RadioData <sdk_qtmultimedia_radiodata>`                                                                                                             | Access RDS data from a QML application                                                                                                                 |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`SoundEffect <sdk_qtmultimedia_soundeffect>`                                                                                                         | Type provides a way to play sound effects in QML                                                                                                       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`Torch <sdk_qtmultimedia_torch>`                                                                                                                     | Simple control over torch functionality                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`Video <sdk_qtmultimedia_video>`                                                                                                                     | A convenience type for showing a specified video                                                                                                       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`VideoOutput <sdk_qtmultimedia_videooutput>`                                                                                                         | Render video or camera viewfinder                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
 

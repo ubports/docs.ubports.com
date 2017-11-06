@@ -1,4 +1,5 @@
 .. _sdk_qtaudioengine_attenuationmodelinverse:
+
 QtAudioEngine AttenuationModelInverse
 =====================================
 
@@ -13,22 +14,17 @@ Defines a non-linear attenuation curve for a Sound.
 Properties
 ----------
 
--  :ref:`end <sdk_qtaudioengine_attenuationmodelinverse_end-prop>`
-   : real
--  :ref:`name <sdk_qtaudioengine_attenuationmodelinverse_name-prop>`
-   : string
--  :ref:`rolloff <sdk_qtaudioengine_attenuationmodelinverse_rolloff-prop>`
-   : real
--  :ref:`start <sdk_qtaudioengine_attenuationmodelinverse_start-prop>`
-   : real
+-  :ref:`end <sdk_qtaudioengine_attenuationmodelinverse_end>` : real
+-  :ref:`name <sdk_qtaudioengine_attenuationmodelinverse_name>` : string
+-  :ref:`rolloff <sdk_qtaudioengine_attenuationmodelinverse_rolloff>` : real
+-  :ref:`start <sdk_qtaudioengine_attenuationmodelinverse_start>` : real
 
 Detailed Description
 --------------------
 
 This type is part of the **QtAudioEngine 1.0** module.
 
-:ref:`AttenuationModelInverse <sdk_qtaudioengine_attenuationmodelinverse>`
-must be defined inside :ref:`AudioEngine <sdk_qtaudioengine_audioengine>`.
+:ref:`AttenuationModelInverse <sdk_qtaudioengine_attenuationmodelinverse>` must be defined inside :ref:`AudioEngine <sdk_qtaudioengine_audioengine>`.
 
 .. code:: qml
 
@@ -62,55 +58,40 @@ must be defined inside :ref:`AudioEngine <sdk_qtaudioengine_audioengine>`.
 
 Attenuation factor is calculated as below:
 
-distance: distance from sound to listener d = min(max(distance, start),
-end); attenuation = start / (start + (d - start) \* rolloff);
+distance: distance from sound to listener d = min(max(distance, start), end); attenuation = start / (start + (d - start) \* rolloff);
 
 Property Documentation
 ----------------------
 
-.. _sdk_qtaudioengine_attenuationmodelinverse_end-prop:
+.. _sdk_qtaudioengine_attenuationmodelinverse_end:
 
-+--------------------------------------------------------------------------+
-|        \ end : real                                                      |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| end : real                                                                                                                                                                                                                                                                                                   |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-This property holds the end distance. There will be no further
-attenuation if the distance from sound to listener is larger than this.
-The default value is 1000.
+This property holds the end distance. There will be no further attenuation if the distance from sound to listener is larger than this. The default value is 1000.
 
-| 
+.. _sdk_qtaudioengine_attenuationmodelinverse_name:
 
-.. _sdk_qtaudioengine_attenuationmodelinverse_name-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| name : string                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ name : string                                                   |
-+--------------------------------------------------------------------------+
+This property holds the name of :ref:`AttenuationModelInverse <sdk_qtaudioengine_attenuationmodelinverse>`, must be unique among all attenuation models and only defined once.
 
-This property holds the name of
-:ref:`AttenuationModelInverse <sdk_qtaudioengine_attenuationmodelinverse>`,
-must be unique among all attenuation models and only defined once.
+.. _sdk_qtaudioengine_attenuationmodelinverse_rolloff:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| rolloff : real                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_qtaudioengine_attenuationmodelinverse_rolloff-prop:
+This property holds the rolloff factor. The bigger the value is, the faster the sound attenuates. The default value is 1.
 
-+--------------------------------------------------------------------------+
-|        \ rolloff : real                                                  |
-+--------------------------------------------------------------------------+
+.. _sdk_qtaudioengine_attenuationmodelinverse_start:
 
-This property holds the rolloff factor. The bigger the value is, the
-faster the sound attenuates. The default value is 1.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| start : real                                                                                                                                                                                                                                                                                                 |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-| 
+This property holds the start distance. There will be no attenuation if the distance from sound to listener is within this range. The default value is 1.
 
-.. _sdk_qtaudioengine_attenuationmodelinverse_start-prop:
-
-+--------------------------------------------------------------------------+
-|        \ start : real                                                    |
-+--------------------------------------------------------------------------+
-
-This property holds the start distance. There will be no attenuation if
-the distance from sound to listener is within this range. The default
-value is 1.
-
-| 

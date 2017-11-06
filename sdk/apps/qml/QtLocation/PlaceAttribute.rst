@@ -1,4 +1,5 @@
 .. _sdk_qtlocation_placeattribute:
+
 QtLocation PlaceAttribute
 =========================
 
@@ -13,27 +14,14 @@ The PlaceAttribute type holds generic place attribute information.
 Properties
 ----------
 
--  :ref:`attribute <sdk_qtlocation_placeattribute_attribute-prop>`
-   : QPlaceAttribute
--  :ref:`label <sdk_qtlocation_placeattribute_label-prop>` : string
--  :ref:`text <sdk_qtlocation_placeattribute_text-prop>` : string
+-  :ref:`attribute <sdk_qtlocation_placeattribute_attribute>` : QPlaceAttribute
+-  :ref:`label <sdk_qtlocation_placeattribute_label>` : string
+-  :ref:`text <sdk_qtlocation_placeattribute_text>` : string
 
 Detailed Description
 --------------------
 
-A place attribute stores an additional piece of information about a
-`Place </sdk/apps/qml/QtLocation/location-cpp-qml/#place>`_  that is not
-otherwise exposed through the
-`Place </sdk/apps/qml/QtLocation/location-cpp-qml/#place>`_  type. A
-`PlaceAttribute </sdk/apps/qml/QtLocation/location-cpp-qml/#placeattribute>`_ 
-is a textual piece of data, accessible through the
-:ref:`text <sdk_qtlocation_placeattribute#text-prop>` property, and a
-:ref:`label <sdk_qtlocation_placeattribute#label-prop>`. Both the
-:ref:`text <sdk_qtlocation_placeattribute#text-prop>` and
-:ref:`label <sdk_qtlocation_placeattribute#label-prop>` properties are
-intended to be displayed to the user. PlaceAttributes are stored in an
-:ref:`ExtendedAttributes <sdk_qtlocation_extendedattributes>` map with a
-unique key.
+A place attribute stores an additional piece of information about a `Place </sdk/apps/qml/QtLocation/location-cpp-qml/#place>`_  that is not otherwise exposed through the `Place </sdk/apps/qml/QtLocation/location-cpp-qml/#place>`_  type. A `PlaceAttribute </sdk/apps/qml/QtLocation/location-cpp-qml/#placeattribute>`_  is a textual piece of data, accessible through the :ref:`text <sdk_qtlocation_placeattribute_text>` property, and a :ref:`label <sdk_qtlocation_placeattribute_label>`. Both the :ref:`text <sdk_qtlocation_placeattribute_text>` and :ref:`label <sdk_qtlocation_placeattribute_label>` properties are intended to be displayed to the user. PlaceAttributes are stored in an :ref:`ExtendedAttributes <sdk_qtlocation_extendedattributes>` map with a unique key.
 
 The following example shows how to display all attributes in a list:
 
@@ -65,35 +53,27 @@ The following example shows how to assign and modify an attribute:
 Property Documentation
 ----------------------
 
-.. _sdk_qtlocation_placeattribute_attribute-prop:
+.. _sdk_qtlocation_placeattribute_attribute:
 
-+--------------------------------------------------------------------------+
-|        \ attribute : QPlaceAttribute                                     |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| attribute : QPlaceAttribute                                                                                                                                                                                                                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-For details on how to use this property to interface between C++ and QML
-see "Interfaces between C++ and QML Code".
+For details on how to use this property to interface between C++ and QML see "Interfaces between C++ and QML Code".
 
-| 
+.. _sdk_qtlocation_placeattribute_label:
 
-.. _sdk_qtlocation_placeattribute_label-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| label : string                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ label : string                                                  |
-+--------------------------------------------------------------------------+
+This property holds the attribute label which is a user visible string describing the attribute.
 
-This property holds the attribute label which is a user visible string
-describing the attribute.
+.. _sdk_qtlocation_placeattribute_text:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| text : string                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_qtlocation_placeattribute_text-prop:
+This property holds the attribute text which can be used to show additional information about the place.
 
-+--------------------------------------------------------------------------+
-|        \ text : string                                                   |
-+--------------------------------------------------------------------------+
-
-This property holds the attribute text which can be used to show
-additional information about the place.
-
-| 

@@ -1,25 +1,14 @@
 .. _sdk_qtquick_qt_quick_examples_-_accessibility:
+
 QtQuick Qt Quick Examples - Accessibility
 =========================================
 
 
+*Accessibility* demonstrates QML types that are augmented with meta-data for accessibility systems. For more information, visit the Accessibility page.
 
-*Accessibility* demonstrates QML types that are augmented with meta-data
-for accessibility systems. For more information, visit the Accessibility
-page.
+To run the example from Qt Creator, open the **Welcome** mode and select the example from **Examples**. For more information, visit Building and Running an Example.
 
-.. rubric:: Running the Example
-   :name: running-the-example
-
-To run the example from Qt Creator, open the **Welcome** mode and select
-the example from **Examples**. For more information, visit Building and
-Running an Example.
-
-.. rubric:: Implementing Accessible Buttons
-   :name: implementing-accessible-buttons
-
-The button identifies itself and its functionality to the accessibility
-system:
+The button identifies itself and its functionality to the accessibility system:
 
 .. code:: qml
 
@@ -30,8 +19,7 @@ system:
         button.clicked()
     }
 
-Similarly, `Text </sdk/apps/qml/QtQuick/qtquick-releasenotes/#text>`_ 
-types inside the example also identify themselves:
+Similarly, `Text </sdk/apps/qml/QtQuick/qtquick-releasenotes/#text>`_  types inside the example also identify themselves:
 
 .. code:: qml
 

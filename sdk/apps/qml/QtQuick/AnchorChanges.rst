@@ -1,4 +1,5 @@
 .. _sdk_qtquick_anchorchanges:
+
 QtQuick AnchorChanges
 =====================
 
@@ -11,39 +12,26 @@ Specifies how to change the anchors of an item in a state
 Properties
 ----------
 
--  :ref:`anchors <sdk_qtquick_anchorchanges_anchors-prop>`
+-  :ref:`anchors <sdk_qtquick_anchorchanges_anchors>`
 
-   -  :ref:`anchors.left <sdk_qtquick_anchorchanges_anchors.left-prop>`
-      : AnchorLine
-   -  :ref:`anchors.right <sdk_qtquick_anchorchanges_anchors.right-prop>`
-      : AnchorLine
-   -  :ref:`anchors.horizontalCenter <sdk_qtquick_anchorchanges_anchors.horizontalCenter-prop>`
-      : AnchorLine
-   -  :ref:`anchors.top <sdk_qtquick_anchorchanges_anchors.top-prop>`
-      : AnchorLine
-   -  :ref:`anchors.bottom <sdk_qtquick_anchorchanges_anchors.bottom-prop>`
-      : AnchorLine
-   -  :ref:`anchors.verticalCenter <sdk_qtquick_anchorchanges_anchors.verticalCenter-prop>`
-      : AnchorLine
-   -  :ref:`anchors.baseline <sdk_qtquick_anchorchanges_anchors.baseline-prop>`
-      : AnchorLine
+   -  :ref:`anchors.left <sdk_qtquick_anchorchanges_anchors_left>` : AnchorLine
+   -  :ref:`anchors.right <sdk_qtquick_anchorchanges_anchors_right>` : AnchorLine
+   -  :ref:`anchors.horizontalCenter <sdk_qtquick_anchorchanges_anchors_horizontalCenter>` : AnchorLine
+   -  :ref:`anchors.top <sdk_qtquick_anchorchanges_anchors_top>` : AnchorLine
+   -  :ref:`anchors.bottom <sdk_qtquick_anchorchanges_anchors_bottom>` : AnchorLine
+   -  :ref:`anchors.verticalCenter <sdk_qtquick_anchorchanges_anchors_verticalCenter>` : AnchorLine
+   -  :ref:`anchors.baseline <sdk_qtquick_anchorchanges_anchors_baseline>` : AnchorLine
 
--  :ref:`target <sdk_qtquick_anchorchanges_target-prop>` : Item
+-  :ref:`target <sdk_qtquick_anchorchanges_target>` : Item
 
 Detailed Description
 --------------------
 
-The :ref:`AnchorChanges <sdk_qtquick_anchorchanges>` type is used to modify
-the anchors of an item in a :ref:`State <sdk_qtquick_state>`.
+The :ref:`AnchorChanges <sdk_qtquick_anchorchanges>` type is used to modify the anchors of an item in a :ref:`State <sdk_qtquick_state>`.
 
-:ref:`AnchorChanges <sdk_qtquick_anchorchanges>` cannot be used to modify
-the margins on an item. For this, use
-:ref:`PropertyChanges <sdk_qtquick_propertychanges>` intead.
+:ref:`AnchorChanges <sdk_qtquick_anchorchanges>` cannot be used to modify the margins on an item. For this, use :ref:`PropertyChanges <sdk_qtquick_propertychanges>` intead.
 
-In the following example we change the top and bottom anchors of an item
-using :ref:`AnchorChanges <sdk_qtquick_anchorchanges>`, and the top and
-bottom anchor margins using
-:ref:`PropertyChanges <sdk_qtquick_propertychanges>`:
+In the following example we change the top and bottom anchors of an item using :ref:`AnchorChanges <sdk_qtquick_anchorchanges>`, and the top and bottom anchor margins using :ref:`PropertyChanges <sdk_qtquick_propertychanges>`:
 
 .. code:: qml
 
@@ -69,10 +57,7 @@ bottom anchor margins using
         MouseArea { anchors.fill: parent; onClicked: window.state = "reanchored" }
     }
 
-|image0|
-
-:ref:`AnchorChanges <sdk_qtquick_anchorchanges>` can be animated using
-:ref:`AnchorAnimation <sdk_qtquick_anchoranimation>`.
+:ref:`AnchorChanges <sdk_qtquick_anchorchanges>` can be animated using :ref:`AnchorAnimation <sdk_qtquick_anchoranimation>`.
 
 .. code:: qml
 
@@ -81,40 +66,30 @@ bottom anchor margins using
         AnchorAnimation {}
     }
 
-Changes to anchor margins can be animated using
-:ref:`NumberAnimation <sdk_qtquick_numberanimation>`.
+Changes to anchor margins can be animated using :ref:`NumberAnimation <sdk_qtquick_numberanimation>`.
 
-For more information on anchors see `Anchor
-Layouts </sdk/apps/qml/QtQuick/qtquick-positioning-anchors/#anchor-layout>`_ .
+For more information on anchors see `Anchor Layouts </sdk/apps/qml/QtQuick/qtquick-positioning-anchors/#anchor-layout>`_ .
 
 Property Documentation
 ----------------------
 
-.. _sdk_qtquick_anchorchanges_**anchors group**-prop:
-
-+--------------------------------------------------------------------------+
-|        \ **anchors group**                                               |
-+==========================================================================+
-.. _sdk_qtquick_anchorchanges_anchors.right-prop:
-|        \ anchors.left : AnchorLine                                       |
-+--------------------------------------------------------------------------+
-.. _sdk_qtquick_anchorchanges_anchors.horizontalCenter-prop:
-|        \ anchors.right : AnchorLine                                      |
-+--------------------------------------------------------------------------+
-.. _sdk_qtquick_anchorchanges_anchors.top-prop:
-|        \ anchors.horizontalCenter : AnchorLine                           |
-+--------------------------------------------------------------------------+
-.. _sdk_qtquick_anchorchanges_anchors.bottom-prop:
-|        \ anchors.top : AnchorLine                                        |
-+--------------------------------------------------------------------------+
-.. _sdk_qtquick_anchorchanges_anchors.verticalCenter-prop:
-|        \ anchors.bottom : AnchorLine                                     |
-+--------------------------------------------------------------------------+
-.. _sdk_qtquick_anchorchanges_anchors.baseline-prop:
-|        \ anchors.verticalCenter : AnchorLine                             |
-+--------------------------------------------------------------------------+
-|        \ anchors.baseline : AnchorLine                                   |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **anchors group**                                                                                                                                                                                                                                                                                            |
++==============================================================================================================================================================================================================================================================================================================+
+| anchors.left : AnchorLine                                                                                                                                                                                                                                                                                    |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| anchors.right : AnchorLine                                                                                                                                                                                                                                                                                   |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| anchors.horizontalCenter : AnchorLine                                                                                                                                                                                                                                                                        |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| anchors.top : AnchorLine                                                                                                                                                                                                                                                                                     |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| anchors.bottom : AnchorLine                                                                                                                                                                                                                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| anchors.verticalCenter : AnchorLine                                                                                                                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| anchors.baseline : AnchorLine                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 These properties change the respective anchors of the item.
 
@@ -128,18 +103,11 @@ To reset an anchor you can assign ``undefined``:
         anchors.right: otherItem.right
     }
 
-| 
+.. _sdk_qtquick_anchorchanges_target:
 
-.. _sdk_qtquick_anchorchanges_-prop:
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| target : :ref:`Item <sdk_qtquick_item>`                                                                                                                                                                                                                                                                         |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ target : `Item <sdk_qtquick_item>`                         |
-+--------------------------------------------------------------------------+
-
-This property holds the :ref:`Item <sdk_qtquick_item>` for which the anchor
-changes will be applied.
-
-| 
-
-.. |image0| image:: /mediasdk_qtquick_anchorchangesimages/anchorchanges.png
+This property holds the :ref:`Item <sdk_qtquick_item>` for which the anchor changes will be applied.
 

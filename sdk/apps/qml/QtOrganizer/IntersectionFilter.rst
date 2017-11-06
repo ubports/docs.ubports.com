@@ -1,9 +1,9 @@
 .. _sdk_qtorganizer_intersectionfilter:
+
 QtOrganizer IntersectionFilter
 ==============================
 
-The IntersectionFilter element provides a filter which intersects the
-results of other filters.
+The IntersectionFilter element provides a filter which intersects the results of other filters.
 
 +---------------------+--------------------------+
 | Import Statement:   | import QtOrganizer 5.0   |
@@ -12,8 +12,7 @@ results of other filters.
 Properties
 ----------
 
--  :ref:`filters <sdk_qtorganizer_intersectionfilter_filters-prop>`
-   : list<filter>
+-  :ref:`filters <sdk_qtorganizer_intersectionfilter_filters>` : list<filter>
 
 Detailed Description
 --------------------
@@ -23,13 +22,11 @@ Detailed Description
 Property Documentation
 ----------------------
 
-.. _sdk_qtorganizer_intersectionfilter_filters-prop:
+.. _sdk_qtorganizer_intersectionfilter_filters:
 
-+--------------------------------------------------------------------------+
-|        \ filters : list<filter>                                          |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| filters : list<filter>                                                                                                                                                                                                                                                                                       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-This property holds the list of filters which form the intersection
-filter.
+This property holds the list of filters which form the intersection filter.
 
-| 

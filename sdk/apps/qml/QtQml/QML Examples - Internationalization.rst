@@ -1,13 +1,11 @@
 .. _sdk_qtqml_qml_examples_-_internationalization:
+
 QtQml QML Examples - Internationalization
 =========================================
 
 
 
-|image0|
-
-The QML runtime automatically loads a translation from the i18n
-subdirectory of the root QML file, based on the system language.
+The QML runtime automatically loads a translation from the i18n subdirectory of the root QML file, based on the system language.
 
 The files are created or updated by running:
 
@@ -15,9 +13,7 @@ The files are created or updated by running:
 
     lupdate qml-i18n.qml -ts i18n/base.ts
 
-Translations for new languages are created by copying *i18n/base.ts* to
-*i18n/qml\_<lang>.ts* The .ts files can then be edited with �{Qt
-Linguist}:
+Translations for new languages are created by copying *i18n/base.ts* to *i18n/qml\_<lang>.ts* The .ts files can then be edited with �{Qt Linguist}:
 
 .. code:: cpp
 
@@ -33,6 +29,4 @@ Files:
 
 -  qml-i18n/qml-i18n.qml
 -  qml-i18n/qml-i18n.qmlproject
-
-.. |image0| image:: /media/sdk/apps/qml/qtqml-qml-i18n-example/images/qml-i18n-example.png
 

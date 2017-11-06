@@ -1,24 +1,13 @@
 .. _sdk_qtquick_qt_quick_examples_-_text:
+
 QtQuick Qt Quick Examples - Text
 ================================
 
 
 
-|image0|
+*Text* is a collection of small QML examples relating to text. Each example is a small QML file, usually containing or emphasizing a particular type or feature. You can run and observe the behavior of each example.
 
-*Text* is a collection of small QML examples relating to text. Each
-example is a small QML file, usually containing or emphasizing a
-particular type or feature. You can run and observe the behavior of each
-example.
-
-.. rubric:: Hello
-   :name: hello
-
-*Hello* shows how to change and animate the letter spacing of a
-`Text </sdk/apps/qml/QtQuick/qtquick-releasenotes/#text>`_  type. It
-uses a sequential animation to first animate the font.letterSpacing
-property from ``0`` to ``50`` over three seconds and then move the text
-to a random position on screen:
+*Hello* shows how to change and animate the letter spacing of a `Text </sdk/apps/qml/QtQuick/qtquick-releasenotes/#text>`_  type. It uses a sequential animation to first animate the font.letterSpacing property from ``0`` to ``50`` over three seconds and then move the text to a random position on screen:
 
 .. code:: qml
 
@@ -33,12 +22,7 @@ to a random position on screen:
                     }
                 }
 
-.. rubric:: Fonts
-   :name: fonts
-
-*Fonts* shows different ways of using fonts with the
-`Text </sdk/apps/qml/QtQuick/qtquick-releasenotes/#text>`_  type. Simply
-by name, using the font.family property directly:
+*Fonts* shows different ways of using fonts with the `Text </sdk/apps/qml/QtQuick/qtquick-releasenotes/#text>`_  type. Simply by name, using the font.family property directly:
 
 .. code:: qml
 
@@ -50,27 +34,19 @@ or using a :ref:`FontLoader <sdk_qtquick_fontloader>` type:
 
         FontLoader { id: fixedFont; name: "Courier" }
 
-or using a :ref:`FontLoader <sdk_qtquick_fontloader>` and specifying a
-local font file:
+or using a :ref:`FontLoader <sdk_qtquick_fontloader>` and specifying a local font file:
 
 .. code:: qml
 
         FontLoader { id: localFont; source: "content/fonts/tarzeau_ocr_a.ttf" }
 
-or finally using a :ref:`FontLoader <sdk_qtquick_fontloader>` and
-specifying a remote font file:
+or finally using a :ref:`FontLoader <sdk_qtquick_fontloader>` and specifying a remote font file:
 
 .. code:: qml
 
         FontLoader { id: webFont; source: "http://www.princexml.com/fonts/steffmann/Starburst.ttf" }
 
-.. rubric:: Available Fonts
-   :name: available-fonts
-
-*Available Fonts* shows how to use the QML Qt global object and a list
-view to display all the fonts available on the system. The
-:ref:`ListView <sdk_qtquick_listview>` type uses the list of fonts
-available as its model:
+*Available Fonts* shows how to use the QML Qt global object and a list view to display all the fonts available on the system. The :ref:`ListView <sdk_qtquick_listview>` type uses the list of fonts available as its model:
 
 .. code:: qml
 
@@ -82,24 +58,11 @@ Inside the delegate, the font family is set with the modelData:
 
                     font.family: modelData
 
-.. rubric:: Banner
-   :name: banner
+*Banner* is a simple example showing how to create a banner using a row of text types and a :ref:`NumberAnimation <sdk_qtquick_numberanimation>`.
 
-*Banner* is a simple example showing how to create a banner using a row
-of text types and a :ref:`NumberAnimation <sdk_qtquick_numberanimation>`.
+*Img tag* shows different ways of displaying images in text objects using the ``<img>`` tag.
 
-.. rubric:: Img Tag
-   :name: img-tag
-
-*Img tag* shows different ways of displaying images in text objects
-using the ``<img>`` tag.
-
-.. rubric:: Text Layout
-   :name: text-layout
-
-*Text Layout* shows how to create a more complex layout for a text item.
-This example lays out the text in two columns using the onLineLaidOut
-handler that allows you to position and resize each line:
+*Text Layout* shows how to create a more complex layout for a text item. This example lays out the text in two columns using the onLineLaidOut handler that allows you to position and resize each line:
 
 .. code:: qml
 
@@ -126,6 +89,4 @@ Files:
 -  text/text.pro
 -  text/text.qmlproject
 -  text/text.qrc
-
-.. |image0| image:: /media/sdk/apps/qml/qtquick-text-example/images/qml-text-example.png
 

@@ -1,4 +1,5 @@
 .. _sdk_qtquick_statechangescript:
+
 QtQuick StateChangeScript
 =========================
 
@@ -11,18 +12,13 @@ Specifies how to run a script in a state
 Properties
 ----------
 
--  :ref:`name <sdk_qtquick_statechangescript_name-prop>` : string
--  :ref:`script <sdk_qtquick_statechangescript_script-prop>` :
-   script
+-  :ref:`name <sdk_qtquick_statechangescript_name>` : string
+-  :ref:`script <sdk_qtquick_statechangescript_script>` : script
 
 Detailed Description
 --------------------
 
-A :ref:`StateChangeScript <sdk_qtquick_statechangescript>` is run upon
-entering a state. You can optionally use
-:ref:`ScriptAction <sdk_qtquick_scriptaction>` to specify the point in the
-transition at which the
-:ref:`StateChangeScript <sdk_qtquick_statechangescript>` should be run.
+A :ref:`StateChangeScript <sdk_qtquick_statechangescript>` is run upon entering a state. You can optionally use :ref:`ScriptAction <sdk_qtquick_scriptaction>` to specify the point in the transition at which the :ref:`StateChangeScript <sdk_qtquick_statechangescript>` should be run.
 
 .. code:: qml
 
@@ -49,26 +45,21 @@ transition at which the
 Property Documentation
 ----------------------
 
-.. _sdk_qtquick_statechangescript_name-prop:
+.. _sdk_qtquick_statechangescript_name:
 
-+--------------------------------------------------------------------------+
-|        \ name : string                                                   |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| name : string                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-This property holds the name of the script. This name can be used by a
-:ref:`ScriptAction <sdk_qtquick_scriptaction>` to target a specific script.
+This property holds the name of the script. This name can be used by a :ref:`ScriptAction <sdk_qtquick_scriptaction>` to target a specific script.
 
-**See also**
-:ref:`ScriptAction::scriptName <sdk_qtquick_scriptaction#scriptName-prop>`.
+**See also** :ref:`ScriptAction::scriptName <sdk_qtquick_scriptaction_scriptName>`.
 
-| 
+.. _sdk_qtquick_statechangescript_script:
 
-.. _sdk_qtquick_statechangescript_-prop:
-
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ script : `script <sdk_qtquick_statechangescript#script-prop>` |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| script : :ref:`script <sdk_qtquick_statechangescript_script>`                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the script to run when the state is current.
 
-| 

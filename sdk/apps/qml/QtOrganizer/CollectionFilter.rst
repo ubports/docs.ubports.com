@@ -1,9 +1,9 @@
 .. _sdk_qtorganizer_collectionfilter:
+
 QtOrganizer CollectionFilter
 ============================
 
-The CollectionFilter element provides a filter based around the
-collection one organizer item belongs to.
+The CollectionFilter element provides a filter based around the collection one organizer item belongs to.
 
 +---------------------+--------------------------+
 | Import Statement:   | import QtOrganizer 5.0   |
@@ -12,13 +12,12 @@ collection one organizer item belongs to.
 Properties
 ----------
 
--  :ref:`ids <sdk_qtorganizer_collectionfilter_ids-prop>` :
-   list<string>
+-  :ref:`ids <sdk_qtorganizer_collectionfilter_ids>` : list<string>
 
 Signals
 -------
 
--  :ref:`onFilterChanged <sdk_qtorganizer_collectionfilter_onFilterChanged-signal>`\ ()
+-  :ref:`onFilterChanged <sdk_qtorganizer_collectionfilter_onFilterChanged>`\ ()
 
 Detailed Description
 --------------------
@@ -28,27 +27,22 @@ Detailed Description
 Property Documentation
 ----------------------
 
-.. _sdk_qtorganizer_collectionfilter_ids-prop:
+.. _sdk_qtorganizer_collectionfilter_ids:
 
-+--------------------------------------------------------------------------+
-|        \ ids : list<string>                                              |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ids : list<string>                                                                                                                                                                                                                                                                                           |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-This property holds the list of IDs of organizer collections which the
-items should belong to.
-
-| 
+This property holds the list of IDs of organizer collections which the items should belong to.
 
 Signal Documentation
 --------------------
 
-.. _sdk_qtorganizer_collectionfilter_onFilterChanged()-prop:
+.. _sdk_qtorganizer_collectionfilter_onFilterChanged:
 
-+--------------------------------------------------------------------------+
-|        \ onFilterChanged()                                               |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| onFilterChanged()                                                                                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-**See also**
-:ref:`QtOrganizer5::Filter::onFilterChanged <sdk_qtorganizer_filter#onFilterChanged-signal>`.
+**See also** :ref:`QtOrganizer5::Filter::onFilterChanged <sdk_qtorganizer_filter_onFilterChanged>`.
 
-| 

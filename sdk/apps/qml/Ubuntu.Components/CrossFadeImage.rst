@@ -1,4 +1,5 @@
 .. _sdk_ubuntu_components_crossfadeimage:
+
 Ubuntu.Components CrossFadeImage
 ================================
 
@@ -11,20 +12,13 @@ An Image like component which smoothly fades when its source is updated.
 Properties
 ----------
 
--  :ref:`fadeDuration <sdk_ubuntu_components_crossfadeimage_fadeDuration-prop>`
-   : int
--  :ref:`fadeStyle <sdk_ubuntu_components_crossfadeimage_fadeStyle-prop>`
-   : string
--  :ref:`fillMode <sdk_ubuntu_components_crossfadeimage_fillMode-prop>`
-   : enumeration
--  :ref:`running <sdk_ubuntu_components_crossfadeimage_running-prop>`
-   : bool
--  :ref:`source <sdk_ubuntu_components_crossfadeimage_source-prop>`
-   : url
--  :ref:`sourceSize <sdk_ubuntu_components_crossfadeimage_sourceSize-prop>`
-   : size
--  :ref:`status <sdk_ubuntu_components_crossfadeimage_status-prop>`
-   : enumeration
+-  :ref:`fadeDuration <sdk_ubuntu_components_crossfadeimage_fadeDuration>` : int
+-  :ref:`fadeStyle <sdk_ubuntu_components_crossfadeimage_fadeStyle>` : string
+-  :ref:`fillMode <sdk_ubuntu_components_crossfadeimage_fillMode>` : enumeration
+-  :ref:`running <sdk_ubuntu_components_crossfadeimage_running>` : bool
+-  :ref:`source <sdk_ubuntu_components_crossfadeimage_source>` : url
+-  :ref:`sourceSize <sdk_ubuntu_components_crossfadeimage_sourceSize>` : size
+-  :ref:`status <sdk_ubuntu_components_crossfadeimage_status>` : enumeration
 
 Detailed Description
 --------------------
@@ -47,25 +41,21 @@ Detailed Description
 Property Documentation
 ----------------------
 
-.. _sdk_ubuntu_components_crossfadeimage_fadeDuration-prop:
+.. _sdk_ubuntu_components_crossfadeimage_fadeDuration:
 
-+--------------------------------------------------------------------------+
-|        \ fadeDuration : int                                              |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| fadeDuration : int                                                                                                                                                                                                                                                                                           |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-The time over which to fade between images. Defaults to
-``UbuntuAnimation.FastDuration``.
+The time over which to fade between images. Defaults to ``UbuntuAnimation.FastDuration``.
 
-**See also**
-:ref:`UbuntuAnimation <sdk_ubuntu_components_ubuntuanimation>`.
+**See also** :ref:`UbuntuAnimation <sdk_ubuntu_components_ubuntuanimation>`.
 
-| 
+.. _sdk_ubuntu_components_crossfadeimage_fadeStyle:
 
-.. _sdk_ubuntu_components_crossfadeimage_fadeStyle-prop:
-
-+--------------------------------------------------------------------------+
-|        \ fadeStyle : string                                              |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| fadeStyle : string                                                                                                                                                                                                                                                                                           |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Style of the fade effect
 
@@ -76,75 +66,55 @@ Defaults to ``overlay``
 
 This QML property was introduced in Ubuntu.Components 1.1.
 
-| 
+.. _sdk_ubuntu_components_crossfadeimage_fillMode:
 
-.. _sdk_ubuntu_components_crossfadeimage_fillMode-prop:
-
-+--------------------------------------------------------------------------+
-|        \ fillMode : enumeration                                          |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| fillMode : enumeration                                                                                                                                                                                                                                                                                       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Defaults to ``Image.PreserveAspectFit``
 
 -  Image.Stretch - the image is scaled to fit
--  Image.PreserveAspectFit - the image is scaled uniformly to fit
-   without cropping
--  Image.PreserveAspectCrop - the image is scaled uniformly to fill,
-   cropping if necessary
+-  Image.PreserveAspectFit - the image is scaled uniformly to fit without cropping
+-  Image.PreserveAspectCrop - the image is scaled uniformly to fill, cropping if necessary
 -  Image.Tile - the image is duplicated horizontally and vertically
--  Image.TileVertically - the image is stretched horizontally and tiled
-   vertically
--  Image.TileHorizontally - the image is stretched vertically and tiled
-   horizontally
+-  Image.TileVertically - the image is stretched horizontally and tiled vertically
+-  Image.TileHorizontally - the image is stretched vertically and tiled horizontally
 -  Image.Pad - the image is not transformed
 
-| 
+.. _sdk_ubuntu_components_crossfadeimage_running:
 
-.. _sdk_ubuntu_components_crossfadeimage_running-prop:
-
-+--------------------------------------------------------------------------+
-|        \ running : bool                                                  |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| running : bool                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Whether the animation is running
 
-| 
+.. _sdk_ubuntu_components_crossfadeimage_source:
 
-.. _sdk_ubuntu_components_crossfadeimage_source-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| source : `url <http://doc.qt.io/qt-5/qml-url.html>`_                                                                                                                                                                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ source : `url <http://doc.qt.io/qt-5/qml-url.html>`_            |
-+--------------------------------------------------------------------------+
+The image being displayed. Can be a URL to any image format supported by Qt.
 
-The image being displayed. Can be a URL to any image format supported by
-Qt.
+.. _sdk_ubuntu_components_crossfadeimage_sourceSize:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| sourceSize : size                                                                                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_ubuntu_components_crossfadeimage_sourceSize-prop:
+The actual width and height of the loaded image This property holds the actual width and height of the loaded image.
 
-+--------------------------------------------------------------------------+
-|        \ sourceSize : size                                               |
-+--------------------------------------------------------------------------+
+Unlike the width and height properties, which scale the painting of the image, this property sets the actual number of pixels stored for the loaded image so that large images do not use more memory than necessary.
 
-The actual width and height of the loaded image This property holds the
-actual width and height of the loaded image.
+Note: Changing this property dynamically causes the image source to be reloaded, potentially even from the network, if it is not in the disk cache.
 
-Unlike the width and height properties, which scale the painting of the
-image, this property sets the actual number of pixels stored for the
-loaded image so that large images do not use more memory than necessary.
+.. _sdk_ubuntu_components_crossfadeimage_status:
 
-Note: Changing this property dynamically causes the image source to be
-reloaded, potentially even from the network, if it is not in the disk
-cache.
-
-| 
-
-.. _sdk_ubuntu_components_crossfadeimage_status-prop:
-
-+--------------------------------------------------------------------------+
-|        \ status : enumeration                                            |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| status : enumeration                                                                                                                                                                                                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the status of image loading. It can be one of:
 
@@ -153,4 +123,3 @@ This property holds the status of image loading. It can be one of:
 -  Image.Loading - the image is currently being loaded
 -  Image.Error - an error occurred while loading the image
 
-| 

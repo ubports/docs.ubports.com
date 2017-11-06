@@ -1,4 +1,5 @@
 .. _sdk_qtaudioengine_audiolistener:
+
 QtAudioEngine AudioListener
 ===========================
 
@@ -13,25 +14,19 @@ Control global listener parameters.
 Properties
 ----------
 
--  :ref:`direction <sdk_qtaudioengine_audiolistener_direction-prop>`
-   : vector3d
--  :ref:`engine <sdk_qtaudioengine_audiolistener_engine-prop>` :
-   QtAudioEngine::AudioEngine
--  :ref:`gain <sdk_qtaudioengine_audiolistener_gain-prop>` : real
--  :ref:`position <sdk_qtaudioengine_audiolistener_position-prop>`
-   : vector3d
--  :ref:`up <sdk_qtaudioengine_audiolistener_up-prop>` : vector3d
--  :ref:`velocity <sdk_qtaudioengine_audiolistener_velocity-prop>`
-   : vector3d
+-  :ref:`direction <sdk_qtaudioengine_audiolistener_direction>` : vector3d
+-  :ref:`engine <sdk_qtaudioengine_audiolistener_engine>` : QtAudioEngine::AudioEngine
+-  :ref:`gain <sdk_qtaudioengine_audiolistener_gain>` : real
+-  :ref:`position <sdk_qtaudioengine_audiolistener_position>` : vector3d
+-  :ref:`up <sdk_qtaudioengine_audiolistener_up>` : vector3d
+-  :ref:`velocity <sdk_qtaudioengine_audiolistener_velocity>` : vector3d
 
 Detailed Description
 --------------------
 
 This type is part of the **QtAudioEngine 1.0** module.
 
-:ref:`AudioListener <sdk_qtaudioengine_audiolistener>` will have only one
-global instance and you can either access it through the listener
-property of :ref:`AudioEngine <sdk_qtaudioengine_audioengine>`:
+:ref:`AudioListener <sdk_qtaudioengine_audiolistener>` will have only one global instance and you can either access it through the listener property of :ref:`AudioEngine <sdk_qtaudioengine_audioengine>`:
 
 .. code:: qml
 
@@ -65,9 +60,7 @@ property of :ref:`AudioEngine <sdk_qtaudioengine_audioengine>`:
         }
     }
 
-or alternatively, by defining an
-:ref:`AudioListener <sdk_qtaudioengine_audiolistener>` outside
-:ref:`AudioEngine <sdk_qtaudioengine_audioengine>`:
+or alternatively, by defining an :ref:`AudioListener <sdk_qtaudioengine_audiolistener>` outside :ref:`AudioEngine <sdk_qtaudioengine_audioengine>`:
 
 .. code:: qml
 
@@ -104,72 +97,56 @@ or alternatively, by defining an
         }
     }
 
-This separate :ref:`AudioListener <sdk_qtaudioengine_audiolistener>`
-definition is allowed to make QML bindings easier in some cases.
+This separate :ref:`AudioListener <sdk_qtaudioengine_audiolistener>` definition is allowed to make QML bindings easier in some cases.
 
 Property Documentation
 ----------------------
 
-.. _sdk_qtaudioengine_audiolistener_direction-prop:
+.. _sdk_qtaudioengine_audiolistener_direction:
 
-+--------------------------------------------------------------------------+
-|        \ direction : vector3d                                            |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| direction : vector3d                                                                                                                                                                                                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the normalized 3D direction vector of the listener.
 
-| 
+.. _sdk_qtaudioengine_audiolistener_engine:
 
-.. _sdk_qtaudioengine_audiolistener_engine-prop:
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| engine : :ref:`QtAudioEngine::AudioEngine <sdk_qtaudioengine_audioengine>`                                                                                                                                                                                                                                      |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ engine :                                                        |
-| :ref:`QtAudioEngine::AudioEngine <sdk_qtaudioengine_audioengine>`           |
-+--------------------------------------------------------------------------+
+This property holds the reference to :ref:`AudioEngine <sdk_qtaudioengine_audioengine>`, and must only be set once.
 
-This property holds the reference to
-:ref:`AudioEngine <sdk_qtaudioengine_audioengine>`, and must only be set
-once.
+.. _sdk_qtaudioengine_audiolistener_gain:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| gain : real                                                                                                                                                                                                                                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_qtaudioengine_audiolistener_gain-prop:
+This property will modulate all audio output from audio engine instances.
 
-+--------------------------------------------------------------------------+
-|        \ gain : real                                                     |
-+--------------------------------------------------------------------------+
+.. _sdk_qtaudioengine_audiolistener_position:
 
-This property will modulate all audio output from audio engine
-instances.
-
-| 
-
-.. _sdk_qtaudioengine_audiolistener_position-prop:
-
-+--------------------------------------------------------------------------+
-|        \ position : vector3d                                             |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| position : vector3d                                                                                                                                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the 3D position of the listener.
 
-| 
+.. _sdk_qtaudioengine_audiolistener_up:
 
-.. _sdk_qtaudioengine_audiolistener_up-prop:
-
-+--------------------------------------------------------------------------+
-|        \ up : vector3d                                                   |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| up : vector3d                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the normalized 3D up vector of the listener.
 
-| 
+.. _sdk_qtaudioengine_audiolistener_velocity:
 
-.. _sdk_qtaudioengine_audiolistener_velocity-prop:
-
-+--------------------------------------------------------------------------+
-|        \ velocity : vector3d                                             |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| velocity : vector3d                                                                                                                                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the 3D velocity vector of the listener.
 
-| 

@@ -1,34 +1,17 @@
 .. _sdk_qtquick_qt_quick_examples_-_mousearea:
+
 QtQuick Qt Quick Examples - MouseArea
 =====================================
 
 
 
-|image0|
+*MouseArea* example shows how to respond to clicks and drags with a :ref:`MouseArea <sdk_qtquick_mousearea>`. For more information, visit `Important Concepts In Qt Quick - User Input </sdk/apps/qml/QtQuick/qtquick-input-topic/>`_ .
 
-*MouseArea* example shows how to respond to clicks and drags with a
-:ref:`MouseArea <sdk_qtquick_mousearea>`. For more information, visit
-`Important Concepts In Qt Quick - User
-Input </sdk/apps/qml/QtQuick/qtquick-input-topic/>`_ .
+To run the example from Qt Creator, open the **Welcome** mode and select the example from **Examples**. For more information, visit Building and Running an Example.
 
-.. rubric:: Running the Example
-   :name: running-the-example
+When you click inside the red square, the `Text </sdk/apps/qml/QtQuick/qtquick-releasenotes/#text>`_  type will list several properties of that click which are available to QML. The opacity of the red square will be reduced while the mouse is pressed and remains inside the :ref:`MouseArea <sdk_qtquick_mousearea>`.
 
-To run the example from Qt Creator, open the **Welcome** mode and select
-the example from **Examples**. For more information, visit Building and
-Running an Example.
-
-.. rubric:: MouseArea Behavior
-   :name: mousearea-behavior
-
-When you click inside the red square, the
-`Text </sdk/apps/qml/QtQuick/qtquick-releasenotes/#text>`_  type will
-list several properties of that click which are available to QML. The
-opacity of the red square will be reduced while the mouse is pressed and
-remains inside the :ref:`MouseArea <sdk_qtquick_mousearea>`.
-
-Signals are emitted by the :ref:`MouseArea <sdk_qtquick_mousearea>` when
-clicks or other discrete operations occur within it.
+Signals are emitted by the :ref:`MouseArea <sdk_qtquick_mousearea>` when clicks or other discrete operations occur within it.
 
 .. code:: qml
 
@@ -36,10 +19,7 @@ clicks or other discrete operations occur within it.
     onClicked: btn.text = 'Clicked (wasHeld=' + mouse.wasHeld + ')'
     onDoubleClicked: btn.text = 'Double clicked'
 
-:ref:`MouseArea <sdk_qtquick_mousearea>` can also be used to drag items
-around. By setting the parameters of the drag property, the target item
-will be dragged around if the user starts to drag within the mouse area
-boundary.
+:ref:`MouseArea <sdk_qtquick_mousearea>` can also be used to drag items around. By setting the parameters of the drag property, the target item will be dragged around if the user starts to drag within the mouse area boundary.
 
 .. code:: qml
 
@@ -58,6 +38,4 @@ Files:
 -  mousearea/mousearea.pro
 -  mousearea/mousearea.qmlproject
 -  mousearea/mousearea.qrc
-
-.. |image0| image:: /media/sdk/apps/qml/qtquick-mousearea-example/images/qml-mousearea-example.png
 

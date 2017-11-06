@@ -7,6 +7,3 @@ Ubuntu Touch SDK API
 
     apps/qml/index
     apps/html5/index
-    scopes/cpp/index
-    scopes/js/index
-    autopilot/python/index

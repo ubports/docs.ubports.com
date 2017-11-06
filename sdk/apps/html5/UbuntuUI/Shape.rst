@@ -1,16 +1,14 @@
 .. _sdk_ubuntuui_shape:
+
 UbuntuUI Shape
 ==============
 
 
-An Ubuntu Shape contains and decorates (with CSS styles) some markup,
-often an <em>img</em>.
+An Ubuntu Shape contains and decorates (with CSS styles) some markup, often an <em>img</em>.
 
-**``UbuntuUI.Shape``**\ ( ``  `` )
-.. rubric:: Example
-   :name: example
+**UbuntuUI.Shape**\ ()
 
-.. code:: code
+.. code:: html
 
      <div data-role="shape" id="shapeID">
            <img src="URI"/>
@@ -21,31 +19,25 @@ often an <em>img</em>.
 
 -  Methods
 
-**``click``**\ ( ``- `` )
+**click**\ (``-``)
 Associate a function with the Click event
 
 **Parameters:**
 
--  ``-`` **<Function>**
+- ``-`` **<Function>**
 
    The function to execute on click
 
-.. rubric:: Example
-   :name: example-1
-
-.. code:: code
+.. code:: html
 
        UI.shape("id").click(function(){
                         console.log("Clicked");
                        });
 
-**``element``**\ ( ``  `` )
+**element**\ ()
 Returns the DOM element associated with the id this widget is bind to.
 
-.. rubric:: Example
-   :name: example-2
-
-.. code:: code
+.. code:: html
 
        var myshape = UI.shape("shapeid").element();
 

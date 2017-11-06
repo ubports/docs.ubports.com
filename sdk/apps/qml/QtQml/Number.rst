@@ -1,4 +1,5 @@
 .. _sdk_qtqml_number:
+
 QtQml Number
 ============
 
@@ -11,35 +12,27 @@ The Number object provides represents a number value
 Methods
 -------
 
--  string
-   **:ref:`fromLocaleString <sdk_qtqml_number#fromLocaleString-method>`**\ (locale,
-   number)
--  string
-   **:ref:`toLocaleCurrencyString <sdk_qtqml_number#toLocaleCurrencyString-method>`**\ (locale,
-   symbol)
--  string
-   **:ref:`toLocaleString <sdk_qtqml_number#toLocaleString-method>`**\ (locale,
-   format, precision)
+-  string :ref:`fromLocaleString <sdk_qtqml_number_fromLocaleString>`\ (locale, number)
+-  string :ref:`toLocaleCurrencyString <sdk_qtqml_number_toLocaleCurrencyString>`\ (locale, symbol)
+-  string :ref:`toLocaleString <sdk_qtqml_number_toLocaleString>`\ (locale, format, precision)
 
 Detailed Description
 --------------------
 
-The QML Number object extends the JS Number object with locale aware
-functions.
+The QML Number object extends the JS Number object with locale aware functions.
 
 **See also** :ref:`Locale <sdk_qtqml_locale>`.
 
 Method Documentation
 --------------------
 
-.. _sdk_qtqml_number_string fromLocaleString-method:
+.. _sdk_qtqml_number_fromLocaleString:
 
-+--------------------------------------------------------------------------+
-|        \ string fromLocaleString(locale, number)                         |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| string fromLocaleString(locale, number)                                                                                                                                                                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Returns a Number by parsing *number* using the conventions of the
-supplied *locale*.
+Returns a Number by parsing *number* using the conventions of the supplied *locale*.
 
 If *locale* is not supplied the default locale will be used.
 
@@ -54,31 +47,23 @@ For example, using the German locale:
     d = Number.fromLocaleString(german, "1234.56")  // throws exception
     d = Number.fromLocaleString(german, "1.234")    // d == 1234.0
 
-| 
+.. _sdk_qtqml_number_toLocaleCurrencyString:
 
-.. _sdk_qtqml_number_string toLocaleCurrencyString-method:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| string toLocaleCurrencyString(locale, symbol)                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ string toLocaleCurrencyString(locale, symbol)                   |
-+--------------------------------------------------------------------------+
+Converts the Number to a currency using the currency and conventions of the specified *locale*. If *symbol* is specified it will be used as the currency symbol.
 
-Converts the Number to a currency using the currency and conventions of
-the specified *locale*. If *symbol* is specified it will be used as the
-currency symbol.
+**See also** :ref:`Locale::currencySymbol() <sdk_qtqml_locale_currencySymbol>`.
 
-**See also**
-:ref:`Locale::currencySymbol() <sdk_qtqml_locale#currencySymbol-method>`.
+.. _sdk_qtqml_number_toLocaleString:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| string toLocaleString(locale, format, precision)                                                                                                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_qtqml_number_string toLocaleString-method:
-
-+--------------------------------------------------------------------------+
-|        \ string toLocaleString(locale, format, precision)                |
-+--------------------------------------------------------------------------+
-
-Converts the Number to a string suitable for the specified *locale* in
-the specified *format*, with the specified *precision*.
+Converts the Number to a string suitable for the specified *locale* in the specified *format*, with the specified *precision*.
 
 Valid formats are:
 
@@ -103,8 +88,7 @@ The following example shows a number formatted for the German locale:
         text: "The value is: " +  Number(4742378.423).toLocaleString(Qt.locale("de_DE"))
     }
 
-You can apply toLocaleString() directly to constants, provided the
-decimal is included in the constant, e.g.
+You can apply toLocaleString() directly to constants, provided the decimal is included in the constant, e.g.
 
 .. code:: cpp
 
@@ -112,4 +96,3 @@ decimal is included in the constant, e.g.
     123..toLocaleString(Qt.locale("de_DE"))  // OK
     123.toLocaleString(Qt.locale("de_DE"))   // fails
 
-| 

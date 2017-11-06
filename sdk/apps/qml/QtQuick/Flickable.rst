@@ -1,133 +1,91 @@
 .. _sdk_qtquick_flickable:
+
 QtQuick Flickable
 =================
 
 Provides a surface that can be "flicked"
 
-+--------------------------------------+--------------------------------------+
-| Import Statement:                    | import QtQuick 2.4                   |
-+--------------------------------------+--------------------------------------+
-| Inherits:                            | :ref:`Item <sdk_qtquick_item>`       |
-+--------------------------------------+--------------------------------------+
-| Inherited By:                        | :ref:`GridView <sdk_qtquick_gridview>`  |
-|                                      | and                                  |
-|                                      | :ref:`ListView <sdk_qtquick_listview>`. |
-+--------------------------------------+--------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Import Statement:                                                                                                                                      | import QtQuick 2.4                                                                                                                                           |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Inherits:                                                                                                                                              | :ref:`Item <sdk_qtquick_item>`                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Inherited By:                                                                                                                                          | :ref:`GridView <sdk_qtquick_gridview>` and :ref:`ListView <sdk_qtquick_listview>`.                                                                           |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Properties
 ----------
 
--  :ref:`atXBeginning <sdk_qtquick_flickable_atXBeginning-prop>` :
-   bool
--  :ref:`atXEnd <sdk_qtquick_flickable_atXEnd-prop>` : bool
--  :ref:`atYBeginning <sdk_qtquick_flickable_atYBeginning-prop>` :
-   bool
--  :ref:`atYEnd <sdk_qtquick_flickable_atYEnd-prop>` : bool
--  :ref:`bottomMargin <sdk_qtquick_flickable_bottomMargin-prop>` :
-   real
--  :ref:`boundsBehavior <sdk_qtquick_flickable_boundsBehavior-prop>`
-   : enumeration
--  :ref:`contentHeight <sdk_qtquick_flickable_contentHeight-prop>`
-   : real
--  :ref:`contentItem <sdk_qtquick_flickable_contentItem-prop>` :
-   Item
--  :ref:`contentWidth <sdk_qtquick_flickable_contentWidth-prop>` :
-   real
--  :ref:`contentX <sdk_qtquick_flickable_contentX-prop>` : real
--  :ref:`contentY <sdk_qtquick_flickable_contentY-prop>` : real
--  :ref:`dragging <sdk_qtquick_flickable_dragging-prop>` : bool
--  :ref:`draggingHorizontally <sdk_qtquick_flickable_draggingHorizontally-prop>`
-   : bool
--  :ref:`draggingVertically <sdk_qtquick_flickable_draggingVertically-prop>`
-   : bool
--  :ref:`flickDeceleration <sdk_qtquick_flickable_flickDeceleration-prop>`
-   : real
--  :ref:`flickableDirection <sdk_qtquick_flickable_flickableDirection-prop>`
-   : enumeration
--  :ref:`flicking <sdk_qtquick_flickable_flicking-prop>` : bool
--  :ref:`flickingHorizontally <sdk_qtquick_flickable_flickingHorizontally-prop>`
-   : bool
--  :ref:`flickingVertically <sdk_qtquick_flickable_flickingVertically-prop>`
-   : bool
--  :ref:`horizontalVelocity <sdk_qtquick_flickable_horizontalVelocity-prop>`
-   : real
--  :ref:`interactive <sdk_qtquick_flickable_interactive-prop>` :
-   bool
--  :ref:`leftMargin <sdk_qtquick_flickable_leftMargin-prop>` : real
--  :ref:`maximumFlickVelocity <sdk_qtquick_flickable_maximumFlickVelocity-prop>`
-   : real
--  :ref:`moving <sdk_qtquick_flickable_moving-prop>` : bool
--  :ref:`movingHorizontally <sdk_qtquick_flickable_movingHorizontally-prop>`
-   : bool
--  :ref:`movingVertically <sdk_qtquick_flickable_movingVertically-prop>`
-   : bool
--  :ref:`originX <sdk_qtquick_flickable_originX-prop>` : real
--  :ref:`originY <sdk_qtquick_flickable_originY-prop>` : real
--  :ref:`pixelAligned <sdk_qtquick_flickable_pixelAligned-prop>` :
-   bool
--  :ref:`pressDelay <sdk_qtquick_flickable_pressDelay-prop>` : int
--  :ref:`rebound <sdk_qtquick_flickable_rebound-prop>` : Transition
--  :ref:`rightMargin <sdk_qtquick_flickable_rightMargin-prop>` :
-   real
--  :ref:`topMargin <sdk_qtquick_flickable_topMargin-prop>` : real
--  :ref:`verticalVelocity <sdk_qtquick_flickable_verticalVelocity-prop>`
-   : real
--  :ref:`visibleArea <sdk_qtquick_flickable_visibleArea-prop>`
+-  :ref:`atXBeginning <sdk_qtquick_flickable_atXBeginning>` : bool
+-  :ref:`atXEnd <sdk_qtquick_flickable_atXEnd>` : bool
+-  :ref:`atYBeginning <sdk_qtquick_flickable_atYBeginning>` : bool
+-  :ref:`atYEnd <sdk_qtquick_flickable_atYEnd>` : bool
+-  :ref:`bottomMargin <sdk_qtquick_flickable_bottomMargin>` : real
+-  :ref:`boundsBehavior <sdk_qtquick_flickable_boundsBehavior>` : enumeration
+-  :ref:`contentHeight <sdk_qtquick_flickable_contentHeight>` : real
+-  :ref:`contentItem <sdk_qtquick_flickable_contentItem>` : Item
+-  :ref:`contentWidth <sdk_qtquick_flickable_contentWidth>` : real
+-  :ref:`contentX <sdk_qtquick_flickable_contentX>` : real
+-  :ref:`contentY <sdk_qtquick_flickable_contentY>` : real
+-  :ref:`dragging <sdk_qtquick_flickable_dragging>` : bool
+-  :ref:`draggingHorizontally <sdk_qtquick_flickable_draggingHorizontally>` : bool
+-  :ref:`draggingVertically <sdk_qtquick_flickable_draggingVertically>` : bool
+-  :ref:`flickDeceleration <sdk_qtquick_flickable_flickDeceleration>` : real
+-  :ref:`flickableDirection <sdk_qtquick_flickable_flickableDirection>` : enumeration
+-  :ref:`flicking <sdk_qtquick_flickable_flicking>` : bool
+-  :ref:`flickingHorizontally <sdk_qtquick_flickable_flickingHorizontally>` : bool
+-  :ref:`flickingVertically <sdk_qtquick_flickable_flickingVertically>` : bool
+-  :ref:`horizontalVelocity <sdk_qtquick_flickable_horizontalVelocity>` : real
+-  :ref:`interactive <sdk_qtquick_flickable_interactive>` : bool
+-  :ref:`leftMargin <sdk_qtquick_flickable_leftMargin>` : real
+-  :ref:`maximumFlickVelocity <sdk_qtquick_flickable_maximumFlickVelocity>` : real
+-  :ref:`moving <sdk_qtquick_flickable_moving>` : bool
+-  :ref:`movingHorizontally <sdk_qtquick_flickable_movingHorizontally>` : bool
+-  :ref:`movingVertically <sdk_qtquick_flickable_movingVertically>` : bool
+-  :ref:`originX <sdk_qtquick_flickable_originX>` : real
+-  :ref:`originY <sdk_qtquick_flickable_originY>` : real
+-  :ref:`pixelAligned <sdk_qtquick_flickable_pixelAligned>` : bool
+-  :ref:`pressDelay <sdk_qtquick_flickable_pressDelay>` : int
+-  :ref:`rebound <sdk_qtquick_flickable_rebound>` : Transition
+-  :ref:`rightMargin <sdk_qtquick_flickable_rightMargin>` : real
+-  :ref:`topMargin <sdk_qtquick_flickable_topMargin>` : real
+-  :ref:`verticalVelocity <sdk_qtquick_flickable_verticalVelocity>` : real
+-  :ref:`visibleArea <sdk_qtquick_flickable_visibleArea>`
 
-   -  :ref:`visibleArea.xPosition <sdk_qtquick_flickable_visibleArea.xPosition-prop>`
-      : real
-   -  :ref:`visibleArea.widthRatio <sdk_qtquick_flickable_visibleArea.widthRatio-prop>`
-      : real
-   -  :ref:`visibleArea.yPosition <sdk_qtquick_flickable_visibleArea.yPosition-prop>`
-      : real
-   -  :ref:`visibleArea.heightRatio <sdk_qtquick_flickable_visibleArea.heightRatio-prop>`
-      : real
+   -  :ref:`visibleArea.xPosition <sdk_qtquick_flickable_visibleArea_xPosition>` : real
+   -  :ref:`visibleArea.widthRatio <sdk_qtquick_flickable_visibleArea_widthRatio>` : real
+   -  :ref:`visibleArea.yPosition <sdk_qtquick_flickable_visibleArea_yPosition>` : real
+   -  :ref:`visibleArea.heightRatio <sdk_qtquick_flickable_visibleArea_heightRatio>` : real
 
 Signals
 -------
 
--  :ref:`flickEnded <sdk_qtquick_flickable_flickEnded-signal>`\ ()
--  :ref:`flickStarted <sdk_qtquick_flickable_flickStarted-signal>`\ ()
--  :ref:`movementEnded <sdk_qtquick_flickable_movementEnded-signal>`\ ()
--  :ref:`movementStarted <sdk_qtquick_flickable_movementStarted-signal>`\ ()
+-  :ref:`flickEnded <sdk_qtquick_flickable_flickEnded>`\ ()
+-  :ref:`flickStarted <sdk_qtquick_flickable_flickStarted>`\ ()
+-  :ref:`movementEnded <sdk_qtquick_flickable_movementEnded>`\ ()
+-  :ref:`movementStarted <sdk_qtquick_flickable_movementStarted>`\ ()
 
 Methods
 -------
 
--  :ref:`cancelFlick <sdk_qtquick_flickable_cancelFlick-method>`\ ()
--  :ref:`flick <sdk_qtquick_flickable_flick-method>`\ (qreal
-   *xVelocity*, qreal *yVelocity*)
--  :ref:`resizeContent <sdk_qtquick_flickable_resizeContent-method>`\ (real
-   *width*, real *height*, QPointF *center*)
--  :ref:`returnToBounds <sdk_qtquick_flickable_returnToBounds-method>`\ ()
+-  :ref:`cancelFlick <sdk_qtquick_flickable_cancelFlick>`\ ()
+-  :ref:`flick <sdk_qtquick_flickable_flick>`\ (qreal *xVelocity*, qreal *yVelocity*)
+-  :ref:`resizeContent <sdk_qtquick_flickable_resizeContent>`\ (real *width*, real *height*, QPointF *center*)
+-  :ref:`returnToBounds <sdk_qtquick_flickable_returnToBounds>`\ ()
 
 Detailed Description
 --------------------
 
-The Flickable item places its children on a surface that can be dragged
-and flicked, causing the view onto the child items to scroll. This
-behavior forms the basis of Items that are designed to show large
-numbers of child items, such as :ref:`ListView <sdk_qtquick_listview>` and
-`GridView </sdk/apps/qml/QtQuick/draganddrop/#gridview>`_ .
+The Flickable item places its children on a surface that can be dragged and flicked, causing the view onto the child items to scroll. This behavior forms the basis of Items that are designed to show large numbers of child items, such as :ref:`ListView <sdk_qtquick_listview>` and `GridView </sdk/apps/qml/QtQuick/draganddrop/#gridview>`_ .
 
-In traditional user interfaces, views can be scrolled using standard
-controls, such as scroll bars and arrow buttons. In some situations, it
-is also possible to drag the view directly by pressing and holding a
-mouse button while moving the cursor. In touch-based user interfaces,
-this dragging action is often complemented with a flicking action, where
-scrolling continues after the user has stopped touching the view.
+In traditional user interfaces, views can be scrolled using standard controls, such as scroll bars and arrow buttons. In some situations, it is also possible to drag the view directly by pressing and holding a mouse button while moving the cursor. In touch-based user interfaces, this dragging action is often complemented with a flicking action, where scrolling continues after the user has stopped touching the view.
 
-Flickable does not automatically clip its contents. If it is not used as
-a full-screen item, you should consider setting the
-:ref:`clip <sdk_qtquick_item#clip-prop>` property to true.
+Flickable does not automatically clip its contents. If it is not used as a full-screen item, you should consider setting the :ref:`clip <sdk_qtquick_item_clip>` property to true.
 
 Example Usage
 -------------
 
-|image0|
-
-The following example shows a small view onto a large image in which the
-user can drag or flick the image in order to view different parts of it.
+The following example shows a small view onto a large image in which the user can drag or flick the image in order to view different parts of it.
 
 .. code:: qml
 
@@ -138,119 +96,81 @@ user can drag or flick the image in order to view different parts of it.
         Image { id: image; source: "bigImage.png" }
     }
 
-| 
-
-Items declared as children of a Flickable are automatically parented to
-the Flickable's
-:ref:`contentItem <sdk_qtquick_flickable#contentItem-prop>`. This should be
-taken into account when operating on the children of the Flickable; it
-is usually the children of ``contentItem`` that are relevant. For
-example, the bound of Items added to the Flickable will be available by
-``contentItem.childrenRect``
+Items declared as children of a Flickable are automatically parented to the Flickable's :ref:`contentItem <sdk_qtquick_flickable_contentItem>`. This should be taken into account when operating on the children of the Flickable; it is usually the children of ``contentItem`` that are relevant. For example, the bound of Items added to the Flickable will be available by ``contentItem.childrenRect``
 
 Limitations
 -----------
 
-**Note:** Due to an implementation detail, items placed inside a
-Flickable cannot anchor to it by ``id``. Use ``parent`` instead.
+**Note:** Due to an implementation detail, items placed inside a Flickable cannot anchor to it by ``id``. Use ``parent`` instead.
 
 Property Documentation
 ----------------------
 
-.. _sdk_qtquick_flickable_atXBeginning-prop:
+.. _sdk_qtquick_flickable_atXBeginning:
 
-+--------------------------------------------------------------------------+
-|        \ atXBeginning : bool                                             |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| atXBeginning : bool                                                                                                                                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-These properties are true if the flickable view is positioned at the
-beginning, or end respectively.
+These properties are true if the flickable view is positioned at the beginning, or end respectively.
 
-| 
+.. _sdk_qtquick_flickable_atXEnd:
 
-.. _sdk_qtquick_flickable_atXEnd-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| atXEnd : bool                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ atXEnd : bool                                                   |
-+--------------------------------------------------------------------------+
+These properties are true if the flickable view is positioned at the beginning, or end respectively.
 
-These properties are true if the flickable view is positioned at the
-beginning, or end respectively.
+.. _sdk_qtquick_flickable_atYBeginning:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| atYBeginning : bool                                                                                                                                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_qtquick_flickable_atYBeginning-prop:
+These properties are true if the flickable view is positioned at the beginning, or end respectively.
 
-+--------------------------------------------------------------------------+
-|        \ atYBeginning : bool                                             |
-+--------------------------------------------------------------------------+
+.. _sdk_qtquick_flickable_atYEnd:
 
-These properties are true if the flickable view is positioned at the
-beginning, or end respectively.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| atYEnd : bool                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-| 
+These properties are true if the flickable view is positioned at the beginning, or end respectively.
 
-.. _sdk_qtquick_flickable_atYEnd-prop:
+.. _sdk_qtquick_flickable_bottomMargin:
 
-+--------------------------------------------------------------------------+
-|        \ atYEnd : bool                                                   |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| bottomMargin : real                                                                                                                                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-These properties are true if the flickable view is positioned at the
-beginning, or end respectively.
+These properties hold the margins around the content. This space is reserved in addition to the :ref:`contentWidth <sdk_qtquick_flickable_contentWidth>` and :ref:`contentHeight <sdk_qtquick_flickable_contentHeight>`.
 
-| 
+.. _sdk_qtquick_flickable_boundsBehavior:
 
-.. _sdk_qtquick_flickable_bottomMargin-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| boundsBehavior : enumeration                                                                                                                                                                                                                                                                                 |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ bottomMargin : real                                             |
-+--------------------------------------------------------------------------+
+This property holds whether the surface may be dragged beyond the Flickable's boundaries, or overshoot the Flickable's boundaries when flicked.
 
-These properties hold the margins around the content. This space is
-reserved in addition to the
-:ref:`contentWidth <sdk_qtquick_flickable#contentWidth-prop>` and
-:ref:`contentHeight <sdk_qtquick_flickable#contentHeight-prop>`.
-
-| 
-
-.. _sdk_qtquick_flickable_boundsBehavior-prop:
-
-+--------------------------------------------------------------------------+
-|        \ boundsBehavior : enumeration                                    |
-+--------------------------------------------------------------------------+
-
-This property holds whether the surface may be dragged beyond the
-Flickable's boundaries, or overshoot the Flickable's boundaries when
-flicked.
-
-This enables the feeling that the edges of the view are soft, rather
-than a hard physical boundary.
+This enables the feeling that the edges of the view are soft, rather than a hard physical boundary.
 
 The ``boundsBehavior`` can be one of:
 
--  Flickable.StopAtBounds - the contents can not be dragged beyond the
-   boundary of the flickable, and flicks will not overshoot.
--  Flickable.DragOverBounds - the contents can be dragged beyond the
-   boundary of the Flickable, but flicks will not overshoot.
--  Flickable.DragAndOvershootBounds (default) - the contents can be
-   dragged beyond the boundary of the Flickable, and can overshoot the
-   boundary when flicked.
+-  Flickable.StopAtBounds - the contents can not be dragged beyond the boundary of the flickable, and flicks will not overshoot.
+-  Flickable.DragOverBounds - the contents can be dragged beyond the boundary of the Flickable, but flicks will not overshoot.
+-  Flickable.DragAndOvershootBounds (default) - the contents can be dragged beyond the boundary of the Flickable, and can overshoot the boundary when flicked.
 
-| 
+.. _sdk_qtquick_flickable_contentHeight:
 
-.. _sdk_qtquick_flickable_contentHeight-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| contentHeight : real                                                                                                                                                                                                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ contentHeight : real                                            |
-+--------------------------------------------------------------------------+
+The dimensions of the content (the surface controlled by Flickable). This should typically be set to the combined size of the items placed in the Flickable.
 
-The dimensions of the content (the surface controlled by Flickable).
-This should typically be set to the combined size of the items placed in
-the Flickable.
-
-The following snippet shows how these properties are used to display an
-image that is larger than the Flickable item itself:
+The following snippet shows how these properties are used to display an image that is larger than the Flickable item itself:
 
 .. code:: qml
 
@@ -261,12 +181,7 @@ image that is larger than the Flickable item itself:
         Image { id: image; source: "bigImage.png" }
     }
 
-In some cases, the content dimensions can be automatically set based on
-the :ref:`childrenRect.width <sdk_qtquick_item#childrenRect.width-prop>`
-and :ref:`childrenRect.height <sdk_qtquick_item#childrenRect.height-prop>`
-properties of the
-:ref:`contentItem <sdk_qtquick_flickable#contentItem-prop>`. For example,
-the previous snippet could be rewritten with:
+In some cases, the content dimensions can be automatically set based on the :ref:`childrenRect.width <sdk_qtquick_item_childrenRect_width>` and :ref:`childrenRect.height <sdk_qtquick_item_childrenRect_height>` properties of the :ref:`contentItem <sdk_qtquick_flickable_contentItem>`. For example, the previous snippet could be rewritten with:
 
 .. code:: cpp
 
@@ -274,21 +189,17 @@ the previous snippet could be rewritten with:
 
 Though this assumes that the origin of the childrenRect is 0,0.
 
-| 
+.. _sdk_qtquick_flickable_contentItem:
 
-.. _sdk_qtquick_flickable_-prop:
-
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ contentItem : `Item <sdk_qtquick_item>`                    |
-+--------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| contentItem : :ref:`Item <sdk_qtquick_item>`                                                                                                                                                                                                                                                                    |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The internal item that contains the Items to be moved in the Flickable.
 
-Items declared as children of a Flickable are automatically parented to
-the Flickable's contentItem.
+Items declared as children of a Flickable are automatically parented to the Flickable's contentItem.
 
-Items created dynamically need to be explicitly parented to the
-*contentItem*:
+Items created dynamically need to be explicitly parented to the *contentItem*:
 
 .. code:: cpp
 
@@ -300,20 +211,15 @@ Items created dynamically need to be explicitly parented to the
         }
     }
 
-| 
+.. _sdk_qtquick_flickable_contentWidth:
 
-.. _sdk_qtquick_flickable_contentWidth-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| contentWidth : real                                                                                                                                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ contentWidth : real                                             |
-+--------------------------------------------------------------------------+
+The dimensions of the content (the surface controlled by Flickable). This should typically be set to the combined size of the items placed in the Flickable.
 
-The dimensions of the content (the surface controlled by Flickable).
-This should typically be set to the combined size of the items placed in
-the Flickable.
-
-The following snippet shows how these properties are used to display an
-image that is larger than the Flickable item itself:
+The following snippet shows how these properties are used to display an image that is larger than the Flickable item itself:
 
 .. code:: qml
 
@@ -324,12 +230,7 @@ image that is larger than the Flickable item itself:
         Image { id: image; source: "bigImage.png" }
     }
 
-In some cases, the content dimensions can be automatically set based on
-the :ref:`childrenRect.width <sdk_qtquick_item#childrenRect.width-prop>`
-and :ref:`childrenRect.height <sdk_qtquick_item#childrenRect.height-prop>`
-properties of the
-:ref:`contentItem <sdk_qtquick_flickable#contentItem-prop>`. For example,
-the previous snippet could be rewritten with:
+In some cases, the content dimensions can be automatically set based on the :ref:`childrenRect.width <sdk_qtquick_item_childrenRect_width>` and :ref:`childrenRect.height <sdk_qtquick_item_childrenRect_height>` properties of the :ref:`contentItem <sdk_qtquick_flickable_contentItem>`. For example, the previous snippet could be rewritten with:
 
 .. code:: cpp
 
@@ -337,322 +238,212 @@ the previous snippet could be rewritten with:
 
 Though this assumes that the origin of the childrenRect is 0,0.
 
-| 
+.. _sdk_qtquick_flickable_contentX:
 
-.. _sdk_qtquick_flickable_contentX-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| contentX : real                                                                                                                                                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ contentX : real                                                 |
-+--------------------------------------------------------------------------+
+These properties hold the surface coordinate currently at the top-left corner of the Flickable. For example, if you flick an image up 100 pixels, ``contentY`` will be 100.
 
-These properties hold the surface coordinate currently at the top-left
-corner of the Flickable. For example, if you flick an image up 100
-pixels, ``contentY`` will be 100.
+.. _sdk_qtquick_flickable_contentY:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| contentY : real                                                                                                                                                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_qtquick_flickable_contentY-prop:
+These properties hold the surface coordinate currently at the top-left corner of the Flickable. For example, if you flick an image up 100 pixels, ``contentY`` will be 100.
 
-+--------------------------------------------------------------------------+
-|        \ contentY : real                                                 |
-+--------------------------------------------------------------------------+
+.. _sdk_qtquick_flickable_dragging:
 
-These properties hold the surface coordinate currently at the top-left
-corner of the Flickable. For example, if you flick an image up 100
-pixels, ``contentY`` will be 100.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| dragging : bool                                                                                                                                                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-| 
+These properties describe whether the view is currently moving horizontally, vertically or in either direction, due to the user dragging the view.
 
-.. _sdk_qtquick_flickable_dragging-prop:
+.. _sdk_qtquick_flickable_draggingHorizontally:
 
-+--------------------------------------------------------------------------+
-|        \ dragging : bool                                                 |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| draggingHorizontally : bool                                                                                                                                                                                                                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-These properties describe whether the view is currently moving
-horizontally, vertically or in either direction, due to the user
-dragging the view.
+These properties describe whether the view is currently moving horizontally, vertically or in either direction, due to the user dragging the view.
 
-| 
+.. _sdk_qtquick_flickable_draggingVertically:
 
-.. _sdk_qtquick_flickable_draggingHorizontally-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| draggingVertically : bool                                                                                                                                                                                                                                                                                    |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ draggingHorizontally : bool                                     |
-+--------------------------------------------------------------------------+
+These properties describe whether the view is currently moving horizontally, vertically or in either direction, due to the user dragging the view.
 
-These properties describe whether the view is currently moving
-horizontally, vertically or in either direction, due to the user
-dragging the view.
+.. _sdk_qtquick_flickable_flickDeceleration:
 
-| 
-
-.. _sdk_qtquick_flickable_draggingVertically-prop:
-
-+--------------------------------------------------------------------------+
-|        \ draggingVertically : bool                                       |
-+--------------------------------------------------------------------------+
-
-These properties describe whether the view is currently moving
-horizontally, vertically or in either direction, due to the user
-dragging the view.
-
-| 
-
-.. _sdk_qtquick_flickable_flickDeceleration-prop:
-
-+--------------------------------------------------------------------------+
-|        \ flickDeceleration : real                                        |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| flickDeceleration : real                                                                                                                                                                                                                                                                                     |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the rate at which a flick will decelerate.
 
 The default value is platform dependent.
 
-| 
+.. _sdk_qtquick_flickable_flickableDirection:
 
-.. _sdk_qtquick_flickable_flickableDirection-prop:
-
-+--------------------------------------------------------------------------+
-|        \ flickableDirection : enumeration                                |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| flickableDirection : enumeration                                                                                                                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property determines which directions the view can be flicked.
 
--  Flickable.AutoFlickDirection (default) - allows flicking vertically
-   if the *contentHeight* is not equal to the *height* of the Flickable.
-   Allows flicking horizontally if the *contentWidth* is not equal to
-   the *width* of the Flickable.
+-  Flickable.AutoFlickDirection (default) - allows flicking vertically if the *contentHeight* is not equal to the *height* of the Flickable. Allows flicking horizontally if the *contentWidth* is not equal to the *width* of the Flickable.
 -  Flickable.HorizontalFlick - allows flicking horizontally.
 -  Flickable.VerticalFlick - allows flicking vertically.
--  Flickable.HorizontalAndVerticalFlick - allows flicking in both
-   directions.
+-  Flickable.HorizontalAndVerticalFlick - allows flicking in both directions.
 
-| 
+.. _sdk_qtquick_flickable_flicking:
 
-.. _sdk_qtquick_flickable_flicking-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| flicking : bool                                                                                                                                                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ flicking : bool                                                 |
-+--------------------------------------------------------------------------+
+These properties describe whether the view is currently moving horizontally, vertically or in either direction, due to the user flicking the view.
 
-These properties describe whether the view is currently moving
-horizontally, vertically or in either direction, due to the user
-flicking the view.
+.. _sdk_qtquick_flickable_flickingHorizontally:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| flickingHorizontally : bool                                                                                                                                                                                                                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_qtquick_flickable_flickingHorizontally-prop:
+These properties describe whether the view is currently moving horizontally, vertically or in either direction, due to the user flicking the view.
 
-+--------------------------------------------------------------------------+
-|        \ flickingHorizontally : bool                                     |
-+--------------------------------------------------------------------------+
+.. _sdk_qtquick_flickable_flickingVertically:
 
-These properties describe whether the view is currently moving
-horizontally, vertically or in either direction, due to the user
-flicking the view.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| flickingVertically : bool                                                                                                                                                                                                                                                                                    |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-| 
+These properties describe whether the view is currently moving horizontally, vertically or in either direction, due to the user flicking the view.
 
-.. _sdk_qtquick_flickable_flickingVertically-prop:
+.. _sdk_qtquick_flickable_horizontalVelocity:
 
-+--------------------------------------------------------------------------+
-|        \ flickingVertically : bool                                       |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| horizontalVelocity : real                                                                                                                                                                                                                                                                                    |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-These properties describe whether the view is currently moving
-horizontally, vertically or in either direction, due to the user
-flicking the view.
-
-| 
-
-.. _sdk_qtquick_flickable_horizontalVelocity-prop:
-
-+--------------------------------------------------------------------------+
-|        \ horizontalVelocity : real                                       |
-+--------------------------------------------------------------------------+
-
-The instantaneous velocity of movement along the x and y axes, in
-pixels/sec.
+The instantaneous velocity of movement along the x and y axes, in pixels/sec.
 
 The reported velocity is smoothed to avoid erratic output.
 
-Note that for views with a large content size (more than 10 times the
-view size), the velocity of the flick may exceed the velocity of the
-touch in the case of multiple quick consecutive flicks. This allows the
-user to flick faster through large content.
+Note that for views with a large content size (more than 10 times the view size), the velocity of the flick may exceed the velocity of the touch in the case of multiple quick consecutive flicks. This allows the user to flick faster through large content.
 
-| 
+.. _sdk_qtquick_flickable_interactive:
 
-.. _sdk_qtquick_flickable_interactive-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| interactive : bool                                                                                                                                                                                                                                                                                           |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ interactive : bool                                              |
-+--------------------------------------------------------------------------+
-
-This property describes whether the user can interact with the
-Flickable. A user cannot drag or flick a Flickable that is not
-interactive.
+This property describes whether the user can interact with the Flickable. A user cannot drag or flick a Flickable that is not interactive.
 
 By default, this property is true.
 
-This property is useful for temporarily disabling flicking. This allows
-special interaction with Flickable's children; for example, you might
-want to freeze a flickable map while scrolling through a pop-up dialog
-that is a child of the Flickable.
+This property is useful for temporarily disabling flicking. This allows special interaction with Flickable's children; for example, you might want to freeze a flickable map while scrolling through a pop-up dialog that is a child of the Flickable.
 
-| 
+.. _sdk_qtquick_flickable_leftMargin:
 
-.. _sdk_qtquick_flickable_leftMargin-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| leftMargin : real                                                                                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ leftMargin : real                                               |
-+--------------------------------------------------------------------------+
+These properties hold the margins around the content. This space is reserved in addition to the :ref:`contentWidth <sdk_qtquick_flickable_contentWidth>` and :ref:`contentHeight <sdk_qtquick_flickable_contentHeight>`.
 
-These properties hold the margins around the content. This space is
-reserved in addition to the
-:ref:`contentWidth <sdk_qtquick_flickable#contentWidth-prop>` and
-:ref:`contentHeight <sdk_qtquick_flickable#contentHeight-prop>`.
+.. _sdk_qtquick_flickable_maximumFlickVelocity:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| maximumFlickVelocity : real                                                                                                                                                                                                                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_qtquick_flickable_maximumFlickVelocity-prop:
-
-+--------------------------------------------------------------------------+
-|        \ maximumFlickVelocity : real                                     |
-+--------------------------------------------------------------------------+
-
-This property holds the maximum velocity that the user can flick the
-view in pixels/second.
+This property holds the maximum velocity that the user can flick the view in pixels/second.
 
 The default value is platform dependent.
 
-| 
+.. _sdk_qtquick_flickable_moving:
 
-.. _sdk_qtquick_flickable_moving-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| moving : bool                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ moving : bool                                                   |
-+--------------------------------------------------------------------------+
+These properties describe whether the view is currently moving horizontally, vertically or in either direction, due to the user either dragging or flicking the view.
 
-These properties describe whether the view is currently moving
-horizontally, vertically or in either direction, due to the user either
-dragging or flicking the view.
+.. _sdk_qtquick_flickable_movingHorizontally:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| movingHorizontally : bool                                                                                                                                                                                                                                                                                    |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_qtquick_flickable_movingHorizontally-prop:
+These properties describe whether the view is currently moving horizontally, vertically or in either direction, due to the user either dragging or flicking the view.
 
-+--------------------------------------------------------------------------+
-|        \ movingHorizontally : bool                                       |
-+--------------------------------------------------------------------------+
+.. _sdk_qtquick_flickable_movingVertically:
 
-These properties describe whether the view is currently moving
-horizontally, vertically or in either direction, due to the user either
-dragging or flicking the view.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| movingVertically : bool                                                                                                                                                                                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-| 
+These properties describe whether the view is currently moving horizontally, vertically or in either direction, due to the user either dragging or flicking the view.
 
-.. _sdk_qtquick_flickable_movingVertically-prop:
+.. _sdk_qtquick_flickable_originX:
 
-+--------------------------------------------------------------------------+
-|        \ movingVertically : bool                                         |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| originX : real                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-These properties describe whether the view is currently moving
-horizontally, vertically or in either direction, due to the user either
-dragging or flicking the view.
+These properties hold the origin of the content. This value always refers to the top-left position of the content regardless of layout direction.
 
-| 
+This is usually (0,0), however :ref:`ListView <sdk_qtquick_listview>` and `GridView </sdk/apps/qml/QtQuick/draganddrop/#gridview>`_  may have an arbitrary origin due to delegate size variation, or item insertion/removal outside the visible region.
 
-.. _sdk_qtquick_flickable_originX-prop:
+.. _sdk_qtquick_flickable_originY:
 
-+--------------------------------------------------------------------------+
-|        \ originX : real                                                  |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| originY : real                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-These properties hold the origin of the content. This value always
-refers to the top-left position of the content regardless of layout
-direction.
+These properties hold the origin of the content. This value always refers to the top-left position of the content regardless of layout direction.
 
-This is usually (0,0), however :ref:`ListView <sdk_qtquick_listview>` and
-`GridView </sdk/apps/qml/QtQuick/draganddrop/#gridview>`_  may have an
-arbitrary origin due to delegate size variation, or item
-insertion/removal outside the visible region.
+This is usually (0,0), however :ref:`ListView <sdk_qtquick_listview>` and `GridView </sdk/apps/qml/QtQuick/draganddrop/#gridview>`_  may have an arbitrary origin due to delegate size variation, or item insertion/removal outside the visible region.
 
-| 
+.. _sdk_qtquick_flickable_pixelAligned:
 
-.. _sdk_qtquick_flickable_originY-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| pixelAligned : bool                                                                                                                                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ originY : real                                                  |
-+--------------------------------------------------------------------------+
+This property sets the alignment of :ref:`contentX <sdk_qtquick_flickable_contentX>` and :ref:`contentY <sdk_qtquick_flickable_contentY>` to pixels (``true``) or subpixels (``false``).
 
-These properties hold the origin of the content. This value always
-refers to the top-left position of the content regardless of layout
-direction.
-
-This is usually (0,0), however :ref:`ListView <sdk_qtquick_listview>` and
-`GridView </sdk/apps/qml/QtQuick/draganddrop/#gridview>`_  may have an
-arbitrary origin due to delegate size variation, or item
-insertion/removal outside the visible region.
-
-| 
-
-.. _sdk_qtquick_flickable_pixelAligned-prop:
-
-+--------------------------------------------------------------------------+
-|        \ pixelAligned : bool                                             |
-+--------------------------------------------------------------------------+
-
-This property sets the alignment of
-:ref:`contentX <sdk_qtquick_flickable#contentX-prop>` and
-:ref:`contentY <sdk_qtquick_flickable#contentY-prop>` to pixels (``true``)
-or subpixels (``false``).
-
-Enable pixelAligned to optimize for still content or moving content with
-high constrast edges, such as one-pixel-wide lines, text or vector
-graphics. Disable pixelAligned when optimizing for animation quality.
+Enable pixelAligned to optimize for still content or moving content with high constrast edges, such as one-pixel-wide lines, text or vector graphics. Disable pixelAligned when optimizing for animation quality.
 
 The default is ``false``.
 
-| 
+.. _sdk_qtquick_flickable_pressDelay:
 
-.. _sdk_qtquick_flickable_pressDelay-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| pressDelay : int                                                                                                                                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ pressDelay : int                                                |
-+--------------------------------------------------------------------------+
+This property holds the time to delay (ms) delivering a press to children of the Flickable. This can be useful where reacting to a press before a flicking action has undesirable effects.
 
-This property holds the time to delay (ms) delivering a press to
-children of the Flickable. This can be useful where reacting to a press
-before a flicking action has undesirable effects.
+If the flickable is dragged/flicked before the delay times out the press event will not be delivered. If the button is released within the timeout, both the press and release will be delivered.
 
-If the flickable is dragged/flicked before the delay times out the press
-event will not be delivered. If the button is released within the
-timeout, both the press and release will be delivered.
-
-Note that for nested Flickables with pressDelay set, the pressDelay of
-outer Flickables is overridden by the innermost Flickable. If the drag
-exceeds the platform drag threshold, the press event will be delivered
-regardless of this property.
+Note that for nested Flickables with pressDelay set, the pressDelay of outer Flickables is overridden by the innermost Flickable. If the drag exceeds the platform drag threshold, the press event will be delivered regardless of this property.
 
 **See also** QStyleHints.
 
-| 
+.. _sdk_qtquick_flickable_rebound:
 
-.. _sdk_qtquick_flickable_-prop:
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| rebound : :ref:`Transition <sdk_qtquick_transition>`                                                                                                                                                                                                                                                            |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-| :ref:` <>`\ rebound : `Transition <sdk_qtquick_transition>`            |
-+--------------------------------------------------------------------------+
-
-This holds the transition to be applied to the content view when it
-snaps back to the bounds of the flickable. The transition is triggered
-when the view is flicked or dragged past the edge of the content area,
-or when
-:ref:`returnToBounds() <sdk_qtquick_flickable#returnToBounds-method>` is
-called.
+This holds the transition to be applied to the content view when it snaps back to the bounds of the flickable. The transition is triggered when the view is flicked or dragged past the edge of the content area, or when :ref:`returnToBounds() <sdk_qtquick_flickable_returnToBounds>` is called.
 
 .. code:: qml
 
@@ -676,83 +467,51 @@ called.
         }
     }
 
-When the above view is flicked beyond its bounds, it will return to its
-bounds using the transition specified:
-
-|image1|
+When the above view is flicked beyond its bounds, it will return to its bounds using the transition specified:
 
 If this property is not set, a default animation is applied.
 
-| 
+.. _sdk_qtquick_flickable_rightMargin:
 
-.. _sdk_qtquick_flickable_rightMargin-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| rightMargin : real                                                                                                                                                                                                                                                                                           |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ rightMargin : real                                              |
-+--------------------------------------------------------------------------+
+These properties hold the margins around the content. This space is reserved in addition to the :ref:`contentWidth <sdk_qtquick_flickable_contentWidth>` and :ref:`contentHeight <sdk_qtquick_flickable_contentHeight>`.
 
-These properties hold the margins around the content. This space is
-reserved in addition to the
-:ref:`contentWidth <sdk_qtquick_flickable#contentWidth-prop>` and
-:ref:`contentHeight <sdk_qtquick_flickable#contentHeight-prop>`.
+.. _sdk_qtquick_flickable_topMargin:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| topMargin : real                                                                                                                                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_qtquick_flickable_topMargin-prop:
+These properties hold the margins around the content. This space is reserved in addition to the :ref:`contentWidth <sdk_qtquick_flickable_contentWidth>` and :ref:`contentHeight <sdk_qtquick_flickable_contentHeight>`.
 
-+--------------------------------------------------------------------------+
-|        \ topMargin : real                                                |
-+--------------------------------------------------------------------------+
+.. _sdk_qtquick_flickable_verticalVelocity:
 
-These properties hold the margins around the content. This space is
-reserved in addition to the
-:ref:`contentWidth <sdk_qtquick_flickable#contentWidth-prop>` and
-:ref:`contentHeight <sdk_qtquick_flickable#contentHeight-prop>`.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| verticalVelocity : real                                                                                                                                                                                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-| 
-
-.. _sdk_qtquick_flickable_verticalVelocity-prop:
-
-+--------------------------------------------------------------------------+
-|        \ verticalVelocity : real                                         |
-+--------------------------------------------------------------------------+
-
-The instantaneous velocity of movement along the x and y axes, in
-pixels/sec.
+The instantaneous velocity of movement along the x and y axes, in pixels/sec.
 
 The reported velocity is smoothed to avoid erratic output.
 
-Note that for views with a large content size (more than 10 times the
-view size), the velocity of the flick may exceed the velocity of the
-touch in the case of multiple quick consecutive flicks. This allows the
-user to flick faster through large content.
+Note that for views with a large content size (more than 10 times the view size), the velocity of the flick may exceed the velocity of the touch in the case of multiple quick consecutive flicks. This allows the user to flick faster through large content.
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **visibleArea group**                                                                                                                                                                                                                                                                                        |
++==============================================================================================================================================================================================================================================================================================================+
+| visibleArea.xPosition : real                                                                                                                                                                                                                                                                                 |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| visibleArea.widthRatio : real                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| visibleArea.yPosition : real                                                                                                                                                                                                                                                                                 |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| visibleArea.heightRatio : real                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_qtquick_flickable_**visibleArea group**-prop:
-
-+--------------------------------------------------------------------------+
-|        \ **visibleArea group**                                           |
-+==========================================================================+
-.. _sdk_qtquick_flickable_visibleArea.widthRatio-prop:
-|        \ visibleArea.xPosition : real                                    |
-+--------------------------------------------------------------------------+
-.. _sdk_qtquick_flickable_visibleArea.yPosition-prop:
-|        \ visibleArea.widthRatio : real                                   |
-+--------------------------------------------------------------------------+
-.. _sdk_qtquick_flickable_visibleArea.heightRatio-prop:
-|        \ visibleArea.yPosition : real                                    |
-+--------------------------------------------------------------------------+
-|        \ visibleArea.heightRatio : real                                  |
-+--------------------------------------------------------------------------+
-
-These properties describe the position and size of the currently viewed
-area. The size is defined as the percentage of the full view currently
-visible, scaled to 0.0 - 1.0. The page position is usually in the range
-0.0 (beginning) to 1.0 minus size ratio (end), i.e. ``yPosition`` is in
-the range 0.0 to 1.0-\ ``heightRatio``. However, it is possible for the
-contents to be dragged outside of the normal range, resulting in the
-page positions also being outside the normal range.
+These properties describe the position and size of the currently viewed area. The size is defined as the percentage of the full view currently visible, scaled to 0.0 - 1.0. The page position is usually in the range 0.0 (beginning) to 1.0 minus size ratio (end), i.e. ``yPosition`` is in the range 0.0 to 1.0-\ ``heightRatio``. However, it is possible for the contents to be dragged outside of the normal range, resulting in the page positions also being outside the normal range.
 
 These properties are typically used to draw a scrollbar. For example:
 
@@ -774,123 +533,89 @@ These properties are typically used to draw a scrollbar. For example:
         }
     }
 
-**See also** `UI Components: Scrollbar
-Example </sdk/apps/qml/QtQuick/customitems-scrollbar/>`_ .
-
-| 
+**See also** `UI Components: Scrollbar Example </sdk/apps/qml/QtQuick/customitems-scrollbar/>`_ .
 
 Signal Documentation
 --------------------
 
-.. _sdk_qtquick_flickable_flickEnded()-prop:
+.. _sdk_qtquick_flickable_flickEnded:
 
-+--------------------------------------------------------------------------+
-|        \ flickEnded()                                                    |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| flickEnded()                                                                                                                                                                                                                                                                                                 |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This signal is emitted when the view stops moving due to a flick.
 
 The corresponding handler is ``onFlickEnded``.
 
-| 
+.. _sdk_qtquick_flickable_flickStarted:
 
-.. _sdk_qtquick_flickable_flickStarted()-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| flickStarted()                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ flickStarted()                                                  |
-+--------------------------------------------------------------------------+
-
-This signal is emitted when the view is flicked. A flick starts from the
-point that the mouse or touch is released, while still in motion.
+This signal is emitted when the view is flicked. A flick starts from the point that the mouse or touch is released, while still in motion.
 
 The corresponding handler is ``onFlickStarted``.
 
-| 
+.. _sdk_qtquick_flickable_movementEnded:
 
-.. _sdk_qtquick_flickable_movementEnded-method:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| movementEnded()                                                                                                                                                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ movementEnded()                                                 |
-+--------------------------------------------------------------------------+
-
-This signal is emitted when the view stops moving due to user
-interaction. If a flick was generated, this signal will be emitted once
-the flick stops. If a flick was not generated, this signal will be
-emitted when the user stops dragging - i.e. a mouse or touch release.
+This signal is emitted when the view stops moving due to user interaction. If a flick was generated, this signal will be emitted once the flick stops. If a flick was not generated, this signal will be emitted when the user stops dragging - i.e. a mouse or touch release.
 
 The corresponding handler is ``onMovementEnded``.
 
-| 
+.. _sdk_qtquick_flickable_movementStarted:
 
-.. _sdk_qtquick_flickable_movementStarted-method:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| movementStarted()                                                                                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ movementStarted()                                               |
-+--------------------------------------------------------------------------+
-
-This signal is emitted when the view begins moving due to user
-interaction.
+This signal is emitted when the view begins moving due to user interaction.
 
 The corresponding handler is ``onMovementStarted``.
-
-| 
 
 Method Documentation
 --------------------
 
-.. _sdk_qtquick_flickable_cancelFlick-method:
+.. _sdk_qtquick_flickable_cancelFlick:
 
-+--------------------------------------------------------------------------+
-|        \ cancelFlick()                                                   |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| cancelFlick()                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Cancels the current flick animation.
 
-| 
+.. _sdk_qtquick_flickable_flick:
 
-.. _sdk_qtquick_flickable_flick-method:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| flick(qreal *xVelocity*, qreal *yVelocity*)                                                                                                                                                                                                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ flick(qreal *xVelocity*, qreal *yVelocity*)                     |
-+--------------------------------------------------------------------------+
+Flicks the content with *xVelocity* horizontally and *yVelocity* vertically in pixels/sec.
 
-Flicks the content with *xVelocity* horizontally and *yVelocity*
-vertically in pixels/sec.
+.. _sdk_qtquick_flickable_resizeContent:
 
-| 
-
-.. _sdk_qtquick_flickable_resizeContent-method:
-
-+--------------------------------------------------------------------------+
-|        \ resizeContent(real *width*, real *height*, QPointF *center*)    |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| resizeContent(real *width*, real *height*, QPointF *center*)                                                                                                                                                                                                                                                 |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Resizes the content to *width* x *height* about *center*.
 
-This does not scale the contents of the Flickable - it only resizes the
-:ref:`contentWidth <sdk_qtquick_flickable#contentWidth-prop>` and
-:ref:`contentHeight <sdk_qtquick_flickable#contentHeight-prop>`.
+This does not scale the contents of the Flickable - it only resizes the :ref:`contentWidth <sdk_qtquick_flickable_contentWidth>` and :ref:`contentHeight <sdk_qtquick_flickable_contentHeight>`.
 
-Resizing the content may result in the content being positioned outside
-the bounds of the Flickable. Calling
-:ref:`returnToBounds() <sdk_qtquick_flickable#returnToBounds-method>` will
-move the content back within legal bounds.
+Resizing the content may result in the content being positioned outside the bounds of the Flickable. Calling :ref:`returnToBounds() <sdk_qtquick_flickable_returnToBounds>` will move the content back within legal bounds.
 
-| 
+.. _sdk_qtquick_flickable_returnToBounds:
 
-.. _sdk_qtquick_flickable_returnToBounds-method:
-
-+--------------------------------------------------------------------------+
-|        \ returnToBounds()                                                |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| returnToBounds()                                                                                                                                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Ensures the content is within legal bounds.
 
-This may be called to ensure that the content is within legal bounds
-after manually positioning the content.
-
-| 
-
-.. |image0| image:: /mediasdk_qtquick_flickableimages/flickable.gif
-.. |image1| image:: /mediasdk_qtquick_flickableimages/flickable-rebound.gif
+This may be called to ensure that the content is within legal bounds after manually positioning the content.
 

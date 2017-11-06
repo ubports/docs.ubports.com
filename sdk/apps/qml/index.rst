@@ -1,5 +1,5 @@
-qml
-===
+Apps Qml
+========
 
 .. toctree::
     :maxdepth: 1

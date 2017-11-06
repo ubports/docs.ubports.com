@@ -1,15 +1,14 @@
 .. _sdk_alarmapi_alarmapi:
+
 AlarmApi AlarmApi
 =================
 
 
 The AlarmApi object
 
-**``AlarmApi``**\ ( ``  `` )
-.. rubric:: Example
-   :name: example
+**AlarmApi**\ ()
 
-.. code:: code
+.. code:: html
 
       var date = new Date();
           <set a valid date in the future>
@@ -27,47 +26,46 @@ The AlarmApi object
 -  Methods
 -  Properties
 
-**``api.createAndSaveAlarmFor``**\ (
-``date, type, daysOfWeek, message, callback `` )
+**api.createAndSaveAlarmFor**\ (``date, type, daysOfWeek, message, callback``)
 Creates and saves a new alarm.
 
 **Parameters:**
 
--  ``date`` **<Date>**
+- ``date`` **<Date>**
 
    date at which the alarm is to be triggered.
 
--  ``type`` **<AlarmType>**
+- ``type`` **<AlarmType>**
 
    type of the alarm.
 
--  ``daysOfWeek`` **<AlarmDayOfWeek>**
+- ``daysOfWeek`` **<AlarmDayOfWeek>**
 
    days of the week the alarm is scheduled.
 
--  ``message`` **<String>**
+- ``message`` **<String>**
 
    Message to be displayed when the alarm is triggered.
 
--  ``callback`` **<Function(AlarmError)>**
+- ``callback`` **<Function(AlarmError)>**
 
    (optional) Function to be called when the alarm has been saved.
 
-**``api.errorToMessage``**\ ( ``error `` )
+**api.errorToMessage**\ (``error``)
 Returns a message adapted to the given error id.
 
 **Parameters:**
 
--  ``error`` **<AlarmError>**
+- ``error`` **<AlarmError>**
 
    error id.
 
-**``createAlarm``**\ ( ``callback `` )
+**createAlarm**\ (``callback``)
 Creates a Alarm object.
 
 **Parameters:**
 
--  ``callback`` **<Function(Alarm)>**
+- ``callback`` **<Function(Alarm)>**
 
    Function called with the created Alarm.
 
@@ -76,7 +74,7 @@ Flags for the week days an Alarm should be triggered.
 
 Values:
 
-.. code:: code
+.. code:: html
 
     Monday: The alarm will kick on Mondays
 
@@ -95,10 +93,7 @@ Values:
                     AutoDetect: The alarm day will be detected
                       from the alarm date.
 
-.. rubric:: Example
-   :name: example-1
-
-.. code:: code
+.. code:: html
 
     var api = external.getUnityObject('1.0');
                     var dayofweek = api.AlarmApi.AlarmDayOfWeek;
@@ -109,7 +104,7 @@ Error ids returned during AlarmApi calls.
 
 Values:
 
-.. code:: code
+.. code:: html
 
     NoError: Successful operation completion
 
@@ -127,10 +122,7 @@ Values:
                     AdaptationError: The error occurred in alarm adaptation layer.
                         Adaptations may define additional behind this value
 
-.. rubric:: Example
-   :name: example-2
-
-.. code:: code
+.. code:: html
 
     var date = new Date();
                     <set a valid date in the future>
@@ -150,7 +142,7 @@ Enumeration of the available types of Alarm.
 
 Values:
 
-.. code:: code
+.. code:: html
 
     OneTime: The alarm occurs only once
 
@@ -158,10 +150,7 @@ Values:
                         either daily, weekly on a given day
                         or on selected days
 
-.. rubric:: Example
-   :name: example-3
-
-.. code:: code
+.. code:: html
 
     var api = external.getUnityObject('1.0');
                     var alarmtype = api.AlarmApi.AlarmType;

@@ -1,15 +1,11 @@
 .. _sdk_qtquick_qml_advanced_tutorial_3_-_implementing_the_game_logic:
+
 QtQuick QML Advanced Tutorial 3 - Implementing the Game Logic
 =============================================================
 
 
 
-.. rubric:: Making a playable game
-   :name: making-a-playable-game
-
-Now that we have all the game components, we can add the game logic that
-dictates how a player interacts with the blocks and plays the game until
-it is won or lost.
+Now that we have all the game components, we can add the game logic that dictates how a player interacts with the blocks and plays the game until it is won or lost.
 
 To do this, we have added the following functions to ``samegame.js``:
 
@@ -19,19 +15,9 @@ To do this, we have added the following functions to ``samegame.js``:
 -  ``victoryCheck()``
 -  ``floodMoveCheck(xIdx, yIdx, type)``
 
-As this is a tutorial about QML, not game design, we will only discuss
-``handleClick()`` and ``victoryCheck()`` below since they interface
-directly with the QML types. Note that although the game logic here is
-written in JavaScript, it could have been written in C++ and then
-exposed to QML.
+As this is a tutorial about QML, not game design, we will only discuss ``handleClick()`` and ``victoryCheck()`` below since they interface directly with the QML types. Note that although the game logic here is written in JavaScript, it could have been written in C++ and then exposed to QML.
 
-.. rubric:: Enabling mouse click interaction
-   :name: enabling-mouse-click-interaction
-
-To make it easier for the JavaScript code to interface with the QML
-types, we have added an Item called ``gameCanvas`` to ``samegame.qml``.
-It replaces the background as the item which contains the blocks. It
-also accepts mouse input from the user. Here is the item code:
+To make it easier for the JavaScript code to interface with the QML types, we have added an Item called ``gameCanvas`` to ``samegame.qml``. It replaces the background as the item which contains the blocks. It also accepts mouse input from the user. Here is the item code:
 
 .. code:: qml
 
@@ -48,20 +34,9 @@ also accepts mouse input from the user. Here is the item code:
                 }
             }
 
-The ``gameCanvas`` item is the exact size of the board, and has a
-:ref:``score`` property and a `MouseArea <sdk_qtquick_mousearea>` to handle
-mouse clicks. The blocks are now created as its children, and its
-dimensions are used to determine the board size so that the application
-scales to the available screen size. Since its size is bound to a
-multiple of ``blockSize``, ``blockSize`` was moved out of
-``samegame.js`` and into ``samegame.qml`` as a QML property. Note that
-it can still be accessed from the script.
+The ``gameCanvas`` item is the exact size of the board, and has a ``score`` property and a :ref:`MouseArea <sdk_qtquick_mousearea>` to handle mouse clicks. The blocks are now created as its children, and its dimensions are used to determine the board size so that the application scales to the available screen size. Since its size is bound to a multiple of ``blockSize``, ``blockSize`` was moved out of ``samegame.js`` and into ``samegame.qml`` as a QML property. Note that it can still be accessed from the script.
 
-When clicked, the :ref:`MouseArea <sdk_qtquick_mousearea>` calls
-``handleClick()`` in ``samegame.js``, which determines whether the
-player's click should cause any blocks to be removed, and updates
-``gameCanvas.score`` with the current score if necessary. Here is the
-``handleClick()`` function:
+When clicked, the :ref:`MouseArea <sdk_qtquick_mousearea>` calls ``handleClick()`` in ``samegame.js``, which determines whether the player's click should cause any blocks to be removed, and updates ``gameCanvas.score`` with the current score if necessary. Here is the ``handleClick()`` function:
 
 .. code:: js
 
@@ -81,17 +56,9 @@ player's click should cause any blocks to be removed, and updates
         victoryCheck();
     }
 
-Note that if ``score`` was a global variable in the ``samegame.js`` file
-you would not be able to bind to it. You can only bind to QML
-properties.
+Note that if ``score`` was a global variable in the ``samegame.js`` file you would not be able to bind to it. You can only bind to QML properties.
 
-.. rubric:: Updating the score
-   :name: updating-the-score
-
-When the player clicks a block and triggers ``handleClick()``,
-``handleClick()`` also calls ``victoryCheck()`` to update the score and
-to check whether the player has completed the game. Here is the
-``victoryCheck()`` code:
+When the player clicks a block and triggers ``handleClick()``, ``handleClick()`` also calls ``victoryCheck()`` to update the score and to check whether the player has completed the game. Here is the ``victoryCheck()`` code:
 
 .. code:: js
 
@@ -108,13 +75,9 @@ to check whether the player has completed the game. Here is the
             dialog.show("Game Over. Your score is " + gameCanvas.score);
     }
 
-This updates the ``gameCanvas.score`` value and displays a "Game Over"
-dialog if the game is finished.
+This updates the ``gameCanvas.score`` value and displays a "Game Over" dialog if the game is finished.
 
-The Game Over dialog is created using a ``Dialog`` type that is defined
-in ``Dialog.qml``. Here is the ``Dialog.qml`` code. Notice how it is
-designed to be usable imperatively from the script file, via the
-functions and signals:
+The Game Over dialog is created using a ``Dialog`` type that is defined in ``Dialog.qml``. Here is the ``Dialog.qml`` code. Notice how it is designed to be usable imperatively from the script file, via the functions and signals:
 
 .. code:: qml
 
@@ -152,19 +115,9 @@ And this is how it is used in the main ``samegame.qml`` file:
             z: 100
         }
 
-We give the dialog a :ref:`z <sdk_qtquick_item#z-prop>` value of 100 to
-ensure it is displayed on top of our other components. The default ``z``
-value for an item is 0.
+We give the dialog a :ref:`z <sdk_qtquick_item_z>` value of 100 to ensure it is displayed on top of our other components. The default ``z`` value for an item is 0.
 
-.. rubric:: A dash of color
-   :name: a-dash-of-color
-
-It's not much fun to play Same Game if all the blocks are the same
-color, so we've modified the ``createBlock()`` function in
-``samegame.js`` to randomly create a different type of block (for either
-red, green or blue) each time it is called. ``Block.qml`` has also
-changed so that each block contains a different image depending on its
-type:
+It's not much fun to play Same Game if all the blocks are the same color, so we've modified the ``createBlock()`` function in ``samegame.js`` to randomly create a different type of block (for either red, green or blue) each time it is called. ``Block.qml`` has also changed so that each block contains a different image depending on its type:
 
 .. code:: qml
 
@@ -186,14 +139,7 @@ type:
         }
     }
 
-.. rubric:: A working game
-   :name: a-working-game
-
-Now we now have a working game! The blocks can be clicked, the player
-can score, and the game can end (and then you can start a new one). Here
-is a screenshot of what has been accomplished so far:
-
-|image0|
+Now we now have a working game! The blocks can be clicked, the player can score, and the game can end (and then you can start a new one). Here is a screenshot of what has been accomplished so far:
 
 This is what ``samegame.qml`` looks like now:
 
@@ -250,11 +196,7 @@ This is what ``samegame.qml`` looks like now:
         }
     }
 
-The game works, but it's a little boring right now. Where are the smooth
-animated transitions? Where are the high scores? If you were a QML
-expert you could have written these in the first iteration, but in this
-tutorial they've been saved until the next chapter - where your
-application becomes alive!
+The game works, but it's a little boring right now. Where are the smooth animated transitions? Where are the high scores? If you were a QML expert you could have written these in the first iteration, but in this tutorial they've been saved until the next chapter - where your application becomes alive!
 
 Files:
 
@@ -265,10 +207,5 @@ Files:
 -  tutorials/samegame/samegame3/samegame.qml
 -  tutorials/samegame/samegame3/samegame3.qmlproject
 
-`QML Advanced Tutorial 2 - Populating the Game
-Canvas </sdk/apps/qml/QtQuick/tutorials-samegame-samegame2/>`_  `QML
-Advanced Tutorial 4 - Finishing
-Touches </sdk/apps/qml/QtQuick/tutorials-samegame-samegame4/>`_ 
-
-.. |image0| image:: /media/sdk/apps/qml/qtquick-tutorials-samegame-samegame3-example/images/declarative-adv-tutorial3.png
+`QML Advanced Tutorial 2 - Populating the Game Canvas </sdk/apps/qml/QtQuick/tutorials-samegame-samegame2/>`_  `QML Advanced Tutorial 4 - Finishing Touches </sdk/apps/qml/QtQuick/tutorials-samegame-samegame4/>`_ 
 

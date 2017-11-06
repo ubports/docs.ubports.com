@@ -1,4 +1,5 @@
 .. _sdk_qtlocation_ratings:
+
 QtLocation Ratings
 ==================
 
@@ -13,20 +14,15 @@ The Ratings type holds place rating information.
 Properties
 ----------
 
--  :ref:`average <sdk_qtlocation_ratings_average-prop>` : real
--  :ref:`count <sdk_qtlocation_ratings_count-prop>` : int
--  :ref:`maximum <sdk_qtlocation_ratings_maximum-prop>` : real
--  :ref:`ratings <sdk_qtlocation_ratings_ratings-prop>` :
-   QPlaceRatings
+-  :ref:`average <sdk_qtlocation_ratings_average>` : real
+-  :ref:`count <sdk_qtlocation_ratings_count>` : int
+-  :ref:`maximum <sdk_qtlocation_ratings_maximum>` : real
+-  :ref:`ratings <sdk_qtlocation_ratings_ratings>` : QPlaceRatings
 
 Detailed Description
 --------------------
 
-Rating information is used to describe how *good* a place is conceived
-to be. Typically this information is visualized as a number of stars.
-The :ref:`average <sdk_qtlocation_ratings#average-prop>` property gives an
-aggregated ratings value out of a possible maximum as given by the
-:ref:`maximum <sdk_qtlocation_ratings#maximum-prop>` property.
+Rating information is used to describe how *good* a place is conceived to be. Typically this information is visualized as a number of stars. The :ref:`average <sdk_qtlocation_ratings_average>` property gives an aggregated ratings value out of a possible maximum as given by the :ref:`maximum <sdk_qtlocation_ratings_maximum>` property.
 
 .. code:: qml
 
@@ -40,47 +36,37 @@ aggregated ratings value out of a possible maximum as given by the
 Property Documentation
 ----------------------
 
-.. _sdk_qtlocation_ratings_average-prop:
+.. _sdk_qtlocation_ratings_average:
 
-+--------------------------------------------------------------------------+
-|        \ average : real                                                  |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| average : real                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the average of the individual ratings.
 
-**See also** :ref:`maximum <sdk_qtlocation_ratings#maximum-prop>`.
+**See also** :ref:`maximum <sdk_qtlocation_ratings_maximum>`.
 
-| 
+.. _sdk_qtlocation_ratings_count:
 
-.. _sdk_qtlocation_ratings_count-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| count : int                                                                                                                                                                                                                                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ count : int                                                     |
-+--------------------------------------------------------------------------+
+This property holds the total number of individual user ratings used in determining the overall ratings :ref:`average <sdk_qtlocation_ratings_average>`.
 
-This property holds the total number of individual user ratings used in
-determining the overall ratings
-:ref:`average <sdk_qtlocation_ratings#average-prop>`.
+.. _sdk_qtlocation_ratings_maximum:
 
-| 
-
-.. _sdk_qtlocation_ratings_maximum-prop:
-
-+--------------------------------------------------------------------------+
-|        \ maximum : real                                                  |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| maximum : real                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the maximum rating value.
 
-| 
+.. _sdk_qtlocation_ratings_ratings:
 
-.. _sdk_qtlocation_ratings_ratings-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ratings : QPlaceRatings                                                                                                                                                                                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ ratings : QPlaceRatings                                         |
-+--------------------------------------------------------------------------+
+For details on how to use this property to interface between C++ and QML see "Interfaces between C++ and QML Code".
 
-For details on how to use this property to interface between C++ and QML
-see "Interfaces between C++ and QML Code".
-
-| 

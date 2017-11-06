@@ -1,59 +1,44 @@
 .. _sdk_qtquick_image:
+
 QtQuick Image
 =============
 
 Displays an image
 
-+--------------------------------------+--------------------------------------+
-| Import Statement:                    | import QtQuick 2.4                   |
-+--------------------------------------+--------------------------------------+
-| Inherits:                            | :ref:`Item <sdk_qtquick_item>`       |
-+--------------------------------------+--------------------------------------+
-| Inherited By:                        | :ref:`AnimatedImage <sdk_qtquick_animated |
-|                                      | image>`_ .                           |
-+--------------------------------------+--------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Import Statement:                                                                                                                                      | import QtQuick 2.4                                                                                                                                        |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Inherits:                                                                                                                                              | :ref:`Item <sdk_qtquick_item>`                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Inherited By:                                                                                                                                          | :ref:`AnimatedImage <sdk_qtquick_animatedimage>`.                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Properties
 ----------
 
--  :ref:`asynchronous <sdk_qtquick_image_asynchronous-prop>` : bool
--  :ref:`cache <sdk_qtquick_image_cache-prop>` : bool
--  :ref:`fillMode <sdk_qtquick_image_fillMode-prop>` : enumeration
--  :ref:`horizontalAlignment <sdk_qtquick_image_horizontalAlignment-prop>`
-   : enumeration
--  :ref:`mipmap <sdk_qtquick_image_mipmap-prop>` : bool
--  :ref:`mirror <sdk_qtquick_image_mirror-prop>` : bool
--  :ref:`paintedHeight <sdk_qtquick_image_paintedHeight-prop>` :
-   real
--  :ref:`paintedWidth <sdk_qtquick_image_paintedWidth-prop>` : real
--  :ref:`progress <sdk_qtquick_image_progress-prop>` : real
--  :ref:`smooth <sdk_qtquick_image_smooth-prop>` : bool
--  :ref:`source <sdk_qtquick_image_source-prop>` : url
--  :ref:`sourceSize <sdk_qtquick_image_sourceSize-prop>` : QSize
--  :ref:`status <sdk_qtquick_image_status-prop>` : enumeration
--  :ref:`verticalAlignment <sdk_qtquick_image_verticalAlignment-prop>`
-   : enumeration
+-  :ref:`asynchronous <sdk_qtquick_image_asynchronous>` : bool
+-  :ref:`cache <sdk_qtquick_image_cache>` : bool
+-  :ref:`fillMode <sdk_qtquick_image_fillMode>` : enumeration
+-  :ref:`horizontalAlignment <sdk_qtquick_image_horizontalAlignment>` : enumeration
+-  :ref:`mipmap <sdk_qtquick_image_mipmap>` : bool
+-  :ref:`mirror <sdk_qtquick_image_mirror>` : bool
+-  :ref:`paintedHeight <sdk_qtquick_image_paintedHeight>` : real
+-  :ref:`paintedWidth <sdk_qtquick_image_paintedWidth>` : real
+-  :ref:`progress <sdk_qtquick_image_progress>` : real
+-  :ref:`smooth <sdk_qtquick_image_smooth>` : bool
+-  :ref:`source <sdk_qtquick_image_source>` : url
+-  :ref:`sourceSize <sdk_qtquick_image_sourceSize>` : QSize
+-  :ref:`status <sdk_qtquick_image_status>` : enumeration
+-  :ref:`verticalAlignment <sdk_qtquick_image_verticalAlignment>` : enumeration
 
 Detailed Description
 --------------------
 
 The Image type displays an image.
 
-The source of the image is specified as a URL using the
-:ref:`source <sdk_qtquick_image#source-prop>` property. Images can be
-supplied in any of the standard image formats supported by Qt, including
-bitmap formats such as PNG and JPEG, and vector graphics formats such as
-SVG. If you need to display animated images, use
-`AnimatedSprite </sdk/apps/qml/QtQuick/qtquick-effects-sprites/#animatedsprite>`_ 
-or :ref:`AnimatedImage <sdk_qtquick_animatedimage>`.
+The source of the image is specified as a URL using the :ref:`source <sdk_qtquick_image_source>` property. Images can be supplied in any of the standard image formats supported by Qt, including bitmap formats such as PNG and JPEG, and vector graphics formats such as SVG. If you need to display animated images, use `AnimatedSprite </sdk/apps/qml/QtQuick/qtquick-effects-sprites/#animatedsprite>`_  or :ref:`AnimatedImage <sdk_qtquick_animatedimage>`.
 
-If the :ref:`width <sdk_qtquick_item#width-prop>` and
-:ref:`height <sdk_qtquick_item#height-prop>` properties are not specified,
-the Image automatically uses the size of the loaded image. By default,
-specifying the width and height of the item causes the image to be
-scaled to that size. This behavior can be changed by setting the
-:ref:`fillMode <sdk_qtquick_image#fillMode-prop>` property, allowing the
-image to be stretched and tiled instead.
+If the :ref:`width <sdk_qtquick_item_width>` and :ref:`height <sdk_qtquick_item_height>` properties are not specified, the Image automatically uses the size of the loaded image. By default, specifying the width and height of the item causes the image to be scaled to that size. This behavior can be changed by setting the :ref:`fillMode <sdk_qtquick_image_fillMode>` property, allowing the image to be stretched and tiled instead.
 
 Example Usage
 -------------
@@ -67,317 +52,215 @@ The following example shows the simplest usage of the Image type.
         source: "pics/qtlogo.png"
     }
 
-|image0|
-
-| 
-|        
-
 Performance
 -----------
 
-By default, locally available images are loaded immediately, and the
-user interface is blocked until loading is complete. If a large image is
-to be loaded, it may be preferable to load the image in a low priority
-thread, by enabling the
-:ref:`asynchronous <sdk_qtquick_image#asynchronous-prop>` property.
+By default, locally available images are loaded immediately, and the user interface is blocked until loading is complete. If a large image is to be loaded, it may be preferable to load the image in a low priority thread, by enabling the :ref:`asynchronous <sdk_qtquick_image_asynchronous>` property.
 
-If the image is obtained from a network rather than a local resource, it
-is automatically loaded asynchronously, and the
-:ref:`progress <sdk_qtquick_image#progress-prop>` and
-:ref:`status <sdk_qtquick_image#status-prop>` properties are updated as
-appropriate.
+If the image is obtained from a network rather than a local resource, it is automatically loaded asynchronously, and the :ref:`progress <sdk_qtquick_image_progress>` and :ref:`status <sdk_qtquick_image_status>` properties are updated as appropriate.
 
-Images are cached and shared internally, so if several Image items have
-the same :ref:`source <sdk_qtquick_image#source-prop>`, only one copy of
-the image will be loaded.
+Images are cached and shared internally, so if several Image items have the same :ref:`source <sdk_qtquick_image_source>`, only one copy of the image will be loaded.
 
-**Note**: Images are often the greatest user of memory in QML user
-interfaces. It is recommended that images which do not form part of the
-user interface have their size bounded via the
-:ref:`sourceSize <sdk_qtquick_image#sourceSize-prop>` property. This is
-especially important for content that is loaded from external sources or
-provided by the user.
+**Note**: Images are often the greatest user of memory in QML user interfaces. It is recommended that images which do not form part of the user interface have their size bounded via the :ref:`sourceSize <sdk_qtquick_image_sourceSize>` property. This is especially important for content that is loaded from external sources or provided by the user.
 
 **See also** Qt Quick Examples - Image Elements and QQuickImageProvider.
 
 Property Documentation
 ----------------------
 
-.. _sdk_qtquick_image_asynchronous-prop:
+.. _sdk_qtquick_image_asynchronous:
 
-+--------------------------------------------------------------------------+
-|        \ asynchronous : bool                                             |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| asynchronous : bool                                                                                                                                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Specifies that images on the local filesystem should be loaded
-asynchronously in a separate thread. The default value is false, causing
-the user interface thread to block while the image is loaded. Setting
-*asynchronous* to true is useful where maintaining a responsive user
-interface is more desirable than having images immediately visible.
+Specifies that images on the local filesystem should be loaded asynchronously in a separate thread. The default value is false, causing the user interface thread to block while the image is loaded. Setting *asynchronous* to true is useful where maintaining a responsive user interface is more desirable than having images immediately visible.
 
-Note that this property is only valid for images read from the local
-filesystem. Images loaded via a network resource (e.g. HTTP) are always
-loaded asynchronously.
+Note that this property is only valid for images read from the local filesystem. Images loaded via a network resource (e.g. HTTP) are always loaded asynchronously.
 
-| 
+.. _sdk_qtquick_image_cache:
 
-.. _sdk_qtquick_image_cache-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| cache : bool                                                                                                                                                                                                                                                                                                 |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ cache : bool                                                    |
-+--------------------------------------------------------------------------+
+Specifies whether the image should be cached. The default value is true. Setting *cache* to false is useful when dealing with large images, to make sure that they aren't cached at the expense of small 'ui element' images.
 
-Specifies whether the image should be cached. The default value is true.
-Setting *cache* to false is useful when dealing with large images, to
-make sure that they aren't cached at the expense of small 'ui element'
-images.
+.. _sdk_qtquick_image_fillMode:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| fillMode : enumeration                                                                                                                                                                                                                                                                                       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_qtquick_image_fillMode-prop:
-
-+--------------------------------------------------------------------------+
-|        \ fillMode : enumeration                                          |
-+--------------------------------------------------------------------------+
-
-Set this property to define what happens when the source image has a
-different size than the item.
+Set this property to define what happens when the source image has a different size than the item.
 
 -  Image.Stretch - the image is scaled to fit
--  Image.PreserveAspectFit - the image is scaled uniformly to fit
-   without cropping
--  Image.PreserveAspectCrop - the image is scaled uniformly to fill,
-   cropping if necessary
+-  Image.PreserveAspectFit - the image is scaled uniformly to fit without cropping
+-  Image.PreserveAspectCrop - the image is scaled uniformly to fill, cropping if necessary
 -  Image.Tile - the image is duplicated horizontally and vertically
--  Image.TileVertically - the image is stretched horizontally and tiled
-   vertically
--  Image.TileHorizontally - the image is stretched vertically and tiled
-   horizontally
+-  Image.TileVertically - the image is stretched horizontally and tiled vertically
+-  Image.TileHorizontally - the image is stretched vertically and tiled horizontally
 -  Image.Pad - the image is not transformed
 
-.. _sdk_qtquick_image_image1                              Stretch (default)-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                                                                                                | Stretch (default)                                                                                                                                              |
+|                                                                                                                                                        | .. code:: qml                                                                                                                                          |
+|                                                                                                                                                        |                                                                                                                                                        |
+|                                                                                                                                                        |     Image {                                                                                                                                            |
+|                                                                                                                                                        |         width: 130; height: 100                                                                                                                        |
+|                                                                                                                                                        |         source: "qtlogo.png"                                                                                                                           |
+|                                                                                                                                                        |     }                                                                                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                                                                                                | PreserveAspectFit                                                                                                                                              |
+|                                                                                                                                                        | .. code:: qml                                                                                                                                          |
+|                                                                                                                                                        |                                                                                                                                                        |
+|                                                                                                                                                        |     Image {                                                                                                                                            |
+|                                                                                                                                                        |         width: 130; height: 100                                                                                                                        |
+|                                                                                                                                                        |         fillMode: Image.PreserveAspectFit                                                                                                              |
+|                                                                                                                                                        |         source: "qtlogo.png"                                                                                                                           |
+|                                                                                                                                                        |     }                                                                                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                                                                                                | PreserveAspectCrop                                                                                                                                             |
+|                                                                                                                                                        | .. code:: qml                                                                                                                                          |
+|                                                                                                                                                        |                                                                                                                                                        |
+|                                                                                                                                                        |     Image {                                                                                                                                            |
+|                                                                                                                                                        |         width: 130; height: 100                                                                                                                        |
+|                                                                                                                                                        |         fillMode: Image.PreserveAspectCrop                                                                                                             |
+|                                                                                                                                                        |         source: "qtlogo.png"                                                                                                                           |
+|                                                                                                                                                        |         clip: true                                                                                                                                     |
+|                                                                                                                                                        |     }                                                                                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                                                                                                | Tile                                                                                                                                                           |
+|                                                                                                                                                        | .. code:: qml                                                                                                                                          |
+|                                                                                                                                                        |                                                                                                                                                        |
+|                                                                                                                                                        |     Image {                                                                                                                                            |
+|                                                                                                                                                        |         width: 120; height: 120                                                                                                                        |
+|                                                                                                                                                        |         fillMode: Image.Tile                                                                                                                           |
+|                                                                                                                                                        |         horizontalAlignment: Image.AlignLeft                                                                                                           |
+|                                                                                                                                                        |         verticalAlignment: Image.AlignTop                                                                                                              |
+|                                                                                                                                                        |         source: "qtlogo.png"                                                                                                                           |
+|                                                                                                                                                        |     }                                                                                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                                                                                                | TileVertically                                                                                                                                                 |
+|                                                                                                                                                        | .. code:: qml                                                                                                                                          |
+|                                                                                                                                                        |                                                                                                                                                        |
+|                                                                                                                                                        |     Image {                                                                                                                                            |
+|                                                                                                                                                        |         width: 120; height: 120                                                                                                                        |
+|                                                                                                                                                        |         fillMode: Image.TileVertically                                                                                                                 |
+|                                                                                                                                                        |         verticalAlignment: Image.AlignTop                                                                                                              |
+|                                                                                                                                                        |         source: "qtlogo.png"                                                                                                                           |
+|                                                                                                                                                        |     }                                                                                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                                                                                                | TileHorizontally                                                                                                                                               |
+|                                                                                                                                                        | .. code:: qml                                                                                                                                          |
+|                                                                                                                                                        |                                                                                                                                                        |
+|                                                                                                                                                        |     Image {                                                                                                                                            |
+|                                                                                                                                                        |         width: 120; height: 120                                                                                                                        |
+|                                                                                                                                                        |         fillMode: Image.TileHorizontally                                                                                                               |
+|                                                                                                                                                        |         verticalAlignment: Image.AlignLeft                                                                                                             |
+|                                                                                                                                                        |         source: "qtlogo.png"                                                                                                                           |
+|                                                                                                                                                        |     }                                                                                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------+--------------------------------------+
-| |image1|                             | Stretch (default)                    |
-|                                      | .. code:: qml                        |
-|                                      |                                      |
-|                                      |     Image {                          |
-|                                      |         width: 130; height: 100      |
-|                                      |         source: "qtlogo.png"         |
-.. _sdk_qtquick_image_image2                              PreserveAspectFit-prop:
-|                                      |     }                                |
-+--------------------------------------+--------------------------------------+
-| |image2|                             | PreserveAspectFit                    |
-|                                      | .. code:: qml                        |
-|                                      |                                      |
-|                                      |     Image {                          |
-|                                      |         width: 130; height: 100      |
-|                                      |         fillMode: Image.PreserveAspe |
-|                                      | ctFit                                |
-|                                      |         source: "qtlogo.png"         |
-.. _sdk_qtquick_image_image3                              PreserveAspectCrop-prop:
-|                                      |     }                                |
-+--------------------------------------+--------------------------------------+
-| |image3|                             | PreserveAspectCrop                   |
-|                                      | .. code:: qml                        |
-|                                      |                                      |
-|                                      |     Image {                          |
-|                                      |         width: 130; height: 100      |
-|                                      |         fillMode: Image.PreserveAspe |
-|                                      | ctCrop                               |
-|                                      |         source: "qtlogo.png"         |
-|                                      |         clip: true                   |
-.. _sdk_qtquick_image_image4                              Tile-prop:
-|                                      |     }                                |
-+--------------------------------------+--------------------------------------+
-| |image4|                             | Tile                                 |
-|                                      | .. code:: qml                        |
-|                                      |                                      |
-|                                      |     Image {                          |
-|                                      |         width: 120; height: 120      |
-|                                      |         fillMode: Image.Tile         |
-|                                      |         horizontalAlignment: Image.A |
-|                                      | lignLeft                             |
-|                                      |         verticalAlignment: Image.Ali |
-|                                      | gnTop                                |
-|                                      |         source: "qtlogo.png"         |
-.. _sdk_qtquick_image_image5                              TileVertically-prop:
-|                                      |     }                                |
-+--------------------------------------+--------------------------------------+
-| |image5|                             | TileVertically                       |
-|                                      | .. code:: qml                        |
-|                                      |                                      |
-|                                      |     Image {                          |
-|                                      |         width: 120; height: 120      |
-|                                      |         fillMode: Image.TileVertical |
-|                                      | ly                                   |
-|                                      |         verticalAlignment: Image.Ali |
-|                                      | gnTop                                |
-|                                      |         source: "qtlogo.png"         |
-.. _sdk_qtquick_image_image6                              TileHorizontally-prop:
-|                                      |     }                                |
-+--------------------------------------+--------------------------------------+
-| |image6|                             | TileHorizontally                     |
-|                                      | .. code:: qml                        |
-|                                      |                                      |
-|                                      |     Image {                          |
-|                                      |         width: 120; height: 120      |
-|                                      |         fillMode: Image.TileHorizont |
-|                                      | ally                                 |
-|                                      |         verticalAlignment: Image.Ali |
-|                                      | gnLeft                               |
-|                                      |         source: "qtlogo.png"         |
-|                                      |     }                                |
-+--------------------------------------+--------------------------------------+
+Note that ``clip`` is ``false`` by default which means that the item might paint outside its bounding rectangle even if the fillMode is set to ``PreserveAspectCrop``.
 
-Note that ``clip`` is ``false`` by default which means that the item
-might paint outside its bounding rectangle even if the fillMode is set
-to ``PreserveAspectCrop``.
+**See also** `Qt Quick Examples - Image Elements </sdk/apps/qml/QtQuick/imageelements/>`_ .
 
-**See also** `Qt Quick Examples - Image
-Elements </sdk/apps/qml/QtQuick/imageelements/>`_ .
+.. _sdk_qtquick_image_horizontalAlignment:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| horizontalAlignment : enumeration                                                                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_qtquick_image_horizontalAlignment-prop:
+Sets the horizontal and vertical alignment of the image. By default, the image is center aligned.
 
-+--------------------------------------------------------------------------+
-|        \ horizontalAlignment : enumeration                               |
-+--------------------------------------------------------------------------+
+The valid values for ``horizontalAlignment`` are ``Image.AlignLeft``, ``Image.AlignRight`` and ``Image.AlignHCenter``. The valid values for ``verticalAlignment`` are ``Image.AlignTop``, ``Image.AlignBottom`` and ``Image.AlignVCenter``.
 
-Sets the horizontal and vertical alignment of the image. By default, the
-image is center aligned.
+.. _sdk_qtquick_image_mipmap:
 
-The valid values for ``horizontalAlignment`` are ``Image.AlignLeft``,
-``Image.AlignRight`` and ``Image.AlignHCenter``. The valid values for
-``verticalAlignment`` are ``Image.AlignTop``, ``Image.AlignBottom`` and
-``Image.AlignVCenter``.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| mipmap : bool                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-| 
+This property holds whether the image uses mipmap filtering when scaled or transformed.
 
-.. _sdk_qtquick_image_mipmap-prop:
-
-+--------------------------------------------------------------------------+
-|        \ mipmap : bool                                                   |
-+--------------------------------------------------------------------------+
-
-This property holds whether the image uses mipmap filtering when scaled
-or transformed.
-
-Mipmap filtering gives better visual quality when scaling down compared
-to smooth, but it may come at a performance cost (both when initializing
-the image and during rendering).
+Mipmap filtering gives better visual quality when scaling down compared to smooth, but it may come at a performance cost (both when initializing the image and during rendering).
 
 By default, this property is set to false.
 
 This QML property was introduced in Qt 5.3.
 
-**See also** :ref:`smooth <sdk_qtquick_image#smooth-prop>`.
+**See also** :ref:`smooth <sdk_qtquick_image_smooth>`.
 
-| 
+.. _sdk_qtquick_image_mirror:
 
-.. _sdk_qtquick_image_mirror-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| mirror : bool                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ mirror : bool                                                   |
-+--------------------------------------------------------------------------+
-
-This property holds whether the image should be horizontally inverted
-(effectively displaying a mirrored image).
+This property holds whether the image should be horizontally inverted (effectively displaying a mirrored image).
 
 The default value is false.
 
-| 
+.. _sdk_qtquick_image_paintedHeight:
 
-.. _sdk_qtquick_image_paintedHeight-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| paintedHeight : real                                                                                                                                                                                                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ paintedHeight : real                                            |
-+--------------------------------------------------------------------------+
+These properties hold the size of the image that is actually painted. In most cases it is the same as ``width`` and ``height``, but when using a ``fillMode`` ``PreserveAspectFit`` or ``fillMode`` ``PreserveAspectCrop`` ``paintedWidth`` or ``paintedHeight`` can be smaller or larger than ``width`` and ``height`` of the Image item.
 
-These properties hold the size of the image that is actually painted. In
-most cases it is the same as ``width`` and ``height``, but when using a
-``fillMode`` ``PreserveAspectFit`` or ``fillMode``
-``PreserveAspectCrop`` ``paintedWidth`` or ``paintedHeight`` can be
-smaller or larger than ``width`` and ``height`` of the Image item.
+.. _sdk_qtquick_image_paintedWidth:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| paintedWidth : real                                                                                                                                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_qtquick_image_paintedWidth-prop:
+These properties hold the size of the image that is actually painted. In most cases it is the same as ``width`` and ``height``, but when using a ``fillMode`` ``PreserveAspectFit`` or ``fillMode`` ``PreserveAspectCrop`` ``paintedWidth`` or ``paintedHeight`` can be smaller or larger than ``width`` and ``height`` of the Image item.
 
-+--------------------------------------------------------------------------+
-|        \ paintedWidth : real                                             |
-+--------------------------------------------------------------------------+
+.. _sdk_qtquick_image_progress:
 
-These properties hold the size of the image that is actually painted. In
-most cases it is the same as ``width`` and ``height``, but when using a
-``fillMode`` ``PreserveAspectFit`` or ``fillMode``
-``PreserveAspectCrop`` ``paintedWidth`` or ``paintedHeight`` can be
-smaller or larger than ``width`` and ``height`` of the Image item.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| progress : real                                                                                                                                                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-| 
+This property holds the progress of image loading, from 0.0 (nothing loaded) to 1.0 (finished).
 
-.. _sdk_qtquick_image_progress-prop:
+**See also** :ref:`status <sdk_qtquick_image_status>`.
 
-+--------------------------------------------------------------------------+
-|        \ progress : real                                                 |
-+--------------------------------------------------------------------------+
+.. _sdk_qtquick_image_smooth:
 
-This property holds the progress of image loading, from 0.0 (nothing
-loaded) to 1.0 (finished).
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| smooth : bool                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-**See also** :ref:`status <sdk_qtquick_image#status-prop>`.
-
-| 
-
-.. _sdk_qtquick_image_smooth-prop:
-
-+--------------------------------------------------------------------------+
-|        \ smooth : bool                                                   |
-+--------------------------------------------------------------------------+
-
-This property holds whether the image is smoothly filtered when scaled
-or transformed. Smooth filtering gives better visual quality, but it may
-be slower on some hardware. If the image is displayed at its natural
-size, this property has no visual or performance effect.
+This property holds whether the image is smoothly filtered when scaled or transformed. Smooth filtering gives better visual quality, but it may be slower on some hardware. If the image is displayed at its natural size, this property has no visual or performance effect.
 
 By default, this property is set to true.
 
-**See also** :ref:`mipmap <sdk_qtquick_image#mipmap-prop>`.
+**See also** :ref:`mipmap <sdk_qtquick_image_mipmap>`.
 
-| 
+.. _sdk_qtquick_image_source:
 
-.. _sdk_qtquick_image_source-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| source : url                                                                                                                                                                                                                                                                                                 |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ source : url                                                    |
-+--------------------------------------------------------------------------+
-
-Image can handle any image format supported by Qt, loaded from any URL
-scheme supported by Qt.
+Image can handle any image format supported by Qt, loaded from any URL scheme supported by Qt.
 
 The URL may be absolute, or relative to the URL of the component.
 
 **See also** QQuickImageProvider.
 
-| 
+.. _sdk_qtquick_image_sourceSize:
 
-.. _sdk_qtquick_image_sourceSize-prop:
-
-+--------------------------------------------------------------------------+
-|        \ sourceSize : QSize                                              |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| sourceSize : QSize                                                                                                                                                                                                                                                                                           |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the actual width and height of the loaded image.
 
-Unlike the :ref:`width <sdk_qtquick_item#width-prop>` and
-:ref:`height <sdk_qtquick_item#height-prop>` properties, which scale the
-painting of the image, this property sets the actual number of pixels
-stored for the loaded image so that large images do not use more memory
-than necessary. For example, this ensures the image in memory is no
-larger than 1024x1024 pixels, regardless of the Image's
-:ref:`width <sdk_qtquick_item#width-prop>` and
-:ref:`height <sdk_qtquick_item#height-prop>` values:
+Unlike the :ref:`width <sdk_qtquick_item_width>` and :ref:`height <sdk_qtquick_item_height>` properties, which scale the painting of the image, this property sets the actual number of pixels stored for the loaded image so that large images do not use more memory than necessary. For example, this ensures the image in memory is no larger than 1024x1024 pixels, regardless of the Image's :ref:`width <sdk_qtquick_item_width>` and :ref:`height <sdk_qtquick_item_height>` values:
 
 .. code:: cpp
 
@@ -392,42 +275,23 @@ larger than 1024x1024 pixels, regardless of the Image's
         }
     }
 
-If the image's actual size is larger than the sourceSize, the image is
-scaled down. If only one dimension of the size is set to greater than 0,
-the other dimension is set in proportion to preserve the source image's
-aspect ratio. (The :ref:`fillMode <sdk_qtquick_image#fillMode-prop>` is
-independent of this.)
+If the image's actual size is larger than the sourceSize, the image is scaled down. If only one dimension of the size is set to greater than 0, the other dimension is set in proportion to preserve the source image's aspect ratio. (The :ref:`fillMode <sdk_qtquick_image_fillMode>` is independent of this.)
 
-If both the sourceSize.width and sourceSize.height are set the image
-will be scaled down to fit within the specified size, maintaining the
-image's aspect ratio. The actual size of the image after scaling is
-available via
-:ref:`Item::implicitWidth <sdk_qtquick_item#implicitWidth-prop>` and
-:ref:`Item::implicitHeight <sdk_qtquick_item#implicitHeight-prop>`.
+If both the sourceSize.width and sourceSize.height are set the image will be scaled down to fit within the specified size, maintaining the image's aspect ratio. The actual size of the image after scaling is available via :ref:`Item::implicitWidth <sdk_qtquick_item_implicitWidth>` and :ref:`Item::implicitHeight <sdk_qtquick_item_implicitHeight>`.
 
-If the source is an intrinsically scalable image (eg. SVG), this
-property determines the size of the loaded image regardless of intrinsic
-size. Avoid changing this property dynamically; rendering an SVG is
-*slow* compared to an image.
+If the source is an intrinsically scalable image (eg. SVG), this property determines the size of the loaded image regardless of intrinsic size. Avoid changing this property dynamically; rendering an SVG is *slow* compared to an image.
 
-If the source is a non-scalable image (eg. JPEG), the loaded image will
-be no greater than this property specifies. For some formats (currently
-only JPEG), the whole image will never actually be loaded into memory.
+If the source is a non-scalable image (eg. JPEG), the loaded image will be no greater than this property specifies. For some formats (currently only JPEG), the whole image will never actually be loaded into memory.
 
-sourceSize can be cleared to the natural size of the image by setting
-sourceSize to ``undefined``.
+sourceSize can be cleared to the natural size of the image by setting sourceSize to ``undefined``.
 
-**Note:** *Changing this property dynamically causes the image source to
-be reloaded, potentially even from the network, if it is not in the disk
-cache.*
+**Note:** *Changing this property dynamically causes the image source to be reloaded, potentially even from the network, if it is not in the disk cache.*
 
-| 
+.. _sdk_qtquick_image_status:
 
-.. _sdk_qtquick_image_status-prop:
-
-+--------------------------------------------------------------------------+
-|        \ status : enumeration                                            |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| status : enumeration                                                                                                                                                                                                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the status of image loading. It can be one of:
 
@@ -436,8 +300,7 @@ This property holds the status of image loading. It can be one of:
 -  Image.Loading - the image is currently being loaded
 -  Image.Error - an error occurred while loading the image
 
-Use this status to provide an update or respond to the status change in
-some way. For example, you could:
+Use this status to provide an update or respond to the status change in some way. For example, you could:
 
 -  Trigger a state change:
 
@@ -460,31 +323,15 @@ some way. For example, you could:
 
        Text { text: image.status == Image.Ready ? 'Loaded' : 'Not loaded' }
 
-**See also** :ref:`progress <sdk_qtquick_image#progress-prop>`.
+**See also** :ref:`progress <sdk_qtquick_image_progress>`.
 
-| 
+.. _sdk_qtquick_image_verticalAlignment:
 
-.. _sdk_qtquick_image_verticalAlignment-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| verticalAlignment : enumeration                                                                                                                                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ verticalAlignment : enumeration                                 |
-+--------------------------------------------------------------------------+
+Sets the horizontal and vertical alignment of the image. By default, the image is center aligned.
 
-Sets the horizontal and vertical alignment of the image. By default, the
-image is center aligned.
-
-The valid values for ``horizontalAlignment`` are ``Image.AlignLeft``,
-``Image.AlignRight`` and ``Image.AlignHCenter``. The valid values for
-``verticalAlignment`` are ``Image.AlignTop``, ``Image.AlignBottom`` and
-``Image.AlignVCenter``.
-
-| 
-
-.. |image0| image:: /mediasdk_qtquick_imageimages/declarative-qtlogo.png
-.. |image1| image:: /mediasdk_qtquick_imageimages/declarative-qtlogo-stretch.png
-.. |image2| image:: /mediasdk_qtquick_imageimages/declarative-qtlogo-preserveaspectfit.png
-.. |image3| image:: /mediasdk_qtquick_imageimages/declarative-qtlogo-preserveaspectcrop.png
-.. |image4| image:: /mediasdk_qtquick_imageimages/declarative-qtlogo-tile.png
-.. |image5| image:: /mediasdk_qtquick_imageimages/declarative-qtlogo-tilevertically.png
-.. |image6| image:: /mediasdk_qtquick_imageimages/declarative-qtlogo-tilehorizontally.png
+The valid values for ``horizontalAlignment`` are ``Image.AlignLeft``, ``Image.AlignRight`` and ``Image.AlignHCenter``. The valid values for ``verticalAlignment`` are ``Image.AlignTop``, ``Image.AlignBottom`` and ``Image.AlignVCenter``.
 

@@ -1,30 +1,26 @@
 .. _sdk_ubuntu_components_styles_pageheadstyle:
+
 Ubuntu.Components.Styles PageHeadStyle
 ======================================
 
 Style API for page header.
 
-+--------------------------------------+--------------------------------------+
-| Import Statement:                    | import Ubuntu.Components.Styles 1.3  |
-+--------------------------------------+--------------------------------------+
-| Inherits:                            | :ref:`Item <sdk_qtquick_item>`       |
-+--------------------------------------+--------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Import Statement:                                                                                                                                      | import Ubuntu.Components.Styles 1.3                                                                                                                       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Inherits:                                                                                                                                              | :ref:`Item <sdk_qtquick_item>`                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 -  Obsolete members
 
 Properties
 ----------
 
--  `contentHeight </sdk/apps/qml/Ubuntu.Components/Styles.PageHeadStyle/_contentHeight-prop>`_ 
-   : real
--  `fontWeight </sdk/apps/qml/Ubuntu.Components/Styles.PageHeadStyle/_fontWeight-prop>`_ 
-   : int
--  `maximumNumberOfActions </sdk/apps/qml/Ubuntu.Components/Styles.PageHeadStyle/_maximumNumberOfActions-prop>`_ 
-   : int
--  `textLeftMargin </sdk/apps/qml/Ubuntu.Components/Styles.PageHeadStyle/_textLeftMargin-prop>`_ 
-   : real
--  `textSize </sdk/apps/qml/Ubuntu.Components/Styles.PageHeadStyle/_textSize-prop>`_ 
-   : int
+-  `contentHeight </sdk/apps/qml/Ubuntu.Components/Styles.PageHeadStyle/#contentHeight-prop>`_  : real
+-  `fontWeight </sdk/apps/qml/Ubuntu.Components/Styles.PageHeadStyle/#fontWeight-prop>`_  : int
+-  `maximumNumberOfActions </sdk/apps/qml/Ubuntu.Components/Styles.PageHeadStyle/#maximumNumberOfActions-prop>`_  : int
+-  `textLeftMargin </sdk/apps/qml/Ubuntu.Components/Styles.PageHeadStyle/#textLeftMargin-prop>`_  : real
+-  `textSize </sdk/apps/qml/Ubuntu.Components/Styles.PageHeadStyle/#textSize-prop>`_  : int
 
 Detailed Description
 --------------------
@@ -34,56 +30,43 @@ The component defines the style API for the page header component.
 Property Documentation
 ----------------------
 
-.. _sdk_ubuntu_components_styles_pageheadstyle_contentHeight-prop:
+.. _sdk_ubuntu_components_styles_pageheadstyle_contentHeight:
 
-+--------------------------------------------------------------------------+
-|        \ contentHeight : real                                            |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| contentHeight : real                                                                                                                                                                                                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-The height of the header excluding the height of the bottom divider and
-the (optional) row that displays the sections.
+The height of the header excluding the height of the bottom divider and the (optional) row that displays the sections.
 
-| 
+.. _sdk_ubuntu_components_styles_pageheadstyle_fontWeight:
 
-.. _sdk_ubuntu_components_styles_pageheadstyle_fontWeight-prop:
-
-+--------------------------------------------------------------------------+
-|        \ fontWeight : int                                                |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| fontWeight : int                                                                                                                                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The weight of the title font.
 
-| 
+.. _sdk_ubuntu_components_styles_pageheadstyle_maximumNumberOfActions:
 
-.. _sdk_ubuntu_components_styles_pageheadstyle_maximumNumberOfActions-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| maximumNumberOfActions : int                                                                                                                                                                                                                                                                                 |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ maximumNumberOfActions : int                                    |
-+--------------------------------------------------------------------------+
+The number of slots for actions in the header, including the optional (custom or automatic) back button in the left side of the header. If the number of actions defined is larger than the numer of actions specified here, extra actions are put into an overflow.
 
-The number of slots for actions in the header, including the optional
-(custom or automatic) back button in the left side of the header. If the
-number of actions defined is larger than the numer of actions specified
-here, extra actions are put into an overflow.
+.. _sdk_ubuntu_components_styles_pageheadstyle_textLeftMargin:
 
-| 
-
-.. _sdk_ubuntu_components_styles_pageheadstyle_textLeftMargin-prop:
-
-+--------------------------------------------------------------------------+
-|        \ textLeftMargin : real                                           |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| textLeftMargin : real                                                                                                                                                                                                                                                                                        |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Left margin of title text.
 
-| 
+.. _sdk_ubuntu_components_styles_pageheadstyle_textSize:
 
-.. _sdk_ubuntu_components_styles_pageheadstyle_textSize-prop:
-
-+--------------------------------------------------------------------------+
-|        \ textSize : int                                                  |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| textSize : int                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The size of the title Label.
 
-| 

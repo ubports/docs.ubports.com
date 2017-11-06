@@ -1,4 +1,5 @@
 .. _sdk_qtsensors_sensorglobal:
+
 QtSensors SensorGlobal
 ======================
 
@@ -13,21 +14,16 @@ The SensorGlobal element provides the module API.
 Methods
 -------
 
--  string
-   **:ref:`defaultSensorForType <sdk_qtsensors_sensorglobal#defaultSensorForType-method>`**\ (type)
--  list<string>
-   **:ref:`sensorTypes <sdk_qtsensors_sensorglobal#sensorTypes-method>`**\ ()
--  list<string>
-   **:ref:`sensorsForType <sdk_qtsensors_sensorglobal#sensorsForType-method>`**\ (type)
+-  string :ref:`defaultSensorForType <sdk_qtsensors_sensorglobal_defaultSensorForType>`\ (type)
+-  list<string> :ref:`sensorTypes <sdk_qtsensors_sensorglobal_sensorTypes>`\ ()
+-  list<string> :ref:`sensorsForType <sdk_qtsensors_sensorglobal_sensorsForType>`\ (type)
 
 Detailed Description
 --------------------
 
-The :ref:`SensorGlobal <sdk_qtsensors_sensorglobal>` element provides the
-module API.
+The :ref:`SensorGlobal <sdk_qtsensors_sensorglobal>` element provides the module API.
 
-This element cannot be directly created. It can only be accessed via a
-namespace import.
+This element cannot be directly created. It can only be accessed via a namespace import.
 
 .. code:: cpp
 
@@ -42,40 +38,33 @@ namespace import.
 Method Documentation
 --------------------
 
-.. _sdk_qtsensors_sensorglobal_string defaultSensorForType-method:
+.. _sdk_qtsensors_sensorglobal_defaultSensorForType:
 
-+--------------------------------------------------------------------------+
-|        \ string defaultSensorForType(type)                               |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| string defaultSensorForType(type)                                                                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Returns the default sensor identifier that has been registered for
-*type*.
+Returns the default sensor identifier that has been registered for *type*.
 
 Please see QSensor::defaultSensorForType() for information.
 
-| 
+.. _sdk_qtsensors_sensorglobal_sensorTypes:
 
-.. _sdk_qtsensors_sensorglobal_list<string> sensorTypes-method:
-
-+--------------------------------------------------------------------------+
-|        \ list<string> sensorTypes()                                      |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| list<string> sensorTypes()                                                                                                                                                                                                                                                                                   |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Returns a list of the sensor types that have been registered.
 
 Please see QSensor::sensorTypes() for information.
 
-| 
+.. _sdk_qtsensors_sensorglobal_sensorsForType:
 
-.. _sdk_qtsensors_sensorglobal_list<string> sensorsForType-method:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| list<string> sensorsForType(type)                                                                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ list<string> sensorsForType(type)                               |
-+--------------------------------------------------------------------------+
-
-Returns a list of the sensor identifiers that have been registered for
-*type*.
+Returns a list of the sensor identifiers that have been registered for *type*.
 
 Please see QSensor::sensorsForType() for information.
 
-| 

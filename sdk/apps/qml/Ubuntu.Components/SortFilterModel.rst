@@ -1,4 +1,5 @@
 .. _sdk_ubuntu_components_sortfiltermodel:
+
 Ubuntu.Components SortFilterModel
 =================================
 
@@ -11,32 +12,16 @@ SortFilterModel sorts and filters rows from an existing model.
 Properties
 ----------
 
--  :ref:`filter.pattern <sdk_ubuntu_components_sortfiltermodel_filter.pattern-prop>`
-   : string
--  :ref:`filter.property <sdk_ubuntu_components_sortfiltermodel_filter.property-prop>`
-   : string
--  :ref:`model <sdk_ubuntu_components_sortfiltermodel_model-prop>`
-   : QAbstractItemModel
--  :ref:`sort.order <sdk_ubuntu_components_sortfiltermodel_sort.order-prop>`
-   : string
--  :ref:`sort.property <sdk_ubuntu_components_sortfiltermodel_sort.property-prop>`
-   : string
+-  :ref:`filter.pattern <sdk_ubuntu_components_sortfiltermodel_filter_pattern>` : string
+-  :ref:`filter.property <sdk_ubuntu_components_sortfiltermodel_filter_property>` : string
+-  :ref:`model <sdk_ubuntu_components_sortfiltermodel_model>` : QAbstractItemModel
+-  :ref:`sort.order <sdk_ubuntu_components_sortfiltermodel_sort_order>` : string
+-  :ref:`sort.property <sdk_ubuntu_components_sortfiltermodel_sort_property>` : string
 
 Detailed Description
 --------------------
 
-The :ref:`SortFilterModel <sdk_ubuntu_components_sortfiltermodel>` takes an
-existing model such as a
-`ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#listmodel>`_ 
-or any
-`QAbstractItemModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-cppmodels/#qabstractitemmodel>`_ 
-implementation. The original rows and role names show up in the
-:ref:`SortFilterModel <sdk_ubuntu_components_sortfiltermodel>` with two
-basic differences. For one if
-:ref:`sort.property <sdk_ubuntu_components_sortfiltermodel#sort.property-prop>`
-is set all rows will be sorted. Further more if
-:ref:`filter.property <sdk_ubuntu_components_sortfiltermodel#filter.property-prop>`
-is set only rows matching the filter will be in the model.
+The :ref:`SortFilterModel <sdk_ubuntu_components_sortfiltermodel>` takes an existing model such as a `ListModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-modelview/#listmodel>`_  or any `QAbstractItemModel </sdk/apps/qml/QtQuick/qtquick-modelviewsdata-cppmodels/#qabstractitemmodel>`_  implementation. The original rows and role names show up in the :ref:`SortFilterModel <sdk_ubuntu_components_sortfiltermodel>` with two basic differences. For one if :ref:`sort.property <sdk_ubuntu_components_sortfiltermodel_sort_property>` is set all rows will be sorted. Further more if :ref:`filter.property <sdk_ubuntu_components_sortfiltermodel_filter_property>` is set only rows matching the filter will be in the model.
 
 Example usage:
 
@@ -86,8 +71,7 @@ Example usage:
         }
     }
 
-Pay attention to the differences between the original model and the
-result:
+Pay attention to the differences between the original model and the result:
 
 -  Big Buck Bunny will be the first row, because it's sorted by title
 -  Esign won't be visible, because it's from the wrong producer
@@ -95,70 +79,51 @@ result:
 Property Documentation
 ----------------------
 
-.. _sdk_ubuntu_components_sortfiltermodel_filter.pattern-prop:
+.. _sdk_ubuntu_components_sortfiltermodel_filter_pattern:
 
-+--------------------------------------------------------------------------+
-|        \ filter.pattern : string                                         |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| filter.pattern : string                                                                                                                                                                                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-The pattern all rows must match, if
-:ref:`filter.property <sdk_ubuntu_components_sortfiltermodel#filter.property-prop>`
-is set.
+The pattern all rows must match, if :ref:`filter.property <sdk_ubuntu_components_sortfiltermodel_filter_property>` is set.
 
 Some examples:
 
--  /possible/ matches anywhere in a word, so both "impossible" and
-   "possible".
+-  /possible/ matches anywhere in a word, so both "impossible" and "possible".
 -  /^sign/ matches "sign". But not "assignment" because ^ means start.
 -  /vest$/ matches "safety vest" and "vest" but not "vested".
 
-For more advanced uses it's recommended to read up on Javascript regular
-expressions.
+For more advanced uses it's recommended to read up on Javascript regular expressions.
 
-| 
+.. _sdk_ubuntu_components_sortfiltermodel_filter_property:
 
-.. _sdk_ubuntu_components_sortfiltermodel_filter.property-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| filter.property : string                                                                                                                                                                                                                                                                                     |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ filter.property : string                                        |
-+--------------------------------------------------------------------------+
+If set to a valid role name, only rows matching :ref:`filter.pattern <sdk_ubuntu_components_sortfiltermodel_filter_pattern>` will be in the model.
 
-If set to a valid role name, only rows matching
-:ref:`filter.pattern <sdk_ubuntu_components_sortfiltermodel#filter.pattern-prop>`
-will be in the model.
+.. _sdk_ubuntu_components_sortfiltermodel_model:
 
-| 
-
-.. _sdk_ubuntu_components_sortfiltermodel_model-prop:
-
-+--------------------------------------------------------------------------+
-|        \ model : QAbstractItemModel                                      |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| model : QAbstractItemModel                                                                                                                                                                                                                                                                                   |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The source model to sort and/ or filter.
 
-| 
+.. _sdk_ubuntu_components_sortfiltermodel_sort_order:
 
-.. _sdk_ubuntu_components_sortfiltermodel_sort.order-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| sort.order : string                                                                                                                                                                                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ sort.order : string                                             |
-+--------------------------------------------------------------------------+
+The order, if :ref:`sort.property <sdk_ubuntu_components_sortfiltermodel_sort_property>` is set. Qt::AscendingOrder sorts results from A to Z or 0 to 9. Qt::DescendingOrder sorts results from Z to A or 9 to 0.
 
-The order, if
-:ref:`sort.property <sdk_ubuntu_components_sortfiltermodel#sort.property-prop>`
-is set. Qt::AscendingOrder sorts results from A to Z or 0 to 9.
-Qt::DescendingOrder sorts results from Z to A or 9 to 0.
+.. _sdk_ubuntu_components_sortfiltermodel_sort_property:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| sort.property : string                                                                                                                                                                                                                                                                                       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_ubuntu_components_sortfiltermodel_sort.property-prop:
+If set to a valid role name, all rows will be sorted according to :ref:`sort.order <sdk_ubuntu_components_sortfiltermodel_sort_order>`.
 
-+--------------------------------------------------------------------------+
-|        \ sort.property : string                                          |
-+--------------------------------------------------------------------------+
-
-If set to a valid role name, all rows will be sorted according to
-:ref:`sort.order <sdk_ubuntu_components_sortfiltermodel#sort.order-prop>`.
-
-| 

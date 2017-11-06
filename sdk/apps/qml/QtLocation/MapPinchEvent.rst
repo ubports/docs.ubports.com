@@ -1,4 +1,5 @@
 .. _sdk_qtlocation_mappinchevent:
+
 QtLocation MapPinchEvent
 ========================
 
@@ -13,34 +14,24 @@ MapPinchEvent type provides basic information about pinch event.
 Properties
 ----------
 
--  :ref:`accepted <sdk_qtlocation_mappinchevent_accepted-prop>` :
-   bool
--  :ref:`angle <sdk_qtlocation_mappinchevent_angle-prop>` : real
--  :ref:`center <sdk_qtlocation_mappinchevent_center-prop>` :
-   QPoint
--  :ref:`point1 <sdk_qtlocation_mappinchevent_point1-prop>` :
-   QPoint
--  :ref:`point2 <sdk_qtlocation_mappinchevent_point2-prop>` :
-   QPoint
--  :ref:`pointCount <sdk_qtlocation_mappinchevent_pointCount-prop>`
-   : int
+-  :ref:`accepted <sdk_qtlocation_mappinchevent_accepted>` : bool
+-  :ref:`angle <sdk_qtlocation_mappinchevent_angle>` : real
+-  :ref:`center <sdk_qtlocation_mappinchevent_center>` : QPoint
+-  :ref:`point1 <sdk_qtlocation_mappinchevent_point1>` : QPoint
+-  :ref:`point2 <sdk_qtlocation_mappinchevent_point2>` : QPoint
+-  :ref:`pointCount <sdk_qtlocation_mappinchevent_pointCount>` : int
 
 Detailed Description
 --------------------
 
-:ref:`MapPinchEvent <sdk_qtlocation_mappinchevent>` type provides basic
-information about pinch event. They are present in handlers of MapPinch
-(for example pinchStarted/pinchUpdated). Events are only guaranteed to
-be valid for the duration of the handler.
+:ref:`MapPinchEvent <sdk_qtlocation_mappinchevent>` type provides basic information about pinch event. They are present in handlers of MapPinch (for example pinchStarted/pinchUpdated). Events are only guaranteed to be valid for the duration of the handler.
 
-Except for the :ref:`accepted <sdk_qtlocation_mappinchevent#accepted-prop>`
-property, all properties are read-only.
+Except for the :ref:`accepted <sdk_qtlocation_mappinchevent_accepted>` property, all properties are read-only.
 
 Example Usage
 ~~~~~~~~~~~~~
 
-The following example enables the pinch gesture on a map and reacts to
-the finished event.
+The following example enables the pinch gesture on a map and reacts to the finished event.
 
 .. code:: cpp
 
@@ -59,72 +50,51 @@ the finished event.
 Property Documentation
 ----------------------
 
-.. _sdk_qtlocation_mappinchevent_accepted-prop:
+.. _sdk_qtlocation_mappinchevent_accepted:
 
-+--------------------------------------------------------------------------+
-|        \ accepted : bool                                                 |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| accepted : bool                                                                                                                                                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Setting this property to false in the ``MapPinch::onPinchStarted``
-handler will result in no further pinch events being generated, and the
-gesture ignored.
+Setting this property to false in the ``MapPinch::onPinchStarted`` handler will result in no further pinch events being generated, and the gesture ignored.
 
-| 
+.. _sdk_qtlocation_mappinchevent_angle:
 
-.. _sdk_qtlocation_mappinchevent_angle-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| angle : real                                                                                                                                                                                                                                                                                                 |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ angle : real                                                    |
-+--------------------------------------------------------------------------+
+This read-only property holds the current angle between the two points in the range -180 to 180. Positive values for the angles mean counter-clockwise while negative values mean the clockwise direction. Zero degrees is at the 3 o'clock position.
 
-This read-only property holds the current angle between the two points
-in the range -180 to 180. Positive values for the angles mean
-counter-clockwise while negative values mean the clockwise direction.
-Zero degrees is at the 3 o'clock position.
+.. _sdk_qtlocation_mappinchevent_center:
 
-| 
-
-.. _sdk_qtlocation_mappinchevent_center-prop:
-
-+--------------------------------------------------------------------------+
-|        \ center : QPoint                                                 |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| center : QPoint                                                                                                                                                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This read-only property holds the current center point.
 
-| 
+.. _sdk_qtlocation_mappinchevent_point1:
 
-.. _sdk_qtlocation_mappinchevent_point1-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| point1 : QPoint                                                                                                                                                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ point1 : QPoint                                                 |
-+--------------------------------------------------------------------------+
+These read-only properties hold the actual touch points generating the pinch. The points are not in any particular order.
 
-These read-only properties hold the actual touch points generating the
-pinch. The points are not in any particular order.
+.. _sdk_qtlocation_mappinchevent_point2:
 
-| 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| point2 : QPoint                                                                                                                                                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _sdk_qtlocation_mappinchevent_point2-prop:
+These read-only properties hold the actual touch points generating the pinch. The points are not in any particular order.
 
-+--------------------------------------------------------------------------+
-|        \ point2 : QPoint                                                 |
-+--------------------------------------------------------------------------+
+.. _sdk_qtlocation_mappinchevent_pointCount:
 
-These read-only properties hold the actual touch points generating the
-pinch. The points are not in any particular order.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| pointCount : int                                                                                                                                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-| 
+This read-only property holds the number of points currently touched. The MapPinch will not react until two touch points have initiated a gesture, but will remain active until all touch points have been released.
 
-.. _sdk_qtlocation_mappinchevent_pointCount-prop:
-
-+--------------------------------------------------------------------------+
-|        \ pointCount : int                                                |
-+--------------------------------------------------------------------------+
-
-This read-only property holds the number of points currently touched.
-The MapPinch will not react until two touch points have initiated a
-gesture, but will remain active until all touch points have been
-released.
-
-| 

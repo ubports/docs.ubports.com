@@ -1,9 +1,9 @@
 .. _sdk_qtorganizer_eventattendee:
+
 QtOrganizer EventAttendee
 =========================
 
-The EventAttendee element contains information about an attendee of an
-event.
+The EventAttendee element contains information about an attendee of an event.
 
 +---------------------+--------------------------+
 | Import Statement:   | import QtOrganizer 5.0   |
@@ -12,20 +12,16 @@ event.
 Properties
 ----------
 
--  :ref:`attendeeId <sdk_qtorganizer_eventattendee_attendeeId-prop>`
-   : variant
--  :ref:`emailAddress <sdk_qtorganizer_eventattendee_emailAddress-prop>`
-   : variant
--  :ref:`name <sdk_qtorganizer_eventattendee_name-prop>` : variant
--  :ref:`participationRole <sdk_qtorganizer_eventattendee_participationRole-prop>`
-   : variant
--  :ref:`participationStatus <sdk_qtorganizer_eventattendee_participationStatus-prop>`
-   : variant
+-  :ref:`attendeeId <sdk_qtorganizer_eventattendee_attendeeId>` : variant
+-  :ref:`emailAddress <sdk_qtorganizer_eventattendee_emailAddress>` : variant
+-  :ref:`name <sdk_qtorganizer_eventattendee_name>` : variant
+-  :ref:`participationRole <sdk_qtorganizer_eventattendee_participationRole>` : variant
+-  :ref:`participationStatus <sdk_qtorganizer_eventattendee_participationStatus>` : variant
 
 Signals
 -------
 
--  :ref:`onDetailChanged <sdk_qtorganizer_eventattendee_onDetailChanged-signal>`\ ()
+-  :ref:`onDetailChanged <sdk_qtorganizer_eventattendee_onDetailChanged>`\ ()
 
 Detailed Description
 --------------------
@@ -43,44 +39,37 @@ The following fields are supported:
 Property Documentation
 ----------------------
 
-.. _sdk_qtorganizer_eventattendee_attendeeId-prop:
+.. _sdk_qtorganizer_eventattendee_attendeeId:
 
-+--------------------------------------------------------------------------+
-|        \ attendeeId : variant                                            |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| attendeeId : variant                                                                                                                                                                                                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the unique identifier of the attendee.
 
-| 
+.. _sdk_qtorganizer_eventattendee_emailAddress:
 
-.. _sdk_qtorganizer_eventattendee_emailAddress-prop:
-
-+--------------------------------------------------------------------------+
-|        \ emailAddress : variant                                          |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| emailAddress : variant                                                                                                                                                                                                                                                                                       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the email address of the attendee.
 
-| 
+.. _sdk_qtorganizer_eventattendee_name:
 
-.. _sdk_qtorganizer_eventattendee_name-prop:
-
-+--------------------------------------------------------------------------+
-|        \ name : variant                                                  |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| name : variant                                                                                                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This property holds the name of the attendee.
 
-| 
+.. _sdk_qtorganizer_eventattendee_participationRole:
 
-.. _sdk_qtorganizer_eventattendee_participationRole-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| participationRole : variant                                                                                                                                                                                                                                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ participationRole : variant                                     |
-+--------------------------------------------------------------------------+
-
-This property holds the participation role of the attendee of the
-event.The value can be one of:
+This property holds the participation role of the attendee of the event.The value can be one of:
 
 -  :ref:`EventAttendee <sdk_qtorganizer_eventattendee>`.RoleUnknown
 -  :ref:`EventAttendee <sdk_qtorganizer_eventattendee>`.RoleOrganizer
@@ -90,16 +79,13 @@ event.The value can be one of:
 -  :ref:`EventAttendee <sdk_qtorganizer_eventattendee>`.RoleOptionalParticipant
 -  :ref:`EventAttendee <sdk_qtorganizer_eventattendee>`.RoleNonParticipant
 
-| 
+.. _sdk_qtorganizer_eventattendee_participationStatus:
 
-.. _sdk_qtorganizer_eventattendee_participationStatus-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| participationStatus : variant                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ participationStatus : variant                                   |
-+--------------------------------------------------------------------------+
-
-This property holds the participation status of the attendee of the
-event. The value can be one of:
+This property holds the participation status of the attendee of the event. The value can be one of:
 
 -  :ref:`EventAttendee <sdk_qtorganizer_eventattendee>`.StatusUnknown
 -  :ref:`EventAttendee <sdk_qtorganizer_eventattendee>`.StatusAccepted
@@ -109,18 +95,14 @@ event. The value can be one of:
 -  :ref:`EventAttendee <sdk_qtorganizer_eventattendee>`.StatusInProcess
 -  :ref:`EventAttendee <sdk_qtorganizer_eventattendee>`.StatusCompleted
 
-| 
-
 Signal Documentation
 --------------------
 
-.. _sdk_qtorganizer_eventattendee_onDetailChanged()-prop:
+.. _sdk_qtorganizer_eventattendee_onDetailChanged:
 
-+--------------------------------------------------------------------------+
-|        \ onDetailChanged()                                               |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| onDetailChanged()                                                                                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-**See also**
-:ref:`Detail::onDetailChanged <sdk_qtorganizer_detail#onDetailChanged-signal>`.
+**See also** :ref:`Detail::onDetailChanged <sdk_qtorganizer_detail_onDetailChanged>`.
 
-| 

@@ -1,33 +1,17 @@
 .. _sdk_qtmultimedia_qml_camera_example:
+
 QtMultimedia QML Camera Example
 ===============================
 
 
 
-|image0|
+This example demonstrates how to use the Qt Multimedia QML API to access camera functions. It shows how to change settings and to capture images.
 
-This example demonstrates how to use the Qt Multimedia QML API to access
-camera functions. It shows how to change settings and to capture images.
+To run the example from Qt Creator, open the **Welcome** mode and select the example from **Examples**. For more information, visit Building and Running an Example.
 
-.. rubric:: Running the Example
-   :name: running-the-example
+Most of the QML code supports the user interface for this application with the camera types being mostly found in *declarative-camera.qml* and *CaptureControls.qml*.
 
-To run the example from Qt Creator, open the **Welcome** mode and select
-the example from **Examples**. For more information, visit Building and
-Running an Example.
-
-.. rubric:: Application Structure
-   :name: application-structure
-
-Most of the QML code supports the user interface for this application
-with the camera types being mostly found in *declarative-camera.qml* and
-*CaptureControls.qml*.
-
-CaptureControls, which is implemented in *CaptureControls.qml*,
-generates a column on the right hand side of the screen which includes
-control buttons for focus (not initially visible), capture, flash modes,
-white balance, exposure compensation, and if a preview is available, a
-preview button. The last button exits from the application.
+CaptureControls, which is implemented in *CaptureControls.qml*, generates a column on the right hand side of the screen which includes control buttons for focus (not initially visible), capture, flash modes, white balance, exposure compensation, and if a preview is available, a preview button. The last button exits from the application.
 
 Files:
 
@@ -62,6 +46,4 @@ Images:
 -  declarative-camera/images/camera\_white\_balance\_incandescent.png
 -  declarative-camera/images/camera\_white\_balance\_sunny.png
 -  declarative-camera/images/toolbutton.png
-
-.. |image0| image:: /media/sdk/apps/qml/qtmultimedia-declarative-camera-example/images/qml-camera.png
 

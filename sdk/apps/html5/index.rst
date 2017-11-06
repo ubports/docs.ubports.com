@@ -1,5 +1,5 @@
-html5
-=====
+Apps Html5
+==========
 
 .. toctree::
     :maxdepth: 1

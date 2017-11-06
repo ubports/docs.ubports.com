@@ -1,4 +1,5 @@
 .. _sdk_qtaudioengine_audiocategory:
+
 QtAudioEngine AudioCategory
 ===========================
 
@@ -13,27 +14,22 @@ Control all active sound instances by group.
 Properties
 ----------
 
--  :ref:`name <sdk_qtaudioengine_audiocategory_name-prop>` : string
--  :ref:`volume <sdk_qtaudioengine_audiocategory_volume-prop>` :
-   real
+-  :ref:`name <sdk_qtaudioengine_audiocategory_name>` : string
+-  :ref:`volume <sdk_qtaudioengine_audiocategory_volume>` : real
 
 Methods
 -------
 
--  :ref:`pause <sdk_qtaudioengine_audiocategory_pause-method-2>`\ ()
--  :ref:`pause <sdk_qtaudioengine_audiocategory_pause-method>`\ ()
--  :ref:`stop <sdk_qtaudioengine_audiocategory_stop-method>`\ ()
+-  :ref:`pause <sdk_qtaudioengine_audiocategory_pause>`\ ()
+-  :ref:`pause <sdk_qtaudioengine_audiocategory_pause>`\ ()
+-  :ref:`stop <sdk_qtaudioengine_audiocategory_stop>`\ ()
 
 Detailed Description
 --------------------
 
 This type is part of the **QtAudioEngine 1.0** module.
 
-An instance of :ref:`AudioCategory <sdk_qtaudioengine_audiocategory>` can
-be accessed through
-:ref:`AudioEngine.categories <sdk_qtaudioengine_audioengine#categories-prop>`
-with its unique name and must be defined inside
-:ref:`AudioEngine <sdk_qtaudioengine_audioengine>`.
+An instance of :ref:`AudioCategory <sdk_qtaudioengine_audiocategory>` can be accessed through :ref:`AudioEngine.categories <sdk_qtaudioengine_audioengine_categories>` with its unique name and must be defined inside :ref:`AudioEngine <sdk_qtaudioengine_audioengine>`.
 
 .. code:: qml
 
@@ -69,74 +65,53 @@ with its unique name and must be defined inside
         }
     }
 
-:ref:`Sound <sdk_qtaudioengine_sound>` instances can be grouped together by
-specifying the category property. When you change the volume of a
-category, all audio output from related instances will be affected as
-well.
+:ref:`Sound <sdk_qtaudioengine_sound>` instances can be grouped together by specifying the category property. When you change the volume of a category, all audio output from related instances will be affected as well.
 
-Note: there will always be an
-:ref:`AudioCategory <sdk_qtaudioengine_audiocategory>` named ``default``
-whether you explicitly define it or not. If you do not specify any
-category for a :ref:`Sound <sdk_qtaudioengine_sound>`, it will be grouped
-into the ``default`` category.
+Note: there will always be an :ref:`AudioCategory <sdk_qtaudioengine_audiocategory>` named ``default`` whether you explicitly define it or not. If you do not specify any category for a :ref:`Sound <sdk_qtaudioengine_sound>`, it will be grouped into the ``default`` category.
 
 Property Documentation
 ----------------------
 
-.. _sdk_qtaudioengine_audiocategory_name-prop:
+.. _sdk_qtaudioengine_audiocategory_name:
 
-+--------------------------------------------------------------------------+
-|        \ name : string                                                   |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| name : string                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-This property holds the name of
-:ref:`AudioCategory <sdk_qtaudioengine_audiocategory>`. The name must be
-unique among all categories and only defined once. The name cannot be
-changed after the instance has been initialized.
+This property holds the name of :ref:`AudioCategory <sdk_qtaudioengine_audiocategory>`. The name must be unique among all categories and only defined once. The name cannot be changed after the instance has been initialized.
 
-| 
+.. _sdk_qtaudioengine_audiocategory_volume:
 
-.. _sdk_qtaudioengine_audiocategory_volume-prop:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| volume : real                                                                                                                                                                                                                                                                                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|        \ volume : real                                                   |
-+--------------------------------------------------------------------------+
-
-This property holds the volume of the category and will modulate all
-audio output from the instances which belong to this category.
-
-| 
+This property holds the volume of the category and will modulate all audio output from the instances which belong to this category.
 
 Method Documentation
 --------------------
 
-.. _sdk_qtaudioengine_audiocategory_pause-method:
+.. _sdk_qtaudioengine_audiocategory_pause:
 
-+--------------------------------------------------------------------------+
-|        \ pause()                                                         |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| pause()                                                                                                                                                                                                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Resumes all active sound instances from paused state which belong to
-this category.
+Resumes all active sound instances from paused state which belong to this category.
 
-| 
+.. _sdk_qtaudioengine_audiocategory_pause1:
 
-.. _sdk_qtaudioengine_audiocategory_pause-method:
-
-+--------------------------------------------------------------------------+
-|        \ pause()                                                         |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| pause()                                                                                                                                                                                                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Pauses all active sound instances which belong to this category.
 
-| 
+.. _sdk_qtaudioengine_audiocategory_stop:
 
-.. _sdk_qtaudioengine_audiocategory_stop-method:
-
-+--------------------------------------------------------------------------+
-|        \ stop()                                                          |
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| stop()                                                                                                                                                                                                                                                                                                       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Stops all active sound instances which belong to this category.
 
-| 

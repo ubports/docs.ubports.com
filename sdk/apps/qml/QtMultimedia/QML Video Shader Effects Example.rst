@@ -1,59 +1,29 @@
 .. _sdk_qtmultimedia_qml_video_shader_effects_example:
+
 QtMultimedia QML Video Shader Effects Example
 =============================================
 
 
 
-.. rubric:: Running the Example
-   :name: running-the-example
+To run the example from Qt Creator, open the **Welcome** mode and select the example from **Examples**. For more information, visit Building and Running an Example.
 
-To run the example from Qt Creator, open the **Welcome** mode and select
-the example from **Examples**. For more information, visit Building and
-Running an Example.
+*QML Video Shader Effects* demonstrates how a ShaderEffect can be used to apply postprocessing effects, expressed in GLSL, to QML :ref:`VideoOutput <sdk_qtmultimedia_videooutput>` type.
 
-.. rubric:: Overview
-   :name: overview
+It also shows how native code can be combined with QML to implement more advanced functionality - in this case, C++ code is used to calculate the QML frame rate. This value is rendered in QML in a semi-transparent item overlaid on the video content.
 
-*QML Video Shader Effects* demonstrates how a ShaderEffect can be used
-to apply postprocessing effects, expressed in GLSL, to QML
-:ref:`VideoOutput <sdk_qtmultimedia_videooutput>` type.
+The following screenshots show shader effects being applied. In each case, the effect is implemented using a fragment shader.
 
-It also shows how native code can be combined with QML to implement more
-advanced functionality - in this case, C++ code is used to calculate the
-QML frame rate. This value is rendered in QML in a semi-transparent item
-overlaid on the video content.
-
-The following screenshots show shader effects being applied. In each
-case, the effect is implemented using a fragment shader.
-
-Here we see an edge detection algorithm being applied to a video clip
-(`Sintel from blender.org <http://durian.blender.org/>`_ ).
-
-|image0|
+Here we see an edge detection algorithm being applied to a video clip (`Sintel from blender.org <http://durian.blender.org/>`_ ).
 
 This image shows a page curl effect, applied to the same video clip.
 
-|image1|
-
-Here we see a 'glow' effect (edge detection plus colour quantization)
-being applied to the camera viewfinder.
-
-|image2|
+Here we see a 'glow' effect (edge detection plus colour quantization) being applied to the camera viewfinder.
 
 This image shows a 'wobble' effect applied to the viewfinder.
 
-|image3|
+The application includes many more effects than the ones shown here - look for Effect\*.qml files in the list of files below to see the full range.
 
-The application includes many more effects than the ones shown here -
-look for Effect\*.qml files in the list of files below to see the full
-range.
-
-.. rubric:: Application structure
-   :name: application-structure
-
-Shader effects can be applied to video or viewfinder content using
-ShaderEffect, as shown in the following example, which applies a wiggly
-effect to the content:
+Shader effects can be applied to video or viewfinder content using ShaderEffect, as shown in the following example, which applies a wiggly effect to the content:
 
 .. code:: cpp
 
@@ -91,24 +61,13 @@ effect to the content:
         }
     }
 
-In this application, the usage of the ShaderEffect and
-:ref:`VideoOutput <sdk_qtmultimedia_videooutput>` types is a bit more
-complicated, for the following reasons:
+In this application, the usage of the ShaderEffect and :ref:`VideoOutput <sdk_qtmultimedia_videooutput>` types is a bit more complicated, for the following reasons:
 
--  Each effect can be applied to either a
-   :ref:`VideoOutput <sdk_qtmultimedia_videooutput>` or an Image item, so
-   the type of the source item must be abstracted away from the effect
-   implementation
--  For some effects (such as the edge detection and glow examples shown
-   in the screenshots above), the transformation is applied only to
-   pixels to the left of a dividing line - this allows the effect to be
-   easily compared with the untransformed image on the right
--  Most effects have one or more parameters which can be modified by the
-   user - these are controlled by sliders in the UI which are connected
-   to uniform values passed into the GLSL code
+-  Each effect can be applied to either a :ref:`VideoOutput <sdk_qtmultimedia_videooutput>` or an Image item, so the type of the source item must be abstracted away from the effect implementation
+-  For some effects (such as the edge detection and glow examples shown in the screenshots above), the transformation is applied only to pixels to the left of a dividing line - this allows the effect to be easily compared with the untransformed image on the right
+-  Most effects have one or more parameters which can be modified by the user - these are controlled by sliders in the UI which are connected to uniform values passed into the GLSL code
 
-The abstraction of source item type is achieved by the Content, which
-uses a Loader to create either a MediaPlayer, Camera or Image:
+The abstraction of source item type is achieved by the Content, which uses a Loader to create either a MediaPlayer, Camera or Image:
 
 .. code:: qml
 
@@ -135,8 +94,7 @@ uses a Loader to create either a MediaPlayer, Camera or Image:
         }
     }
 
-Each effect is implemented as a QML item which is based on the Effect,
-which in turn is based on the ShaderEffect:
+Each effect is implemented as a QML item which is based on the Effect, which in turn is based on the ShaderEffect:
 
 .. code:: qml
 
@@ -171,14 +129,7 @@ which in turn is based on the ShaderEffect:
             vertexShader = fileReader.readFile(vertexShaderFilename)
     }
 
-The interface of Effect allows for derived effects to specify the number
-of parameters which they support (and therefore the number of sliders
-which should be displayed), and whether a vertical dividing line should
-be drawn between transformed and untransformed image regions. As an
-example, here is the implementation of the pixelation effect. As you can
-see, the pixelation effect supports one parameter (which controls the
-pixelation granularity), and states that the divider should be
-displayed.
+The interface of Effect allows for derived effects to specify the number of parameters which they support (and therefore the number of sliders which should be displayed), and whether a vertical dividing line should be drawn between transformed and untransformed image regions. As an example, here is the implementation of the pixelation effect. As you can see, the pixelation effect supports one parameter (which controls the pixelation granularity), and states that the divider should be displayed.
 
 .. code:: qml
 
@@ -195,24 +146,11 @@ displayed.
         fragmentShaderFilename: "pixelate.fsh"
     }
 
-The main.qml file shows a FileOpen, which allows the user to select the
-input source and an EffectSelectionPanel item, which lists each of the
-available shader effects. As described above, a Content item is used to
-load the appropriate input and effect type. A Divider item draws the
-vertical dividing line, which can be dragged left / right by the user.
-Finally, a ParameterPanel item renders the sliders corresponding to each
-effect parameter.
+The main.qml file shows a FileOpen, which allows the user to select the input source and an EffectSelectionPanel item, which lists each of the available shader effects. As described above, a Content item is used to load the appropriate input and effect type. A Divider item draws the vertical dividing line, which can be dragged left / right by the user. Finally, a ParameterPanel item renders the sliders corresponding to each effect parameter.
 
 Here is the effect selection menu:
 
-|image4|
-
-.. rubric:: Calculating and displaying QML painting rate
-   :name: calculating-and-displaying-qml-painting-rate
-
-The QML painting rate is calculated by the FrequencyMonitor class, which
-turns a stream of events (received via the notify() slot), into an
-instantaneous and an averaged frequency:
+The QML painting rate is calculated by the FrequencyMonitor class, which turns a stream of events (received via the notify() slot), into an instantaneous and an averaged frequency:
 
 .. code:: qml
 
@@ -237,8 +175,7 @@ The FrequencyMonitor class is exposed to QML like this
         ::qmlRegisterType<FrequencyMonitor>("FrequencyMonitor", 1, 0, "FrequencyMonitor");
     }
 
-and its data is displayed by defining a QML item called FrequencyItem,
-like this:
+and its data is displayed by defining a QML item called FrequencyItem, like this:
 
 .. code:: qml
 
@@ -282,11 +219,7 @@ like this:
 
 The result looks like this:
 
-|image5|
-
-All that remains is to connect the afterRendering() signal of the
-QQuickView object to a JavaScript function, which will eventually call
-frequencyItem.notify():
+All that remains is to connect the afterRendering() signal of the QQuickView object to a JavaScript function, which will eventually call frequencyItem.notify():
 
 .. code:: qml
 
@@ -366,11 +299,4 @@ Images:
 -  video/qmlvideofx/images/icon\_Folder.png
 -  video/qmlvideofx/images/icon\_Menu.png
 -  video/qmlvideofx/images/qt-logo.png
-
-.. |image0| image:: /media/sdk/apps/qml/qtmultimedia-video-qmlvideofx-example/images/qmlvideofx-video-edgedetection.jpg
-.. |image1| image:: /media/sdk/apps/qml/qtmultimedia-video-qmlvideofx-example/images/qmlvideofx-video-pagecurl.jpg
-.. |image2| image:: /media/sdk/apps/qml/qtmultimedia-video-qmlvideofx-example/images/qmlvideofx-camera-glow.jpg
-.. |image3| image:: /media/sdk/apps/qml/qtmultimedia-video-qmlvideofx-example/images/qmlvideofx-camera-wobble.jpg
-.. |image4| image:: /media/sdk/apps/qml/qtmultimedia-video-qmlvideofx-example/images/qmlvideofx-effects-menu.jpg
-.. |image5| image:: /media/sdk/apps/qml/qtmultimedia-video-qmlvideofx-example/images/video-qml-paint-rate.png
 

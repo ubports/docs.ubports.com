@@ -1,10 +1,9 @@
 .. _sdk_qtqml_qml_example_-_dynamic_scene:
+
 QtQml QML Example - Dynamic Scene
 =================================
 
 
-
-|image0|
 
 Files:
 
@@ -16,6 +15,4 @@ Files:
 -  dynamicscene/content/Sun.qml
 -  dynamicscene/content/itemCreation.js
 -  dynamicscene/dynamicscene.qmlproject
-
-.. |image0| image:: /media/sdk/apps/qml/qtqml-dynamicscene-example/images/qml-dynamicscene-example.png
 
