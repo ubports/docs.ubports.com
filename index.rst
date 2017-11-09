@@ -45,4 +45,7 @@ On this website you find instructions how to install Ubuntu Touch on your mobile
    :caption: Porting
    :name: sec-porting
 
-   porting/index
+   porting/introduction
+   porting/testing-mir
+   porting/building-ubports-boot
+   porting/installing-16-04
