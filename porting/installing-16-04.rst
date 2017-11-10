@@ -59,7 +59,7 @@ The password will be the one that you set while running rootstock.
 Make / writeable
 ----------------
 
-Before we make any changes to the rootfs (wuch as in the next step), you'll need to remount it with write permissions. To do that, run the following command::
+Before we make any changes to the rootfs (which is in the next step), you'll need to remount it with write permissions. To do that, run the following command::
 
     sudo mount -o remount,rw /
 
