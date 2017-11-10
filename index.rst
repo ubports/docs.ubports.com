@@ -39,6 +39,7 @@ On this website you find instructions how to install Ubuntu Touch on your mobile
    :name: sec-appdev
 
    appdev/index
+   sdk/index
 
 .. toctree::
    :maxdepth: 1
@@ -49,3 +50,4 @@ On this website you find instructions how to install Ubuntu Touch on your mobile
    porting/building-ubports-boot
    porting/installing-16-04
    porting/testing-mir
+

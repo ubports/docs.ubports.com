@@ -10,10 +10,12 @@ Luckily, there are some utilities and alternatives that allow us to build click 
 Ubuntu UI-Toolkit
 -----------------
 
-We decided not to import the documentation pages for all unmaintained components, instead we are working continuously on replacing parts where necessary with more sustainable solutions. The old documentation pages written by Canonical can be found `here <https://docs.ubuntu.com/phone/en/>`_.
+.. toctree::
+    :maxdepth: 1
+    :name: toc-appdev-sdk
 
-* `QML API <https://docs.ubuntu.com/phone/en/apps/api-qml-development/index>`__
-* `Cordova HTML5 API <https://docs.ubuntu.com/phone/en/apps/api-html5-development/index>`__
+    /sdk/apps/qml/index
+    /sdk/apps/html5/index
 
 Clickable
 ---------
