@@ -49,11 +49,19 @@ When your device boots, it will likely stay at the bootloader screen. However, y
 
 To confirm that your device has booted correctly, run ``dmesg -w`` and watch for "GNU/Linux device" in the output. If you instead get something similar to "ubports initrd i hit a nail", please get in contact with us so we can find out why.
 
-Similar to the Halium reference rootfs, you should set your computer's IP to ``10.15.19.81`` if you don't get one automatically. Then, run the following to access your device::
+Similar to the Halium reference rootfs, you should set your computer's IP to ``10.15.19.100`` if you don't get one automatically. Then, run the following to access your device::
 
     ssh phablet@10.15.19.82
 
 The password will be the one that you set while running rootstock.
+
+
+Make / writeable
+----------------
+
+Before we make any changes to the rootfs (wuch as in the next step), you'll need to remount it with write permissions. To do that, run the following command::
+
+    sudo mount -o remount,rw /
 
 
 Add udev rules
@@ -61,6 +69,7 @@ Add udev rules
 
 Now that you're logged in, you must create some udev rules to allow Ubuntu Touch software to access your hardware. Run the following command, replacing [codename] with your device's codename.::
 
+    sudo -i # And enter your password
     cat /var/lib/lxc/android/rootfs/ueventd*.rc|grep ^/dev|sed -e 's/^\/dev\///'|awk '{printf "ACTION==\"add\", KERNEL==\"%s\", OWNER=\"%s\", GROUP=\"%s\", MODE=\"%s\"\n",$1,$3,$4,$2}' | sed -e 's/\r//' >/usr/lib/lxc-android-config/70-[codename].rules
 
 Now, reboot the device. If all has gone well, you will eventually see the Ubuntu Touch spinner followed by Unity 8. Your lock password is the same as you set for SSH.
