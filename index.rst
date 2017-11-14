@@ -49,5 +49,4 @@ On this website you find instructions how to install Ubuntu Touch on your mobile
    porting/introduction
    porting/building-ubports-boot
    porting/installing-16-04
-   porting/testing-mir
 
