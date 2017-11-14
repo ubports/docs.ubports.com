@@ -1,14 +1,14 @@
 Right before diving into the topic, please consider checking the page
 about [[UT on-device software development]].
 
-|LazarusIDE on Ubuntu Phone| |LazarusIDE on Ubuntu Phone|
+|LazarusIDE on Ubuntu Phone 1| |LazarusIDE on Ubuntu Phone 2|
 
 Introduction
 ------------
 
-`Lazarus IDE <https://www.lazarus-ide.org>`__ is a cross-platform open
+`Lazarus IDE <https://www.lazarus-ide.org>`_ is a cross-platform open
 source and free IDE based on Delphi, that also supports ARM Linux
-natively. It uses `Free Pascal compiler <https://www.freepascal.org>`__,
+natively. It uses `Free Pascal compiler <https://www.freepascal.org>`_,
 and you can use it to compile once written code to a plethora of
 targets, including (but not limited to): Windows, OSX, Linux, and
 plethora of architectures, including Intel, ARM and many others. Both
@@ -16,21 +16,22 @@ Free Pascal compiler and Lazarus IDE can be compiled, or installed from
 precompiled binaries/packages on Ubuntu Touch, using a default ARM Linux
 releases. In fact both **fpc** and **lazarus** packages are available in
 the default Ubuntu repositories, but most likely these are not the most
-recent versions, so on your Ubuntu Touch you could just run:
-
-::
+recent versions, so on your Ubuntu Touch you could just run::
 
     sudo apt-get install fpc lazarus
      
 
-Just that in reality there are few problems with this: \* on UT devices
+Just that in reality there are few problems with this: 
+* on UT devices
 by default the system partition is read-only (can be easilyremounted to
-rw though) \* on UT devices by default the free space on system
+rw though) 
+* on UT devices by default the free space on system
 partition is quite low and might not be enough for installing both
 packages along with all dependencies (on Meizu MX4 phone with original
 UT only fpc package was possible to install, but not lazarus due to
 insufficient space). The resizing of the filesystem is not a very easy
-task. \* by default Lazarus IDE, which is a GTK app starts in
+task. 
+* by default Lazarus IDE, which is a GTK app starts in
 multi-window mode, which does not work well when running gtk on the UT
 device via XMir. Lazarus can be configured into single window mode (see
 screenshots on top of this page), which solves the problem.
@@ -157,6 +158,6 @@ fact, you can do that even on Windows host. whatever you create and
 compile inside such a chroot environment, you can just copy over to your
 UT device, because it will be a valid ARM Linux binary.
 
-.. |LazarusIDE on Ubuntu Phone| image:: https://qph.ec.quoracdn.net/main-qimg-4ac8c75b2f4d0ac80fc82d74a48b1bd3
-.. |LazarusIDE on Ubuntu Phone| image:: https://qph.ec.quoracdn.net/main-qimg-60417c6805535103beb6b0f5e63ac290
+.. |LazarusIDE on Ubuntu Phone 1| image:: https://qph.ec.quoracdn.net/main-qimg-4ac8c75b2f4d0ac80fc82d74a48b1bd3
+.. |LazarusIDE on Ubuntu Phone 2| image:: https://qph.ec.quoracdn.net/main-qimg-60417c6805535103beb6b0f5e63ac290
 

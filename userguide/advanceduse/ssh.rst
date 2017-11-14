@@ -1,4 +1,3 @@
-.. _userguide-advanceduse-ssh:
 Shell access via ssh
 ====================
 
@@ -14,7 +13,7 @@ First you need to transfer your public key to your device. There are multiple wa
 
 * Connect the ubports device and the PC with a USB cable. Then copy the file using your filemanager.
 * Or transfer the key via the internet by mailing it to yourself, or uploading it to your own cloud storage, or webserver, etc. 
-* You can also connect via :ref:`adb<userguide-advanceduse-adb>` and use the following command to copy it::
+* You can also connect via :doc:`adb <adb>` and use the following command to copy it::
 
     adb push ~/.ssh/id_rsa.pub /home/phablet/
 

@@ -1,9 +1,8 @@
-.. _contribute-issues-index:
 Issue Tracking Guidelines
 =========================
 
 This document describes the standard process of dealing with new issues
-in UBports projects. For the guide on writing a good bugreport, visit :ref:`click here <contribute-bugreporting-index>`.
+in UBports projects. For the guide on writing a good bugreport, visit :doc:`click here <documentation>`.
 
 .. note::
     Practicality beats purity! Exceptions might apply and should be described in
@@ -33,73 +32,48 @@ To increase transparency and communication, GitHub projects
 ubports/ubuntu-touch, a seperate project is used for every team (HAL,
 Middleware, User Interface)
 
-+----------------+---------------------------------------------------------------------------+
-| Column         | Description                                                               |
-+================+===========================================================================+
-|----------------|---------------------------------------------------------------------------|
-| *None          | The issue has been approved by the issue manager and is awaiting review   |
-| ("awaiting     | from the responsible team. If the issue is a bug, instructions to re-     |
-| triage")*      | produce are included in the issue description. If the issue is a feature- |
-|                | request, it has passed a primary sanity check by the issue manager, but   |
-|                | has not yet been accepted by the team.                                    |
-|----------------|---------------------------------------------------------------------------|
-| Accepted       | The issue has been accepted by the responsible team. If the issue is a    |
-|                | bugreport, the team has decided that it should be fixable and accepts the |
-|                | responsibility. If the issue is a featrue request, the team thinks it     |
-|                | should be implemented as described.                                       |
-|----------------|---------------------------------------------------------------------------|
-| In Development | A patch is in development. Usually, a developer is assigned to the issue. |
-|----------------|---------------------------------------------------------------------------|
-| Quality        | The patch is completed and has passed initial testing. The QA team will   |
-| Assurance      | now review it on all devices and provide feedback. If problems are found, |
-|                | the issue is moved back to "In Development".                              |
-|----------------|---------------------------------------------------------------------------|
-| Release        | The patch has passed QA and is ready for release. In case of deb-packages |
-| Candidate      | that are included in the system-image, the patch will be included in the  |
-|                | next over-the-air update on the rc channel, and, if everything goes well, |
-|                | in the next release of the stable channel.                                |
-|----------------|---------------------------------------------------------------------------|
-| *Removed from  | A patch has been released (issue closed with a message linking to the     |
-| the project*   | patch), the issue has been rejected (issue closed labeled "rejected"), or |
-|                | the issue was moved to a different responsible team.                      |
-+----------------+---------------------------------------------------------------------------+
+* **None (awaiting triage)**: The issue has been approved by the issue manager and is awaiting review from the responsible team. if the issue is a bug, instructions to reproduce are included in the issue description. if the issue is a feature request, it has passed a primary sanity check by the issue manager but has not yet been accepted by the team.
+* **Accepted**: The issue has been accepted by the responsible team. If the issue is a bugreport, the team has decided that it should be fixable and accepts the responsibility. If the issue is a featrue request, the team thinks it should be implemented as described.
+* **In Development**: A patch is in development. Usually means that a developer is assigned to the issue.
+* **Quality Assurance**: The patch is completed and has passed initial testing. The QA team will now review it on all devices and provide feedback. If problems are found, the issue is moved back to “In Development”.
+* **Release Candidate**: The patch has passed QA and is ready for release. In case of deb-packages that are included in the system-image, the patch will be included in the next over-the-air update on the rc channel, and, if everything goes well, in the next release of the stable channel.
+* **Removed from the project**: A patch has been released (issue closed with a message linking to the patch), the issue has been rejected (issue closed labeled “rejected”), or the issue was moved to a different responsible team.
 
 Labels
 ------
 
 Issues (even closed ones) should be labeled to allow the use of GitHub's
-global filtering. Example:
-https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+org%3Aubports+label%3A%22feature+request%22&type=
+global filtering. For example, `these are all of the issues labeled 'feature request' inside @ubports <https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+org%3Aubports+label%3A%22feature+request%22&type=>`_.
 
 Here's a list of general trackers that are used by all repositories.
 
--  needs confirmation: The bug needs confirmation and / or further
+-  **needs confirmation**: The bug needs confirmation and / or further
    information from affected users
--  bug: This issue is a confirmed bug. If it's reproducable,
+-  **bug**: This issue is a confirmed bug. If it's reproducable,
    reproduction steps are described.
--  opinion: This issue needs further discussion.
--  feature request: This issue is a feature request.
--  question: This issue is a support request or general question.
--  invalid: This issue can not be confirmed or was reported in the wrong
+-  **opinion**: This issue needs further discussion.
+-  **feature request**: This issue is a feature request.
+-  **question**: This issue is a support request or general question.
+-  **invalid**: This issue can not be confirmed or was reported in the wrong
    tracker.
--  duplicate: This has already been reported somewhere else. Please
+-  **duplicate**: This has already been reported somewhere else. Please
    provide a link and close.
--  help wanted: This issue is ready to be picked up by a community
+-  **help wanted**: This issue is ready to be picked up by a community
    developer.
--  rejected: It does not make sense to fix this bug, since it will
+-  **rejected**: It does not make sense to fix this bug, since it will
    probably resolve itself, it will be too much work to fix it, it's not
-   fixable or an underlying component will soon change.
+   fixable, or an underlying component will soon change.
 
 Additional special labels can be defined. As an example, here's the
 labels on ubports/ubuntu-touch
 
--  rc-blocker: This is a critical issue blocking the release of the next
+-  **rc-blocker**: This is a critical issue blocking the release of the next
    rc image that is limited to the devel-channel.
--  stable-blocker: This is a critical issue blocking the release of the
+-  **stable-blocker**: This is a critical issue blocking the release of the
    next stable OTA release. Usually, issues that can not simply be moved
    to a different release and therefore must be fixed asap are labeled
    this.
--  device: [DEVICE CODENAME]: This issue affects only the specified
+-  **device: [DEVICE CODENAME]**: This issue affects only the specified
    device(s).
 
 Milestones
@@ -119,8 +93,7 @@ Assignees
 
 To make it transparent who's working on an issue, the developer should
 be assigned. This also allows the use of GitHub's global filtering as a
-type of TODO list:
-https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+org%3Aubports+assignee%3Amariogrip&type=
+type of TODO list. For example, `this is everything assigned to mariogrip in @ubports <https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+org%3Aubports+assignee%3Amariogrip&type=>`_.
 
 It's the developers duty to keep his list short and update the status of
 his issues.

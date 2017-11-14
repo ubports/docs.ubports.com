@@ -1,5 +1,3 @@
-.. _contribute-doc-index:
-
 Documentation
 =============
 
@@ -31,25 +29,6 @@ Titles should be sentence cased rather than Title Cased. For example::
         Installing Ubuntu Touch on your phone
 
 There isn't a single definition of title casing that everyone follows, but sentence casing is easy. This helps keep capitalization in the table of contents consistent.
-
-Reference
-^^^^^^^^^
-
-References create a permanent link. One should always appear as the first line of your document.
-
-For example, take a look at this document's first three lines::
-
-    .. _contribute-doc-index:
-    Documentation
-    =============
-
-The reference name can be called in another document to easily link to a page::
-
-    For example, check out the :ref:`Documentation intro <contribute-doc-index>`
-
-This will create a link to this page that won't change if this page changes directories in a reorganization later.
-
-Your reference should follow the naming scheme ``part-section-title``. This document, for example, is the index of the Documentation (doc) section in the Contribute part of the documentation.
 
 Table of contents
 ^^^^^^^^^^^^^^^^^

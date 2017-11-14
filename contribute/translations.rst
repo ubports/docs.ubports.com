@@ -1,4 +1,3 @@
-.. _contribute-translations-index:
 Translations
 ============
 
