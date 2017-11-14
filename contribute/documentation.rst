@@ -94,3 +94,19 @@ If you'd like to build this documentation *before* sending a PR (which you shoul
 This tells Sphinx to build the documentation found in the current directory, and put it all into ``_build``. There will be a couple of warnings about README.md and a nonexistent static path. Watch out for warnings about anything else, though, they could mean something has gone wrong.
 
 If all went well, you can enter the ``_build`` directory and double-click on ``index.html`` to view the UBports documentation.
+
+Current TODOs
+-------------
+
+This page lists the TODOs that have been included in this documentation. If you know how to fix one, please send us a PR to make it better!
+
+.. toctree::
+   :maxdepth: 1
+
+   documentation-todo
+
+To create a todo, add this markup to your page::
+
+    .. todo:
+
+       My todo text
