@@ -39,7 +39,6 @@ On this website you find instructions how to install Ubuntu Touch on your mobile
    :name: sec-appdev
 
    appdev/index
-   sdk/index
 
 .. toctree::
    :maxdepth: 1
