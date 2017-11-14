@@ -77,23 +77,28 @@ Building this documentation locally
 If you'd like to build this documentation *before* sending a PR (which you should), follow these instructions on your *local copy* of your fork of the repository.
 
 .. Note::
-    You must have pip installed before following these instructions. On Ubuntu, install the pip package by running ``sudo apt install python-pip``. `This page <https://pip.pypa.io/en/stable/installing/>`_ has instructions for installing Pip on other operating systems and distros.
+    You must have pip and virtualenv installed before following these instructions. On Ubuntu, install the pip package by running ``sudo apt install python-pip``. Then, install virtualenv by running ``sudo pip install virtualenv`` `This page <https://pip.pypa.io/en/stable/installing/>`_ has instructions for installing Pip on other operating systems and distros.
 
-1. Install the Read the Docs theme and ReCommonMark (for Markdown parsing)::
+1. Create a virtualenv for your build environment, and activate it. This will ensure that the dependencies you install do not cause problems with any other Python software on your computer, and is generally regarded as a best practice::
+
+    virtualenv ~/ubportsdocsenv
+    . ~/ubportsdocsenv/bin/activate
+
+2. Install the Read the Docs theme and ReCommonMark (for Markdown parsing)::
 
     pip install sphinx sphinx_rtd_theme recommonmark
 
-2. Change into the ``docs.ubports.com`` directory::
+3. Change into the ``docs.ubports.com`` directory::
 
     cd path/to/docs.ubports.com
 
-3. Build the documentation::
+4. Build the documentation::
 
-    python -m sphinx . _build
+    sphinx-build -Wa . _build
 
-This tells Sphinx to build the documentation found in the current directory, and put it all into ``_build``. There will be a couple of warnings about README.md and a nonexistent static path. Watch out for warnings about anything else, though, they could mean something has gone wrong.
+This tells Sphinx to build the documentation found in the current directory, and put it all into ``_build``. If any warnings occur, the build will fail.
 
-If all went well, you can enter the ``_build`` directory and double-click on ``index.html`` to view the UBports documentation.
+If all went well, you can enter the ``_build`` directory and open ``index.html`` to view the UBports documentation.
 
 Current TODOs
 -------------
