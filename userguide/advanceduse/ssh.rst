@@ -1,4 +1,3 @@
-.. _userguide-advanceduse-ssh:
 Shell access via ssh
 ====================
 

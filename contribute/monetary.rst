@@ -1,4 +1,3 @@
-.. _contribute-doc-index:
 Monetary support
 ================
 

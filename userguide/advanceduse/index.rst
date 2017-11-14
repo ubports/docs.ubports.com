@@ -1,4 +1,3 @@
-.. userguide-advanceduse-index:
 Advanced use
 ============
 

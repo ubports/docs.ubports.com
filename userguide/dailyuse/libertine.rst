@@ -1,4 +1,3 @@
-.. _userguide-dailyuse-libertine:
 Run desktop applications
 ========================
 

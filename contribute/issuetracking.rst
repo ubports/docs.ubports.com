@@ -1,9 +1,8 @@
-.. _contribute-issues-index:
 Issue Tracking Guidelines
 =========================
 
 This document describes the standard process of dealing with new issues
-in UBports projects. For the guide on writing a good bugreport, visit :ref:`click here <contribute-bugreporting-index>`.
+in UBports projects. For the guide on writing a good bugreport, visit :doc:`click here <documentation>`.
 
 .. note::
     Practicality beats purity! Exceptions might apply and should be described in

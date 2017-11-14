@@ -1,4 +1,3 @@
-.. _contribute-bugreporting-index:
 Bug reporting
 =============
 
@@ -28,7 +27,7 @@ Getting Logs
 
 We appreciate as many good logs as we can get when you report a bug. In general, /var/log/dmesg and the output of /android/system/bin/logcat are helpful when resolving an issue. I'll show you how to get these logs.
 
-To get set ready, follow the steps to :ref:`set up ADB<userguide-advanceduse-adb>`.
+To get set ready, follow the steps to :doc:`set up ADB </userguide/advanceduse/adb>`.
 
 Now, you can get the two most important logs.
 

@@ -1,4 +1,3 @@
-.. _userguide-advanceduse-adb:
 Shell access via adb
 ====================
 

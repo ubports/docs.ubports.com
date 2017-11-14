@@ -1,4 +1,3 @@
-.. _clickable-inside-lxd:
 Set up an lxd container for clickable
 =====================================
 
