@@ -8,4 +8,4 @@ This section will introduce you to some of the specifics of porting Ubuntu Touch
 
 Before you begin, you'll want to head over to `the Halium porting guide <http://docs.halium.org/en/latest/porting/first-steps.html>`_ and get your ``systemimage`` built without errors. Once you're at the point of installing a rootfs, you can come back here.
 
-You may choose :doc:`testing-mir` to learn about using Mir tests on the reference rootfs provided by Halium. Alternatively, start at :doc:`building-ubports-boot` if you'd like to install the UBports Ubuntu Touch 16.04 rootfs.
+Start at :doc:`building-ubports-boot` if you'd like to install the UBports Ubuntu Touch 16.04 rootfs.
