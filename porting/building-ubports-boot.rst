@@ -12,7 +12,7 @@ The first thing that needs to be done is adding the ubports-boot source to your 
 
 .. warning::
 
-    Due to a `bug in the ubports-boot build scripts<https://github.com/ubports/ubports-boot/issues/3>`_, you will need to remove it from your tree before you're able to build ``hybris-boot`` again.
+    Due to a `bug in the ubports-boot build scripts <https://github.com/ubports/ubports-boot/issues/3>`_, you will need to remove it from your tree before you're able to build ``hybris-boot`` again.
 
 
 Add to local manifest
