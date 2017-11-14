@@ -82,7 +82,7 @@ Building this documentation locally
 If you'd like to build this documentation *before* sending a PR (which you should), follow these instructions on your *local copy* of your fork of the repository.
 
 .. Note::
-    You must have pip and virtualenv installed before following these instructions. On Ubuntu, install the pip package by running ``sudo apt install python-pip``. Then, install virtualenv by running ``sudo pip install virtualenv`` `This page <https://pip.pypa.io/en/stable/installing/>`_ has instructions for installing Pip on other operating systems and distros.
+    You must have pip and virtualenv installed before following these instructions. On Ubuntu, install the pip package by running ``sudo apt install python-pip``. Then, install virtualenv by running ``sudo pip install virtualenv``. `This page <https://pip.pypa.io/en/stable/installing/>`_ has instructions for installing Pip on other operating systems and distros.
 
 1. Create a virtualenv for your build environment, and activate it. This will ensure that the dependencies you install do not cause problems with any other Python software on your computer, and is generally regarded as a best practice::
 
