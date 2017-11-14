@@ -47,6 +47,11 @@ You can do this by adding the page to the ``index.rst`` file in the same directo
 
 The order matters. If you would like your page to appear in a certain place in the table of contents, place it there. In the previous example, newpage would be added to the end of this table of contents.
 
+Warnings
+^^^^^^^^
+
+Your edits must not introduce any warnings into the documentation build. If any warnings occur, the build will fail and your pull request will be marked with a red 'X'. Please ensure that your RST is valid and correct before you create a pull request. This is done automatically (via sphinx-build crashing with your error) if you follow our build instructions below.
+
 Contribution workflow
 ---------------------
 
@@ -96,7 +101,9 @@ If you'd like to build this documentation *before* sending a PR (which you shoul
 
     sphinx-build -Wa . _build
 
-This tells Sphinx to build the documentation found in the current directory, and put it all into ``_build``. If any warnings occur, the build will fail.
+This tells Sphinx to build the documentation found in the current directory, and put it all into ``_build``. If any warnings occur, the build will fail. To keep the build from failing so you can find and fix all warnings at once, remove the uppercase W from the command. 
+
+To speed up the build, you may optionally specifiy a ``-jX`` argument at the end of sphinx-build, where X is the number of CPU threads your system has.
 
 If all went well, you can enter the ``_build`` directory and open ``index.html`` to view the UBports documentation.
 
