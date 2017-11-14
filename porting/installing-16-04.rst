@@ -3,7 +3,7 @@ Installing Ubuntu Touch 16.04 images on Halium
 
 .. warning::
 
-    These steps can (and will) wipe all of the data on your device. If there is any data that you would like to keep, ensure it is backed up and copied off of the device before continuing. It is not a good idea to port Ubuntu Touch using the device you rely on every day as a testing device.
+    These steps  will wipe all of the data on your device. If there is anything that you would like to keep, ensure it is backed up and copied off of the device before continuing. It is not a good idea to port Ubuntu Touch using the device you rely on every day as a testing device. You will lose data. I speak from personal experience.
 
 Install ubports-boot
 --------------------

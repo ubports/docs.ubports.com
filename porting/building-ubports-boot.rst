@@ -61,10 +61,6 @@ For an example of this, see `this commit on universalsuperbox/android_device_mot
 Edit init.rc
 ------------
 
-.. todo::
-
-    Remove instructions to edit init.rc once ofono in 16.04 is fixed and doesn't crash the device all the time
-
 Some Android services conflict with ofono in 16.04 and will cause your device to reboot without warning, about 30-60 seconds after it boots. We will need to disable these services until the issue is resolved.
 
 To do this, open up your device's default ``init.rc`` (this is likely init.qcom.rc or init.[codename].rc), comment out any ``import`` statements, and add ``disabled`` to services like rild, qti, and others that interface with the radio. Most of them have a ``user radio`` line. For an example, see `commit 7875b48b on UniversalSuperBox/android_device_motorola_potter <https://github.com/UniversalSuperBox/android_device_motorola_potter/commit/7875b48b5b6f240935d7f327d33128e952a3589b>`_
