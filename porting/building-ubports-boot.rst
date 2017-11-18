@@ -2,7 +2,7 @@
 Building ubports-boot
 =====================
 
-Ubuntu Touch uses Upstart rather than SystemD for its init daemon. Because of this, it is not fully Halium-compatible and is not able to use the vanilla hybris-boot that Halium produces. For this reason, we need to build ubports-boot.
+Ubuntu Touch uses Upstart rather than Systemd for its init daemon. Because of this, it is not fully Halium-compatible and is not able to use the vanilla hybris-boot that Halium produces. For this reason, we need to build ubports-boot.
 
 
 Add source to Halium tree
@@ -49,7 +49,7 @@ The initramfs of the ubports-boot image takes a commandline parameter, ``datapar
 
 The ubports-boot initramfs does not use the fixup-mountpoints script, nor does it put block devices in the proper place for mounting without modification. For this reason, we are going to have to edit your device's fstab.
 
-The first step to this process is figuring out where your fstab actually is. For most, this is inside ``$BUILDDIR/device/[manufacturer]/[codename]/rootdir/etc`` and it is named either ``fstab.qcom`` or ``fstab.devicename``. Open the file for editing.
+The first step to this process is figuring out where your fstab actually is. For most, this is inside ``BUILDDIR/device/MANUFACTUER/CODENAME/rootdir/etc`` and it is named either ``fstab.qcom`` or ``fstab.devicename``. Open the file for editing.
 
 With the file open, change the ``src``, or first attribute, of the ``/data`` mountpoint to what you put in fixup-mountpoints for ``/data``, but without the ``/block`` folder. For example, on the Moto G5 Plus, the block device is ``/dev/block/mmcblk0p54``, so I put ``/dev/mmcblk0p54`` in this place. Also change the type to ext4, if it is not already.
 
@@ -73,7 +73,7 @@ Ubuntu Touch requires a slightly different kernel config than Halium, including 
 
     check-kernel-config path/to/my/defconfig -w
 
-You may to do this twice, it will likely fix things both times. Then, run the script without the ``-w`` flag to see if there are any more errors. If there are, fix them manually. Once finished, run the script without the ``-w`` flag one more time to make sure everything is correct.
+You may have to do this twice. It will likely fix things both times. Then, run the script without the ``-w`` flag to see if there are any more errors. If there are, fix them manually. Once finished, run the script without the ``-w`` flag one more time to make sure everything is correct.
 
 
 Build the image

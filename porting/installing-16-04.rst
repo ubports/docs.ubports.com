@@ -5,18 +5,22 @@ Installing Ubuntu Touch 16.04 images on Halium
 
     These steps  will wipe all of the data on your device. If there is anything that you would like to keep, ensure it is backed up and copied off of the device before continuing. It is not a good idea to port Ubuntu Touch using the device you rely on every day as a testing device. You will lose data. I speak from personal experience.
 
-Install ubports-boot
---------------------
-
 Now that you've :doc:`built ubports-boot <building-ubports-boot>`, we'll use a script called ``rootstock-touch-install`` to install an Ubuntu Touch rootfs on your device.
 
 In order to install Ubuntu Touch, you will need a recovery with Busybox, such as TWRP, installed on your phone. You will also need ensure the /data partition is formatted with ext4 and does not have any encryption on it.
 
+Install ubports-boot
+--------------------
+
+We'll need to install the ubports-boot image before installing an image. Reboot your phone into fastboot mode, then do the following from your Halium tree::
+
+    cout
+    fastboot flash boot ubports-boot.img
 
 Choose a rootfs
 ---------------
 
-Before installing a rootfs, you'll need one to install. Which one you choose will depend on whether your device uses CAF sources or not. To check if your device contains any CAF source (it probably does), do a ``grep -r [term]`` for all of the following terms in $BUILDDIR/device/[manufacturer]/[codename]. If any search returns hits, you have a CAF device::
+Before installing a rootfs, you'll need one to install. Which one you choose will depend on whether your device uses CAF sources or not. To check if your device contains any CAF source (it probably does), do a ``grep -r [term]`` for all of the following terms in $BUILDDIR/device/MANUFACTURER/CODENAME. If any search returns hits, you have a CAF device::
 
     QCOM_BSP
     QTI_BSP
