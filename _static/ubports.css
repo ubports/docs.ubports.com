@@ -1,0 +1,19 @@
+table {
+    width: 100%;
+}
+
+p {
+    text-align: justify; 
+}
+
+.logo {
+    width: 180px !important;
+}
+
+.fa-home:before, .icon-home:before {
+    display: none;
+}
+
+.icon-home {
+    font-size: 0 !important;
+}

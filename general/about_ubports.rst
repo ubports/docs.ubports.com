@@ -1,5 +1,5 @@
-Introduction
-============
+About UBports
+=============
 
 This is the documentation for the UBports project. Our goal is to create an open-source (GPL if possible) mobile operating system that converges and respects your freedom.
 
