@@ -47,6 +47,11 @@ You can do this by adding the page to the ``index.rst`` file in the same directo
 
 The order matters. If you would like your page to appear in a certain place in the table of contents, place it there. In the previous example, newpage would be added to the end of this table of contents.
 
+Warnings
+^^^^^^^^
+
+Your edits must not introduce any warnings into the documentation build. If any warnings occur, the build will fail and your pull request will be marked with a red 'X'. Please ensure that your RST is valid and correct before you create a pull request. This is done automatically (via sphinx-build crashing with your error) if you follow our build instructions below.
+
 Contribution workflow
 ---------------------
 
@@ -77,23 +82,30 @@ Building this documentation locally
 If you'd like to build this documentation *before* sending a PR (which you should), follow these instructions on your *local copy* of your fork of the repository.
 
 .. Note::
-    You must have pip installed before following these instructions. On Ubuntu, install the pip package by running ``sudo apt install python-pip``. `This page <https://pip.pypa.io/en/stable/installing/>`_ has instructions for installing Pip on other operating systems and distros.
+    You must have pip and virtualenv installed before following these instructions. On Ubuntu, install the pip package by running ``sudo apt install python-pip``. Then, install virtualenv by running ``sudo pip install virtualenv``. `This page <https://pip.pypa.io/en/stable/installing/>`_ has instructions for installing Pip on other operating systems and distros.
 
-1. Install the Read the Docs theme and ReCommonMark (for Markdown parsing)::
+1. Create a virtualenv for your build environment, and activate it. This will ensure that the dependencies you install do not cause problems with any other Python software on your computer, and is generally regarded as a best practice::
+
+    virtualenv ~/ubportsdocsenv
+    . ~/ubportsdocsenv/bin/activate
+
+2. Install the Read the Docs theme and ReCommonMark (for Markdown parsing)::
 
     pip install sphinx sphinx_rtd_theme recommonmark
 
-2. Change into the ``docs.ubports.com`` directory::
+3. Change into the ``docs.ubports.com`` directory::
 
     cd path/to/docs.ubports.com
 
-3. Build the documentation::
+4. Build the documentation::
 
-    python -m sphinx . _build
+    sphinx-build -Wa . _build
 
-This tells Sphinx to build the documentation found in the current directory, and put it all into ``_build``. There will be a couple of warnings about README.md and a nonexistent static path. Watch out for warnings about anything else, though, they could mean something has gone wrong.
+This tells Sphinx to build the documentation found in the current directory, and put it all into ``_build``. If any warnings occur, the build will fail. To keep the build from failing so you can find and fix all warnings at once, remove the uppercase W from the command. 
 
-If all went well, you can enter the ``_build`` directory and double-click on ``index.html`` to view the UBports documentation.
+To speed up the build, you may optionally specifiy a ``-jX`` argument at the end of sphinx-build, where X is the number of CPU threads your system has.
+
+If all went well, you can enter the ``_build`` directory and open ``index.html`` to view the UBports documentation.
 
 Current TODOs
 -------------
