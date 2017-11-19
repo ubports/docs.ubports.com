@@ -96,7 +96,6 @@ import sphinx_rtd_theme
 
 html_theme = "sphinx_rtd_theme"
 html_logo = '_static/logo.png'
-html_title = ''
 
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
