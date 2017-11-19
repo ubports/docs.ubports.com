@@ -11,7 +11,7 @@ On this website you find instructions how to install Ubuntu Touch on your mobile
     This documentation is currently in a quite volatile state, so don't be alarmed if pages are shuffled around from the last time you were here! If you want to help improving the docs, :doc:`this <contribute/documentation>` will get you started.
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 1
    :caption: General
    :name: sec-general
 
