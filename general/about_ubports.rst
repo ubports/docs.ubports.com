@@ -1,23 +1,10 @@
 About UBports
 =============
 
-This is the documentation for the UBports project. Our goal is to create an open-source (GPL if possible) mobile operating system that converges and respects your freedom.
+UBports is the foundation/legal entity that stands behind projects like Ubuntu Touch. The UBports project was founded by Marius Gripsgard in 2015 and the programming source code for the project was, thanks to the hard work of many volunteers, picked up and moved into the free software community where the project could not only be maintained but also expanded.
 
-About UBports
--------------
+The UBports Foundation's mission is to support the collaborative development of Ubuntu Touch and to promote the widespread use of Ubuntu Touch. It will give users a body to trust in the development of Ubuntu Touch. It will also improve our transparency in funding, spending, and decision making.
 
-The UBports project was founded by Marius Gripsgard in 2015 and in its infancy was a place where developers could share ideas and educate each other in hopes of bringing the Ubuntu Touch platform to more and more devices.
+Learn more about the UBports Foundation `here <https://www.ubports.com/page/foundation>`_. 
 
-After Canonical suddenly announced `their plans to terminate support of Ubuntu Touch <https://insights.ubuntu.com/2017/04/05/growing-ubuntu-for-cloud-and-iot-rather-than-phone-and-convergence/>`_ in April of 2017, UBports and its sister projects began work on the open-source code, maintaining and expanding its possiblilities for the future.
 
-About the Documentation
------------------------
-
-This documentation is always improving thanks to the members of the UBports community. It is written in ReStructuredText and converted into this readable form by `Sphinx <http://www.sphinx-doc.org/en/stable/>`_, `ReCommonMark <http://recommonmark.readthedocs.io/en/latest/>`_, and `Read the Docs <https://readthedocs.io>`_. You can start contributing by checking out the :doc:`Documentation intro </contribute/documentation>`.
-
-All documents are licensed under the Creative Commons Attribution ShareAlike 4.0 (`CC-BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0/>`_) license. Please give attribution to "The UBports Community".
-
-Attribution
------------
-
-This page was heavily modeled after the `Godot Engine's Documentation Introduction <http://docs.godotengine.org/en/stable/about/introduction.html>`_, attribution to Juan Linietsky, Ariel Manzur and the Godot community.
