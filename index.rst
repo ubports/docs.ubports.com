@@ -9,7 +9,7 @@ Documentation creation is being provided by Read the Docs (https://readthedocs.o
 
 This guide is constantly being improved. Although we attempt to provide you with a comprehensive collection of helpful information, we know we won't answer all of your questions here. We will keep adding more information to make things more helpful. 
 
-Ubuntu Touch is community supported and depends on users like you to contribute to development, support, and operations. You can learn more about how to :doc:`contribute <contribute/documentation>`to our projects. Thanks so much to our wonderful community team who helps us run the site. Ubuntu Touch wouldn't be possible without them. Please consider joining today, as we always need more contributors to the project.                 
+Ubuntu Touch is community supported and depends on users like you to contribute to development, support, and operations. You can learn more about how to :doc:`contribute <contribute/documentation>` to our projects. Thanks so much to our wonderful community team who helps us run the site. Ubuntu Touch wouldn't be possible without them. Please consider joining today, as we always need more contributors to the project.                 
 
 
 Thank you for taking the time to read the UBports Ubuntu Touch guide.  
