@@ -5,10 +5,17 @@ Welcome to the official documentation of the UBports project!
 
 UBports develops the mobile phone operating system Ubuntu Touch. Ubuntu Touch is a mobile operating system focused on ease of use, privacy, and convergence.
 
-On this website you find instructions how to install Ubuntu Touch on your mobile phone, user guides and detailed documentation on all system components. If this is your first time here, please consider reading our :doc:`introduction <about/introduction>`.
+Documentation creation is being provided by Read the Docs (https://readthedocs.org/ ) which is an open source (MIT-licensed) project.  The guide is divided into general chapters to make reading easier. Docs are rendered as HTML and PDF and full-text search is available.  If this is your first time here, please consider reading our :doc:`introduction <about/introduction>`.
 
-.. note::
-    This documentation is currently in a quite volatile state, so don't be alarmed if pages are shuffled around from the last time you were here! If you want to help improving the docs, :doc:`this <contribute/documentation>` will get you started.
+This guide is constantly being improved. Although we attempt to provide you with a comprehensive collection of helpful information, we know we won't answer all of your questions here. We will keep adding more information to make things more helpful. 
+
+Ubuntu Touch is community supported and depends on users like you to contribute to development, support, and operations. You can learn more about how to :doc:`contribute <contribute/documentation>` to our projects. Thanks so much to our wonderful community team who helps us run the site. Ubuntu Touch wouldn't be possible without them. Please consider joining today, as we always need more contributors to the project.                 
+
+
+Thank you for taking the time to read the UBports Ubuntu Touch guide.  
+    -- The UBports Documentation team  
+
+
 
 .. toctree::
    :maxdepth: 1
