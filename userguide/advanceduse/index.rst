@@ -14,3 +14,4 @@ This section of the documentation details advanced tasks that power users may wa
     ssh
     switchchannel
     screencasting
+    reverse-tethering
