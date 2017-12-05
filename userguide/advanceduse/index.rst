@@ -13,3 +13,4 @@ This section of the documentation details advanced tasks that power users may wa
     adb
     ssh
     switchchannel
+    screencasting
