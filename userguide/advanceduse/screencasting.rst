@@ -10,9 +10,10 @@ Using adb:
 
 You can catch output directly from ``adb exec-out`` command and forward it to mplayer::
 
-  adb exec-out mirscreencast -m /run/mir_socket --stdout --cap-interval 2 -s 384 640 | mplayer -demuxer rawvideo -rawvideo w=384:h=640:format=rgba -
+  adb exec-out timeout 120 mirscreencast -m /run/mir_socket --stdout --cap-interval 2 -s 384 640 | mplayer -demuxer rawvideo -rawvideo w=384:h=640:format=rgba -
   
-you can reduce or increase frame per second with``--cap-interval`` (1 = 60fps, 2=30fps, ...)  and size of frames ``384 640`` means width=384 height=640
+NB: ``timeout`` here is used in order to kill process properly on device ( here 120 seconds ). Otherwise process still continuing even if killed on computer.
+You can reduce or increase frame per second with``--cap-interval`` (1 = 60fps, 2=30fps, ...)  and size of frames ``384 640`` means width=384 height=640
 
 Via network:
 ------------
