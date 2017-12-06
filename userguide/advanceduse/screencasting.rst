@@ -19,7 +19,7 @@ Via network:
 ------------
   
 On computer side:
-^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^
 
 For real time casting:
 
