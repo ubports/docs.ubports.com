@@ -6,14 +6,14 @@ This short tutorial will help you to connect your Ubuntu Touch to your computer 
 
 Prerequisite: Phone is connected to the computer with usb and developer mode enabled.
 
-Steps:
+Steps
 ------
 
-1. on phone: ``android-gadget-service enable rndis``
+1. On phone: ``android-gadget-service enable rndis``
 
-2. on computer: get your rndis ip address e.g:``hostname -I``
+2. On computer: get your rndis ip address e.g:``hostname -I``
 
-3. on phone: 
+3. On phone: 
 
       add gateway: ``sudo route add default gw YOUR_COMPUTER_RNDIS_IP``
 
@@ -21,7 +21,7 @@ Steps:
 
       refresh dns table: ``resolvconf -u``
 
-4. on computer: 
+4. On computer: 
 
       enable ip forwarding: ``echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward``
 
