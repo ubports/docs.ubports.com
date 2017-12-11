@@ -1,18 +1,20 @@
 Setting up clickable
 ====================
 
-This guide assumes you are using Ubuntu 16.04 on your development
-machine. Other host systems might work just fine as well. If you cannot set up Clickable as described here you might want to try the alternative instructions to setup clickable :doc:`inside an LXD container <inside-lxd>`, or check out the `Clickable website <https://github.com/bhdouglass/clickable>`__ for further alternatives like snap.
+This guide assumes you are using Ubuntu 16.04 or newer on your development
+machine. Other host systems might work just fine as well. If you cannot set up Clickable as described here you might want to try the alternative instructions to setup clickable :doc:`inside an LXD container <inside-lxd>`, or check out the `Clickable website <https://github.com/bhdouglass/clickable>`__ for further alternatives like snap or deb packages.
 
 Prerequisites
 -------------
 
-Ubuntu 16.04
+Ubuntu 16.04 or newer.
 
 ::
 
     sudo apt-get install lxd android-tools-adb python
     sudo lxd init
+
+You will have to reboot for all changes to take effect.
 
 If you have the Ubuntu SDK IDE installed, you will already have the necessary prerequisites. If you don't already have the IDE installed you will need to install adb and lxd. After installing lxd you will need to run ``lxd init`` to get everything setup with lxd.
 
