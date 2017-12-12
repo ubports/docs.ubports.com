@@ -7,7 +7,7 @@ This short tutorial will help you to connect your Ubuntu Touch to your computer 
 Prerequisite: Phone is connected to the computer with usb and developer mode enabled.
 
 Steps
-------
+-----
 
 1. On phone: ``android-gadget-service enable rndis``
 
