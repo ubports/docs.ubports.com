@@ -39,3 +39,14 @@ It can still be installed in Ubuntu 16.04, but issues are expected.
     sudo apt update && sudo apt dist-upgrade
     sudo apt install ubuntu-sdk
     sudo reboot # or logout/login
+
+Cookbook
+--------
+
+A collection of external resources
+
+.. toctree::
+    :maxdepth: 1
+    :name: toc-appdev-cookbook
+
+    cookbook

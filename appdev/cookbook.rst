@@ -16,8 +16,6 @@ In a completely free and open source community, it is natural to have community 
 .. note::
     The resources listed here do not neccessarily represent the officially endorsed way of developing applications for Ubuntu Touch, but are interesting experiments.
 
-* `Free Pascal development for Ubuntu
-Touch <http://kriscode.blogspot.tw/2016/09/freepascal-development-for-ubuntu-phone.html>`__
-* `Lazarus development for Ubuntu
-Touch <http://kriscode.blogspot.tw/2016/10/lazarus-development-for-ubuntu-phone.html>`__
+* `Free Pascal development for Ubuntu Touch <http://kriscode.blogspot.tw/2016/09/freepascal-development-for-ubuntu-phone.html>`__
+* `Lazarus development for Ubuntu Touch <http://kriscode.blogspot.tw/2016/10/lazarus-development-for-ubuntu-phone.html>`__
 * `Geany on Ubuntu Touch device as text editor, source code editor, debugger and compiler for multiple languages <http://kriscode.blogspot.tw/2017/10/geany-on-ubuntu-touch-device-as-text.html>`__
