@@ -20,14 +20,11 @@ Clickable
 
 `Clickable <https://github.com/bhdouglass/clickable>`__ is a program to support you with developing apps for the Ubuntu Touch platform. It is written by Brian Douglass and helps you to build, manage, install and test your app without the need of the whole Ubuntu SDK.
 
-If you use a recent version of Ubuntu or of another GNU/Linux distribution you should be able to :doc:`set up Clickable directly on your system<clickable/setup>`. However, if you encounter problems spinning it up in your favorite distro, you might have to :doc:`containerize it with lxd<clickable/inside-lxd>`.
-
 .. toctree::
     :maxdepth: 1
     :name: toc-appdev-clickable
 
     clickable/setup
-    clickable/inside-lxd
     clickable/cordova
 
 Ubuntu SDK IDE (unsupported)
