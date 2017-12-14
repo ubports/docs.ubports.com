@@ -66,7 +66,8 @@ This script allows you to screen cast remote UT device to your local PC (must ha
       ssh -f phablet@$IP "$REMOTE_COMMAND"
       eval $LOCAL_COMMAND
     
-    
+You can download it here: :download:`files/mircast.sh`
+
 References
 ----------
 
