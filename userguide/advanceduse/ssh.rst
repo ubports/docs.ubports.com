@@ -5,11 +5,17 @@ You can use ssh to access a shell from your PC. This is useful for debugging or 
 
 You need a ssh key pair for this. Logging in via password is disabled by default.
 
+Create your public key
+----------------------
+
+If not already created, create your public key, default choices should be fine for LAN, you can leave empty password if you don't want to deal with it each time::
+
+    ssh-keygen
 
 Copy the public key to your device
 ----------------------------------
 
-First you need to transfer your public key to your device. There are multiple ways to do this. For example:
+You need then to transfer your public key to your device. There are multiple ways to do this. For example:
 
 * Connect the ubports device and the PC with a USB cable. Then copy the file using your filemanager.
 * Or transfer the key via the internet by mailing it to yourself, or uploading it to your own cloud storage, or webserver, etc. 
