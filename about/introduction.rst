@@ -20,4 +20,4 @@ All documents are licensed under the Creative Commons Attribution ShareAlike 4.0
 Attribution
 -----------
 
-This page was heavily modeled after the `Godot Engine's Documentation Introduction <http://docs.godotengine.org/en/stable/about/introduction.html>`_, attribution to Juan Linietsky, Ariel Manzur and the Godot community.
+This documentation was heavily modeled after the `Godot Engine's Documentation <http://docs.godotengine.org/en/stable/>`_, attribution to Juan Linietsky, Ariel Manzur and the Godot community.

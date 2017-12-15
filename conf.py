@@ -19,8 +19,6 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
-import recommonmark
-from recommonmark.transform import AutoStructify
 
 
 # -- General configuration ------------------------------------------------
@@ -56,8 +54,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'UBports'
-copyright = u'2017, The UBports project'
-author = u'UBports developers'
+copyright = u'2017, The UBports project (Creative Commons BY-SA 4.0)'
+author = u'UBports project'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -117,7 +115,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'UBportsdocsdoc'
+htmlhelp_basename = 'UBportsdocs'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -176,5 +174,4 @@ def setup(app):
             'url_resolver': lambda url: github_doc_root + url,
             "enable_auto_doc_ref": False,
             }, True)
-    app.add_transform(AutoStructify)
     app.add_stylesheet('css/ubports.css')
