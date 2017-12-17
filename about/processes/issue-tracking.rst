@@ -96,20 +96,6 @@ type of TODO list. For example, `this is everything assigned to mariogrip in @ub
 It's the developers duty to keep his list short and update the status of
 his issues.
 
-Releases
---------
-
-OTA updates usually follow this rhythm:
-
--  devel: daily builds
--  rc: weekly if no rc-blocker issue exists
--  stable: every six through eight weeks, if no stable-blocker issue
-   exists.
-
-This is not a definitive cycle. Stable releases are ready when they're
-ready and should not introduce new bugs or ship very incomplete
-features.
-
 Examples
 --------
 

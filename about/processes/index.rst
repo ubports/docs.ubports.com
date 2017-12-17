@@ -11,3 +11,4 @@ This section of the documentation details standardized processes for different t
     :name: toc-about-processes
 
     issue-tracking
+    release-schedule
