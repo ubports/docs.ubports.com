@@ -15,7 +15,7 @@ If you want to help improving this documentation, :doc:`the Documentation contri
    :name: sec-about
 
    about/introduction
-   about/processes/index
+   about/process/index
 
 .. toctree::
    :maxdepth: 1
