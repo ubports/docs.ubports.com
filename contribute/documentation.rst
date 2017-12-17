@@ -110,15 +110,4 @@ If all went well, you can enter the ``_build`` directory and open ``index.html``
 Current TODOs
 -------------
 
-This page lists the TODOs that have been included in this documentation. If you know how to fix one, please send us a PR to make it better!
-
-.. toctree::
-   :maxdepth: 1
-
-   documentation-todo
-
-To create a todo, add this markup to your page::
-
-    .. todo:
-
-       My todo text
+TODOs for the documentation are tracked on `GitHub <https://github.com/ubports/docs.ubports.com/issues>`__. If you know how to fix one, please send us a PR to make it better! To create a new item, simply file a new issue describing what exactly you are looking for.
