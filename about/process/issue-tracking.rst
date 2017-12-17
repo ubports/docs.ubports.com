@@ -102,7 +102,7 @@ To make it transparent who's working on an issue, the developer should
 be assigned. This also allows the use of GitHub's global filtering as a
 type of TODO list. For example, `this is everything assigned to mariogrip in @ubports <https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+org%3Aubports+assignee%3Amariogrip&type=>`_.
 
-Developers ake ased to keep their list short and to keep the status of their issues up-to-date.
+Developers are asked to keep their list short and to keep the status of their issues up-to-date.
 
 Examples
 --------
