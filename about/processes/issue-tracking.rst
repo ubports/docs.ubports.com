@@ -1,12 +1,10 @@
-Issue Tracking Guidelines
+Issue-Tracking Guidelines
 =========================
 
-This document describes the standard process of dealing with new issues
-in UBports projects. For the guide on writing a good bugreport, visit :doc:`click here <documentation>`.
+This document describes the standard process of dealing with new issues in UBports projects. Not to be confused with the :doc:`guide on writing a good bugreport </contribute/bugreporting>`.
 
 .. note::
-    Practicality beats purity! Exceptions might apply and should be described in
-    the projects README.md file.
+    Practicality beats purity! Exceptions might apply and should be described in the projects README.md file.
 
 Where are bugs tracked?
 -----------------------
