@@ -12,8 +12,7 @@ If those aren't enough for you, see `our contribute page <https://ubports.com/pa
     :name: toc-contribute
 
     bugreporting
-    issuetracking
+    quality-assurance
     documentation
     translations
     monetary
-        

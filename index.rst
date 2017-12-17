@@ -15,6 +15,7 @@ If you want to help improving this documentation, :doc:`the Documentation contri
    :name: sec-about
 
    about/introduction
+   about/process/index
 
 .. toctree::
    :maxdepth: 1
@@ -47,4 +48,3 @@ If you want to help improving this documentation, :doc:`the Documentation contri
    porting/introduction
    porting/building-ubports-boot
    porting/installing-16-04
-
