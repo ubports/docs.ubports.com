@@ -1,5 +1,0 @@
-
-Documentation TODOs
--------------------
-
-.. todolist::
