@@ -1,7 +1,7 @@
 Bug reporting
 =============
 
-This page contains information to help you help us reporting an actionable bug for Ubuntu Touch. It does NOT contain information on reporting bugs in apps, most of the time their entry in the OpenStore will specify where and how to do that.
+This page contains information to help you help us by reporting an actionable bug for Ubuntu Touch. It does NOT contain information on reporting bugs in apps, most of the time their entry in the OpenStore will specify where and how to do that.
 
 Get the latest Ubuntu Touch
 ---------------------------
@@ -34,9 +34,10 @@ Now, you can get the two most important logs.
 dmesg
 ^^^^^
 
+The **dmesg** (*display message* or *driver message*) command displays debug messages from the kernel.
+
 #. Using the steps you documented earlier, reproduce the issue you're reporting
 #. cd to a folder where you're able to write the log
-#. Delete the file UTdmesg.log if it exists
 #. Run the command: `adb shell "dmesg" > "UTdmesg.txt"`
 
 This log should now be located at UTdmesg.txt under your working directory, ready for uploading later.
@@ -44,10 +45,11 @@ This log should now be located at UTdmesg.txt under your working directory, read
 logcat
 ^^^^^^
 
-#. Using the steps you documented earlier, reproduce the issue you're reporting
+The **logcat** (*log concatenator*) command displays debug information from various parts of the underlying android system.
+
 #. cd to a folder where you're able to write the log
-#. Delete the file UTlogcat.log if it exists
 #. Run the command: `adb shell "/android/system/bin/logcat -d" > "UTlogcat.txt"`
+#. Using the steps you documented earlier, reproduce the issue you're reporting
 
 This log will be located at UTlogcat.txt in your current working directory, so you'll be able to upload it later.
 
@@ -70,4 +72,4 @@ Now, write your bug report. A good bug report includes the following:
 
 Once you're finished with that, post the bug. You can't add labels yourself, so please don't forget to state the device you're experiencing the issue on in the description so a moderator can easily add the correct tags later.
 
-A developer or triager will confirm and triage your bug, then work can begin on it. If you are missing any information, you will be asked for it, so make sure to check in often!
+A developer or QA-team member will confirm and triage your bug, then work can begin on it. If you are missing any information, you will be asked for it, so make sure to check in often!
