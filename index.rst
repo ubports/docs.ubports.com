@@ -9,6 +9,7 @@ On this website you find instructions how to install Ubuntu Touch on your mobile
 
 If you want to help improving this documentation, :doc:`the Documentation contribute page <contribute/documentation>` will get you started.
 
+
 .. toctree::
    :maxdepth: 1
    :caption: About
@@ -16,6 +17,7 @@ If you want to help improving this documentation, :doc:`the Documentation contri
 
    about/introduction
    about/process/index
+
 
 .. toctree::
    :maxdepth: 1
@@ -26,6 +28,7 @@ If you want to help improving this documentation, :doc:`the Documentation contri
    userguide/dailyuse/index
    userguide/advanceduse/index
 
+
 .. toctree::
    :maxdepth: 1
    :caption: Contribute
@@ -33,12 +36,14 @@ If you want to help improving this documentation, :doc:`the Documentation contri
 
    contribute/index
 
+
 .. toctree::
    :maxdepth: 1
    :caption: App development
    :name: sec-appdev
 
    appdev/index
+
 
 .. toctree::
    :maxdepth: 1
@@ -48,3 +53,14 @@ If you want to help improving this documentation, :doc:`the Documentation contri
    porting/introduction
    porting/building-ubports-boot
    porting/installing-16-04
+
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Platform
+   :name: sec-platform
+
+   Click Packages <https://click.readthedocs.io/en/latest/index.html>
+   Ubuntu UI-Toolkit <https://api-docs.ubports.com/en/latest/index.html>
+   Clickable <http://clickable.bhdouglass.com/en/latest/index.html>
+   Halium <https://docs.halium.org/en/latest/index.html>
