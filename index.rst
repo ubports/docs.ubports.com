@@ -52,6 +52,6 @@ If you want to help improving this documentation, :doc:`the Documentation contri
 
    porting/introduction
    Click Packages <https://click.readthedocs.io/en/latest/index.html>
-   Ubuntu UI-Toolkit <https://api-docs.ubports.com/en/latest/index.html>
+   Ubuntu UI-Toolkit <https://api-docs.ubports.com/>
    Clickable <http://clickable.bhdouglass.com/en/latest/index.html>
    Halium <https://docs.halium.org/en/latest/index.html>
