@@ -43,7 +43,7 @@ Now you are set up to build your first app! Activate the developer mode on your 
 
     git clone https://github.com/bhdouglass/ut-app-template
     cd ut-app-template/
-    clickable --docker
+    clickable
 
 This should build and start an app on your Ubuntu Touch device
 displaying "Hello World!"
