@@ -1,7 +1,7 @@
 Reverse tethering
 =================
 
-Some users may don't have an available wifi connection for their phone nor a data subscription from their mobile provider.
+Some users may not have an available wifi connection for their phone nor a data subscription from their mobile provider.
 This short tutorial will help you to connect your Ubuntu Touch to your computer to access internet.
 
 Prerequisite: Phone is connected to the computer with usb and developer mode enabled.
