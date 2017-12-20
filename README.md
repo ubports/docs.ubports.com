@@ -1,6 +1,6 @@
 ## UBports Documentation Website
 
-This is the repository for the UBports documentation website served at [docs.ubports.com](https://docs.ubports.com). 
+This is the repository for the UBports documentation website served at [docs.ubports.com](https://docs.ubports.com).
 
 ### Contributing to this documentation
 
@@ -10,7 +10,7 @@ You can find ways to contribute [here](https://docs.ubports.com/en/latest/contri
 
 This documentation can be built by doing the following:
 
-Create and activate a Python virtualenv 
+Create and activate a Python virtualenv
 
 ```
 virtualenv ~/ubportsdocsenv
@@ -20,7 +20,7 @@ virtualenv ~/ubportsdocsenv
 Install the Read the Docs theme and ReCommonMark (for Markdown parsing):
 
 ```
-pip install sphinx sphinx_rtd_theme recommonmark
+pip install sphinx sphinx_rtd_theme
 ```
 
 Change into the ``docs.ubports.com`` directory:

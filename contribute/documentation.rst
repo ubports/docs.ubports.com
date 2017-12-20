@@ -91,7 +91,7 @@ If you'd like to build this documentation *before* sending a PR (which you shoul
 
 2. Install the Read the Docs theme and ReCommonMark (for Markdown parsing)::
 
-    pip install sphinx sphinx_rtd_theme recommonmark
+    pip install sphinx sphinx_rtd_theme
 
 3. Change into the ``docs.ubports.com`` directory::
 
@@ -101,7 +101,7 @@ If you'd like to build this documentation *before* sending a PR (which you shoul
 
     sphinx-build -Wa . _build
 
-This tells Sphinx to build the documentation found in the current directory, and put it all into ``_build``. If any warnings occur, the build will fail. To keep the build from failing so you can find and fix all warnings at once, remove the uppercase W from the command. 
+This tells Sphinx to build the documentation found in the current directory, and put it all into ``_build``. If any warnings occur, the build will fail. To keep the build from failing so you can find and fix all warnings at once, remove the uppercase W from the command.
 
 To speed up the build, you may optionally specifiy a ``-jX`` argument at the end of sphinx-build, where X is the number of CPU threads your system has.
 
