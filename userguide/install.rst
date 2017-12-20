@@ -1,43 +1,33 @@
 Install Ubuntu Touch
 ====================
 
-There are many ways to install Ubuntu Touch on your supported device. To check if your device is supported, check `this page <https://ubports.com/page/fs-flash-phone>`_
+Installing Ubuntu Touch is easy, and a lot of work has gone in to making the installation process less intimidating to less technical users. The UBports Installer is a nice graphical tool that you can use to install Ubuntu Touch on a `supported device <devices.ubports.com>`_ from your Linux, Mac or Windows computer.
 
-Back up your data
------------------
+.. warning::
+    If your're switching your device over from Android, you will not be able to keep any data that is currently on the device. Create an external backup if you want to keep it.
 
-Your data on your phone is important. You don't need to lose it in the upgrade. 
+Go to `the download page <https://github.com/ubports/ubports-installer/releases/latest>`_ and download the version of the installer for your operating system:
 
-If you're already using Ubuntu Touch on your phone and any distro that supports snaps on your PC, use the `magic-device-tool <https://github.com/MariusQuabeck/magic-device-tool>`_ to back up your device.
-    
-Non-Canonical devices
----------------------
+ - Windows: ubports-installer-<version-number>.exe
+ - macOS: ubports-installer-<version-number>.dmg
+ - Linux: ubports-installer-<version-number>.deb, ubports-installer-<version-number>.snap or ubports-installer-<version-number>.AppImage
 
-These instructions will help you install our OS on the "Core Devices" such as the Nexus 5 or Fairphone 2.
+Start the installer and follow the on-screen instructions that will walk you through the installation process. That's it! Have fun exploring Ubuntu Touch!
 
-Switch from Android to Ubuntu Touch
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+If you're an experienced android developer and want to help us bring Ubuntu Touch to more devices, visit the :doc:`porting section </porting/introduction>`.
 
-* On any Linux distro with Snaps: Use the `magic-device-tool <https://github.com/MariusQuabeck/magic-device-tool>`_. Please read the instructions carefully!
-* On Windows or MacOS (**beta**!): Use the `UBports GUI installer <https://github.com/ubports/ubports-installer/releases>`_
+Install on legacy Android devices
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Official "Ubuntu for Devices" devices
--------------------------------------
+While the installation process is fairly simple on most devices, some legacy Bq and Meizu devices require special steps due to their closed nature. This part of the guide does not apply to any other devices or bq devices that are running the Canonical version of Ubuntu Touch.
 
-These instructions will help you install to a device that ran an official Canonical build of Ubuntu for Devices, such as the BQ M10 or Meizu MX4
+.. note::
 
-Switch from Canonical builds to UBports builds
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    This is more or less uncharted territory. If the device manufacturers don't want you to install an alternative operating system on their devices, there's not a lot we can do about it. The instructions below are very vague and should only be followed by experienced users. While we appreciate that lots of people want to use our OS, flashing a device with OEM tools shouldn't be done without a bit of know-how and plenty of research.
 
-* On any Linux distro with Snaps: Use the `magic-device-tool <https://github.com/MariusQuabeck/magic-device-tool>`_. Please read the instructions carefully!
-* On Windows or MacOS (**beta**!): Use the `UBports GUI installer <https://github.com/ubports/ubports-installer/releases>`_
-
-Switch from Android to Ubuntu
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-BE VERY CAREFUL! This can permanantly damage or brick your device. NEVER check the "Format All" option in SP Flash Tool and carefully read everything that it tells you. Some users have destroyed the partition that holds their hardware IDs and can no longer connect to Wi-Fi or cellular networks.
-
-* BQ devices: Download the official Ubuntu Edition firmware from `here <http://www.mibqyyo.com/en-download/>`_ and use SP Flash Tool to flash it.
+* BQ devices: Download the official Ubuntu Edition firmware from `their website <http://www.mibqyyo.com/en-download/>`_ and use their SP Flash Tool to flash it.
 * Meizu devices: You are pretty much stuck on Flyme. For the MX4, there are some instructions floating around for downgrading your OS, gaining root with an exploit, unlocking your bootloader, and so on. We aren't going to link to them here for obvious reasons. The Pro5 is Exynos-based and has its own headaches. You're even more at your own risk on these.
 
-We are being vague with these instructions on purpose. While we appreciate that lots of people want to use our OS, flashing a device with OEM tools shouldn't be done without a bit of know-how and plenty of research. People have destroyed their phones.
+.. warning::
+
+    BE VERY CAREFUL! Getting this part wrong can permanantly damage or brick your device. NEVER check the "Format All" option in SP Flash Tool and carefully read everything that it tells you. Some users have destroyed the partition that holds their hardware IDs and can no longer connect to Wi-Fi or cellular networks.
