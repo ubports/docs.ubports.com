@@ -8,29 +8,4 @@ You can find ways to contribute [here](https://docs.ubports.com/en/latest/contri
 
 ### Build instructions
 
-This documentation can be built by doing the following:
-
-Create and activate a Python virtualenv
-
-```
-virtualenv ~/ubportsdocsenv
-. ~/ubportsdocsenv/bin/activate
-```
-
-Install the Read the Docs theme and ReCommonMark (for Markdown parsing):
-
-```
-pip install sphinx sphinx_rtd_theme
-```
-
-Change into the ``docs.ubports.com`` directory:
-
-```
-cd path/to/docs.ubports.com
-```
-
-Build the documentation::
-
-```
-sphinx-build -Wa . _build
-```
+The documentation can be built by running `./build.sh` in the root of this repository. The script will also create a virtual build environment in `~/ubportsdocsenv` if none is present. After the build is complete, you can view the documentation by opening the html files in your favorite browser (eg. `firefox _build/index.html`).

@@ -81,29 +81,7 @@ Building this documentation locally
 
 If you'd like to build this documentation *before* sending a PR (which you should), follow these instructions on your *local copy* of your fork of the repository.
 
-.. Note::
-    You must have pip and virtualenv installed before following these instructions. On Ubuntu, install the pip package by running ``sudo apt install python-pip``. Then, install virtualenv by running ``sudo pip install virtualenv``. `This page <https://pip.pypa.io/en/stable/installing/>`_ has instructions for installing Pip on other operating systems and distros.
-
-1. Create a virtualenv for your build environment, and activate it. This will ensure that the dependencies you install do not cause problems with any other Python software on your computer, and is generally regarded as a best practice::
-
-    virtualenv ~/ubportsdocsenv
-    . ~/ubportsdocsenv/bin/activate
-
-2. Install the Read the Docs theme and ReCommonMark (for Markdown parsing)::
-
-    pip install sphinx sphinx_rtd_theme
-
-3. Change into the ``docs.ubports.com`` directory::
-
-    cd path/to/docs.ubports.com
-
-4. Build the documentation::
-
-    sphinx-build -Wa . _build
-
-This tells Sphinx to build the documentation found in the current directory, and put it all into ``_build``. If any warnings occur, the build will fail. To keep the build from failing so you can find and fix all warnings at once, remove the uppercase W from the command.
-
-To speed up the build, you may optionally specifiy a ``-jX`` argument at the end of sphinx-build, where X is the number of CPU threads your system has.
+The documentation can be built by running ``./build.sh`` in the root of this repository. The script will also create a virtual build environment in ``~/ubportsdocsenv`` if none is present.
 
 If all went well, you can enter the ``_build`` directory and open ``index.html`` to view the UBports documentation.
 
