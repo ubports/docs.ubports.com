@@ -22,5 +22,5 @@ else
   sudo -H pip install sphinx sphinx_rtd_theme
 fi
 echo -e "${GREEN}Building...${PLAIN}"
-sphinx-build -Wa . _build
+sphinx-build -Wa . _build -j `nproc --all`
 exit $?
