@@ -19,7 +19,8 @@ On Ubuntu you can also install clickable from a ppa:
     clickable setup-docker
 
 
-For other modern GNU/Linux distributions, you can install from the git repository:
+For other modern GNU/Linux distributions, you can install from the git repository.
+Note: You must have adb and docker installed on your system.
 
 ::
 
