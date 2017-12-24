@@ -19,23 +19,15 @@ If you want to help improving this documentation, :doc:`the Documentation contri
    about/process/index
 
 
+
 .. toctree::
    :maxdepth: 1
    :caption: User Guide
    :name: sec-userguide
 
-   userguide/install
-   userguide/dailyuse/index
-   userguide/advanceduse/index
-
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Contribute
-   :name: sec-contribute
-
-   contribute/index
-
+   userguide/ubuntutouch
+   userguide/install/index
+   userguide/howtos/index
 
 .. toctree::
    :maxdepth: 1
@@ -44,14 +36,11 @@ If you want to help improving this documentation, :doc:`the Documentation contri
 
    appdev/index
 
-
 .. toctree::
    :maxdepth: 1
-   :caption: Platform
-   :name: sec-platform
+   :caption: Contribute
+   :name: sec-contribute
 
-   porting/introduction
-   Click Packages <https://click.readthedocs.io/en/latest/index.html>
-   Ubuntu UI-Toolkit <https://api-docs.ubports.com/>
-   Clickable <http://clickable.bhdouglass.com/en/latest/index.html>
-   Halium <https://docs.halium.org/en/latest/index.html>
+   contribute/index
+
+   

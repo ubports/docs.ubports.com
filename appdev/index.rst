@@ -3,6 +3,9 @@ App development
 
 Welcome to an open source and free platform under constant scrutiny and improvement by a vibrant global community, whose energy, connectedness, talent and commitment is unmatched. Ubuntu is also the third most deployed desktop OS in the world.
 
+TODO: overview of webapp and app development, click, confinment, languages we can use...
+
+
 Clickable
 ---------
 
