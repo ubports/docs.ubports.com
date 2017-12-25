@@ -14,7 +14,7 @@ The Current Channels
 15.04/stable
 ~~~~~~~~~~~~
 
-This is the channel you should be on if you're unsure of which to pick. It's the slowest-moving and most vetted release channel.
+This is the channel you should be on if you're unsure of which to pick. It's the slowest-moving and most vetted release channel. Actually this channel reached the OTA3 (Over The Air release 3), maybe the last before 16.04.
 
 15.04/rc
 ~~~~~~~~
@@ -35,8 +35,8 @@ Switching channels on your Ubuntu Touch device
 
 There are two ways to switch channels without losing data. They both involve having Developer Mode turned on and your device connected to your computer with adb.
 
-system-image-cli
-~~~~~~~~~~~~~~~~
+system-image-cli (from your Ubuntu Touch device)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can run the following command from your computer using ``adb`` to change channels
 ::
@@ -44,15 +44,43 @@ You can run the following command from your computer using ``adb`` to change cha
 $ sudo system-image-cli --switch [channel name]
 .
 
-where ``[channel name]`` is the full name of one of the current channels, such as 15.04/stable. This process will take a while and will not give any feedback while it's running. You can't run this command from the Ubuntu Touch terminal due to confinement.
+where ``[channel name]`` is the full name of one of the current channels, for example 15.04/stable. This process will take a while and will not give any feedback while it's running. You can't run this command from the Ubuntu Touch terminal due to confinement.
 
-ubuntu-device-flash
-~~~~~~~~~~~~~~~~~~~
+System settings (from your Ubuntu Touch device)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can also (handily) use the ``ubuntu-device-flash`` utility to flash a different channel without losing data.
+Access to ``System Settings`` either from the menu bar and from App screen, then tap on ``Updates`` and on the botton you will find the ``Release channels`` section where you can choose among ``Stable``, ``Release candidate`` and ``Development``
+.
+
+You can either access to ``About ths device`` section in the Menu bar, then tap on ``Search for updates`` and you will reach the previously described screen where to switch to your ``Release channels``
+.
+
+ubuntu-device-flash (from PC)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can also (handily) use the ``ubuntu-device-flash`` utility to flash a different channel without losing data. It must be runned from a connected PC
 ::
 
 $ sudo ubuntu-device-flash --server=http://system-image.ubports.com touch --channel=[channel name]
+.
+
+magic-device-tool (from PC)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+On a PC's terminal (rather than on MS-Windows or MacOSX systems where you can run a graphical beta version), you can run ``magic-device-tool`` as a snap: it is available from Marius Quabeck's `GitHub repository <https://github.com/MariusQuabeck/magic-device-tool>`_ 
+
+16.04/devel
+~~~~~~~~~~~
+
+As 16.04 will be the future major release, there will be only a ``devel`` channel (untill its official release). Be aware that to switch to 16.04/devel can be very dangerous due to its unproven instability, that is why it will be discouraged for daily uses.
+You can upgrade your system either by using ``ubuntu-device-flash`` command from PC's shell and from ``magic-device-tool``
+.
+In the first case, please, use the following ``--channel`` name option:
+
+--channel=ubuntu-ubports/16.04/devel
+.
+
+You can also perform this switch from Marius Quabek's ``magic-device-tool``
 .
 
 Past Channels
