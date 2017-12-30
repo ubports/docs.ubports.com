@@ -42,6 +42,10 @@ Now start the ssh server::
 To make sure the ssh server is automatically started in the future, execute::
 
     sudo setprop persist.service.ssh true
+    
+In case the ssh was not enabled before, use the following command to permit ssh connexion form outside the mobile device::
+
+    android-gadget-tools ssh enable
 
 Connect
 -------
