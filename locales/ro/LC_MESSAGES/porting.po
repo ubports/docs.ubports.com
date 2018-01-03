@@ -1,0 +1,437 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, The UBports project (Creative Commons BY-SA 4.0)
+# This file is distributed under the same license as the UBports package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: UBports 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-02 20:00-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.1\n"
+
+#: ../../porting/building-ubports-boot.rst:3
+msgid "Building ubports-boot"
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:5
+msgid ""
+"Ubuntu Touch uses Upstart rather than Systemd for its init daemon. "
+"Because of this, it is not fully Halium-compatible and is not able to use"
+" the vanilla hybris-boot that Halium produces. For this reason, we need "
+"to build ubports-boot."
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:9
+msgid "Add source to Halium tree"
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:11
+msgid ""
+"The first thing that needs to be done is adding the ubports-boot source "
+"to your Halium tree. You may choose to do this by adding it to your local"
+" manifests (recommended) or simply cloning it in place."
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:15
+msgid ""
+"Due to a `bug in the ubports-boot build scripts "
+"<https://github.com/ubports/ubports-boot/issues/3>`_, you will need to "
+"remove it from your tree before you're able to build ``hybris-boot`` "
+"again."
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:19
+msgid "Add to local manifest"
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:21
+msgid ""
+"Create a new file in ``.repo/local_manifests`` called ``ubports-"
+"boot.xml``. Add the following to the file:"
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:30
+msgid "Now, just do a ``repo sync`` to download the new source."
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:34
+msgid "Manual clone"
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:36
+msgid ""
+"You may also choose to clone `the ubports-boot repository "
+"<https://github.com/ubports/ubports-boot>`_ into your tree manually. It "
+"should be placed into ``BUILDDIR/halium/ubports-boot``."
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:38
+msgid ""
+"If you share your code and build instructions, please note that you've "
+"done this."
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:41
+msgid "Include in build system"
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:43
+msgid ""
+"The android build system won't know where to find ubports-boot normally. "
+"To fix this, open the file ``BUILDDIR/build/core/main.mk`` in a text "
+"editor. Find the comment ``# Specific projects for Halium`` and change "
+"the text directly under it to match this::"
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:50
+msgid "Fix mounts"
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:54
+msgid ""
+"This is a workaround for `ubports/ubports-boot #1 "
+"<https://github.com/ubports/ubports-boot/issues/1>`_ and `ubports"
+"/ubports-boot #2 <https://github.com/ubports/ubports-boot/issues/2>`_. It"
+" should not be considered a permanent fix. Be prepared to revert this "
+"later when these bugs have been fixed."
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:56
+msgid ""
+"The initramfs of the ubports-boot image takes a commandline parameter, "
+"``datapart=``, which points it to the block device that is normally "
+"mounted at ``/data`` in Android. This parameter is automatically embedded"
+" into the image at build time by finding ``/data`` in your device's "
+"default fstab and using its source. Unfortunately, this source is "
+"generally a node in ``/dev/block/bootdevice/by-name`` or something else "
+"strange, which is only available in an Android initramfs. To fix this, "
+"Halium uses the fixup-mountpoints script, which you are probably familiar"
+" with by now."
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:58
+msgid ""
+"The ubports-boot initramfs does not use the fixup-mountpoints script, nor"
+" does it put block devices in the proper place for mounting without "
+"modification. For this reason, we are going to have to edit your device's"
+" fstab."
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:60
+msgid ""
+"The first step to this process is figuring out where your fstab actually "
+"is. For most, this is inside "
+"``BUILDDIR/device/MANUFACTUER/CODENAME/rootdir/etc`` and it is named "
+"either ``fstab.qcom`` or ``fstab.devicename``. Open the file for editing."
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:62
+msgid ""
+"With the file open, change the ``src``, or first attribute, of the "
+"``/data`` mountpoint to what you put in fixup-mountpoints for ``/data``, "
+"but without the ``/block`` folder. For example, on the Moto G5 Plus, the "
+"block device is ``/dev/block/mmcblk0p54``, so I put ``/dev/mmcblk0p54`` "
+"in this place. Also change the type to ext4, if it is not already."
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:64
+msgid ""
+"Now, remove all ``context=`` options from all block devices in the file. "
+"Save and exit."
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:66
+msgid ""
+"For an example of this, see `this commit on "
+"universalsuperbox/android_device_motorola_potter "
+"<https://github.com/UniversalSuperBox/android_device_motorola_potter/commit/9b574967e3a6f07884760b418befe731ccfcb924>`_."
+" Removing the ``wait`` flag is not required and was an accident."
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:70
+msgid "Edit init.rc"
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:72
+msgid ""
+"Some Android services conflict with ofono in 16.04 and will cause your "
+"device to reboot without warning, about 30-60 seconds after it boots. We "
+"will need to disable these services until the issue is resolved."
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:74
+msgid ""
+"To do this, open up your device's default ``init.rc`` (this is likely "
+"init.qcom.rc or init.[codename].rc), comment out any ``import`` "
+"statements, and add ``disabled`` to services like rild, qti, and others "
+"that interface with the radio. Most of them have a ``user radio`` line. "
+"For an example, see `commit 7875b48b on "
+"UniversalSuperBox/android_device_motorola_potter "
+"<https://github.com/UniversalSuperBox/android_device_motorola_potter/commit/7875b48b5b6f240935d7f327d33128e952a3589b>`_"
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:78
+msgid "Edit kernel config"
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:80
+msgid ""
+"Ubuntu Touch requires a slightly different kernel config than Halium, "
+"including enabling Apparmor. Luckily, we have a nice script for this "
+"purpose, ``check-kernel-config``. It's included in the ubports-boot "
+"repository. Simply run it on your config as follows::"
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:84
+msgid ""
+"You may have to do this twice. It will likely fix things both times. "
+"Then, run the script without the ``-w`` flag to see if there are any more"
+" errors. If there are, fix them manually. Once finished, run the script "
+"without the ``-w`` flag one more time to make sure everything is correct."
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:88
+msgid "Build the image"
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:90
+msgid ""
+"Once ubports-boot is in place, you can build it quite simply. You will "
+"also need to rebuild system.img due to our changes."
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:92
+msgid "``cd`` to your Halium BUILDDIR"
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:93
+msgid "``source build/envsetup.sh``"
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:94
+msgid "Run ``breakfast`` or ``lunch``, whichever you use for your device"
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:95
+msgid "``mka ubports-boot``"
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:96
+msgid "``mka systemimage``"
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:101
+msgid "Continue on"
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:103
+msgid ""
+"Now that you have ubports-boot built, you can move on to "
+":doc:`installing-16-04`."
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:2
+msgid "Installing Ubuntu Touch 16.04 images on Halium"
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:6
+msgid ""
+"These steps  will wipe all of the data on your device. If there is "
+"anything that you would like to keep, ensure it is backed up and copied "
+"off of the device before continuing. It is not a good idea to port Ubuntu"
+" Touch using the device you rely on every day as a testing device. You "
+"will lose data. I speak from personal experience."
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:8
+msgid ""
+"Now that you've :doc:`built ubports-boot <building-ubports-boot>`, we'll "
+"use a script called ``rootstock-touch-install`` to install an Ubuntu "
+"Touch rootfs on your device."
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:10
+msgid ""
+"In order to install Ubuntu Touch, you will need a recovery with Busybox, "
+"such as TWRP, installed on your phone. You will also need ensure the "
+"/data partition is formatted with ext4 and does not have any encryption "
+"on it."
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:13
+msgid "Install ubports-boot"
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:15
+msgid ""
+"We'll need to install the ubports-boot image before installing an image. "
+"Reboot your phone into fastboot mode, then do the following from your "
+"Halium tree::"
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:21
+msgid "Choose a rootfs"
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:23
+msgid ""
+"Before installing a rootfs, you'll need one to install. Which one you "
+"choose will depend on whether your device uses CAF sources or not. To "
+"check if your device contains any CAF source (it probably does), do a "
+"``grep -r [term]`` for all of the following terms in "
+"$BUILDDIR/device/MANUFACTURER/CODENAME. If any search returns hits, you "
+"have a CAF device::"
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:29
+msgid ""
+"If your device includes any CAF sources, choose `the CAF rootfs "
+"<http://ci.ubports.com/job/xenial-7.1-caf-sudoku-rootfs/>`_."
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:30
+msgid ""
+"If your device does not include any CAF sources, choose `the standard "
+"rootfs <http://ci.ubports.com/job/xenial-rootfs-armhf/>`_"
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:32
+msgid ""
+"In either case, download the large ``tar.gz`` file under the \"Last "
+"successful artifacts\" heading."
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:36
+msgid "Install system.img and rootfs"
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:40
+msgid ""
+"Change the rootstock link to point to UBports once the actuallyfixit PR "
+"is merged."
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:42
+msgid ""
+"Download the rootstock-touch-install script from `universalsuperbox"
+"/rootstock-ng <https://github.com/universalsuperbox/rootstock-ng/tree"
+"/xenial-actuallyfixit>`_. Boot your device into recovery and run the "
+"script as follows::"
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:46
+msgid ""
+"The script will copy and extract the files to their proper places, then "
+"allow you to set the phablet user's password. If it gets all the way to "
+"``rebooting device`` and doesn't seem to produce any errors, it's time to"
+" continue to the next step. If something goes wrong, please get in touch "
+"with us. If your device doesn't reboot automatically, reboot it using "
+"your recovery's interface."
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:50
+msgid "Get SSH access"
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:52
+msgid ""
+"When your device boots, it will likely stay at the bootloader screen. "
+"However, you should also get a new network connection on the computer you"
+" have it plugged in to. We will use this to debug the system."
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:54
+msgid ""
+"To confirm that your device has booted correctly, run ``dmesg -w`` and "
+"watch for \"GNU/Linux device\" in the output. If you instead get "
+"something similar to \"ubports initrd i hit a nail\", please get in "
+"contact with us so we can find out why. You may also choose to run "
+"``watch ip link`` and look for changes in network devices."
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:56
+msgid ""
+"Similar to the Halium reference rootfs, you should set your computer's IP"
+" on the newly connected RNDIS interface to ``10.15.19.100`` if you don't "
+"get one automatically. Then, run the following to access your device::"
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:60
+msgid "The password will be the one that you set while running rootstock."
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:64
+msgid "Make / writeable"
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:66
+msgid ""
+"Before we make any changes to the rootfs (which is in the next step), "
+"you'll need to remount it with write permissions. To do that, run the "
+"following command::"
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:72
+msgid "Add udev rules"
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:74
+msgid ""
+"Now that you're logged in, you must create some udev rules to allow "
+"Ubuntu Touch software to access your hardware. Run the following command,"
+" replacing [codename] with your device's codename.::"
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:79
+msgid ""
+"Now, reboot the device. If all has gone well, you will eventually see the"
+" Ubuntu Touch spinner followed by Unity 8. Your lock password is the same"
+" as you set for SSH."
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:83
+msgid ""
+"This should be a little heavier on \"What to do when something goes "
+"wrong\" content."
+msgstr ""
+
+#: ../../porting/introduction.rst:2
+msgid "Porting information"
+msgstr ""
+
+#: ../../porting/introduction.rst:5
+msgid ""
+"If you are looking for information on installing Ubuntu Touch on a "
+"supported device, or if you would like to check if your device is "
+"supported, please see `this page <https://ubports.com/page/get-ubuntu-"
+"touch>`_."
+msgstr ""
+
+#: ../../porting/introduction.rst:7
+msgid ""
+"This section will introduce you to some of the specifics of porting "
+"Ubuntu Touch to an Android device."
+msgstr ""
+
+#: ../../porting/introduction.rst:9
+msgid ""
+"Before you begin, you'll want to head over to `the Halium porting guide "
+"<http://docs.halium.org/en/latest/porting/first-steps.html>`_ and get "
+"your ``systemimage`` built without errors. Once you're at the point of "
+"installing a rootfs, you can come back here."
+msgstr ""
+
+#: ../../porting/introduction.rst:11
+msgid ""
+"Start at :doc:`building-ubports-boot` if you'd like to install the "
+"UBports Ubuntu Touch 16.04 rootfs."
+msgstr ""
+
