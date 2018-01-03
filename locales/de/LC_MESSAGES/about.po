@@ -3,23 +3,26 @@
 # This file is distributed under the same license as the UBports package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-02 20:17-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-01-03 21:45+0000\n"
+"Last-Translator: Florian Leeber <flori@bin.org.in>\n"
+"Language-Team: German <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-about/de/>\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../about/introduction.rst:2
 msgid "Introduction"
-msgstr ""
+msgstr "Einleitung"
 
 #: ../../about/introduction.rst:4
 msgid ""
@@ -27,10 +30,13 @@ msgid ""
 "an open-source (GPL if possible) mobile operating system that converges "
 "and respects your freedom."
 msgstr ""
+"Dies ist die Dokumentation für das UBports-Projekt. Unser Ziel ist es ein "
+"quelloffenes (nach Möglichkeit GPL) mobiles Betriebssystem zu schaffen "
+"welches konvergiert und Deine Freiheit respektiert."
 
 #: ../../about/introduction.rst:7
 msgid "About UBports"
-msgstr ""
+msgstr "Über UBports"
 
 #: ../../about/introduction.rst:9
 msgid ""
@@ -39,6 +45,10 @@ msgid ""
 "other in hopes of bringing the Ubuntu Touch platform to more and more "
 "devices."
 msgstr ""
+"Das UBports-Projekt wurde von Marius Gripsgard 2015 gegründet und in seinen "
+"Anfängen war es ein Platz wo Entwickler Ideen austauschen und sich "
+"gegenseitig helfen konnten, in der Hoffnung, die Ubuntu Touch Plattform auf "
+"immer mehr Geräte zu bringen."
 
 #: ../../about/introduction.rst:11
 msgid ""
@@ -465,4 +475,3 @@ msgstr ""
 #~ "mobile operating system that converges "
 #~ "and respects your freedom."
 #~ msgstr ""
-
