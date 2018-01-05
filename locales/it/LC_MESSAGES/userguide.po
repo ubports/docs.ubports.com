@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-02 20:00-0600\n"
-"PO-Revision-Date: 2018-01-04 13:43+0000\n"
-"Last-Translator: sambuccid <sambuccid@gmail.com>\n"
+"PO-Revision-Date: 2018-01-05 10:42+0000\n"
+"Last-Translator: rocco <roccofoti@gmail.com>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-userguide/it/>\n"
 "Language: it\n"
@@ -134,12 +134,10 @@ msgstr ""
 "che inizialmente stavi cercando  di eseguire."
 
 #: ../../userguide/advanceduse/adb.rst:48
-#, fuzzy
 msgid "Fairphone 2::"
 msgstr "Fairphone 2::"
 
 #: ../../userguide/advanceduse/adb.rst:52
-#, fuzzy
 msgid "Oneplus One::"
 msgstr "Oneplus One::"
 
@@ -250,7 +248,6 @@ msgid "References"
 msgstr "Riferimenti"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:34
-#, fuzzy
 msgid ""
 "askubuntu: https://askubuntu.com/questions/655321/ubuntu-touch-reverse-"
 "tethering-and-click-apps-updates"
@@ -371,7 +368,6 @@ msgid "initial source: https://wiki.ubuntu.com/Touch/ScreenRecording"
 msgstr "sorgente iniziale: https://wiki.ubuntu.com/Touch/ScreenRecording"
 
 #: ../../userguide/advanceduse/screencasting.rst:75
-#, fuzzy
 msgid "demo: https://www.youtube.com/watch?v=HYm4RUwwo5Q"
 msgstr "demo: https://www.youtube.com/watch?v=HYm4RUwwo5Q"
 
@@ -558,7 +554,6 @@ msgstr ""
 "applicazioni:"
 
 #: ../../userguide/dailyuse/libertine.rst:16
-#, fuzzy
 msgid "``libertine-container-manager create -i CONTAINER-IDENTIFIER``"
 msgstr "``libertine-container-manager create -i CONTAINER-IDENTIFIER``"
 
@@ -611,7 +606,6 @@ msgid "To list all containers created run:"
 msgstr "Per elencare tutti i contenitori creati eseguire:"
 
 #: ../../userguide/dailyuse/libertine.rst:32
-#, fuzzy
 msgid "``libertine-container-manager list``"
 msgstr "``libertine-container-manager list``"
 
@@ -620,7 +614,6 @@ msgid "Destroy a container"
 msgstr "Distruggere un contenitore"
 
 #: ../../userguide/dailyuse/libertine.rst:37
-#, fuzzy
 msgid "``libertine-container-manager destroy -i CONTAINER-IDENTIFIER``"
 msgstr "``libertine-container-manager destroy -i CONTAINER-IDENTIFIER``"
 
@@ -635,7 +628,6 @@ msgstr ""
 "installate:"
 
 #: ../../userguide/dailyuse/libertine.rst:44
-#, fuzzy
 msgid "``libertine-container-manager list-apps``"
 msgstr "``libertine-container-manager list-apps``"
 
@@ -644,7 +636,6 @@ msgid "Install a package:"
 msgstr "Installare un pacchetto:"
 
 #: ../../userguide/dailyuse/libertine.rst:48
-#, fuzzy
 msgid "``libertine-container-manage install-package -p PACKAGE-NAME``"
 msgstr "``libertine-container-manage install-package -p PACKAGE-NAME``"
 
@@ -653,7 +644,6 @@ msgid "Remove a package:"
 msgstr "Rimuovere un pacchetto:"
 
 #: ../../userguide/dailyuse/libertine.rst:52
-#, fuzzy
 msgid "``libertine-container-manager remove-package -p PACKAGE-NAME``"
 msgstr "``libertine-container-manager remove-package -p PACKAGE-NAME``"
 
@@ -668,7 +658,6 @@ msgstr ""
 "eseguire un'operazione."
 
 #: ../../userguide/dailyuse/libertine.rst:59
-#, fuzzy
 msgid "Files"
 msgstr "Files"
 
@@ -689,7 +678,6 @@ msgid "Pictures"
 msgstr "Immagini"
 
 #: ../../userguide/dailyuse/libertine.rst:66
-#, fuzzy
 msgid "Downloads"
 msgstr "Downloads"
 
@@ -698,7 +686,6 @@ msgid "Videos"
 msgstr "Video"
 
 #: ../../userguide/dailyuse/libertine.rst:70
-#, fuzzy
 msgid "Tipps"
 msgstr "Tipps"
 
@@ -736,7 +723,6 @@ msgstr ""
 "Per eseguire qualsiasi comando come root all'interno del contenitore esegui:"
 
 #: ../../userguide/dailyuse/libertine.rst:85
-#, fuzzy
 msgid "``libertine-container-manager exec -c COMMAND``"
 msgstr "``libertine-container-manager exec -c COMMAND``"
 
@@ -745,7 +731,6 @@ msgid "For example, to get a shell into your container you can run:"
 msgstr "Ad esempio, per ottenere una shell nel tuo contenitore puoi eseguire:"
 
 #: ../../userguide/dailyuse/libertine.rst:89
-#, fuzzy
 msgid "``libertine-container-manager exec -c /bin/bash``"
 msgstr "``libertine-container-manager exec -c /bin/bash``"
 
@@ -767,12 +752,10 @@ msgid "To get a shell as user ``phablet`` run:"
 msgstr "Per ottenere una shell come utente ``phablet`` esegui:"
 
 #: ../../userguide/dailyuse/libertine.rst:96
-#, fuzzy
 msgid "``DISPLAY= libertine-launch -i CONTAINER-IDENTIFIER /bin/bash``"
 msgstr "``DISPLAY= libertine-launch -i CONTAINER-IDENTIFIER /bin/bash``"
 
 #: ../../userguide/dailyuse/libertine.rst:99
-#, fuzzy
 msgid "Background"
 msgstr "Background"
 
@@ -845,12 +828,10 @@ msgstr ""
 "installazione per il tuo sistema operativo:"
 
 #: ../../userguide/install.rst:11
-#, fuzzy
 msgid "Windows: ubports-installer-<version-number>.exe"
 msgstr "Windows: ubports-installer-<version-number>.exe"
 
 #: ../../userguide/install.rst:12
-#, fuzzy
 msgid "macOS: ubports-installer-<version-number>.dmg"
 msgstr "macOS: ubports-installer-<version-number>.dmg"
 
