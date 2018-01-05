@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-02 20:00-0600\n"
-"PO-Revision-Date: 2018-01-05 07:38+0000\n"
-"Last-Translator: sambuccid <sambuccid@gmail.com>\n"
+"PO-Revision-Date: 2018-01-05 07:40+0000\n"
+"Last-Translator: rocco <roccofoti@gmail.com>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-contribute/it/>\n"
 "Language: it\n"
@@ -38,7 +38,7 @@ msgstr ""
 
 #: ../../contribute/bugreporting.rst:7
 msgid "Get the latest Ubuntu Touch"
-msgstr ""
+msgstr "Ottieni l'ultima versione di Ubuntu Touch"
 
 #: ../../contribute/bugreporting.rst:9
 msgid ""
@@ -49,6 +49,13 @@ msgid ""
 "guide. If not, do a little dance! The bug has already been fixed and you "
 "can continue using Ubuntu Touch."
 msgstr ""
+"Questo potrebbe sembrare ovvio, ma non è sempre facile. Vai a (Impostazioni -"
+" Aggiornamenti) e assicurati che il tuo dispositivo non abbia aggiornamenti "
+"disponibili su Ubuntu. In caso contrario, continua attraverso questa guida. "
+"In tal caso, aggiorna il dispositivo e prova a riprodurre il bug. Se si "
+"verifica ancora, continua attraverso questa guida. Se no, fai un po 'di "
+"danza! Il bug è già stato risolto e puoi continuare a utilizzare Ubuntu "
+"Touch."
 
 #: ../../contribute/bugreporting.rst:12
 msgid "Check if the bug is already reported"
