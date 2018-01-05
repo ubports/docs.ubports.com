@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-02 20:00-0600\n"
-"PO-Revision-Date: 2018-01-05 07:40+0000\n"
-"Last-Translator: rocco <roccofoti@gmail.com>\n"
+"PO-Revision-Date: 2018-01-05 10:49+0000\n"
+"Last-Translator: sambuccid <sambuccid@gmail.com>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-contribute/it/>\n"
 "Language: it\n"
@@ -59,13 +59,15 @@ msgstr ""
 
 #: ../../contribute/bugreporting.rst:12
 msgid "Check if the bug is already reported"
-msgstr ""
+msgstr "Controlla se il bug è già segnalato"
 
 #: ../../contribute/bugreporting.rst:14
 msgid ""
 "Open up the bug tracker for `ubuntu-touch <https://github.com/ubports"
 "/ubuntu-touch>`_."
 msgstr ""
+"Aprire il bug tracker di `ubuntu-touch <https://github.com/ubports/ubuntu-"
+"touch>`_."
 
 #: ../../contribute/bugreporting.rst:16
 msgid ""
@@ -74,6 +76,10 @@ msgid ""
 "searching, use a few words that describe what you're seeing. For example,"
 " \"Lock screen transparent\" or \"Lock screen shows activities\"."
 msgstr ""
+"Per prima cosa dovrai accertarti che il bug che stai tentando di segnalare "
+"non sia stato già segnalato. Cerca tra i bug segnalati. Durante la ricerca, "
+"usa delle parole che descrivono cosa stai vedendo. Per esempio, \"Schermata "
+"di blocco trasparente\" oppure \"Schermata di blocco mostra attività\"."
 
 #: ../../contribute/bugreporting.rst:18
 msgid ""
@@ -81,6 +87,9 @@ msgid ""
 "Reaction\" button (it looks like a smiley face) and select the +1 (thumbs"
 " up) reaction. This shows that you are also experiencing the bug."
 msgstr ""
+"Se vedi che già c'è una segnalazione, seleziona il bottone \"Add your "
+"Reaction\" (sembra uno smile) e seleziona la reaction +1 (il pollice in su). "
+"Questo mostra che anche tu hai riscontrato il bug."
 
 #: ../../contribute/bugreporting.rst:20
 msgid ""
@@ -88,6 +97,10 @@ msgid ""
 "document, please add it yourself to help the developers fix the bug. "
 "Reproduce the issue you've found"
 msgstr ""
+"Se nella segnalazione manca qualsiasi informazione specificata "
+"successivamente in questo documento, aggiungila tu stesso per aiutare gli "
+"sviluppatori a sistemare il bug.\n"
+"Riprodurre il problema trovato"
 
 #: ../../contribute/bugreporting.rst:23
 msgid ""
@@ -97,6 +110,11 @@ msgid ""
 "still occurs, continue on to the next step. `If not "
 "<https://youtu.be/nn2FB1P_Mn8?t=10s>`_..."
 msgstr ""
+"Successivamente, trova il modo esatto per riprodurre il bug trovato. "
+"Documenta dettagliatamente ogni passo che hai fatto per arrivare al "
+"problema. Quindi riavvia il telefono e ripeti questi passi di nuovo. Se il "
+"problema si ripresenta, passa al prossimo punto. `Altrimenti "
+"<https://youtu.be/nn2FB1P_Mn8?t=10s>`_..."
 
 #: ../../contribute/bugreporting.rst:26
 msgid "Getting Logs"
@@ -108,46 +126,58 @@ msgid ""
 "general, /var/log/dmesg and the output of /android/system/bin/logcat are "
 "helpful when resolving an issue. I'll show you how to get these logs."
 msgstr ""
+"Gradiamo il maggior numero di log possibili alla segnalazione di un bug. In "
+"generale, i log /var/log/dmesg e l'output di /android/system/bin/logcat sono "
+"utili per risolvere un problema. Ti varò vedere come prendere questi log."
 
 #: ../../contribute/bugreporting.rst:30
+#, fuzzy
 msgid ""
 "To get set ready, follow the steps to :doc:`set up ADB "
 "</userguide/advanceduse/adb>`."
 msgstr ""
+"Per prepararsi, seguire i passi su come :doc:`impostare ADB "
+"</userguide/advanceduse/adb>`."
 
 #: ../../contribute/bugreporting.rst:32
 msgid "Now, you can get the two most important logs."
-msgstr ""
+msgstr "Adesso sei in grado di prendere i due log più importanti."
 
 #: ../../contribute/bugreporting.rst:35
 msgid "dmesg"
-msgstr ""
+msgstr "dmesg"
 
 #: ../../contribute/bugreporting.rst:37
 msgid ""
 "The **dmesg** (*display message* or *driver message*) command displays "
 "debug messages from the kernel."
 msgstr ""
+"Il comando **dmesg** (*display message* o *driver message*) mostra i "
+"messaggi di debug dal kernel."
 
 #: ../../contribute/bugreporting.rst:39 ../../contribute/bugreporting.rst:52
 msgid ""
 "Using the steps you documented earlier, reproduce the issue you're "
 "reporting"
 msgstr ""
+"Usando i passi che hai documentato prima, riproduci il problema che stai "
+"segnalando"
 
 #: ../../contribute/bugreporting.rst:40 ../../contribute/bugreporting.rst:50
 msgid "cd to a folder where you're able to write the log"
-msgstr ""
+msgstr "cd fino a una cartella dove sei hai i permessi per scrivere il log"
 
 #: ../../contribute/bugreporting.rst:41
 msgid "Run the command: `adb shell \"dmesg\" > \"UTdmesg.txt\"`"
-msgstr ""
+msgstr "Avvia il comando: `adb shell \"dmesg\" > \"UTdmesg.txt\"`"
 
 #: ../../contribute/bugreporting.rst:43
 msgid ""
 "This log should now be located at UTdmesg.txt under your working "
 "directory, ready for uploading later."
 msgstr ""
+"Questo log dovrebbe essere nel file UTdmesg.txt sotto la cartella di lavoro "
+"corrente, pronto per il successivo caricamento."
 
 #: ../../contribute/bugreporting.rst:46
 msgid "logcat"
@@ -158,62 +188,77 @@ msgid ""
 "The **logcat** (*log concatenator*) command displays debug information "
 "from various parts of the underlying android system."
 msgstr ""
+"Il comando **logcat** (*log concatenator*) mostra le informazioni di debug "
+"da molte parti del sistema android sottostate."
 
 #: ../../contribute/bugreporting.rst:51
 msgid ""
 "Run the command: `adb shell \"/android/system/bin/logcat -d\" > "
 "\"UTlogcat.txt\"`"
 msgstr ""
+"Avviare il comando: `adb shell \"/android/system/bin/logcat -d\" > \""
+"UTlogcat.txt\"`"
 
 #: ../../contribute/bugreporting.rst:54
 msgid ""
 "This log will be located at UTlogcat.txt in your current working "
 "directory, so you'll be able to upload it later."
 msgstr ""
+"Questo log sarà nel file UTlogcat.txt nella tua cartella di lavoro corrente, "
+"quindi portai caricarlo successivamente."
 
 #: ../../contribute/bugreporting.rst:57
+#, fuzzy
 msgid "Making the bug report"
-msgstr ""
+msgstr "Fare la segnalazione del bug"
 
 #: ../../contribute/bugreporting.rst:59
 msgid "Now it's time for what you've been waiting for, the bug report itself!"
-msgstr ""
+msgstr "Ora è il momento che stavi aspettanto, la segnalazione stessa!"
 
 #: ../../contribute/bugreporting.rst:61
 msgid ""
 "First, pull up the `bug tracker <https://github.com/ubports/ubuntu-"
 "touch>`_ and click \"New Issue\". Log in to GitHub if you haven't yet."
 msgstr ""
+"Per prima cosa apri il `bug tracker <https://github.com/ubports/ubuntu-"
+"touch>`_ e clicca su \"New Issue\". Entra su GitHub se ancora non lo hai "
+"fatto."
 
 #: ../../contribute/bugreporting.rst:63
 msgid ""
 "Next, you'll need to name your bug. Pick a name that says what's "
 "happening, but don't be too wordy. Four to eight words should be enough."
 msgstr ""
+"Poi hai bisogno di dare un nome al tuo bug. Scegli un nome che spiega cosa "
+"succede ma che sia conciso. Dovrebbero bastare dalle 4 alle 8 parole."
 
 #: ../../contribute/bugreporting.rst:65
 msgid "Now, write your bug report. A good bug report includes the following:"
-msgstr ""
+msgstr "Adesso scrivi la tua segnalazione. Una buona segnalazione contiene:"
 
 #: ../../contribute/bugreporting.rst:67
 msgid "What happened: A synopsis of the erroneous behavior"
-msgstr ""
+msgstr "Cosa sta succedendo: Un riassunto del comportamento errato"
 
 #: ../../contribute/bugreporting.rst:68
 msgid ""
 "What I expected to happen: A synopsis of what should have happened, if "
 "there wasn't an error"
 msgstr ""
+"Cosa mi aspetto che succeda: Un riassunto di cosa dovrebbe accadere se non "
+"ci forrero errori"
 
 #: ../../contribute/bugreporting.rst:69
 msgid "Steps to reproduce: You wrote these down earlier, right?"
-msgstr ""
+msgstr "Passi per riprodurlo: Li avevi scritti prima giuso?"
 
 #: ../../contribute/bugreporting.rst:70
 msgid ""
 "Logs: Attach your logs by clicking and dragging them into your GitHub "
 "issue."
 msgstr ""
+"I Log: Allega i tuoi log trascinandoli direttamente dentro la segnalazione."
 
 #: ../../contribute/bugreporting.rst:71
 msgid ""
