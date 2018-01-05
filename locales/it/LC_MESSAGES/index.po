@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-02 20:00-0600\n"
-"PO-Revision-Date: 2018-01-04 08:28+0000\n"
-"Last-Translator: sambuccid <sambuccid@gmail.com>\n"
+"PO-Revision-Date: 2018-01-05 10:43+0000\n"
+"Last-Translator: rocco <roccofoti@gmail.com>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-index/it/>\n"
 "Language: it\n"
@@ -29,7 +29,6 @@ msgid "Welcome to the official documentation of the UBports project!"
 msgstr "Benvenuto nella documentazione ufficiale del progetto UBports!"
 
 #: ../../index.rst:6
-#, fuzzy
 msgid ""
 "UBports develops the mobile phone operating system Ubuntu Touch. Ubuntu "
 "Touch is a mobile operating system focused on ease of use, privacy, and "
@@ -40,7 +39,6 @@ msgstr ""
 "sulla convergenza."
 
 #: ../../index.rst:8
-#, fuzzy
 msgid ""
 "On this website you find instructions how to install Ubuntu Touch on your"
 " mobile phone, user guides and detailed documentation on all system "
@@ -60,7 +58,7 @@ msgstr ""
 
 #: ../../index.rst:13
 msgid "About"
-msgstr ""
+msgstr "A proposito"
 
 #: ../../index.rst:22
 msgid "User Guide"
@@ -80,4 +78,4 @@ msgstr "Piattaforma"
 
 #: ../../index.rst:58
 msgid "Porting"
-msgstr ""
+msgstr "Trasporto"
