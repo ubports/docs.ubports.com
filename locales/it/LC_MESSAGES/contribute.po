@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-02 20:00-0600\n"
-"PO-Revision-Date: 2018-01-05 13:10+0000\n"
-"Last-Translator: rocco <roccofoti@gmail.com>\n"
+"PO-Revision-Date: 2018-01-05 13:17+0000\n"
+"Last-Translator: Stefano Melchior <stefano.melchior@me.com>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-contribute/it/>\n"
 "Language: it\n"
@@ -165,7 +165,7 @@ msgstr ""
 
 #: ../../contribute/bugreporting.rst:40 ../../contribute/bugreporting.rst:50
 msgid "cd to a folder where you're able to write the log"
-msgstr "spostati nella cartella in cui sei in grado di scrivere il log"
+msgstr "spostati in una cartella in cui sei in grado di scrivere il log"
 
 #: ../../contribute/bugreporting.rst:41
 msgid "Run the command: `adb shell \"dmesg\" > \"UTdmesg.txt\"`"
@@ -806,24 +806,34 @@ msgid ""
 "suggestions without being registered. If you want to save your "
 "translations, you must be logged in."
 msgstr ""
+"Puoi accedere `UBports Weblate <https://translate.ubports.com/>`_, clicca "
+"sul bottone di \"Dashboard\" (cruscotto), vai nel progetto, inizia con "
+"suggerire anonimamente senza essere registrato. Se vuoi salvare le tue "
+"traduzioni, devi entrare nel sito."
 
 #: ../../contribute/translations.rst:31
 msgid ""
 "For that, go to UBports Weblate and click on the \"Register\" button. "
 "Once in the \"Registration\" page, you'll find two options:"
 msgstr ""
+"Per ciò, vai su UBports Weblate e clicca sul bottone \"Registrati\". Quindi "
+"nella pagina di \"Registrazione\", avrai due opzioni:"
 
 #: ../../contribute/translations.rst:33
 msgid ""
 "Register using a valid email address, a username, and your full name. "
 "You'll need to resolve an easy control question too."
 msgstr ""
+"Registrarti con un indirizzo di posta valido, un nome utente e il tuo nome "
+"per esteso. Dovrai pure passare una semplice domanda di controllo di accessi."
 
 #: ../../contribute/translations.rst:34
 msgid ""
 "Register using a third party registration. Currently the system supports "
 "accounts from openSUSE, GitHub, Fedora, and Ubuntu."
 msgstr ""
+"Registrarti usando una registrazione di terze parti. L'attuale sistema "
+"supporta account di openSUSE, GitHub, Fedora, e Ubuntu."
 
 #: ../../contribute/translations.rst:36
 msgid ""
