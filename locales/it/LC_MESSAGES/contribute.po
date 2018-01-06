@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-02 20:00-0600\n"
-"PO-Revision-Date: 2018-01-05 21:06+0000\n"
-"Last-Translator: Mike <miguel2000@livecom.it>\n"
+"PO-Revision-Date: 2018-01-06 21:30+0000\n"
+"Last-Translator: Stefano Melchior <stefano.melchior@me.com>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-contribute/it/>\n"
 "Language: it\n"
@@ -348,11 +348,10 @@ msgstr ""
 "nella parte sinistra della pagina."
 
 #: ../../contribute/documentation.rst:22
-#, fuzzy
 msgid "Titles should be sentence cased rather than Title Cased. For example::"
 msgstr ""
-"I titoli dovrebbero essere affermazioni in formato titolo piuttosto che dei "
-"meri formati titolo. Ad esempio::"
+"I titoli dovrebbero essere frasi in formato titolo, piuttosto che dei meri "
+"formati titolo. Ad esempio::"
 
 #: ../../contribute/documentation.rst:31
 msgid ""
@@ -793,11 +792,11 @@ msgstr ""
 
 #: ../../contribute/translations.rst:24
 msgid "How-To"
-msgstr ""
+msgstr "How-To"
 
 #: ../../contribute/translations.rst:27
 msgid "UBports Weblate"
-msgstr ""
+msgstr "UBports Weblate"
 
 #: ../../contribute/translations.rst:29
 msgid ""
@@ -840,44 +839,52 @@ msgid ""
 "Once you're logged in, the site is self-explanatory and you'll find there"
 " all the options and customization you can do."
 msgstr ""
+"Una volta entrato, il sito non ha bisogno di spiegazioni e vi potrai trovare "
+"tutte le opzioni e le personalizzazioni possibili."
 
 #: ../../contribute/translations.rst:38
 msgid ""
 "Now, get on with it. The first step is to search if your language already"
 " exists in the project of your choice."
 msgstr ""
+"Ora, vai avanti. Il primo passo è verificare che ci sia la tua lingua per il "
+"progetto che hai scelto."
 
 #: ../../contribute/translations.rst:40
-#, fuzzy
 msgid ""
 "If your language is not available for a specific project, you can add it "
 "yourself."
 msgstr ""
 "Se la tua lingua non è disponibile per un progetto specifico, la puoi "
-"aggiungere."
+"aggiungere da solo."
 
 #: ../../contribute/translations.rst:42
 msgid ""
 "You decide how much time you can put into translation. From minutes to "
 "hours, everything counts."
 msgstr ""
+"Decidi tu quanto tempo dedicare alle traduzioni. Da minuti a ore, tutto fa "
+"testo."
 
 #: ../../contribute/translations.rst:45
-#, fuzzy
 msgid ".po file editor"
-msgstr "editor per file .po"
+msgstr "editor di file .po"
 
 #: ../../contribute/translations.rst:47
 msgid ""
 "As was said up above, you need a file editor of your choice and a GitHub "
 "account to translate .po files directly."
 msgstr ""
+"Come già detto in precedenza, hai bisogno di un editor di testo a tua scelta "
+"e di un account di GitHub per tradurre i file .po."
 
 #: ../../contribute/translations.rst:49
 msgid ""
 "There are online gettext .po editors and those you can install in your "
 "computer."
 msgstr ""
+"Ci sono degli editor .po gettext in linea o quelli che puoi installare sul "
+"tuo computer."
 
 #: ../../contribute/translations.rst:51
 msgid ""
@@ -885,16 +892,19 @@ msgid ""
 "software only. There are too many plain text editors and tools to help "
 "you translate .po files to put down a list here."
 msgstr ""
+"Puoi scegliere qualsiasi editor tu voglia, ma preferiremmo lavorare solo con "
+"software libero. Ci sono troppi editor di testo e strumenti che ti aiutano a "
+"tradurre file .po per fare una lista esaustiva qui sotto."
 
 #: ../../contribute/translations.rst:53
 msgid ""
 "If you want to work with .po files directly you know what you're doing "
 "for sure."
-msgstr ""
+msgstr "Se vuoi lavorare direttamente con file .po, sicuro che sai come fare."
 
 #: ../../contribute/translations.rst:56
 msgid "Translation Team Communication"
-msgstr ""
+msgstr "Comunicazione con il gruppo di traduzioni"
 
 #: ../../contribute/translations.rst:58
 msgid ""
@@ -902,10 +912,13 @@ msgid ""
 "<https://forums.ubports.com/category/39/translations>`_ that UBports "
 "provides for this task."
 msgstr ""
+"La maniera diretta e raccomandata è usare `il forum della categoria "
+"<https://forums.ubports.com/category/39/translations>`_ che UBports fornisce "
+"a questo scopo."
 
 #: ../../contribute/translations.rst:60
 msgid "To use it you need to register, or login if you're registered already."
-msgstr ""
+msgstr "Per usarlo, devi registrarti, o accedervi se ti eri già registrato."
 
 #: ../../contribute/translations.rst:62
 msgid ""
@@ -913,22 +926,29 @@ msgid ""
 "brackets in the \"Enter your topic title here\" field. For example, "
 "``[Spanish] How to translate whatever?``"
 msgstr ""
+"L'unico requisito è di iniziare il tuo post precisando la tua lingua tra "
+"parentesi nel campo \"Inserisci qui il titolo del tuo tema\". Ad esempio, "
+"``[Spagnolo] Come tradurre whatever?``"
 
 #: ../../contribute/translations.rst:64
 msgid ""
 "Just for your information, some projects are using Telegram groups too, "
 "and some teams are still using the Ubuntu Launchpad framework."
 msgstr ""
+"Per tua informazione, alcuni progetti usano pure un gruppo di Telegram, e "
+"alcuni gruppi usano ancora l struttura del Launchpad di Ubuntu."
 
 #: ../../contribute/translations.rst:66
 msgid ""
 "In your interactions with your team you'll find the best way to "
 "coordinate your translations."
 msgstr ""
+"Nelle tue interazioni con il gruppo, troverai il modo migliore per "
+"coordinare le tue traduzioni."
 
 #: ../../contribute/translations.rst:69
 msgid "License"
-msgstr ""
+msgstr "Licenza"
 
 #: ../../contribute/translations.rst:71
 msgid ""
@@ -937,7 +957,11 @@ msgid ""
 "(CC BY-SA 4.0) <https://creativecommons.org/licenses/by-sa/4.0/>`_ "
 "license that you explicitly accept by contributing to the project."
 msgstr ""
+"Tutte i progetti di traduzione, così come tutti i tuoi contributi a questo "
+"progetto sono sotto una licenza`Creative Commons Attribution-ShareAlike 4.0 "
+"International (CC BY-SA 4.0) <https://creativecommons.org/licenses/by-"
+"sa/4.0/>`_ che esplicitamente accetti per contribuire al progetto."
 
 #: ../../contribute/translations.rst:73
 msgid "Go to that link to learn what this exactly means."
-msgstr ""
+msgstr "Vai a quel collegamento per sapere ciò che significa esattamente."
