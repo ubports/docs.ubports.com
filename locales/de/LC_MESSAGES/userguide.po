@@ -3,23 +3,26 @@
 # This file is distributed under the same license as the UBports package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-02 20:00-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-01-03 23:12+0000\n"
+"Last-Translator: Alois Nebel <kunze.freyburg@freenet.de>\n"
+"Language-Team: German <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-userguide/de/>\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../userguide/advanceduse/adb.rst:2
 msgid "Shell access via adb"
-msgstr ""
+msgstr "Shell-Zugriff über adb"
 
 #: ../../userguide/advanceduse/adb.rst:4
 msgid ""
@@ -27,64 +30,73 @@ msgid ""
 "shell from your PC. This is useful for debugging or more advanced shell "
 "usage."
 msgstr ""
+"Du kannst Dein UBports-Gerät in den Entwicklermodus versetzen und vom "
+"Desktop-PC auf eine Bash-Shell zugreifen."
 
 #: ../../userguide/advanceduse/adb.rst:8
 msgid "Install ADB"
-msgstr ""
+msgstr "ADB-Installation"
 
 #: ../../userguide/advanceduse/adb.rst:10
 msgid "First, you'll need ADB installed on your computer."
-msgstr ""
+msgstr "Zuerst muss ADB auf dem PC installiert werden."
 
 #: ../../userguide/advanceduse/adb.rst:12
 msgid "On Ubuntu::"
-msgstr ""
+msgstr "Unter Ubuntu::"
 
 #: ../../userguide/advanceduse/adb.rst:16
 msgid "On Fedora::"
-msgstr ""
+msgstr "Unter Fedora::"
 
 #: ../../userguide/advanceduse/adb.rst:20
 msgid "And on MacOS with `Homebrew <https://brew.sh>`_::"
-msgstr ""
+msgstr "Und unter MacOS mit `Homebrew <https://brew.sh>`_::"
 
 #: ../../userguide/advanceduse/adb.rst:24
 msgid ""
 "For Windows, grab the command-line tools only package from `here "
 "<https://developer.android.com/studio/index.html#downloads>`_."
 msgstr ""
+"Für Windows `hier "
+"<https://developer.android.com/studio/index.html#downloads>`_ nur die "
+"command-line-tools herunterladen."
 
 #: ../../userguide/advanceduse/adb.rst:27
 msgid "Enable developer mode"
-msgstr ""
+msgstr "Aktivierung des Entwicklermodus"
 
 #: ../../userguide/advanceduse/adb.rst:29
 msgid "Next, you'll need to turn on Developer Mode."
-msgstr ""
+msgstr "Als Nächstes ist es nötig, den Entwicklermodus zu aktivieren."
 
 #: ../../userguide/advanceduse/adb.rst:31
 msgid "Reboot your device"
-msgstr ""
+msgstr "Gerät neustarten"
 
 #: ../../userguide/advanceduse/adb.rst:32
 msgid ""
 "Place your device into developer mode (Settings - About - Developer Mode "
 "- check the box to turn it on)"
 msgstr ""
+"Gerät in den Entwicklermodus versetzen (Systemeinstellungen - Über - "
+"Entwicklermodus - Auswahlfeld aktivieren)"
 
 #: ../../userguide/advanceduse/adb.rst:33
 msgid "Plug the device into a computer with adb installed"
-msgstr ""
+msgstr "Das Gerät mit einem PC verbinden, auf dem adb installiert ist"
 
 #: ../../userguide/advanceduse/adb.rst:34
 msgid "Open a terminal and run ``adb devices``."
-msgstr ""
+msgstr "Konsole öffnen und ``adb devices`` ausführen."
 
 #: ../../userguide/advanceduse/adb.rst:37
 msgid ""
 "When you're done using the shell, it's a good idea to turn Developer Mode"
 " off again."
 msgstr ""
+"Wenn die Shell nicht mehr verwendet wird, sollte der Entwicklermodus wieder "
+"deaktiviert werden."
 
 #: ../../userguide/advanceduse/adb.rst:39
 msgid ""
@@ -92,10 +104,13 @@ msgid ""
 " devices attached\" and a blank line), you are able to use ADB "
 "successfully. If not, continue to the next section."
 msgstr ""
+"Wenn sich ein Gerät in der Liste befindet (der Befehl gibt nicht \"List of "
+"devices attached\" und eine leere Zeile aus), kann ADB genutzt werden. Wenn "
+"nicht, folge den Anweisungen im nächsten Abschnitt."
 
 #: ../../userguide/advanceduse/adb.rst:42
 msgid "Add hardware IDs"
-msgstr ""
+msgstr "Hinzufügen von Hardware-IDs"
 
 #: ../../userguide/advanceduse/adb.rst:44
 msgid ""
@@ -103,21 +118,27 @@ msgid ""
 " not talk to. You can manually add the devices that it does not know how "
 "to talk to."
 msgstr ""
+"ADB erkennt nicht immer die Geräte am PC, die angesprochen werden sollen. Du "
+"kannst Geräte, die nicht erkannt werden konnten, manuell hinzufügen."
 
 #: ../../userguide/advanceduse/adb.rst:46
+#, fuzzy
 msgid ""
 "Just run the command for your selected device if it's below. Then, run "
 "``adb kill-server`` followed by the command you were initially trying to "
 "run."
 msgstr ""
+"Einfach den Befehl für das ausgewählte Gerät ausführen, falls es in der "
+"folgenden Liste aufgeführt ist. Nach dem Befehl ``adb kill-server`` kann "
+"dann der ursprünglich gewünschte Befehl ausgeführt werden."
 
 #: ../../userguide/advanceduse/adb.rst:48
 msgid "Fairphone 2::"
-msgstr ""
+msgstr "Fairphone 2::"
 
 #: ../../userguide/advanceduse/adb.rst:52
 msgid "Oneplus One::"
-msgstr ""
+msgstr "Oneplus One::"
 
 #: ../../userguide/advanceduse/index.rst:2
 msgid "Advanced use"
@@ -750,4 +771,3 @@ msgid ""
 "the partition that holds their hardware IDs and can no longer connect to "
 "Wi-Fi or cellular networks."
 msgstr ""
-
