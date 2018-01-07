@@ -1,5 +1,5 @@
 Creating a Webapp
-===============
+========================
 Webapps are small applications, that load content in a browser. This tutorial for ubuntu will just create a starter for a webpage, that can be displayed easily in a mobile device.
 
 
