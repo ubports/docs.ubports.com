@@ -13,7 +13,6 @@ Download the following zip-file and unzip
     https://github.com/Winael/ubuntu/blob/master/ubuntuphone/webapps/Reboot/alternate-webapp-generator.zip
 
 Make the app-creator executable:
-
 ::
     chmod +x /path/to/alternate-webapp-generator.sh
 
@@ -45,5 +44,5 @@ In this folder you will find a file called: namespace.app_name_app_version_all.c
 
 Upload it to OpenStore
 ---------
-This package can now be uploaded to  _`OpenStore <https://open.uappexplorer.com/submit>`_. Just create an accound an follow the instructions on the screen.
+This package can now be uploaded to  _OpenStore <https://open.uappexplorer.com/submit>_. Just create an accound an follow the instructions on the screen.
 
