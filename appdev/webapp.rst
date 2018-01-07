@@ -4,7 +4,7 @@ Webapps are small applications, that load content in a browser. This tutorial fo
 
 
 alternate-webapp-generator
----------
+----------
 The alternate-webapp-generator will download all the stuff you need for a webapp and will add the the url, icon and a lot of meta-information to the app.
 In the end a .click package will be created, which can be uploaded to the OpenStore
 
@@ -43,6 +43,6 @@ This should now create a folder in the same directory which is named after the a
 In this folder you will find a file called: namespace.app_name_app_version_all.click
 
 Upload it to OpenStore
----------
+----------
 This package can now be uploaded to  `OpenStore <https://open.uappexplorer.com/submit>`__. Just create an account an follow the instructions on the screen.
 
