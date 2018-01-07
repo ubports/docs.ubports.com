@@ -15,7 +15,7 @@ These rules govern *how* you should write your documentation to avoid problems w
 Title
 ^^^^^
 
-All pages must have a document title. This title is underlined with equals signs. It is shown on the table of contents (to the left) and at the top of the page.
+All pages must have a document title. This title is underlined with equals signs, it is shown on the table of contents (to the left) and at the top of the page.
 
 Titles should be sentence cased rather than Title Cased. For example::
 
