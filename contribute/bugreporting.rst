@@ -18,7 +18,9 @@ First, you'll need to make sure that the bug you're trying to report hasn't been
 If you find that a bug report already exists, select the "Add your Reaction" button (it looks like a smiley face) and select the +1 (thumbs up) reaction. This shows that you are also experiencing the bug.
 
 If the report is missing any of the information specified later in this document, please add it yourself to help the developers fix the bug.
+
 Reproduce the issue you've found
+--------------------------------
 
 Next, find out exactly how to recreate the bug that you've found. Document the exact steps that you took to find the problem in detail. Then, reboot your phone and perform those steps again. If the problem still occurs, continue on to the next step. `If not <https://youtu.be/nn2FB1P_Mn8?t=10s>`_...
 
@@ -56,7 +58,7 @@ This log will be located at UTlogcat.txt in your current working directory, so y
 Making the bug report
 ---------------------
 
-Now it's time for what you've been waiting for, the bug report itself!
+Now it's time for what you've been waiting for, the bug report itself! Bug reports need to be filed in English. 
 
 First, pull up the `bug tracker <https://github.com/ubports/ubuntu-touch>`_ and click "New Issue". Log in to GitHub if you haven't yet.
 
