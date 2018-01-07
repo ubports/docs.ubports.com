@@ -44,5 +44,5 @@ In this folder you will find a file called: namespace.app_name_app_version_all.c
 
 Upload it to OpenStore
 ---------
-This package can now be uploaded to  _OpenStore <https://open.uappexplorer.com/submit>_. Just create an accound an follow the instructions on the screen.
+This package can now be uploaded to  `OpenStore <https://open.uappexplorer.com/submit>`__. Just create an accound an follow the instructions on the screen.
 
