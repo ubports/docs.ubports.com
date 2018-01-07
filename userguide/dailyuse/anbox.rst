@@ -14,11 +14,11 @@ Supported devices
 
 Make sure your device is supported:
 
-- Meizu Pro 5 (*turbo*)
-- BQ M10 HD (*cooler*)
-- BQ M10 FHD (*frieza*)
+Meizu Pro 5 (codename: *turbo*, name of the boot partition: *bootimg*)
+BQ M10 HD (codename: *cooler*, name of the boot partition: *boot*)
+BQ M10 FHD (codename: *frieza*, name of the boot partition: *boot*)
 
-You will need the device codename (the italic part in the brackets) for the installation.
+You will need the device codename and the name of your boot partition for the installation.
 
 How to install
 --------------
@@ -26,13 +26,14 @@ How to install
 .. warning::
     Because this feature is in such an early stage of development, the installation is only recommended for experienced users.
 
-- Install the 16.04/devel channel on your supported device
-- Open a terminal and run ``export CODENAME="turbo"``, but replace the part between the quotes with your devices codename. See the above list.
-- Activate developer mode on your device, connect it to your computer and run the following commands::
+- :doc:`Install <../install>` the 16.04/devel channel on your supported device
+- Open a terminal and run ``export CODENAME="turbo" && export PARTITIONNAME="bootimg"``, but replace the part between the quotes respectively with the codename and name of the boot partition for your device. See the above list.
+- Activate developer mode on your device.
+- Connect the device to your computer computer and run the following commands::
 
     adb shell sudo reboot -f bootloader
     wget http://cdimage.ubports.com/anbox-images/anbox-boot-$CODENAME.img
-    sudo fastboot flash boot anbox-boot-$CODENAME.img
+    sudo fastboot $PARTITIONNAME boot anbox-boot-$CODENAME.img
     sudo fastboot reboot
     rm anbox-boot-$CODENAME.img
 
@@ -46,3 +47,8 @@ How to install
     exit
 
 - Done! Select "Anbox" in the apps scope to use android applications. You might have to refresh the apps scope (pull down from the center of the screen and release) for the app to show up.
+
+Reporting bugs
+--------------
+
+Please :doc:`report any bugs </contribute/bugreporting>` you come accross. Bugs with Ubuntu Touch 16.04 are reported in `the normal Ubuntu Touch tracker <https://github.com/ubports/ubuntu-touch/issues>`_ and issues with anbox are reported on `our downstream fork <https://github.com/ubports/anbox/issues>`_. Thank you!
