@@ -50,7 +50,7 @@ logcat
 The **logcat** (*log concatenator*) command displays debug information from various parts of the underlying android system.
 
 #. cd to a folder where you're able to write the log
-#. Run the command: `adb shell "/android/system/bin/logcat -d" > "UTlogcat.txt"`
+#. Run the command: `adb shell /android/system/bin/logcat -d > "UTlogcat.txt"`
 #. Using the steps you documented earlier, reproduce the issue you're reporting
 
 This log will be located at UTlogcat.txt in your current working directory, so you'll be able to upload it later.
