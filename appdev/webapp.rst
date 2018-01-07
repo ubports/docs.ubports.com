@@ -13,17 +13,17 @@ In the end a .click package will be created, which can be uploaded to the OpenSt
 Download the following zip-file and unzip
 ::
 
-    https://github.com/Winael/ubuntu/blob/master/ubuntuphone/webapps/Reboot/alternate-webapp-generator.zip
+    wget https://raw.githubusercontent.com/Winael/ubuntu/master/ubuntuphone/webapps/Reboot/alternate-webapp-generator.zip
 
 Make the app-creator executable:
 ::
 
     chmod +x /path/to/alternate-webapp-generator.sh
 
-Now we can start and edit the config.cfg.
+In the zip package a file named config.cfg is included. We will have to edit this file now:
 ::
 
-    # config.cfg
+    #config.cfg
 
     export namespace="namespace"
     
@@ -46,10 +46,10 @@ Lets build the webapp now
     ./alternate-webapp-generator.sh 
 
 This should now create a folder in the same directory which is named after the app_name attribute from the config.cfg
-In this folder you will find a file called: namespace.app_name_app_version_all.click
+In this folder you will find a file called: app_name.namespace_app_version_all.click
 
 Upload it to OpenStore
 ----------------------
 
-This package can now be uploaded to  `OpenStore <https://open.uappexplorer.com/submit>`__. Just create an account an follow the instructions on the screen.
+This package can now be uploaded to  `OpenStore <https://open.uappexplorer.com/submit>`__. Just login with your github or ubuntuone account and follow the instructions on the screen.
 
