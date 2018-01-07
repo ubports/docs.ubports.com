@@ -15,9 +15,7 @@ These rules govern *how* you should write your documentation to avoid problems w
 Title
 ^^^^^
 
-All pages must have a document title. This title is shown on the table of contents (to the left) and at the top of the page.
-
-The title, underlined with the Equals sign, is shown in the table of contents to the left of the page.
+All pages must have a document title. This title is underlined with equals signs. It is shown on the table of contents (to the left) and at the top of the page.
 
 Titles should be sentence cased rather than Title Cased. For example::
 
@@ -69,7 +67,7 @@ Read the Docs and GitHub make it fairly simple to contribute to this documentati
 #. Make your changes to the document. Remember to write in ReStructuredText!
 #. Propose your changes as a Pull Request.
 
-If there are any errors with your proposed changes, the documentation team will ask you make some changes and resubmit. This is as simple as editing the file on GitHub from your fork of the repository.
+If there are any errors with your proposed changes, the documentation team will ask you to make some changes and resubmit. This is as simple as editing the file on GitHub from your fork of the repository.
 
 Manually forking the repository
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
