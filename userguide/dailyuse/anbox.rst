@@ -33,7 +33,7 @@ How to install
 
     adb shell sudo reboot -f bootloader
     wget http://cdimage.ubports.com/anbox-images/anbox-boot-$CODENAME.img
-    sudo fastboot $PARTITIONNAME boot anbox-boot-$CODENAME.img
+    sudo fastboot flash $PARTITIONNAME anbox-boot-$CODENAME.img
     sudo fastboot reboot
     rm anbox-boot-$CODENAME.img
 
