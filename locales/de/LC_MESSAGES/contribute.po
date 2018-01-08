@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-02 20:00-0600\n"
-"PO-Revision-Date: 2018-01-08 22:13+0000\n"
+"PO-Revision-Date: 2018-01-08 22:16+0000\n"
 "Last-Translator: Peter Nerlich <peter.nerlich+ubports@googlemail.com>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-contribute/de/>\n"
@@ -86,14 +86,16 @@ msgstr ""
 "Sperrbildschirm zeigt Aktivitäten\"."
 
 #: ../../contribute/bugreporting.rst:18
+#, fuzzy
 msgid ""
 "If you find that a bug report already exists, select the \"Add your "
 "Reaction\" button (it looks like a smiley face) and select the +1 (thumbs"
 " up) reaction. This shows that you are also experiencing the bug."
 msgstr ""
-"Falls bereits ein passender Fehlerbericht existiert, wählt man die \"Add "
-"your Reaction\"-Schaltfläche (sieht aus wie ein Smiley) und klickt auf +1 ("
-"Daumen hoch). Damit zeigt man, dass man vom Fehler ebenfalls betroffen ist."
+"Falls bereits ein passender Fehlerbericht existiert, sollte die \"Add your "
+"Reaction\"-Schaltfläche (sieht aus wie ein Smiley) betätigt und +1 (Daumen "
+"hoch) ausgewählt werden, um zu zeigen, dass man vom Fehler ebenfalls "
+"betroffen ist."
 
 #: ../../contribute/bugreporting.rst:20
 msgid ""
