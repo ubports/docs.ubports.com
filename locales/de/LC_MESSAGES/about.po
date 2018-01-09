@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-02 20:17-0600\n"
-"PO-Revision-Date: 2018-01-05 20:22+0000\n"
-"Last-Translator: JBBgameich <jbb.mail@gmx.de>\n"
+"PO-Revision-Date: 2018-01-09 21:17+0000\n"
+"Last-Translator: Jonatan Hatakeyama Zeidler <jonatan_zeidler@gmx.de>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-about/de/>\n"
 "Language: de\n"
@@ -77,18 +77,29 @@ msgid ""
 "`Read the Docs <https://readthedocs.io>`_. You can start contributing by "
 "checking out the :doc:`Documentation intro </contribute/documentation>`."
 msgstr ""
+"Diese Dokumentation wird stetig verbessert, dank vieler Mitglieder der "
+"Gemeinschaft. Sie wird in ReStructuredText geschrieben und durch `Sphinx "
+"<http://www.sphinx-doc.org/en/stable/>`_, `ReCommonMark "
+"<http://recommonmark.readthedocs.io/en/latest/>`_ und `Read the Docs "
+"<https://readthedocs.io>`_ in diese lesbare Form konvertiert. Auch Sie "
+"können mitwirken und bei der :doc:`Dokumentationseinführung "
+"</contribute/documentation>` beginnen."
 
 #: ../../about/introduction.rst:18
+#, fuzzy
 msgid ""
 "All documents are licensed under the Creative Commons Attribution "
 "ShareAlike 4.0 (`CC-BY-SA 4.0 <https://creativecommons.org/licenses/by-"
 "sa/4.0/>`_) license. Please give attribution to \"The UBports "
 "Community\"."
 msgstr ""
+"Alle Dokumente stehen unter der Lizenz Creative Commons Attribution "
+"ShareAlike 4.0 (`CC-BY-SA 4.0 <https://creativecommons.org/licenses/by-"
+"sa/4.0/>`_). Sie sind der UBports-Gemeinschaft zuzurechnen."
 
 #: ../../about/introduction.rst:21
 msgid "Attribution"
-msgstr ""
+msgstr "Zurechnung"
 
 #: ../../about/introduction.rst:23
 msgid ""
@@ -96,26 +107,33 @@ msgid ""
 "Documentation <http://docs.godotengine.org/en/stable/>`_, attribution to "
 "Juan Linietsky, Ariel Manzur and the Godot community."
 msgstr ""
+"Diese Dokumentation wurde stark an die `Godot Engine-Dokumentation "
+"<http://docs.godotengine.org/en/stable/>`_ angelehnt, welche Juan Linietsky, "
+"Ariel Manzur und der Godot-Gemeinschaft zuzurechnen ist."
 
 #: ../../about/process/index.rst:2
 msgid "Processes"
-msgstr ""
+msgstr "Prozesse"
 
 #: ../../about/process/index.rst:4
 msgid ""
 "This section of the documentation details standardized processes for "
 "different teams."
 msgstr ""
+"Dieser Abschnitt der Dokumentation beschreibt die standardisierten Prozesse "
+"der verschiedenen Teams im Detail."
 
 #: ../../about/process/index.rst:7
 msgid ""
 "The process definitions are still a work in progress and need to be "
 "completed by the respective teams."
 msgstr ""
+"Die Prozessdefinitionen sind noch in Arbeit und sollen durch die jeweiligen "
+"Teams vervollständigt werden."
 
 #: ../../about/process/issue-tracking.rst:2
 msgid "Issue-Tracking Guidelines"
-msgstr ""
+msgstr "Richtlinien Problemverfolgung"
 
 #: ../../about/process/issue-tracking.rst:4
 msgid ""
@@ -123,10 +141,13 @@ msgid ""
 "in UBports projects. Not to be confused with the :doc:`guide on writing a"
 " good bugreport </contribute/bugreporting>`."
 msgstr ""
+"Dieses Dokument beschreibt den Standardprozess für den Umgang mit neuen "
+"Problemen im UBports-Projekt. Nicht zu verwechseln mit der :doc:`Anleitung "
+"zum Schreiben von guten Fehlerberichten </contribute/bugreporting>`."
 
 #: ../../about/process/issue-tracking.rst:7
 msgid "Where are bugs tracked?"
-msgstr ""
+msgstr "Wo werden Fehler verfolgt?"
 
 #: ../../about/process/issue-tracking.rst:9
 msgid ""
@@ -138,6 +159,13 @@ msgid ""
 "this are click-apps that can be updated independently through the "
 "OpenStore."
 msgstr ""
+"Da unsere Qualitätssicherung massiv von der Gemeinschaft abhängt, versuchen "
+"wir Probleme dort zu verfolgen, wo der Nutzer es erwarten würde, anstatt im "
+"jeweiligen Repository. Das bedeutet, dass die Probleme fast aller "
+"Komponenten, die mit dem Systemabbild ausgeliefert werden, im `Ubuntu Touch "
+"Tracker <https://github.com/ubports/ubuntu-touch>`__ verfolgt werden. Eine "
+"Ausnahme bilden die Click-Apps, die unabhängig über den OpenStore "
+"aktualisiert werden."
 
 #: ../../about/process/issue-tracking.rst:17
 msgid ""
@@ -146,22 +174,30 @@ msgid ""
 "Repositories that don't track issues locally have their bugtracker "
 "disabled."
 msgstr ""
+"Die meisten anderen Repositories verfolgen ihre Probleme lokal. Falls Sie "
+"sich unsicher sind, ob ein Repository einen eigenen Tracker nutzt, schauen "
+"Sie in der README.md nach. Bei Repositories, die ihre Probleme nicht lokal "
+"verfolgen, ist der Tracker deaktiviert."
 
 #: ../../about/process/issue-tracking.rst:21
 msgid ""
 "This page is mainly about the Ubuntu Touch tracker, but most principles "
 "apply to other projects as well."
 msgstr ""
+"Diese Seite behandelt hauptsächlich den Ubuntu Touch Tracker, aber die "
+"meisten Prinzipien sollten auch für andere Projekte gelten."
 
 #: ../../about/process/issue-tracking.rst:25
 msgid ""
 "Practicality beats purity! Exceptions might apply and should be described"
 " in the projects README.md file."
 msgstr ""
+"Zweckmäßigkeit schlägt Reinheit! Wo Ausnahmen gelten, sollten diese in der "
+"README.md des Projekts beschrieben sein."
 
 #: ../../about/process/issue-tracking.rst:28
 msgid "GitHub projects"
-msgstr ""
+msgstr "GitHub-Projekte"
 
 #: ../../about/process/issue-tracking.rst:30
 msgid ""
@@ -171,10 +207,15 @@ msgid ""
 "filtering by labels, so that only issues that belong to a specific team "
 "or affect a specific device can be viewed."
 msgstr ""
+"Um die Transparenz und Kommunikation zu stärken, werden GitHub-Projekte "
+"(Kanban-Boards) genutzt, wann immer praktikabel. Im Falle von "
+"github.com/ubports/ubuntu-touch wird ein Projekt für alle Probleme genutzt. "
+"Projekte unterstützen das Filtern nach Markierungen, so dass man sich "
+"Probleme eines bestimmten Teams oder Geräts anzeigen lassen kann."
 
 #: ../../about/process/issue-tracking.rst:36
 msgid "These are the standard columns:"
-msgstr ""
+msgstr "Diese sind die Standardspalten:"
 
 #: ../../about/process/issue-tracking.rst:38
 msgid ""
@@ -185,6 +226,13 @@ msgid ""
 "primary sanity check by the qa-team but has not yet been accepted by the "
 "responsible development-team."
 msgstr ""
+"**None (awaiting triage)**: Das Problem wurde durch ein Mitglied des QA-"
+"Teams bestätigt und wartet auf Überprüfung durch das Entwicklerteam. Falls "
+"es sich um einen Fehler handelt, werden Anweisungen zum Reproduzieren in die "
+"Problembeschreibung aufgenommen. Falls es sich um eine "
+"Funktionalitätsanfrage handelt, hat es eine erste Plausibilitätsprüfung "
+"durch das QA-Team bestanden, warten aber noch darauf, vom Entwickler-Team "
+"angenommen zu werden."
 
 #: ../../about/process/issue-tracking.rst:39
 msgid ""
@@ -193,12 +241,19 @@ msgid ""
 " fixable and accepts the responsibility. If the issue is a featrue "
 "request, the team thinks it should be implemented as described."
 msgstr ""
+"**Accepted**: Das Problem wurde durch das verantwortliche Entwicklerteam "
+"angenommen. Falls es sich um einen Fehlerbericht handelt, hat das Team "
+"entschieden, dass der Fehler behebbar ist und übernimmt die Verantwortung. "
+"Falls es sich um eine Funktionalitätsanfrage handelt, so denkt das Team, "
+"dass die Funktion so wie beschrieben implementiert werden soll."
 
 #: ../../about/process/issue-tracking.rst:40
 msgid ""
 "**In Development**: A patch is in development. Usually means that a "
 "developer is assigned to the issue."
 msgstr ""
+"**In Development**: Eine Korrektur ist in Entwicklung. In der Regel heißt "
+"das, dass ein Entwickler sich dem Problem zugewiesen hat."
 
 #: ../../about/process/issue-tracking.rst:41
 msgid ""
@@ -207,6 +262,10 @@ msgid ""
 "feedback. If problems are found, the issue is moved back to “In "
 "Development”."
 msgstr ""
+"**Quality Assurance**: Die Korrektur ist vollständig und hat das initiale "
+"Testen bestanden. Das QA-Team wird es nun auf allen Geräten überprüfen und "
+"Rückmeldung geben. Falls Probleme gefunden werden, wandert das Thema zurück "
+"zu “In Development”."
 
 #: ../../about/process/issue-tracking.rst:42
 msgid ""
@@ -215,6 +274,11 @@ msgid ""
 "will be included in the next over-the-air update on the rc channel, and, "
 "if everything goes well, in the next release of the stable channel."
 msgstr ""
+"**Release Candidate**: Die Korrektur hat die QS passiert und bereit für die "
+"Veröffentlichung. Im Falle von deb-Paketen, die im Systemabbild enthalten "
+"sind, wird die Korrektur in der nächsten over-the-air-Aktualisierung in den "
+"rc-Kanal eingefügt und, falls alles gut geht, in die nächste "
+"Veröffentlichung des stabilen Kanals."
 
 #: ../../about/process/issue-tracking.rst:43
 msgid ""
@@ -222,10 +286,13 @@ msgid ""
 "closed with a message linking to the patch) or the issue has been "
 "rejected (issue closed and labeled “wontfix”)."
 msgstr ""
+"**None (removed from the project)**: Eine Korrektur wurde veröffentlicht ("
+"Problem geschlossen mit einer Verlinkung zur Korrektur) oder das Problem "
+"wurde zurückgewiesen (Problem geschlossen und als \"wontfix\" markiert)."
 
 #: ../../about/process/issue-tracking.rst:46
 msgid "Labels"
-msgstr ""
+msgstr "Markierungen"
 
 #: ../../about/process/issue-tracking.rst:48
 #, python-format
@@ -237,58 +304,83 @@ msgid ""
 " Consult the `GitHub help pages <https://help.github.com/articles/about-"
 "searching-on-github/>`__ for more information on search and filtering."
 msgstr ""
+"Alle Probleme - auch geschlossene - sollten markiert sein, um mit GitHubs "
+"globalen Filtern gefunden werden zu können. Zum Beispiel, `sind dies alle "
+"als 'enhancement' markierten Probleme innerhalb von @ubports <https://github."
+"com/search?utf8=%E2%9C%93&q=is%3Aopen+org%3Aubports+label%3A%22feature+reques"
+"t%22&type=>`_. Mehr Informationen zu Suche und Filtern findet man in den "
+"`GitHub-Hilfeseiten <https://help.github.com/articles/about-searching-on-"
+"github/>`__."
 
 #: ../../about/process/issue-tracking.rst:51
 msgid "Here's a list of labels that are normally used by all repositories."
 msgstr ""
+"Hier ist eine Liste von Markierungen, die normalerweise in allen "
+"Repositories genutzt werden."
 
 #: ../../about/process/issue-tracking.rst:53
 msgid ""
 "**needs confirmation**: The bug needs confirmation and / or further "
 "information from affected users"
 msgstr ""
+"**needs confirmation**: Der Fehler benötigt Bestätigung und / oder weitere "
+"Informationen von betroffenen Nutzern"
 
 #: ../../about/process/issue-tracking.rst:55
 msgid ""
 "**bug**: This issue is a confirmed bug. If it's reproducable, "
 "reproduction steps are described."
 msgstr ""
+"**bug**: Das Problem ist ein bestätigter Fehler. Falls er reproduzierbar "
+"ist, sind die Schritte zum Reproduzieren beschrieben."
 
 #: ../../about/process/issue-tracking.rst:57
 msgid "**opinion**: This issue needs further discussion."
-msgstr ""
+msgstr "**opinion**: Dieses Problem benötigt weitere Diskussion."
 
 #: ../../about/process/issue-tracking.rst:58
 msgid "**enhancement**: This issue is a feature request."
 msgstr ""
+"**enhancement**: Bei diesem Problem handelt es sich um eine "
+"Funktionalitätsanfrage."
 
 #: ../../about/process/issue-tracking.rst:59
 msgid "**question**: This issue is a support request or general question."
 msgstr ""
+"**question**: Dieses Problem ist eine Unterstützungsanfrage oder eine "
+"allgemeine Frage."
 
 #: ../../about/process/issue-tracking.rst:60
 msgid ""
 "**invalid**: This issue can not be confirmed or was reported in the wrong"
 " tracker."
 msgstr ""
+"**invalid**: Dieses Problem kann nicht bestätigt werden oder wurde im "
+"falschen Tracker gemeldet."
 
 #: ../../about/process/issue-tracking.rst:62
 msgid ""
 "**duplicate**: This has already been reported somewhere else. Please "
 "provide a link and close."
 msgstr ""
+"**duplicate**: Dies wurde bereits woanders gemeldet. Bitte einen Link "
+"einfügen und schließen."
 
 #: ../../about/process/issue-tracking.rst:64
 msgid ""
 "**help wanted**: This issue is ready to be picked up by a community "
 "developer."
 msgstr ""
+"**help wanted**: Dieses Problem wartet darauf, durch einen Entwickler aus "
+"der Gemeinschaft übernommen zu werden."
 
 #: ../../about/process/issue-tracking.rst:66
 msgid ""
 "**good first issue**: This issue is not critical and trivial to fix. It "
 "is reserved for new contributors as a place to start."
 msgstr ""
+"**good first issue**: Dieses Problem ist nicht kritisch, aber einfach zu "
+"beheben. Es ist reserviert für neue Mitwirkende als Platz zum beginnen."
 
 #: ../../about/process/issue-tracking.rst:68
 msgid ""
@@ -296,18 +388,26 @@ msgid ""
 "probably resolve itself, it will be too much work to fix it, it's not "
 "fixable, or an underlying component will soon change."
 msgstr ""
+"**wontfix**: Es ergibt keinen Sinn diesen Fehler zu beheben, weil er sich "
+"von selbst erledigen wird, weil es zu viel Arbeit machen würden, weil er "
+"nicht behebbar ist oder eine zugrunde liegende Komponente sich bald ändert."
 
 #: ../../about/process/issue-tracking.rst:72
 msgid ""
 "Additional special labels can be defined. As an example, here's the "
 "labels used in the Ubuntu Touch tracker:"
 msgstr ""
+"Zusätzlich können weitere Markierungen definiert werden. Zum Beispiel hier "
+"die Markierungen, die im Ubuntu Touch Tracker genutzt werden:"
 
 #: ../../about/process/issue-tracking.rst:75
 msgid ""
 "**critical (devel)**: This critical issue that only occurs on the devel "
 "channel is blocking the release of the next rc image."
 msgstr ""
+"**critical (devel)**: Dieses kritische Problem, das nur auf dem "
+"Entwicklungskanal auftritt, blockiert die Veröffentlichung des nächsten rc-"
+"Abbilds."
 
 #: ../../about/process/issue-tracking.rst:77
 msgid ""
@@ -316,28 +416,39 @@ msgid ""
 "issues that can not simply be moved to a different release and have the "
 "power to postpone the release are labeled this."
 msgstr ""
+"**critical (rc)**: Dieses kritische Problem, das nur auf dem Release-"
+"Kandidat- und Entwicklungskanal auftritt, blockiert die Veröffentlichung des "
+"nächsten stabilen Abbilds. In der Regel werden solche Probleme damit "
+"markiert, die nicht einfach in eine andere Veröffentlichung verschoben "
+"werden können und deshalb eine Veröffentlichung verzögern."
 
 #: ../../about/process/issue-tracking.rst:81
 msgid ""
 "**device: [DEVICE CODENAME]**: This issue affects only the specified "
 "device(s)."
 msgstr ""
+"**device: [DEVICE CODENAME]**: Dieses Problem betrifft nur die angegebenen "
+"Geräte."
 
 #: ../../about/process/issue-tracking.rst:83
 msgid ""
 "**team: [TEAM NAME]**: This issue is falls under the responsibility of a "
 "specific team (hal, middleware, UI)."
 msgstr ""
+"**team: [TEAM NAME]**: Dieses Problem fällt unter die Verantwortlichkeit des "
+"angegebenen Teams (hal, middleware, UI)."
 
 #: ../../about/process/issue-tracking.rst:86
 msgid ""
 "If a repository that tracks issues locally defines it's own labels, they "
 "should be documented in the README.md."
 msgstr ""
+"Falls ein Repository, das lokal seine Probleme verfolgt, eigene Markierungen "
+"verwendet, so sollten diese in der README.md dokumentiert sein."
 
 #: ../../about/process/issue-tracking.rst:90
 msgid "Milestones"
-msgstr ""
+msgstr "Meilensteine"
 
 #: ../../about/process/issue-tracking.rst:92
 msgid ""
@@ -347,10 +458,16 @@ msgid ""
 "date), but can be adjusted afterwards. See the :doc:`release-schedule "
 "<release-schedule>` for more info."
 msgstr ""
+"Meilensteine werden nur für OTA-Veröffentlichungen genutzt. Im Allgemeinen "
+"werden Meilensteine für das OTA in Arbeit und das nächste OTA erstellt. Das "
+"angepeilte Veröffentlichungsdatum wird gesetzt, sobald die Arbeit an einer "
+"Veröffentlichung beginnt (6 Wochen vom Startzeitpunkt), kann aber immer noch "
+"angepasst werden. Mehr Infos unter :doc:`Veröffentlichungs-Planung <release-"
+"schedule>`."
 
 #: ../../about/process/issue-tracking.rst:99
 msgid "Assignees"
-msgstr ""
+msgstr "Zuweisung"
 
 #: ../../about/process/issue-tracking.rst:101
 #, python-format
@@ -361,20 +478,27 @@ msgid ""
 " in @ubports "
 "<https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+org%3Aubports+assignee%3Amariogrip&type=>`_."
 msgstr ""
+"Um es transparent zu machen, wer woran arbeitet, sollte der Entwickler dem "
+"jeweiligen Problem zugewiesen werden. Damit lässt sich der GitHub-Filter als "
+"eine Art TODO-Liste nutzen. Zum Beispiel ist `dise alles, was mariogrip in @"
+"ubports zugewiesen ist <https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+"
+"org%3Aubports+assignee%3Amariogrip&type=>`_."
 
 #: ../../about/process/issue-tracking.rst:105
 msgid ""
 "Developers are asked to keep their list short and to keep the status of "
 "their issues up-to-date."
 msgstr ""
+"Entwickler werden gebeten, ihre Liste kurz und ihre Probleme aktuell zu "
+"halten."
 
 #: ../../about/process/issue-tracking.rst:108
 msgid "Examples"
-msgstr ""
+msgstr "Beispiele"
 
 #: ../../about/process/issue-tracking.rst:111
 msgid "Bug Lifecycle"
-msgstr ""
+msgstr "Lebenszyklus eines Fehlers"
 
 #: ../../about/process/issue-tracking.rst:114
 msgid ""
@@ -382,10 +506,14 @@ msgid ""
 "that instead of the label **bug**, the label **enhancement** is used. The"
 " **needs confirmation** label is not applicable for feature requests."
 msgstr ""
+"Das selbe Prinzip gilt auch für Funktionalitätsanfragen. Der einzige "
+"Unterschied ist, dass anstatt der Markierung **bug** die Markierung "
+"**enhancement** genutzt wird. Die Markierung **needs confirmation** ist "
+"außerdem nicht auf Funktionalitätsanfragen anwendbar."
 
 #: ../../about/process/issue-tracking.rst:118
 msgid "A *User* files a new bug using the issue-template."
-msgstr ""
+msgstr "Ein *Nutzer* meldet einen neuen Fehler mithilfe der Problemvorlage."
 
 #: ../../about/process/issue-tracking.rst:119
 msgid ""
@@ -396,6 +524,12 @@ msgid ""
 "the project and the label needs confirmation will be replaced with "
 "**bug**."
 msgstr ""
+"Das *QA-Team* fügt die Markierung **needs confirmation** hinzu und versucht "
+"mit dem Nutzer zusammenzuarbeiten, um den Fehler und bestätigen und "
+"potenziell fehlende Informationen dem Bericht hinzuzufügen. Sobald der "
+"Bericht vollständig ist, wird eine **team-Markierung** angefügt und das "
+"Problem wird in die **awaiting-triage-list** des Projekts eingefügt. Die "
+"Markierung **needs confirmation** wird durch **bug** ersetzt."
 
 #: ../../about/process/issue-tracking.rst:120
 msgid ""
@@ -408,6 +542,14 @@ msgid ""
 "critical issues that are trivial to fix, the label **good first issue** "
 "can be added as well."
 msgstr ""
+"Das betroffene *Team* wird das Problem sichten und entweder ablehnen ("
+"Markierung **wontfix**, schließen und vom Projekt entfernen) oder "
+"akzeptieren (zu \"Accepted\" verschieben). Fall sich kein Teammitglied das "
+"Problem zuweisen kann und es von der Gemeinschaft gelöst werden kann, wird **"
+"help wanted** angefügt. Falls möglich wird das Team Hinweise bereitstellen, "
+"wie das Problem gelöst werden kann und weitere Details, wie die Lösung zu "
+"implementieren ist. Für nicht kritische Probleme, die einfach zu lösen sind, "
+"wird auch die Markierung **good first issue** hinzugefügt."
 
 #: ../../about/process/issue-tracking.rst:121
 msgid ""
@@ -417,6 +559,11 @@ msgid ""
 "developer should provide hints on how to test his patch in a comment on "
 "the issue."
 msgstr ""
+"Sobald ein *Entwickler* zugewiesen ist und beginnt, das Problem zu "
+"bearbeiten, wird es zu \"In Development\" verschoben. Sobald er etwas zu "
+"zeigen hat, wird es zu \"Quality Assurance\" verschoben für Rückmeldungen. "
+"Falls nötig sollte der Entwickler in einem Kommentar Hinweise dazu geben, "
+"wie die Korrektur zu testen ist."
 
 #: ../../about/process/issue-tracking.rst:122
 msgid ""
@@ -425,6 +572,11 @@ msgid ""
 "Development”, else it’s closed and moved to “Release Candidate” to be "
 "included in the next release."
 msgstr ""
+"Das QA-Team testet die Korrektur auf allen Geräten und liefert dem "
+"Entwickler Rückmeldungen. Falls Probleme auftauchen, wird es zurück zu \"In "
+"Development\" verschoben, sonst wird es geschlossen und zu \"Release "
+"Candidate\" verschoben, um in die nächste Veröffentlichung aufgenommen zu "
+"werden."
 
 #: ../../about/process/issue-tracking.rst:123
 msgid ""
@@ -432,28 +584,35 @@ msgid ""
 " done already) added to a milestone. Once the milestone is released, the "
 "issue is removed from the project."
 msgstr ""
+"Sobald die Korrektur im rc-Abbild enthalten ist, wird das Problem "
+"geschlossen und (falls noch nicht geschehen) zum Meilenstein hinzugefügt. "
+"Sobald der Meilenstein veröffentlich ist, wird das Problem vom Projekt "
+"entfernt."
 
 #: ../../about/process/release-schedule.rst:2
 msgid "Release Schedule"
-msgstr ""
+msgstr "Veröffentlichungs-Planung"
 
 #: ../../about/process/release-schedule.rst:4
 msgid "OTA updates usually follow this rhythm:"
-msgstr ""
+msgstr "OTA-Aktualisierungen folgen für gewöhnlich diesem Rhythmus:"
 
 #: ../../about/process/release-schedule.rst:6
 msgid "devel: daily builds"
-msgstr ""
+msgstr "devel: tägliche Builds"
 
 #: ../../about/process/release-schedule.rst:7
 msgid "rc: weekly if no critical issue exists in the devel channel"
 msgstr ""
+"rc: wöchentlich, falls kein kritisches Problem im Enticklungskanal besteht"
 
 #: ../../about/process/release-schedule.rst:8
 msgid ""
 "stable: every six through eight weeks, if no critical issue exists in the"
 " rc channel"
 msgstr ""
+"stable: alle sechs bis acht Wochen, falls kein kritisches Problem im rc-"
+"Kanal besteht"
 
 #: ../../about/process/release-schedule.rst:11
 msgid ""
@@ -464,6 +623,14 @@ msgid ""
 "when all the issues can be handled. If there are too many issues added to"
 " a milestone, they are either removed or added to the next milestone."
 msgstr ""
+"Dies ist kein festgelegter Zyklus. Stabile Veröffentlichungen sind fertig, "
+"wenn sie fertig sind und sollten keine neuen Fehler einführen oder "
+"unvollständige Funktionalitäten ausliefern. Da eine OTA-Aktualisierung nicht "
+"veröffentlicht werden kann, bevor alle kritischen Probleme geschlossen sind, "
+"kann das geplante Veröffentlichungsdatum verschoben werden auf eine "
+"Schätzung, wann alle Probleme behoben werden können. Falls es zu viele "
+"Probleme in einem Meilenstein gibt, werden diese entweder entfernt oder "
+"einem anderen Meilenstein zugewiesen."
 
 #~ msgid ""
 #~ "This is the documentation for the "
