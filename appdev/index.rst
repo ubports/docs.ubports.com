@@ -3,17 +3,19 @@ App development
 
 Welcome to an open source and free platform under constant scrutiny and improvement by a vibrant global community, whose energy, connectedness, talent and commitment is unmatched. Ubuntu is also the third most deployed desktop OS in the world.
 
+Introduction
+------------
+
+.. todo:
+
+    TODO app development overview : platform specificity, packaging introduction, which language available, content hub, push service, online accounts, ...
+
 Clickable
 ---------
 
-Clickable is a meta-build system for Ubuntu Touch applications that allows you to compile and build click packages in a docker container. It is currently the easiest and most convenient way of building click packages for Ubuntu Touch.
+Clickable is a meta-build system for Ubuntu Touch applications that allows you to compile, build, test and publish `click <https://click.readthedocs.io/en/latest/>`__ packages. It is currently the easiest and most convenient way of building click packages for Ubuntu Touch.
 
-.. toctree::
-    :maxdepth: 1
-    :name: toc-appdev-clickable
-
-    clickable/setup
-    clickable/cordova
+See here for getting started `Read the Docs <http://clickable.bhdouglass.com/en/latest/>`__.
 
 Ubuntu UI-Toolkit
 -----------------
