@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-02 20:00-0600\n"
-"PO-Revision-Date: 2018-01-12 13:52+0000\n"
-"Last-Translator: Peter Nerlich <peter.nerlich+ubports@googlemail.com>\n"
+"PO-Revision-Date: 2018-01-12 16:39+0000\n"
+"Last-Translator: Reinhold Blank <reinhold.blank@sonepar.de>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-appdev/de/>\n"
 "Language: de\n"
@@ -165,9 +165,9 @@ msgid ""
 " makes app development fast and easy!"
 msgstr ""
 "`Clickable <https://github.com/bhdouglass/clickable>`__Ist ein Meta–Build "
-"System für Ubuntu Touch Anwendungen das erlaubt das compilieren und "
-"erstellen von Click Paketen in einem Docker Container. Es ist einfach "
-"Clickable einzustellen und macht die APP–"
+"System für Ubuntu Touch Anwendungen. Es erlaubt das compilieren und "
+"erstellen von Click Paketen in einem Docker Container. Es ist leicht "
+"Clickable einzustellen und macht die APP Entwicklung schnell und einfach!"
 
 #: ../../appdev/clickable/setup.rst:10
 msgid "Install"
@@ -314,16 +314,16 @@ msgid ""
 "talent and commitment is unmatched. Ubuntu is also the third most "
 "deployed desktop OS in the world."
 msgstr ""
-"Willkommen zu einer freien Open Source Plattform die von der dynamischen und "
-"globalen Community dauerhaft Überprüft und verbessert wird. Deren Energie, "
-"Ungebundenheit, Talent und"
+"Willkommen zu einer freien Open Source Plattform, die von der dynamischen "
+"und globalen Community laufend überprüft und verbessert wird. Dessen "
+"Energie, Ungebundenheit, Talent und Einsatz ist einmalig. Ubuntu ist auch "
+"das drittmeist genutze Desktop Betriebssystem der Welt."
 
 #: ../../appdev/index.rst:7
 msgid "Clickable"
 msgstr "Clickable"
 
 #: ../../appdev/index.rst:9
-#, fuzzy
 msgid ""
 "Clickable is a meta-build system for Ubuntu Touch applications that "
 "allows you to compile and build click packages in a docker container. It "
@@ -332,7 +332,7 @@ msgid ""
 msgstr ""
 "Clickable ist ein meta-Build-System für Ubuntu–Touch–Anwendungen, welches "
 "das kompilieren und bauen von Click–Paketen in einem Docker–Container "
-"erlaubt. Momentan ist es der einfachste und bequemste weg, Click–Pakete für "
+"erlaubt. Momentan ist es der einfachste und bequemste Weg, Click–Pakete für "
 "Ubuntu Touch zu bauen."
 
 #: ../../appdev/index.rst:19
@@ -349,14 +349,14 @@ msgstr ""
 
 #: ../../appdev/index.rst:23
 msgid "`QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__"
-msgstr "`QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__"
+msgstr "` QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__"
 
 #: ../../appdev/index.rst:24
 msgid ""
 "`Cordova HTML5 API <https://api-"
 "docs.ubports.com/sdk/apps/html5/index.html>`__"
 msgstr ""
-"`Cordova HTML5 API <https://api-"
+"`Cordova  HTML5 API <https://api-"
 "docs.ubports.com/sdk/apps/html5/index.html>`__"
 
 #: ../../appdev/index.rst:25
