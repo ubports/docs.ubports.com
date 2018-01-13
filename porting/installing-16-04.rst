@@ -1,3 +1,4 @@
+
 Installing Ubuntu Touch 16.04 images on Halium
 ==============================================
 
@@ -17,19 +18,10 @@ We'll need to install the ubports-boot image before installing an image. Reboot 
     cout
     fastboot flash boot ubports-boot.img
 
-Choose a rootfs
----------------
+Download the rootfs
+-------------------
 
-Before installing a rootfs, you'll need one to install. Which one you choose will depend on whether your device uses CAF sources or not. To check if your device contains any CAF source (it probably does), do a ``grep -r [term]`` for all of the following terms in $BUILDDIR/device/MANUFACTURER/CODENAME. If any search returns hits, you have a CAF device::
-
-    QCOM_BSP
-    QTI_BSP
-    QCOM_HARDWARE
-
-* If your device includes any CAF sources, choose `the CAF rootfs <http://ci.ubports.com/job/xenial-7.1-caf-sudoku-rootfs/>`_.
-* If your device does not include any CAF sources, choose `the standard rootfs <http://ci.ubports.com/job/xenial-rootfs-armhf/>`_
-
-In either case, download the large ``tar.gz`` file under the "Last successful artifacts" heading.
+Next we'll need to download the rootfs (root filesystem) that's appropriate for your device. Right now, we only have one available. Simply download ``ubports-touch.rootfs-xenial-armhf.tar.gz`` from `our CI server <https://ci.ubports.com/job/xenial-rootfs-armhf/>`__. If you have a 64-bit ARM (aarch64) device, this same rootfs should work for you. If you have an x86 device, let us know. We do not have a rootfs available for these yet.
 
 
 Install system.img and rootfs
@@ -44,6 +36,8 @@ Download the rootstock-touch-install script from `universalsuperbox/rootstock-ng
     rootstock-touch-install path/to/rootfs.tar.gz path/to/system.img
 
 The script will copy and extract the files to their proper places, then allow you to set the phablet user's password. If it gets all the way to ``rebooting device`` and doesn't seem to produce any errors, it's time to continue to the next step. If something goes wrong, please get in touch with us. If your device doesn't reboot automatically, reboot it using your recovery's interface.
+
+If you get errors similar to ``broken pipe`` or ``out of memory``, use the ``-b`` option to push the busybox or toybox build that came from your tree. These may have fewer bugs than your recovery's busybox.
 
 
 Get SSH access
