@@ -19,8 +19,8 @@ else
   virtualenv ~/ubportsdocsenv
   . ~/ubportsdocsenv/bin/activate
   echo -e "${YELLOW}Installing build tools and prerequisites.${PLAIN}"
-  sudo -H pip install sphinx sphinx_rtd_theme
+  sudo -H pip install sphinx sphinx_rtd_theme sphinx-intl
 fi
 echo -e "${GREEN}Building...${PLAIN}"
-sphinx-build -Wa . _build -j `nproc --all`
+sphinx-build -Wa . _build/html -j `nproc --all`
 exit $?
