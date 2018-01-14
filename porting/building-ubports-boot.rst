@@ -40,7 +40,7 @@ If you share your code and build instructions, please note that you've done this
 Include in build system
 -----------------------
 
-The android build system won't know where to find ubports-boot normally. To fix this, open the file ``BUILDDIR/build/core/main.mk`` in a text editor. Find the comment ``# Specific projects for Halium`` and change the text directly under it to match this::
+The android build system won't know where to find ubports-boot normally. To fix this, open the file ``BUILDDIR/build/core/main.mk`` in a text editor. Find the comment ``# Specific projects for Halium`` and add ``halium/ubports-boot`` to the list of ``subdirs`` ::
 
     subdirs += \
 	    halium/hybris-boot \
