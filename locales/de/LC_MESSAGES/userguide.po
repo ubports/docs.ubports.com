@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-02 20:00-0600\n"
-"PO-Revision-Date: 2018-01-03 23:12+0000\n"
+"PO-Revision-Date: 2018-01-14 23:02+0000\n"
 "Last-Translator: Alois Nebel <kunze.freyburg@freenet.de>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-userguide/de/>\n"
@@ -122,7 +122,6 @@ msgstr ""
 "kannst Geräte, die nicht erkannt werden konnten, manuell hinzufügen."
 
 #: ../../userguide/advanceduse/adb.rst:46
-#, fuzzy
 msgid ""
 "Just run the command for your selected device if it's below. Then, run "
 "``adb kill-server`` followed by the command you were initially trying to "
@@ -141,22 +140,32 @@ msgid "Oneplus One::"
 msgstr "Oneplus One::"
 
 #: ../../userguide/advanceduse/index.rst:2
+#, fuzzy
 msgid "Advanced use"
-msgstr ""
+msgstr "Nutzung für Fortgeschrittene"
 
 #: ../../userguide/advanceduse/index.rst:4
 msgid ""
 "This section of the documentation details advanced tasks that power users"
 " may want to perform on their Ubuntu Touch device."
 msgstr ""
+"In diesem Abschnitt der Dokumentation werden erweiterte Arbeitsschritte "
+"beschrieben, die erfahrene Benutzer auf ihrem Ubuntu Touch-Gerät durchführen "
+"können."
 
 #: ../../userguide/advanceduse/index.rst:7
+#, fuzzy
 msgid ""
 "Some of these guides involve making your system image writable, which may"
 " break OTA updates. The guides may also reduce the overall security of "
 "your Ubuntu Touch device. Please consider these ramifications before "
 "hacking on your device too much!"
 msgstr ""
+"In einigen dieser Anweisungen wird das System-Image beschreibbar gemacht, "
+"wodurch OTA-Updates nicht mehr funktionieren können. Diese beschriebenen "
+"Funktionen können auch die allgemeine Sicherheit Ihres Ubuntu Touch-Geräts "
+"verringern. Bitte diese möglichen Auswirkungen vor dem Ausführen der "
+"entsprechenden Befehle berücksichtigen!"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:2
 msgid "Reverse tethering"
