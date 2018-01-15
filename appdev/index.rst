@@ -13,7 +13,7 @@ Introduction
 Clickable
 ---------
 
-Clickable is a meta-build system for Ubuntu Touch applications that allows you to compile, build, test and publish `click <https://click.readthedocs.io/en/latest/>`_packages. It is currently the easiest and most convenient way of building click packages for Ubuntu Touch.
+Clickable is a meta-build system for Ubuntu Touch applications that allows you to compile, build, test and publish `click <https://click.readthedocs.io/en/latest/>`_ packages. It is currently the easiest and most convenient way of building click packages for Ubuntu Touch.
 
 See here for getting started `Read the Docs <http://clickable.bhdouglass.com/en/latest/>`_.
 
