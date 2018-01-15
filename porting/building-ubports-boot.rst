@@ -1,4 +1,3 @@
-
 Building ubports-boot
 =====================
 
@@ -9,10 +8,6 @@ Add source to Halium tree
 -------------------------
 
 The first thing that needs to be done is adding the ubports-boot source to your Halium tree. You may choose to do this by adding it to your local manifests (recommended) or simply cloning it in place.
-
-.. warning::
-
-    Due to a `bug in the ubports-boot build scripts <https://github.com/ubports/ubports-boot/issues/3>`_, you will need to remove it from your tree before you're able to build ``hybris-boot`` again.
 
 
 Add to local manifest
@@ -33,7 +28,7 @@ Now, just do a ``repo sync`` to download the new source.
 Manual clone
 ^^^^^^^^^^^^
 
-You may also choose to clone `the ubports-boot repository <https://github.com/ubports/ubports-boot>`_ into your tree manually. It should be placed into ``BUILDDIR/halium/ubports-boot``.
+You may also choose to clone the `ubports-boot repository <https://github.com/ubports/ubports-boot>`_ into your tree manually. It should be placed into ``BUILDDIR/halium/ubports-boot``.
 
 If you share your code and build instructions, please note that you've done this.
 
@@ -63,7 +58,7 @@ With the file open, change the ``src``, or first attribute, of the ``/data`` mou
 
 Now, remove all ``context=`` options from all block devices in the file. Save and exit.
 
-For an example of this, see `this commit on universalsuperbox/android_device_motorola_potter <https://github.com/UniversalSuperBox/android_device_motorola_potter/commit/9b574967e3a6f07884760b418befe731ccfcb924>`_. Removing the ``wait`` flag is not required and was an accident.
+For an example of this, see `this commit on universalsuperbox/android_device_motorola_potter <https://github.com/UniversalSuperBox/android_device_motorola_potter/commit/9b574967e3a6f07884760b418befe731ccfcb924>`__. Removing the ``wait`` flag is not required and was an accident.
 
 
 Edit init.rc
@@ -71,7 +66,7 @@ Edit init.rc
 
 Some Android services conflict with ofono in 16.04 and will cause your device to reboot without warning, about 30-60 seconds after it boots. We will need to disable these services until the issue is resolved.
 
-To do this, open up your device's default ``init.rc`` (this is likely init.qcom.rc or init.[codename].rc), comment out any ``import`` statements, and add ``disabled`` to services like rild, qti, and others that interface with the radio. Most of them have a ``user radio`` line. For an example, see `commit 7875b48b on UniversalSuperBox/android_device_motorola_potter <https://github.com/UniversalSuperBox/android_device_motorola_potter/commit/7875b48b5b6f240935d7f327d33128e952a3589b>`_
+To do this, open up your device's default ``init.rc`` (this is likely init.qcom.rc or init.[codename].rc), comment out any ``import`` statements, and add ``disabled`` to services like rild, qti, and others that interface with the radio. Most of them have a ``user radio`` line. For an example, see `commit 7875b48b on UniversalSuperBox/android_device_motorola_potter <https://github.com/UniversalSuperBox/android_device_motorola_potter/commit/7875b48b5b6f240935d7f327d33128e952a3589b>`__
 
 
 Edit kernel config
