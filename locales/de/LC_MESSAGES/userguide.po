@@ -7,17 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-02 20:00-0600\n"
+"POT-Creation-Date: 2018-01-15 11:14-0600\n"
 "PO-Revision-Date: 2018-01-03 23:12+0000\n"
 "Last-Translator: Alois Nebel <kunze.freyburg@freenet.de>\n"
-"Language-Team: German <https://translate.ubports.com/projects/ubports-docs"
-"/documentation-userguide/de/>\n"
 "Language: de\n"
+"Language-Team: German <https://translate.ubports.com/projects/ubports-"
+"docs/documentation-userguide/de/>\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../userguide/advanceduse/adb.rst:2
@@ -95,8 +94,8 @@ msgid ""
 "When you're done using the shell, it's a good idea to turn Developer Mode"
 " off again."
 msgstr ""
-"Wenn die Shell nicht mehr verwendet wird, sollte der Entwicklermodus wieder "
-"deaktiviert werden."
+"Wenn die Shell nicht mehr verwendet wird, sollte der Entwicklermodus "
+"wieder deaktiviert werden."
 
 #: ../../userguide/advanceduse/adb.rst:39
 msgid ""
@@ -104,9 +103,9 @@ msgid ""
 " devices attached\" and a blank line), you are able to use ADB "
 "successfully. If not, continue to the next section."
 msgstr ""
-"Wenn sich ein Gerät in der Liste befindet (der Befehl gibt nicht \"List of "
-"devices attached\" und eine leere Zeile aus), kann ADB genutzt werden. Wenn "
-"nicht, folge den Anweisungen im nächsten Abschnitt."
+"Wenn sich ein Gerät in der Liste befindet (der Befehl gibt nicht \"List "
+"of devices attached\" und eine leere Zeile aus), kann ADB genutzt werden."
+" Wenn nicht, folge den Anweisungen im nächsten Abschnitt."
 
 #: ../../userguide/advanceduse/adb.rst:42
 msgid "Add hardware IDs"
@@ -118,8 +117,8 @@ msgid ""
 " not talk to. You can manually add the devices that it does not know how "
 "to talk to."
 msgstr ""
-"ADB erkennt nicht immer die Geräte am PC, die angesprochen werden sollen. Du "
-"kannst Geräte, die nicht erkannt werden konnten, manuell hinzufügen."
+"ADB erkennt nicht immer die Geräte am PC, die angesprochen werden sollen."
+" Du kannst Geräte, die nicht erkannt werden konnten, manuell hinzufügen."
 
 #: ../../userguide/advanceduse/adb.rst:46
 #, fuzzy
@@ -222,7 +221,7 @@ msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:32
 #: ../../userguide/advanceduse/screencasting.rst:72
-#: ../../userguide/advanceduse/ssh.rst:56
+#: ../../userguide/advanceduse/ssh.rst:60
 msgid "References"
 msgstr ""
 
@@ -400,26 +399,32 @@ msgid ""
 "execute::"
 msgstr ""
 
-#: ../../userguide/advanceduse/ssh.rst:47
+#: ../../userguide/advanceduse/ssh.rst:46
+msgid ""
+"In case the ssh was not enabled before, use the following command to "
+"permit ssh connexion form outside the mobile device::"
+msgstr ""
+
+#: ../../userguide/advanceduse/ssh.rst:51
 msgid "Connect"
 msgstr ""
 
-#: ../../userguide/advanceduse/ssh.rst:49
+#: ../../userguide/advanceduse/ssh.rst:53
 msgid "Now everything is set up and you can use ``ssh`` ::"
 msgstr ""
 
-#: ../../userguide/advanceduse/ssh.rst:53
+#: ../../userguide/advanceduse/ssh.rst:57
 msgid "Of course you can now also use ``scp`` or ``sshfs`` to transfer files."
 msgstr ""
 
-#: ../../userguide/advanceduse/ssh.rst:58
+#: ../../userguide/advanceduse/ssh.rst:62
 msgid ""
 "`askubuntu.com: How can I access my Ubuntu phone over ssh? "
 "<https://askubuntu.com/questions/348714/how-can-i-access-my-ubuntu-phone-"
 "over-ssh/599041#599041>`_"
 msgstr ""
 
-#: ../../userguide/advanceduse/ssh.rst:59
+#: ../../userguide/advanceduse/ssh.rst:63
 msgid ""
 "`gurucubano: BQ Aquaris E 4.5 Ubuntu phone: How to get SSH access to the "
 "ubuntu-phone via Wifi <https://gurucubano.gitbooks.io/bq-aquaris-e-4-5"
@@ -428,6 +433,116 @@ msgstr ""
 
 #: ../../userguide/advanceduse/switchchannel.rst:2
 msgid "Switch release channels"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:2
+msgid "Run android applications"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:4
+msgid ""
+"`Anbox <https://anbox.io>`_ is a minimal android container and "
+"compatibility layer that allows you to run android applications on "
+"GNU/Linux operating systems."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:7
+msgid "Anbox is in early development"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:8
+msgid "Anbox for Ubuntu Touch is in even more early development"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:9
+msgid ""
+"Anbox only works on the 16.04 version of Ubuntu Touch, which is also in "
+"early development"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:10
+msgid ""
+"Only selected devices are supported for the moment, more will be added in"
+" the future."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:13
+msgid "Supported devices"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:15
+msgid "Make sure your device is supported:"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:17
+msgid ""
+"Meizu Pro 5 (codename: *turbo*, name of the boot partition: *bootimg*) BQ"
+" M10 HD (codename: *cooler*, name of the boot partition: *boot*) BQ M10 "
+"FHD (codename: *frieza*, name of the boot partition: *boot*)"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:21
+msgid ""
+"You will need the device codename and the name of your boot partition for"
+" the installation."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:24
+msgid "How to install"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:27
+msgid ""
+"Because this feature is in such an early stage of development, the "
+"installation is only recommended for experienced users."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:29
+msgid ""
+":doc:`Install <../install>` the 16.04/devel channel on your supported "
+"device"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:30
+msgid ""
+"Open a terminal and run ``export CODENAME=\"turbo\" && export "
+"PARTITIONNAME=\"bootimg\"``, but replace the part between the quotes "
+"respectively with the codename and name of the boot partition for your "
+"device. See the above list."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:31
+msgid "Activate developer mode on your device."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:32
+msgid ""
+"Connect the device to your computer computer and run the following "
+"commands::"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:40
+msgid "wait for the device to reboot, then run::"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:49
+msgid ""
+"Done! Select \"Anbox\" in the apps scope to use android applications. You"
+" might have to refresh the apps scope (pull down from the center of the "
+"screen and release) for the app to show up."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:52
+msgid "Reporting bugs"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:54
+msgid ""
+"Please :doc:`report any bugs </contribute/bugreporting>` you come "
+"accross. Bugs with Ubuntu Touch 16.04 are reported in `the normal Ubuntu "
+"Touch tracker <https://github.com/ubports/ubuntu-touch/issues>`_ and "
+"issues with anbox are reported on `our downstream fork "
+"<https://github.com/ubports/anbox/issues>`_. Thank you!"
 msgstr ""
 
 #: ../../userguide/dailyuse/index.rst:2
@@ -771,3 +886,4 @@ msgid ""
 "the partition that holds their hardware IDs and can no longer connect to "
 "Wi-Fi or cellular networks."
 msgstr ""
+
