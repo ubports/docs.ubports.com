@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-02 20:00-0600\n"
+"POT-Creation-Date: 2018-01-15 11:14-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -71,11 +71,14 @@ msgstr ""
 #: ../../contribute/bugreporting.rst:20
 msgid ""
 "If the report is missing any of the information specified later in this "
-"document, please add it yourself to help the developers fix the bug. "
-"Reproduce the issue you've found"
+"document, please add it yourself to help the developers fix the bug."
 msgstr ""
 
 #: ../../contribute/bugreporting.rst:23
+msgid "Reproduce the issue you've found"
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:25
 msgid ""
 "Next, find out exactly how to recreate the bug that you've found. "
 "Document the exact steps that you took to find the problem in detail. "
@@ -84,131 +87,131 @@ msgid ""
 "<https://youtu.be/nn2FB1P_Mn8?t=10s>`_..."
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:26
+#: ../../contribute/bugreporting.rst:28
 msgid "Getting Logs"
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:28
+#: ../../contribute/bugreporting.rst:30
 msgid ""
 "We appreciate as many good logs as we can get when you report a bug. In "
 "general, /var/log/dmesg and the output of /android/system/bin/logcat are "
 "helpful when resolving an issue. I'll show you how to get these logs."
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:30
+#: ../../contribute/bugreporting.rst:32
 msgid ""
 "To get set ready, follow the steps to :doc:`set up ADB "
 "</userguide/advanceduse/adb>`."
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:32
+#: ../../contribute/bugreporting.rst:34
 msgid "Now, you can get the two most important logs."
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:35
+#: ../../contribute/bugreporting.rst:37
 msgid "dmesg"
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:37
+#: ../../contribute/bugreporting.rst:39
 msgid ""
 "The **dmesg** (*display message* or *driver message*) command displays "
 "debug messages from the kernel."
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:39 ../../contribute/bugreporting.rst:52
+#: ../../contribute/bugreporting.rst:41 ../../contribute/bugreporting.rst:54
 msgid ""
 "Using the steps you documented earlier, reproduce the issue you're "
 "reporting"
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:40 ../../contribute/bugreporting.rst:50
+#: ../../contribute/bugreporting.rst:42 ../../contribute/bugreporting.rst:52
 msgid "cd to a folder where you're able to write the log"
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:41
-msgid "Run the command: `adb shell \"dmesg\" > \"UTdmesg.txt\"`"
+#: ../../contribute/bugreporting.rst:43
+msgid "Run the command: `adb shell dmesg > UTdmesg.txt`"
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:43
+#: ../../contribute/bugreporting.rst:45
 msgid ""
 "This log should now be located at UTdmesg.txt under your working "
 "directory, ready for uploading later."
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:46
+#: ../../contribute/bugreporting.rst:48
 msgid "logcat"
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:48
+#: ../../contribute/bugreporting.rst:50
 msgid ""
 "The **logcat** (*log concatenator*) command displays debug information "
 "from various parts of the underlying android system."
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:51
-msgid ""
-"Run the command: `adb shell \"/android/system/bin/logcat -d\" > "
-"\"UTlogcat.txt\"`"
+#: ../../contribute/bugreporting.rst:53
+msgid "Run the command: `adb shell /android/system/bin/logcat -d > UTlogcat.txt`"
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:54
+#: ../../contribute/bugreporting.rst:56
 msgid ""
 "This log will be located at UTlogcat.txt in your current working "
 "directory, so you'll be able to upload it later."
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:57
+#: ../../contribute/bugreporting.rst:59
 msgid "Making the bug report"
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:59
-msgid "Now it's time for what you've been waiting for, the bug report itself!"
+#: ../../contribute/bugreporting.rst:61
+msgid ""
+"Now it's time for what you've been waiting for, the bug report itself! "
+"Bug reports need to be filed in English."
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:61
+#: ../../contribute/bugreporting.rst:63
 msgid ""
 "First, pull up the `bug tracker <https://github.com/ubports/ubuntu-"
 "touch>`_ and click \"New Issue\". Log in to GitHub if you haven't yet."
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:63
+#: ../../contribute/bugreporting.rst:65
 msgid ""
 "Next, you'll need to name your bug. Pick a name that says what's "
 "happening, but don't be too wordy. Four to eight words should be enough."
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:65
+#: ../../contribute/bugreporting.rst:67
 msgid "Now, write your bug report. A good bug report includes the following:"
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:67
+#: ../../contribute/bugreporting.rst:69
 msgid "What happened: A synopsis of the erroneous behavior"
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:68
+#: ../../contribute/bugreporting.rst:70
 msgid ""
 "What I expected to happen: A synopsis of what should have happened, if "
 "there wasn't an error"
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:69
+#: ../../contribute/bugreporting.rst:71
 msgid "Steps to reproduce: You wrote these down earlier, right?"
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:70
+#: ../../contribute/bugreporting.rst:72
 msgid ""
 "Logs: Attach your logs by clicking and dragging them into your GitHub "
 "issue."
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:71
+#: ../../contribute/bugreporting.rst:73
 msgid ""
 "Software Version: Go to (Settings - About) and list what appears on the "
 "\"OS\" line of this screen. Also include the release channel that you "
 "used when you installed Ubuntu on this phone."
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:73
+#: ../../contribute/bugreporting.rst:75
 msgid ""
 "Once you're finished with that, post the bug. You can't add labels "
 "yourself, so please don't forget to state the device you're experiencing "
@@ -216,7 +219,7 @@ msgid ""
 " tags later."
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:75
+#: ../../contribute/bugreporting.rst:77
 msgid ""
 "A developer or QA-team member will confirm and triage your bug, then work"
 " can begin on it. If you are missing any information, you will be asked "
@@ -257,39 +260,34 @@ msgstr ""
 
 #: ../../contribute/documentation.rst:18
 msgid ""
-"All pages must have a document title. This title is shown on the table of"
-" contents (to the left) and at the top of the page."
+"All pages must have a document title that will be shown in the table of "
+"contents (left sidebar) and at the top of the page. This title is "
+"underlined with equals signs."
 msgstr ""
 
 #: ../../contribute/documentation.rst:20
-msgid ""
-"The title, underlined with the Equals sign, is shown in the table of "
-"contents to the left of the page."
-msgstr ""
-
-#: ../../contribute/documentation.rst:22
 msgid "Titles should be sentence cased rather than Title Cased. For example::"
 msgstr ""
 
-#: ../../contribute/documentation.rst:31
+#: ../../contribute/documentation.rst:29
 msgid ""
 "There isn't a single definition of title casing that everyone follows, "
 "but sentence casing is easy. This helps keep capitalization in the table "
 "of contents consistent."
 msgstr ""
 
-#: ../../contribute/documentation.rst:34
+#: ../../contribute/documentation.rst:32
 msgid "Table of contents"
 msgstr ""
 
-#: ../../contribute/documentation.rst:36
+#: ../../contribute/documentation.rst:34
 msgid ""
 "People can't navigate to your new page if they can't find it. Neither can"
 " Sphinx. That's why you need to add new pages to Sphinx's table of "
 "contents."
 msgstr ""
 
-#: ../../contribute/documentation.rst:38
+#: ../../contribute/documentation.rst:36
 msgid ""
 "You can do this by adding the page to the ``index.rst`` file in the same "
 "directory that you created it. For example, if you create a file called "
@@ -297,18 +295,18 @@ msgid ""
 "nearest index::"
 msgstr ""
 
-#: ../../contribute/documentation.rst:48
+#: ../../contribute/documentation.rst:46
 msgid ""
 "The order matters. If you would like your page to appear in a certain "
 "place in the table of contents, place it there. In the previous example, "
 "newpage would be added to the end of this table of contents."
 msgstr ""
 
-#: ../../contribute/documentation.rst:51
+#: ../../contribute/documentation.rst:49
 msgid "Warnings"
 msgstr ""
 
-#: ../../contribute/documentation.rst:53
+#: ../../contribute/documentation.rst:51
 msgid ""
 "Your edits must not introduce any warnings into the documentation build. "
 "If any warnings occur, the build will fail and your pull request will be "
@@ -318,56 +316,56 @@ msgid ""
 "below."
 msgstr ""
 
-#: ../../contribute/documentation.rst:56
+#: ../../contribute/documentation.rst:54
 msgid "Contribution workflow"
 msgstr ""
 
-#: ../../contribute/documentation.rst:59
+#: ../../contribute/documentation.rst:57
 msgid ""
 "You will need a GitHub account to complete these steps. If you do not "
 "have one, click `here <https://github.com/join>`_ to begin the process of"
 " making an account."
 msgstr ""
 
-#: ../../contribute/documentation.rst:62
+#: ../../contribute/documentation.rst:60
 msgid "Directly on GitHub"
 msgstr ""
 
-#: ../../contribute/documentation.rst:64
+#: ../../contribute/documentation.rst:62
 msgid ""
 "Read the Docs and GitHub make it fairly simple to contribute to this "
 "documentation. This section will show you the basic workflow to get "
 "started by editing an existing page on GitHub"
 msgstr ""
 
-#: ../../contribute/documentation.rst:67
+#: ../../contribute/documentation.rst:65
 msgid "Find the page you would like to edit"
 msgstr ""
 
-#: ../../contribute/documentation.rst:68
+#: ../../contribute/documentation.rst:66
 msgid "Click the \"Edit on GitHub\" link to the right of the title"
 msgstr ""
 
-#: ../../contribute/documentation.rst:69
+#: ../../contribute/documentation.rst:67
 msgid "Make your changes to the document. Remember to write in ReStructuredText!"
 msgstr ""
 
-#: ../../contribute/documentation.rst:70
+#: ../../contribute/documentation.rst:68
 msgid "Propose your changes as a Pull Request."
 msgstr ""
 
-#: ../../contribute/documentation.rst:72
+#: ../../contribute/documentation.rst:70
 msgid ""
 "If there are any errors with your proposed changes, the documentation "
-"team will ask you make some changes and resubmit. This is as simple as "
-"editing the file on GitHub from your fork of the repository."
+"team will ask you to make some changes and resubmit. This is as simple as"
+" editing the file on GitHub from your fork of the repository."
 msgstr ""
 
-#: ../../contribute/documentation.rst:75
+#: ../../contribute/documentation.rst:73
 msgid "Manually forking the repository"
 msgstr ""
 
-#: ../../contribute/documentation.rst:77
+#: ../../contribute/documentation.rst:75
 msgid ""
 "You can make more advanced edits to our documentation by forking "
 "`ubports/docs.ubports.com <https://github.com/ubports/docs.ubports.com>`_"
@@ -376,41 +374,41 @@ msgid ""
 "<https://guides.github.com/activities/forking/>`_."
 msgstr ""
 
-#: ../../contribute/documentation.rst:80
+#: ../../contribute/documentation.rst:78
 msgid "Building this documentation locally"
 msgstr ""
 
-#: ../../contribute/documentation.rst:82
+#: ../../contribute/documentation.rst:80
 msgid ""
 "If you'd like to build this documentation *before* sending a PR (which "
 "you should), follow these instructions on your *local copy* of your fork "
 "of the repository."
 msgstr ""
 
-#: ../../contribute/documentation.rst:84
+#: ../../contribute/documentation.rst:82
 msgid ""
 "The documentation can be built by running ``./build.sh`` in the root of "
 "this repository. The script will also create a virtual build environment "
 "in ``~/ubportsdocsenv`` if none is present."
 msgstr ""
 
-#: ../../contribute/documentation.rst:86
+#: ../../contribute/documentation.rst:84
 msgid ""
 "If all went well, you can enter the ``_build`` directory and open "
 "``index.html`` to view the UBports documentation."
 msgstr ""
 
-#: ../../contribute/documentation.rst:89
+#: ../../contribute/documentation.rst:87
 msgid "Current TODOs"
 msgstr ""
 
-#: ../../contribute/documentation.rst:91
+#: ../../contribute/documentation.rst:89
 msgid ""
 "This page lists the TODOs that have been included in this documentation. "
 "If you know how to fix one, please send us a PR to make it better!"
 msgstr ""
 
-#: ../../contribute/documentation.rst:98
+#: ../../contribute/documentation.rst:96
 msgid "To create a todo, add this markup to your page::"
 msgstr ""
 
@@ -450,7 +448,8 @@ msgstr ""
 #: ../../contribute/monetary.rst:4
 msgid ""
 "You can help us keep the lights on at UBports by becoming a `patreon "
-"<https://www.patreon.com/ubports>`_!"
+"<https://www.patreon.com/ubports>`_ or do the same on `Liberpay "
+"<https://liberapay.com/UBports/>`_!"
 msgstr ""
 
 #: ../../contribute/monetary.rst:6
@@ -728,4 +727,53 @@ msgstr ""
 #: ../../contribute/translations.rst:73
 msgid "Go to that link to learn what this exactly means."
 msgstr ""
+
+#~ msgid ""
+#~ "If the report is missing any of"
+#~ " the information specified later in "
+#~ "this document, please add it yourself"
+#~ " to help the developers fix the "
+#~ "bug. Reproduce the issue you've found"
+#~ msgstr ""
+
+#~ msgid "Run the command: `adb shell \"dmesg\" > \"UTdmesg.txt\"`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Run the command: `adb shell "
+#~ "\"/android/system/bin/logcat -d\" > "
+#~ "\"UTlogcat.txt\"`"
+#~ msgstr ""
+
+#~ msgid "Now it's time for what you've been waiting for, the bug report itself!"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "All pages must have a document "
+#~ "title. This title is shown on the"
+#~ " table of contents (to the left) "
+#~ "and at the top of the page."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The title, underlined with the Equals"
+#~ " sign, is shown in the table of"
+#~ " contents to the left of the "
+#~ "page."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If there are any errors with your"
+#~ " proposed changes, the documentation team"
+#~ " will ask you make some changes "
+#~ "and resubmit. This is as simple as"
+#~ " editing the file on GitHub from "
+#~ "your fork of the repository."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You can help us keep the lights"
+#~ " on at UBports by becoming a "
+#~ "`patreon <https://www.patreon.com/ubports>`_!"
+#~ msgstr ""
 
