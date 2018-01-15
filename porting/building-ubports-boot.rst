@@ -1,4 +1,3 @@
-
 Building ubports-boot
 =====================
 
