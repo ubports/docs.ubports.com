@@ -4,7 +4,7 @@ CalDAV and CardDAV are protocols to syncronize calendars and contacts with a rem
 
 At the moment, there is no carddav implemention directly accessible from the Ubuntu Touch graphical user-interface, so the only way to sync carddav is by using syncevolution + cron. However, there is a simple way to do that with a script that you can run in the terminal or via phablet SSH connection. These instructions work for caldav as well.
 
-1) Follow this `guide <https://docs.ubports.com/en/latest/userguide/advanceduse/adb.html>`_ to activate Developer Mode and ADB (or SSH) connection
+1) Follow this `guide <https://docs.ubports.com/en/latest/userguide/advanceduse/adb.html>`_ to activate Developer Mode and ADB (or SSH) connection.
 
 
 2) Download this `script <https://gist.github.com/bastos77/0c47a94dd0bf3e394f879c0ff42b7839>`_ (let's call it dav.sh) and edit the following variables: 
@@ -14,15 +14,14 @@ At the moment, there is no carddav implemention directly accessible from the Ubu
 * CRON_FREQUENCY (for the frequency of synchronisation)
 * Line 61: write ``sudo sh -c "echo '$COMMAND_LINE' > /sbin/sogosync"`` , instead of ``sudo echo "$COMMAND_LINE" > /sbin/sogosync``, to avoid permission denied error
 
-3) Move the file to your UbuntuTouch device, either by file manager or with adb: 
+3) Move the file to your UbuntuTouch device, either by file manager or with adb:: 
 
-``adb push dav.sh /home/phablet``
+    adb push dav.sh /home/phablet
 
 4) Connect with the phablet shell (``adb shell``) or directly on the phone Terminal app and type the following::
 
-``chmod +x dav.sh``
-
-``./dav.sh``
+    chmod +x dav.sh
+    ./dav.sh
 
 
 Sources:
