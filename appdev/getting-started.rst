@@ -48,17 +48,6 @@ As far as testing environments, the developer can choose an **Ubuntu emulator**,
 :doc:`Learn how to run apps with the Ubuntu SDK
 IDE  › <platform/sdk/tutorials-running-apps-from-the-sdk>`
 
-Device development information
-------------------------------
-
-These pages will provide you with the current status, goals, and issues of a particular device that we're porting to.
-
-:doc:`Nexus 5X Developer 
-Information › <platform/guides/Nexus-5X-Developer-Information>`
-
-:doc:`Fairphone2 Developer 
-Information › <platform/guides/Fairphone2-Developer-Information>`
-
 Your first app
 --------------
 
