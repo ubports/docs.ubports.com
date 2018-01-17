@@ -79,7 +79,6 @@ Edit kernel config
 
 Ubuntu Touch requires a slightly different kernel config than Halium, including enabling Apparmor. Luckily, we have a nice script for this purpose, ``check-kernel-config``. It's included in the ubports-boot repository. Simply run it on your config as follows::
 
-    chmod +x ./halium/ubports-boot/check-kernel-config
     ./halium/ubports-boot/check-kernel-config path/to/my/defconfig -w
 
 You may have to do this twice. It will likely fix things both times. Then, run the script without the ``-w`` flag to see if there are any more errors. If there are, fix them manually. Once finished, run the script without the ``-w`` flag one more time to make sure everything is correct.
