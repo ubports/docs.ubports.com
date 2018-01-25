@@ -45,7 +45,7 @@ Once a container is set up, you can list the installed applications:
 
 Install a package:
 
-  ``libertine-container-manage install-package -p PACKAGE-NAME``
+  ``libertine-container-manager install-package -p PACKAGE-NAME``
 
 Remove a package:
 
