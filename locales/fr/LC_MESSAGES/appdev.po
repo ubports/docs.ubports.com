@@ -3,18 +3,21 @@
 # This file is distributed under the same license as the UBports package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-02 20:00-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-01-28 20:27+0000\n"
+"Last-Translator: Laurent Rouxel <lrouxel@free.fr>\n"
+"Language-Team: French <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-appdev/fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../appdev/clickable/cordova.rst:2
@@ -232,7 +235,7 @@ msgstr ""
 
 #: ../../appdev/index.rst:2
 msgid "App development"
-msgstr ""
+msgstr "Développement d'applications"
 
 #: ../../appdev/index.rst:4
 msgid ""
@@ -300,4 +303,3 @@ msgstr ""
 #: ../../appdev/index.rst:46
 msgid "A collection of external resources"
 msgstr ""
-
