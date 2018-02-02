@@ -3,23 +3,26 @@
 # This file is distributed under the same license as the UBports package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-02 20:00-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-02-02 19:58+0000\n"
+"Last-Translator: Laurent Rouxel <lrouxel@free.fr>\n"
+"Language-Team: French <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-userguide/fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../userguide/advanceduse/adb.rst:2
 msgid "Shell access via adb"
-msgstr ""
+msgstr "Accès au shell via adb"
 
 #: ../../userguide/advanceduse/adb.rst:4
 msgid ""
@@ -27,64 +30,75 @@ msgid ""
 "shell from your PC. This is useful for debugging or more advanced shell "
 "usage."
 msgstr ""
+"Votre appareil fonctionnant sous UBports peut être mis en mode développeur, "
+"vous permettant alors d'accéder à un shell Bash sur cet appareil depuis "
+"votre PC. C'est pratique pour le débogage ou aussi pour un usage plus avancé "
+"du shell."
 
 #: ../../userguide/advanceduse/adb.rst:8
 msgid "Install ADB"
-msgstr ""
+msgstr "Installer ADB (Android Debug Bridge)"
 
 #: ../../userguide/advanceduse/adb.rst:10
 msgid "First, you'll need ADB installed on your computer."
-msgstr ""
+msgstr "Tout d'abord, il est nécessaire d'installer ADB sur votre PC."
 
 #: ../../userguide/advanceduse/adb.rst:12
 msgid "On Ubuntu::"
-msgstr ""
+msgstr "Sur Ubuntu::"
 
 #: ../../userguide/advanceduse/adb.rst:16
 msgid "On Fedora::"
-msgstr ""
+msgstr "Sur Fedora::"
 
 #: ../../userguide/advanceduse/adb.rst:20
 msgid "And on MacOS with `Homebrew <https://brew.sh>`_::"
-msgstr ""
+msgstr "Et sur MacOS avec `Homebrew <https://brew.sh>`_::"
 
 #: ../../userguide/advanceduse/adb.rst:24
 msgid ""
 "For Windows, grab the command-line tools only package from `here "
 "<https://developer.android.com/studio/index.html#downloads>`_."
 msgstr ""
+"Pour Windows, récupérez seulement le package correspondant aux outils de "
+"commande en ligne depuis `cet endroit "
+"<https://developer.android.com/studio/index.html#downloads>`_."
 
 #: ../../userguide/advanceduse/adb.rst:27
 msgid "Enable developer mode"
-msgstr ""
+msgstr "Activer le mode développeur"
 
 #: ../../userguide/advanceduse/adb.rst:29
 msgid "Next, you'll need to turn on Developer Mode."
-msgstr ""
+msgstr "Ensuite, vous devrez activer le mode développeur."
 
 #: ../../userguide/advanceduse/adb.rst:31
 msgid "Reboot your device"
-msgstr ""
+msgstr "Redémarrez votre appareil"
 
 #: ../../userguide/advanceduse/adb.rst:32
 msgid ""
 "Place your device into developer mode (Settings - About - Developer Mode "
 "- check the box to turn it on)"
 msgstr ""
+"Activez le mode développeur (Paramètres système - A propos de - Mode "
+"développeur - cochez la case pour l'activer)"
 
 #: ../../userguide/advanceduse/adb.rst:33
 msgid "Plug the device into a computer with adb installed"
-msgstr ""
+msgstr "Branchez l'appareil sur l’ordinateur où adb est installé"
 
 #: ../../userguide/advanceduse/adb.rst:34
 msgid "Open a terminal and run ``adb devices``."
-msgstr ""
+msgstr "Ouvrez un terminal et lancez ``adb devices``."
 
 #: ../../userguide/advanceduse/adb.rst:37
 msgid ""
 "When you're done using the shell, it's a good idea to turn Developer Mode"
 " off again."
 msgstr ""
+"Une fois que vous avez fini d'utiliser le shell, c'est une bonne pratique de "
+"désactiver le mode développeur."
 
 #: ../../userguide/advanceduse/adb.rst:39
 msgid ""
@@ -92,10 +106,13 @@ msgid ""
 " devices attached\" and a blank line), you are able to use ADB "
 "successfully. If not, continue to the next section."
 msgstr ""
+"Si il y a bien un appareil dans cette liste (La commande n’affiche pas \""
+"List of devices attached\" et une ligne vide), vous devriez alors pouvoir "
+"utiliser ADB avec succès. Sinon, continuez à la rubrique suivante."
 
 #: ../../userguide/advanceduse/adb.rst:42
 msgid "Add hardware IDs"
-msgstr ""
+msgstr "Ajouter des identifiants matériels"
 
 #: ../../userguide/advanceduse/adb.rst:44
 msgid ""
@@ -103,6 +120,9 @@ msgid ""
 " not talk to. You can manually add the devices that it does not know how "
 "to talk to."
 msgstr ""
+"ADB n'arrive pas toujours à déterminer à quels appareils sur votre PC il "
+"doit parler ou pas. Vous pouvez ajouter manuellement l'appareil auquel il ne "
+"sait pas comment parler."
 
 #: ../../userguide/advanceduse/adb.rst:46
 msgid ""
@@ -110,24 +130,30 @@ msgid ""
 "``adb kill-server`` followed by the command you were initially trying to "
 "run."
 msgstr ""
+"Lancez la commande seulement pour l'appareil sélectionné si il est dessous. "
+"Ensuite, lancez ``adb kill-server`` suivi par la commande que vous aviez "
+"initialement essayé de lancer."
 
 #: ../../userguide/advanceduse/adb.rst:48
 msgid "Fairphone 2::"
-msgstr ""
+msgstr "Fairphone 2::"
 
 #: ../../userguide/advanceduse/adb.rst:52
 msgid "Oneplus One::"
-msgstr ""
+msgstr "Oneplus One::"
 
 #: ../../userguide/advanceduse/index.rst:2
 msgid "Advanced use"
-msgstr ""
+msgstr "Utilisation avancée"
 
 #: ../../userguide/advanceduse/index.rst:4
 msgid ""
 "This section of the documentation details advanced tasks that power users"
 " may want to perform on their Ubuntu Touch device."
 msgstr ""
+"Cette rubrique de la documentation détaille les tâches avancées que les "
+"utilisateurs confirmés sont susceptible d'effectuer sur leur appareil Ubuntu "
+"Touch."
 
 #: ../../userguide/advanceduse/index.rst:7
 msgid ""
@@ -136,10 +162,15 @@ msgid ""
 "your Ubuntu Touch device. Please consider these ramifications before "
 "hacking on your device too much!"
 msgstr ""
+"Certains de ces guides impliquent de rendre l'image de votre système "
+"modifiable, ce qui peut éventuellement casser les mises à jour OTA. Ils "
+"peuvent aussi mener à la réduction du niveau de sécurité de votre appareil "
+"Ubuntu Touch. Veuillez considérer ces éventualités avant de trop vous "
+"avancer dans les hacks de votre appareil !"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:2
 msgid "Reverse tethering"
-msgstr ""
+msgstr "Modem inversé"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:4
 msgid ""
@@ -148,72 +179,90 @@ msgid ""
 "help you to connect your Ubuntu Touch to your computer to access "
 "internet."
 msgstr ""
+"Certains utilisateurs peuvent ne pas disposer d'une connexion wifi sur leur "
+"téléphone ni d'un abonnement data chez leur opérateur mobile. Ce petit "
+"tutoriel va vous aider à connecter votre Ubuntu Touch à votre ordinateur "
+"pour bénéficier de l’accès à Internet."
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:7
 msgid ""
 "Prerequisite: Phone is connected to the computer with usb and developer "
 "mode enabled."
 msgstr ""
+"Prérequis: Le téléphone est connecté à l'ordinateur via usb et le mode "
+"développeur est activé."
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:10
 msgid "Steps"
-msgstr ""
+msgstr "Étapes"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:12
 msgid "On phone: ``android-gadget-service enable rndis``"
-msgstr ""
+msgstr "Sur le téléphone: ``android-gadget-service enable rndis``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:14
 msgid "On computer: get your rndis ip address e.g:``hostname -I``"
 msgstr ""
+"Sur l'ordinateur: récupérez votre adresse ip rndis p. ex.:``hostname -I``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:16
 msgid "On phone:"
-msgstr ""
+msgstr "Sur le téléphone :"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:18
 msgid "add gateway: ``sudo route add default gw YOUR_COMPUTER_RNDIS_IP``"
 msgstr ""
+"ajoutez la passerelle: ``sudo route add default gw YOUR_COMPUTER_RNDIS_IP``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:20
 msgid ""
 "add nameservers: ``echo \"nameserver 8.8.8.8\" | sudo tee "
 "/etc/resolv.conf``"
 msgstr ""
+"ajoutez les serveurs de nom: ``echo \"nameserver 8.8.8.8\" | sudo tee "
+"/etc/resolv.conf``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:22
 msgid "refresh dns table: ``resolvconf -u``"
-msgstr ""
+msgstr "rafraîchissez la table dns: ``resolvconf -u``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:24
 msgid "On computer:"
-msgstr ""
+msgstr "Sur l'ordinateur :"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:26
 msgid "enable ip forwarding: ``echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward``"
 msgstr ""
+"activez le transfert d'ip: ``echo 1 | sudo tee "
+"/proc/sys/net/ipv4/ip_forward``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:28
 msgid ""
 "apply NAT: ``sudo iptables -t nat -A POSTROUTING -s 10.0.0.0/8 -o eth0 -j"
 " MASQUERADE``"
 msgstr ""
+"appliquez le NAT: ``sudo iptables -t nat -A POSTROUTING -s 10.0.0.0/8 -o "
+"eth0 -j MASQUERADE``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:32
 #: ../../userguide/advanceduse/screencasting.rst:72
 #: ../../userguide/advanceduse/ssh.rst:56
 msgid "References"
-msgstr ""
+msgstr "Références"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:34
 msgid ""
 "askubuntu: https://askubuntu.com/questions/655321/ubuntu-touch-reverse-"
 "tethering-and-click-apps-updates"
 msgstr ""
+"askubuntu : https://askubuntu.com/questions/655321/ubuntu-touch-reverse-"
+"tethering-and-click-apps-updates"
 
 #: ../../userguide/advanceduse/screencasting.rst:2
 msgid "Screen Casting your UT device to your computer"
 msgstr ""
+"Faire une diffusion en temps réel de l'écran de votre appareil UT sur votre "
+"PC"
 
 #: ../../userguide/advanceduse/screencasting.rst:5
 msgid ""
@@ -222,16 +271,23 @@ msgid ""
 "display to a listening computer over the network or directy trough adb so"
 " that we can either watch it live or record it to a file."
 msgstr ""
+"Ubuntu Touch possède un utilitaire en ligne de commande appelé "
+"``mirscreencast`` qui récupère les trames vidéo dans un fichier. L'idée est "
+"d'afficher dynamiquement l'écran de l'appareil UT sur un ordinateur client à "
+"travers le réseau ou directement via adb. On peut alors le regarder en temps "
+"réel ou l'enregistrer dans un fichier."
 
 #: ../../userguide/advanceduse/screencasting.rst:9
 msgid "Using adb"
-msgstr ""
+msgstr "En utilisant adb"
 
 #: ../../userguide/advanceduse/screencasting.rst:11
 msgid ""
 "You can catch output directly from ``adb exec-out`` command and forward "
 "it to mplayer::"
 msgstr ""
+"Vous pouvez capturer directement la sortie de la commande ``adb exec-out`` "
+"et la rediriger vers mplayer::"
 
 #: ../../userguide/advanceduse/screencasting.rst:15
 msgid ""
@@ -241,48 +297,61 @@ msgid ""
 "interval`` (1 = 60fps, 2=30fps, ...)  and size of frames ``384 640`` "
 "means width=384 height=640"
 msgstr ""
+"NB: ``timeout`` est ici utilisé pour tuer le processus correctement sur "
+"l'appareil (ici 120 secondes). Dans le cas contraire, le processus restera "
+"actif même si il est tué sur l'ordinateur. Vous pouvez réduire ou augmenter "
+"le nombre de trames par secondes avec``--cap-interval`` (1 = 60fps, 2=30fps, "
+"...) et la taille des trames ``384 640`` correspond à largeur=384 hauteur=640"
 
 #: ../../userguide/advanceduse/screencasting.rst:19
 msgid "Via network"
-msgstr ""
+msgstr "A travers le réseau"
 
 #: ../../userguide/advanceduse/screencasting.rst:22
 msgid "On receiver"
-msgstr ""
+msgstr "Sur le récepteur"
 
 #: ../../userguide/advanceduse/screencasting.rst:24
 msgid "For real time casting:"
-msgstr ""
+msgstr "Pour l’affichage en temps réel:"
 
 #: ../../userguide/advanceduse/screencasting.rst:27
 msgid ""
 "Prepare your computer to listen to a tcp port(here 1234) and forward raw "
 "stream to a video player (here mplayer) with a frame size of 384x640::"
 msgstr ""
+"Prépare votre ordinateur à écouter sur un port tcp (ici 1234) et rediriger "
+"le flux vidéo brut vers un programme de lecture vidéo (ici mplayer) avec une "
+"taille de trame de 384x640::"
 
 #: ../../userguide/advanceduse/screencasting.rst:31
 msgid "For stream recording:"
-msgstr ""
+msgstr "Pour l'enregistrement du flux:"
 
 #: ../../userguide/advanceduse/screencasting.rst:33
 msgid ""
 "Prepare your computer to listen to a tcp port(here 1234), ungzip and "
 "forward raw stream to a video encoder (here mencoder)::"
 msgstr ""
+"Prépare votre ordinateur à écouter sur un port tcp (ici 1234) et rediriger "
+"le flux vidéo brut vers un programme d'encodage vidéo (ici mpencoder)::"
 
 #: ../../userguide/advanceduse/screencasting.rst:38
 msgid "On device"
-msgstr ""
+msgstr "Sur l'appareil"
 
 #: ../../userguide/advanceduse/screencasting.rst:40
 msgid ""
 "Forward and gzip stream with 60fps (--cap-interval 1) and frame size of "
 "384x640 to computer 10.42.0.209 on port 1234 ::"
 msgstr ""
+"Redirige et compresse (gzip) le flux à 60 fps (--cap-interval 1) et une avec "
+"une taille de trame de 384x640 vers l'ordinateur 10.42.0.209 sur le port "
+"1234 ::"
 
 #: ../../userguide/advanceduse/screencasting.rst:46
 msgid "Example script"
-msgstr ""
+msgstr "Script d'exemple"
 
 #: ../../userguide/advanceduse/screencasting.rst:48
 msgid ""
@@ -290,38 +359,45 @@ msgid ""
 "(must have ssh access to UT and mplayer installed on PC), run it on your "
 "computer::"
 msgstr ""
+"Ce script vous permet de diffuser l'affichage de l'écran d'un appareil UT "
+"distant sur votre PC local (vous devez avoir un accès ssh sur votre appareil "
+"UT et mplayer installé sur le PC), lancez le sur votre PC::"
 
 #: ../../userguide/advanceduse/screencasting.rst:69
 msgid "You can download it here: :download:`files/mircast.sh`"
-msgstr ""
+msgstr "Vous pouvez le télécharger ici: :télécharger:`files/mircast.sh`"
 
 #: ../../userguide/advanceduse/screencasting.rst:74
 msgid "initial source: https://wiki.ubuntu.com/Touch/ScreenRecording"
-msgstr ""
+msgstr "source initiale: https://wiki.ubuntu.com/Touch/ScreenRecording"
 
 #: ../../userguide/advanceduse/screencasting.rst:75
 msgid "demo: https://www.youtube.com/watch?v=HYm4RUwwo5Q"
-msgstr ""
+msgstr "demonstration: https://www.youtube.com/watch?v=HYm4RUwwo5Q"
 
 #: ../../userguide/advanceduse/ssh.rst:2
 msgid "Shell access via ssh"
-msgstr ""
+msgstr "Accès au shell par ssh"
 
 #: ../../userguide/advanceduse/ssh.rst:4
 msgid ""
 "You can use ssh to access a shell from your PC. This is useful for "
 "debugging or more advanced shell usage."
 msgstr ""
+"Vous pouvez utiliser ssh pour accéder au shell depuis votre PC. Ceci est "
+"utile pour le débogage ou un usage plus avancé du shell."
 
 #: ../../userguide/advanceduse/ssh.rst:6
 msgid ""
 "You need a ssh key pair for this. Logging in via password is disabled by "
 "default."
 msgstr ""
+"Vous avez besoin d'une paire de clé ssh pour cela. L'ouverture d'une session "
+"par mot de passe est désactivée par défaut."
 
 #: ../../userguide/advanceduse/ssh.rst:9
 msgid "Create your public key"
-msgstr ""
+msgstr "Créer votre clé publique"
 
 #: ../../userguide/advanceduse/ssh.rst:11
 msgid ""
@@ -329,38 +405,51 @@ msgid ""
 " fine for LAN, you can leave empty password if you don't want to deal "
 "with it each time::"
 msgstr ""
+"Si cela n'est pas déjà fait, créez votre clé publique, les options par "
+"défaut devraient suffire pour une utilisation sur le LAN, vous pouvez "
+"laisser le mot de passe vide si vous n'avez pas envie de gérer cela à chaque "
+"fois::"
 
 #: ../../userguide/advanceduse/ssh.rst:16
 msgid "Copy the public key to your device"
-msgstr ""
+msgstr "Copier la clé publique sur votre appareil"
 
 #: ../../userguide/advanceduse/ssh.rst:18
 msgid ""
 "You need then to transfer your public key to your device. There are "
 "multiple ways to do this. For example:"
 msgstr ""
+"Vous avez besoin de transférer votre clé publique sur votre appareil. Il y a "
+"plusieurs façons de faire cela. Par exemple:"
 
 #: ../../userguide/advanceduse/ssh.rst:20
 msgid ""
 "Connect the ubports device and the PC with a USB cable. Then copy the "
 "file using your filemanager."
 msgstr ""
+"Connectez l'appareil UBprts et le PC avec un câble USB. Copiez alors le "
+"fichier en utilisant votre gestionnaire de fichier."
 
 #: ../../userguide/advanceduse/ssh.rst:21
 msgid ""
 "Or transfer the key via the internet by mailing it to yourself, or "
 "uploading it to your own cloud storage, or webserver, etc."
 msgstr ""
+"Ou transférez la clé par l'Internet en vous l’envoyant par mail, ou en la "
+"chargeant sur votre stockage en nuage, ou par l'intermédiaire d'un serveur "
+"web, etc."
 
 #: ../../userguide/advanceduse/ssh.rst:22
 msgid ""
 "You can also connect via :doc:`adb <adb>` and use the following command "
 "to copy it::"
 msgstr ""
+"Vous pouvez aussi vous connecter via :doc:`adb <adb>` et utiliser la "
+"commande suivante pour le copier::"
 
 #: ../../userguide/advanceduse/ssh.rst:27
 msgid "Configure your device"
-msgstr ""
+msgstr "Configurer votre appareil"
 
 #: ../../userguide/advanceduse/ssh.rst:29
 msgid ""
@@ -368,28 +457,36 @@ msgid ""
 "stored as ``/home/phablet/id_rsa.pub``. Use the terminal app or and adb "
 "connection to perform the following steps on your phone. ::"
 msgstr ""
+"La clé publique se trouve maintenant sur l'appareil UBports. Il peut se "
+"trouver stocké sous ce nom par exemple ``/home/phablet/id_rsa.pub``. "
+"Utilisez l'application terminal ou une connexion adb pour suivre les étapes "
+"suivantes sur votre téléphone. ::"
 
 #: ../../userguide/advanceduse/ssh.rst:38
 msgid "Now start the ssh server::"
-msgstr ""
+msgstr "Démarrez maintenant votre serveur ssh::"
 
 #: ../../userguide/advanceduse/ssh.rst:42
 msgid ""
 "To make sure the ssh server is automatically started in the future, "
 "execute::"
 msgstr ""
+"Pour être sûr que le serveur ssh sera démarré automatiquement dans le futur, "
+"lancez::"
 
 #: ../../userguide/advanceduse/ssh.rst:47
 msgid "Connect"
-msgstr ""
+msgstr "Connexion"
 
 #: ../../userguide/advanceduse/ssh.rst:49
 msgid "Now everything is set up and you can use ``ssh`` ::"
-msgstr ""
+msgstr "Maintenant que tout est configuré, vous pouvez utiliser ``ssh`` ::"
 
 #: ../../userguide/advanceduse/ssh.rst:53
 msgid "Of course you can now also use ``scp`` or ``sshfs`` to transfer files."
 msgstr ""
+"Vous pouvez bien sûr maintenant aussi utiliser ``scp`` ou ``sshfs`` pour "
+"transférer des fichiers."
 
 #: ../../userguide/advanceduse/ssh.rst:58
 msgid ""
@@ -750,4 +847,3 @@ msgid ""
 "the partition that holds their hardware IDs and can no longer connect to "
 "Wi-Fi or cellular networks."
 msgstr ""
-
