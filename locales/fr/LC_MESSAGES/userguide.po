@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-02 20:00-0600\n"
-"PO-Revision-Date: 2018-02-02 19:58+0000\n"
+"PO-Revision-Date: 2018-02-04 20:32+0000\n"
 "Last-Translator: Laurent Rouxel <lrouxel@free.fr>\n"
 "Language-Team: French <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-userguide/fr/>\n"
@@ -494,6 +494,9 @@ msgid ""
 "<https://askubuntu.com/questions/348714/how-can-i-access-my-ubuntu-phone-"
 "over-ssh/599041#599041>`_"
 msgstr ""
+"`askubuntu.com: How can I access my Ubuntu phone over ssh? "
+"<https://askubuntu.com/questions/348714/how-can-i-access-my-ubuntu-phone-"
+"over-ssh/599041#599041>`_"
 
 #: ../../userguide/advanceduse/ssh.rst:59
 msgid ""
@@ -501,28 +504,35 @@ msgid ""
 "ubuntu-phone via Wifi <https://gurucubano.gitbooks.io/bq-aquaris-e-4-5"
 "-ubuntu-phone/content/en/chapter1.html>`_"
 msgstr ""
+"`gurucubano: BQ Aquaris E 4.5 Ubuntu phone: How to get SSH access to the "
+"ubuntu-phone via Wifi <https://gurucubano.gitbooks.io/bq-aquaris-e-4-5"
+"-ubuntu-phone/content/en/chapter1.html>`_"
 
 #: ../../userguide/advanceduse/switchchannel.rst:2
 msgid "Switch release channels"
-msgstr ""
+msgstr "Changer le canal de mise à jour"
 
 #: ../../userguide/dailyuse/index.rst:2
 msgid "Daily use"
-msgstr ""
+msgstr "Utilisation quotidienne"
 
 #: ../../userguide/dailyuse/index.rst:4
 msgid ""
 "This section of the documentation details common tasks that users may "
 "want to perform while using their Ubuntu Touch device."
 msgstr ""
+"Cette rubrique de la documentation détaille les tâches communes que les "
+"utilisateur peuvent effectuer lors de l'utilisation de leur appareil Ubuntu "
+"Touch."
 
 #: ../../userguide/dailyuse/libertine.rst:2
 msgid "Run desktop applications"
-msgstr ""
+msgstr "Lancer des applications desktop"
 
 #: ../../userguide/dailyuse/libertine.rst:4
 msgid "Libertine allows you to use standard desktop applications in Ubuntu Touch."
 msgstr ""
+"Libertine vous permet d'utiliser des applications desktop dans Ubuntu Touch."
 
 #: ../../userguide/dailyuse/libertine.rst:6
 msgid ""
@@ -530,32 +540,39 @@ msgid ""
 "which is available in the Canonical App Store. To install applications "
 "you need to use the commandline as described below."
 msgstr ""
+"Pour afficher et lancer ces applications, vous avez besoin du *Desktop Apps "
+"Scope* qui est disponible dans le Canonical App Store. Pour installer ces "
+"applications, vous devez utiliser la ligne de commande comme décrit en "
+"dessous."
 
 #: ../../userguide/dailyuse/libertine.rst:9
 msgid "Manage containers"
-msgstr ""
+msgstr "Gérer les conteneurs"
 
 #: ../../userguide/dailyuse/libertine.rst:12
 msgid "Create a container"
-msgstr ""
+msgstr "Créer un conteneur"
 
 #: ../../userguide/dailyuse/libertine.rst:14
 msgid ""
 "The first step is to create a container where applications can be "
 "installed:"
 msgstr ""
+"La première étape est de créer un conteneur dans lequel les applications "
+"peuvent être installées:"
 
 #: ../../userguide/dailyuse/libertine.rst:16
 msgid "``libertine-container-manager create -i CONTAINER-IDENTIFIER``"
-msgstr ""
+msgstr "``libertine-container-manager create -i CONTAINER-IDENTIFIER``"
 
 #: ../../userguide/dailyuse/libertine.rst:18
 msgid "You can add extra options such as:"
-msgstr ""
+msgstr "Vous pouvez ajouter des options supplémentaires comme:"
 
 #: ../../userguide/dailyuse/libertine.rst:20
 msgid "``-n name`` name is a more user friendly name of the container"
 msgstr ""
+"``-n name`` remplacer name par un nom facile à retenir à donner au conteneur"
 
 #: ../../userguide/dailyuse/libertine.rst:21
 msgid ""
