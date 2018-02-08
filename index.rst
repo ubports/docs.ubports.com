@@ -44,6 +44,12 @@ If you want to help improving this documentation, :doc:`the Documentation contri
 
    appdev/index
 
+.. toctree::
+   :maxdepth: 1
+   :caption: Porting
+   :name: sec-porting
+
+   porting/introduction
 
 .. toctree::
    :maxdepth: 1
@@ -54,10 +60,3 @@ If you want to help improving this documentation, :doc:`the Documentation contri
    Ubuntu UI-Toolkit <https://api-docs.ubports.com/>
    Clickable <http://clickable.bhdouglass.com/en/latest/index.html>
    Halium <https://docs.halium.org/en/latest/index.html>
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Porting
-   :name: sec-porting
-
-   porting/introduction

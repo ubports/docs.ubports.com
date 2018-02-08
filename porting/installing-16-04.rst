@@ -3,11 +3,11 @@ Installing Ubuntu Touch 16.04 images on Halium
 
 .. warning::
 
-    These steps  will wipe all of the data on your device. If there is anything that you would like to keep, ensure it is backed up and copied off of the device before continuing. It is not a good idea to port Ubuntu Touch using the device you rely on every day as a testing device. You will lose data. I speak from personal experience.
+    These steps  will wipe **all** of the data on your device. If there is anything that you would like to keep, ensure it is backed up and copied off of the device before continuing.
 
 Now that you've :doc:`built ubports-boot <building-ubports-boot>`, we'll use a script called ``rootstock-touch-install`` to install an Ubuntu Touch rootfs on your device.
 
-In order to install Ubuntu Touch, you will need a recovery with Busybox, such as TWRP, installed on your phone. You will also need ensure the /data partition is formatted with ext4 and does not have any encryption on it.
+In order to install Ubuntu Touch, you will need a recovery with Busybox, such as TWRP, installed on your phone. You will also need to ensure the /data partition is formatted with ext4 and does not have any encryption on it.
 
 Install ubports-boot
 --------------------
@@ -36,7 +36,7 @@ Download the rootstock-touch-install script from `universalsuperbox/rootstock-ng
 
 The script will copy and extract the files to their proper places, then allow you to set the phablet user's password. If it gets all the way to ``rebooting device`` and doesn't seem to produce any errors, it's time to continue to the next step. If something goes wrong, please get in touch with us. If your device doesn't reboot automatically, reboot it using your recovery's interface.
 
-If you get errors similar to ``broken pipe`` or ``out of memory``, use the ``-b`` option to push the busybox or toybox build that came from your tree. These may have fewer bugs than your recovery's busybox.
+If you get errors similar to ``broken pipe`` or ``out of memory``, use the ``-b`` option to push the busybox or toybox build that came from your tree. These may have fewer bugs than your recovery's busybox. More information about this option is available in the script's README.
 
 
 Get SSH access
@@ -52,11 +52,10 @@ Similar to the Halium reference rootfs, you should set your computer's IP on the
 
 The password will be the one that you set while running rootstock.
 
-
 Make / writeable
 ----------------
 
-Before we make any changes to the rootfs (which is in the next step), you'll need to remount it with write permissions. To do that, run the following command::
+Before we make any changes to the rootfs (which will be required for the next step), you'll need to remount it with write permissions. To do that, run the following command::
 
     sudo mount -o remount,rw /
 
@@ -70,6 +69,11 @@ Now that you're logged in, you must create some udev rules to allow Ubuntu Touch
     cat /var/lib/lxc/android/rootfs/ueventd*.rc|grep ^/dev|sed -e 's/^\/dev\///'|awk '{printf "ACTION==\"add\", KERNEL==\"%s\", OWNER=\"%s\", GROUP=\"%s\", MODE=\"%s\"\n",$1,$3,$4,$2}' | sed -e 's/\r//' >/usr/lib/lxc-android-config/70-[codename].rules
 
 Now, reboot the device. If all has gone well, you will eventually see the Ubuntu Touch spinner followed by Unity 8. Your lock password is the same as you set for SSH.
+
+Continue on
+-----------
+
+Congratulations! Ubuntu Touch has now booted on your device. Move on to :doc:`running-ut` to learn about more specific steps you will need to take for a complete port.
 
 .. todo::
 
