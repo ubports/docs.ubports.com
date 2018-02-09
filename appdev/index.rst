@@ -6,16 +6,75 @@ Welcome to an open source and free platform under constant scrutiny and improvem
 Introduction
 ------------
 
+Ubuntu Touch has three types of applications: Web Applications (WebApps), Scopes and Native Applications.
+Applications are packaged, distributed and deployed using a format called `click <https://click.readthedocs.io/en/latest/>`_ packaging.
+Languages of choice are QML or HTML5 for the UI and can be Javascript, Qt, C++, Python, Go for the logic.
+
+Security and app isolation
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+All Ubuntu apps and scopes are confined respecting `AppArmor <https://wiki.ubuntu.com/AppArmor>`_ access control mechanism, meaning they only have access to their own resources and are isolated from other apps and parts of the system. The developer must declare which policy groups are needed for the app or scope to function properly with a `manifest.json` file.
+
+Example `manifest.json` file:
+
+::
+
+    {
+        "policy_groups": [
+            "networking",
+            "webview",
+            "content_exchange"
+        ],
+        "policy_version": 1.3
+    }
+
+Non exhaustive policy groups:
+
+- accounts: Can use Online Accounts
+- audio: Can play audio
+- camera: Can access the camera(s)
+- connectivity: Can access coarse network connectivity information
+- content_exchange: Can request/import data from other applications
+- content_exchange_source: Can provide/export data to other applications
+- keep-display-on: Can request keeping the screen on (available since 15.04, OTA 5)
+- location: Can access Location
+- microphone: Can access the microphone
+- networking: Can access the network
+- push-notification-client: Can use push notifications as a client
+- sensors: Can access the sensors
+- usermetrics: Can use UserMetrics to update the InfoGraphic
+- video: Can play video
+- webview: Can use the UbuntuWebview
+
+
+Ubuntu Touch platform
+^^^^^^^^^^^^^^^^^^^^^
+
+Platform key notes:
+
+Content Hub
+  Each application can expose content outside its sandbox, giving the user precise control over what can be imported, exported or shared with the world and other apps.
+
+Push notifications
+  By using a push server and a companion client, instantly serve users with the latest information from their network and apps.
+
+URL dispatcher
+  Help users navigate between your apps and drive their journey with the URL dispatcher.
+
+Online accounts
+  Simplify user access to online services by integrating with the online accounts API. Accounts added by the user on the device are registered in a centralized hub, allowing other apps to re-use them.
+
+
+ `Read the docs <https://docs.ubuntu.com/phone/en/platform/>`__ 
+
 .. todo:
+    import this doc
 
-    TODO app development overview : platform specificity, packaging introduction, which language available, content hub, push service, online accounts, ...
+Getting started
+---------------
 
-Clickable
----------
-
-Clickable is a meta-build system for Ubuntu Touch applications that allows you to compile, build, test and publish `click <https://click.readthedocs.io/en/latest/>`_ packages. It is currently the easiest and most convenient way of building click packages for Ubuntu Touch.
-
-See here for getting started `Read the Docs <http://clickable.bhdouglass.com/en/latest/>`_.
+`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ is a meta-build system for Ubuntu Touch applications that allows you to compile, build, test and publish `click` packages and provides various templates to get you started with UT app developpment.
+ It is currently the easiest and most convenient way of building click packages for Ubuntu Touch.
 
 Ubuntu UI-Toolkit
 -----------------
