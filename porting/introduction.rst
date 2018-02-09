@@ -16,3 +16,4 @@ Start at :doc:`building-ubports-boot` if you'd like to install the UBports Ubunt
 
     building-ubports-boot
     installing-16-04
+    running-ut

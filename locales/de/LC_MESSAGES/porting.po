@@ -3,23 +3,26 @@
 # This file is distributed under the same license as the UBports package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-02 20:00-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-01-31 22:27+0000\n"
+"Last-Translator: doniks <p.putz@yahoo.de>\n"
+"Language-Team: German <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-porting/de/>\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../porting/building-ubports-boot.rst:3
 msgid "Building ubports-boot"
-msgstr ""
+msgstr "ubports-boot bauen"
 
 #: ../../porting/building-ubports-boot.rst:5
 msgid ""
@@ -28,10 +31,14 @@ msgid ""
 " the vanilla hybris-boot that Halium produces. For this reason, we need "
 "to build ubports-boot."
 msgstr ""
+"Ubuntu Touch nutzt Upstart und nicht Systemd als init-Dienst. Deshalb ist es "
+"nicht vollständig Halium-kompatibel und kann nicht das originale hybris-boot "
+"verwenden, welches Halium erzeugt. Aus diesem Grund muss ein ubports-boot "
+"gebaut werden."
 
 #: ../../porting/building-ubports-boot.rst:9
 msgid "Add source to Halium tree"
-msgstr ""
+msgstr "Eine Quelle zum Halium-Verzeichnis hinzufügen"
 
 #: ../../porting/building-ubports-boot.rst:11
 msgid ""
@@ -39,6 +46,9 @@ msgid ""
 "to your Halium tree. You may choose to do this by adding it to your local"
 " manifests (recommended) or simply cloning it in place."
 msgstr ""
+"Als Erstes muss eine ubports-boot-Quelle zum Halium-Verzeichnis hinzugefügt "
+"werden.  Dies kann geschehen, indem es zum lokalen Manifest hinzugefügt wird "
+"(empfohlen) oder einfach durch Klonen am richtigen Ort."
 
 #: ../../porting/building-ubports-boot.rst:15
 msgid ""
@@ -47,24 +57,29 @@ msgid ""
 "remove it from your tree before you're able to build ``hybris-boot`` "
 "again."
 msgstr ""
+"Aufgrund eines `Fehlers im ubports-boot Build-Skript "
+"<https://github.com/ubports/ubports-boot/issues/3>`_, muss sie wieder vom "
+"Verzeichnis entfernt werden, um ``hybris-boot`` erneut zu bauen."
 
 #: ../../porting/building-ubports-boot.rst:19
 msgid "Add to local manifest"
-msgstr ""
+msgstr "Zum lokalen Manifest hinzufügen"
 
 #: ../../porting/building-ubports-boot.rst:21
 msgid ""
 "Create a new file in ``.repo/local_manifests`` called ``ubports-"
 "boot.xml``. Add the following to the file:"
 msgstr ""
+"Man erzeugt eine Datei in ``.repo/local_manifests`` namens ``ubports-"
+"boot.xml``. Folgendes fügt man hinzu:"
 
 #: ../../porting/building-ubports-boot.rst:30
 msgid "Now, just do a ``repo sync`` to download the new source."
-msgstr ""
+msgstr "Jetzt fehlt nur ein ``repo sync``, um die neue Quelle herunterzuladen."
 
 #: ../../porting/building-ubports-boot.rst:34
 msgid "Manual clone"
-msgstr ""
+msgstr "Manuelles Klonen"
 
 #: ../../porting/building-ubports-boot.rst:36
 msgid ""
@@ -72,16 +87,21 @@ msgid ""
 "<https://github.com/ubports/ubports-boot>`_ into your tree manually. It "
 "should be placed into ``BUILDDIR/halium/ubports-boot``."
 msgstr ""
+"Man kann auch das `ubports-boot-Repository <https://github.com/ubports"
+"/ubports-boot>`_ manuell in das Verzeichnis klonen. Es sollte in "
+"``BUILDDIR/halium/ubports-boot`` platziert werden."
 
 #: ../../porting/building-ubports-boot.rst:38
 msgid ""
 "If you share your code and build instructions, please note that you've "
 "done this."
 msgstr ""
+"Falls der Code und die entsprechenden Anleitungen geteilt werden soll, darf "
+"man diesen Schritt nicht vergessen."
 
 #: ../../porting/building-ubports-boot.rst:41
 msgid "Include in build system"
-msgstr ""
+msgstr "In Build-System einfügen"
 
 #: ../../porting/building-ubports-boot.rst:43
 msgid ""
@@ -92,8 +112,9 @@ msgid ""
 msgstr ""
 
 #: ../../porting/building-ubports-boot.rst:50
+#, fuzzy
 msgid "Fix mounts"
-msgstr ""
+msgstr "Mounts anpassen"
 
 #: ../../porting/building-ubports-boot.rst:54
 msgid ""
@@ -118,12 +139,15 @@ msgid ""
 msgstr ""
 
 #: ../../porting/building-ubports-boot.rst:58
+#, fuzzy
 msgid ""
 "The ubports-boot initramfs does not use the fixup-mountpoints script, nor"
 " does it put block devices in the proper place for mounting without "
 "modification. For this reason, we are going to have to edit your device's"
 " fstab."
 msgstr ""
+"Das initramfs von ubports-boot verwendet nicht das fixup-mountpoints Skript. "
+"Darum passen wir nun die fstab des devices an."
 
 #: ../../porting/building-ubports-boot.rst:60
 msgid ""
@@ -147,6 +171,8 @@ msgid ""
 "Now, remove all ``context=`` options from all block devices in the file. "
 "Save and exit."
 msgstr ""
+"Entferne jetzt alle ``context=`` Optionen von allen Block-devices. Dann "
+"speichern und Editor schliessen."
 
 #: ../../porting/building-ubports-boot.rst:66
 msgid ""
@@ -434,4 +460,3 @@ msgid ""
 "Start at :doc:`building-ubports-boot` if you'd like to install the "
 "UBports Ubuntu Touch 16.04 rootfs."
 msgstr ""
-

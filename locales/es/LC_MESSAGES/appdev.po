@@ -3,27 +3,30 @@
 # This file is distributed under the same license as the UBports package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-02 20:00-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-01-21 19:10+0000\n"
+"Last-Translator: advocatux <advocatux@airpost.net>\n"
+"Language-Team: Spanish <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-appdev/es/>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../appdev/clickable/cordova.rst:2
 msgid "Using clickable for cordova and HTML-5 development"
-msgstr ""
+msgstr "Usando clickable para cordova y desarrollo HTML-5"
 
 #: ../../appdev/clickable/cordova.rst:5
 msgid "About the guide"
-msgstr ""
+msgstr "Acerca de la guía"
 
 #: ../../appdev/clickable/cordova.rst:7
 msgid ""
@@ -34,12 +37,21 @@ msgid ""
 "don't know if there are still any developers who use Cordova for Ubuntu, "
 "but if there are some, I hope the guide will be useful."
 msgstr ""
+"El propósito de la página es proveer una guía similar a :doc:`ésta <setup>` "
+"para el desarrollo de aplicaciones basadas en Cordova (y tal vez otras "
+"basadas en HTML-5) usando un contenedor LXC. Tales aplicaciones son "
+"construidas en un entorno chroot y el sistema de construcción lleva un "
+"tiempo sin soporte en Xenial. No se si aún hay algún desarrollador que use "
+"Cordova para Ubuntu, pero si queda alguno, espero que esta guía le sea útil."
 
 #: ../../appdev/clickable/cordova.rst:9
 msgid ""
 "The steps needed to setup working environment are basicly the same as in "
 "original guide with few modifications specific to build environment."
 msgstr ""
+"Los pasos necesarios para configurar el entorno de trabajo son básicamente "
+"los mismos que en la guía original con algunas pocas modificaciones "
+"específicas para el entorno de construcción."
 
 #: ../../appdev/clickable/cordova.rst:11
 msgid ""
@@ -47,12 +59,18 @@ msgid ""
 "also need to enable **overlay** kernel module (it is required by *click* "
 "command to function properly)::"
 msgstr ""
+"Configure LXD como se detalla en: doc: `la publicación de configuración "
+"original <setup>`. También tenemos que habilitar el módulo del kernel "
+"**overlay** (es requerido por el mandato *click* para funcionar "
+"correctamente) ::"
 
 #: ../../appdev/clickable/cordova.rst:15
 msgid ""
 "We need a 17.04+ container, because fixes for build system are published "
 "only there and not in 16.04::"
 msgstr ""
+"Necesitamos un contenedor 17.04+ porque los arreglos para el sistema de "
+"construcción se publican solo allí y no en 16.04::"
 
 #: ../../appdev/clickable/cordova.rst:23
 msgid ""
@@ -62,34 +80,43 @@ msgid ""
 "configuration of the system and a new not root user are the same as in "
 "original post::"
 msgstr ""
+"Dentro del contenedor tenemos que hacer básicamente las mismas tres cosas: "
+"configuración básica del sistema, creación de un nuevo usuario root y "
+"configurar *clickable*. Los pasos para crear una configuración básica del "
+"sistema y un nuevo usuario no root son los mismos que en la publicación "
+"original::"
 
 #: ../../appdev/clickable/cordova.rst:30
 msgid "Configure Clickable"
-msgstr ""
+msgstr "Configurar Clickable"
 
 #: ../../appdev/clickable/cordova.rst:32
 msgid "Download *clickable* and add it to your ``PATH``."
-msgstr ""
+msgstr "Descargue *clickable* y añádalo a su ``PATH``."
 
 #: ../../appdev/clickable/cordova.rst:34
 msgid ""
 "Install NodeJS, build tools, and the cordova-cli package from the Cordova"
 " PPA::"
 msgstr ""
+"Instale NodeJS, herramientas de construcción y el paquete cordova-cli desde "
+"el Cordova PPA::"
 
 #: ../../appdev/clickable/cordova.rst:41
 msgid "Create chroot environment for building apps::"
-msgstr ""
+msgstr "Cree un entorno chroot para construir las aplicaciones::"
 
 #: ../../appdev/clickable/cordova.rst:45
 msgid ""
 "That's it. We now should have a working clickable environment for "
 "building Cordova apps."
 msgstr ""
+"Eso es. Deberíamos tener ahora un entorno clickable de trabajo para "
+"construir aplicaciones Cordova."
 
 #: ../../appdev/clickable/cordova.rst:49
 msgid "Notes on Cordova usage"
-msgstr ""
+msgstr "Notas sobre el uso de Cordova"
 
 #: ../../appdev/clickable/cordova.rst:51
 msgid ""
@@ -99,14 +126,21 @@ msgid ""
 "based on last official version, but adds few fixes that make it more "
 "usable:"
 msgstr ""
+"Hay un cierto número de problemas pendientes sin arreglar desde hace tiempo "
+"en Cordova para Ubuntu. Así que si quiere crear aplicaciones usando Cordova, "
+"podría estar interesado en el `fork del proyecto <https://github.com/milikhin"
+"/cordova-ubuntu>`_. Está basado en la última versión oficial pero añade "
+"algunos pocos arreglos que lo hacen mas utilizable:"
 
 #: ../../appdev/clickable/cordova.rst:53
 msgid "WebView is automatically resized when on-screen keyboard is shown/hidden"
 msgstr ""
+"WebView se redimensiona automáticamente cuando se muestra/oculta el teclado "
+"en pantalla"
 
 #: ../../appdev/clickable/cordova.rst:54
 msgid "Copy/Paste operations are supported with touchscreen"
-msgstr ""
+msgstr "Las operaciones de copiar/pegar son compatibles con la pantalla táctil"
 
 #: ../../appdev/clickable/cordova.rst:56
 msgid ""
@@ -114,10 +148,13 @@ msgid ""
 "<https://github.com/milikhin/cordova-plugin-file>`__, which gives "
 "applications ability to list hidden files and directories."
 msgstr ""
+"Existe también el repositorio con el `File plugin "
+"<https://github.com/milikhin/cordova-plugin-file>`__ parcheado que da a las "
+"aplicaciones la habilidad de listar archivos y directorios ocultos."
 
 #: ../../appdev/clickable/setup.rst:2
 msgid "Setting up clickable"
-msgstr ""
+msgstr "Configurar clickable"
 
 #: ../../appdev/clickable/setup.rst:4
 msgid ""
@@ -126,24 +163,30 @@ msgid ""
 " click packages in a docker container. Setting up clickable is simple and"
 " makes app development fast and easy!"
 msgstr ""
+"`Clickable <https://github.com/bhdouglass/clickable>`__ es un meta sistema "
+"de construcción para aplicaciones de Ubuntu Touch que le permite compilar y "
+"construir paquetes click en un contenedor docker. ¡Configurar clickable es "
+"sencillo y hace que el desarrollo de aplicaciones sea rápido y fácil!"
 
 #: ../../appdev/clickable/setup.rst:10
 msgid "Install"
-msgstr ""
+msgstr "Instalar"
 
 #: ../../appdev/clickable/setup.rst:12
 msgid "On Ubuntu you can also install clickable from a ppa:"
-msgstr ""
+msgstr "En Ubuntu también puede instalar clickable desde un ppa:"
 
 #: ../../appdev/clickable/setup.rst:22
 msgid ""
 "For other modern GNU/Linux distributions, you can install from the git "
 "repository. Note: You must have adb and docker installed on your system."
 msgstr ""
+"Para otras distribuciones GNU/Linux modernas, puede instalar desde el "
+"repositorio git. Nota: debe tener adb y docker instalado en su sistema."
 
 #: ../../appdev/clickable/setup.rst:34
 msgid "First app"
-msgstr ""
+msgstr "Primera aplicación"
 
 #: ../../appdev/clickable/setup.rst:36
 msgid ""
@@ -151,46 +194,57 @@ msgid ""
 "on your device and connect it to your PC to run your app directly on the "
 "device:"
 msgstr ""
+"¡Ahora tiene todo configurado para construir su primera aplicación! Active "
+"el modo de desarrollador en su dispositivo y conéctelo a su PC para ejecutar "
+"su aplicación directamente en el dispositivo:"
 
 #: ../../appdev/clickable/setup.rst:45
 msgid ""
 "This should build and start an app on your Ubuntu Touch device displaying"
 " \"Hello World!\""
 msgstr ""
+"Esto debería construir y comenzar una aplicación en su dispositivo Ubuntu "
+"Touch mostrando \"Hello World!\""
 
 #: ../../appdev/clickable/setup.rst:49
 msgid "Next Steps"
-msgstr ""
+msgstr "Próximos pasos"
 
 #: ../../appdev/clickable/setup.rst:51
 msgid ""
 "Documentation for clickable and all it's features can be found on `Read "
 "the Docs <http://clickable.bhdouglass.com/en/latest/>`__."
 msgstr ""
+"La documentación para clickable y todas sus funciones se puede encontrar en `"
+"Read the Docs <http://clickable.bhdouglass.com/en/latest/>`__."
 
 #: ../../appdev/cookbook.rst:2
 msgid "App development cookbook"
-msgstr ""
+msgstr "Recetario de desarrollo de aplicaciones"
 
 #: ../../appdev/cookbook.rst:5
 msgid "Unofficial resources"
-msgstr ""
+msgstr "Recursos no oficiales"
 
 #: ../../appdev/cookbook.rst:7
 msgid ""
 "In this section you will find links to external resources about creating "
 "applications for Ubuntu Touch."
 msgstr ""
+"En esta sección encontrará enlaces a recursos externos sobre creación de "
+"aplicaciones para Ubuntu Touch."
 
 #: ../../appdev/cookbook.rst:9
 msgid ""
 "`Ubuntu Touch programming book <https://www.gitbook.com/book/mimecar"
 "/ubuntu-touch-programming-course/details>`__"
 msgstr ""
+"`Libro de programación de Ubuntu Touch <https://www.gitbook.com/book/mimecar"
+"/ubuntu-touch-programming-course/details>`__"
 
 #: ../../appdev/cookbook.rst:12
 msgid "Playground"
-msgstr ""
+msgstr "Zona para jugar"
 
 #: ../../appdev/cookbook.rst:14
 msgid ""
@@ -200,6 +254,11 @@ msgid ""
 "that do exactly that: Explore. The purpose of this list is to show the "
 "unlimited possibilities of an open platform like Ubuntu Touch."
 msgstr ""
+"En una comunidad de código abierto completamente libre, es natural que haya "
+"miembros de la comunidad explorando los límites de la plataforma en muchas "
+"muchas direcciones. En esta sección encontrará enlaces a recursos externos "
+"que hacen exactamente eso: explorar. El propósito de esta lista es mostrar "
+"las posibilidades ilimitadas de una plataforma abierta como Ubuntu Touch."
 
 #: ../../appdev/cookbook.rst:17
 msgid ""
@@ -207,6 +266,9 @@ msgid ""
 "endorsed way of developing applications for Ubuntu Touch, but are "
 "interesting experiments."
 msgstr ""
+"Los recursos listados aquí no representan necesariamente la forma "
+"oficialmente respaldada de desarrollar aplicaciones para Ubuntu Touch, pero "
+"son experimentos interesantes."
 
 #: ../../appdev/cookbook.rst:19
 msgid ""
@@ -214,6 +276,9 @@ msgid ""
 "<http://kriscode.blogspot.tw/2016/09/freepascal-development-for-ubuntu-"
 "phone.html>`__"
 msgstr ""
+"`Desarrollo en Free Pascal para Ubuntu Touch "
+"<http://kriscode.blogspot.tw/2016/09/freepascal-development-for-ubuntu-"
+"phone.html>`__"
 
 #: ../../appdev/cookbook.rst:20
 msgid ""
@@ -221,6 +286,8 @@ msgid ""
 "<http://kriscode.blogspot.tw/2016/10/lazarus-development-for-ubuntu-"
 "phone.html>`__"
 msgstr ""
+"`Desarrollo en Lazarus para Ubuntu Touch <http://kriscode.blogspot.tw/2016/10"
+"/lazarus-development-for-ubuntu-phone.html>`__"
 
 #: ../../appdev/cookbook.rst:21
 msgid ""
@@ -229,10 +296,14 @@ msgid ""
 "<http://kriscode.blogspot.tw/2017/10/geany-on-ubuntu-touch-device-as-"
 "text.html>`__"
 msgstr ""
+"`Geany en un dispositivo Ubuntu Touch como editor de texto, editor de código "
+"fuente, depurador y compilador para múltiples lenguajes "
+"<http://kriscode.blogspot.tw/2017/10/geany-on-ubuntu-touch-device-as-"
+"text.html>`__"
 
 #: ../../appdev/index.rst:2
 msgid "App development"
-msgstr ""
+msgstr "Desarrollo de aplicaciones"
 
 #: ../../appdev/index.rst:4
 msgid ""
@@ -241,10 +312,14 @@ msgid ""
 "talent and commitment is unmatched. Ubuntu is also the third most "
 "deployed desktop OS in the world."
 msgstr ""
+"Bienvenido a una plataforma de fuente abierta y gratuita bajo escrutinio y "
+"mejora constantes por parte de una vibrante comunidad global, cuya energía, "
+"conectividad, talento y compromiso no tienen comparación. Ubuntu es también "
+"el tercer sistema operativo de escritorio más implementado en el mundo."
 
 #: ../../appdev/index.rst:7
 msgid "Clickable"
-msgstr ""
+msgstr "Clickable"
 
 #: ../../appdev/index.rst:9
 msgid ""
@@ -253,34 +328,42 @@ msgid ""
 "is currently the easiest and most convenient way of building click "
 "packages for Ubuntu Touch."
 msgstr ""
+"Clickable es un meta sistema de construcción para aplicaciones de Ubuntu "
+"Touch que le permite compilar y construir paquetes click en un contenedor "
+"docker. Actualmente es el modo más fácil y más conveniente de construir "
+"paquetes click para Ubuntu Touch."
 
 #: ../../appdev/index.rst:19
 msgid "Ubuntu UI-Toolkit"
-msgstr ""
+msgstr "Kit de herramientas para Ubuntu"
 
 #: ../../appdev/index.rst:21
 msgid ""
 "Here you can find `the API documentation <https://api-"
 "docs.ubports.com/>`_ for the Ubuntu UI toolkit."
 msgstr ""
+"Aquí puede encontrar la `documentación de la API <https://api-"
+"docs.ubports.com/>`_ para el kit de herramientas de Ubuntu."
 
 #: ../../appdev/index.rst:23
 msgid "`QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__"
-msgstr ""
+msgstr "`QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__"
 
 #: ../../appdev/index.rst:24
 msgid ""
 "`Cordova HTML5 API <https://api-"
 "docs.ubports.com/sdk/apps/html5/index.html>`__"
 msgstr ""
+"`Cordova HTML5 API <https://api-"
+"docs.ubports.com/sdk/apps/html5/index.html>`__"
 
 #: ../../appdev/index.rst:25
 msgid "`Click packages <https://click.readthedocs.io/en/latest/>`__"
-msgstr ""
+msgstr "`Paquetes Click <https://click.readthedocs.io/en/latest/>`__"
 
 #: ../../appdev/index.rst:28
 msgid "Ubuntu SDK IDE (unsupported)"
-msgstr ""
+msgstr "Ubuntu SDK IDE (sin soporte)"
 
 #: ../../appdev/index.rst:30
 msgid ""
@@ -288,16 +371,18 @@ msgid ""
 " no longer supported by Canonical, and UBports does not currently have "
 "the the time and manpower to get it to a working state."
 msgstr ""
+"El `Ubuntu SDK IDE <https://docs.ubuntu.com/phone/en/platform/sdk>`__ no "
+"está ya soportado por Canonical y UBports no tiene actualmente el tiempo ni "
+"la mano de obra para llevarlo a un estado operativo."
 
 #: ../../appdev/index.rst:34
 msgid "It can still be installed in Ubuntu 16.04, but issues are expected."
-msgstr ""
+msgstr "Puede instalarse en Ubuntu 16.04 pero espere problemas."
 
 #: ../../appdev/index.rst:44
 msgid "Cookbook"
-msgstr ""
+msgstr "Recetario"
 
 #: ../../appdev/index.rst:46
 msgid "A collection of external resources"
-msgstr ""
-
+msgstr "Una colección de recursos externos"

@@ -37,11 +37,8 @@ Let's assume it's stored as ``/home/phablet/id_rsa.pub``. Use the terminal app o
 
 Now start the ssh server::
 
-    sudo service ssh start
+    sudo android-gadget-service enable ssh
 
-To make sure the ssh server is automatically started in the future, execute::
-
-    sudo setprop persist.service.ssh true
 
 Connect
 -------
