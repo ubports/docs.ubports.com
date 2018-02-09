@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-15 11:14-0600\n"
+"POT-Creation-Date: 2018-02-08 19:46-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -119,6 +119,109 @@ msgstr ""
 msgid "Oneplus One::"
 msgstr ""
 
+#: ../../userguide/advanceduse/dav.rst:2
+msgid "CalDAV and CardDAV synchronization"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:4
+msgid ""
+"CalDAV and CardDAV are protocols to syncronize calendars and contacts "
+"with a remote server. Many email-hosters provide a CalDAV and CardDAV "
+"interface."
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:6
+msgid ""
+"**Note:** CalDAV Sync can also be set up in using the calendar app. Open "
+"the app, click on the little calendar icon in the top right corner and "
+"select \"Add internet calendar > Generic CalDAV\". Enter your calendar "
+"URL as well as your username and password to complete the process."
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:8
+msgid ""
+"At the moment, there is no carddav implemention directly accessible from "
+"the Ubuntu Touch graphical user-interface, so the only way to sync "
+"carddav is by using syncevolution + cron. However, there is a simple way "
+"to do that with a script that you can run in the terminal or via phablet "
+"SSH connection. These instructions work for caldav as well."
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:10
+msgid ""
+"Follow this `guide "
+"<https://docs.ubports.com/en/latest/userguide/advanceduse/adb.html>`_ to "
+"activate Developer Mode and ADB (or SSH) connection."
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:13
+msgid ""
+"Download this `script "
+"<https://gist.github.com/bastos77/0c47a94dd0bf3e394f879c0ff42b7839>`_ "
+"(let's call it dav.sh) and edit the following variables:"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:15
+msgid ""
+"server side : CAL_URL, **CONTACTS_URL**, USERNAME, PASSWORD (of your "
+"ownCloud/nextCloud/baikal/SOGO/... server)"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:16
+msgid ""
+"CONTACT and CALENDAR _ NAME / VISUAL_NAME / CONFIG_NAME (it's more "
+"cosmetic)"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:17
+msgid "CRON_FREQUENCY (for the frequency of synchronisation)"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:18
+msgid ""
+"Line 61: write ``sudo sh -c \"echo '$COMMAND_LINE' > /sbin/sogosync\"`` ,"
+" instead of ``sudo echo \"$COMMAND_LINE\" > /sbin/sogosync``, to avoid "
+"permission denied error"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:20
+msgid ""
+"Move the file to your UbuntuTouch device, either by file manager or with "
+"adb::"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:24
+msgid ""
+"Connect with the phablet shell (``adb shell``) or directly on the phone "
+"Terminal app and type the following::"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:31
+msgid "Sources:"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:33
+msgid ""
+"https://askubuntu.com/questions/616081/ubuntu-touch-add-contact-list-and-"
+"calendars/664834#664834"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:34
+msgid "https://gist.github.com/boTux/069b53d8e06bdb9b9c97"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:35
+msgid "https://gist.github.com/tcarrondo"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:36
+msgid "https://gist.github.com/bastos77"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:37
+msgid "https://askubuntu.com/questions/601910/ssh-ubuntu-touch"
+msgstr ""
+
 #: ../../userguide/advanceduse/index.rst:2
 msgid "Advanced use"
 msgstr ""
@@ -201,7 +304,7 @@ msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:32
 #: ../../userguide/advanceduse/screencasting.rst:72
-#: ../../userguide/advanceduse/ssh.rst:60
+#: ../../userguide/advanceduse/ssh.rst:53
 msgid "References"
 msgstr ""
 
@@ -373,38 +476,26 @@ msgstr ""
 msgid "Now start the ssh server::"
 msgstr ""
 
-#: ../../userguide/advanceduse/ssh.rst:42
-msgid ""
-"To make sure the ssh server is automatically started in the future, "
-"execute::"
-msgstr ""
-
-#: ../../userguide/advanceduse/ssh.rst:46
-msgid ""
-"In case the ssh was not enabled before, use the following command to "
-"permit ssh connexion form outside the mobile device::"
-msgstr ""
-
-#: ../../userguide/advanceduse/ssh.rst:51
+#: ../../userguide/advanceduse/ssh.rst:44
 msgid "Connect"
 msgstr ""
 
-#: ../../userguide/advanceduse/ssh.rst:53
+#: ../../userguide/advanceduse/ssh.rst:46
 msgid "Now everything is set up and you can use ``ssh`` ::"
 msgstr ""
 
-#: ../../userguide/advanceduse/ssh.rst:57
+#: ../../userguide/advanceduse/ssh.rst:50
 msgid "Of course you can now also use ``scp`` or ``sshfs`` to transfer files."
 msgstr ""
 
-#: ../../userguide/advanceduse/ssh.rst:62
+#: ../../userguide/advanceduse/ssh.rst:55
 msgid ""
 "`askubuntu.com: How can I access my Ubuntu phone over ssh? "
 "<https://askubuntu.com/questions/348714/how-can-i-access-my-ubuntu-phone-"
 "over-ssh/599041#599041>`_"
 msgstr ""
 
-#: ../../userguide/advanceduse/ssh.rst:63
+#: ../../userguide/advanceduse/ssh.rst:56
 msgid ""
 "`gurucubano: BQ Aquaris E 4.5 Ubuntu phone: How to get SSH access to the "
 "ubuntu-phone via Wifi <https://gurucubano.gitbooks.io/bq-aquaris-e-4-5"
@@ -635,7 +726,7 @@ msgid "Install a package:"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:48
-msgid "``libertine-container-manage install-package -p PACKAGE-NAME``"
+msgid "``libertine-container-manager install-package -p PACKAGE-NAME``"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:50
@@ -866,4 +957,20 @@ msgid ""
 "the partition that holds their hardware IDs and can no longer connect to "
 "Wi-Fi or cellular networks."
 msgstr ""
+
+#~ msgid ""
+#~ "To make sure the ssh server is "
+#~ "automatically started in the future, "
+#~ "execute::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In case the ssh was not enabled"
+#~ " before, use the following command to"
+#~ " permit ssh connexion form outside "
+#~ "the mobile device::"
+#~ msgstr ""
+
+#~ msgid "``libertine-container-manage install-package -p PACKAGE-NAME``"
+#~ msgstr ""
 

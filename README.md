@@ -9,3 +9,9 @@ You can find ways to contribute [here](https://docs.ubports.com/en/latest/contri
 ### Build instructions
 
 The documentation can be built by running `./build.sh` in the root of this repository. The script will also create a virtual build environment in `~/ubportsdocsenv` if none is present. After the build is complete, you can view the documentation by opening the html files in your favorite browser (eg. `firefox _build/index.html`).
+
+### Update translations
+
+To update translation po-files, run `./update-translations.sh` in the root of this repository.
+
+To add a new language, add its ISO code to the list in `languagues.sh` and run `./update-translations.sh`.
