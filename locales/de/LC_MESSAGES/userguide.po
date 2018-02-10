@@ -7,17 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-02 20:00-0600\n"
+"POT-Creation-Date: 2018-02-08 19:46-0600\n"
 "PO-Revision-Date: 2018-01-15 21:41+0000\n"
 "Last-Translator: Joerg Ulbricht <info@wildnislehrer.de>\n"
-"Language-Team: German <https://translate.ubports.com/projects/ubports-docs"
-"/documentation-userguide/de/>\n"
 "Language: de\n"
+"Language-Team: German <https://translate.ubports.com/projects/ubports-"
+"docs/documentation-userguide/de/>\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../userguide/advanceduse/adb.rst:2
@@ -95,8 +94,8 @@ msgid ""
 "When you're done using the shell, it's a good idea to turn Developer Mode"
 " off again."
 msgstr ""
-"Wenn die Shell nicht mehr verwendet wird, sollte der Entwicklermodus wieder "
-"deaktiviert werden."
+"Wenn die Shell nicht mehr verwendet wird, sollte der Entwicklermodus "
+"wieder deaktiviert werden."
 
 #: ../../userguide/advanceduse/adb.rst:39
 msgid ""
@@ -104,9 +103,9 @@ msgid ""
 " devices attached\" and a blank line), you are able to use ADB "
 "successfully. If not, continue to the next section."
 msgstr ""
-"Wenn sich ein Gerät in der Liste befindet (der Befehl gibt nicht \"List of "
-"devices attached\" und eine leere Zeile aus), kann ADB genutzt werden. Wenn "
-"nicht, folge den Anweisungen im nächsten Abschnitt."
+"Wenn sich ein Gerät in der Liste befindet (der Befehl gibt nicht \"List "
+"of devices attached\" und eine leere Zeile aus), kann ADB genutzt werden."
+" Wenn nicht, folge den Anweisungen im nächsten Abschnitt."
 
 #: ../../userguide/advanceduse/adb.rst:42
 msgid "Add hardware IDs"
@@ -118,8 +117,8 @@ msgid ""
 " not talk to. You can manually add the devices that it does not know how "
 "to talk to."
 msgstr ""
-"ADB erkennt nicht immer die Geräte am PC, die angesprochen werden sollen. Du "
-"kannst Geräte, die nicht erkannt werden konnten, manuell hinzufügen."
+"ADB erkennt nicht immer die Geräte am PC, die angesprochen werden sollen."
+" Du kannst Geräte, die nicht erkannt werden konnten, manuell hinzufügen."
 
 #: ../../userguide/advanceduse/adb.rst:46
 msgid ""
@@ -139,6 +138,109 @@ msgstr "Fairphone 2::"
 msgid "Oneplus One::"
 msgstr "Oneplus One::"
 
+#: ../../userguide/advanceduse/dav.rst:2
+msgid "CalDAV and CardDAV synchronization"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:4
+msgid ""
+"CalDAV and CardDAV are protocols to syncronize calendars and contacts "
+"with a remote server. Many email-hosters provide a CalDAV and CardDAV "
+"interface."
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:6
+msgid ""
+"**Note:** CalDAV Sync can also be set up in using the calendar app. Open "
+"the app, click on the little calendar icon in the top right corner and "
+"select \"Add internet calendar > Generic CalDAV\". Enter your calendar "
+"URL as well as your username and password to complete the process."
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:8
+msgid ""
+"At the moment, there is no carddav implemention directly accessible from "
+"the Ubuntu Touch graphical user-interface, so the only way to sync "
+"carddav is by using syncevolution + cron. However, there is a simple way "
+"to do that with a script that you can run in the terminal or via phablet "
+"SSH connection. These instructions work for caldav as well."
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:10
+msgid ""
+"Follow this `guide "
+"<https://docs.ubports.com/en/latest/userguide/advanceduse/adb.html>`_ to "
+"activate Developer Mode and ADB (or SSH) connection."
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:13
+msgid ""
+"Download this `script "
+"<https://gist.github.com/bastos77/0c47a94dd0bf3e394f879c0ff42b7839>`_ "
+"(let's call it dav.sh) and edit the following variables:"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:15
+msgid ""
+"server side : CAL_URL, **CONTACTS_URL**, USERNAME, PASSWORD (of your "
+"ownCloud/nextCloud/baikal/SOGO/... server)"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:16
+msgid ""
+"CONTACT and CALENDAR _ NAME / VISUAL_NAME / CONFIG_NAME (it's more "
+"cosmetic)"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:17
+msgid "CRON_FREQUENCY (for the frequency of synchronisation)"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:18
+msgid ""
+"Line 61: write ``sudo sh -c \"echo '$COMMAND_LINE' > /sbin/sogosync\"`` ,"
+" instead of ``sudo echo \"$COMMAND_LINE\" > /sbin/sogosync``, to avoid "
+"permission denied error"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:20
+msgid ""
+"Move the file to your UbuntuTouch device, either by file manager or with "
+"adb::"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:24
+msgid ""
+"Connect with the phablet shell (``adb shell``) or directly on the phone "
+"Terminal app and type the following::"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:31
+msgid "Sources:"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:33
+msgid ""
+"https://askubuntu.com/questions/616081/ubuntu-touch-add-contact-list-and-"
+"calendars/664834#664834"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:34
+msgid "https://gist.github.com/boTux/069b53d8e06bdb9b9c97"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:35
+msgid "https://gist.github.com/tcarrondo"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:36
+msgid "https://gist.github.com/bastos77"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:37
+msgid "https://askubuntu.com/questions/601910/ssh-ubuntu-touch"
+msgstr ""
+
 #: ../../userguide/advanceduse/index.rst:2
 #, fuzzy
 msgid "Advanced use"
@@ -150,8 +252,8 @@ msgid ""
 " may want to perform on their Ubuntu Touch device."
 msgstr ""
 "In diesem Abschnitt der Dokumentation werden erweiterte Arbeitsschritte "
-"beschrieben, die erfahrene Benutzer auf ihrem Ubuntu Touch-Gerät durchführen "
-"können."
+"beschrieben, die erfahrene Benutzer auf ihrem Ubuntu Touch-Gerät "
+"durchführen können."
 
 #: ../../userguide/advanceduse/index.rst:7
 #, fuzzy
@@ -161,11 +263,11 @@ msgid ""
 "your Ubuntu Touch device. Please consider these ramifications before "
 "hacking on your device too much!"
 msgstr ""
-"In einigen dieser Anweisungen wird das System-Image beschreibbar gemacht, "
-"wodurch OTA-Updates nicht mehr funktionieren können. Diese beschriebenen "
-"Funktionen können auch die allgemeine Sicherheit Ihres Ubuntu Touch-Geräts "
-"verringern. Bitte diese möglichen Auswirkungen vor dem Ausführen der "
-"entsprechenden Befehle berücksichtigen!"
+"In einigen dieser Anweisungen wird das System-Image beschreibbar gemacht,"
+" wodurch OTA-Updates nicht mehr funktionieren können. Diese beschriebenen"
+" Funktionen können auch die allgemeine Sicherheit Ihres Ubuntu Touch-"
+"Geräts verringern. Bitte diese möglichen Auswirkungen vor dem Ausführen "
+"der entsprechenden Befehle berücksichtigen!"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:2
 msgid "Reverse tethering"
@@ -179,9 +281,9 @@ msgid ""
 "internet."
 msgstr ""
 "Einige Nutzer verfügen eventuell weder über eine WLAN-Verbindung für ihr "
-"Phone noch über Datenvolumen ihres Mobilfunkproviders. Diese kurze Anleitung "
-"unterstützt Sie dabei Ihr UbuntuTouch-Device über  Ihren Computer mit dem "
-"Internet zu verbinden."
+"Phone noch über Datenvolumen ihres Mobilfunkproviders. Diese kurze "
+"Anleitung unterstützt Sie dabei Ihr UbuntuTouch-Device über  Ihren "
+"Computer mit dem Internet zu verbinden."
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:7
 msgid ""
@@ -235,7 +337,7 @@ msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:32
 #: ../../userguide/advanceduse/screencasting.rst:72
-#: ../../userguide/advanceduse/ssh.rst:56
+#: ../../userguide/advanceduse/ssh.rst:53
 msgid "References"
 msgstr ""
 
@@ -407,32 +509,26 @@ msgstr ""
 msgid "Now start the ssh server::"
 msgstr ""
 
-#: ../../userguide/advanceduse/ssh.rst:42
-msgid ""
-"To make sure the ssh server is automatically started in the future, "
-"execute::"
-msgstr ""
-
-#: ../../userguide/advanceduse/ssh.rst:47
+#: ../../userguide/advanceduse/ssh.rst:44
 msgid "Connect"
 msgstr ""
 
-#: ../../userguide/advanceduse/ssh.rst:49
+#: ../../userguide/advanceduse/ssh.rst:46
 msgid "Now everything is set up and you can use ``ssh`` ::"
 msgstr ""
 
-#: ../../userguide/advanceduse/ssh.rst:53
+#: ../../userguide/advanceduse/ssh.rst:50
 msgid "Of course you can now also use ``scp`` or ``sshfs`` to transfer files."
 msgstr ""
 
-#: ../../userguide/advanceduse/ssh.rst:58
+#: ../../userguide/advanceduse/ssh.rst:55
 msgid ""
 "`askubuntu.com: How can I access my Ubuntu phone over ssh? "
 "<https://askubuntu.com/questions/348714/how-can-i-access-my-ubuntu-phone-"
 "over-ssh/599041#599041>`_"
 msgstr ""
 
-#: ../../userguide/advanceduse/ssh.rst:59
+#: ../../userguide/advanceduse/ssh.rst:56
 msgid ""
 "`gurucubano: BQ Aquaris E 4.5 Ubuntu phone: How to get SSH access to the "
 "ubuntu-phone via Wifi <https://gurucubano.gitbooks.io/bq-aquaris-e-4-5"
@@ -441,6 +537,116 @@ msgstr ""
 
 #: ../../userguide/advanceduse/switchchannel.rst:2
 msgid "Switch release channels"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:2
+msgid "Run android applications"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:4
+msgid ""
+"`Anbox <https://anbox.io>`_ is a minimal android container and "
+"compatibility layer that allows you to run android applications on "
+"GNU/Linux operating systems."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:7
+msgid "Anbox is in early development"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:8
+msgid "Anbox for Ubuntu Touch is in even more early development"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:9
+msgid ""
+"Anbox only works on the 16.04 version of Ubuntu Touch, which is also in "
+"early development"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:10
+msgid ""
+"Only selected devices are supported for the moment, more will be added in"
+" the future."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:13
+msgid "Supported devices"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:15
+msgid "Make sure your device is supported:"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:17
+msgid ""
+"Meizu Pro 5 (codename: *turbo*, name of the boot partition: *bootimg*) BQ"
+" M10 HD (codename: *cooler*, name of the boot partition: *boot*) BQ M10 "
+"FHD (codename: *frieza*, name of the boot partition: *boot*)"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:21
+msgid ""
+"You will need the device codename and the name of your boot partition for"
+" the installation."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:24
+msgid "How to install"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:27
+msgid ""
+"Because this feature is in such an early stage of development, the "
+"installation is only recommended for experienced users."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:29
+msgid ""
+":doc:`Install <../install>` the 16.04/devel channel on your supported "
+"device"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:30
+msgid ""
+"Open a terminal and run ``export CODENAME=\"turbo\" && export "
+"PARTITIONNAME=\"bootimg\"``, but replace the part between the quotes "
+"respectively with the codename and name of the boot partition for your "
+"device. See the above list."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:31
+msgid "Activate developer mode on your device."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:32
+msgid ""
+"Connect the device to your computer computer and run the following "
+"commands::"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:40
+msgid "wait for the device to reboot, then run::"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:49
+msgid ""
+"Done! Select \"Anbox\" in the apps scope to use android applications. You"
+" might have to refresh the apps scope (pull down from the center of the "
+"screen and release) for the app to show up."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:52
+msgid "Reporting bugs"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:54
+msgid ""
+"Please :doc:`report any bugs </contribute/bugreporting>` you come "
+"accross. Bugs with Ubuntu Touch 16.04 are reported in `the normal Ubuntu "
+"Touch tracker <https://github.com/ubports/ubuntu-touch/issues>`_ and "
+"issues with anbox are reported on `our downstream fork "
+"<https://github.com/ubports/anbox/issues>`_. Thank you!"
 msgstr ""
 
 #: ../../userguide/dailyuse/index.rst:2
@@ -553,7 +759,7 @@ msgid "Install a package:"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:48
-msgid "``libertine-container-manage install-package -p PACKAGE-NAME``"
+msgid "``libertine-container-manager install-package -p PACKAGE-NAME``"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:50
@@ -784,3 +990,13 @@ msgid ""
 "the partition that holds their hardware IDs and can no longer connect to "
 "Wi-Fi or cellular networks."
 msgstr ""
+
+#~ msgid ""
+#~ "To make sure the ssh server is "
+#~ "automatically started in the future, "
+#~ "execute::"
+#~ msgstr ""
+
+#~ msgid "``libertine-container-manage install-package -p PACKAGE-NAME``"
+#~ msgstr ""
+

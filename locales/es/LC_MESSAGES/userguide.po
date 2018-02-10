@@ -7,17 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-02 20:00-0600\n"
+"POT-Creation-Date: 2018-02-08 19:46-0600\n"
 "PO-Revision-Date: 2018-01-22 20:34+0000\n"
 "Last-Translator: advocatux <advocatux@airpost.net>\n"
-"Language-Team: Spanish <https://translate.ubports.com/projects/ubports-docs"
-"/documentation-userguide/es/>\n"
 "Language: es\n"
+"Language-Team: Spanish <https://translate.ubports.com/projects/ubports-"
+"docs/documentation-userguide/es/>\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../userguide/advanceduse/adb.rst:2
@@ -30,9 +29,9 @@ msgid ""
 "shell from your PC. This is useful for debugging or more advanced shell "
 "usage."
 msgstr ""
-"Puede poner su dispositivo con UBports en modo de desarrollador y acceder a "
-"una terminal con Bash desde su PC. Esto es útil para depurar o para un uso "
-"mas avanzado de la terminal."
+"Puede poner su dispositivo con UBports en modo de desarrollador y acceder"
+" a una terminal con Bash desde su PC. Esto es útil para depurar o para un"
+" uso mas avanzado de la terminal."
 
 #: ../../userguide/advanceduse/adb.rst:8
 msgid "Install ADB"
@@ -59,8 +58,8 @@ msgid ""
 "For Windows, grab the command-line tools only package from `here "
 "<https://developer.android.com/studio/index.html#downloads>`_."
 msgstr ""
-"Para Windows, consiga las herramientas solo para línea de órdenes de `aquí "
-"<https://developer.android.com/studio/index.html#downloads>`_."
+"Para Windows, consiga las herramientas solo para línea de órdenes de "
+"`aquí <https://developer.android.com/studio/index.html#downloads>`_."
 
 #: ../../userguide/advanceduse/adb.rst:27
 msgid "Enable developer mode"
@@ -79,8 +78,8 @@ msgid ""
 "Place your device into developer mode (Settings - About - Developer Mode "
 "- check the box to turn it on)"
 msgstr ""
-"Ponga su dispositivo en modo de desarrollador (Configuración - Acerca de - "
-"Modo de desarrollador - marcar el recuadro para activarlo)"
+"Ponga su dispositivo en modo de desarrollador (Configuración - Acerca de "
+"- Modo de desarrollador - marcar el recuadro para activarlo)"
 
 #: ../../userguide/advanceduse/adb.rst:33
 msgid "Plug the device into a computer with adb installed"
@@ -105,8 +104,8 @@ msgid ""
 "successfully. If not, continue to the next section."
 msgstr ""
 "Si hay un dispositivo en la lista aquí (la orden no imprime \"Lista de "
-"dispositivos adjuntos\" y una línea en blanco), ya está dispuesto para usar "
-"ADB con éxito. Si no, continúe a la sección siguiente."
+"dispositivos adjuntos\" y una línea en blanco), ya está dispuesto para "
+"usar ADB con éxito. Si no, continúe a la sección siguiente."
 
 #: ../../userguide/advanceduse/adb.rst:42
 msgid "Add hardware IDs"
@@ -118,9 +117,9 @@ msgid ""
 " not talk to. You can manually add the devices that it does not know how "
 "to talk to."
 msgstr ""
-"ADB no siempre sabe con que dispositivos conectados a su ordenador debe o no "
-"comunicarse. Puede añadir manualmente los dispositivos con los que no sepa "
-"como comunicarse."
+"ADB no siempre sabe con que dispositivos conectados a su ordenador debe o"
+" no comunicarse. Puede añadir manualmente los dispositivos con los que no"
+" sepa como comunicarse."
 
 #: ../../userguide/advanceduse/adb.rst:46
 msgid ""
@@ -140,6 +139,112 @@ msgstr "Fairphone 2::"
 msgid "Oneplus One::"
 msgstr "Oneplus One::"
 
+#: ../../userguide/advanceduse/dav.rst:2
+msgid "CalDAV and CardDAV synchronization"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:4
+msgid ""
+"CalDAV and CardDAV are protocols to syncronize calendars and contacts "
+"with a remote server. Many email-hosters provide a CalDAV and CardDAV "
+"interface."
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:6
+msgid ""
+"**Note:** CalDAV Sync can also be set up in using the calendar app. Open "
+"the app, click on the little calendar icon in the top right corner and "
+"select \"Add internet calendar > Generic CalDAV\". Enter your calendar "
+"URL as well as your username and password to complete the process."
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:8
+msgid ""
+"At the moment, there is no carddav implemention directly accessible from "
+"the Ubuntu Touch graphical user-interface, so the only way to sync "
+"carddav is by using syncevolution + cron. However, there is a simple way "
+"to do that with a script that you can run in the terminal or via phablet "
+"SSH connection. These instructions work for caldav as well."
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:10
+msgid ""
+"Follow this `guide "
+"<https://docs.ubports.com/en/latest/userguide/advanceduse/adb.html>`_ to "
+"activate Developer Mode and ADB (or SSH) connection."
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:13
+msgid ""
+"Download this `script "
+"<https://gist.github.com/bastos77/0c47a94dd0bf3e394f879c0ff42b7839>`_ "
+"(let's call it dav.sh) and edit the following variables:"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:15
+msgid ""
+"server side : CAL_URL, **CONTACTS_URL**, USERNAME, PASSWORD (of your "
+"ownCloud/nextCloud/baikal/SOGO/... server)"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:16
+msgid ""
+"CONTACT and CALENDAR _ NAME / VISUAL_NAME / CONFIG_NAME (it's more "
+"cosmetic)"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:17
+msgid "CRON_FREQUENCY (for the frequency of synchronisation)"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:18
+msgid ""
+"Line 61: write ``sudo sh -c \"echo '$COMMAND_LINE' > /sbin/sogosync\"`` ,"
+" instead of ``sudo echo \"$COMMAND_LINE\" > /sbin/sogosync``, to avoid "
+"permission denied error"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:20
+msgid ""
+"Move the file to your UbuntuTouch device, either by file manager or with "
+"adb::"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:24
+msgid ""
+"Connect with the phablet shell (``adb shell``) or directly on the phone "
+"Terminal app and type the following::"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:31
+msgid "Sources:"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:33
+#, fuzzy
+msgid ""
+"https://askubuntu.com/questions/616081/ubuntu-touch-add-contact-list-and-"
+"calendars/664834#664834"
+msgstr ""
+"askubuntu: https://askubuntu.com/questions/655321/ubuntu-touch-reverse-"
+"tethering-and-click-apps-updates"
+
+#: ../../userguide/advanceduse/dav.rst:34
+msgid "https://gist.github.com/boTux/069b53d8e06bdb9b9c97"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:35
+msgid "https://gist.github.com/tcarrondo"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:36
+msgid "https://gist.github.com/bastos77"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:37
+msgid "https://askubuntu.com/questions/601910/ssh-ubuntu-touch"
+msgstr ""
+
 #: ../../userguide/advanceduse/index.rst:2
 msgid "Advanced use"
 msgstr "Uso avanzado"
@@ -149,8 +254,9 @@ msgid ""
 "This section of the documentation details advanced tasks that power users"
 " may want to perform on their Ubuntu Touch device."
 msgstr ""
-"Esta sección de la documentación detalla tareas avanzadas que los usuarios "
-"avanzados pueden querer realizar en sus dispositivos con Ubuntu Touch."
+"Esta sección de la documentación detalla tareas avanzadas que los "
+"usuarios avanzados pueden querer realizar en sus dispositivos con Ubuntu "
+"Touch."
 
 #: ../../userguide/advanceduse/index.rst:7
 msgid ""
@@ -159,10 +265,11 @@ msgid ""
 "your Ubuntu Touch device. Please consider these ramifications before "
 "hacking on your device too much!"
 msgstr ""
-"Algunas de estas guías implican hacer su imagen de sistema escribible, lo "
-"cual puede romper las actualizaciones OTA. Las guías también pueden reducir "
-"la seguridad en general de su dispositivo Ubuntu Touch. ¡Considere estas "
-"repercusiones antes de trastear demasiado su dispositivo!"
+"Algunas de estas guías implican hacer su imagen de sistema escribible, lo"
+" cual puede romper las actualizaciones OTA. Las guías también pueden "
+"reducir la seguridad en general de su dispositivo Ubuntu Touch. "
+"¡Considere estas repercusiones antes de trastear demasiado su "
+"dispositivo!"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:2
 msgid "Reverse tethering"
@@ -175,9 +282,10 @@ msgid ""
 "help you to connect your Ubuntu Touch to your computer to access "
 "internet."
 msgstr ""
-"Algunos usuarios pueden no tener una conexión inalámbrica para su teléfono "
-"ni un plan de datos de su proveedor móvil. Este breve tutorial le ayudará a "
-"conectar su Ubuntu Touch a su ordenador para poder acceder a Internet."
+"Algunos usuarios pueden no tener una conexión inalámbrica para su "
+"teléfono ni un plan de datos de su proveedor móvil. Este breve tutorial "
+"le ayudará a conectar su Ubuntu Touch a su ordenador para poder acceder a"
+" Internet."
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:7
 msgid ""
@@ -234,12 +342,12 @@ msgid ""
 "apply NAT: ``sudo iptables -t nat -A POSTROUTING -s 10.0.0.0/8 -o eth0 -j"
 " MASQUERADE``"
 msgstr ""
-"aplique la traducción de direcciones de red (NAT): ``sudo iptables -t nat -A "
-"POSTROUTING -s 10.0.0.0/8 -o eth0 -j MASQUERADE``"
+"aplique la traducción de direcciones de red (NAT): ``sudo iptables -t nat"
+" -A POSTROUTING -s 10.0.0.0/8 -o eth0 -j MASQUERADE``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:32
 #: ../../userguide/advanceduse/screencasting.rst:72
-#: ../../userguide/advanceduse/ssh.rst:56
+#: ../../userguide/advanceduse/ssh.rst:53
 msgid "References"
 msgstr "Referencias"
 
@@ -266,9 +374,9 @@ msgid ""
 msgstr ""
 "Ubuntu Touch viene con una utilidad de la línea de órdenes llamada "
 "``mirscreencast`` que vuelca los fotogramas de pantalla a un archivo. La "
-"idea aquí es transmitir la salida de pantalla de UT a un ordenador usando la "
-"red o directamente a través de adb de tal forma que podamos verla en directo "
-"o grabarla a un archivo."
+"idea aquí es transmitir la salida de pantalla de UT a un ordenador usando"
+" la red o directamente a través de adb de tal forma que podamos verla en "
+"directo o grabarla a un archivo."
 
 #: ../../userguide/advanceduse/screencasting.rst:9
 msgid "Using adb"
@@ -279,8 +387,8 @@ msgid ""
 "You can catch output directly from ``adb exec-out`` command and forward "
 "it to mplayer::"
 msgstr ""
-"Puede coger directamente la salida de la orden ``adb exec-out`` y enviarla a "
-"mplayer::"
+"Puede coger directamente la salida de la orden ``adb exec-out`` y "
+"enviarla a mplayer::"
 
 #: ../../userguide/advanceduse/screencasting.rst:15
 msgid ""
@@ -290,11 +398,12 @@ msgid ""
 "interval`` (1 = 60fps, 2=30fps, ...)  and size of frames ``384 640`` "
 "means width=384 height=640"
 msgstr ""
-"Nota bene: ``timeout`` se usa aquí para finalizar adecuadamente el proceso "
-"en el dispositivo (en este caso 120 segundos). Si no el proceso continuaría "
-"incluso si es finalizado en el ordenador. Puede reducir o aumentar los "
-"fotogramas por segundo con ``--cap-interval`` (1 = 60fps, 2=30fps, ...)  y "
-"el tamaño de los fotogramas ``384 640`` significa anchura=384 altura=640"
+"Nota bene: ``timeout`` se usa aquí para finalizar adecuadamente el "
+"proceso en el dispositivo (en este caso 120 segundos). Si no el proceso "
+"continuaría incluso si es finalizado en el ordenador. Puede reducir o "
+"aumentar los fotogramas por segundo con ``--cap-interval`` (1 = 60fps, "
+"2=30fps, ...)  y el tamaño de los fotogramas ``384 640`` significa "
+"anchura=384 altura=640"
 
 #: ../../userguide/advanceduse/screencasting.rst:19
 msgid "Via network"
@@ -313,8 +422,8 @@ msgid ""
 "Prepare your computer to listen to a tcp port(here 1234) and forward raw "
 "stream to a video player (here mplayer) with a frame size of 384x640::"
 msgstr ""
-"Prepare su ordenador para escuchar en un puerto tcp (en este caso 1234) y "
-"enviar la emisión sin procesar a un reproductor de vídeo (en este caso "
+"Prepare su ordenador para escuchar en un puerto tcp (en este caso 1234) y"
+" enviar la emisión sin procesar a un reproductor de vídeo (en este caso "
 "mplayer) con un tamaño de fotograma de 384x640::"
 
 #: ../../userguide/advanceduse/screencasting.rst:31
@@ -339,8 +448,8 @@ msgid ""
 "Forward and gzip stream with 60fps (--cap-interval 1) and frame size of "
 "384x640 to computer 10.42.0.209 on port 1234 ::"
 msgstr ""
-"Envíe y comprima (gzip) la emisión a 60fps (--cap-interval 1) y un tamaño de "
-"fotograma de 384x640 al ordenador 10.42.0.209 en el puerto 1234 ::"
+"Envíe y comprima (gzip) la emisión a 60fps (--cap-interval 1) y un tamaño"
+" de fotograma de 384x640 al ordenador 10.42.0.209 en el puerto 1234 ::"
 
 #: ../../userguide/advanceduse/screencasting.rst:46
 msgid "Example script"
@@ -353,8 +462,8 @@ msgid ""
 "computer::"
 msgstr ""
 "Este script le permite enviar la salida de pantalla de su dispositivo UT "
-"remoto a su PC local (debe tener acceso ssh a UT y mplayer instalado en su "
-"PC), ejecute en su ordenador::"
+"remoto a su PC local (debe tener acceso ssh a UT y mplayer instalado en "
+"su PC), ejecute en su ordenador::"
 
 #: ../../userguide/advanceduse/screencasting.rst:69
 msgid "You can download it here: :download:`files/mircast.sh`"
@@ -385,8 +494,8 @@ msgid ""
 "You need a ssh key pair for this. Logging in via password is disabled by "
 "default."
 msgstr ""
-"Necesita una pareja de claves de ssh para esto. La autorización de acceso "
-"vía contraseña está deshabilitada por defecto."
+"Necesita una pareja de claves de ssh para esto. La autorización de acceso"
+" vía contraseña está deshabilitada por defecto."
 
 #: ../../userguide/advanceduse/ssh.rst:9
 msgid "Create your public key"
@@ -399,8 +508,9 @@ msgid ""
 "with it each time::"
 msgstr ""
 "Si no la ha creado ya, cree su clave pública, las opciones por defecto "
-"deberían ser suficientes para una red de área local, puede dejar en blanco "
-"el campo de contraseña si no quiere tener que introducirla en cada ocasión::"
+"deberían ser suficientes para una red de área local, puede dejar en "
+"blanco el campo de contraseña si no quiere tener que introducirla en cada"
+" ocasión::"
 
 #: ../../userguide/advanceduse/ssh.rst:16
 msgid "Copy the public key to your device"
@@ -419,25 +529,25 @@ msgid ""
 "Connect the ubports device and the PC with a USB cable. Then copy the "
 "file using your filemanager."
 msgstr ""
-"Conecte el dispositivo con ubports y el PC con un cable USB. Después copie "
-"el archivo usando su administrador de archivos."
+"Conecte el dispositivo con ubports y el PC con un cable USB. Después "
+"copie el archivo usando su administrador de archivos."
 
 #: ../../userguide/advanceduse/ssh.rst:21
 msgid ""
 "Or transfer the key via the internet by mailing it to yourself, or "
 "uploading it to your own cloud storage, or webserver, etc."
 msgstr ""
-"O envíe la clave vía internet mandándosela por correo electrónico a usted "
-"mismo, o subiéndola a su propio almacenamiento en la nube, o servidor web, "
-"etc."
+"O envíe la clave vía internet mandándosela por correo electrónico a usted"
+" mismo, o subiéndola a su propio almacenamiento en la nube, o servidor "
+"web, etc."
 
 #: ../../userguide/advanceduse/ssh.rst:22
 msgid ""
 "You can also connect via :doc:`adb <adb>` and use the following command "
 "to copy it::"
 msgstr ""
-"También puede conectar vía :doc:`adb <adb>` y usar la siguiente orden para "
-"copiarla::"
+"También puede conectar vía :doc:`adb <adb>` y usar la siguiente orden "
+"para copiarla::"
 
 #: ../../userguide/advanceduse/ssh.rst:27
 msgid "Configure your device"
@@ -449,38 +559,30 @@ msgid ""
 "stored as ``/home/phablet/id_rsa.pub``. Use the terminal app or and adb "
 "connection to perform the following steps on your phone. ::"
 msgstr ""
-"Ahora ya tiene la clave pública en el dispositivo con UBports. Supongamos "
-"que está almacenada como ``/home/phablet/id_rsa.pub``. Use la aplicación de "
-"terminal o una conexión adb para realizar los siguientes pasos en su "
+"Ahora ya tiene la clave pública en el dispositivo con UBports. Supongamos"
+" que está almacenada como ``/home/phablet/id_rsa.pub``. Use la aplicación"
+" de terminal o una conexión adb para realizar los siguientes pasos en su "
 "teléfono. ::"
 
 #: ../../userguide/advanceduse/ssh.rst:38
 msgid "Now start the ssh server::"
 msgstr "Arranque ahora el servidor ssh::"
 
-#: ../../userguide/advanceduse/ssh.rst:42
-msgid ""
-"To make sure the ssh server is automatically started in the future, "
-"execute::"
-msgstr ""
-"Para asegurarse de que el servidor ssh comience automáticamente en el "
-"futuro, ejecute::"
-
-#: ../../userguide/advanceduse/ssh.rst:47
+#: ../../userguide/advanceduse/ssh.rst:44
 msgid "Connect"
 msgstr "Conectar"
 
-#: ../../userguide/advanceduse/ssh.rst:49
+#: ../../userguide/advanceduse/ssh.rst:46
 msgid "Now everything is set up and you can use ``ssh`` ::"
 msgstr "Ahora ya está configurado todo y puede usar ``ssh`` ::"
 
-#: ../../userguide/advanceduse/ssh.rst:53
+#: ../../userguide/advanceduse/ssh.rst:50
 msgid "Of course you can now also use ``scp`` or ``sshfs`` to transfer files."
 msgstr ""
-"Por supuesto ahora también puede usar ``scp`` o ``sshfs`` para transferir "
-"archivos."
+"Por supuesto ahora también puede usar ``scp`` o ``sshfs`` para transferir"
+" archivos."
 
-#: ../../userguide/advanceduse/ssh.rst:58
+#: ../../userguide/advanceduse/ssh.rst:55
 msgid ""
 "`askubuntu.com: How can I access my Ubuntu phone over ssh? "
 "<https://askubuntu.com/questions/348714/how-can-i-access-my-ubuntu-phone-"
@@ -490,20 +592,131 @@ msgstr ""
 "<https://askubuntu.com/questions/348714/how-can-i-access-my-ubuntu-phone-"
 "over-ssh/599041#599041>`_"
 
-#: ../../userguide/advanceduse/ssh.rst:59
+#: ../../userguide/advanceduse/ssh.rst:56
 msgid ""
 "`gurucubano: BQ Aquaris E 4.5 Ubuntu phone: How to get SSH access to the "
 "ubuntu-phone via Wifi <https://gurucubano.gitbooks.io/bq-aquaris-e-4-5"
 "-ubuntu-phone/content/en/chapter1.html>`_"
 msgstr ""
-"`gurucubano: teléfono Ubuntu BQ Aquaris E 4.5: como obtener acceso SSH a un "
-"teléfono Ubuntu vía conexión inalámbrica (wifi) "
+"`gurucubano: teléfono Ubuntu BQ Aquaris E 4.5: como obtener acceso SSH a "
+"un teléfono Ubuntu vía conexión inalámbrica (wifi) "
 "<https://gurucubano.gitbooks.io/bq-aquaris-e-4-5-ubuntu-"
 "phone/content/en/chapter1.html>`_"
 
 #: ../../userguide/advanceduse/switchchannel.rst:2
 msgid "Switch release channels"
 msgstr "Cambiar canales de publicación"
+
+#: ../../userguide/dailyuse/anbox.rst:2
+#, fuzzy
+msgid "Run android applications"
+msgstr "Ejecutar aplicaciones de escritorio"
+
+#: ../../userguide/dailyuse/anbox.rst:4
+msgid ""
+"`Anbox <https://anbox.io>`_ is a minimal android container and "
+"compatibility layer that allows you to run android applications on "
+"GNU/Linux operating systems."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:7
+msgid "Anbox is in early development"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:8
+msgid "Anbox for Ubuntu Touch is in even more early development"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:9
+msgid ""
+"Anbox only works on the 16.04 version of Ubuntu Touch, which is also in "
+"early development"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:10
+msgid ""
+"Only selected devices are supported for the moment, more will be added in"
+" the future."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:13
+msgid "Supported devices"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:15
+msgid "Make sure your device is supported:"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:17
+msgid ""
+"Meizu Pro 5 (codename: *turbo*, name of the boot partition: *bootimg*) BQ"
+" M10 HD (codename: *cooler*, name of the boot partition: *boot*) BQ M10 "
+"FHD (codename: *frieza*, name of the boot partition: *boot*)"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:21
+msgid ""
+"You will need the device codename and the name of your boot partition for"
+" the installation."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:24
+msgid "How to install"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:27
+msgid ""
+"Because this feature is in such an early stage of development, the "
+"installation is only recommended for experienced users."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:29
+msgid ""
+":doc:`Install <../install>` the 16.04/devel channel on your supported "
+"device"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:30
+msgid ""
+"Open a terminal and run ``export CODENAME=\"turbo\" && export "
+"PARTITIONNAME=\"bootimg\"``, but replace the part between the quotes "
+"respectively with the codename and name of the boot partition for your "
+"device. See the above list."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:31
+msgid "Activate developer mode on your device."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:32
+msgid ""
+"Connect the device to your computer computer and run the following "
+"commands::"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:40
+msgid "wait for the device to reboot, then run::"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:49
+msgid ""
+"Done! Select \"Anbox\" in the apps scope to use android applications. You"
+" might have to refresh the apps scope (pull down from the center of the "
+"screen and release) for the app to show up."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:52
+msgid "Reporting bugs"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:54
+msgid ""
+"Please :doc:`report any bugs </contribute/bugreporting>` you come "
+"accross. Bugs with Ubuntu Touch 16.04 are reported in `the normal Ubuntu "
+"Touch tracker <https://github.com/ubports/ubuntu-touch/issues>`_ and "
+"issues with anbox are reported on `our downstream fork "
+"<https://github.com/ubports/anbox/issues>`_. Thank you!"
+msgstr ""
 
 #: ../../userguide/dailyuse/index.rst:2
 msgid "Daily use"
@@ -514,8 +727,9 @@ msgid ""
 "This section of the documentation details common tasks that users may "
 "want to perform while using their Ubuntu Touch device."
 msgstr ""
-"Esta sección de la documentación detalla las tareas comunes que los usuarios "
-"pueden querer realizar mientras usan su dispositivo con Ubuntu Touch."
+"Esta sección de la documentación detalla las tareas comunes que los "
+"usuarios pueden querer realizar mientras usan su dispositivo con Ubuntu "
+"Touch."
 
 #: ../../userguide/dailyuse/libertine.rst:2
 msgid "Run desktop applications"
@@ -534,9 +748,9 @@ msgid ""
 "you need to use the commandline as described below."
 msgstr ""
 "Para mostrar y lanzar aplicaciones necesita el *Scope aplicaciones de "
-"escritorio* que está disponible en la tienda de aplicaciones de Canonical. "
-"Para instalar aplicaciones necesita usar la línea de órdenes como se "
-"describe abajo."
+"escritorio* que está disponible en la tienda de aplicaciones de "
+"Canonical. Para instalar aplicaciones necesita usar la línea de órdenes "
+"como se describe abajo."
 
 #: ../../userguide/dailyuse/libertine.rst:9
 msgid "Manage containers"
@@ -573,8 +787,8 @@ msgid ""
 "device supports it then ``lxc`` is suggested."
 msgstr ""
 "``-t type`` type puede ser tanto ``chroot`` como ``lxc``. Por defecto es "
-"``chroot`` y es compatible con todos los dispositivos. Si el núcleo de su "
-"dispositivo lo soporta, entonces es ``lxc`` la opción sugerida."
+"``chroot`` y es compatible con todos los dispositivos. Si el núcleo de su"
+" dispositivo lo soporta, entonces es ``lxc`` la opción sugerida."
 
 #: ../../userguide/dailyuse/libertine.rst:23
 msgid ""
@@ -592,11 +806,12 @@ msgid ""
 " the terminal app using a loopback ssh connection running this command: "
 "``ssh localhost``."
 msgstr ""
-"La orden ``create`` mostrada arriba no se puede ejecutar directamente en la "
-"aplicación de terminal, debido a las restricciones de apparmor. Puede "
+"La orden ``create`` mostrada arriba no se puede ejecutar directamente en "
+"la aplicación de terminal, debido a las restricciones de apparmor. Puede "
 "ejecutarla desde otro dispositivo usando tanto una conexión ``adb`` como "
-"``ssh``. Alternativamente, puede ejecutarla desde la aplicación de terminal "
-"usando una conexión ssh loopback ejecutando la orden: ``ssh localhost``."
+"``ssh``. Alternativamente, puede ejecutarla desde la aplicación de "
+"terminal usando una conexión ssh loopback ejecutando la orden: ``ssh "
+"localhost``."
 
 #: ../../userguide/dailyuse/libertine.rst:29
 msgid "List containers"
@@ -625,8 +840,8 @@ msgstr "Gestionar aplicaciones"
 #: ../../userguide/dailyuse/libertine.rst:42
 msgid "Once a container is set up, you can list the installed applications:"
 msgstr ""
-"Una vez que un contenedor está configurado, puede listar las aplicaciones "
-"instaladas:"
+"Una vez que un contenedor está configurado, puede listar las aplicaciones"
+" instaladas:"
 
 #: ../../userguide/dailyuse/libertine.rst:44
 msgid "``libertine-container-manager list-apps``"
@@ -637,7 +852,8 @@ msgid "Install a package:"
 msgstr "Instalar un paquete:"
 
 #: ../../userguide/dailyuse/libertine.rst:48
-msgid "``libertine-container-manage install-package -p PACKAGE-NAME``"
+#, fuzzy
+msgid "``libertine-container-manager install-package -p PACKAGE-NAME``"
 msgstr "``libertine-container-manage install-package -p PACKAGE-NAME``"
 
 #: ../../userguide/dailyuse/libertine.rst:50
@@ -654,9 +870,9 @@ msgid ""
 "CONTAINER-IDENTIFIER`` to specify for which container you want to perform"
 " an operation."
 msgstr ""
-"Si tiene mas de un contenedor, entonces puede usar la opción ``-i CONTAINER-"
-"IDENTIFIER`` para especificar en que contenedor quiere llevar a cabo una "
-"operación."
+"Si tiene mas de un contenedor, entonces puede usar la opción ``-i "
+"CONTAINER-IDENTIFIER`` para especificar en que contenedor quiere llevar a"
+" cabo una operación."
 
 #: ../../userguide/dailyuse/libertine.rst:59
 msgid "Files"
@@ -720,8 +936,7 @@ msgstr "Acceso al terminal"
 
 #: ../../userguide/dailyuse/libertine.rst:83
 msgid "To execute any arbitrary command as root inside the container run:"
-msgstr ""
-"Para ejecutar cualquier orden como root dentro de un contenedor ejecute:"
+msgstr "Para ejecutar cualquier orden como root dentro de un contenedor ejecute:"
 
 #: ../../userguide/dailyuse/libertine.rst:85
 msgid "``libertine-container-manager exec -c COMMAND``"
@@ -743,10 +958,10 @@ msgid ""
 "listing of ``ls /`` will be different inside and outside of the "
 "container."
 msgstr ""
-"Cuando inicie bash de esta manera no obtendrá ninguna reacción concreta que "
-"le confirme que ya está *dentro* de un contenedor. Puede comprobar ``ls /`` "
-"para confirmar que está dentro de un contenedor. La lista que mostrará ``ls "
-"/`` es diferente si está fuera o dentro del contenedor."
+"Cuando inicie bash de esta manera no obtendrá ninguna reacción concreta "
+"que le confirme que ya está *dentro* de un contenedor. Puede comprobar "
+"``ls /`` para confirmar que está dentro de un contenedor. La lista que "
+"mostrará ``ls /`` es diferente si está fuera o dentro del contenedor."
 
 #: ../../userguide/dailyuse/libertine.rst:94
 msgid "To get a shell as user ``phablet`` run:"
@@ -770,11 +985,12 @@ msgid ""
 "to display desktop applications."
 msgstr ""
 "Un servidor de pantalla coordina la entrada y salida de un sistema "
-"operativo. La mayoría de distribuciones Linux actuales usan el servidor X. "
-"Ubuntu Touch no usa X sino un nuevo servidor de pantalla llamado Mir. Esto "
-"significa que las aplicaciones estándar X no son directamente compatibles "
-"con Ubuntu Touch. Una capa de compatibilidad llamada XMir soluciona esto. "
-"Libertine depende de XMir para mostrar las aplicaciones de escritorio."
+"operativo. La mayoría de distribuciones Linux actuales usan el servidor "
+"X. Ubuntu Touch no usa X sino un nuevo servidor de pantalla llamado Mir. "
+"Esto significa que las aplicaciones estándar X no son directamente "
+"compatibles con Ubuntu Touch. Una capa de compatibilidad llamada XMir "
+"soluciona esto. Libertine depende de XMir para mostrar las aplicaciones "
+"de escritorio."
 
 #: ../../userguide/dailyuse/libertine.rst:103
 msgid ""
@@ -783,11 +999,11 @@ msgid ""
 "Libertine provides a container with a read-write filesystem to allow the "
 "installation of regular Linux desktop applications."
 msgstr ""
-"Otro reto es que las actualizaciones de sistema de Ubuntu Touch se publican "
-"como imágenes OTA. Una consecuencia de esto es que el sistema de archivos "
-"raíz es de solo lectura. Libertine proporciona un contenedor con un sistema "
-"de archivos de lectura-escritura para permitir la instalación de "
-"aplicaciones de escritorio normales Linux."
+"Otro reto es que las actualizaciones de sistema de Ubuntu Touch se "
+"publican como imágenes OTA. Una consecuencia de esto es que el sistema de"
+" archivos raíz es de solo lectura. Libertine proporciona un contenedor "
+"con un sistema de archivos de lectura-escritura para permitir la "
+"instalación de aplicaciones de escritorio normales Linux."
 
 #: ../../userguide/install.rst:2
 msgid "Install Ubuntu Touch"
@@ -802,10 +1018,11 @@ msgid ""
 "Linux, Mac or Windows computer."
 msgstr ""
 "La instalación de Ubuntu Touch es sencilla y se ha hecho un montón de "
-"trabajo para hacer el proceso de instalación menos intimidatorio para los "
-"usuarios menos técnicos. El instalador de UBports es una bonita herramienta "
-"gráfica que puede usar para instalar Ubuntu Touch en un `dispositivo "
-"soportado <devices.ubports.com>`_ desde su ordenador Linux, Mac o Windows."
+"trabajo para hacer el proceso de instalación menos intimidatorio para los"
+" usuarios menos técnicos. El instalador de UBports es una bonita "
+"herramienta gráfica que puede usar para instalar Ubuntu Touch en un "
+"`dispositivo soportado <devices.ubports.com>`_ desde su ordenador Linux, "
+"Mac o Windows."
 
 #: ../../userguide/install.rst:7
 msgid ""
@@ -814,8 +1031,8 @@ msgid ""
 "backup if you want to keep it."
 msgstr ""
 "Si está cambiando su dispositivo que tiene previamente Android, no podrá "
-"guardar ningún dato que esté actualmente en el dispositivo. Cree una copia "
-"de seguridad externa antes si quiere mantener los datos."
+"guardar ningún dato que esté actualmente en el dispositivo. Cree una "
+"copia de seguridad externa antes si quiere mantener los datos."
 
 #: ../../userguide/install.rst:9
 msgid ""
@@ -824,8 +1041,8 @@ msgid ""
 "for your operating system:"
 msgstr ""
 "Vaya a `la página de descargas <https://github.com/ubports/ubports-"
-"installer/releases/latest>`_ y descargue la versión adecuada del instalador "
-"para su sistema operativo:"
+"installer/releases/latest>`_ y descargue la versión adecuada del "
+"instalador para su sistema operativo:"
 
 #: ../../userguide/install.rst:11
 msgid "Windows: ubports-installer-<version-number>.exe"
@@ -840,8 +1057,8 @@ msgid ""
 "Linux: ubports-installer-<version-number>.deb, ubports-installer"
 "-<version-number>.snap or ubports-installer-<version-number>.AppImage"
 msgstr ""
-"Linux: ubports-installer-<número-de-versión>.deb, ubports-installer-<número-"
-"de-versión>.snap or ubports-installer-<número-de-versión>.AppImage"
+"Linux: ubports-installer-<número-de-versión>.deb, ubports-installer-<n"
+"úmero-de-versión>.snap or ubports-installer-<número-de-versión>.AppImage"
 
 #: ../../userguide/install.rst:15
 msgid ""
@@ -849,9 +1066,9 @@ msgid ""
 "you through the installation process. That's it! Have fun exploring "
 "Ubuntu Touch!"
 msgstr ""
-"Inicie el instalador y siga las instrucciones en pantalla que lo guiarán a "
-"través del proceso de instalación. ¡Eso es! ¡Diviértase explorando Ubuntu "
-"Touch!"
+"Inicie el instalador y siga las instrucciones en pantalla que lo guiarán "
+"a través del proceso de instalación. ¡Eso es! ¡Diviértase explorando "
+"Ubuntu Touch!"
 
 #: ../../userguide/install.rst:17
 msgid ""
@@ -859,9 +1076,9 @@ msgid ""
 "Ubuntu Touch to more devices, visit the :doc:`porting section "
 "</porting/introduction>`."
 msgstr ""
-"Si usted es un experimentado desarrollador de android y quiere ayudarnos a "
-"llevar Ubuntu Touch a mas dispositivos, visite :doc:`sección de portado "
-"</porting/introduction>`."
+"Si usted es un experimentado desarrollador de android y quiere ayudarnos "
+"a llevar Ubuntu Touch a mas dispositivos, visite :doc:`sección de portado"
+" </porting/introduction>`."
 
 #: ../../userguide/install.rst:20
 msgid "Install on legacy Android devices"
@@ -874,11 +1091,11 @@ msgid ""
 "nature. This part of the guide does not apply to any other devices or bq "
 "devices that are running the Canonical version of Ubuntu Touch."
 msgstr ""
-"Mientras que el proceso de instalación es bastante simple en la mayoría de "
-"los dispositivos, algunos dispositivos heredados (legacy) Bq y Meizu "
-"necesitan unos pasos especiales debido a su naturaleza cerrada. Esta parte "
-"de la guía no se aplica a ningún otro dispositivo o dispositivos Bq que "
-"están usando la versión Ubuntu Touch de Canonical."
+"Mientras que el proceso de instalación es bastante simple en la mayoría "
+"de los dispositivos, algunos dispositivos heredados (legacy) Bq y Meizu "
+"necesitan unos pasos especiales debido a su naturaleza cerrada. Esta "
+"parte de la guía no se aplica a ningún otro dispositivo o dispositivos Bq"
+" que están usando la versión Ubuntu Touch de Canonical."
 
 #: ../../userguide/install.rst:26
 msgid ""
@@ -891,12 +1108,13 @@ msgid ""
 "research."
 msgstr ""
 "Esto es mas o menos territorio inexplorado. Si los fabricantes del "
-"dispositivo no quieren que instale un sistema operativo alternativo en sus "
-"dispositivos, no hay mucho que podamos hacer nosotros. Las instrucciones de "
-"abajo son muy vagas y deben seguirlas solo los usuarios experimentados. "
-"Mientras que apreciamos que montones de personas quieran usar nuestro "
-"sistema operativo, flashing un dispositivo con herramientas OEM no debería "
-"hacerse sin un poco de conocimiento y un montón de investigación."
+"dispositivo no quieren que instale un sistema operativo alternativo en "
+"sus dispositivos, no hay mucho que podamos hacer nosotros. Las "
+"instrucciones de abajo son muy vagas y deben seguirlas solo los usuarios "
+"experimentados. Mientras que apreciamos que montones de personas quieran "
+"usar nuestro sistema operativo, flashing un dispositivo con herramientas "
+"OEM no debería hacerse sin un poco de conocimiento y un montón de "
+"investigación."
 
 #: ../../userguide/install.rst:28
 msgid ""
@@ -904,9 +1122,9 @@ msgid ""
 "website <http://www.mibqyyo.com/en-download/>`_ and use their SP Flash "
 "Tool to flash it."
 msgstr ""
-"Dispositivos BQ: descargue el firmware oficial de Ubuntu Edition de `su web "
-"<http://www.mibqyyo.com/en-download/>`_ y use su herramienta SP Flash para "
-"la instalación."
+"Dispositivos BQ: descargue el firmware oficial de Ubuntu Edition de `su "
+"web <http://www.mibqyyo.com/en-download/>`_ y use su herramienta SP Flash"
+" para la instalación."
 
 #: ../../userguide/install.rst:29
 msgid ""
@@ -917,12 +1135,12 @@ msgid ""
 "its own headaches. You're even more at your own risk on these."
 msgstr ""
 "Dispositivos Meizu: mayormente está atascado con Flyme. Para el MX4, hay "
-"algunas instrucciones por ahí para bajar de versión su sistema operativo, "
-"obtener root mediante una vulnerabilidad de seguridad (exploit), "
+"algunas instrucciones por ahí para bajar de versión su sistema operativo,"
+" obtener root mediante una vulnerabilidad de seguridad (exploit), "
 "desbloqueando su cargador de arranque (bootloader), y así. No podemos "
-"enlazarlas desde aquí por razones evidentes. El Pro5 está basado en Exynos y "
-"tiene sus propios dolores de cabeza. Usted está aún más a su propio riesgo "
-"en estos."
+"enlazarlas desde aquí por razones evidentes. El Pro5 está basado en "
+"Exynos y tiene sus propios dolores de cabeza. Usted está aún más a su "
+"propio riesgo en estos."
 
 #: ../../userguide/install.rst:33
 msgid ""
@@ -933,8 +1151,18 @@ msgid ""
 "Wi-Fi or cellular networks."
 msgstr ""
 "¡TENGA MUCHO CUIDADO! Realizando esta parte mal puede dañar o bloquear "
-"permanentemente su dispositivo. NUNCA seleccione la opción \"Formatear todo\""
-" en la herramienta SP Flash y lea cuidadosamente todo lo que le diga. "
-"Algunos usuarios han destrozado la partición que guarda la identificación de "
-"su hardware y no pueden nunca mas conectarse a una red inalámbrica o a una "
-"red móvil."
+"permanentemente su dispositivo. NUNCA seleccione la opción \"Formatear "
+"todo\" en la herramienta SP Flash y lea cuidadosamente todo lo que le "
+"diga. Algunos usuarios han destrozado la partición que guarda la "
+"identificación de su hardware y no pueden nunca mas conectarse a una red "
+"inalámbrica o a una red móvil."
+
+#~ msgid ""
+#~ "To make sure the ssh server is "
+#~ "automatically started in the future, "
+#~ "execute::"
+#~ msgstr ""
+#~ "Para asegurarse de que el servidor "
+#~ "ssh comience automáticamente en el "
+#~ "futuro, ejecute::"
+
