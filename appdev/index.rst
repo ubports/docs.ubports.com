@@ -13,32 +13,41 @@ Languages of choice are QML or HTML5 for the UI and can be Javascript, Qt, C++, 
 Click package overview
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Every `click` application must come with at least with a `manifest.json` file which provide application name, description, author, link to AppArmor profile policy file (see below) and to a `.desktop` file (the launcher)
+Every `click` application package must embed at least 3 files:
 
-Example `manifest.json` file:
+A `manifest.json` file
+  Contains application declarations  such as application name, description, author, framework sdk target, version ...
 
-::
+  Example `manifest.json` file:
+
+  ::
 
     {
+        "name": "myapp.author",
+        "title": "App Title",
+        "version": "0.1"
         "description": "Description of the app",
         "framework": "ubuntu-sdk-15.04",
+        "maintainer": "xxxx <xxx@xxxx>",
         "hooks": {
             "myapp": {
             "apparmor": "apparmor.json",
             "desktop": "app.desktop"
             }
         },
-        "maintainer": "xxxx <xxx@xxxx>",
-        "name": "myapp.author",
-        "title": "App Title",
-        "version": "0.1"
+        
+        
     } 
 
-The `.desktop` file will tell UT what to do when launching the app and which icon to display on the home screen. 
+An AppArmor profile policy file
+  Contains which policy the app use to work properly (see section `Security and app isolation`_.) 
 
-Example of `app.desktop`:
+A `.desktop` file
+  Then launcher file will tell UT what to do when launching the app, which name and icon to display on the home screen, and some properties to be known. 
 
-::
+  Example of `app.desktop`: 
+
+  ::
 
     [Desktop Entry]
     Name=Application title
@@ -48,8 +57,21 @@ Example of `app.desktop`:
     Type=Application
     X-Ubuntu-Touch=true
 
+  Non exhaustive properties:
 
-Security and app isolation
+  - Name: Application title has shown in the dash
+  - Exec: Path to the executable file
+  - Icon: Path to the icon to display
+  - Terminal: `false` if will not run in terminal window
+  - Type: Specifies the type of the launcher file. The type can be Application, Link or Directory.
+  - X-Ubuntu-Touch: `true` to make the app visible
+    
+
+.. todo:
+  link to official .desktop specifications
+
+
+Security and app isolation 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 All Ubuntu apps and scopes are confined respecting AppArmor access control mechanism `see Application Confinement <https://wiki.ubuntu.com/SecurityTeam/Specifications/ApplicationConfinement#App_confinement_with_AppArmor>`_ , meaning they only have access to their own resources and are isolated from other apps and parts of the system. The developer must declare which policy groups are needed for the app or scope to function properly with an apparmor `.json` file.
@@ -59,12 +81,13 @@ Example `apparmor.json` file:
 ::
 
     {
+        "policy_version": 1.3,
         "policy_groups": [
             "networking",
             "webview",
             "content_exchange"
-        ],
-        "policy_version": 1.3
+        ]
+        
     }
 
 Non exhaustive policy groups:
