@@ -10,12 +10,51 @@ Ubuntu Touch has three types of applications: Web Applications (WebApps), Scopes
 Applications are packaged, distributed and deployed using a format called `click <https://click.readthedocs.io/en/latest/>`_ packaging.
 Languages of choice are QML or HTML5 for the UI and can be Javascript, Qt, C++, Python, Go for the logic.
 
+Click package overview
+^^^^^^^^^^^^^^^^^^^^^^
+
+Every `click` application must come with at least with a `manifest.json` file which provide application name, description, author, link to AppArmor profile policy file (see below) and to a `.desktop` file (the launcher)
+
+Example `manifest.json` file:
+
+::
+
+    {
+        "description": "Description of the app",
+        "framework": "ubuntu-sdk-15.04",
+        "hooks": {
+            "myapp": {
+            "apparmor": "apparmor.json",
+            "desktop": "app.desktop"
+            }
+        },
+        "maintainer": "xxxx <xxx@xxxx>",
+        "name": "myapp.author",
+        "title": "App Title",
+        "version": "0.1"
+    } 
+
+The `.desktop` file will tell UT what to do when launching the app and which icon to display on the home screen. 
+
+Example of `app.desktop`:
+
+::
+
+    [Desktop Entry]
+    Name=Application title
+    Exec=qmlscene qml/Main.qml
+    Icon=assets/logo.svg
+    Terminal=false
+    Type=Application
+    X-Ubuntu-Touch=true
+
+
 Security and app isolation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-All Ubuntu apps and scopes are confined respecting `AppArmor <https://wiki.ubuntu.com/AppArmor>`_ access control mechanism, meaning they only have access to their own resources and are isolated from other apps and parts of the system. The developer must declare which policy groups are needed for the app or scope to function properly with a `manifest.json` file.
+All Ubuntu apps and scopes are confined respecting AppArmor access control mechanism `see Application Confinement <https://wiki.ubuntu.com/SecurityTeam/Specifications/ApplicationConfinement#App_confinement_with_AppArmor>`_ , meaning they only have access to their own resources and are isolated from other apps and parts of the system. The developer must declare which policy groups are needed for the app or scope to function properly with an apparmor `.json` file.
 
-Example `manifest.json` file:
+Example `apparmor.json` file:
 
 ::
 
@@ -65,16 +104,18 @@ Online accounts
   Simplify user access to online services by integrating with the online accounts API. Accounts added by the user on the device are registered in a centralized hub, allowing other apps to re-use them.
 
 
- `Read the docs <https://docs.ubuntu.com/phone/en/platform/>`__ 
+`Read the docs <https://docs.ubuntu.com/phone/en/platform/>`__ 
 
 .. todo:
     import this doc
+
 
 Getting started
 ---------------
 
 `Clickable <http://clickable.bhdouglass.com/en/latest/>`_ is a meta-build system for Ubuntu Touch applications that allows you to compile, build, test and publish `click` packages and provides various templates to get you started with UT app developpment.
- It is currently the easiest and most convenient way of building click packages for Ubuntu Touch.
+It is currently the easiest and most convenient way of building click packages for Ubuntu Touch.
+Also, looking at existing published app source code is a good way to learn: `see openstore <https://open.uappexplorer.com>`_
 
 Ubuntu UI-Toolkit
 -----------------
