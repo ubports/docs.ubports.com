@@ -65,7 +65,7 @@ A `.desktop` file
   - Terminal: `false` if will not run in terminal window
   - Type: Specifies the type of the launcher file. The type can be Application, Link or Directory.
   - X-Ubuntu-Touch: `true` to make the app visible
-    
+  - X-Ubuntu-XMir-Enable: `true` if your app is built for X
 
 .. todo:
   link to official .desktop specifications
