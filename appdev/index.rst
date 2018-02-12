@@ -43,7 +43,7 @@ An AppArmor profile policy file
   Contains which policy the app use to work properly (see section `Security and app isolation`_.) 
 
 A `.desktop` file
-  Then launcher file will tell UT what to do when launching the app, which name and icon to display on the home screen, and some properties to be known. 
+  The launcher file will tell UT what to do to launch the app, which name and icon to display on the home screen as well as some other properties . 
 
   Example of `app.desktop`: 
 
