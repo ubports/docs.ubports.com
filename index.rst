@@ -25,8 +25,7 @@ If you want to help improving this documentation, :doc:`the Documentation contri
    :name: sec-userguide
 
    userguide/install
-   userguide/dailyuse/index
-   userguide/advanceduse/index
+   userguide/howtos/index
 
 
 .. toctree::
