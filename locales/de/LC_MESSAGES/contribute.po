@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-08 19:46-0600\n"
-"PO-Revision-Date: 2018-01-14 22:30+0000\n"
-"Last-Translator: Alois Nebel <kunze.freyburg@freenet.de>\n"
+"PO-Revision-Date: 2018-02-14 22:12+0000\n"
+"Last-Translator: Florian Leeber <flori@bin.org.in>\n"
+"Language-Team: German <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-contribute/de/>\n"
 "Language: de\n"
-"Language-Team: German <https://translate.ubports.com/projects/ubports-"
-"docs/documentation-contribute/de/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../contribute/bugreporting.rst:2
@@ -95,18 +96,17 @@ msgstr ""
 " betroffen ist."
 
 #: ../../contribute/bugreporting.rst:20
-#, fuzzy
 msgid ""
 "If the report is missing any of the information specified later in this "
 "document, please add it yourself to help the developers fix the bug."
 msgstr ""
 "Sollte dem Fehlerbericht eine der im Folgenden genannten Informationen "
-"fehlen, sollten diese bitte hinzugefügt werden, um die Entwickler bei der"
-" Fehlerbehebung zu unterstützen. Reproduzieren des Fehlers"
+"fehlen, sollten diese bitte hinzugefügt werden, um die Entwickler bei der "
+"Fehlerbehebung zu unterstützen."
 
 #: ../../contribute/bugreporting.rst:23
 msgid "Reproduce the issue you've found"
-msgstr ""
+msgstr "Reproduzieren des Problems welches Du gefunden hast"
 
 #: ../../contribute/bugreporting.rst:25
 msgid ""
@@ -176,9 +176,8 @@ msgstr ""
 "möchte"
 
 #: ../../contribute/bugreporting.rst:43
-#, fuzzy
 msgid "Run the command: `adb shell dmesg > UTdmesg.txt`"
-msgstr "Befehl ausführen: `adb shell \"dmesg\" > \"UTdmesg.txt\"`"
+msgstr "Befehl ausführen: `adb shell dmesg > UTdmesg.txt`"
 
 #: ../../contribute/bugreporting.rst:45
 msgid ""
@@ -201,11 +200,9 @@ msgstr ""
 "verschiedenen Teilen des zugrunde liegenden Android-Systems an."
 
 #: ../../contribute/bugreporting.rst:53
-#, fuzzy
 msgid "Run the command: `adb shell /android/system/bin/logcat -d > UTlogcat.txt`"
 msgstr ""
-"Befehl ausführen: `adb shell \"/android/system/bin/logcat -d\" > "
-"\"UTlogcat.txt\"`"
+"Befehl ausführen: `adb shell /android/system/bin/logcat -d > UTlogcat.txt`"
 
 #: ../../contribute/bugreporting.rst:56
 msgid ""
@@ -220,11 +217,12 @@ msgid "Making the bug report"
 msgstr "Fehlerbericht erstellen"
 
 #: ../../contribute/bugreporting.rst:61
-#, fuzzy
 msgid ""
 "Now it's time for what you've been waiting for, the bug report itself! "
 "Bug reports need to be filed in English."
-msgstr "Nun ist es endlich an der Zeit, den Fehlerbericht zu erstellen!"
+msgstr ""
+"Nun ist es endlich an der Zeit, den Fehlerbericht zu erstellen! "
+"Fehlerberichte müssen in Englisch geschrieben werden."
 
 #: ../../contribute/bugreporting.rst:63
 msgid ""
@@ -349,14 +347,14 @@ msgid "Title"
 msgstr "Titel"
 
 #: ../../contribute/documentation.rst:18
-#, fuzzy
 msgid ""
 "All pages must have a document title that will be shown in the table of "
 "contents (left sidebar) and at the top of the page. This title is "
 "underlined with equals signs."
 msgstr ""
 "Alle Seiten müssen einen Dokumententitel haben. Der Titel wird im "
-"Inhaltsverzeichnis (zur Linken) und im Kopf der Seite angezeigt."
+"Inhaltsverzeichnis (zur Linken) und im Kopf der Seite angezeigt. Der Titel "
+"ist mit Gleichheitszeichen zu unterstreichen."
 
 #: ../../contribute/documentation.rst:20
 msgid "Titles should be sentence cased rather than Title Cased. For example::"
@@ -478,15 +476,15 @@ msgid "Propose your changes as a Pull Request."
 msgstr "Die Änderungen als Pull Request vorschlagen."
 
 #: ../../contribute/documentation.rst:70
-#, fuzzy
 msgid ""
 "If there are any errors with your proposed changes, the documentation "
 "team will ask you to make some changes and resubmit. This is as simple as"
 " editing the file on GitHub from your fork of the repository."
 msgstr ""
-"Falls es Probleme mit der vorgeschlagenen Änderung gibt, wird das "
-"Dokumentationsteam um die entsprechenden Änderungen bitten. Dies erledigt"
-" man einfach durch Bearbeiten der Datei im eigenen Fork des Repositorys."
+"Falls es Probleme mit Deinen vorgeschlagenen Änderungen gibt, wird das "
+"Dokumentationsteam um die entsprechenden Änderungen und Neuvorlage bitten. "
+"Dies erledigt man einfach durch Bearbeiten der Datei im eigenen Fork des "
+"Repositories."
 
 #: ../../contribute/documentation.rst:73
 msgid "Manually forking the repository"
@@ -601,14 +599,13 @@ msgid "Monetary support"
 msgstr "Finanzielle Unterstützung"
 
 #: ../../contribute/monetary.rst:4
-#, fuzzy
 msgid ""
 "You can help us keep the lights on at UBports by becoming a patron on "
 "`Liberapay <https://liberapay.com/UBports/>`_ or `Patreon "
 "<https://www.patreon.com/ubports>`_!"
 msgstr ""
-"Sie können dabei helfen, dass bei UBports die Lichter weiter brennen, "
-"indem Sie ein `Patreon <https://www.patreon.com/ubports>`_ werden!"
+"Du kannst dabei helfen, dass bei UBports die Lichter weiter brennen, indem "
+"Du ein `Patreon <https://www.patreon.com/ubports>`_ wirst!"
 
 #: ../../contribute/monetary.rst:6
 msgid ""
@@ -995,4 +992,3 @@ msgstr "Folge dem Link, um herauszufinden, was das genau bedeutet."
 #~ "Der Titel, unterstrichen mit "
 #~ "Gleichheitszeichen, wird im Inhaltsverzeichnis "
 #~ "links auf der Seite angezeigt."
-
