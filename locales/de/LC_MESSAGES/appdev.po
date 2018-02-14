@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-15 11:14-0600\n"
-"PO-Revision-Date: 2018-01-13 17:10+0000\n"
-"Last-Translator: Reinhold Blank <reinhold.blank@sonepar.de>\n"
+"PO-Revision-Date: 2018-02-14 22:08+0000\n"
+"Last-Translator: Florian Leeber <flori@bin.org.in>\n"
+"Language-Team: German <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-appdev/de/>\n"
 "Language: de\n"
-"Language-Team: German <https://translate.ubports.com/projects/ubports-"
-"docs/documentation-appdev/de/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../appdev/cookbook.rst:2
@@ -122,14 +123,13 @@ msgstr ""
 
 #: ../../appdev/index.rst:7
 msgid "Introduction"
-msgstr ""
+msgstr "Einleitung"
 
 #: ../../appdev/index.rst:14
 msgid "Clickable"
 msgstr "Clickable"
 
 #: ../../appdev/index.rst:16
-#, fuzzy
 msgid ""
 "Clickable is a meta-build system for Ubuntu Touch applications that "
 "allows you to compile, build, test and publish `click "
@@ -137,19 +137,19 @@ msgid ""
 " easiest and most convenient way of building click packages for Ubuntu "
 "Touch."
 msgstr ""
-"Clickable ist ein Meta-Build-System für Ubuntu–Touch Anwendungen, welches"
-" das kompilieren und erstellen von Click–Paketen in einem "
-"Docker–Container erlaubt. Momentan ist es der einfachste und bequemste "
-"Weg, Click–Pakete für Ubuntu Touch zu erstellen."
+"Clickable ist ein Meta-Build-System für Ubuntu–Touch Anwendungen, welches "
+"das Kompilieren und Erstellen von  `click "
+"<https://click.readthedocs.io/en/latest/>`–Paketen in einem Docker–Container "
+"erlaubt. Momentan ist es der einfachste und bequemste Weg, Click–Pakete für "
+"Ubuntu Touch zu erstellen."
 
 #: ../../appdev/index.rst:18
-#, fuzzy
 msgid ""
 "See here for getting started `Read the Docs "
 "<http://clickable.bhdouglass.com/en/latest/>`_."
 msgstr ""
-"Die Dokumentation für Clickable und seine Features findet man unter "
-"`Lesen der Unterlagen <http://clickable.bhdouglass.com/en/latest/>`__."
+"Die Dokumentation für Clickable und seine Features findet man unter `Read "
+"the Docs <http://clickable.bhdouglass.com/en/latest/>`_."
 
 #: ../../appdev/index.rst:21
 msgid "Ubuntu UI-Toolkit"
@@ -440,4 +440,3 @@ msgstr "Eine Sammlung externer Resourcen"
 
 #~ msgid "Next Steps"
 #~ msgstr "Nächste Schritte"
-
