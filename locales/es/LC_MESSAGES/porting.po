@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-08 19:46-0600\n"
-"PO-Revision-Date: 2018-01-22 13:24+0000\n"
+"PO-Revision-Date: 2018-02-15 17:10+0000\n"
 "Last-Translator: advocatux <advocatux@airpost.net>\n"
+"Language-Team: Spanish <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-porting/es/>\n"
 "Language: es\n"
-"Language-Team: Spanish <https://translate.ubports.com/projects/ubports-"
-"docs/documentation-porting/es/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../porting/building-ubports-boot.rst:2
@@ -73,14 +74,13 @@ msgid "Manual clone"
 msgstr "Clonación manual"
 
 #: ../../porting/building-ubports-boot.rst:31
-#, fuzzy
 msgid ""
 "You may also choose to clone the `ubports-boot repository "
 "<https://github.com/ubports/ubports-boot>`_ into your tree manually. It "
 "should be placed into ``BUILDDIR/halium/ubports-boot``."
 msgstr ""
 "También puede elegir clonar `el repositorio de ubports-boot "
-"<https://github.com/ubports/ubports-boot>`_ en su árbol manualmente. "
+"<https://github.com/ubports/ubports-boot>`_ en su árbol (tree) manualmente. "
 "Debería ser ubicado en ``BUILDDIR/halium/ubports-boot``."
 
 #: ../../porting/building-ubports-boot.rst:33
@@ -96,19 +96,17 @@ msgid "Include in build system"
 msgstr "Incluir en el sistema de construcción"
 
 #: ../../porting/building-ubports-boot.rst:38
-#, fuzzy
 msgid ""
 "The android build system won't know where to find ubports-boot normally. "
 "To fix this, open the file ``BUILDDIR/build/core/main.mk`` in a text "
 "editor. Find the comment ``# Specific projects for Halium`` and add "
 "``halium/ubports-boot`` to the list of ``subdirs`` ::"
 msgstr ""
-"El sistema de construcción de android normalmente no sabrá donde encontar"
-" el ubports-boot. Para arreglar esto, abra el archivo "
-"`BUILDDIR/build/core/main.mk`` en un editor de textos. Encuentre el "
-"comentario ``# Specific projects for Halium`` (# Proyectos específicos "
-"para Halium) y cambie el texto directamente de debajo para que coincida "
-"con esto::"
+"El sistema de construcción de android no sabrá donde encontar el arranque de "
+"ubports (ubports-boot) normalmente. Para arreglar esto, abra el archivo "
+"``BUILDDIR/build/core/main.mk`` en un editor de textos. Encuentre el "
+"comentario ``# Specific projects for Halium`` y añada ``halium/ubports-boot``"
+" a la lista de ``subdirs`` ::"
 
 #: ../../porting/building-ubports-boot.rst:45
 msgid "Fix mounts"
@@ -199,17 +197,16 @@ msgstr ""
 "de bloque en el archivo. Guarde y salga."
 
 #: ../../porting/building-ubports-boot.rst:61
-#, fuzzy
 msgid ""
 "For an example of this, see `this commit on "
 "universalsuperbox/android_device_motorola_potter "
 "<https://github.com/UniversalSuperBox/android_device_motorola_potter/commit/9b574967e3a6f07884760b418befe731ccfcb924>`__."
 " Removing the ``wait`` flag is not required and was an accident."
 msgstr ""
-"Para un ejemplo de esto, vea `este commit en "
-"universalsuperbox/android_device_motorola_potter "
-"<https://github.com/UniversalSuperBox/android_device_motorola_potter/commit/9b574967e3a6f07884760b418befe731ccfcb924>`_."
-" No se necesita la eliminación de la bandera (flag) ``wait``, fue un "
+"Para un ejemplo de esto, vea `este commit en universalsuperbox/"
+"android_device_motorola_potter <https://github.com/UniversalSuperBox/android_"
+"device_motorola_potter/commit/9b574967e3a6f07884760b418befe731ccfcb924>`__. "
+"No se necesita la eliminación de la bandera (flag) ``wait``, fue un "
 "accidente."
 
 #: ../../porting/building-ubports-boot.rst:65
@@ -228,7 +225,6 @@ msgstr ""
 "que el problema sea resuelto."
 
 #: ../../porting/building-ubports-boot.rst:69
-#, fuzzy
 msgid ""
 "To do this, open up your device's default ``init.rc`` (this is likely "
 "init.qcom.rc or init.[codename].rc), comment out any ``import`` "
@@ -238,13 +234,13 @@ msgid ""
 "UniversalSuperBox/android_device_motorola_potter "
 "<https://github.com/UniversalSuperBox/android_device_motorola_potter/commit/7875b48b5b6f240935d7f327d33128e952a3589b>`__"
 msgstr ""
-"Para hacer esto, abra el `init.rc`` por defecto  de su dispositivo "
-"(seguramente init.qcom.rc o init.[codename].rc), comente cualquier "
-"declaración ``import``y añada ``disabled`` a servicios comorild, qti y "
-"otros que interactúan con la radio. La mayoría de ellos tienen una línea "
-"``user radio``. Como ejemplo vea el `commit 7875b48b en "
-"UniversalSuperBox/android_device_motorola_potter "
-"<https://github.com/UniversalSuperBox/android_device_motorola_potter/commit/7875b48b5b6f240935d7f327d33128e952a3589b>`_"
+"Para hacer esto, abra el ``init.rc`` por defecto  de su dispositivo ("
+"seguramente init.qcom.rc o init.[codename].rc), comente cualquier "
+"declaración ``import`` y añada ``disabled`` a servicios como rild, qti y "
+"otros que interactúan mediante radio. La mayoría de ellos tienen una línea ``"
+"user radio``. Como ejemplo vea el `commit 7875b48b on UniversalSuperBox/"
+"android_device_motorola_potter <https://github.com/UniversalSuperBox/android_"
+"device_motorola_potter/commit/7875b48b5b6f240935d7f327d33128e952a3589b>`__"
 
 #: ../../porting/building-ubports-boot.rst:73
 msgid "Edit kernel config"
@@ -327,17 +323,14 @@ msgid "Installing Ubuntu Touch 16.04 images on Halium"
 msgstr "Instalando imágenes Ubuntu Touch 16.04 en Halium"
 
 #: ../../porting/installing-16-04.rst:6
-#, fuzzy
 msgid ""
 "These steps  will wipe **all** of the data on your device. If there is "
 "anything that you would like to keep, ensure it is backed up and copied "
 "off of the device before continuing."
 msgstr ""
-"Estos pasos borrarán todos sus datos en su dispositivo. Si hay algo que "
-"desee mantener, asegúrese de que tiene una copia de seguridad fuera de su"
-" dispositivo antes de continuar. No es una buena idea portar Ubuntu Touch"
-" al dispositivo del que depende diariamente como un dispositivo de "
-"pruebas. Perderá datos. Le hablo por experiencia propia."
+"Estos pasos borrarán **todos** sus datos en su dispositivo. Si hay algo que "
+"desee mantener, asegúrese de que tiene una copia de seguridad fuera de su "
+"dispositivo antes de continuar."
 
 #: ../../porting/installing-16-04.rst:8
 msgid ""
@@ -350,16 +343,15 @@ msgstr ""
 "Ubuntu Touch en el rootfs de su dispositivo."
 
 #: ../../porting/installing-16-04.rst:10
-#, fuzzy
 msgid ""
 "In order to install Ubuntu Touch, you will need a recovery with Busybox, "
 "such as TWRP, installed on your phone. You will also need to ensure the "
 "/data partition is formatted with ext4 and does not have any encryption "
 "on it."
 msgstr ""
-"A fin de instalar Ubuntu Touch, necesitará una recuperación con Busybox, "
-"como TWRP, instalado en su teléfono. También necesita asegurarse de que "
-"la partición /data está formateada con ext4 y no está cifrada."
+"A fin de instalar Ubuntu Touch, necesitará una recuperación con Busybox, tal "
+"como TWRP, instalado en su teléfono. También necesitará asegurarse de que la "
+"partición /data está formateada en ext4 y no está cifrada."
 
 #: ../../porting/installing-16-04.rst:13
 msgid "Install ubports-boot"
@@ -377,7 +369,7 @@ msgstr ""
 
 #: ../../porting/installing-16-04.rst:21
 msgid "Download the rootfs"
-msgstr ""
+msgstr "Descargar el rootfs"
 
 #: ../../porting/installing-16-04.rst:23
 msgid ""
@@ -389,6 +381,13 @@ msgid ""
 "you have an x86 device, let us know. We do not have a rootfs available "
 "for these yet."
 msgstr ""
+"A continuación necesitaremos descargar el rootfs (sistema de archivos raíz) "
+"que es adecuado para su dispositivo. Ahora mismo solo tenemos uno "
+"disponible. Simplemente descargue ``ubports-touch.rootfs-xenial-"
+"armhf.tar.gz`` desde `nuestro servidor CI <https://ci.ubports.com/job/xenial-"
+"rootfs-armhf/>`__. Si tiene un dispositivo ARM de 64-bit (aarch64), este "
+"mismo rootfs debería valerle. Si tiene un dispositivo x86, díganoslo. No "
+"tenemos un rootfs disponible para esos aún."
 
 #: ../../porting/installing-16-04.rst:27
 msgid "Install system.img and rootfs"
@@ -438,6 +437,11 @@ msgid ""
 " tree. These may have fewer bugs than your recovery's busybox. More "
 "information about this option is available in the script's README."
 msgstr ""
+"Si obtiene errores similares a ``broken pipe`` o ``out of memory``, use la "
+"opción ``-b`` para obligar la construcción busybox o toybox que viene de su "
+"árbol (tree). Estos pueden tener menos errores que el busybox de su "
+"recuperación. Mas información sobre esta opción está disponible en el README "
+"del script."
 
 #: ../../porting/installing-16-04.rst:43
 msgid "Get SSH access"
@@ -489,15 +493,14 @@ msgid "Make / writeable"
 msgstr "Hacer / escribible"
 
 #: ../../porting/installing-16-04.rst:58
-#, fuzzy
 msgid ""
 "Before we make any changes to the rootfs (which will be required for the "
 "next step), you'll need to remount it with write permissions. To do that,"
 " run the following command::"
 msgstr ""
-"Antes de que hagamos algún cambio al rootfs (que es el siguiente paso), "
-"necesitará remontarlo con permisos de escritura. Para hacer esto, ejecute"
-" la siguiente orden::"
+"Antes de que hagamos algún cambio al rootfs (que será necesario en el "
+"siguiente paso), necesitará montarlo de nuevo con permisos de escritura. "
+"Para hacer esto, ejecute la siguiente orden::"
 
 #: ../../porting/installing-16-04.rst:64
 msgid "Add udev rules"
@@ -530,6 +533,9 @@ msgid ""
 ":doc:`running-ut` to learn about more specific steps you will need to "
 "take for a complete port."
 msgstr ""
+"¡Enhorabuena! Ubuntu Touch ha arrancado ahora en su dispositivo. Pase a :doc"
+":`running-ut` para aprender sobre los pasos mas específicos que necesitará "
+"hacer para un portado completo."
 
 #: ../../porting/installing-16-04.rst:80
 msgid ""
@@ -585,11 +591,11 @@ msgstr ""
 
 #: ../../porting/running-ut.rst:2
 msgid "Running Ubuntu Touch"
-msgstr ""
+msgstr "Ejecutando Ubuntu Touch"
 
 #: ../../porting/running-ut.rst:5
 msgid "Display settings"
-msgstr ""
+msgstr "Configuración de pantalla"
 
 #: ../../porting/running-ut.rst:7
 msgid ""
@@ -597,12 +603,18 @@ msgid ""
 "small. There are two variables that set the content scaling for Unity 8 "
 "and Ubuntu Touch applications: ``GRID_UNIT_PX`` and ``QTWEBKIT_DPR``."
 msgstr ""
+"Cuando el dispositivo arranca, probablemente notará que todo es muy pequeño. "
+"Hay dos variables que configuran el escalado del contenido para las "
+"aplicaciones de Unity 8 y de Ubuntu Touch: ``GRID_UNIT_PX`` y "
+"``QTWEBKIT_DPR``."
 
 #: ../../porting/running-ut.rst:9
 msgid ""
 "There are also some other options available that may be useful for you "
 "depending on your device's form factor. These are discussed below."
 msgstr ""
+"Hay también otras opciones disponibles que pueden serle útiles dependiendo "
+"del factor de forma de su dispositivo. Se discuten mas abajo."
 
 #: ../../porting/running-ut.rst:11
 msgid ""
@@ -613,14 +625,22 @@ msgid ""
 "/ubuntu-session.d/[codename].conf`` specifying them. For example, this is"
 " the file for the Nexus 7 tablet::"
 msgstr ""
+"Todas estas configuraciones son supuestas por Unity 8 si no hay ninguna "
+"configurada. Hay muchos casos, sin embargo, donde la suposición es errónea ("
+"por ejemplo, pantallas de teléfono con muy alta resolución serán "
+"identificadas como ordenadores de escritorio). Para configurar manualmente "
+"un valor para estas variables, simplemente cree un archivo en ``/etc/ubuntu-"
+"session.d/[codename].conf`` especificándolos. Por ejemplo, este es el "
+"archivo para la tableta Nexus 7::"
 
 #: ../../porting/running-ut.rst:19
 msgid "Methods for deriving values for these variables are below."
 msgstr ""
+"Los métodos para obtener los valores para estas variables están mas abajo."
 
 #: ../../porting/running-ut.rst:22
 msgid "Display scaling"
-msgstr ""
+msgstr "Escala de la pantalla"
 
 #: ../../porting/running-ut.rst:24
 msgid ""
@@ -633,12 +653,24 @@ msgid ""
 "assume that tablets and laptops are the same distance and that they are "
 "held at 1.235 times the distance phones tend to be held at."
 msgstr ""
+"``GRID_UNIT_PX`` (Píxeles por unidad de cuadrícula o Px/GU) es específico "
+"para cada dispositivo. Su meta es hacer que la interfaz de usuario del "
+"sistema y sus aplicaciones se *perciban* del mismo tamaño independientemente "
+"del dispositivo en que se estén mostrando. Depende principalmente de la "
+"densidad de píxeles de la pantalla del dispositivo y de la distancia a la "
+"pantalla a la que esté el usuario. El último valor no se puede detectar "
+"automáticamente y se basa en la heurística. Asumimos la misma distancia para "
+"tabletas y portátiles y que están sostenidos a 1.235 veces la distancia a la "
+"que se suelen sostener los teléfonos."
 
 #: ../../porting/running-ut.rst:26
 msgid ""
 "``QTWEBKIT_DPR`` sets the display scaling for the Oxide web engine, so "
 "changes to this value will affect the scale of the browser and webapps."
 msgstr ""
+"``QTWEBKIT_DPR`` configura la escala de la pantalla para el motor web Oxide, "
+"así que los cambios a este valor afectarán a la escala del navegador y de "
+"las aplicaciones web."
 
 #: ../../porting/running-ut.rst:28
 msgid ""
@@ -648,183 +680,189 @@ msgid ""
 "*perceived* size rather than *physical* size . Here are some values for "
 "other devices so you may derive the correct one for yours:"
 msgstr ""
+"Un dispositivo de referencia ha sido elegido del cuál derivamos los valores "
+"para todos los otros dispositivos. El dispositivo de referencia es un "
+"portátil con una pantalla de 120ppi. Sin embargo, no existe una fórmula "
+"exacta ya que estas opciones se configuran para un tamaño *percibido* mas "
+"que un tamaño *físico*. Aquí tiene algunos valores para otros dispositivos "
+"para que pueda derivar el correcto para el suyo:"
 
 #: ../../porting/running-ut.rst:31
 msgid "Device"
-msgstr ""
+msgstr "Dispositivo"
 
 #: ../../porting/running-ut.rst:31
 msgid "Resolution"
-msgstr ""
+msgstr "Resolución"
 
 #: ../../porting/running-ut.rst:31
 msgid "Display Size"
-msgstr ""
+msgstr "Tamaño de pantalla"
 
 #: ../../porting/running-ut.rst:31
 msgid "PPI"
-msgstr ""
+msgstr "PPI"
 
 #: ../../porting/running-ut.rst:31
 msgid "Px/GU"
-msgstr ""
+msgstr "Px/GU"
 
 #: ../../porting/running-ut.rst:31
 msgid "QtWebKit DPR"
-msgstr ""
+msgstr "QtWebKit DPR"
 
 #: ../../porting/running-ut.rst:33
 msgid "'Normal' density laptop"
-msgstr ""
+msgstr "Portátil con densidad 'normal'"
 
 #: ../../porting/running-ut.rst:33 ../../porting/running-ut.rst:35
 msgid "N/A"
-msgstr ""
+msgstr "N/D"
 
 #: ../../porting/running-ut.rst:33
 msgid "96-150"
-msgstr ""
+msgstr "96-150"
 
 #: ../../porting/running-ut.rst:33
 msgid "8"
-msgstr ""
+msgstr "8"
 
 #: ../../porting/running-ut.rst:33
 msgid "1.0"
-msgstr ""
+msgstr "1.0"
 
 #: ../../porting/running-ut.rst:34
 msgid "ASUS Nexus 7"
-msgstr ""
+msgstr "ASUS Nexus 7"
 
 #: ../../porting/running-ut.rst:34
 msgid "1280x800"
-msgstr ""
+msgstr "1280x800"
 
 #: ../../porting/running-ut.rst:34
 msgid "7\""
-msgstr ""
+msgstr "7\""
 
 #: ../../porting/running-ut.rst:34
 msgid "216"
-msgstr ""
+msgstr "216"
 
 #: ../../porting/running-ut.rst:34
 msgid "12"
-msgstr ""
+msgstr "12"
 
 #: ../../porting/running-ut.rst:34 ../../porting/running-ut.rst:36
 #: ../../porting/running-ut.rst:37 ../../porting/running-ut.rst:38
 msgid "2.0"
-msgstr ""
+msgstr "2.0"
 
 #: ../../porting/running-ut.rst:35
 msgid "'High' density laptop"
-msgstr ""
+msgstr "Portátil con densidad 'alta'"
 
 #: ../../porting/running-ut.rst:35
 msgid "150-250"
-msgstr ""
+msgstr "150-250"
 
 #: ../../porting/running-ut.rst:35
 msgid "16"
-msgstr ""
+msgstr "16"
 
 #: ../../porting/running-ut.rst:35
 msgid "1.5"
-msgstr ""
+msgstr "1.5"
 
 #: ../../porting/running-ut.rst:36
 msgid "Samsung Galaxy Nexus"
-msgstr ""
+msgstr "Samsung Galaxy Nexus"
 
 #: ../../porting/running-ut.rst:36
 msgid "1280x720"
-msgstr ""
+msgstr "1280x720"
 
 #: ../../porting/running-ut.rst:36
 msgid "4.65\""
-msgstr ""
+msgstr "4.65\""
 
 #: ../../porting/running-ut.rst:36
 msgid "316"
-msgstr ""
+msgstr "316"
 
 #: ../../porting/running-ut.rst:36 ../../porting/running-ut.rst:37
 msgid "18"
-msgstr ""
+msgstr "18"
 
 #: ../../porting/running-ut.rst:37
 msgid "LG Nexus 4"
-msgstr ""
+msgstr "LG Nexus 4"
 
 #: ../../porting/running-ut.rst:37
 msgid "1280x768"
-msgstr ""
+msgstr "1280x768"
 
 #: ../../porting/running-ut.rst:37
 msgid "4.7\""
-msgstr ""
+msgstr "4.7\""
 
 #: ../../porting/running-ut.rst:37
 msgid "320"
-msgstr ""
+msgstr "320"
 
 #: ../../porting/running-ut.rst:38
 msgid "Samsung Nexus 10"
-msgstr ""
+msgstr "Samsung Nexus 10"
 
 #: ../../porting/running-ut.rst:38
 msgid "2560x1600"
-msgstr ""
+msgstr "2560x1600"
 
 #: ../../porting/running-ut.rst:38
 msgid "10.1\""
-msgstr ""
+msgstr "10.1\""
 
 #: ../../porting/running-ut.rst:38
 msgid "299"
-msgstr ""
+msgstr "299"
 
 #: ../../porting/running-ut.rst:38
 msgid "20"
-msgstr ""
+msgstr "20"
 
 #: ../../porting/running-ut.rst:39
 msgid "Fairphone 2"
-msgstr ""
+msgstr "Fairphone 2"
 
 #: ../../porting/running-ut.rst:39 ../../porting/running-ut.rst:40
 msgid "1080x1920"
-msgstr ""
+msgstr "1080x1920"
 
 #: ../../porting/running-ut.rst:39
 msgid "5\""
-msgstr ""
+msgstr "5\""
 
 #: ../../porting/running-ut.rst:39
 msgid "440"
-msgstr ""
+msgstr "440"
 
 #: ../../porting/running-ut.rst:39 ../../porting/running-ut.rst:40
 msgid "23"
-msgstr ""
+msgstr "23"
 
 #: ../../porting/running-ut.rst:39 ../../porting/running-ut.rst:40
 msgid "2.5"
-msgstr ""
+msgstr "2.5"
 
 #: ../../porting/running-ut.rst:40
 msgid "LG Nexus 5"
-msgstr ""
+msgstr "LG Nexus 5"
 
 #: ../../porting/running-ut.rst:40
 msgid "4.95\""
-msgstr ""
+msgstr "4.95\""
 
 #: ../../porting/running-ut.rst:40
 msgid "445"
-msgstr ""
+msgstr "445"
 
 #: ../../porting/running-ut.rst:43
 msgid ""
@@ -833,14 +871,19 @@ msgid ""
 " is the best, share some pictures (including some object for scale) along"
 " with the device specs with us."
 msgstr ""
+"Experimente con algunos valores hasta encontrar uno con el que se sienta "
+"bien comparado con la experiencia de Ubuntu Touch en otros dispositivos. Si "
+"no está seguro de cuál es el mejor, comparta con nosotros algunas "
+"fotografías (incluyendo algún objeto como escala) así como las "
+"especificaciones del dispositivo."
 
 #: ../../porting/running-ut.rst:46
 msgid "Form factor"
-msgstr ""
+msgstr "Factor de forma"
 
 #: ../../porting/running-ut.rst:48
 msgid "There are two other settings that may be of interest to you."
-msgstr ""
+msgstr "Hay otras dos configuraciones que le pueden ser de interés."
 
 #: ../../porting/running-ut.rst:50
 msgid ""
@@ -851,6 +894,12 @@ msgid ""
 "their functionality. For more information on the Chassis, see `the "
 "freedesktop.org hostnamed specification`_."
 msgstr ""
+"``FORM_FACTOR`` especifica el factor de forma del dispositivo. Este valor "
+"está configurado como el chasis del dispositivo, el cuál puede encontrar "
+"ejecutando ``hostnamectl``. Los valores aceptables son ``handset``, "
+"``tablet``, ``laptop`` y ``desktop``. Aplicaciones como la galería usan esta "
+"información para cambiar sus características. Para mas información sobre el "
+"chasis, vea `the freedesktop.org hostnamed specification`_."
 
 #: ../../porting/running-ut.rst:52
 msgid ""
@@ -861,6 +910,13 @@ msgid ""
 "for tablets, laptops, and desktops; and ``portrait``, which is usually "
 "used for phone handsets."
 msgstr ""
+"``NATIVE_ORIENTATION`` configura la orientación de la pantalla incorporada "
+"en el dispositivo. Este valor se usa siempre que la rotación automática no "
+"esté funcionando correctamente o ccuando una aplicación desea estar "
+"bloqueada en la orientación nativa del dispositivo. Valores aceptables son "
+"``landscape`` (horizontal), que se usa normalmente para tabletas, portátiles "
+"y ordenadores de escritorio; y ``portrait`` (vertical), que se usa "
+"generalmente en teléfonos móviles."
 
 #~ msgid ""
 #~ "Due to a `bug in the ubports-"
@@ -935,4 +991,3 @@ msgstr ""
 #~ " archivo ``tar.gz`` bajo la cabecera "
 #~ "\"Last successful artifacts\" (últimos "
 #~ "artefactos exitosos)."
-
