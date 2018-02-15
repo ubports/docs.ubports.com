@@ -35,17 +35,17 @@ A `manifest.json` file
             "desktop": "app.desktop"
             }
         },
-        
-        
-    } 
+
+
+    }
 
 An AppArmor profile policy file
-  Contains which policy the app use to work properly (see section `Security and app isolation`_.) 
+  Contains which policy the app use to work properly (see section `Security and app isolation`_.)
 
 A `.desktop` file
-  The launcher file will tell UT what to do to launch the app, which name and icon to display on the home screen as well as some other properties . 
+  The launcher file will tell UT what to do to launch the app, which name and icon to display on the home screen as well as some other properties .
 
-  Example of `app.desktop`: 
+  Example of `app.desktop`:
 
   ::
 
@@ -71,7 +71,7 @@ A `.desktop` file
   link to official .desktop specifications
 
 
-Security and app isolation 
+Security and app isolation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 All Ubuntu apps and scopes are confined respecting AppArmor access control mechanism `see Application Confinement <https://wiki.ubuntu.com/SecurityTeam/Specifications/ApplicationConfinement#App_confinement_with_AppArmor>`_ , meaning they only have access to their own resources and are isolated from other apps and parts of the system. The developer must declare which policy groups are needed for the app or scope to function properly with an apparmor `.json` file.
@@ -87,7 +87,7 @@ Example `apparmor.json` file:
             "webview",
             "content_exchange"
         ]
-        
+
     }
 
 Non exhaustive policy groups:
@@ -127,7 +127,7 @@ Online accounts
   Simplify user access to online services by integrating with the online accounts API. Accounts added by the user on the device are registered in a centralized hub, allowing other apps to re-use them.
 
 
-`Read the docs <https://docs.ubuntu.com/phone/en/platform/>`__ 
+`Read the docs <https://docs.ubuntu.com/phone/en/platform/>`__
 
 .. todo:
     import this doc
@@ -175,3 +175,14 @@ A collection of external resources
     :name: toc-appdev-cookbook
 
     cookbook
+
+System Software
+---------------
+
+Working on system components
+
+.. toctree::
+    :maxdepth: 1
+    :name: toc-system-software
+
+    system-software
