@@ -132,7 +132,7 @@ Getting started
 
 `Clickable <http://clickable.bhdouglass.com/en/latest/>`_ is a meta-build system for Ubuntu Touch applications that allows you to compile, build, test and publish `click` packages and provides various templates to get you started with UT app developpment.
 It is currently the easiest and most convenient way of building click packages for Ubuntu Touch.
-Also, looking at existing published app source code is a good way to learn: `see openstore <https://open.uappexplorer.com>`_
+Also, looking at existing published app source code is a good way to learn: `see openstore <https://open-store.io>`_
 
 Ubuntu UI-Toolkit
 -----------------
