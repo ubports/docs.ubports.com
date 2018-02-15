@@ -13,14 +13,12 @@ Languages of choice are QML or HTML5 for the UI and can be Javascript, Qt, C++, 
 Click package overview
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Every `click` application package must embed at least 3 files:
+Every ``click`` application package must embed at least 3 files:
 
-A `manifest.json` file
-  Contains application declarations  such as application name, description, author, framework sdk target, version ...
+``manifest.json`` file
+  Contains application declarations such as application name, description, author, framework sdk target, and version.
 
-  Example `manifest.json` file:
-
-  ::
+  Example ``manifest.json`` file::
 
     {
         "name": "myapp.author",
@@ -35,19 +33,17 @@ A `manifest.json` file
             "desktop": "app.desktop"
             }
         },
-        
-        
-    } 
 
-An AppArmor profile policy file
-  Contains which policy the app use to work properly (see section `Security and app isolation`_.) 
 
-A `.desktop` file
-  The launcher file will tell UT what to do to launch the app, which name and icon to display on the home screen as well as some other properties . 
+    }
 
-  Example of `app.desktop`: 
+AppArmor profile policy file
+  Contains which policy the app needs to work properly. See `Security and app isolation`_ below for more information on this file.
 
-  ::
+``.desktop`` file
+  The launcher file will tell UT how to launch the app, which name and icon to display on the home screen, and some other properties.
+
+  Example of ``app.desktop``::
 
     [Desktop Entry]
     Name=Application title
@@ -57,28 +53,26 @@ A `.desktop` file
     Type=Application
     X-Ubuntu-Touch=true
 
-  Non exhaustive properties:
+  Non exhaustive list of properties:
 
   - Name: Application title has shown in the dash
   - Exec: Path to the executable file
   - Icon: Path to the icon to display
-  - Terminal: `false` if will not run in terminal window
+  - Terminal: ``false`` if will not run in terminal window
   - Type: Specifies the type of the launcher file. The type can be Application, Link or Directory.
-  - X-Ubuntu-Touch: `true` to make the app visible
-  - X-Ubuntu-XMir-Enable: `true` if your app is built for X
+  - X-Ubuntu-Touch: ``true`` to make the app visible
+  - X-Ubuntu-XMir-Enable: ``true`` if your app is built for X
 
 .. todo:
   link to official .desktop specifications
 
 
-Security and app isolation 
+Security and app isolation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-All Ubuntu apps and scopes are confined respecting AppArmor access control mechanism `see Application Confinement <https://wiki.ubuntu.com/SecurityTeam/Specifications/ApplicationConfinement#App_confinement_with_AppArmor>`_ , meaning they only have access to their own resources and are isolated from other apps and parts of the system. The developer must declare which policy groups are needed for the app or scope to function properly with an apparmor `.json` file.
+All Ubuntu apps and scopes are confined respecting AppArmor access control mechanism (see `Application Confinement <https://wiki.ubuntu.com/SecurityTeam/Specifications/ApplicationConfinement#App_confinement_with_AppArmor>`_) , meaning they only have access to their own resources and are isolated from other apps and parts of the system. The developer must declare which policy groups are needed for the app or scope to function properly with an apparmor ``.json`` file.
 
-Example `apparmor.json` file:
-
-::
+Example ``apparmor.json`` file::
 
     {
         "policy_version": 1.3,
@@ -87,7 +81,7 @@ Example `apparmor.json` file:
             "webview",
             "content_exchange"
         ]
-        
+
     }
 
 Non exhaustive policy groups:
@@ -127,7 +121,7 @@ Online accounts
   Simplify user access to online services by integrating with the online accounts API. Accounts added by the user on the device are registered in a centralized hub, allowing other apps to re-use them.
 
 
-`Read the docs <https://docs.ubuntu.com/phone/en/platform/>`__ 
+`Read the docs <https://docs.ubuntu.com/phone/en/platform/>`__
 
 .. todo:
     import this doc
@@ -175,3 +169,14 @@ A collection of external resources
     :name: toc-appdev-cookbook
 
     cookbook
+
+System Software
+---------------
+
+Working on system components
+
+.. toctree::
+    :maxdepth: 1
+    :name: toc-system-software
+
+    system-software
