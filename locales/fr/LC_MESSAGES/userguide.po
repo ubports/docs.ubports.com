@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-08 19:46-0600\n"
-"PO-Revision-Date: 2018-02-04 20:32+0000\n"
+"PO-Revision-Date: 2018-02-15 19:55+0000\n"
 "Last-Translator: Laurent Rouxel <lrouxel@free.fr>\n"
+"Language-Team: French <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-userguide/fr/>\n"
 "Language: fr\n"
-"Language-Team: French <https://translate.ubports.com/projects/ubports-"
-"docs/documentation-userguide/fr/>\n"
-"Plural-Forms: nplurals=2; plural=n > 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../userguide/advanceduse/adb.rst:2
@@ -144,7 +145,7 @@ msgstr "Oneplus One::"
 
 #: ../../userguide/advanceduse/dav.rst:2
 msgid "CalDAV and CardDAV synchronization"
-msgstr ""
+msgstr "Synchronisation CalDAV et CardDAV"
 
 #: ../../userguide/advanceduse/dav.rst:4
 msgid ""
@@ -152,6 +153,9 @@ msgid ""
 "with a remote server. Many email-hosters provide a CalDAV and CardDAV "
 "interface."
 msgstr ""
+"CalDAV et Card DAV sont des protocoles permettant de synchroniser "
+"calendriers et contacts avec un serveur distant. De nombreux hébergeurs "
+"d'emails fournissent une interface CalDAV et CardDAV."
 
 #: ../../userguide/advanceduse/dav.rst:6
 msgid ""
@@ -160,6 +164,11 @@ msgid ""
 "select \"Add internet calendar > Generic CalDAV\". Enter your calendar "
 "URL as well as your username and password to complete the process."
 msgstr ""
+"**Note:** La synchronisation CalDAV peut être configurée en utilisant "
+"l'application agenda. Ouvrez l'application, cliquez sur la petite icône de "
+"calendrier située dans le coin en haut à droite et sélectionnez \"Ajouter un "
+"agenda en ligne> Generic CalDAV\". Entrez l'URL de votre agenda ainsi que "
+"votre nom d'utilisateur et mot de passe pour finir la configuration."
 
 #: ../../userguide/advanceduse/dav.rst:8
 msgid ""
@@ -169,6 +178,11 @@ msgid ""
 "to do that with a script that you can run in the terminal or via phablet "
 "SSH connection. These instructions work for caldav as well."
 msgstr ""
+"A cet instant, il n'y a pas d’implémentation CardDAV directement accessible "
+"à partir de l'interface graphique d'Ubuntu Touch, pour synchroniser CardDAV, "
+"il faut utiliser syncevolution et cron. Cependant, il y a une façon simple "
+"de le faire avec un script que vous pouvez lancer dans le terminal ou via la "
+"connexion ssh. Ces instructions fonctionnent aussi avec CalDAV."
 
 #: ../../userguide/advanceduse/dav.rst:10
 msgid ""
@@ -176,6 +190,9 @@ msgid ""
 "<https://docs.ubports.com/en/latest/userguide/advanceduse/adb.html>`_ to "
 "activate Developer Mode and ADB (or SSH) connection."
 msgstr ""
+"Suivez ce `guide "
+"<https://docs.ubports.com/en/latest/userguide/advanceduse/adb.html>`_ pour "
+"activer le mode Développeur et la connexion ADB (ou SSH)."
 
 #: ../../userguide/advanceduse/dav.rst:13
 msgid ""
@@ -183,22 +200,28 @@ msgid ""
 "<https://gist.github.com/bastos77/0c47a94dd0bf3e394f879c0ff42b7839>`_ "
 "(let's call it dav.sh) and edit the following variables:"
 msgstr ""
+"Téléchargez ce `script "
+"<https://gist.github.com/bastos77/0c47a94dd0bf3e394f879c0ff42b7839>`_ ("
+"appelons le dav.sh) et modifiez les variables suivantes:"
 
 #: ../../userguide/advanceduse/dav.rst:15
 msgid ""
 "server side : CAL_URL, **CONTACTS_URL**, USERNAME, PASSWORD (of your "
 "ownCloud/nextCloud/baikal/SOGO/... server)"
 msgstr ""
+"server side : CAL_URL, **CONTACTS_URL**, USERNAME, PASSWORD (de votre "
+"serveur ownCloud/nextCloud/baikal/SOGO/... )"
 
 #: ../../userguide/advanceduse/dav.rst:16
 msgid ""
 "CONTACT and CALENDAR _ NAME / VISUAL_NAME / CONFIG_NAME (it's more "
 "cosmetic)"
 msgstr ""
+"CONTACT et CALENDAR _ NAME / VISUAL_NAME / CONFIG_NAME (c'est plus cohérent)"
 
 #: ../../userguide/advanceduse/dav.rst:17
 msgid "CRON_FREQUENCY (for the frequency of synchronisation)"
-msgstr ""
+msgstr "CRON_FREQUENCY (pour la fréquence de synchronisation)"
 
 #: ../../userguide/advanceduse/dav.rst:18
 msgid ""
@@ -206,22 +229,29 @@ msgid ""
 " instead of ``sudo echo \"$COMMAND_LINE\" > /sbin/sogosync``, to avoid "
 "permission denied error"
 msgstr ""
+"Ligne 61: ecrire ``sudo sh -c \"echo '$COMMAND_LINE' > /sbin/sogosync\"`` , "
+"à la place de ``sudo echo \"$COMMAND_LINE\" > /sbin/sogosync``, pour éviter "
+"l'erreur de permission refusée"
 
 #: ../../userguide/advanceduse/dav.rst:20
 msgid ""
 "Move the file to your UbuntuTouch device, either by file manager or with "
 "adb::"
 msgstr ""
+"Déplacez le fichier sur votre appareil UbuntuTouch, avec le gestionnaire de "
+"fichiers ou avec adb::"
 
 #: ../../userguide/advanceduse/dav.rst:24
 msgid ""
 "Connect with the phablet shell (``adb shell``) or directly on the phone "
 "Terminal app and type the following::"
 msgstr ""
+"Connectez vous avec la shell phablet (``adb shell``) ou directement avec "
+"l'application Terminal du téléphone et tapez ce qui suit:"
 
 #: ../../userguide/advanceduse/dav.rst:31
 msgid "Sources:"
-msgstr ""
+msgstr "Sources:"
 
 #: ../../userguide/advanceduse/dav.rst:33
 #, fuzzy
@@ -234,19 +264,19 @@ msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:34
 msgid "https://gist.github.com/boTux/069b53d8e06bdb9b9c97"
-msgstr ""
+msgstr "https://gist.github.com/boTux/069b53d8e06bdb9b9c97"
 
 #: ../../userguide/advanceduse/dav.rst:35
 msgid "https://gist.github.com/tcarrondo"
-msgstr ""
+msgstr "https://gist.github.com/tcarrondo"
 
 #: ../../userguide/advanceduse/dav.rst:36
 msgid "https://gist.github.com/bastos77"
-msgstr ""
+msgstr "https://gist.github.com/bastos77"
 
 #: ../../userguide/advanceduse/dav.rst:37
 msgid "https://askubuntu.com/questions/601910/ssh-ubuntu-touch"
-msgstr ""
+msgstr "https://askubuntu.com/questions/601910/ssh-ubuntu-touch"
 
 #: ../../userguide/advanceduse/index.rst:2
 msgid "Advanced use"
@@ -623,30 +653,38 @@ msgid ""
 "compatibility layer that allows you to run android applications on "
 "GNU/Linux operating systems."
 msgstr ""
+"`Anbox <https://anbox.io>`_ est un container et une couche de compatibilité "
+"basé sur un Android minimal. Il permet de faire tourner des applications "
+"Android sur systèmes GNU/Linux."
 
 #: ../../userguide/dailyuse/anbox.rst:7
 msgid "Anbox is in early development"
-msgstr ""
+msgstr "Anbox en est aux premiers stades de développement"
 
 #: ../../userguide/dailyuse/anbox.rst:8
 msgid "Anbox for Ubuntu Touch is in even more early development"
 msgstr ""
+"Anbox pour Ubuntu Touch est à un stade de développement encore plus jeune"
 
 #: ../../userguide/dailyuse/anbox.rst:9
 msgid ""
 "Anbox only works on the 16.04 version of Ubuntu Touch, which is also in "
 "early development"
 msgstr ""
+"Anbox ne fonctionne que sur la version 16.04 d'Ubuntu Touch, qui est aussi "
+"aux premiers stades de développement"
 
 #: ../../userguide/dailyuse/anbox.rst:10
 msgid ""
 "Only selected devices are supported for the moment, more will be added in"
 " the future."
 msgstr ""
+"Seuls certains appareils sont supportés pour le moment, d'autres viendront "
+"plus tard."
 
 #: ../../userguide/dailyuse/anbox.rst:13
 msgid "Supported devices"
-msgstr ""
+msgstr "Appareils supportés"
 
 #: ../../userguide/dailyuse/anbox.rst:15
 msgid "Make sure your device is supported:"
@@ -1090,4 +1128,3 @@ msgstr ""
 
 #~ msgid "``libertine-container-manage install-package -p PACKAGE-NAME``"
 #~ msgstr ""
-
