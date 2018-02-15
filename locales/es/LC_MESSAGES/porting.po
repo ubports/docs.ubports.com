@@ -7,316 +7,366 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-08 19:46-0600\n"
+"POT-Creation-Date: 2018-07-11 15:02-0500\n"
 "PO-Revision-Date: 2018-02-15 17:10+0000\n"
 "Last-Translator: advocatux <advocatux@airpost.net>\n"
-"Language-Team: Spanish <https://translate.ubports.com/projects/ubports-docs"
-"/documentation-porting/es/>\n"
+"Language-Team: Spanish <https://translate.ubports.com/projects/ubports-docs/"
+"documentation-porting/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.1\n"
 
-#: ../../porting/building-ubports-boot.rst:2
-msgid "Building ubports-boot"
+#: ../../porting/building-halium-boot.rst:2
+#, fuzzy
+msgid "Building halium-boot"
 msgstr "Construyendo el arranque de ubports (ubports-boot)"
 
-#: ../../porting/building-ubports-boot.rst:4
+#: ../../porting/building-halium-boot.rst:4
 msgid ""
-"Ubuntu Touch uses Upstart rather than Systemd for its init daemon. "
-"Because of this, it is not fully Halium-compatible and is not able to use"
-" the vanilla hybris-boot that Halium produces. For this reason, we need "
-"to build ubports-boot."
+"Halium-boot is a new proposed boot image in the Halium project, replacing "
+"hybris-boot. We will be building and using it for Ubuntu Touch."
 msgstr ""
-"Ubuntu Touch usa Upstart en vez de Systemd para su demonio init. Por ello"
-" no es completamente compatible con Halium y no es capaz de usar el "
-"hybris-boot estándar que hace Halium. Por esta razón necesitamos "
-"construir un ubports-boot."
 
-#: ../../porting/building-ubports-boot.rst:8
-msgid "Add source to Halium tree"
-msgstr "Añadir las fuentes al árbol de Halium"
-
-#: ../../porting/building-ubports-boot.rst:10
-msgid ""
-"The first thing that needs to be done is adding the ubports-boot source "
-"to your Halium tree. You may choose to do this by adding it to your local"
-" manifests (recommended) or simply cloning it in place."
-msgstr ""
-"La primera cosa que necesita hacerse es añadir las fuentes del ubports-"
-"boot al árbol de Halium. Puede elegir hacer esto añadiéndolas a sus "
-"manifiestos locales (recomendado) o simplemente clonándolas es el lugar "
-"adecuado."
-
-#: ../../porting/building-ubports-boot.rst:14
-msgid "Add to local manifest"
-msgstr "Añadir al manifiesto local"
-
-#: ../../porting/building-ubports-boot.rst:16
-msgid ""
-"Create a new file in ``.repo/local_manifests`` called ``ubports-"
-"boot.xml``. Add the following to the file:"
-msgstr ""
-"Cree un nuevo archivo en ``.repo/local_manifests`` llamado ``ubports-"
-"boot.xml``. Añada lo siguiente al archivo:"
-
-#: ../../porting/building-ubports-boot.rst:25
-msgid "Now, just do a ``repo sync`` to download the new source."
-msgstr ""
-"Ahora, simplemente haga un ``repo sync`` para descargar las nuevas "
-"fuentes."
-
-#: ../../porting/building-ubports-boot.rst:29
-msgid "Manual clone"
-msgstr "Clonación manual"
-
-#: ../../porting/building-ubports-boot.rst:31
-msgid ""
-"You may also choose to clone the `ubports-boot repository "
-"<https://github.com/ubports/ubports-boot>`_ into your tree manually. It "
-"should be placed into ``BUILDDIR/halium/ubports-boot``."
-msgstr ""
-"También puede elegir clonar `el repositorio de ubports-boot "
-"<https://github.com/ubports/ubports-boot>`_ en su árbol (tree) manualmente. "
-"Debería ser ubicado en ``BUILDDIR/halium/ubports-boot``."
-
-#: ../../porting/building-ubports-boot.rst:33
-msgid ""
-"If you share your code and build instructions, please note that you've "
-"done this."
-msgstr ""
-"Si comparte su código e instrucciones de construcción, apunte que lo ha "
-"hecho así."
-
-#: ../../porting/building-ubports-boot.rst:36
-msgid "Include in build system"
-msgstr "Incluir en el sistema de construcción"
-
-#: ../../porting/building-ubports-boot.rst:38
-msgid ""
-"The android build system won't know where to find ubports-boot normally. "
-"To fix this, open the file ``BUILDDIR/build/core/main.mk`` in a text "
-"editor. Find the comment ``# Specific projects for Halium`` and add "
-"``halium/ubports-boot`` to the list of ``subdirs`` ::"
-msgstr ""
-"El sistema de construcción de android no sabrá donde encontar el arranque de "
-"ubports (ubports-boot) normalmente. Para arreglar esto, abra el archivo "
-"``BUILDDIR/build/core/main.mk`` en un editor de textos. Encuentre el "
-"comentario ``# Specific projects for Halium`` y añada ``halium/ubports-boot``"
-" a la lista de ``subdirs`` ::"
-
-#: ../../porting/building-ubports-boot.rst:45
+#: ../../porting/building-halium-boot.rst:7
 msgid "Fix mounts"
 msgstr "Arreglar los problemas de montaje"
 
-#: ../../porting/building-ubports-boot.rst:49
+#: ../../porting/building-halium-boot.rst:9
 msgid ""
-"This is a workaround for `ubports/ubports-boot #1 "
-"<https://github.com/ubports/ubports-boot/issues/1>`_ and `ubports"
-"/ubports-boot #2 <https://github.com/ubports/ubports-boot/issues/2>`_. It"
-" should not be considered a permanent fix. Be prepared to revert this "
-"later when these bugs have been fixed."
+"Halium-boot's ``mount`` is not aware of SELinux contexts. If your device's "
+"``fstab`` file includes any contexts, the partition that they are on will "
+"fail to mount and your port will not work correctly."
 msgstr ""
-"Existe una solución alternativa para `ubports/ubports-boot #1 "
-"<https://github.com/ubports/ubports-boot/issues/1>`_ y `ubports/ubports-"
-"boot #2 <https://github.com/ubports/ubports-boot/issues/2>`_. No debería "
-"considerarse un arreglo permanente. Prepárese para revertir esto más "
-"tarde cuando estos errores hayan sido arreglados."
 
-#: ../../porting/building-ubports-boot.rst:51
+#: ../../porting/building-halium-boot.rst:11
 msgid ""
-"The initramfs of the ubports-boot image takes a commandline parameter, "
-"``datapart=``, which points it to the block device that is normally "
-"mounted at ``/data`` in Android. This parameter is automatically embedded"
-" into the image at build time by finding ``/data`` in your device's "
-"default fstab and using its source. Unfortunately, this source is "
-"generally a node in ``/dev/block/bootdevice/by-name`` or something else "
-"strange, which is only available in an Android initramfs. To fix this, "
-"Halium uses the fixup-mountpoints script, which you are probably familiar"
-" with by now."
-msgstr ""
-"El initramfs de la imagen de ubports-boot toma un parámetro de la línea "
-"de órdenes, ``datapart=``, que apunta al bloque de dispositivo que "
-"normalmente se monta en ``/data`` en Android. Este parámetro es "
-"automáticamente insertado en la imagen en el momento de construcción al "
-"encontrar  ``/data`` en el fstab por defecto de su dispositivo y usando "
-"su fuente. Desafortunadamente, esta fuente es generalmente un nodo en "
-"`/dev/block/bootdevice/by-name`` u otra cosa extraña que solo está "
-"disponible en el initramfs de Android. Para arreglar esto, Halium usa el "
-"script de puntos de montaje reparados (fixup-mountpoints script) con el "
-"que usted probablemente ya esté familiarizado a estas alturas."
-
-#: ../../porting/building-ubports-boot.rst:53
-msgid ""
-"The ubports-boot initramfs does not use the fixup-mountpoints script, nor"
-" does it put block devices in the proper place for mounting without "
-"modification. For this reason, we are going to have to edit your device's"
-" fstab."
-msgstr ""
-"El initramfs de ubports-boot no usa el script de puntos de montaje "
-"reparados (fixup-mountpoints script), ni pone dispositivos de bloque en "
-"el lugar adecuado para su montaje sin modificación. Por esta razón, vamos"
-" a necesitar editar el fstab de su dispositivo."
-
-#: ../../porting/building-ubports-boot.rst:55
-msgid ""
-"The first step to this process is figuring out where your fstab actually "
-"is. For most, this is inside "
-"``BUILDDIR/device/MANUFACTUER/CODENAME/rootdir/etc`` and it is named "
-"either ``fstab.qcom`` or ``fstab.devicename``. Open the file for editing."
+"The first step to this process is figuring out where your fstab actually is. "
+"For most, this is inside ``BUILDDIR/device/MANUFACTUER/CODENAME/rootdir/"
+"etc`` and it is named either ``fstab.qcom`` or ``fstab.devicename``. Open "
+"the file for editing."
 msgstr ""
 "El primer paso de este proceso es averiguar donde está su fstab. En la "
-"mayoría de casos está dentro de "
-"``BUILDDIR/device/MANUFACTUER/CODENAME/rootdir/etc`` y se llama o "
-"``fstab.qcom`` o ``fstab.devicename``. Abra el archivo para editarlo."
+"mayoría de casos está dentro de ``BUILDDIR/device/MANUFACTUER/CODENAME/"
+"rootdir/etc`` y se llama o ``fstab.qcom`` o ``fstab.devicename``. Abra el "
+"archivo para editarlo."
 
-#: ../../porting/building-ubports-boot.rst:57
+#: ../../porting/building-halium-boot.rst:13
 msgid ""
-"With the file open, change the ``src``, or first attribute, of the "
-"``/data`` mountpoint to what you put in fixup-mountpoints for ``/data``, "
-"but without the ``/block`` folder. For example, on the Moto G5 Plus, the "
-"block device is ``/dev/block/mmcblk0p54``, so I put ``/dev/mmcblk0p54`` "
-"in this place. Also change the type to ext4, if it is not already."
+"If the type of the 'data' or 'userdata' partition is ``f2fs``, it is "
+"required to change it to ``ext4``."
 msgstr ""
-"Con el archivo abierto, cambie el ``src``, o primer atributo del punto de"
-" montaje ``/data`` con lo que puso en  fixup-mountpoints para ``/data``, "
-"pero sin la carpeta ``/block``. Por ejemplo, en el Moto G5 Plus, el "
-"dispositivo de bloque es ``/dev/block/mmcblk0p54``, así que puse "
-"``/dev/mmcblk0p54`` en este lugar. También cambie el tipo a ext4, si no "
-"lo está ya."
 
-#: ../../porting/building-ubports-boot.rst:59
+#: ../../porting/building-halium-boot.rst:15
+#, fuzzy
 msgid ""
-"Now, remove all ``context=`` options from all block devices in the file. "
-"Save and exit."
+"With the file open, remove all ``context=`` options from all block devices "
+"in the file. The option will start at the text ``context=`` and end at the "
+"comma following it."
 msgstr ""
-"Ahora, elimine todas las opciones ``context=`` de todos los dispositivos "
-"de bloque en el archivo. Guarde y salga."
+"Ahora, elimine todas las opciones ``context=`` de todos los dispositivos de "
+"bloque en el archivo. Guarde y salga."
 
-#: ../../porting/building-ubports-boot.rst:61
+#: ../../porting/building-halium-boot.rst:17
 msgid ""
-"For an example of this, see `this commit on "
-"universalsuperbox/android_device_motorola_potter "
-"<https://github.com/UniversalSuperBox/android_device_motorola_potter/commit/9b574967e3a6f07884760b418befe731ccfcb924>`__."
-" Removing the ``wait`` flag is not required and was an accident."
+"For example, the line ``ro,nosuid,nodev,context=u:object_r:firmware_file:s0,"
+"barrier=0`` should become ``ro,nosuid,nodev,barrier=0``"
 msgstr ""
-"Para un ejemplo de esto, vea `este commit en universalsuperbox/"
-"android_device_motorola_potter <https://github.com/UniversalSuperBox/android_"
-"device_motorola_potter/commit/9b574967e3a6f07884760b418befe731ccfcb924>`__. "
-"No se necesita la eliminación de la bandera (flag) ``wait``, fue un "
-"accidente."
 
-#: ../../porting/building-ubports-boot.rst:65
-msgid "Edit init.rc"
-msgstr "Editar init.rc"
-
-#: ../../porting/building-ubports-boot.rst:67
-msgid ""
-"Some Android services conflict with ofono in 16.04 and will cause your "
-"device to reboot without warning, about 30-60 seconds after it boots. We "
-"will need to disable these services until the issue is resolved."
+#: ../../porting/building-halium-boot.rst:19
+msgid "Save and exit."
 msgstr ""
-"Algunos servicios de Android entran en conflicto con ofono en 16.04 y "
-"provocarán que su dispositivo se reinicie sin aviso, unos 30-60 segundos "
-"después de que arranque. Necesitaremos desactivar estos servicios hasta "
-"que el problema sea resuelto."
 
-#: ../../porting/building-ubports-boot.rst:69
-msgid ""
-"To do this, open up your device's default ``init.rc`` (this is likely "
-"init.qcom.rc or init.[codename].rc), comment out any ``import`` "
-"statements, and add ``disabled`` to services like rild, qti, and others "
-"that interface with the radio. Most of them have a ``user radio`` line. "
-"For an example, see `commit 7875b48b on "
-"UniversalSuperBox/android_device_motorola_potter "
-"<https://github.com/UniversalSuperBox/android_device_motorola_potter/commit/7875b48b5b6f240935d7f327d33128e952a3589b>`__"
-msgstr ""
-"Para hacer esto, abra el ``init.rc`` por defecto  de su dispositivo ("
-"seguramente init.qcom.rc o init.[codename].rc), comente cualquier "
-"declaración ``import`` y añada ``disabled`` a servicios como rild, qti y "
-"otros que interactúan mediante radio. La mayoría de ellos tienen una línea ``"
-"user radio``. Como ejemplo vea el `commit 7875b48b on UniversalSuperBox/"
-"android_device_motorola_potter <https://github.com/UniversalSuperBox/android_"
-"device_motorola_potter/commit/7875b48b5b6f240935d7f327d33128e952a3589b>`__"
-
-#: ../../porting/building-ubports-boot.rst:73
+#: ../../porting/building-halium-boot.rst:22
 msgid "Edit kernel config"
 msgstr "Editar la configuración del núcleo"
 
-#: ../../porting/building-ubports-boot.rst:75
+#: ../../porting/building-halium-boot.rst:24
+#, fuzzy
 msgid ""
 "Ubuntu Touch requires a slightly different kernel config than Halium, "
 "including enabling Apparmor. Luckily, we have a nice script for this "
-"purpose, ``check-kernel-config``. It's included in the ubports-boot "
+"purpose, ``check-kernel-config``. It's included in the halium-boot "
 "repository. Simply run it on your config as follows::"
 msgstr ""
-"Ubuntu Touch necesita una configuración del núcleo ligeramente distinta a"
-" la de Halium, incluyendo la activación de Apparmor. Afortunadamente "
-"tenemos un buen script para este propósito, ``check-kernel-config``.  "
-"Está incluido en el repositorio de ubports-boot. Simplemente ejecútelo en"
-" su configuración así::"
+"Ubuntu Touch necesita una configuración del núcleo ligeramente distinta a la "
+"de Halium, incluyendo la activación de Apparmor. Afortunadamente tenemos un "
+"buen script para este propósito, ``check-kernel-config``.  Está incluido en "
+"el repositorio de ubports-boot. Simplemente ejecútelo en su configuración "
+"así::"
 
-#: ../../porting/building-ubports-boot.rst:79
+#: ../../porting/building-halium-boot.rst:28
 msgid ""
-"You may have to do this twice. It will likely fix things both times. "
-"Then, run the script without the ``-w`` flag to see if there are any more"
-" errors. If there are, fix them manually. Once finished, run the script "
-"without the ``-w`` flag one more time to make sure everything is correct."
+"You may have to do this twice. It will likely fix things both times. Then, "
+"run the script without the ``-w`` flag to see if there are any more errors. "
+"If there are, fix them manually. Once finished, run the script without the "
+"``-w`` flag one more time to make sure everything is correct."
 msgstr ""
 "Puede que tenga que hacerlo dos veces. Seguramente arreglará el tema en "
-"ambas ocasiones. Entonces, ejecute el script sin la bandera (flag) ``-w``"
-" para ver si hay algún error mas. Si lo hay, arréglelo manualmente. Una "
-"vez finalizado, ejecute el script sin la bandera (flag)  ``-w`` una vez "
-"mas para asegurarse de que todo está correcto."
+"ambas ocasiones. Entonces, ejecute el script sin la bandera (flag) ``-w`` "
+"para ver si hay algún error mas. Si lo hay, arréglelo manualmente. Una vez "
+"finalizado, ejecute el script sin la bandera (flag)  ``-w`` una vez mas para "
+"asegurarse de que todo está correcto."
 
-#: ../../porting/building-ubports-boot.rst:83
+#: ../../porting/building-halium-boot.rst:31
 msgid "Build the image"
 msgstr "Construir la imagen"
 
-#: ../../porting/building-ubports-boot.rst:85
+#: ../../porting/building-halium-boot.rst:33
+#, fuzzy
 msgid ""
-"Once ubports-boot is in place, you can build it quite simply. You will "
-"also need to rebuild system.img due to our changes."
+"Once halium-boot is in place, you can build it quite simply. You will also "
+"need to rebuild system.img due to our changes."
 msgstr ""
 "Una vez que ubports-boot está en su lugar, puede construirlo muy "
-"sencillamente. También necesitará reconstruir system.img debido a "
-"nuestros cambios."
+"sencillamente. También necesitará reconstruir system.img debido a nuestros "
+"cambios."
 
-#: ../../porting/building-ubports-boot.rst:87
+#: ../../porting/building-halium-boot.rst:35
 msgid "``cd`` to your Halium BUILDDIR"
 msgstr "``cd`` a su BUILDDIR de Halium"
 
-#: ../../porting/building-ubports-boot.rst:88
+#: ../../porting/building-halium-boot.rst:36
 msgid "``source build/envsetup.sh``"
 msgstr "``source build/envsetup.sh``"
 
-#: ../../porting/building-ubports-boot.rst:89
+#: ../../porting/building-halium-boot.rst:37
 msgid "Run ``breakfast`` or ``lunch``, whichever you use for your device"
-msgstr "Ejecute ``breakfast`` o ``lunch``, cual sea el que use en su dispositivo"
+msgstr ""
+"Ejecute ``breakfast`` o ``lunch``, cual sea el que use en su dispositivo"
 
-#: ../../porting/building-ubports-boot.rst:90
-msgid "``mka ubports-boot``"
+#: ../../porting/building-halium-boot.rst:38
+#, fuzzy
+msgid "``mka halium-boot``"
 msgstr "``mka ubports-boot``"
 
-#: ../../porting/building-ubports-boot.rst:91
+#: ../../porting/building-halium-boot.rst:39
 msgid "``mka systemimage``"
 msgstr "``mka systemimage``"
 
-#: ../../porting/building-ubports-boot.rst:96
-#: ../../porting/installing-16-04.rst:74
+#: ../../porting/building-halium-boot.rst:42
+#: ../../porting/installing-16-04.rst:62
 msgid "Continue on"
 msgstr "Continúe en"
 
-#: ../../porting/building-ubports-boot.rst:98
+#: ../../porting/building-halium-boot.rst:44
+#, fuzzy
 msgid ""
-"Now that you have ubports-boot built, you can move on to "
-":doc:`installing-16-04`."
+"Now that you have halium-boot built, you can move on to :doc:"
+"`installing-16-04`."
 msgstr ""
-"Ahora que tiene construido ubports-boot, puede ir a "
-":doc:`installing-16-04`."
+"Ahora que tiene construido ubports-boot, puede ir a :doc:`installing-16-04`."
+
+#: ../../porting/common-problems-install.rst:7
+msgid "Common installation problems"
+msgstr ""
+
+#: ../../porting/common-problems-install.rst:9
+msgid ""
+"This page details problems commonly faced while following the :doc:"
+"`installing-16-04` page."
+msgstr ""
+
+#: ../../porting/common-problems-install.rst:12
+msgid "SSH hangs when trying to connect"
+msgstr ""
+
+#: ../../porting/common-problems-install.rst:14
+msgid ""
+"The SSH connection may hang indefinitely when trying to connect. Attempts to "
+"stop the connection with Control-C may or may not return you to a shell "
+"prompt. If you run ``ssh -vvvv phablet@10.15.19.82``, you only get the "
+"following output before the program stops::"
+msgstr ""
+
+#: ../../porting/common-problems-install.rst:22
+msgid ""
+"This seems to be a common error on arm64 devices with kernel 3.10 when "
+"rsyslogd is enabled. If you have this error, please add your voice to "
+"`ubports/ubuntu-touch#560`_ and then try the following workaround:"
+msgstr ""
+
+#: ../../porting/common-problems-install.rst:24
+msgid "Reboot the device to recovery and connect with ``adb shell``"
+msgstr ""
+
+#: ../../porting/common-problems-install.rst:25
+msgid "Run the following commands to disable rsyslogd::"
+msgstr ""
+
+#: ../../porting/common-problems-install.rst:33
+msgid ""
+"You may now reboot the device. You should be able to connect to SSH once it "
+"comes back online."
+msgstr ""
+
+#: ../../porting/common-problems-install.rst:36
+msgid "Device reboots after a minute"
+msgstr ""
+
+#: ../../porting/common-problems-install.rst:38
+msgid ""
+"The device may reboot cleanly after about a minute of uptime. If you are "
+"logged in when the reboot occurs, you will see the following message::"
+msgstr ""
+
+#: ../../porting/common-problems-install.rst:45
+msgid ""
+"This happens because ``lightdm``, the Ubuntu Touch display manager, is "
+"crashing repeatedly. The system watchdog process sees this and reboots the "
+"device."
+msgstr ""
+
+#: ../../porting/common-problems-install.rst:47
+msgid ""
+"To fix this problem, log in before the reboot occurs and run the following "
+"command::"
+msgstr ""
+
+#: ../../porting/common-problems-run.rst:2
+#, fuzzy
+msgid "Common problems when running Ubuntu Touch"
+msgstr "Ejecutando Ubuntu Touch"
+
+#: ../../porting/common-problems-run.rst:4
+msgid ""
+"This page details problems commonly faced while following the :doc:`running-"
+"ut` page."
+msgstr ""
+
+#: ../../porting/common-problems-run.rst:7
+msgid "Nothing shows on screen"
+msgstr ""
+
+#: ../../porting/common-problems-run.rst:9
+msgid ""
+"If nothing is showing on screen even after adding udev rules to your port, "
+"it is likely that you have a problem with graphical applications crashing. "
+"See `Mir servers crash`_ for more information."
+msgstr ""
+
+#: ../../porting/common-problems-run.rst:12
+msgid "Mir servers crash"
+msgstr ""
+
+#: ../../porting/common-problems-run.rst:14
+msgid ""
+"Mir servers crashing can be caused by many different problems with the port. "
+"To troubleshoot more, you can try the following:"
+msgstr ""
+
+#: ../../porting/common-problems-run.rst:17
+msgid "Is the Android container running?"
+msgstr ""
+
+#: ../../porting/common-problems-run.rst:19
+msgid ""
+"If the Android container is not running, many parts of Ubuntu Touch will not "
+"work. Run this command to check on the container's status::"
+msgstr ""
+
+#: ../../porting/common-problems-run.rst:23
+msgid ""
+"If you get output similar to the following, the Android container is running "
+"and you can move on to the next troubleshooting step::"
+msgstr ""
+
+#: ../../porting/common-problems-run.rst:30
+msgid ""
+"If you do not get ``State: RUNNING``, the container is stopped. You can run "
+"``sudo start lxc-android-config`` to attempt to start it. If the container "
+"does not start after that, you can run ``sudo lxc-start -n android -F`` to "
+"get a more detailed log of why it has failed."
+msgstr ""
+
+#: ../../porting/common-problems-run.rst:34
+msgid "Are all of the Android partitions mounted?"
+msgstr ""
+
+#: ../../porting/common-problems-run.rst:36
+msgid ""
+"If some partitions used for Android drivers are not mounted, the container "
+"may start but not work correctly."
+msgstr ""
+
+#: ../../porting/common-problems-run.rst:38
+msgid ""
+"To check the mounted Android partitions, run ``ls /android``. At least the "
+"following folders should be contained within::"
+msgstr ""
+
+#: ../../porting/common-problems-run.rst:45
+msgid ""
+"If any of these are missing, run ``dmesg`` to get the kernel log. Mounting "
+"Android partitions will start after the following line::"
+msgstr ""
+
+#: ../../porting/common-problems-run.rst:49
+msgid ""
+"Try to diagnose and fix any mounting errors that you find in the log for the "
+"partitions listed above."
+msgstr ""
+
+#: ../../porting/common-problems-run.rst:53
+msgid ""
+"Some devices have a ``vendor`` partition that contains proprietary libraries "
+"and executables required to run Android. If your device has this partition, "
+"make sure that it is mounted in addition to the others listed above."
+msgstr ""
+
+#: ../../porting/common-problems-run.rst:57
+msgid "Getting more Mir logs"
+msgstr ""
+
+#: ../../porting/common-problems-run.rst:59
+msgid ""
+"If the Android container is running and all of its partitions seem to be "
+"mounted, you will need to get a few more logs before enlisting community "
+"help."
+msgstr ""
+
+#: ../../porting/common-problems-run.rst:61
+msgid "First, stop the display manager if it is not already::"
+msgstr ""
+
+#: ../../porting/common-problems-run.rst:65
+msgid ""
+"If you have Wi-Fi working (See `the Halium docs for Wi-Fi`_), install the "
+"``libc6-dbg`` package first::"
+msgstr ""
+
+#: ../../porting/common-problems-run.rst:70
+msgid "Then, run the following commands to get all of the needed logs::"
+msgstr ""
+
+#: ../../porting/common-problems-run.rst:76
+msgid ""
+"Use ``scp`` or a similar program to copy the ``usc.log``, ``usc-gdb.log``, "
+"and ``usc-logcat.log`` files from phablet's home folder to your computer. "
+"Then, post the content of these files to `paste.ubuntu.com`_, Pastebin, "
+"GitHub Gists, or a similar service so the people helping you can view them "
+"easily."
+msgstr ""
+
+#: ../../porting/common-problems-run.rst:79
+msgid "Programs hang before crashing"
+msgstr ""
+
+#: ../../porting/common-problems-run.rst:81
+msgid ""
+"Sometimes processes will hang for a very long time and then abort or "
+"segfault. The reason for the hang is apport, which attempts to collect "
+"useful information about the crash before allowing the program to stop."
+msgstr ""
+
+#: ../../porting/common-problems-run.rst:83
+msgid ""
+"If you don't need apport's information and would rather have the programs "
+"crash faster while troubleshooting, issue the following commands::"
+msgstr ""
 
 #: ../../porting/installing-16-04.rst:2
 msgid "Installing Ubuntu Touch 16.04 images on Halium"
@@ -325,43 +375,44 @@ msgstr "Instalando imágenes Ubuntu Touch 16.04 en Halium"
 #: ../../porting/installing-16-04.rst:6
 msgid ""
 "These steps  will wipe **all** of the data on your device. If there is "
-"anything that you would like to keep, ensure it is backed up and copied "
-"off of the device before continuing."
+"anything that you would like to keep, ensure it is backed up and copied off "
+"of the device before continuing."
 msgstr ""
 "Estos pasos borrarán **todos** sus datos en su dispositivo. Si hay algo que "
 "desee mantener, asegúrese de que tiene una copia de seguridad fuera de su "
 "dispositivo antes de continuar."
 
 #: ../../porting/installing-16-04.rst:8
+#, fuzzy
 msgid ""
-"Now that you've :doc:`built ubports-boot <building-ubports-boot>`, we'll "
-"use a script called ``rootstock-touch-install`` to install an Ubuntu "
-"Touch rootfs on your device."
+"Now that you've :doc:`built halium-boot <building-halium-boot>`, we're ready "
+"to install Ubuntu Touch on your device."
 msgstr ""
 "Ahora que tiene :doc:`construido ubports-boot <building-ubports-boot>`, "
-"usaremos un script llamado ``rootstock-touch-install`` para instalar "
-"Ubuntu Touch en el rootfs de su dispositivo."
+"usaremos un script llamado ``rootstock-touch-install`` para instalar Ubuntu "
+"Touch en el rootfs de su dispositivo."
 
 #: ../../porting/installing-16-04.rst:10
 msgid ""
 "In order to install Ubuntu Touch, you will need a recovery with Busybox, "
-"such as TWRP, installed on your phone. You will also need to ensure the "
-"/data partition is formatted with ext4 and does not have any encryption "
-"on it."
+"such as TWRP, installed on your phone. You will also need to ensure the /"
+"data partition is formatted with ext4 and does not have any encryption on it."
 msgstr ""
 "A fin de instalar Ubuntu Touch, necesitará una recuperación con Busybox, tal "
 "como TWRP, instalado en su teléfono. También necesitará asegurarse de que la "
 "partición /data está formateada en ext4 y no está cifrada."
 
 #: ../../porting/installing-16-04.rst:13
-msgid "Install ubports-boot"
+#, fuzzy
+msgid "Install halium-boot"
 msgstr "Instalación de ubports-boot"
 
 #: ../../porting/installing-16-04.rst:15
+#, fuzzy
 msgid ""
-"We'll need to install the ubports-boot image before installing an image. "
-"Reboot your phone into fastboot mode, then do the following from your "
-"Halium tree::"
+"We'll need to install the halium-boot image before installing an image. "
+"Reboot your phone into fastboot mode, then do the following from your Halium "
+"tree::"
 msgstr ""
 "Necesitaremos instalar la imagen de ubports-boot antes de instalar una "
 "imagen. Reinicie su teléfono en modo fastboot, después haga lo siguiente "
@@ -373,242 +424,255 @@ msgstr "Descargar el rootfs"
 
 #: ../../porting/installing-16-04.rst:23
 msgid ""
-"Next we'll need to download the rootfs (root filesystem) that's "
-"appropriate for your device. Right now, we only have one available. "
-"Simply download ``ubports-touch.rootfs-xenial-armhf.tar.gz`` from `our CI"
-" server <https://ci.ubports.com/job/xenial-rootfs-armhf/>`__. If you have"
-" a 64-bit ARM (aarch64) device, this same rootfs should work for you. If "
-"you have an x86 device, let us know. We do not have a rootfs available "
-"for these yet."
+"Next we'll need to download the rootfs (root filesystem) that's appropriate "
+"for your device. Right now, we only have one available. Simply download "
+"``ubports-touch.rootfs-xenial-armhf.tar.gz`` from `our CI server <https://ci."
+"ubports.com/job/xenial-rootfs-armhf/>`__. If you have a 64-bit ARM (aarch64) "
+"device, this same rootfs should work for you. If you have an x86 device, let "
+"us know. We do not have a rootfs available for these yet."
 msgstr ""
 "A continuación necesitaremos descargar el rootfs (sistema de archivos raíz) "
 "que es adecuado para su dispositivo. Ahora mismo solo tenemos uno "
-"disponible. Simplemente descargue ``ubports-touch.rootfs-xenial-"
-"armhf.tar.gz`` desde `nuestro servidor CI <https://ci.ubports.com/job/xenial-"
-"rootfs-armhf/>`__. Si tiene un dispositivo ARM de 64-bit (aarch64), este "
-"mismo rootfs debería valerle. Si tiene un dispositivo x86, díganoslo. No "
-"tenemos un rootfs disponible para esos aún."
+"disponible. Simplemente descargue ``ubports-touch.rootfs-xenial-armhf.tar."
+"gz`` desde `nuestro servidor CI <https://ci.ubports.com/job/xenial-rootfs-"
+"armhf/>`__. Si tiene un dispositivo ARM de 64-bit (aarch64), este mismo "
+"rootfs debería valerle. Si tiene un dispositivo x86, díganoslo. No tenemos "
+"un rootfs disponible para esos aún."
 
-#: ../../porting/installing-16-04.rst:27
+#: ../../porting/installing-16-04.rst:26
 msgid "Install system.img and rootfs"
 msgstr "Instalar system.img y rootfs"
 
-#: ../../porting/installing-16-04.rst:31
+#: ../../porting/installing-16-04.rst:28
+msgid "Todo"
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:30
 msgid ""
-"Change the rootstock link to point to UBports once the actuallyfixit PR "
-"is merged."
+"Change the rootstock link to point to UBports once the actuallyfixit PR is "
+"merged."
 msgstr ""
 "Cambie el enlace rootstock para que apunte a UBports una vez que el "
 "actuallyfixit PR está incorporado."
 
-#: ../../porting/installing-16-04.rst:33
+#: ../../porting/installing-16-04.rst:32
 msgid ""
-"Download the rootstock-touch-install script from `universalsuperbox"
-"/rootstock-ng <https://github.com/universalsuperbox/rootstock-ng/tree"
-"/xenial-actuallyfixit>`_. Boot your device into recovery and run the "
-"script as follows::"
+"Download the halium-install-standalone script from `jbbgameich/halium-"
+"install's releases <https://github.com/JBBgameich/halium-install/releases/"
+">`_ (`direct link to download <https://github.com/JBBgameich/halium-install/"
+"releases/download/continuous/halium-install-standalone.sh>`__). Boot your "
+"device into recovery and run the script as follows::"
 msgstr ""
-"Descargue el script rootstock-touch-install de universalsuperbox"
-"/rootstock-ng <https://github.com/universalsuperbox/rootstock-ng/tree"
-"/xenial-actuallyfixit>`_. Inicie su dispositivo en recuperación "
-"(recovery) y ejecute el script de la siguiente manera::"
 
-#: ../../porting/installing-16-04.rst:37
+#: ../../porting/installing-16-04.rst:36
 msgid ""
 "The script will copy and extract the files to their proper places, then "
-"allow you to set the phablet user's password. If it gets all the way to "
-"``rebooting device`` and doesn't seem to produce any errors, it's time to"
-" continue to the next step. If something goes wrong, please get in touch "
-"with us. If your device doesn't reboot automatically, reboot it using "
-"your recovery's interface."
+"allow you to set the phablet user's password."
 msgstr ""
-"El script copiará y extraerá los archivos a sus lugares adecuados, luego "
-"le permitirá que ponga la contraseña de usuario a su dispositivo. Si hace"
-" todo su recorrido hasta ``rebooting device`` y no produce ningún error, "
-"es el momento de continuar con el siguiente paso. Si algo va mal, póngase"
-" en contacto con nosotros. Si su dispositivo no se reinicia "
-"automáticamente, reinícielo usando su interfaz de recuperación "
-"(recovery)."
 
 #: ../../porting/installing-16-04.rst:39
-msgid ""
-"If you get errors similar to ``broken pipe`` or ``out of memory``, use "
-"the ``-b`` option to push the busybox or toybox build that came from your"
-" tree. These may have fewer bugs than your recovery's busybox. More "
-"information about this option is available in the script's README."
-msgstr ""
-"Si obtiene errores similares a ``broken pipe`` o ``out of memory``, use la "
-"opción ``-b`` para obligar la construcción busybox o toybox que viene de su "
-"árbol (tree). Estos pueden tener menos errores que el busybox de su "
-"recuperación. Mas información sobre esta opción está disponible en el README "
-"del script."
-
-#: ../../porting/installing-16-04.rst:43
 msgid "Get SSH access"
 msgstr "Obtenga acceso SSH"
 
-#: ../../porting/installing-16-04.rst:45
+#: ../../porting/installing-16-04.rst:41
 msgid ""
 "When your device boots, it will likely stay at the bootloader screen. "
-"However, you should also get a new network connection on the computer you"
-" have it plugged in to. We will use this to debug the system."
+"However, you should also get a new network connection on the computer you "
+"have it plugged in to. We will use this to debug the system."
 msgstr ""
-"Cuando su dispositivo se inicia, seguramente se mantendrá en la pantalla "
-"de arranque. Sin embargo, debería tener también una nueva conexión de red"
-" en el ordenador al que está conectado. Usaremos esto para depurar el "
-"sistema."
+"Cuando su dispositivo se inicia, seguramente se mantendrá en la pantalla de "
+"arranque. Sin embargo, debería tener también una nueva conexión de red en el "
+"ordenador al que está conectado. Usaremos esto para depurar el sistema."
 
-#: ../../porting/installing-16-04.rst:47
+#: ../../porting/installing-16-04.rst:43
+#, fuzzy
 msgid ""
-"To confirm that your device has booted correctly, run ``dmesg -w`` and "
-"watch for \"GNU/Linux device\" in the output. If you instead get "
-"something similar to \"ubports initrd i hit a nail\", please get in "
-"contact with us so we can find out why. You may also choose to run "
-"``watch ip link`` and look for changes in network devices."
+"To confirm that your device has booted correctly, run ``dmesg -w`` and watch "
+"for \"GNU/Linux device\" in the output. If you instead get something similar "
+"to \"Halium initrd Failed to boot\", please get in contact with us so we can "
+"find out why."
 msgstr ""
 "Para confirmar que su dispositivo se ha iniciado correctamente, ejecute "
-"``dmesg -w`` y preste atención a \"GNU/Linux device\" en la salida. Si en"
-" vez de ello le aparece algo parecido a  \"ubports initrd i hit a nail\","
-" póngase en contacto con nosotros para que podamos descubrir el motivo. "
-"También puede elegir ejecutar ``watch ip link`` y buscar los cambios en "
-"los dispositivos de red."
+"``dmesg -w`` y preste atención a \"GNU/Linux device\" en la salida. Si en "
+"vez de ello le aparece algo parecido a  \"ubports initrd i hit a nail\", "
+"póngase en contacto con nosotros para que podamos descubrir el motivo. "
+"También puede elegir ejecutar ``watch ip link`` y buscar los cambios en los "
+"dispositivos de red."
+
+#: ../../porting/installing-16-04.rst:45
+#, fuzzy
+msgid ""
+"Similar to the `Halium reference rootfs <http://docs.halium.org/en/latest/"
+"porting/debug-build/logging-in.html>`__, you should set your computer's IP "
+"on the newly connected RNDIS interface to ``10.15.19.100`` if you don't get "
+"one automatically. Then, run the following to access your device::"
+msgstr ""
+"Parecido al rootfs de referencia de Halium, debería establecer la IP de su "
+"ordenador en la nueva interfaz RNDIS como ``10.15.19.100`` si no la obtiene "
+"automáticamente. Luego, ejecute lo siguiente para acceder a su dispositivo::"
 
 #: ../../porting/installing-16-04.rst:49
-msgid ""
-"Similar to the Halium reference rootfs, you should set your computer's IP"
-" on the newly connected RNDIS interface to ``10.15.19.100`` if you don't "
-"get one automatically. Then, run the following to access your device::"
+#, fuzzy
+msgid "The password will be the one that you set while running halium-install."
 msgstr ""
-"Parecido al rootfs de referencia de Halium, debería establecer la IP de "
-"su ordenador en la nueva interfaz RNDIS como ``10.15.19.100`` si no la "
-"obtiene automáticamente. Luego, ejecute lo siguiente para acceder a su "
-"dispositivo::"
+"La contraseña será la que estableció cuando estaba ejecutando rootstock."
 
-#: ../../porting/installing-16-04.rst:53
-msgid "The password will be the one that you set while running rootstock."
-msgstr "La contraseña será la que estableció cuando estaba ejecutando rootstock."
-
-#: ../../porting/installing-16-04.rst:56
-msgid "Make / writeable"
-msgstr "Hacer / escribible"
-
-#: ../../porting/installing-16-04.rst:58
-msgid ""
-"Before we make any changes to the rootfs (which will be required for the "
-"next step), you'll need to remount it with write permissions. To do that,"
-" run the following command::"
+#: ../../porting/installing-16-04.rst:52 ../../porting/running-ut.rst:74
+msgid "Common Problems"
 msgstr ""
-"Antes de que hagamos algún cambio al rootfs (que será necesario en el "
-"siguiente paso), necesitará montarlo de nuevo con permisos de escritura. "
-"Para hacer esto, ejecute la siguiente orden::"
+
+#: ../../porting/installing-16-04.rst:54
+msgid ""
+"If you have any errors while performing these steps, check see if any of the "
+"following suggestions match what you are seeing. If you have installed "
+"successfully, skip down to `Continue on`_."
+msgstr ""
 
 #: ../../porting/installing-16-04.rst:64
-msgid "Add udev rules"
-msgstr "Añadir reglas de udev"
-
-#: ../../porting/installing-16-04.rst:66
 msgid ""
-"Now that you're logged in, you must create some udev rules to allow "
-"Ubuntu Touch software to access your hardware. Run the following command,"
-" replacing [codename] with your device's codename.::"
+"Congratulations! Ubuntu Touch has now booted on your device. Move on to :doc:"
+"`running-ut` to learn about more specific steps you will need to take for a "
+"complete port."
 msgstr ""
-"Ahora que ha iniciado sesión en el sistema, debe crear algunas reglas de "
-"udev para permitir al software de Ubuntu Touch que acceda a su hardware. "
-"Ejecute la siguiente orden, cambiando [codename] (alias) con el alias de "
-"su dispositivo::"
-
-#: ../../porting/installing-16-04.rst:71
-msgid ""
-"Now, reboot the device. If all has gone well, you will eventually see the"
-" Ubuntu Touch spinner followed by Unity 8. Your lock password is the same"
-" as you set for SSH."
-msgstr ""
-"Ahora reinicie el dispositivo. Si todo ha ido bien, acabará viendo el "
-"girador de Ubuntu Touch seguido de Unity 8. La contraseña de bloqueo es "
-"la misma que la que puso para SSH."
-
-#: ../../porting/installing-16-04.rst:76
-msgid ""
-"Congratulations! Ubuntu Touch has now booted on your device. Move on to "
-":doc:`running-ut` to learn about more specific steps you will need to "
-"take for a complete port."
-msgstr ""
-"¡Enhorabuena! Ubuntu Touch ha arrancado ahora en su dispositivo. Pase a :doc"
-":`running-ut` para aprender sobre los pasos mas específicos que necesitará "
+"¡Enhorabuena! Ubuntu Touch ha arrancado ahora en su dispositivo. Pase a :doc:"
+"`running-ut` para aprender sobre los pasos mas específicos que necesitará "
 "hacer para un portado completo."
-
-#: ../../porting/installing-16-04.rst:80
-msgid ""
-"This should be a little heavier on \"What to do when something goes "
-"wrong\" content."
-msgstr ""
-"El contenido de \"que hacer cuando algo va mal\" debería ser un poco mas "
-"extenso."
 
 #: ../../porting/introduction.rst:2
 msgid "Porting information"
 msgstr "Información sobre portado"
 
 #: ../../porting/introduction.rst:5
+#, fuzzy
 msgid ""
-"If you are looking for information on installing Ubuntu Touch on a "
-"supported device, or if you would like to check if your device is "
-"supported, please see `this page <https://ubports.com/page/get-ubuntu-"
-"touch>`_."
+"If you are looking for information on installing Ubuntu Touch on a supported "
+"device, or if you would like to check if your device is supported, please "
+"see `this page <https://devices.ubuntu-touch.io/>`_."
 msgstr ""
 "Si está buscando información sobre como instalar Ubuntu Touch en un "
 "dispositivo soportado, o si le gustaría comprobar si su dispositivo está "
-"soportado, vea `esta página <https://ubports.com/page/get-ubuntu-"
-"touch>`_."
+"soportado, vea `esta página <https://ubports.com/page/get-ubuntu-touch>`_."
 
 #: ../../porting/introduction.rst:7
 msgid ""
-"This section will introduce you to some of the specifics of porting "
-"Ubuntu Touch to an Android device."
+"This section will introduce you to some of the specifics of porting Ubuntu "
+"Touch to an Android device."
 msgstr ""
-"Esta sección le presentará alguna de las particularidades de portar "
-"Ubuntu Touch a un dispositivo Android."
+"Esta sección le presentará alguna de las particularidades de portar Ubuntu "
+"Touch a un dispositivo Android."
 
 #: ../../porting/introduction.rst:9
 msgid ""
 "Before you begin, you'll want to head over to `the Halium porting guide "
-"<http://docs.halium.org/en/latest/porting/first-steps.html>`_ and get "
-"your ``systemimage`` built without errors. Once you're at the point of "
-"installing a rootfs, you can come back here."
+"<http://docs.halium.org/en/latest/porting/first-steps.html>`_ and get your "
+"``systemimage`` built without errors. Once you're at the point of installing "
+"a rootfs, you can come back here."
 msgstr ""
-"Antes de que comience, querrá ir a `la guía de portado de Halium "
-"<http://docs.halium.org/en/latest/porting/first-steps.html>`_  y "
-"conseguir construir su ``systemimage`` sin errores. Una vez que haya "
-"llegado al punto de instalar un rootfs, puede volver aquí."
+"Antes de que comience, querrá ir a `la guía de portado de Halium <http://"
+"docs.halium.org/en/latest/porting/first-steps.html>`_  y conseguir construir "
+"su ``systemimage`` sin errores. Una vez que haya llegado al punto de "
+"instalar un rootfs, puede volver aquí."
 
 #: ../../porting/introduction.rst:11
+#, fuzzy
 msgid ""
-"Start at :doc:`building-ubports-boot` if you'd like to install the "
-"UBports Ubuntu Touch 16.04 rootfs."
+"Start at :doc:`building-halium-boot` if you'd like to install the UBports "
+"Ubuntu Touch 16.04 rootfs."
 msgstr ""
 "Comience en :doc:`building-ubports-boot`si quiere instalar el rootfs de "
 "UBports Ubuntu Touch 16.04."
+
+#: ../../porting/introduction.rst:25
+msgid "Getting community help"
+msgstr ""
+
+#: ../../porting/introduction.rst:27
+msgid ""
+"If you're having trouble with the porting steps after building your Halium "
+"systemimage, check out the \"Common Problems\" section of the page you're "
+"stuck on. If none of the suggestions are helpful, you can get help from the "
+"community via the following channels:"
+msgstr ""
+
+#: ../../porting/introduction.rst:29
+msgid "Telegram: @ubports_porting"
+msgstr ""
+
+#: ../../porting/introduction.rst:30
+msgid "IRC: #ubports-porting on freenode"
+msgstr ""
+
+#: ../../porting/introduction.rst:31
+msgid "Forum: `forums.ubports.com <https://forums.ubports.com>`__"
+msgstr ""
 
 #: ../../porting/running-ut.rst:2
 msgid "Running Ubuntu Touch"
 msgstr "Ejecutando Ubuntu Touch"
 
-#: ../../porting/running-ut.rst:5
+#: ../../porting/running-ut.rst:4
+msgid ""
+"Now that you're logged in, there are a few more steps before Ubuntu Touch "
+"will be fully functional on your device."
+msgstr ""
+
+#: ../../porting/running-ut.rst:7
+msgid "Make / writeable"
+msgstr "Hacer / escribible"
+
+#: ../../porting/running-ut.rst:9
+#, fuzzy
+msgid ""
+"Before we make any changes to the rootfs (which will be required for the "
+"next steps), you'll need to remount it with write permissions. To do that, "
+"run the following command::"
+msgstr ""
+"Antes de que hagamos algún cambio al rootfs (que será necesario en el "
+"siguiente paso), necesitará montarlo de nuevo con permisos de escritura. "
+"Para hacer esto, ejecute la siguiente orden::"
+
+#: ../../porting/running-ut.rst:14
+msgid "Add udev rules"
+msgstr "Añadir reglas de udev"
+
+#: ../../porting/running-ut.rst:16
+#, fuzzy
+msgid ""
+"You must create some udev rules to allow Ubuntu Touch software to access "
+"your hardware. Run the following command, replacing [codename] with your "
+"device's codename::"
+msgstr ""
+"Ahora que ha iniciado sesión en el sistema, debe crear algunas reglas de "
+"udev para permitir al software de Ubuntu Touch que acceda a su hardware. "
+"Ejecute la siguiente orden, cambiando [codename] (alias) con el alias de su "
+"dispositivo::"
+
+#: ../../porting/running-ut.rst:21
+msgid ""
+"Now, reboot the device. If all has gone well, you will eventually see the "
+"Ubuntu Touch spinner followed by Unity 8. Your lock password is the same as "
+"you set for SSH."
+msgstr ""
+"Ahora reinicie el dispositivo. Si todo ha ido bien, acabará viendo el "
+"girador de Ubuntu Touch seguido de Unity 8. La contraseña de bloqueo es la "
+"misma que la que puso para SSH."
+
+#: ../../porting/running-ut.rst:24
 msgid "Display settings"
 msgstr "Configuración de pantalla"
 
-#: ../../porting/running-ut.rst:7
+#: ../../porting/running-ut.rst:26
 msgid ""
-"When the device boots, you'll probably notice that everything is very "
-"small. There are two variables that set the content scaling for Unity 8 "
-"and Ubuntu Touch applications: ``GRID_UNIT_PX`` and ``QTWEBKIT_DPR``."
+"When the device boots, you'll probably notice that everything is very small. "
+"There are two variables that set the content scaling for Unity 8 and Ubuntu "
+"Touch applications: ``GRID_UNIT_PX`` and ``QTWEBKIT_DPR``."
 msgstr ""
 "Cuando el dispositivo arranca, probablemente notará que todo es muy pequeño. "
 "Hay dos variables que configuran el escalado del contenido para las "
 "aplicaciones de Unity 8 y de Ubuntu Touch: ``GRID_UNIT_PX`` y "
 "``QTWEBKIT_DPR``."
 
-#: ../../porting/running-ut.rst:9
+#: ../../porting/running-ut.rst:28
 msgid ""
 "There are also some other options available that may be useful for you "
 "depending on your device's form factor. These are discussed below."
@@ -616,42 +680,42 @@ msgstr ""
 "Hay también otras opciones disponibles que pueden serle útiles dependiendo "
 "del factor de forma de su dispositivo. Se discuten mas abajo."
 
-#: ../../porting/running-ut.rst:11
+#: ../../porting/running-ut.rst:30
 msgid ""
-"All of these settings are guessed by Unity 8 if none are set. There are "
-"many cases, however, where the guess is wrong (for example, very high "
-"resolution phone displays will be identified as desktop computers). To "
-"manually set a value for these variables, simply create a file at ``/etc"
-"/ubuntu-session.d/[codename].conf`` specifying them. For example, this is"
-" the file for the Nexus 7 tablet::"
+"All of these settings are guessed by Unity 8 if none are set. There are many "
+"cases, however, where the guess is wrong (for example, very high resolution "
+"phone displays will be identified as desktop computers). To manually set a "
+"value for these variables, simply create a file at ``/etc/ubuntu-session.d/"
+"[codename].conf`` specifying them. For example, this is the file for the "
+"Nexus 7 tablet::"
 msgstr ""
 "Todas estas configuraciones son supuestas por Unity 8 si no hay ninguna "
-"configurada. Hay muchos casos, sin embargo, donde la suposición es errónea ("
-"por ejemplo, pantallas de teléfono con muy alta resolución serán "
+"configurada. Hay muchos casos, sin embargo, donde la suposición es errónea "
+"(por ejemplo, pantallas de teléfono con muy alta resolución serán "
 "identificadas como ordenadores de escritorio). Para configurar manualmente "
 "un valor para estas variables, simplemente cree un archivo en ``/etc/ubuntu-"
 "session.d/[codename].conf`` especificándolos. Por ejemplo, este es el "
 "archivo para la tableta Nexus 7::"
 
-#: ../../porting/running-ut.rst:19
+#: ../../porting/running-ut.rst:38
 msgid "Methods for deriving values for these variables are below."
 msgstr ""
 "Los métodos para obtener los valores para estas variables están mas abajo."
 
-#: ../../porting/running-ut.rst:22
+#: ../../porting/running-ut.rst:41
 msgid "Display scaling"
 msgstr "Escala de la pantalla"
 
-#: ../../porting/running-ut.rst:24
+#: ../../porting/running-ut.rst:43
 msgid ""
-"``GRID_UNIT_PX`` (Pixels per Grid Unit or Px/GU) is specific to each "
-"device. Its goal is to make the user interface of the system and its "
-"applications the same *perceived* size regardless of the device they are "
-"displayed on. It is primarily dependent on the pixel density of the "
-"device’s screen and the distance to the screen the user is at. The latter"
-" value cannot be automatically detected and is based on heuristics. We "
-"assume that tablets and laptops are the same distance and that they are "
-"held at 1.235 times the distance phones tend to be held at."
+"``GRID_UNIT_PX`` (Pixels per Grid Unit or Px/GU) is specific to each device. "
+"Its goal is to make the user interface of the system and its applications "
+"the same *perceived* size regardless of the device they are displayed on. It "
+"is primarily dependent on the pixel density of the device’s screen and the "
+"distance to the screen the user is at. The latter value cannot be "
+"automatically detected and is based on heuristics. We assume that tablets "
+"and laptops are the same distance and that they are held at 1.235 times the "
+"distance phones tend to be held at."
 msgstr ""
 "``GRID_UNIT_PX`` (Píxeles por unidad de cuadrícula o Px/GU) es específico "
 "para cada dispositivo. Su meta es hacer que la interfaz de usuario del "
@@ -663,7 +727,7 @@ msgstr ""
 "tabletas y portátiles y que están sostenidos a 1.235 veces la distancia a la "
 "que se suelen sostener los teléfonos."
 
-#: ../../porting/running-ut.rst:26
+#: ../../porting/running-ut.rst:45
 msgid ""
 "``QTWEBKIT_DPR`` sets the display scaling for the Oxide web engine, so "
 "changes to this value will affect the scale of the browser and webapps."
@@ -672,13 +736,14 @@ msgstr ""
 "así que los cambios a este valor afectarán a la escala del navegador y de "
 "las aplicaciones web."
 
-#: ../../porting/running-ut.rst:28
+#: ../../porting/running-ut.rst:47
+#, fuzzy
 msgid ""
-"A reference device has been chosen from which we derive the values for "
-"all other devices. The reference device is a laptop with a 120ppi screen."
-" However, there is no exact formula since these options are set for "
-"*perceived* size rather than *physical* size . Here are some values for "
-"other devices so you may derive the correct one for yours:"
+"A reference device has been chosen from which we derive the values for all "
+"other devices. The reference device is a laptop with a 120ppi screen. "
+"However, there is no exact formula since these options are set for "
+"*perceived* size rather than *physical* size. Here are some values for other "
+"devices so you may derive the correct one for yours:"
 msgstr ""
 "Un dispositivo de referencia ha sido elegido del cuál derivamos los valores "
 "para todos los otros dispositivos. El dispositivo de referencia es un "
@@ -687,189 +752,189 @@ msgstr ""
 "que un tamaño *físico*. Aquí tiene algunos valores para otros dispositivos "
 "para que pueda derivar el correcto para el suyo:"
 
-#: ../../porting/running-ut.rst:31
+#: ../../porting/running-ut.rst:50
 msgid "Device"
 msgstr "Dispositivo"
 
-#: ../../porting/running-ut.rst:31
+#: ../../porting/running-ut.rst:50
 msgid "Resolution"
 msgstr "Resolución"
 
-#: ../../porting/running-ut.rst:31
+#: ../../porting/running-ut.rst:50
 msgid "Display Size"
 msgstr "Tamaño de pantalla"
 
-#: ../../porting/running-ut.rst:31
+#: ../../porting/running-ut.rst:50
 msgid "PPI"
 msgstr "PPI"
 
-#: ../../porting/running-ut.rst:31
+#: ../../porting/running-ut.rst:50
 msgid "Px/GU"
 msgstr "Px/GU"
 
-#: ../../porting/running-ut.rst:31
+#: ../../porting/running-ut.rst:50
 msgid "QtWebKit DPR"
 msgstr "QtWebKit DPR"
 
-#: ../../porting/running-ut.rst:33
+#: ../../porting/running-ut.rst:52
 msgid "'Normal' density laptop"
 msgstr "Portátil con densidad 'normal'"
 
-#: ../../porting/running-ut.rst:33 ../../porting/running-ut.rst:35
+#: ../../porting/running-ut.rst:52 ../../porting/running-ut.rst:54
 msgid "N/A"
 msgstr "N/D"
 
-#: ../../porting/running-ut.rst:33
+#: ../../porting/running-ut.rst:52
 msgid "96-150"
 msgstr "96-150"
 
-#: ../../porting/running-ut.rst:33
+#: ../../porting/running-ut.rst:52
 msgid "8"
 msgstr "8"
 
-#: ../../porting/running-ut.rst:33
+#: ../../porting/running-ut.rst:52
 msgid "1.0"
 msgstr "1.0"
 
-#: ../../porting/running-ut.rst:34
+#: ../../porting/running-ut.rst:53
 msgid "ASUS Nexus 7"
 msgstr "ASUS Nexus 7"
 
-#: ../../porting/running-ut.rst:34
+#: ../../porting/running-ut.rst:53
 msgid "1280x800"
 msgstr "1280x800"
 
-#: ../../porting/running-ut.rst:34
+#: ../../porting/running-ut.rst:53
 msgid "7\""
 msgstr "7\""
 
-#: ../../porting/running-ut.rst:34
+#: ../../porting/running-ut.rst:53
 msgid "216"
 msgstr "216"
 
-#: ../../porting/running-ut.rst:34
+#: ../../porting/running-ut.rst:53
 msgid "12"
 msgstr "12"
 
-#: ../../porting/running-ut.rst:34 ../../porting/running-ut.rst:36
-#: ../../porting/running-ut.rst:37 ../../porting/running-ut.rst:38
+#: ../../porting/running-ut.rst:53 ../../porting/running-ut.rst:55
+#: ../../porting/running-ut.rst:56 ../../porting/running-ut.rst:57
 msgid "2.0"
 msgstr "2.0"
 
-#: ../../porting/running-ut.rst:35
+#: ../../porting/running-ut.rst:54
 msgid "'High' density laptop"
 msgstr "Portátil con densidad 'alta'"
 
-#: ../../porting/running-ut.rst:35
+#: ../../porting/running-ut.rst:54
 msgid "150-250"
 msgstr "150-250"
 
-#: ../../porting/running-ut.rst:35
+#: ../../porting/running-ut.rst:54
 msgid "16"
 msgstr "16"
 
-#: ../../porting/running-ut.rst:35
+#: ../../porting/running-ut.rst:54
 msgid "1.5"
 msgstr "1.5"
 
-#: ../../porting/running-ut.rst:36
+#: ../../porting/running-ut.rst:55
 msgid "Samsung Galaxy Nexus"
 msgstr "Samsung Galaxy Nexus"
 
-#: ../../porting/running-ut.rst:36
+#: ../../porting/running-ut.rst:55
 msgid "1280x720"
 msgstr "1280x720"
 
-#: ../../porting/running-ut.rst:36
+#: ../../porting/running-ut.rst:55
 msgid "4.65\""
 msgstr "4.65\""
 
-#: ../../porting/running-ut.rst:36
+#: ../../porting/running-ut.rst:55
 msgid "316"
 msgstr "316"
 
-#: ../../porting/running-ut.rst:36 ../../porting/running-ut.rst:37
+#: ../../porting/running-ut.rst:55 ../../porting/running-ut.rst:56
 msgid "18"
 msgstr "18"
 
-#: ../../porting/running-ut.rst:37
+#: ../../porting/running-ut.rst:56
 msgid "LG Nexus 4"
 msgstr "LG Nexus 4"
 
-#: ../../porting/running-ut.rst:37
+#: ../../porting/running-ut.rst:56
 msgid "1280x768"
 msgstr "1280x768"
 
-#: ../../porting/running-ut.rst:37
+#: ../../porting/running-ut.rst:56
 msgid "4.7\""
 msgstr "4.7\""
 
-#: ../../porting/running-ut.rst:37
+#: ../../porting/running-ut.rst:56
 msgid "320"
 msgstr "320"
 
-#: ../../porting/running-ut.rst:38
+#: ../../porting/running-ut.rst:57
 msgid "Samsung Nexus 10"
 msgstr "Samsung Nexus 10"
 
-#: ../../porting/running-ut.rst:38
+#: ../../porting/running-ut.rst:57
 msgid "2560x1600"
 msgstr "2560x1600"
 
-#: ../../porting/running-ut.rst:38
+#: ../../porting/running-ut.rst:57
 msgid "10.1\""
 msgstr "10.1\""
 
-#: ../../porting/running-ut.rst:38
+#: ../../porting/running-ut.rst:57
 msgid "299"
 msgstr "299"
 
-#: ../../porting/running-ut.rst:38
+#: ../../porting/running-ut.rst:57
 msgid "20"
 msgstr "20"
 
-#: ../../porting/running-ut.rst:39
+#: ../../porting/running-ut.rst:58
 msgid "Fairphone 2"
 msgstr "Fairphone 2"
 
-#: ../../porting/running-ut.rst:39 ../../porting/running-ut.rst:40
+#: ../../porting/running-ut.rst:58 ../../porting/running-ut.rst:59
 msgid "1080x1920"
 msgstr "1080x1920"
 
-#: ../../porting/running-ut.rst:39
+#: ../../porting/running-ut.rst:58
 msgid "5\""
 msgstr "5\""
 
-#: ../../porting/running-ut.rst:39
+#: ../../porting/running-ut.rst:58
 msgid "440"
 msgstr "440"
 
-#: ../../porting/running-ut.rst:39 ../../porting/running-ut.rst:40
+#: ../../porting/running-ut.rst:58 ../../porting/running-ut.rst:59
 msgid "23"
 msgstr "23"
 
-#: ../../porting/running-ut.rst:39 ../../porting/running-ut.rst:40
+#: ../../porting/running-ut.rst:58 ../../porting/running-ut.rst:59
 msgid "2.5"
 msgstr "2.5"
 
-#: ../../porting/running-ut.rst:40
+#: ../../porting/running-ut.rst:59
 msgid "LG Nexus 5"
 msgstr "LG Nexus 5"
 
-#: ../../porting/running-ut.rst:40
+#: ../../porting/running-ut.rst:59
 msgid "4.95\""
 msgstr "4.95\""
 
-#: ../../porting/running-ut.rst:40
+#: ../../porting/running-ut.rst:59
 msgid "445"
 msgstr "445"
 
-#: ../../porting/running-ut.rst:43
+#: ../../porting/running-ut.rst:62
 msgid ""
-"Experiment with a few values to find one that feels good when compared to"
-" the Ubuntu Touch experience on other devices. If you are unsure of which"
-" is the best, share some pictures (including some object for scale) along"
-" with the device specs with us."
+"Experiment with a few values to find one that feels good when compared to "
+"the Ubuntu Touch experience on other devices. If you are unsure of which is "
+"the best, share some pictures (including some object for scale) along with "
+"the device specs with us."
 msgstr ""
 "Experimente con algunos valores hasta encontrar uno con el que se sienta "
 "bien comparado con la experiencia de Ubuntu Touch en otros dispositivos. Si "
@@ -877,22 +942,22 @@ msgstr ""
 "fotografías (incluyendo algún objeto como escala) así como las "
 "especificaciones del dispositivo."
 
-#: ../../porting/running-ut.rst:46
+#: ../../porting/running-ut.rst:65
 msgid "Form factor"
 msgstr "Factor de forma"
 
-#: ../../porting/running-ut.rst:48
+#: ../../porting/running-ut.rst:67
 msgid "There are two other settings that may be of interest to you."
 msgstr "Hay otras dos configuraciones que le pueden ser de interés."
 
-#: ../../porting/running-ut.rst:50
+#: ../../porting/running-ut.rst:69
 msgid ""
-"``FORM_FACTOR`` specifies the device's form factor. This value is set as "
-"the device's Chassis, which you can find by running ``hostnamectl``. The "
-"acceptable values are ``handset``, ``tablet``, ``laptop`` and "
-"``desktop``. Apps such as the gallery use this information to change "
-"their functionality. For more information on the Chassis, see `the "
-"freedesktop.org hostnamed specification`_."
+"``FORM_FACTOR`` specifies the device's form factor. This value is set as the "
+"device's Chassis, which you can find by running ``hostnamectl``. The "
+"acceptable values are ``handset``, ``tablet``, ``laptop`` and ``desktop``. "
+"Apps such as the gallery use this information to change their functionality. "
+"For more information on the Chassis, see `the freedesktop.org hostnamed "
+"specification`_."
 msgstr ""
 "``FORM_FACTOR`` especifica el factor de forma del dispositivo. Este valor "
 "está configurado como el chasis del dispositivo, el cuál puede encontrar "
@@ -901,14 +966,14 @@ msgstr ""
 "información para cambiar sus características. Para mas información sobre el "
 "chasis, vea `the freedesktop.org hostnamed specification`_."
 
-#: ../../porting/running-ut.rst:52
+#: ../../porting/running-ut.rst:71
 msgid ""
-"``NATIVE_ORIENTATION`` sets the display orientation for the device's "
-"built-in screen. This value is used whenever autorotation isn't working "
-"correctly or when an app wishes to be locked to the device's native "
-"orientation. Acceptable values are ``landscape``, which is normally used "
-"for tablets, laptops, and desktops; and ``portrait``, which is usually "
-"used for phone handsets."
+"``NATIVE_ORIENTATION`` sets the display orientation for the device's built-"
+"in screen. This value is used whenever autorotation isn't working correctly "
+"or when an app wishes to be locked to the device's native orientation. "
+"Acceptable values are ``landscape``, which is normally used for tablets, "
+"laptops, and desktops; and ``portrait``, which is usually used for phone "
+"handsets."
 msgstr ""
 "``NATIVE_ORIENTATION`` configura la orientación de la pantalla incorporada "
 "en el dispositivo. Este valor se usa siempre que la rotación automática no "
@@ -918,76 +983,282 @@ msgstr ""
 "y ordenadores de escritorio; y ``portrait`` (vertical), que se usa "
 "generalmente en teléfonos móviles."
 
+#: ../../porting/running-ut.rst:76
+msgid ""
+"If you have any errors while performing these steps, check see if any of the "
+"following suggestions match what you are seeing. If you have completed these "
+"steps successfully, congratulations! You've reached the end of the porting "
+"guide for now. Try to check the functionality of your device by following "
+"the Smoke Testing information in :doc:`/contribute/quality-assurance`."
+msgstr ""
+
 #~ msgid ""
-#~ "Due to a `bug in the ubports-"
-#~ "boot build scripts <https://github.com/ubports"
-#~ "/ubports-boot/issues/3>`_, you will need to"
-#~ " remove it from your tree before "
-#~ "you're able to build ``hybris-boot`` "
-#~ "again."
+#~ "Ubuntu Touch uses Upstart rather than Systemd for its init daemon. "
+#~ "Because of this, it is not fully Halium-compatible and is not able to use "
+#~ "the vanilla hybris-boot that Halium produces. For this reason, we need to "
+#~ "build ubports-boot."
 #~ msgstr ""
-#~ "Debido a un `error en los scripts"
-#~ " de construcción de ubports-boot "
-#~ "<https://github.com/ubports/ubports-boot/issues/3>`_, "
-#~ "necesitará eliminarlo de su árbol antes"
-#~ " de que sea capaz de construir "
-#~ "``hybris-boot`` de nuevo."
+#~ "Ubuntu Touch usa Upstart en vez de Systemd para su demonio init. Por ello "
+#~ "no es completamente compatible con Halium y no es capaz de usar el hybris-"
+#~ "boot estándar que hace Halium. Por esta razón necesitamos construir un "
+#~ "ubports-boot."
+
+#~ msgid "Add source to Halium tree"
+#~ msgstr "Añadir las fuentes al árbol de Halium"
+
+#~ msgid ""
+#~ "The first thing that needs to be done is adding the ubports-boot source "
+#~ "to your Halium tree. You may choose to do this by adding it to your local "
+#~ "manifests (recommended) or simply cloning it in place."
+#~ msgstr ""
+#~ "La primera cosa que necesita hacerse es añadir las fuentes del ubports-"
+#~ "boot al árbol de Halium. Puede elegir hacer esto añadiéndolas a sus "
+#~ "manifiestos locales (recomendado) o simplemente clonándolas es el lugar "
+#~ "adecuado."
+
+#~ msgid "Add to local manifest"
+#~ msgstr "Añadir al manifiesto local"
+
+#~ msgid ""
+#~ "Create a new file in ``.repo/local_manifests`` called ``ubports-boot."
+#~ "xml``. Add the following to the file:"
+#~ msgstr ""
+#~ "Cree un nuevo archivo en ``.repo/local_manifests`` llamado ``ubports-boot."
+#~ "xml``. Añada lo siguiente al archivo:"
+
+#~ msgid "Now, just do a ``repo sync`` to download the new source."
+#~ msgstr ""
+#~ "Ahora, simplemente haga un ``repo sync`` para descargar las nuevas "
+#~ "fuentes."
+
+#~ msgid "Manual clone"
+#~ msgstr "Clonación manual"
+
+#~ msgid ""
+#~ "You may also choose to clone the `ubports-boot repository <https://github."
+#~ "com/ubports/ubports-boot>`_ into your tree manually. It should be placed "
+#~ "into ``BUILDDIR/halium/ubports-boot``."
+#~ msgstr ""
+#~ "También puede elegir clonar `el repositorio de ubports-boot <https://"
+#~ "github.com/ubports/ubports-boot>`_ en su árbol (tree) manualmente. "
+#~ "Debería ser ubicado en ``BUILDDIR/halium/ubports-boot``."
+
+#~ msgid ""
+#~ "If you share your code and build instructions, please note that you've "
+#~ "done this."
+#~ msgstr ""
+#~ "Si comparte su código e instrucciones de construcción, apunte que lo ha "
+#~ "hecho así."
+
+#~ msgid "Include in build system"
+#~ msgstr "Incluir en el sistema de construcción"
+
+#~ msgid ""
+#~ "The android build system won't know where to find ubports-boot normally. "
+#~ "To fix this, open the file ``BUILDDIR/build/core/main.mk`` in a text "
+#~ "editor. Find the comment ``# Specific projects for Halium`` and add "
+#~ "``halium/ubports-boot`` to the list of ``subdirs`` ::"
+#~ msgstr ""
+#~ "El sistema de construcción de android no sabrá donde encontar el arranque "
+#~ "de ubports (ubports-boot) normalmente. Para arreglar esto, abra el "
+#~ "archivo ``BUILDDIR/build/core/main.mk`` en un editor de textos. Encuentre "
+#~ "el comentario ``# Specific projects for Halium`` y añada ``halium/ubports-"
+#~ "boot`` a la lista de ``subdirs`` ::"
+
+#~ msgid ""
+#~ "This is a workaround for `ubports/ubports-boot #1 <https://github.com/"
+#~ "ubports/ubports-boot/issues/1>`_ and `ubports/ubports-boot #2 <https://"
+#~ "github.com/ubports/ubports-boot/issues/2>`_. It should not be considered "
+#~ "a permanent fix. Be prepared to revert this later when these bugs have "
+#~ "been fixed."
+#~ msgstr ""
+#~ "Existe una solución alternativa para `ubports/ubports-boot #1 <https://"
+#~ "github.com/ubports/ubports-boot/issues/1>`_ y `ubports/ubports-boot #2 "
+#~ "<https://github.com/ubports/ubports-boot/issues/2>`_. No debería "
+#~ "considerarse un arreglo permanente. Prepárese para revertir esto más "
+#~ "tarde cuando estos errores hayan sido arreglados."
+
+#~ msgid ""
+#~ "The initramfs of the ubports-boot image takes a commandline parameter, "
+#~ "``datapart=``, which points it to the block device that is normally "
+#~ "mounted at ``/data`` in Android. This parameter is automatically embedded "
+#~ "into the image at build time by finding ``/data`` in your device's "
+#~ "default fstab and using its source. Unfortunately, this source is "
+#~ "generally a node in ``/dev/block/bootdevice/by-name`` or something else "
+#~ "strange, which is only available in an Android initramfs. To fix this, "
+#~ "Halium uses the fixup-mountpoints script, which you are probably familiar "
+#~ "with by now."
+#~ msgstr ""
+#~ "El initramfs de la imagen de ubports-boot toma un parámetro de la línea "
+#~ "de órdenes, ``datapart=``, que apunta al bloque de dispositivo que "
+#~ "normalmente se monta en ``/data`` en Android. Este parámetro es "
+#~ "automáticamente insertado en la imagen en el momento de construcción al "
+#~ "encontrar  ``/data`` en el fstab por defecto de su dispositivo y usando "
+#~ "su fuente. Desafortunadamente, esta fuente es generalmente un nodo en `/"
+#~ "dev/block/bootdevice/by-name`` u otra cosa extraña que solo está "
+#~ "disponible en el initramfs de Android. Para arreglar esto, Halium usa el "
+#~ "script de puntos de montaje reparados (fixup-mountpoints script) con el "
+#~ "que usted probablemente ya esté familiarizado a estas alturas."
+
+#~ msgid ""
+#~ "The ubports-boot initramfs does not use the fixup-mountpoints script, nor "
+#~ "does it put block devices in the proper place for mounting without "
+#~ "modification. For this reason, we are going to have to edit your device's "
+#~ "fstab."
+#~ msgstr ""
+#~ "El initramfs de ubports-boot no usa el script de puntos de montaje "
+#~ "reparados (fixup-mountpoints script), ni pone dispositivos de bloque en "
+#~ "el lugar adecuado para su montaje sin modificación. Por esta razón, vamos "
+#~ "a necesitar editar el fstab de su dispositivo."
+
+#~ msgid ""
+#~ "With the file open, change the ``src``, or first attribute, of the ``/"
+#~ "data`` mountpoint to what you put in fixup-mountpoints for ``/data``, but "
+#~ "without the ``/block`` folder. For example, on the Moto G5 Plus, the "
+#~ "block device is ``/dev/block/mmcblk0p54``, so I put ``/dev/mmcblk0p54`` "
+#~ "in this place. Also change the type to ext4, if it is not already."
+#~ msgstr ""
+#~ "Con el archivo abierto, cambie el ``src``, o primer atributo del punto de "
+#~ "montaje ``/data`` con lo que puso en  fixup-mountpoints para ``/data``, "
+#~ "pero sin la carpeta ``/block``. Por ejemplo, en el Moto G5 Plus, el "
+#~ "dispositivo de bloque es ``/dev/block/mmcblk0p54``, así que puse ``/dev/"
+#~ "mmcblk0p54`` en este lugar. También cambie el tipo a ext4, si no lo está "
+#~ "ya."
+
+#~ msgid ""
+#~ "For an example of this, see `this commit on universalsuperbox/"
+#~ "android_device_motorola_potter <https://github.com/UniversalSuperBox/"
+#~ "android_device_motorola_potter/"
+#~ "commit/9b574967e3a6f07884760b418befe731ccfcb924>`__. Removing the "
+#~ "``wait`` flag is not required and was an accident."
+#~ msgstr ""
+#~ "Para un ejemplo de esto, vea `este commit en universalsuperbox/"
+#~ "android_device_motorola_potter <https://github.com/UniversalSuperBox/"
+#~ "android_device_motorola_potter/"
+#~ "commit/9b574967e3a6f07884760b418befe731ccfcb924>`__. No se necesita la "
+#~ "eliminación de la bandera (flag) ``wait``, fue un accidente."
+
+#~ msgid "Edit init.rc"
+#~ msgstr "Editar init.rc"
+
+#~ msgid ""
+#~ "Some Android services conflict with ofono in 16.04 and will cause your "
+#~ "device to reboot without warning, about 30-60 seconds after it boots. We "
+#~ "will need to disable these services until the issue is resolved."
+#~ msgstr ""
+#~ "Algunos servicios de Android entran en conflicto con ofono en 16.04 y "
+#~ "provocarán que su dispositivo se reinicie sin aviso, unos 30-60 segundos "
+#~ "después de que arranque. Necesitaremos desactivar estos servicios hasta "
+#~ "que el problema sea resuelto."
+
+#~ msgid ""
+#~ "To do this, open up your device's default ``init.rc`` (this is likely "
+#~ "init.qcom.rc or init.[codename].rc), comment out any ``import`` "
+#~ "statements, and add ``disabled`` to services like rild, qti, and others "
+#~ "that interface with the radio. Most of them have a ``user radio`` line. "
+#~ "For an example, see `commit 7875b48b on UniversalSuperBox/"
+#~ "android_device_motorola_potter <https://github.com/UniversalSuperBox/"
+#~ "android_device_motorola_potter/"
+#~ "commit/7875b48b5b6f240935d7f327d33128e952a3589b>`__"
+#~ msgstr ""
+#~ "Para hacer esto, abra el ``init.rc`` por defecto  de su dispositivo "
+#~ "(seguramente init.qcom.rc o init.[codename].rc), comente cualquier "
+#~ "declaración ``import`` y añada ``disabled`` a servicios como rild, qti y "
+#~ "otros que interactúan mediante radio. La mayoría de ellos tienen una "
+#~ "línea ``user radio``. Como ejemplo vea el `commit 7875b48b on "
+#~ "UniversalSuperBox/android_device_motorola_potter <https://github.com/"
+#~ "UniversalSuperBox/android_device_motorola_potter/"
+#~ "commit/7875b48b5b6f240935d7f327d33128e952a3589b>`__"
+
+#~ msgid ""
+#~ "Download the rootstock-touch-install script from `universalsuperbox/"
+#~ "rootstock-ng <https://github.com/universalsuperbox/rootstock-ng/tree/"
+#~ "xenial-actuallyfixit>`_. Boot your device into recovery and run the "
+#~ "script as follows::"
+#~ msgstr ""
+#~ "Descargue el script rootstock-touch-install de universalsuperbox/"
+#~ "rootstock-ng <https://github.com/universalsuperbox/rootstock-ng/tree/"
+#~ "xenial-actuallyfixit>`_. Inicie su dispositivo en recuperación (recovery) "
+#~ "y ejecute el script de la siguiente manera::"
+
+#~ msgid ""
+#~ "The script will copy and extract the files to their proper places, then "
+#~ "allow you to set the phablet user's password. If it gets all the way to "
+#~ "``rebooting device`` and doesn't seem to produce any errors, it's time to "
+#~ "continue to the next step. If something goes wrong, please get in touch "
+#~ "with us. If your device doesn't reboot automatically, reboot it using "
+#~ "your recovery's interface."
+#~ msgstr ""
+#~ "El script copiará y extraerá los archivos a sus lugares adecuados, luego "
+#~ "le permitirá que ponga la contraseña de usuario a su dispositivo. Si hace "
+#~ "todo su recorrido hasta ``rebooting device`` y no produce ningún error, "
+#~ "es el momento de continuar con el siguiente paso. Si algo va mal, póngase "
+#~ "en contacto con nosotros. Si su dispositivo no se reinicia "
+#~ "automáticamente, reinícielo usando su interfaz de recuperación (recovery)."
+
+#~ msgid ""
+#~ "If you get errors similar to ``broken pipe`` or ``out of memory``, use "
+#~ "the ``-b`` option to push the busybox or toybox build that came from your "
+#~ "tree. These may have fewer bugs than your recovery's busybox. More "
+#~ "information about this option is available in the script's README."
+#~ msgstr ""
+#~ "Si obtiene errores similares a ``broken pipe`` o ``out of memory``, use "
+#~ "la opción ``-b`` para obligar la construcción busybox o toybox que viene "
+#~ "de su árbol (tree). Estos pueden tener menos errores que el busybox de su "
+#~ "recuperación. Mas información sobre esta opción está disponible en el "
+#~ "README del script."
+
+#~ msgid ""
+#~ "This should be a little heavier on \"What to do when something goes wrong"
+#~ "\" content."
+#~ msgstr ""
+#~ "El contenido de \"que hacer cuando algo va mal\" debería ser un poco mas "
+#~ "extenso."
+
+#~ msgid ""
+#~ "Due to a `bug in the ubports-boot build scripts <https://github.com/"
+#~ "ubports/ubports-boot/issues/3>`_, you will need to remove it from your "
+#~ "tree before you're able to build ``hybris-boot`` again."
+#~ msgstr ""
+#~ "Debido a un `error en los scripts de construcción de ubports-boot "
+#~ "<https://github.com/ubports/ubports-boot/issues/3>`_, necesitará "
+#~ "eliminarlo de su árbol antes de que sea capaz de construir ``hybris-"
+#~ "boot`` de nuevo."
 
 #~ msgid "Choose a rootfs"
 #~ msgstr "Elija un rootfs"
 
 #~ msgid ""
-#~ "Before installing a rootfs, you'll need"
-#~ " one to install. Which one you "
-#~ "choose will depend on whether your "
-#~ "device uses CAF sources or not. To"
-#~ " check if your device contains any"
-#~ " CAF source (it probably does), do"
-#~ " a ``grep -r [term]`` for all "
-#~ "of the following terms in "
-#~ "$BUILDDIR/device/MANUFACTURER/CODENAME. If any "
-#~ "search returns hits, you have a "
-#~ "CAF device::"
+#~ "Before installing a rootfs, you'll need one to install. Which one you "
+#~ "choose will depend on whether your device uses CAF sources or not. To "
+#~ "check if your device contains any CAF source (it probably does), do a "
+#~ "``grep -r [term]`` for all of the following terms in $BUILDDIR/device/"
+#~ "MANUFACTURER/CODENAME. If any search returns hits, you have a CAF device::"
 #~ msgstr ""
-#~ "Antes de instalar un rootfs, necesitará"
-#~ " uno que instalar. El que elija "
-#~ "dependerá de si su dispositivo usa "
-#~ "fuentes CAF o no. Para comprobar "
-#~ "si su dispositivo tiene alguna fuente"
-#~ " CAF (probablemente la tenga), haga "
-#~ "un ``grep -r [term]`` para todos "
-#~ "los términos en "
-#~ "$BUILDDIR/device/MANUFACTURER/CODENAME. Si alguna "
-#~ "búsqueda responde con éxito, tiene un"
-#~ " dispositivo CAF::"
+#~ "Antes de instalar un rootfs, necesitará uno que instalar. El que elija "
+#~ "dependerá de si su dispositivo usa fuentes CAF o no. Para comprobar si su "
+#~ "dispositivo tiene alguna fuente CAF (probablemente la tenga), haga un "
+#~ "``grep -r [term]`` para todos los términos en $BUILDDIR/device/"
+#~ "MANUFACTURER/CODENAME. Si alguna búsqueda responde con éxito, tiene un "
+#~ "dispositivo CAF::"
 
 #~ msgid ""
-#~ "If your device includes any CAF "
-#~ "sources, choose `the CAF rootfs "
-#~ "<http://ci.ubports.com/job/xenial-7.1-caf-sudoku-"
-#~ "rootfs/>`_."
+#~ "If your device includes any CAF sources, choose `the CAF rootfs <http://"
+#~ "ci.ubports.com/job/xenial-7.1-caf-sudoku-rootfs/>`_."
 #~ msgstr ""
-#~ "Si su dispositivo incluye alguna fuente"
-#~ " CAF, elija `el rootfs CAF "
-#~ "<http://ci.ubports.com/job/xenial-7.1-caf-sudoku-"
-#~ "rootfs/>`_."
+#~ "Si su dispositivo incluye alguna fuente CAF, elija `el rootfs CAF <http://"
+#~ "ci.ubports.com/job/xenial-7.1-caf-sudoku-rootfs/>`_."
 
 #~ msgid ""
-#~ "If your device does not include "
-#~ "any CAF sources, choose `the standard"
-#~ " rootfs <http://ci.ubports.com/job/xenial-rootfs-"
-#~ "armhf/>`_"
+#~ "If your device does not include any CAF sources, choose `the standard "
+#~ "rootfs <http://ci.ubports.com/job/xenial-rootfs-armhf/>`_"
 #~ msgstr ""
-#~ "Si su dispositivo no incluye alguna "
-#~ "fuente CAF, elija `el rootfs estándar"
-#~ " <http://ci.ubports.com/job/xenial-rootfs-armhf/>`_"
+#~ "Si su dispositivo no incluye alguna fuente CAF, elija `el rootfs estándar "
+#~ "<http://ci.ubports.com/job/xenial-rootfs-armhf/>`_"
 
 #~ msgid ""
-#~ "In either case, download the large "
-#~ "``tar.gz`` file under the \"Last "
+#~ "In either case, download the large ``tar.gz`` file under the \"Last "
 #~ "successful artifacts\" heading."
 #~ msgstr ""
-#~ "En cualquier caso, descargue el enorme"
-#~ " archivo ``tar.gz`` bajo la cabecera "
-#~ "\"Last successful artifacts\" (últimos "
-#~ "artefactos exitosos)."
+#~ "En cualquier caso, descargue el enorme archivo ``tar.gz`` bajo la "
+#~ "cabecera \"Last successful artifacts\" (últimos artefactos exitosos)."
