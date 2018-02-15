@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-08 19:46-0600\n"
-"PO-Revision-Date: 2018-01-22 20:34+0000\n"
+"PO-Revision-Date: 2018-02-15 13:06+0000\n"
 "Last-Translator: advocatux <advocatux@airpost.net>\n"
+"Language-Team: Spanish <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-userguide/es/>\n"
 "Language: es\n"
-"Language-Team: Spanish <https://translate.ubports.com/projects/ubports-"
-"docs/documentation-userguide/es/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../userguide/advanceduse/adb.rst:2
@@ -141,7 +142,7 @@ msgstr "Oneplus One::"
 
 #: ../../userguide/advanceduse/dav.rst:2
 msgid "CalDAV and CardDAV synchronization"
-msgstr ""
+msgstr "sincronización CalDAV y CardDAV"
 
 #: ../../userguide/advanceduse/dav.rst:4
 msgid ""
@@ -149,6 +150,9 @@ msgid ""
 "with a remote server. Many email-hosters provide a CalDAV and CardDAV "
 "interface."
 msgstr ""
+"CalDAV y CardDAV son protocolos para sincronizar calendarios y contactos con "
+"un servidor remoto. Muchos proveedores de correo electrónico proporcionan "
+"interfaces para CalDAV y CardDAV."
 
 #: ../../userguide/advanceduse/dav.rst:6
 msgid ""
@@ -157,6 +161,11 @@ msgid ""
 "select \"Add internet calendar > Generic CalDAV\". Enter your calendar "
 "URL as well as your username and password to complete the process."
 msgstr ""
+"**Nota:** CalDAV Sync puede configurarse también para usar la aplicación de "
+"calendario. Abra la aplicación, pulse en el pequeño icono de calendario en "
+"la esquina superior derecha y seleccione \"Añadir calendario en internet > "
+"CalDAV genérico\". Introduzca la URL de su calendario así como su nombre de "
+"usuario y contraseña para completar el proceso."
 
 #: ../../userguide/advanceduse/dav.rst:8
 msgid ""
@@ -166,6 +175,12 @@ msgid ""
 "to do that with a script that you can run in the terminal or via phablet "
 "SSH connection. These instructions work for caldav as well."
 msgstr ""
+"Por el momento, no existe una implementación de carddav directamente "
+"accesible desde la interfaz gráfica de usuario en Ubuntu Touch, así que la "
+"única manera de sincronizar carddav es usando syncevolution + cron. Sin "
+"embargo hay una manera mas sencilla de hacer eso con un script que puede "
+"ejecutar en la terminal o vía conexión SSH con el dispositivo. Estas "
+"instrucciones funcionan con caldav también."
 
 #: ../../userguide/advanceduse/dav.rst:10
 msgid ""
@@ -173,6 +188,9 @@ msgid ""
 "<https://docs.ubports.com/en/latest/userguide/advanceduse/adb.html>`_ to "
 "activate Developer Mode and ADB (or SSH) connection."
 msgstr ""
+"Siga esta `guía "
+"<https://docs.ubports.com/en/latest/userguide/advanceduse/adb.html>`_ para "
+"activar el Modo desarrollador y una conexión ADB (o SSH)."
 
 #: ../../userguide/advanceduse/dav.rst:13
 msgid ""
@@ -180,22 +198,27 @@ msgid ""
 "<https://gist.github.com/bastos77/0c47a94dd0bf3e394f879c0ff42b7839>`_ "
 "(let's call it dav.sh) and edit the following variables:"
 msgstr ""
+"Descargue este `script "
+"<https://gist.github.com/bastos77/0c47a94dd0bf3e394f879c0ff42b7839>`_ ("
+"llamémosle dav.sh) y edite las siguientes variables:"
 
 #: ../../userguide/advanceduse/dav.rst:15
 msgid ""
 "server side : CAL_URL, **CONTACTS_URL**, USERNAME, PASSWORD (of your "
 "ownCloud/nextCloud/baikal/SOGO/... server)"
 msgstr ""
+"Del lado del servidor : CAL_URL, **CONTACTS_URL**, USERNAME, PASSWORD (o su "
+"servidor ownCloud/nextCloud/baikal/SOGO/...)"
 
 #: ../../userguide/advanceduse/dav.rst:16
 msgid ""
 "CONTACT and CALENDAR _ NAME / VISUAL_NAME / CONFIG_NAME (it's more "
 "cosmetic)"
-msgstr ""
+msgstr "CONTACT y CALENDAR _ NAME / VISUAL_NAME / CONFIG_NAME (es más estético)"
 
 #: ../../userguide/advanceduse/dav.rst:17
 msgid "CRON_FREQUENCY (for the frequency of synchronisation)"
-msgstr ""
+msgstr "CRON_FREQUENCY (para la frecuencia de sincronización)"
 
 #: ../../userguide/advanceduse/dav.rst:18
 msgid ""
@@ -203,47 +226,54 @@ msgid ""
 " instead of ``sudo echo \"$COMMAND_LINE\" > /sbin/sogosync``, to avoid "
 "permission denied error"
 msgstr ""
+"Línea 61: escriba ``sudo sh -c \"echo '$COMMAND_LINE' > /sbin/sogosync\"`` , "
+"en vez de ``sudo echo \"$COMMAND_LINE\" > /sbin/sogosync``, para evitar un "
+"error de denegación de permiso"
 
 #: ../../userguide/advanceduse/dav.rst:20
 msgid ""
 "Move the file to your UbuntuTouch device, either by file manager or with "
 "adb::"
 msgstr ""
+"Mueva el archivo a su dispositivo UbuntuTouch, bien con el administrador de "
+"archivos o con adb::"
 
 #: ../../userguide/advanceduse/dav.rst:24
 msgid ""
 "Connect with the phablet shell (``adb shell``) or directly on the phone "
 "Terminal app and type the following::"
 msgstr ""
+"Conecte con el intérprete de órdenes del dispositivo (``adb shell``) o "
+"directamente con la aplicación de Terminal en el teléfono y escriba lo "
+"siguiente::"
 
 #: ../../userguide/advanceduse/dav.rst:31
 msgid "Sources:"
-msgstr ""
+msgstr "Fuentes:"
 
 #: ../../userguide/advanceduse/dav.rst:33
-#, fuzzy
 msgid ""
 "https://askubuntu.com/questions/616081/ubuntu-touch-add-contact-list-and-"
 "calendars/664834#664834"
 msgstr ""
-"askubuntu: https://askubuntu.com/questions/655321/ubuntu-touch-reverse-"
-"tethering-and-click-apps-updates"
+"https://askubuntu.com/questions/616081/ubuntu-touch-add-contact-list-and-"
+"calendars/664834#664834"
 
 #: ../../userguide/advanceduse/dav.rst:34
 msgid "https://gist.github.com/boTux/069b53d8e06bdb9b9c97"
-msgstr ""
+msgstr "https://gist.github.com/boTux/069b53d8e06bdb9b9c97"
 
 #: ../../userguide/advanceduse/dav.rst:35
 msgid "https://gist.github.com/tcarrondo"
-msgstr ""
+msgstr "https://gist.github.com/tcarrondo"
 
 #: ../../userguide/advanceduse/dav.rst:36
 msgid "https://gist.github.com/bastos77"
-msgstr ""
+msgstr "https://gist.github.com/bastos77"
 
 #: ../../userguide/advanceduse/dav.rst:37
 msgid "https://askubuntu.com/questions/601910/ssh-ubuntu-touch"
-msgstr ""
+msgstr "https://askubuntu.com/questions/601910/ssh-ubuntu-touch"
 
 #: ../../userguide/advanceduse/index.rst:2
 msgid "Advanced use"
@@ -608,9 +638,8 @@ msgid "Switch release channels"
 msgstr "Cambiar canales de publicación"
 
 #: ../../userguide/dailyuse/anbox.rst:2
-#, fuzzy
 msgid "Run android applications"
-msgstr "Ejecutar aplicaciones de escritorio"
+msgstr "Ejecutar aplicaciones de android"
 
 #: ../../userguide/dailyuse/anbox.rst:4
 msgid ""
@@ -618,34 +647,41 @@ msgid ""
 "compatibility layer that allows you to run android applications on "
 "GNU/Linux operating systems."
 msgstr ""
+"`Anbox <https://anbox.io>`_ es un contenedor mínimo y una capa de "
+"compatibilidad de android que le permite ejecutar aplicaciones android en "
+"sistemas operativos GNU/Linux."
 
 #: ../../userguide/dailyuse/anbox.rst:7
 msgid "Anbox is in early development"
-msgstr ""
+msgstr "Anbox está en una fase temprana de desarrollo"
 
 #: ../../userguide/dailyuse/anbox.rst:8
 msgid "Anbox for Ubuntu Touch is in even more early development"
-msgstr ""
+msgstr "Anbox para Ubuntu Touch está en una fase aún mas temprana de desarrollo"
 
 #: ../../userguide/dailyuse/anbox.rst:9
 msgid ""
 "Anbox only works on the 16.04 version of Ubuntu Touch, which is also in "
 "early development"
 msgstr ""
+"Anbox solo funciona en la versión 16.04 de Ubuntu Touch, que también está en "
+"una fase temprana de desarrollo"
 
 #: ../../userguide/dailyuse/anbox.rst:10
 msgid ""
 "Only selected devices are supported for the moment, more will be added in"
 " the future."
 msgstr ""
+"Solo unos cuántos dispositivos seleccionados tienen soporte por ahora, se "
+"añadirán más en el futuro."
 
 #: ../../userguide/dailyuse/anbox.rst:13
 msgid "Supported devices"
-msgstr ""
+msgstr "Dispositivos soportados"
 
 #: ../../userguide/dailyuse/anbox.rst:15
 msgid "Make sure your device is supported:"
-msgstr ""
+msgstr "Asegúrese de que su dispositivo está soportado:"
 
 #: ../../userguide/dailyuse/anbox.rst:17
 msgid ""
@@ -653,28 +689,36 @@ msgid ""
 " M10 HD (codename: *cooler*, name of the boot partition: *boot*) BQ M10 "
 "FHD (codename: *frieza*, name of the boot partition: *boot*)"
 msgstr ""
+"Meizu Pro 5 (alias: *turbo*, nombre de la partición de arranque: *bootimg*) "
+"BQ M10 HD (alias: *cooler*, nombre de la partición de arranque: *boot*) BQ "
+"M10 FHD (alias: *frieza*, nombre de la partición de arranque: *boot*)"
 
 #: ../../userguide/dailyuse/anbox.rst:21
 msgid ""
 "You will need the device codename and the name of your boot partition for"
 " the installation."
 msgstr ""
+"Necesitará el alias de su dispositivo y el nombre de su partición de "
+"arranque para la instalación."
 
 #: ../../userguide/dailyuse/anbox.rst:24
 msgid "How to install"
-msgstr ""
+msgstr "Cómo instalar"
 
 #: ../../userguide/dailyuse/anbox.rst:27
 msgid ""
 "Because this feature is in such an early stage of development, the "
 "installation is only recommended for experienced users."
 msgstr ""
+"Debido a que esta herramienta está en un estado muy temprano de desarrollo, "
+"se recomienda la instalación solo a usuarios experimentados."
 
 #: ../../userguide/dailyuse/anbox.rst:29
 msgid ""
 ":doc:`Install <../install>` the 16.04/devel channel on your supported "
 "device"
 msgstr ""
+":doc:`Instalar <../install>` el canal 16.04/devel en su dispositivo soportado"
 
 #: ../../userguide/dailyuse/anbox.rst:30
 msgid ""
@@ -683,20 +727,25 @@ msgid ""
 "respectively with the codename and name of the boot partition for your "
 "device. See the above list."
 msgstr ""
+"Abra un terminal y ejecute ``export CODENAME=\"turbo\" && export "
+"PARTITIONNAME=\"bootimg\"``, pero substituya la parte entre comillas por el "
+"alias (codename) y el nombre de la partición de arranque de su dispositivo, "
+"respectivamente. Vea la lista de arriba."
 
 #: ../../userguide/dailyuse/anbox.rst:31
 msgid "Activate developer mode on your device."
-msgstr ""
+msgstr "Active el modo de desarrollador en su dispositivo."
 
 #: ../../userguide/dailyuse/anbox.rst:32
 msgid ""
 "Connect the device to your computer computer and run the following "
 "commands::"
 msgstr ""
+"Conecte el dispositivo a su ordenador y ejecute las siguientes órdenes::"
 
 #: ../../userguide/dailyuse/anbox.rst:40
 msgid "wait for the device to reboot, then run::"
-msgstr ""
+msgstr "espere a que el dispositivo se reinicie, entonces ejecute::"
 
 #: ../../userguide/dailyuse/anbox.rst:49
 msgid ""
@@ -704,10 +753,14 @@ msgid ""
 " might have to refresh the apps scope (pull down from the center of the "
 "screen and release) for the app to show up."
 msgstr ""
+"¡Hecho! Seleccione \"Anbox\" en el scope de aplicaciones para usar "
+"aplicaciones de android. Puede que tenga que recargar el scope de "
+"aplicaciones (pulse desde el centro de la pantalla hacia abajo y suelte) "
+"para que se muestre la aplicación."
 
 #: ../../userguide/dailyuse/anbox.rst:52
 msgid "Reporting bugs"
-msgstr ""
+msgstr "Informar de errores"
 
 #: ../../userguide/dailyuse/anbox.rst:54
 msgid ""
@@ -717,6 +770,11 @@ msgid ""
 "issues with anbox are reported on `our downstream fork "
 "<https://github.com/ubports/anbox/issues>`_. Thank you!"
 msgstr ""
+"Por favor :doc:`informe de cualquier error </contribute/bugreporting>` que "
+"se encuentre. Los errores en Ubuntu Touch 16.04 se reportan en `el "
+"seguimiento de errores normal de Ubuntu Touch <https://github.com/ubports"
+"/ubuntu-touch/issues>`_ y los relacionados con anbox se reportan `en nuestro "
+"clon del proyecto <https://github.com/ubports/anbox/issues>`_. ¡Gracias!"
 
 #: ../../userguide/dailyuse/index.rst:2
 msgid "Daily use"
@@ -852,9 +910,8 @@ msgid "Install a package:"
 msgstr "Instalar un paquete:"
 
 #: ../../userguide/dailyuse/libertine.rst:48
-#, fuzzy
 msgid "``libertine-container-manager install-package -p PACKAGE-NAME``"
-msgstr "``libertine-container-manage install-package -p PACKAGE-NAME``"
+msgstr "``libertine-container-manager install-package -p PACKAGE-NAME``"
 
 #: ../../userguide/dailyuse/libertine.rst:50
 msgid "Remove a package:"
@@ -1165,4 +1222,3 @@ msgstr ""
 #~ "Para asegurarse de que el servidor "
 #~ "ssh comience automáticamente en el "
 #~ "futuro, ejecute::"
-
