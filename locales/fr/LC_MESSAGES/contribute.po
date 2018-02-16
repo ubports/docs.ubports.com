@@ -3,23 +3,26 @@
 # This file is distributed under the same license as the UBports package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-08 19:46-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-02-16 18:45+0000\n"
+"Last-Translator: Max Libre <libremax@protonmail.com>\n"
+"Language-Team: French <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-contribute/fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../contribute/bugreporting.rst:2
 msgid "Bug reporting"
-msgstr ""
+msgstr "Rapporter un bogue"
 
 #: ../../contribute/bugreporting.rst:4
 msgid ""
@@ -28,10 +31,14 @@ msgid ""
 "reporting bugs in apps, most of the time their entry in the OpenStore "
 "will specify where and how to do that."
 msgstr ""
+"Cette page contient des informations pour vous aider à nous aider en "
+"signalant un bogue pour Ubuntu Touch. Il ne contient PAS d'informations sur "
+"le signalement des bogues pour les applications, la plupart du temps leur "
+"entrée dans OpenStore indiquera où et comment le faire."
 
 #: ../../contribute/bugreporting.rst:7
 msgid "Get the latest Ubuntu Touch"
-msgstr ""
+msgstr "Obtenir le dernier Ubuntu Touch"
 
 #: ../../contribute/bugreporting.rst:9
 msgid ""
@@ -42,16 +49,25 @@ msgid ""
 "guide. If not, do a little dance! The bug has already been fixed and you "
 "can continue using Ubuntu Touch."
 msgstr ""
+"Cela peut sembler évident, mais c'est facile à louper. Allez dans ("
+"Paramètres - Mises à jour) et vérifier si votre appareil dispose de mises à "
+"jour Ubuntu. Si ce n'est pas le cas, continuez à parcourir ce guide. Si "
+"c'est le cas, mettez à jour votre appareil et essayez de reproduire le bug. "
+"Si cela se produit encore, continuez à parcourir ce guide. Sinon, dansez un "
+"peu! Le bogue a déjà été corrigé et vous pouvez continuer à utiliser Ubuntu "
+"Touch."
 
 #: ../../contribute/bugreporting.rst:12
 msgid "Check if the bug is already reported"
-msgstr ""
+msgstr "Vérifier si le bogue a déjà été rapporté"
 
 #: ../../contribute/bugreporting.rst:14
 msgid ""
 "Open up the bug tracker for `ubuntu-touch <https://github.com/ubports"
 "/ubuntu-touch>`_."
 msgstr ""
+"Ouvrez le traqueur de bogues pour `ubuntu-touch <https://github.com/ubports"
+"/ubuntu-touch>`_."
 
 #: ../../contribute/bugreporting.rst:16
 msgid ""
@@ -67,16 +83,23 @@ msgid ""
 "Reaction\" button (it looks like a smiley face) and select the +1 (thumbs"
 " up) reaction. This shows that you are also experiencing the bug."
 msgstr ""
+"Si vous constatez qu'un rapport de bogue existe déjà, cliquez sur le bouton "
+"\"Ajouter votre réaction\" (il ressemble à un visage souriant) et "
+"sélectionnez la réaction +1. Cela montre que vous rencontrez également ce "
+"bug."
 
 #: ../../contribute/bugreporting.rst:20
 msgid ""
 "If the report is missing any of the information specified later in this "
 "document, please add it yourself to help the developers fix the bug."
 msgstr ""
+"Si le rapport ne contient pas certaibnes informations spécifiées plus loin "
+"dans ce document, veuillez les ajouter vous-même pour aider les développeurs "
+"à corriger le bogue."
 
 #: ../../contribute/bugreporting.rst:23
 msgid "Reproduce the issue you've found"
-msgstr ""
+msgstr "Reproduire le problème que vous avez trouver"
 
 #: ../../contribute/bugreporting.rst:25
 msgid ""
@@ -86,10 +109,15 @@ msgid ""
 "still occurs, continue on to the next step. `If not "
 "<https://youtu.be/nn2FB1P_Mn8?t=10s>`_..."
 msgstr ""
+"Ensuite, découvrez comment reproduire le bug que vous avez trouvé. "
+"Documentez en détail les étapes exactes que vous avez suivies pour trouver "
+"le problème. Ensuite, redémarrez votre téléphone et recommencez ces étapes. "
+"Si le problème persiste, passez à l'étape suivante. `If not "
+"<https://youtu.be/nn2FB1P_Mn8?t=10s>`_..."
 
 #: ../../contribute/bugreporting.rst:28
 msgid "Getting Logs"
-msgstr ""
+msgstr "Obtenir des journaux"
 
 #: ../../contribute/bugreporting.rst:30
 msgid ""
@@ -97,60 +125,76 @@ msgid ""
 "general, /var/log/dmesg and the output of /android/system/bin/logcat are "
 "helpful when resolving an issue. I'll show you how to get these logs."
 msgstr ""
+"Nous apprécions d'obtenir autant de bons journaux que possible lorsque vous "
+"nous signalez un bug. En général, /var/log/dmesg et la sortie de "
+"/android/system/bin/logcat sont utiles pour résoudre un problème. Je vais "
+"vous montrer comment obtenir ces journaux."
 
 #: ../../contribute/bugreporting.rst:32
 msgid ""
 "To get set ready, follow the steps to :doc:`set up ADB "
 "</userguide/advanceduse/adb>`."
 msgstr ""
+"Pour vous préparer, suivez les étapes suivantes :doc:`set up ADB "
+"</userguide/advanceduse/adb>`."
 
 #: ../../contribute/bugreporting.rst:34
 msgid "Now, you can get the two most important logs."
-msgstr ""
+msgstr "Maintenant, vous pouvez obtenir les deux journaux les plus importants."
 
 #: ../../contribute/bugreporting.rst:37
 msgid "dmesg"
-msgstr ""
+msgstr "dmesg"
 
 #: ../../contribute/bugreporting.rst:39
 msgid ""
 "The **dmesg** (*display message* or *driver message*) command displays "
 "debug messages from the kernel."
 msgstr ""
+"La commande  **dmesg** (*display message* ou *driver message*) affiche les "
+"messages de débogage du noyau."
 
 #: ../../contribute/bugreporting.rst:41 ../../contribute/bugreporting.rst:54
 msgid ""
 "Using the steps you documented earlier, reproduce the issue you're "
 "reporting"
 msgstr ""
+"En suivant les étapes que vous avez documentées plus tôt, reproduisez le "
+"problème que vous signalez"
 
 #: ../../contribute/bugreporting.rst:42 ../../contribute/bugreporting.rst:52
 msgid "cd to a folder where you're able to write the log"
-msgstr ""
+msgstr "cd dans un dossier ou vous avez le droit d'écrire le journal"
 
 #: ../../contribute/bugreporting.rst:43
 msgid "Run the command: `adb shell dmesg > UTdmesg.txt`"
-msgstr ""
+msgstr "Exécutez la commande: `adb shell dmesg > UTdmesg.txt`"
 
 #: ../../contribute/bugreporting.rst:45
 msgid ""
 "This log should now be located at UTdmesg.txt under your working "
 "directory, ready for uploading later."
 msgstr ""
+"Ce journal devrait maintenant être situé dans UTdmesg.txt dans votre "
+"répertoire de travail, prêt à être téléchargé ultérieurement."
 
 #: ../../contribute/bugreporting.rst:48
 msgid "logcat"
-msgstr ""
+msgstr "logcat"
 
 #: ../../contribute/bugreporting.rst:50
 msgid ""
 "The **logcat** (*log concatenator*) command displays debug information "
 "from various parts of the underlying android system."
 msgstr ""
+"La commande **logcat** (*log concatenator*)  affiche les informations de "
+"débogage provenant de différentes parties du système android sous-jacent."
 
 #: ../../contribute/bugreporting.rst:53
 msgid "Run the command: `adb shell /android/system/bin/logcat -d > UTlogcat.txt`"
 msgstr ""
+"Exécutez la commande: `adb shell /android/system/bin/logcat -d > "
+"UTlogcat.txt`"
 
 #: ../../contribute/bugreporting.rst:56
 msgid ""
@@ -784,4 +828,3 @@ msgstr ""
 #~ " the same on `Liberpay "
 #~ "<https://liberapay.com/UBports/>`_!"
 #~ msgstr ""
-
