@@ -3,23 +3,26 @@
 # This file is distributed under the same license as the UBports package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-08 19:46-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-02-16 13:49+0000\n"
+"Last-Translator: Walter Garcia-Fontes <walter.garcia@upf.edu>\n"
+"Language-Team: Catalan <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-about/ca/>\n"
+"Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../about/introduction.rst:2
 msgid "Introduction"
-msgstr ""
+msgstr "Introducció"
 
 #: ../../about/introduction.rst:4
 msgid ""
@@ -27,10 +30,13 @@ msgid ""
 "an open-source (GPL if possible) mobile operating system that converges "
 "and respects your freedom."
 msgstr ""
+"Aquesta és la documentació del projecte UBports. El nostre objectiu és crear "
+"un sistema operatiu mòbil de codi obert que sigui convergent i respecti la "
+"vostra llibertat."
 
 #: ../../about/introduction.rst:7
 msgid "About UBports"
-msgstr ""
+msgstr "Quant al UBports"
 
 #: ../../about/introduction.rst:9
 msgid ""
@@ -39,6 +45,10 @@ msgid ""
 "other in hopes of bringing the Ubuntu Touch platform to more and more "
 "devices."
 msgstr ""
+"El projecte UBports va ser creat pel Marius Gripsgard en 2015 i, durant la "
+"seva primera fase, era un lloc on els desenvolupadors podien compartir idees "
+"i formació amb la il·lusió de portar la plataforma Ubuntu Touch a cada cop "
+"més dispositius."
 
 #: ../../about/introduction.rst:11
 msgid ""
@@ -48,10 +58,15 @@ msgid ""
 "UBports and its sister projects began work on the open-source code, "
 "maintaining and expanding its possiblilities for the future."
 msgstr ""
+"Després que Canonical va anunciar de sobte «el seu plan d'acabar el suport a "
+"l'Ubuntu Touch <https://insights.ubuntu.com/2017/04/05/growing-ubuntu-for-"
+"cloud-and-iot-rather-than-phone-and-convergence/>»_ a l'abril de 2017, "
+"l'UBports i els seus projectes germans can començar a treballar sobre el "
+"codi obert, a mantenir-lo i a ampliar les seves possibilitats per al futur."
 
 #: ../../about/introduction.rst:14
 msgid "About the Documentation"
-msgstr ""
+msgstr "Quant a la documentació"
 
 #: ../../about/introduction.rst:16
 msgid ""
@@ -62,6 +77,12 @@ msgid ""
 "`Read the Docs <https://readthedocs.io>`_. You can start contributing by "
 "checking out the :doc:`Documentation intro </contribute/documentation>`."
 msgstr ""
+"Aquesta documentació està sempre millorant gràcies als membres de la "
+"comunitat de l'UBports. Està escrita en ReStructuredText i convertida a "
+"aquesta forma llegible per l'«Sphinx <http://www.sphinx-doc.org/en/stable/>»"
+"_, «ReCommonMark <http://recommonmark.readthedocs.io/en/latest/>» _, i «`"
+"Read the Docs <https://readthedocs.io>» _. Podeu començar a contribuir "
+"llegint la :doc:«Introducció a la documentació </contribute/documentation>»."
 
 #: ../../about/introduction.rst:18
 msgid ""
@@ -70,10 +91,13 @@ msgid ""
 "sa/4.0/>`_) license. Please give attribution to \"The UBports "
 "Community\"."
 msgstr ""
+"Tots els documents tenen la llicència Creative Commons Attribution "
+"ShareAlike 4.0 («CC-BY-SA 4.0 <https://creativecommons.org/licenses/by-"
+"sa/4.0/>`»_). Si us plau feu l'atribució de crèdit a «The UBports Community»."
 
 #: ../../about/introduction.rst:21
 msgid "Attribution"
-msgstr ""
+msgstr "Atribució"
 
 #: ../../about/introduction.rst:23
 msgid ""
@@ -81,26 +105,33 @@ msgid ""
 "Documentation <http://docs.godotengine.org/en/stable/>`_, attribution to "
 "Juan Linietsky, Ariel Manzur and the Godot community."
 msgstr ""
+"Aquesta documentació segueix molt properament el model «Godot Engine's "
+"Documentation <http://docs.godotengine.org/en/stable/>»_, atribució a Juan "
+"Linietsky, Ariel Manzur i la comunitat Godot."
 
 #: ../../about/process/index.rst:2
 msgid "Processes"
-msgstr ""
+msgstr "Processos"
 
 #: ../../about/process/index.rst:4
 msgid ""
 "This section of the documentation details standardized processes for "
 "different teams."
 msgstr ""
+"Aquesta secció de la documentació detalla els processos estandarditzats per "
+"a diferents equips."
 
 #: ../../about/process/index.rst:7
 msgid ""
 "The process definitions are still a work in progress and need to be "
 "completed by the respective teams."
 msgstr ""
+"Les definicions dels processos encara són un treball en curs i cal que els "
+"diferents equips les completin."
 
 #: ../../about/process/issue-tracking.rst:2
 msgid "Issue-Tracking Guidelines"
-msgstr ""
+msgstr "Guia de seguiment de problemes"
 
 #: ../../about/process/issue-tracking.rst:4
 msgid ""
@@ -108,10 +139,13 @@ msgid ""
 "in UBports projects. Not to be confused with the :doc:`guide on writing a"
 " good bugreport </contribute/bugreporting>`."
 msgstr ""
+"Aquest document descriu el procés estàndard per tractar amb problemes nous "
+"als projectes de l'UBports. No s'ha de confondre amb la guia :doc:«guia per "
+"a l'escriptura d'un bon informe d'error </contribute/bugreporting>»."
 
 #: ../../about/process/issue-tracking.rst:7
 msgid "Where are bugs tracked?"
-msgstr ""
+msgstr "On se segueixen els errors?"
 
 #: ../../about/process/issue-tracking.rst:9
 msgid ""
@@ -123,6 +157,13 @@ msgid ""
 "this are click-apps that can be updated independently through the "
 "OpenStore."
 msgstr ""
+"Atès que la nostra garantia de qualitat depèn fortament de la comunitat, "
+"intentem fer el seguiment d'errors on l'usuari espera trobar-lo, en comptes "
+"de separat per repositori. Això significa que els problemes de gairebé tots "
+"els components que es distribueixen, com ara la imatge de sistema, se "
+"segueixen al «Seguidor de l'Ubuntu Touch <https://github.com/ubports/ubuntu-"
+"touch>»__. Les aplicacions click són una excepció perquè es poden "
+"actualitzar mitjançant l'OpenStore."
 
 #: ../../about/process/issue-tracking.rst:17
 msgid ""
@@ -131,22 +172,31 @@ msgid ""
 "Repositories that don't track issues locally have their bugtracker "
 "disabled."
 msgstr ""
+"La major part dels altres repositoris fan seguiment local dels problemes. Si "
+"no teniu seguretat sobre si un repositori usa el seu propi seguidor o no, "
+"consulteu el fitxer README.md. Els repositoris que no fan seguiment local "
+"tenen el seu seguidor d'errors inhabilitat."
 
 #: ../../about/process/issue-tracking.rst:21
 msgid ""
 "This page is mainly about the Ubuntu Touch tracker, but most principles "
 "apply to other projects as well."
 msgstr ""
+"Aquesta pàgina tracta principalment sobre el seguidor de l'Ubuntu Touch, "
+"però la major part de les seves regles és vàlida també per a d'altres "
+"projectes."
 
 #: ../../about/process/issue-tracking.rst:25
 msgid ""
 "Practicality beats purity! Exceptions might apply and should be described"
 " in the projects README.md file."
 msgstr ""
+"El sentit pràctic guanya a la  puresa! És possible que hi hagi excepcions i "
+"s'haurien de descriure al fitxer README.md del projecte."
 
 #: ../../about/process/issue-tracking.rst:28
 msgid "GitHub projects"
-msgstr ""
+msgstr "Projectes del GitHub"
 
 #: ../../about/process/issue-tracking.rst:30
 msgid ""
@@ -156,10 +206,16 @@ msgid ""
 "filtering by labels, so that only issues that belong to a specific team "
 "or affect a specific device can be viewed."
 msgstr ""
+"Per incrementar la transparència i la comunicació, els projectes del  "
+"GitHub  (Kanban-Boards) s'usen sempre que sigui pràctic. En el cas de "
+"github.com/ubports/ubuntu-touch, es fa servir un únic projecte per a tots "
+"els problemes. Els projectes donen suport al filtratge per nivells, de "
+"manera que sols es poden veure  els problemes que pertanyen a un equip "
+"específic o afecten a un dispositiu específic."
 
 #: ../../about/process/issue-tracking.rst:36
 msgid "These are the standard columns:"
-msgstr ""
+msgstr "Aquestes són les columnes estàndard:"
 
 #: ../../about/process/issue-tracking.rst:38
 msgid ""
@@ -449,4 +505,3 @@ msgid ""
 "when all the issues can be handled. If there are too many issues added to"
 " a milestone, they are either removed or added to the next milestone."
 msgstr ""
-
