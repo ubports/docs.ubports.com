@@ -3,23 +3,26 @@
 # This file is distributed under the same license as the UBports package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-08 19:46-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-02-16 17:48+0000\n"
+"Last-Translator: Max Libre <libremax@protonmail.com>\n"
+"Language-Team: French <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-porting/fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../porting/building-ubports-boot.rst:2
 msgid "Building ubports-boot"
-msgstr ""
+msgstr "Construire l’amorce d'ubports (ubports-boot)"
 
 #: ../../porting/building-ubports-boot.rst:4
 msgid ""
@@ -28,10 +31,14 @@ msgid ""
 " the vanilla hybris-boot that Halium produces. For this reason, we need "
 "to build ubports-boot."
 msgstr ""
+"Ubuntu Touch utilise Upstart plutôt que Systemd comme démon "
+"d'initialisation. De ce fait, il n'est pas pleinement compatible avec Halium "
+"et ne peut donc pas utiliser la version standard hybris-boot d'Halium. Pour "
+"cette raison, nous avons besoin de construire un ubports-boot."
 
 #: ../../porting/building-ubports-boot.rst:8
 msgid "Add source to Halium tree"
-msgstr ""
+msgstr "Ajouter les sources à l'arborescence d'Halium"
 
 #: ../../porting/building-ubports-boot.rst:10
 msgid ""
@@ -39,24 +46,32 @@ msgid ""
 "to your Halium tree. You may choose to do this by adding it to your local"
 " manifests (recommended) or simply cloning it in place."
 msgstr ""
+"La première chose qu'il est nécessaire de faire est d'ajouter le source d"
+"'ubports-boot à votre arborescence Halium. Vous pouvez choisir de le faire "
+"en l'ajoutant à vos manifestes locaux (recommandé) ou simplement en le "
+"clonant au bon endroit."
 
 #: ../../porting/building-ubports-boot.rst:14
 msgid "Add to local manifest"
-msgstr ""
+msgstr "Ajouter au manifeste local"
 
 #: ../../porting/building-ubports-boot.rst:16
 msgid ""
 "Create a new file in ``.repo/local_manifests`` called ``ubports-"
 "boot.xml``. Add the following to the file:"
 msgstr ""
+"Créer un nouveau fichier dans ``.repo/local_manifests`` nommé ``ubports-"
+"boot.xml``. Ajouter ce qui suit au fichier:"
 
 #: ../../porting/building-ubports-boot.rst:25
 msgid "Now, just do a ``repo sync`` to download the new source."
 msgstr ""
+"Maintenant, faites seulement un ``repo sync`` pour télécharger le nouveau "
+"source."
 
 #: ../../porting/building-ubports-boot.rst:29
 msgid "Manual clone"
-msgstr ""
+msgstr "Clonage manuel"
 
 #: ../../porting/building-ubports-boot.rst:31
 msgid ""
@@ -64,16 +79,21 @@ msgid ""
 "<https://github.com/ubports/ubports-boot>`_ into your tree manually. It "
 "should be placed into ``BUILDDIR/halium/ubports-boot``."
 msgstr ""
+"Vous pouvez aussi choisir de cloner le `ubports-boot repository "
+"<https://github.com/ubports/ubports-boot>`_ dans votre arborescence "
+"manuellement. Il devrait être placé dans ``BUILDDIR/halium/ubports-boot``."
 
 #: ../../porting/building-ubports-boot.rst:33
 msgid ""
 "If you share your code and build instructions, please note that you've "
 "done this."
 msgstr ""
+"Si vous partagez votre code et les instructions de construction, veuillez "
+"indiquer que vous avez fait cela."
 
 #: ../../porting/building-ubports-boot.rst:36
 msgid "Include in build system"
-msgstr ""
+msgstr "Inclure dans le système de construction"
 
 #: ../../porting/building-ubports-boot.rst:38
 msgid ""
@@ -82,10 +102,15 @@ msgid ""
 "editor. Find the comment ``# Specific projects for Halium`` and add "
 "``halium/ubports-boot`` to the list of ``subdirs`` ::"
 msgstr ""
+"Normalement le système de construction d'android ne sait pas ou trouver "
+"ubports-boot. Pour corriger cela, ouvrez le fichier "
+"``BUILDDIR/build/core/main.mk`` dans un éditeur de texte. Trouver le "
+"commentaire ``# Specific projects for Halium`` et ajouter ``halium/ubports-"
+"boot`` à la liste de ``subdirs`` ::"
 
 #: ../../porting/building-ubports-boot.rst:45
 msgid "Fix mounts"
-msgstr ""
+msgstr "Corriger les montages"
 
 #: ../../porting/building-ubports-boot.rst:49
 msgid ""
@@ -95,6 +120,11 @@ msgid ""
 " should not be considered a permanent fix. Be prepared to revert this "
 "later when these bugs have been fixed."
 msgstr ""
+"C'est un contournement pour  `ubports/ubports-boot #1 "
+"<https://github.com/ubports/ubports-boot/issues/1>`_ et `ubports/ubports-"
+"boot #2 <https://github.com/ubports/ubports-boot/issues/2>`_. Cela ne "
+"devrait pas être considérer comme un arrangement permanent. Soyez prêt à "
+"revenir sur ce point plus tard lorsque ces bogues auront été corrigés."
 
 #: ../../porting/building-ubports-boot.rst:51
 msgid ""
@@ -832,4 +862,3 @@ msgstr ""
 #~ "with write permissions. To do that, "
 #~ "run the following command::"
 #~ msgstr ""
-
