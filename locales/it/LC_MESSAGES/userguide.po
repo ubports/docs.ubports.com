@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-08 19:46-0600\n"
-"PO-Revision-Date: 2018-01-05 11:34+0000\n"
-"Last-Translator: Stefano Melchior <stefano.melchior@me.com>\n"
+"PO-Revision-Date: 2018-02-16 09:13+0000\n"
+"Last-Translator: sambuccid <sambuccid@gmail.com>\n"
+"Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-userguide/it/>\n"
 "Language: it\n"
-"Language-Team: Italian <https://translate.ubports.com/projects/ubports-"
-"docs/documentation-userguide/it/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../userguide/advanceduse/adb.rst:2
@@ -143,14 +144,18 @@ msgstr "Oneplus One::"
 
 #: ../../userguide/advanceduse/dav.rst:2
 msgid "CalDAV and CardDAV synchronization"
-msgstr ""
+msgstr "Sincronizzazione CalDAV e CardDAV"
 
 #: ../../userguide/advanceduse/dav.rst:4
+#, fuzzy
 msgid ""
 "CalDAV and CardDAV are protocols to syncronize calendars and contacts "
 "with a remote server. Many email-hosters provide a CalDAV and CardDAV "
 "interface."
 msgstr ""
+"CalDAV e CardDav sono protocolli che servono a sincronizzare i calendati e i "
+"contatti con un server remoto. Molti fornitori di email hanno anche servizi "
+"di CalDAV e CardDav."
 
 #: ../../userguide/advanceduse/dav.rst:6
 msgid ""
@@ -159,6 +164,11 @@ msgid ""
 "select \"Add internet calendar > Generic CalDAV\". Enter your calendar "
 "URL as well as your username and password to complete the process."
 msgstr ""
+"**Nota:** La sincronizzazione CalDAV puo essere impostata anche "
+"dall'applicazione Calendario. Aprire l'app, cliccare sopra l'icona del "
+"calendario in alto a destra e selezionare \"Aggiungi calendario online > "
+"Generic CalDAV\". Inserire l'url del tuo calendario, l'username e la "
+"password per completare il processo."
 
 #: ../../userguide/advanceduse/dav.rst:8
 msgid ""
@@ -168,6 +178,11 @@ msgid ""
 "to do that with a script that you can run in the terminal or via phablet "
 "SSH connection. These instructions work for caldav as well."
 msgstr ""
+"Per il momento non c'è una implementazione di CardDAV direttamente "
+"accessibile dall'interfaccia utente di Ubuntu Touch, quindi l'unico modo per "
+"sincronizzare CardDAV è usando syncevolution + cron. Comunque c'è un modo "
+"semplice per farlo usando uno script che puoi avviare da terminale o via "
+"connessione SSH. Queste istruzioni funzionano anche per CalDav."
 
 #: ../../userguide/advanceduse/dav.rst:10
 msgid ""
@@ -175,6 +190,9 @@ msgid ""
 "<https://docs.ubports.com/en/latest/userguide/advanceduse/adb.html>`_ to "
 "activate Developer Mode and ADB (or SSH) connection."
 msgstr ""
+"Segiu questa `guida "
+"<https://docs.ubports.com/it/latest/userguide/advanceduse/adb.html>`_ per "
+"attivare la Modalità Sviluppatore e la connessione ADB(o SSH)."
 
 #: ../../userguide/advanceduse/dav.rst:13
 msgid ""
@@ -182,22 +200,28 @@ msgid ""
 "<https://gist.github.com/bastos77/0c47a94dd0bf3e394f879c0ff42b7839>`_ "
 "(let's call it dav.sh) and edit the following variables:"
 msgstr ""
+"Scarica questo `script "
+"<https://gist.github.com/bastos77/0c47a94dd0bf3e394f879c0ff42b7839>`_ ("
+"chiamiamolo dav.sh) e modifica le seguenti variabili:"
 
 #: ../../userguide/advanceduse/dav.rst:15
 msgid ""
 "server side : CAL_URL, **CONTACTS_URL**, USERNAME, PASSWORD (of your "
 "ownCloud/nextCloud/baikal/SOGO/... server)"
 msgstr ""
+"lato server : CAL_URL, **CONTACTS_URL**, USERNAME, PASSWORD (del tuo server "
+"ownCloud/nextCloud/baikal/SOGO/...)"
 
 #: ../../userguide/advanceduse/dav.rst:16
 msgid ""
 "CONTACT and CALENDAR _ NAME / VISUAL_NAME / CONFIG_NAME (it's more "
 "cosmetic)"
 msgstr ""
+"CONTACT e CALENDAR _ NAME / VISUAL_NAME / CONFIG_NAME (sono piu estetici)"
 
 #: ../../userguide/advanceduse/dav.rst:17
 msgid "CRON_FREQUENCY (for the frequency of synchronisation)"
-msgstr ""
+msgstr "CRON_FREQUENCY (per la frequenza di sicronizzazione)"
 
 #: ../../userguide/advanceduse/dav.rst:18
 msgid ""
@@ -205,22 +229,28 @@ msgid ""
 " instead of ``sudo echo \"$COMMAND_LINE\" > /sbin/sogosync``, to avoid "
 "permission denied error"
 msgstr ""
+"Linea 61: scrivi ``sudo sh -c \"echo '$COMMAND_LINE' > /sbin/sogosync\"`` , "
+"al posto di ``sudo echo \"$COMMAND_LINE\" > /sbin/sogosync``, per evitare un "
+"errore di permesso negato"
 
 #: ../../userguide/advanceduse/dav.rst:20
 msgid ""
 "Move the file to your UbuntuTouch device, either by file manager or with "
 "adb::"
 msgstr ""
+"Sposta il file sul tuo dispositivo UbuntuTouch usando il file manager o adb::"
 
 #: ../../userguide/advanceduse/dav.rst:24
 msgid ""
 "Connect with the phablet shell (``adb shell``) or directly on the phone "
 "Terminal app and type the following::"
 msgstr ""
+"Connettiti alla shell del dispositivo (``adb shell``) o vai direttamente "
+"sull'applicazione del Terminale e scrivi questi comandi::"
 
 #: ../../userguide/advanceduse/dav.rst:31
 msgid "Sources:"
-msgstr ""
+msgstr "Risorse:"
 
 #: ../../userguide/advanceduse/dav.rst:33
 #, fuzzy
@@ -233,19 +263,19 @@ msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:34
 msgid "https://gist.github.com/boTux/069b53d8e06bdb9b9c97"
-msgstr ""
+msgstr "https://gist.github.com/boTux/069b53d8e06bdb9b9c97"
 
 #: ../../userguide/advanceduse/dav.rst:35
 msgid "https://gist.github.com/tcarrondo"
-msgstr ""
+msgstr "https://gist.github.com/tcarrondo"
 
 #: ../../userguide/advanceduse/dav.rst:36
 msgid "https://gist.github.com/bastos77"
-msgstr ""
+msgstr "https://gist.github.com/bastos77"
 
 #: ../../userguide/advanceduse/dav.rst:37
 msgid "https://askubuntu.com/questions/601910/ssh-ubuntu-touch"
-msgstr ""
+msgstr "https://askubuntu.com/questions/601910/ssh-ubuntu-touch"
 
 #: ../../userguide/advanceduse/index.rst:2
 msgid "Advanced use"
@@ -616,34 +646,41 @@ msgid ""
 "compatibility layer that allows you to run android applications on "
 "GNU/Linux operating systems."
 msgstr ""
+"`Anbox <https://anbox.io>`_ è un contenitore android e uno strato di "
+"compatibilita che permette di eseguire applicazioni android sul sistema "
+"operativo GNU/Linux."
 
 #: ../../userguide/dailyuse/anbox.rst:7
 msgid "Anbox is in early development"
-msgstr ""
+msgstr "Anbox è in fase iniziale di sviluppo"
 
 #: ../../userguide/dailyuse/anbox.rst:8
 msgid "Anbox for Ubuntu Touch is in even more early development"
-msgstr ""
+msgstr "Anbox per Ubuntu Touch è in una fase ancora più iniziale di sviluppo"
 
 #: ../../userguide/dailyuse/anbox.rst:9
 msgid ""
 "Anbox only works on the 16.04 version of Ubuntu Touch, which is also in "
 "early development"
 msgstr ""
+"andox funziona soltanto sullaversione di Ubuntu Touch 16.04, che anch'essa è "
+"in fase di sviluppo iniziale"
 
 #: ../../userguide/dailyuse/anbox.rst:10
 msgid ""
 "Only selected devices are supported for the moment, more will be added in"
 " the future."
 msgstr ""
+"Soltanto alcuni dispositivi sono supportati al momento, ne saranno aggiuti "
+"altri nel futuro."
 
 #: ../../userguide/dailyuse/anbox.rst:13
 msgid "Supported devices"
-msgstr ""
+msgstr "Dispositivi supportati"
 
 #: ../../userguide/dailyuse/anbox.rst:15
 msgid "Make sure your device is supported:"
-msgstr ""
+msgstr "Assicurati che il tuo dispositivo sia supportato:"
 
 #: ../../userguide/dailyuse/anbox.rst:17
 msgid ""
@@ -651,28 +688,39 @@ msgid ""
 " M10 HD (codename: *cooler*, name of the boot partition: *boot*) BQ M10 "
 "FHD (codename: *frieza*, name of the boot partition: *boot*)"
 msgstr ""
+"Meizu Pro 5 (nome in codice: *turbo*, nome della partizione di boot: "
+"*bootimg*) BQ M10 HD (nome in codice: *cooler*, nome della partizione di "
+"boot: *boot*) BQ M10 FHD (nome in codice: *frieza*, nome della partizione di "
+"boot: *boot*)"
 
 #: ../../userguide/dailyuse/anbox.rst:21
 msgid ""
 "You will need the device codename and the name of your boot partition for"
 " the installation."
 msgstr ""
+"Avrai bisogno del nome in codice del dispositivo e del della tua partizione "
+"di boot per l'installazione."
 
 #: ../../userguide/dailyuse/anbox.rst:24
 msgid "How to install"
-msgstr ""
+msgstr "Come installare"
 
 #: ../../userguide/dailyuse/anbox.rst:27
+#, fuzzy
 msgid ""
 "Because this feature is in such an early stage of development, the "
 "installation is only recommended for experienced users."
 msgstr ""
+"Dato che questa funzionalità è in uno stato molto prematuro di sviluppo, "
+"l'isntallazione è raccomandata soltanto a utenti esperti."
 
 #: ../../userguide/dailyuse/anbox.rst:29
 msgid ""
 ":doc:`Install <../install>` the 16.04/devel channel on your supported "
 "device"
 msgstr ""
+":doc:`Installare <../install>` il canale 16.04/devel sul tuo dispositivo "
+"supportato"
 
 #: ../../userguide/dailyuse/anbox.rst:30
 msgid ""
@@ -681,20 +729,25 @@ msgid ""
 "respectively with the codename and name of the boot partition for your "
 "device. See the above list."
 msgstr ""
+"Aprire un terminale e eseguire ``export CODENAME=\"turbo\" && export "
+"PARTITIONNAME=\"bootimg\"``, sostituendo la parte tra le virgolette con "
+"rispettivamente il nome in codice e il nome della partizione di boot de tuo "
+"dispositivo. Vedi la lista di prima."
 
 #: ../../userguide/dailyuse/anbox.rst:31
 msgid "Activate developer mode on your device."
-msgstr ""
+msgstr "Attivare la modalità sviluppatore sul tuo dispositivo."
 
 #: ../../userguide/dailyuse/anbox.rst:32
 msgid ""
 "Connect the device to your computer computer and run the following "
 "commands::"
 msgstr ""
+"Connettere il dispositivo al tuo compiter e eseguire i seguenti comandi::"
 
 #: ../../userguide/dailyuse/anbox.rst:40
 msgid "wait for the device to reboot, then run::"
-msgstr ""
+msgstr "aspettare che il dispositivo si riavvii, quindi eseguire::"
 
 #: ../../userguide/dailyuse/anbox.rst:49
 msgid ""
@@ -702,6 +755,10 @@ msgid ""
 " might have to refresh the apps scope (pull down from the center of the "
 "screen and release) for the app to show up."
 msgstr ""
+"Fatto! Selezionare \"Anbox\" nello scope delle app per usare le applicazioni "
+"android. Può darsi che per mostrare l'applicazione tu debba ricaricare lo "
+"scope delle app (premere al centro dello schermo e spostare t tutto verso il "
+"basso e poi rialsciare)."
 
 #: ../../userguide/dailyuse/anbox.rst:52
 msgid "Reporting bugs"
@@ -1169,4 +1226,3 @@ msgstr ""
 #~ " permit ssh connexion form outside "
 #~ "the mobile device::"
 #~ msgstr ""
-
