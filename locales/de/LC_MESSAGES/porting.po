@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-08 19:46-0600\n"
-"PO-Revision-Date: 2018-02-17 21:34+0000\n"
+"PO-Revision-Date: 2018-02-17 22:26+0000\n"
 "Last-Translator: Jonatan Hatakeyama Zeidler <jonatan_zeidler@gmx.de>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-porting/de/>\n"
@@ -609,6 +609,8 @@ msgid ""
 "There are also some other options available that may be useful for you "
 "depending on your device's form factor. These are discussed below."
 msgstr ""
+"Es sind auch andere Optionen verfügbar, die hilfreich sein könnten, abhängig "
+"vom Formfaktor des Gerätes. Diese werden unten diskutiert."
 
 #: ../../porting/running-ut.rst:11
 msgid ""
@@ -619,14 +621,21 @@ msgid ""
 "/ubuntu-session.d/[codename].conf`` specifying them. For example, this is"
 " the file for the Nexus 7 tablet::"
 msgstr ""
+"All diese Einstellungen werden von Unity 8 geraten, falls sie nicht gesetzt "
+"werden. Es gibt aber viele Fälle, wo falsch geraten wird (zum Beispiel "
+"werden Geräte mit sehr hoher Bildschirmauflösung als Desktops erkannt). Um "
+"manuell Werte für diese Variablen festzulegen, erstellt man einfach eine "
+"Datei unter ``/etc/ubuntu-session.d/[codename].conf``. Für das Nexus 7 sieht "
+"das zum Beispiel so aus::"
 
 #: ../../porting/running-ut.rst:19
 msgid "Methods for deriving values for these variables are below."
 msgstr ""
+"Methoden, um Werte für diese Variablen festzulegen, finden sich im Folgenden."
 
 #: ../../porting/running-ut.rst:22
 msgid "Display scaling"
-msgstr ""
+msgstr "Anzeigeskalierung"
 
 #: ../../porting/running-ut.rst:24
 msgid ""
@@ -639,12 +648,22 @@ msgid ""
 "assume that tablets and laptops are the same distance and that they are "
 "held at 1.235 times the distance phones tend to be held at."
 msgstr ""
+"``GRID_UNIT_PX`` (Pixel pro Gittereinheit oder Px/GU) ist gerätespezifisch. "
+"Das Ziel ist, dass das Systems und die Anwendungen vom Nutzer immer gleich "
+"*wahrgenommen* werden, unabhängig vom Gerät, auf dem sie angezeigt werden. "
+"Dies hängt in erster Linie von der Pixeldichte des Gerätebildschirms und des "
+"Abstands des Geräts vom Nutzer ab. Letzteres kann nicht automatisch "
+"ermittelt werden und basiert auf Heuristiken. Man nimmt an, dass Tablets und "
+"Klapprechner den gleichen Nutzerabstand haben und dass sie üblicherweise "
+"1,235 mal weiter als Telefone gehalten werden."
 
 #: ../../porting/running-ut.rst:26
 msgid ""
 "``QTWEBKIT_DPR`` sets the display scaling for the Oxide web engine, so "
 "changes to this value will affect the scale of the browser and webapps."
 msgstr ""
+"``QTWEBKIT_DPR`` legt die Anzeigeskalierung für die Oxide-Webengine fest. "
+"Dieser Wert beeinflusst die Skalierung im Browser und in Webapps."
 
 #: ../../porting/running-ut.rst:28
 msgid ""
@@ -654,183 +673,190 @@ msgid ""
 "*perceived* size rather than *physical* size . Here are some values for "
 "other devices so you may derive the correct one for yours:"
 msgstr ""
+"Ein Referenzgerät wurde ausgewählt, von dem die Werte aller anderer Geräte "
+"abgeleitet wird. Das Referenzgerät ist ein Klapprechner mit einem 120ppi-"
+"Bildschirm. Es gibt keine exakte Formel. Man setzt diese Optionen nach "
+"*wahrgenommener* Größe, nicht nach einer *physikalischen* Größe. Hier stehen "
+"einige Werte für andere Geräte, von denen sich passende Werte ableiten "
+"lassen:"
 
 #: ../../porting/running-ut.rst:31
 msgid "Device"
-msgstr ""
+msgstr "Gerät"
 
 #: ../../porting/running-ut.rst:31
 msgid "Resolution"
-msgstr ""
+msgstr "Auflösung"
 
 #: ../../porting/running-ut.rst:31
 msgid "Display Size"
-msgstr ""
+msgstr "Bildschirmgröße"
 
 #: ../../porting/running-ut.rst:31
 msgid "PPI"
-msgstr ""
+msgstr "PPI"
 
 #: ../../porting/running-ut.rst:31
 msgid "Px/GU"
-msgstr ""
+msgstr "Px/GU"
 
 #: ../../porting/running-ut.rst:31
+#, fuzzy
 msgid "QtWebKit DPR"
-msgstr ""
+msgstr "QtWebKit DPR"
 
 #: ../../porting/running-ut.rst:33
 msgid "'Normal' density laptop"
-msgstr ""
+msgstr "'Normale' Dichte Klapprechner"
 
 #: ../../porting/running-ut.rst:33 ../../porting/running-ut.rst:35
 msgid "N/A"
-msgstr ""
+msgstr "Nicht verfügbar"
 
 #: ../../porting/running-ut.rst:33
 msgid "96-150"
-msgstr ""
+msgstr "96-150"
 
 #: ../../porting/running-ut.rst:33
 msgid "8"
-msgstr ""
+msgstr "8"
 
 #: ../../porting/running-ut.rst:33
 msgid "1.0"
-msgstr ""
+msgstr "1.0"
 
 #: ../../porting/running-ut.rst:34
 msgid "ASUS Nexus 7"
-msgstr ""
+msgstr "ASUS Nexus 7"
 
 #: ../../porting/running-ut.rst:34
 msgid "1280x800"
-msgstr ""
+msgstr "1280x800"
 
 #: ../../porting/running-ut.rst:34
 msgid "7\""
-msgstr ""
+msgstr "7\""
 
 #: ../../porting/running-ut.rst:34
 msgid "216"
-msgstr ""
+msgstr "216"
 
 #: ../../porting/running-ut.rst:34
 msgid "12"
-msgstr ""
+msgstr "12"
 
 #: ../../porting/running-ut.rst:34 ../../porting/running-ut.rst:36
 #: ../../porting/running-ut.rst:37 ../../porting/running-ut.rst:38
 msgid "2.0"
-msgstr ""
+msgstr "2.0"
 
 #: ../../porting/running-ut.rst:35
 msgid "'High' density laptop"
-msgstr ""
+msgstr "'Hohe' Dichte Klapprechner"
 
 #: ../../porting/running-ut.rst:35
 msgid "150-250"
-msgstr ""
+msgstr "150-250"
 
 #: ../../porting/running-ut.rst:35
 msgid "16"
-msgstr ""
+msgstr "16"
 
 #: ../../porting/running-ut.rst:35
 msgid "1.5"
-msgstr ""
+msgstr "1.5"
 
 #: ../../porting/running-ut.rst:36
 msgid "Samsung Galaxy Nexus"
-msgstr ""
+msgstr "Samsung Galaxy Nexus"
 
 #: ../../porting/running-ut.rst:36
 msgid "1280x720"
-msgstr ""
+msgstr "1280x720"
 
 #: ../../porting/running-ut.rst:36
 msgid "4.65\""
-msgstr ""
+msgstr "4.65\""
 
 #: ../../porting/running-ut.rst:36
 msgid "316"
-msgstr ""
+msgstr "316"
 
 #: ../../porting/running-ut.rst:36 ../../porting/running-ut.rst:37
 msgid "18"
-msgstr ""
+msgstr "18"
 
 #: ../../porting/running-ut.rst:37
 msgid "LG Nexus 4"
-msgstr ""
+msgstr "LG Nexus 4"
 
 #: ../../porting/running-ut.rst:37
 msgid "1280x768"
-msgstr ""
+msgstr "1280x768"
 
 #: ../../porting/running-ut.rst:37
 msgid "4.7\""
-msgstr ""
+msgstr "4.7\""
 
 #: ../../porting/running-ut.rst:37
 msgid "320"
-msgstr ""
+msgstr "320"
 
 #: ../../porting/running-ut.rst:38
 msgid "Samsung Nexus 10"
-msgstr ""
+msgstr "Samsung Nexus 10"
 
 #: ../../porting/running-ut.rst:38
 msgid "2560x1600"
-msgstr ""
+msgstr "2560x1600"
 
 #: ../../porting/running-ut.rst:38
 msgid "10.1\""
-msgstr ""
+msgstr "10.1\""
 
 #: ../../porting/running-ut.rst:38
 msgid "299"
-msgstr ""
+msgstr "299"
 
 #: ../../porting/running-ut.rst:38
 msgid "20"
-msgstr ""
+msgstr "20"
 
 #: ../../porting/running-ut.rst:39
 msgid "Fairphone 2"
-msgstr ""
+msgstr "Fairphone 2"
 
 #: ../../porting/running-ut.rst:39 ../../porting/running-ut.rst:40
 msgid "1080x1920"
-msgstr ""
+msgstr "1080x1920"
 
 #: ../../porting/running-ut.rst:39
 msgid "5\""
-msgstr ""
+msgstr "5\""
 
 #: ../../porting/running-ut.rst:39
 msgid "440"
-msgstr ""
+msgstr "440"
 
 #: ../../porting/running-ut.rst:39 ../../porting/running-ut.rst:40
 msgid "23"
-msgstr ""
+msgstr "23"
 
 #: ../../porting/running-ut.rst:39 ../../porting/running-ut.rst:40
 msgid "2.5"
-msgstr ""
+msgstr "2.5"
 
 #: ../../porting/running-ut.rst:40
 msgid "LG Nexus 5"
-msgstr ""
+msgstr "LG Nexus 5"
 
 #: ../../porting/running-ut.rst:40
 msgid "4.95\""
-msgstr ""
+msgstr "4.95\""
 
 #: ../../porting/running-ut.rst:40
 msgid "445"
-msgstr ""
+msgstr "445"
 
 #: ../../porting/running-ut.rst:43
 msgid ""
@@ -839,14 +865,18 @@ msgid ""
 " is the best, share some pictures (including some object for scale) along"
 " with the device specs with us."
 msgstr ""
+"Am besten experimentiert man etwas mit den Werten, um herauszufinden, welche "
+"sich gut anfühlen, verglichen mit dem Nutzererlebnis auf anderen Geräten. "
+"Ist man sich unsicher, was am besten ist, kann man den UBports-Entwicklern "
+"Bilder schicken, auf denen Vergleichsobjekte zu sehen sind."
 
 #: ../../porting/running-ut.rst:46
 msgid "Form factor"
-msgstr ""
+msgstr "Formfaktor"
 
 #: ../../porting/running-ut.rst:48
 msgid "There are two other settings that may be of interest to you."
-msgstr ""
+msgstr "Es gibt zwei weitere Einstellungen, die interessant sein können."
 
 #: ../../porting/running-ut.rst:50
 msgid ""
@@ -857,6 +887,12 @@ msgid ""
 "their functionality. For more information on the Chassis, see `the "
 "freedesktop.org hostnamed specification`_."
 msgstr ""
+"``FORM_FACTOR`` definiert den Formfaktor des Geräts. Dieser Wert wird als "
+"Geräte-Chassis verwendet, den man per ``hostnamectl`` finden kann. "
+"Akzeptable Werte sind ``handset``, ``tablet``, ``laptop`` und ``desktop``. "
+"Apps, wie die Gallerie, nutzen diese Information, um ihre Funktionalität "
+"anzupassen. Mehr Informationen zum Chassis findet man in der `"
+"freedesktop.org hostnamed specification`_."
 
 #: ../../porting/running-ut.rst:52
 msgid ""
@@ -867,6 +903,12 @@ msgid ""
 "for tablets, laptops, and desktops; and ``portrait``, which is usually "
 "used for phone handsets."
 msgstr ""
+"``NATIVE_ORIENTATION`` legt die Bildschirmorientierung für den eingebauten "
+"Bildschirm fest. Dieser Wert wird genutzt, wenn die automatische Drehung "
+"nicht richtig funktioniert oder wenn Apps die Orientierung auf die native "
+"Orientierung festlegen wollen. Akzeptable Werte sind ``landscape``, welches "
+"für gewöhnlich für Tablets, Klapprechner und Desktops, und ``portrait``, "
+"welches für gewöhnlich für Telefone verwendet wird."
 
 #~ msgid ""
 #~ "Due to a `bug in the ubports-"
