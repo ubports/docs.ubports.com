@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-08 19:46-0600\n"
-"PO-Revision-Date: 2018-02-17 20:42+0000\n"
+"PO-Revision-Date: 2018-02-17 21:34+0000\n"
 "Last-Translator: Jonatan Hatakeyama Zeidler <jonatan_zeidler@gmx.de>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-porting/de/>\n"
@@ -281,38 +281,45 @@ msgstr ""
 
 #: ../../porting/building-ubports-boot.rst:87
 msgid "``cd`` to your Halium BUILDDIR"
-msgstr ""
+msgstr "Mit ``cd`` zu Haliums BUILDDIR wechseln"
 
 #: ../../porting/building-ubports-boot.rst:88
+#, fuzzy
 msgid "``source build/envsetup.sh``"
-msgstr ""
+msgstr "``source build/envsetup.sh``"
 
 #: ../../porting/building-ubports-boot.rst:89
 msgid "Run ``breakfast`` or ``lunch``, whichever you use for your device"
 msgstr ""
+"``breakfast`` oder ``lunch`` ausführen, je nachdem welches für das Gerät "
+"genutzt wird"
 
 #: ../../porting/building-ubports-boot.rst:90
+#, fuzzy
 msgid "``mka ubports-boot``"
-msgstr ""
+msgstr "``mka ubports-boot``"
 
 #: ../../porting/building-ubports-boot.rst:91
+#, fuzzy
 msgid "``mka systemimage``"
-msgstr ""
+msgstr "``mka systemimage``"
 
 #: ../../porting/building-ubports-boot.rst:96
 #: ../../porting/installing-16-04.rst:74
 msgid "Continue on"
-msgstr ""
+msgstr "Nächste Schritte"
 
 #: ../../porting/building-ubports-boot.rst:98
 msgid ""
 "Now that you have ubports-boot built, you can move on to "
 ":doc:`installing-16-04`."
 msgstr ""
+"Jetzt, da man ubports-boot erzeugt hat, kann man mit :doc:`installing-16-04` "
+"fortfahren."
 
 #: ../../porting/installing-16-04.rst:2
 msgid "Installing Ubuntu Touch 16.04 images on Halium"
-msgstr ""
+msgstr "Ubuntu Touch 16.04 Abbilder auf Halium installieren"
 
 #: ../../porting/installing-16-04.rst:6
 msgid ""
@@ -320,6 +327,9 @@ msgid ""
 "anything that you would like to keep, ensure it is backed up and copied "
 "off of the device before continuing."
 msgstr ""
+"Diese Schritte löschen **alle** Daten auf dem Gerät. Falls es da irgendwas "
+"gibt, das man behalten möchte, sollte man eine Sicherung erzeugen und vom "
+"Gerät ziehen, bevor man fortfährt."
 
 #: ../../porting/installing-16-04.rst:8
 msgid ""
@@ -327,6 +337,9 @@ msgid ""
 "use a script called ``rootstock-touch-install`` to install an Ubuntu "
 "Touch rootfs on your device."
 msgstr ""
+"Nach dem :doc:`built ubports-boot <building-ubports-boot>` nutzt man ein "
+"Skript namens ``rootstock-touch-install``, um das Ubuntu Touch rootfs auf "
+"dem Gerät zu installieren."
 
 #: ../../porting/installing-16-04.rst:10
 msgid ""
@@ -335,10 +348,13 @@ msgid ""
 "/data partition is formatted with ext4 and does not have any encryption "
 "on it."
 msgstr ""
+"Um Ubuntu Touch zu installieren, wird auf recovery ein Abbild mit Busybox "
+"benötigt, zum Beispiel TWRP. Außerdem muss man sicherstellen, dass die /data-"
+"Partition als ext4 formatiert ist und unverschlüsselt ist."
 
 #: ../../porting/installing-16-04.rst:13
 msgid "Install ubports-boot"
-msgstr ""
+msgstr "ubports-boot installieren"
 
 #: ../../porting/installing-16-04.rst:15
 msgid ""
@@ -346,10 +362,13 @@ msgid ""
 "Reboot your phone into fastboot mode, then do the following from your "
 "Halium tree::"
 msgstr ""
+"Das ubports-boot-Abbild muss vor anderen Abbildern installiert werden. Man "
+"startet das Telefon in den fastboot-Modus, und führt das folgende aus dem "
+"Halium-Baum heraus aus::"
 
 #: ../../porting/installing-16-04.rst:21
 msgid "Download the rootfs"
-msgstr ""
+msgstr "Das rootfs herunterladen"
 
 #: ../../porting/installing-16-04.rst:23
 msgid ""
@@ -361,16 +380,25 @@ msgid ""
 "you have an x86 device, let us know. We do not have a rootfs available "
 "for these yet."
 msgstr ""
+"Als nächstes lädt man das für das Gerät passende rootfs (root-Dateisystem) "
+"herunter. Momentan ist dafür nur eines verfügbar. Man lädt ``ubports-touch"
+".rootfs-xenial-armhf.tar.gz`` von `unserem CI-Server "
+"<https://ci.ubports.com/job/xenial-rootfs-armhf/>`__ herunter. Das rootfs "
+"sollte auch auf 64-bit ARM-Geräten (aarch64) funktionieren. Sollte es sich "
+"um ein x86-Gerät handeln, dann sollte man Kontakt mit den Halium-Entwicklern "
+"aufnehmen. Hierfür ist nämlich noch kein rootfs verfügbar."
 
 #: ../../porting/installing-16-04.rst:27
 msgid "Install system.img and rootfs"
-msgstr ""
+msgstr "system.img und rootfs installieren"
 
 #: ../../porting/installing-16-04.rst:31
 msgid ""
 "Change the rootstock link to point to UBports once the actuallyfixit PR "
 "is merged."
 msgstr ""
+"Der rootstock-Link muss auf UBports umgebogen werden, sobald der "
+"actuallyfixit-PR eingepflegt ist."
 
 #: ../../porting/installing-16-04.rst:33
 msgid ""
@@ -379,6 +407,10 @@ msgid ""
 "/xenial-actuallyfixit>`_. Boot your device into recovery and run the "
 "script as follows::"
 msgstr ""
+"Man lädt das Skript rootstock-touch-install von universalsuperbox/rootstock-"
+"ng <https://github.com/universalsuperbox/rootstock-ng/tree/xenial-"
+"actuallyfixit>`_ herunter. Dann startet man das Gerät in recovery und führt "
+"das Skript wie folgt aus::"
 
 #: ../../porting/installing-16-04.rst:37
 msgid ""
@@ -389,6 +421,12 @@ msgid ""
 "with us. If your device doesn't reboot automatically, reboot it using "
 "your recovery's interface."
 msgstr ""
+"Das Skript kopiert und extrahiert die Dateien an ihren richtigen Platz und "
+"ermöglicht es dann, das phablet-Nutzerpasswort zu setzen. Falls man bis ``"
+"rebooting device`` kommt und keine Fehler aufgetreten zu sein scheinen, ist "
+"es Zeit für den nächsten Schritt. Falls Fehler auftreten, sollte man die "
+"Halium-Entwickler kontaktieren. Sollte das Gerät nicht automatisch "
+"neustarten, tut man diese manuell."
 
 #: ../../porting/installing-16-04.rst:39
 msgid ""
@@ -397,10 +435,15 @@ msgid ""
 " tree. These may have fewer bugs than your recovery's busybox. More "
 "information about this option is available in the script's README."
 msgstr ""
+"Falls Fehler auftreten wie ``broken pipe`` oder ``out of memory``, sollte "
+"man die Option ``-b`` probieren, um den busybox- oder tpybox-Build des Baums "
+"zu nutzen. Dabei könnten weniger Fehler auftreten als mit der busybox von "
+"recovery. Mehr Informationen zu dieser Option sind in der README des Skripts "
+"zu finden."
 
 #: ../../porting/installing-16-04.rst:43
 msgid "Get SSH access"
-msgstr ""
+msgstr "SSH-Zugriff erlangen"
 
 #: ../../porting/installing-16-04.rst:45
 msgid ""
@@ -408,6 +451,9 @@ msgid ""
 "However, you should also get a new network connection on the computer you"
 " have it plugged in to. We will use this to debug the system."
 msgstr ""
+"Falls das Gerät startet, wird es wahrscheinlich im Bootloader-Bildschirm "
+"stehen bleiben. Auf dem Rechner, an dem das Gerät angeschlossen ist, sollte "
+"es ein neues Netzwerkgerät geben. Dieses nutzt man für die Fehlerdiagnose."
 
 #: ../../porting/installing-16-04.rst:47
 msgid ""
@@ -417,6 +463,12 @@ msgid ""
 "contact with us so we can find out why. You may also choose to run "
 "``watch ip link`` and look for changes in network devices."
 msgstr ""
+"Um zu sehen, ob das Gerät korrekt gestartet hat, führt man ``dmesg -w`` aus "
+"und wartet auf \"GNU/Linux device\" in der Ausgabe. Falls stattdessen etwas "
+"wie \"ubports initrd i hit a nail\" auftaucht, sollte man die Halium-"
+"Entwickler kontaktieren, um gemeinsam herauszufinden, wo der Fehler liegt. "
+"Außerdem kann man ``watch ip link`` ausführen und nach Änderungen in den "
+"Netzwerkgeräten Ausschau halten."
 
 #: ../../porting/installing-16-04.rst:49
 msgid ""
@@ -424,14 +476,20 @@ msgid ""
 " on the newly connected RNDIS interface to ``10.15.19.100`` if you don't "
 "get one automatically. Then, run the following to access your device::"
 msgstr ""
+"Ähnlich wie beim Halium-Referenz-Rootfs, sollte man seine Rechner-IP auf der "
+"neuen RNDIS-Schnittstelle zu ``10.15.19.100`` ändern, falls man nicht "
+"automatisch eine IP bekommt. Dann führt man folgenden Befehl aus, um das "
+"Gerät zu erreichen::"
 
 #: ../../porting/installing-16-04.rst:53
 msgid "The password will be the one that you set while running rootstock."
 msgstr ""
+"Das Passwort ist das, was man während der Ausführung von rootstock gesetzt "
+"hat."
 
 #: ../../porting/installing-16-04.rst:56
 msgid "Make / writeable"
-msgstr ""
+msgstr "Erstellen / Schreibrechte"
 
 #: ../../porting/installing-16-04.rst:58
 msgid ""
@@ -439,10 +497,13 @@ msgid ""
 "next step), you'll need to remount it with write permissions. To do that,"
 " run the following command::"
 msgstr ""
+"Bevor man Änderungen am rootfs vornehmen kann (was im nächsten Schritt "
+"notwendig ist), muss es mit Schreibrechten erneut eingehängt werden. Dafür "
+"führt man folgenden Befehl aus::"
 
 #: ../../porting/installing-16-04.rst:64
 msgid "Add udev rules"
-msgstr ""
+msgstr "udev-Regeln hinzufügen"
 
 #: ../../porting/installing-16-04.rst:66
 msgid ""
@@ -450,6 +511,10 @@ msgid ""
 "Ubuntu Touch software to access your hardware. Run the following command,"
 " replacing [codename] with your device's codename.::"
 msgstr ""
+"Nachdem Einloggen müssen einige udev-Regeln erstellt werden, um der Ubuntu "
+"Touch Software den Hardwarezugriff zu ermöglichen. Dafür führt man den "
+"folgenden Befehl aus, wobei man [codename] durch den Codenamen des Geräts "
+"ersetzt::"
 
 #: ../../porting/installing-16-04.rst:71
 msgid ""
@@ -457,6 +522,9 @@ msgid ""
 " Ubuntu Touch spinner followed by Unity 8. Your lock password is the same"
 " as you set for SSH."
 msgstr ""
+"Nach einem Neustart, falls alles gut gegangen ist, sieht man hoffentlich die "
+"Ubuntu Touch Ladeanimation und dann Unity 8. Das Sperrpasswort ist dasselbe, "
+"das man für SSH genutzt hat."
 
 #: ../../porting/installing-16-04.rst:76
 msgid ""
@@ -464,16 +532,19 @@ msgid ""
 ":doc:`running-ut` to learn about more specific steps you will need to "
 "take for a complete port."
 msgstr ""
+"Glückwunsch! Ubuntu Touch läuft nun auf dem Gerät. Nun fehlt nur noch :doc"
+":`running-ut`, um die Portierung abzuschließen."
 
 #: ../../porting/installing-16-04.rst:80
 msgid ""
 "This should be a little heavier on \"What to do when something goes "
 "wrong\" content."
 msgstr ""
+"Hier sollte es etwas mehr um \"Was tu ich, wenn etwas schief geht?\" gehen."
 
 #: ../../porting/introduction.rst:2
 msgid "Porting information"
-msgstr ""
+msgstr "Portierung Informationen"
 
 #: ../../porting/introduction.rst:5
 msgid ""
@@ -482,12 +553,17 @@ msgid ""
 "supported, please see `this page <https://ubports.com/page/get-ubuntu-"
 "touch>`_."
 msgstr ""
+"Für Informationen darüber, wie man Ubuntu Touch auf einem unterstützten "
+"Gerät installiert oder darüber, ob ein Gerät bereits unterstützt wird, "
+"findet man auf `dieser Seite <https://ubports.com/page/get-ubuntu-touch>`_."
 
 #: ../../porting/introduction.rst:7
 msgid ""
 "This section will introduce you to some of the specifics of porting "
 "Ubuntu Touch to an Android device."
 msgstr ""
+"Dieser Abschnitt dokumentiert einige Eigenheiten über das Portieren von "
+"Ubuntu Touch auf ein Android-Gerät."
 
 #: ../../porting/introduction.rst:9
 msgid ""
@@ -496,20 +572,26 @@ msgid ""
 "your ``systemimage`` built without errors. Once you're at the point of "
 "installing a rootfs, you can come back here."
 msgstr ""
+"Bevor man loslegen kann,  befolgt man den `Halium porting guide "
+"<http://docs.halium.org/en/latest/porting/first-steps.html>`_ und erzeugt "
+"das ``systemimage`` ohne Fehler. Sobald man soweit ist, das rootfs "
+"installieren zu können, kehrt man hierher zurück."
 
 #: ../../porting/introduction.rst:11
 msgid ""
 "Start at :doc:`building-ubports-boot` if you'd like to install the "
 "UBports Ubuntu Touch 16.04 rootfs."
 msgstr ""
+"Um das UBports Ubuntu Touch 16.04 rootfs zu installieren,  beginnt man bei "
+":doc:`building-ubports-boot`."
 
 #: ../../porting/running-ut.rst:2
 msgid "Running Ubuntu Touch"
-msgstr ""
+msgstr "Ubuntu Touch ausführen"
 
 #: ../../porting/running-ut.rst:5
 msgid "Display settings"
-msgstr ""
+msgstr "Anzeigeeinstellungen"
 
 #: ../../porting/running-ut.rst:7
 msgid ""
@@ -517,6 +599,10 @@ msgid ""
 "small. There are two variables that set the content scaling for Unity 8 "
 "and Ubuntu Touch applications: ``GRID_UNIT_PX`` and ``QTWEBKIT_DPR``."
 msgstr ""
+"Wenn das Gerät startet, stellt man wahrscheinlich fest, dass alles sehr "
+"klein ist. Es gibt zwei Variablen, welche die Skalierung der Inhalte für "
+"Unity 8 und Ubuntu Touch-Anwendungen festlegt: ``GRID_UNIT_PX`` und "
+"``QTWEBKIT_DPR``."
 
 #: ../../porting/running-ut.rst:9
 msgid ""
