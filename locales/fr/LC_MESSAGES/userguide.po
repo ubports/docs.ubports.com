@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-08 19:46-0600\n"
-"PO-Revision-Date: 2018-02-15 19:55+0000\n"
-"Last-Translator: Laurent Rouxel <lrouxel@free.fr>\n"
+"PO-Revision-Date: 2018-02-17 15:32+0000\n"
+"Last-Translator: divucol <madein_santos@hotmail.com>\n"
 "Language-Team: French <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-userguide/fr/>\n"
 "Language: fr\n"
@@ -45,11 +45,11 @@ msgstr "Tout d'abord, il est nécessaire d'installer ADB sur votre PC."
 
 #: ../../userguide/advanceduse/adb.rst:12
 msgid "On Ubuntu::"
-msgstr "Sur Ubuntu::"
+msgstr "Sur Ubuntu ::"
 
 #: ../../userguide/advanceduse/adb.rst:16
 msgid "On Fedora::"
-msgstr "Sur Fedora::"
+msgstr "Sur Fedora ::"
 
 #: ../../userguide/advanceduse/adb.rst:20
 msgid "And on MacOS with `Homebrew <https://brew.sh>`_::"
@@ -137,11 +137,11 @@ msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:48
 msgid "Fairphone 2::"
-msgstr "Fairphone 2::"
+msgstr "Fairphone 2 ::"
 
 #: ../../userguide/advanceduse/adb.rst:52
 msgid "Oneplus One::"
-msgstr "Oneplus One::"
+msgstr "Oneplus One ::"
 
 #: ../../userguide/advanceduse/dav.rst:2
 msgid "CalDAV and CardDAV synchronization"
@@ -229,7 +229,7 @@ msgid ""
 " instead of ``sudo echo \"$COMMAND_LINE\" > /sbin/sogosync``, to avoid "
 "permission denied error"
 msgstr ""
-"Ligne 61: ecrire ``sudo sh -c \"echo '$COMMAND_LINE' > /sbin/sogosync\"`` , "
+"Ligne 61: écrire ``sudo sh -c \"echo '$COMMAND_LINE' > /sbin/sogosync\"`` , "
 "à la place de ``sudo echo \"$COMMAND_LINE\" > /sbin/sogosync``, pour éviter "
 "l'erreur de permission refusée"
 
@@ -247,20 +247,19 @@ msgid ""
 "Terminal app and type the following::"
 msgstr ""
 "Connectez vous avec la shell phablet (``adb shell``) ou directement avec "
-"l'application Terminal du téléphone et tapez ce qui suit:"
+"l'application Terminal du téléphone et tapez ce qui suit :"
 
 #: ../../userguide/advanceduse/dav.rst:31
 msgid "Sources:"
-msgstr "Sources:"
+msgstr "Sources :"
 
 #: ../../userguide/advanceduse/dav.rst:33
-#, fuzzy
 msgid ""
 "https://askubuntu.com/questions/616081/ubuntu-touch-add-contact-list-and-"
 "calendars/664834#664834"
 msgstr ""
-"askubuntu : https://askubuntu.com/questions/655321/ubuntu-touch-reverse-"
-"tethering-and-click-apps-updates"
+"https://askubuntu.com/questions/616081/ubuntu-touch-add-contact-list-and-"
+"calendars/664834#664834"
 
 #: ../../userguide/advanceduse/dav.rst:34
 msgid "https://gist.github.com/boTux/069b53d8e06bdb9b9c97"
@@ -450,16 +449,16 @@ msgstr "Sur le récepteur"
 
 #: ../../userguide/advanceduse/screencasting.rst:24
 msgid "For real time casting:"
-msgstr "Pour l’affichage en temps réel:"
+msgstr "Pour l’affichage en temps réel :"
 
 #: ../../userguide/advanceduse/screencasting.rst:27
 msgid ""
 "Prepare your computer to listen to a tcp port(here 1234) and forward raw "
 "stream to a video player (here mplayer) with a frame size of 384x640::"
 msgstr ""
-"Prépare votre ordinateur à écouter sur un port tcp (ici 1234) et "
-"rediriger le flux vidéo brut vers un programme de lecture vidéo (ici "
-"mplayer) avec une taille de trame de 384x640::"
+"Prépare votre ordinateur à écouter sur un port tcp (ici 1234) et rediriger "
+"le flux vidéo brut vers un programme de lecture vidéo (ici mplayer) avec une "
+"taille de trame de 384x640 ::"
 
 #: ../../userguide/advanceduse/screencasting.rst:31
 msgid "For stream recording:"
@@ -624,9 +623,9 @@ msgid ""
 "<https://askubuntu.com/questions/348714/how-can-i-access-my-ubuntu-phone-"
 "over-ssh/599041#599041>`_"
 msgstr ""
-"`askubuntu.com: How can I access my Ubuntu phone over ssh? "
-"<https://askubuntu.com/questions/348714/how-can-i-access-my-ubuntu-phone-"
-"over-ssh/599041#599041>`_"
+"`askubuntu.com : Comment puis-je accéder à mon téléphone Ubuntu phone via "
+"ssh ? <https://askubuntu.com/questions/348714/how-can-i-access-my-ubuntu-"
+"phone-over-ssh/599041#599041>`_"
 
 #: ../../userguide/advanceduse/ssh.rst:56
 msgid ""
@@ -634,18 +633,17 @@ msgid ""
 "ubuntu-phone via Wifi <https://gurucubano.gitbooks.io/bq-aquaris-e-4-5"
 "-ubuntu-phone/content/en/chapter1.html>`_"
 msgstr ""
-"`gurucubano: BQ Aquaris E 4.5 Ubuntu phone: How to get SSH access to the "
-"ubuntu-phone via Wifi <https://gurucubano.gitbooks.io/bq-aquaris-e-4-5"
-"-ubuntu-phone/content/en/chapter1.html>`_"
+"`gurucubano: BQ Aquaris E 4.5 Ubuntu phone : Comment obtenir un accès SSH "
+"vers un téléphone ubuntu via Wifi <https://gurucubano.gitbooks.io/bq-"
+"aquaris-e-4-5-ubuntu-phone/content/en/chapter1.html>`_"
 
 #: ../../userguide/advanceduse/switchchannel.rst:2
 msgid "Switch release channels"
 msgstr "Changer le canal de mise à jour"
 
 #: ../../userguide/dailyuse/anbox.rst:2
-#, fuzzy
 msgid "Run android applications"
-msgstr "Lancer des applications desktop"
+msgstr "Lancer des applications android"
 
 #: ../../userguide/dailyuse/anbox.rst:4
 msgid ""
@@ -688,58 +686,78 @@ msgstr "Appareils supportés"
 
 #: ../../userguide/dailyuse/anbox.rst:15
 msgid "Make sure your device is supported:"
-msgstr ""
+msgstr "Assurez-vous que votre périphérique est pris en charge :"
 
 #: ../../userguide/dailyuse/anbox.rst:17
+#, fuzzy
 msgid ""
 "Meizu Pro 5 (codename: *turbo*, name of the boot partition: *bootimg*) BQ"
 " M10 HD (codename: *cooler*, name of the boot partition: *boot*) BQ M10 "
 "FHD (codename: *frieza*, name of the boot partition: *boot*)"
 msgstr ""
+"Meizu Pro 5 (nom de code : *turbo*, nom de la partition de démarage : "
+"*bootimg*) BQ M10 HD (nom de code : *cooler*, nom de la partition de "
+"démarage : *boot*) BQ M10 FHD ( nom de code : *frieza*, nom de la partition "
+"de démarage : *boot*)"
 
 #: ../../userguide/dailyuse/anbox.rst:21
 msgid ""
 "You will need the device codename and the name of your boot partition for"
 " the installation."
 msgstr ""
+"Le nom de code de votre périphérique ainsi que le nom de la partition de "
+"démarage sont nécessaires."
 
 #: ../../userguide/dailyuse/anbox.rst:24
+#, fuzzy
 msgid "How to install"
-msgstr ""
+msgstr "Comment l'installer"
 
 #: ../../userguide/dailyuse/anbox.rst:27
+#, fuzzy
 msgid ""
 "Because this feature is in such an early stage of development, the "
 "installation is only recommended for experienced users."
 msgstr ""
+"L'installation n'est recommandée que pour les utilisateurs expérimentés car "
+"cette fonctionnalité n'est qu'au début de son développement."
 
 #: ../../userguide/dailyuse/anbox.rst:29
+#, fuzzy
 msgid ""
 ":doc:`Install <../install>` the 16.04/devel channel on your supported "
 "device"
 msgstr ""
+":doc:`Installer <../install>`  le canal 16.04/devel sur votre périphérique "
+"compatible"
 
 #: ../../userguide/dailyuse/anbox.rst:30
+#, fuzzy
 msgid ""
 "Open a terminal and run ``export CODENAME=\"turbo\" && export "
 "PARTITIONNAME=\"bootimg\"``, but replace the part between the quotes "
 "respectively with the codename and name of the boot partition for your "
 "device. See the above list."
 msgstr ""
+"Ouvrer un terminal et lancer ``export CODENAME=\"turbo\" && export "
+"PARTITIONNAME=\"bootimg\"``, mais remplacer la partie entre guillements avec "
+"le nom de code et le nom de partition de démarage de votre péripérique. "
+"Regarder dans la liste pré-citée."
 
 #: ../../userguide/dailyuse/anbox.rst:31
 msgid "Activate developer mode on your device."
-msgstr ""
+msgstr "Activer le mode développeur sur votre périphérique."
 
 #: ../../userguide/dailyuse/anbox.rst:32
 msgid ""
 "Connect the device to your computer computer and run the following "
 "commands::"
 msgstr ""
+"Connecter le périphérique à votre ordinateur et lancer la commande suivante :"
 
 #: ../../userguide/dailyuse/anbox.rst:40
 msgid "wait for the device to reboot, then run::"
-msgstr ""
+msgstr "attender que le périphérique redémare, ensuite lancer :"
 
 #: ../../userguide/dailyuse/anbox.rst:49
 msgid ""
@@ -747,12 +765,17 @@ msgid ""
 " might have to refresh the apps scope (pull down from the center of the "
 "screen and release) for the app to show up."
 msgstr ""
+"Sélectionner \"Anbox\" dans les scopes d'applications pour utiliser les "
+"applications android. Vous devrez peut-être rafraichir le scope des "
+"applications (tirer vers le centre de l'écran et relâcher) pour que "
+"l'application apparaisse."
 
 #: ../../userguide/dailyuse/anbox.rst:52
 msgid "Reporting bugs"
-msgstr ""
+msgstr "Signaler des bugs"
 
 #: ../../userguide/dailyuse/anbox.rst:54
+#, fuzzy
 msgid ""
 "Please :doc:`report any bugs </contribute/bugreporting>` you come "
 "accross. Bugs with Ubuntu Touch 16.04 are reported in `the normal Ubuntu "
@@ -760,6 +783,11 @@ msgid ""
 "issues with anbox are reported on `our downstream fork "
 "<https://github.com/ubports/anbox/issues>`_. Thank you!"
 msgstr ""
+"S'il vous plait :doc:`signaler tout bug </contribute/bugreporting>` que vous "
+"rencontrez. Les bugs concernant Ubuntu Touch 16.04 sont signaler dans `le "
+"traqueur normal Ubuntu Touch <https://github.com/ubports/ubuntu-"
+"touch/issues>`_ et les problèmes concernant anbox sont signalés dans `notre "
+"downstream fork <https://github.com/ubports/anbox/issues>`_. Merci !"
 
 #: ../../userguide/dailyuse/index.rst:2
 msgid "Daily use"
@@ -809,7 +837,7 @@ msgid ""
 "installed:"
 msgstr ""
 "La première étape est de créer un conteneur dans lequel les applications "
-"peuvent être installées:"
+"peuvent être installées :"
 
 #: ../../userguide/dailyuse/libertine.rst:16
 msgid "``libertine-container-manager create -i CONTAINER-IDENTIFIER``"
@@ -826,19 +854,26 @@ msgstr ""
 "conteneur"
 
 #: ../../userguide/dailyuse/libertine.rst:21
+#, fuzzy
 msgid ""
 "``-t type`` type can be either ``chroot`` or ``lxc``. Default is "
 "``chroot`` and is compatible with every device. If the kernel of your "
 "device supports it then ``lxc`` is suggested."
 msgstr ""
+"``-t type`` type peut être à la fois ``chroot`` ou ``lxc``. Celui par "
+"défault est ``chroot`` et est compatible avec tous les périphériques. Si le "
+"noyau de votre périphérique le supporte, alors ``lxc`` est suggéré."
 
 #: ../../userguide/dailyuse/libertine.rst:23
 msgid ""
 "The creating process can take some time, due to the size of the container"
 " (some hundred of megabytes)."
 msgstr ""
+"Le processus de création peut prendre un peu de temps à cause de la taille "
+"du container (quelques centaines de megabytes)."
 
 #: ../../userguide/dailyuse/libertine.rst:26
+#, fuzzy
 msgid ""
 "The ``create`` command shown above cannot be run directly in the terminal"
 " app, due apparmor restrictions. You can run it from another device using"
@@ -846,42 +881,50 @@ msgid ""
 " the terminal app using a loopback ssh connection running this command: "
 "``ssh localhost``."
 msgstr ""
+"La commande  ``create``  montrer ci-dessus ne peut pas être lancer "
+"directement dans l'application terminal du fait de restrictions apparmor. "
+"Vous pouvez le lancer depuis un autre périphérique en utilisant soit une "
+"connexion  ``adb`` soit une connexion ``ssh``.  Alternativement, vous pouvez "
+"le lancer depuis l'application terminal en utilisant une connexion ssh \""
+"loopback\"  en lançant la commande : ``ssh localhost``."
 
 #: ../../userguide/dailyuse/libertine.rst:29
 msgid "List containers"
-msgstr ""
+msgstr "Liste des conteneurs"
 
 #: ../../userguide/dailyuse/libertine.rst:32
 msgid "To list all containers created run:"
-msgstr ""
+msgstr "Pour établir la liste de tous les conteneurs,  lancer :"
 
 #: ../../userguide/dailyuse/libertine.rst:32
 msgid "``libertine-container-manager list``"
-msgstr ""
+msgstr "``libertine-container-manager list``"
 
 #: ../../userguide/dailyuse/libertine.rst:35
 msgid "Destroy a container"
-msgstr ""
+msgstr "Détruiser un conteneur"
 
 #: ../../userguide/dailyuse/libertine.rst:37
 msgid "``libertine-container-manager destroy -i CONTAINER-IDENTIFIER``"
-msgstr ""
+msgstr "``libertine-container-manager destroy -i CONTAINER-IDENTIFIER``"
 
 #: ../../userguide/dailyuse/libertine.rst:40
 msgid "Manage applications"
-msgstr ""
+msgstr "Gérer les applications"
 
 #: ../../userguide/dailyuse/libertine.rst:42
 msgid "Once a container is set up, you can list the installed applications:"
 msgstr ""
+"Une fois qu'un conteneur est mis en place, vous pouvez lister les "
+"applications installées :"
 
 #: ../../userguide/dailyuse/libertine.rst:44
 msgid "``libertine-container-manager list-apps``"
-msgstr ""
+msgstr "``libertine-container-manager list-apps``"
 
 #: ../../userguide/dailyuse/libertine.rst:46
 msgid "Install a package:"
-msgstr ""
+msgstr "Installer un paquet :"
 
 #: ../../userguide/dailyuse/libertine.rst:48
 #, fuzzy
@@ -890,11 +933,11 @@ msgstr "``libertine-container-manager create -i CONTAINER-IDENTIFIER``"
 
 #: ../../userguide/dailyuse/libertine.rst:50
 msgid "Remove a package:"
-msgstr ""
+msgstr "Enlever un paquet :"
 
 #: ../../userguide/dailyuse/libertine.rst:52
 msgid "``libertine-container-manager remove-package -p PACKAGE-NAME``"
-msgstr ""
+msgstr "``libertine-container-manager remove-package -p PACKAGE-NAME``"
 
 #: ../../userguide/dailyuse/libertine.rst:55
 msgid ""
@@ -902,78 +945,88 @@ msgid ""
 "CONTAINER-IDENTIFIER`` to specify for which container you want to perform"
 " an operation."
 msgstr ""
+"Si vous avez plus d'un conteneur ; alors vous pouvez utiliser l'option ``-i "
+"CONTAINER-IDENTIFIER`` pour spécifier pour quel conteneur vous voulez "
+"effectuer cette opération."
 
 #: ../../userguide/dailyuse/libertine.rst:59
 msgid "Files"
-msgstr ""
+msgstr "Fichiers"
 
 #: ../../userguide/dailyuse/libertine.rst:61
 msgid "Libertine applications do have access to these folders:"
-msgstr ""
+msgstr "Les applications Libertine ont accès à ces dossiers :"
 
 #: ../../userguide/dailyuse/libertine.rst:63
 msgid "Documents"
-msgstr ""
+msgstr "Documents"
 
 #: ../../userguide/dailyuse/libertine.rst:64
 msgid "Music"
-msgstr ""
+msgstr "Musique"
 
 #: ../../userguide/dailyuse/libertine.rst:65
 msgid "Pictures"
-msgstr ""
+msgstr "Images"
 
 #: ../../userguide/dailyuse/libertine.rst:66
 msgid "Downloads"
-msgstr ""
+msgstr "Téléchargements"
 
 #: ../../userguide/dailyuse/libertine.rst:67
 msgid "Videos"
-msgstr ""
+msgstr "Vidéos"
 
 #: ../../userguide/dailyuse/libertine.rst:70
 msgid "Tipps"
-msgstr ""
+msgstr "Conseils"
 
 #: ../../userguide/dailyuse/libertine.rst:73
 msgid "Locations"
-msgstr ""
+msgstr "Emplacements"
 
 #: ../../userguide/dailyuse/libertine.rst:75
 msgid "For every container you create there will be two directories created:"
-msgstr ""
+msgstr "Pour chaque conteneur que vous créez, il y aura deux dossiers créés :"
 
 #: ../../userguide/dailyuse/libertine.rst:77
 msgid ""
 "A root directory ``~/.cache/libertine-container/CONTAINER-"
 "IDENTIFIER/rootfs/`` and"
 msgstr ""
+"Un dossier racine ``~/.cache/libertine-container/CONTAINER-"
+"IDENTIFIER/rootfs/``  et"
 
 #: ../../userguide/dailyuse/libertine.rst:78
 msgid ""
 "a user directory ``~/.local/share/libertine-container/user-data"
 "/CONTAINER-IDENTIFIER/``"
 msgstr ""
+"un dossier utilisateur  ``~/.local/share/libertine-container/user-data"
+"/CONTAINER-IDENTIFIER/``"
 
 #: ../../userguide/dailyuse/libertine.rst:81
 msgid "Shell access"
-msgstr ""
+msgstr "Accès Shell"
 
 #: ../../userguide/dailyuse/libertine.rst:83
 msgid "To execute any arbitrary command as root inside the container run:"
 msgstr ""
+"Pour éxécuter n'importe quelle commande en tant que root à l'intérieur d'un "
+"conteneur, lancer :"
 
 #: ../../userguide/dailyuse/libertine.rst:85
 msgid "``libertine-container-manager exec -c COMMAND``"
-msgstr ""
+msgstr "``libertine-container-manager exec -c COMMAND``"
 
 #: ../../userguide/dailyuse/libertine.rst:87
 msgid "For example, to get a shell into your container you can run:"
 msgstr ""
+"PAr exemple, pour avoir un shell dans votre conteneur, vous pouvez lancer :"
 
 #: ../../userguide/dailyuse/libertine.rst:89
 msgid "``libertine-container-manager exec -c /bin/bash``"
-msgstr ""
+msgstr "``libertine-container-manager exec -c /bin/bash``"
 
 #: ../../userguide/dailyuse/libertine.rst:92
 msgid ""
@@ -983,18 +1036,22 @@ msgid ""
 "listing of ``ls /`` will be different inside and outside of the "
 "container."
 msgstr ""
+"Quand vous lancez bash de cette manière, vous n'aurez aucun retour "
+"confirmant que vous êtes à l'intérieur de ce conteneur. Vous pouvez "
+"cependant lancer ``ls /`` pour réaliser que vous êtes bien à l'intéreur de "
+"ce conteneur."
 
 #: ../../userguide/dailyuse/libertine.rst:94
 msgid "To get a shell as user ``phablet`` run:"
-msgstr ""
+msgstr "Pour obtenir un shell en tant qu'utilisateur ``phablet``, lancer :"
 
 #: ../../userguide/dailyuse/libertine.rst:96
 msgid "``DISPLAY= libertine-launch -i CONTAINER-IDENTIFIER /bin/bash``"
-msgstr ""
+msgstr "``DISPLAY= libertine-launch -i CONTAINER-IDENTIFIER /bin/bash``"
 
 #: ../../userguide/dailyuse/libertine.rst:99
 msgid "Background"
-msgstr ""
+msgstr "Fond d'écran"
 
 #: ../../userguide/dailyuse/libertine.rst:101
 msgid ""
@@ -1005,20 +1062,34 @@ msgid ""
 "compatibility layer called XMir resolves this. Libertine relies on XMir "
 "to display desktop applications."
 msgstr ""
+"Un serveur d'affichage coordonne les entrées et les sorties d'un système "
+"d'exploitation. La plupart des distributions Linux utilise de nos jours un "
+"serveur X. Ubuntu touch n'utilise pas de serveur X mais utilise un nouveau "
+"serveur d'affichage appelé Mir. Cela signifie que les applications standard "
+"Xne sont pas directement compatibles avec Ubuntu Touch. Une couche de "
+"compatibilité appelé XMir est nécessaire. Libertine utilise donc XMir pour "
+"afficher les applications de bureau."
 
 #: ../../userguide/dailyuse/libertine.rst:103
+#, fuzzy
 msgid ""
 "Another challenge is that Ubuntu Touch system updates are released as OTA"
 " images. A consequence of this is that the root filesystem is read only. "
 "Libertine provides a container with a read-write filesystem to allow the "
 "installation of regular Linux desktop applications."
 msgstr ""
+"Un autre défi est que les mises à jours d'Ubuntu Touch sont délivrées par "
+"des images OTA. En conséquence, le système de fichier racine est en lecture "
+"seul. Libertine met à disposition un conteneur avec un système de fichier en "
+"mode lecture et écriture pour permettre l'installation des applications "
+"Linux traditionnelles de bureau."
 
 #: ../../userguide/install.rst:2
 msgid "Install Ubuntu Touch"
-msgstr ""
+msgstr "Installer Ubuntu Touch"
 
 #: ../../userguide/install.rst:4
+#, fuzzy
 msgid ""
 "Installing Ubuntu Touch is easy, and a lot of work has gone in to making "
 "the installation process less intimidating to less technical users. The "
@@ -1026,13 +1097,23 @@ msgid ""
 "Ubuntu Touch on a `supported device <devices.ubports.com>`_ from your "
 "Linux, Mac or Windows computer."
 msgstr ""
+"Installer Ubuntu Touch est facile, et une grosse partie du travail est allé "
+"dans la conception d'un processus d'installation peu intimidant pour les "
+"utilisateurs moins techniques. L'installateur Ubports est un bel outil "
+"graphique qui permet d'installer Ubuntu Touch sur un `périphérique "
+"compatible  <devices.ubports.com>`_  de votre ordinateur Linux, Mac ou "
+"Windows."
 
 #: ../../userguide/install.rst:7
+#, fuzzy
 msgid ""
 "If your're switching your device over from Android, you will not be able "
 "to keep any data that is currently on the device. Create an external "
 "backup if you want to keep it."
 msgstr ""
+"Si vous convertissez votre périphérique de Android,  vous perdrez toutes les "
+"données qui sont actuellement sur votre périphérique. Créer une sauvegarde "
+"hors de votre périphérique, si vous voulez conserver ces données."
 
 #: ../../userguide/install.rst:9
 msgid ""
@@ -1040,20 +1121,25 @@ msgid ""
 "installer/releases/latest>`_ and download the version of the installer "
 "for your operating system:"
 msgstr ""
+"Aller sur `the download page <https://github.com/ubports/ubports-"
+"installer/releases/latest>`_ et télécharger la version de l'installateur "
+"pour votre système d'exploitation :"
 
 #: ../../userguide/install.rst:11
 msgid "Windows: ubports-installer-<version-number>.exe"
-msgstr ""
+msgstr "Windows : ubports-installer-<version-number>.exe"
 
 #: ../../userguide/install.rst:12
 msgid "macOS: ubports-installer-<version-number>.dmg"
-msgstr ""
+msgstr "macOS : ubports-installer-<version-number>.dmg"
 
 #: ../../userguide/install.rst:13
 msgid ""
 "Linux: ubports-installer-<version-number>.deb, ubports-installer"
 "-<version-number>.snap or ubports-installer-<version-number>.AppImage"
 msgstr ""
+"Linux : ubports-installer-<version-number>.deb, ubports-installer-<version-"
+"number>.snap or ubports-installer-<version-number>.AppImage"
 
 #: ../../userguide/install.rst:15
 msgid ""
@@ -1061,17 +1147,25 @@ msgid ""
 "you through the installation process. That's it! Have fun exploring "
 "Ubuntu Touch!"
 msgstr ""
+"Démarer l'installateur et suiver les instructions sur l'écran qui vous "
+"guideront à travers le processus d'installation. C'est tout ! Prenez plaisir "
+"en explorant Ubuntu Touch !"
 
 #: ../../userguide/install.rst:17
+#, fuzzy
 msgid ""
 "If you're an experienced android developer and want to help us bring "
 "Ubuntu Touch to more devices, visit the :doc:`porting section "
 "</porting/introduction>`."
 msgstr ""
+"Si vous êtes un développeur android expérimenté et que vous souhaitez nous "
+"aidez à offrir Ubuntu Touch à plus de périphériques, visitez la :doc:` "
+"section portage </porting/introduction>`."
 
 #: ../../userguide/install.rst:20
+#, fuzzy
 msgid "Install on legacy Android devices"
-msgstr ""
+msgstr "Installer sur les périphériques Android hérités"
 
 #: ../../userguide/install.rst:22
 msgid ""
