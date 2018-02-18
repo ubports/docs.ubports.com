@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-08 19:46-0600\n"
-"PO-Revision-Date: 2018-01-04 21:31+0000\n"
-"Last-Translator: Stefano Melchior <stefano.melchior@me.com>\n"
+"PO-Revision-Date: 2018-02-18 13:43+0000\n"
+"Last-Translator: Stefano Verzegnassi <verzegnassi.stefano@gmail.com>\n"
+"Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-porting/it/>\n"
 "Language: it\n"
-"Language-Team: Italian <https://translate.ubports.com/projects/ubports-"
-"docs/documentation-porting/it/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../porting/building-ubports-boot.rst:2
@@ -377,7 +378,7 @@ msgstr ""
 
 #: ../../porting/installing-16-04.rst:21
 msgid "Download the rootfs"
-msgstr ""
+msgstr "Scarica rootfs"
 
 #: ../../porting/installing-16-04.rst:23
 msgid ""
@@ -389,6 +390,13 @@ msgid ""
 "you have an x86 device, let us know. We do not have a rootfs available "
 "for these yet."
 msgstr ""
+"Ora, abbiamo bisogno di scaricare il rootfs (contrazione di \"root "
+"filesystem\") adatto al tuo dispositivo. Al momento, è disponibile soltanto "
+"uno. Scarica ``ubports-touch.rootfs-xenial-armhf.tar.gz`` dal `nostro server "
+"CI <https://ci.ubports.com/job/xenial-rootfs-armhf/>`__. Se possiedi un "
+"dispositivo ARM a 64-bit (aarch64), è possibile utilizzare il medesimo "
+"rootfs. Se possiedi un dispositivo x86, ti preghiamo di contattarci. Al "
+"momento non abbiamo alcun rootfs disponibile per tale architettura."
 
 #: ../../porting/installing-16-04.rst:27
 msgid "Install system.img and rootfs"
@@ -589,7 +597,7 @@ msgstr ""
 
 #: ../../porting/running-ut.rst:5
 msgid "Display settings"
-msgstr ""
+msgstr "Impostazioni schermo"
 
 #: ../../porting/running-ut.rst:7
 msgid ""
@@ -947,4 +955,3 @@ msgstr ""
 #~ "have fewer bugs than your recovery's "
 #~ "busybox."
 #~ msgstr ""
-
