@@ -8,7 +8,7 @@ Introduction
 
 Ubuntu Touch has three types of applications: Web Applications (WebApps), Scopes and Native Applications.
 Applications are packaged, distributed and deployed using a format called `click <https://click.readthedocs.io/en/latest/>`_ packaging.
-App UIs can be created using QML or HTML5, and scripting can be done using JS, Qt, C++, Python, or Go.
+App UIs can be created using QML or HTML5 and behavior can be created using JS, Qt, C++, Python, or Go.
 
 Click package overview
 ^^^^^^^^^^^^^^^^^^^^^^
