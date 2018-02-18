@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-08 19:46-0600\n"
-"PO-Revision-Date: 2018-01-15 21:41+0000\n"
-"Last-Translator: Joerg Ulbricht <info@wildnislehrer.de>\n"
+"PO-Revision-Date: 2018-02-18 19:48+0000\n"
+"Last-Translator: Jonatan Hatakeyama Zeidler <jonatan_zeidler@gmx.de>\n"
+"Language-Team: German <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-userguide/de/>\n"
 "Language: de\n"
-"Language-Team: German <https://translate.ubports.com/projects/ubports-"
-"docs/documentation-userguide/de/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../userguide/advanceduse/adb.rst:2
@@ -140,7 +141,7 @@ msgstr "Oneplus One::"
 
 #: ../../userguide/advanceduse/dav.rst:2
 msgid "CalDAV and CardDAV synchronization"
-msgstr ""
+msgstr "CalDAV- und CardDAV-Synchronisation"
 
 #: ../../userguide/advanceduse/dav.rst:4
 msgid ""
@@ -148,6 +149,9 @@ msgid ""
 "with a remote server. Many email-hosters provide a CalDAV and CardDAV "
 "interface."
 msgstr ""
+"CalDAV und CardDAV sind Protokolle zur Synchronisierung von Kalendern und "
+"Kontakten mit einem Server. Viele E-Mail-Anbieter stellen eine CalDAV- und "
+"CardDAV-Schnittstelle zur Verfügung."
 
 #: ../../userguide/advanceduse/dav.rst:6
 msgid ""
@@ -156,6 +160,11 @@ msgid ""
 "select \"Add internet calendar > Generic CalDAV\". Enter your calendar "
 "URL as well as your username and password to complete the process."
 msgstr ""
+"**Hinweis:** CalDAV-Synchronisierung kann auch in der Kalender-App "
+"eingestellt werden. Man öffnet die App, klickt auf das kleine Kalendersymbol "
+"in der rechten oberen Ecke und wählt \"Internetkalender hinzufügen > Generic "
+"CalDAV\". Um den Vorgang abzuschließen, gibt man die Kalender-"
+"Internetadresse ein, ebenso wie den Nutzernamen und das Passwort."
 
 #: ../../userguide/advanceduse/dav.rst:8
 msgid ""
@@ -165,6 +174,12 @@ msgid ""
 "to do that with a script that you can run in the terminal or via phablet "
 "SSH connection. These instructions work for caldav as well."
 msgstr ""
+"Im Moment gibt es keine carddav-Implementierung, welche über die grafische "
+"Oberfläche von Ubuntu Touch erreichbar wäre. Die einzige Möglichkeit, per "
+"carddav zu synchronisieren, ist durch die Nutzung von syncevolution + cron. "
+"Hierfür gibt es einen einfachen Weg über ein Skript, das im Terminal oder "
+"über eine phablet-SSH-Verbindung ausgeführt werden kann. Diese Anleitung "
+"funktioniert auch für caldav."
 
 #: ../../userguide/advanceduse/dav.rst:10
 msgid ""
@@ -172,6 +187,10 @@ msgid ""
 "<https://docs.ubports.com/en/latest/userguide/advanceduse/adb.html>`_ to "
 "activate Developer Mode and ADB (or SSH) connection."
 msgstr ""
+"Diese `Anleitung "
+"<https://docs.ubports.com/en/latest/userguide/advanceduse/adb.html>`_ "
+"erklärt die Aktivierung des Entwicklermodus und von ADB-Verbindungen (oder "
+"SSH)."
 
 #: ../../userguide/advanceduse/dav.rst:13
 msgid ""
@@ -179,22 +198,28 @@ msgid ""
 "<https://gist.github.com/bastos77/0c47a94dd0bf3e394f879c0ff42b7839>`_ "
 "(let's call it dav.sh) and edit the following variables:"
 msgstr ""
+"Man lädt dieses `Skript "
+"<https://gist.github.com/bastos77/0c47a94dd0bf3e394f879c0ff42b7839>`_ ("
+"nennen wir es dav.sh) herunter und bearbeitet die folgenden Variablen:"
 
 #: ../../userguide/advanceduse/dav.rst:15
 msgid ""
 "server side : CAL_URL, **CONTACTS_URL**, USERNAME, PASSWORD (of your "
 "ownCloud/nextCloud/baikal/SOGO/... server)"
 msgstr ""
+"Server : CAL_URL, **CONTACTS_URL**, USERNAME, PASSWORD (im "
+"ownCloud/nextCloud/baikal/SOGO/... Server)"
 
 #: ../../userguide/advanceduse/dav.rst:16
 msgid ""
 "CONTACT and CALENDAR _ NAME / VISUAL_NAME / CONFIG_NAME (it's more "
 "cosmetic)"
 msgstr ""
+"CONTACT und CALENDAR _ NAME / VISUAL_NAME / CONFIG_NAME (eher kosmetisch)"
 
 #: ../../userguide/advanceduse/dav.rst:17
 msgid "CRON_FREQUENCY (for the frequency of synchronisation)"
-msgstr ""
+msgstr "CRON_FREQUENCY (für die Synchronisationsfrequenz)"
 
 #: ../../userguide/advanceduse/dav.rst:18
 msgid ""
@@ -202,49 +227,57 @@ msgid ""
 " instead of ``sudo echo \"$COMMAND_LINE\" > /sbin/sogosync``, to avoid "
 "permission denied error"
 msgstr ""
+"Zeile 61: Man ersetzt ``sudo echo \"$COMMAND_LINE\" > /sbin/sogosync`` durch "
+"``sudo sh -c \"echo '$COMMAND_LINE' > /sbin/sogosync\"``, um einen "
+"Zugriffsfehler zu vermeiden"
 
 #: ../../userguide/advanceduse/dav.rst:20
 msgid ""
 "Move the file to your UbuntuTouch device, either by file manager or with "
 "adb::"
 msgstr ""
+"Man überträgt die Datei auf das Ubuntu Touch Gerät, entweder über den "
+"Dateimanager oder mit adb::"
 
 #: ../../userguide/advanceduse/dav.rst:24
 msgid ""
 "Connect with the phablet shell (``adb shell``) or directly on the phone "
 "Terminal app and type the following::"
 msgstr ""
+"Man stellt die Verbindung mit der phablet shell her (``adb shell``) oder "
+"öffnet direkt das Terminal auf dem Telefon und gibt folgendes ein::"
 
 #: ../../userguide/advanceduse/dav.rst:31
 msgid "Sources:"
-msgstr ""
+msgstr "Quellen:"
 
 #: ../../userguide/advanceduse/dav.rst:33
 msgid ""
 "https://askubuntu.com/questions/616081/ubuntu-touch-add-contact-list-and-"
 "calendars/664834#664834"
 msgstr ""
+"https://askubuntu.com/questions/616081/ubuntu-touch-add-contact-list-and-"
+"calendars/664834#664834"
 
 #: ../../userguide/advanceduse/dav.rst:34
 msgid "https://gist.github.com/boTux/069b53d8e06bdb9b9c97"
-msgstr ""
+msgstr "https://gist.github.com/boTux/069b53d8e06bdb9b9c97"
 
 #: ../../userguide/advanceduse/dav.rst:35
 msgid "https://gist.github.com/tcarrondo"
-msgstr ""
+msgstr "https://gist.github.com/tcarrondo"
 
 #: ../../userguide/advanceduse/dav.rst:36
 msgid "https://gist.github.com/bastos77"
-msgstr ""
+msgstr "https://gist.github.com/bastos77"
 
 #: ../../userguide/advanceduse/dav.rst:37
 msgid "https://askubuntu.com/questions/601910/ssh-ubuntu-touch"
-msgstr ""
+msgstr "https://askubuntu.com/questions/601910/ssh-ubuntu-touch"
 
 #: ../../userguide/advanceduse/index.rst:2
-#, fuzzy
 msgid "Advanced use"
-msgstr "Nutzung für Fortgeschrittene"
+msgstr "Fortgeschrittene Nutzung"
 
 #: ../../userguide/advanceduse/index.rst:4
 msgid ""
@@ -256,22 +289,21 @@ msgstr ""
 "durchführen können."
 
 #: ../../userguide/advanceduse/index.rst:7
-#, fuzzy
 msgid ""
 "Some of these guides involve making your system image writable, which may"
 " break OTA updates. The guides may also reduce the overall security of "
 "your Ubuntu Touch device. Please consider these ramifications before "
 "hacking on your device too much!"
 msgstr ""
-"In einigen dieser Anweisungen wird das System-Image beschreibbar gemacht,"
-" wodurch OTA-Updates nicht mehr funktionieren können. Diese beschriebenen"
-" Funktionen können auch die allgemeine Sicherheit Ihres Ubuntu Touch-"
-"Geräts verringern. Bitte diese möglichen Auswirkungen vor dem Ausführen "
-"der entsprechenden Befehle berücksichtigen!"
+"In einigen dieser Anleitungen wird das System-Image beschreibbar gemacht, "
+"was OTA-Aktualisierungen stören kann. Die Anleitungen können mitunter auch "
+"die allgemeine Sicherheit Ihres Ubuntu Touch-Geräts verringern. Diese "
+"möglichen Auswirkungen sollten vor dem Ausführen der entsprechenden Befehle "
+"berücksichtigt werden!"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:2
 msgid "Reverse tethering"
-msgstr ""
+msgstr "Umgekehrtes Tethering"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:4
 msgid ""
@@ -290,6 +322,8 @@ msgid ""
 "Prerequisite: Phone is connected to the computer with usb and developer "
 "mode enabled."
 msgstr ""
+"Voraussetzung: Das Telefon ist über ein USB-Kabel mit dem Rechner verbunden "
+"und der Entwicklermodus ist aktiviert."
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:10
 msgid "Steps"
@@ -297,59 +331,69 @@ msgstr "Schritte"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:12
 msgid "On phone: ``android-gadget-service enable rndis``"
-msgstr ""
+msgstr "Auf dem Telefon: ``android-gadget-service enable rndis``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:14
 msgid "On computer: get your rndis ip address e.g:``hostname -I``"
 msgstr ""
+"Auf dem Rechner: die rndis-IP-Adresse ermitteln, z.B. per:``hostname -I``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:16
 msgid "On phone:"
-msgstr ""
+msgstr "Auf dem Telefon:"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:18
 msgid "add gateway: ``sudo route add default gw YOUR_COMPUTER_RNDIS_IP``"
 msgstr ""
+"Vorgabestrecke hinzufügen: ``sudo route add default gw RECHNER_RNDIS_IP``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:20
 msgid ""
 "add nameservers: ``echo \"nameserver 8.8.8.8\" | sudo tee "
 "/etc/resolv.conf``"
 msgstr ""
+"Namensserver hinzufügen: ``echo \"nameserver 8.8.8.8\" | sudo tee "
+"/etc/resolv.conf``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:22
 msgid "refresh dns table: ``resolvconf -u``"
-msgstr ""
+msgstr "DNS-Tabelle erneuern: ``resolvconf -u``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:24
 msgid "On computer:"
-msgstr ""
+msgstr "Auf dem Rechner:"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:26
 msgid "enable ip forwarding: ``echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward``"
 msgstr ""
+"IP-Weiterleitung aktivieren: ``echo 1 | sudo tee "
+"/proc/sys/net/ipv4/ip_forward``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:28
 msgid ""
 "apply NAT: ``sudo iptables -t nat -A POSTROUTING -s 10.0.0.0/8 -o eth0 -j"
 " MASQUERADE``"
 msgstr ""
+"NAT anwenden: ``sudo iptables -t nat -A POSTROUTING -s 10.0.0.0/8 -o eth0 -j "
+"MASQUERADE``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:32
 #: ../../userguide/advanceduse/screencasting.rst:72
 #: ../../userguide/advanceduse/ssh.rst:53
 msgid "References"
-msgstr ""
+msgstr "Referenzen"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:34
 msgid ""
 "askubuntu: https://askubuntu.com/questions/655321/ubuntu-touch-reverse-"
 "tethering-and-click-apps-updates"
 msgstr ""
+"askubuntu: https://askubuntu.com/questions/655321/ubuntu-touch-reverse-"
+"tethering-and-click-apps-updates"
 
 #: ../../userguide/advanceduse/screencasting.rst:2
 msgid "Screen Casting your UT device to your computer"
-msgstr ""
+msgstr "Bildschirmübertragung  an den Rechner"
 
 #: ../../userguide/advanceduse/screencasting.rst:5
 msgid ""
@@ -358,16 +402,23 @@ msgid ""
 "display to a listening computer over the network or directy trough adb so"
 " that we can either watch it live or record it to a file."
 msgstr ""
+"Ubuntu Touch hat ein Kommandozeilenwerkzeug vorinstalliert namens "
+"``mirscreencast``, welches Einzelbilder vom Bildschirm in eine Datei "
+"schreibt. Die Idee hierbei ist, den UT-Bildschirm an einen empfangenden "
+"Rechner über das Netzwerk oder direkt über adb zu senden, so dass man live "
+"den Bildschirm verfolgen oder aufzeichnen kann."
 
 #: ../../userguide/advanceduse/screencasting.rst:9
 msgid "Using adb"
-msgstr ""
+msgstr "Über adb"
 
 #: ../../userguide/advanceduse/screencasting.rst:11
 msgid ""
 "You can catch output directly from ``adb exec-out`` command and forward "
 "it to mplayer::"
 msgstr ""
+"Die Ausgabe kann direkt von ``adb exec-out`` an mplayer weitergeleitet "
+"werden::"
 
 #: ../../userguide/advanceduse/screencasting.rst:15
 msgid ""
@@ -377,48 +428,62 @@ msgid ""
 "interval`` (1 = 60fps, 2=30fps, ...)  and size of frames ``384 640`` "
 "means width=384 height=640"
 msgstr ""
+"Hinweis: ``timeout`` wird hier genutzt, um den Prozess auf dem Gerät wieder "
+"zu beenden (hier 120 Sekunden). Sonst würde der Prozess auf dem Telefon "
+"weiterlaufen, selbst nachdem er auf dem Rechner beendet wird. Die Bilder pro "
+"Sekunde können mit ``--cap-interval`` angepasst werden (1 = 60fps, 2=30fps, "
+"...)  und die Bildgröße mit ``384 640``, was Breite = 384 und Höhe = 640 "
+"bedeutet"
 
 #: ../../userguide/advanceduse/screencasting.rst:19
 msgid "Via network"
-msgstr ""
+msgstr "Über das Netzwerk"
 
 #: ../../userguide/advanceduse/screencasting.rst:22
 msgid "On receiver"
-msgstr ""
+msgstr "Am Empfänger"
 
 #: ../../userguide/advanceduse/screencasting.rst:24
 msgid "For real time casting:"
-msgstr ""
+msgstr "Für Live-Übertragung:"
 
 #: ../../userguide/advanceduse/screencasting.rst:27
 msgid ""
 "Prepare your computer to listen to a tcp port(here 1234) and forward raw "
 "stream to a video player (here mplayer) with a frame size of 384x640::"
 msgstr ""
+"Man lässt den Rechner an einem TCP-Port lauschen (1234) und leitet den rohen "
+"Datenstrom an einen Videospieler (hier mplayer) mit einer Bildgröße hier von "
+"384x640::"
 
 #: ../../userguide/advanceduse/screencasting.rst:31
 msgid "For stream recording:"
-msgstr ""
+msgstr "Zum Aufnehmen:"
 
 #: ../../userguide/advanceduse/screencasting.rst:33
 msgid ""
 "Prepare your computer to listen to a tcp port(here 1234), ungzip and "
 "forward raw stream to a video encoder (here mencoder)::"
 msgstr ""
+"Man lässt den Rechner an einem TCP-Port lauschen (1234), entpackt die Pakete "
+"und leitet den rohen Datenstrom an einen Videokodierer (hier mencoder)::"
 
 #: ../../userguide/advanceduse/screencasting.rst:38
 msgid "On device"
-msgstr ""
+msgstr "Auf dem Gerät"
 
 #: ../../userguide/advanceduse/screencasting.rst:40
 msgid ""
 "Forward and gzip stream with 60fps (--cap-interval 1) and frame size of "
 "384x640 to computer 10.42.0.209 on port 1234 ::"
 msgstr ""
+"Man packt und leitet den Datenstrom mit einer Bildrate von hier 60fps (..cap-"
+"interval 1) und Bildgröße von 384x640 zum Rechner 10.42.0.209 auf Port 1234 "
+"::"
 
 #: ../../userguide/advanceduse/screencasting.rst:46
 msgid "Example script"
-msgstr ""
+msgstr "Beispielskript"
 
 #: ../../userguide/advanceduse/screencasting.rst:48
 msgid ""
@@ -426,38 +491,45 @@ msgid ""
 "(must have ssh access to UT and mplayer installed on PC), run it on your "
 "computer::"
 msgstr ""
+"Dieses Skript ermöglicht die Bildschirmübertragung zum lokalen Rechner ("
+"Voraussetzung ist SSH-Zugriff auf UT und der installierte mplayer auf dem "
+"Rechner). Auf dem Rechner führt man aus::"
 
 #: ../../userguide/advanceduse/screencasting.rst:69
 msgid "You can download it here: :download:`files/mircast.sh`"
-msgstr ""
+msgstr "Hier: :download:`files/mircast.sh` ist das Skript zum Herunterladen"
 
 #: ../../userguide/advanceduse/screencasting.rst:74
 msgid "initial source: https://wiki.ubuntu.com/Touch/ScreenRecording"
-msgstr ""
+msgstr "Ursprüngliche Quelle: https://wiki.ubuntu.com/Touch/ScreenRecording"
 
 #: ../../userguide/advanceduse/screencasting.rst:75
 msgid "demo: https://www.youtube.com/watch?v=HYm4RUwwo5Q"
-msgstr ""
+msgstr "Demo: https://www.youtube.com/watch?v=HYm4RUwwo5Q"
 
 #: ../../userguide/advanceduse/ssh.rst:2
 msgid "Shell access via ssh"
-msgstr ""
+msgstr "Shell-Zugriff über SSH"
 
 #: ../../userguide/advanceduse/ssh.rst:4
 msgid ""
 "You can use ssh to access a shell from your PC. This is useful for "
 "debugging or more advanced shell usage."
 msgstr ""
+"SSH kann für einen Shell-Zugriff vom Rechner aus genutzt werden. Dies ist "
+"nützlich zur Fehlerdiagnose oder fortgeschrittene Shell-Nutzung."
 
 #: ../../userguide/advanceduse/ssh.rst:6
 msgid ""
 "You need a ssh key pair for this. Logging in via password is disabled by "
 "default."
 msgstr ""
+"Ein SSH-Schlüsselpaar wird benötigt. Das Einloggen per Passwort ist "
+"standardmäßig deaktiviert."
 
 #: ../../userguide/advanceduse/ssh.rst:9
 msgid "Create your public key"
-msgstr ""
+msgstr "Öffentlichen Schlüssel erzeugen"
 
 #: ../../userguide/advanceduse/ssh.rst:11
 msgid ""
@@ -465,38 +537,49 @@ msgid ""
 " fine for LAN, you can leave empty password if you don't want to deal "
 "with it each time::"
 msgstr ""
+"Falls noch nicht geschehen, erzeugt man den öffentlichen Schlüssel. Die "
+"Standardeinstellungen sollte für ein LAN ausreichen. Das Passwort kann leer "
+"gelassen werden, wenn man es nicht jedes Mal eintippen will::"
 
 #: ../../userguide/advanceduse/ssh.rst:16
 msgid "Copy the public key to your device"
-msgstr ""
+msgstr "Öffentlichen Schlüssel auf das Gerät kopieren"
 
 #: ../../userguide/advanceduse/ssh.rst:18
 msgid ""
 "You need then to transfer your public key to your device. There are "
 "multiple ways to do this. For example:"
 msgstr ""
+"Der öffentliche Schlüssel muss auf das Gerät transferiert werden. Hierfür "
+"gibt es verschiedene Möglichkeiten. Zum Beispiel:"
 
 #: ../../userguide/advanceduse/ssh.rst:20
 msgid ""
 "Connect the ubports device and the PC with a USB cable. Then copy the "
 "file using your filemanager."
 msgstr ""
+"Das Gerät per USB-Kabel mit dem Rechner verbinden. Dann kopiert man die "
+"Datei über die Dateiverwaltung."
 
 #: ../../userguide/advanceduse/ssh.rst:21
 msgid ""
 "Or transfer the key via the internet by mailing it to yourself, or "
 "uploading it to your own cloud storage, or webserver, etc."
 msgstr ""
+"Man kann auch den Schlüssel über das Internet an sich selbst senden, per "
+"Mail, Own Cloud, Webserver etc."
 
 #: ../../userguide/advanceduse/ssh.rst:22
 msgid ""
 "You can also connect via :doc:`adb <adb>` and use the following command "
 "to copy it::"
 msgstr ""
+"Man kann sich auch per :doc:`adb <adb>` verbinden folgendes Kommando zum "
+"Kopieren nutzen::"
 
 #: ../../userguide/advanceduse/ssh.rst:27
 msgid "Configure your device"
-msgstr ""
+msgstr "Das Gerät konfigurieren"
 
 #: ../../userguide/advanceduse/ssh.rst:29
 msgid ""
@@ -504,22 +587,26 @@ msgid ""
 "stored as ``/home/phablet/id_rsa.pub``. Use the terminal app or and adb "
 "connection to perform the following steps on your phone. ::"
 msgstr ""
+"Angenommen, der öffentliche Schlüssel wurde unter "
+"``/home/phablet/id_rsa.pub`` abgelegt, können folgende Schritte in der "
+"Terminal App oder per adb-Verbindung auf dem Gerät ausgeführt werden::"
 
 #: ../../userguide/advanceduse/ssh.rst:38
 msgid "Now start the ssh server::"
-msgstr ""
+msgstr "Nun startet man den SSH-Server::"
 
 #: ../../userguide/advanceduse/ssh.rst:44
 msgid "Connect"
-msgstr ""
+msgstr "Verbinden"
 
 #: ../../userguide/advanceduse/ssh.rst:46
 msgid "Now everything is set up and you can use ``ssh`` ::"
-msgstr ""
+msgstr "Jetzt ist alles eingestellt und und ``ssh`` kann genutzt werden::"
 
 #: ../../userguide/advanceduse/ssh.rst:50
 msgid "Of course you can now also use ``scp`` or ``sshfs`` to transfer files."
 msgstr ""
+"Natürlich kann man auch ``scp`` oder ``sshfs`` zur Dateiübertragung nutzen."
 
 #: ../../userguide/advanceduse/ssh.rst:55
 msgid ""
@@ -527,6 +614,9 @@ msgid ""
 "<https://askubuntu.com/questions/348714/how-can-i-access-my-ubuntu-phone-"
 "over-ssh/599041#599041>`_"
 msgstr ""
+"`askubuntu.com: How can I access my Ubuntu phone over ssh? "
+"<https://askubuntu.com/questions/348714/how-can-i-access-my-ubuntu-phone-"
+"over-ssh/599041#599041>`_"
 
 #: ../../userguide/advanceduse/ssh.rst:56
 msgid ""
@@ -534,14 +624,17 @@ msgid ""
 "ubuntu-phone via Wifi <https://gurucubano.gitbooks.io/bq-aquaris-e-4-5"
 "-ubuntu-phone/content/en/chapter1.html>`_"
 msgstr ""
+"`gurucubano: BQ Aquaris E 4.5 Ubuntu phone: How to get SSH access to the "
+"ubuntu-phone via Wifi <https://gurucubano.gitbooks.io/bq-aquaris-e-4-5"
+"-ubuntu-phone/content/en/chapter1.html>`_"
 
 #: ../../userguide/advanceduse/switchchannel.rst:2
 msgid "Switch release channels"
-msgstr ""
+msgstr "Kanal wechseln"
 
 #: ../../userguide/dailyuse/anbox.rst:2
 msgid "Run android applications"
-msgstr ""
+msgstr "Android-Apps nutzen"
 
 #: ../../userguide/dailyuse/anbox.rst:4
 msgid ""
@@ -549,34 +642,41 @@ msgid ""
 "compatibility layer that allows you to run android applications on "
 "GNU/Linux operating systems."
 msgstr ""
+"`Anbox <https://anbox.io>`_ ist ein minimaler Android-Container und eine "
+"Kompatibilitätsschicht, welche die Ausführung von Android-Apps unter GNU"
+"/Linux-Betriebssystemen erlaubt."
 
 #: ../../userguide/dailyuse/anbox.rst:7
 msgid "Anbox is in early development"
-msgstr ""
+msgstr "Anbox ist in einem frühen Entwicklungsstadium"
 
 #: ../../userguide/dailyuse/anbox.rst:8
 msgid "Anbox for Ubuntu Touch is in even more early development"
-msgstr ""
+msgstr "Anbox für Ubuntu Touch ist in einem noch früheren Entwicklungsstadium"
 
 #: ../../userguide/dailyuse/anbox.rst:9
 msgid ""
 "Anbox only works on the 16.04 version of Ubuntu Touch, which is also in "
 "early development"
 msgstr ""
+"Anbox funktioniert nur auf der 16.04-Version von Ubuntu Touch, welche sich "
+"ebenfalls in einem frühen Entwicklungsstadium befindet"
 
 #: ../../userguide/dailyuse/anbox.rst:10
 msgid ""
 "Only selected devices are supported for the moment, more will be added in"
 " the future."
 msgstr ""
+"Nur einzelne Geräte werden im Moment unterstützt. In Zukunft werden weitere "
+"dazukommen."
 
 #: ../../userguide/dailyuse/anbox.rst:13
 msgid "Supported devices"
-msgstr ""
+msgstr "Unterstützte Geräte"
 
 #: ../../userguide/dailyuse/anbox.rst:15
 msgid "Make sure your device is supported:"
-msgstr ""
+msgstr "Sicherstellen, dass das Gerät unterstützt wird:"
 
 #: ../../userguide/dailyuse/anbox.rst:17
 msgid ""
@@ -584,28 +684,35 @@ msgid ""
 " M10 HD (codename: *cooler*, name of the boot partition: *boot*) BQ M10 "
 "FHD (codename: *frieza*, name of the boot partition: *boot*)"
 msgstr ""
+"Meizu Pro 5 (Codename: *turbo*, Name der Boot-Partition: *bootimg*), BQ M10 "
+"HD (Codename: *cooler*, Name der Boot-Partition: *boot*), BQ M10 FHD "
+"(Codename: *frieza*, Name der Boot-Partition: *boot*)"
 
 #: ../../userguide/dailyuse/anbox.rst:21
 msgid ""
 "You will need the device codename and the name of your boot partition for"
 " the installation."
 msgstr ""
+"Der Codename und der Name der Boot-Partition werden für die Installation "
+"benötigt."
 
 #: ../../userguide/dailyuse/anbox.rst:24
 msgid "How to install"
-msgstr ""
+msgstr "Installationsanleitung"
 
 #: ../../userguide/dailyuse/anbox.rst:27
 msgid ""
 "Because this feature is in such an early stage of development, the "
 "installation is only recommended for experienced users."
 msgstr ""
+"Da diese Funktion sich in einem so frühen Entwicklungsstadium befindet, ist "
+"diese Installation nur für erfahrene Nutzer zu empfehlen."
 
 #: ../../userguide/dailyuse/anbox.rst:29
 msgid ""
 ":doc:`Install <../install>` the 16.04/devel channel on your supported "
 "device"
-msgstr ""
+msgstr "Den Kanal 16.04/devel auf dem Gerät :doc:`installieren <../install>`"
 
 #: ../../userguide/dailyuse/anbox.rst:30
 msgid ""
@@ -614,20 +721,24 @@ msgid ""
 "respectively with the codename and name of the boot partition for your "
 "device. See the above list."
 msgstr ""
+"Ein Terminal öffnen und ``export CODENAME=\"turbo\" && export PARTITIONNAME="
+"\"bootimg\"`` ausführen, aber die Teile zwischen den Anführungsstrichen "
+"durch den Codenamen bzw. den Namen der Boot-Partition ersetzen. Siehe die "
+"Liste oben."
 
 #: ../../userguide/dailyuse/anbox.rst:31
 msgid "Activate developer mode on your device."
-msgstr ""
+msgstr "Entwicklermodus auf dem Gerät aktivieren."
 
 #: ../../userguide/dailyuse/anbox.rst:32
 msgid ""
 "Connect the device to your computer computer and run the following "
 "commands::"
-msgstr ""
+msgstr "Das Gerät mit dem Rechner verbinden und folgende Befehle ausführen::"
 
 #: ../../userguide/dailyuse/anbox.rst:40
 msgid "wait for the device to reboot, then run::"
-msgstr ""
+msgstr "Den Neustart abwarten, dann ausführen::"
 
 #: ../../userguide/dailyuse/anbox.rst:49
 msgid ""
@@ -635,10 +746,13 @@ msgid ""
 " might have to refresh the apps scope (pull down from the center of the "
 "screen and release) for the app to show up."
 msgstr ""
+"Fertig! Über die App \"Anbox\" können Android-Apps genutzt werden. "
+"Möglicherweise muss der Apps-Scope aktualisiert werden (Runterziehen von der "
+"Mitte des Bildschirms und loslassen), damit die App angezeigt wird."
 
 #: ../../userguide/dailyuse/anbox.rst:52
 msgid "Reporting bugs"
-msgstr ""
+msgstr "Fehler melden"
 
 #: ../../userguide/dailyuse/anbox.rst:54
 msgid ""
@@ -648,24 +762,33 @@ msgid ""
 "issues with anbox are reported on `our downstream fork "
 "<https://github.com/ubports/anbox/issues>`_. Thank you!"
 msgstr ""
+"Bitte :doc:`alle Fehler melden </contribute/bugreporting>`__, auf die man "
+"stößt. Fehler mit Ubuntu Touch 16.04 werden in der `normalen Ubuntu Touch-"
+"Fehlerverfolgung <https://github.com/ubports/ubuntu-touch/issues>`_ gemeldet "
+"und Fehler mit Anbox meldet man im `Downstream-Fork "
+"<https://github.com/ubports/anbox/issues>`_. Vielen Dank!"
 
 #: ../../userguide/dailyuse/index.rst:2
 msgid "Daily use"
-msgstr ""
+msgstr "Tägliche Nutzung"
 
 #: ../../userguide/dailyuse/index.rst:4
 msgid ""
 "This section of the documentation details common tasks that users may "
 "want to perform while using their Ubuntu Touch device."
 msgstr ""
+"Dieser Abschnitt der Dokumentation gibt Aufschluss darüber, wie man ein "
+"Ubuntu Touch-Gerät üblicherweise nutzt."
 
 #: ../../userguide/dailyuse/libertine.rst:2
 msgid "Run desktop applications"
-msgstr ""
+msgstr "Desktop-Anwendungen nutzen"
 
 #: ../../userguide/dailyuse/libertine.rst:4
 msgid "Libertine allows you to use standard desktop applications in Ubuntu Touch."
 msgstr ""
+"Libertine ermöglicht die Nutzung von Standard-Desktop-Anwendungen in Ubuntu "
+"Touch."
 
 #: ../../userguide/dailyuse/libertine.rst:6
 msgid ""
@@ -673,32 +796,37 @@ msgid ""
 "which is available in the Canonical App Store. To install applications "
 "you need to use the commandline as described below."
 msgstr ""
+"Um Anwendungen zu starten, wird der *Desktop Apps Scope* benötigt, welcher "
+"im Open Store verfügbar ist. Zur Installation von Anwendungen, nutzt man die "
+"Kommandozeile wie unten beschrieben."
 
 #: ../../userguide/dailyuse/libertine.rst:9
 msgid "Manage containers"
-msgstr ""
+msgstr "Container verwalten"
 
 #: ../../userguide/dailyuse/libertine.rst:12
 msgid "Create a container"
-msgstr ""
+msgstr "Einen Container anlegen"
 
 #: ../../userguide/dailyuse/libertine.rst:14
 msgid ""
 "The first step is to create a container where applications can be "
 "installed:"
 msgstr ""
+"Der erste Schritt ist, einen Container anzulegen, indem Anwendungen "
+"installiert werden können:"
 
 #: ../../userguide/dailyuse/libertine.rst:16
 msgid "``libertine-container-manager create -i CONTAINER-IDENTIFIER``"
-msgstr ""
+msgstr "``libertine-container-manager create -i CONTAINER-IDENTIFIER``"
 
 #: ../../userguide/dailyuse/libertine.rst:18
 msgid "You can add extra options such as:"
-msgstr ""
+msgstr "Zusätzliche Optionen können hinzugefügt werden:"
 
 #: ../../userguide/dailyuse/libertine.rst:20
 msgid "``-n name`` name is a more user friendly name of the container"
-msgstr ""
+msgstr "``-n name`` als Name kann etwas nutzerfreundliches festgelegt werden"
 
 #: ../../userguide/dailyuse/libertine.rst:21
 msgid ""
@@ -706,12 +834,17 @@ msgid ""
 "``chroot`` and is compatible with every device. If the kernel of your "
 "device supports it then ``lxc`` is suggested."
 msgstr ""
+"``-t type`` der Typ kann entweder ``chroot`` oder ``lxc`` sein. Standard ist "
+"``chroot`` und ist kompatibel mit jedem Gerät. Falls der Kernel des Geräts "
+"dies unterstützt, dann ist ``lxc`` empfehlenswert."
 
 #: ../../userguide/dailyuse/libertine.rst:23
 msgid ""
 "The creating process can take some time, due to the size of the container"
 " (some hundred of megabytes)."
 msgstr ""
+"Der Erstellprozess kann einige Zeit in Anspruch nehmen, aufgrund der Größe "
+"des Containers (mehrere hundert Megabyte)."
 
 #: ../../userguide/dailyuse/libertine.rst:26
 msgid ""
@@ -721,54 +854,61 @@ msgid ""
 " the terminal app using a loopback ssh connection running this command: "
 "``ssh localhost``."
 msgstr ""
+"Der ``create``-Befehl oben kann aufgrund von apparmor-Restriktionen nicht "
+"direkt in der Terminal-App gestartet werden. Aber er lässt sich von einem "
+"anderen Gerät aus entweder über ``adb`` oder ``ssh``. Alternativ lässt es "
+"sich in der Terminal-App ausführen, indem man eine SSH-Schleife nutzt "
+"mihilfe des Kommandos ``ssh localhost``."
 
 #: ../../userguide/dailyuse/libertine.rst:29
 msgid "List containers"
-msgstr ""
+msgstr "Container auflisten"
 
 #: ../../userguide/dailyuse/libertine.rst:32
 msgid "To list all containers created run:"
-msgstr ""
+msgstr "Alle Container aufzulisten:"
 
 #: ../../userguide/dailyuse/libertine.rst:32
 msgid "``libertine-container-manager list``"
-msgstr ""
+msgstr "``libertine-container-manager list``"
 
 #: ../../userguide/dailyuse/libertine.rst:35
 msgid "Destroy a container"
-msgstr ""
+msgstr "Einen Container zerstören"
 
 #: ../../userguide/dailyuse/libertine.rst:37
 msgid "``libertine-container-manager destroy -i CONTAINER-IDENTIFIER``"
-msgstr ""
+msgstr "``libertine-container-manager destroy -i CONTAINER-IDENTIFIER``"
 
 #: ../../userguide/dailyuse/libertine.rst:40
 msgid "Manage applications"
-msgstr ""
+msgstr "Anwendungen verwalten"
 
 #: ../../userguide/dailyuse/libertine.rst:42
 msgid "Once a container is set up, you can list the installed applications:"
 msgstr ""
+"Sobald ein Container erstellt ist, können die installierten Anwendungen "
+"aufgelistet werden:"
 
 #: ../../userguide/dailyuse/libertine.rst:44
 msgid "``libertine-container-manager list-apps``"
-msgstr ""
+msgstr "``libertine-container-manager list-apps``"
 
 #: ../../userguide/dailyuse/libertine.rst:46
 msgid "Install a package:"
-msgstr ""
+msgstr "Ein Paket installieren:"
 
 #: ../../userguide/dailyuse/libertine.rst:48
 msgid "``libertine-container-manager install-package -p PACKAGE-NAME``"
-msgstr ""
+msgstr "``libertine-container-manager install-package -p PACKAGE-NAME``"
 
 #: ../../userguide/dailyuse/libertine.rst:50
 msgid "Remove a package:"
-msgstr ""
+msgstr "Ein Paket entfernen:"
 
 #: ../../userguide/dailyuse/libertine.rst:52
 msgid "``libertine-container-manager remove-package -p PACKAGE-NAME``"
-msgstr ""
+msgstr "``libertine-container-manager remove-package -p PACKAGE-NAME``"
 
 #: ../../userguide/dailyuse/libertine.rst:55
 msgid ""
@@ -776,78 +916,85 @@ msgid ""
 "CONTAINER-IDENTIFIER`` to specify for which container you want to perform"
 " an operation."
 msgstr ""
+"Falls es mehr als einen Container gibt, kann man die Option ``-i CONTAINER-"
+"IDENTIFIER`` angeben, den Container auszuwählen, auf den die Operation "
+"ausgeführt werden soll."
 
 #: ../../userguide/dailyuse/libertine.rst:59
 msgid "Files"
-msgstr ""
+msgstr "Dateien"
 
 #: ../../userguide/dailyuse/libertine.rst:61
 msgid "Libertine applications do have access to these folders:"
-msgstr ""
+msgstr "Libertine-Anwendungen haben Zugriff auf diese Ordner:"
 
 #: ../../userguide/dailyuse/libertine.rst:63
 msgid "Documents"
-msgstr ""
+msgstr "Dokumente"
 
 #: ../../userguide/dailyuse/libertine.rst:64
 msgid "Music"
-msgstr ""
+msgstr "Musik"
 
 #: ../../userguide/dailyuse/libertine.rst:65
 msgid "Pictures"
-msgstr ""
+msgstr "Bilder"
 
 #: ../../userguide/dailyuse/libertine.rst:66
 msgid "Downloads"
-msgstr ""
+msgstr "Downloads"
 
 #: ../../userguide/dailyuse/libertine.rst:67
 msgid "Videos"
-msgstr ""
+msgstr "Videos"
 
 #: ../../userguide/dailyuse/libertine.rst:70
 msgid "Tipps"
-msgstr ""
+msgstr "Tipps"
 
 #: ../../userguide/dailyuse/libertine.rst:73
 msgid "Locations"
-msgstr ""
+msgstr "Verzeichnisse"
 
 #: ../../userguide/dailyuse/libertine.rst:75
 msgid "For every container you create there will be two directories created:"
-msgstr ""
+msgstr "Für jeden Container werden zwei Verzeichnisse erstellt:"
 
 #: ../../userguide/dailyuse/libertine.rst:77
 msgid ""
 "A root directory ``~/.cache/libertine-container/CONTAINER-"
 "IDENTIFIER/rootfs/`` and"
 msgstr ""
+"Ein Wurzelverzeichnis ``~/.cache/libertine-container/CONTAINER-"
+"IDENTIFIER/rootfs/`` und"
 
 #: ../../userguide/dailyuse/libertine.rst:78
 msgid ""
 "a user directory ``~/.local/share/libertine-container/user-data"
 "/CONTAINER-IDENTIFIER/``"
 msgstr ""
+"ein Nutzerverzeichnis ``~/.local/share/libertine-container/user-data"
+"/CONTAINER-IDENTIFIER/``"
 
 #: ../../userguide/dailyuse/libertine.rst:81
 msgid "Shell access"
-msgstr ""
+msgstr "Shell-Zugriff"
 
 #: ../../userguide/dailyuse/libertine.rst:83
 msgid "To execute any arbitrary command as root inside the container run:"
-msgstr ""
+msgstr "Einen beliebigen Befehl als root innerhalb eines Containers ausführen:"
 
 #: ../../userguide/dailyuse/libertine.rst:85
 msgid "``libertine-container-manager exec -c COMMAND``"
-msgstr ""
+msgstr "``libertine-container-manager exec -c COMMAND``"
 
 #: ../../userguide/dailyuse/libertine.rst:87
 msgid "For example, to get a shell into your container you can run:"
-msgstr ""
+msgstr "Zum Beispiel, um eine Shell im Container zu bekommen:"
 
 #: ../../userguide/dailyuse/libertine.rst:89
 msgid "``libertine-container-manager exec -c /bin/bash``"
-msgstr ""
+msgstr "``libertine-container-manager exec -c /bin/bash``"
 
 #: ../../userguide/dailyuse/libertine.rst:92
 msgid ""
@@ -999,4 +1146,3 @@ msgstr ""
 
 #~ msgid "``libertine-container-manage install-package -p PACKAGE-NAME``"
 #~ msgstr ""
-
