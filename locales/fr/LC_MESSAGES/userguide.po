@@ -45,11 +45,11 @@ msgstr "Tout d'abord, il est nécessaire d'installer ADB sur votre PC."
 
 #: ../../userguide/advanceduse/adb.rst:12
 msgid "On Ubuntu::"
-msgstr "Sur Ubuntu ::"
+msgstr "Sur Ubuntu::"
 
 #: ../../userguide/advanceduse/adb.rst:16
 msgid "On Fedora::"
-msgstr "Sur Fedora ::"
+msgstr "Sur Fedora::"
 
 #: ../../userguide/advanceduse/adb.rst:20
 msgid "And on MacOS with `Homebrew <https://brew.sh>`_::"
@@ -137,11 +137,11 @@ msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:48
 msgid "Fairphone 2::"
-msgstr "Fairphone 2 ::"
+msgstr "Fairphone 2::"
 
 #: ../../userguide/advanceduse/adb.rst:52
 msgid "Oneplus One::"
-msgstr "Oneplus One ::"
+msgstr "Oneplus One::"
 
 #: ../../userguide/advanceduse/dav.rst:2
 msgid "CalDAV and CardDAV synchronization"
