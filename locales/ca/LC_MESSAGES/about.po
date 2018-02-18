@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-08 19:46-0600\n"
-"PO-Revision-Date: 2018-02-16 13:49+0000\n"
+"PO-Revision-Date: 2018-02-18 18:53+0000\n"
 "Last-Translator: Walter Garcia-Fontes <walter.garcia@upf.edu>\n"
 "Language-Team: Catalan <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-about/ca/>\n"
@@ -226,6 +226,13 @@ msgid ""
 "primary sanity check by the qa-team but has not yet been accepted by the "
 "responsible development-team."
 msgstr ""
+"**Cap (triatge pendent)**: El problema ha estat aprovat per un membre de "
+"l'equip de control de qualitat i està pendent de revisió per part de l'equip "
+"de desenvolupament responsable. Si el problema és un error, s'inclouen "
+"instruccions per reproduir-lo en la descripció del problema. Si el problema "
+"és una demanda de funcionalitat, ha passat una verificació inicial "
+"d'adequació per part de l'equip de control de qualitat, però no ha estat "
+"acceptat encara per part de l'equip de desenvolupament responsable."
 
 #: ../../about/process/issue-tracking.rst:39
 msgid ""
@@ -234,12 +241,19 @@ msgid ""
 " fixable and accepts the responsibility. If the issue is a featrue "
 "request, the team thinks it should be implemented as described."
 msgstr ""
+"**Acceptat**: el problema ha estat acceptat per part de l'equip de "
+"desenvolupament responsable. Si el problema és un informe d'error, l'equip "
+"ha decidit ha decidit que es pot arreglar i accepta la responsabilitat. Si "
+"el problema és una demanda de funcionalitat, l'equip pensa que s'ha "
+"d'implementar com s'ha descrit."
 
 #: ../../about/process/issue-tracking.rst:40
 msgid ""
 "**In Development**: A patch is in development. Usually means that a "
 "developer is assigned to the issue."
 msgstr ""
+"**En desenvolupament**: S'està desenvolupant un pegat. Usualment vol dir que "
+"s'ha assignat un desenvolupador al problema."
 
 #: ../../about/process/issue-tracking.rst:41
 msgid ""
@@ -248,6 +262,10 @@ msgid ""
 "feedback. If problems are found, the issue is moved back to “In "
 "Development”."
 msgstr ""
+"**Control de qualitat**: S'ha completat el pegat i ha passat les "
+"comprovacions inicials. A continuació l'equip de control de qualitat el "
+"revisarà en tots els dispositius i proveirà retroalimentació. Si es troben "
+"problemes, el problema es retornarà a «En desenvolupament»."
 
 #: ../../about/process/issue-tracking.rst:42
 msgid ""
@@ -256,6 +274,10 @@ msgid ""
 "will be included in the next over-the-air update on the rc channel, and, "
 "if everything goes well, in the next release of the stable channel."
 msgstr ""
+"**Versió candidata**: El pegat ha passat el control de qualitat i ja es pot "
+"alliberar. Per al cas de paquets deb inclosos a la imatge de sistema, el "
+"pegat s'inclourà a la propera actualització OTA al canal versió candidata "
+"(rc), i, si tot va bé, al proper alliberament del canal estable."
 
 #: ../../about/process/issue-tracking.rst:43
 msgid ""
@@ -263,10 +285,13 @@ msgid ""
 "closed with a message linking to the patch) or the issue has been "
 "rejected (issue closed and labeled “wontfix”)."
 msgstr ""
+"**Cap (eliminat del projecte)**: S'ha alliberat un pegat (es tanca el "
+"problema amb un missatge que enllaça al pegat) o s'ha rebutjat el problema ("
+"es tanca el problema i s'etiqueta «wontfix»)."
 
 #: ../../about/process/issue-tracking.rst:46
 msgid "Labels"
-msgstr ""
+msgstr "Etiquetes"
 
 #: ../../about/process/issue-tracking.rst:48
 #, python-format
@@ -278,58 +303,82 @@ msgid ""
 " Consult the `GitHub help pages <https://help.github.com/articles/about-"
 "searching-on-github/>`__ for more information on search and filtering."
 msgstr ""
+"Tots els problemes - fins i tot els tancats - s'haurien d'etiquetar per "
+"permetre l'ús del filtratge global del GitHub. Per exemple «aquests són tots "
+"els problemes etiquetats amb 'enhancement' dins de  @ubports <https://github."
+"com/search?utf8=%E2%9C%93&q=is%3Aopen+org%3Aubports+label%3A%22feature+reques"
+"t%22&type=>»_. Consulteu les «Pàgines d'ajuda "
+"<https://help.github.com/articles/about-searching-on-github/>»__ per a més "
+"informació sobre la cerca i el filtratge."
 
 #: ../../about/process/issue-tracking.rst:51
 msgid "Here's a list of labels that are normally used by all repositories."
 msgstr ""
+"Aquí hi ha una llista d'etiquetes que s'usen en general a tots els "
+"repositoris."
 
 #: ../../about/process/issue-tracking.rst:53
 msgid ""
 "**needs confirmation**: The bug needs confirmation and / or further "
 "information from affected users"
 msgstr ""
+"**cal confirmació**: A l'error li cal confirmació i / o  més informació dels "
+"usuaris afectats"
 
 #: ../../about/process/issue-tracking.rst:55
 msgid ""
 "**bug**: This issue is a confirmed bug. If it's reproducable, "
 "reproduction steps are described."
 msgstr ""
+"**error**: Aquest problema és un error confirmat. Si es pot reproduir, es "
+"descriuen els passos per reproduir-lo."
 
 #: ../../about/process/issue-tracking.rst:57
 msgid "**opinion**: This issue needs further discussion."
-msgstr ""
+msgstr "**opinió**: Cal més discussió per a aquest problema."
 
 #: ../../about/process/issue-tracking.rst:58
 msgid "**enhancement**: This issue is a feature request."
-msgstr ""
+msgstr "**millora**: Aquest problema és una demanda de funcionalitat."
 
 #: ../../about/process/issue-tracking.rst:59
 msgid "**question**: This issue is a support request or general question."
 msgstr ""
+"**pregunta**: Aquest problema és una demanda de suport o una pregunta "
+"general."
 
 #: ../../about/process/issue-tracking.rst:60
 msgid ""
 "**invalid**: This issue can not be confirmed or was reported in the wrong"
 " tracker."
 msgstr ""
+"**invàlid**: Aquest problema no es pot confirmar o s'ha informat en el "
+"seguidor incorrecte."
 
 #: ../../about/process/issue-tracking.rst:62
 msgid ""
 "**duplicate**: This has already been reported somewhere else. Please "
 "provide a link and close."
 msgstr ""
+"**duplicat**: Això ja se ha informat en algun altre lloc. Si us plau proveïu "
+"un enllaç i tanqueu-lo."
 
 #: ../../about/process/issue-tracking.rst:64
 msgid ""
 "**help wanted**: This issue is ready to be picked up by a community "
 "developer."
 msgstr ""
+"**es demana ajuda**: Aquest problema ja està preparat perquè algun "
+"desenvolupador de la comunitat l'agafi."
 
 #: ../../about/process/issue-tracking.rst:66
 msgid ""
 "**good first issue**: This issue is not critical and trivial to fix. It "
 "is reserved for new contributors as a place to start."
 msgstr ""
+"**apropiat com a primer problema**: Aquest problema no és crític i és "
+"trivial arreglar-lo. Està reservat per a contribuïdors novells com un lloc "
+"on començar."
 
 #: ../../about/process/issue-tracking.rst:68
 msgid ""
@@ -337,18 +386,26 @@ msgid ""
 "probably resolve itself, it will be too much work to fix it, it's not "
 "fixable, or an underlying component will soon change."
 msgstr ""
+"**nosearreglarà**: No té sentit arreglar aquest error, atès que probablement "
+"s'arreglarà per sí mateix, implicaria molta feina arreglar-lo, no es pot "
+"arreglar, o algun component subjacent canviarà aviat."
 
 #: ../../about/process/issue-tracking.rst:72
 msgid ""
 "Additional special labels can be defined. As an example, here's the "
 "labels used in the Ubuntu Touch tracker:"
 msgstr ""
+"Es poden definir etiquetes addicionals especials. Com a exemple, aquí hi ha "
+"les etiquetes usades al seguidor de l'Ubuntu Touch:"
 
 #: ../../about/process/issue-tracking.rst:75
 msgid ""
 "**critical (devel)**: This critical issue that only occurs on the devel "
 "channel is blocking the release of the next rc image."
 msgstr ""
+"**crític (desenvolupament)**: Aquest problema crític que sols apareix al "
+"canal de desenvolupament està blocant l'alliberament de la pròxima imatge de "
+"versió candidata."
 
 #: ../../about/process/issue-tracking.rst:77
 msgid ""
@@ -357,6 +414,11 @@ msgid ""
 "issues that can not simply be moved to a different release and have the "
 "power to postpone the release are labeled this."
 msgstr ""
+"** crític (versió candidata)**: Aquest problema crític que sols apareix als "
+"canals de desenvolupament i de versió candidata està blocant l'alliberament "
+"de la pròxima versió estable. Generalment, els problemes que no es poden "
+"simplement moure a una altra versió i tenen el poder de postposar la versió "
+"són els que reben aquesta etiqueta."
 
 #: ../../about/process/issue-tracking.rst:81
 msgid ""
