@@ -3,43 +3,51 @@
 # This file is distributed under the same license as the UBports package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-15 11:14-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-02-18 19:36+0000\n"
+"Last-Translator: Arda C. <oardacn@gmail.com>\n"
+"Language-Team: Turkish <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-appdev/tr/>\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../appdev/cookbook.rst:2
 msgid "App development cookbook"
-msgstr ""
+msgstr "Uygulama geliştirme kitabı"
 
 #: ../../appdev/cookbook.rst:5
 msgid "Unofficial resources"
-msgstr ""
+msgstr "Gayri resmi kaynaklar"
 
 #: ../../appdev/cookbook.rst:7
 msgid ""
 "In this section you will find links to external resources about creating "
 "applications for Ubuntu Touch."
 msgstr ""
+"Bu bölümde, Ubuntu Touch uygulamaları oluşturmak için harici kaynaklara "
+"bağlantılar bulabilirsiniz."
 
 #: ../../appdev/cookbook.rst:9
 msgid ""
 "`Ubuntu Touch programming book <https://www.gitbook.com/book/mimecar"
 "/ubuntu-touch-programming-course/details>`__"
 msgstr ""
+"`Ubuntu Touch programla kitabı [İnglizce-English] "
+"<https://www.gitbook.com/book/mimecar/ubuntu-touch-programming-"
+"course/details>`__"
 
 #: ../../appdev/cookbook.rst:12
 msgid "Playground"
-msgstr ""
+msgstr "Çalışma Alanı"
 
 #: ../../appdev/cookbook.rst:14
 msgid ""
@@ -49,6 +57,11 @@ msgid ""
 "that do exactly that: Explore. The purpose of this list is to show the "
 "unlimited possibilities of an open platform like Ubuntu Touch."
 msgstr ""
+"Tamamen özgür ve açık kaynaklı bir toplulukta, toplum üyelerinin platformun "
+"sınırlarını birçok yönden keşfetmeleri doğaldır. Bu bölümde, tam olarak bunu "
+"yapan harici kaynaklara bağlantılar bulabilirsiniz: Keşfedin. Bu listenin "
+"amacı, Ubuntu Touch gibi açık bir platformun sınırsız olanaklarını "
+"göstermektir."
 
 #: ../../appdev/cookbook.rst:17
 msgid ""
@@ -56,6 +69,8 @@ msgid ""
 "endorsed way of developing applications for Ubuntu Touch, but are "
 "interesting experiments."
 msgstr ""
+"Burada listelenen kaynaklar, Ubuntu Touch uygulamaları için resmi olarak "
+"onaylanmış bir yöntem değildir; ilginç deneylerdir."
 
 #: ../../appdev/cookbook.rst:19
 msgid ""
@@ -63,6 +78,9 @@ msgid ""
 "<http://kriscode.blogspot.tw/2016/09/freepascal-development-for-ubuntu-"
 "phone.html>`__"
 msgstr ""
+"`Ubuntu Touch için Ücretsiz Pascal geliştirme "
+"<http://kriscode.blogspot.tw/2016/09/freepascal-development-for-ubuntu-"
+"phone.html>`__"
 
 #: ../../appdev/cookbook.rst:20
 msgid ""
@@ -70,6 +88,8 @@ msgid ""
 "<http://kriscode.blogspot.tw/2016/10/lazarus-development-for-ubuntu-"
 "phone.html>`__"
 msgstr ""
+"`Ubuntu Touch için Lazarus geliştime <http://kriscode.blogspot.tw/2016/10"
+"/lazarus-development-for-ubuntu-phone.html>`__"
 
 #: ../../appdev/cookbook.rst:21
 msgid ""
@@ -78,10 +98,14 @@ msgid ""
 "<http://kriscode.blogspot.tw/2017/10/geany-on-ubuntu-touch-device-as-"
 "text.html>`__"
 msgstr ""
+"`Geany, Ubuntu Touch cihazında metin editörü, kaynak kod editörü, hata "
+"ayıklayıcı ve birden fazla dil için derleyici "
+"<http://kriscode.blogspot.tw/2017/10/geany-on-ubuntu-touch-device-as-"
+"text.html>`__"
 
 #: ../../appdev/index.rst:2
 msgid "App development"
-msgstr ""
+msgstr "Uyguluma geliştime"
 
 #: ../../appdev/index.rst:4
 msgid ""
@@ -90,14 +114,18 @@ msgid ""
 "talent and commitment is unmatched. Ubuntu is also the third most "
 "deployed desktop OS in the world."
 msgstr ""
+"Enerji, bağlılık, yetenek ve bağlılığınız eşsiz olan canlı bir küresel "
+"topluluk tarafından sürekli olarak incelenip iyileştirilmekte olan açık "
+"kaynaklı ve ücretsiz bir platforma hoş geldiniz. Ubuntu, dünyanın en yaygın "
+"kullanılan üçüncü masaüstü işletim sistemidir."
 
 #: ../../appdev/index.rst:7
 msgid "Introduction"
-msgstr ""
+msgstr "Başlangıç"
 
 #: ../../appdev/index.rst:14
 msgid "Clickable"
-msgstr ""
+msgstr "Clickable"
 
 #: ../../appdev/index.rst:16
 msgid ""
@@ -107,40 +135,50 @@ msgid ""
 " easiest and most convenient way of building click packages for Ubuntu "
 "Touch."
 msgstr ""
+"Clickable, Ubuntu Touch uygulamaları için derlemek, oluşturmak, test etmek "
+"ve yayınlamak için kullanılan bir meta oluşturucu sistemdir `tıkla "
+"<https://click.readthedocs.io/en/latest/>`_ paketler. Şu anda Ubuntu Touch "
+"için click paketleri oluşturmanın en kolay ve en kolay yolu."
 
 #: ../../appdev/index.rst:18
 msgid ""
 "See here for getting started `Read the Docs "
 "<http://clickable.bhdouglass.com/en/latest/>`_."
 msgstr ""
+"Başlamak için buraya bakın `Dökümanları Oku "
+"<http://clickable.bhdouglass.com/en/latest/>`_."
 
 #: ../../appdev/index.rst:21
 msgid "Ubuntu UI-Toolkit"
-msgstr ""
+msgstr "Ubuntu UI-Toolkit"
 
 #: ../../appdev/index.rst:23
 msgid ""
 "Here you can find `the API documentation <https://api-"
 "docs.ubports.com/>`_ for the Ubuntu UI toolkit."
 msgstr ""
+"Buradan `API dökümanını bulabilirsiniz ; <https://api-docs.ubports.com/>`_ "
+"Ubuntu UI toolkit için."
 
 #: ../../appdev/index.rst:25
 msgid "`QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__"
-msgstr ""
+msgstr "`QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__"
 
 #: ../../appdev/index.rst:26
 msgid ""
 "`Cordova HTML5 API <https://api-"
 "docs.ubports.com/sdk/apps/html5/index.html>`__"
 msgstr ""
+"`Cordova HTML5 API <https://api-"
+"docs.ubports.com/sdk/apps/html5/index.html>`__"
 
 #: ../../appdev/index.rst:27
 msgid "`Click packages <https://click.readthedocs.io/en/latest/>`__"
-msgstr ""
+msgstr "`Click paketleri<https://click.readthedocs.io/en/latest/>`__"
 
 #: ../../appdev/index.rst:30
 msgid "Ubuntu SDK IDE (unsupported)"
-msgstr ""
+msgstr "Ubuntu SDK IDE (desteklenmiyor)"
 
 #: ../../appdev/index.rst:32
 msgid ""
@@ -148,18 +186,21 @@ msgid ""
 " no longer supported by Canonical, and UBports does not currently have "
 "the the time and manpower to get it to a working state."
 msgstr ""
+"`Ubuntu SDK IDE <https://docs.ubuntu.com/phone/en/platform/sdk>`__ artık "
+"Canonical tarafından desteklenmiyor ve UBports şu an için çalışma durumuna "
+"getirmek için zaman ve insan gücüne sahip değil."
 
 #: ../../appdev/index.rst:36
 msgid "It can still be installed in Ubuntu 16.04, but issues are expected."
-msgstr ""
+msgstr "Hâlâ Ubuntu 16.04'te kurulabilir, ancak sorunlar oluşacaktır."
 
 #: ../../appdev/index.rst:46
 msgid "Cookbook"
-msgstr ""
+msgstr "Kitap"
 
 #: ../../appdev/index.rst:48
 msgid "A collection of external resources"
-msgstr ""
+msgstr "Harici kaynaklardan oluşan bir koleksiyon"
 
 #~ msgid "Using clickable for cordova and HTML-5 development"
 #~ msgstr ""
@@ -328,4 +369,3 @@ msgstr ""
 #~ "most convenient way of building click"
 #~ " packages for Ubuntu Touch."
 #~ msgstr ""
-
