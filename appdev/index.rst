@@ -173,7 +173,10 @@ A collection of external resources
 System Software
 ---------------
 
-Working on system components
+Ubuntu Touch image ship a set of applications also known as "core apps".
+See `core apps repositories on github <https://github.com/search?q=topic%3Acore-app+org%3Aubports&type=Repositories>`__
+
+This resource will help you get started with working on system components
 
 .. toctree::
     :maxdepth: 1
