@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-02 20:17-0600\n"
-"PO-Revision-Date: 2018-02-18 16:59+0000\n"
+"PO-Revision-Date: 2018-02-18 19:27+0000\n"
 "Last-Translator: Arda C. <oardacn@gmail.com>\n"
 "Language-Team: Turkish <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-about/tr/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../about/introduction.rst:2
 msgid "Introduction"
-msgstr "Önsöz"
+msgstr "Başlangıç"
 
 #: ../../about/introduction.rst:4
 msgid ""
