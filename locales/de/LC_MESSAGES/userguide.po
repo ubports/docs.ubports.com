@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-08 19:46-0600\n"
-"PO-Revision-Date: 2018-02-18 19:48+0000\n"
+"PO-Revision-Date: 2018-02-19 19:35+0000\n"
 "Last-Translator: Jonatan Hatakeyama Zeidler <jonatan_zeidler@gmx.de>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-userguide/de/>\n"
@@ -1004,18 +1004,22 @@ msgid ""
 "listing of ``ls /`` will be different inside and outside of the "
 "container."
 msgstr ""
+"Wenn bash auf diese Weise gestartet wird, erhält man keine spezielle "
+"Rückmeldung, dass man sich nun *in* einem Container befindet. Mithilfe von ``"
+"ls /`` lässt sich aber ermitteln, ob man sich in einem Container befindet. "
+"Die Auflistung von ``ls /`` ist unterschiedlich innerhalb und außerhalb."
 
 #: ../../userguide/dailyuse/libertine.rst:94
 msgid "To get a shell as user ``phablet`` run:"
-msgstr ""
+msgstr "Eine Shell als Nutzer ``phablet`` öffnen:"
 
 #: ../../userguide/dailyuse/libertine.rst:96
 msgid "``DISPLAY= libertine-launch -i CONTAINER-IDENTIFIER /bin/bash``"
-msgstr ""
+msgstr "``DISPLAY= libertine-launch -i CONTAINER-IDENTIFIER /bin/bash``"
 
 #: ../../userguide/dailyuse/libertine.rst:99
 msgid "Background"
-msgstr ""
+msgstr "Hintergrund"
 
 #: ../../userguide/dailyuse/libertine.rst:101
 msgid ""
@@ -1026,6 +1030,12 @@ msgid ""
 "compatibility layer called XMir resolves this. Libertine relies on XMir "
 "to display desktop applications."
 msgstr ""
+"Ein Display Server koordiniert die Ein- und Ausgänge eines Betriebssystems. "
+"Die meisten Linux-Distributionen heutzutage nutzen den X Server. Ubuntu "
+"Touch nutzt aber nicht X, sondern einen neuen Display Server namens Mir. Das "
+"bedeutet, die Standard-X-Anwendungen sind nicht direkt kompatibel mit Ubuntu "
+"Touch. Eine Kompatibilitätsschicht namens XMir löst das. Libertine baut auf "
+"XMir auf, um Desktop-Anwendungen anzuzeigen."
 
 #: ../../userguide/dailyuse/libertine.rst:103
 msgid ""
@@ -1034,10 +1044,15 @@ msgid ""
 "Libertine provides a container with a read-write filesystem to allow the "
 "installation of regular Linux desktop applications."
 msgstr ""
+"Eine andere Herausforderung ist, dass Aktualisierungen für das Ubuntu Touch-"
+"System als OTA-Abbilder veröffentlicht werden. Als Konsequenz daraus hat man "
+"nur Leserechte auf das Wurzeldateisystem. Libertine stellt einen Container "
+"mit einem Dateisystem mit Schreib- und Leserechten zur Verfügung, um die "
+"Installation regulärer Linux-Desktop-Anwendungen zu ermöglichen."
 
 #: ../../userguide/install.rst:2
 msgid "Install Ubuntu Touch"
-msgstr ""
+msgstr "Ubuntu Touch installieren"
 
 #: ../../userguide/install.rst:4
 msgid ""
@@ -1047,6 +1062,12 @@ msgid ""
 "Ubuntu Touch on a `supported device <devices.ubports.com>`_ from your "
 "Linux, Mac or Windows computer."
 msgstr ""
+"Ubuntu Touch zu installieren ist einfach und es wurde eine Menge Arbeit "
+"darin investiert, den Installationsvorgang weniger unangenehm für weniger "
+"technisch versierte Nutzer zu machen. Der UBports Installer ist ein nettes "
+"grafisches Werkzeug, mit dem sich Ubuntu Touch auf einem `unterstützten "
+"Gerät <devices.ubports.com>`_ von Linux, Mac oder Windows aus installieren "
+"lässt."
 
 #: ../../userguide/install.rst:7
 msgid ""
@@ -1054,6 +1075,9 @@ msgid ""
 "to keep any data that is currently on the device. Create an external "
 "backup if you want to keep it."
 msgstr ""
+"Falls man von Android her kommt, so kann man seine aktuellen Daten nicht auf "
+"dem Gerät behalten. Möchte man sie behalten, muss man eine externe Sicherung "
+"anlegen."
 
 #: ../../userguide/install.rst:9
 msgid ""
@@ -1061,20 +1085,26 @@ msgid ""
 "installer/releases/latest>`_ and download the version of the installer "
 "for your operating system:"
 msgstr ""
+"Auf der `Download-Seite <https://github.com/ubports/ubports-"
+"installer/releases/latest>`_ lässt sich der Installer für das eigene "
+"Betriebssystem herunterladen:"
 
 #: ../../userguide/install.rst:11
 msgid "Windows: ubports-installer-<version-number>.exe"
-msgstr ""
+msgstr "Windows: ubports-installer-<Versionsnummer>.exe"
 
 #: ../../userguide/install.rst:12
 msgid "macOS: ubports-installer-<version-number>.dmg"
-msgstr ""
+msgstr "macOS: ubports-installer-<Versionsnummer>.dmg"
 
 #: ../../userguide/install.rst:13
 msgid ""
 "Linux: ubports-installer-<version-number>.deb, ubports-installer"
 "-<version-number>.snap or ubports-installer-<version-number>.AppImage"
 msgstr ""
+"Linux: ubports-installer-<Versionsnummer>.deb, ubports-"
+"installer-<Versionsnummer>.snap oder ubports-"
+"installer-<Versionsnummer>.AppImage"
 
 #: ../../userguide/install.rst:15
 msgid ""
@@ -1082,6 +1112,9 @@ msgid ""
 "you through the installation process. That's it! Have fun exploring "
 "Ubuntu Touch!"
 msgstr ""
+"Man startet den Installer und folgt einfach den Anweisungen, die einen durch "
+"den Installationsvorgang führen. Das ist alles! Viel Spaß beim Erkunden von "
+"Ubuntu Touch!"
 
 #: ../../userguide/install.rst:17
 msgid ""
@@ -1089,10 +1122,13 @@ msgid ""
 "Ubuntu Touch to more devices, visit the :doc:`porting section "
 "</porting/introduction>`."
 msgstr ""
+"Erfahrene Android-Entwickler, die helfen wollen, Ubuntu Touch auf mehr "
+"Geräte zu bringen, finden Infos im :doc:`Portierungsabschnitt "
+"</porting/introduction>`."
 
 #: ../../userguide/install.rst:20
 msgid "Install on legacy Android devices"
-msgstr ""
+msgstr "Installation auf Altgeräten"
 
 #: ../../userguide/install.rst:22
 msgid ""
@@ -1101,6 +1137,10 @@ msgid ""
 "nature. This part of the guide does not apply to any other devices or bq "
 "devices that are running the Canonical version of Ubuntu Touch."
 msgstr ""
+"Während die Installation auf den meisten Geräten recht einfach ist, "
+"erfordern manche Geräte von BQ oder Meizu spezielle Schritte, aufgrund ihrer "
+"geschlossenen Natur. Dieser Teil der Anleitung gilt nicht für andere Geräte "
+"oder BQ-Geräte, auf welchen die Canonical-Version von Ubuntu Touch läuft."
 
 #: ../../userguide/install.rst:26
 msgid ""
@@ -1112,6 +1152,13 @@ msgid ""
 " OEM tools shouldn't be done without a bit of know-how and plenty of "
 "research."
 msgstr ""
+"Dies ist mehr oder weniger unbekanntes Territorium. Falls ein "
+"Gerätehersteller nicht möchte, dass man ein alternatives Betriebssystem auf "
+"ihren Geräten installiert, dann kann man wenig dagegen tun. Diese Anleitung "
+"ist sehr vage und sollte nur von erfahrenen Nutzern befolgt werden. Auf wenn "
+"es ehrenwert ist, Ubuntu Touch nutzen zu wollen, sollte man das Aufspielen "
+"mit OEM-Werkzeugen nicht ohne ein gewisses Know-How und einer Menge "
+"Recherche wagen."
 
 #: ../../userguide/install.rst:28
 msgid ""
@@ -1119,6 +1166,9 @@ msgid ""
 "website <http://www.mibqyyo.com/en-download/>`_ and use their SP Flash "
 "Tool to flash it."
 msgstr ""
+"BQ-Geräte: Man lädt die offizielle Ubuntu Edition Firmware von `ihrer "
+"website <http://www.mibqyyo.com/en-download/>`_ und nutzt deren SP Flash "
+"Tool, um es aufzuspielen."
 
 #: ../../userguide/install.rst:29
 msgid ""
@@ -1128,6 +1178,12 @@ msgid ""
 " link to them here for obvious reasons. The Pro5 is Exynos-based and has "
 "its own headaches. You're even more at your own risk on these."
 msgstr ""
+"Meizu-Geräte: Man hängt hier auf Flyme fest. Für das MX4 schwirren im Netz "
+"Anleitungen zum Downgrade des Betriebssystems,  Erlangen von root mit einem "
+"Exploit, Entsperren des Bootloaders und so weiter. Aus ersichtlichen Gründen "
+"werden diese hier nicht verlinkt. Das Pro5 basiert auf Exynos und birgt "
+"seine eigenen Kopfschmerzen. Hierbei handelt man erst Recht auf eigenes "
+"Risiko."
 
 #: ../../userguide/install.rst:33
 msgid ""
@@ -1137,6 +1193,12 @@ msgid ""
 "the partition that holds their hardware IDs and can no longer connect to "
 "Wi-Fi or cellular networks."
 msgstr ""
+"ACHTUNG! Versteht man diesen Abschnitt falsch, kann man sein Gerät dauerhaft "
+"beschädigen oder zerstören. Man wählt NIEMALS die \"Format All\"-Option im "
+"SP Flash Tool und man liest aufmerksam alles, was es einem sagt. Einige "
+"Nutzer haben bereits die Partition zerstört, auf der die Hardware-IDs liegen "
+"und können sich deshalb nicht mehr mit Drahtlos- oder Mobilfunknetzen "
+"verbinden."
 
 #~ msgid ""
 #~ "To make sure the ssh server is "
