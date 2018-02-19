@@ -3,7 +3,7 @@ Run desktop applications
 
 Libertine allows you to use standard desktop applications in Ubuntu Touch.
 
-To display and launch applications you need the *Desktop Apps Scope* which is available in the Open Store. To install applications you need to use the commandline as described below.
+To display and launch applications you need the *Desktop Apps Scope* which is available in the `Open Store <https://open-store.io/app/libertine-scope.ubuntu>`_. To install applications you need to use the commandline as described below.
 
 Manage containers
 -----------------
