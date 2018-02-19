@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-08 19:46-0600\n"
-"PO-Revision-Date: 2018-02-17 22:26+0000\n"
+"PO-Revision-Date: 2018-02-19 19:37+0000\n"
 "Last-Translator: Jonatan Hatakeyama Zeidler <jonatan_zeidler@gmx.de>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-porting/de/>\n"
@@ -71,14 +71,13 @@ msgid "Manual clone"
 msgstr "Manuelles Klonen"
 
 #: ../../porting/building-ubports-boot.rst:31
-#, fuzzy
 msgid ""
 "You may also choose to clone the `ubports-boot repository "
 "<https://github.com/ubports/ubports-boot>`_ into your tree manually. It "
 "should be placed into ``BUILDDIR/halium/ubports-boot``."
 msgstr ""
 "Man kann auch das `ubports-boot-Repository <https://github.com/ubports"
-"/ubports-boot>`_ manuell in das Verzeichnis klonen. Es sollte in "
+"/ubports-boot>`_ manuell ins eigene Baumverzeichnis klonen. Es sollte in "
 "``BUILDDIR/halium/ubports-boot`` platziert werden."
 
 #: ../../porting/building-ubports-boot.rst:33
@@ -106,9 +105,8 @@ msgstr ""
 "Halium`` und fügt ``halium/ubports-boot`` zur Liste der ``subdirs`` hinzu ::"
 
 #: ../../porting/building-ubports-boot.rst:45
-#, fuzzy
 msgid "Fix mounts"
-msgstr "Mounts anpassen"
+msgstr "Einhängepunkte anpassen"
 
 #: ../../porting/building-ubports-boot.rst:49
 msgid ""
@@ -147,15 +145,15 @@ msgstr ""
 "bekannt sein dürfte."
 
 #: ../../porting/building-ubports-boot.rst:53
-#, fuzzy
 msgid ""
 "The ubports-boot initramfs does not use the fixup-mountpoints script, nor"
 " does it put block devices in the proper place for mounting without "
 "modification. For this reason, we are going to have to edit your device's"
 " fstab."
 msgstr ""
-"Das initramfs von ubports-boot verwendet nicht das fixup-mountpoints "
-"Skript. Darum passen wir nun die fstab des devices an."
+"Das initramfs von ubports-boot verwendet weder das Skript fixup-mountpoints, "
+"noch bringt es Blockgeräte an den richtigen Ort zum Einhängen ohne "
+"Anpassungen. Darum muss die fstab des Gerätes angepasst werden."
 
 #: ../../porting/building-ubports-boot.rst:55
 msgid ""
@@ -284,7 +282,6 @@ msgid "``cd`` to your Halium BUILDDIR"
 msgstr "Mit ``cd`` zu Haliums BUILDDIR wechseln"
 
 #: ../../porting/building-ubports-boot.rst:88
-#, fuzzy
 msgid "``source build/envsetup.sh``"
 msgstr "``source build/envsetup.sh``"
 
@@ -295,12 +292,10 @@ msgstr ""
 "genutzt wird"
 
 #: ../../porting/building-ubports-boot.rst:90
-#, fuzzy
 msgid "``mka ubports-boot``"
 msgstr "``mka ubports-boot``"
 
 #: ../../porting/building-ubports-boot.rst:91
-#, fuzzy
 msgid "``mka systemimage``"
 msgstr "``mka systemimage``"
 
@@ -701,7 +696,6 @@ msgid "Px/GU"
 msgstr "Px/GU"
 
 #: ../../porting/running-ut.rst:31
-#, fuzzy
 msgid "QtWebKit DPR"
 msgstr "QtWebKit DPR"
 
