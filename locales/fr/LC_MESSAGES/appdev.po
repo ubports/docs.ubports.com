@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-08 19:46-0600\n"
-"PO-Revision-Date: 2018-02-16 16:14+0000\n"
+"PO-Revision-Date: 2018-02-20 10:21+0000\n"
 "Last-Translator: Max Libre <libremax@protonmail.com>\n"
 "Language-Team: French <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-appdev/fr/>\n"
@@ -22,27 +22,31 @@ msgstr ""
 
 #: ../../appdev/cookbook.rst:2
 msgid "App development cookbook"
-msgstr ""
+msgstr "Livre de recettes pour le développement d'applications"
 
 #: ../../appdev/cookbook.rst:5
 msgid "Unofficial resources"
-msgstr ""
+msgstr "Ressources non officielles"
 
 #: ../../appdev/cookbook.rst:7
 msgid ""
 "In this section you will find links to external resources about creating "
 "applications for Ubuntu Touch."
 msgstr ""
+"Dans cette section, vous trouverez des liens vers des ressources externes "
+"sur la création d'applications pour Ubuntu Touch."
 
 #: ../../appdev/cookbook.rst:9
 msgid ""
 "`Ubuntu Touch programming book <https://www.gitbook.com/book/mimecar"
 "/ubuntu-touch-programming-course/details>`__"
 msgstr ""
+"`Ubuntu Touch programming book <https://www.gitbook.com/book/mimecar/ubuntu-"
+"touch-programming-course/details>`__"
 
 #: ../../appdev/cookbook.rst:12
 msgid "Playground"
-msgstr ""
+msgstr "Terrain de jeux"
 
 #: ../../appdev/cookbook.rst:14
 msgid ""
@@ -52,6 +56,12 @@ msgid ""
 "that do exactly that: Explore. The purpose of this list is to show the "
 "unlimited possibilities of an open platform like Ubuntu Touch."
 msgstr ""
+"Dans une communauté totalement libre et open source, il est naturel d'avoir "
+"des membres de la communauté explorant les limites de la plateforme dans de "
+"nombreuses directions. Dans cette section, vous trouverez des liens vers des "
+"ressources externes qui font exactement cela: explorez. Le but de cette "
+"liste est de montrer les possibilités illimitées d'une plate-forme ouverte "
+"comme Ubuntu Touch."
 
 #: ../../appdev/cookbook.rst:17
 msgid ""
@@ -59,6 +69,9 @@ msgid ""
 "endorsed way of developing applications for Ubuntu Touch, but are "
 "interesting experiments."
 msgstr ""
+"Les ressources répertoriées ici ne représentent pas nécessairement la "
+"manière officielle de développer des applications pour Ubuntu Touch, mais "
+"sont des expériences intéressantes."
 
 #: ../../appdev/cookbook.rst:19
 msgid ""
@@ -66,6 +79,9 @@ msgid ""
 "<http://kriscode.blogspot.tw/2016/09/freepascal-development-for-ubuntu-"
 "phone.html>`__"
 msgstr ""
+"`Free Pascal development for Ubuntu Touch "
+"<http://kriscode.blogspot.tw/2016/09/freepascal-development-for-ubuntu-"
+"phone.html>`__"
 
 #: ../../appdev/cookbook.rst:20
 msgid ""
@@ -73,6 +89,8 @@ msgid ""
 "<http://kriscode.blogspot.tw/2016/10/lazarus-development-for-ubuntu-"
 "phone.html>`__"
 msgstr ""
+"`Lazarus development for Ubuntu Touch <http://kriscode.blogspot.tw/2016/10"
+"/lazarus-development-for-ubuntu-phone.html>`__"
 
 #: ../../appdev/cookbook.rst:21
 msgid ""
@@ -81,6 +99,9 @@ msgid ""
 "<http://kriscode.blogspot.tw/2017/10/geany-on-ubuntu-touch-device-as-"
 "text.html>`__"
 msgstr ""
+"`Geany on Ubuntu Touch device as text editor, source code editor, debugger "
+"and compiler for multiple languages <http://kriscode.blogspot.tw/2017/10"
+"/geany-on-ubuntu-touch-device-as-text.html>`__"
 
 #: ../../appdev/index.rst:2
 msgid "App development"
@@ -93,6 +114,10 @@ msgid ""
 "talent and commitment is unmatched. Ubuntu is also the third most "
 "deployed desktop OS in the world."
 msgstr ""
+"Bienvenue sur une plateforme open source et libre, sous le contrôle et "
+"l'amélioration permanents d'une communauté mondiale dynamique, dont "
+"l'énergie, la connectivité, le talent et l'engagement sont inégalés. Ubuntu "
+"est également le troisième OS de bureau le plus déployé au monde."
 
 #: ../../appdev/index.rst:7
 msgid "Introduction"
@@ -100,7 +125,7 @@ msgstr "Introduction"
 
 #: ../../appdev/index.rst:14
 msgid "Clickable"
-msgstr ""
+msgstr "Clickable"
 
 #: ../../appdev/index.rst:16
 msgid ""
@@ -110,40 +135,51 @@ msgid ""
 " easiest and most convenient way of building click packages for Ubuntu "
 "Touch."
 msgstr ""
+"Clickable est un système de méta-construction pour les applications Ubuntu "
+"Touch qui vous permet de compiler, construire, tester et publier des paquets "
+"`click <https://click.readthedocs.io/en/latest/>`_. C'est actuellement le "
+"moyen le plus simple et le plus pratique de créer des paquets click pour "
+"Ubuntu Touch."
 
 #: ../../appdev/index.rst:18
 msgid ""
 "See here for getting started `Read the Docs "
 "<http://clickable.bhdouglass.com/en/latest/>`_."
 msgstr ""
+"Voir pour commencer `Read the Docs "
+"<http://clickable.bhdouglass.com/en/latest/>`_."
 
 #: ../../appdev/index.rst:21
 msgid "Ubuntu UI-Toolkit"
-msgstr ""
+msgstr "Ubuntu UI-Toolkit"
 
 #: ../../appdev/index.rst:23
 msgid ""
 "Here you can find `the API documentation <https://api-"
 "docs.ubports.com/>`_ for the Ubuntu UI toolkit."
 msgstr ""
+"Vous trouverez ici `the API documentation <https://api-docs.ubports.com/>`_ "
+"pour la boite à outils d'Ubuntu UI."
 
 #: ../../appdev/index.rst:25
 msgid "`QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__"
-msgstr ""
+msgstr "`QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__"
 
 #: ../../appdev/index.rst:26
 msgid ""
 "`Cordova HTML5 API <https://api-"
 "docs.ubports.com/sdk/apps/html5/index.html>`__"
 msgstr ""
+"`Cordova HTML5 API <https://api-"
+"docs.ubports.com/sdk/apps/html5/index.html>`__"
 
 #: ../../appdev/index.rst:27
 msgid "`Click packages <https://click.readthedocs.io/en/latest/>`__"
-msgstr ""
+msgstr "`Click packages <https://click.readthedocs.io/en/latest/>`__"
 
 #: ../../appdev/index.rst:30
 msgid "Ubuntu SDK IDE (unsupported)"
-msgstr ""
+msgstr "Ubuntu SDK IDE (non supporté)"
 
 #: ../../appdev/index.rst:32
 msgid ""
@@ -151,18 +187,23 @@ msgid ""
 " no longer supported by Canonical, and UBports does not currently have "
 "the the time and manpower to get it to a working state."
 msgstr ""
+"Le `Ubuntu SDK IDE <https://docs.ubuntu.com/phone/en/platform/sdk>`__ n'est "
+"plus supporté par Canonical, et UBports n' a pas actuellement le temps et la "
+"main d'œuvre pour le rendre fonctionnel."
 
 #: ../../appdev/index.rst:36
 msgid "It can still be installed in Ubuntu 16.04, but issues are expected."
 msgstr ""
+"Il peut encore être installé dans Ubuntu 16.04, mais des problèmes sont "
+"prévisibles."
 
 #: ../../appdev/index.rst:46
 msgid "Cookbook"
-msgstr ""
+msgstr "Livre de recettes"
 
 #: ../../appdev/index.rst:48
 msgid "A collection of external resources"
-msgstr ""
+msgstr "Une collection de ressources externes"
 
 #~ msgid "Using clickable for cordova and HTML-5 development"
 #~ msgstr ""
