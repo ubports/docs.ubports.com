@@ -6,7 +6,7 @@ Welcome to an open source and free platform under constant scrutiny and improvem
 Introduction
 ------------
 
-Ubuntu Touch has three types of applications: Web Applications (WebApps), Scopes and Native Applications.
+Ubuntu Touch has three types of applications: `Web applications`_ (WebApps), `Scopes`_ and `Native applications`_.
 Applications are packaged, distributed and deployed using a format called `click <https://click.readthedocs.io/en/latest/>`_ packaging.
 Languages of choice are QML or HTML5 for the UI and can be Javascript, Qt, C++, Python, Go for the logic.
 
@@ -180,3 +180,33 @@ Working on system components
     :name: toc-system-software
 
     system-software
+
+Web applications
+----------------
+
+Ubuntu webapps are web-hosted sites displayed inside an Ubuntu app container. They are true apps that users install, see, launch and use. But their content is provided through URLs.
+
+.. toctree::
+    :maxdepth: 1
+    :name: toc-webapps
+
+    webapp/index
+
+
+Scopes
+------
+
+.. toctree::
+    :maxdepth: 1
+    :name: toc-scopes
+
+    scopes/index
+
+Native applications
+-------------------
+
+.. toctree::
+    :maxdepth: 1
+    :name: toc-nativeapp
+
+    nativeapp/index
