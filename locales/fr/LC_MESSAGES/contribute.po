@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-08 19:46-0600\n"
-"PO-Revision-Date: 2018-02-20 17:05+0000\n"
-"Last-Translator: Max Libre <libremax@protonmail.com>\n"
+"PO-Revision-Date: 2018-02-20 18:46+0000\n"
+"Last-Translator: Anne Onyme <anneonyme017@openmailbox.org>\n"
 "Language-Team: French <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-contribute/fr/>\n"
 "Language: fr\n"
@@ -78,9 +78,10 @@ msgid ""
 msgstr ""
 "Tout d'abord, vous devez vous assurez que le problème que vous essayez de "
 "faire remonter n'a pas déjà été signalé. Cherchez dans la liste des "
-"problèmes rapportés. Lors de la recherche, utilisez quelques mots qui "
-"décrivent ce que vous voyez. Par exemple, « Écran d'accueil transparent » ou "
-"« L'écran de verrouillage affiche des activités »."
+"problèmes rapportés. Lors de la recherche, utilisez quelques mots en Anglais "
+"qui décrivent ce que vous voyez. Par exemple, « Lock screen transparent » ("
+"Écran d'accueil transparent) ou « Lock screen shows activities » (L'écran de "
+"verrouillage affiche des activités)."
 
 #: ../../contribute/bugreporting.rst:18
 msgid ""
@@ -212,7 +213,7 @@ msgstr ""
 
 #: ../../contribute/bugreporting.rst:59
 msgid "Making the bug report"
-msgstr "Établir le rapport du problème"
+msgstr "Générer le rapport du problème"
 
 #: ../../contribute/bugreporting.rst:61
 msgid ""
@@ -646,6 +647,16 @@ msgid ""
 "<bugreporting>`. Leave a comment stating your device, channel, build "
 "number and whether or not you were able to reproduce the issue."
 msgstr ""
+"Les rapports de problèmes sont identifiés par les mots-clés **needs "
+"confirmation** (confirmation nécessaire) pour activer le `filtrage global "
+"<https://github.com/ubports/ubuntu-"
+"touch/issues?q=is%3Aissue+is%3Aopen+label%3A%22needs+confirmation%22>`__. "
+"Parcourez la liste, lisez les rapports et essayez de reproduire les "
+"problèmes qui sont décrits. Si nécessaire, ajoutez :doc:`des informations "
+"manquantes ou des rapports d'erreur, ou améliorez la qualité du rapport via "
+"d'autres moyens <bugreporting>`. Laissez un commentaire décrivant votre "
+"appareil, canal, numéro de version et si vous avez été en mesure de "
+"reproduire ou pas l'erreur."
 
 #: ../../contribute/quality-assurance.rst:11
 msgid ""
@@ -654,10 +665,10 @@ msgid ""
 "(if the issue is definitely not reproducable). In that case it should be "
 "closed."
 msgstr ""
-"Si vous avez accès en écriture au référentiel, vous pouvez remplacer "
-"l'étiquette **needs confirmation** par **bug** (pour le marquer comme "
-"confirmé) ou **invalid** (si le problème n'est pas reproductible). Dans ce "
-"cas, il devrait être fermé."
+"Si vous avez accès en écriture au répertoire, vous pouvez remplacer le mot-"
+"clé **needs confirmation** (confirmation nécessaire) par **bug** (problème) "
+"pour le marquer comme confirmé ou **invalid** (invalide) si le problème "
+"n'est pas reproductible. Dans ce cas, il devrait être fermé."
 
 #: ../../contribute/quality-assurance.rst:13
 msgid ""
@@ -667,11 +678,12 @@ msgid ""
 msgstr ""
 "Si vous trouvez deux problèmes portant sur le même sujet, laissez un "
 "commentaire et essayez de trouver leurs différences. S'ils sont en fait "
-"identiques, fermez le plus récent et attribuez lui l'étiquette **duplicate**."
+"identiques, fermez le plus récent et attribuez lui le mot-clé **duplicate** "
+"(doublon)."
 
 #: ../../contribute/quality-assurance.rst:16
 msgid "Testing patches"
-msgstr "Tester les patchs"
+msgstr "Tester les correctifs"
 
 #: ../../contribute/quality-assurance.rst:18
 msgid ""
@@ -685,10 +697,21 @@ msgid ""
 "Development** or forward to **Release Candidate** as specified by the "
 ":doc:`issue tracking guidelines </about/process/issue-tracking>`."
 msgstr ""
+"Une fois qu'un développeur a terminé de travailler sur un problème, celui-ci "
+"est déplacé dans la colonne assurance qualité du `projet sous GitHub "
+"<https://github.com/ubports/ubuntu-touch/projects/3>`__. Vérifiez si le "
+"problème persiste dans la dernière mise à jour sur le canal « Développement »"
+" et essayez de recréer un des problèmes causés. Regardez si le développeur a "
+"mentionné des choses spécifiques à vérifier lors du test et laissez un "
+"commentaire détaillant votre expérience. Si vous disposez des droits "
+"d'écriture dans le répertoire, vous pouvez déplacer le problème dans **In "
+"Development** (en développement) ou le transférer vers **Release Candidate** "
+"(version candidate) tel que spécifié dans les :doc:`recommandations de suivi "
+"des problèmes </about/process/issue-tracking>`."
 
 #: ../../contribute/quality-assurance.rst:21
 msgid "Initial triaging of issues"
-msgstr ""
+msgstr "Tri initial des problèmes"
 
 #: ../../contribute/quality-assurance.rst:23
 msgid ""
@@ -698,34 +721,46 @@ msgid ""
 "guidelines </about/process/issue-tracking>`. You can also immediately "
 "start confirming the bugreport."
 msgstr ""
+"Le tri initial de nouveaux problèmes est réalisé par les membres de l'équipe "
+"de l'assurance qualité ayant les droits d'écriture dans le répertoire. Si un "
+"nouveau problème est signalé, lisez le rapport et ajoutez les mots-clés "
+"appropriés tel que spécifié dans les :doc:`recommandations de suivi des "
+"problèmes </about/process/issue-tracking>`. Vous pouvez également "
+"immédiatement commencer à confirmer le rapport."
 
 #: ../../contribute/quality-assurance.rst:25
 msgid ""
 "If the new issue has already been reported elsewhere, label it "
 "**duplicate** and close it."
 msgstr ""
+"Si le nouveau problème a déjà été signalé ailleurs, marquez-le comme "
+"**duplicate** (doublon) et fermez-le."
 
 #: ../../contribute/translations.rst:2
 msgid "Translations"
-msgstr ""
+msgstr "Traductions"
 
 #: ../../contribute/translations.rst:4
 msgid ""
 "Although English is the official base language for all UBports projects "
 "we believe you have the right to use it in any language you want."
 msgstr ""
+"Bien que l'Anglais soit la langue de base officielle pour tous les projets "
+"menés par UBports, nous pensons que vous avez le droit de les utiliser dans "
+"toutes les langues que vous souhaitez."
 
 #: ../../contribute/translations.rst:6
 msgid "We are working hard to meet that goal, and you can help as well."
 msgstr ""
+"Nous travaillons dur pour atteindre ce but et vous pouvez aussi nous aider."
 
 #: ../../contribute/translations.rst:8
 msgid "There are two levels for this:"
-msgstr ""
+msgstr "Il existe deux niveaux pour cela :"
 
 #: ../../contribute/translations.rst:10
 msgid "A casual approach, as a translator volunteer."
-msgstr ""
+msgstr "Une approche traditionnelle en tant que traducteur bénévole."
 
 #: ../../contribute/translations.rst:11
 msgid ""
@@ -733,16 +768,22 @@ msgid ""
 "application <https://ubports.com/survey/start/ubports-membership-"
 "application-6>`_."
 msgstr ""
+"Un engagement à part entière en tant que Membre d'UBports, en renseignant `"
+"ce formulaire <https://ubports.com/survey/start/ubports-membership-"
+"application-6>`_."
 
 #: ../../contribute/translations.rst:14
 msgid "Tools for Translation"
-msgstr ""
+msgstr "Les outils de traduction"
 
 #: ../../contribute/translations.rst:16
 msgid ""
 "For everyone: A web based translation tool called `Weblate "
 "<https://translate.ubports.com/>`_. This is the recommended way."
 msgstr ""
+"Pour tous : Un outil de traduction appelé `Weblate "
+"<https://translate.ubports.com/>`_, accessible via un navigateur Web. Il "
+"s'agit de la méthode recommandée."
 
 #: ../../contribute/translations.rst:18
 msgid ""
@@ -751,6 +792,10 @@ msgid ""
 "their repository on `our GitHub organization "
 "<https://github.com/ubports>`_."
 msgstr ""
+"Pour les utilisateurs avancés : Travailler directement sur les fichiers .po "
+"avec l'éditeur de votre choix et un compte GitHub. Les fichiers .po de "
+"chaque projet sont dans leurs répertoires de `notre organisation sous GitHub "
+"<https://github.com/ubports>`_."
 
 #: ../../contribute/translations.rst:20
 msgid ""
@@ -758,14 +803,17 @@ msgid ""
 "<https://forums.ubports.com/category/39/translations>`_ to discuss on "
 "translating Ubuntu Touch and its core apps."
 msgstr ""
+"Un `forum de traduction "
+"<https://forums.ubports.com/category/39/translations>`_ pour discuter de la "
+"traduction d'Ubuntu Touch et de ses applications principales."
 
 #: ../../contribute/translations.rst:24
 msgid "How-To"
-msgstr ""
+msgstr "Tutoriels"
 
 #: ../../contribute/translations.rst:27
 msgid "UBports Weblate"
-msgstr ""
+msgstr "Le Weblate d'UBports"
 
 #: ../../contribute/translations.rst:29
 msgid ""
@@ -774,64 +822,89 @@ msgid ""
 "suggestions without being registered. If you want to save your "
 "translations, you must be logged in."
 msgstr ""
+"Vous pouvez accéder au `Weblate d'UBports <https://translate.ubports.com/>`"
+"_, cliquer sur le bouton « Tableau de bord », vous rendre dans un projet et "
+"commencer à faire des suggestions de manière anonyme sans avoir à vous "
+"enregistrer. Si vous souhaitez enregistrer vos traductions, vous devez être "
+"connecté."
 
 #: ../../contribute/translations.rst:31
 msgid ""
 "For that, go to UBports Weblate and click on the \"Register\" button. "
 "Once in the \"Registration\" page, you'll find two options:"
 msgstr ""
+"Pour cela, rendez-vous dans le Weblate d'UBports et cliquez sur le bouton « "
+"S'inscrire ». Une fois dans la page « Inscription », vous aurez deux options "
+":"
 
 #: ../../contribute/translations.rst:33
 msgid ""
 "Register using a valid email address, a username, and your full name. "
 "You'll need to resolve an easy control question too."
 msgstr ""
+"Vous enregistrer en utilisant une adresse électronique valide, un nom "
+"d'utilisateur et votre nom complet. Vous devrez également résoudre une "
+"question simple de contrôle."
 
 #: ../../contribute/translations.rst:34
 msgid ""
 "Register using a third party registration. Currently the system supports "
 "accounts from openSUSE, GitHub, Fedora, and Ubuntu."
 msgstr ""
+"Vous enregistrer en utilisant une inscription à un service tiers. Le système "
+"prend en charge actuellement openSUSE, GitHub, Fedora et Ubuntu."
 
 #: ../../contribute/translations.rst:36
 msgid ""
 "Once you're logged in, the site is self-explanatory and you'll find there"
 " all the options and customization you can do."
 msgstr ""
+"Une fois que vous serez connecté, le site est explicite et vous y trouverez "
+"toutes les options et personnalisations à votre disposition."
 
 #: ../../contribute/translations.rst:38
 msgid ""
 "Now, get on with it. The first step is to search if your language already"
 " exists in the project of your choice."
 msgstr ""
+"Au travail maintenant ! La première étape est de chercher si votre langue "
+"existe déjà dans le projet de votre choix."
 
 #: ../../contribute/translations.rst:40
 msgid ""
 "If your language is not available for a specific project, you can add it "
 "yourself."
 msgstr ""
+"Si votre langue n'est pas disponible pour un projet donné, vous pouvez "
+"l'ajouter."
 
 #: ../../contribute/translations.rst:42
 msgid ""
 "You decide how much time you can put into translation. From minutes to "
 "hours, everything counts."
 msgstr ""
+"Vous décidez du temps à investir dans la traduction. De quelques minutes à "
+"plusieurs heures, toutes les contributions comptent."
 
 #: ../../contribute/translations.rst:45
 msgid ".po file editor"
-msgstr ""
+msgstr "Éditeurs de fichier .po"
 
 #: ../../contribute/translations.rst:47
 msgid ""
 "As was said up above, you need a file editor of your choice and a GitHub "
 "account to translate .po files directly."
 msgstr ""
+"Comme expliqué précédemment, vous aurez besoin d'un éditeur de votre choix "
+"et d'un compte sur GitHub pour traduire directement les fichiers .po."
 
 #: ../../contribute/translations.rst:49
 msgid ""
 "There are online gettext .po editors and those you can install in your "
 "computer."
 msgstr ""
+"Il existe des éditeurs de texte en ligne et d'autres que vous pouvez "
+"installer sur votre ordinateur."
 
 #: ../../contribute/translations.rst:51
 msgid ""
@@ -839,16 +912,22 @@ msgid ""
 "software only. There are too many plain text editors and tools to help "
 "you translate .po files to put down a list here."
 msgstr ""
+"Vous pouvez sélectionner l'éditeur de votre choix, mais nous préférons "
+"travailler uniquement avec des logiciels libres. Il existe trop d'éditeurs "
+"de texte plein et d'outils pour traduire les fichiers .po pour établir ici "
+"la liste exhaustive."
 
 #: ../../contribute/translations.rst:53
 msgid ""
 "If you want to work with .po files directly you know what you're doing "
 "for sure."
 msgstr ""
+"Si vous souhaitez travailler directement sur les fichiers .po, vous devez "
+"être sûr(e) de ce que vous faites."
 
 #: ../../contribute/translations.rst:56
 msgid "Translation Team Communication"
-msgstr ""
+msgstr "Communication de l'équipe de traduction"
 
 #: ../../contribute/translations.rst:58
 msgid ""
@@ -856,10 +935,15 @@ msgid ""
 "<https://forums.ubports.com/category/39/translations>`_ that UBports "
 "provides for this task."
 msgstr ""
+"La méthode la plus directe et la plus recommandée est d'utiliser `la "
+"catégorie du forum <https://forums.ubports.com/category/39/translations>`_ "
+"qu'UBports fournit à ce titre."
 
 #: ../../contribute/translations.rst:60
 msgid "To use it you need to register, or login if you're registered already."
 msgstr ""
+"Pour l'utiliser, vous devez vous inscrire ou vous connecter si vous êtes "
+"déjà inscrit(e)."
 
 #: ../../contribute/translations.rst:62
 msgid ""
@@ -867,22 +951,31 @@ msgid ""
 "brackets in the \"Enter your topic title here\" field. For example, "
 "``[Spanish] How to translate whatever?``"
 msgstr ""
+"La seule obligation est de commencer votre publication en mettant entre "
+"crochets votre langue dans le champ « Saisissez le titre de votre sujet ici »"
+". Par exemple, ``[French] How to translate whatever?`` ([Français] Comment "
+"traduire n'importe quoi ? »)"
 
 #: ../../contribute/translations.rst:64
 msgid ""
 "Just for your information, some projects are using Telegram groups too, "
 "and some teams are still using the Ubuntu Launchpad framework."
 msgstr ""
+"Juste pour information, certains projets utilisent aussi des groupes "
+"Telegram et certaines équipes utilisent toujours Launchpad, la plateforme "
+"d'Ubuntu."
 
 #: ../../contribute/translations.rst:66
 msgid ""
 "In your interactions with your team you'll find the best way to "
 "coordinate your translations."
 msgstr ""
+"Dans vos interactions avec votre équipe, vous trouverez la meilleure façon "
+"de coordonner vos traductions."
 
 #: ../../contribute/translations.rst:69
 msgid "License"
-msgstr ""
+msgstr "Licence"
 
 #: ../../contribute/translations.rst:71
 msgid ""
@@ -891,10 +984,14 @@ msgid ""
 "(CC BY-SA 4.0) <https://creativecommons.org/licenses/by-sa/4.0/>`_ "
 "license that you explicitly accept by contributing to the project."
 msgstr ""
+"Tous les projets de traduction et toutes vos contributions à ce projet sont "
+"placés sous une licence `Creative Commons Attribution-ShareAlike 4.0 "
+"International (CC BY-SA 4.0) <https://creativecommons.org/licenses/by-"
+"sa/4.0/>`_ que vous acceptez explicitement en contribuant à ce projet."
 
 #: ../../contribute/translations.rst:73
 msgid "Go to that link to learn what this exactly means."
-msgstr ""
+msgstr "Visitez ce site pour apprendre ce que cela signifie exactement."
 
 #~ msgid ""
 #~ "If the report is missing any of"
