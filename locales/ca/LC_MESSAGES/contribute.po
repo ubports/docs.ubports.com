@@ -3,23 +3,26 @@
 # This file is distributed under the same license as the UBports package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-08 19:46-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-02-20 12:10+0000\n"
+"Last-Translator: Walter Garcia-Fontes <walter.garcia@upf.edu>\n"
+"Language-Team: Catalan <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-contribute/ca/>\n"
+"Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../contribute/bugreporting.rst:2
 msgid "Bug reporting"
-msgstr ""
+msgstr "Informació d'errors"
 
 #: ../../contribute/bugreporting.rst:4
 msgid ""
@@ -28,10 +31,14 @@ msgid ""
 "reporting bugs in apps, most of the time their entry in the OpenStore "
 "will specify where and how to do that."
 msgstr ""
+"Aquesta pàgina conté informació per ajudar-vos a ajudar-nos a informar sobre "
+"un error tractable de l'Ubuntu Touch. NO conté informació sobre avisar "
+"d'errors a les aplicacions, en la major part dels casos la seva entrada a "
+"l'OpenStore especificarà on i com fer això."
 
 #: ../../contribute/bugreporting.rst:7
 msgid "Get the latest Ubuntu Touch"
-msgstr ""
+msgstr "Obteniu l'últim Ubuntu Touch"
 
 #: ../../contribute/bugreporting.rst:9
 msgid ""
@@ -727,4 +734,3 @@ msgstr ""
 #: ../../contribute/translations.rst:73
 msgid "Go to that link to learn what this exactly means."
 msgstr ""
-
