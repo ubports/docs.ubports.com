@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-08 19:46-0600\n"
-"PO-Revision-Date: 2018-02-16 17:48+0000\n"
+"PO-Revision-Date: 2018-02-20 17:27+0000\n"
 "Last-Translator: Max Libre <libremax@protonmail.com>\n"
 "Language-Team: French <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-porting/fr/>\n"
@@ -106,7 +106,7 @@ msgstr ""
 "ubports-boot. Pour corriger cela, ouvrez le fichier "
 "``BUILDDIR/build/core/main.mk`` dans un éditeur de texte. Trouver le "
 "commentaire ``# Specific projects for Halium`` et ajouter ``halium/ubports-"
-"boot`` à la liste de ``subdirs`` ::"
+"boot`` à la liste de ``subdirs``::"
 
 #: ../../porting/building-ubports-boot.rst:45
 msgid "Fix mounts"
@@ -146,6 +146,10 @@ msgid ""
 "modification. For this reason, we are going to have to edit your device's"
 " fstab."
 msgstr ""
+"L'initramfs d'ubports-boot n'utilise pas le script fixup-mountpoints et ne "
+"met pas non plus les périphériques bloc à la bonne place pour un montage "
+"sans modification. Pour cette raison, nous allons devoir éditer le fstab de "
+"votre appareil."
 
 #: ../../porting/building-ubports-boot.rst:55
 msgid ""
@@ -154,6 +158,10 @@ msgid ""
 "``BUILDDIR/device/MANUFACTUER/CODENAME/rootdir/etc`` and it is named "
 "either ``fstab.qcom`` or ``fstab.devicename``. Open the file for editing."
 msgstr ""
+"La première étape de ce processus consiste à déterminer où se trouve votre "
+"fstab. Pour la plupart, c'est à l'intérieur de "
+"``BUILDDIR/device/MANUFACTUER/CODENAME/rootdir/etc`` et il est nommé soit ``"
+"fstab. qcom`` soit ``fstab. devicename``. Ouvrez le fichier pour l'éditer."
 
 #: ../../porting/building-ubports-boot.rst:57
 msgid ""
@@ -163,12 +171,20 @@ msgid ""
 "block device is ``/dev/block/mmcblk0p54``, so I put ``/dev/mmcblk0p54`` "
 "in this place. Also change the type to ext4, if it is not already."
 msgstr ""
+"Avec le fichier ouvert, changez le ``src``, ou premier attribut, du ``/data``"
+" mountpoint à ce que vous mettez dans les fixup-mountpoints pour ``/data``, "
+"mais sans le dossier ``/block``. Par exemple, sur le Moto G5 Plus, le "
+"périphérique bloc est ``/dev/block/mmcblk0p54``, donc j'ai mis "
+"``/dev/mmcblk0p54`` à cet endroit. Modifiez également le type en ext4, si ce "
+"n'est pas déjà fait."
 
 #: ../../porting/building-ubports-boot.rst:59
 msgid ""
 "Now, remove all ``context=`` options from all block devices in the file. "
 "Save and exit."
 msgstr ""
+"Maintenant, supprimez toutes les options ``context=`` de tous les "
+"périphériques blocs dans le fichier. Sauvegarder et quitter."
 
 #: ../../porting/building-ubports-boot.rst:61
 msgid ""
@@ -177,10 +193,15 @@ msgid ""
 "<https://github.com/UniversalSuperBox/android_device_motorola_potter/commit/9b574967e3a6f07884760b418befe731ccfcb924>`__."
 " Removing the ``wait`` flag is not required and was an accident."
 msgstr ""
+"Pour un exemple de ceci, voir `this commit on universalsuperbox/"
+"android_device_motorola_potorola_potter <https://github.com/UniversalSuperBox"
+"/android_device_motorola_potter/commit/9b574967e3a6f07884760b418befe731ccfcb9"
+"24>`__. Il n'est pas nécessaire de retirer le drapeau \"wait\", c'était un "
+"accident."
 
 #: ../../porting/building-ubports-boot.rst:65
 msgid "Edit init.rc"
-msgstr ""
+msgstr "Éditer init.rc"
 
 #: ../../porting/building-ubports-boot.rst:67
 msgid ""
@@ -188,6 +209,10 @@ msgid ""
 "device to reboot without warning, about 30-60 seconds after it boots. We "
 "will need to disable these services until the issue is resolved."
 msgstr ""
+"Certains services Android entrent en conflit avec ofono en 16.04 et feront "
+"redémarrer votre appareil sans avertissement, environ 30 à 60 secondes après "
+"son démarrage. Nous devrons désactiver ces services jusqu'à ce que le "
+"problème soit résolu."
 
 #: ../../porting/building-ubports-boot.rst:69
 msgid ""
@@ -199,6 +224,14 @@ msgid ""
 "UniversalSuperBox/android_device_motorola_potter "
 "<https://github.com/UniversalSuperBox/android_device_motorola_potter/commit/7875b48b5b6f240935d7f327d33128e952a3589b>`__"
 msgstr ""
+"Pour ce faire, ouvrez le fichier ``init. rc`` par défaut de votre appareil  ("
+"ceci est probablement init. qcom. rc ou init.[nom de code]. rc), commentez "
+"les instructions ``import`` et ajoutez ``disabled`` à des services comme "
+"rild, qti, et autres qui s'interfacent avec la radio. La plupart d'entre eux "
+"ont une ligne ``user radio``. Pour un exemple, voir `commit 7875b48b on "
+"UniversalSuperBox/android_device_motorola_potter <https://github.com/Universa"
+"lSuperBox/android_device_motorola_potter/commit/7875b48b48b5b6b6f240935d7f327"
+"d33128e958e952a3589b>`__"
 
 #: ../../porting/building-ubports-boot.rst:73
 msgid "Edit kernel config"
@@ -219,24 +252,32 @@ msgid ""
 " errors. If there are, fix them manually. Once finished, run the script "
 "without the ``-w`` flag one more time to make sure everything is correct."
 msgstr ""
+"Vous devrez peut-être le faire deux fois. Ça va probablement arranger les "
+"choses les deux fois. Ensuite, lancez le script sans le drapeau ``-w`` pour "
+"voir s'il y a d'autres erreurs. S'il y en a, corrigez-les manuellement. Une "
+"fois terminé, lancez le script sans le drapeau ``-w``` une fois de plus pour "
+"vous assurer que tout est correct."
 
 #: ../../porting/building-ubports-boot.rst:83
 msgid "Build the image"
-msgstr ""
+msgstr "Construire l'image"
 
 #: ../../porting/building-ubports-boot.rst:85
 msgid ""
 "Once ubports-boot is in place, you can build it quite simply. You will "
 "also need to rebuild system.img due to our changes."
 msgstr ""
+"Une fois que ubports-boot est en place, vous pouvez le construire tout "
+"simplement. Vous devrez également reconstruire system.img en raison de nos "
+"changements."
 
 #: ../../porting/building-ubports-boot.rst:87
 msgid "``cd`` to your Halium BUILDDIR"
-msgstr ""
+msgstr "``cd`` à votre Halium BUILDDIR"
 
 #: ../../porting/building-ubports-boot.rst:88
 msgid "``source build/envsetup.sh``"
-msgstr ""
+msgstr "``source build/envsetup.sh``"
 
 #: ../../porting/building-ubports-boot.rst:89
 msgid "Run ``breakfast`` or ``lunch``, whichever you use for your device"
@@ -244,26 +285,28 @@ msgstr ""
 
 #: ../../porting/building-ubports-boot.rst:90
 msgid "``mka ubports-boot``"
-msgstr ""
+msgstr "``mka ubports-boot``"
 
 #: ../../porting/building-ubports-boot.rst:91
 msgid "``mka systemimage``"
-msgstr ""
+msgstr "``mka systemimage``"
 
 #: ../../porting/building-ubports-boot.rst:96
 #: ../../porting/installing-16-04.rst:74
 msgid "Continue on"
-msgstr ""
+msgstr "Continuez sur"
 
 #: ../../porting/building-ubports-boot.rst:98
 msgid ""
 "Now that you have ubports-boot built, you can move on to "
 ":doc:`installing-16-04`."
 msgstr ""
+"Maintenant que vous avez ubports-boot de construit, vous pouvez passer à: "
+"doc:`installing-16-04`."
 
 #: ../../porting/installing-16-04.rst:2
 msgid "Installing Ubuntu Touch 16.04 images on Halium"
-msgstr ""
+msgstr "Installer les images Ubuntu Touch 16.04 sur Halium"
 
 #: ../../porting/installing-16-04.rst:6
 msgid ""
