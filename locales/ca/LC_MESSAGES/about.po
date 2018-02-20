@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-08 19:46-0600\n"
-"PO-Revision-Date: 2018-02-18 18:53+0000\n"
+"PO-Revision-Date: 2018-02-20 06:22+0000\n"
 "Last-Translator: Walter Garcia-Fontes <walter.garcia@upf.edu>\n"
 "Language-Team: Catalan <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-about/ca/>\n"
@@ -60,7 +60,7 @@ msgid ""
 msgstr ""
 "Després que Canonical va anunciar de sobte «el seu plan d'acabar el suport a "
 "l'Ubuntu Touch <https://insights.ubuntu.com/2017/04/05/growing-ubuntu-for-"
-"cloud-and-iot-rather-than-phone-and-convergence/>»_ a l'abril de 2017, "
+"cloud-and-iot-rather-than-phone-and-convergence/>» a l'abril de 2017, "
 "l'UBports i els seus projectes germans can començar a treballar sobre el "
 "codi obert, a mantenir-lo i a ampliar les seves possibilitats per al futur."
 
@@ -80,9 +80,9 @@ msgstr ""
 "Aquesta documentació està sempre millorant gràcies als membres de la "
 "comunitat de l'UBports. Està escrita en ReStructuredText i convertida a "
 "aquesta forma llegible per l'«Sphinx <http://www.sphinx-doc.org/en/stable/>»"
-"_, «ReCommonMark <http://recommonmark.readthedocs.io/en/latest/>» _, i «`"
-"Read the Docs <https://readthedocs.io>» _. Podeu començar a contribuir "
-"llegint la :doc:«Introducció a la documentació </contribute/documentation>»."
+", «ReCommonMark <http://recommonmark.readthedocs.io/en/latest/>», i «Read "
+"the Docs <https://readthedocs.io>». Podeu començar a contribuir llegint la "
+":doc:«Introducció a la documentació </contribute/documentation>»."
 
 #: ../../about/introduction.rst:18
 msgid ""
@@ -93,7 +93,7 @@ msgid ""
 msgstr ""
 "Tots els documents tenen la llicència Creative Commons Attribution "
 "ShareAlike 4.0 («CC-BY-SA 4.0 <https://creativecommons.org/licenses/by-"
-"sa/4.0/>`»_). Si us plau feu l'atribució de crèdit a «The UBports Community»."
+"sa/4.0/>»). Si us plau feu l'atribució de crèdit a «The UBports Community»."
 
 #: ../../about/introduction.rst:21
 msgid "Attribution"
@@ -106,7 +106,7 @@ msgid ""
 "Juan Linietsky, Ariel Manzur and the Godot community."
 msgstr ""
 "Aquesta documentació segueix molt properament el model «Godot Engine's "
-"Documentation <http://docs.godotengine.org/en/stable/>»_, atribució a Juan "
+"Documentation <http://docs.godotengine.org/en/stable/>», atribució a Juan "
 "Linietsky, Ariel Manzur i la comunitat Godot."
 
 #: ../../about/process/index.rst:2
@@ -425,22 +425,28 @@ msgid ""
 "**device: [DEVICE CODENAME]**: This issue affects only the specified "
 "device(s)."
 msgstr ""
+"**dispositiu:[NOM CLAU DEL DISPOSITIU]**: Aquest problema afecta sols el(s) "
+"dispositiu(s) afectat(s)."
 
 #: ../../about/process/issue-tracking.rst:83
 msgid ""
 "**team: [TEAM NAME]**: This issue is falls under the responsibility of a "
 "specific team (hal, middleware, UI)."
 msgstr ""
+"**equip:[NOM DE L'EQUIP]**: Aquest problema està sota la responsabilitat "
+"d'un equip especificat (hall, middleware, UI)."
 
 #: ../../about/process/issue-tracking.rst:86
 msgid ""
 "If a repository that tracks issues locally defines it's own labels, they "
 "should be documented in the README.md."
 msgstr ""
+"Si un repositori que segueix els problemes localment defineix les seves "
+"pròpies etiquetes, s'haurien de documentar al README.md."
 
 #: ../../about/process/issue-tracking.rst:90
 msgid "Milestones"
-msgstr ""
+msgstr "Fites"
 
 #: ../../about/process/issue-tracking.rst:92
 msgid ""
@@ -450,10 +456,16 @@ msgid ""
 "date), but can be adjusted afterwards. See the :doc:`release-schedule "
 "<release-schedule>` for more info."
 msgstr ""
+"Les fites s'usen sols per alliberaments OTA estables. En general, es creen "
+"les fites per l'OTA treball-en-curs i pròxima. S'estableix el temps previst "
+"per l'alliberament un cop que comença el treball per l'alliberament (és a "
+"dir 6 setmanes des del moment de l'inici), però es pot ajustar més tard. "
+"Vegeu el :doc:`calendari-de-publicació <release-schedule>' per a més "
+"informació."
 
 #: ../../about/process/issue-tracking.rst:99
 msgid "Assignees"
-msgstr ""
+msgstr "Assignats"
 
 #: ../../about/process/issue-tracking.rst:101
 #, python-format
@@ -464,20 +476,27 @@ msgid ""
 " in @ubports "
 "<https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+org%3Aubports+assignee%3Amariogrip&type=>`_."
 msgstr ""
+"Per fer transparent qui està treballant en un problema, s'hauria d'assignar "
+"el desenvolupador. Això permet també usar el filtratge global de GItHub com "
+"una mena de llista de tasques pendents. Per exemple, «això és tot el que "
+"està assignat a mariogrip a @ubports <https://github.com/search?utf8=%E2%9C%9"
+"3&q=is%3Aopen+org%3Aubports+assignee%3Amariogrip&type=>»."
 
 #: ../../about/process/issue-tracking.rst:105
 msgid ""
 "Developers are asked to keep their list short and to keep the status of "
 "their issues up-to-date."
 msgstr ""
+"Es demana als desenvolupadors de mantenir la seva llista curta i mantenir "
+"actualitzat l'estat del seus problemes."
 
 #: ../../about/process/issue-tracking.rst:108
 msgid "Examples"
-msgstr ""
+msgstr "Exemples"
 
 #: ../../about/process/issue-tracking.rst:111
 msgid "Bug Lifecycle"
-msgstr ""
+msgstr "Cicle de vida de l'error"
 
 #: ../../about/process/issue-tracking.rst:114
 msgid ""
@@ -485,10 +504,15 @@ msgid ""
 "that instead of the label **bug**, the label **enhancement** is used. The"
 " **needs confirmation** label is not applicable for feature requests."
 msgstr ""
+"S'aplica el mateix principi a les demandes de funcionalitat. L'única "
+"diferència és que, en comptes de l'etiqueta **error**, s'usa l'etiqueta "
+"**enhancement**. L'etiqueta **cal confirmació** no s'aplica a les demandes "
+"de funcionalitat."
 
 #: ../../about/process/issue-tracking.rst:118
 msgid "A *User* files a new bug using the issue-template."
 msgstr ""
+"Un *Usuari* registra un nou informe d'error usant la plantilla de problemes."
 
 #: ../../about/process/issue-tracking.rst:119
 msgid ""
@@ -499,6 +523,12 @@ msgid ""
 "the project and the label needs confirmation will be replaced with "
 "**bug**."
 msgstr ""
+"L'*Equip de control de qualitat* afageix l'etiqueta **cal confirmació** i "
+"intenta treballar amb l'usuari per confirmar l'error i afegir informació que "
+"pugui faltar de l'informe. Un cop s'ha completat l'informe, s'afegirà una **"
+"etiqueta d'equip** al problema, el problema es posarà a la **llista en "
+"espera de triatge** del projecte i l'etiqueta cal confirmació es reemplaçarà "
+"per **error**."
 
 #: ../../about/process/issue-tracking.rst:120
 msgid ""
@@ -511,6 +541,14 @@ msgid ""
 "critical issues that are trivial to fix, the label **good first issue** "
 "can be added as well."
 msgstr ""
+"L'**Equip** afectat farà el triatge del problema i o bé el rebutjarà ("
+"etiquetarà amb **noserreglarà**, el tancarà i l'eliminarà del projecte) o "
+"l'acceptarà (el moure a **Acceptat**). Si no es pot assignar cap membre "
+"d'equip i el problema es pot gestionar a la comunitat, s'etiquetarà amb **"
+"cal ajuda**. Si és possible, l'equip proveirà pistes sobre com resoldre el "
+"problema i detalls addicionals sobre com s'ha de resoldre el problema. Per a "
+"problemes no crítics que tenen solució trivial, també es pot afegir "
+"l'etiqueta **problema inicial adequat**."
 
 #: ../../about/process/issue-tracking.rst:121
 msgid ""
@@ -520,6 +558,11 @@ msgid ""
 "developer should provide hints on how to test his patch in a comment on "
 "the issue."
 msgstr ""
+"Un cop s'assigna un *desenvolupador* i comença a treballa en el problema, es "
+"mou a «En desenvolupament». Tan aviat com tingui quelcom a mostrar, el "
+"problema es mourà a «Control de qualitat» per a comentaris. Si cal, el "
+"desenvolupador hauria de proveir instruccions sobre com verificar el pegat "
+"en un comentari al problema."
 
 #: ../../about/process/issue-tracking.rst:122
 msgid ""
@@ -528,6 +571,10 @@ msgid ""
 "Development”, else it’s closed and moved to “Release Candidate” to be "
 "included in the next release."
 msgstr ""
+"L'*Equip de control de qualitat* verifica la correcció del problema a tos "
+"els dispositius i proveeix reaccions al desenvolupador. Si es troben "
+"problemes, el problema torna a «En desenvolupament», en cas contrari es "
+"tanca i es mou a «Versió candidata» perquè s'inclogui al proper alliberament."
 
 #: ../../about/process/issue-tracking.rst:123
 msgid ""
@@ -535,28 +582,35 @@ msgid ""
 " done already) added to a milestone. Once the milestone is released, the "
 "issue is removed from the project."
 msgstr ""
+"Un cop s'inclou la correcció a la imatge versió candidata, es tanca el "
+"problema (si ja no s'ha fet) i s'afegeix una fita. Un cop es publica la "
+"fita, el problema s'elimina del projecte."
 
 #: ../../about/process/release-schedule.rst:2
 msgid "Release Schedule"
-msgstr ""
+msgstr "Calendari d'alliberament"
 
 #: ../../about/process/release-schedule.rst:4
 msgid "OTA updates usually follow this rhythm:"
-msgstr ""
+msgstr "Les actualitzacions OTA generalment segueixen aquest ritme:"
 
 #: ../../about/process/release-schedule.rst:6
 msgid "devel: daily builds"
-msgstr ""
+msgstr "desenvolupament: compilacions diàries"
 
 #: ../../about/process/release-schedule.rst:7
 msgid "rc: weekly if no critical issue exists in the devel channel"
 msgstr ""
+"versió candidata: setmanalment si no hi cap problema crític al canal de "
+"desenvolupament"
 
 #: ../../about/process/release-schedule.rst:8
 msgid ""
 "stable: every six through eight weeks, if no critical issue exists in the"
 " rc channel"
 msgstr ""
+"estable: cada entre sis i vuit setmanes, si no hi ha cap problema crític al "
+"canal versió candidata"
 
 #: ../../about/process/release-schedule.rst:11
 msgid ""
@@ -567,3 +621,10 @@ msgid ""
 "when all the issues can be handled. If there are too many issues added to"
 " a milestone, they are either removed or added to the next milestone."
 msgstr ""
+"Això no és un cicle definitiu. Els alliberaments estable estan llestos quan "
+"estan llestos i no haurien d'introduir errors nous o contenir funcionalitats "
+"molt incompletes. Atès que l'actualització OTA no est pot alliberar abans "
+"que es tanquin tots els problemes crítics, el temps estimat d'alliberament "
+"s'hauria de moure fent una estimació aproximada sobre quan es podran "
+"gestionar tots els problemes. Si hi ha massa problemes afegits a una fita, o "
+"bé s'eliminen o bé s'afegeixen al següent alliberament."
