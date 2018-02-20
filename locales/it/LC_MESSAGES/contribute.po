@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-08 19:46-0600\n"
-"PO-Revision-Date: 2018-01-08 07:55+0000\n"
-"Last-Translator: rocco <roccofoti@gmail.com>\n"
+"PO-Revision-Date: 2018-02-20 16:33+0000\n"
+"Last-Translator: Stefano Melchior <stefano.melchior@me.com>\n"
+"Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-contribute/it/>\n"
 "Language: it\n"
-"Language-Team: Italian <https://translate.ubports.com/projects/ubports-"
-"docs/documentation-contribute/it/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../contribute/bugreporting.rst:2
@@ -92,15 +93,13 @@ msgstr ""
 "su). Questo mostra che anche tu hai riscontrato il bug."
 
 #: ../../contribute/bugreporting.rst:20
-#, fuzzy
 msgid ""
 "If the report is missing any of the information specified later in this "
 "document, please add it yourself to help the developers fix the bug."
 msgstr ""
-"Se nella segnalazione manca qualsiasi informazione specificata "
-"successivamente in questo documento, aggiungila tu stesso per aiutare gli"
-" sviluppatori a sistemare il bug.\n"
-"Riprodurre il problema trovato"
+"Se nel report mancano alcune delle informazioni specificate di seguito in "
+"questo documento, aggungile per aiutare gli sviluppatori a risolvere il "
+"problema."
 
 #: ../../contribute/bugreporting.rst:23
 msgid "Reproduce the issue you've found"
@@ -172,9 +171,8 @@ msgid "cd to a folder where you're able to write the log"
 msgstr "spostati in una cartella in cui sei in grado di scrivere il log"
 
 #: ../../contribute/bugreporting.rst:43
-#, fuzzy
 msgid "Run the command: `adb shell dmesg > UTdmesg.txt`"
-msgstr "Avvia il comando: `adb shell \"dmesg\" > \"UTdmesg.txt\"`"
+msgstr "Lancia il comando: `adb shell \"dmesg\" > \"UTdmesg.txt\"`"
 
 #: ../../contribute/bugreporting.rst:45
 msgid ""
@@ -197,11 +195,10 @@ msgstr ""
 "debug da molte parti del sistema android sottostate."
 
 #: ../../contribute/bugreporting.rst:53
-#, fuzzy
 msgid "Run the command: `adb shell /android/system/bin/logcat -d > UTlogcat.txt`"
 msgstr ""
-"Avviare il comando: `adb shell \"/android/system/bin/logcat -d\" > "
-"\"UTlogcat.txt\"`"
+"Lanciare il comando: `adb shell \"/android/system/bin/logcat -d\" > \""
+"UTlogcat.txt\"`"
 
 #: ../../contribute/bugreporting.rst:56
 msgid ""
@@ -216,11 +213,12 @@ msgid "Making the bug report"
 msgstr "Fare la segnalazione del bug"
 
 #: ../../contribute/bugreporting.rst:61
-#, fuzzy
 msgid ""
 "Now it's time for what you've been waiting for, the bug report itself! "
 "Bug reports need to be filed in English."
-msgstr "Ora è il momento che stavi aspettanto, la segnalazione stessa!"
+msgstr ""
+"Ora è il momento che stavi aspettanto, la segnalazione del problema! Tale "
+"segnalazione deve essere fatta in inglese."
 
 #: ../../contribute/bugreporting.rst:63
 msgid ""
@@ -989,4 +987,3 @@ msgstr "Vai a quel collegamento per sapere ciò che significa esattamente."
 #~ "Il titolo, sottolineato con il simbolo"
 #~ " di uguale, è contenuto nell'indice "
 #~ "nella parte sinistra della pagina."
-
