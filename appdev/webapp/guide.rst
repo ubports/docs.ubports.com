@@ -1,10 +1,6 @@
 Guide
 =====
 
-This guide targets webapps for converged Ubuntu, that is, Ubuntu for Devices (phones and tablets). The Ubuntu Desktop has additional webapps support not covered here. Support for webapps on converged Ubuntu will continue to grow, and of course the future of Ubuntu is convergence, so stay tuned.
-
-Let’s take a look at how the run-time pieces fit together.
-
 How the webapp fits into the shell
 ----------------------------------
 
