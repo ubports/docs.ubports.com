@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-08 19:46-0600\n"
-"PO-Revision-Date: 2018-02-20 12:10+0000\n"
+"PO-Revision-Date: 2018-02-21 08:02+0000\n"
 "Last-Translator: Walter Garcia-Fontes <walter.garcia@upf.edu>\n"
 "Language-Team: Catalan <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-contribute/ca/>\n"
@@ -49,16 +49,25 @@ msgid ""
 "guide. If not, do a little dance! The bug has already been fixed and you "
 "can continue using Ubuntu Touch."
 msgstr ""
+"Això podria semblar obvi, però és fàcil no adonar-se. Aneu a (Configuració "
+"del sistema - Actualitzacions) i assegureu-vos que no hi ha cap "
+"actualització de l'Ubuntu disponible per al vostre dispositiu. Si no n'hi "
+"ha, continueu amb aquesta guia. Si hi ha, actualitzeu el dispositiu i proveu "
+"de reproduir l'error. Si encara és present, continueu amb aquesta guia. Si "
+"ja no hi és, feu un ballet! L'error s'ha arreglat i podeu continuar usant "
+"l'Ubuntu Touch."
 
 #: ../../contribute/bugreporting.rst:12
 msgid "Check if the bug is already reported"
-msgstr ""
+msgstr "Comproveu si ja s'ha informat de l'error"
 
 #: ../../contribute/bugreporting.rst:14
 msgid ""
 "Open up the bug tracker for `ubuntu-touch <https://github.com/ubports"
 "/ubuntu-touch>`_."
 msgstr ""
+"Obriu el seguidor d'errors per a l'`ubuntu-touch <https://github.com/ubports"
+"/ubuntu-touch>`_."
 
 #: ../../contribute/bugreporting.rst:16
 msgid ""
@@ -67,6 +76,10 @@ msgid ""
 "searching, use a few words that describe what you're seeing. For example,"
 " \"Lock screen transparent\" or \"Lock screen shows activities\"."
 msgstr ""
+"En primer lloc, heu d'assegurar-vos que l'error que esteu intentant reportar "
+"no s'ha reportat encara. Cerqueu als informes d'error. A la cerca, useu "
+"algunes poques paraules que descriguin el que esteu observant. Per exemple, «"
+"Pantalla de bloqueig transparent» o «Pantalla de bloqueig mostra activitats»."
 
 #: ../../contribute/bugreporting.rst:18
 msgid ""
@@ -74,16 +87,22 @@ msgid ""
 "Reaction\" button (it looks like a smiley face) and select the +1 (thumbs"
 " up) reaction. This shows that you are also experiencing the bug."
 msgstr ""
+"Si trobeu que ja existeix un informe d'error, trieu el botó «Afegiu la "
+"vostra reacció» (es veu com una cara somrient) i trieu la reacció +1 (polzes "
+"amunt). Això mostra que també esteu patint l'error."
 
 #: ../../contribute/bugreporting.rst:20
 msgid ""
 "If the report is missing any of the information specified later in this "
 "document, please add it yourself to help the developers fix the bug."
 msgstr ""
+"Si a l'informe li manca cap de les informacions especificades més endavant a "
+"aquest document, si us plau afegiu-les per ajudar als desenvolupadors a "
+"corregir l'error."
 
 #: ../../contribute/bugreporting.rst:23
 msgid "Reproduce the issue you've found"
-msgstr ""
+msgstr "Reproduïu el problema que heu trobat"
 
 #: ../../contribute/bugreporting.rst:25
 msgid ""
@@ -93,6 +112,11 @@ msgid ""
 "still occurs, continue on to the next step. `If not "
 "<https://youtu.be/nn2FB1P_Mn8?t=10s>`_..."
 msgstr ""
+"A continuació, esbrineu com recrear exactament l'error que heu trobat. "
+"Documenteu detalladament els passos exactes que heu fet per trobar el "
+"problema. Després, reinicieu el telèfon i realitzeu aquests passos un altre "
+"cop. Si encara es produeix el problema, continueu al pas següent. `Si no  "
+"<https://youtu.be/nn2FB1P_Mn8?t=10s>`_..."
 
 #: ../../contribute/bugreporting.rst:28
 msgid "Getting Logs"
