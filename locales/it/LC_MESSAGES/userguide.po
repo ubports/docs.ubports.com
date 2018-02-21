@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-08 19:46-0600\n"
-"PO-Revision-Date: 2018-02-16 09:13+0000\n"
-"Last-Translator: sambuccid <sambuccid@gmail.com>\n"
+"PO-Revision-Date: 2018-02-21 07:38+0000\n"
+"Last-Translator: Stefano Melchior <stefano.melchior@me.com>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-userguide/it/>\n"
 "Language: it\n"
@@ -147,15 +147,14 @@ msgid "CalDAV and CardDAV synchronization"
 msgstr "Sincronizzazione CalDAV e CardDAV"
 
 #: ../../userguide/advanceduse/dav.rst:4
-#, fuzzy
 msgid ""
 "CalDAV and CardDAV are protocols to syncronize calendars and contacts "
 "with a remote server. Many email-hosters provide a CalDAV and CardDAV "
 "interface."
 msgstr ""
 "CalDAV e CardDav sono protocolli che servono a sincronizzare i calendati e i "
-"contatti con un server remoto. Molti fornitori di email hanno anche servizi "
-"di CalDAV e CardDav."
+"contatti con un server remoto. Molti fornitori di email forniscono una "
+"interfaccia CalDAV e CardDav."
 
 #: ../../userguide/advanceduse/dav.rst:6
 msgid ""
@@ -253,13 +252,12 @@ msgid "Sources:"
 msgstr "Risorse:"
 
 #: ../../userguide/advanceduse/dav.rst:33
-#, fuzzy
 msgid ""
 "https://askubuntu.com/questions/616081/ubuntu-touch-add-contact-list-and-"
 "calendars/664834#664834"
 msgstr ""
-"askubuntu: https://askubuntu.com/questions/655321/ubuntu-touch-reverse-"
-"tethering-and-click-apps-updates"
+"https://askubuntu.com/questions/616081/ubuntu-touch-add-contact-list-and-"
+"calendars/664834#664834"
 
 #: ../../userguide/advanceduse/dav.rst:34
 msgid "https://gist.github.com/boTux/069b53d8e06bdb9b9c97"
@@ -636,9 +634,8 @@ msgid "Switch release channels"
 msgstr "Cambiare i canali di rilascio"
 
 #: ../../userguide/dailyuse/anbox.rst:2
-#, fuzzy
 msgid "Run android applications"
-msgstr "Esegui applicazioni desktop"
+msgstr "Esegui applicazioni android"
 
 #: ../../userguide/dailyuse/anbox.rst:4
 msgid ""
@@ -706,13 +703,12 @@ msgid "How to install"
 msgstr "Come installare"
 
 #: ../../userguide/dailyuse/anbox.rst:27
-#, fuzzy
 msgid ""
 "Because this feature is in such an early stage of development, the "
 "installation is only recommended for experienced users."
 msgstr ""
-"Dato che questa funzionalità è in uno stato molto prematuro di sviluppo, "
-"l'isntallazione è raccomandata soltanto a utenti esperti."
+"Dato che questa funzionalità è in uno stato di sviluppo piuttosto prematuro, "
+"l'installazione è raccomandata soltanto a utenti esperti."
 
 #: ../../userguide/dailyuse/anbox.rst:29
 msgid ""
@@ -762,7 +758,7 @@ msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:52
 msgid "Reporting bugs"
-msgstr ""
+msgstr "Report di bug (bachi)"
 
 #: ../../userguide/dailyuse/anbox.rst:54
 msgid ""
@@ -772,6 +768,11 @@ msgid ""
 "issues with anbox are reported on `our downstream fork "
 "<https://github.com/ubports/anbox/issues>`_. Thank you!"
 msgstr ""
+"Per sapere come :doc:`fare report di bug (bachi) </contribute/bugreporting>`"
+". Si possono fare i report dei bachi di Ubuntu Touch 16.04 nel `solito "
+"sistema di tracciamento di Ubuntu Touch<https://github.com/ubports/ubuntu-"
+"touch/issues>`_ mentre i problemi con anbox nel `nostro fork a valle "
+"<https://github.com/ubports/anbox/issues>`_. Grazie!"
 
 #: ../../userguide/dailyuse/index.rst:2
 msgid "Daily use"
@@ -907,9 +908,8 @@ msgid "Install a package:"
 msgstr "Installare un pacchetto:"
 
 #: ../../userguide/dailyuse/libertine.rst:48
-#, fuzzy
 msgid "``libertine-container-manager install-package -p PACKAGE-NAME``"
-msgstr "``libertine-container-manage install-package -p PACKAGE-NAME``"
+msgstr "``libertine-container-manager install-package -p PACKAGE-NAME``"
 
 #: ../../userguide/dailyuse/libertine.rst:50
 msgid "Remove a package:"
