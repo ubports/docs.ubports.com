@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-08 19:46-0600\n"
-"PO-Revision-Date: 2018-02-20 16:33+0000\n"
+"PO-Revision-Date: 2018-02-21 07:20+0000\n"
 "Last-Translator: Stefano Melchior <stefano.melchior@me.com>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-contribute/it/>\n"
@@ -103,7 +103,7 @@ msgstr ""
 
 #: ../../contribute/bugreporting.rst:23
 msgid "Reproduce the issue you've found"
-msgstr ""
+msgstr "Riprodurre il problema che si è trovato"
 
 #: ../../contribute/bugreporting.rst:25
 msgid ""
@@ -340,14 +340,14 @@ msgid "Title"
 msgstr "Titolo"
 
 #: ../../contribute/documentation.rst:18
-#, fuzzy
 msgid ""
 "All pages must have a document title that will be shown in the table of "
 "contents (left sidebar) and at the top of the page. This title is "
 "underlined with equals signs."
 msgstr ""
-"Tutte le pagine devono contenere un titolo di documento. Tale titolo è "
-"contenuto nell'indice (a sinistra) e nella parte alta della pagina."
+"Tutte le pagine devono contenere un titolo di documento, che sarà mostrato "
+"nell'indice (a sinistra) in cima alla pagina. Questo titolo sarà "
+"sottolineato con degli uguale (\"=\")."
 
 #: ../../contribute/documentation.rst:20
 msgid "Titles should be sentence cased rather than Title Cased. For example::"
@@ -472,7 +472,6 @@ msgstr ""
 "inserimento)."
 
 #: ../../contribute/documentation.rst:70
-#, fuzzy
 msgid ""
 "If there are any errors with your proposed changes, the documentation "
 "team will ask you to make some changes and resubmit. This is as simple as"
@@ -480,8 +479,8 @@ msgid ""
 msgstr ""
 "Se ci fossero degli errori nella tua proposta di modifica, il gruppo di "
 "lavoro della documentazione ti chiederebbe di fare le modifiche e "
-"reinviargliele. Questo è molto semplice, come modificare il file in "
-"GitHub dalla tua fork (deviazione) dal repository."
+"reinviargliele. Questo è molto semplice, come modificare il file in GitHub "
+"dalla tua fork (deviazione) dal repository."
 
 #: ../../contribute/documentation.rst:73
 msgid "Manually forking the repository"
@@ -593,14 +592,14 @@ msgid "Monetary support"
 msgstr "Supporto monetario"
 
 #: ../../contribute/monetary.rst:4
-#, fuzzy
 msgid ""
 "You can help us keep the lights on at UBports by becoming a patron on "
 "`Liberapay <https://liberapay.com/UBports/>`_ or `Patreon "
 "<https://www.patreon.com/ubports>`_!"
 msgstr ""
-"Puoi aiutarci nel mantenere vivo UBports diventandone un `patreon "
-"(patrocinatore) <https://www.patreon.com/ubports>`_!"
+"Puoi aiutarci nel mantenere vivo UBports diventandone un patreon "
+"(patrocinatore) su `Liberapay <https://liberapay.com/UBports/>`_  o su `"
+"Patreon <https://www.patreon.com/ubports>`_!"
 
 #: ../../contribute/monetary.rst:6
 msgid ""
