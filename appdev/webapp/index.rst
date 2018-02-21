@@ -21,3 +21,15 @@ This guide targets webapps for converged Ubuntu, that is, Ubuntu for Devices (ph
     :name: toc-webapp
     
     guide
+
+
+Debugging your webapp
+---------------------
+
+This guide give you some tips to help you debug your webapp.
+
+ .. toctree::
+    :maxdepth: 1
+    :name: toc-webapp-debug
+    
+    webdebug
