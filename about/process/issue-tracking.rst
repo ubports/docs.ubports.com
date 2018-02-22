@@ -14,7 +14,7 @@ distributed as with the system-image are tracked in the
 exception of this are click-apps that can be updated independently through
 the OpenStore.
 
-Most other repositories track isues locally. If you're unsure whether a
+Most other repositories track issues locally. If you're unsure whether a
 repository uses its own tracker or not, consult the README.md file.
 Repositories that don't track issues locally have their bugtracker disabled.
 
@@ -40,7 +40,7 @@ These are the standard columns:
 * **In Development**: A patch is in development. Usually means that a developer is assigned to the issue.
 * **Quality Assurance**: The patch is completed and has passed initial testing. The QA team will now review it and provide feedback. If problems are found, the issue is moved back to “Accepted”.
 * **Release Candidate**: The patch has passed QA and is ready for release. In case of deb-packages that are included in the system-image, the patch will be included in the next over-the-air update on the rc channel, and, if everything goes well, in the next release of the stable channel.
-* **None (removed from the project)**: If the isue is open and labeled "help wanted", community contributions are required to resolve the issue. If it's closed, that means that either a patch has been released on the stable channel (a comment on the issue should link to the patch) or the issue has been rejected (labeled “wontfix”).
+* **None (removed from the project)**: If the issue is open and labeled "help wanted", community contributions are required to resolve the issue. If it's closed, that means that either a patch has been released on the stable channel (a comment on the issue should link to the patch) or the issue has been rejected (labeled “wontfix”).
 
 Labels
 ------
