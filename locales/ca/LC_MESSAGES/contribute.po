@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-08 19:46-0600\n"
-"PO-Revision-Date: 2018-02-21 08:02+0000\n"
+"PO-Revision-Date: 2018-02-22 07:54+0000\n"
 "Last-Translator: Walter Garcia-Fontes <walter.garcia@upf.edu>\n"
 "Language-Team: Catalan <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-contribute/ca/>\n"
@@ -120,7 +120,7 @@ msgstr ""
 
 #: ../../contribute/bugreporting.rst:28
 msgid "Getting Logs"
-msgstr ""
+msgstr "Obtenció dels registres"
 
 #: ../../contribute/bugreporting.rst:30
 msgid ""
@@ -128,112 +128,142 @@ msgid ""
 "general, /var/log/dmesg and the output of /android/system/bin/logcat are "
 "helpful when resolving an issue. I'll show you how to get these logs."
 msgstr ""
+"Ens agrada rebre quant més registres millor quan informeu d'un error. En "
+"general, /var/log/dmesg i la sortida de /android/system/bin/logcat són útils "
+"quan s'està resolent un problema. Us mostraré com obtenir aquests registres."
 
 #: ../../contribute/bugreporting.rst:32
 msgid ""
 "To get set ready, follow the steps to :doc:`set up ADB "
 "</userguide/advanceduse/adb>`."
 msgstr ""
+"Per preparar-vos, seguiu els passos de :doc:`preparació de l'ADB "
+"</userguide/advanceduse/adb>`."
 
 #: ../../contribute/bugreporting.rst:34
 msgid "Now, you can get the two most important logs."
-msgstr ""
+msgstr "A continuació, podeu obtenir els dos registres més importants."
 
 #: ../../contribute/bugreporting.rst:37
 msgid "dmesg"
-msgstr ""
+msgstr "dmesg"
 
 #: ../../contribute/bugreporting.rst:39
 msgid ""
 "The **dmesg** (*display message* or *driver message*) command displays "
 "debug messages from the kernel."
 msgstr ""
+"L'ordre **dmesg** (*display message*, mostra el missatge, o *driver message*"
+", missatge del controlador) mostra missatges de depuració del nucli."
 
 #: ../../contribute/bugreporting.rst:41 ../../contribute/bugreporting.rst:54
 msgid ""
 "Using the steps you documented earlier, reproduce the issue you're "
 "reporting"
 msgstr ""
+"Usant els passos que vau documentar abans, reproduïu el problema que esteu "
+"informant"
 
 #: ../../contribute/bugreporting.rst:42 ../../contribute/bugreporting.rst:52
 msgid "cd to a folder where you're able to write the log"
-msgstr ""
+msgstr "canvieu a una carpeta on podeu escriure el registre"
 
 #: ../../contribute/bugreporting.rst:43
 msgid "Run the command: `adb shell dmesg > UTdmesg.txt`"
-msgstr ""
+msgstr "Executeu l'ordre: `adb shell dmesg > UTdmesg.txt`"
 
 #: ../../contribute/bugreporting.rst:45
 msgid ""
 "This log should now be located at UTdmesg.txt under your working "
 "directory, ready for uploading later."
 msgstr ""
+"Aquest registre hauria d'estar ubicat ara a UTdmesg.txt al vostre directori "
+"de treball, ja preparat per pujar-lo més tard."
 
 #: ../../contribute/bugreporting.rst:48
 msgid "logcat"
-msgstr ""
+msgstr "logcat"
 
 #: ../../contribute/bugreporting.rst:50
 msgid ""
 "The **logcat** (*log concatenator*) command displays debug information "
 "from various parts of the underlying android system."
 msgstr ""
+"L'ordre **logcat** (*concatenar registres*) mostra informació de depuració "
+"de diverses parts del sistema android subjacent."
 
 #: ../../contribute/bugreporting.rst:53
 msgid "Run the command: `adb shell /android/system/bin/logcat -d > UTlogcat.txt`"
 msgstr ""
+"Executeu l'ordre: `adb shell /android/system/bin/logcat -d > UTlogcat.txt`"
 
 #: ../../contribute/bugreporting.rst:56
 msgid ""
 "This log will be located at UTlogcat.txt in your current working "
 "directory, so you'll be able to upload it later."
 msgstr ""
+"Aquest registre s'ubicarà a UTlogcat.txt al vostre directori de treball, de "
+"manera que el podeu pujar més tard."
 
 #: ../../contribute/bugreporting.rst:59
 msgid "Making the bug report"
-msgstr ""
+msgstr "Preparació de l'informe d'error"
 
 #: ../../contribute/bugreporting.rst:61
 msgid ""
 "Now it's time for what you've been waiting for, the bug report itself! "
 "Bug reports need to be filed in English."
 msgstr ""
+"Ara és el moment que heu estat esperant, el propi informe d'error. Els "
+"informes d'error s'han d'enviar en anglès."
 
 #: ../../contribute/bugreporting.rst:63
 msgid ""
 "First, pull up the `bug tracker <https://github.com/ubports/ubuntu-"
 "touch>`_ and click \"New Issue\". Log in to GitHub if you haven't yet."
 msgstr ""
+"En primer lloc , obriu el `seguidor d'errors <https://github.com/ubports"
+"/ubuntu-touch>`_ cliqueu «Problema nou». Inicieu una sessió al GitHub, si ja "
+"no ho heu fet."
 
 #: ../../contribute/bugreporting.rst:65
 msgid ""
 "Next, you'll need to name your bug. Pick a name that says what's "
 "happening, but don't be too wordy. Four to eight words should be enough."
 msgstr ""
+"A continuació, haureu d'anomenar el vostre error. Trieu un nom que digui el "
+"que està passant, però no useu massa verbositat. Quatre a vuit paraules "
+"haurien de ser prou."
 
 #: ../../contribute/bugreporting.rst:67
 msgid "Now, write your bug report. A good bug report includes the following:"
 msgstr ""
+"A continuació, escriviu el vostre informe d'error. Un bon informe d'error "
+"inclou el següent:"
 
 #: ../../contribute/bugreporting.rst:69
 msgid "What happened: A synopsis of the erroneous behavior"
-msgstr ""
+msgstr "Què ha passat: Una sinopsi del comportament erroni"
 
 #: ../../contribute/bugreporting.rst:70
 msgid ""
 "What I expected to happen: A synopsis of what should have happened, if "
 "there wasn't an error"
 msgstr ""
+"Què és el que s'espera que passi: Una sinopsi del que hauria d'haver passat, "
+"si no hi ha hagut un error"
 
 #: ../../contribute/bugreporting.rst:71
 msgid "Steps to reproduce: You wrote these down earlier, right?"
-msgstr ""
+msgstr "Passos per reproduir: Ja heu anotat això abans, oi que sí?"
 
 #: ../../contribute/bugreporting.rst:72
 msgid ""
 "Logs: Attach your logs by clicking and dragging them into your GitHub "
 "issue."
 msgstr ""
+"Registres: Adjunteu el vostres registres clicant-los i arrossegant-los al "
+"vostre problema al GitHub."
 
 #: ../../contribute/bugreporting.rst:73
 msgid ""
@@ -241,6 +271,10 @@ msgid ""
 "\"OS\" line of this screen. Also include the release channel that you "
 "used when you installed Ubuntu on this phone."
 msgstr ""
+"Versió del programari: Aneu a (Configuració del sistema - Quant a) i feu una "
+"llista del que apareix a la línia «Sistema operatiu» d'aquesta pantalla. "
+"Incloeu també el canal d'alliberament que vau usar quan vau instal·lar "
+"l'Ubuntu a aquest telèfon."
 
 #: ../../contribute/bugreporting.rst:75
 msgid ""
@@ -249,6 +283,10 @@ msgid ""
 "the issue on in the description so a moderator can easily add the correct"
 " tags later."
 msgstr ""
+"Un cop que heu acabat amb això, publiqueu l'error. No teniu permís per "
+"afegir etiquetes, així que si us plau no us oblideu d'indicar el dispositiu "
+"en el qual esteu experimentant el problema a la descripció, de manera que un "
+"moderador pugui afegir fàcilment les etiquetes correctes més tard."
 
 #: ../../contribute/bugreporting.rst:77
 msgid ""
@@ -256,10 +294,14 @@ msgid ""
 " can begin on it. If you are missing any information, you will be asked "
 "for it, so make sure to check in often!"
 msgstr ""
+"Un desenvolupador o un membre de l'equip de control de qualitat confirmarà i "
+"farà el triatge del vostre error, i a continuació es pot començar a "
+"treballar-lo. Si ha faltat alguna informació, se us demanarà, per tant "
+"torneu a contactar sovint!"
 
 #: ../../contribute/documentation.rst:2
 msgid "Documentation"
-msgstr ""
+msgstr "Documentació"
 
 #: ../../contribute/documentation.rst:5
 msgid ""
@@ -267,12 +309,17 @@ msgid ""
 "short. Please check the `RST Primer <http://www.sphinx-"
 "doc.org/en/stable/rest.html>`_ if you are not familiar with RST."
 msgstr ""
+"La documentació d'aquest lloc està escrita en ReStructuredTex, o, "
+"abreujadament, RST. Si us plau mireu `RST Primer <http://www.sphinx-"
+"doc.org/en/stable/rest.html>`_  si no coneixeu el RST."
 
 #: ../../contribute/documentation.rst:7
 msgid ""
 "This page will guide you through writing great documentation for the "
 "UBports project that can be featured on this site."
 msgstr ""
+"Aquesta pàgina us guiarà en la escriptura de magnifica documentació per al "
+"projecte UBports que es pot mostrar a aquest lloc."
 
 #: ../../contribute/documentation.rst:10
 msgid "Documentation guidelines"
