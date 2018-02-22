@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-08 19:46-0600\n"
-"PO-Revision-Date: 2018-02-20 09:55+0000\n"
-"Last-Translator: Max Libre <libremax@protonmail.com>\n"
+"PO-Revision-Date: 2018-02-22 19:58+0000\n"
+"Last-Translator: Laurent Rouxel <lrouxel@free.fr>\n"
 "Language-Team: French <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-userguide/fr/>\n"
 "Language: fr\n"
@@ -509,7 +509,7 @@ msgstr "source initiale: https://wiki.ubuntu.com/Touch/ScreenRecording"
 
 #: ../../userguide/advanceduse/screencasting.rst:75
 msgid "demo: https://www.youtube.com/watch?v=HYm4RUwwo5Q"
-msgstr "demonstration: https://www.youtube.com/watch?v=HYm4RUwwo5Q"
+msgstr "démonstration: https://www.youtube.com/watch?v=HYm4RUwwo5Q"
 
 #: ../../userguide/advanceduse/ssh.rst:2
 msgid "Shell access via ssh"
@@ -563,7 +563,7 @@ msgid ""
 "Connect the ubports device and the PC with a USB cable. Then copy the "
 "file using your filemanager."
 msgstr ""
-"Connectez l'appareil UBprts et le PC avec un câble USB. Copiez alors le "
+"Connectez l'appareil UBports et le PC avec un câble USB. Copiez alors le "
 "fichier en utilisant votre gestionnaire de fichier."
 
 #: ../../userguide/advanceduse/ssh.rst:21
@@ -747,11 +747,12 @@ msgid ""
 "Connect the device to your computer computer and run the following "
 "commands::"
 msgstr ""
-"Connecter le périphérique à votre ordinateur et lancer la commande suivante :"
+"Connecter le périphérique à votre ordinateur et lancer les commandes "
+"suivantes :"
 
 #: ../../userguide/dailyuse/anbox.rst:40
 msgid "wait for the device to reboot, then run::"
-msgstr "attender que le périphérique redémare, ensuite lancer :"
+msgstr "attendez que le périphérique redémarre, ensuite lancer :"
 
 #: ../../userguide/dailyuse/anbox.rst:49
 msgid ""
@@ -760,7 +761,7 @@ msgid ""
 "screen and release) for the app to show up."
 msgstr ""
 "Sélectionner \"Anbox\" dans les scopes d'applications pour utiliser les "
-"applications android. Vous devrez peut-être rafraichir le scope des "
+"applications android. Vous devrez peut-être rafraîchir le scope des "
 "applications (tirer vers le centre de l'écran et relâcher) pour que "
 "l'application apparaisse."
 
@@ -776,7 +777,7 @@ msgid ""
 "issues with anbox are reported on `our downstream fork "
 "<https://github.com/ubports/anbox/issues>`_. Thank you!"
 msgstr ""
-"S'il vous plait :doc:`signaler tout bug </contribute/bugreporting>` que vous "
+"S'il vous plaît :doc:`signaler tout bug </contribute/bugreporting>` que vous "
 "rencontrez. Les bugs concernant Ubuntu Touch 16.04 sont signalés dans `le "
 "traqueur normal Ubuntu Touch <https://github.com/ubports/ubuntu-"
 "touch/issues>`_ et les problèmes concernant anbox sont signalés dans `notre "
@@ -862,7 +863,7 @@ msgid ""
 " (some hundred of megabytes)."
 msgstr ""
 "Le processus de création peut prendre un peu de temps à cause de la taille "
-"du container (quelques centaines de megabytes)."
+"du container (quelques centaines de mégaoctets)."
 
 #: ../../userguide/dailyuse/libertine.rst:26
 msgid ""
@@ -893,7 +894,7 @@ msgstr "``libertine-container-manager list``"
 
 #: ../../userguide/dailyuse/libertine.rst:35
 msgid "Destroy a container"
-msgstr "Détruiser un conteneur"
+msgstr "Détruire un conteneur"
 
 #: ../../userguide/dailyuse/libertine.rst:37
 msgid "``libertine-container-manager destroy -i CONTAINER-IDENTIFIER``"
@@ -1002,7 +1003,7 @@ msgstr "Accès Shell"
 #: ../../userguide/dailyuse/libertine.rst:83
 msgid "To execute any arbitrary command as root inside the container run:"
 msgstr ""
-"Pour éxécuter n'importe quelle commande en tant que root à l'intérieur d'un "
+"Pour exécuter n'importe quelle commande en tant que root à l'intérieur d'un "
 "conteneur, lancer :"
 
 #: ../../userguide/dailyuse/libertine.rst:85
@@ -1012,7 +1013,7 @@ msgstr "``libertine-container-manager exec -c COMMAND``"
 #: ../../userguide/dailyuse/libertine.rst:87
 msgid "For example, to get a shell into your container you can run:"
 msgstr ""
-"PAr exemple, pour avoir un shell dans votre conteneur, vous pouvez lancer :"
+"Par exemple, pour avoir un shell dans votre conteneur, vous pouvez lancer :"
 
 #: ../../userguide/dailyuse/libertine.rst:89
 msgid "``libertine-container-manager exec -c /bin/bash``"
@@ -1028,7 +1029,7 @@ msgid ""
 msgstr ""
 "Quand vous lancez bash de cette manière, vous n'aurez aucun retour "
 "confirmant que vous êtes à l'intérieur de ce conteneur. Vous pouvez "
-"cependant lancer ``ls /`` pour réaliser que vous êtes bien à l'intéreur de "
+"cependant lancer ``ls /`` pour vérifier que vous êtes bien à l’intérieur de "
 "ce conteneur."
 
 #: ../../userguide/dailyuse/libertine.rst:94
@@ -1041,7 +1042,7 @@ msgstr "``DISPLAY= libertine-launch -i CONTAINER-IDENTIFIER /bin/bash``"
 
 #: ../../userguide/dailyuse/libertine.rst:99
 msgid "Background"
-msgstr "Fond d'écran"
+msgstr "Arrière-plan"
 
 #: ../../userguide/dailyuse/libertine.rst:101
 msgid ""
@@ -1053,10 +1054,10 @@ msgid ""
 "to display desktop applications."
 msgstr ""
 "Un serveur d'affichage coordonne les entrées et les sorties d'un système "
-"d'exploitation. La plupart des distributions Linux utilise de nos jours un "
+"d'exploitation. La plupart des distributions Linux utilisent de nos jours un "
 "serveur X. Ubuntu touch n'utilise pas de serveur X mais utilise un nouveau "
 "serveur d'affichage appelé Mir. Cela signifie que les applications standard "
-"Xne sont pas directement compatibles avec Ubuntu Touch. Une couche de "
+"X ne sont pas directement compatibles avec Ubuntu Touch. Une couche de "
 "compatibilité appelé XMir est nécessaire. Libertine utilise donc XMir pour "
 "afficher les applications de bureau."
 
@@ -1108,8 +1109,8 @@ msgid ""
 "installer/releases/latest>`_ and download the version of the installer "
 "for your operating system:"
 msgstr ""
-"Aller sur `the download page <https://github.com/ubports/ubports-"
-"installer/releases/latest>`_ et télécharger la version de l'installateur "
+"Allez sur `la page de téléchargement <https://github.com/ubports/ubports-"
+"installer/releases/latest>`_ et téléchargez la version de l'installateur "
 "pour votre système d'exploitation :"
 
 #: ../../userguide/install.rst:11
@@ -1134,7 +1135,7 @@ msgid ""
 "you through the installation process. That's it! Have fun exploring "
 "Ubuntu Touch!"
 msgstr ""
-"Démarer l'installateur et suiver les instructions sur l'écran qui vous "
+"Démarrer l'installateur et suivre les instructions sur l'écran qui vous "
 "guideront à travers le processus d'installation. C'est tout ! Prenez plaisir "
 "en explorant Ubuntu Touch !"
 
