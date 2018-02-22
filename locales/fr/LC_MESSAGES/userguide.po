@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-03 14:44-0600\n"
-"PO-Revision-Date: 2018-02-22 19:58+0000\n"
+"PO-Revision-Date: 2018-03-04 07:57+0000\n"
 "Last-Translator: Laurent Rouxel <lrouxel@free.fr>\n"
+"Language-Team: French <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-userguide/fr/>\n"
 "Language: fr\n"
-"Language-Team: French <https://translate.ubports.com/projects/ubports-"
-"docs/documentation-userguide/fr/>\n"
-"Plural-Forms: nplurals=2; plural=n > 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.3\n"
 
 #: ../../userguide/advanceduse/adb.rst:2
@@ -810,17 +811,16 @@ msgstr ""
 "Touch."
 
 #: ../../userguide/dailyuse/libertine.rst:6
-#, fuzzy
 msgid ""
 "To display and launch applications you need the *Desktop Apps Scope* "
 "which is available in the `Open Store <https://open-store.io/app"
 "/libertine-scope.ubuntu>`_. To install applications you need to use the "
 "commandline as described below."
 msgstr ""
-"Pour afficher et lancer ces applications, vous avez besoin du *Desktop "
-"Apps Scope* qui est disponible dans le Canonical App Store. Pour "
-"installer ces applications, vous devez utiliser la ligne de commande "
-"comme décrit en dessous."
+"Pour afficher et lancer ces applications, vous avez besoin du *Desktop Apps "
+"Scope* qui est disponible dans `l'Open Store <https://open-store.io/app"
+"/libertine-scope.ubuntu>`_. Pour installer ces applications, vous devez "
+"utiliser la ligne de commande comme décrit en dessous."
 
 #: ../../userguide/dailyuse/libertine.rst:9
 msgid "Manage containers"
@@ -1244,4 +1244,3 @@ msgstr ""
 
 #~ msgid "``libertine-container-manage install-package -p PACKAGE-NAME``"
 #~ msgstr ""
-
