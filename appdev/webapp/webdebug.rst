@@ -12,10 +12,9 @@ there are two ways to gain further information on the failure.
 Watch the logs
 --------------
 
-If you are comfortable in a CLI environment, most Javascript errors will leave an entry in this file::
+If you are comfortable in a CLI environment, most Javascript errors will leave an entry in the app log file::
 
-  .cache/upstart/application-legacy-webbrowser-app-.log 
-
+  .cache/upstart/application-click-[YOUR_APP_NAME.AUTHOR_NAME..].log
 
 
 Debugging in the browser
