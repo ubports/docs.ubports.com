@@ -10,4 +10,5 @@ es
 it
 ro
 ca
+zh_CN
 "

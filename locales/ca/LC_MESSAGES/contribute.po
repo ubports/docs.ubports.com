@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-08 19:46-0600\n"
+"POT-Creation-Date: 2018-02-23 17:57+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.5.1\n"
+"Generated-By: Babel 2.5.3\n"
 
 #: ../../contribute/bugreporting.rst:2
 msgid "Bug reporting"
@@ -467,14 +467,29 @@ msgid ""
 "This page explains how to help the UBports QA team, both as an official "
 "member or a new contributor. Please also read the :doc:`issue tracking "
 "</about/process/issue-tracking>` and :doc:`bugreporting <bugreporting>` "
-"guides to better understand the workflow."
+"guides to better understand the workflow. For real-time communication, "
+"you can join our `telegram group <http://t.me/ubports_qa_team>`_."
 msgstr ""
 
 #: ../../contribute/quality-assurance.rst:7
-msgid "Confirming bug reports"
+msgid "Smoke testing"
 msgstr ""
 
 #: ../../contribute/quality-assurance.rst:9
+msgid ""
+"To test the core functionality of the operating system, we have compiled "
+"`a set of standardized tests "
+"<https://nc.ubports.com/s/3RnAI7tYzB2PMXs>`_. Run these tests on your "
+"device to :doc:`find and report bugs and regressions <bugreporting>`. "
+"It's usually run on all devices before a new release to make sure no new "
+"issues were introduced."
+msgstr ""
+
+#: ../../contribute/quality-assurance.rst:12
+msgid "Confirming bug reports"
+msgstr ""
+
+#: ../../contribute/quality-assurance.rst:14
 msgid ""
 "Unconfirmed bugreports are labeld **needs confirmation** to enable "
 "`global filtering <https://github.com/ubports/ubuntu-"
@@ -486,7 +501,7 @@ msgid ""
 "number and whether or not you were able to reproduce the issue."
 msgstr ""
 
-#: ../../contribute/quality-assurance.rst:11
+#: ../../contribute/quality-assurance.rst:16
 msgid ""
 "If you have write-access to the repository, you can replace the **needs "
 "confirmation** label with **bug** (to mark it confirmed) or **invalid** "
@@ -494,18 +509,18 @@ msgid ""
 "closed."
 msgstr ""
 
-#: ../../contribute/quality-assurance.rst:13
+#: ../../contribute/quality-assurance.rst:18
 msgid ""
 "If you find two issues describing the same problem, leave a comment and "
 "try to find their differences. If they are in fact identical, close the "
 "newer one and label it **duplicate**."
 msgstr ""
 
-#: ../../contribute/quality-assurance.rst:16
+#: ../../contribute/quality-assurance.rst:21
 msgid "Testing patches"
 msgstr ""
 
-#: ../../contribute/quality-assurance.rst:18
+#: ../../contribute/quality-assurance.rst:23
 msgid ""
 "Once a developer finished working on an issue, it's moved to the quality "
 "assurance column of the `GitHub project <https://github.com/ubports"
@@ -518,11 +533,11 @@ msgid ""
 ":doc:`issue tracking guidelines </about/process/issue-tracking>`."
 msgstr ""
 
-#: ../../contribute/quality-assurance.rst:21
+#: ../../contribute/quality-assurance.rst:26
 msgid "Initial triaging of issues"
 msgstr ""
 
-#: ../../contribute/quality-assurance.rst:23
+#: ../../contribute/quality-assurance.rst:28
 msgid ""
 "Initial triaging of new issues is done by QA-team members with write-"
 "access to the repository. If a new issue is filed, read the report and "
@@ -531,7 +546,7 @@ msgid ""
 "start confirming the bugreport."
 msgstr ""
 
-#: ../../contribute/quality-assurance.rst:25
+#: ../../contribute/quality-assurance.rst:30
 msgid ""
 "If the new issue has already been reported elsewhere, label it "
 "**duplicate** and close it."
@@ -727,4 +742,14 @@ msgstr ""
 #: ../../contribute/translations.rst:73
 msgid "Go to that link to learn what this exactly means."
 msgstr ""
+
+#~ msgid ""
+#~ "This page explains how to help the"
+#~ " UBports QA team, both as an "
+#~ "official member or a new contributor."
+#~ " Please also read the :doc:`issue "
+#~ "tracking </about/process/issue-tracking>` and "
+#~ ":doc:`bugreporting <bugreporting>` guides to "
+#~ "better understand the workflow."
+#~ msgstr ""
 

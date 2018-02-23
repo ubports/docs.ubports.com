@@ -3,23 +3,24 @@
 # This file is distributed under the same license as the UBports package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-23 17:57+0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-02-23 20:17+0800\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.3\n"
+"Last-Translator: Luo Yufan <njlyf2011@hotmail.com>\n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #: ../../about/introduction.rst:2
 msgid "Introduction"
-msgstr ""
+msgstr "简介"
 
 #: ../../about/introduction.rst:4
 msgid ""
@@ -27,10 +28,12 @@ msgid ""
 "an open-source (GPL if possible) mobile operating system that converges "
 "and respects your freedom."
 msgstr ""
+"这是 UBports 项目的文档。我们的目标是建立一个开源的（尽可能使用 GPL）、融"
+"合的、尊重您的自由的移动操作系统。"
 
 #: ../../about/introduction.rst:7
 msgid "About UBports"
-msgstr ""
+msgstr "关于 UBports"
 
 #: ../../about/introduction.rst:9
 msgid ""
@@ -39,6 +42,8 @@ msgid ""
 "other in hopes of bringing the Ubuntu Touch platform to more and more "
 "devices."
 msgstr ""
+"UBports 项目由 Marius Gripsgard 于 2015 年创建，在初期阶段，开发者可以分"
+"享想法并相互学习，希望能将 Ubuntu Touch 带入更多设备。"
 
 #: ../../about/introduction.rst:11
 msgid ""
@@ -48,10 +53,14 @@ msgid ""
 "UBports and its sister projects began work on the open-source code, "
 "maintaining and expanding its possiblilities for the future."
 msgstr ""
+"在 Canonical 突然宣布他们将于 2017 年 4  月   `计划终止对 Ubuntu Touch 的"
+"支持之后 <https://insights.ubuntu.com/2017/04/05/growing-ubuntu-for-"
+"cloud-and-iot-rather-than-phone-and-convergence/>`_，UBports 及其姊妹项目"
+"开始在开源代码上工作，维护并扩展其未来的可能性。"
 
 #: ../../about/introduction.rst:14
 msgid "About the Documentation"
-msgstr ""
+msgstr "关于本文档"
 
 #: ../../about/introduction.rst:16
 msgid ""
@@ -62,18 +71,27 @@ msgid ""
 "`Read the Docs <https://readthedocs.io>`_. You can start contributing by "
 "checking out the :doc:`Documentation intro </contribute/documentation>`."
 msgstr ""
+"感谢 UBports 社区的成员，本文档得以持续改进。它由 ReStructuredText 编写，"
+"并通过 `Sphinx <http://www.sphinx-doc.org/en/stable/>`_, `ReCommonMark "
+"<http://recommonmark.readthedocs.io/en/latest/>`_ 和 and `Read the Docs "
+"<https://readthedocs.io>`_ 转换成可读形式。请参阅 :doc:`文档介绍 </"
+"contribute/documentation>` 提供帮助。"
 
 #: ../../about/introduction.rst:18
+#, fuzzy
 msgid ""
 "All documents are licensed under the Creative Commons Attribution "
 "ShareAlike 4.0 (`CC-BY-SA 4.0 <https://creativecommons.org/licenses/by-"
-"sa/4.0/>`_) license. Please give attribution to \"The UBports "
-"Community\"."
+"sa/4.0/>`_) license. Please give attribution to \"The UBports Community"
+"\"."
 msgstr ""
+"所有的文档均根据知识共享署名 - 相同方式共享4.0 (`CC-BY-SA 4.0 <https://"
+"creativecommons.org/licenses/by-sa/4.0/>`_)许可证进行许可。请署名  “The "
+"UBports Community”。"
 
 #: ../../about/introduction.rst:21
 msgid "Attribution"
-msgstr ""
+msgstr "归属"
 
 #: ../../about/introduction.rst:23
 msgid ""
@@ -81,37 +99,41 @@ msgid ""
 "Documentation <http://docs.godotengine.org/en/stable/>`_, attribution to "
 "Juan Linietsky, Ariel Manzur and the Godot community."
 msgstr ""
+"本文档很大程度上仿照归属于 Juan Linietsky、Ariel Manzur 及 Godot 社区的  "
+"`Godot Engine's 文档 <http://docs.godotengine.org/en/stable/>`_。"
 
 #: ../../about/process/index.rst:2
 msgid "Processes"
-msgstr ""
+msgstr "流程"
 
 #: ../../about/process/index.rst:4
 msgid ""
 "This section of the documentation details standardized processes for "
 "different teams."
-msgstr ""
+msgstr "这部分文档详细说明了不同团队的标准化进程。"
 
 #: ../../about/process/index.rst:7
 msgid ""
 "The process definitions are still a work in progress and need to be "
 "completed by the respective teams."
-msgstr ""
+msgstr "流程定义仍在进行中，它需要由各个团队来完成。"
 
 #: ../../about/process/issue-tracking.rst:2
 msgid "Issue-Tracking Guidelines"
-msgstr ""
+msgstr "问题跟踪指南"
 
 #: ../../about/process/issue-tracking.rst:4
 msgid ""
 "This document describes the standard process of dealing with new issues "
-"in UBports projects. Not to be confused with the :doc:`guide on writing a"
-" good bugreport </contribute/bugreporting>`."
+"in UBports projects. Not to be confused with the :doc:`guide on writing "
+"a good bugreport </contribute/bugreporting>`."
 msgstr ""
+"本文档介绍处理 UBports 项目中新问题的标准流程。请勿和  :doc:`如何编写错误"
+"报告 </contribute/bugreporting>` 混淆。"
 
 #: ../../about/process/issue-tracking.rst:7
 msgid "Where are bugs tracked?"
-msgstr ""
+msgstr "跟踪哪些 bug？"
 
 #: ../../about/process/issue-tracking.rst:9
 msgid ""
@@ -140,19 +162,19 @@ msgstr ""
 
 #: ../../about/process/issue-tracking.rst:25
 msgid ""
-"Practicality beats purity! Exceptions might apply and should be described"
-" in the projects README.md file."
+"Practicality beats purity! Exceptions might apply and should be "
+"described in the projects README.md file."
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:28
 msgid "GitHub projects"
-msgstr ""
+msgstr "GitHub 项目"
 
 #: ../../about/process/issue-tracking.rst:30
 msgid ""
 "To increase transparency and communication, GitHub projects (Kanban-"
-"Boards) are used whereever practical. In case of github.com/ubports"
-"/ubuntu-touch, a single project is used for all issues. Projects support "
+"Boards) are used whereever practical. In case of github.com/ubports/"
+"ubuntu-touch, a single project is used for all issues. Projects support "
 "filtering by labels, so that only issues that belong to a specific team "
 "or affect a specific device can be viewed."
 msgstr ""
@@ -164,18 +186,18 @@ msgstr ""
 #: ../../about/process/issue-tracking.rst:38
 msgid ""
 "**None (awaiting triage)**: The issue has been approved by a member of "
-"the qa team and is awaiting review from the responsible development team."
-" if the issue is a bug, instructions to reproduce are included in the "
-"issue description. if the issue is a feature request, it has passed a "
-"primary sanity check by the qa-team but has not yet been accepted by the "
-"responsible development-team."
+"the qa team and is awaiting review from the responsible development "
+"team. if the issue is a bug, instructions to reproduce are included in "
+"the issue description. if the issue is a feature request, it has passed "
+"a primary sanity check by the qa-team but has not yet been accepted by "
+"the responsible development-team."
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:39
 msgid ""
 "**Accepted**: The issue has been accepted by the responsible development-"
-"team. If the issue is a bugreport, the team has decided that it should be"
-" fixable and accepts the responsibility. If the issue is a featrue "
+"team. If the issue is a bugreport, the team has decided that it should "
+"be fixable and accepts the responsibility. If the issue is a featrue "
 "request, the team thinks it should be implemented as described."
 msgstr ""
 
@@ -188,8 +210,8 @@ msgstr ""
 #: ../../about/process/issue-tracking.rst:41
 msgid ""
 "**Quality Assurance**: The patch is completed and has passed initial "
-"testing. The QA team will now review it and provide feedback. If problems"
-" are found, the issue is moved back to “Accepted”."
+"testing. The QA team will now review it and provide feedback. If "
+"problems are found, the issue is moved back to “Accepted”."
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:42
@@ -211,70 +233,79 @@ msgstr ""
 
 #: ../../about/process/issue-tracking.rst:46
 msgid "Labels"
-msgstr ""
+msgstr "标签"
 
 #: ../../about/process/issue-tracking.rst:48
 #, python-format
 msgid ""
 "All issues - even closed ones - should be labeled to allow the use of "
 "GitHub's global filtering. For example, `these are all of the issues "
-"labeled 'enhancement' inside @ubports "
-"<https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+org%3Aubports+label%3A%22feature+request%22&type=>`_."
-" Consult the `GitHub help pages <https://help.github.com/articles/about-"
-"searching-on-github/>`__ for more information on search and filtering."
+"labeled 'enhancement' inside @ubports <https://github.com/search?utf8="
+"%E2%9C%93&q=is%3Aopen+org%3Aubports+label%3A%22feature+request"
+"%22&type=>`_. Consult the `GitHub help pages <https://help.github.com/"
+"articles/about-searching-on-github/>`__ for more information on search "
+"and filtering."
 msgstr ""
+"所有问题 - 甚至是已关闭的问题 - 都应该贴上标签以使用 GitHub 的全局过滤功"
+"能。比如  `这些都是 @ubports 内部标记为“增强功能”的所有问题<https://"
+"github.com/search?utf8=%E2%9C%93&q=is%3Aopen+org%3Aubports+label%3A"
+"%22feature+request%22&type=>`_。有关搜索和过滤的更多信息，请参阅 `GitHub "
+"帮助页面 <https://help.github.com/articles/about-searching-on-github/"
+">`__ 以获取更多信息。"
 
 #: ../../about/process/issue-tracking.rst:51
 msgid "Here's a list of labels that are normally used by all repositories."
-msgstr ""
+msgstr "这里是存储库通常使用的标签列表。"
 
 #: ../../about/process/issue-tracking.rst:53
 msgid ""
 "**needs confirmation**: The bug needs confirmation and / or further "
 "information from affected users"
-msgstr ""
+msgstr "**需确认**：这个 bug 需要受影响用户的确认和进一步提供信息"
 
 #: ../../about/process/issue-tracking.rst:55
 msgid ""
 "**bug**: This issue is a confirmed bug. If it's reproducable, "
 "reproduction steps are described."
-msgstr ""
+msgstr "**bug**：这个问题已确认。如果它是可重现的，请描述再现步骤。"
 
 #: ../../about/process/issue-tracking.rst:57
 msgid "**opinion**: This issue needs further discussion."
-msgstr ""
+msgstr "**意见**：这个问题需要进一步讨论。"
 
 #: ../../about/process/issue-tracking.rst:58
 msgid "**enhancement**: This issue is a feature request."
-msgstr ""
+msgstr "**增强功能**：这个问题是功能请求。"
 
 #: ../../about/process/issue-tracking.rst:59
 msgid "**question**: This issue is a support request or general question."
-msgstr ""
+msgstr "**问题**：这个问题是一个支持请求或一般问题。"
 
 #: ../../about/process/issue-tracking.rst:60
 msgid ""
-"**invalid**: This issue can not be confirmed or was reported in the wrong"
-" tracker."
-msgstr ""
+"**invalid**: This issue can not be confirmed or was reported in the "
+"wrong tracker."
+msgstr "**无效**：这个问题无法得到确认或是在错误的跟踪器中报告的。"
 
 #: ../../about/process/issue-tracking.rst:62
 msgid ""
 "**duplicate**: This has already been reported somewhere else. Please "
 "provide a link and close."
-msgstr ""
+msgstr "**重复**：这个问题已经被报告。请提供链接并关闭。"
 
 #: ../../about/process/issue-tracking.rst:64
 msgid ""
 "**help wanted**: This issue is ready to be picked up by a community "
 "developer."
-msgstr ""
+msgstr "**即将解决**：这个问题已经准备好由社区开发者提供帮助。"
 
 #: ../../about/process/issue-tracking.rst:66
 msgid ""
 "**good first issue**: This issue is not critical and trivial to fix. It "
 "is reserved for new contributors as a place to start."
 msgstr ""
+"**好问题**：这个问题并不严重，可以被修复。它被保留给新的贡献者作为开始的"
+"地方。"
 
 #: ../../about/process/issue-tracking.rst:68
 msgid ""
@@ -282,6 +313,8 @@ msgid ""
 "probably resolve itself, it will be too much work to fix it, it's not "
 "fixable, or an underlying component will soon change."
 msgstr ""
+"**不修复**： 这个问题没有修复的意义，因为它要么可能会被自行解决、要么需要"
+"太多精力、要么不可修复，或者因底层组件即将改变而不需要修复。"
 
 #: ../../about/process/issue-tracking.rst:72
 msgid ""
@@ -341,11 +374,11 @@ msgstr ""
 #: ../../about/process/issue-tracking.rst:101
 #, python-format
 msgid ""
-"To make it transparent who's working on an issue, the developer should be"
-" assigned. This also allows the use of GitHub's global filtering as a "
-"type of TODO list. For example, `this is everything assigned to mariogrip"
-" in @ubports "
-"<https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+org%3Aubports+assignee%3Amariogrip&type=>`_."
+"To make it transparent who's working on an issue, the developer should "
+"be assigned. This also allows the use of GitHub's global filtering as a "
+"type of TODO list. For example, `this is everything assigned to "
+"mariogrip in @ubports <https://github.com/search?utf8=%E2%9C%93&q=is"
+"%3Aopen+org%3Aubports+assignee%3Amariogrip&type=>`_."
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:105
@@ -356,7 +389,7 @@ msgstr ""
 
 #: ../../about/process/issue-tracking.rst:108
 msgid "Examples"
-msgstr ""
+msgstr "示例"
 
 #: ../../about/process/issue-tracking.rst:111
 msgid "Bug Lifecycle"
@@ -365,8 +398,8 @@ msgstr ""
 #: ../../about/process/issue-tracking.rst:114
 msgid ""
 "The same principle applies to feature requests. The only difference is, "
-"that instead of the label **bug**, the label **enhancement** is used. The"
-" **needs confirmation** label is not applicable for feature requests."
+"that instead of the label **bug**, the label **enhancement** is used. "
+"The **needs confirmation** label is not applicable for feature requests."
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:118
@@ -377,19 +410,19 @@ msgstr ""
 msgid ""
 "The *QA-Team* adds the label **needs confirmation** and tries to work "
 "with the user to confirm the bug and add potentially missing information "
-"to the report. Once the report is complete a **team-label** will be added"
-" to the issue, the issue will be put on the **awaiting-triage-list** of "
-"the project and the label needs confirmation will be replaced with "
-"**bug**."
+"to the report. Once the report is complete a **team-label** will be "
+"added to the issue, the issue will be put on the **awaiting-triage-"
+"list** of the project and the label needs confirmation will be replaced "
+"with **bug**."
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:120
 msgid ""
 "The affected *Team* will triage the issue and either reject (label "
 "**wontfix**, close and remove from the project) or accept the issue. The "
-"team decides if it they will fix the issue in-house (move to \"Accepted\""
-" and assign a team member) or wait for a community developer to pick it "
-"up (Label **help wanted**, remove from the project board and provide "
+"team decides if it they will fix the issue in-house (move to \"Accepted"
+"\" and assign a team member) or wait for a community developer to pick "
+"it up (Label **help wanted**, remove from the project board and provide "
 "hints on how to resolve the issue and further details on the how the fix "
 "should be implemented if necessary). For non-critical issues that are "
 "trivial to fix, the label **good first issue** can be added as well."
@@ -407,9 +440,9 @@ msgstr ""
 #: ../../about/process/issue-tracking.rst:122
 msgid ""
 "The *QA-Team* tests the fix on all devices and provides feedback to the "
-"developer. If problems are found, the issue is re-opened and goes back to"
-" “Accepted”, else it’s moved to “Release Candidate” to be included in the"
-" next release."
+"developer. If problems are found, the issue is re-opened and goes back "
+"to “Accepted”, else it’s moved to “Release Candidate” to be included in "
+"the next release."
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:123
@@ -420,7 +453,7 @@ msgstr ""
 
 #: ../../about/process/release-schedule.rst:2
 msgid "Release Schedule"
-msgstr ""
+msgstr "发布时间表"
 
 #: ../../about/process/release-schedule.rst:4
 msgid "OTA updates usually follow this rhythm:"
@@ -436,117 +469,17 @@ msgstr ""
 
 #: ../../about/process/release-schedule.rst:8
 msgid ""
-"stable: every six through eight weeks, if no critical issue exists in the"
-" rc channel"
+"stable: every six through eight weeks, if no critical issue exists in "
+"the rc channel"
 msgstr ""
 
 #: ../../about/process/release-schedule.rst:11
 msgid ""
 "This is not a definitive cycle. Stable releases are ready when they're "
-"ready and should not introduce new bugs or ship very incomplete features."
-" Since the OTA update can not be released before all critical issues are "
-"closed, the ETA might have to be moved by making an educated guess for "
-"when all the issues can be handled. If there are too many issues added to"
-" a milestone, they are either removed or added to the next milestone."
+"ready and should not introduce new bugs or ship very incomplete "
+"features. Since the OTA update can not be released before all critical "
+"issues are closed, the ETA might have to be moved by making an educated "
+"guess for when all the issues can be handled. If there are too many "
+"issues added to a milestone, they are either removed or added to the "
+"next milestone."
 msgstr ""
-
-#~ msgid ""
-#~ "This is the documentation for the "
-#~ "UBports project. Our goal is to "
-#~ "create an open-source (GPL if "
-#~ "possible) mobile operating system that "
-#~ "converges and respects your freedom."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "This is the stuff for the UBports"
-#~ " project. Our goal is to create "
-#~ "an open-source (GPL if possible) "
-#~ "mobile operating system that converges "
-#~ "and respects your freedom."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Most other repositories track isues "
-#~ "locally. If you're unsure whether a "
-#~ "repository uses its own tracker or "
-#~ "not, consult the README.md file. "
-#~ "Repositories that don't track issues "
-#~ "locally have their bugtracker disabled."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "**Quality Assurance**: The patch is "
-#~ "completed and has passed initial "
-#~ "testing. The QA team will now "
-#~ "review it on all devices and "
-#~ "provide feedback. If problems are found,"
-#~ " the issue is moved back to “In"
-#~ " Development”."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "**None (removed from the project)**: A"
-#~ " patch has been released (issue "
-#~ "closed with a message linking to "
-#~ "the patch) or the issue has been"
-#~ " rejected (issue closed and labeled "
-#~ "“wontfix”)."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Developers are asked to keep their "
-#~ "list short and to keep the status"
-#~ " of their issues up-to-date."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "The affected *Team* will triage the "
-#~ "issue and either reject (label "
-#~ "**wontfix**, close and remove from the"
-#~ " project) or accept (move to "
-#~ "“Accepted”) the issue. If no team "
-#~ "member can be assigned and the "
-#~ "issue can be handled by the "
-#~ "community, it is labeled **help "
-#~ "wanted**. If possible, the team will "
-#~ "provide hints on how to resolve "
-#~ "the issue and further details on "
-#~ "the how the fix should be "
-#~ "implemented. For non-critical issues "
-#~ "that are trivial to fix, the label"
-#~ " **good first issue** can be added"
-#~ " as well."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Once a *developer* is assigned and "
-#~ "starts working on the issue, it is"
-#~ " moved to “In Development”. As soon"
-#~ " as he has something to show "
-#~ "for, the issue is moved to "
-#~ "“Quality Assurance” for feedback. If "
-#~ "neccessary, the developer should provide "
-#~ "hints on how to test his patch "
-#~ "in a comment on the issue."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "The *QA-Team* tests the fix on "
-#~ "all devices and provides feedback to "
-#~ "the developer. If problems are found,"
-#~ " the issue goes back to “In "
-#~ "Development”, else it’s closed and moved"
-#~ " to “Release Candidate” to be "
-#~ "included in the next release."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Once the fix is included in the"
-#~ " rc image, the issue is closed "
-#~ "and (if not done already) added to"
-#~ " a milestone. Once the milestone is"
-#~ " released, the issue is removed from"
-#~ " the project."
-#~ msgstr ""
-
