@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-08 19:46-0600\n"
+"POT-Creation-Date: 2018-02-23 17:57+0800\n"
 "PO-Revision-Date: 2018-01-08 07:55+0000\n"
 "Last-Translator: rocco <roccofoti@gmail.com>\n"
 "Language: it\n"
@@ -17,7 +17,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.5.1\n"
+"Generated-By: Babel 2.5.3\n"
 
 #: ../../contribute/bugreporting.rst:2
 msgid "Bug reporting"
@@ -617,11 +617,13 @@ msgid "Quality Assurance"
 msgstr "Quality Assurance (Controllo di qualità)"
 
 #: ../../contribute/quality-assurance.rst:4
+#, fuzzy
 msgid ""
 "This page explains how to help the UBports QA team, both as an official "
 "member or a new contributor. Please also read the :doc:`issue tracking "
 "</about/process/issue-tracking>` and :doc:`bugreporting <bugreporting>` "
-"guides to better understand the workflow."
+"guides to better understand the workflow. For real-time communication, "
+"you can join our `telegram group <http://t.me/ubports_qa_team>`_."
 msgstr ""
 "Questa pagina spiega come aiutare il gruppo QA di UBports, sia come "
 "membro ufficiale o come nuovo contribuente. Leggi pure le guide come "
@@ -629,10 +631,24 @@ msgstr ""
 ":doc:`riportare bachi <bugreporting>` per comprenderne il flusso."
 
 #: ../../contribute/quality-assurance.rst:7
+msgid "Smoke testing"
+msgstr ""
+
+#: ../../contribute/quality-assurance.rst:9
+msgid ""
+"To test the core functionality of the operating system, we have compiled "
+"`a set of standardized tests "
+"<https://nc.ubports.com/s/3RnAI7tYzB2PMXs>`_. Run these tests on your "
+"device to :doc:`find and report bugs and regressions <bugreporting>`. "
+"It's usually run on all devices before a new release to make sure no new "
+"issues were introduced."
+msgstr ""
+
+#: ../../contribute/quality-assurance.rst:12
 msgid "Confirming bug reports"
 msgstr "Conferma dei bachi riportati"
 
-#: ../../contribute/quality-assurance.rst:9
+#: ../../contribute/quality-assurance.rst:14
 msgid ""
 "Unconfirmed bugreports are labeld **needs confirmation** to enable "
 "`global filtering <https://github.com/ubports/ubuntu-"
@@ -654,7 +670,7 @@ msgstr ""
 "canale, il codice del rilascio (build number) e se sei stato in grado di "
 "riprodurlo."
 
-#: ../../contribute/quality-assurance.rst:11
+#: ../../contribute/quality-assurance.rst:16
 msgid ""
 "If you have write-access to the repository, you can replace the **needs "
 "confirmation** label with **bug** (to mark it confirmed) or **invalid** "
@@ -666,7 +682,7 @@ msgstr ""
 " con **bug** (per confermarlo) oppure **invalid** (se il problema non "
 "fosse riproducibile). In questo caso dovrebbe essere chiuso."
 
-#: ../../contribute/quality-assurance.rst:13
+#: ../../contribute/quality-assurance.rst:18
 msgid ""
 "If you find two issues describing the same problem, leave a comment and "
 "try to find their differences. If they are in fact identical, close the "
@@ -677,11 +693,11 @@ msgstr ""
 "identici, chiudine il più recente con una etichetta **duplicato** "
 "(**duplicate**)."
 
-#: ../../contribute/quality-assurance.rst:16
+#: ../../contribute/quality-assurance.rst:21
 msgid "Testing patches"
 msgstr "Provare delle pezze (patch)"
 
-#: ../../contribute/quality-assurance.rst:18
+#: ../../contribute/quality-assurance.rst:23
 msgid ""
 "Once a developer finished working on an issue, it's moved to the quality "
 "assurance column of the `GitHub project <https://github.com/ubports"
@@ -704,11 +720,11 @@ msgstr ""
 "**Release Candidate** come specificato nelle :doc:`linee guida per "
 "tracciare i problemi </about/process/issue-tracking>`."
 
-#: ../../contribute/quality-assurance.rst:21
+#: ../../contribute/quality-assurance.rst:26
 msgid "Initial triaging of issues"
 msgstr "Fase di prioritizzazione (triage) di un problema"
 
-#: ../../contribute/quality-assurance.rst:23
+#: ../../contribute/quality-assurance.rst:28
 msgid ""
 "Initial triaging of new issues is done by QA-team members with write-"
 "access to the repository. If a new issue is filed, read the report and "
@@ -723,7 +739,7 @@ msgstr ""
 " problemi </about/process/issue-tracking>`. Puoi pure iniziare "
 "immediatamente con la conferma del bugreport."
 
-#: ../../contribute/quality-assurance.rst:25
+#: ../../contribute/quality-assurance.rst:30
 msgid ""
 "If the new issue has already been reported elsewhere, label it "
 "**duplicate** and close it."
