@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-08 19:46-0600\n"
-"PO-Revision-Date: 2018-02-25 15:42+0000\n"
-"Last-Translator: Laurent Rouxel <lrouxel@free.fr>\n"
+"PO-Revision-Date: 2018-02-25 17:56+0000\n"
+"Last-Translator: Anne Onyme <anneonyme017@openmailbox.org>\n"
 "Language-Team: French <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-porting/fr/>\n"
 "Language: fr\n"
@@ -402,7 +402,7 @@ msgid ""
 "Change the rootstock link to point to UBports once the actuallyfixit PR "
 "is merged."
 msgstr ""
-"Changer le lien rootstock pour pointer vers UBports une fois que le PR "
+"Changez le lien rootstock pour pointer vers UBports une fois que le PR "
 "actuallyfixit est fusionné."
 
 #: ../../porting/installing-16-04.rst:33
@@ -495,7 +495,7 @@ msgstr ""
 
 #: ../../porting/installing-16-04.rst:56
 msgid "Make / writeable"
-msgstr "Rendre / modifiable"
+msgstr "Rendre modifiable"
 
 #: ../../porting/installing-16-04.rst:58
 msgid ""
@@ -505,11 +505,11 @@ msgid ""
 msgstr ""
 "Avant de modifier le rootfs (ce qui sera nécessaire pour les étapes "
 "suivantes), vous devrez le remonter avec les permissions en écriture. Pour "
-"faire cela, lancez la commande suivante ::"
+"cela, lancez la commande suivante ::"
 
 #: ../../porting/installing-16-04.rst:64
 msgid "Add udev rules"
-msgstr "Ajouter les règles udev"
+msgstr "Ajouter des règles udev"
 
 #: ../../porting/installing-16-04.rst:66
 msgid ""
@@ -518,9 +518,9 @@ msgid ""
 " replacing [codename] with your device's codename.::"
 msgstr ""
 "Maintenant que vous êtes connecté, vous devez créer quelques règles udev "
-"pour donner au logiciel Ubuntu Touch l'accès à votre matériel. Lancez la "
-"commande suivante, en remplaçant [codename] avec le nom de code de votre "
-"appareil. ::"
+"pour donner aux applications d'Ubuntu Touch l'accès à votre matériel. Lancez "
+"la commande suivante, en remplaçant [codename] avec le nom de code de votre "
+"appareil ::"
 
 #: ../../porting/installing-16-04.rst:71
 msgid ""
@@ -530,7 +530,7 @@ msgid ""
 msgstr ""
 "Maintenant, redémarrez votre appareil. Si tout s'est bien passé, vous "
 "devriez voir le logo animé d'Ubuntu Touch suivi par Unity 8. Votre mot de "
-"passe de verrouillage est le même que celui que vous avez défini pour SSH."
+"passe de verrouillage est le même que celui que vous aviez défini pour SSH."
 
 #: ../../porting/installing-16-04.rst:76
 msgid ""
@@ -538,7 +538,7 @@ msgid ""
 ":doc:`running-ut` to learn about more specific steps you will need to "
 "take for a complete port."
 msgstr ""
-"Félicitations! ubuntu Touch vient de démarrer sur votre appareil. Allez "
+"Félicitations ! Ubuntu Touch vient de démarrer sur votre appareil. Allez "
 "ensuite sur :doc:`running-ut` pour découvrir en détail les étapes que vous "
 "devrez mettre en œuvre pour effectuer un portage complet."
 
@@ -547,10 +547,12 @@ msgid ""
 "This should be a little heavier on \"What to do when something goes "
 "wrong\" content."
 msgstr ""
+"Cette partie devrait être un petit peu plus étoffée sur le contenu du "
+"paragraphe « Quoi faire lorsque quelque chose pose problème »."
 
 #: ../../porting/introduction.rst:2
 msgid "Porting information"
-msgstr ""
+msgstr "Informations sur le portage"
 
 #: ../../porting/introduction.rst:5
 msgid ""
@@ -559,12 +561,18 @@ msgid ""
 "supported, please see `this page <https://ubports.com/page/get-ubuntu-"
 "touch>`_."
 msgstr ""
+"Si vous cherchez des informations sur l'installation d'Ubuntu Touch sur un "
+"appareil pris en charge ou si vous souhaitez vérifier si votre appareil est "
+"pris en charge, consultez `cette page <https://ubports.com/page/get-ubuntu-"
+"touch>`_."
 
 #: ../../porting/introduction.rst:7
 msgid ""
 "This section will introduce you to some of the specifics of porting "
 "Ubuntu Touch to an Android device."
 msgstr ""
+"Cette section vous présentera certaines spécificité du portage d'Ubuntu "
+"Touch sur un appareil Android."
 
 #: ../../porting/introduction.rst:9
 msgid ""
@@ -573,20 +581,26 @@ msgid ""
 "your ``systemimage`` built without errors. Once you're at the point of "
 "installing a rootfs, you can come back here."
 msgstr ""
+"Avant de commencer, dirigez-vous vers `le guide du portage d'Halium "
+"<http://docs.halium.org/en/latest/porting/first-steps.html>`_ et construisez "
+"votre ``systemimage`` sans erreurs. Une fois que vous en serez au point "
+"d'installer un rootfs, vous pourrez revenir ici."
 
 #: ../../porting/introduction.rst:11
 msgid ""
 "Start at :doc:`building-ubports-boot` if you'd like to install the "
 "UBports Ubuntu Touch 16.04 rootfs."
 msgstr ""
+"Commencez par la :doc:`building-ubports-boot` si vous souhaitez installer le "
+"rootfs d'Ubuntu Touch 16.04 conçu par UBports."
 
 #: ../../porting/running-ut.rst:2
 msgid "Running Ubuntu Touch"
-msgstr ""
+msgstr "Lancement d'Ubuntu Touch"
 
 #: ../../porting/running-ut.rst:5
 msgid "Display settings"
-msgstr ""
+msgstr "Paramètres d'affichage"
 
 #: ../../porting/running-ut.rst:7
 msgid ""
@@ -594,12 +608,19 @@ msgid ""
 "small. There are two variables that set the content scaling for Unity 8 "
 "and Ubuntu Touch applications: ``GRID_UNIT_PX`` and ``QTWEBKIT_DPR``."
 msgstr ""
+"Lorsque l'appareil démarrera, vous remarquerez que tout sera très petit. Il "
+"existe deux variables qui définissent la mise à l'échelle du contenu pour "
+"les applications sur Unity 8 et Ubuntu Touch : ``GRID_UNIT_PX`` et "
+"``QTWEBKIT_DPR``."
 
 #: ../../porting/running-ut.rst:9
 msgid ""
 "There are also some other options available that may be useful for you "
 "depending on your device's form factor. These are discussed below."
 msgstr ""
+"Il existe également d'autres options disponibles qui pourraient vous être "
+"utiles en fonction du facteur de forme de votre appareil. Celles-ci sont "
+"traitées ci-dessous."
 
 #: ../../porting/running-ut.rst:11
 msgid ""
@@ -610,14 +631,23 @@ msgid ""
 "/ubuntu-session.d/[codename].conf`` specifying them. For example, this is"
 " the file for the Nexus 7 tablet::"
 msgstr ""
+"Tous ces paramètres sont devinés par Unity 8 si aucun d'entre eux n'est "
+"défini. Il existe de nombreux cas cependant pour lesquels la déduction est "
+"fausse (par exemple, les écrans de téléphone à très haute résolution seront "
+"identifiés comme des ordinateurs de bureau). Pour définir manuellement une "
+"valeur pour ces variables, créez simplement un fichier sous ``/etc/ubuntu-"
+"session.d/[codename].conf`` en les spécifiant. Par exemple, voici le fichier "
+"pour la tablette Nexus 7 ::"
 
 #: ../../porting/running-ut.rst:19
 msgid "Methods for deriving values for these variables are below."
 msgstr ""
+"Les méthodes de dérivation des valeurs pour ces variables sont décrites ci-"
+"dessous."
 
 #: ../../porting/running-ut.rst:22
 msgid "Display scaling"
-msgstr ""
+msgstr "Mise à l'échelle de l'affichage"
 
 #: ../../porting/running-ut.rst:24
 msgid ""
@@ -630,12 +660,25 @@ msgid ""
 "assume that tablets and laptops are the same distance and that they are "
 "held at 1.235 times the distance phones tend to be held at."
 msgstr ""
+"``GRID_UNIT_PX`` (Pixels per Grid Unit ou Px/GU ou Pixels par Unité de "
+"Grille) est spécifique à chaque appareil. Son but est de donner à "
+"l'interface utilisateur du système et à ses applications la même taille "
+"*perçue* peu importe l'appareil sur lequel elles sont affichées. Il est "
+"essentiellement dépendant de la densité de pixels de l'écran de l'appareil "
+"et de la distance entre l'utilisateur et l'écran. Cette dernière valeur ne "
+"peut être automatiquement détectée et est basée sur l'expérience. Nous "
+"supposons que les tablettes et les ordinateurs sont à la même distance et "
+"qu'ils sont tenus à 1,235 fois la distance à laquelle les téléphones ont "
+"tendance à être tenus."
 
 #: ../../porting/running-ut.rst:26
 msgid ""
 "``QTWEBKIT_DPR`` sets the display scaling for the Oxide web engine, so "
 "changes to this value will affect the scale of the browser and webapps."
 msgstr ""
+"``QTWEBKIT_DPR`` définit la mise à l'échelle de l'affichage pour le moteur "
+"Web Oxide, ainsi des modifications de cette valeur affecteront l'échelle du "
+"navigateur et des Webapps."
 
 #: ../../porting/running-ut.rst:28
 msgid ""
@@ -645,183 +688,190 @@ msgid ""
 "*perceived* size rather than *physical* size . Here are some values for "
 "other devices so you may derive the correct one for yours:"
 msgstr ""
+"Un appareil de référence a été choisi et nous dérivons de celui-ci les "
+"valeurs pour tous les autres appareils. L'appareil de référence est un "
+"ordinateur avec un écran de 120 ppi (pixels par pouce). Cependant, il "
+"n'existe pas de formule exacte puisque ces options sont définies pour une "
+"taille *perçue* plutôt qu'une taille *physique*. Voici quelques valeurs pour "
+"d'autres appareils afin que vous puissiez dériver les valeurs correctes pour "
+"le vôtre :"
 
 #: ../../porting/running-ut.rst:31
 msgid "Device"
-msgstr ""
+msgstr "Appareil"
 
 #: ../../porting/running-ut.rst:31
 msgid "Resolution"
-msgstr ""
+msgstr "Résolution"
 
 #: ../../porting/running-ut.rst:31
 msgid "Display Size"
-msgstr ""
+msgstr "Taille d'affichage"
 
 #: ../../porting/running-ut.rst:31
 msgid "PPI"
-msgstr ""
+msgstr "Pixels par pouce"
 
 #: ../../porting/running-ut.rst:31
 msgid "Px/GU"
-msgstr ""
+msgstr "Pixels par Unité de Grille"
 
 #: ../../porting/running-ut.rst:31
 msgid "QtWebKit DPR"
-msgstr ""
+msgstr "QtWebKit DPR"
 
 #: ../../porting/running-ut.rst:33
 msgid "'Normal' density laptop"
-msgstr ""
+msgstr "Ordinateur à densité « normale »"
 
 #: ../../porting/running-ut.rst:33 ../../porting/running-ut.rst:35
 msgid "N/A"
-msgstr ""
+msgstr "N/A"
 
 #: ../../porting/running-ut.rst:33
 msgid "96-150"
-msgstr ""
+msgstr "96-150"
 
 #: ../../porting/running-ut.rst:33
 msgid "8"
-msgstr ""
+msgstr "8"
 
 #: ../../porting/running-ut.rst:33
 msgid "1.0"
-msgstr ""
+msgstr "1.0"
 
 #: ../../porting/running-ut.rst:34
 msgid "ASUS Nexus 7"
-msgstr ""
+msgstr "Nexus 7 d'ASUS"
 
 #: ../../porting/running-ut.rst:34
 msgid "1280x800"
-msgstr ""
+msgstr "1280x800"
 
 #: ../../porting/running-ut.rst:34
 msgid "7\""
-msgstr ""
+msgstr "7\""
 
 #: ../../porting/running-ut.rst:34
 msgid "216"
-msgstr ""
+msgstr "216"
 
 #: ../../porting/running-ut.rst:34
 msgid "12"
-msgstr ""
+msgstr "12"
 
 #: ../../porting/running-ut.rst:34 ../../porting/running-ut.rst:36
 #: ../../porting/running-ut.rst:37 ../../porting/running-ut.rst:38
 msgid "2.0"
-msgstr ""
+msgstr "2.0"
 
 #: ../../porting/running-ut.rst:35
 msgid "'High' density laptop"
-msgstr ""
+msgstr "Ordinateur à densité « forte »"
 
 #: ../../porting/running-ut.rst:35
 msgid "150-250"
-msgstr ""
+msgstr "150-250"
 
 #: ../../porting/running-ut.rst:35
 msgid "16"
-msgstr ""
+msgstr "16"
 
 #: ../../porting/running-ut.rst:35
 msgid "1.5"
-msgstr ""
+msgstr "1.5"
 
 #: ../../porting/running-ut.rst:36
 msgid "Samsung Galaxy Nexus"
-msgstr ""
+msgstr "Galaxy Nexus de Samsung"
 
 #: ../../porting/running-ut.rst:36
 msgid "1280x720"
-msgstr ""
+msgstr "1280x720"
 
 #: ../../porting/running-ut.rst:36
 msgid "4.65\""
-msgstr ""
+msgstr "4.65\""
 
 #: ../../porting/running-ut.rst:36
 msgid "316"
-msgstr ""
+msgstr "316"
 
 #: ../../porting/running-ut.rst:36 ../../porting/running-ut.rst:37
 msgid "18"
-msgstr ""
+msgstr "18"
 
 #: ../../porting/running-ut.rst:37
 msgid "LG Nexus 4"
-msgstr ""
+msgstr "Nexus 4 de LG"
 
 #: ../../porting/running-ut.rst:37
 msgid "1280x768"
-msgstr ""
+msgstr "1280x768"
 
 #: ../../porting/running-ut.rst:37
 msgid "4.7\""
-msgstr ""
+msgstr "4.7\""
 
 #: ../../porting/running-ut.rst:37
 msgid "320"
-msgstr ""
+msgstr "320"
 
 #: ../../porting/running-ut.rst:38
 msgid "Samsung Nexus 10"
-msgstr ""
+msgstr "Nexus 10 de Samsung"
 
 #: ../../porting/running-ut.rst:38
 msgid "2560x1600"
-msgstr ""
+msgstr "2560x1600"
 
 #: ../../porting/running-ut.rst:38
 msgid "10.1\""
-msgstr ""
+msgstr "10.1\""
 
 #: ../../porting/running-ut.rst:38
 msgid "299"
-msgstr ""
+msgstr "299"
 
 #: ../../porting/running-ut.rst:38
 msgid "20"
-msgstr ""
+msgstr "20"
 
 #: ../../porting/running-ut.rst:39
 msgid "Fairphone 2"
-msgstr ""
+msgstr "Fairphone 2"
 
 #: ../../porting/running-ut.rst:39 ../../porting/running-ut.rst:40
 msgid "1080x1920"
-msgstr ""
+msgstr "1080x1920"
 
 #: ../../porting/running-ut.rst:39
 msgid "5\""
-msgstr ""
+msgstr "5\""
 
 #: ../../porting/running-ut.rst:39
 msgid "440"
-msgstr ""
+msgstr "440"
 
 #: ../../porting/running-ut.rst:39 ../../porting/running-ut.rst:40
 msgid "23"
-msgstr ""
+msgstr "23"
 
 #: ../../porting/running-ut.rst:39 ../../porting/running-ut.rst:40
 msgid "2.5"
-msgstr ""
+msgstr "2.5"
 
 #: ../../porting/running-ut.rst:40
 msgid "LG Nexus 5"
-msgstr ""
+msgstr "Nexus 5 de LG"
 
 #: ../../porting/running-ut.rst:40
 msgid "4.95\""
-msgstr ""
+msgstr "4.95\""
 
 #: ../../porting/running-ut.rst:40
 msgid "445"
-msgstr ""
+msgstr "445"
 
 #: ../../porting/running-ut.rst:43
 msgid ""
@@ -830,14 +880,19 @@ msgid ""
 " is the best, share some pictures (including some object for scale) along"
 " with the device specs with us."
 msgstr ""
+"Essayez plusieurs valeurs pour trouver celle qui donne de bons résultats "
+"comparés au rendu d'Ubuntu Touch sur d'autres appareils. Si vous n'êtes pas "
+"certains de la meilleure, partagez quelques photos (comprenant quelques "
+"objets pour l'échelle) accompagnées des spécifications de l'appareil avec "
+"nous."
 
 #: ../../porting/running-ut.rst:46
 msgid "Form factor"
-msgstr ""
+msgstr "Facteur de forme"
 
 #: ../../porting/running-ut.rst:48
 msgid "There are two other settings that may be of interest to you."
-msgstr ""
+msgstr "Il existe deux autres paramètres qui peuvent vous intéresser."
 
 #: ../../porting/running-ut.rst:50
 msgid ""
@@ -848,6 +903,13 @@ msgid ""
 "their functionality. For more information on the Chassis, see `the "
 "freedesktop.org hostnamed specification`_."
 msgstr ""
+"``FORM_FACTOR`` spécifie le facteur de forme de l'appareil. Cette valeur est "
+"définie en tant que châssis de l'appareil, que vous pouvez trouver en "
+"exécutant ``hostnamectl``. Les valeurs acceptées sont ``handset``, ``tablet``"
+", ``laptop`` et ``desktop``. Les applications telles que la galerie "
+"utilisent cette information pour modifier leurs fonctionnalités. Pour plus "
+"d'informations sur le châssis, consultez `la spécification hébergée sur "
+"freedesktop.org`_."
 
 #: ../../porting/running-ut.rst:52
 msgid ""
@@ -858,6 +920,14 @@ msgid ""
 "for tablets, laptops, and desktops; and ``portrait``, which is usually "
 "used for phone handsets."
 msgstr ""
+"``NATIVE_ORIENTATION`` définit l'orientation d'affichage de l'écran intégré "
+"à l'appareil. Cette valeur est utilisée lorsque la rotation automatique ne "
+"fonctionne pas correctement ou lorsqu'une application souhaite être "
+"verrouillée dans l'orientation native de l'appareil. Les valeurs acceptables "
+"sont ``landscape`` (paysage, qui est normalement utilisée pour les "
+"tablettes, les ordinateurs portables et les ordinateurs de bureau) et "
+"``portrait`` (portait, qui est habituellement utilisée pour les terminaux "
+"téléphoniques)."
 
 #~ msgid ""
 #~ "Due to a `bug in the ubports-"
