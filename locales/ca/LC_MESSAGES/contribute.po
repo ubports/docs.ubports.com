@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-08 19:46-0600\n"
-"PO-Revision-Date: 2018-02-22 07:54+0000\n"
+"PO-Revision-Date: 2018-02-25 12:25+0000\n"
 "Last-Translator: Walter Garcia-Fontes <walter.garcia@upf.edu>\n"
 "Language-Team: Catalan <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-contribute/ca/>\n"
@@ -323,7 +323,7 @@ msgstr ""
 
 #: ../../contribute/documentation.rst:10
 msgid "Documentation guidelines"
-msgstr ""
+msgstr "Directrius de la documentació"
 
 #: ../../contribute/documentation.rst:12
 msgid ""
@@ -331,10 +331,13 @@ msgid ""
 "problems with style, format, or linking. If you don't follow these "
 "guidelines, we will not accept your document."
 msgstr ""
+"Aquest normes regulen *com* hauríeu d'escriure la documentació per evitar "
+"problemes amb l'estil, el format o els enllaços. Si no seguiu aquestes "
+"directriu, no acceptarem el vostre document."
 
 #: ../../contribute/documentation.rst:16
 msgid "Title"
-msgstr ""
+msgstr "Títol"
 
 #: ../../contribute/documentation.rst:18
 msgid ""
@@ -342,10 +345,13 @@ msgid ""
 "contents (left sidebar) and at the top of the page. This title is "
 "underlined with equals signs."
 msgstr ""
+"Totes les pàgines han de tenir un títol de document que mostrarà a la taula "
+"de continguts (barra lateral esquerra) i a la part superior de la pàgina. "
+"Aquest títol està subratllat per signes d'igual."
 
 #: ../../contribute/documentation.rst:20
 msgid "Titles should be sentence cased rather than Title Cased. For example::"
-msgstr ""
+msgstr "Els títols haurien de basar-se en frases i no sols títols. Per exemple:"
 
 #: ../../contribute/documentation.rst:29
 msgid ""
@@ -353,10 +359,13 @@ msgid ""
 "but sentence casing is easy. This helps keep capitalization in the table "
 "of contents consistent."
 msgstr ""
+"No hi ha una definició única sobre com fer títols amb frases que tothom "
+"segueix, però fer títol amb frases és senzill. Això ajuda a mantenir les "
+"majúscules consistents a la taula de continguts."
 
 #: ../../contribute/documentation.rst:32
 msgid "Table of contents"
-msgstr ""
+msgstr "Taula de continguts"
 
 #: ../../contribute/documentation.rst:34
 msgid ""
@@ -364,6 +373,9 @@ msgid ""
 " Sphinx. That's why you need to add new pages to Sphinx's table of "
 "contents."
 msgstr ""
+"La gent no pot navegar a la vostra pàgina si no la poden trobar. Tampoc no "
+"pot l'Sphinx. És per això que heu d'afegir pàgines noves a la taula de "
+"continguts de l'Sphinx."
 
 #: ../../contribute/documentation.rst:36
 msgid ""
@@ -372,6 +384,10 @@ msgid ""
 "\"newpage.rst\", you would add the line marked with a chevron (>) in the "
 "nearest index::"
 msgstr ""
+"Això ho podeu fer afegint la pàgina al  fitxer``index.rst`` al mateix "
+"directori on el vau crear. Per exemple, si creeu un fitxer anomenat "
+"«paginanova.rst», afegiríeu la línia marcada amb un signe de més gran (>) a "
+"l'índex més proper::"
 
 #: ../../contribute/documentation.rst:46
 msgid ""
@@ -379,10 +395,13 @@ msgid ""
 "place in the table of contents, place it there. In the previous example, "
 "newpage would be added to the end of this table of contents."
 msgstr ""
+"L'ordre importa. Si us agradaria que la vostra pàgina aparegui a un lloc "
+"determinat de la taula de continguts, ubiqueu-la allà. A l'exemple anterior, "
+"paginanova s'afegiria al final de la taula de continguts."
 
 #: ../../contribute/documentation.rst:49
 msgid "Warnings"
-msgstr ""
+msgstr "Advertiments"
 
 #: ../../contribute/documentation.rst:51
 msgid ""
@@ -393,10 +412,17 @@ msgid ""
 "build crashing with your error) if you follow our build instructions "
 "below."
 msgstr ""
+"Les vostres edicions no han d'introduir cap advertiment a la compilació de "
+"la documentació. Si es produeix cap advertiment, la compilació fallarà i la "
+"vostra demanda de baixada es marcarà amb una «X» vermella. Si us plau "
+"assegureu-vos que el vostre RST és vàlid i correcte abans de crear una "
+"demanda de baixada. Això es fa automàticament (mitjançant la fallada de "
+"sphinx-build amb el vostre error) si seguiu les nostres instruccions de "
+"compilació de sota."
 
 #: ../../contribute/documentation.rst:54
 msgid "Contribution workflow"
-msgstr ""
+msgstr "Flux de treball de les contribucions"
 
 #: ../../contribute/documentation.rst:57
 msgid ""
@@ -404,10 +430,13 @@ msgid ""
 "have one, click `here <https://github.com/join>`_ to begin the process of"
 " making an account."
 msgstr ""
+"Us caldrà un compte del GitHub per completar aquests passos. Si no en teniu "
+"una, cliqueu `aquí <https://github.com/join>`_ per començar el procés de "
+"crear un compte."
 
 #: ../../contribute/documentation.rst:60
 msgid "Directly on GitHub"
-msgstr ""
+msgstr "Directament al GitHub"
 
 #: ../../contribute/documentation.rst:62
 msgid ""
@@ -415,22 +444,26 @@ msgid ""
 "documentation. This section will show you the basic workflow to get "
 "started by editing an existing page on GitHub"
 msgstr ""
+"Llegiu els documents i el GitHub ho fa força senzill per contribuir a "
+"aquesta documentació. Aquesta secció us mostrarà el flux bàsic de treball "
+"per començar a editar una pàgina existent al GitHub"
 
 #: ../../contribute/documentation.rst:65
 msgid "Find the page you would like to edit"
-msgstr ""
+msgstr "Trobeu la pàgina que us agradaria editar"
 
 #: ../../contribute/documentation.rst:66
 msgid "Click the \"Edit on GitHub\" link to the right of the title"
-msgstr ""
+msgstr "Cliqueu l'enllaç «Edita al GitHub» a la dreta del títol"
 
 #: ../../contribute/documentation.rst:67
 msgid "Make your changes to the document. Remember to write in ReStructuredText!"
 msgstr ""
+"Feu els canvis al document. Recordeu d'escriure amb el ReStructuredText!"
 
 #: ../../contribute/documentation.rst:68
 msgid "Propose your changes as a Pull Request."
-msgstr ""
+msgstr "Proposeu el vostres canvis amb una demanda de baixada (pull request)."
 
 #: ../../contribute/documentation.rst:70
 msgid ""
@@ -438,10 +471,13 @@ msgid ""
 "team will ask you to make some changes and resubmit. This is as simple as"
 " editing the file on GitHub from your fork of the repository."
 msgstr ""
+"Si hi ha cap error als canvis que heu proposat, l'equip de documentació us "
+"demanarà fer alguns canvis i tornar a enviar. Això és tan senzill com editar "
+"el fitxer al Github des de la vostra bifurcació del repositori."
 
 #: ../../contribute/documentation.rst:73
 msgid "Manually forking the repository"
-msgstr ""
+msgstr "Bifurcació manual del repositori"
 
 #: ../../contribute/documentation.rst:75
 msgid ""
@@ -451,10 +487,15 @@ msgid ""
 "GitHub guide on `forking projects "
 "<https://guides.github.com/activities/forking/>`_."
 msgstr ""
+"Podeu fer edicions més avançades de la nostra documentació bifurcant "
+"`ubports/docs.ubports.com <https://github.com/ubports/docs.ubports.com>`_ al "
+"GitHub. Si no teniu seguretat sobre com fer això, mireu l'excel·lent guia "
+"del GitHub a  `bifurcació de projectes "
+"<https://guides.github.com/activities/forking/>`_."
 
 #: ../../contribute/documentation.rst:78
 msgid "Building this documentation locally"
-msgstr ""
+msgstr "Compilació local d'aquesta documentació"
 
 #: ../../contribute/documentation.rst:80
 msgid ""
@@ -462,6 +503,9 @@ msgid ""
 "you should), follow these instructions on your *local copy* of your fork "
 "of the repository."
 msgstr ""
+"Si voleu compilar aquesta documentació *abans* d'enviar una demanda de "
+"baixada (cosa que hauríeu de fer), seguiu aquestes instruccions a la *còpia "
+"local* de la vostra bifurcació del repositori."
 
 #: ../../contribute/documentation.rst:82
 msgid ""
@@ -469,34 +513,42 @@ msgid ""
 "this repository. The script will also create a virtual build environment "
 "in ``~/ubportsdocsenv`` if none is present."
 msgstr ""
+"Es pot compilar la documentació executant ``./build.sh`` a l'arrel d'aquest "
+"repositori. L'script crearà també un entorn virtual de compilació a "
+"``~/ubportsdocsenv`` si no n'hi ha cap present."
 
 #: ../../contribute/documentation.rst:84
 msgid ""
 "If all went well, you can enter the ``_build`` directory and open "
 "``index.html`` to view the UBports documentation."
 msgstr ""
+"Si tot ha anat bé, podeu entrar el directori ``_build`` i obrir "
+"``index.html`` per veure la documentació de l'UBports."
 
 #: ../../contribute/documentation.rst:87
 msgid "Current TODOs"
-msgstr ""
+msgstr "PER FER actuals"
 
 #: ../../contribute/documentation.rst:89
 msgid ""
 "This page lists the TODOs that have been included in this documentation. "
 "If you know how to fix one, please send us a PR to make it better!"
 msgstr ""
+"Aquesta pàgina presenta una llista dels PER FER que s'han inclòs a aquesta "
+"documentació. Si sabeu com arreglar un PER FER, si us plau envieu-nos una "
+"demanda de baixada per fer-lo millor!"
 
 #: ../../contribute/documentation.rst:96
 msgid "To create a todo, add this markup to your page::"
-msgstr ""
+msgstr "Per crear un per fer, afegiu aquest marcatge a la vostra pàgina::"
 
 #: ../../contribute/documentation-todo.rst:3
 msgid "Documentation TODOs"
-msgstr ""
+msgstr "PER FER de la documentació"
 
 #: ../../contribute/index.rst:2
 msgid "Contributing to UBports"
-msgstr ""
+msgstr "Contribució al UBports"
 
 #: ../../contribute/index.rst:4
 msgid ""
@@ -504,6 +556,9 @@ msgid ""
 "The pages you'll find below here will help you do this in a way that's "
 "helpful to both the project and yourself."
 msgstr ""
+"Us donem la benvinguda! Probablement esteu aquí perquè voleu contribuir al "
+"UBports. Les pàgines que trobareu a sota d'aquí us ajudarà a fer això d'una "
+"manera útil tant per al projecte com per a vós."
 
 #: ../../contribute/index.rst:6
 msgid ""
@@ -511,6 +566,9 @@ msgid ""
 "bug reporting <bugreporting>`. If you are multilingual, "
 ":doc:`translations <translations>` are also a great place to start."
 msgstr ""
+"Si us esteu iniciant ara, sempre es cal ajuda amb :doc:`informes d'errors "
+"detallats <bugreporting>`. Si sabeu moltes llengües, :doc:`traduccions "
+"<translations>` també són un bon lloc per començar."
 
 #: ../../contribute/index.rst:8
 msgid ""
@@ -518,10 +576,13 @@ msgid ""
 "<https://ubports.com/page/vo-get-involved>`_ for an introduction of our "
 "focus groups."
 msgstr ""
+"Si això no us és prou, vegeu `la nostra pàgina de contribució  "
+"<https://ubports.com/page/vo-get-involved>`_ per a una introducció dels "
+"nostres grups focals."
 
 #: ../../contribute/monetary.rst:2
 msgid "Monetary support"
-msgstr ""
+msgstr "Suport monetari"
 
 #: ../../contribute/monetary.rst:4
 msgid ""
@@ -529,16 +590,21 @@ msgid ""
 "`Liberapay <https://liberapay.com/UBports/>`_ or `Patreon "
 "<https://www.patreon.com/ubports>`_!"
 msgstr ""
+"També podeu ajudar a mantenir els llums encesos a l'UBports afegint-vos al "
+"patronatge a `Liberapay <https://liberapay.com/UBports/>`_ o `Patreon "
+"<https://www.patreon.com/ubports>`_!"
 
 #: ../../contribute/monetary.rst:6
 msgid ""
 "Your contribution finances our server infrastructure and debug services, "
 "and helps covering additional costs."
 msgstr ""
+"La vostra contribució finança la nostra infraestructura de servidors i els "
+"nostres serveis de depuració, i ajuda a cobrir costos addicionals."
 
 #: ../../contribute/quality-assurance.rst:2
 msgid "Quality Assurance"
-msgstr ""
+msgstr "Control de qualitat"
 
 #: ../../contribute/quality-assurance.rst:4
 msgid ""
@@ -547,10 +613,15 @@ msgid ""
 "</about/process/issue-tracking>` and :doc:`bugreporting <bugreporting>` "
 "guides to better understand the workflow."
 msgstr ""
+"Aquesta pàgina explica com ajudar a l'equip de control de qualitat de "
+"l'UBports, tant com a membre oficial o com a nou col·laborador. Si us plau "
+"llegiu també les guies  :doc:`seguiment de problemes </about/process/issue-"
+"tracking>` i :doc:`informació d'errors <bugreporting>` per entendre millor "
+"el flux de treball."
 
 #: ../../contribute/quality-assurance.rst:7
 msgid "Confirming bug reports"
-msgstr ""
+msgstr "Confirmació d'informes d'error"
 
 #: ../../contribute/quality-assurance.rst:9
 msgid ""
@@ -563,6 +634,15 @@ msgid ""
 "<bugreporting>`. Leave a comment stating your device, channel, build "
 "number and whether or not you were able to reproduce the issue."
 msgstr ""
+"Informes d'error sense confirmar s'etiqueten amb **needs confirmation** (cal "
+"confirmació) per activar el `filtratge global <https://github.com/ubports"
+"/ubuntu-"
+"touch/issues?q=is%3Aissue+is%3Aopen+label%3A%22needs+confirmation%22>`__. "
+"Navegueu per la llista, llegiu els informes d'error i proveu de reproduir "
+"els problemes que es descriuen. Si cal, afegiu :doc:`informació que manqui o "
+"registres, o milloreu la qualitat de l'informe per altres mitjans "
+"<bugreporting>`. Deixeu un comentari indicant quin és el vostre dispositiu, "
+"número de compilació o si heu pogut o no pogut reproduir el problema."
 
 #: ../../contribute/quality-assurance.rst:11
 msgid ""
@@ -571,6 +651,10 @@ msgid ""
 "(if the issue is definitely not reproducable). In that case it should be "
 "closed."
 msgstr ""
+"Si teniu permís d'escriptura al repositori, podeu reemplaçar l'etiqueta **"
+"needs confirmation** (cal confirmació) amb **bug** (error, per marcar-lo com "
+"confirmat) o **invalid** (no vàlid, si definitivament no es pot reproduir el "
+"problema). En aquest cas s'hauria de tancar."
 
 #: ../../contribute/quality-assurance.rst:13
 msgid ""
@@ -578,10 +662,13 @@ msgid ""
 "try to find their differences. If they are in fact identical, close the "
 "newer one and label it **duplicate**."
 msgstr ""
+"Si trobeu dos informes descrivint el mateix problema, deixeu un comentari i "
+"intenteu trobar les diferències. Si, de fet, són idèntics, tanqueu el més "
+"nou i poseu l'etiqueta **duplicate** (duplicat)."
 
 #: ../../contribute/quality-assurance.rst:16
 msgid "Testing patches"
-msgstr ""
+msgstr "Comprovació de pegats"
 
 #: ../../contribute/quality-assurance.rst:18
 msgid ""
@@ -595,10 +682,22 @@ msgid ""
 "Development** or forward to **Release Candidate** as specified by the "
 ":doc:`issue tracking guidelines </about/process/issue-tracking>`."
 msgstr ""
+"Un cop s'ha acabat el treball de desenvolupament d'un problema, es mou a la "
+"columna de control de qualitat del `projecte GitHub "
+"<https://github.com/ubports/ubuntu-touch/projects/3>`__. Comproveu si el "
+"problema encara és present a l'actualització més recent al canal de "
+"desenvolupament i intenteu trobar qualsevol problema que estigui causant. "
+"Cliqueu si la persona desenvolupadora va mencionar coses específiques per "
+"mirar quan es facin les comprovacions i deixeu un comentari descrivint amb "
+"detall la vostra experiència. Si teniu permís d'escriptura al repositori, "
+"podeu retornar el problema a **In Development** (en desenvolupament) o "
+"avançar-lo a **Release Candidate** (candidat a l'alliberament) com "
+"s'especifica a :doc:`directrius de seguiment de problemes </about/process"
+"/issue-tracking>`."
 
 #: ../../contribute/quality-assurance.rst:21
 msgid "Initial triaging of issues"
-msgstr ""
+msgstr "Triatge inicial de problemes"
 
 #: ../../contribute/quality-assurance.rst:23
 msgid ""
@@ -608,34 +707,44 @@ msgid ""
 "guidelines </about/process/issue-tracking>`. You can also immediately "
 "start confirming the bugreport."
 msgstr ""
+"Els membres de l'equip de control de qualitat amb permisos d'escriptura al "
+"repositori fa el triatge inicial dels problemes nous. Si es registra un nou "
+"problema, llegiu l'informe i afegiu les etiquetes correctes com s'especifica "
+"a :doc:`directrius per al seguiment de problemes </about/process/issue-"
+"tracking>`. Podeu començar immediatament a confirmar l'informe d'error."
 
 #: ../../contribute/quality-assurance.rst:25
 msgid ""
 "If the new issue has already been reported elsewhere, label it "
 "**duplicate** and close it."
 msgstr ""
+"Si ja s'ha reportat el nou problema en algun altre lloc, poseu-li l'etiqueta "
+"**duplicate** (duplicat) i tanqueu-lo."
 
 #: ../../contribute/translations.rst:2
 msgid "Translations"
-msgstr ""
+msgstr "Traduccions"
 
 #: ../../contribute/translations.rst:4
 msgid ""
 "Although English is the official base language for all UBports projects "
 "we believe you have the right to use it in any language you want."
 msgstr ""
+"Tot i que la llengua oficial de base per a tots els projectes de l'UBport és "
+"l'anglès, creiem que teniu dret a usar-lo en qualsevol llengua que vulgueu."
 
 #: ../../contribute/translations.rst:6
 msgid "We are working hard to meet that goal, and you can help as well."
 msgstr ""
+"Estem treballant dur per aconseguir aquest objectiu, i també podeu ajudar."
 
 #: ../../contribute/translations.rst:8
 msgid "There are two levels for this:"
-msgstr ""
+msgstr "Hi ha dos nivells per això:"
 
 #: ../../contribute/translations.rst:10
 msgid "A casual approach, as a translator volunteer."
-msgstr ""
+msgstr "Un nivell casual, com a voluntari de traduccions."
 
 #: ../../contribute/translations.rst:11
 msgid ""
@@ -643,16 +752,21 @@ msgid ""
 "application <https://ubports.com/survey/start/ubports-membership-"
 "application-6>`_."
 msgstr ""
+"Un nivell de compromís total com a membre de l'UBports, registrant-vos a `"
+"aquesta aplicació <https://ubports.com/survey/start/ubports-membership-"
+"application-6>`_."
 
 #: ../../contribute/translations.rst:14
 msgid "Tools for Translation"
-msgstr ""
+msgstr "Eines per a la traducció"
 
 #: ../../contribute/translations.rst:16
 msgid ""
 "For everyone: A web based translation tool called `Weblate "
 "<https://translate.ubports.com/>`_. This is the recommended way."
 msgstr ""
+"Per a tothom: Una eina de traducció basada en la web anomenada `Weblate "
+"<https://translate.ubports.com/>`_. Aquesta és la manera recomanada."
 
 #: ../../contribute/translations.rst:18
 msgid ""
@@ -661,6 +775,10 @@ msgid ""
 "their repository on `our GitHub organization "
 "<https://github.com/ubports>`_."
 msgstr ""
+"Per a usuaris avançats: Treball directe als fitxers .po amb l'editor de la "
+"vostra elecció, i un compte GitHub. Els fitxers .po per a cada projecte "
+"estan al seu repositori a la `nostra organització del GitHub "
+"<https://github.com/ubports>`_."
 
 #: ../../contribute/translations.rst:20
 msgid ""
@@ -668,14 +786,17 @@ msgid ""
 "<https://forums.ubports.com/category/39/translations>`_ to discuss on "
 "translating Ubuntu Touch and its core apps."
 msgstr ""
+"Un `fòrum de traducció  "
+"<https://forums.ubports.com/category/39/translations>`_ per discutir sobre "
+"les traduccions de l'Ubuntu Touch i les seves aplicacions de base."
 
 #: ../../contribute/translations.rst:24
 msgid "How-To"
-msgstr ""
+msgstr "Guia bàsica"
 
 #: ../../contribute/translations.rst:27
 msgid "UBports Weblate"
-msgstr ""
+msgstr "Weblate de l'UBports"
 
 #: ../../contribute/translations.rst:29
 msgid ""
@@ -684,64 +805,88 @@ msgid ""
 "suggestions without being registered. If you want to save your "
 "translations, you must be logged in."
 msgstr ""
+"Podeu anar a `Weblate de l'UBports "
+"<https://forums.ubports.com/category/39/translations>`_, cliqueu al botó "
+"«Dashboard» (tauler), i comenceu a fer suggeriments anònims sense haver-vos "
+"registrat. Si voleu desar les vostres traduccions, heu d'iniciar una sessió."
 
 #: ../../contribute/translations.rst:31
 msgid ""
 "For that, go to UBports Weblate and click on the \"Register\" button. "
 "Once in the \"Registration\" page, you'll find two options:"
 msgstr ""
+"Per fer això, aneu al Weblate de l'UBports i cliqueu al botó «Register» "
+"(registreu-me). Un cop esteu a la pàgina «Registration» (registre), trobareu "
+"dues opcions:"
 
 #: ../../contribute/translations.rst:33
 msgid ""
 "Register using a valid email address, a username, and your full name. "
 "You'll need to resolve an easy control question too."
 msgstr ""
+"Registreu-vos usant una adreça vàlida de correu electrònic, un nom d'usuari, "
+"i el vostre nom complet. També haureu de resoldre una pregunta senzilla de "
+"control."
 
 #: ../../contribute/translations.rst:34
 msgid ""
 "Register using a third party registration. Currently the system supports "
 "accounts from openSUSE, GitHub, Fedora, and Ubuntu."
 msgstr ""
+"Registreu-vos usant un registre de tercers. Actualment el sistema dóna "
+"suport a comptes de l'openSUSE, el GitHub, el Fedora i l'Ubuntu."
 
 #: ../../contribute/translations.rst:36
 msgid ""
 "Once you're logged in, the site is self-explanatory and you'll find there"
 " all the options and customization you can do."
 msgstr ""
+"Un cop heu iniciat una sessió, el lloc conté totes les explicacions i hi "
+"trobareu totes les opcions i la personalització que podeu fer."
 
 #: ../../contribute/translations.rst:38
 msgid ""
 "Now, get on with it. The first step is to search if your language already"
 " exists in the project of your choice."
 msgstr ""
+"A continuació, comenceu a treballar. El primer pas és cercar si la vostra "
+"llengua ja hi és al projecte que heu triat."
 
 #: ../../contribute/translations.rst:40
 msgid ""
 "If your language is not available for a specific project, you can add it "
 "yourself."
 msgstr ""
+"Si la vostra llengua no està disponible per al projecte especificat, la "
+"podeu afegir."
 
 #: ../../contribute/translations.rst:42
 msgid ""
 "You decide how much time you can put into translation. From minutes to "
 "hours, everything counts."
 msgstr ""
+"Podeu decidir quant de temps podeu dedicar a les traduccions. Des de minuts "
+"fins a hores, tot suma."
 
 #: ../../contribute/translations.rst:45
 msgid ".po file editor"
-msgstr ""
+msgstr "editor de fitxers .po"
 
 #: ../../contribute/translations.rst:47
 msgid ""
 "As was said up above, you need a file editor of your choice and a GitHub "
 "account to translate .po files directly."
 msgstr ""
+"Com s'havia dit abans, per editar fitxers .po directament us cal un editor "
+"de fitxers de la vostra elecció i un compte del GitHub."
 
 #: ../../contribute/translations.rst:49
 msgid ""
 "There are online gettext .po editors and those you can install in your "
 "computer."
 msgstr ""
+"Hi ha editors en línia dels fitxers .po del gettext i els podeu instal·lar "
+"al vostre ordinador."
 
 #: ../../contribute/translations.rst:51
 msgid ""
@@ -749,16 +894,21 @@ msgid ""
 "software only. There are too many plain text editors and tools to help "
 "you translate .po files to put down a list here."
 msgstr ""
+"Podeu triar qualsevol editor que voleu, però preferim treballar "
+"exclusivament amb programari lliure. Hi ha massa editors de text pla i eines "
+"per ajudar-vos a traduir els fitxers .po com per fer una llista aquí."
 
 #: ../../contribute/translations.rst:53
 msgid ""
 "If you want to work with .po files directly you know what you're doing "
 "for sure."
 msgstr ""
+"Si voleu treballar amb fitxers .po directament segurament sabeu el que esteu "
+"fent."
 
 #: ../../contribute/translations.rst:56
 msgid "Translation Team Communication"
-msgstr ""
+msgstr "Comunicació de l'equip de traducció"
 
 #: ../../contribute/translations.rst:58
 msgid ""
@@ -766,10 +916,14 @@ msgid ""
 "<https://forums.ubports.com/category/39/translations>`_ that UBports "
 "provides for this task."
 msgstr ""
+"La manera més senzilla i recomanada a usar és `la categoria del fòrum "
+"<https://forums.ubports.com/category/39/translations>`_ que l'UBports "
+"proveeix per a aquesta tasca."
 
 #: ../../contribute/translations.rst:60
 msgid "To use it you need to register, or login if you're registered already."
 msgstr ""
+"Per usar-la us heu de registrar, o iniciar una sessió si ja esteu registrat."
 
 #: ../../contribute/translations.rst:62
 msgid ""
@@ -777,22 +931,30 @@ msgid ""
 "brackets in the \"Enter your topic title here\" field. For example, "
 "``[Spanish] How to translate whatever?``"
 msgstr ""
+"L'únic requeriment és iniciar el vostre article posant la vostra llengua "
+"entre parèntesis al camp «Enter your topic title here» (entreu el títol del "
+"vostre tema aquí). Per exemple ``[Català] Com traduir el que sigui?``"
 
 #: ../../contribute/translations.rst:64
 msgid ""
 "Just for your information, some projects are using Telegram groups too, "
 "and some teams are still using the Ubuntu Launchpad framework."
 msgstr ""
+"Sols per a la vostra informació, alguns projectes també estan usant grups "
+"del Telegram, i alguns equips encara estan usant la infraestructura del "
+"Launchpad de l'Ubuntu."
 
 #: ../../contribute/translations.rst:66
 msgid ""
 "In your interactions with your team you'll find the best way to "
 "coordinate your translations."
 msgstr ""
+"En les interaccions amb el vostre equip trobareu la millor manera de "
+"coordinar les vostres traduccions."
 
 #: ../../contribute/translations.rst:69
 msgid "License"
-msgstr ""
+msgstr "Llicència"
 
 #: ../../contribute/translations.rst:71
 msgid ""
@@ -801,7 +963,11 @@ msgid ""
 "(CC BY-SA 4.0) <https://creativecommons.org/licenses/by-sa/4.0/>`_ "
 "license that you explicitly accept by contributing to the project."
 msgstr ""
+"Tots els projectes de traducció, i totes les vostres contribucions al "
+"projecte, estan sota la llicència `Creative Commons Attribution-ShareAlike "
+"4.0 International (CC BY-SA 4.0) <https://creativecommons.org/licenses/by-"
+"sa/4.0/>`_ que accepteu explícitament quan contribuïu al projecte."
 
 #: ../../contribute/translations.rst:73
 msgid "Go to that link to learn what this exactly means."
-msgstr ""
+msgstr "Aneu a aquest enllaç per conèixer que significa exactament això."
