@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-08 19:46-0600\n"
-"PO-Revision-Date: 2018-02-24 10:51+0000\n"
-"Last-Translator: Anne Onyme <anneonyme017@openmailbox.org>\n"
+"PO-Revision-Date: 2018-02-25 15:42+0000\n"
+"Last-Translator: Laurent Rouxel <lrouxel@free.fr>\n"
 "Language-Team: French <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-porting/fr/>\n"
 "Language: fr\n"
@@ -495,7 +495,7 @@ msgstr ""
 
 #: ../../porting/installing-16-04.rst:56
 msgid "Make / writeable"
-msgstr ""
+msgstr "Rendre / modifiable"
 
 #: ../../porting/installing-16-04.rst:58
 msgid ""
@@ -503,10 +503,13 @@ msgid ""
 "next step), you'll need to remount it with write permissions. To do that,"
 " run the following command::"
 msgstr ""
+"Avant de modifier le rootfs (ce qui sera nécessaire pour les étapes "
+"suivantes), vous devrez le remonter avec les permissions en écriture. Pour "
+"faire cela, lancez la commande suivante ::"
 
 #: ../../porting/installing-16-04.rst:64
 msgid "Add udev rules"
-msgstr ""
+msgstr "Ajouter les règles udev"
 
 #: ../../porting/installing-16-04.rst:66
 msgid ""
@@ -514,6 +517,10 @@ msgid ""
 "Ubuntu Touch software to access your hardware. Run the following command,"
 " replacing [codename] with your device's codename.::"
 msgstr ""
+"Maintenant que vous êtes connecté, vous devez créer quelques règles udev "
+"pour donner au logiciel Ubuntu Touch l'accès à votre matériel. Lancez la "
+"commande suivante, en remplaçant [codename] avec le nom de code de votre "
+"appareil. ::"
 
 #: ../../porting/installing-16-04.rst:71
 msgid ""
@@ -521,6 +528,9 @@ msgid ""
 " Ubuntu Touch spinner followed by Unity 8. Your lock password is the same"
 " as you set for SSH."
 msgstr ""
+"Maintenant, redémarrez votre appareil. Si tout s'est bien passé, vous "
+"devriez voir le logo animé d'Ubuntu Touch suivi par Unity 8. Votre mot de "
+"passe de verrouillage est le même que celui que vous avez défini pour SSH."
 
 #: ../../porting/installing-16-04.rst:76
 msgid ""
@@ -528,6 +538,9 @@ msgid ""
 ":doc:`running-ut` to learn about more specific steps you will need to "
 "take for a complete port."
 msgstr ""
+"Félicitations! ubuntu Touch vient de démarrer sur votre appareil. Allez "
+"ensuite sur :doc:`running-ut` pour découvrir en détail les étapes que vous "
+"devrez mettre en œuvre pour effectuer un portage complet."
 
 #: ../../porting/installing-16-04.rst:80
 msgid ""
