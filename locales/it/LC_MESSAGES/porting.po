@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-08 19:46-0600\n"
 "PO-Revision-Date: 2018-02-25 20:28+0000\n"
-"Last-Translator: Stefano Melchior <stefano.melchior@me.com>\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-porting/it/>\n"
 "Language: it\n"
@@ -878,11 +878,11 @@ msgstr ""
 
 #: ../../porting/running-ut.rst:46
 msgid "Form factor"
-msgstr ""
+msgstr "Fattore di forma"
 
 #: ../../porting/running-ut.rst:48
 msgid "There are two other settings that may be of interest to you."
-msgstr ""
+msgstr "Ci sono altre due impostazioni che potrebbero interessarti."
 
 #: ../../porting/running-ut.rst:50
 msgid ""
