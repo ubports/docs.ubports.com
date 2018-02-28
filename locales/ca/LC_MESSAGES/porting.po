@@ -3,23 +3,26 @@
 # This file is distributed under the same license as the UBports package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-08 19:46-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-02-28 13:11+0000\n"
+"Last-Translator: Walter Garcia-Fontes <walter.garcia@upf.edu>\n"
+"Language-Team: Catalan <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-porting/ca/>\n"
+"Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../porting/building-ubports-boot.rst:2
 msgid "Building ubports-boot"
-msgstr ""
+msgstr "Construcció de l'arrancada de l'ubports-boot (arrencada de l'ubports)"
 
 #: ../../porting/building-ubports-boot.rst:4
 msgid ""
@@ -28,10 +31,14 @@ msgid ""
 " the vanilla hybris-boot that Halium produces. For this reason, we need "
 "to build ubports-boot."
 msgstr ""
+"L'Ubuntu Touch usa l'Upstart en comptes del Systemd per a aquest dimoni per "
+"iniciar. A causa d'això, no és completament compatible amb el Hallium i no "
+"pot fer servir el hybris-boot estàndard que produeix el Halium. Per aquesta "
+"raó, hem de compilar el ubports-boot."
 
 #: ../../porting/building-ubports-boot.rst:8
 msgid "Add source to Halium tree"
-msgstr ""
+msgstr "Addició del codi font a l'arbre del Halium"
 
 #: ../../porting/building-ubports-boot.rst:10
 msgid ""
@@ -39,24 +46,30 @@ msgid ""
 "to your Halium tree. You may choose to do this by adding it to your local"
 " manifests (recommended) or simply cloning it in place."
 msgstr ""
+"La primera cosa que cal fer és afegir el codi font de l'ubports-boot al "
+"vostre  arbre del Halium. Podeu escollir fer això afegint-lo als vostres "
+"manifests locals (recomanat) o, en comptes,  simplement duplicant-lo."
 
 #: ../../porting/building-ubports-boot.rst:14
 msgid "Add to local manifest"
-msgstr ""
+msgstr "Addició al manifest local"
 
 #: ../../porting/building-ubports-boot.rst:16
 msgid ""
 "Create a new file in ``.repo/local_manifests`` called ``ubports-"
 "boot.xml``. Add the following to the file:"
 msgstr ""
+"Creu un nou fitxer a ``.repo/local_manifests`` anomenat ``ubports-boot.xml``"
+". Afegi el següent al fitxer:"
 
 #: ../../porting/building-ubports-boot.rst:25
 msgid "Now, just do a ``repo sync`` to download the new source."
 msgstr ""
+"A continuació, simplement feu un  ``repo sync`` per baixar el nou codi font."
 
 #: ../../porting/building-ubports-boot.rst:29
 msgid "Manual clone"
-msgstr ""
+msgstr "Clon manual"
 
 #: ../../porting/building-ubports-boot.rst:31
 msgid ""
@@ -64,16 +77,21 @@ msgid ""
 "<https://github.com/ubports/ubports-boot>`_ into your tree manually. It "
 "should be placed into ``BUILDDIR/halium/ubports-boot``."
 msgstr ""
+"També podeu escollir clonar el `repositori ubports-boot "
+"<https://github.com/ubports/ubports-boot>`_ manualment al vostre arbre. "
+"Hauria d'ubicar-se a ``DIRECTORICOMPILACIO/halium/ubports-boot``."
 
 #: ../../porting/building-ubports-boot.rst:33
 msgid ""
 "If you share your code and build instructions, please note that you've "
 "done this."
 msgstr ""
+"Si compartiu el vostre codi i les instruccions de compilació, si us plau "
+"anoteu que heu fet això."
 
 #: ../../porting/building-ubports-boot.rst:36
 msgid "Include in build system"
-msgstr ""
+msgstr "Inclusió al sistema de compilació"
 
 #: ../../porting/building-ubports-boot.rst:38
 msgid ""
@@ -82,10 +100,15 @@ msgid ""
 "editor. Find the comment ``# Specific projects for Halium`` and add "
 "``halium/ubports-boot`` to the list of ``subdirs`` ::"
 msgstr ""
+"El sistema de compilació de l'android normalment no sabrá on trobar l"
+"'ubports-boot. Per arreglar això, obriu el fitxer "
+"``DIRECTORICOMPILACIO/build/core/main.mk`` a un editor de text. Trobeu el "
+"comentari ``# Specific projects for Halium`` i afegiu ``halium/ubports-boot``"
+" a la llista de `subdirs``::"
 
 #: ../../porting/building-ubports-boot.rst:45
 msgid "Fix mounts"
-msgstr ""
+msgstr "Arreglo dels muntatges"
 
 #: ../../porting/building-ubports-boot.rst:49
 msgid ""
@@ -95,6 +118,11 @@ msgid ""
 " should not be considered a permanent fix. Be prepared to revert this "
 "later when these bugs have been fixed."
 msgstr ""
+"Això és una solució temporal per a `ubports/ubports-boot #1 "
+"<https://github.com/ubports/ubports-boot/issues/1>`_ i `ubports/ubports-boot "
+"#2 <https://github.com/ubports/ubports-boot/issues/2>`_. No s'hauria de "
+"considerar una solució permanent. Teniu pendent de revertir això més tard "
+"quan s'arreglin aquests errors."
 
 #: ../../porting/building-ubports-boot.rst:51
 msgid ""
@@ -108,6 +136,16 @@ msgid ""
 "Halium uses the fixup-mountpoints script, which you are probably familiar"
 " with by now."
 msgstr ""
+"A l'initramfs per a la imatge de l'ubports-boot li cal un paràmetre de línia "
+"d'ordres, ``datapart=``, que l'apunta al dispositiu de bloc que normalment "
+"està muntat a ``/data`` a l'Android. Aquest paràmetre s'insereix "
+"automàticament a la imatge al moment de la compilació trobant ``/data`` al "
+"fstab predeterminat del vostre dispositiu i usant el seu codi font. "
+"Desafortunadament, aquest codi font és generalment un node a "
+"``/dev/block/bootdevice/per-nom`` o alguna altra cosa estranya, que sols "
+"està disponible a un initramfs de l'Android. Per arreglar això, el Halium "
+"usa l'script fixup-mountpoinst, amb el qual probablement ja teniu "
+"familiaritat."
 
 #: ../../porting/building-ubports-boot.rst:53
 msgid ""
@@ -116,6 +154,10 @@ msgid ""
 "modification. For this reason, we are going to have to edit your device's"
 " fstab."
 msgstr ""
+"L'initramfs de l'ubports-boot no usa l'script fixup-mountpoints, ni tampoc "
+"no posa els dispositius de bloc al lloc adequat per al muntatge sense que "
+"s'hagi de modificar. Per aquesta raó,  ens caldrà editar l'fstab del vostre "
+"dispositiu."
 
 #: ../../porting/building-ubports-boot.rst:55
 msgid ""
@@ -124,6 +166,10 @@ msgid ""
 "``BUILDDIR/device/MANUFACTUER/CODENAME/rootdir/etc`` and it is named "
 "either ``fstab.qcom`` or ``fstab.devicename``. Open the file for editing."
 msgstr ""
+"El primer pas per a aquest procés és esbrinar on està realment l'fstab. Per "
+"a la major part dels casos, està a dins de "
+"``DIRECTORICOMPILACIO/FABRICANT/NOMDECODI/rootdir/etc``i s'anomena o bé "
+"``fstab.qcom``o ``fstab.nomdedispositiu``. Obriu el fitxer per editar-lo."
 
 #: ../../porting/building-ubports-boot.rst:57
 msgid ""
@@ -133,12 +179,20 @@ msgid ""
 "block device is ``/dev/block/mmcblk0p54``, so I put ``/dev/mmcblk0p54`` "
 "in this place. Also change the type to ext4, if it is not already."
 msgstr ""
+"Amb el fitxer obert, canvieu el ``src``, o primer atribut, del punt de "
+"muntatge ``/data`` pel que heu posat a fixup-mountpoints per a ``/data``, "
+"però sense la carpeta ``/block``. Per exemple, al Moto G5 Plus, el "
+"dispositiu de bloc és ``/dev/block/mmcblk0p54``, així que poso "
+"``/dev/mmcblk0p54`` en aquest lloc. Canvieu també el tipus a ext4, si no "
+"posa això."
 
 #: ../../porting/building-ubports-boot.rst:59
 msgid ""
 "Now, remove all ``context=`` options from all block devices in the file. "
 "Save and exit."
 msgstr ""
+"A continuació, elimineu totes les opcions ``context=`` de tots els "
+"dispositius de bloc al fitxer. Deseu i sortiu."
 
 #: ../../porting/building-ubports-boot.rst:61
 msgid ""
@@ -147,10 +201,14 @@ msgid ""
 "<https://github.com/UniversalSuperBox/android_device_motorola_potter/commit/9b574967e3a6f07884760b418befe731ccfcb924>`__."
 " Removing the ``wait`` flag is not required and was an accident."
 msgstr ""
+"Per un exemple d'això, vegeu `aquesta pujada a universalsuperbox/"
+"android_device_motorola_potter <https://github.com/UniversalSuperBox/android_"
+"device_motorola_potter/commit/9b574967e3a6f07884760b418befe731ccfcb924>`__. "
+"No cal l'eliminació de l'indicador ``wait``, va ser un accident."
 
 #: ../../porting/building-ubports-boot.rst:65
 msgid "Edit init.rc"
-msgstr ""
+msgstr "Edició d'init.rc"
 
 #: ../../porting/building-ubports-boot.rst:67
 msgid ""
@@ -158,6 +216,10 @@ msgid ""
 "device to reboot without warning, about 30-60 seconds after it boots. We "
 "will need to disable these services until the issue is resolved."
 msgstr ""
+"Alguns serveis de l'Android entren en conflicte amb l'ofono a 16.04 i "
+"causaran que el vostre dispositiu es reiniciï sense advertiment, "
+"aproximadament uns 30-60 segons després de l'inici. Haurem de desactivar "
+"aquests serveis fins resoldre el problema."
 
 #: ../../porting/building-ubports-boot.rst:69
 msgid ""
@@ -169,10 +231,18 @@ msgid ""
 "UniversalSuperBox/android_device_motorola_potter "
 "<https://github.com/UniversalSuperBox/android_device_motorola_potter/commit/7875b48b5b6f240935d7f327d33128e952a3589b>`__"
 msgstr ""
+"Per fer això, obriu l'``init.rc`` predeterminat del vostre dispositiu ("
+"probablement és init.qcom.rec o init.[nomdecodi].rc), elimineu comentant-la "
+"qualsevol declaració ``import`` i afegiu ``disabled`` a serveis com ara el "
+"rild, el qti i d'altres que interfereixen amb la ràdio. La major part d'ells "
+"tenen una línia ``user radio``. Per a un exemple, vegeu `commit 7875b48b on "
+"UniversalSuperBox/android_device_motorola_potter <https://github.com/Universa"
+"lSuperBox/android_device_motorola_potter/commit/7875b48b5b6f240935d7f327d3312"
+"8e952a3589b>`__"
 
 #: ../../porting/building-ubports-boot.rst:73
 msgid "Edit kernel config"
-msgstr ""
+msgstr "Edició de la configuració del nucli"
 
 #: ../../porting/building-ubports-boot.rst:75
 msgid ""
@@ -181,6 +251,11 @@ msgid ""
 "purpose, ``check-kernel-config``. It's included in the ubports-boot "
 "repository. Simply run it on your config as follows::"
 msgstr ""
+"L'Ubuntu Touch requereix una configuració del nucli lleugerament diferent al "
+"Halium, incloent-hi l'activació de l'Apparmor. Afortunadament, tenim un "
+"bonic script per a aquest propòsit, ``check-kernel-config``. S'inclou al "
+"repositori de l'ubports-boot. Executeu-lo simplement a la vostra "
+"configuració com segueix::"
 
 #: ../../porting/building-ubports-boot.rst:79
 msgid ""
@@ -189,51 +264,61 @@ msgid ""
 " errors. If there are, fix them manually. Once finished, run the script "
 "without the ``-w`` flag one more time to make sure everything is correct."
 msgstr ""
+"Potser heu de fer això dos cops. Molt probablement arreglarà coses els dos "
+"cops. A continuació, executeu l'script sense el paràmetre ``-w`` per veure "
+"si hi ha alguns errors més. Si n'hi ha, arregleu-los manualment. Un cop "
+"acabat, executeu l'script sense el paràmetre ``-w`` un altre cop per "
+"assegurar-vos que tot és correcte."
 
 #: ../../porting/building-ubports-boot.rst:83
 msgid "Build the image"
-msgstr ""
+msgstr "Compilació de la imatge"
 
 #: ../../porting/building-ubports-boot.rst:85
 msgid ""
 "Once ubports-boot is in place, you can build it quite simply. You will "
 "also need to rebuild system.img due to our changes."
 msgstr ""
+"Un cop l'ubports-boot està en el seu lloc, podeu compilar-los de forma força "
+"simple. També haureu de recompilar system.img a causa dels nostres canvis."
 
 #: ../../porting/building-ubports-boot.rst:87
 msgid "``cd`` to your Halium BUILDDIR"
-msgstr ""
+msgstr "``cd`` al vostre DIRECTORICOMPILACIO del Halium"
 
 #: ../../porting/building-ubports-boot.rst:88
 msgid "``source build/envsetup.sh``"
-msgstr ""
+msgstr "``source build/envsetup.sh``"
 
 #: ../../porting/building-ubports-boot.rst:89
 msgid "Run ``breakfast`` or ``lunch``, whichever you use for your device"
 msgstr ""
+"Executeu ``breakfast`` o ``lunch``, el que useu per al vostre dispositiu"
 
 #: ../../porting/building-ubports-boot.rst:90
 msgid "``mka ubports-boot``"
-msgstr ""
+msgstr "``mka ubports-boot``"
 
 #: ../../porting/building-ubports-boot.rst:91
 msgid "``mka systemimage``"
-msgstr ""
+msgstr "``mka systemimage``"
 
 #: ../../porting/building-ubports-boot.rst:96
 #: ../../porting/installing-16-04.rst:74
 msgid "Continue on"
-msgstr ""
+msgstr "Continueu a"
 
 #: ../../porting/building-ubports-boot.rst:98
 msgid ""
 "Now that you have ubports-boot built, you can move on to "
 ":doc:`installing-16-04`."
 msgstr ""
+"Ara que heu compilat l'ubports-boot, podeu continuar a "
+":doc:`installing-16-04`."
 
 #: ../../porting/installing-16-04.rst:2
 msgid "Installing Ubuntu Touch 16.04 images on Halium"
-msgstr ""
+msgstr "Instal·lació d'imatges de l'Ubuntu Touch 16.04 al Hallium"
 
 #: ../../porting/installing-16-04.rst:6
 msgid ""
@@ -241,6 +326,9 @@ msgid ""
 "anything that you would like to keep, ensure it is backed up and copied "
 "off of the device before continuing."
 msgstr ""
+"Aquests passos esborraran **totes** les vostres dades al dispositiu. Si n'hi "
+"ha quelcom que voleu mantenir, assegureu-vos abans de continuar que hi ha "
+"una còpia de seguretat i està copiada fora del dispositiu."
 
 #: ../../porting/installing-16-04.rst:8
 msgid ""
@@ -248,6 +336,9 @@ msgid ""
 "use a script called ``rootstock-touch-install`` to install an Ubuntu "
 "Touch rootfs on your device."
 msgstr ""
+"Ara que heu :doc:`compilat ubports-boot  <building-ubports-boot>`, usarem un "
+"escript anomenat ``rootstock-touch-install`` per instal·lar el rootfs de "
+"l'Ubuntu Touch al vostre dispositiu."
 
 #: ../../porting/installing-16-04.rst:10
 msgid ""
@@ -256,10 +347,13 @@ msgid ""
 "/data partition is formatted with ext4 and does not have any encryption "
 "on it."
 msgstr ""
+"Per instal·lar l'Ubuntu Touch, us caldrà que hi hagi instal·lada al vostre "
+"telèfon una recuperació amb el Busybox, com ara el TWRP. Heu d'assegurar-vos "
+"també que la partició /data està formatejada amb l'ext4 i no té cap xifrat."
 
 #: ../../porting/installing-16-04.rst:13
 msgid "Install ubports-boot"
-msgstr ""
+msgstr "Instal·lació de l'ubports-boot"
 
 #: ../../porting/installing-16-04.rst:15
 msgid ""
@@ -267,10 +361,13 @@ msgid ""
 "Reboot your phone into fastboot mode, then do the following from your "
 "Halium tree::"
 msgstr ""
+"Haurem d'instal·lar l'imatge de l'ubports-boot abans d'instal·lar una "
+"imatge. Reinicieu el telèfon al mode fastboot, i a continuació feu el "
+"següent des del vostre arbre del Hallium:"
 
 #: ../../porting/installing-16-04.rst:21
 msgid "Download the rootfs"
-msgstr ""
+msgstr "Descarregueu el rootfs"
 
 #: ../../porting/installing-16-04.rst:23
 msgid ""
@@ -282,16 +379,25 @@ msgid ""
 "you have an x86 device, let us know. We do not have a rootfs available "
 "for these yet."
 msgstr ""
+"A continuació us caldrà baixar el rootfs (sistema arrel de fitxers) que "
+"sigui apropiat per al vostre dispositiu. Actualment sols tenim un de "
+"disponible. Simplement descarregueu ``ubports-touch.rootfs-xenial-"
+"armhf.tar.gz`` des del `nostre servidor CI <https://ci.ubports.com/job"
+"/xenial-rootfs-armhf/>`__. Si teniu un dispositiu de 64-bit (aarch64), "
+"aquest mateix rootfs us hauria de funcionar. Si teniu un dispositiu x86, feu-"
+"nos-ho saber. No tenim encara un rootfs per a aquests dispositius."
 
 #: ../../porting/installing-16-04.rst:27
 msgid "Install system.img and rootfs"
-msgstr ""
+msgstr "Instal·lació del sistem.img i del rootfs"
 
 #: ../../porting/installing-16-04.rst:31
 msgid ""
 "Change the rootstock link to point to UBports once the actuallyfixit PR "
 "is merged."
 msgstr ""
+"Canvieu l'enllaç rootstock perquè apunti a l'UBports un cop s'ha fusionat la "
+"demanda de baixada actuallyfixit."
 
 #: ../../porting/installing-16-04.rst:33
 msgid ""
@@ -300,6 +406,10 @@ msgid ""
 "/xenial-actuallyfixit>`_. Boot your device into recovery and run the "
 "script as follows::"
 msgstr ""
+"Descarregueu l'script rootstock-touch-install de `universalsuperbox"
+"/rootstock-ng <https://github.com/universalsuperbox/rootstock-ng/tree/xenial-"
+"actuallyfixit>`_. Inicieu el vostre dispositiu a la recuperació i executeu "
+"l'script de la manera següent:"
 
 #: ../../porting/installing-16-04.rst:37
 msgid ""
@@ -310,6 +420,12 @@ msgid ""
 "with us. If your device doesn't reboot automatically, reboot it using "
 "your recovery's interface."
 msgstr ""
+"L'script copiarà i extraurà els fitxers als llocs adequats, a continuació us "
+"deixarà establir la contrasenya d'usuari del dispositiu. Si avança fins a ``"
+"rebooting device`` (s'està reiniciant el dispositiu) i no sembla produir cap "
+"error, podeu continuar al pas següent. Si hi ha quelcom que vagi malament, "
+"si us plau contacteu-nos. Si el vostre dispositiu no es reinicia "
+"automàticament, reinicieu-lo usant la interfície de recuperació."
 
 #: ../../porting/installing-16-04.rst:39
 msgid ""
@@ -318,10 +434,15 @@ msgid ""
 " tree. These may have fewer bugs than your recovery's busybox. More "
 "information about this option is available in the script's README."
 msgstr ""
+"Si teniu algun error que diu ``broken pipe`` (canonada trencada) o ``out of "
+"memory`` (memòria exhaurida), useu l'opció ``-b`` per tirar de la compilació "
+"busybox o toybox que venia amb el vostre arbre. Aquestes compilacions potser "
+"tinguin menys errors que el vostre busybox de recuperació. Hi ha més "
+"informació disponible sobre aquesta opció al README de l'script."
 
 #: ../../porting/installing-16-04.rst:43
 msgid "Get SSH access"
-msgstr ""
+msgstr "Obteniu accés per SSH"
 
 #: ../../porting/installing-16-04.rst:45
 msgid ""
@@ -329,6 +450,9 @@ msgid ""
 "However, you should also get a new network connection on the computer you"
 " have it plugged in to. We will use this to debug the system."
 msgstr ""
+"Quan s'inicia el vostre dispositiu, és probable que romangui a la pantalla "
+"del bootloader. Tanmateix, hauríeu d'obtenir una nova connexió de xarxa a "
+"l'ordinador al qual el teniu endollat. Usarem això per depurar el sistema."
 
 #: ../../porting/installing-16-04.rst:47
 msgid ""
@@ -338,6 +462,11 @@ msgid ""
 "contact with us so we can find out why. You may also choose to run "
 "``watch ip link`` and look for changes in network devices."
 msgstr ""
+"Per confirmar que el vostre sistema s'ha iniciat correctament, executeu ``"
+"dmesg -w`` i esteu atents per «GNU/Linux device» a la sortida. Si, en canvi, "
+"obteniu quelcom semblant a «ubports initrd i hit a nail», si us plau "
+"contacteu-nos perquè podem esbrinar la causa. També podeu escollir executar "
+"``watch ip link`` i cercar canvis als dispositius de xarxa."
 
 #: ../../porting/installing-16-04.rst:49
 msgid ""
@@ -345,14 +474,18 @@ msgid ""
 " on the newly connected RNDIS interface to ``10.15.19.100`` if you don't "
 "get one automatically. Then, run the following to access your device::"
 msgstr ""
+"De format semblant al rootfs de referència del Halium, hauríeu d'establir "
+"l'IP del vostre ordinador a la interfície RNDIS acabada de connectar a "
+"``10.15.19.100``, si no obteniu una IP automàticament. A continuació, "
+"executeu el següents per accedir al vostre dispositiu::"
 
 #: ../../porting/installing-16-04.rst:53
 msgid "The password will be the one that you set while running rootstock."
-msgstr ""
+msgstr "La contrasenya serà la que heu establert quan s'executava rootstock."
 
 #: ../../porting/installing-16-04.rst:56
 msgid "Make / writeable"
-msgstr ""
+msgstr "Fer/escrivible"
 
 #: ../../porting/installing-16-04.rst:58
 msgid ""
@@ -360,10 +493,13 @@ msgid ""
 "next step), you'll need to remount it with write permissions. To do that,"
 " run the following command::"
 msgstr ""
+"Abans de fer cap canvi al rootfs (cosa que es requerirà al pas següent), "
+"l'haureu de tornar a muntar amb permisos d'escriptura. Per fer això, "
+"executeu l'ordre següent:"
 
 #: ../../porting/installing-16-04.rst:64
 msgid "Add udev rules"
-msgstr ""
+msgstr "Addició de les regles udev"
 
 #: ../../porting/installing-16-04.rst:66
 msgid ""
@@ -371,6 +507,10 @@ msgid ""
 "Ubuntu Touch software to access your hardware. Run the following command,"
 " replacing [codename] with your device's codename.::"
 msgstr ""
+"Ara que heu iniciat una sessió d'usuari, heu de crear algunes regles udev "
+"per permetre el programari de l'Ubuntu Touch accedir el maquinari. Executeu "
+"l'ordre següent, reemplaçant [nomdecodi] pel nom de codi del vostre "
+"dispositiu::"
 
 #: ../../porting/installing-16-04.rst:71
 msgid ""
@@ -378,6 +518,9 @@ msgid ""
 " Ubuntu Touch spinner followed by Unity 8. Your lock password is the same"
 " as you set for SSH."
 msgstr ""
+"Ara, reinicieu el dispositiu. Si tot ha anat bé, eventualment veureu la "
+"pantalla d'inici de l'Ubuntu Touch seguit de l'Unity 8. La vostra "
+"contrasenya de bloqueig és la mateixa que hau establert per al SSH."
 
 #: ../../porting/installing-16-04.rst:76
 msgid ""
@@ -385,16 +528,21 @@ msgid ""
 ":doc:`running-ut` to learn about more specific steps you will need to "
 "take for a complete port."
 msgstr ""
+"Enhorabona! L'Ubuntu Touch s'ha iniciat ara al vostre dispositiu. Aneu a :doc"
+":`running-ut` per aprendre sobre passos específics que haureu de prendre per "
+"completar la vostra adaptació."
 
 #: ../../porting/installing-16-04.rst:80
 msgid ""
 "This should be a little heavier on \"What to do when something goes "
 "wrong\" content."
 msgstr ""
+"Això hauria de tenir una mica més contingut del tipus «Què fer si quelcom va "
+"malament»."
 
 #: ../../porting/introduction.rst:2
 msgid "Porting information"
-msgstr ""
+msgstr "Informació sobre adaptació"
 
 #: ../../porting/introduction.rst:5
 msgid ""
@@ -403,12 +551,18 @@ msgid ""
 "supported, please see `this page <https://ubports.com/page/get-ubuntu-"
 "touch>`_."
 msgstr ""
+"Si esteu buscant informació sobre com instal·lar l'Ubuntu Touch a un "
+"dispositiu amb suport, o si voleu comprovar si el vostre dispositiu té "
+"suport, si us plau mireu `aquesta pàgina <https://ubports.com/page/get-"
+"ubuntu-touch>`_."
 
 #: ../../porting/introduction.rst:7
 msgid ""
 "This section will introduce you to some of the specifics of porting "
 "Ubuntu Touch to an Android device."
 msgstr ""
+"Aquesta secció us introduirà a alguns dels temes específics sobre "
+"l'adaptació de l'Ubuntu Touch a un dispositiu Android."
 
 #: ../../porting/introduction.rst:9
 msgid ""
@@ -417,20 +571,26 @@ msgid ""
 "your ``systemimage`` built without errors. Once you're at the point of "
 "installing a rootfs, you can come back here."
 msgstr ""
+"Abans de començar, hauríeu d'anar a `la guia d'adaptació del Halium "
+"<http://docs.halium.org/en/latest/porting/first-steps.html>`_ i aconseguir "
+"que la vostra ``systemimage`` es compili sense errors. Un cop que esteu en "
+"el punt d'instal·lar un rootfs, podeu retornar aquí."
 
 #: ../../porting/introduction.rst:11
 msgid ""
 "Start at :doc:`building-ubports-boot` if you'd like to install the "
 "UBports Ubuntu Touch 16.04 rootfs."
 msgstr ""
+"Comenceu a :doc:`building-ubports-boot` si us agradaria instal·lar el rootfs "
+"de l'Ubuntu Touch de l'UBports."
 
 #: ../../porting/running-ut.rst:2
 msgid "Running Ubuntu Touch"
-msgstr ""
+msgstr "Execució de l'Ubuntu Touch"
 
 #: ../../porting/running-ut.rst:5
 msgid "Display settings"
-msgstr ""
+msgstr "Paràmetres de la pantalla"
 
 #: ../../porting/running-ut.rst:7
 msgid ""
@@ -438,12 +598,18 @@ msgid ""
 "small. There are two variables that set the content scaling for Unity 8 "
 "and Ubuntu Touch applications: ``GRID_UNIT_PX`` and ``QTWEBKIT_DPR``."
 msgstr ""
+"Quan s'inicia el dispositiu, probablement notareu que tots és molt petit. Hi "
+"ha dues variables que estableixen l'escalat del contingut per a  l'Unity 8 i "
+"per a les aplicacions de l'Ubuntu Touch: ``GRID_UNIT_PX`` i ``QTWEBKIT_DPR``."
 
 #: ../../porting/running-ut.rst:9
 msgid ""
 "There are also some other options available that may be useful for you "
 "depending on your device's form factor. These are discussed below."
 msgstr ""
+"També n'hi ha altres opcions disponibles que us poden ser útils depenent del "
+"factor de forma del vostre dispositiu. Aquestes opcions es discuteixen a "
+"sota."
 
 #: ../../porting/running-ut.rst:11
 msgid ""
@@ -454,14 +620,21 @@ msgid ""
 "/ubuntu-session.d/[codename].conf`` specifying them. For example, this is"
 " the file for the Nexus 7 tablet::"
 msgstr ""
+"L'Unity 8 conjectura tots aquests paràmetres si no estan establerts. HI ha "
+"molts casos, tanmateix, on la conjectura és incorrecta (per exemple, les "
+"pantalles d'alta resolució de telèfons s'identificaran com ordinadors "
+"d'escriptori). Per establir un valor manualment per a aquestes variables, "
+"simplement creeu un fitxer a  ``/etc/ubuntu-session.d/[nomdecodi].conf`` "
+"especificant-los. Per exemple, aquest fitxer correspon a la tauleta Nexus 7:"
 
 #: ../../porting/running-ut.rst:19
 msgid "Methods for deriving values for these variables are below."
 msgstr ""
+"A sota es poden trobar mètodes per derivar valors per a aquestes variables."
 
 #: ../../porting/running-ut.rst:22
 msgid "Display scaling"
-msgstr ""
+msgstr "Escalat de la pantalla"
 
 #: ../../porting/running-ut.rst:24
 msgid ""
@@ -474,12 +647,24 @@ msgid ""
 "assume that tablets and laptops are the same distance and that they are "
 "held at 1.235 times the distance phones tend to be held at."
 msgstr ""
+"``GRID_UNIT_PX`` (Píxels per unitat de quadrícula o Px/GU) és específica per "
+"a cada dispositiu. El seu objectiu és fer que la interfície d'usuari del "
+"sistema i de les seves aplicacions tinguin la mateixa mida «percebuda» "
+"independentment del dispositius on es visualitzen. Principalment depèn de la "
+"densitat de píxels de la pantalla del dispositiu i la distància a la "
+"pantalla on es troba l'usuari. Aquest últim valor no pot ser detectat "
+"automàticament i es basa en l'heurística. Fem el supòsit que les tauletes i "
+"els ordinadors portàtils se sostenen a la mateixa distància i que se "
+"sostenen a 1.235 cops la distància a la qual se sostenen els telèfons."
 
 #: ../../porting/running-ut.rst:26
 msgid ""
 "``QTWEBKIT_DPR`` sets the display scaling for the Oxide web engine, so "
 "changes to this value will affect the scale of the browser and webapps."
 msgstr ""
+"``QTWEBKIT_DPR``estableix l'escalat de la pantalla per al motor de web "
+"Oxide, de manera que els canvis a aquest valor afectarà l'escalat del "
+"navegadors i les aplicacions web."
 
 #: ../../porting/running-ut.rst:28
 msgid ""
@@ -489,183 +674,190 @@ msgid ""
 "*perceived* size rather than *physical* size . Here are some values for "
 "other devices so you may derive the correct one for yours:"
 msgstr ""
+"S'ha escollit un dispositiu de referència a partir del qual derivem els "
+"valors per a tots els altres dispositius. El dispositiu de referència és un "
+"ordinador portàtil amb una pantalla de 120ppi. Tanmateix, no hi ha una "
+"fórmula exacta atès que aquestes opcions s'estableixen per la mida "
+"*percebuda* en comptes de la mida *física*. Aquí teniu alguns valors per a "
+"d'altres dispositius de manera que pugueu derivar els valors correctes per "
+"al vostre:"
 
 #: ../../porting/running-ut.rst:31
 msgid "Device"
-msgstr ""
+msgstr "Dispositiu"
 
 #: ../../porting/running-ut.rst:31
 msgid "Resolution"
-msgstr ""
+msgstr "Resolució"
 
 #: ../../porting/running-ut.rst:31
 msgid "Display Size"
-msgstr ""
+msgstr "Mida de la pantalla"
 
 #: ../../porting/running-ut.rst:31
 msgid "PPI"
-msgstr ""
+msgstr "PPI"
 
 #: ../../porting/running-ut.rst:31
 msgid "Px/GU"
-msgstr ""
+msgstr "Px/GU"
 
 #: ../../porting/running-ut.rst:31
 msgid "QtWebKit DPR"
-msgstr ""
+msgstr "QtWebKit DPR"
 
 #: ../../porting/running-ut.rst:33
 msgid "'Normal' density laptop"
-msgstr ""
+msgstr "Ordinador portàtil amb densitat 'normal'"
 
 #: ../../porting/running-ut.rst:33 ../../porting/running-ut.rst:35
 msgid "N/A"
-msgstr ""
+msgstr "N/D"
 
 #: ../../porting/running-ut.rst:33
 msgid "96-150"
-msgstr ""
+msgstr "96-150"
 
 #: ../../porting/running-ut.rst:33
 msgid "8"
-msgstr ""
+msgstr "8"
 
 #: ../../porting/running-ut.rst:33
 msgid "1.0"
-msgstr ""
+msgstr "1.0"
 
 #: ../../porting/running-ut.rst:34
 msgid "ASUS Nexus 7"
-msgstr ""
+msgstr "ASUS Nexus 7"
 
 #: ../../porting/running-ut.rst:34
 msgid "1280x800"
-msgstr ""
+msgstr "1280x800"
 
 #: ../../porting/running-ut.rst:34
 msgid "7\""
-msgstr ""
+msgstr "7\""
 
 #: ../../porting/running-ut.rst:34
 msgid "216"
-msgstr ""
+msgstr "216"
 
 #: ../../porting/running-ut.rst:34
 msgid "12"
-msgstr ""
+msgstr "12"
 
 #: ../../porting/running-ut.rst:34 ../../porting/running-ut.rst:36
 #: ../../porting/running-ut.rst:37 ../../porting/running-ut.rst:38
 msgid "2.0"
-msgstr ""
+msgstr "2.0"
 
 #: ../../porting/running-ut.rst:35
 msgid "'High' density laptop"
-msgstr ""
+msgstr "Ordinador portàtil de densitat 'alta'"
 
 #: ../../porting/running-ut.rst:35
 msgid "150-250"
-msgstr ""
+msgstr "150-250"
 
 #: ../../porting/running-ut.rst:35
 msgid "16"
-msgstr ""
+msgstr "16"
 
 #: ../../porting/running-ut.rst:35
 msgid "1.5"
-msgstr ""
+msgstr "1.5"
 
 #: ../../porting/running-ut.rst:36
 msgid "Samsung Galaxy Nexus"
-msgstr ""
+msgstr "Samsung Galaxy Nexus"
 
 #: ../../porting/running-ut.rst:36
 msgid "1280x720"
-msgstr ""
+msgstr "1280x720"
 
 #: ../../porting/running-ut.rst:36
 msgid "4.65\""
-msgstr ""
+msgstr "4.65\""
 
 #: ../../porting/running-ut.rst:36
 msgid "316"
-msgstr ""
+msgstr "316"
 
 #: ../../porting/running-ut.rst:36 ../../porting/running-ut.rst:37
 msgid "18"
-msgstr ""
+msgstr "18"
 
 #: ../../porting/running-ut.rst:37
 msgid "LG Nexus 4"
-msgstr ""
+msgstr "LG Nexus 4"
 
 #: ../../porting/running-ut.rst:37
 msgid "1280x768"
-msgstr ""
+msgstr "1280x768"
 
 #: ../../porting/running-ut.rst:37
 msgid "4.7\""
-msgstr ""
+msgstr "4.7\""
 
 #: ../../porting/running-ut.rst:37
 msgid "320"
-msgstr ""
+msgstr "320"
 
 #: ../../porting/running-ut.rst:38
 msgid "Samsung Nexus 10"
-msgstr ""
+msgstr "Samsung Nexus 10"
 
 #: ../../porting/running-ut.rst:38
 msgid "2560x1600"
-msgstr ""
+msgstr "2560x1600"
 
 #: ../../porting/running-ut.rst:38
 msgid "10.1\""
-msgstr ""
+msgstr "10.1\""
 
 #: ../../porting/running-ut.rst:38
 msgid "299"
-msgstr ""
+msgstr "299"
 
 #: ../../porting/running-ut.rst:38
 msgid "20"
-msgstr ""
+msgstr "20"
 
 #: ../../porting/running-ut.rst:39
 msgid "Fairphone 2"
-msgstr ""
+msgstr "Fairphone 2"
 
 #: ../../porting/running-ut.rst:39 ../../porting/running-ut.rst:40
 msgid "1080x1920"
-msgstr ""
+msgstr "1080x1920"
 
 #: ../../porting/running-ut.rst:39
 msgid "5\""
-msgstr ""
+msgstr "5\""
 
 #: ../../porting/running-ut.rst:39
 msgid "440"
-msgstr ""
+msgstr "440"
 
 #: ../../porting/running-ut.rst:39 ../../porting/running-ut.rst:40
 msgid "23"
-msgstr ""
+msgstr "23"
 
 #: ../../porting/running-ut.rst:39 ../../porting/running-ut.rst:40
 msgid "2.5"
-msgstr ""
+msgstr "2.5"
 
 #: ../../porting/running-ut.rst:40
 msgid "LG Nexus 5"
-msgstr ""
+msgstr "LG Nexus 5"
 
 #: ../../porting/running-ut.rst:40
 msgid "4.95\""
-msgstr ""
+msgstr "4.95\""
 
 #: ../../porting/running-ut.rst:40
 msgid "445"
-msgstr ""
+msgstr "445"
 
 #: ../../porting/running-ut.rst:43
 msgid ""
@@ -674,14 +866,19 @@ msgid ""
 " is the best, share some pictures (including some object for scale) along"
 " with the device specs with us."
 msgstr ""
+"Experimenteu amb alguns pocs valores per trobar un amb el que us sentiu a "
+"gust quan compareu amb l'experiència de l'Utuntu Touch a d'altres "
+"dispositius. SI no teniu seguretat de quin és el millor, compartiu amb "
+"nosaltres algunes fotografies (incloent-hi algun objecte per escalar) junt "
+"amb les especificacions del dispositiu."
 
 #: ../../porting/running-ut.rst:46
 msgid "Form factor"
-msgstr ""
+msgstr "Factor de forma"
 
 #: ../../porting/running-ut.rst:48
 msgid "There are two other settings that may be of interest to you."
-msgstr ""
+msgstr "Hi ha dos paràmetres més que us poden ser d'interès."
 
 #: ../../porting/running-ut.rst:50
 msgid ""
@@ -692,6 +889,12 @@ msgid ""
 "their functionality. For more information on the Chassis, see `the "
 "freedesktop.org hostnamed specification`_."
 msgstr ""
+"``FORM_FACTOR``especifica el factor de forma del dispositiu. Aquest valor "
+"està esablert com el xassís del dispositiu, que podeu trobar executant "
+"``hostnamectl``. Els valors acceptables són ``handset``, ``tablet``, "
+"``laptop``i ``desktop``. Les aplicacions, com ara la  galeria, usen aquesta "
+"informació per canviar la seva funcionalitat. Per a més informació sobre el "
+"xassís, vegeu the freedesktop.org hostnamed specification`_."
 
 #: ../../porting/running-ut.rst:52
 msgid ""
@@ -702,4 +905,10 @@ msgid ""
 "for tablets, laptops, and desktops; and ``portrait``, which is usually "
 "used for phone handsets."
 msgstr ""
-
+"``NATIVE_ORIENTATION`` estableix l'orientació de la pantalla per a la "
+"pantalla incorporada del dispositiu. Aquest valor s'usa sempre que la "
+"rotació automàtica no estigui funcionant correctament o quan una aplicació "
+"vol acoblar-se a l'orientació nativa. Els valors acceptables són "
+"``landscape`` (horitzontal), que s'usa normalment per a tauletes, ordinadors "
+"portàtils i d'escriptori; i ``portrait`` (vertical), que s'usa generalment "
+"per a telèfons mòbils."
