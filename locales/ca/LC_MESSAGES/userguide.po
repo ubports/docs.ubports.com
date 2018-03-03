@@ -3,23 +3,26 @@
 # This file is distributed under the same license as the UBports package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-08 19:46-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-03-03 19:42+0000\n"
+"Last-Translator: Walter Garcia-Fontes <walter.garcia@upf.edu>\n"
+"Language-Team: Catalan <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-userguide/ca/>\n"
+"Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../userguide/advanceduse/adb.rst:2
 msgid "Shell access via adb"
-msgstr ""
+msgstr "Accés a la consola via adb"
 
 #: ../../userguide/advanceduse/adb.rst:4
 msgid ""
@@ -27,64 +30,74 @@ msgid ""
 "shell from your PC. This is useful for debugging or more advanced shell "
 "usage."
 msgstr ""
+"Podeu posar el vostre dispositiu UBports en mode desenvoluament i accedir "
+"una consola Bash des del vostre ordinador. Això és útil per depuracions o "
+"per a un ús més avançat de la consola."
 
 #: ../../userguide/advanceduse/adb.rst:8
 msgid "Install ADB"
-msgstr ""
+msgstr "Instal·lació de l'ADB"
 
 #: ../../userguide/advanceduse/adb.rst:10
 msgid "First, you'll need ADB installed on your computer."
-msgstr ""
+msgstr "En primer lloc, us caldrà instal·lar l'ADB al vostre ordinador."
 
 #: ../../userguide/advanceduse/adb.rst:12
 msgid "On Ubuntu::"
-msgstr ""
+msgstr "A l'Ubuntu::"
 
 #: ../../userguide/advanceduse/adb.rst:16
 msgid "On Fedora::"
-msgstr ""
+msgstr "Al Fedora::"
 
 #: ../../userguide/advanceduse/adb.rst:20
 msgid "And on MacOS with `Homebrew <https://brew.sh>`_::"
-msgstr ""
+msgstr "I al  MacOS amb `Homebrew <https://brew.sh>`_::"
 
 #: ../../userguide/advanceduse/adb.rst:24
 msgid ""
 "For Windows, grab the command-line tools only package from `here "
 "<https://developer.android.com/studio/index.html#downloads>`_."
 msgstr ""
+"Per a Windows, agafeu el paquet sols amb eines de línia d'ordres  d' `aquí "
+"<https://developer.android.com/studio/index.html#downloads>`_."
 
 #: ../../userguide/advanceduse/adb.rst:27
 msgid "Enable developer mode"
-msgstr ""
+msgstr "Habiliteu el mode de desenvolupador"
 
 #: ../../userguide/advanceduse/adb.rst:29
 msgid "Next, you'll need to turn on Developer Mode."
-msgstr ""
+msgstr "A continuació, haureu d'activar el mode de desenvolupador."
 
 #: ../../userguide/advanceduse/adb.rst:31
 msgid "Reboot your device"
-msgstr ""
+msgstr "Reinicieu el vostre dispositiu"
 
 #: ../../userguide/advanceduse/adb.rst:32
 msgid ""
 "Place your device into developer mode (Settings - About - Developer Mode "
 "- check the box to turn it on)"
 msgstr ""
+"Poseu el vostre dispositiu en mode de desenvolupador (Configuració del "
+"sistema - Quant a - Mode de desenvolupador - marqueu la casella per activar-"
+"lo)"
 
 #: ../../userguide/advanceduse/adb.rst:33
 msgid "Plug the device into a computer with adb installed"
-msgstr ""
+msgstr "Endolleu el dispositiu a un ordinador amb l'adb instal·lat"
 
 #: ../../userguide/advanceduse/adb.rst:34
 msgid "Open a terminal and run ``adb devices``."
-msgstr ""
+msgstr "Obriu una terminal i executeu ``adb devices``."
 
 #: ../../userguide/advanceduse/adb.rst:37
 msgid ""
 "When you're done using the shell, it's a good idea to turn Developer Mode"
 " off again."
 msgstr ""
+"Quan hagueu acabat d'usar la consola, és una bona idea desactivar un altre "
+"cop el mode de desenvolupament."
 
 #: ../../userguide/advanceduse/adb.rst:39
 msgid ""
@@ -92,10 +105,13 @@ msgid ""
 " devices attached\" and a blank line), you are able to use ADB "
 "successfully. If not, continue to the next section."
 msgstr ""
+"Si hi ha un dispositiu a la llist aquí (l'ordre no imprimeix «Llista de "
+"dispositiu adjunts» i una línia en blanc), podeu usar l'ADB correctament. Si "
+"no n'hi ha, continueu a la secció següent."
 
 #: ../../userguide/advanceduse/adb.rst:42
 msgid "Add hardware IDs"
-msgstr ""
+msgstr "Addició d'identificadors de maquinari"
 
 #: ../../userguide/advanceduse/adb.rst:44
 msgid ""
@@ -103,6 +119,9 @@ msgid ""
 " not talk to. You can manually add the devices that it does not know how "
 "to talk to."
 msgstr ""
+"L'ADB no sempre sap a quins dispositius del vostre ordinador els hauria o no "
+"els hauria de parlar. Podeu afegir manualment els dispositiu amb els quals "
+"no sap com parlar."
 
 #: ../../userguide/advanceduse/adb.rst:46
 msgid ""
@@ -110,18 +129,21 @@ msgid ""
 "``adb kill-server`` followed by the command you were initially trying to "
 "run."
 msgstr ""
+"Simplement executeu l'ordre per al vostre dispositiu seleccionat si hi és a "
+"sota. A continuació, executeu ``adb kill-server`` seguit de l'ordre que "
+"intentàveu executar inicialment."
 
 #: ../../userguide/advanceduse/adb.rst:48
 msgid "Fairphone 2::"
-msgstr ""
+msgstr "Fairphone 2::"
 
 #: ../../userguide/advanceduse/adb.rst:52
 msgid "Oneplus One::"
-msgstr ""
+msgstr "Oneplus One::"
 
 #: ../../userguide/advanceduse/dav.rst:2
 msgid "CalDAV and CardDAV synchronization"
-msgstr ""
+msgstr "Sincronització del CalDAV i del CardDAV"
 
 #: ../../userguide/advanceduse/dav.rst:4
 msgid ""
@@ -129,6 +151,9 @@ msgid ""
 "with a remote server. Many email-hosters provide a CalDAV and CardDAV "
 "interface."
 msgstr ""
+"El CalDAV i el CardDAV són protocols per sincronitzar calendaris i contactes "
+"amb un servidor remot. Mols allotjadors de correu electrònic proveeixen una "
+"interficiía CalDAV o CardDAV."
 
 #: ../../userguide/advanceduse/dav.rst:6
 msgid ""
@@ -137,6 +162,11 @@ msgid ""
 "select \"Add internet calendar > Generic CalDAV\". Enter your calendar "
 "URL as well as your username and password to complete the process."
 msgstr ""
+"**Nota:** La sincronització CalDAV també es pot establir usant l'aplicació "
+"de calendari. Obriu l'aplicació, cliqueu sobre la icona petita de calendari "
+"al racó superior dret i trieu «Afegeix un calendari d'Internet > CalDAV "
+"genèric». Entreu l'URL del vostre calendari així com el vostre nom d'usuari "
+"i la contrasenya per completar el procés."
 
 #: ../../userguide/advanceduse/dav.rst:8
 msgid ""
@@ -146,6 +176,12 @@ msgid ""
 "to do that with a script that you can run in the terminal or via phablet "
 "SSH connection. These instructions work for caldav as well."
 msgstr ""
+"En aquest moment no hi ha cap implementació carddav directament accessible "
+"des de la interfície gràfica d'usuari de l'Ubuntu Touch, de manera que "
+"l'única manera de sincronitzar el carddav és usant syncevolution + cron. "
+"Tanmateix, hi ha una una manera senzilla de fer això amb un script que podeu "
+"executar a la terminal o via una connecció SSH de phablet. Aquestes "
+"instruccions també funcionen per al caldav."
 
 #: ../../userguide/advanceduse/dav.rst:10
 msgid ""
@@ -153,6 +189,9 @@ msgid ""
 "<https://docs.ubports.com/en/latest/userguide/advanceduse/adb.html>`_ to "
 "activate Developer Mode and ADB (or SSH) connection."
 msgstr ""
+"Seguiu aquest `guia "
+"<https://docs.ubports.com/en/latest/userguide/advanceduse/adb.html>`_ per "
+"activar el mode de desenvolupament i la connexió ADB (o SSH)."
 
 #: ../../userguide/advanceduse/dav.rst:13
 msgid ""
@@ -160,22 +199,27 @@ msgid ""
 "<https://gist.github.com/bastos77/0c47a94dd0bf3e394f879c0ff42b7839>`_ "
 "(let's call it dav.sh) and edit the following variables:"
 msgstr ""
+"Descarregueu l'`script "
+"<https://gist.github.com/bastos77/0c47a94dd0bf3e394f879c0ff42b7839>`_ "
+"(anomenem-lo dav.sh)i editeu les variables següents:"
 
 #: ../../userguide/advanceduse/dav.rst:15
 msgid ""
 "server side : CAL_URL, **CONTACTS_URL**, USERNAME, PASSWORD (of your "
 "ownCloud/nextCloud/baikal/SOGO/... server)"
 msgstr ""
+"costat del servidor: CAL_URL, **CONTACTS_URL**, USUARI, CLAU (del vostre "
+"servidor ownCloud/nextCloud/baikal/SOGO/... )"
 
 #: ../../userguide/advanceduse/dav.rst:16
 msgid ""
 "CONTACT and CALENDAR _ NAME / VISUAL_NAME / CONFIG_NAME (it's more "
 "cosmetic)"
-msgstr ""
+msgstr "CONTACT i CALENDAR _ NAME / VISUAL_NAME / CONFIG_NAME (és més cosmètic)"
 
 #: ../../userguide/advanceduse/dav.rst:17
 msgid "CRON_FREQUENCY (for the frequency of synchronisation)"
-msgstr ""
+msgstr "CRON_FREQUENCY (per a la freqüència de sincronització)"
 
 #: ../../userguide/advanceduse/dav.rst:18
 msgid ""
@@ -183,54 +227,65 @@ msgid ""
 " instead of ``sudo echo \"$COMMAND_LINE\" > /sbin/sogosync``, to avoid "
 "permission denied error"
 msgstr ""
+"Línia 61: escriviu ``sudo sh -c \"echo '$COMMAND_LINE' > /sbin/sogosync\"``, "
+"en comptes de ``sudo echo \"$COMMAND_LINE\" > /sbin/sogosync``, per evitar "
+"l'error de falta de permís"
 
 #: ../../userguide/advanceduse/dav.rst:20
 msgid ""
 "Move the file to your UbuntuTouch device, either by file manager or with "
 "adb::"
 msgstr ""
+"Moveu el fitxer al vostre dispositiu Ubuntu Touch, o bé amb el gestor de "
+"fitxers o bé amb l'adb::"
 
 #: ../../userguide/advanceduse/dav.rst:24
 msgid ""
 "Connect with the phablet shell (``adb shell``) or directly on the phone "
 "Terminal app and type the following::"
 msgstr ""
+"Connecteu-vos amb la consola de la phablet (``adb shell``) o directament am "
+"l'aplicació de terminal del telèfon, i entreu el següent::"
 
 #: ../../userguide/advanceduse/dav.rst:31
 msgid "Sources:"
-msgstr ""
+msgstr "Fonts:"
 
 #: ../../userguide/advanceduse/dav.rst:33
 msgid ""
 "https://askubuntu.com/questions/616081/ubuntu-touch-add-contact-list-and-"
 "calendars/664834#664834"
 msgstr ""
+"https://askubuntu.com/questions/616081/ubuntu-touch-add-contact-list-and-"
+"calendars/664834#664834"
 
 #: ../../userguide/advanceduse/dav.rst:34
 msgid "https://gist.github.com/boTux/069b53d8e06bdb9b9c97"
-msgstr ""
+msgstr "https://gist.github.com/boTux/069b53d8e06bdb9b9c97"
 
 #: ../../userguide/advanceduse/dav.rst:35
 msgid "https://gist.github.com/tcarrondo"
-msgstr ""
+msgstr "https://gist.github.com/tcarrondo"
 
 #: ../../userguide/advanceduse/dav.rst:36
 msgid "https://gist.github.com/bastos77"
-msgstr ""
+msgstr "https://gist.github.com/bastos77"
 
 #: ../../userguide/advanceduse/dav.rst:37
 msgid "https://askubuntu.com/questions/601910/ssh-ubuntu-touch"
-msgstr ""
+msgstr "https://askubuntu.com/questions/601910/ssh-ubuntu-touch"
 
 #: ../../userguide/advanceduse/index.rst:2
 msgid "Advanced use"
-msgstr ""
+msgstr "Ús avançat"
 
 #: ../../userguide/advanceduse/index.rst:4
 msgid ""
 "This section of the documentation details advanced tasks that power users"
 " may want to perform on their Ubuntu Touch device."
 msgstr ""
+"Aquesta secció de la documentació detalla tasques avançades que el usuaris "
+"avançats poden desitjar realitzar als seus dispositius Ubuntu Touch."
 
 #: ../../userguide/advanceduse/index.rst:7
 msgid ""
@@ -239,10 +294,15 @@ msgid ""
 "your Ubuntu Touch device. Please consider these ramifications before "
 "hacking on your device too much!"
 msgstr ""
+"Algunes d'aquestes guies impliquen fer escrivible a la vostra imatge de "
+"sistema, cosa que pot trencar les actualitzacions OTA. Les guies poden també "
+"reduir la seguretat general del vostre dispositiu Ubuntu Touch. Si us plau "
+"considereu aquestes implicacions abans de trastejar massa amb el vostre "
+"dispositiu!"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:2
 msgid "Reverse tethering"
-msgstr ""
+msgstr "Punt d'accés invers a la xarxa"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:4
 msgid ""
@@ -251,72 +311,88 @@ msgid ""
 "help you to connect your Ubuntu Touch to your computer to access "
 "internet."
 msgstr ""
+"És possible que alguns usuari no tinguin una connexió wifi disponible per al "
+"seu telèfon ni un contracte de dades del seu proveïdor telefònic. Aquest "
+"tutorial breu us ajudarà a connectar el vostre Ubuntu Touch al vostre "
+"ordinador per accedir Internet."
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:7
 msgid ""
 "Prerequisite: Phone is connected to the computer with usb and developer "
 "mode enabled."
 msgstr ""
+"Prerequisit: El telèfon està connectar a l'ordinador amb l'usb i el mode "
+"desenvolupador està activat."
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:10
 msgid "Steps"
-msgstr ""
+msgstr "Passos"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:12
 msgid "On phone: ``android-gadget-service enable rndis``"
-msgstr ""
+msgstr "Al telèfon: ``android-gadget-service enable rndis``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:14
 msgid "On computer: get your rndis ip address e.g:``hostname -I``"
 msgstr ""
+"A l'ordinador: obteniu la direcció ip rndis, per exemple:  ``hostname -I``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:16
 msgid "On phone:"
-msgstr ""
+msgstr "Al telèfon:"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:18
 msgid "add gateway: ``sudo route add default gw YOUR_COMPUTER_RNDIS_IP``"
 msgstr ""
+"afegiu la passarel·la: ``sudo route add default gw "
+"RNDIS_IP_DEL_VOSTRE_ORDINADOR``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:20
 msgid ""
 "add nameservers: ``echo \"nameserver 8.8.8.8\" | sudo tee "
 "/etc/resolv.conf``"
 msgstr ""
+"afegiu els servidors de noms: ``echo \"nameserver 8.8.8.8\" | sudo tee "
+"/etc/resolv.conf``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:22
 msgid "refresh dns table: ``resolvconf -u``"
-msgstr ""
+msgstr "actualitzeu la taula de dns: ``resolvconf -u``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:24
 msgid "On computer:"
-msgstr ""
+msgstr "A l'ordinador:"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:26
 msgid "enable ip forwarding: ``echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward``"
 msgstr ""
+"habiliteu el reenviament: ``echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:28
 msgid ""
 "apply NAT: ``sudo iptables -t nat -A POSTROUTING -s 10.0.0.0/8 -o eth0 -j"
 " MASQUERADE``"
 msgstr ""
+"apliqueu el NAT: ``sudo iptables -t nat -A POSTROUTING -s 10.0.0.0/8 -o eth0 "
+"-j MASQUERADE``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:32
 #: ../../userguide/advanceduse/screencasting.rst:72
 #: ../../userguide/advanceduse/ssh.rst:53
 msgid "References"
-msgstr ""
+msgstr "Referències"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:34
 msgid ""
 "askubuntu: https://askubuntu.com/questions/655321/ubuntu-touch-reverse-"
 "tethering-and-click-apps-updates"
 msgstr ""
+"askubuntu: https://askubuntu.com/questions/655321/ubuntu-touch-reverse-"
+"tethering-and-click-apps-updates"
 
 #: ../../userguide/advanceduse/screencasting.rst:2
 msgid "Screen Casting your UT device to your computer"
-msgstr ""
+msgstr "Exportació de la pantalla del vostre dispositiu UT a l'ordinador"
 
 #: ../../userguide/advanceduse/screencasting.rst:5
 msgid ""
@@ -325,16 +401,23 @@ msgid ""
 "display to a listening computer over the network or directy trough adb so"
 " that we can either watch it live or record it to a file."
 msgstr ""
+"L'Ubuntu Touch ve amb una utilitat de la línia d'ordres anomenada "
+"``mirscreencast`` que bolca els marcs de pantalla a un fitxer. La idea aquí "
+"és transmetre la pantalla UT a un ordinador receptor sobre la xarxa o "
+"directament mitjançant adb de manera de mirar-la en viu o gravar-la a un "
+"fitxer."
 
 #: ../../userguide/advanceduse/screencasting.rst:9
 msgid "Using adb"
-msgstr ""
+msgstr "Ús d'adb"
 
 #: ../../userguide/advanceduse/screencasting.rst:11
 msgid ""
 "You can catch output directly from ``adb exec-out`` command and forward "
 "it to mplayer::"
 msgstr ""
+"Podeu capturar la sortida directament de l'ordre ``adb exec-out`` i enviar-"
+"la al mplayer::"
 
 #: ../../userguide/advanceduse/screencasting.rst:15
 msgid ""
@@ -344,38 +427,49 @@ msgid ""
 "interval`` (1 = 60fps, 2=30fps, ...)  and size of frames ``384 640`` "
 "means width=384 height=640"
 msgstr ""
+"Noteu: aquí s'usa ``timeout``per tancar adequadament el procés al dispositiu "
+"(aquí 120 segons). En cas contrari el procés continuarà encara tot i que "
+"s'hagi tancat a l'ordinador. Podeu reduir o incrementar els marcs per segon "
+"amb ``--cap-interval`` (1 = 60fps, 2=30fps, ...)  i la mida dels marcs ``384 "
+"650`` significa amplada=384 alçada=640"
 
 #: ../../userguide/advanceduse/screencasting.rst:19
 msgid "Via network"
-msgstr ""
+msgstr "Via xarxa"
 
 #: ../../userguide/advanceduse/screencasting.rst:22
 msgid "On receiver"
-msgstr ""
+msgstr "Al receptor"
 
 #: ../../userguide/advanceduse/screencasting.rst:24
 msgid "For real time casting:"
-msgstr ""
+msgstr "Per emissió en temps real:"
 
 #: ../../userguide/advanceduse/screencasting.rst:27
 msgid ""
 "Prepare your computer to listen to a tcp port(here 1234) and forward raw "
 "stream to a video player (here mplayer) with a frame size of 384x640::"
 msgstr ""
+"Prepareu el vostre ordinador per escoltar a un port tcp (aquí 1234) i "
+"reenviar l'emissió en brut a un reproductor de vídeo (aquí el mplayer) amb "
+"una mida de marcs de 384x640::"
 
 #: ../../userguide/advanceduse/screencasting.rst:31
 msgid "For stream recording:"
-msgstr ""
+msgstr "Per a la gravació de la transmissió:"
 
 #: ../../userguide/advanceduse/screencasting.rst:33
 msgid ""
 "Prepare your computer to listen to a tcp port(here 1234), ungzip and "
 "forward raw stream to a video encoder (here mencoder)::"
 msgstr ""
+"Prepareu el vostre ordinador per escoltar al port tcp (aquí 1234), "
+"descomprimir amb el ungzip i reenviar l'emissió en brut a un codificador de "
+"vídeo (el mencoder en aquest cas)::"
 
 #: ../../userguide/advanceduse/screencasting.rst:38
 msgid "On device"
-msgstr ""
+msgstr "Al dispositiu"
 
 #: ../../userguide/advanceduse/screencasting.rst:40
 msgid ""
@@ -957,4 +1051,3 @@ msgid ""
 "the partition that holds their hardware IDs and can no longer connect to "
 "Wi-Fi or cellular networks."
 msgstr ""
-
