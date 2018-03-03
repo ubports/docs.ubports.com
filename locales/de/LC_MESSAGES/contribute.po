@@ -7,18 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-08 19:46-0600\n"
+"POT-Creation-Date: 2018-03-03 14:44-0600\n"
 "PO-Revision-Date: 2018-02-14 22:12+0000\n"
 "Last-Translator: Florian Leeber <flori@bin.org.in>\n"
-"Language-Team: German <https://translate.ubports.com/projects/ubports-docs"
-"/documentation-contribute/de/>\n"
 "Language: de\n"
+"Language-Team: German <https://translate.ubports.com/projects/ubports-"
+"docs/documentation-contribute/de/>\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.15\n"
-"Generated-By: Babel 2.5.1\n"
+"Generated-By: Babel 2.5.3\n"
 
 #: ../../contribute/bugreporting.rst:2
 msgid "Bug reporting"
@@ -101,8 +100,8 @@ msgid ""
 "document, please add it yourself to help the developers fix the bug."
 msgstr ""
 "Sollte dem Fehlerbericht eine der im Folgenden genannten Informationen "
-"fehlen, sollten diese bitte hinzugefügt werden, um die Entwickler bei der "
-"Fehlerbehebung zu unterstützen."
+"fehlen, sollten diese bitte hinzugefügt werden, um die Entwickler bei der"
+" Fehlerbehebung zu unterstützen."
 
 #: ../../contribute/bugreporting.rst:23
 msgid "Reproduce the issue you've found"
@@ -201,8 +200,7 @@ msgstr ""
 
 #: ../../contribute/bugreporting.rst:53
 msgid "Run the command: `adb shell /android/system/bin/logcat -d > UTlogcat.txt`"
-msgstr ""
-"Befehl ausführen: `adb shell /android/system/bin/logcat -d > UTlogcat.txt`"
+msgstr "Befehl ausführen: `adb shell /android/system/bin/logcat -d > UTlogcat.txt`"
 
 #: ../../contribute/bugreporting.rst:56
 msgid ""
@@ -353,8 +351,8 @@ msgid ""
 "underlined with equals signs."
 msgstr ""
 "Alle Seiten müssen einen Dokumententitel haben. Der Titel wird im "
-"Inhaltsverzeichnis (zur Linken) und im Kopf der Seite angezeigt. Der Titel "
-"ist mit Gleichheitszeichen zu unterstreichen."
+"Inhaltsverzeichnis (zur Linken) und im Kopf der Seite angezeigt. Der "
+"Titel ist mit Gleichheitszeichen zu unterstreichen."
 
 #: ../../contribute/documentation.rst:20
 msgid "Titles should be sentence cased rather than Title Cased. For example::"
@@ -482,9 +480,9 @@ msgid ""
 " editing the file on GitHub from your fork of the repository."
 msgstr ""
 "Falls es Probleme mit Deinen vorgeschlagenen Änderungen gibt, wird das "
-"Dokumentationsteam um die entsprechenden Änderungen und Neuvorlage bitten. "
-"Dies erledigt man einfach durch Bearbeiten der Datei im eigenen Fork des "
-"Repositories."
+"Dokumentationsteam um die entsprechenden Änderungen und Neuvorlage "
+"bitten. Dies erledigt man einfach durch Bearbeiten der Datei im eigenen "
+"Fork des Repositories."
 
 #: ../../contribute/documentation.rst:73
 msgid "Manually forking the repository"
@@ -604,8 +602,8 @@ msgid ""
 "`Liberapay <https://liberapay.com/UBports/>`_ or `Patreon "
 "<https://www.patreon.com/ubports>`_!"
 msgstr ""
-"Du kannst dabei helfen, dass bei UBports die Lichter weiter brennen, indem "
-"Du ein `Patreon <https://www.patreon.com/ubports>`_ wirst!"
+"Du kannst dabei helfen, dass bei UBports die Lichter weiter brennen, "
+"indem Du ein `Patreon <https://www.patreon.com/ubports>`_ wirst!"
 
 #: ../../contribute/monetary.rst:6
 msgid ""
@@ -620,11 +618,13 @@ msgid "Quality Assurance"
 msgstr "Qualitätssicherung"
 
 #: ../../contribute/quality-assurance.rst:4
+#, fuzzy
 msgid ""
 "This page explains how to help the UBports QA team, both as an official "
 "member or a new contributor. Please also read the :doc:`issue tracking "
 "</about/process/issue-tracking>` and :doc:`bugreporting <bugreporting>` "
-"guides to better understand the workflow."
+"guides to better understand the workflow. For real-time communication, "
+"you can join our `telegram group <http://t.me/ubports_qa_team>`_."
 msgstr ""
 "Diese Seite erklärt, wie man im UBports QA-Team hilft, sowohl als "
 "offizielles Mitglied, wie auch als neuer Mitarbeiter. Bitte auch die "
@@ -633,10 +633,24 @@ msgstr ""
 "der Arbeitsweise."
 
 #: ../../contribute/quality-assurance.rst:7
+msgid "Smoke testing"
+msgstr ""
+
+#: ../../contribute/quality-assurance.rst:9
+msgid ""
+"To test the core functionality of the operating system, we have compiled "
+"`a set of standardized tests "
+"<https://nc.ubports.com/s/3RnAI7tYzB2PMXs>`_. Run these tests on your "
+"device to :doc:`find and report bugs and regressions <bugreporting>`. "
+"It's usually run on all devices before a new release to make sure no new "
+"issues were introduced."
+msgstr ""
+
+#: ../../contribute/quality-assurance.rst:12
 msgid "Confirming bug reports"
 msgstr "Fehlerberichte bestätigen"
 
-#: ../../contribute/quality-assurance.rst:9
+#: ../../contribute/quality-assurance.rst:14
 msgid ""
 "Unconfirmed bugreports are labeld **needs confirmation** to enable "
 "`global filtering <https://github.com/ubports/ubuntu-"
@@ -657,7 +671,7 @@ msgstr ""
 " man einen Kommentar, ob man das Problem reproduzieren konnte oder nicht "
 "und nennt Gerät, Kanal und Build-Nummer."
 
-#: ../../contribute/quality-assurance.rst:11
+#: ../../contribute/quality-assurance.rst:16
 msgid ""
 "If you have write-access to the repository, you can replace the **needs "
 "confirmation** label with **bug** (to mark it confirmed) or **invalid** "
@@ -670,7 +684,7 @@ msgstr ""
 "reproduzierbar ist). In diesem Fall sollte der Fehlerbericht geschlossen "
 "werden."
 
-#: ../../contribute/quality-assurance.rst:13
+#: ../../contribute/quality-assurance.rst:18
 msgid ""
 "If you find two issues describing the same problem, leave a comment and "
 "try to find their differences. If they are in fact identical, close the "
@@ -681,11 +695,11 @@ msgstr ""
 "Unterschiede zu ermitteln. Sind beide faktisch identisch, schließt man "
 "den neueren und markiert ihn als **duplicate**."
 
-#: ../../contribute/quality-assurance.rst:16
+#: ../../contribute/quality-assurance.rst:21
 msgid "Testing patches"
 msgstr "Korrekturen testen"
 
-#: ../../contribute/quality-assurance.rst:18
+#: ../../contribute/quality-assurance.rst:23
 msgid ""
 "Once a developer finished working on an issue, it's moved to the quality "
 "assurance column of the `GitHub project <https://github.com/ubports"
@@ -710,11 +724,11 @@ msgstr ""
 "werden, entsprechend der Anleitungen zur `Problemverfolgung "
 "</about/process/issue-tracking>`."
 
-#: ../../contribute/quality-assurance.rst:21
+#: ../../contribute/quality-assurance.rst:26
 msgid "Initial triaging of issues"
 msgstr "Initiale Sichtung von Fehlerberichten"
 
-#: ../../contribute/quality-assurance.rst:23
+#: ../../contribute/quality-assurance.rst:28
 msgid ""
 "Initial triaging of new issues is done by QA-team members with write-"
 "access to the repository. If a new issue is filed, read the report and "
@@ -728,7 +742,7 @@ msgstr ""
 "Anleitungen zur `Problemverfolgung </about/process/issue-tracking>`. Der "
 "Fehlerbericht kann gegebenenfalls auch direkt bestätigt werden."
 
-#: ../../contribute/quality-assurance.rst:25
+#: ../../contribute/quality-assurance.rst:30
 msgid ""
 "If the new issue has already been reported elsewhere, label it "
 "**duplicate** and close it."
@@ -992,3 +1006,4 @@ msgstr "Folge dem Link, um herauszufinden, was das genau bedeutet."
 #~ "Der Titel, unterstrichen mit "
 #~ "Gleichheitszeichen, wird im Inhaltsverzeichnis "
 #~ "links auf der Seite angezeigt."
+

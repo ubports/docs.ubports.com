@@ -7,18 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-08 19:46-0600\n"
+"POT-Creation-Date: 2018-03-03 14:44-0600\n"
 "PO-Revision-Date: 2018-02-15 13:37+0000\n"
 "Last-Translator: advocatux <advocatux@airpost.net>\n"
-"Language-Team: Spanish <https://translate.ubports.com/projects/ubports-docs"
-"/documentation-contribute/es/>\n"
 "Language: es\n"
+"Language-Team: Spanish <https://translate.ubports.com/projects/ubports-"
+"docs/documentation-contribute/es/>\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.15\n"
-"Generated-By: Babel 2.5.1\n"
+"Generated-By: Babel 2.5.3\n"
 
 #: ../../contribute/bugreporting.rst:2
 msgid "Bug reporting"
@@ -76,12 +75,12 @@ msgid ""
 "searching, use a few words that describe what you're seeing. For example,"
 " \"Lock screen transparent\" or \"Lock screen shows activities\"."
 msgstr ""
-"Primero, tendrá que asegurarse de que el error que quiere comunicar no ha "
-"sido comunicado con anterioridad. Busque a través de los errores "
+"Primero, tendrá que asegurarse de que el error que quiere comunicar no ha"
+" sido comunicado con anterioridad. Busque a través de los errores "
 "comunicados. Cuando busque, use unas pocas palabras que describan lo que "
-"está viendo. Por ejemplo, \"Lock screen transparent\" o \"Lock screen shows "
-"activities\". Tenga en cuenta que los informes de errores son exclusivamente "
-"en inglés."
+"está viendo. Por ejemplo, \"Lock screen transparent\" o \"Lock screen "
+"shows activities\". Tenga en cuenta que los informes de errores son "
+"exclusivamente en inglés."
 
 #: ../../contribute/bugreporting.rst:18
 msgid ""
@@ -99,9 +98,9 @@ msgid ""
 "If the report is missing any of the information specified later in this "
 "document, please add it yourself to help the developers fix the bug."
 msgstr ""
-"Si el informe carece de alguna de la información especificada mas adelante "
-"en este documento, por favor añádala usted mismo para ayudar a los "
-"desarrolladores a solucionar el error."
+"Si el informe carece de alguna de la información especificada mas "
+"adelante en este documento, por favor añádala usted mismo para ayudar a "
+"los desarrolladores a solucionar el error."
 
 #: ../../contribute/bugreporting.rst:23
 msgid "Reproduce the issue you've found"
@@ -197,8 +196,7 @@ msgstr ""
 
 #: ../../contribute/bugreporting.rst:53
 msgid "Run the command: `adb shell /android/system/bin/logcat -d > UTlogcat.txt`"
-msgstr ""
-"Ejecute la orden: `adb shell /android/system/bin/logcat -d > UTlogcat.txt`"
+msgstr "Ejecute la orden: `adb shell /android/system/bin/logcat -d > UTlogcat.txt`"
 
 #: ../../contribute/bugreporting.rst:56
 msgid ""
@@ -217,8 +215,8 @@ msgid ""
 "Now it's time for what you've been waiting for, the bug report itself! "
 "Bug reports need to be filed in English."
 msgstr ""
-"¡Ahora es el momento para lo que ha estado esperando, el informe de error en "
-"sí! Los informes de error tienen que presentarse en inglés."
+"¡Ahora es el momento para lo que ha estado esperando, el informe de error"
+" en sí! Los informes de error tienen que presentarse en inglés."
 
 #: ../../contribute/bugreporting.rst:63
 msgid ""
@@ -348,9 +346,9 @@ msgid ""
 "contents (left sidebar) and at the top of the page. This title is "
 "underlined with equals signs."
 msgstr ""
-"Todas las páginas deben tener un título del documento que se mostrará en la "
-"tabla de contenidos (barra lateral izquierda) y en la parte superior de la "
-"página. Este título está subrayado con signos igual."
+"Todas las páginas deben tener un título del documento que se mostrará en "
+"la tabla de contenidos (barra lateral izquierda) y en la parte superior "
+"de la página. Este título está subrayado con signos igual."
 
 #: ../../contribute/documentation.rst:20
 msgid "Titles should be sentence cased rather than Title Cased. For example::"
@@ -477,8 +475,8 @@ msgid ""
 " editing the file on GitHub from your fork of the repository."
 msgstr ""
 "Si existe algún error con los cambios que propone, el equipo de "
-"documentación le solicitará hacer algunos cambios y reenviarlos. Esto es tan "
-"sencillo como editar el archivo en GitHub desde su clon (fork) del "
+"documentación le solicitará hacer algunos cambios y reenviarlos. Esto es "
+"tan sencillo como editar el archivo en GitHub desde su clon (fork) del "
 "repositorio."
 
 #: ../../contribute/documentation.rst:73
@@ -597,8 +595,9 @@ msgid ""
 "`Liberapay <https://liberapay.com/UBports/>`_ or `Patreon "
 "<https://www.patreon.com/ubports>`_!"
 msgstr ""
-"Puede ayudarnos a mantener las luces encendidas en UBports ¡convirtiéndose "
-"en un patrón en `Liberapay <https://liberapay.com/UBports/>`_ o `Patreon "
+"Puede ayudarnos a mantener las luces encendidas en UBports "
+"¡convirtiéndose en un patrón en `Liberapay "
+"<https://liberapay.com/UBports/>`_ o `Patreon "
 "<https://www.patreon.com/ubports>`_!"
 
 #: ../../contribute/monetary.rst:6
@@ -614,11 +613,13 @@ msgid "Quality Assurance"
 msgstr "Control de calidad"
 
 #: ../../contribute/quality-assurance.rst:4
+#, fuzzy
 msgid ""
 "This page explains how to help the UBports QA team, both as an official "
 "member or a new contributor. Please also read the :doc:`issue tracking "
 "</about/process/issue-tracking>` and :doc:`bugreporting <bugreporting>` "
-"guides to better understand the workflow."
+"guides to better understand the workflow. For real-time communication, "
+"you can join our `telegram group <http://t.me/ubports_qa_team>`_."
 msgstr ""
 "Esta página explica como ayudar al equipo de control de calidad de "
 "UBports, tanto como miembro oficial o como nuevo colaborador. Por favor "
@@ -627,10 +628,24 @@ msgstr ""
 "comprender mejor el flujo de trabajo."
 
 #: ../../contribute/quality-assurance.rst:7
+msgid "Smoke testing"
+msgstr ""
+
+#: ../../contribute/quality-assurance.rst:9
+msgid ""
+"To test the core functionality of the operating system, we have compiled "
+"`a set of standardized tests "
+"<https://nc.ubports.com/s/3RnAI7tYzB2PMXs>`_. Run these tests on your "
+"device to :doc:`find and report bugs and regressions <bugreporting>`. "
+"It's usually run on all devices before a new release to make sure no new "
+"issues were introduced."
+msgstr ""
+
+#: ../../contribute/quality-assurance.rst:12
 msgid "Confirming bug reports"
 msgstr "Confirmando informe de errores"
 
-#: ../../contribute/quality-assurance.rst:9
+#: ../../contribute/quality-assurance.rst:14
 msgid ""
 "Unconfirmed bugreports are labeld **needs confirmation** to enable "
 "`global filtering <https://github.com/ubports/ubuntu-"
@@ -650,7 +665,7 @@ msgstr ""
 "información o registros, o mejore la calidad del informe por otros medios"
 " <bugreporting>`."
 
-#: ../../contribute/quality-assurance.rst:11
+#: ../../contribute/quality-assurance.rst:16
 msgid ""
 "If you have write-access to the repository, you can replace the **needs "
 "confirmation** label with **bug** (to mark it confirmed) or **invalid** "
@@ -662,7 +677,7 @@ msgstr ""
 "confirmado) o **inválido** (si definitivamente el problema no es "
 "reproducible). En ese caso debería ser cerrado."
 
-#: ../../contribute/quality-assurance.rst:13
+#: ../../contribute/quality-assurance.rst:18
 msgid ""
 "If you find two issues describing the same problem, leave a comment and "
 "try to find their differences. If they are in fact identical, close the "
@@ -672,11 +687,11 @@ msgstr ""
 "comentario y trate de encontrar las diferencias. Si de hecho son "
 "idénticos, cierre el más nuevo y etiquételo como **duplicado**."
 
-#: ../../contribute/quality-assurance.rst:16
+#: ../../contribute/quality-assurance.rst:21
 msgid "Testing patches"
 msgstr "Probando los parches"
 
-#: ../../contribute/quality-assurance.rst:18
+#: ../../contribute/quality-assurance.rst:23
 msgid ""
 "Once a developer finished working on an issue, it's moved to the quality "
 "assurance column of the `GitHub project <https://github.com/ubports"
@@ -700,11 +715,11 @@ msgstr ""
 "candidata** según se especifica en las :doc:`directrices de seguimiento "
 "de problemas </about/process/issue-tracking>`."
 
-#: ../../contribute/quality-assurance.rst:21
+#: ../../contribute/quality-assurance.rst:26
 msgid "Initial triaging of issues"
 msgstr "Clasificación inicial de problemas"
 
-#: ../../contribute/quality-assurance.rst:23
+#: ../../contribute/quality-assurance.rst:28
 msgid ""
 "Initial triaging of new issues is done by QA-team members with write-"
 "access to the repository. If a new issue is filed, read the report and "
@@ -719,7 +734,7 @@ msgstr ""
 " problemas </about/process/issue-tracking>`. También puede comenzar "
 "inmediatamente a confirmar el informe de errores."
 
-#: ../../contribute/quality-assurance.rst:25
+#: ../../contribute/quality-assurance.rst:30
 msgid ""
 "If the new issue has already been reported elsewhere, label it "
 "**duplicate** and close it."
@@ -987,3 +1002,4 @@ msgstr "Siga ese enlace para aprender que significa exactamente."
 #~ "de igual, se muestra en la tabla"
 #~ " de contenidos a la izquierda de "
 #~ "la página."
+
