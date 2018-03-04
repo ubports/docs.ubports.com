@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-03 14:44-0600\n"
-"PO-Revision-Date: 2018-02-28 11:17+0000\n"
+"PO-Revision-Date: 2018-03-04 17:43+0000\n"
 "Last-Translator: Anne Onyme <anneonyme017@openmailbox.org>\n"
+"Language-Team: French <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-appdev/fr/>\n"
 "Language: fr\n"
-"Language-Team: French <https://translate.ubports.com/projects/ubports-"
-"docs/documentation-appdev/fr/>\n"
-"Plural-Forms: nplurals=2; plural=n > 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.3\n"
 
 #: ../../appdev/cookbook.rst:2
@@ -135,28 +136,39 @@ msgid ""
 "created using QML or HTML5 and behavior can be created using JS, Qt, C++,"
 " Python, or Go."
 msgstr ""
+"Ubuntu Touch dispose de trois types d'applications : `les applications Web`_ "
+"(WebApps), les moteurs de recherche (Scopes, obsolètes) et `les applications "
+"natives`_. Les applications sont empaquetées, distribuées et déployées en "
+"utilisant un format appelé paquet `Click "
+"<https://click.readthedocs.io/en/latest/>`_. Les interfaces utilisateurs des "
+"applications peuvent être créées en utilisant du QML ou du HTML5 et le "
+"comportement peut être créé en utilisant du JavaScript, du Qt, du C++, du "
+"Python ou du Go."
 
 #: ../../appdev/index.rst:14
 msgid "Click package overview"
-msgstr ""
+msgstr "Aperçu du paquet Click"
 
 #: ../../appdev/index.rst:16
 msgid "Every ``click`` application package must embed at least 3 files:"
-msgstr ""
+msgstr "Chaque application ``Click`` doit contenir au moins 3 fichiers :"
 
 #: ../../appdev/index.rst:38
 msgid "``manifest.json`` file"
-msgstr ""
+msgstr "Le fichier ``manifest.json``"
 
 #: ../../appdev/index.rst:19
 msgid ""
 "Contains application declarations such as application name, description, "
 "author, framework sdk target, and version."
 msgstr ""
+"Contient des informations sur l'application, telles que son nom, sa "
+"description, son auteur, la cible de kit de développement de logiciel ("
+"Software Development Kit ou SKD) et la version."
 
 #: ../../appdev/index.rst:21
 msgid "Example ``manifest.json`` file::"
-msgstr ""
+msgstr "Exemple de fichier ``manifest.json`` ::"
 
 #: ../../appdev/index.rst:41
 msgid "AppArmor profile policy file"
@@ -1279,4 +1291,3 @@ msgstr ""
 #~ msgstr ""
 #~ "Regardez pour commencer `ceci "
 #~ "<http://clickable.bhdouglass.com/en/latest/>`_."
-
