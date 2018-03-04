@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-03 14:44-0600\n"
-"PO-Revision-Date: 2018-02-21 07:58+0000\n"
+"PO-Revision-Date: 2018-03-04 18:50+0000\n"
 "Last-Translator: Walter Garcia-Fontes <walter.garcia@upf.edu>\n"
+"Language-Team: Catalan <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-about/ca/>\n"
 "Language: ca\n"
-"Language-Team: Catalan <https://translate.ubports.com/projects/ubports-"
-"docs/documentation-about/ca/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.3\n"
 
 #: ../../about/introduction.rst:2
@@ -169,17 +170,16 @@ msgstr ""
 "una excepció perquè es poden actualitzar mitjançant l'OpenStore."
 
 #: ../../about/process/issue-tracking.rst:17
-#, fuzzy
 msgid ""
 "Most other repositories track issues locally. If you're unsure whether a "
 "repository uses its own tracker or not, consult the README.md file. "
 "Repositories that don't track issues locally have their bugtracker "
 "disabled."
 msgstr ""
-"La major part dels altres repositoris fan seguiment local dels problemes."
-" Si no teniu seguretat sobre si un repositori usa el seu propi seguidor o"
-" no, consulteu el fitxer README.md. Els repositoris que no fan seguiment "
-"local tenen el seu seguidor d'errors inhabilitat."
+"La major part dels altres repositoris fan seguiment local dels problemes. Si "
+"no teniu seguretat sobre si un repositori usa el seu propi seguidor o no, "
+"consulteu el fitxer README.md. Els repositoris que no fan seguiment local "
+"tenen el seu seguidor d'errors inhabilitat."
 
 #: ../../about/process/issue-tracking.rst:21
 msgid ""
@@ -261,16 +261,15 @@ msgstr ""
 "Usualment vol dir que s'ha assignat un desenvolupador al problema."
 
 #: ../../about/process/issue-tracking.rst:41
-#, fuzzy
 msgid ""
 "**Quality Assurance**: The patch is completed and has passed initial "
 "testing. The QA team will now review it and provide feedback. If problems"
 " are found, the issue is moved back to “Accepted”."
 msgstr ""
-"**Quality Assurance**: Control de qualitat - S'ha completat el pegat i ha"
-" passat les comprovacions inicials. A continuació l'equip de control de "
-"qualitat el revisarà en tots els dispositius i proveirà retroalimentació."
-" Si es troben problemes, el problema es retornarà a «En desenvolupament»."
+"**Quality Assurance**: Control de qualitat - S'ha completat el pegat i ha "
+"passat les comprovacions inicials. A continuació l'equip de control de "
+"qualitat el revisarà en tots els dispositius i proveirà retroalimentació. Si "
+"es troben problemes, el problema es retornarà a «Acceptat»."
 
 #: ../../about/process/issue-tracking.rst:42
 msgid ""
@@ -293,6 +292,12 @@ msgid ""
 "on the stable channel (a comment on the issue should link to the patch) "
 "or the issue has been rejected (labeled “wontfix”)."
 msgstr ""
+"**None (removed from the project)**:  Cap, eliminat del projecte. Si el "
+"projecte està obert i etiquetat amb «help wanted» (cal ajuda), es "
+"requereixen contribucions de la comunitat per resoldre el problema. Si està "
+"tancat, això significa que o bé s'ha alliberat un pegat al canal estable (un "
+"comentari al problema hauria d'enllaçar amb el pegat) o bé el problema s'ha "
+"rebutjat (etiquetat «wontfix», no s'arreglarà)."
 
 #: ../../about/process/issue-tracking.rst:46
 msgid "Labels"
@@ -491,13 +496,12 @@ msgstr ""
 "<https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+org%3Aubports+assignee%3Amariogrip&type=>`_."
 
 #: ../../about/process/issue-tracking.rst:105
-#, fuzzy
 msgid ""
 "Developers are encouraged to keep their list short and update the status "
 "of their issues."
 msgstr ""
-"Es demana als desenvolupadors de mantenir la seva llista curta i mantenir"
-" actualitzat l'estat del seus problemes."
+"Es demana als desenvolupadors de mantenir la seva llista curta i mantenir "
+"actualitzat l'estat del seus problemes."
 
 #: ../../about/process/issue-tracking.rst:108
 msgid "Examples"
@@ -554,7 +558,6 @@ msgid ""
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:121
-#, fuzzy
 msgid ""
 "Once a *developer* is assigned and starts working on the issue, it is "
 "moved to “In Development”. As soon as they have something to show for, "
@@ -562,35 +565,33 @@ msgid ""
 "feedback from the QA team. If neccessary, the developer will provide "
 "hints on how to test his patch in a comment on the issue."
 msgstr ""
-"Un cop s'assigna un *desenvolupador* i comença a treballa en el problema,"
-" es mou a «En desenvolupament». Tan aviat com tingui quelcom a mostrar, "
-"el problema es mourà a «Control de qualitat» per a comentaris. Si cal, el"
-" desenvolupador hauria de proveir instruccions sobre com verificar el "
-"pegat en un comentari al problema."
+"Un cop s'assigna un *desenvolupador* i comença a treballa en el problema, es "
+"mou a «En desenvolupament». Tan aviat com tinguin quelcom a mostrar, el "
+"problema es tancarà i  es mourà automàticament a «Control de qualitat» per a "
+"comentaris per part de l'equip de control de qualitat. . Si cal, el "
+"desenvolupador proveirà instruccions sobre com verificar el pegat en un "
+"comentari al problema."
 
 #: ../../about/process/issue-tracking.rst:122
-#, fuzzy
 msgid ""
 "The *QA-Team* tests the fix on all devices and provides feedback to the "
 "developer. If problems are found, the issue is re-opened and goes back to"
 " “Accepted”, else it’s moved to “Release Candidate” to be included in the"
 " next release."
 msgstr ""
-"L'*Equip de control de qualitat* verifica la correcció del problema a tos"
-" els dispositius i proveeix reaccions al desenvolupador. Si es troben "
-"problemes, el problema torna a «En desenvolupament», en cas contrari es "
-"tanca i es mou a «Versió candidata» perquè s'inclogui al proper "
+"L'*Equip de control de qualitat* verifica la correcció del problema a tos "
+"els dispositius i proveeix reaccions al desenvolupador. Si es troben "
+"problemes, el problema es torna a obrir i torna  a «Acceptat», en cas "
+"contrari es mou a «Versió candidata» perquè s'inclogui al proper "
 "alliberament."
 
 #: ../../about/process/issue-tracking.rst:123
-#, fuzzy
 msgid ""
 "If not done already, the issue is added to the next milestone. Once the "
 "milestone is released, the issue is removed from the project board."
 msgstr ""
-"Un cop s'inclou la correcció a la imatge versió candidata, es tanca el "
-"problema (si ja no s'ha fet) i s'afegeix una fita. Un cop es publica la "
-"fita, el problema s'elimina del projecte."
+"Si no s'ha fet ja,  el problema s'afegeix a la propera fita. Un cop es "
+"publica la fita, el problema s'elimina del panell del projecte."
 
 #: ../../about/process/release-schedule.rst:2
 msgid "Release Schedule"
@@ -687,4 +688,3 @@ msgstr ""
 #~ "tenen solució trivial, també es pot "
 #~ "afegir l'etiqueta **good first issue** "
 #~ "(problema inicial adequat)."
-
