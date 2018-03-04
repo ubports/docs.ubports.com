@@ -1,13 +1,9 @@
 Debug web application
 =====================
 
-Developers of a web application will probably do most of their coding
-and debugging in the usual desktop browser environment. Because UBports'
-browser has excellent compliance with modern web standards, such code
-will most often operate on the UBports browser without further changes.
+Most web-devs will probably want do most of their coding and debugging in the usual browser environment. The Ubuntu Touch browser is compliant with modern web standards, and most webapps will just work without further changes.
 
-For those (hopefully) rare cases where further debugging is needed,
-there are two ways to gain further information on the failure. 
+For those (hopefully) rare cases where further debugging is needed, there are two ways to gain further information on the failure. 
 
 Watch the logs
 --------------
@@ -21,8 +17,7 @@ Debugging in the browser
 ------------------------
 
 
-The native UBports web browser, known as ``webbrowser-app``, is based on Google's Blink technology, which also powers their Chrome/Chromium browsers.
-By starting your phone's browser in a special mode, you have access to the regular Chrome-style debugger.
+The default Ubuntu Touch browser is based on the Blink technology that is also used in Chrome/Chromium. By starting the browser in a special mode, you have access to the regular Chrome-style debugger.
 
 On your phone, start the browser in inspector mode:::
 
