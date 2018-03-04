@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-03 14:44-0600\n"
-"PO-Revision-Date: 2018-02-25 12:25+0000\n"
+"PO-Revision-Date: 2018-03-04 19:02+0000\n"
 "Last-Translator: Walter Garcia-Fontes <walter.garcia@upf.edu>\n"
+"Language-Team: Catalan <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-contribute/ca/>\n"
 "Language: ca\n"
-"Language-Team: Catalan <https://translate.ubports.com/projects/ubports-"
-"docs/documentation-contribute/ca/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.3\n"
 
 #: ../../contribute/bugreporting.rst:2
@@ -608,7 +609,6 @@ msgid "Quality Assurance"
 msgstr "Control de qualitat"
 
 #: ../../contribute/quality-assurance.rst:4
-#, fuzzy
 msgid ""
 "This page explains how to help the UBports QA team, both as an official "
 "member or a new contributor. Please also read the :doc:`issue tracking "
@@ -617,14 +617,15 @@ msgid ""
 "you can join our `telegram group <http://t.me/ubports_qa_team>`_."
 msgstr ""
 "Aquesta pàgina explica com ajudar a l'equip de control de qualitat de "
-"l'UBports, tant com a membre oficial o com a nou col·laborador. Si us "
-"plau llegiu també les guies  :doc:`seguiment de problemes </about/process"
-"/issue-tracking>` i :doc:`informació d'errors <bugreporting>` per "
-"entendre millor el flux de treball."
+"l'UBports, tant com a membre oficial o com a nou col·laborador. Si us plau "
+"llegiu també les guies  :doc:`seguiment de problemes </about/process/issue-"
+"tracking>` i :doc:`informació d'errors <bugreporting>` per entendre millor "
+"el flux de treball. Per a comunicació en temps real, podeu unir-vos al "
+"nostre `grup de telegram <http://t.me/ubports_qa_team>`_."
 
 #: ../../contribute/quality-assurance.rst:7
 msgid "Smoke testing"
-msgstr ""
+msgstr "Proves de fum"
 
 #: ../../contribute/quality-assurance.rst:9
 msgid ""
@@ -635,6 +636,12 @@ msgid ""
 "It's usually run on all devices before a new release to make sure no new "
 "issues were introduced."
 msgstr ""
+"Per provar la funcionalitat bàsica del sistema operatiu, hem compilat `un "
+"conjunt de comprovacions estandarditzades  "
+"<https://nc.ubports.com/s/3RnAI7tYzB2PMXs>`_. Executeu aquests comprovacions "
+"al vostre dispositiu per :doc:`trobar i informar errors i regressions "
+"<bugreporting>`. Normalment s'executen a tots els dispositius abans d'un nou "
+"alliberament per assegurar que no s'han introduït nous problemes."
 
 #: ../../contribute/quality-assurance.rst:12
 msgid "Confirming bug reports"
@@ -994,4 +1001,3 @@ msgstr ""
 #: ../../contribute/translations.rst:73
 msgid "Go to that link to learn what this exactly means."
 msgstr "Aneu a aquest enllaç per conèixer que significa exactament això."
-
