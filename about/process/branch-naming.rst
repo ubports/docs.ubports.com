@@ -13,9 +13,9 @@ Deb-Packages
 
 To make most efficient use of our CI system, a special naming convention for git-branches is used.
 
-For pre-installed Ubuntu Touch components, deb-packages are used whereever possible. This includes coreapps, since they can still be independently updated using click-package downloads from the openstore. This policy allows us to make use of the powerful powerful debian build system to resolve dependencies.
+For pre-installed Ubuntu Touch components, deb-packages are used whereever possible. This includes coreapps, since they can still be independently updated using click-package downloads from the openstore. This policy allows us to make use of the powerful debian build system to resolve dependencies.
 
-Every repository that uses this convention will have branches for the actively supported Ubuntu releases referenced by their codenames (``bionic``, ``xenial``, ``vivid``, etc.). These are the brances that are built directly into the corresponding images and published on :doc:`repo.ubports.com <ppa>`. If no separate versions for the different Ubuntu bases are needed, the repository will just have one ```master`` branch and the CI system will still still build versions for all actively supported releases and resolve dependencies accordingly.
+Every repository that uses this convention will have branches for the actively supported Ubuntu releases referenced by their codenames (``bionic``, ``xenial``, ``vivid``, etc.). These are the brances that are built directly into the corresponding images and published on :doc:`repo.ubports.com <ppa>`. If no separate versions for the different Ubuntu bases are needed, the repository will just have one ```master`` branch and the CI system will still build versions for all actively supported releases and resolve dependencies accordingly.
 
 Branch-extensions
 ^^^^^^^^^^^^^^^^^
