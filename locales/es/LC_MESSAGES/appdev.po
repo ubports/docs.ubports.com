@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-03 14:44-0600\n"
-"PO-Revision-Date: 2018-03-04 17:36+0000\n"
+"PO-Revision-Date: 2018-03-05 13:39+0000\n"
 "Last-Translator: advocatux <advocatux@airpost.net>\n"
 "Language-Team: Spanish <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-appdev/es/>\n"
@@ -886,6 +886,12 @@ msgid ""
 "`documentation in Launchpad "
 "<https://help.launchpad.net/Packaging/PPA/Uploading>`__."
 msgstr ""
+"donde el nombre exacto del archivo ``.changes`` será impreso por la orden "
+"debuild cerca del final de su salida. Tenga en cuenta que para que la subida "
+"tenga éxito tendrá que tener configurada una clave GPG válida, que debe ser `"
+"añadida a Launchpad <https://launchpad.net/~/+editpgpkeys>`__. Si es novato "
+"con este tema, se recomienda que lea cuidadosamente la `documentación en "
+"Launchpad <https://help.launchpad.net/Packaging/PPA/Uploading>`__."
 
 #: ../../appdev/system-software.rst:242
 msgid ""
@@ -898,6 +904,13 @@ msgid ""
 "``phablet-shell`` to get access to your phone, and from there type the "
 "following commands:"
 msgstr ""
+"Después de que el paquete se ha subido, debería recibir un correo "
+"electrónico de launchpad diciendo si ha sido aceptado o no; si lo fue, eso "
+"significa que Launchpad intentará construir el paquete fuente para todas las "
+"arquitecturas soportadas por su PPA y, si tiene éxito, publicará el paquete "
+"o paquetes resultantes. Ahora todo lo que le queda por hacer es instalar los "
+"paquetes en su teléfono: para hacerlo, puede usar ``phablet-shell`` para "
+"acceder a su teléfono y desde allí teclear las siguientes órdenes:"
 
 #: ../../appdev/system-software.rst:257
 msgid ""
@@ -905,24 +918,30 @@ msgid ""
 "members, if you want them to test your changes before submitting them "
 "upstream for review."
 msgstr ""
+"Puede pasarle las mismas instrucciones de instalación a otros miembros de la "
+"comunidad si quiere que prueben sus cambios antes de enviarlos a la "
+"jerarquía superior (upstream) para su revisión."
 
 #: ../../appdev/webapp/guide.rst:2 ../../appdev/webapp/index.rst:15
 msgid "Guide"
-msgstr ""
+msgstr "Guía"
 
 #: ../../appdev/webapp/guide.rst:5
 msgid "How the webapp fits into the shell"
-msgstr ""
+msgstr "Como la aplicación web encaja en el intérprete de órdenes (shell)"
 
 #: ../../appdev/webapp/guide.rst:7
 msgid ""
 "A web app displays in a webview inside a webapp-container that runs as an"
 " Ubuntu app in the Ubuntu/Unity shell."
 msgstr ""
+"Una aplicación web se muestra en una vista web dentro de un contenedor de "
+"aplicación web que se ejecuta como una aplicación en el intérprete de "
+"órdenes (shell) de Ubuntu/Unity."
 
 #: ../../appdev/webapp/guide.rst:9
 msgid "Taking a closer look:"
-msgstr ""
+msgstr "Echando un vistazo más cerca:"
 
 #: ../../appdev/webapp/guide.rst:11
 msgid ""
@@ -932,34 +951,47 @@ msgid ""
 "runs and displays in the webapp-container. The webapp-container is the "
 "executable app runtime that is integrated with the Ubuntu/unity shell."
 msgstr ""
+"Al nivel más interno, hay un sitio web que el desarrollador identifica con "
+"una URL. El sitio web es reproducido y ejecutado en una vista web de Oxide. "
+"Oxide es una vista web de Blink/Chrome personalizada para Ubuntu. La vista "
+"web de Oxide se ejecuta y muestra en el contenedor de la aplicación web. El "
+"contenedor de la aplicación web es el tiempo de ejecución de la aplicación "
+"ejecutable que está integrada en el intérprete de órdenes (shell) de "
+"Ubuntu/Unity."
 
 #: ../../appdev/webapp/guide.rst:16
 msgid "Launching"
-msgstr ""
+msgstr "Iniciando"
 
 #: ../../appdev/webapp/guide.rst:18
 msgid "You can launch a webapp from the terminal with:::"
-msgstr ""
+msgstr "Puede iniciar una aplicación web desde la terminal con:::"
 
 #: ../../appdev/webapp/guide.rst:22
 msgid "For example:::"
-msgstr ""
+msgstr "Por ejemplo:::"
 
 #: ../../appdev/webapp/guide.rst:26
 msgid ""
 "This simple form works, but almost every webapp also uses other features,"
 " such as URL containment with URL patterns as described below."
 msgstr ""
+"Esta sencilla forma funciona, pero casi cada aplicación web también usa "
+"otras características, tal y como la contención de la URL con patrones de "
+"URL como los que se describen más abajo."
 
 #: ../../appdev/webapp/guide.rst:29
 msgid "User interface"
-msgstr ""
+msgstr "Interfaz de usuario"
 
 #: ../../appdev/webapp/guide.rst:31
 msgid ""
 "A webapp generally fills the entire app screen space, without the need of"
 " the UI controls generally found on standard browsers."
 msgstr ""
+"Una aplicación web generalmente llena todo el espacio de la aplicación en "
+"pantalla, sin necesidad de los controles de la interfaz de usuario que se "
+"encuentran en los navegadores estándar."
 
 #: ../../appdev/webapp/guide.rst:33
 msgid ""
@@ -967,22 +999,30 @@ msgid ""
 "Forward buttons, or a URL address bar. These are added as command line "
 "arguments:"
 msgstr ""
+"En algunos casos algunos controles de navegación son adecuados, tales como "
+"los botones de Retroceder y Avanzar, o una barra de direcciones. Estos se "
+"añaden como argumentos de la línea de órdenes:"
 
 #: ../../appdev/webapp/guide.rst:35
 msgid ""
 "``--enable-back-forward`` Enable the display of the back and forward "
 "buttons in the toolbar (at the bottom of the webapp window)"
 msgstr ""
+"``--enable-back-forward`` habilita que se muestren los botones de retroceder "
+"y avanzar en la barra de herramientas (en la parte inferior de la ventana de "
+"la aplicación web)"
 
 #: ../../appdev/webapp/guide.rst:36
 msgid ""
 "``--enable-addressbar`` Enable the display of the address bar (at the "
 "bottom of the webapp window)"
 msgstr ""
+"``--enable-addressbar`` habilita que se muestre la barra de direcciones (en "
+"la parte inferior de la ventana de la aplicación web)"
 
 #: ../../appdev/webapp/guide.rst:39
 msgid "URL patterns"
-msgstr ""
+msgstr "Patrones de URL"
 
 #: ../../appdev/webapp/guide.rst:41
 msgid ""
@@ -991,12 +1031,19 @@ msgid ""
 "webapp (all other URls are opened in the browser). This is done with URL "
 "patterns as part of the webapp command line."
 msgstr ""
+"Los autores de aplicaciones web a menudo quieren contener la navegación solo "
+"al sitio web objetivo. Esto es, el desarrollador quiere controlar las URLs "
+"que pueden abrirse en la aplicación web (todas las otras URLs se abren en el "
+"navegador). Esto se consigue con los patrones de URL como parte de la línea "
+"de órdenes de la aplicación web."
 
 #: ../../appdev/webapp/guide.rst:43
 msgid ""
 "However, many web apps use pages that are hosted over multiple sites or "
 "that use external resources and pages."
 msgstr ""
+"Sin embargo, muchas aplicaciones web usan páginas que están alojadas en "
+"múltiples sitios o que usan recursos y páginas externas."
 
 #: ../../appdev/webapp/guide.rst:45
 msgid ""
@@ -1004,16 +1051,21 @@ msgid ""
 "implemented with URL patterns provided as arguments at launch time. Let’s"
 " take a closer look."
 msgstr ""
+"Sin embargo tanto el confinamiento y el acceso a URLs específicas externas "
+"se implementan con patrones de URL suministradas como argumentos en el "
+"momento del inicio. Echemos un vistazo más cerca."
 
 #: ../../appdev/webapp/guide.rst:48
 msgid "Uncontained by default"
-msgstr ""
+msgstr "Sin contener por defecto"
 
 #: ../../appdev/webapp/guide.rst:50
 msgid ""
 "By default, there is no URL containment. Suppose you launch a webapp "
 "without any patters and only a starting URL like this:::"
 msgstr ""
+"Por defecto, no hay confinamiento de URL. Suponga que inicia una aplicación "
+"web sin patrones y solo una URL de comienzo como esta:::"
 
 #: ../../appdev/webapp/guide.rst:54
 msgid ""
@@ -1021,16 +1073,21 @@ msgid ""
 " click the Developer button at the top, they navigate to "
 "developer.ubuntu.com, and it displays in the webapp."
 msgstr ""
+"El usuario puede navegar a cualquier URL sin limitación. Por ejemplo, si "
+"pulsan en el botón Desarrollador en la parte de arriba, irán a "
+"developer.ubuntu.com y se mostrará en la aplicación web."
 
 #: ../../appdev/webapp/guide.rst:56
 msgid ""
 "Tip: You can see the URL of the current page by enabling the address bar "
 "with ``--enable-addressbar``."
 msgstr ""
+"Consejo: puede ver la URL de la página actual habilitando la barra de "
+"direcciones con ``--enable-addressbar``."
 
 #: ../../appdev/webapp/guide.rst:59
 msgid "Simple containment to the site"
-msgstr ""
+msgstr "Confinamiento simple para el sitio"
 
 #: ../../appdev/webapp/guide.rst:61
 msgid ""
@@ -1039,16 +1096,23 @@ msgid ""
 "to subpages of www.ubuntu.com. This is done by adding a wildcard URL "
 "pattern to the launch command, as follows:::"
 msgstr ""
+"A menudo uno quiere contener a los usuarios dentro del sitio. Esto es, si el "
+"sitio web es www.ubuntu.com, puede ser útil contener a los usuarios de la "
+"aplicación web solo a sub-páginas de www.ubuntu.com. Esto se hace añadiendo "
+"un patrón comodín de URL a la orden de inicio, como el que sigue:::"
 
 #: ../../appdev/webapp/guide.rst:67
 msgid "``--webappUrlPatterns=`` indicates a pattern is next"
-msgstr ""
+msgstr "``--webappUrlPatterns=`` indica que un patrón es lo siguiente"
 
 #: ../../appdev/webapp/guide.rst:66
 msgid ""
 "http://www.ubuntu.com/* is the pattern The asterix is a wildcard that "
 "matches any valid sequence of trailing (right-most) characters in a URL"
 msgstr ""
+"http://www.ubuntu.com/* es el patrón. El asterisco es un comodín que "
+"coincide con cualquier secuencia válida de caracteres finales (más a la "
+"derecha) en una URL"
 
 #: ../../appdev/webapp/guide.rst:69
 msgid ""
@@ -1059,6 +1123,12 @@ msgid ""
 "(http://www.ubuntu.com/tablet). But, clicking Developer opens the "
 "corresponding URL in the browser."
 msgstr ""
+"Con esta orden de inicio y patrón de URL, el usuario puede navegar y abrir "
+"en la aplicación web cualquier URL que comience con http://www.ubuntu.com/. "
+"Por ejemplo, pueden pulsar en el botón Teléfono (http://www.ubuntu.com/phone)"
+" en la cabecera y se abre en la aplicación web, o el botón Tableta "
+"(http://www.ubuntu.com/tablet). Pero pulsando Desarrollador abre la URL "
+"correspondiente en el navegador."
 
 #: ../../appdev/webapp/guide.rst:71
 msgid ""
@@ -1067,6 +1137,10 @@ msgid ""
 "the subdomain would create an ambiguous URL and thus introduces security "
 "concerns. More complex wildcard patterns"
 msgstr ""
+"Consejo: asegúrese de especificar completamente el subdominio en su URL de "
+"inicio, esto es, use http://www.ubuntu.com en vez de www.ubuntu.com. No "
+"especificar el subdominio podría crear una URL ambigua y así introducir "
+"problemas de seguridad. Patrones comodín más complejos"
 
 #: ../../appdev/webapp/guide.rst:74
 msgid ""
@@ -1077,10 +1151,16 @@ msgid ""
 "www.ubuntu.com/phone/features while not allowing access to "
 "www.ubuntu.com/desktop or www.ubuntu.com/phone::"
 msgstr ""
+"Podría querer limitar el acceso solo a algunas sub-páginas de su sitio desde "
+"dentro de la aplicación web. Esto es fácil con patrones comodín. (Los "
+"enlaces a otras sub-páginas se abre en el navegador). Por ejemplo, lo "
+"siguiente permite acceso a www.ubuntu.com/desktop/features y "
+"www.ubuntu.com/phone/features mientras que no permite el acceso a "
+"www.ubuntu.com/desktop o www.ubuntu.com/phone::"
 
 #: ../../appdev/webapp/guide.rst:80
 msgid "Multiple patterns"
-msgstr ""
+msgstr "Patrones múltiples"
 
 #: ../../appdev/webapp/guide.rst:82
 msgid ""
@@ -1088,16 +1168,21 @@ msgid ""
 "example, the following allows access only to "
 "www.ubuntu.com/desktop/features and www.ubuntu.com/phone/features:::"
 msgstr ""
+"Puede usar patrones múltiples separándolos con una coma. Por ejemplo, lo "
+"siguiente permite el acceso solo a www.ubuntu.com/desktop/features y "
+"www.ubuntu.com/phone/features:::"
 
 #: ../../appdev/webapp/guide.rst:86
 msgid ""
 "Tip: Multiple patterns are often necessary to achieve the intended "
 "containment behavior."
 msgstr ""
+"Consejo: a menudo son necesarios los patrones múltiples para conseguir el "
+"deseado comportamiento de confinamiento."
 
 #: ../../appdev/webapp/guide.rst:90
 msgid "Adding a specific subdomain"
-msgstr ""
+msgstr "Añadiendo un subominio específico"
 
 #: ../../appdev/webapp/guide.rst:92
 msgid ""
@@ -1106,6 +1191,9 @@ msgid ""
 " to a single subdomain (and all of its subpages) with a pattern like "
 "this:::"
 msgstr ""
+"Muchas URLs tienen uno o más subdominios. (Por ejemplo, en el siguiente, "
+"“developer” es el subdominio: developer.ubuntu.com). Puede permitir acceso a "
+"un solo subdominio (y a todas sus sub-páginas) con un patrón como este:::"
 
 #: ../../appdev/webapp/guide.rst:96
 msgid ""
@@ -1113,6 +1201,9 @@ msgid ""
 "starting URL (and its subpages). So, if the starting URL is "
 "http://www.ubuntu.com, a second pattern is needed:::"
 msgstr ""
+"Sin embargo, uno normalmente quiere que el usuario pueda navegar de vuelta a "
+"la URL de inicio (y sus sub-páginas). Así que, si la URL de inicio es http://"
+"www.ubuntu.com, se necesita un segundo patrón:::"
 
 #: ../../appdev/webapp/guide.rst:100
 msgid ""
@@ -1121,10 +1212,13 @@ msgid ""
 "http://developer.ubuntu.com and subpages and back to "
 "http://www.ubuntu.com and subpages:::"
 msgstr ""
+"Poniendo todo junto, aquí hay un ejemplo que comienza en http://"
+"www.ubuntu.com y permite la navegación a http://developer.ubuntu.com y sub-"
+"páginas y volver a http://www.ubuntu.com y sub-páginas:::"
 
 #: ../../appdev/webapp/guide.rst:105
 msgid "Adding subdomains with a wildcard"
-msgstr ""
+msgstr "Añadiendo subdominios con un comodín"
 
 #: ../../appdev/webapp/guide.rst:107
 msgid ""
@@ -1132,6 +1226,9 @@ msgid ""
 "design.ubuntu.com, developer.ubuntu.com and more. You can add access to "
 "all subdomains with a wildcard in the subdomain position:::"
 msgstr ""
+"Algunas URLs tienen múltiples subdominios. Por ejemplo,  www.ubuntu.com "
+"tiene design.ubuntu.com, developer.ubuntu.com y más. Puede añadir el acceso "
+"a todos los subdominios con un comodín en la posición de subdominio:::"
 
 #: ../../appdev/webapp/guide.rst:111
 msgid ""
@@ -1140,10 +1237,14 @@ msgid ""
 "subdomain and subpages, including back to the starting URL "
 "(http://www.ubuntu.com) and its subpages."
 msgstr ""
+"Nota: un asterisco en la posición del subdominio iguala cualquier simple "
+"subdominio válido. Este patrón único es suficiente para habilitar la "
+"navegación a cualquier subdominio y sub-páginas, incluyendo volver a la URL "
+"de inicio (http://www.ubuntu.com) y sus sub-páginas."
 
 #: ../../appdev/webapp/guide.rst:114
 msgid "Adding https"
-msgstr ""
+msgstr "Añadiendo https"
 
 #: ../../appdev/webapp/guide.rst:116
 msgid ""
@@ -1151,6 +1252,9 @@ msgid ""
 " allows https and https as access within the webapp to www.launchpad.net "
 "(and all subpages due to the wildcard):::"
 msgstr ""
+"Algunas veces un sitio usa https para alguna de sus URLs. Aquí tiene un "
+"ejemplo que permite http y https como acceso dentro de la aplicación web a "
+"www.launchpad.net (y todas sus sub-páginas gracias al comodín):::"
 
 #: ../../appdev/webapp/guide.rst:120
 msgid ""
@@ -1158,38 +1262,47 @@ msgid ""
 "(the ‘s’) is optional. If https is always required, omit the question "
 "mark."
 msgstr ""
+"Nota: ¿el signo de interrogación en https? Esto significa que el carácter "
+"precedente (la  ‘s’) es opcional. Si se necesita siempre https, omita el "
+"signo de interrogación."
 
 #: ../../appdev/webapp/guide.rst:123
 msgid "Command line arguments"
-msgstr ""
+msgstr "Argumentos de la línea de órdenes"
 
 #: ../../appdev/webapp/guide.rst:125
 msgid ""
 "The webapp-container accepts many options to fine tune how it hosts "
 "various web applications."
 msgstr ""
+"El contenedor de la aplicación web acepta muchas opciones para ajustar como "
+"aloja varias aplicaciones web."
 
 #: ../../appdev/webapp/guide.rst:127
 msgid "See all help with:::"
-msgstr ""
+msgstr "Vea toda la ayuda con:::"
 
 #: ../../appdev/webapp/guide.rst:131
 msgid "Note: Only the following options apply to converged Ubuntu.::"
-msgstr ""
+msgstr "Nota: solo las siguientes opciones se aplican a Ubuntu convergente.:::"
 
 #: ../../appdev/webapp/guide.rst:145
 msgid "Chrome options (if none specified, no chrome is shown by default):::"
 msgstr ""
+"Opciones de Chrome (si ninguna se especifica, no se muestra ningún chrome "
+"por defecto):::"
 
 #: ../../appdev/webapp/guide.rst:150
 msgid ""
 "Note: The other available options are specific to desktop webapps. It is "
 "recommended to not use them anymore."
 msgstr ""
+"Nota: todas las otras opciones disponibles son específicas para aplicaciones "
+"web de escritorio. Se recomienda que no se usen nunca más."
 
 #: ../../appdev/webapp/guide.rst:153
 msgid "User-Agent string override"
-msgstr ""
+msgstr "Ignorar la cadena agente de usuario (User-Agent)"
 
 #: ../../appdev/webapp/guide.rst:155
 msgid ""
@@ -1198,14 +1311,20 @@ msgid ""
 "features. While not a recommended practice, it is sometimes necessary to "
 "change the default string sent by the webapp container."
 msgstr ""
+"Algunos sitios web comprueban porciones específicas de la identidad del "
+"motor web, también conocido por cadena de agente de usuario (User-Agent), "
+"para ajustar su presentación o habilitar ciertas características. Aunque no "
+"es una práctica recomendada, algunas veces es necesario cambiar la cadena "
+"por defecto que envía el contenedor de la aplicación web."
 
 #: ../../appdev/webapp/guide.rst:157
 msgid "To change the string from the command line, use the following option:::"
 msgstr ""
+"Para cambiar la cadena en la línea de órdenes, use la siguiente opción:::"
 
 #: ../../appdev/webapp/guide.rst:162
 msgid "Browser data containment"
-msgstr ""
+msgstr "Confinamiento de los datos del navegador"
 
 #: ../../appdev/webapp/guide.rst:164
 msgid ""
@@ -1214,24 +1333,36 @@ msgid ""
 "installed browser, such as history, cookies and so on. Other browser on "
 "the system do not access the webapp’s data. Storage"
 msgstr ""
+"La experiencia de la aplicación web está contenida y aislada desde el punto "
+"de vista de los datos del navegador. Esto es, las aplicaciones web no "
+"acceden a los datos desde ningún otro navegador instalado, como historial, "
+"cookies y así. Otro navegador en el sistema no accede a los datos de la "
+"aplicación web. Almacenamiento"
 
 #: ../../appdev/webapp/guide.rst:167
 msgid ""
 "W3C allows apps to use local storage, and Oxide/Webapp-container supports"
 " the main standards here: LocalStorage, IndexedDB, WebSQL."
 msgstr ""
+"El W3C permite a las aplicaciones usar almacenamiento local y Oxide/"
+"Contenedor de la aplicación web soporta el estándar principal aquí: "
+"LocalStorage, IndexedDB, WebSQL."
 
 #: ../../appdev/webapp/index.rst:4
 msgid ""
 "Ubuntu Webapps are a great way to deliver online web applications into "
 "Ubuntu."
 msgstr ""
+"Las aplicaciones web de Ubuntu son una gran manera de llevar las "
+"aplicaciones web en línea a Ubuntu."
 
 #: ../../appdev/webapp/index.rst:6
 msgid ""
 "The Ubuntu platform provides an advanced web engine container to run "
 "online applications on the Ubuntu client devices."
 msgstr ""
+"La plataforma Ubuntu proporciona un contenedor avanzado de motor web para "
+"ejecutar aplicaciones en línea en los dispositivos cliente de Ubuntu."
 
 #: ../../appdev/webapp/index.rst:8
 msgid ""
@@ -1240,6 +1371,10 @@ msgid ""
 "They can also have a rich user interface or use the WebGL extension to "
 "deliver games online."
 msgstr ""
+"Las aplicaciones web son alojadas en línea. Pueden ser tan simples como un "
+"sitio web, por ejemplo un sitio de noticias en línea, o pueden distribuir "
+"contenido como vídeos. Pueden tener también una rica interfaz de usuario o "
+"usar la extensión WebGL para entregar juegos en línea."
 
 #: ../../appdev/webapp/index.rst:10
 msgid ""
@@ -1249,6 +1384,13 @@ msgid ""
 "Ubuntu HTML5 GUI). Webapps also have restricted access to platform APIs. "
 "Webapps for converged Ubuntu"
 msgstr ""
+"Nota: las aplicaciones web de Ubuntu y las aplicaciones HTML5 de Ubuntu son "
+"parecidas pero no idénticas. La diferencia principal es que el contenido de "
+"una aplicación web se suministra usando una URL, mientras que las "
+"aplicaciones HTML5 instalan su contenido (y normalmente aportan una interfaz "
+"de usuario gráfica HTML5 de Ubuntu). Las aplicaciones web también tienen "
+"limitado el acceso a las APIs de la plataforma. Las aplicaciones web para "
+"Ubuntu convergente"
 
 #: ../../appdev/webapp/index.rst:17
 msgid ""
@@ -1258,6 +1400,12 @@ msgid ""
 "continue to grow, and of course the future of Ubuntu is convergence, so "
 "stay tuned."
 msgstr ""
+"Esta guía está enfocada a las aplicaciones web para un Ubuntu convergente, "
+"esto es, Ubuntu para dispositivos (teléfonos y tabletas). El escritorio de "
+"Ubuntu tiene soporte adicional para las aplicaciones web que no es cubierto "
+"aquí. El soporte para las aplicaciones web para Ubuntu convergente "
+"continuará creciendo y, por supuesto, el futuro de Ubuntu es la "
+"convergencia, así que manténgase sintonizado."
 
 #~ msgid "Using clickable for cordova and HTML-5 development"
 #~ msgstr "Usando clickable para cordova y desarrollo HTML-5"
