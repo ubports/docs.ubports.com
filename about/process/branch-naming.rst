@@ -31,24 +31,21 @@ Multiple branch extensions can be chained together in the form of ``xenial_-_dep
     xenial_-_dependency-1_-_dependency-2
     xenial_-_dependency-1_-_dependency-2_-_dependency-3
 
-Which version actually ends up being used depends on the version number and the time of release in the PPA.
+.. note::
+
+    There is no prioritization, so the build system will always use the package with the highest version number or the newest build if the number is equal.
 
 Dependency-file
 ^^^^^^^^^^^^^^^
 
-For complex or non-linear dependencies, a ``ubports.depends`` file can be created in the root of the repository to specify additional dependencies.
-
-.. code-block:: text
-
-    xenial_-_dependency-1_-_dependency-2_-_dependency-3
-    xenial_-_something-else
-
-The build-system will then look for dependencies in:
+For complex or non-linear dependencies, a ``ubports.depends`` file can be created in the root of the repository to specify additional dependencies. The branch name will be ignored if this file exists!
 
 .. code-block:: text
 
     xenial
-    xenial_-_dependency-1
-    xenial_-_dependency-1_-_dependency-2
     xenial_-_dependency-1_-_dependency-2_-_dependency-3
     xenial_-_something-else
+
+.. note::
+
+    The ``ubports.depends`` file is an **exclusive list**, so the build system will not resolve dependencies linearly like it does in a branch name! Every dependency has to be listed. You will almost always want to include your base release (i.e. ``xenial``).
