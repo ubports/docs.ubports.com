@@ -24,31 +24,31 @@ To build and publish packages based on a release, an extension in the form of  `
 
 Multiple branch extensions can be chained together in the form of ``xenial_-_dependency-1_-_dependency-2_-_dependency-3``. This means, that the CI system will look for dependencies in the following PPAs:
 
-```
-xenial
-xenial_-_dependency-1
-xenial_-_dependency-1_-_dependency-2
-xenial_-_dependency-1_-_dependency-2_-_dependency-3
-```
+.. code-block:: text
+
+    xenial
+    xenial_-_dependency-1
+    xenial_-_dependency-1_-_dependency-2
+    xenial_-_dependency-1_-_dependency-2_-_dependency-3
 
 Which version actually ends up being used depends on the version number and the time of release in the PPA.
 
 Dependency-file
 ^^^^^^^^^^^^^^^
 
-For complex or non-linear dependencies, a ``ubports.depends`` file can be created in the root of the repository to specify additional dependencies. This file contains one dependency per line in. Example:
+For complex or non-linear dependencies, a ``ubports.depends`` file can be created in the root of the repository to specify additional dependencies.
 
-```
-xenial_-_dependency-1_-_dependency-2_-_dependency-3
-xenial_-_something-else
-```
+.. code-block:: text
+
+    xenial_-_dependency-1_-_dependency-2_-_dependency-3
+    xenial_-_something-else
 
 The build-system will then look for dependencies in:
 
-```
-xenial
-xenial_-_dependency-1
-xenial_-_dependency-1_-_dependency-2
-xenial_-_dependency-1_-_dependency-2_-_dependency-3
-xenial_-_something-else
-```
+.. code-block:: text
+
+    xenial
+    xenial_-_dependency-1
+    xenial_-_dependency-1_-_dependency-2
+    xenial_-_dependency-1_-_dependency-2_-_dependency-3
+    xenial_-_something-else
