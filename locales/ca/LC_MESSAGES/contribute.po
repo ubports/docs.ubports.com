@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-03 14:44-0600\n"
-"PO-Revision-Date: 2018-03-04 19:02+0000\n"
+"PO-Revision-Date: 2018-03-05 08:03+0000\n"
 "Last-Translator: Walter Garcia-Fontes <walter.garcia@upf.edu>\n"
 "Language-Team: Catalan <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-contribute/ca/>\n"
@@ -550,7 +550,7 @@ msgstr "PER FER de la documentació"
 
 #: ../../contribute/index.rst:2
 msgid "Contributing to UBports"
-msgstr "Contribució al UBports"
+msgstr "Contribució a l'UBports"
 
 #: ../../contribute/index.rst:4
 msgid ""
