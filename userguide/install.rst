@@ -4,7 +4,7 @@ Install Ubuntu Touch
 Installing Ubuntu Touch is easy, and a lot of work has gone in to making the installation process less intimidating to less technical users. The UBports Installer is a nice graphical tool that you can use to install Ubuntu Touch on a `supported device <https://ubuntu-touch.io/devices>`_ from your Linux, Mac or Windows computer.
 
 .. warning::
-    If your're switching your device over from Android, you will not be able to keep any data that is currently on the device. Create an external backup if you want to keep it.
+    If you're switching your device over from Android, you will not be able to keep any data that is currently on the device. Create an external backup if you want to keep it.
 
 Go to `the download page <https://github.com/ubports/ubports-installer/releases/latest>`_ and download the version of the installer for your operating system:
 
@@ -24,7 +24,7 @@ While the installation process is fairly simple on most devices, some legacy Bq 
 
 .. note::
 
-    This is more or less uncharted territory. If your devices manufacturer does not want you to install an alternative operating system, there's not a lot we can do about it. The instructions below should only be followed by experienced users. While we appreciate that lots of people want to use our OS, flashing a device with OEM tools shouldn't be done without a bit of know-how and plenty of research.
+    This is more or less uncharted territory. If your device's manufacturer does not want you to install an alternative operating system, there's not a lot we can do about it. The instructions below should only be followed by experienced users. While we appreciate that lots of people want to use our OS, flashing a device with OEM tools shouldn't be done without a bit of know-how and plenty of research.
 
 Meizu devices are pretty much stuck on Flyme. While the MX4 can be flashed successfully in some cases, the Pro5 is Exynos-based and has its own headaches.
 
@@ -61,11 +61,11 @@ You will also need to use `the latest version of the tool <https://spflashtool.c
 
 .. warning::
 
-    If select DOWNLOAD rather than FIRMWARE UPGRADE, you will end up with a useless brick rather than a fancy Ubuntu Touch device. You want FIRMWARE UPGRADE.
+    If you select DOWNLOAD rather than FIRMWARE UPGRADE, you will end up with a useless brick rather than a fancy Ubuntu Touch device. Be sure to select FIRMWARE UPGRADE.
 
 9. Turn your phone completly off, but do not connect it yet
-10. Perform a final sanity-check that cho selected the "Firmware Upgrade" option, not "Download". Now, press the button labeled "Download"
-11. You selected "Download" instead of just hitting the download button, didn't you? You stupid idiot! But not to worry, that's why we didn't connect your phone yet. Close the tool, make sure you understand the difference between the "Download" option and the "Download" button and start over. If you in fact selected "Firmware Upgrade", you can proceed to the next step
+10. Press the button labeled "Download"
+11. Perform a final sanity-check that you selected the "Firmware Upgrade" option, not "Download".
 12. Make sure your phone is off and connect it to your PC. Don't use a usb-3 port, since that's known to cause problems
 13. Magic happens. Your phone will boot into a super old version of Ubuntu Touch
-14. Congratulations, you did not fuck it up! This is good, this is good news. You should not actually use this version, but now you can use the UBports Installer to do the rest
+14. Congratulations! Your device will now boot into a very old version of Ubuntu Touch. You can now use the UBports Installer to proceed.
