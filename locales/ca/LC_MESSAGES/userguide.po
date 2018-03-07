@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-03 14:44-0600\n"
-"PO-Revision-Date: 2018-03-03 19:42+0000\n"
+"PO-Revision-Date: 2018-03-07 19:09+0000\n"
 "Last-Translator: Walter Garcia-Fontes <walter.garcia@upf.edu>\n"
+"Language-Team: Catalan <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-userguide/ca/>\n"
 "Language: ca\n"
-"Language-Team: Catalan <https://translate.ubports.com/projects/ubports-"
-"docs/documentation-userguide/ca/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.3\n"
 
 #: ../../userguide/advanceduse/adb.rst:2
@@ -476,10 +477,12 @@ msgid ""
 "Forward and gzip stream with 60fps (--cap-interval 1) and frame size of "
 "384x640 to computer 10.42.0.209 on port 1234 ::"
 msgstr ""
+"Envieu i comprimiu amb gzip amb 60fps(--cap-interval 1) i mida de marc de "
+"384x640 al ordinador 10.42.0.209 al port 1234::"
 
 #: ../../userguide/advanceduse/screencasting.rst:46
 msgid "Example script"
-msgstr ""
+msgstr "Script d'exemple"
 
 #: ../../userguide/advanceduse/screencasting.rst:48
 msgid ""
@@ -487,38 +490,45 @@ msgid ""
 "(must have ssh access to UT and mplayer installed on PC), run it on your "
 "computer::"
 msgstr ""
+"Aquest script us permet enviar la sortida de pantalla del vostre dispositiu "
+"UT remot al vostre PC local (ha de tenir accés per ssh al UT i el mplayer "
+"instal·lat al PC), executeu-lo al vostre ordinador::"
 
 #: ../../userguide/advanceduse/screencasting.rst:69
 msgid "You can download it here: :download:`files/mircast.sh`"
-msgstr ""
+msgstr "El podeu descarregar aquí: :download:`files/mircast.sh`"
 
 #: ../../userguide/advanceduse/screencasting.rst:74
 msgid "initial source: https://wiki.ubuntu.com/Touch/ScreenRecording"
-msgstr ""
+msgstr "font inicial:  https://wiki.ubuntu.com/Touch/ScreenRecording"
 
 #: ../../userguide/advanceduse/screencasting.rst:75
 msgid "demo: https://www.youtube.com/watch?v=HYm4RUwwo5Q"
-msgstr ""
+msgstr "demostració: https://www.youtube.com/watch?v=HYm4RUwwo5Q"
 
 #: ../../userguide/advanceduse/ssh.rst:2
 msgid "Shell access via ssh"
-msgstr ""
+msgstr "Accés a la consola via ssh"
 
 #: ../../userguide/advanceduse/ssh.rst:4
 msgid ""
 "You can use ssh to access a shell from your PC. This is useful for "
 "debugging or more advanced shell usage."
 msgstr ""
+"Podeu fer servir el ssh per accedir a una consola des del vostre PC. Això és "
+"útil per depurar o per a un ús més avançat de la consola."
 
 #: ../../userguide/advanceduse/ssh.rst:6
 msgid ""
 "You need a ssh key pair for this. Logging in via password is disabled by "
 "default."
 msgstr ""
+"Us cal un parell de claus ssh per això. L'inici de sessió mitjançant "
+"contrasenya està deshabilitat de forma predeterminada."
 
 #: ../../userguide/advanceduse/ssh.rst:9
 msgid "Create your public key"
-msgstr ""
+msgstr "Creeu la vostra clau pública"
 
 #: ../../userguide/advanceduse/ssh.rst:11
 msgid ""
@@ -526,38 +536,49 @@ msgid ""
 " fine for LAN, you can leave empty password if you don't want to deal "
 "with it each time::"
 msgstr ""
+"Si ja no l'heu creada, creeu la vostra clau pública, les opcions "
+"predeterminades són adequades per a la xarxa d'àrea local, podeu deixar la "
+"contrasenya buida si no voleu haver d'entrar-la cada cop::"
 
 #: ../../userguide/advanceduse/ssh.rst:16
 msgid "Copy the public key to your device"
-msgstr ""
+msgstr "Copieu la clau pública al vostre dispositiu"
 
 #: ../../userguide/advanceduse/ssh.rst:18
 msgid ""
 "You need then to transfer your public key to your device. There are "
 "multiple ways to do this. For example:"
 msgstr ""
+"Us cal transferir a continuació la vostra clau pública al dispositiu. Hi ha "
+"múltiples maneres de fer això. Per exemple:"
 
 #: ../../userguide/advanceduse/ssh.rst:20
 msgid ""
 "Connect the ubports device and the PC with a USB cable. Then copy the "
 "file using your filemanager."
 msgstr ""
+"Connecteu el dispositiu ubports i el PC amb un cable USB. A continuació "
+"copieu el fitxer usant el vostre gestor de fitxers."
 
 #: ../../userguide/advanceduse/ssh.rst:21
 msgid ""
 "Or transfer the key via the internet by mailing it to yourself, or "
 "uploading it to your own cloud storage, or webserver, etc."
 msgstr ""
+"O transferiu la clau via Internet enviant-vos un correu electrònic, o "
+"carregant-la al vostre emmagatzemament de núvol, o servidor web, etc."
 
 #: ../../userguide/advanceduse/ssh.rst:22
 msgid ""
 "You can also connect via :doc:`adb <adb>` and use the following command "
 "to copy it::"
 msgstr ""
+"Podeu connectar també via :doc:`adb  <adb>` i usar l'ordre següent per "
+"copiar-la::"
 
 #: ../../userguide/advanceduse/ssh.rst:27
 msgid "Configure your device"
-msgstr ""
+msgstr "Configureu el vostre dispositiu"
 
 #: ../../userguide/advanceduse/ssh.rst:29
 msgid ""
@@ -565,22 +586,26 @@ msgid ""
 "stored as ``/home/phablet/id_rsa.pub``. Use the terminal app or and adb "
 "connection to perform the following steps on your phone. ::"
 msgstr ""
+"Ara teniu la vostra clau pública al dispositiu UBports. Suposem que està "
+"desada com ``/home/phablet/id_rsa.pub``. Useu l'aplicació de terminal o la "
+"connexió adb per realitzar els passos següents al vostre telefon.::"
 
 #: ../../userguide/advanceduse/ssh.rst:38
 msgid "Now start the ssh server::"
-msgstr ""
+msgstr "Inicieu ara el servidor ssh::"
 
 #: ../../userguide/advanceduse/ssh.rst:44
 msgid "Connect"
-msgstr ""
+msgstr "Connecteu"
 
 #: ../../userguide/advanceduse/ssh.rst:46
 msgid "Now everything is set up and you can use ``ssh`` ::"
-msgstr ""
+msgstr "Ara tot està configurat i podeu usar ``ssh`` ::"
 
 #: ../../userguide/advanceduse/ssh.rst:50
 msgid "Of course you can now also use ``scp`` or ``sshfs`` to transfer files."
 msgstr ""
+"Per suposat que podeu usar també ``scp`` o ``sshfs``per transferir fitxers."
 
 #: ../../userguide/advanceduse/ssh.rst:55
 msgid ""
@@ -588,6 +613,9 @@ msgid ""
 "<https://askubuntu.com/questions/348714/how-can-i-access-my-ubuntu-phone-"
 "over-ssh/599041#599041>`_"
 msgstr ""
+"`askubuntu.com: Com puc accedir el meu telefon Ubuntu a través del ssh? (en "
+"anglès) <https://askubuntu.com/questions/348714/how-can-i-access-my-ubuntu-"
+"phone-over-ssh/599041#599041>`_"
 
 #: ../../userguide/advanceduse/ssh.rst:56
 msgid ""
@@ -595,14 +623,17 @@ msgid ""
 "ubuntu-phone via Wifi <https://gurucubano.gitbooks.io/bq-aquaris-e-4-5"
 "-ubuntu-phone/content/en/chapter1.html>`_"
 msgstr ""
+"`gurucubano: Telèfon Ubuntu BQ Aquaris E 4.5: com obtenir accés SSH al "
+"telefòn ubuntu via Wifi (en anglès) <https://gurucubano.gitbooks.io/bq-"
+"aquaris-e-4-5-ubuntu-phone/content/en/chapter1.html>`_"
 
 #: ../../userguide/advanceduse/switchchannel.rst:2
 msgid "Switch release channels"
-msgstr ""
+msgstr "Commutació dels canals d'alliberament"
 
 #: ../../userguide/dailyuse/anbox.rst:2
 msgid "Run android applications"
-msgstr ""
+msgstr "Execució d'aplicacions de l'android"
 
 #: ../../userguide/dailyuse/anbox.rst:4
 msgid ""
@@ -610,34 +641,43 @@ msgid ""
 "compatibility layer that allows you to run android applications on "
 "GNU/Linux operating systems."
 msgstr ""
+"L'`Anbox <https://anbox.io>` és un contenidor mínim de l'android i una capa "
+"de compatibilitat que us permet executar aplicacions de l'android a sistemes "
+"operatius GNU/Linux."
 
 #: ../../userguide/dailyuse/anbox.rst:7
 msgid "Anbox is in early development"
-msgstr ""
+msgstr "L'Anbox està en una etapa inicial de desenvoupament"
 
 #: ../../userguide/dailyuse/anbox.rst:8
 msgid "Anbox for Ubuntu Touch is in even more early development"
 msgstr ""
+"L'Anbox per a l'Ubuntu Touch està en una etapa encara més inicial de "
+"desenvolupament"
 
 #: ../../userguide/dailyuse/anbox.rst:9
 msgid ""
 "Anbox only works on the 16.04 version of Ubuntu Touch, which is also in "
 "early development"
 msgstr ""
+"L'Anbox sols funciona a la versió 16.05 de l'Ubuntu Touch, que també està en "
+"l'etapa inicial de desenvolupament"
 
 #: ../../userguide/dailyuse/anbox.rst:10
 msgid ""
 "Only selected devices are supported for the moment, more will be added in"
 " the future."
 msgstr ""
+"Sols tenen suport alguns dispositius seleccionats, s'afegiran més en el "
+"futur."
 
 #: ../../userguide/dailyuse/anbox.rst:13
 msgid "Supported devices"
-msgstr ""
+msgstr "Dispositius suportats"
 
 #: ../../userguide/dailyuse/anbox.rst:15
 msgid "Make sure your device is supported:"
-msgstr ""
+msgstr "Assegureu-vos que el vostre dispositiu té suport:"
 
 #: ../../userguide/dailyuse/anbox.rst:17
 msgid ""
@@ -645,28 +685,37 @@ msgid ""
 " M10 HD (codename: *cooler*, name of the boot partition: *boot*) BQ M10 "
 "FHD (codename: *frieza*, name of the boot partition: *boot*)"
 msgstr ""
+"Meizu Pro 5 (nom de codi: *turbo*, nom de la partició d'arrencada: *bootimg*)"
+" BQ M10 HD (nom de codi: *cooler*, nom de la partició d'arrencada: *boot*) "
+"BQ M10 FHD (nom de codi: *frieza*, nom de la partició d'arrencada: *boot*)"
 
 #: ../../userguide/dailyuse/anbox.rst:21
 msgid ""
 "You will need the device codename and the name of your boot partition for"
 " the installation."
 msgstr ""
+"Us caldrà el nom de codi del dispositiu i el nom de la vostra partició "
+"d'arrencada per a la instal·lació."
 
 #: ../../userguide/dailyuse/anbox.rst:24
 msgid "How to install"
-msgstr ""
+msgstr "Com instal·lar-ho"
 
 #: ../../userguide/dailyuse/anbox.rst:27
 msgid ""
 "Because this feature is in such an early stage of development, the "
 "installation is only recommended for experienced users."
 msgstr ""
+"Atès que aquesta funcionalitat està en un punt tan inicial de "
+"desenvolupament, sols es recomana la instal·lació als usuaris experimentats."
 
 #: ../../userguide/dailyuse/anbox.rst:29
 msgid ""
 ":doc:`Install <../install>` the 16.04/devel channel on your supported "
 "device"
 msgstr ""
+":doc:`Instal·lar <../install>` el canal 16.04/devel al vostre dispositiu "
+"suportat"
 
 #: ../../userguide/dailyuse/anbox.rst:30
 msgid ""
@@ -675,20 +724,25 @@ msgid ""
 "respectively with the codename and name of the boot partition for your "
 "device. See the above list."
 msgstr ""
+"Obriu una terminal i executeu ``export CODENAME=\"turbo\" && export "
+"PARTITIONNAME=\"bootimg\"``, però reemplaceu la part entre cometes "
+"respectivament amb el nom de codi i el nom de la partició d'arrencada del "
+"vostre dispositiu. Vegeu la llista de dalt."
 
 #: ../../userguide/dailyuse/anbox.rst:31
 msgid "Activate developer mode on your device."
-msgstr ""
+msgstr "Activeu el mode de desenvolupament al vostre dispositiu."
 
 #: ../../userguide/dailyuse/anbox.rst:32
 msgid ""
 "Connect the device to your computer computer and run the following "
 "commands::"
 msgstr ""
+"Connecteu el dispositiu al vostre ordinador i executeu les ordres següents::"
 
 #: ../../userguide/dailyuse/anbox.rst:40
 msgid "wait for the device to reboot, then run::"
-msgstr ""
+msgstr "espereu que el dispositiu es reiniciï, després executeu::"
 
 #: ../../userguide/dailyuse/anbox.rst:49
 msgid ""
@@ -696,10 +750,13 @@ msgid ""
 " might have to refresh the apps scope (pull down from the center of the "
 "screen and release) for the app to show up."
 msgstr ""
+"Fet! Trieu «Anbox» a la lent d'aplicacions per usar aplicacions de "
+"l'android. Potser haureu d'actualitzar la lent d'aplicacions (arrossegueu "
+"des del centre de la pantalla i deixeu anar) perquè es mostri l'aplicació."
 
 #: ../../userguide/dailyuse/anbox.rst:52
 msgid "Reporting bugs"
-msgstr ""
+msgstr "Informació d'errors"
 
 #: ../../userguide/dailyuse/anbox.rst:54
 msgid ""
@@ -709,24 +766,33 @@ msgid ""
 "issues with anbox are reported on `our downstream fork "
 "<https://github.com/ubports/anbox/issues>`_. Thank you!"
 msgstr ""
+"Si us plau :doc:`informeu qualsevol error </contribute/bugreporting>` que "
+"trobeu. Els errors a l'Ubuntu Touch 16.04 s'informen al `seguidor normal de "
+"l'Ubuntu Touch <https://github.com/ubports/ubuntu-touch/issues>`_  i els "
+"errors amb l'anbox es reporten a `la nostra bifurcació a la base de la "
+"cadena <https://github.com/ubports/anbox/issues>`_. Gràcies!"
 
 #: ../../userguide/dailyuse/index.rst:2
 msgid "Daily use"
-msgstr ""
+msgstr "Ús diari"
 
 #: ../../userguide/dailyuse/index.rst:4
 msgid ""
 "This section of the documentation details common tasks that users may "
 "want to perform while using their Ubuntu Touch device."
 msgstr ""
+"Aquesta secció de la documentació explica tasques comunes que els usuaris "
+"podrien desitjar fer quan usen el seu dispositiu Ubuntu Touch."
 
 #: ../../userguide/dailyuse/libertine.rst:2
 msgid "Run desktop applications"
-msgstr ""
+msgstr "Execució d'aplicacions d'escriptori"
 
 #: ../../userguide/dailyuse/libertine.rst:4
 msgid "Libertine allows you to use standard desktop applications in Ubuntu Touch."
 msgstr ""
+"El Libertine us permet usar aplicacions estàndard d'escriptori a l'Ubuntu "
+"Touch."
 
 #: ../../userguide/dailyuse/libertine.rst:6
 msgid ""
@@ -735,32 +801,38 @@ msgid ""
 "/libertine-scope.ubuntu>`_. To install applications you need to use the "
 "commandline as described below."
 msgstr ""
+"Per mostrar i llençar aplicacions us cal la «Lent d'aplicacions d'escriptori»"
+" que està disponible a l'`Open Store <https://open-store.io/app/libertine-"
+"scope.ubuntu>`_. Per instal·lar aplicacions us cal usar la línia d'ordres "
+"com s'explica a sota."
 
 #: ../../userguide/dailyuse/libertine.rst:9
 msgid "Manage containers"
-msgstr ""
+msgstr "Gestió de contenidors"
 
 #: ../../userguide/dailyuse/libertine.rst:12
 msgid "Create a container"
-msgstr ""
+msgstr "Creació d'un contenidor"
 
 #: ../../userguide/dailyuse/libertine.rst:14
 msgid ""
 "The first step is to create a container where applications can be "
 "installed:"
 msgstr ""
+"El primer pas per crear un contenidor on es poden instal·lar aplicacions:"
 
 #: ../../userguide/dailyuse/libertine.rst:16
 msgid "``libertine-container-manager create -i CONTAINER-IDENTIFIER``"
-msgstr ""
+msgstr "``libertine-container-manager create -i CONTAINER-IDENTIFIER``"
 
 #: ../../userguide/dailyuse/libertine.rst:18
 msgid "You can add extra options such as:"
-msgstr ""
+msgstr "Podeu afegir opcions addicionals com ara:"
 
 #: ../../userguide/dailyuse/libertine.rst:20
 msgid "``-n name`` name is a more user friendly name of the container"
 msgstr ""
+"``-n name`` name (nom) és un nom del contenidor més amigable per l'usuari"
 
 #: ../../userguide/dailyuse/libertine.rst:21
 msgid ""
@@ -768,12 +840,17 @@ msgid ""
 "``chroot`` and is compatible with every device. If the kernel of your "
 "device supports it then ``lxc`` is suggested."
 msgstr ""
+"`-t type`` type (tipus) pot ser ser o bé ``chroot`` o ``lxc``. Per defecte "
+"és ``chroot`` i és compatiible amb tots els dispositius. Si el nucli del "
+"vostre dispositiu li dóna suport aleshores se suggereix ``lxc``."
 
 #: ../../userguide/dailyuse/libertine.rst:23
 msgid ""
 "The creating process can take some time, due to the size of the container"
 " (some hundred of megabytes)."
 msgstr ""
+"El procés de creació pot portar un cert temps, a causa de la mida del "
+"contenidor (algunes centenars de megabytes)."
 
 #: ../../userguide/dailyuse/libertine.rst:26
 msgid ""
@@ -783,54 +860,61 @@ msgid ""
 " the terminal app using a loopback ssh connection running this command: "
 "``ssh localhost``."
 msgstr ""
+"L'ordre ``create`` que es mostra a dalt no es pot executar directament a "
+"l'aplicació de terminal, per causa de restriccions de l'apparmor. La podeu "
+"executar des d'un altre dispositiu usant una connexió o bé ``adb`` o bé  "
+"``ssh``. Alternativament, podeu executar-la des de l'aplicació de terminal "
+"usant una connexió ssh loopback executant l'ordre: ``ssh localhost``."
 
 #: ../../userguide/dailyuse/libertine.rst:29
 msgid "List containers"
-msgstr ""
+msgstr "Fer una llista de contenidors"
 
 #: ../../userguide/dailyuse/libertine.rst:32
 msgid "To list all containers created run:"
-msgstr ""
+msgstr "Per fer una llista de tots els contenidors executeu:"
 
 #: ../../userguide/dailyuse/libertine.rst:32
 msgid "``libertine-container-manager list``"
-msgstr ""
+msgstr "``libertine-container-manager list``"
 
 #: ../../userguide/dailyuse/libertine.rst:35
 msgid "Destroy a container"
-msgstr ""
+msgstr "Destrucció d'un contenidor"
 
 #: ../../userguide/dailyuse/libertine.rst:37
 msgid "``libertine-container-manager destroy -i CONTAINER-IDENTIFIER``"
-msgstr ""
+msgstr "``libertine-container-manager destroy -i CONTAINER-IDENTIFIER``"
 
 #: ../../userguide/dailyuse/libertine.rst:40
 msgid "Manage applications"
-msgstr ""
+msgstr "Gestió d'aplicacions"
 
 #: ../../userguide/dailyuse/libertine.rst:42
 msgid "Once a container is set up, you can list the installed applications:"
 msgstr ""
+"Un cop heu configurat un contenidor, podeu fer una llista de les aplicacions "
+"instal·lades:"
 
 #: ../../userguide/dailyuse/libertine.rst:44
 msgid "``libertine-container-manager list-apps``"
-msgstr ""
+msgstr "``libertine-container-manager list-apps``"
 
 #: ../../userguide/dailyuse/libertine.rst:46
 msgid "Install a package:"
-msgstr ""
+msgstr "Instal·lació d'un paquet:"
 
 #: ../../userguide/dailyuse/libertine.rst:48
 msgid "``libertine-container-manager install-package -p PACKAGE-NAME``"
-msgstr ""
+msgstr "``libertine-container-manager install-package -p PACKAGE-NAME``"
 
 #: ../../userguide/dailyuse/libertine.rst:50
 msgid "Remove a package:"
-msgstr ""
+msgstr "Eliminació d'un paquet:"
 
 #: ../../userguide/dailyuse/libertine.rst:52
 msgid "``libertine-container-manager remove-package -p PACKAGE-NAME``"
-msgstr ""
+msgstr "``libertine-container-manager remove-package -p PACKAGE-NAME``"
 
 #: ../../userguide/dailyuse/libertine.rst:55
 msgid ""
@@ -838,78 +922,88 @@ msgid ""
 "CONTAINER-IDENTIFIER`` to specify for which container you want to perform"
 " an operation."
 msgstr ""
+"Si teniu més d'un contenidor, aleshores podeu usar l'opció  ``-i CONTAINER-"
+"IDENTIFIER`` per especificar per a quin contenidor voleu realitzar una "
+"operació."
 
 #: ../../userguide/dailyuse/libertine.rst:59
 msgid "Files"
-msgstr ""
+msgstr "Fitxers"
 
 #: ../../userguide/dailyuse/libertine.rst:61
 msgid "Libertine applications do have access to these folders:"
-msgstr ""
+msgstr "Les aplicacions del Libertine tenen accés a les carpetes següents:"
 
 #: ../../userguide/dailyuse/libertine.rst:63
 msgid "Documents"
-msgstr ""
+msgstr "Documents"
 
 #: ../../userguide/dailyuse/libertine.rst:64
 msgid "Music"
-msgstr ""
+msgstr "Música"
 
 #: ../../userguide/dailyuse/libertine.rst:65
 msgid "Pictures"
-msgstr ""
+msgstr "Imatges"
 
 #: ../../userguide/dailyuse/libertine.rst:66
 msgid "Downloads"
-msgstr ""
+msgstr "Descàrregues"
 
 #: ../../userguide/dailyuse/libertine.rst:67
 msgid "Videos"
-msgstr ""
+msgstr "Vídeos"
 
 #: ../../userguide/dailyuse/libertine.rst:70
 msgid "Tipps"
-msgstr ""
+msgstr "Consells"
 
 #: ../../userguide/dailyuse/libertine.rst:73
 msgid "Locations"
-msgstr ""
+msgstr "Ubicacions"
 
 #: ../../userguide/dailyuse/libertine.rst:75
 msgid "For every container you create there will be two directories created:"
-msgstr ""
+msgstr "Per cada contenidor que creeu es crearan dos directoris:"
 
 #: ../../userguide/dailyuse/libertine.rst:77
 msgid ""
 "A root directory ``~/.cache/libertine-container/CONTAINER-"
 "IDENTIFIER/rootfs/`` and"
 msgstr ""
+"Un directori arrel  ``~/.cache/libertine-container/CONTAINER-"
+"IDENTIFIER/rootfs/`` i"
 
 #: ../../userguide/dailyuse/libertine.rst:78
 msgid ""
 "a user directory ``~/.local/share/libertine-container/user-data"
 "/CONTAINER-IDENTIFIER/``"
 msgstr ""
+"un directori d'usuari ``~/.local/share/libertine-container/user-data"
+"/CONTAINER-IDENTIFIER/``"
 
 #: ../../userguide/dailyuse/libertine.rst:81
 msgid "Shell access"
-msgstr ""
+msgstr "Accés a la consola"
 
 #: ../../userguide/dailyuse/libertine.rst:83
 msgid "To execute any arbitrary command as root inside the container run:"
 msgstr ""
+"Per executar qualsevol ordre arbitrària com a root a dins del contenidor "
+"executeu:"
 
 #: ../../userguide/dailyuse/libertine.rst:85
 msgid "``libertine-container-manager exec -c COMMAND``"
-msgstr ""
+msgstr "``libertine-container-manager exec -c ORDRE``"
 
 #: ../../userguide/dailyuse/libertine.rst:87
 msgid "For example, to get a shell into your container you can run:"
 msgstr ""
+"Per exemple, per obtenir una consola dins del contenidor podeu executar:"
 
 #: ../../userguide/dailyuse/libertine.rst:89
 msgid "``libertine-container-manager exec -c /bin/bash``"
-msgstr ""
+msgstr "``libertine-container-manager exec -c /bin/bash``"
 
 #: ../../userguide/dailyuse/libertine.rst:92
 msgid ""
@@ -919,18 +1013,22 @@ msgid ""
 "listing of ``ls /`` will be different inside and outside of the "
 "container."
 msgstr ""
+"Quan llenceu el bash d'aquesta manera no obtindreu cap retorn específic per "
+"confirmar que esteu ara *a dins* del contenidor. Podeu verificar ``ls /`` "
+"per confirmar que esteu a dins del contenidor. La llista de ``ls /`` serà "
+"diferent a dins i a fora del contenidor."
 
 #: ../../userguide/dailyuse/libertine.rst:94
 msgid "To get a shell as user ``phablet`` run:"
-msgstr ""
+msgstr "Per obtenir una consola com a l'usuari ``phablet`` executeu:"
 
 #: ../../userguide/dailyuse/libertine.rst:96
 msgid "``DISPLAY= libertine-launch -i CONTAINER-IDENTIFIER /bin/bash``"
-msgstr ""
+msgstr "``DISPLAY= libertine-launch -i CONTAINER-IDENTIFIER /bin/bash``"
 
 #: ../../userguide/dailyuse/libertine.rst:99
 msgid "Background"
-msgstr ""
+msgstr "Explicació"
 
 #: ../../userguide/dailyuse/libertine.rst:101
 msgid ""
@@ -941,6 +1039,13 @@ msgid ""
 "compatibility layer called XMir resolves this. Libertine relies on XMir "
 "to display desktop applications."
 msgstr ""
+"Un servidor de pantalla coordina l'entrada i la sortida d'un sistema "
+"operatiu. La major part de les distribucions Linux avui en dia usen el "
+"servidor X. L'Ubuntu Touch no usa l'X, sinó un nou servidor de pantalla "
+"anomenat Mir. Això significa que les aplicacions estàndard de l'X no són "
+"directament compatibles amb l'Ubuntu Touch. Una capa de comptabilitat "
+"anomenada XMir resol això. El Libertine depèn del XMir per mostrar les "
+"aplicacions d'escriptori."
 
 #: ../../userguide/dailyuse/libertine.rst:103
 msgid ""
@@ -949,10 +1054,15 @@ msgid ""
 "Libertine provides a container with a read-write filesystem to allow the "
 "installation of regular Linux desktop applications."
 msgstr ""
+"Un altre desafiament és les actualitzacions de sistema de l'Ubuntu Touch "
+"s'alliberen com imatges OTA. Això té com a conseqüència que el sistema de "
+"fitxers arrel és de sols lectura. El Libertine proveeix un contenidor amb un "
+"sistema de fitxers de lectura i escriptura per permetre la instal·lació "
+"d'aplicacions d'escriptori regulars del Linux."
 
 #: ../../userguide/install.rst:2
 msgid "Install Ubuntu Touch"
-msgstr ""
+msgstr "Instal·lació de l'Ubuntu Touch"
 
 #: ../../userguide/install.rst:4
 msgid ""
@@ -962,6 +1072,11 @@ msgid ""
 "Ubuntu Touch on a `supported device <devices.ubports.com>`_ from your "
 "Linux, Mac or Windows computer."
 msgstr ""
+"La instal·lació de l'Ubuntu Touch és fàcil, i s'ha fet molta feina perquè el "
+"procés d'instal·lació sigui menys intimidant per als usuaris menys tècnics. "
+"L'instal·lador de l'UBports és una eina gràfica maca que podeu usar per "
+"instal·lar l'Ubuntu Touch a un `dispositiu amb suport  <devices.ubports.com>`"
+"_ des del vostre ordinador Linux, Max o Windows."
 
 #: ../../userguide/install.rst:7
 msgid ""
@@ -969,6 +1084,9 @@ msgid ""
 "to keep any data that is currently on the device. Create an external "
 "backup if you want to keep it."
 msgstr ""
+"Si esteu canviant el vostre dispositiu des de l'Android, no podreu mantenir "
+"les dades que tingueu actualment al dispositiu. Creeu una còpia de seguretat "
+"externa si les voleu mantenir."
 
 #: ../../userguide/install.rst:9
 msgid ""
@@ -976,20 +1094,25 @@ msgid ""
 "installer/releases/latest>`_ and download the version of the installer "
 "for your operating system:"
 msgstr ""
+"Aneu a `la pàgina de descàrrega <https://github.com/ubports/ubports-"
+"installer/releases/latest>`_ i descarregueu la versió de l'instal·lador per "
+"al vostre sistema operatiu:"
 
 #: ../../userguide/install.rst:11
 msgid "Windows: ubports-installer-<version-number>.exe"
-msgstr ""
+msgstr "Windows: ubports-installer-<version-number>.exe"
 
 #: ../../userguide/install.rst:12
 msgid "macOS: ubports-installer-<version-number>.dmg"
-msgstr ""
+msgstr "macOS: ubports-installer-<version-number>.dmg"
 
 #: ../../userguide/install.rst:13
 msgid ""
 "Linux: ubports-installer-<version-number>.deb, ubports-installer"
 "-<version-number>.snap or ubports-installer-<version-number>.AppImage"
 msgstr ""
+"Linux: ubports-installer-<version-number>.deb, ubports-installer-<version-"
+"number>.snap or ubports-installer-<version-number>.AppImage"
 
 #: ../../userguide/install.rst:15
 msgid ""
@@ -997,6 +1120,9 @@ msgid ""
 "you through the installation process. That's it! Have fun exploring "
 "Ubuntu Touch!"
 msgstr ""
+"Inicieu l'instal·lador i seguiu les instruccions a la pantalla que us "
+"conduiran a través del procés d'instal·lació. Això és tot! Que gaudiu "
+"explorant l'Ubuntu Touch!"
 
 #: ../../userguide/install.rst:17
 msgid ""
@@ -1004,10 +1130,13 @@ msgid ""
 "Ubuntu Touch to more devices, visit the :doc:`porting section "
 "</porting/introduction>`."
 msgstr ""
+"Si teniu experiència en el desenvolupament de l'Android i voleu ajudar-nos a "
+"adaptar l'Ubuntu Touch a més dispositius, visiteu la :doc:`secció "
+"d'adaptació </porting/introduction>`."
 
 #: ../../userguide/install.rst:20
 msgid "Install on legacy Android devices"
-msgstr ""
+msgstr "Instal·lació a dispositius Android clàssics"
 
 #: ../../userguide/install.rst:22
 msgid ""
@@ -1016,6 +1145,11 @@ msgid ""
 "nature. This part of the guide does not apply to any other devices or bq "
 "devices that are running the Canonical version of Ubuntu Touch."
 msgstr ""
+"Tot i que el procés d'instal·lació és relativament senzill a la major part "
+"de dispositius, alguns dispositius Bq i Meizu clàssics requereixen de passos "
+"especials a causa de la seva naturalesa tancada. Aquesta part de la guia no "
+"s'aplica a d'altres dispositius o dispositius bq que estan executant la "
+"versió de Canonical de l'Ubuntu Touch."
 
 #: ../../userguide/install.rst:26
 msgid ""
@@ -1027,6 +1161,13 @@ msgid ""
 " OEM tools shouldn't be done without a bit of know-how and plenty of "
 "research."
 msgstr ""
+"Això és més o menys territori inexplorat. Si els fabricants dels dispositius "
+"no volen que instal·Leu un sistema operatiu alternatiu als seus dispositius, "
+"no hi ha massa cosa que podem fer. Les instruccions a sota són molt vagues i "
+"sols s'haurien de seguir per par d'usuaris experimentats. Tot i que apreciem "
+"que molta gent vulgui usar el nostre sistema operatiu, fer una instal·lació "
+"a un dispositiu amb eines OEM sols s'hauria de fer amb una mica de "
+"coneixement i molta recerca."
 
 #: ../../userguide/install.rst:28
 msgid ""
@@ -1034,6 +1175,9 @@ msgid ""
 "website <http://www.mibqyyo.com/en-download/>`_ and use their SP Flash "
 "Tool to flash it."
 msgstr ""
+"Dispositius BQ: Descarregueu el firmware de l'Ubuntu Edition de `la seva "
+"pàgina web <http://www.mibqyyo.com/en-download/>`_ i useu la seva eina SP "
+"Flash Tool per fer la instal·lació."
 
 #: ../../userguide/install.rst:29
 msgid ""
@@ -1043,6 +1187,12 @@ msgid ""
 " link to them here for obvious reasons. The Pro5 is Exynos-based and has "
 "its own headaches. You're even more at your own risk on these."
 msgstr ""
+"Dispositius Meizu: Esteu força bloquejats al Flyme. Per al MX4, hi ha "
+"algunes instruccions circulant sobre com desfer l'actualització del vostre "
+"sistema operatiu, adquirir el root amb un truc, desbloquejar el vostre "
+"bootloader, i més. No les enllaçarem aquí per raons òbvies. El Pro5 està "
+"basat en l'Exynos i porta els seus propis maldecaps. Encara esteu més en "
+"solitud amb aquests dispositius."
 
 #: ../../userguide/install.rst:33
 msgid ""
@@ -1052,6 +1202,12 @@ msgid ""
 "the partition that holds their hardware IDs and can no longer connect to "
 "Wi-Fi or cellular networks."
 msgstr ""
+"TINGUEU MOLTA CURA! Entendre incorrectament aquesta part pot danyar  o "
+"trencar de forma permanenr el vostre dispositiu. MAI NO marqueu l'opció «"
+"Format All» (formatació completa) del SP Flash Tool i llegiu amb cura tot el "
+"que us diu. Alguns usuaris han destruït la partició que conté els "
+"identificadors del maquinari i no es poden connectar més a les xarxes Wifi o "
+"mòbils."
 
 #~ msgid ""
 #~ "To display and launch applications you"
@@ -1061,4 +1217,3 @@ msgstr ""
 #~ "need to use the commandline as "
 #~ "described below."
 #~ msgstr ""
-
