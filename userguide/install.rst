@@ -33,7 +33,7 @@ Meizu devices are pretty much stuck on Flyme. While the MX4 can be flashed succe
     BE VERY CAREFUL! You are responsible for your own actions!
 
 1. Disconnect all devices and non-essential peripherals from your PC. Charge your device on a wall-charger (not your PC) to at least 40 percent
-2. Download the ubuntu touch rom for your device
+2. Download the Ubuntu Touch ROM for your device:
 
     - `Bq E4.5 <http://www.mibqyyo.com/de-download/categorias/smartphones/aquaris-e-serie/aquaris-e4-5-ubuntu-edition/>`_ (*krillin*)
     - `Bq E5 HD <https://storage.googleapis.com/otas/2014/Smartphones/Aquaris_E5_HD/Ubuntu/VEGETA01A-S11A_BQ_L100EN_2017_170207.zip>`_ (*vegetahd*)
@@ -41,9 +41,9 @@ Meizu devices are pretty much stuck on Flyme. While the MX4 can be flashed succe
     - `Bq M10 FHD <https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/Ubuntu/OTA_15/frieza-image-stable-8.zip>`_ (*frieza*)
     - `Meizu MX4 <http://people.canonical.com/~alextu/tangxi/684.zip>`_ (*arale*)
 
-3. Download `SP flash tool <https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/Ubuntu/SP_Flash_Tool_exe_Linux_v5.1612.00.100.zip>`_ for linux.
+3. Download `SP flash tool <https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/Ubuntu/SP_Flash_Tool_exe_Linux_v5.1612.00.100.zip>`_ for Linux.
 
-On Ubuntu 17.10 there are issues with flash_tool loading shared library libpng12 so this can be used as a workaround
+On Ubuntu 17.10, there are issues with flash_tool loading the shared library 'libpng12', so this can be used as a workaround:
 
 .. code-block:: text
 
@@ -54,7 +54,7 @@ On Ubuntu 17.10 there are issues with flash_tool loading shared library libpng12
 You will also need to use `the latest version of the tool <https://spflashtool.com/download/SP_Flash_Tool_v5.1744_Linux.zip>`_.
 
 4. Extract the zip files
-5. Start the tool with sudo
+5. Start the tool with ``sudo``
 6. Select the ``*Android_scatter.txt`` file from the archive you downloaded in the first step as the scatter-loading file
 7. Choose "Firmware Upgrade"
 8. Double-check you chose "Firmware Upgrade" and not "Download" or "Format All"
@@ -63,9 +63,9 @@ You will also need to use `the latest version of the tool <https://spflashtool.c
 
     If you select DOWNLOAD rather than FIRMWARE UPGRADE, you will end up with a useless brick rather than a fancy Ubuntu Touch device. Be sure to select FIRMWARE UPGRADE.
 
-9. Turn your phone completly off, but do not connect it yet
+9. Turn your device completely off, but do not connect it yet
 10. Press the button labeled "Download"
-11. Perform a final sanity-check that you selected the "Firmware Upgrade" option, not "Download".
-12. Make sure your phone is off and connect it to your PC. Don't use a usb-3 port, since that's known to cause problems
-13. Magic happens. Your phone will boot into a super old version of Ubuntu Touch
+11. Perform a final sanity-check that you selected the "Firmware Upgrade" option, not "Download"
+12. Make sure your device is off and connect it to your PC. Don't use a USB 3.0 port, since that's known to cause communication issues with your device.
+13. `Magic <https://en.wikipedia.org/wiki/Clarke's_three_laws>`_ happens. Your device will boot into a super old version of Ubuntu Touch.
 14. Congratulations! Your device will now boot into a very old version of Ubuntu Touch. You can now use the UBports Installer to proceed.
