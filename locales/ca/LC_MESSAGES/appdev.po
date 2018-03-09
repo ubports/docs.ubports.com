@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-03 14:44-0600\n"
-"PO-Revision-Date: 2018-02-20 07:54+0000\n"
+"PO-Revision-Date: 2018-03-09 05:15+0000\n"
 "Last-Translator: Walter Garcia-Fontes <walter.garcia@upf.edu>\n"
+"Language-Team: Catalan <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-appdev/ca/>\n"
 "Language: ca\n"
-"Language-Team: Catalan <https://translate.ubports.com/projects/ubports-"
-"docs/documentation-appdev/ca/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.3\n"
 
 #: ../../appdev/cookbook.rst:2
@@ -134,86 +135,104 @@ msgid ""
 "created using QML or HTML5 and behavior can be created using JS, Qt, C++,"
 " Python, or Go."
 msgstr ""
+"L'Ubuntu Touch té tres tipus d'aplicacionns: `Aplicacions web`_ (WebApps), "
+"lents (obsolet) i `aplicacions natives`_. Les aplicacions s'empaqueten, es "
+"distribueixen i s'instal·len usant un format anomenat empaquetat `click  "
+"<https://click.readthedocs.io/en/latest/>`_. La interfície d'usuari de "
+"l'aplicació es poden crear amb QML o HTML5 i el comportament es pot crear "
+"usant JS, Qt, C++, Python o Go."
 
 #: ../../appdev/index.rst:14
 msgid "Click package overview"
-msgstr ""
+msgstr "Panoràmica del paquet click"
 
 #: ../../appdev/index.rst:16
 msgid "Every ``click`` application package must embed at least 3 files:"
-msgstr ""
+msgstr "Totes les aplicacions ``click`` han d'incorporar almenys 3 fitxers:"
 
 #: ../../appdev/index.rst:38
 msgid "``manifest.json`` file"
-msgstr ""
+msgstr "el fitxer ``manifest.json``"
 
 #: ../../appdev/index.rst:19
 msgid ""
 "Contains application declarations such as application name, description, "
 "author, framework sdk target, and version."
 msgstr ""
+"Conté les declaracions de l'aplicació com ara el nom de l'aplicació, la "
+"descripció, l'autor, el destí de l'entorn de desenvolupament (sdk) i la "
+"versió."
 
 #: ../../appdev/index.rst:21
 msgid "Example ``manifest.json`` file::"
-msgstr ""
+msgstr "Exemple de fitxer ``manifest.json``::"
 
 #: ../../appdev/index.rst:41
 msgid "AppArmor profile policy file"
-msgstr ""
+msgstr "Fitxer de política de perfil de l'AppArmor"
 
 #: ../../appdev/index.rst:41
 msgid ""
 "Contains which policy the app needs to work properly. See `Security and "
 "app isolation`_ below for more information on this file."
 msgstr ""
+"Conté quina política li cal a l'aplicació per funcionar correctament. Vegeu `"
+"Seguretat i aïllament de l'aplicació`_ a sota per a més informació sobre "
+"aquest fitxer."
 
 #: ../../appdev/index.rst:64
 msgid "``.desktop`` file"
-msgstr ""
+msgstr "fitxer ``.desktop``"
 
 #: ../../appdev/index.rst:44
 msgid ""
 "The launcher file will tell UT how to launch the app, which name and icon"
 " to display on the home screen, and some other properties."
 msgstr ""
+"El fitxer llançador li dirà a l'UT com llençar l'aplicació, quin nom i quina "
+"icona mostrar a la pantalla d'inici, i algunes altres propietats."
 
 #: ../../appdev/index.rst:46
 msgid "Example of ``app.desktop``::"
-msgstr ""
+msgstr "Exemple d'`app.desktop``::"
 
 #: ../../appdev/index.rst:56
 msgid "Non exhaustive list of properties:"
-msgstr ""
+msgstr "Llista no exhaustiva de propietats:"
 
 #: ../../appdev/index.rst:58
 msgid "Name: Application title has shown in the dash"
-msgstr ""
+msgstr "Nom: el títol de l'aplicació s'ha mostrat al traç"
 
 #: ../../appdev/index.rst:59
 msgid "Exec: Path to the executable file"
-msgstr ""
+msgstr "Exec: camí al fitxer executable"
 
 #: ../../appdev/index.rst:60
 msgid "Icon: Path to the icon to display"
-msgstr ""
+msgstr "Icona: camí a la icona a mostrar"
 
 #: ../../appdev/index.rst:61
 msgid "Terminal: ``false`` if will not run in terminal window"
-msgstr ""
+msgstr "Terminal: ``false``si no s'executarà a la finestra de terminal"
 
 #: ../../appdev/index.rst:62
 msgid ""
 "Type: Specifies the type of the launcher file. The type can be "
 "Application, Link or Directory."
 msgstr ""
+"Tipus: Especifica el tipus del fitxer llançador. El tipus pot ser "
+"Application (aplicació), Link (enllaç) o Directory (directori)."
 
 #: ../../appdev/index.rst:63
 msgid "X-Ubuntu-Touch: ``true`` to make the app visible"
-msgstr ""
+msgstr "X-Ubuntu-Touch: ``true`` per fer visible l'aplicació"
 
 #: ../../appdev/index.rst:64
 msgid "X-Ubuntu-XMir-Enable: ``true`` if your app is built for X"
 msgstr ""
+"X-Ubuntu-XMir-Enable: ``true``si la vostra aplicació està construïda sobre "
+"les X"
 
 #: ../../appdev/index.rst:71
 msgid "Security and app isolation"
@@ -1106,4 +1125,3 @@ msgstr ""
 #~ msgstr ""
 #~ "Vegeu aquí per començar «Llegiu els "
 #~ "documents <http://clickable.bhdouglass.com/en/latest/>»."
-
