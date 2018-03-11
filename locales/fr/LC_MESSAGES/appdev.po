@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-03 14:44-0600\n"
-"PO-Revision-Date: 2018-03-11 20:07+0000\n"
+"PO-Revision-Date: 2018-03-11 22:24+0000\n"
 "Last-Translator: Max Libre <libremax@protonmail.com>\n"
 "Language-Team: French <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-appdev/fr/>\n"
@@ -119,9 +119,9 @@ msgid ""
 msgstr ""
 "Bienvenue sur une plate-forme open source et libre, sous le contrôle et "
 "l'amélioration permanents d'une communauté mondiale dynamique, dont "
-"l'énergie, la connectivité, le talent et l'engagement sont inégalés. "
-"Ubuntu est également le troisième système d'exploitation pour ordinateur "
-"de bureau le plus déployé au monde."
+"l'énergie, la connectivité, le talent et l'engagement sont inégalés. Ubuntu "
+"est également le troisième SE pour ordinateur de bureau le plus déployé au "
+"monde."
 
 #: ../../appdev/index.rst:7
 msgid "Introduction"
@@ -353,7 +353,7 @@ msgstr "Points clés de la plate-forme :"
 
 #: ../../appdev/index.rst:112
 msgid "Content Hub"
-msgstr "Centre de connectivité"
+msgstr "Centre de contenu"
 
 #: ../../appdev/index.rst:112
 msgid ""
@@ -380,7 +380,7 @@ msgstr ""
 
 #: ../../appdev/index.rst:118
 msgid "URL dispatcher"
-msgstr "Répartiteur de liens"
+msgstr "Répartiteur d'URL"
 
 #: ../../appdev/index.rst:118
 msgid ""
@@ -388,7 +388,7 @@ msgid ""
 "URL dispatcher."
 msgstr ""
 "Aidez les utilisateurs à naviguer entre vos applications et orientez-les "
-"grâce au répartiteur de liens."
+"grâce au répartiteur d'URL."
 
 #: ../../appdev/index.rst:122
 msgid "Online accounts"
@@ -595,8 +595,8 @@ msgid ""
 msgstr ""
 "Vous pouvez accéder en ssh à l'appareil (via ``phablet-shell``, par exemple) "
 "et ensuite installer tous les paquets nécessaires pour reconstruire le "
-"composant que vous voulez modifier (l'application Contacts, dans cet exemple "
-":"
+"composant que vous voulez modifier (l'application Contacts, dans cet exemple)"
+" :"
 
 #: ../../appdev/system-software.rst:46
 msgid ""
@@ -607,8 +607,8 @@ msgid ""
 msgstr ""
 "Ceci installera un tas de paquets dans la racine de votre appareil. De plus, "
 "vous voudrez probablement installer ``git`` afin d'obtenir le code source de "
-"votre application dans l'appareil et ensuite repousser vos changements dans "
-"le référentiel :"
+"votre application dans l'appareil et ensuite pousser en retour vos "
+"changements dans le référentiel :"
 
 #: ../../appdev/system-software.rst:57
 msgid "Now, you are ready to build the package:"
@@ -621,8 +621,8 @@ msgid ""
 "to pass to the next command:"
 msgstr ""
 "et enfin, installez-le. La commande ``dpkg-buildpackage`` imprimera la liste "
-"des paquets générés, et ce sont ces noms de fichiers que vous devrez passer "
-"à la prochaine commande :"
+"des paquets générés et ce sont ces noms de fichiers que vous devrez passer à "
+"la prochaine commande :"
 
 #: ../../appdev/system-software.rst:71
 msgid ""
@@ -700,10 +700,10 @@ msgid ""
 "(Xenial).*"
 msgstr ""
 "*Note: si votre périphérique est connecté au PC, vous n'avez pas besoin de "
-"spécifier le paramètre ``----ubuntu=15.04`` parce que crossbuilder trouvera "
-"la bonne version d'Ubuntu par lui-même. Si vous ne spécifiez aucun paramètre "
-"et que vous n'avez pas de périphérique connecté à votre PC, crossbuilder "
-"utilisera ``16.04`` (Xenial).*"
+"spécifier le paramètre ``--ubuntu=15.04`` parce que crossbuilder trouvera la "
+"bonne version d'Ubuntu par lui-même. Si vous ne spécifiez aucun paramètre et "
+"que vous n'avez pas d'appareil connecté à votre PC, crossbuilder utilisera "
+"``16.04`` (Xenial).*"
 
 #: ../../appdev/system-software.rst:124
 msgid ""
@@ -717,10 +717,10 @@ msgid ""
 msgstr ""
 "Crossbuilder fera tout pour vous: il créera le conteneur LXD, téléchargera "
 "l'image de développement, installera toutes vos dépendances de construction "
-"de paquetages, effectuera la construction et enfin, si votre périphérique "
-"est connecté à votre hôte, il copiera les paquetages sur la cible et les "
+"de paquets, effectuera la construction et enfin, si votre périphérique est "
+"connecté à votre hôte, il copiera les paquets sur la cible et les "
 "installera. Les deux premières étapes (créer l'image LXD et obtenir les "
-"dépendances) peuvent prendre quelques minutes, mais ne seront exécutées que "
+"dépendances) peuvent prendre quelques minutes mais ne seront exécutées que "
 "la première fois que vous lancerez crossbuilder pour un nouveau paquet."
 
 #: ../../appdev/system-software.rst:132
@@ -738,7 +738,7 @@ msgstr ""
 
 #: ../../appdev/system-software.rst:138
 msgid "Unit tests"
-msgstr "Tests unitaires"
+msgstr "Les tests unitaires"
 
 #: ../../appdev/system-software.rst:140
 msgid ""
@@ -751,7 +751,7 @@ msgid ""
 "container. You can do that by getting a shell inside the container with"
 msgstr ""
 "Par défaut crossbuilder n'exécute pas de tests unitaires; c'est à la fois "
-"pour des raisons de vitesse, et parce que le conteneur créé par crossbuilder "
+"pour des raisons de vitesse et parce que le conteneur créé par crossbuilder "
 "n'est pas destiné à exécuter des exécutables natifs (cible): les outils de "
 "développement (qmake/cmake, make, gcc, etc.) sont tous exécutés dans "
 "l'architecture hôte, sans émulation (encore une fois, pour des raisons de "
@@ -794,7 +794,7 @@ msgstr ""
 "localement sur votre machine de bureau, puis de pousser le code source vers "
 "un Launchpad PPA et de le faire construire là pour l'architecture armhf. "
 "Selon que la fonctionnalité que vous développez peut être raisonnablement "
-"testée dans votre machine locale, et si vous pouvez attendre que les "
+"testée dans votre machine locale et si vous pouvez attendre que les "
 "développeurs de Launchpad commencent à travailler sur votre paquet (cela "
 "peut prendre quelques heures), ceci pourrait ou non être un moyen approprié "
 "de développement."
@@ -805,7 +805,7 @@ msgid ""
 "PPAs. So, if you target the current 15.04 Ubports devices, this method is"
 " not suitable for you.*"
 msgstr ""
-"*Note: Depuis la fin de 2017, Launchpad n'est plus compatible pour les PPAs  "
+"*Note: depuis la fin de 2017, Launchpad n'est plus compatible pour les PPAs  "
 "basés sur vivid. Donc, si vous ciblez les appareils Ubports 15.04 actuels, "
 "cette méthode ne vous convient pas.*"
 
@@ -817,7 +817,7 @@ msgid ""
 "here:"
 msgstr ""
 "Commencez par obtenir `VirtualBox "
-"<https://www.virtualbox.org/wiki/Downloads>`__ et une image Ubuntu "
+"<https://www.virtualbox.org/wiki/Downloads>`__ et une image d'Ubuntu "
 "correspondant à l'image de base de votre appareil. Vous pouvez obtenir "
 "l'image d'Ubuntu ici :"
 
@@ -836,8 +836,8 @@ msgid ""
 "`Stable Phone Overlay PPA <https://launchpad.net/~ci-train-ppa-"
 "service/+archive/ubuntu/stable-phone-overlay>`__ like this:"
 msgstr ""
-"Démarrez votre machine VirtualBox avec l'image Ubuntu que vous avez "
-"téléchargée, et une fois l'installation terminée et que vous arrivez à un "
+"Démarrez votre machine VirtualBox avec l'image d'Ubuntu que vous avez "
+"téléchargée et une fois l'installation terminée et que vous arrivez à un "
 "terminal, ajoutez le `Stable Phone Overlay PPA <https://launchpad.net/~ci-"
 "train-ppa-service/+archive/ubuntu/stable-phone-overlay>`__ comme ceci :"
 
@@ -896,8 +896,8 @@ msgstr ""
 "visitant https://launchpad.net/~/+activate-ppa; entrez un nom et une "
 "description, puis cliquez sur le bouton Créer, et sur la page suivante, "
 "choisissez le lien \"Modifier les détails\" près du coin supérieur droit. "
-"Vous pouvez ensuite activer l'architecture de votre téléphone (avec la "
-"plupart du temps, c'est \"ARM ARMv7 Hard Float\"), désactiver toutes les "
+"Vous pouvez ensuite activer l'architecture de votre téléphone (avec une "
+"forte probabilité, c'est \"ARM ARMv7 Hard Float\"), désactiver toutes les "
 "architectures qui ne vous intéressent pas et cliquer sur \"Enregistrer\". "
 "Supposons que votre nom d'utilisateur Launchpad soit \"ubdeveloper\" et que "
 "le PPA s'appelle \"myppa\", alors les commandes pour pousser vos changements "
@@ -939,7 +939,7 @@ msgstr ""
 "publiera finalement le (s) paquet (s) résultant (s) dans celui-ci. "
 "Maintenant tout ce qui reste à faire est d'installer les paquets dans votre "
 "téléphone: pour cela, vous pouvez utiliser ``phablet-shell`` pour accéder à "
-"votre téléphone, et de là taper les commandes suivantes :"
+"votre téléphone et de là taper les commandes suivantes :"
 
 #: ../../appdev/system-software.rst:257
 msgid ""
@@ -953,7 +953,7 @@ msgstr ""
 
 #: ../../appdev/webapp/guide.rst:2 ../../appdev/webapp/index.rst:15
 msgid "Guide"
-msgstr "Guide"
+msgstr "Le guide"
 
 #: ../../appdev/webapp/guide.rst:5
 msgid "How the webapp fits into the shell"
@@ -987,7 +987,7 @@ msgstr ""
 
 #: ../../appdev/webapp/guide.rst:16
 msgid "Launching"
-msgstr "Lancement"
+msgstr "Le lancement"
 
 #: ../../appdev/webapp/guide.rst:18
 msgid "You can launch a webapp from the terminal with:::"
@@ -1008,7 +1008,7 @@ msgstr ""
 
 #: ../../appdev/webapp/guide.rst:29
 msgid "User interface"
-msgstr "Interface utilisateur"
+msgstr "L'interface utilisateur"
 
 #: ../../appdev/webapp/guide.rst:31
 msgid ""
@@ -1047,7 +1047,7 @@ msgstr ""
 
 #: ../../appdev/webapp/guide.rst:39
 msgid "URL patterns"
-msgstr "Modèles d'URL"
+msgstr "Les modèles d'URL"
 
 #: ../../appdev/webapp/guide.rst:41
 msgid ""
@@ -1057,10 +1057,10 @@ msgid ""
 "patterns as part of the webapp command line."
 msgstr ""
 "Les auteurs d'applications Web veulent souvent confiner la navigation au "
-"site cible. Autrement dit, le développeur veut contrôler les URLs qui "
-"peuvent être ouvertes dans l'application web (tous les autres URLs sont "
-"ouvertes dans le navigateur). Ceci est fait avec les modèles d'URL dans le "
-"cadre de la ligne de commande webapp."
+"site cible. Autrement dit, le développeur veut contrôler les URL qui peuvent "
+"être ouvertes dans l'application web (tous les autres URL sont ouvertes dans "
+"le navigateur). Ceci est fait avec les modèles d'URL dans le cadre de la "
+"ligne de commande webapp."
 
 #: ../../appdev/webapp/guide.rst:43
 msgid ""
@@ -1092,7 +1092,7 @@ msgid ""
 msgstr ""
 "Par défaut, il n' y a pas de confinement d'URL. Supposons que vous lanciez "
 "une application web sans modèle et seulement une URL de démarrage comme ceci "
-":::"
+":"
 
 #: ../../appdev/webapp/guide.rst:54
 msgid ""
@@ -1114,7 +1114,7 @@ msgstr ""
 
 #: ../../appdev/webapp/guide.rst:59
 msgid "Simple containment to the site"
-msgstr "Confinement simple au site"
+msgstr "Le confinement simple au site"
 
 #: ../../appdev/webapp/guide.rst:61
 msgid ""
@@ -1127,7 +1127,7 @@ msgstr ""
 "termes, si le site Web est www.ubuntu.com, il peut être utile de ne contenir "
 "des utilisateurs d'applications web que sur les sous-pages de "
 "www.ubuntu.com. Ceci est fait en ajoutant un modèle d'URL joker à la "
-"commande de lancement, comme suit :::"
+"commande de lancement, comme suit :"
 
 #: ../../appdev/webapp/guide.rst:67
 msgid "``--webappUrlPatterns=`` indicates a pattern is next"
@@ -1138,9 +1138,8 @@ msgid ""
 "http://www.ubuntu.com/* is the pattern The asterix is a wildcard that "
 "matches any valid sequence of trailing (right-most) characters in a URL"
 msgstr ""
-"http://www.ubuntu.com/* est le modèle.  L'astérisque est un caractère "
-"générique qui correspond à n'importe quelle séquence valide de caractères "
-"dans une URL"
+"http://www.ubuntu.com/* est le modèle.  L'astérisque est un joker qui "
+"correspond à n'importe quelle séquence valide de caractères dans une URL"
 
 #: ../../appdev/webapp/guide.rst:69
 msgid ""
@@ -1152,12 +1151,12 @@ msgid ""
 "corresponding URL in the browser."
 msgstr ""
 "Avec cette commande de lancement et ce modèle d'URL, l'utilisateur peut "
-"naviguer vers et ouvrir dans l'application web n'importe quelle URL qui "
-"commence par http://www.ubuntu.com/. Par exemple, ils peuvent cliquer sur le "
-"bouton Phone (http://www.ubuntu.com/phone) dans la bannière et il s'ouvre "
-"dans la webapplication, ou sur le bouton Tablet "
-"(http://www.ubuntu.com/tablet). Mais, en cliquant sur Developer, vous ouvrez "
-"l'URL correspondante dans le navigateur."
+"naviguer et ouvrir dans l'application web n'importe quelle URL qui commence "
+"par http://www.ubuntu.com/. Par exemple, ils peuvent cliquer sur le bouton "
+"Phone (http://www.ubuntu.com/phone) dans la bannière et il s'ouvre dans la "
+"webapplication, ou sur le bouton Tablet (http://www.ubuntu.com/tablet). "
+"Mais, en cliquant sur Developer, vous ouvrez l'URL correspondante dans le "
+"navigateur."
 
 #: ../../appdev/webapp/guide.rst:71
 msgid ""
@@ -1185,11 +1184,11 @@ msgstr ""
 "jokers. (Les liens vers d'autres sous-pages sont ouverts dans le navigateur.)"
 " Par exemple, ce qui suit permet d'accéder à www.ubuntu.com/desktop/features "
 "et www.ubuntu.com/phone/features sans permettre l'accès à www.ubuntu.com/"
-"desktop ou www.ubuntu.com/phone ::"
+"desktop ou www.ubuntu.com/phone :"
 
 #: ../../appdev/webapp/guide.rst:80
 msgid "Multiple patterns"
-msgstr "Modèles multiples"
+msgstr "Les modèles multiples"
 
 #: ../../appdev/webapp/guide.rst:82
 msgid ""
@@ -1199,15 +1198,15 @@ msgid ""
 msgstr ""
 "Vous pouvez utiliser plusieurs modèles en les séparant par une virgule. Par "
 "exemple, ce qui suit n'autorise l'accès qu'aux sites www.ubuntu.com/desktop/"
-"features et www.ubuntu.com/phone/features :::"
+"features et www.ubuntu.com/phone/features :"
 
 #: ../../appdev/webapp/guide.rst:86
 msgid ""
 "Tip: Multiple patterns are often necessary to achieve the intended "
 "containment behavior."
 msgstr ""
-"Conseil : Il est souvent nécessaire d'utiliser plusieurs modèles pour "
-"obtenir le comportement de confinement prévu."
+"Astuce : Il est souvent nécessaire d'utiliser plusieurs modèles pour obtenir "
+"le comportement de confinement prévu."
 
 #: ../../appdev/webapp/guide.rst:90
 msgid "Adding a specific subdomain"
@@ -1223,7 +1222,7 @@ msgstr ""
 "Beaucoup d'URL ont un ou plusieurs sous-domaines. (Par exemple, dans ce qui "
 "suit,\"déveloper\" est le sous-domaine: developer. ubuntu. com.) Vous pouvez "
 "autoriser l'accès à un seul sous-domaine (et à toutes ses sous-pages) avec "
-"un modèle comme celui-ci ::::"
+"un modèle comme celui-ci :"
 
 #: ../../appdev/webapp/guide.rst:96
 msgid ""
@@ -1233,7 +1232,7 @@ msgid ""
 msgstr ""
 "Cependant, on souhaite généralement que l'utilisateur puisse revenir à l'URL "
 "de départ (et ses sous-pages). Donc, si l'URL de départ est http://"
-"www.ubuntu.com, un second pattern est nécessaire ::::"
+"www.ubuntu.com, un second modèle est nécessaire :"
 
 #: ../../appdev/webapp/guide.rst:100
 msgid ""
@@ -1244,7 +1243,7 @@ msgid ""
 msgstr ""
 "En les conjuguant, voici un exemple qui commence sur http://www.ubuntu.com "
 "et permet de naviguer sur http://developer.ubuntu.com et les sous-pages et "
-"de revenir à http://www.ubuntu.com et les sous-pages :::"
+"de revenir à http://www.ubuntu.com et les sous-pages :"
 
 #: ../../appdev/webapp/guide.rst:105
 msgid "Adding subdomains with a wildcard"
@@ -1259,7 +1258,7 @@ msgstr ""
 "Certaines URL ont plusieurs sous-domaines. Par exemple, www.ubuntu.com a "
 "design.ubuntu. com, developer.ubuntu. com et plus encore. Vous pouvez "
 "ajouter l'accès à tous les sous-domaines avec un joker à l'emplacement du "
-"sous-domaine :::"
+"sous-domaine :"
 
 #: ../../appdev/webapp/guide.rst:111
 msgid ""
@@ -1286,7 +1285,7 @@ msgid ""
 msgstr ""
 "Parfois, un site utilise https pour certaines de ses URL. Voici un exemple "
 "qui autorise https et https comme accès au sein de l'application web à "
-"www.launchpad.net (et toutes les sous-pages en raison du joker) ::::"
+"www.launchpad.net (et toutes les sous-pages en raison du joker)  :"
 
 #: ../../appdev/webapp/guide.rst:120
 msgid ""
@@ -1295,12 +1294,12 @@ msgid ""
 "mark."
 msgstr ""
 "Note: le point d'interrogation en https? Cela signifie que le caractère "
-"précédent (le' s') est facultatif. Si https est toujours requis, omettez le "
+"précédent (le 's') est facultatif. Si https est toujours requis, omettez le "
 "point d'interrogation."
 
 #: ../../appdev/webapp/guide.rst:123
 msgid "Command line arguments"
-msgstr "Arguments de la ligne de commande"
+msgstr "Les arguments de la ligne de commande"
 
 #: ../../appdev/webapp/guide.rst:125
 msgid ""
@@ -1312,19 +1311,19 @@ msgstr ""
 
 #: ../../appdev/webapp/guide.rst:127
 msgid "See all help with:::"
-msgstr "Voir toute l'aide avec :::"
+msgstr "Voir toute l'aide avec :"
 
 #: ../../appdev/webapp/guide.rst:131
 msgid "Note: Only the following options apply to converged Ubuntu.::"
 msgstr ""
 "Remarque: seules les options suivantes s'appliquent à la convergence "
-"d'Ubuntu ::"
+"d'Ubuntu :"
 
 #: ../../appdev/webapp/guide.rst:145
 msgid "Chrome options (if none specified, no chrome is shown by default):::"
 msgstr ""
-"Options Chrome (si aucune option n'est spécifiée, aucune n'est affichée par "
-"défaut) :::"
+"Les options de Chrome (si aucune option n'est spécifiée, aucune n'est "
+"affichée par défaut) :"
 
 #: ../../appdev/webapp/guide.rst:150
 msgid ""
@@ -1336,7 +1335,7 @@ msgstr ""
 
 #: ../../appdev/webapp/guide.rst:153
 msgid "User-Agent string override"
-msgstr "Forcer la châine User-Agent"
+msgstr "Forcer la chaîne User-Agent"
 
 #: ../../appdev/webapp/guide.rst:155
 msgid ""
@@ -1355,7 +1354,7 @@ msgstr ""
 msgid "To change the string from the command line, use the following option:::"
 msgstr ""
 "Pour changer la chaîne de caractères depuis la ligne de commande, utilisez "
-"l'option suivante :::"
+"l'option suivante :"
 
 #: ../../appdev/webapp/guide.rst:162
 msgid "Browser data containment"
