@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-03 14:44-0600\n"
-"PO-Revision-Date: 2018-03-09 05:15+0000\n"
+"PO-Revision-Date: 2018-03-17 16:00+0000\n"
 "Last-Translator: Walter Garcia-Fontes <walter.garcia@upf.edu>\n"
 "Language-Team: Catalan <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-appdev/ca/>\n"
@@ -236,7 +236,7 @@ msgstr ""
 
 #: ../../appdev/index.rst:71
 msgid "Security and app isolation"
-msgstr ""
+msgstr "Seguretat i aïllament de les aplicacions"
 
 #: ../../appdev/index.rst:73
 msgid ""
@@ -248,88 +248,100 @@ msgid ""
 " policy groups are needed for the app or scope to function properly with "
 "an apparmor ``.json`` file."
 msgstr ""
+"Totes les aplicacions i tots els lents de l'Ubuntu estan confinats "
+"respectant el mecanisme de control d'accés AppArmor (vegeu `Confinament de "
+"les aplicacions <https://wiki.ubuntu.com/SecurityTeam/Specifications/Applicat"
+"ionConfinement#App_confinement_with_AppArmor>`_) , el que significa que sols "
+"tenen accés als seus propis recursos i estan aïllades d'altres aplicacions i "
+"parts del sistema. La persona desenvolupadora ha de declarar quins grups de "
+"política calen per a l'aplicació o per al lent per funcionar adequadament "
+"amb el fitxer ``.json``de l'apparmor."
 
 #: ../../appdev/index.rst:75
 msgid "Example ``apparmor.json`` file::"
-msgstr ""
+msgstr "Exemple de fitxer ``apparmor.json``::"
 
 #: ../../appdev/index.rst:87
 msgid "Non exhaustive policy groups:"
-msgstr ""
+msgstr "Grups de polítiques no exhaustius:"
 
 #: ../../appdev/index.rst:89
 msgid "accounts: Can use Online Accounts"
-msgstr ""
+msgstr "accounts: (comptes) pot fer servir comptes en línia"
 
 #: ../../appdev/index.rst:90
 msgid "audio: Can play audio"
-msgstr ""
+msgstr "audio: pot reproduir l'àudio"
 
 #: ../../appdev/index.rst:91
 msgid "camera: Can access the camera(s)"
-msgstr ""
+msgstr "camera: té acccés a la(les) càmera(càmeres)"
 
 #: ../../appdev/index.rst:92
 msgid "connectivity: Can access coarse network connectivity information"
 msgstr ""
+"connectivity: Pot accedir a la informació en brut de connectivitat de xarxa"
 
 #: ../../appdev/index.rst:93
 msgid "content_exchange: Can request/import data from other applications"
-msgstr ""
+msgstr "content_exchange: Pot demandar/importar dades d'altres aplicacions"
 
 #: ../../appdev/index.rst:94
 msgid "content_exchange_source: Can provide/export data to other applications"
 msgstr ""
+"content_exchange_source: Pot proveir/exportar dades a d'altres aplicacions"
 
 #: ../../appdev/index.rst:95
 msgid ""
 "keep-display-on: Can request keeping the screen on (available since "
 "15.04, OTA 5)"
 msgstr ""
+"keep-display-on: pot demandar que la pantalla es mantingui activa ("
+"disponible des de 15.04, OTA 5)"
 
 #: ../../appdev/index.rst:96
 msgid "location: Can access Location"
-msgstr ""
+msgstr "location: pot accedir la ubicació"
 
 #: ../../appdev/index.rst:97
 msgid "microphone: Can access the microphone"
-msgstr ""
+msgstr "microphone: pot accedir el micròfon"
 
 #: ../../appdev/index.rst:98
 msgid "networking: Can access the network"
-msgstr ""
+msgstr "networking: pot accedir la xarxa"
 
 #: ../../appdev/index.rst:99
 msgid "push-notification-client: Can use push notifications as a client"
-msgstr ""
+msgstr "push-notificaction-client: pot user les notificacions push com a client"
 
 #: ../../appdev/index.rst:100
 msgid "sensors: Can access the sensors"
-msgstr ""
+msgstr "sensors: pot accedir els sensors"
 
 #: ../../appdev/index.rst:101
 msgid "usermetrics: Can use UserMetrics to update the InfoGraphic"
-msgstr ""
+msgstr "usermetrics: pot usar l'UserMetrics per actualitzar la infografia"
 
 #: ../../appdev/index.rst:102
 msgid "video: Can play video"
-msgstr ""
+msgstr "video: pot reproduir vídeo"
 
 #: ../../appdev/index.rst:103
 msgid "webview: Can use the UbuntuWebview"
-msgstr ""
+msgstr "webview: put usar l'UbuntuWebview"
 
 #: ../../appdev/index.rst:107
 msgid "Ubuntu Touch platform"
-msgstr ""
+msgstr "Plataforma de l'Ubuntu Touch"
 
 #: ../../appdev/index.rst:109
 msgid "Platform key notes:"
-msgstr ""
+msgstr "Apunts clau de la plataforma:"
 
 #: ../../appdev/index.rst:112
 msgid "Content Hub"
-msgstr ""
+msgstr "Concentrador de contingut"
 
 #: ../../appdev/index.rst:112
 msgid ""
@@ -337,30 +349,38 @@ msgid ""
 "precise control over what can be imported, exported or shared with the "
 "world and other apps."
 msgstr ""
+"Cada aplicació pot exposar contingut fora del seu entorn tancat, donant a "
+"l'usuari un control precís sobre què es pot importar, exportar o compartir "
+"amb el món i altres aplicacions."
 
 #: ../../appdev/index.rst:115
 msgid "Push notifications"
-msgstr ""
+msgstr "Notificacions d'inserció"
 
 #: ../../appdev/index.rst:115
 msgid ""
 "By using a push server and a companion client, instantly serve users with"
 " the latest information from their network and apps."
 msgstr ""
+"Usant un servidor push (d'inserció) i un client company, oferiu "
+"instantàniament als usuaris l'última informació de les seves xarxes i "
+"aplicacions."
 
 #: ../../appdev/index.rst:118
 msgid "URL dispatcher"
-msgstr ""
+msgstr "Distribuïdor d'URL"
 
 #: ../../appdev/index.rst:118
 msgid ""
 "Help users navigate between your apps and drive their journey with the "
 "URL dispatcher."
 msgstr ""
+"Ajudeu els usuaris a navegar entre les vostres aplicacions i conduïu el seu "
+"recorregut amb un distribuïdor d'URL."
 
 #: ../../appdev/index.rst:122
 msgid "Online accounts"
-msgstr ""
+msgstr "Comptes en línia"
 
 #: ../../appdev/index.rst:121
 msgid ""
@@ -368,14 +388,20 @@ msgid ""
 "accounts API. Accounts added by the user on the device are registered in "
 "a centralized hub, allowing other apps to re-use them."
 msgstr ""
+"Simplifiqueu l'accés dels usuaris a serveis en línia mitjançant la "
+"integració a l'API de comptes en línia. Els comptes afegits per l'usuari al "
+"dispositiu es registren a un concentrador centralitzat, permetent que altres "
+"aplicacions els reutilitzin."
 
 #: ../../appdev/index.rst:124
 msgid "`Read the docs <https://docs.ubuntu.com/phone/en/platform/>`__"
 msgstr ""
+"`Llegiu els documents <https://docs.ubuntu.com/phone/en/platform/>`__\n"
+"Translation"
 
 #: ../../appdev/index.rst:131
 msgid "Getting started"
-msgstr ""
+msgstr "Inici"
 
 #: ../../appdev/index.rst:133
 msgid ""
@@ -387,6 +413,13 @@ msgid ""
 "looking at existing published app source code is a good way to learn: "
 "`see openstore <https://open-store.io>`_"
 msgstr ""
+"El `clickable <http://clickable.bhdouglass.com/en/latest/>`_ és un sistema "
+"de meta-compilació per a aplicacions  de l'Ubuntu Touch que us permet "
+"compilar, muntar, provar i publicar paquets `click`i proveeix diverses "
+"plantilles perquè us podeu iniciar amb el desenvolupament d'aplicacions UT. "
+"Actualment és la manera més fàcil i convenient de muntar paquets click per a "
+"l'Ubuntu Touch.  A més, mirant el codi font d'aplicacions que està publicat "
+"és una bona manera d'aprendre: `vegeu openstore <https://open-store.io>`_"
 
 #: ../../appdev/index.rst:138
 msgid "Ubuntu UI-Toolkit"
@@ -445,15 +478,15 @@ msgstr "Una col·lecció de recursos externs"
 
 #: ../../appdev/index.rst:174 ../../appdev/system-software.rst:2
 msgid "System Software"
-msgstr ""
+msgstr "Programari de sistema"
 
 #: ../../appdev/index.rst:176
 msgid "Working on system components"
-msgstr ""
+msgstr "Treball sobre els components del sistema"
 
 #: ../../appdev/index.rst:185 ../../appdev/webapp/index.rst:2
 msgid "Web applications"
-msgstr ""
+msgstr "Aplicacions web"
 
 #: ../../appdev/index.rst:187
 msgid ""
@@ -461,10 +494,14 @@ msgid ""
 "container. They are true apps that users install, see, launch and use. "
 "But their content is provided through URLs."
 msgstr ""
+"Les aplicacions web de l'Ubuntu són llocs allotjats a la web que es mostren "
+"a dins d'un contenidor d'aplicació Ubuntu. Són aplicacions genuïnes que els "
+"usuaris instal·len, llencen i usen. Però el seu contingut es proveeix "
+"mitjançant URL."
 
 #: ../../appdev/index.rst:198 ../../appdev/nativeapp/index.rst:2
 msgid "Native applications"
-msgstr ""
+msgstr "Aplicacions natives"
 
 #: ../../appdev/system-software.rst:4
 msgid ""
@@ -480,6 +517,18 @@ msgid ""
 "new packages from scratch; for this reason, this guide is mostly about "
 "recompiling an existing Ubports package."
 msgstr ""
+"En aquesta pàgina trobareu informació sobre com desenvolupar programari de "
+"sistema, incloent-hi com muntar-lo, compilar-lo de forma creuada i fer-lo "
+"disponible a d'altres usuaris. La major part del programari ja instal·lat al "
+"vostre dispositiu Ubports es distribueix a la imatge del dispositiu en forma "
+"d'un paquet Debian. Aquest format s'utilitza a diverses distribucions Linux ("
+"com ara Debian, Ubuntu, Mint) i hi ha disponible `un volum important de "
+"documentació <https://www.debian.org/doc/manuals/maint-guide/index.en.html>`"
+"__ en altres llocs sobre com treballar sobre ell, per això no el cobrirem "
+"aquí. Per una altra part, quasi sempre us trobareu amb la necessitat de "
+"modificar programari existent, més que desenvolupar paquets nous des de zero;"
+" per aquesta raó, aquesta guia és sobretot sobre recompilar un paquet "
+"Ubports existent."
 
 #: ../../appdev/system-software.rst:17
 msgid ""
@@ -490,10 +539,16 @@ msgid ""
 "<https://github.com/ubports/address-book-app>`__ (the Contacts "
 "application) as an example."
 msgstr ""
+"Hi ha principalment tres maneres de desenvolupar programari de sistema de "
+"l'Ubports: compilar-lo directament al dispositiu, compilar-lo de forma "
+"creuada o carregar el codi font a un PPA del Launchpad i deixar que el "
+"Launchpad el compili. Examinarem tots tres mètodes, i usarem l`address-book-"
+"app <https://github.com/ubports/address-book-app>`__ (l'aplicació de "
+"Contactes) com a exemple."
 
 #: ../../appdev/system-software.rst:25
 msgid "Building on the device itself"
-msgstr ""
+msgstr "Compilació al propi dispositiu"
 
 #: ../../appdev/system-software.rst:27
 msgid ""
@@ -507,6 +562,15 @@ msgid ""
 "(to clear it from all the development packages you installed), please "
 "read on."
 msgstr ""
+"Aquest és el sistema més ràpid i fàcil de desenvolupar petits canvis i "
+"provar-los a pràcticament temps real. Depenent dels recursos del vostre "
+"dispositiu, tanmateix, podria no ser possible seguir aquest camí: si no "
+"teniu suficient espai lliure al vostre sistema de fitxers arrel no podreu "
+"instal·lar totes les dependències de compilació del paquet; o, la memòria "
+"RAM del vostre dispositiu pot ser insuficient per al compilador. Suposant "
+"que teniu sort i no us trobeu amb aquestes restriccions, i que no us importa "
+"reinstal·lar el vostre dispositiu (per netejar tots els paquets de "
+"desenvolupament que heu instal·lat), si us plau continueu llegint."
 
 #: ../../appdev/system-software.rst:37
 msgid ""
@@ -514,6 +578,9 @@ msgid ""
 "install all the packages needed to rebuild the component you want to "
 "modify (the Contacts app, in this example):"
 msgstr ""
+"Podeu accedir amb ssh al dispositiu (via ``phable-shell``, per exemple) i a "
+"continuació instal·lar tots els paquets que calen per recompilar el "
+"component que voleu modificar (la aplicació Contactes, per exemple):"
 
 #: ../../appdev/system-software.rst:46
 msgid ""
@@ -522,10 +589,14 @@ msgid ""
 "app's source code in the device and later push your changes back into the"
 " repository:"
 msgstr ""
+"Això instal·larà uns quants paquets al rootfs del vostre dispositiu. "
+"Addicionalment, probablement voleu instal·lar ``git``per obtenir el codi "
+"font de la vostra aplicació al dispositiu i després tornar a pujar els "
+"vostres canvis al repositori:"
 
 #: ../../appdev/system-software.rst:57
 msgid "Now, you are ready to build the package:"
-msgstr ""
+msgstr "Ara ja podeu compilar el paquet:"
 
 #: ../../appdev/system-software.rst:63
 msgid ""
@@ -533,6 +604,9 @@ msgid ""
 " the list of generated packages, and it's those filenames you will need "
 "to pass to the next command:"
 msgstr ""
+"i finalment, instal·lar-lo. L'ordre ``dpkg-buildpackage`` imprimirà la "
+"llista de paquets generats, i aquests són els noms dels fitxers que haureu "
+"de passar a l'ordre següent:"
 
 #: ../../appdev/system-software.rst:71
 msgid ""
@@ -540,10 +614,13 @@ msgid ""
 "generally, you can skip all packages whose name ends with ``-doc`` or "
 "``dev``, since they don't contain code used by the device."
 msgstr ""
+"Noteu, tanmateix, que potser no us cal instal·lar tots els paquets: "
+"generalment, podeu saltar-vos tots els paquets els noms dels quals acaben en "
+"``-doc`` o ``dev``, atès que no contenen codi usat pel dispositiu."
 
 #: ../../appdev/system-software.rst:76
 msgid "Cross-building with crossbuilder"
-msgstr ""
+msgstr "Compilació creuada amb un compilador creuat"
 
 #: ../../appdev/system-software.rst:78
 msgid ""
@@ -552,10 +629,14 @@ msgid ""
 " call it \"host\" from now on) and not on the target device. It's also "
 "extremely fast and easy to use."
 msgstr ""
+"Aquesta és la manera recomanada de desenvolupar canvis no trivials, i és "
+"apropiada per a tots els dispositius perquè la compilació es fa al vostre PC "
+"d'escriptori (l'anomenarem «amfitrió» a partir d'ara) i no al dispositiu "
+"destí. A més a més és extremadament ràpid i fàcil d'usar."
 
 #: ../../appdev/system-software.rst:83
 msgid "Start with installing ``crossbuilder`` in your host:"
-msgstr ""
+msgstr "Comenceu instal·lant ``cross-builder``al vostre amfitrió:"
 
 #: ../../appdev/system-software.rst:89
 msgid ""
@@ -563,6 +644,9 @@ msgid ""
 "need to add its directory to your ``PATH`` environment variable, so that "
 "you can execute it from any directory:"
 msgstr ""
+"És un script d'intèrpret d'ordres, així que no us cal compilar-lo. Us acal "
+"en canvi afegir el seu directori a la vostra variable d'entorn ``PATH``, per "
+"poder-lo executar des de qualsevol directori:"
 
 #: ../../appdev/system-software.rst:99
 msgid ""
@@ -570,6 +654,8 @@ msgid ""
 "does everything for you; you just need to carefully follow its "
 "instructions:"
 msgstr ""
+"Després, us cal configurar l'LXD; afortunadament, el crossbuilder té una "
+"ordre que us ho fa tot; sols heu de seguir les seves instruccions amb cura:"
 
 #: ../../appdev/system-software.rst:107
 msgid ""
@@ -579,6 +665,11 @@ msgid ""
 "the source code of your project is (for example, ``~/src/git/address-"
 "book-app``) and launch it like this:"
 msgstr ""
+"Si aquest és el primer cop que heu usar l'LXD, potser heu de reiniciar "
+"l'amfitrió un cop s'ha completat tot. Un cop s'ha configurat l'LXD, l'ús del "
+"crossbuilder és completament senzill: simplement canvieu al directori on es "
+"troba el codi font del vostre projecte (per exemple, ``~/src/git/address-"
+"book-app``) i llenceu-lo de la següent manera:"
 
 #: ../../appdev/system-software.rst:118
 msgid ""
@@ -588,6 +679,11 @@ msgid ""
 "have no device connected to your PC, crossbuilder will assume ``16.04`` "
 "(Xenial).*"
 msgstr ""
+"*Nota: si el vostre dispositiu està connectat al PC, no us cal especificar "
+"el paràmetre ``--ubuntu=15.04`` perquè el crossbuilder determinarà la versió "
+"de l'Ubuntu adequada per sí mateix. Si no especifiqueu cap paràmetre i no "
+"teniu cap dispositiu connectat al vostre PC, el crossbuilder suposarà que és "
+"``16.04`` (Xenial).*"
 
 #: ../../appdev/system-software.rst:124
 msgid ""
@@ -599,6 +695,13 @@ msgid ""
 "dependencies) can take a few minutes, but will be executed only the first"
 " time you launch crossbuilder for a new package."
 msgstr ""
+"El Crossbuiler us ho farà tot: crearà el contenidor LXD, descarregarà la "
+"imatge de desenvolupament, instal·larà totes les dependències de "
+"desenvolupament del vostre paquet, realitzarà la compilació i finalment, si "
+"el vostre dispositiu està connectat a l'amfitrió, copiarà els paquets al "
+"destí i els instal·larà. Els primers dos passos (la creació de la imatge LXD "
+"i l'obtenció de les dependències) poden portar alguns minuts, però sols "
+"s'executaran el primer cop que llenceu el crossbuilder per a un nou paquet."
 
 #: ../../appdev/system-software.rst:132
 msgid ""
@@ -607,10 +710,15 @@ msgid ""
 " type the ``crossbuilder`` command, only the changed files will be "
 "rebuilt. This makes iterative development blazing fast."
 msgstr ""
+"Ara, cada cop que canvieu el codi font al vostre repositori git, els "
+"mateixos canvis estaran disponibles dins del contenidor, i la propera vegada "
+"que escriviu l'ordre ``crossbuiler``, sols es recompilaran els fitxers que "
+"han canviat. Això fa que el desenvolupament iteratiu sigui tremendament "
+"ràpid."
 
 #: ../../appdev/system-software.rst:138
 msgid "Unit tests"
-msgstr ""
+msgstr "Proves unitàries"
 
 #: ../../appdev/system-software.rst:140
 msgid ""
@@ -622,6 +730,15 @@ msgid ""
 "the container, so it should be possible to run unit tests inside the "
 "container. You can do that by getting a shell inside the container with"
 msgstr ""
+"El crossbuilder no executa proves unitàries de forma predeterminada; això és "
+"així tant per motius de rapidesa, com perquè el contenidor creat pel "
+"crossbuilder no se suposa que ha d'executar programes nadius (del destí); "
+"les eines de desenvolupament (qmake/cmake, make, gcc, etc.) s'executen totes "
+"a l'arquitectura de l'amfitrió, sense cap emulació (un altre cop, per motius "
+"de rapidesa). Tanmateix, l'emulació qemu està disponible a dins del "
+"contenidor, de manera que hauria de ser possible executar proves unitàries a "
+"dins del contenidor. Podeu fer això obtenint un intèrpret d'ordres dins del "
+"contenidor amb"
 
 #: ../../appdev/system-software.rst:152
 msgid ""
@@ -632,10 +749,16 @@ msgid ""
 " tests when working with crossbuilder, and run them only when not cross-"
 "compiling."
 msgstr ""
+"i després trobeu les proves unitàries i executeu-les. Tingueu present que "
+"l'emulació no és perfecta, així que és molt probable que les proves fallin "
+"tot i que haurien tingut èxit en altres casos, si s'executen en un entorn "
+"apropiat. Per aquesta raó, probablement és aconsellable no preocupar-se "
+"sobre les proves unitàries quan es treball amb el crossbuilder, i executar-"
+"les sols quan no s'estigui compilant de forma creuada."
 
 #: ../../appdev/system-software.rst:160
 msgid "Developing in the host architecture, deploying via PPA"
-msgstr ""
+msgstr "Desenvolupament a l'arquitectura de l'amfitrió, distribució via PPA"
 
 #: ../../appdev/system-software.rst:162
 msgid ""
@@ -647,6 +770,14 @@ msgid ""
 "working on your package (this could take some hours), this might or might"
 " not be a suitable way of device development."
 msgstr ""
+"Una altra manera de desenvolupar el programari de sistema és desenvolupar-lo "
+"localment al vostre ordinador de sobretaula, i després pujar el codi font a "
+"un PPA del Launchpad i compilar-lo aquí per a l'arquitectura armhf. Depenent "
+"de si la característica que esteu desenvolupant es pot provar raonablement a "
+"la vostra màquina local, i si podeu esperar que els compiladors del "
+"Launchpad comencin a treballar sobre el vostre paquet (això pot trigar "
+"algunes hores), això pot ser o no pot ser una manera apropiada de "
+"desenvolupar per a dispositius."
 
 #: ../../appdev/system-software.rst:170
 msgid ""
@@ -654,6 +785,9 @@ msgid ""
 "PPAs. So, if you target the current 15.04 Ubports devices, this method is"
 " not suitable for you.*"
 msgstr ""
+"*Nota: sobre el final de 2017, el Launchpad ha abandonat el suport per a PPA "
+"basats en vivid. Consegüentment, si el vostre objectiu són els dispositius "
+"actuals Ubports 15.04, aquest mètode no us és apropiat.*"
 
 #: ../../appdev/system-software.rst:174
 msgid ""
@@ -662,12 +796,17 @@ msgid ""
 "matching the base image of your device. You can get the Ubuntu image "
 "here:"
 msgstr ""
+"Comenceu obtenint el `VirtualBox <https://www.virtualbox.org/wiki/Downloads>`"
+"__ i una imatge de l'Ubuntu que correspongui amb la imatge de base del "
+"vostre dispositiu. Podeu obtenir la imatge de l'Ubuntu aquí:"
 
 #: ../../appdev/system-software.rst:179
 msgid ""
 "``16.04 (Xenial)``: http://releases.ubuntu.com/16.04/ubuntu-16.04.3"
 "-desktop-amd64.iso"
 msgstr ""
+"``16.04 (Xenial)``: http://releases.ubuntu.com/16.04/ubuntu-16.04.3-desktop-"
+"amd64.iso"
 
 #: ../../appdev/system-software.rst:182
 msgid ""
