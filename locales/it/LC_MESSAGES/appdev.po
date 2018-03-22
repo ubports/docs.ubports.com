@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-03 14:44-0600\n"
-"PO-Revision-Date: 2018-03-16 08:47+0000\n"
+"PO-Revision-Date: 2018-03-22 10:32+0000\n"
 "Last-Translator: rocco <roccofoti@gmail.com>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-appdev/it/>\n"
@@ -277,6 +277,7 @@ msgstr "camera: Può avere accesso alla(e) fotocamera(e)"
 #: ../../appdev/index.rst:92
 msgid "connectivity: Can access coarse network connectivity information"
 msgstr ""
+"connettività: può accedere a informazioni di connettività di rete ordinaria"
 
 #: ../../appdev/index.rst:93
 msgid "content_exchange: Can request/import data from other applications"
@@ -615,7 +616,7 @@ msgstr ""
 
 #: ../../appdev/system-software.rst:76
 msgid "Cross-building with crossbuilder"
-msgstr ""
+msgstr "Cross-building con crossbuilder"
 
 #: ../../appdev/system-software.rst:78
 msgid ""
@@ -624,10 +625,14 @@ msgid ""
 " call it \"host\" from now on) and not on the target device. It's also "
 "extremely fast and easy to use."
 msgstr ""
+"Questo è il modo consigliato per effettuare modifiche non banali, ed è "
+"adatto a tutti i dispositivi visto che la costruzione avviene su di un PC "
+"desktop (lo chiameremo \"host\" d'ora in poi) e non sul dispositivo di "
+"destinazione. Inoltre è estremamente veloce e facile da usare."
 
 #: ../../appdev/system-software.rst:83
 msgid "Start with installing ``crossbuilder`` in your host:"
-msgstr ""
+msgstr "Inizia installando ``crossbuilder`` sulla tua macchina:"
 
 #: ../../appdev/system-software.rst:89
 msgid ""
@@ -635,6 +640,9 @@ msgid ""
 "need to add its directory to your ``PATH`` environment variable, so that "
 "you can execute it from any directory:"
 msgstr ""
+"È uno script di shell, quindi non è necessario crearlo. Dovrai, invece, "
+"aggiungere la sua directory alla variabile d'ambiente `` PATH``, in modo che "
+"si possa eseguire da qualsiasi directory:"
 
 #: ../../appdev/system-software.rst:99
 msgid ""
@@ -642,6 +650,9 @@ msgid ""
 "does everything for you; you just need to carefully follow its "
 "instructions:"
 msgstr ""
+"Quindi, è necessario configurare LXD; fortunatamente, il crossbuilder ha un "
+"comando che fa tutto al posto tuo; devi solo seguire con attenzione le sue "
+"istruzioni:"
 
 #: ../../appdev/system-software.rst:107
 msgid ""
@@ -651,6 +662,11 @@ msgid ""
 "the source code of your project is (for example, ``~/src/git/address-"
 "book-app``) and launch it like this:"
 msgstr ""
+"Se è la prima volta che usi LXD, potrebbe essere necessario riavviare il tuo "
+"host una volta che tutto è stato completato. Dopo aver configurato LXD, "
+"l'utilizzo di Crossbuilder è relativamente semplice: basta spostarsi nella "
+"directory in cui si trova il codice sorgente del progetto (ad esempio, `` / "
+"src / git / address-book-app``) e lanciarlo in questo maniera:"
 
 #: ../../appdev/system-software.rst:118
 msgid ""
@@ -660,6 +676,11 @@ msgid ""
 "have no device connected to your PC, crossbuilder will assume ``16.04`` "
 "(Xenial).*"
 msgstr ""
+"* Nota: se il tuo dispositivo è collegato al PC, non devi specificare il "
+"parametro `` --ubuntu = 15.04`` perché crossbuilder riuscirà da solo a "
+"ricavare la versione corretta di Ubuntu. Se non si specifica alcun parametro "
+"e non si ha nessun dispositivo connesso al PC, il crossbuilder assumerà `` "
+"16.04`` (Xenial). *"
 
 #: ../../appdev/system-software.rst:124
 msgid ""
@@ -671,6 +692,13 @@ msgid ""
 "dependencies) can take a few minutes, but will be executed only the first"
 " time you launch crossbuilder for a new package."
 msgstr ""
+"Crossbuilder farà tutto a posto tuo: creerà il container LXD, scaricherà "
+"l'immagine di sviluppo, installerà tutte le dipendenze di compilazione dei "
+"pacchetti, eseguirà la compilazione e infine, se il tuo dispositivo è "
+"connesso all'host, copierà i pacchetti sul target e li installerà. I primi "
+"due passaggi (creare l'immagine LXD e ottenere le dipendenze) potranno "
+"richiedere un pò di tempo, ma verranno eseguiti solo la prima volta che si "
+"avvia il crossbuilder per un nuovo pacchetto."
 
 #: ../../appdev/system-software.rst:132
 msgid ""
@@ -679,10 +707,14 @@ msgid ""
 " type the ``crossbuilder`` command, only the changed files will be "
 "rebuilt. This makes iterative development blazing fast."
 msgstr ""
+"Ora, ogni volta che cambi il codice sorgente nel tuo repository git, le "
+"stesse modifiche saranno disponibili all'interno del contenitore, e la volta "
+"successiva che digiterai il comando `` crossbuilder``, verranno ricostruiti "
+"solo i file modificati. Ciò rende lo sviluppo iterativo molto veloce."
 
 #: ../../appdev/system-software.rst:138
 msgid "Unit tests"
-msgstr ""
+msgstr "Test unit"
 
 #: ../../appdev/system-software.rst:140
 msgid ""
@@ -694,6 +726,14 @@ msgid ""
 "the container, so it should be possible to run unit tests inside the "
 "container. You can do that by getting a shell inside the container with"
 msgstr ""
+"Di default il crossbuilder non esegue i test unit; questo sia per ragioni di "
+"velocità, sia perché il container creato da crossbuilder non è pensato per "
+"eseguire eseguibili nativi (target): gli strumenti di sviluppo (qmake / "
+"cmake, make, gcc, ecc.) sono tutti eseguiti nell'architettura host, senza "
+"emulazione (sempre per ragioni di velocità). L'emulazione qemu, tuttavia, è "
+"disponibile all'interno del container, quindi dovrebbe essere possibile "
+"eseguire test unit all'interno del container stesso. Puoi farlo tramite la "
+"shell all'interno del container con"
 
 #: ../../appdev/system-software.rst:152
 msgid ""
@@ -704,10 +744,16 @@ msgid ""
 " tests when working with crossbuilder, and run them only when not cross-"
 "compiling."
 msgstr ""
+"e poi trova gli unit test e li esegue. Tieni presente che l'emulazione non è "
+"perfetta, quindi ci sono buone probabilità che i test falliscano anche nel "
+"caso in cui si trovassero in un ambiente adeguato. Per questo motivo, quando "
+"si lavora con il crossbuilder, è probabilmente più saggio non preoccuparsi "
+"degli unit test  ed è meglio eseguirli solo quando non si esegue la "
+"compilazione incrociata."
 
 #: ../../appdev/system-software.rst:160
 msgid "Developing in the host architecture, deploying via PPA"
-msgstr ""
+msgstr "Sviluppo nell'architettura host, distribuzione tramite PPA"
 
 #: ../../appdev/system-software.rst:162
 msgid ""
@@ -726,6 +772,9 @@ msgid ""
 "PPAs. So, if you target the current 15.04 Ubports devices, this method is"
 " not suitable for you.*"
 msgstr ""
+"* Nota: a partire dalla fine del 2017, Launchpad ha abbandonato il supporto "
+"per PPA basate su vivid. Quindi, se scegli come target i dispositivi UBports "
+"15.04, questo metodo non è corretto. *"
 
 #: ../../appdev/system-software.rst:174
 msgid ""
@@ -734,12 +783,17 @@ msgid ""
 "matching the base image of your device. You can get the Ubuntu image "
 "here:"
 msgstr ""
+"Inizia scaricando `VirtualBox <https://www.virtualbox.org/wiki/Downloads>` "
+"__ e un'immagine di Ubuntu che corrisponda all'immagine di base del tuo "
+"dispositivo. Puoi ottenere l'immagine di Ubuntu qui:"
 
 #: ../../appdev/system-software.rst:179
 msgid ""
 "``16.04 (Xenial)``: http://releases.ubuntu.com/16.04/ubuntu-16.04.3"
 "-desktop-amd64.iso"
 msgstr ""
+"``16.04 (Xenial)``: http://releases.ubuntu.com/16.04/ubuntu-16.04.3-desktop-"
+"amd64.iso"
 
 #: ../../appdev/system-software.rst:182
 msgid ""
@@ -748,16 +802,22 @@ msgid ""
 "`Stable Phone Overlay PPA <https://launchpad.net/~ci-train-ppa-"
 "service/+archive/ubuntu/stable-phone-overlay>`__ like this:"
 msgstr ""
+"Avvia la tua macchina VirtualBox con l'immagine di Ubuntu che hai scaricato, "
+"e una volta completata l'installazione e ti trovi di fronte alterminale, "
+"aggiungi il `Stable Phone Overlay PPA <https://launchpad.net/~ci-train-ppa-"
+"service/+ archivio / ubuntu / stable-phone-overlay> `__ come questo:"
 
 #: ../../appdev/system-software.rst:194
 msgid ""
 "You can then install the development tools you need, as well as the build"
 " dependencies of the component you want to work on:"
 msgstr ""
+"È quindi possibile installare gli strumenti di sviluppo necessari, nonché le "
+"dipendenze di compilazione del componente su cui si desidera lavorare:"
 
 #: ../../appdev/system-software.rst:202
 msgid "and then build the package locally:"
-msgstr ""
+msgstr "e quindi creare il pacchetto localmente:"
 
 #: ../../appdev/system-software.rst:208
 msgid ""
@@ -770,6 +830,15 @@ msgid ""
 "needs access to phone hardware, that will obviously not work), until you "
 "are satisfied with the result."
 msgstr ""
+"Per aumentare la velocità di creazione del codice modifica l'opzione "
+"``parallel`` in base al numero di core del processore che hai reso "
+"disponibile a VirtualBox . Il comando precedente creerà il pacchetto ed "
+"eseguirà anche tutti gli unit test associati, è un modo facile (anche se non "
+"sufficiente!) perciò per verificare che le tue modifiche non interrompano la "
+"funzionalità esistente. Ora puoi quindi effettuare le tue modifiche e "
+"testarle localmente (sebbene, se il tuo componente ha bisogno di accedere "
+"all'hardware del telefono, ovviamente non funzionerà), finché non sarai "
+"soddisfatto del risultato."
 
 #: ../../appdev/system-software.rst:217
 msgid ""
@@ -785,6 +854,18 @@ msgid ""
 "\"ubdeveloper\" and the PPA is called \"myppa\", then the commands to "
 "push your changes to the PPA will be as follows:"
 msgstr ""
+"Una volta arrivato al punto in cui ritieni che le tue modifiche possano "
+"funzionare, puoi inserirle in un PPA, in modo che siano costruite per il tuo "
+"dispositivo Ubports in modo tale che tu (e altri utenti) sarai in grado di "
+"testarle. Innanzitutto, crea un PPA visitando https://launchpad.net"
+"/~/+activate-ppa; inserisci poi il nome e la descrizione e premi il pulsante "
+"Crea; nella pagina successiva seleziona il collegamento \"Modifica dettagli\""
+" nell'angolo in alto a destra. Successivamente puoi abilitare l'architettura "
+"del tuo telefono (con molta probabilità, è \"ARM ARMv7 Hard Float\"), "
+"disabilitare tutte le architetture che non ti interessano e quindi fare clic "
+"su \"Salva\". Supponendo che il tuo nome utente del Launchpad sia \""
+"ubdeveloper\" e che il PPA sia chiamato \"myppa\", i comandi per inviare le "
+"tue modifiche al PPA saranno i seguenti:"
 
 #: ../../appdev/system-software.rst:234
 msgid ""
@@ -796,6 +877,12 @@ msgid ""
 "`documentation in Launchpad "
 "<https://help.launchpad.net/Packaging/PPA/Uploading>`__."
 msgstr ""
+"il nome esatto del file `` .changes`` verrà stampato dal comando debuild "
+"verso la fine del suo output. Si noti che per il successo dell'upload è "
+"necessario avere una chiave GPG valida e deve essere `aggiunta a Launchpad "
+"<https://launchpad.net/~/+editpgpkeys>` __.  Se sei un novizio, ti "
+"consigliamo di leggere attentamente la `documentazione in Launchpad "
+"<https://help.launchpad.net/Packaging/PPA/Uploading>` __."
 
 #: ../../appdev/system-software.rst:242
 msgid ""
@@ -808,6 +895,13 @@ msgid ""
 "``phablet-shell`` to get access to your phone, and from there type the "
 "following commands:"
 msgstr ""
+"Dopo che il pacchetto è stato caricato, dovresti ricevere una e-mail dal "
+"launchpad informandoti che il caricamento è stato accettato oppure no; nel "
+"caso lo fosse, Launchpad proverà a creare il pacchetto sorgente per tutte le "
+"architetture supportate dal tuo PPA e, se avrà successo, pubblicherà i "
+"pacchetti risultanti. Ora quello che resta da fare è installare i pacchetti "
+"nel telefono: per farlo, puoi usare `` phablet-shell`` per accedere al tuo "
+"telefono, e da lì digitare i seguenti comandi:"
 
 #: ../../appdev/system-software.rst:257
 msgid ""
@@ -815,24 +909,30 @@ msgid ""
 "members, if you want them to test your changes before submitting them "
 "upstream for review."
 msgstr ""
+"Se vuoi che anche altri membri della comunità testino le modifiche da te "
+"effettuate, prima di inviarle per la revisione, puoi divulgare le istruzioni "
+"di installazione anche ad altri."
 
 #: ../../appdev/webapp/guide.rst:2 ../../appdev/webapp/index.rst:15
 msgid "Guide"
-msgstr ""
+msgstr "Guida"
 
 #: ../../appdev/webapp/guide.rst:5
 msgid "How the webapp fits into the shell"
-msgstr ""
+msgstr "Come la webapp si adatta nella shell"
 
 #: ../../appdev/webapp/guide.rst:7
 msgid ""
 "A web app displays in a webview inside a webapp-container that runs as an"
 " Ubuntu app in the Ubuntu/Unity shell."
 msgstr ""
+"Una app Web viene visualizzata in una vista Web all'interno di un "
+"contenitore che viene eseguito come app di Ubuntu nella shell di "
+"Ubuntu/Unity."
 
 #: ../../appdev/webapp/guide.rst:9
 msgid "Taking a closer look:"
-msgstr ""
+msgstr "Dando un'occhiata più da vicino:"
 
 #: ../../appdev/webapp/guide.rst:11
 msgid ""
@@ -842,34 +942,46 @@ msgid ""
 "runs and displays in the webapp-container. The webapp-container is the "
 "executable app runtime that is integrated with the Ubuntu/unity shell."
 msgstr ""
+"Al livello più interno, c'è un sito web che lo sviluppatore identifica "
+"attraverso l'URL. Il sito Web viene renderizzato e viene eseguito in una "
+"webview Oxide. Oxide è una webview Blink/Chrome personalizzata per Ubuntu. "
+"La webview di Oxide viene eseguita e visualizzata nel contenitore webapp. Il "
+"webapp-container è il runtime dell'app eseguibile integrato con la shell di "
+"Ubuntu/unity."
 
 #: ../../appdev/webapp/guide.rst:16
 msgid "Launching"
-msgstr ""
+msgstr "Lancio"
 
 #: ../../appdev/webapp/guide.rst:18
 msgid "You can launch a webapp from the terminal with:::"
-msgstr ""
+msgstr "Ė possibile eseguire una webapp dal terminale con:::"
 
 #: ../../appdev/webapp/guide.rst:22
 msgid "For example:::"
-msgstr ""
+msgstr "Per esempio:::"
 
 #: ../../appdev/webapp/guide.rst:26
 msgid ""
 "This simple form works, but almost every webapp also uses other features,"
 " such as URL containment with URL patterns as described below."
 msgstr ""
+"Questo semplice modulo funziona, ma quasi ogni webapp utilizza anche altre "
+"funzionalità, come il contenimento degli URL con pattern URL come descritto "
+"qui di seguito."
 
 #: ../../appdev/webapp/guide.rst:29
 msgid "User interface"
-msgstr ""
+msgstr "Interfaccia utente"
 
 #: ../../appdev/webapp/guide.rst:31
 msgid ""
 "A webapp generally fills the entire app screen space, without the need of"
 " the UI controls generally found on standard browsers."
 msgstr ""
+"Una webapp generalmente riempie l'intero spazio dello schermo dell'app, "
+"senza la necessità dei controlli dell'interfaccia utente presenti "
+"normalmente sui browser standard."
 
 #: ../../appdev/webapp/guide.rst:33
 msgid ""
@@ -877,22 +989,30 @@ msgid ""
 "Forward buttons, or a URL address bar. These are added as command line "
 "arguments:"
 msgstr ""
+"In alcuni casi i controlli di navigazione sono appropriati, come i pulsanti "
+"Indietro e Avanti o una barra degli indirizzi URL. Questi vengono aggiunti "
+"come argomenti della riga di comando:"
 
 #: ../../appdev/webapp/guide.rst:35
 msgid ""
 "``--enable-back-forward`` Enable the display of the back and forward "
 "buttons in the toolbar (at the bottom of the webapp window)"
 msgstr ""
+"`` --enable-back-forward`` Abilita la visualizzazione dei pulsanti back "
+"(indietro) e forward (avanti) nella barra degli strumenti (nella parte "
+"inferiore della finestra webapp)"
 
 #: ../../appdev/webapp/guide.rst:36
 msgid ""
 "``--enable-addressbar`` Enable the display of the address bar (at the "
 "bottom of the webapp window)"
 msgstr ""
+"`` --enable-address bar`` Abilita la visualizzazione della barra degli "
+"indirizzi (nella parte inferiore della finestra dell'app Web)"
 
 #: ../../appdev/webapp/guide.rst:39
 msgid "URL patterns"
-msgstr ""
+msgstr "Modelli di URL"
 
 #: ../../appdev/webapp/guide.rst:41
 msgid ""
@@ -901,12 +1021,18 @@ msgid ""
 "webapp (all other URls are opened in the browser). This is done with URL "
 "patterns as part of the webapp command line."
 msgstr ""
+"Gli autori di Webapp spesso vogliono contenere la navigazione nel sito Web "
+"di destinazione. Cioè, lo sviluppatore vuole controllare gli URL che possono "
+"essere aperti nella webapp (tutti gli altri URL sono aperti nel browser). "
+"Questo viene fatto con i pattern URL come parte della riga di comando webapp."
 
 #: ../../appdev/webapp/guide.rst:43
 msgid ""
 "However, many web apps use pages that are hosted over multiple sites or "
 "that use external resources and pages."
 msgstr ""
+"Tuttavia, molte app Web utilizzano pagine ospitate su più siti o che "
+"utilizzano risorse e pagine esterne."
 
 #: ../../appdev/webapp/guide.rst:45
 msgid ""
