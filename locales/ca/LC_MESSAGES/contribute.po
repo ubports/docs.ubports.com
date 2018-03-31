@@ -7,17 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-03 14:44-0600\n"
+"POT-Creation-Date: 2018-03-30 21:23-0500\n"
 "PO-Revision-Date: 2018-03-05 08:03+0000\n"
 "Last-Translator: Walter Garcia-Fontes <walter.garcia@upf.edu>\n"
-"Language-Team: Catalan <https://translate.ubports.com/projects/ubports-docs"
-"/documentation-contribute/ca/>\n"
 "Language: ca\n"
+"Language-Team: Catalan <https://translate.ubports.com/projects/ubports-"
+"docs/documentation-contribute/ca/>\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.3\n"
 
 #: ../../contribute/bugreporting.rst:2
@@ -338,11 +337,11 @@ msgstr ""
 " problemes amb l'estil, el format o els enllaços. Si no seguiu aquestes "
 "directriu, no acceptarem el vostre document."
 
-#: ../../contribute/documentation.rst:16
+#: ../../contribute/documentation.rst:15
 msgid "Title"
 msgstr "Títol"
 
-#: ../../contribute/documentation.rst:18
+#: ../../contribute/documentation.rst:17
 msgid ""
 "All pages must have a document title that will be shown in the table of "
 "contents (left sidebar) and at the top of the page. This title is "
@@ -352,11 +351,11 @@ msgstr ""
 "taula de continguts (barra lateral esquerra) i a la part superior de la "
 "pàgina. Aquest títol està subratllat per signes d'igual."
 
-#: ../../contribute/documentation.rst:20
+#: ../../contribute/documentation.rst:19
 msgid "Titles should be sentence cased rather than Title Cased. For example::"
 msgstr "Els títols haurien de basar-se en frases i no sols títols. Per exemple:"
 
-#: ../../contribute/documentation.rst:29
+#: ../../contribute/documentation.rst:28
 msgid ""
 "There isn't a single definition of title casing that everyone follows, "
 "but sentence casing is easy. This helps keep capitalization in the table "
@@ -366,11 +365,11 @@ msgstr ""
 "segueix, però fer títol amb frases és senzill. Això ajuda a mantenir les "
 "majúscules consistents a la taula de continguts."
 
-#: ../../contribute/documentation.rst:32
+#: ../../contribute/documentation.rst:31
 msgid "Table of contents"
 msgstr "Taula de continguts"
 
-#: ../../contribute/documentation.rst:34
+#: ../../contribute/documentation.rst:33
 msgid ""
 "People can't navigate to your new page if they can't find it. Neither can"
 " Sphinx. That's why you need to add new pages to Sphinx's table of "
@@ -380,7 +379,7 @@ msgstr ""
 "no pot l'Sphinx. És per això que heu d'afegir pàgines noves a la taula de"
 " continguts de l'Sphinx."
 
-#: ../../contribute/documentation.rst:36
+#: ../../contribute/documentation.rst:35
 msgid ""
 "You can do this by adding the page to the ``index.rst`` file in the same "
 "directory that you created it. For example, if you create a file called "
@@ -392,7 +391,7 @@ msgstr ""
 "«paginanova.rst», afegiríeu la línia marcada amb un signe de més gran (>)"
 " a l'índex més proper::"
 
-#: ../../contribute/documentation.rst:46
+#: ../../contribute/documentation.rst:45
 msgid ""
 "The order matters. If you would like your page to appear in a certain "
 "place in the table of contents, place it there. In the previous example, "
@@ -402,11 +401,11 @@ msgstr ""
 "determinat de la taula de continguts, ubiqueu-la allà. A l'exemple "
 "anterior, paginanova s'afegiria al final de la taula de continguts."
 
-#: ../../contribute/documentation.rst:49
+#: ../../contribute/documentation.rst:48
 msgid "Warnings"
 msgstr "Advertiments"
 
-#: ../../contribute/documentation.rst:51
+#: ../../contribute/documentation.rst:50
 msgid ""
 "Your edits must not introduce any warnings into the documentation build. "
 "If any warnings occur, the build will fail and your pull request will be "
@@ -423,11 +422,29 @@ msgstr ""
 "de sphinx-build amb el vostre error) si seguiu les nostres instruccions "
 "de compilació de sota."
 
-#: ../../contribute/documentation.rst:54
+#: ../../contribute/documentation.rst:53
+#, fuzzy
+msgid "Update translations"
+msgstr "Traduccions"
+
+#: ../../contribute/documentation.rst:55
+msgid ""
+"You must update the translation files to match your changes before you "
+"commit them. To do this, run ``update-translations.sh`` in this "
+"repository."
+msgstr ""
+
+#: ../../contribute/documentation.rst:58
 msgid "Contribution workflow"
 msgstr "Flux de treball de les contribucions"
 
-#: ../../contribute/documentation.rst:57
+#: ../../contribute/documentation.rst:60
+msgid ""
+"The following steps will help you to make a contribution to this "
+"documentation after you have written a document."
+msgstr ""
+
+#: ../../contribute/documentation.rst:63
 msgid ""
 "You will need a GitHub account to complete these steps. If you do not "
 "have one, click `here <https://github.com/join>`_ to begin the process of"
@@ -437,51 +454,12 @@ msgstr ""
 "teniu una, cliqueu `aquí <https://github.com/join>`_ per començar el "
 "procés de crear un compte."
 
-#: ../../contribute/documentation.rst:60
-msgid "Directly on GitHub"
-msgstr "Directament al GitHub"
-
-#: ../../contribute/documentation.rst:62
-msgid ""
-"Read the Docs and GitHub make it fairly simple to contribute to this "
-"documentation. This section will show you the basic workflow to get "
-"started by editing an existing page on GitHub"
-msgstr ""
-"Llegiu els documents i el GitHub ho fa força senzill per contribuir a "
-"aquesta documentació. Aquesta secció us mostrarà el flux bàsic de treball"
-" per començar a editar una pàgina existent al GitHub"
-
-#: ../../contribute/documentation.rst:65
-msgid "Find the page you would like to edit"
-msgstr "Trobeu la pàgina que us agradaria editar"
-
 #: ../../contribute/documentation.rst:66
-msgid "Click the \"Edit on GitHub\" link to the right of the title"
-msgstr "Cliqueu l'enllaç «Edita al GitHub» a la dreta del títol"
-
-#: ../../contribute/documentation.rst:67
-msgid "Make your changes to the document. Remember to write in ReStructuredText!"
-msgstr "Feu els canvis al document. Recordeu d'escriure amb el ReStructuredText!"
-
-#: ../../contribute/documentation.rst:68
-msgid "Propose your changes as a Pull Request."
-msgstr "Proposeu el vostres canvis amb una demanda de baixada (pull request)."
-
-#: ../../contribute/documentation.rst:70
-msgid ""
-"If there are any errors with your proposed changes, the documentation "
-"team will ask you to make some changes and resubmit. This is as simple as"
-" editing the file on GitHub from your fork of the repository."
-msgstr ""
-"Si hi ha cap error als canvis que heu proposat, l'equip de documentació "
-"us demanarà fer alguns canvis i tornar a enviar. Això és tan senzill com "
-"editar el fitxer al Github des de la vostra bifurcació del repositori."
-
-#: ../../contribute/documentation.rst:73
-msgid "Manually forking the repository"
+#, fuzzy
+msgid "Forking the repository"
 msgstr "Bifurcació manual del repositori"
 
-#: ../../contribute/documentation.rst:75
+#: ../../contribute/documentation.rst:68
 msgid ""
 "You can make more advanced edits to our documentation by forking "
 "`ubports/docs.ubports.com <https://github.com/ubports/docs.ubports.com>`_"
@@ -495,11 +473,12 @@ msgstr ""
 "guia del GitHub a  `bifurcació de projectes "
 "<https://guides.github.com/activities/forking/>`_."
 
-#: ../../contribute/documentation.rst:78
-msgid "Building this documentation locally"
+#: ../../contribute/documentation.rst:71
+#, fuzzy
+msgid "Building the documentation"
 msgstr "Compilació local d'aquesta documentació"
 
-#: ../../contribute/documentation.rst:80
+#: ../../contribute/documentation.rst:73
 msgid ""
 "If you'd like to build this documentation *before* sending a PR (which "
 "you should), follow these instructions on your *local copy* of your fork "
@@ -509,7 +488,8 @@ msgstr ""
 "baixada (cosa que hauríeu de fer), seguiu aquestes instruccions a la "
 "*còpia local* de la vostra bifurcació del repositori."
 
-#: ../../contribute/documentation.rst:82
+#: ../../contribute/documentation.rst:75
+#, fuzzy
 msgid ""
 "The documentation can be built by running ``./build.sh`` in the root of "
 "this repository. The script will also create a virtual build environment "
@@ -519,28 +499,84 @@ msgstr ""
 "d'aquest repositori. L'script crearà també un entorn virtual de "
 "compilació a ``~/ubportsdocsenv`` si no n'hi ha cap present."
 
-#: ../../contribute/documentation.rst:84
+#: ../../contribute/documentation.rst:77
+#, fuzzy
 msgid ""
-"If all went well, you can enter the ``_build`` directory and open "
+"If all went well, you can enter the ``_build/html`` directory and open "
 "``index.html`` to view the UBports documentation."
 msgstr ""
 "Si tot ha anat bé, podeu entrar el directori ``_build`` i obrir "
 "``index.html`` per veure la documentació de l'UBports."
 
-#: ../../contribute/documentation.rst:87
-msgid "Current TODOs"
-msgstr "PER FER actuals"
+#: ../../contribute/documentation.rst:79
+msgid ""
+"If you have trouble building the docs, the first thing to try is deleting"
+" the build environment. Run ``rm -r ~/ubportsdocsenv`` and try the build "
+"again. Depending on when you first used the build script, you may need to"
+" run the ``rm`` command with ``sudo``."
+msgstr ""
+
+#: ../../contribute/documentation.rst:81
+msgid ""
+"Remember to `update translations`_, then commit your changes and submit a"
+" pull request."
+msgstr ""
+
+#: ../../contribute/documentation.rst:84
+msgid "Alternative methods to contribute"
+msgstr ""
+
+#: ../../contribute/documentation.rst:87 ../../contribute/translations.rst:2
+msgid "Translations"
+msgstr "Traduccions"
 
 #: ../../contribute/documentation.rst:89
 msgid ""
+"You may find the components of this document to translate at `its project"
+" in UBports Weblate`_."
+msgstr ""
+
+#: ../../contribute/documentation.rst:92
+msgid "Writing documents not in RST format"
+msgstr ""
+
+#: ../../contribute/documentation.rst:94
+msgid ""
+"If you would like to write documents for UBports but are not comfortable "
+"writing ReStructuredText, please write it without formatting and post it "
+"on the `UBports Forum`_ in the relevant section (likely General). Someone"
+" will be able to help you revise your draft and write the required "
+"ReStructuredText."
+msgstr ""
+
+#: ../../contribute/documentation.rst:97
+msgid "Uncomfortable with Git"
+msgstr ""
+
+#: ../../contribute/documentation.rst:99
+msgid ""
+"If you've written a complete document in ReStructuredText but aren't "
+"comfortable using Git or GitHub, please post it on the `UBports Forum`_ "
+"in the relevant section (likely General). Someone will be able to help "
+"you revise your draft and submit it to this documentation."
+msgstr ""
+
+#: ../../contribute/documentation.rst:102
+msgid "Current TODOs"
+msgstr "PER FER actuals"
+
+#: ../../contribute/documentation.rst:104
+#, fuzzy
+msgid ""
 "This page lists the TODOs that have been included in this documentation. "
-"If you know how to fix one, please send us a PR to make it better!"
+"If you know how to fix one, please send us a Pull Request to make it "
+"better!"
 msgstr ""
 "Aquesta pàgina presenta una llista dels PER FER que s'han inclòs a "
 "aquesta documentació. Si sabeu com arreglar un PER FER, si us plau "
 "envieu-nos una demanda de baixada per fer-lo millor!"
 
-#: ../../contribute/documentation.rst:96
+#: ../../contribute/documentation.rst:111
 msgid "To create a todo, add this markup to your page::"
 msgstr "Per crear un per fer, afegiu aquest marcatge a la vostra pàgina::"
 
@@ -617,11 +653,12 @@ msgid ""
 "you can join our `telegram group <http://t.me/ubports_qa_team>`_."
 msgstr ""
 "Aquesta pàgina explica com ajudar a l'equip de control de qualitat de "
-"l'UBports, tant com a membre oficial o com a nou col·laborador. Si us plau "
-"llegiu també les guies  :doc:`seguiment de problemes </about/process/issue-"
-"tracking>` i :doc:`informació d'errors <bugreporting>` per entendre millor "
-"el flux de treball. Per a comunicació en temps real, podeu unir-vos al "
-"nostre `grup de telegram <http://t.me/ubports_qa_team>`_."
+"l'UBports, tant com a membre oficial o com a nou col·laborador. Si us "
+"plau llegiu també les guies  :doc:`seguiment de problemes </about/process"
+"/issue-tracking>` i :doc:`informació d'errors <bugreporting>` per "
+"entendre millor el flux de treball. Per a comunicació en temps real, "
+"podeu unir-vos al nostre `grup de telegram "
+"<http://t.me/ubports_qa_team>`_."
 
 #: ../../contribute/quality-assurance.rst:7
 msgid "Smoke testing"
@@ -636,12 +673,13 @@ msgid ""
 "It's usually run on all devices before a new release to make sure no new "
 "issues were introduced."
 msgstr ""
-"Per provar la funcionalitat bàsica del sistema operatiu, hem compilat `un "
-"conjunt de comprovacions estandarditzades  "
-"<https://nc.ubports.com/s/3RnAI7tYzB2PMXs>`_. Executeu aquests comprovacions "
-"al vostre dispositiu per :doc:`trobar i informar errors i regressions "
-"<bugreporting>`. Normalment s'executen a tots els dispositius abans d'un nou "
-"alliberament per assegurar que no s'han introduït nous problemes."
+"Per provar la funcionalitat bàsica del sistema operatiu, hem compilat `un"
+" conjunt de comprovacions estandarditzades  "
+"<https://nc.ubports.com/s/3RnAI7tYzB2PMXs>`_. Executeu aquests "
+"comprovacions al vostre dispositiu per :doc:`trobar i informar errors i "
+"regressions <bugreporting>`. Normalment s'executen a tots els dispositius"
+" abans d'un nou alliberament per assegurar que no s'han introduït nous "
+"problemes."
 
 #: ../../contribute/quality-assurance.rst:12
 msgid "Confirming bug reports"
@@ -746,10 +784,6 @@ msgid ""
 msgstr ""
 "Si ja s'ha reportat el nou problema en algun altre lloc, poseu-li "
 "l'etiqueta **duplicate** (duplicat) i tanqueu-lo."
-
-#: ../../contribute/translations.rst:2
-msgid "Translations"
-msgstr "Traduccions"
 
 #: ../../contribute/translations.rst:4
 msgid ""
@@ -1001,3 +1035,58 @@ msgstr ""
 #: ../../contribute/translations.rst:73
 msgid "Go to that link to learn what this exactly means."
 msgstr "Aneu a aquest enllaç per conèixer que significa exactament això."
+
+#~ msgid "Directly on GitHub"
+#~ msgstr "Directament al GitHub"
+
+#~ msgid ""
+#~ "Read the Docs and GitHub make it"
+#~ " fairly simple to contribute to this"
+#~ " documentation. This section will show "
+#~ "you the basic workflow to get "
+#~ "started by editing an existing page "
+#~ "on GitHub"
+#~ msgstr ""
+#~ "Llegiu els documents i el GitHub "
+#~ "ho fa força senzill per contribuir "
+#~ "a aquesta documentació. Aquesta secció "
+#~ "us mostrarà el flux bàsic de "
+#~ "treball per començar a editar una "
+#~ "pàgina existent al GitHub"
+
+#~ msgid "Find the page you would like to edit"
+#~ msgstr "Trobeu la pàgina que us agradaria editar"
+
+#~ msgid "Click the \"Edit on GitHub\" link to the right of the title"
+#~ msgstr "Cliqueu l'enllaç «Edita al GitHub» a la dreta del títol"
+
+#~ msgid ""
+#~ "Make your changes to the document. "
+#~ "Remember to write in ReStructuredText!"
+#~ msgstr ""
+#~ "Feu els canvis al document. Recordeu "
+#~ "d'escriure amb el ReStructuredText!"
+
+#~ msgid "Propose your changes as a Pull Request."
+#~ msgstr "Proposeu el vostres canvis amb una demanda de baixada (pull request)."
+
+#~ msgid ""
+#~ "If there are any errors with your"
+#~ " proposed changes, the documentation team"
+#~ " will ask you to make some "
+#~ "changes and resubmit. This is as "
+#~ "simple as editing the file on "
+#~ "GitHub from your fork of the "
+#~ "repository."
+#~ msgstr ""
+#~ "Si hi ha cap error als canvis "
+#~ "que heu proposat, l'equip de "
+#~ "documentació us demanarà fer alguns "
+#~ "canvis i tornar a enviar. Això és"
+#~ " tan senzill com editar el fitxer "
+#~ "al Github des de la vostra "
+#~ "bifurcació del repositori."
+
+#~ msgid "Remember to `update translations`_ before committing your changes."
+#~ msgstr ""
+

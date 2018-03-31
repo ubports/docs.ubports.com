@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-03 14:44-0600\n"
+"POT-Creation-Date: 2018-03-30 20:06-0500\n"
 "PO-Revision-Date: 2018-02-14 22:08+0000\n"
 "Last-Translator: Florian Leeber <flori@bin.org.in>\n"
 "Language: de\n"
@@ -17,7 +17,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.5.3\n"
+"Generated-By: Babel 2.5.1\n"
 
 #: ../../appdev/cookbook.rst:2
 msgid "App development cookbook"
@@ -1076,6 +1076,84 @@ msgid ""
 "support not covered here. Support for webapps on converged Ubuntu will "
 "continue to grow, and of course the future of Ubuntu is convergence, so "
 "stay tuned."
+msgstr ""
+
+#: ../../appdev/webapp/index.rst:26
+msgid "Quick start"
+msgstr ""
+
+#: ../../appdev/webapp/index.rst:28
+msgid ""
+"There are several tools to help you package and deploy your webapp to "
+"your device:"
+msgstr ""
+
+#: ../../appdev/webapp/index.rst:30
+msgid ""
+"`Webapp creator <https://open-store.io/app/webapp-creator.jujuyeh>`_ "
+"application available from the openstore"
+msgstr ""
+
+#: ../../appdev/webapp/index.rst:31
+#, fuzzy
+msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ CLI"
+msgstr "`Click Pakete <https://click.readthedocs.io/en/latest/>`__"
+
+#: ../../appdev/webapp/index.rst:35
+msgid "Debugging your webapp"
+msgstr ""
+
+#: ../../appdev/webapp/index.rst:37
+msgid "This guide give you some tips to help you debug your webapp."
+msgstr ""
+
+#: ../../appdev/webapp/webdebug.rst:2
+msgid "Debug web application"
+msgstr ""
+
+#: ../../appdev/webapp/webdebug.rst:4
+msgid ""
+"Most web-devs will probably want do most of their coding and debugging in"
+" the usual browser environment. The Ubuntu Touch browser is compliant "
+"with modern web standards, and most webapps will just work without "
+"further changes."
+msgstr ""
+
+#: ../../appdev/webapp/webdebug.rst:6
+msgid ""
+"For those (hopefully) rare cases where further debugging is needed, there"
+" are two ways to gain further information on the failure."
+msgstr ""
+
+#: ../../appdev/webapp/webdebug.rst:9
+msgid "Watch the logs"
+msgstr ""
+
+#: ../../appdev/webapp/webdebug.rst:11
+msgid ""
+"If you are comfortable in a CLI environment, most Javascript errors will "
+"leave an entry in the app log file::"
+msgstr ""
+
+#: ../../appdev/webapp/webdebug.rst:17
+msgid "Debugging in the browser"
+msgstr ""
+
+#: ../../appdev/webapp/webdebug.rst:20
+msgid ""
+"The default Ubuntu Touch browser is based on the Blink technology that is"
+" also used in Chrome/Chromium. By starting the browser in a special mode,"
+" you have access to the regular Chrome-style debugger."
+msgstr ""
+
+#: ../../appdev/webapp/webdebug.rst:22
+msgid "On your phone, start the browser in inspector mode:::"
+msgstr ""
+
+#: ../../appdev/webapp/webdebug.rst:26
+msgid ""
+"Now on your computer, launch Chrome/Chromium browser, and point address "
+"to ``http://YOUR_UT_IP_ADDRESS:9221``"
 msgstr ""
 
 #~ msgid "Using clickable for cordova and HTML-5 development"

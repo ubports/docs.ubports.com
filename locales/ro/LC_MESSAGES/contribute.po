@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-03 14:44-0600\n"
+"POT-Creation-Date: 2018-03-30 21:23-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -254,40 +254,40 @@ msgid ""
 "guidelines, we will not accept your document."
 msgstr ""
 
-#: ../../contribute/documentation.rst:16
+#: ../../contribute/documentation.rst:15
 msgid "Title"
 msgstr ""
 
-#: ../../contribute/documentation.rst:18
+#: ../../contribute/documentation.rst:17
 msgid ""
 "All pages must have a document title that will be shown in the table of "
 "contents (left sidebar) and at the top of the page. This title is "
 "underlined with equals signs."
 msgstr ""
 
-#: ../../contribute/documentation.rst:20
+#: ../../contribute/documentation.rst:19
 msgid "Titles should be sentence cased rather than Title Cased. For example::"
 msgstr ""
 
-#: ../../contribute/documentation.rst:29
+#: ../../contribute/documentation.rst:28
 msgid ""
 "There isn't a single definition of title casing that everyone follows, "
 "but sentence casing is easy. This helps keep capitalization in the table "
 "of contents consistent."
 msgstr ""
 
-#: ../../contribute/documentation.rst:32
+#: ../../contribute/documentation.rst:31
 msgid "Table of contents"
 msgstr ""
 
-#: ../../contribute/documentation.rst:34
+#: ../../contribute/documentation.rst:33
 msgid ""
 "People can't navigate to your new page if they can't find it. Neither can"
 " Sphinx. That's why you need to add new pages to Sphinx's table of "
 "contents."
 msgstr ""
 
-#: ../../contribute/documentation.rst:36
+#: ../../contribute/documentation.rst:35
 msgid ""
 "You can do this by adding the page to the ``index.rst`` file in the same "
 "directory that you created it. For example, if you create a file called "
@@ -295,18 +295,18 @@ msgid ""
 "nearest index::"
 msgstr ""
 
-#: ../../contribute/documentation.rst:46
+#: ../../contribute/documentation.rst:45
 msgid ""
 "The order matters. If you would like your page to appear in a certain "
 "place in the table of contents, place it there. In the previous example, "
 "newpage would be added to the end of this table of contents."
 msgstr ""
 
-#: ../../contribute/documentation.rst:49
+#: ../../contribute/documentation.rst:48
 msgid "Warnings"
 msgstr ""
 
-#: ../../contribute/documentation.rst:51
+#: ../../contribute/documentation.rst:50
 msgid ""
 "Your edits must not introduce any warnings into the documentation build. "
 "If any warnings occur, the build will fail and your pull request will be "
@@ -316,56 +316,39 @@ msgid ""
 "below."
 msgstr ""
 
-#: ../../contribute/documentation.rst:54
+#: ../../contribute/documentation.rst:53
+msgid "Update translations"
+msgstr ""
+
+#: ../../contribute/documentation.rst:55
+msgid ""
+"You must update the translation files to match your changes before you "
+"commit them. To do this, run ``update-translations.sh`` in this "
+"repository."
+msgstr ""
+
+#: ../../contribute/documentation.rst:58
 msgid "Contribution workflow"
 msgstr ""
 
-#: ../../contribute/documentation.rst:57
+#: ../../contribute/documentation.rst:60
+msgid ""
+"The following steps will help you to make a contribution to this "
+"documentation after you have written a document."
+msgstr ""
+
+#: ../../contribute/documentation.rst:63
 msgid ""
 "You will need a GitHub account to complete these steps. If you do not "
 "have one, click `here <https://github.com/join>`_ to begin the process of"
 " making an account."
 msgstr ""
 
-#: ../../contribute/documentation.rst:60
-msgid "Directly on GitHub"
-msgstr ""
-
-#: ../../contribute/documentation.rst:62
-msgid ""
-"Read the Docs and GitHub make it fairly simple to contribute to this "
-"documentation. This section will show you the basic workflow to get "
-"started by editing an existing page on GitHub"
-msgstr ""
-
-#: ../../contribute/documentation.rst:65
-msgid "Find the page you would like to edit"
-msgstr ""
-
 #: ../../contribute/documentation.rst:66
-msgid "Click the \"Edit on GitHub\" link to the right of the title"
-msgstr ""
-
-#: ../../contribute/documentation.rst:67
-msgid "Make your changes to the document. Remember to write in ReStructuredText!"
+msgid "Forking the repository"
 msgstr ""
 
 #: ../../contribute/documentation.rst:68
-msgid "Propose your changes as a Pull Request."
-msgstr ""
-
-#: ../../contribute/documentation.rst:70
-msgid ""
-"If there are any errors with your proposed changes, the documentation "
-"team will ask you to make some changes and resubmit. This is as simple as"
-" editing the file on GitHub from your fork of the repository."
-msgstr ""
-
-#: ../../contribute/documentation.rst:73
-msgid "Manually forking the repository"
-msgstr ""
-
-#: ../../contribute/documentation.rst:75
 msgid ""
 "You can make more advanced edits to our documentation by forking "
 "`ubports/docs.ubports.com <https://github.com/ubports/docs.ubports.com>`_"
@@ -374,41 +357,95 @@ msgid ""
 "<https://guides.github.com/activities/forking/>`_."
 msgstr ""
 
-#: ../../contribute/documentation.rst:78
-msgid "Building this documentation locally"
+#: ../../contribute/documentation.rst:71
+msgid "Building the documentation"
 msgstr ""
 
-#: ../../contribute/documentation.rst:80
+#: ../../contribute/documentation.rst:73
 msgid ""
 "If you'd like to build this documentation *before* sending a PR (which "
 "you should), follow these instructions on your *local copy* of your fork "
 "of the repository."
 msgstr ""
 
-#: ../../contribute/documentation.rst:82
+#: ../../contribute/documentation.rst:75
 msgid ""
 "The documentation can be built by running ``./build.sh`` in the root of "
 "this repository. The script will also create a virtual build environment "
 "in ``~/ubportsdocsenv`` if none is present."
 msgstr ""
 
-#: ../../contribute/documentation.rst:84
+#: ../../contribute/documentation.rst:77
 msgid ""
-"If all went well, you can enter the ``_build`` directory and open "
+"If all went well, you can enter the ``_build/html`` directory and open "
 "``index.html`` to view the UBports documentation."
 msgstr ""
 
-#: ../../contribute/documentation.rst:87
-msgid "Current TODOs"
+#: ../../contribute/documentation.rst:79
+msgid ""
+"If you have trouble building the docs, the first thing to try is deleting"
+" the build environment. Run ``rm -r ~/ubportsdocsenv`` and try the build "
+"again. Depending on when you first used the build script, you may need to"
+" run the ``rm`` command with ``sudo``."
+msgstr ""
+
+#: ../../contribute/documentation.rst:81
+msgid ""
+"Remember to `update translations`_, then commit your changes and submit a"
+" pull request."
+msgstr ""
+
+#: ../../contribute/documentation.rst:84
+msgid "Alternative methods to contribute"
+msgstr ""
+
+#: ../../contribute/documentation.rst:87 ../../contribute/translations.rst:2
+msgid "Translations"
 msgstr ""
 
 #: ../../contribute/documentation.rst:89
 msgid ""
-"This page lists the TODOs that have been included in this documentation. "
-"If you know how to fix one, please send us a PR to make it better!"
+"You may find the components of this document to translate at `its project"
+" in UBports Weblate`_."
 msgstr ""
 
-#: ../../contribute/documentation.rst:96
+#: ../../contribute/documentation.rst:92
+msgid "Writing documents not in RST format"
+msgstr ""
+
+#: ../../contribute/documentation.rst:94
+msgid ""
+"If you would like to write documents for UBports but are not comfortable "
+"writing ReStructuredText, please write it without formatting and post it "
+"on the `UBports Forum`_ in the relevant section (likely General). Someone"
+" will be able to help you revise your draft and write the required "
+"ReStructuredText."
+msgstr ""
+
+#: ../../contribute/documentation.rst:97
+msgid "Uncomfortable with Git"
+msgstr ""
+
+#: ../../contribute/documentation.rst:99
+msgid ""
+"If you've written a complete document in ReStructuredText but aren't "
+"comfortable using Git or GitHub, please post it on the `UBports Forum`_ "
+"in the relevant section (likely General). Someone will be able to help "
+"you revise your draft and submit it to this documentation."
+msgstr ""
+
+#: ../../contribute/documentation.rst:102
+msgid "Current TODOs"
+msgstr ""
+
+#: ../../contribute/documentation.rst:104
+msgid ""
+"This page lists the TODOs that have been included in this documentation. "
+"If you know how to fix one, please send us a Pull Request to make it "
+"better!"
+msgstr ""
+
+#: ../../contribute/documentation.rst:111
 msgid "To create a todo, add this markup to your page::"
 msgstr ""
 
@@ -550,10 +587,6 @@ msgstr ""
 msgid ""
 "If the new issue has already been reported elsewhere, label it "
 "**duplicate** and close it."
-msgstr ""
-
-#: ../../contribute/translations.rst:2
-msgid "Translations"
 msgstr ""
 
 #: ../../contribute/translations.rst:4
@@ -808,5 +841,84 @@ msgstr ""
 #~ "tracking </about/process/issue-tracking>` and "
 #~ ":doc:`bugreporting <bugreporting>` guides to "
 #~ "better understand the workflow."
+#~ msgstr ""
+
+#~ msgid "Directly on GitHub"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Read the Docs and GitHub make it"
+#~ " fairly simple to contribute to this"
+#~ " documentation. This section will show "
+#~ "you the basic workflow to get "
+#~ "started by editing an existing page "
+#~ "on GitHub"
+#~ msgstr ""
+
+#~ msgid "Find the page you would like to edit"
+#~ msgstr ""
+
+#~ msgid "Click the \"Edit on GitHub\" link to the right of the title"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Make your changes to the document. "
+#~ "Remember to write in ReStructuredText!"
+#~ msgstr ""
+
+#~ msgid "Propose your changes as a Pull Request."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If there are any errors with your"
+#~ " proposed changes, the documentation team"
+#~ " will ask you to make some "
+#~ "changes and resubmit. This is as "
+#~ "simple as editing the file on "
+#~ "GitHub from your fork of the "
+#~ "repository."
+#~ msgstr ""
+
+#~ msgid "Manually forking the repository"
+#~ msgstr ""
+
+#~ msgid "Building this documentation locally"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The documentation can be built by "
+#~ "running ``./build.sh`` in the root of"
+#~ " this repository. The script will "
+#~ "also create a virtual build environment"
+#~ " in ``~/ubportsdocsenv`` if none is "
+#~ "present."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The documentation can be built by "
+#~ "running ``./build.sh`` in the root of"
+#~ " this repository. The script will "
+#~ "also create a virtual build environment"
+#~ " in ``~/ubportsdocsenv`` if none is "
+#~ "present. It will also `update "
+#~ "translations`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If all went well, you can enter"
+#~ " the ``_build`` directory and open "
+#~ "``index.html`` to view the UBports "
+#~ "documentation."
+#~ msgstr ""
+
+#~ msgid "Remember to `update translations`_ before committing your changes."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This page lists the TODOs that "
+#~ "have been included in this "
+#~ "documentation. If you know how to "
+#~ "fix one, please send us a PR "
+#~ "to make it better!"
 #~ msgstr ""
 
