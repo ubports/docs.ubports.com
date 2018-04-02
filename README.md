@@ -2,9 +2,9 @@
 
 This is the repository for the UBports documentation website served at [docs.ubports.com](https://docs.ubports.com).
 
-### Contributing to this documentation
+### Contribution guidelines
 
-You can find ways to contribute [here](https://docs.ubports.com/en/latest/contribute/documentation.html).
+You can find ways to contribute [here](https://docs.ubports.com/en/latest/contribute/documentation.html). Please follow all of the guidelines on that page, else your contribution will not be accepted.
 
 ### Build instructions
 

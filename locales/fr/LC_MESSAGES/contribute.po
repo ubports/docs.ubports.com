@@ -7,18 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-08 19:46-0600\n"
-"PO-Revision-Date: 2018-02-21 18:12+0000\n"
+"POT-Creation-Date: 2018-03-30 21:23-0500\n"
+"PO-Revision-Date: 2018-03-04 17:26+0000\n"
 "Last-Translator: Anne Onyme <anneonyme017@openmailbox.org>\n"
-"Language-Team: French <https://translate.ubports.com/projects/ubports-docs"
-"/documentation-contribute/fr/>\n"
 "Language: fr\n"
+"Language-Team: French <https://translate.ubports.com/projects/ubports-"
+"docs/documentation-contribute/fr/>\n"
+"Plural-Forms: nplurals=2; plural=n > 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.15\n"
-"Generated-By: Babel 2.5.1\n"
+"Generated-By: Babel 2.5.3\n"
 
 #: ../../contribute/bugreporting.rst:2
 msgid "Bug reporting"
@@ -32,9 +31,9 @@ msgid ""
 "will specify where and how to do that."
 msgstr ""
 "Cette page contient des informations pour vous aider à nous aider en "
-"signalant un problème sur Ubuntu Touch. Il ne contient PAS d'informations "
-"sur le signalement des problèmes pour les applications, la plupart du temps "
-"leur description dans l'OpenStore indiquera où et comment le faire."
+"signalant un problème sur Ubuntu Touch. Il ne contient PAS d'informations"
+" sur le signalement des problèmes pour les applications, la plupart du "
+"temps leur description dans l'OpenStore indiquera où et comment le faire."
 
 #: ../../contribute/bugreporting.rst:7
 msgid "Get the latest Ubuntu Touch"
@@ -49,13 +48,13 @@ msgid ""
 "guide. If not, do a little dance! The bug has already been fixed and you "
 "can continue using Ubuntu Touch."
 msgstr ""
-"Cela peut sembler évident, mais vous pouvez facilement passer à côté. Allez "
-"dans (Paramètres - Mises à jour) et vérifiez si votre appareil affiche des "
-"mises à jour pour Ubuntu. Si ce n'est pas le cas, continuez à parcourir ce "
-"guide. Si c'est le cas, mettez à jour votre appareil et essayez de "
-"reproduire le problème. Si cela se produit encore, continuez à parcourir ce "
-"guide. Sinon, réjouissez-vous ! Le problème a déjà été corrigé et vous "
-"pouvez continuer à utiliser Ubuntu Touch."
+"Cela peut sembler évident, mais vous pouvez facilement passer à côté. "
+"Allez dans (Paramètres - Mises à jour) et vérifiez si votre appareil "
+"affiche des mises à jour pour Ubuntu. Si ce n'est pas le cas, continuez à"
+" parcourir ce guide. Si c'est le cas, mettez à jour votre appareil et "
+"essayez de reproduire le problème. Si cela se produit encore, continuez à"
+" parcourir ce guide. Sinon, réjouissez-vous ! Le problème a déjà été "
+"corrigé et vous pouvez continuer à utiliser Ubuntu Touch."
 
 #: ../../contribute/bugreporting.rst:12
 msgid "Check if the bug is already reported"
@@ -76,12 +75,12 @@ msgid ""
 "searching, use a few words that describe what you're seeing. For example,"
 " \"Lock screen transparent\" or \"Lock screen shows activities\"."
 msgstr ""
-"Tout d'abord, vous devez vous assurez que le problème que vous essayez de "
-"faire remonter n'a pas déjà été signalé. Cherchez dans la liste des "
-"problèmes rapportés. Lors de la recherche, utilisez quelques mots en Anglais "
-"qui décrivent ce que vous voyez. Par exemple, « Lock screen transparent » ("
-"Écran d'accueil transparent) ou « Lock screen shows activities » (L'écran de "
-"verrouillage affiche des activités)."
+"Tout d'abord, vous devez vous assurez que le problème que vous essayez de"
+" faire remonter n'a pas déjà été signalé. Cherchez dans la liste des "
+"problèmes rapportés. Lors de la recherche, utilisez quelques mots en "
+"Anglais qui décrivent ce que vous voyez. Par exemple, « Lock screen "
+"transparent » (Écran d'accueil transparent) ou « Lock screen shows "
+"activities » (L'écran de verrouillage affiche des activités)."
 
 #: ../../contribute/bugreporting.rst:18
 msgid ""
@@ -90,9 +89,9 @@ msgid ""
 " up) reaction. This shows that you are also experiencing the bug."
 msgstr ""
 "Si vous constatez qu'un rapport existe déjà sur le sujet, cliquez sur le "
-"bouton « Ajouter votre réaction » (il ressemble à un visage qui sourit) et "
-"sélectionnez la réaction +1 (pouce vers le haut). Cela montre que vous "
-"rencontrez également ce problème."
+"bouton « Ajouter votre réaction » (il ressemble à un visage qui sourit) "
+"et sélectionnez la réaction +1 (pouce vers le haut). Cela montre que vous"
+" rencontrez également ce problème."
 
 #: ../../contribute/bugreporting.rst:20
 msgid ""
@@ -116,9 +115,9 @@ msgid ""
 "<https://youtu.be/nn2FB1P_Mn8?t=10s>`_..."
 msgstr ""
 "Ensuite, déterminez comment reproduire le problème que vous avez trouvé. "
-"Documentez en détail les étapes exactes que vous avez suivies pour trouver "
-"le problème. Puis redémarrez votre appareil et réitérez ces étapes. Si le "
-"problème persiste, passez à l'étape suivante. `Sinon "
+"Documentez en détail les étapes exactes que vous avez suivies pour "
+"trouver le problème. Puis redémarrez votre appareil et réitérez ces "
+"étapes. Si le problème persiste, passez à l'étape suivante. `Sinon "
 "<https://youtu.be/nn2FB1P_Mn8?t=10s>`_..."
 
 #: ../../contribute/bugreporting.rst:28
@@ -131,10 +130,10 @@ msgid ""
 "general, /var/log/dmesg and the output of /android/system/bin/logcat are "
 "helpful when resolving an issue. I'll show you how to get these logs."
 msgstr ""
-"Nous apprécions d'obtenir autant de bons rapports que possible lorsque vous "
-"nous signalez un problème. En général, /var/log/dmesg et la sortie de "
-"/android/system/bin/logcat sont utiles pour résoudre un problème. Je vais "
-"vous montrer comment obtenir ces rapports."
+"Nous apprécions d'obtenir autant de bons rapports que possible lorsque "
+"vous nous signalez un problème. En général, /var/log/dmesg et la sortie "
+"de /android/system/bin/logcat sont utiles pour résoudre un problème. Je "
+"vais vous montrer comment obtenir ces rapports."
 
 #: ../../contribute/bugreporting.rst:32
 msgid ""
@@ -157,8 +156,8 @@ msgid ""
 "The **dmesg** (*display message* or *driver message*) command displays "
 "debug messages from the kernel."
 msgstr ""
-"La commande  **dmesg** (*display message* ou *driver message*) affiche les "
-"messages de débogage du noyau."
+"La commande  **dmesg** (*display message* ou *driver message*) affiche "
+"les messages de débogage du noyau."
 
 #: ../../contribute/bugreporting.rst:41 ../../contribute/bugreporting.rst:54
 msgid ""
@@ -170,8 +169,7 @@ msgstr ""
 
 #: ../../contribute/bugreporting.rst:42 ../../contribute/bugreporting.rst:52
 msgid "cd to a folder where you're able to write the log"
-msgstr ""
-"Allez dans un dossier (cd) où vous avez le droit d'enregistrer le rapport"
+msgstr "Allez dans un dossier (cd) où vous avez le droit d'enregistrer le rapport"
 
 #: ../../contribute/bugreporting.rst:43
 msgid "Run the command: `adb shell dmesg > UTdmesg.txt`"
@@ -182,8 +180,8 @@ msgid ""
 "This log should now be located at UTdmesg.txt under your working "
 "directory, ready for uploading later."
 msgstr ""
-"Ce rapport devrait maintenant être apparaître sous le nom d'UTdmesg.txt dans "
-"votre répertoire de travail, prêt à un téléversement ultérieur."
+"Ce rapport devrait maintenant être apparaître sous le nom d'UTdmesg.txt "
+"dans votre répertoire de travail, prêt à un téléversement ultérieur."
 
 #: ../../contribute/bugreporting.rst:48
 msgid "logcat"
@@ -208,8 +206,8 @@ msgid ""
 "This log will be located at UTlogcat.txt in your current working "
 "directory, so you'll be able to upload it later."
 msgstr ""
-"Ce rapport apparaîtra sous le nom d'UTlogcat.txt dans votre répertoire de "
-"travail actuel. Vous pourrez donc le téléverser plus tard."
+"Ce rapport apparaîtra sous le nom d'UTlogcat.txt dans votre répertoire de"
+" travail actuel. Vous pourrez donc le téléverser plus tard."
 
 #: ../../contribute/bugreporting.rst:59
 msgid "Making the bug report"
@@ -220,8 +218,8 @@ msgid ""
 "Now it's time for what you've been waiting for, the bug report itself! "
 "Bug reports need to be filed in English."
 msgstr ""
-"Le moment que vous attendiez tant est désormais arrivé, le signalement du "
-"problème en lui-même ! Les rapports de problèmes doivent être écrits en "
+"Le moment que vous attendiez tant est désormais arrivé, le signalement du"
+" problème en lui-même ! Les rapports de problèmes doivent être écrits en "
 "Anglais."
 
 #: ../../contribute/bugreporting.rst:63
@@ -238,8 +236,8 @@ msgid ""
 "Next, you'll need to name your bug. Pick a name that says what's "
 "happening, but don't be too wordy. Four to eight words should be enough."
 msgstr ""
-"Puis, donnez un nom à votre problème. Choisissez un nom qui décrit ce qui se "
-"passe, mais restez succinct. Quatre à huit mots devraient suffire."
+"Puis, donnez un nom à votre problème. Choisissez un nom qui décrit ce qui"
+" se passe, mais restez succinct. Quatre à huit mots devraient suffire."
 
 #: ../../contribute/bugreporting.rst:67
 msgid "Now, write your bug report. A good bug report includes the following:"
@@ -256,8 +254,8 @@ msgid ""
 "What I expected to happen: A synopsis of what should have happened, if "
 "there wasn't an error"
 msgstr ""
-"Ce à quoi je m'attendais : un résumé de ce qui aurait dû se passer si aucune "
-"erreur ne s'était produite"
+"Ce à quoi je m'attendais : un résumé de ce qui aurait dû se passer si "
+"aucune erreur ne s'était produite"
 
 #: ../../contribute/bugreporting.rst:71
 msgid "Steps to reproduce: You wrote these down earlier, right?"
@@ -270,8 +268,8 @@ msgid ""
 "Logs: Attach your logs by clicking and dragging them into your GitHub "
 "issue."
 msgstr ""
-"Les rapports : joignez vos rapports en les glissant / déposant dans votre "
-"problème ouvert sous Github."
+"Les rapports : joignez vos rapports en les glissant / déposant dans votre"
+" problème ouvert sous Github."
 
 #: ../../contribute/bugreporting.rst:73
 msgid ""
@@ -279,10 +277,10 @@ msgid ""
 "\"OS\" line of this screen. Also include the release channel that you "
 "used when you installed Ubuntu on this phone."
 msgstr ""
-"La version du logiciel : allez dans (Paramètres - À propos) et listez ce qui "
-"apparaît dans la ligne « Système d'exploitation » de cet écran ; incluez "
-"également le canal de distribution que vous avez utilisé lorsque vous avez "
-"installé Ubuntu sur cet appareil."
+"La version du logiciel : allez dans (Paramètres - À propos) et listez ce "
+"qui apparaît dans la ligne « Système d'exploitation » de cet écran ; "
+"incluez également le canal de distribution que vous avez utilisé lorsque "
+"vous avez installé Ubuntu sur cet appareil."
 
 #: ../../contribute/bugreporting.rst:75
 msgid ""
@@ -291,11 +289,11 @@ msgid ""
 "the issue on in the description so a moderator can easily add the correct"
 " tags later."
 msgstr ""
-"Une fois que vous avez terminé cela, postez le problème. Vous ne pouvez pas "
-"ajouter vous-même de mots-clés, veillez donc à mentionner le nom de "
+"Une fois que vous avez terminé cela, postez le problème. Vous ne pouvez "
+"pas ajouter vous-même de mots-clés, veillez donc à mentionner le nom de "
 "l'appareil sur lequel vous rencontrez le problème dans la description de "
-"manière à ce qu'un modérateur puisse facilement ajouter le bon mot-clé plus "
-"tard."
+"manière à ce qu'un modérateur puisse facilement ajouter le bon mot-clé "
+"plus tard."
 
 #: ../../contribute/bugreporting.rst:77
 msgid ""
@@ -303,9 +301,9 @@ msgid ""
 " can begin on it. If you are missing any information, you will be asked "
 "for it, so make sure to check in often!"
 msgstr ""
-"Un développeur ou un membre de l'équipe qualité confirmera et effectuera un "
-"tri avec votre problème. S'il manque des informations, celles-ci vous seront "
-"demandées, vérifiez donc régulièrement !"
+"Un développeur ou un membre de l'équipe qualité confirmera et effectuera "
+"un tri avec votre problème. S'il manque des informations, celles-ci vous "
+"seront demandées, vérifiez donc régulièrement !"
 
 #: ../../contribute/documentation.rst:2
 msgid "Documentation"
@@ -318,16 +316,17 @@ msgid ""
 "doc.org/en/stable/rest.html>`_ if you are not familiar with RST."
 msgstr ""
 "La documentation sur ce site est écrite en ReStructuredText, ou RST en "
-"version courte. Veuillez consulter l'`introduction à RST <http://www.sphinx-"
-"doc.org/en/stable/rest.html>`_ si vous n'êtes pas familier avec celui-ci."
+"version courte. Veuillez consulter l'`introduction à RST <http://www"
+".sphinx-doc.org/en/stable/rest.html>`_ si vous n'êtes pas familier avec "
+"celui-ci."
 
 #: ../../contribute/documentation.rst:7
 msgid ""
 "This page will guide you through writing great documentation for the "
 "UBports project that can be featured on this site."
 msgstr ""
-"Cette page vous guidera dans l'écriture d'une bonne documentation pour le "
-"projet UBports pouvant être mise en avant sur ce site."
+"Cette page vous guidera dans l'écriture d'une bonne documentation pour le"
+" projet UBports pouvant être mise en avant sur ce site."
 
 #: ../../contribute/documentation.rst:10
 msgid "Documentation guidelines"
@@ -339,55 +338,55 @@ msgid ""
 "problems with style, format, or linking. If you don't follow these "
 "guidelines, we will not accept your document."
 msgstr ""
-"Ces règles précisent *comment* vous devez écrire votre documentation pour "
-"éviter des problèmes de style, de format ou de liens. Si vous ne suivez pas "
-"ces recommandations, nous n'accepterons pas votre document."
+"Ces règles précisent *comment* vous devez écrire votre documentation pour"
+" éviter des problèmes de style, de format ou de liens. Si vous ne suivez "
+"pas ces recommandations, nous n'accepterons pas votre document."
 
-#: ../../contribute/documentation.rst:16
+#: ../../contribute/documentation.rst:15
 msgid "Title"
 msgstr "Titre"
 
-#: ../../contribute/documentation.rst:18
+#: ../../contribute/documentation.rst:17
 msgid ""
 "All pages must have a document title that will be shown in the table of "
 "contents (left sidebar) and at the top of the page. This title is "
 "underlined with equals signs."
 msgstr ""
-"Toutes les pages doivent avoir un titre de document qui sera affiché dans le "
-"sommaire (volet de gauche) et en haut de la page. Ce titre est souligné avec "
-"des signes égal."
+"Toutes les pages doivent avoir un titre de document qui sera affiché dans"
+" le sommaire (volet de gauche) et en haut de la page. Ce titre est "
+"souligné avec des signes égal."
 
-#: ../../contribute/documentation.rst:20
+#: ../../contribute/documentation.rst:19
 msgid "Titles should be sentence cased rather than Title Cased. For example::"
 msgstr ""
-"Les mots dans les titres doivent commencer par une minuscule plutôt que par "
-"une majuscule. Par exemple ::"
+"Les mots dans les titres doivent commencer par une minuscule plutôt que "
+"par une majuscule. Par exemple ::"
 
-#: ../../contribute/documentation.rst:29
+#: ../../contribute/documentation.rst:28
 msgid ""
 "There isn't a single definition of title casing that everyone follows, "
 "but sentence casing is easy. This helps keep capitalization in the table "
 "of contents consistent."
 msgstr ""
 "Il n'existe pas de règle unique que tout le monde puisse suivre pour "
-"l'écriture des titres, mais mettre des minuscules est simple. Cela aide à "
-"conserver les majuscules de manière cohérente dans le sommaire."
+"l'écriture des titres, mais mettre des minuscules est simple. Cela aide à"
+" conserver les majuscules de manière cohérente dans le sommaire."
 
-#: ../../contribute/documentation.rst:32
+#: ../../contribute/documentation.rst:31
 msgid "Table of contents"
 msgstr "Sommaire"
 
-#: ../../contribute/documentation.rst:34
+#: ../../contribute/documentation.rst:33
 msgid ""
 "People can't navigate to your new page if they can't find it. Neither can"
 " Sphinx. That's why you need to add new pages to Sphinx's table of "
 "contents."
 msgstr ""
-"Les visiteurs ne peuvent pas accéder à votre nouvelle page s'ils ne peuvent "
-"pas la trouver. Sphinx non plus. C'est pour quoi vous devez ajouter de "
-"nouvelles pages au sommaire de Sphinx."
+"Les visiteurs ne peuvent pas accéder à votre nouvelle page s'ils ne "
+"peuvent pas la trouver. Sphinx non plus. C'est pour quoi vous devez "
+"ajouter de nouvelles pages au sommaire de Sphinx."
 
-#: ../../contribute/documentation.rst:36
+#: ../../contribute/documentation.rst:35
 msgid ""
 "You can do this by adding the page to the ``index.rst`` file in the same "
 "directory that you created it. For example, if you create a file called "
@@ -395,25 +394,25 @@ msgid ""
 "nearest index::"
 msgstr ""
 "Vous pouvez faire cela en ajoutant la page dans le fichier ``index.rst`` "
-"dans le même répertoire de création. Par exemple, si vous créez un fichier "
-"appelé « newpage.rst », vous ajouterez la ligne précédée d'un chevron (>) "
-"dans l'index le plus proche ::"
+"dans le même répertoire de création. Par exemple, si vous créez un "
+"fichier appelé « newpage.rst », vous ajouterez la ligne précédée d'un "
+"chevron (>) dans l'index le plus proche ::"
 
-#: ../../contribute/documentation.rst:46
+#: ../../contribute/documentation.rst:45
 msgid ""
 "The order matters. If you would like your page to appear in a certain "
 "place in the table of contents, place it there. In the previous example, "
 "newpage would be added to the end of this table of contents."
 msgstr ""
 "L'ordre est important. Si vous souhaitez que votre page apparaisse à une "
-"certaine place dans le sommaire, placez-la là. Dans l'exemple précédent, la "
-"nouvelle page serait ajoutée à la fin de ce sommaire."
+"certaine place dans le sommaire, placez-la là. Dans l'exemple précédent, "
+"la nouvelle page serait ajoutée à la fin de ce sommaire."
 
-#: ../../contribute/documentation.rst:49
+#: ../../contribute/documentation.rst:48
 msgid "Warnings"
 msgstr "Avertissements"
 
-#: ../../contribute/documentation.rst:51
+#: ../../contribute/documentation.rst:50
 msgid ""
 "Your edits must not introduce any warnings into the documentation build. "
 "If any warnings occur, the build will fail and your pull request will be "
@@ -423,74 +422,51 @@ msgid ""
 "below."
 msgstr ""
 "Vos modifications ne doivent pas introduire d'avertissements dans votre "
-"version de la documentation. Si un avertissement se produit, la compilation "
-"échouera et votre proposition sera marquée d'un « X » rouge.  Assurez-vous "
-"que votre RST est valide et correct avant de soumettre une proposition. Ceci "
-"est fait automatiquement (via le plantage de sphinx-build avec votre erreur) "
-"si vous suivez nos instructions de compilation ci-dessous."
+"version de la documentation. Si un avertissement se produit, la "
+"compilation échouera et votre proposition sera marquée d'un « X » rouge."
+"  Assurez-vous que votre RST est valide et correct avant de soumettre une"
+" proposition. Ceci est fait automatiquement (via le plantage de sphinx-"
+"build avec votre erreur) si vous suivez nos instructions de compilation "
+"ci-dessous."
 
-#: ../../contribute/documentation.rst:54
+#: ../../contribute/documentation.rst:53
+#, fuzzy
+msgid "Update translations"
+msgstr "Traductions"
+
+#: ../../contribute/documentation.rst:55
+msgid ""
+"You must update the translation files to match your changes before you "
+"commit them. To do this, run ``update-translations.sh`` in this "
+"repository."
+msgstr ""
+
+#: ../../contribute/documentation.rst:58
 msgid "Contribution workflow"
 msgstr "Circuit de contribution"
 
-#: ../../contribute/documentation.rst:57
+#: ../../contribute/documentation.rst:60
+msgid ""
+"The following steps will help you to make a contribution to this "
+"documentation after you have written a document."
+msgstr ""
+
+#: ../../contribute/documentation.rst:63
 msgid ""
 "You will need a GitHub account to complete these steps. If you do not "
 "have one, click `here <https://github.com/join>`_ to begin the process of"
 " making an account."
 msgstr ""
-"Vous aurez besoin d'un compte GitHub pour réaliser ces étapes. Si vous n'en "
-"avez pas, cliquez `ici <https://github.com/join>`_ pour lancer le processus "
-"de création d'un compte."
-
-#: ../../contribute/documentation.rst:60
-msgid "Directly on GitHub"
-msgstr "Directement sur GitHub"
-
-#: ../../contribute/documentation.rst:62
-msgid ""
-"Read the Docs and GitHub make it fairly simple to contribute to this "
-"documentation. This section will show you the basic workflow to get "
-"started by editing an existing page on GitHub"
-msgstr ""
-"Lisez la notice et GitHub vous facilitera vos contributions à la "
-"documentation. Cette section vous montrera le circuit de base pour commencer "
-"à modifier une page existante sur GitHub"
-
-#: ../../contribute/documentation.rst:65
-msgid "Find the page you would like to edit"
-msgstr "Trouver la page que vous souhaitez modifier"
+"Vous aurez besoin d'un compte GitHub pour réaliser ces étapes. Si vous "
+"n'en avez pas, cliquez `ici <https://github.com/join>`_ pour lancer le "
+"processus de création d'un compte."
 
 #: ../../contribute/documentation.rst:66
-msgid "Click the \"Edit on GitHub\" link to the right of the title"
-msgstr "Cliquez sur le lien « Modifier sur GitHub » à la droite du titre"
-
-#: ../../contribute/documentation.rst:67
-msgid "Make your changes to the document. Remember to write in ReStructuredText!"
-msgstr ""
-"Faites vos changements dans le document. Souvenez-vous d'écrire en "
-"ReStructuredText !"
-
-#: ../../contribute/documentation.rst:68
-msgid "Propose your changes as a Pull Request."
-msgstr "Proposer vos modifications dans une contribution."
-
-#: ../../contribute/documentation.rst:70
-msgid ""
-"If there are any errors with your proposed changes, the documentation "
-"team will ask you to make some changes and resubmit. This is as simple as"
-" editing the file on GitHub from your fork of the repository."
-msgstr ""
-"S'il existe une erreur dans votre proposition de modification, l'équipe de "
-"documentation vous demandera de réaliser quelques modifications et de la "
-"soumettre à nouveau. Ceci est aussi simple que de modifier le fichier sur "
-"GitHub à partir de votre version du répertoire."
-
-#: ../../contribute/documentation.rst:73
-msgid "Manually forking the repository"
+#, fuzzy
+msgid "Forking the repository"
 msgstr "Cloner manuellement le répertoire"
 
-#: ../../contribute/documentation.rst:75
+#: ../../contribute/documentation.rst:68
 msgid ""
 "You can make more advanced edits to our documentation by forking "
 "`ubports/docs.ubports.com <https://github.com/ubports/docs.ubports.com>`_"
@@ -500,57 +476,116 @@ msgid ""
 msgstr ""
 "Vous pouvez effectuer des modifications plus poussées dans notre "
 "documentation en clonant `ubports/docs.ubports.com "
-"<https://github.com/ubports/docs.ubports.com>`_ sur GitHub. Si vous n'êtes "
-"pas certain sur la manière de procéder, consultez l'excellent guide de "
-"GitHub  sur `le clonage de projets "
+"<https://github.com/ubports/docs.ubports.com>`_ sur GitHub. Si vous "
+"n'êtes pas certain sur la manière de procéder, consultez l'excellent "
+"guide de GitHub  sur `le clonage de projets "
 "<https://guides.github.com/activities/forking/>`_."
 
-#: ../../contribute/documentation.rst:78
-msgid "Building this documentation locally"
+#: ../../contribute/documentation.rst:71
+#, fuzzy
+msgid "Building the documentation"
 msgstr "Compiler cette documentation localement"
 
-#: ../../contribute/documentation.rst:80
+#: ../../contribute/documentation.rst:73
 msgid ""
 "If you'd like to build this documentation *before* sending a PR (which "
 "you should), follow these instructions on your *local copy* of your fork "
 "of the repository."
 msgstr ""
 "Si vous souhaitez compiler cette documentation *avant* de proposer votre "
-"modification (ce que vous devriez faire), suivez ces instructions dans votre "
-"*copie locale* de votre clone du répertoire."
+"modification (ce que vous devriez faire), suivez ces instructions dans "
+"votre *copie locale* de votre clone du répertoire."
 
-#: ../../contribute/documentation.rst:82
+#: ../../contribute/documentation.rst:75
+#, fuzzy
 msgid ""
 "The documentation can be built by running ``./build.sh`` in the root of "
 "this repository. The script will also create a virtual build environment "
 "in ``~/ubportsdocsenv`` if none is present."
 msgstr ""
-"La documentation peut être compilée en exécutant ``./build.sh`` à la racine "
-"de ce répertoire. Le script créera également un environnement virtuel de "
-"compilation dans ``~/ubportsdocsenv`` s'il n'est pas déjà présent."
+"La documentation peut être compilée en exécutant ``./build.sh`` à la "
+"racine de ce répertoire. Le script créera également un environnement "
+"virtuel de compilation dans ``~/ubportsdocsenv`` s'il n'est pas déjà "
+"présent."
 
-#: ../../contribute/documentation.rst:84
+#: ../../contribute/documentation.rst:77
+#, fuzzy
 msgid ""
-"If all went well, you can enter the ``_build`` directory and open "
+"If all went well, you can enter the ``_build/html`` directory and open "
 "``index.html`` to view the UBports documentation."
 msgstr ""
-"Si tout s'est bien passé, vous pourrez accéder au répertoire ``_build`` et "
-"ouvrir ``index.html`` pour visualiser la documentation d'UBports."
+"Si tout s'est bien passé, vous pourrez accéder au répertoire ``_build`` "
+"et ouvrir ``index.html`` pour visualiser la documentation d'UBports."
 
-#: ../../contribute/documentation.rst:87
-msgid "Current TODOs"
-msgstr "Actuellement à faire"
+#: ../../contribute/documentation.rst:79
+msgid ""
+"If you have trouble building the docs, the first thing to try is deleting"
+" the build environment. Run ``rm -r ~/ubportsdocsenv`` and try the build "
+"again. Depending on when you first used the build script, you may need to"
+" run the ``rm`` command with ``sudo``."
+msgstr ""
+
+#: ../../contribute/documentation.rst:81
+msgid ""
+"Remember to `update translations`_, then commit your changes and submit a"
+" pull request."
+msgstr ""
+
+#: ../../contribute/documentation.rst:84
+msgid "Alternative methods to contribute"
+msgstr ""
+
+#: ../../contribute/documentation.rst:87 ../../contribute/translations.rst:2
+msgid "Translations"
+msgstr "Traductions"
 
 #: ../../contribute/documentation.rst:89
 msgid ""
+"You may find the components of this document to translate at `its project"
+" in UBports Weblate`_."
+msgstr ""
+
+#: ../../contribute/documentation.rst:92
+msgid "Writing documents not in RST format"
+msgstr ""
+
+#: ../../contribute/documentation.rst:94
+msgid ""
+"If you would like to write documents for UBports but are not comfortable "
+"writing ReStructuredText, please write it without formatting and post it "
+"on the `UBports Forum`_ in the relevant section (likely General). Someone"
+" will be able to help you revise your draft and write the required "
+"ReStructuredText."
+msgstr ""
+
+#: ../../contribute/documentation.rst:97
+msgid "Uncomfortable with Git"
+msgstr ""
+
+#: ../../contribute/documentation.rst:99
+msgid ""
+"If you've written a complete document in ReStructuredText but aren't "
+"comfortable using Git or GitHub, please post it on the `UBports Forum`_ "
+"in the relevant section (likely General). Someone will be able to help "
+"you revise your draft and submit it to this documentation."
+msgstr ""
+
+#: ../../contribute/documentation.rst:102
+msgid "Current TODOs"
+msgstr "Actuellement à faire"
+
+#: ../../contribute/documentation.rst:104
+#, fuzzy
+msgid ""
 "This page lists the TODOs that have been included in this documentation. "
-"If you know how to fix one, please send us a PR to make it better!"
+"If you know how to fix one, please send us a Pull Request to make it "
+"better!"
 msgstr ""
 "Cette page liste les choses à faire qui seront inclues dans cette "
-"documentation. Si vous savez comment en régler une, merci de nous envoyer "
-"une proposition pour l'améliorer !"
+"documentation. Si vous savez comment en régler une, merci de nous envoyer"
+" une proposition pour l'améliorer !"
 
-#: ../../contribute/documentation.rst:96
+#: ../../contribute/documentation.rst:111
 msgid "To create a todo, add this markup to your page::"
 msgstr "Pour créer une chose à faire, ajoutez cet indicateur dans votre page ::"
 
@@ -568,9 +603,9 @@ msgid ""
 "The pages you'll find below here will help you do this in a way that's "
 "helpful to both the project and yourself."
 msgstr ""
-"Bienvenue ! Vous êtes probablement ici parce que vous souhaitez contribuer à "
-"UBports. Les pages que vous trouverez ici vous aideront à le faire de "
-"manière efficace à la fois pour le projet et pour vous-même."
+"Bienvenue ! Vous êtes probablement ici parce que vous souhaitez "
+"contribuer à UBports. Les pages que vous trouverez ici vous aideront à le"
+" faire de manière efficace à la fois pour le projet et pour vous-même."
 
 #: ../../contribute/index.rst:6
 msgid ""
@@ -580,8 +615,8 @@ msgid ""
 msgstr ""
 "Si vous venez juste d'arriver, nous avons toujours besoin d'aide avec le "
 ":doc:`signalement rigoureux d'un problème <bugreporting>`. Si vous êtes "
-"multilingue, les :doc:`traductions <translations>` sont également un très "
-"bon endroit pour démarrer."
+"multilingue, les :doc:`traductions <translations>` sont également un très"
+" bon endroit pour démarrer."
 
 #: ../../contribute/index.rst:8
 msgid ""
@@ -589,9 +624,9 @@ msgid ""
 "<https://ubports.com/page/vo-get-involved>`_ for an introduction of our "
 "focus groups."
 msgstr ""
-"Si ce n'est pas suffisant pour vous, consultez `notre page de contribution "
-"<https://ubports.com/page/vo-get-involved>`_ pour une introduction à nos "
-"groupes de réflexion."
+"Si ce n'est pas suffisant pour vous, consultez `notre page de "
+"contribution <https://ubports.com/page/vo-get-involved>`_ pour une "
+"introduction à nos groupes de réflexion."
 
 #: ../../contribute/monetary.rst:2
 msgid "Monetary support"
@@ -604,16 +639,16 @@ msgid ""
 "<https://www.patreon.com/ubports>`_!"
 msgstr ""
 "Vous pouvez nous aider à continuer à travailler sur UBports en devenant "
-"notre patron sur `Liberapay <https://liberapay.com/UBports/>`_ ou `Patreon "
-"<https://www.patreon.com/ubports>`_ !"
+"notre patron sur `Liberapay <https://liberapay.com/UBports/>`_ ou "
+"`Patreon <https://www.patreon.com/ubports>`_ !"
 
 #: ../../contribute/monetary.rst:6
 msgid ""
 "Your contribution finances our server infrastructure and debug services, "
 "and helps covering additional costs."
 msgstr ""
-"Votre contribution finance notre infrastructure de serveur, nos services de "
-"dépannage et nous aide à couvrir les coûts supplémentaires."
+"Votre contribution finance notre infrastructure de serveur, nos services "
+"de dépannage et nous aide à couvrir les coûts supplémentaires."
 
 #: ../../contribute/quality-assurance.rst:2
 msgid "Quality Assurance"
@@ -624,19 +659,43 @@ msgid ""
 "This page explains how to help the UBports QA team, both as an official "
 "member or a new contributor. Please also read the :doc:`issue tracking "
 "</about/process/issue-tracking>` and :doc:`bugreporting <bugreporting>` "
-"guides to better understand the workflow."
+"guides to better understand the workflow. For real-time communication, "
+"you can join our `telegram group <http://t.me/ubports_qa_team>`_."
 msgstr ""
-"Cette page explique comment aider l'équipe d'assurance qualité d'UBports, à "
-"la fois comme un membre officiel  et en tant que nouveau contributeur. "
-"Veuillez aussi lire les guides de :doc:`suivi des problèmes </about/process"
-"/issue-tracking>` et de :doc:`signalement de problèmes <bugreporting>` pour "
-"mieux comprendre le circuit."
+"Cette page explique comment aider l'équipe d'assurance qualité d'UBports,"
+" à la fois comme un membre officiel  et en tant que nouveau contributeur."
+" Veuillez aussi lire les guides de :doc:`suivi des problèmes "
+"</about/process/issue-tracking>` et de :doc:`signalement de problèmes "
+"<bugreporting>` pour mieux comprendre le déroulement des processus. Pour "
+"communiquer en temps réel, vous pouvez joindre notre `groupe telegram "
+"<http://t.me/ubports_qa_team>`_."
 
 #: ../../contribute/quality-assurance.rst:7
+msgid "Smoke testing"
+msgstr "Bêta test"
+
+#: ../../contribute/quality-assurance.rst:9
+msgid ""
+"To test the core functionality of the operating system, we have compiled "
+"`a set of standardized tests "
+"<https://nc.ubports.com/s/3RnAI7tYzB2PMXs>`_. Run these tests on your "
+"device to :doc:`find and report bugs and regressions <bugreporting>`. "
+"It's usually run on all devices before a new release to make sure no new "
+"issues were introduced."
+msgstr ""
+"Pour tester les fonctionnalités de base du système d'exploitation, nous "
+"avons sélectionné `un ensemble de tests standards "
+"<https://nc.ubports.com/s/3RnAI7tYzB2PMXs>`_. Lancez ces tests sur votre "
+"appareil pour :doc:`trouver et signaler des problèmes ou des régressions "
+"<bugreporting>`. Ceci est fait sur tous les modèles d'appareil avant de "
+"publier une nouvelle version pour détecter l'apparition d'éventuels "
+"problèmes."
+
+#: ../../contribute/quality-assurance.rst:12
 msgid "Confirming bug reports"
 msgstr "Confirmation des signalements de problèmes"
 
-#: ../../contribute/quality-assurance.rst:9
+#: ../../contribute/quality-assurance.rst:14
 msgid ""
 "Unconfirmed bugreports are labeld **needs confirmation** to enable "
 "`global filtering <https://github.com/ubports/ubuntu-"
@@ -648,29 +707,29 @@ msgid ""
 "number and whether or not you were able to reproduce the issue."
 msgstr ""
 "Les rapports de problèmes sont identifiés par les mots-clés **needs "
-"confirmation** (confirmation nécessaire) pour activer le `filtrage global "
-"<https://github.com/ubports/ubuntu-"
-"touch/issues?q=is%3Aissue+is%3Aopen+label%3A%22needs+confirmation%22>`__. "
-"Parcourez la liste, lisez les rapports et essayez de reproduire les "
-"problèmes qui sont décrits. Si nécessaire, ajoutez :doc:`des informations "
-"manquantes ou des rapports d'erreur, ou améliorez la qualité du rapport via "
-"d'autres moyens <bugreporting>`. Laissez un commentaire décrivant votre "
-"appareil, canal, numéro de version et si vous avez été en mesure de "
-"reproduire ou pas l'erreur."
+"confirmation** (confirmation nécessaire) pour activer le `filtrage global"
+" <https://github.com/ubports/ubuntu-"
+"touch/issues?q=is%3Aissue+is%3Aopen+label%3A%22needs+confirmation%22>`__."
+" Parcourez la liste, lisez les rapports et essayez de reproduire les "
+"problèmes qui sont décrits. Si nécessaire, ajoutez :doc:`des informations"
+" manquantes ou des rapports d'erreur, ou améliorez la qualité du rapport "
+"via d'autres moyens <bugreporting>`. Laissez un commentaire décrivant "
+"votre appareil, canal, numéro de version et si vous avez été en mesure de"
+" reproduire ou pas l'erreur."
 
-#: ../../contribute/quality-assurance.rst:11
+#: ../../contribute/quality-assurance.rst:16
 msgid ""
 "If you have write-access to the repository, you can replace the **needs "
 "confirmation** label with **bug** (to mark it confirmed) or **invalid** "
 "(if the issue is definitely not reproducable). In that case it should be "
 "closed."
 msgstr ""
-"Si vous avez accès en écriture au répertoire, vous pouvez remplacer le mot-"
-"clé **needs confirmation** (confirmation nécessaire) par **bug** (problème) "
-"pour le marquer comme confirmé ou **invalid** (invalide) si le problème "
-"n'est pas reproductible. Dans ce cas, il devrait être fermé."
+"Si vous avez accès en écriture au répertoire, vous pouvez remplacer le "
+"mot-clé **needs confirmation** (confirmation nécessaire) par **bug** "
+"(problème) pour le marquer comme confirmé ou **invalid** (invalide) si le"
+" problème n'est pas reproductible. Dans ce cas, il devrait être fermé."
 
-#: ../../contribute/quality-assurance.rst:13
+#: ../../contribute/quality-assurance.rst:18
 msgid ""
 "If you find two issues describing the same problem, leave a comment and "
 "try to find their differences. If they are in fact identical, close the "
@@ -678,14 +737,14 @@ msgid ""
 msgstr ""
 "Si vous trouvez deux problèmes portant sur le même sujet, laissez un "
 "commentaire et essayez de trouver leurs différences. S'ils sont en fait "
-"identiques, fermez le plus récent et attribuez lui le mot-clé **duplicate** "
-"(doublon)."
+"identiques, fermez le plus récent et attribuez lui le mot-clé "
+"**duplicate** (doublon)."
 
-#: ../../contribute/quality-assurance.rst:16
+#: ../../contribute/quality-assurance.rst:21
 msgid "Testing patches"
 msgstr "Tester les correctifs"
 
-#: ../../contribute/quality-assurance.rst:18
+#: ../../contribute/quality-assurance.rst:23
 msgid ""
 "Once a developer finished working on an issue, it's moved to the quality "
 "assurance column of the `GitHub project <https://github.com/ubports"
@@ -697,23 +756,24 @@ msgid ""
 "Development** or forward to **Release Candidate** as specified by the "
 ":doc:`issue tracking guidelines </about/process/issue-tracking>`."
 msgstr ""
-"Une fois qu'un développeur a terminé de travailler sur un problème, celui-ci "
-"est déplacé dans la colonne assurance qualité du `projet sous GitHub "
-"<https://github.com/ubports/ubuntu-touch/projects/3>`__. Vérifiez si le "
-"problème persiste dans la dernière mise à jour sur le canal « Développement »"
-" et essayez de recréer un des problèmes causés. Regardez si le développeur a "
-"mentionné des choses spécifiques à vérifier lors du test et laissez un "
-"commentaire détaillant votre expérience. Si vous disposez des droits "
-"d'écriture dans le répertoire, vous pouvez déplacer le problème dans **In "
-"Development** (en développement) ou le transférer vers **Release Candidate** "
-"(version candidate) tel que spécifié dans les :doc:`recommandations de suivi "
-"des problèmes </about/process/issue-tracking>`."
+"Une fois qu'un développeur a terminé de travailler sur un problème, "
+"celui-ci est déplacé dans la colonne assurance qualité du `projet sous "
+"GitHub <https://github.com/ubports/ubuntu-touch/projects/3>`__. Vérifiez "
+"si le problème persiste dans la dernière mise à jour sur le canal « "
+"Développement » et essayez de recréer un des problèmes causés. Regardez "
+"si le développeur a mentionné des choses spécifiques à vérifier lors du "
+"test et laissez un commentaire détaillant votre expérience. Si vous "
+"disposez des droits d'écriture dans le répertoire, vous pouvez déplacer "
+"le problème dans **In Development** (en développement) ou le transférer "
+"vers **Release Candidate** (version candidate) tel que spécifié dans les "
+":doc:`recommandations de suivi des problèmes </about/process/issue-"
+"tracking>`."
 
-#: ../../contribute/quality-assurance.rst:21
+#: ../../contribute/quality-assurance.rst:26
 msgid "Initial triaging of issues"
 msgstr "Tri initial des problèmes"
 
-#: ../../contribute/quality-assurance.rst:23
+#: ../../contribute/quality-assurance.rst:28
 msgid ""
 "Initial triaging of new issues is done by QA-team members with write-"
 "access to the repository. If a new issue is filed, read the report and "
@@ -721,14 +781,15 @@ msgid ""
 "guidelines </about/process/issue-tracking>`. You can also immediately "
 "start confirming the bugreport."
 msgstr ""
-"Le tri initial de nouveaux problèmes est réalisé par les membres de l'équipe "
-"de l'assurance qualité ayant les droits d'écriture dans le répertoire. Si un "
-"nouveau problème est signalé, lisez le rapport et ajoutez les mots-clés "
-"appropriés tel que spécifié dans les :doc:`recommandations de suivi des "
-"problèmes </about/process/issue-tracking>`. Vous pouvez également "
-"immédiatement commencer à confirmer le rapport."
+"Le tri initial de nouveaux problèmes est réalisé par les membres de "
+"l'équipe de l'assurance qualité ayant les droits d'écriture dans le "
+"répertoire. Si un nouveau problème est signalé, lisez le rapport et "
+"ajoutez les mots-clés appropriés tel que spécifié dans les "
+":doc:`recommandations de suivi des problèmes </about/process/issue-"
+"tracking>`. Vous pouvez également immédiatement commencer à confirmer le "
+"rapport."
 
-#: ../../contribute/quality-assurance.rst:25
+#: ../../contribute/quality-assurance.rst:30
 msgid ""
 "If the new issue has already been reported elsewhere, label it "
 "**duplicate** and close it."
@@ -736,23 +797,20 @@ msgstr ""
 "Si le nouveau problème a déjà été signalé ailleurs, marquez-le comme "
 "**duplicate** (doublon) et fermez-le."
 
-#: ../../contribute/translations.rst:2
-msgid "Translations"
-msgstr "Traductions"
-
 #: ../../contribute/translations.rst:4
 msgid ""
 "Although English is the official base language for all UBports projects "
 "we believe you have the right to use it in any language you want."
 msgstr ""
-"Bien que l'Anglais soit la langue de base officielle pour tous les projets "
-"menés par UBports, nous pensons que vous avez le droit de les utiliser dans "
-"toutes les langues que vous souhaitez."
+"Bien que l'Anglais soit la langue de base officielle pour tous les "
+"projets menés par UBports, nous pensons que vous avez le droit de les "
+"utiliser dans toutes les langues que vous souhaitez."
 
 #: ../../contribute/translations.rst:6
 msgid "We are working hard to meet that goal, and you can help as well."
 msgstr ""
-"Nous travaillons dur pour atteindre ce but et vous pouvez aussi nous aider."
+"Nous travaillons dur pour atteindre ce but et vous pouvez aussi nous "
+"aider."
 
 #: ../../contribute/translations.rst:8
 msgid "There are two levels for this:"
@@ -768,8 +826,8 @@ msgid ""
 "application <https://ubports.com/survey/start/ubports-membership-"
 "application-6>`_."
 msgstr ""
-"Un engagement à part entière en tant que Membre d'UBports, en renseignant `"
-"ce formulaire <https://ubports.com/survey/start/ubports-membership-"
+"Un engagement à part entière en tant que Membre d'UBports, en renseignant"
+" `ce formulaire <https://ubports.com/survey/start/ubports-membership-"
 "application-6>`_."
 
 #: ../../contribute/translations.rst:14
@@ -792,10 +850,10 @@ msgid ""
 "their repository on `our GitHub organization "
 "<https://github.com/ubports>`_."
 msgstr ""
-"Pour les utilisateurs avancés : Travailler directement sur les fichiers .po "
-"avec l'éditeur de votre choix et un compte GitHub. Les fichiers .po de "
-"chaque projet sont dans leurs répertoires de `notre organisation sous GitHub "
-"<https://github.com/ubports>`_."
+"Pour les utilisateurs avancés : Travailler directement sur les fichiers "
+".po avec l'éditeur de votre choix et un compte GitHub. Les fichiers .po "
+"de chaque projet sont dans leurs répertoires de `notre organisation sous "
+"GitHub <https://github.com/ubports>`_."
 
 #: ../../contribute/translations.rst:20
 msgid ""
@@ -804,8 +862,8 @@ msgid ""
 "translating Ubuntu Touch and its core apps."
 msgstr ""
 "Un `forum de traduction "
-"<https://forums.ubports.com/category/39/translations>`_ pour discuter de la "
-"traduction d'Ubuntu Touch et de ses applications principales."
+"<https://forums.ubports.com/category/39/translations>`_ pour discuter de "
+"la traduction d'Ubuntu Touch et de ses applications principales."
 
 #: ../../contribute/translations.rst:24
 msgid "How-To"
@@ -822,20 +880,20 @@ msgid ""
 "suggestions without being registered. If you want to save your "
 "translations, you must be logged in."
 msgstr ""
-"Vous pouvez accéder au `Weblate d'UBports <https://translate.ubports.com/>`"
-"_, cliquer sur le bouton « Tableau de bord », vous rendre dans un projet et "
-"commencer à faire des suggestions de manière anonyme sans avoir à vous "
-"enregistrer. Si vous souhaitez enregistrer vos traductions, vous devez être "
-"connecté."
+"Vous pouvez accéder au `Weblate d'UBports "
+"<https://translate.ubports.com/>`_, cliquer sur le bouton « Tableau de "
+"bord », vous rendre dans un projet et commencer à faire des suggestions "
+"de manière anonyme sans avoir à vous enregistrer. Si vous souhaitez "
+"enregistrer vos traductions, vous devez être connecté."
 
 #: ../../contribute/translations.rst:31
 msgid ""
 "For that, go to UBports Weblate and click on the \"Register\" button. "
 "Once in the \"Registration\" page, you'll find two options:"
 msgstr ""
-"Pour cela, rendez-vous dans le Weblate d'UBports et cliquez sur le bouton « "
-"S'inscrire ». Une fois dans la page « Inscription », vous aurez deux options "
-":"
+"Pour cela, rendez-vous dans le Weblate d'UBports et cliquez sur le bouton"
+" « S'inscrire ». Une fois dans la page « Inscription », vous aurez deux "
+"options :"
 
 #: ../../contribute/translations.rst:33
 msgid ""
@@ -851,24 +909,24 @@ msgid ""
 "Register using a third party registration. Currently the system supports "
 "accounts from openSUSE, GitHub, Fedora, and Ubuntu."
 msgstr ""
-"Vous enregistrer en utilisant une inscription à un service tiers. Le système "
-"prend en charge actuellement openSUSE, GitHub, Fedora et Ubuntu."
+"Vous enregistrer en utilisant une inscription à un service tiers. Le "
+"système prend en charge actuellement openSUSE, GitHub, Fedora et Ubuntu."
 
 #: ../../contribute/translations.rst:36
 msgid ""
 "Once you're logged in, the site is self-explanatory and you'll find there"
 " all the options and customization you can do."
 msgstr ""
-"Une fois que vous serez connecté, le site est explicite et vous y trouverez "
-"toutes les options et personnalisations à votre disposition."
+"Une fois que vous serez connecté, le site est explicite et vous y "
+"trouverez toutes les options et personnalisations à votre disposition."
 
 #: ../../contribute/translations.rst:38
 msgid ""
 "Now, get on with it. The first step is to search if your language already"
 " exists in the project of your choice."
 msgstr ""
-"Au travail maintenant ! La première étape est de chercher si votre langue "
-"existe déjà dans le projet de votre choix."
+"Au travail maintenant ! La première étape est de chercher si votre langue"
+" existe déjà dans le projet de votre choix."
 
 #: ../../contribute/translations.rst:40
 msgid ""
@@ -883,8 +941,8 @@ msgid ""
 "You decide how much time you can put into translation. From minutes to "
 "hours, everything counts."
 msgstr ""
-"Vous décidez du temps à investir dans la traduction. De quelques minutes à "
-"plusieurs heures, toutes les contributions comptent."
+"Vous décidez du temps à investir dans la traduction. De quelques minutes "
+"à plusieurs heures, toutes les contributions comptent."
 
 #: ../../contribute/translations.rst:45
 msgid ".po file editor"
@@ -895,8 +953,9 @@ msgid ""
 "As was said up above, you need a file editor of your choice and a GitHub "
 "account to translate .po files directly."
 msgstr ""
-"Comme expliqué précédemment, vous aurez besoin d'un éditeur de votre choix "
-"et d'un compte sur GitHub pour traduire directement les fichiers .po."
+"Comme expliqué précédemment, vous aurez besoin d'un éditeur de votre "
+"choix et d'un compte sur GitHub pour traduire directement les fichiers "
+".po."
 
 #: ../../contribute/translations.rst:49
 msgid ""
@@ -913,17 +972,17 @@ msgid ""
 "you translate .po files to put down a list here."
 msgstr ""
 "Vous pouvez sélectionner l'éditeur de votre choix, mais nous préférons "
-"travailler uniquement avec des logiciels libres. Il existe trop d'éditeurs "
-"de texte plein et d'outils pour traduire les fichiers .po pour établir ici "
-"la liste exhaustive."
+"travailler uniquement avec des logiciels libres. Il existe trop "
+"d'éditeurs de texte plein et d'outils pour traduire les fichiers .po pour"
+" établir ici la liste exhaustive."
 
 #: ../../contribute/translations.rst:53
 msgid ""
 "If you want to work with .po files directly you know what you're doing "
 "for sure."
 msgstr ""
-"Si vous souhaitez travailler directement sur les fichiers .po, vous devez "
-"être sûr(e) de ce que vous faites."
+"Si vous souhaitez travailler directement sur les fichiers .po, vous devez"
+" être sûr(e) de ce que vous faites."
 
 #: ../../contribute/translations.rst:56
 msgid "Translation Team Communication"
@@ -936,8 +995,9 @@ msgid ""
 "provides for this task."
 msgstr ""
 "La méthode la plus directe et la plus recommandée est d'utiliser `la "
-"catégorie du forum <https://forums.ubports.com/category/39/translations>`_ "
-"qu'UBports fournit à ce titre."
+"catégorie du forum "
+"<https://forums.ubports.com/category/39/translations>`_ qu'UBports "
+"fournit à ce titre."
 
 #: ../../contribute/translations.rst:60
 msgid "To use it you need to register, or login if you're registered already."
@@ -952,9 +1012,9 @@ msgid ""
 "``[Spanish] How to translate whatever?``"
 msgstr ""
 "La seule obligation est de commencer votre publication en mettant entre "
-"crochets votre langue dans le champ « Saisissez le titre de votre sujet ici »"
-". Par exemple, ``[French] How to translate whatever?`` ([Français] Comment "
-"traduire n'importe quoi ? »)"
+"crochets votre langue dans le champ « Saisissez le titre de votre sujet "
+"ici ». Par exemple, ``[French] How to translate whatever?`` ([Français] "
+"Comment traduire n'importe quoi ? »)"
 
 #: ../../contribute/translations.rst:64
 msgid ""
@@ -962,16 +1022,16 @@ msgid ""
 "and some teams are still using the Ubuntu Launchpad framework."
 msgstr ""
 "Juste pour information, certains projets utilisent aussi des groupes "
-"Telegram et certaines équipes utilisent toujours Launchpad, la plateforme "
-"d'Ubuntu."
+"Telegram et certaines équipes utilisent toujours Launchpad, la plateforme"
+" d'Ubuntu."
 
 #: ../../contribute/translations.rst:66
 msgid ""
 "In your interactions with your team you'll find the best way to "
 "coordinate your translations."
 msgstr ""
-"Dans vos interactions avec votre équipe, vous trouverez la meilleure façon "
-"de coordonner vos traductions."
+"Dans vos interactions avec votre équipe, vous trouverez la meilleure "
+"façon de coordonner vos traductions."
 
 #: ../../contribute/translations.rst:69
 msgid "License"
@@ -984,10 +1044,11 @@ msgid ""
 "(CC BY-SA 4.0) <https://creativecommons.org/licenses/by-sa/4.0/>`_ "
 "license that you explicitly accept by contributing to the project."
 msgstr ""
-"Tous les projets de traduction et toutes vos contributions à ce projet sont "
-"placés sous une licence `Creative Commons Attribution-Partage à l'identique "
-"4.0 International (CC BY-SA 4.0) <https://creativecommons.org/licenses/by-"
-"sa/4.0/>`_ que vous acceptez explicitement en contribuant à ce projet."
+"Tous les projets de traduction et toutes vos contributions à ce projet "
+"sont placés sous une licence `Creative Commons Attribution-Partage à "
+"l'identique 4.0 International (CC BY-SA 4.0) "
+"<https://creativecommons.org/licenses/by-sa/4.0/>`_ que vous acceptez "
+"explicitement en contribuant à ce projet."
 
 #: ../../contribute/translations.rst:73
 msgid "Go to that link to learn what this exactly means."
@@ -1049,3 +1110,60 @@ msgstr "Visitez ce site pour apprendre ce que cela signifie exactement."
 #~ " the same on `Liberpay "
 #~ "<https://liberapay.com/UBports/>`_!"
 #~ msgstr ""
+
+#~ msgid "Directly on GitHub"
+#~ msgstr "Directement sur GitHub"
+
+#~ msgid ""
+#~ "Read the Docs and GitHub make it"
+#~ " fairly simple to contribute to this"
+#~ " documentation. This section will show "
+#~ "you the basic workflow to get "
+#~ "started by editing an existing page "
+#~ "on GitHub"
+#~ msgstr ""
+#~ "Read the Docs et GitHub vous "
+#~ "faciliteront vos contributions à la "
+#~ "documentation. Cette section vous montrera "
+#~ "le circuit de base pour commencer "
+#~ "à modifier une page existante sur "
+#~ "GitHub"
+
+#~ msgid "Find the page you would like to edit"
+#~ msgstr "Trouver la page que vous souhaitez modifier"
+
+#~ msgid "Click the \"Edit on GitHub\" link to the right of the title"
+#~ msgstr "Cliquez sur le lien « Modifier sur GitHub » à la droite du titre"
+
+#~ msgid ""
+#~ "Make your changes to the document. "
+#~ "Remember to write in ReStructuredText!"
+#~ msgstr ""
+#~ "Faites vos changements dans le document."
+#~ " Souvenez-vous d'écrire en ReStructuredText"
+#~ " !"
+
+#~ msgid "Propose your changes as a Pull Request."
+#~ msgstr "Proposer vos modifications dans une contribution."
+
+#~ msgid ""
+#~ "If there are any errors with your"
+#~ " proposed changes, the documentation team"
+#~ " will ask you to make some "
+#~ "changes and resubmit. This is as "
+#~ "simple as editing the file on "
+#~ "GitHub from your fork of the "
+#~ "repository."
+#~ msgstr ""
+#~ "S'il existe une erreur dans votre "
+#~ "proposition de modification, l'équipe de "
+#~ "documentation vous demandera de réaliser "
+#~ "quelques modifications et de la "
+#~ "soumettre à nouveau. Ceci est aussi "
+#~ "simple que de modifier le fichier "
+#~ "sur GitHub à partir de votre "
+#~ "version du répertoire."
+
+#~ msgid "Remember to `update translations`_ before committing your changes."
+#~ msgstr ""
+

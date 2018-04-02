@@ -7,17 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-08 19:46-0600\n"
-"PO-Revision-Date: 2018-02-21 07:38+0000\n"
+"POT-Creation-Date: 2018-03-30 20:06-0500\n"
+"PO-Revision-Date: 2018-03-12 08:46+0000\n"
 "Last-Translator: Stefano Melchior <stefano.melchior@me.com>\n"
-"Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs"
-"/documentation-userguide/it/>\n"
 "Language: it\n"
+"Language-Team: Italian <https://translate.ubports.com/projects/ubports-"
+"docs/documentation-userguide/it/>\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../userguide/advanceduse/adb.rst:2
@@ -152,9 +151,9 @@ msgid ""
 "with a remote server. Many email-hosters provide a CalDAV and CardDAV "
 "interface."
 msgstr ""
-"CalDAV e CardDav sono protocolli che servono a sincronizzare i calendati e i "
-"contatti con un server remoto. Molti fornitori di email forniscono una "
-"interfaccia CalDAV e CardDav."
+"CalDAV e CardDav sono protocolli che servono a sincronizzare i calendati "
+"e i contatti con un server remoto. Molti fornitori di email forniscono "
+"una interfaccia CalDAV e CardDav."
 
 #: ../../userguide/advanceduse/dav.rst:6
 msgid ""
@@ -178,10 +177,10 @@ msgid ""
 "SSH connection. These instructions work for caldav as well."
 msgstr ""
 "Per il momento non c'è una implementazione di CardDAV direttamente "
-"accessibile dall'interfaccia utente di Ubuntu Touch, quindi l'unico modo per "
-"sincronizzare CardDAV è usando syncevolution + cron. Comunque c'è un modo "
-"semplice per farlo usando uno script che puoi avviare da terminale o via "
-"connessione SSH. Queste istruzioni funzionano anche per CalDav."
+"accessibile dall'interfaccia utente di Ubuntu Touch, quindi l'unico modo "
+"per sincronizzare CardDAV è usando syncevolution + cron. Comunque c'è un "
+"modo semplice per farlo usando uno script che puoi avviare da terminale o"
+" via connessione SSH. Queste istruzioni funzionano anche per CalDav."
 
 #: ../../userguide/advanceduse/dav.rst:10
 msgid ""
@@ -190,8 +189,8 @@ msgid ""
 "activate Developer Mode and ADB (or SSH) connection."
 msgstr ""
 "Segiu questa `guida "
-"<https://docs.ubports.com/it/latest/userguide/advanceduse/adb.html>`_ per "
-"attivare la Modalità Sviluppatore e la connessione ADB(o SSH)."
+"<https://docs.ubports.com/it/latest/userguide/advanceduse/adb.html>`_ per"
+" attivare la Modalità Sviluppatore e la connessione ADB(o SSH)."
 
 #: ../../userguide/advanceduse/dav.rst:13
 msgid ""
@@ -200,23 +199,22 @@ msgid ""
 "(let's call it dav.sh) and edit the following variables:"
 msgstr ""
 "Scarica questo `script "
-"<https://gist.github.com/bastos77/0c47a94dd0bf3e394f879c0ff42b7839>`_ ("
-"chiamiamolo dav.sh) e modifica le seguenti variabili:"
+"<https://gist.github.com/bastos77/0c47a94dd0bf3e394f879c0ff42b7839>`_ "
+"(chiamiamolo dav.sh) e modifica le seguenti variabili:"
 
 #: ../../userguide/advanceduse/dav.rst:15
 msgid ""
 "server side : CAL_URL, **CONTACTS_URL**, USERNAME, PASSWORD (of your "
 "ownCloud/nextCloud/baikal/SOGO/... server)"
 msgstr ""
-"lato server : CAL_URL, **CONTACTS_URL**, USERNAME, PASSWORD (del tuo server "
-"ownCloud/nextCloud/baikal/SOGO/...)"
+"lato server : CAL_URL, **CONTACTS_URL**, USERNAME, PASSWORD (del tuo "
+"server ownCloud/nextCloud/baikal/SOGO/...)"
 
 #: ../../userguide/advanceduse/dav.rst:16
 msgid ""
 "CONTACT and CALENDAR _ NAME / VISUAL_NAME / CONFIG_NAME (it's more "
 "cosmetic)"
-msgstr ""
-"CONTACT e CALENDAR _ NAME / VISUAL_NAME / CONFIG_NAME (sono piu estetici)"
+msgstr "CONTACT e CALENDAR _ NAME / VISUAL_NAME / CONFIG_NAME (sono piu estetici)"
 
 #: ../../userguide/advanceduse/dav.rst:17
 msgid "CRON_FREQUENCY (for the frequency of synchronisation)"
@@ -228,16 +226,17 @@ msgid ""
 " instead of ``sudo echo \"$COMMAND_LINE\" > /sbin/sogosync``, to avoid "
 "permission denied error"
 msgstr ""
-"Linea 61: scrivi ``sudo sh -c \"echo '$COMMAND_LINE' > /sbin/sogosync\"`` , "
-"al posto di ``sudo echo \"$COMMAND_LINE\" > /sbin/sogosync``, per evitare un "
-"errore di permesso negato"
+"Linea 61: scrivi ``sudo sh -c \"echo '$COMMAND_LINE' > /sbin/sogosync\"``"
+" , al posto di ``sudo echo \"$COMMAND_LINE\" > /sbin/sogosync``, per "
+"evitare un errore di permesso negato"
 
 #: ../../userguide/advanceduse/dav.rst:20
 msgid ""
 "Move the file to your UbuntuTouch device, either by file manager or with "
 "adb::"
 msgstr ""
-"Sposta il file sul tuo dispositivo UbuntuTouch usando il file manager o adb::"
+"Sposta il file sul tuo dispositivo UbuntuTouch usando il file manager o "
+"adb::"
 
 #: ../../userguide/advanceduse/dav.rst:24
 msgid ""
@@ -660,16 +659,16 @@ msgid ""
 "Anbox only works on the 16.04 version of Ubuntu Touch, which is also in "
 "early development"
 msgstr ""
-"andox funziona soltanto sullaversione di Ubuntu Touch 16.04, che anch'essa è "
-"in fase di sviluppo iniziale"
+"andox funziona soltanto sullaversione di Ubuntu Touch 16.04, che "
+"anch'essa è in fase di sviluppo iniziale"
 
 #: ../../userguide/dailyuse/anbox.rst:10
 msgid ""
 "Only selected devices are supported for the moment, more will be added in"
 " the future."
 msgstr ""
-"Soltanto alcuni dispositivi sono supportati al momento, ne saranno aggiuti "
-"altri nel futuro."
+"Soltanto alcuni dispositivi sono supportati al momento, ne saranno "
+"aggiuti altri nel futuro."
 
 #: ../../userguide/dailyuse/anbox.rst:13
 msgid "Supported devices"
@@ -687,16 +686,16 @@ msgid ""
 msgstr ""
 "Meizu Pro 5 (nome in codice: *turbo*, nome della partizione di boot: "
 "*bootimg*) BQ M10 HD (nome in codice: *cooler*, nome della partizione di "
-"boot: *boot*) BQ M10 FHD (nome in codice: *frieza*, nome della partizione di "
-"boot: *boot*)"
+"boot: *boot*) BQ M10 FHD (nome in codice: *frieza*, nome della partizione"
+" di boot: *boot*)"
 
 #: ../../userguide/dailyuse/anbox.rst:21
 msgid ""
 "You will need the device codename and the name of your boot partition for"
 " the installation."
 msgstr ""
-"Avrai bisogno del nome in codice del dispositivo e del della tua partizione "
-"di boot per l'installazione."
+"Avrai bisogno del nome in codice del dispositivo e del della tua "
+"partizione di boot per l'installazione."
 
 #: ../../userguide/dailyuse/anbox.rst:24
 msgid "How to install"
@@ -707,8 +706,8 @@ msgid ""
 "Because this feature is in such an early stage of development, the "
 "installation is only recommended for experienced users."
 msgstr ""
-"Dato che questa funzionalità è in uno stato di sviluppo piuttosto prematuro, "
-"l'installazione è raccomandata soltanto a utenti esperti."
+"Dato che questa funzionalità è in uno stato di sviluppo piuttosto "
+"prematuro, l'installazione è raccomandata soltanto a utenti esperti."
 
 #: ../../userguide/dailyuse/anbox.rst:29
 msgid ""
@@ -727,8 +726,8 @@ msgid ""
 msgstr ""
 "Aprire un terminale e eseguire ``export CODENAME=\"turbo\" && export "
 "PARTITIONNAME=\"bootimg\"``, sostituendo la parte tra le virgolette con "
-"rispettivamente il nome in codice e il nome della partizione di boot de tuo "
-"dispositivo. Vedi la lista di prima."
+"rispettivamente il nome in codice e il nome della partizione di boot de "
+"tuo dispositivo. Vedi la lista di prima."
 
 #: ../../userguide/dailyuse/anbox.rst:31
 msgid "Activate developer mode on your device."
@@ -738,8 +737,7 @@ msgstr "Attivare la modalità sviluppatore sul tuo dispositivo."
 msgid ""
 "Connect the device to your computer computer and run the following "
 "commands::"
-msgstr ""
-"Connettere il dispositivo al tuo compiter e eseguire i seguenti comandi::"
+msgstr "Connettere il dispositivo al tuo compiter e eseguire i seguenti comandi::"
 
 #: ../../userguide/dailyuse/anbox.rst:40
 msgid "wait for the device to reboot, then run::"
@@ -751,10 +749,10 @@ msgid ""
 " might have to refresh the apps scope (pull down from the center of the "
 "screen and release) for the app to show up."
 msgstr ""
-"Fatto! Selezionare \"Anbox\" nello scope delle app per usare le applicazioni "
-"android. Può darsi che per mostrare l'applicazione tu debba ricaricare lo "
-"scope delle app (premere al centro dello schermo e spostare t tutto verso il "
-"basso e poi rialsciare)."
+"Fatto! Selezionare \"Anbox\" nello scope delle app per usare le "
+"applicazioni android. Può darsi che per mostrare l'applicazione tu debba "
+"ricaricare lo scope delle app (premere al centro dello schermo e spostare"
+" t tutto verso il basso e poi rialsciare)."
 
 #: ../../userguide/dailyuse/anbox.rst:52
 msgid "Reporting bugs"
@@ -768,10 +766,11 @@ msgid ""
 "issues with anbox are reported on `our downstream fork "
 "<https://github.com/ubports/anbox/issues>`_. Thank you!"
 msgstr ""
-"Per sapere come :doc:`fare report di bug (bachi) </contribute/bugreporting>`"
-". Si possono fare i report dei bachi di Ubuntu Touch 16.04 nel `solito "
-"sistema di tracciamento di Ubuntu Touch<https://github.com/ubports/ubuntu-"
-"touch/issues>`_ mentre i problemi con anbox nel `nostro fork a valle "
+"Per sapere come :doc:`fare report di bug (bachi) "
+"</contribute/bugreporting>`. Si possono fare i report dei bachi di Ubuntu"
+" Touch 16.04 nel `solito sistema di tracciamento di Ubuntu "
+"Touch<https://github.com/ubports/ubuntu-touch/issues>`_ mentre i problemi"
+" con anbox nel `nostro fork a valle "
 "<https://github.com/ubports/anbox/issues>`_. Grazie!"
 
 #: ../../userguide/dailyuse/index.rst:2
@@ -800,13 +799,14 @@ msgstr ""
 #: ../../userguide/dailyuse/libertine.rst:6
 msgid ""
 "To display and launch applications you need the *Desktop Apps Scope* "
-"which is available in the Canonical App Store. To install applications "
-"you need to use the commandline as described below."
+"which is available in the `Open Store <https://open-store.io/app"
+"/libertine-scope.ubuntu>`_. To install applications you need to use the "
+"commandline as described below."
 msgstr ""
 "Per visualizzare e avviare le applicazioni è necessario l'app *Desktop "
-"Apps Scope* disponibile nell'App Store di Canonical. Per installare le "
-"applicazioni è necessario utilizzare la riga di comando come descritto di"
-" seguito."
+"Apps Scope* disponibile nell'`Open Store <https://open-store.io/app"
+"/libertine-scope.ubuntu>`_. . Per installare le applicazioni è necessario"
+" utilizzare la riga di comando come descritto di seguito."
 
 #: ../../userguide/dailyuse/libertine.rst:9
 msgid "Manage containers"
@@ -1067,12 +1067,13 @@ msgid "Install Ubuntu Touch"
 msgstr "Installare Ubuntu Touch"
 
 #: ../../userguide/install.rst:4
+#, fuzzy
 msgid ""
 "Installing Ubuntu Touch is easy, and a lot of work has gone in to making "
 "the installation process less intimidating to less technical users. The "
 "UBports Installer is a nice graphical tool that you can use to install "
-"Ubuntu Touch on a `supported device <devices.ubports.com>`_ from your "
-"Linux, Mac or Windows computer."
+"Ubuntu Touch on a `supported device <https://ubuntu-touch.io/devices>`_ "
+"from your Linux, Mac or Windows computer."
 msgstr ""
 "L'installazione di Ubuntu Touch è facile, e sono stati fatti molti lavori"
 " per rendere il processo di installazione più amichevole agli utenti meno"
@@ -1081,8 +1082,9 @@ msgstr ""
 "<devices.ubports.com>` _ dal tuo computer Linux, Mac o Windows."
 
 #: ../../userguide/install.rst:7
+#, fuzzy
 msgid ""
-"If your're switching your device over from Android, you will not be able "
+"If you're switching your device over from Android, you will not be able "
 "to keep any data that is currently on the device. Create an external "
 "backup if you want to keep it."
 msgstr ""
@@ -1101,22 +1103,30 @@ msgstr ""
 "installazione per il tuo sistema operativo:"
 
 #: ../../userguide/install.rst:11
-msgid "Windows: ubports-installer-<version-number>.exe"
+#, fuzzy
+msgid "Windows: ``ubports-installer-<version-number>.exe``"
 msgstr "Windows: ubports-installer-<version-number>.exe"
 
 #: ../../userguide/install.rst:12
-msgid "macOS: ubports-installer-<version-number>.dmg"
+#, fuzzy
+msgid "macOS: ``ubports-installer-<version-number>.dmg``"
 msgstr "macOS: ubports-installer-<version-number>.dmg"
 
 #: ../../userguide/install.rst:13
+#, fuzzy
+msgid "Ubuntu or Debian: ``ubports-installer-<version-number>.deb``"
+msgstr "Windows: ubports-installer-<version-number>.exe"
+
+#: ../../userguide/install.rst:14
+#, fuzzy
 msgid ""
-"Linux: ubports-installer-<version-number>.deb, ubports-installer"
-"-<version-number>.snap or ubports-installer-<version-number>.AppImage"
+"Other Linux distribtuions: ``ubports-installer-<version-number>.snap`` or"
+" ``ubports-installer-<version-number>.AppImage``"
 msgstr ""
 "Linux: ubports-installer-<numero-versione>.deb, ubports-installer"
 "-<numero-versione>.snap o ubports-installer-<numero-versione>.AppImage"
 
-#: ../../userguide/install.rst:15
+#: ../../userguide/install.rst:16
 msgid ""
 "Start the installer and follow the on-screen instructions that will walk "
 "you through the installation process. That's it! Have fun exploring "
@@ -1126,7 +1136,7 @@ msgstr ""
 "che ti guideranno attraverso il processo di installazione. Questo è "
 "tutto! Divertiti ad esplorare Ubuntu Touch!"
 
-#: ../../userguide/install.rst:17
+#: ../../userguide/install.rst:18
 msgid ""
 "If you're an experienced android developer and want to help us bring "
 "Ubuntu Touch to more devices, visit the :doc:`porting section "
@@ -1136,16 +1146,16 @@ msgstr ""
 "Touch su più dispositivi, visita la: doc: `porting section "
 "</porting/introduction>`."
 
-#: ../../userguide/install.rst:20
+#: ../../userguide/install.rst:21
 msgid "Install on legacy Android devices"
 msgstr "Installa su dispositivi Android legacy"
 
-#: ../../userguide/install.rst:22
+#: ../../userguide/install.rst:23
+#, fuzzy
 msgid ""
 "While the installation process is fairly simple on most devices, some "
-"legacy Bq and Meizu devices require special steps due to their closed "
-"nature. This part of the guide does not apply to any other devices or bq "
-"devices that are running the Canonical version of Ubuntu Touch."
+"legacy Bq and Meizu devices require special steps. This part of the guide"
+" does not apply to other devices."
 msgstr ""
 "Mentre il processo di installazione è abbastanza semplice sulla maggior "
 "parte dei dispositivi, alcuni dispositivi legacy Bq e Meizu richiedono "
@@ -1153,63 +1163,155 @@ msgstr ""
 "guida non si applica a nessun altro dispositivo o dispositivo bq che "
 "esegue la versione Canonical di Ubuntu Touch."
 
-#: ../../userguide/install.rst:26
+#: ../../userguide/install.rst:27
 msgid ""
-"This is more or less uncharted territory. If the device manufacturers "
-"don't want you to install an alternative operating system on their "
-"devices, there's not a lot we can do about it. The instructions below are"
-" very vague and should only be followed by experienced users. While we "
-"appreciate that lots of people want to use our OS, flashing a device with"
-" OEM tools shouldn't be done without a bit of know-how and plenty of "
-"research."
+"This is more or less uncharted territory. If your device's manufacturer "
+"does not want you to install an alternative operating system, there's not"
+" a lot we can do about it. The instructions below should only be followed"
+" by experienced users. While we appreciate that lots of people want to "
+"use our OS, flashing a device with OEM tools shouldn't be done without a "
+"bit of know-how and plenty of research."
 msgstr ""
-"Questo è un terreno più o meno inesplorato. Se i produttori di "
-"dispositivi non vogliono installare un sistema operativo alternativo sui "
-"loro dispositivi, non c'è molto che si possa fare. Le seguenti istruzioni"
-" sono molto vaghe e dovrebbero essere seguite solo da utenti esperti. Pur"
-" apprezzando il fatto che molte persone vogliano utilizzare il nostro "
-"sistema operativo, il flashing di un dispositivo con strumenti OEM non "
-"dovrebbe essere eseguito senza un pò di know-how e molta ricerca."
-
-#: ../../userguide/install.rst:28
-msgid ""
-"BQ devices: Download the official Ubuntu Edition firmware from `their "
-"website <http://www.mibqyyo.com/en-download/>`_ and use their SP Flash "
-"Tool to flash it."
-msgstr ""
-"Dispositivi BQ: scarica il firmware ufficiale di Ubuntu Edition dal "
-"\"loro sito web <http://www.mibqyyo.com/en-download/>` _ e usa il loro SP"
-" Flash Tool per flasharlo."
 
 #: ../../userguide/install.rst:29
 msgid ""
-"Meizu devices: You are pretty much stuck on Flyme. For the MX4, there are"
-" some instructions floating around for downgrading your OS, gaining root "
-"with an exploit, unlocking your bootloader, and so on. We aren't going to"
-" link to them here for obvious reasons. The Pro5 is Exynos-based and has "
-"its own headaches. You're even more at your own risk on these."
+"Meizu devices are pretty much stuck on Flyme. While the MX4 can be "
+"flashed successfully in some cases, the Pro5 is Exynos-based and has its "
+"own headaches."
 msgstr ""
-"Dispositivi Meizu: sei praticamente bloccato su Flyme. Per l'MX4, ci sono"
-" alcune istruzioni per il downgrade del tuo sistema operativo, "
-"l'acquisizione dei permessi di root con un exploit, lo sblocco del tuo "
-"bootloader e così via. Non abbiamo intenzione mostrare qui i loro "
-"collegamenti per ovvi motivi. Il Pro5 è basato su Exynos e ha i suoi mal "
-"di testa. Sei ancora più a rischio e pericolo."
 
 #: ../../userguide/install.rst:33
-msgid ""
-"BE VERY CAREFUL! Getting this part wrong can permanantly damage or brick "
-"your device. NEVER check the \"Format All\" option in SP Flash Tool and "
-"carefully read everything that it tells you. Some users have destroyed "
-"the partition that holds their hardware IDs and can no longer connect to "
-"Wi-Fi or cellular networks."
+msgid "BE VERY CAREFUL! You are responsible for your own actions!"
 msgstr ""
-"PRESTARE MOLTA ATTENZIONE! Ottenere questa parte non corretta può "
-"danneggiare o bruciare permanentemente il tuo dispositivo. Non "
-"selezionare MAI l'opzione \"Formatta tutto\" (Format All) in SP Flash "
-"Tool e leggere attentamente tutte le istruzioni mostrate. Alcuni utenti "
-"hanno distrutto la partizione che contiene i loro ID hardware con "
-"conseguente impossibilità a connettersi a reti Wi-Fi o cellulari."
+
+#: ../../userguide/install.rst:35
+msgid ""
+"Disconnect all devices and non-essential peripherals from your PC. Charge"
+" your device on a wall-charger (not your PC) to at least 40 percent"
+msgstr ""
+
+#: ../../userguide/install.rst:36
+msgid "Download the Ubuntu Touch ROM for your device:"
+msgstr ""
+
+#: ../../userguide/install.rst:38
+msgid ""
+"`Bq E4.5 <http://www.mibqyyo.com/de-"
+"download/categorias/smartphones/aquaris-e-serie/aquaris-e4-5-ubuntu-"
+"edition/>`_ (*krillin*)"
+msgstr ""
+
+#: ../../userguide/install.rst:39
+msgid ""
+"`Bq E5 HD "
+"<https://storage.googleapis.com/otas/2014/Smartphones/Aquaris_E5_HD/Ubuntu"
+"/VEGETA01A-S11A_BQ_L100EN_2017_170207.zip>`_ (*vegetahd*)"
+msgstr ""
+
+#: ../../userguide/install.rst:40
+msgid ""
+"`Bq M10 HD "
+"<https://storage.googleapis.com/otas/2015/Tablets/Freezer/Ubuntu/OTA_13_FW_version"
+"/cooler-image-stable-6.zip>`_ (*cooler*)"
+msgstr ""
+
+#: ../../userguide/install.rst:41
+#, python-format
+msgid ""
+"`Bq M10 FHD "
+"<https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/Ubuntu/OTA_15"
+"/frieza-image-stable-8.zip>`_ (*frieza*)"
+msgstr ""
+
+#: ../../userguide/install.rst:42
+msgid ""
+"`Meizu MX4 <http://people.canonical.com/~alextu/tangxi/684.zip>`_ "
+"(*arale*)"
+msgstr ""
+
+#: ../../userguide/install.rst:44
+#, python-format
+msgid ""
+"Download `SP flash tool "
+"<https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/Ubuntu/SP_Flash_Tool_exe_Linux_v5.1612.00.100.zip>`_"
+" for Linux."
+msgstr ""
+
+#: ../../userguide/install.rst:46
+msgid ""
+"On Ubuntu 17.10, there are issues with flash_tool loading the shared "
+"library 'libpng12', so this can be used as a workaround:"
+msgstr ""
+
+#: ../../userguide/install.rst:54
+msgid ""
+"You will also need to use `the latest version of the tool "
+"<https://spflashtool.com/download/SP_Flash_Tool_v5.1744_Linux.zip>`_."
+msgstr ""
+
+#: ../../userguide/install.rst:56
+msgid "Extract the zip files"
+msgstr ""
+
+#: ../../userguide/install.rst:57
+msgid "Start the tool with ``sudo``"
+msgstr ""
+
+#: ../../userguide/install.rst:58
+msgid ""
+"Select the ``*Android_scatter.txt`` file from the archive you downloaded "
+"in the first step as the scatter-loading file"
+msgstr ""
+
+#: ../../userguide/install.rst:59
+msgid "Choose \"Firmware Upgrade\""
+msgstr ""
+
+#: ../../userguide/install.rst:60
+msgid ""
+"Double-check you chose \"Firmware Upgrade\" and not \"Download\" or "
+"\"Format All\""
+msgstr ""
+
+#: ../../userguide/install.rst:64
+msgid ""
+"If you select DOWNLOAD rather than FIRMWARE UPGRADE, you will end up with"
+" a useless brick rather than a fancy Ubuntu Touch device. Be sure to "
+"select FIRMWARE UPGRADE."
+msgstr ""
+
+#: ../../userguide/install.rst:66
+msgid "Turn your device completely off, but do not connect it yet"
+msgstr ""
+
+#: ../../userguide/install.rst:67
+msgid "Press the button labeled \"Download\""
+msgstr ""
+
+#: ../../userguide/install.rst:68
+msgid ""
+"Perform a final sanity-check that you selected the \"Firmware Upgrade\" "
+"option, not \"Download\""
+msgstr ""
+
+#: ../../userguide/install.rst:69
+msgid ""
+"Make sure your device is off and connect it to your PC. Don't use a USB "
+"3.0 port, since that's known to cause communication issues with your "
+"device."
+msgstr ""
+
+#: ../../userguide/install.rst:70
+msgid ""
+"`Magic <https://en.wikipedia.org/wiki/Clarke's_three_laws>`_ happens. "
+"Your device will boot into a super old version of Ubuntu Touch."
+msgstr ""
+
+#: ../../userguide/install.rst:71
+msgid ""
+"Congratulations! Your device will now boot into a very old version of "
+"Ubuntu Touch. You can now use the UBports Installer to proceed."
+msgstr ""
 
 #~ msgid ""
 #~ "To make sure the ssh server is "
@@ -1226,3 +1328,96 @@ msgstr ""
 #~ " permit ssh connexion form outside "
 #~ "the mobile device::"
 #~ msgstr ""
+
+#~ msgid ""
+#~ "This is more or less uncharted "
+#~ "territory. If the device manufacturers "
+#~ "don't want you to install an "
+#~ "alternative operating system on their "
+#~ "devices, there's not a lot we can"
+#~ " do about it. The instructions below"
+#~ " are very vague and should only "
+#~ "be followed by experienced users. While"
+#~ " we appreciate that lots of people"
+#~ " want to use our OS, flashing a"
+#~ " device with OEM tools shouldn't be"
+#~ " done without a bit of know-how"
+#~ " and plenty of research."
+#~ msgstr ""
+#~ "Questo è un terreno più o meno "
+#~ "inesplorato. Se i produttori di "
+#~ "dispositivi non vogliono installare un "
+#~ "sistema operativo alternativo sui loro "
+#~ "dispositivi, non c'è molto che si "
+#~ "possa fare. Le seguenti istruzioni sono"
+#~ " molto vaghe e dovrebbero essere "
+#~ "seguite solo da utenti esperti. Pur "
+#~ "apprezzando il fatto che molte persone"
+#~ " vogliano utilizzare il nostro sistema "
+#~ "operativo, il flashing di un dispositivo"
+#~ " con strumenti OEM non dovrebbe "
+#~ "essere eseguito senza un pò di "
+#~ "know-how e molta ricerca."
+
+#~ msgid ""
+#~ "BQ devices: Download the official Ubuntu"
+#~ " Edition firmware from `their website "
+#~ "<http://www.mibqyyo.com/en-download/>`_ and use "
+#~ "their SP Flash Tool to flash it."
+#~ msgstr ""
+#~ "Dispositivi BQ: scarica il firmware "
+#~ "ufficiale di Ubuntu Edition dal \"loro"
+#~ " sito web <http://www.mibqyyo.com/en-download/>`"
+#~ " _ e usa il loro SP Flash "
+#~ "Tool per flasharlo."
+
+#~ msgid ""
+#~ "Meizu devices: You are pretty much "
+#~ "stuck on Flyme. For the MX4, there"
+#~ " are some instructions floating around "
+#~ "for downgrading your OS, gaining root"
+#~ " with an exploit, unlocking your "
+#~ "bootloader, and so on. We aren't "
+#~ "going to link to them here for "
+#~ "obvious reasons. The Pro5 is Exynos-"
+#~ "based and has its own headaches. "
+#~ "You're even more at your own risk"
+#~ " on these."
+#~ msgstr ""
+#~ "Dispositivi Meizu: sei praticamente bloccato"
+#~ " su Flyme. Per l'MX4, ci sono "
+#~ "alcune istruzioni per il downgrade del"
+#~ " tuo sistema operativo, l'acquisizione dei"
+#~ " permessi di root con un exploit, "
+#~ "lo sblocco del tuo bootloader e "
+#~ "così via. Non abbiamo intenzione "
+#~ "mostrare qui i loro collegamenti per "
+#~ "ovvi motivi. Il Pro5 è basato su"
+#~ " Exynos e ha i suoi mal di "
+#~ "testa. Sei ancora più a rischio e"
+#~ " pericolo."
+
+#~ msgid ""
+#~ "BE VERY CAREFUL! Getting this part "
+#~ "wrong can permanantly damage or brick"
+#~ " your device. NEVER check the "
+#~ "\"Format All\" option in SP Flash "
+#~ "Tool and carefully read everything that"
+#~ " it tells you. Some users have "
+#~ "destroyed the partition that holds their"
+#~ " hardware IDs and can no longer "
+#~ "connect to Wi-Fi or cellular "
+#~ "networks."
+#~ msgstr ""
+#~ "PRESTARE MOLTA ATTENZIONE! Ottenere questa "
+#~ "parte non corretta può danneggiare o "
+#~ "bruciare permanentemente il tuo dispositivo."
+#~ " Non selezionare MAI l'opzione \"Formatta"
+#~ " tutto\" (Format All) in SP Flash "
+#~ "Tool e leggere attentamente tutte le "
+#~ "istruzioni mostrate. Alcuni utenti hanno "
+#~ "distrutto la partizione che contiene i"
+#~ " loro ID hardware con conseguente "
+#~ "impossibilità a connettersi a reti "
+#~ "Wi-Fi o cellulari."
+

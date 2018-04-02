@@ -9,6 +9,16 @@ On this website you find instructions how to install Ubuntu Touch on your mobile
 
 If you want to help improving this documentation, :doc:`the Documentation contribute page <contribute/documentation>` will get you started.
 
+You may view this documentation in the following languages:
+
+* `English <https://docs.ubports.com/en/latest/>`_
+* `Català <https://docs.ubports.com/ca/latest/>`_
+* `Français <https://docs.ubports.com/fr/latest/>`_
+* `Deutsch <https://docs.ubports.com/de/latest/>`_
+* `Italiano <https://docs.ubports.com/it/latest/>`_
+* `Română <https://docs.ubports.com/ro/latest/>`_
+* `Türkçe <https://docs.ubports.com/tr/latest/>`_
+* `Español <https://docs.ubports.com/es/latest/>`_
 
 .. toctree::
    :maxdepth: 1

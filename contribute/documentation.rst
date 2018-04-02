@@ -11,7 +11,6 @@ Documentation guidelines
 
 These rules govern *how* you should write your documentation to avoid problems with style, format, or linking. If you don't follow these guidelines, we will not accept your document.
 
-
 Title
 ^^^^^
 
@@ -50,43 +49,59 @@ Warnings
 
 Your edits must not introduce any warnings into the documentation build. If any warnings occur, the build will fail and your pull request will be marked with a red 'X'. Please ensure that your RST is valid and correct before you create a pull request. This is done automatically (via sphinx-build crashing with your error) if you follow our build instructions below.
 
+Update translations
+^^^^^^^^^^^^^^^^^^^
+
+You must update the translation files to match your changes before you commit them. To do this, run ``update-translations.sh`` in this repository.
+
 Contribution workflow
 ---------------------
+
+The following steps will help you to make a contribution to this documentation after you have written a document.
 
 .. Note::
     You will need a GitHub account to complete these steps. If you do not have one, click `here <https://github.com/join>`_ to begin the process of making an account.
 
-Directly on GitHub
-^^^^^^^^^^^^^^^^^^
-
-Read the Docs and GitHub make it fairly simple to contribute to this documentation. This section will show you the basic workflow to get started by editing an existing page on GitHub
-
-
-#. Find the page you would like to edit
-#. Click the "Edit on GitHub" link to the right of the title
-#. Make your changes to the document. Remember to write in ReStructuredText!
-#. Propose your changes as a Pull Request.
-
-If there are any errors with your proposed changes, the documentation team will ask you to make some changes and resubmit. This is as simple as editing the file on GitHub from your fork of the repository.
-
-Manually forking the repository
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Forking the repository
+^^^^^^^^^^^^^^^^^^^^^^
 
 You can make more advanced edits to our documentation by forking `ubports/docs.ubports.com <https://github.com/ubports/docs.ubports.com>`_ on GitHub. If you're not sure how to do this, check out the excellent GitHub guide on `forking projects <https://guides.github.com/activities/forking/>`_.
 
-Building this documentation locally
------------------------------------
+Building the documentation
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If you'd like to build this documentation *before* sending a PR (which you should), follow these instructions on your *local copy* of your fork of the repository.
 
 The documentation can be built by running ``./build.sh`` in the root of this repository. The script will also create a virtual build environment in ``~/ubportsdocsenv`` if none is present.
 
-If all went well, you can enter the ``_build`` directory and open ``index.html`` to view the UBports documentation.
+If all went well, you can enter the ``_build/html`` directory and open ``index.html`` to view the UBports documentation.
+
+If you have trouble building the docs, the first thing to try is deleting the build environment. Run ``rm -r ~/ubportsdocsenv`` and try the build again. Depending on when you first used the build script, you may need to run the ``rm`` command with ``sudo``.
+
+Remember to `update translations`_, then commit your changes and submit a pull request. 
+
+Alternative methods to contribute
+---------------------------------
+
+Translations
+^^^^^^^^^^^^
+
+You may find the components of this document to translate at `its project in UBports Weblate`_.
+
+Writing documents not in RST format
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If you would like to write documents for UBports but are not comfortable writing ReStructuredText, please write it without formatting and post it on the `UBports Forum`_ in the relevant section (likely General). Someone will be able to help you revise your draft and write the required ReStructuredText.
+
+Uncomfortable with Git
+^^^^^^^^^^^^^^^^^^^^^^
+
+If you've written a complete document in ReStructuredText but aren't comfortable using Git or GitHub, please post it on the `UBports Forum`_ in the relevant section (likely General). Someone will be able to help you revise your draft and submit it to this documentation.
 
 Current TODOs
 -------------
 
-This page lists the TODOs that have been included in this documentation. If you know how to fix one, please send us a PR to make it better!
+This page lists the TODOs that have been included in this documentation. If you know how to fix one, please send us a Pull Request to make it better!
 
 .. toctree::
    :maxdepth: 1
@@ -98,3 +113,7 @@ To create a todo, add this markup to your page::
     .. todo:
 
        My todo text
+
+
+.. _Its project in UBports Weblate: https://translate.ubports.com/projects/ubports-docs/
+.. _UBports Forum: https://forums.ubports.com/
