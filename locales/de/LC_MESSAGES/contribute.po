@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-30 21:23-0500\n"
-"PO-Revision-Date: 2018-03-05 11:53+0000\n"
-"Last-Translator: Peter Nerlich <peter.nerlich+ubports@googlemail.com>\n"
+"PO-Revision-Date: 2018-04-02 20:50+0000\n"
+"Last-Translator: Florian Leeber <flori@bin.org.in>\n"
+"Language-Team: German <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-contribute/de/>\n"
 "Language: de\n"
-"Language-Team: German <https://translate.ubports.com/projects/ubports-"
-"docs/documentation-contribute/de/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.3\n"
 
 #: ../../contribute/bugreporting.rst:2
@@ -428,9 +429,8 @@ msgstr ""
 "stößt), wenn der folgenden Anleitung gefolgt wird."
 
 #: ../../contribute/documentation.rst:53
-#, fuzzy
 msgid "Update translations"
-msgstr "Übersetzungen"
+msgstr "Übersetzungen updaten"
 
 #: ../../contribute/documentation.rst:55
 msgid ""
@@ -459,9 +459,8 @@ msgstr ""
 "geschehen, `hier <https://github.com/join>`_ das Konto anlegen."
 
 #: ../../contribute/documentation.rst:66
-#, fuzzy
 msgid "Forking the repository"
-msgstr "Manuelles Forken des Repositorys"
+msgstr "Forken des Repository"
 
 #: ../../contribute/documentation.rst:68
 msgid ""
@@ -479,9 +478,8 @@ msgstr ""
 "<https://guides.github.com/activities/forking/>`_ weiter."
 
 #: ../../contribute/documentation.rst:71
-#, fuzzy
 msgid "Building the documentation"
-msgstr "Diese Dokumentation lokal erzeugen"
+msgstr "Die Dokumentation erzeugen"
 
 #: ../../contribute/documentation.rst:73
 msgid ""
@@ -494,24 +492,22 @@ msgstr ""
 " der *lokalen Kopie* des eigenen Forks vom Repository."
 
 #: ../../contribute/documentation.rst:75
-#, fuzzy
 msgid ""
 "The documentation can be built by running ``./build.sh`` in the root of "
 "this repository. The script will also create a virtual build environment "
 "in ``~/ubportsdocsenv`` if none is present."
 msgstr ""
 "Die Dokumentation kann durch Ausführen von ``./build.sh`` im "
-"Wurzelverzeichnis des Repositorys erzeugt werden. Das Skript erzeugt "
-"ebenfalls eine virtuelle Build-Umgebung in ``~/ubportsdocsenv``, falls "
-"noch nicht vorhanden."
+"Wurzelverzeichnis des Repository erzeugt werden. Das Skript erzeugt "
+"ebenfalls eine virtuelle Build-Umgebung in ``~/ubportsdocsenv``, falls noch "
+"nicht vorhanden."
 
 #: ../../contribute/documentation.rst:77
-#, fuzzy
 msgid ""
 "If all went well, you can enter the ``_build/html`` directory and open "
 "``index.html`` to view the UBports documentation."
 msgstr ""
-"Wenn alles gut geht, kann das Verzeichnis ``_build`` betreten und die "
+"Wenn alles gut geht, kann das Verzeichnis ``_build`` betreten und "
 "``index.html`` geöffnet werden, um die UBports-Dokumentation anzuzeigen."
 
 #: ../../contribute/documentation.rst:79
@@ -572,15 +568,14 @@ msgid "Current TODOs"
 msgstr "Aktuelle TODOs"
 
 #: ../../contribute/documentation.rst:104
-#, fuzzy
 msgid ""
 "This page lists the TODOs that have been included in this documentation. "
 "If you know how to fix one, please send us a Pull Request to make it "
 "better!"
 msgstr ""
-"Diese Seite listet die TODOs auf, die zu dieser Dokumentation gehören. "
-"Falls du weißt, wie eines davon erledigt werden kann, sende uns bitte "
-"einen PR, um die Dokumentation zu verbessern!"
+"Diese Seite listet die TODOs auf, die zu dieser Dokumentation gehören. Falls "
+"du weißt, wie eines davon erledigt werden kann, sende uns bitte einen Pull "
+"Request, um die Dokumentation zu verbessern!"
 
 #: ../../contribute/documentation.rst:111
 msgid "To create a todo, add this markup to your page::"
@@ -669,7 +664,6 @@ msgid "Smoke testing"
 msgstr ""
 
 #: ../../contribute/quality-assurance.rst:9
-#, fuzzy
 msgid ""
 "To test the core functionality of the operating system, we have compiled "
 "`a set of standardized tests "
@@ -679,12 +673,11 @@ msgid ""
 "issues were introduced."
 msgstr ""
 "Um die Kernfunktionalität des Betriebssystems zu testen, haben wir `eine "
-"Liste standartisierter Tests "
-"<https://nc.ubports.com/s/3RnAI7tYzB2PMXs>`_. Diese Tests sollen auf "
-"deinem Gerät ausgeführt werden, um :doc:`Bugs und Rückfälle zu finden und"
-" zu melden <bugreporting>`. Normalerweise werden sie vor einem Release "
-"auf allen Geräten durchgeführt, um sicherzustellen, dass keine neuen "
-"Probleme dazugekommen sind."
+"Liste standardisierter Tests <https://nc.ubports.com/s/3RnAI7tYzB2PMXs>`_. "
+"Führe diese Tests auf Deinem Gerät aus, um :doc:`Bugs und Rückfälle zu "
+"finden und zu melden <bugreporting>`. Normalerweise werden sie vor einem "
+"neuen Release auf allen Geräten durchgeführt, um sicherzustellen, dass keine "
+"neuen Probleme dazugekommen sind."
 
 #: ../../contribute/quality-assurance.rst:12
 msgid "Confirming bug reports"
@@ -1097,4 +1090,3 @@ msgstr "Folge dem Link, um herauszufinden, was das genau bedeutet."
 
 #~ msgid "Remember to `update translations`_ before committing your changes."
 #~ msgstr ""
-
