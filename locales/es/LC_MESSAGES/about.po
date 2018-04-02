@@ -31,6 +31,7 @@ msgid ""
 "and respects your freedom."
 msgstr ""
 "Esta es la documentación del proyecto UBports. Nuestro objetivo es crear un "
+<<<<<<< 91f13945a2a4282d8c543bea5d98dd65bc536adc
 "sistema operativo móvil de código abierto (GPL si es posible) que sea "
 "convergente y respete su libertad."
 
