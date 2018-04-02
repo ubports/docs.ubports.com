@@ -7,18 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-03 14:44-0600\n"
+"POT-Creation-Date: 2018-03-30 20:06-0500\n"
 "PO-Revision-Date: 2018-03-04 07:57+0000\n"
 "Last-Translator: Laurent Rouxel <lrouxel@free.fr>\n"
-"Language-Team: French <https://translate.ubports.com/projects/ubports-docs"
-"/documentation-userguide/fr/>\n"
 "Language: fr\n"
+"Language-Team: French <https://translate.ubports.com/projects/ubports-"
+"docs/documentation-userguide/fr/>\n"
+"Plural-Forms: nplurals=2; plural=n > 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.15\n"
-"Generated-By: Babel 2.5.3\n"
+"Generated-By: Babel 2.5.1\n"
 
 #: ../../userguide/advanceduse/adb.rst:2
 msgid "Shell access via adb"
@@ -817,10 +816,10 @@ msgid ""
 "/libertine-scope.ubuntu>`_. To install applications you need to use the "
 "commandline as described below."
 msgstr ""
-"Pour afficher et lancer ces applications, vous avez besoin du *Desktop Apps "
-"Scope* qui est disponible dans `l'Open Store <https://open-store.io/app"
-"/libertine-scope.ubuntu>`_. Pour installer ces applications, vous devez "
-"utiliser la ligne de commande comme décrit en dessous."
+"Pour afficher et lancer ces applications, vous avez besoin du *Desktop "
+"Apps Scope* qui est disponible dans `l'Open Store <https://open-"
+"store.io/app/libertine-scope.ubuntu>`_. Pour installer ces applications, "
+"vous devez utiliser la ligne de commande comme décrit en dessous."
 
 #: ../../userguide/dailyuse/libertine.rst:9
 msgid "Manage containers"
@@ -1085,12 +1084,13 @@ msgid "Install Ubuntu Touch"
 msgstr "Installer Ubuntu Touch"
 
 #: ../../userguide/install.rst:4
+#, fuzzy
 msgid ""
 "Installing Ubuntu Touch is easy, and a lot of work has gone in to making "
 "the installation process less intimidating to less technical users. The "
 "UBports Installer is a nice graphical tool that you can use to install "
-"Ubuntu Touch on a `supported device <devices.ubports.com>`_ from your "
-"Linux, Mac or Windows computer."
+"Ubuntu Touch on a `supported device <https://ubuntu-touch.io/devices>`_ "
+"from your Linux, Mac or Windows computer."
 msgstr ""
 "Installer Ubuntu Touch est facile, et une grosse partie du travail est "
 "allé dans la conception d'un processus d'installation moins intimidant "
@@ -1100,8 +1100,9 @@ msgstr ""
 "ordinateur Linux, Mac ou Windows."
 
 #: ../../userguide/install.rst:7
+#, fuzzy
 msgid ""
-"If your're switching your device over from Android, you will not be able "
+"If you're switching your device over from Android, you will not be able "
 "to keep any data that is currently on the device. Create an external "
 "backup if you want to keep it."
 msgstr ""
@@ -1121,22 +1122,30 @@ msgstr ""
 "pour votre système d'exploitation :"
 
 #: ../../userguide/install.rst:11
-msgid "Windows: ubports-installer-<version-number>.exe"
+#, fuzzy
+msgid "Windows: ``ubports-installer-<version-number>.exe``"
 msgstr "Windows : ubports-installer-<version-number>.exe"
 
 #: ../../userguide/install.rst:12
-msgid "macOS: ubports-installer-<version-number>.dmg"
+#, fuzzy
+msgid "macOS: ``ubports-installer-<version-number>.dmg``"
 msgstr "macOS : ubports-installer-<version-number>.dmg"
 
 #: ../../userguide/install.rst:13
+#, fuzzy
+msgid "Ubuntu or Debian: ``ubports-installer-<version-number>.deb``"
+msgstr "Windows : ubports-installer-<version-number>.exe"
+
+#: ../../userguide/install.rst:14
+#, fuzzy
 msgid ""
-"Linux: ubports-installer-<version-number>.deb, ubports-installer"
-"-<version-number>.snap or ubports-installer-<version-number>.AppImage"
+"Other Linux distribtuions: ``ubports-installer-<version-number>.snap`` or"
+" ``ubports-installer-<version-number>.AppImage``"
 msgstr ""
 "Linux : ubports-installer-<version-number>.deb, ubports-installer"
 "-<version-number>.snap or ubports-installer-<version-number>.AppImage"
 
-#: ../../userguide/install.rst:15
+#: ../../userguide/install.rst:16
 msgid ""
 "Start the installer and follow the on-screen instructions that will walk "
 "you through the installation process. That's it! Have fun exploring "
@@ -1146,7 +1155,7 @@ msgstr ""
 "guideront à travers le processus d'installation. C'est tout ! Prenez "
 "plaisir en explorant Ubuntu Touch !"
 
-#: ../../userguide/install.rst:17
+#: ../../userguide/install.rst:18
 msgid ""
 "If you're an experienced android developer and want to help us bring "
 "Ubuntu Touch to more devices, visit the :doc:`porting section "
@@ -1156,16 +1165,16 @@ msgstr ""
 "nous aider à porter Ubuntu Touch sur d'autres appareils, visitez la "
 ":doc:` section portage </porting/introduction>`."
 
-#: ../../userguide/install.rst:20
+#: ../../userguide/install.rst:21
 msgid "Install on legacy Android devices"
 msgstr "Installer sur des appareils Android plus anciens"
 
-#: ../../userguide/install.rst:22
+#: ../../userguide/install.rst:23
+#, fuzzy
 msgid ""
 "While the installation process is fairly simple on most devices, some "
-"legacy Bq and Meizu devices require special steps due to their closed "
-"nature. This part of the guide does not apply to any other devices or bq "
-"devices that are running the Canonical version of Ubuntu Touch."
+"legacy Bq and Meizu devices require special steps. This part of the guide"
+" does not apply to other devices."
 msgstr ""
 "Bien que la procédure d'installation soit relativement simple pour la "
 "plupart des appareils, celle-ci requiert des étapes spécifiques pour "
@@ -1174,64 +1183,155 @@ msgstr ""
 "autre appareil ou appareil Bq fonctionnant sous Ubuntu Touch version "
 "Canonical."
 
-#: ../../userguide/install.rst:26
+#: ../../userguide/install.rst:27
 msgid ""
-"This is more or less uncharted territory. If the device manufacturers "
-"don't want you to install an alternative operating system on their "
-"devices, there's not a lot we can do about it. The instructions below are"
-" very vague and should only be followed by experienced users. While we "
-"appreciate that lots of people want to use our OS, flashing a device with"
-" OEM tools shouldn't be done without a bit of know-how and plenty of "
-"research."
+"This is more or less uncharted territory. If your device's manufacturer "
+"does not want you to install an alternative operating system, there's not"
+" a lot we can do about it. The instructions below should only be followed"
+" by experienced users. While we appreciate that lots of people want to "
+"use our OS, flashing a device with OEM tools shouldn't be done without a "
+"bit of know-how and plenty of research."
 msgstr ""
-"On entre là plus ou moins en territoire inconnu. Si le fabricant de "
-"l'appareil ne souhaite pas que vous installiez un autre système "
-"d'exploitation sur leur appareil, nous ne pouvons pas y faire beaucoup. "
-"Les instructions ci dessous sont très génériques et ne devraient être "
-"suivies que par des utilisateurs expérimentés. Bien que nous apprécions "
-"que beaucoup de monde veuille utiliser notre OS, flasher un appareil en "
-"utilisant les outils OEM ne devrait pas se faire sans un minimum de "
-"savoir faire et beaucoup de recherches."
-
-#: ../../userguide/install.rst:28
-msgid ""
-"BQ devices: Download the official Ubuntu Edition firmware from `their "
-"website <http://www.mibqyyo.com/en-download/>`_ and use their SP Flash "
-"Tool to flash it."
-msgstr ""
-"Appareils BQ: Téléchargez la version officielle du micrologiciel Ubuntu "
-"Edition à partir de `leur site web <http://www.mibqyyo.com/en-"
-"download/>`_ et utilisez leur logiciel SP Flash Tool pour le flasher."
 
 #: ../../userguide/install.rst:29
 msgid ""
-"Meizu devices: You are pretty much stuck on Flyme. For the MX4, there are"
-" some instructions floating around for downgrading your OS, gaining root "
-"with an exploit, unlocking your bootloader, and so on. We aren't going to"
-" link to them here for obvious reasons. The Pro5 is Exynos-based and has "
-"its own headaches. You're even more at your own risk on these."
+"Meizu devices are pretty much stuck on Flyme. While the MX4 can be "
+"flashed successfully in some cases, the Pro5 is Exynos-based and has its "
+"own headaches."
 msgstr ""
-"Appareils Meizu: Avec l'OS Flyme ce ne sera souvent difficile. Pour le "
-"MX4, il existe sur le web des instructions pour retourner à une version "
-"antérieure, se donner les droits root en utilisant une faille, débloquer "
-"la partition de démarrage, etc. Nous n'allons pas donner ces liens pour "
-"des raisons évidentes. Le Pro5 est basé sur Exynos et a ses propres "
-"spécificités. C'est encore plus délicat sur cet appareil."
 
 #: ../../userguide/install.rst:33
-msgid ""
-"BE VERY CAREFUL! Getting this part wrong can permanantly damage or brick "
-"your device. NEVER check the \"Format All\" option in SP Flash Tool and "
-"carefully read everything that it tells you. Some users have destroyed "
-"the partition that holds their hardware IDs and can no longer connect to "
-"Wi-Fi or cellular networks."
+msgid "BE VERY CAREFUL! You are responsible for your own actions!"
 msgstr ""
-"FAITES TRÈS ATTENTION! Faire une erreur dans cette procédure peut "
-"définitivement endommager ou briquer votre appareil. NE JAMAIS cocher "
-"l'option \"Format All\" dans l'outil SP Flash et lisez bien tout les "
-"messages que l'application affiche. Il est déjà arrivé que des "
-"utilisateurs détruisent la partition qui contient l'identifiant matériel "
-"et ne peuvent plus se connecter à aucun réseau radio."
+
+#: ../../userguide/install.rst:35
+msgid ""
+"Disconnect all devices and non-essential peripherals from your PC. Charge"
+" your device on a wall-charger (not your PC) to at least 40 percent"
+msgstr ""
+
+#: ../../userguide/install.rst:36
+msgid "Download the Ubuntu Touch ROM for your device:"
+msgstr ""
+
+#: ../../userguide/install.rst:38
+msgid ""
+"`Bq E4.5 <http://www.mibqyyo.com/de-"
+"download/categorias/smartphones/aquaris-e-serie/aquaris-e4-5-ubuntu-"
+"edition/>`_ (*krillin*)"
+msgstr ""
+
+#: ../../userguide/install.rst:39
+msgid ""
+"`Bq E5 HD "
+"<https://storage.googleapis.com/otas/2014/Smartphones/Aquaris_E5_HD/Ubuntu"
+"/VEGETA01A-S11A_BQ_L100EN_2017_170207.zip>`_ (*vegetahd*)"
+msgstr ""
+
+#: ../../userguide/install.rst:40
+msgid ""
+"`Bq M10 HD "
+"<https://storage.googleapis.com/otas/2015/Tablets/Freezer/Ubuntu/OTA_13_FW_version"
+"/cooler-image-stable-6.zip>`_ (*cooler*)"
+msgstr ""
+
+#: ../../userguide/install.rst:41
+#, python-format
+msgid ""
+"`Bq M10 FHD "
+"<https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/Ubuntu/OTA_15"
+"/frieza-image-stable-8.zip>`_ (*frieza*)"
+msgstr ""
+
+#: ../../userguide/install.rst:42
+msgid ""
+"`Meizu MX4 <http://people.canonical.com/~alextu/tangxi/684.zip>`_ "
+"(*arale*)"
+msgstr ""
+
+#: ../../userguide/install.rst:44
+#, python-format
+msgid ""
+"Download `SP flash tool "
+"<https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/Ubuntu/SP_Flash_Tool_exe_Linux_v5.1612.00.100.zip>`_"
+" for Linux."
+msgstr ""
+
+#: ../../userguide/install.rst:46
+msgid ""
+"On Ubuntu 17.10, there are issues with flash_tool loading the shared "
+"library 'libpng12', so this can be used as a workaround:"
+msgstr ""
+
+#: ../../userguide/install.rst:54
+msgid ""
+"You will also need to use `the latest version of the tool "
+"<https://spflashtool.com/download/SP_Flash_Tool_v5.1744_Linux.zip>`_."
+msgstr ""
+
+#: ../../userguide/install.rst:56
+msgid "Extract the zip files"
+msgstr ""
+
+#: ../../userguide/install.rst:57
+msgid "Start the tool with ``sudo``"
+msgstr ""
+
+#: ../../userguide/install.rst:58
+msgid ""
+"Select the ``*Android_scatter.txt`` file from the archive you downloaded "
+"in the first step as the scatter-loading file"
+msgstr ""
+
+#: ../../userguide/install.rst:59
+msgid "Choose \"Firmware Upgrade\""
+msgstr ""
+
+#: ../../userguide/install.rst:60
+msgid ""
+"Double-check you chose \"Firmware Upgrade\" and not \"Download\" or "
+"\"Format All\""
+msgstr ""
+
+#: ../../userguide/install.rst:64
+msgid ""
+"If you select DOWNLOAD rather than FIRMWARE UPGRADE, you will end up with"
+" a useless brick rather than a fancy Ubuntu Touch device. Be sure to "
+"select FIRMWARE UPGRADE."
+msgstr ""
+
+#: ../../userguide/install.rst:66
+msgid "Turn your device completely off, but do not connect it yet"
+msgstr ""
+
+#: ../../userguide/install.rst:67
+msgid "Press the button labeled \"Download\""
+msgstr ""
+
+#: ../../userguide/install.rst:68
+msgid ""
+"Perform a final sanity-check that you selected the \"Firmware Upgrade\" "
+"option, not \"Download\""
+msgstr ""
+
+#: ../../userguide/install.rst:69
+msgid ""
+"Make sure your device is off and connect it to your PC. Don't use a USB "
+"3.0 port, since that's known to cause communication issues with your "
+"device."
+msgstr ""
+
+#: ../../userguide/install.rst:70
+msgid ""
+"`Magic <https://en.wikipedia.org/wiki/Clarke's_three_laws>`_ happens. "
+"Your device will boot into a super old version of Ubuntu Touch."
+msgstr ""
+
+#: ../../userguide/install.rst:71
+msgid ""
+"Congratulations! Your device will now boot into a very old version of "
+"Ubuntu Touch. You can now use the UBports Installer to proceed."
+msgstr ""
 
 #~ msgid ""
 #~ "To make sure the ssh server is "
@@ -1244,3 +1344,98 @@ msgstr ""
 
 #~ msgid "``libertine-container-manage install-package -p PACKAGE-NAME``"
 #~ msgstr ""
+
+#~ msgid ""
+#~ "This is more or less uncharted "
+#~ "territory. If the device manufacturers "
+#~ "don't want you to install an "
+#~ "alternative operating system on their "
+#~ "devices, there's not a lot we can"
+#~ " do about it. The instructions below"
+#~ " are very vague and should only "
+#~ "be followed by experienced users. While"
+#~ " we appreciate that lots of people"
+#~ " want to use our OS, flashing a"
+#~ " device with OEM tools shouldn't be"
+#~ " done without a bit of know-how"
+#~ " and plenty of research."
+#~ msgstr ""
+#~ "On entre là plus ou moins en "
+#~ "territoire inconnu. Si le fabricant de"
+#~ " l'appareil ne souhaite pas que vous"
+#~ " installiez un autre système d'exploitation"
+#~ " sur leur appareil, nous ne pouvons"
+#~ " pas y faire beaucoup. Les "
+#~ "instructions ci dessous sont très "
+#~ "génériques et ne devraient être suivies"
+#~ " que par des utilisateurs expérimentés. "
+#~ "Bien que nous apprécions que beaucoup"
+#~ " de monde veuille utiliser notre OS,"
+#~ " flasher un appareil en utilisant les"
+#~ " outils OEM ne devrait pas se "
+#~ "faire sans un minimum de savoir "
+#~ "faire et beaucoup de recherches."
+
+#~ msgid ""
+#~ "BQ devices: Download the official Ubuntu"
+#~ " Edition firmware from `their website "
+#~ "<http://www.mibqyyo.com/en-download/>`_ and use "
+#~ "their SP Flash Tool to flash it."
+#~ msgstr ""
+#~ "Appareils BQ: Téléchargez la version "
+#~ "officielle du micrologiciel Ubuntu Edition "
+#~ "à partir de `leur site web "
+#~ "<http://www.mibqyyo.com/en-download/>`_ et utilisez"
+#~ " leur logiciel SP Flash Tool pour "
+#~ "le flasher."
+
+#~ msgid ""
+#~ "Meizu devices: You are pretty much "
+#~ "stuck on Flyme. For the MX4, there"
+#~ " are some instructions floating around "
+#~ "for downgrading your OS, gaining root"
+#~ " with an exploit, unlocking your "
+#~ "bootloader, and so on. We aren't "
+#~ "going to link to them here for "
+#~ "obvious reasons. The Pro5 is Exynos-"
+#~ "based and has its own headaches. "
+#~ "You're even more at your own risk"
+#~ " on these."
+#~ msgstr ""
+#~ "Appareils Meizu: Avec l'OS Flyme ce "
+#~ "ne sera souvent difficile. Pour le "
+#~ "MX4, il existe sur le web des "
+#~ "instructions pour retourner à une "
+#~ "version antérieure, se donner les droits"
+#~ " root en utilisant une faille, "
+#~ "débloquer la partition de démarrage, "
+#~ "etc. Nous n'allons pas donner ces "
+#~ "liens pour des raisons évidentes. Le "
+#~ "Pro5 est basé sur Exynos et a "
+#~ "ses propres spécificités. C'est encore "
+#~ "plus délicat sur cet appareil."
+
+#~ msgid ""
+#~ "BE VERY CAREFUL! Getting this part "
+#~ "wrong can permanantly damage or brick"
+#~ " your device. NEVER check the "
+#~ "\"Format All\" option in SP Flash "
+#~ "Tool and carefully read everything that"
+#~ " it tells you. Some users have "
+#~ "destroyed the partition that holds their"
+#~ " hardware IDs and can no longer "
+#~ "connect to Wi-Fi or cellular "
+#~ "networks."
+#~ msgstr ""
+#~ "FAITES TRÈS ATTENTION! Faire une erreur"
+#~ " dans cette procédure peut définitivement"
+#~ " endommager ou briquer votre appareil. "
+#~ "NE JAMAIS cocher l'option \"Format All\""
+#~ " dans l'outil SP Flash et lisez "
+#~ "bien tout les messages que l'application"
+#~ " affiche. Il est déjà arrivé que "
+#~ "des utilisateurs détruisent la partition "
+#~ "qui contient l'identifiant matériel et "
+#~ "ne peuvent plus se connecter à "
+#~ "aucun réseau radio."
+

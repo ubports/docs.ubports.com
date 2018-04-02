@@ -7,18 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-02 20:00-0600\n"
+"POT-Creation-Date: 2018-03-30 21:54-0500\n"
 "PO-Revision-Date: 2018-01-05 10:44+0000\n"
 "Last-Translator: sambuccid <sambuccid@gmail.com>\n"
-"Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs"
-"/documentation-index/it/>\n"
 "Language: it\n"
+"Language-Team: Italian <https://translate.ubports.com/projects/ubports-"
+"docs/documentation-index/it/>\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.15\n"
-"Generated-By: Babel 2.5.1\n"
+"Generated-By: Babel 2.5.3\n"
 
 #: ../../index.rst:2
 msgid "Welcome to the UBports documentation!"
@@ -34,9 +33,9 @@ msgid ""
 "Touch is a mobile operating system focused on ease of use, privacy, and "
 "convergence."
 msgstr ""
-"UBports sviluppa il sistema operativo mobile Ubuntu Touch. Ubuntu Touch è un "
-"sistema operativo mobile focalizzato sulla facilità d'uso, sulla privacy e "
-"sulla convergenza."
+"UBports sviluppa il sistema operativo mobile Ubuntu Touch. Ubuntu Touch è"
+" un sistema operativo mobile focalizzato sulla facilità d'uso, sulla "
+"privacy e sulla convergenza."
 
 #: ../../index.rst:8
 msgid ""
@@ -45,10 +44,10 @@ msgid ""
 "components. If this is your first time here, please consider reading our "
 ":doc:`introduction <about/introduction>`."
 msgstr ""
-"In questo sito troverai le istruzioni su come installare Ubuntu Touch sul "
-"tuo smartphone, manuali d'uso e documentazioni dettagliate su tutti i "
-"componenti del sistema. Se questa è la tua prima volta qui, ti consigliamo "
-"la nostra :doc:`introduzione <about/introduction>`."
+"In questo sito troverai le istruzioni su come installare Ubuntu Touch sul"
+" tuo smartphone, manuali d'uso e documentazioni dettagliate su tutti i "
+"componenti del sistema. Se questa è la tua prima volta qui, ti "
+"consigliamo la nostra :doc:`introduzione <about/introduction>`."
 
 #: ../../index.rst:10
 msgid ""
@@ -58,26 +57,63 @@ msgstr ""
 "Se vuoi aiutare a migliorare questa documentazione, :doc:`la pagina "
 "Contributo alla documentazione <contribute/documentation>` ti aiuterà."
 
-#: ../../index.rst:13
+#: ../../index.rst:12
+msgid "You may view this documentation in the following languages:"
+msgstr ""
+
+#: ../../index.rst:14
+msgid "`English <https://docs.ubports.com/en/latest/>`_"
+msgstr ""
+
+#: ../../index.rst:15
+msgid "`Català <https://docs.ubports.com/ca/latest/>`_"
+msgstr ""
+
+#: ../../index.rst:16
+msgid "`Français <https://docs.ubports.com/fr/latest/>`_"
+msgstr ""
+
+#: ../../index.rst:17
+msgid "`Deutsch <https://docs.ubports.com/de/latest/>`_"
+msgstr ""
+
+#: ../../index.rst:18
+msgid "`Italiano <https://docs.ubports.com/it/latest/>`_"
+msgstr ""
+
+#: ../../index.rst:19
+msgid "`Română <https://docs.ubports.com/ro/latest/>`_"
+msgstr ""
+
+#: ../../index.rst:20
+msgid "`Türkçe <https://docs.ubports.com/tr/latest/>`_"
+msgstr ""
+
+#: ../../index.rst:21
+msgid "`Español <https://docs.ubports.com/es/latest/>`_"
+msgstr ""
+
+#: ../../index.rst:23
 msgid "About"
 msgstr "A proposito"
 
-#: ../../index.rst:22
+#: ../../index.rst:32
 msgid "User Guide"
 msgstr "Guida Utente"
 
-#: ../../index.rst:32
+#: ../../index.rst:42
 msgid "Contribute"
 msgstr "Contribuire"
 
-#: ../../index.rst:40
+#: ../../index.rst:50
 msgid "App development"
 msgstr "Sviluppo App"
 
-#: ../../index.rst:48
+#: ../../index.rst:57
+msgid "Porting"
+msgstr "Trasporto"
+
+#: ../../index.rst:64
 msgid "Platform"
 msgstr "Piattaforma"
 
-#: ../../index.rst:58
-msgid "Porting"
-msgstr "Trasporto"

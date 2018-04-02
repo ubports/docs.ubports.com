@@ -7,17 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-03 14:44-0600\n"
+"POT-Creation-Date: 2018-03-30 21:23-0500\n"
 "PO-Revision-Date: 2018-03-04 17:26+0000\n"
 "Last-Translator: Anne Onyme <anneonyme017@openmailbox.org>\n"
-"Language-Team: French <https://translate.ubports.com/projects/ubports-docs"
-"/documentation-contribute/fr/>\n"
 "Language: fr\n"
+"Language-Team: French <https://translate.ubports.com/projects/ubports-"
+"docs/documentation-contribute/fr/>\n"
+"Plural-Forms: nplurals=2; plural=n > 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.3\n"
 
 #: ../../contribute/bugreporting.rst:2
@@ -343,11 +342,11 @@ msgstr ""
 " éviter des problèmes de style, de format ou de liens. Si vous ne suivez "
 "pas ces recommandations, nous n'accepterons pas votre document."
 
-#: ../../contribute/documentation.rst:16
+#: ../../contribute/documentation.rst:15
 msgid "Title"
 msgstr "Titre"
 
-#: ../../contribute/documentation.rst:18
+#: ../../contribute/documentation.rst:17
 msgid ""
 "All pages must have a document title that will be shown in the table of "
 "contents (left sidebar) and at the top of the page. This title is "
@@ -357,13 +356,13 @@ msgstr ""
 " le sommaire (volet de gauche) et en haut de la page. Ce titre est "
 "souligné avec des signes égal."
 
-#: ../../contribute/documentation.rst:20
+#: ../../contribute/documentation.rst:19
 msgid "Titles should be sentence cased rather than Title Cased. For example::"
 msgstr ""
 "Les mots dans les titres doivent commencer par une minuscule plutôt que "
 "par une majuscule. Par exemple ::"
 
-#: ../../contribute/documentation.rst:29
+#: ../../contribute/documentation.rst:28
 msgid ""
 "There isn't a single definition of title casing that everyone follows, "
 "but sentence casing is easy. This helps keep capitalization in the table "
@@ -373,11 +372,11 @@ msgstr ""
 "l'écriture des titres, mais mettre des minuscules est simple. Cela aide à"
 " conserver les majuscules de manière cohérente dans le sommaire."
 
-#: ../../contribute/documentation.rst:32
+#: ../../contribute/documentation.rst:31
 msgid "Table of contents"
 msgstr "Sommaire"
 
-#: ../../contribute/documentation.rst:34
+#: ../../contribute/documentation.rst:33
 msgid ""
 "People can't navigate to your new page if they can't find it. Neither can"
 " Sphinx. That's why you need to add new pages to Sphinx's table of "
@@ -387,7 +386,7 @@ msgstr ""
 "peuvent pas la trouver. Sphinx non plus. C'est pour quoi vous devez "
 "ajouter de nouvelles pages au sommaire de Sphinx."
 
-#: ../../contribute/documentation.rst:36
+#: ../../contribute/documentation.rst:35
 msgid ""
 "You can do this by adding the page to the ``index.rst`` file in the same "
 "directory that you created it. For example, if you create a file called "
@@ -399,7 +398,7 @@ msgstr ""
 "fichier appelé « newpage.rst », vous ajouterez la ligne précédée d'un "
 "chevron (>) dans l'index le plus proche ::"
 
-#: ../../contribute/documentation.rst:46
+#: ../../contribute/documentation.rst:45
 msgid ""
 "The order matters. If you would like your page to appear in a certain "
 "place in the table of contents, place it there. In the previous example, "
@@ -409,11 +408,11 @@ msgstr ""
 "certaine place dans le sommaire, placez-la là. Dans l'exemple précédent, "
 "la nouvelle page serait ajoutée à la fin de ce sommaire."
 
-#: ../../contribute/documentation.rst:49
+#: ../../contribute/documentation.rst:48
 msgid "Warnings"
 msgstr "Avertissements"
 
-#: ../../contribute/documentation.rst:51
+#: ../../contribute/documentation.rst:50
 msgid ""
 "Your edits must not introduce any warnings into the documentation build. "
 "If any warnings occur, the build will fail and your pull request will be "
@@ -430,11 +429,29 @@ msgstr ""
 "build avec votre erreur) si vous suivez nos instructions de compilation "
 "ci-dessous."
 
-#: ../../contribute/documentation.rst:54
+#: ../../contribute/documentation.rst:53
+#, fuzzy
+msgid "Update translations"
+msgstr "Traductions"
+
+#: ../../contribute/documentation.rst:55
+msgid ""
+"You must update the translation files to match your changes before you "
+"commit them. To do this, run ``update-translations.sh`` in this "
+"repository."
+msgstr ""
+
+#: ../../contribute/documentation.rst:58
 msgid "Contribution workflow"
 msgstr "Circuit de contribution"
 
-#: ../../contribute/documentation.rst:57
+#: ../../contribute/documentation.rst:60
+msgid ""
+"The following steps will help you to make a contribution to this "
+"documentation after you have written a document."
+msgstr ""
+
+#: ../../contribute/documentation.rst:63
 msgid ""
 "You will need a GitHub account to complete these steps. If you do not "
 "have one, click `here <https://github.com/join>`_ to begin the process of"
@@ -444,54 +461,12 @@ msgstr ""
 "n'en avez pas, cliquez `ici <https://github.com/join>`_ pour lancer le "
 "processus de création d'un compte."
 
-#: ../../contribute/documentation.rst:60
-msgid "Directly on GitHub"
-msgstr "Directement sur GitHub"
-
-#: ../../contribute/documentation.rst:62
-msgid ""
-"Read the Docs and GitHub make it fairly simple to contribute to this "
-"documentation. This section will show you the basic workflow to get "
-"started by editing an existing page on GitHub"
-msgstr ""
-"Read the Docs et GitHub vous faciliteront vos contributions à la "
-"documentation. Cette section vous montrera le circuit de base pour "
-"commencer à modifier une page existante sur GitHub"
-
-#: ../../contribute/documentation.rst:65
-msgid "Find the page you would like to edit"
-msgstr "Trouver la page que vous souhaitez modifier"
-
 #: ../../contribute/documentation.rst:66
-msgid "Click the \"Edit on GitHub\" link to the right of the title"
-msgstr "Cliquez sur le lien « Modifier sur GitHub » à la droite du titre"
-
-#: ../../contribute/documentation.rst:67
-msgid "Make your changes to the document. Remember to write in ReStructuredText!"
-msgstr ""
-"Faites vos changements dans le document. Souvenez-vous d'écrire en "
-"ReStructuredText !"
-
-#: ../../contribute/documentation.rst:68
-msgid "Propose your changes as a Pull Request."
-msgstr "Proposer vos modifications dans une contribution."
-
-#: ../../contribute/documentation.rst:70
-msgid ""
-"If there are any errors with your proposed changes, the documentation "
-"team will ask you to make some changes and resubmit. This is as simple as"
-" editing the file on GitHub from your fork of the repository."
-msgstr ""
-"S'il existe une erreur dans votre proposition de modification, l'équipe "
-"de documentation vous demandera de réaliser quelques modifications et de "
-"la soumettre à nouveau. Ceci est aussi simple que de modifier le fichier "
-"sur GitHub à partir de votre version du répertoire."
-
-#: ../../contribute/documentation.rst:73
-msgid "Manually forking the repository"
+#, fuzzy
+msgid "Forking the repository"
 msgstr "Cloner manuellement le répertoire"
 
-#: ../../contribute/documentation.rst:75
+#: ../../contribute/documentation.rst:68
 msgid ""
 "You can make more advanced edits to our documentation by forking "
 "`ubports/docs.ubports.com <https://github.com/ubports/docs.ubports.com>`_"
@@ -506,11 +481,12 @@ msgstr ""
 "guide de GitHub  sur `le clonage de projets "
 "<https://guides.github.com/activities/forking/>`_."
 
-#: ../../contribute/documentation.rst:78
-msgid "Building this documentation locally"
+#: ../../contribute/documentation.rst:71
+#, fuzzy
+msgid "Building the documentation"
 msgstr "Compiler cette documentation localement"
 
-#: ../../contribute/documentation.rst:80
+#: ../../contribute/documentation.rst:73
 msgid ""
 "If you'd like to build this documentation *before* sending a PR (which "
 "you should), follow these instructions on your *local copy* of your fork "
@@ -520,7 +496,8 @@ msgstr ""
 "modification (ce que vous devriez faire), suivez ces instructions dans "
 "votre *copie locale* de votre clone du répertoire."
 
-#: ../../contribute/documentation.rst:82
+#: ../../contribute/documentation.rst:75
+#, fuzzy
 msgid ""
 "The documentation can be built by running ``./build.sh`` in the root of "
 "this repository. The script will also create a virtual build environment "
@@ -531,28 +508,84 @@ msgstr ""
 "virtuel de compilation dans ``~/ubportsdocsenv`` s'il n'est pas déjà "
 "présent."
 
-#: ../../contribute/documentation.rst:84
+#: ../../contribute/documentation.rst:77
+#, fuzzy
 msgid ""
-"If all went well, you can enter the ``_build`` directory and open "
+"If all went well, you can enter the ``_build/html`` directory and open "
 "``index.html`` to view the UBports documentation."
 msgstr ""
 "Si tout s'est bien passé, vous pourrez accéder au répertoire ``_build`` "
 "et ouvrir ``index.html`` pour visualiser la documentation d'UBports."
 
-#: ../../contribute/documentation.rst:87
-msgid "Current TODOs"
-msgstr "Actuellement à faire"
+#: ../../contribute/documentation.rst:79
+msgid ""
+"If you have trouble building the docs, the first thing to try is deleting"
+" the build environment. Run ``rm -r ~/ubportsdocsenv`` and try the build "
+"again. Depending on when you first used the build script, you may need to"
+" run the ``rm`` command with ``sudo``."
+msgstr ""
+
+#: ../../contribute/documentation.rst:81
+msgid ""
+"Remember to `update translations`_, then commit your changes and submit a"
+" pull request."
+msgstr ""
+
+#: ../../contribute/documentation.rst:84
+msgid "Alternative methods to contribute"
+msgstr ""
+
+#: ../../contribute/documentation.rst:87 ../../contribute/translations.rst:2
+msgid "Translations"
+msgstr "Traductions"
 
 #: ../../contribute/documentation.rst:89
 msgid ""
+"You may find the components of this document to translate at `its project"
+" in UBports Weblate`_."
+msgstr ""
+
+#: ../../contribute/documentation.rst:92
+msgid "Writing documents not in RST format"
+msgstr ""
+
+#: ../../contribute/documentation.rst:94
+msgid ""
+"If you would like to write documents for UBports but are not comfortable "
+"writing ReStructuredText, please write it without formatting and post it "
+"on the `UBports Forum`_ in the relevant section (likely General). Someone"
+" will be able to help you revise your draft and write the required "
+"ReStructuredText."
+msgstr ""
+
+#: ../../contribute/documentation.rst:97
+msgid "Uncomfortable with Git"
+msgstr ""
+
+#: ../../contribute/documentation.rst:99
+msgid ""
+"If you've written a complete document in ReStructuredText but aren't "
+"comfortable using Git or GitHub, please post it on the `UBports Forum`_ "
+"in the relevant section (likely General). Someone will be able to help "
+"you revise your draft and submit it to this documentation."
+msgstr ""
+
+#: ../../contribute/documentation.rst:102
+msgid "Current TODOs"
+msgstr "Actuellement à faire"
+
+#: ../../contribute/documentation.rst:104
+#, fuzzy
+msgid ""
 "This page lists the TODOs that have been included in this documentation. "
-"If you know how to fix one, please send us a PR to make it better!"
+"If you know how to fix one, please send us a Pull Request to make it "
+"better!"
 msgstr ""
 "Cette page liste les choses à faire qui seront inclues dans cette "
 "documentation. Si vous savez comment en régler une, merci de nous envoyer"
 " une proposition pour l'améliorer !"
 
-#: ../../contribute/documentation.rst:96
+#: ../../contribute/documentation.rst:111
 msgid "To create a todo, add this markup to your page::"
 msgstr "Pour créer une chose à faire, ajoutez cet indicateur dans votre page ::"
 
@@ -629,12 +662,12 @@ msgid ""
 "guides to better understand the workflow. For real-time communication, "
 "you can join our `telegram group <http://t.me/ubports_qa_team>`_."
 msgstr ""
-"Cette page explique comment aider l'équipe d'assurance qualité d'UBports, à "
-"la fois comme un membre officiel  et en tant que nouveau contributeur. "
-"Veuillez aussi lire les guides de :doc:`suivi des problèmes </about/process"
-"/issue-tracking>` et de :doc:`signalement de problèmes <bugreporting>` pour "
-"mieux comprendre le déroulement des processus. Pour communiquer en temps "
-"réel, vous pouvez joindre notre `groupe telegram "
+"Cette page explique comment aider l'équipe d'assurance qualité d'UBports,"
+" à la fois comme un membre officiel  et en tant que nouveau contributeur."
+" Veuillez aussi lire les guides de :doc:`suivi des problèmes "
+"</about/process/issue-tracking>` et de :doc:`signalement de problèmes "
+"<bugreporting>` pour mieux comprendre le déroulement des processus. Pour "
+"communiquer en temps réel, vous pouvez joindre notre `groupe telegram "
 "<http://t.me/ubports_qa_team>`_."
 
 #: ../../contribute/quality-assurance.rst:7
@@ -763,10 +796,6 @@ msgid ""
 msgstr ""
 "Si le nouveau problème a déjà été signalé ailleurs, marquez-le comme "
 "**duplicate** (doublon) et fermez-le."
-
-#: ../../contribute/translations.rst:2
-msgid "Translations"
-msgstr "Traductions"
 
 #: ../../contribute/translations.rst:4
 msgid ""
@@ -1081,3 +1110,60 @@ msgstr "Visitez ce site pour apprendre ce que cela signifie exactement."
 #~ " the same on `Liberpay "
 #~ "<https://liberapay.com/UBports/>`_!"
 #~ msgstr ""
+
+#~ msgid "Directly on GitHub"
+#~ msgstr "Directement sur GitHub"
+
+#~ msgid ""
+#~ "Read the Docs and GitHub make it"
+#~ " fairly simple to contribute to this"
+#~ " documentation. This section will show "
+#~ "you the basic workflow to get "
+#~ "started by editing an existing page "
+#~ "on GitHub"
+#~ msgstr ""
+#~ "Read the Docs et GitHub vous "
+#~ "faciliteront vos contributions à la "
+#~ "documentation. Cette section vous montrera "
+#~ "le circuit de base pour commencer "
+#~ "à modifier une page existante sur "
+#~ "GitHub"
+
+#~ msgid "Find the page you would like to edit"
+#~ msgstr "Trouver la page que vous souhaitez modifier"
+
+#~ msgid "Click the \"Edit on GitHub\" link to the right of the title"
+#~ msgstr "Cliquez sur le lien « Modifier sur GitHub » à la droite du titre"
+
+#~ msgid ""
+#~ "Make your changes to the document. "
+#~ "Remember to write in ReStructuredText!"
+#~ msgstr ""
+#~ "Faites vos changements dans le document."
+#~ " Souvenez-vous d'écrire en ReStructuredText"
+#~ " !"
+
+#~ msgid "Propose your changes as a Pull Request."
+#~ msgstr "Proposer vos modifications dans une contribution."
+
+#~ msgid ""
+#~ "If there are any errors with your"
+#~ " proposed changes, the documentation team"
+#~ " will ask you to make some "
+#~ "changes and resubmit. This is as "
+#~ "simple as editing the file on "
+#~ "GitHub from your fork of the "
+#~ "repository."
+#~ msgstr ""
+#~ "S'il existe une erreur dans votre "
+#~ "proposition de modification, l'équipe de "
+#~ "documentation vous demandera de réaliser "
+#~ "quelques modifications et de la "
+#~ "soumettre à nouveau. Ceci est aussi "
+#~ "simple que de modifier le fichier "
+#~ "sur GitHub à partir de votre "
+#~ "version du répertoire."
+
+#~ msgid "Remember to `update translations`_ before committing your changes."
+#~ msgstr ""
+
