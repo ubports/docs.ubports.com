@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-30 20:06-0500\n"
-"PO-Revision-Date: 2018-03-12 08:46+0000\n"
-"Last-Translator: Stefano Melchior <stefano.melchior@me.com>\n"
+"PO-Revision-Date: 2018-04-02 20:48+0000\n"
+"Last-Translator: Mike <miguel2000@livecom.it>\n"
+"Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-userguide/it/>\n"
 "Language: it\n"
-"Language-Team: Italian <https://translate.ubports.com/projects/ubports-"
-"docs/documentation-userguide/it/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../userguide/advanceduse/adb.rst:2
@@ -1174,15 +1175,20 @@ msgid ""
 msgstr ""
 
 #: ../../userguide/install.rst:29
+#, fuzzy
 msgid ""
 "Meizu devices are pretty much stuck on Flyme. While the MX4 can be "
 "flashed successfully in some cases, the Pro5 is Exynos-based and has its "
 "own headaches."
 msgstr ""
+"I telefoni Meizu sono abbastanza bloccati con Flyme. Mentre l'MX4 può essere "
+"flashato con successo in alcuno casi, il Pro5 è basato su Exynos e ha i suoi "
+"grattacapi."
 
 #: ../../userguide/install.rst:33
+#, fuzzy
 msgid "BE VERY CAREFUL! You are responsible for your own actions!"
-msgstr ""
+msgstr "SII MOLTO CAUTO! Sei responsabile delle tue azione!"
 
 #: ../../userguide/install.rst:35
 msgid ""
@@ -1192,14 +1198,18 @@ msgstr ""
 
 #: ../../userguide/install.rst:36
 msgid "Download the Ubuntu Touch ROM for your device:"
-msgstr ""
+msgstr "Scarica la ROM di Ubuntu Touch per il tupe dispositivo:"
 
 #: ../../userguide/install.rst:38
+#, fuzzy
 msgid ""
 "`Bq E4.5 <http://www.mibqyyo.com/de-"
 "download/categorias/smartphones/aquaris-e-serie/aquaris-e4-5-ubuntu-"
 "edition/>`_ (*krillin*)"
 msgstr ""
+"`Bq E4.5 <http://www.mibqyyo.com/en-"
+"download/categorias/smartphones/aquaris-e-serie/aquaris-e4-5-ubuntu-"
+"edition/>`_ (*krillin*)"
 
 #: ../../userguide/install.rst:39
 msgid ""
@@ -1420,4 +1430,3 @@ msgstr ""
 #~ " loro ID hardware con conseguente "
 #~ "impossibilità a connettersi a reti "
 #~ "Wi-Fi o cellulari."
-
