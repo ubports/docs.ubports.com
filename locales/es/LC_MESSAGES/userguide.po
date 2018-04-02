@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-30 20:06-0500\n"
-"PO-Revision-Date: 2018-04-02 20:53+0000\n"
+"PO-Revision-Date: 2018-04-02 21:54+0000\n"
 "Last-Translator: advocatux <advocatux@airpost.net>\n"
 "Language-Team: Spanish <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-userguide/es/>\n"
@@ -840,7 +840,9 @@ msgstr "Puede añadir opciones extra tales como:"
 
 #: ../../userguide/dailyuse/libertine.rst:20
 msgid "``-n name`` name is a more user friendly name of the container"
-msgstr "``-n name`` name es un nombre del contenedor más fácil de usar"
+msgstr ""
+"``-n name`` sustituya \"name\" por un nombre para el contenedor que le sea "
+"fácil de usar"
 
 #: ../../userguide/dailyuse/libertine.rst:21
 msgid ""
