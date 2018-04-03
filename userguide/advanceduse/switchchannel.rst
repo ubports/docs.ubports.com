@@ -42,7 +42,6 @@ You can run the following command from your computer using ``adb`` to change cha
 ::
 
 $ sudo system-image-cli --switch [channel name]
-.
 
 where ``[channel name]`` is the full name of one of the current channels, for example 15.04/stable. This process will take a while and will not give any feedback while it's running. You can't run this command from the Ubuntu Touch terminal due to confinement.
 
@@ -62,7 +61,6 @@ You can also (handily) use the ``ubuntu-device-flash`` utility to flash a differ
 ::
 
 $ sudo ubuntu-device-flash --server=http://system-image.ubports.com touch --channel=[channel name]
-.
 
 magic-device-tool (from PC)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -78,10 +76,8 @@ You can upgrade your system either by using ``ubuntu-device-flash`` command from
 In the first case, please, use the following ``--channel`` name option:
 
 --channel=ubuntu-ubports/16.04/devel
-.
 
 You can also perform this switch from Marius Quabek's ``magic-device-tool``
-.
 
 Past Channels
 -------------
