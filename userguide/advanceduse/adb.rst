@@ -73,7 +73,8 @@ $ adb shell "mount -a"
 $ adb shell "mkdir /image"
 $ adb shell "mount /data/system.img /image"
 $ adb push system.img /image/var/lib/lxc/android/system.img
+$ adb shell "umount /image"
 $ adb reboot
 
-And you're done. Your phone should now reboot into Ubuntu with your own build of Android running in the container.
+And you're done. Your device should now reboot into Ubuntu Touch with your own build of Android running within the container.
 
