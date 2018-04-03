@@ -45,8 +45,7 @@ Testing applications on devices
 
 As far as testing environments, the developer can choose an **Ubuntu emulator**, which can be x86 or armhf, or real hardware with a **reference device**, such as the Nexus 4 or Nexus 7. While it is possible that simple apps may work in the local desktop environment, it is only in one of these supported testing environments that the entire set of framework APIs are available. It is generally recommended that an app or scope be packaged as a click and installed to the device or emulator in order to properly test it. Again the IDE will assist with creating, validating, deploying and installing the package.
 
-:doc:`Learn how to run apps with the Ubuntu SDK
-IDE  › <platform/sdk/tutorials-running-apps-from-the-sdk>`
+:doc:`Learn how to run apps with the Ubuntu SDK IDE  › <platform/sdk/tutorials-running-apps-from-the-sdk>`
 
 Your first app
 --------------
