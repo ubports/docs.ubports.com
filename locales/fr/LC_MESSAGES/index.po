@@ -66,7 +66,7 @@ msgstr "Vous pouvez consulter cette documentation dans les langues suivantes :"
 
 #: ../../index.rst:14
 msgid "`English <https://docs.ubports.com/en/latest/>`_"
-msgstr "`Anglais <https://docs.ubports.com/en/latest/>`_"
+msgstr "`English <https://docs.ubports.com/en/latest/>`_"
 
 #: ../../index.rst:15
 msgid "`Català <https://docs.ubports.com/ca/latest/>`_"
