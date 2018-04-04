@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-30 20:06-0500\n"
-"PO-Revision-Date: 2018-04-02 19:08+0000\n"
-"Last-Translator: advocatux <advocatux@airpost.net>\n"
+"PO-Revision-Date: 2018-04-04 06:57+0000\n"
+"Last-Translator: Bolly <bolly@mailbox.org>\n"
 "Language-Team: Spanish <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-appdev/es/>\n"
 "Language: es\n"
@@ -202,7 +202,7 @@ msgstr "Lista no exhaustiva de propiedades:"
 
 #: ../../appdev/index.rst:58
 msgid "Name: Application title has shown in the dash"
-msgstr "Nombre: título que la aplicación muestra en el tablero"
+msgstr "Name: título que la aplicación muestra en el tablero"
 
 #: ../../appdev/index.rst:59
 msgid "Exec: Path to the executable file"
@@ -210,7 +210,7 @@ msgstr "Exec: ruta al archivo ejecutable"
 
 #: ../../appdev/index.rst:60
 msgid "Icon: Path to the icon to display"
-msgstr "Icono: ruta al icono que mostrar"
+msgstr "Icon: ruta al icono que mostrar"
 
 #: ../../appdev/index.rst:61
 msgid "Terminal: ``false`` if will not run in terminal window"
@@ -221,8 +221,8 @@ msgid ""
 "Type: Specifies the type of the launcher file. The type can be "
 "Application, Link or Directory."
 msgstr ""
-"Tipo: especifica el tipo de archivo lanzador. El tipo puede ser "
-"aplicación, enlace o directorio."
+"Type: especifica el tipo de archivo lanzador. El tipo puede ser aplicación, "
+"enlace o directorio."
 
 #: ../../appdev/index.rst:63
 msgid "X-Ubuntu-Touch: ``true`` to make the app visible"
