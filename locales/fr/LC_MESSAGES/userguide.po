@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-30 20:06-0500\n"
-"PO-Revision-Date: 2018-03-04 07:57+0000\n"
-"Last-Translator: Laurent Rouxel <lrouxel@free.fr>\n"
+"PO-Revision-Date: 2018-04-04 11:13+0000\n"
+"Last-Translator: Max Libre <libremax@protonmail.com>\n"
+"Language-Team: French <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-userguide/fr/>\n"
 "Language: fr\n"
-"Language-Team: French <https://translate.ubports.com/projects/ubports-"
-"docs/documentation-userguide/fr/>\n"
-"Plural-Forms: nplurals=2; plural=n > 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../userguide/advanceduse/adb.rst:2
@@ -1192,6 +1193,14 @@ msgid ""
 "use our OS, flashing a device with OEM tools shouldn't be done without a "
 "bit of know-how and plenty of research."
 msgstr ""
+"C'est un territoire plus ou moins inexploré. Si le fabricant de votre "
+"appareil ne veut pas que vous installiez un système d'exploitation "
+"alternatif, il n'y a pas grand-chose que nous puissions faire. Les "
+"instructions ci-dessous ne doivent être suivies que par des utilisateurs "
+"expérimentés. Bien que nous apprécions le fait que beaucoup de gens veulent "
+"utiliser notre système d'exploitation,  flasher un appareil avec des outils "
+"OEM ne devrait pas être fait sans un peu de savoir-faire et beaucoup de "
+"recherche."
 
 #: ../../userguide/install.rst:29
 msgid ""
@@ -1199,20 +1208,26 @@ msgid ""
 "flashed successfully in some cases, the Pro5 is Exynos-based and has its "
 "own headaches."
 msgstr ""
+"Les appareils Meizu sont en grande partie bloqués  sur Flyme. Alors que le "
+"MX4 peut être flashé avec succès dans certains cas, le Pro5 est basé sur "
+"Exynos et a ses propres problèmes."
 
 #: ../../userguide/install.rst:33
 msgid "BE VERY CAREFUL! You are responsible for your own actions!"
-msgstr ""
+msgstr "SOYEZ TRÈS PRUDENT ! Vous êtes responsable de vos propres actions !"
 
 #: ../../userguide/install.rst:35
 msgid ""
 "Disconnect all devices and non-essential peripherals from your PC. Charge"
 " your device on a wall-charger (not your PC) to at least 40 percent"
 msgstr ""
+"Déconnectez tous les appareils et périphériques non essentiels de votre PC. "
+"Chargez votre appareil sur un chargeur mural (et non sur votre PC) à au "
+"moins 40 %."
 
 #: ../../userguide/install.rst:36
 msgid "Download the Ubuntu Touch ROM for your device:"
-msgstr ""
+msgstr "Téléchargez la ROM Ubuntu Touch pour votre appareil :"
 
 #: ../../userguide/install.rst:38
 msgid ""
@@ -1220,6 +1235,9 @@ msgid ""
 "download/categorias/smartphones/aquaris-e-serie/aquaris-e4-5-ubuntu-"
 "edition/>`_ (*krillin*)"
 msgstr ""
+"`Bq E4.5 <http://www.mibqyyo.com/de-"
+"download/categorias/smartphones/aquaris-e-serie/aquaris-e4-5-ubuntu-"
+"edition/>`_ (*krillin*)"
 
 #: ../../userguide/install.rst:39
 msgid ""
@@ -1227,6 +1245,9 @@ msgid ""
 "<https://storage.googleapis.com/otas/2014/Smartphones/Aquaris_E5_HD/Ubuntu"
 "/VEGETA01A-S11A_BQ_L100EN_2017_170207.zip>`_ (*vegetahd*)"
 msgstr ""
+"`Bq E5 HD "
+"<https://storage.googleapis.com/otas/2014/Smartphones/Aquaris_E5_HD/Ubuntu"
+"/VEGETA01A-S11A_BQ_L100EN_2017_170207.zip>`_ (*vegetahd*)"
 
 #: ../../userguide/install.rst:40
 msgid ""
@@ -1234,6 +1255,8 @@ msgid ""
 "<https://storage.googleapis.com/otas/2015/Tablets/Freezer/Ubuntu/OTA_13_FW_version"
 "/cooler-image-stable-6.zip>`_ (*cooler*)"
 msgstr ""
+"`Bq M10 HD <https://storage.googleapis.com/otas/2015/Tablets/Freezer/Ubuntu/O"
+"TA_13_FW_version/cooler-image-stable-6.zip>`_ (*cooler*)"
 
 #: ../../userguide/install.rst:41
 #, python-format
@@ -1242,12 +1265,15 @@ msgid ""
 "<https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/Ubuntu/OTA_15"
 "/frieza-image-stable-8.zip>`_ (*frieza*)"
 msgstr ""
+"`Bq M10 FHD <https://storage.googleapis.com/otas/2015/Tablets/Freezer%20F "
+"1HD/Ubuntu/OTA_15/frieza-image-stable-8.zip>`_ (*frieza*)"
 
 #: ../../userguide/install.rst:42
 msgid ""
 "`Meizu MX4 <http://people.canonical.com/~alextu/tangxi/684.zip>`_ "
 "(*arale*)"
 msgstr ""
+"`Meizu MX4 <http://people.canonical.com/~alextu/tangxi/684.zip>`_ (*arale*)"
 
 #: ../../userguide/install.rst:44
 #, python-format
@@ -1256,26 +1282,34 @@ msgid ""
 "<https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/Ubuntu/SP_Flash_Tool_exe_Linux_v5.1612.00.100.zip>`_"
 " for Linux."
 msgstr ""
+"Téléchargez `SP flash tool "
+"<https://storage.googleapis.com/otas/2015/Tablets/Freezer%20F "
+"1HD/Ubuntu/SP_Flash_Tool_exe_Linux_v5.1612.00.100.zip>`_ pour Linux."
 
 #: ../../userguide/install.rst:46
 msgid ""
 "On Ubuntu 17.10, there are issues with flash_tool loading the shared "
 "library 'libpng12', so this can be used as a workaround:"
 msgstr ""
+"Sur Ubuntu 17.10, il y a des problèmes avec flash_tool qui charge la "
+"bibliothèque partagée 'libpng12', donc cela peut être utilisé comme une "
+"solution de contournement :"
 
 #: ../../userguide/install.rst:54
 msgid ""
 "You will also need to use `the latest version of the tool "
 "<https://spflashtool.com/download/SP_Flash_Tool_v5.1744_Linux.zip>`_."
 msgstr ""
+"Vous devrez également utiliser la dernière version de l'outil "
+"<https://spflashtool.com/download/SP_Flash_Flash_Tool_v5.1744_Linux.zip>`_."
 
 #: ../../userguide/install.rst:56
 msgid "Extract the zip files"
-msgstr ""
+msgstr "Extraire les fichiers zip"
 
 #: ../../userguide/install.rst:57
 msgid "Start the tool with ``sudo``"
-msgstr ""
+msgstr "Démarrer l'outil avec ``sudo``."
 
 #: ../../userguide/install.rst:58
 msgid ""
@@ -1438,4 +1472,3 @@ msgstr ""
 #~ "qui contient l'identifiant matériel et "
 #~ "ne peuvent plus se connecter à "
 #~ "aucun réseau radio."
-
