@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-30 21:23-0500\n"
-"PO-Revision-Date: 2018-03-04 17:26+0000\n"
-"Last-Translator: Anne Onyme <anneonyme017@openmailbox.org>\n"
+"PO-Revision-Date: 2018-04-04 09:32+0000\n"
+"Last-Translator: Max Libre <libremax@protonmail.com>\n"
+"Language-Team: French <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-contribute/fr/>\n"
 "Language: fr\n"
-"Language-Team: French <https://translate.ubports.com/projects/ubports-"
-"docs/documentation-contribute/fr/>\n"
-"Plural-Forms: nplurals=2; plural=n > 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.3\n"
 
 #: ../../contribute/bugreporting.rst:2
@@ -430,9 +431,8 @@ msgstr ""
 "ci-dessous."
 
 #: ../../contribute/documentation.rst:53
-#, fuzzy
 msgid "Update translations"
-msgstr "Traductions"
+msgstr "Mise à jour des traductions"
 
 #: ../../contribute/documentation.rst:55
 msgid ""
@@ -440,6 +440,9 @@ msgid ""
 "commit them. To do this, run ``update-translations.sh`` in this "
 "repository."
 msgstr ""
+"Vous devez mettre à jour les fichiers de traduction pour qu'ils "
+"correspondent à vos modifications avant de les valider. Pour ce faire, "
+"lancez ``update-translations.sh`` dans ce répertoire."
 
 #: ../../contribute/documentation.rst:58
 msgid "Contribution workflow"
@@ -450,6 +453,8 @@ msgid ""
 "The following steps will help you to make a contribution to this "
 "documentation after you have written a document."
 msgstr ""
+"Les étapes suivantes vous aideront à apporter une contribution à cette "
+"documentation après avoir rédigé un document."
 
 #: ../../contribute/documentation.rst:63
 msgid ""
@@ -533,7 +538,7 @@ msgstr ""
 
 #: ../../contribute/documentation.rst:84
 msgid "Alternative methods to contribute"
-msgstr ""
+msgstr "Méthodes alternatives pour contribuer"
 
 #: ../../contribute/documentation.rst:87 ../../contribute/translations.rst:2
 msgid "Translations"
@@ -547,7 +552,7 @@ msgstr ""
 
 #: ../../contribute/documentation.rst:92
 msgid "Writing documents not in RST format"
-msgstr ""
+msgstr "Rédaction de documents dans un format autre que RST"
 
 #: ../../contribute/documentation.rst:94
 msgid ""
@@ -557,10 +562,15 @@ msgid ""
 " will be able to help you revise your draft and write the required "
 "ReStructuredText."
 msgstr ""
+"Si vous souhaitez écrire des documents pour UBports mais que vous n'êtes pas "
+"à l'aise avec l'écriture en ReStructuredText, veuillez l'écrire sans "
+"formatage et l'afficher sur le `Forum UBports`_ dans la section appropriée ("
+"probablement Général). Quelqu'un pourra vous aider à réviser votre ébauche "
+"et à rédiger le texte restructuré requis."
 
 #: ../../contribute/documentation.rst:97
 msgid "Uncomfortable with Git"
-msgstr ""
+msgstr "Mal à l'aise avec Git"
 
 #: ../../contribute/documentation.rst:99
 msgid ""
@@ -569,6 +579,11 @@ msgid ""
 "in the relevant section (likely General). Someone will be able to help "
 "you revise your draft and submit it to this documentation."
 msgstr ""
+"Si vous avez écrit un document complet dans ReStructuredText mais que vous "
+"n'êtes pas à l'aise avec Git ou GitHub, veuillez le poster sur le `Forum "
+"UBports`_ dans la section appropriée (probablement Général). Quelqu'un "
+"pourra vous aider à réviser votre ébauche et à la soumettre à cette "
+"documentation."
 
 #: ../../contribute/documentation.rst:102
 msgid "Current TODOs"
@@ -1166,4 +1181,3 @@ msgstr "Visitez ce site pour apprendre ce que cela signifie exactement."
 
 #~ msgid "Remember to `update translations`_ before committing your changes."
 #~ msgstr ""
-
