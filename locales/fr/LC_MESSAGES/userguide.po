@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-30 20:06-0500\n"
-"PO-Revision-Date: 2018-04-04 11:13+0000\n"
-"Last-Translator: Max Libre <libremax@protonmail.com>\n"
+"PO-Revision-Date: 2018-04-08 16:11+0000\n"
+"Last-Translator: Anne Onyme <anneonyme017@openmailbox.org>\n"
 "Language-Team: French <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-userguide/fr/>\n"
 "Language: fr\n"
@@ -1085,7 +1085,6 @@ msgid "Install Ubuntu Touch"
 msgstr "Installer Ubuntu Touch"
 
 #: ../../userguide/install.rst:4
-#, fuzzy
 msgid ""
 "Installing Ubuntu Touch is easy, and a lot of work has gone in to making "
 "the installation process less intimidating to less technical users. The "
@@ -1093,24 +1092,21 @@ msgid ""
 "Ubuntu Touch on a `supported device <https://ubuntu-touch.io/devices>`_ "
 "from your Linux, Mac or Windows computer."
 msgstr ""
-"Installer Ubuntu Touch est facile, et une grosse partie du travail est "
-"allé dans la conception d'un processus d'installation moins intimidant "
-"pour les utilisateurs qui sont moins techniques. L'installateur Ubports "
-"est un bel outil graphique qui permet d'installer Ubuntu Touch sur un "
-"`appareil compatible  <devices.ubports.com>`_  à partir de votre "
-"ordinateur Linux, Mac ou Windows."
+"Installer Ubuntu Touch est facile, de gros efforts ont été faits pour rendre "
+"le processus d'installation moins intimidant pour les utilisateurs les moins "
+"techniques. L'installateur d'UBports est un bel outil graphique qui permet "
+"d'installer Ubuntu Touch sur un `appareil compatible  <devices.ubports.com>`"
+"_  à partir de votre ordinateur Linux, Mac ou Windows."
 
 #: ../../userguide/install.rst:7
-#, fuzzy
 msgid ""
 "If you're switching your device over from Android, you will not be able "
 "to keep any data that is currently on the device. Create an external "
 "backup if you want to keep it."
 msgstr ""
-"Si sur votre appareil, vous passez de Android vers Ubuntu Touch,  vous "
-"perdrez toutes les données qui sont actuellement sur cet appareil. Si "
-"vous voulez conserver ces données, créez une sauvegarde sur un support "
-"externe."
+"Si vous passez d'Android à Ubuntu Touch sur votre appareil, vous perdrez "
+"toutes les données qui sont actuellement sur cet appareil. Si vous voulez "
+"conserver ces données, créez une sauvegarde sur un support externe."
 
 #: ../../userguide/install.rst:9
 msgid ""
@@ -1123,28 +1119,24 @@ msgstr ""
 "pour votre système d'exploitation :"
 
 #: ../../userguide/install.rst:11
-#, fuzzy
 msgid "Windows: ``ubports-installer-<version-number>.exe``"
-msgstr "Windows : ubports-installer-<version-number>.exe"
+msgstr "Windows : ``ubports-installer-<version-number>.exe``"
 
 #: ../../userguide/install.rst:12
-#, fuzzy
 msgid "macOS: ``ubports-installer-<version-number>.dmg``"
-msgstr "macOS : ubports-installer-<version-number>.dmg"
+msgstr "Mac OS : ``ubports-installer-<version-number>.dmg``"
 
 #: ../../userguide/install.rst:13
-#, fuzzy
 msgid "Ubuntu or Debian: ``ubports-installer-<version-number>.deb``"
-msgstr "Windows : ubports-installer-<version-number>.exe"
+msgstr "Ubuntu ou Debian : ``ubports-installer-<version-number>.deb``"
 
 #: ../../userguide/install.rst:14
-#, fuzzy
 msgid ""
 "Other Linux distribtuions: ``ubports-installer-<version-number>.snap`` or"
 " ``ubports-installer-<version-number>.AppImage``"
 msgstr ""
-"Linux : ubports-installer-<version-number>.deb, ubports-installer"
-"-<version-number>.snap or ubports-installer-<version-number>.AppImage"
+"Autres distributions Linux : ``ubports-installer-<version-number>.snap`` ou "
+"``ubports-installer-<version-number>.AppImage``"
 
 #: ../../userguide/install.rst:16
 msgid ""
@@ -1171,7 +1163,6 @@ msgid "Install on legacy Android devices"
 msgstr "Installer sur des appareils Android plus anciens"
 
 #: ../../userguide/install.rst:23
-#, fuzzy
 msgid ""
 "While the installation process is fairly simple on most devices, some "
 "legacy Bq and Meizu devices require special steps. This part of the guide"
@@ -1179,10 +1170,8 @@ msgid ""
 msgstr ""
 "Bien que la procédure d'installation soit relativement simple pour la "
 "plupart des appareils, celle-ci requiert des étapes spécifiques pour "
-"certaines versions plus anciennes d'appareils Bq et Meizu. C'est du à "
-"leur nature propriétaire. Cette partie du guide ne s'applique à aucun "
-"autre appareil ou appareil Bq fonctionnant sous Ubuntu Touch version "
-"Canonical."
+"certaines versions plus anciennes d'appareils Bq et Meizu. Cette partie du "
+"guide ne s'applique pas à d'autres appareils."
 
 #: ../../userguide/install.rst:27
 msgid ""
@@ -1305,27 +1294,31 @@ msgstr ""
 
 #: ../../userguide/install.rst:56
 msgid "Extract the zip files"
-msgstr "Extraire les fichiers zip"
+msgstr "Extrayez les fichiers zip"
 
 #: ../../userguide/install.rst:57
 msgid "Start the tool with ``sudo``"
-msgstr "Démarrer l'outil avec ``sudo``."
+msgstr "Démarrez l'outil avec ``sudo``"
 
 #: ../../userguide/install.rst:58
 msgid ""
 "Select the ``*Android_scatter.txt`` file from the archive you downloaded "
 "in the first step as the scatter-loading file"
 msgstr ""
+"Sélectionnez le fichier ``*Android_scatter.txt`` dans l'archive que vous "
+"avez téléchargée lors de la première étape en tant que fichier de chargement"
 
 #: ../../userguide/install.rst:59
 msgid "Choose \"Firmware Upgrade\""
-msgstr ""
+msgstr "Choisissez « Mise à jour du micrologiciel »"
 
 #: ../../userguide/install.rst:60
 msgid ""
 "Double-check you chose \"Firmware Upgrade\" and not \"Download\" or "
 "\"Format All\""
 msgstr ""
+"Vérifiez par deux fois que vous avez choisi « Mise à jour du micrologiciel » "
+"et pas « Télécharger » ou « Tout formater »"
 
 #: ../../userguide/install.rst:64
 msgid ""
@@ -1333,20 +1326,26 @@ msgid ""
 " a useless brick rather than a fancy Ubuntu Touch device. Be sure to "
 "select FIRMWARE UPGRADE."
 msgstr ""
+"Si vous sélectionnez TÉLÉCHARGER au lieu de MISE À JOUR DU MICROLOGICIEL, "
+"vous obtiendrez une brique inutile en lieu et place d'un élégant appareil "
+"sous Ubuntu Touch. Assurez-vous de sélectionner MISE À JOUR DU MICROLOGICIEL."
 
 #: ../../userguide/install.rst:66
 msgid "Turn your device completely off, but do not connect it yet"
 msgstr ""
+"Éteignez complètement votre appareil, mais ne le connectez pas tout de suite"
 
 #: ../../userguide/install.rst:67
 msgid "Press the button labeled \"Download\""
-msgstr ""
+msgstr "Appuyez sur le bouton « Téléchargement »"
 
 #: ../../userguide/install.rst:68
 msgid ""
 "Perform a final sanity-check that you selected the \"Firmware Upgrade\" "
 "option, not \"Download\""
 msgstr ""
+"Effectuez une dernière vérification sur le fait que vous avez sélectionné "
+"l'option « Mise à jour du micrologiciel » et pas « Téléchargement »"
 
 #: ../../userguide/install.rst:69
 msgid ""
@@ -1354,18 +1353,27 @@ msgid ""
 "3.0 port, since that's known to cause communication issues with your "
 "device."
 msgstr ""
+"Assurez-vous que votre appareil est éteint et connecté à votre ordinateur. "
+"N'utilisez pas un port USB 3.0, car il s'agit d'une cause connue de problème "
+"de communication avec votre appareil."
 
 #: ../../userguide/install.rst:70
 msgid ""
 "`Magic <https://en.wikipedia.org/wiki/Clarke's_three_laws>`_ happens. "
 "Your device will boot into a super old version of Ubuntu Touch."
 msgstr ""
+"`La magie <https://fr.wikipedia.org/wiki/Trois_lois_de_Clarke>`_ opère. "
+"Votre appareil démarrera sous une version extrêmement ancienne d'Ubuntu "
+"Touch."
 
 #: ../../userguide/install.rst:71
 msgid ""
 "Congratulations! Your device will now boot into a very old version of "
 "Ubuntu Touch. You can now use the UBports Installer to proceed."
 msgstr ""
+"Félicitations ! Votre appareil démarrera sous une version extrêmement "
+"ancienne d'Ubuntu Touch. Vous pouvez désormais utiliser l'installateur "
+"d'UBports pour continuer."
 
 #~ msgid ""
 #~ "To make sure the ssh server is "
