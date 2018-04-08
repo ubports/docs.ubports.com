@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-03 14:44-0600\n"
-"PO-Revision-Date: 2018-04-03 09:43+0000\n"
-"Last-Translator: Max Libre <libremax@protonmail.com>\n"
+"PO-Revision-Date: 2018-04-08 16:25+0000\n"
+"Last-Translator: Anne Onyme <anneonyme017@openmailbox.org>\n"
 "Language-Team: French <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-appdev/fr/>\n"
 "Language: fr\n"
@@ -1477,17 +1477,19 @@ msgstr ""
 
 #: ../../appdev/webapp/index.rst:31
 msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ CLI"
-msgstr "`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ CLI"
+msgstr ""
+"L'interface en ligne de commande `Clickable "
+"<http://clickable.bhdouglass.com/en/latest/>`_"
 
 #: ../../appdev/webapp/index.rst:35
 msgid "Debugging your webapp"
-msgstr "Déboguer votre application web"
+msgstr "Déboguer votre application Web"
 
 #: ../../appdev/webapp/index.rst:37
 msgid "This guide give you some tips to help you debug your webapp."
 msgstr ""
 "Ce guide vous donne quelques conseils pour vous aider à déboguer votre "
-"application web."
+"application Web."
 
 #: ../../appdev/webapp/webdebug.rst:2
 msgid "Debug web application"
@@ -1550,8 +1552,8 @@ msgid ""
 "Now on your computer, launch Chrome/Chromium browser, and point address "
 "to ``http://YOUR_UT_IP_ADDRESS:9221``"
 msgstr ""
-"Maintenant sur votre ordinateur, lancez le navigateur Chrome/Chromium et "
-"saisissez l'adresse ``http://ADRESSE_IP_DE_VOTRE_UT:9221``."
+"Maintenant, sur votre ordinateur, lancez le navigateur Chrome/Chromium et "
+"saisissez l'adresse ``http://ADRESSE_IP_DE_VOTRE_UT:9221``"
 
 #~ msgid "Using clickable for cordova and HTML-5 development"
 #~ msgstr ""
