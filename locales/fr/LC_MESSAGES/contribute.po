@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-30 21:23-0500\n"
-"PO-Revision-Date: 2018-04-04 09:32+0000\n"
-"Last-Translator: Max Libre <libremax@protonmail.com>\n"
+"PO-Revision-Date: 2018-04-08 16:33+0000\n"
+"Last-Translator: Anne Onyme <anneonyme017@openmailbox.org>\n"
 "Language-Team: French <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-contribute/fr/>\n"
 "Language: fr\n"
@@ -467,9 +467,8 @@ msgstr ""
 "processus de création d'un compte."
 
 #: ../../contribute/documentation.rst:66
-#, fuzzy
 msgid "Forking the repository"
-msgstr "Cloner manuellement le répertoire"
+msgstr "Clonage du répertoire"
 
 #: ../../contribute/documentation.rst:68
 msgid ""
@@ -487,9 +486,8 @@ msgstr ""
 "<https://guides.github.com/activities/forking/>`_."
 
 #: ../../contribute/documentation.rst:71
-#, fuzzy
 msgid "Building the documentation"
-msgstr "Compiler cette documentation localement"
+msgstr "Compilation de la documentation"
 
 #: ../../contribute/documentation.rst:73
 msgid ""
@@ -502,25 +500,22 @@ msgstr ""
 "votre *copie locale* de votre clone du répertoire."
 
 #: ../../contribute/documentation.rst:75
-#, fuzzy
 msgid ""
 "The documentation can be built by running ``./build.sh`` in the root of "
 "this repository. The script will also create a virtual build environment "
 "in ``~/ubportsdocsenv`` if none is present."
 msgstr ""
-"La documentation peut être compilée en exécutant ``./build.sh`` à la "
-"racine de ce répertoire. Le script créera également un environnement "
-"virtuel de compilation dans ``~/ubportsdocsenv`` s'il n'est pas déjà "
-"présent."
+"La documentation peut être compilée en exécutant ``./build.sh`` à la racine "
+"de ce répertoire. Le script créera également un environnement virtuel de "
+"compilation dans ``~/ubportsdocsenv`` s'il n'est pas déjà présent."
 
 #: ../../contribute/documentation.rst:77
-#, fuzzy
 msgid ""
 "If all went well, you can enter the ``_build/html`` directory and open "
 "``index.html`` to view the UBports documentation."
 msgstr ""
-"Si tout s'est bien passé, vous pourrez accéder au répertoire ``_build`` "
-"et ouvrir ``index.html`` pour visualiser la documentation d'UBports."
+"Si tout s'est bien passé, vous pourrez accéder au répertoire ``_build`` et "
+"ouvrir ``index.html`` pour visualiser la documentation d'UBports."
 
 #: ../../contribute/documentation.rst:79
 msgid ""
@@ -529,12 +524,20 @@ msgid ""
 "again. Depending on when you first used the build script, you may need to"
 " run the ``rm`` command with ``sudo``."
 msgstr ""
+"Si vous rencontrez des problèmes lors de la compilation de la documentation, "
+"la première chose à essayer est la suppression de l'environnement de "
+"compilation. Exécutez ``rm -r ~/ubportsdocsenv`` et essayez de le compiler "
+"de nouveau. En fonction du moment où vous avez utilisé pour la première fois "
+"le script de compilation, vous aurez besoin d'exécuter la commande ``rm`` "
+"avec ``sudo``."
 
 #: ../../contribute/documentation.rst:81
 msgid ""
 "Remember to `update translations`_, then commit your changes and submit a"
 " pull request."
 msgstr ""
+"Souvenez-vous de `mettre à jour les traductions`_, puis validez vos "
+"modifications et soumettez votre contribution."
 
 #: ../../contribute/documentation.rst:84
 msgid "Alternative methods to contribute"
@@ -549,6 +552,8 @@ msgid ""
 "You may find the components of this document to translate at `its project"
 " in UBports Weblate`_."
 msgstr ""
+"Le contenu de ce document est disponible à la traduction au niveau de `son "
+"projet sous le Weblate d'UBports`_."
 
 #: ../../contribute/documentation.rst:92
 msgid "Writing documents not in RST format"
@@ -590,15 +595,14 @@ msgid "Current TODOs"
 msgstr "Actuellement à faire"
 
 #: ../../contribute/documentation.rst:104
-#, fuzzy
 msgid ""
 "This page lists the TODOs that have been included in this documentation. "
 "If you know how to fix one, please send us a Pull Request to make it "
 "better!"
 msgstr ""
 "Cette page liste les choses à faire qui seront inclues dans cette "
-"documentation. Si vous savez comment en régler une, merci de nous envoyer"
-" une proposition pour l'améliorer !"
+"documentation. Si vous savez comment en régler une, merci de nous envoyer "
+"une proposition pour l'améliorer !"
 
 #: ../../contribute/documentation.rst:111
 msgid "To create a todo, add this markup to your page::"
