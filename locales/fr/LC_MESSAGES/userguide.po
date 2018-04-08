@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-30 20:06-0500\n"
-"PO-Revision-Date: 2018-03-04 07:57+0000\n"
-"Last-Translator: Laurent Rouxel <lrouxel@free.fr>\n"
+"PO-Revision-Date: 2018-04-08 16:19+0000\n"
+"Last-Translator: Anne Onyme <anneonyme017@openmailbox.org>\n"
+"Language-Team: French <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-userguide/fr/>\n"
 "Language: fr\n"
-"Language-Team: French <https://translate.ubports.com/projects/ubports-"
-"docs/documentation-userguide/fr/>\n"
-"Plural-Forms: nplurals=2; plural=n > 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../userguide/advanceduse/adb.rst:2
@@ -1084,7 +1085,6 @@ msgid "Install Ubuntu Touch"
 msgstr "Installer Ubuntu Touch"
 
 #: ../../userguide/install.rst:4
-#, fuzzy
 msgid ""
 "Installing Ubuntu Touch is easy, and a lot of work has gone in to making "
 "the installation process less intimidating to less technical users. The "
@@ -1092,24 +1092,21 @@ msgid ""
 "Ubuntu Touch on a `supported device <https://ubuntu-touch.io/devices>`_ "
 "from your Linux, Mac or Windows computer."
 msgstr ""
-"Installer Ubuntu Touch est facile, et une grosse partie du travail est "
-"allé dans la conception d'un processus d'installation moins intimidant "
-"pour les utilisateurs qui sont moins techniques. L'installateur Ubports "
-"est un bel outil graphique qui permet d'installer Ubuntu Touch sur un "
-"`appareil compatible  <devices.ubports.com>`_  à partir de votre "
-"ordinateur Linux, Mac ou Windows."
+"Installer Ubuntu Touch est facile, de gros efforts ont été faits pour rendre "
+"le processus d'installation moins intimidant pour les utilisateurs les moins "
+"techniques. L'installateur d'UBports est un bel outil graphique qui permet "
+"d'installer Ubuntu Touch sur un `appareil compatible  <devices.ubports.com>`"
+"_  à partir de votre ordinateur Linux, Mac ou Windows."
 
 #: ../../userguide/install.rst:7
-#, fuzzy
 msgid ""
 "If you're switching your device over from Android, you will not be able "
 "to keep any data that is currently on the device. Create an external "
 "backup if you want to keep it."
 msgstr ""
-"Si sur votre appareil, vous passez de Android vers Ubuntu Touch,  vous "
-"perdrez toutes les données qui sont actuellement sur cet appareil. Si "
-"vous voulez conserver ces données, créez une sauvegarde sur un support "
-"externe."
+"Si vous passez d'Android à Ubuntu Touch sur votre appareil, vous perdrez "
+"toutes les données qui sont actuellement sur cet appareil. Si vous voulez "
+"conserver ces données, créez une sauvegarde sur un support externe."
 
 #: ../../userguide/install.rst:9
 msgid ""
@@ -1122,28 +1119,24 @@ msgstr ""
 "pour votre système d'exploitation :"
 
 #: ../../userguide/install.rst:11
-#, fuzzy
 msgid "Windows: ``ubports-installer-<version-number>.exe``"
-msgstr "Windows : ubports-installer-<version-number>.exe"
+msgstr "Windows : ``ubports-installer-<version-number>.exe``"
 
 #: ../../userguide/install.rst:12
-#, fuzzy
 msgid "macOS: ``ubports-installer-<version-number>.dmg``"
-msgstr "macOS : ubports-installer-<version-number>.dmg"
+msgstr "Mac OS : ``ubports-installer-<version-number>.dmg``"
 
 #: ../../userguide/install.rst:13
-#, fuzzy
 msgid "Ubuntu or Debian: ``ubports-installer-<version-number>.deb``"
-msgstr "Windows : ubports-installer-<version-number>.exe"
+msgstr "Ubuntu ou Debian : ``ubports-installer-<version-number>.deb``"
 
 #: ../../userguide/install.rst:14
-#, fuzzy
 msgid ""
 "Other Linux distribtuions: ``ubports-installer-<version-number>.snap`` or"
 " ``ubports-installer-<version-number>.AppImage``"
 msgstr ""
-"Linux : ubports-installer-<version-number>.deb, ubports-installer"
-"-<version-number>.snap or ubports-installer-<version-number>.AppImage"
+"Autres distributions Linux : ``ubports-installer-<version-number>.snap`` ou "
+"``ubports-installer-<version-number>.AppImage``"
 
 #: ../../userguide/install.rst:16
 msgid ""
@@ -1170,7 +1163,6 @@ msgid "Install on legacy Android devices"
 msgstr "Installer sur des appareils Android plus anciens"
 
 #: ../../userguide/install.rst:23
-#, fuzzy
 msgid ""
 "While the installation process is fairly simple on most devices, some "
 "legacy Bq and Meizu devices require special steps. This part of the guide"
@@ -1178,10 +1170,8 @@ msgid ""
 msgstr ""
 "Bien que la procédure d'installation soit relativement simple pour la "
 "plupart des appareils, celle-ci requiert des étapes spécifiques pour "
-"certaines versions plus anciennes d'appareils Bq et Meizu. C'est du à "
-"leur nature propriétaire. Cette partie du guide ne s'applique à aucun "
-"autre appareil ou appareil Bq fonctionnant sous Ubuntu Touch version "
-"Canonical."
+"certaines versions plus anciennes d'appareils Bq et Meizu. Cette partie du "
+"guide ne s'applique pas à d'autres appareils."
 
 #: ../../userguide/install.rst:27
 msgid ""
@@ -1192,6 +1182,14 @@ msgid ""
 "use our OS, flashing a device with OEM tools shouldn't be done without a "
 "bit of know-how and plenty of research."
 msgstr ""
+"C'est un territoire plus ou moins inexploré. Si le fabricant de votre "
+"appareil ne veut pas que vous installiez un système d'exploitation "
+"alternatif, il n'y a pas grand-chose que nous puissions faire. Les "
+"instructions ci-dessous ne doivent être suivies que par des utilisateurs "
+"expérimentés. Bien que nous apprécions le fait que beaucoup de gens veulent "
+"utiliser notre système d'exploitation,  flasher un appareil avec des outils "
+"OEM ne devrait pas être fait sans un peu de savoir-faire et beaucoup de "
+"recherche."
 
 #: ../../userguide/install.rst:29
 msgid ""
@@ -1199,20 +1197,26 @@ msgid ""
 "flashed successfully in some cases, the Pro5 is Exynos-based and has its "
 "own headaches."
 msgstr ""
+"Les appareils Meizu sont en grande partie bloqués  sur Flyme. Alors que le "
+"MX4 peut être flashé avec succès dans certains cas, le Pro5 est basé sur "
+"Exynos et a ses propres problèmes."
 
 #: ../../userguide/install.rst:33
 msgid "BE VERY CAREFUL! You are responsible for your own actions!"
-msgstr ""
+msgstr "SOYEZ TRÈS PRUDENT ! Vous êtes responsable de vos propres actions !"
 
 #: ../../userguide/install.rst:35
 msgid ""
 "Disconnect all devices and non-essential peripherals from your PC. Charge"
 " your device on a wall-charger (not your PC) to at least 40 percent"
 msgstr ""
+"Déconnectez tous les appareils et périphériques non essentiels de votre "
+"ordinateur. Chargez votre appareil sur un chargeur mural (et non sur votre "
+"ordinateur) à au moins 40%"
 
 #: ../../userguide/install.rst:36
 msgid "Download the Ubuntu Touch ROM for your device:"
-msgstr ""
+msgstr "Téléchargez la ROM Ubuntu Touch pour votre appareil :"
 
 #: ../../userguide/install.rst:38
 msgid ""
@@ -1220,6 +1224,9 @@ msgid ""
 "download/categorias/smartphones/aquaris-e-serie/aquaris-e4-5-ubuntu-"
 "edition/>`_ (*krillin*)"
 msgstr ""
+"`Bq E4.5 <http://www.mibqyyo.com/en-"
+"download/categorias/smartphones/aquaris-e-serie/aquaris-e4-5-ubuntu-"
+"edition/>`_ (*krillin*)"
 
 #: ../../userguide/install.rst:39
 msgid ""
@@ -1227,6 +1234,9 @@ msgid ""
 "<https://storage.googleapis.com/otas/2014/Smartphones/Aquaris_E5_HD/Ubuntu"
 "/VEGETA01A-S11A_BQ_L100EN_2017_170207.zip>`_ (*vegetahd*)"
 msgstr ""
+"`Bq E5 HD "
+"<https://storage.googleapis.com/otas/2014/Smartphones/Aquaris_E5_HD/Ubuntu"
+"/VEGETA01A-S11A_BQ_L100EN_2017_170207.zip>`_ (*vegetahd*)"
 
 #: ../../userguide/install.rst:40
 msgid ""
@@ -1234,6 +1244,8 @@ msgid ""
 "<https://storage.googleapis.com/otas/2015/Tablets/Freezer/Ubuntu/OTA_13_FW_version"
 "/cooler-image-stable-6.zip>`_ (*cooler*)"
 msgstr ""
+"`Bq M10 HD <https://storage.googleapis.com/otas/2015/Tablets/Freezer/Ubuntu/O"
+"TA_13_FW_version/cooler-image-stable-6.zip>`_ (*cooler*)"
 
 #: ../../userguide/install.rst:41
 #, python-format
@@ -1242,12 +1254,15 @@ msgid ""
 "<https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/Ubuntu/OTA_15"
 "/frieza-image-stable-8.zip>`_ (*frieza*)"
 msgstr ""
+"`Bq M10 FHD <https://storage.googleapis.com/otas/2015/Tablets/Freezer%20F "
+"1HD/Ubuntu/OTA_15/frieza-image-stable-8.zip>`_ (*frieza*)"
 
 #: ../../userguide/install.rst:42
 msgid ""
 "`Meizu MX4 <http://people.canonical.com/~alextu/tangxi/684.zip>`_ "
 "(*arale*)"
 msgstr ""
+"`Meizu MX4 <http://people.canonical.com/~alextu/tangxi/684.zip>`_ (*arale*)"
 
 #: ../../userguide/install.rst:44
 #, python-format
@@ -1256,42 +1271,54 @@ msgid ""
 "<https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/Ubuntu/SP_Flash_Tool_exe_Linux_v5.1612.00.100.zip>`_"
 " for Linux."
 msgstr ""
+"Téléchargez `SP flash tool "
+"<https://storage.googleapis.com/otas/2015/Tablets/Freezer%20F "
+"1HD/Ubuntu/SP_Flash_Tool_exe_Linux_v5.1612.00.100.zip>`_ pour Linux."
 
 #: ../../userguide/install.rst:46
 msgid ""
 "On Ubuntu 17.10, there are issues with flash_tool loading the shared "
 "library 'libpng12', so this can be used as a workaround:"
 msgstr ""
+"Sur Ubuntu 17.10, il y a des problèmes avec flash_tool qui charge la "
+"bibliothèque partagée 'libpng12', donc cela peut être utilisé comme une "
+"solution de contournement :"
 
 #: ../../userguide/install.rst:54
 msgid ""
 "You will also need to use `the latest version of the tool "
 "<https://spflashtool.com/download/SP_Flash_Tool_v5.1744_Linux.zip>`_."
 msgstr ""
+"Vous devrez également utiliser la dernière version de l'outil "
+"<https://spflashtool.com/download/SP_Flash_Flash_Tool_v5.1744_Linux.zip>`_."
 
 #: ../../userguide/install.rst:56
 msgid "Extract the zip files"
-msgstr ""
+msgstr "Extrayez les fichiers zip"
 
 #: ../../userguide/install.rst:57
 msgid "Start the tool with ``sudo``"
-msgstr ""
+msgstr "Démarrez l'outil avec ``sudo``"
 
 #: ../../userguide/install.rst:58
 msgid ""
 "Select the ``*Android_scatter.txt`` file from the archive you downloaded "
 "in the first step as the scatter-loading file"
 msgstr ""
+"Sélectionnez le fichier ``*Android_scatter.txt`` dans l'archive que vous "
+"avez téléchargée lors de la première étape en tant que fichier de chargement"
 
 #: ../../userguide/install.rst:59
 msgid "Choose \"Firmware Upgrade\""
-msgstr ""
+msgstr "Choisissez « Mise à jour du micrologiciel »"
 
 #: ../../userguide/install.rst:60
 msgid ""
 "Double-check you chose \"Firmware Upgrade\" and not \"Download\" or "
 "\"Format All\""
 msgstr ""
+"Vérifiez par deux fois que vous avez choisi « Mise à jour du micrologiciel » "
+"et pas « Télécharger » ou « Tout formater »"
 
 #: ../../userguide/install.rst:64
 msgid ""
@@ -1299,20 +1326,26 @@ msgid ""
 " a useless brick rather than a fancy Ubuntu Touch device. Be sure to "
 "select FIRMWARE UPGRADE."
 msgstr ""
+"Si vous sélectionnez TÉLÉCHARGER au lieu de MISE À JOUR DU MICROLOGICIEL, "
+"vous obtiendrez une brique inutile en lieu et place d'un élégant appareil "
+"sous Ubuntu Touch. Assurez-vous de sélectionner MISE À JOUR DU MICROLOGICIEL."
 
 #: ../../userguide/install.rst:66
 msgid "Turn your device completely off, but do not connect it yet"
 msgstr ""
+"Éteignez complètement votre appareil, mais ne le connectez pas tout de suite"
 
 #: ../../userguide/install.rst:67
 msgid "Press the button labeled \"Download\""
-msgstr ""
+msgstr "Appuyez sur le bouton « Téléchargement »"
 
 #: ../../userguide/install.rst:68
 msgid ""
 "Perform a final sanity-check that you selected the \"Firmware Upgrade\" "
 "option, not \"Download\""
 msgstr ""
+"Effectuez une dernière vérification sur le fait que vous avez sélectionné "
+"l'option « Mise à jour du micrologiciel » et pas « Téléchargement »"
 
 #: ../../userguide/install.rst:69
 msgid ""
@@ -1320,18 +1353,27 @@ msgid ""
 "3.0 port, since that's known to cause communication issues with your "
 "device."
 msgstr ""
+"Assurez-vous que votre appareil est éteint et connecté à votre ordinateur. "
+"N'utilisez pas un port USB 3.0, car il s'agit d'une cause connue de problème "
+"de communication avec votre appareil."
 
 #: ../../userguide/install.rst:70
 msgid ""
 "`Magic <https://en.wikipedia.org/wiki/Clarke's_three_laws>`_ happens. "
 "Your device will boot into a super old version of Ubuntu Touch."
 msgstr ""
+"`La magie <https://fr.wikipedia.org/wiki/Trois_lois_de_Clarke>`_ opère. "
+"Votre appareil démarrera sous une version extrêmement ancienne d'Ubuntu "
+"Touch."
 
 #: ../../userguide/install.rst:71
 msgid ""
 "Congratulations! Your device will now boot into a very old version of "
 "Ubuntu Touch. You can now use the UBports Installer to proceed."
 msgstr ""
+"Félicitations ! Votre appareil démarrera sous une version extrêmement "
+"ancienne d'Ubuntu Touch. Vous pouvez désormais utiliser l'installateur "
+"d'UBports pour continuer."
 
 #~ msgid ""
 #~ "To make sure the ssh server is "
@@ -1438,4 +1480,3 @@ msgstr ""
 #~ "qui contient l'identifiant matériel et "
 #~ "ne peuvent plus se connecter à "
 #~ "aucun réseau radio."
-

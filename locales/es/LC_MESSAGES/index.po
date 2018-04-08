@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-30 21:54-0500\n"
-"PO-Revision-Date: 2018-02-16 01:26+0000\n"
+"PO-Revision-Date: 2018-04-02 19:47+0000\n"
 "Last-Translator: advocatux <advocatux@airpost.net>\n"
+"Language-Team: Spanish <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-index/es/>\n"
 "Language: es\n"
-"Language-Team: Spanish <https://translate.ubports.com/projects/ubports-"
-"docs/documentation-index/es/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.3\n"
 
 #: ../../index.rst:2
@@ -60,39 +61,39 @@ msgstr ""
 
 #: ../../index.rst:12
 msgid "You may view this documentation in the following languages:"
-msgstr ""
+msgstr "Puede leer esta documentación en los siguientes idiomas:"
 
 #: ../../index.rst:14
 msgid "`English <https://docs.ubports.com/en/latest/>`_"
-msgstr ""
+msgstr "`English <https://docs.ubports.com/en/latest/>`_"
 
 #: ../../index.rst:15
 msgid "`Català <https://docs.ubports.com/ca/latest/>`_"
-msgstr ""
+msgstr "`Català <https://docs.ubports.com/ca/latest/>`_"
 
 #: ../../index.rst:16
 msgid "`Français <https://docs.ubports.com/fr/latest/>`_"
-msgstr ""
+msgstr "`Français <https://docs.ubports.com/fr/latest/>`_"
 
 #: ../../index.rst:17
 msgid "`Deutsch <https://docs.ubports.com/de/latest/>`_"
-msgstr ""
+msgstr "`Deutsch <https://docs.ubports.com/de/latest/>`_"
 
 #: ../../index.rst:18
 msgid "`Italiano <https://docs.ubports.com/it/latest/>`_"
-msgstr ""
+msgstr "`Italiano <https://docs.ubports.com/it/latest/>`_"
 
 #: ../../index.rst:19
 msgid "`Română <https://docs.ubports.com/ro/latest/>`_"
-msgstr ""
+msgstr "`Română <https://docs.ubports.com/ro/latest/>`_"
 
 #: ../../index.rst:20
 msgid "`Türkçe <https://docs.ubports.com/tr/latest/>`_"
-msgstr ""
+msgstr "`Türkçe <https://docs.ubports.com/tr/latest/>`_"
 
 #: ../../index.rst:21
 msgid "`Español <https://docs.ubports.com/es/latest/>`_"
-msgstr ""
+msgstr "`Español <https://docs.ubports.com/es/latest/>`_"
 
 #: ../../index.rst:23
 msgid "About"
@@ -117,4 +118,3 @@ msgstr "Portar"
 #: ../../index.rst:64
 msgid "Platform"
 msgstr "Plataforma"
-

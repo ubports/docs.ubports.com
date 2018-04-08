@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-30 21:23-0500\n"
-"PO-Revision-Date: 2018-03-05 08:03+0000\n"
+"PO-Revision-Date: 2018-04-08 15:48+0000\n"
 "Last-Translator: Walter Garcia-Fontes <walter.garcia@upf.edu>\n"
+"Language-Team: Catalan <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-contribute/ca/>\n"
 "Language: ca\n"
-"Language-Team: Catalan <https://translate.ubports.com/projects/ubports-"
-"docs/documentation-contribute/ca/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.3\n"
 
 #: ../../contribute/bugreporting.rst:2
@@ -423,9 +424,8 @@ msgstr ""
 "de compilació de sota."
 
 #: ../../contribute/documentation.rst:53
-#, fuzzy
 msgid "Update translations"
-msgstr "Traduccions"
+msgstr "Actualització de les traduccions"
 
 #: ../../contribute/documentation.rst:55
 msgid ""
@@ -433,6 +433,8 @@ msgid ""
 "commit them. To do this, run ``update-translations.sh`` in this "
 "repository."
 msgstr ""
+"Heu d'actualitzar els fitxers de traducció abans de pujar-los. Per fer això, "
+"executeu ``update-translations.sh`` a aquest repositori."
 
 #: ../../contribute/documentation.rst:58
 msgid "Contribution workflow"
@@ -443,6 +445,8 @@ msgid ""
 "The following steps will help you to make a contribution to this "
 "documentation after you have written a document."
 msgstr ""
+"Després que hàgiu escrit un document, els passos següents us ajudaran a fer "
+"una contribució a aquesta documentació."
 
 #: ../../contribute/documentation.rst:63
 msgid ""
@@ -455,9 +459,8 @@ msgstr ""
 "procés de crear un compte."
 
 #: ../../contribute/documentation.rst:66
-#, fuzzy
 msgid "Forking the repository"
-msgstr "Bifurcació manual del repositori"
+msgstr "Bifurcació del repositori"
 
 #: ../../contribute/documentation.rst:68
 msgid ""
@@ -474,9 +477,8 @@ msgstr ""
 "<https://guides.github.com/activities/forking/>`_."
 
 #: ../../contribute/documentation.rst:71
-#, fuzzy
 msgid "Building the documentation"
-msgstr "Compilació local d'aquesta documentació"
+msgstr "Compilació de la documentació"
 
 #: ../../contribute/documentation.rst:73
 msgid ""
@@ -489,23 +491,21 @@ msgstr ""
 "*còpia local* de la vostra bifurcació del repositori."
 
 #: ../../contribute/documentation.rst:75
-#, fuzzy
 msgid ""
 "The documentation can be built by running ``./build.sh`` in the root of "
 "this repository. The script will also create a virtual build environment "
 "in ``~/ubportsdocsenv`` if none is present."
 msgstr ""
-"Es pot compilar la documentació executant ``./build.sh`` a l'arrel "
-"d'aquest repositori. L'script crearà també un entorn virtual de "
-"compilació a ``~/ubportsdocsenv`` si no n'hi ha cap present."
+"Es pot compilar la documentació executant ``./build.sh`` a l'arrel d'aquest "
+"repositori. L'script crearà també un entorn virtual de compilació a "
+"``~/ubportsdocsenv``, si no n'hi ha cap present."
 
 #: ../../contribute/documentation.rst:77
-#, fuzzy
 msgid ""
 "If all went well, you can enter the ``_build/html`` directory and open "
 "``index.html`` to view the UBports documentation."
 msgstr ""
-"Si tot ha anat bé, podeu entrar el directori ``_build`` i obrir "
+"Si tot ha anat bé, podeu entrar el directori ``_build/html`` i obrir "
 "``index.html`` per veure la documentació de l'UBports."
 
 #: ../../contribute/documentation.rst:79
@@ -515,16 +515,23 @@ msgid ""
 "again. Depending on when you first used the build script, you may need to"
 " run the ``rm`` command with ``sudo``."
 msgstr ""
+"Si teniu algun problema en la compilació dels documents, el primer a provar "
+"és eliminar l'entorn de compilació. Executeu ``rm -r ~/ubportsdocsenv`` i "
+"proveu un altre cop la compilació. Depenent de quan vau usar l'script de "
+"compilació per primer cop, potser haureu d'executar l'ordre ``rm`` amb "
+"``sudo``."
 
 #: ../../contribute/documentation.rst:81
 msgid ""
 "Remember to `update translations`_, then commit your changes and submit a"
 " pull request."
 msgstr ""
+"Recordeu-vos de `update translations`_, després pugeu els vostres canvis i "
+"envieu una sol·licitud d'incorporació de canvis."
 
 #: ../../contribute/documentation.rst:84
 msgid "Alternative methods to contribute"
-msgstr ""
+msgstr "Mètodes alternatius per contribuir"
 
 #: ../../contribute/documentation.rst:87 ../../contribute/translations.rst:2
 msgid "Translations"
@@ -535,10 +542,12 @@ msgid ""
 "You may find the components of this document to translate at `its project"
 " in UBports Weblate`_."
 msgstr ""
+"Podeu trobar els components d'aquest document per traduir a `its project in "
+"UBports Weblate`_."
 
 #: ../../contribute/documentation.rst:92
 msgid "Writing documents not in RST format"
-msgstr ""
+msgstr "Escriptura de documents en formats diferents al RST"
 
 #: ../../contribute/documentation.rst:94
 msgid ""
@@ -548,10 +557,15 @@ msgid ""
 " will be able to help you revise your draft and write the required "
 "ReStructuredText."
 msgstr ""
+"Si volguéssiu escriure documents per a l'UBports però no us agrada escriure "
+"RestructuredText, si us plau escriviu-lo sense format i publiqueu-lo al `"
+"UBports Forum`_ a la secció rellevant (probablement General). Algú us podrà "
+"ajudar a revisar el vostre esborrany i a escriure el ReStructuredText "
+"requerit."
 
 #: ../../contribute/documentation.rst:97
 msgid "Uncomfortable with Git"
-msgstr ""
+msgstr "Incomoditat amb Git"
 
 #: ../../contribute/documentation.rst:99
 msgid ""
@@ -560,21 +574,24 @@ msgid ""
 "in the relevant section (likely General). Someone will be able to help "
 "you revise your draft and submit it to this documentation."
 msgstr ""
+"Si heu escrit un document complet amb el ReStructredText però no teniu "
+"comoditat usant Git o GitHub, si us plau publiqueu-lo al `UBports Forum`_ a "
+"la secció rellevant (probablement General). Algú us podrà ajudar a revisar "
+"el vostre esborrany i a pujar-lo a aquesta documentació."
 
 #: ../../contribute/documentation.rst:102
 msgid "Current TODOs"
 msgstr "PER FER actuals"
 
 #: ../../contribute/documentation.rst:104
-#, fuzzy
 msgid ""
 "This page lists the TODOs that have been included in this documentation. "
 "If you know how to fix one, please send us a Pull Request to make it "
 "better!"
 msgstr ""
-"Aquesta pàgina presenta una llista dels PER FER que s'han inclòs a "
-"aquesta documentació. Si sabeu com arreglar un PER FER, si us plau "
-"envieu-nos una demanda de baixada per fer-lo millor!"
+"Aquesta pàgina presenta una llista dels PER FER que s'han inclòs a aquesta "
+"documentació. Si sabeu com arreglar un PER FER, si us plau envieu-nos una "
+"demanda d'incorporació de canvis per fer-lo millor!"
 
 #: ../../contribute/documentation.rst:111
 msgid "To create a todo, add this markup to your page::"
@@ -1089,4 +1106,3 @@ msgstr "Aneu a aquest enllaç per conèixer que significa exactament això."
 
 #~ msgid "Remember to `update translations`_ before committing your changes."
 #~ msgstr ""
-

@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-30 20:06-0500\n"
-"PO-Revision-Date: 2018-03-05 13:39+0000\n"
+"PO-Revision-Date: 2018-04-06 07:56+0000\n"
 "Last-Translator: advocatux <advocatux@airpost.net>\n"
+"Language-Team: Spanish <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-appdev/es/>\n"
 "Language: es\n"
-"Language-Team: Spanish <https://translate.ubports.com/projects/ubports-"
-"docs/documentation-appdev/es/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../appdev/cookbook.rst:2
@@ -40,9 +41,9 @@ msgid ""
 "`Ubuntu Touch programming book <https://www.gitbook.com/book/mimecar"
 "/ubuntu-touch-programming-course/details>`__"
 msgstr ""
-"`Libro de programación de Ubuntu Touch "
-"<https://www.gitbook.com/book/mimecar/ubuntu-touch-programming-"
-"course/details>`__"
+"`Libro de programación de Ubuntu Touch en "
+"español<https://www.gitbook.com/book/mimecar/ubuntu-touch-programming-"
+"course/details/es>`__"
 
 #: ../../appdev/cookbook.rst:12
 msgid "Playground"
@@ -201,7 +202,7 @@ msgstr "Lista no exhaustiva de propiedades:"
 
 #: ../../appdev/index.rst:58
 msgid "Name: Application title has shown in the dash"
-msgstr "Nombre: título que la aplicación muestra en el tablero"
+msgstr "Name: título que la aplicación muestra en el tablero"
 
 #: ../../appdev/index.rst:59
 msgid "Exec: Path to the executable file"
@@ -209,7 +210,7 @@ msgstr "Exec: ruta al archivo ejecutable"
 
 #: ../../appdev/index.rst:60
 msgid "Icon: Path to the icon to display"
-msgstr "Icono: ruta al icono que mostrar"
+msgstr "Icon: ruta al icono que mostrar"
 
 #: ../../appdev/index.rst:61
 msgid "Terminal: ``false`` if will not run in terminal window"
@@ -220,8 +221,8 @@ msgid ""
 "Type: Specifies the type of the launcher file. The type can be "
 "Application, Link or Directory."
 msgstr ""
-"Tipo: especifica el tipo de archivo lanzador. El tipo puede ser "
-"aplicación, enlace o directorio."
+"Type: especifica el tipo de archivo lanzador. El tipo puede ser aplicación, "
+"enlace o directorio."
 
 #: ../../appdev/index.rst:63
 msgid "X-Ubuntu-Touch: ``true`` to make the app visible"
@@ -752,13 +753,12 @@ msgid ""
 " tests when working with crossbuilder, and run them only when not cross-"
 "compiling."
 msgstr ""
-"y después encuentre las pruebas unitarias y ejecútelas. Tenga en cuenta "
-"que la emulación no es perfecta, así que hay una gran posibilidad de que "
-"las pruebas fallarán incluso cuando de otro modo funcionarían, de "
-"ejecutarse en un entorno apropiado. Por esa razón, es probablemente más "
-"inteligente no preocuparse de las pruebas unitarias cuando esté "
-"trabajando con crossbuilder y ejecutarlas solo cuando con esté haciendo "
-"compilación cruzada."
+"y después encuentre las pruebas unitarias y ejecútelas. Tenga en cuenta que "
+"la emulación no es perfecta, así que hay una gran posibilidad de que las "
+"pruebas fallarán incluso cuando de otro modo funcionarían, de ejecutarse en "
+"un entorno apropiado. Por esa razón, es probablemente más inteligente no "
+"preocuparse de las pruebas unitarias cuando esté trabajando con crossbuilder "
+"y ejecutarlas solo cuando no esté haciendo compilación cruzada."
 
 #: ../../appdev/system-software.rst:160
 msgid "Developing in the host architecture, deploying via PPA"
@@ -1424,37 +1424,41 @@ msgstr ""
 
 #: ../../appdev/webapp/index.rst:26
 msgid "Quick start"
-msgstr ""
+msgstr "Inicio rápido"
 
 #: ../../appdev/webapp/index.rst:28
 msgid ""
 "There are several tools to help you package and deploy your webapp to "
 "your device:"
 msgstr ""
+"Existen varias herramientas para ayudarle a empaquetar e implementar su "
+"webapp en su dispositivo:"
 
 #: ../../appdev/webapp/index.rst:30
 msgid ""
 "`Webapp creator <https://open-store.io/app/webapp-creator.jujuyeh>`_ "
 "application available from the openstore"
 msgstr ""
+"`Creador de Webapps (Webapp creator) <https://open-store.io/app/webapp-"
+"creator.jujuyeh>`_ aplicación disponible en openstore"
 
 #: ../../appdev/webapp/index.rst:31
-#, fuzzy
 msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ CLI"
-msgstr "`Paquetes Click <https://click.readthedocs.io/en/latest/>`__"
+msgstr ""
+"`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ Interfaz de la "
+"línea de órdenes"
 
 #: ../../appdev/webapp/index.rst:35
 msgid "Debugging your webapp"
-msgstr ""
+msgstr "Depurando su webapp"
 
 #: ../../appdev/webapp/index.rst:37
 msgid "This guide give you some tips to help you debug your webapp."
-msgstr ""
+msgstr "Esta guía le da algunos consejos para ayudarle a depurar su webapp."
 
 #: ../../appdev/webapp/webdebug.rst:2
-#, fuzzy
 msgid "Debug web application"
-msgstr "Aplicaciones web"
+msgstr "Depurar aplicación web"
 
 #: ../../appdev/webapp/webdebug.rst:4
 msgid ""
@@ -1463,26 +1467,35 @@ msgid ""
 "with modern web standards, and most webapps will just work without "
 "further changes."
 msgstr ""
+"La mayoría de los desarrolladores web probablemente querrán escribir la "
+"mayoría de su código y depurarlo usando el entorno de navegación habitual. "
+"El navegador de Ubuntu Touch se ajusta a los estándares web modernos y la "
+"mayoría de las webapps funcionarán sin necesidad de cambios."
 
 #: ../../appdev/webapp/webdebug.rst:6
 msgid ""
 "For those (hopefully) rare cases where further debugging is needed, there"
 " are two ways to gain further information on the failure."
 msgstr ""
+"Para aquellos (esperemos) raros casos donde se necesite más depuración, "
+"existen dos maneras de obtener mas información sobre el fallo."
 
 #: ../../appdev/webapp/webdebug.rst:9
 msgid "Watch the logs"
-msgstr ""
+msgstr "Ver los registros (logs)"
 
 #: ../../appdev/webapp/webdebug.rst:11
 msgid ""
 "If you are comfortable in a CLI environment, most Javascript errors will "
 "leave an entry in the app log file::"
 msgstr ""
+"Si está cómodo en un entorno de línea de órdenes, la mayoría de los errores "
+"de Javascript dejarán una entrada en el archivo de registro de la "
+"aplicación::"
 
 #: ../../appdev/webapp/webdebug.rst:17
 msgid "Debugging in the browser"
-msgstr ""
+msgstr "Depurando en el navegador"
 
 #: ../../appdev/webapp/webdebug.rst:20
 msgid ""
@@ -1490,16 +1503,21 @@ msgid ""
 " also used in Chrome/Chromium. By starting the browser in a special mode,"
 " you have access to the regular Chrome-style debugger."
 msgstr ""
+"El navegador predeterminado de Ubuntu Touch está basado en la tecnología "
+"Blink que también se usa en Chrome/Chromium. Iniciando el navegador en un "
+"modo especial, tiene acceso al depurador normal de Chrome."
 
 #: ../../appdev/webapp/webdebug.rst:22
 msgid "On your phone, start the browser in inspector mode:::"
-msgstr ""
+msgstr "En su teléfono, inicie el navegador en modo inspector:::"
 
 #: ../../appdev/webapp/webdebug.rst:26
 msgid ""
 "Now on your computer, launch Chrome/Chromium browser, and point address "
 "to ``http://YOUR_UT_IP_ADDRESS:9221``"
 msgstr ""
+"Ahora en su ordenador, inicie el navegador Chrome/Chromium, y apunte a la "
+"dirección ``http://YOUR_UT_IP_ADDRESS:9221``"
 
 #~ msgid "Using clickable for cordova and HTML-5 development"
 #~ msgstr "Usando clickable para cordova y desarrollo HTML-5"
@@ -1764,4 +1782,3 @@ msgstr ""
 #~ msgstr ""
 #~ "Vea aquí para comenzar `Lea los "
 #~ "Documentos <http://clickable.bhdouglass.com/en/latest/>`_."
-

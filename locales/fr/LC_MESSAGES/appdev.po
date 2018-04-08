@@ -8,17 +8,16 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-03 14:44-0600\n"
-"PO-Revision-Date: 2018-04-02 11:36+0000\n"
+"PO-Revision-Date: 2018-04-08 16:25+0000\n"
 "Last-Translator: Anne Onyme <anneonyme017@openmailbox.org>\n"
 "Language-Team: French <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-appdev/fr/>\n"
 "Language: fr\n"
-"Language-Team: French <https://translate.ubports.com/projects/ubports-"
-"docs/documentation-appdev/fr/>\n"
-"Plural-Forms: nplurals=2; plural=n > 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../appdev/cookbook.rst:2
@@ -1458,37 +1457,43 @@ msgstr ""
 
 #: ../../appdev/webapp/index.rst:26
 msgid "Quick start"
-msgstr ""
+msgstr "Démarrage rapide"
 
 #: ../../appdev/webapp/index.rst:28
 msgid ""
 "There are several tools to help you package and deploy your webapp to "
 "your device:"
 msgstr ""
+"Il existe plusieurs outils pour vous aider à empaqueter et déployer votre "
+"application web sur votre appareil :"
 
 #: ../../appdev/webapp/index.rst:30
 msgid ""
 "`Webapp creator <https://open-store.io/app/webapp-creator.jujuyeh>`_ "
 "application available from the openstore"
 msgstr ""
+"`Webapp creator <https://open-store.io/app/webapp-creator.jujuyeh>`_ "
+"application disponible sur l'openstore"
 
 #: ../../appdev/webapp/index.rst:31
-#, fuzzy
 msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ CLI"
-msgstr "`Paquets Click <https://click.readthedocs.io/en/latest/>`__"
+msgstr ""
+"L'interface en ligne de commande `Clickable "
+"<http://clickable.bhdouglass.com/en/latest/>`_"
 
 #: ../../appdev/webapp/index.rst:35
 msgid "Debugging your webapp"
-msgstr ""
+msgstr "Déboguer votre application Web"
 
 #: ../../appdev/webapp/index.rst:37
 msgid "This guide give you some tips to help you debug your webapp."
 msgstr ""
+"Ce guide vous donne quelques conseils pour vous aider à déboguer votre "
+"application Web."
 
 #: ../../appdev/webapp/webdebug.rst:2
-#, fuzzy
 msgid "Debug web application"
-msgstr "Applications Web"
+msgstr "Déboguer une applications Web"
 
 #: ../../appdev/webapp/webdebug.rst:4
 msgid ""
@@ -1497,26 +1502,36 @@ msgid ""
 "with modern web standards, and most webapps will just work without "
 "further changes."
 msgstr ""
+"La plupart des développeurs d'applications web voudront probablement faire "
+"la plus grande partie de leur codage et débogage dans l'environnement "
+"habituel du navigateur. Le navigateur Ubuntu Touch est conforme aux "
+"standards modernes du web, et la plupart des applications web fonctionneront "
+"sans autre changement."
 
 #: ../../appdev/webapp/webdebug.rst:6
 msgid ""
 "For those (hopefully) rare cases where further debugging is needed, there"
 " are two ways to gain further information on the failure."
 msgstr ""
+"Pour les rares cas (espérons-le) où un débogage plus poussé est nécessaire, "
+"il y a deux façons d'obtenir plus d'informations sur l'échec."
 
 #: ../../appdev/webapp/webdebug.rst:9
 msgid "Watch the logs"
-msgstr ""
+msgstr "Surveiller les journaux"
 
 #: ../../appdev/webapp/webdebug.rst:11
 msgid ""
 "If you are comfortable in a CLI environment, most Javascript errors will "
 "leave an entry in the app log file::"
 msgstr ""
+"Si vous êtes à l'aise dans un environnement du type interface en ligne de "
+"commande, la plupart des erreurs Javascript laisseront une entrée dans le "
+"fichier journal de l'application :"
 
 #: ../../appdev/webapp/webdebug.rst:17
 msgid "Debugging in the browser"
-msgstr ""
+msgstr "Débogage dans le navigateur"
 
 #: ../../appdev/webapp/webdebug.rst:20
 msgid ""
@@ -1524,16 +1539,21 @@ msgid ""
 " also used in Chrome/Chromium. By starting the browser in a special mode,"
 " you have access to the regular Chrome-style debugger."
 msgstr ""
+"Le navigateur par défaut d'Ubuntu Touch  est basé sur la technologie Blink "
+"qui est également utilisée dans Chrome/Chromium. En démarrant le navigateur "
+"dans un mode spécial, vous avez accès au débogueur de type Chrome."
 
 #: ../../appdev/webapp/webdebug.rst:22
 msgid "On your phone, start the browser in inspector mode:::"
-msgstr ""
+msgstr "Sur votre téléphone, démarrez le navigateur en mode inspecteur :"
 
 #: ../../appdev/webapp/webdebug.rst:26
 msgid ""
 "Now on your computer, launch Chrome/Chromium browser, and point address "
 "to ``http://YOUR_UT_IP_ADDRESS:9221``"
 msgstr ""
+"Maintenant, sur votre ordinateur, lancez le navigateur Chrome/Chromium et "
+"saisissez l'adresse ``http://ADRESSE_IP_DE_VOTRE_UT:9221``"
 
 #~ msgid "Using clickable for cordova and HTML-5 development"
 #~ msgstr ""
@@ -1732,4 +1752,3 @@ msgstr ""
 #~ msgstr ""
 #~ "Regardez pour commencer `ceci "
 #~ "<http://clickable.bhdouglass.com/en/latest/>`_."
-

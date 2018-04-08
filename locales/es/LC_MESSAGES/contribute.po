@@ -8,17 +8,16 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-03 14:44-0600\n"
-"PO-Revision-Date: 2018-03-28 23:20+0000\n"
-"Last-Translator: Bolly <bolly@mailbox.org>\n"
+"PO-Revision-Date: 2018-04-02 19:43+0000\n"
+"Last-Translator: advocatux <advocatux@airpost.net>\n"
 "Language-Team: Spanish <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-contribute/es/>\n"
 "Language: es\n"
-"Language-Team: Spanish <https://translate.ubports.com/projects/ubports-"
-"docs/documentation-contribute/es/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.3\n"
 
 #: ../../contribute/bugreporting.rst:2
@@ -427,9 +426,8 @@ msgstr ""
 "construcción de abajo."
 
 #: ../../contribute/documentation.rst:53
-#, fuzzy
 msgid "Update translations"
-msgstr "Traducciones"
+msgstr "Actualizar traducciones"
 
 #: ../../contribute/documentation.rst:55
 msgid ""
@@ -437,6 +435,9 @@ msgid ""
 "commit them. To do this, run ``update-translations.sh`` in this "
 "repository."
 msgstr ""
+"Debe actualizar los archivos de la traducción para que coincidan con sus "
+"cambios antes de que los remita (commit). Para hacerlo, ejecute ``update-"
+"translations.sh`` en este repositorio."
 
 #: ../../contribute/documentation.rst:58
 msgid "Contribution workflow"
@@ -447,6 +448,8 @@ msgid ""
 "The following steps will help you to make a contribution to this "
 "documentation after you have written a document."
 msgstr ""
+"Los siguientes pasos le ayudarán a hacer una contribución a esta "
+"documentación después de que haya escrito un documento."
 
 #: ../../contribute/documentation.rst:63
 msgid ""
@@ -459,9 +462,8 @@ msgstr ""
 "hacerse una cuenta."
 
 #: ../../contribute/documentation.rst:66
-#, fuzzy
 msgid "Forking the repository"
-msgstr "Bifurcación (fork) manual del repositorio"
+msgstr "Bifurcando el repositorio"
 
 #: ../../contribute/documentation.rst:68
 msgid ""
@@ -478,9 +480,8 @@ msgstr ""
 "`bifurcar proyectos <https://guides.github.com/activities/forking/>`_."
 
 #: ../../contribute/documentation.rst:71
-#, fuzzy
 msgid "Building the documentation"
-msgstr "Construyendo esta documentación localmente"
+msgstr "Construyendo la documentación"
 
 #: ../../contribute/documentation.rst:73
 msgid ""
@@ -493,23 +494,21 @@ msgstr ""
 "local* de su bifurcación (fork) del repositorio."
 
 #: ../../contribute/documentation.rst:75
-#, fuzzy
 msgid ""
 "The documentation can be built by running ``./build.sh`` in the root of "
 "this repository. The script will also create a virtual build environment "
 "in ``~/ubportsdocsenv`` if none is present."
 msgstr ""
-"La documentación se puede construir ejecutando ``./build.sh`` en la raíz "
-"de este repositorio. El guión (script) creará también un entorno de "
+"La documentación se puede construir ejecutando ``./build.sh`` en la raíz de "
+"este repositorio. El guión (script) creará también un entorno de "
 "construcción virtual en ``~/ubportsdocsenv`` si no hay ninguno presente."
 
 #: ../../contribute/documentation.rst:77
-#, fuzzy
 msgid ""
 "If all went well, you can enter the ``_build/html`` directory and open "
 "``index.html`` to view the UBports documentation."
 msgstr ""
-"Si todo fue bien, puede ir al directorio ``_build`` y abrir "
+"Si todo fue bien, puede ir al directorio ``_build/html`` y abrir "
 "``index.html`` para ver la documentación de UBports."
 
 #: ../../contribute/documentation.rst:79
@@ -519,16 +518,23 @@ msgid ""
 "again. Depending on when you first used the build script, you may need to"
 " run the ``rm`` command with ``sudo``."
 msgstr ""
+"Si tiene algún problema construyendo los documentos, la primera cosa que "
+"intentar es eliminar el entorno de construcción. Ejecute ``rm -r "
+"~/ubportsdocsenv`` e intente la construcción de nuevo. Dependiendo de cuando "
+"usó por primera vez el guión (script) de construcción, puede que necesite "
+"ejecutar la orden ``rm`` con ``sudo``."
 
 #: ../../contribute/documentation.rst:81
 msgid ""
 "Remember to `update translations`_, then commit your changes and submit a"
 " pull request."
 msgstr ""
+"Recuerde hacer `update translations`_, luego haga sus cambios (commit) y "
+"envíe una solicitud de incorporación de cambios (pull request)."
 
 #: ../../contribute/documentation.rst:84
 msgid "Alternative methods to contribute"
-msgstr ""
+msgstr "Métodos alternativos para contribuir"
 
 #: ../../contribute/documentation.rst:87 ../../contribute/translations.rst:2
 msgid "Translations"
@@ -539,10 +545,12 @@ msgid ""
 "You may find the components of this document to translate at `its project"
 " in UBports Weblate`_."
 msgstr ""
+"Puede encontrar los componentes de este documento para traducir en `its "
+"project in UBports Weblate`_."
 
 #: ../../contribute/documentation.rst:92
 msgid "Writing documents not in RST format"
-msgstr ""
+msgstr "Escribir documentos en un formato diferente a RST"
 
 #: ../../contribute/documentation.rst:94
 msgid ""
@@ -552,10 +560,14 @@ msgid ""
 " will be able to help you revise your draft and write the required "
 "ReStructuredText."
 msgstr ""
+"Si le gustaría escribir documentos para UBports pero no está cómodo "
+"escribiendo en ReStructuredText, escríbalo sin formato y publíquelo en `"
+"UBports Forum`_ en la sección relevante (probablemente en General). Alguien "
+"le ayudará a revisar su borrador y escribir el necesario ReStructuredText."
 
 #: ../../contribute/documentation.rst:97
 msgid "Uncomfortable with Git"
-msgstr ""
+msgstr "Incómodo con Git"
 
 #: ../../contribute/documentation.rst:99
 msgid ""
@@ -564,21 +576,24 @@ msgid ""
 "in the relevant section (likely General). Someone will be able to help "
 "you revise your draft and submit it to this documentation."
 msgstr ""
+"Si ha escrito un documento completo en ReStructuredText pero no está cómodo "
+"usando Git o GitHub, publíquelo en `UBports Forum`_ en la sección relevante ("
+"probablemente en General). Alguien le ayudará a revisar su borrador y "
+"enviarlo a esta documentación."
 
 #: ../../contribute/documentation.rst:102
 msgid "Current TODOs"
 msgstr "POR HACER actuales"
 
 #: ../../contribute/documentation.rst:104
-#, fuzzy
 msgid ""
 "This page lists the TODOs that have been included in this documentation. "
 "If you know how to fix one, please send us a Pull Request to make it "
 "better!"
 msgstr ""
 "Esta página lista los POR HACER que han sido incluidos en esta "
-"documentación. Si sabe como arreglar alguno ¡por favor solicite un PR "
-"para hacerlo mejor!"
+"documentación. Si sabe como arreglar alguno ¡por favor envíenos una "
+"solicitud de incorporación de cambios (pull request) para hacerlo mejor!"
 
 #: ../../contribute/documentation.rst:111
 msgid "To create a todo, add this markup to your page::"
@@ -1097,4 +1112,3 @@ msgstr "Siga ese enlace para aprender que significa exactamente."
 
 #~ msgid "Remember to `update translations`_ before committing your changes."
 #~ msgstr ""
-
