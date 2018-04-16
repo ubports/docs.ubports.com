@@ -1,6 +1,25 @@
 Running Ubuntu Touch
 ====================
 
+Now that you're logged in, there are a few more steps before Ubuntu Touch will be fully functional on your device.
+
+Make / writeable
+----------------
+
+Before we make any changes to the rootfs (which will be required for the next steps), you'll need to remount it with write permissions. To do that, run the following command::
+
+    sudo mount -o remount,rw /
+
+Add udev rules
+--------------
+
+You must create some udev rules to allow Ubuntu Touch software to access your hardware. Run the following command, replacing [codename] with your device's codename.::
+
+    sudo -i # And enter your password
+    cat /var/lib/lxc/android/rootfs/ueventd*.rc|grep ^/dev|sed -e 's/^\/dev\///'|awk '{printf "ACTION==\"add\", KERNEL==\"%s\", OWNER=\"%s\", GROUP=\"%s\", MODE=\"%s\"\n",$1,$3,$4,$2}' | sed -e 's/\r//' >/usr/lib/lxc-android-config/70-[codename].rules
+
+Now, reboot the device. If all has gone well, you will eventually see the Ubuntu Touch spinner followed by Unity 8. Your lock password is the same as you set for SSH.
+
 Display settings
 ----------------
 
@@ -25,7 +44,7 @@ Display scaling
 
 ``QTWEBKIT_DPR`` sets the display scaling for the Oxide web engine, so changes to this value will affect the scale of the browser and webapps.
 
-A reference device has been chosen from which we derive the values for all other devices. The reference device is a laptop with a 120ppi screen. However, there is no exact formula since these options are set for *perceived* size rather than *physical* size . Here are some values for other devices so you may derive the correct one for yours:
+A reference device has been chosen from which we derive the values for all other devices. The reference device is a laptop with a 120ppi screen. However, there is no exact formula since these options are set for *perceived* size rather than *physical* size. Here are some values for other devices so you may derive the correct one for yours:
 
 ==============================  ==========  ============  =======  =====  ============
 Device                          Resolution  Display Size  PPI      Px/GU  QtWebKit DPR
@@ -50,5 +69,15 @@ There are two other settings that may be of interest to you.
 ``FORM_FACTOR`` specifies the device's form factor. This value is set as the device's Chassis, which you can find by running ``hostnamectl``. The acceptable values are ``handset``, ``tablet``, ``laptop`` and ``desktop``. Apps such as the gallery use this information to change their functionality. For more information on the Chassis, see `the freedesktop.org hostnamed specification`_.
 
 ``NATIVE_ORIENTATION`` sets the display orientation for the device's built-in screen. This value is used whenever autorotation isn't working correctly or when an app wishes to be locked to the device's native orientation. Acceptable values are ``landscape``, which is normally used for tablets, laptops, and desktops; and ``portrait``, which is usually used for phone handsets.
+
+Common Problems
+---------------
+
+If you have any errors while performing these steps, check see if any of the following suggestions match what you are seeing. If you have completed these steps successfully, congratulations! You've reached the end of the porting guide for now. Try to check the functionality of your device by following the Smoke Testing information in :doc:`/contribute/quality-assurance`.
+
+.. toctree::
+   :maxdepth: 1
+
+   common-problems-run
 
 .. _the freedesktop.org hostnamed specification: https://www.freedesktop.org/wiki/Software/systemd/hostnamed/

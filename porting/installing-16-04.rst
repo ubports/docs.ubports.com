@@ -22,7 +22,6 @@ Download the rootfs
 
 Next we'll need to download the rootfs (root filesystem) that's appropriate for your device. Right now, we only have one available. Simply download ``ubports-touch.rootfs-xenial-armhf.tar.gz`` from `our CI server <https://ci.ubports.com/job/xenial-rootfs-armhf/>`__. If you have a 64-bit ARM (aarch64) device, this same rootfs should work for you. If you have an x86 device, let us know. We do not have a rootfs available for these yet.
 
-
 Install system.img and rootfs
 -------------------------------
 
@@ -35,7 +34,6 @@ Download the halium-install-standalone script from `jbbgameich/halium-install's 
     halium-install-standalone.sh path/to/rootfs.tar.gz path/to/system.img ut
 
 The script will copy and extract the files to their proper places, then allow you to set the phablet user's password.
-
 
 Get SSH access
 --------------
@@ -50,32 +48,13 @@ Similar to the `Halium reference rootfs <http://docs.halium.org/en/latest/portin
 
 The password will be the one that you set while running halium-install.
 
-Make / writeable
-----------------
-
-Before we make any changes to the rootfs (which will be required for the next step), you'll need to remount it with write permissions. To do that, run the following command::
-
-    sudo mount -o remount,rw /
-
-
-Add udev rules
---------------
-
-Now that you're logged in, you must create some udev rules to allow Ubuntu Touch software to access your hardware. Run the following command, replacing [codename] with your device's codename.::
-
-    sudo -i # And enter your password
-    cat /var/lib/lxc/android/rootfs/ueventd*.rc|grep ^/dev|sed -e 's/^\/dev\///'|awk '{printf "ACTION==\"add\", KERNEL==\"%s\", OWNER=\"%s\", GROUP=\"%s\", MODE=\"%s\"\n",$1,$3,$4,$2}' | sed -e 's/\r//' >/usr/lib/lxc-android-config/70-[codename].rules
-
-Now, reboot the device. If all has gone well, you will eventually see the Ubuntu Touch spinner followed by Unity 8. Your lock password is the same as you set for SSH.
-
-
 Common Problems
 ---------------
 
 If you have any errors while performing these steps, check see if any of the following suggestions match what you are seeing. If you have installed successfully, skip down to `Continue on`_.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    common-problems-install
 

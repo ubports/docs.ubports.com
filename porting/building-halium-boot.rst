@@ -3,7 +3,6 @@ Building halium-boot
 
 Halium-boot is the new boot image in the Halium project, replacing hybris-boot. We will be building and using it for Ubuntu Touch.
 
-
 Fix mounts
 ----------
 
@@ -19,7 +18,6 @@ For example, the line ``ro,nosuid,nodev,context=u:object_r:firmware_file:s0,barr
 
 Save and exit.
 
-
 Edit kernel config
 ------------------
 
@@ -28,7 +26,6 @@ Ubuntu Touch requires a slightly different kernel config than Halium, including 
     ./halium/halium-boot/check-kernel-config path/to/my/defconfig -w
 
 You may have to do this twice. It will likely fix things both times. Then, run the script without the ``-w`` flag to see if there are any more errors. If there are, fix them manually. Once finished, run the script without the ``-w`` flag one more time to make sure everything is correct.
-
 
 Build the image
 ---------------
@@ -40,7 +37,6 @@ Once halium-boot is in place, you can build it quite simply. You will also need 
 3. Run ``breakfast`` or ``lunch``, whichever you use for your device
 4. ``mka halium-boot``
 5. ``mka systemimage``
-
 
 Continue on
 -----------
