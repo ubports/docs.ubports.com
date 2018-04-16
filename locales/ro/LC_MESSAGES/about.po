@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-03 14:44-0600\n"
+"POT-Creation-Date: 2018-04-16 13:09-0500\n"
 "PO-Revision-Date: 2018-02-19 12:50+0000\n"
 "Last-Translator: Brînzariu Cristian <info@ebeton.ro>\n"
 "Language: ro\n"
@@ -83,6 +83,115 @@ msgid ""
 "This documentation was heavily modeled after the `Godot Engine's "
 "Documentation <http://docs.godotengine.org/en/stable/>`_, attribution to "
 "Juan Linietsky, Ariel Manzur and the Godot community."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:2
+msgid "Branch-naming convention"
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:4
+msgid ""
+"Our branch-naming conventions ensure that software can be built by our CI"
+" and tested easily by other developers."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:6
+msgid ""
+"Every Git repository's README file should state which branch-naming "
+"convention is used and possible deviations from the norm."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:9
+msgid "Click-Packages"
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:11
+msgid ""
+"Software that is exclusively distributed as a click-package (and not also"
+" as a deb) only uses one ``master`` branch that is protected. Separate "
+"temporary development branches with arbitrary descriptive names can be "
+"created and merged into master when the time comes. For marking and "
+"archiving milestones in development history, ideally Git tags or GitHub "
+"releases should be used."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:14
+msgid "Deb-Packages"
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:16
+msgid ""
+"To make most efficient use of our CI system, a special naming convention "
+"for git-branches is used."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:18
+msgid ""
+"For pre-installed Ubuntu Touch components, deb-packages are used wherever"
+" possible. This includes Core Apps, since they can still be independently"
+" updated using click-package downloads from the OpenStore. This policy "
+"allows us to make use of the powerful Debian build system to resolve "
+"dependencies."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:20
+msgid ""
+"Every repository that uses this convention will have branches for the "
+"actively supported Ubuntu releases referenced by their codenames "
+"(``bionic``, ``xenial``, ``vivid``, etc.). These are the branches that "
+"are built directly into the corresponding images and published on "
+":doc:`repo.ubports.com <ppa>`. If no separate versions for the different "
+"Ubuntu bases are needed, the repository will just have one ``master`` "
+"branch and the CI system will still build versions for all actively "
+"supported releases and resolve dependencies accordingly."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:23
+msgid "Branch-extensions"
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:25
+msgid ""
+"To build and publish packages based on another repository, an extension "
+"in the form of  ``xenial_-_some-descriptive_extension`` can be used. The "
+"CI system will then resolve all dependencies using the ``xenial_-_some-"
+"descriptive_extension`` branch of other repositories or fall back on the "
+"normal ``xenial`` dependencies, if that doesn't exist. These special "
+"dependencies are not built into the image but still pushed to  on "
+":doc:`repo.ubports.com <ppa>`."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:27
+msgid ""
+"Multiple branch extensions can be chained together in the form of "
+"``xenial_-_dependency-1_-_dependency-2_-_dependency-3``. This means that "
+"the CI system will look for dependencies in the following repositories:"
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:38
+msgid ""
+"There is no prioritization, so the build system will always use the "
+"package with the highest version number or the newest build if the "
+"version is equal."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:41
+msgid "Dependency-file"
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:43
+msgid ""
+"For complex or non-linear dependencies, a ``ubports.depends`` file can be"
+" created in the root of the repository to specify additional "
+"dependencies. The branch name will be ignored if this file exists."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:53
+msgid ""
+"The ``ubports.depends`` file is an **exclusive list**, so the build "
+"system will not resolve dependencies linearly like it does in a branch "
+"name! Every dependency has to be listed. You will almost always want to "
+"include your base release (i.e. ``xenial``)."
 msgstr ""
 
 #: ../../about/process/index.rst:2
@@ -419,6 +528,34 @@ msgstr ""
 msgid ""
 "If not done already, the issue is added to the next milestone. Once the "
 "milestone is released, the issue is removed from the project board."
+msgstr ""
+
+#: ../../about/process/ppa.rst:2
+msgid "repo.ubports.com"
+msgstr ""
+
+#: ../../about/process/ppa.rst:4
+msgid ""
+"This is the package archive system for UBports projects. It hosts various"
+" PPAs containing all deb-components of Ubuntu Touch. New PPAs can be "
+"created dynamically by the CI server using a special :doc:`git-branch "
+"naming convention <branch-naming>`."
+msgstr ""
+
+#: ../../about/process/ppa.rst:6
+msgid ""
+"The name of the branch translates literally to the name of the PPA: "
+"``http://repo.ubports.com/dists/[branch name]``"
+msgstr ""
+
+#: ../../about/process/ppa.rst:8
+msgid ""
+"Non-standard PPAs (i.e. not ``xenial``, ``vivid`` or ``bionic``) are kept"
+" for three months. In case they need to be kept for a longer time, a file"
+" with the name ``ubports.keep`` can be created in the root of the "
+"repository, containing the date until which the PPA shall be kept open in"
+" the form of **YYYY-MM-dd**. If this file is empty, the PPA will be kept "
+"for two years after the last build."
 msgstr ""
 
 #: ../../about/process/release-schedule.rst:2
