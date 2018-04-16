@@ -5,17 +5,17 @@ Installing Ubuntu Touch 16.04 images on Halium
 
     These steps  will wipe **all** of the data on your device. If there is anything that you would like to keep, ensure it is backed up and copied off of the device before continuing.
 
-Now that you've :doc:`built ubports-boot <building-ubports-boot>`, we'll use a script called ``rootstock-touch-install`` to install an Ubuntu Touch rootfs on your device.
+Now that you've :doc:`built halium-boot <building-halium-boot>`, we'll use a script called ``rootstock-touch-install`` to install an Ubuntu Touch rootfs on your device.
 
 In order to install Ubuntu Touch, you will need a recovery with Busybox, such as TWRP, installed on your phone. You will also need to ensure the /data partition is formatted with ext4 and does not have any encryption on it.
 
-Install ubports-boot
+Install halium-boot
 --------------------
 
-We'll need to install the ubports-boot image before installing an image. Reboot your phone into fastboot mode, then do the following from your Halium tree::
+We'll need to install the halium-boot image before installing an image. Reboot your phone into fastboot mode, then do the following from your Halium tree::
 
     cout
-    fastboot flash boot ubports-boot.img
+    fastboot flash boot halium-boot.img
 
 Download the rootfs
 -------------------
@@ -30,13 +30,11 @@ Install system.img and rootfs
 
     Change the rootstock link to point to UBports once the actuallyfixit PR is merged.
 
-Download the rootstock-touch-install script from `universalsuperbox/rootstock-ng <https://github.com/universalsuperbox/rootstock-ng/tree/xenial-actuallyfixit>`_. Boot your device into recovery and run the script as follows::
+Download the halium-install-standalone script from `jbbgameich/halium-install's releases <https://github.com/JBBgameich/halium-install/releases/>`_ (`direct link to download <https://github.com/JBBgameich/halium-install/releases/download/continuous/halium-install-standalone.sh>`__). Boot your device into recovery and run the script as follows::
 
-    rootstock-touch-install path/to/rootfs.tar.gz path/to/system.img
+    halium-install-standalone.sh path/to/rootfs.tar.gz path/to/system.img ut
 
-The script will copy and extract the files to their proper places, then allow you to set the phablet user's password. If it gets all the way to ``rebooting device`` and doesn't seem to produce any errors, it's time to continue to the next step. If something goes wrong, please get in touch with us. If your device doesn't reboot automatically, reboot it using your recovery's interface.
-
-If you get errors similar to ``broken pipe`` or ``out of memory``, use the ``-b`` option to push the busybox or toybox build that came from your tree. These may have fewer bugs than your recovery's busybox. More information about this option is available in the script's README.
+The script will copy and extract the files to their proper places, then allow you to set the phablet user's password.
 
 
 Get SSH access
@@ -44,13 +42,13 @@ Get SSH access
 
 When your device boots, it will likely stay at the bootloader screen. However, you should also get a new network connection on the computer you have it plugged in to. We will use this to debug the system.
 
-To confirm that your device has booted correctly, run ``dmesg -w`` and watch for "GNU/Linux device" in the output. If you instead get something similar to "ubports initrd i hit a nail", please get in contact with us so we can find out why. You may also choose to run ``watch ip link`` and look for changes in network devices.
+To confirm that your device has booted correctly, run ``dmesg -w`` and watch for "GNU/Linux device" in the output. If you instead get something similar to "Halium initrd Failed to boot", please get in contact with us so we can find out why.
 
-Similar to the Halium reference rootfs, you should set your computer's IP on the newly connected RNDIS interface to ``10.15.19.100`` if you don't get one automatically. Then, run the following to access your device::
+Similar to the `Halium reference rootfs <http://docs.halium.org/en/latest/porting/debug-build/logging-in.html>`__, you should set your computer's IP on the newly connected RNDIS interface to ``10.15.19.100`` if you don't get one automatically. Then, run the following to access your device::
 
     ssh phablet@10.15.19.82
 
-The password will be the one that you set while running rootstock.
+The password will be the one that you set while running halium-install.
 
 Make / writeable
 ----------------
@@ -70,11 +68,18 @@ Now that you're logged in, you must create some udev rules to allow Ubuntu Touch
 
 Now, reboot the device. If all has gone well, you will eventually see the Ubuntu Touch spinner followed by Unity 8. Your lock password is the same as you set for SSH.
 
+
+Common Problems
+---------------
+
+If you have any errors while performing these steps, check see if any of the following suggestions match what you are seeing. If you have installed successfully, skip down to `Continue on`_.
+
+.. toctree::
+   :maxdepth: 2
+
+   common-problems-install
+
 Continue on
 -----------
 
 Congratulations! Ubuntu Touch has now booted on your device. Move on to :doc:`running-ut` to learn about more specific steps you will need to take for a complete port.
-
-.. todo::
-
-    This should be a little heavier on "What to do when something goes wrong" content.
