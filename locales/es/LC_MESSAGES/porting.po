@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-16 13:09-0500\n"
+"POT-Creation-Date: 2018-04-16 13:27-0500\n"
 "PO-Revision-Date: 2018-02-15 17:10+0000\n"
 "Last-Translator: advocatux <advocatux@airpost.net>\n"
 "Language: es\n"
@@ -30,18 +30,18 @@ msgid ""
 "hybris-boot. We will be building and using it for Ubuntu Touch."
 msgstr ""
 
-#: ../../porting/building-halium-boot.rst:8
+#: ../../porting/building-halium-boot.rst:7
 msgid "Fix mounts"
 msgstr "Arreglar los problemas de montaje"
 
-#: ../../porting/building-halium-boot.rst:10
+#: ../../porting/building-halium-boot.rst:9
 msgid ""
 "Halium-boot's ``mount`` is not aware of SELinux contexts. If your "
 "device's ``fstab`` file includes any contexts, the partition that they "
 "are on will fail to mount and your port will not work correctly."
 msgstr ""
 
-#: ../../porting/building-halium-boot.rst:12
+#: ../../porting/building-halium-boot.rst:11
 msgid ""
 "The first step to this process is figuring out where your fstab actually "
 "is. For most, this is inside "
@@ -53,13 +53,13 @@ msgstr ""
 "``BUILDDIR/device/MANUFACTUER/CODENAME/rootdir/etc`` y se llama o "
 "``fstab.qcom`` o ``fstab.devicename``. Abra el archivo para editarlo."
 
-#: ../../porting/building-halium-boot.rst:14
+#: ../../porting/building-halium-boot.rst:13
 msgid ""
 "If the type of the 'data' or 'userdata' partition is ``f2fs``, it is "
 "required to change it to ``ext4``."
 msgstr ""
 
-#: ../../porting/building-halium-boot.rst:16
+#: ../../porting/building-halium-boot.rst:15
 #, fuzzy
 msgid ""
 "With the file open, remove all ``context=`` options from all block "
@@ -69,22 +69,22 @@ msgstr ""
 "Ahora, elimine todas las opciones ``context=`` de todos los dispositivos "
 "de bloque en el archivo. Guarde y salga."
 
-#: ../../porting/building-halium-boot.rst:18
+#: ../../porting/building-halium-boot.rst:17
 msgid ""
 "For example, the line "
 "``ro,nosuid,nodev,context=u:object_r:firmware_file:s0,barrier=0`` should "
 "become ``ro,nosuid,nodev,barrier=0``"
 msgstr ""
 
-#: ../../porting/building-halium-boot.rst:20
+#: ../../porting/building-halium-boot.rst:19
 msgid "Save and exit."
 msgstr ""
 
-#: ../../porting/building-halium-boot.rst:24
+#: ../../porting/building-halium-boot.rst:22
 msgid "Edit kernel config"
 msgstr "Editar la configuración del núcleo"
 
-#: ../../porting/building-halium-boot.rst:26
+#: ../../porting/building-halium-boot.rst:24
 #, fuzzy
 msgid ""
 "Ubuntu Touch requires a slightly different kernel config than Halium, "
@@ -98,7 +98,7 @@ msgstr ""
 "Está incluido en el repositorio de ubports-boot. Simplemente ejecútelo en"
 " su configuración así::"
 
-#: ../../porting/building-halium-boot.rst:30
+#: ../../porting/building-halium-boot.rst:28
 msgid ""
 "You may have to do this twice. It will likely fix things both times. "
 "Then, run the script without the ``-w`` flag to see if there are any more"
@@ -111,11 +111,11 @@ msgstr ""
 "vez finalizado, ejecute el script sin la bandera (flag)  ``-w`` una vez "
 "mas para asegurarse de que todo está correcto."
 
-#: ../../porting/building-halium-boot.rst:34
+#: ../../porting/building-halium-boot.rst:31
 msgid "Build the image"
 msgstr "Construir la imagen"
 
-#: ../../porting/building-halium-boot.rst:36
+#: ../../porting/building-halium-boot.rst:33
 #, fuzzy
 msgid ""
 "Once halium-boot is in place, you can build it quite simply. You will "
@@ -125,33 +125,33 @@ msgstr ""
 "sencillamente. También necesitará reconstruir system.img debido a "
 "nuestros cambios."
 
-#: ../../porting/building-halium-boot.rst:38
+#: ../../porting/building-halium-boot.rst:35
 msgid "``cd`` to your Halium BUILDDIR"
 msgstr "``cd`` a su BUILDDIR de Halium"
 
-#: ../../porting/building-halium-boot.rst:39
+#: ../../porting/building-halium-boot.rst:36
 msgid "``source build/envsetup.sh``"
 msgstr "``source build/envsetup.sh``"
 
-#: ../../porting/building-halium-boot.rst:40
+#: ../../porting/building-halium-boot.rst:37
 msgid "Run ``breakfast`` or ``lunch``, whichever you use for your device"
 msgstr "Ejecute ``breakfast`` o ``lunch``, cual sea el que use en su dispositivo"
 
-#: ../../porting/building-halium-boot.rst:41
+#: ../../porting/building-halium-boot.rst:38
 #, fuzzy
 msgid "``mka halium-boot``"
 msgstr "``mka ubports-boot``"
 
-#: ../../porting/building-halium-boot.rst:42
+#: ../../porting/building-halium-boot.rst:39
 msgid "``mka systemimage``"
 msgstr "``mka systemimage``"
 
-#: ../../porting/building-halium-boot.rst:46
-#: ../../porting/installing-16-04.rst:83
+#: ../../porting/building-halium-boot.rst:42
+#: ../../porting/installing-16-04.rst:62
 msgid "Continue on"
 msgstr "Continúe en"
 
-#: ../../porting/building-halium-boot.rst:48
+#: ../../porting/building-halium-boot.rst:44
 #, fuzzy
 msgid ""
 "Now that you have halium-boot built, you can move on to "
@@ -226,44 +226,54 @@ msgid ""
 "following command::"
 msgstr ""
 
-#: ../../porting/common-problems-install.rst:52
+#: ../../porting/common-problems-run.rst:2
+msgid "Common problems when running Ubuntu Touch"
+msgstr ""
+
+#: ../../porting/common-problems-run.rst:4
+msgid ""
+"This page details problems commonly faced while following the :doc"
+":`running-ut` page."
+msgstr ""
+
+#: ../../porting/common-problems-run.rst:7
 msgid "Nothing shows on screen"
 msgstr ""
 
-#: ../../porting/common-problems-install.rst:54
+#: ../../porting/common-problems-run.rst:9
 msgid ""
 "If nothing is showing on screen even after adding udev rules to your "
 "port, it is likely that you have a problem with graphical applications "
 "crashing. See `Mir servers crash`_ for more information."
 msgstr ""
 
-#: ../../porting/common-problems-install.rst:57
+#: ../../porting/common-problems-run.rst:12
 msgid "Mir servers crash"
 msgstr ""
 
-#: ../../porting/common-problems-install.rst:59
+#: ../../porting/common-problems-run.rst:14
 msgid ""
 "Mir servers crashing can be caused by many different problems with the "
 "port. To troubleshoot more, you can try the following:"
 msgstr ""
 
-#: ../../porting/common-problems-install.rst:62
+#: ../../porting/common-problems-run.rst:17
 msgid "Is the Android container running?"
 msgstr ""
 
-#: ../../porting/common-problems-install.rst:64
+#: ../../porting/common-problems-run.rst:19
 msgid ""
 "If the Android container is not running, many parts of Ubuntu Touch will "
 "not work. Run this command to check on the container's status::"
 msgstr ""
 
-#: ../../porting/common-problems-install.rst:68
+#: ../../porting/common-problems-run.rst:23
 msgid ""
 "If you get output similar to the following, the Android container is "
 "running and you can move on to the next troubleshooting step::"
 msgstr ""
 
-#: ../../porting/common-problems-install.rst:75
+#: ../../porting/common-problems-run.rst:30
 msgid ""
 "If you do not get ``State: RUNNING``, the container is stopped. You can "
 "run ``sudo start lxc-android-config`` to attempt to start it. If the "
@@ -271,35 +281,35 @@ msgid ""
 "android -F`` to get a more detailed log of why it has failed."
 msgstr ""
 
-#: ../../porting/common-problems-install.rst:79
+#: ../../porting/common-problems-run.rst:34
 msgid "Are all of the Android partitions mounted?"
 msgstr ""
 
-#: ../../porting/common-problems-install.rst:81
+#: ../../porting/common-problems-run.rst:36
 msgid ""
 "If some partitions used for Android drivers are not mounted, the "
 "container may start but not work correctly."
 msgstr ""
 
-#: ../../porting/common-problems-install.rst:83
+#: ../../porting/common-problems-run.rst:38
 msgid ""
 "To check the mounted Android partitions, run ``ls /android``. At least "
 "the following folders should be contained within::"
 msgstr ""
 
-#: ../../porting/common-problems-install.rst:90
+#: ../../porting/common-problems-run.rst:45
 msgid ""
 "If any of these are missing, run ``dmesg`` to get the kernel log. "
 "Mounting Android partitions will start after the following line::"
 msgstr ""
 
-#: ../../porting/common-problems-install.rst:94
+#: ../../porting/common-problems-run.rst:49
 msgid ""
 "Try to diagnose and fix any mounting errors that you find in the log for "
 "the partitions listed above."
 msgstr ""
 
-#: ../../porting/common-problems-install.rst:98
+#: ../../porting/common-problems-run.rst:53
 msgid ""
 "Some devices have a ``vendor`` partition that contains proprietary "
 "libraries and executables required to run Android. If your device has "
@@ -307,34 +317,34 @@ msgid ""
 "listed above."
 msgstr ""
 
-#: ../../porting/common-problems-install.rst:102
+#: ../../porting/common-problems-run.rst:57
 msgid "Getting more Mir logs"
 msgstr ""
 
-#: ../../porting/common-problems-install.rst:104
+#: ../../porting/common-problems-run.rst:59
 msgid ""
 "If the Android container is running and all of its partitions seem to be "
 "mounted, you will need to get a few more logs before enlisting community "
 "help."
 msgstr ""
 
-#: ../../porting/common-problems-install.rst:106
+#: ../../porting/common-problems-run.rst:61
 msgid "First, stop the display manager if it is not already::"
 msgstr ""
 
-#: ../../porting/common-problems-install.rst:110
+#: ../../porting/common-problems-run.rst:65
 msgid ""
 "If you have Wi-Fi working (See `the Halium docs for Wi-Fi`_), install the"
 " ``libc6-dbg`` package first::"
 msgstr ""
 
-#: ../../porting/common-problems-install.rst:115
+#: ../../porting/common-problems-run.rst:70
 msgid ""
 "Then, run the following commands to get all of the needed logs in one "
 "handy file::"
 msgstr ""
 
-#: ../../porting/common-problems-install.rst:121
+#: ../../porting/common-problems-run.rst:76
 msgid ""
 "Use ``scp`` or a similar program to copy the ``usc.log``, ``usc-"
 "gdb.log``, and ``usc-logcat.log`` files from phablet's home folder to "
@@ -343,18 +353,18 @@ msgid ""
 "people helping you can view them easily."
 msgstr ""
 
-#: ../../porting/common-problems-install.rst:124
+#: ../../porting/common-problems-run.rst:79
 msgid "Programs hang before crashing"
 msgstr ""
 
-#: ../../porting/common-problems-install.rst:126
+#: ../../porting/common-problems-run.rst:81
 msgid ""
 "Sometimes processes will hang for a very long time and then abort or "
 "segfault. The reason for the hang is apport, which attempts to collect "
 "useful information about the crash before allowing the program to stop."
 msgstr ""
 
-#: ../../porting/common-problems-install.rst:128
+#: ../../porting/common-problems-run.rst:83
 msgid ""
 "If you don't need apport's information and would rather have the programs"
 " crash faster while troubleshooting, issue the following commands::"
@@ -434,11 +444,11 @@ msgstr ""
 "(aarch64), este mismo rootfs debería valerle. Si tiene un dispositivo "
 "x86, díganoslo. No tenemos un rootfs disponible para esos aún."
 
-#: ../../porting/installing-16-04.rst:27
+#: ../../porting/installing-16-04.rst:26
 msgid "Install system.img and rootfs"
 msgstr "Instalar system.img y rootfs"
 
-#: ../../porting/installing-16-04.rst:31
+#: ../../porting/installing-16-04.rst:30
 msgid ""
 "Change the rootstock link to point to UBports once the actuallyfixit PR "
 "is merged."
@@ -446,7 +456,7 @@ msgstr ""
 "Cambie el enlace rootstock para que apunte a UBports una vez que el "
 "actuallyfixit PR está incorporado."
 
-#: ../../porting/installing-16-04.rst:33
+#: ../../porting/installing-16-04.rst:32
 msgid ""
 "Download the halium-install-standalone script from `jbbgameich/halium-"
 "install's releases <https://github.com/JBBgameich/halium-"
@@ -456,17 +466,17 @@ msgid ""
 "Boot your device into recovery and run the script as follows::"
 msgstr ""
 
-#: ../../porting/installing-16-04.rst:37
+#: ../../porting/installing-16-04.rst:36
 msgid ""
 "The script will copy and extract the files to their proper places, then "
 "allow you to set the phablet user's password."
 msgstr ""
 
-#: ../../porting/installing-16-04.rst:41
+#: ../../porting/installing-16-04.rst:39
 msgid "Get SSH access"
 msgstr "Obtenga acceso SSH"
 
-#: ../../porting/installing-16-04.rst:43
+#: ../../porting/installing-16-04.rst:41
 msgid ""
 "When your device boots, it will likely stay at the bootloader screen. "
 "However, you should also get a new network connection on the computer you"
@@ -477,7 +487,7 @@ msgstr ""
 " en el ordenador al que está conectado. Usaremos esto para depurar el "
 "sistema."
 
-#: ../../porting/installing-16-04.rst:45
+#: ../../porting/installing-16-04.rst:43
 msgid ""
 "To confirm that your device has booted correctly, run ``dmesg -w`` and "
 "watch for \"GNU/Linux device\" in the output. If you instead get "
@@ -485,7 +495,7 @@ msgid ""
 "contact with us so we can find out why."
 msgstr ""
 
-#: ../../porting/installing-16-04.rst:47
+#: ../../porting/installing-16-04.rst:45
 #, fuzzy
 msgid ""
 "Similar to the `Halium reference rootfs "
@@ -499,62 +509,23 @@ msgstr ""
 "obtiene automáticamente. Luego, ejecute lo siguiente para acceder a su "
 "dispositivo::"
 
-#: ../../porting/installing-16-04.rst:51
+#: ../../porting/installing-16-04.rst:49
 #, fuzzy
 msgid "The password will be the one that you set while running halium-install."
 msgstr "La contraseña será la que estableció cuando estaba ejecutando rootstock."
 
-#: ../../porting/installing-16-04.rst:54
-msgid "Make / writeable"
-msgstr "Hacer / escribible"
-
-#: ../../porting/installing-16-04.rst:56
-msgid ""
-"Before we make any changes to the rootfs (which will be required for the "
-"next step), you'll need to remount it with write permissions. To do that,"
-" run the following command::"
-msgstr ""
-"Antes de que hagamos algún cambio al rootfs (que será necesario en el "
-"siguiente paso), necesitará montarlo de nuevo con permisos de escritura. "
-"Para hacer esto, ejecute la siguiente orden::"
-
-#: ../../porting/installing-16-04.rst:62
-msgid "Add udev rules"
-msgstr "Añadir reglas de udev"
-
-#: ../../porting/installing-16-04.rst:64
-msgid ""
-"Now that you're logged in, you must create some udev rules to allow "
-"Ubuntu Touch software to access your hardware. Run the following command,"
-" replacing [codename] with your device's codename.::"
-msgstr ""
-"Ahora que ha iniciado sesión en el sistema, debe crear algunas reglas de "
-"udev para permitir al software de Ubuntu Touch que acceda a su hardware. "
-"Ejecute la siguiente orden, cambiando [codename] (alias) con el alias de "
-"su dispositivo::"
-
-#: ../../porting/installing-16-04.rst:69
-msgid ""
-"Now, reboot the device. If all has gone well, you will eventually see the"
-" Ubuntu Touch spinner followed by Unity 8. Your lock password is the same"
-" as you set for SSH."
-msgstr ""
-"Ahora reinicie el dispositivo. Si todo ha ido bien, acabará viendo el "
-"girador de Ubuntu Touch seguido de Unity 8. La contraseña de bloqueo es "
-"la misma que la que puso para SSH."
-
-#: ../../porting/installing-16-04.rst:73
+#: ../../porting/installing-16-04.rst:52 ../../porting/running-ut.rst:74
 msgid "Common Problems"
 msgstr ""
 
-#: ../../porting/installing-16-04.rst:75
+#: ../../porting/installing-16-04.rst:54
 msgid ""
 "If you have any errors while performing these steps, check see if any of "
 "the following suggestions match what you are seeing. If you have "
 "installed successfully, skip down to `Continue on`_."
 msgstr ""
 
-#: ../../porting/installing-16-04.rst:85
+#: ../../porting/installing-16-04.rst:64
 msgid ""
 "Congratulations! Ubuntu Touch has now booted on your device. Move on to "
 ":doc:`running-ut` to learn about more specific steps you will need to "
@@ -637,11 +608,58 @@ msgstr ""
 msgid "Running Ubuntu Touch"
 msgstr "Ejecutando Ubuntu Touch"
 
-#: ../../porting/running-ut.rst:5
+#: ../../porting/running-ut.rst:4
+msgid ""
+"Now that you're logged in, there are a few more steps before Ubuntu Touch"
+" will be fully functional on your device."
+msgstr ""
+
+#: ../../porting/running-ut.rst:7
+msgid "Make / writeable"
+msgstr "Hacer / escribible"
+
+#: ../../porting/running-ut.rst:9
+#, fuzzy
+msgid ""
+"Before we make any changes to the rootfs (which will be required for the "
+"next steps), you'll need to remount it with write permissions. To do "
+"that, run the following command::"
+msgstr ""
+"Antes de que hagamos algún cambio al rootfs (que será necesario en el "
+"siguiente paso), necesitará montarlo de nuevo con permisos de escritura. "
+"Para hacer esto, ejecute la siguiente orden::"
+
+#: ../../porting/running-ut.rst:14
+msgid "Add udev rules"
+msgstr "Añadir reglas de udev"
+
+#: ../../porting/running-ut.rst:16
+#, fuzzy
+msgid ""
+"You must create some udev rules to allow Ubuntu Touch software to access "
+"your hardware. Run the following command, replacing [codename] with your "
+"device's codename.::"
+msgstr ""
+"Ahora que ha iniciado sesión en el sistema, debe crear algunas reglas de "
+"udev para permitir al software de Ubuntu Touch que acceda a su hardware. "
+"Ejecute la siguiente orden, cambiando [codename] (alias) con el alias de "
+"su dispositivo::"
+
+#: ../../porting/running-ut.rst:21
+msgid ""
+"Now, reboot the device. If all has gone well, you will eventually see the"
+" Ubuntu Touch spinner followed by Unity 8. Your lock password is the same"
+" as you set for SSH."
+msgstr ""
+"Ahora reinicie el dispositivo. Si todo ha ido bien, acabará viendo el "
+"girador de Ubuntu Touch seguido de Unity 8. La contraseña de bloqueo es "
+"la misma que la que puso para SSH."
+
+#: ../../porting/running-ut.rst:24
 msgid "Display settings"
 msgstr "Configuración de pantalla"
 
-#: ../../porting/running-ut.rst:7
+#: ../../porting/running-ut.rst:26
 msgid ""
 "When the device boots, you'll probably notice that everything is very "
 "small. There are two variables that set the content scaling for Unity 8 "
@@ -652,7 +670,7 @@ msgstr ""
 "las aplicaciones de Unity 8 y de Ubuntu Touch: ``GRID_UNIT_PX`` y "
 "``QTWEBKIT_DPR``."
 
-#: ../../porting/running-ut.rst:9
+#: ../../porting/running-ut.rst:28
 msgid ""
 "There are also some other options available that may be useful for you "
 "depending on your device's form factor. These are discussed below."
@@ -660,7 +678,7 @@ msgstr ""
 "Hay también otras opciones disponibles que pueden serle útiles "
 "dependiendo del factor de forma de su dispositivo. Se discuten mas abajo."
 
-#: ../../porting/running-ut.rst:11
+#: ../../porting/running-ut.rst:30
 msgid ""
 "All of these settings are guessed by Unity 8 if none are set. There are "
 "many cases, however, where the guess is wrong (for example, very high "
@@ -677,15 +695,15 @@ msgstr ""
 " ``/etc/ubuntu-session.d/[codename].conf`` especificándolos. Por ejemplo,"
 " este es el archivo para la tableta Nexus 7::"
 
-#: ../../porting/running-ut.rst:19
+#: ../../porting/running-ut.rst:38
 msgid "Methods for deriving values for these variables are below."
 msgstr "Los métodos para obtener los valores para estas variables están mas abajo."
 
-#: ../../porting/running-ut.rst:22
+#: ../../porting/running-ut.rst:41
 msgid "Display scaling"
 msgstr "Escala de la pantalla"
 
-#: ../../porting/running-ut.rst:24
+#: ../../porting/running-ut.rst:43
 msgid ""
 "``GRID_UNIT_PX`` (Pixels per Grid Unit or Px/GU) is specific to each "
 "device. Its goal is to make the user interface of the system and its "
@@ -706,7 +724,7 @@ msgstr ""
 " la misma distancia para tabletas y portátiles y que están sostenidos a "
 "1.235 veces la distancia a la que se suelen sostener los teléfonos."
 
-#: ../../porting/running-ut.rst:26
+#: ../../porting/running-ut.rst:45
 msgid ""
 "``QTWEBKIT_DPR`` sets the display scaling for the Oxide web engine, so "
 "changes to this value will affect the scale of the browser and webapps."
@@ -715,12 +733,13 @@ msgstr ""
 "Oxide, así que los cambios a este valor afectarán a la escala del "
 "navegador y de las aplicaciones web."
 
-#: ../../porting/running-ut.rst:28
+#: ../../porting/running-ut.rst:47
+#, fuzzy
 msgid ""
 "A reference device has been chosen from which we derive the values for "
 "all other devices. The reference device is a laptop with a 120ppi screen."
 " However, there is no exact formula since these options are set for "
-"*perceived* size rather than *physical* size . Here are some values for "
+"*perceived* size rather than *physical* size. Here are some values for "
 "other devices so you may derive the correct one for yours:"
 msgstr ""
 "Un dispositivo de referencia ha sido elegido del cuál derivamos los "
@@ -730,184 +749,184 @@ msgstr ""
 "*percibido* mas que un tamaño *físico*. Aquí tiene algunos valores para "
 "otros dispositivos para que pueda derivar el correcto para el suyo:"
 
-#: ../../porting/running-ut.rst:31
+#: ../../porting/running-ut.rst:50
 msgid "Device"
 msgstr "Dispositivo"
 
-#: ../../porting/running-ut.rst:31
+#: ../../porting/running-ut.rst:50
 msgid "Resolution"
 msgstr "Resolución"
 
-#: ../../porting/running-ut.rst:31
+#: ../../porting/running-ut.rst:50
 msgid "Display Size"
 msgstr "Tamaño de pantalla"
 
-#: ../../porting/running-ut.rst:31
+#: ../../porting/running-ut.rst:50
 msgid "PPI"
 msgstr "PPI"
 
-#: ../../porting/running-ut.rst:31
+#: ../../porting/running-ut.rst:50
 msgid "Px/GU"
 msgstr "Px/GU"
 
-#: ../../porting/running-ut.rst:31
+#: ../../porting/running-ut.rst:50
 msgid "QtWebKit DPR"
 msgstr "QtWebKit DPR"
 
-#: ../../porting/running-ut.rst:33
+#: ../../porting/running-ut.rst:52
 msgid "'Normal' density laptop"
 msgstr "Portátil con densidad 'normal'"
 
-#: ../../porting/running-ut.rst:33 ../../porting/running-ut.rst:35
+#: ../../porting/running-ut.rst:52 ../../porting/running-ut.rst:54
 msgid "N/A"
 msgstr "N/D"
 
-#: ../../porting/running-ut.rst:33
+#: ../../porting/running-ut.rst:52
 msgid "96-150"
 msgstr "96-150"
 
-#: ../../porting/running-ut.rst:33
+#: ../../porting/running-ut.rst:52
 msgid "8"
 msgstr "8"
 
-#: ../../porting/running-ut.rst:33
+#: ../../porting/running-ut.rst:52
 msgid "1.0"
 msgstr "1.0"
 
-#: ../../porting/running-ut.rst:34
+#: ../../porting/running-ut.rst:53
 msgid "ASUS Nexus 7"
 msgstr "ASUS Nexus 7"
 
-#: ../../porting/running-ut.rst:34
+#: ../../porting/running-ut.rst:53
 msgid "1280x800"
 msgstr "1280x800"
 
-#: ../../porting/running-ut.rst:34
+#: ../../porting/running-ut.rst:53
 msgid "7\""
 msgstr "7\""
 
-#: ../../porting/running-ut.rst:34
+#: ../../porting/running-ut.rst:53
 msgid "216"
 msgstr "216"
 
-#: ../../porting/running-ut.rst:34
+#: ../../porting/running-ut.rst:53
 msgid "12"
 msgstr "12"
 
-#: ../../porting/running-ut.rst:34 ../../porting/running-ut.rst:36
-#: ../../porting/running-ut.rst:37 ../../porting/running-ut.rst:38
+#: ../../porting/running-ut.rst:53 ../../porting/running-ut.rst:55
+#: ../../porting/running-ut.rst:56 ../../porting/running-ut.rst:57
 msgid "2.0"
 msgstr "2.0"
 
-#: ../../porting/running-ut.rst:35
+#: ../../porting/running-ut.rst:54
 msgid "'High' density laptop"
 msgstr "Portátil con densidad 'alta'"
 
-#: ../../porting/running-ut.rst:35
+#: ../../porting/running-ut.rst:54
 msgid "150-250"
 msgstr "150-250"
 
-#: ../../porting/running-ut.rst:35
+#: ../../porting/running-ut.rst:54
 msgid "16"
 msgstr "16"
 
-#: ../../porting/running-ut.rst:35
+#: ../../porting/running-ut.rst:54
 msgid "1.5"
 msgstr "1.5"
 
-#: ../../porting/running-ut.rst:36
+#: ../../porting/running-ut.rst:55
 msgid "Samsung Galaxy Nexus"
 msgstr "Samsung Galaxy Nexus"
 
-#: ../../porting/running-ut.rst:36
+#: ../../porting/running-ut.rst:55
 msgid "1280x720"
 msgstr "1280x720"
 
-#: ../../porting/running-ut.rst:36
+#: ../../porting/running-ut.rst:55
 msgid "4.65\""
 msgstr "4.65\""
 
-#: ../../porting/running-ut.rst:36
+#: ../../porting/running-ut.rst:55
 msgid "316"
 msgstr "316"
 
-#: ../../porting/running-ut.rst:36 ../../porting/running-ut.rst:37
+#: ../../porting/running-ut.rst:55 ../../porting/running-ut.rst:56
 msgid "18"
 msgstr "18"
 
-#: ../../porting/running-ut.rst:37
+#: ../../porting/running-ut.rst:56
 msgid "LG Nexus 4"
 msgstr "LG Nexus 4"
 
-#: ../../porting/running-ut.rst:37
+#: ../../porting/running-ut.rst:56
 msgid "1280x768"
 msgstr "1280x768"
 
-#: ../../porting/running-ut.rst:37
+#: ../../porting/running-ut.rst:56
 msgid "4.7\""
 msgstr "4.7\""
 
-#: ../../porting/running-ut.rst:37
+#: ../../porting/running-ut.rst:56
 msgid "320"
 msgstr "320"
 
-#: ../../porting/running-ut.rst:38
+#: ../../porting/running-ut.rst:57
 msgid "Samsung Nexus 10"
 msgstr "Samsung Nexus 10"
 
-#: ../../porting/running-ut.rst:38
+#: ../../porting/running-ut.rst:57
 msgid "2560x1600"
 msgstr "2560x1600"
 
-#: ../../porting/running-ut.rst:38
+#: ../../porting/running-ut.rst:57
 msgid "10.1\""
 msgstr "10.1\""
 
-#: ../../porting/running-ut.rst:38
+#: ../../porting/running-ut.rst:57
 msgid "299"
 msgstr "299"
 
-#: ../../porting/running-ut.rst:38
+#: ../../porting/running-ut.rst:57
 msgid "20"
 msgstr "20"
 
-#: ../../porting/running-ut.rst:39
+#: ../../porting/running-ut.rst:58
 msgid "Fairphone 2"
 msgstr "Fairphone 2"
 
-#: ../../porting/running-ut.rst:39 ../../porting/running-ut.rst:40
+#: ../../porting/running-ut.rst:58 ../../porting/running-ut.rst:59
 msgid "1080x1920"
 msgstr "1080x1920"
 
-#: ../../porting/running-ut.rst:39
+#: ../../porting/running-ut.rst:58
 msgid "5\""
 msgstr "5\""
 
-#: ../../porting/running-ut.rst:39
+#: ../../porting/running-ut.rst:58
 msgid "440"
 msgstr "440"
 
-#: ../../porting/running-ut.rst:39 ../../porting/running-ut.rst:40
+#: ../../porting/running-ut.rst:58 ../../porting/running-ut.rst:59
 msgid "23"
 msgstr "23"
 
-#: ../../porting/running-ut.rst:39 ../../porting/running-ut.rst:40
+#: ../../porting/running-ut.rst:58 ../../porting/running-ut.rst:59
 msgid "2.5"
 msgstr "2.5"
 
-#: ../../porting/running-ut.rst:40
+#: ../../porting/running-ut.rst:59
 msgid "LG Nexus 5"
 msgstr "LG Nexus 5"
 
-#: ../../porting/running-ut.rst:40
+#: ../../porting/running-ut.rst:59
 msgid "4.95\""
 msgstr "4.95\""
 
-#: ../../porting/running-ut.rst:40
+#: ../../porting/running-ut.rst:59
 msgid "445"
 msgstr "445"
 
-#: ../../porting/running-ut.rst:43
+#: ../../porting/running-ut.rst:62
 msgid ""
 "Experiment with a few values to find one that feels good when compared to"
 " the Ubuntu Touch experience on other devices. If you are unsure of which"
@@ -920,15 +939,15 @@ msgstr ""
 "fotografías (incluyendo algún objeto como escala) así como las "
 "especificaciones del dispositivo."
 
-#: ../../porting/running-ut.rst:46
+#: ../../porting/running-ut.rst:65
 msgid "Form factor"
 msgstr "Factor de forma"
 
-#: ../../porting/running-ut.rst:48
+#: ../../porting/running-ut.rst:67
 msgid "There are two other settings that may be of interest to you."
 msgstr "Hay otras dos configuraciones que le pueden ser de interés."
 
-#: ../../porting/running-ut.rst:50
+#: ../../porting/running-ut.rst:69
 msgid ""
 "``FORM_FACTOR`` specifies the device's form factor. This value is set as "
 "the device's Chassis, which you can find by running ``hostnamectl``. The "
@@ -944,7 +963,7 @@ msgstr ""
 "esta información para cambiar sus características. Para mas información "
 "sobre el chasis, vea `the freedesktop.org hostnamed specification`_."
 
-#: ../../porting/running-ut.rst:52
+#: ../../porting/running-ut.rst:71
 msgid ""
 "``NATIVE_ORIENTATION`` sets the display orientation for the device's "
 "built-in screen. This value is used whenever autorotation isn't working "
@@ -960,6 +979,16 @@ msgstr ""
 "aceptables son ``landscape`` (horizontal), que se usa normalmente para "
 "tabletas, portátiles y ordenadores de escritorio; y ``portrait`` "
 "(vertical), que se usa generalmente en teléfonos móviles."
+
+#: ../../porting/running-ut.rst:76
+msgid ""
+"If you have any errors while performing these steps, check see if any of "
+"the following suggestions match what you are seeing. If you have "
+"completed these steps successfully, congratulations! You've reached the "
+"end of the porting guide for now. Try to check the functionality of your "
+"device by following the Smoke Testing information in :doc:`/contribute"
+"/quality-assurance`."
+msgstr ""
 
 #~ msgid ""
 #~ "Due to a `bug in the ubports-"
