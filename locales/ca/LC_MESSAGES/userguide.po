@@ -7,15 +7,16 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-30 20:06-0500\n"
-"PO-Revision-Date: 2018-03-24 07:31+0100\n"
+"PO-Revision-Date: 2018-04-17 15:33+0000\n"
 "Last-Translator: Walter Garcia-Fontes <walter.garcia@upf.edu>\n"
+"Language-Team: Catalan <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-userguide/ca/>\n"
 "Language: ca\n"
-"Language-Team: Catalan <https://translate.ubports.com/projects/ubports-"
-"docs/documentation-userguide/ca/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../userguide/advanceduse/adb.rst:2
@@ -1067,7 +1068,6 @@ msgid "Install Ubuntu Touch"
 msgstr "Instal·lació de l'Ubuntu Touch"
 
 #: ../../userguide/install.rst:4
-#, fuzzy
 msgid ""
 "Installing Ubuntu Touch is easy, and a lot of work has gone in to making "
 "the installation process less intimidating to less technical users. The "
@@ -1075,22 +1075,21 @@ msgid ""
 "Ubuntu Touch on a `supported device <https://ubuntu-touch.io/devices>`_ "
 "from your Linux, Mac or Windows computer."
 msgstr ""
-"La instal·lació de l'Ubuntu Touch és fàcil, i s'ha fet molta feina perquè"
-" el procés d'instal·lació sigui menys intimidant per als usuaris menys "
-"tècnics. L'instal·lador de l'UBports és una eina gràfica maca que podeu "
-"usar per instal·lar l'Ubuntu Touch a un `dispositiu amb suport  "
-"<devices.ubports.com>`_ des del vostre ordinador Linux, Max o Windows."
+"La instal·lació de l'Ubuntu Touch és fàcil, i s'ha fet molta feina perquè el "
+"procés d'instal·lació sigui menys intimidant per als usuaris menys tècnics. "
+"L'instal·lador de l'UBports és una eina gràfica maca que podeu usar per "
+"instal·lar l'Ubuntu Touch a un `dispositiu amb suport <https://ubuntu-"
+"touch.io/devices>`_ des del vostre ordinador Linux, Max o Windows."
 
 #: ../../userguide/install.rst:7
-#, fuzzy
 msgid ""
 "If you're switching your device over from Android, you will not be able "
 "to keep any data that is currently on the device. Create an external "
 "backup if you want to keep it."
 msgstr ""
-"Si esteu canviant el vostre dispositiu des de l'Android, no podreu "
-"mantenir les dades que tingueu actualment al dispositiu. Creeu una còpia "
-"de seguretat externa si les voleu mantenir."
+"Si esteu canviant el vostre dispositiu des de l'Android, no podreu mantenir "
+"les dades que tingueu actualment al dispositiu. Creeu una còpia de seguretat "
+"externa si les voleu mantenir."
 
 #: ../../userguide/install.rst:9
 msgid ""
@@ -1103,19 +1102,16 @@ msgstr ""
 "per al vostre sistema operatiu:"
 
 #: ../../userguide/install.rst:11
-#, fuzzy
 msgid "Windows: ``ubports-installer-<version-number>.exe``"
-msgstr "Windows: ubports-installer-<version-number>.exe"
+msgstr "Windows:  ``ubports-installer-<número-de-versió>.exe``"
 
 #: ../../userguide/install.rst:12
-#, fuzzy
 msgid "macOS: ``ubports-installer-<version-number>.dmg``"
-msgstr "macOS: ubports-installer-<version-number>.dmg"
+msgstr "macOS: ``ubports-installer-<número-de-versió>.dmg``"
 
 #: ../../userguide/install.rst:13
-#, fuzzy
 msgid "Ubuntu or Debian: ``ubports-installer-<version-number>.deb``"
-msgstr "Windows: ubports-installer-<version-number>.exe"
+msgstr "Ubuntu o Debian: ``ubports-installer-<número-de-versió>.deb``"
 
 #: ../../userguide/install.rst:14
 #, fuzzy
@@ -1413,4 +1409,3 @@ msgstr ""
 #~ "conté els identificadors del maquinari i"
 #~ " no es poden connectar més a "
 #~ "les xarxes Wifi o mòbils."
-
