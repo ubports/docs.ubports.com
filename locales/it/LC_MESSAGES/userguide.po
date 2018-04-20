@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-30 20:06-0500\n"
-"PO-Revision-Date: 2018-04-02 20:48+0000\n"
-"Last-Translator: Mike <miguel2000@livecom.it>\n"
+"PO-Revision-Date: 2018-04-20 19:46+0000\n"
+"Last-Translator: Tommaso Pelà <tom_pla@yahoo.it>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-userguide/it/>\n"
 "Language: it\n"
@@ -1165,6 +1165,7 @@ msgstr ""
 "esegue la versione Canonical di Ubuntu Touch."
 
 #: ../../userguide/install.rst:27
+#, fuzzy
 msgid ""
 "This is more or less uncharted territory. If your device's manufacturer "
 "does not want you to install an alternative operating system, there's not"
@@ -1173,6 +1174,12 @@ msgid ""
 "use our OS, flashing a device with OEM tools shouldn't be done without a "
 "bit of know-how and plenty of research."
 msgstr ""
+"Questo è più o meno territorio inesplorato. Se il produttore del tuo "
+"dispositivo non vuole che tu installi un sistema operativo alternativo, non "
+"c'è molto che possiamo fare. Le seguenti istruzioni devono essere seguite "
+"soltanto da utenti esperti. Apprezziamo il fatto che molte persone vogliano "
+"usare il nostro sistema operativo, ma flashare un dispositivo con strumenti "
+"OEM non andrebbe fatto senza un po' di conoscenze e parecchia ricerca."
 
 #: ../../userguide/install.rst:29
 #, fuzzy
@@ -1195,6 +1202,9 @@ msgid ""
 "Disconnect all devices and non-essential peripherals from your PC. Charge"
 " your device on a wall-charger (not your PC) to at least 40 percent"
 msgstr ""
+"Disconnetti dal tuo PC tutti i dispositivi e le periferiche non essenziali. "
+"Carica il tuo dispositivo con una presa (non con il tuo PC) fino ad almeno "
+"il 40 percento"
 
 #: ../../userguide/install.rst:36
 msgid "Download the Ubuntu Touch ROM for your device:"
@@ -1217,6 +1227,9 @@ msgid ""
 "<https://storage.googleapis.com/otas/2014/Smartphones/Aquaris_E5_HD/Ubuntu"
 "/VEGETA01A-S11A_BQ_L100EN_2017_170207.zip>`_ (*vegetahd*)"
 msgstr ""
+"`Bq E5 HD "
+"<https://storage.googleapis.com/otas/2014/Smartphones/Aquaris_E5_HD/Ubuntu"
+"/VEGETA01A-S11A_BQ_L100EN_2017_170207.zip>`_ (*vegetahd*)"
 
 #: ../../userguide/install.rst:40
 msgid ""
@@ -1224,6 +1237,8 @@ msgid ""
 "<https://storage.googleapis.com/otas/2015/Tablets/Freezer/Ubuntu/OTA_13_FW_version"
 "/cooler-image-stable-6.zip>`_ (*cooler*)"
 msgstr ""
+"`Bq M10 HD <https://storage.googleapis.com/otas/2015/Tablets/Freezer/Ubuntu/O"
+"TA_13_FW_version/cooler-image-stable-6.zip>`_ (*cooler*)"
 
 #: ../../userguide/install.rst:41
 #, python-format
@@ -1232,12 +1247,16 @@ msgid ""
 "<https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/Ubuntu/OTA_15"
 "/frieza-image-stable-8.zip>`_ (*frieza*)"
 msgstr ""
+"`Bq M10 FHD "
+"<https://storage.googleapis.com/otas/2015/Tablets/Freeze%20FHD/Ubuntu/OTA_15"
+"/frieza-image-stable-8.zip>`_ (*frieza*)"
 
 #: ../../userguide/install.rst:42
 msgid ""
 "`Meizu MX4 <http://people.canonical.com/~alextu/tangxi/684.zip>`_ "
 "(*arale*)"
 msgstr ""
+"`Meizu MX4 <http://people.canonical.com/~alextu/tangxi/684.zip>`_ (*arale*)"
 
 #: ../../userguide/install.rst:44
 #, python-format
@@ -1246,26 +1265,33 @@ msgid ""
 "<https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/Ubuntu/SP_Flash_Tool_exe_Linux_v5.1612.00.100.zip>`_"
 " for Linux."
 msgstr ""
+"Scarica `SP flash tool <https://storage.googleapis.com/otas/2015/Tablets/Free"
+"zer%20FHD/Ubuntu/SP_Flash_Tool_exe_Linux_v5.1612.00.100.zip>`_ per Linux."
 
 #: ../../userguide/install.rst:46
 msgid ""
 "On Ubuntu 17.10, there are issues with flash_tool loading the shared "
 "library 'libpng12', so this can be used as a workaround:"
 msgstr ""
+"In Ubuntu 17.10, ci sono problemi con flash_tool nel caricare la libreria "
+"condivisa 'libpng12', dunque questo può essere utilizzato come metodo "
+"alternativo:"
 
 #: ../../userguide/install.rst:54
 msgid ""
 "You will also need to use `the latest version of the tool "
 "<https://spflashtool.com/download/SP_Flash_Tool_v5.1744_Linux.zip>`_."
 msgstr ""
+"Dovrai anche usare `l'ultima versione di "
+"<https://spflashtool.com/download/SP_Flash_Tool_v5.1744_Linux.zip>`_."
 
 #: ../../userguide/install.rst:56
 msgid "Extract the zip files"
-msgstr ""
+msgstr "Estrai i file zip"
 
 #: ../../userguide/install.rst:57
 msgid "Start the tool with ``sudo``"
-msgstr ""
+msgstr "Avvia lo strumento con ``sudo``"
 
 #: ../../userguide/install.rst:58
 msgid ""
