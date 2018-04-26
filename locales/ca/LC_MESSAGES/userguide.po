@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-30 20:06-0500\n"
-"PO-Revision-Date: 2018-04-17 15:33+0000\n"
+"PO-Revision-Date: 2018-04-26 11:38+0000\n"
 "Last-Translator: Walter Garcia-Fontes <walter.garcia@upf.edu>\n"
 "Language-Team: Catalan <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-userguide/ca/>\n"
@@ -1114,13 +1114,13 @@ msgid "Ubuntu or Debian: ``ubports-installer-<version-number>.deb``"
 msgstr "Ubuntu o Debian: ``ubports-installer-<número-de-versió>.deb``"
 
 #: ../../userguide/install.rst:14
-#, fuzzy
 msgid ""
 "Other Linux distribtuions: ``ubports-installer-<version-number>.snap`` or"
 " ``ubports-installer-<version-number>.AppImage``"
 msgstr ""
-"Linux: ubports-installer-<version-number>.deb, ubports-installer"
-"-<version-number>.snap or ubports-installer-<version-number>.AppImage"
+"Altres distribucions de Linux: ubports-installer-<número-de-versió>.deb, "
+"ubports-installer-<número-de-versió>.snap or ubports-installer-<número-de-"
+"versió>.AppImage"
 
 #: ../../userguide/install.rst:16
 msgid ""
@@ -1147,17 +1147,14 @@ msgid "Install on legacy Android devices"
 msgstr "Instal·lació a dispositius Android clàssics"
 
 #: ../../userguide/install.rst:23
-#, fuzzy
 msgid ""
 "While the installation process is fairly simple on most devices, some "
 "legacy Bq and Meizu devices require special steps. This part of the guide"
 " does not apply to other devices."
 msgstr ""
-"Tot i que el procés d'instal·lació és relativament senzill a la major "
-"part de dispositius, alguns dispositius Bq i Meizu clàssics requereixen "
-"de passos especials a causa de la seva naturalesa tancada. Aquesta part "
-"de la guia no s'aplica a d'altres dispositius o dispositius bq que estan "
-"executant la versió de Canonical de l'Ubuntu Touch."
+"Tot i que el procés d'instal·lació és relativament senzill a la major part "
+"de dispositius, alguns dispositius Bq i Meizu clàssics requereixen de passos "
+"especials. Aquesta part de la guia no s'aplica a d'altres dispositius."
 
 #: ../../userguide/install.rst:27
 msgid ""
@@ -1168,6 +1165,12 @@ msgid ""
 "use our OS, flashing a device with OEM tools shouldn't be done without a "
 "bit of know-how and plenty of research."
 msgstr ""
+"Això és més o menys territori sense trepitjar. Si el fabricant del vostre "
+"dispositiu no vol que us instal·leu un sistema operatiu alternatiu, no hi ha "
+"massa cosa que podem fer. Les instruccions a sota les haurien de seguir "
+"únicament els usuaris experimentats. Tot i que ens agrada que molta gent "
+"vulgui usar el nostre sistema operatiu, instal·lar a un dispositiu amb eines "
+"OEM no s'hauria de fer sense una mica de coneixement i molta recerca."
 
 #: ../../userguide/install.rst:29
 msgid ""
@@ -1175,6 +1178,9 @@ msgid ""
 "flashed successfully in some cases, the Pro5 is Exynos-based and has its "
 "own headaches."
 msgstr ""
+"Els dispositius Meizu estan més o menys bloquejats amb el Flyme. Mentre que "
+"el MX4 es pot instal·lar amb èxit en alguns casos, el Pro5 està basat en "
+"Exynos i presenta els seus propis mals de cap."
 
 #: ../../userguide/install.rst:33
 msgid "BE VERY CAREFUL! You are responsible for your own actions!"
