@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-30 21:23-0500\n"
-"PO-Revision-Date: 2018-03-12 08:45+0000\n"
-"Last-Translator: Mike <miguel2000@livecom.it>\n"
+"PO-Revision-Date: 2018-04-26 11:20+0000\n"
+"Last-Translator: Tommaso Pelà <tom_pla@yahoo.it>\n"
+"Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-contribute/it/>\n"
 "Language: it\n"
-"Language-Team: Italian <https://translate.ubports.com/projects/ubports-"
-"docs/documentation-contribute/it/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.3\n"
 
 #: ../../contribute/bugreporting.rst:2
@@ -525,7 +526,7 @@ msgstr ""
 
 #: ../../contribute/documentation.rst:84
 msgid "Alternative methods to contribute"
-msgstr ""
+msgstr "Metodi alternativi per contribuire"
 
 #: ../../contribute/documentation.rst:87 ../../contribute/translations.rst:2
 msgid "Translations"
@@ -536,10 +537,12 @@ msgid ""
 "You may find the components of this document to translate at `its project"
 " in UBports Weblate`_."
 msgstr ""
+"Puoi trovare i componenti di questo documento da tradurre in `its project in "
+"UBports Weblate`_."
 
 #: ../../contribute/documentation.rst:92
 msgid "Writing documents not in RST format"
-msgstr ""
+msgstr "Scrivere documenti non nel formato RST"
 
 #: ../../contribute/documentation.rst:94
 msgid ""
@@ -552,15 +555,20 @@ msgstr ""
 
 #: ../../contribute/documentation.rst:97
 msgid "Uncomfortable with Git"
-msgstr ""
+msgstr "Scomodo con Git"
 
 #: ../../contribute/documentation.rst:99
+#, fuzzy
 msgid ""
 "If you've written a complete document in ReStructuredText but aren't "
 "comfortable using Git or GitHub, please post it on the `UBports Forum`_ "
 "in the relevant section (likely General). Someone will be able to help "
 "you revise your draft and submit it to this documentation."
 msgstr ""
+"Se hai scritto un documento completo in ReStructuredText ma non ti trovi "
+"bene a usare Git o GitHub, pubblicalo in `UBports Forum`_ nella sezione "
+"adeguata (probabilmente in General). Qualcuno ti aiuterà a correggere la "
+"bozza e a inviarlo a questa documentazione."
 
 #: ../../contribute/documentation.rst:102
 msgid "Current TODOs"
@@ -1095,4 +1103,3 @@ msgstr "Vai a quel collegamento per sapere ciò che significa esattamente."
 
 #~ msgid "Remember to `update translations`_ before committing your changes."
 #~ msgstr ""
-
