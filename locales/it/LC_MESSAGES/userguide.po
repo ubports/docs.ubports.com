@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-30 20:06-0500\n"
-"PO-Revision-Date: 2018-04-20 20:20+0000\n"
+"PO-Revision-Date: 2018-04-26 10:41+0000\n"
 "Last-Translator: Tommaso Pelà <tom_pla@yahoo.it>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-userguide/it/>\n"
@@ -1157,7 +1157,6 @@ msgstr ""
 "dispositivo."
 
 #: ../../userguide/install.rst:27
-#, fuzzy
 msgid ""
 "This is more or less uncharted territory. If your device's manufacturer "
 "does not want you to install an alternative operating system, there's not"
@@ -1174,20 +1173,18 @@ msgstr ""
 "OEM non andrebbe fatto senza un po' di conoscenze e parecchia ricerca."
 
 #: ../../userguide/install.rst:29
-#, fuzzy
 msgid ""
 "Meizu devices are pretty much stuck on Flyme. While the MX4 can be "
 "flashed successfully in some cases, the Pro5 is Exynos-based and has its "
 "own headaches."
 msgstr ""
 "I telefoni Meizu sono abbastanza bloccati con Flyme. Mentre l'MX4 può essere "
-"flashato con successo in alcuno casi, il Pro5 è basato su Exynos e ha i suoi "
+"flashato con successo in alcuni casi, il Pro5 è basato su Exynos e ha i suoi "
 "grattacapi."
 
 #: ../../userguide/install.rst:33
-#, fuzzy
 msgid "BE VERY CAREFUL! You are responsible for your own actions!"
-msgstr "SII MOLTO CAUTO! Sei responsabile delle tue azione!"
+msgstr "SII MOLTO CAUTO! Sei responsabile delle tue azioni!"
 
 #: ../../userguide/install.rst:35
 msgid ""
