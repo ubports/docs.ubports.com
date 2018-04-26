@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-30 20:06-0500\n"
-"PO-Revision-Date: 2018-04-20 20:25+0000\n"
+"PO-Revision-Date: 2018-04-26 11:25+0000\n"
 "Last-Translator: Tommaso Pelà <tom_pla@yahoo.it>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-appdev/it/>\n"
@@ -1076,6 +1076,8 @@ msgid ""
 "Tip: You can see the URL of the current page by enabling the address bar "
 "with ``--enable-addressbar``."
 msgstr ""
+"Suggerimento: puoi vedere la URL della pagina attuale abilitando la barra "
+"degli indirizzi con ``--enable-addressbar``."
 
 #: ../../appdev/webapp/guide.rst:59
 msgid "Simple containment to the site"
@@ -1145,8 +1147,9 @@ msgid ""
 msgstr ""
 
 #: ../../appdev/webapp/guide.rst:90
+#, fuzzy
 msgid "Adding a specific subdomain"
-msgstr ""
+msgstr "Aggiungere un sottodominio specifico"
 
 #: ../../appdev/webapp/guide.rst:92
 msgid ""
