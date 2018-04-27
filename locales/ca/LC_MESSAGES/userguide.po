@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-30 20:06-0500\n"
-"PO-Revision-Date: 2018-04-26 11:38+0000\n"
+"PO-Revision-Date: 2018-04-27 12:59+0000\n"
 "Last-Translator: Walter Garcia-Fontes <walter.garcia@upf.edu>\n"
 "Language-Team: Catalan <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-userguide/ca/>\n"
@@ -1180,21 +1180,24 @@ msgid ""
 msgstr ""
 "Els dispositius Meizu estan més o menys bloquejats amb el Flyme. Mentre que "
 "el MX4 es pot instal·lar amb èxit en alguns casos, el Pro5 està basat en "
-"Exynos i presenta els seus propis mals de cap."
+"Exynos i presenta els seus propis maldecaps."
 
 #: ../../userguide/install.rst:33
 msgid "BE VERY CAREFUL! You are responsible for your own actions!"
-msgstr ""
+msgstr "ANEU AMB MOLTA CURA! Sou responsable de les vostres pròpies accions!"
 
 #: ../../userguide/install.rst:35
 msgid ""
 "Disconnect all devices and non-essential peripherals from your PC. Charge"
 " your device on a wall-charger (not your PC) to at least 40 percent"
 msgstr ""
+"Desconnecteu tots els dispositius i perifèrics no essencials del vostre PC. "
+"Carregueu el vostre dispositiu a un endoll de pared (no al vostre PC) fins "
+"almenys el 40 per cent"
 
 #: ../../userguide/install.rst:36
 msgid "Download the Ubuntu Touch ROM for your device:"
-msgstr ""
+msgstr "Descarregueu el ROM de l'Ubuntu Touch per al vostre dispositiu:"
 
 #: ../../userguide/install.rst:38
 msgid ""
@@ -1202,6 +1205,8 @@ msgid ""
 "download/categorias/smartphones/aquaris-e-serie/aquaris-e4-5-ubuntu-"
 "edition/>`_ (*krillin*)"
 msgstr ""
+"`Bq E4.5 <http://www.mibqyyo.com/descargas/categorias/aquaris-e4-5-ubuntu-"
+"edition/>`_ (*krillin*)"
 
 #: ../../userguide/install.rst:39
 msgid ""
@@ -1209,6 +1214,9 @@ msgid ""
 "<https://storage.googleapis.com/otas/2014/Smartphones/Aquaris_E5_HD/Ubuntu"
 "/VEGETA01A-S11A_BQ_L100EN_2017_170207.zip>`_ (*vegetahd*)"
 msgstr ""
+"`Bq E5 HD "
+"<https://storage.googleapis.com/otas/2014/Smartphones/Aquaris_E5_HD/Ubuntu"
+"/VEGETA01A-S11A_BQ_L100EN_2017_170207.zip>`_ (*vegetahd*)"
 
 #: ../../userguide/install.rst:40
 msgid ""
@@ -1216,6 +1224,8 @@ msgid ""
 "<https://storage.googleapis.com/otas/2015/Tablets/Freezer/Ubuntu/OTA_13_FW_version"
 "/cooler-image-stable-6.zip>`_ (*cooler*)"
 msgstr ""
+"`Bq M10 HD <https://storage.googleapis.com/otas/2015/Tablets/Freezer/Ubuntu/O"
+"TA_13_FW_version/cooler-image-stable-6.zip>`_ (*cooler*)"
 
 #: ../../userguide/install.rst:41
 #, python-format
@@ -1224,12 +1234,16 @@ msgid ""
 "<https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/Ubuntu/OTA_15"
 "/frieza-image-stable-8.zip>`_ (*frieza*)"
 msgstr ""
+"`Bq M10 FHD "
+"<https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/Ubuntu/OTA_15"
+"/frieza-image-stable-8.zip>`_ (*frieza*)"
 
 #: ../../userguide/install.rst:42
 msgid ""
 "`Meizu MX4 <http://people.canonical.com/~alextu/tangxi/684.zip>`_ "
 "(*arale*)"
 msgstr ""
+"`Meizu MX4 <http://people.canonical.com/~alextu/tangxi/684.zip>`_ (*arale*)"
 
 #: ../../userguide/install.rst:44
 #, python-format
@@ -1238,12 +1252,17 @@ msgid ""
 "<https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/Ubuntu/SP_Flash_Tool_exe_Linux_v5.1612.00.100.zip>`_"
 " for Linux."
 msgstr ""
+"Descarregueu `SP flash tool <https://storage.googleapis.com/otas/2015/Tablets"
+"/Freezer%20FHD/Ubuntu/SP_Flash_Tool_exe_Linux_v5.1612.00.100.zip>`_ per a "
+"Linux."
 
 #: ../../userguide/install.rst:46
 msgid ""
 "On Ubuntu 17.10, there are issues with flash_tool loading the shared "
 "library 'libpng12', so this can be used as a workaround:"
 msgstr ""
+"A l'Ubuntu 17.10. hi ha problemes amb el flash_tool carregant la biblioteca "
+"compartida 'libpng12', així que això podria usar-se com a alternativa:"
 
 #: ../../userguide/install.rst:54
 msgid ""
