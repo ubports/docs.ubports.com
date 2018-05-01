@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-30 20:06-0500\n"
-"PO-Revision-Date: 2018-04-27 12:59+0000\n"
+"PO-Revision-Date: 2018-05-01 17:35+0000\n"
 "Last-Translator: Walter Garcia-Fontes <walter.garcia@upf.edu>\n"
 "Language-Team: Catalan <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-userguide/ca/>\n"
@@ -1269,30 +1269,36 @@ msgid ""
 "You will also need to use `the latest version of the tool "
 "<https://spflashtool.com/download/SP_Flash_Tool_v5.1744_Linux.zip>`_."
 msgstr ""
+"També haureu de fer servir `l'última versió de l'eina "
+"<https://spflashtool.com/download/SP_Flash_Tool_v5.1744_Linux.zip>`_."
 
 #: ../../userguide/install.rst:56
 msgid "Extract the zip files"
-msgstr ""
+msgstr "Extraieu els fitxers zip"
 
 #: ../../userguide/install.rst:57
 msgid "Start the tool with ``sudo``"
-msgstr ""
+msgstr "Inicieu l'eina amb ``sudo``"
 
 #: ../../userguide/install.rst:58
 msgid ""
 "Select the ``*Android_scatter.txt`` file from the archive you downloaded "
 "in the first step as the scatter-loading file"
 msgstr ""
+"Seleccioneu el fitxer ``*Android_scatter.txt`` de l'arxiu que heu "
+"descarregat al primer pas com a fitxer de càrrega de dispersió"
 
 #: ../../userguide/install.rst:59
 msgid "Choose \"Firmware Upgrade\""
-msgstr ""
+msgstr "Escolliu «Firmware Upgrade»"
 
 #: ../../userguide/install.rst:60
 msgid ""
 "Double-check you chose \"Firmware Upgrade\" and not \"Download\" or "
 "\"Format All\""
 msgstr ""
+"Feu una comprovació extra que heu escollit «Firmware Upgrade» i no «Download»"
+" o «Format All»"
 
 #: ../../userguide/install.rst:64
 msgid ""
@@ -1300,20 +1306,26 @@ msgid ""
 " a useless brick rather than a fancy Ubuntu Touch device. Be sure to "
 "select FIRMWARE UPGRADE."
 msgstr ""
+"Si trieu DOWNLOAD en comptes de FIRMWARE UPGRADE, acabareu amb un totxo "
+"inútil en compte d'un dispositiu Ubuntu Touch sofisticat. Assegureu-vos de "
+"triar FIRMWARE UPGRADE."
 
 #: ../../userguide/install.rst:66
 msgid "Turn your device completely off, but do not connect it yet"
 msgstr ""
+"Apagueu completament els vostre dispositiu, però encar no el desconnecteu"
 
 #: ../../userguide/install.rst:67
 msgid "Press the button labeled \"Download\""
-msgstr ""
+msgstr "Premeu el botó etiquetat com «Download»"
 
 #: ../../userguide/install.rst:68
 msgid ""
 "Perform a final sanity-check that you selected the \"Firmware Upgrade\" "
 "option, not \"Download\""
 msgstr ""
+"Feu una última prova de seguretat que heu triat l'opció  «Firmware Upgrade», "
+"i no «Download»"
 
 #: ../../userguide/install.rst:69
 msgid ""
@@ -1321,18 +1333,25 @@ msgid ""
 "3.0 port, since that's known to cause communication issues with your "
 "device."
 msgstr ""
+"Assegureu-vos que el vostra dispositiu està apagat i connecteu-lo al vostre "
+"PC. No useu un port USB 3.0, atès que això se sap que causa problemes de "
+"comunicació amb el vostre dispositiu."
 
 #: ../../userguide/install.rst:70
 msgid ""
 "`Magic <https://en.wikipedia.org/wiki/Clarke's_three_laws>`_ happens. "
 "Your device will boot into a super old version of Ubuntu Touch."
 msgstr ""
+"Passarà `màgia https://ca.wikipedia.org/wiki/Lleis_de_Clarke`_ . El vostre "
+"dispositiu s'iniciarà a una versió molt antiga de l'Ubuntu Touch."
 
 #: ../../userguide/install.rst:71
 msgid ""
 "Congratulations! Your device will now boot into a very old version of "
 "Ubuntu Touch. You can now use the UBports Installer to proceed."
 msgstr ""
+"Enhorabona! El vostre dispositiu s'iniciarà ara a una versió molt antiga de "
+"l'Ubuntu Touch. Ara podeu procedir a usar l'instal·lador de l'UBports."
 
 #~ msgid ""
 #~ "To display and launch applications you"
