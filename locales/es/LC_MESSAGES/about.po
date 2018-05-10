@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-03 14:44-0600\n"
 "PO-Revision-Date: 2018-05-10 08:39+0000\n"
-"Last-Translator: Bolly <bolly@mailbox.org>\n"
+"Last-Translator: advocatux <advocatux@airpost.net>\n"
 "Language-Team: Spanish <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-about/es/>\n"
 "Language: es\n"
@@ -350,7 +350,7 @@ msgstr "**enhancement** (mejora): este asunto es una solicitud de función."
 #: ../../about/process/issue-tracking.rst:59
 msgid "**question**: This issue is a support request or general question."
 msgstr ""
-"**question** (pregunta): Este problema es una solicitud de soporte o una "
+"**question** (pregunta): este problema es una solicitud de soporte o una "
 "pregunta general."
 
 #: ../../about/process/issue-tracking.rst:60
