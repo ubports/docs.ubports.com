@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-30 20:06-0500\n"
-"PO-Revision-Date: 2018-04-26 11:25+0000\n"
-"Last-Translator: Tommaso Pelà <tom_pla@yahoo.it>\n"
+"PO-Revision-Date: 2018-05-14 11:35+0000\n"
+"Last-Translator: rocco <roccofoti@gmail.com>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-appdev/it/>\n"
 "Language: it\n"
@@ -768,6 +768,13 @@ msgid ""
 "working on your package (this could take some hours), this might or might"
 " not be a suitable way of device development."
 msgstr ""
+"Un altro modo per sviluppare software di sistema è quello di svilupparlo "
+"localmente sulla macchina desktop, quindi inviare il codice sorgente su un "
+"PPA Launchpad e generarlo lì stesso per l'architettura armhf. Se la funzione "
+"che stai sviluppando può essere testata sul tuo computer locale e se puoi "
+"aspettare che i builder di Launchpad inizino a lavorare sul tuo pacchetto ("
+"potrebbero volerci alcune ore), questo potrebbe essere o non essere una "
+"maniera corretta per lo sviluppo di software per il dispositivo."
 
 #: ../../appdev/system-software.rst:170
 msgid ""
@@ -1049,6 +1056,9 @@ msgid ""
 "implemented with URL patterns provided as arguments at launch time. Let’s"
 " take a closer look."
 msgstr ""
+"Tuttavia, sia il contenimento che l'accesso a URL esterni specificati sono "
+"implementati con pattern URL forniti come argomenti al momento dell'avvio. "
+"Diamo un'occhiata più da vicino."
 
 #: ../../appdev/webapp/guide.rst:48
 #, fuzzy
@@ -1060,6 +1070,8 @@ msgid ""
 "By default, there is no URL containment. Suppose you launch a webapp "
 "without any patters and only a starting URL like this:::"
 msgstr ""
+"Per impostazione predefinita, non vi è alcun contenuto URL. Supponiamo di "
+"avviare una webapp senza schemi e solo un URL iniziale come questo :::"
 
 #: ../../appdev/webapp/guide.rst:54
 msgid ""
@@ -1081,7 +1093,7 @@ msgstr ""
 
 #: ../../appdev/webapp/guide.rst:59
 msgid "Simple containment to the site"
-msgstr ""
+msgstr "Semplice contenuto al sito"
 
 #: ../../appdev/webapp/guide.rst:61
 msgid ""
@@ -1100,6 +1112,8 @@ msgid ""
 "http://www.ubuntu.com/* is the pattern The asterix is a wildcard that "
 "matches any valid sequence of trailing (right-most) characters in a URL"
 msgstr ""
+"http://www.ubuntu.com/* è il modello L'asterisco è un carattere jolly che "
+"corrisponde a qualsiasi sequenza valida di caratteri (più a destra) in un URL"
 
 #: ../../appdev/webapp/guide.rst:69
 msgid ""
@@ -1110,6 +1124,11 @@ msgid ""
 "(http://www.ubuntu.com/tablet). But, clicking Developer opens the "
 "corresponding URL in the browser."
 msgstr ""
+"Con questo comando e il pattern URL, l'utente può navigare e aprire nella "
+"webapp qualsiasi URL che inizia con http://www.ubuntu.com/. Ad esempio, si "
+"può fare clic sul pulsante Telefono (http://www.ubuntu.com/phone) nel banner "
+"e si apre nella webapp o sul pulsante Tablet (http://www.ubuntu.com/tablet) "
+". Ma facendo clic su Sviluppatore si apre l'URL corrispondente nel browser."
 
 #: ../../appdev/webapp/guide.rst:71
 msgid ""
@@ -1118,6 +1137,11 @@ msgid ""
 "the subdomain would create an ambiguous URL and thus introduces security "
 "concerns. More complex wildcard patterns"
 msgstr ""
+"Suggerimento: assicurati di specificare completamente il sottodominio "
+"nell'URL iniziale, ovvero utilizza http://www.ubuntu.com anziché "
+"www.ubuntu.com. Non specificando il sottodominio si creerebbe un URL ambiguo "
+"e si introdurranno quindi problemi di sicurezza. Modelli di caratteri jolly "
+"più complessi"
 
 #: ../../appdev/webapp/guide.rst:74
 msgid ""
@@ -1128,10 +1152,16 @@ msgid ""
 "www.ubuntu.com/phone/features while not allowing access to "
 "www.ubuntu.com/desktop or www.ubuntu.com/phone::"
 msgstr ""
+"Potresti voler limitare dalla webapp l'accesso solo ad alcune sottopagine "
+"del tuo sito. Questo è facile con i caratteri jolly. (I collegamenti ad "
+"altre pagine secondarie sono aperti nel browser.) Ad esempio, quanto segue "
+"consente l'accesso a www.ubuntu.com/desktop/features e www.ubuntu.com/phone/"
+"features pur non consentendo l'accesso a www.ubuntu.com/ desktop o "
+"www.ubuntu.com/phone ::"
 
 #: ../../appdev/webapp/guide.rst:80
 msgid "Multiple patterns"
-msgstr ""
+msgstr "Modelli multipli"
 
 #: ../../appdev/webapp/guide.rst:82
 msgid ""
@@ -1139,12 +1169,17 @@ msgid ""
 "example, the following allows access only to "
 "www.ubuntu.com/desktop/features and www.ubuntu.com/phone/features:::"
 msgstr ""
+"Puoi utilizzare modelli multipli separandoli con una virgola. Ad esempio, "
+"quanto segue consente l'accesso solo a www.ubuntu.com/desktop/features e "
+"www.ubuntu.com/phone/features :::"
 
 #: ../../appdev/webapp/guide.rst:86
 msgid ""
 "Tip: Multiple patterns are often necessary to achieve the intended "
 "containment behavior."
 msgstr ""
+"Suggerimento: spesso sono necessari modelli multipli per ottenere il "
+"comportamento di contenimento previsto ."
 
 #: ../../appdev/webapp/guide.rst:90
 #, fuzzy
@@ -1158,6 +1193,10 @@ msgid ""
 " to a single subdomain (and all of its subpages) with a pattern like "
 "this:::"
 msgstr ""
+"Molti URL hanno uno o più sottodomini. (Ad esempio, qui di seguito, \""
+"developer\" è il sottodominio: developer.ubuntu.com). Puoi consentire "
+"l'accesso ad un singolo sottodominio (e a tutte le sue sottopagine) con uno "
+"schema come questo :::"
 
 #: ../../appdev/webapp/guide.rst:96
 msgid ""
@@ -1165,6 +1204,9 @@ msgid ""
 "starting URL (and its subpages). So, if the starting URL is "
 "http://www.ubuntu.com, a second pattern is needed:::"
 msgstr ""
+"Tuttavia, generalmente si vuole che l'utente sia in grado di tornare all'URL "
+"iniziale (e alle sue sottopagine). Quindi, se l'URL di partenza è http://"
+"www.ubuntu.com, è necessario un secondo modello :::"
 
 #: ../../appdev/webapp/guide.rst:100
 msgid ""
@@ -1173,10 +1215,13 @@ msgid ""
 "http://developer.ubuntu.com and subpages and back to "
 "http://www.ubuntu.com and subpages:::"
 msgstr ""
+"Mettendoli insieme, ecco un esempio che avvia http://www.ubuntu.com e che "
+"consente la navigazione su http://developer.ubuntu.com e relative "
+"sottopagine e infine ritorno a http://www.ubuntu.com e sottopagine :::"
 
 #: ../../appdev/webapp/guide.rst:105
 msgid "Adding subdomains with a wildcard"
-msgstr ""
+msgstr "Aggiunta di sottodomini con un carattere jolly"
 
 #: ../../appdev/webapp/guide.rst:107
 msgid ""
@@ -1184,6 +1229,10 @@ msgid ""
 "design.ubuntu.com, developer.ubuntu.com and more. You can add access to "
 "all subdomains with a wildcard in the subdomain position:::"
 msgstr ""
+"Alcuni URL hanno più sottodomini. Ad esempio, www.ubuntu.com ha "
+"design.ubuntu.com, developer.ubuntu.com e altro ancora. Puoi aggiungere "
+"l'accesso a tutti i sottodomini con un jolly nella posizione del "
+"sottodominio :::"
 
 #: ../../appdev/webapp/guide.rst:111
 msgid ""
@@ -1192,10 +1241,14 @@ msgid ""
 "subdomain and subpages, including back to the starting URL "
 "(http://www.ubuntu.com) and its subpages."
 msgstr ""
+"Nota: un asterisco nella posizione del sottodominio corrisponde a qualsiasi "
+"sottodominio singolo valido. Questo modello singolo è sufficiente per "
+"consentire la navigazione verso qualsiasi sottodominio e sottopagine, "
+"incluso l'URL iniziale (http://www.ubuntu.com) e le sue sottopagine."
 
 #: ../../appdev/webapp/guide.rst:114
 msgid "Adding https"
-msgstr ""
+msgstr "Aggiungere https"
 
 #: ../../appdev/webapp/guide.rst:116
 msgid ""
@@ -1203,6 +1256,10 @@ msgid ""
 " allows https and https as access within the webapp to www.launchpad.net "
 "(and all subpages due to the wildcard):::"
 msgstr ""
+"Talvota un sito utilizza https per alcuni dei suoi URL. Ecco un esempio che "
+"consente a https e https come accesso all'interno della webapp di "
+"www.launchpad.net (e di tutte le sottopagine tramite l'uso del carattere "
+"jolly) :::"
 
 #: ../../appdev/webapp/guide.rst:120
 msgid ""
@@ -1210,24 +1267,29 @@ msgid ""
 "(the ‘s’) is optional. If https is always required, omit the question "
 "mark."
 msgstr ""
+"Nota: il punto interrogativo in https ?. Questo significa che il carattere "
+"precedente (la 's') è facoltativo. Se https è sempre richiesto allora ometti "
+"il punto interrogativo."
 
 #: ../../appdev/webapp/guide.rst:123
 msgid "Command line arguments"
-msgstr ""
+msgstr "Argomenti a linea di comando"
 
 #: ../../appdev/webapp/guide.rst:125
 msgid ""
 "The webapp-container accepts many options to fine tune how it hosts "
 "various web applications."
 msgstr ""
+"Il container webapp accetta diverse opzioni per perfezionare il modo in cui "
+"ospita varie applicazioni web."
 
 #: ../../appdev/webapp/guide.rst:127
 msgid "See all help with:::"
-msgstr ""
+msgstr "Vedi l'aiuto con :::"
 
 #: ../../appdev/webapp/guide.rst:131
 msgid "Note: Only the following options apply to converged Ubuntu.::"
-msgstr ""
+msgstr "Nota: solo le seguenti opzioni si applicano ad Ubuntu convergente. ::"
 
 #: ../../appdev/webapp/guide.rst:145
 msgid "Chrome options (if none specified, no chrome is shown by default):::"
@@ -1238,10 +1300,12 @@ msgid ""
 "Note: The other available options are specific to desktop webapps. It is "
 "recommended to not use them anymore."
 msgstr ""
+"Nota: le altre opzioni disponibili sono specifiche per le webapp desktop. Si "
+"raccomanda di non usarle più."
 
 #: ../../appdev/webapp/guide.rst:153
 msgid "User-Agent string override"
-msgstr ""
+msgstr "Annullamento stringa User-Agent"
 
 #: ../../appdev/webapp/guide.rst:155
 msgid ""
@@ -1250,10 +1314,16 @@ msgid ""
 "features. While not a recommended practice, it is sometimes necessary to "
 "change the default string sent by the webapp container."
 msgstr ""
+"Alcuni siti web controllano parti specifiche dell'identità del motore Web, "
+"ovvero la stringa User-Agent, per regolare la loro presentazione o abilitare "
+"certe funzionalità. Sebbene non sia una pratica consigliata, a volte è "
+"necessario modificare la stringa predefinita inviata dal contenitore webapp."
 
 #: ../../appdev/webapp/guide.rst:157
 msgid "To change the string from the command line, use the following option:::"
 msgstr ""
+"Per cambiare la stringa dalla riga di comando, utilizzare la seguente "
+"opzione:::"
 
 #: ../../appdev/webapp/guide.rst:162
 msgid "Browser data containment"
