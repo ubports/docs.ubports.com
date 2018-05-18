@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-30 21:23-0500\n"
-"PO-Revision-Date: 2018-04-26 11:20+0000\n"
+"PO-Revision-Date: 2018-04-30 11:19+0000\n"
 "Last-Translator: Tommaso Pelà <tom_pla@yahoo.it>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-contribute/it/>\n"
@@ -429,11 +429,15 @@ msgid "Update translations"
 msgstr "Traduzioni"
 
 #: ../../contribute/documentation.rst:55
+#, fuzzy
 msgid ""
 "You must update the translation files to match your changes before you "
 "commit them. To do this, run ``update-translations.sh`` in this "
 "repository."
 msgstr ""
+"Devi aggiornare i file di traduzione affinché coincidano con i tuoi cambi "
+"prima di inviarli. Per farlo, esegui ``update-translations.sh`` in questa "
+"repository."
 
 #: ../../contribute/documentation.rst:58
 msgid "Contribution workflow"
