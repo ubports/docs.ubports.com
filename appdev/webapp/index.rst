@@ -8,8 +8,6 @@ The Ubuntu platform provides an advanced web engine container to run online appl
 Web applications are hosted online. They can be as simple as a website, like an online news site, or they can distribute content like videos. They can also have a rich user interface or use the WebGL extension to deliver games online.
 
 Note: Ubuntu webapps and Ubuntu HTML5 apps are similar but not identical. The main difference is that the content of a webapp is provided through a URL, whereas HTML5 apps install their content (and usually provide an Ubuntu HTML5 GUI). Webapps also have restricted access to platform APIs.
-Webapps for converged Ubuntu
-
 
 Guide
 -----
