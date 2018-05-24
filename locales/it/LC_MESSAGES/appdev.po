@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-30 20:06-0500\n"
-"PO-Revision-Date: 2018-05-14 11:35+0000\n"
-"Last-Translator: rocco <roccofoti@gmail.com>\n"
+"PO-Revision-Date: 2018-05-24 17:55+0000\n"
+"Last-Translator: Simone <19simok89@gmail.com>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-appdev/it/>\n"
 "Language: it\n"
@@ -1105,7 +1105,7 @@ msgstr ""
 
 #: ../../appdev/webapp/guide.rst:67
 msgid "``--webappUrlPatterns=`` indicates a pattern is next"
-msgstr ""
+msgstr "``--Indirizzo Url del modello di webapp=`` indica il prossimo modello"
 
 #: ../../appdev/webapp/guide.rst:66
 msgid ""
@@ -1182,7 +1182,6 @@ msgstr ""
 "comportamento di contenimento previsto ."
 
 #: ../../appdev/webapp/guide.rst:90
-#, fuzzy
 msgid "Adding a specific subdomain"
 msgstr "Aggiungere un sottodominio specifico"
 
@@ -1326,34 +1325,49 @@ msgstr ""
 "opzione:::"
 
 #: ../../appdev/webapp/guide.rst:162
+#, fuzzy
 msgid "Browser data containment"
-msgstr ""
+msgstr "Contenimento dati del browser"
 
 #: ../../appdev/webapp/guide.rst:164
+#, fuzzy
 msgid ""
 "The webapp experience is contained and isolated from the browser data "
 "point of view. That is webapps do not access data from any other "
 "installed browser, such as history, cookies and so on. Other browser on "
 "the system do not access the webapp’s data. Storage"
 msgstr ""
+"L'esecuzione della webapp è isolata in un contenitore dal punto di vista dei "
+"dati del browser. Le webapp non accedono ai dati del browser, come la "
+"cronologia, cookies e cosi via. Un altro browser sul sistema non accede ai "
+"dati delle web app.\n"
+"Memoria locale"
 
 #: ../../appdev/webapp/guide.rst:167
 msgid ""
 "W3C allows apps to use local storage, and Oxide/Webapp-container supports"
 " the main standards here: LocalStorage, IndexedDB, WebSQL."
 msgstr ""
+"Lo standard W3C permette alle app di utilizzare la memoria locale e il web "
+"app container Oxide ne supporta i principali standard, come: Memoria locale, "
+"Database indicizzati, WebSQL."
 
 #: ../../appdev/webapp/index.rst:4
 msgid ""
 "Ubuntu Webapps are a great way to deliver online web applications into "
 "Ubuntu."
 msgstr ""
+"Le webapp per Ubuntu sono un'ottima via per permettere di utilizzare "
+"applicazioni in ubuntu."
 
 #: ../../appdev/webapp/index.rst:6
+#, fuzzy
 msgid ""
 "The Ubuntu platform provides an advanced web engine container to run "
 "online applications on the Ubuntu client devices."
 msgstr ""
+"La piattaforma di Ubuntu fornisce un avanzato web engine container per "
+"eseguire applicazioni on-line sui dispositivi Ubuntu."
 
 #: ../../appdev/webapp/index.rst:8
 msgid ""
@@ -1362,6 +1376,10 @@ msgid ""
 "They can also have a rich user interface or use the WebGL extension to "
 "deliver games online."
 msgstr ""
+"Le apicazioni web sono ospitate online. Le applicazioni possono essere "
+"semplici come un sito web, un sito di notizie, o possono mostrare contenuti "
+"come video. Inoltre possono avere un'interfaccia utente elaborata o usare "
+"l'estensione WebGL pereseguire eseguire dei giochi on-line."
 
 #: ../../appdev/webapp/index.rst:10
 msgid ""
@@ -1383,45 +1401,55 @@ msgstr ""
 
 #: ../../appdev/webapp/index.rst:26
 msgid "Quick start"
-msgstr ""
+msgstr "Avvio rapido"
 
 #: ../../appdev/webapp/index.rst:28
 msgid ""
 "There are several tools to help you package and deploy your webapp to "
 "your device:"
 msgstr ""
+"Ci sono molti strumenti per aiutarti  a creare e installare le tue webapp "
+"sul tuo dispositivo:"
 
 #: ../../appdev/webapp/index.rst:30
 msgid ""
 "`Webapp creator <https://open-store.io/app/webapp-creator.jujuyeh>`_ "
 "application available from the openstore"
 msgstr ""
+"`Webapp creator <https://open-store.io/app/webapp-creator.jujuyeh>`_ "
+"applicazione disponibile dall'openstore"
 
 #: ../../appdev/webapp/index.rst:31
-#, fuzzy
 msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ CLI"
 msgstr "`Pacchetti Click <https://click.readthedocs.io/en/latest/>`__"
 
 #: ../../appdev/webapp/index.rst:35
+#, fuzzy
 msgid "Debugging your webapp"
-msgstr ""
+msgstr "Eseguo debug della tua webapp"
 
 #: ../../appdev/webapp/index.rst:37
 msgid "This guide give you some tips to help you debug your webapp."
 msgstr ""
+"Questa guida ti da alcuni suggerimenti per aiutarti nel debug della tua "
+"webapp"
 
 #: ../../appdev/webapp/webdebug.rst:2
-#, fuzzy
 msgid "Debug web application"
-msgstr "Applicazioni web"
+msgstr "Debug applicazione web"
 
 #: ../../appdev/webapp/webdebug.rst:4
+#, fuzzy
 msgid ""
 "Most web-devs will probably want do most of their coding and debugging in"
 " the usual browser environment. The Ubuntu Touch browser is compliant "
 "with modern web standards, and most webapps will just work without "
 "further changes."
 msgstr ""
+"La maggior parte degli sviluppatori web sviluppa il codice ed esegue il "
+"debug con i browser più utilizzati. Il browser di Ubuntu Touch è conforme "
+"con gli standard più moderni, molte webapp funzionerà senza ulteriori "
+"modifiche."
 
 #: ../../appdev/webapp/webdebug.rst:6
 msgid ""
@@ -1431,7 +1459,7 @@ msgstr ""
 
 #: ../../appdev/webapp/webdebug.rst:9
 msgid "Watch the logs"
-msgstr ""
+msgstr "Guardare i file di log"
 
 #: ../../appdev/webapp/webdebug.rst:11
 msgid ""
@@ -1441,7 +1469,7 @@ msgstr ""
 
 #: ../../appdev/webapp/webdebug.rst:17
 msgid "Debugging in the browser"
-msgstr ""
+msgstr "Esegui debug nel browser"
 
 #: ../../appdev/webapp/webdebug.rst:20
 msgid ""
@@ -1449,16 +1477,22 @@ msgid ""
 " also used in Chrome/Chromium. By starting the browser in a special mode,"
 " you have access to the regular Chrome-style debugger."
 msgstr ""
+"Il browser di default di Ubuntu Touch è basato sulla tecnologia Blink che è "
+"anchd utilizzata dai browser Chrome/Chromium. Avviando il browser in una "
+"modalità speciale, avrai accesso al debug in stile Chrome."
 
 #: ../../appdev/webapp/webdebug.rst:22
+#, fuzzy
 msgid "On your phone, start the browser in inspector mode:::"
-msgstr ""
+msgstr "Sul tuo smartphone, avvio il browser in modalità ispettore:::"
 
 #: ../../appdev/webapp/webdebug.rst:26
 msgid ""
 "Now on your computer, launch Chrome/Chromium browser, and point address "
 "to ``http://YOUR_UT_IP_ADDRESS:9221``"
 msgstr ""
+"Ora sul tuo computer, lancia il browser Chrome/Chromium, e punta "
+"all'indirizzo ``http://YOUR_UT_IP_ADDRESS:9221``"
 
 #~ msgid "Using clickable for cordova and HTML-5 development"
 #~ msgstr "Uso di clickable per cordova e ldelo sviluppo HTML-5"
