@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-30 21:54-0500\n"
-"PO-Revision-Date: 2018-05-14 10:13+0000\n"
+"PO-Revision-Date: 2018-05-26 09:03+0000\n"
 "Last-Translator: rocco <roccofoti@gmail.com>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-index/it/>\n"
@@ -79,7 +79,6 @@ msgid "`Deutsch <https://docs.ubports.com/de/latest/>`_"
 msgstr "`Tedesco <https://docs.ubports.com/de/latest/>`_"
 
 #: ../../index.rst:18
-#, fuzzy
 msgid "`Italiano <https://docs.ubports.com/it/latest/>`_"
 msgstr "`Italiano <https://docs.ubports.com/it/latest/>`_"
 
