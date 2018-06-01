@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-30 20:06-0500\n"
-"PO-Revision-Date: 2018-04-26 10:41+0000\n"
-"Last-Translator: Tommaso Pelà <tom_pla@yahoo.it>\n"
+"PO-Revision-Date: 2018-05-26 08:58+0000\n"
+"Last-Translator: Mike <miguel2000@livecom.it>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-userguide/it/>\n"
 "Language: it\n"
@@ -804,10 +804,10 @@ msgid ""
 "/libertine-scope.ubuntu>`_. To install applications you need to use the "
 "commandline as described below."
 msgstr ""
-"Per visualizzare e avviare le applicazioni è necessario l'app *Desktop "
-"Apps Scope* disponibile nell'`Open Store <https://open-store.io/app"
-"/libertine-scope.ubuntu>`_. . Per installare le applicazioni è necessario"
-" utilizzare la riga di comando come descritto di seguito."
+"Per visualizzare e avviare le applicazioni è necessario l'app *Desktop Apps "
+"Scope* disponibile nell'`Open Store <https://open-store.io/app/libertine-"
+"scope.ubuntu>`_. Per installare le applicazioni è necessario utilizzare la "
+"riga di comando come descritto di seguito."
 
 #: ../../userguide/dailyuse/libertine.rst:9
 msgid "Manage containers"
@@ -1200,7 +1200,6 @@ msgid "Download the Ubuntu Touch ROM for your device:"
 msgstr "Scarica la ROM di Ubuntu Touch per il tupe dispositivo:"
 
 #: ../../userguide/install.rst:38
-#, fuzzy
 msgid ""
 "`Bq E4.5 <http://www.mibqyyo.com/de-"
 "download/categorias/smartphones/aquaris-e-serie/aquaris-e4-5-ubuntu-"
@@ -1283,7 +1282,6 @@ msgid "Start the tool with ``sudo``"
 msgstr "Avvia lo strumento con ``sudo``"
 
 #: ../../userguide/install.rst:58
-#, fuzzy
 msgid ""
 "Select the ``*Android_scatter.txt`` file from the archive you downloaded "
 "in the first step as the scatter-loading file"
@@ -1340,13 +1338,13 @@ msgstr ""
 "dispositivo."
 
 #: ../../userguide/install.rst:70
-#, fuzzy
 msgid ""
 "`Magic <https://en.wikipedia.org/wiki/Clarke's_three_laws>`_ happens. "
 "Your device will boot into a super old version of Ubuntu Touch."
 msgstr ""
 "`Magia <https://it.wikipedia.org/wiki/Tre_leggi_di_Clarke>`_ accade. Il tuo "
-"dispositivo booterà con una versione super vecchia di Ubuntu Touch."
+"dispositivo effettuerà il boot con una versione molto vecchia di Ubuntu "
+"Touch."
 
 #: ../../userguide/install.rst:71
 msgid ""

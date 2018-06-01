@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-30 21:54-0500\n"
-"PO-Revision-Date: 2018-04-26 20:02+0000\n"
-"Last-Translator: Tommaso Pelà <tom_pla@yahoo.it>\n"
+"PO-Revision-Date: 2018-05-26 09:03+0000\n"
+"Last-Translator: rocco <roccofoti@gmail.com>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-index/it/>\n"
 "Language: it\n"
@@ -63,43 +63,36 @@ msgid "You may view this documentation in the following languages:"
 msgstr "Puoi vedere questa documentazione nelle seguenti lingue:"
 
 #: ../../index.rst:14
-#, fuzzy
 msgid "`English <https://docs.ubports.com/en/latest/>`_"
-msgstr "`English <https://docs.ubports.com/en/latest/>`_"
+msgstr "`Inglese <https://docs.ubports.com/en/latest/>`_"
 
 #: ../../index.rst:15
 msgid "`Català <https://docs.ubports.com/ca/latest/>`_"
 msgstr "`Català <https://docs.ubports.com/ca/latest/>`_"
 
 #: ../../index.rst:16
-#, fuzzy
 msgid "`Français <https://docs.ubports.com/fr/latest/>`_"
-msgstr "`Français <https://docs.ubports.com/fr/latest/>`_"
+msgstr "`Francese <https://docs.ubports.com/fr/latest/>`_"
 
 #: ../../index.rst:17
-#, fuzzy
 msgid "`Deutsch <https://docs.ubports.com/de/latest/>`_"
-msgstr "`Deutsch <https://docs.ubports.com/de/latest/>`_"
+msgstr "`Tedesco <https://docs.ubports.com/de/latest/>`_"
 
 #: ../../index.rst:18
-#, fuzzy
 msgid "`Italiano <https://docs.ubports.com/it/latest/>`_"
 msgstr "`Italiano <https://docs.ubports.com/it/latest/>`_"
 
 #: ../../index.rst:19
-#, fuzzy
 msgid "`Română <https://docs.ubports.com/ro/latest/>`_"
-msgstr "`Română <https://docs.ubports.com/ro/latest/>`_"
+msgstr "`Rumeno <https://docs.ubports.com/ro/latest/>`_"
 
 #: ../../index.rst:20
-#, fuzzy
 msgid "`Türkçe <https://docs.ubports.com/tr/latest/>`_"
-msgstr "`Türkçe <https://docs.ubports.com/tr/latest/>`_"
+msgstr "`Turco <https://docs.ubports.com/tr/latest/>`_"
 
 #: ../../index.rst:21
-#, fuzzy
 msgid "`Español <https://docs.ubports.com/es/latest/>`_"
-msgstr "`Español <https://docs.ubports.com/es/latest/>`_"
+msgstr "`Spagnolo <https://docs.ubports.com/es/latest/>`_"
 
 #: ../../index.rst:23
 msgid "About"
