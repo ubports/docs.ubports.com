@@ -1,0 +1,524 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, The UBports project (Creative Commons BY-SA 4.0)
+# This file is distributed under the same license as the UBports package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: UBports 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-02 15:42-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: sq\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../porting/building-ubports-boot.rst:2
+msgid "Building ubports-boot"
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:4
+msgid "Ubuntu Touch uses Upstart rather than Systemd for its init daemon. Because of this, it is not fully Halium-compatible and is not able to use the vanilla hybris-boot that Halium produces. For this reason, we need to build ubports-boot."
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:8
+msgid "Add source to Halium tree"
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:10
+msgid "The first thing that needs to be done is adding the ubports-boot source to your Halium tree. You may choose to do this by adding it to your local manifests (recommended) or simply cloning it in place."
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:14
+msgid "Add to local manifest"
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:16
+msgid "Create a new file in ``.repo/local_manifests`` called ``ubports-boot.xml``. Add the following to the file:"
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:25
+msgid "Now, just do a ``repo sync`` to download the new source."
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:29
+msgid "Manual clone"
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:31
+msgid "You may also choose to clone the `ubports-boot repository <https://github.com/ubports/ubports-boot>`_ into your tree manually. It should be placed into ``BUILDDIR/halium/ubports-boot``."
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:33
+msgid "If you share your code and build instructions, please note that you've done this."
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:36
+msgid "Include in build system"
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:38
+msgid "The android build system won't know where to find ubports-boot normally. To fix this, open the file ``BUILDDIR/build/core/main.mk`` in a text editor. Find the comment ``# Specific projects for Halium`` and add ``halium/ubports-boot`` to the list of ``subdirs`` ::"
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:45
+msgid "Fix mounts"
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:49
+msgid "This is a workaround for `ubports/ubports-boot #1 <https://github.com/ubports/ubports-boot/issues/1>`_ and `ubports/ubports-boot #2 <https://github.com/ubports/ubports-boot/issues/2>`_. It should not be considered a permanent fix. Be prepared to revert this later when these bugs have been fixed."
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:51
+msgid "The initramfs of the ubports-boot image takes a commandline parameter, ``datapart=``, which points it to the block device that is normally mounted at ``/data`` in Android. This parameter is automatically embedded into the image at build time by finding ``/data`` in your device's default fstab and using its source. Unfortunately, this source is generally a node in ``/dev/block/bootdevice/by-name`` or something else strange, which is only available in an Android initramfs. To fix this, Halium uses the fixup-mountpoints script, which you are probably familiar with by now."
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:53
+msgid "The ubports-boot initramfs does not use the fixup-mountpoints script, nor does it put block devices in the proper place for mounting without modification. For this reason, we are going to have to edit your device's fstab."
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:55
+msgid "The first step to this process is figuring out where your fstab actually is. For most, this is inside ``BUILDDIR/device/MANUFACTUER/CODENAME/rootdir/etc`` and it is named either ``fstab.qcom`` or ``fstab.devicename``. Open the file for editing."
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:57
+msgid "With the file open, change the ``src``, or first attribute, of the ``/data`` mountpoint to what you put in fixup-mountpoints for ``/data``, but without the ``/block`` folder. For example, on the Moto G5 Plus, the block device is ``/dev/block/mmcblk0p54``, so I put ``/dev/mmcblk0p54`` in this place. Also change the type to ext4, if it is not already."
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:59
+msgid "Now, remove all ``context=`` options from all block devices in the file. Save and exit."
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:61
+msgid "For an example of this, see `this commit on universalsuperbox/android_device_motorola_potter <https://github.com/UniversalSuperBox/android_device_motorola_potter/commit/9b574967e3a6f07884760b418befe731ccfcb924>`__. Removing the ``wait`` flag is not required and was an accident."
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:65
+msgid "Edit init.rc"
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:67
+msgid "Some Android services conflict with ofono in 16.04 and will cause your device to reboot without warning, about 30-60 seconds after it boots. We will need to disable these services until the issue is resolved."
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:69
+msgid "To do this, open up your device's default ``init.rc`` (this is likely init.qcom.rc or init.[codename].rc), comment out any ``import`` statements, and add ``disabled`` to services like rild, qti, and others that interface with the radio. Most of them have a ``user radio`` line. For an example, see `commit 7875b48b on UniversalSuperBox/android_device_motorola_potter <https://github.com/UniversalSuperBox/android_device_motorola_potter/commit/7875b48b5b6f240935d7f327d33128e952a3589b>`__"
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:73
+msgid "Edit kernel config"
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:75
+msgid "Ubuntu Touch requires a slightly different kernel config than Halium, including enabling Apparmor. Luckily, we have a nice script for this purpose, ``check-kernel-config``. It's included in the ubports-boot repository. Simply run it on your config as follows::"
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:79
+msgid "You may have to do this twice. It will likely fix things both times. Then, run the script without the ``-w`` flag to see if there are any more errors. If there are, fix them manually. Once finished, run the script without the ``-w`` flag one more time to make sure everything is correct."
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:83
+msgid "Build the image"
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:85
+msgid "Once ubports-boot is in place, you can build it quite simply. You will also need to rebuild system.img due to our changes."
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:87
+msgid "``cd`` to your Halium BUILDDIR"
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:88
+msgid "``source build/envsetup.sh``"
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:89
+msgid "Run ``breakfast`` or ``lunch``, whichever you use for your device"
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:90
+msgid "``mka ubports-boot``"
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:91
+msgid "``mka systemimage``"
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:96
+#: ../../porting/installing-16-04.rst:74
+msgid "Continue on"
+msgstr ""
+
+#: ../../porting/building-ubports-boot.rst:98
+msgid "Now that you have ubports-boot built, you can move on to :doc:`installing-16-04`."
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:2
+msgid "Installing Ubuntu Touch 16.04 images on Halium"
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:6
+msgid "These steps  will wipe **all** of the data on your device. If there is anything that you would like to keep, ensure it is backed up and copied off of the device before continuing."
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:8
+msgid "Now that you've :doc:`built ubports-boot <building-ubports-boot>`, we'll use a script called ``rootstock-touch-install`` to install an Ubuntu Touch rootfs on your device."
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:10
+msgid "In order to install Ubuntu Touch, you will need a recovery with Busybox, such as TWRP, installed on your phone. You will also need to ensure the /data partition is formatted with ext4 and does not have any encryption on it."
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:13
+msgid "Install ubports-boot"
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:15
+msgid "We'll need to install the ubports-boot image before installing an image. Reboot your phone into fastboot mode, then do the following from your Halium tree::"
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:21
+msgid "Download the rootfs"
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:23
+msgid "Next we'll need to download the rootfs (root filesystem) that's appropriate for your device. Right now, we only have one available. Simply download ``ubports-touch.rootfs-xenial-armhf.tar.gz`` from `our CI server <https://ci.ubports.com/job/xenial-rootfs-armhf/>`__. If you have a 64-bit ARM (aarch64) device, this same rootfs should work for you. If you have an x86 device, let us know. We do not have a rootfs available for these yet."
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:27
+msgid "Install system.img and rootfs"
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:31
+msgid "Change the rootstock link to point to UBports once the actuallyfixit PR is merged."
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:33
+msgid "Download the rootstock-touch-install script from `universalsuperbox/rootstock-ng <https://github.com/universalsuperbox/rootstock-ng/tree/xenial-actuallyfixit>`_. Boot your device into recovery and run the script as follows::"
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:37
+msgid "The script will copy and extract the files to their proper places, then allow you to set the phablet user's password. If it gets all the way to ``rebooting device`` and doesn't seem to produce any errors, it's time to continue to the next step. If something goes wrong, please get in touch with us. If your device doesn't reboot automatically, reboot it using your recovery's interface."
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:39
+msgid "If you get errors similar to ``broken pipe`` or ``out of memory``, use the ``-b`` option to push the busybox or toybox build that came from your tree. These may have fewer bugs than your recovery's busybox. More information about this option is available in the script's README."
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:43
+msgid "Get SSH access"
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:45
+msgid "When your device boots, it will likely stay at the bootloader screen. However, you should also get a new network connection on the computer you have it plugged in to. We will use this to debug the system."
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:47
+msgid "To confirm that your device has booted correctly, run ``dmesg -w`` and watch for \"GNU/Linux device\" in the output. If you instead get something similar to \"ubports initrd i hit a nail\", please get in contact with us so we can find out why. You may also choose to run ``watch ip link`` and look for changes in network devices."
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:49
+msgid "Similar to the Halium reference rootfs, you should set your computer's IP on the newly connected RNDIS interface to ``10.15.19.100`` if you don't get one automatically. Then, run the following to access your device::"
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:53
+msgid "The password will be the one that you set while running rootstock."
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:56
+msgid "Make / writeable"
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:58
+msgid "Before we make any changes to the rootfs (which will be required for the next step), you'll need to remount it with write permissions. To do that, run the following command::"
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:64
+msgid "Add udev rules"
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:66
+msgid "Now that you're logged in, you must create some udev rules to allow Ubuntu Touch software to access your hardware. Run the following command, replacing [codename] with your device's codename.::"
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:71
+msgid "Now, reboot the device. If all has gone well, you will eventually see the Ubuntu Touch spinner followed by Unity 8. Your lock password is the same as you set for SSH."
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:76
+msgid "Congratulations! Ubuntu Touch has now booted on your device. Move on to :doc:`running-ut` to learn about more specific steps you will need to take for a complete port."
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:80
+msgid "This should be a little heavier on \"What to do when something goes wrong\" content."
+msgstr ""
+
+#: ../../porting/introduction.rst:2
+msgid "Porting information"
+msgstr ""
+
+#: ../../porting/introduction.rst:5
+msgid "If you are looking for information on installing Ubuntu Touch on a supported device, or if you would like to check if your device is supported, please see `this page <https://devices.ubuntu-touch.io/>`_."
+msgstr ""
+
+#: ../../porting/introduction.rst:7
+msgid "This section will introduce you to some of the specifics of porting Ubuntu Touch to an Android device."
+msgstr ""
+
+#: ../../porting/introduction.rst:9
+msgid "Before you begin, you'll want to head over to `the Halium porting guide <http://docs.halium.org/en/latest/porting/first-steps.html>`_ and get your ``systemimage`` built without errors. Once you're at the point of installing a rootfs, you can come back here."
+msgstr ""
+
+#: ../../porting/introduction.rst:11
+msgid "Start at :doc:`building-ubports-boot` if you'd like to install the UBports Ubuntu Touch 16.04 rootfs."
+msgstr ""
+
+#: ../../porting/running-ut.rst:2
+msgid "Running Ubuntu Touch"
+msgstr ""
+
+#: ../../porting/running-ut.rst:5
+msgid "Display settings"
+msgstr ""
+
+#: ../../porting/running-ut.rst:7
+msgid "When the device boots, you'll probably notice that everything is very small. There are two variables that set the content scaling for Unity 8 and Ubuntu Touch applications: ``GRID_UNIT_PX`` and ``QTWEBKIT_DPR``."
+msgstr ""
+
+#: ../../porting/running-ut.rst:9
+msgid "There are also some other options available that may be useful for you depending on your device's form factor. These are discussed below."
+msgstr ""
+
+#: ../../porting/running-ut.rst:11
+msgid "All of these settings are guessed by Unity 8 if none are set. There are many cases, however, where the guess is wrong (for example, very high resolution phone displays will be identified as desktop computers). To manually set a value for these variables, simply create a file at ``/etc/ubuntu-session.d/[codename].conf`` specifying them. For example, this is the file for the Nexus 7 tablet::"
+msgstr ""
+
+#: ../../porting/running-ut.rst:19
+msgid "Methods for deriving values for these variables are below."
+msgstr ""
+
+#: ../../porting/running-ut.rst:22
+msgid "Display scaling"
+msgstr ""
+
+#: ../../porting/running-ut.rst:24
+msgid "``GRID_UNIT_PX`` (Pixels per Grid Unit or Px/GU) is specific to each device. Its goal is to make the user interface of the system and its applications the same *perceived* size regardless of the device they are displayed on. It is primarily dependent on the pixel density of the device’s screen and the distance to the screen the user is at. The latter value cannot be automatically detected and is based on heuristics. We assume that tablets and laptops are the same distance and that they are held at 1.235 times the distance phones tend to be held at."
+msgstr ""
+
+#: ../../porting/running-ut.rst:26
+msgid "``QTWEBKIT_DPR`` sets the display scaling for the Oxide web engine, so changes to this value will affect the scale of the browser and webapps."
+msgstr ""
+
+#: ../../porting/running-ut.rst:28
+msgid "A reference device has been chosen from which we derive the values for all other devices. The reference device is a laptop with a 120ppi screen. However, there is no exact formula since these options are set for *perceived* size rather than *physical* size . Here are some values for other devices so you may derive the correct one for yours:"
+msgstr ""
+
+#: ../../porting/running-ut.rst:31
+msgid "Device"
+msgstr ""
+
+#: ../../porting/running-ut.rst:31
+msgid "Resolution"
+msgstr ""
+
+#: ../../porting/running-ut.rst:31
+msgid "Display Size"
+msgstr ""
+
+#: ../../porting/running-ut.rst:31
+msgid "PPI"
+msgstr ""
+
+#: ../../porting/running-ut.rst:31
+msgid "Px/GU"
+msgstr ""
+
+#: ../../porting/running-ut.rst:31
+msgid "QtWebKit DPR"
+msgstr ""
+
+#: ../../porting/running-ut.rst:33
+msgid "'Normal' density laptop"
+msgstr ""
+
+#: ../../porting/running-ut.rst:33
+#: ../../porting/running-ut.rst:33
+#: ../../porting/running-ut.rst:35
+#: ../../porting/running-ut.rst:35
+msgid "N/A"
+msgstr ""
+
+#: ../../porting/running-ut.rst:33
+msgid "96-150"
+msgstr ""
+
+#: ../../porting/running-ut.rst:33
+msgid "8"
+msgstr ""
+
+#: ../../porting/running-ut.rst:33
+msgid "1.0"
+msgstr ""
+
+#: ../../porting/running-ut.rst:34
+msgid "ASUS Nexus 7"
+msgstr ""
+
+#: ../../porting/running-ut.rst:34
+msgid "1280x800"
+msgstr ""
+
+#: ../../porting/running-ut.rst:34
+msgid "7\""
+msgstr ""
+
+#: ../../porting/running-ut.rst:34
+msgid "216"
+msgstr ""
+
+#: ../../porting/running-ut.rst:34
+msgid "12"
+msgstr ""
+
+#: ../../porting/running-ut.rst:34
+#: ../../porting/running-ut.rst:36
+#: ../../porting/running-ut.rst:37
+#: ../../porting/running-ut.rst:38
+msgid "2.0"
+msgstr ""
+
+#: ../../porting/running-ut.rst:35
+msgid "'High' density laptop"
+msgstr ""
+
+#: ../../porting/running-ut.rst:35
+msgid "150-250"
+msgstr ""
+
+#: ../../porting/running-ut.rst:35
+msgid "16"
+msgstr ""
+
+#: ../../porting/running-ut.rst:35
+msgid "1.5"
+msgstr ""
+
+#: ../../porting/running-ut.rst:36
+msgid "Samsung Galaxy Nexus"
+msgstr ""
+
+#: ../../porting/running-ut.rst:36
+msgid "1280x720"
+msgstr ""
+
+#: ../../porting/running-ut.rst:36
+msgid "4.65\""
+msgstr ""
+
+#: ../../porting/running-ut.rst:36
+msgid "316"
+msgstr ""
+
+#: ../../porting/running-ut.rst:36
+#: ../../porting/running-ut.rst:37
+msgid "18"
+msgstr ""
+
+#: ../../porting/running-ut.rst:37
+msgid "LG Nexus 4"
+msgstr ""
+
+#: ../../porting/running-ut.rst:37
+msgid "1280x768"
+msgstr ""
+
+#: ../../porting/running-ut.rst:37
+msgid "4.7\""
+msgstr ""
+
+#: ../../porting/running-ut.rst:37
+msgid "320"
+msgstr ""
+
+#: ../../porting/running-ut.rst:38
+msgid "Samsung Nexus 10"
+msgstr ""
+
+#: ../../porting/running-ut.rst:38
+msgid "2560x1600"
+msgstr ""
+
+#: ../../porting/running-ut.rst:38
+msgid "10.1\""
+msgstr ""
+
+#: ../../porting/running-ut.rst:38
+msgid "299"
+msgstr ""
+
+#: ../../porting/running-ut.rst:38
+msgid "20"
+msgstr ""
+
+#: ../../porting/running-ut.rst:39
+msgid "Fairphone 2"
+msgstr ""
+
+#: ../../porting/running-ut.rst:39
+#: ../../porting/running-ut.rst:40
+msgid "1080x1920"
+msgstr ""
+
+#: ../../porting/running-ut.rst:39
+msgid "5\""
+msgstr ""
+
+#: ../../porting/running-ut.rst:39
+msgid "440"
+msgstr ""
+
+#: ../../porting/running-ut.rst:39
+#: ../../porting/running-ut.rst:40
+msgid "23"
+msgstr ""
+
+#: ../../porting/running-ut.rst:39
+#: ../../porting/running-ut.rst:40
+msgid "2.5"
+msgstr ""
+
+#: ../../porting/running-ut.rst:40
+msgid "LG Nexus 5"
+msgstr ""
+
+#: ../../porting/running-ut.rst:40
+msgid "4.95\""
+msgstr ""
+
+#: ../../porting/running-ut.rst:40
+msgid "445"
+msgstr ""
+
+#: ../../porting/running-ut.rst:43
+msgid "Experiment with a few values to find one that feels good when compared to the Ubuntu Touch experience on other devices. If you are unsure of which is the best, share some pictures (including some object for scale) along with the device specs with us."
+msgstr ""
+
+#: ../../porting/running-ut.rst:46
+msgid "Form factor"
+msgstr ""
+
+#: ../../porting/running-ut.rst:48
+msgid "There are two other settings that may be of interest to you."
+msgstr ""
+
+#: ../../porting/running-ut.rst:50
+msgid "``FORM_FACTOR`` specifies the device's form factor. This value is set as the device's Chassis, which you can find by running ``hostnamectl``. The acceptable values are ``handset``, ``tablet``, ``laptop`` and ``desktop``. Apps such as the gallery use this information to change their functionality. For more information on the Chassis, see `the freedesktop.org hostnamed specification`_."
+msgstr ""
+
+#: ../../porting/running-ut.rst:52
+msgid "``NATIVE_ORIENTATION`` sets the display orientation for the device's built-in screen. This value is used whenever autorotation isn't working correctly or when an app wishes to be locked to the device's native orientation. Acceptable values are ``landscape``, which is normally used for tablets, laptops, and desktops; and ``portrait``, which is usually used for phone handsets."
+msgstr ""
