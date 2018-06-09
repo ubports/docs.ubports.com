@@ -1,7 +1,7 @@
 Building halium-boot
 =====================
 
-Halium-boot is the new boot image in the Halium project, replacing hybris-boot. We will be building and using it for Ubuntu Touch.
+Halium-boot is a new proposed boot image in the Halium project, replacing hybris-boot. We will be building and using it for Ubuntu Touch.
 
 Fix mounts
 ----------
