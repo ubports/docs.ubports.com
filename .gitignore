@@ -1,5 +1,6 @@
 # sphinx build folder
 _build
+.doctrees/
 
 # Compiled source #
 ###################

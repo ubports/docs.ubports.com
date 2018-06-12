@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-30 20:06-0500\n"
-"PO-Revision-Date: 2018-04-04 15:51+0000\n"
+"PO-Revision-Date: 2018-04-17 15:26+0000\n"
 "Last-Translator: Walter Garcia-Fontes <walter.garcia@upf.edu>\n"
 "Language-Team: Catalan <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-appdev/ca/>\n"
@@ -1472,26 +1472,34 @@ msgid ""
 "with modern web standards, and most webapps will just work without "
 "further changes."
 msgstr ""
+"La major part dels desenvolupadores web probablement voldran fer la major "
+"part de la seva programació i depuració a l'entorn usual de navegador. El "
+"navegador de l'Ubuntu Touch compleix els estàndards moderns de la web, i la "
+"major part de les aplicacions web funcionaran sense canvis."
 
 #: ../../appdev/webapp/webdebug.rst:6
 msgid ""
 "For those (hopefully) rare cases where further debugging is needed, there"
 " are two ways to gain further information on the failure."
 msgstr ""
+"Per aquells casos (amb sort) rars on calgui depuració addicional, hi ha dues "
+"maneres d'obtenir més informació sobre la fallada."
 
 #: ../../appdev/webapp/webdebug.rst:9
 msgid "Watch the logs"
-msgstr ""
+msgstr "Inspecció dels registres"
 
 #: ../../appdev/webapp/webdebug.rst:11
 msgid ""
 "If you are comfortable in a CLI environment, most Javascript errors will "
 "leave an entry in the app log file::"
 msgstr ""
+"Si us és còmode l'entorn de línia d'ordres, la major part dels errors de "
+"Javascirpt deixaran una entrada al fitxer de registre de l'aplicació::"
 
 #: ../../appdev/webapp/webdebug.rst:17
 msgid "Debugging in the browser"
-msgstr ""
+msgstr "Depuració al navegador"
 
 #: ../../appdev/webapp/webdebug.rst:20
 msgid ""
@@ -1499,16 +1507,21 @@ msgid ""
 " also used in Chrome/Chromium. By starting the browser in a special mode,"
 " you have access to the regular Chrome-style debugger."
 msgstr ""
+"El navegador predeterminat de l'Ubuntu Touch està basat en la tecnologia "
+"Blink que també s'usa al Chrome/Chromium. Iniciant el navegador en un mode "
+"especial, teniu accés al depurador regular d'estil Chrome."
 
 #: ../../appdev/webapp/webdebug.rst:22
 msgid "On your phone, start the browser in inspector mode:::"
-msgstr ""
+msgstr "Al vostre telèfon, inicieu el navegador en mode inspector::"
 
 #: ../../appdev/webapp/webdebug.rst:26
 msgid ""
 "Now on your computer, launch Chrome/Chromium browser, and point address "
 "to ``http://YOUR_UT_IP_ADDRESS:9221``"
 msgstr ""
+"Ara, al vostre ordinador, llenceu el navegador Chrome/Chromium, i apunteu a "
+"l'adreça ``http://LA_VOSTRA_ADREÇA_IP_UT:9221``"
 
 #~ msgid "Clickable"
 #~ msgstr "Clickable"
