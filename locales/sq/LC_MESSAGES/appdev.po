@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-02 15:42-0500\n"
-"PO-Revision-Date: 2018-06-06 19:45+0000\n"
-"Last-Translator: Jeff Gashi <jeffi27@live.at>\n"
+"PO-Revision-Date: 2018-06-12 14:40+0000\n"
+"Last-Translator: Rrahim Gashi <jimmygashi@gmail.com>\n"
 "Language-Team: Albanian <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-appdev/sq/>\n"
 "Language: sq\n"
@@ -195,26 +195,34 @@ msgstr "Siguria dhe izolimi i aplikacioneve"
 #: ../../appdev/index.rst:73
 msgid "All Ubuntu apps and scopes are confined respecting AppArmor access control mechanism (see `Application Confinement <https://wiki.ubuntu.com/SecurityTeam/Specifications/ApplicationConfinement#App_confinement_with_AppArmor>`_) , meaning they only have access to their own resources and are isolated from other apps and parts of the system. The developer must declare which policy groups are needed for the app or scope to function properly with an apparmor ``.json`` file."
 msgstr ""
+"Të gjitha aplikacionet dhe qëllimet e Ubuntu janë të kufizuara duke "
+"respektuar mekanizmin e kontrollit të qasjes në AppArmor (shih 'Përfundimi i "
+"aplikacionit <https://wiki.ubuntu.com/SecurityTeam/Specifications/Application"
+"Confinement#App_confinement_with_AppArmor> `_), që do të thotë se ata kanë "
+"qasje vetëm në burimet e tyre dhe janë të izoluara nga aplikacionet dhe "
+"pjesët e tjera të sistemit. Zhvilluesi duhet të deklarojë se cilat grupe të "
+"politikave janë të nevojshme për aplikacionin ose fushëveprimin për të "
+"funksionuar siç duhet me një ``.json``skedar."
 
 #: ../../appdev/index.rst:75
 msgid "Example ``apparmor.json`` file::"
-msgstr ""
+msgstr "Shembull ``apparmor.json`` file::"
 
 #: ../../appdev/index.rst:87
 msgid "Non exhaustive policy groups:"
-msgstr ""
+msgstr "Grupet e politikës jo shteruese:"
 
 #: ../../appdev/index.rst:89
 msgid "accounts: Can use Online Accounts"
-msgstr ""
+msgstr "accounts: Mund të përdoret Akonti Online"
 
 #: ../../appdev/index.rst:90
 msgid "audio: Can play audio"
-msgstr ""
+msgstr "audio: Mund të luaj zëri"
 
 #: ../../appdev/index.rst:91
 msgid "camera: Can access the camera(s)"
-msgstr ""
+msgstr "camera: Mund të ketë qasje në Kamera"
 
 #: ../../appdev/index.rst:92
 msgid "connectivity: Can access coarse network connectivity information"
