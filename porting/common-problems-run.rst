@@ -67,7 +67,7 @@ If you have Wi-Fi working (See `the Halium docs for Wi-Fi`_), install the ``libc
     sudo apt update
     sudo apt install libc6-dbg
 
-Then, run the following commands to get all of the needed logs in one handy file::
+Then, run the following commands to get all of the needed logs::
 
     sudo unity-system-compositor --debug-without-dm &> ~/usc.log
     sudo gdb -ex 'set confirm off' -ex 'run' -ex 'bt full' -ex quit --args unity-system-compositor --debug-without-dm &> ~/usc-gdb.log

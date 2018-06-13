@@ -11,7 +11,7 @@ This page details problems commonly faced while following the :doc:`installing-1
 SSH hangs when trying to connect
 --------------------------------
 
-The SSH connection may hang indefinitely when trying to connect. Attempts to stop the connection with Control-C may or may not return you to a shell prompt. If you run ``ssh -vvvv phablet@10.15.19.82``, you get the only following output before the program stops::
+The SSH connection may hang indefinitely when trying to connect. Attempts to stop the connection with Control-C may or may not return you to a shell prompt. If you run ``ssh -vvvv phablet@10.15.19.82``, you only get the following output before the program stops::
 
     debug1: Connecting to 10.15.19.82 [10.15.19.82] port 22.
     debug1: Connection established.

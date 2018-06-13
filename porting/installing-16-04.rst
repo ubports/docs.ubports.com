@@ -5,7 +5,7 @@ Installing Ubuntu Touch 16.04 images on Halium
 
     These steps  will wipe **all** of the data on your device. If there is anything that you would like to keep, ensure it is backed up and copied off of the device before continuing.
 
-Now that you've :doc:`built halium-boot <building-halium-boot>`, we'll use a script called ``halium-install`` to install an Ubuntu Touch rootfs on your device.
+Now that you've :doc:`built halium-boot <building-halium-boot>`, we're ready to install Ubuntu Touch on your device.
 
 In order to install Ubuntu Touch, you will need a recovery with Busybox, such as TWRP, installed on your phone. You will also need to ensure the /data partition is formatted with ext4 and does not have any encryption on it.
 
