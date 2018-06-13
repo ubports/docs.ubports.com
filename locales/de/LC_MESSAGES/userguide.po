@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-30 20:06-0500\n"
-"PO-Revision-Date: 2018-03-17 16:21+0000\n"
-"Last-Translator: Christopher <C.Scharnagl@campus.lmu.de>\n"
+"PO-Revision-Date: 2018-06-02 20:29+0000\n"
+"Last-Translator: Weblate Admin <flori-weblate@bin.org.in>\n"
+"Language-Team: German <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-userguide/de/>\n"
 "Language: de\n"
-"Language-Team: German <https://translate.ubports.com/projects/ubports-"
-"docs/documentation-userguide/de/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../userguide/advanceduse/adb.rst:2
@@ -1059,7 +1060,6 @@ msgid "Install Ubuntu Touch"
 msgstr "Ubuntu Touch installieren"
 
 #: ../../userguide/install.rst:4
-#, fuzzy
 msgid ""
 "Installing Ubuntu Touch is easy, and a lot of work has gone in to making "
 "the installation process less intimidating to less technical users. The "
@@ -1068,11 +1068,11 @@ msgid ""
 "from your Linux, Mac or Windows computer."
 msgstr ""
 "Ubuntu Touch zu installieren ist einfach und es wurde eine Menge Arbeit "
-"darin investiert, den Installationsvorgang weniger unangenehm für weniger"
-" technisch versierte Nutzer zu machen. Der UBports Installer ist ein "
-"nettes grafisches Werkzeug, mit dem sich Ubuntu Touch auf einem "
-"`unterstützten Gerät <devices.ubports.com>`_ von Linux, Mac oder Windows "
-"aus installieren lässt."
+"darin investiert, den Installationsvorgang weniger unangenehm für weniger "
+"technisch versierte Nutzer zu machen. Der UBports Installer ist ein nettes "
+"grafisches Werkzeug, mit dem sich Ubuntu Touch auf einem `unterstützten "
+"Gerät <https://ubuntu-touch.io/devices>`_ von Linux, Mac oder Windows aus "
+"installieren lässt."
 
 #: ../../userguide/install.rst:7
 #, fuzzy
@@ -1096,29 +1096,24 @@ msgstr ""
 "Betriebssystem herunterladen:"
 
 #: ../../userguide/install.rst:11
-#, fuzzy
 msgid "Windows: ``ubports-installer-<version-number>.exe``"
-msgstr "Windows: ubports-installer-<Versionsnummer>.exe"
+msgstr "Windows: ``ubports-installer-<Versionsnummer>.exe``"
 
 #: ../../userguide/install.rst:12
-#, fuzzy
 msgid "macOS: ``ubports-installer-<version-number>.dmg``"
-msgstr "macOS: ubports-installer-<Versionsnummer>.dmg"
+msgstr "macOS: ``ubports-installer-<Versionsnummer>.dmg``"
 
 #: ../../userguide/install.rst:13
-#, fuzzy
 msgid "Ubuntu or Debian: ``ubports-installer-<version-number>.deb``"
-msgstr "Windows: ubports-installer-<Versionsnummer>.exe"
+msgstr "Ubuntu oder Debian: ``ubports-installer-<Versionsnummer>.deb``"
 
 #: ../../userguide/install.rst:14
-#, fuzzy
 msgid ""
 "Other Linux distribtuions: ``ubports-installer-<version-number>.snap`` or"
 " ``ubports-installer-<version-number>.AppImage``"
 msgstr ""
-"Linux: ubports-installer-<Versionsnummer>.deb, ubports-"
-"installer-<Versionsnummer>.snap oder ubports-"
-"installer-<Versionsnummer>.AppImage"
+"Andere Linux-Distributionen: ``ubports-installer-<Versionsnummer>.snap`` "
+"oder ``ubports-installer-<Versionsnummer>.AppImage``"
 
 #: ../../userguide/install.rst:16
 msgid ""
@@ -1405,4 +1400,3 @@ msgstr ""
 #~ "liegen und können sich deshalb nicht "
 #~ "mehr mit Drahtlos- oder Mobilfunknetzen "
 #~ "verbinden."
-

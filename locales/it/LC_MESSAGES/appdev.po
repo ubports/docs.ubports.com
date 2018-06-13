@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-30 20:06-0500\n"
-"PO-Revision-Date: 2018-03-22 10:32+0000\n"
+"PO-Revision-Date: 2018-05-26 09:05+0000\n"
 "Last-Translator: rocco <roccofoti@gmail.com>\n"
+"Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-appdev/it/>\n"
 "Language: it\n"
-"Language-Team: Italian <https://translate.ubports.com/projects/ubports-"
-"docs/documentation-appdev/it/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../appdev/cookbook.rst:2
@@ -767,6 +768,13 @@ msgid ""
 "working on your package (this could take some hours), this might or might"
 " not be a suitable way of device development."
 msgstr ""
+"Un altro modo per sviluppare software di sistema è quello di svilupparlo "
+"localmente sulla macchina desktop, quindi inviare il codice sorgente su un "
+"PPA Launchpad e generarlo lì stesso per l'architettura armhf. Se la funzione "
+"che stai sviluppando può essere testata sul tuo computer locale e se puoi "
+"aspettare che i builder di Launchpad inizino a lavorare sul tuo pacchetto ("
+"potrebbero volerci alcune ore), questo potrebbe essere o non essere una "
+"maniera corretta per lo sviluppo di software per il dispositivo."
 
 #: ../../appdev/system-software.rst:170
 msgid ""
@@ -1048,16 +1056,21 @@ msgid ""
 "implemented with URL patterns provided as arguments at launch time. Let’s"
 " take a closer look."
 msgstr ""
+"Tuttavia, sia il contenimento che l'accesso a URL esterni specificati sono "
+"implementati con pattern URL forniti come argomenti al momento dell'avvio. "
+"Diamo un'occhiata più da vicino."
 
 #: ../../appdev/webapp/guide.rst:48
 msgid "Uncontained by default"
-msgstr ""
+msgstr "Vuoto per default"
 
 #: ../../appdev/webapp/guide.rst:50
 msgid ""
 "By default, there is no URL containment. Suppose you launch a webapp "
 "without any patters and only a starting URL like this:::"
 msgstr ""
+"Per impostazione predefinita, non vi è alcun contenuto URL. Supponiamo di "
+"avviare una webapp senza schemi e solo un URL iniziale come questo :::"
 
 #: ../../appdev/webapp/guide.rst:54
 msgid ""
@@ -1065,16 +1078,21 @@ msgid ""
 " click the Developer button at the top, they navigate to "
 "developer.ubuntu.com, and it displays in the webapp."
 msgstr ""
+"L'utente può raggiungere qualsiasi URL senza limiti. Ad esempio cliccando il "
+"pulsante Sviluppatore nella parte in alto, si arriva a developer.ubuntu.com, "
+"e mostra la webapp."
 
 #: ../../appdev/webapp/guide.rst:56
 msgid ""
 "Tip: You can see the URL of the current page by enabling the address bar "
 "with ``--enable-addressbar``."
 msgstr ""
+"Suggerimento: puoi vedere la URL della pagina attuale abilitando la barra "
+"degli indirizzi con ``--enable-addressbar``."
 
 #: ../../appdev/webapp/guide.rst:59
 msgid "Simple containment to the site"
-msgstr ""
+msgstr "Semplice contenuto al sito"
 
 #: ../../appdev/webapp/guide.rst:61
 msgid ""
@@ -1086,13 +1104,15 @@ msgstr ""
 
 #: ../../appdev/webapp/guide.rst:67
 msgid "``--webappUrlPatterns=`` indicates a pattern is next"
-msgstr ""
+msgstr "``--Indirizzo Url del modello di webapp=`` indica il prossimo modello"
 
 #: ../../appdev/webapp/guide.rst:66
 msgid ""
 "http://www.ubuntu.com/* is the pattern The asterix is a wildcard that "
 "matches any valid sequence of trailing (right-most) characters in a URL"
 msgstr ""
+"http://www.ubuntu.com/* è il modello L'asterisco è un carattere jolly che "
+"corrisponde a qualsiasi sequenza valida di caratteri (più a destra) in un URL"
 
 #: ../../appdev/webapp/guide.rst:69
 msgid ""
@@ -1103,6 +1123,11 @@ msgid ""
 "(http://www.ubuntu.com/tablet). But, clicking Developer opens the "
 "corresponding URL in the browser."
 msgstr ""
+"Con questo comando e il pattern URL, l'utente può navigare e aprire nella "
+"webapp qualsiasi URL che inizia con http://www.ubuntu.com/. Ad esempio, si "
+"può fare clic sul pulsante Telefono (http://www.ubuntu.com/phone) nel banner "
+"e si apre nella webapp o sul pulsante Tablet (http://www.ubuntu.com/tablet) "
+". Ma facendo clic su Sviluppatore si apre l'URL corrispondente nel browser."
 
 #: ../../appdev/webapp/guide.rst:71
 msgid ""
@@ -1111,6 +1136,11 @@ msgid ""
 "the subdomain would create an ambiguous URL and thus introduces security "
 "concerns. More complex wildcard patterns"
 msgstr ""
+"Suggerimento: assicurati di specificare completamente il sottodominio "
+"nell'URL iniziale, ovvero utilizza http://www.ubuntu.com anziché "
+"www.ubuntu.com. Non specificando il sottodominio si creerebbe un URL ambiguo "
+"e si introdurranno quindi problemi di sicurezza. Modelli di caratteri jolly "
+"più complessi"
 
 #: ../../appdev/webapp/guide.rst:74
 msgid ""
@@ -1121,10 +1151,16 @@ msgid ""
 "www.ubuntu.com/phone/features while not allowing access to "
 "www.ubuntu.com/desktop or www.ubuntu.com/phone::"
 msgstr ""
+"Potresti voler limitare dalla webapp l'accesso solo ad alcune sottopagine "
+"del tuo sito. Questo è facile con i caratteri jolly. (I collegamenti ad "
+"altre pagine secondarie sono aperti nel browser.) Ad esempio, quanto segue "
+"consente l'accesso a www.ubuntu.com/desktop/features e www.ubuntu.com/phone/"
+"features pur non consentendo l'accesso a www.ubuntu.com/ desktop o "
+"www.ubuntu.com/phone ::"
 
 #: ../../appdev/webapp/guide.rst:80
 msgid "Multiple patterns"
-msgstr ""
+msgstr "Modelli multipli"
 
 #: ../../appdev/webapp/guide.rst:82
 msgid ""
@@ -1132,16 +1168,21 @@ msgid ""
 "example, the following allows access only to "
 "www.ubuntu.com/desktop/features and www.ubuntu.com/phone/features:::"
 msgstr ""
+"Puoi utilizzare modelli multipli separandoli con una virgola. Ad esempio, "
+"quanto segue consente l'accesso solo a www.ubuntu.com/desktop/features e "
+"www.ubuntu.com/phone/features :::"
 
 #: ../../appdev/webapp/guide.rst:86
 msgid ""
 "Tip: Multiple patterns are often necessary to achieve the intended "
 "containment behavior."
 msgstr ""
+"Suggerimento: spesso sono necessari modelli multipli per ottenere il "
+"comportamento di contenimento previsto ."
 
 #: ../../appdev/webapp/guide.rst:90
 msgid "Adding a specific subdomain"
-msgstr ""
+msgstr "Aggiungere un sottodominio specifico"
 
 #: ../../appdev/webapp/guide.rst:92
 msgid ""
@@ -1150,6 +1191,10 @@ msgid ""
 " to a single subdomain (and all of its subpages) with a pattern like "
 "this:::"
 msgstr ""
+"Molti URL hanno uno o più sottodomini. (Ad esempio, qui di seguito, \""
+"developer\" è il sottodominio: developer.ubuntu.com). Puoi consentire "
+"l'accesso ad un singolo sottodominio (e a tutte le sue sottopagine) con uno "
+"schema come questo :::"
 
 #: ../../appdev/webapp/guide.rst:96
 msgid ""
@@ -1157,6 +1202,9 @@ msgid ""
 "starting URL (and its subpages). So, if the starting URL is "
 "http://www.ubuntu.com, a second pattern is needed:::"
 msgstr ""
+"Tuttavia, generalmente si vuole che l'utente sia in grado di tornare all'URL "
+"iniziale (e alle sue sottopagine). Quindi, se l'URL di partenza è http://"
+"www.ubuntu.com, è necessario un secondo modello :::"
 
 #: ../../appdev/webapp/guide.rst:100
 msgid ""
@@ -1165,10 +1213,13 @@ msgid ""
 "http://developer.ubuntu.com and subpages and back to "
 "http://www.ubuntu.com and subpages:::"
 msgstr ""
+"Mettendoli insieme, ecco un esempio che avvia http://www.ubuntu.com e che "
+"consente la navigazione su http://developer.ubuntu.com e relative "
+"sottopagine e infine ritorno a http://www.ubuntu.com e sottopagine :::"
 
 #: ../../appdev/webapp/guide.rst:105
 msgid "Adding subdomains with a wildcard"
-msgstr ""
+msgstr "Aggiunta di sottodomini con un carattere jolly"
 
 #: ../../appdev/webapp/guide.rst:107
 msgid ""
@@ -1176,6 +1227,10 @@ msgid ""
 "design.ubuntu.com, developer.ubuntu.com and more. You can add access to "
 "all subdomains with a wildcard in the subdomain position:::"
 msgstr ""
+"Alcuni URL hanno più sottodomini. Ad esempio, www.ubuntu.com ha "
+"design.ubuntu.com, developer.ubuntu.com e altro ancora. Puoi aggiungere "
+"l'accesso a tutti i sottodomini con un jolly nella posizione del "
+"sottodominio :::"
 
 #: ../../appdev/webapp/guide.rst:111
 msgid ""
@@ -1184,10 +1239,14 @@ msgid ""
 "subdomain and subpages, including back to the starting URL "
 "(http://www.ubuntu.com) and its subpages."
 msgstr ""
+"Nota: un asterisco nella posizione del sottodominio corrisponde a qualsiasi "
+"sottodominio singolo valido. Questo modello singolo è sufficiente per "
+"consentire la navigazione verso qualsiasi sottodominio e sottopagine, "
+"incluso l'URL iniziale (http://www.ubuntu.com) e le sue sottopagine."
 
 #: ../../appdev/webapp/guide.rst:114
 msgid "Adding https"
-msgstr ""
+msgstr "Aggiungere https"
 
 #: ../../appdev/webapp/guide.rst:116
 msgid ""
@@ -1195,6 +1254,10 @@ msgid ""
 " allows https and https as access within the webapp to www.launchpad.net "
 "(and all subpages due to the wildcard):::"
 msgstr ""
+"Talvota un sito utilizza https per alcuni dei suoi URL. Ecco un esempio che "
+"consente a https e https come accesso all'interno della webapp di "
+"www.launchpad.net (e di tutte le sottopagine tramite l'uso del carattere "
+"jolly) :::"
 
 #: ../../appdev/webapp/guide.rst:120
 msgid ""
@@ -1202,24 +1265,29 @@ msgid ""
 "(the ‘s’) is optional. If https is always required, omit the question "
 "mark."
 msgstr ""
+"Nota: il punto interrogativo in https ?. Questo significa che il carattere "
+"precedente (la 's') è facoltativo. Se https è sempre richiesto allora ometti "
+"il punto interrogativo."
 
 #: ../../appdev/webapp/guide.rst:123
 msgid "Command line arguments"
-msgstr ""
+msgstr "Argomenti a linea di comando"
 
 #: ../../appdev/webapp/guide.rst:125
 msgid ""
 "The webapp-container accepts many options to fine tune how it hosts "
 "various web applications."
 msgstr ""
+"Il container webapp accetta diverse opzioni per perfezionare il modo in cui "
+"ospita varie applicazioni web."
 
 #: ../../appdev/webapp/guide.rst:127
 msgid "See all help with:::"
-msgstr ""
+msgstr "Vedi l'aiuto con :::"
 
 #: ../../appdev/webapp/guide.rst:131
 msgid "Note: Only the following options apply to converged Ubuntu.::"
-msgstr ""
+msgstr "Nota: solo le seguenti opzioni si applicano ad Ubuntu convergente. ::"
 
 #: ../../appdev/webapp/guide.rst:145
 msgid "Chrome options (if none specified, no chrome is shown by default):::"
@@ -1230,10 +1298,12 @@ msgid ""
 "Note: The other available options are specific to desktop webapps. It is "
 "recommended to not use them anymore."
 msgstr ""
+"Nota: le altre opzioni disponibili sono specifiche per le webapp desktop. Si "
+"raccomanda di non usarle più."
 
 #: ../../appdev/webapp/guide.rst:153
 msgid "User-Agent string override"
-msgstr ""
+msgstr "Annullamento stringa User-Agent"
 
 #: ../../appdev/webapp/guide.rst:155
 msgid ""
@@ -1242,14 +1312,21 @@ msgid ""
 "features. While not a recommended practice, it is sometimes necessary to "
 "change the default string sent by the webapp container."
 msgstr ""
+"Alcuni siti web controllano parti specifiche dell'identità del motore Web, "
+"ovvero la stringa User-Agent, per regolare la loro presentazione o abilitare "
+"certe funzionalità. Sebbene non sia una pratica consigliata, a volte è "
+"necessario modificare la stringa predefinita inviata dal contenitore webapp."
 
 #: ../../appdev/webapp/guide.rst:157
 msgid "To change the string from the command line, use the following option:::"
 msgstr ""
+"Per cambiare la stringa dalla riga di comando, utilizzare la seguente "
+"opzione:::"
 
 #: ../../appdev/webapp/guide.rst:162
+#, fuzzy
 msgid "Browser data containment"
-msgstr ""
+msgstr "Contenimento dati del browser"
 
 #: ../../appdev/webapp/guide.rst:164
 msgid ""
@@ -1258,24 +1335,36 @@ msgid ""
 "installed browser, such as history, cookies and so on. Other browser on "
 "the system do not access the webapp’s data. Storage"
 msgstr ""
+"L'esecuzione della webapp è isolata in un contenitore dal punto di vista dei "
+"dati del browser. Le webapp non accedono ai dati del browser, come la "
+"cronologia, i cookies e cosi via. Un altro browser sul sistema non accede ai "
+"dati delle web app. Memoria locale"
 
 #: ../../appdev/webapp/guide.rst:167
 msgid ""
 "W3C allows apps to use local storage, and Oxide/Webapp-container supports"
 " the main standards here: LocalStorage, IndexedDB, WebSQL."
 msgstr ""
+"Lo standard W3C permette alle app di utilizzare la memoria locale e il "
+"webapp container Oxide ne supporta i principali standard come: Memoria "
+"locale, Database indicizzati, WebSQL."
 
 #: ../../appdev/webapp/index.rst:4
 msgid ""
 "Ubuntu Webapps are a great way to deliver online web applications into "
 "Ubuntu."
 msgstr ""
+"Le webapp per Ubuntu sono un'ottima via per permettere di utilizzare "
+"applicazioni all'interno di ubuntu."
 
 #: ../../appdev/webapp/index.rst:6
+#, fuzzy
 msgid ""
 "The Ubuntu platform provides an advanced web engine container to run "
 "online applications on the Ubuntu client devices."
 msgstr ""
+"La piattaforma di Ubuntu fornisce un avanzato web engine container per "
+"eseguire applicazioni on-line sui dispositivi Ubuntu."
 
 #: ../../appdev/webapp/index.rst:8
 msgid ""
@@ -1284,6 +1373,10 @@ msgid ""
 "They can also have a rich user interface or use the WebGL extension to "
 "deliver games online."
 msgstr ""
+"Le applicazioni web sono ospitate online. Queste possono essere semplici "
+"come un sito web, un sito di notizie, o possono mostrare contenuti come "
+"video. Inoltre possono avere un'interfaccia utente elaborata o usare "
+"l'estensione WebGL per eseguire eseguire giochi on-line."
 
 #: ../../appdev/webapp/index.rst:10
 msgid ""
@@ -1293,6 +1386,11 @@ msgid ""
 "Ubuntu HTML5 GUI). Webapps also have restricted access to platform APIs. "
 "Webapps for converged Ubuntu"
 msgstr ""
+"Nota: le webapp di Ubuntu e le app di Ubuntu HTML5 sono simili ma non "
+"identiche. La differenza principale è che il contenuto di una webapp viene "
+"fornito tramite un URL, mentre le app HTML5 installano il loro contenuto (e "
+"di solito forniscono una GUI HTML5 di Ubuntu). Le webapp hanno anche accesso "
+"limitato alle API della piattaforma. Webapp per Ubuntu convergente"
 
 #: ../../appdev/webapp/index.rst:17
 msgid ""
@@ -1302,40 +1400,50 @@ msgid ""
 "continue to grow, and of course the future of Ubuntu is convergence, so "
 "stay tuned."
 msgstr ""
+"Questa guida si rivolge a webapp per Ubuntu convergente, ovvero Ubuntu per "
+"dispositivi (telefoni e tablet). Il desktop di Ubuntu ha un ulteriore "
+"supporto per le applicazioni web non trattato qui. Il supporto per le webapp "
+"su Ubuntu convergente continuerà a crescere e, naturalmente, il futuro di "
+"Ubuntu è la convergenza, quindi rimanete sintonizzati."
 
 #: ../../appdev/webapp/index.rst:26
 msgid "Quick start"
-msgstr ""
+msgstr "Avvio rapido"
 
 #: ../../appdev/webapp/index.rst:28
 msgid ""
 "There are several tools to help you package and deploy your webapp to "
 "your device:"
 msgstr ""
+"Ci sono molti strumenti per aiutarti  a creare e installare le tue webapp "
+"sul tuo dispositivo:"
 
 #: ../../appdev/webapp/index.rst:30
 msgid ""
 "`Webapp creator <https://open-store.io/app/webapp-creator.jujuyeh>`_ "
 "application available from the openstore"
 msgstr ""
+"`Webapp creator <https://open-store.io/app/webapp-creator.jujuyeh>`_ "
+"applicazione disponibile dall'openstore"
 
 #: ../../appdev/webapp/index.rst:31
-#, fuzzy
 msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ CLI"
-msgstr "`Pacchetti Click <https://click.readthedocs.io/en/latest/>`__"
+msgstr "`Pacchetti Click <https://click.readthedocs.io/en/latest/>`_ CLI"
 
 #: ../../appdev/webapp/index.rst:35
+#, fuzzy
 msgid "Debugging your webapp"
-msgstr ""
+msgstr "Eseguo debug della tua webapp"
 
 #: ../../appdev/webapp/index.rst:37
 msgid "This guide give you some tips to help you debug your webapp."
 msgstr ""
+"Questa guida ti da alcuni suggerimenti per aiutarti nel debug della tua "
+"webapp"
 
 #: ../../appdev/webapp/webdebug.rst:2
-#, fuzzy
 msgid "Debug web application"
-msgstr "Applicazioni web"
+msgstr "Debug applicazione web"
 
 #: ../../appdev/webapp/webdebug.rst:4
 msgid ""
@@ -1344,26 +1452,35 @@ msgid ""
 "with modern web standards, and most webapps will just work without "
 "further changes."
 msgstr ""
+"La maggior parte degli sviluppatori web sviluppa il codice ed esegue il "
+"debug con i browser più utilizzati. Il browser di Ubuntu Touch è conforme "
+"con gli standard più moderni, molte webapp funzioneranno senza ulteriori "
+"modifiche."
 
 #: ../../appdev/webapp/webdebug.rst:6
 msgid ""
 "For those (hopefully) rare cases where further debugging is needed, there"
 " are two ways to gain further information on the failure."
 msgstr ""
+"Per quei (speriamo) rari casi in cui è richiesto un debugging più "
+"approfondito, esistono due modi per ottenere ulteriori informazioni sul "
+"malfunzionamento."
 
 #: ../../appdev/webapp/webdebug.rst:9
 msgid "Watch the logs"
-msgstr ""
+msgstr "Guardare i file di log"
 
 #: ../../appdev/webapp/webdebug.rst:11
 msgid ""
 "If you are comfortable in a CLI environment, most Javascript errors will "
 "leave an entry in the app log file::"
 msgstr ""
+"Se sei abituato ad usare la riga di comando, nel file di log della app "
+"troverai molti errori Javascript::"
 
 #: ../../appdev/webapp/webdebug.rst:17
 msgid "Debugging in the browser"
-msgstr ""
+msgstr "Esegui il debug nel browser"
 
 #: ../../appdev/webapp/webdebug.rst:20
 msgid ""
@@ -1371,16 +1488,21 @@ msgid ""
 " also used in Chrome/Chromium. By starting the browser in a special mode,"
 " you have access to the regular Chrome-style debugger."
 msgstr ""
+"Il browser di default di Ubuntu Touch è basato sulla tecnologia Blink che è "
+"anche utilizzata dai browser Chrome/Chromium. Avviando il browser in una "
+"modalità speciale, avrai accesso al debug in stile Chrome."
 
 #: ../../appdev/webapp/webdebug.rst:22
 msgid "On your phone, start the browser in inspector mode:::"
-msgstr ""
+msgstr "Sul tuo smartphone, avvia il browser in modalità inspector:::"
 
 #: ../../appdev/webapp/webdebug.rst:26
 msgid ""
 "Now on your computer, launch Chrome/Chromium browser, and point address "
 "to ``http://YOUR_UT_IP_ADDRESS:9221``"
 msgstr ""
+"Ora sul tuo computer, lancia il browser Chrome/Chromium, e punta "
+"all'indirizzo ``http://YOUR_UT_IP_ADDRESS:9221``"
 
 #~ msgid "Using clickable for cordova and HTML-5 development"
 #~ msgstr "Uso di clickable per cordova e ldelo sviluppo HTML-5"
@@ -1645,4 +1767,3 @@ msgstr ""
 #~ "Dai un occhio a questo link per"
 #~ " iniziare `Read the Docs "
 #~ "<http://clickable.bhdouglass.com/en/latest/>`_."
-

@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-30 21:54-0500\n"
-"PO-Revision-Date: 2018-02-17 21:28+0000\n"
-"Last-Translator: Florian Leeber <flori@bin.org.in>\n"
+"PO-Revision-Date: 2018-05-27 20:42+0000\n"
+"Last-Translator: Torsten Franz <torsten.franz@finanzcheck.de>\n"
+"Language-Team: German <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-index/de/>\n"
 "Language: de\n"
-"Language-Team: German <https://translate.ubports.com/projects/ubports-"
-"docs/documentation-index/de/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.15\n"
 "Generated-By: Babel 2.5.3\n"
 
 #: ../../index.rst:2
@@ -61,10 +62,11 @@ msgstr ""
 #: ../../index.rst:12
 msgid "You may view this documentation in the following languages:"
 msgstr ""
+"Sie können diese Dokumentation in den folgenden Sprachen anzeigen lassen:"
 
 #: ../../index.rst:14
 msgid "`English <https://docs.ubports.com/en/latest/>`_"
-msgstr ""
+msgstr "`Englisch <https://docs.ubports.com/en/latest/>`_"
 
 #: ../../index.rst:15
 msgid "`Català <https://docs.ubports.com/ca/latest/>`_"
@@ -117,4 +119,3 @@ msgstr "Portierung"
 #: ../../index.rst:64
 msgid "Platform"
 msgstr "Plattform"
-

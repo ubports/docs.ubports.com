@@ -2,7 +2,7 @@ Porting information
 ===================
 
 .. Note::
-    If you are looking for information on installing Ubuntu Touch on a supported device, or if you would like to check if your device is supported, please see `this page <https://ubports.com/page/get-ubuntu-touch>`_.
+    If you are looking for information on installing Ubuntu Touch on a supported device, or if you would like to check if your device is supported, please see `this page <https://devices.ubuntu-touch.io/>`_.
 
 This section will introduce you to some of the specifics of porting Ubuntu Touch to an Android device.
 
