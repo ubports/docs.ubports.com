@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-30 21:23-0500\n"
-"PO-Revision-Date: 2018-05-24 18:16+0000\n"
+"PO-Revision-Date: 2018-06-02 23:19+0000\n"
 "Last-Translator: Simone <19simok89@gmail.com>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-contribute/it/>\n"
@@ -442,7 +442,6 @@ msgid "Contribution workflow"
 msgstr "Flusso del contributo"
 
 #: ../../contribute/documentation.rst:60
-#, fuzzy
 msgid ""
 "The following steps will help you to make a contribution to this "
 "documentation after you have written a document."
@@ -461,7 +460,6 @@ msgstr ""
 "il processo di creazione."
 
 #: ../../contribute/documentation.rst:66
-#, fuzzy
 msgid "Forking the repository"
 msgstr "Duplicando i repository"
 

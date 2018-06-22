@@ -8,45 +8,53 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-02 15:42-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2018-06-03 17:09+0000\n"
+"Last-Translator: Rrahim Gashi <jimmygashi@gmail.com>\n"
+"Language-Team: Albanian <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-userguide/sq/>\n"
 "Language: sq\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.15\n"
 
 #: ../../userguide/advanceduse/adb.rst:2
 msgid "Shell access via adb"
-msgstr ""
+msgstr "Shell- qasje përmes adb"
 
 #: ../../userguide/advanceduse/adb.rst:4
 msgid "You can put your UBports device into developer mode and access a Bash shell from your PC. This is useful for debugging or more advanced shell usage."
 msgstr ""
+"Ju mund të vendosni pajisjen tuaj UBports në regjimin e zhvilluesit dhe të "
+"përdorni një skedar Bash nga kompjuteri juaj. Kjo është e dobishme për "
+"debugging ose përdorimin më të avancuar të shell."
 
 #: ../../userguide/advanceduse/adb.rst:8
 msgid "Install ADB"
-msgstr ""
+msgstr "Instaloni ADB"
 
 #: ../../userguide/advanceduse/adb.rst:10
 msgid "First, you'll need ADB installed on your computer."
-msgstr ""
+msgstr "Së pari, do t'ju duhet të instaloni ADB në kompjuterin tuaj."
 
 #: ../../userguide/advanceduse/adb.rst:12
 msgid "On Ubuntu::"
-msgstr ""
+msgstr "Në Ubuntu ::"
 
 #: ../../userguide/advanceduse/adb.rst:16
 msgid "On Fedora::"
-msgstr ""
+msgstr "Në Fedora ::"
 
 #: ../../userguide/advanceduse/adb.rst:20
 msgid "And on MacOS with `Homebrew <https://brew.sh>`_::"
-msgstr ""
+msgstr "Dhe në MacOS me `Homebrew <https://brew.sh>` _ ::"
 
 #: ../../userguide/advanceduse/adb.rst:24
 msgid "For Windows, grab the command-line tools only package from `here <https://developer.android.com/studio/index.html#downloads>`_."
 msgstr ""
+"Për Windows-in, rrëmbe paketë të mjeteve të komandës nga `here "
+"<https://developer.android.com/studio/index.html#downloads>` _."
 
 #: ../../userguide/advanceduse/adb.rst:27
 msgid "Enable developer mode"
