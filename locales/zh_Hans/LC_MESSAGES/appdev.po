@@ -2,19 +2,20 @@
 # Copyright (C) 2017, The UBports project (Creative Commons BY-SA 4.0)
 # This file is distributed under the same license as the UBports package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-02 15:42-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2018-06-30 19:00+0800\n"
+"Last-Translator: Luo Yufan <njlyf2011@hotmail.com>\n"
 "Language-Team: none\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #: ../../appdev/cookbook.rst:2
 msgid "App development cookbook"
@@ -22,7 +23,7 @@ msgstr ""
 
 #: ../../appdev/cookbook.rst:5
 msgid "Unofficial resources"
-msgstr ""
+msgstr "非官方资源"
 
 #: ../../appdev/cookbook.rst:7
 msgid "In this section you will find links to external resources about creating applications for Ubuntu Touch."
@@ -58,7 +59,7 @@ msgstr ""
 
 #: ../../appdev/index.rst:2
 msgid "App development"
-msgstr ""
+msgstr "应用开发"
 
 #: ../../appdev/index.rst:4
 msgid "Welcome to an open source and free platform under constant scrutiny and improvement by a vibrant global community, whose energy, connectedness, talent and commitment is unmatched. Ubuntu is also the third most deployed desktop OS in the world."
@@ -66,7 +67,7 @@ msgstr ""
 
 #: ../../appdev/index.rst:7
 msgid "Introduction"
-msgstr ""
+msgstr "引言"
 
 #: ../../appdev/index.rst:9
 msgid "Ubuntu Touch has three types of applications: `Web applications`_ (WebApps), Scopes (deprecated) and `Native applications`_. Applications are packaged, distributed and deployed using a format called `click <https://click.readthedocs.io/en/latest/>`_ packaging. App UIs can be created using QML or HTML5 and behavior can be created using JS, Qt, C++, Python, or Go."
@@ -82,7 +83,7 @@ msgstr ""
 
 #: ../../appdev/index.rst:38
 msgid "``manifest.json`` file"
-msgstr ""
+msgstr "``manifest.json`` 文件"
 
 #: ../../appdev/index.rst:19
 msgid "Contains application declarations such as application name, description, author, framework sdk target, and version."
@@ -90,7 +91,7 @@ msgstr ""
 
 #: ../../appdev/index.rst:21
 msgid "Example ``manifest.json`` file::"
-msgstr ""
+msgstr "``manifest.json`` 文件示例::"
 
 #: ../../appdev/index.rst:41
 msgid "AppArmor profile policy file"
@@ -102,7 +103,7 @@ msgstr ""
 
 #: ../../appdev/index.rst:64
 msgid "``.desktop`` file"
-msgstr ""
+msgstr "``.desktop`` 文件"
 
 #: ../../appdev/index.rst:44
 msgid "The launcher file will tell UT how to launch the app, which name and icon to display on the home screen, and some other properties."
@@ -110,7 +111,7 @@ msgstr ""
 
 #: ../../appdev/index.rst:46
 msgid "Example of ``app.desktop``::"
-msgstr ""
+msgstr "``app.desktop``示例::"
 
 #: ../../appdev/index.rst:56
 msgid "Non exhaustive list of properties:"
@@ -122,11 +123,11 @@ msgstr ""
 
 #: ../../appdev/index.rst:59
 msgid "Exec: Path to the executable file"
-msgstr ""
+msgstr "Exec：可执行文件路径"
 
 #: ../../appdev/index.rst:60
 msgid "Icon: Path to the icon to display"
-msgstr ""
+msgstr "Icon：显示的图标路径"
 
 #: ../../appdev/index.rst:61
 msgid "Terminal: ``false`` if will not run in terminal window"
@@ -162,11 +163,11 @@ msgstr ""
 
 #: ../../appdev/index.rst:89
 msgid "accounts: Can use Online Accounts"
-msgstr ""
+msgstr "accounts：可使用在线账户"
 
 #: ../../appdev/index.rst:90
 msgid "audio: Can play audio"
-msgstr ""
+msgstr "audio：可播放音乐"
 
 #: ../../appdev/index.rst:91
 msgid "camera: Can access the camera(s)"
@@ -190,7 +191,7 @@ msgstr ""
 
 #: ../../appdev/index.rst:96
 msgid "location: Can access Location"
-msgstr ""
+msgstr "location：可访问地理位置"
 
 #: ../../appdev/index.rst:97
 msgid "microphone: Can access the microphone"
@@ -214,7 +215,7 @@ msgstr ""
 
 #: ../../appdev/index.rst:102
 msgid "video: Can play video"
-msgstr ""
+msgstr "video：可播放视频"
 
 #: ../../appdev/index.rst:103
 msgid "webview: Can use the UbuntuWebview"
@@ -222,7 +223,7 @@ msgstr ""
 
 #: ../../appdev/index.rst:107
 msgid "Ubuntu Touch platform"
-msgstr ""
+msgstr "Ubuntu Touch 平台"
 
 #: ../../appdev/index.rst:109
 msgid "Platform key notes:"
@@ -254,7 +255,7 @@ msgstr ""
 
 #: ../../appdev/index.rst:122
 msgid "Online accounts"
-msgstr ""
+msgstr "在线账户"
 
 #: ../../appdev/index.rst:121
 msgid "Simplify user access to online services by integrating with the online accounts API. Accounts added by the user on the device are registered in a centralized hub, allowing other apps to re-use them."
@@ -315,7 +316,7 @@ msgstr ""
 #: ../../appdev/index.rst:174
 #: ../../appdev/system-software.rst:2
 msgid "System Software"
-msgstr ""
+msgstr "系统软件"
 
 #: ../../appdev/index.rst:176
 msgid "Working on system components"
@@ -324,7 +325,7 @@ msgstr ""
 #: ../../appdev/index.rst:185
 #: ../../appdev/webapp/index.rst:2
 msgid "Web applications"
-msgstr ""
+msgstr "Web 应用程序"
 
 #: ../../appdev/index.rst:187
 msgid "Ubuntu webapps are web-hosted sites displayed inside an Ubuntu app container. They are true apps that users install, see, launch and use. But their content is provided through URLs."
@@ -373,7 +374,7 @@ msgstr ""
 
 #: ../../appdev/system-software.rst:76
 msgid "Cross-building with crossbuilder"
-msgstr ""
+msgstr "使用交叉编译器进行交叉编译"
 
 #: ../../appdev/system-software.rst:78
 msgid "This is the recommended way to develop non trivial changes, and it's suitable for all devices since the build happens on your desktop PC (will call it \"host\" from now on) and not on the target device. It's also extremely fast and easy to use."
@@ -438,6 +439,8 @@ msgstr ""
 #: ../../appdev/system-software.rst:179
 msgid "``16.04 (Xenial)``: http://releases.ubuntu.com/16.04/ubuntu-16.04.3-desktop-amd64.iso"
 msgstr ""
+"``16.04 (Xenial)``: http://releases.ubuntu.com/16.04/ubuntu-16.04.3-desktop-"
+"amd64.iso"
 
 #: ../../appdev/system-software.rst:182
 msgid "Boot your VirtualBox machine with the Ubuntu image you downloaded, and once the installation is completed and you get to a terminal, add the `Stable Phone Overlay PPA <https://launchpad.net/~ci-train-ppa-service/+archive/ubuntu/stable-phone-overlay>`__ like this:"
@@ -474,7 +477,7 @@ msgstr ""
 #: ../../appdev/webapp/guide.rst:2
 #: ../../appdev/webapp/index.rst:13
 msgid "Guide"
-msgstr ""
+msgstr "指南"
 
 #: ../../appdev/webapp/guide.rst:5
 msgid "How the webapp fits into the shell"
@@ -494,7 +497,7 @@ msgstr ""
 
 #: ../../appdev/webapp/guide.rst:16
 msgid "Launching"
-msgstr ""
+msgstr "启动"
 
 #: ../../appdev/webapp/guide.rst:18
 msgid "You can launch a webapp from the terminal with:::"
@@ -502,7 +505,7 @@ msgstr ""
 
 #: ../../appdev/webapp/guide.rst:22
 msgid "For example:::"
-msgstr ""
+msgstr "示例::"
 
 #: ../../appdev/webapp/guide.rst:26
 msgid "This simple form works, but almost every webapp also uses other features, such as URL containment with URL patterns as described below."
@@ -510,7 +513,7 @@ msgstr ""
 
 #: ../../appdev/webapp/guide.rst:29
 msgid "User interface"
-msgstr ""
+msgstr "用户界面"
 
 #: ../../appdev/webapp/guide.rst:31
 msgid "A webapp generally fills the entire app screen space, without the need of the UI controls generally found on standard browsers."
@@ -710,7 +713,7 @@ msgstr ""
 
 #: ../../appdev/webapp/index.rst:24
 msgid "Quick start"
-msgstr ""
+msgstr "快速开始"
 
 #: ../../appdev/webapp/index.rst:26
 msgid "There are several tools to help you package and deploy your webapp to your device:"
@@ -726,7 +729,7 @@ msgstr ""
 
 #: ../../appdev/webapp/index.rst:33
 msgid "Debugging your webapp"
-msgstr ""
+msgstr "调试你的 Web 应用"
 
 #: ../../appdev/webapp/index.rst:35
 msgid "This guide give you some tips to help you debug your webapp."
@@ -734,7 +737,7 @@ msgstr ""
 
 #: ../../appdev/webapp/webdebug.rst:2
 msgid "Debug web application"
-msgstr ""
+msgstr "调试 Web 应用程序"
 
 #: ../../appdev/webapp/webdebug.rst:4
 msgid "Most web-devs will probably want do most of their coding and debugging in the usual browser environment. The Ubuntu Touch browser is compliant with modern web standards, and most webapps will just work without further changes."
@@ -746,7 +749,7 @@ msgstr ""
 
 #: ../../appdev/webapp/webdebug.rst:9
 msgid "Watch the logs"
-msgstr ""
+msgstr "查看日志"
 
 #: ../../appdev/webapp/webdebug.rst:11
 msgid "If you are comfortable in a CLI environment, most Javascript errors will leave an entry in the app log file::"
@@ -754,7 +757,7 @@ msgstr ""
 
 #: ../../appdev/webapp/webdebug.rst:17
 msgid "Debugging in the browser"
-msgstr ""
+msgstr "在浏览器中调试"
 
 #: ../../appdev/webapp/webdebug.rst:20
 msgid "The default Ubuntu Touch browser is based on the Blink technology that is also used in Chrome/Chromium. By starting the browser in a special mode, you have access to the regular Chrome-style debugger."
@@ -767,3 +770,4 @@ msgstr ""
 #: ../../appdev/webapp/webdebug.rst:26
 msgid "Now on your computer, launch Chrome/Chromium browser, and point address to ``http://YOUR_UT_IP_ADDRESS:9221``"
 msgstr ""
+"现在打开您的计算机，开启 Chrome/Chromium 浏览器，地址栏中输入 ``http://YOUR_UT_IP_ADDRESS:9221``。"
