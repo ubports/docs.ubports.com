@@ -1,104 +1,111 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2017, The UBports project (Creative Commons BY-SA 4.0)
 # This file is distributed under the same license as the UBports package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-02 15:42-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2018-06-30 12:22+0800\n"
+"Last-Translator: Luo Yufan <njlyf2011@hotmail.com>\n"
+"Language-Team: \n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.0.8\n"
 
 #: ../../userguide/advanceduse/adb.rst:2
 msgid "Shell access via adb"
-msgstr ""
+msgstr "通过 adb 访问 shell"
 
 #: ../../userguide/advanceduse/adb.rst:4
 msgid "You can put your UBports device into developer mode and access a Bash shell from your PC. This is useful for debugging or more advanced shell usage."
-msgstr ""
+msgstr "您可以将您的 UBports 设备置于开发者模式并从 PC 访问 Bash Shell。这对调试和高级使用非常有帮助。"
 
 #: ../../userguide/advanceduse/adb.rst:8
 msgid "Install ADB"
-msgstr ""
+msgstr "安装 ADB"
 
 #: ../../userguide/advanceduse/adb.rst:10
 msgid "First, you'll need ADB installed on your computer."
-msgstr ""
+msgstr "首先，您需要在您的计算机上安装 ADB。"
 
 #: ../../userguide/advanceduse/adb.rst:12
 msgid "On Ubuntu::"
-msgstr ""
+msgstr "在 Ubuntu 上::"
 
 #: ../../userguide/advanceduse/adb.rst:16
 msgid "On Fedora::"
-msgstr ""
+msgstr "在 Fedora 上::"
 
 #: ../../userguide/advanceduse/adb.rst:20
 msgid "And on MacOS with `Homebrew <https://brew.sh>`_::"
-msgstr ""
+msgstr "在 MacOS 上使用 `Homebrew <https://brew.sh>`_::"
 
 #: ../../userguide/advanceduse/adb.rst:24
 msgid "For Windows, grab the command-line tools only package from `here <https://developer.android.com/studio/index.html#downloads>`_."
 msgstr ""
+"对于 Windows，从`这里 <https://developer.android.com/studio/index.html#downloads>`"
+"_ 获取命令行工具包。"
 
 #: ../../userguide/advanceduse/adb.rst:27
 msgid "Enable developer mode"
-msgstr ""
+msgstr "启用开发者模式"
 
 #: ../../userguide/advanceduse/adb.rst:29
 msgid "Next, you'll need to turn on Developer Mode."
-msgstr ""
+msgstr "接下来，您需要启用开发者模式。"
 
 #: ../../userguide/advanceduse/adb.rst:31
 msgid "Reboot your device"
-msgstr ""
+msgstr "重启你的设备"
 
 #: ../../userguide/advanceduse/adb.rst:32
 msgid "Place your device into developer mode (Settings - About - Developer Mode - check the box to turn it on)"
-msgstr ""
+msgstr "将您的设备置于开发者模式（设置 - 关于 - 开发者模式 - 选中此框将其打开）"
 
 #: ../../userguide/advanceduse/adb.rst:33
 msgid "Plug the device into a computer with adb installed"
-msgstr ""
+msgstr "将设备插入已安装 adb 的计算机上"
 
 #: ../../userguide/advanceduse/adb.rst:34
 msgid "Open a terminal and run ``adb devices``."
-msgstr ""
+msgstr "打开终端，运行 ``adb devices``。"
 
 #: ../../userguide/advanceduse/adb.rst:37
+#, fuzzy
 msgid "When you're done using the shell, it's a good idea to turn Developer Mode off again."
-msgstr ""
+msgstr "当您使用完 shell 之后，最好关闭开发者模式。"
 
 #: ../../userguide/advanceduse/adb.rst:39
 msgid "If there's a device in the list here (The command doesn't print \"List of devices attached\" and a blank line), you are able to use ADB successfully. If not, continue to the next section."
 msgstr ""
+"如果列表中有设备(该命令不显示 \"List of devices attached\" 和空行)，则说明可以使用 ADB 。若没有，请读下面。"
 
 #: ../../userguide/advanceduse/adb.rst:42
 msgid "Add hardware IDs"
-msgstr ""
+msgstr "添加硬件 ID"
 
 #: ../../userguide/advanceduse/adb.rst:44
+#, fuzzy
 msgid "ADB doesn't always know what devices on your computer it should or should not talk to. You can manually add the devices that it does not know how to talk to."
-msgstr ""
+msgstr "ADB 并不是总知道在您计算机上应不应该与设备进行对话。您应该手动添加不知道如何通话的设备。"
 
 #: ../../userguide/advanceduse/adb.rst:46
+#, fuzzy
 msgid "Just run the command for your selected device if it's below. Then, run ``adb kill-server`` followed by the command you were initially trying to run."
-msgstr ""
+msgstr "如果下面有您所选的设备，请运行此命令。然后运行 ``adb kill-server`` 执行最初的尝试。"
 
 #: ../../userguide/advanceduse/adb.rst:48
 msgid "Fairphone 2::"
-msgstr ""
+msgstr "Fairphone 2::"
 
 #: ../../userguide/advanceduse/adb.rst:52
 msgid "Oneplus One::"
-msgstr ""
+msgstr "Oneplus One（一加一）::"
 
 #: ../../userguide/advanceduse/dav.rst:2
 msgid "CalDAV and CardDAV synchronization"
@@ -174,7 +181,7 @@ msgstr ""
 
 #: ../../userguide/advanceduse/index.rst:2
 msgid "Advanced use"
-msgstr ""
+msgstr "高级使用"
 
 #: ../../userguide/advanceduse/index.rst:4
 msgid "This section of the documentation details advanced tasks that power users may want to perform on their Ubuntu Touch device."
@@ -210,7 +217,7 @@ msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:16
 msgid "On phone:"
-msgstr ""
+msgstr "在手机上:"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:18
 msgid "add gateway: ``sudo route add default gw YOUR_COMPUTER_RNDIS_IP``"
@@ -226,7 +233,7 @@ msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:24
 msgid "On computer:"
-msgstr ""
+msgstr "在计算机上:"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:26
 msgid "enable ip forwarding: ``echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward``"
@@ -240,7 +247,7 @@ msgstr ""
 #: ../../userguide/advanceduse/screencasting.rst:72
 #: ../../userguide/advanceduse/ssh.rst:53
 msgid "References"
-msgstr ""
+msgstr "参考文献"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:34
 msgid "askubuntu: https://askubuntu.com/questions/655321/ubuntu-touch-reverse-tethering-and-click-apps-updates"
@@ -256,7 +263,7 @@ msgstr ""
 
 #: ../../userguide/advanceduse/screencasting.rst:9
 msgid "Using adb"
-msgstr ""
+msgstr "使用 adb"
 
 #: ../../userguide/advanceduse/screencasting.rst:11
 msgid "You can catch output directly from ``adb exec-out`` command and forward it to mplayer::"
@@ -268,7 +275,7 @@ msgstr ""
 
 #: ../../userguide/advanceduse/screencasting.rst:19
 msgid "Via network"
-msgstr ""
+msgstr "通过网络"
 
 #: ../../userguide/advanceduse/screencasting.rst:22
 msgid "On receiver"
@@ -300,7 +307,7 @@ msgstr ""
 
 #: ../../userguide/advanceduse/screencasting.rst:46
 msgid "Example script"
-msgstr ""
+msgstr "示例脚本"
 
 #: ../../userguide/advanceduse/screencasting.rst:48
 msgid "This script allows you to screen cast remote UT device to your local PC (must have ssh access to UT and mplayer installed on PC), run it on your computer::"
@@ -320,7 +327,7 @@ msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:2
 msgid "Shell access via ssh"
-msgstr ""
+msgstr "通过 ssh 访问 shell"
 
 #: ../../userguide/advanceduse/ssh.rst:4
 msgid "You can use ssh to access a shell from your PC. This is useful for debugging or more advanced shell usage."
@@ -332,7 +339,7 @@ msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:9
 msgid "Create your public key"
-msgstr ""
+msgstr "创建你的公钥"
 
 #: ../../userguide/advanceduse/ssh.rst:11
 msgid "If not already created, create your public key, default choices should be fine for LAN, you can leave empty password if you don't want to deal with it each time::"
@@ -372,7 +379,7 @@ msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:44
 msgid "Connect"
-msgstr ""
+msgstr "连接"
 
 #: ../../userguide/advanceduse/ssh.rst:46
 msgid "Now everything is set up and you can use ``ssh`` ::"
@@ -420,11 +427,11 @@ msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:13
 msgid "Supported devices"
-msgstr ""
+msgstr "支持设备"
 
 #: ../../userguide/dailyuse/anbox.rst:15
 msgid "Make sure your device is supported:"
-msgstr ""
+msgstr "请确保你的设备被支持:"
 
 #: ../../userguide/dailyuse/anbox.rst:17
 msgid "Meizu Pro 5 (codename: *turbo*, name of the boot partition: *bootimg*) BQ M10 HD (codename: *cooler*, name of the boot partition: *boot*) BQ M10 FHD (codename: *frieza*, name of the boot partition: *boot*)"
@@ -436,7 +443,7 @@ msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:24
 msgid "How to install"
-msgstr ""
+msgstr "如何安装"
 
 #: ../../userguide/dailyuse/anbox.rst:27
 msgid "Because this feature is in such an early stage of development, the installation is only recommended for experienced users."
@@ -468,7 +475,7 @@ msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:52
 msgid "Reporting bugs"
-msgstr ""
+msgstr "报告 bug"
 
 #: ../../userguide/dailyuse/anbox.rst:54
 msgid "Please :doc:`report any bugs </contribute/bugreporting>` you come accross. Bugs with Ubuntu Touch 16.04 are reported in `the normal Ubuntu Touch tracker <https://github.com/ubports/ubuntu-touch/issues>`_ and issues with anbox are reported on `our downstream fork <https://github.com/ubports/anbox/issues>`_. Thank you!"
@@ -476,7 +483,7 @@ msgstr ""
 
 #: ../../userguide/dailyuse/index.rst:2
 msgid "Daily use"
-msgstr ""
+msgstr "日常使用"
 
 #: ../../userguide/dailyuse/index.rst:4
 msgid "This section of the documentation details common tasks that users may want to perform while using their Ubuntu Touch device."
@@ -484,7 +491,7 @@ msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:2
 msgid "Run desktop applications"
-msgstr ""
+msgstr "运行桌面应用"
 
 #: ../../userguide/dailyuse/libertine.rst:4
 msgid "Libertine allows you to use standard desktop applications in Ubuntu Touch."
@@ -584,7 +591,7 @@ msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:59
 msgid "Files"
-msgstr ""
+msgstr "文件"
 
 #: ../../userguide/dailyuse/libertine.rst:61
 msgid "Libertine applications do have access to these folders:"
@@ -592,23 +599,23 @@ msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:63
 msgid "Documents"
-msgstr ""
+msgstr "文档"
 
 #: ../../userguide/dailyuse/libertine.rst:64
 msgid "Music"
-msgstr ""
+msgstr "音乐"
 
 #: ../../userguide/dailyuse/libertine.rst:65
 msgid "Pictures"
-msgstr ""
+msgstr "图片"
 
 #: ../../userguide/dailyuse/libertine.rst:66
 msgid "Downloads"
-msgstr ""
+msgstr "下载"
 
 #: ../../userguide/dailyuse/libertine.rst:67
 msgid "Videos"
-msgstr ""
+msgstr "视频"
 
 #: ../../userguide/dailyuse/libertine.rst:70
 msgid "Tipps"
@@ -616,7 +623,7 @@ msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:73
 msgid "Locations"
-msgstr ""
+msgstr "位置"
 
 #: ../../userguide/dailyuse/libertine.rst:75
 msgid "For every container you create there will be two directories created:"
@@ -664,7 +671,7 @@ msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:99
 msgid "Background"
-msgstr ""
+msgstr "背景"
 
 #: ../../userguide/dailyuse/libertine.rst:101
 msgid "A display server coordinates input and output of an operating system. Most Linux distributions today use the X server. Ubuntu Touch does not use X, but  a new display server called Mir. This means that standard X applications are not directly compatible with Ubuntu Touch. A compatibility layer called XMir resolves this. Libertine relies on XMir to display desktop applications."
@@ -676,7 +683,7 @@ msgstr ""
 
 #: ../../userguide/install.rst:2
 msgid "Install Ubuntu Touch"
-msgstr ""
+msgstr "安装 Ubuntu Touch"
 
 #: ../../userguide/install.rst:4
 msgid "Installing Ubuntu Touch is easy, and a lot of work has gone in to making the installation process less intimidating to less technical users. The UBports Installer is a nice graphical tool that you can use to install Ubuntu Touch on a `supported device <https://ubuntu-touch.io/devices>`_ from your Linux, Mac or Windows computer."
@@ -691,20 +698,26 @@ msgid "Go to `the download page <https://github.com/ubports/ubports-installer/re
 msgstr ""
 
 #: ../../userguide/install.rst:11
+#, fuzzy
 msgid "Windows: ``ubports-installer-<version-number>.exe``"
-msgstr ""
+msgstr "Windows: ubports-installer-<版本号>.exe"
 
 #: ../../userguide/install.rst:12
+#, fuzzy
 msgid "macOS: ``ubports-installer-<version-number>.dmg``"
-msgstr ""
+msgstr "macOS: ubports-installer-<版本号>.dmg"
 
 #: ../../userguide/install.rst:13
+#, fuzzy
 msgid "Ubuntu or Debian: ``ubports-installer-<version-number>.deb``"
-msgstr ""
+msgstr "Windows: ubports-installer-<版本号>.exe"
 
 #: ../../userguide/install.rst:14
+#, fuzzy
 msgid "Other Linux distribtuions: ``ubports-installer-<version-number>.snap`` or ``ubports-installer-<version-number>.AppImage``"
 msgstr ""
+"Linux: ubports-installer-<版本号>.deb, ubports-installer-<版本号>.snap or ubports-"
+"installer-<版本号>.AppImage"
 
 #: ../../userguide/install.rst:16
 msgid "Start the installer and follow the on-screen instructions that will walk you through the installation process. That's it! Have fun exploring Ubuntu Touch!"
@@ -716,7 +729,7 @@ msgstr ""
 
 #: ../../userguide/install.rst:21
 msgid "Install on legacy Android devices"
-msgstr ""
+msgstr "在旧版 Android 设备上安装"
 
 #: ../../userguide/install.rst:23
 msgid "While the installation process is fairly simple on most devices, some legacy Bq and Meizu devices require special steps. This part of the guide does not apply to other devices."
