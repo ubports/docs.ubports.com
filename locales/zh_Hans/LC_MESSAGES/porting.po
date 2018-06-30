@@ -1,20 +1,18 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017, The UBports project (Creative Commons BY-SA 4.0)
-# This file is distributed under the same license as the UBports package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: UBports 1.0\n"
+"Project-Id-Version: Chinese (Simplified) (UBports Docs)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-02 15:42-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2018-06-30 04:20+0000\n"
+"PO-Revision-Date: 2018-06-30 13:18+0800\n"
+"Last-Translator: Luo Yufan <njlyf2011@hotmail.com>\n"
+"Language-Team: Chinese (Simplified) <https://translate.ubports.com/projects"
+"/ubports-docs/documentation-porting/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.0.8\n"
 
 #: ../../porting/building-ubports-boot.rst:2
 msgid "Building ubports-boot"
@@ -66,7 +64,7 @@ msgstr ""
 
 #: ../../porting/building-ubports-boot.rst:45
 msgid "Fix mounts"
-msgstr ""
+msgstr "修复挂载"
 
 #: ../../porting/building-ubports-boot.rst:49
 msgid "This is a workaround for `ubports/ubports-boot #1 <https://github.com/ubports/ubports-boot/issues/1>`_ and `ubports/ubports-boot #2 <https://github.com/ubports/ubports-boot/issues/2>`_. It should not be considered a permanent fix. Be prepared to revert this later when these bugs have been fixed."
@@ -98,7 +96,7 @@ msgstr ""
 
 #: ../../porting/building-ubports-boot.rst:65
 msgid "Edit init.rc"
-msgstr ""
+msgstr "编辑 init.rc"
 
 #: ../../porting/building-ubports-boot.rst:67
 msgid "Some Android services conflict with ofono in 16.04 and will cause your device to reboot without warning, about 30-60 seconds after it boots. We will need to disable these services until the issue is resolved."
@@ -110,7 +108,7 @@ msgstr ""
 
 #: ../../porting/building-ubports-boot.rst:73
 msgid "Edit kernel config"
-msgstr ""
+msgstr "修改内核设置"
 
 #: ../../porting/building-ubports-boot.rst:75
 msgid "Ubuntu Touch requires a slightly different kernel config than Halium, including enabling Apparmor. Luckily, we have a nice script for this purpose, ``check-kernel-config``. It's included in the ubports-boot repository. Simply run it on your config as follows::"
@@ -122,7 +120,7 @@ msgstr ""
 
 #: ../../porting/building-ubports-boot.rst:83
 msgid "Build the image"
-msgstr ""
+msgstr "构建镜像"
 
 #: ../../porting/building-ubports-boot.rst:85
 msgid "Once ubports-boot is in place, you can build it quite simply. You will also need to rebuild system.img due to our changes."
@@ -142,11 +140,11 @@ msgstr ""
 
 #: ../../porting/building-ubports-boot.rst:90
 msgid "``mka ubports-boot``"
-msgstr ""
+msgstr "``mka ubports-boot``"
 
 #: ../../porting/building-ubports-boot.rst:91
 msgid "``mka systemimage``"
-msgstr ""
+msgstr "``mka systemimage``"
 
 #: ../../porting/building-ubports-boot.rst:96
 #: ../../porting/installing-16-04.rst:74
@@ -159,7 +157,7 @@ msgstr ""
 
 #: ../../porting/installing-16-04.rst:2
 msgid "Installing Ubuntu Touch 16.04 images on Halium"
-msgstr ""
+msgstr "在 Halium 上构建 Ubuntu Touch 16.04 镜像"
 
 #: ../../porting/installing-16-04.rst:6
 msgid "These steps  will wipe **all** of the data on your device. If there is anything that you would like to keep, ensure it is backed up and copied off of the device before continuing."
@@ -183,7 +181,7 @@ msgstr ""
 
 #: ../../porting/installing-16-04.rst:21
 msgid "Download the rootfs"
-msgstr ""
+msgstr "下载 rootfs 文件系统"
 
 #: ../../porting/installing-16-04.rst:23
 msgid "Next we'll need to download the rootfs (root filesystem) that's appropriate for your device. Right now, we only have one available. Simply download ``ubports-touch.rootfs-xenial-armhf.tar.gz`` from `our CI server <https://ci.ubports.com/job/xenial-rootfs-armhf/>`__. If you have a 64-bit ARM (aarch64) device, this same rootfs should work for you. If you have an x86 device, let us know. We do not have a rootfs available for these yet."
@@ -191,7 +189,7 @@ msgstr ""
 
 #: ../../porting/installing-16-04.rst:27
 msgid "Install system.img and rootfs"
-msgstr ""
+msgstr "安装 system.img 和 rootfs 文件系统"
 
 #: ../../porting/installing-16-04.rst:31
 msgid "Change the rootstock link to point to UBports once the actuallyfixit PR is merged."
@@ -211,7 +209,7 @@ msgstr ""
 
 #: ../../porting/installing-16-04.rst:43
 msgid "Get SSH access"
-msgstr ""
+msgstr "获得 SSH 访问权限"
 
 #: ../../porting/installing-16-04.rst:45
 msgid "When your device boots, it will likely stay at the bootloader screen. However, you should also get a new network connection on the computer you have it plugged in to. We will use this to debug the system."
@@ -259,7 +257,7 @@ msgstr ""
 
 #: ../../porting/introduction.rst:2
 msgid "Porting information"
-msgstr ""
+msgstr "移植信息"
 
 #: ../../porting/introduction.rst:5
 msgid "If you are looking for information on installing Ubuntu Touch on a supported device, or if you would like to check if your device is supported, please see `this page <https://devices.ubuntu-touch.io/>`_."
@@ -279,11 +277,11 @@ msgstr ""
 
 #: ../../porting/running-ut.rst:2
 msgid "Running Ubuntu Touch"
-msgstr ""
+msgstr "运行 Ubuntu Touch"
 
 #: ../../porting/running-ut.rst:5
 msgid "Display settings"
-msgstr ""
+msgstr "显示设置"
 
 #: ../../porting/running-ut.rst:7
 msgid "When the device boots, you'll probably notice that everything is very small. There are two variables that set the content scaling for Unity 8 and Ubuntu Touch applications: ``GRID_UNIT_PX`` and ``QTWEBKIT_DPR``."
@@ -303,7 +301,7 @@ msgstr ""
 
 #: ../../porting/running-ut.rst:22
 msgid "Display scaling"
-msgstr ""
+msgstr "显示缩放"
 
 #: ../../porting/running-ut.rst:24
 msgid "``GRID_UNIT_PX`` (Pixels per Grid Unit or Px/GU) is specific to each device. Its goal is to make the user interface of the system and its applications the same *perceived* size regardless of the device they are displayed on. It is primarily dependent on the pixel density of the device’s screen and the distance to the screen the user is at. The latter value cannot be automatically detected and is based on heuristics. We assume that tablets and laptops are the same distance and that they are held at 1.235 times the distance phones tend to be held at."
@@ -319,11 +317,11 @@ msgstr ""
 
 #: ../../porting/running-ut.rst:31
 msgid "Device"
-msgstr ""
+msgstr "设备"
 
 #: ../../porting/running-ut.rst:31
 msgid "Resolution"
-msgstr ""
+msgstr "分辨率"
 
 #: ../../porting/running-ut.rst:31
 msgid "Display Size"
