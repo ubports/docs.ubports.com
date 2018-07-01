@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Chinese (Simplified) (UBports Docs)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-30 04:20+0000\n"
-"PO-Revision-Date: 2018-06-30 13:18+0800\n"
+"PO-Revision-Date: 2018-07-01 16:21+0800\n"
 "Last-Translator: Luo Yufan <njlyf2011@hotmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.ubports.com/projects"
 "/ubports-docs/documentation-porting/zh_Hans/>\n"
@@ -16,51 +16,59 @@ msgstr ""
 
 #: ../../porting/building-ubports-boot.rst:2
 msgid "Building ubports-boot"
-msgstr ""
+msgstr "构建 UBports-boot"
 
 #: ../../porting/building-ubports-boot.rst:4
 msgid "Ubuntu Touch uses Upstart rather than Systemd for its init daemon. Because of this, it is not fully Halium-compatible and is not able to use the vanilla hybris-boot that Halium produces. For this reason, we need to build ubports-boot."
 msgstr ""
+"Ubuntu Touch 使用 Upstart 而不是 Systemd 作为它的 init 守护进程。 因此，它不完全符合 Halium 标准，"
+"并且不能使用Halium 的 hybris-boot。 出于这个原因，我们需要构建 ubports-boot。"
 
 #: ../../porting/building-ubports-boot.rst:8
 msgid "Add source to Halium tree"
-msgstr ""
+msgstr "添加源码到 Halium 树"
 
 #: ../../porting/building-ubports-boot.rst:10
 msgid "The first thing that needs to be done is adding the ubports-boot source to your Halium tree. You may choose to do this by adding it to your local manifests (recommended) or simply cloning it in place."
 msgstr ""
+"首先需要做的是将 ubports-boot 源添加到你的 Halium 树。 您可以选择将其添加到您的本地清单（推荐），或者只是将其简单地克隆到某个地方。"
 
 #: ../../porting/building-ubports-boot.rst:14
 msgid "Add to local manifest"
-msgstr ""
+msgstr "添加到本地清单"
 
 #: ../../porting/building-ubports-boot.rst:16
 msgid "Create a new file in ``.repo/local_manifests`` called ``ubports-boot.xml``. Add the following to the file:"
-msgstr ""
+msgstr "在 ``.repo/local_manifests`` 中创建叫 ``ubports-boot.xml`` 的文件。在文件中添加下列内容："
 
 #: ../../porting/building-ubports-boot.rst:25
 msgid "Now, just do a ``repo sync`` to download the new source."
-msgstr ""
+msgstr "现在，只需要执行 ``repo sync`` 便可下载新的源码。"
 
 #: ../../porting/building-ubports-boot.rst:29
 msgid "Manual clone"
-msgstr ""
+msgstr "手动克隆"
 
 #: ../../porting/building-ubports-boot.rst:31
 msgid "You may also choose to clone the `ubports-boot repository <https://github.com/ubports/ubports-boot>`_ into your tree manually. It should be placed into ``BUILDDIR/halium/ubports-boot``."
 msgstr ""
+"您也可以选择手动克隆 `ubports-boot repository <https://github.com/ubports/ubports-"
+"boot>`_ 到树。它应放在 ``BUILDDIR/halium/ubports-boot`` 中。"
 
 #: ../../porting/building-ubports-boot.rst:33
 msgid "If you share your code and build instructions, please note that you've done this."
-msgstr ""
+msgstr "如果您共享代码和构建说明，请注意您已完成此操作。"
 
 #: ../../porting/building-ubports-boot.rst:36
 msgid "Include in build system"
-msgstr ""
+msgstr "包含在构建系统中的内容"
 
 #: ../../porting/building-ubports-boot.rst:38
 msgid "The android build system won't know where to find ubports-boot normally. To fix this, open the file ``BUILDDIR/build/core/main.mk`` in a text editor. Find the comment ``# Specific projects for Halium`` and add ``halium/ubports-boot`` to the list of ``subdirs`` ::"
 msgstr ""
+"Android 构建系统一般情况下不知道哪里可以寻找 ubports-boot。为了解决这个问题，请使用文本编辑器打开文件 "
+"``BUILDDIR/build/core/main.mk`` 。找到注释 ``# Specific projects for Halium``，并将 "
+"``halium/ubports-boot``添加到 ``subdirs`` 列表中::"
 
 #: ../../porting/building-ubports-boot.rst:45
 msgid "Fix mounts"
@@ -101,6 +109,8 @@ msgstr "编辑 init.rc"
 #: ../../porting/building-ubports-boot.rst:67
 msgid "Some Android services conflict with ofono in 16.04 and will cause your device to reboot without warning, about 30-60 seconds after it boots. We will need to disable these services until the issue is resolved."
 msgstr ""
+"有些 Android 服务在 16.04 中与 ofono 产生冲突，导致设备在启动后大约 30-60 秒内没有警告就会重启。 "
+"我们需要禁用这些服务，直到问题得到解决。"
 
 #: ../../porting/building-ubports-boot.rst:69
 msgid "To do this, open up your device's default ``init.rc`` (this is likely init.qcom.rc or init.[codename].rc), comment out any ``import`` statements, and add ``disabled`` to services like rild, qti, and others that interface with the radio. Most of them have a ``user radio`` line. For an example, see `commit 7875b48b on UniversalSuperBox/android_device_motorola_potter <https://github.com/UniversalSuperBox/android_device_motorola_potter/commit/7875b48b5b6f240935d7f327d33128e952a3589b>`__"
@@ -108,7 +118,7 @@ msgstr ""
 
 #: ../../porting/building-ubports-boot.rst:73
 msgid "Edit kernel config"
-msgstr "修改内核设置"
+msgstr "修改内核配置"
 
 #: ../../porting/building-ubports-boot.rst:75
 msgid "Ubuntu Touch requires a slightly different kernel config than Halium, including enabling Apparmor. Luckily, we have a nice script for this purpose, ``check-kernel-config``. It's included in the ubports-boot repository. Simply run it on your config as follows::"
@@ -124,15 +134,15 @@ msgstr "构建镜像"
 
 #: ../../porting/building-ubports-boot.rst:85
 msgid "Once ubports-boot is in place, you can build it quite simply. You will also need to rebuild system.img due to our changes."
-msgstr ""
+msgstr "一旦 ubports-boot 到位，您就可以非常简单地构建它。 但由于我们的改动了它，您还需要重建 system.img。"
 
 #: ../../porting/building-ubports-boot.rst:87
 msgid "``cd`` to your Halium BUILDDIR"
-msgstr ""
+msgstr "``cd`` （切换到）您的 Halium 编译目录（BUILDDIR）"
 
 #: ../../porting/building-ubports-boot.rst:88
 msgid "``source build/envsetup.sh``"
-msgstr ""
+msgstr "``source build/envsetup.sh``"
 
 #: ../../porting/building-ubports-boot.rst:89
 msgid "Run ``breakfast`` or ``lunch``, whichever you use for your device"
@@ -149,11 +159,11 @@ msgstr "``mka systemimage``"
 #: ../../porting/building-ubports-boot.rst:96
 #: ../../porting/installing-16-04.rst:74
 msgid "Continue on"
-msgstr ""
+msgstr "继续"
 
 #: ../../porting/building-ubports-boot.rst:98
 msgid "Now that you have ubports-boot built, you can move on to :doc:`installing-16-04`."
-msgstr ""
+msgstr "现在您已经构建了 ubports-boot，请移步到 doc:`installing-16-04`。"
 
 #: ../../porting/installing-16-04.rst:2
 msgid "Installing Ubuntu Touch 16.04 images on Halium"
@@ -161,7 +171,7 @@ msgstr "在 Halium 上构建 Ubuntu Touch 16.04 镜像"
 
 #: ../../porting/installing-16-04.rst:6
 msgid "These steps  will wipe **all** of the data on your device. If there is anything that you would like to keep, ensure it is backed up and copied off of the device before continuing."
-msgstr ""
+msgstr "这些步骤将清除设备上的**所有**数据。 如果您有任何需要保留的内容，请确保在继续之前将其备份并从设备上复制下来。"
 
 #: ../../porting/installing-16-04.rst:8
 msgid "Now that you've :doc:`built ubports-boot <building-ubports-boot>`, we'll use a script called ``rootstock-touch-install`` to install an Ubuntu Touch rootfs on your device."
@@ -170,14 +180,17 @@ msgstr ""
 #: ../../porting/installing-16-04.rst:10
 msgid "In order to install Ubuntu Touch, you will need a recovery with Busybox, such as TWRP, installed on your phone. You will also need to ensure the /data partition is formatted with ext4 and does not have any encryption on it."
 msgstr ""
+"为了安装 Ubuntu Touch，您需要在手机上安装带有 Busybox 的 Recovery （比如 TWRP）。 您还需要确保 /data "
+"分区使用 ext4 文件系统格式化，并且没有任何进行加密。"
 
 #: ../../porting/installing-16-04.rst:13
 msgid "Install ubports-boot"
-msgstr ""
+msgstr "安装 UBports-boot"
 
 #: ../../porting/installing-16-04.rst:15
 msgid "We'll need to install the ubports-boot image before installing an image. Reboot your phone into fastboot mode, then do the following from your Halium tree::"
 msgstr ""
+"我们需要在安装镜像之前安装 ubports-boot 镜像。 重新启动手机进入 fastboot 模式，然后在 Halium 树中执行以下操作::"
 
 #: ../../porting/installing-16-04.rst:21
 msgid "Download the rootfs"
@@ -213,7 +226,7 @@ msgstr "获得 SSH 访问权限"
 
 #: ../../porting/installing-16-04.rst:45
 msgid "When your device boots, it will likely stay at the bootloader screen. However, you should also get a new network connection on the computer you have it plugged in to. We will use this to debug the system."
-msgstr ""
+msgstr "当您的设备启动时，它可能会卡在引导界面上。 但是，您还应该在插入设备的计算机上获得新的网络连接。 我们将使用它来调试系统。"
 
 #: ../../porting/installing-16-04.rst:47
 msgid "To confirm that your device has booted correctly, run ``dmesg -w`` and watch for \"GNU/Linux device\" in the output. If you instead get something similar to \"ubports initrd i hit a nail\", please get in contact with us so we can find out why. You may also choose to run ``watch ip link`` and look for changes in network devices."
@@ -237,7 +250,7 @@ msgstr ""
 
 #: ../../porting/installing-16-04.rst:64
 msgid "Add udev rules"
-msgstr ""
+msgstr "添加 udev 规则"
 
 #: ../../porting/installing-16-04.rst:66
 msgid "Now that you're logged in, you must create some udev rules to allow Ubuntu Touch software to access your hardware. Run the following command, replacing [codename] with your device's codename.::"
@@ -325,11 +338,11 @@ msgstr "分辨率"
 
 #: ../../porting/running-ut.rst:31
 msgid "Display Size"
-msgstr ""
+msgstr "显示大小"
 
 #: ../../porting/running-ut.rst:31
 msgid "PPI"
-msgstr ""
+msgstr "PPI"
 
 #: ../../porting/running-ut.rst:31
 msgid "Px/GU"
@@ -340,35 +353,36 @@ msgid "QtWebKit DPR"
 msgstr ""
 
 #: ../../porting/running-ut.rst:33
+#, fuzzy
 msgid "'Normal' density laptop"
-msgstr ""
+msgstr "“高”密度笔记本"
 
 #: ../../porting/running-ut.rst:33
 #: ../../porting/running-ut.rst:33
 #: ../../porting/running-ut.rst:35
 #: ../../porting/running-ut.rst:35
 msgid "N/A"
-msgstr ""
+msgstr "N/A"
 
 #: ../../porting/running-ut.rst:33
 msgid "96-150"
-msgstr ""
+msgstr "96-150"
 
 #: ../../porting/running-ut.rst:33
 msgid "8"
-msgstr ""
+msgstr "8"
 
 #: ../../porting/running-ut.rst:33
 msgid "1.0"
-msgstr ""
+msgstr "1.0"
 
 #: ../../porting/running-ut.rst:34
 msgid "ASUS Nexus 7"
-msgstr ""
+msgstr "ASUS Nexus 7"
 
 #: ../../porting/running-ut.rst:34
 msgid "1280x800"
-msgstr ""
+msgstr "1280x800"
 
 #: ../../porting/running-ut.rst:34
 msgid "7\""
@@ -376,42 +390,42 @@ msgstr ""
 
 #: ../../porting/running-ut.rst:34
 msgid "216"
-msgstr ""
+msgstr "216"
 
 #: ../../porting/running-ut.rst:34
 msgid "12"
-msgstr ""
+msgstr "12"
 
 #: ../../porting/running-ut.rst:34
 #: ../../porting/running-ut.rst:36
 #: ../../porting/running-ut.rst:37
 #: ../../porting/running-ut.rst:38
 msgid "2.0"
-msgstr ""
+msgstr "2.0"
 
 #: ../../porting/running-ut.rst:35
 msgid "'High' density laptop"
-msgstr ""
+msgstr "高密度"
 
 #: ../../porting/running-ut.rst:35
 msgid "150-250"
-msgstr ""
+msgstr "150-250"
 
 #: ../../porting/running-ut.rst:35
 msgid "16"
-msgstr ""
+msgstr "16"
 
 #: ../../porting/running-ut.rst:35
 msgid "1.5"
-msgstr ""
+msgstr "1.5"
 
 #: ../../porting/running-ut.rst:36
 msgid "Samsung Galaxy Nexus"
-msgstr ""
+msgstr "Samsung Galaxy Nexus"
 
 #: ../../porting/running-ut.rst:36
 msgid "1280x720"
-msgstr ""
+msgstr "1280x720"
 
 #: ../../porting/running-ut.rst:36
 msgid "4.65\""
@@ -419,20 +433,20 @@ msgstr ""
 
 #: ../../porting/running-ut.rst:36
 msgid "316"
-msgstr ""
+msgstr "316"
 
 #: ../../porting/running-ut.rst:36
 #: ../../porting/running-ut.rst:37
 msgid "18"
-msgstr ""
+msgstr "18"
 
 #: ../../porting/running-ut.rst:37
 msgid "LG Nexus 4"
-msgstr ""
+msgstr "LG Nexus 4"
 
 #: ../../porting/running-ut.rst:37
 msgid "1280x768"
-msgstr ""
+msgstr "1280x768"
 
 #: ../../porting/running-ut.rst:37
 msgid "4.7\""
@@ -440,15 +454,15 @@ msgstr ""
 
 #: ../../porting/running-ut.rst:37
 msgid "320"
-msgstr ""
+msgstr "320"
 
 #: ../../porting/running-ut.rst:38
 msgid "Samsung Nexus 10"
-msgstr ""
+msgstr "Samsung Nexus 10"
 
 #: ../../porting/running-ut.rst:38
 msgid "2560x1600"
-msgstr ""
+msgstr "2560x1600"
 
 #: ../../porting/running-ut.rst:38
 msgid "10.1\""
@@ -456,20 +470,20 @@ msgstr ""
 
 #: ../../porting/running-ut.rst:38
 msgid "299"
-msgstr ""
+msgstr "299"
 
 #: ../../porting/running-ut.rst:38
 msgid "20"
-msgstr ""
+msgstr "20"
 
 #: ../../porting/running-ut.rst:39
 msgid "Fairphone 2"
-msgstr ""
+msgstr "Fairphone 2"
 
 #: ../../porting/running-ut.rst:39
 #: ../../porting/running-ut.rst:40
 msgid "1080x1920"
-msgstr ""
+msgstr "1080x1920"
 
 #: ../../porting/running-ut.rst:39
 msgid "5\""
@@ -477,21 +491,21 @@ msgstr ""
 
 #: ../../porting/running-ut.rst:39
 msgid "440"
-msgstr ""
+msgstr "440"
 
 #: ../../porting/running-ut.rst:39
 #: ../../porting/running-ut.rst:40
 msgid "23"
-msgstr ""
+msgstr "23"
 
 #: ../../porting/running-ut.rst:39
 #: ../../porting/running-ut.rst:40
 msgid "2.5"
-msgstr ""
+msgstr "2.5"
 
 #: ../../porting/running-ut.rst:40
 msgid "LG Nexus 5"
-msgstr ""
+msgstr "LG Nexus 5"
 
 #: ../../porting/running-ut.rst:40
 msgid "4.95\""
@@ -499,7 +513,7 @@ msgstr ""
 
 #: ../../porting/running-ut.rst:40
 msgid "445"
-msgstr ""
+msgstr "445"
 
 #: ../../porting/running-ut.rst:43
 msgid "Experiment with a few values to find one that feels good when compared to the Ubuntu Touch experience on other devices. If you are unsure of which is the best, share some pictures (including some object for scale) along with the device specs with us."
