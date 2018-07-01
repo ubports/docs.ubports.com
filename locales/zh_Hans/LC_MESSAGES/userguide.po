@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-02 15:42-0500\n"
-"PO-Revision-Date: 2018-06-30 12:22+0800\n"
+"PO-Revision-Date: 2018-07-01 16:54+0800\n"
 "Last-Translator: Luo Yufan <njlyf2011@hotmail.com>\n"
 "Language-Team: \n"
 "Language: zh_Hans\n"
@@ -76,7 +76,6 @@ msgid "Open a terminal and run ``adb devices``."
 msgstr "打开终端，运行 ``adb devices``。"
 
 #: ../../userguide/advanceduse/adb.rst:37
-#, fuzzy
 msgid "When you're done using the shell, it's a good idea to turn Developer Mode off again."
 msgstr "当您使用完 shell 之后，最好关闭开发者模式。"
 
@@ -105,7 +104,7 @@ msgstr "Fairphone 2::"
 
 #: ../../userguide/advanceduse/adb.rst:52
 msgid "Oneplus One::"
-msgstr "Oneplus One（一加一）::"
+msgstr "Oneplus One::"
 
 #: ../../userguide/advanceduse/dav.rst:2
 msgid "CalDAV and CardDAV synchronization"
@@ -157,27 +156,29 @@ msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:31
 msgid "Sources:"
-msgstr ""
+msgstr "来源："
 
 #: ../../userguide/advanceduse/dav.rst:33
 msgid "https://askubuntu.com/questions/616081/ubuntu-touch-add-contact-list-and-calendars/664834#664834"
 msgstr ""
+"https://askubuntu.com/questions/616081/ubuntu-touch-add-contact-list-and-"
+"calendars/664834#664834"
 
 #: ../../userguide/advanceduse/dav.rst:34
 msgid "https://gist.github.com/boTux/069b53d8e06bdb9b9c97"
-msgstr ""
+msgstr "https://gist.github.com/boTux/069b53d8e06bdb9b9c97"
 
 #: ../../userguide/advanceduse/dav.rst:35
 msgid "https://gist.github.com/tcarrondo"
-msgstr ""
+msgstr "https://gist.github.com/tcarrondo"
 
 #: ../../userguide/advanceduse/dav.rst:36
 msgid "https://gist.github.com/bastos77"
-msgstr ""
+msgstr "https://gist.github.com/bastos77"
 
 #: ../../userguide/advanceduse/dav.rst:37
 msgid "https://askubuntu.com/questions/601910/ssh-ubuntu-touch"
-msgstr ""
+msgstr "https://askubuntu.com/questions/601910/ssh-ubuntu-touch"
 
 #: ../../userguide/advanceduse/index.rst:2
 msgid "Advanced use"
@@ -205,15 +206,15 @@ msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:10
 msgid "Steps"
-msgstr ""
+msgstr "步骤"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:12
 msgid "On phone: ``android-gadget-service enable rndis``"
-msgstr ""
+msgstr "手机端：``android-gadget-service enable rndis``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:14
 msgid "On computer: get your rndis ip address e.g:``hostname -I``"
-msgstr ""
+msgstr "电脑端：get your rndis ip address e.g:``hostname -I``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:16
 msgid "On phone:"
@@ -315,7 +316,7 @@ msgstr ""
 
 #: ../../userguide/advanceduse/screencasting.rst:69
 msgid "You can download it here: :download:`files/mircast.sh`"
-msgstr ""
+msgstr "您可以从这下载： :download:`files/mircast.sh`"
 
 #: ../../userguide/advanceduse/screencasting.rst:74
 msgid "initial source: https://wiki.ubuntu.com/Touch/ScreenRecording"
@@ -323,7 +324,7 @@ msgstr ""
 
 #: ../../userguide/advanceduse/screencasting.rst:75
 msgid "demo: https://www.youtube.com/watch?v=HYm4RUwwo5Q"
-msgstr ""
+msgstr "演示：https://www.youtube.com/watch?v=HYm4RUwwo5Q"
 
 #: ../../userguide/advanceduse/ssh.rst:2
 msgid "Shell access via ssh"
@@ -331,7 +332,7 @@ msgstr "通过 ssh 访问 shell"
 
 #: ../../userguide/advanceduse/ssh.rst:4
 msgid "You can use ssh to access a shell from your PC. This is useful for debugging or more advanced shell usage."
-msgstr ""
+msgstr "您可以使用 ssh 从 PC 访问 shell。 这对于调试或更高级的shell 使用来说非常有用"
 
 #: ../../userguide/advanceduse/ssh.rst:6
 msgid "You need a ssh key pair for this. Logging in via password is disabled by default."
@@ -347,11 +348,11 @@ msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:16
 msgid "Copy the public key to your device"
-msgstr ""
+msgstr "将公钥复制到您的设备"
 
 #: ../../userguide/advanceduse/ssh.rst:18
 msgid "You need then to transfer your public key to your device. There are multiple ways to do this. For example:"
-msgstr ""
+msgstr "然后，您需要将公钥传输到您的设备。 有许多方法实现。 例如："
 
 #: ../../userguide/advanceduse/ssh.rst:20
 msgid "Connect the ubports device and the PC with a USB cable. Then copy the file using your filemanager."
@@ -367,7 +368,7 @@ msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:27
 msgid "Configure your device"
-msgstr ""
+msgstr "配置您的设备"
 
 #: ../../userguide/advanceduse/ssh.rst:29
 msgid "Now you have the public key on the UBports device. Let's assume it's stored as ``/home/phablet/id_rsa.pub``. Use the terminal app or and adb connection to perform the following steps on your phone. ::"
@@ -375,7 +376,7 @@ msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:38
 msgid "Now start the ssh server::"
-msgstr ""
+msgstr "现在开启 SSH 服务器::"
 
 #: ../../userguide/advanceduse/ssh.rst:44
 msgid "Connect"
@@ -399,11 +400,11 @@ msgstr ""
 
 #: ../../userguide/advanceduse/switchchannel.rst:2
 msgid "Switch release channels"
-msgstr ""
+msgstr "切换发行通道"
 
 #: ../../userguide/dailyuse/anbox.rst:2
 msgid "Run android applications"
-msgstr ""
+msgstr "运行 Android 应用程序"
 
 #: ../../userguide/dailyuse/anbox.rst:4
 msgid "`Anbox <https://anbox.io>`_ is a minimal android container and compatibility layer that allows you to run android applications on GNU/Linux operating systems."
@@ -503,11 +504,11 @@ msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:9
 msgid "Manage containers"
-msgstr ""
+msgstr "管理容器"
 
 #: ../../userguide/dailyuse/libertine.rst:12
 msgid "Create a container"
-msgstr ""
+msgstr "创建一个容器"
 
 #: ../../userguide/dailyuse/libertine.rst:14
 msgid "The first step is to create a container where applications can be installed:"
@@ -531,7 +532,7 @@ msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:23
 msgid "The creating process can take some time, due to the size of the container (some hundred of megabytes)."
-msgstr ""
+msgstr "由于容器较大（几百 MB），所以可能需要一些时间创建它。"
 
 #: ../../userguide/dailyuse/libertine.rst:26
 msgid "The ``create`` command shown above cannot be run directly in the terminal app, due apparmor restrictions. You can run it from another device using either ``adb`` or ``ssh`` connection. Alternatively, you can run it from the terminal app using a loopback ssh connection running this command: ``ssh localhost``."
@@ -539,27 +540,27 @@ msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:29
 msgid "List containers"
-msgstr ""
+msgstr "列出容器"
 
 #: ../../userguide/dailyuse/libertine.rst:32
 msgid "To list all containers created run:"
-msgstr ""
+msgstr "列出所有已创建的容器并运行："
 
 #: ../../userguide/dailyuse/libertine.rst:32
 msgid "``libertine-container-manager list``"
-msgstr ""
+msgstr "``libertine-container-manager list``"
 
 #: ../../userguide/dailyuse/libertine.rst:35
 msgid "Destroy a container"
-msgstr ""
+msgstr "销毁容器"
 
 #: ../../userguide/dailyuse/libertine.rst:37
 msgid "``libertine-container-manager destroy -i CONTAINER-IDENTIFIER``"
-msgstr ""
+msgstr "``libertine-container-manager destroy -i CONTAINER-IDENTIFIER``"
 
 #: ../../userguide/dailyuse/libertine.rst:40
 msgid "Manage applications"
-msgstr ""
+msgstr "管理应用程序"
 
 #: ../../userguide/dailyuse/libertine.rst:42
 msgid "Once a container is set up, you can list the installed applications:"
@@ -567,19 +568,19 @@ msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:44
 msgid "``libertine-container-manager list-apps``"
-msgstr ""
+msgstr "``libertine-container-manager list-apps``"
 
 #: ../../userguide/dailyuse/libertine.rst:46
 msgid "Install a package:"
-msgstr ""
+msgstr "安装软件包："
 
 #: ../../userguide/dailyuse/libertine.rst:48
 msgid "``libertine-container-manager install-package -p PACKAGE-NAME``"
-msgstr ""
+msgstr "``libertine-container-manager install-package -p 软件包名称``"
 
 #: ../../userguide/dailyuse/libertine.rst:50
 msgid "Remove a package:"
-msgstr ""
+msgstr "移除软件包："
 
 #: ../../userguide/dailyuse/libertine.rst:52
 msgid "``libertine-container-manager remove-package -p PACKAGE-NAME``"
@@ -698,26 +699,22 @@ msgid "Go to `the download page <https://github.com/ubports/ubports-installer/re
 msgstr ""
 
 #: ../../userguide/install.rst:11
-#, fuzzy
 msgid "Windows: ``ubports-installer-<version-number>.exe``"
 msgstr "Windows: ubports-installer-<版本号>.exe"
 
 #: ../../userguide/install.rst:12
-#, fuzzy
 msgid "macOS: ``ubports-installer-<version-number>.dmg``"
-msgstr "macOS: ubports-installer-<版本号>.dmg"
+msgstr "macOS: ``ubports-installer-<版本号>.dmg``"
 
 #: ../../userguide/install.rst:13
-#, fuzzy
 msgid "Ubuntu or Debian: ``ubports-installer-<version-number>.deb``"
-msgstr "Windows: ubports-installer-<版本号>.exe"
+msgstr "Ubuntu 或 Debian: ``ubports-installer-<版本号>.deb``"
 
 #: ../../userguide/install.rst:14
-#, fuzzy
 msgid "Other Linux distribtuions: ``ubports-installer-<version-number>.snap`` or ``ubports-installer-<version-number>.AppImage``"
 msgstr ""
-"Linux: ubports-installer-<版本号>.deb, ubports-installer-<版本号>.snap or ubports-"
-"installer-<版本号>.AppImage"
+"Linux: ``ubports-installer-<版本号>.deb, ubports-installer-<版本号>.snap or "
+"ubports-installer-<版本号>.AppImage``"
 
 #: ../../userguide/install.rst:16
 msgid "Start the installer and follow the on-screen instructions that will walk you through the installation process. That's it! Have fun exploring Ubuntu Touch!"
@@ -729,7 +726,7 @@ msgstr ""
 
 #: ../../userguide/install.rst:21
 msgid "Install on legacy Android devices"
-msgstr "在旧版 Android 设备上安装"
+msgstr "在旧式 Android 设备上安装"
 
 #: ../../userguide/install.rst:23
 msgid "While the installation process is fairly simple on most devices, some legacy Bq and Meizu devices require special steps. This part of the guide does not apply to other devices."
@@ -745,39 +742,53 @@ msgstr ""
 
 #: ../../userguide/install.rst:33
 msgid "BE VERY CAREFUL! You are responsible for your own actions!"
-msgstr ""
+msgstr "请三思而后行！"
 
 #: ../../userguide/install.rst:35
 msgid "Disconnect all devices and non-essential peripherals from your PC. Charge your device on a wall-charger (not your PC) to at least 40 percent"
-msgstr ""
+msgstr "从 PC 上断开所有（移动）设备和非必要外围设备的连接。 请使用充电器（而不是 PC）为设备充电至至少 40% 的电量。"
 
 #: ../../userguide/install.rst:36
 msgid "Download the Ubuntu Touch ROM for your device:"
-msgstr ""
+msgstr "为您的设备下载 Ubuntu Touch 刷机包："
 
 #: ../../userguide/install.rst:38
 msgid "`Bq E4.5 <http://www.mibqyyo.com/de-download/categorias/smartphones/aquaris-e-serie/aquaris-e4-5-ubuntu-edition/>`_ (*krillin*)"
 msgstr ""
+"`Bq E4.5 <http://www.mibqyyo.com/de-"
+"download/categorias/smartphones/aquaris-e-serie/aquaris-e4-5-ubuntu-"
+"edition/>`_ (*krillin*)"
 
 #: ../../userguide/install.rst:39
 msgid "`Bq E5 HD <https://storage.googleapis.com/otas/2014/Smartphones/Aquaris_E5_HD/Ubuntu/VEGETA01A-S11A_BQ_L100EN_2017_170207.zip>`_ (*vegetahd*)"
 msgstr ""
+"`Bq E5 HD "
+"<https://storage.googleapis.com/otas/2014/Smartphones/Aquaris_E5_HD/Ubuntu"
+"/VEGETA01A-S11A_BQ_L100EN_2017_170207.zip>`_ (*vegetahd*)"
 
 #: ../../userguide/install.rst:40
 msgid "`Bq M10 HD <https://storage.googleapis.com/otas/2015/Tablets/Freezer/Ubuntu/OTA_13_FW_version/cooler-image-stable-6.zip>`_ (*cooler*)"
 msgstr ""
+"`Bq M10 HD <https://storage.googleapis.com/otas/2015/Tablets/Freezer/Ubuntu/O"
+"TA_13_FW_version/cooler-image-stable-6.zip>`_ (*cooler*)"
 
 #: ../../userguide/install.rst:41
 msgid "`Bq M10 FHD <https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/Ubuntu/OTA_15/frieza-image-stable-8.zip>`_ (*frieza*)"
 msgstr ""
+"`Bq M10 FHD "
+"<https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/Ubuntu/OTA_15"
+"/frieza-image-stable-8.zip>`_ (*frieza*)"
 
 #: ../../userguide/install.rst:42
 msgid "`Meizu MX4 <http://people.canonical.com/~alextu/tangxi/684.zip>`_ (*arale*)"
 msgstr ""
+"`魅族 MX4 <http://people.canonical.com/~alextu/tangxi/684.zip>`_ (*arale*)"
 
 #: ../../userguide/install.rst:44
 msgid "Download `SP flash tool <https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/Ubuntu/SP_Flash_Tool_exe_Linux_v5.1612.00.100.zip>`_ for Linux."
 msgstr ""
+"下载适用于 Linux 的 SP flash tool <https://storage.googleapis.com/otas/2015/Tablets"
+"/Freezer%20FHD/Ubuntu/SP_Flash_Tool_exe_Linux_v5.1612.00.100.zip>`_ 。"
 
 #: ../../userguide/install.rst:46
 msgid "On Ubuntu 17.10, there are issues with flash_tool loading the shared library 'libpng12', so this can be used as a workaround:"
@@ -789,11 +800,11 @@ msgstr ""
 
 #: ../../userguide/install.rst:56
 msgid "Extract the zip files"
-msgstr ""
+msgstr "解压 zip 文件"
 
 #: ../../userguide/install.rst:57
 msgid "Start the tool with ``sudo``"
-msgstr ""
+msgstr "使用 ``sudo`` 命令打开工具"
 
 #: ../../userguide/install.rst:58
 msgid "Select the ``*Android_scatter.txt`` file from the archive you downloaded in the first step as the scatter-loading file"
@@ -801,11 +812,11 @@ msgstr ""
 
 #: ../../userguide/install.rst:59
 msgid "Choose \"Firmware Upgrade\""
-msgstr ""
+msgstr "选择“固件更新”"
 
 #: ../../userguide/install.rst:60
 msgid "Double-check you chose \"Firmware Upgrade\" and not \"Download\" or \"Format All\""
-msgstr ""
+msgstr "仔细检查您选择的是“固件升级”而不是“下载”或“全部格式化”"
 
 #: ../../userguide/install.rst:64
 msgid "If you select DOWNLOAD rather than FIRMWARE UPGRADE, you will end up with a useless brick rather than a fancy Ubuntu Touch device. Be sure to select FIRMWARE UPGRADE."
@@ -813,19 +824,19 @@ msgstr ""
 
 #: ../../userguide/install.rst:66
 msgid "Turn your device completely off, but do not connect it yet"
-msgstr ""
+msgstr "让您的设备完全关机，但请不要将其连接。"
 
 #: ../../userguide/install.rst:67
 msgid "Press the button labeled \"Download\""
-msgstr ""
+msgstr "请按“下载”按钮"
 
 #: ../../userguide/install.rst:68
 msgid "Perform a final sanity-check that you selected the \"Firmware Upgrade\" option, not \"Download\""
-msgstr ""
+msgstr "执行最终的完整性检查，选择“固件升级”选项，而不是“下载”。"
 
 #: ../../userguide/install.rst:69
 msgid "Make sure your device is off and connect it to your PC. Don't use a USB 3.0 port, since that's known to cause communication issues with your device."
-msgstr ""
+msgstr "确保您的设备已关闭并将其连接到 PC。 请勿使用 USB 3.0 端口，因为它会导致设备出现通信问题。"
 
 #: ../../userguide/install.rst:70
 msgid "`Magic <https://en.wikipedia.org/wiki/Clarke's_three_laws>`_ happens. Your device will boot into a super old version of Ubuntu Touch."
@@ -833,4 +844,4 @@ msgstr ""
 
 #: ../../userguide/install.rst:71
 msgid "Congratulations! Your device will now boot into a very old version of Ubuntu Touch. You can now use the UBports Installer to proceed."
-msgstr ""
+msgstr "恭喜！ 您的设备现在将启动到老旧版本的 Ubuntu Touch 。您现在可以使用 UBports 安装程序继续操作。"
