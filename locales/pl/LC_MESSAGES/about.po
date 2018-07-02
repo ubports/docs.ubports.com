@@ -8,362 +8,590 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-02 15:42-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2018-07-02 23:12+0000\n"
+"Last-Translator: Daniel Frańczak <danielfranczak5@wp.pl>\n"
+"Language-Team: Polish <https://translate.ubports.com/projects/ubports-docs"
+"/documentation-about/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 2.15\n"
 
 #: ../../about/introduction.rst:2
 msgid "Introduction"
-msgstr ""
+msgstr "Wprowadzenie"
 
 #: ../../about/introduction.rst:4
 msgid "This is the documentation for the UBports project. Our goal is to create an open-source (GPL if possible) mobile operating system that converges and respects your freedom."
 msgstr ""
+"To jest dokumentacja projektu UBports. Naszym celem jest stworzenie "
+"mobilnego systemu operacyjnego open source (GPL, jeśli to możliwe), który "
+"szanuje twoją wolność."
 
 #: ../../about/introduction.rst:7
 msgid "About UBports"
-msgstr ""
+msgstr "O UBports"
 
 #: ../../about/introduction.rst:9
 msgid "The UBports project was founded by Marius Gripsgard in 2015 and in its infancy was a place where developers could share ideas and educate each other in hopes of bringing the Ubuntu Touch platform to more and more devices."
 msgstr ""
+"Projekt UBports został założony przez Mariusa Gripsgarda w 2015 r., A jego "
+"początki były miejscem, w którym programiści mogli dzielić się pomysłami i "
+"edukować w nadziei, że platforma Ubuntu Touch będzie obsługiwać coraz więcej "
+"urządzeń."
 
 #: ../../about/introduction.rst:11
 msgid "After Canonical suddenly announced `their plans to terminate support of Ubuntu Touch <https://insights.ubuntu.com/2017/04/05/growing-ubuntu-for-cloud-and-iot-rather-than-phone-and-convergence/>`_ in April of 2017, UBports and its sister projects began work on the open-source code, maintaining and expanding its possiblilities for the future."
 msgstr ""
+"Po tym, jak Canonical ogłosił \"swoje plany zakończenia wsparcia Ubuntu "
+"Touch <https://insights.ubuntu.com/2017/04/05/growing-ubuntu-for-cloud-and-"
+"iot-rather-than-phone-and-convergence/> `_ w kwietniu 2017 r. UBports i jego "
+"siostrzane projekty rozpoczęły prace nad kodem open source, utrzymując i "
+"rozszerzając jego możliwości na przyszłość."
 
 #: ../../about/introduction.rst:14
 msgid "About the Documentation"
-msgstr ""
+msgstr "O dokumentacji"
 
 #: ../../about/introduction.rst:16
 msgid "This documentation is always improving thanks to the members of the UBports community. It is written in ReStructuredText and converted into this readable form by `Sphinx <http://www.sphinx-doc.org/en/stable/>`_, `ReCommonMark <http://recommonmark.readthedocs.io/en/latest/>`_, and `Read the Docs <https://readthedocs.io>`_. You can start contributing by checking out the :doc:`Documentation intro </contribute/documentation>`."
 msgstr ""
+"Ta dokumentacja zawsze się poprawia dzięki członkom społeczności UBports. "
+"Jest napisany w ReStructuredText i konwertowany na tę czytelną postać przez `"
+"Sphinx <http://www.sphinx-doc.org/en/stable/>` _, `ReCommonMark "
+"<http://recommonmark.readthedocs.io/en/latest/> `_ i` Czytaj dokumenty "
+"<https://readthedocs.io> `_. Możesz zacząć współtworzyć, sprawdzając: doc: `"
+"Documentation intro </contribute/documentation>`."
 
 #: ../../about/introduction.rst:18
 msgid "All documents are licensed under the Creative Commons Attribution ShareAlike 4.0 (`CC-BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0/>`_) license. Please give attribution to \"The UBports Community\"."
 msgstr ""
+"Wszystkie dokumenty są licencjonowane na podstawie licencji Creative Commons "
+"Attribution ShareAlike 4.0 (`CC-BY-SA 4.0 "
+"<https://creativecommons.org/licenses/by-sa/4.0/>`_). Podaj nazwę \"The "
+"UBports Community\"."
 
 #: ../../about/introduction.rst:21
 msgid "Attribution"
-msgstr ""
+msgstr "Zakres"
 
 #: ../../about/introduction.rst:23
 msgid "This documentation was heavily modeled after the `Godot Engine's Documentation <http://docs.godotengine.org/en/stable/>`_, attribution to Juan Linietsky, Ariel Manzur and the Godot community."
 msgstr ""
+"Ta dokumentacja została silnie wzorowana na \"Godot Engine's Documentation\" "
+"(http://docs.godotengine.org/en/stable/> `_, atrybucja do Jana "
+"Linietsky'ego, Ariela Manzura i społeczności Godot."
 
 #: ../../about/process/branch-naming.rst:2
 msgid "Branch-naming convention"
-msgstr ""
+msgstr "Konwencja nazewnictwa gałęzi"
 
 #: ../../about/process/branch-naming.rst:4
 msgid "Our branch-naming conventions ensure that software can be built by our CI and tested easily by other developers."
 msgstr ""
+"Nasze konwencje nazewnictwa gałęzi zapewniają, że oprogramowanie może być "
+"budowane przez nasz CI i testowane z łatwością przez innych programistów."
 
 #: ../../about/process/branch-naming.rst:6
 msgid "Every Git repository's README file should state which branch-naming convention is used and possible deviations from the norm."
 msgstr ""
+"Każdy plik README repozytorium Git powinien określać konwencję nazewnictwa "
+"gałęzi i możliwe odchylenia od normy."
 
 #: ../../about/process/branch-naming.rst:9
 msgid "Click-Packages"
-msgstr ""
+msgstr "Pakiety Click"
 
 #: ../../about/process/branch-naming.rst:11
 msgid "Software that is exclusively distributed as a click-package (and not also as a deb) only uses one ``master`` branch that is protected. Separate temporary development branches with arbitrary descriptive names can be created and merged into master when the time comes. For marking and archiving milestones in development history, ideally Git tags or GitHub releases should be used."
 msgstr ""
+"Oprogramowanie, które jest dystrybuowane wyłącznie jako pakiet click (a nie "
+"także jako deb), używa tylko jednej gałęzi \"master\", która jest chroniona. "
+"Oddzielne tymczasowe gałęzie rozwojowe o arbitralnych nazwach opisowych mogą "
+"być tworzone i scalane z wzorcem, gdy nadejdzie czas. Do oznaczania i "
+"archiwizacji kamieni milowych w historii rozwoju, najlepiej użyć tagów Git "
+"lub GitHub."
 
 #: ../../about/process/branch-naming.rst:14
 msgid "Deb-Packages"
-msgstr ""
+msgstr "Pakiety deb"
 
 #: ../../about/process/branch-naming.rst:16
 msgid "To make most efficient use of our CI system, a special naming convention for git-branches is used."
 msgstr ""
+"Aby jak najlepiej wykorzystać nasz system CI, stosowana jest specjalna "
+"konwencja nazewnictwa dla gałęzi git."
 
 #: ../../about/process/branch-naming.rst:18
 msgid "For pre-installed Ubuntu Touch components, deb-packages are used wherever possible. This includes Core Apps, since they can still be independently updated using click-package downloads from the OpenStore. This policy allows us to make use of the powerful Debian build system to resolve dependencies."
 msgstr ""
+"W przypadku wstępnie zainstalowanych składników Ubuntu Touch, pakiety deb są "
+"używane wszędzie tam, gdzie to możliwe. Obejmuje to aplikacje podstawowe, "
+"ponieważ nadal mogą być niezależnie aktualizowane przy użyciu pakietów click "
+"z OpenStore. Ta zasada pozwala nam wykorzystać potężny system kompilacji "
+"Debiana do rozwiązywania zależności."
 
 #: ../../about/process/branch-naming.rst:20
 msgid "Every repository that uses this convention will have branches for the actively supported Ubuntu releases referenced by their codenames (``bionic``, ``xenial``, ``vivid``, etc.). These are the branches that are built directly into the corresponding images and published on :doc:`repo.ubports.com <ppa>`. If no separate versions for the different Ubuntu bases are needed, the repository will just have one ``master`` branch and the CI system will still build versions for all actively supported releases and resolve dependencies accordingly."
 msgstr ""
+"Każde repozytorium korzystające z tej konwencji będzie miało gałęzie dla "
+"aktywnie wspieranych wydań Ubuntu, do których odwołują się ich nazwy kodowe "
+"(`` bionic``, `` xenial``, `` vivid`` itd.). Są to gałęzie, które są "
+"wbudowane bezpośrednio w odpowiednie obrazy i opublikowane na: doc: `"
+"repo.ubports.com <ppa>`. Jeśli nie są potrzebne oddzielne wersje dla różnych "
+"baz Ubuntu, repozytorium będzie miało tylko jedną gałąź `` master``, a "
+"system CI nadal będzie budował wersje dla wszystkich aktywnie obsługiwanych "
+"wersji i odpowiednio rozwiązuje zależności."
 
 #: ../../about/process/branch-naming.rst:23
 msgid "Branch-extensions"
-msgstr ""
+msgstr "Rozgałęzienia-rozszerzenia"
 
 #: ../../about/process/branch-naming.rst:25
 msgid "To build and publish packages based on another repository, an extension in the form of  ``xenial_-_some-descriptive_extension`` can be used. The CI system will then resolve all dependencies using the ``xenial_-_some-descriptive_extension`` branch of other repositories or fall back on the normal ``xenial`` dependencies, if that doesn't exist. These special dependencies are not built into the image but still pushed to  on :doc:`repo.ubports.com <ppa>`."
 msgstr ""
+"Aby budować i publikować pakiety na podstawie innego repozytorium, można "
+"użyć rozszerzenia w postaci `` xenial _-_ jakieś_opisowe_rozszerzenie``. "
+"System CI rozwiąże wszystkie zależności, używając gałęzi `` xenial _-_ "
+"jakieś_opisowe_rozszerzenie`` od innych repozytoriów lub powróci do "
+"normalnych zależności `` xenial``, jeśli to nie istnieje. Te specjalne "
+"zależności nie są wbudowane w obraz, ale nadal są przesyłane dalej: doc: `"
+"repo.ubports.com <ppa>`."
 
 #: ../../about/process/branch-naming.rst:27
 msgid "Multiple branch extensions can be chained together in the form of ``xenial_-_dependency-1_-_dependency-2_-_dependency-3``. This means that the CI system will look for dependencies in the following repositories:"
 msgstr ""
+"Wiele rozszerzeń gałęzi można połączyć ze sobą w postaci zależności `xenial "
+"_-_zależność-1 _-_ zależność-2 _-_ zależność-3``. Oznacza to, że system CI "
+"będzie szukać zależności w następujących repozytoriach:"
 
 #: ../../about/process/branch-naming.rst:38
 msgid "There is no prioritization, so the build system will always use the package with the highest version number or the newest build if the version is equal."
 msgstr ""
+"Nie ma priorytetu, więc system kompilacji zawsze będzie używał pakietu o "
+"najwyższym numerze wersji lub najnowszej wersji, jeśli wersja jest równa."
 
 #: ../../about/process/branch-naming.rst:41
 msgid "Dependency-file"
-msgstr ""
+msgstr "Plik zależności"
 
 #: ../../about/process/branch-naming.rst:43
 msgid "For complex or non-linear dependencies, a ``ubports.depends`` file can be created in the root of the repository to specify additional dependencies. The branch name will be ignored if this file exists."
 msgstr ""
+"W przypadku złożonych lub nieliniowych zależności można utworzyć plik `` "
+"ubports.depends`` w katalogu głównym repozytorium w celu określenia "
+"dodatkowych zależności. Nazwa tego katalogu zostanie zignorowana, jeśli ten "
+"plik istnieje."
 
 #: ../../about/process/branch-naming.rst:53
 msgid "The ``ubports.depends`` file is an **exclusive list**, so the build system will not resolve dependencies linearly like it does in a branch name! Every dependency has to be listed. You will almost always want to include your base release (i.e. ``xenial``)."
 msgstr ""
+"Plik `ubports.depends`` jest **wyłączną listą**, więc system kompilacji nie "
+"rozdzieli zależności tak liniowo jak w nazwie gałęzi! Każda zależność musi "
+"być wymieniona. Będziesz prawie zawsze chciał dołączyć swoje podstawowe "
+"wydanie (tj. `` Xenial``)."
 
 #: ../../about/process/index.rst:2
 msgid "Processes"
-msgstr ""
+msgstr "Procesy"
 
 #: ../../about/process/index.rst:4
 msgid "This section of the documentation details standardized processes for different teams."
 msgstr ""
+"Ta sekcja dokumentacji zawiera standardowe procedury dla różnych zespołów."
 
 #: ../../about/process/index.rst:7
 msgid "The process definitions are still a work in progress and need to be completed by the respective teams."
 msgstr ""
+"Definicje procesów wciąż są w toku i muszą zostać uzupełnione przez "
+"odpowiednie zespoły."
 
 #: ../../about/process/issue-tracking.rst:2
 msgid "Issue-Tracking Guidelines"
-msgstr ""
+msgstr "Wskazówki dotyczące śledzenia zgłoszeń"
 
 #: ../../about/process/issue-tracking.rst:4
 msgid "This document describes the standard process of dealing with new issues in UBports projects. Not to be confused with the :doc:`guide on writing a good bugreport </contribute/bugreporting>`."
 msgstr ""
+"Ten dokument opisuje standardowy proces radzenia sobie z nowymi problemami w "
+"projektach UBports. Nie mylić z: doc: `poradnikiem na temat pisania dobrego "
+"zgłoszenia błędów </contribute/bugreporting>`."
 
 #: ../../about/process/issue-tracking.rst:7
 msgid "Where are bugs tracked?"
-msgstr ""
+msgstr "Gdzie są śledzone błędy?"
 
 #: ../../about/process/issue-tracking.rst:9
 msgid "Since our quality assurance depends heavily on the community, we try to track issues where the user would expect them, instead of seperated by repository. This means, that issues of almost all components that are distributed as with the system-image are tracked in the `Ubuntu Touch tracker <https://github.com/ubports/ubuntu-touch>`__. An exception of this are click-apps that can be updated independently through the OpenStore."
 msgstr ""
+"Ponieważ nasze zapewnienie jakości zależy w dużej mierze od społeczności, "
+"staramy się śledzić problemy, w których użytkownik ich oczekuje, zamiast "
+"rozdzielać je za pomocą repozytorium. Oznacza to, że problemy z prawie "
+"wszystkimi komponentami, które są dystrybuowane tak, jak z obrazem "
+"systemowym, są śledzone w `trackerze Ubuntu Touch <https://github.com/ubports"
+"/ubuntu-touch>`__. Wyjątkiem są aplikacje click, które można niezależnie "
+"aktualizować za pośrednictwem OpenStore."
 
 #: ../../about/process/issue-tracking.rst:17
 msgid "Most other repositories track issues locally. If you're unsure whether a repository uses its own tracker or not, consult the README.md file. Repositories that don't track issues locally have their bugtracker disabled."
 msgstr ""
+"Większość innych repozytoriów śledzi problemy lokalnie. Jeśli nie masz "
+"pewności, czy repozytorium używa własnego śledzenia, czy nie, zapoznaj się z "
+"plikiem README.md. Repozytoria, które nie śledziły problemów lokalnie, mają "
+"wyłączoną funkcję bugtracker."
 
 #: ../../about/process/issue-tracking.rst:21
 msgid "This page is mainly about the Ubuntu Touch tracker, but most principles apply to other projects as well."
 msgstr ""
+"Ta strona dotyczy głównie narzędzia do śledzenia systemu Ubuntu Touch, ale "
+"większość zasad dotyczy również innych projektów."
 
 #: ../../about/process/issue-tracking.rst:25
 msgid "Practicality beats purity! Exceptions might apply and should be described in the projects README.md file."
 msgstr ""
+"Praktyczność bije czystość! Mogą występować wyjątki i powinny być opisane w "
+"pliku README.md projektów."
 
 #: ../../about/process/issue-tracking.rst:28
 msgid "GitHub projects"
-msgstr ""
+msgstr "Projekty GitHub"
 
 #: ../../about/process/issue-tracking.rst:30
 msgid "To increase transparency and communication, GitHub projects (Kanban-Boards) are used whereever practical. In case of github.com/ubports/ubuntu-touch, a single project is used for all issues. Projects support filtering by labels, so that only issues that belong to a specific team or affect a specific device can be viewed."
 msgstr ""
+"Aby zwiększyć przejrzystość i komunikację, projekty GitHub (Tablice Kanban) "
+"są wykorzystywane wszędzie tam, gdzie jest to praktyczne. W przypadku "
+"github.com/ubports/ubuntu-touch do wszystkich problemów wykorzystywany jest "
+"pojedynczy projekt. Projekty obsługują filtrowanie według etykiet, dzięki "
+"czemu można wyświetlić tylko problemy należące do określonego zespołu lub "
+"mające wpływ na określone urządzenie."
 
 #: ../../about/process/issue-tracking.rst:36
 msgid "These are the standard columns:"
-msgstr ""
+msgstr "Są to standardowe kolumny:"
 
 #: ../../about/process/issue-tracking.rst:38
 msgid "**None (awaiting triage)**: The issue has been approved by a member of the qa team and is awaiting review from the responsible development team. if the issue is a bug, instructions to reproduce are included in the issue description. if the issue is a feature request, it has passed a primary sanity check by the qa-team but has not yet been accepted by the responsible development-team."
 msgstr ""
+"**Brak (oczekiwanie na oznaczenie)**: problem został zatwierdzony przez "
+"członka zespołu qa i oczekuje na opinię od odpowiedzialnego zespołu "
+"programistycznego. jeśli problem jest błędem, instrukcje dotyczące "
+"odtwarzania są zawarte w opisie problemu. jeśli problem jest prośbą o "
+"funkcję, przeszedł kontrolę podstawowej kontroli jakości przez zespół qa, "
+"ale nie został jeszcze zaakceptowany przez odpowiedzialny zespół ds. rozwoju."
 
 #: ../../about/process/issue-tracking.rst:39
 msgid "**Accepted**: The issue has been accepted by the responsible development-team. If the issue is a bugreport, the team has decided that it should be fixable and accepts the responsibility. If the issue is a featrue request, the team thinks it should be implemented as described."
 msgstr ""
+"**Zaakceptowany**: problem został zaakceptowany przez odpowiedzialny zespół "
+"ds. Rozwoju. Jeśli problem dotyczy zgłoszenia błędu, zespół zdecydował, że "
+"powinien on zostać naprawiony i akceptuje odpowiedzialność. Jeśli problem "
+"jest prośbą uleprzenie, zespół uważa, że należy go wdrożyć zgodnie z opisem."
 
 #: ../../about/process/issue-tracking.rst:40
 msgid "**In Development**: A patch is in development. Usually means that a developer is assigned to the issue."
 msgstr ""
+"**W rozwoju**: łatka jest w fazie rozwoju. Zwykle oznacza to, że programista "
+"jest przypisany do problemu."
 
 #: ../../about/process/issue-tracking.rst:41
 msgid "**Quality Assurance**: The patch is completed and has passed initial testing. The QA team will now review it and provide feedback. If problems are found, the issue is moved back to “Accepted”."
 msgstr ""
+"**Zapewnienie jakości**: łatka została zakończona i przeszła wstępne testy. "
+"Zespół ds. Kontroli jakości przejrzy go teraz i przekaże opinie. Jeśli "
+"zostaną znalezione problemy, problem zostanie przeniesiony z powrotem do \""
+"Zaakceptowany\"."
 
 #: ../../about/process/issue-tracking.rst:42
 msgid "**Release Candidate**: The patch has passed QA and is ready for release. In case of deb-packages that are included in the system-image, the patch will be included in the next over-the-air update on the rc channel, and, if everything goes well, in the next release of the stable channel."
 msgstr ""
+"**Release Candidate**: łatka przeszła kontrolę jakości i jest gotowa do "
+"wydania. W przypadku pakietów deb, które są zawarte w obrazie systemu, łatka "
+"zostanie dołączona do kolejnej aktualizacji na kanale rc, a jeśli wszystko "
+"pójdzie dobrze, w następnej wersji stabilnego kanału."
 
 #: ../../about/process/issue-tracking.rst:43
 msgid "**None (removed from the project)**: If the issue is open and labeled \"help wanted\", community contributions are required to resolve the issue. If it's closed, that means that either a patch has been released on the stable channel (a comment on the issue should link to the patch) or the issue has been rejected (labeled “wontfix”)."
 msgstr ""
+"**Brak (usunięty z projektu)**: jeśli problem jest otwarty i oznaczony jako "
+"\"potrzebna pomoc\", do rozwiązania problemu wymagane są składki "
+"społeczności. Jeśli jest zamknięty, oznacza to, że albo poprawka została "
+"wydana na stabilnym kanale (komentarz do problemu powinien być połączony z "
+"łatką), albo problem został odrzucony (oznaczony \"wontfix\")."
 
 #: ../../about/process/issue-tracking.rst:46
 msgid "Labels"
-msgstr ""
+msgstr "Etykiety"
 
 #: ../../about/process/issue-tracking.rst:48
 msgid "All issues - even closed ones - should be labeled to allow the use of GitHub's global filtering. For example, `these are all of the issues labeled 'enhancement' inside @ubports <https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+org%3Aubports+label%3A%22feature+request%22&type=>`_. Consult the `GitHub help pages <https://help.github.com/articles/about-searching-on-github/>`__ for more information on search and filtering."
 msgstr ""
+"Wszystkie problemy - nawet zamknięte - powinny być oznaczone, aby umożliwić "
+"korzystanie z globalnego filtrowania GitHub. Na przykład \"są to wszystkie "
+"problemy oznaczone jako\" ulepszenia \"w witrynie @ubports <https://github.co"
+"m/search?utf8=%E2%9C%93&q=is%3Aopen+org%3Aubports+label%3A%22feature+request%"
+"22&type=> `_. Aby uzyskać więcej informacji na temat wyszukiwania i "
+"filtrowania, zapoznaj się ze stronami pomocy GitHub "
+"<https://help.github.com/articles/about-searching-on-gitub/> `."
 
 #: ../../about/process/issue-tracking.rst:51
 msgid "Here's a list of labels that are normally used by all repositories."
 msgstr ""
+"Oto lista etykiet, które są normalnie używane przez wszystkie repozytoria."
 
 #: ../../about/process/issue-tracking.rst:53
 msgid "**needs confirmation**: The bug needs confirmation and / or further information from affected users"
 msgstr ""
+"**Wymagane potwierdzenie**: Błąd wymaga potwierdzenia i/lub dalszych "
+"informacji od użytkowników, których dotyczy problem"
 
 #: ../../about/process/issue-tracking.rst:55
 msgid "**bug**: This issue is a confirmed bug. If it's reproducable, reproduction steps are described."
 msgstr ""
+"**błąd**: ten problem jest potwierdzonym błędem. Jeśli jest odtwarzalny, "
+"opisane są kroki reprodukcji."
 
 #: ../../about/process/issue-tracking.rst:57
 msgid "**opinion**: This issue needs further discussion."
-msgstr ""
+msgstr "**opinia**: Ta kwestia wymaga dalszej dyskusji."
 
 #: ../../about/process/issue-tracking.rst:58
 msgid "**enhancement**: This issue is a feature request."
-msgstr ""
+msgstr "**ulepszenie**: ten problem jest żądaniem funkcji."
 
 #: ../../about/process/issue-tracking.rst:59
 msgid "**question**: This issue is a support request or general question."
-msgstr ""
+msgstr "**pytanie**: ten problem to prośba o pomoc lub pytanie ogólne."
 
 #: ../../about/process/issue-tracking.rst:60
 msgid "**invalid**: This issue can not be confirmed or was reported in the wrong tracker."
 msgstr ""
+"**nieprawidłowy**: problemu nie można potwierdzić lub został zgłoszony w "
+"złym trackerze."
 
 #: ../../about/process/issue-tracking.rst:62
 msgid "**duplicate**: This has already been reported somewhere else. Please provide a link and close."
 msgstr ""
+"**duplikat**: Zostało to już zgłoszone w innym miejscu. Podaj link i zamknij."
 
 #: ../../about/process/issue-tracking.rst:64
 msgid "**help wanted**: This issue is ready to be picked up by a community developer."
 msgstr ""
+"**potrzebna pomoc**: ten problem jest gotowy do odebrania przez twórcę "
+"społeczności."
 
 #: ../../about/process/issue-tracking.rst:66
 msgid "**good first issue**: This issue is not critical and trivial to fix. It is reserved for new contributors as a place to start."
 msgstr ""
+"**dobry pierwszy problem**: ten problem nie jest krytyczny i łatwy do "
+"naprawienia. Jest zarezerwowany dla nowych współpracowników jako miejsce do "
+"rozpoczęcia."
 
 #: ../../about/process/issue-tracking.rst:68
 msgid "**wontfix**: It does not make sense to fix this bug, since it will probably resolve itself, it will be too much work to fix it, it's not fixable, or an underlying component will soon change."
 msgstr ""
+"**wontfix**: Naprawienie tego błędu nie ma sensu, ponieważ prawdopodobnie "
+"sam się rozwiąże, będzie to zbyt dużo pracy, aby go naprawić, nie da się go "
+"naprawić, lub wkrótce zmieni się element bazowy."
 
 #: ../../about/process/issue-tracking.rst:72
 msgid "Additional special labels can be defined. As an example, here's the labels used in the Ubuntu Touch tracker:"
 msgstr ""
+"Można zdefiniować dodatkowe etykiety specjalne. Oto przykład etykiet "
+"używanych w module do śledzenia Ubuntu Touch:"
 
 #: ../../about/process/issue-tracking.rst:75
 msgid "**critical (devel)**: This critical issue that only occurs on the devel channel is blocking the release of the next rc image."
 msgstr ""
+"**krytyczny (devel)**: To problem krytyczny, który występuje tylko w kanale "
+"devel, blokuje wydawanie następnego obrazu rc."
 
 #: ../../about/process/issue-tracking.rst:77
 msgid "**critical (rc)**: This critical issue that only occurs on the devel and rc channel is blocking the release of the next stable release. Usually, issues that can not simply be moved to a different release and have the power to postpone the release are labeled this."
 msgstr ""
+"**krytyczny (rc)**: To problem krytyczny, który występuje tylko w kanale "
+"devel i rc blokuje wydanie następnej stabilnej wersji. Zwykle problemy, "
+"które nie mogą być przeniesione do innej wersji i mają prawo do odroczenia "
+"wydania, są oznaczone etykietą."
 
 #: ../../about/process/issue-tracking.rst:81
 msgid "**device: [DEVICE CODENAME]**: This issue affects only the specified device(s)."
 msgstr ""
+"**urządzenie: [KOD NAZWY URZĄDZENIA]**: ten problem dotyczy tylko "
+"określonych urządzeń."
 
 #: ../../about/process/issue-tracking.rst:83
 msgid "**team: [TEAM NAME]**: This issue is falls under the responsibility of a specific team (hal, middleware, UI)."
 msgstr ""
+"**zespół: [NAZWA ZESPOŁU]**: ten problem leży w gestii określonego zespołu ("
+"hal, middleware, UI)."
 
 #: ../../about/process/issue-tracking.rst:86
 msgid "If a repository that tracks issues locally defines it's own labels, they should be documented in the README.md."
 msgstr ""
+"Jeśli repozytorium, które śledzi problemy lokalnie, definiuje własne "
+"etykiety, powinny być one udokumentowane w pliku README.md."
 
 #: ../../about/process/issue-tracking.rst:90
 msgid "Milestones"
-msgstr ""
+msgstr "Kamienie milowe"
 
 #: ../../about/process/issue-tracking.rst:92
 msgid "Milestones are used for stable OTA releases only. In general, milestones for the work-in-progress OTA and the next OTA are created. The ETA is set, once the work on the release starts (that is 6 weeks from start date), but can be adjusted afterwards. See the :doc:`release-schedule <release-schedule>` for more info."
 msgstr ""
+"Kamienie milowe są używane tylko do stabilnych wersji OTA. Ogólnie rzecz "
+"biorąc, powstają kamienie milowe dla pracującego w toku OTA i kolejnego OTA. "
+"ETA jest ustawiona, gdy rozpocznie się praca nad wydaniem (czyli 6 tygodni "
+"od daty rozpoczęcia), ale później można ją dostosować. Zobacz: doc: `release-"
+"schedule <release-schedule>`, aby uzyskać więcej informacji."
 
 #: ../../about/process/issue-tracking.rst:99
 msgid "Assignees"
-msgstr ""
+msgstr "Pełnomocnicy"
 
 #: ../../about/process/issue-tracking.rst:101
 msgid "To make it transparent who's working on an issue, the developer should be assigned. This also allows the use of GitHub's global filtering as a type of TODO list. For example, `this is everything assigned to mariogrip in @ubports <https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+org%3Aubports+assignee%3Amariogrip&type=>`_."
 msgstr ""
+"Aby było jasne, kto pracuje nad danym problemem, programista powinien zostać "
+"przypisany. Pozwala to również na wykorzystanie globalnego filtrowania "
+"GitHub jako typu listy TODO. Na przykład: \"to wszystko przypisane do "
+"mariogrip w @ubports <https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+or"
+"g%3Aubports+assignee%3Amariogrip&type=>` _."
 
 #: ../../about/process/issue-tracking.rst:105
 msgid "Developers are encouraged to keep their list short and update the status of their issues."
 msgstr ""
+"Programiści są zachęcani do trzymania listy skrótów i aktualizowania statusu "
+"swoich problemów."
 
 #: ../../about/process/issue-tracking.rst:108
 msgid "Examples"
-msgstr ""
+msgstr "Przykłady"
 
 #: ../../about/process/issue-tracking.rst:111
 msgid "Bug Lifecycle"
-msgstr ""
+msgstr "Cykl życia błędu"
 
 #: ../../about/process/issue-tracking.rst:114
 msgid "The same principle applies to feature requests. The only difference is, that instead of the label **bug**, the label **enhancement** is used. The **needs confirmation** label is not applicable for feature requests."
 msgstr ""
+"Ta sama zasada dotyczy zgłoszeń funkcji. Jedyna różnica polega na tym, że "
+"zamiast etykiety **błąd** używana jest etykieta **ulepszenie**. Etykieta **"
+"Potrzeba potwierdzenia** nie ma zastosowania w przypadku żądań funkcji."
 
 #: ../../about/process/issue-tracking.rst:118
 msgid "A *User* files a new bug using the issue-template."
-msgstr ""
+msgstr "*Użytkownik* zgłasza nowy błąd za pomocą szablonu problemu."
 
 #: ../../about/process/issue-tracking.rst:119
 msgid "The *QA-Team* adds the label **needs confirmation** and tries to work with the user to confirm the bug and add potentially missing information to the report. Once the report is complete a **team-label** will be added to the issue, the issue will be put on the **awaiting-triage-list** of the project and the label needs confirmation will be replaced with **bug**."
 msgstr ""
+"*Zespół QA* dodaje etykietę **Potrzeba potwierdzenia** i próbuje "
+"współpracować z użytkownikiem, aby potwierdzić błąd i dodać potencjalnie "
+"brakujące informacje do raportu. Po zakończeniu raportu do zgłoszenia "
+"zostanie dodana **etykieta zespołu**, problem zostanie umieszczony na liście "
+"**oczekujących na stan** projektu, a potwierdzenie potrzebnej etykiety "
+"zostanie zastąpione na **błąd**."
 
 #: ../../about/process/issue-tracking.rst:120
 msgid "The affected *Team* will triage the issue and either reject (label **wontfix**, close and remove from the project) or accept the issue. The team decides if it they will fix the issue in-house (move to \"Accepted\" and assign a team member) or wait for a community developer to pick it up (Label **help wanted**, remove from the project board and provide hints on how to resolve the issue and further details on the how the fix should be implemented if necessary). For non-critical issues that are trivial to fix, the label **good first issue** can be added as well."
 msgstr ""
+"*Zespół* dotknięty problemem oceni problem i odrzuci (etykieta ** wontfix **"
+", zamknij i usuń z projektu) lub zaakceptuje problem. Zespół decyduje, czy "
+"problem zostanie rozwiązany wewnętrznie (przejdź do \"Zaakceptowany\" i "
+"przypisz członka zespołu) lub poczekaj, aż deweloper społeczności go "
+"odbierze (etykieta **potrzebuje pomocy**, usuń z planszy projektu i podaj "
+"wskazówki, jak rozwiązać problem i dalsze szczegóły dotyczące tego, w jaki "
+"sposób poprawka powinna zostać wdrożona, jeśli to konieczne). W przypadku "
+"niekrytycznych problemów, które są łatwe do naprawienia, można dodać "
+"etykietę **dobry pierwszy problem**."
 
 #: ../../about/process/issue-tracking.rst:121
 msgid "Once a *developer* is assigned and starts working on the issue, it is moved to “In Development”. As soon as they have something to show for, the issue is closed and automatically moved to “Quality Assurance” for feedback from the QA team. If neccessary, the developer will provide hints on how to test his patch in a comment on the issue."
 msgstr ""
+"Po przypisaniu *programisty* i rozpoczęciu pracy nad problemem zostaje on "
+"przeniesiony do \"W rozwoju\". Gdy tylko mają coś do pokazania, problem "
+"zostaje zamknięty i automatycznie przeniesiony do \"Zapewnienia jakości\" w "
+"celu uzyskania opinii od zespołu ds. Kontroli jakości. Jeśli będzie to "
+"konieczne, programista przedstawi wskazówki dotyczące testowania łaty w "
+"komentarzu do problemu."
 
 #: ../../about/process/issue-tracking.rst:122
 msgid "The *QA-Team* tests the fix on all devices and provides feedback to the developer. If problems are found, the issue is re-opened and goes back to “Accepted”, else it’s moved to “Release Candidate” to be included in the next release."
 msgstr ""
+"*Zespół QA* testuje poprawkę na wszystkich urządzeniach i przekazuje "
+"informację zwrotną deweloperowi. Jeśli zostaną znalezione problemy, problem "
+"zostanie ponownie otwarty i wróci do \"Zaakceptowany\", w przeciwnym razie "
+"zostanie przeniesiony do \"Release Candidate\", aby dołączyć go do następnej "
+"wersji."
 
 #: ../../about/process/issue-tracking.rst:123
 msgid "If not done already, the issue is added to the next milestone. Once the milestone is released, the issue is removed from the project board."
 msgstr ""
+"Jeśli jeszcze nie zostało to zrobione, problem zostanie dodany do następnego "
+"etapu. Po zwolnieniu kamienia milowego problem zostaje usunięty z planszy "
+"projektu."
 
 #: ../../about/process/ppa.rst:2
 msgid "repo.ubports.com"
-msgstr ""
+msgstr "repo.ubports.com"
 
 #: ../../about/process/ppa.rst:4
 msgid "This is the package archive system for UBports projects. It hosts various PPAs containing all deb-components of Ubuntu Touch. New PPAs can be created dynamically by the CI server using a special :doc:`git-branch naming convention <branch-naming>`."
 msgstr ""
+"Jest to system archiwizacji pakietów dla projektów UBports. Obsługuje różne "
+"PPA zawierające wszystkie składniki deb-Ubuntu Touch. Nowe PPA mogą być "
+"tworzone dynamicznie przez serwer CI za pomocą specjalnej: doc: `konwencja "
+"nazewnictwa gałęzi git <nazewnictwo gałęzi>."
 
 #: ../../about/process/ppa.rst:6
 msgid "The name of the branch translates literally to the name of the PPA: ``http://repo.ubports.com/dists/[branch name]``"
 msgstr ""
+"Nazwa oddziału tłumaczy dosłownie na nazwę PPA: `` "
+"http://repo.ubports.com/dists/[nazwa oddziału]``"
 
 #: ../../about/process/ppa.rst:8
 msgid "Non-standard PPAs (i.e. not ``xenial``, ``vivid`` or ``bionic``) are kept for three months. In case they need to be kept for a longer time, a file with the name ``ubports.keep`` can be created in the root of the repository, containing the date until which the PPA shall be kept open in the form of **YYYY-MM-dd**. If this file is empty, the PPA will be kept for two years after the last build."
 msgstr ""
+"Niestandardowe PPA (tj. Nie `` xenial``, `` vivid`` lub `` bionic``) są "
+"przechowywane przez trzy miesiące. Jeśli muszą być przechowywane przez "
+"dłuższy czas, plik z nazwą \"ubports.keep\" można utworzyć w katalogu "
+"głównym repozytorium, zawierający datę, do której PPA pozostanie otwarty w "
+"formie **RRRR-MM-dd**. Jeśli ten plik jest pusty, PPA będzie przechowywane "
+"przez dwa lata po ostatniej kompilacji."
 
 #: ../../about/process/release-schedule.rst:2
 msgid "Release Schedule"
-msgstr ""
+msgstr "Harmonogram wydania"
 
 #: ../../about/process/release-schedule.rst:4
 msgid "OTA updates usually follow this rhythm:"
-msgstr ""
+msgstr "Aktualizacje OTA zazwyczaj podążają za tym rytmem:"
 
 #: ../../about/process/release-schedule.rst:6
 msgid "devel: daily builds"
-msgstr ""
+msgstr "devel: codzienne kompilacje"
 
 #: ../../about/process/release-schedule.rst:7
 msgid "rc: weekly if no critical issue exists in the devel channel"
-msgstr ""
+msgstr "rc: co tydzień, jeśli nie ma krytycznego problemu w kanale devel"
 
 #: ../../about/process/release-schedule.rst:8
 msgid "stable: every six through eight weeks, if no critical issue exists in the rc channel"
 msgstr ""
+"stabilny: co sześć do ośmiu tygodni, jeśli nie ma krytycznego problemu w "
+"kanale rc"
 
 #: ../../about/process/release-schedule.rst:11
 msgid "This is not a definitive cycle. Stable releases are ready when they're ready and should not introduce new bugs or ship very incomplete features. Since the OTA update can not be released before all critical issues are closed, the ETA might have to be moved by making an educated guess for when all the issues can be handled. If there are too many issues added to a milestone, they are either removed or added to the next milestone."
 msgstr ""
+"To nie jest ostateczny cykl. Wersje stabilne są gotowe, gdy są gotowe i nie "
+"powinny wprowadzać nowych błędów lub dostarczać bardzo niekompletnych "
+"funkcji. Ponieważ aktualizacja OTA nie może zostać wydana przed zamknięciem "
+"wszystkich krytycznych problemów, ETA może wymagać przeniesienia, dokonując "
+"świadomego przypuszczenia, kiedy wszystkie problemy mogą zostać obsłużone. "
+"Jeśli do punktu kontrolnego dodano zbyt wiele problemów, zostaną one "
+"usunięte lub dodane do następnego etapu."
