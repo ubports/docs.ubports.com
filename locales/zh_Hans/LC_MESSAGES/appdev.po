@@ -7,19 +7,20 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-02 15:42-0500\n"
-"PO-Revision-Date: 2018-06-30 19:00+0800\n"
+"PO-Revision-Date: 2018-07-02 20:38+0800\n"
 "Last-Translator: Luo Yufan <njlyf2011@hotmail.com>\n"
-"Language-Team: none\n"
+"Language-Team: Chinese (Simplified) <https://translate.ubports.com/projects"
+"/ubports-docs/documentation-appdev/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.0.8\n"
 
 #: ../../appdev/cookbook.rst:2
 msgid "App development cookbook"
-msgstr ""
+msgstr "应用开发指南"
 
 #: ../../appdev/cookbook.rst:5
 msgid "Unofficial resources"
@@ -27,11 +28,13 @@ msgstr "非官方资源"
 
 #: ../../appdev/cookbook.rst:7
 msgid "In this section you will find links to external resources about creating applications for Ubuntu Touch."
-msgstr ""
+msgstr "在本节中，您将找到有关为 Ubuntu Touch 创建应用程序的外部资源的链接。"
 
 #: ../../appdev/cookbook.rst:9
 msgid "`Ubuntu Touch programming book <https://www.gitbook.com/book/mimecar/ubuntu-touch-programming-course/details>`__"
 msgstr ""
+"`Ubuntu Touch 编程手册 <https://www.gitbook.com/book/mimecar/ubuntu-touch-"
+"programming-course/details>`__"
 
 #: ../../appdev/cookbook.rst:12
 msgid "Playground"
@@ -171,7 +174,7 @@ msgstr "audio：可播放音乐"
 
 #: ../../appdev/index.rst:91
 msgid "camera: Can access the camera(s)"
-msgstr ""
+msgstr "camera：可访问的相机"
 
 #: ../../appdev/index.rst:92
 msgid "connectivity: Can access coarse network connectivity information"
@@ -195,7 +198,7 @@ msgstr "location：可访问地理位置"
 
 #: ../../appdev/index.rst:97
 msgid "microphone: Can access the microphone"
-msgstr ""
+msgstr "microphone：可访问的麦克风"
 
 #: ../../appdev/index.rst:98
 msgid "networking: Can access the network"
@@ -267,7 +270,7 @@ msgstr ""
 
 #: ../../appdev/index.rst:131
 msgid "Getting started"
-msgstr ""
+msgstr "入门"
 
 #: ../../appdev/index.rst:133
 msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ is a meta-build system for Ubuntu Touch applications that allows you to compile, build, test and publish `click` packages and provides various templates to get you started with UT app developpment. It is currently the easiest and most convenient way of building click packages for Ubuntu Touch. Also, looking at existing published app source code is a good way to learn: `see openstore <https://open-store.io>`_"
@@ -275,7 +278,7 @@ msgstr ""
 
 #: ../../appdev/index.rst:138
 msgid "Ubuntu UI-Toolkit"
-msgstr ""
+msgstr "Ubuntu UI-Toolkit"
 
 #: ../../appdev/index.rst:140
 msgid "Here you can find `the API documentation <https://api-docs.ubports.com/>`_ for the Ubuntu UI toolkit."
@@ -295,7 +298,7 @@ msgstr ""
 
 #: ../../appdev/index.rst:147
 msgid "Ubuntu SDK IDE (unsupported)"
-msgstr ""
+msgstr "Ubuntu SDK IDE (不支持）"
 
 #: ../../appdev/index.rst:149
 msgid "The `Ubuntu SDK IDE <https://docs.ubuntu.com/phone/en/platform/sdk>`__ is no longer supported by Canonical, and UBports does not currently have the the time and manpower to get it to a working state."
@@ -307,7 +310,7 @@ msgstr ""
 
 #: ../../appdev/index.rst:163
 msgid "Cookbook"
-msgstr ""
+msgstr "指南"
 
 #: ../../appdev/index.rst:165
 msgid "A collection of external resources"
@@ -334,7 +337,7 @@ msgstr ""
 #: ../../appdev/index.rst:198
 #: ../../appdev/nativeapp/index.rst:2
 msgid "Native applications"
-msgstr ""
+msgstr "本地应用程序"
 
 #: ../../appdev/system-software.rst:4
 msgid "In this page you'll find information on how to develop system software, including how to build it, cross-compile it and make it available to other users. Most of the software preinstalled in your Ubports device is shipped in the device image in the form of a Debian package. This format is used by several Linux distributions (such as Debian, Ubuntu, Mint) and `plenty of documentation <https://www.debian.org/doc/manuals/maint-guide/index.en.html>`__ is available out there on how to work with it, so we won't be covering it here. Besides, in most cases you'll find yourself in need of modifying existing software, rather than developing new packages from scratch; for this reason, this guide is mostly about recompiling an existing Ubports package."
@@ -346,7 +349,7 @@ msgstr ""
 
 #: ../../appdev/system-software.rst:25
 msgid "Building on the device itself"
-msgstr ""
+msgstr "在设备中构建"
 
 #: ../../appdev/system-software.rst:27
 msgid "This is the fastest and simplest method to develop small changes and test them in nearly real-time. Depending on your device resources, however, it might not be possible to follow this path: if you don't have enough free space in your root filesystem you won't be able to install all the package build dependencies; or, your device's RAM might not be enough for the compiler. Assuming that you are lucky enough not to run into these restrictions, and that you don't mind reflashing your device afterwards (to clear it from all the development packages you installed), please read on."
@@ -633,7 +636,7 @@ msgstr ""
 
 #: ../../appdev/webapp/guide.rst:114
 msgid "Adding https"
-msgstr ""
+msgstr "添加 https"
 
 #: ../../appdev/webapp/guide.rst:116
 msgid "Sometimes a site uses https for some of its URLs. Here is an example that allows https and https as access within the webapp to www.launchpad.net (and all subpages due to the wildcard):::"
