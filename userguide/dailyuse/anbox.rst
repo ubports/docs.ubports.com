@@ -48,6 +48,17 @@ How to install
 
 - Done! Select "Anbox" in the apps scope to use android applications. You might have to refresh the apps scope (pull down from the center of the screen and release) for the app to show up.
 
+How to install new apks
+-----------------------
+
+- Copy the apk to `/home/phablet/anbox-data/data`
+- Login to android container on your phone
+
+    lxc-console -ndefault -P /home/phablet/anbox-data/containers -t0
+
+- cd into `data/` 
+- install the apk by using `pm install [appname].apk`
+
 Reporting bugs
 --------------
 
