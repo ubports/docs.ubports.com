@@ -84,23 +84,13 @@ Example ``apparmor.json`` file::
 
     }
 
-Non exhaustive policy groups:
+For a full list of available policy groups, see :doc:`apparmor`.
 
-- accounts: Can use Online Accounts
-- audio: Can play audio
-- camera: Can access the camera(s)
-- connectivity: Can access coarse network connectivity information
-- content_exchange: Can request/import data from other applications
-- content_exchange_source: Can provide/export data to other applications
-- keep-display-on: Can request keeping the screen on (available since 15.04, OTA 5)
-- location: Can access Location
-- microphone: Can access the microphone
-- networking: Can access the network
-- push-notification-client: Can use push notifications as a client
-- sensors: Can access the sensors
-- usermetrics: Can use UserMetrics to update the InfoGraphic
-- video: Can play video
-- webview: Can use the UbuntuWebview
+.. toctree::
+    :maxdepth: 1
+    :name: toc-apparmor
+
+    apparmor
 
 
 Ubuntu Touch platform
@@ -159,17 +149,6 @@ It can still be installed in Ubuntu 16.04, but issues are expected.
     sudo apt install ubuntu-sdk
     sudo reboot # or logout/login
 
-Cookbook
---------
-
-A collection of external resources
-
-.. toctree::
-    :maxdepth: 1
-    :name: toc-appdev-cookbook
-
-    cookbook
-
 System Software
 ---------------
 
@@ -184,15 +163,13 @@ Working on system components
 Web applications
 ----------------
 
-Ubuntu webapps are web-hosted sites displayed inside an Ubuntu app container. They are true apps that users install, see, launch and use. But their content is provided through URLs.
+Ubuntu webapps are web-hosted sites displayed inside an Ubuntu app container. They are true apps that users install, see, launch and use, but their content is provided through URLs.
 
 .. toctree::
     :maxdepth: 1
     :name: toc-webapps
 
     webapp/index
-
-
 
 Native applications
 -------------------
@@ -202,3 +179,14 @@ Native applications
     :name: toc-nativeapp
 
     nativeapp/index
+
+Cookbook
+--------
+
+A collection of external resources
+
+.. toctree::
+    :maxdepth: 1
+    :name: toc-appdev-cookbook
+
+    cookbook
