@@ -115,7 +115,7 @@ The content_exchange_source policy allows your app to provide content on content
 debug
 -----
 
-Description: Use special debugging tools. This should only be used in development and not for production packages. Note: use of this policy group rovides significantly different confinement than normal and is not considered secure. You should never run untrusted programs using this policy group.
+Description: Use special debugging tools. This should only be used in development and not for production packages. Note: use of this policy group provides significantly different confinement than normal and is not considered secure. You should never run untrusted programs using this policy group.
 
 Usage: reserved
 
@@ -190,7 +190,7 @@ Description: Can read all music files. This policy group is reserved for certain
 
 Usage: reserved
 
-The music_files policy group allows an app to read the Music directories in the user's home folder or on external media.
+The music_files_read policy group allows an app to read the Music directories in the user's home folder or on external media.
 
 
 networking
@@ -210,7 +210,7 @@ Description: Can read and write to picture files. This policy group is reserved 
 
 Usage: reserved
 
-The music_files policy group allows an app to read and write to the Pictures directories in the user's home folder or on external media.
+The picture_files policy group allows an app to read and write to the Pictures directories in the user's home folder or on external media.
 
 
 picture_files_read
@@ -220,7 +220,7 @@ Description: Can read all picture files. This policy group is reserved for certa
 
 Usage: reserved
 
-The music_files policy group allows an app to read the Pictures directories in the user's home folder or on external media.
+The picture_files_read policy group allows an app to read the Pictures directories in the user's home folder or on external media.
 
 
 push-notification-client
@@ -260,23 +260,23 @@ Usage: common
 
 
 video_files
--------------
+-----------
 
 Description: Can read and write to video files. This policy group is reserved for certain applications, such as gallery applications. Developers should typically use the content_exchange policy group and API to access video files instead.
 
 Usage: reserved
 
-The music_files policy group allows an app to read and write to the Videos directories in the user's home folder or on external media.
+The video_files policy group allows an app to read and write to the Videos directories in the user's home folder or on external media.
 
 
 video_files_read
-------------------
+----------------
 
 Description: Can read all video files. This policy group is reserved for certain applications, such as gallery applications. Developers should typically use the content_exchange policy group and API to access video files instead.
 
 Usage: reserved
 
-The music_files policy group allows an app to read the Videos directories in the user's home folder or on external media.
+The video_files_read policy group allows an app to read the Videos directories in the user's home folder or on external media.
 
 
 webview
