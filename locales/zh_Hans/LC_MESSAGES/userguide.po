@@ -7,15 +7,16 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-02 15:42-0500\n"
-"PO-Revision-Date: 2018-07-01 16:54+0800\n"
-"Last-Translator: Luo Yufan <njlyf2011@hotmail.com>\n"
-"Language-Team: \n"
+"PO-Revision-Date: 2018-07-06 07:34+0000\n"
+"Last-Translator: Kevin.MX <aaawqw@live.cn>\n"
+"Language-Team: Chinese (Simplified) <https://translate.ubports.com/projects"
+"/ubports-docs/documentation-userguide/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.0.8\n"
+"X-Generator: Weblate 2.15\n"
 
 #: ../../userguide/advanceduse/adb.rst:2
 msgid "Shell access via adb"
@@ -108,31 +109,44 @@ msgstr "Oneplus One::"
 
 #: ../../userguide/advanceduse/dav.rst:2
 msgid "CalDAV and CardDAV synchronization"
-msgstr ""
+msgstr "CallDAV和CardDAV同步"
 
 #: ../../userguide/advanceduse/dav.rst:4
 msgid "CalDAV and CardDAV are protocols to syncronize calendars and contacts with a remote server. Many email-hosters provide a CalDAV and CardDAV interface."
-msgstr ""
+msgstr "CalDAV和CardDAV是使用远程服务器进行同步日历、联系人的协议。许多邮件服务商都提供CalDAV和CardDAV的接口。"
 
 #: ../../userguide/advanceduse/dav.rst:6
+#, fuzzy
 msgid "**Note:** CalDAV Sync can also be set up in using the calendar app. Open the app, click on the little calendar icon in the top right corner and select \"Add internet calendar > Generic CalDAV\". Enter your calendar URL as well as your username and password to complete the process."
 msgstr ""
+"**注意：**CalDAV同步也能在日历应用中进行设置。打开日历应用，在右上角的日历的小图标上点击，并选择“添加互联网日历 > 通用 "
+"CalDAV”。输入你的日历URL、用户名和密码来完成此操作。"
 
 #: ../../userguide/advanceduse/dav.rst:8
+#, fuzzy
 msgid "At the moment, there is no carddav implemention directly accessible from the Ubuntu Touch graphical user-interface, so the only way to sync carddav is by using syncevolution + cron. However, there is a simple way to do that with a script that you can run in the terminal or via phablet SSH connection. These instructions work for caldav as well."
 msgstr ""
+"目前，还没有能在Ubuntu Touch上实现直接访问CardDAV的图形用户界面，因此唯一能同步CardDAV的方式是使用syncevolution+c"
+"ron。但是，还有一个简单的方式，就是在终端中或者通过SSH连接来运行一个脚本。这种方法同步CalDAV还算不错。"
 
 #: ../../userguide/advanceduse/dav.rst:10
 msgid "Follow this `guide <https://docs.ubports.com/en/latest/userguide/advanceduse/adb.html>`_ to activate Developer Mode and ADB (or SSH) connection."
 msgstr ""
+"可以借助这个 `教程 <https://docs.ubports.com/en/latest/userguide/advanceduse/adb.html"
+">`_来启用开发者模式和ADB（或者SSH）连接。"
 
 #: ../../userguide/advanceduse/dav.rst:13
 msgid "Download this `script <https://gist.github.com/bastos77/0c47a94dd0bf3e394f879c0ff42b7839>`_ (let's call it dav.sh) and edit the following variables:"
 msgstr ""
+"下载这个`脚本 <https://gist.github.com/bastos77/0c47a94dd0bf3e394f879c0ff42b7839>`"
+"_ (我们将其命名为 dav.sh) 并编辑以下变量："
 
 #: ../../userguide/advanceduse/dav.rst:15
+#, fuzzy
 msgid "server side : CAL_URL, **CONTACTS_URL**, USERNAME, PASSWORD (of your ownCloud/nextCloud/baikal/SOGO/... server)"
 msgstr ""
+"server 部分 : CAL_URL, **CONTACTS_URL**, USERNAME, PASSWORD (你的 "
+"ownCloud/nextCloud/baikal/SOGO/其他服务器)"
 
 #: ../../userguide/advanceduse/dav.rst:16
 msgid "CONTACT and CALENDAR _ NAME / VISUAL_NAME / CONFIG_NAME (it's more cosmetic)"
@@ -140,19 +154,21 @@ msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:17
 msgid "CRON_FREQUENCY (for the frequency of synchronisation)"
-msgstr ""
+msgstr "CRON_FREQUENCY (同步频率)"
 
 #: ../../userguide/advanceduse/dav.rst:18
 msgid "Line 61: write ``sudo sh -c \"echo '$COMMAND_LINE' > /sbin/sogosync\"`` , instead of ``sudo echo \"$COMMAND_LINE\" > /sbin/sogosync``, to avoid permission denied error"
 msgstr ""
+"第61行：用 ``sudo sh -c \"echo '$COMMAND_LINE' > /sbin/sogosync\"`` , 替换``sudo "
+"echo \"$COMMAND_LINE\" > /sbin/sogosync``, 以避免权限不足的错误"
 
 #: ../../userguide/advanceduse/dav.rst:20
 msgid "Move the file to your UbuntuTouch device, either by file manager or with adb::"
-msgstr ""
+msgstr "将文件移动到你的Ubuntu Touch设备，用文件管理器或者adb::"
 
 #: ../../userguide/advanceduse/dav.rst:24
 msgid "Connect with the phablet shell (``adb shell``) or directly on the phone Terminal app and type the following::"
-msgstr ""
+msgstr "将手机连接至shell (``adb shell``)或者直接使用手机端的终端，并输入以下内容::"
 
 #: ../../userguide/advanceduse/dav.rst:31
 msgid "Sources:"
@@ -186,23 +202,26 @@ msgstr "高级使用"
 
 #: ../../userguide/advanceduse/index.rst:4
 msgid "This section of the documentation details advanced tasks that power users may want to perform on their Ubuntu Touch device."
-msgstr ""
+msgstr "本文档的这一部分详细介绍了高级用户可能希望在其Ubuntu Touch设备上执行的高级任务。"
 
 #: ../../userguide/advanceduse/index.rst:7
 msgid "Some of these guides involve making your system image writable, which may break OTA updates. The guides may also reduce the overall security of your Ubuntu Touch device. Please consider these ramifications before hacking on your device too much!"
-msgstr ""
+msgstr "有些指南可能会使您的系统镜像可写入，这可能破坏OTA升级。这些指南也可能削弱您的Ubuntu Touch设备的整体安全性。在您玩机之前请三思！"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:2
+#, fuzzy
 msgid "Reverse tethering"
-msgstr ""
+msgstr "反向绑定"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:4
 msgid "Some users may not have an available wifi connection for their phone nor a data subscription from their mobile provider. This short tutorial will help you to connect your Ubuntu Touch to your computer to access internet."
 msgstr ""
+"某些用户可能没有可用的WiFi连接或者来自他们的移动运营商的数据网络连接。以下的小教程会帮助你将你的Ubuntu "
+"Touch设备连接至你的计算机来访问互联网。"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:7
 msgid "Prerequisite: Phone is connected to the computer with usb and developer mode enabled."
-msgstr ""
+msgstr "前提：手机已通过USB连接至计算机，并且启用了开发者模式。"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:10
 msgid "Steps"
@@ -214,7 +233,7 @@ msgstr "手机端：``android-gadget-service enable rndis``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:14
 msgid "On computer: get your rndis ip address e.g:``hostname -I``"
-msgstr "电脑端：get your rndis ip address e.g:``hostname -I``"
+msgstr "电脑端：获取你的RNDIS IP地址，比如：``hostname -I``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:16
 msgid "On phone:"
