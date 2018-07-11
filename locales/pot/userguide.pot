@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-02 15:42-0500\n"
+"POT-Creation-Date: 2018-07-11 15:02-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -467,10 +467,34 @@ msgid "Done! Select \"Anbox\" in the apps scope to use android applications. You
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:52
-msgid "Reporting bugs"
+msgid "How to install new apks"
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:54
+msgid "Copy the apk to `/home/phablet/anbox-data/data`"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:55
+msgid "Login to android container on your phone"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:57
+msgid "lxc-console -ndefault -P /home/phablet/anbox-data/containers -t0"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:59
+msgid "cd into `data/`"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:60
+msgid "install the apk by using `pm install [appname].apk`"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:63
+msgid "Reporting bugs"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:65
 msgid "Please :doc:`report any bugs </contribute/bugreporting>` you come accross. Bugs with Ubuntu Touch 16.04 are reported in `the normal Ubuntu Touch tracker <https://github.com/ubports/ubuntu-touch/issues>`_ and issues with anbox are reported on `our downstream fork <https://github.com/ubports/anbox/issues>`_. Thank you!"
 msgstr ""
 
