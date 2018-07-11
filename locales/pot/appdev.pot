@@ -8,13 +8,379 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-02 15:42-0500\n"
+"POT-Creation-Date: 2018-07-11 15:02-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: ../../appdev/apparmor.rst:2
+msgid "AppArmor Policy Groups"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:4
+msgid "This document contains a full list of Ubuntu Touch's available policy groups and a description of what they give your app permission to access."
+msgstr ""
+
+#: ../../appdev/apparmor.rst:6
+msgid "Each entry follows this format"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:21
+msgid "Policy usage affects whether your app will be accepted by the OpenStore. Apps containing policies with common usage are generally accepted immediately, while reserved usage policies will need to be manually reviewed."
+msgstr ""
+
+#: ../../appdev/apparmor.rst:24
+msgid "accounts"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:26
+msgid "Description: Can use Online Accounts."
+msgstr ""
+
+#: ../../appdev/apparmor.rst:28
+#: ../../appdev/apparmor.rst:38
+#: ../../appdev/apparmor.rst:70
+#: ../../appdev/apparmor.rst:80
+#: ../../appdev/apparmor.rst:100
+#: ../../appdev/apparmor.rst:110
+#: ../../appdev/apparmor.rst:155
+#: ../../appdev/apparmor.rst:163
+#: ../../appdev/apparmor.rst:173
+#: ../../appdev/apparmor.rst:201
+#: ../../appdev/apparmor.rst:231
+#: ../../appdev/apparmor.rst:239
+#: ../../appdev/apparmor.rst:249
+#: ../../appdev/apparmor.rst:259
+#: ../../appdev/apparmor.rst:287
+msgid "Usage: common"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:30
+msgid "The accounts policy gives your app the permissions it needs to access the `Online Accounts API`_."
+msgstr ""
+
+#: ../../appdev/apparmor.rst:34
+msgid "audio"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:36
+msgid "Description: Can play audio (allows playing remote content via media-hub)"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:40
+msgid "The audio policy is needed for your app to play audio via pulseaudio or media-hub. The permission also gives it the ability to send album art to the thumbnailer service, which is then shown on the sound indicator."
+msgstr ""
+
+#: ../../appdev/apparmor.rst:44
+msgid "bluetooth"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:46
+msgid "Description: Use bluetooth (bluez5) as an administrator."
+msgstr ""
+
+#: ../../appdev/apparmor.rst:48
+#: ../../appdev/apparmor.rst:58
+#: ../../appdev/apparmor.rst:90
+#: ../../appdev/apparmor.rst:120
+#: ../../appdev/apparmor.rst:128
+#: ../../appdev/apparmor.rst:137
+#: ../../appdev/apparmor.rst:147
+#: ../../appdev/apparmor.rst:181
+#: ../../appdev/apparmor.rst:191
+#: ../../appdev/apparmor.rst:211
+#: ../../appdev/apparmor.rst:221
+#: ../../appdev/apparmor.rst:267
+#: ../../appdev/apparmor.rst:277
+msgid "Usage: reserved"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:50
+msgid "This policy grants unrestricted access to Bluetooth devices. It is provided for administration of bluetooth and as a stepping stone towards developing a safe bluetooth API all apps can access."
+msgstr ""
+
+#: ../../appdev/apparmor.rst:54
+msgid "calendar"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:56
+msgid "Description: Can access the calendar."
+msgstr ""
+
+#: ../../appdev/apparmor.rst:60
+msgid "Calendar grants access to the Evolution dataserver's calendar and alarms APIs. It also grants access to sync-monitor."
+msgstr ""
+
+#: ../../appdev/apparmor.rst:62
+msgid "This policy is reserved since it grants free access to all calendars on the device at any time. The legacy bug about this situation is `LP #1227824`_ ."
+msgstr ""
+
+#: ../../appdev/apparmor.rst:66
+msgid "camera"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:68
+msgid "Description: Can access the camera(s)"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:72
+msgid "The camera policy grants access to device cameras."
+msgstr ""
+
+#: ../../appdev/apparmor.rst:76
+msgid "connectivity"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:78
+msgid "Description: Can access coarse network connectivity information"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:82
+msgid "The connectivity policy allows apps to determine rough information about the device's connectivity. This includes whether the device is connected to the Internet and whether it is connected via a Wi-Fi or mobile data connection."
+msgstr ""
+
+#: ../../appdev/apparmor.rst:86
+msgid "contacts"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:88
+msgid "Description: Can access contacts."
+msgstr ""
+
+#: ../../appdev/apparmor.rst:92
+msgid "The contacts policy allows apps to access the device user's contacts list. It is marked as reserved because it allows access to sync-monitor and unfettered access to the address book."
+msgstr ""
+
+#: ../../appdev/apparmor.rst:96
+msgid "content_exchange"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:98
+msgid "Description: Can request/import data from other applications"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:102
+msgid "Using the content_exchange policy allows your app to be a consumer of content on content-hub."
+msgstr ""
+
+#: ../../appdev/apparmor.rst:106
+msgid "content_exchange_source"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:108
+msgid "Description: Can provide/export data to other applications"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:112
+msgid "The content_exchange_source policy allows your app to provide content on content-hub."
+msgstr ""
+
+#: ../../appdev/apparmor.rst:116
+msgid "debug"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:118
+msgid "Description: Use special debugging tools. This should only be used in development and not for production packages. Note: use of this policy group provides significantly different confinement than normal and is not considered secure. You should never run untrusted programs using this policy group."
+msgstr ""
+
+#: ../../appdev/apparmor.rst:124
+msgid "document_files"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:126
+msgid "Description: Can read and write to document files. This policy group is reserved for certain applications, such as document viewers. Developers should typically use the content_exchange policy group and API to access document files instead."
+msgstr ""
+
+#: ../../appdev/apparmor.rst:130
+msgid "This policy allows apps to read and write to the \"Documents\" folders in the user's home directory and external media."
+msgstr ""
+
+#: ../../appdev/apparmor.rst:133
+msgid "document_files_read"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:135
+msgid "Description: Can read all document files. This policy group is reserved for certain applications, such as document viewers. Developers should typically use the content_exchange policy group and API to access document files instead."
+msgstr ""
+
+#: ../../appdev/apparmor.rst:139
+msgid "This policy allows apps to read the \"Documents\" folders in the user's home directory and external media."
+msgstr ""
+
+#: ../../appdev/apparmor.rst:143
+msgid "history"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:145
+msgid "Description: Can access the history-service. This policy group is reserved for vetted applications only in this version of the policy. A future version of the policy may move this out of reserved status."
+msgstr ""
+
+#: ../../appdev/apparmor.rst:151
+msgid "keep-display-on"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:153
+msgid "Description: Can request keeping the screen on"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:159
+msgid "location"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:161
+msgid "Description: Can access Location"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:165
+msgid "Allows an app to request access to the device's current location."
+msgstr ""
+
+#: ../../appdev/apparmor.rst:169
+msgid "microphone"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:171
+msgid "Description: Can access the microphone"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:177
+msgid "music_files"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:179
+msgid "Description: Can read and write to music files. This policy group is reserved for certain applications, such as music players. Developers should typically use the content_exchange policy group and API to access music files instead."
+msgstr ""
+
+#: ../../appdev/apparmor.rst:183
+msgid "The music_files policy group allows an app to read or write to the Music directories in the user's home folder or on external media."
+msgstr ""
+
+#: ../../appdev/apparmor.rst:187
+msgid "music_files_read"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:189
+msgid "Description: Can read all music files. This policy group is reserved for certain applications, such as music players. Developers should typically use the content_exchange policy group and API to access music files instead."
+msgstr ""
+
+#: ../../appdev/apparmor.rst:193
+msgid "The music_files_read policy group allows an app to read the Music directories in the user's home folder or on external media."
+msgstr ""
+
+#: ../../appdev/apparmor.rst:197
+msgid "networking"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:199
+msgid "Description: Can access the network"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:203
+msgid "The networking policy group allows an app to contact network devices and use the `download manager`_."
+msgstr ""
+
+#: ../../appdev/apparmor.rst:207
+msgid "picture_files"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:209
+msgid "Description: Can read and write to picture files. This policy group is reserved for certain applications, such as gallery applications. Developers should typically use the content_exchange policy group and API to access picture files instead."
+msgstr ""
+
+#: ../../appdev/apparmor.rst:213
+msgid "The picture_files policy group allows an app to read and write to the Pictures directories in the user's home folder or on external media."
+msgstr ""
+
+#: ../../appdev/apparmor.rst:217
+msgid "picture_files_read"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:219
+msgid "Description: Can read all picture files. This policy group is reserved for certain applications, such as gallery applications. Developers should typically use the content_exchange policy group and API to access picture files instead."
+msgstr ""
+
+#: ../../appdev/apparmor.rst:223
+msgid "The picture_files_read policy group allows an app to read the Pictures directories in the user's home folder or on external media."
+msgstr ""
+
+#: ../../appdev/apparmor.rst:227
+msgid "push-notification-client"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:229
+msgid "Description: Can use push notifications as a client"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:235
+msgid "sensors"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:237
+msgid "Description: Can access the sensors"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:241
+msgid "Allows apps to access `device sensors`_"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:245
+msgid "usermetrics"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:247
+msgid "Description: Can use UserMetrics to update the InfoGraphic"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:251
+msgid "Allows an app to write metrics to the UserMetrics service so they can be displayed on the InfoGraphic."
+msgstr ""
+
+#: ../../appdev/apparmor.rst:255
+msgid "video"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:257
+msgid "Description: Can play video (allows playing remote content via media-hub)"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:263
+msgid "video_files"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:265
+msgid "Description: Can read and write to video files. This policy group is reserved for certain applications, such as gallery applications. Developers should typically use the content_exchange policy group and API to access video files instead."
+msgstr ""
+
+#: ../../appdev/apparmor.rst:269
+msgid "The video_files policy group allows an app to read and write to the Videos directories in the user's home folder or on external media."
+msgstr ""
+
+#: ../../appdev/apparmor.rst:273
+msgid "video_files_read"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:275
+msgid "Description: Can read all video files. This policy group is reserved for certain applications, such as gallery applications. Developers should typically use the content_exchange policy group and API to access video files instead."
+msgstr ""
+
+#: ../../appdev/apparmor.rst:279
+msgid "The video_files_read policy group allows an app to read the Videos directories in the user's home folder or on external media."
+msgstr ""
+
+#: ../../appdev/apparmor.rst:283
+msgid "webview"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:285
+msgid "Description: Can use the UbuntuWebview"
+msgstr ""
+
+#: ../../appdev/apparmor.rst:289
+msgid "The webview policy group allows apps to embed a `web browser view`_."
+msgstr ""
 
 #: ../../appdev/cookbook.rst:2
 msgid "App development cookbook"
@@ -157,182 +523,122 @@ msgid "Example ``apparmor.json`` file::"
 msgstr ""
 
 #: ../../appdev/index.rst:87
-msgid "Non exhaustive policy groups:"
-msgstr ""
-
-#: ../../appdev/index.rst:89
-msgid "accounts: Can use Online Accounts"
-msgstr ""
-
-#: ../../appdev/index.rst:90
-msgid "audio: Can play audio"
-msgstr ""
-
-#: ../../appdev/index.rst:91
-msgid "camera: Can access the camera(s)"
-msgstr ""
-
-#: ../../appdev/index.rst:92
-msgid "connectivity: Can access coarse network connectivity information"
-msgstr ""
-
-#: ../../appdev/index.rst:93
-msgid "content_exchange: Can request/import data from other applications"
-msgstr ""
-
-#: ../../appdev/index.rst:94
-msgid "content_exchange_source: Can provide/export data to other applications"
-msgstr ""
-
-#: ../../appdev/index.rst:95
-msgid "keep-display-on: Can request keeping the screen on (available since 15.04, OTA 5)"
-msgstr ""
-
-#: ../../appdev/index.rst:96
-msgid "location: Can access Location"
+msgid "For a full list of available policy groups, see :doc:`apparmor`."
 msgstr ""
 
 #: ../../appdev/index.rst:97
-msgid "microphone: Can access the microphone"
-msgstr ""
-
-#: ../../appdev/index.rst:98
-msgid "networking: Can access the network"
-msgstr ""
-
-#: ../../appdev/index.rst:99
-msgid "push-notification-client: Can use push notifications as a client"
-msgstr ""
-
-#: ../../appdev/index.rst:100
-msgid "sensors: Can access the sensors"
-msgstr ""
-
-#: ../../appdev/index.rst:101
-msgid "usermetrics: Can use UserMetrics to update the InfoGraphic"
-msgstr ""
-
-#: ../../appdev/index.rst:102
-msgid "video: Can play video"
-msgstr ""
-
-#: ../../appdev/index.rst:103
-msgid "webview: Can use the UbuntuWebview"
-msgstr ""
-
-#: ../../appdev/index.rst:107
 msgid "Ubuntu Touch platform"
 msgstr ""
 
-#: ../../appdev/index.rst:109
+#: ../../appdev/index.rst:99
 msgid "Platform key notes:"
 msgstr ""
 
-#: ../../appdev/index.rst:112
+#: ../../appdev/index.rst:102
 msgid "Content Hub"
 msgstr ""
 
-#: ../../appdev/index.rst:112
+#: ../../appdev/index.rst:102
 msgid "Each application can expose content outside its sandbox, giving the user precise control over what can be imported, exported or shared with the world and other apps."
 msgstr ""
 
-#: ../../appdev/index.rst:115
+#: ../../appdev/index.rst:105
 msgid "Push notifications"
 msgstr ""
 
-#: ../../appdev/index.rst:115
+#: ../../appdev/index.rst:105
 msgid "By using a push server and a companion client, instantly serve users with the latest information from their network and apps."
 msgstr ""
 
-#: ../../appdev/index.rst:118
+#: ../../appdev/index.rst:108
 msgid "URL dispatcher"
 msgstr ""
 
-#: ../../appdev/index.rst:118
+#: ../../appdev/index.rst:108
 msgid "Help users navigate between your apps and drive their journey with the URL dispatcher."
 msgstr ""
 
-#: ../../appdev/index.rst:122
+#: ../../appdev/index.rst:112
 msgid "Online accounts"
 msgstr ""
 
-#: ../../appdev/index.rst:121
+#: ../../appdev/index.rst:111
 msgid "Simplify user access to online services by integrating with the online accounts API. Accounts added by the user on the device are registered in a centralized hub, allowing other apps to re-use them."
 msgstr ""
 
-#: ../../appdev/index.rst:124
+#: ../../appdev/index.rst:114
 msgid "`Read the docs <https://docs.ubuntu.com/phone/en/platform/>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:131
+#: ../../appdev/index.rst:121
 msgid "Getting started"
 msgstr ""
 
-#: ../../appdev/index.rst:133
+#: ../../appdev/index.rst:123
 msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ is a meta-build system for Ubuntu Touch applications that allows you to compile, build, test and publish `click` packages and provides various templates to get you started with UT app developpment. It is currently the easiest and most convenient way of building click packages for Ubuntu Touch. Also, looking at existing published app source code is a good way to learn: `see openstore <https://open-store.io>`_"
 msgstr ""
 
-#: ../../appdev/index.rst:138
+#: ../../appdev/index.rst:128
 msgid "Ubuntu UI-Toolkit"
 msgstr ""
 
-#: ../../appdev/index.rst:140
+#: ../../appdev/index.rst:130
 msgid "Here you can find `the API documentation <https://api-docs.ubports.com/>`_ for the Ubuntu UI toolkit."
 msgstr ""
 
-#: ../../appdev/index.rst:142
+#: ../../appdev/index.rst:132
 msgid "`QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:143
+#: ../../appdev/index.rst:133
 msgid "`Cordova HTML5 API <https://api-docs.ubports.com/sdk/apps/html5/index.html>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:144
+#: ../../appdev/index.rst:134
 msgid "`Click packages <https://click.readthedocs.io/en/latest/>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:147
+#: ../../appdev/index.rst:137
 msgid "Ubuntu SDK IDE (unsupported)"
 msgstr ""
 
-#: ../../appdev/index.rst:149
+#: ../../appdev/index.rst:139
 msgid "The `Ubuntu SDK IDE <https://docs.ubuntu.com/phone/en/platform/sdk>`__ is no longer supported by Canonical, and UBports does not currently have the the time and manpower to get it to a working state."
 msgstr ""
 
-#: ../../appdev/index.rst:153
+#: ../../appdev/index.rst:143
 msgid "It can still be installed in Ubuntu 16.04, but issues are expected."
 msgstr ""
 
-#: ../../appdev/index.rst:163
-msgid "Cookbook"
-msgstr ""
-
-#: ../../appdev/index.rst:165
-msgid "A collection of external resources"
-msgstr ""
-
-#: ../../appdev/index.rst:174
+#: ../../appdev/index.rst:153
 #: ../../appdev/system-software.rst:2
 msgid "System Software"
 msgstr ""
 
-#: ../../appdev/index.rst:176
+#: ../../appdev/index.rst:155
 msgid "Working on system components"
 msgstr ""
 
-#: ../../appdev/index.rst:185
+#: ../../appdev/index.rst:164
 #: ../../appdev/webapp/index.rst:2
 msgid "Web applications"
 msgstr ""
 
-#: ../../appdev/index.rst:187
-msgid "Ubuntu webapps are web-hosted sites displayed inside an Ubuntu app container. They are true apps that users install, see, launch and use. But their content is provided through URLs."
+#: ../../appdev/index.rst:166
+msgid "Ubuntu webapps are web-hosted sites displayed inside an Ubuntu app container. They are true apps that users install, see, launch and use, but their content is provided through URLs."
 msgstr ""
 
-#: ../../appdev/index.rst:198
+#: ../../appdev/index.rst:175
 #: ../../appdev/nativeapp/index.rst:2
 msgid "Native applications"
+msgstr ""
+
+#: ../../appdev/index.rst:184
+msgid "Cookbook"
+msgstr ""
+
+#: ../../appdev/index.rst:186
+msgid "A collection of external resources"
 msgstr ""
 
 #: ../../appdev/system-software.rst:4
