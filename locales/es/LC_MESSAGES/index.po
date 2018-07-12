@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-30 21:54-0500\n"
-"PO-Revision-Date: 2018-04-02 19:47+0000\n"
+"PO-Revision-Date: 2018-07-15 00:00+0000\n"
 "Last-Translator: advocatux <advocatux@airpost.net>\n"
 "Language-Team: Spanish <https://translate.ubports.com/projects/ubports-docs"
 "/documentation-index/es/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.15\n"
+"X-Generator: Weblate 2.17\n"
 "Generated-By: Babel 2.5.3\n"
 
 #: ../../index.rst:2
@@ -26,7 +26,7 @@ msgstr "¡Bienvenido/a a la documentación de UBports!"
 
 #: ../../index.rst:4
 msgid "Welcome to the official documentation of the UBports project!"
-msgstr "¡Bienvenido/a la documentación oficial del proyecto UBports!"
+msgstr "¡Bienvenido/a a la documentación oficial del proyecto UBports!"
 
 #: ../../index.rst:6
 msgid ""
