@@ -20,7 +20,7 @@ If you find two issues describing the same problem, leave a comment and try to f
 Testing patches
 ---------------
 
-Pull-requests can be tested using the `QA scripts <https://github.com/ubports/ubports-qa-scripts>`_. Run `ubports-qa -h` for usage information.
+Pull-requests can be tested using the `QA scripts <https://github.com/ubports/ubports-qa-scripts>`_. Run ``ubports-qa -h`` for usage information.
 
 Pull-request has been accepted, the issue is moved to the quality assurance column of the `GitHub project <https://github.com/ubports/ubuntu-touch/projects/3>`__. Check if the issue is still present in the latest update on the devel channel and try to find any problems it is causing. Check if the developer mentioned specific things to look out for when testing and leave a comment detailing your experience. If you have write-access to the repository, you can move the issue back to **In Development** or forward to **Release Candidate** as specified by the :doc:`issue tracking guidelines </about/process/issue-tracking>`.
 
