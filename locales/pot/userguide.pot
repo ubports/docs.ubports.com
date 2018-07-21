@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-11 15:02-0500\n"
+"POT-Creation-Date: 2018-07-21 12:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -659,42 +659,86 @@ msgid "Shell access"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:83
-msgid "To execute any arbitrary command as root inside the container run:"
+msgid "There are 2 options for executing commands inside the container."
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:85
-msgid "``libertine-container-manager exec -c COMMAND``"
+msgid "**The first option** is based on ``libertine-container-manager exec``. It allows you to run your commands as root. The drawback is that the `folders mentioned above are not mounted <https://askubuntu.com/questions/831830/libertine-terminal-applications-how-to-access-to-the-real-home-dir#comment1273744_833984/>`_ i. e. the /home/phablet/ directory will be empty. So you may use this option e. g. for installing some packages using ``apt-get``."
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:87
-msgid "For example, to get a shell into your container you can run:"
+msgid "To execute any arbitrary command as root inside the container run:"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:89
+msgid "``libertine-container-manager exec -c COMMAND``"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:91
+msgid "For example, to get a shell into your container you can run:"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:93
 msgid "``libertine-container-manager exec -c /bin/bash``"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:92
+#: ../../userguide/dailyuse/libertine.rst:96
 msgid "When you launch bash in this way you will not get any specific feedback to confirm that you are now *inside* the container. You can check ``ls /`` to confirm for yourself that you are inside the container. The listing of ``ls /`` will be different inside and outside of the container."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:94
-msgid "To get a shell as user ``phablet`` run:"
+#: ../../userguide/dailyuse/libertine.rst:98
+msgid "In order to give parameters to the command wrap the whole command in quotes, e. g. :"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:96
-msgid "``DISPLAY= libertine-launch -i CONTAINER-IDENTIFIER /bin/bash``"
-msgstr ""
-
-#: ../../userguide/dailyuse/libertine.rst:99
-msgid "Background"
-msgstr ""
-
-#: ../../userguide/dailyuse/libertine.rst:101
-msgid "A display server coordinates input and output of an operating system. Most Linux distributions today use the X server. Ubuntu Touch does not use X, but  a new display server called Mir. This means that standard X applications are not directly compatible with Ubuntu Touch. A compatibility layer called XMir resolves this. Libertine relies on XMir to display desktop applications."
+#: ../../userguide/dailyuse/libertine.rst:100
+msgid "``libertine-container-manager exec -c \"ls -a\"``"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:103
+msgid "**The second option** is based on ``libertine-launch``. It will execute your commands as user phablet in a completely setup container. So you may use this option to modify your files using installed packages."
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:105
+msgid "To execute a command you can use the following pattern:"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:107
+msgid "``libertine-launch -i CONTAINER-IDENTIFIER COMMAND-LINE``"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:109
+msgid "For example:"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:111
+msgid "``libertine-launch -i xenial ls``"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:113
+msgid "In case you want to add some parameters just append them to the command line:"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:115
+msgid "``libertine-launch -i xenial ls -a``"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:117
+msgid "To get a shell as user ``phablet`` run:"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:119
+msgid "``DISPLAY= libertine-launch -i CONTAINER-IDENTIFIER /bin/bash``"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:123
+msgid "Background"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:125
+msgid "A display server coordinates input and output of an operating system. Most Linux distributions today use the X server. Ubuntu Touch does not use X, but  a new display server called Mir. This means that standard X applications are not directly compatible with Ubuntu Touch. A compatibility layer called XMir resolves this. Libertine relies on XMir to display desktop applications."
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:127
 msgid "Another challenge is that Ubuntu Touch system updates are released as OTA images. A consequence of this is that the root filesystem is read only. Libertine provides a container with a read-write filesystem to allow the installation of regular Linux desktop applications."
 msgstr ""
 
