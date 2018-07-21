@@ -97,9 +97,6 @@ To get a shell into your container as ``root`` run:
 
   ``libertine-container-manager exec -i CONTAINER-IDENTIFIER -c "/bin/bash"``
 
-.. note::
-    When you launch bash in this way you will not get any specific feedback to confirm that you are now *inside* the container. You can check ``ls /`` to confirm for yourself that you are inside the container. The listing of ``ls /`` will be different inside and outside of the container.
-
 **The second option** is based on ``libertine-launch``. It will execute your commands as user phablet in a completely set up container. So you may use this option to modify your files using installed packages.
 
 To execute a command you can use the following pattern:
@@ -114,6 +111,8 @@ To get a shell as user ``phablet`` run:
 
   ``DISPLAY= libertine-launch -i CONTAINER-IDENTIFIER /bin/bash``
 
+.. note::
+    When you launch bash in this way you will not get any specific feedback to confirm that you are now *inside* the container. You can check ``ls /`` to confirm for yourself that you are inside the container. The listing of ``ls /`` will be different inside and outside of the container.
 
 Background
 ----------
