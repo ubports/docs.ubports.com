@@ -80,20 +80,39 @@ For every container you create there will be two directories created:
 Shell access
 ^^^^^^^^^^^^
 
-To execute any arbitrary command as root inside the container run:
+There are 2 options for executing commands inside the container.
 
-  ``libertine-container-manager exec -c COMMAND``
+**The first option** is based on ``libertine-container-manager exec``. It lets you run your commands as root. The drawback is that the container is not completely set up. So far we know that the `folders mentioned above (Documents, Music, ...) are not mounted <https://askubuntu.com/questions/831830/libertine-terminal-applications-how-to-access-to-the-real-home-dir#comment1273744_833984/>`_ i.e., the ``/home/phablet/`` directory is empty. Likewise the directory referenced in ``TMPDIR`` is not available what may lead to problems with software that tries to create temporary files or directories.
+You may use this option e.g., for installing packages.
 
-For example, to get a shell into your container you can run:
+To execute a command you can use the following pattern:
 
-  ``libertine-container-manager exec -c /bin/bash``
+  ``libertine-container-manager exec -i CONTAINER-IDENTIFIER -c "COMMAND-LINE"``
 
-.. note::
-    When you launch bash in this way you will not get any specific feedback to confirm that you are now *inside* the container. You can check ``ls /`` to confirm for yourself that you are inside the container. The listing of ``ls /`` will be different inside and outside of the container.
+For example run:
+
+  ``libertine-container-manager exec -i CONTAINER-IDENTIFIER -c "apt-get --help"``
+
+To get a shell into your container as ``root`` run:
+
+  ``libertine-container-manager exec -i CONTAINER-IDENTIFIER -c "/bin/bash"``
+
+**The second option** is based on ``libertine-launch``. It will execute your commands as user phablet in a completely set up container. So you may use this option to modify your files using installed packages.
+
+To execute a command you can use the following pattern:
+
+  ``libertine-launch -i CONTAINER-IDENTIFIER COMMAND-LINE``
+
+For example run:
+
+  ``libertine-launch -i CONTAINER-IDENTIFIER ls -a``
 
 To get a shell as user ``phablet`` run:
 
   ``DISPLAY= libertine-launch -i CONTAINER-IDENTIFIER /bin/bash``
+
+.. note::
+    When you launch bash in this way you will not get any specific feedback to confirm that you are now *inside* the container. You can check ``ls /`` to confirm for yourself that you are inside the container. The listing of ``ls /`` will be different inside and outside of the container.
 
 Background
 ----------
