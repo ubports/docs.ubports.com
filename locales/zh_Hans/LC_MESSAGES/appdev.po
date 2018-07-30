@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-11 15:02-0500\n"
-"PO-Revision-Date: 2018-07-02 20:38+0800\n"
+"PO-Revision-Date: 2018-07-30 04:51+0000\n"
 "Last-Translator: Luo Yufan <njlyf2011@hotmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-appdev/zh_Hans/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.0.8\n"
+"X-Generator: Weblate 2.19.1\n"
 
 #: ../../appdev/apparmor.rst:2
 msgid "AppArmor Policy Groups"
@@ -26,11 +26,11 @@ msgstr ""
 msgid ""
 "This document contains a full list of Ubuntu Touch's available policy groups "
 "and a description of what they give your app permission to access."
-msgstr ""
+msgstr "本文档包含 Ubuntu Touch 可用策略组的完整列表，以及它们为您的应用程序提供访问权限的说明。"
 
 #: ../../appdev/apparmor.rst:6
 msgid "Each entry follows this format"
-msgstr ""
+msgstr "每个条目都遵循此格式"
 
 #: ../../appdev/apparmor.rst:21
 msgid ""
@@ -40,14 +40,12 @@ msgid ""
 msgstr ""
 
 #: ../../appdev/apparmor.rst:24
-#, fuzzy
 msgid "accounts"
-msgstr "在线账户"
+msgstr "accounts"
 
 #: ../../appdev/apparmor.rst:26
-#, fuzzy
 msgid "Description: Can use Online Accounts."
-msgstr "accounts：可使用在线账户"
+msgstr "描述：可使用在线账户。"
 
 #: ../../appdev/apparmor.rst:28 ../../appdev/apparmor.rst:38
 #: ../../appdev/apparmor.rst:70 ../../appdev/apparmor.rst:80
@@ -58,7 +56,7 @@ msgstr "accounts：可使用在线账户"
 #: ../../appdev/apparmor.rst:249 ../../appdev/apparmor.rst:259
 #: ../../appdev/apparmor.rst:287
 msgid "Usage: common"
-msgstr ""
+msgstr "用法：普通"
 
 #: ../../appdev/apparmor.rst:30
 msgid ""
@@ -68,12 +66,12 @@ msgstr ""
 
 #: ../../appdev/apparmor.rst:34
 msgid "audio"
-msgstr ""
+msgstr "audio"
 
 #: ../../appdev/apparmor.rst:36
 msgid ""
 "Description: Can play audio (allows playing remote content via media-hub)"
-msgstr ""
+msgstr "描述：可播放音频（允许通过媒体播放器播放远程内容）"
 
 #: ../../appdev/apparmor.rst:40
 msgid ""
@@ -84,7 +82,7 @@ msgstr ""
 
 #: ../../appdev/apparmor.rst:44
 msgid "bluetooth"
-msgstr ""
+msgstr "bluetooth"
 
 #: ../../appdev/apparmor.rst:46
 msgid "Description: Use bluetooth (bluez5) as an administrator."
@@ -109,18 +107,17 @@ msgstr ""
 
 #: ../../appdev/apparmor.rst:54
 msgid "calendar"
-msgstr ""
+msgstr "日历"
 
 #: ../../appdev/apparmor.rst:56
-#, fuzzy
 msgid "Description: Can access the calendar."
-msgstr "camera：可访问的相机"
+msgstr "描述：可访问相机。"
 
 #: ../../appdev/apparmor.rst:60
 msgid ""
 "Calendar grants access to the Evolution dataserver's calendar and alarms "
 "APIs. It also grants access to sync-monitor."
-msgstr ""
+msgstr "Calendar 允许访问 Evolution 数据服务器的日历和警报API。 它还授予访问同步监视器的权限。"
 
 #: ../../appdev/apparmor.rst:62
 msgid ""
@@ -130,17 +127,15 @@ msgstr ""
 
 #: ../../appdev/apparmor.rst:66
 msgid "camera"
-msgstr ""
+msgstr "相机"
 
 #: ../../appdev/apparmor.rst:68
-#, fuzzy
 msgid "Description: Can access the camera(s)"
-msgstr "camera：可访问的相机"
+msgstr "描述：可访问的相机"
 
 #: ../../appdev/apparmor.rst:72
-#, fuzzy
 msgid "The camera policy grants access to device cameras."
-msgstr "camera：可访问的相机"
+msgstr "相机策略允许您访问设备相机。"
 
 #: ../../appdev/apparmor.rst:76
 msgid "connectivity"
@@ -159,7 +154,7 @@ msgstr ""
 
 #: ../../appdev/apparmor.rst:86
 msgid "contacts"
-msgstr ""
+msgstr "contacts"
 
 #: ../../appdev/apparmor.rst:88
 #, fuzzy
@@ -175,7 +170,7 @@ msgstr ""
 
 #: ../../appdev/apparmor.rst:96
 msgid "content_exchange"
-msgstr ""
+msgstr "content_exchange"
 
 #: ../../appdev/apparmor.rst:98
 msgid "Description: Can request/import data from other applications"
@@ -189,7 +184,7 @@ msgstr ""
 
 #: ../../appdev/apparmor.rst:106
 msgid "content_exchange_source"
-msgstr ""
+msgstr "content_exchange_source"
 
 #: ../../appdev/apparmor.rst:108
 msgid "Description: Can provide/export data to other applications"
@@ -203,7 +198,7 @@ msgstr ""
 
 #: ../../appdev/apparmor.rst:116
 msgid "debug"
-msgstr ""
+msgstr "调试"
 
 #: ../../appdev/apparmor.rst:118
 msgid ""
@@ -252,7 +247,7 @@ msgstr ""
 
 #: ../../appdev/apparmor.rst:143
 msgid "history"
-msgstr ""
+msgstr "历史"
 
 #: ../../appdev/apparmor.rst:145
 msgid ""
@@ -270,9 +265,8 @@ msgid "Description: Can request keeping the screen on"
 msgstr ""
 
 #: ../../appdev/apparmor.rst:159
-#, fuzzy
 msgid "location"
-msgstr "引言"
+msgstr "位置"
 
 #: ../../appdev/apparmor.rst:161
 #, fuzzy
@@ -281,11 +275,11 @@ msgstr "location：可访问地理位置"
 
 #: ../../appdev/apparmor.rst:165
 msgid "Allows an app to request access to the device's current location."
-msgstr ""
+msgstr "允许应用请求访问设备的当前位置。"
 
 #: ../../appdev/apparmor.rst:169
 msgid "microphone"
-msgstr ""
+msgstr "麦克风"
 
 #: ../../appdev/apparmor.rst:171
 #, fuzzy
@@ -294,7 +288,7 @@ msgstr "microphone：可访问的麦克风"
 
 #: ../../appdev/apparmor.rst:177
 msgid "music_files"
-msgstr ""
+msgstr "music_files"
 
 #: ../../appdev/apparmor.rst:179
 msgid ""
@@ -308,11 +302,11 @@ msgstr ""
 msgid ""
 "The music_files policy group allows an app to read or write to the Music "
 "directories in the user's home folder or on external media."
-msgstr ""
+msgstr "music_files 策略组允许应用程序读写用户主文件夹或外部媒体上的音乐目录。"
 
 #: ../../appdev/apparmor.rst:187
 msgid "music_files_read"
-msgstr ""
+msgstr "music_files_read"
 
 #: ../../appdev/apparmor.rst:189
 msgid ""
@@ -332,9 +326,8 @@ msgid "networking"
 msgstr ""
 
 #: ../../appdev/apparmor.rst:199
-#, fuzzy
 msgid "Description: Can access the network"
-msgstr "microphone：可访问的麦克风"
+msgstr "描述：克访问互联网"
 
 #: ../../appdev/apparmor.rst:203
 msgid ""
@@ -344,7 +337,7 @@ msgstr ""
 
 #: ../../appdev/apparmor.rst:207
 msgid "picture_files"
-msgstr ""
+msgstr "picture_files"
 
 #: ../../appdev/apparmor.rst:209
 msgid ""
@@ -353,6 +346,8 @@ msgid ""
 "should typically use the content_exchange policy group and API to access "
 "picture files instead."
 msgstr ""
+"描述：可读写图片文件。 此策略组保留用于某些应用程序，例如相册类应用。 开发人员通常应使用 content_exchange 策略组和 API "
+"来访问图片文件。"
 
 #: ../../appdev/apparmor.rst:213
 msgid ""
@@ -362,7 +357,7 @@ msgstr ""
 
 #: ../../appdev/apparmor.rst:217
 msgid "picture_files_read"
-msgstr ""
+msgstr "picture_files_read"
 
 #: ../../appdev/apparmor.rst:219
 msgid ""
@@ -388,12 +383,11 @@ msgstr ""
 
 #: ../../appdev/apparmor.rst:235
 msgid "sensors"
-msgstr ""
+msgstr "传感器"
 
 #: ../../appdev/apparmor.rst:237
-#, fuzzy
 msgid "Description: Can access the sensors"
-msgstr "camera：可访问的相机"
+msgstr "描述：可访问传感器"
 
 #: ../../appdev/apparmor.rst:241
 msgid "Allows apps to access `device sensors`_"
@@ -460,11 +454,11 @@ msgstr ""
 
 #: ../../appdev/apparmor.rst:283
 msgid "webview"
-msgstr ""
+msgstr "webview"
 
 #: ../../appdev/apparmor.rst:285
 msgid "Description: Can use the UbuntuWebview"
-msgstr ""
+msgstr "描述：可使用 UbuntuWebview"
 
 #: ../../appdev/apparmor.rst:289
 msgid "The webview policy group allows apps to embed a `web browser view`_."
@@ -681,7 +675,7 @@ msgstr ""
 
 #: ../../appdev/index.rst:105
 msgid "Push notifications"
-msgstr ""
+msgstr "推送通知"
 
 #: ../../appdev/index.rst:105
 msgid ""
@@ -731,13 +725,15 @@ msgstr ""
 
 #: ../../appdev/index.rst:128
 msgid "Ubuntu UI-Toolkit"
-msgstr "Ubuntu UI-Toolkit"
+msgstr "Ubuntu UI 工具箱"
 
 #: ../../appdev/index.rst:130
 msgid ""
 "Here you can find `the API documentation <https://api-docs.ubports.com/>`_ "
 "for the Ubuntu UI toolkit."
 msgstr ""
+"Here you can find `the API documentation <https://api-docs.ubports.com/>`_ "
+"for the Ubuntu UI toolkit."
 
 #: ../../appdev/index.rst:132
 msgid "`QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__"
@@ -797,7 +793,7 @@ msgstr "指南"
 
 #: ../../appdev/index.rst:186
 msgid "A collection of external resources"
-msgstr ""
+msgstr "外部资源的集合"
 
 #: ../../appdev/system-software.rst:4
 msgid ""
@@ -893,7 +889,7 @@ msgid ""
 "It's a shell script, so you don't need to build it. Instead, you will need "
 "to add its directory to your ``PATH`` environment variable, so that you can "
 "execute it from any directory:"
-msgstr ""
+msgstr "它是一个 shell 脚本，因此您不需要构建它。 不过，您需要将其目录添加到 ``PATH`` 环境变量中，以便您可以从任何目录执行它："
 
 #: ../../appdev/system-software.rst:99
 msgid ""
@@ -1078,7 +1074,7 @@ msgstr "指南"
 
 #: ../../appdev/webapp/guide.rst:5
 msgid "How the webapp fits into the shell"
-msgstr ""
+msgstr "如何让 Web 应用适应"
 
 #: ../../appdev/webapp/guide.rst:7
 msgid ""
