@@ -31,7 +31,7 @@ Install system.img and rootfs
 
 Download the halium-install-standalone script from `jbbgameich/halium-install's releases <https://github.com/JBBgameich/halium-install/releases/>`_ (`direct link to download <https://github.com/JBBgameich/halium-install/releases/download/continuous/halium-install-standalone.sh>`__). Boot your device into recovery and run the script as follows::
 
-    halium-install-standalone.sh path/to/rootfs.tar.gz path/to/system.img ut
+    halium-install-standalone.sh -p ut path/to/rootfs.tar.gz path/to/system.img
 
 The script will copy and extract the files to their proper places, then allow you to set the phablet user's password.
 
