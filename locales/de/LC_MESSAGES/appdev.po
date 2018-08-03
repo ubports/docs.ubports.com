@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-11 15:02-0500\n"
-"PO-Revision-Date: 2018-08-03 23:28+0000\n"
+"PO-Revision-Date: 2018-08-03 23:30+0000\n"
 "Last-Translator: Florian Leeber <flori@bin.org.in>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/de/>\n"
@@ -695,7 +695,7 @@ msgstr ""
 
 #: ../../appdev/index.rst:105
 msgid "Push notifications"
-msgstr "Uzu anoncojn"
+msgstr "Push-Benachrichtigungen"
 
 #: ../../appdev/index.rst:105
 msgid ""
@@ -1130,7 +1130,7 @@ msgstr ""
 
 #: ../../appdev/webapp/guide.rst:22
 msgid "For example:::"
-msgstr "Beispielsweise:"
+msgstr "Beispielsweise:::"
 
 #: ../../appdev/webapp/guide.rst:26
 msgid ""
@@ -1457,9 +1457,8 @@ msgid ""
 msgstr ""
 
 #: ../../appdev/webapp/index.rst:29
-#, fuzzy
 msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ CLI"
-msgstr "`Click Pakete <https://click.readthedocs.io/en/latest/>`__"
+msgstr "`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ CLI"
 
 #: ../../appdev/webapp/index.rst:33
 msgid "Debugging your webapp"
