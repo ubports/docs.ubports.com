@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: Chinese (Simplified) (UBports Docs)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-11 15:02-0500\n"
-"PO-Revision-Date: 2018-07-01 16:21+0800\n"
-"Last-Translator: Luo Yufan <njlyf2011@hotmail.com>\n"
+"PO-Revision-Date: 2018-08-05 00:00+0000\n"
+"Last-Translator: joseph <joseph@liau.ca>\n"
 "Language-Team: Chinese (Simplified) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-porting/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -12,12 +12,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.0.8\n"
+"X-Generator: Weblate 2.20\n"
 
 #: ../../porting/building-halium-boot.rst:2
-#, fuzzy
 msgid "Building halium-boot"
-msgstr "构建 UBports-boot"
+msgstr "构建 halium-boot"
 
 #: ../../porting/building-halium-boot.rst:4
 msgid ""
@@ -92,13 +91,10 @@ msgid "Build the image"
 msgstr "构建镜像"
 
 #: ../../porting/building-halium-boot.rst:33
-#, fuzzy
 msgid ""
 "Once halium-boot is in place, you can build it quite simply. You will also "
 "need to rebuild system.img due to our changes."
-msgstr ""
-"一旦 ubports-boot 到位，您就可以非常简单地构建它。 但由于我们的改动了它，您还"
-"需要重建 system.img。"
+msgstr "一旦 halium-boot 到位，您就可以非常简单地构建它。 但由于我们的改动了它，您还需要重建 system.img。"
 
 #: ../../porting/building-halium-boot.rst:35
 msgid "``cd`` to your Halium BUILDDIR"
@@ -113,9 +109,8 @@ msgid "Run ``breakfast`` or ``lunch``, whichever you use for your device"
 msgstr ""
 
 #: ../../porting/building-halium-boot.rst:38
-#, fuzzy
 msgid "``mka halium-boot``"
-msgstr "``mka ubports-boot``"
+msgstr "``mka halium-boot``"
 
 #: ../../porting/building-halium-boot.rst:39
 msgid "``mka systemimage``"
@@ -127,11 +122,10 @@ msgid "Continue on"
 msgstr "继续"
 
 #: ../../porting/building-halium-boot.rst:44
-#, fuzzy
 msgid ""
 "Now that you have halium-boot built, you can move on to :doc:"
 "`installing-16-04`."
-msgstr "现在您已经构建了 ubports-boot，请移步到 doc:`installing-16-04`。"
+msgstr "现在您已经构建了 halium-boot，请移步到 :doc:`installing-16-04`。"
 
 #: ../../porting/common-problems-install.rst:7
 msgid "Common installation problems"
@@ -200,9 +194,8 @@ msgid ""
 msgstr ""
 
 #: ../../porting/common-problems-run.rst:2
-#, fuzzy
 msgid "Common problems when running Ubuntu Touch"
-msgstr "运行 Ubuntu Touch"
+msgstr "运行 Ubuntu Touch 的平常问题"
 
 #: ../../porting/common-problems-run.rst:4
 msgid ""
@@ -371,19 +364,16 @@ msgstr ""
 "密。"
 
 #: ../../porting/installing-16-04.rst:13
-#, fuzzy
 msgid "Install halium-boot"
-msgstr "安装 UBports-boot"
+msgstr "安装 halium-boot"
 
 #: ../../porting/installing-16-04.rst:15
-#, fuzzy
 msgid ""
 "We'll need to install the halium-boot image before installing an image. "
 "Reboot your phone into fastboot mode, then do the following from your Halium "
 "tree::"
 msgstr ""
-"我们需要在安装镜像之前安装 ubports-boot 镜像。 重新启动手机进入 fastboot 模"
-"式，然后在 Halium 树中执行以下操作::"
+"我们需要在安装镜像之前安装 halium-boot 镜像。 重新启动手机进入 fastboot 模式，然后在 Halium 树中执行以下操作::"
 
 #: ../../porting/installing-16-04.rst:21
 msgid "Download the rootfs"
@@ -660,9 +650,8 @@ msgid "QtWebKit DPR"
 msgstr ""
 
 #: ../../porting/running-ut.rst:52
-#, fuzzy
 msgid "'Normal' density laptop"
-msgstr "“高”密度笔记本"
+msgstr "“正常”密度笔记本"
 
 #: ../../porting/running-ut.rst:52 ../../porting/running-ut.rst:54
 msgid "N/A"
