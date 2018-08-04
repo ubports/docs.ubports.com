@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-11 15:02-0500\n"
-"PO-Revision-Date: 2018-08-03 23:30+0000\n"
-"Last-Translator: Florian Leeber <flori@bin.org.in>\n"
+"PO-Revision-Date: 2018-08-05 15:45+0000\n"
+"Last-Translator: Kevin Majewski <kevin.majewski02@gmail.com>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/de/>\n"
 "Language: de\n"
@@ -468,7 +468,7 @@ msgstr "Kochbuch für die APP–Entwicklung"
 
 #: ../../appdev/cookbook.rst:5
 msgid "Unofficial resources"
-msgstr "Inoffizielle Ressourcen"
+msgstr "Weiterführende Ressourcen"
 
 #: ../../appdev/cookbook.rst:7
 msgid ""
@@ -511,9 +511,9 @@ msgid ""
 "endorsed way of developing applications for Ubuntu Touch, but are "
 "interesting experiments."
 msgstr ""
-"Diese Resourcen–Liste repräsentiert nicht ansatzweise den offiziellen "
-"anerkannten Weg um Applikationen für Ubuntu Touch zu entwickeln, aber es ist "
-"ein interessantes Experiment."
+"Die aufgeführten Resourcen zeigen nicht unbedingt den offiziell anerkannten "
+"Weg um Anwendungen für Ubuntu Touch zu entwickeln, können aber für "
+"Experimentierfreudige interessant sein."
 
 #: ../../appdev/cookbook.rst:19
 msgid ""
@@ -559,7 +559,7 @@ msgstr ""
 
 #: ../../appdev/index.rst:7
 msgid "Introduction"
-msgstr "Einleitung"
+msgstr "Einführung"
 
 #: ../../appdev/index.rst:9
 msgid ""
@@ -590,7 +590,7 @@ msgstr ""
 
 #: ../../appdev/index.rst:21
 msgid "Example ``manifest.json`` file::"
-msgstr ""
+msgstr "Beispielhafte ``manifest.json`` Datei::"
 
 #: ../../appdev/index.rst:41
 msgid "AppArmor profile policy file"
@@ -1095,7 +1095,7 @@ msgstr ""
 
 #: ../../appdev/webapp/guide.rst:2 ../../appdev/webapp/index.rst:13
 msgid "Guide"
-msgstr "Hilfslinie"
+msgstr "Anleitung"
 
 #: ../../appdev/webapp/guide.rst:5
 msgid "How the webapp fits into the shell"
@@ -1122,7 +1122,7 @@ msgstr ""
 
 #: ../../appdev/webapp/guide.rst:16
 msgid "Launching"
-msgstr "Wird gestartet"
+msgstr "Starten"
 
 #: ../../appdev/webapp/guide.rst:18
 msgid "You can launch a webapp from the terminal with:::"
@@ -1140,7 +1140,7 @@ msgstr ""
 
 #: ../../appdev/webapp/guide.rst:29
 msgid "User interface"
-msgstr "Benutzerschnittstelle"
+msgstr "Benutzeroberfläche"
 
 #: ../../appdev/webapp/guide.rst:31
 msgid ""
@@ -1344,7 +1344,7 @@ msgstr ""
 
 #: ../../appdev/webapp/guide.rst:123
 msgid "Command line arguments"
-msgstr "Befehlszeilenargumente"
+msgstr "Kommandozeilenparameter"
 
 #: ../../appdev/webapp/guide.rst:125
 msgid ""
@@ -1442,7 +1442,7 @@ msgstr ""
 
 #: ../../appdev/webapp/index.rst:24
 msgid "Quick start"
-msgstr "Kurzeinführung"
+msgstr "Schnellstart-Anleitung"
 
 #: ../../appdev/webapp/index.rst:26
 msgid ""
@@ -1516,6 +1516,8 @@ msgid ""
 "Now on your computer, launch Chrome/Chromium browser, and point address to "
 "``http://YOUR_UT_IP_ADDRESS:9221``"
 msgstr ""
+"Jetzt starte Chrome/Chromium auf deinem PC und gehe zur Adresse "
+"``http://DEINE_IP_ADRESSE:9221``"
 
 #~ msgid "Using clickable for cordova and HTML-5 development"
 #~ msgstr ""
