@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-11 15:02-0500\n"
 "PO-Revision-Date: 2018-08-05 15:45+0000\n"
-"Last-Translator: Kevin Majewski <kevin.majewski02@gmail.com>\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/de/>\n"
 "Language: de\n"
@@ -569,18 +569,24 @@ msgid ""
 "readthedocs.io/en/latest/>`_ packaging. App UIs can be created using QML or "
 "HTML5 and behavior can be created using JS, Qt, C++, Python, or Go."
 msgstr ""
+"Ubuntu Touch nutzt drei Arten von Anwendungen:  `Web Anwendungen`_ (WebApps)"
+", Scopes (veraltet) and `Native Anwendungen`_. Anwendungen können im Format `"
+"Click <https://click.readthedocs.io/en/latest/>`_ Archiv gepackt, verteilt "
+"und bereitgestellt werden. App Oberflächen können mit QML oder HTML5 "
+"erstellt und das Verhalten mit JavaScript, Qt, C++, Python oder Go erstellt "
+"werden."
 
 #: ../../appdev/index.rst:14
 msgid "Click package overview"
-msgstr ""
+msgstr "Click-Paket Übersicht"
 
 #: ../../appdev/index.rst:16
 msgid "Every ``click`` application package must embed at least 3 files:"
-msgstr ""
+msgstr "Jedes ``click`` Anwendungspaket muss mindestens 3 Dateien beinhalten:"
 
 #: ../../appdev/index.rst:38
 msgid "``manifest.json`` file"
-msgstr ""
+msgstr "``manifest.json`` Datei"
 
 #: ../../appdev/index.rst:19
 msgid ""
