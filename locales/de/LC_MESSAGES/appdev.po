@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-11 15:02-0500\n"
-"PO-Revision-Date: 2018-08-05 15:56+0000\n"
+"PO-Revision-Date: 2018-08-05 16:00+0000\n"
 "Last-Translator: Kevin Majewski <kevin.majewski02@gmail.com>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/de/>\n"
@@ -1429,7 +1429,7 @@ msgid ""
 "com, and it displays in the webapp."
 msgstr ""
 "Der Nutzer kann zu jeder Adresse ohne Einschänkungen navigieren. Wenn "
-"beispielsweise oben auf den Entwicklerknopf gedrückt wird, wird zu "
+"beispielsweise oben auf den Developer-Knopf gedrückt wird, wird zu "
 "developer.ubuntu.com navigiert und die Webseite in der Web-App angezeigt."
 
 #: ../../appdev/webapp/guide.rst:56
@@ -1437,10 +1437,12 @@ msgid ""
 "Tip: You can see the URL of the current page by enabling the address bar "
 "with ``--enable-addressbar``."
 msgstr ""
+"Tipp: Du kannst die Adresse der aktuellen Seite sehen, wenn du die "
+"Adressleiste mit ``--enable-addressbar`` aktivierst."
 
 #: ../../appdev/webapp/guide.rst:59
 msgid "Simple containment to the site"
-msgstr ""
+msgstr "Einfache Beschränkungen auf die Seite"
 
 #: ../../appdev/webapp/guide.rst:61
 msgid ""
@@ -1449,16 +1451,23 @@ msgid ""
 "of www.ubuntu.com. This is done by adding a wildcard URL pattern to the "
 "launch command, as follows:::"
 msgstr ""
+"Oft möchte man Nutzer auf die Seite selbst beschränken. Daher, falls die "
+"Seite www.ubuntu.com ist, wäre es hilfreich, wenn Web-App-Nutzer nur Zugriff "
+"auf Unterseiten von www.ubuntu.com hätten. Dies wird wie folgend mit einem, "
+"dem Startbefehl hinzugefügten, Wildcard-Adressmuster erreicht:::"
 
 #: ../../appdev/webapp/guide.rst:67
 msgid "``--webappUrlPatterns=`` indicates a pattern is next"
-msgstr ""
+msgstr "``--webappUrlPatterns=`` weist auf ein darauf folgendes Muster hin"
 
 #: ../../appdev/webapp/guide.rst:66
 msgid ""
 "http://www.ubuntu.com/* is the pattern The asterix is a wildcard that "
 "matches any valid sequence of trailing (right-most) characters in a URL"
 msgstr ""
+"http://www.ubuntu.com/* ist das Muster. Der Stern ist ein Platzhalter "
+"(Wildcard), der allen gültigen Folge von Zeichen, die den Stern in der "
+"Adresse ersetzen, entspricht."
 
 #: ../../appdev/webapp/guide.rst:69
 msgid ""
@@ -1469,6 +1478,12 @@ msgid ""
 "com/tablet). But, clicking Developer opens the corresponding URL in the "
 "browser."
 msgstr ""
+"Mit diesem Startbefehl und Adressmuster, kann der Nutzer zu jeder Seite "
+"navigieren und sie öffnen, die mit http://www.ubuntu.com/ beginnt. "
+"Beispielsweise kann er im Banner auf Phone tippen (http://www.ubuntu.com/"
+"phone) und die Seite wird in der Web-App geöffnet, oder auch das gleiche mit "
+"dem Tablet-Knopf (http://www.ubuntu.com/tablet). Tippt er jedoch auf den "
+"Developer-Knopf, öffnet sich die entsprechende Seite im Browser."
 
 #: ../../appdev/webapp/guide.rst:71
 msgid ""
@@ -1477,6 +1492,10 @@ msgid ""
 "subdomain would create an ambiguous URL and thus introduces security "
 "concerns. More complex wildcard patterns"
 msgstr ""
+"Tipp: Stelle sicher, die komplette Subdomain deiner Startseite zu verwenden, "
+"wie beispielsweise http://www.ubuntu.com statt www.ubuntu.com. Andernfalls "
+"wäre die Adresse mehrdeutig und kann dann Sicherheisprobleme verursachen. "
+"Nun zu komplexeren Wildcard-Mustern."
 
 #: ../../appdev/webapp/guide.rst:74
 msgid ""
@@ -1486,10 +1505,16 @@ msgid ""
 "access to www.ubuntu.com/desktop/features and www.ubuntu.com/phone/features "
 "while not allowing access to www.ubuntu.com/desktop or www.ubuntu.com/phone::"
 msgstr ""
+"Eventuell möchtest du nur den Zugriff auf einige Unterseiten der Seite "
+"innerhalb der Web-App gestatten. Auch dies entspricht einem Wildcard-Muster. "
+"(Links zu anderen Unterseiten werden im Browser geöffnet.) Zum Beispiel wird "
+"im Folgenden nur der Zugang zu www.ubuntu.com/desktop/features und "
+"www.ubuntu.com/phone/features gestattet, jedoch nicht auf www.ubuntu.com/"
+"desktop oder www.ubuntu.com/phone::"
 
 #: ../../appdev/webapp/guide.rst:80
 msgid "Multiple patterns"
-msgstr ""
+msgstr "Mehrere Muster"
 
 #: ../../appdev/webapp/guide.rst:82
 msgid ""
@@ -1497,16 +1522,21 @@ msgid ""
 "the following allows access only to www.ubuntu.com/desktop/features and www."
 "ubuntu.com/phone/features:::"
 msgstr ""
+"Du kannst mehrere Muster in einer komma-separierten Liste eintragen. Im "
+"Beispiel wird nur der Zugriff auf www.ubuntu.com/desktop/features und "
+"www.ubuntu.com/phone/features erlaubt:::"
 
 #: ../../appdev/webapp/guide.rst:86
 msgid ""
 "Tip: Multiple patterns are often necessary to achieve the intended "
 "containment behavior."
 msgstr ""
+"Tipp: Verschiedene Muster sind oft nötig um das gewünschte Blockierverhalten "
+"zu erreichen."
 
 #: ../../appdev/webapp/guide.rst:90
 msgid "Adding a specific subdomain"
-msgstr ""
+msgstr "Hinzufügen eine spezifischen Subdomain"
 
 #: ../../appdev/webapp/guide.rst:92
 msgid ""
@@ -1514,6 +1544,10 @@ msgid ""
 "“developer” is the subdomain: developer.ubuntu.com.) You can allow access to "
 "a single subdomain (and all of its subpages) with a pattern like this:::"
 msgstr ""
+"Viele Adressen haben eine oder mehrere Subdomains. (Beispielsweise ist die "
+"Subdomain im folgenden developer, also: developer.ubuntu.com.) Du kannst den "
+"Zugriff auf eine einzelne Subdomain (und alle ihre Unterseiten) mit "
+"folgendem Muster erlauben:::"
 
 #: ../../appdev/webapp/guide.rst:96
 msgid ""
@@ -1521,6 +1555,9 @@ msgid ""
 "starting URL (and its subpages). So, if the starting URL is http://www."
 "ubuntu.com, a second pattern is needed:::"
 msgstr ""
+"Jedoch, wenn der Nutzer zurück zur Startseite navigieren können soll (sowie "
+"ihre Unterseiten), wird, wenn die Startseite http://www.ubuntu.com ist, ein "
+"zweites Muster benötigt:::"
 
 #: ../../appdev/webapp/guide.rst:100
 msgid ""
@@ -1528,10 +1565,14 @@ msgid ""
 "com and allows navigation to http://developer.ubuntu.com and subpages and "
 "back to http://www.ubuntu.com and subpages:::"
 msgstr ""
+"Mit allem Zusammen, ist hier ein Beispiel, welches auf http://www.ubuntu.com "
+"startet und das Navigieren auf http://developer.ubuntu.com und dessen "
+"Unterseiten erlaubt, sowie das Zurücknavigieren zu http://www.ubuntu.com und "
+"dessen Unterseiten:::"
 
 #: ../../appdev/webapp/guide.rst:105
 msgid "Adding subdomains with a wildcard"
-msgstr ""
+msgstr "Subdomains mittels Wildcard hinzufügen"
 
 #: ../../appdev/webapp/guide.rst:107
 msgid ""
@@ -1539,6 +1580,10 @@ msgid ""
 "ubuntu.com, developer.ubuntu.com and more. You can add access to all "
 "subdomains with a wildcard in the subdomain position:::"
 msgstr ""
+"Einige Adressen haben verschiedene Unterseiten. Zum Beispiel, www.ubuntu.com "
+"beinhaltet auch design.ubuntu.com, developer.ubuntu.com und einige weitere. "
+"Du kannst den Zugriff auf alle Subdomains mit einer Wildcard anstelle des "
+"Namens der Subdomain erlauben:::"
 
 #: ../../appdev/webapp/guide.rst:111
 msgid ""
@@ -1547,10 +1592,14 @@ msgid ""
 "subdomain and subpages, including back to the starting URL (http://www."
 "ubuntu.com) and its subpages."
 msgstr ""
+"*Anmerkung: Ein Stern anstelle der Subdomain entspricht jeder gültigen "
+"Subdomain. Dieses einzelne Muster reicht aus, um den Zugang auf alle "
+"Subdomains und Unterseiten zu erlauben, inklusive der Startseite "
+"(http://www.ubuntu.com) und deren Unterseiten.*"
 
 #: ../../appdev/webapp/guide.rst:114
 msgid "Adding https"
-msgstr ""
+msgstr "Hinzufügen von https"
 
 #: ../../appdev/webapp/guide.rst:116
 msgid ""
@@ -1558,12 +1607,18 @@ msgid ""
 "allows https and https as access within the webapp to www.launchpad.net (and "
 "all subpages due to the wildcard):::"
 msgstr ""
+"Manchmal nutzt eine Seite https für einige ihrer Adressen. Hier ist ein "
+"Beispiel, welches den Zugriff auf https und http innerhalb der Web-App auf  "
+"www.launchpad.net erlaubt (und wegen des Wildcards auch alle Unterseiten):::"
 
 #: ../../appdev/webapp/guide.rst:120
 msgid ""
 "Note: the question mark in https?. This means the preceding character (the "
 "‘s’) is optional. If https is always required, omit the question mark."
 msgstr ""
+"*Anmerkung: Siehst du das Fragezeichen in https?? Das bedeutet, dass das "
+"vorherige Zeichen (das ‘s’) optional ist. Falls https immer verwendet wird, "
+"entferne das Fragezeichen.*"
 
 #: ../../appdev/webapp/guide.rst:123
 msgid "Command line arguments"
@@ -1574,14 +1629,18 @@ msgid ""
 "The webapp-container accepts many options to fine tune how it hosts various "
 "web applications."
 msgstr ""
+"Der Web-App-Container verwendet viele Parameter, um genau anzupassen, wie er "
+"verschiedene Web-Apps startet."
 
 #: ../../appdev/webapp/guide.rst:127
 msgid "See all help with:::"
-msgstr ""
+msgstr "Sieh dir die Hilfe an:::"
 
 #: ../../appdev/webapp/guide.rst:131
 msgid "Note: Only the following options apply to converged Ubuntu.::"
 msgstr ""
+"*Anmerkung: Nur die folgenden Optionen funktionieren unter dem konvergierten "
+"Ubuntu:::"
 
 #: ../../appdev/webapp/guide.rst:145
 msgid "Chrome options (if none specified, no chrome is shown by default):::"
