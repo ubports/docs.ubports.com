@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-11 15:02-0500\n"
-"PO-Revision-Date: 2018-08-05 16:00+0000\n"
+"PO-Revision-Date: 2018-08-05 23:17+0000\n"
 "Last-Translator: Kevin Majewski <kevin.majewski02@gmail.com>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/de/>\n"
@@ -1482,8 +1482,8 @@ msgstr ""
 "navigieren und sie öffnen, die mit http://www.ubuntu.com/ beginnt. "
 "Beispielsweise kann er im Banner auf Phone tippen (http://www.ubuntu.com/"
 "phone) und die Seite wird in der Web-App geöffnet, oder auch das gleiche mit "
-"dem Tablet-Knopf (http://www.ubuntu.com/tablet). Tippt er jedoch auf den "
-"Developer-Knopf, öffnet sich die entsprechende Seite im Browser."
+"dem Tablet-Knopf (http://www.ubuntu.com/tablet). Klickt er jedoch auf den "
+"Entwickler-Knopf, öffnet sich die entsprechende Seite im Browser."
 
 #: ../../appdev/webapp/guide.rst:71
 msgid ""
@@ -1506,10 +1506,10 @@ msgid ""
 "while not allowing access to www.ubuntu.com/desktop or www.ubuntu.com/phone::"
 msgstr ""
 "Eventuell möchtest du nur den Zugriff auf einige Unterseiten der Seite "
-"innerhalb der Web-App gestatten. Auch dies entspricht einem Wildcard-Muster. "
-"(Links zu anderen Unterseiten werden im Browser geöffnet.) Zum Beispiel wird "
-"im Folgenden nur der Zugang zu www.ubuntu.com/desktop/features und "
-"www.ubuntu.com/phone/features gestattet, jedoch nicht auf www.ubuntu.com/"
+"innerhalb der Web-App gestatten. Auch dies entspricht einem einem Wildcard-"
+"Muster. (Links zu anderen Unterseiten werden im Browser geöffnet.) Zum "
+"Beispiel wird im Folgenden nur der Zugang zu www.ubuntu.com/desktop/features "
+"und www.ubuntu.com/phone/features gestattet, jedoch nicht auf www.ubuntu.com/"
 "desktop oder www.ubuntu.com/phone::"
 
 #: ../../appdev/webapp/guide.rst:80
@@ -1640,21 +1640,25 @@ msgstr "Sieh dir die Hilfe an:::"
 msgid "Note: Only the following options apply to converged Ubuntu.::"
 msgstr ""
 "*Anmerkung: Nur die folgenden Optionen funktionieren unter dem konvergierten "
-"Ubuntu.:::*"
+"Ubuntu*.:::"
 
 #: ../../appdev/webapp/guide.rst:145
 msgid "Chrome options (if none specified, no chrome is shown by default):::"
 msgstr ""
+"Chrome Optionen (Falls nichts davon angegeben, wird Chromes Oberfläche "
+"standartmäßig nicht angezeigt):::"
 
 #: ../../appdev/webapp/guide.rst:150
 msgid ""
 "Note: The other available options are specific to desktop webapps. It is "
 "recommended to not use them anymore."
 msgstr ""
+"*Anmerkung: Die anderen Optionen sind speziell für Desktop Web-Apps. Es wird "
+"empfohlen, sie nicht mehr zu verwenden.*"
 
 #: ../../appdev/webapp/guide.rst:153
 msgid "User-Agent string override"
-msgstr ""
+msgstr "Browseridentifikation ändern"
 
 #: ../../appdev/webapp/guide.rst:155
 msgid ""
@@ -1663,14 +1667,21 @@ msgid ""
 "While not a recommended practice, it is sometimes necessary to change the "
 "default string sent by the webapp container."
 msgstr ""
+"Manche Webseiten prüfen spezielle Teile der Anfragen des Browser, auch User-"
+"Agent genannt, um Informationen über das genutzte Gerät zu bekommen, nach "
+"denen sie die Gestaltung anpassen oder auch Funktionen aktivieren. Während "
+"in der Praxis nicht empfohlen, kann es manchmal nötig sein, die "
+"Standartinformationen, die vom Web-App-Container gesendet werden, anzupassen."
 
 #: ../../appdev/webapp/guide.rst:157
 msgid "To change the string from the command line, use the following option:::"
 msgstr ""
+"Um den User-Agent von der Kommandozeile aus zu ändern, nutze folgenden "
+"Parameter:::"
 
 #: ../../appdev/webapp/guide.rst:162
 msgid "Browser data containment"
-msgstr ""
+msgstr "Browserdaten-Abschottung"
 
 #: ../../appdev/webapp/guide.rst:164
 msgid ""
@@ -1679,24 +1690,36 @@ msgid ""
 "browser, such as history, cookies and so on. Other browser on the system do "
 "not access the webapp’s data. Storage"
 msgstr ""
+"Das WebApp-Erlebnis ist aus Sicht der Browserdaten abgeschottet und "
+"isoliert. Die WebApps haben keinen Zugriff auf Daten von anderen "
+"installierten Browsern, wie zum Beispiel Verlauf, Cookies und so weiter. "
+"Andere Browser auf dem System haben ihrerseits keinen Zugriff auf WebApp-"
+"Daten. Weiter mit Speicher."
 
 #: ../../appdev/webapp/guide.rst:167
 msgid ""
 "W3C allows apps to use local storage, and Oxide/Webapp-container supports "
 "the main standards here: LocalStorage, IndexedDB, WebSQL."
 msgstr ""
+"Das World Wide Web Consortium (W3C) erlaubt Apps die Nutzung lokalen "
+"Speichers und der Oxide WebApps-Container unterstützt die wichtigsten "
+"Standarts: LocalStorage, IndexedDB und WebSQL."
 
 #: ../../appdev/webapp/index.rst:4
 msgid ""
 "Ubuntu Webapps are a great way to deliver online web applications into "
 "Ubuntu."
 msgstr ""
+"Ubuntu WebApps sind ein großartiger Weg, Online-Webanwendungen in Ubuntu zu "
+"integrieren."
 
 #: ../../appdev/webapp/index.rst:6
 msgid ""
 "The Ubuntu platform provides an advanced web engine container to run online "
 "applications on the Ubuntu client devices."
 msgstr ""
+"Die Ubuntu-Plattform bietet einen fortgeschrittenen Webseiten-Container zur "
+"Ausführung von Onlineanwendungen auf Ubuntu-Endgeräten."
 
 #: ../../appdev/webapp/index.rst:8
 msgid ""
@@ -1705,6 +1728,11 @@ msgid ""
 "also have a rich user interface or use the WebGL extension to deliver games "
 "online."
 msgstr ""
+"Webanwendungen werden online bereitgestellt. Sie sind so einfach als "
+"Webseiten, wie eine Online-Nachrichtenseite oder können auch Inhalte wie "
+"Videos bereitstellen. Sie können auch eine üppige Benutzeroberfläche haben "
+"oder die WebGL-Erweiterung zum Verbreiten von Spielen über das Internet "
+"nutzen."
 
 #: ../../appdev/webapp/index.rst:10
 msgid ""
@@ -1721,6 +1749,11 @@ msgid ""
 "covered here. Support for webapps on converged Ubuntu will continue to grow, "
 "and of course the future of Ubuntu is convergence, so stay tuned."
 msgstr ""
+"Diese Anleitung hat einen Fokus auf das konvergierte Ubuntu, daher Ubuntu "
+"for Devices (Smartphone und Tablets). Der Ubuntu Desktop hat Unterstützung "
+"für weitere WebApps, die hier jedoch nicht behandelt werden. Die "
+"Unterstützung von WebApps auf dem konvergierten Ubuntu wird weiter zunehmen "
+"und natürlich ist die Zukunft für Ubuntu Convergence, also bleib dran."
 
 #: ../../appdev/webapp/index.rst:24
 msgid "Quick start"
@@ -1731,12 +1764,16 @@ msgid ""
 "There are several tools to help you package and deploy your webapp to your "
 "device:"
 msgstr ""
+"Es gibt viele Entwicklerwerkzeuge, die dir helfen, dein Paket zu erstellen "
+"und deine WebApp auf dein Gerät auszuliefern:"
 
 #: ../../appdev/webapp/index.rst:28
 msgid ""
 "`Webapp creator <https://open-store.io/app/webapp-creator.jujuyeh>`_ "
 "application available from the openstore"
 msgstr ""
+"`Webapp Creator <https://open-store.io/app/webapp-creator.jujuyeh>`_ ist bei "
+"OpenStore verfügbar."
 
 #: ../../appdev/webapp/index.rst:29
 msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ CLI"
@@ -1744,15 +1781,17 @@ msgstr "`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ CLI"
 
 #: ../../appdev/webapp/index.rst:33
 msgid "Debugging your webapp"
-msgstr ""
+msgstr "Bereinige Fehler in deiner WebApp (Debugging)"
 
 #: ../../appdev/webapp/index.rst:35
 msgid "This guide give you some tips to help you debug your webapp."
 msgstr ""
+"Diese Anleitung gibt dir einige Tipps um dir beim Debuggen deiner WebApp zu "
+"helfen."
 
 #: ../../appdev/webapp/webdebug.rst:2
 msgid "Debug web application"
-msgstr ""
+msgstr "Webanwendungen debuggen"
 
 #: ../../appdev/webapp/webdebug.rst:4
 msgid ""
@@ -1761,26 +1800,34 @@ msgid ""
 "modern web standards, and most webapps will just work without further "
 "changes."
 msgstr ""
+"Die meisten Webentwickler werden wahrscheinlich einen Großteil ihrer Arbeit "
+"und dem Debuggen in ihrer gewohnten Browserumgebung machen wollen. Der "
+"Ubuntu Touch Browser unterstützt viele moderne Web-Standarts und die meisten "
+"WebApps werden ohne weitere Arbeit funktionieren."
 
 #: ../../appdev/webapp/webdebug.rst:6
 msgid ""
 "For those (hopefully) rare cases where further debugging is needed, there "
 "are two ways to gain further information on the failure."
 msgstr ""
+"Für den (hoffentlich) seltenen Fall, wo weiteres Debugging nötig ist, gibt "
+"es zwei Wege weitere Informationen zum Fehler zu bekommen."
 
 #: ../../appdev/webapp/webdebug.rst:9
 msgid "Watch the logs"
-msgstr ""
+msgstr "Log öffnen"
 
 #: ../../appdev/webapp/webdebug.rst:11
 msgid ""
 "If you are comfortable in a CLI environment, most Javascript errors will "
 "leave an entry in the app log file::"
 msgstr ""
+"Falls du mit der Kommandozeile zurecht kommst, werden die meisten JavaScript-"
+"Fehler einen Eintrag in der Log-Datei der App hinterlassen::"
 
 #: ../../appdev/webapp/webdebug.rst:17
 msgid "Debugging in the browser"
-msgstr ""
+msgstr "Debuggen im Browser"
 
 #: ../../appdev/webapp/webdebug.rst:20
 msgid ""
@@ -1788,10 +1835,14 @@ msgid ""
 "also used in Chrome/Chromium. By starting the browser in a special mode, you "
 "have access to the regular Chrome-style debugger."
 msgstr ""
+"Der Standartbrowser bei Ubuntu Touch basiert auf der Blinktechnologie, die "
+"auch von Chrome/Chromium genutzt wird. Indem der Browser in einem speziellem "
+"Modus gestartet wird, hast du Zugriff auf den regulären Chrome-artigen "
+"debugger."
 
 #: ../../appdev/webapp/webdebug.rst:22
 msgid "On your phone, start the browser in inspector mode:::"
-msgstr ""
+msgstr "Auf deinem Gerät, starte den Browser im Inspektormodus:::"
 
 #: ../../appdev/webapp/webdebug.rst:26
 msgid ""
