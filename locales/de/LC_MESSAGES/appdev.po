@@ -1640,7 +1640,7 @@ msgstr "Sieh dir die Hilfe an:::"
 msgid "Note: Only the following options apply to converged Ubuntu.::"
 msgstr ""
 "*Anmerkung: Nur die folgenden Optionen funktionieren unter dem konvergierten "
-"Ubuntu:::"
+"Ubuntu.:::*"
 
 #: ../../appdev/webapp/guide.rst:145
 msgid "Chrome options (if none specified, no chrome is shown by default):::"
