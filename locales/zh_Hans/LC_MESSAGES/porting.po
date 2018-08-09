@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: Chinese (Simplified) (UBports Docs)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-11 15:02-0500\n"
-"PO-Revision-Date: 2018-08-05 00:00+0000\n"
-"Last-Translator: joseph <joseph@liau.ca>\n"
+"PO-Revision-Date: 2018-08-09 11:21+0000\n"
+"Last-Translator: Luo Yufan <njlyf2011@hotmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-porting/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -47,7 +47,7 @@ msgstr ""
 msgid ""
 "If the type of the 'data' or 'userdata' partition is ``f2fs``, it is "
 "required to change it to ``ext4``."
-msgstr ""
+msgstr "如果 “data” 或 “userdata” 分区的类型是 ``f2fs`` ，则需要将其更改为` `ext4`` 。"
 
 #: ../../porting/building-halium-boot.rst:15
 msgid ""
@@ -64,7 +64,7 @@ msgstr ""
 
 #: ../../porting/building-halium-boot.rst:19
 msgid "Save and exit."
-msgstr ""
+msgstr "保存并退出。"
 
 #: ../../porting/building-halium-boot.rst:22
 msgid "Edit kernel config"
@@ -139,7 +139,7 @@ msgstr ""
 
 #: ../../porting/common-problems-install.rst:12
 msgid "SSH hangs when trying to connect"
-msgstr ""
+msgstr "尝试连接时 SSH 挂起"
 
 #: ../../porting/common-problems-install.rst:14
 msgid ""
@@ -168,11 +168,11 @@ msgstr ""
 msgid ""
 "You may now reboot the device. You should be able to connect to SSH once it "
 "comes back online."
-msgstr ""
+msgstr "您现在可以重启设备。 一旦重新联机，您应该能够连接到 SSH。"
 
 #: ../../porting/common-problems-install.rst:36
 msgid "Device reboots after a minute"
-msgstr ""
+msgstr "一分钟后设备重启"
 
 #: ../../porting/common-problems-install.rst:38
 msgid ""
@@ -205,7 +205,7 @@ msgstr ""
 
 #: ../../porting/common-problems-run.rst:7
 msgid "Nothing shows on screen"
-msgstr ""
+msgstr "屏幕上没有显示任何内容"
 
 #: ../../porting/common-problems-run.rst:9
 msgid ""
@@ -216,7 +216,7 @@ msgstr ""
 
 #: ../../porting/common-problems-run.rst:12
 msgid "Mir servers crash"
-msgstr ""
+msgstr "Mir 服务器崩溃"
 
 #: ../../porting/common-problems-run.rst:14
 msgid ""
@@ -285,7 +285,7 @@ msgstr ""
 
 #: ../../porting/common-problems-run.rst:57
 msgid "Getting more Mir logs"
-msgstr ""
+msgstr "获取更多 Mir 日志"
 
 #: ../../porting/common-problems-run.rst:59
 msgid ""
@@ -319,14 +319,14 @@ msgstr ""
 
 #: ../../porting/common-problems-run.rst:79
 msgid "Programs hang before crashing"
-msgstr ""
+msgstr "程序在崩溃前挂起"
 
 #: ../../porting/common-problems-run.rst:81
 msgid ""
 "Sometimes processes will hang for a very long time and then abort or "
 "segfault. The reason for the hang is apport, which attempts to collect "
 "useful information about the crash before allowing the program to stop."
-msgstr ""
+msgstr "有时进程会挂起很长时间，然后中止或出现段错误。 挂起的原因是 apport，它试图在允许程序停止之前收集有关崩溃的有用信息。"
 
 #: ../../porting/common-problems-run.rst:83
 msgid ""
@@ -449,11 +449,11 @@ msgstr ""
 
 #: ../../porting/installing-16-04.rst:49
 msgid "The password will be the one that you set while running halium-install."
-msgstr ""
+msgstr "密码将是您在运行 halium-install 时设置的密码。"
 
 #: ../../porting/installing-16-04.rst:52 ../../porting/running-ut.rst:74
 msgid "Common Problems"
-msgstr ""
+msgstr "常见问题"
 
 #: ../../porting/installing-16-04.rst:54
 msgid ""
@@ -484,7 +484,7 @@ msgstr ""
 msgid ""
 "This section will introduce you to some of the specifics of porting Ubuntu "
 "Touch to an Android device."
-msgstr ""
+msgstr "本节将向您介绍将 Ubuntu Touch 移植到 Android 设备的一些细节。"
 
 #: ../../porting/introduction.rst:9
 msgid ""
@@ -502,7 +502,7 @@ msgstr ""
 
 #: ../../porting/introduction.rst:25
 msgid "Getting community help"
-msgstr ""
+msgstr "获取社区帮助"
 
 #: ../../porting/introduction.rst:27
 msgid ""
@@ -514,11 +514,11 @@ msgstr ""
 
 #: ../../porting/introduction.rst:29
 msgid "Telegram: @ubports_porting"
-msgstr ""
+msgstr "Telegram: @ubports_porting"
 
 #: ../../porting/introduction.rst:30
 msgid "IRC: #ubports-porting on freenode"
-msgstr ""
+msgstr "IRC: #ubports-porting on freenode"
 
 #: ../../porting/introduction.rst:31
 msgid "Forum: `forums.ubports.com <https://forums.ubports.com>`__"
@@ -679,7 +679,7 @@ msgstr "1280x800"
 
 #: ../../porting/running-ut.rst:53
 msgid "7\""
-msgstr ""
+msgstr "7 英寸"
 
 #: ../../porting/running-ut.rst:53
 msgid "216"
@@ -696,7 +696,7 @@ msgstr "2.0"
 
 #: ../../porting/running-ut.rst:54
 msgid "'High' density laptop"
-msgstr "高密度"
+msgstr "高密度笔记本"
 
 #: ../../porting/running-ut.rst:54
 msgid "150-250"
@@ -776,7 +776,7 @@ msgstr "1080x1920"
 
 #: ../../porting/running-ut.rst:58
 msgid "5\""
-msgstr ""
+msgstr "5 英寸"
 
 #: ../../porting/running-ut.rst:58
 msgid "440"
