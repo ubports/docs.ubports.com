@@ -7,16 +7,16 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-02 15:42-0500\n"
-"PO-Revision-Date: 2018-07-02 12:48+0000\n"
-"Last-Translator: sinan <asd8089872@outlook.com>\n"
-"Language-Team: Chinese (Simplified) <https://translate.ubports.com/projects"
-"/ubports-docs/documentation-about/zh_Hans/>\n"
+"PO-Revision-Date: 2018-08-09 11:27+0000\n"
+"Last-Translator: Luo Yufan <njlyf2011@hotmail.com>\n"
+"Language-Team: Chinese (Simplified) <https://translate.ubports.com/projects/"
+"ubports-docs/documentation-about/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.15\n"
+"X-Generator: Weblate 2.20\n"
 
 #: ../../about/introduction.rst:2
 msgid "Introduction"
@@ -91,10 +91,9 @@ msgid "Click-Packages"
 msgstr "一键安装包"
 
 #: ../../about/process/branch-naming.rst:11
-#, fuzzy
 msgid "Software that is exclusively distributed as a click-package (and not also as a deb) only uses one ``master`` branch that is protected. Separate temporary development branches with arbitrary descriptive names can be created and merged into master when the time comes. For marking and archiving milestones in development history, ideally Git tags or GitHub releases should be used."
 msgstr ""
-"专门作为click-package（而不是deb）分发的软件只使用一个受保护的``master``分支。 "
+"专门作为 click-package（而不是deb）分发的软件只使用一个受保护的``master``分支。 "
 "可以创建具有任意描述性名称的单独临时开发分支，并及时合并到master分支中。为了标记和归档在开发历史记录中的重要阶段性数据，"
 "最好使用Git的tags功能或GitHub 的 releases页面。"
 
@@ -140,7 +139,6 @@ msgstr ""
 " 这意味着CI系统将会在以下存储库中查找依赖关系："
 
 #: ../../about/process/branch-naming.rst:38
-#, fuzzy
 msgid "There is no prioritization, so the build system will always use the package with the highest version number or the newest build if the version is equal."
 msgstr "因为没有优先级，构建系统将始终使用版本号最高的软件包或版本相同的最新版本。"
 
@@ -169,7 +167,6 @@ msgid "This section of the documentation details standardized processes for diff
 msgstr "这部分文档详细说明了不同团队的标准化流程。"
 
 #: ../../about/process/index.rst:7
-#, fuzzy
 msgid "The process definitions are still a work in progress and need to be completed by the respective teams."
 msgstr "流程定义的工作仍在进行中，需要由各个团队共同完成它。"
 
@@ -319,7 +316,6 @@ msgid "Additional special labels can be defined. As an example, here's the label
 msgstr "流程定义仍在进行中，它需要由各个团队来完成："
 
 #: ../../about/process/issue-tracking.rst:75
-#, fuzzy
 msgid "**critical (devel)**: This critical issue that only occurs on the devel channel is blocking the release of the next rc image."
 msgstr "** critical（devel）**：这个严重的问题只在``devel通道上阻塞了下一个rc图像的发布``这一情况中发生。"
 
@@ -343,9 +339,8 @@ msgid "If a repository that tracks issues locally defines it's own labels, they 
 msgstr "如果在本地跟踪问题的存储库定义了它自己的标签，则应将其记录在README.md中。"
 
 #: ../../about/process/issue-tracking.rst:90
-#, fuzzy
 msgid "Milestones"
-msgstr "重要阶段"
+msgstr "Milestones"
 
 #: ../../about/process/issue-tracking.rst:92
 msgid "Milestones are used for stable OTA releases only. In general, milestones for the work-in-progress OTA and the next OTA are created. The ETA is set, once the work on the release starts (that is 6 weeks from start date), but can be adjusted afterwards. See the :doc:`release-schedule <release-schedule>` for more info."
@@ -397,7 +392,7 @@ msgstr ""
 
 #: ../../about/process/issue-tracking.rst:123
 msgid "If not done already, the issue is added to the next milestone. Once the milestone is released, the issue is removed from the project board."
-msgstr ""
+msgstr "如果尚未完成，则会将问题添加到下一个 Milestone。 一旦 Milestones 发布，问题就会从项目板中删除。"
 
 #: ../../about/process/ppa.rst:2
 msgid "repo.ubports.com"
@@ -421,7 +416,7 @@ msgstr "发布时间表"
 
 #: ../../about/process/release-schedule.rst:4
 msgid "OTA updates usually follow this rhythm:"
-msgstr ""
+msgstr "OTA 更新通常遵循这个节奏："
 
 #: ../../about/process/release-schedule.rst:6
 msgid "devel: daily builds"
