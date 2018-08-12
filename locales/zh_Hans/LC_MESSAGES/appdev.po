@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-11 15:02-0500\n"
-"PO-Revision-Date: 2018-08-09 09:27+0000\n"
+"PO-Revision-Date: 2018-08-12 02:23+0000\n"
 "Last-Translator: Luo Yufan <njlyf2011@hotmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-appdev/zh_Hans/>\n"
@@ -86,7 +86,7 @@ msgstr "bluetooth"
 
 #: ../../appdev/apparmor.rst:46
 msgid "Description: Use bluetooth (bluez5) as an administrator."
-msgstr ""
+msgstr "描述：以管理员身份运行 蓝牙 (bluez5) 。"
 
 #: ../../appdev/apparmor.rst:48 ../../appdev/apparmor.rst:58
 #: ../../appdev/apparmor.rst:90 ../../appdev/apparmor.rst:120
@@ -96,7 +96,7 @@ msgstr ""
 #: ../../appdev/apparmor.rst:221 ../../appdev/apparmor.rst:267
 #: ../../appdev/apparmor.rst:277
 msgid "Usage: reserved"
-msgstr ""
+msgstr "用法：保留"
 
 #: ../../appdev/apparmor.rst:50
 msgid ""
@@ -139,11 +139,11 @@ msgstr "相机策略允许您访问设备相机。"
 
 #: ../../appdev/apparmor.rst:76
 msgid "connectivity"
-msgstr ""
+msgstr "connectivity"
 
 #: ../../appdev/apparmor.rst:78
 msgid "Description: Can access coarse network connectivity information"
-msgstr ""
+msgstr "Description: Can access coarse network connectivity information"
 
 #: ../../appdev/apparmor.rst:82
 msgid ""
@@ -174,7 +174,7 @@ msgstr "content_exchange"
 
 #: ../../appdev/apparmor.rst:98
 msgid "Description: Can request/import data from other applications"
-msgstr ""
+msgstr "描述：可以从其他应用程序请求/导入数据"
 
 #: ../../appdev/apparmor.rst:102
 msgid ""
@@ -211,7 +211,7 @@ msgstr ""
 
 #: ../../appdev/apparmor.rst:124
 msgid "document_files"
-msgstr ""
+msgstr "document_files"
 
 #: ../../appdev/apparmor.rst:126
 msgid ""
@@ -225,11 +225,11 @@ msgstr ""
 msgid ""
 "This policy allows apps to read and write to the \"Documents\" folders in "
 "the user's home directory and external media."
-msgstr ""
+msgstr "此策略允许应用程序读取和写入用户主目录和外部媒体中的“文档”文件夹。"
 
 #: ../../appdev/apparmor.rst:133
 msgid "document_files_read"
-msgstr ""
+msgstr "document_files_read"
 
 #: ../../appdev/apparmor.rst:135
 msgid ""
@@ -238,6 +238,8 @@ msgid ""
 "use the content_exchange policy group and API to access document files "
 "instead."
 msgstr ""
+"描述：可以读取所有文档文件。 此策略组保留用于某些应用程序，例如文档查看器。 开发人员通常应使用content_exchange 策略组和 API "
+"来访问文档文件。"
 
 #: ../../appdev/apparmor.rst:139
 msgid ""
@@ -254,7 +256,7 @@ msgid ""
 "Description: Can access the history-service. This policy group is reserved "
 "for vetted applications only in this version of the policy. A future version "
 "of the policy may move this out of reserved status."
-msgstr ""
+msgstr "描述：可以访问历史服务。 此策略组仅适用于此版本策略中的经审查的应用程序。 该策略的未来版本可能会将其移出保留状态。"
 
 #: ../../appdev/apparmor.rst:151
 msgid "keep-display-on"
@@ -333,7 +335,7 @@ msgstr "描述：克访问互联网"
 msgid ""
 "The networking policy group allows an app to contact network devices and use "
 "the `download manager`_."
-msgstr ""
+msgstr "网络策略组允许应用程序联系网络设备并使用 `下载管理器`_。"
 
 #: ../../appdev/apparmor.rst:207
 msgid "picture_files"
@@ -592,7 +594,7 @@ msgstr "``.desktop`` 文件"
 msgid ""
 "The launcher file will tell UT how to launch the app, which name and icon to "
 "display on the home screen, and some other properties."
-msgstr ""
+msgstr "启动器文件将告诉 Ubuntu Touch 如何启动应用程序，在主屏幕上显示什么样的名称和图标，以及其他一些属性。"
 
 #: ../../appdev/index.rst:46
 msgid "Example of ``app.desktop``::"
@@ -600,11 +602,11 @@ msgstr "``app.desktop``示例::"
 
 #: ../../appdev/index.rst:56
 msgid "Non exhaustive list of properties:"
-msgstr ""
+msgstr "非详尽的属性列表："
 
 #: ../../appdev/index.rst:58
 msgid "Name: Application title has shown in the dash"
-msgstr ""
+msgstr "Name：显示在 Dash 中的应用程序标题"
 
 #: ../../appdev/index.rst:59
 msgid "Exec: Path to the executable file"
@@ -854,7 +856,7 @@ msgstr ""
 
 #: ../../appdev/system-software.rst:57
 msgid "Now, you are ready to build the package:"
-msgstr ""
+msgstr "现在，您已准备好构建软件包："
 
 #: ../../appdev/system-software.rst:63
 msgid ""
@@ -937,7 +939,7 @@ msgstr ""
 
 #: ../../appdev/system-software.rst:138
 msgid "Unit tests"
-msgstr ""
+msgstr "单元测试"
 
 #: ../../appdev/system-software.rst:140
 msgid ""
@@ -1011,7 +1013,7 @@ msgstr ""
 msgid ""
 "You can then install the development tools you need, as well as the build "
 "dependencies of the component you want to work on:"
-msgstr ""
+msgstr "然后，您可以安装所需的开发工具，以及要使用的组件的构建依赖关系："
 
 #: ../../appdev/system-software.rst:202
 msgid "and then build the package locally:"
@@ -1071,7 +1073,7 @@ msgid ""
 "You can also give the same installation instructions to other community "
 "members, if you want them to test your changes before submitting them "
 "upstream for review."
-msgstr ""
+msgstr "如果您希望他们在将更改提交到上游进行审核之前测试您的更改，您可以向其他社区成员提供相同的安装说明。"
 
 #: ../../appdev/webapp/guide.rst:2 ../../appdev/webapp/index.rst:13
 msgid "Guide"
