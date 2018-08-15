@@ -1200,13 +1200,15 @@ msgstr ""
 
 #: ../../userguide/install.rst:36
 msgid "Download the Ubuntu Touch ROM for your device:"
-msgstr ""
+msgstr "Ubuntu Touch Rom für das Gerät herunterladen:"
 
 #: ../../userguide/install.rst:38
 msgid ""
 "`Bq E4.5 <http://www.mibqyyo.com/de-download/categorias/smartphones/aquaris-"
 "e-serie/aquaris-e4-5-ubuntu-edition/>`_ (*krillin*)"
 msgstr ""
+"`Bq E4.5 <http://www.mibqyyo.com/de-download/categorias/smartphones/"
+"aquaris-e-serie/aquaris-e4-5-ubuntu-edition/>`_ (*krillin*)"
 
 #: ../../userguide/install.rst:39
 msgid ""
