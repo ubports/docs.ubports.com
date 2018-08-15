@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-11 15:02-0500\n"
-"PO-Revision-Date: 2018-08-15 17:04+0000\n"
+"PO-Revision-Date: 2018-08-15 17:07+0000\n"
 "Last-Translator: Jonatan Hatakeyama Zeidler <jonatan_zeidler@gmx.de>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-userguide/de/>\n"
@@ -1262,7 +1262,7 @@ msgid ""
 "You will also need to use `the latest version of the tool <https://"
 "spflashtool.com/download/SP_Flash_Tool_v5.1744_Linux.zip>`_."
 msgstr ""
-"Die `neueste Version des Flash Tools <https://spflashtool.com/download/"
+"Die `neueste Version des Werkzeugs <https://spflashtool.com/download/"
 "SP_Flash_Tool_v5.1744_Linux.zip>`_ wird benötigt."
 
 #: ../../userguide/install.rst:56
@@ -1278,16 +1278,20 @@ msgid ""
 "Select the ``*Android_scatter.txt`` file from the archive you downloaded in "
 "the first step as the scatter-loading file"
 msgstr ""
+"Im ersten Schritt die Datei ``*Android_scatter.txt`` aus dem "
+"heruntergeladenen Archiv als \"scatter-loading file\" auswählen"
 
 #: ../../userguide/install.rst:59
 msgid "Choose \"Firmware Upgrade\""
-msgstr ""
+msgstr "\"Firmware Upgrade\" wählen"
 
 #: ../../userguide/install.rst:60
 msgid ""
 "Double-check you chose \"Firmware Upgrade\" and not \"Download\" or \"Format "
 "All\""
 msgstr ""
+"Noch ein Mal überprüfen, dass wirklich \"Firmware Upgrade\" ausgewählt ist "
+"und nicht \"Download\" oder \"Format All\""
 
 #: ../../userguide/install.rst:64
 msgid ""
@@ -1295,6 +1299,9 @@ msgid ""
 "useless brick rather than a fancy Ubuntu Touch device. Be sure to select "
 "FIRMWARE UPGRADE."
 msgstr ""
+"Wird DOWNLOAD statt FIRMWARE UPGRADE ausgewählt, bleibt ein nutzloses, "
+"zerstörtes Gerät zurück anstelle eines schicken Ubuntu Touch Geräts. Deshalb "
+"sicherstellen, dass FIRMWARE UPGRADE aufgewählt wurde."
 
 #: ../../userguide/install.rst:66
 msgid "Turn your device completely off, but do not connect it yet"
