@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-11 15:02-0500\n"
 "PO-Revision-Date: 2018-08-15 16:24+0000\n"
-"Last-Translator: Kevin Majewski <kevin.majewski02@gmail.com>\n"
+"Last-Translator: Jonatan Hatakeyama Zeidler <jonatan_zeidler@gmx.de>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/de/>\n"
 "Language: de\n"
@@ -593,6 +593,8 @@ msgid ""
 "Contains application declarations such as application name, description, "
 "author, framework sdk target, and version."
 msgstr ""
+"Enthält die Deklarationen der Anwendungen, wie Name, Beschreibung, Autor, "
+"Framework-SDK und Version."
 
 #: ../../appdev/index.rst:21
 msgid "Example ``manifest.json`` file::"
@@ -600,7 +602,7 @@ msgstr "Beispielhafte ``manifest.json`` Datei::"
 
 #: ../../appdev/index.rst:41
 msgid "AppArmor profile policy file"
-msgstr ""
+msgstr "AppArmor-Profildatei"
 
 #: ../../appdev/index.rst:41
 msgid ""
@@ -707,7 +709,7 @@ msgstr "Wichtige Anmerkungen zur Plattform:"
 
 #: ../../appdev/index.rst:102
 msgid "Content Hub"
-msgstr ""
+msgstr "Content Hub"
 
 #: ../../appdev/index.rst:102
 msgid ""
