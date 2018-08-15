@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-11 15:02-0500\n"
 "PO-Revision-Date: 2018-08-15 16:58+0000\n"
-"Last-Translator: Jonatan Hatakeyama Zeidler <jonatan_zeidler@gmx.de>\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-userguide/de/>\n"
 "Language: de\n"
@@ -1188,7 +1188,7 @@ msgstr ""
 
 #: ../../userguide/install.rst:33
 msgid "BE VERY CAREFUL! You are responsible for your own actions!"
-msgstr ""
+msgstr "SEI SEHR VORSICHTIG! Du bist für deine Taten selbst verantwortlich."
 
 #: ../../userguide/install.rst:35
 msgid ""
