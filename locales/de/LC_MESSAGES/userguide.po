@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-11 15:02-0500\n"
-"PO-Revision-Date: 2018-08-15 17:07+0000\n"
+"PO-Revision-Date: 2018-08-15 17:13+0000\n"
 "Last-Translator: Jonatan Hatakeyama Zeidler <jonatan_zeidler@gmx.de>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-userguide/de/>\n"
@@ -1148,7 +1148,6 @@ msgid "Install on legacy Android devices"
 msgstr "Installation auf Altgeräten"
 
 #: ../../userguide/install.rst:23
-#, fuzzy
 msgid ""
 "While the installation process is fairly simple on most devices, some legacy "
 "Bq and Meizu devices require special steps. This part of the guide does not "
@@ -1156,8 +1155,7 @@ msgid ""
 msgstr ""
 "Während die Installation auf den meisten Geräten recht einfach ist, "
 "erfordern manche Geräte von BQ oder Meizu spezielle Schritte, aufgrund ihrer "
-"geschlossenen Natur. Dieser Teil der Anleitung gilt nicht für andere Geräte "
-"oder BQ-Geräte, auf welchen die Canonical-Version von Ubuntu Touch läuft."
+"geschlossenen Natur. Dieser Teil der Anleitung gilt nicht für andere Geräte."
 
 #: ../../userguide/install.rst:27
 msgid ""
@@ -1301,39 +1299,48 @@ msgid ""
 msgstr ""
 "Wird DOWNLOAD statt FIRMWARE UPGRADE ausgewählt, bleibt ein nutzloses, "
 "zerstörtes Gerät zurück anstelle eines schicken Ubuntu Touch Geräts. Deshalb "
-"sicherstellen, dass FIRMWARE UPGRADE aufgewählt wurde."
+"sicherstellen, dass FIRMWARE UPGRADE ausgewählt wurde."
 
 #: ../../userguide/install.rst:66
 msgid "Turn your device completely off, but do not connect it yet"
-msgstr ""
+msgstr "Das Gerät komplett abschaltet, aber noch nicht verbinden"
 
 #: ../../userguide/install.rst:67
 msgid "Press the button labeled \"Download\""
-msgstr ""
+msgstr "Den Knopf mit der Aufschrift \"Download\" drücken"
 
 #: ../../userguide/install.rst:68
 msgid ""
 "Perform a final sanity-check that you selected the \"Firmware Upgrade\" "
 "option, not \"Download\""
 msgstr ""
+"Ein letztes Mal überprüfen, dass man die \"Firmware Upgrade\"-Option gewählt "
+"hat, nicht \"Download\""
 
 #: ../../userguide/install.rst:69
 msgid ""
 "Make sure your device is off and connect it to your PC. Don't use a USB 3.0 "
 "port, since that's known to cause communication issues with your device."
 msgstr ""
+"Sicherstellen, dass das Gerät ausgeschaltet ist und dann mit dem Rechner "
+"verbinden. Keine USB 3.0 Schnittstelle verwenden, weil damit "
+"Kommunikationsprobleme auftreten können."
 
 #: ../../userguide/install.rst:70
 msgid ""
 "`Magic <https://en.wikipedia.org/wiki/Clarke's_three_laws>`_ happens. Your "
 "device will boot into a super old version of Ubuntu Touch."
 msgstr ""
+"`Magie <https://en.wikipedia.org/wiki/Clarke's_three_laws>`_ geschieht. Das "
+"Gerät wird in eine super veraltete Version von Ubuntu Touch starten."
 
 #: ../../userguide/install.rst:71
 msgid ""
 "Congratulations! Your device will now boot into a very old version of Ubuntu "
 "Touch. You can now use the UBports Installer to proceed."
 msgstr ""
+"Glückwunsch! Das Gerät startet nun die super veraltete Version von Ubuntu "
+"Touch. Nun kann der UBports Installer verwendet werden."
 
 #~ msgid ""
 #~ "This is more or less uncharted territory. If the device manufacturers "
