@@ -761,7 +761,6 @@ msgstr ""
 "werden können."
 
 #: ../../appdev/index.rst:114
-#, fuzzy
 msgid "`Read the docs <https://docs.ubuntu.com/phone/en/platform/>`__"
 msgstr "`Read the docs <https://docs.ubuntu.com/phone/en/platform/>`__"
 
