@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-11 15:02-0500\n"
-"PO-Revision-Date: 2018-08-15 16:24+0000\n"
+"PO-Revision-Date: 2018-08-15 16:26+0000\n"
 "Last-Translator: Jonatan Hatakeyama Zeidler <jonatan_zeidler@gmx.de>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/de/>\n"
@@ -735,13 +735,15 @@ msgstr ""
 
 #: ../../appdev/index.rst:108
 msgid "URL dispatcher"
-msgstr ""
+msgstr "URL-Zuteiler"
 
 #: ../../appdev/index.rst:108
 msgid ""
 "Help users navigate between your apps and drive their journey with the URL "
 "dispatcher."
 msgstr ""
+"Hilft den Nutzern beim Navigieren zwischen den Apps und erledigt die "
+"Interaktion über URLs."
 
 #: ../../appdev/index.rst:112
 msgid "Online accounts"
@@ -759,8 +761,9 @@ msgstr ""
 "werden können."
 
 #: ../../appdev/index.rst:114
+#, fuzzy
 msgid "`Read the docs <https://docs.ubuntu.com/phone/en/platform/>`__"
-msgstr ""
+msgstr "`Read the docs <https://docs.ubuntu.com/phone/en/platform/>`__"
 
 #: ../../appdev/index.rst:121
 msgid "Getting started"
