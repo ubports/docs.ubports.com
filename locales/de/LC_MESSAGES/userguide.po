@@ -1215,6 +1215,8 @@ msgid ""
 "`Bq E5 HD <https://storage.googleapis.com/otas/2014/Smartphones/"
 "Aquaris_E5_HD/Ubuntu/VEGETA01A-S11A_BQ_L100EN_2017_170207.zip>`_ (*vegetahd*)"
 msgstr ""
+"`Bq E5 HD <https://storage.googleapis.com/otas/2014/Smartphones/"
+"Aquaris_E5_HD/Ubuntu/VEGETA01A-S11A_BQ_L100EN_2017_170207.zip>`_ (*vegetahd*)"
 
 #: ../../userguide/install.rst:40
 msgid ""
