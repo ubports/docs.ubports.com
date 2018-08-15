@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-11 15:02-0500\n"
-"PO-Revision-Date: 2018-08-15 16:39+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2018-08-16 05:35+0000\n"
+"Last-Translator: Jonatan Hatakeyama Zeidler <jonatan_zeidler@gmx.de>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/de/>\n"
 "Language: de\n"
@@ -602,7 +602,7 @@ msgstr "Beispiel ``manifest.json`` Datei::"
 
 #: ../../appdev/index.rst:41
 msgid "AppArmor profile policy file"
-msgstr "AppArmor Profilrichtlinien-Datei"
+msgstr "AppArmor-Profilrichtlinien-Datei"
 
 #: ../../appdev/index.rst:41
 msgid ""
