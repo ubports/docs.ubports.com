@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-11 15:02-0500\n"
-"PO-Revision-Date: 2018-08-15 16:58+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2018-08-15 17:00+0000\n"
+"Last-Translator: Jonatan Hatakeyama Zeidler <jonatan_zeidler@gmx.de>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-userguide/de/>\n"
 "Language: de\n"
@@ -1188,13 +1188,15 @@ msgstr ""
 
 #: ../../userguide/install.rst:33
 msgid "BE VERY CAREFUL! You are responsible for your own actions!"
-msgstr "SEI SEHR VORSICHTIG! Du bist für deine Taten selbst verantwortlich."
+msgstr "HÖCHSTE VORSICHTIG! Alle Aktionen auf eigene Gefahr!"
 
 #: ../../userguide/install.rst:35
 msgid ""
 "Disconnect all devices and non-essential peripherals from your PC. Charge "
 "your device on a wall-charger (not your PC) to at least 40 percent"
 msgstr ""
+"Alle Geräte und nicht-essentielle Peripherie vom Rechner trennen. Das Gerät "
+"an der Steckdose (nicht dem Rechner) auf mindestens 40 Prozent aufladen."
 
 #: ../../userguide/install.rst:36
 msgid "Download the Ubuntu Touch ROM for your device:"
