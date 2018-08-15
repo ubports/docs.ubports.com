@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-11 15:02-0500\n"
-"PO-Revision-Date: 2018-08-15 17:01+0000\n"
+"PO-Revision-Date: 2018-08-15 17:04+0000\n"
 "Last-Translator: Jonatan Hatakeyama Zeidler <jonatan_zeidler@gmx.de>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-userguide/de/>\n"
@@ -1245,26 +1245,33 @@ msgid ""
 "Download `SP flash tool <https://storage.googleapis.com/otas/2015/Tablets/"
 "Freezer%20FHD/Ubuntu/SP_Flash_Tool_exe_Linux_v5.1612.00.100.zip>`_ for Linux."
 msgstr ""
+"`SP flash tool <https://storage.googleapis.com/otas/2015/Tablets/Freezer%"
+"20FHD/Ubuntu/SP_Flash_Tool_exe_Linux_v5.1612.00.100.zip>`_ für Linux "
+"herunterladen."
 
 #: ../../userguide/install.rst:46
 msgid ""
 "On Ubuntu 17.10, there are issues with flash_tool loading the shared library "
 "'libpng12', so this can be used as a workaround:"
 msgstr ""
+"In Ubuntu 17.10 hat flash_tool Probleme mit dem Laden der Bibliothek "
+"'libpng12'. Abhilfe schafft Folgendes:"
 
 #: ../../userguide/install.rst:54
 msgid ""
 "You will also need to use `the latest version of the tool <https://"
 "spflashtool.com/download/SP_Flash_Tool_v5.1744_Linux.zip>`_."
 msgstr ""
+"Die `neueste Version des Flash Tools <https://spflashtool.com/download/"
+"SP_Flash_Tool_v5.1744_Linux.zip>`_ wird benötigt."
 
 #: ../../userguide/install.rst:56
 msgid "Extract the zip files"
-msgstr ""
+msgstr "Die zip-Dateien entpacken"
 
 #: ../../userguide/install.rst:57
 msgid "Start the tool with ``sudo``"
-msgstr ""
+msgstr "Das Werkzeug mit ``sudo`` starten"
 
 #: ../../userguide/install.rst:58
 msgid ""
