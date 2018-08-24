@@ -43,6 +43,12 @@ modify (the Contacts app, in this example):
     sudo apt-get build-dep address-book-app
     sudo apt-get install fakeroot
 
+If you see an error that ``you must put some 'source' URIs in your sources.list`` then update your sources.list file with the following command:
+
+::
+
+    sudo apt-get update
+
 This will install a bunch of packages into your device's rootfs.
 Additionally, you probably want to install ``git`` in order to get your
 app's source code in the device and later push your changes back into
