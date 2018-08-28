@@ -66,8 +66,8 @@ Libertine applications do have access to these folders:
  * Downloads 
  * Videos 
 
-Tipps
------
+Tips
+----
 
 Locations
 ^^^^^^^^^
