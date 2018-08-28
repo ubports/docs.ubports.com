@@ -3,7 +3,7 @@ Running Ubuntu Touch
 
 Now that you're logged in, there are a few more steps before Ubuntu Touch will be fully functional on your device.
 
-Make / writeable
+Make / writable
 ----------------
 
 Before we make any changes to the rootfs (which will be required for the next steps), you'll need to remount it with write permissions. To do that, run the following command::

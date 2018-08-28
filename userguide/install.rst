@@ -11,7 +11,7 @@ Go to `the download page <https://github.com/ubports/ubports-installer/releases/
  - Windows: ``ubports-installer-<version-number>.exe``
  - macOS: ``ubports-installer-<version-number>.dmg``
  - Ubuntu or Debian: ``ubports-installer-<version-number>.deb``
- - Other Linux distribtuions: ``ubports-installer-<version-number>.snap`` or ``ubports-installer-<version-number>.AppImage``
+ - Other Linux distributions: ``ubports-installer-<version-number>.snap`` or ``ubports-installer-<version-number>.AppImage``
 
 Start the installer and follow the on-screen instructions that will walk you through the installation process. That's it! Have fun exploring Ubuntu Touch!
 

@@ -11,9 +11,9 @@ To test the core functionality of the operating system, we have compiled `a set 
 Confirming bug reports
 ----------------------
 
-Unconfirmed bugreports are labeld **needs confirmation** to enable `global filtering <https://github.com/ubports/ubuntu-touch/issues?q=is%3Aissue+is%3Aopen+label%3A%22needs+confirmation%22>`__. Browse through the list, read the bugreports and try to reproduce the issues that are described. If neccessary, add :doc:`missing information or logs, or improve the quality of the report by other means <bugreporting>`. Leave a comment stating your device, channel, build number and whether or not you were able to reproduce the issue.
+Unconfirmed bugreports are labeld **needs confirmation** to enable `global filtering <https://github.com/ubports/ubuntu-touch/issues?q=is%3Aissue+is%3Aopen+label%3A%22needs+confirmation%22>`__. Browse through the list, read the bugreports and try to reproduce the issues that are described. If necessary, add :doc:`missing information or logs, or improve the quality of the report by other means <bugreporting>`. Leave a comment stating your device, channel, build number and whether or not you were able to reproduce the issue.
 
-If you have write-access to the repository, you can replace the **needs confirmation** label with **bug** (to mark it confirmed) or **invalid** (if the issue is definitely not reproducable). In that case it should be closed.
+If you have write-access to the repository, you can replace the **needs confirmation** label with **bug** (to mark it confirmed) or **invalid** (if the issue is definitely not reproducible). In that case it should be closed.
 
 If you find two issues describing the same problem, leave a comment and try to find their differences. If they are in fact identical, close the newer one and label it **duplicate**.
 

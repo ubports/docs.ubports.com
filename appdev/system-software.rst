@@ -212,7 +212,7 @@ and then build the package locally:
     DEB_BUILD_OPTIONS="parallel=4 debug" dpkg-buildpackage -rfakeroot -b
 
 Change the ``parallel`` option according to how many processor cores
-you've made available to VirtualBox in order to amximize the build
+you've made available to VirtualBox in order to maximize the build
 speed. The command above will build your package and also run all unit
 tests associated with it, so it's an easy (though not sufficient!) way
 to check that your changes won't break existing functionality. You can
