@@ -51,7 +51,7 @@ On Ubuntu 17.10, there are issues with flash_tool loading the shared library 'li
     && sudo dpkg -i /tmp/libpng12.deb \
     && rm /tmp/libpng12.deb
 
-You will also need to use `the latest version of the tool <https://spflashtool.com/download/SP_Flash_Tool_v5.1744_Linux.zip>`_.
+You will also need to use `the latest version of the tool <https://sp-flash-tool.com/wp-content/uploads/2018/04/SP_Flash_Tool_v5.1812_Linux.zip>`_.
 
 4. Extract the zip files
 5. Start the tool with ``sudo``
