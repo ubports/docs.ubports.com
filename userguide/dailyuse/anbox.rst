@@ -59,6 +59,20 @@ How to install new apks
 - cd into `data/` 
 - install the apk by using `pm install [appname].apk`
 
+Keep your apps up to date
+-------------------------
+
+To keep your apps running the lasted version you can make use off:
+
+- ApkTrack
+- Check for updates on PlayStore and other sources
+
+ApkTrack checks, if updates for installed apps are available.
+
+.. note::
+
+- ApkTrack can be found here <https://github.com/JusticeRage/ApkTrack>.
+
 Reporting bugs
 --------------
 
