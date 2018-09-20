@@ -44,7 +44,7 @@ How to install
     sudo mount -o rw,remount /
     sudo apt update
     sudo apt install anbox-ubuntu-touch
-    Run anbox install tool anbox-tool install
+    anbox-tool install
 
 - Done! 
 You might have to refresh the apps scope (pull down from the center of the screen and release) for the app to show up.
@@ -76,6 +76,21 @@ ApkTrack checks, if updates for installed apps are available.
 .. note::
 
 - ApkTrack can be found here <https://github.com/JusticeRage/ApkTrack>.
+
+How to uninstall applications
+-----------------------------
+
+- How to uninstall apps::
+
+   adb shell
+   sudo mount -o rw,remount /
+   anbox-tool app-list
+   this is a example of the app-list installed apps on your device:
+   ApkTrack (fr.kwiatkowski.ApkTrack)
+   adb uninstall fr.kwiatkowski.ApkTrack
+
+- Done! 
+You might have to refresh the apps scope (pull down from the center of the screen and release) for the app to show up.
 
 Reporting bugs
 --------------
