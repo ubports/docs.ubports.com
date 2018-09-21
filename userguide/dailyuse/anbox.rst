@@ -32,7 +32,7 @@ How to install
 - Connect the device to your computer computer and run the following commands::
 
     adb shell 
-    sudo reboot -f bootloader
+    sudo reboot bootloader
     wget http://cdimage.ubports.com/anbox-images/anbox-boot-$CODENAME.img
     sudo fastboot flash $PARTITIONNAME anbox-boot-$CODENAME.img
     sudo fastboot reboot
