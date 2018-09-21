@@ -13,9 +13,9 @@ Supported devices
 Make sure your device is supported:
 
 - Meizu Pro 5 (codename: *turbo*, name of the boot partition: *bootimg*)
-- Fairphone 2 (codename: "FP2", name of the boot partition: *boot*)
-- Oneplus one (codename: "bacon", name of the boot partition: *boot*)
-- Nexus 5 (codename: "hammerhead", name of the boot partition: *boot*)
+- Fairphone 2 (codename: *FP2*, name of the boot partition: *boot*)
+- Oneplus one (codename: *bacon*, name of the boot partition: *boot*)
+- Nexus 5 (codename: *hammerhead*, name of the boot partition: *boot*)
 - BQ M10 HD (codename: *cooler*, name of the boot partition: *boot*)
 - BQ M10 FHD (codename: *frieza*, name of the boot partition: *boot*)
 
@@ -64,11 +64,9 @@ How to install new apks
 Keep your apps up to date
 -------------------------
 
-- To keep your apps running the lasted version you can make use off::
+- To keep your apps running the lasted version you can make use of::
 
-     ApkTrack.
-     Checks, if updates for installed apps are available.
-     You can found ApkTrack on GitHub.
+     For example ApkTrack or F-Droid.
 
 How to uninstall applications
 -----------------------------
@@ -79,8 +77,8 @@ How to uninstall applications
    sudo mount -o rw,remount /
    anbox-tool app-list
    this is a example of the app-list installed apps on your device:
-   ApkTrack (fr.kwiatkowski.ApkTrack)
-   adb uninstall fr.kwiatkowski.ApkTrack
+   Aftershock (com.asvcorp.aftershock)
+   adb uninstall com.asvcorp.aftershock
 
 - Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the app to show up.
 
