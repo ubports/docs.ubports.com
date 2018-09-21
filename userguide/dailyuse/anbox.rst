@@ -27,7 +27,7 @@ How to install
 .. warning::
     Because this feature is in such an early stage of development, the installation is only recommended for experienced users.
 
-.. doc::`Install <../install>` the 16.04/devel/rc channel on your supported device
+- :doc:`Install <../install>` the 16.04/devel channel on your supported device
 - Activate developer mode on your device.
 - Connect the device to your computer computer and run the following commands::
 
@@ -38,7 +38,7 @@ How to install
     sudo fastboot reboot
     rm anbox-boot-$CODENAME.img
 
-- wait for the device to reboot, then run::
+- Wait for the device to reboot, then run::
 
     adb shell
     sudo mount -o rw,remount /
@@ -46,8 +46,7 @@ How to install
     sudo apt install anbox-ubuntu-touch
     anbox-tool install
 
-- Done! 
-You might have to refresh the apps scope (pull down from the center of the screen and release) for the app to show up.
+- Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the app to show up.
 
 How to install new apks
 -----------------------
@@ -60,22 +59,16 @@ How to install new apks
    sudo apt install android-tools-adb
    adb install my-app.apk
 
-- Done! 
-You might have to refresh the apps scope (pull down from the center of the screen and release) for the app to show up.
+- Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the app to show up.
 
 Keep your apps up to date
 -------------------------
 
-To keep your apps running the lasted version you can make use off:
+- To keep your apps running the lasted version you can make use off::
 
-- ApkTrack
-- Check for updates on PlayStore and other sources
-
-ApkTrack checks, if updates for installed apps are available.
-
-.. note::
-
-- ApkTrack can be found here <https://github.com/JusticeRage/ApkTrack>.
+     ApkTrack.
+     Checks, if updates for installed apps are available.
+     You can found ApkTrack on GitHub.
 
 How to uninstall applications
 -----------------------------
@@ -89,8 +82,7 @@ How to uninstall applications
    ApkTrack (fr.kwiatkowski.ApkTrack)
    adb uninstall fr.kwiatkowski.ApkTrack
 
-- Done! 
-You might have to refresh the apps scope (pull down from the center of the screen and release) for the app to show up.
+- Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the app to show up.
 
 Reporting bugs
 --------------
