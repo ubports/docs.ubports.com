@@ -9,12 +9,12 @@ This page will guide you through writing great documentation for the UBports pro
 Documentation guidelines
 ------------------------
 
-These rules govern *how* you should write your documentation to avoid problems with style, format, or linking. If you don't follow these guidelines, we will not accept your document.
+These rules govern how you should write your documentation to avoid problems with style, format, or linking. If you don't follow these guidelines, we will not accept your document.
 
 Title
 ^^^^^
 
-All pages must have a document title that will be shown in the table of contents (left sidebar) and at the top of the page. This title is underlined with equals signs.
+All pages must have a document title that will be shown in the table of contents (left sidebar) and at the top of the page.
 
 Titles should be sentence cased rather than Title Cased. For example::
 
@@ -27,12 +27,72 @@ Titles should be sentence cased rather than Title Cased. For example::
 
 There isn't a single definition of title casing that everyone follows, but sentence casing is easy. This helps keep capitalization in the table of contents consistent.
 
+Page titles are underlined with equals signs. For example, the markup for :doc:`./bugreporting` includes the following title:
+
+.. code-block:: rst
+
+    Bug reporting
+    =============
+
+Note that:
+
+#. The title is sentence cased
+#. The title is underlined with equals signs
+#. The underline spans the title completely without going over
+
+Incorrect examples of titles include:
+
+* Incorrect casing
+
+    .. code-block:: rst
+
+        Bug Reporting
+        =============
+
+* Underline too short
+
+    .. code-block:: rst
+
+        Bug reporting
+        =====
+
+* Underline too long
+
+    .. code-block:: rst
+
+        Bug reporting
+        ================
+
+
+Headings
+^^^^^^^^
+
+There are several levels of headings that you may place on your page. These levels are shown here in order:
+
+.. code-block:: rst
+
+    Page title
+    ==========
+
+    Level one
+    ---------
+
+    Level two
+    ^^^^^^^^^
+
+    Level three
+    """""""""""
+
+Each heading level creates a sub-section in the global table of contents tree available when the documentation is built. In the primary (web) version of the documentation, this only shows four levels deep from the top level of the documentation. Please refrain from using more heading levels than will show in this tree as it makes navigating your document difficult. If you must use this many heading levels, it is a good sign that your document should be split up into multiple pages.
+
 Table of contents
 ^^^^^^^^^^^^^^^^^
 
 People can't navigate to your new page if they can't find it. Neither can Sphinx. That's why you need to add new pages to Sphinx's table of contents.
 
-You can do this by adding the page to the ``index.rst`` file in the same directory that you created it. For example, if you create a file called "newpage.rst", you would add the line marked with a chevron (>) in the nearest index::
+You can do this by adding the page to the ``index.rst`` file in the same directory that you created it. For example, if you create a file called "newpage.rst", you would add the line marked with a chevron (>) in the nearest index:
+
+.. code-block:: rst
 
     .. toctree::
         :maxdepth: 1
@@ -47,12 +107,15 @@ The order matters. If you would like your page to appear in a certain place in t
 Warnings
 ^^^^^^^^
 
-Your edits must not introduce any warnings into the documentation build. If any warnings occur, the build will fail and your pull request will be marked with a red 'X'. Please ensure that your RST is valid and correct before you create a pull request. This is done automatically (via sphinx-build crashing with your error) if you follow our build instructions below.
+Your edits must not introduce any warnings into the documentation build. If any warnings occur, the build will fail and your pull request will be marked with a red 'X'. Please ensure that your RST is valid and correct before you create a pull request. This is done automatically (via sphinx-build crashing with your error) if you follow :ref:`our build instructions <doc-contribution-workflow>` below.
 
-Update translations
-^^^^^^^^^^^^^^^^^^^
 
-You must update the translation files to match your changes before you commit them. To do this, run ``update-translations.sh`` in this repository.
+Line length
+^^^^^^^^^^^
+
+There is no restriction on line length in this repository. Please do not break lines at an arbitrary line length. Instead, turn on word wrap in your text editor.
+
+.. _doc-contribution-workflow:
 
 Contribution workflow
 ---------------------
@@ -77,8 +140,6 @@ The documentation can be built by running ``./build.sh`` in the root of this rep
 If all went well, you can enter the ``_build/html`` directory and open ``index.html`` to view the UBports documentation.
 
 If you have trouble building the docs, the first thing to try is deleting the build environment. Run ``rm -r ~/ubportsdocsenv`` and try the build again. Depending on when you first used the build script, you may need to run the ``rm`` command with ``sudo``.
-
-Remember to `update translations`_, then commit your changes and submit a pull request. 
 
 Alternative methods to contribute
 ---------------------------------
