@@ -66,7 +66,8 @@ Keep your apps up to date
 
 - To keep your apps running the lasted version you can make use of::
 
-     For example ApkTrack or F-Droid.
+     For example F-Droid.
+     If you can not found any update for your apllication on F-Droid, you can use as example ApkTrack.
 
 How to uninstall applications
 -----------------------------
