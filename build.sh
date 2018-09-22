@@ -22,5 +22,5 @@ else
   pip install -r requirements.txt
 fi
 echo -e "${GREEN}Building...${PLAIN}"
-sphinx-build -Wa . _build/html -j `nproc --all`
+sphinx-build -Wa . _build/html -j `sysctl -n hw.ncpu`
 exit $?
