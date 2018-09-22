@@ -162,12 +162,7 @@ If you've written a complete document in ReStructuredText but aren't comfortable
 Current TODOs
 -------------
 
-This page lists the TODOs that have been included in this documentation. If you know how to fix one, please send us a Pull Request to make it better!
-
-.. toctree::
-   :maxdepth: 1
-
-   documentation-todo
+This section lists the TODOs that have been included in this documentation. If you know how to fix one, please send us a Pull Request to make it better!
 
 To create a todo, add this markup to your page::
 
@@ -175,6 +170,7 @@ To create a todo, add this markup to your page::
 
        My todo text
 
+.. todolist::
 
 .. _Its project in UBports Weblate: https://translate.ubports.com/projects/ubports-docs/
 .. _UBports Forum: https://forums.ubports.com/
