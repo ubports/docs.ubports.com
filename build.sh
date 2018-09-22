@@ -22,5 +22,9 @@ else
   pip install -r requirements.txt
 fi
 echo -e "${GREEN}Building...${PLAIN}"
-sphinx-build -Wa . _build/html -j `sysctl -n hw.ncpu`
+if [ "$(uname)" == "Darwin" ]; then
+  sphinx-build -Wa . _build/html -j `sysctl -n hw.ncpu`
+else
+  sphinx-build -Wa . _build/html -j `nproc --all`
+fi
 exit $?
