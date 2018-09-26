@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-25 14:54-0400\n"
+"POT-Creation-Date: 2018-09-26 10:06-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -98,7 +98,7 @@ msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ is a meta-build
 msgstr ""
 
 #: ../../appdev/index.rst:29
-msgid "Alternatively there is the old `Ubuntu SDK IDE <https://docs.ubuntu.com/phone/en/platform/sdk>`__. But it is no longer supported by Canonical, and UBports has chosen to not support it either due to lack of manpower."
+msgid "Alternatively there is the old `Ubuntu SDK IDE <https://docs.ubuntu.com/phone/en/platform/sdk>`__. Be aware that it is no longer supported by Canonical, and UBports has chosen to not support it either due to lack of manpower."
 msgstr ""
 
 #: ../../appdev/index.rst:32

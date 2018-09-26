@@ -27,7 +27,7 @@ It is currently the easiest and most convenient way of building click packages f
 You can use any code editor or IDE that you choose and build your apps from the commandline with Clickable.
 
 Alternatively there is the old `Ubuntu SDK IDE <https://docs.ubuntu.com/phone/en/platform/sdk>`__.
-But it is no longer supported by Canonical, and UBports has chosen to not support it either due to lack of manpower.
+Be aware that it is no longer supported by Canonical, and UBports has chosen to not support it either due to lack of manpower.
 
 It can still be installed in Ubuntu 16.04, but this is not recommended because it may not work for you.
 
