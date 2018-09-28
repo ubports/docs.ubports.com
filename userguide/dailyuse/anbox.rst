@@ -28,15 +28,17 @@ How to install
     Because this feature is in such an early stage of development, the installation is only recommended for experienced users.
 
 - :doc:`Install <../install>` the 16.04/devel channel on your supported device
+- Open a terminal and run ``export CODENAME="turbo" && export PARTITIONNAME="bootimg"``, but replace the part between the quotes respectively with the codename and name of the boot partition for your device. See the above list.
 - Activate developer mode on your device.
 - Connect the device to your computer computer and run the following commands::
 
-    adb shell 
+    adb shell
     sudo reboot bootloader
     wget http://cdimage.ubports.com/anbox-images/anbox-boot-$CODENAME.img
     sudo fastboot flash $PARTITIONNAME anbox-boot-$CODENAME.img
     sudo fastboot reboot
     rm anbox-boot-$CODENAME.img
+    exit
 
 - Wait for the device to reboot, then run::
 
@@ -45,8 +47,9 @@ How to install
     sudo apt update
     sudo apt install anbox-ubuntu-touch
     anbox-tool install
+    exit
 
-- Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the app to show up.
+- Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the new android apps to show up.
 
 How to install new apks
 -----------------------
@@ -58,30 +61,34 @@ How to install new apks
    sudo apt update
    sudo apt install android-tools-adb
    adb install my-app.apk
+   exit
 
-- Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the app to show up.
+- Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the new android apps to show up.
 
 Keep your apps up to date
 -------------------------
 
-- To keep your apps running the lasted version you can make use of::
+- To keep your apps running the lasted version you can make use of:
 
-     For example F-Droid.
-     If you can not found any update for your apllication on F-Droid, you can use as example ApkTrack.
+ - For example F-Droid or ApkTrack.
+ - If you like to install one of the above apps you can find them here:
+ - F-Droid: https://f-droid.org/
+ - ApkTrack: https://f-droid.org/packages/fr.kwiatkowski.ApkTrack/
 
 How to uninstall applications
 -----------------------------
 
+- This is a example of the app-list installed apps on your device
 - How to uninstall apps::
 
    adb shell
    sudo mount -o rw,remount /
    anbox-tool app-list
-   this is a example of the app-list installed apps on your device:
    Aftershock (com.asvcorp.aftershock)
    adb uninstall com.asvcorp.aftershock
+   exit
 
-- Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the app to show up.
+- Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the new android apps to show up.
 
 Reporting bugs
 --------------
