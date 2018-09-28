@@ -11,7 +11,7 @@ Go to `the download page <https://github.com/ubports/ubports-installer/releases/
  - Windows: ``ubports-installer-<version-number>.exe``
  - macOS: ``ubports-installer-<version-number>.dmg``
  - Ubuntu or Debian: ``ubports-installer-<version-number>.deb``
- - Other Linux distribtuions: ``ubports-installer-<version-number>.snap`` or ``ubports-installer-<version-number>.AppImage``
+ - Other Linux distributions: ``ubports-installer-<version-number>.snap`` or ``ubports-installer-<version-number>.AppImage``
 
 Start the installer and follow the on-screen instructions that will walk you through the installation process. That's it! Have fun exploring Ubuntu Touch!
 
@@ -35,7 +35,7 @@ Meizu devices are pretty much stuck on Flyme. While the MX4 can be flashed succe
 1. Disconnect all devices and non-essential peripherals from your PC. Charge your device on a wall-charger (not your PC) to at least 40 percent
 2. Download the Ubuntu Touch ROM for your device:
 
-    - `Bq E4.5 <http://www.mibqyyo.com/de-download/categorias/smartphones/aquaris-e-serie/aquaris-e4-5-ubuntu-edition/>`_ (*krillin*)
+    - `Bq E4.5 <http://cdimage.ubports.com/ubports-installer/krillin/e45.zip>`_ (*krillin*)
     - `Bq E5 HD <https://storage.googleapis.com/otas/2014/Smartphones/Aquaris_E5_HD/Ubuntu/VEGETA01A-S11A_BQ_L100EN_2017_170207.zip>`_ (*vegetahd*)
     - `Bq M10 HD <https://storage.googleapis.com/otas/2015/Tablets/Freezer/Ubuntu/OTA_13_FW_version/cooler-image-stable-6.zip>`_ (*cooler*)
     - `Bq M10 FHD <https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/Ubuntu/OTA_15/frieza-image-stable-8.zip>`_ (*frieza*)

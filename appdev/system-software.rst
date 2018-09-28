@@ -43,6 +43,12 @@ modify (the Contacts app, in this example):
     sudo apt-get build-dep address-book-app
     sudo apt-get install fakeroot
 
+If you see an error that ``you must put some 'source' URIs in your sources.list`` then update your sources.list file with the following command:
+
+::
+
+    sudo apt-get update
+
 This will install a bunch of packages into your device's rootfs.
 Additionally, you probably want to install ``git`` in order to get your
 app's source code in the device and later push your changes back into
@@ -206,7 +212,7 @@ and then build the package locally:
     DEB_BUILD_OPTIONS="parallel=4 debug" dpkg-buildpackage -rfakeroot -b
 
 Change the ``parallel`` option according to how many processor cores
-you've made available to VirtualBox in order to amximize the build
+you've made available to VirtualBox in order to maximize the build
 speed. The command above will build your package and also run all unit
 tests associated with it, so it's an easy (though not sufficient!) way
 to check that your changes won't break existing functionality. You can

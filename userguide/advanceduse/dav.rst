@@ -1,11 +1,11 @@
 CalDAV and CardDAV synchronization
 ==================================
 
-CalDAV and CardDAV are protocols to syncronize calendars and contacts with a remote server. Many email-hosters provide a CalDAV and CardDAV interface.
+CalDAV and CardDAV are protocols to synchronize calendars and contacts with a remote server. Many email-hosters provide a CalDAV and CardDAV interface.
 
 **Note:** CalDAV Sync can also be set up in using the calendar app. Open the app, click on the little calendar icon in the top right corner and select "Add internet calendar > Generic CalDAV". Enter your calendar URL as well as your username and password to complete the process.
 
-At the moment, there is no carddav implemention directly accessible from the Ubuntu Touch graphical user-interface, so the only way to sync carddav is by using syncevolution + cron. However, there is a simple way to do that with a script that you can run in the terminal or via phablet SSH connection. These instructions work for caldav as well.
+At the moment, there is no carddav implementation directly accessible from the Ubuntu Touch graphical user-interface, so the only way to sync carddav is by using syncevolution + cron. However, there is a simple way to do that with a script that you can run in the terminal or via phablet SSH connection. These instructions work for caldav as well.
 
 1) Follow this `guide <https://docs.ubports.com/en/latest/userguide/advanceduse/adb.html>`_ to activate Developer Mode and ADB (or SSH) connection.
 
@@ -14,10 +14,10 @@ At the moment, there is no carddav implemention directly accessible from the Ubu
 
 * server side : CAL_URL, **CONTACTS_URL**, USERNAME, PASSWORD (of your ownCloud/nextCloud/baikal/SOGO/... server)
 * CONTACT and CALENDAR _ NAME / VISUAL_NAME / CONFIG_NAME (it's more cosmetic)
-* CRON_FREQUENCY (for the frequency of synchronisation)
+* CRON_FREQUENCY (for the frequency of synchronization)
 * Line 61: write ``sudo sh -c "echo '$COMMAND_LINE' > /sbin/sogosync"`` , instead of ``sudo echo "$COMMAND_LINE" > /sbin/sogosync``, to avoid permission denied error
 
-3) Move the file to your UbuntuTouch device, either by file manager or with adb:: 
+3) Move the file to your Ubuntu Touch device, either by file manager or with adb:: 
 
     adb push dav.sh /home/phablet
 
