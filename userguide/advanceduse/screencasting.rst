@@ -3,7 +3,7 @@ Screen Casting your UT device to your computer
 
 
 Ubuntu Touch comes with a command line utility called ``mirscreencast`` which dumps screen frames to a file.
-The idea here is to stream UT display to a listening computer over the network or directy trough adb so that we can either watch it live or record it to a file.
+The idea here is to stream UT display to a listening computer over the network or directly trough adb so that we can either watch it live or record it to a file.
 
 Using adb
 ---------

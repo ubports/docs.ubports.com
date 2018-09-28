@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-02 15:42-0500\n"
+"POT-Creation-Date: 2018-08-28 14:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgid "The UBports project was founded by Marius Gripsgard in 2015 and in its in
 msgstr ""
 
 #: ../../about/introduction.rst:11
-msgid "After Canonical suddenly announced `their plans to terminate support of Ubuntu Touch <https://insights.ubuntu.com/2017/04/05/growing-ubuntu-for-cloud-and-iot-rather-than-phone-and-convergence/>`_ in April of 2017, UBports and its sister projects began work on the open-source code, maintaining and expanding its possiblilities for the future."
+msgid "After Canonical suddenly announced `their plans to terminate support of Ubuntu Touch <https://insights.ubuntu.com/2017/04/05/growing-ubuntu-for-cloud-and-iot-rather-than-phone-and-convergence/>`_ in April of 2017, UBports and its sister projects began work on the open-source code, maintaining and expanding its possibilities for the future."
 msgstr ""
 
 #: ../../about/introduction.rst:14
@@ -145,7 +145,7 @@ msgid "Where are bugs tracked?"
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:9
-msgid "Since our quality assurance depends heavily on the community, we try to track issues where the user would expect them, instead of seperated by repository. This means, that issues of almost all components that are distributed as with the system-image are tracked in the `Ubuntu Touch tracker <https://github.com/ubports/ubuntu-touch>`__. An exception of this are click-apps that can be updated independently through the OpenStore."
+msgid "Since our quality assurance depends heavily on the community, we try to track issues where the user would expect them, instead of separated by repository. This means, that issues of almost all components that are distributed as with the system-image are tracked in the `Ubuntu Touch tracker <https://github.com/ubports/ubuntu-touch>`__. An exception of this are click-apps that can be updated independently through the OpenStore."
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:17
@@ -165,7 +165,7 @@ msgid "GitHub projects"
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:30
-msgid "To increase transparency and communication, GitHub projects (Kanban-Boards) are used whereever practical. In case of github.com/ubports/ubuntu-touch, a single project is used for all issues. Projects support filtering by labels, so that only issues that belong to a specific team or affect a specific device can be viewed."
+msgid "To increase transparency and communication, GitHub projects (Kanban-Boards) are used wherever practical. In case of github.com/ubports/ubuntu-touch, a single project is used for all issues. Projects support filtering by labels, so that only issues that belong to a specific team or affect a specific device can be viewed."
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:36
@@ -173,11 +173,11 @@ msgid "These are the standard columns:"
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:38
-msgid "**None (awaiting triage)**: The issue has been approved by a member of the qa team and is awaiting review from the responsible development team. if the issue is a bug, instructions to reproduce are included in the issue description. if the issue is a feature request, it has passed a primary sanity check by the qa-team but has not yet been accepted by the responsible development-team."
+msgid "**None (awaiting triage)**: The issue has been approved by a member of the QA team and is awaiting review from the responsible development team. if the issue is a bug, instructions to reproduce are included in the issue description. if the issue is a feature request, it has passed a primary sanity check by the qa-team but has not yet been accepted by the responsible development-team."
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:39
-msgid "**Accepted**: The issue has been accepted by the responsible development-team. If the issue is a bugreport, the team has decided that it should be fixable and accepts the responsibility. If the issue is a featrue request, the team thinks it should be implemented as described."
+msgid "**Accepted**: The issue has been accepted by the responsible development-team. If the issue is a bugreport, the team has decided that it should be fixable and accepts the responsibility. If the issue is a feature request, the team thinks it should be implemented as described."
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:40
@@ -213,7 +213,7 @@ msgid "**needs confirmation**: The bug needs confirmation and / or further infor
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:55
-msgid "**bug**: This issue is a confirmed bug. If it's reproducable, reproduction steps are described."
+msgid "**bug**: This issue is a confirmed bug. If it's reproducible, reproduction steps are described."
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:57
@@ -317,7 +317,7 @@ msgid "The affected *Team* will triage the issue and either reject (label **wont
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:121
-msgid "Once a *developer* is assigned and starts working on the issue, it is moved to “In Development”. As soon as they have something to show for, the issue is closed and automatically moved to “Quality Assurance” for feedback from the QA team. If neccessary, the developer will provide hints on how to test his patch in a comment on the issue."
+msgid "Once a *developer* is assigned and starts working on the issue, it is moved to “In Development”. As soon as they have something to show for, the issue is closed and automatically moved to “Quality Assurance” for feedback from the QA team. If necessary, the developer will provide hints on how to test his patch in a comment on the issue."
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:122
