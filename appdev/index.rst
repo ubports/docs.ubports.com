@@ -6,9 +6,9 @@ Welcome to an open source and free platform under constant scrutiny and improvem
 Get started
 -----------
 
-Ubuntu Touch is a fun and vibrant platform for development. Whether your a new developer or an experienced one we have several resources to help you get started.
+Ubuntu Touch is a fun and vibrant platform for development. Whether you're a new developer or an experienced one, we have several resources to help you get started.
 
-Ubuntu Touch supports several different types of apps. :ref:`Native apps <nativeapp>` are apps with interfaces made using QML or HTML and their behavior defined in JavaScript, C++, Python, or Go. :ref:`Web apps <webapp>` are special containers to run websites in.
+Ubuntu Touch supports several different types of apps. :ref:`Native apps <nativeapp>` are apps with interfaces made using QML or HTML with their behavior defined in JavaScript, C++, Python, or Go. :ref:`Web apps <webapp>` are special containers to run websites in.
 
 .. toctree::
     :maxdepth: 1
@@ -20,13 +20,11 @@ Ubuntu Touch supports several different types of apps. :ref:`Native apps <native
 Tools
 -----
 
-`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ is a meta-build system for Ubuntu Touch applications that allows you to compile, build, test and publish `click` packages and provides various templates to get you started with app development. It is currently the easiest and most convenient way of building click packages for Ubuntu Touch. You can use any code editor or IDE that you choose and build your apps from the commandline with Clickable.
+`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ is a meta-build system for Ubuntu Touch applications that allows you to compile, build, test and publish ``click`` packages and provides various templates to get you started with app development. It is currently the easiest and most convenient way of building click packages for Ubuntu Touch. You can use any code editor or IDE that you choose and build your apps from the commandline with Clickable.
 
 Alternatively there is the old `Ubuntu SDK IDE <https://docs.ubuntu.com/phone/en/platform/sdk>`__. Be aware that it is no longer supported by Canonical, and UBports has chosen to not support it either due to lack of manpower.
 
-It can still be installed in Ubuntu 16.04, but this is not recommended because it may not work for you.
-
-::
+You can still install the SDK IDE in Ubuntu 16.04, but it is not guaranteed to work correctly. You can use the following commands to install::
 
     sudo add-apt-repository ppa:ubuntu-sdk-team/ppa
     sudo apt update && sudo apt dist-upgrade
