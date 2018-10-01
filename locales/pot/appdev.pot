@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-26 10:06-0400\n"
+"POT-Creation-Date: 2018-10-01 09:11-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,7 +65,7 @@ msgid "We are currently working on expanding our list of developer guides. In th
 msgstr ""
 
 #: ../../appdev/guides/index.rst:9
-#: ../../appdev/publishing/index.rst:9
+#: ../../appdev/publishing/index.rst:8
 msgid "If you are interested in helping create developer guides check out our `GitLab Project <https://gitlab.com/ubports/ux/development-resources>`__."
 msgstr ""
 
@@ -89,71 +89,71 @@ msgstr ""
 msgid "Ubuntu Touch supports several different types of apps. :ref:`Native apps <nativeapp>` are apps with interfaces made using QML or HTML and their behavior defined in JavaScript, C++, Python, or Go. :ref:`Web apps <webapp>` are special containers to run websites in."
 msgstr ""
 
-#: ../../appdev/index.rst:23
+#: ../../appdev/index.rst:21
 msgid "Tools"
 msgstr ""
 
-#: ../../appdev/index.rst:25
+#: ../../appdev/index.rst:23
 msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ is a meta-build system for Ubuntu Touch applications that allows you to compile, build, test and publish `click` packages and provides various templates to get you started with app development. It is currently the easiest and most convenient way of building click packages for Ubuntu Touch. You can use any code editor or IDE that you choose and build your apps from the commandline with Clickable."
 msgstr ""
 
-#: ../../appdev/index.rst:29
+#: ../../appdev/index.rst:25
 msgid "Alternatively there is the old `Ubuntu SDK IDE <https://docs.ubuntu.com/phone/en/platform/sdk>`__. Be aware that it is no longer supported by Canonical, and UBports has chosen to not support it either due to lack of manpower."
 msgstr ""
 
-#: ../../appdev/index.rst:32
+#: ../../appdev/index.rst:27
 msgid "It can still be installed in Ubuntu 16.04, but this is not recommended because it may not work for you."
 msgstr ""
 
-#: ../../appdev/index.rst:44
+#: ../../appdev/index.rst:39
 msgid "Guides"
 msgstr ""
 
-#: ../../appdev/index.rst:46
+#: ../../appdev/index.rst:41
 msgid "Get started building your first app or learn about advanced concepts with our :ref:`Developer guides <devguides>`."
 msgstr ""
 
-#: ../../appdev/index.rst:56
+#: ../../appdev/index.rst:51
 msgid "Publishing"
 msgstr ""
 
-#: ../../appdev/index.rst:58
+#: ../../appdev/index.rst:53
 msgid "After you are done building your app, distribute it on the `OpenStore <https://open-store.io/>`__ with our :ref:`Publishing guides <publishing>`."
 msgstr ""
 
-#: ../../appdev/index.rst:67
+#: ../../appdev/index.rst:62
 msgid "Documentation"
 msgstr ""
 
-#: ../../appdev/index.rst:69
+#: ../../appdev/index.rst:64
 msgid "`QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:70
+#: ../../appdev/index.rst:65
 msgid "`Cordova HTML5 API <https://api-docs.ubports.com/sdk/apps/html5/index.html>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:71
+#: ../../appdev/index.rst:66
 msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:74
+#: ../../appdev/index.rst:69
 msgid "More Documentation"
 msgstr ""
 
-#: ../../appdev/index.rst:86
+#: ../../appdev/index.rst:81
 msgid "Sample apps"
 msgstr ""
 
-#: ../../appdev/index.rst:88
+#: ../../appdev/index.rst:83
 msgid "Learn more about app development by digging into our :ref:`Sample apps <sampleapps>`."
 msgstr ""
 
-#: ../../appdev/index.rst:97
+#: ../../appdev/index.rst:92
 msgid "System Development"
 msgstr ""
 
-#: ../../appdev/index.rst:99
+#: ../../appdev/index.rst:94
 msgid "Want to help build the core of Ubuntu Touch? Read our guide on :ref:`System development <platform>`."
 msgstr ""
 
@@ -815,7 +815,7 @@ msgstr ""
 msgid "We are currently working on expanding our list of sample apps. In the mean time many apps on the `OpenStore <https://open-store.io/>`__ are open source and can be used as a reference."
 msgstr ""
 
-#: ../../appdev/samples/index.rst:10
+#: ../../appdev/samples/index.rst:8
 msgid "If you are interested in helping create sample apps check out our `GitLab Project <https://gitlab.com/ubports/ux/development-resources>`__."
 msgstr ""
 
