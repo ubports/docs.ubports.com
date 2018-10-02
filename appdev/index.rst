@@ -17,6 +17,11 @@ Ubuntu Touch supports several different types of apps. :ref:`Native apps <native
     nativeapp/index
     webapp/index
 
+Community
+---------
+
+Have questions that aren't answered in the docs or want to chat with other Ubuntu Touch developers? Join our `app dev Telegram group <https://t.me/UbuntuAppDevEN>`_ or chat with us on the `UBports app dev forum <https://forums.ubports.com/category/35/app-development>`_.
+
 Tools
 -----
 
