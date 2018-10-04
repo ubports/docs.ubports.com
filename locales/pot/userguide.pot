@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-21 21:44+0200\n"
+"POT-Creation-Date: 2018-09-25 14:54-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -105,7 +105,7 @@ msgid "CalDAV and CardDAV synchronization"
 msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:4
-msgid "CalDAV and CardDAV are protocols to syncronize calendars and contacts with a remote server. Many email-hosters provide a CalDAV and CardDAV interface."
+msgid "CalDAV and CardDAV are protocols to synchronize calendars and contacts with a remote server. Many email-hosters provide a CalDAV and CardDAV interface."
 msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:6
@@ -113,7 +113,7 @@ msgid "**Note:** CalDAV Sync can also be set up in using the calendar app. Open 
 msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:8
-msgid "At the moment, there is no carddav implemention directly accessible from the Ubuntu Touch graphical user-interface, so the only way to sync carddav is by using syncevolution + cron. However, there is a simple way to do that with a script that you can run in the terminal or via phablet SSH connection. These instructions work for caldav as well."
+msgid "At the moment, there is no carddav implementation directly accessible from the Ubuntu Touch graphical user-interface, so the only way to sync carddav is by using syncevolution + cron. However, there is a simple way to do that with a script that you can run in the terminal or via phablet SSH connection. These instructions work for caldav as well."
 msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:10
@@ -133,7 +133,7 @@ msgid "CONTACT and CALENDAR _ NAME / VISUAL_NAME / CONFIG_NAME (it's more cosmet
 msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:17
-msgid "CRON_FREQUENCY (for the frequency of synchronisation)"
+msgid "CRON_FREQUENCY (for the frequency of synchronization)"
 msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:18
@@ -141,7 +141,7 @@ msgid "Line 61: write ``sudo sh -c \"echo '$COMMAND_LINE' > /sbin/sogosync\"`` ,
 msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:20
-msgid "Move the file to your UbuntuTouch device, either by file manager or with adb::"
+msgid "Move the file to your Ubuntu Touch device, either by file manager or with adb::"
 msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:24
@@ -251,7 +251,7 @@ msgid "Screen Casting your UT device to your computer"
 msgstr ""
 
 #: ../../userguide/advanceduse/screencasting.rst:5
-msgid "Ubuntu Touch comes with a command line utility called ``mirscreencast`` which dumps screen frames to a file. The idea here is to stream UT display to a listening computer over the network or directy trough adb so that we can either watch it live or record it to a file."
+msgid "Ubuntu Touch comes with a command line utility called ``mirscreencast`` which dumps screen frames to a file. The idea here is to stream UT display to a listening computer over the network or directly trough adb so that we can either watch it live or record it to a file."
 msgstr ""
 
 #: ../../userguide/advanceduse/screencasting.rst:9
@@ -495,7 +495,7 @@ msgid "Reporting bugs"
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:65
-msgid "Please :doc:`report any bugs </contribute/bugreporting>` you come accross. Bugs with Ubuntu Touch 16.04 are reported in `the normal Ubuntu Touch tracker <https://github.com/ubports/ubuntu-touch/issues>`_ and issues with anbox are reported on `our downstream fork <https://github.com/ubports/anbox/issues>`_. Thank you!"
+msgid "Please :doc:`report any bugs </contribute/bugreporting>` you come across. Bugs with Ubuntu Touch 16.04 are reported in `the normal Ubuntu Touch tracker <https://github.com/ubports/ubuntu-touch/issues>`_ and issues with anbox are reported on `our downstream fork <https://github.com/ubports/anbox/issues>`_. Thank you!"
 msgstr ""
 
 #: ../../userguide/dailyuse/index.rst:2
@@ -635,7 +635,7 @@ msgid "Videos"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:70
-msgid "Tipps"
+msgid "Tips"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:73
@@ -757,7 +757,7 @@ msgid "Ubuntu or Debian: ``ubports-installer-<version-number>.deb``"
 msgstr ""
 
 #: ../../userguide/install.rst:14
-msgid "Other Linux distribtuions: ``ubports-installer-<version-number>.snap`` or ``ubports-installer-<version-number>.AppImage``"
+msgid "Other Linux distributions: ``ubports-installer-<version-number>.snap`` or ``ubports-installer-<version-number>.AppImage``"
 msgstr ""
 
 #: ../../userguide/install.rst:16
@@ -797,7 +797,7 @@ msgid "Download the Ubuntu Touch ROM for your device:"
 msgstr ""
 
 #: ../../userguide/install.rst:38
-msgid "`Bq E4.5 <http://www.mibqyyo.com/de-download/categorias/smartphones/aquaris-e-serie/aquaris-e4-5-ubuntu-edition/>`_ (*krillin*)"
+msgid "`Bq E4.5 <http://cdimage.ubports.com/ubports-installer/krillin/e45.zip>`_ (*krillin*)"
 msgstr ""
 
 #: ../../userguide/install.rst:39
