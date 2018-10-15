@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Chinese (Simplified) (UBports Docs)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-11 15:02-0500\n"
-"PO-Revision-Date: 2018-08-09 11:21+0000\n"
+"PO-Revision-Date: 2018-09-22 08:16+0000\n"
 "Last-Translator: Luo Yufan <njlyf2011@hotmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-porting/zh_Hans/>\n"
@@ -23,6 +23,7 @@ msgid ""
 "Halium-boot is a new proposed boot image in the Halium project, replacing "
 "hybris-boot. We will be building and using it for Ubuntu Touch."
 msgstr ""
+"Halium-boot是 Halium 项目新推出的启动映像，用以取代 hybris-boot。 我们将为 Ubuntu Touch 构建和使用它。"
 
 #: ../../porting/building-halium-boot.rst:7
 msgid "Fix mounts"
@@ -129,7 +130,7 @@ msgstr "现在您已经构建了 halium-boot，请移步到 :doc:`installing-16-
 
 #: ../../porting/common-problems-install.rst:7
 msgid "Common installation problems"
-msgstr ""
+msgstr "常见安装问题"
 
 #: ../../porting/common-problems-install.rst:9
 msgid ""
@@ -162,7 +163,7 @@ msgstr ""
 
 #: ../../porting/common-problems-install.rst:25
 msgid "Run the following commands to disable rsyslogd::"
-msgstr ""
+msgstr "运行以下命令来禁用 rsyslogd::"
 
 #: ../../porting/common-problems-install.rst:33
 msgid ""
@@ -250,7 +251,7 @@ msgstr ""
 
 #: ../../porting/common-problems-run.rst:34
 msgid "Are all of the Android partitions mounted?"
-msgstr ""
+msgstr "所有 Android 分区都被挂载了么？"
 
 #: ../../porting/common-problems-run.rst:36
 msgid ""

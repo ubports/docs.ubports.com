@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-11 15:02-0500\n"
-"PO-Revision-Date: 2018-08-05 23:17+0000\n"
-"Last-Translator: Florian Leeber <flori@bin.org.in>\n"
+"PO-Revision-Date: 2018-08-16 05:35+0000\n"
+"Last-Translator: Jonatan Hatakeyama Zeidler <jonatan_zeidler@gmx.de>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/de/>\n"
 "Language: de\n"
@@ -569,16 +569,16 @@ msgid ""
 "readthedocs.io/en/latest/>`_ packaging. App UIs can be created using QML or "
 "HTML5 and behavior can be created using JS, Qt, C++, Python, or Go."
 msgstr ""
-"Ubuntu Touch nutzt drei Arten von Anwendungen:  `Web Anwendungen`_ (WebApps)"
-", Scopes (veraltet) and `Native Anwendungen`_. Anwendungen können im Format `"
-"Click <https://click.readthedocs.io/en/latest/>`_ Archiv gepackt, verteilt "
-"und bereitgestellt werden. App Oberflächen können mit QML oder HTML5 "
-"erstellt und das Verhalten mit JavaScript, Qt, C++, Python oder Go erstellt "
-"werden."
+"Ubuntu Touch hat drei Typen von Anwendungen:  `Web-Anwendungen`_ (WebApps), "
+"Scopes (veraltet) und `Native Anwendungen`_. Anwendungen werden gerpackt, "
+"verteilt und bereitgestellt mit einem Format namens `Click "
+"<https://click.readthedocs.io/en/latest/>`_. Anwendungsoberflächen können "
+"mit QML oder HTML5 und das Verhalten mit JavaScript, Qt, C++, Python oder Go "
+"erstellt werden."
 
 #: ../../appdev/index.rst:14
 msgid "Click package overview"
-msgstr "Click-Pakete Übersicht"
+msgstr "Übersicht Click-Pakete"
 
 #: ../../appdev/index.rst:16
 msgid "Every ``click`` application package must embed at least 3 files:"
@@ -593,14 +593,16 @@ msgid ""
 "Contains application declarations such as application name, description, "
 "author, framework sdk target, and version."
 msgstr ""
+"Enthält die Deklarationen der Anwendungen, wie Name, Beschreibung, Autor, "
+"Ziel-Framework-SDK und Version."
 
 #: ../../appdev/index.rst:21
 msgid "Example ``manifest.json`` file::"
-msgstr "Beispielhafte ``manifest.json`` Datei::"
+msgstr "Beispiel ``manifest.json`` Datei::"
 
 #: ../../appdev/index.rst:41
 msgid "AppArmor profile policy file"
-msgstr ""
+msgstr "AppArmor-Profilrichtlinien-Datei"
 
 #: ../../appdev/index.rst:41
 msgid ""
@@ -655,7 +657,7 @@ msgid ""
 "Link or Directory."
 msgstr ""
 "Type: Art des Starters. Möglich sind Application (Anwendung), Link oder "
-"Directory (Verzeichnis)"
+"Directory (Verzeichnis)."
 
 #: ../../appdev/index.rst:63
 msgid "X-Ubuntu-Touch: ``true`` to make the app visible"
@@ -707,7 +709,7 @@ msgstr "Wichtige Anmerkungen zur Plattform:"
 
 #: ../../appdev/index.rst:102
 msgid "Content Hub"
-msgstr ""
+msgstr "Content Hub"
 
 #: ../../appdev/index.rst:102
 msgid ""
@@ -733,13 +735,15 @@ msgstr ""
 
 #: ../../appdev/index.rst:108
 msgid "URL dispatcher"
-msgstr ""
+msgstr "URL-Zuteiler"
 
 #: ../../appdev/index.rst:108
 msgid ""
 "Help users navigate between your apps and drive their journey with the URL "
 "dispatcher."
 msgstr ""
+"Hilft den Nutzern beim Navigieren zwischen den Apps und erledigt die "
+"Interaktion über URLs."
 
 #: ../../appdev/index.rst:112
 msgid "Online accounts"
@@ -758,7 +762,7 @@ msgstr ""
 
 #: ../../appdev/index.rst:114
 msgid "`Read the docs <https://docs.ubuntu.com/phone/en/platform/>`__"
-msgstr ""
+msgstr "`Read the docs <https://docs.ubuntu.com/phone/en/platform/>`__"
 
 #: ../../appdev/index.rst:121
 msgid "Getting started"
@@ -1465,9 +1469,8 @@ msgid ""
 "http://www.ubuntu.com/* is the pattern The asterix is a wildcard that "
 "matches any valid sequence of trailing (right-most) characters in a URL"
 msgstr ""
-"http://www.ubuntu.com/* ist das Muster. Der Stern ist ein Platzhalter "
-"(Wildcard), der allen gültigen Folge von Zeichen, die den Stern in der "
-"Adresse ersetzen, entspricht."
+"http://www.ubuntu.com/* ist das Muster. Das Sternchen ist ein Platzhalter "
+"(Wildcard) für eine gültige Folgen von Zeichen in der Adresse."
 
 #: ../../appdev/webapp/guide.rst:69
 msgid ""
@@ -1494,7 +1497,7 @@ msgid ""
 msgstr ""
 "Tipp: Stelle sicher, die komplette Subdomain deiner Startseite zu verwenden, "
 "wie beispielsweise http://www.ubuntu.com statt www.ubuntu.com. Andernfalls "
-"wäre die Adresse mehrdeutig und kann dann Sicherheisprobleme verursachen. "
+"wäre die Adresse mehrdeutig und kann dann Sicherheitsprobleme verursachen. "
 "Nun zu komplexeren Wildcard-Mustern."
 
 #: ../../appdev/webapp/guide.rst:74
@@ -1506,10 +1509,10 @@ msgid ""
 "while not allowing access to www.ubuntu.com/desktop or www.ubuntu.com/phone::"
 msgstr ""
 "Eventuell möchtest du nur den Zugriff auf einige Unterseiten der Seite "
-"innerhalb der Web-App gestatten. Auch dies entspricht einem einem Wildcard-"
-"Muster. (Links zu anderen Unterseiten werden im Browser geöffnet.) Zum "
-"Beispiel wird im Folgenden nur der Zugang zu www.ubuntu.com/desktop/features "
-"und www.ubuntu.com/phone/features gestattet, jedoch nicht auf www.ubuntu.com/"
+"innerhalb der Web-App gestatten. Auch dies entspricht einem Wildcard-Muster. "
+"(Links zu anderen Unterseiten werden im Browser geöffnet.) Zum Beispiel wird "
+"im Folgenden nur der Zugang zu www.ubuntu.com/desktop/features und "
+"www.ubuntu.com/phone/features gestattet, jedoch nicht auf www.ubuntu.com/"
 "desktop oder www.ubuntu.com/phone::"
 
 #: ../../appdev/webapp/guide.rst:80
@@ -1592,10 +1595,10 @@ msgid ""
 "subdomain and subpages, including back to the starting URL (http://www."
 "ubuntu.com) and its subpages."
 msgstr ""
-"*Anmerkung: Ein Stern anstelle der Subdomain entspricht jeder gültigen "
+"Anmerkung: Ein Sternchen anstelle der Subdomain entspricht jeder gültigen "
 "Subdomain. Dieses einzelne Muster reicht aus, um den Zugang auf alle "
 "Subdomains und Unterseiten zu erlauben, inklusive der Startseite "
-"(http://www.ubuntu.com) und deren Unterseiten.*"
+"(http://www.ubuntu.com) und deren Unterseiten."
 
 #: ../../appdev/webapp/guide.rst:114
 msgid "Adding https"
@@ -1616,9 +1619,9 @@ msgid ""
 "Note: the question mark in https?. This means the preceding character (the "
 "‘s’) is optional. If https is always required, omit the question mark."
 msgstr ""
-"*Anmerkung: Siehst du das Fragezeichen in https?? Das bedeutet, dass das "
+"Anmerkung: Siehst du in https? das Fragezeichen? Das bedeutet, dass das "
 "vorherige Zeichen (das ‘s’) optional ist. Falls https immer verwendet wird, "
-"entferne das Fragezeichen.*"
+"entferne das Fragezeichen."
 
 #: ../../appdev/webapp/guide.rst:123
 msgid "Command line arguments"
@@ -1653,8 +1656,8 @@ msgid ""
 "Note: The other available options are specific to desktop webapps. It is "
 "recommended to not use them anymore."
 msgstr ""
-"*Anmerkung: Die anderen Optionen sind speziell für Desktop Web-Apps. Es wird "
-"empfohlen, sie nicht mehr zu verwenden.*"
+"Anmerkung: Die anderen Optionen sind speziell für Desktop-Web-Apps. Es wird "
+"empfohlen, sie nicht mehr zu verwenden."
 
 #: ../../appdev/webapp/guide.rst:153
 msgid "User-Agent string override"
@@ -1772,12 +1775,14 @@ msgid ""
 "`Webapp creator <https://open-store.io/app/webapp-creator.jujuyeh>`_ "
 "application available from the openstore"
 msgstr ""
-"`Webapp Creator <https://open-store.io/app/webapp-creator.jujuyeh>`_ ist bei "
+"`Webapp Creator <https://open-store.io/app/webapp-creator.jujuyeh>`_ ist im "
 "OpenStore verfügbar."
 
 #: ../../appdev/webapp/index.rst:29
 msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ CLI"
-msgstr "`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ CLI"
+msgstr ""
+"`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ "
+"Kommandozeilenprogramm"
 
 #: ../../appdev/webapp/index.rst:33
 msgid "Debugging your webapp"
