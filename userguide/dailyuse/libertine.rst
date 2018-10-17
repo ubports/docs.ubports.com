@@ -114,6 +114,13 @@ To get a shell as user ``phablet`` run:
 .. note::
     When you launch bash in this way you will not get any specific feedback to confirm that you are now *inside* the container. You can check ``ls /`` to confirm for yourself that you are inside the container. The listing of ``ls /`` will be different inside and outside of the container.
 
+**Shortcuts** 
+
+If you want, you can add aliases for command line tools. Add lines like the following ones to your ~/.bash_aliases:
+
+    alias git='libertine-launch -i CONTAINER-IDENTIFIER git'
+    alias screenfetch='libertine-launch -i CONTAINER-IDENTIFIER screenfetch'
+
 Background
 ----------
 
