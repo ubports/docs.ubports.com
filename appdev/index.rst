@@ -90,6 +90,7 @@ Learn more about app development by digging into our :ref:`Sample apps <sampleap
     :name: toc-sample-apps
 
     samples/index
+<<<<<<< HEAD
 
 Preinstalled apps
 -----------------
@@ -106,3 +107,5 @@ Want to help build the core of Ubuntu Touch? Read our guide on :ref:`System deve
     :name: toc-system-dev
 
     platform/system-software
+=======
+>>>>>>> Remove system-software from appdev
