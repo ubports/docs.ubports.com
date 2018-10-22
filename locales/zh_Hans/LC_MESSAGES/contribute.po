@@ -7,15 +7,16 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-02 15:42-0500\n"
-"PO-Revision-Date: 2018-06-30 18:40+0800\n"
+"PO-Revision-Date: 2018-08-09 11:34+0000\n"
 "Last-Translator: Luo Yufan <njlyf2011@hotmail.com>\n"
-"Language-Team: none\n"
+"Language-Team: Chinese (Simplified) <https://translate.ubports.com/projects/"
+"ubports-docs/documentation-contribute/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Weblate 2.20\n"
 
 #: ../../contribute/bugreporting.rst:2
 msgid "Bug reporting"
@@ -55,6 +56,7 @@ msgstr ""
 #: ../../contribute/bugreporting.rst:18
 msgid "If you find that a bug report already exists, select the \"Add your Reaction\" button (it looks like a smiley face) and select the +1 (thumbs up) reaction. This shows that you are also experiencing the bug."
 msgstr ""
+"如果您发现错误报告已存在，请选择 “Add your Reaction” 按钮（看起来像笑脸）并选择 +1（竖起大拇指）。 这表明您也遇到了这个错误。"
 
 #: ../../contribute/bugreporting.rst:20
 msgid "If the report is missing any of the information specified later in this document, please add it yourself to help the developers fix the bug."
@@ -78,7 +80,7 @@ msgstr ""
 
 #: ../../contribute/bugreporting.rst:32
 msgid "To get set ready, follow the steps to :doc:`set up ADB </userguide/advanceduse/adb>`."
-msgstr "请参阅:doc:`设置 ADB </userguide/advanceduse/adb>`以准备就绪"
+msgstr "请参阅 :doc:`设置 ADB </userguide/advanceduse/adb>`以准备就绪。"
 
 #: ../../contribute/bugreporting.rst:34
 msgid "Now, you can get the two most important logs."
@@ -251,7 +253,7 @@ msgstr ""
 
 #: ../../contribute/documentation.rst:58
 msgid "Contribution workflow"
-msgstr ""
+msgstr "贡献流程"
 
 #: ../../contribute/documentation.rst:60
 msgid "The following steps will help you to make a contribution to this documentation after you have written a document."
@@ -340,7 +342,7 @@ msgstr ""
 
 #: ../../contribute/index.rst:2
 msgid "Contributing to UBports"
-msgstr ""
+msgstr "为 UBports 做贡献"
 
 #: ../../contribute/index.rst:4
 msgid "Welcome! You're probably here because you want to contribute to UBports. The pages you'll find below here will help you do this in a way that's helpful to both the project and yourself."
@@ -386,7 +388,7 @@ msgstr ""
 
 #: ../../contribute/quality-assurance.rst:12
 msgid "Confirming bug reports"
-msgstr ""
+msgstr "确认错误报告"
 
 #: ../../contribute/quality-assurance.rst:14
 msgid "Unconfirmed bugreports are labeld **needs confirmation** to enable `global filtering <https://github.com/ubports/ubuntu-touch/issues?q=is%3Aissue+is%3Aopen+label%3A%22needs+confirmation%22>`__. Browse through the list, read the bugreports and try to reproduce the issues that are described. If neccessary, add :doc:`missing information or logs, or improve the quality of the report by other means <bugreporting>`. Leave a comment stating your device, channel, build number and whether or not you were able to reproduce the issue."
@@ -410,7 +412,7 @@ msgstr ""
 
 #: ../../contribute/quality-assurance.rst:26
 msgid "Initial triaging of issues"
-msgstr ""
+msgstr "最初的问题分类"
 
 #: ../../contribute/quality-assurance.rst:28
 msgid "Initial triaging of new issues is done by QA-team members with write-access to the repository. If a new issue is filed, read the report and add the correct labels as specified by the :doc:`issue tracking guidelines </about/process/issue-tracking>`. You can also immediately start confirming the bugreport."
@@ -533,7 +535,7 @@ msgstr ""
 
 #: ../../contribute/translations.rst:60
 msgid "To use it you need to register, or login if you're registered already."
-msgstr ""
+msgstr "要使用它，您需要注册，或者如果您已经注册，则需要登录。"
 
 #: ../../contribute/translations.rst:62
 msgid "The only requirement is to start your post putting down your language in brackets in the \"Enter your topic title here\" field. For example, ``[Spanish] How to translate whatever?``"

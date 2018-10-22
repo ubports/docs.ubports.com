@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-30 21:23-0500\n"
-"PO-Revision-Date: 2018-04-02 20:50+0000\n"
-"Last-Translator: Florian Leeber <flori@bin.org.in>\n"
-"Language-Team: German <https://translate.ubports.com/projects/ubports-docs"
-"/documentation-contribute/de/>\n"
+"PO-Revision-Date: 2018-08-15 16:56+0000\n"
+"Last-Translator: Peter Nerlich <peter.nerlich+ubports@googlemail.com>\n"
+"Language-Team: German <https://translate.ubports.com/projects/ubports-docs/"
+"documentation-contribute/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.15\n"
+"X-Generator: Weblate 2.20\n"
 "Generated-By: Babel 2.5.3\n"
 
 #: ../../contribute/bugreporting.rst:2
@@ -31,10 +31,10 @@ msgid ""
 "reporting bugs in apps, most of the time their entry in the OpenStore "
 "will specify where and how to do that."
 msgstr ""
-"Diese Seite enthält Informationen zum Melden von nachvollziehbaren "
-"Fehlern in Ubuntu Touch. Es geht hierbei NICHT um das Melden von Fehlern "
-"in Apps. In der Regel findet man im OpenStore-Eintrag die Angabe, wo die "
-"Fehler zu melden sind."
+"Diese Seite enthält Informationen zum Melden von nachvollziehbaren Fehlern "
+"in Ubuntu Touch. Es geht hierbei NICHT um das Melden von Fehlern in Apps. In "
+"der Regel findet man im OpenStore-Eintrag die Angabe, wo solche Fehler zu "
+"melden sind."
 
 #: ../../contribute/bugreporting.rst:7
 msgid "Get the latest Ubuntu Touch"
@@ -438,6 +438,9 @@ msgid ""
 "commit them. To do this, run ``update-translations.sh`` in this "
 "repository."
 msgstr ""
+"Die Übersetzungsdateien müssen vor dem Übernehmen der Änderungen "
+"aktualisiert werden. Dazu wird in diesem Repository ``update-"
+"translations.sh`` ausgeführt."
 
 #: ../../contribute/documentation.rst:58
 msgid "Contribution workflow"
@@ -448,6 +451,8 @@ msgid ""
 "The following steps will help you to make a contribution to this "
 "documentation after you have written a document."
 msgstr ""
+"Die folgenden Schritte helfen dabei, einen Beitrag zu dieser Dokumentation "
+"zu leisten, nachdem man ein Dokument geschrieben hat."
 
 #: ../../contribute/documentation.rst:63
 msgid ""
@@ -517,16 +522,23 @@ msgid ""
 "again. Depending on when you first used the build script, you may need to"
 " run the ``rm`` command with ``sudo``."
 msgstr ""
+"Hat man Probleme beim Erstellen der Dokumentation, so sollte man zunächst "
+"versuchen, die Build-Umgebung zu löschen. Dazu führt man ``rm-r "
+"~/ubportsdocsenv`` aus und versucht das Erstellen erneut. Je nachdem, wann "
+"das Erstellungsskript zum ersten Mal verwendet wurde, muss der Befehl ``rm`` "
+"möglicherweise mit ``sudo`` ausgeführt werden."
 
 #: ../../contribute/documentation.rst:81
 msgid ""
 "Remember to `update translations`_, then commit your changes and submit a"
 " pull request."
 msgstr ""
+"`Übersetzungen aktualisieren`_ nicht vergessen vor dem Anwenden der "
+"Änderungen und dem Senden einer Pull-Anfrage (pull request)."
 
 #: ../../contribute/documentation.rst:84
 msgid "Alternative methods to contribute"
-msgstr ""
+msgstr "Alternative Methoden zur Beteiligung"
 
 #: ../../contribute/documentation.rst:87 ../../contribute/translations.rst:2
 msgid "Translations"
@@ -537,10 +549,12 @@ msgid ""
 "You may find the components of this document to translate at `its project"
 " in UBports Weblate`_."
 msgstr ""
+"Die Komponenten dieses Dokuments findet man zur Übersetzung auf `UBports "
+"Weblate`_."
 
 #: ../../contribute/documentation.rst:92
 msgid "Writing documents not in RST format"
-msgstr ""
+msgstr "Dokumente ohne RST-Format schreiben"
 
 #: ../../contribute/documentation.rst:94
 msgid ""
@@ -550,10 +564,15 @@ msgid ""
 " will be able to help you revise your draft and write the required "
 "ReStructuredText."
 msgstr ""
+"Falls man Dokumente für UBports schreiben möchte, sich aber unwohl bei der "
+"Verwendung von ReStructuredText fühlt, erstellt man das Dokument ohne "
+"Formatierung und teilt es im `UBports Forum`_ in einem passenden Abschnitt ("
+"wahrscheinlich Allgemein). Es wird sich jemand finden, der den "
+"erforderlichen ReStructuredText daraus formt."
 
 #: ../../contribute/documentation.rst:97
 msgid "Uncomfortable with Git"
-msgstr ""
+msgstr "Unsicher mit Git"
 
 #: ../../contribute/documentation.rst:99
 msgid ""
@@ -562,6 +581,10 @@ msgid ""
 "in the relevant section (likely General). Someone will be able to help "
 "you revise your draft and submit it to this documentation."
 msgstr ""
+"Falls man ein Dokument in ReStructuredText für UBports geschrieben hat, sich "
+"aber unwohl bei der Verwendung von Git oder GitHub fühlt, teilt man es im `"
+"UBports Forum`_ in einem passenden Abschnitt (wahrscheinlich Allgemein). Es "
+"wird sich jemand finden, der das Dokument in die Dokumentation einfügt."
 
 #: ../../contribute/documentation.rst:102
 msgid "Current TODOs"
@@ -661,7 +684,7 @@ msgstr ""
 
 #: ../../contribute/quality-assurance.rst:7
 msgid "Smoke testing"
-msgstr ""
+msgstr "Rauchtest"
 
 #: ../../contribute/quality-assurance.rst:9
 msgid ""
