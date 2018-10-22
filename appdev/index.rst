@@ -91,6 +91,11 @@ Learn more about app development by digging into our :ref:`Sample apps <sampleap
 
     samples/index
 
+Preinstalled apps
+-----------------
+
+The :doc:`/contribute/preinstalled-apps` page has information on developing the apps which are included with Ubuntu Touch.
+
 System Development
 ------------------
 
