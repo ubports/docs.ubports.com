@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-11 15:02-0500\n"
-"PO-Revision-Date: 2018-08-24 20:17+0000\n"
+"PO-Revision-Date: 2018-10-21 00:00+0000\n"
 "Last-Translator: Max Libre <libremax@protonmail.com>\n"
 "Language-Team: French <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-userguide/fr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.20\n"
+"X-Generator: Weblate 3.0.1\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../userguide/advanceduse/adb.rst:2
@@ -150,8 +150,8 @@ msgid ""
 "remote server. Many email-hosters provide a CalDAV and CardDAV interface."
 msgstr ""
 "CalDAV et Card DAV sont des protocoles permettant de synchroniser "
-"calendriers et contacts avec un serveur distant. De nombreux hébergeurs "
-"d'emails fournissent une interface CalDAV et CardDAV."
+"calendriers et contacts avec un serveur distant. De nombreux hébergeurs de "
+"courriels fournissent une interface CalDAV et CardDAV."
 
 #: ../../userguide/advanceduse/dav.rst:6
 msgid ""
@@ -174,7 +174,7 @@ msgid ""
 "script that you can run in the terminal or via phablet SSH connection. These "
 "instructions work for caldav as well."
 msgstr ""
-"A cet instant, il n'y a pas d’implémentation CardDAV directement accessible "
+"À cet instant, il n'y a pas d’implémentation CardDAV directement accessible "
 "à partir de l'interface graphique d'Ubuntu Touch, pour synchroniser CardDAV, "
 "il faut utiliser syncevolution et cron. Cependant, il y a une façon simple "
 "de le faire avec un script que vous pouvez lancer dans le terminal ou via la "
@@ -222,7 +222,7 @@ msgid ""
 "instead of ``sudo echo \"$COMMAND_LINE\" > /sbin/sogosync``, to avoid "
 "permission denied error"
 msgstr ""
-"Ligne 61: écrire ``sudo sh -c \"echo '$COMMAND_LINE' > /sbin/sogosync\"`` , "
+"Ligne 61 : écrire ``sudo sh -c \"echo '$COMMAND_LINE' > /sbin/sogosync\"`` , "
 "à la place de ``sudo echo \"$COMMAND_LINE\" > /sbin/sogosync``, pour éviter "
 "l'erreur de permission refusée"
 
@@ -330,7 +330,7 @@ msgstr "Sur le téléphone: ``android-gadget-service enable rndis``"
 #: ../../userguide/advanceduse/reverse-tethering.rst:14
 msgid "On computer: get your rndis ip address e.g:``hostname -I``"
 msgstr ""
-"Sur l'ordinateur: récupérez votre adresse ip rndis p. ex.:``hostname -I``"
+"Sur l'ordinateur : récupérez votre adresse ip rndis p. ex. :``hostname -I``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:16
 msgid "On phone:"
@@ -339,18 +339,18 @@ msgstr "Sur le téléphone :"
 #: ../../userguide/advanceduse/reverse-tethering.rst:18
 msgid "add gateway: ``sudo route add default gw YOUR_COMPUTER_RNDIS_IP``"
 msgstr ""
-"ajoutez la passerelle: ``sudo route add default gw YOUR_COMPUTER_RNDIS_IP``"
+"ajoutez la passerelle : ``sudo route add default gw YOUR_COMPUTER_RNDIS_IP``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:20
 msgid ""
 "add nameservers: ``echo \"nameserver 8.8.8.8\" | sudo tee /etc/resolv.conf``"
 msgstr ""
-"ajoutez les serveurs de nom: ``echo \"nameserver 8.8.8.8\" | sudo tee /etc/"
+"ajoutez les serveurs de nom : ``echo \"nameserver 8.8.8.8\" | sudo tee /etc/"
 "resolv.conf``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:22
 msgid "refresh dns table: ``resolvconf -u``"
-msgstr "rafraîchissez la table dns: ``resolvconf -u``"
+msgstr "rafraîchissez la table dns : ``resolvconf -u``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:24
 msgid "On computer:"
@@ -360,7 +360,7 @@ msgstr "Sur l'ordinateur :"
 msgid ""
 "enable ip forwarding: ``echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward``"
 msgstr ""
-"activez le transfert d'ip: ``echo 1 | sudo tee /proc/sys/net/ipv4/"
+"activez le transfert d'ip : ``echo 1 | sudo tee /proc/sys/net/ipv4/"
 "ip_forward``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:28
@@ -368,7 +368,7 @@ msgid ""
 "apply NAT: ``sudo iptables -t nat -A POSTROUTING -s 10.0.0.0/8 -o eth0 -j "
 "MASQUERADE``"
 msgstr ""
-"appliquez le NAT: ``sudo iptables -t nat -A POSTROUTING -s 10.0.0.0/8 -o "
+"appliquez le NAT : ``sudo iptables -t nat -A POSTROUTING -s 10.0.0.0/8 -o "
 "eth0 -j MASQUERADE``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:32
@@ -424,16 +424,15 @@ msgid ""
 "(1 = 60fps, 2=30fps, ...)  and size of frames ``384 640`` means width=384 "
 "height=640"
 msgstr ""
-"NB: ``timeout`` est ici utilisé pour tuer le processus correctement sur "
+"NB : ``timeout`` est ici utilisé pour tuer le processus correctement sur "
 "l'appareil (ici 120 secondes). Dans le cas contraire, le processus restera "
 "actif même si il est tué sur l'ordinateur. Vous pouvez réduire ou augmenter "
-"le nombre de trames par secondes avec``--cap-interval`` (1 = 60fps, "
-"2=30fps, ...) et la taille des trames ``384 640`` correspond à largeur=384 "
-"hauteur=640"
+"le nombre de trames par secondes avec``--cap-interval`` (1 = 60fps, 2=30fps, "
+"...) et la taille des trames ``384 640`` correspond à largeur=384 hauteur=640"
 
 #: ../../userguide/advanceduse/screencasting.rst:19
 msgid "Via network"
-msgstr "A travers le réseau"
+msgstr "À travers le réseau"
 
 #: ../../userguide/advanceduse/screencasting.rst:22
 msgid "On receiver"
@@ -454,7 +453,7 @@ msgstr ""
 
 #: ../../userguide/advanceduse/screencasting.rst:31
 msgid "For stream recording:"
-msgstr "Pour l'enregistrement du flux:"
+msgstr "Pour l'enregistrement du flux :"
 
 #: ../../userguide/advanceduse/screencasting.rst:33
 msgid ""
@@ -479,7 +478,7 @@ msgstr ""
 
 #: ../../userguide/advanceduse/screencasting.rst:46
 msgid "Example script"
-msgstr "Script d'exemple"
+msgstr "Exemple de script"
 
 #: ../../userguide/advanceduse/screencasting.rst:48
 msgid ""
@@ -493,15 +492,15 @@ msgstr ""
 
 #: ../../userguide/advanceduse/screencasting.rst:69
 msgid "You can download it here: :download:`files/mircast.sh`"
-msgstr "Vous pouvez le télécharger ici: :télécharger:`files/mircast.sh`"
+msgstr "Vous pouvez le télécharger ici : :télécharger:`files/mircast.sh`"
 
 #: ../../userguide/advanceduse/screencasting.rst:74
 msgid "initial source: https://wiki.ubuntu.com/Touch/ScreenRecording"
-msgstr "source initiale: https://wiki.ubuntu.com/Touch/ScreenRecording"
+msgstr "source initiale : https://wiki.ubuntu.com/Touch/ScreenRecording"
 
 #: ../../userguide/advanceduse/screencasting.rst:75
 msgid "demo: https://www.youtube.com/watch?v=HYm4RUwwo5Q"
-msgstr "démonstration: https://www.youtube.com/watch?v=HYm4RUwwo5Q"
+msgstr "démonstration : https://www.youtube.com/watch?v=HYm4RUwwo5Q"
 
 #: ../../userguide/advanceduse/ssh.rst:2
 msgid "Shell access via ssh"
@@ -520,8 +519,8 @@ msgid ""
 "You need a ssh key pair for this. Logging in via password is disabled by "
 "default."
 msgstr ""
-"Vous avez besoin d'une paire de clé ssh pour cela. L'ouverture d'une session "
-"par mot de passe est désactivée par défaut."
+"Vous avez besoin d'une paire de clés ssh pour cela. L'ouverture d'une "
+"session par mot de passe est désactivée par défaut."
 
 #: ../../userguide/advanceduse/ssh.rst:9
 msgid "Create your public key"
@@ -548,7 +547,7 @@ msgid ""
 "ways to do this. For example:"
 msgstr ""
 "Ensuite, vous devez transférer votre clé publique sur votre appareil. Il y a "
-"plusieurs façons de faire cela. Par exemple:"
+"plusieurs façons de faire cela. Par exemple :"
 
 #: ../../userguide/advanceduse/ssh.rst:20
 msgid ""
