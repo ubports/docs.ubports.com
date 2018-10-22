@@ -49,10 +49,11 @@ You may view this documentation in the following languages:
 
 .. toctree::
    :maxdepth: 1
-   :caption: App development
+   :caption: Development
    :name: sec-appdev
 
    appdev/index
+   systemdev/index
 
 .. toctree::
    :maxdepth: 1
