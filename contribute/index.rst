@@ -15,4 +15,5 @@ If those aren't enough for you, see `our contribute page <https://ubports.com/pa
     quality-assurance
     documentation
     translations
+    preinstalled-apps
     monetary
