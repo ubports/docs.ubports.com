@@ -90,22 +90,9 @@ Learn more about app development by digging into our :ref:`Sample apps <sampleap
     :name: toc-sample-apps
 
     samples/index
-<<<<<<< HEAD
+
 
 Preinstalled apps
 -----------------
 
 The :doc:`/contribute/preinstalled-apps` page has information on developing the apps which are included with Ubuntu Touch.
-
-System Development
-------------------
-
-Want to help build the core of Ubuntu Touch? Read our guide on :ref:`System development <platform>`.
-
-.. toctree::
-    :maxdepth: 1
-    :name: toc-system-dev
-
-    platform/system-software
-=======
->>>>>>> Remove system-software from appdev
