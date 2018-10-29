@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-11 15:02-0500\n"
-"PO-Revision-Date: 2018-10-28 00:00+0000\n"
+"PO-Revision-Date: 2018-10-29 21:08+0000\n"
 "Last-Translator: Walter Garcia-Fontes <walter.garcia@upf.edu>\n"
 "Language-Team: Catalan <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ca/>\n"
@@ -47,7 +47,7 @@ msgstr "Comptes"
 
 #: ../../appdev/apparmor.rst:26
 msgid "Description: Can use Online Accounts."
-msgstr "Descripció: es poden usar el comptes en línia"
+msgstr "Descripció: es poden usar el comptes en línia."
 
 #: ../../appdev/apparmor.rst:28 ../../appdev/apparmor.rst:38
 #: ../../appdev/apparmor.rst:70 ../../appdev/apparmor.rst:80
