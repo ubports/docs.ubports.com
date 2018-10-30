@@ -119,7 +119,7 @@ To get a shell as user ``phablet`` run::
 Shortcuts
 ^^^^^^^^^
 
-If you want, you can add aliases for command line tools. Add lines like the following ones to your `~/.bash_aliases`::
+If you want, you can add aliases for command line tools. Add lines like the following ones to your ``~/.bash_aliases``::
 
     alias git='libertine-launch -i CONTAINER-IDENTIFIER git'
     alias screenfetch='libertine-launch -i CONTAINER-IDENTIFIER screenfetch'
