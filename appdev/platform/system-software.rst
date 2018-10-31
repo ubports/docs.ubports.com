@@ -147,20 +147,31 @@ By default crossbuilder does not run unit tests; that's both for speed
 reasons, and because the container created by crossbuilder is not meant
 to run native (target) executables: the development tools (qmake/cmake,
 make, gcc, etc.) are all run in the host architecture, with no emulation
-(again, for speed reasons). However, qemu emulation is available inside
-the container, so it should be possible to run unit tests inside the
-container. You can do that by getting a shell inside the container with
+(again, for speed reasons). At any rate, qemu emulation is available inside
+the container, so it might be possible to run unit tests inside the
+container; but be aware that the emulation is not perfect, so there's a
+very good chance that the tests will fail even when they'd otherwise
+succeed, when run into a proper environment.
+
+For the reasons state above, it's usually a good idea to run the tests
+natively; luckily, crossbuilder can be used to that goal as well. Indeed,
+when running the command
 
 ::
 
-    crossbuilder --ubuntu=15.04 shell
+    crossbuilder --architecture=amd64
 
-and then find the unit tests and execute them. Be aware that the
-emulation is not perfect, so there's a very good chance that the tests
-will fail even when they'd otherwise succeed, when run into a proper
-environment. For that reason, it's probably wiser not to worry about
-unit tests when working with crossbuilder, and run them only when not
-cross-compiling.
+the package will be built for the amd64 architecture, and all the binaries
+it will produce can be run natively on the host machine (assuming its
+architecture is amd64, which is usually the case for desktop and laptop
+computers). If the debian package is configured to run tests, then they
+will be run as part of the build process.
+
+When developing system software, running the tests locally in the way
+described above will be considerably faster than having to rely on the
+Jenkins continuous integration service and wait for it to build the package
+from scratch after any modification.
+
 
 Developing in the host architecture, deploying via PPA
 ------------------------------------------------------
