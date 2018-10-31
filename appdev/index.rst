@@ -49,6 +49,7 @@ Get started building your first app or learn about advanced concepts with our :r
 
     guides/index
     guides/cookbook
+    guides/contenthub
 
 Publishing
 ----------
