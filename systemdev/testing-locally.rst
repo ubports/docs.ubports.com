@@ -5,8 +5,8 @@ On this page you'll find information on how to build Ubuntu Touch system softwar
 
 There are essentially two ways of developing Ubuntu Touch system software locally:
 
-* Cross-compiling using Crossbuilder
-* Build on-device
+* `Cross-building with crossbuilder`_
+* `Building on the device itself`_
 
 We'll examine both methods, using `address-book-app <https://github.com/ubports/address-book-app>`__ (the Contacts application) as an example.
 
@@ -19,35 +19,36 @@ We only recommend developing packages using a device with Ubuntu Touch installed
 Cross-building with crossbuilder
 --------------------------------
 
-This is the recommended way to develop non-trivial changes, and it's suitable for all devices since the build happens on your desktop PC (we will call it "host" from now on) and not on the target device.
+Crossbuilder is a script which automates the setup and use of a crossbuild environment for Debian packages. It is suitable for developers with any device since the code compilation occurs on your desktop PC rather than the target device. This makes Crossbuilder the recommended way to develop non-trivial changes to Ubuntu Touch.
 
 .. note::
 
     Crossbuilder requires a Linux distribution with ``lxd`` installed and the unprivileged commandset available. In other words, you must be able to run the ``lxc`` command. If you are running Ubuntu on your host, Crossbuilder will set up ``lxd`` for you.
 
-Start by installing ``crossbuilder`` on your host::
+Start by installing Crossbuilder on your host::
 
     cd ~
     git clone https://github.com/ubports/crossbuilder.git
 
-It's a shell script, so you don't need to build it. Instead, you will need to add its directory to your ``PATH`` environment variable, so that you can execute it from any directory::
+Crossbuilder is a shell script, so you don't need to build it. Instead, you will need to add its directory to your ``PATH`` environment variable, so that you can execute it from any directory::
 
     echo "export PATH=$HOME/crossbuilder:$PATH" >> ~/.bashrc
     # and add it to your own session:
     export PATH="$HOME/crossbuilder:$PATH"
 
-Then, you need to setup LXD; luckily, crossbuilder has a command which does everything for you; you just need to carefully follow its instructions::
+Now that Crossbuilder is installed, we can use it to set up LXD::
 
     crossbuilder setup-lxd
 
-If this is the first time you have used LXD, you might need to reboot your host once everything has completed. After LXD has been set up, move to the directory where the source code of your project is located (for example, ``~/src/git/address-book-app``) and launch it like this::
+If this is the first time you have used LXD, you might need to reboot your host once everything has completed.
 
-    cd ~/src/git/address-book-app
+After LXD has been set up, move to the directory where the source code of your project is located (for example, ``cd ~/src/git/address-book-app``) and launch Crossbuilder::
+
     crossbuilder
 
-Crossbuilder will do everything for you: it will create the LXD container, download the development image, install all your package build dependencies, perform the build and finally, if your device is connected to your host, copy the packages over to the target and install them. The first two steps (creating the LXD image and getting the dependencies) can take a few minutes, but will be executed only the first time you launch crossbuilder for a new package.
+Crossbuilder will create the LXD container, download the development image, install all your package build dependencies, and perform the package build. It will also copy the packages over to your target device and install them if it is connected (see :doc:`/userguide/advanceduse/adb` to learn more about connecting your device). The first two steps (creating the LXD image and getting the dependencies) can take a few minutes, but will be executed only the first time you launch crossbuilder for a new package.
 
-Now, whenever you change the source code in your git repository, the same changes will be available inside the container. The next time you'll type the ``crossbuilder`` command, only the changed files will be rebuilt.
+Now, whenever you change the source code in your git repository, the same changes will be available inside the container. The next time you type the ``crossbuilder`` command, only the changed files will be rebuilt.
 
 Unit tests
 ^^^^^^^^^^

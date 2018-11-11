@@ -50,7 +50,7 @@ You may view this documentation in the following languages:
 .. toctree::
    :maxdepth: 1
    :caption: Development
-   :name: sec-appdev
+   :name: sec-dev
 
    appdev/index
    systemdev/index
