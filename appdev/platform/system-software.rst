@@ -90,7 +90,7 @@ Start with installing ``crossbuilder`` in your host:
 
 ::
 
-    git clone git@github.com:ubports/crossbuilder.git
+    git clone https://github.com/ubports/crossbuilder.git
 
 It's a shell script, so you don't need to build it. Instead, you will
 need to add its directory to your ``PATH`` environment variable, so that
