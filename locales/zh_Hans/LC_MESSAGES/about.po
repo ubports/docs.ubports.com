@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-02 15:42-0500\n"
-"PO-Revision-Date: 2018-08-09 11:27+0000\n"
+"PO-Revision-Date: 2018-11-11 11:40+0000\n"
 "Last-Translator: Luo Yufan <njlyf2011@hotmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-about/zh_Hans/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.20\n"
+"X-Generator: Weblate 3.1.1\n"
 
 #: ../../about/introduction.rst:2
 msgid "Introduction"
@@ -24,7 +24,7 @@ msgstr "引言"
 
 #: ../../about/introduction.rst:4
 msgid "This is the documentation for the UBports project. Our goal is to create an open-source (GPL if possible) mobile operating system that converges and respects your freedom."
-msgstr "这是 UBports 项目的文档。我们的目标是创建一个开源（若可能则为 GPL 许可证）的移动操作系统，它将拥有融合性并尊重您的自由。"
+msgstr "这里是 UBports 项目的文档库。我们的目标是创建一个开源（若可能则为 GPL 许可证）的移动操作系统，它将给您带来融合与自由。"
 
 #: ../../about/introduction.rst:7
 msgid "About UBports"
