@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-11 15:02-0500\n"
-"PO-Revision-Date: 2018-11-04 00:00+0000\n"
+"PO-Revision-Date: 2018-11-08 15:12+0000\n"
 "Last-Translator: Walter Garcia-Fontes <walter.garcia@upf.edu>\n"
 "Language-Team: Catalan <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ca/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.1.1\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../appdev/apparmor.rst:2
@@ -72,15 +72,19 @@ msgid ""
 "The accounts policy gives your app the permissions it needs to access the "
 "`Online Accounts API`_."
 msgstr ""
+"La política de comptes dóna permisos els permisos que li calen a la vostra "
+"aplicació per accedir a l'«API de comptes en línia»_."
 
 #: ../../appdev/apparmor.rst:34
 msgid "audio"
-msgstr ""
+msgstr "àudio"
 
 #: ../../appdev/apparmor.rst:36
 msgid ""
 "Description: Can play audio (allows playing remote content via media-hub)"
 msgstr ""
+"Descripció: Es pot reproduir l'àudio (es permet reproduir contingut remot "
+"mitjançant el connector multimèdia"
 
 #: ../../appdev/apparmor.rst:40
 msgid ""
@@ -88,14 +92,18 @@ msgid ""
 "media-hub. The permission also gives it the ability to send album art to the "
 "thumbnailer service, which is then shown on the sound indicator."
 msgstr ""
+"Cal la política d'àudio perquè la vostra aplicació reprodueixi àudio a "
+"través del pulseaudio o e centre multimèdia. El permís també li dóna la "
+"capacitat d'enviar l'art de l'àlbum al servei de miniatures, que després es "
+"mostra a l'indicador de so."
 
 #: ../../appdev/apparmor.rst:44
 msgid "bluetooth"
-msgstr ""
+msgstr "bluetooth"
 
 #: ../../appdev/apparmor.rst:46
 msgid "Description: Use bluetooth (bluez5) as an administrator."
-msgstr ""
+msgstr "Descripció: usa el bluetooth (bluez5) com administrador."
 
 #: ../../appdev/apparmor.rst:48 ../../appdev/apparmor.rst:58
 #: ../../appdev/apparmor.rst:90 ../../appdev/apparmor.rst:120
@@ -105,7 +113,7 @@ msgstr ""
 #: ../../appdev/apparmor.rst:221 ../../appdev/apparmor.rst:267
 #: ../../appdev/apparmor.rst:277
 msgid "Usage: reserved"
-msgstr ""
+msgstr "Ús: reservat"
 
 #: ../../appdev/apparmor.rst:50
 msgid ""
@@ -113,10 +121,14 @@ msgid ""
 "for administration of bluetooth and as a stepping stone towards developing a "
 "safe bluetooth API all apps can access."
 msgstr ""
+"Aquesta política dóna accés sense restriccions als dispositius Bluetooth. Es "
+"proveeix per a l'administració del bluetooth i com a pas inicial cap al "
+"desenvolupament d'una API segura de bluetooth que totes les aplicacions "
+"puguin accedir."
 
 #: ../../appdev/apparmor.rst:54
 msgid "calendar"
-msgstr ""
+msgstr "calendari"
 
 #: ../../appdev/apparmor.rst:56
 msgid "Description: Can access the calendar."
@@ -127,16 +139,21 @@ msgid ""
 "Calendar grants access to the Evolution dataserver's calendar and alarms "
 "APIs. It also grants access to sync-monitor."
 msgstr ""
+"El calendari dóna accés al calendari del servidor de dades de l'Evolution i "
+"a les API d'alarmes. També autoritza l'accés al monitor de sincronització."
 
 #: ../../appdev/apparmor.rst:62
 msgid ""
 "This policy is reserved since it grants free access to all calendars on the "
 "device at any time. The legacy bug about this situation is `LP #1227824`_ ."
 msgstr ""
+"Aquesta política està reservada atès que autoritza l'accés lliure a tots els "
+"calendaris del dispositiu en qualsevol moment. L'informe d'error antic sobre "
+"aquesta situació és `LP#1227824`_."
 
 #: ../../appdev/apparmor.rst:66
 msgid "camera"
-msgstr ""
+msgstr "càmara"
 
 #: ../../appdev/apparmor.rst:68
 msgid "Description: Can access the camera(s)"
@@ -148,7 +165,7 @@ msgstr "camera: té acccés a la(les) càmera(càmeres)."
 
 #: ../../appdev/apparmor.rst:76
 msgid "connectivity"
-msgstr ""
+msgstr "connectivitat"
 
 #: ../../appdev/apparmor.rst:78
 msgid "Description: Can access coarse network connectivity information"
@@ -161,10 +178,14 @@ msgid ""
 "device's connectivity. This includes whether the device is connected to the "
 "Internet and whether it is connected via a Wi-Fi or mobile data connection."
 msgstr ""
+"La política de connectivitat permet a les aplicacions determinar informació "
+"en brut sobre la connectivitat del dispositiu. Això inclou si el dispositiu "
+"està connectat a Internet i si està connectat mitjançant una connexió de "
+"dades Wifi o de dades del mòbil."
 
 #: ../../appdev/apparmor.rst:86
 msgid "contacts"
-msgstr ""
+msgstr "contactes"
 
 #: ../../appdev/apparmor.rst:88
 msgid "Description: Can access contacts."
@@ -176,10 +197,14 @@ msgid ""
 "It is marked as reserved because it allows access to sync-monitor and "
 "unfettered access to the address book."
 msgstr ""
+"La política de contactes permet a les aplicacions accedir a la llista de "
+"contactes de l'usuari del dispositiu. Està marcada com a reservada atès que "
+"permet l'accés al monitor de sincronització i accés sense restriccions a "
+"llibre d'adreces."
 
 #: ../../appdev/apparmor.rst:96
 msgid "content_exchange"
-msgstr ""
+msgstr "content_exchange"
 
 #: ../../appdev/apparmor.rst:98
 msgid "Description: Can request/import data from other applications"
