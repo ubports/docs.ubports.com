@@ -2,11 +2,7 @@
 Importing from Content Hub and URLdispatcher
 ==========================================================
 
-<<<<<<< HEAD
 .. figure:: /_static/images/appdev/guides/importingCHdispatcherimages/01ichu.png
-=======
-.. figure:: importingCHdispatcherimages/01ichu.png
->>>>>>> 564736e0dbd46abb4de82d7870ba12628db88240
         :align: center
 
 In the previous guide we have seen a little bit about how Content Hub works. In this guide we will see how URLdispatcher works and how to handle imported data from the Content Hub.
@@ -14,11 +10,7 @@ In the previous guide we have seen a little bit about how Content Hub works. In 
 Handle data from the Content Hub
 --------------------------------
 
-<<<<<<< HEAD
 .. figure:: /_static/images/appdev/guides/importingCHdispatcherimages/02ichu.png
-=======
-.. figure:: importingCHdispatcherimages/02ichu.png
->>>>>>> 564736e0dbd46abb4de82d7870ba12628db88240
         :align: center
 
         OpenStore app from open-store.io
@@ -44,11 +36,7 @@ One of the easiest ways of testing an app, is to send a test click to yourself, 
 
 If we tap on the OpenStore app, it will be opened and it will ask if we want to install the click file. Let’s take a look into `the code <https://github.com/UbuntuOpenStore/openstore-app/blob/master/openstore/Main.qml#L85>`_ to see how it is done:
 
-<<<<<<< HEAD
 .. image:: /_static/images/appdev/guides/importingCHdispatcherimages/04ichu.png
-=======
-.. image:: importingCHdispatcherimages/04ichu.png
->>>>>>> 564736e0dbd46abb4de82d7870ba12628db88240
         :align: center
 
 Do you see that Connections element that targets the ContentHub? When it receives the signal onImportRequested, it will take the url of the data sent from the Content Hub (*transfer.items[0].url* is the url of the first data sent) and open a PopUp element to let the user install the click.
@@ -59,11 +47,7 @@ The URL dispatcher is a piece of software, similar to the Content Hub, that make
 
 The URLdispatcher selects which app (according to their *manifest.json*) will open a certain link.
 
-<<<<<<< HEAD
 .. image:: /_static/images/appdev/guides/importingCHdispatcherimages/05ichu.png
-=======
-.. image:: importingCHdispatcherimages/05ichu.png
->>>>>>> 564736e0dbd46abb4de82d7870ba12628db88240
         :align: center
 
 Let’s see how our navigation app looks inside. uNav’s manifest shows special hooks for the URLdispatcher in its manifest.json `code <https://bazaar.launchpad.net/~unav-devs/unav/trunk/view/head:/manifest.json#L9>`_:

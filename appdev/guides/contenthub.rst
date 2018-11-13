@@ -1,11 +1,7 @@
 =============================================
 The content hub. Tips and tricks
 =============================================
-<<<<<<< HEAD
 .. figure:: /_static/images/appdev/guides/contenthubimages/01.png
-=======
-.. figure:: contenthubimages/01.png
->>>>>>> 564736e0dbd46abb4de82d7870ba12628db88240
         :align: center
 
         Content Hub Share Page
@@ -22,11 +18,7 @@ As we can see in the `documentation <https://api-docs.ubports.com/sdk/apps/qml/U
 
 Importing
 ^^^^^^^^^
-<<<<<<< HEAD
 .. figure:: /_static/images/appdev/guides/contenthubimages/02.png
-=======
-.. figure:: contenthubimages/02.png
->>>>>>> 564736e0dbd46abb4de82d7870ba12628db88240
         :align: center
 
         Webapp Creator on the OpenStore.io
@@ -48,22 +40,14 @@ And **handler** is passed in the code as ContentHandler.Source. As we want to im
 
 Exporting
 ^^^^^^^^^
-<<<<<<< HEAD
 .. figure:: /_static/images/appdev/guides/contenthubimages/04.png
-=======
-.. figure:: contenthubimages/04.png
->>>>>>> 564736e0dbd46abb4de82d7870ba12628db88240
         :align: center
 
         Gelek in the OpenStore.io
 
 In Gelek, we are going to end with some saved games that we want to save in our device or share with ourselves (in Telegram and then save them to our computer).
 
-<<<<<<< HEAD
 .. image:: /_static/images/appdev/guides/contenthubimages/05.png
-=======
-.. image:: contenthubimages/05.png
->>>>>>> 564736e0dbd46abb4de82d7870ba12628db88240
 
 Tapping on the download icon we will get a Content Hub to «save» the game file (which is actually an export).
 
@@ -104,11 +88,7 @@ The only difference between this and the previous code is that **handler** is *C
 
 Wait a minute. Why the different apps?
 --------------------------------------
-<<<<<<< HEAD
 .. figure:: /_static/images/appdev/guides/contenthubimages/08.png
-=======
-.. figure:: contenthubimages/08.png
->>>>>>> 564736e0dbd46abb4de82d7870ba12628db88240
         :align: center
 
         Content Hub: Export vs Share
