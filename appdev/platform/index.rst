@@ -24,4 +24,3 @@ Online accounts
 
     apparmor
     click
-    system-software
