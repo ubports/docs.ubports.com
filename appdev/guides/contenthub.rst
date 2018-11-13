@@ -1,5 +1,5 @@
 The content hub - tips and tricks
-================================
+=================================
 
 .. figure:: /_static/images/appdev/guides/contenthubimages/01.png
         :align: center
