@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Chinese (Simplified) (UBports Docs)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-11 15:02-0500\n"
-"PO-Revision-Date: 2018-07-01 16:21+0800\n"
+"PO-Revision-Date: 2018-09-22 08:16+0000\n"
 "Last-Translator: Luo Yufan <njlyf2011@hotmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-porting/zh_Hans/>\n"
@@ -12,18 +12,18 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.0.8\n"
+"X-Generator: Weblate 2.20\n"
 
 #: ../../porting/building-halium-boot.rst:2
-#, fuzzy
 msgid "Building halium-boot"
-msgstr "构建 UBports-boot"
+msgstr "构建 halium-boot"
 
 #: ../../porting/building-halium-boot.rst:4
 msgid ""
 "Halium-boot is a new proposed boot image in the Halium project, replacing "
 "hybris-boot. We will be building and using it for Ubuntu Touch."
 msgstr ""
+"Halium-boot是 Halium 项目新推出的启动映像，用以取代 hybris-boot。 我们将为 Ubuntu Touch 构建和使用它。"
 
 #: ../../porting/building-halium-boot.rst:7
 msgid "Fix mounts"
@@ -48,7 +48,7 @@ msgstr ""
 msgid ""
 "If the type of the 'data' or 'userdata' partition is ``f2fs``, it is "
 "required to change it to ``ext4``."
-msgstr ""
+msgstr "如果 “data” 或 “userdata” 分区的类型是 ``f2fs`` ，则需要将其更改为` `ext4`` 。"
 
 #: ../../porting/building-halium-boot.rst:15
 msgid ""
@@ -65,7 +65,7 @@ msgstr ""
 
 #: ../../porting/building-halium-boot.rst:19
 msgid "Save and exit."
-msgstr ""
+msgstr "保存并退出。"
 
 #: ../../porting/building-halium-boot.rst:22
 msgid "Edit kernel config"
@@ -92,13 +92,10 @@ msgid "Build the image"
 msgstr "构建镜像"
 
 #: ../../porting/building-halium-boot.rst:33
-#, fuzzy
 msgid ""
 "Once halium-boot is in place, you can build it quite simply. You will also "
 "need to rebuild system.img due to our changes."
-msgstr ""
-"一旦 ubports-boot 到位，您就可以非常简单地构建它。 但由于我们的改动了它，您还"
-"需要重建 system.img。"
+msgstr "一旦 halium-boot 到位，您就可以非常简单地构建它。 但由于我们的改动了它，您还需要重建 system.img。"
 
 #: ../../porting/building-halium-boot.rst:35
 msgid "``cd`` to your Halium BUILDDIR"
@@ -113,9 +110,8 @@ msgid "Run ``breakfast`` or ``lunch``, whichever you use for your device"
 msgstr ""
 
 #: ../../porting/building-halium-boot.rst:38
-#, fuzzy
 msgid "``mka halium-boot``"
-msgstr "``mka ubports-boot``"
+msgstr "``mka halium-boot``"
 
 #: ../../porting/building-halium-boot.rst:39
 msgid "``mka systemimage``"
@@ -127,15 +123,14 @@ msgid "Continue on"
 msgstr "继续"
 
 #: ../../porting/building-halium-boot.rst:44
-#, fuzzy
 msgid ""
 "Now that you have halium-boot built, you can move on to :doc:"
 "`installing-16-04`."
-msgstr "现在您已经构建了 ubports-boot，请移步到 doc:`installing-16-04`。"
+msgstr "现在您已经构建了 halium-boot，请移步到 :doc:`installing-16-04`。"
 
 #: ../../porting/common-problems-install.rst:7
 msgid "Common installation problems"
-msgstr ""
+msgstr "常见安装问题"
 
 #: ../../porting/common-problems-install.rst:9
 msgid ""
@@ -145,7 +140,7 @@ msgstr ""
 
 #: ../../porting/common-problems-install.rst:12
 msgid "SSH hangs when trying to connect"
-msgstr ""
+msgstr "尝试连接时 SSH 挂起"
 
 #: ../../porting/common-problems-install.rst:14
 msgid ""
@@ -168,17 +163,17 @@ msgstr ""
 
 #: ../../porting/common-problems-install.rst:25
 msgid "Run the following commands to disable rsyslogd::"
-msgstr ""
+msgstr "运行以下命令来禁用 rsyslogd::"
 
 #: ../../porting/common-problems-install.rst:33
 msgid ""
 "You may now reboot the device. You should be able to connect to SSH once it "
 "comes back online."
-msgstr ""
+msgstr "您现在可以重启设备。 一旦重新联机，您应该能够连接到 SSH。"
 
 #: ../../porting/common-problems-install.rst:36
 msgid "Device reboots after a minute"
-msgstr ""
+msgstr "一分钟后设备重启"
 
 #: ../../porting/common-problems-install.rst:38
 msgid ""
@@ -200,9 +195,8 @@ msgid ""
 msgstr ""
 
 #: ../../porting/common-problems-run.rst:2
-#, fuzzy
 msgid "Common problems when running Ubuntu Touch"
-msgstr "运行 Ubuntu Touch"
+msgstr "运行 Ubuntu Touch 的平常问题"
 
 #: ../../porting/common-problems-run.rst:4
 msgid ""
@@ -212,7 +206,7 @@ msgstr ""
 
 #: ../../porting/common-problems-run.rst:7
 msgid "Nothing shows on screen"
-msgstr ""
+msgstr "屏幕上没有显示任何内容"
 
 #: ../../porting/common-problems-run.rst:9
 msgid ""
@@ -223,7 +217,7 @@ msgstr ""
 
 #: ../../porting/common-problems-run.rst:12
 msgid "Mir servers crash"
-msgstr ""
+msgstr "Mir 服务器崩溃"
 
 #: ../../porting/common-problems-run.rst:14
 msgid ""
@@ -257,7 +251,7 @@ msgstr ""
 
 #: ../../porting/common-problems-run.rst:34
 msgid "Are all of the Android partitions mounted?"
-msgstr ""
+msgstr "所有 Android 分区都被挂载了么？"
 
 #: ../../porting/common-problems-run.rst:36
 msgid ""
@@ -292,7 +286,7 @@ msgstr ""
 
 #: ../../porting/common-problems-run.rst:57
 msgid "Getting more Mir logs"
-msgstr ""
+msgstr "获取更多 Mir 日志"
 
 #: ../../porting/common-problems-run.rst:59
 msgid ""
@@ -326,14 +320,14 @@ msgstr ""
 
 #: ../../porting/common-problems-run.rst:79
 msgid "Programs hang before crashing"
-msgstr ""
+msgstr "程序在崩溃前挂起"
 
 #: ../../porting/common-problems-run.rst:81
 msgid ""
 "Sometimes processes will hang for a very long time and then abort or "
 "segfault. The reason for the hang is apport, which attempts to collect "
 "useful information about the crash before allowing the program to stop."
-msgstr ""
+msgstr "有时进程会挂起很长时间，然后中止或出现段错误。 挂起的原因是 apport，它试图在允许程序停止之前收集有关崩溃的有用信息。"
 
 #: ../../porting/common-problems-run.rst:83
 msgid ""
@@ -371,19 +365,16 @@ msgstr ""
 "密。"
 
 #: ../../porting/installing-16-04.rst:13
-#, fuzzy
 msgid "Install halium-boot"
-msgstr "安装 UBports-boot"
+msgstr "安装 halium-boot"
 
 #: ../../porting/installing-16-04.rst:15
-#, fuzzy
 msgid ""
 "We'll need to install the halium-boot image before installing an image. "
 "Reboot your phone into fastboot mode, then do the following from your Halium "
 "tree::"
 msgstr ""
-"我们需要在安装镜像之前安装 ubports-boot 镜像。 重新启动手机进入 fastboot 模"
-"式，然后在 Halium 树中执行以下操作::"
+"我们需要在安装镜像之前安装 halium-boot 镜像。 重新启动手机进入 fastboot 模式，然后在 Halium 树中执行以下操作::"
 
 #: ../../porting/installing-16-04.rst:21
 msgid "Download the rootfs"
@@ -459,11 +450,11 @@ msgstr ""
 
 #: ../../porting/installing-16-04.rst:49
 msgid "The password will be the one that you set while running halium-install."
-msgstr ""
+msgstr "密码将是您在运行 halium-install 时设置的密码。"
 
 #: ../../porting/installing-16-04.rst:52 ../../porting/running-ut.rst:74
 msgid "Common Problems"
-msgstr ""
+msgstr "常见问题"
 
 #: ../../porting/installing-16-04.rst:54
 msgid ""
@@ -494,7 +485,7 @@ msgstr ""
 msgid ""
 "This section will introduce you to some of the specifics of porting Ubuntu "
 "Touch to an Android device."
-msgstr ""
+msgstr "本节将向您介绍将 Ubuntu Touch 移植到 Android 设备的一些细节。"
 
 #: ../../porting/introduction.rst:9
 msgid ""
@@ -512,7 +503,7 @@ msgstr ""
 
 #: ../../porting/introduction.rst:25
 msgid "Getting community help"
-msgstr ""
+msgstr "获取社区帮助"
 
 #: ../../porting/introduction.rst:27
 msgid ""
@@ -524,11 +515,11 @@ msgstr ""
 
 #: ../../porting/introduction.rst:29
 msgid "Telegram: @ubports_porting"
-msgstr ""
+msgstr "Telegram: @ubports_porting"
 
 #: ../../porting/introduction.rst:30
 msgid "IRC: #ubports-porting on freenode"
-msgstr ""
+msgstr "IRC: #ubports-porting on freenode"
 
 #: ../../porting/introduction.rst:31
 msgid "Forum: `forums.ubports.com <https://forums.ubports.com>`__"
@@ -660,9 +651,8 @@ msgid "QtWebKit DPR"
 msgstr ""
 
 #: ../../porting/running-ut.rst:52
-#, fuzzy
 msgid "'Normal' density laptop"
-msgstr "“高”密度笔记本"
+msgstr "“正常”密度笔记本"
 
 #: ../../porting/running-ut.rst:52 ../../porting/running-ut.rst:54
 msgid "N/A"
@@ -690,7 +680,7 @@ msgstr "1280x800"
 
 #: ../../porting/running-ut.rst:53
 msgid "7\""
-msgstr ""
+msgstr "7 英寸"
 
 #: ../../porting/running-ut.rst:53
 msgid "216"
@@ -707,7 +697,7 @@ msgstr "2.0"
 
 #: ../../porting/running-ut.rst:54
 msgid "'High' density laptop"
-msgstr "高密度"
+msgstr "高密度笔记本"
 
 #: ../../porting/running-ut.rst:54
 msgid "150-250"
@@ -787,7 +777,7 @@ msgstr "1080x1920"
 
 #: ../../porting/running-ut.rst:58
 msgid "5\""
-msgstr ""
+msgstr "5 英寸"
 
 #: ../../porting/running-ut.rst:58
 msgid "440"

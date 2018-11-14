@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-11 15:02-0500\n"
-"PO-Revision-Date: 2018-04-17 15:26+0000\n"
+"PO-Revision-Date: 2018-11-08 15:12+0000\n"
 "Last-Translator: Walter Garcia-Fontes <walter.garcia@upf.edu>\n"
 "Language-Team: Catalan <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ca/>\n"
@@ -17,23 +17,25 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.15\n"
+"X-Generator: Weblate 3.1.1\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../appdev/apparmor.rst:2
-#, fuzzy
 msgid "AppArmor Policy Groups"
-msgstr "Fitxer de política de perfil de l'AppArmor"
+msgstr "Grups de política de l'AppArmor"
 
 #: ../../appdev/apparmor.rst:4
 msgid ""
 "This document contains a full list of Ubuntu Touch's available policy groups "
 "and a description of what they give your app permission to access."
 msgstr ""
+"Aquest document conté una llista completa de grups disponible de política de "
+"l'Ubuntu Touch i una descripció del que la vostre aplicació té permís per "
+"accedir."
 
 #: ../../appdev/apparmor.rst:6
 msgid "Each entry follows this format"
-msgstr ""
+msgstr "Cada entrada segueix aquest format"
 
 #: ../../appdev/apparmor.rst:21
 msgid ""
@@ -41,16 +43,18 @@ msgid ""
 "Apps containing policies with common usage are generally accepted "
 "immediately, while reserved usage policies will need to be manually reviewed."
 msgstr ""
+"L'ús de la política afecta si la vostra aplicació s'acceptarà a l'OpenStore. "
+"Les aplicacions que contenen polítiques amb ús comú s'accepten generalment "
+"d'immediat, mentre a les polítiques d'ús reservat els caldrà una revisió "
+"manual."
 
 #: ../../appdev/apparmor.rst:24
-#, fuzzy
 msgid "accounts"
-msgstr "Comptes en línia"
+msgstr "Comptes"
 
 #: ../../appdev/apparmor.rst:26
-#, fuzzy
 msgid "Description: Can use Online Accounts."
-msgstr "accounts: (comptes) pot fer servir comptes en línia"
+msgstr "Descripció: es poden usar el comptes en línia."
 
 #: ../../appdev/apparmor.rst:28 ../../appdev/apparmor.rst:38
 #: ../../appdev/apparmor.rst:70 ../../appdev/apparmor.rst:80
@@ -61,22 +65,26 @@ msgstr "accounts: (comptes) pot fer servir comptes en línia"
 #: ../../appdev/apparmor.rst:249 ../../appdev/apparmor.rst:259
 #: ../../appdev/apparmor.rst:287
 msgid "Usage: common"
-msgstr ""
+msgstr "Ús: comú"
 
 #: ../../appdev/apparmor.rst:30
 msgid ""
 "The accounts policy gives your app the permissions it needs to access the "
 "`Online Accounts API`_."
 msgstr ""
+"La política de comptes dóna permisos els permisos que li calen a la vostra "
+"aplicació per accedir a l'«API de comptes en línia»_."
 
 #: ../../appdev/apparmor.rst:34
 msgid "audio"
-msgstr ""
+msgstr "àudio"
 
 #: ../../appdev/apparmor.rst:36
 msgid ""
 "Description: Can play audio (allows playing remote content via media-hub)"
 msgstr ""
+"Descripció: Es pot reproduir l'àudio (es permet reproduir contingut remot "
+"mitjançant el connector multimèdia"
 
 #: ../../appdev/apparmor.rst:40
 msgid ""
@@ -84,14 +92,18 @@ msgid ""
 "media-hub. The permission also gives it the ability to send album art to the "
 "thumbnailer service, which is then shown on the sound indicator."
 msgstr ""
+"Cal la política d'àudio perquè la vostra aplicació reprodueixi àudio a "
+"través del pulseaudio o e centre multimèdia. El permís també li dóna la "
+"capacitat d'enviar l'art de l'àlbum al servei de miniatures, que després es "
+"mostra a l'indicador de so."
 
 #: ../../appdev/apparmor.rst:44
 msgid "bluetooth"
-msgstr ""
+msgstr "bluetooth"
 
 #: ../../appdev/apparmor.rst:46
 msgid "Description: Use bluetooth (bluez5) as an administrator."
-msgstr ""
+msgstr "Descripció: usa el bluetooth (bluez5) com administrador."
 
 #: ../../appdev/apparmor.rst:48 ../../appdev/apparmor.rst:58
 #: ../../appdev/apparmor.rst:90 ../../appdev/apparmor.rst:120
@@ -101,7 +113,7 @@ msgstr ""
 #: ../../appdev/apparmor.rst:221 ../../appdev/apparmor.rst:267
 #: ../../appdev/apparmor.rst:277
 msgid "Usage: reserved"
-msgstr ""
+msgstr "Ús: reservat"
 
 #: ../../appdev/apparmor.rst:50
 msgid ""
@@ -109,51 +121,56 @@ msgid ""
 "for administration of bluetooth and as a stepping stone towards developing a "
 "safe bluetooth API all apps can access."
 msgstr ""
+"Aquesta política dóna accés sense restriccions als dispositius Bluetooth. Es "
+"proveeix per a l'administració del bluetooth i com a pas inicial cap al "
+"desenvolupament d'una API segura de bluetooth que totes les aplicacions "
+"puguin accedir."
 
 #: ../../appdev/apparmor.rst:54
 msgid "calendar"
-msgstr ""
+msgstr "calendari"
 
 #: ../../appdev/apparmor.rst:56
-#, fuzzy
 msgid "Description: Can access the calendar."
-msgstr "sensors: pot accedir els sensors"
+msgstr "Descripció: es pot accedir el calendari."
 
 #: ../../appdev/apparmor.rst:60
 msgid ""
 "Calendar grants access to the Evolution dataserver's calendar and alarms "
 "APIs. It also grants access to sync-monitor."
 msgstr ""
+"El calendari dóna accés al calendari del servidor de dades de l'Evolution i "
+"a les API d'alarmes. També autoritza l'accés al monitor de sincronització."
 
 #: ../../appdev/apparmor.rst:62
 msgid ""
 "This policy is reserved since it grants free access to all calendars on the "
 "device at any time. The legacy bug about this situation is `LP #1227824`_ ."
 msgstr ""
+"Aquesta política està reservada atès que autoritza l'accés lliure a tots els "
+"calendaris del dispositiu en qualsevol moment. L'informe d'error antic sobre "
+"aquesta situació és `LP#1227824`_."
 
 #: ../../appdev/apparmor.rst:66
 msgid "camera"
-msgstr ""
+msgstr "càmara"
 
 #: ../../appdev/apparmor.rst:68
-#, fuzzy
 msgid "Description: Can access the camera(s)"
-msgstr "camera: té acccés a la(les) càmera(càmeres)"
+msgstr "Descripció: Es pot accedir la(les) càmera(càmeres)"
 
 #: ../../appdev/apparmor.rst:72
-#, fuzzy
 msgid "The camera policy grants access to device cameras."
-msgstr "camera: té acccés a la(les) càmera(càmeres)"
+msgstr "camera: té acccés a la(les) càmera(càmeres)."
 
 #: ../../appdev/apparmor.rst:76
 msgid "connectivity"
-msgstr ""
+msgstr "connectivitat"
 
 #: ../../appdev/apparmor.rst:78
-#, fuzzy
 msgid "Description: Can access coarse network connectivity information"
 msgstr ""
-"connectivity: Pot accedir a la informació en brut de connectivitat de xarxa"
+"Descripció: es pot accedir la informació en brut de la connectivitat de xarxa"
 
 #: ../../appdev/apparmor.rst:82
 msgid ""
@@ -161,15 +178,18 @@ msgid ""
 "device's connectivity. This includes whether the device is connected to the "
 "Internet and whether it is connected via a Wi-Fi or mobile data connection."
 msgstr ""
+"La política de connectivitat permet a les aplicacions determinar informació "
+"en brut sobre la connectivitat del dispositiu. Això inclou si el dispositiu "
+"està connectat a Internet i si està connectat mitjançant una connexió de "
+"dades Wifi o de dades del mòbil."
 
 #: ../../appdev/apparmor.rst:86
 msgid "contacts"
-msgstr ""
+msgstr "contactes"
 
 #: ../../appdev/apparmor.rst:88
-#, fuzzy
 msgid "Description: Can access contacts."
-msgstr "location: pot accedir la ubicació"
+msgstr "Descripció: no es poden accedir els contactes."
 
 #: ../../appdev/apparmor.rst:92
 msgid ""
@@ -177,15 +197,18 @@ msgid ""
 "It is marked as reserved because it allows access to sync-monitor and "
 "unfettered access to the address book."
 msgstr ""
+"La política de contactes permet a les aplicacions accedir a la llista de "
+"contactes de l'usuari del dispositiu. Està marcada com a reservada atès que "
+"permet l'accés al monitor de sincronització i accés sense restriccions a "
+"llibre d'adreces."
 
 #: ../../appdev/apparmor.rst:96
 msgid "content_exchange"
-msgstr ""
+msgstr "content_exchange"
 
 #: ../../appdev/apparmor.rst:98
-#, fuzzy
 msgid "Description: Can request/import data from other applications"
-msgstr "content_exchange: Pot demandar/importar dades d'altres aplicacions"
+msgstr "Descripció: es poden demanar/importar dades d'altres aplicacions"
 
 #: ../../appdev/apparmor.rst:102
 msgid ""
@@ -198,10 +221,8 @@ msgid "content_exchange_source"
 msgstr ""
 
 #: ../../appdev/apparmor.rst:108
-#, fuzzy
 msgid "Description: Can provide/export data to other applications"
-msgstr ""
-"content_exchange_source: Pot proveir/exportar dades a d'altres aplicacions"
+msgstr "Descripció: es poden proveir/exportar dades a altres aplicacions"
 
 #: ../../appdev/apparmor.rst:112
 msgid ""
@@ -274,21 +295,16 @@ msgid "keep-display-on"
 msgstr ""
 
 #: ../../appdev/apparmor.rst:153
-#, fuzzy
 msgid "Description: Can request keeping the screen on"
-msgstr ""
-"keep-display-on: pot demandar que la pantalla es mantingui activa "
-"(disponible des de 15.04, OTA 5)"
+msgstr "Descripció: es pot demanar mantenir la pantalla activa"
 
 #: ../../appdev/apparmor.rst:159
-#, fuzzy
 msgid "location"
-msgstr "Introducció"
+msgstr "ubicació"
 
 #: ../../appdev/apparmor.rst:161
-#, fuzzy
 msgid "Description: Can access Location"
-msgstr "location: pot accedir la ubicació"
+msgstr "Descripció: es pot accedir la ubicació"
 
 #: ../../appdev/apparmor.rst:165
 msgid "Allows an app to request access to the device's current location."
@@ -299,9 +315,8 @@ msgid "microphone"
 msgstr ""
 
 #: ../../appdev/apparmor.rst:171
-#, fuzzy
 msgid "Description: Can access the microphone"
-msgstr "microphone: pot accedir el micròfon"
+msgstr "Descripció: es pot accedir el micròfon"
 
 #: ../../appdev/apparmor.rst:177
 msgid "music_files"
@@ -343,9 +358,8 @@ msgid "networking"
 msgstr ""
 
 #: ../../appdev/apparmor.rst:199
-#, fuzzy
 msgid "Description: Can access the network"
-msgstr "networking: pot accedir la xarxa"
+msgstr "Descripció: es pot accedir la xarxa"
 
 #: ../../appdev/apparmor.rst:203
 msgid ""
@@ -390,38 +404,32 @@ msgid ""
 msgstr ""
 
 #: ../../appdev/apparmor.rst:227
-#, fuzzy
 msgid "push-notification-client"
-msgstr "Notificacions d'inserció"
+msgstr "client d'enviament de notificacions"
 
 #: ../../appdev/apparmor.rst:229
-#, fuzzy
 msgid "Description: Can use push notifications as a client"
-msgstr ""
-"push-notificaction-client: pot user les notificacions push com a client"
+msgstr "Descripció: es poden usar les notificacions d'enviament com a client"
 
 #: ../../appdev/apparmor.rst:235
 msgid "sensors"
 msgstr ""
 
 #: ../../appdev/apparmor.rst:237
-#, fuzzy
 msgid "Description: Can access the sensors"
-msgstr "sensors: pot accedir els sensors"
+msgstr "Descripció: es poden accedir els sensors"
 
 #: ../../appdev/apparmor.rst:241
-#, fuzzy
 msgid "Allows apps to access `device sensors`_"
-msgstr "sensors: pot accedir els sensors"
+msgstr "Permet a les aplicacions accedir al «sensors de dispositiu»_"
 
 #: ../../appdev/apparmor.rst:245
 msgid "usermetrics"
 msgstr ""
 
 #: ../../appdev/apparmor.rst:247
-#, fuzzy
 msgid "Description: Can use UserMetrics to update the InfoGraphic"
-msgstr "usermetrics: pot usar l'UserMetrics per actualitzar la infografia"
+msgstr "Descripció: es pot usar l'UserMetrics per actualitzar l'InfoGraphic"
 
 #: ../../appdev/apparmor.rst:251
 msgid ""
@@ -479,9 +487,8 @@ msgid "webview"
 msgstr ""
 
 #: ../../appdev/apparmor.rst:285
-#, fuzzy
 msgid "Description: Can use the UbuntuWebview"
-msgstr "webview: put usar l'UbuntuWebview"
+msgstr "Descripció: Es pot usar l'UbuntuWebview"
 
 #: ../../appdev/apparmor.rst:289
 msgid "The webview policy group allows apps to embed a `web browser view`_."
@@ -576,7 +583,7 @@ msgid ""
 "talent and commitment is unmatched. Ubuntu is also the third most deployed "
 "desktop OS in the world."
 msgstr ""
-"Us donem la benvinguda a una plataforma de codi obert i lliura sota un "
+"Us donem la benvinguda a una plataforma de codi obert i lliure sota un "
 "control i un desenvolupament constants per part d'una comunitat vibrant "
 "global, l'energia, connectivitat i compromís de la qual no té parangons. "
 "L'Ubuntu és també el tercer sistema operatiu més distribuït al món."
@@ -734,7 +741,7 @@ msgstr "Apunts clau de la plataforma:"
 
 #: ../../appdev/index.rst:102
 msgid "Content Hub"
-msgstr "Concentrador de contingut"
+msgstr "Centre de continguts"
 
 #: ../../appdev/index.rst:102
 msgid ""
@@ -783,7 +790,7 @@ msgid ""
 msgstr ""
 "Simplifiqueu l'accés dels usuaris a serveis en línia mitjançant la "
 "integració a l'API de comptes en línia. Els comptes afegits per l'usuari al "
-"dispositiu es registren a un concentrador centralitzat, permetent que altres "
+"dispositiu es registren a un centre unificat, permetent que altres "
 "aplicacions els reutilitzin."
 
 #: ../../appdev/index.rst:114
@@ -872,16 +879,15 @@ msgid "Web applications"
 msgstr "Aplicacions web"
 
 #: ../../appdev/index.rst:166
-#, fuzzy
 msgid ""
 "Ubuntu webapps are web-hosted sites displayed inside an Ubuntu app "
 "container. They are true apps that users install, see, launch and use, but "
 "their content is provided through URLs."
 msgstr ""
-"Les aplicacions web de l'Ubuntu són llocs allotjats a la web que es mostren "
-"a dins d'un contenidor d'aplicació Ubuntu. Són aplicacions genuïnes que els "
-"usuaris instal·len, llencen i usen. Però el seu contingut es proveeix "
-"mitjançant URL."
+"Les aplicacions web de l'Ubuntu són llocs allotjats en webs que es mostren "
+"dins d'un contenidor d'aplicacions Ubuntu. Són aplicacions autèntiques que "
+"els usuaris instal·len, llencen i usen, però el seu contingut es proveeix a "
+"través d'URL."
 
 #: ../../appdev/index.rst:175 ../../appdev/nativeapp/index.rst:2
 msgid "Native applications"
@@ -1761,7 +1767,6 @@ msgstr ""
 "usar l'extensió WebGL per distribuir jocs en línia."
 
 #: ../../appdev/webapp/index.rst:10
-#, fuzzy
 msgid ""
 "Note: Ubuntu webapps and Ubuntu HTML5 apps are similar but not identical. "
 "The main difference is that the content of a webapp is provided through a "
@@ -1771,9 +1776,9 @@ msgstr ""
 "Nota: les aplicacions web de l'Ubuntu i les aplicacions HTML5 de l'Ubuntu "
 "són semblants però no idèntiques. La diferència principal és que el "
 "contingut d'una aplicació web es proveeix a través d'una URL, mentre que les "
-"aplicacions HTML5 instal·en el seu contingut (i en general proveeixen una "
+"aplicacions HTML5 instal·len el seu contingut (i en general proveeixen una "
 "interfície d'usuari Ubuntu HTML5). Les aplicacions web també tenen accés "
-"restringit a API de plataforma. Aplicacions web per a Ubuntu convergit"
+"restringit a API de plataforma."
 
 #: ../../appdev/webapp/index.rst:15
 msgid ""
