@@ -1,22 +1,23 @@
-Run android applications
+Run Android applications
 ========================
 
-`Anbox <https://anbox.io>`_ is a minimal android container and compatibility layer that allows you to run android applications on GNU/Linux operating systems.
+`Anbox <https://anbox.io>`_ is a minimal Android container and compatibility layer that allows you to run Android applications on GNU/Linux operating systems.
 
 .. note::
     - Anbox is in early development
-    - Anbox for Ubuntu Touch is in even more early development
-    - Anbox only works on the 16.04 version of Ubuntu Touch, which is also in early development
-    - Only selected devices are supported for the moment, more will be added in the future.
+    - When "host" is used in this document, it refers to another device which you can connect your Ubuntu Touch device to. Your host device must have ``adb`` installed.
 
 Supported devices
 -----------------
 
 Make sure your device is supported:
 
-Meizu Pro 5 (codename: *turbo*, name of the boot partition: *bootimg*)
-BQ M10 HD (codename: *cooler*, name of the boot partition: *boot*)
-BQ M10 FHD (codename: *frieza*, name of the boot partition: *boot*)
+- Meizu Pro 5 (codename: ``turbo``, name of the boot partition: ``bootimg``)
+- Fairphone 2 (codename: ``FP2``, name of the boot partition: ``boot``)
+- Oneplus one (codename: ``bacon``, name of the boot partition: ``boot``)
+- Nexus 5 (codename: ``hammerhead``, name of the boot partition: ``boot``)
+- BQ M10 HD (codename: ``cooler``, name of the boot partition: ``boot``)
+- BQ M10 FHD (codename: ``frieza``, name of the boot partition: ``boot``)
 
 You will need the device codename and the name of your boot partition for the installation.
 
@@ -29,35 +30,61 @@ How to install
 - :doc:`Install <../install>` the 16.04/devel channel on your supported device
 - Open a terminal and run ``export CODENAME="turbo" && export PARTITIONNAME="bootimg"``, but replace the part between the quotes respectively with the codename and name of the boot partition for your device. See the above list.
 - Activate developer mode on your device.
-- Connect the device to your computer computer and run the following commands::
+- Connect the device to your host and run the following commands::
 
-    adb shell sudo reboot -f bootloader
+    adb shell
+    sudo reboot -f bootloader # 'adb shell' will exit after this command
     wget http://cdimage.ubports.com/anbox-images/anbox-boot-$CODENAME.img
     sudo fastboot flash $PARTITIONNAME anbox-boot-$CODENAME.img
     sudo fastboot reboot
     rm anbox-boot-$CODENAME.img
+    exit
 
-- wait for the device to reboot, then run::
+- Wait for the device to reboot, then run::
 
     adb shell
     sudo mount -o rw,remount /
     sudo apt update
     sudo apt install anbox-ubuntu-touch
-    anbox-setup
+    anbox-tool install
     exit
 
-- Done! Select "Anbox" in the apps scope to use android applications. You might have to refresh the apps scope (pull down from the center of the screen and release) for the app to show up.
+- Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the new Android apps to show up.
 
 How to install new apks
 -----------------------
 
-- Copy the apk to `/home/phablet/anbox-data/data`
-- Login to android container on your phone
+- Copy the apk to ``/home/phablet/Downloads``, then run the following from your host::
 
-    lxc-console -ndefault -P /home/phablet/anbox-data/containers -t0
+    adb shell
+    sudo mount -o rw,remount /
+    sudo apt update
+    sudo apt install android-tools-adb
+    adb install my-app.apk
+    exit
 
-- cd into `data/` 
-- install the apk by using `pm install [appname].apk`
+- Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the new Android apps to show up.
+
+Keep your apps up to date
+-------------------------
+
+- To keep your apps running the lasted version you can make use of F-Droid or ApkTrack. If you like to install one of the above apps you can find them here:
+
+- F-Droid: https://f-droid.org/
+- ApkTrack: https://f-droid.org/packages/fr.kwiatkowski.ApkTrack/
+
+How to uninstall applications
+-----------------------------
+
+- This is a example of the app-list installed apps on your device
+- To uninstall apps, run ``adb uninstall [APP_ID]`` from your Ubuntu Touch device::
+
+    adb shell
+    sudo mount -o rw,remount /
+    adb uninstall [APP_ID]
+    exit
+
+- Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the new Android apps to show up.
 
 Reporting bugs
 --------------
