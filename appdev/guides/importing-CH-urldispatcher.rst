@@ -4,7 +4,7 @@ Importing from Content Hub and URLdispatcher
 .. figure:: /_static/images/appdev/guides/importingCHdispatcherimages/01ichu.png
         :align: center
 
-In the previous guide we have seen a little bit about how Content Hub works. In this guide we will see how `URLdispatcher` works and how to handle imported data from the Content Hub.
+In the previous guide we have seen a little bit about how Content Hub works. In this guide we will see how ``URLdispatcher`` works and how to handle imported data from the Content Hub.
 
 Handle data from the Content Hub
 --------------------------------
@@ -38,19 +38,19 @@ If we tap on the OpenStore app, it will be opened and it will ask if we want to 
                 }
         }
 
-Do you see that Connections element that targets the ContentHub? When it receives the signal onImportRequested, it will take the url of the data sent from the Content Hub (`transfer.items[0].url` is the url of the first data sent) and open a `PopUp` element to let the user install the click.
+Do you see that Connections element that targets the ContentHub? When it receives the signal onImportRequested, it will take the url of the data sent from the Content Hub (``transfer.items[0].url`` is the url of the first data sent) and open a ``PopUp`` element to let the user install the click.
 
 What about the URLdispatcher?
 -----------------------------
 
 The URL dispatcher is a piece of software, similar to the Content Hub, that makes our life easier trying to choose the correct app for a certain protocol. For example: We probably want to open the web browser when tapping on an http protocol. If we tap on a map link it is handy to open it with uNav or to open a twitter link in the Twitter app! How does that work?
 
-The `URLdispatcher` selects which app (according to their `manifest.json`) will open a certain link.
+The ``URLdispatcher`` selects which app (according to their ``manifest.json``) will open a certain link.
 
 .. image:: /_static/images/appdev/guides/importingCHdispatcherimages/05ichu.png
         :align: center
 
-Let’s see how our navigation app looks inside. uNav’s manifest shows special hooks for the `URLdispatcher` in its `manifest.json code <https://bazaar.launchpad.net/~unav-devs/unav/trunk/view/head:/manifest.json#L9>`_:
+Let’s see how our navigation app looks inside. uNav’s manifest shows special hooks for the ``URLdispatcher`` in its `manifest.json code <https://bazaar.launchpad.net/~unav-devs/unav/trunk/view/head:/manifest.json#L9>`_:
 
 .. code-block:: javascript
 
@@ -87,9 +87,9 @@ Also, a URI formatted geo:xxx,xxx should open in uNav, as it’s defined in line
 And how do we manage the received URL?
 --------------------------------------
 
-After the `URLdispatcher` sends the link to the correspondent app, we need to handle that URL or URI in the targeted app. Let’s see how to do that:
+After the ``URLdispatcher`` sends the link to the correspondent app, we need to handle that URL or URI in the targeted app. Let’s see how to do that:
 
-In the main qml file, we need to add some code to know what to do with the dispatched URL. First add an `Arguments element <https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L189>`_ that holds the URL, as is done, for example, in the `Linphone app <https://open-store.io/app/linphone.cibersheep>`_. Also, we add `connection to the URI Handler <https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L200>`_ with a Connection element with `UriHandler` as a target.
+In the main qml file, we need to add some code to know what to do with the dispatched URL. First add an `Arguments element <https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L189>`_ that holds the URL, as is done, for example, in the `Linphone app <https://open-store.io/app/linphone.cibersheep>`_. Also, we add `connection to the URI Handler <https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L200>`_ with a Connection element with ``UriHandler`` as a target.
 
 .. code:: qml
 
@@ -117,7 +117,7 @@ In the main qml file, we need to add some code to know what to do with the dispa
             }
         }
 
-This code will manage a URI in the form `linphone://sip:xxx@xxx.xx` when the app is opened. But what do we need to do to handle this link when the app is closed?
+This code will manage a URI in the form ``linphone://sip:xxx@xxx.xx`` when the app is opened. But what do we need to do to handle this link when the app is closed?
 
 We need to add a little bit `extra code <https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L69>`_ that will cover two cases:
 1) We receive one URL
@@ -145,13 +145,12 @@ We need to add a little bit `extra code <https://gitlab.com/ubports-linphone/lin
             checkStatus.start()
         }
 
+What happens if more than one app has the same URL type defined?
+----------------------------------------------------------------
 
-All well and good but what happens if more than one app has the same URL type defined?
---------------------------------------------------------------------------------------
-
-A very good question. What happens if we tap on a Twitter link? How is such a URL handled by the `URLdispatcher` as protocol `http` or the protocol `http://twitter`?
+A very good question. What happens if we tap on a Twitter link? How is such a URL handled by the ``URLdispatcher`` as protocol ``http`` or the protocol ``http://twitter``?
 
 What happens if two apps have the same defined protocol?
 
-Now it’s time to do some tests and share the results in the next guide. At the same bat-hour, in the same bat-channel.
+Now it’s time to do some tests and share the results in the next guide.
 

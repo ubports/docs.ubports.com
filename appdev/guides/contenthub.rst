@@ -13,9 +13,9 @@ Different ways of sharing the content
 
 As we can see in the `Content Hub documentation <https://api-docs.ubports.com/sdk/apps/qml/Ubuntu.Content/ContentHandler.html#detailed-description>`_, there are several ways of handling the file to be shared:
 
-- `ContentHandler.Source` (The app selected is going to be the source of the file imported)
-- `ContentHandler.Destination` (The app selected is going to be the destination of the file exported)
-- `ContentHandler.Share` (The app selected is going to be the app from witch the file is going to be shared from)
+- ``ContentHandler.Source`` (The app selected is going to be the source of the file imported)
+- ``ContentHandler.Destination`` (The app selected is going to be the destination of the file exported)
+- ``ContentHandler.Share`` (The app selected is going to be the app from witch the file is going to be shared from)
 
 Importing
 ^^^^^^^^^
@@ -36,13 +36,13 @@ Looking into the code of Webapp Creator, we’ll find the code to import an imag
             contentType: picker.contentType //ContentType.Pictures
             handler: picker.handler //ContentHandler.Source
 
-`ContentPeerPicker` is the element that shows the apps.
+``ContentPeerPicker`` is the element that shows the apps.
 
 .. code:: qml
 
         var importPage = mainPageStack.push(Qt.resolvedUrl("ImportPage.qml"),{"contentType": ContentType.Pictures, "handler": ContentHandler.Source})
 
-`contentType` is passed in `Main.qml <https://gitlab.com/cibersheep/webapp-creator/blob/master/webapp-creator/app/Main.qml#L118>`_ as ContentType.Pictures. So, we will only see apps from which we only can import images. `handler` is passed in the same line as ContentHandler.Source. As we want to import an image from the app selected in the Content Hub.
+``contentType`` is passed in `Main.qml <https://gitlab.com/cibersheep/webapp-creator/blob/master/webapp-creator/app/Main.qml#L118>`_ as ContentType.Pictures. So, we will only see apps from which we only can import images. ``handler`` is passed in the same line as ContentHandler.Source. As we want to import an image from the app selected in the Content Hub.
 
 Exporting
 ^^^^^^^^^
@@ -58,7 +58,7 @@ In Gelek, we are going to end with some saved games that we want to save in our 
 
 Tapping on the download icon we will get a Content Hub to *save* the game file (which is actually an export).
 
-The game file is a file type `glksave` So we will tell to the Content Hub that is of type `All` (`see the Install Page code <https://gitlab.com/cibersheep/gelek/blob/master/app/InstallPage.qml#L38>`_).
+The game file is a file of type ``glksave``. We will tell Content Hub that we are sending a file of type ``All`` (`see the Install Page code <https://gitlab.com/cibersheep/gelek/blob/master/app/InstallPage.qml#L38>`_).
 
 .. code:: qml
 
@@ -71,7 +71,7 @@ The game file is a file type `glksave` So we will tell to the Content Hub that i
 
             onPeerSelected: {
 
-`contentType` is `ContentType.All` So, we will only see apps that are able to receive files of type other and `handler` is `ContentHandler.Destination` The app selected will be the destination of our saved game.
+``contentType`` is ``ContentType.All``, so we will only see apps which are able to receive unmarked file types. ``handler`` is ``ContentHandler.Destination``, so the app selected should store the saved game.
 
 Tapping on the File Manager we will save the saved game in the folder we choose.
 
@@ -91,7 +91,7 @@ Similarly, tapping on the share icon will allow us to send the saved game throug
 
             onPeerSelected: {
 
-The only difference between this and the previous code is that `handler` is `ContentHandler.Share`
+The only difference between this and the previous code is that ``handler`` is ``ContentHandler.Share``
 
 Wait a minute. Why the different apps?
 --------------------------------------
@@ -101,7 +101,7 @@ Wait a minute. Why the different apps?
 
         Content Hub: Export vs Share
 
-Each developer can decide the rules each app would follow, in relation to the Content Hub. Why the OpenStore is shown as the destination of an export?
+Each developer can decide the rules each app would follow in relation to the Content Hub. Why the OpenStore is shown as the destination of an export?
 
 Let’s check its manifest.json
 
@@ -116,7 +116,7 @@ Let’s check its manifest.json
             }
         },
 
-The above code defines that the hooks for the app named `"openstore"` in relation to the `"content-hub"` should follow the rules defined in `openstore-contenthub.json`
+The above code defines that the hooks for the app named ``"openstore"`` in relation to the ``"content-hub"`` should follow the rules defined in ``openstore-contenthub.json``
 
 .. code:: javascript
 
@@ -126,9 +126,9 @@ The above code defines that the hooks for the app named `"openstore"` in relatio
             ]
         }
 
-This means, the OpenStore will be the destination for *all* `ContentTypes`.
+This means, the OpenStore will be the destination for *all* ``ContentTypes``.
 
-What about uMatriks? Let’s see its `content-hub.json`
+What about uMatriks? Let’s see its ``content-hub.json``
 
 .. code:: javascript
 
@@ -156,8 +156,6 @@ What about uMatriks? Let’s see its `content-hub.json`
             ]
         }
 
-So, with this example, uMatriks will be able to be the destination, source and share app for all kinds of `ContentType`.
-What about the other hooks in the `manifest.json`?
-
-That is «Flour from another sack» and will be discussed in the next guide.
+So, with this example, uMatriks will be able to be the destination, source and share app for all kinds of ``ContentType``.
+What about the other hooks in the ``manifest.json``? That is discussed in the next guide.
 
