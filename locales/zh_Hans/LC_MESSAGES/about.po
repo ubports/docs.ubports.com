@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-02 15:42-0500\n"
-"PO-Revision-Date: 2018-08-09 11:27+0000\n"
+"PO-Revision-Date: 2018-11-11 11:46+0000\n"
 "Last-Translator: Luo Yufan <njlyf2011@hotmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-about/zh_Hans/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.20\n"
+"X-Generator: Weblate 3.1.1\n"
 
 #: ../../about/introduction.rst:2
 msgid "Introduction"
@@ -64,14 +64,13 @@ msgstr ""
 
 #: ../../about/introduction.rst:21
 msgid "Attribution"
-msgstr "归因"
+msgstr "归属"
 
 #: ../../about/introduction.rst:23
 msgid "This documentation was heavily modeled after the `Godot Engine's Documentation <http://docs.godotengine.org/en/stable/>`_, attribution to Juan Linietsky, Ariel Manzur and the Godot community."
 msgstr ""
-"这个文档很大程度上是由 `Godot Engine’s Documentation "
-"<http://docs.godotengine.org/en/stable/>`_ 建模，归属于 Juan Linietsky, Ariel "
-"Manzur 和 Godot 社区。"
+"本文档高度依赖 `Godot Engine’s Documentation <http://docs.godotengine.org/en/stable/"
+">`_  建模，归属于 Juan Linietsky, Ariel Manzur 和 Godot 社区。"
 
 #: ../../about/process/branch-naming.rst:2
 msgid "Branch-naming convention"
@@ -175,16 +174,14 @@ msgid "Issue-Tracking Guidelines"
 msgstr "问题跟踪指南"
 
 #: ../../about/process/issue-tracking.rst:4
-#, fuzzy
 msgid "This document describes the standard process of dealing with new issues in UBports projects. Not to be confused with the :doc:`guide on writing a good bugreport </contribute/bugreporting>`."
-msgstr "本文档描述了处理UBports项目中新问题的标准流程。不要混淆：doc：`编写好的bug报告指南</贡献/错误报告>`。"
+msgstr "本文档描述了处理UBports项目中新问题的标准流程。请不要与 :doc：`编写好的bug报告指南</贡献/错误报告>` 混淆。"
 
 #: ../../about/process/issue-tracking.rst:7
 msgid "Where are bugs tracked?"
 msgstr "Bug 会在哪里被跟踪？"
 
 #: ../../about/process/issue-tracking.rst:9
-#, fuzzy
 msgid "Since our quality assurance depends heavily on the community, we try to track issues where the user would expect them, instead of seperated by repository. This means, that issues of almost all components that are distributed as with the system-image are tracked in the `Ubuntu Touch tracker <https://github.com/ubports/ubuntu-touch>`__. An exception of this are click-apps that can be updated independently through the OpenStore."
 msgstr ""
 "由于我们的质量保证在很大程度上取决于社区，因此我们尝试跟踪用户期望的问题，而不是由存储库分离。 这意味着，几乎所有与系统镜像一起分发的组件的问题都会在`"
