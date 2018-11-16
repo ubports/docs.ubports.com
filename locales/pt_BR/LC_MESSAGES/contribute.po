@@ -1,0 +1,536 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, The UBports project (Creative Commons BY-SA 4.0)
+# This file is distributed under the same license as the UBports package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: UBports 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-08-28 14:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../contribute/bugreporting.rst:2
+msgid "Bug reporting"
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:4
+msgid "This page contains information to help you help us by reporting an actionable bug for Ubuntu Touch. It does NOT contain information on reporting bugs in apps, most of the time their entry in the OpenStore will specify where and how to do that."
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:7
+msgid "Get the latest Ubuntu Touch"
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:9
+msgid "This might seem obvious, but it's easy to miss. Go to (Settings - Updates) and make sure that your device doesn't have any Ubuntu updates available. If not, continue through this guide. If so, update your device and try to reproduce the bug. If it still occurs, continue through this guide. If not, do a little dance! The bug has already been fixed and you can continue using Ubuntu Touch."
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:12
+msgid "Check if the bug is already reported"
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:14
+msgid "Open up the bug tracker for `ubuntu-touch <https://github.com/ubports/ubuntu-touch>`_."
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:16
+msgid "First, you'll need to make sure that the bug you're trying to report hasn't been reported before. Search through the bugs reported. When searching, use a few words that describe what you're seeing. For example, \"Lock screen transparent\" or \"Lock screen shows activities\"."
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:18
+msgid "If you find that a bug report already exists, select the \"Add your Reaction\" button (it looks like a smiley face) and select the +1 (thumbs up) reaction. This shows that you are also experiencing the bug."
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:20
+msgid "If the report is missing any of the information specified later in this document, please add it yourself to help the developers fix the bug."
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:23
+msgid "Reproduce the issue you've found"
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:25
+msgid "Next, find out exactly how to recreate the bug that you've found. Document the exact steps that you took to find the problem in detail. Then, reboot your phone and perform those steps again. If the problem still occurs, continue on to the next step. `If not <https://youtu.be/nn2FB1P_Mn8?t=10s>`_..."
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:28
+msgid "Getting Logs"
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:30
+msgid "We appreciate as many good logs as we can get when you report a bug. In general, /var/log/dmesg and the output of /android/system/bin/logcat are helpful when resolving an issue. I'll show you how to get these logs."
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:32
+msgid "To get set ready, follow the steps to :doc:`set up ADB </userguide/advanceduse/adb>`."
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:34
+msgid "Now, you can get the two most important logs."
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:37
+msgid "dmesg"
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:39
+msgid "The **dmesg** (*display message* or *driver message*) command displays debug messages from the kernel."
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:41
+#: ../../contribute/bugreporting.rst:54
+msgid "Using the steps you documented earlier, reproduce the issue you're reporting"
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:42
+#: ../../contribute/bugreporting.rst:52
+msgid "cd to a folder where you're able to write the log"
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:43
+msgid "Run the command: `adb shell dmesg > UTdmesg.txt`"
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:45
+msgid "This log should now be located at UTdmesg.txt under your working directory, ready for uploading later."
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:48
+msgid "logcat"
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:50
+msgid "The **logcat** (*log concatenator*) command displays debug information from various parts of the underlying android system."
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:53
+msgid "Run the command: `adb shell /android/system/bin/logcat -d > UTlogcat.txt`"
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:56
+msgid "This log will be located at UTlogcat.txt in your current working directory, so you'll be able to upload it later."
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:59
+msgid "Making the bug report"
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:61
+msgid "Now it's time for what you've been waiting for, the bug report itself! Bug reports need to be filed in English."
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:63
+msgid "First, pull up the `bug tracker <https://github.com/ubports/ubuntu-touch>`_ and click \"New Issue\". Log in to GitHub if you haven't yet."
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:65
+msgid "Next, you'll need to name your bug. Pick a name that says what's happening, but don't be too wordy. Four to eight words should be enough."
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:67
+msgid "Now, write your bug report. A good bug report includes the following:"
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:69
+msgid "What happened: A synopsis of the erroneous behavior"
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:70
+msgid "What I expected to happen: A synopsis of what should have happened, if there wasn't an error"
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:71
+msgid "Steps to reproduce: You wrote these down earlier, right?"
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:72
+msgid "Logs: Attach your logs by clicking and dragging them into your GitHub issue."
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:73
+msgid "Software Version: Go to (Settings - About) and list what appears on the \"OS\" line of this screen. Also include the release channel that you used when you installed Ubuntu on this phone."
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:75
+msgid "Once you're finished with that, post the bug. You can't add labels yourself, so please don't forget to state the device you're experiencing the issue on in the description so a moderator can easily add the correct tags later."
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:77
+msgid "A developer or QA-team member will confirm and triage your bug, then work can begin on it. If you are missing any information, you will be asked for it, so make sure to check in often!"
+msgstr ""
+
+#: ../../contribute/documentation.rst:2
+msgid "Documentation"
+msgstr ""
+
+#: ../../contribute/documentation.rst:5
+msgid "Documentation on this site is written in ReStructuredText, or RST for short. Please check the `RST Primer <http://www.sphinx-doc.org/en/stable/rest.html>`_ if you are not familiar with RST."
+msgstr ""
+
+#: ../../contribute/documentation.rst:7
+msgid "This page will guide you through writing great documentation for the UBports project that can be featured on this site."
+msgstr ""
+
+#: ../../contribute/documentation.rst:10
+msgid "Documentation guidelines"
+msgstr ""
+
+#: ../../contribute/documentation.rst:12
+msgid "These rules govern *how* you should write your documentation to avoid problems with style, format, or linking. If you don't follow these guidelines, we will not accept your document."
+msgstr ""
+
+#: ../../contribute/documentation.rst:15
+msgid "Title"
+msgstr ""
+
+#: ../../contribute/documentation.rst:17
+msgid "All pages must have a document title that will be shown in the table of contents (left sidebar) and at the top of the page. This title is underlined with equals signs."
+msgstr ""
+
+#: ../../contribute/documentation.rst:19
+msgid "Titles should be sentence cased rather than Title Cased. For example::"
+msgstr ""
+
+#: ../../contribute/documentation.rst:28
+msgid "There isn't a single definition of title casing that everyone follows, but sentence casing is easy. This helps keep capitalization in the table of contents consistent."
+msgstr ""
+
+#: ../../contribute/documentation.rst:31
+msgid "Table of contents"
+msgstr ""
+
+#: ../../contribute/documentation.rst:33
+msgid "People can't navigate to your new page if they can't find it. Neither can Sphinx. That's why you need to add new pages to Sphinx's table of contents."
+msgstr ""
+
+#: ../../contribute/documentation.rst:35
+msgid "You can do this by adding the page to the ``index.rst`` file in the same directory that you created it. For example, if you create a file called \"newpage.rst\", you would add the line marked with a chevron (>) in the nearest index::"
+msgstr ""
+
+#: ../../contribute/documentation.rst:45
+msgid "The order matters. If you would like your page to appear in a certain place in the table of contents, place it there. In the previous example, newpage would be added to the end of this table of contents."
+msgstr ""
+
+#: ../../contribute/documentation.rst:48
+msgid "Warnings"
+msgstr ""
+
+#: ../../contribute/documentation.rst:50
+msgid "Your edits must not introduce any warnings into the documentation build. If any warnings occur, the build will fail and your pull request will be marked with a red 'X'. Please ensure that your RST is valid and correct before you create a pull request. This is done automatically (via sphinx-build crashing with your error) if you follow our build instructions below."
+msgstr ""
+
+#: ../../contribute/documentation.rst:53
+msgid "Update translations"
+msgstr ""
+
+#: ../../contribute/documentation.rst:55
+msgid "You must update the translation files to match your changes before you commit them. To do this, run ``update-translations.sh`` in this repository."
+msgstr ""
+
+#: ../../contribute/documentation.rst:58
+msgid "Contribution workflow"
+msgstr ""
+
+#: ../../contribute/documentation.rst:60
+msgid "The following steps will help you to make a contribution to this documentation after you have written a document."
+msgstr ""
+
+#: ../../contribute/documentation.rst:63
+msgid "You will need a GitHub account to complete these steps. If you do not have one, click `here <https://github.com/join>`_ to begin the process of making an account."
+msgstr ""
+
+#: ../../contribute/documentation.rst:66
+msgid "Forking the repository"
+msgstr ""
+
+#: ../../contribute/documentation.rst:68
+msgid "You can make more advanced edits to our documentation by forking `ubports/docs.ubports.com <https://github.com/ubports/docs.ubports.com>`_ on GitHub. If you're not sure how to do this, check out the excellent GitHub guide on `forking projects <https://guides.github.com/activities/forking/>`_."
+msgstr ""
+
+#: ../../contribute/documentation.rst:71
+msgid "Building the documentation"
+msgstr ""
+
+#: ../../contribute/documentation.rst:73
+msgid "If you'd like to build this documentation *before* sending a PR (which you should), follow these instructions on your *local copy* of your fork of the repository."
+msgstr ""
+
+#: ../../contribute/documentation.rst:75
+msgid "The documentation can be built by running ``./build.sh`` in the root of this repository. The script will also create a virtual build environment in ``~/ubportsdocsenv`` if none is present."
+msgstr ""
+
+#: ../../contribute/documentation.rst:77
+msgid "If all went well, you can enter the ``_build/html`` directory and open ``index.html`` to view the UBports documentation."
+msgstr ""
+
+#: ../../contribute/documentation.rst:79
+msgid "If you have trouble building the docs, the first thing to try is deleting the build environment. Run ``rm -r ~/ubportsdocsenv`` and try the build again. Depending on when you first used the build script, you may need to run the ``rm`` command with ``sudo``."
+msgstr ""
+
+#: ../../contribute/documentation.rst:81
+msgid "Remember to `update translations`_, then commit your changes and submit a pull request."
+msgstr ""
+
+#: ../../contribute/documentation.rst:84
+msgid "Alternative methods to contribute"
+msgstr ""
+
+#: ../../contribute/documentation.rst:87
+#: ../../contribute/translations.rst:2
+msgid "Translations"
+msgstr ""
+
+#: ../../contribute/documentation.rst:89
+msgid "You may find the components of this document to translate at `its project in UBports Weblate`_."
+msgstr ""
+
+#: ../../contribute/documentation.rst:92
+msgid "Writing documents not in RST format"
+msgstr ""
+
+#: ../../contribute/documentation.rst:94
+msgid "If you would like to write documents for UBports but are not comfortable writing ReStructuredText, please write it without formatting and post it on the `UBports Forum`_ in the relevant section (likely General). Someone will be able to help you revise your draft and write the required ReStructuredText."
+msgstr ""
+
+#: ../../contribute/documentation.rst:97
+msgid "Uncomfortable with Git"
+msgstr ""
+
+#: ../../contribute/documentation.rst:99
+msgid "If you've written a complete document in ReStructuredText but aren't comfortable using Git or GitHub, please post it on the `UBports Forum`_ in the relevant section (likely General). Someone will be able to help you revise your draft and submit it to this documentation."
+msgstr ""
+
+#: ../../contribute/documentation.rst:102
+msgid "Current TODOs"
+msgstr ""
+
+#: ../../contribute/documentation.rst:104
+msgid "This page lists the TODOs that have been included in this documentation. If you know how to fix one, please send us a Pull Request to make it better!"
+msgstr ""
+
+#: ../../contribute/documentation.rst:111
+msgid "To create a todo, add this markup to your page::"
+msgstr ""
+
+#: ../../contribute/documentation-todo.rst:3
+msgid "Documentation TODOs"
+msgstr ""
+
+#: ../../contribute/index.rst:2
+msgid "Contributing to UBports"
+msgstr ""
+
+#: ../../contribute/index.rst:4
+msgid "Welcome! You're probably here because you want to contribute to UBports. The pages you'll find below here will help you do this in a way that's helpful to both the project and yourself."
+msgstr ""
+
+#: ../../contribute/index.rst:6
+msgid "If you're just getting started, we always need help with :doc:`thorough bug reporting <bugreporting>`. If you are multilingual, :doc:`translations <translations>` are also a great place to start."
+msgstr ""
+
+#: ../../contribute/index.rst:8
+msgid "If those aren't enough for you, see `our contribute page <https://ubports.com/page/vo-get-involved>`_ for an introduction of our focus groups."
+msgstr ""
+
+#: ../../contribute/monetary.rst:2
+msgid "Monetary support"
+msgstr ""
+
+#: ../../contribute/monetary.rst:4
+msgid "You can help us keep the lights on at UBports by becoming a patron on `Liberapay <https://liberapay.com/UBports/>`_ or `Patreon <https://www.patreon.com/ubports>`_!"
+msgstr ""
+
+#: ../../contribute/monetary.rst:6
+msgid "Your contribution finances our server infrastructure and debug services, and helps covering additional costs."
+msgstr ""
+
+#: ../../contribute/quality-assurance.rst:2
+msgid "Quality Assurance"
+msgstr ""
+
+#: ../../contribute/quality-assurance.rst:4
+msgid "This page explains how to help the UBports QA team, both as an official member or a new contributor. Please also read the :doc:`issue tracking </about/process/issue-tracking>` and :doc:`bugreporting <bugreporting>` guides to better understand the workflow. For real-time communication, you can join our `telegram group <http://t.me/ubports_qa_team>`_."
+msgstr ""
+
+#: ../../contribute/quality-assurance.rst:7
+msgid "Smoke testing"
+msgstr ""
+
+#: ../../contribute/quality-assurance.rst:9
+msgid "To test the core functionality of the operating system, we have compiled `a set of standardized tests <https://nc.ubports.com/s/3RnAI7tYzB2PMXs>`_. Run these tests on your device to :doc:`find and report bugs and regressions <bugreporting>`. It's usually run on all devices before a new release to make sure no new issues were introduced."
+msgstr ""
+
+#: ../../contribute/quality-assurance.rst:12
+msgid "Confirming bug reports"
+msgstr ""
+
+#: ../../contribute/quality-assurance.rst:14
+msgid "Unconfirmed bugreports are labeld **needs confirmation** to enable `global filtering <https://github.com/ubports/ubuntu-touch/issues?q=is%3Aissue+is%3Aopen+label%3A%22needs+confirmation%22>`__. Browse through the list, read the bugreports and try to reproduce the issues that are described. If necessary, add :doc:`missing information or logs, or improve the quality of the report by other means <bugreporting>`. Leave a comment stating your device, channel, build number and whether or not you were able to reproduce the issue."
+msgstr ""
+
+#: ../../contribute/quality-assurance.rst:16
+msgid "If you have write-access to the repository, you can replace the **needs confirmation** label with **bug** (to mark it confirmed) or **invalid** (if the issue is definitely not reproducible). In that case it should be closed."
+msgstr ""
+
+#: ../../contribute/quality-assurance.rst:18
+msgid "If you find two issues describing the same problem, leave a comment and try to find their differences. If they are in fact identical, close the newer one and label it **duplicate**."
+msgstr ""
+
+#: ../../contribute/quality-assurance.rst:21
+msgid "Testing patches"
+msgstr ""
+
+#: ../../contribute/quality-assurance.rst:23
+msgid "Once a developer finished working on an issue, it's moved to the quality assurance column of the `GitHub project <https://github.com/ubports/ubuntu-touch/projects/3>`__. Check if the issue is still present in the latest update on the devel channel and try to find any problems it is causing. Check if the developer mentioned specific things to look out for when testing and leave a comment detailing your experience. If you have write-access to the repository, you can move the issue back to **In Development** or forward to **Release Candidate** as specified by the :doc:`issue tracking guidelines </about/process/issue-tracking>`."
+msgstr ""
+
+#: ../../contribute/quality-assurance.rst:26
+msgid "Initial triaging of issues"
+msgstr ""
+
+#: ../../contribute/quality-assurance.rst:28
+msgid "Initial triaging of new issues is done by QA-team members with write-access to the repository. If a new issue is filed, read the report and add the correct labels as specified by the :doc:`issue tracking guidelines </about/process/issue-tracking>`. You can also immediately start confirming the bugreport."
+msgstr ""
+
+#: ../../contribute/quality-assurance.rst:30
+msgid "If the new issue has already been reported elsewhere, label it **duplicate** and close it."
+msgstr ""
+
+#: ../../contribute/translations.rst:4
+msgid "Although English is the official base language for all UBports projects we believe you have the right to use it in any language you want."
+msgstr ""
+
+#: ../../contribute/translations.rst:6
+msgid "We are working hard to meet that goal, and you can help as well."
+msgstr ""
+
+#: ../../contribute/translations.rst:8
+msgid "There are two levels for this:"
+msgstr ""
+
+#: ../../contribute/translations.rst:10
+msgid "A casual approach, as a translator volunteer."
+msgstr ""
+
+#: ../../contribute/translations.rst:11
+msgid "A fully committed approach as a UBports Member, filling in `this application <https://ubports.com/survey/start/ubports-membership-application-6>`_."
+msgstr ""
+
+#: ../../contribute/translations.rst:14
+msgid "Tools for Translation"
+msgstr ""
+
+#: ../../contribute/translations.rst:16
+msgid "For everyone: A web based translation tool called `Weblate <https://translate.ubports.com/>`_. This is the recommended way."
+msgstr ""
+
+#: ../../contribute/translations.rst:18
+msgid "For advanced users: Working directly on .po files with the editor of your choice, and a GitHub account. The .po files for each project are in their repository on `our GitHub organization <https://github.com/ubports>`_."
+msgstr ""
+
+#: ../../contribute/translations.rst:20
+msgid "A `Translation Forum <https://forums.ubports.com/category/39/translations>`_ to discuss on translating Ubuntu Touch and its core apps."
+msgstr ""
+
+#: ../../contribute/translations.rst:24
+msgid "How-To"
+msgstr ""
+
+#: ../../contribute/translations.rst:27
+msgid "UBports Weblate"
+msgstr ""
+
+#: ../../contribute/translations.rst:29
+msgid "You can go to `UBports Weblate <https://translate.ubports.com/>`_, click on \"Dashboard\" button, go to a project, and start making anonymous suggestions without being registered. If you want to save your translations, you must be logged in."
+msgstr ""
+
+#: ../../contribute/translations.rst:31
+msgid "For that, go to UBports Weblate and click on the \"Register\" button. Once in the \"Registration\" page, you'll find two options:"
+msgstr ""
+
+#: ../../contribute/translations.rst:33
+msgid "Register using a valid email address, a username, and your full name. You'll need to resolve an easy control question too."
+msgstr ""
+
+#: ../../contribute/translations.rst:34
+msgid "Register using a third party registration. Currently the system supports accounts from openSUSE, GitHub, Fedora, and Ubuntu."
+msgstr ""
+
+#: ../../contribute/translations.rst:36
+msgid "Once you're logged in, the site is self-explanatory and you'll find there all the options and customization you can do."
+msgstr ""
+
+#: ../../contribute/translations.rst:38
+msgid "Now, get on with it. The first step is to search if your language already exists in the project of your choice."
+msgstr ""
+
+#: ../../contribute/translations.rst:40
+msgid "If your language is not available for a specific project, you can add it yourself."
+msgstr ""
+
+#: ../../contribute/translations.rst:42
+msgid "You decide how much time you can put into translation. From minutes to hours, everything counts."
+msgstr ""
+
+#: ../../contribute/translations.rst:45
+msgid ".po file editor"
+msgstr ""
+
+#: ../../contribute/translations.rst:47
+msgid "As was said up above, you need a file editor of your choice and a GitHub account to translate .po files directly."
+msgstr ""
+
+#: ../../contribute/translations.rst:49
+msgid "There are online gettext .po editors and those you can install in your computer."
+msgstr ""
+
+#: ../../contribute/translations.rst:51
+msgid "You can choose whatever editor you want, but we prefer to work with free software only. There are too many plain text editors and tools to help you translate .po files to put down a list here."
+msgstr ""
+
+#: ../../contribute/translations.rst:53
+msgid "If you want to work with .po files directly you know what you're doing for sure."
+msgstr ""
+
+#: ../../contribute/translations.rst:56
+msgid "Translation Team Communication"
+msgstr ""
+
+#: ../../contribute/translations.rst:58
+msgid "The straightforward and recommended way is to use `the forum category <https://forums.ubports.com/category/39/translations>`_ that UBports provides for this task."
+msgstr ""
+
+#: ../../contribute/translations.rst:60
+msgid "To use it you need to register, or login if you're registered already."
+msgstr ""
+
+#: ../../contribute/translations.rst:62
+msgid "The only requirement is to start your post putting down your language in brackets in the \"Enter your topic title here\" field. For example, ``[Spanish] How to translate whatever?``"
+msgstr ""
+
+#: ../../contribute/translations.rst:64
+msgid "Just for your information, some projects are using Telegram groups too, and some teams are still using the Ubuntu Launchpad framework."
+msgstr ""
+
+#: ../../contribute/translations.rst:66
+msgid "In your interactions with your team you'll find the best way to coordinate your translations."
+msgstr ""
+
+#: ../../contribute/translations.rst:69
+msgid "License"
+msgstr ""
+
+#: ../../contribute/translations.rst:71
+msgid "All the translation projects, and all your contributions to this project, are under a `Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) <https://creativecommons.org/licenses/by-sa/4.0/>`_ license that you explicitly accept by contributing to the project."
+msgstr ""
+
+#: ../../contribute/translations.rst:73
+msgid "Go to that link to learn what this exactly means."
+msgstr ""
