@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: Chinese (Simplified) (UBports Docs)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-11 15:02-0500\n"
-"PO-Revision-Date: 2018-09-22 08:16+0000\n"
-"Last-Translator: Luo Yufan <njlyf2011@hotmail.com>\n"
+"PO-Revision-Date: 2018-11-18 08:46+0000\n"
+"Last-Translator: xingyichao <993226501@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-porting/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.20\n"
+"X-Generator: Weblate 3.1.1\n"
 
 #: ../../porting/building-halium-boot.rst:2
 msgid "Building halium-boot"
@@ -35,6 +35,8 @@ msgid ""
 "``fstab`` file includes any contexts, the partition that they are on will "
 "fail to mount and your port will not work correctly."
 msgstr ""
+"Halium-boot的``mount``不知道SELinux的内容。 "
+"如果您的设备的``fstab``文件包含任何内容，则它们所在的分区将无法安装，并且您的端口将无法正常工作。"
 
 #: ../../porting/building-halium-boot.rst:11
 msgid ""
@@ -43,6 +45,9 @@ msgid ""
 "etc`` and it is named either ``fstab.qcom`` or ``fstab.devicename``. Open "
 "the file for editing."
 msgstr ""
+"Halium-boot这个过程的第一步是确定你的fstab实际上在哪里。 对于大多数人来说，这是在``BUILDDIR / device / "
+"MANUFACTUER / CODENAME / rootdir / "
+"etc``中，它被命名为``fstab.qcom``或``fstab.devicename``。 打开文件进行编辑。"
 
 #: ../../porting/building-halium-boot.rst:13
 msgid ""
@@ -56,12 +61,15 @@ msgid ""
 "in the file. The option will start at the text ``context=`` and end at the "
 "comma following it."
 msgstr ""
+"打开文件后，从文件中的所有块设备中删除所有``context =``选项。 该选项将从文本``context =``开始，并以逗号后面的逗号结束。"
 
 #: ../../porting/building-halium-boot.rst:17
 msgid ""
 "For example, the line ``ro,nosuid,nodev,context=u:object_r:firmware_file:s0,"
 "barrier=0`` should become ``ro,nosuid,nodev,barrier=0``"
 msgstr ""
+"例如，这一行``ro，nosuid，nodev，context = u：object_r：firmware_file：s0，barrier = "
+"0``应该变为``ro，nosuid，nodev，barrier = 0``"
 
 #: ../../porting/building-halium-boot.rst:19
 msgid "Save and exit."
@@ -78,6 +86,8 @@ msgid ""
 "purpose, ``check-kernel-config``. It's included in the halium-boot "
 "repository. Simply run it on your config as follows::"
 msgstr ""
+"Ubuntu Touch需要与Halium略有不同的内核配置，包括启用应用甲。 幸运的是，我们有一个很好的脚本用于此目的，``check-kernel-"
+"config``。 它包含在halium-boot存储库中。 只需在您的配置上运行它，如下所示::"
 
 #: ../../porting/building-halium-boot.rst:28
 msgid ""
@@ -86,6 +96,8 @@ msgid ""
 "If there are, fix them manually. Once finished, run the script without the "
 "``-w`` flag one more time to make sure everything is correct."
 msgstr ""
+"你可能要做两次。 它可能会解决问题。 然后，运行没有`-w``标志的脚本，看看是否还有错误。 如果有，请手动修复它们。 "
+"完成后，再次运行不带“-w``标志的脚本，以确保一切正确。"
 
 #: ../../porting/building-halium-boot.rst:31
 msgid "Build the image"
@@ -107,7 +119,7 @@ msgstr "``source build/envsetup.sh``"
 
 #: ../../porting/building-halium-boot.rst:37
 msgid "Run ``breakfast`` or ``lunch``, whichever you use for your device"
-msgstr ""
+msgstr "运行``breakfast``或``lunch``，无论您使用哪种设备"
 
 #: ../../porting/building-halium-boot.rst:38
 msgid "``mka halium-boot``"
@@ -136,7 +148,7 @@ msgstr "常见安装问题"
 msgid ""
 "This page details problems commonly faced while following the :doc:"
 "`installing-16-04` page."
-msgstr ""
+msgstr "此页面详细说明了遵循：doc：`installing-16-04`页面时常遇到的问题。"
 
 #: ../../porting/common-problems-install.rst:12
 msgid "SSH hangs when trying to connect"
@@ -149,6 +161,8 @@ msgid ""
 "prompt. If you run ``ssh -vvvv phablet@10.15.19.82``, you only get the "
 "following output before the program stops::"
 msgstr ""
+"尝试连接时，SSH连接可能会无限期挂起。 尝试停止与Control-C的连接可能会也可能不会返回到shell提示符。 如果你运行``ssh -vvvv "
+"phablet @ 10.15.19.82``，你只能在程序停止之前得到以下输出::"
 
 #: ../../porting/common-problems-install.rst:22
 msgid ""
@@ -156,10 +170,12 @@ msgid ""
 "rsyslogd is enabled. If you have this error, please add your voice to "
 "`ubports/ubuntu-touch#560`_ and then try the following workaround:"
 msgstr ""
+"启用rsyslogd时，这似乎是内核3.10的arm64设备上的常见错误。 如果您有此错误，请将您的声音添加到`ubports / ubuntu-"
+"touch＃560`_然后尝试以下解决方法："
 
 #: ../../porting/common-problems-install.rst:24
 msgid "Reboot the device to recovery and connect with ``adb shell``"
-msgstr ""
+msgstr "重新启动设备以恢复并连接“adb shell”"
 
 #: ../../porting/common-problems-install.rst:25
 msgid "Run the following commands to disable rsyslogd::"
