@@ -1,5 +1,3 @@
-.. _nativeapp:
-
 Writable directories
 ====================
 
