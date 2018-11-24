@@ -51,6 +51,7 @@ Get started building your first app or learn about advanced concepts with our :r
     guides/cookbook
     guides/contenthub
     guides/importing-CH-urldispatcher
+    guides/writeable-dirs
 
 Publishing
 ----------
