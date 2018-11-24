@@ -1,21 +1,35 @@
 .. _nativeapp:
 
-Reading and writing files
-=========================
+Writable directories
+====================
 
 App confinement is part of the Ubuntu Touch security concept. Data can be
 exchanged between apps only according to the AppArmor policies. This being said,
 apps can only read and write files that are located in one of three app 
-specific directories: 
+specific directories explained in this guide.
 
-- App Data: ``/home/phablet/.local/share/<appname>``
-- Config: ``/home/phablet/.config/<appname>``
-- Cache: ``/home/phablet/.cache/<appname>``
+Config
+^^^^^^
+Path: ``/home/phablet/.config/<appname>/``
 
-Replace ``<appname>`` with the full app name (e.g. ``openstore.openstore-team``).
+This is the place to store configurations files to. The music app for example
+stores its configuration to ``/home/phablet/.config/com.ubuntu.music/com.ubuntu.music.conf``.
 
-.. Note::
-    When recieving files via content hub, the file is copied to the app's cache.
+Cache
+^^^^^
+Path: ``/home/phablet/.cache/<appname>/``
+
+This is the place to cache data for later use. The cache is also used by the
+Content Hub. Files that have been shared with the music app for example can be
+found in ``/home/phablet/.cache/com.ubuntu.music/HubIncoming/``.
+
+App data
+^^^^^^^^
+Path: ``/home/phablet/.local/share/<appname>/``
+
+This is where your app stores any data. The music app for example stores its
+data bases to ``/home/phablet/.local/share/com.ubuntu.music/Databases/``.
+
 
 StandardPaths in C++
 --------------------
@@ -25,6 +39,7 @@ The Qt header ``QStandardPaths`` provides the app's writable locations:
 
         #include <QStandardPaths>
         ...
-        QString appDataPath = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
         QString configPath = QStandardPaths::writableLocation(QStandardPaths::AppConfigLocation);
         QString cachePath = QStandardPaths::writableLocation(QStandardPaths::CacheLocation);
+        QString appDataPath = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
+        ...
