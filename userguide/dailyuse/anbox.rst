@@ -5,7 +5,7 @@ Run Android applications
 
 .. note::
     - Anbox is in early development
-    - When "host" is used in this document, it refers to another device which you can connect your Ubuntu Touch device to. Your host device must have ``adb`` installed.
+    - When "host" is used in this document, it refers to another device which you can connect your Ubuntu Touch device to. Your host device must have ``adb`` and ``fastboot`` installed.
 
 Supported devices
 -----------------
@@ -27,10 +27,10 @@ How to install
 .. warning::
     Because this feature is in such an early stage of development, the installation is only recommended for experienced users.
 
-- :doc:`Install <../install>` the 16.04/devel channel on your supported device
-- Open a terminal and run ``export CODENAME="turbo" && export PARTITIONNAME="bootimg"``, but replace the part between the quotes respectively with the codename and name of the boot partition for your device. See the above list.
+- Make sure your supported device runs on 16.04 (anbox doesn't work on 15.04)
+- Open a terminal on your host and set some device specific variables by running ``export CODENAME="turbo" && export PARTITIONNAME="bootimg"``, but replace the part between the quotes respectively with the codename and name of the boot partition for your device. See the above list.
 - Activate developer mode on your device.
-- Connect the device to your host and run the following commands::
+- Connect the device to your host and run the following commands from your host (same terminal that you ran the ``export`` command in)::
 
     adb shell
     sudo reboot -f bootloader # 'adb shell' will exit after this command
@@ -40,7 +40,7 @@ How to install
     rm anbox-boot-$CODENAME.img
     exit
 
-- Wait for the device to reboot, then run::
+- Wait for the device to reboot, then run from your host::
 
     adb shell
     sudo mount -o rw,remount /
