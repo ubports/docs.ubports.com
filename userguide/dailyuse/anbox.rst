@@ -60,7 +60,7 @@ How to install new apks
     sudo mount -o rw,remount /
     sudo apt update
     sudo apt install android-tools-adb
-    adb install my-app.apk
+    adb install /home/phablet/Downloads/my-app.apk
     exit
 
 - Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the new Android apps to show up.
