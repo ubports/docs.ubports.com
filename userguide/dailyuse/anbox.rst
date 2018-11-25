@@ -86,6 +86,21 @@ How to uninstall applications
 
 - Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the new Android apps to show up.
 
+Troubleshooting
+---------------
+
+- If installing ``anbox-ubuntu-touch`` or ``android-tools-adb`` on the device fails with an error about unsufficient space, try this::
+
+    adb shell
+    sudo mount -o rw,remount /
+    sudo rm -r /var/cache/apt
+    sudo tune2fs -m 0 /dev/loop0
+    sudo apt update
+    sudo apt install anbox-ubuntu-touch android-tools-adb
+    sudo mount -o ro,remount /
+    exit
+
+
 Reporting bugs
 --------------
 
