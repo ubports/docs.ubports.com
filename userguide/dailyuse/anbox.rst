@@ -100,6 +100,11 @@ Troubleshooting
     sudo mount -o ro,remount /
     exit
 
+- When you want to install an apk but get the error ``Invalid APK file`` that error could also mean "file not found"
+
+  - check that you typed the file name correctly
+  - if the apk does not reside in the current folder where you execute adb, you have to specify the full path, e.g. ``/home/phablet/Downloads/my-app.apk`` instead of just ``my-app.apk``
+
 
 Reporting bugs
 --------------
