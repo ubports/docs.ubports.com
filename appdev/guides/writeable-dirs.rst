@@ -40,9 +40,51 @@ The Qt header ``QStandardPaths`` provides the app's writable locations:
 
 .. code-block:: C++
 
-        #include <QStandardPaths>
-        ...
-        QString configPath = QStandardPaths::writableLocation(QStandardPaths::AppConfigLocation);
-        QString cachePath = QStandardPaths::writableLocation(QStandardPaths::CacheLocation);
-        QString appDataPath = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
-        ...
+    #include <QStandardPaths>
+    ...
+    QString configPath = QStandardPaths::writableLocation(QStandardPaths::AppConfigLocation);
+    QString cachePath = QStandardPaths::writableLocation(QStandardPaths::CacheLocation);
+    QString appDataPath = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
+    ...
+
+StandardPaths in QML
+--------------------
+The Qt module `Qt.labs.platform <https://doc.qt.io/archives/qt-5.10/qml-qt-labs-platform-standardpaths.html>`_ provides the QStandardPaths in QML. Unfortunately it is not available on Ubuntu Touch, yet. Probably you
+don't want to ship that module with your app. Instead, you could simply let
+your C++ plugin provide the paths to your QML part. Therefore, add these methods
+to your plugin class:
+
+.. code-block:: C++
+
+    #include <QStandardPaths>
+    ...
+    Q_INVOKABLE QString configPath()
+    {
+        return QStandardPaths::writableLocation(QStandardPaths::AppConfigLocation);
+    }
+    Q_INVOKABLE QString cachePath()
+    {
+        return QStandardPaths::writableLocation(QStandardPaths::CacheLocation);
+    }
+    Q_INVOKABLE QString appDataPath()
+    {
+        return QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
+    }
+    ...
+
+Assuming the name of your plugin is MyPlugin, you can access these paths in QML:
+
+.. code-block:: QML
+
+    Label
+    {
+        text: MyPlugin.configPath()
+    }
+    Label
+    {
+        text: MyPlugin.cachePath()
+    }
+    Label
+    {
+        text: MyPlugin.appDataPath()
+    }
