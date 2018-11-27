@@ -93,9 +93,9 @@ Troubleshooting
 
     adb shell
     sudo mount -o rw,remount /
-    sudo rm -r /var/cache/apt
-    sudo tune2fs -m 0 /dev/loop0
-    sudo apt update
+    sudo rm -r /var/cache/apt     # delete the apt cache; frees space on system image
+    sudo tune2fs -m 0 /dev/loop0  # space reserved exclusively for root user on system image set to zero
+    sudo apt update               # recreate apt cache to install anbox and adb
     sudo apt install anbox-ubuntu-touch android-tools-adb
     sudo mount -o ro,remount /
     exit
