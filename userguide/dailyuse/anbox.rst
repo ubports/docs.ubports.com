@@ -5,7 +5,7 @@ Run Android applications
 
 .. note::
     - Anbox is in early development
-    - When "host" is used in this document, it refers to another device which you can connect your Ubuntu Touch device to. Your host device must have ``adb`` installed.
+    - When "host" is used in this document, it refers to another device which you can connect your Ubuntu Touch device to. Your host device must have ``adb`` and ``fastboot`` installed.
 
 Supported devices
 -----------------
@@ -27,10 +27,10 @@ How to install
 .. warning::
     Because this feature is in such an early stage of development, the installation is only recommended for experienced users.
 
-- :doc:`Install <../install>` the 16.04/devel channel on your supported device
-- Open a terminal and run ``export CODENAME="turbo" && export PARTITIONNAME="bootimg"``, but replace the part between the quotes respectively with the codename and name of the boot partition for your device. See the above list.
+- Make sure your supported device runs on 16.04 (anbox doesn't work on 15.04)
+- Open a terminal on your host and set some device specific variables by running ``export CODENAME="turbo" && export PARTITIONNAME="bootimg"``, but replace the part between the quotes respectively with the codename and name of the boot partition for your device. See the above list.
 - Activate developer mode on your device.
-- Connect the device to your host and run the following commands::
+- Connect the device to your host and run the following commands from your host (same terminal that you ran the ``export`` command in)::
 
     adb shell
     sudo reboot -f bootloader # 'adb shell' will exit after this command
@@ -40,7 +40,7 @@ How to install
     rm anbox-boot-$CODENAME.img
     exit
 
-- Wait for the device to reboot, then run::
+- Wait for the device to reboot, then run from your host::
 
     adb shell
     sudo mount -o rw,remount /
@@ -60,7 +60,7 @@ How to install new apks
     sudo mount -o rw,remount /
     sudo apt update
     sudo apt install android-tools-adb
-    adb install my-app.apk
+    adb install /home/phablet/Downloads/my-app.apk
     exit
 
 - Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the new Android apps to show up.
@@ -85,6 +85,26 @@ How to uninstall applications
     exit
 
 - Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the new Android apps to show up.
+
+Troubleshooting
+---------------
+
+- If installing ``anbox-ubuntu-touch`` or ``android-tools-adb`` on the device fails with an error about unsufficient space, try this::
+
+    adb shell
+    sudo mount -o rw,remount /
+    sudo rm -r /var/cache/apt     # delete the apt cache; frees space on system image
+    sudo tune2fs -m 0 /dev/loop0  # space reserved exclusively for root user on system image set to zero
+    sudo apt update               # recreate apt cache to install anbox and adb
+    sudo apt install anbox-ubuntu-touch android-tools-adb
+    sudo mount -o ro,remount /
+    exit
+
+- When you want to install an apk but get the error ``Invalid APK file`` that error could also mean "file not found"
+
+  - check that you typed the file name correctly
+  - if the apk does not reside in the current folder where you execute adb, you have to specify the full path, e.g. ``/home/phablet/Downloads/my-app.apk`` instead of just ``my-app.apk``
+
 
 Reporting bugs
 --------------
