@@ -1,3 +1,5 @@
+.. _contenthub:
+
 The content hub - tips and tricks
 =================================
 
