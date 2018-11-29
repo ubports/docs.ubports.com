@@ -1,11 +1,11 @@
 Writable directories
 ====================
 
-App confinement is part of the Ubuntu Touch security concept. Data can be exchanged between apps only according to the AppArmor policies. This being said, apps can only read and write files that are located in one of three app specific directories explained in this guide.
+App confinement is part of the Ubuntu Touch security concept. Data can be exchanged between apps only according to the AppArmor policies, mainly using the :ref:`ContentHub <contenthub>`. This being said, apps can only read and write files that are located in one of three app specific directories explained in this guide.
 
 Standard Paths
 --------------
-Besides the write access to the app directories explained below, the app can write debug messages into the app log file located at ``/home/phablet/.cache/upstart/application-click-<fullappname>_<appname>_<version>.log``. To append messages to the log file, use the Qt debug functions.
+Besides the write access to the app directories explained below, the app can write debug messages into the app log file located at ``/home/phablet/.cache/upstart/application-click-<fullappname>_<appname>_<version>.log``. To append messages to the log file, use the `Qt debug <https://doc.qt.io/qt-5/qdebug.html>`_ functions.
 
 Config
 ^^^^^^
