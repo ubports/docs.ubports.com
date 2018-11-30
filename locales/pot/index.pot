@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-02 15:42-0500\n"
+"POT-Creation-Date: 2018-11-30 10:25-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -85,14 +85,14 @@ msgid "Contribute"
 msgstr ""
 
 #: ../../index.rst:50
-msgid "App development"
+msgid "Development"
 msgstr ""
 
-#: ../../index.rst:57
+#: ../../index.rst:58
 msgid "Porting"
 msgstr ""
 
-#: ../../index.rst:64
+#: ../../index.rst:65
 msgid "Platform"
 msgstr ""
 
