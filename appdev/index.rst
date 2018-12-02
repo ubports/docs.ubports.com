@@ -51,11 +51,7 @@ Get started building your first app or learn about advanced concepts with our :r
     guides/cookbook
     guides/contenthub
     guides/importing-CH-urldispatcher
-<<<<<<< HEAD
-    guides/pushnotifications
-=======
     guides/writeable-dirs
->>>>>>> f0ce2c0264493a86cfffdf68d8a0770aca2fdbda
 
 Publishing
 ----------
@@ -103,4 +99,3 @@ Preinstalled apps
 -----------------
 
 The :doc:`/contribute/preinstalled-apps` page has information on developing the apps which are included with Ubuntu Touch.
-
