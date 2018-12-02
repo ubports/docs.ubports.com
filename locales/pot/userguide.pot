@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-25 14:54-0400\n"
+"POT-Creation-Date: 2018-11-30 10:25-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -395,11 +395,11 @@ msgid "Switch release channels"
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:2
-msgid "Run android applications"
+msgid "Run Android applications"
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:4
-msgid "`Anbox <https://anbox.io>`_ is a minimal android container and compatibility layer that allows you to run android applications on GNU/Linux operating systems."
+msgid "`Anbox <https://anbox.io>`_ is a minimal Android container and compatibility layer that allows you to run Android applications on GNU/Linux operating systems."
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:7
@@ -407,94 +407,140 @@ msgid "Anbox is in early development"
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:8
-msgid "Anbox for Ubuntu Touch is in even more early development"
+msgid "When \"host\" is used in this document, it refers to another device which you can connect your Ubuntu Touch device to. Your host device must have ``adb`` and ``fastboot`` installed."
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:9
-msgid "Anbox only works on the 16.04 version of Ubuntu Touch, which is also in early development"
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:10
-msgid "Only selected devices are supported for the moment, more will be added in the future."
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:13
+#: ../../userguide/dailyuse/anbox.rst:11
 msgid "Supported devices"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:15
+#: ../../userguide/dailyuse/anbox.rst:13
 msgid "Make sure your device is supported:"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:17
-msgid "Meizu Pro 5 (codename: *turbo*, name of the boot partition: *bootimg*) BQ M10 HD (codename: *cooler*, name of the boot partition: *boot*) BQ M10 FHD (codename: *frieza*, name of the boot partition: *boot*)"
+#: ../../userguide/dailyuse/anbox.rst:15
+msgid "Meizu Pro 5 (codename: ``turbo``, name of the boot partition: ``bootimg``)"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:21
+#: ../../userguide/dailyuse/anbox.rst:16
+msgid "Fairphone 2 (codename: ``FP2``, name of the boot partition: ``boot``)"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:17
+msgid "Oneplus one (codename: ``bacon``, name of the boot partition: ``boot``)"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:18
+msgid "Nexus 5 (codename: ``hammerhead``, name of the boot partition: ``boot``)"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:19
+msgid "BQ M10 HD (codename: ``cooler``, name of the boot partition: ``boot``)"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:20
+msgid "BQ M10 FHD (codename: ``frieza``, name of the boot partition: ``boot``)"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:22
 msgid "You will need the device codename and the name of your boot partition for the installation."
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:24
+#: ../../userguide/dailyuse/anbox.rst:25
 msgid "How to install"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:27
+#: ../../userguide/dailyuse/anbox.rst:28
 msgid "Because this feature is in such an early stage of development, the installation is only recommended for experienced users."
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:29
-msgid ":doc:`Install <../install>` the 16.04/devel channel on your supported device"
-msgstr ""
-
 #: ../../userguide/dailyuse/anbox.rst:30
-msgid "Open a terminal and run ``export CODENAME=\"turbo\" && export PARTITIONNAME=\"bootimg\"``, but replace the part between the quotes respectively with the codename and name of the boot partition for your device. See the above list."
+msgid "Make sure your supported device runs on 16.04 (anbox doesn't work on 15.04)"
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:31
-msgid "Activate developer mode on your device."
+msgid "Open a terminal on your host and set some device specific variables by running ``export CODENAME=\"turbo\" && export PARTITIONNAME=\"bootimg\"``, but replace the part between the quotes respectively with the codename and name of the boot partition for your device. See the above list."
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:32
-msgid "Connect the device to your computer computer and run the following commands::"
+msgid "Activate developer mode on your device."
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:40
-msgid "wait for the device to reboot, then run::"
+#: ../../userguide/dailyuse/anbox.rst:33
+msgid "Connect the device to your host and run the following commands from your host (same terminal that you ran the ``export`` command in)::"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:49
-msgid "Done! Select \"Anbox\" in the apps scope to use android applications. You might have to refresh the apps scope (pull down from the center of the screen and release) for the app to show up."
+#: ../../userguide/dailyuse/anbox.rst:43
+msgid "Wait for the device to reboot, then run from your host::"
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:52
-msgid "How to install new apks"
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:54
-msgid "Copy the apk to `/home/phablet/anbox-data/data`"
+#: ../../userguide/dailyuse/anbox.rst:66
+#: ../../userguide/dailyuse/anbox.rst:87
+msgid "Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the new Android apps to show up."
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:55
-msgid "Login to android container on your phone"
+msgid "How to install new apks"
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:57
-msgid "lxc-console -ndefault -P /home/phablet/anbox-data/containers -t0"
+msgid "Copy the apk to ``/home/phablet/Downloads``, then run the following from your host::"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:59
-msgid "cd into `data/`"
+#: ../../userguide/dailyuse/anbox.rst:69
+msgid "Keep your apps up to date"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:60
-msgid "install the apk by using `pm install [appname].apk`"
+#: ../../userguide/dailyuse/anbox.rst:71
+msgid "To keep your apps running the lasted version you can make use of F-Droid or ApkTrack. If you like to install one of the above apps you can find them here:"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:63
+#: ../../userguide/dailyuse/anbox.rst:73
+msgid "F-Droid: https://f-droid.org/"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:74
+msgid "ApkTrack: https://f-droid.org/packages/fr.kwiatkowski.ApkTrack/"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:77
+msgid "How to uninstall applications"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:79
+msgid "This is a example of the app-list installed apps on your device"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:80
+msgid "To uninstall apps, run ``adb uninstall [APP_ID]`` from your Ubuntu Touch device::"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:90
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:92
+msgid "If installing ``anbox-ubuntu-touch`` or ``android-tools-adb`` on the device fails with an error about unsufficient space, try this::"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:103
+msgid "When you want to install an apk but get the error ``Invalid APK file`` that error could also mean \"file not found\""
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:105
+msgid "check that you typed the file name correctly"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:106
+msgid "if the apk does not reside in the current folder where you execute adb, you have to specify the full path, e.g. ``/home/phablet/Downloads/my-app.apk`` instead of just ``my-app.apk``"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:110
 msgid "Reporting bugs"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:65
+#: ../../userguide/dailyuse/anbox.rst:112
 msgid "Please :doc:`report any bugs </contribute/bugreporting>` you come across. Bugs with Ubuntu Touch 16.04 are reported in `the normal Ubuntu Touch tracker <https://github.com/ubports/ubuntu-touch/issues>`_ and issues with anbox are reported on `our downstream fork <https://github.com/ubports/anbox/issues>`_. Thank you!"
 msgstr ""
 
@@ -527,11 +573,7 @@ msgid "Create a container"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:14
-msgid "The first step is to create a container where applications can be installed:"
-msgstr ""
-
-#: ../../userguide/dailyuse/libertine.rst:16
-msgid "``libertine-container-manager create -i CONTAINER-IDENTIFIER``"
+msgid "The first step is to create a container where applications can be installed::"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:18
@@ -558,173 +600,137 @@ msgstr ""
 msgid "List containers"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:32
-msgid "To list all containers created run:"
+#: ../../userguide/dailyuse/libertine.rst:31
+msgid "To list all containers created run::"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:32
-msgid "``libertine-container-manager list``"
-msgstr ""
-
-#: ../../userguide/dailyuse/libertine.rst:35
+#: ../../userguide/dailyuse/libertine.rst:36
 msgid "Destroy a container"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:37
-msgid "``libertine-container-manager destroy -i CONTAINER-IDENTIFIER``"
-msgstr ""
-
-#: ../../userguide/dailyuse/libertine.rst:40
+#: ../../userguide/dailyuse/libertine.rst:42
 msgid "Manage applications"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:42
-msgid "Once a container is set up, you can list the installed applications:"
-msgstr ""
-
 #: ../../userguide/dailyuse/libertine.rst:44
-msgid "``libertine-container-manager list-apps``"
-msgstr ""
-
-#: ../../userguide/dailyuse/libertine.rst:46
-msgid "Install a package:"
+msgid "Once a container is set up, you can list the installed applications::"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:48
-msgid "``libertine-container-manager install-package -p PACKAGE-NAME``"
-msgstr ""
-
-#: ../../userguide/dailyuse/libertine.rst:50
-msgid "Remove a package:"
+msgid "Install a package::"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:52
-msgid "``libertine-container-manager remove-package -p PACKAGE-NAME``"
+msgid "Remove a package::"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:55
+#: ../../userguide/dailyuse/libertine.rst:57
 msgid "If you have more than one container, then you can use the option ``-i CONTAINER-IDENTIFIER`` to specify for which container you want to perform an operation."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:59
+#: ../../userguide/dailyuse/libertine.rst:61
 msgid "Files"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:61
+#: ../../userguide/dailyuse/libertine.rst:63
 msgid "Libertine applications do have access to these folders:"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:63
+#: ../../userguide/dailyuse/libertine.rst:65
 msgid "Documents"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:64
+#: ../../userguide/dailyuse/libertine.rst:66
 msgid "Music"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:65
+#: ../../userguide/dailyuse/libertine.rst:67
 msgid "Pictures"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:66
+#: ../../userguide/dailyuse/libertine.rst:68
 msgid "Downloads"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:67
+#: ../../userguide/dailyuse/libertine.rst:69
 msgid "Videos"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:70
+#: ../../userguide/dailyuse/libertine.rst:72
 msgid "Tips"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:73
+#: ../../userguide/dailyuse/libertine.rst:75
 msgid "Locations"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:75
+#: ../../userguide/dailyuse/libertine.rst:77
 msgid "For every container you create there will be two directories created:"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:77
+#: ../../userguide/dailyuse/libertine.rst:79
 msgid "A root directory ``~/.cache/libertine-container/CONTAINER-IDENTIFIER/rootfs/`` and"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:78
+#: ../../userguide/dailyuse/libertine.rst:80
 msgid "a user directory ``~/.local/share/libertine-container/user-data/CONTAINER-IDENTIFIER/``"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:81
+#: ../../userguide/dailyuse/libertine.rst:83
 msgid "Shell access"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:83
+#: ../../userguide/dailyuse/libertine.rst:85
 msgid "There are 2 options for executing commands inside the container."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:85
+#: ../../userguide/dailyuse/libertine.rst:87
 msgid "**The first option** is based on ``libertine-container-manager exec``. It lets you run your commands as root. The drawback is that the container is not completely set up. So far we know that the `folders mentioned above (Documents, Music, ...) are not mounted <https://askubuntu.com/questions/831830/libertine-terminal-applications-how-to-access-to-the-real-home-dir#comment1273744_833984/>`_ i.e., the ``/home/phablet/`` directory is empty. Likewise the directory referenced in ``TMPDIR`` is not available what may lead to problems with software that tries to create temporary files or directories. You may use this option e.g., for installing packages."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:88
-#: ../../userguide/dailyuse/libertine.rst:102
-msgid "To execute a command you can use the following pattern:"
-msgstr ""
-
 #: ../../userguide/dailyuse/libertine.rst:90
-msgid "``libertine-container-manager exec -i CONTAINER-IDENTIFIER -c \"COMMAND-LINE\"``"
-msgstr ""
-
-#: ../../userguide/dailyuse/libertine.rst:92
-#: ../../userguide/dailyuse/libertine.rst:106
-msgid "For example run:"
+#: ../../userguide/dailyuse/libertine.rst:104
+msgid "To execute a command you can use the following pattern::"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:94
-msgid "``libertine-container-manager exec -i CONTAINER-IDENTIFIER -c \"apt-get --help\"``"
-msgstr ""
-
-#: ../../userguide/dailyuse/libertine.rst:96
-msgid "To get a shell into your container as ``root`` run:"
+#: ../../userguide/dailyuse/libertine.rst:108
+msgid "For example run::"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:98
-msgid "``libertine-container-manager exec -i CONTAINER-IDENTIFIER -c \"/bin/bash\"``"
+msgid "To get a shell into your container as ``root`` run::"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:100
+#: ../../userguide/dailyuse/libertine.rst:102
 msgid "**The second option** is based on ``libertine-launch``. It will execute your commands as user phablet in a completely set up container. So you may use this option to modify your files using installed packages."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:104
-msgid "``libertine-launch -i CONTAINER-IDENTIFIER COMMAND-LINE``"
-msgstr ""
-
-#: ../../userguide/dailyuse/libertine.rst:108
-msgid "``libertine-launch -i CONTAINER-IDENTIFIER ls -a``"
-msgstr ""
-
-#: ../../userguide/dailyuse/libertine.rst:110
-msgid "To get a shell as user ``phablet`` run:"
-msgstr ""
-
 #: ../../userguide/dailyuse/libertine.rst:112
-msgid "``DISPLAY= libertine-launch -i CONTAINER-IDENTIFIER /bin/bash``"
+msgid "To get a shell as user ``phablet`` run::"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:115
+#: ../../userguide/dailyuse/libertine.rst:117
 msgid "When you launch bash in this way you will not get any specific feedback to confirm that you are now *inside* the container. You can check ``ls /`` to confirm for yourself that you are inside the container. The listing of ``ls /`` will be different inside and outside of the container."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:118
-msgid "Background"
-msgstr ""
-
 #: ../../userguide/dailyuse/libertine.rst:120
-msgid "A display server coordinates input and output of an operating system. Most Linux distributions today use the X server. Ubuntu Touch does not use X, but  a new display server called Mir. This means that standard X applications are not directly compatible with Ubuntu Touch. A compatibility layer called XMir resolves this. Libertine relies on XMir to display desktop applications."
+msgid "Shortcuts"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:122
+msgid "If you want, you can add aliases for command line tools. Add lines like the following ones to your ``~/.bash_aliases``::"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:128
+msgid "Background"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:130
+msgid "A display server coordinates input and output of an operating system. Most Linux distributions today use the X server. Ubuntu Touch does not use X, but  a new display server called Mir. This means that standard X applications are not directly compatible with Ubuntu Touch. A compatibility layer called XMir resolves this. Libertine relies on XMir to display desktop applications."
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:132
 msgid "Another challenge is that Ubuntu Touch system updates are released as OTA images. A consequence of this is that the root filesystem is read only. Libertine provides a container with a read-write filesystem to allow the installation of regular Linux desktop applications."
 msgstr ""
 
