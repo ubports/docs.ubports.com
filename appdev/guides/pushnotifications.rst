@@ -1,4 +1,4 @@
-Push Notifications
+Push notifications
 ==================
 
 Let's assume that you have an app created with Clickable and published on the OpenStore. But now you want to be able to send Push Notifications to your users. First of all, you need to understand how this is working:
@@ -14,8 +14,11 @@ Let's practice this step-by-step.
 .. note::
     In the following example we will not implement a server. Also the communication between your app and your server is up to you. Please inform the user about the communication with your server by providing a privacy policy!
 
-Step 1: Get a push token
-------------------------
+Make the app ready for push notifications
+-----------------------------------------
+
+Implementing the PushClient
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 First we need to add the policy group „push-notification-client“. Your apparmor file could look like this::
 
@@ -44,8 +47,8 @@ In the next step we need to modify the Qml parts. We need to add a pushclient co
 You need to set the correct appId! If the app name in your manifest file is appname.yourname and the name of the hook is hookname, then the appId is:  appname.yourname_hookname.
 When we now start the app, it will get a token and print this token in the logs. With clickable logs we will be able to copy this token out of the terminal. But the app is not yet ready to receive a push notification. For this we need something called a pushhelper!
 
-Step 2: Implementing the push helper
-------------------------------------
+Implementing the push helper
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The pushhelper is a part of the app which will receive all push notifications and process them before sending them to the system notification center. It will receive a json-file and must outpot another json-file in the correct format. The pushhelper is seperated from the app. So we need a new hook in the manifest. It could look like this::
 
@@ -107,8 +110,8 @@ If we don't have done it already we also need to add this new files to the cmake
 
 Now the app is ready to receive and process push notifications!
 
-Step 3: Send push notifications
--------------------------------
+Using the Push Service API
+--------------------------
 
 So now you have the token and the app is ready to receive and process push notifications. To send a notification, you just need to send a HTTP request to this address:
 https://push.ubports.com/notify
@@ -143,9 +146,6 @@ The content-type must be application/json and it must fit in the correct format.
 		}
 	}));
 
-
-Push API
---------
 
 Push Notification Object
 ^^^^^^^^^^^^^^^^^^^^^^^^
