@@ -101,7 +101,7 @@ In our tutorial we will use python to create a executable which will forward the
 
 	open(f2, "w").write(open(f1).read())
 
-If we don't have done it already we also need to add this new files to the cmakelist and make the pushexec executable::
+We also need to add this new files to the cmakelist and make the pushexec executable::
 
 	[…]
 
