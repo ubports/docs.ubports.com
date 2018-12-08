@@ -91,7 +91,7 @@ The push.json is for redirecting to the executable file::
 	    "exec": "pushexec"
 	}
 
-In our tutorial we will use python to create a executable which will forward the notification without chaning anything::
+In our tutorial we will use python to create a executable which will forward the notification without changing anything::
 
 	#!/usr/bin/python3
 
