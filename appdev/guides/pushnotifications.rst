@@ -53,7 +53,7 @@ When we now start the app, it will get a token and print this token in the logs.
 Implementing the push helper
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The pushhelper is a part of the app which will receive all push notifications and process them before sending them to the system notification center. It will receive a json-file and must outpot another json-file in the correct format. The pushhelper is seperated from the app. So we need a new hook in the manifest. It could look like this::
+The pushhelper is a part of the app which will receive all push notifications and process them before sending them to the system notification center. It will receive a json-file and must output another json-file in the correct format. The pushhelper is seperated from the app. So we need a new hook in the manifest. It could look like this::
 
 	{
 
