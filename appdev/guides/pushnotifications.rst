@@ -23,7 +23,10 @@ Implementing the PushClient
 Implementing the pushclient
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-First we need to add the policy group "push-notification-client". Your apparmor file could look like this::
+First we need to add the policy group "push-notification-client". Your apparmor file could look like this:
+
+.. code-block:: js
+    :emphasize-lines: 3
 
 	{
 	    "policy_groups": [
@@ -33,13 +36,15 @@ First we need to add the policy group "push-notification-client". Your apparmor 
 	    "policy_version": 16.04
 	}
 
-In the next step we need to modify the Qml parts. We need to add a pushclient component::
+In the next step we need to modify the Qml parts. We need to add a pushclient component:
 
-	[…]
+.. code-block:: js
+
+	//...
 
 	import Ubuntu.PushNotifications 0.1
 
-	[…]
+	//...
 
 	PushClient {
 		id: pushClient
@@ -53,13 +58,15 @@ When we now start the app, it will get a token and print this token in the logs.
 Implementing the push helper
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The pushhelper is a part of the app which will receive all push notifications and process them before sending them to the system notification center. It will receive a json-file and must output another json-file in the correct format. The pushhelper is seperated from the app. So we need a new hook in the manifest. It could look like this::
+The pushhelper is a part of the app which will receive all push notifications and process them before sending them to the system notification center. It will receive a json-file and must output another json-file in the correct format. The pushhelper is seperated from the app. So we need a new hook in the manifest. It could look like this:
+
+.. code-block:: js
+    :emphasize-lines: 12,13
 
 	{
+	    //...
 
-		[…]
-
-		"title": "pushclient",
+	    "title": "pushclient",
 	    "hooks": {
 		"pushclient": {
 		    "apparmor": "pushclient.apparmor",
@@ -71,11 +78,12 @@ The pushhelper is a part of the app which will receive all push notifications an
 		}
 	    },
 
-		[…]
-
+	    //...
 	}
 
-It should be clear that we now need a different apparmor file and a different executable file. The push-apparmor.json file must only contain the policy group push-notification-client and should look like this::
+It should be clear that we now need a different apparmor file and a different executable file. The push-apparmor.json file must only contain the policy group push-notification-client and should look like this:
+
+.. code-block:: js
 
 	{
 	    "template": "ubuntu-push-helper",
@@ -85,13 +93,17 @@ It should be clear that we now need a different apparmor file and a different ex
 	    "policy_version": 16.04
 	}
 
-The push.json is for redirecting to the executable file::
+The push.json is for redirecting to the executable file:
+
+.. code-block:: js
 
 	{
 	    "exec": "pushexec"
 	}
 
-In our tutorial we will use python to create a executable which will forward the notification without changing anything::
+In our tutorial we will use python to create a executable which will forward the notification without changing anything:
+
+.. code-block:: python
 
 	#!/usr/bin/python3
 
@@ -118,7 +130,9 @@ Using the Push Service API
 
 So now you have the token and the app is ready to receive and process push notifications. To send a notification, you need to send a HTTP request to this address:
 https://push.ubports.com/notify
-The content-type must be application/json and it must fit in the correct format. A example in javascript could look like this::
+The content-type must be application/json and it must fit in the correct format. A example in javascript could look like this:
+
+.. code-block:: js
 
 	var req = new XMLHttpRequest();
 	req.open("post", "https://push.ubports.com/notify", true);
@@ -163,7 +177,7 @@ Push Notification Object
 | token         | string | Required. The token identifying the user+device to which the message is directed, as described in the client side documentation. |
 +---------------+--------+----------------------------------------------------------------------------------------------------------------------------------+
 | clear_pending | bool   | Discards all previous pending notifications. Usually in response to getting a "too-many-pending" error. Defaults to false.       |
-+---------------+--------+----------------------------------------------------------------------the app sends its token to the app developer's server"------------------------------------------------------------+
++---------------+--------+----------------------------------------------------------------------------------------------------------------------------------+
 | replace_tag   | string | If there's a pending notification with the same tag, delete it before queuing this new one.                                      |
 +---------------+--------+----------------------------------------------------------------------------------------------------------------------------------+
 | data          | Data   | A JSON object. The contents of the data field are arbitrary. We can use it to send any data to the app.                          |
