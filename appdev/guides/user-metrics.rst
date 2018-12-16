@@ -89,6 +89,6 @@ Limitations and wonders
 
 Based on how the “formats” are set up, it seems that it is difficult to maintain a running tally beyond one day. It also doesn’t seem to truly reset a counted variable. Instead it reverts to a default setting. This would not normally allow for long-term data interpretation without some kind of database logging.
 
-In the case of the nCounter app. I wanted to count the number of days, but since the metric “resets” each day, that presents a problem. I create a workaround that updates the metric every time the application is opened. Thus, the ``emptyFormat`` (default) tells the user to open the application. This, however, nearly defeats the purpose of the user metric entirely, other than having a neat stat reminder for the day.
+In the case of the `nCounter`_ app. I wanted to count the number of days, but since the metric “resets” each day, that presents a problem. I create a workaround that updates the metric every time the application is opened. Thus, the ``emptyFormat`` (default) tells the user to open the application. This, however, nearly defeats the purpose of the user metric entirely, other than having a neat stat reminder for the day.
 
 There must be a way for a process to run independently in the background (e.g. cron) to retrieve data from a specific app code. One lead is the Indicator Weather app. This runs a process every X minutes to update the weather indicator automatically without having to open the app. 
