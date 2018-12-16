@@ -173,8 +173,8 @@ Push Notification Object
 | appid         | string | | Required. ID of the application that will receive the notification,     |
 |               |        | | as described in the client side documentation.                          |
 +---------------+--------+---------------------------------------------------------------------------+
-| expire_on     | string | | Required. Expiration date/time for this message, in ISO8601             |
-|               |        | | Extendendformat.                                                        |
+| expire_on     | string | | Required. Expiration date/time for this message, in                     |
+|               |        | | `ISO8601 Extendendformat <https://www.w3.org/TR/NOTE-datetime>`_.       |
 +---------------+--------+---------------------------------------------------------------------------+
 | token         | string | | Required. The token identifying the user+device to which the message is |
 |               |        | | directed, as described in the client side documentation.                |
