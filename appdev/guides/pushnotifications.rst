@@ -167,21 +167,27 @@ The content-type must be application/json and it must fit in the correct format.
 Push Notification Object
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-+---------------+--------+----------------------------------------------------------------------------------------------------------------------------------+
-| Parameter     | Type   | Description                                                                                                                      |
-+===============+========+==================================================================================================================================+
-| appid         | string | Required. ID of the application that will receive the notification, as described in the client side documentation.               |
-+---------------+--------+----------------------------------------------------------------------------------------------------------------------------------+
-| expire_on     | string | Required. Expiration date/time for this message, in ISO8601 Extendendformat.                                                     |
-+---------------+--------+----------------------------------------------------------------------------------------------------------------------------------+
-| token         | string | Required. The token identifying the user+device to which the message is directed, as described in the client side documentation. |
-+---------------+--------+----------------------------------------------------------------------------------------------------------------------------------+
-| clear_pending | bool   | Discards all previous pending notifications. Usually in response to getting a "too-many-pending" error. Defaults to false.       |
-+---------------+--------+----------------------------------------------------------------------------------------------------------------------------------+
-| replace_tag   | string | If there's a pending notification with the same tag, delete it before queuing this new one.                                      |
-+---------------+--------+----------------------------------------------------------------------------------------------------------------------------------+
-| data          | Data   | A JSON object. The contents of the data field are arbitrary. We can use it to send any data to the app.                          |
-+---------------+--------+----------------------------------------------------------------------------------------------------------------------------------+
++---------------+--------+---------------------------------------------------------------------------+
+| Parameter     | Type   | Description                                                               |
++===============+========+===========================================================================+
+| appid         | string | | Required. ID of the application that will receive the notification,     |
+|               |        | | as described in the client side documentation.                          |
++---------------+--------+---------------------------------------------------------------------------+
+| expire_on     | string | | Required. Expiration date/time for this message, in ISO8601             |
+|               |        | | Extendendformat.                                                        |
++---------------+--------+---------------------------------------------------------------------------+
+| token         | string | | Required. The token identifying the user+device to which the message is |
+|               |        | | directed, as described in the client side documentation.                |
++---------------+--------+---------------------------------------------------------------------------+
+| clear_pending | bool   | | Discards all previous pending notifications. Usually in response to     |
+|               |        | | getting a "too-many-pending" error. Defaults to false.                  |
++---------------+--------+---------------------------------------------------------------------------+
+| replace_tag   | string | | If there's a pending notification with the same tag, delete it before   |
+|               |        | | queuing this new one.                                                   |
++---------------+--------+---------------------------------------------------------------------------+
+| data          | Data   | | A JSON object. The contents of the data field are arbitrary. We can use |
+|               |        | | it to send any data to the app.                                         |
++---------------+--------+---------------------------------------------------------------------------+
 
 Data
 ^^^^
@@ -197,49 +203,68 @@ Data
 Notification
 ^^^^^^^^^^^^
 
-+----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Parameter      | Type            | Description                                                                                                                                                                                                                                                                                                                  |
-+================+=================+==============================================================================================================================================================================================================================================================================================================================+
-| summary        | string          | Required. A title. The card will not be presented if this is missing.                                                                                                                                                                                                                                                        |
-+----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| body           | string          | Longer text, defaults to empty.                                                                                                                                                                                                                                                                                              |
-+----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| actions        | array           | If empty (the default), a bubble notification is non-clickable. If you add a URL, then bubble notifications are clickable and launch that URL. One use for this is using a URL like ``appid://com.ubuntu.developer.ralsina.hello/hello/current-user-version`` which will switch to the app or launch it if it's not running. |
-+----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| icon           | string          | An icon relating to the event being notified. Defaults to empty (no icon); a secondary icon relating to the application will be shown as well, regardless of this field.                                                                                                                                                     |
-+----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| timestamp      | integer         | Seconds since the unix epoch, only used for persist (for now). If zero or unset, defaults to current timestamp.                                                                                                                                                                                                              |
-+----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| persist        | bool            | Whether to show in notification centre; defaults to false.                                                                                                                                                                                                                                                                   |
-+----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| popup          | bool            | Whether to show in a bubble. Users can disable this, and can easily miss them, so don't rely on it exclusively. Defaults to false.                                                                                                                                                                                           |
-+----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| sound          | bool or string  | This is either a boolean (play a predetermined sound) or the path to a sound file. The user can disable it, so don't rely on it exclusively. Defaults to empty (no sound). The path is relative, and will be looked up in (a) the application's .local/share/<pkgname>, and (b) standard xdg dirs.                           |
-+----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| vibrate        | bool or Vibrate | The notification can contain a vibrate field, causing haptic feedback, which can be either a boolean (if true, vibrate a predetermined way) or an Vibrate object.                                                                                                                                                            |
-+----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| emblem-counter | Emblem-counter  | A JSON object, which defines how to display the emblem counter.                                                                                                                                                                                                                                                              |
-+----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++----------------+-----------------+-----------------------------------------------------------------+
+| Parameter      | Type            | Description                                                     |
++================+=================+=================================================================+
+| summary        | string          | | Required. A title. The card will not be presented if this is  |
+|                |                 | | missing.                                                      |
++----------------+-----------------+-----------------------------------------------------------------+
+| body           | string          | | Longer text, defaults to empty.                               |
++----------------+-----------------+-----------------------------------------------------------------+
+| actions        | array           | | If empty (the default), a bubble notification is              |
+|                |                 | | non-clickable. If you add a URL, then bubble notifications    |
+|                |                 | | are clickable and launch that URL. One use for this is using  |
+|                |                 | | a URL like ``appid://com.ubuntu.developer.ralsina.hello``     |
+|                |                 | | which will switch to the app or launch it.                    |
++----------------+-----------------+-----------------------------------------------------------------+
+| icon           | string          | | An icon relating to the event being notified. Defaults to     |
+|                |                 | | empty (no icon); a secondary icon relating to the application |
+|                |                 | | will be shown as well, regardless of this field.              |
++----------------+-----------------+-----------------------------------------------------------------+
+| timestamp      | integer         | | Seconds since the unix epoch, only used for persist for now.  |
+|                |                 | | If zero or unset, defaults to current timestamp.              |
++----------------+-----------------+-----------------------------------------------------------------+
+| persist        | bool            | | Whether to show in notification centre; defaults to false.    |
++----------------+-----------------+-----------------------------------------------------------------+
+| popup          | bool            | | Whether to show in a bubble. Users can disable this, and can  |
+|                |                 | | easily miss them, so don't rely on it exclusively. Defaults   |
+|                |                 | | to false.                                                     |
++----------------+-----------------+-----------------------------------------------------------------+
+| sound          | bool or string  | | This is either a boolean (play a predetermined sound) or the  |
+|                |                 | | path to a sound file. The user can disable it, so don't rely  |
+|                |                 | | on it exclusively. Defaults to empty (no sound). The path is  |
+|                |                 | | relative, and will be looked up in (a) the application's      |
+|                |                 | | ``.local/share/<pkgname>``, and (b) standard xdg dirs.        |
++----------------+-----------------+-----------------------------------------------------------------+
+| vibrate        | bool or Vibrate | | The notification can contain a vibrate field, causing haptic  |
+|                |                 | | feedback, which can be either a boolean (if true, vibrate a   |
+|                |                 | | predetermined way) or an Vibrate object.                      |
++----------------+-----------------+-----------------------------------------------------------------+
+| emblem-counter | Emblem-counter  | | A JSON object, which defines how to display the emblem        |
+|                |                 | | counter.                                                      |
++----------------+-----------------+-----------------------------------------------------------------+
 
 Vibrate
 ^^^^^^^
 
-+-----------+---------+----------------------------------------------------------------------------------------------------------------------------+
-| Parameter | Type    | Description                                                                                                                |
-+===========+=========+============================================================================================================================+
-| pattern   | array   | A list of integers describing a vibration pattern (duration of alternating vibration/no vibration times, in milliseconds). |
-+-----------+---------+----------------------------------------------------------------------------------------------------------------------------+
-| repeat    | integer | Number of times the pattern has to be repeated (defaults to 1, 0 is the same as 1).                                        |
-+-----------+---------+----------------------------------------------------------------------------------------------------------------------------+
++-----------+---------+------------------------------------------------------------------------------+
+| Parameter | Type    | Description                                                                  |
++===========+=========+==============================================================================+
+| pattern   | array   | | A list of integers describing a vibration pattern (duration of alternating |
+|           |         | | vibration/no vibration times, in milliseconds).                            |
++-----------+---------+------------------------------------------------------------------------------+
+| repeat    | integer | | Number of times the pattern has to be repeated (defaults to 1, 0 is the    |
+|           |         | | same as 1).                                                                |
++-----------+---------+------------------------------------------------------------------------------+
 
 
 Emblem-Counter
 ^^^^^^^^^^^^^^
 
-+-----------+---------+-----------------------------------------------------------------------+
-| Parameter | Type    | Description                                                           |
-+===========+=========+=======================================================================+
-| count     | integer | A number to be displayed over the application's icon in the launcher. |
-+-----------+---------+-----------------------------------------------------------------------+
-| visible   | bool    | Set to true to show the counter, or false to hide it.                 |
-+-----------+---------+-----------------------------------------------------------------------+
++-----------+---------+------------------------------------------------------------------------------+
+| Parameter | Type    | Description                                                                  |
++===========+=========+==============================================================================+
+| count     | integer | A number to be displayed over the application's icon in the launcher.        |
++-----------+---------+------------------------------------------------------------------------------+
+| visible   | bool    | Set to true to show the counter, or false to hide it.                        |
++-----------+---------+------------------------------------------------------------------------------+
