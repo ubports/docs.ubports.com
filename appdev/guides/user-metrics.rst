@@ -8,7 +8,7 @@ If you look on the lock screen, you will see a circle. Inside the circle is text
 
 .. figure:: /_static/images/appdev/guides/usermetricsimages/met1.png
 
-    This shows “5 text messages sent today.” How did it know?
+    This shows “7 text messages sent today.” How did it know?
 
 .. figure:: /_static/images/appdev/guides/usermetricsimages/met2.png
 
