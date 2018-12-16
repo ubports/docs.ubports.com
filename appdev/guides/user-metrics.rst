@@ -1,12 +1,10 @@
-User Metrics
-=================================
+User metrics
+============
 
-What are User Metrics?
-^^^^^^^^^^^^^^^^^^^^^^
+What are user metrics?
+----------------------
 
 If you look on the lock screen, you will see a circle. Inside the circle is text. Look closer, and you’ll notice that the text contains data regarding the user’s activity. Double tap on the middle of the circle, and you will see more “metrics” about the user.
-
-For the most part, these messages are quite clearly state what they are counting, and which app is related. But where do these metrics come from?
 
 .. figure:: /_static/images/appdev/guides/usermetricsimages/met1.png
 
@@ -14,39 +12,20 @@ For the most part, these messages are quite clearly state what they are counting
 
 .. figure:: /_static/images/appdev/guides/usermetricsimages/met2.png
 
-    This is from a 3rd-party application (nCounter) that makes use of the User Metrics feature.
+    This is from a 3rd-party application (`nCounter <https://gitlab.com/joboticon/ncounter/>`_) that makes use of the User Metrics feature.
 
+For the most part, these messages are quite clearly state what they are counting, and which app is related. But where do these metrics come from?
 
-How to User Metrics work?
-^^^^^^^^^^^^^^^^^^^^^^^^^
+How can I use user metrics in my application?
+---------------------------------------------
 
-User metrics are made up of two “formats”
-
-- metrics/messages for today (``format``)
-- metrics/messages for tomorrow (``emptyFormat``)
-
-This tells us that metrics are counted (and are reset) on a daily basis by the system itself.
-
-Applications make use of this system, but setting and updating the user metric “formats” by running a certain code whenever a certain event takes place. e.g. When you press send in Telegram, or when you receive a phone call.
-The application may store the data for manipulation, but generally the data is stored in the system (...somewhere).
-
-How can I use User Metrics in my application?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-All of the following information will be based on the code for `nCounter <https://gitlab.com/joboticon/ncounter/blob/master/qml/Home.qml>`_
+All of the following information will be based on the code for `nCounter`_
 
 First, you will need to import the module in the QML file that will handle the User Metrics:
 
 .. code:: qml
 
-        import QtQuick 2.4
-        import Ubuntu.Components 1.3
-        import "modules"
-        import QtMultimedia 5.0
         import UserMetrics 0.1
-
-
-``import UserMetrics 0.1``
 
 (There may be updated versions of this above 0.1)
 
@@ -60,39 +39,27 @@ Next, the specific Metric must be defined in the code as an object:
                 format: circleMetric // This is the metric/message that will display “today”. Again it uses the string variable that we defined above
                 emptyFormat: i18n.tr(“Check nCounter”) // This is the metric/message for tomorrow. It will “activate” once the day roles over and replaces “format”. Here I have use a simple translatable string instead of a variable because I didn’t need it to change.
                 domain: “ncounter.joe” // This is the appname, based on what you have in your app settings. Presumably this is how the system lists/ranks the metrics to show on the lock screen. 
-            } 
+            }
 
-
-Now, that the metric is created. We can update the “format” or “emptyFormat” when an event takes place by referencing the variables in the Metric object.
+Now that the metric is created, we can update the “format” or “emptyFormat” when an event takes place by referencing the variables in the Metric object.
 
 .. code:: qml
 
-         // i18n.tr("Displays days counted on Home Page")
-            DefaultLabel {
-                id: showCounter
-                font.pixelSize: 70
-                text: (settings.myEvent == 0) ? i18n.tr("Add event to start counting") : settings.myEvent + ":\n" + i18n.tr("%1 ago").arg(settings.myReport);
-                Timer {
-                    interval: 1000; running: true; repeat: true
-                    onTriggered: {
-                        settings.myReport = updateReport.report
-                        metric.circleMetric = settings.myEvent + ":\n" + i18n.tr("%1 ago").arg(updateReport.report)
+             onButtonPressed: {
+                        metric.circleMetric = "New Metric Message"
                         metric.update(0)
-                        console.log("nCounter metric updated by timer\n")
+                        console.log("Metric updated")
                     }
-                }
-            }
- 
 
 Here we assign a new value to the circleMetric string variable that’s inside the Metric object:
+
 (Remember that circleMetric is the variable value assigned to format)
 
     Metric Id [dot] Variable Name [equals] New variable information
 
-    ``metric.circleMetric = settings.myEvent ...``
+    ``metric.circleMetric = "New Metric Message"``
     
 (note this takes some information stored in the settings of the app)
-
 
 We then tell the lock screen to update the metric in ZERO milliseconds i.e. immediately
     
@@ -104,10 +71,23 @@ We have now updated the metric for today. When the time rolls over to tomorrow, 
 
 For most apps, this defaults to 0 counts for messages, calls, etc. 
 
-Limitations and Wonders
-^^^^^^^^^^^^^^^^^^^^^^^
+How do user metrics work?
+-------------------------
 
-Based on how the “formats” are set up. It seems that it is difficult to maintain a running tally beyond one day. It also doesn’t seem to truly reset a counted variable. Instead it reverts to a default setting. This would not normally allow for long-term data interpretation without some kind of database logging.
+User metrics are made up of two “formats”
+
+- metrics/messages for today (``format``)
+- metrics/messages for tomorrow (``emptyFormat``)
+
+This tells us that metrics are counted (and are reset) on a daily basis by the system itself.
+
+Applications make use of this system, but setting and updating the user metric “formats” by running a certain code whenever a certain event takes place. e.g. When you press send in Telegram, or when you receive a phone call.
+The application may store the data for manipulation, but generally the data is stored in the system (`/var/lib/usermetrics <https://github.com/ubports/libusermetrics/tree/xenial/doc/pages>`_).
+
+Limitations and wonders
+-----------------------
+
+Based on how the “formats” are set up, it seems that it is difficult to maintain a running tally beyond one day. It also doesn’t seem to truly reset a counted variable. Instead it reverts to a default setting. This would not normally allow for long-term data interpretation without some kind of database logging.
 
 In the case of the nCounter app. I wanted to count the number of days, but since the metric “resets” each day, that presents a problem. I create a workaround that updates the metric every time the application is opened. Thus, the ``emptyFormat`` (default) tells the user to open the application. This, however, nearly defeats the purpose of the user metric entirely, other than having a neat stat reminder for the day.
 
