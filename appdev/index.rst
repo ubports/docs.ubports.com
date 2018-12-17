@@ -52,6 +52,7 @@ Get started building your first app or learn about advanced concepts with our :r
     guides/contenthub
     guides/importing-CH-urldispatcher
     guides/user-metrics
+    guides/writeable-dirs
 
 Publishing
 ----------

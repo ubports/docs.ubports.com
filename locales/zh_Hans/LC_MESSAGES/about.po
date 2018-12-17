@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-02 15:42-0500\n"
-"PO-Revision-Date: 2018-11-17 08:25+0000\n"
+"PO-Revision-Date: 2018-11-18 08:46+0000\n"
 "Last-Translator: xingyichao <993226501@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-about/zh_Hans/>\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../about/introduction.rst:2
 msgid "Introduction"
-msgstr "引言"
+msgstr "介绍"
 
 #: ../../about/introduction.rst:4
 msgid "This is the documentation for the UBports project. Our goal is to create an open-source (GPL if possible) mobile operating system that converges and respects your freedom."
@@ -331,7 +331,7 @@ msgstr "如果在本地跟踪问题的存储库定义了它自己的标签，则
 
 #: ../../about/process/issue-tracking.rst:90
 msgid "Milestones"
-msgstr "Milestones"
+msgstr "里程碑"
 
 #: ../../about/process/issue-tracking.rst:92
 msgid "Milestones are used for stable OTA releases only. In general, milestones for the work-in-progress OTA and the next OTA are created. The ETA is set, once the work on the release starts (that is 6 weeks from start date), but can be adjusted afterwards. See the :doc:`release-schedule <release-schedule>` for more info."
@@ -357,7 +357,7 @@ msgstr "鼓励开发人员保持他们的清单简短并更新他们的问题状
 
 #: ../../about/process/issue-tracking.rst:108
 msgid "Examples"
-msgstr "示例"
+msgstr "事例"
 
 #: ../../about/process/issue-tracking.rst:111
 msgid "Bug Lifecycle"
