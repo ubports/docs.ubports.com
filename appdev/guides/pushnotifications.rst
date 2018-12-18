@@ -45,11 +45,11 @@ In the next step we need to modify the Qml parts. We need to add a pushclient co
 
 	PushClient {
 		id: pushClient
-		appId: "appname.yourname_hookname"
+		appId: "myapp.yourname_hookname"
 		onTokenChanged: console.log("👍", pushClient.token)
 	}
 
-You need to set the correct appId! If the app name in your manifest file is appname.yourname and the name of the main hook (the one which handles the .desktop file) is hookname, then the appId is:  appname.yourname_hookname.
+You need to set the correct appId! If the app name in your manifest file is myapp.yourname and the name of the main hook (the one which handles the .desktop file) is hookname, then the appId is:  myapp.yourname_hookname.
 When we now start the app, it will get a token and print this token in the logs. With clickable logs we will be able to copy this token out of the terminal. But the app is not yet ready to receive a push notification. For this we need something called a pushhelper!
 
 Implementing the pushhelper
@@ -63,11 +63,11 @@ The pushhelper is a part of the app which will receive all push notifications an
 	{
 	    //...
 
-	    "title": "pushclient",
+	    "title": "myapp",
 	    "hooks": {
-		"pushclient": {
-		    "apparmor": "pushclient.apparmor",
-		    "desktop":  "pushclient.desktop"
+		"myapp": {
+		    "apparmor": "myapp.apparmor",
+		    "desktop":  "myapp.desktop"
 		},
 		"push": {
 		    "apparmor": "push-apparmor.json",
