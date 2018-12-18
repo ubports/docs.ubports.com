@@ -78,7 +78,7 @@ The pushhelper is a part of the app which will receive all push notifications an
 	    //...
 	}
 
-It should be clear that we now need a different apparmor file and a different executable file. The push-apparmor.json file must only contain the policy group push-notification-client and should look like this:
+It should be clear that we now need a different apparmor file and a different executable file. The **push-apparmor.json** file must only contain the policy group push-notification-client and should look like this:
 
 .. code-block:: js
 
@@ -90,7 +90,7 @@ It should be clear that we now need a different apparmor file and a different ex
 	    "policy_version": 16.04
 	}
 
-The push.json is for redirecting to the executable file:
+The **push.json** is for redirecting to the executable file:
 
 .. code-block:: js
 
@@ -98,7 +98,7 @@ The push.json is for redirecting to the executable file:
 	    "exec": "pushexec"
 	}
 
-In our tutorial we will use python to create a executable which will forward the notification without changing anything:
+In our tutorial we will use python to create a executable named **pushexec** which will forward the notification without changing anything:
 
 .. code-block:: python
 
@@ -110,7 +110,7 @@ In our tutorial we will use python to create a executable which will forward the
 
 	open(f2, "w").write(open(f1).read())
 
-We also need to add this new files to the cmakelist and make the pushexec executable::
+We also need to add this new files to the **CMakeLists.txt** and make the pushexec executable::
 
 	[…]
 
