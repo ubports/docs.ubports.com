@@ -20,9 +20,6 @@ Make the app ready for push notifications
 Implementing the PushClient
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Implementing the pushclient
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 First we need to add the policy group "push-notification-client". Your apparmor file could look like this:
 
 .. code-block:: js
