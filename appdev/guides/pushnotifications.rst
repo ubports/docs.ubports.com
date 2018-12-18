@@ -52,7 +52,7 @@ In the next step we need to modify the Qml parts. We need to add a pushclient co
 You need to set the correct appId! If the app name in your manifest file is appname.yourname and the name of the main hook (the one which handles the .desktop file) is hookname, then the appId is:  appname.yourname_hookname.
 When we now start the app, it will get a token and print this token in the logs. With clickable logs we will be able to copy this token out of the terminal. But the app is not yet ready to receive a push notification. For this we need something called a pushhelper!
 
-Implementing the push helper
+Implementing the pushhelper
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The pushhelper is a part of the app which will receive all push notifications and process them before sending them to the system notification center. It will receive a json-file and must output another json-file in the correct format. The pushhelper is seperated from the app. So we need a new hook in the manifest. It could look like this:
