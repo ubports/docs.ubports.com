@@ -26,7 +26,7 @@ Implementing the pushclient
 First we need to add the policy group "push-notification-client". Your apparmor file could look like this:
 
 .. code-block:: js
-    :emphasize-lines: 3
+    :emphasize-lines: 4
 
 	{
 	    "policy_groups": [
