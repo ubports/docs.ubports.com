@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-28 14:00+0200\n"
+"POT-Creation-Date: 2018-11-30 10:25-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -333,15 +333,47 @@ msgid "repo.ubports.com"
 msgstr ""
 
 #: ../../about/process/ppa.rst:4
-msgid "This is the package archive system for UBports projects. It hosts various PPAs containing all deb-components of Ubuntu Touch. New PPAs can be created dynamically by the CI server using a special :doc:`git-branch naming convention <branch-naming>`."
+msgid "This is the package archive system for UBports projects. It hosts various PPAs containing all deb-components of Ubuntu Touch."
 msgstr ""
 
-#: ../../about/process/ppa.rst:6
-msgid "The name of the branch translates literally to the name of the PPA: ``http://repo.ubports.com/dists/[branch name]``"
+#: ../../about/process/ppa.rst:7
+msgid "Repository naming convention"
 msgstr ""
 
-#: ../../about/process/ppa.rst:8
-msgid "Non-standard PPAs (i.e. not ``xenial``, ``vivid`` or ``bionic``) are kept for three months. In case they need to be kept for a longer time, a file with the name ``ubports.keep`` can be created in the root of the repository, containing the date until which the PPA shall be kept open in the form of **YYYY-MM-dd**. If this file is empty, the PPA will be kept for two years after the last build."
+#: ../../about/process/ppa.rst:10
+msgid "Native packages"
+msgstr ""
+
+#: ../../about/process/ppa.rst:12
+msgid "Native packages are repositories which contain a ``debian/`` directory **with** the source used to create the Debian source package (``.dsc``)."
+msgstr ""
+
+#: ../../about/process/ppa.rst:14
+msgid "The name of the Debian source package generated from the repository and the name of the git-repository should be the same."
+msgstr ""
+
+#: ../../about/process/ppa.rst:17
+msgid "Packaging repositories"
+msgstr ""
+
+#: ../../about/process/ppa.rst:19
+msgid "Packaging repositories contain a ``debian/`` directory **without** the source used to create the Debian source package (``.dsc``). They also contain instructions to tell ``debhelper`` how to get the source used to create the source package."
+msgstr ""
+
+#: ../../about/process/ppa.rst:21
+msgid "The repository should have the name of the source package it generates with ``-packaging`` appended to the end. For example, a packaging repository that generates a source package called ``sandwich`` would be called ``sandwich-packaging``."
+msgstr ""
+
+#: ../../about/process/ppa.rst:24
+msgid "Creating new PPAs"
+msgstr ""
+
+#: ../../about/process/ppa.rst:26
+msgid "New PPAs can be created dynamically by the CI server using a special :doc:`git-branch naming convention <branch-naming>`. The name of the branch translates literally to the name of the PPA: ``http://repo.ubports.com/dists/[branch name]``"
+msgstr ""
+
+#: ../../about/process/ppa.rst:28
+msgid "Non-standard PPAs (i.e. not ``xenial``, ``vivid`` or ``bionic``) are kept for three months. In case they need to be kept for a longer time, a file with the name ``ubports.keep`` can be created in the root of the repository, containing the date until which the PPA shall be kept open in the form of ``YYYY-MM-dd``. If this file is empty, the PPA will be kept for two years after the last build."
 msgstr ""
 
 #: ../../about/process/release-schedule.rst:2

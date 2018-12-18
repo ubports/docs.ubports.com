@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-11 15:02-0500\n"
-"PO-Revision-Date: 2018-11-10 04:43+0000\n"
-"Last-Translator: xqqy <xqqy189@hotmail.com>\n"
+"PO-Revision-Date: 2018-11-18 08:46+0000\n"
+"Last-Translator: xingyichao <993226501@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-appdev/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -19,8 +19,9 @@ msgstr ""
 "X-Generator: Weblate 3.1.1\n"
 
 #: ../../appdev/apparmor.rst:2
+#, fuzzy
 msgid "AppArmor Policy Groups"
-msgstr "AppArmor 策略组"
+msgstr "设备策略组"
 
 #: ../../appdev/apparmor.rst:4
 msgid ""
@@ -29,6 +30,7 @@ msgid ""
 msgstr "本文档包含 Ubuntu Touch 可用策略组的完整列表，以及它们为您的应用程序提供访问权限的说明。"
 
 #: ../../appdev/apparmor.rst:6
+#, fuzzy
 msgid "Each entry follows this format"
 msgstr "每个条目都遵循此格式"
 
@@ -65,8 +67,9 @@ msgid ""
 msgstr "账户权限（accounts policy）将允许你的应用使用在线账户API（Online Accounts API）_."
 
 #: ../../appdev/apparmor.rst:34
+#, fuzzy
 msgid "audio"
-msgstr "audio"
+msgstr "音频"
 
 #: ../../appdev/apparmor.rst:36
 msgid ""
@@ -74,19 +77,22 @@ msgid ""
 msgstr "描述：可播放音频（允许通过媒体播放器播放远程内容）"
 
 #: ../../appdev/apparmor.rst:40
+#, fuzzy
 msgid ""
 "The audio policy is needed for your app to play audio via pulseaudio or "
 "media-hub. The permission also gives it the ability to send album art to the "
 "thumbnailer service, which is then shown on the sound indicator."
 msgstr ""
-"声音权限（audio policy）将允许你的应用通过pulseaudio或media-"
-"hub。这也允许你发送唱片到thumbnailer服务，意味着将在声音指示器上显示。"
+"音频权限（audio "
+"policy）将允许你的应用通过pulseaudio或媒体集线器。这也允许你发送唱片到thumbnailer服务，意味着将在声音指示器上显示。"
 
 #: ../../appdev/apparmor.rst:44
+#, fuzzy
 msgid "bluetooth"
-msgstr "bluetooth"
+msgstr "蓝牙"
 
 #: ../../appdev/apparmor.rst:46
+#, fuzzy
 msgid "Description: Use bluetooth (bluez5) as an administrator."
 msgstr "描述：以管理员身份运行 蓝牙 (bluez5) 。"
 
@@ -116,16 +122,18 @@ msgid "Description: Can access the calendar."
 msgstr "描述：可访问相机。"
 
 #: ../../appdev/apparmor.rst:60
+#, fuzzy
 msgid ""
 "Calendar grants access to the Evolution dataserver's calendar and alarms "
 "APIs. It also grants access to sync-monitor."
-msgstr "Calendar 允许访问 Evolution 数据服务器的日历和警报API。 它还授予访问同步监视器的权限。"
+msgstr "日历权限允许访问 Evolution 数据服务器的日历和警报API。 它还授予访问同步监视器的权限。"
 
 #: ../../appdev/apparmor.rst:62
+#, fuzzy
 msgid ""
 "This policy is reserved since it grants free access to all calendars on the "
 "device at any time. The legacy bug about this situation is `LP #1227824`_ ."
-msgstr "这个权限政策是保留的因为其允许无限制的访问设备上的日历。它的旧bug报告位于 `LP #1227824`_ ."
+msgstr "这个权限政策是保留的因为其允许无限制的访问设备上的日历。它的遗留错误报告位于 `LP #1227824`_ ."
 
 #: ../../appdev/apparmor.rst:66
 msgid "camera"
@@ -140,12 +148,14 @@ msgid "The camera policy grants access to device cameras."
 msgstr "相机策略允许您访问设备相机。"
 
 #: ../../appdev/apparmor.rst:76
+#, fuzzy
 msgid "connectivity"
-msgstr "connectivity"
+msgstr "连通性"
 
 #: ../../appdev/apparmor.rst:78
+#, fuzzy
 msgid "Description: Can access coarse network connectivity information"
-msgstr "Description: Can access coarse network connectivity information"
+msgstr "描述：可以访问粗略的网络连接信息"
 
 #: ../../appdev/apparmor.rst:82
 msgid ""
@@ -155,8 +165,9 @@ msgid ""
 msgstr "连接权限允许应用了解粗略的设备连线情况。包括是否连接到互联网和连接的方式（使用Wifi或移动数据）。"
 
 #: ../../appdev/apparmor.rst:86
+#, fuzzy
 msgid "contacts"
-msgstr "contacts"
+msgstr "通讯"
 
 #: ../../appdev/apparmor.rst:88
 msgid "Description: Can access contacts."
@@ -171,7 +182,7 @@ msgstr "联系人权限（contacts policy）允许应用获取本机联系人。
 
 #: ../../appdev/apparmor.rst:96
 msgid "content_exchange"
-msgstr "content_exchange"
+msgstr "内容交换"
 
 #: ../../appdev/apparmor.rst:98
 msgid "Description: Can request/import data from other applications"
@@ -182,26 +193,26 @@ msgstr "描述：可以从其他应用程序请求/导入数据"
 msgid ""
 "Using the content_exchange policy allows your app to be a consumer of "
 "content on content-hub."
-msgstr "使用content_exchange权限来使你的应用成为联系人中心的消费者（consumer of content）。"
+msgstr "使用内容交换策略允许您的应用程序成为联系人中心的消费者。"
 
 #: ../../appdev/apparmor.rst:106
+#, fuzzy
 msgid "content_exchange_source"
-msgstr "content_exchange_source"
+msgstr "内容交换源"
 
 #: ../../appdev/apparmor.rst:108
 msgid "Description: Can provide/export data to other applications"
-msgstr "描述：可以提供/提取其他应用的数据"
+msgstr "描述：可以向其他应用程序提供/提取数据"
 
 #: ../../appdev/apparmor.rst:112
-#, fuzzy
 msgid ""
 "The content_exchange_source policy allows your app to provide content on "
 "content-hub."
-msgstr "content_exchange_source权限将允许你的应用添加联系人到联系人中心（content-hub）."
+msgstr "内容交换源策略允许您的应用程序添加联系人到联系人中心（content-hub）."
 
 #: ../../appdev/apparmor.rst:116
 msgid "debug"
-msgstr "debug"
+msgstr "调试"
 
 #: ../../appdev/apparmor.rst:118
 msgid ""
@@ -211,10 +222,12 @@ msgid ""
 "considered secure. You should never run untrusted programs using this policy "
 "group."
 msgstr ""
+"描述：使用特殊调试工具。此类工具只用于开发而不是用于生产包。注意：使用此策略组与正常相比提供了明显不同的限制，并且不被认为是安全的。您不应该使用此策略组运"
+"行不受信任的程序。"
 
 #: ../../appdev/apparmor.rst:124
 msgid "document_files"
-msgstr "document_files"
+msgstr "文档文件"
 
 #: ../../appdev/apparmor.rst:126
 msgid ""
@@ -222,17 +235,17 @@ msgid ""
 "reserved for certain applications, such as document viewers. Developers "
 "should typically use the content_exchange policy group and API to access "
 "document files instead."
-msgstr ""
+msgstr "描述：可对文档文件进行读写。此策略组保留给某些应用程序，例如文档查看器。开发人员通常应该使用内容交换策略组和应用编程接口来访问文档文件。"
 
 #: ../../appdev/apparmor.rst:130
 msgid ""
 "This policy allows apps to read and write to the \"Documents\" folders in "
 "the user's home directory and external media."
-msgstr "此策略允许应用程序读取和写入用户主目录和外部媒体中的“文档”文件夹。"
+msgstr "此策略允许应用程序读取和写入用户主目录和外部设备中的“文档”文件夹。"
 
 #: ../../appdev/apparmor.rst:133
 msgid "document_files_read"
-msgstr "document_files_read"
+msgstr "文档文件读取"
 
 #: ../../appdev/apparmor.rst:135
 msgid ""
@@ -240,9 +253,7 @@ msgid ""
 "certain applications, such as document viewers. Developers should typically "
 "use the content_exchange policy group and API to access document files "
 "instead."
-msgstr ""
-"描述：可以读取所有文档文件。 此策略组保留用于某些应用程序，例如文档查看器。 开发人员通常应使用content_exchange 策略组和 API "
-"来访问文档文件。"
+msgstr "描述：可以读取所有文档文件。 此策略组保留用于某些应用程序，例如文档查看器。 开发人员通常应使用内容交换策略组和应用编程接口来访问文档文件。"
 
 #: ../../appdev/apparmor.rst:139
 msgid ""
@@ -274,9 +285,8 @@ msgid "location"
 msgstr "位置"
 
 #: ../../appdev/apparmor.rst:161
-#, fuzzy
 msgid "Description: Can access Location"
-msgstr "location：可访问地理位置"
+msgstr "描述：可访问地理位置"
 
 #: ../../appdev/apparmor.rst:165
 msgid "Allows an app to request access to the device's current location."
@@ -546,7 +556,7 @@ msgstr ""
 
 #: ../../appdev/index.rst:7
 msgid "Introduction"
-msgstr "引言"
+msgstr "介绍"
 
 #: ../../appdev/index.rst:9
 msgid ""
