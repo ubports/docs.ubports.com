@@ -58,7 +58,7 @@ Implementing the pushhelper
 The pushhelper is a part of the app which will receive all push notifications and process them before sending them to the system notification center. It will receive a json-file and must output another json-file in the correct format. The pushhelper is seperated from the app. So we need a new hook in the manifest. It could look like this:
 
 .. code-block:: js
-    :emphasize-lines: 12,13
+    :emphasize-lines: 10,11,12,13
 
 	{
 	    //...
