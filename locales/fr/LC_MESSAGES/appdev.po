@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-11 15:02-0500\n"
-"PO-Revision-Date: 2018-05-01 18:45+0000\n"
+"PO-Revision-Date: 2018-11-30 15:34+0000\n"
 "Last-Translator: Max Libre <libremax@protonmail.com>\n"
 "Language-Team: French <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/fr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.15\n"
+"X-Generator: Weblate 3.1.1\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../appdev/apparmor.rst:2
@@ -603,18 +603,19 @@ msgstr ""
 "Ubuntu Touch dispose de trois types d'applications : `les applications Web`_ "
 "(WebApps), les moteurs de recherche (Scopes, obsolètes) et `les applications "
 "natives`_. Les applications sont empaquetées, distribuées et déployées en "
-"utilisant un format appelé paquet `Click <https://click.readthedocs.io/en/"
+"utilisant un format appelé paquet `click <https://click.readthedocs.io/en/"
 "latest/>`_. Les interfaces utilisateurs des applications peuvent être créées "
 "en utilisant du QML ou du HTML5 et le comportement peut être créé en "
 "utilisant du JavaScript, du Qt, du C++, du Python ou du Go."
 
 #: ../../appdev/index.rst:14
 msgid "Click package overview"
-msgstr "Aperçu du paquet Click"
+msgstr "Aperçu du paquet click"
 
 #: ../../appdev/index.rst:16
 msgid "Every ``click`` application package must embed at least 3 files:"
-msgstr "Chaque application ``Click`` doit contenir au moins 3 fichiers :"
+msgstr ""
+"Chaque paquet d'application ``click`` doit contenir au moins 3 fichiers :"
 
 #: ../../appdev/index.rst:38
 msgid "``manifest.json`` file"
