@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-30 21:23-0500\n"
-"PO-Revision-Date: 2018-04-08 16:33+0000\n"
-"Last-Translator: Anne Onyme <anneonyme017@openmailbox.org>\n"
-"Language-Team: French <https://translate.ubports.com/projects/ubports-docs"
-"/documentation-contribute/fr/>\n"
+"PO-Revision-Date: 2018-12-23 00:00+0000\n"
+"Last-Translator: Max Libre <libremax@protonmail.com>\n"
+"Language-Team: French <https://translate.ubports.com/projects/ubports-docs/"
+"documentation-contribute/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.15\n"
+"X-Generator: Weblate 3.1.1\n"
 "Generated-By: Babel 2.5.3\n"
 
 #: ../../contribute/bugreporting.rst:2
@@ -76,12 +76,12 @@ msgid ""
 "searching, use a few words that describe what you're seeing. For example,"
 " \"Lock screen transparent\" or \"Lock screen shows activities\"."
 msgstr ""
-"Tout d'abord, vous devez vous assurez que le problème que vous essayez de"
-" faire remonter n'a pas déjà été signalé. Cherchez dans la liste des "
-"problèmes rapportés. Lors de la recherche, utilisez quelques mots en "
-"Anglais qui décrivent ce que vous voyez. Par exemple, « Lock screen "
-"transparent » (Écran d'accueil transparent) ou « Lock screen shows "
-"activities » (L'écran de verrouillage affiche des activités)."
+"Tout d'abord, vous devez vous assurez que le problème que vous essayez de "
+"faire remonter n'a pas déjà été signalé. Cherchez dans la liste des "
+"problèmes rapportés. Lors de la recherche, utilisez quelques mots en anglais "
+"qui décrivent ce que vous voyez. Par exemple, « Lock screen transparent » ("
+"Écran d'accueil transparent) ou « Lock screen shows activities » (L'écran de "
+"verrouillage affiche des activités)."
 
 #: ../../contribute/bugreporting.rst:18
 msgid ""
@@ -123,7 +123,7 @@ msgstr ""
 
 #: ../../contribute/bugreporting.rst:28
 msgid "Getting Logs"
-msgstr "Obtenir les rapports"
+msgstr "Obtenir les journaux d'évènement"
 
 #: ../../contribute/bugreporting.rst:30
 msgid ""
@@ -131,10 +131,10 @@ msgid ""
 "general, /var/log/dmesg and the output of /android/system/bin/logcat are "
 "helpful when resolving an issue. I'll show you how to get these logs."
 msgstr ""
-"Nous apprécions d'obtenir autant de bons rapports que possible lorsque "
-"vous nous signalez un problème. En général, /var/log/dmesg et la sortie "
-"de /android/system/bin/logcat sont utiles pour résoudre un problème. Je "
-"vais vous montrer comment obtenir ces rapports."
+"Nous apprécions d'obtenir autant de bons journaux d'événement que possible "
+"lorsque vous nous signalez un problème. En général, /var/log/dmesg et la "
+"sortie de /android/system/bin/logcat sont utiles pour résoudre un problème. "
+"Je vais vous montrer comment obtenir ces journaux."
 
 #: ../../contribute/bugreporting.rst:32
 msgid ""
@@ -146,7 +146,9 @@ msgstr ""
 
 #: ../../contribute/bugreporting.rst:34
 msgid "Now, you can get the two most important logs."
-msgstr "Maintenant, vous pouvez obtenir les deux rapports les plus importants."
+msgstr ""
+"Maintenant, vous pouvez obtenir les deux journaux d'événement les plus "
+"importants."
 
 #: ../../contribute/bugreporting.rst:37
 msgid "dmesg"
@@ -170,7 +172,9 @@ msgstr ""
 
 #: ../../contribute/bugreporting.rst:42 ../../contribute/bugreporting.rst:52
 msgid "cd to a folder where you're able to write the log"
-msgstr "Allez dans un dossier (cd) où vous avez le droit d'enregistrer le rapport"
+msgstr ""
+"Allez dans un dossier (cd) où vous avez le droit d'enregistrer le journal "
+"d'événement"
 
 #: ../../contribute/bugreporting.rst:43
 msgid "Run the command: `adb shell dmesg > UTdmesg.txt`"
@@ -181,8 +185,9 @@ msgid ""
 "This log should now be located at UTdmesg.txt under your working "
 "directory, ready for uploading later."
 msgstr ""
-"Ce rapport devrait maintenant être apparaître sous le nom d'UTdmesg.txt "
-"dans votre répertoire de travail, prêt à un téléversement ultérieur."
+"Ce journal d'événement devrait maintenant être accessible sous le nom "
+"d'UTdmesg.txt dans votre répertoire de travail, prêt à un téléversement "
+"ultérieur."
 
 #: ../../contribute/bugreporting.rst:48
 msgid "logcat"
@@ -193,7 +198,7 @@ msgid ""
 "The **logcat** (*log concatenator*) command displays debug information "
 "from various parts of the underlying android system."
 msgstr ""
-"La commande **logcat** (*log concatenator*)  affiche les informations de "
+"La commande **logcat** (*log concatenator*) affiche les informations de "
 "débogage provenant de différentes parties du système Android sous-jacent."
 
 #: ../../contribute/bugreporting.rst:53
