@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-11 15:02-0500\n"
-"PO-Revision-Date: 2018-05-26 08:58+0000\n"
-"Last-Translator: Mike <miguel2000@livecom.it>\n"
+"PO-Revision-Date: 2019-01-06 00:00+0000\n"
+"Last-Translator: Ennio Lavagnini <ennio.lavagnini@protonmail.com>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-userguide/it/>\n"
 "Language: it\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.15\n"
+"X-Generator: Weblate 3.1.1\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../userguide/advanceduse/adb.rst:2
@@ -39,7 +39,7 @@ msgstr "Installare ADB"
 
 #: ../../userguide/advanceduse/adb.rst:10
 msgid "First, you'll need ADB installed on your computer."
-msgstr "Per prima cosa avrai bisogno di ADB installato sul tuo computer."
+msgstr "Per prima cosa avrai bisogno di installare ADB  sul tuo computer."
 
 #: ../../userguide/advanceduse/adb.rst:12
 msgid "On Ubuntu::"
