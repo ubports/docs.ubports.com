@@ -203,6 +203,30 @@ Notification
 +----------------+-----------------+-----------------------------------------------------------------+
 | Parameter      | Type            | Description                                                     |
 +================+=================+=================================================================+
+| tag            | string          | | The tag of the push notification.                             |
++----------------+-----------------+-----------------------------------------------------------------+
+| sound          | bool or string  | | This is either a boolean (play a predetermined sound) or the  |
+|                |                 | | path to a sound file. The user can disable it, so don't rely  |
+|                |                 | | on it exclusively. Defaults to empty (no sound). The path is  |
+|                |                 | | relative, and will be looked up in (a) the application's      |
+|                |                 | | ``.local/share/<pkgname>``, and (b) standard xdg dirs.        |
++----------------+-----------------+-----------------------------------------------------------------+
+| vibrate        | bool or Vibrate | | The notification can contain a vibrate field, causing haptic  |
+|                |                 | | feedback, which can be either a boolean (if true, vibrate a   |
+|                |                 | | predetermined way) or an Vibrate object.                      |
++----------------+-----------------+-----------------------------------------------------------------+
+| emblem-counter | Emblem-counter  | | A JSON object, which defines how to display the emblem        |
+|                |                 | | counter.                                                      |
++----------------+-----------------+-----------------------------------------------------------------+
+| card           | Card            | | A JSON object with information about the notification card.   |
++----------------+-----------------+-----------------------------------------------------------------+
+
+Card
+^^^^
+
++----------------+-----------------+-----------------------------------------------------------------+
+| Parameter      | Type            | Description                                                     |
++================+=================+=================================================================+
 | summary        | string          | | Required. A title. The card will not be presented if this is  |
 |                |                 | | missing.                                                      |
 +----------------+-----------------+-----------------------------------------------------------------+
@@ -226,19 +250,6 @@ Notification
 | popup          | bool            | | Whether to show in a bubble. Users can disable this, and can  |
 |                |                 | | easily miss them, so don't rely on it exclusively. Defaults   |
 |                |                 | | to false.                                                     |
-+----------------+-----------------+-----------------------------------------------------------------+
-| sound          | bool or string  | | This is either a boolean (play a predetermined sound) or the  |
-|                |                 | | path to a sound file. The user can disable it, so don't rely  |
-|                |                 | | on it exclusively. Defaults to empty (no sound). The path is  |
-|                |                 | | relative, and will be looked up in (a) the application's      |
-|                |                 | | ``.local/share/<pkgname>``, and (b) standard xdg dirs.        |
-+----------------+-----------------+-----------------------------------------------------------------+
-| vibrate        | bool or Vibrate | | The notification can contain a vibrate field, causing haptic  |
-|                |                 | | feedback, which can be either a boolean (if true, vibrate a   |
-|                |                 | | predetermined way) or an Vibrate object.                      |
-+----------------+-----------------+-----------------------------------------------------------------+
-| emblem-counter | Emblem-counter  | | A JSON object, which defines how to display the emblem        |
-|                |                 | | counter.                                                      |
 +----------------+-----------------+-----------------------------------------------------------------+
 
 Vibrate
