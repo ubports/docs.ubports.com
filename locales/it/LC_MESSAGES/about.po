@@ -7,18 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-03 14:44-0600\n"
+"POT-Creation-Date: 2018-11-30 10:25-0600\n"
 "PO-Revision-Date: 2018-03-12 09:07+0000\n"
 "Last-Translator: Stefano Melchior <stefano.melchior@me.com>\n"
-"Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs"
-"/documentation-about/it/>\n"
 "Language: it\n"
+"Language-Team: Italian <https://translate.ubports.com/projects/ubports-"
+"docs/documentation-about/it/>\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.15\n"
-"Generated-By: Babel 2.5.3\n"
+"Generated-By: Babel 2.6.0\n"
 
 #: ../../about/introduction.rst:2
 msgid "Introduction"
@@ -51,12 +50,13 @@ msgstr ""
 "crescente di dispositivi."
 
 #: ../../about/introduction.rst:11
+#, fuzzy
 msgid ""
 "After Canonical suddenly announced `their plans to terminate support of "
 "Ubuntu Touch <https://insights.ubuntu.com/2017/04/05/growing-ubuntu-for-"
 "cloud-and-iot-rather-than-phone-and-convergence/>`_ in April of 2017, "
 "UBports and its sister projects began work on the open-source code, "
-"maintaining and expanding its possiblilities for the future."
+"maintaining and expanding its possibilities for the future."
 msgstr ""
 "Nell'aprile del 2017, a seguito dell'improvviso annuncio di `porre "
 "termine al supporto di Ubuntu Touch "
@@ -112,6 +112,115 @@ msgstr ""
 "Engine's Documentation <http://docs.godotengine.org/en/stable/>`_, i cui "
 "diritti sono di Juan Linietsky, Ariel Manzur e della comunità Godot."
 
+#: ../../about/process/branch-naming.rst:2
+msgid "Branch-naming convention"
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:4
+msgid ""
+"Our branch-naming conventions ensure that software can be built by our CI"
+" and tested easily by other developers."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:6
+msgid ""
+"Every Git repository's README file should state which branch-naming "
+"convention is used and possible deviations from the norm."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:9
+msgid "Click-Packages"
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:11
+msgid ""
+"Software that is exclusively distributed as a click-package (and not also"
+" as a deb) only uses one ``master`` branch that is protected. Separate "
+"temporary development branches with arbitrary descriptive names can be "
+"created and merged into master when the time comes. For marking and "
+"archiving milestones in development history, ideally Git tags or GitHub "
+"releases should be used."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:14
+msgid "Deb-Packages"
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:16
+msgid ""
+"To make most efficient use of our CI system, a special naming convention "
+"for git-branches is used."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:18
+msgid ""
+"For pre-installed Ubuntu Touch components, deb-packages are used wherever"
+" possible. This includes Core Apps, since they can still be independently"
+" updated using click-package downloads from the OpenStore. This policy "
+"allows us to make use of the powerful Debian build system to resolve "
+"dependencies."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:20
+msgid ""
+"Every repository that uses this convention will have branches for the "
+"actively supported Ubuntu releases referenced by their codenames "
+"(``bionic``, ``xenial``, ``vivid``, etc.). These are the branches that "
+"are built directly into the corresponding images and published on "
+":doc:`repo.ubports.com <ppa>`. If no separate versions for the different "
+"Ubuntu bases are needed, the repository will just have one ``master`` "
+"branch and the CI system will still build versions for all actively "
+"supported releases and resolve dependencies accordingly."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:23
+msgid "Branch-extensions"
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:25
+msgid ""
+"To build and publish packages based on another repository, an extension "
+"in the form of  ``xenial_-_some-descriptive_extension`` can be used. The "
+"CI system will then resolve all dependencies using the ``xenial_-_some-"
+"descriptive_extension`` branch of other repositories or fall back on the "
+"normal ``xenial`` dependencies, if that doesn't exist. These special "
+"dependencies are not built into the image but still pushed to  on "
+":doc:`repo.ubports.com <ppa>`."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:27
+msgid ""
+"Multiple branch extensions can be chained together in the form of "
+"``xenial_-_dependency-1_-_dependency-2_-_dependency-3``. This means that "
+"the CI system will look for dependencies in the following repositories:"
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:38
+msgid ""
+"There is no prioritization, so the build system will always use the "
+"package with the highest version number or the newest build if the "
+"version is equal."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:41
+msgid "Dependency-file"
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:43
+msgid ""
+"For complex or non-linear dependencies, a ``ubports.depends`` file can be"
+" created in the root of the repository to specify additional "
+"dependencies. The branch name will be ignored if this file exists."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:53
+msgid ""
+"The ``ubports.depends`` file is an **exclusive list**, so the build "
+"system will not resolve dependencies linearly like it does in a branch "
+"name! Every dependency has to be listed. You will almost always want to "
+"include your base release (i.e. ``xenial``)."
+msgstr ""
+
 #: ../../about/process/index.rst:2
 msgid "Processes"
 msgstr "Processi"
@@ -151,9 +260,10 @@ msgid "Where are bugs tracked?"
 msgstr "Dove vengono tracciati i bug?"
 
 #: ../../about/process/issue-tracking.rst:9
+#, fuzzy
 msgid ""
 "Since our quality assurance depends heavily on the community, we try to "
-"track issues where the user would expect them, instead of seperated by "
+"track issues where the user would expect them, instead of separated by "
 "repository. This means, that issues of almost all components that are "
 "distributed as with the system-image are tracked in the `Ubuntu Touch "
 "tracker <https://github.com/ubports/ubuntu-touch>`__. An exception of "
@@ -175,10 +285,10 @@ msgid ""
 "Repositories that don't track issues locally have their bugtracker "
 "disabled."
 msgstr ""
-"Molti degli ambienti tengono traccia dei problemi a livello locale. Se non "
-"sei sicuro se un repository usa il proprio sistema di tracciamento o no, "
-"consulta il file README.md . I repository che non tengono traccia dei "
-"problemi a livello locale, hanno il loro sistema di tracciamento bachi "
+"Molti degli ambienti tengono traccia dei problemi a livello locale. Se "
+"non sei sicuro se un repository usa il proprio sistema di tracciamento o "
+"no, consulta il file README.md . I repository che non tengono traccia dei"
+" problemi a livello locale, hanno il loro sistema di tracciamento bachi "
 "disattivato."
 
 #: ../../about/process/issue-tracking.rst:21
@@ -204,9 +314,10 @@ msgid "GitHub projects"
 msgstr "Progetti di GitHub"
 
 #: ../../about/process/issue-tracking.rst:30
+#, fuzzy
 msgid ""
 "To increase transparency and communication, GitHub projects (Kanban-"
-"Boards) are used whereever practical. In case of github.com/ubports"
+"Boards) are used wherever practical. In case of github.com/ubports"
 "/ubuntu-touch, a single project is used for all issues. Projects support "
 "filtering by labels, so that only issues that belong to a specific team "
 "or affect a specific device can be viewed."
@@ -224,9 +335,10 @@ msgid "These are the standard columns:"
 msgstr "Queste sono le colonne standard:"
 
 #: ../../about/process/issue-tracking.rst:38
+#, fuzzy
 msgid ""
 "**None (awaiting triage)**: The issue has been approved by a member of "
-"the qa team and is awaiting review from the responsible development team."
+"the QA team and is awaiting review from the responsible development team."
 " if the issue is a bug, instructions to reproduce are included in the "
 "issue description. if the issue is a feature request, it has passed a "
 "primary sanity check by the qa-team but has not yet been accepted by the "
@@ -242,10 +354,11 @@ msgstr ""
 "In inglese, \"None (awaiting triage)\"."
 
 #: ../../about/process/issue-tracking.rst:39
+#, fuzzy
 msgid ""
 "**Accepted**: The issue has been accepted by the responsible development-"
 "team. If the issue is a bugreport, the team has decided that it should be"
-" fixable and accepts the responsibility. If the issue is a featrue "
+" fixable and accepts the responsibility. If the issue is a feature "
 "request, the team thinks it should be implemented as described."
 msgstr ""
 "**Accettato**: il report è stato accettato dal responsabile del gruppo di"
@@ -295,10 +408,10 @@ msgid ""
 "or the issue has been rejected (labeled “wontfix”)."
 msgstr ""
 "**Niente (rimosso dal progetto)** (in inglese **None (removed from the "
-"project)**): se un problema è aperto e etichettato come \"necessita aiuto\", "
-"la comunità è chiamata a risolverlo. Se è chiuso, significa che la pezza è "
-"stata rilasciata sul canale stabile (a cui si allega un commento) o il "
-"problema è stato rigettato (etichettato come \"wontfix\")."
+"project)**): se un problema è aperto e etichettato come \"necessita "
+"aiuto\", la comunità è chiamata a risolverlo. Se è chiuso, significa che "
+"la pezza è stata rilasciata sul canale stabile (a cui si allega un "
+"commento) o il problema è stato rigettato (etichettato come \"wontfix\")."
 
 #: ../../about/process/issue-tracking.rst:46
 msgid "Labels"
@@ -337,8 +450,9 @@ msgstr ""
 "interessati devono integrarne la documentazione"
 
 #: ../../about/process/issue-tracking.rst:55
+#, fuzzy
 msgid ""
-"**bug**: This issue is a confirmed bug. If it's reproducable, "
+"**bug**: This issue is a confirmed bug. If it's reproducible, "
 "reproduction steps are described."
 msgstr ""
 "**baco*: questo problema è stato confermato come baco. `Se è "
@@ -556,31 +670,33 @@ msgid ""
 "should be implemented if necessary). For non-critical issues that are "
 "trivial to fix, the label **good first issue** can be added as well."
 msgstr ""
-"Il *Gruppo* interessato farà il test (triage) del problema e lo rigetterà ("
-"etichettandolo **wontfix**, lo chiuderà e lo rimuoverà dal progetto) o lo "
-"accettarà. Il gruppo decide se ne troverà una soluzione in casa (spostandolo "
-"in \"Accettato\", \"Accepted\", e assegnandolo a un membro del gruppo) "
-"oppure aspetterà che uno sviluppatore della comunità lo prenda in carico ("
-"etichettandolo **necessita aiuto**, **help wanted**, rimuovendolo dal "
-"tabellone di progetto e fornendone suggerimenti su come risolverlo e "
-"dettagli ulteriori su come implementarne la soluzione, qualora fosse "
-"necessario). Per problemi non critici ci sono soluzioni triviali, potendolo "
-"etichettare pure come **buono per primi problemi** (**good first issue**)."
+"Il *Gruppo* interessato farà il test (triage) del problema e lo rigetterà"
+" (etichettandolo **wontfix**, lo chiuderà e lo rimuoverà dal progetto) o "
+"lo accettarà. Il gruppo decide se ne troverà una soluzione in casa "
+"(spostandolo in \"Accettato\", \"Accepted\", e assegnandolo a un membro "
+"del gruppo) oppure aspetterà che uno sviluppatore della comunità lo "
+"prenda in carico (etichettandolo **necessita aiuto**, **help wanted**, "
+"rimuovendolo dal tabellone di progetto e fornendone suggerimenti su come "
+"risolverlo e dettagli ulteriori su come implementarne la soluzione, "
+"qualora fosse necessario). Per problemi non critici ci sono soluzioni "
+"triviali, potendolo etichettare pure come **buono per primi problemi** "
+"(**good first issue**)."
 
 #: ../../about/process/issue-tracking.rst:121
+#, fuzzy
 msgid ""
 "Once a *developer* is assigned and starts working on the issue, it is "
 "moved to “In Development”. As soon as they have something to show for, "
 "the issue is closed and automatically moved to “Quality Assurance” for "
-"feedback from the QA team. If neccessary, the developer will provide "
-"hints on how to test his patch in a comment on the issue."
+"feedback from the QA team. If necessary, the developer will provide hints"
+" on how to test his patch in a comment on the issue."
 msgstr ""
 "Una volta che uno *sviluppatore* è assegnato e inizia a lavorarci, il "
 "problema si sposta nello stato \"In sviluppo\" (\"In Development\"). Non "
-"appena c'è qualcosa da mostrare, lo si chiude e lo si sposta automaticamente "
-"in \"Quality Assurance\" in attesa di un riscontro dal Gruppo QA. Se "
-"necessario, lo sviluppatore potrà fornirà suggerimenti su come testare la "
-"patch nei commenti del problema."
+"appena c'è qualcosa da mostrare, lo si chiude e lo si sposta "
+"automaticamente in \"Quality Assurance\" in attesa di un riscontro dal "
+"Gruppo QA. Se necessario, lo sviluppatore potrà fornirà suggerimenti su "
+"come testare la patch nei commenti del problema."
 
 #: ../../about/process/issue-tracking.rst:122
 msgid ""
@@ -590,19 +706,91 @@ msgid ""
 " next release."
 msgstr ""
 "Il *Gruppo QA* testa su tutti i dispositivi la soluzione e fornisce un "
-"riscontro allo sviluppatore. Se ci sono problemi, si riapre il problema e "
-"ritorna in \"Accettato\" (in inglese \"Accepted\"), altrimenti la si chiude "
-"e la si sposta in \"Candidato per il rilascio\" (\"Release Candidate\") per "
-"essere inclusa nel prossimo rilascio."
+"riscontro allo sviluppatore. Se ci sono problemi, si riapre il problema e"
+" ritorna in \"Accettato\" (in inglese \"Accepted\"), altrimenti la si "
+"chiude e la si sposta in \"Candidato per il rilascio\" (\"Release "
+"Candidate\") per essere inclusa nel prossimo rilascio."
 
 #: ../../about/process/issue-tracking.rst:123
 msgid ""
 "If not done already, the issue is added to the next milestone. Once the "
 "milestone is released, the issue is removed from the project board."
 msgstr ""
-"Qualora non sia già stato fatto, il problema è aggiunto alla prossima \""
-"milestone\". Una volta che questa è rilasciata, il problema è rimosso dal "
-"tabellone di progetto."
+"Qualora non sia già stato fatto, il problema è aggiunto alla prossima "
+"\"milestone\". Una volta che questa è rilasciata, il problema è rimosso "
+"dal tabellone di progetto."
+
+#: ../../about/process/ppa.rst:2
+msgid "repo.ubports.com"
+msgstr ""
+
+#: ../../about/process/ppa.rst:4
+msgid ""
+"This is the package archive system for UBports projects. It hosts various"
+" PPAs containing all deb-components of Ubuntu Touch."
+msgstr ""
+
+#: ../../about/process/ppa.rst:7
+msgid "Repository naming convention"
+msgstr ""
+
+#: ../../about/process/ppa.rst:10
+msgid "Native packages"
+msgstr ""
+
+#: ../../about/process/ppa.rst:12
+msgid ""
+"Native packages are repositories which contain a ``debian/`` directory "
+"**with** the source used to create the Debian source package (``.dsc``)."
+msgstr ""
+
+#: ../../about/process/ppa.rst:14
+msgid ""
+"The name of the Debian source package generated from the repository and "
+"the name of the git-repository should be the same."
+msgstr ""
+
+#: ../../about/process/ppa.rst:17
+msgid "Packaging repositories"
+msgstr ""
+
+#: ../../about/process/ppa.rst:19
+msgid ""
+"Packaging repositories contain a ``debian/`` directory **without** the "
+"source used to create the Debian source package (``.dsc``). They also "
+"contain instructions to tell ``debhelper`` how to get the source used to "
+"create the source package."
+msgstr ""
+
+#: ../../about/process/ppa.rst:21
+msgid ""
+"The repository should have the name of the source package it generates "
+"with ``-packaging`` appended to the end. For example, a packaging "
+"repository that generates a source package called ``sandwich`` would be "
+"called ``sandwich-packaging``."
+msgstr ""
+
+#: ../../about/process/ppa.rst:24
+msgid "Creating new PPAs"
+msgstr ""
+
+#: ../../about/process/ppa.rst:26
+msgid ""
+"New PPAs can be created dynamically by the CI server using a special :doc"
+":`git-branch naming convention <branch-naming>`. The name of the branch "
+"translates literally to the name of the PPA: "
+"``http://repo.ubports.com/dists/[branch name]``"
+msgstr ""
+
+#: ../../about/process/ppa.rst:28
+msgid ""
+"Non-standard PPAs (i.e. not ``xenial``, ``vivid`` or ``bionic``) are kept"
+" for three months. In case they need to be kept for a longer time, a file"
+" with the name ``ubports.keep`` can be created in the root of the "
+"repository, containing the date until which the PPA shall be kept open in"
+" the form of ``YYYY-MM-dd``. If this file is empty, the PPA will be kept "
+"for two years after the last build."
+msgstr ""
 
 #: ../../about/process/release-schedule.rst:2
 msgid "Release Schedule"
@@ -711,3 +899,4 @@ msgstr ""
 #~ "problemi non critici da risolvere, "
 #~ "l'etichetta **buono per iniziare** gli "
 #~ "può essere assegnata."
+

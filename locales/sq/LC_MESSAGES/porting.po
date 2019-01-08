@@ -1,23 +1,23 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2017, The UBports project (Creative Commons BY-SA 4.0)
 # This file is distributed under the same license as the UBports package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-11 15:02-0500\n"
+"POT-Creation-Date: 2018-08-28 14:00+0200\n"
 "PO-Revision-Date: 2018-06-03 17:13+0000\n"
 "Last-Translator: Rrahim Gashi <jimmygashi@gmail.com>\n"
-"Language-Team: Albanian <https://translate.ubports.com/projects/ubports-docs/"
-"documentation-porting/sq/>\n"
 "Language: sq\n"
+"Language-Team: Albanian <https://translate.ubports.com/projects/ubports-"
+"docs/documentation-porting/sq/>\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.15\n"
+"Generated-By: Babel 2.6.0\n"
 
 #: ../../porting/building-halium-boot.rst:2
 #, fuzzy
@@ -26,8 +26,8 @@ msgstr "Ndërtimi  i ubports-boot"
 
 #: ../../porting/building-halium-boot.rst:4
 msgid ""
-"Halium-boot is a new proposed boot image in the Halium project, replacing "
-"hybris-boot. We will be building and using it for Ubuntu Touch."
+"Halium-boot is a new proposed boot image in the Halium project, replacing"
+" hybris-boot. We will be building and using it for Ubuntu Touch."
 msgstr ""
 
 #: ../../porting/building-halium-boot.rst:7
@@ -36,17 +36,17 @@ msgstr ""
 
 #: ../../porting/building-halium-boot.rst:9
 msgid ""
-"Halium-boot's ``mount`` is not aware of SELinux contexts. If your device's "
-"``fstab`` file includes any contexts, the partition that they are on will "
-"fail to mount and your port will not work correctly."
+"Halium-boot's ``mount`` is not aware of SELinux contexts. If your "
+"device's ``fstab`` file includes any contexts, the partition that they "
+"are on will fail to mount and your port will not work correctly."
 msgstr ""
 
 #: ../../porting/building-halium-boot.rst:11
 msgid ""
-"The first step to this process is figuring out where your fstab actually is. "
-"For most, this is inside ``BUILDDIR/device/MANUFACTUER/CODENAME/rootdir/"
-"etc`` and it is named either ``fstab.qcom`` or ``fstab.devicename``. Open "
-"the file for editing."
+"The first step to this process is figuring out where your fstab actually "
+"is. For most, this is inside "
+"``BUILDDIR/device/MANUFACTUER/CODENAME/rootdir/etc`` and it is named "
+"either ``fstab.qcom`` or ``fstab.devicename``. Open the file for editing."
 msgstr ""
 
 #: ../../porting/building-halium-boot.rst:13
@@ -57,15 +57,16 @@ msgstr ""
 
 #: ../../porting/building-halium-boot.rst:15
 msgid ""
-"With the file open, remove all ``context=`` options from all block devices "
-"in the file. The option will start at the text ``context=`` and end at the "
-"comma following it."
+"With the file open, remove all ``context=`` options from all block "
+"devices in the file. The option will start at the text ``context=`` and "
+"end at the comma following it."
 msgstr ""
 
 #: ../../porting/building-halium-boot.rst:17
 msgid ""
-"For example, the line ``ro,nosuid,nodev,context=u:object_r:firmware_file:s0,"
-"barrier=0`` should become ``ro,nosuid,nodev,barrier=0``"
+"For example, the line "
+"``ro,nosuid,nodev,context=u:object_r:firmware_file:s0,barrier=0`` should "
+"become ``ro,nosuid,nodev,barrier=0``"
 msgstr ""
 
 #: ../../porting/building-halium-boot.rst:19
@@ -86,10 +87,10 @@ msgstr ""
 
 #: ../../porting/building-halium-boot.rst:28
 msgid ""
-"You may have to do this twice. It will likely fix things both times. Then, "
-"run the script without the ``-w`` flag to see if there are any more errors. "
-"If there are, fix them manually. Once finished, run the script without the "
-"``-w`` flag one more time to make sure everything is correct."
+"You may have to do this twice. It will likely fix things both times. "
+"Then, run the script without the ``-w`` flag to see if there are any more"
+" errors. If there are, fix them manually. Once finished, run the script "
+"without the ``-w`` flag one more time to make sure everything is correct."
 msgstr ""
 
 #: ../../porting/building-halium-boot.rst:31
@@ -98,8 +99,8 @@ msgstr ""
 
 #: ../../porting/building-halium-boot.rst:33
 msgid ""
-"Once halium-boot is in place, you can build it quite simply. You will also "
-"need to rebuild system.img due to our changes."
+"Once halium-boot is in place, you can build it quite simply. You will "
+"also need to rebuild system.img due to our changes."
 msgstr ""
 
 #: ../../porting/building-halium-boot.rst:35
@@ -129,8 +130,8 @@ msgstr ""
 
 #: ../../porting/building-halium-boot.rst:44
 msgid ""
-"Now that you have halium-boot built, you can move on to :doc:"
-"`installing-16-04`."
+"Now that you have halium-boot built, you can move on to "
+":doc:`installing-16-04`."
 msgstr ""
 
 #: ../../porting/common-problems-install.rst:7
@@ -139,8 +140,8 @@ msgstr ""
 
 #: ../../porting/common-problems-install.rst:9
 msgid ""
-"This page details problems commonly faced while following the :doc:"
-"`installing-16-04` page."
+"This page details problems commonly faced while following the "
+":doc:`installing-16-04` page."
 msgstr ""
 
 #: ../../porting/common-problems-install.rst:12
@@ -149,10 +150,10 @@ msgstr ""
 
 #: ../../porting/common-problems-install.rst:14
 msgid ""
-"The SSH connection may hang indefinitely when trying to connect. Attempts to "
-"stop the connection with Control-C may or may not return you to a shell "
-"prompt. If you run ``ssh -vvvv phablet@10.15.19.82``, you only get the "
-"following output before the program stops::"
+"The SSH connection may hang indefinitely when trying to connect. Attempts"
+" to stop the connection with Control-C may or may not return you to a "
+"shell prompt. If you run ``ssh -vvvv phablet@10.15.19.82``, you only get "
+"the following output before the program stops::"
 msgstr ""
 
 #: ../../porting/common-problems-install.rst:22
@@ -172,8 +173,8 @@ msgstr ""
 
 #: ../../porting/common-problems-install.rst:33
 msgid ""
-"You may now reboot the device. You should be able to connect to SSH once it "
-"comes back online."
+"You may now reboot the device. You should be able to connect to SSH once "
+"it comes back online."
 msgstr ""
 
 #: ../../porting/common-problems-install.rst:36
@@ -189,14 +190,14 @@ msgstr ""
 #: ../../porting/common-problems-install.rst:45
 msgid ""
 "This happens because ``lightdm``, the Ubuntu Touch display manager, is "
-"crashing repeatedly. The system watchdog process sees this and reboots the "
-"device."
+"crashing repeatedly. The system watchdog process sees this and reboots "
+"the device."
 msgstr ""
 
 #: ../../porting/common-problems-install.rst:47
 msgid ""
-"To fix this problem, log in before the reboot occurs and run the following "
-"command::"
+"To fix this problem, log in before the reboot occurs and run the "
+"following command::"
 msgstr ""
 
 #: ../../porting/common-problems-run.rst:2
@@ -205,8 +206,8 @@ msgstr ""
 
 #: ../../porting/common-problems-run.rst:4
 msgid ""
-"This page details problems commonly faced while following the :doc:`running-"
-"ut` page."
+"This page details problems commonly faced while following the :doc"
+":`running-ut` page."
 msgstr ""
 
 #: ../../porting/common-problems-run.rst:7
@@ -215,9 +216,9 @@ msgstr ""
 
 #: ../../porting/common-problems-run.rst:9
 msgid ""
-"If nothing is showing on screen even after adding udev rules to your port, "
-"it is likely that you have a problem with graphical applications crashing. "
-"See `Mir servers crash`_ for more information."
+"If nothing is showing on screen even after adding udev rules to your "
+"port, it is likely that you have a problem with graphical applications "
+"crashing. See `Mir servers crash`_ for more information."
 msgstr ""
 
 #: ../../porting/common-problems-run.rst:12
@@ -226,8 +227,8 @@ msgstr ""
 
 #: ../../porting/common-problems-run.rst:14
 msgid ""
-"Mir servers crashing can be caused by many different problems with the port. "
-"To troubleshoot more, you can try the following:"
+"Mir servers crashing can be caused by many different problems with the "
+"port. To troubleshoot more, you can try the following:"
 msgstr ""
 
 #: ../../porting/common-problems-run.rst:17
@@ -236,22 +237,22 @@ msgstr ""
 
 #: ../../porting/common-problems-run.rst:19
 msgid ""
-"If the Android container is not running, many parts of Ubuntu Touch will not "
-"work. Run this command to check on the container's status::"
+"If the Android container is not running, many parts of Ubuntu Touch will "
+"not work. Run this command to check on the container's status::"
 msgstr ""
 
 #: ../../porting/common-problems-run.rst:23
 msgid ""
-"If you get output similar to the following, the Android container is running "
-"and you can move on to the next troubleshooting step::"
+"If you get output similar to the following, the Android container is "
+"running and you can move on to the next troubleshooting step::"
 msgstr ""
 
 #: ../../porting/common-problems-run.rst:30
 msgid ""
-"If you do not get ``State: RUNNING``, the container is stopped. You can run "
-"``sudo start lxc-android-config`` to attempt to start it. If the container "
-"does not start after that, you can run ``sudo lxc-start -n android -F`` to "
-"get a more detailed log of why it has failed."
+"If you do not get ``State: RUNNING``, the container is stopped. You can "
+"run ``sudo start lxc-android-config`` to attempt to start it. If the "
+"container does not start after that, you can run ``sudo lxc-start -n "
+"android -F`` to get a more detailed log of why it has failed."
 msgstr ""
 
 #: ../../porting/common-problems-run.rst:34
@@ -260,33 +261,34 @@ msgstr ""
 
 #: ../../porting/common-problems-run.rst:36
 msgid ""
-"If some partitions used for Android drivers are not mounted, the container "
-"may start but not work correctly."
+"If some partitions used for Android drivers are not mounted, the "
+"container may start but not work correctly."
 msgstr ""
 
 #: ../../porting/common-problems-run.rst:38
 msgid ""
-"To check the mounted Android partitions, run ``ls /android``. At least the "
-"following folders should be contained within::"
+"To check the mounted Android partitions, run ``ls /android``. At least "
+"the following folders should be contained within::"
 msgstr ""
 
 #: ../../porting/common-problems-run.rst:45
 msgid ""
-"If any of these are missing, run ``dmesg`` to get the kernel log. Mounting "
-"Android partitions will start after the following line::"
+"If any of these are missing, run ``dmesg`` to get the kernel log. "
+"Mounting Android partitions will start after the following line::"
 msgstr ""
 
 #: ../../porting/common-problems-run.rst:49
 msgid ""
-"Try to diagnose and fix any mounting errors that you find in the log for the "
-"partitions listed above."
+"Try to diagnose and fix any mounting errors that you find in the log for "
+"the partitions listed above."
 msgstr ""
 
 #: ../../porting/common-problems-run.rst:53
 msgid ""
-"Some devices have a ``vendor`` partition that contains proprietary libraries "
-"and executables required to run Android. If your device has this partition, "
-"make sure that it is mounted in addition to the others listed above."
+"Some devices have a ``vendor`` partition that contains proprietary "
+"libraries and executables required to run Android. If your device has "
+"this partition, make sure that it is mounted in addition to the others "
+"listed above."
 msgstr ""
 
 #: ../../porting/common-problems-run.rst:57
@@ -306,8 +308,8 @@ msgstr ""
 
 #: ../../porting/common-problems-run.rst:65
 msgid ""
-"If you have Wi-Fi working (See `the Halium docs for Wi-Fi`_), install the "
-"``libc6-dbg`` package first::"
+"If you have Wi-Fi working (See `the Halium docs for Wi-Fi`_), install the"
+" ``libc6-dbg`` package first::"
 msgstr ""
 
 #: ../../porting/common-problems-run.rst:70
@@ -316,11 +318,11 @@ msgstr ""
 
 #: ../../porting/common-problems-run.rst:76
 msgid ""
-"Use ``scp`` or a similar program to copy the ``usc.log``, ``usc-gdb.log``, "
-"and ``usc-logcat.log`` files from phablet's home folder to your computer. "
-"Then, post the content of these files to `paste.ubuntu.com`_, Pastebin, "
-"GitHub Gists, or a similar service so the people helping you can view them "
-"easily."
+"Use ``scp`` or a similar program to copy the ``usc.log``, ``usc-"
+"gdb.log``, and ``usc-logcat.log`` files from phablet's home folder to "
+"your computer. Then, post the content of these files to "
+"`paste.ubuntu.com`_, Pastebin, GitHub Gists, or a similar service so the "
+"people helping you can view them easily."
 msgstr ""
 
 #: ../../porting/common-problems-run.rst:79
@@ -336,8 +338,8 @@ msgstr ""
 
 #: ../../porting/common-problems-run.rst:83
 msgid ""
-"If you don't need apport's information and would rather have the programs "
-"crash faster while troubleshooting, issue the following commands::"
+"If you don't need apport's information and would rather have the programs"
+" crash faster while troubleshooting, issue the following commands::"
 msgstr ""
 
 #: ../../porting/installing-16-04.rst:2
@@ -347,21 +349,22 @@ msgstr ""
 #: ../../porting/installing-16-04.rst:6
 msgid ""
 "These steps  will wipe **all** of the data on your device. If there is "
-"anything that you would like to keep, ensure it is backed up and copied off "
-"of the device before continuing."
+"anything that you would like to keep, ensure it is backed up and copied "
+"off of the device before continuing."
 msgstr ""
 
 #: ../../porting/installing-16-04.rst:8
 msgid ""
-"Now that you've :doc:`built halium-boot <building-halium-boot>`, we're ready "
-"to install Ubuntu Touch on your device."
+"Now that you've :doc:`built halium-boot <building-halium-boot>`, we're "
+"ready to install Ubuntu Touch on your device."
 msgstr ""
 
 #: ../../porting/installing-16-04.rst:10
 msgid ""
 "In order to install Ubuntu Touch, you will need a recovery with Busybox, "
-"such as TWRP, installed on your phone. You will also need to ensure the /"
-"data partition is formatted with ext4 and does not have any encryption on it."
+"such as TWRP, installed on your phone. You will also need to ensure the "
+"/data partition is formatted with ext4 and does not have any encryption "
+"on it."
 msgstr ""
 
 #: ../../porting/installing-16-04.rst:13
@@ -371,8 +374,8 @@ msgstr ""
 #: ../../porting/installing-16-04.rst:15
 msgid ""
 "We'll need to install the halium-boot image before installing an image. "
-"Reboot your phone into fastboot mode, then do the following from your Halium "
-"tree::"
+"Reboot your phone into fastboot mode, then do the following from your "
+"Halium tree::"
 msgstr ""
 
 #: ../../porting/installing-16-04.rst:21
@@ -381,12 +384,13 @@ msgstr ""
 
 #: ../../porting/installing-16-04.rst:23
 msgid ""
-"Next we'll need to download the rootfs (root filesystem) that's appropriate "
-"for your device. Right now, we only have one available. Simply download "
-"``ubports-touch.rootfs-xenial-armhf.tar.gz`` from `our CI server <https://ci."
-"ubports.com/job/xenial-rootfs-armhf/>`__. If you have a 64-bit ARM (aarch64) "
-"device, this same rootfs should work for you. If you have an x86 device, let "
-"us know. We do not have a rootfs available for these yet."
+"Next we'll need to download the rootfs (root filesystem) that's "
+"appropriate for your device. Right now, we only have one available. "
+"Simply download ``ubports-touch.rootfs-xenial-armhf.tar.gz`` from `our CI"
+" server <https://ci.ubports.com/job/xenial-rootfs-armhf/>`__. If you have"
+" a 64-bit ARM (aarch64) device, this same rootfs should work for you. If "
+"you have an x86 device, let us know. We do not have a rootfs available "
+"for these yet."
 msgstr ""
 
 #: ../../porting/installing-16-04.rst:26
@@ -399,17 +403,18 @@ msgstr ""
 
 #: ../../porting/installing-16-04.rst:30
 msgid ""
-"Change the rootstock link to point to UBports once the actuallyfixit PR is "
-"merged."
+"Change the rootstock link to point to UBports once the actuallyfixit PR "
+"is merged."
 msgstr ""
 
 #: ../../porting/installing-16-04.rst:32
 msgid ""
 "Download the halium-install-standalone script from `jbbgameich/halium-"
-"install's releases <https://github.com/JBBgameich/halium-install/releases/"
-">`_ (`direct link to download <https://github.com/JBBgameich/halium-install/"
-"releases/download/continuous/halium-install-standalone.sh>`__). Boot your "
-"device into recovery and run the script as follows::"
+"install's releases <https://github.com/JBBgameich/halium-"
+"install/releases/>`_ (`direct link to download "
+"<https://github.com/JBBgameich/halium-"
+"install/releases/download/continuous/halium-install-standalone.sh>`__). "
+"Boot your device into recovery and run the script as follows::"
 msgstr ""
 
 #: ../../porting/installing-16-04.rst:36
@@ -425,24 +430,25 @@ msgstr ""
 #: ../../porting/installing-16-04.rst:41
 msgid ""
 "When your device boots, it will likely stay at the bootloader screen. "
-"However, you should also get a new network connection on the computer you "
-"have it plugged in to. We will use this to debug the system."
+"However, you should also get a new network connection on the computer you"
+" have it plugged in to. We will use this to debug the system."
 msgstr ""
 
 #: ../../porting/installing-16-04.rst:43
 msgid ""
-"To confirm that your device has booted correctly, run ``dmesg -w`` and watch "
-"for \"GNU/Linux device\" in the output. If you instead get something similar "
-"to \"Halium initrd Failed to boot\", please get in contact with us so we can "
-"find out why."
+"To confirm that your device has booted correctly, run ``dmesg -w`` and "
+"watch for \"GNU/Linux device\" in the output. If you instead get "
+"something similar to \"Halium initrd Failed to boot\", please get in "
+"contact with us so we can find out why."
 msgstr ""
 
 #: ../../porting/installing-16-04.rst:45
 msgid ""
-"Similar to the `Halium reference rootfs <http://docs.halium.org/en/latest/"
-"porting/debug-build/logging-in.html>`__, you should set your computer's IP "
-"on the newly connected RNDIS interface to ``10.15.19.100`` if you don't get "
-"one automatically. Then, run the following to access your device::"
+"Similar to the `Halium reference rootfs "
+"<http://docs.halium.org/en/latest/porting/debug-build/logging-"
+"in.html>`__, you should set your computer's IP on the newly connected "
+"RNDIS interface to ``10.15.19.100`` if you don't get one automatically. "
+"Then, run the following to access your device::"
 msgstr ""
 
 #: ../../porting/installing-16-04.rst:49
@@ -455,16 +461,16 @@ msgstr ""
 
 #: ../../porting/installing-16-04.rst:54
 msgid ""
-"If you have any errors while performing these steps, check see if any of the "
-"following suggestions match what you are seeing. If you have installed "
-"successfully, skip down to `Continue on`_."
+"If you have any errors while performing these steps, check see if any of "
+"the following suggestions match what you are seeing. If you have "
+"installed successfully, skip down to `Continue on`_."
 msgstr ""
 
 #: ../../porting/installing-16-04.rst:64
 msgid ""
-"Congratulations! Ubuntu Touch has now booted on your device. Move on to :doc:"
-"`running-ut` to learn about more specific steps you will need to take for a "
-"complete port."
+"Congratulations! Ubuntu Touch has now booted on your device. Move on to "
+":doc:`running-ut` to learn about more specific steps you will need to "
+"take for a complete port."
 msgstr ""
 
 #: ../../porting/introduction.rst:2
@@ -473,29 +479,29 @@ msgstr ""
 
 #: ../../porting/introduction.rst:5
 msgid ""
-"If you are looking for information on installing Ubuntu Touch on a supported "
-"device, or if you would like to check if your device is supported, please "
-"see `this page <https://devices.ubuntu-touch.io/>`_."
+"If you are looking for information on installing Ubuntu Touch on a "
+"supported device, or if you would like to check if your device is "
+"supported, please see `this page <https://devices.ubuntu-touch.io/>`_."
 msgstr ""
 
 #: ../../porting/introduction.rst:7
 msgid ""
-"This section will introduce you to some of the specifics of porting Ubuntu "
-"Touch to an Android device."
+"This section will introduce you to some of the specifics of porting "
+"Ubuntu Touch to an Android device."
 msgstr ""
 
 #: ../../porting/introduction.rst:9
 msgid ""
 "Before you begin, you'll want to head over to `the Halium porting guide "
-"<http://docs.halium.org/en/latest/porting/first-steps.html>`_ and get your "
-"``systemimage`` built without errors. Once you're at the point of installing "
-"a rootfs, you can come back here."
+"<http://docs.halium.org/en/latest/porting/first-steps.html>`_ and get "
+"your ``systemimage`` built without errors. Once you're at the point of "
+"installing a rootfs, you can come back here."
 msgstr ""
 
 #: ../../porting/introduction.rst:11
 msgid ""
-"Start at :doc:`building-halium-boot` if you'd like to install the UBports "
-"Ubuntu Touch 16.04 rootfs."
+"Start at :doc:`building-halium-boot` if you'd like to install the UBports"
+" Ubuntu Touch 16.04 rootfs."
 msgstr ""
 
 #: ../../porting/introduction.rst:25
@@ -504,10 +510,10 @@ msgstr ""
 
 #: ../../porting/introduction.rst:27
 msgid ""
-"If you're having trouble with the porting steps after building your Halium "
-"systemimage, check out the \"Common Problems\" section of the page you're "
-"stuck on. If none of the suggestions are helpful, you can get help from the "
-"community via the following channels:"
+"If you're having trouble with the porting steps after building your "
+"Halium systemimage, check out the \"Common Problems\" section of the page"
+" you're stuck on. If none of the suggestions are helpful, you can get "
+"help from the community via the following channels:"
 msgstr ""
 
 #: ../../porting/introduction.rst:29
@@ -528,19 +534,19 @@ msgstr ""
 
 #: ../../porting/running-ut.rst:4
 msgid ""
-"Now that you're logged in, there are a few more steps before Ubuntu Touch "
-"will be fully functional on your device."
+"Now that you're logged in, there are a few more steps before Ubuntu Touch"
+" will be fully functional on your device."
 msgstr ""
 
 #: ../../porting/running-ut.rst:7
-msgid "Make / writeable"
+msgid "Make / writable"
 msgstr ""
 
 #: ../../porting/running-ut.rst:9
 msgid ""
 "Before we make any changes to the rootfs (which will be required for the "
-"next steps), you'll need to remount it with write permissions. To do that, "
-"run the following command::"
+"next steps), you'll need to remount it with write permissions. To do "
+"that, run the following command::"
 msgstr ""
 
 #: ../../porting/running-ut.rst:14
@@ -556,9 +562,9 @@ msgstr ""
 
 #: ../../porting/running-ut.rst:21
 msgid ""
-"Now, reboot the device. If all has gone well, you will eventually see the "
-"Ubuntu Touch spinner followed by Unity 8. Your lock password is the same as "
-"you set for SSH."
+"Now, reboot the device. If all has gone well, you will eventually see the"
+" Ubuntu Touch spinner followed by Unity 8. Your lock password is the same"
+" as you set for SSH."
 msgstr ""
 
 #: ../../porting/running-ut.rst:24
@@ -567,9 +573,9 @@ msgstr ""
 
 #: ../../porting/running-ut.rst:26
 msgid ""
-"When the device boots, you'll probably notice that everything is very small. "
-"There are two variables that set the content scaling for Unity 8 and Ubuntu "
-"Touch applications: ``GRID_UNIT_PX`` and ``QTWEBKIT_DPR``."
+"When the device boots, you'll probably notice that everything is very "
+"small. There are two variables that set the content scaling for Unity 8 "
+"and Ubuntu Touch applications: ``GRID_UNIT_PX`` and ``QTWEBKIT_DPR``."
 msgstr ""
 
 #: ../../porting/running-ut.rst:28
@@ -580,12 +586,12 @@ msgstr ""
 
 #: ../../porting/running-ut.rst:30
 msgid ""
-"All of these settings are guessed by Unity 8 if none are set. There are many "
-"cases, however, where the guess is wrong (for example, very high resolution "
-"phone displays will be identified as desktop computers). To manually set a "
-"value for these variables, simply create a file at ``/etc/ubuntu-session.d/"
-"[codename].conf`` specifying them. For example, this is the file for the "
-"Nexus 7 tablet::"
+"All of these settings are guessed by Unity 8 if none are set. There are "
+"many cases, however, where the guess is wrong (for example, very high "
+"resolution phone displays will be identified as desktop computers). To "
+"manually set a value for these variables, simply create a file at ``/etc"
+"/ubuntu-session.d/[codename].conf`` specifying them. For example, this is"
+" the file for the Nexus 7 tablet::"
 msgstr ""
 
 #: ../../porting/running-ut.rst:38
@@ -598,14 +604,14 @@ msgstr ""
 
 #: ../../porting/running-ut.rst:43
 msgid ""
-"``GRID_UNIT_PX`` (Pixels per Grid Unit or Px/GU) is specific to each device. "
-"Its goal is to make the user interface of the system and its applications "
-"the same *perceived* size regardless of the device they are displayed on. It "
-"is primarily dependent on the pixel density of the device’s screen and the "
-"distance to the screen the user is at. The latter value cannot be "
-"automatically detected and is based on heuristics. We assume that tablets "
-"and laptops are the same distance and that they are held at 1.235 times the "
-"distance phones tend to be held at."
+"``GRID_UNIT_PX`` (Pixels per Grid Unit or Px/GU) is specific to each "
+"device. Its goal is to make the user interface of the system and its "
+"applications the same *perceived* size regardless of the device they are "
+"displayed on. It is primarily dependent on the pixel density of the "
+"device’s screen and the distance to the screen the user is at. The latter"
+" value cannot be automatically detected and is based on heuristics. We "
+"assume that tablets and laptops are the same distance and that they are "
+"held at 1.235 times the distance phones tend to be held at."
 msgstr ""
 
 #: ../../porting/running-ut.rst:45
@@ -616,11 +622,11 @@ msgstr ""
 
 #: ../../porting/running-ut.rst:47
 msgid ""
-"A reference device has been chosen from which we derive the values for all "
-"other devices. The reference device is a laptop with a 120ppi screen. "
-"However, there is no exact formula since these options are set for "
-"*perceived* size rather than *physical* size. Here are some values for other "
-"devices so you may derive the correct one for yours:"
+"A reference device has been chosen from which we derive the values for "
+"all other devices. The reference device is a laptop with a 120ppi screen."
+" However, there is no exact formula since these options are set for "
+"*perceived* size rather than *physical* size. Here are some values for "
+"other devices so you may derive the correct one for yours:"
 msgstr ""
 
 #: ../../porting/running-ut.rst:50
@@ -802,10 +808,10 @@ msgstr ""
 
 #: ../../porting/running-ut.rst:62
 msgid ""
-"Experiment with a few values to find one that feels good when compared to "
-"the Ubuntu Touch experience on other devices. If you are unsure of which is "
-"the best, share some pictures (including some object for scale) along with "
-"the device specs with us."
+"Experiment with a few values to find one that feels good when compared to"
+" the Ubuntu Touch experience on other devices. If you are unsure of which"
+" is the best, share some pictures (including some object for scale) along"
+" with the device specs with us."
 msgstr ""
 
 #: ../../porting/running-ut.rst:65
@@ -818,56 +824,74 @@ msgstr ""
 
 #: ../../porting/running-ut.rst:69
 msgid ""
-"``FORM_FACTOR`` specifies the device's form factor. This value is set as the "
-"device's Chassis, which you can find by running ``hostnamectl``. The "
-"acceptable values are ``handset``, ``tablet``, ``laptop`` and ``desktop``. "
-"Apps such as the gallery use this information to change their functionality. "
-"For more information on the Chassis, see `the freedesktop.org hostnamed "
-"specification`_."
+"``FORM_FACTOR`` specifies the device's form factor. This value is set as "
+"the device's Chassis, which you can find by running ``hostnamectl``. The "
+"acceptable values are ``handset``, ``tablet``, ``laptop`` and "
+"``desktop``. Apps such as the gallery use this information to change "
+"their functionality. For more information on the Chassis, see `the "
+"freedesktop.org hostnamed specification`_."
 msgstr ""
 
 #: ../../porting/running-ut.rst:71
 msgid ""
-"``NATIVE_ORIENTATION`` sets the display orientation for the device's built-"
-"in screen. This value is used whenever autorotation isn't working correctly "
-"or when an app wishes to be locked to the device's native orientation. "
-"Acceptable values are ``landscape``, which is normally used for tablets, "
-"laptops, and desktops; and ``portrait``, which is usually used for phone "
-"handsets."
+"``NATIVE_ORIENTATION`` sets the display orientation for the device's "
+"built-in screen. This value is used whenever autorotation isn't working "
+"correctly or when an app wishes to be locked to the device's native "
+"orientation. Acceptable values are ``landscape``, which is normally used "
+"for tablets, laptops, and desktops; and ``portrait``, which is usually "
+"used for phone handsets."
 msgstr ""
 
 #: ../../porting/running-ut.rst:76
 msgid ""
-"If you have any errors while performing these steps, check see if any of the "
-"following suggestions match what you are seeing. If you have completed these "
-"steps successfully, congratulations! You've reached the end of the porting "
-"guide for now. Try to check the functionality of your device by following "
-"the Smoke Testing information in :doc:`/contribute/quality-assurance`."
+"If you have any errors while performing these steps, check see if any of "
+"the following suggestions match what you are seeing. If you have "
+"completed these steps successfully, congratulations! You've reached the "
+"end of the porting guide for now. Try to check the functionality of your "
+"device by following the Smoke Testing information in :doc:`/contribute"
+"/quality-assurance`."
 msgstr ""
 
 #~ msgid ""
-#~ "Ubuntu Touch uses Upstart rather than Systemd for its init daemon. "
-#~ "Because of this, it is not fully Halium-compatible and is not able to use "
-#~ "the vanilla hybris-boot that Halium produces. For this reason, we need to "
-#~ "build ubports-boot."
+#~ "Ubuntu Touch uses Upstart rather than"
+#~ " Systemd for its init daemon. Because"
+#~ " of this, it is not fully "
+#~ "Halium-compatible and is not able to"
+#~ " use the vanilla hybris-boot that "
+#~ "Halium produces. For this reason, we "
+#~ "need to build ubports-boot."
 #~ msgstr ""
-#~ "Ubuntu Touch përdor Upstart në vend të Systemd si shërbim init. Prandaj, "
-#~ "nuk është plotësisht kompatibil me Halium dhe nuk mund të përdorë boot "
-#~ "origjinale hybris që Halium prodhon. Për këtë arsye, duhet të ndërtohet "
-#~ "një ubports-boot."
+#~ "Ubuntu Touch përdor Upstart në vend "
+#~ "të Systemd si shërbim init. Prandaj, "
+#~ "nuk është plotësisht kompatibil me "
+#~ "Halium dhe nuk mund të përdorë "
+#~ "boot origjinale hybris që Halium "
+#~ "prodhon. Për këtë arsye, duhet të "
+#~ "ndërtohet një ubports-boot."
 
 #~ msgid "Add source to Halium tree"
 #~ msgstr "Shto një burim në dosjen Halium"
 
 #~ msgid ""
-#~ "The first thing that needs to be done is adding the ubports-boot source "
-#~ "to your Halium tree. You may choose to do this by adding it to your local "
-#~ "manifests (recommended) or simply cloning it in place."
+#~ "The first thing that needs to be"
+#~ " done is adding the ubports-boot "
+#~ "source to your Halium tree. You "
+#~ "may choose to do this by adding"
+#~ " it to your local manifests "
+#~ "(recommended) or simply cloning it in"
+#~ " place."
 #~ msgstr ""
-#~ "Gjëja e parë që duhet të bëhet është shtimi i burimit ubports-boot në "
-#~ "pemën tuaj Halium. Ju mund të zgjidhni ta bëni këtë duke e shtuar atë në "
-#~ "manifestimet tuaja lokale (të rekomanduara) ose thjesht duke e klonuar "
-#~ "atë në vend."
+#~ "Gjëja e parë që duhet të bëhet "
+#~ "është shtimi i burimit ubports-boot "
+#~ "në pemën tuaj Halium. Ju mund të"
+#~ " zgjidhni ta bëni këtë duke e "
+#~ "shtuar atë në manifestimet tuaja lokale"
+#~ " (të rekomanduara) ose thjesht duke e"
+#~ " klonuar atë në vend."
 
 #~ msgid "Add to local manifest"
 #~ msgstr "Shtoni në manifest lokal"
+
+#~ msgid "Make / writeable"
+#~ msgstr ""
+

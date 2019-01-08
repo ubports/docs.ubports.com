@@ -8,14 +8,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-30 21:54-0500\n"
+"POT-Creation-Date: 2018-11-30 10:25-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ro\n"
+"Language-Team: ro <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100"
+" < 20)) ? 1 : 2)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.5.3\n"
+"Generated-By: Babel 2.6.0\n"
 
 #: ../../index.rst:2
 msgid "Welcome to the UBports documentation!"
@@ -95,14 +98,17 @@ msgid "Contribute"
 msgstr ""
 
 #: ../../index.rst:50
-msgid "App development"
+msgid "Development"
 msgstr ""
 
-#: ../../index.rst:57
+#: ../../index.rst:58
 msgid "Porting"
 msgstr ""
 
-#: ../../index.rst:64
+#: ../../index.rst:65
 msgid "Platform"
 msgstr ""
+
+#~ msgid "App development"
+#~ msgstr ""
 

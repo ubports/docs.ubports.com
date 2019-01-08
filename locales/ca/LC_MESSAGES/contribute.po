@@ -7,18 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-30 21:23-0500\n"
+"POT-Creation-Date: 2018-11-30 10:25-0600\n"
 "PO-Revision-Date: 2018-04-08 15:48+0000\n"
 "Last-Translator: Walter Garcia-Fontes <walter.garcia@upf.edu>\n"
-"Language-Team: Catalan <https://translate.ubports.com/projects/ubports-docs"
-"/documentation-contribute/ca/>\n"
 "Language: ca\n"
+"Language-Team: Catalan <https://translate.ubports.com/projects/ubports-"
+"docs/documentation-contribute/ca/>\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.15\n"
-"Generated-By: Babel 2.5.3\n"
+"Generated-By: Babel 2.6.0\n"
 
 #: ../../contribute/bugreporting.rst:2
 msgid "Bug reporting"
@@ -329,8 +328,9 @@ msgid "Documentation guidelines"
 msgstr "Directrius de la documentació"
 
 #: ../../contribute/documentation.rst:12
+#, fuzzy
 msgid ""
-"These rules govern *how* you should write your documentation to avoid "
+"These rules govern how you should write your documentation to avoid "
 "problems with style, format, or linking. If you don't follow these "
 "guidelines, we will not accept your document."
 msgstr ""
@@ -343,10 +343,10 @@ msgid "Title"
 msgstr "Títol"
 
 #: ../../contribute/documentation.rst:17
+#, fuzzy
 msgid ""
 "All pages must have a document title that will be shown in the table of "
-"contents (left sidebar) and at the top of the page. This title is "
-"underlined with equals signs."
+"contents (left sidebar) and at the top of the page."
 msgstr ""
 "Totes les pàgines han de tenir un títol de document que mostrarà a la "
 "taula de continguts (barra lateral esquerra) i a la part superior de la "
@@ -366,11 +366,71 @@ msgstr ""
 "segueix, però fer títol amb frases és senzill. Això ajuda a mantenir les "
 "majúscules consistents a la taula de continguts."
 
-#: ../../contribute/documentation.rst:31
+#: ../../contribute/documentation.rst:30
+msgid ""
+"Page titles are underlined with equals signs. For example, the markup for"
+" :doc:`./bugreporting` includes the following title:"
+msgstr ""
+
+#: ../../contribute/documentation.rst:37
+msgid "Note that:"
+msgstr ""
+
+#: ../../contribute/documentation.rst:39
+msgid "The title is sentence cased"
+msgstr ""
+
+#: ../../contribute/documentation.rst:40
+msgid "The title is underlined with equals signs"
+msgstr ""
+
+#: ../../contribute/documentation.rst:41
+msgid "The underline spans the title completely without going over"
+msgstr ""
+
+#: ../../contribute/documentation.rst:43
+msgid "Incorrect examples of titles include:"
+msgstr ""
+
+#: ../../contribute/documentation.rst:45
+msgid "Incorrect casing"
+msgstr ""
+
+#: ../../contribute/documentation.rst:52
+msgid "Underline too short"
+msgstr ""
+
+#: ../../contribute/documentation.rst:59
+msgid "Underline too long"
+msgstr ""
+
+#: ../../contribute/documentation.rst:68
+#, fuzzy
+msgid "Headings"
+msgstr "Advertiments"
+
+#: ../../contribute/documentation.rst:70
+msgid ""
+"There are several levels of headings that you may place on your page. "
+"These levels are shown here in order:"
+msgstr ""
+
+#: ../../contribute/documentation.rst:86
+msgid ""
+"Each heading level creates a sub-section in the global table of contents "
+"tree available when the documentation is built. In the primary (web) "
+"version of the documentation, this only shows four levels deep from the "
+"top level of the documentation. Please refrain from using more heading "
+"levels than will show in this tree as it makes navigating your document "
+"difficult. If you must use this many heading levels, it is a good sign "
+"that your document should be split up into multiple pages."
+msgstr ""
+
+#: ../../contribute/documentation.rst:89
 msgid "Table of contents"
 msgstr "Taula de continguts"
 
-#: ../../contribute/documentation.rst:33
+#: ../../contribute/documentation.rst:91
 msgid ""
 "People can't navigate to your new page if they can't find it. Neither can"
 " Sphinx. That's why you need to add new pages to Sphinx's table of "
@@ -380,19 +440,20 @@ msgstr ""
 "no pot l'Sphinx. És per això que heu d'afegir pàgines noves a la taula de"
 " continguts de l'Sphinx."
 
-#: ../../contribute/documentation.rst:35
+#: ../../contribute/documentation.rst:93
+#, fuzzy
 msgid ""
 "You can do this by adding the page to the ``index.rst`` file in the same "
 "directory that you created it. For example, if you create a file called "
 "\"newpage.rst\", you would add the line marked with a chevron (>) in the "
-"nearest index::"
+"nearest index:"
 msgstr ""
 "Això ho podeu fer afegint la pàgina al  fitxer``index.rst`` al mateix "
 "directori on el vau crear. Per exemple, si creeu un fitxer anomenat "
 "«paginanova.rst», afegiríeu la línia marcada amb un signe de més gran (>)"
 " a l'índex més proper::"
 
-#: ../../contribute/documentation.rst:45
+#: ../../contribute/documentation.rst:105
 msgid ""
 "The order matters. If you would like your page to appear in a certain "
 "place in the table of contents, place it there. In the previous example, "
@@ -402,18 +463,19 @@ msgstr ""
 "determinat de la taula de continguts, ubiqueu-la allà. A l'exemple "
 "anterior, paginanova s'afegiria al final de la taula de continguts."
 
-#: ../../contribute/documentation.rst:48
+#: ../../contribute/documentation.rst:108
 msgid "Warnings"
 msgstr "Advertiments"
 
-#: ../../contribute/documentation.rst:50
+#: ../../contribute/documentation.rst:110
+#, fuzzy
 msgid ""
 "Your edits must not introduce any warnings into the documentation build. "
 "If any warnings occur, the build will fail and your pull request will be "
 "marked with a red 'X'. Please ensure that your RST is valid and correct "
 "before you create a pull request. This is done automatically (via sphinx-"
-"build crashing with your error) if you follow our build instructions "
-"below."
+"build crashing with your error) if you follow :ref:`our build "
+"instructions <doc-contribution-workflow>` below."
 msgstr ""
 "Les vostres edicions no han d'introduir cap advertiment a la compilació "
 "de la documentació. Si es produeix cap advertiment, la compilació fallarà"
@@ -423,32 +485,30 @@ msgstr ""
 "de sphinx-build amb el vostre error) si seguiu les nostres instruccions "
 "de compilació de sota."
 
-#: ../../contribute/documentation.rst:53
-msgid "Update translations"
-msgstr "Actualització de les traduccions"
-
-#: ../../contribute/documentation.rst:55
-msgid ""
-"You must update the translation files to match your changes before you "
-"commit them. To do this, run ``update-translations.sh`` in this "
-"repository."
+#: ../../contribute/documentation.rst:114
+msgid "Line length"
 msgstr ""
-"Heu d'actualitzar els fitxers de traducció abans de pujar-los. Per fer això, "
-"executeu ``update-translations.sh`` a aquest repositori."
 
-#: ../../contribute/documentation.rst:58
+#: ../../contribute/documentation.rst:116
+msgid ""
+"There is no restriction on line length in this repository. Please do not "
+"break lines at an arbitrary line length. Instead, turn on word wrap in "
+"your text editor."
+msgstr ""
+
+#: ../../contribute/documentation.rst:121
 msgid "Contribution workflow"
 msgstr "Flux de treball de les contribucions"
 
-#: ../../contribute/documentation.rst:60
+#: ../../contribute/documentation.rst:123
 msgid ""
 "The following steps will help you to make a contribution to this "
 "documentation after you have written a document."
 msgstr ""
-"Després que hàgiu escrit un document, els passos següents us ajudaran a fer "
-"una contribució a aquesta documentació."
+"Després que hàgiu escrit un document, els passos següents us ajudaran a "
+"fer una contribució a aquesta documentació."
 
-#: ../../contribute/documentation.rst:63
+#: ../../contribute/documentation.rst:126
 msgid ""
 "You will need a GitHub account to complete these steps. If you do not "
 "have one, click `here <https://github.com/join>`_ to begin the process of"
@@ -458,11 +518,11 @@ msgstr ""
 "teniu una, cliqueu `aquí <https://github.com/join>`_ per començar el "
 "procés de crear un compte."
 
-#: ../../contribute/documentation.rst:66
+#: ../../contribute/documentation.rst:129
 msgid "Forking the repository"
 msgstr "Bifurcació del repositori"
 
-#: ../../contribute/documentation.rst:68
+#: ../../contribute/documentation.rst:131
 msgid ""
 "You can make more advanced edits to our documentation by forking "
 "`ubports/docs.ubports.com <https://github.com/ubports/docs.ubports.com>`_"
@@ -476,11 +536,11 @@ msgstr ""
 "guia del GitHub a  `bifurcació de projectes "
 "<https://guides.github.com/activities/forking/>`_."
 
-#: ../../contribute/documentation.rst:71
+#: ../../contribute/documentation.rst:134
 msgid "Building the documentation"
 msgstr "Compilació de la documentació"
 
-#: ../../contribute/documentation.rst:73
+#: ../../contribute/documentation.rst:136
 msgid ""
 "If you'd like to build this documentation *before* sending a PR (which "
 "you should), follow these instructions on your *local copy* of your fork "
@@ -490,17 +550,17 @@ msgstr ""
 "baixada (cosa que hauríeu de fer), seguiu aquestes instruccions a la "
 "*còpia local* de la vostra bifurcació del repositori."
 
-#: ../../contribute/documentation.rst:75
+#: ../../contribute/documentation.rst:138
 msgid ""
 "The documentation can be built by running ``./build.sh`` in the root of "
 "this repository. The script will also create a virtual build environment "
 "in ``~/ubportsdocsenv`` if none is present."
 msgstr ""
-"Es pot compilar la documentació executant ``./build.sh`` a l'arrel d'aquest "
-"repositori. L'script crearà també un entorn virtual de compilació a "
-"``~/ubportsdocsenv``, si no n'hi ha cap present."
+"Es pot compilar la documentació executant ``./build.sh`` a l'arrel "
+"d'aquest repositori. L'script crearà també un entorn virtual de "
+"compilació a ``~/ubportsdocsenv``, si no n'hi ha cap present."
 
-#: ../../contribute/documentation.rst:77
+#: ../../contribute/documentation.rst:140
 msgid ""
 "If all went well, you can enter the ``_build/html`` directory and open "
 "``index.html`` to view the UBports documentation."
@@ -508,48 +568,40 @@ msgstr ""
 "Si tot ha anat bé, podeu entrar el directori ``_build/html`` i obrir "
 "``index.html`` per veure la documentació de l'UBports."
 
-#: ../../contribute/documentation.rst:79
+#: ../../contribute/documentation.rst:142
 msgid ""
 "If you have trouble building the docs, the first thing to try is deleting"
 " the build environment. Run ``rm -r ~/ubportsdocsenv`` and try the build "
 "again. Depending on when you first used the build script, you may need to"
 " run the ``rm`` command with ``sudo``."
 msgstr ""
-"Si teniu algun problema en la compilació dels documents, el primer a provar "
-"és eliminar l'entorn de compilació. Executeu ``rm -r ~/ubportsdocsenv`` i "
-"proveu un altre cop la compilació. Depenent de quan vau usar l'script de "
-"compilació per primer cop, potser haureu d'executar l'ordre ``rm`` amb "
-"``sudo``."
+"Si teniu algun problema en la compilació dels documents, el primer a "
+"provar és eliminar l'entorn de compilació. Executeu ``rm -r "
+"~/ubportsdocsenv`` i proveu un altre cop la compilació. Depenent de quan "
+"vau usar l'script de compilació per primer cop, potser haureu d'executar "
+"l'ordre ``rm`` amb ``sudo``."
 
-#: ../../contribute/documentation.rst:81
-msgid ""
-"Remember to `update translations`_, then commit your changes and submit a"
-" pull request."
-msgstr ""
-"Recordeu-vos de `update translations`_, després pugeu els vostres canvis i "
-"envieu una sol·licitud d'incorporació de canvis."
-
-#: ../../contribute/documentation.rst:84
+#: ../../contribute/documentation.rst:145
 msgid "Alternative methods to contribute"
 msgstr "Mètodes alternatius per contribuir"
 
-#: ../../contribute/documentation.rst:87 ../../contribute/translations.rst:2
+#: ../../contribute/documentation.rst:148 ../../contribute/translations.rst:2
 msgid "Translations"
 msgstr "Traduccions"
 
-#: ../../contribute/documentation.rst:89
+#: ../../contribute/documentation.rst:150
 msgid ""
 "You may find the components of this document to translate at `its project"
 " in UBports Weblate`_."
 msgstr ""
-"Podeu trobar els components d'aquest document per traduir a `its project in "
-"UBports Weblate`_."
+"Podeu trobar els components d'aquest document per traduir a `its project "
+"in UBports Weblate`_."
 
-#: ../../contribute/documentation.rst:92
+#: ../../contribute/documentation.rst:153
 msgid "Writing documents not in RST format"
 msgstr "Escriptura de documents en formats diferents al RST"
 
-#: ../../contribute/documentation.rst:94
+#: ../../contribute/documentation.rst:155
 msgid ""
 "If you would like to write documents for UBports but are not comfortable "
 "writing ReStructuredText, please write it without formatting and post it "
@@ -557,17 +609,17 @@ msgid ""
 " will be able to help you revise your draft and write the required "
 "ReStructuredText."
 msgstr ""
-"Si volguéssiu escriure documents per a l'UBports però no us agrada escriure "
-"RestructuredText, si us plau escriviu-lo sense format i publiqueu-lo al `"
-"UBports Forum`_ a la secció rellevant (probablement General). Algú us podrà "
-"ajudar a revisar el vostre esborrany i a escriure el ReStructuredText "
-"requerit."
+"Si volguéssiu escriure documents per a l'UBports però no us agrada "
+"escriure RestructuredText, si us plau escriviu-lo sense format i "
+"publiqueu-lo al `UBports Forum`_ a la secció rellevant (probablement "
+"General). Algú us podrà ajudar a revisar el vostre esborrany i a escriure"
+" el ReStructuredText requerit."
 
-#: ../../contribute/documentation.rst:97
+#: ../../contribute/documentation.rst:158
 msgid "Uncomfortable with Git"
 msgstr "Incomoditat amb Git"
 
-#: ../../contribute/documentation.rst:99
+#: ../../contribute/documentation.rst:160
 msgid ""
 "If you've written a complete document in ReStructuredText but aren't "
 "comfortable using Git or GitHub, please post it on the `UBports Forum`_ "
@@ -575,31 +627,28 @@ msgid ""
 "you revise your draft and submit it to this documentation."
 msgstr ""
 "Si heu escrit un document complet amb el ReStructredText però no teniu "
-"comoditat usant Git o GitHub, si us plau publiqueu-lo al `UBports Forum`_ a "
-"la secció rellevant (probablement General). Algú us podrà ajudar a revisar "
-"el vostre esborrany i a pujar-lo a aquesta documentació."
+"comoditat usant Git o GitHub, si us plau publiqueu-lo al `UBports Forum`_"
+" a la secció rellevant (probablement General). Algú us podrà ajudar a "
+"revisar el vostre esborrany i a pujar-lo a aquesta documentació."
 
-#: ../../contribute/documentation.rst:102
+#: ../../contribute/documentation.rst:163
 msgid "Current TODOs"
 msgstr "PER FER actuals"
 
-#: ../../contribute/documentation.rst:104
+#: ../../contribute/documentation.rst:165
+#, fuzzy
 msgid ""
-"This page lists the TODOs that have been included in this documentation. "
-"If you know how to fix one, please send us a Pull Request to make it "
-"better!"
+"This section lists the TODOs that have been included in this "
+"documentation. If you know how to fix one, please send us a Pull Request "
+"to make it better!"
 msgstr ""
-"Aquesta pàgina presenta una llista dels PER FER que s'han inclòs a aquesta "
-"documentació. Si sabeu com arreglar un PER FER, si us plau envieu-nos una "
-"demanda d'incorporació de canvis per fer-lo millor!"
+"Aquesta pàgina presenta una llista dels PER FER que s'han inclòs a "
+"aquesta documentació. Si sabeu com arreglar un PER FER, si us plau "
+"envieu-nos una demanda d'incorporació de canvis per fer-lo millor!"
 
-#: ../../contribute/documentation.rst:111
+#: ../../contribute/documentation.rst:167
 msgid "To create a todo, add this markup to your page::"
 msgstr "Per crear un per fer, afegiu aquest marcatge a la vostra pàgina::"
-
-#: ../../contribute/documentation-todo.rst:3
-msgid "Documentation TODOs"
-msgstr "PER FER de la documentació"
 
 #: ../../contribute/index.rst:2
 msgid "Contributing to UBports"
@@ -657,6 +706,237 @@ msgstr ""
 "La vostra contribució finança la nostra infraestructura de servidors i "
 "els nostres serveis de depuració, i ajuda a cobrir costos addicionals."
 
+#: ../../contribute/preinstalled-apps.rst:2
+msgid "Preinstalled apps"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:4
+msgid ""
+"This page will help you get started with developing the apps which are "
+"included with Ubuntu Touch."
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:7
+msgid "Core apps"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:9
+msgid ""
+"Core apps are applications which are included with UBports distributions "
+"of Ubuntu Touch **and** placed in the OpenStore for updates. Core apps "
+"are a good \"first development\" experience within UBports. Many are "
+"built with `Clickable`_, an easy to use build and test system for Ubuntu "
+"Touch apps. Most core apps can even be built and run without an Ubuntu "
+"Touch device!"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:12
+msgid "Which core apps currently exist?"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:14
+msgid "A full list of the Ubuntu Touch core apps follows."
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:21
+msgid "Application Name"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:21
+msgid "Store page"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:21
+#, fuzzy
+msgid "Code repository"
+msgstr "Bifurcació del repositori"
+
+#: ../../contribute/preinstalled-apps.rst:23
+msgid "Calculator"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:23
+msgid "`Calculator on OpenStore`_"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:23
+msgid "`calculator-app on GitHub`_"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:24
+msgid "Calendar"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:24
+msgid "`Calendar on OpenStore`_"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:24
+msgid "`calendar-app on GitHub`_"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:25
+msgid "Clock"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:25
+msgid "`Clock on OpenStore`_"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:25
+msgid "`clock-app on GitHub`_"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:26
+msgid "File Manager"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:26
+msgid "`File Manager on OpenStore`_"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:26
+msgid "`filemanager-app on GitHub`_"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:27
+msgid "Gallery"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:27
+msgid "`Gallery on OpenStore`_"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:27
+msgid "`gallery-app on GitHub`_"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:28
+msgid "Music"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:28
+#: ../../contribute/preinstalled-apps.rst:33
+msgid "Not yet in OpenStore"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:28
+msgid "`music-app on GitHub`_"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:29
+msgid "Notes"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:29
+msgid "`Notes on OpenStore`_"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:29
+msgid "`notes-app on GitHub`_"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:30
+msgid "OpenStore"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:30
+msgid "`OpenStore... on OpenStore`_"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:30
+msgid "`openstore-app on GitHub`_"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:31
+msgid "Terminal"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:31
+msgid "`Terminal on OpenStore`_"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:31
+msgid "`terminal-app on GitHub`_"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:32
+#, fuzzy
+msgid "UBports Welcome"
+msgstr "Weblate de l'UBports"
+
+#: ../../contribute/preinstalled-apps.rst:32
+msgid "`UBports Welcome on OpenStore`_"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:32
+msgid "`ubports-app on GitHub`_"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:33
+msgid "Weather"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:33
+msgid "`weather-app on GitHub`_"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:37
+msgid "Other preinstalled apps"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:39
+msgid ""
+"The following appplications are preinstalled in Ubuntu Touch but are not "
+"considered core apps. Most of the time these projects must be updated "
+"with the system because they use many system services which do not "
+"necessarily have a stable API."
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:41
+msgid ""
+"These apps may be more difficult to work with, but their repository "
+"should contain a document stating how to build and run them on a device."
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:45
+msgid "Browser (`morph-browser on GitHub`_)"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:46
+msgid "Contacts (`address-book-app on GitHub`_)"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:47
+msgid "Camera (`camera-app on GitHub`_)"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:48
+msgid "External Drives (`ciborium on GitHub`_)"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:49
+msgid "Media Player (`mediaplayer-app on GitHub`_)"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:50
+msgid "Messaging (`messaging-app on GitHub`_)"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:51
+msgid "Phone (`dialer-app on GitHub`_)"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:52
+msgid "System Settings (`system-settings on GitHub`_)"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:54
+msgid ""
+"Instructions for contributing to these applications can be found in their"
+" respective repositories."
+msgstr ""
+
 #: ../../contribute/quality-assurance.rst:2
 msgid "Quality Assurance"
 msgstr "Control de qualitat"
@@ -703,13 +983,14 @@ msgid "Confirming bug reports"
 msgstr "Confirmació d'informes d'error"
 
 #: ../../contribute/quality-assurance.rst:14
+#, fuzzy
 msgid ""
 "Unconfirmed bugreports are labeld **needs confirmation** to enable "
 "`global filtering <https://github.com/ubports/ubuntu-"
 "touch/issues?q=is%3Aissue+is%3Aopen+label%3A%22needs+confirmation%22>`__."
 " Browse through the list, read the bugreports and try to reproduce the "
-"issues that are described. If neccessary, add :doc:`missing information "
-"or logs, or improve the quality of the report by other means "
+"issues that are described. If necessary, add :doc:`missing information or"
+" logs, or improve the quality of the report by other means "
 "<bugreporting>`. Leave a comment stating your device, channel, build "
 "number and whether or not you were able to reproduce the issue."
 msgstr ""
@@ -725,10 +1006,11 @@ msgstr ""
 "problema."
 
 #: ../../contribute/quality-assurance.rst:16
+#, fuzzy
 msgid ""
 "If you have write-access to the repository, you can replace the **needs "
 "confirmation** label with **bug** (to mark it confirmed) or **invalid** "
-"(if the issue is definitely not reproducable). In that case it should be "
+"(if the issue is definitely not reproducible). In that case it should be "
 "closed."
 msgstr ""
 "Si teniu permís d'escriptura al repositori, podeu reemplaçar l'etiqueta "
@@ -752,34 +1034,30 @@ msgstr "Comprovació de pegats"
 
 #: ../../contribute/quality-assurance.rst:23
 msgid ""
-"Once a developer finished working on an issue, it's moved to the quality "
-"assurance column of the `GitHub project <https://github.com/ubports"
-"/ubuntu-touch/projects/3>`__. Check if the issue is still present in the "
-"latest update on the devel channel and try to find any problems it is "
-"causing. Check if the developer mentioned specific things to look out for"
-" when testing and leave a comment detailing your experience. If you have "
-"write-access to the repository, you can move the issue back to **In "
-"Development** or forward to **Release Candidate** as specified by the "
+"Pull-requests can be tested using the `QA scripts "
+"<https://github.com/ubports/ubports-qa-scripts>`_. Run ``ubports-qa -h`` "
+"for usage information."
+msgstr ""
+
+#: ../../contribute/quality-assurance.rst:25
+msgid ""
+"Once the pull-request has been merged, the issue it fixes is moved to the"
+" quality assurance column of the `GitHub project "
+"<https://github.com/ubports/ubuntu-touch/projects/3>`__. Please check if "
+"the issues in this column are still present in the latest update on the "
+"devel channel, then see if anything else has broken in the update. Check "
+"if the developer mentioned specific things to look out for when testing "
+"and leave a comment detailing your experience. If you have write-access "
+"to the repository, you can move the issue back to **In Development** (and"
+" reopen it) or forward to **Release Candidate** as specified by the "
 ":doc:`issue tracking guidelines </about/process/issue-tracking>`."
 msgstr ""
-"Un cop s'ha acabat el treball de desenvolupament d'un problema, es mou a "
-"la columna de control de qualitat del `projecte GitHub "
-"<https://github.com/ubports/ubuntu-touch/projects/3>`__. Comproveu si el "
-"problema encara és present a l'actualització més recent al canal de "
-"desenvolupament i intenteu trobar qualsevol problema que estigui causant."
-" Cliqueu si la persona desenvolupadora va mencionar coses específiques "
-"per mirar quan es facin les comprovacions i deixeu un comentari "
-"descrivint amb detall la vostra experiència. Si teniu permís d'escriptura"
-" al repositori, podeu retornar el problema a **In Development** (en "
-"desenvolupament) o avançar-lo a **Release Candidate** (candidat a "
-"l'alliberament) com s'especifica a :doc:`directrius de seguiment de "
-"problemes </about/process/issue-tracking>`."
 
-#: ../../contribute/quality-assurance.rst:26
+#: ../../contribute/quality-assurance.rst:28
 msgid "Initial triaging of issues"
 msgstr "Triatge inicial de problemes"
 
-#: ../../contribute/quality-assurance.rst:28
+#: ../../contribute/quality-assurance.rst:30
 msgid ""
 "Initial triaging of new issues is done by QA-team members with write-"
 "access to the repository. If a new issue is filed, read the report and "
@@ -794,7 +1072,7 @@ msgstr ""
 "</about/process/issue-tracking>`. Podeu començar immediatament a "
 "confirmar l'informe d'error."
 
-#: ../../contribute/quality-assurance.rst:30
+#: ../../contribute/quality-assurance.rst:32
 msgid ""
 "If the new issue has already been reported elsewhere, label it "
 "**duplicate** and close it."
@@ -1106,3 +1384,74 @@ msgstr "Aneu a aquest enllaç per conèixer que significa exactament això."
 
 #~ msgid "Remember to `update translations`_ before committing your changes."
 #~ msgstr ""
+
+#~ msgid "Update translations"
+#~ msgstr "Actualització de les traduccions"
+
+#~ msgid ""
+#~ "You must update the translation files"
+#~ " to match your changes before you "
+#~ "commit them. To do this, run "
+#~ "``update-translations.sh`` in this repository."
+#~ msgstr ""
+#~ "Heu d'actualitzar els fitxers de "
+#~ "traducció abans de pujar-los. Per "
+#~ "fer això, executeu ``update-translations.sh``"
+#~ " a aquest repositori."
+
+#~ msgid ""
+#~ "Remember to `update translations`_, then "
+#~ "commit your changes and submit a "
+#~ "pull request."
+#~ msgstr ""
+#~ "Recordeu-vos de `update translations`_, "
+#~ "després pugeu els vostres canvis i "
+#~ "envieu una sol·licitud d'incorporació de "
+#~ "canvis."
+
+#~ msgid "Documentation TODOs"
+#~ msgstr "PER FER de la documentació"
+
+#~ msgid ""
+#~ "Once a developer finished working on "
+#~ "an issue, it's moved to the "
+#~ "quality assurance column of the `GitHub"
+#~ " project <https://github.com/ubports/ubuntu-"
+#~ "touch/projects/3>`__. Check if the issue "
+#~ "is still present in the latest "
+#~ "update on the devel channel and "
+#~ "try to find any problems it is "
+#~ "causing. Check if the developer "
+#~ "mentioned specific things to look out"
+#~ " for when testing and leave a "
+#~ "comment detailing your experience. If "
+#~ "you have write-access to the "
+#~ "repository, you can move the issue "
+#~ "back to **In Development** or forward"
+#~ " to **Release Candidate** as specified "
+#~ "by the :doc:`issue tracking guidelines "
+#~ "</about/process/issue-tracking>`."
+#~ msgstr ""
+#~ "Un cop s'ha acabat el treball de"
+#~ " desenvolupament d'un problema, es mou "
+#~ "a la columna de control de "
+#~ "qualitat del `projecte GitHub "
+#~ "<https://github.com/ubports/ubuntu-touch/projects/3>`__. "
+#~ "Comproveu si el problema encara és "
+#~ "present a l'actualització més recent al"
+#~ " canal de desenvolupament i intenteu "
+#~ "trobar qualsevol problema que estigui "
+#~ "causant. Cliqueu si la persona "
+#~ "desenvolupadora va mencionar coses "
+#~ "específiques per mirar quan es facin "
+#~ "les comprovacions i deixeu un comentari"
+#~ " descrivint amb detall la vostra "
+#~ "experiència. Si teniu permís d'escriptura "
+#~ "al repositori, podeu retornar el "
+#~ "problema a **In Development** (en "
+#~ "desenvolupament) o avançar-lo a "
+#~ "**Release Candidate** (candidat a "
+#~ "l'alliberament) com s'especifica a "
+#~ ":doc:`directrius de seguiment de problemes "
+#~ "</about/process/issue-tracking>`."
+
