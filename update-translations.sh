@@ -15,13 +15,16 @@ if [ -d "$HOME/ubportsdocsenv" ]; then
 else
   echo -e "${RED}No build environment found.${PLAIN}"
   echo -e "${YELLOW}Installing pip and virtualenv.${PLAIN}"
-  sudo apt install python-pip
-  sudo -H pip install virtualenv
+  sudo apt install python3-pip python3-virtualenv
   echo -e "${YELLOW}Creating a virtual environment in ${HOME}/ubportsdocsenv.${PLAIN}"
-  virtualenv ~/ubportsdocsenv
+  python3 -m virtualenv ~/ubportsdocsenv --python=python3
   . ~/ubportsdocsenv/bin/activate
   echo -e "${YELLOW}Installing build tools and prerequisites.${PLAIN}"
   pip install sphinx sphinx_rtd_theme sphinx-intl
 fi
 echo -e "${GREEN}Building...${PLAIN}"
 sphinx-build -Wa . locales/pot -b gettext -j `nproc --all`
+echo -e "${GREEN}Building po-files${PLAIN}"
+for LANGUAGE in $LANGUAGES; do
+  sphinx-intl update -l $LANGUAGE || echo -e "${YELLOW}Failed to rebuild $LANGUAGE, continuing anyway${PLAIN}"
+done 
