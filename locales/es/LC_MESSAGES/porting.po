@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-08-28 14:00+0200\n"
-"PO-Revision-Date: 2019-01-13 16:38+0000\n"
+"PO-Revision-Date: 2019-01-14 22:11+0000\n"
 "Last-Translator: Josué <j2g2rp@gmail.com>\n"
 "Language-Team: Spanish <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-porting/es/>\n"
@@ -130,9 +130,8 @@ msgid ""
 "Once halium-boot is in place, you can build it quite simply. You will also "
 "need to rebuild system.img due to our changes."
 msgstr ""
-"Una vez que halium-boot está en su lugar, puede construirlo muy "
-"sencillamente. También necesitará reconstruir system.img debido a nuestros "
-"cambios."
+"Una vez que halium-boot está en su lugar, puede construirlo sencillamente. "
+"También necesitará reconstruir system.img debido a nuestros cambios."
 
 #: ../../porting/building-halium-boot.rst:35
 msgid "``cd`` to your Halium BUILDDIR"
@@ -176,7 +175,7 @@ msgid ""
 "This page details problems commonly faced while following the :doc:"
 "`installing-16-04` page."
 msgstr ""
-"Esta página detalla problemas comunmente encontrados mientras se sigue la "
+"Esta página detalla problemas comúnmente encontrados mientras se sigue la "
 "página  :doc:`installing-16-04` ."
 
 #: ../../porting/common-problems-install.rst:12
@@ -190,7 +189,7 @@ msgid ""
 "prompt. If you run ``ssh -vvvv phablet@10.15.19.82``, you only get the "
 "following output before the program stops::"
 msgstr ""
-"La conexión SSH se puede caer indefinidamente cuando intenta conectar. "
+"La conexión SSH se puede colgar indefinidamente cuando intenta conectar. "
 "Intentar parar la conexión con Control-C puede, o no, devolverle al cursor "
 "de la línea de comandos. Si ejecuta `ssh -vvvv phablet@10.15.19.82`` sólo "
 "obtendrá la siguiente salida antes de que el programa se detenga::"
@@ -242,9 +241,9 @@ msgid ""
 "crashing repeatedly. The system watchdog process sees this and reboots the "
 "device."
 msgstr ""
-"Esto ocurre por que ``lightdm``, el gestor de pantalla de Ubuntu Touch se "
-"está colgando repetidamente. El proceso del sistema watchdog («perro "
-"guardián») lo detecta y reinicia el dispositivo."
+"Esto ocurre por que ``lightdm``, el gestor de pantalla de Ubuntu Touch se se "
+"está cerrando de forma inesperada repetidamente. El proceso del sistema "
+"watchdog («perro guardián») lo detecta y reinicia el dispositivo."
 
 #: ../../porting/common-problems-install.rst:47
 msgid ""
@@ -276,21 +275,21 @@ msgid ""
 "it is likely that you have a problem with graphical applications crashing. "
 "See `Mir servers crash`_ for more information."
 msgstr ""
-"Si nada se muestra en la pantalla incluso después de añadir reglas udev a su "
-"portado es como si tuviese un problema con las aplicaciones gráficas que se "
-"cuelgan. Vea  `Mir servers crash`_para mas información."
+"Si no se muestra nada en la pantalla incluso después de añadir reglas udev a "
+"su portado es como si tuviese un problema con las aplicaciones gráficas que "
+"se cierran inesperadamente. Vea  `Mir servers crash`_para mas información."
 
 #: ../../porting/common-problems-run.rst:12
 msgid "Mir servers crash"
-msgstr "Cuelgues del servidor Mir"
+msgstr "Cierres inesperados del servidor Mir"
 
 #: ../../porting/common-problems-run.rst:14
 msgid ""
 "Mir servers crashing can be caused by many different problems with the port. "
 "To troubleshoot more, you can try the following:"
 msgstr ""
-"Los cuelgues del  servidor Mir pueden ser causados por diferentes problemas "
-"con la migración. Para depurarlos puede intentar los siguiente:"
+"Los cierres inesperados del  servidor Mir pueden ser causados por diferentes "
+"problemas con la migración. Para depurarlos puede intentar los siguiente:"
 
 #: ../../porting/common-problems-run.rst:17
 msgid "Is the Android container running?"
@@ -385,7 +384,7 @@ msgid ""
 "help."
 msgstr ""
 "Si el contenedor de Android está ejecutándose y todas sus particiones "
-"parecen estar montadas, necesitará obtener algunos registros mas antes de "
+"parecen estar montadas, necesitará obtener algunos registros más antes de "
 "solicitar ayuda a la comunidad."
 
 #: ../../porting/common-problems-run.rst:61
@@ -407,7 +406,6 @@ msgstr ""
 "necesarios::"
 
 #: ../../porting/common-problems-run.rst:76
-#, fuzzy
 msgid ""
 "Use ``scp`` or a similar program to copy the ``usc.log``, ``usc-gdb.log``, "
 "and ``usc-logcat.log`` files from phablet's home folder to your computer. "
@@ -416,14 +414,14 @@ msgid ""
 "easily."
 msgstr ""
 "Utilice ``scp`` o un programa similar para copiar los archivos ``usc.log``, "
-"``usc-gdb.log``, and ``usc-logcat.log`` de la carpeta principal de «phablet» "
-"a su ordenador. Entonces, suba el contenido de esos archivos a "
-"`paste.ubuntu.com`_, Pastebin,, GitHub Gists o un servicio similar para que "
-"la gente que le ayude puedan verlos facilmente."
+"``usc-gdb.log``, y``usc-logcat.log`` de la carpeta principal de «phablet» (/"
+"home/phablet/) a su ordenador. Entonces, suba el contenido de esos archivos "
+"a `paste.ubuntu.com`_, Pastebin,, GitHub Gists o un servicio similar para "
+"que la gente que le ayude puedan verlos fácilmente."
 
 #: ../../porting/common-problems-run.rst:79
 msgid "Programs hang before crashing"
-msgstr ""
+msgstr "Los programas se cuelgan antes de un cierre inesperado"
 
 #: ../../porting/common-problems-run.rst:81
 msgid ""
@@ -431,12 +429,18 @@ msgid ""
 "segfault. The reason for the hang is apport, which attempts to collect "
 "useful information about the crash before allowing the program to stop."
 msgstr ""
+"Aveces los procesos dejarán de responder por bastante tiempo y después se "
+"cerrarán inesperadamente. La razón para el cuelgue es «apport», el cual "
+"intenta recoger información útil antes del cierre inesperado antes de "
+"permitir al programa detenerse."
 
 #: ../../porting/common-problems-run.rst:83
 msgid ""
 "If you don't need apport's information and would rather have the programs "
 "crash faster while troubleshooting, issue the following commands::"
 msgstr ""
+"Si no necesita la información de «apport» y prefiere que los programas se "
+"cierren mas rápido ante un fallo, ejecute los siguientes comandos::"
 
 #: ../../porting/installing-16-04.rst:2
 msgid "Installing Ubuntu Touch 16.04 images on Halium"
@@ -453,14 +457,12 @@ msgstr ""
 "dispositivo antes de continuar."
 
 #: ../../porting/installing-16-04.rst:8
-#, fuzzy
 msgid ""
 "Now that you've :doc:`built halium-boot <building-halium-boot>`, we're ready "
 "to install Ubuntu Touch on your device."
 msgstr ""
-"Ahora que tiene :doc:`construido ubports-boot <building-ubports-boot>`, "
-"usaremos un script llamado ``rootstock-touch-install`` para instalar Ubuntu "
-"Touch en el rootfs de su dispositivo."
+"Ahora que tiene :doc:`construido hallium-boot <building-halium-boot>`, "
+"estamos preparados para instalar Ubuntu Touch en su dispositivo."
 
 #: ../../porting/installing-16-04.rst:10
 msgid ""
@@ -473,19 +475,17 @@ msgstr ""
 "partición /data está formateada en ext4 y no está cifrada."
 
 #: ../../porting/installing-16-04.rst:13
-#, fuzzy
 msgid "Install halium-boot"
-msgstr "Instalación de ubports-boot"
+msgstr "Instalación de halium-boot"
 
 #: ../../porting/installing-16-04.rst:15
-#, fuzzy
 msgid ""
 "We'll need to install the halium-boot image before installing an image. "
 "Reboot your phone into fastboot mode, then do the following from your Halium "
 "tree::"
 msgstr ""
-"Necesitaremos instalar la imagen de ubports-boot antes de instalar una "
-"imagen. Reinicie su teléfono en modo fastboot, después haga lo siguiente "
+"Necesitaremos instalar la imagen de hallium-boot antes de instalar una "
+"imagen. Reinicie su teléfono en modo «fastboot», después haga lo siguiente "
 "desde su árbol de Halium::"
 
 #: ../../porting/installing-16-04.rst:21
@@ -514,16 +514,17 @@ msgid "Install system.img and rootfs"
 msgstr "Instalar system.img y rootfs"
 
 #: ../../porting/installing-16-04.rst:28
+#, fuzzy
 msgid "Todo"
-msgstr ""
+msgstr "Por hacer"
 
 #: ../../porting/installing-16-04.rst:30
 msgid ""
 "Change the rootstock link to point to UBports once the actuallyfixit PR is "
 "merged."
 msgstr ""
-"Cambie el enlace rootstock para que apunte a UBports una vez que el "
-"actuallyfixit PR está incorporado."
+"Cambie el enlace «rootstock» para que apunte a UBports una vez que el «"
+"actuallyfixit PR» está incorporado."
 
 #: ../../porting/installing-16-04.rst:32
 msgid ""
@@ -533,12 +534,19 @@ msgid ""
 "releases/download/continuous/halium-install-standalone.sh>`__). Boot your "
 "device into recovery and run the script as follows::"
 msgstr ""
+"Descargue el guión halium-install-standalone desde `jbbgameich/halium-"
+"install's releases <https://github.com/JBBgameich/halium-install/releases/>`"
+"_ (`direct link to download <https://github.com/JBBgameich/halium-install/"
+"releases/download/continuous/halium-install-standalone.sh>`__). Inicie su "
+"dispositivo en modo recuperación y ejecute los guiones como sigue::"
 
 #: ../../porting/installing-16-04.rst:36
 msgid ""
 "The script will copy and extract the files to their proper places, then "
 "allow you to set the phablet user's password."
 msgstr ""
+"El guión copiará y extraerá los archivos a sus respectivos lugares, entonces "
+"le permitirá poner la contraseña del usuario «phablet»."
 
 #: ../../porting/installing-16-04.rst:39
 msgid "Get SSH access"
@@ -589,7 +597,7 @@ msgstr ""
 
 #: ../../porting/installing-16-04.rst:52 ../../porting/running-ut.rst:74
 msgid "Common Problems"
-msgstr ""
+msgstr "Problemas comunes"
 
 #: ../../porting/installing-16-04.rst:54
 msgid ""
@@ -597,6 +605,9 @@ msgid ""
 "following suggestions match what you are seeing. If you have installed "
 "successfully, skip down to `Continue on`_."
 msgstr ""
+"Si tiene errores durante la realización de estos pasos, compruebe si alguna "
+"e las siguientes propuestas encajan con lo que está viendo. Si lo ha "
+"instalado con éxito, salte a `Continue on`_."
 
 #: ../../porting/installing-16-04.rst:64
 msgid ""
@@ -610,7 +621,7 @@ msgstr ""
 
 #: ../../porting/introduction.rst:2
 msgid "Porting information"
-msgstr "Información sobre portado"
+msgstr "Información sobre la migración"
 
 #: ../../porting/introduction.rst:5
 #, fuzzy
@@ -638,10 +649,10 @@ msgid ""
 "``systemimage`` built without errors. Once you're at the point of installing "
 "a rootfs, you can come back here."
 msgstr ""
-"Antes de que comience, querrá ir a `la guía de portado de Halium <http://"
-"docs.halium.org/en/latest/porting/first-steps.html>`_  y conseguir construir "
-"su ``systemimage`` sin errores. Una vez que haya llegado al punto de "
-"instalar un rootfs, puede volver aquí."
+"Antes de que comience, querrá ir a `la guía de migración de Halium "
+"<http://docs.halium.org/en/latest/porting/first-steps.html>`_  y conseguir "
+"construir su ``systemimage`` sin errores. Una vez que haya llegado al punto "
+"de instalar un rootfs, puede volver aquí."
 
 #: ../../porting/introduction.rst:11
 #, fuzzy
@@ -654,7 +665,7 @@ msgstr ""
 
 #: ../../porting/introduction.rst:25
 msgid "Getting community help"
-msgstr ""
+msgstr "Obtener ayuda de la comunidad"
 
 #: ../../porting/introduction.rst:27
 msgid ""
@@ -663,18 +674,23 @@ msgid ""
 "stuck on. If none of the suggestions are helpful, you can get help from the "
 "community via the following channels:"
 msgstr ""
+"Si está teniendo problemas con los pasos de la migración después de "
+"construir la imagen de su sistema Halium, eche un vistazo a la sección de \""
+"Problemas comunes\" en la que se encuentre bloqueado. Si ninguna de las "
+"propuestas es de utilidad, puede obtener ayuda de la comunidad por medio de "
+"los siguientes canales:"
 
 #: ../../porting/introduction.rst:29
 msgid "Telegram: @ubports_porting"
-msgstr ""
+msgstr "Telegram: @ubports_porting"
 
 #: ../../porting/introduction.rst:30
 msgid "IRC: #ubports-porting on freenode"
-msgstr ""
+msgstr "IRC: #ubports-porting en freenode"
 
 #: ../../porting/introduction.rst:31
 msgid "Forum: `forums.ubports.com <https://forums.ubports.com>`__"
-msgstr ""
+msgstr "Foro: `forums.ubports.com <https://forums.ubports.com>`__"
 
 #: ../../porting/running-ut.rst:2
 msgid "Running Ubuntu Touch"
@@ -685,6 +701,8 @@ msgid ""
 "Now that you're logged in, there are a few more steps before Ubuntu Touch "
 "will be fully functional on your device."
 msgstr ""
+"Ahora que ha iniciado sesión hay algunos pasos mas antes de que Ubuntu Touch "
+"sea completamente funcional en su dispositivo."
 
 #: ../../porting/running-ut.rst:7
 #, fuzzy
@@ -704,18 +722,17 @@ msgstr ""
 
 #: ../../porting/running-ut.rst:14
 msgid "Add udev rules"
-msgstr "Añadir reglas de udev"
+msgstr "Añadir reglas  udev"
 
 #: ../../porting/running-ut.rst:16
-#, fuzzy
 msgid ""
 "You must create some udev rules to allow Ubuntu Touch software to access "
 "your hardware. Run the following command, replacing [codename] with your "
 "device's codename::"
 msgstr ""
-"Ahora que ha iniciado sesión en el sistema, debe crear algunas reglas de "
-"udev para permitir al software de Ubuntu Touch que acceda a su hardware. "
-"Ejecute la siguiente orden, cambiando [codename] (alias) con el alias de su "
+"Ahora que ha iniciado sesión en el sistema, debe crear algunas reglas udev "
+"para permitir al software de Ubuntu Touch que acceda a su hardware. Ejecute "
+"la siguiente orden, cambiando [codename] (alias) con el alias de su "
 "dispositivo::"
 
 #: ../../porting/running-ut.rst:21
@@ -1048,8 +1065,8 @@ msgid ""
 msgstr ""
 "``NATIVE_ORIENTATION`` configura la orientación de la pantalla incorporada "
 "en el dispositivo. Este valor se usa siempre que la rotación automática no "
-"esté funcionando correctamente o ccuando una aplicación desea estar "
-"bloqueada en la orientación nativa del dispositivo. Valores aceptables son "
+"esté funcionando correctamente o cuando una aplicación desea estar bloqueada "
+"en la orientación nativa del dispositivo. Valores aceptables son "
 "``landscape`` (horizontal), que se usa normalmente para tabletas, portátiles "
 "y ordenadores de escritorio; y ``portrait`` (vertical), que se usa "
 "generalmente en teléfonos móviles."
@@ -1062,6 +1079,12 @@ msgid ""
 "guide for now. Try to check the functionality of your device by following "
 "the Smoke Testing information in :doc:`/contribute/quality-assurance`."
 msgstr ""
+"Si tiene algun error durante la realización de estos pasos, compruebe si "
+"alguna de las siguientes propuestas encaja con lo que está viendo. Si ha "
+"completado estos con éxito ¡Enhorabuena! Ha alcanzado el final de la guía de "
+"migración por ahora. Intente comprobar el funcionamiento de su dispositivo "
+"siguiendo la información de las pruebas de humo en :doc:`/contribute/quality-"
+"assurance`."
 
 #~ msgid ""
 #~ "Ubuntu Touch uses Upstart rather than Systemd for its init daemon. "
