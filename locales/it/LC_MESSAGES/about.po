@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-03 14:44-0600\n"
-"PO-Revision-Date: 2018-03-12 09:07+0000\n"
-"Last-Translator: Stefano Melchior <stefano.melchior@me.com>\n"
-"Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs"
-"/documentation-about/it/>\n"
+"PO-Revision-Date: 2019-01-06 00:00+0000\n"
+"Last-Translator: Ennio Lavagnini <ennio.lavagnini@protonmail.com>\n"
+"Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs/"
+"documentation-about/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.15\n"
+"X-Generator: Weblate 3.1.1\n"
 "Generated-By: Babel 2.5.3\n"
 
 #: ../../about/introduction.rst:2
@@ -47,8 +47,8 @@ msgid ""
 msgstr ""
 "Il progetto UBports è stato fondato da Marius Gripsgard nel 2015, ed "
 "inizialmente fu un luogo dove gli sviluppatori potevano condividere "
-"informazioni ed idee, al fine di diffondere Ubuntu Touch su un numero "
-"crescente di dispositivi."
+"informazioni ed idee, al fine di diffondere Ubuntu Touch su un numero di "
+"dispositivi sempre maggiore."
 
 #: ../../about/introduction.rst:11
 msgid ""
@@ -134,7 +134,7 @@ msgstr ""
 
 #: ../../about/process/issue-tracking.rst:2
 msgid "Issue-Tracking Guidelines"
-msgstr "Linee guida per il tracciamento di errori o bug"
+msgstr "Linee guida per il rintracciamento di errori o bug"
 
 #: ../../about/process/issue-tracking.rst:4
 msgid ""
@@ -201,7 +201,7 @@ msgstr ""
 
 #: ../../about/process/issue-tracking.rst:28
 msgid "GitHub projects"
-msgstr "Progetti di GitHub"
+msgstr "Progetti su GitHub"
 
 #: ../../about/process/issue-tracking.rst:30
 msgid ""
@@ -260,7 +260,7 @@ msgid ""
 "**In Development**: A patch is in development. Usually means that a "
 "developer is assigned to the issue."
 msgstr ""
-"**In fase di sviluppo**: una pezza è in fase di sviluppo. Normalmente "
+"**In fase di sviluppo**: una patch è in fase di sviluppo. Normalmente "
 "significa che è stato assegnato a uno sviluppatore."
 
 #: ../../about/process/issue-tracking.rst:41
@@ -295,8 +295,8 @@ msgid ""
 "or the issue has been rejected (labeled “wontfix”)."
 msgstr ""
 "**Niente (rimosso dal progetto)** (in inglese **None (removed from the "
-"project)**): se un problema è aperto e etichettato come \"necessita aiuto\", "
-"la comunità è chiamata a risolverlo. Se è chiuso, significa che la pezza è "
+"project)**): se un problema è aperto ed etichettato come \"necessita aiuto\""
+", la comunità è chiamata a risolverlo. Se è chiuso, significa che la pezza è "
 "stata rilasciata sul canale stabile (a cui si allega un commento) o il "
 "problema è stato rigettato (etichettato come \"wontfix\")."
 
@@ -333,7 +333,7 @@ msgid ""
 "**needs confirmation**: The bug needs confirmation and / or further "
 "information from affected users"
 msgstr ""
-"**in attesa di conferma**: Il baco deve essere confermato e/o gli utenti "
+"**in attesa di conferma**: Il bug deve essere confermato e/o gli utenti "
 "interessati devono integrarne la documentazione"
 
 #: ../../about/process/issue-tracking.rst:55
@@ -341,8 +341,8 @@ msgid ""
 "**bug**: This issue is a confirmed bug. If it's reproducable, "
 "reproduction steps are described."
 msgstr ""
-"**baco*: questo problema è stato confermato come baco. `Se è "
-"riproducibile, i passi per ricrearlo sono stati descritti."
+"**bug**: questo problema è stato confermato. `Se riproducibile, i passi per "
+"ricrearlo sono stati descritti."
 
 #: ../../about/process/issue-tracking.rst:57
 msgid "**opinion**: This issue needs further discussion."
@@ -373,8 +373,8 @@ msgid ""
 "**duplicate**: This has already been reported somewhere else. Please "
 "provide a link and close."
 msgstr ""
-"**duplicato**: Questo problema è stato già riportato altrove. Inserirne "
-"il collegamento e chiuderlo."
+"**duplicato**: Questo problema è stato già riportato altrove. Inserire il "
+"collegamento e chiuderlo."
 
 #: ../../about/process/issue-tracking.rst:64
 msgid ""
@@ -524,8 +524,8 @@ msgstr ""
 #: ../../about/process/issue-tracking.rst:118
 msgid "A *User* files a new bug using the issue-template."
 msgstr ""
-"Un *Utente* può riportare un nuovo baco attraverso il modulo di creazione"
-" di nuovi problemi."
+"Un *Utente* può riportare un nuovo bag attraverso il modulo di creazione di "
+"nuovi problemi."
 
 #: ../../about/process/issue-tracking.rst:119
 msgid ""
@@ -606,7 +606,7 @@ msgstr ""
 
 #: ../../about/process/release-schedule.rst:2
 msgid "Release Schedule"
-msgstr "Schedulazione di un rilascio"
+msgstr "Pianificazione di un rilascio"
 
 #: ../../about/process/release-schedule.rst:4
 msgid "OTA updates usually follow this rhythm:"

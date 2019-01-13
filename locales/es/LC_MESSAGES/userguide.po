@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-11 15:02-0500\n"
-"PO-Revision-Date: 2018-04-02 21:54+0000\n"
+"POT-Creation-Date: 2018-11-30 10:25-0600\n"
+"PO-Revision-Date: 2019-01-12 12:13+0000\n"
 "Last-Translator: advocatux <advocatux@airpost.net>\n"
 "Language-Team: Spanish <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-userguide/es/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.15\n"
+"X-Generator: Weblate 3.1.1\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../userguide/advanceduse/adb.rst:2
@@ -144,8 +144,8 @@ msgstr "Sincronización CalDAV y CardDAV"
 
 #: ../../userguide/advanceduse/dav.rst:4
 msgid ""
-"CalDAV and CardDAV are protocols to syncronize calendars and contacts with a "
-"remote server. Many email-hosters provide a CalDAV and CardDAV interface."
+"CalDAV and CardDAV are protocols to synchronize calendars and contacts with "
+"a remote server. Many email-hosters provide a CalDAV and CardDAV interface."
 msgstr ""
 "CalDAV y CardDAV son protocolos para sincronizar calendarios y contactos con "
 "un servidor remoto. Muchos proveedores de correo electrónico proporcionan "
@@ -166,17 +166,17 @@ msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:8
 msgid ""
-"At the moment, there is no carddav implemention directly accessible from the "
-"Ubuntu Touch graphical user-interface, so the only way to sync carddav is by "
-"using syncevolution + cron. However, there is a simple way to do that with a "
-"script that you can run in the terminal or via phablet SSH connection. These "
-"instructions work for caldav as well."
+"At the moment, there is no carddav implementation directly accessible from "
+"the Ubuntu Touch graphical user-interface, so the only way to sync carddav "
+"is by using syncevolution + cron. However, there is a simple way to do that "
+"with a script that you can run in the terminal or via phablet SSH "
+"connection. These instructions work for caldav as well."
 msgstr ""
 "Por el momento, no existe una implementación de carddav directamente "
 "accesible desde la interfaz gráfica de usuario en Ubuntu Touch, así que la "
 "única manera de sincronizar carddav es usando syncevolution + cron. Sin "
-"embargo hay una manera mas sencilla de hacer eso con un script que puede "
-"ejecutar en la terminal o vía conexión SSH con el dispositivo. Estas "
+"embargo hay una manera mas sencilla de hacer eso con un «script» (guión) que "
+"puede ejecutar en la terminal o vía conexión SSH con el dispositivo. Estas "
 "instrucciones funcionan con caldav también."
 
 #: ../../userguide/advanceduse/dav.rst:10
@@ -212,7 +212,7 @@ msgstr ""
 "CONTACT y CALENDAR _ NAME / VISUAL_NAME / CONFIG_NAME (es más estético)"
 
 #: ../../userguide/advanceduse/dav.rst:17
-msgid "CRON_FREQUENCY (for the frequency of synchronisation)"
+msgid "CRON_FREQUENCY (for the frequency of synchronization)"
 msgstr "CRON_FREQUENCY (para la frecuencia de sincronización)"
 
 #: ../../userguide/advanceduse/dav.rst:18
@@ -227,10 +227,10 @@ msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:20
 msgid ""
-"Move the file to your UbuntuTouch device, either by file manager or with "
+"Move the file to your Ubuntu Touch device, either by file manager or with "
 "adb::"
 msgstr ""
-"Mueva el archivo a su dispositivo UbuntuTouch, bien con el administrador de "
+"Mueva el archivo a su dispositivo Ubuntu Touch, bien con el gestor de "
 "archivos o con adb::"
 
 #: ../../userguide/advanceduse/dav.rst:24
@@ -390,7 +390,7 @@ msgstr ""
 msgid ""
 "Ubuntu Touch comes with a command line utility called ``mirscreencast`` "
 "which dumps screen frames to a file. The idea here is to stream UT display "
-"to a listening computer over the network or directy trough adb so that we "
+"to a listening computer over the network or directly trough adb so that we "
 "can either watch it live or record it to a file."
 msgstr ""
 "Ubuntu Touch viene con una utilidad de la línea de órdenes llamada "
@@ -626,63 +626,80 @@ msgid "Switch release channels"
 msgstr "Cambiar canales de publicación"
 
 #: ../../userguide/dailyuse/anbox.rst:2
-msgid "Run android applications"
-msgstr "Ejecutar aplicaciones de android"
+msgid "Run Android applications"
+msgstr "Ejecutar aplicaciones de Android"
 
 #: ../../userguide/dailyuse/anbox.rst:4
 msgid ""
-"`Anbox <https://anbox.io>`_ is a minimal android container and compatibility "
-"layer that allows you to run android applications on GNU/Linux operating "
+"`Anbox <https://anbox.io>`_ is a minimal Android container and compatibility "
+"layer that allows you to run Android applications on GNU/Linux operating "
 "systems."
 msgstr ""
-"`Anbox <https://anbox.io>`_ es un contenedor mínimo y una capa de "
-"compatibilidad de android que le permite ejecutar aplicaciones android en "
-"sistemas operativos GNU/Linux."
+"`Anbox <https://anbox.io>`_ es un contenedor mínimo de Android y una capa de "
+"compatibilidad que le permite ejecutar aplicaciones Android en sistemas "
+"operativos GNU/Linux."
 
 #: ../../userguide/dailyuse/anbox.rst:7
 msgid "Anbox is in early development"
 msgstr "Anbox está en una fase temprana de desarrollo"
 
 #: ../../userguide/dailyuse/anbox.rst:8
-msgid "Anbox for Ubuntu Touch is in even more early development"
-msgstr ""
-"Anbox para Ubuntu Touch está en una fase aún mas temprana de desarrollo"
-
-#: ../../userguide/dailyuse/anbox.rst:9
 msgid ""
-"Anbox only works on the 16.04 version of Ubuntu Touch, which is also in "
-"early development"
+"When \"host\" is used in this document, it refers to another device which "
+"you can connect your Ubuntu Touch device to. Your host device must have "
+"``adb`` and ``fastboot`` installed."
 msgstr ""
-"Anbox solo funciona en la versión 16.04 de Ubuntu Touch, que también está en "
-"una fase temprana de desarrollo"
+"Cuando se usa «anfitrión» en este documento, se refiere a otro dispositivo "
+"al que puede conectar su dispositivo Ubuntu Touch. Su anfitrión debe tener "
+"instalado ``adb`` y ``fastboot``."
 
-#: ../../userguide/dailyuse/anbox.rst:10
-msgid ""
-"Only selected devices are supported for the moment, more will be added in "
-"the future."
-msgstr ""
-"Solo unos cuántos dispositivos seleccionados tienen soporte por ahora, se "
-"añadirán más en el futuro."
-
-#: ../../userguide/dailyuse/anbox.rst:13
+#: ../../userguide/dailyuse/anbox.rst:11
 msgid "Supported devices"
 msgstr "Dispositivos soportados"
 
-#: ../../userguide/dailyuse/anbox.rst:15
+#: ../../userguide/dailyuse/anbox.rst:13
 msgid "Make sure your device is supported:"
 msgstr "Asegúrese de que su dispositivo está soportado:"
 
-#: ../../userguide/dailyuse/anbox.rst:17
+#: ../../userguide/dailyuse/anbox.rst:15
 msgid ""
-"Meizu Pro 5 (codename: *turbo*, name of the boot partition: *bootimg*) BQ "
-"M10 HD (codename: *cooler*, name of the boot partition: *boot*) BQ M10 FHD "
-"(codename: *frieza*, name of the boot partition: *boot*)"
+"Meizu Pro 5 (codename: ``turbo``, name of the boot partition: ``bootimg``)"
 msgstr ""
-"Meizu Pro 5 (alias: *turbo*, nombre de la partición de arranque: *bootimg*) "
-"BQ M10 HD (alias: *cooler*, nombre de la partición de arranque: *boot*) BQ "
-"M10 FHD (alias: *frieza*, nombre de la partición de arranque: *boot*)"
+"Meizu Pro 5 (nombre en código: ``turbo``, nombre de la partición de arranque:"
+" ``bootimg``)"
 
-#: ../../userguide/dailyuse/anbox.rst:21
+#: ../../userguide/dailyuse/anbox.rst:16
+msgid "Fairphone 2 (codename: ``FP2``, name of the boot partition: ``boot``)"
+msgstr ""
+"Fairphone 2 (nombre en código: ``FP2``, nombre de la partición de arranque: "
+"``boot``)"
+
+#: ../../userguide/dailyuse/anbox.rst:17
+msgid "Oneplus one (codename: ``bacon``, name of the boot partition: ``boot``)"
+msgstr ""
+"Oneplus one (nombre en código: ``bacon``, nombre de la partición de arranque:"
+" ``boot``)"
+
+#: ../../userguide/dailyuse/anbox.rst:18
+msgid ""
+"Nexus 5 (codename: ``hammerhead``, name of the boot partition: ``boot``)"
+msgstr ""
+"Nexus 5 (nombre en código: ``hammerhead``, nombre de la partición de "
+"arranque: ``boot``)"
+
+#: ../../userguide/dailyuse/anbox.rst:19
+msgid "BQ M10 HD (codename: ``cooler``, name of the boot partition: ``boot``)"
+msgstr ""
+"BQ M10 HD (nombre en código: ``cooler``, nombre de la partición de arranque: "
+"``boot``)"
+
+#: ../../userguide/dailyuse/anbox.rst:20
+msgid "BQ M10 FHD (codename: ``frieza``, name of the boot partition: ``boot``)"
+msgstr ""
+"BQ M10 FHD (nombre en código: ``frieza``, nombre de la partición de arranque:"
+" ``boot``)"
+
+#: ../../userguide/dailyuse/anbox.rst:22
 msgid ""
 "You will need the device codename and the name of your boot partition for "
 "the installation."
@@ -690,11 +707,11 @@ msgstr ""
 "Necesitará el alias de su dispositivo y el nombre de su partición de "
 "arranque para la instalación."
 
-#: ../../userguide/dailyuse/anbox.rst:24
+#: ../../userguide/dailyuse/anbox.rst:25
 msgid "How to install"
 msgstr "Cómo instalar"
 
-#: ../../userguide/dailyuse/anbox.rst:27
+#: ../../userguide/dailyuse/anbox.rst:28
 msgid ""
 "Because this feature is in such an early stage of development, the "
 "installation is only recommended for experienced users."
@@ -702,80 +719,146 @@ msgstr ""
 "Debido a que esta herramienta está en un estado muy temprano de desarrollo, "
 "se recomienda la instalación solo a usuarios experimentados."
 
-#: ../../userguide/dailyuse/anbox.rst:29
-msgid ""
-":doc:`Install <../install>` the 16.04/devel channel on your supported device"
-msgstr ""
-":doc:`Instalar <../install>` el canal 16.04/devel en su dispositivo soportado"
-
 #: ../../userguide/dailyuse/anbox.rst:30
 msgid ""
-"Open a terminal and run ``export CODENAME=\"turbo\" && export PARTITIONNAME="
-"\"bootimg\"``, but replace the part between the quotes respectively with the "
-"codename and name of the boot partition for your device. See the above list."
+"Make sure your supported device runs on 16.04 (anbox doesn't work on 15.04)"
 msgstr ""
-"Abra un terminal y ejecute ``export CODENAME=\"turbo\" && export "
-"PARTITIONNAME=\"bootimg\"``, pero substituya la parte entre comillas por el "
-"alias (codename) y el nombre de la partición de arranque de su dispositivo, "
-"respectivamente. Vea la lista de arriba."
+"Asegúrese de que su dispositivo soportado usa 16.04 (anbox no funciona en "
+"15.04)"
 
 #: ../../userguide/dailyuse/anbox.rst:31
+msgid ""
+"Open a terminal on your host and set some device specific variables by "
+"running ``export CODENAME=\"turbo\" && export PARTITIONNAME=\"bootimg\"``, "
+"but replace the part between the quotes respectively with the codename and "
+"name of the boot partition for your device. See the above list."
+msgstr ""
+"Abra un terminal en su anfitrión y configure algunas variables específicas "
+"del dispositivo ejecutando ``export CODENAME=\"turbo\" && export "
+"PARTITIONNAME=\"bootimg\"``, pero substituya la parte entre comillas por el "
+"nombre en código («codename») y el nombre de la partición de arranque de su "
+"dispositivo, respectivamente. Vea la lista anterior."
+
+#: ../../userguide/dailyuse/anbox.rst:32
 msgid "Activate developer mode on your device."
 msgstr "Active el modo de desarrollador en su dispositivo."
 
-#: ../../userguide/dailyuse/anbox.rst:32
+#: ../../userguide/dailyuse/anbox.rst:33
 msgid ""
-"Connect the device to your computer computer and run the following commands::"
+"Connect the device to your host and run the following commands from your "
+"host (same terminal that you ran the ``export`` command in)::"
 msgstr ""
-"Conecte el dispositivo a su ordenador y ejecute las siguientes órdenes::"
+"Conecte el dispositivo a su anfitrión y ejecute las siguientes órdenes desde "
+"su anfitrión (en el mismo terminal en el que ha ejecutado la orden "
+"``export``)::"
 
-#: ../../userguide/dailyuse/anbox.rst:40
-msgid "wait for the device to reboot, then run::"
-msgstr "espere a que el dispositivo se reinicie, entonces ejecute::"
+#: ../../userguide/dailyuse/anbox.rst:43
+msgid "Wait for the device to reboot, then run from your host::"
+msgstr ""
+"Espere a que el dispositivo se reinicie, entonces ejecute en su anfitrión::"
 
-#: ../../userguide/dailyuse/anbox.rst:49
+#: ../../userguide/dailyuse/anbox.rst:52 ../../userguide/dailyuse/anbox.rst:66
+#: ../../userguide/dailyuse/anbox.rst:87
 msgid ""
-"Done! Select \"Anbox\" in the apps scope to use android applications. You "
-"might have to refresh the apps scope (pull down from the center of the "
-"screen and release) for the app to show up."
+"Done! You might have to refresh the apps scope (pull down from the center of "
+"the screen and release) for the new Android apps to show up."
 msgstr ""
-"¡Hecho! Seleccione \"Anbox\" en el scope de aplicaciones para usar "
-"aplicaciones de android. Puede que tenga que recargar el scope de "
-"aplicaciones (pulse desde el centro de la pantalla hacia abajo y suelte) "
-"para que se muestre la aplicación."
-
-#: ../../userguide/dailyuse/anbox.rst:52
-#, fuzzy
-msgid "How to install new apks"
-msgstr "Cómo instalar"
-
-#: ../../userguide/dailyuse/anbox.rst:54
-msgid "Copy the apk to `/home/phablet/anbox-data/data`"
-msgstr ""
+"¡Hecho! Puede que necesite recargar el «scope» de las aplicaciones ("
+"arrastrar hacia abajo desde el centro de la pantalla y soltar) para que "
+"aparezcan las nuevas aplicaciones de Android."
 
 #: ../../userguide/dailyuse/anbox.rst:55
-msgid "Login to android container on your phone"
-msgstr ""
+msgid "How to install new apks"
+msgstr "Cómo instalar nuevas «apks»"
 
 #: ../../userguide/dailyuse/anbox.rst:57
-msgid "lxc-console -ndefault -P /home/phablet/anbox-data/containers -t0"
+msgid ""
+"Copy the apk to ``/home/phablet/Downloads``, then run the following from "
+"your host::"
 msgstr ""
+"Copiar la «apk» a ``/home/phablet/Downloads`` y luego ejecutar lo siguiente "
+"en su anfitrión::"
 
-#: ../../userguide/dailyuse/anbox.rst:59
-msgid "cd into `data/`"
+#: ../../userguide/dailyuse/anbox.rst:69
+msgid "Keep your apps up to date"
+msgstr "Mantenga sus aplicaciones actualizadas"
+
+#: ../../userguide/dailyuse/anbox.rst:71
+msgid ""
+"To keep your apps running the lasted version you can make use of F-Droid or "
+"ApkTrack. If you like to install one of the above apps you can find them "
+"here:"
 msgstr ""
+"Para mantener sus aplicaciones usando la última versión disponible, puede "
+"usar F-Droid o ApkTrack. Si desea instalar alguna de las aplicaciones "
+"anteriores, las puede encontrar aquí:"
 
-#: ../../userguide/dailyuse/anbox.rst:60
-msgid "install the apk by using `pm install [appname].apk`"
+#: ../../userguide/dailyuse/anbox.rst:73
+msgid "F-Droid: https://f-droid.org/"
+msgstr "F-Droid: https://f-droid.org/"
+
+#: ../../userguide/dailyuse/anbox.rst:74
+msgid "ApkTrack: https://f-droid.org/packages/fr.kwiatkowski.ApkTrack/"
+msgstr "ApkTrack: https://f-droid.org/packages/fr.kwiatkowski.ApkTrack/"
+
+#: ../../userguide/dailyuse/anbox.rst:77
+msgid "How to uninstall applications"
+msgstr "Cómo desinstalar aplicaciones"
+
+#: ../../userguide/dailyuse/anbox.rst:79
+msgid "This is a example of the app-list installed apps on your device"
 msgstr ""
+"Este es un ejemplo de la lista de aplicaciones instaladas en su dispositivo"
 
-#: ../../userguide/dailyuse/anbox.rst:63
+#: ../../userguide/dailyuse/anbox.rst:80
+msgid ""
+"To uninstall apps, run ``adb uninstall [APP_ID]`` from your Ubuntu Touch "
+"device::"
+msgstr ""
+"Para desinstalar aplicaciones, ejecute ``adb uninstall [APP_ID]`` desde su "
+"dispositivo Ubuntu Touch::"
+
+#: ../../userguide/dailyuse/anbox.rst:90
+msgid "Troubleshooting"
+msgstr "Solución de problemas"
+
+#: ../../userguide/dailyuse/anbox.rst:92
+msgid ""
+"If installing ``anbox-ubuntu-touch`` or ``android-tools-adb`` on the device "
+"fails with an error about unsufficient space, try this::"
+msgstr ""
+"Si falla la instalación de ``anbox-ubuntu-touch`` o ``android-tools-adb`` en "
+"el dispositivo con un error acerca de espacio insuficiente, pruebe esto::"
+
+#: ../../userguide/dailyuse/anbox.rst:103
+msgid ""
+"When you want to install an apk but get the error ``Invalid APK file`` that "
+"error could also mean \"file not found\""
+msgstr ""
+"Cuando quiere instalar una «apk» y recibe el error ``Invalid APK file`` ("
+"archivo APK nulo), ese error también puede significar «archivo no encontrado»"
+
+#: ../../userguide/dailyuse/anbox.rst:105
+msgid "check that you typed the file name correctly"
+msgstr "compruebe que ha escrito el nombre del archivo correctamente"
+
+#: ../../userguide/dailyuse/anbox.rst:106
+msgid ""
+"if the apk does not reside in the current folder where you execute adb, you "
+"have to specify the full path, e.g. ``/home/phablet/Downloads/my-app.apk`` "
+"instead of just ``my-app.apk``"
+msgstr ""
+"si la «apk» no está en la misma carpeta donde ejecuta adb, tiene que "
+"especificar la ruta completa, p.ej. ``/home/phablet/Downloads/mi-"
+"aplicacion.apk`` en vez de solo ``mi-aplicacion.apk``"
+
+#: ../../userguide/dailyuse/anbox.rst:110
 msgid "Reporting bugs"
 msgstr "Informar de errores"
 
-#: ../../userguide/dailyuse/anbox.rst:65
+#: ../../userguide/dailyuse/anbox.rst:112
 msgid ""
-"Please :doc:`report any bugs </contribute/bugreporting>` you come accross. "
+"Please :doc:`report any bugs </contribute/bugreporting>` you come across. "
 "Bugs with Ubuntu Touch 16.04 are reported in `the normal Ubuntu Touch "
 "tracker <https://github.com/ubports/ubuntu-touch/issues>`_ and issues with "
 "anbox are reported on `our downstream fork <https://github.com/ubports/anbox/"
@@ -832,14 +915,10 @@ msgstr "Cree un contenedor (container)"
 
 #: ../../userguide/dailyuse/libertine.rst:14
 msgid ""
-"The first step is to create a container where applications can be installed:"
+"The first step is to create a container where applications can be installed::"
 msgstr ""
 "El primer paso es crear un contenedor donde puedan instalarse las "
-"aplicaciones:"
-
-#: ../../userguide/dailyuse/libertine.rst:16
-msgid "``libertine-container-manager create -i CONTAINER-IDENTIFIER``"
-msgstr "``libertine-container-manager create -i CONTAINER-IDENTIFIER``"
+"aplicaciones::"
 
 #: ../../userguide/dailyuse/libertine.rst:18
 msgid "You can add extra options such as:"
@@ -887,53 +966,33 @@ msgstr ""
 msgid "List containers"
 msgstr "Lista de contenedores"
 
-#: ../../userguide/dailyuse/libertine.rst:32
-msgid "To list all containers created run:"
-msgstr "Para listar todos los contenedores creados ejecute:"
+#: ../../userguide/dailyuse/libertine.rst:31
+msgid "To list all containers created run::"
+msgstr "Para listar todos los contenedores creados ejecute::"
 
-#: ../../userguide/dailyuse/libertine.rst:32
-msgid "``libertine-container-manager list``"
-msgstr "``libertine-container-manager list``"
-
-#: ../../userguide/dailyuse/libertine.rst:35
+#: ../../userguide/dailyuse/libertine.rst:36
 msgid "Destroy a container"
 msgstr "Destruir un contenedor"
 
-#: ../../userguide/dailyuse/libertine.rst:37
-msgid "``libertine-container-manager destroy -i CONTAINER-IDENTIFIER``"
-msgstr "``libertine-container-manager destroy -i CONTAINER-IDENTIFIER``"
-
-#: ../../userguide/dailyuse/libertine.rst:40
+#: ../../userguide/dailyuse/libertine.rst:42
 msgid "Manage applications"
 msgstr "Gestionar aplicaciones"
 
-#: ../../userguide/dailyuse/libertine.rst:42
-msgid "Once a container is set up, you can list the installed applications:"
+#: ../../userguide/dailyuse/libertine.rst:44
+msgid "Once a container is set up, you can list the installed applications::"
 msgstr ""
 "Una vez que un contenedor está configurado, puede listar las aplicaciones "
-"instaladas:"
-
-#: ../../userguide/dailyuse/libertine.rst:44
-msgid "``libertine-container-manager list-apps``"
-msgstr "``libertine-container-manager list-apps``"
-
-#: ../../userguide/dailyuse/libertine.rst:46
-msgid "Install a package:"
-msgstr "Instalar un paquete:"
+"instaladas::"
 
 #: ../../userguide/dailyuse/libertine.rst:48
-msgid "``libertine-container-manager install-package -p PACKAGE-NAME``"
-msgstr "``libertine-container-manager install-package -p PACKAGE-NAME``"
-
-#: ../../userguide/dailyuse/libertine.rst:50
-msgid "Remove a package:"
-msgstr "Eliminar un paquete:"
+msgid "Install a package::"
+msgstr "Instalar un paquete::"
 
 #: ../../userguide/dailyuse/libertine.rst:52
-msgid "``libertine-container-manager remove-package -p PACKAGE-NAME``"
-msgstr "``libertine-container-manager remove-package -p PACKAGE-NAME``"
+msgid "Remove a package::"
+msgstr "Eliminar un paquete::"
 
-#: ../../userguide/dailyuse/libertine.rst:55
+#: ../../userguide/dailyuse/libertine.rst:57
 msgid ""
 "If you have more than one container, then you can use the option ``-i "
 "CONTAINER-IDENTIFIER`` to specify for which container you want to perform an "
@@ -943,47 +1002,47 @@ msgstr ""
 "IDENTIFIER`` para especificar en que contenedor quiere llevar a cabo una "
 "operación."
 
-#: ../../userguide/dailyuse/libertine.rst:59
+#: ../../userguide/dailyuse/libertine.rst:61
 msgid "Files"
 msgstr "Archivos"
 
-#: ../../userguide/dailyuse/libertine.rst:61
+#: ../../userguide/dailyuse/libertine.rst:63
 msgid "Libertine applications do have access to these folders:"
 msgstr "Las aplicaciones de Libertine tienen acceso a estas carpetas:"
 
-#: ../../userguide/dailyuse/libertine.rst:63
+#: ../../userguide/dailyuse/libertine.rst:65
 msgid "Documents"
 msgstr "Documentos"
 
-#: ../../userguide/dailyuse/libertine.rst:64
+#: ../../userguide/dailyuse/libertine.rst:66
 msgid "Music"
 msgstr "Música"
 
-#: ../../userguide/dailyuse/libertine.rst:65
+#: ../../userguide/dailyuse/libertine.rst:67
 msgid "Pictures"
 msgstr "Imágenes"
 
-#: ../../userguide/dailyuse/libertine.rst:66
+#: ../../userguide/dailyuse/libertine.rst:68
 msgid "Downloads"
 msgstr "Descargas"
 
-#: ../../userguide/dailyuse/libertine.rst:67
+#: ../../userguide/dailyuse/libertine.rst:69
 msgid "Videos"
 msgstr "Vídeos"
 
-#: ../../userguide/dailyuse/libertine.rst:70
-msgid "Tipps"
+#: ../../userguide/dailyuse/libertine.rst:72
+msgid "Tips"
 msgstr "Consejos"
 
-#: ../../userguide/dailyuse/libertine.rst:73
+#: ../../userguide/dailyuse/libertine.rst:75
 msgid "Locations"
 msgstr "Ubicación"
 
-#: ../../userguide/dailyuse/libertine.rst:75
+#: ../../userguide/dailyuse/libertine.rst:77
 msgid "For every container you create there will be two directories created:"
 msgstr "Por cada contenedor que cree, se crearán dos directorios:"
 
-#: ../../userguide/dailyuse/libertine.rst:77
+#: ../../userguide/dailyuse/libertine.rst:79
 msgid ""
 "A root directory ``~/.cache/libertine-container/CONTAINER-IDENTIFIER/rootfs/"
 "`` and"
@@ -991,7 +1050,7 @@ msgstr ""
 "Un directorio raíz  ``~/.cache/libertine-container/CONTAINER-IDENTIFIER/"
 "rootfs/`` y"
 
-#: ../../userguide/dailyuse/libertine.rst:78
+#: ../../userguide/dailyuse/libertine.rst:80
 msgid ""
 "a user directory ``~/.local/share/libertine-container/user-data/CONTAINER-"
 "IDENTIFIER/``"
@@ -999,29 +1058,70 @@ msgstr ""
 "un directorio de usuario ``~/.local/share/libertine-container/user-data/"
 "CONTAINER-IDENTIFIER/``"
 
-#: ../../userguide/dailyuse/libertine.rst:81
+#: ../../userguide/dailyuse/libertine.rst:83
 msgid "Shell access"
 msgstr "Acceso al terminal"
 
-#: ../../userguide/dailyuse/libertine.rst:83
-msgid "To execute any arbitrary command as root inside the container run:"
-msgstr ""
-"Para ejecutar cualquier orden como root dentro de un contenedor ejecute:"
-
 #: ../../userguide/dailyuse/libertine.rst:85
-msgid "``libertine-container-manager exec -c COMMAND``"
-msgstr "``libertine-container-manager exec -c COMMAND``"
+msgid "There are 2 options for executing commands inside the container."
+msgstr "Existen 2 opciones para ejecutar órdenes dentro de un contenedor."
 
 #: ../../userguide/dailyuse/libertine.rst:87
-msgid "For example, to get a shell into your container you can run:"
+msgid ""
+"**The first option** is based on ``libertine-container-manager exec``. It "
+"lets you run your commands as root. The drawback is that the container is "
+"not completely set up. So far we know that the `folders mentioned above "
+"(Documents, Music, ...) are not mounted <https://askubuntu.com/"
+"questions/831830/libertine-terminal-applications-how-to-access-to-the-real-"
+"home-dir#comment1273744_833984/>`_ i.e., the ``/home/phablet/`` directory is "
+"empty. Likewise the directory referenced in ``TMPDIR`` is not available what "
+"may lead to problems with software that tries to create temporary files or "
+"directories. You may use this option e.g., for installing packages."
 msgstr ""
-"Por ejemplo, para obtener una terminal en su contenedor puede ejecutar:"
+"**La primera opción** se basa en ``libertine-container-manager exec``. Esto "
+"le permite ejecutar sus órdenes como «root». El inconveniente es que el "
+"contenedor no está completamente instalado. Hasta ahora sabemos que las `"
+"carpetas citadas anteriormente (Documentos, Música, ...) no están montadas "
+"<https://askubuntu.com/questions/831830/libertine-terminal-applications-how-"
+"to-access-to-the-real-home-dir#comment1273744_833984/>`_, básicamente el "
+"directorio ``/home/phablet/`` está vacío. Igualmente el directorio referido "
+"en ``TMPDIR`` no está disponible y eso puede traer problemas con el software "
+"que intente crear archivos temporales o directorios. Puede usar esta opción "
+"p.ej. para instalar paquetes."
 
-#: ../../userguide/dailyuse/libertine.rst:89
-msgid "``libertine-container-manager exec -c /bin/bash``"
-msgstr "``libertine-container-manager exec -c /bin/bash``"
+#: ../../userguide/dailyuse/libertine.rst:90
+#: ../../userguide/dailyuse/libertine.rst:104
+msgid "To execute a command you can use the following pattern::"
+msgstr "Para ejecutar una orden puede seguir el siguiente patrón::"
 
-#: ../../userguide/dailyuse/libertine.rst:92
+#: ../../userguide/dailyuse/libertine.rst:94
+#: ../../userguide/dailyuse/libertine.rst:108
+msgid "For example run::"
+msgstr "Por ejemplo ejecute::"
+
+#: ../../userguide/dailyuse/libertine.rst:98
+msgid "To get a shell into your container as ``root`` run::"
+msgstr ""
+"Para obtener un intérprete de órdenes en su contenedor como ``root``  "
+"ejecute::"
+
+#: ../../userguide/dailyuse/libertine.rst:102
+msgid ""
+"**The second option** is based on ``libertine-launch``. It will execute your "
+"commands as user phablet in a completely set up container. So you may use "
+"this option to modify your files using installed packages."
+msgstr ""
+"**La segunda opción** se basa en ``libertine-launch``. Ejecutará sus órdenes "
+"como usuario «phablet» en un contenedor completamente instalado. Así que "
+"puede usar esta opción para modificar sus archivos que usan los paquetes "
+"instalados."
+
+#: ../../userguide/dailyuse/libertine.rst:112
+msgid "To get a shell as user ``phablet`` run::"
+msgstr ""
+"Para obtener un intérprete de órdenes como usuario ``phablet`` ejecute::"
+
+#: ../../userguide/dailyuse/libertine.rst:117
 msgid ""
 "When you launch bash in this way you will not get any specific feedback to "
 "confirm that you are now *inside* the container. You can check ``ls /`` to "
@@ -1033,19 +1133,23 @@ msgstr ""
 "para confirmar que está dentro de un contenedor. La lista que mostrará ``ls /"
 "`` es diferente si está fuera o dentro del contenedor."
 
-#: ../../userguide/dailyuse/libertine.rst:94
-msgid "To get a shell as user ``phablet`` run:"
-msgstr "Para obtener una terminal como usuario ``phablet`` ejecute:"
+#: ../../userguide/dailyuse/libertine.rst:120
+msgid "Shortcuts"
+msgstr "Atajos"
 
-#: ../../userguide/dailyuse/libertine.rst:96
-msgid "``DISPLAY= libertine-launch -i CONTAINER-IDENTIFIER /bin/bash``"
-msgstr "``DISPLAY= libertine-launch -i CONTAINER-IDENTIFIER /bin/bash``"
+#: ../../userguide/dailyuse/libertine.rst:122
+msgid ""
+"If you want, you can add aliases for command line tools. Add lines like the "
+"following ones to your ``~/.bash_aliases``::"
+msgstr ""
+"Si lo desea, puede añadir alias para las herramientas de la línea de "
+"órdenes. Añada líneas como las siguientes a su ``~/.bash_aliases``::"
 
-#: ../../userguide/dailyuse/libertine.rst:99
+#: ../../userguide/dailyuse/libertine.rst:128
 msgid "Background"
 msgstr "Contexto"
 
-#: ../../userguide/dailyuse/libertine.rst:101
+#: ../../userguide/dailyuse/libertine.rst:130
 msgid ""
 "A display server coordinates input and output of an operating system. Most "
 "Linux distributions today use the X server. Ubuntu Touch does not use X, "
@@ -1061,7 +1165,7 @@ msgstr ""
 "con Ubuntu Touch. Una capa de compatibilidad llamada XMir soluciona esto. "
 "Libertine depende de XMir para mostrar las aplicaciones de escritorio."
 
-#: ../../userguide/dailyuse/libertine.rst:103
+#: ../../userguide/dailyuse/libertine.rst:132
 msgid ""
 "Another challenge is that Ubuntu Touch system updates are released as OTA "
 "images. A consequence of this is that the root filesystem is read only. "
@@ -1127,7 +1231,7 @@ msgstr "Ubuntu o Debian: ``ubports-installer-<número-de-versión>.deb``"
 
 #: ../../userguide/install.rst:14
 msgid ""
-"Other Linux distribtuions: ``ubports-installer-<version-number>.snap`` or "
+"Other Linux distributions: ``ubports-installer-<version-number>.snap`` or "
 "``ubports-installer-<version-number>.AppImage``"
 msgstr ""
 "Otras distribuciones Linux: ``ubports-installer-<número-de-versión>.snap`` o "
@@ -1213,11 +1317,11 @@ msgstr "Descargue la ROM de Ubuntu Touch para su dispositivo:"
 
 #: ../../userguide/install.rst:38
 msgid ""
-"`Bq E4.5 <http://www.mibqyyo.com/de-download/categorias/smartphones/aquaris-"
-"e-serie/aquaris-e4-5-ubuntu-edition/>`_ (*krillin*)"
+"`Bq E4.5 <http://cdimage.ubports.com/ubports-installer/krillin/e45.zip>`_ "
+"(*krillin*)"
 msgstr ""
-"`Bq E4.5 <http://www.mibqyyo.com/descargas/categorias/aquaris-e4-5-ubuntu-"
-"edition/>`_ (*krillin*)"
+"`Bq E4.5 <http://cdimage.ubports.com/ubports-installer/krillin/e45.zip>`_ "
+"(*krillin*)"
 
 #: ../../userguide/install.rst:39
 msgid ""
@@ -1352,6 +1456,84 @@ msgid ""
 msgstr ""
 "¡Enhorabuena! Su dispositivo arrancará ahora con una versión muy antigua de "
 "Ubuntu Touch. Puede usar ahora el instalador de UBports para continuar."
+
+#~ msgid "Anbox for Ubuntu Touch is in even more early development"
+#~ msgstr ""
+#~ "Anbox para Ubuntu Touch está en una fase aún mas temprana de desarrollo"
+
+#~ msgid ""
+#~ "Anbox only works on the 16.04 version of Ubuntu Touch, which is also in "
+#~ "early development"
+#~ msgstr ""
+#~ "Anbox solo funciona en la versión 16.04 de Ubuntu Touch, que también está "
+#~ "en una fase temprana de desarrollo"
+
+#~ msgid ""
+#~ "Only selected devices are supported for the moment, more will be added in "
+#~ "the future."
+#~ msgstr ""
+#~ "Solo unos cuántos dispositivos seleccionados tienen soporte por ahora, se "
+#~ "añadirán más en el futuro."
+
+#~ msgid ""
+#~ "Meizu Pro 5 (codename: *turbo*, name of the boot partition: *bootimg*) BQ "
+#~ "M10 HD (codename: *cooler*, name of the boot partition: *boot*) BQ M10 "
+#~ "FHD (codename: *frieza*, name of the boot partition: *boot*)"
+#~ msgstr ""
+#~ "Meizu Pro 5 (alias: *turbo*, nombre de la partición de arranque: "
+#~ "*bootimg*) BQ M10 HD (alias: *cooler*, nombre de la partición de "
+#~ "arranque: *boot*) BQ M10 FHD (alias: *frieza*, nombre de la partición de "
+#~ "arranque: *boot*)"
+
+#~ msgid ""
+#~ ":doc:`Install <../install>` the 16.04/devel channel on your supported "
+#~ "device"
+#~ msgstr ""
+#~ ":doc:`Instalar <../install>` el canal 16.04/devel en su dispositivo "
+#~ "soportado"
+
+#~ msgid ""
+#~ "Connect the device to your computer computer and run the following "
+#~ "commands::"
+#~ msgstr ""
+#~ "Conecte el dispositivo a su ordenador y ejecute las siguientes órdenes::"
+
+#~ msgid "``libertine-container-manager create -i CONTAINER-IDENTIFIER``"
+#~ msgstr "``libertine-container-manager create -i CONTAINER-IDENTIFIER``"
+
+#~ msgid "``libertine-container-manager list``"
+#~ msgstr "``libertine-container-manager list``"
+
+#~ msgid "``libertine-container-manager destroy -i CONTAINER-IDENTIFIER``"
+#~ msgstr "``libertine-container-manager destroy -i CONTAINER-IDENTIFIER``"
+
+#~ msgid "``libertine-container-manager list-apps``"
+#~ msgstr "``libertine-container-manager list-apps``"
+
+#~ msgid "``libertine-container-manager install-package -p PACKAGE-NAME``"
+#~ msgstr "``libertine-container-manager install-package -p PACKAGE-NAME``"
+
+#~ msgid "``libertine-container-manager remove-package -p PACKAGE-NAME``"
+#~ msgstr "``libertine-container-manager remove-package -p PACKAGE-NAME``"
+
+#~ msgid "Tipps"
+#~ msgstr "Consejos"
+
+#~ msgid "``libertine-container-manager exec -c COMMAND``"
+#~ msgstr "``libertine-container-manager exec -c COMMAND``"
+
+#~ msgid "``libertine-container-manager exec -c /bin/bash``"
+#~ msgstr "``libertine-container-manager exec -c /bin/bash``"
+
+#~ msgid "``DISPLAY= libertine-launch -i CONTAINER-IDENTIFIER /bin/bash``"
+#~ msgstr "``DISPLAY= libertine-launch -i CONTAINER-IDENTIFIER /bin/bash``"
+
+#~ msgid ""
+#~ "`Bq E4.5 <http://www.mibqyyo.com/de-download/categorias/smartphones/"
+#~ "aquaris-e-serie/aquaris-e4-5-ubuntu-edition/>`_ (*krillin*)"
+#~ msgstr ""
+#~ "`Bq E4.5 <http://www.mibqyyo.com/descargas/categorias/aquaris-e4-5-ubuntu-"
+#~ "edition/>`_ (*krillin*)"
 
 #~ msgid ""
 #~ "To make sure the ssh server is automatically started in the future, "
