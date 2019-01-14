@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-08-28 14:00+0200\n"
-"PO-Revision-Date: 2019-01-14 22:11+0000\n"
-"Last-Translator: Josué <j2g2rp@gmail.com>\n"
+"PO-Revision-Date: 2019-01-14 22:26+0000\n"
+"Last-Translator: advocatux <advocatux@airpost.net>\n"
 "Language-Team: Spanish <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-porting/es/>\n"
 "Language: es\n"
@@ -514,9 +514,8 @@ msgid "Install system.img and rootfs"
 msgstr "Instalar system.img y rootfs"
 
 #: ../../porting/installing-16-04.rst:28
-#, fuzzy
 msgid "Todo"
-msgstr "Por hacer"
+msgstr "Pendiente"
 
 #: ../../porting/installing-16-04.rst:30
 msgid ""
@@ -563,37 +562,35 @@ msgstr ""
 "ordenador al que está conectado. Usaremos esto para depurar el sistema."
 
 #: ../../porting/installing-16-04.rst:43
-#, fuzzy
 msgid ""
 "To confirm that your device has booted correctly, run ``dmesg -w`` and watch "
 "for \"GNU/Linux device\" in the output. If you instead get something similar "
 "to \"Halium initrd Failed to boot\", please get in contact with us so we can "
 "find out why."
 msgstr ""
-"Para confirmar que su dispositivo se ha iniciado correctamente, ejecute "
-"``dmesg -w`` y preste atención a \"GNU/Linux device\" en la salida. Si en "
-"vez de ello le aparece algo parecido a  \"ubports initrd i hit a nail\", "
-"póngase en contacto con nosotros para que podamos descubrir el motivo. "
-"También puede elegir ejecutar ``watch ip link`` y buscar los cambios en los "
-"dispositivos de red."
+"Para confirmar que su dispositivo se ha iniciado correctamente, ejecute ``"
+"dmesg -w`` y esté atento a «GNU/Linux device» en la salida. Si en vez de "
+"ello le aparece algo parecido a  «Halium initrd Failed to boot», póngase en "
+"contacto con nosotros para que podamos descubrir el motivo."
 
 #: ../../porting/installing-16-04.rst:45
-#, fuzzy
 msgid ""
 "Similar to the `Halium reference rootfs <http://docs.halium.org/en/latest/"
 "porting/debug-build/logging-in.html>`__, you should set your computer's IP "
 "on the newly connected RNDIS interface to ``10.15.19.100`` if you don't get "
 "one automatically. Then, run the following to access your device::"
 msgstr ""
-"Parecido al rootfs de referencia de Halium, debería establecer la IP de su "
-"ordenador en la nueva interfaz RNDIS como ``10.15.19.100`` si no la obtiene "
-"automáticamente. Luego, ejecute lo siguiente para acceder a su dispositivo::"
+"Parecido al  `sistema de archivos raíz de referencia de Halium "
+"<http://docs.halium.org/en/latest/porting/debug-build/logging-in.html>`__, "
+"debería establecer la IP de su ordenador en la nueva interfaz RNDIS como "
+"``10.15.19.100`` si no la obtiene automáticamente. Luego, ejecute lo "
+"siguiente para acceder a su dispositivo::"
 
 #: ../../porting/installing-16-04.rst:49
-#, fuzzy
 msgid "The password will be the one that you set while running halium-install."
 msgstr ""
-"La contraseña será la que estableció cuando estaba ejecutando rootstock."
+"La contraseña será la que estableció cuando estaba ejecutando «halium-"
+"install»."
 
 #: ../../porting/installing-16-04.rst:52 ../../porting/running-ut.rst:74
 msgid "Common Problems"
@@ -624,7 +621,6 @@ msgid "Porting information"
 msgstr "Información sobre la migración"
 
 #: ../../porting/introduction.rst:5
-#, fuzzy
 msgid ""
 "If you are looking for information on installing Ubuntu Touch on a supported "
 "device, or if you would like to check if your device is supported, please "
@@ -632,7 +628,7 @@ msgid ""
 msgstr ""
 "Si está buscando información sobre como instalar Ubuntu Touch en un "
 "dispositivo soportado, o si le gustaría comprobar si su dispositivo está "
-"soportado, vea `esta página <https://ubports.com/page/get-ubuntu-touch>`_."
+"soportado, vea `esta página <https://devices.ubuntu-touch.io/>`_."
 
 #: ../../porting/introduction.rst:7
 msgid ""
@@ -655,13 +651,12 @@ msgstr ""
 "de instalar un rootfs, puede volver aquí."
 
 #: ../../porting/introduction.rst:11
-#, fuzzy
 msgid ""
 "Start at :doc:`building-halium-boot` if you'd like to install the UBports "
 "Ubuntu Touch 16.04 rootfs."
 msgstr ""
-"Comience en :doc:`building-ubports-boot`si quiere instalar el rootfs de "
-"UBports Ubuntu Touch 16.04."
+"Comience en :doc:`building-halium-boot` si quiere instalar el sistema de "
+"archivos raíz («rootfs») de UBports Ubuntu Touch 16.04."
 
 #: ../../porting/introduction.rst:25
 msgid "Getting community help"
@@ -705,19 +700,17 @@ msgstr ""
 "sea completamente funcional en su dispositivo."
 
 #: ../../porting/running-ut.rst:7
-#, fuzzy
 msgid "Make / writable"
-msgstr "Hacer / escribible"
+msgstr "Hacer / editable"
 
 #: ../../porting/running-ut.rst:9
-#, fuzzy
 msgid ""
 "Before we make any changes to the rootfs (which will be required for the "
 "next steps), you'll need to remount it with write permissions. To do that, "
 "run the following command::"
 msgstr ""
-"Antes de que hagamos algún cambio al rootfs (que será necesario en el "
-"siguiente paso), necesitará montarlo de nuevo con permisos de escritura. "
+"Antes de que hagamos algún cambio al «rootfs» (que será necesario para los "
+"siguientes pasos), necesitará montarlo de nuevo con permisos de escritura. "
 "Para hacer esto, ejecute la siguiente orden::"
 
 #: ../../porting/running-ut.rst:14
@@ -825,7 +818,6 @@ msgstr ""
 "las aplicaciones web."
 
 #: ../../porting/running-ut.rst:47
-#, fuzzy
 msgid ""
 "A reference device has been chosen from which we derive the values for all "
 "other devices. The reference device is a laptop with a 120ppi screen. "
