@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2019-01-13 16:38+0000\n"
+"PO-Revision-Date: 2019-01-15 01:04+0000\n"
 "Last-Translator: advocatux <advocatux@airpost.net>\n"
 "Language-Team: Spanish <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/es/>\n"
@@ -468,6 +468,14 @@ msgid ""
 "<https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/Main."
 "qml#L200>`_ with a Connection element with ``UriHandler`` as a target."
 msgstr ""
+"Necesitamos añadir en el archivo qml principal algo de código para saber qué "
+"hacer con la URL enviada. Primero añada un `elemento «Arguments» "
+"<https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/"
+"Main.qml#L189>`_ que sostenga la URL, como se hace por ejemplo en la `"
+"aplicación Linphone <https://open-store.io/app/linphone.cibersheep>`_. "
+"Además, añadimos `una conexión al manipulador de la URI <https://gitlab.com/"
+"ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L200>`_ con un "
+"elemento «Connection» con ``UriHandler`` como objetivo."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:120
 msgid ""
@@ -475,6 +483,9 @@ msgid ""
 "the app is opened. But what do we need to do to handle this link when the "
 "app is closed?"
 msgstr ""
+"Este código manejará una URI en forma de ``linphone://sip:xxx@xxx.xx`` "
+"cuando se abre la aplicación. Pero ¿qué necesitamos hacer para manejar este "
+"enlace cuando se cierra la aplicación?"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:122
 msgid ""
@@ -482,10 +493,14 @@ msgid ""
 "linphone-simple/blob/master/qml/Main.qml#L69>`_ that will cover two cases: "
 "1) We receive one URL 2) We receive more than one URL"
 msgstr ""
+"Necesitamos añadir un poco de `código extra <https://gitlab.com/"
+"ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L69>`_ que cubrirá "
+"dos casos: 1) Recibimos una URL 2) Recibimos más de una URL"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:149
 msgid "What happens if more than one app has the same URL type defined?"
 msgstr ""
+"¿Qué ocurre si más de una aplicación tiene definido el mismo tipo de URL?"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:151
 msgid ""
@@ -493,18 +508,23 @@ msgid ""
 "a URL handled by the ``URLdispatcher`` as protocol ``http`` or the protocol "
 "``http://twitter``?"
 msgstr ""
+"Una pregunta muy buena. ¿Qué ocurre si pulsamos en un enlace de Twitter? ¿"
+"Cómo se maneja tal URL por el ``URLdispatcher``? ¿Cómo protocolo ``http`` o "
+"el protocolo ``http://twitter``??"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:153
 msgid "What happens if two apps have the same defined protocol?"
-msgstr ""
+msgstr "¿Qué ocurre si dos aplicaciones tienen definido el mismo protocolo?"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:155
 msgid "Now it’s time to do some tests and share the results in the next guide."
 msgstr ""
+"Ahora es el momento de hacer algunas pruebas y compartir los resultados en "
+"la siguiente guía."
 
 #: ../../appdev/guides/index.rst:4
 msgid "Developer guides"
-msgstr ""
+msgstr "Guías para desarrolladores"
 
 #: ../../appdev/guides/index.rst:6
 msgid ""
@@ -512,16 +532,21 @@ msgid ""
 "mean time we recommend the `Ubuntu Touch Programming Course <https://mimecar."
 "gitbook.io/qt-course/>`__."
 msgstr ""
+"Estamos trabajando actualmente en expandir nuestra lista de guías para "
+"desarrolladores. Mientras tanto recomendamos el `curso de programación de "
+"Ubuntu Touch <https://mimecar.gitbook.io/qt-course/>`__."
 
 #: ../../appdev/guides/index.rst:9 ../../appdev/publishing/index.rst:8
 msgid ""
 "If you are interested in helping create developer guides check out our "
 "`GitLab Project <https://gitlab.com/ubports/ux/development-resources>`__."
 msgstr ""
+"Si tiene interés en ayudar a crear guías para desarrolladores, vea nuestro `"
+"proyecto en GitLab <https://gitlab.com/ubports/ux/development-resources>`__."
 
 #: ../../appdev/guides/writeable-dirs.rst:2
 msgid "Writable directories"
-msgstr ""
+msgstr "Directorios editables"
 
 #: ../../appdev/guides/writeable-dirs.rst:4
 msgid ""
@@ -531,10 +556,16 @@ msgid ""
 "write files that are located in one of three app specific directories "
 "explained in this guide."
 msgstr ""
+"El confinamiento de las aplicaciones es parte del concepto de seguridad de "
+"Ubuntu Touch. Se pueden intercambiar datos entre aplicaciones solo de "
+"acuerdo con las políticas de «AppArmor», principalmente usando el :ref:`"
+"gestor de contenido <contenthub>`. Dicho esto, las aplicaciones solo pueden "
+"leer y escribir archivos que están ubicados en alguno de los tres "
+"directorios específicos para aplicaciones explicados en esta guía."
 
 #: ../../appdev/guides/writeable-dirs.rst:7
 msgid "Standard Paths"
-msgstr ""
+msgstr "Rutas estándar"
 
 #: ../../appdev/guides/writeable-dirs.rst:8
 msgid ""
@@ -544,14 +575,20 @@ msgid ""
 "messages to the log file, use the `Qt debug <https://doc.qt.io/qt-5/qdebug."
 "html>`_ functions."
 msgstr ""
+"Además del acceso de escritura a los directorios de la aplicación explicados "
+"más adelante, la aplicación puede escribir mensajes de depuración en el "
+"archivo de registro ubicado en ``/home/phablet/.cache/upstart/application-"
+"click-<nombrecompletoaplicación>_<nombreaplicación>_<version>.log``. Para "
+"agregar mensajes al archivo de registro, use las funciones de `depuración de "
+"Qt <https://doc.qt.io/qt-5/qdebug.html>`_."
 
 #: ../../appdev/guides/writeable-dirs.rst:11
 msgid "Config"
-msgstr ""
+msgstr "Configuración"
 
 #: ../../appdev/guides/writeable-dirs.rst:12
 msgid "Path: ``/home/phablet/.config/<fullappname>/``"
-msgstr ""
+msgstr "Ruta: ``/home/phablet/.config/<nombrecompletoaplicación>/``"
 
 #: ../../appdev/guides/writeable-dirs.rst:14
 msgid ""
@@ -559,14 +596,17 @@ msgid ""
 "example stores its configuration to ``/home/phablet/.config/com.ubuntu.music/"
 "com.ubuntu.music.conf``."
 msgstr ""
+"Este es el lugar donde guardar los archivos de configuración. La aplicación "
+"de música, por ejemplo, guarda su configuración en ``/home/phablet/.config/"
+"com.ubuntu.music/com.ubuntu.music.conf``."
 
 #: ../../appdev/guides/writeable-dirs.rst:17
 msgid "Cache"
-msgstr ""
+msgstr "Caché"
 
 #: ../../appdev/guides/writeable-dirs.rst:18
 msgid "Path: ``/home/phablet/.cache/<fullappname>/``"
-msgstr ""
+msgstr "Ruta: ``/home/phablet/.cache/<nombrecompletoaplicación>/``"
 
 #: ../../appdev/guides/writeable-dirs.rst:20
 msgid ""
@@ -574,32 +614,41 @@ msgid ""
 "Content Hub. Files that have been shared with the music app for example can "
 "be found in ``/home/phablet/.cache/com.ubuntu.music/HubIncoming/``."
 msgstr ""
+"Este es el lugar para los datos de la caché que se van a usar más tarde. "
+"También la usa el gestor de contenidos. Los archivos que han sido "
+"compartidos con la aplicación de música, por ejemplo, se pueden encontrar en "
+"``/home/phablet/.cache/com.ubuntu.music/HubIncoming/``."
 
 #: ../../appdev/guides/writeable-dirs.rst:23
 msgid "App data"
-msgstr ""
+msgstr "Datos de la aplicación"
 
 #: ../../appdev/guides/writeable-dirs.rst:24
 msgid "Path: ``/home/phablet/.local/share/<fullappname>/``"
-msgstr ""
+msgstr "Ruta: ``/home/phablet/.local/share/<nombrecompletoaplicación>/``"
 
 #: ../../appdev/guides/writeable-dirs.rst:26
 msgid ""
 "This is where your app stores any data. The music app for example stores its "
 "data bases to ``/home/phablet/.local/share/com.ubuntu.music/Databases/``."
 msgstr ""
+"Aquí es donde su aplicación guarda cualquier dato. La aplicación de música, "
+"por ejemplo, almacena sus bases de datos en ``/home/phablet/.local/share/"
+"com.ubuntu.music/Databases/``."
 
 #: ../../appdev/guides/writeable-dirs.rst:30
 msgid "Using Standard Paths in C++"
-msgstr ""
+msgstr "Usando rutas estándar en C++"
 
 #: ../../appdev/guides/writeable-dirs.rst:31
 msgid "The Qt header ``QStandardPaths`` provides the app's writable locations:"
 msgstr ""
+"La cabecera de Qt ``QStandardPaths``proporciona las ubicaciones grabables de "
+"la aplicación:"
 
 #: ../../appdev/guides/writeable-dirs.rst:43
 msgid "Using Standard Paths in QML"
-msgstr ""
+msgstr "Usando rutas estándar en QML"
 
 #: ../../appdev/guides/writeable-dirs.rst:44
 msgid ""
@@ -610,12 +659,20 @@ msgid ""
 "+ plugin provide the paths to your QML part. Therefore, add these methods to "
 "your plugin class:"
 msgstr ""
+"El módulo de Qt `Qt.labs.platform <https://doc.qt.io/archives/qt-5.10/qml-qt-"
+"labs-platform-standardpaths.html>`_ proporciona el «QStandardPaths» en QML. "
+"Por desgracia aún no está disponible en Ubuntu Touch. Posiblemente no querrá "
+"enviar ese módulo con su aplicación. En su lugar, puede dejar simplemente "
+"que su extensión de C++ proporcione las rutas a su parte de QML. Por lo "
+"tanto, añada estos métodos a su clase de extensiones («plugin class»):"
 
 #: ../../appdev/guides/writeable-dirs.rst:64
 msgid ""
 "Assuming the name of your plugin is MyPlugin, you can access these paths in "
 "QML:"
 msgstr ""
+"Suponiendo que el nombre de su extensión es «MyPlugin», puede acceder estas "
+"rutas en QML:"
 
 #: ../../appdev/index.rst:2
 msgid "App development"
@@ -643,6 +700,9 @@ msgid ""
 "new developer or an experienced one, we have several resources to help you "
 "get started."
 msgstr ""
+"Ubuntu Touch es una plataforma vibrante y divertida para el desarrollo. "
+"Tanto si es un desarrollador nuevo como uno experimentado, tenemos varios "
+"recursos para ayudarle a comenzar."
 
 #: ../../appdev/index.rst:11
 msgid ""
@@ -651,10 +711,15 @@ msgid ""
 "behavior defined in JavaScript, C++, Python, or Go. :ref:`Web apps <webapp>` "
 "are special containers to run websites in."
 msgstr ""
+"Ubuntu Touch soporta varios tipos diferentes de aplicaciones. :ref:`"
+"Aplicaciones nativas <nativeapp>` son aplicaciones con interfaces hechas "
+"usando QML o HTML, con su comportamiento definido en JavaScript, C++, Python "
+"o Go. :ref:`Aplicaciones web <webapp>` son contenedores especiales donde se "
+"ejecutan sitios web."
 
 #: ../../appdev/index.rst:21
 msgid "Community"
-msgstr ""
+msgstr "Comunidad"
 
 #: ../../appdev/index.rst:23
 msgid ""
@@ -663,10 +728,15 @@ msgid ""
 "UbuntuAppDevEN>`_ or chat with us on the `UBports app dev forum <https://"
 "forums.ubports.com/category/35/app-development>`_."
 msgstr ""
+"¿Tiene preguntas que no son contestadas en la documentación o quiere charlar "
+"con otros desarrolladores de Ubuntu Touch? Únase a nuestro `grupo en "
+"Telegram de desarrollo de aplicaciones <https://t.me/UbuntuAppDevEN>`_ o "
+"charle con nosotros en el `foro de desarrollo de aplicaciones en UBports "
+"<https://forums.ubports.com/category/35/app-development>`_."
 
 #: ../../appdev/index.rst:26
 msgid "Tools"
-msgstr ""
+msgstr "Herramientas"
 
 #: ../../appdev/index.rst:28
 msgid ""
@@ -704,6 +774,8 @@ msgid ""
 "You can still install the SDK IDE in Ubuntu 16.04, but it is not guaranteed "
 "to work correctly. You can use the following commands to install::"
 msgstr ""
+"Aún puede instalar el «SDK IDE» en Ubuntu 16.04 pero no está garantizado que "
+"funcione correctamente. Puede usar las siguientes órdenes para instalarlo::"
 
 #: ../../appdev/index.rst:42
 msgid "Guides"
@@ -714,16 +786,21 @@ msgid ""
 "Get started building your first app or learn about advanced concepts with "
 "our :ref:`Developer guides <devguides>`."
 msgstr ""
+"Comience a construir su primera aplicación o aprenda sobre conceptos "
+"avanzados con nuestras :ref:`guías para desarrolladores <devguides>`."
 
 #: ../../appdev/index.rst:57
 msgid "Publishing"
-msgstr ""
+msgstr "Publicación"
 
 #: ../../appdev/index.rst:59
 msgid ""
 "After you are done building your app, distribute it on the `OpenStore "
 "<https://open-store.io/>`__ with our :ref:`Publishing guides <publishing>`."
 msgstr ""
+"Después de finalizar la construcción de su aplicación, distribúyala en `"
+"OpenStore <https://open-store.io/>`__ con nuestras :ref:`guías de "
+"publicación <publishing>`."
 
 #: ../../appdev/index.rst:68
 msgid "Documentation"
@@ -747,17 +824,19 @@ msgstr "`Clickable <http://clickable.bhdouglass.com/en/latest/>`__"
 
 #: ../../appdev/index.rst:75
 msgid "More Documentation"
-msgstr ""
+msgstr "Más documentación"
 
 #: ../../appdev/index.rst:87
 msgid "Sample apps"
-msgstr ""
+msgstr "Aplicaciones de muestra"
 
 #: ../../appdev/index.rst:89
 msgid ""
 "Learn more about app development by digging into our :ref:`Sample apps "
 "<sampleapps>`."
 msgstr ""
+"Aprenda más sobre desarrollo de aplicaciones investigando en nuestras :ref:`"
+"aplicaciones de muestra <sampleapps>`."
 
 #: ../../appdev/index.rst:99
 msgid "Preinstalled apps"
@@ -768,6 +847,8 @@ msgid ""
 "The :doc:`/contribute/preinstalled-apps` page has information on developing "
 "the apps which are included with Ubuntu Touch."
 msgstr ""
+"La página :doc:`/contribute/preinstalled-apps`contiene información sobre el "
+"desarrollo de aplicaciones que están incluidas con Ubuntu Touch."
 
 #: ../../appdev/nativeapp/index.rst:4
 msgid "Native applications"
@@ -782,10 +863,13 @@ msgid ""
 "This document contains a full list of Ubuntu Touch's available policy groups "
 "and a description of what they give your app permission to access."
 msgstr ""
+"Este documento contiene una lista completa de los grupos de políticas "
+"disponibles en Ubuntu Touch y una descripción de a qué dan permiso para "
+"acceder a su aplicación."
 
 #: ../../appdev/platform/apparmor.rst:6
 msgid "Each entry follows this format"
-msgstr ""
+msgstr "Cada entrada sigue este formato"
 
 #: ../../appdev/platform/apparmor.rst:21
 msgid ""
@@ -793,6 +877,10 @@ msgid ""
 "Apps containing policies with common usage are generally accepted "
 "immediately, while reserved usage policies will need to be manually reviewed."
 msgstr ""
+"El uso de la política afecta si su aplicación será aceptada por OpenStore. "
+"Las aplicaciones que contienen políticas de uso común son aceptadas "
+"generalmente de inmediato, mientras que las políticas de uso reservado "
+"necesitarán ser revisadas manualmente."
 
 #: ../../appdev/platform/apparmor.rst:24
 msgid "accounts"
@@ -816,22 +904,26 @@ msgstr "Descripción: puede usar cuentas en línea."
 #: ../../appdev/platform/apparmor.rst:259
 #: ../../appdev/platform/apparmor.rst:287
 msgid "Usage: common"
-msgstr ""
+msgstr "Uso: común"
 
 #: ../../appdev/platform/apparmor.rst:30
 msgid ""
 "The accounts policy gives your app the permissions it needs to access the "
 "`Online Accounts API`_."
 msgstr ""
+"La política de cuentas otorga a su aplicación los permisos que necesita para "
+"acceder a la `Online Accounts API`_ (API de cuentas en línea)."
 
 #: ../../appdev/platform/apparmor.rst:34
 msgid "audio"
-msgstr ""
+msgstr "sonido"
 
 #: ../../appdev/platform/apparmor.rst:36
 msgid ""
 "Description: Can play audio (allows playing remote content via media-hub)"
 msgstr ""
+"Descripción: puede reproducir sonido (permite la reproducción de contenido "
+"remoto vía «media-hub»)"
 
 #: ../../appdev/platform/apparmor.rst:40
 msgid ""
@@ -839,14 +931,18 @@ msgid ""
 "media-hub. The permission also gives it the ability to send album art to the "
 "thumbnailer service, which is then shown on the sound indicator."
 msgstr ""
+"La política de sonido la necesita su aplicación para reproducir sonido vía "
+"«pulseaudio» o «media-hub». El permiso también concede la habilidad de "
+"enviar carátulas de álbum al servicio de imágenes en miniatura, que luego se "
+"muestran en el indicador de sonido."
 
 #: ../../appdev/platform/apparmor.rst:44
 msgid "bluetooth"
-msgstr ""
+msgstr "bluetooth"
 
 #: ../../appdev/platform/apparmor.rst:46
 msgid "Description: Use bluetooth (bluez5) as an administrator."
-msgstr ""
+msgstr "Descripción: use bluetooth (bluez5) como administrador."
 
 #: ../../appdev/platform/apparmor.rst:48 ../../appdev/platform/apparmor.rst:58
 #: ../../appdev/platform/apparmor.rst:90 ../../appdev/platform/apparmor.rst:120
@@ -860,7 +956,7 @@ msgstr ""
 #: ../../appdev/platform/apparmor.rst:267
 #: ../../appdev/platform/apparmor.rst:277
 msgid "Usage: reserved"
-msgstr ""
+msgstr "Uso: reservado"
 
 #: ../../appdev/platform/apparmor.rst:50
 msgid ""
@@ -868,10 +964,14 @@ msgid ""
 "for administration of bluetooth and as a stepping stone towards developing a "
 "safe bluetooth API all apps can access."
 msgstr ""
+"Esta política otorga acceso ilimitado a los dispositivos Bluetooth. Se "
+"proporciona para la administración de bluetooth y como un trampolín para el "
+"desarrollo de una API de bluetooth segura que puedan acceder todas las "
+"aplicaciones."
 
 #: ../../appdev/platform/apparmor.rst:54
 msgid "calendar"
-msgstr ""
+msgstr "calendario"
 
 #: ../../appdev/platform/apparmor.rst:56
 msgid "Description: Can access the calendar."
@@ -882,6 +982,8 @@ msgid ""
 "Calendar grants access to the Evolution dataserver's calendar and alarms "
 "APIs. It also grants access to sync-monitor."
 msgstr ""
+"El calendario otorga acceso al servidor de datos del calendario y las APIs "
+"de alarmas de Evolution. También concede acceso a «sync-monitor»."
 
 #: ../../appdev/platform/apparmor.rst:62
 msgid ""
@@ -891,7 +993,7 @@ msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:66
 msgid "camera"
-msgstr ""
+msgstr "cámara"
 
 #: ../../appdev/platform/apparmor.rst:68
 msgid "Description: Can access the camera(s)"
@@ -903,7 +1005,7 @@ msgstr "La política de la cámara permite acceder a las cámaras del dispositiv
 
 #: ../../appdev/platform/apparmor.rst:76
 msgid "connectivity"
-msgstr ""
+msgstr "conectividad"
 
 #: ../../appdev/platform/apparmor.rst:78
 msgid "Description: Can access coarse network connectivity information"
@@ -918,7 +1020,7 @@ msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:86
 msgid "contacts"
-msgstr ""
+msgstr "contactos"
 
 #: ../../appdev/platform/apparmor.rst:88
 msgid "Description: Can access contacts."
