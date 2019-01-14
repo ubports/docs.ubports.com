@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2019-01-14 17:31+0000\n"
+"PO-Revision-Date: 2019-01-15 01:04+0000\n"
 "Last-Translator: louies0623 <louies0623@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-index/zh_Hant/>\n"
@@ -21,20 +21,20 @@ msgstr ""
 
 #: ../../index.rst:2
 msgid "Welcome to the UBports documentation!"
-msgstr "歡迎來到 Ubports 文檔!"
+msgstr "歡迎來到 UBports 文檔!"
 
 #: ../../index.rst:4
 msgid "Welcome to the official documentation of the UBports project!"
-msgstr "歡迎來到 Ubports 專案的正式文檔!"
+msgstr "歡迎來到 UBports 專案的正式文檔!"
 
 #: ../../index.rst:6
 msgid "UBports develops the mobile phone operating system Ubuntu Touch. Ubuntu Touch is a mobile operating system focused on ease of use, privacy, and convergence."
-msgstr "Ubports 開發的手機作業系統 Ubuntu Touch。Ubuntu Touch 是一個專注於易用性、隱私性和融合性的移動作業系統。"
+msgstr "UBports 開發的手機作業系統 Ubuntu Touch。Ubuntu Touch 是一個專注於易用性、隱私性和融合性的移動作業系統。"
 
 #: ../../index.rst:8
 msgid "On this website you find instructions how to install Ubuntu Touch on your mobile phone, user guides and detailed documentation on all system components. If this is your first time here, please consider reading our :doc:`introduction <about/introduction>`."
 msgstr ""
-"在本網站上，您可以找到有關如何在手機上安裝 Ubuntu Touch 的說明，用戶指南以及所有系統組件的詳細文檔。 "
+"在這個網站上，您可以找到有關如何在手機上安裝 Ubuntu Touch 的說明，用戶指南以及所有系統組件的詳細文檔。 "
 "如果這是你第一次來這裡，請考慮閱讀我們的：doc:`introduction <about/introduction>`。"
 
 #: ../../index.rst:10
