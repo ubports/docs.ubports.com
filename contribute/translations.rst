@@ -5,19 +5,13 @@ Although English is the official base language for all UBports projects we belie
 
 We are working hard to meet that goal, and you can help as well.
 
-There are two levels for this:
-
-* A casual approach, as a translator volunteer.
-* A fully committed approach as a UBports Member, filling in `this application <https://ubports.com/survey/start/ubports-membership-application-6>`_.
-
 Tools for Translation
 ---------------------
 
-    For everyone: A web based translation tool called `Weblate <https://translate.ubports.com/>`_. This is the recommended way.
-
+* For everyone: A web based translation tool called `Weblate <https://translate.ubports.com/>`_. This is the recommended way.
 * For advanced users: Working directly on .po files with the editor of your choice, and a GitHub account. The .po files for each project are in their repository on `our GitHub organization <https://github.com/ubports>`_.
 
-    A `Translation Forum <https://forums.ubports.com/category/39/translations>`_ to discuss on translating Ubuntu Touch and its core apps.
+We also have `Translation Forum <https://forums.ubports.com/category/39/translations>`_ to discuss translating Ubuntu Touch and its core apps.
 
 
 How-To
@@ -71,4 +65,3 @@ License
 All the translation projects, and all your contributions to this project, are under a `Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) <https://creativecommons.org/licenses/by-sa/4.0/>`_ license that you explicitly accept by contributing to the project.
 
 Go to that link to learn what this exactly means.
-
