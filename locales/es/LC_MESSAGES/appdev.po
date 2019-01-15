@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2019-01-15 16:02+0000\n"
+"PO-Revision-Date: 2019-01-15 20:06+0000\n"
 "Last-Translator: advocatux <advocatux@airpost.net>\n"
 "Language-Team: Spanish <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/es/>\n"
@@ -1156,10 +1156,14 @@ msgid ""
 "for vetted applications only in this version of the policy. A future version "
 "of the policy may move this out of reserved status."
 msgstr ""
+"Descripción: puede acceder a «history-service» (servicio de historial). Este "
+"grupo de políticas está reservado solo para aplicaciones revisadas en esta "
+"versión de la política. Una versión futura de la política podría mover esto "
+"fuera del estado reservado."
 
 #: ../../appdev/platform/apparmor.rst:151
 msgid "keep-display-on"
-msgstr ""
+msgstr "«keep-display-on» (mantener la pantalla encendida)"
 
 #: ../../appdev/platform/apparmor.rst:153
 msgid "Description: Can request keeping the screen on"
@@ -1176,10 +1180,12 @@ msgstr "Descripción: puede acceder a la ubicación"
 #: ../../appdev/platform/apparmor.rst:165
 msgid "Allows an app to request access to the device's current location."
 msgstr ""
+"Permite a una aplicación solicitar acceso a la ubicación actual del "
+"dispositivo."
 
 #: ../../appdev/platform/apparmor.rst:169
 msgid "microphone"
-msgstr ""
+msgstr "micrófono"
 
 #: ../../appdev/platform/apparmor.rst:171
 msgid "Description: Can access the microphone"
@@ -1187,7 +1193,7 @@ msgstr "Descripción: puede acceder al micrófono"
 
 #: ../../appdev/platform/apparmor.rst:177
 msgid "music_files"
-msgstr ""
+msgstr "«music_files» (archivos de música)"
 
 #: ../../appdev/platform/apparmor.rst:179
 msgid ""
@@ -1196,16 +1202,24 @@ msgid ""
 "typically use the content_exchange policy group and API to access music "
 "files instead."
 msgstr ""
+"Descripción: puede leer y escribir a los archivos de música. Este grupo de "
+"políticas está reservado para determinadas aplicaciones, como los "
+"reproductores de música. Los desarrolladores deberían usar normalmente el "
+"grupo de políticas de «content_exchange» (intercambio de contenido) y la API "
+"para acceder a los archivos de música."
 
 #: ../../appdev/platform/apparmor.rst:183
 msgid ""
 "The music_files policy group allows an app to read or write to the Music "
 "directories in the user's home folder or on external media."
 msgstr ""
+"El grupo de políticas de «music_files» (archivos de música) permite a una "
+"aplicación leer o escribir a los directorios de música en la carpeta "
+"principal del usuario o en la unidad externa."
 
 #: ../../appdev/platform/apparmor.rst:187
 msgid "music_files_read"
-msgstr ""
+msgstr "«music_files_read» (lectura de archivos de música)"
 
 #: ../../appdev/platform/apparmor.rst:189
 msgid ""
@@ -1213,16 +1227,24 @@ msgid ""
 "certain applications, such as music players. Developers should typically use "
 "the content_exchange policy group and API to access music files instead."
 msgstr ""
+"Descripción: puede leer todos los archivos de música. Este grupo de "
+"políticas está reservado para ciertas aplicaciones, como los reproductores "
+"de música. Los desarrolladores deberían normalmente usar el grupo de "
+"políticas de «content_exchange» (intercambio de contenido) y la API para "
+"acceder a los archivos de música."
 
 #: ../../appdev/platform/apparmor.rst:193
 msgid ""
 "The music_files_read policy group allows an app to read the Music "
 "directories in the user's home folder or on external media."
 msgstr ""
+"El grupo de políticas de «music_files_read» (lectura de archivos de música) "
+"permite a una aplicación leer los directorios de música en la carpeta "
+"principal del usuario o en la unidad externa."
 
 #: ../../appdev/platform/apparmor.rst:197
 msgid "networking"
-msgstr ""
+msgstr "«networking» (redes)"
 
 #: ../../appdev/platform/apparmor.rst:199
 msgid "Description: Can access the network"
@@ -1233,10 +1255,13 @@ msgid ""
 "The networking policy group allows an app to contact network devices and use "
 "the `download manager`_."
 msgstr ""
+"El grupo de políticas de «networking» (redes) permite a una aplicación "
+"contactar dispositivos en red y usar el `download manager`_ (gestor de "
+"descargas)."
 
 #: ../../appdev/platform/apparmor.rst:207
 msgid "picture_files"
-msgstr ""
+msgstr "«picture_files» (archivos de imágenes)"
 
 #: ../../appdev/platform/apparmor.rst:209
 msgid ""
@@ -1245,16 +1270,24 @@ msgid ""
 "should typically use the content_exchange policy group and API to access "
 "picture files instead."
 msgstr ""
+"Descripción: puede leer y escribir a archivos de imágenes. Este grupo de "
+"políticas está reservado para ciertas aplicaciones, como las aplicaciones de "
+"galería. Los desarrolladores deberían usar normalmente el grupo de políticas "
+"de «content_exchange» (intercambio de contenido) y la API para acceder a los "
+"archivos de imágenes."
 
 #: ../../appdev/platform/apparmor.rst:213
 msgid ""
 "The picture_files policy group allows an app to read and write to the "
 "Pictures directories in the user's home folder or on external media."
 msgstr ""
+"El grupo de políticas de «picture_files» (archivos de imágenes) permite a "
+"una aplicación leer y escribir a los directorios de «Pictures» (imágenes) en "
+"la carpeta principal del usuario o en la unidad externa."
 
 #: ../../appdev/platform/apparmor.rst:217
 msgid "picture_files_read"
-msgstr ""
+msgstr "«picture_files_read» (lectura de archivos de imágenes)"
 
 #: ../../appdev/platform/apparmor.rst:219
 msgid ""
@@ -1263,12 +1296,20 @@ msgid ""
 "typically use the content_exchange policy group and API to access picture "
 "files instead."
 msgstr ""
+"Descripción: puede leer todos los archivos de imágenes. Este grupo de "
+"políticas está reservado para ciertas aplicaciones, como las aplicaciones de "
+"galería. Los desarrolladores deberían usar normalmente el grupo de políticas "
+"de «content_exchange» (intercambio de contenido) y la API para acceder a los "
+"archivos de imágenes."
 
 #: ../../appdev/platform/apparmor.rst:223
 msgid ""
 "The picture_files_read policy group allows an app to read the Pictures "
 "directories in the user's home folder or on external media."
 msgstr ""
+"El grupo de políticas de «picture_files_read» (lectura de archivos de "
+"imágenes) permite a una aplicación leer los directorios de «Pictures» "
+"(imágenes) en la carpeta principal del usuario o en la unidad externa."
 
 #: ../../appdev/platform/apparmor.rst:227
 msgid "push-notification-client"
@@ -1280,7 +1321,7 @@ msgstr "Descripción: puede usar notificaciones como cliente"
 
 #: ../../appdev/platform/apparmor.rst:235
 msgid "sensors"
-msgstr ""
+msgstr "«sensors» (sensores)"
 
 #: ../../appdev/platform/apparmor.rst:237
 msgid "Description: Can access the sensors"
@@ -1292,7 +1333,7 @@ msgstr "Permite a las aplicaciones acceder a `device sensors`_"
 
 #: ../../appdev/platform/apparmor.rst:245
 msgid "usermetrics"
-msgstr ""
+msgstr "«usermetrics» (métricas de usuario)"
 
 #: ../../appdev/platform/apparmor.rst:247
 msgid "Description: Can use UserMetrics to update the InfoGraphic"
@@ -1305,19 +1346,24 @@ msgid ""
 "Allows an app to write metrics to the UserMetrics service so they can be "
 "displayed on the InfoGraphic."
 msgstr ""
+"Permite a una aplicación escribir métricas al servicio «UserMetrics» ("
+"métricas de usuario) para que puedan ser mostradas en el «InfoGraphic» "
+"(infografía)."
 
 #: ../../appdev/platform/apparmor.rst:255
 msgid "video"
-msgstr ""
+msgstr "«video» (vídeo)"
 
 #: ../../appdev/platform/apparmor.rst:257
 msgid ""
 "Description: Can play video (allows playing remote content via media-hub)"
 msgstr ""
+"Descripción: puede reproducir vídeo (permite la reproducción de contenido "
+"remoto vía «media-hub» (centro multimedia)"
 
 #: ../../appdev/platform/apparmor.rst:263
 msgid "video_files"
-msgstr ""
+msgstr "«video_files» (archivos de vídeo)"
 
 #: ../../appdev/platform/apparmor.rst:265
 msgid ""
@@ -1326,16 +1372,23 @@ msgid ""
 "should typically use the content_exchange policy group and API to access "
 "video files instead."
 msgstr ""
+"Descripción: puede leer y escribir a los archivos de vídeo. Este grupo de "
+"políticas está reservado para ciertas aplicaciones, como las aplicaciones de "
+"galería. Los desarrolladores deberían normalmente usar el «content_exchange» "
+"(intercambio de contenido) y la API para acceder a los archivos de vídeo."
 
 #: ../../appdev/platform/apparmor.rst:269
 msgid ""
 "The video_files policy group allows an app to read and write to the Videos "
 "directories in the user's home folder or on external media."
 msgstr ""
+"El grupo de políticas de «video_files» (archivos de vídeo) permite a una "
+"aplicación leer y escribir a los directorios de «Videos» (vídeos) en la "
+"carpeta principal del usuario o en la unidad externa."
 
 #: ../../appdev/platform/apparmor.rst:273
 msgid "video_files_read"
-msgstr ""
+msgstr "«video_files_read» (lectura de archivos de vídeo)"
 
 #: ../../appdev/platform/apparmor.rst:275
 msgid ""
@@ -1344,16 +1397,23 @@ msgid ""
 "typically use the content_exchange policy group and API to access video "
 "files instead."
 msgstr ""
+"Descripción: puede leer todos los archivos de vídeo. Este grupo de políticas "
+"está reservado para ciertas aplicaciones, como las aplicaciones de galería. "
+"Los desarrolladores deberían normalmente usar el grupo de políticas de "
+"«content_exchange» y la API para acceder a los archivos de vídeo."
 
 #: ../../appdev/platform/apparmor.rst:279
 msgid ""
 "The video_files_read policy group allows an app to read the Videos "
 "directories in the user's home folder or on external media."
 msgstr ""
+"El grupo de políticas de «video_files_read» (lectura de archivos de vídeo) "
+"permite a una aplicación leer los directorios de «Videos» (vídeos) en la "
+"carpeta principal del usuario o en la unidad externa."
 
 #: ../../appdev/platform/apparmor.rst:283
 msgid "webview"
-msgstr ""
+msgstr "«webview» (vista web)"
 
 #: ../../appdev/platform/apparmor.rst:285
 msgid "Description: Can use the UbuntuWebview"
@@ -1362,6 +1422,8 @@ msgstr "Descripción: puede usar «UbuntuWebview»"
 #: ../../appdev/platform/apparmor.rst:289
 msgid "The webview policy group allows apps to embed a `web browser view`_."
 msgstr ""
+"El grupo de políticas «webview» (vista web) permite a las aplicaciones "
+"integrar una `vista de navegador web`_."
 
 #: ../../appdev/platform/click.rst:4
 msgid "Click package"
@@ -1484,6 +1546,8 @@ msgstr "Ejemplo de archivo ``apparmor.json``::"
 #: ../../appdev/platform/click.rst:77
 msgid "For a full list of available policy groups, see :doc:`apparmor`."
 msgstr ""
+"Para una lista completa de grupos de políticas disponibles, vea "
+":doc:`apparmor`."
 
 #: ../../appdev/platform/index.rst:4
 msgid "Platform"
@@ -1549,7 +1613,7 @@ msgstr "`Lea la documentación <https://docs.ubuntu.com/phone/en/platform/>`__"
 
 #: ../../appdev/publishing/index.rst:4
 msgid "App publishing guides"
-msgstr ""
+msgstr "Guías de publicación de aplicaciones"
 
 #: ../../appdev/publishing/index.rst:6
 msgid ""
@@ -1557,10 +1621,13 @@ msgid ""
 "mean time you can get started over at the `OpenStore's submission page "
 "<https://open-store.io/submit>`__."
 msgstr ""
+"Estamos trabajando en la actualidad para expandir nuestra lista de guías de "
+"publicación. Mientras tanto puede comenzar en la `página de envío de "
+"OpenStore <https://open-store.io/submit>`__."
 
 #: ../../appdev/samples/index.rst:4
 msgid "Sample Apps"
-msgstr ""
+msgstr "Aplicaciones de muestra"
 
 #: ../../appdev/samples/index.rst:6
 msgid ""
@@ -1568,12 +1635,18 @@ msgid ""
 "time many apps on the `OpenStore <https://open-store.io/>`__ are open source "
 "and can be used as a reference."
 msgstr ""
+"Estamos trabajando en la actualidad para expandir nuestra lista de "
+"aplicaciones de muestra. Mientras tanto, muchas aplicaciones en `OpenStore "
+"<https://open-store.io/>`__ son de código abierto y se pueden usar como "
+"referencia."
 
 #: ../../appdev/samples/index.rst:8
 msgid ""
 "If you are interested in helping create sample apps check out our `GitLab "
 "Project <https://gitlab.com/ubports/ux/development-resources>`__."
 msgstr ""
+"Si está interesado en ayudar a crear aplicaciones de muestra, vea nuestro `"
+"proyecto en GitLab <https://gitlab.com/ubports/ux/development-resources>`__."
 
 #: ../../appdev/webapp/guide.rst:2 ../../appdev/webapp/index.rst:15
 msgid "Guide"
