@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2019-01-15 01:04+0000\n"
+"PO-Revision-Date: 2019-01-15 06:05+0000\n"
 "Last-Translator: louies0623 <louies0623@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-about/zh_Hant/>\n"
@@ -42,7 +42,7 @@ msgid "After Canonical suddenly announced `their plans to terminate support of U
 msgstr ""
 "在Canonical 於2017年4月突然宣佈 \"他們終止對 Ubuntu Touch 的支<https://insights.ubuntu.com/"
 "2017/04/05/"
-"growing-ubuntu-for-cloud-and-iot-rather-than-phone-and-convergence/>`_ "
+"growing-ubuntu-for-cloud-and-iot-rather-than-phone-and-convergence/>\"_ "
 "2017年4月，UBports 及其姊妹專案開始開發開放原始碼，維護和擴大其未來的可能性。"
 
 #: ../../about/introduction.rst:14
@@ -52,12 +52,16 @@ msgstr "關於文檔"
 #: ../../about/introduction.rst:16
 msgid "This documentation is always improving thanks to the members of the UBports community. It is written in ReStructuredText and converted into this readable form by `Sphinx <http://www.sphinx-doc.org/en/stable/>`_, `ReCommonMark <http://recommonmark.readthedocs.io/en/latest/>`_, and `Read the Docs <https://readthedocs.io>`_. You can start contributing by checking out the :doc:`Documentation intro </contribute/documentation>`."
 msgstr ""
+"由於 UBports 社區的成員，此文檔始終在改進。它是用 Re 結構文本編寫的，並透過 \"Sphinx <http://www.sphinx-doc."
+"org/en/stable/>\"_，\"重新共同標記<http://recommonmark.readthedocs.io/en/latest/>\""
+"_，和 \"閱讀文檔<https://readthedocs.io>\"_。您可以通過查看:doc: \"開始提供說明 </contribute/"
+"documentation>\"。"
 
 #: ../../about/introduction.rst:18
 msgid "All documents are licensed under the Creative Commons Attribution ShareAlike 4.0 (`CC-BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0/>`_) license. Please give attribution to \"The UBports Community\"."
 msgstr ""
-"所有文件均根據 Creative Commons Attribution ShareAlike 4.0 獲得許可執照 (`CC-BY-SA 4.0 "
-"<https://creativecommons.org/licenses/by-sa/4.0/>`_) 。 請將歸屬於“ UBports 社區”。"
+"所有文件均根據 Creative Commons Attribution ShareAlike 4.0 獲得許可執照 (\"CC-BY-SA 4.0 "
+"<https://creativecommons.org/licenses/by-sa/4.0/>\"_) 。 請將歸屬於 “UBports 社區”。"
 
 #: ../../about/introduction.rst:21
 msgid "Attribution"
@@ -66,6 +70,8 @@ msgstr "屬性"
 #: ../../about/introduction.rst:23
 msgid "This documentation was heavily modeled after the `Godot Engine's Documentation <http://docs.godotengine.org/en/stable/>`_, attribution to Juan Linietsky, Ariel Manzur and the Godot community."
 msgstr ""
+"這些文檔在很大程度上是參照 \"Godot 引擎\" 的文檔 <http://docs.godotengine.org/en/stable/>\"_，"
+"歸屬於 Juan Linietsky，Ariel Manzur 和 Godot 社區。"
 
 #: ../../about/process/branch-naming.rst:2
 msgid "Branch-naming convention"
@@ -73,7 +79,7 @@ msgstr "分支命名規定"
 
 #: ../../about/process/branch-naming.rst:4
 msgid "Our branch-naming conventions ensure that software can be built by our CI and tested easily by other developers."
-msgstr "我們的分支命名規定是確保軟體可以由我們的 CI構建，並可由其他開發人員輕鬆進行測試。"
+msgstr "我們的分支命名規定是確保軟體可以由我們的 CI 構建，並可由其他開發人員輕鬆進行測試。"
 
 #: ../../about/process/branch-naming.rst:6
 msgid "Every Git repository's README file should state which branch-naming convention is used and possible deviations from the norm."
@@ -86,6 +92,8 @@ msgstr "Click-套件"
 #: ../../about/process/branch-naming.rst:11
 msgid "Software that is exclusively distributed as a click-package (and not also as a deb) only uses one ``master`` branch that is protected. Separate temporary development branches with arbitrary descriptive names can be created and merged into master when the time comes. For marking and archiving milestones in development history, ideally Git tags or GitHub releases should be used."
 msgstr ""
+"專門作為 click-套件 (也作為 deb) 分發的軟體只使用一個受保護的 \"master\" 分支。可以創建具有任意描述性名稱的單獨臨時開發分支，"
+"並在時機成熟時合併為 master。對於開發歷史中的標記和存檔里程碑，最好使用 Git 標記或 GitHub 版本。"
 
 #: ../../about/process/branch-naming.rst:14
 msgid "Deb-Packages"
@@ -98,12 +106,15 @@ msgstr "為了最有效地利用我們的 CI 系統，使用了專門的決策�
 #: ../../about/process/branch-naming.rst:18
 msgid "For pre-installed Ubuntu Touch components, deb-packages are used wherever possible. This includes Core Apps, since they can still be independently updated using click-package downloads from the OpenStore. This policy allows us to make use of the powerful Debian build system to resolve dependencies."
 msgstr ""
-"對於預先安裝的 Ubuntu Touch 元件，只要有可能，就會使用 deb 封包。這包括核心應用，因為它們仍然可以使用 OpenStore 的 "
-"Click 封包下載獨立更新。此策略允許我們利用強大的 Debian 構建系統來解決依賴關係。"
+"對於預先安裝的 Ubuntu Touch 元件，只要有可能，就會使用 deb-套件。這包括核心應用，因為它們仍然可以使用 OpenStore 的 "
+"click-套件下載獨立更新。此策略允許我們利用強大的 Debian 構建系統來解決依賴關係。"
 
 #: ../../about/process/branch-naming.rst:20
 msgid "Every repository that uses this convention will have branches for the actively supported Ubuntu releases referenced by their codenames (``bionic``, ``xenial``, ``vivid``, etc.). These are the branches that are built directly into the corresponding images and published on :doc:`repo.ubports.com <ppa>`. If no separate versions for the different Ubuntu bases are needed, the repository will just have one ``master`` branch and the CI system will still build versions for all actively supported releases and resolve dependencies accordingly."
 msgstr ""
+"使用此約定的每個存儲庫都將有分支, 用於由其代號引用的主動支援的 Ubuntu 版本是由 (\"bionic\"、\"xenial\"、\"vivid\""
+" 等等)。這些分支直接內置到相應的映像中，並在:doc上發佈\"repo.ubports.com <ppa>\"。如果不需要不同 Ubuntu "
+"庫的單獨版本，存儲庫將只有一個 \"master\" 分支，CI 系統仍將為所有積極支援的版本生成版本，並相對應地解決依賴關係。"
 
 #: ../../about/process/branch-naming.rst:23
 msgid "Branch-extensions"
@@ -112,14 +123,20 @@ msgstr "分支擴展"
 #: ../../about/process/branch-naming.rst:25
 msgid "To build and publish packages based on another repository, an extension in the form of  ``xenial_-_some-descriptive_extension`` can be used. The CI system will then resolve all dependencies using the ``xenial_-_some-descriptive_extension`` branch of other repositories or fall back on the normal ``xenial`` dependencies, if that doesn't exist. These special dependencies are not built into the image but still pushed to  on :doc:`repo.ubports.com <ppa>`."
 msgstr ""
+"要構建和發佈基於另一個存儲庫的套件，可以使用 \"xenial_-_some-descriptive_extension\" 的形式的擴展。然後，"
+"CI系統將使用其他存儲庫的 \"xenial_-_some-descriptive_extension\" 分支來解決所有依賴關係，或者回到正常的 \""
+"xenial\" 依賴關係上，如果這種依賴關係不存在的話。這些特殊的依賴項不是內置到映像中，而是在 :doc:上推送到: \""
+"repo.ubports.com <ppa>\"。"
 
 #: ../../about/process/branch-naming.rst:27
 msgid "Multiple branch extensions can be chained together in the form of ``xenial_-_dependency-1_-_dependency-2_-_dependency-3``. This means that the CI system will look for dependencies in the following repositories:"
 msgstr ""
+"多個分支擴展可以以 \"xenial_-_dependency-1_-_dependency-2_-_dependency-3\" 的形式鏈接在一起。 "
+"這意味著 CI 系統將在以下存儲庫中尋找依賴項："
 
 #: ../../about/process/branch-naming.rst:38
 msgid "There is no prioritization, so the build system will always use the package with the highest version number or the newest build if the version is equal."
-msgstr "沒有優先順序，因此生成系統將始終使用版本號最新的封包，如果版本相等，則始終使用最新的構建。"
+msgstr "沒有優先順序，因此生成系統將始終使用版本號最新的套件，如果版本相等，則始終使用最新的構建。"
 
 #: ../../about/process/branch-naming.rst:41
 msgid "Dependency-file"
@@ -133,6 +150,8 @@ msgstr ""
 #: ../../about/process/branch-naming.rst:53
 msgid "The ``ubports.depends`` file is an **exclusive list**, so the build system will not resolve dependencies linearly like it does in a branch name! Every dependency has to be listed. You will almost always want to include your base release (i.e. ``xenial``)."
 msgstr ""
+"\"ubports.depends\" 檔案是一個 ** 獨立清單 **，因此生成系統不會像分支名稱那樣線性地解析依賴關係!必須列出每個依賴項。"
+"您幾乎總是希望包括您的基本版本 (即 \"xenial\")。"
 
 #: ../../about/process/index.rst:2
 msgid "Processes"
@@ -144,7 +163,7 @@ msgstr "文檔的這一部分詳細介紹了不同團隊的標準化流程。"
 
 #: ../../about/process/index.rst:7
 msgid "The process definitions are still a work in progress and need to be completed by the respective teams."
-msgstr "流程定義仍在進行中，需要由各小組完成。"
+msgstr "流程定義仍在進行中，需要由各團隊完成。"
 
 #: ../../about/process/issue-tracking.rst:2
 msgid "Issue-Tracking Guidelines"
@@ -153,6 +172,8 @@ msgstr "問題追蹤指南"
 #: ../../about/process/issue-tracking.rst:4
 msgid "This document describes the standard process of dealing with new issues in UBports projects. Not to be confused with the :doc:`guide on writing a good bugreport </contribute/bugreporting>`."
 msgstr ""
+"本文檔描述了處理 UBports 項目中新問題的標準流程。 不要混淆:doc:\"編寫好的錯誤報告指南 </contribute/"
+"bugreporting>\"。"
 
 #: ../../about/process/issue-tracking.rst:7
 msgid "Where are bugs tracked?"
@@ -161,10 +182,14 @@ msgstr "跟踪錯誤在哪裡？"
 #: ../../about/process/issue-tracking.rst:9
 msgid "Since our quality assurance depends heavily on the community, we try to track issues where the user would expect them, instead of separated by repository. This means, that issues of almost all components that are distributed as with the system-image are tracked in the `Ubuntu Touch tracker <https://github.com/ubports/ubuntu-touch>`__. An exception of this are click-apps that can be updated independently through the OpenStore."
 msgstr ""
+"由於我們的品質保證 (QA) 有很大程度上需要依賴於社區，我們試圖跟蹤使用者期望它們出現的問題，而不是用存儲庫分隔。這意味著，"
+"幾乎所有與系統映象一樣分佈的元件的問題都會在 \"Ubuntu Touch 追蹤器 <https://github.com/ubports/ubuntu-"
+"touch>\"__。這方面的一個例外是可以通過 OpenStore 來獨立更新 Click-應用程式。"
 
 #: ../../about/process/issue-tracking.rst:17
 msgid "Most other repositories track issues locally. If you're unsure whether a repository uses its own tracker or not, consult the README.md file. Repositories that don't track issues locally have their bugtracker disabled."
 msgstr ""
+"大多數其他存儲庫在當地追蹤問題。 如果您不確定存儲庫是否使用自己的追蹤器，請查閱 README.md 文件。 不在本地跟踪問題的存儲庫禁用了錯誤追蹤器。"
 
 #: ../../about/process/issue-tracking.rst:21
 msgid "This page is mainly about the Ubuntu Touch tracker, but most principles apply to other projects as well."
@@ -172,7 +197,7 @@ msgstr "本頁主要介紹 Ubuntu Touch 追蹤器，但大多數原則也適用�
 
 #: ../../about/process/issue-tracking.rst:25
 msgid "Practicality beats purity! Exceptions might apply and should be described in the projects README.md file."
-msgstr "實用性勝過純潔！ 例外可能適用，應在項目README.md文件中描述。"
+msgstr "實用性勝過純潔！ 例外可能適用，應在項目 README.md 文件中描述。"
 
 #: ../../about/process/issue-tracking.rst:28
 msgid "GitHub projects"
@@ -181,6 +206,8 @@ msgstr "GitHub 專案"
 #: ../../about/process/issue-tracking.rst:30
 msgid "To increase transparency and communication, GitHub projects (Kanban-Boards) are used wherever practical. In case of github.com/ubports/ubuntu-touch, a single project is used for all issues. Projects support filtering by labels, so that only issues that belong to a specific team or affect a specific device can be viewed."
 msgstr ""
+"為了提高透明度和溝通，在可行的情況下使用 GitHub 專案 (Kanban-Boards)。在 github.com/ubports/ubuntu-"
+"touch 的情況下，所有問題都使用一個專案。專案支援按標示進行篩選，因此只能查看屬於特定團隊或影響特定裝置的問題。"
 
 #: ../../about/process/issue-tracking.rst:36
 msgid "These are the standard columns:"
@@ -189,102 +216,118 @@ msgstr "這些都是標準列:"
 #: ../../about/process/issue-tracking.rst:38
 msgid "**None (awaiting triage)**: The issue has been approved by a member of the QA team and is awaiting review from the responsible development team. if the issue is a bug, instructions to reproduce are included in the issue description. if the issue is a feature request, it has passed a primary sanity check by the qa-team but has not yet been accepted by the responsible development-team."
 msgstr ""
+"** 無 (等待分類)** ：該問題已得到  QA "
+"團隊一名成員的批准，正在等待負責的開發團隊的審查。如果問題是錯誤，則問題說明中包含重現說明。如果問題是功能請求，則它已通過 QA "
+"團隊的主要理智檢查，但尚未被負責的開發團隊接受。"
 
 #: ../../about/process/issue-tracking.rst:39
 msgid "**Accepted**: The issue has been accepted by the responsible development-team. If the issue is a bugreport, the team has decided that it should be fixable and accepts the responsibility. If the issue is a feature request, the team thinks it should be implemented as described."
 msgstr ""
+"**接受** ：負責任的發展團隊已接受這一問題。如果問題是一個錯誤，那回報團隊已經決定它應該是可修復的，並接受責任。如果問題是功能請求，團隊認為應該按照所"
+"述方式實現該問題。"
 
 #: ../../about/process/issue-tracking.rst:40
 msgid "**In Development**: A patch is in development. Usually means that a developer is assigned to the issue."
-msgstr "**開發中**: 一個補丁正在開發中，通常意味著開發人員被分配到該問題。"
+msgstr "**開發中** ：一個補丁正在開發中，通常意味著開發人員被分配到該問題。"
 
 #: ../../about/process/issue-tracking.rst:41
 msgid "**Quality Assurance**: The patch is completed and has passed initial testing. The QA team will now review it and provide feedback. If problems are found, the issue is moved back to “Accepted”."
 msgstr ""
+"**品質保證 (QA) ** ：修補程式已完成並已通過初步測試。QA 團隊現在將對其進行審查並提供回報。如果發現問題，問題將移回 \"已接受\"。"
 
 #: ../../about/process/issue-tracking.rst:42
 msgid "**Release Candidate**: The patch has passed QA and is ready for release. In case of deb-packages that are included in the system-image, the patch will be included in the next over-the-air update on the rc channel, and, if everything goes well, in the next release of the stable channel."
 msgstr ""
+"**最終測試 (RC)** ：修補程式已通過品質保證 (QA)，並已準備好發佈。如果系統映象中的套件，該修補程式將包含在最終測試 (RC) "
+"通道上的下一次無線更新中，如果一切順利，則套件含在穩定通道的下一個版本中。"
 
 #: ../../about/process/issue-tracking.rst:43
 msgid "**None (removed from the project)**: If the issue is open and labeled \"help wanted\", community contributions are required to resolve the issue. If it's closed, that means that either a patch has been released on the stable channel (a comment on the issue should link to the patch) or the issue has been rejected (labeled “wontfix”)."
 msgstr ""
+"**無 (從專案中刪除) ** ：如果問題是打開的, 並標記為 \"需要幫助\"，則需要社區捐款來解決問題。如果它已關閉，"
+"這意味著在穩定通道上已發佈修補程式 (有關該問題的注釋應連結到該修補程式)，或者問題已被拒絕 (標記為 \"不修復\")。"
 
 #: ../../about/process/issue-tracking.rst:46
 msgid "Labels"
-msgstr "標籤"
+msgstr "標示"
 
 #: ../../about/process/issue-tracking.rst:48
 msgid "All issues - even closed ones - should be labeled to allow the use of GitHub's global filtering. For example, `these are all of the issues labeled 'enhancement' inside @ubports <https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+org%3Aubports+label%3A%22feature+request%22&type=>`_. Consult the `GitHub help pages <https://help.github.com/articles/about-searching-on-github/>`__ for more information on search and filtering."
 msgstr ""
+"所有問題 -即使是封閉的問題- 都應標示，允許使用 GitHub 的全域過濾。例如: \"這些都是所有的問題標示為 \"增強\" 裡 @ubports "
+"<https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+org%3Aubports+label%3A%"
+"22feature+request%22&type=>\"_。請參閱 \"GitHub 說明頁面\"<https://help.github.com/"
+"articles/about-searching-on-github/>\"_有關搜尋和篩選的詳細資訊。"
 
 #: ../../about/process/issue-tracking.rst:51
 msgid "Here's a list of labels that are normally used by all repositories."
-msgstr "下面是通常由所有存儲庫使用的標籤清單。"
+msgstr "下面是通常由所有存儲庫使用的標示清單。"
 
 #: ../../about/process/issue-tracking.rst:53
 msgid "**needs confirmation**: The bug needs confirmation and / or further information from affected users"
-msgstr "**需要確認**: 該錯誤需要受影響使用者的確認和/或進一步資訊"
+msgstr "**需要確認** ：該錯誤需要受影響使用者的確認和/或進一步資訊"
 
 #: ../../about/process/issue-tracking.rst:55
 msgid "**bug**: This issue is a confirmed bug. If it's reproducible, reproduction steps are described."
-msgstr "**錯誤**: 此問題是已確認的錯誤。如果它是可重現的，複製步驟描述。"
+msgstr "**錯誤** ：此問題是已確認的錯誤。如果它是可重現的，複製步驟描述。"
 
 #: ../../about/process/issue-tracking.rst:57
 msgid "**opinion**: This issue needs further discussion."
-msgstr "**意見**: 這個問題需要進一步討論。"
+msgstr "**意見** ：這個問題需要進一步討論。"
 
 #: ../../about/process/issue-tracking.rst:58
 msgid "**enhancement**: This issue is a feature request."
-msgstr "**增強**: 此問題是功能請求。"
+msgstr "**增強** ：此問題是功能請求。"
 
 #: ../../about/process/issue-tracking.rst:59
 msgid "**question**: This issue is a support request or general question."
-msgstr "**問題**: 此問題是支援請求或一般問題。"
+msgstr "**問題** ：此問題是支援請求或一般問題。"
 
 #: ../../about/process/issue-tracking.rst:60
 msgid "**invalid**: This issue can not be confirmed or was reported in the wrong tracker."
-msgstr "**無效**: 此問題無法確認或無法在錯誤追蹤器中報告。"
+msgstr "**無效** ：此問題無法確認或無法在錯誤追蹤器中報告。"
 
 #: ../../about/process/issue-tracking.rst:62
 msgid "**duplicate**: This has already been reported somewhere else. Please provide a link and close."
-msgstr "**重複**: 這已經在其他地方報告過，請提供連結並關閉。"
+msgstr "**重複** ：這已經在其他地方報告過，請提供連結並關閉。"
 
 #: ../../about/process/issue-tracking.rst:64
 msgid "**help wanted**: This issue is ready to be picked up by a community developer."
-msgstr "**説明需要**: 此問題已準備好由社區開發人員拿起。"
+msgstr "**需要幫助** ：此問題已準備好由社區開發人員拿起。"
 
 #: ../../about/process/issue-tracking.rst:66
 msgid "**good first issue**: This issue is not critical and trivial to fix. It is reserved for new contributors as a place to start."
-msgstr "**好一個問題**: 這個問題不是關鍵和瑣碎的解決，它是為新的貢獻者保留的，作為一個開始的地方。"
+msgstr "**好問題** ：這個問題不是關鍵和瑣碎的解決，它是為新的貢獻者保留的，作為一個開始的地方。"
 
 #: ../../about/process/issue-tracking.rst:68
 msgid "**wontfix**: It does not make sense to fix this bug, since it will probably resolve itself, it will be too much work to fix it, it's not fixable, or an underlying component will soon change."
-msgstr "**暫不會修復**: 修復此錯誤沒有意義，因為它可能會自行解決，修復它將是太多的工作，它不是可修復的，或者基礎元件很快就會更改。"
+msgstr "**不修復** ：修復此錯誤沒有意義，因為它可能會自行解決，修復它將是太多的工作，它不是可修復的，或者基礎元件很快就會更改。"
 
 #: ../../about/process/issue-tracking.rst:72
 msgid "Additional special labels can be defined. As an example, here's the labels used in the Ubuntu Touch tracker:"
-msgstr "可以定義其他特殊標籤。例如:以下是 Ubuntu Touch 追蹤器中使用的標籤:"
+msgstr "可以定義其他特殊標示。例如:以下是 Ubuntu Touch 追蹤器中使用的標示:"
 
 #: ../../about/process/issue-tracking.rst:75
 msgid "**critical (devel)**: This critical issue that only occurs on the devel channel is blocking the release of the next rc image."
-msgstr ""
+msgstr "**關鍵 (開發) ** ：僅在 Devel 通道上發生的這一關鍵問題阻礙了下一個最終測試 (RC) 映像的釋放。"
 
 #: ../../about/process/issue-tracking.rst:77
 msgid "**critical (rc)**: This critical issue that only occurs on the devel and rc channel is blocking the release of the next stable release. Usually, issues that can not simply be moved to a different release and have the power to postpone the release are labeled this."
 msgstr ""
+"** 關鍵 (Critical RC) ** ：僅在開發和最終測試 (RC) "
+"通道上發生的這一關鍵問題正在阻止下一個穩定版本的發佈。通常情況下，不能簡單地將問題移動到不同的版本並有權推遲發佈的問題會將其標記為這一點。"
 
 #: ../../about/process/issue-tracking.rst:81
 msgid "**device: [DEVICE CODENAME]**: This issue affects only the specified device(s)."
-msgstr ""
+msgstr "**裝置: [裝置代碼名稱]** ：此問題僅影響指定的設備。"
 
 #: ../../about/process/issue-tracking.rst:83
 msgid "**team: [TEAM NAME]**: This issue is falls under the responsibility of a specific team (hal, middleware, UI)."
-msgstr ""
+msgstr "**團隊: [團隊名稱]**: 此問題由特定團隊 (hal、middleware、UI) 負責。"
 
 #: ../../about/process/issue-tracking.rst:86
 msgid "If a repository that tracks issues locally defines it's own labels, they should be documented in the README.md."
-msgstr ""
+msgstr "如果當地追蹤問題的存儲庫定義了自己的標示，則應在 README.md 中記錄這些標示。"
 
 #: ../../about/process/issue-tracking.rst:90
 msgid "Milestones"
@@ -293,6 +336,8 @@ msgstr "里程碑"
 #: ../../about/process/issue-tracking.rst:92
 msgid "Milestones are used for stable OTA releases only. In general, milestones for the work-in-progress OTA and the next OTA are created. The ETA is set, once the work on the release starts (that is 6 weeks from start date), but can be adjusted afterwards. See the :doc:`release-schedule <release-schedule>` for more info."
 msgstr ""
+"里程碑僅用於穩定的 OTA 釋放。一般來說, 將為正在進行的工作 OTA 和下一個 OTA 創建里程碑。在發佈工作開始後 (從即日起開始到第 6 "
+"周)，則設置了ETA，但可以在之後進行調整。有關詳細資訊，請參閱:doc:\"發佈計畫 <release-schedule>\"。"
 
 #: ../../about/process/issue-tracking.rst:99
 msgid "Assignees"
@@ -301,6 +346,10 @@ msgstr "申請人"
 #: ../../about/process/issue-tracking.rst:101
 msgid "To make it transparent who's working on an issue, the developer should be assigned. This also allows the use of GitHub's global filtering as a type of TODO list. For example, `this is everything assigned to mariogrip in @ubports <https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+org%3Aubports+assignee%3Amariogrip&type=>`_."
 msgstr ""
+"為了使誰在處理某個問題是透明的，應分配開發人員。這也允許使用 GitHub 的全域篩選作為 TODO 清單的一種類型。例如:\"這是分配給 "
+"mariogrip 的所有東西在@ubports <https://github.com/"
+"search?utf8=%E2%9C%93&q=is%3Aopen+org%3Aubports+assignee%3Amariogrip&type=>\""
+"_。"
 
 #: ../../about/process/issue-tracking.rst:105
 msgid "Developers are encouraged to keep their list short and update the status of their issues."
@@ -316,31 +365,41 @@ msgstr "錯誤生命週期"
 
 #: ../../about/process/issue-tracking.rst:114
 msgid "The same principle applies to feature requests. The only difference is, that instead of the label **bug**, the label **enhancement** is used. The **needs confirmation** label is not applicable for feature requests."
-msgstr ""
+msgstr "同樣的原則也適用於功能請求。唯一的區別是，不是標示 **錯誤**，而是標示為 **增強**。標示 **需要確認** 不適用於功能請求。"
 
 #: ../../about/process/issue-tracking.rst:118
 msgid "A *User* files a new bug using the issue-template."
-msgstr ""
+msgstr "*使用者* 使用問題範本提交一個新的錯誤。"
 
 #: ../../about/process/issue-tracking.rst:119
 msgid "The *QA-Team* adds the label **needs confirmation** and tries to work with the user to confirm the bug and add potentially missing information to the report. Once the report is complete a **team-label** will be added to the issue, the issue will be put on the **awaiting-triage-list** of the project and the label needs confirmation will be replaced with **bug**."
 msgstr ""
+"*QA團隊* 添加標示 **需要確認**，並嘗試與使用者合作以確認錯誤並將可能缺少的資訊添加到報告中。報告完成後，將在問題上添加 **團隊標籤**，"
+"該問題將被列入專案的 **討論清單**，標示需要確認將要被 **錯誤** 所取代。"
 
 #: ../../about/process/issue-tracking.rst:120
 msgid "The affected *Team* will triage the issue and either reject (label **wontfix**, close and remove from the project) or accept the issue. The team decides if it they will fix the issue in-house (move to \"Accepted\" and assign a team member) or wait for a community developer to pick it up (Label **help wanted**, remove from the project board and provide hints on how to resolve the issue and further details on the how the fix should be implemented if necessary). For non-critical issues that are trivial to fix, the label **good first issue** can be added as well."
 msgstr ""
+"受影響的 *團隊* 將對問題進行分類，並拒絕 ( 標示 **不修復**，關閉並從專案中刪除) 或接受該問題。團隊決定是否在內部解決此問題(移動到 \""
+"接受\" 並分配團隊成員) 或等待社區開發人員拿起它 (標示 "
+"**需要幫助**，從專案板中刪除，並提供如何解決問題的提示，以及如何在必要時實施修復的更多詳細資訊)。對於需要修復的微不足道的非關鍵問題，也可以標示為 "
+"**好問題**。"
 
 #: ../../about/process/issue-tracking.rst:121
 msgid "Once a *developer* is assigned and starts working on the issue, it is moved to “In Development”. As soon as they have something to show for, the issue is closed and automatically moved to “Quality Assurance” for feedback from the QA team. If necessary, the developer will provide hints on how to test his patch in a comment on the issue."
 msgstr ""
+"一旦 *開發人員* 被分配並開始處理該問題，它將被移至 “開發中”。 一旦他們有了展示的東西，問題就會被關閉，並自動轉移到 “品質保證 (QA)”，"
+"以獲得 QA 團隊的回應。 如有必要，開發人員將在有關問題的評論中提供有關如何測試其補丁的提示。"
 
 #: ../../about/process/issue-tracking.rst:122
 msgid "The *QA-Team* tests the fix on all devices and provides feedback to the developer. If problems are found, the issue is re-opened and goes back to “Accepted”, else it’s moved to “Release Candidate” to be included in the next release."
 msgstr ""
+"*QA 團隊* 在所有設備上測試修復程式，並向開發人員提供回應。如果發現問題，問題將重新打開並返回到 \"已接受\"，否則它將移動到 \"最終測試 "
+"(RC)\"，包含在下一個版本中。"
 
 #: ../../about/process/issue-tracking.rst:123
 msgid "If not done already, the issue is added to the next milestone. Once the milestone is released, the issue is removed from the project board."
-msgstr ""
+msgstr "如果尚未完成，則會將問題添加到下一個里程碑中。里程碑發佈後，問題將從專案板中刪除。"
 
 #: ../../about/process/ppa.rst:2
 msgid "repo.ubports.com"
@@ -348,7 +407,7 @@ msgstr "repo.ubports.com"
 
 #: ../../about/process/ppa.rst:4
 msgid "This is the package archive system for UBports projects. It hosts various PPAs containing all deb-components of Ubuntu Touch."
-msgstr "這是 UBports 專案的包存檔系統。它承載著各種 PPA，包含 Ubuntu Touch 的所有分支元件。"
+msgstr "這是 UBports 專案的套件存檔系統。它承載著各種 PPA，包含 Ubuntu Touch 的所有分支元件。"
 
 #: ../../about/process/ppa.rst:7
 msgid "Repository naming convention"
@@ -356,27 +415,31 @@ msgstr "存儲庫命名規定"
 
 #: ../../about/process/ppa.rst:10
 msgid "Native packages"
-msgstr "本地封包"
+msgstr "當地套件"
 
 #: ../../about/process/ppa.rst:12
 msgid "Native packages are repositories which contain a ``debian/`` directory **with** the source used to create the Debian source package (``.dsc``)."
-msgstr ""
+msgstr "本機套件是存儲庫，其中包含 \"debian/\" 目錄 **包含** 用於建立 Debian 源套件的原始程式碼(\".dsc\")。"
 
 #: ../../about/process/ppa.rst:14
 msgid "The name of the Debian source package generated from the repository and the name of the git-repository should be the same."
-msgstr "從存儲庫生成的 Debian 源碼封包的名稱和 Git-存儲庫的名稱應該是相同的。"
+msgstr "從存儲庫生成的 Debian 源碼套件的名稱和 Git 存儲庫的名稱應該是相同的。"
 
 #: ../../about/process/ppa.rst:17
 msgid "Packaging repositories"
-msgstr "封包存儲庫"
+msgstr "套件存儲庫"
 
 #: ../../about/process/ppa.rst:19
 msgid "Packaging repositories contain a ``debian/`` directory **without** the source used to create the Debian source package (``.dsc``). They also contain instructions to tell ``debhelper`` how to get the source used to create the source package."
 msgstr ""
+"打包存儲庫套件含一個 \"debian/\" 目錄，**不包含** 用於建立 Debian 源套件的原始程式碼 (\".dsc\")。它們還包含說明，"
+"告訴 \"debhelper\" 如何獲取用於創建源套件的源碼。"
 
 #: ../../about/process/ppa.rst:21
 msgid "The repository should have the name of the source package it generates with ``-packaging`` appended to the end. For example, a packaging repository that generates a source package called ``sandwich`` would be called ``sandwich-packaging``."
 msgstr ""
+"存儲庫應該有它生成的源套件的名稱，並在末尾附加 \"-packaging\"。例如:生成名為 \"sandwich\" 的源套件的打包存儲庫將會被稱為 "
+"\"sandwich-packaging\"。"
 
 #: ../../about/process/ppa.rst:24
 msgid "Creating new PPAs"
@@ -385,10 +448,15 @@ msgstr "建立新的 PPA"
 #: ../../about/process/ppa.rst:26
 msgid "New PPAs can be created dynamically by the CI server using a special :doc:`git-branch naming convention <branch-naming>`. The name of the branch translates literally to the name of the PPA: ``http://repo.ubports.com/dists/[branch name]``"
 msgstr ""
+"可以動態建立新的 PPA 由 CI 伺服器使用一個特殊的 :doc: \"強制分支命名規定 <branch-naming>\"。分支的名稱從字面上轉換為 "
+"PPA 的名稱: \"http://repo.ubports.com/dists/[分支名稱]\""
 
 #: ../../about/process/ppa.rst:28
 msgid "Non-standard PPAs (i.e. not ``xenial``, ``vivid`` or ``bionic``) are kept for three months. In case they need to be kept for a longer time, a file with the name ``ubports.keep`` can be created in the root of the repository, containing the date until which the PPA shall be kept open in the form of ``YYYY-MM-dd``. If this file is empty, the PPA will be kept for two years after the last build."
 msgstr ""
+"非標準的PPA  (即不是 \"xenial\"、\"vivid\" 或 \"bionic\") 保存三個月。如果他們需要保存更長的時間、一個檔的名稱 "
+"\"ubports.keep\" 可以在存儲庫的根目錄中創建, 其中包含 PPA 在表單中保持打開狀態的日期格式 \"YYYY-MM-dd\" "
+"。如果此檔為空白，PPA 將在最後一次構建後保留兩年。"
 
 #: ../../about/process/release-schedule.rst:2
 msgid "Release Schedule"
@@ -400,7 +468,7 @@ msgstr "OTA 更新通常遵循以下節奏:"
 
 #: ../../about/process/release-schedule.rst:6
 msgid "devel: daily builds"
-msgstr "開發 (Devel): 每日構建"
+msgstr "開發 (Devel)：每日構建"
 
 #: ../../about/process/release-schedule.rst:7
 msgid "rc: weekly if no critical issue exists in the devel channel"
@@ -413,3 +481,5 @@ msgstr "穩定 (Stable)：如果 \"最終測試 (RC)\" 頻道中不存在嚴重�
 #: ../../about/process/release-schedule.rst:11
 msgid "This is not a definitive cycle. Stable releases are ready when they're ready and should not introduce new bugs or ship very incomplete features. Since the OTA update can not be released before all critical issues are closed, the ETA might have to be moved by making an educated guess for when all the issues can be handled. If there are too many issues added to a milestone, they are either removed or added to the next milestone."
 msgstr ""
+"這不是一個確定的週期。穩定的版本準備好了，不應該引入新的錯誤或附帶非常不完整的功能。由於 OTA 更新無法在關閉所有關鍵問題之前發佈，"
+"因此可能必須通過對何時可以處理所有問題進行有根據的猜測來移動 ETA。如果添加到里程碑中的問題太多，則會將其刪除或添加到下一個里程碑中。"
