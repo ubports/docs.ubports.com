@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-08-28 14:00+0200\n"
-"PO-Revision-Date: 2019-01-15 01:04+0000\n"
+"PO-Revision-Date: 2019-01-15 16:02+0000\n"
 "Last-Translator: louies0623 <louies0623@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-porting/zh_Hant/>\n"
@@ -29,11 +29,13 @@ msgstr ""
 
 #: ../../porting/building-halium-boot.rst:7
 msgid "Fix mounts"
-msgstr ""
+msgstr "修復掛載"
 
 #: ../../porting/building-halium-boot.rst:9
 msgid "Halium-boot's ``mount`` is not aware of SELinux contexts. If your device's ``fstab`` file includes any contexts, the partition that they are on will fail to mount and your port will not work correctly."
 msgstr ""
+"Halium-boot 的\"掛載\"不知道 SELinux 上下文。 如果您的設備的\"fstab\""
+"文件包含任何上下文，則它們所在的分區將無法安裝，並且您的端口將無法正常工作。"
 
 #: ../../porting/building-halium-boot.rst:11
 msgid "The first step to this process is figuring out where your fstab actually is. For most, this is inside ``BUILDDIR/device/MANUFACTUER/CODENAME/rootdir/etc`` and it is named either ``fstab.qcom`` or ``fstab.devicename``. Open the file for editing."
