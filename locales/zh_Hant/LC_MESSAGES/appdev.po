@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2019-01-15 01:04+0000\n"
+"PO-Revision-Date: 2019-01-15 16:02+0000\n"
 "Last-Translator: louies0623 <louies0623@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-appdev/zh_Hant/>\n"
@@ -21,11 +21,11 @@ msgstr ""
 
 #: ../../appdev/guides/contenthub.rst:4
 msgid "The content hub - tips and tricks"
-msgstr ""
+msgstr "內容中心-提示和技巧"
 
 #: ../../appdev/guides/contenthub.rst:9
 msgid "Content Hub Share Page"
-msgstr ""
+msgstr "內容中心共用頁面"
 
 #: ../../appdev/guides/contenthub.rst:11
 msgid "On Ubuntu Touch the apps are confined. The way of sharing files between them is through the Content Hub, a part of the system that takes care of file import, export and sharing."
@@ -33,7 +33,7 @@ msgstr ""
 
 #: ../../appdev/guides/contenthub.rst:14
 msgid "Different ways of sharing the content"
-msgstr ""
+msgstr "共用內容的不同方式"
 
 #: ../../appdev/guides/contenthub.rst:16
 msgid "As we can see in the `Content Hub documentation <https://api-docs.ubports.com/sdk/apps/qml/Ubuntu.Content/ContentHandler.html#detailed-description>`_, there are several ways of handling the file to be shared:"
@@ -53,11 +53,11 @@ msgstr ""
 
 #: ../../appdev/guides/contenthub.rst:23
 msgid "Importing"
-msgstr ""
+msgstr "進口"
 
 #: ../../appdev/guides/contenthub.rst:28
 msgid "Webapp Creator on the OpenStore"
-msgstr ""
+msgstr "OpenStore 上的網路應用程式建立者"
 
 #: ../../appdev/guides/contenthub.rst:30
 msgid "Looking into the code of Webapp Creator, we’ll find the code to import an image to be used as icon. Tapping on the place holder will open the Content Hub that will let us choose from where to import the image (`see the Webapp Creator source code <https://gitlab.com/cibersheep/webapp-creator/blob/master/webapp-creator/app/ImportPage.qml#L38>`_)"
@@ -73,11 +73,11 @@ msgstr ""
 
 #: ../../appdev/guides/contenthub.rst:50
 msgid "Exporting"
-msgstr ""
+msgstr "出口"
 
 #: ../../appdev/guides/contenthub.rst:55
 msgid "Gelek in the OpenStore"
-msgstr ""
+msgstr "在 OpenStore 的 Gelek"
 
 #: ../../appdev/guides/contenthub.rst:57
 msgid "In Gelek, we are going to end with some saved games that we want to save in our device or share with ourselves (in Telegram and then save them to our computer)."
@@ -97,11 +97,11 @@ msgstr ""
 
 #: ../../appdev/guides/contenthub.rst:78
 msgid "Tapping on the File Manager we will save the saved game in the folder we choose."
-msgstr ""
+msgstr "點擊檔案管理員，我們將保存在我們選擇的資料夾中來保存遊戲。"
 
 #: ../../appdev/guides/contenthub.rst:81
 msgid "Sharing"
-msgstr ""
+msgstr "共用"
 
 #: ../../appdev/guides/contenthub.rst:83
 msgid "Similarly, tapping on the share icon will allow us to send the saved game through Telegram to ourselves (`see the Webapp Creator Import Page source code <https://gitlab.com/cibersheep/webapp-creator/blob/master/webapp-creator/app/ImportPage.qml#L38>`_)."
@@ -113,11 +113,11 @@ msgstr ""
 
 #: ../../appdev/guides/contenthub.rst:99
 msgid "Wait a minute. Why the different apps?"
-msgstr ""
+msgstr "等一下。為什麼會有不同的應用程式？"
 
 #: ../../appdev/guides/contenthub.rst:104
 msgid "Content Hub: Export vs Share"
-msgstr ""
+msgstr "內容中心: 匯出與共享"
 
 #: ../../appdev/guides/contenthub.rst:106
 msgid "Each developer can decide the rules each app would follow in relation to the Content Hub. Why the OpenStore is shown as the destination of an export?"
@@ -145,15 +145,15 @@ msgstr ""
 
 #: ../../appdev/guides/cookbook.rst:2
 msgid "App development cookbook"
-msgstr ""
+msgstr "應用程式開發食譜"
 
 #: ../../appdev/guides/cookbook.rst:5
 msgid "Unofficial resources"
-msgstr ""
+msgstr "非官方資源"
 
 #: ../../appdev/guides/cookbook.rst:7
 msgid "In this section you will find links to external resources about creating applications for Ubuntu Touch."
-msgstr ""
+msgstr "在本節中，您將找到有關為 Ubuntu Touch 創建應用程式的外部資源的連結。"
 
 #: ../../appdev/guides/cookbook.rst:9
 msgid "`Ubuntu Touch programming book <https://www.gitbook.com/book/mimecar/ubuntu-touch-programming-course/details>`__"
@@ -166,10 +166,12 @@ msgstr ""
 #: ../../appdev/guides/cookbook.rst:14
 msgid "In a completely free and open source community, it is natural to have community members exploring the limits of the platform in many many directions. In this section you will find links to external resources that do exactly that: Explore. The purpose of this list is to show the unlimited possibilities of an open platform like Ubuntu Touch."
 msgstr ""
+"在一個完全自由和開源的社區中，讓社區成員在許多方面探索平臺的極限是很自然的。在本節中，您將找到指向完全執行此操作的外部資源的連結: \"流覽\"。"
+"此清單的目的是要展示 Ubuntu Touch 像這樣的開放平臺的無限可能。"
 
 #: ../../appdev/guides/cookbook.rst:17
 msgid "The resources listed here do not necessarily represent the officially endorsed way of developing applications for Ubuntu Touch, but are interesting experiments."
-msgstr ""
+msgstr "此處列出的資源不一定代表官方認可的為 Ubuntu Touch 開發應用程式的方式，但它們是個有趣的實驗。"
 
 #: ../../appdev/guides/cookbook.rst:19
 msgid "`Free Pascal development for Ubuntu Touch <http://kriscode.blogspot.tw/2016/09/freepascal-development-for-ubuntu-phone.html>`__"
@@ -182,10 +184,13 @@ msgstr ""
 #: ../../appdev/guides/cookbook.rst:21
 msgid "`Geany on Ubuntu Touch device as text editor, source code editor, debugger and compiler for multiple languages <http://kriscode.blogspot.tw/2017/10/geany-on-ubuntu-touch-device-as-text.html>`__"
 msgstr ""
+"\"在 Ubuntu Touch 設備上的 Geany 作為文字編輯器、原始程式碼編輯器、調試器和多種語言的編譯器\n"
+"<http://kriscode.blogspot.tw/2017/10/geany-on-ubuntu-touch-device-as-"
+"text.html>\"__"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:2
 msgid "Importing from Content Hub and URLdispatcher"
-msgstr ""
+msgstr "從內容中心和網址調度程式中導入"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:7
 msgid "In the previous guide we have seen a little bit about how Content Hub works. In this guide we will see how ``URLdispatcher`` works and how to handle imported data from the Content Hub."
@@ -418,7 +423,7 @@ msgstr ""
 
 #: ../../appdev/index.rst:68
 msgid "Documentation"
-msgstr ""
+msgstr "文檔"
 
 #: ../../appdev/index.rst:70
 msgid "`QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__"
