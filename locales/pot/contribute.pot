@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-30 10:25-0600\n"
+"POT-Creation-Date: 2019-01-14 16:00-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -668,127 +668,115 @@ msgstr ""
 msgid "We are working hard to meet that goal, and you can help as well."
 msgstr ""
 
-#: ../../contribute/translations.rst:8
-msgid "There are two levels for this:"
-msgstr ""
-
-#: ../../contribute/translations.rst:10
-msgid "A casual approach, as a translator volunteer."
-msgstr ""
-
-#: ../../contribute/translations.rst:11
-msgid "A fully committed approach as a UBports Member, filling in `this application <https://ubports.com/survey/start/ubports-membership-application-6>`_."
-msgstr ""
-
-#: ../../contribute/translations.rst:14
+#: ../../contribute/translations.rst:9
 msgid "Tools for Translation"
 msgstr ""
 
-#: ../../contribute/translations.rst:16
+#: ../../contribute/translations.rst:11
 msgid "For everyone: A web based translation tool called `Weblate <https://translate.ubports.com/>`_. This is the recommended way."
 msgstr ""
 
-#: ../../contribute/translations.rst:18
+#: ../../contribute/translations.rst:12
 msgid "For advanced users: Working directly on .po files with the editor of your choice, and a GitHub account. The .po files for each project are in their repository on `our GitHub organization <https://github.com/ubports>`_."
 msgstr ""
 
-#: ../../contribute/translations.rst:20
-msgid "A `Translation Forum <https://forums.ubports.com/category/39/translations>`_ to discuss on translating Ubuntu Touch and its core apps."
+#: ../../contribute/translations.rst:14
+msgid "We also have `Translation Forum <https://forums.ubports.com/category/39/translations>`_ to discuss translating Ubuntu Touch and its core apps."
 msgstr ""
 
-#: ../../contribute/translations.rst:24
+#: ../../contribute/translations.rst:18
 msgid "How-To"
 msgstr ""
 
-#: ../../contribute/translations.rst:27
+#: ../../contribute/translations.rst:21
 msgid "UBports Weblate"
 msgstr ""
 
-#: ../../contribute/translations.rst:29
+#: ../../contribute/translations.rst:23
 msgid "You can go to `UBports Weblate <https://translate.ubports.com/>`_, click on \"Dashboard\" button, go to a project, and start making anonymous suggestions without being registered. If you want to save your translations, you must be logged in."
 msgstr ""
 
-#: ../../contribute/translations.rst:31
+#: ../../contribute/translations.rst:25
 msgid "For that, go to UBports Weblate and click on the \"Register\" button. Once in the \"Registration\" page, you'll find two options:"
 msgstr ""
 
-#: ../../contribute/translations.rst:33
+#: ../../contribute/translations.rst:27
 msgid "Register using a valid email address, a username, and your full name. You'll need to resolve an easy control question too."
 msgstr ""
 
-#: ../../contribute/translations.rst:34
+#: ../../contribute/translations.rst:28
 msgid "Register using a third party registration. Currently the system supports accounts from openSUSE, GitHub, Fedora, and Ubuntu."
 msgstr ""
 
-#: ../../contribute/translations.rst:36
+#: ../../contribute/translations.rst:30
 msgid "Once you're logged in, the site is self-explanatory and you'll find there all the options and customization you can do."
 msgstr ""
 
-#: ../../contribute/translations.rst:38
+#: ../../contribute/translations.rst:32
 msgid "Now, get on with it. The first step is to search if your language already exists in the project of your choice."
 msgstr ""
 
-#: ../../contribute/translations.rst:40
+#: ../../contribute/translations.rst:34
 msgid "If your language is not available for a specific project, you can add it yourself."
 msgstr ""
 
-#: ../../contribute/translations.rst:42
+#: ../../contribute/translations.rst:36
 msgid "You decide how much time you can put into translation. From minutes to hours, everything counts."
 msgstr ""
 
-#: ../../contribute/translations.rst:45
+#: ../../contribute/translations.rst:39
 msgid ".po file editor"
 msgstr ""
 
-#: ../../contribute/translations.rst:47
+#: ../../contribute/translations.rst:41
 msgid "As was said up above, you need a file editor of your choice and a GitHub account to translate .po files directly."
 msgstr ""
 
-#: ../../contribute/translations.rst:49
+#: ../../contribute/translations.rst:43
 msgid "There are online gettext .po editors and those you can install in your computer."
 msgstr ""
 
-#: ../../contribute/translations.rst:51
+#: ../../contribute/translations.rst:45
 msgid "You can choose whatever editor you want, but we prefer to work with free software only. There are too many plain text editors and tools to help you translate .po files to put down a list here."
 msgstr ""
 
-#: ../../contribute/translations.rst:53
+#: ../../contribute/translations.rst:47
 msgid "If you want to work with .po files directly you know what you're doing for sure."
 msgstr ""
 
-#: ../../contribute/translations.rst:56
+#: ../../contribute/translations.rst:50
 msgid "Translation Team Communication"
 msgstr ""
 
-#: ../../contribute/translations.rst:58
+#: ../../contribute/translations.rst:52
 msgid "The straightforward and recommended way is to use `the forum category <https://forums.ubports.com/category/39/translations>`_ that UBports provides for this task."
 msgstr ""
 
-#: ../../contribute/translations.rst:60
+#: ../../contribute/translations.rst:54
 msgid "To use it you need to register, or login if you're registered already."
 msgstr ""
 
-#: ../../contribute/translations.rst:62
+#: ../../contribute/translations.rst:56
 msgid "The only requirement is to start your post putting down your language in brackets in the \"Enter your topic title here\" field. For example, ``[Spanish] How to translate whatever?``"
 msgstr ""
 
-#: ../../contribute/translations.rst:64
+#: ../../contribute/translations.rst:58
 msgid "Just for your information, some projects are using Telegram groups too, and some teams are still using the Ubuntu Launchpad framework."
 msgstr ""
 
-#: ../../contribute/translations.rst:66
+#: ../../contribute/translations.rst:60
 msgid "In your interactions with your team you'll find the best way to coordinate your translations."
 msgstr ""
 
-#: ../../contribute/translations.rst:69
+#: ../../contribute/translations.rst:63
 msgid "License"
 msgstr ""
 
-#: ../../contribute/translations.rst:71
+#: ../../contribute/translations.rst:65
 msgid "All the translation projects, and all your contributions to this project, are under a `Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) <https://creativecommons.org/licenses/by-sa/4.0/>`_ license that you explicitly accept by contributing to the project."
 msgstr ""
 
-#: ../../contribute/translations.rst:73
+#: ../../contribute/translations.rst:67
 msgid "Go to that link to learn what this exactly means."
 msgstr ""
 
