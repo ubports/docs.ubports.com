@@ -58,7 +58,7 @@ Instructions for contributing to these applications can be found in their respec
 .. core app table links. Please put them here in the same order that you do in the table above.
 
 .. _Calculator on OpenStore: https://open-store.io/app/com.ubuntu.calculator
-.. _calculator-app on GitLab: https://gitlab.com/ubports/app/calculator-app
+.. _calculator-app on GitLab: https://gitlab.com/ubports/apps/calculator-app
 .. _Calendar on OpenStore: https://open-store.io/app/com.ubuntu.calendar
 .. _calendar-app on GitHub: https://github.com/ubports/calendar-app
 .. _Clock on OpenStore: https://open-store.io/app/com.ubuntu.clock
@@ -66,19 +66,19 @@ Instructions for contributing to these applications can be found in their respec
 .. _File Manager on OpenStore: https://open-store.io/app/com.ubuntu.filemanager
 .. _filemanager-app on GitLab: https://gitlab.com/ubports/apps/filemanager-app
 .. _Gallery on OpenStore: https://open-store.io/app/com.ubuntu.gallery
-.. _gallery-app on GitLab: https://gitlab.com/ubports/app/gallery-app
+.. _gallery-app on GitLab: https://gitlab.com/ubports/apps/gallery-app
 .. _Music on OpenStore: https://open-store.io/app/com.ubuntu.music
-.. _music-app on GitLab: https://gitlab.com/ubports/app/music-app
+.. _music-app on GitLab: https://gitlab.com/ubports/apps/music-app
 .. _Notes on OpenStore: https://open-store.io/app/com.ubuntu.reminders
-.. _notes-app on GitLab: https://gitlab.com/ubports/app/notes-app
+.. _notes-app on GitLab: https://gitlab.com/ubports/apps/notes-app
 .. _OpenStore... on OpenStore: https://open-store.io/app/openstore.openstore-team
 .. _openstore-app on GitLab: https://gitlab.com/theopenstore/openstore-app
 .. _Terminal on OpenStore: https://open-store.io/app/com.ubuntu.terminal
 .. _terminal-app on GitHub: https://github.com/ubports/terminal-app
 .. _UBports Welcome on OpenStore: https://open-store.io/app/com.ubuntu.ubports
-.. _ubports-app on GitLab: https://gitlab.com/ubports/app/ubports-app
+.. _ubports-app on GitLab: https://gitlab.com/ubports/apps/ubports-app
 .. _Weather on OpenStore: https://open-store.io/app/com.ubuntu.weather
-.. _weather-app on GitLab: https://gitlab.com/ubports/app/weather-app
+.. _weather-app on GitLab: https://gitlab.com/ubports/apps/weather-app
 
 .. Other preinstalled apps links. Please put them here in the same order that you do in the list
 
