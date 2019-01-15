@@ -8,25 +8,30 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2019-01-15 16:02+0000\n"
+"Last-Translator: louies0623 <louies0623@gmail.com>\n"
+"Language-Team: Chinese (Traditional) <https://translate.ubports.com/projects/"
+"ubports-docs/documentation-contribute/zh_Hant/>\n"
 "Language: zh_Hant\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 3.1.1\n"
 
 #: ../../contribute/bugreporting.rst:2
 msgid "Bug reporting"
-msgstr ""
+msgstr "錯誤回報"
 
 #: ../../contribute/bugreporting.rst:4
 msgid "This page contains information to help you help us by reporting an actionable bug for Ubuntu Touch. It does NOT contain information on reporting bugs in apps, most of the time their entry in the OpenStore will specify where and how to do that."
 msgstr ""
+"本頁包含說明我們通過報告 Ubuntu Touch 的操作錯誤來說明我們的資訊。它不包含有關報告應用中的錯誤的資訊，大多數情況下，它們在 "
+"OpenStore 中的輸入將指定在何處以及如何執行此操作。"
 
 #: ../../contribute/bugreporting.rst:7
 msgid "Get the latest Ubuntu Touch"
-msgstr ""
+msgstr "獲取最新的 Ubuntu Touch"
 
 #: ../../contribute/bugreporting.rst:9
 msgid "This might seem obvious, but it's easy to miss. Go to (Settings - Updates) and make sure that your device doesn't have any Ubuntu updates available. If not, continue through this guide. If so, update your device and try to reproduce the bug. If it still occurs, continue through this guide. If not, do a little dance! The bug has already been fixed and you can continue using Ubuntu Touch."
@@ -34,7 +39,7 @@ msgstr ""
 
 #: ../../contribute/bugreporting.rst:12
 msgid "Check if the bug is already reported"
-msgstr ""
+msgstr "檢查是否已報告錯誤"
 
 #: ../../contribute/bugreporting.rst:14
 msgid "Open up the bug tracker for `ubuntu-touch <https://github.com/ubports/ubuntu-touch>`_."
@@ -54,7 +59,7 @@ msgstr ""
 
 #: ../../contribute/bugreporting.rst:23
 msgid "Reproduce the issue you've found"
-msgstr ""
+msgstr "重現您發現的問題"
 
 #: ../../contribute/bugreporting.rst:25
 msgid "Next, find out exactly how to recreate the bug that you've found. Document the exact steps that you took to find the problem in detail. Then, reboot your phone and perform those steps again. If the problem still occurs, continue on to the next step. `If not <https://youtu.be/nn2FB1P_Mn8?t=10s>`_..."
@@ -62,7 +67,7 @@ msgstr ""
 
 #: ../../contribute/bugreporting.rst:28
 msgid "Getting Logs"
-msgstr ""
+msgstr "獲得日誌"
 
 #: ../../contribute/bugreporting.rst:30
 msgid "We appreciate as many good logs as we can get when you report a bug. In general, /var/log/dmesg and the output of /android/system/bin/logcat are helpful when resolving an issue. I'll show you how to get these logs."
@@ -74,11 +79,11 @@ msgstr ""
 
 #: ../../contribute/bugreporting.rst:34
 msgid "Now, you can get the two most important logs."
-msgstr ""
+msgstr "現在，您可以獲取兩個最重要的日誌。"
 
 #: ../../contribute/bugreporting.rst:37
 msgid "dmesg"
-msgstr ""
+msgstr "dmesg"
 
 #: ../../contribute/bugreporting.rst:39
 msgid "The **dmesg** (*display message* or *driver message*) command displays debug messages from the kernel."
@@ -87,12 +92,12 @@ msgstr ""
 #: ../../contribute/bugreporting.rst:41
 #: ../../contribute/bugreporting.rst:54
 msgid "Using the steps you documented earlier, reproduce the issue you're reporting"
-msgstr ""
+msgstr "使用前面記錄的步驟，重現您報告的問題"
 
 #: ../../contribute/bugreporting.rst:42
 #: ../../contribute/bugreporting.rst:52
 msgid "cd to a folder where you're able to write the log"
-msgstr ""
+msgstr "cd 到一個資料夾，在那裡您可以寫入日誌"
 
 #: ../../contribute/bugreporting.rst:43
 msgid "Run the command: `adb shell dmesg > UTdmesg.txt`"
@@ -104,7 +109,7 @@ msgstr ""
 
 #: ../../contribute/bugreporting.rst:48
 msgid "logcat"
-msgstr ""
+msgstr "logcat"
 
 #: ../../contribute/bugreporting.rst:50
 msgid "The **logcat** (*log concatenator*) command displays debug information from various parts of the underlying android system."
@@ -116,15 +121,15 @@ msgstr ""
 
 #: ../../contribute/bugreporting.rst:56
 msgid "This log will be located at UTlogcat.txt in your current working directory, so you'll be able to upload it later."
-msgstr ""
+msgstr "此日誌將位於當前工作目錄中的 UTlogat. txt，因此您以後可以上傳它。"
 
 #: ../../contribute/bugreporting.rst:59
 msgid "Making the bug report"
-msgstr ""
+msgstr "填寫錯誤報告"
 
 #: ../../contribute/bugreporting.rst:61
 msgid "Now it's time for what you've been waiting for, the bug report itself! Bug reports need to be filed in English."
-msgstr ""
+msgstr "現在是您一直在等待的時候了，錯誤報表本身!錯誤報表需要用英文提交。"
 
 #: ../../contribute/bugreporting.rst:63
 msgid "First, pull up the `bug tracker <https://github.com/ubports/ubuntu-touch>`_ and click \"New Issue\". Log in to GitHub if you haven't yet."
@@ -132,19 +137,19 @@ msgstr ""
 
 #: ../../contribute/bugreporting.rst:65
 msgid "Next, you'll need to name your bug. Pick a name that says what's happening, but don't be too wordy. Four to eight words should be enough."
-msgstr ""
+msgstr "接下來，您需要為錯誤命名。選擇一個能說出正在發生的事情的名字，但不要太囉嗦。四到八個字就足夠了。"
 
 #: ../../contribute/bugreporting.rst:67
 msgid "Now, write your bug report. A good bug report includes the following:"
-msgstr ""
+msgstr "現在，填寫您的錯誤報表。一個好的錯誤報告包括以下內容:"
 
 #: ../../contribute/bugreporting.rst:69
 msgid "What happened: A synopsis of the erroneous behavior"
-msgstr ""
+msgstr "發生了什麼事:錯誤報告的敘述"
 
 #: ../../contribute/bugreporting.rst:70
 msgid "What I expected to happen: A synopsis of what should have happened, if there wasn't an error"
-msgstr ""
+msgstr "我期待發生的事情:如果沒有錯誤，應該發生的事情的概要"
 
 #: ../../contribute/bugreporting.rst:71
 msgid "Steps to reproduce: You wrote these down earlier, right?"
@@ -152,7 +157,7 @@ msgstr ""
 
 #: ../../contribute/bugreporting.rst:72
 msgid "Logs: Attach your logs by clicking and dragging them into your GitHub issue."
-msgstr ""
+msgstr "日誌:通過按一下日誌並將其拖到 GitHub 問題中來附加日誌。"
 
 #: ../../contribute/bugreporting.rst:73
 msgid "Software Version: Go to (Settings - About) and list what appears on the \"OS\" line of this screen. Also include the release channel that you used when you installed Ubuntu on this phone."
@@ -165,10 +170,12 @@ msgstr ""
 #: ../../contribute/bugreporting.rst:77
 msgid "A developer or QA-team member will confirm and triage your bug, then work can begin on it. If you are missing any information, you will be asked for it, so make sure to check in often!"
 msgstr ""
+"開發人員或 QA "
+"團隊成員將確認並對您的錯誤進行分類，然後可以開始對其進行工作。如果您丟失了任何資訊，系統會要求您提供這些資訊，因此請務必經常辦理登入手續!"
 
 #: ../../contribute/documentation.rst:2
 msgid "Documentation"
-msgstr ""
+msgstr "文檔"
 
 #: ../../contribute/documentation.rst:5
 msgid "Documentation on this site is written in ReStructuredText, or RST for short. Please check the `RST Primer <http://www.sphinx-doc.org/en/stable/rest.html>`_ if you are not familiar with RST."
@@ -176,31 +183,31 @@ msgstr ""
 
 #: ../../contribute/documentation.rst:7
 msgid "This page will guide you through writing great documentation for the UBports project that can be featured on this site."
-msgstr ""
+msgstr "本頁將指導您編寫可在此網站上展示的UBports 專案的優秀文檔。"
 
 #: ../../contribute/documentation.rst:10
 msgid "Documentation guidelines"
-msgstr ""
+msgstr "文檔指南"
 
 #: ../../contribute/documentation.rst:12
 msgid "These rules govern how you should write your documentation to avoid problems with style, format, or linking. If you don't follow these guidelines, we will not accept your document."
-msgstr ""
+msgstr "這些規則規定了編寫文檔的方式，以避免樣式、格式或連結方面出現問題。如果您不遵守這些準則，我們將不接受您的文檔。"
 
 #: ../../contribute/documentation.rst:15
 msgid "Title"
-msgstr ""
+msgstr "標題"
 
 #: ../../contribute/documentation.rst:17
 msgid "All pages must have a document title that will be shown in the table of contents (left sidebar) and at the top of the page."
-msgstr ""
+msgstr "所有頁面都必須具有將顯示在目錄 (左側邊欄) 和頁面頂部的文檔標題。"
 
 #: ../../contribute/documentation.rst:19
 msgid "Titles should be sentence cased rather than Title Cased. For example::"
-msgstr ""
+msgstr "標題應該是句子而不是標題框。例如:"
 
 #: ../../contribute/documentation.rst:28
 msgid "There isn't a single definition of title casing that everyone follows, but sentence casing is easy. This helps keep capitalization in the table of contents consistent."
-msgstr ""
+msgstr "每個人都遵循標題框的單一定義，但句子套管很容易。 這有助於保持目錄中的大寫一致。"
 
 #: ../../contribute/documentation.rst:30
 msgid "Page titles are underlined with equals signs. For example, the markup for :doc:`./bugreporting` includes the following title:"
@@ -208,43 +215,43 @@ msgstr ""
 
 #: ../../contribute/documentation.rst:37
 msgid "Note that:"
-msgstr ""
+msgstr "請注意:"
 
 #: ../../contribute/documentation.rst:39
 msgid "The title is sentence cased"
-msgstr ""
+msgstr "標題是用句子"
 
 #: ../../contribute/documentation.rst:40
 msgid "The title is underlined with equals signs"
-msgstr ""
+msgstr "標題是用等號下劃線"
 
 #: ../../contribute/documentation.rst:41
 msgid "The underline spans the title completely without going over"
-msgstr ""
+msgstr "下劃線完全跨越標題且不會超過"
 
 #: ../../contribute/documentation.rst:43
 msgid "Incorrect examples of titles include:"
-msgstr ""
+msgstr "標題的錯誤示例包括："
 
 #: ../../contribute/documentation.rst:45
 msgid "Incorrect casing"
-msgstr ""
+msgstr "裝箱不正確"
 
 #: ../../contribute/documentation.rst:52
 msgid "Underline too short"
-msgstr ""
+msgstr "下劃線太短"
 
 #: ../../contribute/documentation.rst:59
 msgid "Underline too long"
-msgstr ""
+msgstr "下劃線太長了"
 
 #: ../../contribute/documentation.rst:68
 msgid "Headings"
-msgstr ""
+msgstr "標題"
 
 #: ../../contribute/documentation.rst:70
 msgid "There are several levels of headings that you may place on your page. These levels are shown here in order:"
-msgstr ""
+msgstr "您可以在頁面上放置幾個級別的標題。 這些級別按順序顯示在此處："
 
 #: ../../contribute/documentation.rst:86
 msgid "Each heading level creates a sub-section in the global table of contents tree available when the documentation is built. In the primary (web) version of the documentation, this only shows four levels deep from the top level of the documentation. Please refrain from using more heading levels than will show in this tree as it makes navigating your document difficult. If you must use this many heading levels, it is a good sign that your document should be split up into multiple pages."
@@ -252,7 +259,7 @@ msgstr ""
 
 #: ../../contribute/documentation.rst:89
 msgid "Table of contents"
-msgstr ""
+msgstr "標題目錄"
 
 #: ../../contribute/documentation.rst:91
 msgid "People can't navigate to your new page if they can't find it. Neither can Sphinx. That's why you need to add new pages to Sphinx's table of contents."
