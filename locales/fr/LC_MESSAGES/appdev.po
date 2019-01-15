@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2019-01-13 00:00+0000\n"
+"PO-Revision-Date: 2019-01-13 16:38+0000\n"
 "Last-Translator: Anne Onyme <anneonyme017@netcourrier.com>\n"
 "Language-Team: French <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/fr/>\n"
@@ -102,7 +102,7 @@ msgstr ""
 
 #: ../../appdev/guides/contenthub.rst:41
 msgid "``ContentPeerPicker`` is the element that shows the apps."
-msgstr ""
+msgstr "``ContentPeerPicker`` est l'élément qui affiche les applications."
 
 #: ../../appdev/guides/contenthub.rst:47
 msgid ""
