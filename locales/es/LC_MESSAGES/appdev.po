@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2019-01-15 01:04+0000\n"
+"PO-Revision-Date: 2019-01-15 16:02+0000\n"
 "Last-Translator: advocatux <advocatux@airpost.net>\n"
 "Language-Team: Spanish <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/es/>\n"
@@ -990,6 +990,9 @@ msgid ""
 "This policy is reserved since it grants free access to all calendars on the "
 "device at any time. The legacy bug about this situation is `LP #1227824`_ ."
 msgstr ""
+"Esta política está reservada ya que concede acceso libre a todos los "
+"calendarios en el dispositivo en cualquier momento. El informe del error "
+"heredado de esta situación es `LP #1227824`_ ."
 
 #: ../../appdev/platform/apparmor.rst:66
 msgid "camera"
@@ -1017,6 +1020,10 @@ msgid ""
 "device's connectivity. This includes whether the device is connected to the "
 "Internet and whether it is connected via a Wi-Fi or mobile data connection."
 msgstr ""
+"La política de conectividad permite a las aplicaciones determinar "
+"información aproximada sobre la conectividad del dispositivo. Esto incluye "
+"tanto si el dispositivo está conectado a Internet como si está conectado vía "
+"wifi o conexión de datos móviles."
 
 #: ../../appdev/platform/apparmor.rst:86
 msgid "contacts"
@@ -1032,10 +1039,14 @@ msgid ""
 "It is marked as reserved because it allows access to sync-monitor and "
 "unfettered access to the address book."
 msgstr ""
+"La política de contactos permite a las aplicaciones acceder a la lista de "
+"contactos en el dispositivo del usuario. Está marcado como reservado porque "
+"permite el acceso a «sync-monitor» (monitor de sincronización) y acceso sin "
+"restricciones a la agenda de direcciones."
 
 #: ../../appdev/platform/apparmor.rst:96
 msgid "content_exchange"
-msgstr ""
+msgstr "content_exchange (intercambio de contenido)"
 
 #: ../../appdev/platform/apparmor.rst:98
 msgid "Description: Can request/import data from other applications"
@@ -1046,10 +1057,12 @@ msgid ""
 "Using the content_exchange policy allows your app to be a consumer of "
 "content on content-hub."
 msgstr ""
+"Usar la política de «content_exchange» (intercambio de contenido) permite a "
+"su aplicación usar el contenido en el «content-hub» (centro de contenido)."
 
 #: ../../appdev/platform/apparmor.rst:106
 msgid "content_exchange_source"
-msgstr ""
+msgstr "«content_exchange_source» (fuente de intercambio de contenido)"
 
 #: ../../appdev/platform/apparmor.rst:108
 msgid "Description: Can provide/export data to other applications"
@@ -1060,10 +1073,13 @@ msgid ""
 "The content_exchange_source policy allows your app to provide content on "
 "content-hub."
 msgstr ""
+"La política de «content_exchange_source» (fuente de intercambio de contenido)"
+" permite a su aplicación proporcionar contenido al «content-hub» (centro de "
+"contenido)."
 
 #: ../../appdev/platform/apparmor.rst:116
 msgid "debug"
-msgstr ""
+msgstr "depuración"
 
 #: ../../appdev/platform/apparmor.rst:118
 msgid ""
@@ -1073,10 +1089,15 @@ msgid ""
 "considered secure. You should never run untrusted programs using this policy "
 "group."
 msgstr ""
+"Descripción: uso de herramientas especiales de depuración. Esto debería "
+"usarse solo para desarrollo, no para paquetes en producción. Nota: el uso de "
+"este grupo de políticas proporciona un confinamiento significativamente "
+"diferente del normal y no se considera seguro. Nunca debería ejecutar "
+"programas que no sean de confianza usando esta grupo de políticas."
 
 #: ../../appdev/platform/apparmor.rst:124
 msgid "document_files"
-msgstr ""
+msgstr "document_files (archivos de documentos)"
 
 #: ../../appdev/platform/apparmor.rst:126
 msgid ""
@@ -1085,16 +1106,24 @@ msgid ""
 "should typically use the content_exchange policy group and API to access "
 "document files instead."
 msgstr ""
+"Descripción: puede leer y escribir a archivos de documentos. Este grupo de "
+"políticas está reservado para determinadas aplicaciones, tales como visores "
+"de documentos. Los desarrolladores deberían usar habitualmente el grupo de "
+"políticas de «content_exchange» (intercambio de contenido) y la API para "
+"acceder a los archivos de documentos."
 
 #: ../../appdev/platform/apparmor.rst:130
 msgid ""
 "This policy allows apps to read and write to the \"Documents\" folders in "
 "the user's home directory and external media."
 msgstr ""
+"Esta política permite a las aplicaciones leer y escribir a la carpeta "
+"«Documents» (documentos) en el directorio principal del usuario y en la "
+"unidad externa."
 
 #: ../../appdev/platform/apparmor.rst:133
 msgid "document_files_read"
-msgstr ""
+msgstr "«document_files_read» (leer archivos de documentos)"
 
 #: ../../appdev/platform/apparmor.rst:135
 msgid ""
@@ -1103,16 +1132,23 @@ msgid ""
 "use the content_exchange policy group and API to access document files "
 "instead."
 msgstr ""
+"Descripción: puede leer todos los archivos de documentos. Este grupo de "
+"políticas está reservado para determinadas aplicaciones, tales como visores "
+"de documentos. Los desarrolladores deberían usar habitualmente el grupo de "
+"políticas de «content_exchange» (intercambio de contenido) y la API para "
+"acceder a los archivos de documentos."
 
 #: ../../appdev/platform/apparmor.rst:139
 msgid ""
 "This policy allows apps to read the \"Documents\" folders in the user's home "
 "directory and external media."
 msgstr ""
+"Esta política permite a las aplicaciones leer la carpeta «Documents» "
+"(documentos) en el directorio principal del usuario y en la unidad externa."
 
 #: ../../appdev/platform/apparmor.rst:143
 msgid "history"
-msgstr ""
+msgstr "historial"
 
 #: ../../appdev/platform/apparmor.rst:145
 msgid ""
