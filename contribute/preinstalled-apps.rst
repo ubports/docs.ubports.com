@@ -30,7 +30,7 @@ Notes               `Notes on OpenStore`_               `notes-app on GitLab`_
 OpenStore           `OpenStore... on OpenStore`_        `openstore-app on GitLab`_
 Terminal            `Terminal on OpenStore`_            `terminal-app on GitHub`_
 UBports Welcome     `UBports Welcome on OpenStore`_     `ubports-app on GitLab`_
-Weather             `Weather on OpenStore`              `weather-app on GitLab`_
+Weather             `Weather on OpenStore`_             `weather-app on GitLab`_
 ================    ==================================  ============================
 
 Other preinstalled apps
