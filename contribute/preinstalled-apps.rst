@@ -36,7 +36,7 @@ Weather             `Weather on OpenStore`_             `weather-app on GitLab`_
 Other preinstalled apps
 -----------------------
 
-The following appplications are preinstalled in Ubuntu Touch but are not considered core apps. Most of the time these projects must be updated with the system because they use many system services which do not necessarily have a stable API.
+The following applications are preinstalled in Ubuntu Touch but are not considered core apps. Most of the time these projects must be updated with the system because they use many system services which do not necessarily have a stable API.
 
 These apps may be more difficult to work with, but their repository should contain a document stating how to build and run them on a device.
 
