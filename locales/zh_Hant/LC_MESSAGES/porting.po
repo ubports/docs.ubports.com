@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-08-28 14:00+0200\n"
-"PO-Revision-Date: 2019-01-20 14:57+0000\n"
+"PO-Revision-Date: 2019-01-21 14:32+0000\n"
 "Last-Translator: louies0623 <louies0623@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-porting/zh_Hant/>\n"
@@ -35,7 +35,7 @@ msgstr "修復掛載"
 #: ../../porting/building-halium-boot.rst:9
 msgid "Halium-boot's ``mount`` is not aware of SELinux contexts. If your device's ``fstab`` file includes any contexts, the partition that they are on will fail to mount and your port will not work correctly."
 msgstr ""
-"Halium-boot 的\"掛載\"不知道 SELinux 上下文。 如果您的設備的\"fstab\""
+"Halium-boot 的 \"掛載\" 不知道 SELinux 上下文。 如果您的裝置的 \"fstab\" "
 "文件包含任何上下文，則它們所在的分區將無法安裝，並且您的端口將無法正常工作。"
 
 #: ../../porting/building-halium-boot.rst:11
@@ -139,7 +139,7 @@ msgstr ""
 #: ../../porting/common-problems-install.rst:22
 msgid "This seems to be a common error on arm64 devices with kernel 3.10 when rsyslogd is enabled. If you have this error, please add your voice to `ubports/ubuntu-touch#560`_ and then try the following workaround:"
 msgstr ""
-"當啟用 rsyslogd 時，這似乎是3.10 的 arm64 核心裝置上的常見錯誤。 如果您有此錯誤，請將您的聲音添加到 \"ubports / "
+"當啟用 rsyslogd 時，這似乎是 3.10 的 arm64 核心裝置上的常見錯誤。 如果您有此錯誤，請將您的聲音添加到 \"ubports / "
 "ubuntu-touch＃560\"_ 然後嘗試以下解決方法："
 
 #: ../../porting/common-problems-install.rst:24
