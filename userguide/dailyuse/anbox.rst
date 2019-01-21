@@ -73,7 +73,7 @@ Keep your apps up to date
 - ApkTrack: https://f-droid.org/packages/fr.kwiatkowski.ApkTrack/
 
 How to uninstall apps
------------------------------
+---------------------
 
 - This is a example of the app-list installed apps on your device
 - To uninstall apps, run ``adb uninstall [APP_ID]`` from your Ubuntu Touch device::
