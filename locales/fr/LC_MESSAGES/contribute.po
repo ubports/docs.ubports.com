@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2019-01-13 16:38+0000\n"
+"PO-Revision-Date: 2019-01-20 18:00+0000\n"
 "Last-Translator: Anne Onyme <anneonyme017@netcourrier.com>\n"
 "Language-Team: French <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-contribute/fr/>\n"
@@ -378,38 +378,40 @@ msgid ""
 "Page titles are underlined with equals signs. For example, the markup for :"
 "doc:`./bugreporting` includes the following title:"
 msgstr ""
+"Les titres des pages sont soulignés avec des signes égal. Par exemple, le "
+"balisage pour :doc:`./bugreporting` comprend le titre suivant :"
 
 #: ../../contribute/documentation.rst:37
 msgid "Note that:"
-msgstr ""
+msgstr "Notez que :"
 
 #: ../../contribute/documentation.rst:39
 msgid "The title is sentence cased"
-msgstr ""
+msgstr "La casse du titre est celle d'une phrase"
 
 #: ../../contribute/documentation.rst:40
 msgid "The title is underlined with equals signs"
-msgstr ""
+msgstr "Le titre est souligné avec des signes égal"
 
 #: ../../contribute/documentation.rst:41
 msgid "The underline spans the title completely without going over"
-msgstr ""
+msgstr "Le soulignement couvre complètement le titre sans le dépasser"
 
 #: ../../contribute/documentation.rst:43
 msgid "Incorrect examples of titles include:"
-msgstr ""
+msgstr "Voici quelques exemples incorrects de titres :"
 
 #: ../../contribute/documentation.rst:45
 msgid "Incorrect casing"
-msgstr ""
+msgstr "Casse incorrecte"
 
 #: ../../contribute/documentation.rst:52
 msgid "Underline too short"
-msgstr ""
+msgstr "Soulignement trop court"
 
 #: ../../contribute/documentation.rst:59
 msgid "Underline too long"
-msgstr ""
+msgstr "Soulignement trop long"
 
 #: ../../contribute/documentation.rst:68
 msgid "Headings"
@@ -420,6 +422,8 @@ msgid ""
 "There are several levels of headings that you may place on your page. These "
 "levels are shown here in order:"
 msgstr ""
+"Il existe plusieurs niveaux de chapitres que vous pouvez utiliser dans votre "
+"page. Ces niveaux sont présentés ci-dessous dans l'ordre :"
 
 #: ../../contribute/documentation.rst:86
 msgid ""
@@ -431,6 +435,15 @@ msgid ""
 "must use this many heading levels, it is a good sign that your document "
 "should be split up into multiple pages."
 msgstr ""
+"Chaque niveau de chapitre créé une sous-section dans l'arborescence du "
+"sommaire général disponible lorsque la documentation est construite. Dans la "
+"version principale de la documentation (Web), seuls quatre niveaux de "
+"profondeur sont affichés à partir du niveau supérieur de la documentation. "
+"Veuillez éviter d'utiliser plus de niveaux de chapitres que ce qui ne peut "
+"apparaître dans l'arborescence car cela rend plus difficile la navigation au "
+"sein de votre document. Si vous devez utiliser autant de niveaux de "
+"chapitres, c'est le signe que votre documentation devrait être séparée en "
+"plusieurs pages."
 
 #: ../../contribute/documentation.rst:89
 msgid "Table of contents"
@@ -490,7 +503,7 @@ msgstr ""
 
 #: ../../contribute/documentation.rst:114
 msgid "Line length"
-msgstr ""
+msgstr "Longueur de ligne"
 
 #: ../../contribute/documentation.rst:116
 msgid ""
@@ -498,6 +511,10 @@ msgid ""
 "break lines at an arbitrary line length. Instead, turn on word wrap in your "
 "text editor."
 msgstr ""
+"Il n'y a pas de restriction de longueur de ligne dans ce dépôt. Veuillez ne "
+"pas faire de renvoi à la ligne pour une longueur arbitraire de longueur de "
+"ligne. À la place, activez le retour à la ligne automatique dans votre "
+"éditeur de texte."
 
 #: ../../contribute/documentation.rst:121
 msgid "Contribution workflow"
@@ -711,17 +728,19 @@ msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:2
 msgid "Preinstalled apps"
-msgstr ""
+msgstr "Applications préinstallées"
 
 #: ../../contribute/preinstalled-apps.rst:4
 msgid ""
 "This page will help you get started with developing the apps which are "
 "included with Ubuntu Touch."
 msgstr ""
+"Cette page vous aidera à vous lancer dans le développement des applications "
+"qui sont inclues dans Ubuntu Touch."
 
 #: ../../contribute/preinstalled-apps.rst:7
 msgid "Core apps"
-msgstr ""
+msgstr "Applications de base"
 
 #: ../../contribute/preinstalled-apps.rst:9
 msgid ""
@@ -731,58 +750,66 @@ msgid ""
 "`Clickable`_, an easy to use build and test system for Ubuntu Touch apps. "
 "Most core apps can even be built and run without an Ubuntu Touch device!"
 msgstr ""
+"Les applications de base sont celles qui sont inclues dans les distributions "
+"d'Ubuntu Touch provenant d'UBports **et** placées pour mises à jour dans "
+"l'OpenStore. Les applications de base sont de bonnes expériences de « "
+"premiers développements » au sein d'UBports. Beaucoup sont compilées avec "
+"`Clickable`_, un système de compilation et de test facile à utiliser pour "
+"les applications sur Ubuntu Touch. La plupart de ces applications peuvent "
+"même être compilées et exécutées sans appareils sous Ubuntu Touch !"
 
 #: ../../contribute/preinstalled-apps.rst:12
 msgid "Which core apps currently exist?"
-msgstr ""
+msgstr "Quelles applications de base existent actuellement ?"
 
 #: ../../contribute/preinstalled-apps.rst:14
 msgid "A full list of the Ubuntu Touch core apps follows."
 msgstr ""
+"Voici la liste exhaustive des applications de base existant sur Ubuntu Touch."
 
 #: ../../contribute/preinstalled-apps.rst:21
 msgid "Application Name"
-msgstr ""
+msgstr "Nom de l'application"
 
 #: ../../contribute/preinstalled-apps.rst:21
 msgid "Store page"
-msgstr ""
+msgstr "Page dans la logithèque"
 
 #: ../../contribute/preinstalled-apps.rst:21
 msgid "Code repository"
-msgstr "Répertoire de code"
+msgstr "Dépôt du code"
 
 #: ../../contribute/preinstalled-apps.rst:23
 msgid "Calculator"
-msgstr ""
+msgstr "Calculatrice"
 
 #: ../../contribute/preinstalled-apps.rst:23
 msgid "`Calculator on OpenStore`_"
-msgstr ""
+msgstr "`Calculatrice sur l'OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:23
 msgid "`calculator-app on GitHub`_"
-msgstr ""
+msgstr "`calculator-app sur GitHub`_"
 
 #: ../../contribute/preinstalled-apps.rst:24
 msgid "Calendar"
-msgstr ""
+msgstr "Agenda"
 
 #: ../../contribute/preinstalled-apps.rst:24
 msgid "`Calendar on OpenStore`_"
-msgstr ""
+msgstr "`Agenda sur l'OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:24
 msgid "`calendar-app on GitHub`_"
-msgstr ""
+msgstr "`calendar-app sur GitHub`_"
 
 #: ../../contribute/preinstalled-apps.rst:25
 msgid "Clock"
-msgstr ""
+msgstr "Horloge"
 
 #: ../../contribute/preinstalled-apps.rst:25
 msgid "`Clock on OpenStore`_"
-msgstr ""
+msgstr "`Horloge sur l'OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:25
 msgid "`clock-app on GitHub`_"
@@ -790,27 +817,27 @@ msgstr "`clock-app sur GitHub`_"
 
 #: ../../contribute/preinstalled-apps.rst:26
 msgid "File Manager"
-msgstr ""
+msgstr "Fichiers"
 
 #: ../../contribute/preinstalled-apps.rst:26
 msgid "`File Manager on OpenStore`_"
-msgstr ""
+msgstr "`Fichiers sur l'OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:26
 msgid "`filemanager-app on GitHub`_"
-msgstr ""
+msgstr "`filemanager-app sur GitHub`_"
 
 #: ../../contribute/preinstalled-apps.rst:27
 msgid "Gallery"
-msgstr ""
+msgstr "Galerie"
 
 #: ../../contribute/preinstalled-apps.rst:27
 msgid "`Gallery on OpenStore`_"
-msgstr ""
+msgstr "`Galerie sur l'OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:27
 msgid "`gallery-app on GitHub`_"
-msgstr ""
+msgstr "`gallery-app sur GitHub`_"
 
 #: ../../contribute/preinstalled-apps.rst:28
 msgid "Music"
@@ -819,7 +846,7 @@ msgstr "Musique"
 #: ../../contribute/preinstalled-apps.rst:28
 #: ../../contribute/preinstalled-apps.rst:33
 msgid "Not yet in OpenStore"
-msgstr ""
+msgstr "Pas encore dans l'OpenStore"
 
 #: ../../contribute/preinstalled-apps.rst:28
 msgid "`music-app on GitHub`_"
@@ -827,19 +854,19 @@ msgstr "`music-app sur GitHub`_"
 
 #: ../../contribute/preinstalled-apps.rst:29
 msgid "Notes"
-msgstr ""
+msgstr "Notes"
 
 #: ../../contribute/preinstalled-apps.rst:29
 msgid "`Notes on OpenStore`_"
-msgstr ""
+msgstr "`Notes dans l'OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:29
 msgid "`notes-app on GitHub`_"
-msgstr ""
+msgstr "`notes-app sur GitHub`_"
 
 #: ../../contribute/preinstalled-apps.rst:30
 msgid "OpenStore"
-msgstr ""
+msgstr "OpenStore"
 
 #: ../../contribute/preinstalled-apps.rst:30
 msgid "`OpenStore... on OpenStore`_"
@@ -862,29 +889,28 @@ msgid "`terminal-app on GitHub`_"
 msgstr "`terminal-app sur GitHub`_"
 
 #: ../../contribute/preinstalled-apps.rst:32
-#, fuzzy
 msgid "UBports Welcome"
-msgstr "Le Weblate d'UBports"
+msgstr "Accueil d'UBports"
 
 #: ../../contribute/preinstalled-apps.rst:32
 msgid "`UBports Welcome on OpenStore`_"
-msgstr ""
+msgstr "`Accueil d'UBports sur l'OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:32
 msgid "`ubports-app on GitHub`_"
-msgstr ""
+msgstr "`ubports-app sur GitHub`_"
 
 #: ../../contribute/preinstalled-apps.rst:33
 msgid "Weather"
-msgstr ""
+msgstr "Météo"
 
 #: ../../contribute/preinstalled-apps.rst:33
 msgid "`weather-app on GitHub`_"
-msgstr ""
+msgstr "`weather-app sur GitHub`_"
 
 #: ../../contribute/preinstalled-apps.rst:37
 msgid "Other preinstalled apps"
-msgstr ""
+msgstr "Autres applications préinstallées"
 
 #: ../../contribute/preinstalled-apps.rst:39
 msgid ""
@@ -893,50 +919,60 @@ msgid ""
 "the system because they use many system services which do not necessarily "
 "have a stable API."
 msgstr ""
+"Les applications suivantes sont préinstallées dans Ubuntu Touch mais ne sont "
+"pas considérées comme des applications de base. La plupart du temps, ces "
+"projets doivent être mis à jour avec le système car ils utilisent de "
+"nombreux services du système qui ne possèdent pas nécessairement d'API "
+"stable."
 
 #: ../../contribute/preinstalled-apps.rst:41
 msgid ""
 "These apps may be more difficult to work with, but their repository should "
 "contain a document stating how to build and run them on a device."
 msgstr ""
+"Ces applications peuvent être plus difficiles à utiliser, mais leurs dépôts "
+"devraient contenir un document expliquant comment les compiler et les "
+"exécuter sur un appareil."
 
 #: ../../contribute/preinstalled-apps.rst:45
 msgid "Browser (`morph-browser on GitHub`_)"
-msgstr ""
+msgstr "Navigateur (`morph-browser sur GitHub`_)"
 
 #: ../../contribute/preinstalled-apps.rst:46
 msgid "Contacts (`address-book-app on GitHub`_)"
-msgstr ""
+msgstr "Contacts (`address-book-app sur GitHub`_)"
 
 #: ../../contribute/preinstalled-apps.rst:47
 msgid "Camera (`camera-app on GitHub`_)"
-msgstr ""
+msgstr "Caméra (`camera-app sur GitHub`_)"
 
 #: ../../contribute/preinstalled-apps.rst:48
 msgid "External Drives (`ciborium on GitHub`_)"
-msgstr ""
+msgstr "Périphériques externes (`ciborium sur GitHub`_)"
 
 #: ../../contribute/preinstalled-apps.rst:49
 msgid "Media Player (`mediaplayer-app on GitHub`_)"
-msgstr ""
+msgstr "Lecteur multimédia (`mediaplayer-app sur GitHub`_)"
 
 #: ../../contribute/preinstalled-apps.rst:50
 msgid "Messaging (`messaging-app on GitHub`_)"
-msgstr ""
+msgstr "Messagerie (`messaging-app sur GitHub`_)"
 
 #: ../../contribute/preinstalled-apps.rst:51
 msgid "Phone (`dialer-app on GitHub`_)"
-msgstr ""
+msgstr "Téléphone (`dialer-app sur GitHub`_)"
 
 #: ../../contribute/preinstalled-apps.rst:52
 msgid "System Settings (`system-settings on GitHub`_)"
-msgstr ""
+msgstr "Paramètres du système (`system-settings sur GitHub`_)"
 
 #: ../../contribute/preinstalled-apps.rst:54
 msgid ""
 "Instructions for contributing to these applications can be found in their "
 "respective repositories."
 msgstr ""
+"Les instruction pour contribuer à ces applications peuvent être trouvées "
+"dans leurs dépôts respectifs."
 
 #: ../../contribute/quality-assurance.rst:2
 msgid "Quality Assurance"
@@ -982,7 +1018,6 @@ msgid "Confirming bug reports"
 msgstr "Confirmation des signalements de problèmes"
 
 #: ../../contribute/quality-assurance.rst:14
-#, fuzzy
 msgid ""
 "Unconfirmed bugreports are labeld **needs confirmation** to enable `global "
 "filtering <https://github.com/ubports/ubuntu-touch/issues?q=is%3Aissue+is"
@@ -995,22 +1030,22 @@ msgid ""
 msgstr ""
 "Les rapports de problèmes sont identifiés par les mots-clés **needs "
 "confirmation** (confirmation nécessaire) pour activer le `filtrage global "
-"<https://github.com/ubports/ubuntu-touch/issues?q=is%3Aissue+is%3Aopen+label"
-"%3A%22needs+confirmation%22>`__. Parcourez la liste, lisez les rapports et "
-"essayez de reproduire les problèmes qui sont décrits. Si nécessaire, "
-"ajoutez :doc:`des informations manquantes ou des rapports d'erreur, ou "
-"améliorez la qualité du rapport via d'autres moyens <bugreporting>`. Laissez "
-"un commentaire décrivant votre appareil, canal, numéro de version et si vous "
-"avez été en mesure de reproduire ou pas l'erreur."
+"<https://github.com/ubports/ubuntu-touch/"
+"issues?q=is%3Aissue+is%3Aopen+label%3A%22needs+confirmation%22>`__. "
+"Parcourez la liste, lisez les rapports et essayez de reproduire les "
+"problèmes qui sont décrits. Si nécessaire, ajoutez :doc:`des informations "
+"manquantes ou des rapports d'erreur, ou améliorez la qualité du rapport via "
+"d'autres moyens <bugreporting>`. Laissez un commentaire décrivant votre "
+"appareil, votre canal, votre numéro de version et si vous avez été en mesure "
+"de reproduire ou pas l'erreur."
 
 #: ../../contribute/quality-assurance.rst:16
-#, fuzzy
 msgid ""
 "If you have write-access to the repository, you can replace the **needs "
 "confirmation** label with **bug** (to mark it confirmed) or **invalid** (if "
 "the issue is definitely not reproducible). In that case it should be closed."
 msgstr ""
-"Si vous avez accès en écriture au répertoire, vous pouvez remplacer le mot-"
+"Si vous avez accès en écriture dans le dépôt, vous pouvez remplacer le mot-"
 "clé **needs confirmation** (confirmation nécessaire) par **bug** (problème) "
 "pour le marquer comme confirmé ou **invalid** (invalide) si le problème "
 "n'est pas reproductible. Dans ce cas, il devrait être fermé."
@@ -1035,9 +1070,11 @@ msgid ""
 "Pull-requests can be tested using the `QA scripts <https://github.com/"
 "ubports/ubports-qa-scripts>`_. Run ``ubports-qa -h`` for usage information."
 msgstr ""
+"Les contributions peuvent être testées en utilisant les `scripts de "
+"l'Assurance Qualité<https://github.com/ubports/ubports-qa-scripts>`_. Lancez "
+"``ubports-qa -h`` pour les informations concernant l'utilisation."
 
 #: ../../contribute/quality-assurance.rst:25
-#, fuzzy
 msgid ""
 "Once the pull-request has been merged, the issue it fixes is moved to the "
 "quality assurance column of the `GitHub project <https://github.com/ubports/"
@@ -1053,9 +1090,9 @@ msgstr ""
 "Une fois qu'un développeur a terminé de travailler sur un problème, celui-ci "
 "est déplacé dans la colonne assurance qualité du `projet sous GitHub "
 "<https://github.com/ubports/ubuntu-touch/projects/3>`__. Vérifiez si le "
-"problème persiste dans la dernière mise à jour sur le canal « Développement "
-"» et essayez de recréer un des problèmes causés. Regardez si le développeur "
-"a mentionné des choses spécifiques à vérifier lors du test et laissez un "
+"problème persiste dans la dernière mise à jour sur le canal « Développement »"
+" et essayez de recréer un des problèmes causés. Regardez si le développeur a "
+"mentionné des choses spécifiques à vérifier lors du test et laissez un "
 "commentaire détaillant votre expérience. Si vous disposez des droits "
 "d'écriture dans le répertoire, vous pouvez déplacer le problème dans **In "
 "Development** (en développement) ou le transférer vers **Release Candidate** "
