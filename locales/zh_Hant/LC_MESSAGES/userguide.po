@@ -1,0 +1,886 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, The UBports project (Creative Commons BY-SA 4.0)
+# This file is distributed under the same license as the UBports package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: UBports 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-30 10:25-0600\n"
+"PO-Revision-Date: 2019-01-15 01:04+0000\n"
+"Last-Translator: louies0623 <louies0623@gmail.com>\n"
+"Language-Team: Chinese (Traditional) <https://translate.ubports.com/projects/"
+"ubports-docs/documentation-userguide/zh_Hant/>\n"
+"Language: zh_Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 3.1.1\n"
+
+#: ../../userguide/advanceduse/adb.rst:2
+msgid "Shell access via adb"
+msgstr "透過 adb 存取 Shell"
+
+#: ../../userguide/advanceduse/adb.rst:4
+msgid "You can put your UBports device into developer mode and access a Bash shell from your PC. This is useful for debugging or more advanced shell usage."
+msgstr ""
+
+#: ../../userguide/advanceduse/adb.rst:8
+msgid "Install ADB"
+msgstr "安裝 ADB"
+
+#: ../../userguide/advanceduse/adb.rst:10
+msgid "First, you'll need ADB installed on your computer."
+msgstr ""
+
+#: ../../userguide/advanceduse/adb.rst:12
+msgid "On Ubuntu::"
+msgstr "在 Ubuntu::"
+
+#: ../../userguide/advanceduse/adb.rst:16
+msgid "On Fedora::"
+msgstr "在 Fedora::"
+
+#: ../../userguide/advanceduse/adb.rst:20
+msgid "And on MacOS with `Homebrew <https://brew.sh>`_::"
+msgstr ""
+
+#: ../../userguide/advanceduse/adb.rst:24
+msgid "For Windows, grab the command-line tools only package from `here <https://developer.android.com/studio/index.html#downloads>`_."
+msgstr ""
+
+#: ../../userguide/advanceduse/adb.rst:27
+msgid "Enable developer mode"
+msgstr "啟用開發人員模式"
+
+#: ../../userguide/advanceduse/adb.rst:29
+msgid "Next, you'll need to turn on Developer Mode."
+msgstr "接下來，您需要打開開發人員模式。"
+
+#: ../../userguide/advanceduse/adb.rst:31
+msgid "Reboot your device"
+msgstr "重新啟動您的裝置"
+
+#: ../../userguide/advanceduse/adb.rst:32
+msgid "Place your device into developer mode (Settings - About - Developer Mode - check the box to turn it on)"
+msgstr ""
+
+#: ../../userguide/advanceduse/adb.rst:33
+msgid "Plug the device into a computer with adb installed"
+msgstr "將設備插入已安裝 adb 的電腦"
+
+#: ../../userguide/advanceduse/adb.rst:34
+msgid "Open a terminal and run ``adb devices``."
+msgstr ""
+
+#: ../../userguide/advanceduse/adb.rst:37
+msgid "When you're done using the shell, it's a good idea to turn Developer Mode off again."
+msgstr ""
+
+#: ../../userguide/advanceduse/adb.rst:39
+msgid "If there's a device in the list here (The command doesn't print \"List of devices attached\" and a blank line), you are able to use ADB successfully. If not, continue to the next section."
+msgstr ""
+
+#: ../../userguide/advanceduse/adb.rst:42
+msgid "Add hardware IDs"
+msgstr ""
+
+#: ../../userguide/advanceduse/adb.rst:44
+msgid "ADB doesn't always know what devices on your computer it should or should not talk to. You can manually add the devices that it does not know how to talk to."
+msgstr ""
+
+#: ../../userguide/advanceduse/adb.rst:46
+msgid "Just run the command for your selected device if it's below. Then, run ``adb kill-server`` followed by the command you were initially trying to run."
+msgstr ""
+
+#: ../../userguide/advanceduse/adb.rst:48
+msgid "Fairphone 2::"
+msgstr ""
+
+#: ../../userguide/advanceduse/adb.rst:52
+msgid "Oneplus One::"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:2
+msgid "CalDAV and CardDAV synchronization"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:4
+msgid "CalDAV and CardDAV are protocols to synchronize calendars and contacts with a remote server. Many email-hosters provide a CalDAV and CardDAV interface."
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:6
+msgid "**Note:** CalDAV Sync can also be set up in using the calendar app. Open the app, click on the little calendar icon in the top right corner and select \"Add internet calendar > Generic CalDAV\". Enter your calendar URL as well as your username and password to complete the process."
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:8
+msgid "At the moment, there is no carddav implementation directly accessible from the Ubuntu Touch graphical user-interface, so the only way to sync carddav is by using syncevolution + cron. However, there is a simple way to do that with a script that you can run in the terminal or via phablet SSH connection. These instructions work for caldav as well."
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:10
+msgid "Follow this `guide <https://docs.ubports.com/en/latest/userguide/advanceduse/adb.html>`_ to activate Developer Mode and ADB (or SSH) connection."
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:13
+msgid "Download this `script <https://gist.github.com/bastos77/0c47a94dd0bf3e394f879c0ff42b7839>`_ (let's call it dav.sh) and edit the following variables:"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:15
+msgid "server side : CAL_URL, **CONTACTS_URL**, USERNAME, PASSWORD (of your ownCloud/nextCloud/baikal/SOGO/... server)"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:16
+msgid "CONTACT and CALENDAR _ NAME / VISUAL_NAME / CONFIG_NAME (it's more cosmetic)"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:17
+msgid "CRON_FREQUENCY (for the frequency of synchronization)"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:18
+msgid "Line 61: write ``sudo sh -c \"echo '$COMMAND_LINE' > /sbin/sogosync\"`` , instead of ``sudo echo \"$COMMAND_LINE\" > /sbin/sogosync``, to avoid permission denied error"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:20
+msgid "Move the file to your Ubuntu Touch device, either by file manager or with adb::"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:24
+msgid "Connect with the phablet shell (``adb shell``) or directly on the phone Terminal app and type the following::"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:31
+msgid "Sources:"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:33
+msgid "https://askubuntu.com/questions/616081/ubuntu-touch-add-contact-list-and-calendars/664834#664834"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:34
+msgid "https://gist.github.com/boTux/069b53d8e06bdb9b9c97"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:35
+msgid "https://gist.github.com/tcarrondo"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:36
+msgid "https://gist.github.com/bastos77"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:37
+msgid "https://askubuntu.com/questions/601910/ssh-ubuntu-touch"
+msgstr ""
+
+#: ../../userguide/advanceduse/index.rst:2
+msgid "Advanced use"
+msgstr ""
+
+#: ../../userguide/advanceduse/index.rst:4
+msgid "This section of the documentation details advanced tasks that power users may want to perform on their Ubuntu Touch device."
+msgstr ""
+
+#: ../../userguide/advanceduse/index.rst:7
+msgid "Some of these guides involve making your system image writable, which may break OTA updates. The guides may also reduce the overall security of your Ubuntu Touch device. Please consider these ramifications before hacking on your device too much!"
+msgstr ""
+
+#: ../../userguide/advanceduse/reverse-tethering.rst:2
+msgid "Reverse tethering"
+msgstr ""
+
+#: ../../userguide/advanceduse/reverse-tethering.rst:4
+msgid "Some users may not have an available wifi connection for their phone nor a data subscription from their mobile provider. This short tutorial will help you to connect your Ubuntu Touch to your computer to access internet."
+msgstr ""
+
+#: ../../userguide/advanceduse/reverse-tethering.rst:7
+msgid "Prerequisite: Phone is connected to the computer with usb and developer mode enabled."
+msgstr ""
+
+#: ../../userguide/advanceduse/reverse-tethering.rst:10
+msgid "Steps"
+msgstr ""
+
+#: ../../userguide/advanceduse/reverse-tethering.rst:12
+msgid "On phone: ``android-gadget-service enable rndis``"
+msgstr ""
+
+#: ../../userguide/advanceduse/reverse-tethering.rst:14
+msgid "On computer: get your rndis ip address e.g:``hostname -I``"
+msgstr ""
+
+#: ../../userguide/advanceduse/reverse-tethering.rst:16
+msgid "On phone:"
+msgstr ""
+
+#: ../../userguide/advanceduse/reverse-tethering.rst:18
+msgid "add gateway: ``sudo route add default gw YOUR_COMPUTER_RNDIS_IP``"
+msgstr ""
+
+#: ../../userguide/advanceduse/reverse-tethering.rst:20
+msgid "add nameservers: ``echo \"nameserver 8.8.8.8\" | sudo tee /etc/resolv.conf``"
+msgstr ""
+
+#: ../../userguide/advanceduse/reverse-tethering.rst:22
+msgid "refresh dns table: ``resolvconf -u``"
+msgstr ""
+
+#: ../../userguide/advanceduse/reverse-tethering.rst:24
+msgid "On computer:"
+msgstr ""
+
+#: ../../userguide/advanceduse/reverse-tethering.rst:26
+msgid "enable ip forwarding: ``echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward``"
+msgstr ""
+
+#: ../../userguide/advanceduse/reverse-tethering.rst:28
+msgid "apply NAT: ``sudo iptables -t nat -A POSTROUTING -s 10.0.0.0/8 -o eth0 -j MASQUERADE``"
+msgstr ""
+
+#: ../../userguide/advanceduse/reverse-tethering.rst:32
+#: ../../userguide/advanceduse/screencasting.rst:72
+#: ../../userguide/advanceduse/ssh.rst:53
+msgid "References"
+msgstr ""
+
+#: ../../userguide/advanceduse/reverse-tethering.rst:34
+msgid "askubuntu: https://askubuntu.com/questions/655321/ubuntu-touch-reverse-tethering-and-click-apps-updates"
+msgstr ""
+
+#: ../../userguide/advanceduse/screencasting.rst:2
+msgid "Screen Casting your UT device to your computer"
+msgstr ""
+
+#: ../../userguide/advanceduse/screencasting.rst:5
+msgid "Ubuntu Touch comes with a command line utility called ``mirscreencast`` which dumps screen frames to a file. The idea here is to stream UT display to a listening computer over the network or directly trough adb so that we can either watch it live or record it to a file."
+msgstr ""
+
+#: ../../userguide/advanceduse/screencasting.rst:9
+msgid "Using adb"
+msgstr ""
+
+#: ../../userguide/advanceduse/screencasting.rst:11
+msgid "You can catch output directly from ``adb exec-out`` command and forward it to mplayer::"
+msgstr ""
+
+#: ../../userguide/advanceduse/screencasting.rst:15
+msgid "NB: ``timeout`` here is used in order to kill process properly on device ( here 120 seconds ). Otherwise process still continuing even if killed on computer. You can reduce or increase frame per second with``--cap-interval`` (1 = 60fps, 2=30fps, ...)  and size of frames ``384 640`` means width=384 height=640"
+msgstr ""
+
+#: ../../userguide/advanceduse/screencasting.rst:19
+msgid "Via network"
+msgstr ""
+
+#: ../../userguide/advanceduse/screencasting.rst:22
+msgid "On receiver"
+msgstr ""
+
+#: ../../userguide/advanceduse/screencasting.rst:24
+msgid "For real time casting:"
+msgstr ""
+
+#: ../../userguide/advanceduse/screencasting.rst:27
+msgid "Prepare your computer to listen to a tcp port(here 1234) and forward raw stream to a video player (here mplayer) with a frame size of 384x640::"
+msgstr ""
+
+#: ../../userguide/advanceduse/screencasting.rst:31
+msgid "For stream recording:"
+msgstr ""
+
+#: ../../userguide/advanceduse/screencasting.rst:33
+msgid "Prepare your computer to listen to a tcp port(here 1234), ungzip and forward raw stream to a video encoder (here mencoder)::"
+msgstr ""
+
+#: ../../userguide/advanceduse/screencasting.rst:38
+msgid "On device"
+msgstr ""
+
+#: ../../userguide/advanceduse/screencasting.rst:40
+msgid "Forward and gzip stream with 60fps (--cap-interval 1) and frame size of 384x640 to computer 10.42.0.209 on port 1234 ::"
+msgstr ""
+
+#: ../../userguide/advanceduse/screencasting.rst:46
+msgid "Example script"
+msgstr ""
+
+#: ../../userguide/advanceduse/screencasting.rst:48
+msgid "This script allows you to screen cast remote UT device to your local PC (must have ssh access to UT and mplayer installed on PC), run it on your computer::"
+msgstr ""
+
+#: ../../userguide/advanceduse/screencasting.rst:69
+msgid "You can download it here: :download:`files/mircast.sh`"
+msgstr ""
+
+#: ../../userguide/advanceduse/screencasting.rst:74
+msgid "initial source: https://wiki.ubuntu.com/Touch/ScreenRecording"
+msgstr ""
+
+#: ../../userguide/advanceduse/screencasting.rst:75
+msgid "demo: https://www.youtube.com/watch?v=HYm4RUwwo5Q"
+msgstr ""
+
+#: ../../userguide/advanceduse/ssh.rst:2
+msgid "Shell access via ssh"
+msgstr ""
+
+#: ../../userguide/advanceduse/ssh.rst:4
+msgid "You can use ssh to access a shell from your PC. This is useful for debugging or more advanced shell usage."
+msgstr ""
+
+#: ../../userguide/advanceduse/ssh.rst:6
+msgid "You need a ssh key pair for this. Logging in via password is disabled by default."
+msgstr ""
+
+#: ../../userguide/advanceduse/ssh.rst:9
+msgid "Create your public key"
+msgstr ""
+
+#: ../../userguide/advanceduse/ssh.rst:11
+msgid "If not already created, create your public key, default choices should be fine for LAN, you can leave empty password if you don't want to deal with it each time::"
+msgstr ""
+
+#: ../../userguide/advanceduse/ssh.rst:16
+msgid "Copy the public key to your device"
+msgstr ""
+
+#: ../../userguide/advanceduse/ssh.rst:18
+msgid "You need then to transfer your public key to your device. There are multiple ways to do this. For example:"
+msgstr ""
+
+#: ../../userguide/advanceduse/ssh.rst:20
+msgid "Connect the ubports device and the PC with a USB cable. Then copy the file using your filemanager."
+msgstr ""
+
+#: ../../userguide/advanceduse/ssh.rst:21
+msgid "Or transfer the key via the internet by mailing it to yourself, or uploading it to your own cloud storage, or webserver, etc."
+msgstr ""
+
+#: ../../userguide/advanceduse/ssh.rst:22
+msgid "You can also connect via :doc:`adb <adb>` and use the following command to copy it::"
+msgstr ""
+
+#: ../../userguide/advanceduse/ssh.rst:27
+msgid "Configure your device"
+msgstr ""
+
+#: ../../userguide/advanceduse/ssh.rst:29
+msgid "Now you have the public key on the UBports device. Let's assume it's stored as ``/home/phablet/id_rsa.pub``. Use the terminal app or and adb connection to perform the following steps on your phone. ::"
+msgstr ""
+
+#: ../../userguide/advanceduse/ssh.rst:38
+msgid "Now start the ssh server::"
+msgstr ""
+
+#: ../../userguide/advanceduse/ssh.rst:44
+msgid "Connect"
+msgstr ""
+
+#: ../../userguide/advanceduse/ssh.rst:46
+msgid "Now everything is set up and you can use ``ssh`` ::"
+msgstr ""
+
+#: ../../userguide/advanceduse/ssh.rst:50
+msgid "Of course you can now also use ``scp`` or ``sshfs`` to transfer files."
+msgstr ""
+
+#: ../../userguide/advanceduse/ssh.rst:55
+msgid "`askubuntu.com: How can I access my Ubuntu phone over ssh? <https://askubuntu.com/questions/348714/how-can-i-access-my-ubuntu-phone-over-ssh/599041#599041>`_"
+msgstr ""
+
+#: ../../userguide/advanceduse/ssh.rst:56
+msgid "`gurucubano: BQ Aquaris E 4.5 Ubuntu phone: How to get SSH access to the ubuntu-phone via Wifi <https://gurucubano.gitbooks.io/bq-aquaris-e-4-5-ubuntu-phone/content/en/chapter1.html>`_"
+msgstr ""
+
+#: ../../userguide/advanceduse/switchchannel.rst:2
+msgid "Switch release channels"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:2
+msgid "Run Android applications"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:4
+msgid "`Anbox <https://anbox.io>`_ is a minimal Android container and compatibility layer that allows you to run Android applications on GNU/Linux operating systems."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:7
+msgid "Anbox is in early development"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:8
+msgid "When \"host\" is used in this document, it refers to another device which you can connect your Ubuntu Touch device to. Your host device must have ``adb`` and ``fastboot`` installed."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:11
+msgid "Supported devices"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:13
+msgid "Make sure your device is supported:"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:15
+msgid "Meizu Pro 5 (codename: ``turbo``, name of the boot partition: ``bootimg``)"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:16
+msgid "Fairphone 2 (codename: ``FP2``, name of the boot partition: ``boot``)"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:17
+msgid "Oneplus one (codename: ``bacon``, name of the boot partition: ``boot``)"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:18
+msgid "Nexus 5 (codename: ``hammerhead``, name of the boot partition: ``boot``)"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:19
+msgid "BQ M10 HD (codename: ``cooler``, name of the boot partition: ``boot``)"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:20
+msgid "BQ M10 FHD (codename: ``frieza``, name of the boot partition: ``boot``)"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:22
+msgid "You will need the device codename and the name of your boot partition for the installation."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:25
+msgid "How to install"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:28
+msgid "Because this feature is in such an early stage of development, the installation is only recommended for experienced users."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:30
+msgid "Make sure your supported device runs on 16.04 (anbox doesn't work on 15.04)"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:31
+msgid "Open a terminal on your host and set some device specific variables by running ``export CODENAME=\"turbo\" && export PARTITIONNAME=\"bootimg\"``, but replace the part between the quotes respectively with the codename and name of the boot partition for your device. See the above list."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:32
+msgid "Activate developer mode on your device."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:33
+msgid "Connect the device to your host and run the following commands from your host (same terminal that you ran the ``export`` command in)::"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:43
+msgid "Wait for the device to reboot, then run from your host::"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:52
+#: ../../userguide/dailyuse/anbox.rst:66
+#: ../../userguide/dailyuse/anbox.rst:87
+msgid "Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the new Android apps to show up."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:55
+msgid "How to install new apks"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:57
+msgid "Copy the apk to ``/home/phablet/Downloads``, then run the following from your host::"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:69
+msgid "Keep your apps up to date"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:71
+msgid "To keep your apps running the lasted version you can make use of F-Droid or ApkTrack. If you like to install one of the above apps you can find them here:"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:73
+msgid "F-Droid: https://f-droid.org/"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:74
+msgid "ApkTrack: https://f-droid.org/packages/fr.kwiatkowski.ApkTrack/"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:77
+msgid "How to uninstall applications"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:79
+msgid "This is a example of the app-list installed apps on your device"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:80
+msgid "To uninstall apps, run ``adb uninstall [APP_ID]`` from your Ubuntu Touch device::"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:90
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:92
+msgid "If installing ``anbox-ubuntu-touch`` or ``android-tools-adb`` on the device fails with an error about unsufficient space, try this::"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:103
+msgid "When you want to install an apk but get the error ``Invalid APK file`` that error could also mean \"file not found\""
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:105
+msgid "check that you typed the file name correctly"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:106
+msgid "if the apk does not reside in the current folder where you execute adb, you have to specify the full path, e.g. ``/home/phablet/Downloads/my-app.apk`` instead of just ``my-app.apk``"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:110
+msgid "Reporting bugs"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:112
+msgid "Please :doc:`report any bugs </contribute/bugreporting>` you come across. Bugs with Ubuntu Touch 16.04 are reported in `the normal Ubuntu Touch tracker <https://github.com/ubports/ubuntu-touch/issues>`_ and issues with anbox are reported on `our downstream fork <https://github.com/ubports/anbox/issues>`_. Thank you!"
+msgstr ""
+
+#: ../../userguide/dailyuse/index.rst:2
+msgid "Daily use"
+msgstr ""
+
+#: ../../userguide/dailyuse/index.rst:4
+msgid "This section of the documentation details common tasks that users may want to perform while using their Ubuntu Touch device."
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:2
+msgid "Run desktop applications"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:4
+msgid "Libertine allows you to use standard desktop applications in Ubuntu Touch."
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:6
+msgid "To display and launch applications you need the *Desktop Apps Scope* which is available in the `Open Store <https://open-store.io/app/libertine-scope.ubuntu>`_. To install applications you need to use the commandline as described below."
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:9
+msgid "Manage containers"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:12
+msgid "Create a container"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:14
+msgid "The first step is to create a container where applications can be installed::"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:18
+msgid "You can add extra options such as:"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:20
+msgid "``-n name`` name is a more user friendly name of the container"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:21
+msgid "``-t type`` type can be either ``chroot`` or ``lxc``. Default is ``chroot`` and is compatible with every device. If the kernel of your device supports it then ``lxc`` is suggested."
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:23
+msgid "The creating process can take some time, due to the size of the container (some hundred of megabytes)."
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:26
+msgid "The ``create`` command shown above cannot be run directly in the terminal app, due apparmor restrictions. You can run it from another device using either ``adb`` or ``ssh`` connection. Alternatively, you can run it from the terminal app using a loopback ssh connection running this command: ``ssh localhost``."
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:29
+msgid "List containers"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:31
+msgid "To list all containers created run::"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:36
+msgid "Destroy a container"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:42
+msgid "Manage applications"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:44
+msgid "Once a container is set up, you can list the installed applications::"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:48
+msgid "Install a package::"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:52
+msgid "Remove a package::"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:57
+msgid "If you have more than one container, then you can use the option ``-i CONTAINER-IDENTIFIER`` to specify for which container you want to perform an operation."
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:61
+msgid "Files"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:63
+msgid "Libertine applications do have access to these folders:"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:65
+msgid "Documents"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:66
+msgid "Music"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:67
+msgid "Pictures"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:68
+msgid "Downloads"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:69
+msgid "Videos"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:72
+msgid "Tips"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:75
+msgid "Locations"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:77
+msgid "For every container you create there will be two directories created:"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:79
+msgid "A root directory ``~/.cache/libertine-container/CONTAINER-IDENTIFIER/rootfs/`` and"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:80
+msgid "a user directory ``~/.local/share/libertine-container/user-data/CONTAINER-IDENTIFIER/``"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:83
+msgid "Shell access"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:85
+msgid "There are 2 options for executing commands inside the container."
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:87
+msgid "**The first option** is based on ``libertine-container-manager exec``. It lets you run your commands as root. The drawback is that the container is not completely set up. So far we know that the `folders mentioned above (Documents, Music, ...) are not mounted <https://askubuntu.com/questions/831830/libertine-terminal-applications-how-to-access-to-the-real-home-dir#comment1273744_833984/>`_ i.e., the ``/home/phablet/`` directory is empty. Likewise the directory referenced in ``TMPDIR`` is not available what may lead to problems with software that tries to create temporary files or directories. You may use this option e.g., for installing packages."
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:90
+#: ../../userguide/dailyuse/libertine.rst:104
+msgid "To execute a command you can use the following pattern::"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:94
+#: ../../userguide/dailyuse/libertine.rst:108
+msgid "For example run::"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:98
+msgid "To get a shell into your container as ``root`` run::"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:102
+msgid "**The second option** is based on ``libertine-launch``. It will execute your commands as user phablet in a completely set up container. So you may use this option to modify your files using installed packages."
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:112
+msgid "To get a shell as user ``phablet`` run::"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:117
+msgid "When you launch bash in this way you will not get any specific feedback to confirm that you are now *inside* the container. You can check ``ls /`` to confirm for yourself that you are inside the container. The listing of ``ls /`` will be different inside and outside of the container."
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:120
+msgid "Shortcuts"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:122
+msgid "If you want, you can add aliases for command line tools. Add lines like the following ones to your ``~/.bash_aliases``::"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:128
+msgid "Background"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:130
+msgid "A display server coordinates input and output of an operating system. Most Linux distributions today use the X server. Ubuntu Touch does not use X, but  a new display server called Mir. This means that standard X applications are not directly compatible with Ubuntu Touch. A compatibility layer called XMir resolves this. Libertine relies on XMir to display desktop applications."
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:132
+msgid "Another challenge is that Ubuntu Touch system updates are released as OTA images. A consequence of this is that the root filesystem is read only. Libertine provides a container with a read-write filesystem to allow the installation of regular Linux desktop applications."
+msgstr ""
+
+#: ../../userguide/install.rst:2
+msgid "Install Ubuntu Touch"
+msgstr ""
+
+#: ../../userguide/install.rst:4
+msgid "Installing Ubuntu Touch is easy, and a lot of work has gone in to making the installation process less intimidating to less technical users. The UBports Installer is a nice graphical tool that you can use to install Ubuntu Touch on a `supported device <https://ubuntu-touch.io/devices>`_ from your Linux, Mac or Windows computer."
+msgstr ""
+
+#: ../../userguide/install.rst:7
+msgid "If you're switching your device over from Android, you will not be able to keep any data that is currently on the device. Create an external backup if you want to keep it."
+msgstr ""
+
+#: ../../userguide/install.rst:9
+msgid "Go to `the download page <https://github.com/ubports/ubports-installer/releases/latest>`_ and download the version of the installer for your operating system:"
+msgstr ""
+
+#: ../../userguide/install.rst:11
+msgid "Windows: ``ubports-installer-<version-number>.exe``"
+msgstr ""
+
+#: ../../userguide/install.rst:12
+msgid "macOS: ``ubports-installer-<version-number>.dmg``"
+msgstr ""
+
+#: ../../userguide/install.rst:13
+msgid "Ubuntu or Debian: ``ubports-installer-<version-number>.deb``"
+msgstr ""
+
+#: ../../userguide/install.rst:14
+msgid "Other Linux distributions: ``ubports-installer-<version-number>.snap`` or ``ubports-installer-<version-number>.AppImage``"
+msgstr ""
+
+#: ../../userguide/install.rst:16
+msgid "Start the installer and follow the on-screen instructions that will walk you through the installation process. That's it! Have fun exploring Ubuntu Touch!"
+msgstr ""
+
+#: ../../userguide/install.rst:18
+msgid "If you're an experienced android developer and want to help us bring Ubuntu Touch to more devices, visit the :doc:`porting section </porting/introduction>`."
+msgstr ""
+
+#: ../../userguide/install.rst:21
+msgid "Install on legacy Android devices"
+msgstr ""
+
+#: ../../userguide/install.rst:23
+msgid "While the installation process is fairly simple on most devices, some legacy Bq and Meizu devices require special steps. This part of the guide does not apply to other devices."
+msgstr ""
+
+#: ../../userguide/install.rst:27
+msgid "This is more or less uncharted territory. If your device's manufacturer does not want you to install an alternative operating system, there's not a lot we can do about it. The instructions below should only be followed by experienced users. While we appreciate that lots of people want to use our OS, flashing a device with OEM tools shouldn't be done without a bit of know-how and plenty of research."
+msgstr ""
+
+#: ../../userguide/install.rst:29
+msgid "Meizu devices are pretty much stuck on Flyme. While the MX4 can be flashed successfully in some cases, the Pro5 is Exynos-based and has its own headaches."
+msgstr ""
+
+#: ../../userguide/install.rst:33
+msgid "BE VERY CAREFUL! You are responsible for your own actions!"
+msgstr ""
+
+#: ../../userguide/install.rst:35
+msgid "Disconnect all devices and non-essential peripherals from your PC. Charge your device on a wall-charger (not your PC) to at least 40 percent"
+msgstr ""
+
+#: ../../userguide/install.rst:36
+msgid "Download the Ubuntu Touch ROM for your device:"
+msgstr ""
+
+#: ../../userguide/install.rst:38
+msgid "`Bq E4.5 <http://cdimage.ubports.com/ubports-installer/krillin/e45.zip>`_ (*krillin*)"
+msgstr ""
+
+#: ../../userguide/install.rst:39
+msgid "`Bq E5 HD <https://storage.googleapis.com/otas/2014/Smartphones/Aquaris_E5_HD/Ubuntu/VEGETA01A-S11A_BQ_L100EN_2017_170207.zip>`_ (*vegetahd*)"
+msgstr ""
+
+#: ../../userguide/install.rst:40
+msgid "`Bq M10 HD <https://storage.googleapis.com/otas/2015/Tablets/Freezer/Ubuntu/OTA_13_FW_version/cooler-image-stable-6.zip>`_ (*cooler*)"
+msgstr ""
+
+#: ../../userguide/install.rst:41
+msgid "`Bq M10 FHD <https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/Ubuntu/OTA_15/frieza-image-stable-8.zip>`_ (*frieza*)"
+msgstr ""
+
+#: ../../userguide/install.rst:42
+msgid "`Meizu MX4 <http://people.canonical.com/~alextu/tangxi/684.zip>`_ (*arale*)"
+msgstr ""
+
+#: ../../userguide/install.rst:44
+msgid "Download `SP flash tool <https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/Ubuntu/SP_Flash_Tool_exe_Linux_v5.1612.00.100.zip>`_ for Linux."
+msgstr ""
+
+#: ../../userguide/install.rst:46
+msgid "On Ubuntu 17.10, there are issues with flash_tool loading the shared library 'libpng12', so this can be used as a workaround:"
+msgstr ""
+
+#: ../../userguide/install.rst:54
+msgid "You will also need to use `the latest version of the tool <https://spflashtool.com/download/SP_Flash_Tool_v5.1744_Linux.zip>`_."
+msgstr ""
+
+#: ../../userguide/install.rst:56
+msgid "Extract the zip files"
+msgstr ""
+
+#: ../../userguide/install.rst:57
+msgid "Start the tool with ``sudo``"
+msgstr ""
+
+#: ../../userguide/install.rst:58
+msgid "Select the ``*Android_scatter.txt`` file from the archive you downloaded in the first step as the scatter-loading file"
+msgstr ""
+
+#: ../../userguide/install.rst:59
+msgid "Choose \"Firmware Upgrade\""
+msgstr ""
+
+#: ../../userguide/install.rst:60
+msgid "Double-check you chose \"Firmware Upgrade\" and not \"Download\" or \"Format All\""
+msgstr ""
+
+#: ../../userguide/install.rst:64
+msgid "If you select DOWNLOAD rather than FIRMWARE UPGRADE, you will end up with a useless brick rather than a fancy Ubuntu Touch device. Be sure to select FIRMWARE UPGRADE."
+msgstr ""
+
+#: ../../userguide/install.rst:66
+msgid "Turn your device completely off, but do not connect it yet"
+msgstr ""
+
+#: ../../userguide/install.rst:67
+msgid "Press the button labeled \"Download\""
+msgstr ""
+
+#: ../../userguide/install.rst:68
+msgid "Perform a final sanity-check that you selected the \"Firmware Upgrade\" option, not \"Download\""
+msgstr ""
+
+#: ../../userguide/install.rst:69
+msgid "Make sure your device is off and connect it to your PC. Don't use a USB 3.0 port, since that's known to cause communication issues with your device."
+msgstr ""
+
+#: ../../userguide/install.rst:70
+msgid "`Magic <https://en.wikipedia.org/wiki/Clarke's_three_laws>`_ happens. Your device will boot into a super old version of Ubuntu Touch."
+msgstr ""
+
+#: ../../userguide/install.rst:71
+msgid "Congratulations! Your device will now boot into a very old version of Ubuntu Touch. You can now use the UBports Installer to proceed."
+msgstr ""
