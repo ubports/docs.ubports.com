@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2019-01-21 02:51+0000\n"
+"PO-Revision-Date: 2019-01-21 14:32+0000\n"
 "Last-Translator: louies0623 <louies0623@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-userguide/zh_Hant/>\n"
@@ -869,8 +869,8 @@ msgstr "啟動安裝程式，然後按照螢幕上的說明來進行操作，指
 #: ../../userguide/install.rst:18
 msgid "If you're an experienced android developer and want to help us bring Ubuntu Touch to more devices, visit the :doc:`porting section </porting/introduction>`."
 msgstr ""
-"如果您是一位經驗豐富的Android開發人員，並希望幫助我們將Ubuntu Touch引入更多設備，請訪問：doc：`porting section </"
-" porting / introduction>`。"
+"如果您是一位經驗豐富的 Android 開發人員，並希望幫助我們將 Ubuntu Touch 引入更多裝置，請參閱 :doc: \"porting "
+"section </porting/introduction>\"。"
 
 #: ../../userguide/install.rst:21
 msgid "Install on legacy Android devices"
