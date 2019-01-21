@@ -24,7 +24,7 @@ How to install
 --------------
 
 .. warning::
-    Installation is only recommended for experienced users.
+    Installing Anbox is only recommended for experienced users.
 
 - Make sure your supported device runs on 16.04 (Anbox doesn't work on 15.04)
 - Open a terminal on your host and set some device specific variables by running ``export CODENAME="turbo" && export PARTITIONNAME="bootimg"``, but replace the part between the quotes respectively with the codename and name of the boot partition for your device. See the above list.
