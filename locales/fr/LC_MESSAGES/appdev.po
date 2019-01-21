@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2019-01-13 16:38+0000\n"
+"PO-Revision-Date: 2019-01-21 14:32+0000\n"
 "Last-Translator: Anne Onyme <anneonyme017@netcourrier.com>\n"
 "Language-Team: French <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/fr/>\n"
@@ -115,11 +115,11 @@ msgstr ""
 
 #: ../../appdev/guides/contenthub.rst:50
 msgid "Exporting"
-msgstr ""
+msgstr "Export"
 
 #: ../../appdev/guides/contenthub.rst:55
 msgid "Gelek in the OpenStore"
-msgstr ""
+msgstr "Gelek dans l'OpenStore"
 
 #: ../../appdev/guides/contenthub.rst:57
 msgid ""
@@ -127,12 +127,17 @@ msgid ""
 "our device or share with ourselves (in Telegram and then save them to our "
 "computer)."
 msgstr ""
+"Dans Gelek, nous allons terminer avec quelques parties sauvegardées que nous "
+"voulons enregistrer sur notre appareil ou partager avec nous-même (dans "
+"Telegram pour les enregistrer ensuite sur notre ordinateur)."
 
 #: ../../appdev/guides/contenthub.rst:61
 msgid ""
 "Tapping on the download icon we will get a Content Hub to *save* the game "
 "file (which is actually an export)."
 msgstr ""
+"L'appui sur l'icône de téléchargement ouvrira le centre de contenus pour "
+"*enregistrer* le fichier de jeu (qui est en réalité un export)."
 
 #: ../../appdev/guides/contenthub.rst:63
 msgid ""
@@ -140,6 +145,10 @@ msgid ""
 "we are sending a file of type ``All`` (`see the Install Page code <https://"
 "gitlab.com/cibersheep/gelek/blob/master/app/InstallPage.qml#L38>`_)."
 msgstr ""
+"Le fichier de jeu est un fichier de type ``glksave``. Nous allons dire au "
+"centre de contenus que nous envoyons un fichier de type ``All`` (Tout) (`"
+"voir le code de la page d'installation <https://gitlab.com/cibersheep/gelek/"
+"blob/master/app/InstallPage.qml#L38>`_)."
 
 #: ../../appdev/guides/contenthub.rst:76
 msgid ""
@@ -147,16 +156,22 @@ msgid ""
 "able to receive unmarked file types. ``handler`` is ``ContentHandler."
 "Destination``, so the app selected should store the saved game."
 msgstr ""
+"``contentType`` est ``ContentType.All``, nous verrons donc uniquement les "
+"applications qui sont capables de recevoir des types de fichiers non "
+"marqués. ``handler`` est ``ContentHandler.Destination``, l'application "
+"sélectionnée devrait donc stocker la partie enregistrée."
 
 #: ../../appdev/guides/contenthub.rst:78
 msgid ""
 "Tapping on the File Manager we will save the saved game in the folder we "
 "choose."
 msgstr ""
+"Nous enregistrerons la partie sauvegardée dans le dossier de notre choix en "
+"appuyant sur le gestionnaire de fichiers."
 
 #: ../../appdev/guides/contenthub.rst:81
 msgid "Sharing"
-msgstr ""
+msgstr "Partage"
 
 #: ../../appdev/guides/contenthub.rst:83
 msgid ""
@@ -174,11 +189,11 @@ msgstr ""
 
 #: ../../appdev/guides/contenthub.rst:99
 msgid "Wait a minute. Why the different apps?"
-msgstr ""
+msgstr "Attendez un instant : pourquoi des applications différentes ?"
 
 #: ../../appdev/guides/contenthub.rst:104
 msgid "Content Hub: Export vs Share"
-msgstr ""
+msgstr "Centre de contenus : exporter ou partager"
 
 #: ../../appdev/guides/contenthub.rst:106
 msgid ""
@@ -657,9 +672,8 @@ msgid ""
 msgstr ""
 
 #: ../../appdev/index.rst:68
-#, fuzzy
 msgid "Documentation"
-msgstr "Introduction"
+msgstr "Documentation"
 
 #: ../../appdev/index.rst:70
 msgid "`QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__"
@@ -696,7 +710,7 @@ msgstr ""
 
 #: ../../appdev/index.rst:99
 msgid "Preinstalled apps"
-msgstr ""
+msgstr "Applications préinstallées"
 
 #: ../../appdev/index.rst:101
 msgid ""
