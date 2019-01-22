@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2019-01-21 14:32+0000\n"
+"PO-Revision-Date: 2019-01-27 00:00+0000\n"
 "Last-Translator: louies0623 <louies0623@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-appdev/zh_Hant/>\n"
@@ -102,7 +102,7 @@ msgid "The game file is a file of type ``glksave``. We will tell Content Hub tha
 msgstr ""
 "遊戲文件是 \"glksave\" 類型的文件。 我們將告訴內容中心我們正在發送一個類型為 \"All\" 的文件（\""
 "參見安裝頁面代碼<https://gitlab.com/cibersheep/gelek/blob/master/app/"
-"InstallPage.qml#L38>\"_）。"
+"InstallPage.qml#L38>\"_)。"
 
 #: ../../appdev/guides/contenthub.rst:76
 msgid "``contentType`` is ``ContentType.All``, so we will only see apps which are able to receive unmarked file types. ``handler`` is ``ContentHandler.Destination``, so the app selected should store the saved game."
@@ -121,6 +121,9 @@ msgstr "共用"
 #: ../../appdev/guides/contenthub.rst:83
 msgid "Similarly, tapping on the share icon will allow us to send the saved game through Telegram to ourselves (`see the Webapp Creator Import Page source code <https://gitlab.com/cibersheep/webapp-creator/blob/master/webapp-creator/app/ImportPage.qml#L38>`_)."
 msgstr ""
+"同樣點擊分享圖示將允許我們透過 Telegram 將保存的遊戲發送給我們自己 (\"請參閱Webapp Creator導入頁面源代碼  "
+"<https://gitlab.com/cibersheep/webapp-creator/blob/master/webapp-creator/app/"
+"ImportPage.qml#L38>\"_)。"
 
 #: ../../appdev/guides/contenthub.rst:96
 msgid "The only difference between this and the previous code is that ``handler`` is ``ContentHandler.Share``"
@@ -132,7 +135,7 @@ msgstr "等一下。為什麼會有不同的應用程式？"
 
 #: ../../appdev/guides/contenthub.rst:104
 msgid "Content Hub: Export vs Share"
-msgstr "內容中心: 匯出與共享"
+msgstr "內容中心: 匯出與分享"
 
 #: ../../appdev/guides/contenthub.rst:106
 msgid "Each developer can decide the rules each app would follow in relation to the Content Hub. Why the OpenStore is shown as the destination of an export?"
