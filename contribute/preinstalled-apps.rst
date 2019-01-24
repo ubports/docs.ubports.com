@@ -22,7 +22,7 @@ Application Name    Store page                          Code repository
 ================    ==================================  ============================
 Calculator          `Calculator on OpenStore`_          `calculator-app on GitLab`_
 Calendar            `Calendar on OpenStore`_            `calendar-app on GitHub`_
-Clock               `Clock on OpenStore`_               `clock-app on GitHub`_
+Clock               `Clock on OpenStore`_               `clock-app on GitLab`_
 File Manager        `File Manager on OpenStore`_        `filemanager-app on GitLab`_
 Gallery             `Gallery on OpenStore`_             `gallery-app on GitLab`_
 Music               `Music on OpenStore`_               `music-app on GitLab`_
@@ -62,7 +62,7 @@ Instructions for contributing to these applications can be found in their respec
 .. _Calendar on OpenStore: https://open-store.io/app/com.ubuntu.calendar
 .. _calendar-app on GitHub: https://github.com/ubports/calendar-app
 .. _Clock on OpenStore: https://open-store.io/app/com.ubuntu.clock
-.. _clock-app on GitHub: https://github.com/ubports/clock-app
+.. _clock-app on GitLab: https://gitlab.com/ubports/apps/clock-app
 .. _File Manager on OpenStore: https://open-store.io/app/com.ubuntu.filemanager
 .. _filemanager-app on GitLab: https://gitlab.com/ubports/apps/filemanager-app
 .. _Gallery on OpenStore: https://open-store.io/app/com.ubuntu.gallery
