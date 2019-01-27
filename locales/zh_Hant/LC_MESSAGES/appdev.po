@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2019-01-27 00:00+0000\n"
+"PO-Revision-Date: 2019-01-31 18:28+0000\n"
 "Last-Translator: louies0623 <louies0623@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-appdev/zh_Hant/>\n"
@@ -21,15 +21,15 @@ msgstr ""
 
 #: ../../appdev/guides/contenthub.rst:4
 msgid "The content hub - tips and tricks"
-msgstr "內容中心-提示和技巧"
+msgstr "內容中心-提示與技巧"
 
 #: ../../appdev/guides/contenthub.rst:9
 msgid "Content Hub Share Page"
-msgstr "內容中心共用頁面"
+msgstr "內容中心分享頁面"
 
 #: ../../appdev/guides/contenthub.rst:11
 msgid "On Ubuntu Touch the apps are confined. The way of sharing files between them is through the Content Hub, a part of the system that takes care of file import, export and sharing."
-msgstr "在 Ubuntu Touch 的應用程式是有限的。它們之間共用檔的方式是通過內容中心，該中心是負責檔導入、匯出和共用的系統的一部分。"
+msgstr "在 Ubuntu Touch 的應用程式是有限的。它們之間共用檔的方式是透過內容中心來負責檔案導入、匯出和共用的系統的一部分。"
 
 #: ../../appdev/guides/contenthub.rst:14
 msgid "Different ways of sharing the content"
@@ -39,7 +39,7 @@ msgstr "共用內容的不同方式"
 msgid "As we can see in the `Content Hub documentation <https://api-docs.ubports.com/sdk/apps/qml/Ubuntu.Content/ContentHandler.html#detailed-description>`_, there are several ways of handling the file to be shared:"
 msgstr ""
 "正如我們在 \"內容中心文檔 <https://api-docs.ubports.com/sdk/apps/qml/Ubuntu.Content/"
-"ContentHandler.html#detailed-description>\" _ 中看到的, 有幾種方法可以處理要共用的檔:"
+"ContentHandler.html#detailed-description>\" _ 中看到的，有幾種方法可以處理要共用的檔案:"
 
 #: ../../appdev/guides/contenthub.rst:18
 msgid "``ContentHandler.Source`` (The app selected is going to be the source of the file imported)"
@@ -64,7 +64,7 @@ msgstr "OpenStore 上的網路應用程式建立者"
 #: ../../appdev/guides/contenthub.rst:30
 msgid "Looking into the code of Webapp Creator, we’ll find the code to import an image to be used as icon. Tapping on the place holder will open the Content Hub that will let us choose from where to import the image (`see the Webapp Creator source code <https://gitlab.com/cibersheep/webapp-creator/blob/master/webapp-creator/app/ImportPage.qml#L38>`_)"
 msgstr ""
-"查看 Webapp Creator 的代碼，我們將找到導入映像的代碼以用作圖示。 點擊佔位符將打開內容中心，讓我們可以選擇從哪裡導入映像（\"參見 "
+"查看 Webapp Creator 的代碼，我們將找到導入映像的代碼以用作圖示。點擊擁有者將打開內容中心，讓我們選擇從哪裡導入映像（\"參見 "
 "Webapp Creator 源代碼 <https://gitlab.com/cibersheep/webapp-creator/blob/master/"
 "webapp-creator/app/ImportPage.qml#L38>\"_)"
 
@@ -95,12 +95,12 @@ msgstr ""
 
 #: ../../appdev/guides/contenthub.rst:61
 msgid "Tapping on the download icon we will get a Content Hub to *save* the game file (which is actually an export)."
-msgstr "點擊下載圖示，我們將得到一個內容中心 *保存* 遊戲檔 (這實際上是一個匯出)。"
+msgstr "點擊下載圖示，我們將得到一個內容中心來 *保存* 遊戲檔 (這實際上是一個匯出)。"
 
 #: ../../appdev/guides/contenthub.rst:63
 msgid "The game file is a file of type ``glksave``. We will tell Content Hub that we are sending a file of type ``All`` (`see the Install Page code <https://gitlab.com/cibersheep/gelek/blob/master/app/InstallPage.qml#L38>`_)."
 msgstr ""
-"遊戲文件是 \"glksave\" 類型的文件。 我們將告訴內容中心我們正在發送一個類型為 \"All\" 的文件（\""
+"遊戲文件是 \"glksave\" 類型的文件。 我們將告訴內容中心來正在發送一個類型為 \"All\" 的文件（\""
 "參見安裝頁面代碼<https://gitlab.com/cibersheep/gelek/blob/master/app/"
 "InstallPage.qml#L38>\"_)。"
 
@@ -135,7 +135,7 @@ msgstr "等一下。為什麼會有不同的應用程式？"
 
 #: ../../appdev/guides/contenthub.rst:104
 msgid "Content Hub: Export vs Share"
-msgstr "內容中心: 匯出與分享"
+msgstr "內容中心 : 匯出與分享"
 
 #: ../../appdev/guides/contenthub.rst:106
 msgid "Each developer can decide the rules each app would follow in relation to the Content Hub. Why the OpenStore is shown as the destination of an export?"
@@ -148,6 +148,8 @@ msgstr "我們來看看它的 manifest.json"
 #: ../../appdev/guides/contenthub.rst:121
 msgid "The above code defines that the hooks for the app named ``\"openstore\"`` in relation to the ``\"content-hub\"`` should follow the rules defined in ``openstore-contenthub.json``"
 msgstr ""
+"上面的代碼定義了名為 \"[ \"openstore\" 的應用程序與 \"內容中心\" 的外掛程式]\" 應該遵循 \"openstore-"
+"contenthub.json\" 中的定義規則"
 
 #: ../../appdev/guides/contenthub.rst:131
 msgid "This means, the OpenStore will be the destination for *all* ``ContentTypes``."
@@ -235,15 +237,20 @@ msgstr "open-store.io 中的 OpenStore 應用程式"
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:17
 msgid "One of the easiest ways of testing an app, is to send a test click to yourself on Telegram, and opening that click file with the OpenStore through the Content Hub:"
 msgstr ""
-"測試應用程式的最簡單方法之一是在 Telegram 上向自己發送測試 Click，並通過內容中心使用 OpenStore 打開該 Click 文件："
+"測試應用程式的最簡單方法之一是在 Telegram 上向自己發送測試 Click，並透過內容中心使用 OpenStore 打開該 Click 文件："
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:22
 msgid "If we tap on the OpenStore app, it will be opened and it will ask if we want to install the click file. Let’s take a look into `the Main.qml code of the app <https://github.com/UbuntuOpenStore/openstore-app/blob/master/openstore/Main.qml#L85>`_ to see how it is done:"
 msgstr ""
+"如果我們點擊 OpenStore 應用程式，它將被打開，它將詢問我們是否要安裝 Click 檔案。讓我們來看看 \"main. qml 應用程式的代碼  "
+"<https://github.com/UbuntuOpenStore/openstore-app/blob/master/openstore/"
+"Main.qml#L85>\"_  它是如何完成的:"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:41
 msgid "Do you see that Connections element that targets the ContentHub? When it receives the signal onImportRequested, it will take the url of the data sent from the Content Hub (``transfer.items[0].url`` is the url of the first data sent) and open a ``PopUp`` element to let the user install the click."
 msgstr ""
+"您是否看到以內容中心為目標的連接元素？ 當它收到從請求的情況下發送的訊號時，將從 ContentHub 發送的資料的網址（\""
+"transfer.items[0].url\" 是第一個數據中心的網址）並打開一個 \"PopUp\" 讓使用者安裝 Click 的元素。"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:44
 msgid "What about the URLdispatcher?"
@@ -257,19 +264,24 @@ msgstr ""
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:48
 msgid "The ``URLdispatcher`` selects which app (according to their ``manifest.json``) will open a certain link."
-msgstr ""
+msgstr "\"URLdispatcher\" 會選擇哪個應用程式（是根據 \"manifest.json\"）來打開某個鏈接。"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:53
 msgid "Let’s see how our navigation app looks inside. uNav’s manifest shows special hooks for the ``URLdispatcher`` in its `manifest.json code <https://bazaar.launchpad.net/~unav-devs/unav/trunk/view/head:/manifest.json#L9>`_:"
 msgstr ""
+"讓我們看看我們的導航應用程式在裡面的樣子。uNav 的清單在 \"manifest.json 代碼 <https://bazaar.launchpad."
+"net/~unav-devs/unav/trunk/view/head:/manifest.json#L9>\"_中顯示了 \""
+"URLdispatcher\" 的特殊外掛程式:"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:83
 msgid "This means that a link that looks like http://map.unav.me/xxxxx,xxxxx will be opened in uNav. And that’s defined in lines 2 and 3, where it looks for protocol http followed by map.unav.me."
 msgstr ""
+"這意味著一個看起來像 http://map.unav.me/xxxxx,xxxxx 的連結將在 uNav 中打開。這在第2行和第3行中得到了定義，"
+"它在其中查找協定 http，然後是 map.unav.me。"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:85
 msgid "Also, a URI formatted geo:xxx,xxx should open in uNav, as it’s defined in line 11."
-msgstr ""
+msgstr "此外，網址格式的 geo:xxx,xxx 應在 uNav 中打開，因為它在第11行中定義了。"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:88
 msgid "And how do we manage the received URL?"
@@ -277,19 +289,28 @@ msgstr "我們如何管理收到的網址？"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:90
 msgid "After the ``URLdispatcher`` sends the link to the correspondent app, we need to handle that URL or URI in the targeted app. Let’s see how to do that:"
-msgstr ""
+msgstr "在 \"網址調度程式\" 將連結發送到相應的應用程式後，我們需要在目標應用程式中處理該網址或 URI。讓我們看看如何做到這一點:"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:92
 msgid "In the main qml file, we need to add some code to know what to do with the dispatched URL. First add an `Arguments element <https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L189>`_ that holds the URL, as is done, for example, in the `Linphone app <https://open-store.io/app/linphone.cibersheep>`_. Also, we add `connection to the URI Handler <https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L200>`_ with a Connection element with ``UriHandler`` as a target."
 msgstr ""
+"在主 qml 文件中，我們需要添加一些代碼來了解如何處理調整的網址。 首先添加一個 \"Arguments 元件 <https://gitlab.com/"
+"ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L189>\"_，其中包含網址，例如 "
+"\"Linphone app <https://open-store.io/app/linphone.cibersheep>\"_。 另外，我們使用帶有 "
+"\"UriHandler\" 的Connection 元件 \"添加 URI Handler <https://gitlab.com/"
+"ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L200>\"_ 的連接來作為目標。"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:120
 msgid "This code will manage a URI in the form ``linphone://sip:xxx@xxx.xx`` when the app is opened. But what do we need to do to handle this link when the app is closed?"
 msgstr ""
+"打開應用程式時，此代碼將管理 \"linphone://sip:xxx@xxx.xx\" 表單中的 "
+"URI。但是假如應用程式關閉時，我們需要做些什麼來處理此連結呢？"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:122
 msgid "We need to add a little bit `extra code <https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L69>`_ that will cover two cases: 1) We receive one URL 2) We receive more than one URL"
 msgstr ""
+"我們需要添加一點 \"額外的代碼 <https://gitlab.com/ubports-linphone/linphone-simple/blob/"
+"master/qml/Main.qml#L69>\" _，它將涵蓋兩種情況 : (1) 我們收到一個網址 (2) 我們收到多個網址"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:149
 msgid "What happens if more than one app has the same URL type defined?"
@@ -298,6 +319,8 @@ msgstr "如果多個應用程式定義了相同的網址類型，會發生什麼
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:151
 msgid "A very good question. What happens if we tap on a Twitter link? How is such a URL handled by the ``URLdispatcher`` as protocol ``http`` or the protocol ``http://twitter``?"
 msgstr ""
+"一個非常好的問題。如果我們點擊 Twitter 連結會發生什麼？\"URLdispatcher\" 作為協定 \"http\" 或協定 \"http://"
+"twitter\" 是怎樣如何處理這樣的網址？"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:153
 msgid "What happens if two apps have the same defined protocol?"
@@ -314,6 +337,8 @@ msgstr "開發者指南"
 #: ../../appdev/guides/index.rst:6
 msgid "We are currently working on expanding our list of developer guides. In the mean time we recommend the `Ubuntu Touch Programming Course <https://mimecar.gitbook.io/qt-course/>`__."
 msgstr ""
+"我們目前正在努力擴展我們的開發人員指南清單。同時，我們推薦 \"Ubuntu Touch 程式設計課程  "
+"<https://mimecar.gitbook.io/qt-course/>\"__。"
 
 #: ../../appdev/guides/index.rst:9
 #: ../../appdev/publishing/index.rst:8
@@ -329,6 +354,8 @@ msgstr "可寫目錄"
 #: ../../appdev/guides/writeable-dirs.rst:4
 msgid "App confinement is part of the Ubuntu Touch security concept. Data can be exchanged between apps only according to the AppArmor policies, mainly using the :ref:`ContentHub <contenthub>`. This being said, apps can only read and write files that are located in one of three app specific directories explained in this guide."
 msgstr ""
+"應用程式限制是 Ubuntu Touch 安全概念的一部分。只能根據 AppArmor 策略在應用程式之間交換資料，主要使用 :ref: \"內容中心 "
+"<contenthub>\"。"
 
 #: ../../appdev/guides/writeable-dirs.rst:7
 msgid "Standard Paths"
@@ -337,6 +364,9 @@ msgstr "標準路徑"
 #: ../../appdev/guides/writeable-dirs.rst:8
 msgid "Besides the write access to the app directories explained below, the app can write debug messages into the app log file located at ``/home/phablet/.cache/upstart/application-click-<fullappname>_<appname>_<version>.log``. To append messages to the log file, use the `Qt debug <https://doc.qt.io/qt-5/qdebug.html>`_ functions."
 msgstr ""
+"除了下面解釋的應用程式目錄的寫訪問權限之外，應用程式還可以將調試消息寫入位於 \"/home/phablet/.cache/upstart/"
+"application-click-<fullappname>_<appname>_<version 的應用程序日誌文件中>.log\"。 "
+"要將消息附加到日誌文件，請使用 \"Qt 偵錯功能 <https://doc.qt.io/qt-5/qdebug.html>\"_。"
 
 #: ../../appdev/guides/writeable-dirs.rst:11
 msgid "Config"
@@ -363,7 +393,7 @@ msgstr "路徑：\"/home/phablet/.cache/<fullappname>/\""
 #: ../../appdev/guides/writeable-dirs.rst:20
 msgid "This is the place to cache data for later use. The cache is also used by the Content Hub. Files that have been shared with the music app for example can be found in ``/home/phablet/.cache/com.ubuntu.music/HubIncoming/``."
 msgstr ""
-"這是快取數據供以後使用的地方。 內容中心也使用快取。 例如:可以在中找到與音樂應用程式所分享的文件\"/home/phablet/.cache/"
+"這是快取數據供以後使用的地方。內容中心也使用快取。 例如 :可以在中找到與音樂應用程式所分享的文件 \"/home/phablet/.cache/"
 "com.ubuntu.music/HubIncoming/\"。"
 
 #: ../../appdev/guides/writeable-dirs.rst:23
@@ -395,6 +425,10 @@ msgstr "在 QML 中使用標準路徑"
 #: ../../appdev/guides/writeable-dirs.rst:44
 msgid "The Qt module `Qt.labs.platform <https://doc.qt.io/archives/qt-5.10/qml-qt-labs-platform-standardpaths.html>`_ provides the QStandardPaths in QML. Unfortunately it is not available on Ubuntu Touch, yet. Probably you don't want to ship that module with your app. Instead, you could simply let your C++ plugin provide the paths to your QML part. Therefore, add these methods to your plugin class:"
 msgstr ""
+"Qt 模組 \"Qt.labs.platform <https://doc.qt.io/archives/qt-5.10/qml-qt-labs-"
+"platform-standardpaths.html>\"_ 在 QML 中提供 QStandardPaths。 不幸的是，它在 Ubuntu "
+"Touch 上還沒有開始。 可能你不想用你的應用程序發送該模組。 相反，您可以簡單地讓您的 C ++ 元件提供 QML 部分的路徑。 "
+"因此，將這些方法添加到您的元件："
 
 #: ../../appdev/guides/writeable-dirs.rst:64
 msgid "Assuming the name of your plugin is MyPlugin, you can access these paths in QML:"
@@ -421,6 +455,9 @@ msgstr "Ubuntu Touch 是一個有趣且充滿活力的開發平台。 無論您�
 #: ../../appdev/index.rst:11
 msgid "Ubuntu Touch supports several different types of apps. :ref:`Native apps <nativeapp>` are apps with interfaces made using QML or HTML with their behavior defined in JavaScript, C++, Python, or Go. :ref:`Web apps <webapp>` are special containers to run websites in."
 msgstr ""
+"Ubuntu Touch 支持多種不同類型的應用程式。:ref: \"Native apps <nativeapp>\" 是使用 QML 或 HTML "
+"製作的接口應用程式，其行為在 JavaScript，C ++，Python 或Go 中的定義。:ref: \"Web apps <webapp>\" "
+"是執行在網站的特殊容器。"
 
 #: ../../appdev/index.rst:21
 msgid "Community"
@@ -429,6 +466,9 @@ msgstr "社區"
 #: ../../appdev/index.rst:23
 msgid "Have questions that aren't answered in the docs or want to chat with other Ubuntu Touch developers? Join our `app dev Telegram group <https://t.me/UbuntuAppDevEN>`_ or chat with us on the `UBports app dev forum <https://forums.ubports.com/category/35/app-development>`_."
 msgstr ""
+"有沒有在文檔中回答或想與其他 Ubuntu Touch 開發人員聊天的問題？ 加入我們的\"app dev Telegram 群組 <https://t."
+"me/UbuntuAppDevEN>\"_或在\"UBports app dev論壇上與我們聊天<https://forums.ubports.com/"
+"category/35/app-development>\"_。"
 
 #: ../../appdev/index.rst:26
 msgid "Tools"
@@ -437,14 +477,20 @@ msgstr "工具"
 #: ../../appdev/index.rst:28
 msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ is a meta-build system for Ubuntu Touch applications that allows you to compile, build, test and publish ``click`` packages and provides various templates to get you started with app development. It is currently the easiest and most convenient way of building click packages for Ubuntu Touch. You can use any code editor or IDE that you choose and build your apps from the commandline with Clickable."
 msgstr ""
+"\"Clickable <http://clickable.bhdouglass.com/en/latest/>\"_ 是一個用於Ubuntu "
+"Touch應用程式的元構建系統，允許您編譯、構建、測試和發佈 \"click\" 包並提供各種 模板，讓您開始應用程式開發。 它是目前為 Ubuntu "
+"Touch 構建 Click 包的最簡單，最方便的方法。 您可以使用您選擇的任何代碼編輯器或 IDE，並使用 Clickable "
+"從命令行來構建您的應用程式。"
 
 #: ../../appdev/index.rst:30
 msgid "Alternatively there is the old `Ubuntu SDK IDE <https://docs.ubuntu.com/phone/en/platform/sdk>`__. Be aware that it is no longer supported by Canonical, and UBports has chosen to not support it either due to lack of manpower."
 msgstr ""
+"另外還有舊的 \"Ubuntu SDK IDE <https://docs.ubuntu.com/phone/en/platform/sdk>\"__。 "
+"請注意，Canonical 早已不再支援它，且由於缺乏人力，UBports 也選擇不再支援它。"
 
 #: ../../appdev/index.rst:32
 msgid "You can still install the SDK IDE in Ubuntu 16.04, but it is not guaranteed to work correctly. You can use the following commands to install::"
-msgstr "您仍然可以在 Ubuntu 16.04 中安裝 SDK IDE，但不能保證它能正常工作。 您可以使用以下指令安裝::"
+msgstr "您仍然可以在 Ubuntu 16.04 中安裝 SDK IDE，但不能保證它能正常工作。 您可以使用以下指令來安裝::"
 
 #: ../../appdev/index.rst:42
 msgid "Guides"
@@ -452,7 +498,7 @@ msgstr "指南"
 
 #: ../../appdev/index.rst:44
 msgid "Get started building your first app or learn about advanced concepts with our :ref:`Developer guides <devguides>`."
-msgstr ""
+msgstr "開始構建您的第一個應用程式，或使用我們的 :ref: \"開發人員指南 <devguides>\"。"
 
 #: ../../appdev/index.rst:57
 msgid "Publishing"
@@ -461,6 +507,8 @@ msgstr "發佈"
 #: ../../appdev/index.rst:59
 msgid "After you are done building your app, distribute it on the `OpenStore <https://open-store.io/>`__ with our :ref:`Publishing guides <publishing>`."
 msgstr ""
+"完成構建應用程序後，然後將發佈到 \"OpenStore <https://open-store.io/>\"__ 跟著我們的 :ref: \"出版指南 "
+"<publishing>\"。"
 
 #: ../../appdev/index.rst:68
 msgid "Documentation"
@@ -490,7 +538,7 @@ msgstr "應用程式範例"
 
 #: ../../appdev/index.rst:89
 msgid "Learn more about app development by digging into our :ref:`Sample apps <sampleapps>`."
-msgstr ""
+msgstr "通過深入瞭解更多有關應用開發的資訊，請閱讀我們的 :ref:  \"應用程式範例 <sampleapps>\"。"
 
 #: ../../appdev/index.rst:99
 msgid "Preinstalled apps"
@@ -499,6 +547,7 @@ msgstr "預先安裝的應用程式"
 #: ../../appdev/index.rst:101
 msgid "The :doc:`/contribute/preinstalled-apps` page has information on developing the apps which are included with Ubuntu Touch."
 msgstr ""
+":doc: \"/contribute/preinstalled-apps\" 該頁面包含有關開發  Ubuntu Touch 中包含的應用程式的資訊。"
 
 #: ../../appdev/nativeapp/index.rst:4
 msgid "Native applications"
@@ -506,11 +555,11 @@ msgstr "原生應用程式"
 
 #: ../../appdev/platform/apparmor.rst:2
 msgid "AppArmor Policy Groups"
-msgstr ""
+msgstr "AppArmor 政策組"
 
 #: ../../appdev/platform/apparmor.rst:4
 msgid "This document contains a full list of Ubuntu Touch's available policy groups and a description of what they give your app permission to access."
-msgstr ""
+msgstr "本文檔包含Ubuntu Touch可用策略的完整列表，以及它們為您的應用程序授予存取權限的說明。"
 
 #: ../../appdev/platform/apparmor.rst:6
 msgid "Each entry follows this format"
@@ -548,7 +597,7 @@ msgstr "用法：常見"
 
 #: ../../appdev/platform/apparmor.rst:30
 msgid "The accounts policy gives your app the permissions it needs to access the `Online Accounts API`_."
-msgstr ""
+msgstr "帳戶策略為您的應用程式提供訪問 “線上帳戶 API” 所需的權限。"
 
 #: ../../appdev/platform/apparmor.rst:34
 msgid "audio"
@@ -556,7 +605,7 @@ msgstr "音訊"
 
 #: ../../appdev/platform/apparmor.rst:36
 msgid "Description: Can play audio (allows playing remote content via media-hub)"
-msgstr "描述：可播放音訊（允許透過媒體播放器播放遠程內容）"
+msgstr "說明：可播放音訊（允許透過媒體播放器播放遠程內容）"
 
 #: ../../appdev/platform/apparmor.rst:40
 msgid "The audio policy is needed for your app to play audio via pulseaudio or media-hub. The permission also gives it the ability to send album art to the thumbnailer service, which is then shown on the sound indicator."
@@ -569,7 +618,7 @@ msgstr "藍牙"
 
 #: ../../appdev/platform/apparmor.rst:46
 msgid "Description: Use bluetooth (bluez5) as an administrator."
-msgstr "描述：使用藍牙（bluez5）作為管理員。"
+msgstr "說明：使用藍牙（bluez5）作為管理員。"
 
 #: ../../appdev/platform/apparmor.rst:48
 #: ../../appdev/platform/apparmor.rst:58
@@ -597,7 +646,7 @@ msgstr "日曆"
 
 #: ../../appdev/platform/apparmor.rst:56
 msgid "Description: Can access the calendar."
-msgstr "描述：可以訪問日曆。"
+msgstr "說明：可以訪問日曆。"
 
 #: ../../appdev/platform/apparmor.rst:60
 msgid "Calendar grants access to the Evolution dataserver's calendar and alarms APIs. It also grants access to sync-monitor."
@@ -613,7 +662,7 @@ msgstr "相機"
 
 #: ../../appdev/platform/apparmor.rst:68
 msgid "Description: Can access the camera(s)"
-msgstr "描述：可以存取相機"
+msgstr "說明：可以存取相機"
 
 #: ../../appdev/platform/apparmor.rst:72
 msgid "The camera policy grants access to device cameras."
@@ -625,7 +674,7 @@ msgstr "連接"
 
 #: ../../appdev/platform/apparmor.rst:78
 msgid "Description: Can access coarse network connectivity information"
-msgstr "描述：可以存取大略的網路連接訊息"
+msgstr "說明：可以存取大略的網路連接訊息"
 
 #: ../../appdev/platform/apparmor.rst:82
 msgid "The connectivity policy allows apps to determine rough information about the device's connectivity. This includes whether the device is connected to the Internet and whether it is connected via a Wi-Fi or mobile data connection."
@@ -637,7 +686,7 @@ msgstr "聯絡人"
 
 #: ../../appdev/platform/apparmor.rst:88
 msgid "Description: Can access contacts."
-msgstr "描述：可以存取聯絡人。"
+msgstr "說明：可以存取聯絡人。"
 
 #: ../../appdev/platform/apparmor.rst:92
 msgid "The contacts policy allows apps to access the device user's contacts list. It is marked as reserved because it allows access to sync-monitor and unfettered access to the address book."
@@ -649,7 +698,7 @@ msgstr "內容交換"
 
 #: ../../appdev/platform/apparmor.rst:98
 msgid "Description: Can request/import data from other applications"
-msgstr "描述：可以從其他應用程式請求/導入數據"
+msgstr "說明：可以從其他應用程式請求/導入數據"
 
 #: ../../appdev/platform/apparmor.rst:102
 msgid "Using the content_exchange policy allows your app to be a consumer of content on content-hub."
@@ -661,7 +710,7 @@ msgstr "內容交換源"
 
 #: ../../appdev/platform/apparmor.rst:108
 msgid "Description: Can provide/export data to other applications"
-msgstr "描述：可以向其他應用程式提供/導出數據"
+msgstr "說明：可以向其他應用程式提供/導出數據"
 
 #: ../../appdev/platform/apparmor.rst:112
 msgid "The content_exchange_source policy allows your app to provide content on content-hub."
@@ -674,32 +723,32 @@ msgstr "偵錯"
 #: ../../appdev/platform/apparmor.rst:118
 msgid "Description: Use special debugging tools. This should only be used in development and not for production packages. Note: use of this policy group provides significantly different confinement than normal and is not considered secure. You should never run untrusted programs using this policy group."
 msgstr ""
-"描述：使用特殊的偵錯工具。 這應僅用於開發而不用於生產套件。 注意：使用此策略組會提供與正常情況明顯不同的限制，並且不被視為安全。 "
-"您永遠不應該使用此策略組運行不受信任的程式。"
+"說明：使用特殊的偵錯工具。 這應僅用於開發而不用於生產套件。 注意：使用此策略會提供與正常情況明顯不同的限制，並且不被視為安全。 "
+"您永遠不應該使用此策略運行不受信任的程式。"
 
 #: ../../appdev/platform/apparmor.rst:124
 msgid "document_files"
-msgstr "資料檔案"
+msgstr "文件檔案"
 
 #: ../../appdev/platform/apparmor.rst:126
 msgid "Description: Can read and write to document files. This policy group is reserved for certain applications, such as document viewers. Developers should typically use the content_exchange policy group and API to access document files instead."
-msgstr "描述：可以讀寫資料檔案。 此策略組保留用於某些應用程式，例如文件管理員。 開發人員通常應使用內容交換策略組和 API 來存取資料檔案。"
+msgstr "說明：可以讀取和寫入文件檔案。 此策略保留用於某些應用程式，例如文件管理員。 開發人員通常應使用內容交換策略和 API 來存取文件檔案。"
 
 #: ../../appdev/platform/apparmor.rst:130
 msgid "This policy allows apps to read and write to the \"Documents\" folders in the user's home directory and external media."
-msgstr "此策略允許應用程式讀取和寫入使用者的主目錄和與外部媒體中的 \"文件\" 資料夾。"
+msgstr "此策略允許應用程式讀取和寫入使用者的主目錄和與外部媒體中的 \"文件\" 檔案。"
 
 #: ../../appdev/platform/apparmor.rst:133
 msgid "document_files_read"
-msgstr "資料檔案讀取"
+msgstr "文件檔案讀取"
 
 #: ../../appdev/platform/apparmor.rst:135
 msgid "Description: Can read all document files. This policy group is reserved for certain applications, such as document viewers. Developers should typically use the content_exchange policy group and API to access document files instead."
-msgstr "描述：可以讀取所有資料檔案。 此策略組保留用於某些應用程式，例如文件管理員。 開發人員通常應使用內容交換策略組和 API 來存取資料檔案。"
+msgstr "說明：可以讀取所有文件檔案。 此策略保留用於某些應用程式，例如文件管理員。 開發人員通常應使用內容交換策略和 API 來存取文件檔案。"
 
 #: ../../appdev/platform/apparmor.rst:139
 msgid "This policy allows apps to read the \"Documents\" folders in the user's home directory and external media."
-msgstr "此策略允許應用程式讀取使用者的主目錄和與外部媒體中的 \"文件\" 資料夾。"
+msgstr "此策略允許應用程式讀取使用者的主目錄和與外部媒體中的文件檔案。"
 
 #: ../../appdev/platform/apparmor.rst:143
 msgid "history"
@@ -707,7 +756,7 @@ msgstr "歷史"
 
 #: ../../appdev/platform/apparmor.rst:145
 msgid "Description: Can access the history-service. This policy group is reserved for vetted applications only in this version of the policy. A future version of the policy may move this out of reserved status."
-msgstr ""
+msgstr "說明：可以存取歷史服務。此策略僅在此版本的策略中保留給經過審核的應用程式。策略的未來版本可能會將其移出保留狀態。"
 
 #: ../../appdev/platform/apparmor.rst:151
 msgid "keep-display-on"
@@ -715,7 +764,7 @@ msgstr "保持螢幕為開啟狀態"
 
 #: ../../appdev/platform/apparmor.rst:153
 msgid "Description: Can request keeping the screen on"
-msgstr "描述：可以請求保持螢幕為開啟狀態"
+msgstr "說明：可以請求保持螢幕為開啟狀態"
 
 #: ../../appdev/platform/apparmor.rst:159
 msgid "location"
@@ -723,11 +772,11 @@ msgstr "位置"
 
 #: ../../appdev/platform/apparmor.rst:161
 msgid "Description: Can access Location"
-msgstr "描述：可以存取位置"
+msgstr "說明：可以存取位置"
 
 #: ../../appdev/platform/apparmor.rst:165
 msgid "Allows an app to request access to the device's current location."
-msgstr ""
+msgstr "允許應用程式請求存取裝置的當目前位置。"
 
 #: ../../appdev/platform/apparmor.rst:169
 msgid "microphone"
@@ -735,31 +784,31 @@ msgstr "麥克風"
 
 #: ../../appdev/platform/apparmor.rst:171
 msgid "Description: Can access the microphone"
-msgstr "描述：可以存取麥克風"
+msgstr "說明：可以存取麥克風"
 
 #: ../../appdev/platform/apparmor.rst:177
 msgid "music_files"
-msgstr ""
+msgstr "音樂檔案"
 
 #: ../../appdev/platform/apparmor.rst:179
 msgid "Description: Can read and write to music files. This policy group is reserved for certain applications, such as music players. Developers should typically use the content_exchange policy group and API to access music files instead."
-msgstr ""
+msgstr "說明：可以讀取和寫入音樂檔案。 此策略保留用於某些應用程式，例如音樂播放器。 開發人員通常應使用內容交換策略和 API 來存取音樂檔案。"
 
 #: ../../appdev/platform/apparmor.rst:183
 msgid "The music_files policy group allows an app to read or write to the Music directories in the user's home folder or on external media."
-msgstr ""
+msgstr "此策略允許應用程式讀取和寫入使用者的主目錄和與外部媒體中的音樂檔案。"
 
 #: ../../appdev/platform/apparmor.rst:187
 msgid "music_files_read"
-msgstr ""
+msgstr "音樂檔案讀取"
 
 #: ../../appdev/platform/apparmor.rst:189
 msgid "Description: Can read all music files. This policy group is reserved for certain applications, such as music players. Developers should typically use the content_exchange policy group and API to access music files instead."
-msgstr ""
+msgstr "說明：可以讀取所有音樂檔案。 此策略保留用於某些應用程式，例如音樂播放器。 開發人員通常應使用內容交換策略和 API 來存取音樂檔案。"
 
 #: ../../appdev/platform/apparmor.rst:193
 msgid "The music_files_read policy group allows an app to read the Music directories in the user's home folder or on external media."
-msgstr ""
+msgstr "此策略允許應用程式讀取使用者的主目錄和與外部媒體中的音樂檔案。"
 
 #: ../../appdev/platform/apparmor.rst:197
 msgid "networking"
@@ -767,55 +816,55 @@ msgstr "網路"
 
 #: ../../appdev/platform/apparmor.rst:199
 msgid "Description: Can access the network"
-msgstr "描述：可以存取網路"
+msgstr "說明：可以存取網路"
 
 #: ../../appdev/platform/apparmor.rst:203
 msgid "The networking policy group allows an app to contact network devices and use the `download manager`_."
-msgstr ""
+msgstr "網路策略允許您的應用程式與網路裝置來聯絡並使用 \"下載管理員\" _。"
 
 #: ../../appdev/platform/apparmor.rst:207
 msgid "picture_files"
-msgstr ""
+msgstr "圖片檔案"
 
 #: ../../appdev/platform/apparmor.rst:209
 msgid "Description: Can read and write to picture files. This policy group is reserved for certain applications, such as gallery applications. Developers should typically use the content_exchange policy group and API to access picture files instead."
-msgstr ""
+msgstr "說明：可以讀取和寫入圖片檔案。 此策略保留用於某些應用程式，例如圖庫應用程式。 開發人員通常應使用內容交換策略和 API 來存取圖片檔案。"
 
 #: ../../appdev/platform/apparmor.rst:213
 msgid "The picture_files policy group allows an app to read and write to the Pictures directories in the user's home folder or on external media."
-msgstr ""
+msgstr "此策略允許應用程式讀取和寫入使用者的主目錄和與外部媒體中的圖片檔案。"
 
 #: ../../appdev/platform/apparmor.rst:217
 msgid "picture_files_read"
-msgstr ""
+msgstr "圖片檔案讀取"
 
 #: ../../appdev/platform/apparmor.rst:219
 msgid "Description: Can read all picture files. This policy group is reserved for certain applications, such as gallery applications. Developers should typically use the content_exchange policy group and API to access picture files instead."
-msgstr ""
+msgstr "說明：可以讀取所有圖片檔案。 此策略保留用於某些應用程式，例如圖庫應用程式。 開發人員通常應使用內容交換策略和 API 來存取圖片檔案。"
 
 #: ../../appdev/platform/apparmor.rst:223
 msgid "The picture_files_read policy group allows an app to read the Pictures directories in the user's home folder or on external media."
-msgstr ""
+msgstr "此策略允許應用程式讀取使用者的主目錄和與外部媒體中的圖片檔案。"
 
 #: ../../appdev/platform/apparmor.rst:227
 msgid "push-notification-client"
-msgstr ""
+msgstr "推送通知用戶端"
 
 #: ../../appdev/platform/apparmor.rst:229
 msgid "Description: Can use push notifications as a client"
-msgstr "描述：可以使用推送通知作為客戶端"
+msgstr "說明：可以使用推送通知作為用戶端"
 
 #: ../../appdev/platform/apparmor.rst:235
 msgid "sensors"
-msgstr "感測器"
+msgstr "感應器"
 
 #: ../../appdev/platform/apparmor.rst:237
 msgid "Description: Can access the sensors"
-msgstr "描述：可以存取感應器"
+msgstr "說明：可以存取感應器"
 
 #: ../../appdev/platform/apparmor.rst:241
 msgid "Allows apps to access `device sensors`_"
-msgstr ""
+msgstr "允許應用程式存取 \"裝置感應器\" _"
 
 #: ../../appdev/platform/apparmor.rst:245
 msgid "usermetrics"
@@ -823,7 +872,7 @@ msgstr "usermetrics"
 
 #: ../../appdev/platform/apparmor.rst:247
 msgid "Description: Can use UserMetrics to update the InfoGraphic"
-msgstr "描述：可以使用 UserMetrics 更新 InfoGraphic"
+msgstr "說明：可以使用 UserMetrics 更新 InfoGraphic"
 
 #: ../../appdev/platform/apparmor.rst:251
 msgid "Allows an app to write metrics to the UserMetrics service so they can be displayed on the InfoGraphic."
@@ -835,43 +884,43 @@ msgstr "影片"
 
 #: ../../appdev/platform/apparmor.rst:257
 msgid "Description: Can play video (allows playing remote content via media-hub)"
-msgstr "描述：可播放影片（允許透過媒體播放器播放遠程內容）"
+msgstr "說明：可播放影片（允許透過媒體播放器播放遠程內容）"
 
 #: ../../appdev/platform/apparmor.rst:263
 msgid "video_files"
-msgstr ""
+msgstr "影片檔案"
 
 #: ../../appdev/platform/apparmor.rst:265
 msgid "Description: Can read and write to video files. This policy group is reserved for certain applications, such as gallery applications. Developers should typically use the content_exchange policy group and API to access video files instead."
-msgstr ""
+msgstr "說明：可以讀取和寫入影片檔案。 此策略保留用於某些應用程式，例如圖庫應用程式。 開發人員通常應使用內容交換策略和 API 來存取影片檔案。"
 
 #: ../../appdev/platform/apparmor.rst:269
 msgid "The video_files policy group allows an app to read and write to the Videos directories in the user's home folder or on external media."
-msgstr ""
+msgstr "此策略允許應用程式讀取和寫入使用者的主目錄和與外部媒體中的影片檔案。"
 
 #: ../../appdev/platform/apparmor.rst:273
 msgid "video_files_read"
-msgstr ""
+msgstr "影片檔案讀取"
 
 #: ../../appdev/platform/apparmor.rst:275
 msgid "Description: Can read all video files. This policy group is reserved for certain applications, such as gallery applications. Developers should typically use the content_exchange policy group and API to access video files instead."
-msgstr ""
+msgstr "說明：可以讀取所有影片檔案。 此策略保留用於某些應用程式，例如圖庫應用程式。 開發人員通常應使用內容交換策略和 API 來存取影片檔案。"
 
 #: ../../appdev/platform/apparmor.rst:279
 msgid "The video_files_read policy group allows an app to read the Videos directories in the user's home folder or on external media."
-msgstr ""
+msgstr "此策略允許應用程式讀取使用者的主目錄和與外部媒體中的影片檔案。"
 
 #: ../../appdev/platform/apparmor.rst:283
 msgid "webview"
-msgstr "webview"
+msgstr "網路預覽"
 
 #: ../../appdev/platform/apparmor.rst:285
 msgid "Description: Can use the UbuntuWebview"
-msgstr "描述：可以使用 UbuntuWebview"
+msgstr "說明：可以使用 Ubuntu 網路預覽"
 
 #: ../../appdev/platform/apparmor.rst:289
 msgid "The webview policy group allows apps to embed a `web browser view`_."
-msgstr ""
+msgstr "網路預覽策略允許應用嵌入 \"網路瀏覽器預覽\" _。"
 
 #: ../../appdev/platform/click.rst:4
 msgid "Click package"
@@ -879,39 +928,39 @@ msgstr "Click 套件"
 
 #: ../../appdev/platform/click.rst:6
 msgid "Every ``click`` application package must embed at least 3 files:"
-msgstr ""
+msgstr "每個 \"Click\" 應用程式套件必須嵌入至少3個檔:"
 
 #: ../../appdev/platform/click.rst:28
 msgid "``manifest.json`` file"
-msgstr ""
+msgstr "\"manifest.json\"  檔案"
 
 #: ../../appdev/platform/click.rst:9
 msgid "Contains application declarations such as application name, description, author, framework sdk target, and version."
-msgstr ""
+msgstr "包含應用程式聲明，如應用程式名稱、說明、作者、SDK 框架目標和版本。"
 
 #: ../../appdev/platform/click.rst:11
 msgid "Example ``manifest.json`` file::"
-msgstr ""
+msgstr "\"manifest.json\"  檔案的示例::"
 
 #: ../../appdev/platform/click.rst:31
 msgid "AppArmor profile policy file"
-msgstr ""
+msgstr "AppArmor 配置文件策略策略檔案"
 
 #: ../../appdev/platform/click.rst:31
 msgid "Contains which policy the app needs to work properly. See `Security and app isolation`_ below for more information on this file."
-msgstr ""
+msgstr "包含應用程式正常工作所需的策略。有關此檔的詳細資訊，請參閱下面的 \"安全和應用程式隔離\" _。"
 
 #: ../../appdev/platform/click.rst:54
 msgid "``.desktop`` file"
-msgstr ""
+msgstr "\".desktop\"  檔案"
 
 #: ../../appdev/platform/click.rst:34
 msgid "The launcher file will tell UT how to launch the app, which name and icon to display on the home screen, and some other properties."
-msgstr ""
+msgstr "啟動檔案將告訴 Ubuntu Touch 如何啟動應用程式、要在主畫面上顯示的名稱和圖示以及其他一些屬性。"
 
 #: ../../appdev/platform/click.rst:36
 msgid "Example of ``app.desktop``::"
-msgstr ""
+msgstr "\"app.desktop\"  的示例::"
 
 #: ../../appdev/platform/click.rst:46
 msgid "Non exhaustive list of properties:"
@@ -931,7 +980,7 @@ msgstr "圖示：要顯示的圖示的路徑"
 
 #: ../../appdev/platform/click.rst:51
 msgid "Terminal: ``false`` if will not run in terminal window"
-msgstr ""
+msgstr "終端: \"false\"，如果不在終端視窗中運行"
 
 #: ../../appdev/platform/click.rst:52
 msgid "Type: Specifies the type of the launcher file. The type can be Application, Link or Directory."
@@ -939,11 +988,11 @@ msgstr "類型：指定啟動器文件的類型。 類型可以是應用程式�
 
 #: ../../appdev/platform/click.rst:53
 msgid "X-Ubuntu-Touch: ``true`` to make the app visible"
-msgstr ""
+msgstr "X-Ubuntu-Touch: \"true\" 使應用程式可見"
 
 #: ../../appdev/platform/click.rst:54
 msgid "X-Ubuntu-XMir-Enable: ``true`` if your app is built for X"
-msgstr ""
+msgstr "X-Ubuntu-XMir-Enable: \"true\" 如果你的應用程式是為 Xorg 構建的"
 
 #: ../../appdev/platform/click.rst:61
 msgid "Security and app isolation"
@@ -952,14 +1001,18 @@ msgstr "安全性和應用程式隔離"
 #: ../../appdev/platform/click.rst:63
 msgid "All Ubuntu apps and scopes are confined respecting AppArmor access control mechanism (see `Application Confinement <https://wiki.ubuntu.com/SecurityTeam/Specifications/ApplicationConfinement#App_confinement_with_AppArmor>`_) , meaning they only have access to their own resources and are isolated from other apps and parts of the system. The developer must declare which policy groups are needed for the app or scope to function properly with an apparmor ``.json`` file."
 msgstr ""
+"所有 Ubuntu 應用程式和範圍都受限於 AppArmor 存取控制機制 (請參閱 \"應用程序限制<https://wiki.ubuntu.com/"
+"SecurityTeam/Specifications/"
+"ApplicationConfinement#App_confinement_with_AppArmor>\"_），這意味著他們只能訪問自己的資源和 "
+"與其他應用程式和系統部分隔離。 開發人員必須聲明應用程序或範圍需要哪些策略才能使用 apparmor``.json``的檔案來正常執行。"
 
 #: ../../appdev/platform/click.rst:65
 msgid "Example ``apparmor.json`` file::"
-msgstr ""
+msgstr "\"apparmor.json\"  的示例::"
 
 #: ../../appdev/platform/click.rst:77
 msgid "For a full list of available policy groups, see :doc:`apparmor`."
-msgstr ""
+msgstr "有關可用策略組的完整清單，請參閱 :doc: \"apparmor\"。"
 
 #: ../../appdev/platform/index.rst:4
 msgid "Platform"
@@ -971,7 +1024,7 @@ msgstr "內容中心"
 
 #: ../../appdev/platform/index.rst:7
 msgid "Each application can expose content outside its sandbox, giving the user precise control over what can be imported, exported or shared with the world and other apps."
-msgstr ""
+msgstr "每個應用程式都可以在沙盒外公開內容，從而使使用者能夠精確控制可以導入、匯出或與世界和其他應用程式共用的內容。"
 
 #: ../../appdev/platform/index.rst:10
 msgid "Push notifications"
@@ -979,7 +1032,7 @@ msgstr "推送通知"
 
 #: ../../appdev/platform/index.rst:10
 msgid "By using a push server and a companion client, instantly serve users with the latest information from their network and apps."
-msgstr ""
+msgstr "透過使用推送伺服器和配套用戶端，立即為使用者提供來自其網路和應用程式的最新資訊。"
 
 #: ../../appdev/platform/index.rst:13
 msgid "URL dispatcher"
@@ -987,19 +1040,19 @@ msgstr "網址調度程序"
 
 #: ../../appdev/platform/index.rst:13
 msgid "Help users navigate between your apps and drive their journey with the URL dispatcher."
-msgstr ""
+msgstr "說明使用者在你的應用程式之間導航，並使用 URL dispatcher 程式推動他們的旅程。"
 
 #: ../../appdev/platform/index.rst:17
 msgid "Online accounts"
-msgstr "上線帳戶"
+msgstr "線上帳戶"
 
 #: ../../appdev/platform/index.rst:16
 msgid "Simplify user access to online services by integrating with the online accounts API. Accounts added by the user on the device are registered in a centralized hub, allowing other apps to re-use them."
-msgstr ""
+msgstr "通過與線上帳戶API集成，簡化使用者對線上服務的存取。使用者在設備上添加的帳戶在集中式集線器中註冊，允許其他應用程式重新使用這些帳戶。"
 
 #: ../../appdev/platform/index.rst:19
 msgid "`Read the docs <https://docs.ubuntu.com/phone/en/platform/>`__"
-msgstr ""
+msgstr "\"閱讀文檔 <https://docs.ubuntu.com/phone/en/platform/>\"__"
 
 #: ../../appdev/publishing/index.rst:4
 msgid "App publishing guides"
@@ -1008,6 +1061,8 @@ msgstr "應用程式發佈指南"
 #: ../../appdev/publishing/index.rst:6
 msgid "We are currently working on expanding our list of publishing guides. In the mean time you can get started over at the `OpenStore's submission page <https://open-store.io/submit>`__."
 msgstr ""
+"我們目前正在努力發展我們的發佈指南列表。 與此同時，您可以在 \"OpenStore 的提交頁面 <https://open-store.io/"
+"submit>\"__ 來開始。"
 
 #: ../../appdev/samples/index.rst:4
 msgid "Sample Apps"
@@ -1016,10 +1071,14 @@ msgstr "範例應用程式"
 #: ../../appdev/samples/index.rst:6
 msgid "We are currently working on expanding our list of sample apps. In the mean time many apps on the `OpenStore <https://open-store.io/>`__ are open source and can be used as a reference."
 msgstr ""
+"我們目前正在努力發展我們的範例應用程式列表。 與此同時，\"OpenStore <https://open-store.io/>\"__ "
+"上許多應用程式都是開源的，可以用作為參考。"
 
 #: ../../appdev/samples/index.rst:8
 msgid "If you are interested in helping create sample apps check out our `GitLab Project <https://gitlab.com/ubports/ux/development-resources>`__."
 msgstr ""
+"如果您有興趣說明創建應用程式的範例，請查看我們的 \"GitLab 專案 <https://gitlab.com/ubports/ux/"
+"development-resources>\"__。"
 
 #: ../../appdev/webapp/guide.rst:2
 #: ../../appdev/webapp/index.rst:15
@@ -1033,6 +1092,7 @@ msgstr "網路應用程式如何適應 shell"
 #: ../../appdev/webapp/guide.rst:7
 msgid "A web app displays in a webview inside a webapp-container that runs as an Ubuntu app in the Ubuntu/Unity shell."
 msgstr ""
+"網路應用程式顯示在網路應用程式容器內的網路應用程式的視圖中, 該容器在  Ubuntu/Unity shell 中作為 Ubuntu 應用程式運行。"
 
 #: ../../appdev/webapp/guide.rst:9
 msgid "Taking a closer look:"
@@ -1041,6 +1101,9 @@ msgstr "仔細看看："
 #: ../../appdev/webapp/guide.rst:11
 msgid "At the innermost level, there is a website that the developer identifies by URL. The website is rendered and runs in an Oxide webview. Oxide is a Blink/Chrome webview that is customized for Ubuntu. The Oxide webview runs and displays in the webapp-container. The webapp-container is the executable app runtime that is integrated with the Ubuntu/unity shell."
 msgstr ""
+"在最裡層，有一個開發人員透過網址識別的網站。 該網站呈現並在 Oxide webview 中運行。 Oxide 是一個為 Ubuntu 定制的 "
+"Blink / Chrome webview。 Oxide webview 執行並顯示在網路應用程式的容器中。 webapp-container 是與 "
+"Ubuntu / unity shell 集成的可執行應用程式運行時。"
 
 #: ../../appdev/webapp/guide.rst:16
 msgid "Launching"
@@ -1056,7 +1119,7 @@ msgstr "例如:::"
 
 #: ../../appdev/webapp/guide.rst:26
 msgid "This simple form works, but almost every webapp also uses other features, such as URL containment with URL patterns as described below."
-msgstr ""
+msgstr "這個簡單的表單工作正常，但幾乎每個網路應用程式都使用其他功能，例如網址包含網址的模式，如下所述。"
 
 #: ../../appdev/webapp/guide.rst:29
 msgid "User interface"
@@ -1064,19 +1127,19 @@ msgstr "使用者界面"
 
 #: ../../appdev/webapp/guide.rst:31
 msgid "A webapp generally fills the entire app screen space, without the need of the UI controls generally found on standard browsers."
-msgstr ""
+msgstr "網路應用程式通常會填滿整個螢幕空間，而不需要通常在標準瀏覽器上找到使用者介面的控制項目。"
 
 #: ../../appdev/webapp/guide.rst:33
 msgid "In some cases some navigation controls are appropriate, such as Back and Forward buttons, or a URL address bar. These are added as command line arguments:"
-msgstr ""
+msgstr "在某些情況下，某些導航控制項是適當的，例如 \"後退\" 和 \"前進\" 按鈕或 URL 網址列。這些將添加為命令列參數:"
 
 #: ../../appdev/webapp/guide.rst:35
 msgid "``--enable-back-forward`` Enable the display of the back and forward buttons in the toolbar (at the bottom of the webapp window)"
-msgstr ""
+msgstr "\"--enable-back-forward\" 啟用工具欄中後退和前進按鈕的顯示（位於網路應用程式視窗的底部）"
 
 #: ../../appdev/webapp/guide.rst:36
 msgid "``--enable-addressbar`` Enable the display of the address bar (at the bottom of the webapp window)"
-msgstr ""
+msgstr "\"--enable-addressbar\" 啟用網址欄的顯示（在網路應用程序窗口的底部）"
 
 #: ../../appdev/webapp/guide.rst:39
 msgid "URL patterns"
@@ -1085,14 +1148,16 @@ msgstr "網址格式"
 #: ../../appdev/webapp/guide.rst:41
 msgid "Webapp authors often want to contain browsing to the target website. That is, the developer wants to control the URLs that can be opened in the webapp (all other URLs are opened in the browser). This is done with URL patterns as part of the webapp command line."
 msgstr ""
+"網路應用程式的作者通常希望包含對目標網站的流覽。也就是說，開發人員希望控制可以在網路應用程式中打開的網址 "
+"(所有其他網址都在瀏覽器中打開)。這是用網址模式作為網路應用程式命令列的一部分來完成的。"
 
 #: ../../appdev/webapp/guide.rst:43
 msgid "However, many web apps use pages that are hosted over multiple sites or that use external resources and pages."
-msgstr ""
+msgstr "但是，有許多的網路應用程式則使用託管在多個網站上使用外部資源和網站頁面。"
 
 #: ../../appdev/webapp/guide.rst:45
 msgid "However, both containment and access to specified external URLs are implemented with URL patterns provided as arguments at launch time. Let’s take a closer look."
-msgstr ""
+msgstr "但是，包含和訪問指定的外部網址都是在啟動時，作為參數所提供的網址顯示的模式所實現的。讓我們仔細看看。"
 
 #: ../../appdev/webapp/guide.rst:48
 msgid "Uncontained by default"
@@ -1100,43 +1165,55 @@ msgstr "在預設情況下不包含"
 
 #: ../../appdev/webapp/guide.rst:50
 msgid "By default, there is no URL containment. Suppose you launch a webapp without any patters and only a starting URL like this:::"
-msgstr ""
+msgstr "預設情況下，沒有網址包含。假設您啟動了一個沒有任何補丁程式的網路應用程式，並且只有一個啟動網址，如以下所示:::"
 
 #: ../../appdev/webapp/guide.rst:54
 msgid "The user can navigate to any URL without limitation. For example, if they click the Developer button at the top, they navigate to developer.ubuntu.com, and it displays in the webapp."
 msgstr ""
+"使用者可以不受限制地導引到任何網址。例如，如果他們按一下頂部的 \"開發人員\" 按鈕, 他們將導航到 "
+"developer.ubuntu.com，然後它將顯示在網路應用程式中。"
 
 #: ../../appdev/webapp/guide.rst:56
 msgid "Tip: You can see the URL of the current page by enabling the address bar with ``--enable-addressbar``."
-msgstr ""
+msgstr "提示: 您可以通過啟用帶有 \"--enable-addressbar\" 的網址列來查看當前頁面的網址。"
 
 #: ../../appdev/webapp/guide.rst:59
 msgid "Simple containment to the site"
-msgstr ""
+msgstr "簡單的網站安全"
 
 #: ../../appdev/webapp/guide.rst:61
 msgid "One often wants to contain users to the site itself. That is, if the website is www.ubuntu.com, it may be useful to contain webapp users only to subpages of www.ubuntu.com. This is done by adding a wildcard URL pattern to the launch command, as follows:::"
 msgstr ""
+"人們通常希望將使用者包含到網站本身。也就是說，如果網站 www.ubuntu.com，則僅包含網路應用程式的使用者可能會對 www.ubuntu.com "
+"的子頁面有所説明。這是透過向啟動命令中添加萬用字元網址模式來完成的，如以下所示:"
 
 #: ../../appdev/webapp/guide.rst:67
 msgid "``--webappUrlPatterns=`` indicates a pattern is next"
-msgstr ""
+msgstr "\"--webappUrlPatterns=\" 來表示下一個模式是"
 
 #: ../../appdev/webapp/guide.rst:66
 msgid "http://www.ubuntu.com/* is the pattern The asterisk is a wildcard that matches any valid sequence of trailing (right-most) characters in a URL"
-msgstr ""
+msgstr "http://www.ubuntu.com/* 星號是一個萬用字元，與網址中任何有效的尾端 (最右側) 字元序列互相配對"
 
 #: ../../appdev/webapp/guide.rst:69
 msgid "With this launch command and URL pattern, the user can navigate to and open in the webapp any URL that starts with http://www.ubuntu.com/. For example, they can click on the Phone button (http://www.ubuntu.com/phone) in the banner and it opens in the webapp, or the Tablet button (http://www.ubuntu.com/tablet). But, clicking Developer opens the corresponding URL in the browser."
 msgstr ""
+"使用此啟動指令和網址模式，用戶可以引導到網路應用程式並在 http://www.ubuntu.com/ 中以任何網址開啟。 例如: "
+"他們可以點擊橫幅中的電話按鈕 (http://www.ubuntu.com/phone)，然後在網路應用程式或平板電腦按鈕 "
+"(http://www.ubuntu.com/tablet) 中打開。 但是，單擊Developer 會在瀏覽器中打開相對應的網址。"
 
 #: ../../appdev/webapp/guide.rst:71
 msgid "Tip: Make sure to fully specify the subdomain in your starting URL, that is, use http://www.ubuntu.com instead of www.ubuntu.com. Not specifying the subdomain would create an ambiguous URL and thus introduces security concerns. More complex wildcard patterns"
 msgstr ""
+"提示: 請確保在起始網址中完全指定子網域，是使用 http://www.ubuntu.com 而不是 "
+"www.ubuntu.com。不指定子域會創建不正確的網址，從而帶來安全問題。更複雜的萬用字元模式"
 
 #: ../../appdev/webapp/guide.rst:74
 msgid "You might want to limit access to only some subpages of your site from within the webapp. This is easy with wildcard patterns. (Links to other subpages are opened in the browser.) For example, the following allows access to www.ubuntu.com/desktop/features and www.ubuntu.com/phone/features while not allowing access to www.ubuntu.com/desktop or www.ubuntu.com/phone::"
 msgstr ""
+"您可能希望從網路應用程式中限制僅前往您網站的某些子頁面。 使用通用模式很容易。(在瀏覽器中打開了與其他子頁面的鏈接)。例如: "
+"以下內容允許前往www.ubuntu.com/desktop/features 和 www.ubuntu.com/phone/"
+"features，但不允許前往www.ubuntu.com/ 主機或 www.ubuntu.com/phone::"
 
 #: ../../appdev/webapp/guide.rst:80
 msgid "Multiple patterns"
@@ -1145,10 +1222,12 @@ msgstr "多種模式"
 #: ../../appdev/webapp/guide.rst:82
 msgid "You can use multiple patterns by separating them with a comma. For example, the following allows access only to www.ubuntu.com/desktop/features and www.ubuntu.com/phone/features:::"
 msgstr ""
+"可以使用多個模式，方法是用逗號分隔它們。例如以下內容只允許讀取 www.ubuntu.com/desktop/features 和 www.ubuntu."
+"com/phone/features :::"
 
 #: ../../appdev/webapp/guide.rst:86
 msgid "Tip: Multiple patterns are often necessary to achieve the intended containment behavior."
-msgstr ""
+msgstr "提示: 要實現預期的相容行為，通常需要多種模式。"
 
 #: ../../appdev/webapp/guide.rst:90
 msgid "Adding a specific subdomain"
@@ -1157,18 +1236,22 @@ msgstr "添加特定子網域"
 #: ../../appdev/webapp/guide.rst:92
 msgid "Many URLs have one or more subdomains. (For example, in the following, “developer” is the subdomain: developer.ubuntu.com.) You can allow access to a single subdomain (and all of its subpages) with a pattern like this:::"
 msgstr ""
+"許多網址都有一個或多個子網域。(例如，在下面，\"developer\"是子網域: "
+"developer.ubuntu.com)。您可以允許使用類似這樣的模式來訪問單個子網域（及其所有子頁面）："
 
 #: ../../appdev/webapp/guide.rst:96
 msgid "However, one usually wants the user to be able to navigate back to the starting URL (and its subpages). So, if the starting URL is http://www.ubuntu.com, a second pattern is needed:::"
-msgstr ""
+msgstr "但是，通常希望用戶能夠導回起始網址（及其子頁面）。 因此，如果起始網址是 http://www.ubuntu.com，則需要第二種模式 :::"
 
 #: ../../appdev/webapp/guide.rst:100
 msgid "Putting these together, here’s an example that starts on http://www.ubuntu.com and allows navigation to http://developer.ubuntu.com and subpages and back to http://www.ubuntu.com and subpages:::"
 msgstr ""
+"把這些放在一起，這是一個從 http://www.ubuntu.com 開始並允許引導到http://developer.ubuntu.com "
+"和子頁面並返回 http://www.ubuntu.com 和子頁面的示例:::"
 
 #: ../../appdev/webapp/guide.rst:105
 msgid "Adding subdomains with a wildcard"
-msgstr ""
+msgstr "使用萬用字元添加子網域"
 
 #: ../../appdev/webapp/guide.rst:107
 msgid "Some URLs have multiple subdomains. For example, www.ubuntu.com has design.ubuntu.com, developer.ubuntu.com and more. You can add access to all subdomains with a wildcard in the subdomain position:::"
@@ -1179,6 +1262,8 @@ msgstr ""
 #: ../../appdev/webapp/guide.rst:111
 msgid "Note: An asterisk in the subdomain position matches any valid single subdomain. This single pattern is sufficient to enable browsing to any subdomain and subpages, including back to the starting URL (http://www.ubuntu.com) and its subpages."
 msgstr ""
+"注意：子網域位置中的星號與任何有效的單個子域匹配。 "
+"這種單一模式足以支持瀏覽任何子網域和子頁面，包括返回開始網址（http://www.ubuntu.com）以及子頁面。"
 
 #: ../../appdev/webapp/guide.rst:114
 msgid "Adding https"
@@ -1192,7 +1277,7 @@ msgstr ""
 
 #: ../../appdev/webapp/guide.rst:120
 msgid "Note: the question mark in https?. This means the preceding character (the ‘s’) is optional. If https is always required, omit the question mark."
-msgstr ""
+msgstr "注意：https? 中的問號。 這意味著前面的字符 (\"s\") 是可選的。 如果始終需要 https，請省略問號。"
 
 #: ../../appdev/webapp/guide.rst:123
 msgid "Command line arguments"
@@ -1200,7 +1285,7 @@ msgstr "指令參數"
 
 #: ../../appdev/webapp/guide.rst:125
 msgid "The webapp-container accepts many options to fine tune how it hosts various web applications."
-msgstr ""
+msgstr "網路應用程式容器接受許多選項來微調，它是承載各種網路應用程式的方式。"
 
 #: ../../appdev/webapp/guide.rst:127
 msgid "See all help with:::"
@@ -1208,23 +1293,25 @@ msgstr "查看所有幫助:::"
 
 #: ../../appdev/webapp/guide.rst:131
 msgid "Note: Only the following options apply to converged Ubuntu.::"
-msgstr ""
+msgstr "注意: 只有以下選項適用於融合 Ubuntu。::"
 
 #: ../../appdev/webapp/guide.rst:145
 msgid "Chrome options (if none specified, no chrome is shown by default):::"
-msgstr ""
+msgstr "chrome 選項 (如果未指定，預設情況下是不顯示 chrome的) :::"
 
 #: ../../appdev/webapp/guide.rst:150
 msgid "Note: The other available options are specific to desktop webapps. It is recommended to not use them anymore."
-msgstr ""
+msgstr "注意: 其他可用選項特定於桌面網路應用程式。建議不要再使用它們。"
 
 #: ../../appdev/webapp/guide.rst:153
 msgid "User-Agent string override"
-msgstr ""
+msgstr "使用者代理字串重寫"
 
 #: ../../appdev/webapp/guide.rst:155
 msgid "Some websites check specific portions of the web engine identity, aka the User-Agent string, to adjust their presentation or enable certain features. While not a recommended practice, it is sometimes necessary to change the default string sent by the webapp container."
 msgstr ""
+"某些網站檢查網路引擎標識的特定部分 "
+"(也稱為使用者代理字串)，來調整其演示文稿或啟用某些功能。雖然不是推薦的做法，但有時需要更改網路應用容器發送的預設字串。"
 
 #: ../../appdev/webapp/guide.rst:157
 msgid "To change the string from the command line, use the following option:::"
@@ -1237,6 +1324,8 @@ msgstr "瀏覽器數據包含"
 #: ../../appdev/webapp/guide.rst:164
 msgid "The webapp experience is contained and isolated from the browser data point of view. That is webapps do not access data from any other installed browser, such as history, cookies and so on. Other browser on the system do not access the webapp’s data. Storage"
 msgstr ""
+"從瀏覽器資料的角度來看，包含和隔離的網路應用程式體驗。也就是說，網路應用程式不會從任何其他已安裝的瀏覽器瀏覽資料，例如歷史記錄， Cookie "
+"等。系統上的其他瀏覽器不存取網路應用程式的資料。儲存"
 
 #: ../../appdev/webapp/guide.rst:167
 msgid "W3C allows apps to use local storage, and Oxide/Webapp-container supports the main standards here: LocalStorage, IndexedDB, WebSQL."
