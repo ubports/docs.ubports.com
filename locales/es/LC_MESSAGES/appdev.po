@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2019-01-15 20:06+0000\n"
+"PO-Revision-Date: 2019-02-06 21:23+0000\n"
 "Last-Translator: advocatux <advocatux@airpost.net>\n"
 "Language-Team: Spanish <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/es/>\n"
@@ -202,7 +202,7 @@ msgstr ""
 
 #: ../../appdev/guides/contenthub.rst:99
 msgid "Wait a minute. Why the different apps?"
-msgstr "Espera un momento. ¿Por qué las aplicaciones diferentes?"
+msgstr "Espera un momento. ¿Por qué aplicaciones diferentes?"
 
 #: ../../appdev/guides/contenthub.rst:104
 msgid "Content Hub: Export vs Share"
@@ -289,10 +289,11 @@ msgid ""
 "possibilities of an open platform like Ubuntu Touch."
 msgstr ""
 "En una comunidad de código abierto completamente libre, es natural que haya "
-"miembros de la comunidad explorando los límites de la plataforma en muchas "
-"muchas direcciones. En esta sección encontrará enlaces a recursos externos "
-"que hacen exactamente eso: explorar. El propósito de esta lista es mostrar "
-"las posibilidades ilimitadas de una plataforma abierta como Ubuntu Touch."
+"miembros de la comunidad explorando los límites de la plataforma en "
+"muchísimas direcciones. En esta sección encontrará enlaces a recursos "
+"externos que hacen exactamente eso: explorar. El propósito de esta lista es "
+"mostrar las posibilidades ilimitadas de una plataforma abierta como Ubuntu "
+"Touch."
 
 #: ../../appdev/guides/cookbook.rst:17
 msgid ""
@@ -510,7 +511,7 @@ msgid ""
 msgstr ""
 "Una pregunta muy buena. ¿Qué ocurre si pulsamos en un enlace de Twitter? ¿"
 "Cómo se maneja tal URL por el ``URLdispatcher``? ¿Cómo protocolo ``http`` o "
-"el protocolo ``http://twitter``??"
+"cómo el protocolo ``http://twitter``??"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:153
 msgid "What happens if two apps have the same defined protocol?"
@@ -534,7 +535,7 @@ msgid ""
 msgstr ""
 "Estamos trabajando actualmente en expandir nuestra lista de guías para "
 "desarrolladores. Mientras tanto recomendamos el `curso de programación de "
-"Ubuntu Touch <https://mimecar.gitbook.io/qt-course/>`__."
+"Ubuntu Touch <https://mimecar.gitbook.io/qt-course/es>`__."
 
 #: ../../appdev/guides/index.rst:9 ../../appdev/publishing/index.rst:8
 msgid ""
@@ -643,7 +644,7 @@ msgstr "Usando rutas estándar en C++"
 #: ../../appdev/guides/writeable-dirs.rst:31
 msgid "The Qt header ``QStandardPaths`` provides the app's writable locations:"
 msgstr ""
-"La cabecera de Qt ``QStandardPaths``proporciona las ubicaciones grabables de "
+"La cabecera de Qt ``QStandardPaths``proporciona las ubicaciones editables de "
 "la aplicación:"
 
 #: ../../appdev/guides/writeable-dirs.rst:43
@@ -685,7 +686,7 @@ msgid ""
 "talent and commitment is unmatched. Ubuntu is also the third most deployed "
 "desktop OS in the world."
 msgstr ""
-"Bienvenido a una plataforma de fuente abierta y gratuita bajo escrutinio y "
+"Bienvenida/o a una plataforma de fuente abierta y gratuita bajo escrutinio y "
 "mejora constantes por parte de una vibrante comunidad global, cuya energía, "
 "conectividad, talento y compromiso no tienen comparación. Ubuntu es también "
 "el tercer sistema operativo de escritorio más implementado en el mundo."
@@ -847,7 +848,7 @@ msgid ""
 "The :doc:`/contribute/preinstalled-apps` page has information on developing "
 "the apps which are included with Ubuntu Touch."
 msgstr ""
-"La página :doc:`/contribute/preinstalled-apps`contiene información sobre el "
+"La página :doc:`/contribute/preinstalled-apps` contiene información sobre el "
 "desarrollo de aplicaciones que están incluidas con Ubuntu Touch."
 
 #: ../../appdev/nativeapp/index.rst:4
@@ -856,7 +857,7 @@ msgstr "Aplicaciones nativas"
 
 #: ../../appdev/platform/apparmor.rst:2
 msgid "AppArmor Policy Groups"
-msgstr "Grupos de políticas de AppArmor"
+msgstr "Grupos de políticas de «AppArmor»"
 
 #: ../../appdev/platform/apparmor.rst:4
 msgid ""
@@ -877,10 +878,10 @@ msgid ""
 "Apps containing policies with common usage are generally accepted "
 "immediately, while reserved usage policies will need to be manually reviewed."
 msgstr ""
-"El uso de la política afecta si su aplicación será aceptada por OpenStore. "
-"Las aplicaciones que contienen políticas de uso común son aceptadas "
-"generalmente de inmediato, mientras que las políticas de uso reservado "
-"necesitarán ser revisadas manualmente."
+"El uso de la política afecta a si su aplicación será aceptada o no por "
+"OpenStore. Las aplicaciones que contienen políticas de uso común son "
+"aceptadas generalmente de inmediato, mientras que las políticas de uso "
+"reservado necesitarán ser revisadas manualmente."
 
 #: ../../appdev/platform/apparmor.rst:24
 msgid "accounts"
@@ -1046,7 +1047,7 @@ msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:96
 msgid "content_exchange"
-msgstr "content_exchange (intercambio de contenido)"
+msgstr "«content_exchange» (intercambio de contenido)"
 
 #: ../../appdev/platform/apparmor.rst:98
 msgid "Description: Can request/import data from other applications"
@@ -1097,7 +1098,7 @@ msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:124
 msgid "document_files"
-msgstr "document_files (archivos de documentos)"
+msgstr "«document_files» (archivos de documentos)"
 
 #: ../../appdev/platform/apparmor.rst:126
 msgid ""
@@ -1313,11 +1314,11 @@ msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:227
 msgid "push-notification-client"
-msgstr "«push-notification-client» (cliente de notificaciones)"
+msgstr "«push-notification-client» (cliente de envío de notificaciones)"
 
 #: ../../appdev/platform/apparmor.rst:229
 msgid "Description: Can use push notifications as a client"
-msgstr "Descripción: puede usar notificaciones como cliente"
+msgstr "Descripción: puede usar el envío de notificaciones como cliente"
 
 #: ../../appdev/platform/apparmor.rst:235
 msgid "sensors"
@@ -1417,7 +1418,7 @@ msgstr "«webview» (vista web)"
 
 #: ../../appdev/platform/apparmor.rst:285
 msgid "Description: Can use the UbuntuWebview"
-msgstr "Descripción: puede usar «UbuntuWebview»"
+msgstr "Descripción: puede usar el «UbuntuWebview»"
 
 #: ../../appdev/platform/apparmor.rst:289
 msgid "The webview policy group allows apps to embed a `web browser view`_."
@@ -1452,7 +1453,7 @@ msgstr "Ejemplo de archivo ``manifest.json``::"
 
 #: ../../appdev/platform/click.rst:31
 msgid "AppArmor profile policy file"
-msgstr "Archivo de política del perfil de AppArmor"
+msgstr "Archivo de política del perfil de «AppArmor»"
 
 #: ../../appdev/platform/click.rst:31
 msgid ""
@@ -1460,8 +1461,8 @@ msgid ""
 "isolation`_ below for more information on this file."
 msgstr ""
 "Contiene la política que la aplicación necesita para funcionar "
-"correctamente. Vea `Seguridad y aislamiento de aplicación`_ más abajo para "
-"más información sobre este archivo."
+"correctamente. Vea `Security and app isolation`_ (seguridad y aislamiento de "
+"aplicaciones) más adelante para obtener más información sobre este archivo."
 
 #: ../../appdev/platform/click.rst:54
 msgid "``.desktop`` file"
@@ -1485,39 +1486,43 @@ msgstr "Lista no exhaustiva de propiedades:"
 
 #: ../../appdev/platform/click.rst:48
 msgid "Name: Application title has shown in the dash"
-msgstr "Name: título que la aplicación muestra en el tablero"
+msgstr "«Name» (nombre): título que la aplicación muestra en el tablero"
 
 #: ../../appdev/platform/click.rst:49
 msgid "Exec: Path to the executable file"
-msgstr "Exec: ruta al archivo ejecutable"
+msgstr "«Exec» (ejecutable): ruta al archivo ejecutable"
 
 #: ../../appdev/platform/click.rst:50
 msgid "Icon: Path to the icon to display"
-msgstr "Icon: ruta al icono que mostrar"
+msgstr "«Icon» (icono): ruta al icono que mostrar"
 
 #: ../../appdev/platform/click.rst:51
 msgid "Terminal: ``false`` if will not run in terminal window"
-msgstr "Terminal: ``false`` si no se ejecutará en una ventana de terminal"
+msgstr ""
+"«Terminal» (terminal): ``false`` (falso) si no se ejecutará en una ventana "
+"de terminal"
 
 #: ../../appdev/platform/click.rst:52
 msgid ""
 "Type: Specifies the type of the launcher file. The type can be Application, "
 "Link or Directory."
 msgstr ""
-"Type: especifica el tipo de archivo lanzador. El tipo puede ser aplicación, "
-"enlace o directorio."
+"«Type» (tipo): especifica el tipo de archivo lanzador. El tipo puede ser "
+"aplicación, enlace o directorio."
 
 #: ../../appdev/platform/click.rst:53
 msgid "X-Ubuntu-Touch: ``true`` to make the app visible"
-msgstr "X-Ubuntu-Touch: ``true`` para hacer la aplicación visible"
+msgstr "«X-Ubuntu-Touch»: ``true`` (verdadero) para hacer la aplicación visible"
 
 #: ../../appdev/platform/click.rst:54
 msgid "X-Ubuntu-XMir-Enable: ``true`` if your app is built for X"
-msgstr "X-Ubuntu-XMir-Enable: ``true`` si su aplicación está hecha para X"
+msgstr ""
+"«X-Ubuntu-XMir-Enable»: ``true`` (verdadero) si su aplicación está hecha "
+"para X"
 
 #: ../../appdev/platform/click.rst:61
 msgid "Security and app isolation"
-msgstr "Seguridad y aislamiento de la aplicación"
+msgstr "Seguridad y aislamiento de las aplicaciones"
 
 #: ../../appdev/platform/click.rst:63
 msgid ""
@@ -1530,14 +1535,14 @@ msgid ""
 "needed for the app or scope to function properly with an apparmor ``.json`` "
 "file."
 msgstr ""
-"Todas las aplicaciones y scopes de Ubuntu están confinadas respetando el "
-"mecanismo de control de acceso de AppArmor (vea `Confinamiento de "
+"Todas las aplicaciones y «scopes» de Ubuntu están confinadas respetando el "
+"mecanismo de control de acceso de «AppArmor» (vea `Confinamiento de "
 "aplicaciones <https://wiki.ubuntu.com/SecurityTeam/Specifications/"
 "ApplicationConfinement#App_confinement_with_AppArmor>`_) , esto significa "
 "que solo tienen acceso a sus propios recursos y están aisladas de otras "
 "aplicaciones y partes del sistema. El desarrollador debe declarar que grupos "
-"de políticas se necesitan para la aplicación o scope para funcionar "
-"correctamente con un archivo ``.json`` de apparmor."
+"de políticas se necesitan para la aplicación o «scope» para funcionar "
+"correctamente con un archivo ``.json`` de «apparmor»."
 
 #: ../../appdev/platform/click.rst:65
 msgid "Example ``apparmor.json`` file::"
@@ -1555,7 +1560,7 @@ msgstr "Plataforma"
 
 #: ../../appdev/platform/index.rst:7
 msgid "Content Hub"
-msgstr "Concentrador de contenido"
+msgstr "Centro de contenido"
 
 #: ../../appdev/platform/index.rst:7
 msgid ""
@@ -1569,14 +1574,14 @@ msgstr ""
 
 #: ../../appdev/platform/index.rst:10
 msgid "Push notifications"
-msgstr "Notificaciones de inserción"
+msgstr "Envío de notificaciones"
 
 #: ../../appdev/platform/index.rst:10
 msgid ""
 "By using a push server and a companion client, instantly serve users with "
 "the latest information from their network and apps."
 msgstr ""
-"Al usar un servidor de inserción (push) y un cliente complementario, sirve "
+"Al usar un servidor de envío («push») y un cliente complementario, sirve "
 "instantáneamente a los usuarios con la última información de su red y "
 "aplicaciones."
 
@@ -1654,7 +1659,7 @@ msgstr "Guía"
 
 #: ../../appdev/webapp/guide.rst:5
 msgid "How the webapp fits into the shell"
-msgstr "Como la aplicación web encaja en el intérprete de órdenes (shell)"
+msgstr "Como la aplicación web encaja en el intérprete de órdenes («shell»)"
 
 #: ../../appdev/webapp/guide.rst:7
 msgid ""
@@ -1663,7 +1668,7 @@ msgid ""
 msgstr ""
 "Una aplicación web se muestra en una vista web dentro de un contenedor de "
 "aplicación web que se ejecuta como una aplicación en el intérprete de "
-"órdenes (shell) de Ubuntu/Unity."
+"órdenes («shell») de Ubuntu/Unity."
 
 #: ../../appdev/webapp/guide.rst:9
 msgid "Taking a closer look:"
@@ -1682,12 +1687,12 @@ msgstr ""
 "Oxide es una vista web de Blink/Chrome personalizada para Ubuntu. La vista "
 "web de Oxide se ejecuta y muestra en el contenedor de la aplicación web. El "
 "contenedor de la aplicación web es el tiempo de ejecución de la aplicación "
-"ejecutable que está integrada en el intérprete de órdenes (shell) de Ubuntu/"
-"Unity."
+"ejecutable que está integrada en el intérprete de órdenes («shell») de "
+"Ubuntu/Unity."
 
 #: ../../appdev/webapp/guide.rst:16
 msgid "Launching"
-msgstr "Iniciando"
+msgstr "Lanzamiento"
 
 #: ../../appdev/webapp/guide.rst:18
 msgid "You can launch a webapp from the terminal with:::"
@@ -1726,8 +1731,8 @@ msgid ""
 "arguments:"
 msgstr ""
 "En algunos casos algunos controles de navegación son adecuados, tales como "
-"los botones de Retroceder y Avanzar, o una barra de direcciones. Estos se "
-"añaden como argumentos de la línea de órdenes:"
+"los botones de «Retroceder» y «Avanzar», o una barra de direcciones. Estos "
+"se añaden como argumentos de la línea de órdenes:"
 
 #: ../../appdev/webapp/guide.rst:35
 msgid ""
@@ -1777,9 +1782,9 @@ msgid ""
 "implemented with URL patterns provided as arguments at launch time. Let’s "
 "take a closer look."
 msgstr ""
-"Sin embargo tanto el confinamiento y el acceso a URLs específicas externas "
-"se implementan con patrones de URL suministradas como argumentos en el "
-"momento del inicio. Echemos un vistazo más de cerca."
+"Sin embargo, tanto el confinamiento como el acceso a URLs específicas "
+"externas se implementan con patrones de URL suministradas como argumentos en "
+"el momento del inicio. Echemos un vistazo más de cerca."
 
 #: ../../appdev/webapp/guide.rst:48
 msgid "Uncontained by default"
@@ -1851,9 +1856,9 @@ msgid ""
 msgstr ""
 "Con esta orden de inicio y patrón de URL, el usuario puede navegar y abrir "
 "en la aplicación web cualquier URL que comience con http://www.ubuntu.com/. "
-"Por ejemplo, pueden pulsar en el botón Teléfono (http://www.ubuntu.com/"
-"phone) en la cabecera y se abre en la aplicación web, o el botón Tableta "
-"(http://www.ubuntu.com/tablet). Pero pulsando Desarrollador abre la URL "
+"Por ejemplo, pueden pulsar en el botón «Teléfono» (http://www.ubuntu.com/"
+"phone) en la cabecera y se abre en la aplicación web, o el botón «Tableta» "
+"(http://www.ubuntu.com/tablet). Pero pulsando «Desarrollador» abre la URL "
 "correspondiente en el navegador."
 
 #: ../../appdev/webapp/guide.rst:71
@@ -1915,8 +1920,8 @@ msgid ""
 "“developer” is the subdomain: developer.ubuntu.com.) You can allow access to "
 "a single subdomain (and all of its subpages) with a pattern like this:::"
 msgstr ""
-"Muchas URLs tienen uno o más subdominios. (Por ejemplo, en el siguiente, "
-"“developer” es el subdominio: developer.ubuntu.com). Puede permitir acceso a "
+"Muchas URLs tienen uno o más subdominios. (Por ejemplo, en lo siguiente, "
+"«developer» es el subdominio: developer.ubuntu.com). Puede permitir acceso a "
 "un solo subdominio (y a todas sus sub-páginas) con un patrón como este:::"
 
 #: ../../appdev/webapp/guide.rst:96
@@ -1984,9 +1989,9 @@ msgid ""
 "Note: the question mark in https?. This means the preceding character (the "
 "‘s’) is optional. If https is always required, omit the question mark."
 msgstr ""
-"Nota: ¿el signo de interrogación en https? Esto significa que el carácter "
-"precedente (la  ‘s’) es opcional. Si se necesita siempre https, omita el "
-"signo de interrogación."
+"Nota: ¿qué es el signo de interrogación en https? Esto significa que el "
+"carácter precedente (la  «s») es opcional. Si se necesita siempre https, "
+"omita el signo de interrogación."
 
 #: ../../appdev/webapp/guide.rst:123
 msgid "Command line arguments"
@@ -2024,7 +2029,7 @@ msgstr ""
 
 #: ../../appdev/webapp/guide.rst:153
 msgid "User-Agent string override"
-msgstr "Ignorar la cadena agente de usuario (User-Agent)"
+msgstr "Ignorar la cadena agente de usuario («User-Agent»)"
 
 #: ../../appdev/webapp/guide.rst:155
 msgid ""
@@ -2034,7 +2039,7 @@ msgid ""
 "default string sent by the webapp container."
 msgstr ""
 "Algunos sitios web comprueban porciones específicas de la identidad del "
-"motor web, también conocido por cadena de agente de usuario (User-Agent), "
+"motor web, también conocido como cadena de agente de usuario («User-Agent»), "
 "para ajustar su presentación o habilitar ciertas características. Aunque no "
 "es una práctica recomendada, algunas veces es necesario cambiar la cadena "
 "por defecto que envía el contenedor de la aplicación web."
@@ -2066,9 +2071,9 @@ msgid ""
 "W3C allows apps to use local storage, and Oxide/Webapp-container supports "
 "the main standards here: LocalStorage, IndexedDB, WebSQL."
 msgstr ""
-"El W3C permite a las aplicaciones usar almacenamiento local y Oxide/"
-"Contenedor de la aplicación web soporta el estándar principal aquí: "
-"LocalStorage, IndexedDB, WebSQL."
+"El W3C permite a las aplicaciones usar almacenamiento local y Oxide/Webapp-"
+"container (contenedor de aplicaciones web) soporta el estándar principal "
+"aquí: LocalStorage, IndexedDB, WebSQL."
 
 #: ../../appdev/webapp/index.rst:4
 msgid "Web applications"
@@ -2100,7 +2105,7 @@ msgstr ""
 "Las aplicaciones web son alojadas en línea. Pueden ser tan simples como un "
 "sitio web, por ejemplo un sitio de noticias en línea, o pueden distribuir "
 "contenido como vídeos. Pueden tener también una rica interfaz de usuario o "
-"usar la extensión WebGL para entregar juegos en línea."
+"usar la extensión «WebGL» para proporcionar juegos en línea."
 
 #: ../../appdev/webapp/index.rst:12
 msgid ""
@@ -2125,7 +2130,7 @@ msgid ""
 msgstr ""
 "Esta guía está enfocada a las aplicaciones web para un Ubuntu convergente, "
 "esto es, Ubuntu para dispositivos (teléfonos y tabletas). El escritorio de "
-"Ubuntu tiene soporte adicional para las aplicaciones web que no es cubierto "
+"Ubuntu tiene soporte adicional para las aplicaciones web que no se cubre "
 "aquí. El soporte para las aplicaciones web para Ubuntu convergente "
 "continuará creciendo y, por supuesto, el futuro de Ubuntu es la "
 "convergencia, así que manténgase sintonizado."
@@ -2140,33 +2145,34 @@ msgid ""
 "device:"
 msgstr ""
 "Existen varias herramientas para ayudarle a empaquetar e implementar su "
-"webapp en su dispositivo:"
+"aplicación web en su dispositivo:"
 
 #: ../../appdev/webapp/index.rst:30
 msgid ""
 "`Webapp creator <https://open-store.io/app/webapp-creator.jujuyeh>`_ "
 "application available from the openstore"
 msgstr ""
-"`Creador de Webapps (Webapp creator) <https://open-store.io/app/webapp-"
-"creator.jujuyeh>`_ aplicación disponible en openstore"
+"`Creador de aplicaciones web («Webapp creator») <https://open-store.io/app/"
+"webapp-creator.jujuyeh>`_ aplicación disponible en openstore"
 
 #: ../../appdev/webapp/index.rst:31
 msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ CLI"
 msgstr ""
-"`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ Interfaz de la "
+"`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ interfaz de la "
 "línea de órdenes"
 
 #: ../../appdev/webapp/index.rst:35
 msgid "Debugging your webapp"
-msgstr "Depurando su webapp"
+msgstr "Depurando su aplicación web"
 
 #: ../../appdev/webapp/index.rst:37
 msgid "This guide give you some tips to help you debug your webapp."
-msgstr "Esta guía le da algunos consejos para ayudarle a depurar su webapp."
+msgstr ""
+"Esta guía le da algunos consejos para ayudarle a depurar su aplicación web."
 
 #: ../../appdev/webapp/webdebug.rst:2
 msgid "Debug web application"
-msgstr "Depurar aplicación web"
+msgstr "Depurar la aplicación web"
 
 #: ../../appdev/webapp/webdebug.rst:4
 msgid ""
@@ -2178,7 +2184,7 @@ msgstr ""
 "La mayoría de los desarrolladores web probablemente querrán escribir la "
 "mayoría de su código y depurarlo usando el entorno de navegación habitual. "
 "El navegador de Ubuntu Touch se ajusta a los estándares web modernos y la "
-"mayoría de las webapps funcionarán sin necesidad de cambios."
+"mayoría de las aplicaciones web funcionarán sin necesidad de cambios."
 
 #: ../../appdev/webapp/webdebug.rst:6
 msgid ""
@@ -2190,7 +2196,7 @@ msgstr ""
 
 #: ../../appdev/webapp/webdebug.rst:9
 msgid "Watch the logs"
-msgstr "Ver los registros (logs)"
+msgstr "Ver los registros («logs»)"
 
 #: ../../appdev/webapp/webdebug.rst:11
 msgid ""
