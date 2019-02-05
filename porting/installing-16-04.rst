@@ -42,7 +42,7 @@ When your device boots, it will likely stay at the bootloader screen. However, y
 
 To confirm that your device has booted correctly, run ``dmesg -w`` and watch for "GNU/Linux device" in the output. If you instead get something similar to "Halium initrd Failed to boot", please get in contact with us so we can find out why.
 
-Similar to the `Halium reference rootfs <http://docs.halium.org/en/latest/porting/debug-build/logging-in.html>`__, you should set your computer's IP on the newly connected RNDIS interface to ``10.15.19.100`` if you don't get one automatically. Then, run the following to access your device::
+Similar to the Halium reference rootfs, you should `set your computer's IP on the newly connected RNDIS interface <http://docs.halium.org/en/latest/porting/debug-build/logging-in.html>`__ to ``10.15.19.100`` if you don't get one automatically. Then, run the following to access your device::
 
     ssh phablet@10.15.19.82
 
