@@ -166,7 +166,7 @@ This section lists the TODOs that have been included in this documentation. If y
 
 To create a todo, add this markup to your page::
 
-    .. todo:
+    .. todo::
 
        My todo text
 
