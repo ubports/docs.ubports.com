@@ -8,994 +8,876 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2019-01-21 14:32+0000\n"
-"Last-Translator: louies0623 <louies0623@gmail.com>\n"
-"Language-Team: Chinese (Traditional) <https://translate.ubports.com/projects/"
-"ubports-docs/documentation-userguide/zh_Hant/>\n"
-"Language: zh_Hant\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.1.1\n"
 
 #: ../../userguide/advanceduse/adb.rst:2
 msgid "Shell access via adb"
-msgstr "透過 adb 存取 Shell"
+msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:4
 msgid "You can put your UBports device into developer mode and access a Bash shell from your PC. This is useful for debugging or more advanced shell usage."
-msgstr "您可以將 UBports 設備置於開發人員模式，並從 PC 上存取 Bash shell。 這對於調試或更高級的 shell 使用非常有用。"
+msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:8
 msgid "Install ADB"
-msgstr "安裝 ADB"
+msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:10
 msgid "First, you'll need ADB installed on your computer."
-msgstr "首先，您需要在電腦上安裝 ADB。"
+msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:12
 msgid "On Ubuntu::"
-msgstr "在 Ubuntu::"
+msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:16
 msgid "On Fedora::"
-msgstr "在 Fedora::"
+msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:20
 msgid "And on MacOS with `Homebrew <https://brew.sh>`_::"
-msgstr "在 MacOS 上使用 \"Homebrew <https://brew.sh>\"_::"
+msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:24
 msgid "For Windows, grab the command-line tools only package from `here <https://developer.android.com/studio/index.html#downloads>`_."
 msgstr ""
-"對於 Windows，只需從這裡獲取 \"命令行工具包 <https://developer.android.com/studio/"
-"index.html#downloads>\"_。"
 
 #: ../../userguide/advanceduse/adb.rst:27
 msgid "Enable developer mode"
-msgstr "啟用開發人員模式"
+msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:29
 msgid "Next, you'll need to turn on Developer Mode."
-msgstr "接下來，您需要打開開發人員模式。"
+msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:31
 msgid "Reboot your device"
-msgstr "重新啟動您的裝置"
+msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:32
 msgid "Place your device into developer mode (Settings - About - Developer Mode - check the box to turn it on)"
-msgstr "將您的裝置設定為開發者模式（設定-關於-開發者模式-選中該框以將其打開）"
+msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:33
 msgid "Plug the device into a computer with adb installed"
-msgstr "將設備插入已安裝 adb 的電腦"
+msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:34
 msgid "Open a terminal and run ``adb devices``."
-msgstr "打開終端機並執行 \"adb devices\"。"
+msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:37
 msgid "When you're done using the shell, it's a good idea to turn Developer Mode off again."
-msgstr "當你完成使用 shell 時，最好再次關閉開發者模式。"
+msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:39
 msgid "If there's a device in the list here (The command doesn't print \"List of devices attached\" and a blank line), you are able to use ADB successfully. If not, continue to the next section."
-msgstr "如果此處列表中有裝置（命令不列印 \"附加裝置列表\" 和空行），則可以成功使用 ADB。 如果沒有，請繼續下一部分。"
+msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:42
 msgid "Add hardware IDs"
-msgstr "添加硬體 ID"
+msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:44
 msgid "ADB doesn't always know what devices on your computer it should or should not talk to. You can manually add the devices that it does not know how to talk to."
-msgstr "ADB 並不總是知道您的電腦上應該或不應該與之通訊的裝置。 您可以手動添加不知道如何通話的裝置。"
+msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:46
 msgid "Just run the command for your selected device if it's below. Then, run ``adb kill-server`` followed by the command you were initially trying to run."
-msgstr "只需運行所選裝置的命令，如果它在下面。然後執行 \"adb kill-server\"，然後運行您最初嘗試執行的命令。"
+msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:48
 msgid "Fairphone 2::"
-msgstr "Fairphone 2::"
+msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:52
 msgid "Oneplus One::"
-msgstr "Oneplus One::"
+msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:2
 msgid "CalDAV and CardDAV synchronization"
-msgstr "CalDAV 和 CardDAV 同步"
+msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:4
 msgid "CalDAV and CardDAV are protocols to synchronize calendars and contacts with a remote server. Many email-hosters provide a CalDAV and CardDAV interface."
-msgstr "CalDAV 和 CardDAV 是將日曆和聯絡人與遠程伺服器同步的協議。 許多電子郵件主機提供 CalDAV 和 CardDAV 界面。"
+msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:6
 msgid "**Note:** CalDAV Sync can also be set up in using the calendar app. Open the app, click on the little calendar icon in the top right corner and select \"Add internet calendar > Generic CalDAV\". Enter your calendar URL as well as your username and password to complete the process."
 msgstr ""
-"**注意：** 也可以使用日曆應用程式設定 CalDAV Sync。 打開應用程式，點擊右上角的小日曆圖示，然後選擇 \"加入網路日曆>通用 "
-"CalDAV\"。 輸入您的日曆網址以及您的用戶名和密碼來完成此過程。"
 
 #: ../../userguide/advanceduse/dav.rst:8
 msgid "At the moment, there is no carddav implementation directly accessible from the Ubuntu Touch graphical user-interface, so the only way to sync carddav is by using syncevolution + cron. However, there is a simple way to do that with a script that you can run in the terminal or via phablet SSH connection. These instructions work for caldav as well."
 msgstr ""
-"目前，沒有可從 Ubuntu Touch 圖形用戶界面直接存取 carddav 的實現，因此同步 carddav 的唯一方法是使用 "
-"syncevolution + cron。 但是，有一種簡單的方法可以使用可以在終端中執行的腳本或透過 phablet SSH 連接來執行此操作。 "
-"這些說明也適用於 caldav。"
 
 #: ../../userguide/advanceduse/dav.rst:10
 msgid "Follow this `guide <https://docs.ubports.com/en/latest/userguide/advanceduse/adb.html>`_ to activate Developer Mode and ADB (or SSH) connection."
 msgstr ""
-"按照 \"指南 <https://docs.ubports.com/en/latest/userguide/advanceduse/adb.html>\""
-"_ 開啟開發人員模式和 ADB（或SSH）連接。"
 
 #: ../../userguide/advanceduse/dav.rst:13
 msgid "Download this `script <https://gist.github.com/bastos77/0c47a94dd0bf3e394f879c0ff42b7839>`_ (let's call it dav.sh) and edit the following variables:"
 msgstr ""
-"下載 \"腳本<https://gist.github.com/bastos77/0c47a94dd0bf3e394f879c0ff42b7839>\""
-"_ （我們稱之為 dav.sh）並編輯以下的變量："
 
 #: ../../userguide/advanceduse/dav.rst:15
 msgid "server side : CAL_URL, **CONTACTS_URL**, USERNAME, PASSWORD (of your ownCloud/nextCloud/baikal/SOGO/... server)"
 msgstr ""
-"伺服器端：CAL_URL, **CONTACTS_URL**, USERNAME, PASSWORD（您自己的雲端/nextCloud/baikal/"
-"SOGO/ ... 伺服器）"
 
 #: ../../userguide/advanceduse/dav.rst:16
 msgid "CONTACT and CALENDAR _ NAME / VISUAL_NAME / CONFIG_NAME (it's more cosmetic)"
-msgstr "CONTACT 和 CALENDAR _ NAME / VISUAL_NAME / CONFIG_NAME (它更美觀)"
+msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:17
 msgid "CRON_FREQUENCY (for the frequency of synchronization)"
-msgstr "CRON_FREQUENCY（對於同步頻率）"
+msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:18
 msgid "Line 61: write ``sudo sh -c \"echo '$COMMAND_LINE' > /sbin/sogosync\"`` , instead of ``sudo echo \"$COMMAND_LINE\" > /sbin/sogosync``, to avoid permission denied error"
 msgstr ""
-"第61行：寫入 \"[sudo sh -c \"echo '$COMMAND_LINE' > /sbin/sogosync\"]\" ，而不是 \"["
-"sudo echo”$ COMMAND_LINE“> / sbin / sogosync]\"，以避免權限被拒絕錯誤"
 
 #: ../../userguide/advanceduse/dav.rst:20
 msgid "Move the file to your Ubuntu Touch device, either by file manager or with adb::"
-msgstr "透過文件管理器或 adb 將文件移動到 Ubuntu Touch 裝置::"
+msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:24
 msgid "Connect with the phablet shell (``adb shell``) or directly on the phone Terminal app and type the following::"
-msgstr "連接平板 shell（\"adb shell\"）或直接在手機的終端應用程式上輸入以下內容::"
+msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:31
 msgid "Sources:"
-msgstr "資料來源："
+msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:33
 msgid "https://askubuntu.com/questions/616081/ubuntu-touch-add-contact-list-and-calendars/664834#664834"
 msgstr ""
-"https://askubuntu.com/questions/616081/"
-"ubuntu-touch-add-contact-list-and-calendars/664834#664834"
 
 #: ../../userguide/advanceduse/dav.rst:34
 msgid "https://gist.github.com/boTux/069b53d8e06bdb9b9c97"
-msgstr "https://gist.github.com/boTux/069b53d8e06bdb9b9c97"
+msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:35
 msgid "https://gist.github.com/tcarrondo"
-msgstr "https://gist.github.com/tcarrondo"
+msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:36
 msgid "https://gist.github.com/bastos77"
-msgstr "https://gist.github.com/bastos77"
+msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:37
 msgid "https://askubuntu.com/questions/601910/ssh-ubuntu-touch"
-msgstr "https://askubuntu.com/questions/601910/ssh-ubuntu-touch"
+msgstr ""
 
 #: ../../userguide/advanceduse/index.rst:2
 msgid "Advanced use"
-msgstr "進階用途"
+msgstr ""
 
 #: ../../userguide/advanceduse/index.rst:4
 msgid "This section of the documentation details advanced tasks that power users may want to perform on their Ubuntu Touch device."
-msgstr "本文檔的這一部分詳細介紹了進階用戶可能希望在其 Ubuntu Touch 裝置上執行的進階任務。"
+msgstr ""
 
 #: ../../userguide/advanceduse/index.rst:7
 msgid "Some of these guides involve making your system image writable, which may break OTA updates. The guides may also reduce the overall security of your Ubuntu Touch device. Please consider these ramifications before hacking on your device too much!"
 msgstr ""
-"其中一些指南涉及使您的系統映像複寫，這可能會破壞 OTA 更新。 這些指南還可能降低 Ubuntu Touch 裝置的整體安全性。 "
-"在破壞您的裝置之前，請考慮這些後果！"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:2
 msgid "Reverse tethering"
-msgstr "反向數據連線"
+msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:4
 msgid "Some users may not have an available wifi connection for their phone nor a data subscription from their mobile provider. This short tutorial will help you to connect your Ubuntu Touch to your computer to access internet."
 msgstr ""
-"某些用戶可能沒有可用的手機 wifi 連接，也沒有來自其行動裝置電信業者的數據訂閱。 這個簡短的教程將幫助您將 Ubuntu Touch "
-"連接到您的電腦以存取網路。"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:7
 msgid "Prerequisite: Phone is connected to the computer with usb and developer mode enabled."
-msgstr "先決條件：電話已連接到電腦，並啟用了 USB 和開發人員模式。"
+msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:10
 msgid "Steps"
-msgstr "步驟"
+msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:12
 msgid "On phone: ``android-gadget-service enable rndis``"
-msgstr "在手機上: \"android-gadget-service 啟用 rndis\""
+msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:14
 msgid "On computer: get your rndis ip address e.g:``hostname -I``"
-msgstr "在電腦上: 得到你的rndis ip地址，例如：\"hostname -I\""
+msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:16
 msgid "On phone:"
-msgstr "在手機上："
+msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:18
 msgid "add gateway: ``sudo route add default gw YOUR_COMPUTER_RNDIS_IP``"
-msgstr "添加閘道: \"sudo route add default gw YOUR_COMPUTER_RNDIS_IP\""
+msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:20
 msgid "add nameservers: ``echo \"nameserver 8.8.8.8\" | sudo tee /etc/resolv.conf``"
-msgstr "添加名稱伺服器: \"[echo \"nameserver 8.8.8.8\" | sudo tee /etc/resolv.conf]\""
+msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:22
 msgid "refresh dns table: ``resolvconf -u``"
-msgstr "重新整理 dns 表: \"resolvconf -u\""
+msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:24
 msgid "On computer:"
-msgstr "在電腦上："
+msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:26
 msgid "enable ip forwarding: ``echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward``"
-msgstr "啟用ip轉發： \"echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward\""
+msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:28
 msgid "apply NAT: ``sudo iptables -t nat -A POSTROUTING -s 10.0.0.0/8 -o eth0 -j MASQUERADE``"
 msgstr ""
-"套用 NAT: \"sudo iptables -t nat -A POSTROUTING -s 10.0.0.0/8 -o eth0 -j "
-"MASQUERADE\""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:32
 #: ../../userguide/advanceduse/screencasting.rst:72
 #: ../../userguide/advanceduse/ssh.rst:53
 msgid "References"
-msgstr "參考"
+msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:34
 msgid "askubuntu: https://askubuntu.com/questions/655321/ubuntu-touch-reverse-tethering-and-click-apps-updates"
 msgstr ""
-"askubuntu: https://askubuntu.com/questions/655321/ubuntu-touch-reverse-"
-"tethering-and-click-apps-updates"
 
 #: ../../userguide/advanceduse/screencasting.rst:2
 msgid "Screen Casting your UT device to your computer"
-msgstr "將您的 Ubuntu Touch 裝置螢幕投射到電腦上"
+msgstr ""
 
 #: ../../userguide/advanceduse/screencasting.rst:5
 msgid "Ubuntu Touch comes with a command line utility called ``mirscreencast`` which dumps screen frames to a file. The idea here is to stream UT display to a listening computer over the network or directly trough adb so that we can either watch it live or record it to a file."
 msgstr ""
-"Ubuntu Touch 附帶了一個名為 \"mirscreencast\" 的命令行實用程式，它將螢幕幀轉儲到文件中。 這裡的想法是透過網絡將 "
-"Ubuntu Touch 顯示流程式傳輸到電腦螢幕或直接透過 adb 流程方式傳輸，以便我們可以實時觀看或將其記錄到文件中。"
 
 #: ../../userguide/advanceduse/screencasting.rst:9
 msgid "Using adb"
-msgstr "使用 adb"
+msgstr ""
 
 #: ../../userguide/advanceduse/screencasting.rst:11
 msgid "You can catch output directly from ``adb exec-out`` command and forward it to mplayer::"
-msgstr "您可以直接從 \"adb exec-out\" 命令擷取輸出並將其轉發到 mplayer ::"
+msgstr ""
 
 #: ../../userguide/advanceduse/screencasting.rst:15
 msgid "NB: ``timeout`` here is used in order to kill process properly on device ( here 120 seconds ). Otherwise process still continuing even if killed on computer. You can reduce or increase frame per second with``--cap-interval`` (1 = 60fps, 2=30fps, ...)  and size of frames ``384 640`` means width=384 height=640"
 msgstr ""
-"注意：這裡使用 \"timeout\" 是為了在裝置上正常殺死進程（這裡是120秒）。 否則即使在電腦上被殺，進程仍然繼續。 您可以使用 \"--cap-"
-"interval\" 減少或增加每秒幀數 (1 = 60fps, 2=30fps, ...)  幀的大小 \"384 640\" 表示 寬度= 384 "
-"高度= 640"
 
 #: ../../userguide/advanceduse/screencasting.rst:19
 msgid "Via network"
-msgstr "透過網絡"
+msgstr ""
 
 #: ../../userguide/advanceduse/screencasting.rst:22
 msgid "On receiver"
-msgstr "在偵測器上"
+msgstr ""
 
 #: ../../userguide/advanceduse/screencasting.rst:24
 msgid "For real time casting:"
-msgstr "對於時間投射："
+msgstr ""
 
 #: ../../userguide/advanceduse/screencasting.rst:27
 msgid "Prepare your computer to listen to a tcp port(here 1234) and forward raw stream to a video player (here mplayer) with a frame size of 384x640::"
-msgstr "準備計算機以接收 tcp 端口（此處為 1234）並將原始流程轉發到影片播放器（此處為 mplayer），幀大小為 384x640 ::"
+msgstr ""
 
 #: ../../userguide/advanceduse/screencasting.rst:31
 msgid "For stream recording:"
-msgstr "對於流動記錄："
+msgstr ""
 
 #: ../../userguide/advanceduse/screencasting.rst:33
 msgid "Prepare your computer to listen to a tcp port(here 1234), ungzip and forward raw stream to a video encoder (here mencoder)::"
-msgstr "準備電腦以接收 tcp 端口（此處為 1234），ungzip 並將原始流程轉發到影片編碼器（此處為 mencoder）::"
+msgstr ""
 
 #: ../../userguide/advanceduse/screencasting.rst:38
 msgid "On device"
-msgstr "在裝置上"
+msgstr ""
 
 #: ../../userguide/advanceduse/screencasting.rst:40
 msgid "Forward and gzip stream with 60fps (--cap-interval 1) and frame size of 384x640 to computer 10.42.0.209 on port 1234 ::"
-msgstr "前向和 gzip 流程，60fps（--cap-間隔 1），幀大小為 384x640 到端口 1234 上的電腦 10.42.0.209 ::"
+msgstr ""
 
 #: ../../userguide/advanceduse/screencasting.rst:46
 msgid "Example script"
-msgstr "示例腳本"
+msgstr ""
 
 #: ../../userguide/advanceduse/screencasting.rst:48
 msgid "This script allows you to screen cast remote UT device to your local PC (must have ssh access to UT and mplayer installed on PC), run it on your computer::"
 msgstr ""
-"此腳本允許您將遠程 Ubuntu Touch 裝置螢幕轉換為本地電腦（必須具有對電腦上安裝的 Ubuntu Touch 和 mplayer 的 SSH "
-"存取權限），在您的電腦上進行::"
 
 #: ../../userguide/advanceduse/screencasting.rst:69
 msgid "You can download it here: :download:`files/mircast.sh`"
-msgstr "你可以在這裡下載::下載： \"files/mircast.sh\""
+msgstr ""
 
 #: ../../userguide/advanceduse/screencasting.rst:74
 msgid "initial source: https://wiki.ubuntu.com/Touch/ScreenRecording"
-msgstr "初始源碼: https://wiki.ubuntu.com/Touch/ScreenRecording"
+msgstr ""
 
 #: ../../userguide/advanceduse/screencasting.rst:75
 msgid "demo: https://www.youtube.com/watch?v=HYm4RUwwo5Q"
-msgstr "demo: https://www.youtube.com/watch?v=HYm4RUwwo5Q"
+msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:2
 msgid "Shell access via ssh"
-msgstr "透過 SSH 存取 Shell"
+msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:4
 msgid "You can use ssh to access a shell from your PC. This is useful for debugging or more advanced shell usage."
-msgstr "您可以使用 SSH 從電腦存取 shell。 這對於偵錯或更進階的 shell 使用非常有用。"
+msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:6
 msgid "You need a ssh key pair for this. Logging in via password is disabled by default."
-msgstr "你需要一個 SSH 密鑰。在預設情況下禁用登入密碼。"
+msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:9
 msgid "Create your public key"
-msgstr "建立您的公用金鑰"
+msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:11
 msgid "If not already created, create your public key, default choices should be fine for LAN, you can leave empty password if you don't want to deal with it each time::"
-msgstr "如果尚未建立，請建立您的公用金鑰，預設選擇應該適用於 LAN，您如果您不想每次處理它，可以留下空白密碼::"
+msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:16
 msgid "Copy the public key to your device"
-msgstr "將公用金鑰複製到您的裝置"
+msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:18
 msgid "You need then to transfer your public key to your device. There are multiple ways to do this. For example:"
-msgstr "然後您需要將公用金鑰傳輸到您的裝置。 有多種方法可以做到這一點。例如："
+msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:20
 msgid "Connect the ubports device and the PC with a USB cable. Then copy the file using your filemanager."
-msgstr "使用 USB 傳輸線連接 UBports 裝置和電腦。 然後使用檔案管理員來複製文件。"
+msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:21
 msgid "Or transfer the key via the internet by mailing it to yourself, or uploading it to your own cloud storage, or webserver, etc."
-msgstr "或者通過將密鑰郵寄給自己，或者將密鑰上傳到您自己的雲端硬碟或網路伺服器等，通過網路傳輸密鑰。"
+msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:22
 msgid "You can also connect via :doc:`adb <adb>` and use the following command to copy it::"
-msgstr "你也可以透過 :doc: \"adb <adb>\" 連接並使用以下命令來複製它::"
+msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:27
 msgid "Configure your device"
-msgstr "配置您的裝置"
+msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:29
 msgid "Now you have the public key on the UBports device. Let's assume it's stored as ``/home/phablet/id_rsa.pub``. Use the terminal app or and adb connection to perform the following steps on your phone. ::"
 msgstr ""
-"現在您在 UBports 裝置上擁有公鑰。 我們假設它存儲為 \"/home/phablet/id_rsa.pub\"。 使用終端應用程式或 adb "
-"連接在手機上執行以下步驟。::"
 
 #: ../../userguide/advanceduse/ssh.rst:38
 msgid "Now start the ssh server::"
-msgstr "現在啟動 SSH 伺服器::"
+msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:44
 msgid "Connect"
-msgstr "連接"
+msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:46
 msgid "Now everything is set up and you can use ``ssh`` ::"
-msgstr "現在一切都已設置完畢，您可以使用 \"ssh\" ::"
+msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:50
 msgid "Of course you can now also use ``scp`` or ``sshfs`` to transfer files."
-msgstr "當然，您現在也可以使用 \"scp\" 或 \"sshfs\" 來傳輸文件。"
+msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:55
 msgid "`askubuntu.com: How can I access my Ubuntu phone over ssh? <https://askubuntu.com/questions/348714/how-can-i-access-my-ubuntu-phone-over-ssh/599041#599041>`_"
 msgstr ""
-"\"askubuntu.com: 如何透過 SSH 存取我的 Ubuntu 手機？ <https://askubuntu.com/questions/"
-"348714/how-can-i-access-my-ubuntu-phone-over-ssh/599041#599041>\"_"
 
 #: ../../userguide/advanceduse/ssh.rst:56
 msgid "`gurucubano: BQ Aquaris E 4.5 Ubuntu phone: How to get SSH access to the ubuntu-phone via Wifi <https://gurucubano.gitbooks.io/bq-aquaris-e-4-5-ubuntu-phone/content/en/chapter1.html>`_"
 msgstr ""
-"\"gurucubano: BQ Aquaris E 4.5 Ubuntu Ubuntu手機：如何透過 Wifi 獲得對 ubuntu-phone 的 "
-"SSH 存取 <https://gurucubano.gitbooks.io/bq-aquaris-e-4-5-ubuntu-phone/content/"
-"en/chapter1.html>\"_"
 
 #: ../../userguide/advanceduse/switchchannel.rst:2
 msgid "Switch release channels"
-msgstr "切換釋放通道"
+msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:2
 msgid "Run Android applications"
-msgstr "執行 Android 應用程序式"
+msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:4
 msgid "`Anbox <https://anbox.io>`_ is a minimal Android container and compatibility layer that allows you to run Android applications on GNU/Linux operating systems."
 msgstr ""
-"\"Anbox <https://anbox.io>\"_ 是一個最小的 Android 容器和兼容層，允許您在 GNU / Linux 操作系統上運行 "
-"Android 應用程式。"
 
 #: ../../userguide/dailyuse/anbox.rst:7
 msgid "Anbox is in early development"
-msgstr "Anbox 正處於早期開發階段"
+msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:8
 msgid "When \"host\" is used in this document, it refers to another device which you can connect your Ubuntu Touch device to. Your host device must have ``adb`` and ``fastboot`` installed."
 msgstr ""
-"在本文檔中使用 \"主機\" 時，它指的是您可以將 Ubuntu Touch 裝置連接到的另一台設備。 您的主機設備必須安裝 \"adb\" 和 \""
-"fastboot\"。"
 
 #: ../../userguide/dailyuse/anbox.rst:11
 msgid "Supported devices"
-msgstr "支援的裝置"
+msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:13
 msgid "Make sure your device is supported:"
-msgstr "確保您的裝置受到支援："
+msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:15
 msgid "Meizu Pro 5 (codename: ``turbo``, name of the boot partition: ``bootimg``)"
 msgstr ""
-"Meizu Pro 5 Nexus 5 (codename (代碼名稱): \"turbo\"，name of the boot partition "
-"(啟動分區名稱): \"bootimg\")"
 
 #: ../../userguide/dailyuse/anbox.rst:16
 msgid "Fairphone 2 (codename: ``FP2``, name of the boot partition: ``boot``)"
 msgstr ""
-"Fairphone 2 Nexus 5 (codename (代碼名稱): \"FP2\"，name of the boot partition "
-"(啟動分區名稱): \"boot\")"
 
 #: ../../userguide/dailyuse/anbox.rst:17
 msgid "Oneplus one (codename: ``bacon``, name of the boot partition: ``boot``)"
 msgstr ""
-"Oneplus one Nexus 5 (codename (代碼名稱): \"bacon\"，name of the boot partition "
-"(啟動分區名稱): \"boot\")"
 
 #: ../../userguide/dailyuse/anbox.rst:18
 msgid "Nexus 5 (codename: ``hammerhead``, name of the boot partition: ``boot``)"
 msgstr ""
-"Nexus 5 (codename (代碼名稱): \"hammerhead\"，name of the boot partition (啟動分區名稱):"
-" \"boot\")"
 
 #: ../../userguide/dailyuse/anbox.rst:19
 msgid "BQ M10 HD (codename: ``cooler``, name of the boot partition: ``boot``)"
 msgstr ""
-"BQ M10 HD (codename (代碼名稱): \"cooler\"，name of the boot partition (啟動分區名稱): "
-"\"boot\")"
 
 #: ../../userguide/dailyuse/anbox.rst:20
 msgid "BQ M10 FHD (codename: ``frieza``, name of the boot partition: ``boot``)"
 msgstr ""
-"BQ M10 FHD (codename (代碼名稱): \"frieza\"，name of the boot partition (啟動分區名稱): "
-"\"boot\")"
 
 #: ../../userguide/dailyuse/anbox.rst:22
 msgid "You will need the device codename and the name of your boot partition for the installation."
-msgstr "您將需要裝置代號和安裝的啟動分區的名稱。"
+msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:25
 msgid "How to install"
-msgstr "如何安裝"
+msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:28
 msgid "Because this feature is in such an early stage of development, the installation is only recommended for experienced users."
-msgstr "由於此功能處於開發的早期階段，因此僅建議有經驗的用戶進行安裝。"
+msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:30
 msgid "Make sure your supported device runs on 16.04 (anbox doesn't work on 15.04)"
-msgstr "確保您支援的裝置在 16.04 上執行（anbox 在 15.04 上無法使用）"
+msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:31
 msgid "Open a terminal on your host and set some device specific variables by running ``export CODENAME=\"turbo\" && export PARTITIONNAME=\"bootimg\"``, but replace the part between the quotes respectively with the codename and name of the boot partition for your device. See the above list."
 msgstr ""
-"在主機上打開一個終端並執行 \"[export CODENAME=\"turbo\" && export PARTITIONNAME=\""
-"bootimg\"]\"來設置一些特定於裝置的變量，但是分別用引號分區的代號和名稱替換引號之間的部分。 您的裝置，請見上面的清單。"
 
 #: ../../userguide/dailyuse/anbox.rst:32
 msgid "Activate developer mode on your device."
-msgstr "在您的裝置上啟動開發者模式。"
+msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:33
 msgid "Connect the device to your host and run the following commands from your host (same terminal that you ran the ``export`` command in)::"
-msgstr "將裝置連接到主機並從主機執行以下命令（與您在中執行 \"export\"  命令的終端相同）::"
+msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:43
 msgid "Wait for the device to reboot, then run from your host::"
-msgstr "等待裝置重啟，然後從主機中執行::"
+msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:52
 #: ../../userguide/dailyuse/anbox.rst:66
 #: ../../userguide/dailyuse/anbox.rst:87
 msgid "Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the new Android apps to show up."
-msgstr "完成！ 您可能需要重新整理應用程式範圍（從屏幕中心向下拉並釋放）才能顯示新的 Android 應用程式。"
+msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:55
 msgid "How to install new apks"
-msgstr "如何安裝新的 apks"
+msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:57
 msgid "Copy the apk to ``/home/phablet/Downloads``, then run the following from your host::"
-msgstr "將 apk 複製到 \"/home/phablet/Downloads\"，然後從你的主機執行以下指令::"
+msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:69
 msgid "Keep your apps up to date"
-msgstr "讓您的應用程式保持最新"
+msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:71
 msgid "To keep your apps running the lasted version you can make use of F-Droid or ApkTrack. If you like to install one of the above apps you can find them here:"
-msgstr "為了讓您的應用程式保持進行持續版本，您可以使用 F-Droid 或 ApkTrack。 如果您想安裝以上述應用程式之一，可以在此處找到它們："
+msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:73
 msgid "F-Droid: https://f-droid.org/"
-msgstr "F-Droid: https://f-droid.org/"
+msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:74
 msgid "ApkTrack: https://f-droid.org/packages/fr.kwiatkowski.ApkTrack/"
-msgstr "ApkTrack: https://f-droid.org/packages/fr.kwiatkowski.ApkTrack/"
+msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:77
 msgid "How to uninstall applications"
-msgstr "如何解除安裝應用程式"
+msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:79
 msgid "This is a example of the app-list installed apps on your device"
-msgstr "這是您裝置上已安裝應用程式列表的範例應用"
+msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:80
 msgid "To uninstall apps, run ``adb uninstall [APP_ID]`` from your Ubuntu Touch device::"
-msgstr "要解除安裝應用程式，請從 Ubuntu Touch 設備執行 \"adb uninstall [APP_ID]\"::"
+msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:90
 msgid "Troubleshooting"
-msgstr "故障排除"
+msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:92
 msgid "If installing ``anbox-ubuntu-touch`` or ``android-tools-adb`` on the device fails with an error about unsufficient space, try this::"
 msgstr ""
-"如果在裝置上安裝 \"anbox-ubuntu-touch\" 或 \"android-tools-adb\" "
-"失敗並顯示有關空間不足的錯誤，請嘗試以下操作::"
 
 #: ../../userguide/dailyuse/anbox.rst:103
 msgid "When you want to install an apk but get the error ``Invalid APK file`` that error could also mean \"file not found\""
-msgstr "當你想安裝 apk 但得到錯誤 \"無效的 APK 文件\" 時，該錯誤也可能意味著 \"找不到文件\""
+msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:105
 msgid "check that you typed the file name correctly"
-msgstr "檢查您是否正確輸入了文件名稱"
+msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:106
 msgid "if the apk does not reside in the current folder where you execute adb, you have to specify the full path, e.g. ``/home/phablet/Downloads/my-app.apk`` instead of just ``my-app.apk``"
 msgstr ""
-"如果 apk 不留在您目前執行 adb 的文件夾中，則必須指定完整路徑，例如: \"/home/phablet/Downloads/my-app."
-"apk\" 而不僅僅是 \"my-app.apk\""
 
 #: ../../userguide/dailyuse/anbox.rst:110
 msgid "Reporting bugs"
-msgstr "報告錯誤"
+msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:112
 msgid "Please :doc:`report any bugs </contribute/bugreporting>` you come across. Bugs with Ubuntu Touch 16.04 are reported in `the normal Ubuntu Touch tracker <https://github.com/ubports/ubuntu-touch/issues>`_ and issues with anbox are reported on `our downstream fork <https://github.com/ubports/anbox/issues>`_. Thank you!"
 msgstr ""
-"請 :doc: \"報告任何你遇到過的錯誤 </contribute/bugreporting>\"。 在\" Ubuntu Touch "
-"錯誤追踪器<https://github.com/ubports/ubuntu-touch/issues>\"_ 中報告 Ubuntu Touch "
-"16.04 的錯誤，並且在我們的 \"下游分支<https://github.com/ubports/anbox/issues>\"_ 中報告。 謝謝您！"
 
 #: ../../userguide/dailyuse/index.rst:2
 msgid "Daily use"
-msgstr "日常使用"
+msgstr ""
 
 #: ../../userguide/dailyuse/index.rst:4
 msgid "This section of the documentation details common tasks that users may want to perform while using their Ubuntu Touch device."
-msgstr "您可以添加其他選項，例如文檔的這一部分詳細說明了用戶在使用 Ubuntu Touch 裝置時可能要執行的常見指令。"
+msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:2
 msgid "Run desktop applications"
-msgstr "運行桌面應用程式"
+msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:4
 msgid "Libertine allows you to use standard desktop applications in Ubuntu Touch."
-msgstr "Libertine 允許您在 Ubuntu Touch 中使用標準桌面應用程式。"
+msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:6
 msgid "To display and launch applications you need the *Desktop Apps Scope* which is available in the `Open Store <https://open-store.io/app/libertine-scope.ubuntu>`_. To install applications you need to use the commandline as described below."
 msgstr ""
-"要顯示和啟動應用程式，您需要 *Open Apps Scope*，可在 \"Open Store <https://open-store.io/app/"
-"libertine-scope.ubuntu>\"_ 中找到。 要安裝應用程式，您需要使用指令，如以下所述。"
 
 #: ../../userguide/dailyuse/libertine.rst:9
 msgid "Manage containers"
-msgstr "管理容器"
+msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:12
 msgid "Create a container"
-msgstr "建立一個容器"
+msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:14
 msgid "The first step is to create a container where applications can be installed::"
-msgstr "第一步是建立一個可以安裝應用程式的容器::"
+msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:18
 msgid "You can add extra options such as:"
-msgstr "您可以添加額外的選項，例如："
+msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:20
 msgid "``-n name`` name is a more user friendly name of the container"
-msgstr "\"-n name\" name 是容器的一個用戶友好名稱"
+msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:21
 msgid "``-t type`` type can be either ``chroot`` or ``lxc``. Default is ``chroot`` and is compatible with every device. If the kernel of your device supports it then ``lxc`` is suggested."
 msgstr ""
-"\"-t type\" 類型可以是 \"chroot\" 或 \"lxc\"。 預設是 \"chroot\" 並且與每個設備兼容。 "
-"如果你的裝置的核心支援它，那麼建議使用 \"lxc\"。"
 
 #: ../../userguide/dailyuse/libertine.rst:23
 msgid "The creating process can take some time, due to the size of the container (some hundred of megabytes)."
-msgstr "由於容器的大小（幾百兆字節），建立過程可能需要一些時間。"
+msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:26
 msgid "The ``create`` command shown above cannot be run directly in the terminal app, due apparmor restrictions. You can run it from another device using either ``adb`` or ``ssh`` connection. Alternatively, you can run it from the terminal app using a loopback ssh connection running this command: ``ssh localhost``."
 msgstr ""
-"由於 apparmor 的限制，上面顯示的 \"create\" 命令不能直接在終端應機中執行。 您可以使用 \"adb\" 或 \"ssh\" "
-"連接來從其他裝置去執行。 或者您可以使用執行此命令的循環 SSH 連接從終端機執行它：\"ssh localhost\"。"
 
 #: ../../userguide/dailyuse/libertine.rst:29
 msgid "List containers"
-msgstr "列出容器"
+msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:31
 msgid "To list all containers created run::"
-msgstr "列出所有建立的容器執行 ::"
+msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:36
 msgid "Destroy a container"
-msgstr "銷毀容器"
+msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:42
 msgid "Manage applications"
-msgstr "管理應用程式"
+msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:44
 msgid "Once a container is set up, you can list the installed applications::"
-msgstr "設置容器後，您可以列出已安裝的應用程式::"
+msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:48
 msgid "Install a package::"
-msgstr "安裝套件::"
+msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:52
 msgid "Remove a package::"
-msgstr "移除套件::"
+msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:57
 msgid "If you have more than one container, then you can use the option ``-i CONTAINER-IDENTIFIER`` to specify for which container you want to perform an operation."
-msgstr "如果您有多個容器，則可以使用選項 \"-i CONTAINER-IDENTIFIER\" 來指定選擇要執行操作的容器。"
+msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:61
 msgid "Files"
-msgstr "文件"
+msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:63
 msgid "Libertine applications do have access to these folders:"
-msgstr "Libertine 應用程式可以存取這些資料夾："
+msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:65
 msgid "Documents"
-msgstr "文件"
+msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:66
 msgid "Music"
-msgstr "音樂"
+msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:67
 msgid "Pictures"
-msgstr "圖片"
+msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:68
 msgid "Downloads"
-msgstr "下載"
+msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:69
 msgid "Videos"
-msgstr "影片"
+msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:72
 msgid "Tips"
-msgstr "提示"
+msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:75
 msgid "Locations"
-msgstr "位置"
+msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:77
 msgid "For every container you create there will be two directories created:"
-msgstr "對於您創建的每個容器，將建立兩個目錄："
+msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:79
 msgid "A root directory ``~/.cache/libertine-container/CONTAINER-IDENTIFIER/rootfs/`` and"
-msgstr "根目錄 \"~/.cache/libertine-container/CONTAINER-IDENTIFIER/rootfs/\" 與"
+msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:80
 msgid "a user directory ``~/.local/share/libertine-container/user-data/CONTAINER-IDENTIFIER/``"
 msgstr ""
-"使用者目錄 \"~/.local/share/libertine-container/user-data/CONTAINER-IDENTIFIER/\""
 
 #: ../../userguide/dailyuse/libertine.rst:83
 msgid "Shell access"
-msgstr "Shell 存取"
+msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:85
 msgid "There are 2 options for executing commands inside the container."
-msgstr "在容器內執行命令中有2個選項。"
+msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:87
 msgid "**The first option** is based on ``libertine-container-manager exec``. It lets you run your commands as root. The drawback is that the container is not completely set up. So far we know that the `folders mentioned above (Documents, Music, ...) are not mounted <https://askubuntu.com/questions/831830/libertine-terminal-applications-how-to-access-to-the-real-home-dir#comment1273744_833984/>`_ i.e., the ``/home/phablet/`` directory is empty. Likewise the directory referenced in ``TMPDIR`` is not available what may lead to problems with software that tries to create temporary files or directories. You may use this option e.g., for installing packages."
 msgstr ""
-"**第一個選項** 基於 \"libertine-container-manager exec\"。 它允許您以 root 身份執行命令。 "
-"缺點是容器沒有完全安裝。 到目前為止，我們知道上面所提到的 \"資料夾（Documents，Music，...）並沒有立即安裝 "
-"<https://askubuntu.com/questions/831830/libertine-terminal-applications-how-"
-"to-access-to-the-real-home-dir#comment1273744_833984/>\"_，\"/ home / phablet "
-"/\" 目錄為空。 同樣 \"TMPDIR\" 中引用的目錄不可用，這可能導致嘗試建立臨時文件或目錄的軟體會出現問題。 "
-"您可以使用此選項，例如:用於安裝套件。"
 
 #: ../../userguide/dailyuse/libertine.rst:90
 #: ../../userguide/dailyuse/libertine.rst:104
 msgid "To execute a command you can use the following pattern::"
-msgstr "要執行命令，您可以使用以下方式::"
+msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:94
 #: ../../userguide/dailyuse/libertine.rst:108
 msgid "For example run::"
-msgstr "比如執行::"
+msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:98
 msgid "To get a shell into your container as ``root`` run::"
-msgstr "將 shell 作為 \"root\" 引導到容器中執行::"
+msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:102
 msgid "**The second option** is based on ``libertine-launch``. It will execute your commands as user phablet in a completely set up container. So you may use this option to modify your files using installed packages."
 msgstr ""
-"**第二個選項** 基於 \"libertine-launch\"。 它將在完全設置的容器中以用戶 phablet 的形式執行命令。 "
-"因此您可以使用此選項使用已安裝的軟體套件修改文件。"
 
 #: ../../userguide/dailyuse/libertine.rst:112
 msgid "To get a shell as user ``phablet`` run::"
-msgstr "以用戶 \"phablet\" 執行獲取 shell ::"
+msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:117
 msgid "When you launch bash in this way you will not get any specific feedback to confirm that you are now *inside* the container. You can check ``ls /`` to confirm for yourself that you are inside the container. The listing of ``ls /`` will be different inside and outside of the container."
 msgstr ""
-"當您以這種方式啟動 bash 時，您將無法獲得任何具體反應，來確認您現在 *在容器內*。 您可以使用 \"ls /\" 來檢查以確認您是否在容器內。\""
-"ls /\" 的列表在容器內外都會有所不同。"
 
 #: ../../userguide/dailyuse/libertine.rst:120
 msgid "Shortcuts"
-msgstr "快捷方式"
+msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:122
 msgid "If you want, you can add aliases for command line tools. Add lines like the following ones to your ``~/.bash_aliases``::"
-msgstr "如果有需要，可以為命令工具添加別名。 添加如下 \"~/.bash_aliases\"::"
+msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:128
 msgid "Background"
-msgstr "背景"
+msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:130
 msgid "A display server coordinates input and output of an operating system. Most Linux distributions today use the X server. Ubuntu Touch does not use X, but  a new display server called Mir. This means that standard X applications are not directly compatible with Ubuntu Touch. A compatibility layer called XMir resolves this. Libertine relies on XMir to display desktop applications."
 msgstr ""
-"顯示服務器協調作業系統的輸入和輸出。今天大多數 Linux 發行版都使用 Xorg 服務器。但是 Ubuntu Touch 不使用 Xorg，"
-"而是用一個名為 Mir 新的顯示服務器。 這意味著標準 Xorg 的應用程式與 Ubuntu Touch 不直接兼容。可是名為 XMir "
-"的兼容層卻解決了這個問題。 Libertine 依靠 XMir 來顯示桌面應用程式。"
 
 #: ../../userguide/dailyuse/libertine.rst:132
 msgid "Another challenge is that Ubuntu Touch system updates are released as OTA images. A consequence of this is that the root filesystem is read only. Libertine provides a container with a read-write filesystem to allow the installation of regular Linux desktop applications."
 msgstr ""
-"另一個挑戰是 Ubuntu Touch 系統更新作為 OTA 映像發佈。 這樣做的結果是根文件系統是只讀的。 Libertine "
-"為容器提供了一個讀寫文件系統，允許安裝常規的 Linux 桌面應用程式。"
 
 #: ../../userguide/install.rst:2
 msgid "Install Ubuntu Touch"
-msgstr "安裝 Ubuntu Touch"
+msgstr ""
 
 #: ../../userguide/install.rst:4
 msgid "Installing Ubuntu Touch is easy, and a lot of work has gone in to making the installation process less intimidating to less technical users. The UBports Installer is a nice graphical tool that you can use to install Ubuntu Touch on a `supported device <https://ubuntu-touch.io/devices>`_ from your Linux, Mac or Windows computer."
 msgstr ""
-"安裝 Ubuntu Touch 非常簡單，並且已經做了很多工作，使安裝過程對於技術較少的用戶來說不那麼令人生畏。 UBports "
-"安裝程式是一個很好的圖形工具，您可以使用它從 Linux，Mac 或 Windows 電腦上 \"受支援裝置 <https://ubuntu-touch."
-"io/devices>\"_ 來安裝 Ubuntu Touch。"
 
 #: ../../userguide/install.rst:7
 msgid "If you're switching your device over from Android, you will not be able to keep any data that is currently on the device. Create an external backup if you want to keep it."
-msgstr "如果您從 Android 切換裝置，則無法保留裝置上當前的任何數據。 如果要保留它，請先做好備份。"
+msgstr ""
 
 #: ../../userguide/install.rst:9
 msgid "Go to `the download page <https://github.com/ubports/ubports-installer/releases/latest>`_ and download the version of the installer for your operating system:"
 msgstr ""
-"到 \"下載頁面 <https://github.com/ubports/ubports-installer/releases/latest>\"_ "
-"並下載適用於您的作業系統的安裝程式版本："
 
 #: ../../userguide/install.rst:11
 msgid "Windows: ``ubports-installer-<version-number>.exe``"
-msgstr "Windows: \"ubports-installer-<version-number>.exe\""
+msgstr ""
 
 #: ../../userguide/install.rst:12
 msgid "macOS: ``ubports-installer-<version-number>.dmg``"
-msgstr "macOS: \"ubports-installer-<version-number>.dmg\""
+msgstr ""
 
 #: ../../userguide/install.rst:13
 msgid "Ubuntu or Debian: ``ubports-installer-<version-number>.deb``"
-msgstr "Ubuntu or Debian: \"ubports-installer-<version-number>.deb\""
+msgstr ""
 
 #: ../../userguide/install.rst:14
 msgid "Other Linux distributions: ``ubports-installer-<version-number>.snap`` or ``ubports-installer-<version-number>.AppImage``"
 msgstr ""
-"Other Linux distributions: \"ubports-installer-<version-number>.snap\" 或 \""
-"ubports-installer-<version-number>.AppImage\""
 
 #: ../../userguide/install.rst:16
 msgid "Start the installer and follow the on-screen instructions that will walk you through the installation process. That's it! Have fun exploring Ubuntu Touch!"
-msgstr "啟動安裝程式，然後按照螢幕上的說明來進行操作，指導您完成安裝過程。 就這樣！享受探索 Ubuntu Touch 的樂趣！"
+msgstr ""
 
 #: ../../userguide/install.rst:18
 msgid "If you're an experienced android developer and want to help us bring Ubuntu Touch to more devices, visit the :doc:`porting section </porting/introduction>`."
 msgstr ""
-"如果您是一位經驗豐富的 Android 開發人員，並希望幫助我們將 Ubuntu Touch 引入更多裝置，請參閱 :doc: \"porting "
-"section </porting/introduction>\"。"
 
 #: ../../userguide/install.rst:21
 msgid "Install on legacy Android devices"
-msgstr "安裝在舊版 Android 裝置上"
+msgstr ""
 
 #: ../../userguide/install.rst:23
 msgid "While the installation process is fairly simple on most devices, some legacy Bq and Meizu devices require special steps. This part of the guide does not apply to other devices."
-msgstr "雖然大多數裝置上的安裝過程相當簡單，但一些傳統的 Bq 和 Meizu 設備需要特殊的步驟。本指南的這一部分不適用於其他裝置。"
+msgstr ""
 
 #: ../../userguide/install.rst:27
 msgid "This is more or less uncharted territory. If your device's manufacturer does not want you to install an alternative operating system, there's not a lot we can do about it. The instructions below should only be followed by experienced users. While we appreciate that lots of people want to use our OS, flashing a device with OEM tools shouldn't be done without a bit of know-how and plenty of research."
 msgstr ""
-"這或多或少都是未知領域。如果您的裝置製造商不希望您安裝替代操作系統，那麼我們可以做很多事情。 只有經驗豐富的用戶才能遵循以下說明。 "
-"雖然我們很欣賞很多人想要使用我們的作業系統，但是如果沒有一點專業知識和大量的研究，就不應該使用 OEM 工具來刷入裝置。"
 
 #: ../../userguide/install.rst:29
 msgid "Meizu devices are pretty much stuck on Flyme. While the MX4 can be flashed successfully in some cases, the Pro5 is Exynos-based and has its own headaches."
-msgstr "Meizu 裝置幾乎停留在 Flyme 上。 雖然 MX4 在某些情況下可以成功刷入，但 Pro5 基於 Exynos 並且有其自身的麻煩。"
+msgstr ""
 
 #: ../../userguide/install.rst:33
 msgid "BE VERY CAREFUL! You are responsible for your own actions!"
-msgstr "要非常小心！您需要對自己的行為做負責！"
+msgstr ""
 
 #: ../../userguide/install.rst:35
 msgid "Disconnect all devices and non-essential peripherals from your PC. Charge your device on a wall-charger (not your PC) to at least 40 percent"
-msgstr "從電腦上斷開所有裝置和非必要外圍裝置的連接。 在充電器（而不是從電腦）上為裝置充電至少40％"
+msgstr ""
 
 #: ../../userguide/install.rst:36
 msgid "Download the Ubuntu Touch ROM for your device:"
-msgstr "下載適用於您裝置的 Ubuntu Touch ROM："
+msgstr ""
 
 #: ../../userguide/install.rst:38
 msgid "`Bq E4.5 <http://cdimage.ubports.com/ubports-installer/krillin/e45.zip>`_ (*krillin*)"
 msgstr ""
-"\"Bq E4.5 <http://cdimage.ubports.com/ubports-installer/krillin/e45.zip>\"_ "
-"(*krillin*)"
 
 #: ../../userguide/install.rst:39
 msgid "`Bq E5 HD <https://storage.googleapis.com/otas/2014/Smartphones/Aquaris_E5_HD/Ubuntu/VEGETA01A-S11A_BQ_L100EN_2017_170207.zip>`_ (*vegetahd*)"
 msgstr ""
-"\"Bq E5 HD <https://storage.googleapis.com/otas/2014/Smartphones/"
-"Aquaris_E5_HD/Ubuntu/VEGETA01A-S11A_BQ_L100EN_2017_170207.zip>\"_ "
-"(*vegetahd*)"
 
 #: ../../userguide/install.rst:40
 msgid "`Bq M10 HD <https://storage.googleapis.com/otas/2015/Tablets/Freezer/Ubuntu/OTA_13_FW_version/cooler-image-stable-6.zip>`_ (*cooler*)"
 msgstr ""
-"\"Bq M10 HD <https://storage.googleapis.com/otas/2015/Tablets/Freezer/Ubuntu/"
-"OTA_13_FW_version/cooler-image-stable-6.zip>\"_ (*cooler*)"
 
 #: ../../userguide/install.rst:41
 msgid "`Bq M10 FHD <https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/Ubuntu/OTA_15/frieza-image-stable-8.zip>`_ (*frieza*)"
 msgstr ""
-"\"Bq M10 FHD <https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/"
-"Ubuntu/OTA_15/frieza-image-stable-8.zip>\"_ (*frieza*)"
 
 #: ../../userguide/install.rst:42
 msgid "`Meizu MX4 <http://people.canonical.com/~alextu/tangxi/684.zip>`_ (*arale*)"
 msgstr ""
-"\"Meizu MX4 <http://people.canonical.com/~alextu/tangxi/684.zip>\"_ (*arale*)"
 
 #: ../../userguide/install.rst:44
 msgid "Download `SP flash tool <https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/Ubuntu/SP_Flash_Tool_exe_Linux_v5.1612.00.100.zip>`_ for Linux."
 msgstr ""
-"下載 \"適用於 Linux 的 SP 刷入工具 <https://storage.googleapis.com/otas/2015/Tablets/"
-"Freezer%20FHD/Ubuntu/SP_Flash_Tool_exe_Linux_v5.1612.00.100.zip>\"_。"
 
 #: ../../userguide/install.rst:46
 msgid "On Ubuntu 17.10, there are issues with flash_tool loading the shared library 'libpng12', so this can be used as a workaround:"
-msgstr "在 Ubuntu 17.10 上，flash_tool 載入共用庫 \"libpng12\" 存在一些問題，因此可以將作為解決方法："
+msgstr ""
 
 #: ../../userguide/install.rst:54
 msgid "You will also need to use `the latest version of the tool <https://spflashtool.com/download/SP_Flash_Tool_v5.1744_Linux.zip>`_."
 msgstr ""
-"您還需要使用 \"該工具的最新版本 <https://spflashtool.com/download/"
-"SP_Flash_Tool_v5.1744_Linux.zip>\"_。"
 
 #: ../../userguide/install.rst:56
 msgid "Extract the zip files"
-msgstr "解壓縮 zip 文件"
+msgstr ""
 
 #: ../../userguide/install.rst:57
 msgid "Start the tool with ``sudo``"
-msgstr "使用 \"sudo\" 來啟動工具"
+msgstr ""
 
 #: ../../userguide/install.rst:58
 msgid "Select the ``*Android_scatter.txt`` file from the archive you downloaded in the first step as the scatter-loading file"
-msgstr "從第一步下載的存檔中選擇 \"*Android_scatter.txt\" 文件作為分散載入文件"
+msgstr ""
 
 #: ../../userguide/install.rst:59
 msgid "Choose \"Firmware Upgrade\""
-msgstr "選擇 \"固件升級\""
+msgstr ""
 
 #: ../../userguide/install.rst:60
 msgid "Double-check you chose \"Firmware Upgrade\" and not \"Download\" or \"Format All\""
-msgstr "仔細檢查您選擇 \"固件升級\" 而不是 \"下載\" 或 \"全部格式化\""
+msgstr ""
 
 #: ../../userguide/install.rst:64
 msgid "If you select DOWNLOAD rather than FIRMWARE UPGRADE, you will end up with a useless brick rather than a fancy Ubuntu Touch device. Be sure to select FIRMWARE UPGRADE."
 msgstr ""
-"如果你選擇 DOWNLOAD (下載)而不是 FIRMWARE UPGRADE (固件升級)，你將會得到一個無用的磚頭而不是一個花哨的 Ubuntu "
-"Touch 設備。請務必選擇 FIRMWARE UPGRADE (固件升級)。"
 
 #: ../../userguide/install.rst:66
 msgid "Turn your device completely off, but do not connect it yet"
-msgstr "完全關閉裝置，但尚未連接"
+msgstr ""
 
 #: ../../userguide/install.rst:67
 msgid "Press the button labeled \"Download\""
-msgstr "按下標有 \"下載\" 的按鈕"
+msgstr ""
 
 #: ../../userguide/install.rst:68
 msgid "Perform a final sanity-check that you selected the \"Firmware Upgrade\" option, not \"Download\""
-msgstr "執行最終的完整性檢查，選擇 \"固件升級\" 選項，而不是 \"下載\""
+msgstr ""
 
 #: ../../userguide/install.rst:69
 msgid "Make sure your device is off and connect it to your PC. Don't use a USB 3.0 port, since that's known to cause communication issues with your device."
-msgstr "確保您的裝置已關閉並連接到您的電腦。 請勿使用 USB 3.0 端口，因為已確定會導致裝置出現通訊問題。"
+msgstr ""
 
 #: ../../userguide/install.rst:70
 msgid "`Magic <https://en.wikipedia.org/wiki/Clarke's_three_laws>`_ happens. Your device will boot into a super old version of Ubuntu Touch."
 msgstr ""
-"\" Magic <https://en.wikipedia.org/wiki/Clarke's_three_laws>\"_ 發生了。 "
-"您的裝置將啟動到超級舊版本的 Ubuntu Touch。"
 
 #: ../../userguide/install.rst:71
 msgid "Congratulations! Your device will now boot into a very old version of Ubuntu Touch. You can now use the UBports Installer to proceed."
-msgstr "恭喜！您的裝置現在將啟動到非常舊版本的 Ubuntu Touch。 您現在可以使用 UBports 安裝程式來繼續。"
+msgstr ""

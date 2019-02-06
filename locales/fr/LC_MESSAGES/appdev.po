@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2019-01-13 16:38+0000\n"
-"Last-Translator: Anne Onyme <anneonyme017@netcourrier.com>\n"
+"PO-Revision-Date: 2019-02-06 21:23+0000\n"
+"Last-Translator: Max Libre <libremax@protonmail.com>\n"
 "Language-Team: French <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/fr/>\n"
 "Language: fr\n"
@@ -112,14 +112,20 @@ msgid ""
 "``handler`` is passed in the same line as ContentHandler.Source. As we want "
 "to import an image from the app selected in the Content Hub."
 msgstr ""
+"``contentType``` est passé dans `Main.qml <https://gitlab.com/cibersheep/"
+"webapp-creator/blob/master/webapp-creator/app/Main.qml#L118>`_ comme "
+"ContentType.Pictures. Ainsi, nous ne verrons que les applications à partir "
+"desquelles nous ne pouvons importer que des images. ``handler`` est passé "
+"dans la même ligne que ContentHandler.Source. Comme nous voulons importer "
+"une image de l'application sélectionnée dans le Hub de Contenu."
 
 #: ../../appdev/guides/contenthub.rst:50
 msgid "Exporting"
-msgstr ""
+msgstr "Export"
 
 #: ../../appdev/guides/contenthub.rst:55
 msgid "Gelek in the OpenStore"
-msgstr ""
+msgstr "Gelek dans l'OpenStore"
 
 #: ../../appdev/guides/contenthub.rst:57
 msgid ""
@@ -127,12 +133,17 @@ msgid ""
 "our device or share with ourselves (in Telegram and then save them to our "
 "computer)."
 msgstr ""
+"Dans Gelek, nous allons terminer avec quelques parties sauvegardées que nous "
+"voulons enregistrer sur notre appareil ou partager avec nous-même (dans "
+"Telegram pour les enregistrer ensuite sur notre ordinateur)."
 
 #: ../../appdev/guides/contenthub.rst:61
 msgid ""
 "Tapping on the download icon we will get a Content Hub to *save* the game "
 "file (which is actually an export)."
 msgstr ""
+"L'appui sur l'icône de téléchargement ouvrira le centre de contenus pour "
+"*enregistrer* le fichier de jeu (qui est en réalité un export)."
 
 #: ../../appdev/guides/contenthub.rst:63
 msgid ""
@@ -140,6 +151,10 @@ msgid ""
 "we are sending a file of type ``All`` (`see the Install Page code <https://"
 "gitlab.com/cibersheep/gelek/blob/master/app/InstallPage.qml#L38>`_)."
 msgstr ""
+"Le fichier de jeu est un fichier de type ``glksave``. Nous allons dire au "
+"centre de contenus que nous envoyons un fichier de type ``All`` (Tout) (`"
+"voir le code de la page d'installation <https://gitlab.com/cibersheep/gelek/"
+"blob/master/app/InstallPage.qml#L38>`_)."
 
 #: ../../appdev/guides/contenthub.rst:76
 msgid ""
@@ -147,16 +162,22 @@ msgid ""
 "able to receive unmarked file types. ``handler`` is ``ContentHandler."
 "Destination``, so the app selected should store the saved game."
 msgstr ""
+"``contentType`` est ``ContentType.All``, nous verrons donc uniquement les "
+"applications qui sont capables de recevoir des types de fichiers non "
+"marqués. ``handler`` est ``ContentHandler.Destination``, l'application "
+"sélectionnée devrait donc stocker la partie enregistrée."
 
 #: ../../appdev/guides/contenthub.rst:78
 msgid ""
 "Tapping on the File Manager we will save the saved game in the folder we "
 "choose."
 msgstr ""
+"Nous enregistrerons la partie sauvegardée dans le dossier de notre choix en "
+"appuyant sur le gestionnaire de fichiers."
 
 #: ../../appdev/guides/contenthub.rst:81
 msgid "Sharing"
-msgstr ""
+msgstr "Partage"
 
 #: ../../appdev/guides/contenthub.rst:83
 msgid ""
@@ -171,24 +192,29 @@ msgid ""
 "The only difference between this and the previous code is that ``handler`` "
 "is ``ContentHandler.Share``"
 msgstr ""
+"La seule différence entre ce code et le code précédent est que ``handler`` "
+"est ``ContentHandler.Share``"
 
 #: ../../appdev/guides/contenthub.rst:99
 msgid "Wait a minute. Why the different apps?"
-msgstr ""
+msgstr "Attendez un instant : pourquoi des applications différentes ?"
 
 #: ../../appdev/guides/contenthub.rst:104
 msgid "Content Hub: Export vs Share"
-msgstr ""
+msgstr "Centre de contenus : exporter ou partager"
 
 #: ../../appdev/guides/contenthub.rst:106
 msgid ""
 "Each developer can decide the rules each app would follow in relation to the "
 "Content Hub. Why the OpenStore is shown as the destination of an export?"
 msgstr ""
+"Chaque développeur peut décider des règles que chaque application suivra en "
+"relation avec le Hub de Contenu. Pourquoi l'OpenStore est-il affiché comme "
+"destination d'une exportation ?"
 
 #: ../../appdev/guides/contenthub.rst:108
 msgid "Let’s check its manifest.json"
-msgstr ""
+msgstr "Vérifions son manifest.json"
 
 #: ../../appdev/guides/contenthub.rst:121
 msgid ""
@@ -657,9 +683,8 @@ msgid ""
 msgstr ""
 
 #: ../../appdev/index.rst:68
-#, fuzzy
 msgid "Documentation"
-msgstr "Introduction"
+msgstr "Documentation"
 
 #: ../../appdev/index.rst:70
 msgid "`QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__"
@@ -696,7 +721,7 @@ msgstr ""
 
 #: ../../appdev/index.rst:99
 msgid "Preinstalled apps"
-msgstr ""
+msgstr "Applications préinstallées"
 
 #: ../../appdev/index.rst:101
 msgid ""
