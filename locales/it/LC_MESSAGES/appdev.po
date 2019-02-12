@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2019-01-19 18:22+0000\n"
+"PO-Revision-Date: 2019-01-21 14:32+0000\n"
 "Last-Translator: Mike <miguel2000@livecom.it>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/it/>\n"
@@ -30,28 +30,26 @@ msgid "Content Hub Share Page"
 msgstr "Hub dei contenuti"
 
 #: ../../appdev/guides/contenthub.rst:11
-#, fuzzy
 msgid ""
 "On Ubuntu Touch the apps are confined. The way of sharing files between them "
 "is through the Content Hub, a part of the system that takes care of file "
 "import, export and sharing."
 msgstr ""
 "Su Ubuntu Touch le app sono confinate. Il modo di condividere fie tra loro è "
-"attraverso il Content Hub, una parte del sistema che si occupa di importare "
-"esportare e condividere file"
+"attraverso il Content Hub, una parte del sistema che si occupa di importare, "
+"esportare e condividere file."
 
 #: ../../appdev/guides/contenthub.rst:14
 msgid "Different ways of sharing the content"
 msgstr "Modi diversi di condividere il contenuto"
 
 #: ../../appdev/guides/contenthub.rst:16
-#, fuzzy
 msgid ""
 "As we can see in the `Content Hub documentation <https://api-docs.ubports."
 "com/sdk/apps/qml/Ubuntu.Content/ContentHandler.html#detailed-description>`_, "
 "there are several ways of handling the file to be shared:"
 msgstr ""
-"Come possiamo vedere nella `documentazionde de Content Hub <https://api-"
+"Come possiamo vedere nella `documentazionde del Content Hub <https://api-"
 "docs.ubports.com/sdk/apps/qml/Ubuntu.Content/ContentHandler.html#detailed-"
 "description>`_, ci sono vari modi di gestire il file da condividere:"
 
@@ -87,7 +85,7 @@ msgstr "Importazione"
 
 #: ../../appdev/guides/contenthub.rst:28
 msgid "Webapp Creator on the OpenStore"
-msgstr ""
+msgstr "Webapp Creator sull'OpenStore"
 
 #: ../../appdev/guides/contenthub.rst:30
 msgid ""
@@ -152,6 +150,7 @@ msgid ""
 "Tapping on the File Manager we will save the saved game in the folder we "
 "choose."
 msgstr ""
+"Cliccando sul File Manager salveremo il gioco nella cartella da noi scelta."
 
 #: ../../appdev/guides/contenthub.rst:81
 #, fuzzy
@@ -176,7 +175,7 @@ msgstr ""
 
 #: ../../appdev/guides/contenthub.rst:99
 msgid "Wait a minute. Why the different apps?"
-msgstr ""
+msgstr "Aspetta un attimo. Perche app differenti?"
 
 #: ../../appdev/guides/contenthub.rst:104
 #, fuzzy
@@ -202,20 +201,28 @@ msgid ""
 msgstr ""
 
 #: ../../appdev/guides/contenthub.rst:131
+#, fuzzy
 msgid ""
 "This means, the OpenStore will be the destination for *all* ``ContentTypes``."
 msgstr ""
+"Quest significa che l'OpenStore sarà la destinazione per *tutti* i "
+"``ContentTypes``."
 
 #: ../../appdev/guides/contenthub.rst:133
 msgid "What about uMatriks? Let’s see its ``content-hub.json``"
-msgstr ""
+msgstr "Approposito di uMatriks? Si veda il suo ``content-hub.json``."
 
 #: ../../appdev/guides/contenthub.rst:161
+#, fuzzy
 msgid ""
 "So, with this example, uMatriks will be able to be the destination, source "
 "and share app for all kinds of ``ContentType``. What about the other hooks "
 "in the ``manifest.json``? That is discussed in the next guide."
 msgstr ""
+"Quindi, con questo esempio, uMatriks potrà essere l' app di destinazione, "
+"sorgente e consivisione per tutti i tipi di ``ContentType``. Cosa "
+"approposito degli altri hooks nel ``manifest.json``? Questo sarà discusso "
+"nella prossima guida."
 
 #: ../../appdev/guides/cookbook.rst:2
 msgid "App development cookbook"
@@ -297,7 +304,7 @@ msgstr ""
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:2
 msgid "Importing from Content Hub and URLdispatcher"
-msgstr ""
+msgstr "Importare da Content Hub e  URLdispatcher"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:7
 msgid ""
@@ -305,6 +312,9 @@ msgid ""
 "In this guide we will see how ``URLdispatcher`` works and how to handle "
 "imported data from the Content Hub."
 msgstr ""
+"Nella guida precedente abbiamo visto un po come funziona Content Hub.  In "
+"questa guida vedremo come funziona ``URLdispatcher`` e come maneggiare dati "
+"importati da Content Hub."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:10
 msgid "Handle data from the Content Hub"
