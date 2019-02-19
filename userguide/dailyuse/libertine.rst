@@ -116,6 +116,24 @@ To get a shell as user ``phablet`` run::
 .. note::
     When you launch bash in this way you will not get any specific feedback to confirm that you are now *inside* the container. You can check ``ls /`` to confirm for yourself that you are inside the container. The listing of ``ls /`` will be different inside and outside of the container.
 
+Accessing SD card
+^^^^^^^^^^^^^^^^^
+
+In order to access your SD-card or any other part of the regular filesystem from inside your libertine container you must create a bind mount.
+
+In order to add a bind mount use::
+
+  libertine-container-manager configure -i CONTAINER-IDENTIFIER -b add -p /media/phablet/ID-OF-SD
+  
+You can also make deep links in case you only want parts of your SD-card available in the container. In this case just the entire path to the directory you want to bind mount::
+
+  libertine-container-manager configure -i CONTAINER-IDENTIFIER -b add -p /media/phablet/ID-OF-SD/directory/you/want
+  
+This will not allow the container access to any of the directories earlier in the path for anything other than accessing your mounted directory.
+    
+In order to use the SD-card as extra space for your container, make sure first to format it using ext4 or similar.
+There is a mis-feature in udisk2 that mounts SD-cards (showexec) that ensures only files ending in .bat, .exe or .com can be executed from the drive if it is (v)fat formatted. This has been changed in other distributions allowing any file to have execute priviliges, but not ubuntu. The reccomended workaround is to add a udev rule to control how to mount a card with a given id, but since the udev rules are on the read only port on touch, this is not possible.
+
 Shortcuts
 ^^^^^^^^^
 
