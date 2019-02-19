@@ -125,10 +125,10 @@ In order to add a bind mount use::
 
   libertine-container-manager configure -i CONTAINER-IDENTIFIER -b add -p /media/phablet/ID-OF-SD
   
-You can also make deep links in case you only want parts of your SD-card available in the container. In this case just the entire path to the directory you want to bind mount. 
+You can also make deep links in case you only want parts of your SD-card available in the container. In this case just the entire path to the directory you want to bind mount::
 
   libertine-container-manager configure -i CONTAINER-IDENTIFIER -b add -p /media/phablet/ID-OF-SD/directory/you/want
-    
+  
 This will not allow the container access to any of the directories earlier in the path for anything other than accessing your mounted directory.
     
 In order to use the SD-card as extra space for your container, make sure first to format it using ext4 or similar.
