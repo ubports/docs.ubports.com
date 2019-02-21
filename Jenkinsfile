@@ -1,5 +1,5 @@
 def install_dependencies = {
-    sh 'pip install -r requirements.txt'
+    sh 'pip install --user -r requirements.txt'
 }
 def build_docs = {
     sh 'pipenv run sphinx-build -Wab html . _build/html/'
