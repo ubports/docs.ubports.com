@@ -1,5 +1,5 @@
 def install_dependencies = {
-    sh 'pip install --no-cache-dir -r requirements.txt'
+    sh 'sudo pip install --no-cache-dir -r requirements.txt'
 }
 def build_docs = {
     sh 'pipenv run sphinx-build -Wab html . _build/html/'
