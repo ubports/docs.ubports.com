@@ -1,6 +1,8 @@
-def do_it = {
-    sh 'id' > out.txt
-    sh 'date' >> out.txt
+def install_dependencies = {
+    sh 'pip install -r requirements.txt'
+}
+def build_docs = {
+    sh 'pipenv run sphinx-build -Wab html . _build/html/'
 }
 pipeline {
     agent none
@@ -10,7 +12,10 @@ pipeline {
                 docker "python:3.7"
             }
             steps {
-                script {do_it()}
+                script {install_dependencies()}
+                script {build_docs()}
+                archiveArtifacts artifacts: 'docs/_build/html/', onlyIfSuccessful: true
+                deleteDir()
             }
         }
     }
