@@ -17,7 +17,7 @@ pipeline {
             steps {
                 script {install_dependencies()}
                 script {build_docs()}
-                archiveArtifacts artifacts: 'docs/_build/html/', onlyIfSuccessful: true
+                archiveArtifacts artifacts: '_build/html/', onlyIfSuccessful: true
                 deleteDir()
             }
         }
