@@ -9,8 +9,10 @@ pipeline {
     stages {
         stage("build"){
             agent {
-                docker "python:3.7"
-                args '--user 0:0'
+                docker {
+                    image "python:3.7"
+                    args '--user 0:0'
+                }
             }
             steps {
                 script {install_dependencies()}
