@@ -28,7 +28,7 @@ Gallery             `Gallery on OpenStore`_             `gallery-app on GitLab`_
 Music               `Music on OpenStore`_               `music-app on GitLab`_
 Notes               `Notes on OpenStore`_               `notes-app on GitLab`_
 OpenStore           `OpenStore... on OpenStore`_        `openstore-app on GitLab`_
-Terminal            `Terminal on OpenStore`_            `terminal-app on GitHub`_
+Terminal            `Terminal on OpenStore`_            `terminal-app on GitLab`_
 UBports Welcome     `UBports Welcome on OpenStore`_     `ubports-app on GitLab`_
 Weather             `Weather on OpenStore`_             `weather-app on GitLab`_
 ================    ==================================  ============================
@@ -74,7 +74,7 @@ Instructions for contributing to these applications can be found in their respec
 .. _OpenStore... on OpenStore: https://open-store.io/app/openstore.openstore-team
 .. _openstore-app on GitLab: https://gitlab.com/theopenstore/openstore-app
 .. _Terminal on OpenStore: https://open-store.io/app/com.ubuntu.terminal
-.. _terminal-app on GitHub: https://github.com/ubports/terminal-app
+.. _terminal-app on GitLab: https://gitlab.com/ubports/apps/terminal-app
 .. _UBports Welcome on OpenStore: https://open-store.io/app/com.ubuntu.ubports
 .. _ubports-app on GitLab: https://gitlab.com/ubports/apps/ubports-app
 .. _Weather on OpenStore: https://open-store.io/app/com.ubuntu.weather
