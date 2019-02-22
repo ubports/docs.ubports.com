@@ -5,7 +5,7 @@ def build_docs = {
     sh 'sphinx-build -Wab html . _build/html/'
 }
 def clean_up = {
-    sh 'rm -rf ./'
+    sh 'git clean -fdx'
 }
 pipeline {
     agent none
