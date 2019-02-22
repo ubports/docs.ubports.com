@@ -1,8 +1,8 @@
 def install_dependencies = {
-    sh 'pip install --no-cache-dir -r requirements.txt'
+    sh 'pip install --no-cache-dir --upgrade -r requirements.txt'
 }
 def build_docs = {
-    sh 'pipenv run sphinx-build -Wab html . _build/html/'
+    sh 'sphinx-build -Wab html . _build/html/'
 }
 pipeline {
     agent none
