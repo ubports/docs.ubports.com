@@ -4,6 +4,9 @@ def install_dependencies = {
 def build_docs = {
     sh 'python3 -m sphinx -Wab html . _build/html/'
 }
+def link_index = {
+    sh 'cp redir.html _build/html/..index.html'
+}
 pipeline {
     agent none
     stages {
@@ -17,6 +20,7 @@ pipeline {
                 withEnv(["HOME=${env.WORKSPACE}"]) {
                     script {install_dependencies()}
                     script {build_docs()}
+                    script {link_index()}
                     archiveArtifacts artifacts: '_build/html/', onlyIfSuccessful: true
                 }
             }
