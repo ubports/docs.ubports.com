@@ -25,7 +25,11 @@ pipeline {
                 script {build_docs()}
 		script {link_index()}
                 archiveArtifacts artifacts: '_build/html/', onlyIfSuccessful: true
-                script {clean_up()}
+            }
+            post {
+                always {
+                    script {clean_up()}
+                }
             }
         }
     }
