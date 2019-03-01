@@ -4,6 +4,12 @@ def install_dependencies = {
 def build_docs = {
     sh 'sphinx-build -Wab html . _build/html/'
 }
+def link_index = {
+    sh 'pwd'
+    sh 'ls'
+    sh 'ls _build/html/'
+    sh 'ls _build/html/index.html'
+}
 def clean_up = {
     sh 'git clean -fdx'
 }
@@ -20,6 +26,7 @@ pipeline {
             steps {
                 script {install_dependencies()}
                 script {build_docs()}
+		script {link_index()}
                 archiveArtifacts artifacts: '_build/html/', onlyIfSuccessful: true
                 script {clean_up()}
             }
