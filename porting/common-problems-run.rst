@@ -85,5 +85,17 @@ If you don't need apport's information and would rather have the programs crash 
     sudo stop apport
     sudo stop whoopsie
 
+Enable /var/log/syslog
+----------------------
+
+Normally the writing to the syslog is disabled. During porting it can be useful to enable this::
+
+    sudo touch /var/log/syslog
+    sudo chown syslog:syslog /var/log/syslog
+    sudo initctl stop rsyslog
+    sudo initctl start rsyslog
+
+Now rsyslogd will write to the file and you can use it as usual. For example ``less /var/log/syslog`` or ``tail -f /var/log/syslog``.
+
 .. _the halium docs for wi-fi: http://docs.halium.org/en/latest/porting/debug-build/wifi.html
 .. _paste.ubuntu.com: https://paste.ubuntu.com
