@@ -21,7 +21,11 @@ pipeline {
                 script {install_dependencies()}
                 script {build_docs()}
                 archiveArtifacts artifacts: '_build/html/', onlyIfSuccessful: true
-                script {clean_up()}
+            }
+            post {
+                always {
+                    script {clean_up()}
+                }
             }
         }
     }
