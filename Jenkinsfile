@@ -9,6 +9,7 @@ def link_index = {
     sh 'ls'
     sh 'ls _build/html/'
     sh 'ls _build/html/index.html'
+    sh 'ln -s _build/html/index.html _build/html/..index.html'
 }
 def clean_up = {
     sh 'git clean -fdx'
