@@ -5,11 +5,21 @@ def build_docs = {
     sh 'sphinx-build -Wab html . _build/html/'
 }
 def link_index = {
-    sh 'pwd'
-    sh 'ls'
-    sh 'ls _build/html/'
-    sh 'ls _build/html/index.html'
-    sh 'ln -s _build/html/index.html _build/html/..index.html'
+    sh 'echo "
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="refresh" content="0; url=index.html">
+        <script type="text/javascript">
+            window.location.href = "index.html"
+        </script>
+        <title>Page Redirection</title>
+    </head>
+    <body>
+        Redirecting to <a href='index.html'>index.html</a>.
+    </body>
+</html>" > _build/html/..index.html'
 }
 def clean_up = {
     sh 'git clean -fdx'
