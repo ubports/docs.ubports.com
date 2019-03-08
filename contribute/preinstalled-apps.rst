@@ -21,7 +21,7 @@ A full list of the Ubuntu Touch core apps follows.
 Application Name    Store page                          Code repository
 ================    ==================================  ============================
 Calculator          `Calculator on OpenStore`_          `calculator-app on GitLab`_
-Calendar            `Calendar on OpenStore`_            `calendar-app on GitHub`_
+Calendar            `Calendar on OpenStore`_            `calendar-app on GitLab`_
 Clock               `Clock on OpenStore`_               `clock-app on GitLab`_
 File Manager        `File Manager on OpenStore`_        `filemanager-app on GitLab`_
 Gallery             `Gallery on OpenStore`_             `gallery-app on GitLab`_
@@ -60,7 +60,7 @@ Instructions for contributing to these applications can be found in their respec
 .. _Calculator on OpenStore: https://open-store.io/app/com.ubuntu.calculator
 .. _calculator-app on GitLab: https://gitlab.com/ubports/apps/calculator-app
 .. _Calendar on OpenStore: https://open-store.io/app/com.ubuntu.calendar
-.. _calendar-app on GitHub: https://github.com/ubports/calendar-app
+.. _calendar-app on GitLab: https://gitlab.com/ubports/apps/calendar-app
 .. _Clock on OpenStore: https://open-store.io/app/com.ubuntu.clock
 .. _clock-app on GitLab: https://gitlab.com/ubports/apps/clock-app
 .. _File Manager on OpenStore: https://open-store.io/app/com.ubuntu.filemanager
