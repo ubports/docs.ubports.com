@@ -25,8 +25,8 @@ Getting set up
 Let's get started by installing some build dependencies::
 
     sudo dpkg --add-architecture i386 && sudo apt update
-    sudo apt install repo make schedtool gcc g++ g++-multilib zlib1g-dev:i386 \
-         zip libxml2-utils bc python-launchpadlib fastboot adb
+    sudo apt install schedtool gcc g++ g++-multilib zlib1g-dev:i386 \
+         zip libxml2-utils bc python-launchpadlib phablet-tools
 
 Create a directory for your ``ubp-5.1`` source::
 
@@ -54,7 +54,7 @@ First, bring in the default Android build environment::
 
     source build/envsetup.sh
 
-Run ``lunch`` and pick the appropriate combo for your device. ``ubp-5.1`` builds are built with the ``userdebug`` variant::
+Run ``lunch`` and pick the appropriate combo for your device. The name of the combination should start with ``cm_``, followed by the device name and ending with ``-userdebug``::
 
     lunch
 
