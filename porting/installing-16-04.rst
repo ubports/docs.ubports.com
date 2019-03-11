@@ -25,13 +25,9 @@ Next we'll need to download the rootfs (root filesystem) that's appropriate for 
 Install system.img and rootfs
 -------------------------------
 
-.. todo::
+Clone or download the `halium-install repository <https://gitlab.com/JBBgameich/halium-install>`_. This repository contains tools that can be used to install a Halium system image and distribution rootfs. We'll use the ``halium-install`` script to install Ubuntu Touch on your device::
 
-    Change the rootstock link to point to UBports once the actuallyfixit PR is merged.
-
-Download the halium-install-standalone script from `jbbgameich/halium-install's releases <https://github.com/JBBgameich/halium-install/releases/>`_ (`direct link to download <https://github.com/JBBgameich/halium-install/releases/download/continuous/halium-install-standalone.sh>`__). Boot your device into recovery and run the script as follows::
-
-    halium-install-standalone.sh -p ut path/to/rootfs.tar.gz path/to/system.img
+    path/to/halium-install -p ut path/to/rootfs.tar.gz path/to/system.img
 
 The script will copy and extract the files to their proper places, then allow you to set the phablet user's password.
 
