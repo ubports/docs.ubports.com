@@ -1,10 +1,14 @@
-Porting information
-===================
+Halium porting
+==============
 
 .. Note::
     If you are looking for information on installing Ubuntu Touch on a supported device, or if you would like to check if your device is supported, please see `this page <https://devices.ubuntu-touch.io/>`_.
 
-This section will introduce you to some of the specifics of porting Ubuntu Touch to an Android device.
+This section will introduce you to some of the specifics of porting Ubuntu Touch to an Android device by building a Halium image.
+
+.. This paragraph is copied in ./ubp-5.1.rst. Please update it in both places.
+
+This process does not build Ubuntu Touch! A Halium image is installed along with a prebuilt Ubuntu Touch filesystem to create a running Ubuntu Touch system. If you already have an Ubuntu Touch device and would like to modify the software on it, you will be better served by :doc:`../systemdev/index`. If you would like to modify the Android compatibility image for the Nexus 5, Oneplus One, or Fairphone 2, :doc:`ubp-5.1` is appropriate for you.
 
 Before you begin, you'll want to head over to `the Halium porting guide <http://docs.halium.org/en/latest/porting/first-steps.html>`_ and get your ``systemimage`` built without errors. Once you're at the point of installing a rootfs, you can come back here.
 
