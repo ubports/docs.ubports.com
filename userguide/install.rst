@@ -16,12 +16,12 @@ Go to `the download page <https://github.com/ubports/ubports-installer/releases/
 Start the installer and follow the on-screen instructions that will walk you through the installation process. That's it! Have fun exploring Ubuntu Touch!
 
 .. note::
-    When using the snap installer sometimes device are not detected automaticaly. Then unplug  your device, open a terminal and enter the following command:
+
+    When using the snap installer sometimes device are not detected automaticaly. Then unplug your device, open a terminal and enter the following command:
 
     .. code-block:: text
 
         sudo snap connect ubports-installer:raw-usb
-    ..
 
     Then restart the installer, plug in your device and give it another try.
 
