@@ -17,7 +17,7 @@ Start the installer and follow the on-screen instructions that will walk you thr
 
 .. note::
 
-    When using the snap installer sometimes device are not detected automaticaly. Then unplug your device, open a terminal and enter the following command:
+    If your device is not detected automatically when using the snap installer, then unplug your device, open a terminal and enter the following command:
 
     .. code-block:: text
 
