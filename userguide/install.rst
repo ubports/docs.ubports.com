@@ -15,6 +15,17 @@ Go to `the download page <https://github.com/ubports/ubports-installer/releases/
 
 Start the installer and follow the on-screen instructions that will walk you through the installation process. That's it! Have fun exploring Ubuntu Touch!
 
+.. note::
+
+    If your device is not detected automatically when using the snap installer, then unplug your device, open a terminal and enter the following command:
+
+    .. code-block:: text
+
+        sudo snap connect ubports-installer:raw-usb
+
+    Then restart the installer, plug in your device and give it another try.
+
+
 If you're an experienced android developer and want to help us bring Ubuntu Touch to more devices, visit the :doc:`porting section </porting/introduction>`.
 
 Install on legacy Android devices
