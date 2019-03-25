@@ -54,6 +54,7 @@ Get started building your first app or learn about advanced concepts with our :r
     guides/pushnotifications
     guides/user-metrics
     guides/writeable-dirs
+    guides/dependencies
 
 Publishing
 ----------
