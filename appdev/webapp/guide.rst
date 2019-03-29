@@ -89,7 +89,7 @@ Tip: Multiple patterns are often necessary to achieve the intended containment b
 Adding a specific subdomain
 ---------------------------
 
-Many URLs have one or more subdomains. (For example, in the following, “developer” is the subdomain: developer.ubuntu.com.) You can allow access to a single subdomain (and all of its subpages) with a pattern like this:::
+Many URLs have one or more subdomains. (For example, in the following, "developer" is the subdomain: developer.ubuntu.com.) You can allow access to a single subdomain (and all of its subpages) with a pattern like this:::
 
   --webappUrlPatterns=http://developer.ubuntu.com/*
 
@@ -165,4 +165,3 @@ The webapp experience is contained and isolated from the browser data point of v
 Storage
 
 W3C allows apps to use local storage, and Oxide/Webapp-container supports the main standards here: LocalStorage, IndexedDB, WebSQL.
-
