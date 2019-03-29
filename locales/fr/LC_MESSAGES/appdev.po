@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2019-03-29 19:07+0000\n"
+"PO-Revision-Date: 2019-03-31 00:00+0000\n"
 "Last-Translator: Laurent Rouxel <lrouxel@free.fr>\n"
 "Language-Team: French <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/fr/>\n"
@@ -621,7 +621,7 @@ msgstr ""
 
 #: ../../appdev/index.rst:21
 msgid "Community"
-msgstr ""
+msgstr "La communauté"
 
 #: ../../appdev/index.rst:23
 msgid ""
@@ -633,7 +633,7 @@ msgstr ""
 
 #: ../../appdev/index.rst:26
 msgid "Tools"
-msgstr ""
+msgstr "Les outils"
 
 #: ../../appdev/index.rst:28
 msgid ""
@@ -655,27 +655,29 @@ msgstr ""
 "applications à partir de la ligne de commande avec Clickable."
 
 #: ../../appdev/index.rst:30
-#, fuzzy
 msgid ""
 "Alternatively there is the old `Ubuntu SDK IDE <https://docs.ubuntu.com/"
 "phone/en/platform/sdk>`__. Be aware that it is no longer supported by "
 "Canonical, and UBports has chosen to not support it either due to lack of "
 "manpower."
 msgstr ""
-"L' `Environnement de Développement Intégré Ubuntu SDK <https://docs.ubuntu."
-"com/phone/en/platform/sdk>`__ n'est plus supporté par Canonical et UBports "
-"n'a pas actuellement le temps et la main d'œuvre pour le rendre fonctionnel."
+"Il y a aussi l'ancien `Environnement de Développement Intégré Ubuntu SDK "
+"<https://docs.ubuntu.com/phone/en/platform/sdk>`__. Notez que cet IDE n'est "
+"plus supporté par Canonical et qu'UBports a choisi de ne pas fournir le "
+"support pour cet IDE à cause de manque de main-d’œuvre."
 
 #: ../../appdev/index.rst:32
 msgid ""
 "You can still install the SDK IDE in Ubuntu 16.04, but it is not guaranteed "
 "to work correctly. You can use the following commands to install::"
 msgstr ""
+"Vous pouvez toujours installer l'IDE SDK sur Ubuntu 16.04, mais il n'est pas "
+"garanti qu'il fonctionne correctement. Vous pouvez utiliser les commandes "
+"suivantes pour l’installer::"
 
 #: ../../appdev/index.rst:42
-#, fuzzy
 msgid "Guides"
-msgstr "Le guide"
+msgstr "Les guides"
 
 #: ../../appdev/index.rst:44
 msgid ""
@@ -685,7 +687,7 @@ msgstr ""
 
 #: ../../appdev/index.rst:57
 msgid "Publishing"
-msgstr ""
+msgstr "Publier"
 
 #: ../../appdev/index.rst:59
 msgid ""
@@ -718,11 +720,11 @@ msgstr ""
 
 #: ../../appdev/index.rst:75
 msgid "More Documentation"
-msgstr ""
+msgstr "Plus de documentation"
 
 #: ../../appdev/index.rst:87
 msgid "Sample apps"
-msgstr ""
+msgstr "Exemples d'applications"
 
 #: ../../appdev/index.rst:89
 msgid ""
@@ -745,19 +747,21 @@ msgid "Native applications"
 msgstr "Applications natives"
 
 #: ../../appdev/platform/apparmor.rst:2
-#, fuzzy
 msgid "AppArmor Policy Groups"
-msgstr "Le fichier de règles du profil d'AppArmor"
+msgstr "Groupes de stratégie d'AppArmor"
 
 #: ../../appdev/platform/apparmor.rst:4
 msgid ""
 "This document contains a full list of Ubuntu Touch's available policy groups "
 "and a description of what they give your app permission to access."
 msgstr ""
+"Ce document contient une liste complète des groupes de stratégie disponibles "
+"dans Ubuntu Touch ainsi qu'une description du type de droits qu'ils donnent "
+"à votre application."
 
 #: ../../appdev/platform/apparmor.rst:6
 msgid "Each entry follows this format"
-msgstr ""
+msgstr "Chaque entrée est de ce format"
 
 #: ../../appdev/platform/apparmor.rst:21
 msgid ""
@@ -765,6 +769,10 @@ msgid ""
 "Apps containing policies with common usage are generally accepted "
 "immediately, while reserved usage policies will need to be manually reviewed."
 msgstr ""
+"L'utilisation des stratégies change la façon dont votre application sera "
+"acceptée par l'OpenStore. Les applications contenant des stratégies "
+"communément utilisées seront généralement acceptées immédiatement, alors que "
+"les stratégies plus spécifiques devront être vérifiées manuellement."
 
 #: ../../appdev/platform/apparmor.rst:24
 #, fuzzy
