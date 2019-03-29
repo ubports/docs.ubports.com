@@ -22,9 +22,7 @@ Every ``click`` application package must embed at least 3 files:
             "apparmor": "apparmor.json",
             "desktop": "app.desktop"
             }
-        },
-
-
+        }
     }
 
 AppArmor profile policy file
@@ -65,7 +63,7 @@ All Ubuntu apps and scopes are confined respecting AppArmor access control mecha
 Example ``apparmor.json`` file::
 
     {
-        "policy_version": 1.3,
+        "policy_version": 16.04,
         "policy_groups": [
             "networking",
             "webview",
