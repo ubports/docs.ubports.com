@@ -1,23 +1,22 @@
-Handle dependencies
-===================
+Handle dependencies in C++ with CMake
+=====================================
 
-If an app depends on a library that is not preinstalled in Ubuntu Touch, the app needs to ship it inside the click package. This guide shows how this can be done with Clickable.
+If an app depends on a library that is not pre-installed in Ubuntu Touch, the app needs to ship it inside the click package. This guide shows how this can be done with Clickable.
 
 Building
 --------
-Note that some dependencies do not need to be compiled, like a QML or python module.
-
-Often libraries are available pre-build. So you need to decide, whether you want your build setup to download the library source and compile it or just download the pre-build version. The following sections describe the options with its pros and cons.
+Often libraries are available pre-built. So you need to decide, whether you want your build setup to download the library source and compile it or download the pre-build version. The following sections describe the options with its pros and cons.
 
 Compilation
 ^^^^^^^^^^^
-Compiling a library may sound complicated. But usually it isn't. Compiling the library gives you controle over the result, which brings a lot of advantages. For instance, you may disable parts your app doesn't need and link the library statically, resulting in a much smaller package size.
+Compiling the library gives you control over the result, which brings a lot of advantages. For instance, you may disable components your app doesn't need and link the library statically, resulting in a much smaller package size.
 
 Put the libraries source code at ``libs/LIBNAME``, because this is where clickable will look for it by default. If the dependency source code is available as a git repository, it is a good idea to add it as a `git submodule <https://git-scm.com/book/de/v1/Git-Tools-Submodule>`_. Otherwise you might want to add a script to download the sources.
 
-Add a `libraries section <http://clickable.bhdouglass.com/en/latest/clickable-json.html#libraries>`_ to your clickable.json, just like this:
+Add a `libraries section <http://clickable.bhdouglass.com/en/latest/clickable-json.html#libraries>`_ to your clickable.json, like this:
 
 .. code-block:: JSON
+   :emphasize-lines: 4-8
 
     {
       "template": "cmake",
@@ -29,11 +28,14 @@ Add a `libraries section <http://clickable.bhdouglass.com/en/latest/clickable-js
       }
     }
 
-If the library does not contain a CMake configuration, you may use the `qmake` or `custom` template instead. If you choose `custom`, you need to add a `build` command. Note, that you should define a custom app build directory. Otherwise a `clickable clean` (which is part of the default `clickable` command) would delete the libraries build directory, too.
+If the library does not contain a CMake configuration, you may use the `qmake` or `custom` template instead. If you choose `custom`, you need to add a `build` command.
 
-Configure the compilation by adding ``build_args``, which may look like this:
+Note, that you should define a custom app build directory via the ``dir`` param as shown above. Otherwise a `clickable clean` (which is part of the default `clickable` command) would delete the library's build directory, too.
+
+Optionally, configure the compilation by adding ``build_args``, which may look like this:
 
 .. code-block:: JSON
+   :emphasize-lines: 7-12
 
     {
       "template": "cmake",
@@ -51,17 +53,18 @@ Configure the compilation by adding ``build_args``, which may look like this:
       }
     }
 
-Build arguments are usually project specific. Therefore study the libraries build instructions and also look for ``option`` settings in its ``CMakeLists.txt`` (if CMake is used). The default build directory is ``build/LIBNAME/ARCHITECTURE``. Therefore builds for different architectures can exist in parallel.
+Build arguments are usually project specific. Therefore, study the libraries build instructions and also look for ``option`` settings in its ``CMakeLists.txt`` (if CMake is used). The default build directory is ``build/LIBNAME/ARCHITECTURE``. Therefore builds for different architectures can exist in parallel.
 
 To actually build the library run ``clickable build-libs``. You may want to build it for the desktop, too, via ``clickable build-libs --arch amd64``. Don't forget to mention this step in your README!
 
-Pre-build
+Pre-built
 ^^^^^^^^^
-Note, that a pre-build library usually is only available as a shared object, that needs to be linked dynamically (no static linking). Furthermore, it may contain components that you don't need, resulting in a bloated app. It may even miss something, that you could achieve by compiling it yourself. Sometimes, a library is available in the Ubuntu Repositories, but is not installable for the architecture you need (likely ``armhf``).
+Note, that a pre-built library usually is only available as a shared object, that needs to be linked dynamically (no static linking). Furthermore, it may contain components that you don't need, resulting in a bloated app. It may even miss something, that you could achieve by compiling it yourself. Sometimes, a library is available in the Ubuntu Repositories, but is not installable for the architecture you need (likely ``armhf``).
 
-If the library is available in the Ubuntu Repositories (look out for dev-packages), you may simply add it to the dependencies list, like this:
+If the library is available in the Ubuntu Repositories, you can add it to the dependencies list, like this:
 
 .. code-block:: JSON
+   :emphasize-lines: 3-5
 
     {
       "template": "cmake",
@@ -70,11 +73,12 @@ If the library is available in the Ubuntu Repositories (look out for dev-package
       ]
     }
 
-Clickable will install the specified package for the target architecture inside the build container.
+Clickable will install the specified package automatically for the target architecture inside the build container.
 
-If the library is not in the Ubuntu Repositories, but in a PPA, you can simply add the PPA to the clickable.json, too. For example:
+If the library is not in the Ubuntu Repositories, but in a PPA, you can add the PPA to the clickable.json, too. For example:
 
 .. code-block:: JSON
+   :emphasize-lines: 3-5
 
     {
       "template": "cmake",
@@ -86,13 +90,13 @@ If the library is not in the Ubuntu Repositories, but in a PPA, you can simply a
       ]
     }
 
-Otherwise you may need to add a script to download the pre-build library.
+Otherwise you may need to add a script to download the pre-built library.
 
 Using
 -----
-Depending on the language, you may need to tell your build system, where to find the library. In case of a C++ library, you need at least to specify the include directory (where the compiler can find the headers) and you need to link the library itself against your app's binary (if it is not a pure header library).
+You may need to specify the include directory, where the compiler can find the headers, and you need to link the library itself against your app's binary (if it is not a pure header library).
 
-In case the library contains an appropriate CMake configuration file, you may use the `find_package <https://cmake.org/cmake/help/latest/command/find_package.html>`_ command. The additional lines on your CMakeLists.txt may then look like this:
+In case the library contains an appropriate CMake configuration file, you may use the `find_package <https://cmake.org/cmake/help/latest/command/find_package.html>`_ command. The additional lines on your CMakeLists.txt then may look like:
 
 .. code-block:: CMake
 
@@ -106,19 +110,17 @@ In case the library contains an appropriate CMake configuration file, you may us
     include_directories(${SOMELIBRARY_INCLUDE_DIRS})
     target_link_libraries(mytarget ${SOMELIBRARY_LIBS})
 
-The command ``dpkg-architecture -qDEB_HOST_MULTIARCH`` is used to query the target architecture, which is part of the library build directory path, if you compile the library with Clickable.
+The command ``dpkg-architecture -qDEB_HOST_MULTIARCH`` is used to query the target architecture, which is part of the library build directory path, if you compiled the library with Clickable.
 
 We define the variable ``SOMELIBRARY_DIR`` with the path to the libraries build directory, to help CMake find the configuration of the library named ``SOMELIBRARY``. You may not need to do this, if you installed the library from the Ubuntu Repositories.
 
-The ``find_package`` command the defines the path to the include directory (``SOMELIBRARY_INCLUDE_DIRS``) and the library's binary (``SOMELIBRARY_LIBS``). We use those with the ``include_directories`` and ``target_link_libraries`` commands.
+The ``find_package`` command defines the path to the include directory (``SOMELIBRARY_INCLUDE_DIRS``) and the library's binary (``SOMELIBRARY_LIBS``). We use those with the ``include_directories`` and ``target_link_libraries`` commands.
 
 Deploying
 ---------
 Note, if you link a library statically with your app, you do not need to ship the library explicitly, as it is already inside your app binary. To do so, you usually need to compile the library yourself.
 
-Find out, which components you need to ship. In case of Python or QML this might be a complete directory tree, containing modules. In case of a dynamically linked library (likely C++), this is probably a single ``*.so`` file.
-
-To get the file or directory into the click package, you need to add an ``install`` command to your build configuration. In a CMakeLists.txt it may look like:
+Find out, which components you need to ship. Usually this is one or more ``*.so`` (shared objects) files, linked dynamically. To get the files into the click package, you need to add an ``install`` command to your build configuration. Add the following lines to your CMakeLists.txt:
 
 .. code-block:: CMake
 
@@ -129,4 +131,4 @@ To get the file or directory into the click package, you need to add an ``instal
     )
     install(FILES /usr/lib/${ARCH_TRIPLET}/libSomething.so DESTINATION /lib/${ARCH_TRIPLET})
 
-This will copy the files into ``tmp`` inside the build directy. This is where Clickable puts all the files that go into the click package. The command ``dpkg-architecture -qDEB_HOST_MULTIARCH`` is used to query the target architecture, which is usually part of the file path.
+This will copy the files into the ``tmp`` folder inside the build directory. This is where Clickable puts all the files that go into the click package. Again, the command ``dpkg-architecture -qDEB_HOST_MULTIARCH`` is used to query the target architecture, which is usually part of the file path.
