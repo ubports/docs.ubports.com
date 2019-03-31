@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2019-02-06 21:23+0000\n"
-"Last-Translator: Max Libre <libremax@protonmail.com>\n"
+"PO-Revision-Date: 2019-03-31 00:00+0000\n"
+"Last-Translator: Laurent Rouxel <lrouxel@free.fr>\n"
 "Language-Team: French <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/fr/>\n"
 "Language: fr\n"
@@ -186,6 +186,10 @@ msgid ""
 "code <https://gitlab.com/cibersheep/webapp-creator/blob/master/webapp-"
 "creator/app/ImportPage.qml#L38>`_)."
 msgstr ""
+"De la même façon, l'appui sur l'icône de partage nous permettra de nous "
+"envoyer le jeux sauvegardé via Telegram (`voir le code source ImportPage de "
+"l'application Webapp-Creator <https://gitlab.com/cibersheep/webapp-creator/"
+"blob/master/webapp-creator/app/ImportPage.qml#L38>`_)."
 
 #: ../../appdev/guides/contenthub.rst:96
 msgid ""
@@ -222,15 +226,20 @@ msgid ""
 "relation to the ``\"content-hub\"`` should follow the rules defined in "
 "``openstore-contenthub.json``"
 msgstr ""
+"Le code qui précède précise que les hooks pour l'application nommée ``\""
+"openstore\"`` relativement au ``\"content-hub\"`` doivent suivre les règles "
+"définies dans ``openstore-contenthub.json``"
 
 #: ../../appdev/guides/contenthub.rst:131
 msgid ""
 "This means, the OpenStore will be the destination for *all* ``ContentTypes``."
 msgstr ""
+"Cela signifie, l'Openstore sera la destination de *tout* les "
+"``ContentTypes``."
 
 #: ../../appdev/guides/contenthub.rst:133
 msgid "What about uMatriks? Let’s see its ``content-hub.json``"
-msgstr ""
+msgstr "Qu'en est-il d'uMatriks? Regardons son ``content-hub.json``"
 
 #: ../../appdev/guides/contenthub.rst:161
 msgid ""
@@ -238,6 +247,10 @@ msgid ""
 "and share app for all kinds of ``ContentType``. What about the other hooks "
 "in the ``manifest.json``? That is discussed in the next guide."
 msgstr ""
+"Alors, avec cet exemple, uMatriks pourra devenir l'application de "
+"destination, source et de partage pour toute sorte de ``ContentType``. Qu'en "
+"est-il des autres hooks dans le ``manifest.json``? Cela est abordé dans le "
+"guide suivant."
 
 #: ../../appdev/guides/cookbook.rst:2
 msgid "App development cookbook"
@@ -283,14 +296,13 @@ msgstr ""
 "comme Ubuntu Touch."
 
 #: ../../appdev/guides/cookbook.rst:17
-#, fuzzy
 msgid ""
 "The resources listed here do not necessarily represent the officially "
 "endorsed way of developing applications for Ubuntu Touch, but are "
 "interesting experiments."
 msgstr ""
 "Les ressources répertoriées ici ne représentent pas nécessairement la "
-"manière officielle de développer des applications pour Ubuntu Touch, mais "
+"meilleure manière de développer des applications pour Ubuntu Touch, mais "
 "sont des expériences intéressantes."
 
 #: ../../appdev/guides/cookbook.rst:19
@@ -609,7 +621,7 @@ msgstr ""
 
 #: ../../appdev/index.rst:21
 msgid "Community"
-msgstr ""
+msgstr "La communauté"
 
 #: ../../appdev/index.rst:23
 msgid ""
@@ -621,10 +633,9 @@ msgstr ""
 
 #: ../../appdev/index.rst:26
 msgid "Tools"
-msgstr ""
+msgstr "Les outils"
 
 #: ../../appdev/index.rst:28
-#, fuzzy
 msgid ""
 "`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ is a meta-build "
 "system for Ubuntu Touch applications that allows you to compile, build, test "
@@ -639,32 +650,34 @@ msgstr ""
 "compiler, construire, tester et publier des paquets `Click` et fournit "
 "plusieurs modèles pour vous permettre de démarrer avec le développement "
 "d'applications sur Ubuntu Touch. C'est actuellement le moyen le plus simple "
-"et le plus pratique de créer des paquets Click pour Ubuntu Touch. Consulter "
-"le code source publié pour une application existante est également un bon "
-"moyen d'apprendre : `visitez l'Openstore <https://open-store.io>`_"
+"et le plus pratique de créer des paquets Click pour Ubuntu Touch. Vous "
+"pouvez utiliser l’éditeur de code ou l'IDE de votre choix et construire vos "
+"applications à partir de la ligne de commande avec Clickable."
 
 #: ../../appdev/index.rst:30
-#, fuzzy
 msgid ""
 "Alternatively there is the old `Ubuntu SDK IDE <https://docs.ubuntu.com/"
 "phone/en/platform/sdk>`__. Be aware that it is no longer supported by "
 "Canonical, and UBports has chosen to not support it either due to lack of "
 "manpower."
 msgstr ""
-"L' `Environnement de Développement Intégré Ubuntu SDK <https://docs.ubuntu."
-"com/phone/en/platform/sdk>`__ n'est plus supporté par Canonical et UBports "
-"n'a pas actuellement le temps et la main d'œuvre pour le rendre fonctionnel."
+"Il y a aussi l'ancien `Environnement de Développement Intégré Ubuntu SDK "
+"<https://docs.ubuntu.com/phone/en/platform/sdk>`__. Notez que cet IDE n'est "
+"plus supporté par Canonical et qu'UBports a choisi de ne pas fournir le "
+"support pour cet IDE à cause de manque de main-d’œuvre."
 
 #: ../../appdev/index.rst:32
 msgid ""
 "You can still install the SDK IDE in Ubuntu 16.04, but it is not guaranteed "
 "to work correctly. You can use the following commands to install::"
 msgstr ""
+"Vous pouvez toujours installer l'IDE SDK sur Ubuntu 16.04, mais il n'est pas "
+"garanti qu'il fonctionne correctement. Vous pouvez utiliser les commandes "
+"suivantes pour l’installer::"
 
 #: ../../appdev/index.rst:42
-#, fuzzy
 msgid "Guides"
-msgstr "Le guide"
+msgstr "Les guides"
 
 #: ../../appdev/index.rst:44
 msgid ""
@@ -674,7 +687,7 @@ msgstr ""
 
 #: ../../appdev/index.rst:57
 msgid "Publishing"
-msgstr ""
+msgstr "Publier"
 
 #: ../../appdev/index.rst:59
 msgid ""
@@ -707,11 +720,11 @@ msgstr ""
 
 #: ../../appdev/index.rst:75
 msgid "More Documentation"
-msgstr ""
+msgstr "Plus de documentation"
 
 #: ../../appdev/index.rst:87
 msgid "Sample apps"
-msgstr ""
+msgstr "Exemples d'applications"
 
 #: ../../appdev/index.rst:89
 msgid ""
@@ -734,19 +747,21 @@ msgid "Native applications"
 msgstr "Applications natives"
 
 #: ../../appdev/platform/apparmor.rst:2
-#, fuzzy
 msgid "AppArmor Policy Groups"
-msgstr "Le fichier de règles du profil d'AppArmor"
+msgstr "Groupes de stratégie d'AppArmor"
 
 #: ../../appdev/platform/apparmor.rst:4
 msgid ""
 "This document contains a full list of Ubuntu Touch's available policy groups "
 "and a description of what they give your app permission to access."
 msgstr ""
+"Ce document contient une liste complète des groupes de stratégie disponibles "
+"dans Ubuntu Touch ainsi qu'une description du type de droits qu'ils donnent "
+"à votre application."
 
 #: ../../appdev/platform/apparmor.rst:6
 msgid "Each entry follows this format"
-msgstr ""
+msgstr "Chaque entrée est de ce format"
 
 #: ../../appdev/platform/apparmor.rst:21
 msgid ""
@@ -754,6 +769,10 @@ msgid ""
 "Apps containing policies with common usage are generally accepted "
 "immediately, while reserved usage policies will need to be manually reviewed."
 msgstr ""
+"L'utilisation des stratégies change la façon dont votre application sera "
+"acceptée par l'OpenStore. Les applications contenant des stratégies "
+"communément utilisées seront généralement acceptées immédiatement, alors que "
+"les stratégies plus spécifiques devront être vérifiées manuellement."
 
 #: ../../appdev/platform/apparmor.rst:24
 #, fuzzy
