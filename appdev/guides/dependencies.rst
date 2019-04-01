@@ -5,7 +5,7 @@ If an app depends on a library that is not pre-installed in Ubuntu Touch, the ap
 
 Building
 --------
-Often libraries are available pre-built. So you need to decide, whether you want your build setup to download the library source and compile it or download the pre-build version. The following sections describe the options with its pros and cons.
+Often libraries are available pre-built. So you need to decide, whether you want your build setup to download the library source and compile it or download the pre-built version. The following sections describe the options with its pros and cons.
 
 Compilation
 ^^^^^^^^^^^
@@ -53,13 +53,15 @@ Optionally, configure the compilation by adding ``build_args``, which may look l
       }
     }
 
-Build arguments are usually project specific. Therefore, study the libraries build instructions and also look for ``option`` settings in its ``CMakeLists.txt`` (if CMake is used). The default build directory is ``build/LIBNAME/ARCHITECTURE``. Therefore builds for different architectures can exist in parallel.
+Build arguments are usually project specific. Therefore, study the library's build instructions and also look for ``option`` settings in its ``CMakeLists.txt`` (if CMake is used). The default build directory is ``build/LIBNAME/ARCHITECTURE``. Therefore builds for different architectures can exist in parallel.
 
 To actually build the library run ``clickable build-libs``. You may want to build it for the desktop, too, via ``clickable build-libs --arch amd64``. Don't forget to mention this step in your README!
 
+See how `Teleports clickable.json <https://gitlab.com/ubports/apps/teleports/blob/master/clickable.json#L14>`_ uses the libraries feature to build its dependency tdlib.
+
 Pre-built
 ^^^^^^^^^
-Note, that a pre-built library usually is only available as a shared object, that needs to be linked dynamically (no static linking). Furthermore, it may contain components that you don't need, resulting in a bloated app. It may even miss something, that you could achieve by compiling it yourself. Sometimes, a library is available in the Ubuntu Repositories, but is not installable for the architecture you need (likely ``armhf``).
+Note, that a pre-built library is usually only available as a shared object, that needs to be linked dynamically (no static linking). Furthermore, it may contain components that you don't need, resulting in a bloated app. It may even miss something, that you could achieve by compiling it yourself. Sometimes, a library is available in the Ubuntu Repositories, but is not installable for the architecture you need (likely ``armhf``). In this case you have to compile the library as described above.
 
 If the library is available in the Ubuntu Repositories, you can add it to the dependencies list, like this:
 
@@ -73,7 +75,7 @@ If the library is available in the Ubuntu Repositories, you can add it to the de
       ]
     }
 
-Clickable will install the specified package automatically for the target architecture inside the build container.
+Clickable will install the specified package automatically for the target architecture inside the build container. An example can be found in `Guitar Tools' clickable.json <https://github.com/t-mon/guitar-tools/blob/master/clickable.json#L4>`_.
 
 If the library is not in the Ubuntu Repositories, but in a PPA, you can add the PPA to the clickable.json, too. For example:
 
@@ -114,7 +116,7 @@ The command ``dpkg-architecture -qDEB_HOST_MULTIARCH`` is used to query the targ
 
 We define the variable ``SOMELIBRARY_DIR`` with the path to the libraries build directory, to help CMake find the configuration of the library named ``SOMELIBRARY``. You may not need to do this, if you installed the library from the Ubuntu Repositories.
 
-The ``find_package`` command defines the path to the include directory (``SOMELIBRARY_INCLUDE_DIRS``) and the library's binary (``SOMELIBRARY_LIBS``). We use those with the ``include_directories`` and ``target_link_libraries`` commands.
+The ``find_package`` command defines the path to the include directory as ``SOMELIBRARY_INCLUDE_DIRS`` and the library's binaries as ``SOMELIBRARY_LIBS``. We use those with the ``include_directories`` and ``target_link_libraries`` commands. See the `Camera Scanner ImageProcessing CMakeLists.txt <https://github.com/jonnius/camera-scanner/blob/master/plugins/ImageProcessing/CMakeLists.txt#L23>`_ for a real world example.
 
 Deploying
 ---------
