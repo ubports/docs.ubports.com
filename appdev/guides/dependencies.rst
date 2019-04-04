@@ -1,11 +1,11 @@
-Handle dependencies in C++ with CMake
-=====================================
+Handle C++ dependencies with Clickable
+======================================
 
 If an app depends on a library that is not pre-installed in Ubuntu Touch, the app needs to ship it inside the click package. This guide shows how this can be done with Clickable.
 
 Building
 --------
-Often libraries are available pre-built. So you need to decide, whether you want your build setup to download the library source and compile it or download the pre-built version. The following sections describe the options with its pros and cons.
+Often libraries are available pre-built, So you need to decide whether you want your build setup to download the library source and compile it or download the pre-built version. The following sections describe the options with its pros and cons.
 
 Compilation
 ^^^^^^^^^^^
@@ -30,7 +30,7 @@ Add a `libraries section <http://clickable.bhdouglass.com/en/latest/clickable-js
 
 If the library does not contain a CMake configuration, you may use the `qmake` or `custom` template instead. If you choose `custom`, you need to add a `build` command.
 
-Note, that you should define a custom app build directory via the ``dir`` param as shown above. Otherwise a `clickable clean` (which is part of the default `clickable` command) would delete the library's build directory, too.
+You should define a custom app build directory via the ``dir`` param as shown above. Otherwise a `clickable clean` (which is part of the default `clickable` command) would delete the library's build directory, too.
 
 Optionally, configure the compilation by adding ``build_args``, which may look like this:
 
@@ -61,7 +61,7 @@ See how `Teleports clickable.json <https://gitlab.com/ubports/apps/teleports/blo
 
 Pre-built
 ^^^^^^^^^
-Note, that a pre-built library is usually only available as a shared object, that needs to be linked dynamically (no static linking). Furthermore, it may contain components that you don't need, resulting in a bloated app. It may even miss something, that you could achieve by compiling it yourself. Sometimes, a library is available in the Ubuntu Repositories, but is not installable for the architecture you need (likely ``armhf``). In this case you have to compile the library as described above.
+A pre-built library is usually only available as a shared object, that needs to be linked dynamically. Furthermore, it may contain components that you don't need, resulting in a bloated app. It may even miss something, that you could achieve by compiling it yourself. Sometimes, a library is available in the Ubuntu Repositories, but is not installable for the architecture you need (likely ``armhf``). In this case you have to compile the library as described above.
 
 If the library is available in the Ubuntu Repositories, you can add it to the dependencies list, like this:
 
@@ -96,7 +96,7 @@ Otherwise you may need to add a script to download the pre-built library.
 
 Using
 -----
-You may need to specify the include directory, where the compiler can find the headers, and you need to link the library itself against your app's binary (if it is not a pure header library).
+First, you may need to specify the include directory where the compiler can find the headers. Second, you need to link the library itself against your app's binary, except it is a header library, where all the source code is located in header files.
 
 In case the library contains an appropriate CMake configuration file, you may use the `find_package <https://cmake.org/cmake/help/latest/command/find_package.html>`_ command. The additional lines on your CMakeLists.txt then may look like:
 
@@ -120,9 +120,9 @@ The ``find_package`` command defines the path to the include directory as ``SOME
 
 Deploying
 ---------
-Note, if you link a library statically with your app, you do not need to ship the library explicitly, as it is already inside your app binary. To do so, you usually need to compile the library yourself.
+If you link a library statically with your app, you do not need to ship the library explicitly, as it is already inside your app binary. To do so, you usually need to compile the library yourself.
 
-Find out, which components you need to ship. Usually this is one or more ``*.so`` (shared objects) files, linked dynamically. To get the files into the click package, you need to add an ``install`` command to your build configuration. Add the following lines to your CMakeLists.txt:
+Find out which components you need to ship. Usually this is one or more ``*.so`` (shared objects) files, linked dynamically. To get the files into the click package, you need to add an ``install`` command to your build configuration. Add the following lines to your CMakeLists.txt:
 
 .. code-block:: CMake
 
