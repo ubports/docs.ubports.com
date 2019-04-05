@@ -26,7 +26,7 @@ If you need help, you can join UBports' support channels on `telegram <https://t
 Connection lost during installation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Try a different USB cable and a different USB port on your computer. Cheap and old cables tend to loose connection during the installation.
+Try a different USB cable and a different USB port on your computer. Cheap and old cables tend to lose connection during the installation.
 
 Windows Defender prevents Installer from starting
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -49,7 +49,7 @@ Make sure the virtual machine is allowed to access the USB port.
 Windows ADB drivers
 """""""""""""""""""
 
-Install the `universal adb driver <http://adb.clockworkmod.com/>`__ and try again.
+Install the `universal adb driver <http://adb.clockworkmod.com/>`_ and reboot your computer.
 
 Fairphone 2 Vendor-ID
 """""""""""""""""""""
@@ -61,7 +61,7 @@ Missing udev-rules
 
 If the device not detected on Linux and packages other than snap, you might be missing **udev-rules**.
 
-1. See if cat ``/etc/udev/rules.d/51-android.rules`` exists and contains the rules below. If not, add them to the file and run
+1. See if ``/etc/udev/rules.d/51-android.rules`` exists and contains the rules below. If not, add them to the file and run
    ``sudo service udev restart`` or
    ``sudo udevadm control --reload-rules && udevadm trigger``.
 
