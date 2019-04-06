@@ -15,12 +15,12 @@ Every ``click`` application package must embed at least 3 files:
         "title": "App Title",
         "version": "0.1"
         "description": "Description of the app",
-        "framework": "ubuntu-sdk-15.04",
+        "framework": "ubuntu-sdk-16.04",
         "maintainer": "xxxx <xxx@xxxx>",
         "hooks": {
             "myapp": {
-            "apparmor": "apparmor.json",
-            "desktop": "app.desktop"
+                "apparmor": "apparmor.json",
+                "desktop": "app.desktop"
             }
         }
     }
