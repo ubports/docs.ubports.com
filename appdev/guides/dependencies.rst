@@ -94,7 +94,7 @@ If the library is not in the Ubuntu Repositories, but in a PPA, you can add the 
 
 Otherwise you may need to add a script to download the pre-built library.
 
-Using
+Usage
 -----
 First, you may need to specify the include directory where the compiler can find the headers. Second, you need to link the library itself against your app's binary, except it is a header library, where all the source code is located in header files.
 
@@ -118,9 +118,9 @@ We define the variable ``SOMELIBRARY_DIR`` with the path to the libraries build 
 
 The ``find_package`` command defines the path to the include directory as ``SOMELIBRARY_INCLUDE_DIRS`` and the library's binaries as ``SOMELIBRARY_LIBS``. We use those with the ``include_directories`` and ``target_link_libraries`` commands. See the `Camera Scanner ImageProcessing CMakeLists.txt <https://github.com/jonnius/camera-scanner/blob/master/plugins/ImageProcessing/CMakeLists.txt#L23>`_ for a real world example.
 
-Deploying
----------
-If you link a library statically with your app, you do not need to ship the library explicitly, as it is already inside your app binary. To do so, you usually need to compile the library yourself.
+Deployment
+----------
+If you link a library statically with your app, you do not need to ship the library explicitly, as it is already inside your app binary. To do so, you usually need to compile the library yourself. Otherwise, continue with this section.
 
 Find out which components you need to ship. Usually this is one or more ``*.so`` (shared objects) files, linked dynamically. To get the files into the click package, you need to add an ``install`` command to your build configuration. Add the following lines to your CMakeLists.txt:
 
