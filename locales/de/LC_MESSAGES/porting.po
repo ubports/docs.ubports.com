@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-11 15:02-0500\n"
+"POT-Creation-Date: 2018-08-28 14:00+0200\n"
 "PO-Revision-Date: 2018-02-19 19:37+0000\n"
 "Last-Translator: Jonatan Hatakeyama Zeidler <jonatan_zeidler@gmx.de>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs/"
@@ -619,7 +619,8 @@ msgid ""
 msgstr ""
 
 #: ../../porting/running-ut.rst:7
-msgid "Make / writeable"
+#, fuzzy
+msgid "Make / writable"
 msgstr "Erstellen / Schreibrechte"
 
 #: ../../porting/running-ut.rst:9
