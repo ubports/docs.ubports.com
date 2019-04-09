@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2019-02-06 21:23+0000\n"
-"Last-Translator: Florian Leeber <flori@bin.org.in>\n"
+"PO-Revision-Date: 2019-04-09 18:41+0000\n"
+"Last-Translator: Peter keck <peter.keck@t-online.de>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/de/>\n"
 "Language: de\n"
@@ -241,13 +241,12 @@ msgstr ""
 "Ubuntu Touch zu zeigen."
 
 #: ../../appdev/guides/cookbook.rst:17
-#, fuzzy
 msgid ""
 "The resources listed here do not necessarily represent the officially "
 "endorsed way of developing applications for Ubuntu Touch, but are "
 "interesting experiments."
 msgstr ""
-"Die aufgeführten Resourcen zeigen nicht unbedingt den offiziell anerkannten "
+"Die aufgeführten Ressourcen zeigen nicht unbedingt den offiziell anerkannten "
 "Weg um Anwendungen für Ubuntu Touch zu entwickeln, können aber für "
 "Experimentierfreudige interessant sein."
 
@@ -1268,7 +1267,7 @@ msgstr ""
 
 #: ../../appdev/platform/index.rst:4
 msgid "Platform"
-msgstr ""
+msgstr "Plattform"
 
 #: ../../appdev/platform/index.rst:7
 msgid "Content Hub"

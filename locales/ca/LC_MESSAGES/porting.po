@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-11 15:02-0500\n"
+"POT-Creation-Date: 2018-08-28 14:00+0200\n"
 "PO-Revision-Date: 2018-02-28 13:11+0000\n"
 "Last-Translator: Walter Garcia-Fontes <walter.garcia@upf.edu>\n"
 "Language-Team: Catalan <https://translate.ubports.com/projects/ubports-docs/"
@@ -617,7 +617,8 @@ msgid ""
 msgstr ""
 
 #: ../../porting/running-ut.rst:7
-msgid "Make / writeable"
+#, fuzzy
+msgid "Make / writable"
 msgstr "Fer/escrivible"
 
 #: ../../porting/running-ut.rst:9
