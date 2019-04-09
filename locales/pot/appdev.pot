@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017, The UBports project (Creative Commons BY-SA 4.0)
+# Copyright (C) 2019, The UBports project (Creative Commons BY-SA 4.0)
 # This file is distributed under the same license as the UBports package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: UBports 1.0\n"
+"Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 15:59-0600\n"
+"POT-Creation-Date: 2019-04-08 17:32-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -182,6 +182,126 @@ msgstr ""
 
 #: ../../appdev/guides/cookbook.rst:22
 msgid "`Geany on Ubuntu Touch device as text editor, source code editor, debugger and compiler for multiple languages <http://kriscode.blogspot.tw/2017/10/geany-on-ubuntu-touch-device-as-text.html>`__"
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:2
+msgid "Handle C++ dependencies with Clickable"
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:4
+msgid "If an app depends on a library that is not pre-installed in Ubuntu Touch, the app needs to ship it inside the click package. This guide shows how this can be done with Clickable."
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:7
+msgid "Building"
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:8
+msgid "Often libraries are available pre-built, So you need to decide whether you want your build setup to download the library source and compile it or download the pre-built version. The following sections describe the options with its pros and cons."
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:11
+msgid "Compilation"
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:12
+msgid "Compiling the library gives you control over the result, which brings a lot of advantages. For instance, you may disable components your app doesn't need and link the library statically, resulting in a much smaller package size."
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:14
+msgid "Put the libraries source code at ``libs/LIBNAME``, because this is where clickable will look for it by default. If the dependency source code is available as a git repository, it is a good idea to add it as a `git submodule <https://git-scm.com/book/de/v1/Git-Tools-Submodule>`_. Otherwise you might want to add a script to download the sources."
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:16
+msgid "Add a `libraries section <http://clickable.bhdouglass.com/en/latest/clickable-json.html#libraries>`_ to your clickable.json, like this:"
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:31
+msgid "If the library does not contain a CMake configuration, you may use the `qmake` or `custom` template instead. If you choose `custom`, you need to add a `build` command."
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:33
+msgid "You should define a custom app build directory via the ``dir`` param as shown above. Otherwise a `clickable clean` (which is part of the default `clickable` command) would delete the library's build directory, too."
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:35
+msgid "Optionally, configure the compilation by adding ``build_args``, which may look like this:"
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:56
+msgid "Build arguments are usually project specific. Therefore, study the library's build instructions and also look for ``option`` settings in its ``CMakeLists.txt`` (if CMake is used). The default build directory is ``build/LIBNAME/ARCHITECTURE``. Therefore builds for different architectures can exist in parallel."
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:58
+msgid "To actually build the library run ``clickable build-libs``. You may want to build it for the desktop, too, via ``clickable build-libs --arch amd64``. Don't forget to mention this step in your README!"
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:60
+msgid "See how `Teleports clickable.json <https://gitlab.com/ubports/apps/teleports/blob/master/clickable.json#L14>`_ uses the libraries feature to build its dependency tdlib."
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:63
+msgid "Pre-built"
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:64
+msgid "A pre-built library is usually only available as a shared object, that needs to be linked dynamically. Furthermore, it may contain components that you don't need, resulting in a bloated app. It may even miss something, that you could achieve by compiling it yourself. Sometimes, a library is available in the Ubuntu Repositories, but is not installable for the architecture you need (likely ``armhf``). In this case you have to compile the library as described above."
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:66
+msgid "If the library is available in the Ubuntu Repositories, you can add it to the dependencies list, like this:"
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:78
+msgid "Clickable will install the specified package automatically for the target architecture inside the build container. An example can be found in `Guitar Tools' clickable.json <https://github.com/t-mon/guitar-tools/blob/master/clickable.json#L4>`_."
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:80
+msgid "If the library is not in the Ubuntu Repositories, but in a PPA, you can add the PPA to the clickable.json, too. For example:"
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:95
+msgid "Otherwise you may need to add a script to download the pre-built library."
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:98
+msgid "Usage"
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:99
+msgid "First, you may need to specify the include directory where the compiler can find the headers. Second, you need to link the library itself against your app's binary, except it is a header library, where all the source code is located in header files."
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:101
+msgid "In case the library contains an appropriate CMake configuration file, you may use the `find_package <https://cmake.org/cmake/help/latest/command/find_package.html>`_ command. The additional lines on your CMakeLists.txt then may look like:"
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:115
+msgid "The command ``dpkg-architecture -qDEB_HOST_MULTIARCH`` is used to query the target architecture, which is part of the library build directory path, if you compiled the library with Clickable."
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:117
+msgid "We define the variable ``SOMELIBRARY_DIR`` with the path to the libraries build directory, to help CMake find the configuration of the library named ``SOMELIBRARY``. You may not need to do this, if you installed the library from the Ubuntu Repositories."
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:119
+msgid "The ``find_package`` command defines the path to the include directory as ``SOMELIBRARY_INCLUDE_DIRS`` and the library's binaries as ``SOMELIBRARY_LIBS``. We use those with the ``include_directories`` and ``target_link_libraries`` commands. See the `Camera Scanner ImageProcessing CMakeLists.txt <https://github.com/jonnius/camera-scanner/blob/master/plugins/ImageProcessing/CMakeLists.txt#L23>`_ for a real world example."
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:122
+msgid "Deployment"
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:123
+msgid "If you link a library statically with your app, you do not need to ship the library explicitly, as it is already inside your app binary. To do so, you usually need to compile the library yourself. Otherwise, continue with this section."
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:125
+msgid "Find out which components you need to ship. Usually this is one or more ``*.so`` (shared objects) files, linked dynamically. To get the files into the click package, you need to add an ``install`` command to your build configuration. Add the following lines to your CMakeLists.txt:"
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:136
+msgid "This will copy the files into the ``tmp`` folder inside the build directory. This is where Clickable puts all the files that go into the click package. Again, the command ``dpkg-architecture -qDEB_HOST_MULTIARCH`` is used to query the target architecture, which is usually part of the file path."
 msgstr ""
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:2
@@ -770,11 +890,11 @@ msgid "What are user metrics?"
 msgstr ""
 
 #: ../../appdev/guides/user-metrics.rst:7
-msgid "If you look on the lock screen, you will see a circle. Inside the circle is text. Look closer, and you’ll notice that the text contains data regarding the user’s activity. Double tap on the middle of the circle, and you will see more “metrics” about the user."
+msgid "If you look on the lock screen, you will see a circle. Inside the circle is text. Look closer, and you’ll notice that the text contains data regarding the user’s activity. Double tap on the middle of the circle, and you will see more \"metrics\" about the user."
 msgstr ""
 
 #: ../../appdev/guides/user-metrics.rst:11
-msgid "This shows “7 text messages sent today.” How did it know?"
+msgid "This shows \"7 text messages sent today.\" How did it know?"
 msgstr ""
 
 #: ../../appdev/guides/user-metrics.rst:15
@@ -806,7 +926,7 @@ msgid "Next, the specific Metric must be defined in the code as an object:"
 msgstr ""
 
 #: ../../appdev/guides/user-metrics.rst:44
-msgid "Now that the metric is created, we can update the “format” or “emptyFormat” when an event takes place by referencing the variables in the Metric object."
+msgid "Now that the metric is created, we can update the \"format\" or \"emptyFormat\" when an event takes place by referencing the variables in the Metric object."
 msgstr ""
 
 #: ../../appdev/guides/user-metrics.rst:54
@@ -850,7 +970,7 @@ msgid "How do user metrics work?"
 msgstr ""
 
 #: ../../appdev/guides/user-metrics.rst:75
-msgid "User metrics are made up of two “formats”"
+msgid "User metrics are made up of two \"formats\""
 msgstr ""
 
 #: ../../appdev/guides/user-metrics.rst:77
@@ -866,7 +986,7 @@ msgid "The value of ``emptyFormat`` is what displays on the lock screen when no 
 msgstr ""
 
 #: ../../appdev/guides/user-metrics.rst:83
-msgid "Applications make use of this system, but setting and updating the user metric “formats” by running a certain code whenever a certain event takes place. e.g. When you press send in Telegram, or when you receive a phone call. The application may store the data for manipulation, but generally the data is stored in the system (`/var/lib/usermetrics <https://github.com/ubports/libusermetrics/tree/xenial/doc/pages>`_)."
+msgid "Applications make use of this system, but setting and updating the user metric \"formats\" by running a certain code whenever a certain event takes place. e.g. When you press send in Telegram, or when you receive a phone call. The application may store the data for manipulation, but generally the data is stored in the system (`/var/lib/usermetrics <https://github.com/ubports/libusermetrics/tree/xenial/doc/pages>`_)."
 msgstr ""
 
 #: ../../appdev/guides/user-metrics.rst:87
@@ -874,11 +994,11 @@ msgid "Limitations and wonders"
 msgstr ""
 
 #: ../../appdev/guides/user-metrics.rst:89
-msgid "Based on how the “formats” are set up, it seems that it is difficult to maintain a running tally beyond one day. It also doesn’t seem to truly reset a counted variable. Instead it reverts to a default setting. This would not normally allow for long-term data interpretation without some kind of database logging."
+msgid "Based on how the \"formats\" are set up, it seems that it is difficult to maintain a running tally beyond one day. It also doesn’t seem to truly reset a counted variable. Instead it reverts to a default setting. This would not normally allow for long-term data interpretation without some kind of database logging."
 msgstr ""
 
 #: ../../appdev/guides/user-metrics.rst:91
-msgid "In the case of the `nCounter`_ app. I wanted to count the number of days, but since the metric “resets” each day, that presents a problem. I create a workaround that updates the metric every time the application is opened. Thus, the ``emptyFormat`` (default) tells the user to open the application. This, however, nearly defeats the purpose of the user metric entirely, other than having a neat stat reminder for the day."
+msgid "In the case of the `nCounter`_ app. I wanted to count the number of days, but since the metric \"resets\" each day, that presents a problem. I create a workaround that updates the metric every time the application is opened. Thus, the ``emptyFormat`` (default) tells the user to open the application. This, however, nearly defeats the purpose of the user metric entirely, other than having a neat stat reminder for the day."
 msgstr ""
 
 #: ../../appdev/guides/user-metrics.rst:93
@@ -1009,47 +1129,47 @@ msgstr ""
 msgid "Get started building your first app or learn about advanced concepts with our :ref:`Developer guides <devguides>`."
 msgstr ""
 
-#: ../../appdev/index.rst:59
+#: ../../appdev/index.rst:60
 msgid "Publishing"
 msgstr ""
 
-#: ../../appdev/index.rst:61
+#: ../../appdev/index.rst:62
 msgid "After you are done building your app, distribute it on the `OpenStore <https://open-store.io/>`__ with our :ref:`Publishing guides <publishing>`."
 msgstr ""
 
-#: ../../appdev/index.rst:70
+#: ../../appdev/index.rst:71
 msgid "Documentation"
 msgstr ""
 
-#: ../../appdev/index.rst:72
+#: ../../appdev/index.rst:73
 msgid "`QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:73
+#: ../../appdev/index.rst:74
 msgid "`Cordova HTML5 API <https://api-docs.ubports.com/sdk/apps/html5/index.html>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:74
+#: ../../appdev/index.rst:75
 msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:77
+#: ../../appdev/index.rst:78
 msgid "More Documentation"
 msgstr ""
 
-#: ../../appdev/index.rst:89
+#: ../../appdev/index.rst:90
 msgid "Sample apps"
 msgstr ""
 
-#: ../../appdev/index.rst:91
+#: ../../appdev/index.rst:92
 msgid "Learn more about app development by digging into our :ref:`Sample apps <sampleapps>`."
 msgstr ""
 
-#: ../../appdev/index.rst:101
+#: ../../appdev/index.rst:102
 msgid "Preinstalled apps"
 msgstr ""
 
-#: ../../appdev/index.rst:103
+#: ../../appdev/index.rst:104
 msgid "The :doc:`/contribute/preinstalled-apps` page has information on developing the apps which are included with Ubuntu Touch."
 msgstr ""
 
@@ -1431,7 +1551,7 @@ msgstr ""
 msgid "Every ``click`` application package must embed at least 3 files:"
 msgstr ""
 
-#: ../../appdev/platform/click.rst:28
+#: ../../appdev/platform/click.rst:26
 msgid "``manifest.json`` file"
 msgstr ""
 
@@ -1443,71 +1563,71 @@ msgstr ""
 msgid "Example ``manifest.json`` file::"
 msgstr ""
 
-#: ../../appdev/platform/click.rst:31
+#: ../../appdev/platform/click.rst:29
 msgid "AppArmor profile policy file"
 msgstr ""
 
-#: ../../appdev/platform/click.rst:31
+#: ../../appdev/platform/click.rst:29
 msgid "Contains which policy the app needs to work properly. See `Security and app isolation`_ below for more information on this file."
 msgstr ""
 
-#: ../../appdev/platform/click.rst:54
+#: ../../appdev/platform/click.rst:52
 msgid "``.desktop`` file"
 msgstr ""
 
-#: ../../appdev/platform/click.rst:34
+#: ../../appdev/platform/click.rst:32
 msgid "The launcher file will tell UT how to launch the app, which name and icon to display on the home screen, and some other properties."
 msgstr ""
 
-#: ../../appdev/platform/click.rst:36
+#: ../../appdev/platform/click.rst:34
 msgid "Example of ``app.desktop``::"
 msgstr ""
 
-#: ../../appdev/platform/click.rst:46
+#: ../../appdev/platform/click.rst:44
 msgid "Non exhaustive list of properties:"
 msgstr ""
 
-#: ../../appdev/platform/click.rst:48
+#: ../../appdev/platform/click.rst:46
 msgid "Name: Application title has shown in the dash"
 msgstr ""
 
-#: ../../appdev/platform/click.rst:49
+#: ../../appdev/platform/click.rst:47
 msgid "Exec: Path to the executable file"
 msgstr ""
 
-#: ../../appdev/platform/click.rst:50
+#: ../../appdev/platform/click.rst:48
 msgid "Icon: Path to the icon to display"
 msgstr ""
 
-#: ../../appdev/platform/click.rst:51
+#: ../../appdev/platform/click.rst:49
 msgid "Terminal: ``false`` if will not run in terminal window"
 msgstr ""
 
-#: ../../appdev/platform/click.rst:52
+#: ../../appdev/platform/click.rst:50
 msgid "Type: Specifies the type of the launcher file. The type can be Application, Link or Directory."
 msgstr ""
 
-#: ../../appdev/platform/click.rst:53
+#: ../../appdev/platform/click.rst:51
 msgid "X-Ubuntu-Touch: ``true`` to make the app visible"
 msgstr ""
 
-#: ../../appdev/platform/click.rst:54
+#: ../../appdev/platform/click.rst:52
 msgid "X-Ubuntu-XMir-Enable: ``true`` if your app is built for X"
 msgstr ""
 
-#: ../../appdev/platform/click.rst:61
+#: ../../appdev/platform/click.rst:59
 msgid "Security and app isolation"
 msgstr ""
 
-#: ../../appdev/platform/click.rst:63
+#: ../../appdev/platform/click.rst:61
 msgid "All Ubuntu apps and scopes are confined respecting AppArmor access control mechanism (see `Application Confinement <https://wiki.ubuntu.com/SecurityTeam/Specifications/ApplicationConfinement#App_confinement_with_AppArmor>`_) , meaning they only have access to their own resources and are isolated from other apps and parts of the system. The developer must declare which policy groups are needed for the app or scope to function properly with an apparmor ``.json`` file."
 msgstr ""
 
-#: ../../appdev/platform/click.rst:65
+#: ../../appdev/platform/click.rst:63
 msgid "Example ``apparmor.json`` file::"
 msgstr ""
 
-#: ../../appdev/platform/click.rst:77
+#: ../../appdev/platform/click.rst:75
 msgid "For a full list of available policy groups, see :doc:`apparmor`."
 msgstr ""
 
@@ -1701,7 +1821,7 @@ msgid "Adding a specific subdomain"
 msgstr ""
 
 #: ../../appdev/webapp/guide.rst:92
-msgid "Many URLs have one or more subdomains. (For example, in the following, “developer” is the subdomain: developer.ubuntu.com.) You can allow access to a single subdomain (and all of its subpages) with a pattern like this:::"
+msgid "Many URLs have one or more subdomains. (For example, in the following, \"developer\" is the subdomain: developer.ubuntu.com.) You can allow access to a single subdomain (and all of its subpages) with a pattern like this:::"
 msgstr ""
 
 #: ../../appdev/webapp/guide.rst:96

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017, The UBports project (Creative Commons BY-SA 4.0)
+# Copyright (C) 2019, The UBports project (Creative Commons BY-SA 4.0)
 # This file is distributed under the same license as the UBports package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: UBports 1.0\n"
+"Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:00-0600\n"
+"POT-Creation-Date: 2019-04-08 17:32-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -436,7 +436,7 @@ msgid "`Calculator on OpenStore`_"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:23
-msgid "`calculator-app on GitHub`_"
+msgid "`calculator-app on GitLab`_"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:24
@@ -448,7 +448,7 @@ msgid "`Calendar on OpenStore`_"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:24
-msgid "`calendar-app on GitHub`_"
+msgid "`calendar-app on GitLab`_"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:25
@@ -460,7 +460,7 @@ msgid "`Clock on OpenStore`_"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:25
-msgid "`clock-app on GitHub`_"
+msgid "`clock-app on GitLab`_"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:26
@@ -472,7 +472,7 @@ msgid "`File Manager on OpenStore`_"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:26
-msgid "`filemanager-app on GitHub`_"
+msgid "`filemanager-app on GitLab`_"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:27
@@ -484,7 +484,7 @@ msgid "`Gallery on OpenStore`_"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:27
-msgid "`gallery-app on GitHub`_"
+msgid "`gallery-app on GitLab`_"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:28
@@ -492,12 +492,11 @@ msgid "Music"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:28
-#: ../../contribute/preinstalled-apps.rst:33
-msgid "Not yet in OpenStore"
+msgid "`Music on OpenStore`_"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:28
-msgid "`music-app on GitHub`_"
+msgid "`music-app on GitLab`_"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:29
@@ -509,7 +508,7 @@ msgid "`Notes on OpenStore`_"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:29
-msgid "`notes-app on GitHub`_"
+msgid "`notes-app on GitLab`_"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:30
@@ -521,7 +520,7 @@ msgid "`OpenStore... on OpenStore`_"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:30
-msgid "`openstore-app on GitHub`_"
+msgid "`openstore-app on GitLab`_"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:31
@@ -533,7 +532,7 @@ msgid "`Terminal on OpenStore`_"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:31
-msgid "`terminal-app on GitHub`_"
+msgid "`terminal-app on GitLab`_"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:32
@@ -545,7 +544,7 @@ msgid "`UBports Welcome on OpenStore`_"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:32
-msgid "`ubports-app on GitHub`_"
+msgid "`ubports-app on GitLab`_"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:33
@@ -553,7 +552,11 @@ msgid "Weather"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:33
-msgid "`weather-app on GitHub`_"
+msgid "`Weather on OpenStore`_"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:33
+msgid "`weather-app on GitLab`_"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:37
@@ -561,7 +564,7 @@ msgid "Other preinstalled apps"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:39
-msgid "The following appplications are preinstalled in Ubuntu Touch but are not considered core apps. Most of the time these projects must be updated with the system because they use many system services which do not necessarily have a stable API."
+msgid "The following applications are preinstalled in Ubuntu Touch but are not considered core apps. Most of the time these projects must be updated with the system because they use many system services which do not necessarily have a stable API."
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:41
@@ -577,7 +580,7 @@ msgid "Contacts (`address-book-app on GitHub`_)"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:47
-msgid "Camera (`camera-app on GitHub`_)"
+msgid "Camera (`camera-app on GitLab`_)"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:48
@@ -681,7 +684,7 @@ msgid "For advanced users: Working directly on .po files with the editor of your
 msgstr ""
 
 #: ../../contribute/translations.rst:14
-msgid "We also have `Translation Forum <https://forums.ubports.com/category/39/translations>`_ to discuss translating Ubuntu Touch and its core apps."
+msgid "We also have a `Translation Forum <https://forums.ubports.com/category/39/translations>`_ to discuss translating Ubuntu Touch and its core apps."
 msgstr ""
 
 #: ../../contribute/translations.rst:18
