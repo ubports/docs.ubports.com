@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2019-03-18 15:04+0000\n"
-"Last-Translator: xiaxiaxiaxia <1534515084@qq.com>\n"
+"PO-Revision-Date: 2019-04-21 00:00+0000\n"
+"Last-Translator: 谭永乐 <tanyongle0633@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-about/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -269,7 +269,6 @@ msgid "Where are bugs tracked?"
 msgstr "Bug 会在哪里被跟踪？"
 
 #: ../../about/process/issue-tracking.rst:9
-#, fuzzy
 msgid ""
 "Since our quality assurance depends heavily on the community, we try to "
 "track issues where the user would expect them, instead of separated by "
@@ -278,10 +277,9 @@ msgid ""
 "tracker <https://github.com/ubports/ubuntu-touch>`__. An exception of this "
 "are click-apps that can be updated independently through the OpenStore."
 msgstr ""
-"由于我们的质量保证在很大程度上取决于社区，因此我们尝试跟踪用户期望的问题，而"
-"不是由存储库分离。 这意味着，几乎所有与系统镜像一起分发的组件的问题都会在"
-"`Ubuntu Touch tracker <https://github.com/ubports/ubuntu-touch>`__中进行跟"
-"踪。 一个例外是Click-APP可以通过OpenStore进行独立更新。"
+"由于我们的质量保证在很大程度上取决于社区，因此我们尝试跟踪用户期望的问题，而不是由存储库分离。 这意味着，几乎所有与系统镜像一起分发的组件的问题都会在 `"
+"Ubuntu Touch  跟踪器 <https://github.com/ubports/ubuntu-touch>`__。click-apps "
+"是一个例外，因为它们可以通过 OpenStore 来进行更新。"
 
 #: ../../about/process/issue-tracking.rst:17
 msgid ""
@@ -664,23 +662,23 @@ msgstr "文件命名规则"
 
 #: ../../about/process/ppa.rst:10
 msgid "Native packages"
-msgstr ""
+msgstr "原生包"
 
 #: ../../about/process/ppa.rst:12
 msgid ""
 "Native packages are repositories which contain a ``debian/`` directory "
 "**with** the source used to create the Debian source package (``.dsc``)."
-msgstr ""
+msgstr "原生包是一个包含 ``debian/`` 目录的存储库，其中 **包含** 用于创建 Debian 源码包的源代码 (``.dsc``)。"
 
 #: ../../about/process/ppa.rst:14
 msgid ""
 "The name of the Debian source package generated from the repository and the "
 "name of the git-repository should be the same."
-msgstr ""
+msgstr "从存储库生成的 Debian 源码包的名称和 Git 存储库的名称应该是相同的。"
 
 #: ../../about/process/ppa.rst:17
 msgid "Packaging repositories"
-msgstr ""
+msgstr "打包存储库"
 
 #: ../../about/process/ppa.rst:19
 msgid ""
@@ -689,6 +687,8 @@ msgid ""
 "contain instructions to tell ``debhelper`` how to get the source used to "
 "create the source package."
 msgstr ""
+"打包存储库包含一个 ``debian/`` 目录，其中 **不包含** 用于创建 Debian 源码包的源代码 (``.dsc``)。它们还包含说明 "
+"``debhelper`` 如何获取用于创建源码包的源代码。"
 
 #: ../../about/process/ppa.rst:21
 msgid ""
@@ -697,10 +697,12 @@ msgid ""
 "generates a source package called ``sandwich`` would be called ``sandwich-"
 "packaging``."
 msgstr ""
+"存储库应该具有它生成的源码包的名称，并在末尾附加 ``-packaging``。 例如：生成命名为 ``sandwich`` "
+"的源码包的打包存储库将会被称为 ``sandwich-packaging``。"
 
 #: ../../about/process/ppa.rst:24
 msgid "Creating new PPAs"
-msgstr ""
+msgstr "创建新的 PPA"
 
 #: ../../about/process/ppa.rst:26
 #, fuzzy
