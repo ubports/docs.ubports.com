@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2019-04-21 00:00+0000\n"
-"Last-Translator: 谭永乐 <tanyongle0633@gmail.com>\n"
+"PO-Revision-Date: 2019-04-24 20:42+0000\n"
+"Last-Translator: 不朽正义 <tanyongle0633@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-appdev/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.1.1\n"
+"X-Generator: Weblate 3.2.2\n"
 
 #: ../../appdev/guides/contenthub.rst:4
 msgid "The content hub - tips and tricks"
@@ -56,21 +56,21 @@ msgstr "``ContentHandler.Source``（选择的应用将成为导入文件的来�
 msgid ""
 "``ContentHandler.Destination`` (The app selected is going to be the "
 "destination of the file exported)"
-msgstr ""
+msgstr "``ContentHandler.Destination``（选择的应用将作为导出文件的目标）"
 
 #: ../../appdev/guides/contenthub.rst:20
 msgid ""
 "``ContentHandler.Share`` (The app selected is going to be the app from witch "
 "the file is going to be shared from)"
-msgstr ""
+msgstr "``ContentHandler.Share``（选择的应用将作为文件并将其分享）"
 
 #: ../../appdev/guides/contenthub.rst:23
 msgid "Importing"
-msgstr ""
+msgstr "导入"
 
 #: ../../appdev/guides/contenthub.rst:28
 msgid "Webapp Creator on the OpenStore"
-msgstr ""
+msgstr "OpenStore 上的网络应用开发者"
 
 #: ../../appdev/guides/contenthub.rst:30
 msgid ""
@@ -80,10 +80,13 @@ msgid ""
 "Creator source code <https://gitlab.com/cibersheep/webapp-creator/blob/"
 "master/webapp-creator/app/ImportPage.qml#L38>`_)"
 msgstr ""
+"查看网页应用开发者的代码，我们将会找到代码导入要用作图标的图像。点击所有者将打开内容中心，让我们选择从何处导入图像 (`参见网络应用开发者的源代码 "
+"<https://gitlab.com/cibersheep/webapp-creator/blob/master/webapp-creator/app/"
+"ImportPage.qml#L38>`_)"
 
 #: ../../appdev/guides/contenthub.rst:41
 msgid "``ContentPeerPicker`` is the element that shows the apps."
-msgstr ""
+msgstr "``ContentPeerPicker`` 是用于显示应用的元素。"
 
 #: ../../appdev/guides/contenthub.rst:47
 msgid ""
@@ -96,11 +99,11 @@ msgstr ""
 
 #: ../../appdev/guides/contenthub.rst:50
 msgid "Exporting"
-msgstr ""
+msgstr "导出"
 
 #: ../../appdev/guides/contenthub.rst:55
 msgid "Gelek in the OpenStore"
-msgstr ""
+msgstr "Gelek 在 OpenStore 上"
 
 #: ../../appdev/guides/contenthub.rst:57
 msgid ""
@@ -108,12 +111,13 @@ msgid ""
 "our device or share with ourselves (in Telegram and then save them to our "
 "computer)."
 msgstr ""
+"在 Gelek 中，我们将结束一些保存的游戏，这些游戏我们希望保存在我们的设备中或与我们自己分享（在 Telegram 上，然后将其保存到我们的电脑里）。"
 
 #: ../../appdev/guides/contenthub.rst:61
 msgid ""
 "Tapping on the download icon we will get a Content Hub to *save* the game "
 "file (which is actually an export)."
-msgstr ""
+msgstr "点击下载图标，我们将得到一个内容中心来 *保存* 游戏文件（实际上是一次导出）。"
 
 #: ../../appdev/guides/contenthub.rst:63
 msgid ""
@@ -1250,7 +1254,7 @@ msgstr ""
 
 #: ../../appdev/platform/index.rst:4
 msgid "Platform"
-msgstr ""
+msgstr "平台"
 
 #: ../../appdev/platform/index.rst:7
 msgid "Content Hub"
