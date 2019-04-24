@@ -8,29 +8,37 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2019-04-24 20:42+0000\n"
+"Last-Translator: Vinícius F <magnetuz@protonmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.ubports.com/projects/"
+"ubports-docs/documentation-contribute/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 3.2.2\n"
 
 #: ../../contribute/bugreporting.rst:2
 msgid "Bug reporting"
-msgstr ""
+msgstr "Relatório de erros"
 
 #: ../../contribute/bugreporting.rst:4
+#, fuzzy
 msgid ""
 "This page contains information to help you help us by reporting an "
 "actionable bug for Ubuntu Touch. It does NOT contain information on "
 "reporting bugs in apps, most of the time their entry in the OpenStore will "
 "specify where and how to do that."
 msgstr ""
+"Esta página contém informações para te ajudar a nos ajudar, relatando um "
+"problema contestável para o Ubuntu Touch. Ela NÃO contém informações sobre "
+"relatórios de problemas em aplicativos, o qual na maioria das vezes em sua "
+"página no OpenStore irá especificar onde e como fazer isso."
 
 #: ../../contribute/bugreporting.rst:7
 msgid "Get the latest Ubuntu Touch"
-msgstr ""
+msgstr "Obtenha o mais recente Ubuntu Touch"
 
 #: ../../contribute/bugreporting.rst:9
 msgid ""
@@ -41,16 +49,25 @@ msgid ""
 "do a little dance! The bug has already been fixed and you can continue using "
 "Ubuntu Touch."
 msgstr ""
+"Isso pode parecer óbvio, mas é fácil esquecer. Vá em (Configurações - "
+"Atualizações) e certifique-se de que seu dispositivo não tem nenhuma "
+"atualização do Ubuntu disponível. Se não, continue através deste guia. Se "
+"sim, atualize seu dispositivo e tente reproduzir o problema. Se ele ainda "
+"ocorrer, continue através deste guia. Caso contrário, faça uma dancinha! O "
+"problema já foi consertado e você pode continuar usando o Ubuntu Touch."
 
 #: ../../contribute/bugreporting.rst:12
 msgid "Check if the bug is already reported"
-msgstr ""
+msgstr "Verifique se o problema já foi reportado"
 
 #: ../../contribute/bugreporting.rst:14
+#, fuzzy
 msgid ""
 "Open up the bug tracker for `ubuntu-touch <https://github.com/ubports/ubuntu-"
 "touch>`_."
 msgstr ""
+"Abra o rastreador de problemas (bug tracker) para o `ubuntu-touch "
+"<https://github.com/ubports/ubuntu-touch>`_."
 
 #: ../../contribute/bugreporting.rst:16
 msgid ""
