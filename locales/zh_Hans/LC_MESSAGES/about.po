@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2019-03-18 15:04+0000\n"
-"Last-Translator: xiaxiaxiaxia <1534515084@qq.com>\n"
+"PO-Revision-Date: 2019-04-24 20:42+0000\n"
+"Last-Translator: 不朽正义 <tanyongle0633@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-about/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.1.1\n"
+"X-Generator: Weblate 3.2.2\n"
 
 #: ../../about/introduction.rst:2
 msgid "Introduction"
@@ -269,7 +269,6 @@ msgid "Where are bugs tracked?"
 msgstr "Bug 会在哪里被跟踪？"
 
 #: ../../about/process/issue-tracking.rst:9
-#, fuzzy
 msgid ""
 "Since our quality assurance depends heavily on the community, we try to "
 "track issues where the user would expect them, instead of separated by "
@@ -278,10 +277,9 @@ msgid ""
 "tracker <https://github.com/ubports/ubuntu-touch>`__. An exception of this "
 "are click-apps that can be updated independently through the OpenStore."
 msgstr ""
-"由于我们的质量保证在很大程度上取决于社区，因此我们尝试跟踪用户期望的问题，而"
-"不是由存储库分离。 这意味着，几乎所有与系统镜像一起分发的组件的问题都会在"
-"`Ubuntu Touch tracker <https://github.com/ubports/ubuntu-touch>`__中进行跟"
-"踪。 一个例外是Click-APP可以通过OpenStore进行独立更新。"
+"由于我们的质量保证在很大程度上取决于社区，因此我们尝试跟踪用户期望的问题，而不是由存储库分离。 这意味着，几乎所有与系统镜像一起分发的组件的问题都会在 `"
+"Ubuntu Touch  跟踪器 <https://github.com/ubports/ubuntu-touch>`__。click-apps "
+"是一个例外，因为它们可以通过 OpenStore 来进行更新。"
 
 #: ../../about/process/issue-tracking.rst:17
 msgid ""
@@ -312,7 +310,6 @@ msgid "GitHub projects"
 msgstr "GitHub 项目"
 
 #: ../../about/process/issue-tracking.rst:30
-#, fuzzy
 msgid ""
 "To increase transparency and communication, GitHub projects (Kanban-Boards) "
 "are used wherever practical. In case of github.com/ubports/ubuntu-touch, a "
@@ -320,16 +317,14 @@ msgid ""
 "so that only issues that belong to a specific team or affect a specific "
 "device can be viewed."
 msgstr ""
-"为了增加项目透明度和沟通效率，GitHub项目（Kanban-Boards）可以在任何实际情况下"
-"使用。 对于github.com/ubports/ubuntu-touch，单个项目用于所有问题。 项目支持按"
-"标签过滤，以便只能查看属于特定团队或影响特定设备的问题。"
+"为了增加透明度和交流，GitHub 项目（Kanban-Boards）可以在任何实际情况下使用。在 github.com/ubports/ubuntu-"
+"touch 上，所有问题都用于单个项目。项目支持按标签过滤，因此只能查看属于特定团队或影响特定设备的问题。"
 
 #: ../../about/process/issue-tracking.rst:36
 msgid "These are the standard columns:"
 msgstr "以下是标准列："
 
 #: ../../about/process/issue-tracking.rst:38
-#, fuzzy
 msgid ""
 "**None (awaiting triage)**: The issue has been approved by a member of the "
 "QA team and is awaiting review from the responsible development team. if the "
@@ -338,9 +333,9 @@ msgid ""
 "sanity check by the qa-team but has not yet been accepted by the responsible "
 "development-team."
 msgstr ""
-"**None (awaiting triage)**：问题已经由 QA 团队的成员批准，正在等待负责的开发"
-"团队的审查。 如果问题是一个错误，问题描述中会包含重现说明。 如果问题是功能请"
-"求，它已通过 QA 团队的主要检查，但尚未被负责的开发团队接受。"
+"**None (awaiting triage)**：问题已得到 QA "
+"团队的一名成员批准，正在等待负责的开发团队审查。如果问题是错误，则在问题描述中包含重现说明。如果问题是功能请求，那么它已经通过了 QA "
+"团队的主要检查，但尚未被负责的开发团队所接受。"
 
 #: ../../about/process/issue-tracking.rst:39
 #, fuzzy
@@ -664,23 +659,23 @@ msgstr "文件命名规则"
 
 #: ../../about/process/ppa.rst:10
 msgid "Native packages"
-msgstr ""
+msgstr "原生包"
 
 #: ../../about/process/ppa.rst:12
 msgid ""
 "Native packages are repositories which contain a ``debian/`` directory "
 "**with** the source used to create the Debian source package (``.dsc``)."
-msgstr ""
+msgstr "原生包是一个包含 ``debian/`` 目录的存储库，其中 **包含** 用于创建 Debian 源码包的源代码 (``.dsc``)。"
 
 #: ../../about/process/ppa.rst:14
 msgid ""
 "The name of the Debian source package generated from the repository and the "
 "name of the git-repository should be the same."
-msgstr ""
+msgstr "从存储库生成的 Debian 源码包的名称和 Git 存储库的名称应该是相同的。"
 
 #: ../../about/process/ppa.rst:17
 msgid "Packaging repositories"
-msgstr ""
+msgstr "打包存储库"
 
 #: ../../about/process/ppa.rst:19
 msgid ""
@@ -689,6 +684,8 @@ msgid ""
 "contain instructions to tell ``debhelper`` how to get the source used to "
 "create the source package."
 msgstr ""
+"打包存储库包含一个 ``debian/`` 目录，其中 **不包含** 用于创建 Debian 源码包的源代码 (``.dsc``)。它们还包含说明 "
+"``debhelper`` 如何获取用于创建源码包的源代码。"
 
 #: ../../about/process/ppa.rst:21
 msgid ""
@@ -697,10 +694,12 @@ msgid ""
 "generates a source package called ``sandwich`` would be called ``sandwich-"
 "packaging``."
 msgstr ""
+"存储库应该具有它生成的源码包的名称，并在末尾附加 ``-packaging``。 例如：生成命名为 ``sandwich`` "
+"的源码包的打包存储库将会被称为 ``sandwich-packaging``。"
 
 #: ../../about/process/ppa.rst:24
 msgid "Creating new PPAs"
-msgstr ""
+msgstr "创建新的 PPA"
 
 #: ../../about/process/ppa.rst:26
 #, fuzzy

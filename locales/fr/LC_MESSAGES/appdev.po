@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2019-04-07 22:58+0000\n"
+"PO-Revision-Date: 2019-04-23 10:29+0000\n"
 "Last-Translator: Anne Onyme <anneonyme017@netcourrier.com>\n"
 "Language-Team: French <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/fr/>\n"
@@ -333,7 +333,7 @@ msgstr ""
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:2
 msgid "Importing from Content Hub and URLdispatcher"
-msgstr ""
+msgstr "Import à partir du centre de contenus et de l'expéditeur de liens"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:7
 msgid ""
@@ -341,14 +341,18 @@ msgid ""
 "In this guide we will see how ``URLdispatcher`` works and how to handle "
 "imported data from the Content Hub."
 msgstr ""
+"Dans le guide précédent, nous avons eu un aperçu du fonctionnement du centre "
+"de contenus. Dans ce guide, nous allons voir comment l'expéditeur de liens "
+"(``URLdispatcher``) fonctionne et comment gérer les données importées à "
+"partir du centre de contenus."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:10
 msgid "Handle data from the Content Hub"
-msgstr ""
+msgstr "Gérer les données provenant du centre de contenus"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:15
 msgid "OpenStore app from open-store.io"
-msgstr ""
+msgstr "Application OpenStore de open-store.io"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:17
 msgid ""
@@ -356,6 +360,9 @@ msgid ""
 "yourself on Telegram, and opening that click file with the OpenStore through "
 "the Content Hub:"
 msgstr ""
+"Une des manières les plus simples de tester une application est de vous "
+"envoyer un paquet Click de test sur Telegram et d'ouvrir ce fichier avec "
+"l'OpenStore à partir du centre de contenus :"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:22
 msgid ""
@@ -364,6 +371,11 @@ msgid ""
 "app <https://github.com/UbuntuOpenStore/openstore-app/blob/master/openstore/"
 "Main.qml#L85>`_ to see how it is done:"
 msgstr ""
+"Si vous appuyez sur l’application OpenStore, celle-ci s'ouvrira et vous "
+"demandera si vous voulez installer le paquet Click. Jetons un œil au `code "
+"principal de l'application dans le fichier Main.qml <https://github.com/"
+"UbuntuOpenStore/openstore-app/blob/master/openstore/Main.qml#L85>`_ pour "
+"voir de quoi il est constitué :"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:41
 msgid ""
@@ -372,11 +384,15 @@ msgid ""
 "from the Content Hub (``transfer.items[0].url`` is the url of the first data "
 "sent) and open a ``PopUp`` element to let the user install the click."
 msgstr ""
+"Vous voyez cet élément « Connections » qui vise le centre de contenus ? "
+"Lorsqu'il reçoit le signal « onImportRequested », il prend le lien de la "
+"donnée envoyée par le centre de contenus (``transfer.items[0].url`` est le "
+"lien de la première donnée envoyée) et ouvre une boîte de dialogue "
+"(``PopUp``) pour permettre à l'utilisateur/trice d'installer le paquet Click."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:44
-#, fuzzy
 msgid "What about the URLdispatcher?"
-msgstr "Répartiteur d'URL"
+msgstr "Qu'es ce donc que 'URLdispatcher' ?"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:46
 msgid ""
@@ -386,12 +402,21 @@ msgid ""
 "on an http protocol. If we tap on a map link it is handy to open it with "
 "uNav or to open a twitter link in the Twitter app! How does that work?"
 msgstr ""
+"'URL dispatcher' est un composant logiciel, similaire au 'Content Hub', qui "
+"vous facilite la vie en choisissant pour un protocole, l'application qui lui "
+"est le mieux adaptée. Par exemple: il est préférable d'ouvrir le navigateur "
+"Internet quand on sélectionne une adresse utilisant le protocole http. Si on "
+"sélectionne un lien cartographique, il est pratique de l'ouvrir avec "
+"l'application uNav ou un lien Twitter dans l'application Twitter! Comment "
+"cela fonctionne-t-il ?"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:48
 msgid ""
 "The ``URLdispatcher`` selects which app (according to their ``manifest."
 "json``) will open a certain link."
 msgstr ""
+"``URLdispatcher`` sélectionne quelle application (en fonction du fichier "
+"``manifest.json``) ouvrira un lien donné."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:53
 msgid ""
@@ -399,6 +424,10 @@ msgid ""
 "hooks for the ``URLdispatcher`` in its `manifest.json code <https://bazaar."
 "launchpad.net/~unav-devs/unav/trunk/view/head:/manifest.json#L9>`_:"
 msgstr ""
+"Voyons à quoi notre application de navigation ressemble de l'intérieur. Le "
+"manifeste de uNav présente des accroches pour ``URLdispatcher`` dans le code "
+"de `manifest.json <https://bazaar.launchpad.net/~unav-devs/unav/trunk/view/"
+"head:/manifest.json#L9>`_:"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:83
 msgid ""
@@ -406,22 +435,30 @@ msgid ""
 "be opened in uNav. And that’s defined in lines 2 and 3, where it looks for "
 "protocol http followed by map.unav.me."
 msgstr ""
+"Cela signifie qu'un lien qui ressemble à http://map.unav.me/xxxxx,xxxxx sera "
+"ouvert dans uNav. Et cela est défini dans les lignes 2 et 3, où le protocole "
+"http suivi de map.unav.me est recherché."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:85
 msgid ""
 "Also, a URI formatted geo:xxx,xxx should open in uNav, as it’s defined in "
 "line 11."
 msgstr ""
+"De plus, un lien formatté geo:xxx,xxx devrait s'ouvrir dans uNav, comme cela "
+"est défini en ligne 11."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:88
 msgid "And how do we manage the received URL?"
-msgstr ""
+msgstr "Et comment gérons-nous le lien reçu ?"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:90
 msgid ""
 "After the ``URLdispatcher`` sends the link to the correspondent app, we need "
 "to handle that URL or URI in the targeted app. Let’s see how to do that:"
 msgstr ""
+"Après que ``URLdispatcher`` ait envoyé le lien à l'application "
+"correspondante, nous devons gérer ce lien dans l'application ciblée. Voyons "
+"comment faire cela :"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:92
 msgid ""
@@ -433,6 +470,15 @@ msgid ""
 "<https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/Main."
 "qml#L200>`_ with a Connection element with ``UriHandler`` as a target."
 msgstr ""
+"Dans le fichier QML principal, nous devons ajouter du code pour savoir quoi "
+"faire avec le lien expédié. Commencez par ajouter un `élément d'argument "
+"<https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/"
+"Main.qml#L189>`_ qui gère le lien , tel que cela est fait par exemple dans `"
+"l'application Linphone <https://open-store.io/app/linphone.cibersheep>`_. "
+"Nous ajoutons également une `connexion au gestionnaire de liens "
+"<https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/"
+"Main.qml#L200>`_ avec un élément de connexion ayant comme cible "
+"``UriHandler``."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:120
 msgid ""
@@ -440,6 +486,9 @@ msgid ""
 "the app is opened. But what do we need to do to handle this link when the "
 "app is closed?"
 msgstr ""
+"Ce code gérera un lien de la forme ``linphone://sip:xxx@xxx.xx``lorsque "
+"l'application sera ouverte. Mais que devons-nous faire pour gérer ce lien "
+"lorsque l'application est fermée ?"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:122
 msgid ""
@@ -447,10 +496,16 @@ msgid ""
 "linphone-simple/blob/master/qml/Main.qml#L69>`_ that will cover two cases: "
 "1) We receive one URL 2) We receive more than one URL"
 msgstr ""
+"Nous devons ajouter un petit `code supplémentaire <https://gitlab.com/"
+"ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L69>`_ qui "
+"couvrira deux cas de figure : 1) Nous recevons un lien 2) Nous recevons plus "
+"d'un lien"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:149
 msgid "What happens if more than one app has the same URL type defined?"
 msgstr ""
+"Que se passe-t-il si le même type de lien est défini dans plus d'une "
+"application ?"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:151
 msgid ""
@@ -458,18 +513,24 @@ msgid ""
 "a URL handled by the ``URLdispatcher`` as protocol ``http`` or the protocol "
 "``http://twitter``?"
 msgstr ""
+"C'est une très bonne question. Que se passe-t-il si nous appuyons sur un "
+"lien Twitter ? Un tel lien est-il géré par ``URLdispatcher`` comme un "
+"protocole ``http`` ou le protocole ``http://twitter`` ?"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:153
 msgid "What happens if two apps have the same defined protocol?"
 msgstr ""
+"Que se passe-t-il si le même protocole est défini pour deux applications ?"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:155
 msgid "Now it’s time to do some tests and share the results in the next guide."
 msgstr ""
+"Il est temps maintenant d'effectuer quelques tests et de partager les "
+"résultats dans le guide suivant."
 
 #: ../../appdev/guides/index.rst:4
 msgid "Developer guides"
-msgstr ""
+msgstr "Guides du développeur"
 
 #: ../../appdev/guides/index.rst:6
 msgid ""
@@ -477,16 +538,22 @@ msgid ""
 "mean time we recommend the `Ubuntu Touch Programming Course <https://mimecar."
 "gitbook.io/qt-course/>`__."
 msgstr ""
+"Nous travaillons actuellement à l'extension de la liste de nos guides du "
+"développeur. En attendant, nous recommandons le `cours de programmation "
+"d'Ubuntu Touch <https://mimecar.gitbook.io/qt-course/>`__."
 
 #: ../../appdev/guides/index.rst:9 ../../appdev/publishing/index.rst:8
 msgid ""
 "If you are interested in helping create developer guides check out our "
 "`GitLab Project <https://gitlab.com/ubports/ux/development-resources>`__."
 msgstr ""
+"Si vous êtes intéressé(e) pour aider à la création de guides du développeur, "
+"consultez notre `projet GitLab <https://gitlab.com/ubports/ux/development-"
+"resources>`__."
 
 #: ../../appdev/guides/writeable-dirs.rst:2
 msgid "Writable directories"
-msgstr ""
+msgstr "Répertoires en écriture"
 
 #: ../../appdev/guides/writeable-dirs.rst:4
 msgid ""
@@ -496,10 +563,16 @@ msgid ""
 "write files that are located in one of three app specific directories "
 "explained in this guide."
 msgstr ""
+"Le confinement des applications fait partie du concept de sécurité d'Ubuntu "
+"Touch. Les données peuvent être échangées entre les applications en fonction "
+"des politiques AppArmor, principalement en utilisant le :ref:`centre de "
+"contenus <contenthub>`. Cela dit, les applications peuvent uniquement lire "
+"et écrire sur des fichiers qui sont situés dans l'un des trois répertoires "
+"spécifiques expliqués dans ce guide."
 
 #: ../../appdev/guides/writeable-dirs.rst:7
 msgid "Standard Paths"
-msgstr ""
+msgstr "Chemins standards"
 
 #: ../../appdev/guides/writeable-dirs.rst:8
 msgid ""
@@ -509,14 +582,20 @@ msgid ""
 "messages to the log file, use the `Qt debug <https://doc.qt.io/qt-5/qdebug."
 "html>`_ functions."
 msgstr ""
+"Outre les accès en écriture dans le répertoire de l'application expliqués ci-"
+"dessous, l'application peut écrire des message de dépannage dans le fichier "
+"journal de l'application situé dans ``/home/phablet/.cache/upstart/"
+"application-click-<nomcomplet>_<nomdelapplication>_<version>.log``. Pour "
+"ajouter des messages dans le fichier journal, utilisez les fonctions `"
+"dépannage de Qt<https://doc.qt.io/qt-5/qdebug.html>`_."
 
 #: ../../appdev/guides/writeable-dirs.rst:11
 msgid "Config"
-msgstr ""
+msgstr "Configuration"
 
 #: ../../appdev/guides/writeable-dirs.rst:12
 msgid "Path: ``/home/phablet/.config/<fullappname>/``"
-msgstr ""
+msgstr "Chemin : ``/home/phablet/.config/<nomcompletdelapplication>/``"
 
 #: ../../appdev/guides/writeable-dirs.rst:14
 msgid ""
@@ -524,14 +603,17 @@ msgid ""
 "example stores its configuration to ``/home/phablet/.config/com.ubuntu.music/"
 "com.ubuntu.music.conf``."
 msgstr ""
+"Il s'agit de l'endroit où sont stockés les fichiers de configuration. "
+"L'application Musique stocke par exemple sa configuration dans  ``/home/"
+"phablet/.config/com.ubuntu.music/com.ubuntu.music.conf``."
 
 #: ../../appdev/guides/writeable-dirs.rst:17
 msgid "Cache"
-msgstr ""
+msgstr "Cache"
 
 #: ../../appdev/guides/writeable-dirs.rst:18
 msgid "Path: ``/home/phablet/.cache/<fullappname>/``"
-msgstr ""
+msgstr "Chemin : ``/home/phablet/.cache/<nomcompletdelapplication>/``"
 
 #: ../../appdev/guides/writeable-dirs.rst:20
 msgid ""
@@ -539,32 +621,42 @@ msgid ""
 "Content Hub. Files that have been shared with the music app for example can "
 "be found in ``/home/phablet/.cache/com.ubuntu.music/HubIncoming/``."
 msgstr ""
+"Il s'agit de l'endroit dans lequel mettre des données en cache pour une "
+"utilisation ultérieure. Le cache est également utilisé par le contre de "
+"contenus. Les fichiers qui ont été partagés avec l'application Musique "
+"peuvent par exemple être retrouvés dans  ``/home/phablet/.cache/com.ubuntu."
+"music/HubIncoming/``."
 
 #: ../../appdev/guides/writeable-dirs.rst:23
 msgid "App data"
-msgstr ""
+msgstr "Données de l'application"
 
 #: ../../appdev/guides/writeable-dirs.rst:24
 msgid "Path: ``/home/phablet/.local/share/<fullappname>/``"
-msgstr ""
+msgstr "Chemin : ``/home/phablet/.local/share/<nomcompletdelapplication>/``"
 
 #: ../../appdev/guides/writeable-dirs.rst:26
 msgid ""
 "This is where your app stores any data. The music app for example stores its "
 "data bases to ``/home/phablet/.local/share/com.ubuntu.music/Databases/``."
 msgstr ""
+"Il s'agit de l'endroit où votre application stocke toute ses données. "
+"L'application Musique stocke par exemple ses bases de données sous ``/home/"
+"phablet/.local/share/com.ubuntu.music/Databases/``."
 
 #: ../../appdev/guides/writeable-dirs.rst:30
 msgid "Using Standard Paths in C++"
-msgstr ""
+msgstr "Utilisation des chemins standards en C++"
 
 #: ../../appdev/guides/writeable-dirs.rst:31
 msgid "The Qt header ``QStandardPaths`` provides the app's writable locations:"
 msgstr ""
+"L'en-tête Qt ``QStandardPaths`` indique les emplacements en écriture de "
+"l'application :"
 
 #: ../../appdev/guides/writeable-dirs.rst:43
 msgid "Using Standard Paths in QML"
-msgstr ""
+msgstr "Utilisation des chemins standards en QML"
 
 #: ../../appdev/guides/writeable-dirs.rst:44
 msgid ""
@@ -575,12 +667,21 @@ msgid ""
 "+ plugin provide the paths to your QML part. Therefore, add these methods to "
 "your plugin class:"
 msgstr ""
+"Le module Qt `Qt.labs.platform <https://doc.qt.io/archives/qt-5.10/qml-qt-"
+"labs-platform-standardpaths.html>`_ fournit le chemin standard "
+"QStandardPaths en QML. Malheureusement, il n'est pas encore disponible sous "
+"Ubuntu Touch. Vous ne voulez probablement pas envoyer ce module avec votre "
+"application. Au lieu de ça, vous pouvez tout simplement laisser votre "
+"extension C++ fournir les chemins à votre élément QML. Par conséquent, "
+"ajoutez ces méthodes à votre classe d'extensions :"
 
 #: ../../appdev/guides/writeable-dirs.rst:64
 msgid ""
 "Assuming the name of your plugin is MyPlugin, you can access these paths in "
 "QML:"
 msgstr ""
+"En supposant que le nom de votre extension est MyPlugin, vous pouvez accéder "
+"à ces chemins en QML :"
 
 #: ../../appdev/index.rst:2
 msgid "App development"
@@ -600,7 +701,6 @@ msgstr ""
 "monde."
 
 #: ../../appdev/index.rst:7
-#, fuzzy
 msgid "Get started"
 msgstr "Pour commencer"
 
@@ -610,6 +710,9 @@ msgid ""
 "new developer or an experienced one, we have several resources to help you "
 "get started."
 msgstr ""
+"Ubuntu Touch est une plateforme dynamique et amusante pour le développement. "
+"Que vous soyez nouveau/elle ou plus expérimenté/ee, nous avons plusieurs "
+"ressources pour vous aider à débuter."
 
 #: ../../appdev/index.rst:11
 msgid ""
@@ -618,6 +721,11 @@ msgid ""
 "behavior defined in JavaScript, C++, Python, or Go. :ref:`Web apps <webapp>` "
 "are special containers to run websites in."
 msgstr ""
+"Ubuntu Touch prend en charge différents types d'applications. :ref:`Les "
+"applications natives <nativeapp>` sont des applications dont les interfaces "
+"sont réalisées en QML ou en HTML et dont le comportement est défini en "
+"JavaScript, C++, Python ou Go. :ref:`Les applications Web <webapp>` sont des "
+"conteneurs spéciaux dans lesquels exécuter les sites Internet."
 
 #: ../../appdev/index.rst:21
 msgid "Community"
@@ -630,6 +738,12 @@ msgid ""
 "UbuntuAppDevEN>`_ or chat with us on the `UBports app dev forum <https://"
 "forums.ubports.com/category/35/app-development>`_."
 msgstr ""
+"Vous avez des questions qui ne sont pas adressées dans la documentation ou "
+"vous souhaitez discuter avec les autres développeurs/euses d'Ubuntu Touch ? "
+"Rejoignez notre `groupe Telegram de développement d'applications <https://t."
+"me/UbuntuAppDevEN>`_ ou discutez avec nous sur le `forum de développement "
+"d'applications d'UBports <https://forums.ubports.com/category/35/app-"
+"development>`_."
 
 #: ../../appdev/index.rst:26
 msgid "Tools"
@@ -671,9 +785,9 @@ msgid ""
 "You can still install the SDK IDE in Ubuntu 16.04, but it is not guaranteed "
 "to work correctly. You can use the following commands to install::"
 msgstr ""
-"Vous pouvez toujours installer l'IDE SDK sur Ubuntu 16.04, mais il n'est pas "
-"garanti qu'il fonctionne correctement. Vous pouvez utiliser les commandes "
-"suivantes pour l’installer::"
+"Vous pouvez toujours installer le kit de développement (SDK) sur Ubuntu "
+"16.04, mais il n'est pas garanti qu'il fonctionne correctement. Vous pouvez "
+"utiliser les commandes suivantes pour l’installer::"
 
 #: ../../appdev/index.rst:42
 msgid "Guides"
@@ -684,6 +798,8 @@ msgid ""
 "Get started building your first app or learn about advanced concepts with "
 "our :ref:`Developer guides <devguides>`."
 msgstr ""
+"Commencez à construire votre première application ou apprenez des concepts "
+"avancés avec nos :ref:`Guides du développeur <devguides>`."
 
 #: ../../appdev/index.rst:57
 msgid "Publishing"
@@ -694,6 +810,9 @@ msgid ""
 "After you are done building your app, distribute it on the `OpenStore "
 "<https://open-store.io/>`__ with our :ref:`Publishing guides <publishing>`."
 msgstr ""
+"Après avoir fini de construire votre application, distribuez-la sur l'`"
+"OpenStore <https://open-store.io/>`__ en vous servant de nos  :ref:`Guides "
+"de publication <publishing>`."
 
 #: ../../appdev/index.rst:68
 msgid "Documentation"
@@ -712,11 +831,8 @@ msgstr ""
 "html>`__"
 
 #: ../../appdev/index.rst:72
-#, fuzzy
 msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`__"
-msgstr ""
-"L'interface en ligne de commande `Clickable <http://clickable.bhdouglass.com/"
-"en/latest/>`_"
+msgstr "`Clickable <http://clickable.bhdouglass.com/en/latest/>`__"
 
 #: ../../appdev/index.rst:75
 msgid "More Documentation"
@@ -731,6 +847,8 @@ msgid ""
 "Learn more about app development by digging into our :ref:`Sample apps "
 "<sampleapps>`."
 msgstr ""
+"Apprenez-en plus sur le développement d'applications en creusant dans nos "
+":ref:`Applications types <sampleapps>`."
 
 #: ../../appdev/index.rst:99
 msgid "Preinstalled apps"
@@ -741,6 +859,8 @@ msgid ""
 "The :doc:`/contribute/preinstalled-apps` page has information on developing "
 "the apps which are included with Ubuntu Touch."
 msgstr ""
+"La page :doc:`/contribute/preinstalled-apps` contient des informations sur "
+"le développement des applications qui sont inclues dans Ubuntu Touch."
 
 #: ../../appdev/nativeapp/index.rst:4
 msgid "Native applications"
@@ -775,14 +895,12 @@ msgstr ""
 "les stratégies plus spécifiques devront être vérifiées manuellement."
 
 #: ../../appdev/platform/apparmor.rst:24
-#, fuzzy
 msgid "accounts"
 msgstr "Comptes en ligne"
 
 #: ../../appdev/platform/apparmor.rst:26
-#, fuzzy
 msgid "Description: Can use Online Accounts."
-msgstr "accounts : peut utiliser des comptes en ligne"
+msgstr "Description : peut utiliser des comptes en ligne."
 
 #: ../../appdev/platform/apparmor.rst:28 ../../appdev/platform/apparmor.rst:38
 #: ../../appdev/platform/apparmor.rst:70 ../../appdev/platform/apparmor.rst:80
@@ -798,22 +916,26 @@ msgstr "accounts : peut utiliser des comptes en ligne"
 #: ../../appdev/platform/apparmor.rst:259
 #: ../../appdev/platform/apparmor.rst:287
 msgid "Usage: common"
-msgstr ""
+msgstr "Utilisation : commune"
 
 #: ../../appdev/platform/apparmor.rst:30
 msgid ""
 "The accounts policy gives your app the permissions it needs to access the "
 "`Online Accounts API`_."
 msgstr ""
+"La politique relative aux comptes donne à votre application les permissions "
+"dont elle a besoin pour accéder à l'`API des comptes en ligne`_."
 
 #: ../../appdev/platform/apparmor.rst:34
 msgid "audio"
-msgstr ""
+msgstr "audio"
 
 #: ../../appdev/platform/apparmor.rst:36
 msgid ""
 "Description: Can play audio (allows playing remote content via media-hub)"
 msgstr ""
+"Description : peut lire du son (permet de lire des médias à distance via "
+"media-hub)"
 
 #: ../../appdev/platform/apparmor.rst:40
 msgid ""
@@ -821,14 +943,18 @@ msgid ""
 "media-hub. The permission also gives it the ability to send album art to the "
 "thumbnailer service, which is then shown on the sound indicator."
 msgstr ""
+"La politique audio est nécessaire pour que votre application puisse lire du "
+"son via pulseaudio ou media-hub. Cette permission lui donne également la "
+"possibilité d'envoyer la miniature d'un album au service correspondant, qui "
+"l'affiche alors dans l'indicateur de son."
 
 #: ../../appdev/platform/apparmor.rst:44
 msgid "bluetooth"
-msgstr ""
+msgstr "bluetooth"
 
 #: ../../appdev/platform/apparmor.rst:46
 msgid "Description: Use bluetooth (bluez5) as an administrator."
-msgstr ""
+msgstr "Description : utiliser le Bluetooth (bluez5) en tant qu'administrateur."
 
 #: ../../appdev/platform/apparmor.rst:48 ../../appdev/platform/apparmor.rst:58
 #: ../../appdev/platform/apparmor.rst:90 ../../appdev/platform/apparmor.rst:120
@@ -842,7 +968,7 @@ msgstr ""
 #: ../../appdev/platform/apparmor.rst:267
 #: ../../appdev/platform/apparmor.rst:277
 msgid "Usage: reserved"
-msgstr ""
+msgstr "Utilisation : réservée"
 
 #: ../../appdev/platform/apparmor.rst:50
 msgid ""
@@ -850,51 +976,56 @@ msgid ""
 "for administration of bluetooth and as a stepping stone towards developing a "
 "safe bluetooth API all apps can access."
 msgstr ""
+"Cette politique donne des accès non restreints aux appareils en Bluetooth. "
+"Elle est fournie pour l'administration du Bluetooth comme tremplin vers le "
+"développement d'une API Bluetooth sécurisée, à laquelle toutes les "
+"applications peuvent accéder."
 
 #: ../../appdev/platform/apparmor.rst:54
 msgid "calendar"
-msgstr ""
+msgstr "calendar"
 
 #: ../../appdev/platform/apparmor.rst:56
-#, fuzzy
 msgid "Description: Can access the calendar."
-msgstr "sensors : peut accéder aux capteurs"
+msgstr "Description : peut accéder à l'agenda."
 
 #: ../../appdev/platform/apparmor.rst:60
 msgid ""
 "Calendar grants access to the Evolution dataserver's calendar and alarms "
 "APIs. It also grants access to sync-monitor."
 msgstr ""
+"La politique relative à l'agenda donne accès aux calendriers et aux alarmes "
+"du serveur de données Evolution. Elle donne également accès à sync-monitor."
 
 #: ../../appdev/platform/apparmor.rst:62
 msgid ""
 "This policy is reserved since it grants free access to all calendars on the "
 "device at any time. The legacy bug about this situation is `LP #1227824`_ ."
 msgstr ""
+"Cette politique est réservée car elle donne libre accès à tous les agendas "
+"de l'appareil à n'importe quel moment. L'anomalie historique liée à cette "
+"situation est la `LP #1227824`_ ."
 
 #: ../../appdev/platform/apparmor.rst:66
 msgid "camera"
-msgstr ""
+msgstr "camera"
 
 #: ../../appdev/platform/apparmor.rst:68
-#, fuzzy
 msgid "Description: Can access the camera(s)"
-msgstr "camera : peut accéder à la caméra (ou aux caméras)"
+msgstr "Description : peut accéder à la caméra (ou aux caméras)"
 
 #: ../../appdev/platform/apparmor.rst:72
-#, fuzzy
 msgid "The camera policy grants access to device cameras."
-msgstr "camera : peut accéder à la caméra (ou aux caméras)"
+msgstr "La politique liée aux caméras donne accès aux caméras de l'appareil."
 
 #: ../../appdev/platform/apparmor.rst:76
 msgid "connectivity"
-msgstr ""
+msgstr "connectivity"
 
 #: ../../appdev/platform/apparmor.rst:78
-#, fuzzy
 msgid "Description: Can access coarse network connectivity information"
 msgstr ""
-"connectivity : peut accéder à des informations brutes de connectivité au "
+"Description : peut accéder à des informations brutes de connectivité au "
 "réseau"
 
 #: ../../appdev/platform/apparmor.rst:82
@@ -903,15 +1034,18 @@ msgid ""
 "device's connectivity. This includes whether the device is connected to the "
 "Internet and whether it is connected via a Wi-Fi or mobile data connection."
 msgstr ""
+"La politique liée à la connectivité permet aux applications de déterminer "
+"des informations brutes au sujet de la connectivité de l'appareil. Cela "
+"inclut le fait de savoir si l'appareil est connecté à Internet et si la "
+"connexion se fait par Wi-Fi ou par données mobiles."
 
 #: ../../appdev/platform/apparmor.rst:86
 msgid "contacts"
-msgstr ""
+msgstr "contacts"
 
 #: ../../appdev/platform/apparmor.rst:88
-#, fuzzy
 msgid "Description: Can access contacts."
-msgstr "location : permet d'accéder à la position géographique"
+msgstr "Description : permet d'accéder aux contacts."
 
 #: ../../appdev/platform/apparmor.rst:92
 msgid ""
@@ -919,16 +1053,19 @@ msgid ""
 "It is marked as reserved because it allows access to sync-monitor and "
 "unfettered access to the address book."
 msgstr ""
+"La politique liée aux contacts permet aux applications d'accéder à la liste "
+"des contacts de l'utilisateur de l'appareil. Elle est marquée comme réservée "
+"elle permet d'accéder à sync-monitor, ainsi qu'un accès illimité au carnet "
+"d'adresses."
 
 #: ../../appdev/platform/apparmor.rst:96
 msgid "content_exchange"
-msgstr ""
+msgstr "content_exchange"
 
 #: ../../appdev/platform/apparmor.rst:98
-#, fuzzy
 msgid "Description: Can request/import data from other applications"
 msgstr ""
-"content_exchange : peut demander/importer des données provenant d'autres "
+"Description : peut demander/importer des données provenant d'autres "
 "applications"
 
 #: ../../appdev/platform/apparmor.rst:102
@@ -936,27 +1073,28 @@ msgid ""
 "Using the content_exchange policy allows your app to be a consumer of "
 "content on content-hub."
 msgstr ""
+"L'utilisation de la politique d'échange de contenus permet à vos "
+"applications de recevoir du contenu provenant du centre de contenus."
 
 #: ../../appdev/platform/apparmor.rst:106
 msgid "content_exchange_source"
-msgstr ""
+msgstr "content_exchange_source"
 
 #: ../../appdev/platform/apparmor.rst:108
-#, fuzzy
 msgid "Description: Can provide/export data to other applications"
-msgstr ""
-"content_exchange_source : peut fournir/exporter des données aux autres "
-"applications"
+msgstr "Description : peut fournir/exporter des données à d'autres applications"
 
 #: ../../appdev/platform/apparmor.rst:112
 msgid ""
 "The content_exchange_source policy allows your app to provide content on "
 "content-hub."
 msgstr ""
+"La politique de sources d'échange de contenus permet à votre application de "
+"fournir du contenu via le centre de contenus."
 
 #: ../../appdev/platform/apparmor.rst:116
 msgid "debug"
-msgstr ""
+msgstr "debug"
 
 #: ../../appdev/platform/apparmor.rst:118
 msgid ""
@@ -966,10 +1104,16 @@ msgid ""
 "considered secure. You should never run untrusted programs using this policy "
 "group."
 msgstr ""
+"Description : utiliser des outils de dépannage spéciaux. Ceci devrait "
+"uniquement être utilisé pour les paquets en développement, pas pour de la "
+"production. Note : utiliser ce groupe politique fournit un confinement "
+"significativement différent de la normale et n'est pas considéré comme sûr. "
+"Vous ne devriez jamais exécuter des programmes  non fiables en utilisant ce "
+"groupe de politique."
 
 #: ../../appdev/platform/apparmor.rst:124
 msgid "document_files"
-msgstr ""
+msgstr "document_files"
 
 #: ../../appdev/platform/apparmor.rst:126
 msgid ""
@@ -978,16 +1122,22 @@ msgid ""
 "should typically use the content_exchange policy group and API to access "
 "document files instead."
 msgstr ""
+"Description : peut lire et écrire dans des documents. Ce groupe de politique "
+"est réservé pour certaines applications, telles que les visionneuses de "
+"document. Les dévoppeurs/euses devraient typiquement utiliser à la place le "
+"groupe de politique et l'API content_exchange pour accéder aux documents."
 
 #: ../../appdev/platform/apparmor.rst:130
 msgid ""
 "This policy allows apps to read and write to the \"Documents\" folders in "
 "the user's home directory and external media."
 msgstr ""
+"Cette politique permet aux applications de lire et d'écrire dans le "
+"répertoire « Documents » du dossier personnel et des supports externes."
 
 #: ../../appdev/platform/apparmor.rst:133
 msgid "document_files_read"
-msgstr ""
+msgstr "document_files_read"
 
 #: ../../appdev/platform/apparmor.rst:135
 msgid ""
@@ -996,16 +1146,22 @@ msgid ""
 "use the content_exchange policy group and API to access document files "
 "instead."
 msgstr ""
+"Description : peut lire tous les documents. Cette politique est réservée à "
+"certaines applications, telles que les visionneuses de documents. Les dé"
+"veloppeurs/euses devraient typiquement utiliser à la place le groupe de "
+"politique et l'API content_exchange pour accéder aux documents."
 
 #: ../../appdev/platform/apparmor.rst:139
 msgid ""
 "This policy allows apps to read the \"Documents\" folders in the user's home "
 "directory and external media."
 msgstr ""
+"Cette politique permet aux applications de lire les répertoires « Documents »"
+" du dossier personnel et des supports externes."
 
 #: ../../appdev/platform/apparmor.rst:143
 msgid "history"
-msgstr ""
+msgstr "history"
 
 #: ../../appdev/platform/apparmor.rst:145
 msgid ""
@@ -1013,44 +1169,44 @@ msgid ""
 "for vetted applications only in this version of the policy. A future version "
 "of the policy may move this out of reserved status."
 msgstr ""
+"Description : permet d'accéder à history-service. Ce groupe de politique est "
+"réservé aux applications approuvées uniquement dans cette version de la "
+"politique. Une version future de la politique pourrait permettre de sortir "
+"du statut réservé."
 
 #: ../../appdev/platform/apparmor.rst:151
 msgid "keep-display-on"
-msgstr ""
+msgstr "keep-display-on"
 
 #: ../../appdev/platform/apparmor.rst:153
-#, fuzzy
 msgid "Description: Can request keeping the screen on"
-msgstr ""
-"keep-display-on : peut demander de garder l'écran allumé (disponible depuis "
-"la version 15.04, OTA 5)"
+msgstr "Description : peut demander de garder l'écran allumé"
 
 #: ../../appdev/platform/apparmor.rst:159
-#, fuzzy
 msgid "location"
-msgstr "Introduction"
+msgstr "location"
 
 #: ../../appdev/platform/apparmor.rst:161
-#, fuzzy
 msgid "Description: Can access Location"
-msgstr "location : permet d'accéder à la position géographique"
+msgstr "Description : permet d'accéder à la position géographique"
 
 #: ../../appdev/platform/apparmor.rst:165
 msgid "Allows an app to request access to the device's current location."
 msgstr ""
+"Autorise une application à demander accès à la position géographique de "
+"l'appareil actuel."
 
 #: ../../appdev/platform/apparmor.rst:169
 msgid "microphone"
-msgstr ""
+msgstr "microphone"
 
 #: ../../appdev/platform/apparmor.rst:171
-#, fuzzy
 msgid "Description: Can access the microphone"
-msgstr "microphone : peut accéder au microphone"
+msgstr "Description : peut accéder au microphone"
 
 #: ../../appdev/platform/apparmor.rst:177
 msgid "music_files"
-msgstr ""
+msgstr "music_files"
 
 #: ../../appdev/platform/apparmor.rst:179
 msgid ""
@@ -1059,16 +1215,24 @@ msgid ""
 "typically use the content_exchange policy group and API to access music "
 "files instead."
 msgstr ""
+"Description : peut lire et écrire dans des fichiers musicaux. Ce groupe de "
+"politique est réservé à certaines applications, telles que des lecteurs de "
+"musique. Les développeurs/euses devraient typiquement utiliser à la place le "
+"groupe de politique et l'API content_exchange pour accéder aux fichiers "
+"musicaux."
 
 #: ../../appdev/platform/apparmor.rst:183
 msgid ""
 "The music_files policy group allows an app to read or write to the Music "
 "directories in the user's home folder or on external media."
 msgstr ""
+"Le groupe de politique music_files permet à une application de lire ou "
+"d'écrire dans les répertoires « Musique » du dossier personnel ou des "
+"supports externes."
 
 #: ../../appdev/platform/apparmor.rst:187
 msgid "music_files_read"
-msgstr ""
+msgstr "music_files_read"
 
 #: ../../appdev/platform/apparmor.rst:189
 msgid ""
@@ -1076,31 +1240,40 @@ msgid ""
 "certain applications, such as music players. Developers should typically use "
 "the content_exchange policy group and API to access music files instead."
 msgstr ""
+"Description : permet de lire tous les fichiers musicaux. Ce groupe de "
+"politique est réservé à certaines applications, telles que les lecteurs de "
+"musique. Les développeurs/euses devraient typiquement utiliser à la place le "
+"groupe de politique et l'API content_exchange pour accéder aux fichiers "
+"musicaux."
 
 #: ../../appdev/platform/apparmor.rst:193
 msgid ""
 "The music_files_read policy group allows an app to read the Music "
 "directories in the user's home folder or on external media."
 msgstr ""
+"Le groupe de politique music_files_read permet à une application de lire les "
+"répertoires « Musique » du dossier personnel et des supports externes."
 
 #: ../../appdev/platform/apparmor.rst:197
 msgid "networking"
-msgstr ""
+msgstr "networking"
 
 #: ../../appdev/platform/apparmor.rst:199
-#, fuzzy
 msgid "Description: Can access the network"
-msgstr "networking : peut accéder au réseau"
+msgstr "Description : peut accéder au réseau"
 
 #: ../../appdev/platform/apparmor.rst:203
 msgid ""
 "The networking policy group allows an app to contact network devices and use "
 "the `download manager`_."
 msgstr ""
+"Le groupe de politique de mise en réseau permet à une application de "
+"contacter des appareils sur le réseau et d'utiliser le `gestionnaire de "
+"téléchargements`_."
 
 #: ../../appdev/platform/apparmor.rst:207
 msgid "picture_files"
-msgstr ""
+msgstr "picture_files"
 
 #: ../../appdev/platform/apparmor.rst:209
 msgid ""
@@ -1109,16 +1282,24 @@ msgid ""
 "should typically use the content_exchange policy group and API to access "
 "picture files instead."
 msgstr ""
+"Description : peut lire et écrire dans des fichiers image. Ce groupe de "
+"politique est réservé à certaines applications, telles que des applications "
+"de galerie. Les développeurs/euses devraient typiquement utiliser à la place "
+"le groupe de politique et l'API content_exchange pour accéder aux fichiers "
+"image."
 
 #: ../../appdev/platform/apparmor.rst:213
 msgid ""
 "The picture_files policy group allows an app to read and write to the "
 "Pictures directories in the user's home folder or on external media."
 msgstr ""
+"Le groupe de politique picture_files permet à une application de lire et "
+"d'écrire dans les répertoires « Images » du dossier personnel et des "
+"supports externes."
 
 #: ../../appdev/platform/apparmor.rst:217
 msgid "picture_files_read"
-msgstr ""
+msgstr "picture_files_read"
 
 #: ../../appdev/platform/apparmor.rst:219
 msgid ""
@@ -1127,66 +1308,70 @@ msgid ""
 "typically use the content_exchange policy group and API to access picture "
 "files instead."
 msgstr ""
+"Description : pet lire tous les fichiers image. Ce groupe de politique est "
+"réservé à certaines applications, telles que les applications de galerie. "
+"Les développeurs/euses devraient typiquement utiliser à la place le groupe "
+"de politique et l'API content_exchange pour accéder aux fichiers image."
 
 #: ../../appdev/platform/apparmor.rst:223
 msgid ""
 "The picture_files_read policy group allows an app to read the Pictures "
 "directories in the user's home folder or on external media."
 msgstr ""
+"Le groupe de politique picture_files_read permet aux applications de lire "
+"les répertoires « Images » du dossier personnel et des supports externes."
 
 #: ../../appdev/platform/apparmor.rst:227
-#, fuzzy
 msgid "push-notification-client"
-msgstr "Notifications poussées"
+msgstr "push-notification-client"
 
 #: ../../appdev/platform/apparmor.rst:229
-#, fuzzy
 msgid "Description: Can use push notifications as a client"
 msgstr ""
-"push-notification-client : peut utiliser les notifications poussées en tant "
-"que client"
+"Description : peut utiliser des notifications poussées en tant que client"
 
 #: ../../appdev/platform/apparmor.rst:235
 msgid "sensors"
-msgstr ""
+msgstr "sensors"
 
 #: ../../appdev/platform/apparmor.rst:237
-#, fuzzy
 msgid "Description: Can access the sensors"
-msgstr "sensors : peut accéder aux capteurs"
+msgstr "Description : peut accéder aux capteurs"
 
 #: ../../appdev/platform/apparmor.rst:241
-#, fuzzy
 msgid "Allows apps to access `device sensors`_"
-msgstr "sensors : peut accéder aux capteurs"
+msgstr "Permet aux applications d'accéder aux `capteurs de l'appareil`_"
 
 #: ../../appdev/platform/apparmor.rst:245
 msgid "usermetrics"
-msgstr ""
+msgstr "usermetrics"
 
 #: ../../appdev/platform/apparmor.rst:247
-#, fuzzy
 msgid "Description: Can use UserMetrics to update the InfoGraphic"
-msgstr "usermetrics : peut utiliser UserMetrics pour mettre à jour InfoGraphic"
+msgstr "Description : peut utiliser UserMetrics pour mettre à jour InfoGraphic"
 
 #: ../../appdev/platform/apparmor.rst:251
 msgid ""
 "Allows an app to write metrics to the UserMetrics service so they can be "
 "displayed on the InfoGraphic."
 msgstr ""
+"Permet à une application d'écrire des mesures dans le service UserMetrics "
+"afin qu'elles soient affichées sur InfoGraphic."
 
 #: ../../appdev/platform/apparmor.rst:255
 msgid "video"
-msgstr ""
+msgstr "video"
 
 #: ../../appdev/platform/apparmor.rst:257
 msgid ""
 "Description: Can play video (allows playing remote content via media-hub)"
 msgstr ""
+"Description : peut lire des vidéos (permet de lire des contenus à distance "
+"via media-hub)"
 
 #: ../../appdev/platform/apparmor.rst:263
 msgid "video_files"
-msgstr ""
+msgstr "video_files"
 
 #: ../../appdev/platform/apparmor.rst:265
 msgid ""
@@ -1195,16 +1380,24 @@ msgid ""
 "should typically use the content_exchange policy group and API to access "
 "video files instead."
 msgstr ""
+"Description : peut lire et écrire dans des fichiers vidéo. Ce groupe de "
+"politique est réservé à certaines applications, telles que les applications "
+"de galerie. Les développeurs/euses devraient typiquement utiliser à la place "
+"le groupe de politique et l'API content_exchange pour accéder aux fichiers "
+"vidéo."
 
 #: ../../appdev/platform/apparmor.rst:269
 msgid ""
 "The video_files policy group allows an app to read and write to the Videos "
 "directories in the user's home folder or on external media."
 msgstr ""
+"Le groupe de politique video_files permet à une application de lire et "
+"d'écrire dans les répertoires « Vidéos » du dossier personnel et des "
+"supports externes."
 
 #: ../../appdev/platform/apparmor.rst:273
 msgid "video_files_read"
-msgstr ""
+msgstr "video_files_read"
 
 #: ../../appdev/platform/apparmor.rst:275
 msgid ""
@@ -1213,30 +1406,37 @@ msgid ""
 "typically use the content_exchange policy group and API to access video "
 "files instead."
 msgstr ""
+"Description : peut lire tous les fichiers vidéo. Ce groupe de politique est "
+"réservé à certaines applications, telles que les applications de galerie. "
+"Les développeurs/euses devraient typiquement utiliser à la place le groupe "
+"de politique et l'API content_exchange pour accéder aux fichiers vidéo."
 
 #: ../../appdev/platform/apparmor.rst:279
 msgid ""
 "The video_files_read policy group allows an app to read the Videos "
 "directories in the user's home folder or on external media."
 msgstr ""
+"Le groupe de politique video_files_read permet à une application de lire "
+"dans les répertoires « Vidéos » du dossier personnel et des supports "
+"externes."
 
 #: ../../appdev/platform/apparmor.rst:283
 msgid "webview"
-msgstr ""
+msgstr "webview"
 
 #: ../../appdev/platform/apparmor.rst:285
-#, fuzzy
 msgid "Description: Can use the UbuntuWebview"
-msgstr "webview : peut utiliser UbuntuWebview"
+msgstr "Description : peut utiliser UbuntuWebview"
 
 #: ../../appdev/platform/apparmor.rst:289
 msgid "The webview policy group allows apps to embed a `web browser view`_."
 msgstr ""
+"Le groupe de politique affichage Web permet aux applications d'embarquer un `"
+"affichage de navigateur Web`_."
 
 #: ../../appdev/platform/click.rst:4
-#, fuzzy
 msgid "Click package"
-msgstr "Aperçu du paquet click"
+msgstr "Paquet Click"
 
 #: ../../appdev/platform/click.rst:6
 msgid "Every ``click`` application package must embed at least 3 files:"
@@ -1362,6 +1562,8 @@ msgstr "Exemple de fichier ``apparmor.json`` :"
 #: ../../appdev/platform/click.rst:77
 msgid "For a full list of available policy groups, see :doc:`apparmor`."
 msgstr ""
+"Pour la liste complète des groupes de politique disponibles, voir "
+":doc:`apparmor`."
 
 #: ../../appdev/platform/index.rst:4
 msgid "Platform"
@@ -1428,7 +1630,7 @@ msgstr ""
 
 #: ../../appdev/publishing/index.rst:4
 msgid "App publishing guides"
-msgstr ""
+msgstr "Guides de publication des applications"
 
 #: ../../appdev/publishing/index.rst:6
 msgid ""
@@ -1436,10 +1638,13 @@ msgid ""
 "mean time you can get started over at the `OpenStore's submission page "
 "<https://open-store.io/submit>`__."
 msgstr ""
+"Nous travaillons actuellement sur l'extension de la liste de nos guides de "
+"publication. En attendant, vous pouvez commencer pour démarrer par la `page "
+"de soumission de l'OpenStore <https://open-store.io/submit>`__."
 
 #: ../../appdev/samples/index.rst:4
 msgid "Sample Apps"
-msgstr ""
+msgstr "Modèles d'applications"
 
 #: ../../appdev/samples/index.rst:6
 msgid ""
@@ -1447,28 +1652,34 @@ msgid ""
 "time many apps on the `OpenStore <https://open-store.io/>`__ are open source "
 "and can be used as a reference."
 msgstr ""
+"Nous travaillons actuellement sur l'extension de notre liste de modèles "
+"d'applications. En attendant, de nombreuses applications sur l'`OpenStore "
+"<https://open-store.io/>`__ sont libres et peuvent servir de référence.."
 
 #: ../../appdev/samples/index.rst:8
 msgid ""
 "If you are interested in helping create sample apps check out our `GitLab "
 "Project <https://gitlab.com/ubports/ux/development-resources>`__."
 msgstr ""
+"Si vous êtes intéressé(e) pour aider à créer des modèles d'applications, "
+"consultez notre `projet GitLab <https://gitlab.com/ubports/ux/development-"
+"resources>`__."
 
 #: ../../appdev/webapp/guide.rst:2 ../../appdev/webapp/index.rst:15
 msgid "Guide"
-msgstr "Le guide"
+msgstr "Guide"
 
 #: ../../appdev/webapp/guide.rst:5
 msgid "How the webapp fits into the shell"
-msgstr "Comment l'application Web s'intègre dans le shell"
+msgstr "Comment l'application Web s'intègre dans l'interface"
 
 #: ../../appdev/webapp/guide.rst:7
 msgid ""
 "A web app displays in a webview inside a webapp-container that runs as an "
 "Ubuntu app in the Ubuntu/Unity shell."
 msgstr ""
-"Une application web s'affiche dans une vue web à l'intérieur d'un conteneur "
-"qui s'exécute comme une application Ubuntu dans le shell Ubuntu/Unity."
+"Une application Web s'affiche dans une vue Web à l'intérieur d'un conteneur "
+"qui s'exécute comme une application Ubuntu dans l'interface Ubuntu/Unity."
 
 #: ../../appdev/webapp/guide.rst:9
 msgid "Taking a closer look:"
@@ -1554,7 +1765,6 @@ msgid "URL patterns"
 msgstr "Les modèles d'URL"
 
 #: ../../appdev/webapp/guide.rst:41
-#, fuzzy
 msgid ""
 "Webapp authors often want to contain browsing to the target website. That "
 "is, the developer wants to control the URLs that can be opened in the webapp "
@@ -1562,10 +1772,10 @@ msgid ""
 "as part of the webapp command line."
 msgstr ""
 "Les auteurs d'applications Web veulent souvent confiner la navigation au "
-"site cible. Autrement dit, le développeur veut contrôler les URL qui peuvent "
-"être ouvertes dans l'application web (toutes les autres URL sont ouvertes "
-"dans le navigateur). Ceci est fait avec les modèles d'URL dans le cadre de "
-"la ligne de commande de l'application web."
+"site cible. Autrement dit, le développeur veut contrôler les liens qui "
+"peuvent être ouverts dans l'application Web (tous les autres liens sont "
+"ouverts dans le navigateur). Cela est réalisé avec les modèles de lien qui "
+"font partie de la ligne de commande de l'application Web."
 
 #: ../../appdev/webapp/guide.rst:43
 msgid ""
@@ -1577,15 +1787,14 @@ msgstr ""
 "externes."
 
 #: ../../appdev/webapp/guide.rst:45
-#, fuzzy
 msgid ""
 "However, both containment and access to specified external URLs are "
 "implemented with URL patterns provided as arguments at launch time. Let’s "
 "take a closer look."
 msgstr ""
-"Néanmoins, à la fois le confinement et l'accès aux URL externes spécifiées "
-"sont implémentés avec les modèles URL fournis en tant qu'arguments au moment "
-"du lancement. Regardons de plus près."
+"Néanmoins, le confinement et l'accès aux liens externes spécifiés sont "
+"implémentés avec les modèles de lien fournis comme arguments au moment du "
+"lancement. Regardons de plus près."
 
 #: ../../appdev/webapp/guide.rst:48
 msgid "Uncontained by default"
@@ -1640,13 +1849,12 @@ msgid "``--webappUrlPatterns=`` indicates a pattern is next"
 msgstr "``--webappUrlPatterns=`` indique qu'un modèle suit"
 
 #: ../../appdev/webapp/guide.rst:66
-#, fuzzy
 msgid ""
 "http://www.ubuntu.com/* is the pattern The asterisk is a wildcard that "
 "matches any valid sequence of trailing (right-most) characters in a URL"
 msgstr ""
 "http://www.ubuntu.com/* est le modèle, où l'astérisque est un joker qui "
-"correspond à n'importe quelle séquence valide de caractères dans le lien."
+"correspond à n'importe quelle séquence valide de caractères à la fin du lien"
 
 #: ../../appdev/webapp/guide.rst:69
 msgid ""
@@ -1919,20 +2127,18 @@ msgstr ""
 "pour proposer des jeux en ligne."
 
 #: ../../appdev/webapp/index.rst:12
-#, fuzzy
 msgid ""
 "Note: Ubuntu webapps and Ubuntu HTML5 apps are similar but not identical. "
 "The main difference is that the content of a webapp is provided through a "
 "URL, whereas HTML5 apps install their content (and usually provide an Ubuntu "
 "HTML5 GUI). Webapps also have restricted access to platform APIs."
 msgstr ""
-"Note: Les applications web d'Ubuntu et les applications HTML5 d'Ubuntu sont "
+"Note : Les applications Web et les applications HTML5 d'Ubuntu sont "
 "similaires mais pas identiques. La principale différence est que le contenu "
-"d'une application web est fourni par l'intermédiaire d'une URL, alors que "
+"d'une application Web est fourni par l'intermédiaire d'un lien, alors que "
 "les applications HTML5 installent leur contenu (et fournissent généralement "
-"une interface graphique Ubuntu HTML5). Les applications web ont également un "
-"accès restreint aux API de la plate-forme. Les applications web pour la "
-"convergence d'Ubuntu"
+"une interface graphique HTML5 à Ubuntu). Les applications Web ont également "
+"un accès restreint aux API de la plateforme."
 
 #: ../../appdev/webapp/index.rst:17
 msgid ""
