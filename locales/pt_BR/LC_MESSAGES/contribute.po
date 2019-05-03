@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2019-04-24 20:42+0000\n"
+"PO-Revision-Date: 2019-04-26 08:36+0000\n"
 "Last-Translator: Vinícius F <magnetuz@protonmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-contribute/pt_BR/>\n"
@@ -24,7 +24,6 @@ msgid "Bug reporting"
 msgstr "Relatório de erros"
 
 #: ../../contribute/bugreporting.rst:4
-#, fuzzy
 msgid ""
 "This page contains information to help you help us by reporting an "
 "actionable bug for Ubuntu Touch. It does NOT contain information on "
@@ -33,8 +32,8 @@ msgid ""
 msgstr ""
 "Esta página contém informações para te ajudar a nos ajudar, relatando um "
 "problema contestável para o Ubuntu Touch. Ela NÃO contém informações sobre "
-"relatórios de problemas em aplicativos, o qual na maioria das vezes em sua "
-"página no OpenStore irá especificar onde e como fazer isso."
+"relatórios de problemas em aplicativos, o qual na maioria das vezes a "
+"própria página no OpenStore irá especificar onde e como fazer isso."
 
 #: ../../contribute/bugreporting.rst:7
 msgid "Get the latest Ubuntu Touch"
@@ -76,6 +75,11 @@ msgid ""
 "a few words that describe what you're seeing. For example, \"Lock screen "
 "transparent\" or \"Lock screen shows activities\"."
 msgstr ""
+"Primeiramente, você precisará confirmar se o problema que você está tentando "
+"reportar já não foi reportado antes. Pesquise pelos problemas reportados. "
+"Enquanto pesquisando, utilize apenas palavras-chave as quais descrevem o "
+"problema que você vê. Por exemplo, \"Tela de bloqueio transparente\" ou \""
+"Tela de bloqueio mostra atividades\"."
 
 #: ../../contribute/bugreporting.rst:18
 msgid ""
@@ -83,16 +87,23 @@ msgid ""
 "\" button (it looks like a smiley face) and select the +1 (thumbs up) "
 "reaction. This shows that you are also experiencing the bug."
 msgstr ""
+"Se você encontrar mesmo problema já relatado, procure o botão Adcionar sua "
+"Reação (\"Add your Reaction\" - ele se parece com um rosto sorrindo) e "
+"clique em +1 (thumbs up). Isto mostrará que você também está experenciando o "
+"problema."
 
 #: ../../contribute/bugreporting.rst:20
 msgid ""
 "If the report is missing any of the information specified later in this "
 "document, please add it yourself to help the developers fix the bug."
 msgstr ""
+"Se o relatório não contém alguma informação especificada mais adiante neste "
+"documento, por favor adicione-a você mesmo para ajudar os desenvolvedores a "
+"corrigir o problema."
 
 #: ../../contribute/bugreporting.rst:23
 msgid "Reproduce the issue you've found"
-msgstr ""
+msgstr "Reproduza o problema que você encontrou"
 
 #: ../../contribute/bugreporting.rst:25
 msgid ""
@@ -102,10 +113,15 @@ msgid ""
 "continue on to the next step. `If not <https://youtu.be/nn2FB1P_Mn8?"
 "t=10s>`_..."
 msgstr ""
+"Em seguida, descubra exatamente como recriar o problema que você encontrou. "
+"Documente as etapas exatas que você tomou para encontrar o problema em "
+"detalhes. Em seguida, reinicie seu telefone e execute essas etapas "
+"novamente. Se o problema persistir, continue na próxima etapa. `Se não "
+"<https://youtu.be/nn2FB1P_Mn8?t=10s>`_..."
 
 #: ../../contribute/bugreporting.rst:28
 msgid "Getting Logs"
-msgstr ""
+msgstr "Obtendo históricos (Logs)"
 
 #: ../../contribute/bugreporting.rst:30
 msgid ""
