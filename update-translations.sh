@@ -21,12 +21,7 @@ else
   virtualenv ~/ubportsdocsenv
   . ~/ubportsdocsenv/bin/activate
   echo -e "${YELLOW}Installing build tools and prerequisites.${PLAIN}"
-  sudo -H pip install sphinx sphinx_rtd_theme sphinx-intl
+  pip install sphinx sphinx_rtd_theme sphinx-intl
 fi
 echo -e "${GREEN}Building...${PLAIN}"
-sphinx-build -Wa . _build/gettext -b gettext -j `nproc --all`
-
-echo -e "${GREEN}Building po-files${PLAIN}"
-for LANGUAGE in $LANGUAGES; do
-    sphinx-intl update -l $LANGUAGE
-done
+sphinx-build -Wa . locales/pot -b gettext -j `nproc --all`

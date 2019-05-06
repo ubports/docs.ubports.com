@@ -38,11 +38,11 @@ In some cases some navigation controls are appropriate, such as Back and Forward
 URL patterns
 ------------
 
-Webapp authors often want to contain browsing to the target website. That is, the developer wants to control the URLs that can be opened in the webapp (all other URls are opened in the browser). This is done with URL patterns as part of the webapp command line.
+Webapp authors often want to contain browsing to the target website. That is, the developer wants to control the URLs that can be opened in the webapp (all other URLs are opened in the browser). This is done with URL patterns as part of the webapp command line.
 
 However, many web apps use pages that are hosted over multiple sites or that use external resources and pages.
 
-HoweverBoth containment and access to specified external URLs are implemented with URL patterns provided as arguments at launch time. Let’s take a closer look.
+However, both containment and access to specified external URLs are implemented with URL patterns provided as arguments at launch time. Let’s take a closer look.
 
 Uncontained by default
 ----------------------
@@ -64,7 +64,7 @@ One often wants to contain users to the site itself. That is, if the website is 
 
 ``--webappUrlPatterns=`` indicates a pattern is next
     http://www.ubuntu.com/* is the pattern
-    The asterix is a wildcard that matches any valid sequence of trailing (right-most) characters in a URL
+    The asterisk is a wildcard that matches any valid sequence of trailing (right-most) characters in a URL
 
 With this launch command and URL pattern, the user can navigate to and open in the webapp any URL that starts with http://www.ubuntu.com/. For example, they can click on the Phone button (http://www.ubuntu.com/phone) in the banner and it opens in the webapp, or the Tablet button (http://www.ubuntu.com/tablet). But, clicking Developer opens the corresponding URL in the browser.
 
@@ -89,7 +89,7 @@ Tip: Multiple patterns are often necessary to achieve the intended containment b
 Adding a specific subdomain
 ---------------------------
 
-Many URLs have one or more subdomains. (For example, in the following, “developer” is the subdomain: developer.ubuntu.com.) You can allow access to a single subdomain (and all of its subpages) with a pattern like this:::
+Many URLs have one or more subdomains. (For example, in the following, "developer" is the subdomain: developer.ubuntu.com.) You can allow access to a single subdomain (and all of its subpages) with a pattern like this:::
 
   --webappUrlPatterns=http://developer.ubuntu.com/*
 
@@ -165,4 +165,3 @@ The webapp experience is contained and isolated from the browser data point of v
 Storage
 
 W3C allows apps to use local storage, and Oxide/Webapp-container supports the main standards here: LocalStorage, IndexedDB, WebSQL.
-

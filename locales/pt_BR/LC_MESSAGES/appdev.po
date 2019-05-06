@@ -1,0 +1,1698 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, The UBports project (Creative Commons BY-SA 4.0)
+# This file is distributed under the same license as the UBports package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: UBports 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-30 10:25-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../appdev/guides/contenthub.rst:4
+msgid "The content hub - tips and tricks"
+msgstr ""
+
+#: ../../appdev/guides/contenthub.rst:9
+msgid "Content Hub Share Page"
+msgstr ""
+
+#: ../../appdev/guides/contenthub.rst:11
+msgid ""
+"On Ubuntu Touch the apps are confined. The way of sharing files between them "
+"is through the Content Hub, a part of the system that takes care of file "
+"import, export and sharing."
+msgstr ""
+
+#: ../../appdev/guides/contenthub.rst:14
+msgid "Different ways of sharing the content"
+msgstr ""
+
+#: ../../appdev/guides/contenthub.rst:16
+msgid ""
+"As we can see in the `Content Hub documentation <https://api-docs.ubports."
+"com/sdk/apps/qml/Ubuntu.Content/ContentHandler.html#detailed-description>`_, "
+"there are several ways of handling the file to be shared:"
+msgstr ""
+
+#: ../../appdev/guides/contenthub.rst:18
+msgid ""
+"``ContentHandler.Source`` (The app selected is going to be the source of the "
+"file imported)"
+msgstr ""
+
+#: ../../appdev/guides/contenthub.rst:19
+msgid ""
+"``ContentHandler.Destination`` (The app selected is going to be the "
+"destination of the file exported)"
+msgstr ""
+
+#: ../../appdev/guides/contenthub.rst:20
+msgid ""
+"``ContentHandler.Share`` (The app selected is going to be the app from witch "
+"the file is going to be shared from)"
+msgstr ""
+
+#: ../../appdev/guides/contenthub.rst:23
+msgid "Importing"
+msgstr ""
+
+#: ../../appdev/guides/contenthub.rst:28
+msgid "Webapp Creator on the OpenStore"
+msgstr ""
+
+#: ../../appdev/guides/contenthub.rst:30
+msgid ""
+"Looking into the code of Webapp Creator, we’ll find the code to import an "
+"image to be used as icon. Tapping on the place holder will open the Content "
+"Hub that will let us choose from where to import the image (`see the Webapp "
+"Creator source code <https://gitlab.com/cibersheep/webapp-creator/blob/"
+"master/webapp-creator/app/ImportPage.qml#L38>`_)"
+msgstr ""
+
+#: ../../appdev/guides/contenthub.rst:41
+msgid "``ContentPeerPicker`` is the element that shows the apps."
+msgstr ""
+
+#: ../../appdev/guides/contenthub.rst:47
+msgid ""
+"``contentType`` is passed in `Main.qml <https://gitlab.com/cibersheep/webapp-"
+"creator/blob/master/webapp-creator/app/Main.qml#L118>`_ as ContentType."
+"Pictures. So, we will only see apps from which we only can import images. "
+"``handler`` is passed in the same line as ContentHandler.Source. As we want "
+"to import an image from the app selected in the Content Hub."
+msgstr ""
+
+#: ../../appdev/guides/contenthub.rst:50
+msgid "Exporting"
+msgstr ""
+
+#: ../../appdev/guides/contenthub.rst:55
+msgid "Gelek in the OpenStore"
+msgstr ""
+
+#: ../../appdev/guides/contenthub.rst:57
+msgid ""
+"In Gelek, we are going to end with some saved games that we want to save in "
+"our device or share with ourselves (in Telegram and then save them to our "
+"computer)."
+msgstr ""
+
+#: ../../appdev/guides/contenthub.rst:61
+msgid ""
+"Tapping on the download icon we will get a Content Hub to *save* the game "
+"file (which is actually an export)."
+msgstr ""
+
+#: ../../appdev/guides/contenthub.rst:63
+msgid ""
+"The game file is a file of type ``glksave``. We will tell Content Hub that "
+"we are sending a file of type ``All`` (`see the Install Page code <https://"
+"gitlab.com/cibersheep/gelek/blob/master/app/InstallPage.qml#L38>`_)."
+msgstr ""
+
+#: ../../appdev/guides/contenthub.rst:76
+msgid ""
+"``contentType`` is ``ContentType.All``, so we will only see apps which are "
+"able to receive unmarked file types. ``handler`` is ``ContentHandler."
+"Destination``, so the app selected should store the saved game."
+msgstr ""
+
+#: ../../appdev/guides/contenthub.rst:78
+msgid ""
+"Tapping on the File Manager we will save the saved game in the folder we "
+"choose."
+msgstr ""
+
+#: ../../appdev/guides/contenthub.rst:81
+msgid "Sharing"
+msgstr ""
+
+#: ../../appdev/guides/contenthub.rst:83
+msgid ""
+"Similarly, tapping on the share icon will allow us to send the saved game "
+"through Telegram to ourselves (`see the Webapp Creator Import Page source "
+"code <https://gitlab.com/cibersheep/webapp-creator/blob/master/webapp-"
+"creator/app/ImportPage.qml#L38>`_)."
+msgstr ""
+
+#: ../../appdev/guides/contenthub.rst:96
+msgid ""
+"The only difference between this and the previous code is that ``handler`` "
+"is ``ContentHandler.Share``"
+msgstr ""
+
+#: ../../appdev/guides/contenthub.rst:99
+msgid "Wait a minute. Why the different apps?"
+msgstr ""
+
+#: ../../appdev/guides/contenthub.rst:104
+msgid "Content Hub: Export vs Share"
+msgstr ""
+
+#: ../../appdev/guides/contenthub.rst:106
+msgid ""
+"Each developer can decide the rules each app would follow in relation to the "
+"Content Hub. Why the OpenStore is shown as the destination of an export?"
+msgstr ""
+
+#: ../../appdev/guides/contenthub.rst:108
+msgid "Let’s check its manifest.json"
+msgstr ""
+
+#: ../../appdev/guides/contenthub.rst:121
+msgid ""
+"The above code defines that the hooks for the app named ``\"openstore\"`` in "
+"relation to the ``\"content-hub\"`` should follow the rules defined in "
+"``openstore-contenthub.json``"
+msgstr ""
+
+#: ../../appdev/guides/contenthub.rst:131
+msgid ""
+"This means, the OpenStore will be the destination for *all* ``ContentTypes``."
+msgstr ""
+
+#: ../../appdev/guides/contenthub.rst:133
+msgid "What about uMatriks? Let’s see its ``content-hub.json``"
+msgstr ""
+
+#: ../../appdev/guides/contenthub.rst:161
+msgid ""
+"So, with this example, uMatriks will be able to be the destination, source "
+"and share app for all kinds of ``ContentType``. What about the other hooks "
+"in the ``manifest.json``? That is discussed in the next guide."
+msgstr ""
+
+#: ../../appdev/guides/cookbook.rst:2
+msgid "App development cookbook"
+msgstr ""
+
+#: ../../appdev/guides/cookbook.rst:5
+msgid "Unofficial resources"
+msgstr ""
+
+#: ../../appdev/guides/cookbook.rst:7
+msgid ""
+"In this section you will find links to external resources about creating "
+"applications for Ubuntu Touch."
+msgstr ""
+
+#: ../../appdev/guides/cookbook.rst:9
+msgid ""
+"`Ubuntu Touch programming book <https://www.gitbook.com/book/mimecar/ubuntu-"
+"touch-programming-course/details>`__"
+msgstr ""
+
+#: ../../appdev/guides/cookbook.rst:12
+msgid "Playground"
+msgstr ""
+
+#: ../../appdev/guides/cookbook.rst:14
+msgid ""
+"In a completely free and open source community, it is natural to have "
+"community members exploring the limits of the platform in many many "
+"directions. In this section you will find links to external resources that "
+"do exactly that: Explore. The purpose of this list is to show the unlimited "
+"possibilities of an open platform like Ubuntu Touch."
+msgstr ""
+
+#: ../../appdev/guides/cookbook.rst:17
+msgid ""
+"The resources listed here do not necessarily represent the officially "
+"endorsed way of developing applications for Ubuntu Touch, but are "
+"interesting experiments."
+msgstr ""
+
+#: ../../appdev/guides/cookbook.rst:19
+msgid ""
+"`Free Pascal development for Ubuntu Touch <http://kriscode.blogspot."
+"tw/2016/09/freepascal-development-for-ubuntu-phone.html>`__"
+msgstr ""
+
+#: ../../appdev/guides/cookbook.rst:20
+msgid ""
+"`Lazarus development for Ubuntu Touch <http://kriscode.blogspot.tw/2016/10/"
+"lazarus-development-for-ubuntu-phone.html>`__"
+msgstr ""
+
+#: ../../appdev/guides/cookbook.rst:21
+msgid ""
+"`Geany on Ubuntu Touch device as text editor, source code editor, debugger "
+"and compiler for multiple languages <http://kriscode.blogspot.tw/2017/10/"
+"geany-on-ubuntu-touch-device-as-text.html>`__"
+msgstr ""
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:2
+msgid "Importing from Content Hub and URLdispatcher"
+msgstr ""
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:7
+msgid ""
+"In the previous guide we have seen a little bit about how Content Hub works. "
+"In this guide we will see how ``URLdispatcher`` works and how to handle "
+"imported data from the Content Hub."
+msgstr ""
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:10
+msgid "Handle data from the Content Hub"
+msgstr ""
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:15
+msgid "OpenStore app from open-store.io"
+msgstr ""
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:17
+msgid ""
+"One of the easiest ways of testing an app, is to send a test click to "
+"yourself on Telegram, and opening that click file with the OpenStore through "
+"the Content Hub:"
+msgstr ""
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:22
+msgid ""
+"If we tap on the OpenStore app, it will be opened and it will ask if we want "
+"to install the click file. Let’s take a look into `the Main.qml code of the "
+"app <https://github.com/UbuntuOpenStore/openstore-app/blob/master/openstore/"
+"Main.qml#L85>`_ to see how it is done:"
+msgstr ""
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:41
+msgid ""
+"Do you see that Connections element that targets the ContentHub? When it "
+"receives the signal onImportRequested, it will take the url of the data sent "
+"from the Content Hub (``transfer.items[0].url`` is the url of the first data "
+"sent) and open a ``PopUp`` element to let the user install the click."
+msgstr ""
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:44
+msgid "What about the URLdispatcher?"
+msgstr ""
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:46
+msgid ""
+"The URL dispatcher is a piece of software, similar to the Content Hub, that "
+"makes our life easier trying to choose the correct app for a certain "
+"protocol. For example: We probably want to open the web browser when tapping "
+"on an http protocol. If we tap on a map link it is handy to open it with "
+"uNav or to open a twitter link in the Twitter app! How does that work?"
+msgstr ""
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:48
+msgid ""
+"The ``URLdispatcher`` selects which app (according to their ``manifest."
+"json``) will open a certain link."
+msgstr ""
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:53
+msgid ""
+"Let’s see how our navigation app looks inside. uNav’s manifest shows special "
+"hooks for the ``URLdispatcher`` in its `manifest.json code <https://bazaar."
+"launchpad.net/~unav-devs/unav/trunk/view/head:/manifest.json#L9>`_:"
+msgstr ""
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:83
+msgid ""
+"This means that a link that looks like http://map.unav.me/xxxxx,xxxxx will "
+"be opened in uNav. And that’s defined in lines 2 and 3, where it looks for "
+"protocol http followed by map.unav.me."
+msgstr ""
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:85
+msgid ""
+"Also, a URI formatted geo:xxx,xxx should open in uNav, as it’s defined in "
+"line 11."
+msgstr ""
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:88
+msgid "And how do we manage the received URL?"
+msgstr ""
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:90
+msgid ""
+"After the ``URLdispatcher`` sends the link to the correspondent app, we need "
+"to handle that URL or URI in the targeted app. Let’s see how to do that:"
+msgstr ""
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:92
+msgid ""
+"In the main qml file, we need to add some code to know what to do with the "
+"dispatched URL. First add an `Arguments element <https://gitlab.com/ubports-"
+"linphone/linphone-simple/blob/master/qml/Main.qml#L189>`_ that holds the "
+"URL, as is done, for example, in the `Linphone app <https://open-store.io/"
+"app/linphone.cibersheep>`_. Also, we add `connection to the URI Handler "
+"<https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/Main."
+"qml#L200>`_ with a Connection element with ``UriHandler`` as a target."
+msgstr ""
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:120
+msgid ""
+"This code will manage a URI in the form ``linphone://sip:xxx@xxx.xx`` when "
+"the app is opened. But what do we need to do to handle this link when the "
+"app is closed?"
+msgstr ""
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:122
+msgid ""
+"We need to add a little bit `extra code <https://gitlab.com/ubports-linphone/"
+"linphone-simple/blob/master/qml/Main.qml#L69>`_ that will cover two cases: "
+"1) We receive one URL 2) We receive more than one URL"
+msgstr ""
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:149
+msgid "What happens if more than one app has the same URL type defined?"
+msgstr ""
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:151
+msgid ""
+"A very good question. What happens if we tap on a Twitter link? How is such "
+"a URL handled by the ``URLdispatcher`` as protocol ``http`` or the protocol "
+"``http://twitter``?"
+msgstr ""
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:153
+msgid "What happens if two apps have the same defined protocol?"
+msgstr ""
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:155
+msgid "Now it’s time to do some tests and share the results in the next guide."
+msgstr ""
+
+#: ../../appdev/guides/index.rst:4
+msgid "Developer guides"
+msgstr ""
+
+#: ../../appdev/guides/index.rst:6
+msgid ""
+"We are currently working on expanding our list of developer guides. In the "
+"mean time we recommend the `Ubuntu Touch Programming Course <https://mimecar."
+"gitbook.io/qt-course/>`__."
+msgstr ""
+
+#: ../../appdev/guides/index.rst:9 ../../appdev/publishing/index.rst:8
+msgid ""
+"If you are interested in helping create developer guides check out our "
+"`GitLab Project <https://gitlab.com/ubports/ux/development-resources>`__."
+msgstr ""
+
+#: ../../appdev/guides/writeable-dirs.rst:2
+msgid "Writable directories"
+msgstr ""
+
+#: ../../appdev/guides/writeable-dirs.rst:4
+msgid ""
+"App confinement is part of the Ubuntu Touch security concept. Data can be "
+"exchanged between apps only according to the AppArmor policies, mainly using "
+"the :ref:`ContentHub <contenthub>`. This being said, apps can only read and "
+"write files that are located in one of three app specific directories "
+"explained in this guide."
+msgstr ""
+
+#: ../../appdev/guides/writeable-dirs.rst:7
+msgid "Standard Paths"
+msgstr ""
+
+#: ../../appdev/guides/writeable-dirs.rst:8
+msgid ""
+"Besides the write access to the app directories explained below, the app can "
+"write debug messages into the app log file located at ``/home/phablet/.cache/"
+"upstart/application-click-<fullappname>_<appname>_<version>.log``. To append "
+"messages to the log file, use the `Qt debug <https://doc.qt.io/qt-5/qdebug."
+"html>`_ functions."
+msgstr ""
+
+#: ../../appdev/guides/writeable-dirs.rst:11
+msgid "Config"
+msgstr ""
+
+#: ../../appdev/guides/writeable-dirs.rst:12
+msgid "Path: ``/home/phablet/.config/<fullappname>/``"
+msgstr ""
+
+#: ../../appdev/guides/writeable-dirs.rst:14
+msgid ""
+"This is the place to store configurations files to. The music app for "
+"example stores its configuration to ``/home/phablet/.config/com.ubuntu.music/"
+"com.ubuntu.music.conf``."
+msgstr ""
+
+#: ../../appdev/guides/writeable-dirs.rst:17
+msgid "Cache"
+msgstr ""
+
+#: ../../appdev/guides/writeable-dirs.rst:18
+msgid "Path: ``/home/phablet/.cache/<fullappname>/``"
+msgstr ""
+
+#: ../../appdev/guides/writeable-dirs.rst:20
+msgid ""
+"This is the place to cache data for later use. The cache is also used by the "
+"Content Hub. Files that have been shared with the music app for example can "
+"be found in ``/home/phablet/.cache/com.ubuntu.music/HubIncoming/``."
+msgstr ""
+
+#: ../../appdev/guides/writeable-dirs.rst:23
+msgid "App data"
+msgstr ""
+
+#: ../../appdev/guides/writeable-dirs.rst:24
+msgid "Path: ``/home/phablet/.local/share/<fullappname>/``"
+msgstr ""
+
+#: ../../appdev/guides/writeable-dirs.rst:26
+msgid ""
+"This is where your app stores any data. The music app for example stores its "
+"data bases to ``/home/phablet/.local/share/com.ubuntu.music/Databases/``."
+msgstr ""
+
+#: ../../appdev/guides/writeable-dirs.rst:30
+msgid "Using Standard Paths in C++"
+msgstr ""
+
+#: ../../appdev/guides/writeable-dirs.rst:31
+msgid "The Qt header ``QStandardPaths`` provides the app's writable locations:"
+msgstr ""
+
+#: ../../appdev/guides/writeable-dirs.rst:43
+msgid "Using Standard Paths in QML"
+msgstr ""
+
+#: ../../appdev/guides/writeable-dirs.rst:44
+msgid ""
+"The Qt module `Qt.labs.platform <https://doc.qt.io/archives/qt-5.10/qml-qt-"
+"labs-platform-standardpaths.html>`_ provides the QStandardPaths in QML. "
+"Unfortunately it is not available on Ubuntu Touch, yet. Probably you don't "
+"want to ship that module with your app. Instead, you could simply let your C+"
+"+ plugin provide the paths to your QML part. Therefore, add these methods to "
+"your plugin class:"
+msgstr ""
+
+#: ../../appdev/guides/writeable-dirs.rst:64
+msgid ""
+"Assuming the name of your plugin is MyPlugin, you can access these paths in "
+"QML:"
+msgstr ""
+
+#: ../../appdev/index.rst:2
+msgid "App development"
+msgstr ""
+
+#: ../../appdev/index.rst:4
+msgid ""
+"Welcome to an open source and free platform under constant scrutiny and "
+"improvement by a vibrant global community, whose energy, connectedness, "
+"talent and commitment is unmatched. Ubuntu is also the third most deployed "
+"desktop OS in the world."
+msgstr ""
+
+#: ../../appdev/index.rst:7
+msgid "Get started"
+msgstr ""
+
+#: ../../appdev/index.rst:9
+msgid ""
+"Ubuntu Touch is a fun and vibrant platform for development. Whether you're a "
+"new developer or an experienced one, we have several resources to help you "
+"get started."
+msgstr ""
+
+#: ../../appdev/index.rst:11
+msgid ""
+"Ubuntu Touch supports several different types of apps. :ref:`Native apps "
+"<nativeapp>` are apps with interfaces made using QML or HTML with their "
+"behavior defined in JavaScript, C++, Python, or Go. :ref:`Web apps <webapp>` "
+"are special containers to run websites in."
+msgstr ""
+
+#: ../../appdev/index.rst:21
+msgid "Community"
+msgstr ""
+
+#: ../../appdev/index.rst:23
+msgid ""
+"Have questions that aren't answered in the docs or want to chat with other "
+"Ubuntu Touch developers? Join our `app dev Telegram group <https://t.me/"
+"UbuntuAppDevEN>`_ or chat with us on the `UBports app dev forum <https://"
+"forums.ubports.com/category/35/app-development>`_."
+msgstr ""
+
+#: ../../appdev/index.rst:26
+msgid "Tools"
+msgstr ""
+
+#: ../../appdev/index.rst:28
+msgid ""
+"`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ is a meta-build "
+"system for Ubuntu Touch applications that allows you to compile, build, test "
+"and publish ``click`` packages and provides various templates to get you "
+"started with app development. It is currently the easiest and most "
+"convenient way of building click packages for Ubuntu Touch. You can use any "
+"code editor or IDE that you choose and build your apps from the commandline "
+"with Clickable."
+msgstr ""
+
+#: ../../appdev/index.rst:30
+msgid ""
+"Alternatively there is the old `Ubuntu SDK IDE <https://docs.ubuntu.com/"
+"phone/en/platform/sdk>`__. Be aware that it is no longer supported by "
+"Canonical, and UBports has chosen to not support it either due to lack of "
+"manpower."
+msgstr ""
+
+#: ../../appdev/index.rst:32
+msgid ""
+"You can still install the SDK IDE in Ubuntu 16.04, but it is not guaranteed "
+"to work correctly. You can use the following commands to install::"
+msgstr ""
+
+#: ../../appdev/index.rst:42
+msgid "Guides"
+msgstr ""
+
+#: ../../appdev/index.rst:44
+msgid ""
+"Get started building your first app or learn about advanced concepts with "
+"our :ref:`Developer guides <devguides>`."
+msgstr ""
+
+#: ../../appdev/index.rst:57
+msgid "Publishing"
+msgstr ""
+
+#: ../../appdev/index.rst:59
+msgid ""
+"After you are done building your app, distribute it on the `OpenStore "
+"<https://open-store.io/>`__ with our :ref:`Publishing guides <publishing>`."
+msgstr ""
+
+#: ../../appdev/index.rst:68
+msgid "Documentation"
+msgstr ""
+
+#: ../../appdev/index.rst:70
+msgid "`QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__"
+msgstr ""
+
+#: ../../appdev/index.rst:71
+msgid ""
+"`Cordova HTML5 API <https://api-docs.ubports.com/sdk/apps/html5/index."
+"html>`__"
+msgstr ""
+
+#: ../../appdev/index.rst:72
+msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`__"
+msgstr ""
+
+#: ../../appdev/index.rst:75
+msgid "More Documentation"
+msgstr ""
+
+#: ../../appdev/index.rst:87
+msgid "Sample apps"
+msgstr ""
+
+#: ../../appdev/index.rst:89
+msgid ""
+"Learn more about app development by digging into our :ref:`Sample apps "
+"<sampleapps>`."
+msgstr ""
+
+#: ../../appdev/index.rst:99
+msgid "Preinstalled apps"
+msgstr ""
+
+#: ../../appdev/index.rst:101
+msgid ""
+"The :doc:`/contribute/preinstalled-apps` page has information on developing "
+"the apps which are included with Ubuntu Touch."
+msgstr ""
+
+#: ../../appdev/nativeapp/index.rst:4
+msgid "Native applications"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:2
+msgid "AppArmor Policy Groups"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:4
+msgid ""
+"This document contains a full list of Ubuntu Touch's available policy groups "
+"and a description of what they give your app permission to access."
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:6
+msgid "Each entry follows this format"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:21
+msgid ""
+"Policy usage affects whether your app will be accepted by the OpenStore. "
+"Apps containing policies with common usage are generally accepted "
+"immediately, while reserved usage policies will need to be manually reviewed."
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:24
+msgid "accounts"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:26
+msgid "Description: Can use Online Accounts."
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:28 ../../appdev/platform/apparmor.rst:38
+#: ../../appdev/platform/apparmor.rst:70 ../../appdev/platform/apparmor.rst:80
+#: ../../appdev/platform/apparmor.rst:100
+#: ../../appdev/platform/apparmor.rst:110
+#: ../../appdev/platform/apparmor.rst:155
+#: ../../appdev/platform/apparmor.rst:163
+#: ../../appdev/platform/apparmor.rst:173
+#: ../../appdev/platform/apparmor.rst:201
+#: ../../appdev/platform/apparmor.rst:231
+#: ../../appdev/platform/apparmor.rst:239
+#: ../../appdev/platform/apparmor.rst:249
+#: ../../appdev/platform/apparmor.rst:259
+#: ../../appdev/platform/apparmor.rst:287
+msgid "Usage: common"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:30
+msgid ""
+"The accounts policy gives your app the permissions it needs to access the "
+"`Online Accounts API`_."
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:34
+msgid "audio"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:36
+msgid ""
+"Description: Can play audio (allows playing remote content via media-hub)"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:40
+msgid ""
+"The audio policy is needed for your app to play audio via pulseaudio or "
+"media-hub. The permission also gives it the ability to send album art to the "
+"thumbnailer service, which is then shown on the sound indicator."
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:44
+msgid "bluetooth"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:46
+msgid "Description: Use bluetooth (bluez5) as an administrator."
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:48 ../../appdev/platform/apparmor.rst:58
+#: ../../appdev/platform/apparmor.rst:90 ../../appdev/platform/apparmor.rst:120
+#: ../../appdev/platform/apparmor.rst:128
+#: ../../appdev/platform/apparmor.rst:137
+#: ../../appdev/platform/apparmor.rst:147
+#: ../../appdev/platform/apparmor.rst:181
+#: ../../appdev/platform/apparmor.rst:191
+#: ../../appdev/platform/apparmor.rst:211
+#: ../../appdev/platform/apparmor.rst:221
+#: ../../appdev/platform/apparmor.rst:267
+#: ../../appdev/platform/apparmor.rst:277
+msgid "Usage: reserved"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:50
+msgid ""
+"This policy grants unrestricted access to Bluetooth devices. It is provided "
+"for administration of bluetooth and as a stepping stone towards developing a "
+"safe bluetooth API all apps can access."
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:54
+msgid "calendar"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:56
+msgid "Description: Can access the calendar."
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:60
+msgid ""
+"Calendar grants access to the Evolution dataserver's calendar and alarms "
+"APIs. It also grants access to sync-monitor."
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:62
+msgid ""
+"This policy is reserved since it grants free access to all calendars on the "
+"device at any time. The legacy bug about this situation is `LP #1227824`_ ."
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:66
+msgid "camera"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:68
+msgid "Description: Can access the camera(s)"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:72
+msgid "The camera policy grants access to device cameras."
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:76
+msgid "connectivity"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:78
+msgid "Description: Can access coarse network connectivity information"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:82
+msgid ""
+"The connectivity policy allows apps to determine rough information about the "
+"device's connectivity. This includes whether the device is connected to the "
+"Internet and whether it is connected via a Wi-Fi or mobile data connection."
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:86
+msgid "contacts"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:88
+msgid "Description: Can access contacts."
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:92
+msgid ""
+"The contacts policy allows apps to access the device user's contacts list. "
+"It is marked as reserved because it allows access to sync-monitor and "
+"unfettered access to the address book."
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:96
+msgid "content_exchange"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:98
+msgid "Description: Can request/import data from other applications"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:102
+msgid ""
+"Using the content_exchange policy allows your app to be a consumer of "
+"content on content-hub."
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:106
+msgid "content_exchange_source"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:108
+msgid "Description: Can provide/export data to other applications"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:112
+msgid ""
+"The content_exchange_source policy allows your app to provide content on "
+"content-hub."
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:116
+msgid "debug"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:118
+msgid ""
+"Description: Use special debugging tools. This should only be used in "
+"development and not for production packages. Note: use of this policy group "
+"provides significantly different confinement than normal and is not "
+"considered secure. You should never run untrusted programs using this policy "
+"group."
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:124
+msgid "document_files"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:126
+msgid ""
+"Description: Can read and write to document files. This policy group is "
+"reserved for certain applications, such as document viewers. Developers "
+"should typically use the content_exchange policy group and API to access "
+"document files instead."
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:130
+msgid ""
+"This policy allows apps to read and write to the \"Documents\" folders in "
+"the user's home directory and external media."
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:133
+msgid "document_files_read"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:135
+msgid ""
+"Description: Can read all document files. This policy group is reserved for "
+"certain applications, such as document viewers. Developers should typically "
+"use the content_exchange policy group and API to access document files "
+"instead."
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:139
+msgid ""
+"This policy allows apps to read the \"Documents\" folders in the user's home "
+"directory and external media."
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:143
+msgid "history"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:145
+msgid ""
+"Description: Can access the history-service. This policy group is reserved "
+"for vetted applications only in this version of the policy. A future version "
+"of the policy may move this out of reserved status."
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:151
+msgid "keep-display-on"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:153
+msgid "Description: Can request keeping the screen on"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:159
+msgid "location"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:161
+msgid "Description: Can access Location"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:165
+msgid "Allows an app to request access to the device's current location."
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:169
+msgid "microphone"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:171
+msgid "Description: Can access the microphone"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:177
+msgid "music_files"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:179
+msgid ""
+"Description: Can read and write to music files. This policy group is "
+"reserved for certain applications, such as music players. Developers should "
+"typically use the content_exchange policy group and API to access music "
+"files instead."
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:183
+msgid ""
+"The music_files policy group allows an app to read or write to the Music "
+"directories in the user's home folder or on external media."
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:187
+msgid "music_files_read"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:189
+msgid ""
+"Description: Can read all music files. This policy group is reserved for "
+"certain applications, such as music players. Developers should typically use "
+"the content_exchange policy group and API to access music files instead."
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:193
+msgid ""
+"The music_files_read policy group allows an app to read the Music "
+"directories in the user's home folder or on external media."
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:197
+msgid "networking"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:199
+msgid "Description: Can access the network"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:203
+msgid ""
+"The networking policy group allows an app to contact network devices and use "
+"the `download manager`_."
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:207
+msgid "picture_files"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:209
+msgid ""
+"Description: Can read and write to picture files. This policy group is "
+"reserved for certain applications, such as gallery applications. Developers "
+"should typically use the content_exchange policy group and API to access "
+"picture files instead."
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:213
+msgid ""
+"The picture_files policy group allows an app to read and write to the "
+"Pictures directories in the user's home folder or on external media."
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:217
+msgid "picture_files_read"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:219
+msgid ""
+"Description: Can read all picture files. This policy group is reserved for "
+"certain applications, such as gallery applications. Developers should "
+"typically use the content_exchange policy group and API to access picture "
+"files instead."
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:223
+msgid ""
+"The picture_files_read policy group allows an app to read the Pictures "
+"directories in the user's home folder or on external media."
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:227
+msgid "push-notification-client"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:229
+msgid "Description: Can use push notifications as a client"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:235
+msgid "sensors"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:237
+msgid "Description: Can access the sensors"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:241
+msgid "Allows apps to access `device sensors`_"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:245
+msgid "usermetrics"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:247
+msgid "Description: Can use UserMetrics to update the InfoGraphic"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:251
+msgid ""
+"Allows an app to write metrics to the UserMetrics service so they can be "
+"displayed on the InfoGraphic."
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:255
+msgid "video"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:257
+msgid ""
+"Description: Can play video (allows playing remote content via media-hub)"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:263
+msgid "video_files"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:265
+msgid ""
+"Description: Can read and write to video files. This policy group is "
+"reserved for certain applications, such as gallery applications. Developers "
+"should typically use the content_exchange policy group and API to access "
+"video files instead."
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:269
+msgid ""
+"The video_files policy group allows an app to read and write to the Videos "
+"directories in the user's home folder or on external media."
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:273
+msgid "video_files_read"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:275
+msgid ""
+"Description: Can read all video files. This policy group is reserved for "
+"certain applications, such as gallery applications. Developers should "
+"typically use the content_exchange policy group and API to access video "
+"files instead."
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:279
+msgid ""
+"The video_files_read policy group allows an app to read the Videos "
+"directories in the user's home folder or on external media."
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:283
+msgid "webview"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:285
+msgid "Description: Can use the UbuntuWebview"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:289
+msgid "The webview policy group allows apps to embed a `web browser view`_."
+msgstr ""
+
+#: ../../appdev/platform/click.rst:4
+msgid "Click package"
+msgstr ""
+
+#: ../../appdev/platform/click.rst:6
+msgid "Every ``click`` application package must embed at least 3 files:"
+msgstr ""
+
+#: ../../appdev/platform/click.rst:28
+msgid "``manifest.json`` file"
+msgstr ""
+
+#: ../../appdev/platform/click.rst:9
+msgid ""
+"Contains application declarations such as application name, description, "
+"author, framework sdk target, and version."
+msgstr ""
+
+#: ../../appdev/platform/click.rst:11
+msgid "Example ``manifest.json`` file::"
+msgstr ""
+
+#: ../../appdev/platform/click.rst:31
+msgid "AppArmor profile policy file"
+msgstr ""
+
+#: ../../appdev/platform/click.rst:31
+msgid ""
+"Contains which policy the app needs to work properly. See `Security and app "
+"isolation`_ below for more information on this file."
+msgstr ""
+
+#: ../../appdev/platform/click.rst:54
+msgid "``.desktop`` file"
+msgstr ""
+
+#: ../../appdev/platform/click.rst:34
+msgid ""
+"The launcher file will tell UT how to launch the app, which name and icon to "
+"display on the home screen, and some other properties."
+msgstr ""
+
+#: ../../appdev/platform/click.rst:36
+msgid "Example of ``app.desktop``::"
+msgstr ""
+
+#: ../../appdev/platform/click.rst:46
+msgid "Non exhaustive list of properties:"
+msgstr ""
+
+#: ../../appdev/platform/click.rst:48
+msgid "Name: Application title has shown in the dash"
+msgstr ""
+
+#: ../../appdev/platform/click.rst:49
+msgid "Exec: Path to the executable file"
+msgstr ""
+
+#: ../../appdev/platform/click.rst:50
+msgid "Icon: Path to the icon to display"
+msgstr ""
+
+#: ../../appdev/platform/click.rst:51
+msgid "Terminal: ``false`` if will not run in terminal window"
+msgstr ""
+
+#: ../../appdev/platform/click.rst:52
+msgid ""
+"Type: Specifies the type of the launcher file. The type can be Application, "
+"Link or Directory."
+msgstr ""
+
+#: ../../appdev/platform/click.rst:53
+msgid "X-Ubuntu-Touch: ``true`` to make the app visible"
+msgstr ""
+
+#: ../../appdev/platform/click.rst:54
+msgid "X-Ubuntu-XMir-Enable: ``true`` if your app is built for X"
+msgstr ""
+
+#: ../../appdev/platform/click.rst:61
+msgid "Security and app isolation"
+msgstr ""
+
+#: ../../appdev/platform/click.rst:63
+msgid ""
+"All Ubuntu apps and scopes are confined respecting AppArmor access control "
+"mechanism (see `Application Confinement <https://wiki.ubuntu.com/"
+"SecurityTeam/Specifications/"
+"ApplicationConfinement#App_confinement_with_AppArmor>`_) , meaning they only "
+"have access to their own resources and are isolated from other apps and "
+"parts of the system. The developer must declare which policy groups are "
+"needed for the app or scope to function properly with an apparmor ``.json`` "
+"file."
+msgstr ""
+
+#: ../../appdev/platform/click.rst:65
+msgid "Example ``apparmor.json`` file::"
+msgstr ""
+
+#: ../../appdev/platform/click.rst:77
+msgid "For a full list of available policy groups, see :doc:`apparmor`."
+msgstr ""
+
+#: ../../appdev/platform/index.rst:4
+msgid "Platform"
+msgstr ""
+
+#: ../../appdev/platform/index.rst:7
+msgid "Content Hub"
+msgstr ""
+
+#: ../../appdev/platform/index.rst:7
+msgid ""
+"Each application can expose content outside its sandbox, giving the user "
+"precise control over what can be imported, exported or shared with the world "
+"and other apps."
+msgstr ""
+
+#: ../../appdev/platform/index.rst:10
+msgid "Push notifications"
+msgstr ""
+
+#: ../../appdev/platform/index.rst:10
+msgid ""
+"By using a push server and a companion client, instantly serve users with "
+"the latest information from their network and apps."
+msgstr ""
+
+#: ../../appdev/platform/index.rst:13
+msgid "URL dispatcher"
+msgstr ""
+
+#: ../../appdev/platform/index.rst:13
+msgid ""
+"Help users navigate between your apps and drive their journey with the URL "
+"dispatcher."
+msgstr ""
+
+#: ../../appdev/platform/index.rst:17
+msgid "Online accounts"
+msgstr ""
+
+#: ../../appdev/platform/index.rst:16
+msgid ""
+"Simplify user access to online services by integrating with the online "
+"accounts API. Accounts added by the user on the device are registered in a "
+"centralized hub, allowing other apps to re-use them."
+msgstr ""
+
+#: ../../appdev/platform/index.rst:19
+msgid "`Read the docs <https://docs.ubuntu.com/phone/en/platform/>`__"
+msgstr ""
+
+#: ../../appdev/publishing/index.rst:4
+msgid "App publishing guides"
+msgstr ""
+
+#: ../../appdev/publishing/index.rst:6
+msgid ""
+"We are currently working on expanding our list of publishing guides. In the "
+"mean time you can get started over at the `OpenStore's submission page "
+"<https://open-store.io/submit>`__."
+msgstr ""
+
+#: ../../appdev/samples/index.rst:4
+msgid "Sample Apps"
+msgstr ""
+
+#: ../../appdev/samples/index.rst:6
+msgid ""
+"We are currently working on expanding our list of sample apps. In the mean "
+"time many apps on the `OpenStore <https://open-store.io/>`__ are open source "
+"and can be used as a reference."
+msgstr ""
+
+#: ../../appdev/samples/index.rst:8
+msgid ""
+"If you are interested in helping create sample apps check out our `GitLab "
+"Project <https://gitlab.com/ubports/ux/development-resources>`__."
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:2 ../../appdev/webapp/index.rst:15
+msgid "Guide"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:5
+msgid "How the webapp fits into the shell"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:7
+msgid ""
+"A web app displays in a webview inside a webapp-container that runs as an "
+"Ubuntu app in the Ubuntu/Unity shell."
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:9
+msgid "Taking a closer look:"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:11
+msgid ""
+"At the innermost level, there is a website that the developer identifies by "
+"URL. The website is rendered and runs in an Oxide webview. Oxide is a Blink/"
+"Chrome webview that is customized for Ubuntu. The Oxide webview runs and "
+"displays in the webapp-container. The webapp-container is the executable app "
+"runtime that is integrated with the Ubuntu/unity shell."
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:16
+msgid "Launching"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:18
+msgid "You can launch a webapp from the terminal with:::"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:22
+msgid "For example:::"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:26
+msgid ""
+"This simple form works, but almost every webapp also uses other features, "
+"such as URL containment with URL patterns as described below."
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:29
+msgid "User interface"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:31
+msgid ""
+"A webapp generally fills the entire app screen space, without the need of "
+"the UI controls generally found on standard browsers."
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:33
+msgid ""
+"In some cases some navigation controls are appropriate, such as Back and "
+"Forward buttons, or a URL address bar. These are added as command line "
+"arguments:"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:35
+msgid ""
+"``--enable-back-forward`` Enable the display of the back and forward buttons "
+"in the toolbar (at the bottom of the webapp window)"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:36
+msgid ""
+"``--enable-addressbar`` Enable the display of the address bar (at the bottom "
+"of the webapp window)"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:39
+msgid "URL patterns"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:41
+msgid ""
+"Webapp authors often want to contain browsing to the target website. That "
+"is, the developer wants to control the URLs that can be opened in the webapp "
+"(all other URLs are opened in the browser). This is done with URL patterns "
+"as part of the webapp command line."
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:43
+msgid ""
+"However, many web apps use pages that are hosted over multiple sites or that "
+"use external resources and pages."
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:45
+msgid ""
+"However, both containment and access to specified external URLs are "
+"implemented with URL patterns provided as arguments at launch time. Let’s "
+"take a closer look."
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:48
+msgid "Uncontained by default"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:50
+msgid ""
+"By default, there is no URL containment. Suppose you launch a webapp without "
+"any patters and only a starting URL like this:::"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:54
+msgid ""
+"The user can navigate to any URL without limitation. For example, if they "
+"click the Developer button at the top, they navigate to developer.ubuntu."
+"com, and it displays in the webapp."
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:56
+msgid ""
+"Tip: You can see the URL of the current page by enabling the address bar "
+"with ``--enable-addressbar``."
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:59
+msgid "Simple containment to the site"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:61
+msgid ""
+"One often wants to contain users to the site itself. That is, if the website "
+"is www.ubuntu.com, it may be useful to contain webapp users only to subpages "
+"of www.ubuntu.com. This is done by adding a wildcard URL pattern to the "
+"launch command, as follows:::"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:67
+msgid "``--webappUrlPatterns=`` indicates a pattern is next"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:66
+msgid ""
+"http://www.ubuntu.com/* is the pattern The asterisk is a wildcard that "
+"matches any valid sequence of trailing (right-most) characters in a URL"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:69
+msgid ""
+"With this launch command and URL pattern, the user can navigate to and open "
+"in the webapp any URL that starts with http://www.ubuntu.com/. For example, "
+"they can click on the Phone button (http://www.ubuntu.com/phone) in the "
+"banner and it opens in the webapp, or the Tablet button (http://www.ubuntu."
+"com/tablet). But, clicking Developer opens the corresponding URL in the "
+"browser."
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:71
+msgid ""
+"Tip: Make sure to fully specify the subdomain in your starting URL, that is, "
+"use http://www.ubuntu.com instead of www.ubuntu.com. Not specifying the "
+"subdomain would create an ambiguous URL and thus introduces security "
+"concerns. More complex wildcard patterns"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:74
+msgid ""
+"You might want to limit access to only some subpages of your site from "
+"within the webapp. This is easy with wildcard patterns. (Links to other "
+"subpages are opened in the browser.) For example, the following allows "
+"access to www.ubuntu.com/desktop/features and www.ubuntu.com/phone/features "
+"while not allowing access to www.ubuntu.com/desktop or www.ubuntu.com/phone::"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:80
+msgid "Multiple patterns"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:82
+msgid ""
+"You can use multiple patterns by separating them with a comma. For example, "
+"the following allows access only to www.ubuntu.com/desktop/features and www."
+"ubuntu.com/phone/features:::"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:86
+msgid ""
+"Tip: Multiple patterns are often necessary to achieve the intended "
+"containment behavior."
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:90
+msgid "Adding a specific subdomain"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:92
+msgid ""
+"Many URLs have one or more subdomains. (For example, in the following, "
+"“developer” is the subdomain: developer.ubuntu.com.) You can allow access to "
+"a single subdomain (and all of its subpages) with a pattern like this:::"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:96
+msgid ""
+"However, one usually wants the user to be able to navigate back to the "
+"starting URL (and its subpages). So, if the starting URL is http://www."
+"ubuntu.com, a second pattern is needed:::"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:100
+msgid ""
+"Putting these together, here’s an example that starts on http://www.ubuntu."
+"com and allows navigation to http://developer.ubuntu.com and subpages and "
+"back to http://www.ubuntu.com and subpages:::"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:105
+msgid "Adding subdomains with a wildcard"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:107
+msgid ""
+"Some URLs have multiple subdomains. For example, www.ubuntu.com has design."
+"ubuntu.com, developer.ubuntu.com and more. You can add access to all "
+"subdomains with a wildcard in the subdomain position:::"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:111
+msgid ""
+"Note: An asterisk in the subdomain position matches any valid single "
+"subdomain. This single pattern is sufficient to enable browsing to any "
+"subdomain and subpages, including back to the starting URL (http://www."
+"ubuntu.com) and its subpages."
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:114
+msgid "Adding https"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:116
+msgid ""
+"Sometimes a site uses https for some of its URLs. Here is an example that "
+"allows https and https as access within the webapp to www.launchpad.net (and "
+"all subpages due to the wildcard):::"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:120
+msgid ""
+"Note: the question mark in https?. This means the preceding character (the "
+"‘s’) is optional. If https is always required, omit the question mark."
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:123
+msgid "Command line arguments"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:125
+msgid ""
+"The webapp-container accepts many options to fine tune how it hosts various "
+"web applications."
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:127
+msgid "See all help with:::"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:131
+msgid "Note: Only the following options apply to converged Ubuntu.::"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:145
+msgid "Chrome options (if none specified, no chrome is shown by default):::"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:150
+msgid ""
+"Note: The other available options are specific to desktop webapps. It is "
+"recommended to not use them anymore."
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:153
+msgid "User-Agent string override"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:155
+msgid ""
+"Some websites check specific portions of the web engine identity, aka the "
+"User-Agent string, to adjust their presentation or enable certain features. "
+"While not a recommended practice, it is sometimes necessary to change the "
+"default string sent by the webapp container."
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:157
+msgid "To change the string from the command line, use the following option:::"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:162
+msgid "Browser data containment"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:164
+msgid ""
+"The webapp experience is contained and isolated from the browser data point "
+"of view. That is webapps do not access data from any other installed "
+"browser, such as history, cookies and so on. Other browser on the system do "
+"not access the webapp’s data. Storage"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:167
+msgid ""
+"W3C allows apps to use local storage, and Oxide/Webapp-container supports "
+"the main standards here: LocalStorage, IndexedDB, WebSQL."
+msgstr ""
+
+#: ../../appdev/webapp/index.rst:4
+msgid "Web applications"
+msgstr ""
+
+#: ../../appdev/webapp/index.rst:6
+msgid ""
+"Ubuntu Webapps are a great way to deliver online web applications into "
+"Ubuntu."
+msgstr ""
+
+#: ../../appdev/webapp/index.rst:8
+msgid ""
+"The Ubuntu platform provides an advanced web engine container to run online "
+"applications on the Ubuntu client devices."
+msgstr ""
+
+#: ../../appdev/webapp/index.rst:10
+msgid ""
+"Web applications are hosted online. They can be as simple as a website, like "
+"an online news site, or they can distribute content like videos. They can "
+"also have a rich user interface or use the WebGL extension to deliver games "
+"online."
+msgstr ""
+
+#: ../../appdev/webapp/index.rst:12
+msgid ""
+"Note: Ubuntu webapps and Ubuntu HTML5 apps are similar but not identical. "
+"The main difference is that the content of a webapp is provided through a "
+"URL, whereas HTML5 apps install their content (and usually provide an Ubuntu "
+"HTML5 GUI). Webapps also have restricted access to platform APIs."
+msgstr ""
+
+#: ../../appdev/webapp/index.rst:17
+msgid ""
+"This guide targets webapps for converged Ubuntu, that is, Ubuntu for Devices "
+"(phones and tablets). The Ubuntu Desktop has additional webapps support not "
+"covered here. Support for webapps on converged Ubuntu will continue to grow, "
+"and of course the future of Ubuntu is convergence, so stay tuned."
+msgstr ""
+
+#: ../../appdev/webapp/index.rst:26
+msgid "Quick start"
+msgstr ""
+
+#: ../../appdev/webapp/index.rst:28
+msgid ""
+"There are several tools to help you package and deploy your webapp to your "
+"device:"
+msgstr ""
+
+#: ../../appdev/webapp/index.rst:30
+msgid ""
+"`Webapp creator <https://open-store.io/app/webapp-creator.jujuyeh>`_ "
+"application available from the openstore"
+msgstr ""
+
+#: ../../appdev/webapp/index.rst:31
+msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ CLI"
+msgstr ""
+
+#: ../../appdev/webapp/index.rst:35
+msgid "Debugging your webapp"
+msgstr ""
+
+#: ../../appdev/webapp/index.rst:37
+msgid "This guide give you some tips to help you debug your webapp."
+msgstr ""
+
+#: ../../appdev/webapp/webdebug.rst:2
+msgid "Debug web application"
+msgstr ""
+
+#: ../../appdev/webapp/webdebug.rst:4
+msgid ""
+"Most web-devs will probably want do most of their coding and debugging in "
+"the usual browser environment. The Ubuntu Touch browser is compliant with "
+"modern web standards, and most webapps will just work without further "
+"changes."
+msgstr ""
+
+#: ../../appdev/webapp/webdebug.rst:6
+msgid ""
+"For those (hopefully) rare cases where further debugging is needed, there "
+"are two ways to gain further information on the failure."
+msgstr ""
+
+#: ../../appdev/webapp/webdebug.rst:9
+msgid "Watch the logs"
+msgstr ""
+
+#: ../../appdev/webapp/webdebug.rst:11
+msgid ""
+"If you are comfortable in a CLI environment, most Javascript errors will "
+"leave an entry in the app log file::"
+msgstr ""
+
+#: ../../appdev/webapp/webdebug.rst:17
+msgid "Debugging in the browser"
+msgstr ""
+
+#: ../../appdev/webapp/webdebug.rst:20
+msgid ""
+"The default Ubuntu Touch browser is based on the Blink technology that is "
+"also used in Chrome/Chromium. By starting the browser in a special mode, you "
+"have access to the regular Chrome-style debugger."
+msgstr ""
+
+#: ../../appdev/webapp/webdebug.rst:22
+msgid "On your phone, start the browser in inspector mode:::"
+msgstr ""
+
+#: ../../appdev/webapp/webdebug.rst:26
+msgid ""
+"Now on your computer, launch Chrome/Chromium browser, and point address to "
+"``http://YOUR_UT_IP_ADDRESS:9221``"
+msgstr ""

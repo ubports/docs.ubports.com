@@ -1,0 +1,120 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, The UBports project (Creative Commons BY-SA 4.0)
+# This file is distributed under the same license as the UBports package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: UBports 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-30 10:25-0600\n"
+"PO-Revision-Date: 2018-06-03 16:59+0000\n"
+"Last-Translator: Rrahim Gashi <jimmygashi@gmail.com>\n"
+"Language-Team: Albanian <https://translate.ubports.com/projects/ubports-docs/"
+"documentation-index/sq/>\n"
+"Language: sq\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.15\n"
+
+#: ../../index.rst:2
+msgid "Welcome to the UBports documentation!"
+msgstr "Mirë se vini në dokumentacionin e UBports!"
+
+#: ../../index.rst:4
+msgid "Welcome to the official documentation of the UBports project!"
+msgstr "Mirë se vini në dokumentacionin zyrtar të projektit UBports!"
+
+#: ../../index.rst:6
+msgid ""
+"UBports develops the mobile phone operating system Ubuntu Touch. Ubuntu "
+"Touch is a mobile operating system focused on ease of use, privacy, and "
+"convergence."
+msgstr ""
+"UBports zhvillon sistemin operativ të telefonit celular Ubuntu Touch. Ubuntu "
+"Touch është një sistem operativ celular i fokusuar në lehtësinë e "
+"përdorimit, privatësisë dhe konvergjencës."
+
+#: ../../index.rst:8
+msgid ""
+"On this website you find instructions how to install Ubuntu Touch on your "
+"mobile phone, user guides and detailed documentation on all system "
+"components. If this is your first time here, please consider reading our :"
+"doc:`introduction <about/introduction>`."
+msgstr ""
+"Në këtë faqe ju gjeni udhëzime se si ta instaloni Ubuntu Touch në telefonin "
+"tuaj celular, udhëzimet e përdoruesit dhe dokumentacionin e detajuar në të "
+"gjitha komponentët e sistemit. Nëse kjo është hera e parë juaj këtu, ju "
+"lutemi konsideroni leximin tonë :doc:`hyrje<rreth/hyrje>`."
+
+#: ../../index.rst:10
+msgid ""
+"If you want to help improving this documentation, :doc:`the Documentation "
+"contribute page <contribute/documentation>` will get you started."
+msgstr ""
+"Nëse dëshironi të ndihmoni në përmirësimin e këtij dokumentacioni, :doc:"
+"`faqja e kontributit të Dokumentacionit<kontribuon/dokumentacionin>` do t'ju "
+"fillojë."
+
+#: ../../index.rst:12
+msgid "You may view this documentation in the following languages:"
+msgstr "Ju mund ta shihni këtë dokumentacion në gjuhët e mëposhtme:"
+
+#: ../../index.rst:14
+msgid "`English <https://docs.ubports.com/en/latest/>`_"
+msgstr "`Anglisht <https://docs.ubports.com/en/latest/>` _"
+
+#: ../../index.rst:15
+msgid "`Català <https://docs.ubports.com/ca/latest/>`_"
+msgstr "`Katalonje <https://docs.ubports.com/en/latest/>` _"
+
+#: ../../index.rst:16
+msgid "`Français <https://docs.ubports.com/fr/latest/>`_"
+msgstr "`Frëngjisht <https://docs.ubports.com/fr/latest/>` _"
+
+#: ../../index.rst:17
+msgid "`Deutsch <https://docs.ubports.com/de/latest/>`_"
+msgstr "`Gjermanisht <https://docs.ubports.com/en/latest/>` _"
+
+#: ../../index.rst:18
+msgid "`Italiano <https://docs.ubports.com/it/latest/>`_"
+msgstr "`Italisht <https://docs.ubports.com/it/latest/>` _"
+
+#: ../../index.rst:19
+msgid "`Română <https://docs.ubports.com/ro/latest/>`_"
+msgstr "`Rumanisht <https://docs.ubports.com/ro/latest/>`_"
+
+#: ../../index.rst:20
+msgid "`Türkçe <https://docs.ubports.com/tr/latest/>`_"
+msgstr "`Turqisht <https://docs.ubports.com/tr/latest/>`_"
+
+#: ../../index.rst:21
+msgid "`Español <https://docs.ubports.com/es/latest/>`_"
+msgstr "`Spanjisht <https://docs.ubports.com/es/latest/>`_"
+
+#: ../../index.rst:23
+msgid "About"
+msgstr "Rreth"
+
+#: ../../index.rst:32
+msgid "User Guide"
+msgstr "Libri i përdoruesit"
+
+#: ../../index.rst:42
+msgid "Contribute"
+msgstr "Marr pjesë"
+
+#: ../../index.rst:50
+#, fuzzy
+msgid "Development"
+msgstr "Zhvillimi i App"
+
+#: ../../index.rst:58
+msgid "Porting"
+msgstr "Portimi"
+
+#: ../../index.rst:65
+msgid "Platform"
+msgstr "Platforma"

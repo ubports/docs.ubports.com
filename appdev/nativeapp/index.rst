@@ -1,2 +1,4 @@
+.. _nativeapp:
+
 Native applications
 ===================

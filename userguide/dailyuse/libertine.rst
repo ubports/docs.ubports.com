@@ -11,9 +11,9 @@ Manage containers
 Create a container
 ^^^^^^^^^^^^^^^^^^
 
-The first step is to create a container where applications can be installed:
+The first step is to create a container where applications can be installed::
 
-  ``libertine-container-manager create -i CONTAINER-IDENTIFIER``
+  libertine-container-manager create -i CONTAINER-IDENTIFIER
 
 You can add extra options such as:
 
@@ -28,28 +28,30 @@ The creating process can take some time, due to the size of the container (some 
 List containers
 ^^^^^^^^^^^^^^^
 
-To list all containers created run:
-  ``libertine-container-manager list``
+To list all containers created run::
+
+  libertine-container-manager list
 
 Destroy a container
 ^^^^^^^^^^^^^^^^^^^
+::
 
-  ``libertine-container-manager destroy -i CONTAINER-IDENTIFIER``
+  libertine-container-manager destroy -i CONTAINER-IDENTIFIER
 
 Manage applications
 -------------------
 
-Once a container is set up, you can list the installed applications:
+Once a container is set up, you can list the installed applications::
 
-  ``libertine-container-manager list-apps``
+  libertine-container-manager list-apps
 
-Install a package:
+Install a package::
 
-  ``libertine-container-manager install-package -p PACKAGE-NAME``
+  libertine-container-manager install-package -p PACKAGE-NAME
 
-Remove a package:
+Remove a package::
 
-  ``libertine-container-manager remove-package -p PACKAGE-NAME``
+  libertine-container-manager remove-package -p PACKAGE-NAME
 
 .. note::
     If you have more than one container, then you can use the option ``-i CONTAINER-IDENTIFIER`` to specify for which container you want to perform an operation.
@@ -63,11 +65,11 @@ Libertine applications do have access to these folders:
  * Documents
  * Music
  * Pictures
- * Downloads 
- * Videos 
+ * Downloads
+ * Videos
 
-Tipps
------
+Tips
+----
 
 Locations
 ^^^^^^^^^
@@ -80,20 +82,65 @@ For every container you create there will be two directories created:
 Shell access
 ^^^^^^^^^^^^
 
-To execute any arbitrary command as root inside the container run:
+There are 2 options for executing commands inside the container.
 
-  ``libertine-container-manager exec -c COMMAND``
+**The first option** is based on ``libertine-container-manager exec``. It lets you run your commands as root. The drawback is that the container is not completely set up. So far we know that the `folders mentioned above (Documents, Music, ...) are not mounted <https://askubuntu.com/questions/831830/libertine-terminal-applications-how-to-access-to-the-real-home-dir#comment1273744_833984/>`_ i.e., the ``/home/phablet/`` directory is empty. Likewise the directory referenced in ``TMPDIR`` is not available what may lead to problems with software that tries to create temporary files or directories.
+You may use this option e.g., for installing packages.
 
-For example, to get a shell into your container you can run:
+To execute a command you can use the following pattern::
 
-  ``libertine-container-manager exec -c /bin/bash``
+  libertine-container-manager exec -i CONTAINER-IDENTIFIER -c "COMMAND-LINE"
+
+For example run::
+
+  libertine-container-manager exec -i CONTAINER-IDENTIFIER -c "apt-get --help"
+
+To get a shell into your container as ``root`` run::
+
+  libertine-container-manager exec -i CONTAINER-IDENTIFIER -c "/bin/bash"
+
+**The second option** is based on ``libertine-launch``. It will execute your commands as user phablet in a completely set up container. So you may use this option to modify your files using installed packages.
+
+To execute a command you can use the following pattern::
+
+  libertine-launch -i CONTAINER-IDENTIFIER COMMAND-LINE
+
+For example run::
+
+  libertine-launch -i CONTAINER-IDENTIFIER ls -a
+
+To get a shell as user ``phablet`` run::
+
+  DISPLAY= libertine-launch -i CONTAINER-IDENTIFIER /bin/bash
 
 .. note::
     When you launch bash in this way you will not get any specific feedback to confirm that you are now *inside* the container. You can check ``ls /`` to confirm for yourself that you are inside the container. The listing of ``ls /`` will be different inside and outside of the container.
 
-To get a shell as user ``phablet`` run:
+Accessing SD card
+^^^^^^^^^^^^^^^^^
 
-  ``DISPLAY= libertine-launch -i CONTAINER-IDENTIFIER /bin/bash``
+In order to access your SD-card or any other part of the regular filesystem from inside your libertine container you must create a bind mount.
+
+In order to add a bind mount use::
+
+  libertine-container-manager configure -i CONTAINER-IDENTIFIER -b add -p /media/phablet/ID-OF-SD
+  
+You can also make deep links in case you only want parts of your SD-card available in the container. In this case just the entire path to the directory you want to bind mount::
+
+  libertine-container-manager configure -i CONTAINER-IDENTIFIER -b add -p /media/phablet/ID-OF-SD/directory/you/want
+  
+This will not allow the container access to any of the directories earlier in the path for anything other than accessing your mounted directory.
+    
+In order to use the SD-card as extra space for your container, make sure first to format it using ext4 or similar.
+There is a mis-feature in udisk2 that mounts SD-cards (showexec) that ensures only files ending in .bat, .exe or .com can be executed from the drive if it is (v)fat formatted. This has been changed in other distributions allowing any file to have execute priviliges, but not ubuntu. The reccomended workaround is to add a udev rule to control how to mount a card with a given id, but since the udev rules are on the read only port on touch, this is not possible.
+
+Shortcuts
+^^^^^^^^^
+
+If you want, you can add aliases for command line tools. Add lines like the following ones to your ``~/.bash_aliases``::
+
+    alias git='libertine-launch -i CONTAINER-IDENTIFIER git'
+    alias screenfetch='libertine-launch -i CONTAINER-IDENTIFIER screenfetch'
 
 Background
 ----------

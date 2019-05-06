@@ -1,5 +1,10 @@
+# Editors
+.atom/
+.vscode/
+
 # sphinx build folder
 _build
+.doctrees/
 
 # Compiled source #
 ###################
