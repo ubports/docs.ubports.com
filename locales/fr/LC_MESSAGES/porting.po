@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-08-28 14:00+0200\n"
-"PO-Revision-Date: 2019-04-24 20:42+0000\n"
+"PO-Revision-Date: 2019-04-26 12:36+0000\n"
 "Last-Translator: Anne Onyme <anneonyme017@netcourrier.com>\n"
 "Language-Team: French <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-porting/fr/>\n"
@@ -43,6 +43,10 @@ msgid ""
 "``fstab`` file includes any contexts, the partition that they are on will "
 "fail to mount and your port will not work correctly."
 msgstr ""
+"Le ``mount`` d'halium-boot n'est pas informé des contextes SELinux. Si le "
+"fichier ``fstab`` de vos appareils inclut des contextes, la partition sur "
+"laquelle ils sont n'arrivera pas à monter et votre portage ne fonctionnera "
+"pas correctement."
 
 #: ../../porting/building-halium-boot.rst:11
 msgid ""
@@ -92,7 +96,6 @@ msgid "Edit kernel config"
 msgstr "Modification de la configuration du noyau"
 
 #: ../../porting/building-halium-boot.rst:24
-#, fuzzy
 msgid ""
 "Ubuntu Touch requires a slightly different kernel config than Halium, "
 "including enabling Apparmor. Luckily, we have a nice script for this "
@@ -102,8 +105,8 @@ msgstr ""
 "Ubuntu Touch a besoin d'une configuration de noyau légèrement différente de "
 "celle d'Halium, intégrant l'activation d'Apparmor. Fort heureusement, nous "
 "disposons d'un joli script pour cela, ``check-kernel-config``. Il est "
-"disponible dans le répertoire ubports-boot. Exécutez-le simplement sur votre "
-"configuration comme ci-dessous ::"
+"disponible dans le répertoire halium-boot. Exécutez-le simplement sur votre "
+"configuration comme ci-dessous::"
 
 #: ../../porting/building-halium-boot.rst:28
 msgid ""
@@ -159,17 +162,16 @@ msgid "Continue on"
 msgstr "Continuez"
 
 #: ../../porting/building-halium-boot.rst:44
-#, fuzzy
 msgid ""
 "Now that you have halium-boot built, you can move on to :doc:"
 "`installing-16-04`."
 msgstr ""
-"Maintenant qu'ubports-boot est construit, vous pouvez passer à l': doc:"
-"`installing-16-04`."
+"Maintenant qu'halium-boot est construit, vous pouvez passer à l': "
+"doc:`installing-16-04`."
 
 #: ../../porting/common-problems-install.rst:7
 msgid "Common installation problems"
-msgstr "Problèmes courants d'installation"
+msgstr "Problèmes d'installation fréquents"
 
 #: ../../porting/common-problems-install.rst:9
 msgid ""
@@ -202,7 +204,7 @@ msgid ""
 "rsyslogd is enabled. If you have this error, please add your voice to "
 "`ubports/ubuntu-touch#560`_ and then try the following workaround:"
 msgstr ""
-"Cela semble être une erreur commune sur les appareils arm64 avec le noyau "
+"Cela semble être une erreur fréquente sur les appareils arm64 avec le noyau "
 "3.10 lorsque rsyslogd est activé. Si vous avez cette erreur, ajoutez votre "
 "voix à `ubports/ubuntu-touch#560`_ puis tentez le palliatif suivant :"
 
@@ -233,6 +235,9 @@ msgid ""
 "The device may reboot cleanly after about a minute of uptime. If you are "
 "logged in when the reboot occurs, you will see the following message::"
 msgstr ""
+"L'appareil peut redémarrer proprement après environ une minute de "
+"disponibilité. Si vous êtes connecté(e) lorsque le redémarrage se produit, "
+"vous verrez le message suivant::"
 
 #: ../../porting/common-problems-install.rst:45
 msgid ""
@@ -240,6 +245,9 @@ msgid ""
 "crashing repeatedly. The system watchdog process sees this and reboots the "
 "device."
 msgstr ""
+"Ceci se produit car ``lightdm``, le gestionnaire d'affichage d'Ubuntu Touch, "
+"plante à plusieurs reprises. Le processus  de surveillance du système voit "
+"cela et redémarre l'appareil."
 
 #: ../../porting/common-problems-install.rst:47
 msgid ""
@@ -250,9 +258,8 @@ msgstr ""
 "survienne et lancez la commande suivante::"
 
 #: ../../porting/common-problems-run.rst:2
-#, fuzzy
 msgid "Common problems when running Ubuntu Touch"
-msgstr "Lancement d'Ubuntu Touch"
+msgstr "Problèmes fréquents lors de l'exécution d'Ubuntu Touch"
 
 #: ../../porting/common-problems-run.rst:4
 msgid ""
@@ -272,6 +279,10 @@ msgid ""
 "it is likely that you have a problem with graphical applications crashing. "
 "See `Mir servers crash`_ for more information."
 msgstr ""
+"Si rien ne s'affiche à l'écran même après l'ajout de règles udev à votre "
+"portage, il est probable que vous ayez un problème avec le plantage "
+"d'applications graphiques. Consultez le chapitre `Plantage des serveurs de "
+"Mir`_ pour plus d'informations."
 
 #: ../../porting/common-problems-run.rst:12
 msgid "Mir servers crash"
@@ -315,6 +326,11 @@ msgid ""
 "does not start after that, you can run ``sudo lxc-start -n android -F`` to "
 "get a more detailed log of why it has failed."
 msgstr ""
+"Si vous n'obtenez pas ``State: RUNNING``, c'est que le conteneur est arrêté. "
+"Vous pouvez exécuter la commande ``sudo start lxc-android-config`` pour "
+"essayer de le démarrer. Si le conteneur ne démarre pas après cela, vous "
+"pouvez exécuter la commande ``sudo lxc-start -n android -F`` pour obtenir un "
+"rapport plus détaillé sur le pourquoi de cet échec."
 
 #: ../../porting/common-problems-run.rst:34
 msgid "Are all of the Android partitions mounted?"
@@ -333,18 +349,25 @@ msgid ""
 "To check the mounted Android partitions, run ``ls /android``. At least the "
 "following folders should be contained within::"
 msgstr ""
+"Pour vérifier les partitions montées d'Android, exécutez ``ls /android``. "
+"Les dossiers suivants devraient au moins se trouver à l'intérieur::"
 
 #: ../../porting/common-problems-run.rst:45
 msgid ""
 "If any of these are missing, run ``dmesg`` to get the kernel log. Mounting "
 "Android partitions will start after the following line::"
 msgstr ""
+"Si l'un d'entre eux est manquant, exécutez la commande ``dmesg`` pour "
+"obtenir le journal du noyau. Le montage de partitions d'Android démarrera "
+"après la ligne suivante::"
 
 #: ../../porting/common-problems-run.rst:49
 msgid ""
 "Try to diagnose and fix any mounting errors that you find in the log for the "
 "partitions listed above."
 msgstr ""
+"Essayez de diagnostiquer et de réparer toutes les erreurs de montage que "
+"vous trouverez dans le journal pour les partitions listées ci-dessus."
 
 #: ../../porting/common-problems-run.rst:53
 msgid ""
@@ -352,10 +375,14 @@ msgid ""
 "and executables required to run Android. If your device has this partition, "
 "make sure that it is mounted in addition to the others listed above."
 msgstr ""
+"Certains appareils disposent d'une partition ``vendor``qui contient des "
+"bibliothèques et des exécutables propriétaires nécessaires au fonctionnement "
+"d'Android. Si votre appareil contient cette partition, assurez-vous qu'elle "
+"soit montée en plus de toutes les autres listées ci-dessus."
 
 #: ../../porting/common-problems-run.rst:57
 msgid "Getting more Mir logs"
-msgstr ""
+msgstr "Obtenir plus de journaux de Mir"
 
 #: ../../porting/common-problems-run.rst:59
 msgid ""
@@ -363,20 +390,29 @@ msgid ""
 "mounted, you will need to get a few more logs before enlisting community "
 "help."
 msgstr ""
+"Si le conteneur d'Android tourne et que toutes ses partitions semblent "
+"montées, vous devrez obtenir quelques journaux supplémentaires avant de "
+"solliciter l'aide de la communauté."
 
 #: ../../porting/common-problems-run.rst:61
 msgid "First, stop the display manager if it is not already::"
 msgstr ""
+"Tout d'abord, arrêtez le gestionnaire d’affichage si cela n'est pas déjà "
+"fait::"
 
 #: ../../porting/common-problems-run.rst:65
 msgid ""
 "If you have Wi-Fi working (See `the Halium docs for Wi-Fi`_), install the "
 "``libc6-dbg`` package first::"
 msgstr ""
+"Si le Wi-Fi fonctionne (Voir `la documentation d'Halium sur le Wi-Fi`_), "
+"installez d'abord le paquet ``libc6-dbg``::"
 
 #: ../../porting/common-problems-run.rst:70
 msgid "Then, run the following commands to get all of the needed logs::"
 msgstr ""
+"Exécutez ensuite les commandes suivantes pour obtenir tous les journaux "
+"nécessaires::"
 
 #: ../../porting/common-problems-run.rst:76
 msgid ""
@@ -386,10 +422,16 @@ msgid ""
 "GitHub Gists, or a similar service so the people helping you can view them "
 "easily."
 msgstr ""
+"Utilisez ``scp`` ou un programme similaire pour copier les fichiers "
+"``usc.log``, ``usc-gdb.log`` et ``usc-logcat.log`` à partir du dossier "
+"personnel « phablet » vers votre ordinateur. Postez ensuite le contenu de "
+"ces fichiers dans `paste.ubuntu.com`_, Pastebin, GitHub Gists ou un service "
+"similaire de manière à ce que les personnes qui vous aident puissent les "
+"voir facilement."
 
 #: ../../porting/common-problems-run.rst:79
 msgid "Programs hang before crashing"
-msgstr ""
+msgstr "Les programmes se suspendent avant de planter"
 
 #: ../../porting/common-problems-run.rst:81
 msgid ""
@@ -397,12 +439,19 @@ msgid ""
 "segfault. The reason for the hang is apport, which attempts to collect "
 "useful information about the crash before allowing the program to stop."
 msgstr ""
+"Les processus se mettent parfois en suspend pendant un long moment avant de "
+"s'interrompre ou de renvoyer une erreur de segmentation. La raison de la "
+"suspension vient d'Apport, qui tente de collecter des informations à propos "
+"du plantage avant d'autoriser le programme à s'arrêter."
 
 #: ../../porting/common-problems-run.rst:83
 msgid ""
 "If you don't need apport's information and would rather have the programs "
 "crash faster while troubleshooting, issue the following commands::"
 msgstr ""
+"Si vous n'avez pas besoin des informations d'Apport et préférez que le "
+"programme plante plus rapidement lors des investigations, exécutez la "
+"commande suivante::"
 
 #: ../../porting/installing-16-04.rst:2
 msgid "Installing Ubuntu Touch 16.04 images on Halium"
@@ -432,7 +481,7 @@ msgid ""
 "such as TWRP, installed on your phone. You will also need to ensure the /"
 "data partition is formatted with ext4 and does not have any encryption on it."
 msgstr ""
-"Afin d'installer Ubuntu Touch, vous aurez besoin de créer une restauration "
+"Afin d'installer Ubuntu Touch, vous aurez besoin de créer une récupération "
 "avec Busybox, telle que TWRP, installée sur votre appareil. Vous devrez "
 "également vous assurer que la partition  « /data » est formatée avec ext4 et "
 "n'est pas chiffrée."
@@ -478,7 +527,7 @@ msgstr "Installation de system.img et de rootfs"
 
 #: ../../porting/installing-16-04.rst:28
 msgid "Todo"
-msgstr ""
+msgstr "À faire"
 
 #: ../../porting/installing-16-04.rst:30
 msgid ""
@@ -496,12 +545,20 @@ msgid ""
 "releases/download/continuous/halium-install-standalone.sh>`__). Boot your "
 "device into recovery and run the script as follows::"
 msgstr ""
+"Téléchargez le script halium-install-standalone disponible dans les `"
+"publications de jbbgameich/halium-install <https://github.com/JBBgameich/"
+"halium-install/releases/>`_ (`lien direct pour le téléchargement "
+"<https://github.com/JBBgameich/halium-install/releases/download/continuous/"
+"halium-install-standalone.sh>`__). Démarrez votre appareil en mode "
+"récupération (recovery) et exécutez le script comme indiqué ci-dessous::"
 
 #: ../../porting/installing-16-04.rst:36
 msgid ""
 "The script will copy and extract the files to their proper places, then "
 "allow you to set the phablet user's password."
 msgstr ""
+"Le script copiera et extraira les fichiers dans leurs emplacements "
+"respectifs, puis vous autorisera à définir le mot de passe de la phablette."
 
 #: ../../porting/installing-16-04.rst:39
 msgid "Get SSH access"
@@ -519,43 +576,40 @@ msgstr ""
 "utiliser cela pour dépanner le système."
 
 #: ../../porting/installing-16-04.rst:43
-#, fuzzy
 msgid ""
 "To confirm that your device has booted correctly, run ``dmesg -w`` and watch "
 "for \"GNU/Linux device\" in the output. If you instead get something similar "
 "to \"Halium initrd Failed to boot\", please get in contact with us so we can "
 "find out why."
 msgstr ""
-"Pour confirmer que votre appareil a correctement démarré, exécutez ``dmesg -"
-"w`` et guettez  « GNU/Linux device » en sortie. Si vous obtenez en revanche "
-"quelque chose du style « ubports initrd i hit a nail », veuillez prendre "
-"contact avec nous pour que nous comprenions pourquoi. Vous pouvez aussi "
-"choisir d'exécuter ``watch ip link`` et guetter des changements dans les "
-"appareils du réseau."
+"Pour confirmer que votre appareil a correctement démarré, exécutez la "
+"commande ``dmesg -w`` et guettez  « GNU/Linux device » en sortie. Si vous "
+"obtenez en revanche quelque chose du style « Halium initrd Failed to boot », "
+"veuillez prendre contact avec nous pour que nous comprenions pourquoi."
 
 #: ../../porting/installing-16-04.rst:45
-#, fuzzy
 msgid ""
 "Similar to the `Halium reference rootfs <http://docs.halium.org/en/latest/"
 "porting/debug-build/logging-in.html>`__, you should set your computer's IP "
 "on the newly connected RNDIS interface to ``10.15.19.100`` if you don't get "
 "one automatically. Then, run the following to access your device::"
 msgstr ""
-"De la même manière que pour le rootfs de référence d'Halium, vous devez "
-"configurer l'adresse IP de votre ordinateur sur la nouvelle interface RNDIS "
-"connectée à ``10.15.19.100`` si vous n'en obtenez pas une. Exécutez ensuite "
-"la commande suivante pour accéder à votre appareil ::"
+"De la même manière que le `rootfs de référence d'Halium <http://docs.halium."
+"org/en/latest/porting/debug-build/logging-in.html>`__, \n"
+"vous devez configurer l'adresse IP de votre ordinateur sur la nouvelle "
+"interface RNDIS connectée à ``10.15.19.100`` si vous n'en obtenez pas une "
+"automatiquement. Exécutez ensuite la commande suivante pour accéder à votre "
+"appareil::"
 
 #: ../../porting/installing-16-04.rst:49
-#, fuzzy
 msgid "The password will be the one that you set while running halium-install."
 msgstr ""
-"Le mot de passe sera celui que vous avez défini lors de l'exécution de "
-"rootstock."
+"Le mot de passe sera celui que vous avez défini lors de l'exécution d'halium-"
+"install."
 
 #: ../../porting/installing-16-04.rst:52 ../../porting/running-ut.rst:74
 msgid "Common Problems"
-msgstr ""
+msgstr "Problèmes fréquents"
 
 #: ../../porting/installing-16-04.rst:54
 msgid ""
@@ -563,6 +617,9 @@ msgid ""
 "following suggestions match what you are seeing. If you have installed "
 "successfully, skip down to `Continue on`_."
 msgstr ""
+"Si vous rencontrez une erreur en déroulant ces étapes, vérifiez si l'une des "
+"suggestions suivantes correspond à ce que vous voyez. Si votre installation "
+"est couronnée de succès, passez au chapitre `Poursuivre`_."
 
 #: ../../porting/installing-16-04.rst:64
 msgid ""
@@ -579,7 +636,6 @@ msgid "Porting information"
 msgstr "Informations sur le portage"
 
 #: ../../porting/introduction.rst:5
-#, fuzzy
 msgid ""
 "If you are looking for information on installing Ubuntu Touch on a supported "
 "device, or if you would like to check if your device is supported, please "
@@ -587,8 +643,7 @@ msgid ""
 msgstr ""
 "Si vous cherchez des informations sur l'installation d'Ubuntu Touch sur un "
 "appareil pris en charge ou si vous souhaitez vérifier si votre appareil est "
-"pris en charge, consultez `cette page <https://ubports.com/page/get-ubuntu-"
-"touch>`_."
+"pris en charge, consultez `cette page <https://devices.ubuntu-touch.io/>`_."
 
 #: ../../porting/introduction.rst:7
 msgid ""
@@ -611,17 +666,16 @@ msgstr ""
 "d'installer un rootfs, vous pourrez revenir ici."
 
 #: ../../porting/introduction.rst:11
-#, fuzzy
 msgid ""
 "Start at :doc:`building-halium-boot` if you'd like to install the UBports "
 "Ubuntu Touch 16.04 rootfs."
 msgstr ""
-"Commencez par la :doc:`building-ubports-boot` si vous souhaitez installer le "
-"rootfs d'Ubuntu Touch 16.04 conçu par UBports."
+"Commencez par :doc:`building-halium-boot` si vous souhaitez installer le "
+"rootfs d'Ubuntu Touch 16.04."
 
 #: ../../porting/introduction.rst:25
 msgid "Getting community help"
-msgstr ""
+msgstr "Obtenir de l'aide de la communauté"
 
 #: ../../porting/introduction.rst:27
 msgid ""
@@ -630,18 +684,23 @@ msgid ""
 "stuck on. If none of the suggestions are helpful, you can get help from the "
 "community via the following channels:"
 msgstr ""
+"Si vous rencontrez des problèmes dans les étapes de portage après la "
+"construction de votre image système d'Halium, consultez la section « "
+"Problèmes fréquents » de la page sur laquelle vous êtes coincé(e). Si aucune "
+"des suggestions n'est utile, vous pouvez obtenir de l'aide de la part de la "
+"communauté via les canaux suivants :"
 
 #: ../../porting/introduction.rst:29
 msgid "Telegram: @ubports_porting"
-msgstr ""
+msgstr "Telegram : @ubports_porting"
 
 #: ../../porting/introduction.rst:30
 msgid "IRC: #ubports-porting on freenode"
-msgstr ""
+msgstr "IRC : #ubports-porting sur freenode"
 
 #: ../../porting/introduction.rst:31
 msgid "Forum: `forums.ubports.com <https://forums.ubports.com>`__"
-msgstr ""
+msgstr "Forum : `forums.ubports.com <https://forums.ubports.com>`__"
 
 #: ../../porting/running-ut.rst:2
 msgid "Running Ubuntu Touch"
@@ -652,14 +711,14 @@ msgid ""
 "Now that you're logged in, there are a few more steps before Ubuntu Touch "
 "will be fully functional on your device."
 msgstr ""
+"Maintenant que vous êtes connecté(e), il reste quelques étapes "
+"supplémentaires avant qu'Ubuntu Touch ne soit fonctionnel sur votre appareil."
 
 #: ../../porting/running-ut.rst:7
-#, fuzzy
 msgid "Make / writable"
 msgstr "Rendre modifiable"
 
 #: ../../porting/running-ut.rst:9
-#, fuzzy
 msgid ""
 "Before we make any changes to the rootfs (which will be required for the "
 "next steps), you'll need to remount it with write permissions. To do that, "
@@ -667,23 +726,21 @@ msgid ""
 msgstr ""
 "Avant de modifier le rootfs (ce qui sera nécessaire pour les étapes "
 "suivantes), vous devrez le remonter avec les permissions en écriture. Pour "
-"cela, lancez la commande suivante ::"
+"cela, lancez la commande suivante::"
 
 #: ../../porting/running-ut.rst:14
 msgid "Add udev rules"
 msgstr "Ajouter des règles udev"
 
 #: ../../porting/running-ut.rst:16
-#, fuzzy
 msgid ""
 "You must create some udev rules to allow Ubuntu Touch software to access "
 "your hardware. Run the following command, replacing [codename] with your "
 "device's codename::"
 msgstr ""
-"Maintenant que vous êtes connecté, vous devez créer quelques règles udev "
-"pour donner aux applications d'Ubuntu Touch l'accès à votre matériel. Lancez "
-"la commande suivante, en remplaçant [codename] avec le nom de code de votre "
-"appareil ::"
+"Vous devez créer des règles udev pour permettre aux logiciels d'Ubuntu Touch "
+"d'accéder à votre matériel. Exécutez la commande suivante en remplaçant "
+"[codename] par le nom de code de votre appareil::"
 
 #: ../../porting/running-ut.rst:21
 msgid ""
@@ -778,7 +835,6 @@ msgstr ""
 "navigateur et des Webapps."
 
 #: ../../porting/running-ut.rst:47
-#, fuzzy
 msgid ""
 "A reference device has been chosen from which we derive the values for all "
 "other devices. The reference device is a laptop with a 120ppi screen. "
@@ -1035,6 +1091,12 @@ msgid ""
 "guide for now. Try to check the functionality of your device by following "
 "the Smoke Testing information in :doc:`/contribute/quality-assurance`."
 msgstr ""
+"Si vous rencontrez des erreurs lors du déroulement de ces étapes, vérifiez "
+"si l'une des suggestions suivantes correspond à ce que vous voyez. Si vous "
+"avez terminé ces étapes avec succès, félicitations ! Vous avez atteint la "
+"fin du guide de portage pour le moment. Essayez de vérifier que votre "
+"appareil est fonctionnel en suivant la batterie de tests disponible dans "
+":doc:`/contribute/quality-assurance`."
 
 #~ msgid ""
 #~ "Ubuntu Touch uses Upstart rather than Systemd for its init daemon. "
