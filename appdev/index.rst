@@ -71,6 +71,7 @@ Documentation
 -------------
 
 * `QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__
+* `Kirigami API <https://api.kde.org/frameworks/kirigami/html/>`__
 * `Cordova HTML5 API <https://api-docs.ubports.com/sdk/apps/html5/index.html>`__
 * `Clickable <http://clickable.bhdouglass.com/en/latest/>`__
 * `Suru Icons <http://docs.ubports.com/projects/icons/en/latest/>`__
