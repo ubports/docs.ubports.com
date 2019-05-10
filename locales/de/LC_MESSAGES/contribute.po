@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2019-04-14 00:00+0000\n"
+"PO-Revision-Date: 2019-05-11 15:02+0000\n"
 "Last-Translator: Peter keck <peter.keck@t-online.de>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-contribute/de/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.1.1\n"
+"X-Generator: Weblate 3.6.1\n"
 "Generated-By: Babel 2.5.3\n"
 
 #: ../../contribute/bugreporting.rst:2
@@ -326,14 +326,13 @@ msgid "Documentation guidelines"
 msgstr "Dokumentationsrichtlinien"
 
 #: ../../contribute/documentation.rst:12
-#, fuzzy
 msgid ""
 "These rules govern how you should write your documentation to avoid problems "
 "with style, format, or linking. If you don't follow these guidelines, we "
 "will not accept your document."
 msgstr ""
 "Diese Regeln beschreiben *wie* die Dokumentation geschrieben werden soll, um "
-"Probleme mit Stil, Format oder Verlinkungen zu vermeiden. Dokumente, die "
+"Probleme mit Stil, Formatierung oder Verlinkung zu vermeiden. Dokumente, die "
 "diesen Richtlinien nicht folgen, werden nicht akzeptiert."
 
 #: ../../contribute/documentation.rst:15
@@ -341,14 +340,12 @@ msgid "Title"
 msgstr "Titel"
 
 #: ../../contribute/documentation.rst:17
-#, fuzzy
 msgid ""
 "All pages must have a document title that will be shown in the table of "
 "contents (left sidebar) and at the top of the page."
 msgstr ""
 "Alle Seiten müssen einen Dokumententitel haben. Der Titel wird im "
-"Inhaltsverzeichnis (zur Linken) und im Kopf der Seite angezeigt. Der Titel "
-"ist mit Gleichheitszeichen zu unterstreichen."
+"Inhaltsverzeichnis (linke Randleiste) und im Kopf der Seite angezeigt."
 
 #: ../../contribute/documentation.rst:19
 msgid "Titles should be sentence cased rather than Title Cased. For example::"
@@ -371,6 +368,8 @@ msgid ""
 "Page titles are underlined with equals signs. For example, the markup for :"
 "doc:`./bugreporting` includes the following title:"
 msgstr ""
+"Seitentitel werden mit Gleichzeichen unterstrichen. Z.B. wird "
+":doc:`./bugreporting` wie folgt hervorgehoben:"
 
 #: ../../contribute/documentation.rst:37
 msgid "Note that:"
@@ -449,17 +448,16 @@ msgstr ""
 "Inhaltsverzeichnis hinzugefügt werden."
 
 #: ../../contribute/documentation.rst:93
-#, fuzzy
 msgid ""
 "You can do this by adding the page to the ``index.rst`` file in the same "
 "directory that you created it. For example, if you create a file called "
 "\"newpage.rst\", you would add the line marked with a chevron (>) in the "
 "nearest index:"
 msgstr ""
-"Dies kann durch Hinzufügen der Seite zur ``index.rst`` im selben Verzeichnis "
-"erledigt werden. Zum Beispiel, wenn die Datei \"newpage.rst\" erstellt wird, "
-"würde die Zeile mit einem Größer-als-Zeichen (>) markiert in den nächsten "
-"Index eingefügt werden::"
+"Dies kann durch Hinzufügen der Seite zum File``index.rst`` im selben "
+"Verzeichnis erfolgen. Wenn z.B. die Datei \"newpage.rst\" erstellt wird, "
+"müsste die mit dem Größer-Zeichen (>) markierte Zeile in den nächsten Index "
+"eingefügt werden:"
 
 #: ../../contribute/documentation.rst:105
 msgid ""
@@ -701,8 +699,8 @@ msgid ""
 "`Liberapay <https://liberapay.com/UBports/>`_ or `Patreon <https://www."
 "patreon.com/ubports>`_!"
 msgstr ""
-"Du kannst dabei helfen, dass bei UBports die Lichter weiter brennen, indem "
-"Du ein `Patreon <https://www.patreon.com/ubports>`_ wirst!"
+"Du kannst dabei helfen, den Betrieb von UBports weiterhin zu gewährleisten, "
+"indem Du ein `Förderer (Patron) <https://www.patreon.com/ubports>`_ wirst!"
 
 #: ../../contribute/monetary.rst:6
 msgid ""
@@ -710,11 +708,11 @@ msgid ""
 "helps covering additional costs."
 msgstr ""
 "Dein Beitrag finanziert unsere Server-Infrastruktur und "
-"Fehlerbehebungsdienste und hilft uns weitere Kosten zu decken."
+"Fehlerbehebungsdienste und hilft uns, weitere Kosten zu decken."
 
 #: ../../contribute/preinstalled-apps.rst:2
 msgid "Preinstalled apps"
-msgstr ""
+msgstr "Vorinstallierte Apps"
 
 #: ../../contribute/preinstalled-apps.rst:4
 msgid ""
@@ -1041,7 +1039,6 @@ msgid ""
 msgstr ""
 
 #: ../../contribute/quality-assurance.rst:25
-#, fuzzy
 msgid ""
 "Once the pull-request has been merged, the issue it fixes is moved to the "
 "quality assurance column of the `GitHub project <https://github.com/ubports/"
@@ -1064,7 +1061,7 @@ msgstr ""
 "mit den eigenen Erfahrungen hinterlässt. Hat man Schreibrechte in dem "
 "Repository, kann der Fehlerbericht zurück in **In Development** oder weiter "
 "zu **Release Candidate** verschoben werden, entsprechend der Anleitungen zur "
-"`Problemverfolgung </about/process/issue-tracking>`."
+"`Problemverfolgung :doc:`</about/process/issue-tracking>`."
 
 #: ../../contribute/quality-assurance.rst:28
 msgid "Initial triaging of issues"
@@ -1081,8 +1078,8 @@ msgstr ""
 "Die initiale Sichtung von Fehlerberichten erfolgt durch QA-Teammitglieder "
 "mit Schreibrechten im Repository. Falls ein neuer Fehlerbericht eingeht, "
 "liest man diesen und fügt die korrekten Markierungen entsprechend der "
-"Anleitungen zur `Problemverfolgung </about/process/issue-tracking>`. Der "
-"Fehlerbericht kann gegebenenfalls auch direkt bestätigt werden."
+"Anleitungen zur :doc:`Problemverfolgung </about/process/issue-tracking>`. "
+"Der Fehlerbericht kann gegebenenfalls auch direkt bestätigt werden."
 
 #: ../../contribute/quality-assurance.rst:32
 msgid ""
