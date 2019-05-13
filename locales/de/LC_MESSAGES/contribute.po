@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2019-05-11 15:02+0000\n"
+"PO-Revision-Date: 2019-05-14 16:03+0000\n"
 "Last-Translator: Peter keck <peter.keck@t-online.de>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-contribute/de/>\n"
@@ -642,14 +642,13 @@ msgid "Current TODOs"
 msgstr "Aktuelle TODOs"
 
 #: ../../contribute/documentation.rst:165
-#, fuzzy
 msgid ""
 "This section lists the TODOs that have been included in this documentation. "
 "If you know how to fix one, please send us a Pull Request to make it better!"
 msgstr ""
-"Diese Seite listet die TODOs auf, die zu dieser Dokumentation gehören. Falls "
-"du weißt, wie eines davon erledigt werden kann, sende uns bitte einen Pull "
-"Request, um die Dokumentation zu verbessern!"
+"Dieser Abschnitt listet die TODOs auf, die zu dieser Dokumentation "
+"hinzugefügt wurden. Falls du weißt, wie einer davon erledigt werden kann, "
+"sende uns bitte einen Pull Request, um es zu verbessern!"
 
 #: ../../contribute/documentation.rst:167
 msgid "To create a todo, add this markup to your page::"
@@ -743,16 +742,15 @@ msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:21
 msgid "Application Name"
-msgstr ""
+msgstr "Name der Applikation"
 
 #: ../../contribute/preinstalled-apps.rst:21
 msgid "Store page"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:21
-#, fuzzy
 msgid "Code repository"
-msgstr "Forken des Repository"
+msgstr "Repository des Quellcodes"
 
 #: ../../contribute/preinstalled-apps.rst:23
 msgid "Calculator"
@@ -866,9 +864,8 @@ msgid "`terminal-app on GitHub`_"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:32
-#, fuzzy
 msgid "UBports Welcome"
-msgstr "UBports Weblate"
+msgstr "UBports Welcome"
 
 #: ../../contribute/preinstalled-apps.rst:32
 msgid "`UBports Welcome on OpenStore`_"
