@@ -73,6 +73,7 @@ Documentation
 * `QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__
 * `Cordova HTML5 API <https://api-docs.ubports.com/sdk/apps/html5/index.html>`__
 * `Clickable <http://clickable.bhdouglass.com/en/latest/>`__
+* `Suru Icons <http://docs.ubports.com/projects/icons/en/latest/>`__
 
 More Documentation
 ^^^^^^^^^^^^^^^^^^

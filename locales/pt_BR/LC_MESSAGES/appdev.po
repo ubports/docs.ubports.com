@@ -8,21 +8,24 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2019-04-26 09:36+0000\n"
+"Last-Translator: Vinícius F <magnetuz@protonmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.ubports.com/projects/"
+"ubports-docs/documentation-appdev/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 3.2.2\n"
 
 #: ../../appdev/guides/contenthub.rst:4
 msgid "The content hub - tips and tricks"
-msgstr ""
+msgstr "A central de conteúdo - dicas e truques"
 
 #: ../../appdev/guides/contenthub.rst:9
 msgid "Content Hub Share Page"
-msgstr ""
+msgstr "Página de compartilhamento central de conteúdo"
 
 #: ../../appdev/guides/contenthub.rst:11
 msgid ""
@@ -30,10 +33,14 @@ msgid ""
 "is through the Content Hub, a part of the system that takes care of file "
 "import, export and sharing."
 msgstr ""
+"No Ubuntu Touch os aplicativos são confinados. A maneira de compartilhar "
+"arquivos entre eles é através da Central de Conteúdos (Content Hub), uma "
+"parte do sistema que cuida da importação, exportação e compartilhamento de "
+"arquivos."
 
 #: ../../appdev/guides/contenthub.rst:14
 msgid "Different ways of sharing the content"
-msgstr ""
+msgstr "Diferentes formas de compartilhar o conteúdo"
 
 #: ../../appdev/guides/contenthub.rst:16
 msgid ""
@@ -41,32 +48,42 @@ msgid ""
 "com/sdk/apps/qml/Ubuntu.Content/ContentHandler.html#detailed-description>`_, "
 "there are several ways of handling the file to be shared:"
 msgstr ""
+"Como podemos ver na `documentação da Central de Conteúdos (Content Hub "
+"documentation) <https://api-docs.ubports.com/sdk/apps/qml/Ubuntu.Content/"
+"ContentHandler.html#detailed-description>` _, existem várias maneiras de "
+"lidar o arquivo a ser compartilhado:"
 
 #: ../../appdev/guides/contenthub.rst:18
 msgid ""
 "``ContentHandler.Source`` (The app selected is going to be the source of the "
 "file imported)"
 msgstr ""
+"`` ContentHandler.Source`` (O aplicativo selecionado será a origem do "
+"arquivo importado)"
 
 #: ../../appdev/guides/contenthub.rst:19
 msgid ""
 "``ContentHandler.Destination`` (The app selected is going to be the "
 "destination of the file exported)"
 msgstr ""
+"`` ContentHandler.Destination`` (O aplicativo selecionado será o destino do "
+"arquivo exportado)"
 
 #: ../../appdev/guides/contenthub.rst:20
 msgid ""
 "``ContentHandler.Share`` (The app selected is going to be the app from witch "
 "the file is going to be shared from)"
 msgstr ""
+"`` ContentHandler.Share`` (O aplicativo selecionado será o aplicativo do "
+"qual o arquivo será compartilhado)"
 
 #: ../../appdev/guides/contenthub.rst:23
 msgid "Importing"
-msgstr ""
+msgstr "Importando"
 
 #: ../../appdev/guides/contenthub.rst:28
 msgid "Webapp Creator on the OpenStore"
-msgstr ""
+msgstr "Criador de Webapp no OpenStore"
 
 #: ../../appdev/guides/contenthub.rst:30
 msgid ""
@@ -76,10 +93,16 @@ msgid ""
 "Creator source code <https://gitlab.com/cibersheep/webapp-creator/blob/"
 "master/webapp-creator/app/ImportPage.qml#L38>`_)"
 msgstr ""
+"Examinando o código do Criador de Webapp, encontraremos o código para "
+"importar uma imagem para ser usada como ícone. Tocar no espaço reservado "
+"abrirá a Central de Conteúdo (Content Hub) que nos permitirá escolher de "
+"onde importar a imagem (`consulte o código fonte do Criador de Webapp "
+"<https://gitlab.com/cibersheep/webapp-creator/blob/master/webapp- criador / "
+"app / ImportPage.qml # L38> `_)"
 
 #: ../../appdev/guides/contenthub.rst:41
 msgid "``ContentPeerPicker`` is the element that shows the apps."
-msgstr ""
+msgstr "`` ContentPeerPicker`` é o elemento que mostra os aplicativos."
 
 #: ../../appdev/guides/contenthub.rst:47
 msgid ""
@@ -89,14 +112,20 @@ msgid ""
 "``handler`` is passed in the same line as ContentHandler.Source. As we want "
 "to import an image from the app selected in the Content Hub."
 msgstr ""
+"`` contentType`` é passado em `Main.qml <https://gitlab.com/cibersheep/"
+"webapp-creator/blob/master/webapp-creator/app/Main.qml#L118>` _ como "
+"ContentType.Pictures. Então, só veremos aplicativos dos quais só podemos "
+"importar imagens. O `` handler`` é passado na mesma linha que o "
+"ContentHandler.Source. Como queremos importar uma imagem do aplicativo "
+"selecionado na Central de Conteúdo (Content Hub)."
 
 #: ../../appdev/guides/contenthub.rst:50
 msgid "Exporting"
-msgstr ""
+msgstr "Exportando"
 
 #: ../../appdev/guides/contenthub.rst:55
 msgid "Gelek in the OpenStore"
-msgstr ""
+msgstr "Gelek no OpenStore"
 
 #: ../../appdev/guides/contenthub.rst:57
 msgid ""
@@ -104,12 +133,17 @@ msgid ""
 "our device or share with ourselves (in Telegram and then save them to our "
 "computer)."
 msgstr ""
+"Em Gelek, vamos terminar com alguns jogos salvos que queremos salvar em "
+"nosso dispositivo ou compartilhar conosco (no Telegram e depois salvá-los em "
+"nosso computador)."
 
 #: ../../appdev/guides/contenthub.rst:61
 msgid ""
 "Tapping on the download icon we will get a Content Hub to *save* the game "
 "file (which is actually an export)."
 msgstr ""
+"Tocando no ícone de download, obteremos um Central de Conteúdo (Content Hub) "
+"para *salvar* o arquivo do jogo (que é, na verdade, uma exportação)."
 
 #: ../../appdev/guides/contenthub.rst:63
 msgid ""
