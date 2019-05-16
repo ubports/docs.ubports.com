@@ -3,6 +3,8 @@
 Platform
 ========
 
+Here are Ubuntu Touch platforms key topics when you want to extend your app with Ubuntu Touch eco-system:
+
 Content Hub
   Each application can expose content outside its sandbox, giving the user precise control over what can be imported, exported or shared with the world and other apps.
 
@@ -18,9 +20,15 @@ Online accounts
 
 `Read the docs <https://docs.ubuntu.com/phone/en/platform/>`__
 
+Packaging your app
+------------------
+
+Here you will get some informations about the confinment model and the packaging system: 
+
 .. toctree::
     :maxdepth: 1
     :name: toc-platform
 
-    apparmor
     click
+    apparmor
+    
