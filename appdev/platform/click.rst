@@ -50,6 +50,7 @@ AppArmor profile policy file
   - Type: Specifies the type of the launcher file. The type can be Application, Link or Directory.
   - X-Ubuntu-Touch: ``true`` to make the app visible
   - X-Ubuntu-XMir-Enable: ``true`` if your app is built for X
+  - X-Ubuntu-Supported-Orientations=landscape to make your app start in landscape mode
 
 .. todo:
   link to official .desktop specifications
