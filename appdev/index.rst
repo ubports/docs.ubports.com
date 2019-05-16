@@ -1,14 +1,16 @@
 App development
 ===============
 
-Welcome to an open source and free platform under constant scrutiny and improvement by a vibrant global community, whose energy, connectedness, talent and commitment is unmatched. Ubuntu is also the third most deployed desktop OS in the world.
+Great!, you'd like to develop an app for Ubuntu Touch. Here are some resources that we hope help you get started. 
+
+If you have questions that aren't answered in the docs or want to chat with other Ubuntu Touch developers? Join our `app dev Telegram group <https://t.me/UbuntuAppDevEN>`_ or chat with us on the `UBports app dev forum <https://forums.ubports.com/category/35/app-development>`_.
 
 Get started
 -----------
 
-Ubuntu Touch is a fun and vibrant platform for development. Whether you're a new developer or an experienced one, we have several resources to help you get started.
+Ubuntu Touch supports two kind of apps. :ref:`Native apps <nativeapp>` are apps with interfaces made using QML or HTML with their behavior defined in JavaScript, C++, Python, or Go. :ref:`Web apps <webapp>` are special containers to run websites in.
 
-Ubuntu Touch supports several different types of apps. :ref:`Native apps <nativeapp>` are apps with interfaces made using QML or HTML with their behavior defined in JavaScript, C++, Python, or Go. :ref:`Web apps <webapp>` are special containers to run websites in.
+Applications are shipped as a :ref:`Click <click>` package and can be publicly shared on the official app store `OpenStore <https://open-store.io>`__ 
 
 .. toctree::
     :maxdepth: 1
@@ -17,10 +19,6 @@ Ubuntu Touch supports several different types of apps. :ref:`Native apps <native
     nativeapp/index
     webapp/index
 
-Community
----------
-
-Have questions that aren't answered in the docs or want to chat with other Ubuntu Touch developers? Join our `app dev Telegram group <https://t.me/UbuntuAppDevEN>`_ or chat with us on the `UBports app dev forum <https://forums.ubports.com/category/35/app-development>`_.
 
 Tools
 -----
@@ -75,8 +73,8 @@ Documentation
 * `Clickable <http://clickable.bhdouglass.com/en/latest/>`__
 * `Suru Icons <http://docs.ubports.com/projects/icons/en/latest/>`__
 
-More Documentation
-^^^^^^^^^^^^^^^^^^
+Plaform
+-------
 
 .. toctree::
     :maxdepth: 1
