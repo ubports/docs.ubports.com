@@ -3,7 +3,7 @@
 Platform
 ========
 
-Here are Ubuntu Touch platforms key topics when you want to extend your app with Ubuntu Touch eco-system:
+Here are Ubuntu Touch platforms key topics when you want to extend your app with Ubuntu Touch ecosystem:
 
 Content Hub
   Each application can expose content outside its sandbox, giving the user precise control over what can be imported, exported or shared with the world and other apps.
