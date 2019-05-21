@@ -50,6 +50,7 @@ AppArmor profile policy file
   - Type: Specifies the type of the launcher file. The type can be Application, Link or Directory.
   - X-Ubuntu-Touch: ``true`` to make the app visible
   - X-Ubuntu-XMir-Enable: ``true`` if your app is built for X
+  - X-Ubuntu-Supported-Orientations: ``landscape`` or ``portrait`` to force your app start in landscape mode and portrait mode respectively.
 
 .. todo:
   link to official .desktop specifications
@@ -58,7 +59,7 @@ AppArmor profile policy file
 Security and app isolation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-All Ubuntu apps and scopes are confined respecting AppArmor access control mechanism (see `Application Confinement <https://wiki.ubuntu.com/SecurityTeam/Specifications/ApplicationConfinement#App_confinement_with_AppArmor>`_) , meaning they only have access to their own resources and are isolated from other apps and parts of the system. The developer must declare which policy groups are needed for the app or scope to function properly with an apparmor ``.json`` file.
+All Ubuntu apps are confined respecting AppArmor access control mechanism (see `Application Confinement <https://wiki.ubuntu.com/SecurityTeam/Specifications/ApplicationConfinement#App_confinement_with_AppArmor>`_) , meaning they only have access to their own resources and are isolated from other apps and parts of the system. The developer must declare which policy groups are needed for the app or scope to function properly with an apparmor ``.json`` file.
 
 Example ``apparmor.json`` file::
 
