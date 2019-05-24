@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2019-04-09 18:41+0000\n"
+"PO-Revision-Date: 2019-05-11 15:02+0000\n"
 "Last-Translator: Peter keck <peter.keck@t-online.de>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/de/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.1.1\n"
+"X-Generator: Weblate 3.6.1\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../appdev/guides/contenthub.rst:4
@@ -678,7 +678,7 @@ msgstr ""
 
 #: ../../appdev/index.rst:99
 msgid "Preinstalled apps"
-msgstr ""
+msgstr "Vorinstallierte Apps"
 
 #: ../../appdev/index.rst:101
 msgid ""
