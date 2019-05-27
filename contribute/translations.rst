@@ -24,7 +24,9 @@ There are three common ways used to translate an app:
 * Editor: Translation is done by changing *.po* files with the editor of your choice, and a GitHub/GitLab account. The *.po*/*.ts* files for each project are in their repository on `our GitLab organization <https://gitlab.com/ubports/apps>`_ or on `our GitHub organization <https://github.com/ubports>`_. After translating the translator commits new translations to an apps repo generally by opening a merge request/pull request.
 * Team translation: We also have  a `Translation Forum <https://forums.ubports.com/category/39/translations>`_ to discuss translating Ubuntu Touch and its core apps. Some projects are using Telegram or matrix groups too, and some teams are still using the Ubuntu Launchpad framework.
 
-Core apps and some community apps like dekko or TELEports are generally using weblate for translation. Most apps maintained by individual developers are mainly using *.pot*/*.po* files for translation.
+Core apps and some community apps like dekko or TELEports are generally using weblate for translation. This is the preferred way to translate and it does not need any programming skills. When using weblate do not edit *.po* files manually. Commiting edited *.po* files can break the automated process of translation.
+
+Most apps maintained by individual developers are mainly using *.pot*/*.po* files for translation. Those generally need to be edited manually and commited to the apps repo.
 
 How-To
 ------
@@ -46,7 +48,10 @@ Now, get on with it. The first step is to search if your language already exists
 .po/.ts File Editor
 ^^^^^^^^^^^^^^^^^^^
 
-If you want to work with *.po*/*.ts* files directly you need to know what you're doing for sure.
+If you want to work with *.po*/*.ts* files directly you need to know what you're doing for sure. The first thing you should always remember is:
+
+.. warning::
+    Do **never** commit *.po* files to projects that are translated using weblate. This could break the whole translation exchange process with weblate.
 
 As was said up above, you need a file editor of your choice and a GitHub/GitLab account to translate *.po*/*.ts* files directly. Idealy you do have `clickable <http://clickable.bhdouglass.com/en/latest/>`_ set up and know how to build an app.
 
