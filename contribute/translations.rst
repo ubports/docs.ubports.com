@@ -20,11 +20,11 @@ Methods of Translation
 
 There are three common ways used to translate an app:
 
-* Weblate: A web based translation tool. UBports apps using Weblate can be translated `here <https://translate.ubports.com/>`_. There is an automatic transfer of new strings from an apps repo to weblate. Translated strings get back as commits to the repo from weblate.
+* Weblate: A web based translation tool. UBports apps using Weblate can be translated `here <https://translate.ubports.com/projects/>`_. There is an automatic transfer of new strings from an apps repo to weblate. Translated strings get back as commits to the repo from weblate.
 * Editor: Translation is done by changing *.po* files with the editor of your choice, and a GitHub/GitLab account. The *.po*/*.ts* files for each project are in their repository on `our GitLab organization <https://gitlab.com/ubports/apps>`_ or on `our GitHub organization <https://github.com/ubports>`_. After translating the translator commits new translations to an apps repo generally by opening a merge request/pull request.
 * Team translation: We also have  a `Translation Forum <https://forums.ubports.com/category/39/translations>`_ to discuss translating Ubuntu Touch and its core apps. Some projects are using Telegram or matrix groups too, and some teams are still using the Ubuntu Launchpad framework.
 
-Core apps and some community apps like dekko or TELEports are generally using weblate for translation. This is the preferred way to translate and it does not need any programming skills. When using weblate do not edit *.po* files manually. Commiting edited *.po* files can break the automated process of translation.
+Core apps and some community apps like dekko or TELEports are generally using weblate for translation. This is the preferred way to translate and it does not need any programming skills. Please have a look at the `UBports translation projects <https://translate.ubports.com/projects/>`_. When using weblate do not edit *.po* files manually. Commiting edited *.po* files can break the automated process of translation.
 
 Most apps maintained by individual developers are mainly using *.pot*/*.po* files for translation. Those generally need to be edited manually and commited to the apps repo.
 
@@ -34,7 +34,7 @@ How-To
 UBports Weblate
 ^^^^^^^^^^^^^^^
 
-You can go to `UBports Weblate <https://translate.ubports.com/>`_, click on "Dashboard" button, go to a project, and start making anonymous suggestions without being registered. If you want to save your translations, you must be logged in.
+You can go to `UBports Weblate <https://translate.ubports.com/projects/>`_, click on "Dashboard" button, go to a project, and start making anonymous suggestions without being registered. If you want to save your translations, you must be logged in.
 
 For that, go to UBports Weblate and click on the "Register" button. Once in the "Registration" page, you'll find two options:
 
