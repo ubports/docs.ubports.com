@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2019-06-06 06:03+0000\n"
+"PO-Revision-Date: 2019-06-08 16:03+0000\n"
 "Last-Translator: Walter Garcia-Fontes <walter.garcia@upf.edu>\n"
 "Language-Team: Catalan <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-about/ca/>\n"
@@ -151,13 +151,15 @@ msgstr ""
 
 #: ../../about/process/branch-naming.rst:14
 msgid "Deb-Packages"
-msgstr ""
+msgstr "Paquets-deb"
 
 #: ../../about/process/branch-naming.rst:16
 msgid ""
 "To make most efficient use of our CI system, a special naming convention for "
 "git-branches is used."
 msgstr ""
+"Per fer l'ús del nostre sistema CI més eficient, s'usa una convenció "
+"especial per anomenar les branques de git."
 
 #: ../../about/process/branch-naming.rst:18
 msgid ""
@@ -166,6 +168,11 @@ msgid ""
 "updated using click-package downloads from the OpenStore. This policy allows "
 "us to make use of the powerful Debian build system to resolve dependencies."
 msgstr ""
+"Per a components pre-instal·lats de l'Ubuntu Touch, s'usen paquets deb "
+"sempre que sigui possible. Això inclou les Aplicacions Principals, atès que "
+"poden ser actualitzades independentment usant descàrregues de paquets click "
+"des de l'OpenStore. Aquesta política ens permet fer ús del sistema potent de "
+"compilació del Debian per resoldre les dependències."
 
 #: ../../about/process/branch-naming.rst:20
 msgid ""
@@ -265,7 +272,6 @@ msgid "Where are bugs tracked?"
 msgstr "On se segueixen els errors?"
 
 #: ../../about/process/issue-tracking.rst:9
-#, fuzzy
 msgid ""
 "Since our quality assurance depends heavily on the community, we try to "
 "track issues where the user would expect them, instead of separated by "
@@ -280,7 +286,7 @@ msgstr ""
 "els components que es distribueixen, com ara la imatge de sistema, se "
 "segueixen al `Seguidor de l'Ubuntu Touch <https://github.com/ubports/ubuntu-"
 "touch>`__. Les aplicacions click són una excepció perquè es poden "
-"actualitzar mitjançant l'OpenStore."
+"actualitzar independentment mitjançant l'OpenStore."
 
 #: ../../about/process/issue-tracking.rst:17
 msgid ""
@@ -315,7 +321,6 @@ msgid "GitHub projects"
 msgstr "Projectes del GitHub"
 
 #: ../../about/process/issue-tracking.rst:30
-#, fuzzy
 msgid ""
 "To increase transparency and communication, GitHub projects (Kanban-Boards) "
 "are used wherever practical. In case of github.com/ubports/ubuntu-touch, a "
@@ -335,7 +340,6 @@ msgid "These are the standard columns:"
 msgstr "Aquestes són les columnes estàndard:"
 
 #: ../../about/process/issue-tracking.rst:38
-#, fuzzy
 msgid ""
 "**None (awaiting triage)**: The issue has been approved by a member of the "
 "QA team and is awaiting review from the responsible development team. if the "
@@ -354,7 +358,6 @@ msgstr ""
 "responsable."
 
 #: ../../about/process/issue-tracking.rst:39
-#, fuzzy
 msgid ""
 "**Accepted**: The issue has been accepted by the responsible development-"
 "team. If the issue is a bugreport, the team has decided that it should be "
@@ -450,7 +453,6 @@ msgstr ""
 "o  més informació dels usuaris afectats"
 
 #: ../../about/process/issue-tracking.rst:55
-#, fuzzy
 msgid ""
 "**bug**: This issue is a confirmed bug. If it's reproducible, reproduction "
 "steps are described."
@@ -676,7 +678,6 @@ msgstr ""
 "l'etiqueta **good first issue** (problema inicial adequat)."
 
 #: ../../about/process/issue-tracking.rst:121
-#, fuzzy
 msgid ""
 "Once a *developer* is assigned and starts working on the issue, it is moved "
 "to “In Development”. As soon as they have something to show for, the issue "
