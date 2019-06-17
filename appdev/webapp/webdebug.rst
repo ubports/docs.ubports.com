@@ -21,6 +21,7 @@ The default Ubuntu Touch browser is based on the Blink technology that is also u
 
 On your phone, start the browser in inspector mode:::
 
- ubuntu-app-launch webbrowser-app --inspector 
+ export QTWEBENGINE_REMOTE_DEBUGGING=0.0.0.0:9221
+ morph-browser --desktop_file_hint=/usr/share/applications/morph-browser.desktop [web_site_url]
 
 Now on your computer, launch Chrome/Chromium browser, and point address to ``http://YOUR_UT_IP_ADDRESS:9221``
