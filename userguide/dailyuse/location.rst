@@ -3,7 +3,7 @@ Using location services
 
 Location services in Ubuntu Touch allow apps to access your current location. Using this data, apps can `offer turn-by-turn navigation <https://open-store.io/app/navigator.costales>`__, `track your exercise paths <https://open-store.io/app/activitytracker.cwayne18>`__, `locate public transport near you <https://open-store.io/app/transport.zubozrout>`__, and more.
 
-The location services built in to Ubuntu Touch are designed to protect your privacy -- you choose to permit or deny apps access to this data. Apps may also only access your location data when the device screen is on and the app is in use.
+The location services built in to Ubuntu Touch are designed to protect your privacy -- you choose to permit or deny apps access to this data. Apps may only access your location data when the device screen is on and the app is in use.
 
 Checking if location services are enabled
 -----------------------------------------
@@ -36,7 +36,7 @@ The Location Indicator contains quick settings related to location services, inc
 
 To access these settings, press on the Location Indicator and pull down toward the bottom of the screen.
 
-If location services are disabled, you can access the location quick settings by pressing on any other indicator and pulling down. Then, scroll through the icons at the top of the screen to find Location. Tap on Location to open the quick settings.
+If location services are disabled, you can access the location quick settings by pressing on any other indicator and pulling down. Then, scroll through the icons at the top of the screen to find Location. Select Location to open the quick settings.
 
 Open location settings in the settings app
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -61,7 +61,7 @@ Launch the ``System Settings`` app. Select ``Security & Privacy``, then select `
 Enabling or disabling location services
 ---------------------------------------
 
-If location services are on, apps which you have allowed access to your location data may request your current location. Location services are enabled on Ubuntu Touch by default.
+If location services are on, apps which you have allowed access to your location data may request your current location. Location services are enabled by default on Ubuntu Touch.
 
 If location services are off, apps will not be able to access your current location.
 
@@ -70,12 +70,12 @@ There are several ways to enable or disable location services in Ubuntu Touch.
 Quick settings
 ^^^^^^^^^^^^^^
 
-`Open location quick settings`_. select the ``Location detection`` switch to enable or disable location services.
+`Open location quick settings`_. Select the ``Location detection`` switch to enable or disable location services.
 
 System settings app
 ^^^^^^^^^^^^^^^^^^^
 
-`Open location settings in the settings app`_. Under ``Let the device detect your location:``, select the appropriate option.
+`Open location settings in the settings app`_. Under ``Let the device detect your location:``, select the appropriate option:
 
 * ``Using GPS`` turns on location services.
 * ``Not at all`` turns off location services.
@@ -90,24 +90,24 @@ An app will show the location permission request the first time it tries to acce
 .. figure:: /_static/images/userguide/location/location-prompt.png
     :align: center
 
-Select ``Allow`` to give the app access to your current location. Select ``Don't allow`` to deny the app access to your current location. Some app features may not work correctly if you select ``Don't allow``.
+Select ``Allow`` to give the app access to your current location. Select ``Don't Allow`` to deny the app access to your current location. Some app features may not work correctly if you select ``Don't Allow``.
 
 Changing your permissions
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can change your decision to allow an app access to your location data. This is useful you gave an app access to your location but you'd like to deny access, or if you denied access but would like to give access.
+You can change your decision to allow an app access to your location data. This is useful when you gave an app access to your location but you'd like to deny access, or if you denied access but would like to give access.
 
 There are several ways to find these controls.
 
 Location settings
 """""""""""""""""
 
-`Open location settings in the settings app`_. All of the apps which have requested access to your location are listed under ``Let apps access this location:``. Toggle the switch next to an app on to allow it to access your location data. Toggle the switch off to deny access.
+`Open location settings in the settings app`_. All of the apps which have requested access to your location are listed under ``Let apps access this location:``. Toggle the switch next to an app "on" to allow it to access your location data. Toggle the switch "off" to deny access.
 
 App permission settings
 """""""""""""""""""""""
 
-Launch the ``System Settings`` app. Select ``Security & Privacy``, then select ``App permissions``, followed by ``Location``. All of the apps which have requested access to your location are listed. Toggle the switch next to an app on to allow it to access your location data. Toggle the switch off to deny access.
+Launch the ``System Settings`` app. Select ``Security & Privacy``, then select ``App permissions``, followed by ``Location``. All of the apps which have requested access to your location are listed. Toggle the switch next to an app "on" to allow it to access your location data. Toggle the switch "off" to deny access.
 
 Using apps with location services
 ---------------------------------
