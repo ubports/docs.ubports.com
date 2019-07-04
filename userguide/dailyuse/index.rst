@@ -7,5 +7,6 @@ This section of the documentation details common tasks that users may want to pe
     :maxdepth: 1
     :name: toc-userguide-dailyuse
 
+    location
     libertine
     anbox
