@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2019-05-14 16:03+0000\n"
+"PO-Revision-Date: 2019-07-01 16:10+0000\n"
 "Last-Translator: Peter keck <peter.keck@t-online.de>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-contribute/de/>\n"
@@ -734,11 +734,11 @@ msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:12
 msgid "Which core apps currently exist?"
-msgstr ""
+msgstr "Welche Kernanwendungen gibt es aktuell?"
 
 #: ../../contribute/preinstalled-apps.rst:14
 msgid "A full list of the Ubuntu Touch core apps follows."
-msgstr ""
+msgstr "Es folgt eine Liste der Kernanwendungen (core apps) von Ubuntu Touch."
 
 #: ../../contribute/preinstalled-apps.rst:21
 msgid "Application Name"
@@ -980,7 +980,6 @@ msgid "Confirming bug reports"
 msgstr "Fehlerberichte bestätigen"
 
 #: ../../contribute/quality-assurance.rst:14
-#, fuzzy
 msgid ""
 "Unconfirmed bugreports are labeld **needs confirmation** to enable `global "
 "filtering <https://github.com/ubports/ubuntu-touch/issues?q=is%3Aissue+is"
@@ -991,15 +990,15 @@ msgid ""
 "device, channel, build number and whether or not you were able to reproduce "
 "the issue."
 msgstr ""
-"Unbestätigte Fehlerberichte sind als **needs confirmation** für die "
-"`globalen Filter <https://github.com/ubports/ubuntu-touch/issues?q=is%3Aissue"
-"+is%3Aopen+label%3A%22needs+confirmation%22>`__ markiert. Man geht die Liste "
-"durch, liest die Fehlerberichte und versucht die beschriebenen Probleme zu "
-"reproduzieren. Falls nötig, :doc:`ergänzt man fehlende Informationen oder "
-"Log-Dateien oder verbessert die Qualität des Fehlerberichts im "
-"Allgemeinen<bugreporting>`. Zum Schluss hinterlässt man einen Kommentar, ob "
-"man das Problem reproduzieren konnte oder nicht und nennt Gerät, Kanal und "
-"Build-Nummer."
+"Unbestätigte Fehlerberichte sind mit **needs confirmation** markiert, damit `"
+"globales filtern <https://github.com/ubports/ubuntu-touch/"
+"issues?q=is%3Aissue+is%3Aopen+label%3A%22needs+confirmation%22>`__ möglich "
+"ist. Man geht die Liste durch, liest die Fehlerberichte und versucht die "
+"beschriebenen Probleme zu reproduzieren. Falls nötig, :doc:`ergänzt man "
+"fehlende Informationen oder Log-Dateien oder verbessert die Qualität des "
+"Fehlerberichts im Allgemeinen<bugreporting>`. Zum Schluss hinterlässt man "
+"einen Kommentar, ob man das Problem reproduzieren konnte oder nicht und "
+"nennt Gerät, Kanal und Build-Nummer."
 
 #: ../../contribute/quality-assurance.rst:16
 #, fuzzy
@@ -1057,8 +1056,8 @@ msgstr ""
 "während der Tests zu achten ist und dass man einen detaillierten Kommentar "
 "mit den eigenen Erfahrungen hinterlässt. Hat man Schreibrechte in dem "
 "Repository, kann der Fehlerbericht zurück in **In Development** oder weiter "
-"zu **Release Candidate** verschoben werden, entsprechend der Anleitungen zur "
-"`Problemverfolgung :doc:`</about/process/issue-tracking>`."
+"zu **Release Candidate** verschoben werden, entsprechend der Anleitungen "
+"zur  :doc:`Problemverfolgung</about/process/issue-tracking>`."
 
 #: ../../contribute/quality-assurance.rst:28
 msgid "Initial triaging of issues"
