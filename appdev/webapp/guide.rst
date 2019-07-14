@@ -69,7 +69,10 @@ One often wants to contain users to the site itself. That is, if the website is 
 With this launch command and URL pattern, the user can navigate to and open in the webapp any URL that starts with http://www.ubuntu.com/. For example, they can click on the Phone button (http://www.ubuntu.com/phone) in the banner and it opens in the webapp, or the Tablet button (http://www.ubuntu.com/tablet). But, clicking Developer opens the corresponding URL in the browser.
 
 Tip: Make sure to fully specify the subdomain in your starting URL, that is, use http://www.ubuntu.com instead of www.ubuntu.com. Not specifying the subdomain would create an ambiguous URL and thus introduces security concerns.
+
+
 More complex wildcard patterns
+------------------------------
 
 You might want to limit access to only some subpages of your site from within the webapp. This is easy with wildcard patterns. (Links to other subpages are opened in the browser.) For example, the following allows access to www.ubuntu.com/desktop/features and www.ubuntu.com/phone/features while not allowing access to www.ubuntu.com/desktop or www.ubuntu.com/phone::
 
