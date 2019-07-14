@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-08 17:32-0500\n"
-"PO-Revision-Date: 2019-07-14 21:48+0000\n"
+"PO-Revision-Date: 2019-07-15 23:48+0000\n"
 "Last-Translator: Moshe Lazar <wersewikkov@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-userguide/ru/>\n"
@@ -61,27 +61,31 @@ msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:29
 msgid "Next, you'll need to turn on Developer Mode."
-msgstr ""
+msgstr "Далее вам нужно включить режим разработчика."
 
 #: ../../userguide/advanceduse/adb.rst:31
 msgid "Reboot your device"
-msgstr ""
+msgstr "Перезагрузите ваше устройство"
 
 #: ../../userguide/advanceduse/adb.rst:32
 msgid "Place your device into developer mode (Settings - About - Developer Mode - check the box to turn it on)"
 msgstr ""
+"Переведите ваше устройство в режим разработчика (Настройки системы - "
+"Сведения - Режим разработчика - установите флажок, чтобы включить его)"
 
 #: ../../userguide/advanceduse/adb.rst:33
 msgid "Plug the device into a computer with adb installed"
-msgstr ""
+msgstr "Подключите устройство к компьютеру с установленным adb"
 
 #: ../../userguide/advanceduse/adb.rst:34
 msgid "Open a terminal and run ``adb devices``."
-msgstr ""
+msgstr "Откройте терминал и введите `` adb devices``."
 
 #: ../../userguide/advanceduse/adb.rst:37
 msgid "When you're done using the shell, it's a good idea to turn Developer Mode off again."
 msgstr ""
+"Когда вы закончите работу с shell, рекомендуется снова выключить режим "
+"разработчика."
 
 #: ../../userguide/advanceduse/adb.rst:39
 msgid "If there's a device in the list here (The command doesn't print \"List of devices attached\" and a blank line), you are able to use ADB successfully. If not, continue to the next section."
