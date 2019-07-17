@@ -8,13 +8,69 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-08 17:32-0500\n"
+"POT-Creation-Date: 2019-07-17 10:30-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: ../../systemdev/calendars.rst:2
+msgid "Working on the Calendar feature"
+msgstr ""
+
+#: ../../systemdev/calendars.rst:4
+msgid "The Calendar feature is provided by several components:"
+msgstr ""
+
+#: ../../systemdev/calendars.rst:6
+msgid "The `Calendar App <https://gitlab.com/ubports/apps/calendar-app>`_, providing the user interface"
+msgstr ""
+
+#: ../../systemdev/calendars.rst:7
+msgid "`Evolution Data Server <https://github.com/ubports/evolution-data-server-packaging>`_ (often shortened as \"EDS\"), which is the backend where your calendars are stored"
+msgstr ""
+
+#: ../../systemdev/calendars.rst:8
+msgid "`sync-monitor <https://github.com/ubports/sync-monitor>`_, the service responsible for managing the synchronisation with remote calendars"
+msgstr ""
+
+#: ../../systemdev/calendars.rst:9
+msgid "`SyncEvolution <https://github.com/ubports/syncevolution-packaging>`_, the service responsible for performing the synchronisation to a WebDAV/CalDAV remote calendar"
+msgstr ""
+
+#: ../../systemdev/calendars.rst:13
+msgid "Debugging"
+msgstr ""
+
+#: ../../systemdev/calendars.rst:16
+msgid "Calendar synchronisation issues"
+msgstr ""
+
+#: ../../systemdev/calendars.rst:18
+msgid "On the device, it's possible to run ``syncevolution`` in debug mode. To do so, open a terminal (it's easier if done from a remote shell -- you can gain a shell on the device using :doc:`/userguide/advanceduse/adb` or :doc:`/userguide/advanceduse/ssh`) and kill any existing processes:"
+msgstr ""
+
+#: ../../systemdev/calendars.rst:24
+msgid "Then, start the ``syncevolution`` process with the proper environment variable:"
+msgstr ""
+
+#: ../../systemdev/calendars.rst:30
+msgid "At this point, open the Calendar App (if it was not open already) and manually trigger a synchronisation (note that the Synchronisation action is only available if your device is connected to the internet): all the logs will appear in the terminal."
+msgstr ""
+
+#: ../../systemdev/calendars.rst:32
+msgid "In some cases, the output from ``syncevolution`` might not be enough: for example, the raw HTTP data is usually not printed. Should you need to see that as well, then you'll have to modify a configuration file as well. ``syncevolution``'s configuration files are located under ``~/.config/syncevolution/``,  in a subdirectory whose name takes the form ``<provider-name>-<account-id>``.  There might be stale directories as well, referring to old accounts which have been since deleted. To find out what accounts are still valid, you can invoke the ``account-console`` tool like this:"
+msgstr ""
+
+#: ../../systemdev/calendars.rst:38
+msgid "This will print the list of the current valid accounts. Once you've figured out what is the account you are interested in, open the file ``~/.config/syncevolution/<account>/peers/target-config/config.ini`` and set the ``loglevel`` variable to a higher value (``11`` seems enough to print all the HTTP traffic):"
+msgstr ""
+
+#: ../../systemdev/calendars.rst:50
+msgid "Note that in order for these changes to take effect, you'll need to restart the ``syncevolution`` process again, as explained above."
+msgstr ""
 
 #: ../../systemdev/index.rst:2
 msgid "System software development"
@@ -49,7 +105,7 @@ msgid "This section includes reference guides on how different parts of the Ubun
 msgstr ""
 
 #: ../../systemdev/index.rst:29
-msgid "There's nothing here yet, but maybe you'd like to add some reference material? Check out :doc:`our guide to contributing to documentation </contribute/documentation>` to learn more."
+msgid "There's not much here yet, but maybe you'd like to add some reference material? Check out :doc:`our guide to contributing to documentation </contribute/documentation>` to learn more."
 msgstr ""
 
 #: ../../systemdev/testing-locally.rst:2

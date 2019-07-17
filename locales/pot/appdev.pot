@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-08 17:32-0500\n"
+"POT-Creation-Date: 2019-07-17 10:30-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -182,6 +182,26 @@ msgstr ""
 
 #: ../../appdev/guides/cookbook.rst:22
 msgid "`Geany on Ubuntu Touch device as text editor, source code editor, debugger and compiler for multiple languages <http://kriscode.blogspot.tw/2017/10/geany-on-ubuntu-touch-device-as-text.html>`__"
+msgstr ""
+
+#: ../../appdev/guides/cookbook.rst:23
+msgid "`Publish your existing Qt QML app to Ubuntu Touch using QMake (Video) <https://youtu.be/ehqlwRNrfO0>`__"
+msgstr ""
+
+#: ../../appdev/guides/cookbook.rst:24
+msgid "`Publish your existing Qt QML app to Ubuntu Touch using CMake (Video) <https://youtu.be/c2sq6aLeGec>`__"
+msgstr ""
+
+#: ../../appdev/guides/cookbook.rst:25
+msgid "`Getting started with Clickable (Video) <https://youtu.be/TE-s5522v0Y>`__"
+msgstr ""
+
+#: ../../appdev/guides/cookbook.rst:26
+msgid "`Content Hub overview (Video) <https://youtu.be/AihwC2sPIk0>`__"
+msgstr ""
+
+#: ../../appdev/guides/cookbook.rst:27
+msgid "`Import files to your app with Content Hub (Video) <https://youtu.be/q6zzM16jw1U>`__"
 msgstr ""
 
 #: ../../appdev/guides/dependencies.rst:2
@@ -406,7 +426,7 @@ msgid "If you are interested in helping create developer guides check out our `G
 msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:2
-#: ../../appdev/platform/index.rst:10
+#: ../../appdev/platform/index.rst:12
 msgid "Push notifications"
 msgstr ""
 
@@ -1082,99 +1102,127 @@ msgid "App development"
 msgstr ""
 
 #: ../../appdev/index.rst:4
-msgid "Welcome to an open source and free platform under constant scrutiny and improvement by a vibrant global community, whose energy, connectedness, talent and commitment is unmatched. Ubuntu is also the third most deployed desktop OS in the world."
+msgid "Great!, you'd like to develop an app for Ubuntu Touch. Here are some resources that we hope help you get started."
 msgstr ""
 
-#: ../../appdev/index.rst:7
-msgid "Get started"
+#: ../../appdev/index.rst:6
+msgid "If you have questions that aren't answered in the docs or want to chat with other Ubuntu Touch developers? Join our `app dev Telegram group <https://t.me/UbuntuAppDevEN>`_ or chat with us on the `UBports app dev forum <https://forums.ubports.com/category/35/app-development>`_."
 msgstr ""
 
 #: ../../appdev/index.rst:9
-msgid "Ubuntu Touch is a fun and vibrant platform for development. Whether you're a new developer or an experienced one, we have several resources to help you get started."
+msgid "Get started"
 msgstr ""
 
 #: ../../appdev/index.rst:11
-msgid "Ubuntu Touch supports several different types of apps. :ref:`Native apps <nativeapp>` are apps with interfaces made using QML or HTML with their behavior defined in JavaScript, C++, Python, or Go. :ref:`Web apps <webapp>` are special containers to run websites in."
+msgid "Ubuntu Touch supports two kind of apps. :ref:`Native apps <nativeapp>` are apps with interfaces made using QML or HTML with their behavior defined in JavaScript, C++, Python, Rust or Go. :ref:`Web apps <webapp>` are special containers to run websites in."
 msgstr ""
 
-#: ../../appdev/index.rst:21
-msgid "Community"
+#: ../../appdev/index.rst:13
+msgid "Applications are shipped as a :ref:`Click <click>` package and can be publicly shared on the official app store `OpenStore <https://open-store.io>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:23
-msgid "Have questions that aren't answered in the docs or want to chat with other Ubuntu Touch developers? Join our `app dev Telegram group <https://t.me/UbuntuAppDevEN>`_ or chat with us on the `UBports app dev forum <https://forums.ubports.com/category/35/app-development>`_."
-msgstr ""
-
-#: ../../appdev/index.rst:26
+#: ../../appdev/index.rst:24
 msgid "Tools"
 msgstr ""
 
-#: ../../appdev/index.rst:28
+#: ../../appdev/index.rst:26
 msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ is a meta-build system for Ubuntu Touch applications that allows you to compile, build, test and publish ``click`` packages and provides various templates to get you started with app development. It is currently the easiest and most convenient way of building click packages for Ubuntu Touch. You can use any code editor or IDE that you choose and build your apps from the commandline with Clickable."
 msgstr ""
 
-#: ../../appdev/index.rst:30
+#: ../../appdev/index.rst:28
 msgid "Alternatively there is the old `Ubuntu SDK IDE <https://docs.ubuntu.com/phone/en/platform/sdk>`__. Be aware that it is no longer supported by Canonical, and UBports has chosen to not support it either due to lack of manpower."
 msgstr ""
 
-#: ../../appdev/index.rst:32
+#: ../../appdev/index.rst:30
 msgid "You can still install the SDK IDE in Ubuntu 16.04, but it is not guaranteed to work correctly. You can use the following commands to install::"
 msgstr ""
 
-#: ../../appdev/index.rst:42
+#: ../../appdev/index.rst:40
 msgid "Guides"
 msgstr ""
 
-#: ../../appdev/index.rst:44
+#: ../../appdev/index.rst:42
 msgid "Get started building your first app or learn about advanced concepts with our :ref:`Developer guides <devguides>`."
 msgstr ""
 
-#: ../../appdev/index.rst:60
+#: ../../appdev/index.rst:58
 msgid "Publishing"
 msgstr ""
 
-#: ../../appdev/index.rst:62
+#: ../../appdev/index.rst:60
 msgid "After you are done building your app, distribute it on the `OpenStore <https://open-store.io/>`__ with our :ref:`Publishing guides <publishing>`."
 msgstr ""
 
-#: ../../appdev/index.rst:71
+#: ../../appdev/index.rst:69
 msgid "Documentation"
 msgstr ""
 
-#: ../../appdev/index.rst:73
+#: ../../appdev/index.rst:71
 msgid "`QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:74
+#: ../../appdev/index.rst:72
 msgid "`Cordova HTML5 API <https://api-docs.ubports.com/sdk/apps/html5/index.html>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:75
+#: ../../appdev/index.rst:73
 msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:78
-msgid "More Documentation"
+#: ../../appdev/index.rst:74
+msgid "`Suru Icons <http://docs.ubports.com/projects/icons/en/latest/>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:90
+#: ../../appdev/index.rst:76
+msgid "It is possible to develop cross-platform apps that don't depend on Ubuntu specific APIs, although this is not the official way of developing apps for Ubuntu Touch. If running on other operating systems is an requirement for your app, you can refer to this  APIs instead:"
+msgstr ""
+
+#: ../../appdev/index.rst:78
+msgid "`Kirigami API <https://api.kde.org/frameworks/kirigami/html/>`__"
+msgstr ""
+
+#: ../../appdev/index.rst:79
+msgid "`Qt Quick Controls 2 API <https://doc.qt.io/qt-5/qtquickcontrols-index.html>`__"
+msgstr ""
+
+#: ../../appdev/index.rst:83
+msgid "Plaform"
+msgstr ""
+
+#: ../../appdev/index.rst:96
 msgid "Sample apps"
 msgstr ""
 
-#: ../../appdev/index.rst:92
+#: ../../appdev/index.rst:98
 msgid "Learn more about app development by digging into our :ref:`Sample apps <sampleapps>`."
 msgstr ""
 
-#: ../../appdev/index.rst:102
+#: ../../appdev/index.rst:108
 msgid "Preinstalled apps"
 msgstr ""
 
-#: ../../appdev/index.rst:104
+#: ../../appdev/index.rst:110
 msgid "The :doc:`/contribute/preinstalled-apps` page has information on developing the apps which are included with Ubuntu Touch."
 msgstr ""
 
 #: ../../appdev/nativeapp/index.rst:4
 msgid "Native applications"
+msgstr ""
+
+#: ../../appdev/nativeapp/index.rst:6
+msgid "The recommended way to build a native application on Ubuntu Touch is to use the `Qt <https://doc.qt.io/>`__ framework ( current version shipped on Ubuntu Touch 16.04 is Qt 5.9.5 ). You are not stick with the traditionnal C++<->QML Qt model, you can use also Python, Go, Rust or even Javascript for your backend."
+msgstr ""
+
+#: ../../appdev/nativeapp/index.rst:9
+msgid "Ubuntu Touch provide a subset of Qt QML components to ease you design your app : `QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__ and Icons: `Suru Icons <http://docs.ubports.com/projects/icons/en/latest/>`__, but you can also ship your cross platform app using standard Qt QML QtQuick2 components."
+msgstr ""
+
+#: ../../appdev/nativeapp/index.rst:12
+msgid "You can use `Clickable <http://clickable.bhdouglass.com/en/latest/>`_ to facilitate Packaging, deploying, publishing and tests ."
+msgstr ""
+
+#: ../../appdev/nativeapp/index.rst:14
+msgid "Check out informations about the platform and confinement model in :ref:`Platform <platform>` section"
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:2
@@ -1571,7 +1619,7 @@ msgstr ""
 msgid "Contains which policy the app needs to work properly. See `Security and app isolation`_ below for more information on this file."
 msgstr ""
 
-#: ../../appdev/platform/click.rst:52
+#: ../../appdev/platform/click.rst:53
 msgid "``.desktop`` file"
 msgstr ""
 
@@ -1615,19 +1663,23 @@ msgstr ""
 msgid "X-Ubuntu-XMir-Enable: ``true`` if your app is built for X"
 msgstr ""
 
-#: ../../appdev/platform/click.rst:59
+#: ../../appdev/platform/click.rst:53
+msgid "X-Ubuntu-Supported-Orientations: ``landscape`` or ``portrait`` to force your app start in landscape mode and portrait mode respectively."
+msgstr ""
+
+#: ../../appdev/platform/click.rst:60
 msgid "Security and app isolation"
 msgstr ""
 
-#: ../../appdev/platform/click.rst:61
-msgid "All Ubuntu apps and scopes are confined respecting AppArmor access control mechanism (see `Application Confinement <https://wiki.ubuntu.com/SecurityTeam/Specifications/ApplicationConfinement#App_confinement_with_AppArmor>`_) , meaning they only have access to their own resources and are isolated from other apps and parts of the system. The developer must declare which policy groups are needed for the app or scope to function properly with an apparmor ``.json`` file."
+#: ../../appdev/platform/click.rst:62
+msgid "All Ubuntu apps are confined respecting AppArmor access control mechanism (see `Application Confinement <https://wiki.ubuntu.com/SecurityTeam/Specifications/ApplicationConfinement#App_confinement_with_AppArmor>`_) , meaning they only have access to their own resources and are isolated from other apps and parts of the system. The developer must declare which policy groups are needed for the app or scope to function properly with an apparmor ``.json`` file."
 msgstr ""
 
-#: ../../appdev/platform/click.rst:63
+#: ../../appdev/platform/click.rst:64
 msgid "Example ``apparmor.json`` file::"
 msgstr ""
 
-#: ../../appdev/platform/click.rst:75
+#: ../../appdev/platform/click.rst:76
 msgid "For a full list of available policy groups, see :doc:`apparmor`."
 msgstr ""
 
@@ -1635,36 +1687,48 @@ msgstr ""
 msgid "Platform"
 msgstr ""
 
-#: ../../appdev/platform/index.rst:7
+#: ../../appdev/platform/index.rst:6
+msgid "Here are Ubuntu Touch platforms key topics when you want to extend your app with Ubuntu Touch ecosystem:"
+msgstr ""
+
+#: ../../appdev/platform/index.rst:9
 msgid "Content Hub"
 msgstr ""
 
-#: ../../appdev/platform/index.rst:7
+#: ../../appdev/platform/index.rst:9
 msgid "Each application can expose content outside its sandbox, giving the user precise control over what can be imported, exported or shared with the world and other apps."
 msgstr ""
 
-#: ../../appdev/platform/index.rst:10
+#: ../../appdev/platform/index.rst:12
 msgid "By using a push server and a companion client, instantly serve users with the latest information from their network and apps."
 msgstr ""
 
-#: ../../appdev/platform/index.rst:13
+#: ../../appdev/platform/index.rst:15
 msgid "URL dispatcher"
 msgstr ""
 
-#: ../../appdev/platform/index.rst:13
+#: ../../appdev/platform/index.rst:15
 msgid "Help users navigate between your apps and drive their journey with the URL dispatcher."
 msgstr ""
 
-#: ../../appdev/platform/index.rst:17
+#: ../../appdev/platform/index.rst:19
 msgid "Online accounts"
 msgstr ""
 
-#: ../../appdev/platform/index.rst:16
+#: ../../appdev/platform/index.rst:18
 msgid "Simplify user access to online services by integrating with the online accounts API. Accounts added by the user on the device are registered in a centralized hub, allowing other apps to re-use them."
 msgstr ""
 
-#: ../../appdev/platform/index.rst:19
+#: ../../appdev/platform/index.rst:21
 msgid "`Read the docs <https://docs.ubuntu.com/phone/en/platform/>`__"
+msgstr ""
+
+#: ../../appdev/platform/index.rst:24
+msgid "Packaging your app"
+msgstr ""
+
+#: ../../appdev/platform/index.rst:26
+msgid "Here you will get some informations about the confinment model and the packaging system:"
 msgstr ""
 
 #: ../../appdev/publishing/index.rst:4
@@ -1797,110 +1861,114 @@ msgid "With this launch command and URL pattern, the user can navigate to and op
 msgstr ""
 
 #: ../../appdev/webapp/guide.rst:71
-msgid "Tip: Make sure to fully specify the subdomain in your starting URL, that is, use http://www.ubuntu.com instead of www.ubuntu.com. Not specifying the subdomain would create an ambiguous URL and thus introduces security concerns. More complex wildcard patterns"
+msgid "Tip: Make sure to fully specify the subdomain in your starting URL, that is, use http://www.ubuntu.com instead of www.ubuntu.com. Not specifying the subdomain would create an ambiguous URL and thus introduces security concerns."
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:74
+#: ../../appdev/webapp/guide.rst:75
+msgid "More complex wildcard patterns"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:77
 msgid "You might want to limit access to only some subpages of your site from within the webapp. This is easy with wildcard patterns. (Links to other subpages are opened in the browser.) For example, the following allows access to www.ubuntu.com/desktop/features and www.ubuntu.com/phone/features while not allowing access to www.ubuntu.com/desktop or www.ubuntu.com/phone::"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:80
+#: ../../appdev/webapp/guide.rst:83
 msgid "Multiple patterns"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:82
+#: ../../appdev/webapp/guide.rst:85
 msgid "You can use multiple patterns by separating them with a comma. For example, the following allows access only to www.ubuntu.com/desktop/features and www.ubuntu.com/phone/features:::"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:86
+#: ../../appdev/webapp/guide.rst:89
 msgid "Tip: Multiple patterns are often necessary to achieve the intended containment behavior."
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:90
+#: ../../appdev/webapp/guide.rst:93
 msgid "Adding a specific subdomain"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:92
+#: ../../appdev/webapp/guide.rst:95
 msgid "Many URLs have one or more subdomains. (For example, in the following, \"developer\" is the subdomain: developer.ubuntu.com.) You can allow access to a single subdomain (and all of its subpages) with a pattern like this:::"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:96
+#: ../../appdev/webapp/guide.rst:99
 msgid "However, one usually wants the user to be able to navigate back to the starting URL (and its subpages). So, if the starting URL is http://www.ubuntu.com, a second pattern is needed:::"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:100
+#: ../../appdev/webapp/guide.rst:103
 msgid "Putting these together, here’s an example that starts on http://www.ubuntu.com and allows navigation to http://developer.ubuntu.com and subpages and back to http://www.ubuntu.com and subpages:::"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:105
+#: ../../appdev/webapp/guide.rst:108
 msgid "Adding subdomains with a wildcard"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:107
+#: ../../appdev/webapp/guide.rst:110
 msgid "Some URLs have multiple subdomains. For example, www.ubuntu.com has design.ubuntu.com, developer.ubuntu.com and more. You can add access to all subdomains with a wildcard in the subdomain position:::"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:111
+#: ../../appdev/webapp/guide.rst:114
 msgid "Note: An asterisk in the subdomain position matches any valid single subdomain. This single pattern is sufficient to enable browsing to any subdomain and subpages, including back to the starting URL (http://www.ubuntu.com) and its subpages."
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:114
+#: ../../appdev/webapp/guide.rst:117
 msgid "Adding https"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:116
+#: ../../appdev/webapp/guide.rst:119
 msgid "Sometimes a site uses https for some of its URLs. Here is an example that allows https and https as access within the webapp to www.launchpad.net (and all subpages due to the wildcard):::"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:120
+#: ../../appdev/webapp/guide.rst:123
 msgid "Note: the question mark in https?. This means the preceding character (the ‘s’) is optional. If https is always required, omit the question mark."
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:123
+#: ../../appdev/webapp/guide.rst:126
 msgid "Command line arguments"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:125
+#: ../../appdev/webapp/guide.rst:128
 msgid "The webapp-container accepts many options to fine tune how it hosts various web applications."
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:127
+#: ../../appdev/webapp/guide.rst:130
 msgid "See all help with:::"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:131
+#: ../../appdev/webapp/guide.rst:134
 msgid "Note: Only the following options apply to converged Ubuntu.::"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:145
+#: ../../appdev/webapp/guide.rst:148
 msgid "Chrome options (if none specified, no chrome is shown by default):::"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:150
+#: ../../appdev/webapp/guide.rst:153
 msgid "Note: The other available options are specific to desktop webapps. It is recommended to not use them anymore."
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:153
+#: ../../appdev/webapp/guide.rst:156
 msgid "User-Agent string override"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:155
+#: ../../appdev/webapp/guide.rst:158
 msgid "Some websites check specific portions of the web engine identity, aka the User-Agent string, to adjust their presentation or enable certain features. While not a recommended practice, it is sometimes necessary to change the default string sent by the webapp container."
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:157
+#: ../../appdev/webapp/guide.rst:160
 msgid "To change the string from the command line, use the following option:::"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:162
+#: ../../appdev/webapp/guide.rst:165
 msgid "Browser data containment"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:164
+#: ../../appdev/webapp/guide.rst:167
 msgid "The webapp experience is contained and isolated from the browser data point of view. That is webapps do not access data from any other installed browser, such as history, cookies and so on. Other browser on the system do not access the webapp’s data. Storage"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:167
+#: ../../appdev/webapp/guide.rst:170
 msgid "W3C allows apps to use local storage, and Oxide/Webapp-container supports the main standards here: LocalStorage, IndexedDB, WebSQL."
 msgstr ""
 
@@ -1984,7 +2052,7 @@ msgstr ""
 msgid "On your phone, start the browser in inspector mode:::"
 msgstr ""
 
-#: ../../appdev/webapp/webdebug.rst:26
+#: ../../appdev/webapp/webdebug.rst:27
 msgid "Now on your computer, launch Chrome/Chromium browser, and point address to ``http://YOUR_UT_IP_ADDRESS:9221``"
 msgstr ""
 

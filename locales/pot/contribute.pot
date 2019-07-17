@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-08 17:32-0500\n"
+"POT-Creation-Date: 2019-07-17 10:30-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -620,7 +620,7 @@ msgid "Smoke testing"
 msgstr ""
 
 #: ../../contribute/quality-assurance.rst:9
-msgid "To test the core functionality of the operating system, we have compiled `a set of standardized tests <https://nc.ubports.com/s/3RnAI7tYzB2PMXs>`_. Run these tests on your device to :doc:`find and report bugs and regressions <bugreporting>`. It's usually run on all devices before a new release to make sure no new issues were introduced."
+msgid "To test the core functionality of the operating system, we have compiled `a set of standardized tests <https://gitlab.com/ubports/teams/qa/project-management/raw/master/QA-Plan-Template.ots>`_. Run these tests on your device to :doc:`find and report bugs and regressions <bugreporting>`. It's usually run on all devices before a new release to make sure no new issues were introduced."
 msgstr ""
 
 #: ../../contribute/quality-assurance.rst:12
@@ -668,118 +668,178 @@ msgid "Although English is the official base language for all UBports projects w
 msgstr ""
 
 #: ../../contribute/translations.rst:6
-msgid "We are working hard to meet that goal, and you can help as well."
+msgid "We are working hard to meet that goal, and you can help as well. You decide how much time you can put into translation. From minutes to hours, everything counts."
 msgstr ""
 
 #: ../../contribute/translations.rst:9
-msgid "Tools for Translation"
+msgid "How does a text gets translated (technical background)"
 msgstr ""
 
-#: ../../contribute/translations.rst:11
-msgid "For everyone: A web based translation tool called `Weblate <https://translate.ubports.com/>`_. This is the recommended way."
-msgstr ""
-
-#: ../../contribute/translations.rst:12
-msgid "For advanced users: Working directly on .po files with the editor of your choice, and a GitHub account. The .po files for each project are in their repository on `our GitHub organization <https://github.com/ubports>`_."
+#: ../../contribute/translations.rst:10
+msgid "Most apps running on Ubuntu Touch use `GNU gettext <https://www.gnu.org/software/gettext/>`_ for translations. A *.pot* template file holds an apps strings. From this template for every language an individual *.po* file is derived. Those *.po* files do contain the actual translations. To add a new language a new *.po* file needs to be created. To translate a string the *.po* file needs to be edited. Next to the original string (english in most cases) the appropriate translation needs to be entered following the *.po* gettext file syntax. Some apps do use `QtLinguist <https://doc.qt.io/qt-5/qtlinguist-index.html>`_ for translation. It does follow the same priciples only using *.ts* files for translations with another syntax. As template one *.ts* file is used."
 msgstr ""
 
 #: ../../contribute/translations.rst:14
-msgid "We also have a `Translation Forum <https://forums.ubports.com/category/39/translations>`_ to discuss translating Ubuntu Touch and its core apps."
+msgid "Within a app strings are marked either this way ``i18n.tr(\"string\")`` when using gettext or like this ``tr(\"string\")`` when using QtLinguist. When the app is build those translatable strings are extracted and written into the *.pot* or *.ts* template files. The *.po* and *.ts* language files then need to be updated from their template."
 msgstr ""
 
-#: ../../contribute/translations.rst:18
-msgid "How-To"
+#: ../../contribute/translations.rst:16
+msgid "Once strings have been translated, they are made available for users with a new release of an app."
+msgstr ""
+
+#: ../../contribute/translations.rst:19
+msgid "Methods of Translation"
 msgstr ""
 
 #: ../../contribute/translations.rst:21
-msgid "UBports Weblate"
+msgid "There are three common ways used to translate an app:"
 msgstr ""
 
 #: ../../contribute/translations.rst:23
-msgid "You can go to `UBports Weblate <https://translate.ubports.com/>`_, click on \"Dashboard\" button, go to a project, and start making anonymous suggestions without being registered. If you want to save your translations, you must be logged in."
+msgid "Weblate: A web based translation tool. UBports apps using Weblate can be translated `here <https://translate.ubports.com/projects/>`_. There is an automatic transfer of new strings from an apps repo to weblate. Translated strings get back as commits to the repo from weblate."
+msgstr ""
+
+#: ../../contribute/translations.rst:24
+msgid "Editor: Translation is done by changing *.po* files with the editor of your choice, and a GitHub/GitLab account. The *.po*/*.ts* files for each project are in their repository on `our GitLab organization <https://gitlab.com/ubports/apps>`_ or on `our GitHub organization <https://github.com/ubports>`_. After translating the translator commits new translations to an apps repo generally by opening a merge request/pull request."
 msgstr ""
 
 #: ../../contribute/translations.rst:25
-msgid "For that, go to UBports Weblate and click on the \"Register\" button. Once in the \"Registration\" page, you'll find two options:"
+msgid "Team translation: We also have  a `Translation Forum <https://forums.ubports.com/category/39/translations>`_ to discuss translating Ubuntu Touch and its core apps. Some projects are using Telegram or matrix groups too, and some teams are still using the Ubuntu Launchpad framework."
 msgstr ""
 
 #: ../../contribute/translations.rst:27
-msgid "Register using a valid email address, a username, and your full name. You'll need to resolve an easy control question too."
+msgid "Core apps and some community apps like dekko or TELEports are generally using weblate for translation. This is the preferred way to translate and it does not need any programming skills. Please have a look at the `UBports translation projects <https://translate.ubports.com/projects/>`_. When using weblate do not edit *.po* files manually. Commiting edited *.po* files can break the automated process of translation."
 msgstr ""
 
-#: ../../contribute/translations.rst:28
-msgid "Register using a third party registration. Currently the system supports accounts from openSUSE, GitHub, Fedora, and Ubuntu."
-msgstr ""
-
-#: ../../contribute/translations.rst:30
-msgid "Once you're logged in, the site is self-explanatory and you'll find there all the options and customization you can do."
+#: ../../contribute/translations.rst:29
+msgid "Most apps maintained by individual developers are mainly using *.pot*/*.po* files for translation. Those generally need to be edited manually and commited to the apps repo."
 msgstr ""
 
 #: ../../contribute/translations.rst:32
-msgid "Now, get on with it. The first step is to search if your language already exists in the project of your choice."
+msgid "How-To"
 msgstr ""
 
-#: ../../contribute/translations.rst:34
-msgid "If your language is not available for a specific project, you can add it yourself."
+#: ../../contribute/translations.rst:35
+msgid "UBports Weblate"
 msgstr ""
 
-#: ../../contribute/translations.rst:36
-msgid "You decide how much time you can put into translation. From minutes to hours, everything counts."
+#: ../../contribute/translations.rst:37
+msgid "You can go to `UBports Weblate <https://translate.ubports.com/projects/>`_, click on \"Dashboard\" button, go to a project, and start making anonymous suggestions without being registered. If you want to save your translations, you must be logged in."
 msgstr ""
 
 #: ../../contribute/translations.rst:39
-msgid ".po file editor"
+msgid "For that, go to UBports Weblate and click on the \"Register\" button. Once in the \"Registration\" page, you'll find two options:"
 msgstr ""
 
 #: ../../contribute/translations.rst:41
-msgid "As was said up above, you need a file editor of your choice and a GitHub account to translate .po files directly."
+msgid "Register using a valid email address, a username, and your full name. You'll need to resolve an easy control question too."
 msgstr ""
 
-#: ../../contribute/translations.rst:43
-msgid "There are online gettext .po editors and those you can install in your computer."
+#: ../../contribute/translations.rst:42
+msgid "Register using a third party registration. Currently the system supports accounts from openSUSE, GitHub, Fedora, and Ubuntu."
 msgstr ""
 
-#: ../../contribute/translations.rst:45
-msgid "You can choose whatever editor you want, but we prefer to work with free software only. There are too many plain text editors and tools to help you translate .po files to put down a list here."
+#: ../../contribute/translations.rst:44
+msgid "Once you're logged in, the site is self-explanatory and you'll find there all the options and customization you can do."
 msgstr ""
 
-#: ../../contribute/translations.rst:47
-msgid "If you want to work with .po files directly you know what you're doing for sure."
+#: ../../contribute/translations.rst:46
+msgid "Now, get on with it. The first step is to search if your language already exists in the project of your choice. If your language is not available for a specific project, you can add it yourself."
 msgstr ""
 
-#: ../../contribute/translations.rst:50
-msgid "Translation Team Communication"
+#: ../../contribute/translations.rst:49
+msgid ".po/.ts File Editor"
 msgstr ""
 
-#: ../../contribute/translations.rst:52
-msgid "The straightforward and recommended way is to use `the forum category <https://forums.ubports.com/category/39/translations>`_ that UBports provides for this task."
+#: ../../contribute/translations.rst:51
+msgid "If you want to work with *.po*/*.ts* files directly you need to know what you're doing for sure. The first thing you should always remember is:"
 msgstr ""
 
 #: ../../contribute/translations.rst:54
-msgid "To use it you need to register, or login if you're registered already."
+msgid "Do **never** commit *.po* files to projects that are translated using weblate. This could break the whole translation exchange process with weblate."
 msgstr ""
 
 #: ../../contribute/translations.rst:56
-msgid "The only requirement is to start your post putting down your language in brackets in the \"Enter your topic title here\" field. For example, ``[Spanish] How to translate whatever?``"
+msgid "As was said up above, you need a file editor of your choice and a GitHub/GitLab account to translate *.po*/*.ts* files directly. Idealy you do have `clickable <http://clickable.bhdouglass.com/en/latest/>`_ set up and know how to build an app."
 msgstr ""
 
 #: ../../contribute/translations.rst:58
-msgid "Just for your information, some projects are using Telegram groups too, and some teams are still using the Ubuntu Launchpad framework."
+msgid "There are online gettext .po editors and those you can install in your computer. You can choose whatever editor you want, but we prefer to work with free software only. There are too many plain text editors and tools to help you translate *.po*/*.ts* files to put down a list here."
 msgstr ""
 
-#: ../../contribute/translations.rst:60
-msgid "In your interactions with your team you'll find the best way to coordinate your translations."
+#: ../../contribute/translations.rst:61
+msgid "For high quality translations it is recommended to go through all of the steps given below. Although if you are not familiar with building apps using clickable, skip the steps 4. to 6. You may not be able to translate the latest strings though. And you will not know if the strings fit into the apps layout."
 msgstr ""
 
 #: ../../contribute/translations.rst:63
-msgid "License"
+msgid "How to proceed:"
 msgstr ""
 
 #: ../../contribute/translations.rst:65
-msgid "All the translation projects, and all your contributions to this project, are under a `Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) <https://creativecommons.org/licenses/by-sa/4.0/>`_ license that you explicitly accept by contributing to the project."
+msgid "fork the apps repo into your GitHub or GitLab account"
+msgstr ""
+
+#: ../../contribute/translations.rst:66
+msgid "clone the repo locally or use GitLab's online editor"
 msgstr ""
 
 #: ../../contribute/translations.rst:67
+msgid "(optional) create a new branch for the translation"
+msgstr ""
+
+#: ../../contribute/translations.rst:68
+msgid "build the app using clickable to get up-to-date *.pot*/*.ts* template files"
+msgstr ""
+
+#: ../../contribute/translations.rst:69
+msgid "update the desired *.po*/*.ts* language file(s) from the template"
+msgstr ""
+
+#: ../../contribute/translations.rst:70
+msgid "translate all strings"
+msgstr ""
+
+#: ../../contribute/translations.rst:71
+msgid "build and install the app on your device and test the translations"
+msgstr ""
+
+#: ../../contribute/translations.rst:72
+msgid "(optional) repeat steps 6. and 7. until you are satisfied with your work"
+msgstr ""
+
+#: ../../contribute/translations.rst:73
+msgid "push the translated *.po*/*.ts* file(s) to your forked repo [do NOT commit *.pot*/*.ts* template files]"
+msgstr ""
+
+#: ../../contribute/translations.rst:74
+msgid "open an merge/pull request from your fork to the apps repo"
+msgstr ""
+
+#: ../../contribute/translations.rst:78
+msgid "Translation Team Communication"
+msgstr ""
+
+#: ../../contribute/translations.rst:80
+msgid "You may talk to others regarding translations by using `the forum category <https://forums.ubports.com/category/39/translations>`_ that UBports provides for this task. To use it you need to register, or login if you're registered already."
+msgstr ""
+
+#: ../../contribute/translations.rst:82
+msgid "The only requirement is to start your post putting down your language in brackets in the \"Enter your topic title here\" field. For example, ``[Spanish] How to translate whatever?``"
+msgstr ""
+
+#: ../../contribute/translations.rst:84
+msgid "In your interactions with your team you'll find the best way to coordinate your translations."
+msgstr ""
+
+#: ../../contribute/translations.rst:87
+msgid "License"
+msgstr ""
+
+#: ../../contribute/translations.rst:89
+msgid "All the translation projects, and all your contributions to this project, are under a `Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) <https://creativecommons.org/licenses/by-sa/4.0/>`_ license that you explicitly accept by contributing to the project."
+msgstr ""
+
+#: ../../contribute/translations.rst:91
 msgid "Go to that link to learn what this exactly means."
 msgstr ""
 
