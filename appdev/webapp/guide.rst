@@ -165,6 +165,8 @@ Browser data containment
 ------------------------
 
 The webapp experience is contained and isolated from the browser data point of view. That is webapps do not access data from any other installed browser, such as history, cookies and so on. Other browser on the system do not access the webapp’s data.
+
 Storage
+-------
 
 W3C allows apps to use local storage, and Oxide/Webapp-container supports the main standards here: LocalStorage, IndexedDB, WebSQL.
