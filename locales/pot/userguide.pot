@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-08 17:32-0500\n"
+"POT-Creation-Date: 2019-07-17 10:30-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -513,6 +513,7 @@ msgid "To uninstall apps, run ``adb uninstall [APP_ID]`` from your Ubuntu Touch 
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:89
+#: ../../userguide/install.rst:22
 msgid "Troubleshooting"
 msgstr ""
 
@@ -557,7 +558,7 @@ msgid "Libertine allows you to use standard desktop applications in Ubuntu Touch
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:6
-msgid "To display and launch applications you need the *Desktop Apps Scope* which is available in the `Open Store <https://open-store.io/app/libertine-scope.ubuntu>`_. To install applications you need to use the commandline as described below."
+msgid "To display and launch applications you need the *Desktop Apps Scope* which is available by swiping from the bottom of your device, and then tapping on the star. To install applications you need to use the commandline as described below."
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:9
@@ -754,12 +755,222 @@ msgstr ""
 msgid "Another challenge is that Ubuntu Touch system updates are released as OTA images. A consequence of this is that the root filesystem is read only. Libertine provides a container with a read-write filesystem to allow the installation of regular Linux desktop applications."
 msgstr ""
 
+#: ../../userguide/dailyuse/location.rst:2
+msgid "Using location services"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:4
+msgid "Location services in Ubuntu Touch allow apps to access your current location. Using this data, apps can `offer turn-by-turn navigation <https://open-store.io/app/navigator.costales>`__, `track your exercise paths <https://open-store.io/app/activitytracker.cwayne18>`__, `locate public transport near you <https://open-store.io/app/transport.zubozrout>`__, and more."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:6
+msgid "The location services built in to Ubuntu Touch are designed to protect your privacy -- you choose to permit or deny apps access to this data. Apps may only access your location data when the device screen is on and the app is in use."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:9
+msgid "Checking if location services are enabled"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:11
+msgid "The Location Indicator is displayed whenever location services are enabled. Normally, this indicator will appear to be dark."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:15
+msgid "The Location Indicator, showing location enabled but not in use"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:17
+msgid "If an app is accessing location data, the Location Indicator brightens."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:21
+msgid "The Location Indicator, showing location enabled and in use"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:26
+msgid "Accessing location services settings"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:28
+msgid "There are several ways to access settings related to location services in Ubuntu Touch."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:31
+msgid "Open location quick settings"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:33
+msgid "The Location Indicator contains quick settings related to location services, including a switch to turn services on or off."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:37
+msgid "To access these settings, press on the Location Indicator and pull down toward the bottom of the screen."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:39
+msgid "If location services are disabled, you can access the location quick settings by pressing on any other indicator and pulling down. Then, scroll through the icons at the top of the screen to find Location. Select Location to open the quick settings."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:42
+msgid "Open location settings in the settings app"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:44
+msgid "The system settings app can be used to control location services. There are more controls in the system settings app than in the Location Indicator."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:48
+msgid "There are two ways to access location services controls in the system settings app."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:51
+#: ../../userguide/dailyuse/location.rst:71
+msgid "Quick settings"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:53
+msgid "`Open location quick settings`_, then select ``Location settings...``."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:56
+#: ../../userguide/dailyuse/location.rst:76
+msgid "System settings app"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:58
+msgid "Launch the ``System Settings`` app. Select ``Security & Privacy``, then select ``Location``."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:62
+msgid "Enabling or disabling location services"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:64
+msgid "If location services are on, apps which you have allowed access to your location data may request your current location. Location services are enabled by default on Ubuntu Touch."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:66
+msgid "If location services are off, apps will not be able to access your current location."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:68
+msgid "There are several ways to enable or disable location services in Ubuntu Touch."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:73
+msgid "`Open location quick settings`_. Select the ``Location detection`` switch to enable or disable location services."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:78
+msgid "`Open location settings in the settings app`_. Under ``Let the device detect your location:``, select the appropriate option:"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:80
+msgid "``Using GPS`` turns on location services."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:81
+msgid "``Not at all`` turns off location services."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:84
+msgid "Allowing apps access to location data"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:86
+msgid "Ubuntu Touch allows you to allow or deny apps access to your location data. This decision is presented the first time the app tries to access your current location. You can change your decision later."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:88
+msgid "An app will show the location permission request the first time it tries to access your current location."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:93
+msgid "Select ``Allow`` to give the app access to your current location. Select ``Don't Allow`` to deny the app access to your current location. Some app features may not work correctly if you select ``Don't Allow``."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:96
+msgid "Changing your permissions"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:98
+msgid "You can change your decision to allow an app access to your location data. This is useful when you gave an app access to your location but you'd like to deny access, or if you denied access but would like to give access."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:100
+msgid "There are several ways to find these controls."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:103
+msgid "Location settings"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:105
+msgid "`Open location settings in the settings app`_. All of the apps which have requested access to your location are listed under ``Let apps access this location:``. Toggle the switch next to an app \"on\" to allow it to access your location data. Toggle the switch \"off\" to deny access."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:108
+msgid "App permission settings"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:110
+msgid "Launch the ``System Settings`` app. Select ``Security & Privacy``, then select ``App permissions``, followed by ``Location``. All of the apps which have requested access to your location are listed. Toggle the switch next to an app \"on\" to allow it to access your location data. Toggle the switch \"off\" to deny access."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:113
+msgid "Using apps with location services"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:115
+msgid "Apps will be able to access your current location after they are granted access to location data. However, there are some things to note while using apps with location services."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:118
+msgid "Time to first fix"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:120
+msgid "A \"fix\" is a data point generated by GPS hardware that contains its current location and the expected accuracy of that location. GPS hardware is rated by how long it takes to return one of these data points after the device is activated. This rating is called \"`Time To First Fix <https://en.wikipedia.org/wiki/Time_to_first_fix>`_,\" or TTFF."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:122
+msgid "A device with a mobile data connection should take one to four minutes to receive its first fix. If location services have not been used for a long time *and* the device does not have a mobile data connection, the first fix can take up to an hour. To prevent this from causing problems for you, follow these instructions:"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:126
+msgid "Do not leave your device in direct sunlight. The heat can damage the device."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:128
+msgid "Disable ``Lock when idle`` in the Battery settings"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:129
+msgid "Download an app which uses location services and cause it to start accessing your location data."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:130
+msgid "Leave your device near a window but out of direct sunlight. To reduce energy consumption, turn the screen brightness down."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:132
+msgid "After 20 minutes to an hour, your device should display your current location. You can now close the app and enable ``Lock when idle``. Future attempts to aquire your location should now take one to four minutes."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:135
+msgid "App suspension"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:137
+msgid "Apps are suspended whenever they are not in the foreground or the device is locked. When an app is suspended, it cannot receive location data. For this reason, apps will not be able to track your location whenever they are not in use or the device is locked."
+msgstr ""
+
 #: ../../userguide/install.rst:2
 msgid "Install Ubuntu Touch"
 msgstr ""
 
 #: ../../userguide/install.rst:4
-msgid "Installing Ubuntu Touch is easy, and a lot of work has gone in to making the installation process less intimidating to less technical users. The UBports Installer is a nice graphical tool that you can use to install Ubuntu Touch on a `supported device <https://ubuntu-touch.io/devices>`_ from your Linux, Mac or Windows computer."
+msgid "Installing Ubuntu Touch is easy, and a lot of work has gone in to making the installation process less intimidating to the average user. The UBports Installer is a nice graphical tool that you can use to install Ubuntu Touch on a `supported device <https://ubuntu-touch.io/devices>`_ from your `Linux <https://snapcraft.io/ubports-installer>`_, `Mac <https://devices.ubuntu-touch.io/installer/dmg>`_ or `Windows <https://devices.ubuntu-touch.io/installer/exe>`_ computer. For more experienced users, we also have manual installation instructions for every device `on the devices page <https://devices.ubuntu-touch.io/>`_."
 msgstr ""
 
 #: ../../userguide/install.rst:7
@@ -767,146 +978,218 @@ msgid "If you're switching your device over from Android, you will not be able t
 msgstr ""
 
 #: ../../userguide/install.rst:9
-msgid "Go to `the download page <https://github.com/ubports/ubports-installer/releases/latest>`_ and download the version of the installer for your operating system:"
+msgid "You can `Download the UBports Installer from GitHub <https://github.com/ubports/ubports-installer/releases/latest>`_. The following packages are available:"
 msgstr ""
 
 #: ../../userguide/install.rst:11
-msgid "Windows: ``ubports-installer-<version-number>.exe``"
+msgid "`Windows <https://devices.ubuntu-touch.io/installer/exe>`_: ``ubports-installer-<version-number>.exe``"
 msgstr ""
 
 #: ../../userguide/install.rst:12
-msgid "macOS: ``ubports-installer-<version-number>.dmg``"
+msgid "`macOS <https://devices.ubuntu-touch.io/installer/dmg>`_: ``ubports-installer-<version-number>.dmg``"
 msgstr ""
 
 #: ../../userguide/install.rst:13
-msgid "Ubuntu or Debian: ``ubports-installer-<version-number>.deb``"
+msgid "`Ubuntu or Debian <https://devices.ubuntu-touch.io/installer/deb>`_: ``ubports-installer-<version-number>.deb``"
 msgstr ""
 
 #: ../../userguide/install.rst:14
-msgid "Other Linux distributions: ``ubports-installer-<version-number>.snap`` or ``ubports-installer-<version-number>.AppImage``"
+msgid "`Other Linux distributions (snap) <https://devices.ubuntu-touch.io/installer/snap>`_: ``ubports-installer-<version-number>.snap``"
 msgstr ""
 
-#: ../../userguide/install.rst:16
+#: ../../userguide/install.rst:15
+msgid "`Other Linux distributions (AppImage) <https://devices.ubuntu-touch.io/installer/appimage>`_: ``ubports-installer-<version-number>.AppImage``"
+msgstr ""
+
+#: ../../userguide/install.rst:17
 msgid "Start the installer and follow the on-screen instructions that will walk you through the installation process. That's it! Have fun exploring Ubuntu Touch!"
 msgstr ""
 
-#: ../../userguide/install.rst:20
-msgid "If your device is not detected automatically when using the snap installer, then unplug your device, open a terminal and enter the following command:"
-msgstr ""
-
-#: ../../userguide/install.rst:26
-msgid "Then restart the installer, plug in your device and give it another try."
-msgstr ""
-
-#: ../../userguide/install.rst:29
+#: ../../userguide/install.rst:19
 msgid "If you're an experienced android developer and want to help us bring Ubuntu Touch to more devices, visit the :doc:`porting section </porting/introduction>`."
 msgstr ""
 
+#: ../../userguide/install.rst:24
+msgid "If you need help, you can join UBports' support channels on `telegram <https://t.me/WelcomePlus>`_ or `matrix <https://matrix.to/#/!KwdniMNeTmClpgHkND:matrix.org?via=matrix.org&via=ubports.chat&via=disroot.org>`_ or ask a question `in the forum <https://forums.ubports.com/>`_ or on `askubuntu <https://askubuntu.com>`_. If you believe that the UBports Installer is not working correctly, you can also `file a new issue <https://github.com/ubports/ubports-installer/issues/new>`_ to help us solve the problem."
+msgstr ""
+
+#: ../../userguide/install.rst:27
+msgid "Connection lost during installation"
+msgstr ""
+
+#: ../../userguide/install.rst:29
+msgid "Try a different USB cable and a different USB port on your computer. Cheap and old cables tend to lose connection during the installation."
+msgstr ""
+
 #: ../../userguide/install.rst:32
-msgid "Install on legacy Android devices"
+msgid "Windows Defender prevents Installer from starting"
 msgstr ""
 
 #: ../../userguide/install.rst:34
-msgid "While the installation process is fairly simple on most devices, some legacy Bq and Meizu devices require special steps. This part of the guide does not apply to other devices."
+msgid "We have contacted Microsoft about this problem, but they seem to think it's `enjoyable <https://twitter.com/Windows/status/1014984163433295875>`__. To dismiss the warning, click on \"More Information\", then select \"Run anyway\"."
 msgstr ""
 
-#: ../../userguide/install.rst:38
-msgid "This is more or less uncharted territory. If your device's manufacturer does not want you to install an alternative operating system, there's not a lot we can do about it. The instructions below should only be followed by experienced users. While we appreciate that lots of people want to use our OS, flashing a device with OEM tools shouldn't be done without a bit of know-how and plenty of research."
+#: ../../userguide/install.rst:37
+msgid "Device not detected"
 msgstr ""
 
 #: ../../userguide/install.rst:40
-msgid "Meizu devices are pretty much stuck on Flyme. While the MX4 can be flashed successfully in some cases, the Pro5 is Exynos-based and has its own headaches."
+msgid "Custom platform tools"
 msgstr ""
 
-#: ../../userguide/install.rst:44
-msgid "BE VERY CAREFUL! You are responsible for your own actions!"
+#: ../../userguide/install.rst:42
+msgid "You might want to try using custom adb and fastboot binaries. For that, tick the \"Custom tools\" checkbox in the options and specify the path to adb and fastboot in the text-boxes below."
 msgstr ""
 
-#: ../../userguide/install.rst:46
-msgid "Disconnect all devices and non-essential peripherals from your PC. Charge your device on a wall-charger (not your PC) to at least 40 percent"
+#: ../../userguide/install.rst:45
+msgid "Virtual Machine"
 msgstr ""
 
 #: ../../userguide/install.rst:47
-msgid "Download the Ubuntu Touch ROM for your device:"
-msgstr ""
-
-#: ../../userguide/install.rst:49
-msgid "`Bq E4.5 <http://cdimage.ubports.com/ubports-installer/krillin/e45.zip>`_ (*krillin*)"
+msgid "Make sure the virtual machine is allowed to access the USB port."
 msgstr ""
 
 #: ../../userguide/install.rst:50
-msgid "`Bq E5 HD <https://storage.googleapis.com/otas/2014/Smartphones/Aquaris_E5_HD/Ubuntu/VEGETA01A-S11A_BQ_L100EN_2017_170207.zip>`_ (*vegetahd*)"
-msgstr ""
-
-#: ../../userguide/install.rst:51
-msgid "`Bq M10 HD <https://storage.googleapis.com/otas/2015/Tablets/Freezer/Ubuntu/OTA_13_FW_version/cooler-image-stable-6.zip>`_ (*cooler*)"
+msgid "Windows ADB drivers"
 msgstr ""
 
 #: ../../userguide/install.rst:52
-msgid "`Bq M10 FHD <https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/Ubuntu/OTA_15/frieza-image-stable-8.zip>`_ (*frieza*)"
-msgstr ""
-
-#: ../../userguide/install.rst:53
-msgid "`Meizu MX4 <http://people.canonical.com/~alextu/tangxi/684.zip>`_ (*arale*)"
+msgid "Install the `universal adb driver <http://adb.clockworkmod.com/>`_ and reboot your computer."
 msgstr ""
 
 #: ../../userguide/install.rst:55
-msgid "Download `SP flash tool <https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/Ubuntu/SP_Flash_Tool_exe_Linux_v5.1612.00.100.zip>`_ for Linux."
+msgid "Fairphone 2 Vendor-ID"
 msgstr ""
 
 #: ../../userguide/install.rst:57
+msgid "Run ``echo 0x2ae5 >> ~/.android/adb_usb.ini`` in the terminal and restart the installer. This does not affect the snap package."
+msgstr ""
+
+#: ../../userguide/install.rst:60
+msgid "Missing udev-rules"
+msgstr ""
+
+#: ../../userguide/install.rst:62
+msgid "If the device not detected on Linux and packages other than snap, you might be missing **udev-rules**."
+msgstr ""
+
+#: ../../userguide/install.rst:64
+msgid "See if ``/etc/udev/rules.d/51-android.rules`` exists and contains the rules below. If not, add them to the file and run ``sudo service udev restart`` or ``sudo udevadm control --reload-rules && udevadm trigger``."
+msgstr ""
+
+#: ../../userguide/install.rst:104
+msgid "Other issues"
+msgstr ""
+
+#: ../../userguide/install.rst:106
+msgid "If the troubleshooting tips do not work, you might also try following the manual installation instructions for your device `on the devices page <https://devices.ubuntu-touch.io/>`_."
+msgstr ""
+
+#: ../../userguide/install.rst:109
+msgid "Install on legacy Android devices"
+msgstr ""
+
+#: ../../userguide/install.rst:111
+msgid "While the installation process is fairly simple on most devices, some legacy Bq and Meizu devices require special steps. This part of the guide does not apply to other devices."
+msgstr ""
+
+#: ../../userguide/install.rst:115
+msgid "This is more or less uncharted territory. If your device's manufacturer does not want you to install an alternative operating system, there's not a lot we can do about it. The instructions below should only be followed by experienced users. While we appreciate that lots of people want to use our OS, flashing a device with OEM tools shouldn't be done without a bit of know-how and plenty of research."
+msgstr ""
+
+#: ../../userguide/install.rst:117
+msgid "Meizu devices are pretty much stuck on Flyme. While the MX4 can be flashed successfully in some cases, the Pro5 is Exynos-based and has its own headaches."
+msgstr ""
+
+#: ../../userguide/install.rst:121
+msgid "BE VERY CAREFUL! You are responsible for your own actions!"
+msgstr ""
+
+#: ../../userguide/install.rst:123
+msgid "Disconnect all devices and non-essential peripherals from your PC. Charge your device on a wall-charger (not your PC) to at least 40 percent"
+msgstr ""
+
+#: ../../userguide/install.rst:124
+msgid "Download the Ubuntu Touch ROM for your device:"
+msgstr ""
+
+#: ../../userguide/install.rst:126
+msgid "`Bq E4.5 <http://cdimage.ubports.com/ubports-installer/krillin/e45.zip>`_ (*krillin*)"
+msgstr ""
+
+#: ../../userguide/install.rst:127
+msgid "`Bq E5 HD <https://storage.googleapis.com/otas/2014/Smartphones/Aquaris_E5_HD/Ubuntu/VEGETA01A-S11A_BQ_L100EN_2017_170207.zip>`_ (*vegetahd*)"
+msgstr ""
+
+#: ../../userguide/install.rst:128
+msgid "`Bq M10 HD <https://storage.googleapis.com/otas/2015/Tablets/Freezer/Ubuntu/OTA_13_FW_version/cooler-image-stable-6.zip>`_ (*cooler*)"
+msgstr ""
+
+#: ../../userguide/install.rst:129
+msgid "`Bq M10 FHD <https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/Ubuntu/OTA_15/frieza-image-stable-8.zip>`_ (*frieza*)"
+msgstr ""
+
+#: ../../userguide/install.rst:130
+msgid "`Meizu MX4 <http://people.canonical.com/~alextu/tangxi/684.zip>`_ (*arale*)"
+msgstr ""
+
+#: ../../userguide/install.rst:132
+msgid "Download `SP flash tool <https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/Ubuntu/SP_Flash_Tool_exe_Linux_v5.1612.00.100.zip>`_ for Linux."
+msgstr ""
+
+#: ../../userguide/install.rst:134
 msgid "On Ubuntu 17.10, there are issues with flash_tool loading the shared library 'libpng12', so this can be used as a workaround:"
 msgstr ""
 
-#: ../../userguide/install.rst:65
+#: ../../userguide/install.rst:142
 msgid "You will also need to use `the latest version of the tool <https://spflashtool.com/download/SP_Flash_Tool_v5.1744_Linux.zip>`_."
 msgstr ""
 
-#: ../../userguide/install.rst:67
+#: ../../userguide/install.rst:144
 msgid "Extract the zip files"
 msgstr ""
 
-#: ../../userguide/install.rst:68
+#: ../../userguide/install.rst:145
 msgid "Start the tool with ``sudo``"
 msgstr ""
 
-#: ../../userguide/install.rst:69
+#: ../../userguide/install.rst:146
 msgid "Select the ``*Android_scatter.txt`` file from the archive you downloaded in the first step as the scatter-loading file"
 msgstr ""
 
-#: ../../userguide/install.rst:70
+#: ../../userguide/install.rst:147
 msgid "Choose \"Firmware Upgrade\""
 msgstr ""
 
-#: ../../userguide/install.rst:71
+#: ../../userguide/install.rst:148
 msgid "Double-check you chose \"Firmware Upgrade\" and not \"Download\" or \"Format All\""
 msgstr ""
 
-#: ../../userguide/install.rst:75
+#: ../../userguide/install.rst:152
 msgid "If you select DOWNLOAD rather than FIRMWARE UPGRADE, you will end up with a useless brick rather than a fancy Ubuntu Touch device. Be sure to select FIRMWARE UPGRADE."
 msgstr ""
 
-#: ../../userguide/install.rst:77
+#: ../../userguide/install.rst:154
 msgid "Turn your device completely off, but do not connect it yet"
 msgstr ""
 
-#: ../../userguide/install.rst:78
+#: ../../userguide/install.rst:155
 msgid "Press the button labeled \"Download\""
 msgstr ""
 
-#: ../../userguide/install.rst:79
+#: ../../userguide/install.rst:156
 msgid "Perform a final sanity-check that you selected the \"Firmware Upgrade\" option, not \"Download\""
 msgstr ""
 
-#: ../../userguide/install.rst:80
+#: ../../userguide/install.rst:157
 msgid "Make sure your device is off and connect it to your PC. Don't use a USB 3.0 port, since that's known to cause communication issues with your device."
 msgstr ""
 
-#: ../../userguide/install.rst:81
+#: ../../userguide/install.rst:158
 msgid "`Magic <https://en.wikipedia.org/wiki/Clarke's_three_laws>`_ happens. Your device will boot into a super old version of Ubuntu Touch."
 msgstr ""
 
-#: ../../userguide/install.rst:82
+#: ../../userguide/install.rst:159
 msgid "Congratulations! Your device will now boot into a very old version of Ubuntu Touch. You can now use the UBports Installer to proceed."
 msgstr ""
 
