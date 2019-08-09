@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: Chinese (Simplified) (UBports Docs)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-08-28 14:00+0200\n"
-"PO-Revision-Date: 2019-01-21 14:32+0000\n"
-"Last-Translator: louies0623 <louies0623@gmail.com>\n"
+"PO-Revision-Date: 2019-08-02 01:49+0000\n"
+"Last-Translator: 宋泊萱 <songbx0823@foxmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-porting/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.1.1\n"
+"X-Generator: Weblate 3.6.1\n"
 
 #: ../../porting/building-halium-boot.rst:2
 msgid "Building halium-boot"
@@ -184,7 +184,7 @@ msgstr ""
 
 #: ../../porting/common-problems-install.rst:24
 msgid "Reboot the device to recovery and connect with ``adb shell``"
-msgstr "重新启动设备以恢复并连接“adb shell”"
+msgstr "重新启动设备进入恢复模式并连接“adb shell”"
 
 #: ../../porting/common-problems-install.rst:25
 msgid "Run the following commands to disable rsyslogd::"
@@ -204,7 +204,7 @@ msgstr "一分钟后设备重启"
 msgid ""
 "The device may reboot cleanly after about a minute of uptime. If you are "
 "logged in when the reboot occurs, you will see the following message::"
-msgstr ""
+msgstr "在正常运行一分钟后，设备将可以顺利地重启。 如果您在重新启动时登录，您将看到以下消息:"
 
 #: ../../porting/common-problems-install.rst:45
 msgid ""
@@ -218,7 +218,7 @@ msgstr ""
 msgid ""
 "To fix this problem, log in before the reboot occurs and run the following "
 "command::"
-msgstr ""
+msgstr "要解决此问题，请在重新引导之前登录并运行以下命令::"
 
 #: ../../porting/common-problems-run.rst:2
 msgid "Common problems when running Ubuntu Touch"
@@ -239,7 +239,7 @@ msgid ""
 "If nothing is showing on screen even after adding udev rules to your port, "
 "it is likely that you have a problem with graphical applications crashing. "
 "See `Mir servers crash`_ for more information."
-msgstr ""
+msgstr "如果即使在向端口添加udev规则后屏幕上也没有显示任何内容，则可能是图形应用程序崩溃时出现问题。 有关详细信息，请参阅“Mir服务器崩溃”。"
 
 #: ../../porting/common-problems-run.rst:12
 msgid "Mir servers crash"
@@ -249,23 +249,23 @@ msgstr "Mir 服务器崩溃"
 msgid ""
 "Mir servers crashing can be caused by many different problems with the port. "
 "To troubleshoot more, you can try the following:"
-msgstr ""
+msgstr "Mir服务器崩溃可能是由端口的许多不同问题引起的。 要解决更多问题，您可以尝试以下操作："
 
 #: ../../porting/common-problems-run.rst:17
 msgid "Is the Android container running?"
-msgstr ""
+msgstr "Android容器是否正在运行？"
 
 #: ../../porting/common-problems-run.rst:19
 msgid ""
 "If the Android container is not running, many parts of Ubuntu Touch will not "
 "work. Run this command to check on the container's status::"
-msgstr ""
+msgstr "如果Android容器未运行，Ubuntu Touch的许多部分将无法运行。 运行此命令以检查容器的状态::"
 
 #: ../../porting/common-problems-run.rst:23
 msgid ""
 "If you get output similar to the following, the Android container is running "
 "and you can move on to the next troubleshooting step::"
-msgstr ""
+msgstr "如果输出类似于以下内容，则Android容器正在运行，您可以继续执行下一个故障排除步骤::"
 
 #: ../../porting/common-problems-run.rst:30
 msgid ""
@@ -274,6 +274,8 @@ msgid ""
 "does not start after that, you can run ``sudo lxc-start -n android -F`` to "
 "get a more detailed log of why it has failed."
 msgstr ""
+"如果你没有得到“State：RUNNING”，容器就会停止。 你可以运行“sudo start lxc-android-config”来尝试启动它。 "
+"如果容器在此之后没有启动，你可以运行“sudo lxc-start -n android -F”来获得更详细的失败原因日志。"
 
 #: ../../porting/common-problems-run.rst:34
 msgid "Are all of the Android partitions mounted?"
@@ -283,13 +285,13 @@ msgstr "所有 Android 分区都被挂载了么？"
 msgid ""
 "If some partitions used for Android drivers are not mounted, the container "
 "may start but not work correctly."
-msgstr ""
+msgstr "如果未安装用于Android驱动程序的某些分区，则容器可能会启动但无法正常工作。"
 
 #: ../../porting/common-problems-run.rst:38
 msgid ""
 "To check the mounted Android partitions, run ``ls /android``. At least the "
 "following folders should be contained within::"
-msgstr ""
+msgstr "要检查已安装的Android分区，请运行“ls /android”。 至少应包含以下文件夹::"
 
 #: ../../porting/common-problems-run.rst:45
 msgid ""
