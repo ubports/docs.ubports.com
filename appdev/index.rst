@@ -79,7 +79,7 @@ It is possible to develop cross-platform apps that don't depend on Ubuntu specif
 * `Qt Quick Controls 2 API <https://doc.qt.io/qt-5/qtquickcontrols-index.html>`__
 
 
-Plaform
+Platform
 -------
 
 
