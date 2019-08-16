@@ -12,10 +12,25 @@ The Calendar feature is provided by several components:
 Debugging
 ---------
 
-Calendar synchronisation issues
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The most convenient way to run commands on the device and collect logs is by opening a remote shell. This can be done by using :doc:`/userguide/advanceduse/adb` or :doc:`/userguide/advanceduse/ssh`. In the following sections, it's assumed that you've got access to a terminal console to the device.
 
-On the device, it's possible to run ``syncevolution`` in debug mode. To do so, open a terminal (it's easier if done from a remote shell -- you can gain a shell on the device using :doc:`/userguide/advanceduse/adb` or :doc:`/userguide/advanceduse/ssh`) and kill any existing processes:
+
+Scheduling and account issues
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If you are not sure whether the calendar is being synchronised, or whether the operation is successful, ``sync-monitor`` is the component that needs to be examined. This service should always be running in the background, and its logs can be found in ``~/.cache/upstart/sync-monitor.log``. In order to see them printed in real-time as you operate on the device, you can run this command:
+
+.. code-block:: bash
+
+        tail -f .cache/upstart/sync-monitor.log
+
+These logs should be enough to give you an idea on whether your calendar accounts are recognised, and whether a synchronisation is scheduled, happening, and completing successfully.
+
+
+Calendar data synchronisation issues
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Follow these steps one you are confident that a synchronisation of your account is at least attempted, and want to investigate a synchronisation failure or issues with missing or duplicate items. On the device, it's possible to run ``syncevolution`` in debug mode. To do so, kill any existing processes:
 
 .. code-block:: bash
 
