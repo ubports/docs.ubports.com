@@ -59,9 +59,10 @@ Remove a package::
 Run desktop application
 -----------------------
 
-To run a graphical application you installed whose package installed a desktop file, i.e. ``gedit``, run in a terminal::
+To start a graphical application from the command line, for example ``gedit``, run in a terminal::
 
-  ubuntu-app-launch <CONTAINER_ID>_<desktop_file_name>_0.0
+  # ubuntu-app-launch <CONTAINER_ID>_<desktop_file_name>_0.0
+  ubuntu-app-launch xenial_gedit_0.0
 
 Files
 -----
