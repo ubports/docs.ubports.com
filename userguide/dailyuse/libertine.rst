@@ -56,6 +56,13 @@ Remove a package::
 .. note::
     If you have more than one container, then you can use the option ``-i CONTAINER-IDENTIFIER`` to specify for which container you want to perform an operation.
 
+Run desktop application
+-----------------------
+
+To start a graphical application from the command line, for example ``gedit``, run in a terminal::
+
+  # ubuntu-app-launch <CONTAINER_ID>_<desktop_file_name>_0.0
+  ubuntu-app-launch xenial_gedit_0.0
 
 Files
 -----
