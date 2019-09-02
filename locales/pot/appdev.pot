@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-17 10:30-0500\n"
+"POT-Creation-Date: 2019-09-02 15:16-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -421,8 +421,7 @@ msgid "We are currently working on expanding our list of developer guides. In th
 msgstr ""
 
 #: ../../appdev/guides/index.rst:9
-#: ../../appdev/publishing/index.rst:8
-msgid "If you are interested in helping create developer guides check out our `GitLab Project <https://gitlab.com/ubports/ux/development-resources>`__."
+msgid "If you are interested in helping create developer guides check out our `GitLab Project <https://gitlab.com/ubports/apps/development-resources>`__."
 msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:2
@@ -1186,7 +1185,8 @@ msgid "`Qt Quick Controls 2 API <https://doc.qt.io/qt-5/qtquickcontrols-index.ht
 msgstr ""
 
 #: ../../appdev/index.rst:83
-msgid "Plaform"
+#: ../../appdev/platform/index.rst:4
+msgid "Platform"
 msgstr ""
 
 #: ../../appdev/index.rst:96
@@ -1210,7 +1210,7 @@ msgid "Native applications"
 msgstr ""
 
 #: ../../appdev/nativeapp/index.rst:6
-msgid "The recommended way to build a native application on Ubuntu Touch is to use the `Qt <https://doc.qt.io/>`__ framework ( current version shipped on Ubuntu Touch 16.04 is Qt 5.9.5 ). You are not stick with the traditionnal C++<->QML Qt model, you can use also Python, Go, Rust or even Javascript for your backend."
+msgid "The recommended way to build a native application on Ubuntu Touch is to use the `Qt <https://doc.qt.io/>`__ framework ( current version shipped on Ubuntu Touch 16.04 is Qt 5.9.5 ). You do not have to stick with the traditional C++<->QML Qt model, you can use also Python, Go, Rust or even Javascript for your backend."
 msgstr ""
 
 #: ../../appdev/nativeapp/index.rst:9
@@ -1683,10 +1683,6 @@ msgstr ""
 msgid "For a full list of available policy groups, see :doc:`apparmor`."
 msgstr ""
 
-#: ../../appdev/platform/index.rst:4
-msgid "Platform"
-msgstr ""
-
 #: ../../appdev/platform/index.rst:6
 msgid "Here are Ubuntu Touch platforms key topics when you want to extend your app with Ubuntu Touch ecosystem:"
 msgstr ""
@@ -1737,6 +1733,10 @@ msgstr ""
 
 #: ../../appdev/publishing/index.rst:6
 msgid "We are currently working on expanding our list of publishing guides. In the mean time you can get started over at the `OpenStore's submission page <https://open-store.io/submit>`__."
+msgstr ""
+
+#: ../../appdev/publishing/index.rst:8
+msgid "If you are interested in helping create developer guides check out our `GitLab Project <https://gitlab.com/ubports/ux/development-resources>`__."
 msgstr ""
 
 #: ../../appdev/samples/index.rst:4
@@ -1965,10 +1965,14 @@ msgid "Browser data containment"
 msgstr ""
 
 #: ../../appdev/webapp/guide.rst:167
-msgid "The webapp experience is contained and isolated from the browser data point of view. That is webapps do not access data from any other installed browser, such as history, cookies and so on. Other browser on the system do not access the webapp’s data. Storage"
+msgid "The webapp experience is contained and isolated from the browser data point of view. That is webapps do not access data from any other installed browser, such as history, cookies and so on. Other browser on the system do not access the webapp’s data."
 msgstr ""
 
 #: ../../appdev/webapp/guide.rst:170
+msgid "Storage"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:172
 msgid "W3C allows apps to use local storage, and Oxide/Webapp-container supports the main standards here: LocalStorage, IndexedDB, WebSQL."
 msgstr ""
 
