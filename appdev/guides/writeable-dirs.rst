@@ -28,7 +28,7 @@ This is where your app stores any data. The music app for example stores its dat
 
 Using Standard Paths in C++
 ---------------------------
-The Qt header ``QStandardPaths`` provides the app's writable locations:
+The Qt header ``QStandardPaths`` provides the app's writable locations in C++:
 
 .. code-block:: C++
 
@@ -41,39 +41,22 @@ The Qt header ``QStandardPaths`` provides the app's writable locations:
 
 Using Standard Paths in QML
 ---------------------------
-The Qt module `Qt.labs.platform <https://doc.qt.io/archives/qt-5.10/qml-qt-labs-platform-standardpaths.html>`_ provides the QStandardPaths in QML. Unfortunately it is not available on Ubuntu Touch, yet. Probably you don't want to ship that module with your app. Instead, you could simply let your C++ plugin provide the paths to your QML part. Therefore, add these methods to your plugin class:
-
-.. code-block:: C++
-
-    #include <QStandardPaths>
-    ...
-    Q_INVOKABLE QString configPath()
-    {
-        return QStandardPaths::writableLocation(QStandardPaths::AppConfigLocation);
-    }
-    Q_INVOKABLE QString cachePath()
-    {
-        return QStandardPaths::writableLocation(QStandardPaths::CacheLocation);
-    }
-    Q_INVOKABLE QString appDataPath()
-    {
-        return QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
-    }
-    ...
-
-Assuming the name of your plugin is MyPlugin, you can access these paths in QML:
+The Qt module `Qt.labs.platform <https://doc.qt.io/archives/qt-5.10/qml-qt-labs-platform-standardpaths.html>`_ provides the app's writable locations in QML:
 
 .. code-block:: QML
 
+    import Qt.labs.platform 1.0
+    ...
     Label
     {
-        text: MyPlugin.configPath()
+        text: StandardPaths.writableLocation(StandardPaths.AppConfigLocation)
     }
     Label
     {
-        text: MyPlugin.cachePath()
+        text: StandardPaths.writableLocation(StandardPaths.CacheLocation)
     }
     Label
     {
-        text: MyPlugin.appDataPath()
+        text: StandardPaths.writableLocation(StandardPaths.AppDataLocation)
     }
+    ...
