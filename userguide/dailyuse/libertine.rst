@@ -3,7 +3,7 @@ Run desktop applications
 
 Libertine allows you to use standard desktop applications in Ubuntu Touch.
 
-To display and launch applications you need the *Desktop Apps Scope* which is available by swiping from the bottom of your device, and then tapping on the star. To install applications you need to use the commandline as described below.
+To display and launch applications you need the *Desktop Apps Scope* which is available by swiping from the bottom of your device, and then tapping on the star. To install applications you may use the phone's *Settings* interface or you may use the command line as described further below.
 
 Manage containers
 -----------------
@@ -11,7 +11,15 @@ Manage containers
 Create a container
 ^^^^^^^^^^^^^^^^^^
 
-The first step is to create a container where applications can be installed::
+The first step is to create a container where applications can be installed:
+
+Open Settings and scroll down to *Libertine* under the *System* sub-heading.
+
+Tap *Libertine* to get to the *Manage Libertine Containers* sub-menu. If you have other containers already installed, they will be visible here. Tap the + sign at the upper right to add a container.
+
+The *Container Options* dialog box will open asking you to enter a container name and password if desired. Confirm your entries by tapping OK, and the container will be created.
+
+To do this via command line follow these steps::
 
   libertine-container-manager create -i CONTAINER-IDENTIFIER
 
@@ -28,7 +36,9 @@ The creating process can take some time, due to the size of the container (some 
 List containers
 ^^^^^^^^^^^^^^^
 
-To list all containers created run::
+Use the *Settings Manage Libertine Containers* sub-menu to list all the containers you have created on the device.
+
+You can also use the command line. Run::
 
   libertine-container-manager list
 
@@ -41,11 +51,19 @@ Destroy a container
 Manage applications
 -------------------
 
-Once a container is set up, you can list the installed applications::
+Once a container is set up, you can view the installed applications in *Desktop Apps Scope*, or in the *Manage Libertine Containers* menu you can tap the name of the container.
+
+You can also list them via command line::
 
   libertine-container-manager list-apps
 
-Install a package::
+Install a package
+
+From the apps list in the *Manage Libertine Containers* menu tap the + sign to get a dialog box to add a package.
+
+Enter the package name if you know it. Otherwise you can search the archives for a package. You can make this process easier by making the *Lubuntu Software Center* your first package install. Being a desktop app, you will need to use the *Libertine Tweak Tool* in the *Open Store* to make the text large enough to read on a mobile device.
+
+Packages may also be installed via command line::
 
   libertine-container-manager install-package -p PACKAGE-NAME
 
@@ -59,7 +77,7 @@ Remove a package::
 Run desktop application
 -----------------------
 
-To start a graphical application from the command line, for example ``gedit``, run in a terminal::
+Simply select the app from the *Desktop Apps Scope* to run it like any other app. To start a graphical application from the command line, for example ``gedit``, run in a terminal::
 
   # ubuntu-app-launch <CONTAINER_ID>_<desktop_file_name>_0.0
   ubuntu-app-launch xenial_gedit_0.0
