@@ -25,6 +25,9 @@ How to install
 
 .. warning::
     Installing Anbox is only recommended for experienced users.
+    
+.. warning::
+    To install Anbox, you need to flash a specific boot image. **You will need to re-flash that image after each Ubuntu Touch update** so when you update from OTA-10 to OTA-11 for example. Not doing so can put your phone into an unstable state. Only update your Ubuntu Touch device when you have a computer with you to re-flash that boot image.
 
 - Make sure your supported device runs on 16.04 (Anbox doesn't work on 15.04)
 - Open a terminal on your host and set some device specific variables by running ``export CODENAME="turbo" && export PARTITIONNAME="bootimg"``, but replace the part between the quotes respectively with the codename and name of the boot partition for your device. See the above list.
