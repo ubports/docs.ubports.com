@@ -69,7 +69,7 @@ Keep your apps up to date
 
 - To keep your apps up to date you can use of F-Droid or ApkTrack. If you want to install any of the above apps you can find them here:
 
-- F-Droid: https://f-droid.org/
+- Aurora Store: https://gitlab.com/AuroraOSS/AuroraStore/-/releases
 - ApkTrack: https://f-droid.org/packages/fr.kwiatkowski.ApkTrack/
 
 How to uninstall apps
