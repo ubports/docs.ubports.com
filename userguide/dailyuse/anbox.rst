@@ -26,7 +26,7 @@ How to install
 .. warning::
     Installing Anbox is only recommended for experienced users.
 
-- Make sure your supported device runs on 16.04 (Anbox doesn't work on 15.04); be sure to have a `_backup <../backup.rst>`_ of the device.
+- Make sure your supported device runs on 16.04 (Anbox doesn't work on 15.04); be sure to have a `_backup <https://askubuntu.com/questions/602850/how-do-i-backup-my-ubuntu-phone>`_ of the device.
 - Open a terminal on your host and set some device specific variables by running ``export CODENAME="turbo" && export PARTITIONNAME="bootimg"``, but replace the part between the quotes respectively with the codename and name of the boot partition for your device. See the above list.
 - Activate developer mode on your device.
 - Connect the device to your host and run the following commands from your host (same terminal you ran the ``export`` command in)::
