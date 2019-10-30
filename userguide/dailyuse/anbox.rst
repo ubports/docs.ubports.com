@@ -4,7 +4,10 @@ Android apps
 `Anbox <https://anbox.io>`_ is a minimal Android container and compatibility layer that allows you to run Android apps on GNU/Linux operating systems such as UBports.
 
 .. note::
-    - When "host" is used in this document, it refers to another device which you can connect your Ubuntu Touch device to. Your host device must have ``adb`` and ``fastboot`` installed.
+    When "host" is used in this document, it refers to another device which you can connect your Ubuntu Touch device to. Your host device must have ``adb`` and ``fastboot`` installed.
+
+.. note::
+    You will need to execute commands on your Ubuntu Touch device to install Anbox and APKs. You can do that by using the terminal application, but it is easier to use ``adb shell`` or :doc:`set up ssh </userguide/advanceduse/ssh>` to access your phone from your host.
 
 Supported devices
 -----------------
@@ -35,9 +38,9 @@ How to install
 - Activate developer mode on your device.
 - Connect the device to your host and run the following commands from your host (same terminal you ran the ``export`` command in)::
 
-    adb shell
-    sudo reboot -f bootloader # 'adb shell' will exit after this command
     wget http://cdimage.ubports.com/anbox-images/anbox-boot-$CODENAME.img
+    adb shell # connect from your host computer to your UT device
+    sudo reboot -f bootloader # 'adb shell' will exit after this command, the prompt will be back on your host
     sudo fastboot flash $PARTITIONNAME anbox-boot-$CODENAME.img
     sudo fastboot reboot
     rm anbox-boot-$CODENAME.img
@@ -45,7 +48,7 @@ How to install
 
 - Wait for the device to reboot, then run this from your host::
 
-    adb shell
+    adb shell # connect from your host computer to your UT device
     sudo mount -o rw,remount /
     sudo apt update
     sudo apt install anbox-ubuntu-touch
@@ -54,16 +57,25 @@ How to install
 
 - Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the new Android apps to show up.
 
+.. note::
+    You now have an adb server running inside your phone. This guide asks you to run some ``adb`` commands, sometime on your computer, sometime on your phone. Carefully check on which device you are!
+
+You can check that adb server is correctly running locally on your phone by opening the terminal app and enter ``adb devices``. You should see something like::
+
+    phablet@ubuntu-phablet:~$ adb devices  
+    List of devices attached  
+    emulator-5558	device  
+
 How to install new APKs
 -----------------------
 
 - Copy the APK to ``/home/phablet/Downloads``, then run the following from your host::
 
-    adb shell
+    adb shell # connect from your host computer to your UT device
     sudo mount -o rw,remount /
     sudo apt update
     sudo apt install android-tools-adb
-    adb install /home/phablet/Downloads/my-app.apk
+    adb install /home/phablet/Downloads/my-app.apk # This is the adb of your device, not your host
     exit
 
 - Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the new Android apps to show up.
@@ -79,12 +91,11 @@ Keep your apps up to date
 How to uninstall apps
 ---------------------
 
-- This is a example of the app-list installed apps on your device
 - To uninstall apps, run ``adb uninstall [APP_ID]`` from your Ubuntu Touch device::
 
-    adb shell
+    adb shell # connect from your host computer to your UT device
     sudo mount -o rw,remount /
-    adb uninstall [APP_ID]
+    adb uninstall [APP_ID] # This is the adb of your device, not your host
     exit
 
 - Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the new Android apps to show up.
@@ -94,7 +105,7 @@ Troubleshooting
 
 - If installing ``anbox-ubuntu-touch`` or ``android-tools-adb`` on the device fails with an error about unsufficient space, try this::
 
-    adb shell
+    adb shell # connect from your host computer to your UT device
     sudo mount -o rw,remount /
     sudo rm -r /var/cache/apt     # delete the apt cache; frees space on system image
     sudo tune2fs -m 0 /dev/loop0  # space reserved exclusively for root user on system image set to zero
