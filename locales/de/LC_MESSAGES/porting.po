@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-08-28 14:00+0200\n"
-"PO-Revision-Date: 2018-02-19 19:37+0000\n"
-"Last-Translator: Jonatan Hatakeyama Zeidler <jonatan_zeidler@gmx.de>\n"
+"PO-Revision-Date: 2019-11-10 16:36+0000\n"
+"Last-Translator: Kai Goldbeck <kaiuwe.goldbeck@mailbox.org>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-porting/de/>\n"
 "Language: de\n"
@@ -17,30 +17,36 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.15\n"
+"X-Generator: Weblate 3.8\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../porting/building-halium-boot.rst:2
-#, fuzzy
 msgid "Building halium-boot"
-msgstr "ubports-boot bauen"
+msgstr "Halium-boot bauen"
 
 #: ../../porting/building-halium-boot.rst:4
 msgid ""
 "Halium-boot is a new proposed boot image in the Halium project, replacing "
 "hybris-boot. We will be building and using it for Ubuntu Touch."
 msgstr ""
+"Halium-boot ist ein neues vorgeschlagenes Boot-Image im Halium-Projekt und "
+"ersetzt hybris-boot. Wir werden es für Ubuntu Touch erstellen und verwenden."
 
 #: ../../porting/building-halium-boot.rst:7
 msgid "Fix mounts"
 msgstr "Einhängepunkte anpassen"
 
 #: ../../porting/building-halium-boot.rst:9
+#, fuzzy
 msgid ""
 "Halium-boot's ``mount`` is not aware of SELinux contexts. If your device's "
 "``fstab`` file includes any contexts, the partition that they are on will "
 "fail to mount and your port will not work correctly."
 msgstr ""
+"Halium-Boot's ``mount`` ist sich des SELinux-Zusammenhangs nicht bewusst. "
+"Wenn die ``fstab`` Datei Ihres Geräts irgendwelche Zusammenhänge enthält, "
+"kann die Partition, auf der sie sich befinden, nicht gemountet werden und "
+"Ihr Port funktioniert nicht korrekt."
 
 #: ../../porting/building-halium-boot.rst:11
 msgid ""
@@ -59,43 +65,48 @@ msgid ""
 "If the type of the 'data' or 'userdata' partition is ``f2fs``, it is "
 "required to change it to ``ext4``."
 msgstr ""
+"Wenn der Typ der Partition 'data' oder 'userdata' ``f2fs`` ist, muss sie auf "
+"``ext4`` geändert werden."
 
 #: ../../porting/building-halium-boot.rst:15
-#, fuzzy
 msgid ""
 "With the file open, remove all ``context=`` options from all block devices "
 "in the file. The option will start at the text ``context=`` and end at the "
 "comma following it."
 msgstr ""
-"Entferne jetzt alle ``context=`` Optionen von allen Block-devices. Dann "
-"speichern und Editor schliessen."
+"Entfernen Sie bei geöffneter Datei alle ``context=``` Optionen von allen "
+"Blockgeräten in der Datei. Die Option beginnt mit dem Text ``context=``` und "
+"endet mit dem Komma danach."
 
 #: ../../porting/building-halium-boot.rst:17
 msgid ""
 "For example, the line ``ro,nosuid,nodev,context=u:object_r:firmware_file:s0,"
 "barrier=0`` should become ``ro,nosuid,nodev,barrier=0``"
 msgstr ""
+"Zum Beispiel sollte die Zeile "
+"``ro,nosuid,nodev,context=u:object_r:firmware_file:s0,barrier=0`` zu "
+"``ro,nosuid,nodev,barrier=0`` werden"
 
 #: ../../porting/building-halium-boot.rst:19
 msgid "Save and exit."
-msgstr ""
+msgstr "Speichern und beenden."
 
 #: ../../porting/building-halium-boot.rst:22
 msgid "Edit kernel config"
 msgstr "Kernel-Konfiguration bearbeiten"
 
 #: ../../porting/building-halium-boot.rst:24
-#, fuzzy
 msgid ""
 "Ubuntu Touch requires a slightly different kernel config than Halium, "
 "including enabling Apparmor. Luckily, we have a nice script for this "
 "purpose, ``check-kernel-config``. It's included in the halium-boot "
 "repository. Simply run it on your config as follows::"
 msgstr ""
-"Ubuntu Touch benötigt eine geringfügig andere Kernel-Konfiguration als "
-"Halium, inklusive der Aktivierung von Apparmor. Glücklicherweise gibt es "
-"hierfür das nette Skript ``check-kernel-config``. Es ist im ubports-boot-"
-"Repository enthalten. Man führt es einfach auf der Konfiguration so aus::"
+"Ubuntu Touch erfordert eine etwas andere Kernelkonfiguration als Halium, "
+"einschließlich der Aktivierung von Apparmor. Glücklicherweise haben wir zu "
+"diesem Zweck ein schönes Skript, ``check-kernel-config``. Es ist im halium-"
+"boot Repository enthalten. Führen Sie es einfach wie folgt in Ihrer "
+"Konfiguration aus::"
 
 #: ../../porting/building-halium-boot.rst:28
 msgid ""
@@ -115,14 +126,12 @@ msgid "Build the image"
 msgstr "Abbild erzeugen"
 
 #: ../../porting/building-halium-boot.rst:33
-#, fuzzy
 msgid ""
 "Once halium-boot is in place, you can build it quite simply. You will also "
 "need to rebuild system.img due to our changes."
 msgstr ""
-"Sobald ubports-boot an Ort und Stelle ist, kann es recht einfach erzeugt "
-"werden. Dabei muss auch system.img erneut erzeugt werden, aufgrund der "
-"Änderungen."
+"Sobald der Halium-Boot an seinem Platz ist, kannst du ihn ganz einfach "
+"bauen. Sie müssen auch system.img aufgrund unserer Änderungen neu erstellen."
 
 #: ../../porting/building-halium-boot.rst:35
 msgid "``cd`` to your Halium BUILDDIR"
@@ -139,9 +148,8 @@ msgstr ""
 "genutzt wird"
 
 #: ../../porting/building-halium-boot.rst:38
-#, fuzzy
 msgid "``mka halium-boot``"
-msgstr "``mka ubports-boot``"
+msgstr "``mka halium-boot``"
 
 #: ../../porting/building-halium-boot.rst:39
 msgid "``mka systemimage``"
@@ -153,27 +161,28 @@ msgid "Continue on"
 msgstr "Nächste Schritte"
 
 #: ../../porting/building-halium-boot.rst:44
-#, fuzzy
 msgid ""
 "Now that you have halium-boot built, you can move on to :doc:"
 "`installing-16-04`."
 msgstr ""
-"Jetzt, da man ubports-boot erzeugt hat, kann man mit :doc:`installing-16-04` "
+"Jetzt, da man Halium-Boot erzeugt hat, kann man mit :doc:`installing-16-04` "
 "fortfahren."
 
 #: ../../porting/common-problems-install.rst:7
 msgid "Common installation problems"
-msgstr ""
+msgstr "Häufige Installationsprobleme"
 
 #: ../../porting/common-problems-install.rst:9
 msgid ""
 "This page details problems commonly faced while following the :doc:"
 "`installing-16-04` page."
 msgstr ""
+"Diese Seite beschreibt Probleme, die häufig auftreten, wenn Sie der Seite "
+":doc:`installing-16-04` folgen."
 
 #: ../../porting/common-problems-install.rst:12
 msgid "SSH hangs when trying to connect"
-msgstr ""
+msgstr "SSH hängt sich auf, wenn versucht wird, eine Verbindung herzustellen"
 
 #: ../../porting/common-problems-install.rst:14
 msgid ""
@@ -182,37 +191,54 @@ msgid ""
 "prompt. If you run ``ssh -vvvv phablet@10.15.19.82``, you only get the "
 "following output before the program stops::"
 msgstr ""
+"Die SSH-Verbindung kann beim Verbindungsaufbau auf unbestimmte Zeit hängen "
+"bleiben. Der Versuch, die Verbindung mit Control-C zu beenden, kann dazu "
+"führen, dass Sie zu einem Shell-Prompt zurückkehren. Wenn Sie ``ssh -vvvvvv "
+"phablet@10.15.19.82`` ausführen, erhalten Sie nur die folgende Ausgabe, "
+"bevor das Programm stoppt::"
 
 #: ../../porting/common-problems-install.rst:22
+#, fuzzy
 msgid ""
 "This seems to be a common error on arm64 devices with kernel 3.10 when "
 "rsyslogd is enabled. If you have this error, please add your voice to "
 "`ubports/ubuntu-touch#560`_ and then try the following workaround:"
 msgstr ""
+"Dies scheint ein häufiger Fehler auf arm64-Geräten mit Kernel 3.10 zu sein, "
+"wenn rsyslogd aktiviert ist. Wenn Sie diesen Fehler haben, melden Sie sich "
+"bitte bei `ubports/ubuntu-touch#560`_ und versuchen Sie dann den folgenden "
+"Workaround:"
 
 #: ../../porting/common-problems-install.rst:24
 msgid "Reboot the device to recovery and connect with ``adb shell``"
 msgstr ""
+"Starten Sie das Gerät neu ins Recovery und verbinden Sie es mit ``adb shell``"
 
 #: ../../porting/common-problems-install.rst:25
 msgid "Run the following commands to disable rsyslogd::"
-msgstr ""
+msgstr "Führen Sie folgende Befehle aus, um rsyslog zu deaktivieren::"
 
 #: ../../porting/common-problems-install.rst:33
 msgid ""
 "You may now reboot the device. You should be able to connect to SSH once it "
 "comes back online."
 msgstr ""
+"Du kannst das Gerät nun neu starten. Du solltest in der Lage sein, dich mit "
+"SSH zu verbinden, sobald es wieder eingeschaltet ist."
 
 #: ../../porting/common-problems-install.rst:36
 msgid "Device reboots after a minute"
-msgstr ""
+msgstr "Das Gerät startet nach einer Minute neu"
 
 #: ../../porting/common-problems-install.rst:38
+#, fuzzy
 msgid ""
 "The device may reboot cleanly after about a minute of uptime. If you are "
 "logged in when the reboot occurs, you will see the following message::"
 msgstr ""
+"Das Gerät kann nach etwa einer Minute Betriebszeit sauber neu gestartet "
+"werden. Wenn Sie zum Zeitpunkt des Neustarts eingeloggt sind, wird die "
+"folgende Meldung angezeigt::"
 
 #: ../../porting/common-problems-install.rst:45
 msgid ""
@@ -220,27 +246,33 @@ msgid ""
 "crashing repeatedly. The system watchdog process sees this and reboots the "
 "device."
 msgstr ""
+"Dies geschieht, weil ``lightdm``, der Ubuntu Touch Display Manager, immer "
+"wieder abstürzt. Der System-Watchdog-Prozess sieht dies und startet das "
+"Gerät neu."
 
 #: ../../porting/common-problems-install.rst:47
 msgid ""
 "To fix this problem, log in before the reboot occurs and run the following "
 "command::"
 msgstr ""
+"Um dieses Problem zu beheben, melden Sie sich vor dem Neustart an und führen "
+"Sie den folgenden Befehl aus::"
 
 #: ../../porting/common-problems-run.rst:2
-#, fuzzy
 msgid "Common problems when running Ubuntu Touch"
-msgstr "Ubuntu Touch ausführen"
+msgstr "Häufige Probleme bei der Ausführung von Ubuntu Touch"
 
 #: ../../porting/common-problems-run.rst:4
 msgid ""
 "This page details problems commonly faced while following the :doc:`running-"
 "ut` page."
 msgstr ""
+"Diese Seite beschreibt Probleme, die häufig auftreten, wenn Sie der Seite "
+":doc:`running-ut` folgen."
 
 #: ../../porting/common-problems-run.rst:7
 msgid "Nothing shows on screen"
-msgstr ""
+msgstr "Auf dem Bildschirm wird nichts angezeigt"
 
 #: ../../porting/common-problems-run.rst:9
 msgid ""
@@ -248,32 +280,45 @@ msgid ""
 "it is likely that you have a problem with graphical applications crashing. "
 "See `Mir servers crash`_ for more information."
 msgstr ""
+"Wenn auch nach dem Hinzufügen von udev-Regeln zu Ihrem Port nichts auf dem "
+"Bildschirm angezeigt wird, ist es wahrscheinlich, dass Sie ein Problem mit "
+"dem Absturz grafischer Anwendungen haben. Weitere Informationen finden Sie "
+"unter `Mir-Server stürzen ab`_."
 
 #: ../../porting/common-problems-run.rst:12
 msgid "Mir servers crash"
-msgstr ""
+msgstr "Mir-Server stürzen ab"
 
 #: ../../porting/common-problems-run.rst:14
 msgid ""
 "Mir servers crashing can be caused by many different problems with the port. "
 "To troubleshoot more, you can try the following:"
 msgstr ""
+"Der Absturz von Mir-Servern kann durch viele verschiedene Probleme mit dem "
+"Port verursacht werden. Um weitere Fehler zu beheben, können Sie Folgendes "
+"versuchen:"
 
 #: ../../porting/common-problems-run.rst:17
 msgid "Is the Android container running?"
-msgstr ""
+msgstr "Läuft der Android-Container?"
 
 #: ../../porting/common-problems-run.rst:19
 msgid ""
 "If the Android container is not running, many parts of Ubuntu Touch will not "
 "work. Run this command to check on the container's status::"
 msgstr ""
+"Wenn der Android-Container nicht ausgeführt wird, funktionieren viele Teile "
+"von Ubuntu Touch nicht. Führen Sie diesen Befehl aus, um den Status des "
+"Containers zu überprüfen::"
 
 #: ../../porting/common-problems-run.rst:23
 msgid ""
 "If you get output similar to the following, the Android container is running "
 "and you can move on to the next troubleshooting step::"
 msgstr ""
+"Wenn Sie eine Ausgabe ähnlich der folgenden erhalten, läuft der Android-"
+"Container und Sie können mit dem nächsten Schritt zur Fehlerbehebung "
+"fortfahren::"
 
 #: ../../porting/common-problems-run.rst:30
 msgid ""
@@ -282,34 +327,49 @@ msgid ""
 "does not start after that, you can run ``sudo lxc-start -n android -F`` to "
 "get a more detailed log of why it has failed."
 msgstr ""
+"Wenn du keinen ``State: RUNNING`` bekommst, wurde der Container gestoppt. Du "
+"kannst ``sudo start lxc-android-config``` ausführen, um zu versuchen, ihn zu "
+"starten. Wenn der Container danach nicht startet, kannst du ``sudo lxc-start "
+"-n android -F`` ausführen, um ein detaillierteres Protokoll zu erhalten, "
+"warum es fehlgeschlagen ist."
 
 #: ../../porting/common-problems-run.rst:34
 msgid "Are all of the Android partitions mounted?"
-msgstr ""
+msgstr "Sind alle Android-Partitionen gemountet?"
 
 #: ../../porting/common-problems-run.rst:36
 msgid ""
 "If some partitions used for Android drivers are not mounted, the container "
 "may start but not work correctly."
 msgstr ""
+"Wenn einige Partitionen, die für Android-Treiber verwendet werden, nicht "
+"gemountet sind, kann es sein, dass der Container startet, aber nicht richtig "
+"funktioniert."
 
 #: ../../porting/common-problems-run.rst:38
 msgid ""
 "To check the mounted Android partitions, run ``ls /android``. At least the "
 "following folders should be contained within::"
 msgstr ""
+"Um die gemounteten Android-Partitionen zu überprüfen, führen Sie ``ls "
+"/android`` aus. Mindestens die folgenden Ordner sollten enthalten sein::"
 
 #: ../../porting/common-problems-run.rst:45
 msgid ""
 "If any of these are missing, run ``dmesg`` to get the kernel log. Mounting "
 "Android partitions will start after the following line::"
 msgstr ""
+"Wenn eine davon fehlt, führen Sie ``dmesg`` aus, um das Kernelprotokoll zu "
+"erhalten. Das Mounten von Android-Partitionen beginnt nach der folgenden "
+"Zeile::"
 
 #: ../../porting/common-problems-run.rst:49
 msgid ""
 "Try to diagnose and fix any mounting errors that you find in the log for the "
 "partitions listed above."
 msgstr ""
+"Versuchen Sie, alle Mounting-Fehler zu diagnostizieren und zu beheben, die "
+"Sie im Protokoll für die oben aufgeführten Partitionen finden."
 
 #: ../../porting/common-problems-run.rst:53
 msgid ""
@@ -317,10 +377,15 @@ msgid ""
 "and executables required to run Android. If your device has this partition, "
 "make sure that it is mounted in addition to the others listed above."
 msgstr ""
+"Einige Geräte haben eine ``vendor`` Partition, die proprietäre Bibliotheken "
+"und ausführbare Dateien enthält, die für den Betrieb von Android "
+"erforderlich sind. Wenn Ihr Gerät über diese Partition verfügt, stellen Sie "
+"sicher, dass sie zusätzlich zu den anderen oben aufgeführten Partitionen "
+"gemountet ist."
 
 #: ../../porting/common-problems-run.rst:57
 msgid "Getting more Mir logs"
-msgstr ""
+msgstr "Mehr Mir-Logs erhalten"
 
 #: ../../porting/common-problems-run.rst:59
 msgid ""
@@ -328,20 +393,27 @@ msgid ""
 "mounted, you will need to get a few more logs before enlisting community "
 "help."
 msgstr ""
+"Wenn der Android-Container läuft und alle seine Partitionen gemountet zu "
+"sein scheinen, müssen Sie ein paar weitere Protokolle anfordern, bevor Sie "
+"die Hilfe der Community in Anspruch nehmen können."
 
 #: ../../porting/common-problems-run.rst:61
 msgid "First, stop the display manager if it is not already::"
-msgstr ""
+msgstr "Stoppen Sie zunächst den Display-Manager, wenn er es noch nicht ist::"
 
 #: ../../porting/common-problems-run.rst:65
 msgid ""
 "If you have Wi-Fi working (See `the Halium docs for Wi-Fi`_), install the "
 "``libc6-dbg`` package first::"
 msgstr ""
+"Wenn Wi-Fi funktioniert (siehe `die Halium-Dokumentation für Wi-Fi`_), "
+"installiere zuerst das Paket ``libc6-dbg``::"
 
 #: ../../porting/common-problems-run.rst:70
 msgid "Then, run the following commands to get all of the needed logs::"
 msgstr ""
+"Führen Sie dann die folgenden Befehle aus, um alle benötigten Protokolle "
+"abzurufen::"
 
 #: ../../porting/common-problems-run.rst:76
 msgid ""
@@ -351,23 +423,35 @@ msgid ""
 "GitHub Gists, or a similar service so the people helping you can view them "
 "easily."
 msgstr ""
+"Verwenden Sie ``scp`` oder ein ähnliches Programm, um die Dateien ``usc.log``"
+", ``usc-gdbdb.log`` und ``usc-logcat.log`` vom Heimatordner von phablet auf "
+"Ihren Computer zu kopieren. Veröffentlichen Sie dann den Inhalt dieser "
+"Dateien unter `paste.ubuntu.com`_, Pastebin, GitHub Gists oder einem "
+"ähnlichen Dienst, damit die Personen, die Ihnen helfen, sie einsehen können."
 
 #: ../../porting/common-problems-run.rst:79
 msgid "Programs hang before crashing"
-msgstr ""
+msgstr "Programme hängen sich auf, bevor sie abstürzen"
 
 #: ../../porting/common-problems-run.rst:81
+#, fuzzy
 msgid ""
 "Sometimes processes will hang for a very long time and then abort or "
 "segfault. The reason for the hang is apport, which attempts to collect "
 "useful information about the crash before allowing the program to stop."
 msgstr ""
+"Manchmal hängen Prozesse sehr lange und werden dann abgebrochen oder werfen "
+"eine segfault. Der Grund für den Hang ist apport, der versucht, nützliche "
+"Informationen über den Absturz zu sammeln, bevor das Programm gestoppt wird."
 
 #: ../../porting/common-problems-run.rst:83
 msgid ""
 "If you don't need apport's information and would rather have the programs "
 "crash faster while troubleshooting, issue the following commands::"
 msgstr ""
+"Wenn Sie die Informationen von apport nicht benötigen und die Programme bei "
+"der Fehlersuche lieber schneller abstürzen lassen möchten, geben Sie "
+"folgende Befehle ein::"
 
 #: ../../porting/installing-16-04.rst:2
 msgid "Installing Ubuntu Touch 16.04 images on Halium"
@@ -384,14 +468,12 @@ msgstr ""
 "Gerät ziehen, bevor man fortfährt."
 
 #: ../../porting/installing-16-04.rst:8
-#, fuzzy
 msgid ""
 "Now that you've :doc:`built halium-boot <building-halium-boot>`, we're ready "
 "to install Ubuntu Touch on your device."
 msgstr ""
-"Nach dem :doc:`built ubports-boot <building-ubports-boot>` nutzt man ein "
-"Skript namens ``rootstock-touch-install``, um das Ubuntu Touch rootfs auf "
-"dem Gerät zu installieren."
+"Jetzt, da Sie :doc:`built halium-boot <building-halium-boot>` haben, sind "
+"wir bereit, Ubuntu Touch auf Ihrem Gerät zu installieren."
 
 #: ../../porting/installing-16-04.rst:10
 msgid ""
@@ -404,9 +486,8 @@ msgstr ""
 "Partition als ext4 formatiert ist und unverschlüsselt ist."
 
 #: ../../porting/installing-16-04.rst:13
-#, fuzzy
 msgid "Install halium-boot"
-msgstr "ubports-boot installieren"
+msgstr "Halium-Boot installieren"
 
 #: ../../porting/installing-16-04.rst:15
 #, fuzzy
@@ -415,9 +496,9 @@ msgid ""
 "Reboot your phone into fastboot mode, then do the following from your Halium "
 "tree::"
 msgstr ""
-"Das ubports-boot-Abbild muss vor anderen Abbildern installiert werden. Man "
-"startet das Telefon in den fastboot-Modus, und führt das folgende aus dem "
-"Halium-Baum heraus aus::"
+"Wir müssen das Halium-Boot Image installieren, bevor wir ein Image "
+"installieren können. Starten Sie Ihr Handy neu im Fastboot-Modus und gehen "
+"Sie dann von Ihrem Halium-Tree aus wie folgt vor::"
 
 #: ../../porting/installing-16-04.rst:21
 msgid "Download the rootfs"
@@ -446,7 +527,7 @@ msgstr "system.img und rootfs installieren"
 
 #: ../../porting/installing-16-04.rst:28
 msgid "Todo"
-msgstr ""
+msgstr "Todo"
 
 #: ../../porting/installing-16-04.rst:30
 msgid ""
@@ -464,12 +545,20 @@ msgid ""
 "releases/download/continuous/halium-install-standalone.sh>`__). Boot your "
 "device into recovery and run the script as follows::"
 msgstr ""
+"Laden Sie das halium-install-standalone Skript von `jbbgameich/halium-"
+"install's releases <https://github.com/JBBgameich/halium-install/releases/>`"
+"_ (`Direktlink zum Download <https://github.com/JBBgameich/halium-install/"
+"releases/download/continuous/halium-install-standalone.sh>`__).  Starten Sie "
+"Ihr Gerät in die Recovery und führen Sie das Skript wie folgt aus::"
 
 #: ../../porting/installing-16-04.rst:36
+#, fuzzy
 msgid ""
 "The script will copy and extract the files to their proper places, then "
 "allow you to set the phablet user's password."
 msgstr ""
+"Das Skript kopiert und extrahiert die Dateien an die richtigen Stellen und "
+"ermöglicht es Ihnen dann, das Passwort des phablet-Benutzers festzulegen."
 
 #: ../../porting/installing-16-04.rst:39
 msgid "Get SSH access"
@@ -486,43 +575,39 @@ msgstr ""
 "es ein neues Netzwerkgerät geben. Dieses nutzt man für die Fehlerdiagnose."
 
 #: ../../porting/installing-16-04.rst:43
-#, fuzzy
 msgid ""
 "To confirm that your device has booted correctly, run ``dmesg -w`` and watch "
 "for \"GNU/Linux device\" in the output. If you instead get something similar "
 "to \"Halium initrd Failed to boot\", please get in contact with us so we can "
 "find out why."
 msgstr ""
-"Um zu sehen, ob das Gerät korrekt gestartet hat, führt man ``dmesg -w`` aus "
-"und wartet auf \"GNU/Linux device\" in der Ausgabe. Falls stattdessen etwas "
-"wie \"ubports initrd i hit a nail\" auftaucht, sollte man die Halium-"
-"Entwickler kontaktieren, um gemeinsam herauszufinden, wo der Fehler liegt. "
-"Außerdem kann man ``watch ip link`` ausführen und nach Änderungen in den "
-"Netzwerkgeräten Ausschau halten."
+"Um zu bestätigen, dass Ihr Gerät korrekt gebootet hat, führen Sie ``dmesg "
+"-w`` aus und achten Sie in der Ausgabe auf \"GNU/Linux device\". Wenn Sie "
+"stattdessen etwas Ähnliches wie \"Halium initrd Failed to boot\" erhalten, "
+"nehmen Sie bitte Kontakt mit uns auf, damit wir herausfinden können, warum."
 
 #: ../../porting/installing-16-04.rst:45
-#, fuzzy
 msgid ""
 "Similar to the `Halium reference rootfs <http://docs.halium.org/en/latest/"
 "porting/debug-build/logging-in.html>`__, you should set your computer's IP "
 "on the newly connected RNDIS interface to ``10.15.19.100`` if you don't get "
 "one automatically. Then, run the following to access your device::"
 msgstr ""
-"Ähnlich wie beim Halium-Referenz-Rootfs, sollte man seine Rechner-IP auf der "
-"neuen RNDIS-Schnittstelle zu ``10.15.19.100`` ändern, falls man nicht "
-"automatisch eine IP bekommt. Dann führt man folgenden Befehl aus, um das "
-"Gerät zu erreichen::"
+"Ähnlich wie bei den `Halium-Referenz-Rootfs <http://docs.halium.org/en/"
+"latest/porting/debug-build/logging-in.html>``__ sollten Sie die IP Ihres "
+"Computers auf der neu angeschlossenen RNDIS-Schnittstelle auf "
+"``10.15.19.100`` einstellen, wenn Sie nicht automatisch eine erhalten. "
+"Führen Sie dann die folgenden Schritte aus, um auf Ihr Gerät zuzugreifen::"
 
 #: ../../porting/installing-16-04.rst:49
-#, fuzzy
 msgid "The password will be the one that you set while running halium-install."
 msgstr ""
-"Das Passwort ist das, was man während der Ausführung von rootstock gesetzt "
-"hat."
+"Das Passwort ist dasjenige, das Sie während der Ausführung von halium-"
+"install festgelegt hast."
 
 #: ../../porting/installing-16-04.rst:52 ../../porting/running-ut.rst:74
 msgid "Common Problems"
-msgstr ""
+msgstr "Häufige Probleme"
 
 #: ../../porting/installing-16-04.rst:54
 msgid ""
@@ -530,6 +615,9 @@ msgid ""
 "following suggestions match what you are seeing. If you have installed "
 "successfully, skip down to `Continue on`_."
 msgstr ""
+"Wenn Sie bei der Durchführung dieser Schritte Fehler haben, überprüfen Sie, "
+"ob einer der folgenden Vorschläge mit dem übereinstimmt, was Sie sehen. Wenn "
+"Sie erfolgreich installiert haben, gehen Sie nach unten zu `Weiter mit`_."
 
 #: ../../porting/installing-16-04.rst:64
 msgid ""
@@ -545,15 +633,14 @@ msgid "Porting information"
 msgstr "Portierung Informationen"
 
 #: ../../porting/introduction.rst:5
-#, fuzzy
 msgid ""
 "If you are looking for information on installing Ubuntu Touch on a supported "
 "device, or if you would like to check if your device is supported, please "
 "see `this page <https://devices.ubuntu-touch.io/>`_."
 msgstr ""
-"Für Informationen darüber, wie man Ubuntu Touch auf einem unterstützten "
-"Gerät installiert oder darüber, ob ein Gerät bereits unterstützt wird, "
-"findet man auf `dieser Seite <https://ubports.com/page/get-ubuntu-touch>`_."
+"Wenn Sie Informationen zur Installation von Ubuntu Touch auf einem "
+"unterstützten Gerät suchen oder überprüfen möchten, ob Ihr Gerät unterstützt "
+"wird, lesen Sie bitte `diese Seite <https://devices.ubuntu-touch.io/>`_."
 
 #: ../../porting/introduction.rst:7
 msgid ""
@@ -576,17 +663,16 @@ msgstr ""
 "zu können, kehrt man hierher zurück."
 
 #: ../../porting/introduction.rst:11
-#, fuzzy
 msgid ""
 "Start at :doc:`building-halium-boot` if you'd like to install the UBports "
 "Ubuntu Touch 16.04 rootfs."
 msgstr ""
-"Um das UBports Ubuntu Touch 16.04 rootfs zu installieren,  beginnt man bei :"
-"doc:`building-ubports-boot`."
+"Beginnen Sie mit :doc:`building-halium-boot`, wenn Sie die UBports Ubuntu "
+"Touch 16.04 rootfs installieren möchten."
 
 #: ../../porting/introduction.rst:25
 msgid "Getting community help"
-msgstr ""
+msgstr "Hilfe der Community erhalten"
 
 #: ../../porting/introduction.rst:27
 msgid ""
@@ -595,18 +681,22 @@ msgid ""
 "stuck on. If none of the suggestions are helpful, you can get help from the "
 "community via the following channels:"
 msgstr ""
+"Wenn Sie Probleme mit den Portierungsschritten nach dem Erstellen Ihres "
+"Halium-Systemimages haben, lesen Sie den Abschnitt \"Häufige Probleme\" auf "
+"der Seite, auf der Sie sich befinden. Wenn keiner der Vorschläge hilfreich "
+"ist, können Sie über die folgenden Kanäle Hilfe von der Community erhalten:"
 
 #: ../../porting/introduction.rst:29
 msgid "Telegram: @ubports_porting"
-msgstr ""
+msgstr "Telegram: @ubports_porting"
 
 #: ../../porting/introduction.rst:30
 msgid "IRC: #ubports-porting on freenode"
-msgstr ""
+msgstr "IRC: #ubports-porting auf freenode"
 
 #: ../../porting/introduction.rst:31
 msgid "Forum: `forums.ubports.com <https://forums.ubports.com>`__"
-msgstr ""
+msgstr "Forum: `forums.ubports.com <https://forums.ubports.com>`__"
 
 #: ../../porting/running-ut.rst:2
 msgid "Running Ubuntu Touch"
@@ -617,38 +707,36 @@ msgid ""
 "Now that you're logged in, there are a few more steps before Ubuntu Touch "
 "will be fully functional on your device."
 msgstr ""
+"Jetzt, da Sie angemeldet sind, gibt es noch ein paar Schritte, bis Ubuntu "
+"Touch auf Ihrem Gerät voll funktionsfähig ist."
 
 #: ../../porting/running-ut.rst:7
-#, fuzzy
 msgid "Make / writable"
-msgstr "Erstellen / Schreibrechte"
+msgstr "/ beschreibbar machen"
 
 #: ../../porting/running-ut.rst:9
-#, fuzzy
 msgid ""
 "Before we make any changes to the rootfs (which will be required for the "
 "next steps), you'll need to remount it with write permissions. To do that, "
 "run the following command::"
 msgstr ""
-"Bevor man Änderungen am rootfs vornehmen kann (was im nächsten Schritt "
-"notwendig ist), muss es mit Schreibrechten erneut eingehängt werden. Dafür "
-"führt man folgenden Befehl aus::"
+"Bevor wir Änderungen an den Rootfs vornehmen (die für die nächsten Schritte "
+"erforderlich sind), müssen Sie sie mit Schreibrechten neu mounten. Um dies "
+"zu tun, führen Sie den folgenden Befehl aus::"
 
 #: ../../porting/running-ut.rst:14
 msgid "Add udev rules"
 msgstr "udev-Regeln hinzufügen"
 
 #: ../../porting/running-ut.rst:16
-#, fuzzy
 msgid ""
 "You must create some udev rules to allow Ubuntu Touch software to access "
 "your hardware. Run the following command, replacing [codename] with your "
 "device's codename::"
 msgstr ""
-"Nachdem Einloggen müssen einige udev-Regeln erstellt werden, um der Ubuntu "
-"Touch Software den Hardwarezugriff zu ermöglichen. Dafür führt man den "
-"folgenden Befehl aus, wobei man [codename] durch den Codenamen des Geräts "
-"ersetzt::"
+"Sie müssen einige udev-Regeln erstellen, damit die Ubuntu Touch-Software auf "
+"Ihre Hardware zugreifen kann. Führen Sie den folgenden Befehl aus und "
+"ersetzen Sie [Codename] durch den Codenamen Ihres Geräts::"
 
 #: ../../porting/running-ut.rst:21
 msgid ""
@@ -737,7 +825,6 @@ msgstr ""
 "Dieser Wert beeinflusst die Skalierung im Browser und in Webapps."
 
 #: ../../porting/running-ut.rst:47
-#, fuzzy
 msgid ""
 "A reference device has been chosen from which we derive the values for all "
 "other devices. The reference device is a laptop with a 120ppi screen. "
@@ -745,12 +832,12 @@ msgid ""
 "*perceived* size rather than *physical* size. Here are some values for other "
 "devices so you may derive the correct one for yours:"
 msgstr ""
-"Ein Referenzgerät wurde ausgewählt, von dem die Werte aller anderer Geräte "
-"abgeleitet wird. Das Referenzgerät ist ein Klapprechner mit einem 120ppi-"
-"Bildschirm. Es gibt keine exakte Formel. Man setzt diese Optionen nach "
-"*wahrgenommener* Größe, nicht nach einer *physikalischen* Größe. Hier stehen "
-"einige Werte für andere Geräte, von denen sich passende Werte ableiten "
-"lassen:"
+"Es wurde ein Referenzgerät ausgewählt, aus dem wir die Werte für alle "
+"anderen Geräte ableiten. Das Referenzgerät ist ein Laptop mit einem 120ppi "
+"Bildschirm. Es gibt jedoch keine genaue Formel, da diese Optionen auf "
+"*wahrgenommene* Größe und nicht auf *physische* Größe eingestellt sind. Hier "
+"sind einige Werte für andere Geräte, so dass Sie die richtigen für Ihre "
+"Geräte ableiten können:"
 
 #: ../../porting/running-ut.rst:50
 msgid "Device"
@@ -989,6 +1076,12 @@ msgid ""
 "guide for now. Try to check the functionality of your device by following "
 "the Smoke Testing information in :doc:`/contribute/quality-assurance`."
 msgstr ""
+"Wenn Sie bei der Durchführung dieser Schritte Fehler haben, überprüfen Sie, "
+"ob einer der folgenden Vorschläge mit dem übereinstimmt, was Sie sehen. Wenn "
+"Sie diese Schritte erfolgreich abgeschlossen haben, herzlichen Glückwunsch! "
+"Sie haben das Ende der Portierungsanleitung erreicht. Versuchen Sie, die "
+"Funktionalität Ihres Geräts zu überprüfen, indem Sie den Informationen zum "
+"Smoke-Test in :doc:`/contribute/quality-assurance` folgen."
 
 #~ msgid ""
 #~ "Ubuntu Touch uses Upstart rather than Systemd for its init daemon. "
