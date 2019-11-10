@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2019-07-01 16:10+0000\n"
-"Last-Translator: Peter keck <peter.keck@t-online.de>\n"
+"PO-Revision-Date: 2019-11-10 16:36+0000\n"
+"Last-Translator: Kai Goldbeck <kaiuwe.goldbeck@mailbox.org>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-contribute/de/>\n"
 "Language: de\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.8\n"
 "Generated-By: Babel 2.5.3\n"
 
 #: ../../contribute/bugreporting.rst:2
@@ -718,10 +718,12 @@ msgid ""
 "This page will help you get started with developing the apps which are "
 "included with Ubuntu Touch."
 msgstr ""
+"Diese Seite wird Ihnen helfen, mit der Entwicklung der Apps zu beginnen, die "
+"in Ubuntu Touch enthalten sind."
 
 #: ../../contribute/preinstalled-apps.rst:7
 msgid "Core apps"
-msgstr ""
+msgstr "Kernanwendungen"
 
 #: ../../contribute/preinstalled-apps.rst:9
 msgid ""
@@ -731,6 +733,12 @@ msgid ""
 "`Clickable`_, an easy to use build and test system for Ubuntu Touch apps. "
 "Most core apps can even be built and run without an Ubuntu Touch device!"
 msgstr ""
+"Core Apps sind Anwendungen, die in den UBports-Distributionen von Ubuntu "
+"Touch enthalten sind **und** im OpenStore für Updates platziert werden. Core "
+"Apps sind eine gute \"First Development\" Erfahrung in UBports. Viele sind "
+"mit `Clickable`_ erstellt, einem einfach zu bedienenden Build und Testsystem "
+"für Ubuntu Touch Apps. Die meisten Kernanwendungen können sogar ohne Ubuntu "
+"Touch-Gerät erstellt und ausgeführt werden!"
 
 #: ../../contribute/preinstalled-apps.rst:12
 msgid "Which core apps currently exist?"
@@ -746,7 +754,7 @@ msgstr "Name der Applikation"
 
 #: ../../contribute/preinstalled-apps.rst:21
 msgid "Store page"
-msgstr ""
+msgstr "Store-Seite"
 
 #: ../../contribute/preinstalled-apps.rst:21
 msgid "Code repository"
@@ -754,114 +762,112 @@ msgstr "Repository des Quellcodes"
 
 #: ../../contribute/preinstalled-apps.rst:23
 msgid "Calculator"
-msgstr ""
+msgstr "Taschenrechner"
 
 #: ../../contribute/preinstalled-apps.rst:23
 msgid "`Calculator on OpenStore`_"
-msgstr ""
+msgstr "`Taschenrechner im OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:23
 msgid "`calculator-app on GitHub`_"
-msgstr ""
+msgstr "`Taschenrechner-App auf GitHub`_"
 
 #: ../../contribute/preinstalled-apps.rst:24
 msgid "Calendar"
-msgstr ""
+msgstr "Kalender"
 
 #: ../../contribute/preinstalled-apps.rst:24
 msgid "`Calendar on OpenStore`_"
-msgstr ""
+msgstr "`Kalender im OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:24
 msgid "`calendar-app on GitHub`_"
-msgstr ""
+msgstr "`Kalender-App auf GitHub`_"
 
 #: ../../contribute/preinstalled-apps.rst:25
 msgid "Clock"
-msgstr ""
+msgstr "Uhr"
 
 #: ../../contribute/preinstalled-apps.rst:25
 msgid "`Clock on OpenStore`_"
-msgstr ""
+msgstr "`Uhr im OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:25
-#, fuzzy
 msgid "`clock-app on GitHub`_"
-msgstr "Direkt auf GitHub"
+msgstr "`Uhr-App auf GitHub`_"
 
 #: ../../contribute/preinstalled-apps.rst:26
 msgid "File Manager"
-msgstr ""
+msgstr "Dateimanager"
 
 #: ../../contribute/preinstalled-apps.rst:26
 msgid "`File Manager on OpenStore`_"
-msgstr ""
+msgstr "`Dateimanager im OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:26
 msgid "`filemanager-app on GitHub`_"
-msgstr ""
+msgstr "`Dateimanager-App auf GitHub`_"
 
 #: ../../contribute/preinstalled-apps.rst:27
 msgid "Gallery"
-msgstr ""
+msgstr "Galerie"
 
 #: ../../contribute/preinstalled-apps.rst:27
 msgid "`Gallery on OpenStore`_"
-msgstr ""
+msgstr "`Galerie im OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:27
 msgid "`gallery-app on GitHub`_"
-msgstr ""
+msgstr "`Galerie-App auf GitHub`_"
 
 #: ../../contribute/preinstalled-apps.rst:28
 msgid "Music"
-msgstr ""
+msgstr "Musik"
 
 #: ../../contribute/preinstalled-apps.rst:28
 #: ../../contribute/preinstalled-apps.rst:33
 msgid "Not yet in OpenStore"
-msgstr ""
+msgstr "Noch nicht in OpenStore vorhanden"
 
 #: ../../contribute/preinstalled-apps.rst:28
-#, fuzzy
 msgid "`music-app on GitHub`_"
-msgstr "Direkt auf GitHub"
+msgstr "`Musik-App auf GitHub`_"
 
 #: ../../contribute/preinstalled-apps.rst:29
 msgid "Notes"
-msgstr ""
+msgstr "Notizen"
 
 #: ../../contribute/preinstalled-apps.rst:29
 msgid "`Notes on OpenStore`_"
-msgstr ""
+msgstr "`Notizen im OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:29
 msgid "`notes-app on GitHub`_"
-msgstr ""
+msgstr "`Notizen-App auf GitHub`_"
 
 #: ../../contribute/preinstalled-apps.rst:30
 msgid "OpenStore"
-msgstr ""
+msgstr "OpenStore"
 
 #: ../../contribute/preinstalled-apps.rst:30
 msgid "`OpenStore... on OpenStore`_"
-msgstr ""
+msgstr "`OpenStore... im OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:30
 msgid "`openstore-app on GitHub`_"
-msgstr ""
+msgstr "`OpenStore-App auf GitHub`_"
 
 #: ../../contribute/preinstalled-apps.rst:31
 msgid "Terminal"
-msgstr ""
+msgstr "Terminal"
 
 #: ../../contribute/preinstalled-apps.rst:31
 msgid "`Terminal on OpenStore`_"
-msgstr ""
+msgstr "`Terminal im OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:31
 msgid "`terminal-app on GitHub`_"
-msgstr ""
+msgstr "`Terminal-App auf GitHub`_"
 
 #: ../../contribute/preinstalled-apps.rst:32
 msgid "UBports Welcome"
@@ -869,23 +875,23 @@ msgstr "UBports Welcome"
 
 #: ../../contribute/preinstalled-apps.rst:32
 msgid "`UBports Welcome on OpenStore`_"
-msgstr ""
+msgstr "`UBports Welcome im OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:32
 msgid "`ubports-app on GitHub`_"
-msgstr ""
+msgstr "`UBports-App auf GitHub`_"
 
 #: ../../contribute/preinstalled-apps.rst:33
 msgid "Weather"
-msgstr ""
+msgstr "Wetter"
 
 #: ../../contribute/preinstalled-apps.rst:33
 msgid "`weather-app on GitHub`_"
-msgstr ""
+msgstr "`Wetter-App auf GitHub`_"
 
 #: ../../contribute/preinstalled-apps.rst:37
 msgid "Other preinstalled apps"
-msgstr ""
+msgstr "Andere vorinstallierte Apps"
 
 #: ../../contribute/preinstalled-apps.rst:39
 msgid ""
@@ -894,50 +900,59 @@ msgid ""
 "the system because they use many system services which do not necessarily "
 "have a stable API."
 msgstr ""
+"Die folgenden Anwendungen sind in Ubuntu Touch vorinstalliert, gelten aber "
+"nicht als Core-Apps. Meistens müssen diese Projekte mit dem System "
+"aktualisiert werden, da sie viele Systemdienste nutzen, die nicht unbedingt "
+"eine stabile API haben."
 
 #: ../../contribute/preinstalled-apps.rst:41
 msgid ""
 "These apps may be more difficult to work with, but their repository should "
 "contain a document stating how to build and run them on a device."
 msgstr ""
+"Diese Anwendungen können schwieriger zu bearbeiten sein, aber ihr Repository "
+"sollte ein Dokument enthalten, das angibt, wie man sie erstellt und auf "
+"einem Gerät ausführt."
 
 #: ../../contribute/preinstalled-apps.rst:45
 msgid "Browser (`morph-browser on GitHub`_)"
-msgstr ""
+msgstr "Browser (`Morph-Browser auf GitHub`_)"
 
 #: ../../contribute/preinstalled-apps.rst:46
 msgid "Contacts (`address-book-app on GitHub`_)"
-msgstr ""
+msgstr "Kontakte (`Adressbuch-App auf GitHub`_)"
 
 #: ../../contribute/preinstalled-apps.rst:47
 msgid "Camera (`camera-app on GitHub`_)"
-msgstr ""
+msgstr "Kamera (`Kamera-App auf GitHub`_)"
 
 #: ../../contribute/preinstalled-apps.rst:48
 msgid "External Drives (`ciborium on GitHub`_)"
-msgstr ""
+msgstr "Externe Laufwerke (`Ciborium auf GitHub`_)"
 
 #: ../../contribute/preinstalled-apps.rst:49
 msgid "Media Player (`mediaplayer-app on GitHub`_)"
-msgstr ""
+msgstr "Medienwiedergabe (`Medienwiedergabe-App auf GitHub`_)"
 
 #: ../../contribute/preinstalled-apps.rst:50
 msgid "Messaging (`messaging-app on GitHub`_)"
-msgstr ""
+msgstr "Nachrichten (`Nachrichten-App auf GitHub`_)"
 
 #: ../../contribute/preinstalled-apps.rst:51
 msgid "Phone (`dialer-app on GitHub`_)"
-msgstr ""
+msgstr "Telefon (`Telefon-App auf GitHub`_)"
 
 #: ../../contribute/preinstalled-apps.rst:52
 msgid "System Settings (`system-settings on GitHub`_)"
-msgstr ""
+msgstr "Systemeinstellungen (`Systemeinstellungen auf GitHub`_)"
 
 #: ../../contribute/preinstalled-apps.rst:54
 msgid ""
 "Instructions for contributing to these applications can be found in their "
 "respective repositories."
 msgstr ""
+"Anweisungen für das Beitragen zu diesen Anwendungen finden Sie in den "
+"jeweiligen Repositorien."
 
 #: ../../contribute/quality-assurance.rst:2
 msgid "Quality Assurance"
@@ -1001,17 +1016,15 @@ msgstr ""
 "nennt Gerät, Kanal und Build-Nummer."
 
 #: ../../contribute/quality-assurance.rst:16
-#, fuzzy
 msgid ""
 "If you have write-access to the repository, you can replace the **needs "
 "confirmation** label with **bug** (to mark it confirmed) or **invalid** (if "
 "the issue is definitely not reproducible). In that case it should be closed."
 msgstr ""
-"Wer Schreibrechte im Repository hat, kann die Markierung **needs "
-"confirmation** durch **bug** ersetzen (um den Fehler als bestätigt zu "
-"markieren) oder **invalid** (falls das Problem definitiv nicht "
-"reproduzierbar ist). In diesem Fall sollte der Fehlerbericht geschlossen "
-"werden."
+"Wenn Sie Schreibzugriff auf das Repository haben, können Sie das Label **"
+"needs confirmation** durch **bug** (um es als bestätigt zu markieren) oder "
+"**invalid** ersetzen (wenn das Problem definitiv nicht reproduzierbar ist). "
+"In diesem Fall sollte es geschlossen werden."
 
 #: ../../contribute/quality-assurance.rst:18
 msgid ""
@@ -1033,6 +1046,9 @@ msgid ""
 "Pull-requests can be tested using the `QA scripts <https://github.com/"
 "ubports/ubports-qa-scripts>`_. Run ``ubports-qa -h`` for usage information."
 msgstr ""
+"Pull-Requests können mit den `QA-Skripten <https://github.com/ubports/"
+"ubports-qa-scripts>``_ getestet werden. Führen Sie ``ubports-qa -h`` für "
+"Nutzungsinformationen aus."
 
 #: ../../contribute/quality-assurance.rst:25
 msgid ""
