@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-08-28 14:00+0200\n"
-"PO-Revision-Date: 2019-11-10 16:36+0000\n"
-"Last-Translator: Kai Goldbeck <kaiuwe.goldbeck@mailbox.org>\n"
+"PO-Revision-Date: 2019-11-10 17:15+0000\n"
+"Last-Translator: Florian Leeber <flori@bin.org.in>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-porting/de/>\n"
 "Language: de\n"
@@ -37,16 +37,15 @@ msgid "Fix mounts"
 msgstr "Einhängepunkte anpassen"
 
 #: ../../porting/building-halium-boot.rst:9
-#, fuzzy
 msgid ""
 "Halium-boot's ``mount`` is not aware of SELinux contexts. If your device's "
 "``fstab`` file includes any contexts, the partition that they are on will "
 "fail to mount and your port will not work correctly."
 msgstr ""
-"Halium-Boot's ``mount`` ist sich des SELinux-Zusammenhangs nicht bewusst. "
-"Wenn die ``fstab`` Datei Ihres Geräts irgendwelche Zusammenhänge enthält, "
-"kann die Partition, auf der sie sich befinden, nicht gemountet werden und "
-"Ihr Port funktioniert nicht korrekt."
+"Halium-Boot's ``mount`` ist sich des SELinux-Kontexts nicht bewusst. Wenn "
+"die ``fstab`` Datei Ihres Geräts irgendwelche Kontexte enthält, kann die "
+"Partition, auf der sie sich befinden, nicht gemountet werden und Ihr Port "
+"funktioniert nicht korrekt."
 
 #: ../../porting/building-halium-boot.rst:11
 msgid ""
@@ -198,7 +197,6 @@ msgstr ""
 "bevor das Programm stoppt::"
 
 #: ../../porting/common-problems-install.rst:22
-#, fuzzy
 msgid ""
 "This seems to be a common error on arm64 devices with kernel 3.10 when "
 "rsyslogd is enabled. If you have this error, please add your voice to "
@@ -231,7 +229,6 @@ msgid "Device reboots after a minute"
 msgstr "Das Gerät startet nach einer Minute neu"
 
 #: ../../porting/common-problems-install.rst:38
-#, fuzzy
 msgid ""
 "The device may reboot cleanly after about a minute of uptime. If you are "
 "logged in when the reboot occurs, you will see the following message::"
@@ -434,15 +431,15 @@ msgid "Programs hang before crashing"
 msgstr "Programme hängen sich auf, bevor sie abstürzen"
 
 #: ../../porting/common-problems-run.rst:81
-#, fuzzy
 msgid ""
 "Sometimes processes will hang for a very long time and then abort or "
 "segfault. The reason for the hang is apport, which attempts to collect "
 "useful information about the crash before allowing the program to stop."
 msgstr ""
-"Manchmal hängen Prozesse sehr lange und werden dann abgebrochen oder werfen "
-"eine segfault. Der Grund für den Hang ist apport, der versucht, nützliche "
-"Informationen über den Absturz zu sammeln, bevor das Programm gestoppt wird."
+"Manchmal hängen Prozesse sehr lange und werden dann abgebrochen oder "
+"erzeugen einen Segfault. Der Grund für den Hang ist apport, der versucht, "
+"nützliche Informationen über den Absturz zu sammeln, bevor das Programm "
+"gestoppt wird."
 
 #: ../../porting/common-problems-run.rst:83
 msgid ""
@@ -490,7 +487,6 @@ msgid "Install halium-boot"
 msgstr "Halium-Boot installieren"
 
 #: ../../porting/installing-16-04.rst:15
-#, fuzzy
 msgid ""
 "We'll need to install the halium-boot image before installing an image. "
 "Reboot your phone into fastboot mode, then do the following from your Halium "
@@ -552,7 +548,6 @@ msgstr ""
 "Ihr Gerät in die Recovery und führen Sie das Skript wie folgt aus::"
 
 #: ../../porting/installing-16-04.rst:36
-#, fuzzy
 msgid ""
 "The script will copy and extract the files to their proper places, then "
 "allow you to set the phablet user's password."
@@ -630,7 +625,7 @@ msgstr ""
 
 #: ../../porting/introduction.rst:2
 msgid "Porting information"
-msgstr "Portierung Informationen"
+msgstr "Portierungs-Informationen"
 
 #: ../../porting/introduction.rst:5
 msgid ""
