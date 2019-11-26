@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2019-04-24 20:42+0000\n"
-"Last-Translator: 不朽正义 <tanyongle0633@gmail.com>\n"
+"PO-Revision-Date: 2019-12-03 17:13+0000\n"
+"Last-Translator: Sam Zhang <sammyok@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-about/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.2.2\n"
+"X-Generator: Weblate 3.8\n"
 
 #: ../../about/introduction.rst:2
 msgid "Introduction"
@@ -338,16 +338,14 @@ msgstr ""
 "团队的主要检查，但尚未被负责的开发团队所接受。"
 
 #: ../../about/process/issue-tracking.rst:39
-#, fuzzy
 msgid ""
 "**Accepted**: The issue has been accepted by the responsible development-"
 "team. If the issue is a bugreport, the team has decided that it should be "
 "fixable and accepts the responsibility. If the issue is a feature request, "
 "the team thinks it should be implemented as described."
 msgstr ""
-"**Accepted** ：该问题已被其所负责的开发团队接受。 如果问题是错误报告，团队已"
-"决定它应该是可修复的并对其负责。 如果这个问题是一个特殊要求，那么团队认为应该"
-"按照描述来实施。"
+"**Accepted** ：该问题已被其所负责的开发团队接受。 如果问题是错误报告，团队已决定它应该是可修复的并对其负责。 "
+"如果这个问题是一个特殊要求，那么团队认为应该按照描述来实施。"
 
 #: ../../about/process/issue-tracking.rst:40
 msgid ""
@@ -418,7 +416,6 @@ msgid ""
 msgstr "**needs confirmation**：这个 bug 需要受影响用户的确认和进一步提供信息"
 
 #: ../../about/process/issue-tracking.rst:55
-#, fuzzy
 msgid ""
 "**bug**: This issue is a confirmed bug. If it's reproducible, reproduction "
 "steps are described."
