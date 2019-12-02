@@ -34,3 +34,4 @@ There's not much here yet, but maybe you'd like to add some reference material? 
 
    calendars
    online-accounts
+   qtmir-qtubuntu
