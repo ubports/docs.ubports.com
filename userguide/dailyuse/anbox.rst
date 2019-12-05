@@ -105,7 +105,7 @@ Access Android storage
 
 Android storage is located at ``/home/phablet/anbox-data/data/media/0``.
 
-- Links to android libraries can be made in their respective XDG counterparts:
+- Links to android libraries can be made in their respective XDG counterparts::
 
     ln -s ~/anbox-data/data/media/0/Documents ~/Documents/android
     ln -s ~/anbox-data/data/media/0/Pictures ~/Pictures/android
