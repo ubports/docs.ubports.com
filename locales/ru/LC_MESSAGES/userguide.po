@@ -84,8 +84,8 @@ msgstr "Откройте терминал и введите `` adb devices``."
 #: ../../userguide/advanceduse/adb.rst:37
 msgid "When you're done using the shell, it's a good idea to turn Developer Mode off again."
 msgstr ""
-"Когда вы закончите работу с shell, рекомендуется снова выключить режим "
-"разработчика."
+"Когда вы закончите работу с shell, рекомендуется снова выключить "режим
+разработчика."
 
 #: ../../userguide/advanceduse/adb.rst:39
 msgid "If there's a device in the list here (The command doesn't print \"List of devices attached\" and a blank line), you are able to use ADB successfully. If not, continue to the next section."
@@ -129,7 +129,7 @@ msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:10
 msgid "Follow this `guide <https://docs.ubports.com/en/latest/userguide/advanceduse/adb.html>`_ to activate Developer Mode and ADB (or SSH) connection."
-msgstr ""
+msgstr "Следуйте инструкциям в этом `документе <https://docs.ubports.com/en/latest/userguide/advanceduse/adb.html>`_ для активации "режима разработчика" и ADB (или SSH) соеединения."
 
 #: ../../userguide/advanceduse/dav.rst:13
 msgid "Download this `script <https://gist.github.com/bastos77/0c47a94dd0bf3e394f879c0ff42b7839>`_ (let's call it dav.sh) and edit the following variables:"
@@ -407,7 +407,7 @@ msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:2
 msgid "Android apps"
-msgstr ""
+msgstr "Приложения для Android"
 
 #: ../../userguide/dailyuse/anbox.rst:4
 msgid "`Anbox <https://anbox.io>`_ is a minimal Android container and compatibility layer that allows you to run Android apps on GNU/Linux operating systems such as UBports."
@@ -419,11 +419,11 @@ msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:10
 msgid "Supported devices"
-msgstr ""
+msgstr "Поддерживаемые устройства"
 
 #: ../../userguide/dailyuse/anbox.rst:12
 msgid "Make sure your device is supported:"
-msgstr ""
+msgstr "Проверьте, что Ваше устройство есть в списке поддерживаемых"
 
 #: ../../userguide/dailyuse/anbox.rst:14
 msgid "Meizu Pro 5 (codename: ``turbo``, name of the boot partition: ``bootimg``)"
@@ -459,7 +459,7 @@ msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:27
 msgid "Installing Anbox is only recommended for experienced users."
-msgstr ""
+msgstr "Установка Anbox рекомендована только опытным пользователям."
 
 #: ../../userguide/dailyuse/anbox.rst:29
 msgid "Make sure your supported device runs on 16.04 (Anbox doesn't work on 15.04)"
@@ -471,7 +471,7 @@ msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:31
 msgid "Activate developer mode on your device."
-msgstr ""
+msgstr "Активируйте на устройстве "режим разработчика"."
 
 #: ../../userguide/dailyuse/anbox.rst:32
 msgid "Connect the device to your host and run the following commands from your host (same terminal you ran the ``export`` command in)::"
@@ -505,11 +505,11 @@ msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:72
 msgid "F-Droid: https://f-droid.org/"
-msgstr ""
+msgstr "Репозиторий F-Droid: https://f-droid.org/"
 
 #: ../../userguide/dailyuse/anbox.rst:73
 msgid "ApkTrack: https://f-droid.org/packages/fr.kwiatkowski.ApkTrack/"
-msgstr ""
+msgstr "Репозиторий ApkTrack: https://f-droid.org/packages/fr.kwiatkowski.ApkTrack/"
 
 #: ../../userguide/dailyuse/anbox.rst:76
 msgid "How to uninstall apps"
@@ -767,7 +767,7 @@ msgstr ""
 
 #: ../../userguide/install.rst:2
 msgid "Install Ubuntu Touch"
-msgstr ""
+msgstr "Установка Ubuntu Touch"
 
 #: ../../userguide/install.rst:4
 msgid "Installing Ubuntu Touch is easy, and a lot of work has gone in to making the installation process less intimidating to less technical users. The UBports Installer is a nice graphical tool that you can use to install Ubuntu Touch on a `supported device <https://ubuntu-touch.io/devices>`_ from your Linux, Mac or Windows computer."
