@@ -100,6 +100,19 @@ How to uninstall apps
 
 - Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the new Android apps to show up.
 
+Access Android storage
+-----------------------
+
+Android storage is located at ``/home/phablet/anbox-data/data/media/0``.
+
+- Links to android libraries can be made in their respective XDG counterparts::
+
+    ln -s ~/anbox-data/data/media/0/Documents ~/Documents/android
+    ln -s ~/anbox-data/data/media/0/Pictures ~/Pictures/android
+    ln -s ~/anbox-data/data/media/0/Music ~/Music/android
+    ln -s ~/anbox-data/data/media/0/Movies ~/Videos/android
+
+
 Troubleshooting
 ---------------
 
