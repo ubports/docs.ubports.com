@@ -19,6 +19,7 @@ You may view this documentation in the following languages:
 * `Română <https://docs.ubports.com/ro/latest/>`_
 * `Türkçe <https://docs.ubports.com/tr/latest/>`_
 * `Español <https://docs.ubports.com/es/latest/>`_
+* `Simplified Chinese <https://docs.ubports.com/zh_CN/latest/>`_
 
 .. toctree::
    :maxdepth: 1
