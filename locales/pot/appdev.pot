@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 15:16-0500\n"
+"POT-Creation-Date: 2020-01-03 03:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1081,7 +1081,7 @@ msgid "Using Standard Paths in C++"
 msgstr ""
 
 #: ../../appdev/guides/writeable-dirs.rst:31
-msgid "The Qt header ``QStandardPaths`` provides the app's writable locations:"
+msgid "The Qt header ``QStandardPaths`` provides the app's writable locations in C++:"
 msgstr ""
 
 #: ../../appdev/guides/writeable-dirs.rst:43
@@ -1089,11 +1089,7 @@ msgid "Using Standard Paths in QML"
 msgstr ""
 
 #: ../../appdev/guides/writeable-dirs.rst:44
-msgid "The Qt module `Qt.labs.platform <https://doc.qt.io/archives/qt-5.10/qml-qt-labs-platform-standardpaths.html>`_ provides the QStandardPaths in QML. Unfortunately it is not available on Ubuntu Touch, yet. Probably you don't want to ship that module with your app. Instead, you could simply let your C++ plugin provide the paths to your QML part. Therefore, add these methods to your plugin class:"
-msgstr ""
-
-#: ../../appdev/guides/writeable-dirs.rst:64
-msgid "Assuming the name of your plugin is MyPlugin, you can access these paths in QML:"
+msgid "The Qt module `Qt.labs.platform <https://doc.qt.io/archives/qt-5.10/qml-qt-labs-platform-standardpaths.html>`_ provides the app's writable locations in QML:"
 msgstr ""
 
 #: ../../appdev/index.rst:2
