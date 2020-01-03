@@ -8,7 +8,10 @@ The objective of resolution independence is to make it easy for
 graphical user interfaces in Ubuntu to scale to all the form factors
 that Ubuntu targets: phones, tablets, laptops and desktops. The approach
 taken combines simplicity for the designers and developers with visual
-fidelity, quality and usability. Measurement Units
+fidelity, quality and usability.
+
+Measurement Units
+-----------------
 
 Grid Unit
 ~~~~~~~~~

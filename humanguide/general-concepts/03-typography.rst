@@ -9,15 +9,12 @@ Default font is `Ubuntu font <https://design.ubuntu.com/font/>`__
 the system.
 
 .. figure:: /_static/images/humanguide/01.png
-   :alt: image
-
-   image
 
 For the font sizes to be consistent across devices, instead of setting
 the font size in pixels or points, it is imperative to define the font
 size in terms of literals:
 
-+-------.-+------+------+--------------------+----------------------+
++---------+------+------+--------------------+----------------------+
 | Font    | gu   | Desk | Smart Phone with   | Tablet with 10" HD   |
 | Size    |      | top  | 4" HD screen       | screen               |
 +=========+======+======+====================+======================+
@@ -38,6 +35,3 @@ size in terms of literals:
 +---------+----+------+----------------------+----------------------+
 
 .. figure:: /_static/images/humanguide/02.png
-   :alt: image
-
-   image
