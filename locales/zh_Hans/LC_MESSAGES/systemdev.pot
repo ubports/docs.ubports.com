@@ -1,0 +1,1168 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The UBports project (Creative Commons BY-SA 4.0)
+# This file is distributed under the same license as the UBports package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: UBports\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-01-03 16:59+0800\n"
+"PO-Revision-Date: 2020-01-03 20:15+0800\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.4\n"
+"Last-Translator: 弱弱的胖橘猫丷 <gesangtome@foxmail.com>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: zh_CN\n"
+
+#: /home/flowertome/docs.ubports.com/systemdev/calendars.rst:2
+msgid "Working on the Calendar feature"
+msgstr "使用日历功能"
+
+#: /home/flowertome/docs.ubports.com/systemdev/calendars.rst:4
+msgid "The Calendar feature is provided by several components:"
+msgstr "日历功能由几个组件提供:"
+
+#: /home/flowertome/docs.ubports.com/systemdev/calendars.rst:6
+msgid ""
+"The `Calendar App <https://gitlab.com/ubports/apps/calendar-app>`_, "
+"providing the user interface"
+msgstr ""
+"`日历应用 <https://gitlab.com/ubports/apps/calendar-app>`_, 提供了用户界面"
+
+#: /home/flowertome/docs.ubports.com/systemdev/calendars.rst:7
+msgid ""
+"`Evolution Data Server <https://github.com/ubports/evolution-data-server-"
+"packaging>`_ (often shortened as \"EDS\"), which is the backend where your "
+"calendars are stored"
+msgstr ""
+"`Evolution数据服务器 <https://github.com/ubports/evolution-data-server-"
+"packaging>`_（通常简称为\"EDS\"），它是存储日历的后端"
+
+#: /home/flowertome/docs.ubports.com/systemdev/calendars.rst:8
+msgid ""
+"`sync-monitor <https://github.com/ubports/sync-monitor>`_, the service "
+"responsible for managing the synchronisation with remote calendars"
+msgstr ""
+"`sync-monitor <https://github.com/ubports/sync-monitor>`_,这个服务负责管理与"
+"远程日历的同步"
+
+#: /home/flowertome/docs.ubports.com/systemdev/calendars.rst:9
+msgid ""
+"`SyncEvolution <https://github.com/ubports/syncevolution-packaging>`_, the "
+"service responsible for performing the synchronisation to a WebDAV/CalDAV "
+"remote calendar"
+msgstr ""
+"`SyncEvolution <https://github.com/ubports/syncevolution-packaging>`_负责执行"
+"与 WebDAV/CalDAV 远程日历同步的服务"
+
+#: /home/flowertome/docs.ubports.com/systemdev/calendars.rst:13
+#: /home/flowertome/docs.ubports.com/systemdev/online-accounts.rst:30
+msgid "Debugging"
+msgstr "调试"
+
+#: /home/flowertome/docs.ubports.com/systemdev/calendars.rst:15
+msgid ""
+"The most convenient way to run commands on the device and collect logs is by "
+"opening a remote shell. This can be done by using :doc:`/userguide/"
+"advanceduse/adb` or :doc:`/userguide/advanceduse/ssh`. In the following "
+"sections, it's assumed that you've got access to a terminal console to the "
+"device."
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/calendars.rst:19
+msgid "Scheduling and account issues"
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/calendars.rst:21
+msgid ""
+"If you are not sure whether the calendar is being synchronised, or whether "
+"the operation is successful, ``sync-monitor`` is the component that needs to "
+"be examined. This service should always be running in the background, and "
+"its logs can be found in ``~/.cache/upstart/sync-monitor.log``. In order to "
+"see them printed in real-time as you operate on the device, you can run this "
+"command:"
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/calendars.rst:27
+msgid ""
+"These logs should be enough to give you an idea on whether your calendar "
+"accounts are recognised, and whether a synchronisation is scheduled, "
+"happening, and completing successfully."
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/calendars.rst:31
+msgid "Calendar data synchronisation issues"
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/calendars.rst:33
+msgid ""
+"Follow these steps one you are confident that a synchronisation of your "
+"account is at least attempted, and want to investigate a synchronisation "
+"failure or issues with missing or duplicate items. On the device, it's "
+"possible to run ``syncevolution`` in debug mode. To do so, kill any existing "
+"processes:"
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/calendars.rst:39
+msgid ""
+"Then, start the ``syncevolution`` process with the proper environment "
+"variable:"
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/calendars.rst:45
+msgid ""
+"At this point, open the Calendar App (if it was not open already) and "
+"manually trigger a synchronisation (note that the Synchronisation action is "
+"only available if your device is connected to the internet): all the logs "
+"will appear in the terminal."
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/calendars.rst:47
+msgid ""
+"In some cases, the output from ``syncevolution`` might not be enough: for "
+"example, the raw HTTP data is usually not printed. Should you need to see "
+"that as well, then you'll have to modify a configuration file as well. "
+"``syncevolution``'s configuration files are located under ``~/.config/"
+"syncevolution/``,  in a subdirectory whose name takes the form ``<provider-"
+"name>-<account-id>``.  There might be stale directories as well, referring "
+"to old accounts which have been since deleted. To find out what accounts are "
+"still valid, you can invoke the ``account-console`` tool like this:"
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/calendars.rst:53
+msgid ""
+"This will print the list of the current valid accounts. Once you've figured "
+"out what is the account you are interested in, open the file ``~/.config/"
+"syncevolution/<account>/peers/target-config/config.ini`` and set the "
+"``loglevel`` variable to a higher value (``11`` seems enough to print all "
+"the HTTP traffic):"
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/calendars.rst:65
+msgid ""
+"Note that in order for these changes to take effect, you'll need to restart "
+"the ``syncevolution`` process again, as explained above."
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/index.rst:2
+msgid "System software development"
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/index.rst:4
+msgid ""
+"This section has various documents which will teach you how to work with the "
+"packages included with Ubuntu Touch. This includes the Ubuntu UI Toolkit, "
+"Unity8, and all of the other software that makes Ubuntu Touch what it is."
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/index.rst:6
+msgid ""
+"This section does not cover most of the *applications* preinstalled on "
+"Ubuntu Touch. See :doc:`/contribute/preinstalled-apps` for more information "
+"on those."
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/index.rst:9
+msgid "System Software guides"
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/index.rst:11
+msgid ""
+"These guides will give you general instructions on building and testing your "
+"own changes to Ubuntu Touch system software. They are not not an exhaustive "
+"reference on everything you will come across during development, but they "
+"are a great starting point."
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/index.rst:15
+msgid ""
+"If you get stuck at any point while going through this documentation, please "
+"contact us for help via `the UBports Forum <https://forums.ubports.com>`_ or "
+"your preferred communication medium."
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/index.rst:25
+msgid "System Software reference"
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/index.rst:27
+msgid ""
+"This section includes reference guides on how different parts of the Ubuntu "
+"Touch system interact to create the user experience."
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/index.rst:29
+msgid ""
+"There's not much here yet, but maybe you'd like to add some reference "
+"material? Check out :doc:`our guide to contributing to documentation </"
+"contribute/documentation>` to learn more."
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/online-accounts.rst:2
+msgid "Working on the Online Accounts subsystem"
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/online-accounts.rst:4
+msgid "The Online Accounts subsystem consists of the following components:"
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/online-accounts.rst:6
+msgid ""
+"The `Accounts UI <https://github.com/ubports/ubuntu-system-settings-online-"
+"accounts>`_: this provides the user facing components and the base classes "
+"for the whole Online Accounts feature. More in detail, you will find these "
+"subdirectories:"
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/online-accounts.rst:8
+msgid ""
+"``click-hooks``: the programs run when a :ref:`Click application <click>` "
+"making use of the Online Accounts functionality is installed or removed"
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/online-accounts.rst:9
+msgid ""
+"``client``: the library that client applications can use to request access "
+"to an account"
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/online-accounts.rst:10
+msgid ""
+"``online-accounts-service``: the main service, implementing the logic to "
+"process client requests; it has no UI, but is able to attach the ``online-"
+"accounts-ui`` on top of an application's UI"
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/online-accounts.rst:11
+msgid ""
+"``online-accounts-ui``: the user interface which pops up when applications "
+"interact with online accounts (for example, the dialog that appears when an "
+"application requests access to an account)"
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/online-accounts.rst:12
+msgid ""
+"``plugins``: the base classes and QML elements that account plugins can use "
+"in their implementation"
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/online-accounts.rst:13
+msgid ""
+"``system-settings-plugin``: the user interface for the Accounts panel in the "
+"System Settings application"
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/online-accounts.rst:15
+msgid ""
+"The `Account plugins <https://github.com/ubports/account-plugins>`_ define "
+"the available account providers and implement the user interface and logic "
+"for creating the accounts"
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/online-accounts.rst:16
+msgid ""
+"A set of components from the `Accounts&SSO project <https://gitlab.com/"
+"accounts-sso>`_: while development happens in the upstream projects, the "
+"UBports forks add the Debian packaging. These projects are:"
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/online-accounts.rst:18
+msgid ""
+"`libaccounts-glib <https://github.com/ubports/libaccounts-glib>`_: account "
+"management API for C/GLib applications"
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/online-accounts.rst:19
+msgid ""
+"`libsignon-glib <https://github.com/ubports/libsignon-glib>`_: "
+"authentication API for C/GLib applications"
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/online-accounts.rst:20
+msgid ""
+"`libaccounts-qt <https://github.com/ubports/libaccounts-qt>`_: account "
+"management API for Qt applications"
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/online-accounts.rst:21
+msgid ""
+"`signond <https://github.com/ubports/signon>`_: authentication daemon, "
+"exposing a D-Bus API. It includes the ``libsignon-qt`` library, which offers "
+"an authentication API for Qt applications"
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/online-accounts.rst:22
+msgid ""
+"`signon-plugin-oauth2 <https://github.com/ubports/signon-plugin-oauth2>`_: "
+"OAuth (1.0 and 2.0) plugin for signond"
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/online-accounts.rst:23
+msgid ""
+"`accounts-qml-module <https://github.com/ubports/accounts-qml-module>`_ "
+"authentication and account management API, for QML applications (can be used "
+"when implementing account plugins, too)"
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/online-accounts.rst:25
+msgid ""
+"The `account-polld service <https://github.com/ubports/account-polld>`_, "
+"which runs in the background and checks every 5 minutes for new account "
+"activity (the interval is decided by the `Ubuntu Push service <https://"
+"github.com/ubports/ubuntu-push>`_)"
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/online-accounts.rst:26
+msgid ""
+"The `account-polld-plugins-go <https://github.com/ubports/account-polld-"
+"plugins-go>`_, a repository of plugins for the ``account-polld`` service. "
+"The plugins in this repository are written in Go, but plugins can be written "
+"in whatever language and can reside in different repositories"
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/online-accounts.rst:33
+msgid "Account creation issues"
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/online-accounts.rst:35
+msgid ""
+"It may happen that the account creation fails, either due to communication "
+"issues with the remote server, or to some bug in the account plugin itself "
+"(this can easily happen while developing a new plugin). In order to debug "
+"such situations, you can open a terminal (it's easier if done from a remote "
+"shell -- you can gain a shell on the device using :doc:`/userguide/"
+"advanceduse/adb` or :doc:`/userguide/advanceduse/ssh`) and start the "
+"``online-accounts-service`` in debug mode:"
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/online-accounts.rst:42
+msgid ""
+"If you believe that the issue might be caused by some errors in the "
+"authentication phase, you can also enabled extensive logging by ``signond`` "
+"like this:"
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/online-accounts.rst:50
+msgid ""
+"At this point, repeat the operation that was failing, and you'll get all "
+"debugging output printed on the console."
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/qtmir-qtubuntu.rst:2
+msgid "QtMir and QtUbuntu"
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/qtmir-qtubuntu.rst:4
+msgid ""
+"`QtMir`_ and `QtUbuntu`_ are `Qt Platform Abstractions`_ (QPAs) for the "
+"Ubuntu Touch platform. QtMir can be thought of as a server for Unity8 while "
+"QtUbuntu is used for client applications. Each of them allows their "
+"respective domains to use Qt's high-level abstractions of surfaces, windows, "
+"controls, and more, without worrying about the underlying operating system."
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/qtmir-qtubuntu.rst:7
+msgid "QtMir"
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/qtmir-qtubuntu.rst:9
+msgid ""
+"The `QtMir`_ QPA allows Unity8, the shell of Ubuntu Touch, to be written in "
+"QML and Qt C++ while operating on Mir Surfaces and Windows. It also allows "
+"the desktop to be represented and reasoned about as a `Qt Scene Graph`_."
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/qtmir-qtubuntu.rst:11
+msgid ""
+"You'll find most of QtMir's logging in Unity8's logs, normally stored at ``/"
+"home/phablet/.cache/upstart/unity8`` on Ubuntu Touch. Different logging "
+"categories, like ``qtmir.sessions`` and ``qtmir.surfaces``, relate directly "
+"to different modules within QtMir's codebase."
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/qtmir-qtubuntu.rst:13
+msgid ""
+"While Unity8 shows almost all QtMir logging by default, you can enable even "
+"more verbose logging by placing the following content in the file ``/usr/"
+"share/upstart/sessions/unity8.override``:"
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/qtmir-qtubuntu.rst:19
+msgid "Then restart Unity8:"
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/qtmir-qtubuntu.rst:26
+msgid "QtUbuntu"
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/qtmir-qtubuntu.rst:28
+msgid ""
+"The `QtUbuntu`_ QPA uses the `Mir client API`_ and `Ubuntu Platform API`_ to "
+"provide Ubuntu Touch apps with a stable hardware compatibility API."
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/qtmir-qtubuntu.rst:30
+msgid ""
+"Since QtUbuntu is used directly by apps, any logging output from it will be "
+"located in an app's log file. Most of the time, QtUbuntu gives no logging "
+"output. However, if you would like to receive more output, you can set the "
+"``QT_LOGGING_RULES`` environment variable appropriately. Since apps on "
+"Ubuntu Touch are started using Upstart's user session, you can set this for "
+"all apps until you restart your device with the following command:"
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/qtmir-qtubuntu.rst:36
+msgid "We plan to replace QtUbuntu with QtWayland in the future."
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/qtmir-qtubuntu.rst:39
+msgid "Components"
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/qtmir-qtubuntu.rst:41
+msgid ""
+"QtUbuntu has a number of sub-components to provide other features in the "
+"Ubuntu Touch platform. In theory, these could be used on other platforms to "
+"provide similar features. In practice, this has never happened."
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/qtmir-qtubuntu.rst:43
+msgid ""
+"`QtUbuntu-Camera`_ provides the ``aalCamera`` (Android Abstraction Layer "
+"Camera) plugin to `QtMultimedia`_. This plugin allows apps to access Android "
+"device cameras through the QtMultimedia standard API. We are trying to "
+"replace this component with the `gst-droid`_ plugin for GStreamer for all "
+"new Android device ports."
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/qtmir-qtubuntu.rst:45
+msgid ""
+"`QtUbuntu-Sensors`_ provides Android haptic feedback, GPS, orientation, and "
+"accelerometer sensors to `QtSensors`_. We are trying to replace this "
+"component with `sensorfw`_, a single daemon capable of providing these "
+"functions using Android or standard Linux kernel drivers."
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/qtmir-qtubuntu.rst:47
+msgid ""
+"`QtUbuntu-Media`_ provides hardware encoding and decoding of audio/video "
+"content on Android devices to `QtMultimedia`_. It is tightly integrated with "
+"`media-hub`_."
+msgstr ""
+
+#: /home/flowertome/docs.ubports.com/systemdev/testing-locally.rst:2
+msgid "Making changes and testing locally"
+msgstr "进行更改并在本地进行测试"
+
+#: /home/flowertome/docs.ubports.com/systemdev/testing-locally.rst:4
+msgid ""
+"On this page you'll find information on how to build Ubuntu Touch system "
+"software for your device. Most of the software preinstalled on your Ubuntu "
+"Touch device is shipped in the device image in the form of a Debian package. "
+"This format is used by several Linux distributions, such as Debian, Ubuntu, "
+"and Linux Mint. Plenty of `documentation on deb packages <https://www.debian."
+"org/doc/manuals/maint-guide/index.en.html>`__ is available, so we won't be "
+"covering it here. Besides, in most cases you'll find yourself in need of "
+"modifying existing software rather than developing new packages from "
+"scratch. For this reason, this guide is mostly about recompiling an existing "
+"Ubuntu Touch package."
+msgstr ""
+"在此页面上，您将找到有关如何为设备构建Ubuntu Touch系统软件的信息。预先安装在"
+"Ubuntu Touch设备上的大多数软件都以Debian软件包的形式在设备映像中提供。这种格"
+"式被几个Linux发行版使用，比如Debian、Ubuntu和Linux Mint。大量`有关DEB包的文"
+"档 <https://www.debian.org/doc/manuals/maint-guide/index.en.html>`__ 可用, 所"
+"以我们就不再这里介绍。此外，在大多数情况下，您会发现自己需要修改现有软件，而"
+"不是从头开始开发新软件包。 因此，本指南主要是关于重新编译现有的Ubuntu Touch软"
+"件包。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/testing-locally.rst:6
+msgid ""
+"There are essentially two ways of developing Ubuntu Touch system software "
+"locally:"
+msgstr "在本地开发 Ubuntu Touch 系统软件基本上有两种方法："
+
+#: /home/flowertome/docs.ubports.com/systemdev/testing-locally.rst:8
+msgid "`Cross-building with crossbuilder`_"
+msgstr "`通过crossbuilder交叉构建`_"
+
+#: /home/flowertome/docs.ubports.com/systemdev/testing-locally.rst:9
+msgid "`Building on the device itself`_"
+msgstr "`在设备自身上构建`_"
+
+#: /home/flowertome/docs.ubports.com/systemdev/testing-locally.rst:11
+msgid ""
+"We'll examine both methods, using `address-book-app <https://github.com/"
+"ubports/address-book-app>`__ (the Contacts application) as an example."
+msgstr ""
+"我们将以 `address-book-app <https://github.com/ubports/address-book-"
+"app>`__（\"联系人\"应用）为例来研究这两种方法。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/testing-locally.rst:13
+msgid ""
+"We only recommend developing packages using a device with Ubuntu Touch "
+"installed from the devel channel. This ensures that you are testing your "
+"changes against the most current state of the Ubuntu Touch code."
+msgstr ""
+"我们只推荐使用从devel频道安装Ubuntu Touch的设备来开发包。这可以确保你在"
+"Ubuntu Touch代码的最新状态下测试你的改变。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/testing-locally.rst:17
+msgid ""
+"Installing packages has a risk of damaging the software on your device, "
+"rendering it unusable. If this happens, you can :doc:`reinstall Ubuntu Touch "
+"</userguide/install>`."
+msgstr ""
+"安装软件包有损坏设备上的软件，使其无法使用的风险。如果发生这种情况，你可以 :"
+"doc:`重新安装 Ubuntu Touch </userguide/install>`。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/testing-locally.rst:20
+msgid "Cross-building with crossbuilder"
+msgstr "通过crossbuilder交叉构建"
+
+#: /home/flowertome/docs.ubports.com/systemdev/testing-locally.rst:22
+msgid ""
+"Crossbuilder is a script which automates the setup and use of a crossbuild "
+"environment for Debian packages. It is suitable for developers with any "
+"device since the code compilation occurs on your desktop PC rather than the "
+"target device. This makes Crossbuilder the recommended way to develop non-"
+"trivial changes to Ubuntu Touch."
+msgstr ""
+"Crossbuilder是一个自动设置和使用Debian包的交叉构建环境的脚本。它适用于任何设"
+"备的开发人员，因为代码编译发生在您的桌面PC上，而不是目标设备上。这使得"
+"Crossbuilder成为开发Ubuntu Touch非繁琐变化的推荐方式。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/testing-locally.rst:26
+msgid ""
+"Crossbuilder requires a Linux distribution with ``lxd`` installed and the "
+"unprivileged commandset available. In other words, you must be able to run "
+"the ``lxc`` command. If you are running Ubuntu on your host, Crossbuilder "
+"will set up ``lxd`` for you."
+msgstr ""
+"Crossbuilder需要一个安装了``lxd``且无特权命令集可用的Linux发行版。换句话说，"
+"您必须能够运行\"lxc\"命令。如果您在主机上运行 Ubuntu，交叉构建器将为您设置"
+"\"lxd\"。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/testing-locally.rst:28
+msgid "Start by installing Crossbuilder on your host::"
+msgstr "首先在主机上安装Crossbuilder::"
+
+#: /home/flowertome/docs.ubports.com/systemdev/testing-locally.rst:33
+msgid ""
+"Crossbuilder is a shell script, so you don't need to build it. Instead, you "
+"will need to add its directory to your ``PATH`` environment variable, so "
+"that you can execute it from any directory::"
+msgstr ""
+"Crossbuilder是一个Shell脚本，因此您不需要构建它。相反，您需要将其目录添加到"
+"``PATH`` 环境变量中，以便可以从任何目录执行它::"
+
+#: /home/flowertome/docs.ubports.com/systemdev/testing-locally.rst:39
+msgid "Now that Crossbuilder is installed, we can use it to set up LXD::"
+msgstr "现在，Crossbuilder已安装，我们可以使用它来设置 LXD::"
+
+#: /home/flowertome/docs.ubports.com/systemdev/testing-locally.rst:43
+msgid ""
+"If this is the first time you have used LXD, you might need to reboot your "
+"host once everything has completed."
+msgstr "如果这是您第一次使用 LXD，则可能需要在一切完成后重新启动主机。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/testing-locally.rst:45
+msgid ""
+"After LXD has been set up, move to the directory where the source code of "
+"your project is located (for example, ``cd ~/src/git/address-book-app``) and "
+"launch Crossbuilder::"
+msgstr ""
+"设置 LXD 后，移动到项目源代码所在的目录（例如， ``cd ~/src/git/address-book-"
+"app``）并启动Crossbuilder::"
+
+#: /home/flowertome/docs.ubports.com/systemdev/testing-locally.rst:49
+msgid ""
+"Crossbuilder will create the LXD container, download the development image, "
+"install all your package build dependencies, and perform the package build. "
+"It will also copy the packages over to your target device and install them "
+"if it is connected (see :doc:`/userguide/advanceduse/adb` to learn more "
+"about connecting your device). The first two steps (creating the LXD image "
+"and getting the dependencies) can take a few minutes, but will be executed "
+"only the first time you launch crossbuilder for a new package."
+msgstr ""
+"Crossbuilder将创建 LXD 容器、下载开发映像、安装所有包生成依赖项以及执行包生"
+"成。它还将软件包复制到目标设备，并在连接后安装它们（请参阅 :doc:`/userguide/"
+"advanceduse/adb` 以了解有关连接设备的更多内容）。前两个步骤（创建 LXD 映像和"
+"获取依赖项）可能需要几分钟时间，但仅在首次为新包启动crossbuilder时执行。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/testing-locally.rst:51
+msgid ""
+"Now, whenever you change the source code in your git repository, the same "
+"changes will be available inside the container. The next time you type the "
+"``crossbuilder`` command, only the changed files will be rebuilt."
+msgstr ""
+"现在，每当您更改git存储库中的源代码时，容器内也会提供相同的更改。下次键入"
+"\"crossbuilder\"命令时，将仅重新生成已更改的文件。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/testing-locally.rst:54
+msgid "Unit tests"
+msgstr "单元测试"
+
+#: /home/flowertome/docs.ubports.com/systemdev/testing-locally.rst:56
+msgid ""
+"By default crossbuilder does not run unit tests; that's both for speed "
+"reasons, and because the container created by crossbuilder is not meant to "
+"run native (target) executables: the development tools (qmake/cmake, make, "
+"gcc, etc.) are all run in the host architecture, with no emulation (again, "
+"for speed reasons). However, qemu emulation is available inside the "
+"container, so it should be possible to run unit tests. You can do that by "
+"getting a shell inside the container::"
+msgstr ""
+"默认情况下，crossbuilder不运行单元测试; 这既是出于速度方面的原因，也是因为"
+"crossbuilder创建的容器并不意味着运行本机(目标)可执行程序:开发工具(qmake/"
+"cmake、make、gcc等)都在主机架构中运行，没有仿真(同样是出于速度方面的原因)。但"
+"是，qemu模拟在容器中可用，因此应该可以运行单元测试。你可以通过在容器中放入一"
+"个shell来实现::"
+
+#: /home/flowertome/docs.ubports.com/systemdev/testing-locally.rst:60
+msgid ""
+"Then find the unit tests and execute them. Be aware that the emulation is "
+"not perfect, so there's a very good chance that the tests will fail even "
+"when they'd otherwise succeed when run in a proper environment. For that "
+"reason, it's probably wiser not to worry about unit tests when working with "
+"crossbuilder, and run them only when not cross-compiling."
+msgstr ""
+"然后查找单元测试并执行它们。请注意，仿真并不完美，因此，即使测试在适当的环境"
+"中运行时成功，测试也很有可能失败。因此，在使用交叉构建器时，最好不必担心单元"
+"测试，并且仅在不交叉编译时才运行单元测试。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/testing-locally.rst:63
+msgid "Building on the device itself"
+msgstr "在设备本身上构建"
+
+#: /home/flowertome/docs.ubports.com/systemdev/testing-locally.rst:65
+msgid ""
+"This is the fastest and simplest method to develop small changes and test "
+"them in nearly real-time. Depending on your device resources, however, it "
+"might not be possible to follow this path: if you don't have enough free "
+"space in your root filesystem you won't be able to install all the package "
+"build dependencies; you may also run out of RAM while compiling."
+msgstr ""
+"这是开发小更改并近乎实时地测试它们最快、最简单的方法。但是，根据您的设备资"
+"源，可能无法遵循此路径：如果根文件系统中没有足够的可用空间，将无法安装所有包"
+"生成依赖项;如果根文件系统中没有足够的可用空间，则无法安装所有包生成依赖项。编"
+"译时，RAM也可能耗尽。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/testing-locally.rst:69
+msgid ""
+"This method is limited. Many devices do not have enough free image space to "
+"install the packages required to build components of Ubuntu Touch."
+msgstr ""
+"此方法是有限的。许多设备没有足够的可用映像空间来安装构建 Ubuntu Touch 组件所"
+"需的软件包。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/testing-locally.rst:71
+msgid ""
+"In this example, we'll build and install the address-book-app. All commands "
+"shown here must be run on your Ubuntu Touch device over a remote shell."
+msgstr ""
+"在此示例中，我们将生成并安装通讯簿应用。此处显示的所有命令都必须在 Ubuntu "
+"Touch 设备上通过远程Shell运行。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/testing-locally.rst:73
+msgid ""
+"You can gain a shell on the device using :doc:`/userguide/advanceduse/adb` "
+"or :doc:`/userguide/advanceduse/ssh`. Remount the root filesystem read-write "
+"to begin::"
+msgstr ""
+"您可以使用 :doc:`/userguide/advanceduse/adb` 或 :doc:`/userguide/advanceduse/"
+"ssh`在设备上获取Shell。重新挂载根文件系统读写以开始："
+
+#: /home/flowertome/docs.ubports.com/systemdev/testing-locally.rst:77
+msgid ""
+"Next, install all the packages needed to rebuild the component you want to "
+"modify (the Contacts app, in this example)::"
+msgstr ""
+"接下来，安装重建要修改的组件所需的所有包（在此示例中为\"联系人\"应用）::"
+
+#: /home/flowertome/docs.ubports.com/systemdev/testing-locally.rst:83
+msgid ""
+"Additionally, you probably want to install ``git`` in order to get your "
+"app's source code on the device and later push your changes back into the "
+"repository::"
+msgstr ""
+"此外，您可能想要安装``git``，以便在设备上获取应用的源代码，然后将更改推送回存"
+"储库::"
+
+#: /home/flowertome/docs.ubports.com/systemdev/testing-locally.rst:87
+msgid ""
+"Once you're finished, you can retrieve the source for an app (in our "
+"example, the address book) and move into its directory::"
+msgstr ""
+"完成后，您可以检索应用的源（在我们的示例中，通讯簿），并移动到其目录中::"
+
+#: /home/flowertome/docs.ubports.com/systemdev/testing-locally.rst:92
+msgid "Now, you are ready to build the package::"
+msgstr "现在，您可以构建包了::"
+
+#: /home/flowertome/docs.ubports.com/systemdev/testing-locally.rst:96
+msgid ""
+"The ``dpkg-buildpackage`` command will print out the names of generated "
+"packages. Install those packages with ``dpkg``::"
+msgstr ""
+"``dpkg-buildpackage``命令将打印出生成的软件包的名称。 使用 ``dpkg``安装这些软"
+"件包::"
+
+#: /home/flowertome/docs.ubports.com/systemdev/testing-locally.rst:100
+msgid ""
+"Note, however, that you might not need to install all the packages: "
+"generally, you can skip all packages whose names end with ``-doc`` or "
+"``dev``, since they don't contain code used by the device."
+msgstr ""
+"但是请注意，您可能不需要安装所有包：通常，您可以跳过名称以``-doc`` 或 "
+"``dev``,结尾的所有包，因为它们不包含设备使用的代码。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/testing-locally.rst:103
+msgid "Next steps"
+msgstr "下一步"
+
+#: /home/flowertome/docs.ubports.com/systemdev/testing-locally.rst:105
+msgid ""
+"Now that you've successfully made changes and tested them locally, you're "
+"ready to upload them to GitHub. Move on to the next page to learn about "
+"using the UBports CI to build and provide development packages!"
+msgstr ""
+"现在，您已经成功地进行了更改并在本地进行了测试，现在可以将它们上传到 GitHub。"
+"进入下一页以了解如何使用 UBports CI 来构建和提供开发包！"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:2
+msgid "Uploading and testing with ``ubports-qa``"
+msgstr "使用``ubports-qa``上传和测试"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:4
+msgid ""
+"The `UBports build service <https://ci.ubports.com>`_ is capable of building "
+"Ubuntu Touch packages and deploying them to the `UBports repository <https://"
+"repo.ubports.com>`_. This capability is offered to any developer who wishes "
+"to take advantage of it."
+msgstr ""
+"`UBports build service <https://ci.ubports.com>`能够构建Ubuntu Touch软件包并"
+"将其部署到`UBports repository <https://repo.ubports.com>`_。 此功能提供给希望"
+"用到它的任何开发人员。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:6
+msgid ""
+"This guide assumes that you have a cursory understanding of using Git and "
+"making Pull Requests on GitHub."
+msgstr "本指南假定您粗略地了解了在 Git 上使用 Git 和发出拉取请求。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:8
+msgid ""
+"To use the `UBports build service`_, make sure you understand our :doc:"
+"`branch naming convention </about/process/branch-naming>`. It is required "
+"that you follow the convention for deb-packages for CI to build your package "
+"correctly."
+msgstr ""
+"要使用 `UBports build service`_，请确保您了解我们的 :doc:`分支命名约定 </"
+"about/process/branch-naming>`。您需要遵循 CI 的 deb 包约定才能正确生成包。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:11
+msgid "Fork the repository"
+msgstr "Fork存储库"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:13
+msgid ""
+"The first step to make a change to any repository you don't have write "
+"access to is to fork it. Open your desired repository on GitHub and click "
+"the \"Fork\" button in the upper right corner. If offered, select an "
+"appropriate account to fork the repository to. Then, clone your fork to your "
+"computer."
+msgstr ""
+"对没有写入访问权限的任何存储库进行更改的第一步是Fork。在 GitHub 上打开所需的"
+"存储库，然后单击右上角的\"Fork\"按钮。如果已提供，请选择一个适当的帐户以Fork"
+"存储库。然后，将Fork克隆到您的计算机。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:15
+msgid "Now you're ready to make changes!"
+msgstr "现在您已经准备好进行更改了!"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:18
+msgid "Make and commit changes"
+msgstr "制作并提交更改"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:20
+msgid ""
+"Now that you have the package source downloaded, you can make your desired "
+"changes."
+msgstr "现在您已经下载了软件包源，可以进行所需的更改。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:22
+msgid ""
+"Before changing anything, make sure you have checked out the branch you want "
+"to work from (probably ``xenial``, assuming you are making changes for the "
+"phone images). Then, create a new branch abiding by the :doc:`branch naming "
+"convention </about/process/branch-naming>`."
+msgstr ""
+"在做任何更改之前，确保你已经检出你想要进行工作的分支(可能是 ``xenial``，假设"
+"你正在对手机镜像做改变)。然后，创建一个遵循 :doc:`分支命名约定 </about/"
+"process/branch-naming>`的新分支。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:24
+msgid ""
+"After making your changes, commit them with a descriptive commit message "
+"stating what is wrong and why your changes fix that problem."
+msgstr ""
+"在做出您的更改之后，请用一个描述性的提交消息提交它们，说明哪里出错了，以及更"
+"改修复问题的原因。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:26
+msgid ""
+"You have successfully created and committed your changes. Before pushing "
+"your changes, we'll want to make sure your device will install them."
+msgstr ""
+"您已成功创建并提交更改。在推送您的更改之前，我们需要确保您的设备将安装它们。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:29
+msgid "Update the ``debian/changelog`` file"
+msgstr "更新``debian/changelog``文件"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:31
+msgid ""
+"Generally, ``apt`` will not install a new package from any repository if it "
+"has a lower (or the same) version number as the package it replaces. Users "
+"may also want to see the changes that are included in a new version of a "
+"package. For that reason, we will need to update the package changelog to "
+"add a new version."
+msgstr ""
+"通常，如果``apt`` 所替换的版本号较低（或相同），则apt不会从任何存储库安装新软"
+"件包。 用户可能还希望查看软件包新版本中包含的更改。 因此，我们将需要更新软件"
+"包变更日志以添加新版本。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:35
+msgid ""
+"This is not an exhaustive reference of the ``debian/changelog`` format. See "
+"`deb-changelog(5) <https://manpages.debian.org/testing/dpkg-dev/deb-"
+"changelog.5.en.html>`_ for more information."
+msgstr ""
+"这不是对 ``debian/changelog``格式的详尽引用。请参阅 `deb-changelog(5) "
+"<https://manpages.debian.org/testing/dpkg-dev/deb-changelog.5.en.html>`_获取"
+"更多详细信息。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:38
+msgid "Determine a new version number"
+msgstr "确定新版本号"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:40
+msgid ""
+"To start, figure out what the current version numbering for the package is::"
+msgstr "首先，请确定该软件包的当前版本号是首先，请确定该软件包的当前版本号是::"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:44
+msgid ""
+"This will return a few lines, but the first is the most important to us::"
+msgstr "这将返回几行，但第一行对我们来说最重要::"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:48
+msgid ""
+"The part inside the parentheses ``(0.24+ubports2)`` is our version number. "
+"It consists of several parts:"
+msgstr "括号内的部分 ``(0.24_ubports2 ）``是我们的版本号。它由几个部分组成："
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:50
+msgid ""
+"The ``0.24`` is the *upstream version number*, the version that the original "
+"project maintainers give to the release we are using. For most UBports "
+"projects, the repository you'll be working on is the original project code. "
+"This makes UBports the \"upstream\" of that project."
+msgstr ""
+"``0.24``是*上游版本号*，即原始项目维护人员提供给我们正在使用的发行版的版本。 "
+"对于大多数UBports项目，您要使用的存储库是原始项目代码。 这使UBports成为该项目"
+"的\"上游\"。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:52
+msgid ""
+"If you are making large changes to the repository and UBports is the "
+"upstream, you should increment the first part of the version number before "
+"the plus (+) and reset the distribution suffix. In our example above, you "
+"would make this new version number::"
+msgstr ""
+"如果您对存储库进行了较大的更改，并且UBports是上游版本，那么您应该在加号(+)之"
+"前增加版本号的第一部分，并重置分发后缀。在我们上面的例子中，您可以创建这个新"
+"版本号::"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:56
+msgid ""
+"If you are making changes only to the package build (files in the ``debian/"
+"`` folder), it is best to only increment the version suffix::"
+msgstr ""
+"如果只对软件包的内部版本（\" debian/\"文件夹中的文件）进行更改，则最好仅增加"
+"版本后缀::"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:62
+msgid ""
+"If you find a package which does not seem to follow the above versioning "
+"format, please contact us to ask how to proceed."
+msgstr ""
+"如果您发现一个包似乎没有遵循上述版本控制格式，请联系我们，询问如何继续。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:65
+msgid "Write the changelog entry"
+msgstr "编写变更日志条目"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:67
+msgid ""
+"Now it is time to write your changelog entry! Start with the following "
+"template::"
+msgstr "现在是时候编写您的changelog条目了！从以下模板开始："
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:75
+msgid ""
+"If you open the ``debian/changelog`` file, you'll find that every entry "
+"follows this format. This helps everyone (including computers) read and "
+"understand the contents. This is used, for example, to name the output "
+"package correctly for every package version."
+msgstr ""
+"如果您打开了 ``debian/changelog`` 文件，您会发现每个相应的条目都都遵循了这种"
+"格式。这有助于每个人（包括计算机）阅读和理解内容。例如，它为每个包版本正确地"
+"命名输出包。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:77
+msgid ""
+"Let's assume I, John Doe, am making a packaging change to the ``morph-"
+"browser`` package for Ubuntu Touch. I'll replace the different all-caps "
+"placeholders above in the following way:"
+msgstr ""
+"假设我'John Doe'对Ubuntu Touch的``morph-browser``软件包进行了包更改。 我将通"
+"过以下方式替换上面不同的全大写占位符："
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:79
+msgid "PACKAGE-NAME is replaced with ``morph-browser``"
+msgstr "PACKAGE-NAME将被``morph-browser``取代"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:80
+msgid "VERSION is replaced with ``0.24+ubports3`` (which we determined above)"
+msgstr "版本将被\"0.24+ubports3\"取代(我们在上面确定的)"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:81
+msgid "DISTRIBUTION is replaced with ``xenial``"
+msgstr "DISTRIBUTION被 ``xenial``取代"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:82
+msgid ""
+"CHANGES is replaced with the changes I made in this release. This will "
+"include summarized information from my commit messages along with the bugs "
+"fixed by those changes. If I've fixed multiple bugs, I'll create multiple "
+"bullet points."
+msgstr ""
+"CHANGES将被我在此次发布中所做的更改取代。这将包括来自提交消息的汇总信息以及这"
+"些更改修复的 Bug。如果我修复了多个 Bug，我将创建多个项目符号点。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:83
+msgid "NAME is replaced with my name, ``John Doe``"
+msgstr "NAME将被我的名字取代，``John Doe``"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:84
+msgid "EMAIL is replaced with my e-mail, ``john.doe@example.com``."
+msgstr "EMAIL将被我的e-mail取代，``john.doe@example.com ``。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:88
+msgid ""
+"You should not use a \"noreply\" e-mail as your EMAIL for package changelog "
+"entries."
+msgstr "您不应该使用\"noreply\"电子邮件作为您的包更改日志条目的电子邮件地址。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:90
+msgid ""
+"DATETIME is replaced with the date and time I made this changelog entry in "
+"RFC2822/RFC5322 format. The easiest way to retrieve this is by running the "
+"command ``date -R`` in a terminal."
+msgstr ""
+"DATETIME被替换为RFC2822/RFC5322格式的日期和时间。检索它的最简单方法是在终端中"
+"运行``date -R ``命令。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:92
+msgid ""
+"Note that no line in your changelog entry should exceed 80 characters in "
+"length."
+msgstr "请注意，在您的更改日志条目中的任何一行的长度都不应该超过80个字符。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:94
+msgid "With that, my new changelog entry follows::"
+msgstr "这样，我的新的变更日志条目如下:"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:104
+msgid ""
+"Add your new changelog entry to the top of the ``debian/changelog`` file and "
+"commit it with the message \"Update changelog\". Push your changes. Now "
+"you're ready to make your Pull Request!"
+msgstr ""
+"将您的新更改日志条目添加到``debian / changelog``文件的顶部，并通过\"Update "
+"changelog\"提交它。 推送您的更改。 现在，您可以发出Pull Request了！"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:107
+msgid "Create your pull request"
+msgstr "创建您的pull request"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:109
+msgid ""
+"A pull request asks UBports maintainers to review your code changes and add "
+"them to the official repository. We'll create one now."
+msgstr ""
+"一个pull request要求UBports维护者检查您的代码更改并将它们添加到官方存储库中。"
+"我们现在创建一个。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:111
+msgid ""
+"Open your fork of the repository on GitHub. Navigate to the branch that you "
+"just pushed to using the \"Branch\" selector:"
+msgstr ""
+"在GitHub上打开您fork的存储库。 使用\"Branch\"选择器导航到您刚刚推送到的分支："
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:117
+msgid ""
+"Once you've opened your desired branch, click the \"New pull request\" "
+"button to start your pull request. You'll be taken to a page where you can "
+"review your changes and create a pull request."
+msgstr ""
+"一旦你打开了你想要的分支，点击\"New pull request\"按钮来开始你的pull "
+"request。您将被带到一个页面，在那里您可以审查您的更改并创建一个pull request。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:119
+msgid ""
+"Give your pull request a descriptive title and description (include links to "
+"reference bugs or other material). Ensure that the \"base\" branch is the "
+"one you want your changes to be applied to (likely ``xenial``), then click "
+"\"Create pull request\"."
+msgstr ""
+"给您的pull request提供描述性的标题和描述（包括参考错误或其他材料的链接）。 确"
+"保\"base\"分支是您要应用更改的分支（可能是\"xenial\"），然后单击\"创建pull "
+"request\"。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:121
+msgid ""
+"With your pull request created, we can move on to testing your changes using "
+"the UBports build service!"
+msgstr ""
+"创建了您的pull request请求后，我们可以继续使用UBports构建服务测试您的更改!"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:124
+msgid "Test your changes"
+msgstr "测试您的更改"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:126
+msgid ""
+"Once your pull request is built (a green check mark appears next to your "
+"last commit), you are ready to test your changes on your device."
+msgstr ""
+"一旦您的pull request被构建（在最后一次提交旁边出现一个绿色的复选标记)，您就可"
+"以在您的设备上测试您的更改了。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:130
+msgid ""
+"If a red \"X\" appears next to your last commit, your pull request has "
+"failed to build. Click the red \"X\" to view the build log. Until your build "
+"errors are resolved, your pull request cannot be installed or accepted."
+msgstr ""
+"如果最后一次提交旁边出现红色的\"x\"，则说明您的pull request构建失败。 单击红"
+"色的\"x\"以查看构建日志。 在解决您的构建错误之前，您的拉取请求将无法安装或接"
+"受。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:132
+msgid ""
+"We'll use ``ubports-qa`` to install your changes. Take note of your pull "
+"request's ID (noted as ``#number`` after the title of the pull request) and "
+"follow these steps to install your changes:"
+msgstr ""
+"我们将使用``ubports-qa ``来安装您的更改。请注意您的pull request的ID(在pull "
+"request的标题后面注明`` #number ``)，并按照以下步骤安装您的更改:"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:134
+msgid ""
+"Ensure your device is running the newest version of Ubuntu Touch from the "
+"``devel`` channel."
+msgstr "确保您的设备正在从``开发``频道运行最新版本的Ubuntu Touch。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:135
+msgid ""
+"Get shell access to your device using :doc:`/userguide/advanceduse/adb` or :"
+"doc:`/userguide/advanceduse/ssh`."
+msgstr ""
+"使用 :doc:`/userguide/advanceduse/adb` 或 :doc:`/userguide/advanceduse/ssh` "
+"以获取到您设备的shell权限。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:136
+msgid ""
+"Run ``sudo ubports-qa install REPOSITORY PR``, replacing ``REPOSITORY`` with "
+"the name of the repository you have submitted a PR to (``morph-browser`` for "
+"example) and PR with the number of your pull request (without the ``#``)."
+msgstr ""
+"运行``sudo ubports-qa install REPOSITORY PR``，将``REPOSITORY``替换为您向PR提"
+"交的存储库的名称（例如``morph-browser``），并将PR替换为您的pull request（没有"
+"``＃``）。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:138
+msgid ""
+"``ubports-qa`` will automatically add the repository containing your changed "
+"software and start the installation for you. All you will need to do is "
+"check the packages it asks you to install and say \"yes\" if they are "
+"correct."
+msgstr ""
+"``ubports-qa``将自动添加包含您已更改的软件的存储库并为您开始安装。 您需要做的"
+"就是检查它要求您安装的软件包，如果正确，请说\"是\"。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:140
+msgid ""
+"If ``ubports-qa`` fails to install your packages, run it again with the ``-"
+"v`` flag (for example, ``ubports-qa -v install ...``). If it still fails, "
+"submit the entire log (starting from the ``$`` before the ``ubports-qa`` "
+"command) to `Ubuntu Pastebin <https://paste.ubuntu.com/>`_ and contact us "
+"for help."
+msgstr ""
+"如果``ubports-qa``无法安装软件包，请使用``-v``标志再次运行它（例如``ubports-"
+"qa -v install ...``）。 如果仍然失败，请将整个日志（从``ubports-qa``命令前的"
+"`` $``开始）提交给`Ubuntu Pastebin <https://paste.ubuntu.com/>`_并与我们联系"
+"以获取帮助。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:142
+msgid ""
+"Once ``ubports-qa`` is finished, test your changes to ensure they have fixed "
+"the original bug. Add the ``ubports-qa`` command to your pull request, then "
+"send the link to the pull request to other developers and testers so they "
+"may also test your changes."
+msgstr ""
+"一旦``ubports-qa''完成，请测试您的更改以确保已修复原始错误。 在您的pull "
+"request中添加``ubports-qa``命令，然后将pull request的链接发送给其他开发人员和"
+"测试人员，以便他们也可以测试您的更改。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:144
+msgid ""
+"When getting feedback from your testers, be sure to add the information to "
+"the pull request (or ask them to do it for you) so that everyone is updated "
+"on the status of your code."
+msgstr ""
+"当从您的测试人员那里获得反馈时，请确保将信息添加到pull request 中（或请求他们"
+"为您完成），以便每个人都可以了解您的代码状态。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:146
+msgid ""
+"Every time you make a change and push it to GitHub, it will trigger a new "
+"build. You can run ``sudo ubports-qa update`` to get the freshest changes "
+"every time this happens."
+msgstr ""
+"每次您进行更改并将其上传到GitHub时，都会触发一个新的构建。每次发生这种情况时"
+"您可以运行``sudo ubports-qa update``来获得最新的变化。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:149
+msgid "Celebrate!"
+msgstr "庆祝！"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:151
+msgid ""
+"If you and your testers are satisfied with the results of your pull request, "
+"it will be merged. Following the merge, the UBports build service will build "
+"your code and deploy it to Ubuntu Touch users worldwide."
+msgstr ""
+"如果您和测试人员对您的pull request结果感到满意，它将被合并。 合并之后，"
+"UBports构建服务将构建您的代码并将其部署到全球的Ubuntu Touch用户。"
+
+#: /home/flowertome/docs.ubports.com/systemdev/uploading-changes.rst:153
+msgid "Thank you for your contribution to Ubuntu Touch!"
+msgstr "感谢您对Ubuntu Touch的贡献！"

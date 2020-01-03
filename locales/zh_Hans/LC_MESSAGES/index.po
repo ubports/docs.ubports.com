@@ -7,16 +7,16 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2019-04-24 20:42+0000\n"
-"Last-Translator: 不朽正义 <tanyongle0633@gmail.com>\n"
+"PO-Revision-Date: 2020-01-01 12:30+0800\n"
+"Last-Translator: 弱弱的胖橘猫丷 <gesangtome@foxmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-index/zh_Hans/>\n"
-"Language: zh_Hans\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.2.2\n"
+"X-Generator: Poedit 2.2.4\n"
 
 #: ../../index.rst:2
 msgid "Welcome to the UBports documentation!"
@@ -31,17 +31,24 @@ msgid ""
 "UBports develops the mobile phone operating system Ubuntu Touch. Ubuntu "
 "Touch is a mobile operating system focused on ease of use, privacy, and "
 "convergence."
-msgstr "UBports 开发了 Ubuntu Touch 手机操作系统。Ubuntu Touch 是一款专注于易用性，隐私性和融合性的移动操作系统。"
+msgstr ""
+"UBports 开发了 Ubuntu Touch 手机操作系统。Ubuntu Touch 是一款专注于易用性，隐"
+"私性和融合性的移动操作系统。"
 
 #: ../../index.rst:8
 msgid ""
-"On this website you find instructions how to install Ubuntu Touch on your "
-"mobile phone, user guides and detailed documentation on all system "
-"components. If this is your first time here, please consider reading our :"
-"doc:`introduction <about/introduction>`."
+"On this website you find guides to :doc:`install Ubuntu Touch on your mobile "
+"phone <userguide/install>`, :doc:`use Ubuntu Touch <userguide/dailyuse/"
+"index>`, :doc:`develop Ubuntu Touch apps <appdev/index>`, :doc:`port Ubuntu "
+"Touch to an Android handset <porting/introduction>` and :doc:`learn more "
+"about system components <systemdev/index>`. If this is your first time here, "
+"please consider reading our :doc:`introduction <about/introduction>`."
 msgstr ""
-"在本站中，您可以找到如何在手机上安装 Ubuntu Touch 的说明、用户指南和所有系统"
-"组件的详细文档。如果您是第一次来这里，请考虑阅读我们的:doc:`介绍 <about/"
+"在这个网站上，您可以找到有关 :doc:`在您的手机上安装Ubuntu Touch <userguide/"
+"install>`, :doc:`使用Ubuntu Touch <userguide/dailyuse/index>`, :doc:`开发"
+"Ubuntu Touch应用 <appdev/index>`, :doc:`将Ubuntu Touch移植到 Android 手机 "
+"<porting/introduction>` 和 :doc:`了解关于系统组件的更多信息 <systemdev/"
+"index>`的文档. 如果这是您第一次来这里，请考虑阅读我们的 :doc:`介绍 <about/"
 "introduction>`."
 
 #: ../../index.rst:10
@@ -58,7 +65,7 @@ msgstr "您可以使用以下语言查看此文档："
 
 #: ../../index.rst:14
 msgid "`English <https://docs.ubports.com/en/latest/>`_"
-msgstr "`English <https://docs.ubports.com/en/latest/>`_"
+msgstr "`英语 (English) <https://docs.ubports.com/en/latest/>`_"
 
 #: ../../index.rst:15
 msgid "`Català <https://docs.ubports.com/ca/latest/>`_"
@@ -87,6 +94,10 @@ msgstr "`土耳其语（Türkçe） <https://docs.ubports.com/tr/latest/>`_"
 #: ../../index.rst:21
 msgid "`Español <https://docs.ubports.com/es/latest/>`_"
 msgstr "`西班牙语（Español） <https://docs.ubports.com/es/latest/>`_"
+
+#: ../../index.rst:22
+msgid "`Simplified Chinese <https://docs.ubports.com/zh_cn/latest/>`_"
+msgstr "`简体中文（Simplified Chinese) <https://docs.ubports.com/zh_cn/latest/>`_"
 
 #: ../../index.rst:23
 msgid "About"
