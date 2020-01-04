@@ -10,9 +10,13 @@ This section will introduce you to some of the specifics of porting Ubuntu Touch
 
 This process does not build Ubuntu Touch! A Halium image is installed along with a prebuilt Ubuntu Touch filesystem to create a running Ubuntu Touch system. If you already have an Ubuntu Touch device and would like to modify the software on it, you will be better served by :doc:`../systemdev/index`. If you would like to modify the Android compatibility image for the Nexus 5, Oneplus One, or Fairphone 2, :doc:`ubp-5.1` is appropriate for you.
 
-Before you begin, you'll want to head over to `the Halium porting guide <http://docs.halium.org/en/latest/porting/first-steps.html>`_ and get your ``systemimage`` built without errors. Once you're at the point of installing a rootfs, you can come back here.
+Before you begin, you'll want to head over to `the Halium porting guide <http://docs.halium.org/en/latest/porting/first-steps.html>`_ and get your ``halium-boot`` and ``systemimage`` built without errors. Once you're at this point, you can come back here.
 
-Start at :doc:`building-halium-boot` if you'd like to install the UBports Ubuntu Touch 16.04 rootfs.
+.. Note::
+    Excuse our dust! Halium´s documentation guides you all the way through from the initial build environment setup to installing a reference system. This includes using ``hybris-boot`` instead of ``halium-boot``. Also, Halium uses different kernel configuration parameters that are not compatible with what Ubuntu Touch needs at the moment. We try to reduce the differences, but this is currently still not perfect.
+    When following the Halium documentation, you might want to return to :doc:`building-halium-boot` from time to time to see the differences. Specifically, use ``check-kernel-config`` to fix the kernel config and do not build the ``hybris-boot`` target but instead use only ``halium-boot``.
+
+Continue at :doc:`building-halium-boot` to learn about how to configure filesystems and the kernel and how to install the rootfs.
 
 .. toctree::
     :maxdepth: 1
@@ -21,7 +25,7 @@ Start at :doc:`building-halium-boot` if you'd like to install the UBports Ubuntu
     building-halium-boot
     installing-16-04
     running-ut
-
+    finish-port
 
 .. _porting-help:
 

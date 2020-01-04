@@ -3,6 +3,9 @@ Running Ubuntu Touch
 
 Now that you're logged in, there are a few more steps before Ubuntu Touch will be fully functional on your device.
 
+.. Note::
+    Those steps are preliminary to help you test the port and get an idea of what needs to be done. You will need to revert all direct changes to the root file system and instead follow :doc:`finish-port` to reach a state where your device can be updated by OTAs without loosing all customizations. Thats mandatory in case you want to get to a community channel with it, along with providing a working UBports recovery.
+
 Make / writable
 ----------------
 
