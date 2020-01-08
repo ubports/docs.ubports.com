@@ -15,9 +15,12 @@ Different ways of sharing the content
 
 As we can see in the `Content Hub documentation <https://api-docs.ubports.com/sdk/apps/qml/Ubuntu.Content/ContentHandler.html#detailed-description>`_, there are several ways of handling the file to be shared:
 
-- ``ContentHandler.Source`` (The app selected is going to be the source of the file imported)
-- ``ContentHandler.Destination`` (The app selected is going to be the destination of the file exported)
-- ``ContentHandler.Share`` (The app selected is going to be the app from witch the file is going to be shared from)
+- ``ContentHandler.Source`` (The selected app will provide a file to be imported)
+- ``ContentHandler.Destination`` (The selected app will be the destination for the exported file)
+- ``ContentHandler.Share`` (The selected app will be the destination for the exported file, which will then be shared externally)
+
+.. figure:: /_static/images/appdev/guides/contenthubimages/12.svg
+        :align: center
 
 Importing
 ^^^^^^^^^
@@ -80,7 +83,7 @@ Tapping on the File Manager we will save the saved game in the folder we choose.
 Sharing
 ^^^^^^^
 
-Similarly, tapping on the share icon will allow us to send the saved game through Telegram to ourselves (`see the Webapp Creator Import Page source code <https://gitlab.com/cibersheep/webapp-creator/blob/master/webapp-creator/app/ImportPage.qml#L38>`_).
+Similarly, tapping on the share icon will allow us to send the saved game through Telegram to ourselves (`see the Webapp Creator Import Page source code <https://gitlab.com/cibersheep/webapp-creator/blob/master/webapp-creator/app/ImportPage.qml#L38>`_). Sharing is similar to exporting, except the destination app may share the content externally (for example, over Telegram or text message).
 
 .. code:: qml
 
@@ -93,7 +96,7 @@ Similarly, tapping on the share icon will allow us to send the saved game throug
 
             onPeerSelected: {
 
-The only difference between this and the previous code is that ``handler`` is ``ContentHandler.Share``
+The only difference between this and the previous code is that ``handler`` is ``ContentHandler.Share``.
 
 Wait a minute. Why the different apps?
 --------------------------------------
