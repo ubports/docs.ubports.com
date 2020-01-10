@@ -31,7 +31,7 @@ You can add extra options such as:
 The creating process can take some time, due to the size of the container (some hundred of megabytes).
 
 .. note::
-    The ``create`` command shown above cannot be run directly in the terminal app, due apparmor restrictions. You can run it from another device using either ``adb`` or ``ssh`` connection. Alternatively, you can run it from the terminal app using a loopback ssh connection running this command: ``ssh localhost``.
+    The ``create`` command shown above cannot be run directly in the terminal app, due to apparmor restrictions. You can run it from another device using either ``adb`` or ``ssh`` connection. Alternatively, you can run it from the terminal app using a loopback ssh connection running this command: ``ssh localhost``.
 
 List containers
 ^^^^^^^^^^^^^^^
@@ -58,6 +58,7 @@ You can also list them via command line::
   libertine-container-manager list-apps
 
 Install a package
+^^^^^^^^^^^^^^^^^
 
 From the apps list in the *Manage Libertine Containers* menu tap the + sign to get a dialog box to add a package.
 
@@ -67,7 +68,12 @@ Packages may also be installed via command line::
 
   libertine-container-manager install-package -p PACKAGE-NAME
 
-Remove a package::
+Remove a package
+^^^^^^^^^^^^^^^^
+
+On the package list, within the container (*System Settings* > *Libertine* > *Manage Libertine Containers* > *CONTAINER NAME*), swipe right on the package you want to remove to reveal the option to remove the package.
+
+Or you can remove the package via the command line::
 
   libertine-container-manager remove-package -p PACKAGE-NAME
 
@@ -109,7 +115,7 @@ Shell access
 
 There are 2 options for executing commands inside the container.
 
-**The first option** is based on ``libertine-container-manager exec``. It lets you run your commands as root. The drawback is that the container is not completely set up. So far we know that the `folders mentioned above (Documents, Music, ...) are not mounted <https://askubuntu.com/questions/831830/libertine-terminal-applications-how-to-access-to-the-real-home-dir#comment1273744_833984/>`_ i.e., the ``/home/phablet/`` directory is empty. Likewise the directory referenced in ``TMPDIR`` is not available what may lead to problems with software that tries to create temporary files or directories.
+**The first option** is based on ``libertine-container-manager exec``. It lets you run your commands as root. The drawback is that the container is not completely set up. So far we know that the `folders mentioned above (Documents, Music, ...) are not mounted <https://askubuntu.com/questions/831830/libertine-terminal-applications-how-to-access-to-the-real-home-dir#comment1273744_833984/>`_ i.e., the ``/home/phablet/`` directory is empty. Likewise the directory referenced in ``TMPDIR`` is not available which may lead to problems with software that tries to create temporary files or directories.
 You may use this option e.g., for installing packages.
 
 To execute a command you can use the following pattern::
