@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: Chinese (Simplified) (UBports Docs)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-08-28 14:00+0200\n"
-"PO-Revision-Date: 2019-08-02 01:49+0000\n"
-"Last-Translator: 宋泊萱 <songbx0823@foxmail.com>\n"
+"PO-Revision-Date: 2020-01-19 19:40+0000\n"
+"Last-Translator: fuckyounet <oneplusanotherone@foxmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-porting/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.8\n"
 
 #: ../../porting/building-halium-boot.rst:2
 msgid "Building halium-boot"
@@ -228,7 +228,7 @@ msgstr "运行 Ubuntu Touch 的平常问题"
 msgid ""
 "This page details problems commonly faced while following the :doc:`running-"
 "ut` page."
-msgstr ""
+msgstr "本页面详细说明按照:doc:`running-ut`页面操作遇到的常见问题。"
 
 #: ../../porting/common-problems-run.rst:7
 msgid "Nothing shows on screen"
@@ -297,13 +297,13 @@ msgstr "要检查已安装的Android分区，请运行“ls /android”。 至�
 msgid ""
 "If any of these are missing, run ``dmesg`` to get the kernel log. Mounting "
 "Android partitions will start after the following line::"
-msgstr ""
+msgstr "如果确实这些内容，运行``dmesg``以得到内核日志。将在以下行后开始挂载Android分区::"
 
 #: ../../porting/common-problems-run.rst:49
 msgid ""
 "Try to diagnose and fix any mounting errors that you find in the log for the "
 "partitions listed above."
-msgstr ""
+msgstr "试着诊断与修复dmesg列出的分区日志中找到的任何挂载错误。"
 
 #: ../../porting/common-problems-run.rst:53
 msgid ""
@@ -311,6 +311,7 @@ msgid ""
 "and executables required to run Android. If your device has this partition, "
 "make sure that it is mounted in addition to the others listed above."
 msgstr ""
+"一些设备有个包含Android所需运行的专有库和可执行文件的``vendor``分区。如果你的设备有此分区，确保除上面列出的其他分区之外还挂载了此分区。"
 
 #: ../../porting/common-problems-run.rst:57
 msgid "Getting more Mir logs"
@@ -321,7 +322,7 @@ msgid ""
 "If the Android container is running and all of its partitions seem to be "
 "mounted, you will need to get a few more logs before enlisting community "
 "help."
-msgstr ""
+msgstr "如果Android容器正在运行且其所有分区已挂载，在征求社区帮助前你需要抓取更多日志。"
 
 #: ../../porting/common-problems-run.rst:61
 msgid "First, stop the display manager if it is not already::"
@@ -331,11 +332,11 @@ msgstr ""
 msgid ""
 "If you have Wi-Fi working (See `the Halium docs for Wi-Fi`_), install the "
 "``libc6-dbg`` package first::"
-msgstr ""
+msgstr "如果你的Wi-Fi能工作（参见`the Halium docs for Wi-Fi`_），先安装``libc6-dbg``包::"
 
 #: ../../porting/common-problems-run.rst:70
 msgid "Then, run the following commands to get all of the needed logs::"
-msgstr ""
+msgstr "然后运行以下命令以抓取所有需要的日志::"
 
 #: ../../porting/common-problems-run.rst:76
 msgid ""
@@ -345,6 +346,9 @@ msgid ""
 "GitHub Gists, or a similar service so the people helping you can view them "
 "easily."
 msgstr ""
+"使用``scp``或其他类似程序从phablet的家目录复制``usc.log``、``usc-gdb.log``和``usc-"
+"logcat.log``文件到电脑上。接着上传这些文件内容到`paste.ubuntu.com`_，Pastebin，GitHub "
+"Gists或帮你的人能够轻松浏览到的相似服务。"
 
 #: ../../porting/common-problems-run.rst:79
 msgid "Programs hang before crashing"
@@ -383,6 +387,8 @@ msgid ""
 "Now that you've :doc:`built halium-boot <building-halium-boot>`, we're ready "
 "to install Ubuntu Touch on your device."
 msgstr ""
+"如今你已经:doc:`built halium-boot <building-halium-boot>`，我们已准备好在你的设备上安装Ubuntu "
+"Touch。"
 
 #: ../../porting/installing-16-04.rst:10
 msgid ""
@@ -420,6 +426,10 @@ msgid ""
 "device, this same rootfs should work for you. If you have an x86 device, let "
 "us know. We do not have a rootfs available for these yet."
 msgstr ""
+"接下来我们需要下载适合你设备的rootfs（root filesystem，根文件系统）。如今我们只有一种可用，只需从`our CI server "
+"<https://ci.ubports.com/job/xenial-rootfs-armhf/>`__上下载``ubports-touch"
+".rootfs-xenial-armhf.tar.gz``。如果你有一个64位ARM(aach64)设备，这个rootfs就很适合。如果你有一个x86设备"
+"，请告知我们。我们目前暂时没有这些（x86设备）可用的rootfs。"
 
 #: ../../porting/installing-16-04.rst:26
 msgid "Install system.img and rootfs"
@@ -427,13 +437,13 @@ msgstr "安装 system.img 和 rootfs 文件系统"
 
 #: ../../porting/installing-16-04.rst:28
 msgid "Todo"
-msgstr ""
+msgstr "待定"
 
 #: ../../porting/installing-16-04.rst:30
 msgid ""
 "Change the rootstock link to point to UBports once the actuallyfixit PR is "
 "merged."
-msgstr ""
+msgstr "一旦actuallyfixit PR被合并，会更改rootstock链接指向UBports。"
 
 #: ../../porting/installing-16-04.rst:32
 msgid ""
@@ -443,12 +453,16 @@ msgid ""
 "releases/download/continuous/halium-install-standalone.sh>`__). Boot your "
 "device into recovery and run the script as follows::"
 msgstr ""
+"从`jbbgameich/halium-install's releases <https://github.com/JBBgameich/"
+"halium-install/releases/>`_ (`direct link to download <https://github.com/"
+"JBBgameich/halium-install/releases/download/continuous/halium-install-"
+"standalone.sh>`__)上下载halium-install-standalone脚本，重启设备进入recovery并按如下方式运行脚本::"
 
 #: ../../porting/installing-16-04.rst:36
 msgid ""
 "The script will copy and extract the files to their proper places, then "
 "allow you to set the phablet user's password."
-msgstr ""
+msgstr "脚本将复制和解压文件到合适位置，然后会允许你设置平板电脑用户的密码。"
 
 #: ../../porting/installing-16-04.rst:39
 msgid "Get SSH access"
@@ -470,6 +484,8 @@ msgid ""
 "to \"Halium initrd Failed to boot\", please get in contact with us so we can "
 "find out why."
 msgstr ""
+"要确认设备正确启动，运行``dmesg -w``并留意输出中的\"GNU/Linux device\"。如果你观察到类似于\"Halium initrd "
+"Failed to boot\"的信息，请联系我们以便我们排查原因。"
 
 #: ../../porting/installing-16-04.rst:45
 msgid ""
@@ -478,6 +494,9 @@ msgid ""
 "on the newly connected RNDIS interface to ``10.15.19.100`` if you don't get "
 "one automatically. Then, run the following to access your device::"
 msgstr ""
+"类似于`Halium reference rootfs <http://docs.halium.org/en/latest/porting/"
+"debug-build/logging-in.html>`__，如果你并不想自动获得IP，可以在电脑新连接的RNDIS接口上设置的IP为``10.15.1"
+"9.100``。接着运行以下命令以访问你的设备::"
 
 #: ../../porting/installing-16-04.rst:49
 msgid "The password will be the one that you set while running halium-install."
@@ -492,14 +511,14 @@ msgid ""
 "If you have any errors while performing these steps, check see if any of the "
 "following suggestions match what you are seeing. If you have installed "
 "successfully, skip down to `Continue on`_."
-msgstr ""
+msgstr "如果在执行这些步骤时有任何错误，请检查以下建议是否与你看到的相符。如果你已经安装成功，跳转到`Continue on`_。"
 
 #: ../../porting/installing-16-04.rst:64
 msgid ""
 "Congratulations! Ubuntu Touch has now booted on your device. Move on to :doc:"
 "`running-ut` to learn about more specific steps you will need to take for a "
 "complete port."
-msgstr ""
+msgstr "恭喜！Ubuntu Touch现已在你设备上启动。移步:doc:`running-ut`以学习完整移植的更多相关步骤。"
 
 #: ../../porting/introduction.rst:2
 msgid "Porting information"
@@ -511,6 +530,8 @@ msgid ""
 "device, or if you would like to check if your device is supported, please "
 "see `this page <https://devices.ubuntu-touch.io/>`_."
 msgstr ""
+"如果你在查找关于已支持设备上安装Ubuntu Touch的信息，或你想检查你的设备是否受支持，请参见`this page <https://devices"
+".ubuntu-touch.io/>`_。"
 
 #: ../../porting/introduction.rst:7
 msgid ""
@@ -525,12 +546,14 @@ msgid ""
 "``systemimage`` built without errors. Once you're at the point of installing "
 "a rootfs, you can come back here."
 msgstr ""
+"在开始前，你需要先去`the Halium porting guide <http://docs.halium.org/en/latest/"
+"porting/first-steps.html>`并成功构建你的``systemimage``。一旦你到达安装rootfs这一步，你可以回到此处。"
 
 #: ../../porting/introduction.rst:11
 msgid ""
 "Start at :doc:`building-halium-boot` if you'd like to install the UBports "
 "Ubuntu Touch 16.04 rootfs."
-msgstr ""
+msgstr "如果你要安装UBports Ubuntu Touch 16.04 rootfs，参见:doc:`building-halium-boot`。"
 
 #: ../../porting/introduction.rst:25
 msgid "Getting community help"
@@ -543,6 +566,7 @@ msgid ""
 "stuck on. If none of the suggestions are helpful, you can get help from the "
 "community via the following channels:"
 msgstr ""
+"如果你在构建Halium系统镜像之后的步骤遇到了困难，请查看（对应困难步骤）页面的常见问题部分。如果这些建议都没用，你可以从以下频道获取社区帮助:"
 
 #: ../../porting/introduction.rst:29
 msgid "Telegram: @ubports_porting"
@@ -554,7 +578,7 @@ msgstr "IRC: #ubports-porting on freenode"
 
 #: ../../porting/introduction.rst:31
 msgid "Forum: `forums.ubports.com <https://forums.ubports.com>`__"
-msgstr ""
+msgstr "论坛：`forums.ubports.com <https://forums.ubports.com>`__"
 
 #: ../../porting/running-ut.rst:2
 msgid "Running Ubuntu Touch"
@@ -564,18 +588,18 @@ msgstr "运行 Ubuntu Touch"
 msgid ""
 "Now that you're logged in, there are a few more steps before Ubuntu Touch "
 "will be fully functional on your device."
-msgstr ""
+msgstr "现在你已登录，在Ubuntu Touch完整的在你设备上运行前还有一些步骤。"
 
 #: ../../porting/running-ut.rst:7
 msgid "Make / writable"
-msgstr ""
+msgstr "让 / （根目录）可写"
 
 #: ../../porting/running-ut.rst:9
 msgid ""
 "Before we make any changes to the rootfs (which will be required for the "
 "next steps), you'll need to remount it with write permissions. To do that, "
 "run the following command::"
-msgstr ""
+msgstr "在我们对你的rootfs更改前（下一步需要），你需要用写权限重新挂载它。要做到这一点，运行以下命令::"
 
 #: ../../porting/running-ut.rst:14
 msgid "Add udev rules"
@@ -586,14 +610,14 @@ msgid ""
 "You must create some udev rules to allow Ubuntu Touch software to access "
 "your hardware. Run the following command, replacing [codename] with your "
 "device's codename::"
-msgstr ""
+msgstr "你必须创建一些udev规则以允许Ubuntu Touch软件访问你的硬件。运行以下命令，替换[codename]为你设备的codename::"
 
 #: ../../porting/running-ut.rst:21
 msgid ""
 "Now, reboot the device. If all has gone well, you will eventually see the "
 "Ubuntu Touch spinner followed by Unity 8. Your lock password is the same as "
 "you set for SSH."
-msgstr ""
+msgstr "现在重启设备。如果一切正常，你最终将看到Ubuntu Touch spinner紧跟着Unity 8。锁定密码和你SSH设置的密码相同。"
 
 #: ../../porting/running-ut.rst:24
 msgid "Display settings"
@@ -605,12 +629,14 @@ msgid ""
 "There are two variables that set the content scaling for Unity 8 and Ubuntu "
 "Touch applications: ``GRID_UNIT_PX`` and ``QTWEBKIT_DPR``."
 msgstr ""
+"当设备启动时，你应当认识到所有的东西都很小。有两个变量设置Unity 8和Ubuntu "
+"Touch应用的内容缩放：``GRID_UNIT_PX``和``QTWEBKIT_DPR``。"
 
 #: ../../porting/running-ut.rst:28
 msgid ""
 "There are also some other options available that may be useful for you "
 "depending on your device's form factor. These are discussed below."
-msgstr ""
+msgstr "根据设备的外形尺寸，其他一些可用的选项可能对您有用。下面将讨论这些内容。"
 
 #: ../../porting/running-ut.rst:30
 msgid ""
@@ -621,10 +647,12 @@ msgid ""
 "[codename].conf`` specifying them. For example, this is the file for the "
 "Nexus 7 tablet::"
 msgstr ""
+"如果没有设置，Unity 8会猜测所有这些设置。然而有很多种情况会猜错（如，高分辨率手机显示会被辨认为桌面电脑）。要手动设置这些变量，只需在``/etc/"
+"ubuntu-session.d/[codename].conf``创建文件并指定它们。例如这是Nexus 7平板的文件::"
 
 #: ../../porting/running-ut.rst:38
 msgid "Methods for deriving values for these variables are below."
-msgstr ""
+msgstr "这些变量的取值方法如下。"
 
 #: ../../porting/running-ut.rst:41
 msgid "Display scaling"
@@ -641,12 +669,15 @@ msgid ""
 "and laptops are the same distance and that they are held at 1.235 times the "
 "distance phones tend to be held at."
 msgstr ""
+"``GRID_UNIT_PX`` (Pixels per Grid Unit or Px/GU)用于每个设备。目标是使系统用户界面和应用具有一致的“感官”"
+"大小，而不管它们显示在什么设备上。它主要取决于设备屏幕的像素密度和用户到屏幕的距离。后一个值不能自动检测，它是基于启发式的。我们假设平板电脑和笔记本电脑的"
+"距离是一样的，它们的距离是手机的1.235倍。"
 
 #: ../../porting/running-ut.rst:45
 msgid ""
 "``QTWEBKIT_DPR`` sets the display scaling for the Oxide web engine, so "
 "changes to this value will affect the scale of the browser and webapps."
-msgstr ""
+msgstr "``QTWEBKIT_DPR``设置Oxide网页引擎的显示尺寸，本值的改变将影响浏览器和web应用的尺寸。"
 
 #: ../../porting/running-ut.rst:47
 msgid ""
@@ -656,6 +687,8 @@ msgid ""
 "*perceived* size rather than *physical* size. Here are some values for other "
 "devices so you may derive the correct one for yours:"
 msgstr ""
+"选择了一个参考设备，可从中得出所有其他设备的值。参考设备是一个120ppi屏幕的手持电脑。但是，由于这些选项是针对*感知*大小而不是*物理*大小设置的，因"
+"此没有确切的公式。 以下是其他设备的一些值，因此你可以为自己的设备得出正确的值："
 
 #: ../../porting/running-ut.rst:50
 msgid "Device"
@@ -675,11 +708,11 @@ msgstr "PPI"
 
 #: ../../porting/running-ut.rst:50
 msgid "Px/GU"
-msgstr ""
+msgstr "Px/GU"
 
 #: ../../porting/running-ut.rst:50
 msgid "QtWebKit DPR"
-msgstr ""
+msgstr "QtWebKit DPR"
 
 #: ../../porting/running-ut.rst:52
 msgid "'Normal' density laptop"
@@ -751,8 +784,9 @@ msgid "1280x720"
 msgstr "1280x720"
 
 #: ../../porting/running-ut.rst:55
+#, fuzzy
 msgid "4.65\""
-msgstr ""
+msgstr "4.65\""
 
 #: ../../porting/running-ut.rst:55
 msgid "316"
@@ -771,8 +805,9 @@ msgid "1280x768"
 msgstr "1280x768"
 
 #: ../../porting/running-ut.rst:56
+#, fuzzy
 msgid "4.7\""
-msgstr ""
+msgstr "4.7\""
 
 #: ../../porting/running-ut.rst:56
 msgid "320"
@@ -787,8 +822,9 @@ msgid "2560x1600"
 msgstr "2560x1600"
 
 #: ../../porting/running-ut.rst:57
+#, fuzzy
 msgid "10.1\""
-msgstr ""
+msgstr "10.1\""
 
 #: ../../porting/running-ut.rst:57
 msgid "299"
@@ -827,8 +863,9 @@ msgid "LG Nexus 5"
 msgstr "LG Nexus 5"
 
 #: ../../porting/running-ut.rst:59
+#, fuzzy
 msgid "4.95\""
-msgstr ""
+msgstr "4.95\""
 
 #: ../../porting/running-ut.rst:59
 msgid "445"
