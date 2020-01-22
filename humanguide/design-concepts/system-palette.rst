@@ -7,15 +7,13 @@ Operating system and app palette
 
 -  #FFFFFF White
 
-Recomended for background on Ambiance theme
-(light theme) or regular text on Suru Dark
-theme
+Recomended for background on Ambiance theme (light theme) or regular text on Suru Dark theme.
 
 .. figure:: /_static/images/humanguide/color-TextGrey.svg
 
 -  #111111 Jet
 
-Recommended for regular text on Ambiance theme or background in Suru Dark
+Recommended for regular text on Ambiance theme or background in Suru Dark.
 
 .. figure:: /_static/images/humanguide/UT-color-inkstone.svg
 
@@ -33,7 +31,7 @@ Recommended for text and action icons.
 
 -  #666666 Graphite
 
-Recommended for coloring dark themes’ background.
+Recommended for coloring dark themes' background.
 
 .. figure:: /_static/images/humanguide/UT-color-Ash.svg
 
@@ -57,21 +55,37 @@ Recommended for foregrounds.
 
 -  #19B6EE Blue
 
-Recommended for progress bars, selected areas, text selection and text
-cursor. Also neutral actions.
+Recommended for progress bars, selected areas, text selection and text cursor. Also neutral actions (Ambiance).
+
+.. figure:: /_static/images/humanguide/UT-color-lightBlue.svg
+
+-  #335280 Light Blue
+
+Recommended for progress bars, selected areas, text selection and text cursor. Also neutral actions (SuruDark).
 
 .. figure:: /_static/images/humanguide/UT-color-Green.svg
 
 -  #3EB34F Green
 
-Recommended for positive action buttons.
+Recommended for positive action buttons (SuruDark).
+
+.. figure:: /_static/images/humanguide/UT-color-lightGreen.svg
+
+-  #0E8420 Light Green
+
+Recommended for positive action buttons (Ambiance).
 
 .. figure:: /_static/images/humanguide/color-Red.svg
 
--  #ED3146 Red
+-  #C7162B Red
 
-Recommended for negative and irreversible action buttons, errors and
-alerts.
+Recommended for negative and irreversible action buttons, errors and alerts (Ambiance).
+
+.. figure:: /_static/images/humanguide/color-lightRed.svg
+
+-  #ED3146 Light Red
+
+Recommended for negative and irreversible action buttons, errors and alerts (SuruDark).
 
 .. figure:: /_static/images/humanguide/color-orange.svg
 
@@ -88,8 +102,7 @@ Corporative Image
 Core Colours
 ~~~~~~~~~~~~
 
-The Ubuntu colour palette has been created to reflect the spirit of our
-brand.
+The Ubuntu colour palette has been created to reflect the spirit of the brand.
 
 .. figure:: /_static/images/humanguide/color-orange.svg
 
@@ -107,33 +120,30 @@ White for a clean, fresh and light feel.
 
 -  #000000 Black
 
-Black is used in some versions of the brandmark for flexibility of
-application and where print restrictions apply. It can also be used for
-body copy.
+Black is used in some versions of the brandmark for flexibility of application and where print restrictions apply. It can also be used for body copy.
 
 Supporting colours
 ~~~~~~~~~~~~~~~~~~
 
-Supporting colour palette for when communications have a consumer or
-enterprise focus.
+Supporting colour palette for when communications have a consumer or enterprise focus.
 
 .. figure:: /_static/images/humanguide/color-LightAubergine.svg
 
 -  #77216F Light aubergine
 
-Light aubergine for a consumer focus
+Light aubergine for a consumer focus.
 
 .. figure:: /_static/images/humanguide/color-MidAubergine.svg
 
 -  #5E2750 Mid aubergine
 
-Mid aubergine for a balance of both
+Mid aubergine for a balance of both.
 
 .. figure:: /_static/images/humanguide/color-DarkAubergine.svg
 
 -  #2C001E Dark aubergine
 
-Dark aubergine for an enterprise focus
+Dark aubergine for an enterprise focus.
 
 Neutral colours
 ~~~~~~~~~~~~~~~
@@ -142,19 +152,15 @@ Neutral colours
 
 -  #AEA79F Warm grey
 
-For balance. The addition of warm grey softens the combination of orange
-and aubergine and provides a bridge between the two.
+For balance. The addition of warm grey softens the combination of orange and aubergine and provides a bridge between the two.
 
-Warm grey can be used for; backgrounds, graphics, pictograms, dot
-patterns, charts and diagrams. It can also be used for large size text.
+Warm grey can be used for; backgrounds, graphics, pictograms, dot patterns, charts and diagrams. It can also be used for large size text.
 
 .. figure:: /_static/images/humanguide/color-CoolGrey.svg
 
 -  #333333 Cool grey
 
-For typography, particularly body copy. Black can be quite harsh in
-combination with aubergine, but grey delivers more balance while still
-being legible.
+For typography, particularly body copy. Black can be quite harsh in combination with aubergine, but grey delivers more balance while still being legible.
 
 Cool grey can also be used within charts and diagrams.
 
@@ -162,5 +168,4 @@ Cool grey can also be used within charts and diagrams.
 
 -  #111111 Text grey (Jet)
 
-Text grey is used for small size headings, sub-headings and body copy
-text only.
+Text grey is used for small size headings, sub-headings and body copy text only.

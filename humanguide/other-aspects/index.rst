@@ -5,9 +5,9 @@ Other aspects
     :maxdepth: 1
     :name: layout
 
-    01-convergence
-    02-accessibility
-    03-importing-data
-    04-presenting-data
-    05-translations
-    06-scaling-images
+    convergence
+    accessibility
+    importing-data
+    presenting-data
+    translations
+    scaling-images
