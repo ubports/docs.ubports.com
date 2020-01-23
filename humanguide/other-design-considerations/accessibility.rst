@@ -1,14 +1,14 @@
 Accessibility
 =============
 
-Accessibility is important to make all users to be able to use the operating system no matter what special needs or kind of input method they have.
+Accessibility is important to make all users to be able to use the operating system.
 
-High Contrast and Colour Blind Friendly Themes
-----------------------------------------------
+Inclusive palette and theme
+---------------------------
 
-We would like help to create and implement color palettes for the following types of sight impairment: 
-- `Palette proposal <http://colors.mivoligo.com/#color-blind>`__.
-- High contrast theme.
+We would like to create and implement color palettes helpful to people who have sight impairment:
+- Additional `palette proposal <http://colors.mivoligo.com/#color-blind>`__.
+- A high contrast theme.
 - Adaptable font size theme.
 
 Input methods
