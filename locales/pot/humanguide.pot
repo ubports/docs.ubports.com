@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-03 03:51+0100\n"
+"POT-Creation-Date: 2020-01-23 01:50+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,606 +16,1022 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:1
-msgid "As designed by `Canonical <https://www.canonical.com/>`__, we use the following system palette (from `Michał Prędotka <http://colors.mivoligo.com/>`__ and `Ubuntu documentation <https://docs.ubuntu.com/phone/en/apps/api-qml-development/Ubuntu.Components.UbuntuColors>`__):"
+#: ../../humanguide/app-layout/app-main-view.rst:2
+msgid "App main view"
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:4
-msgid "Operating system and app palette"
+#: ../../humanguide/app-layout/app-main-view.rst:4
+msgid "When an app starts, shows a generic splash screen (as in the image) or a custom one, then the main view."
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:8
-#: ../../humanguide/general-concepts/01-system-palette.rst:102
-msgid "#FFFFFF White"
+#: ../../humanguide/app-layout/app-main-view.rst:9
+msgid "Splash-Main"
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:10
-msgid "Recomended for background on Ambiance theme (light theme) or regular text on Suru Dark theme"
+#: ../../humanguide/app-layout/app-main-view.rst:11
+msgid "The standard parts of a main view or any other page may be:"
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:16
-msgid "#111111 Jet"
+#: ../../humanguide/app-layout/app-main-view.rst:14
+msgid "Header"
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:18
-msgid "Recommended for regular text on Ambiance theme or background in Suru Dark"
+#: ../../humanguide/app-layout/app-main-view.rst:16
+msgid "Display app name, leading area and trailing area icons."
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:22
-msgid "#3B3B3B Inkstone"
+#: ../../humanguide/app-layout/app-main-view.rst:20
+msgid "In this case, showing title and trailing actions."
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:24
-msgid "Recommended for foreground colours in dark themes."
+#: ../../humanguide/app-layout/app-main-view.rst:23
+msgid "Tabbed content"
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:28
-msgid "#5D5D5D Slate"
+#: ../../humanguide/app-layout/app-main-view.rst:25
+msgid "To organize information under tabs."
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:30
-msgid "Recommended for text and action icons."
+#: ../../humanguide/app-layout/app-main-view.rst:30
+msgid "Bottom edge menu"
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:34
-msgid "#666666 Graphite"
+#: ../../humanguide/app-layout/app-main-view.rst:32
+msgid "For quick actions. See `Quick actions`_."
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:36
-msgid "Recommended for coloring dark themes’ background."
+#: ../../humanguide/app-layout/dialogs.rst:2
+msgid "Dialogs"
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:40
-msgid "#888888 Ash"
+#: ../../humanguide/app-layout/dialogs.rst:4
+msgid "A dialog is a way of informing the user about important notices or letting them complete a single action."
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:42
-msgid "Recommended for subtitles and other tertiary content."
+#: ../../humanguide/app-layout/dialogs.rst:6
+msgid "Dialogs should be unambiguous and concise in their wording. Only the most common, or main, action should be highlighted with color. The main action should be placed topmost in vertical dialogs or rightmost in horizontal dialogs."
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:46
-msgid "#CDCDCD Silk"
+#: ../../humanguide/app-layout/dialogs.rst:8
+msgid "Main actions may be positive, negative, or neutral. Positive actions add something to their subjects. Negative actions remove, delete, or otherwise make changes that can't be easily undone. Neutral actions do not add or remove from the subject, but still make a change."
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:48
-msgid "Recommended for neutral action buttons and secondary text."
+#: ../../humanguide/app-layout/dialogs.rst:10
+msgid "The main action should be highlighted using ``theme.palette.normal.negative`` if it is destructive, ``theme.palette.normal.positive`` if it is positive, or ``theme.palette.normal.focus`` if it is neutral. The remaining options should be gray, without defining a color theme property."
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:52
-msgid "#F7F7F7 Porcelain"
+#: ../../humanguide/app-layout/dialogs.rst:14
+msgid "Dialogs should resume actions, not ask a yes or no question. For example, the user has selected an option to delete a contact. Your dialog should ask, \"Are you sure you would like to delete this contact?\" The options should then be \"Delete\", a negative action colored in red, and \"Cancel\", colored in gray."
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:54
-msgid "Recommended for foregrounds."
+#: ../../humanguide/app-layout/dialogs.rst:17
+msgid "Examples of designs to avoid"
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:58
-msgid "#19B6EE Blue"
+#: ../../humanguide/app-layout/dialogs.rst:21
+msgid "Left: Download a file (old focus color). Right: Delete a contact (wrong use of color and confusing answers)."
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:60
-msgid "Recommended for progress bars, selected areas, text selection and text cursor. Also neutral actions."
+#: ../../humanguide/app-layout/header-uses.rst:2
+msgid "Header uses"
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:65
-msgid "#3EB34F Green"
+#: ../../humanguide/app-layout/header-uses.rst:4
+msgid "App headers can be used to show app name, app section or page, search box, or other globally accessible functions."
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:67
-msgid "Recommended for positive action buttons."
+#: ../../humanguide/app-layout/header-uses.rst:12
+msgid "Some special apps doesn't show any header, like the Camera app or some games."
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:71
-msgid "#ED3146 Red"
+#: ../../humanguide/app-layout/header-uses.rst:14
+msgid "The header takes care of showing the back button when a `page stack <https://api-docs.ubports.com/sdk/apps/qml/Ubuntu.Components/PageStack.html>`__ is used."
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:73
-msgid "Recommended for negative and irreversible action buttons, errors and alerts."
+#: ../../humanguide/app-layout/importing-data.rst:2
+msgid "Importing Data"
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:78
-msgid "#E95420 Orange"
+#: ../../humanguide/app-layout/importing-data.rst:4
+msgid "Interchange of data between apps is done through Content Hub. This improves isolation between apps."
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:80
-msgid "Orange is recommended for branded elements, focus and intensity."
+#: ../../humanguide/app-layout/importing-data.rst:8
+msgid "Apps with the right apparmor permissions can import, export or share data between them."
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:82
-msgid "Following the colour scheme from `Canonical <https://design.ubuntu.com/brand/colour-palette/>`__, we use:"
+#: ../../humanguide/app-layout/importing-data.rst:10
+msgid "For more information see `Importing from Content Hub and URLdispatcher`_."
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:86
-msgid "Corporative Image"
+#: ../../humanguide/app-layout/index.rst:2
+msgid "App layout"
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:89
-msgid "Core Colours"
+#: ../../humanguide/app-layout/main-actions.rst:2
+msgid "Main actions"
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:91
-msgid "The Ubuntu colour palette has been created to reflect the spirit of our brand."
+#: ../../humanguide/app-layout/main-actions.rst:4
+msgid "Main actions are displayed in the corresponding header of the Page. The header should show only relevant actions to the current page."
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:96
-msgid "#E95420 Ubuntu Orange"
+#: ../../humanguide/app-layout/main-actions.rst:6
+msgid "Main page of Contacts app shows:"
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:98
-msgid "Orange for a community feel."
+#: ../../humanguide/app-layout/main-actions.rst:10
+msgid "When viewing a single contact, only relevant actions are shown:"
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:104
-msgid "White for a clean, fresh and light feel."
+#: ../../humanguide/app-layout/main-actions.rst:15
+msgid "Slots"
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:108
-msgid "#000000 Black"
+#: ../../humanguide/app-layout/main-actions.rst:17
+msgid "The header contains a number of slots that can hold actions or navigational options. Depending on the surface or window size, additional slots can be added to show the actions otherwise hidden in drawers."
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:110
-msgid "Black is used in some versions of the brandmark for flexibility of application and where print restrictions apply. It can also be used for body copy."
+#: ../../humanguide/app-layout/main-actions.rst:22
+msgid "Action Drawer"
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:115
-msgid "Supporting colours"
+#: ../../humanguide/app-layout/main-actions.rst:24
+msgid "Actions will be placed into an action drawer when there are no available slots to house them. However, when your app is on a larger surface, like on a desktop, then actions will appear in the slots."
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:117
-msgid "Supporting colour palette for when communications have a consumer or enterprise focus."
+#: ../../humanguide/app-layout/main-actions.rst:29
+msgid "Responsive layout"
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:122
-msgid "#77216F Light aubergine"
+#: ../../humanguide/app-layout/main-actions.rst:31
+msgid "As the header gains width across screen sizes, additional slots become visible and actions in the drawer will appear automatically."
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:124
-msgid "Light aubergine for a consumer focus"
+#: ../../humanguide/app-layout/main-actions.rst:34
+msgid "3 slot layout"
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:128
-msgid "#5E2750 Mid aubergine"
+#: ../../humanguide/app-layout/main-actions.rst:41
+msgid "4 slot layout"
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:130
-msgid "Mid aubergine for a balance of both"
+#: ../../humanguide/app-layout/main-actions.rst:48
+msgid "5 slot layout"
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:134
-msgid "#2C001E Dark aubergine"
+#: ../../humanguide/app-layout/main-actions.rst:55
+msgid "6 slot layout"
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:136
-msgid "Dark aubergine for an enterprise focus"
+#: ../../humanguide/app-layout/main-actions.rst:62
+msgid "Medium to large screens"
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:139
-msgid "Neutral colours"
+#: ../../humanguide/app-layout/main-actions.rst:64
+msgid "The maximum number of visible action slots in a convergent environment is 6. If this is exceeded then additional actions will migrate to the action drawer."
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:143
-msgid "#AEA79F Warm grey"
+#: ../../humanguide/app-layout/main-actions.rst:67
+msgid "Simple"
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:145
-msgid "For balance. The addition of warm grey softens the combination of orange and aubergine and provides a bridge between the two."
+#: ../../humanguide/app-layout/main-actions.rst:69
+msgid "Keep in mind to keep a clean design. The simpler, the better."
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:148
-msgid "Warm grey can be used for; backgrounds, graphics, pictograms, dot patterns, charts and diagrams. It can also be used for large size text."
+#: ../../humanguide/app-layout/presenting-data.rst:2
+msgid "Presenting data"
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:153
-msgid "#333333 Cool grey"
+#: ../../humanguide/app-layout/presenting-data.rst:5
+msgid "List Items"
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:155
-msgid "For typography, particularly body copy. Black can be quite harsh in combination with aubergine, but grey delivers more balance while still being legible."
+#: ../../humanguide/app-layout/presenting-data.rst:7
+msgid "List items can be used to make up a list of ordered scrollable items that are related to each other."
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:159
-msgid "Cool grey can also be used within charts and diagrams."
+#: ../../humanguide/app-layout/presenting-data.rst:11
+msgid "When images or icons are presented without text or actions, it would make more sense to show them inside a grid rather than a list; like in a photo gallery."
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:163
-msgid "#111111 Text grey (Jet)"
+#: ../../humanguide/app-layout/presenting-data.rst:15
+msgid "Items in a list can have actions that can be placed in a context menu. The context menu can be accessed in two ways: by swiping or right-clicking the list item."
 msgstr ""
 
-#: ../../humanguide/general-concepts/01-system-palette.rst:165
-msgid "Text grey is used for small size headings, sub-headings and body copy text only."
+#: ../../humanguide/app-layout/presenting-data.rst:17
+msgid "The actions are placed within two categories: leading for negative actions and trailing for positive actions."
 msgstr ""
 
-#: ../../humanguide/general-concepts/02-units.rst:2
-msgid "Units"
+#: ../../humanguide/app-layout/presenting-data.rst:20
+msgid "Touch swiping"
 msgstr ""
 
-#: ../../humanguide/general-concepts/02-units.rst:5
-msgid "Resolution Independence Approach"
+#: ../../humanguide/app-layout/presenting-data.rst:27
+msgid "Mouse right click"
 msgstr ""
 
-#: ../../humanguide/general-concepts/02-units.rst:7
-msgid "The objective of resolution independence is to make it easy for graphical user interfaces in Ubuntu to scale to all the form factors that Ubuntu targets: phones, tablets, laptops and desktops. The approach taken combines simplicity for the designers and developers with visual fidelity, quality and usability. Measurement Units"
+#: ../../humanguide/app-layout/presenting-data.rst:32
+msgid "Keyboard navigation"
 msgstr ""
 
-#: ../../humanguide/general-concepts/02-units.rst:14
-msgid "Grid Unit"
+#: ../../humanguide/app-layout/presenting-data.rst:37
+msgid "Lists in edit mode"
 msgstr ""
 
-#: ../../humanguide/general-concepts/02-units.rst:16
-msgid "A measurement unit called the *grid unit* is defined, abbreviated gu. 1 grid unit translates to a given number of pixels depending on the type of screen that the user interface is displayed on. For example, on a laptop computer 1 grid unit will typically translate to 8 pixels. The number of pixels per grid unit is chosen in order to preserve the perceived visual size of UI elements and therefore depends on the density of the display and the distance the user is to the screen. We also ensure that 1 grid unit is always an integer number of pixel."
+#: ../../humanguide/app-layout/presenting-data.rst:39
+msgid "Edit mode allows users to modify a particular item or multiple items at once."
 msgstr ""
 
-#: ../../humanguide/general-concepts/02-units.rst:26
-msgid "Device"
+#: ../../humanguide/app-layout/presenting-data.rst:41
+msgid "You can use edit mode to allow users to multi-select, rearrange or delete items inside a list. When edit mode is entered the whole screen becomes an edit state and the header will show associated editing actions for the content. Alternatively, if the user long presses an item a context menu will show the associated editing actions too."
 msgstr ""
 
-#: ../../humanguide/general-concepts/02-units.rst:26
-msgid "Conversion"
+#: ../../humanguide/app-layout/presenting-data.rst:48
+msgid "Layout of detailed list items"
 msgstr ""
 
-#: ../../humanguide/general-concepts/02-units.rst:28
-msgid "Most laptops"
+#: ../../humanguide/app-layout/presenting-data.rst:52
+msgid "1 line – Title"
 msgstr ""
 
-#: ../../humanguide/general-concepts/02-units.rst:28
-msgid "1 gu - 8 px"
+#: ../../humanguide/app-layout/presenting-data.rst:54
+msgid "1 line – Subtitle"
 msgstr ""
 
-#: ../../humanguide/general-concepts/02-units.rst:31
-msgid "Retina laptops"
+#: ../../humanguide/app-layout/presenting-data.rst:56
+msgid "2 lines – Summary"
 msgstr ""
 
-#: ../../humanguide/general-concepts/02-units.rst:31
-msgid "1 gu - 16 px"
+#: ../../humanguide/app-layout/quick-actions.rst:2
+msgid "Quick actions"
 msgstr ""
 
-#: ../../humanguide/general-concepts/02-units.rst:34
-msgid "Phone with 4 inch screen at HD resolution (around 720x1,280 pixels)"
+#: ../../humanguide/app-layout/quick-actions.rst:4
+msgid "The most common action for an app, the one that needs to be accessed quickly might be added as a `bottom edge <https://api-docs.ubports.com/sdk/apps/qml/Ubuntu.Components/BottomEdge.html>`__ action, accessed with a swipe from outside of the screen upwards."
 msgstr ""
 
-#: ../../humanguide/general-concepts/02-units.rst:34
-msgid "1 gu - 18 px"
+#: ../../humanguide/app-layout/quick-actions.rst:6
+msgid "You can add a new contact in the Contacts app swiping up:"
 msgstr ""
 
-#: ../../humanguide/general-concepts/02-units.rst:37
-msgid "Tablet with 10 inch screen at HD resolution (around 720x1,280 pixels)"
+#: ../../humanguide/app-layout/quick-actions.rst:11
+msgid "Hint"
 msgstr ""
 
-#: ../../humanguide/general-concepts/02-units.rst:37
-msgid "1 gu - 10 px"
+#: ../../humanguide/app-layout/quick-actions.rst:13
+msgid "The hint is used to let the user know that there is something worth trying at the bottom of the screen."
 msgstr ""
 
-#: ../../humanguide/general-concepts/02-units.rst:42
-msgid "Density Unit"
+#: ../../humanguide/app-layout/quick-actions.rst:15
+msgid "After open an app, a hint with a text and/or an icon is shown:"
 msgstr ""
 
-#: ../../humanguide/general-concepts/02-units.rst:44
-msgid "Exceptionally, in order to accommodate for the rare cases where measurements of less than 1 gu are needed another unit is available: the *density independent pixel,* abbreviated dp. 1 dp typically translates to 1 pixel on laptops and low density mobile phones and tablets."
+#: ../../humanguide/app-layout/quick-actions.rst:19
+msgid "After some seconds it hides and a floating icon is hown"
 msgstr ""
 
-#: ../../humanguide/general-concepts/02-units.rst:50
-msgid "Use"
-msgstr ""
-
-#: ../../humanguide/general-concepts/02-units.rst:60
-msgid "Device Sizes"
-msgstr ""
-
-#: ../../humanguide/general-concepts/02-units.rst:63
-msgid "Device Grid Units"
-msgstr ""
-
-#: ../../humanguide/general-concepts/02-units.rst:63
-msgid "width"
-msgstr ""
-
-#: ../../humanguide/general-concepts/02-units.rst:63
-msgid "height"
-msgstr ""
-
-#: ../../humanguide/general-concepts/02-units.rst:65
-msgid "E5 (portrait)"
-msgstr ""
-
-#: ../../humanguide/general-concepts/02-units.rst:65
-msgid "42"
-msgstr ""
-
-#: ../../humanguide/general-concepts/02-units.rst:65
-msgid "72"
-msgstr ""
-
-#: ../../humanguide/general-concepts/02-units.rst:67
-msgid "M10 HD (landscape)"
-msgstr ""
-
-#: ../../humanguide/general-concepts/02-units.rst:67
-msgid "160"
-msgstr ""
-
-#: ../../humanguide/general-concepts/02-units.rst:67
-msgid "97"
-msgstr ""
-
-#: ../../humanguide/general-concepts/02-units.rst:69
-msgid "M10 FHD (landscape)"
-msgstr ""
-
-#: ../../humanguide/general-concepts/02-units.rst:69
-msgid "148"
-msgstr ""
-
-#: ../../humanguide/general-concepts/02-units.rst:69
-msgid "89"
-msgstr ""
-
-#: ../../humanguide/general-concepts/02-units.rst:71
-msgid "N5 (portrait)"
-msgstr ""
-
-#: ../../humanguide/general-concepts/02-units.rst:71
-msgid "47"
-msgstr ""
-
-#: ../../humanguide/general-concepts/02-units.rst:71
-msgid "80"
-msgstr ""
-
-#: ../../humanguide/general-concepts/03-typography.rst:2
-msgid "Typography"
-msgstr ""
-
-#: ../../humanguide/general-concepts/03-typography.rst:5
-msgid "Fonts"
-msgstr ""
-
-#: ../../humanguide/general-concepts/03-typography.rst:7
-msgid "Default font is `Ubuntu font <https://design.ubuntu.com/font/>`__ `[2] <https://en.wikipedia.org/wiki/Ubuntu_(typeface)>`__ installed in the system."
-msgstr ""
-
-#: ../../humanguide/general-concepts/03-typography.rst:14
-#: ../../humanguide/general-concepts/03-typography.rst:43
-msgid "image"
-msgstr ""
-
-#: ../../humanguide/general-concepts/03-typography.rst:16
-msgid "For the font sizes to be consistent across devices, instead of setting the font size in pixels or points, it is imperative to define the font size in terms of literals:"
-msgstr ""
-
-#: ../../humanguide/general-concepts/03-typography.rst:20
-msgid "+-------.-+------+------+--------------------+----------------------+ | Font    | gu   | Desk | Smart Phone with   | Tablet with 10\" HD   | | Size    |      | top  | 4\" HD screen       | screen               | +=========+======+======+====================+======================+ | x-small | 1.25 | 10   | 22 px              | 12 px                | |         |      | px   |                    |                      | +---------+------+------+--------------------+----------------------+ | small   | 1.5  | 12   | 27 px              | 15 px                | |         |      | px   |                    |                      | +---------+------+------+--------------------+----------------------+ | medium  | 1.75 | 14   | 31 px              | 18 px                | |         |      | px   |                    |                      | +---------+------+------+--------------------+----------------------+ | large   | 2.5  | 20   | 45 px              | 25 px                | |         |      | px   |                    |                      | +---------+------+------+--------------------+----------------------+ | x-large | 3.5  | 34   | 76 px              | 42 px                | |         |      | px   |                    |                      | +---------+----+------+----------------------+----------------------+"
-msgstr ""
-
-#: ../../humanguide/general-concepts/04-app-icon-design.rst:2
+#: ../../humanguide/design-concepts/app-icon-design.rst:2
 msgid "App icon design"
 msgstr ""
 
-#: ../../humanguide/general-concepts/04-app-icon-design.rst:4
-msgid "The whole system and apps follows the `Suru design principles <https://docs.ubuntu.com/phone/en/apps/design/get-started/design-philosophy>`__ started by Canonical and `Samuel Hewitt <https://icons.samuelhewitt.com/>`__."
+#: ../../humanguide/design-concepts/app-icon-design.rst:4
+msgid "The whole system and apps follow the `Suru design principles <http://web.archive.org/web/20191223082720/https://docs.ubuntu.com/phone/en/apps/design/get-started/design-philosophy>`__ started by Canonical and `Samuel Hewitt <https://icons.samuelhewitt.com/>`__."
 msgstr ""
 
-#: ../../humanguide/general-concepts/04-app-icon-design.rst:10
+#: ../../humanguide/design-concepts/app-icon-design.rst:7
 msgid "Design Philosophy and Suru Meaning"
 msgstr ""
 
-#: ../../humanguide/general-concepts/04-app-icon-design.rst:12
+#: ../../humanguide/design-concepts/app-icon-design.rst:9
 msgid "Suru alludes to Japanese culture."
 msgstr ""
 
-#: ../../humanguide/general-concepts/04-app-icon-design.rst:13
+#: ../../humanguide/design-concepts/app-icon-design.rst:10
 msgid "The design of Suru is inspired by origami."
 msgstr ""
 
-#: ../../humanguide/general-concepts/04-app-icon-design.rst:14
+#: ../../humanguide/design-concepts/app-icon-design.rst:11
 msgid "Paper can be used in two and three dimensional forms, because it is transferable and diverse."
 msgstr ""
 
-#: ../../humanguide/general-concepts/04-app-icon-design.rst:17
-msgid "Suru brings a precise yet organic structure to the Ubuntu interface. The sharp lines and varying levels of transparency evoke the edges and texture of paper."
+#: ../../humanguide/design-concepts/app-icon-design.rst:14
+msgid "Suru brings a precise yet organic structure to the Ubuntu Touch interface. The sharp lines and varying levels of transparency evoke the edges and texture of paper."
 msgstr ""
 
-#: ../../humanguide/general-concepts/04-app-icon-design.rst:22
+#: ../../humanguide/design-concepts/app-icon-design.rst:17
 msgid "Design Tips for an App Icon"
 msgstr ""
 
-#: ../../humanguide/general-concepts/04-app-icon-design.rst:25
+#: ../../humanguide/design-concepts/app-icon-design.rst:20
 msgid "Descriptive design"
 msgstr ""
 
-#: ../../humanguide/general-concepts/04-app-icon-design.rst:27
+#: ../../humanguide/design-concepts/app-icon-design.rst:22
 msgid "The icon you choose for your app should describe what your app is about, what it does, or what service it is there for in a recognizable way."
 msgstr ""
 
-#: ../../humanguide/general-concepts/04-app-icon-design.rst:33
+#: ../../humanguide/design-concepts/app-icon-design.rst:27
 msgid "Distinctive shapes"
 msgstr ""
 
-#: ../../humanguide/general-concepts/04-app-icon-design.rst:35
+#: ../../humanguide/design-concepts/app-icon-design.rst:29
 msgid "Depending on the object you choose to show in the icon, on the perspective, lighting and other factors, it might be hard to recognize what you are trying to depict. A TV might look like a box, or a computer screen, a remote control like a phone, etc."
 msgstr ""
 
-#: ../../humanguide/general-concepts/04-app-icon-design.rst:43
+#: ../../humanguide/design-concepts/app-icon-design.rst:34
 msgid "Details"
 msgstr ""
 
-#: ../../humanguide/general-concepts/04-app-icon-design.rst:45
-msgid "A detailed icon is very nice too look at as it shows quality and your eye for the small things, it might add confusion though, especially in smaller sizes or for people who have impaired eyesight. Show what’s necessary, pay attention to detail, but don’t overload the icon."
+#: ../../humanguide/design-concepts/app-icon-design.rst:36
+msgid "A detailed icon is very nice to look at as it shows quality and your eye for the small things. It might add confusion though, especially in smaller sizes or for people who have impaired eyesight. Show what's necessary, pay attention to detail, but don't overload the icon."
 msgstr ""
 
-#: ../../humanguide/general-concepts/04-app-icon-design.rst:53
+#: ../../humanguide/design-concepts/app-icon-design.rst:41
 msgid "Colours"
 msgstr ""
 
-#: ../../humanguide/general-concepts/04-app-icon-design.rst:55
+#: ../../humanguide/design-concepts/app-icon-design.rst:43
 msgid "Use distinctive colours, make your icon stand out a bit and give the shapes enough contrast to be visible."
 msgstr ""
 
-#: ../../humanguide/general-concepts/04-app-icon-design.rst:61
+#: ../../humanguide/design-concepts/app-icon-design.rst:48
 msgid "Gradients"
 msgstr ""
 
-#: ../../humanguide/general-concepts/04-app-icon-design.rst:63
+#: ../../humanguide/design-concepts/app-icon-design.rst:50
 msgid "If you were to add a gradient to your icon, only use colours that are slightly different from each other so that the change is not too dramatic. For example:"
 msgstr ""
 
-#: ../../humanguide/general-concepts/04-app-icon-design.rst:70
+#: ../../humanguide/design-concepts/app-icon-design.rst:55
 msgid "Composition"
 msgstr ""
 
-#: ../../humanguide/general-concepts/04-app-icon-design.rst:72
+#: ../../humanguide/design-concepts/app-icon-design.rst:57
 msgid "Suru icons are composed of simple geometric shapes. The background is usually a coloured surface with the pictogram, also composed of flat shapes, “floating” above it."
 msgstr ""
 
-#: ../../humanguide/general-concepts/04-app-icon-design.rst:79
+#: ../../humanguide/design-concepts/app-icon-design.rst:64
 msgid "The Fold Effect"
 msgstr ""
 
-#: ../../humanguide/general-concepts/04-app-icon-design.rst:81
+#: ../../humanguide/design-concepts/app-icon-design.rst:66
 msgid "In keeping with the origami motif, some Suru icons have an implied fold. In many icons this is a single horizontal or vertical line but sometimes the fold line(s) correspond or align with elements of the pictogram."
 msgstr ""
 
-#: ../../humanguide/general-concepts/04-app-icon-design.rst:85
+#: ../../humanguide/design-concepts/app-icon-design.rst:68
 msgid "The fold is drawn simply by creating an overlay of a white or black polygon of very low opacity (usually between 1%~10%)."
 msgstr ""
 
-#: ../../humanguide/general-concepts/04-app-icon-design.rst:93
+#: ../../humanguide/design-concepts/app-icon-design.rst:75
 msgid "Grids"
 msgstr ""
 
-#: ../../humanguide/general-concepts/04-app-icon-design.rst:95
+#: ../../humanguide/design-concepts/app-icon-design.rst:77
 msgid "Using a grid layout ensures consistency across all icons and will force you to reserve area for the icon background for even padding around the pictogram."
 msgstr ""
 
-#: ../../humanguide/general-concepts/04-app-icon-design.rst:101
+#: ../../humanguide/design-concepts/app-icon-design.rst:81
 msgid "Note that the circular elements are slightly larger than rectangular elements of the grid, this overshoot is needed to compensate for the optical illusion where circular objects appear smaller than rectangular objects of the same dimensions."
 msgstr ""
 
-#: ../../humanguide/general-concepts/04-app-icon-design.rst:107
+#: ../../humanguide/design-concepts/app-icon-design.rst:84
 msgid "Unit Grid"
 msgstr ""
 
-#: ../../humanguide/general-concepts/04-app-icon-design.rst:109
+#: ../../humanguide/design-concepts/app-icon-design.rst:86
 msgid "Designing with an overall pixel grid in mind is crucial to having crisp, clean icons. Since most desktop icons have dimensions that are a factor of four (16x16, 24x24, 32x32, 48x48, 256x256) using a pixel grid with lines every 4 pixels and drawing to that grid is the best practice."
 msgstr ""
 
-#: ../../humanguide/general-concepts/04-app-icon-design.rst:115
+#: ../../humanguide/design-concepts/app-icon-design.rst:89
 msgid "Shadows"
 msgstr ""
 
-#: ../../humanguide/general-concepts/04-app-icon-design.rst:117
+#: ../../humanguide/design-concepts/app-icon-design.rst:91
 msgid "Often a Suru icon is drawn with two distinct sets of shadows, one for the pictogram to create a drop shadow effect, and a second below the overall icon shape."
 msgstr ""
 
-#: ../../humanguide/general-concepts/04-app-icon-design.rst:121
+#: ../../humanguide/design-concepts/app-icon-design.rst:93
 msgid "The drop shadow effect on the central pictogram is a combination of two shadow that are identical in shape to the pictogram:"
 msgstr ""
 
-#: ../../humanguide/general-concepts/04-app-icon-design.rst:124
+#: ../../humanguide/design-concepts/app-icon-design.rst:95
 msgid "a shape that is rgba(0,0,0,0.1) with vertical offset of 2 pixels and a blur of 1%"
 msgstr ""
 
-#: ../../humanguide/general-concepts/04-app-icon-design.rst:126
+#: ../../humanguide/design-concepts/app-icon-design.rst:96
 msgid "a shape that is rgba(0,0,0,0.4) with vertical offset of 4 pixels and a blur of 10%"
 msgstr ""
 
-#: ../../humanguide/general-concepts/04-app-icon-design.rst:131
+#: ../../humanguide/design-concepts/app-icon-design.rst:100
 msgid "If the fold effect is present, the second shadow is drawn using a linear gradient with three stops whose positions correspond to the location of the background fold."
 msgstr ""
 
-#: ../../humanguide/general-concepts/04-app-icon-design.rst:136
+#: ../../humanguide/design-concepts/app-icon-design.rst:103
 msgid "Highlights"
 msgstr ""
 
-#: ../../humanguide/general-concepts/04-app-icon-design.rst:138
-msgid "Pictograms have an ever~so~slight (1 pixel) white highlight along the top edge of them. To do this simple make 2 solid white copies of the main pictogram shape and move one copy 1 pixel down and ‘difference’ the two so what’s left is an ‘edge’ that you can align to the top of the pictogram. Repeat as needed."
+#: ../../humanguide/design-concepts/app-icon-design.rst:105
+msgid "Pictograms have an ever~so~slight (1 pixel) white highlight along the top edge of them. To do this, make 2 solid white copies of the main pictogram shape and move one copy 1 pixel down and 'difference' the two so what's left is an 'edge' that you can align to the top of the pictogram. Repeat as needed."
 msgstr ""
 
-#: ../../humanguide/general-concepts/04-app-icon-design.rst:146
-msgid "Depending on the colour of your pictogram element, you can vary the opacity of your highlight. For instance, if it is using bright, primary colours, there isn’t any need for a highlight."
+#: ../../humanguide/design-concepts/app-icon-design.rst:109
+msgid "Depending on the colour of your pictogram element, you can vary the opacity of your highlight. For instance, if it is using bright, primary colours, there isn't any need for a highlight."
 msgstr ""
 
-#: ../../humanguide/general-concepts/05-In-app-icons-design.rst:2
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:2
 msgid "In-app icons design"
 msgstr ""
 
-#: ../../humanguide/general-concepts/05-In-app-icons-design.rst:5
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:5
 msgid "Interface Icons"
 msgstr ""
 
-#: ../../humanguide/general-concepts/05-In-app-icons-design.rst:7
-msgid "Interface icons communicate either status or action displays, such as battery level or an alarm, whilst also enabling the user to perform actions like opening a menu, sharing content or print a document. The interface icons are located in the top bar or in-app icons, such as in the Header or the menus etc."
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:7
+msgid "Interface icons communicate either status or action displays, such as battery level or an alarm, whilst also enabling the user to perform actions like opening a menu, sharing content or print a document. The interface icons are located in the top bar or in-app icons, such as in the Header or the menus."
 msgstr ""
 
-#: ../../humanguide/general-concepts/05-In-app-icons-design.rst:13
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:9
 msgid "|stock_message.svg| |share.svg| |stock_alarm-clock.svg| |security-alert.svg| |settings.svg|"
 msgstr ""
 
-#: ../../humanguide/general-concepts/05-In-app-icons-design.rst:17
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:12
+msgid "See a `list of the icons <http://docs.ubports.com/projects/icons/>`__. available in the system."
+msgstr ""
+
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:15
 msgid "Color"
 msgstr ""
 
-#: ../../humanguide/general-concepts/05-In-app-icons-design.rst:19
-msgid "Interface icons can be colourized in qml therefore are design in #808080 color."
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:17
+msgid "Interface icons can be colourized in qml therefore are designed in #808080 color."
 msgstr ""
 
-#: ../../humanguide/general-concepts/05-In-app-icons-design.rst:23
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:20
 msgid "Font"
 msgstr ""
 
-#: ../../humanguide/general-concepts/05-In-app-icons-design.rst:25
-msgid "To provide a consistent look to the UI and to make the Suru icons distinctive, we base the design on the same patterns as the font. The font patterns can applied to the symbol to define their contours."
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:22
+msgid "To provide a consistent look to the UI and to make the Suru icons distinctive, the design is based on the same patterns as the Ubuntu font. The font patterns can applied to the symbol to define its contours."
 msgstr ""
 
-#: ../../humanguide/general-concepts/05-In-app-icons-design.rst:32
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:27
 msgid "Strokes"
 msgstr ""
 
-#: ../../humanguide/general-concepts/05-In-app-icons-design.rst:34
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:29
 msgid "Stroke ends are squared but the upper end of vertical strokes is slightly oblique with a +10º angle."
 msgstr ""
 
-#: ../../humanguide/general-concepts/05-In-app-icons-design.rst:40
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:34
 msgid "Rotation"
 msgstr ""
 
-#: ../../humanguide/general-concepts/05-In-app-icons-design.rst:42
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:36
 msgid "When they are not horizontal or vertical, objects are oriented along a +45º axis."
 msgstr ""
 
-#: ../../humanguide/general-concepts/05-In-app-icons-design.rst:48
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:41
 msgid "Corners"
 msgstr ""
 
-#: ../../humanguide/general-concepts/05-In-app-icons-design.rst:50
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:43
 msgid "Squared corners fit best to depict real objects and curved corners for abstract symbols. The following picture shows a zoom on the default outer and inner curvatures, with nodes and Bezier handle. The default curvature can be scaled down when the shape is smaller."
 msgstr ""
 
-#: ../../humanguide/general-concepts/05-In-app-icons-design.rst:58
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:48
 msgid "Arrows"
 msgstr ""
 
-#: ../../humanguide/general-concepts/05-In-app-icons-design.rst:60
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:50
 msgid "A chevron symbol is used for navigation arrows. The arrowhead is an isosceles triangle where the two equal sides are slightly curved (following the pattern of the Y character)."
 msgstr ""
 
-#: ../../humanguide/general-concepts/05-In-app-icons-design.rst:67
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:55
 msgid "Opacity"
 msgstr ""
 
-#: ../../humanguide/general-concepts/05-In-app-icons-design.rst:69
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:57
 msgid "50% opacity is used to reflect the status of an indicator. In case of a double space (enabled and disabled, for example), the opacity of the whole icon changes. When the status allows a range of values, the opacity of a single portion of icon can be altered."
 msgstr ""
 
-#: ../../humanguide/general-concepts/05-In-app-icons-design.rst:77
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:62
 msgid "Grid"
 msgstr ""
 
-#: ../../humanguide/general-concepts/05-In-app-icons-design.rst:79
-msgid "Interface icon size is 96 x 96 px (4 pixels padding)"
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:64
+msgid "Interface icons are designed for 96x96 pixels, with at least 4 pixels of margin on every side."
 msgstr ""
 
-#: ../../humanguide/general-concepts/index.rst:2
-msgid "General concepts"
+#: ../../humanguide/design-concepts/index.rst:2
+msgid "Design concepts"
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:1
+msgid "As designed by `Canonical <https://www.canonical.com/>`__, we use the following system palette (from `Michał Prędotka <http://colors.mivoligo.com/>`__ and `Ubuntu documentation <https://docs.ubuntu.com/phone/en/apps/api-qml-development/Ubuntu.Components.UbuntuColors>`__):"
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:4
+msgid "Operating system and app palette"
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:8
+#: ../../humanguide/design-concepts/system-palette.rst:115
+msgid "#FFFFFF White"
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:10
+msgid "Recomended for background on Ambiance theme (light theme) or regular text on Suru Dark theme."
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:14
+msgid "#111111 Jet"
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:16
+msgid "Recommended for regular text on Ambiance theme or background in Suru Dark."
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:20
+msgid "#3B3B3B Inkstone"
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:22
+msgid "Recommended for foreground colours in dark themes."
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:26
+msgid "#5D5D5D Slate"
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:28
+msgid "Recommended for text and action icons."
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:32
+msgid "#666666 Graphite"
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:34
+msgid "Recommended for coloring dark themes' background."
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:38
+msgid "#888888 Ash"
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:40
+msgid "Recommended for subtitles and other tertiary content."
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:44
+msgid "#CDCDCD Silk"
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:46
+msgid "Recommended for neutral action buttons and secondary text."
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:50
+msgid "#F7F7F7 Porcelain"
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:52
+msgid "Recommended for foregrounds."
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:56
+msgid "#19B6EE Blue"
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:58
+msgid "Recommended for progress bars, selected areas, text selection and text cursor. Also neutral actions (Ambiance)."
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:62
+msgid "#335280 Light Blue"
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:64
+msgid "Recommended for progress bars, selected areas, text selection and text cursor. Also neutral actions (SuruDark)."
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:68
+msgid "#3EB34F Green"
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:70
+msgid "Recommended for positive action buttons (SuruDark)."
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:74
+msgid "#0E8420 Light Green"
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:76
+msgid "Recommended for positive action buttons (Ambiance)."
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:80
+msgid "#C7162B Red"
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:82
+msgid "Recommended for negative and irreversible action buttons, errors and alerts (Ambiance)."
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:86
+msgid "#ED3146 Light Red"
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:88
+msgid "Recommended for negative and irreversible action buttons, errors and alerts (SuruDark)."
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:92
+msgid "#E95420 Orange"
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:94
+msgid "Orange is recommended for branded elements, focus and intensity."
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:96
+msgid "Following the colour scheme from `Canonical <https://design.ubuntu.com/brand/colour-palette/>`__, we use:"
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:100
+msgid "Corporative Image"
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:103
+msgid "Core Colours"
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:105
+msgid "The Ubuntu Touch colour palette has been created to reflect the spirit of the brand."
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:109
+msgid "#E95420 Ubuntu Orange"
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:111
+msgid "Orange for a community feel."
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:117
+msgid "White for a clean, fresh and light feel."
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:121
+msgid "#000000 Black"
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:123
+msgid "Black is used in some versions of the brandmark for flexibility of application and where print restrictions apply. It can also be used for body copy."
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:126
+msgid "Supporting colours"
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:128
+msgid "Supporting colour palette for when communications have a consumer or enterprise focus."
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:132
+msgid "#77216F Light aubergine"
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:134
+msgid "Light aubergine for a consumer focus."
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:138
+msgid "#5E2750 Mid aubergine"
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:140
+msgid "Mid aubergine for a balance of both."
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:144
+msgid "#2C001E Dark aubergine"
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:146
+msgid "Dark aubergine for an enterprise focus."
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:149
+msgid "Neutral colours"
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:153
+msgid "#AEA79F Warm grey"
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:155
+msgid "For balance. The addition of warm grey softens the combination of orange and aubergine and provides a bridge between the two."
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:157
+msgid "Warm grey can be used for; backgrounds, graphics, pictograms, dot patterns, charts and diagrams. It can also be used for large size text."
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:161
+msgid "#333333 Cool grey"
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:163
+msgid "For typography, particularly body copy. Black can be quite harsh in combination with aubergine, but grey delivers more balance while still being legible."
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:165
+msgid "Cool grey can also be used within charts and diagrams."
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:169
+msgid "#111111 Text grey (Jet)"
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:171
+msgid "Text grey is used for small size headings, sub-headings and body copy text only."
+msgstr ""
+
+#: ../../humanguide/design-concepts/typography.rst:2
+msgid "Typography"
+msgstr ""
+
+#: ../../humanguide/design-concepts/typography.rst:5
+msgid "Fonts"
+msgstr ""
+
+#: ../../humanguide/design-concepts/typography.rst:7
+msgid "Our default font is `Ubuntu font <https://design.ubuntu.com/font/>`__ `[2] <https://en.wikipedia.org/wiki/Ubuntu_(typeface)>`__ installed in the system."
+msgstr ""
+
+#: ../../humanguide/design-concepts/typography.rst:11
+msgid "For the font sizes to be consistent across devices, instead of setting the font size as a number of pixels or points, it is imperative to define the font size in terms of size names:"
+msgstr ""
+
+#: ../../humanguide/design-concepts/typography.rst:14
+msgid "Font Size Name"
+msgstr ""
+
+#: ../../humanguide/design-concepts/typography.rst:14
+msgid "gu"
+msgstr ""
+
+#: ../../humanguide/design-concepts/typography.rst:14
+msgid "Desk- top"
+msgstr ""
+
+#: ../../humanguide/design-concepts/typography.rst:14
+msgid "Smart Phone with 4\" HD screen"
+msgstr ""
+
+#: ../../humanguide/design-concepts/typography.rst:14
+msgid "Tablet with 10\" HD screen"
+msgstr ""
+
+#: ../../humanguide/design-concepts/typography.rst:18
+msgid "x-small"
+msgstr ""
+
+#: ../../humanguide/design-concepts/typography.rst:18
+msgid "1.25"
+msgstr ""
+
+#: ../../humanguide/design-concepts/typography.rst:18
+msgid "10 px"
+msgstr ""
+
+#: ../../humanguide/design-concepts/typography.rst:18
+msgid "22 px"
+msgstr ""
+
+#: ../../humanguide/design-concepts/typography.rst:18
+#: ../../humanguide/design-concepts/typography.rst:20
+msgid "12 px"
+msgstr ""
+
+#: ../../humanguide/design-concepts/typography.rst:20
+msgid "small"
+msgstr ""
+
+#: ../../humanguide/design-concepts/typography.rst:20
+msgid "1.5"
+msgstr ""
+
+#: ../../humanguide/design-concepts/typography.rst:20
+msgid "27 px"
+msgstr ""
+
+#: ../../humanguide/design-concepts/typography.rst:20
+msgid "15 px"
+msgstr ""
+
+#: ../../humanguide/design-concepts/typography.rst:22
+msgid "medium"
+msgstr ""
+
+#: ../../humanguide/design-concepts/typography.rst:22
+msgid "1.75"
+msgstr ""
+
+#: ../../humanguide/design-concepts/typography.rst:22
+msgid "14 px"
+msgstr ""
+
+#: ../../humanguide/design-concepts/typography.rst:22
+msgid "31 px"
+msgstr ""
+
+#: ../../humanguide/design-concepts/typography.rst:22
+msgid "18 px"
+msgstr ""
+
+#: ../../humanguide/design-concepts/typography.rst:24
+msgid "large"
+msgstr ""
+
+#: ../../humanguide/design-concepts/typography.rst:24
+msgid "2.5"
+msgstr ""
+
+#: ../../humanguide/design-concepts/typography.rst:24
+msgid "20 px"
+msgstr ""
+
+#: ../../humanguide/design-concepts/typography.rst:24
+msgid "45 px"
+msgstr ""
+
+#: ../../humanguide/design-concepts/typography.rst:24
+msgid "25 px"
+msgstr ""
+
+#: ../../humanguide/design-concepts/typography.rst:26
+msgid "x-large"
+msgstr ""
+
+#: ../../humanguide/design-concepts/typography.rst:26
+msgid "3.5"
+msgstr ""
+
+#: ../../humanguide/design-concepts/typography.rst:26
+msgid "34 px"
+msgstr ""
+
+#: ../../humanguide/design-concepts/typography.rst:26
+msgid "76 px"
+msgstr ""
+
+#: ../../humanguide/design-concepts/typography.rst:26
+msgid "42 px"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:2
+msgid "Units"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:5
+msgid "Resolution Independence Approach"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:7
+msgid "The objective of resolution independence is to make it easy for graphical user interfaces in Ubuntu Touch to scale to all the form factors that Ubuntu Touch targets: phones, tablets, laptops and desktops. The approach taken combines simplicity for the designers and developers with visual fidelity, quality and usability."
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:10
+msgid "Measurement Units"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:13
+msgid "Grid Unit"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:15
+msgid "A measurement unit called the *grid unit* is defined, abbreviated gu. 1 grid unit translates to a given number of pixels depending on the type of screen that the user interface is displayed on. For example, on a laptop computer 1 grid unit will typically translate to 8 pixels. The number of pixels per grid unit is chosen in order to preserve the perceived visual size of UI elements and therefore depends on the density of the display and the distance the user is to the screen. We also ensure that 1 grid unit is always an integer number of pixel."
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:18
+msgid "Device"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:18
+msgid "Conversion"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:20
+msgid "Most laptops"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:20
+msgid "1 gu = 8 px"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:23
+msgid "Retina laptops"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:23
+msgid "1 gu = 16 px"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:26
+msgid "Phone with 4 inch screen at HD resolution (around 720x1,280 pixels)"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:26
+msgid "1 gu = 18 px"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:29
+msgid "Tablet with 10 inch screen at HD resolution (around 720x1,280 pixels)"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:29
+msgid "1 gu = 10 px"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:34
+msgid "Density Unit"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:36
+msgid "Exceptionally, in order to accommodate for the rare cases where measurements of less than 1 gu are needed another unit is available: the *density independent pixel,* abbreviated dp. 1 dp typically translates to 1 pixel on laptops and low density mobile phones and tablets."
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:39
+msgid "Use"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:49
+msgid "Device Sizes"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:52
+msgid "Device Grid Units"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:52
+msgid "width"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:52
+msgid "height"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:54
+msgid "E5 (portrait)"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:54
+msgid "42"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:54
+msgid "72"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:56
+msgid "M10 HD (landscape)"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:56
+msgid "160"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:56
+msgid "97"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:58
+msgid "M10 FHD (landscape)"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:58
+msgid "148"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:58
+msgid "89"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:60
+msgid "N5 (portrait)"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:60
+msgid "47"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:60
+msgid "80"
 msgstr ""
 
 #: ../../humanguide/index.rst:2
@@ -623,350 +1039,102 @@ msgid "Human interface guidelines"
 msgstr ""
 
 #: ../../humanguide/index.rst:4
-msgid "Ubuntu Touch follows a clean, beautiful and modern design but over all: convergent. We follow the basics of the Canonical design before they left the project."
+msgid "Ubuntu Touch follows a clean, beautiful, modern and (above all) convergent design. We aim to keep developing the design started by Canonical."
 msgstr ""
 
-#: ../../humanguide/layout/01-app-main-view.rst:2
-msgid "App main view"
-msgstr ""
-
-#: ../../humanguide/layout/01-app-main-view.rst:4
-msgid "When an app starts, shows a generic splash screen (as in the image) or a custom one, then the main view."
-msgstr ""
-
-#: ../../humanguide/layout/01-app-main-view.rst:10
-msgid "Splash-Main"
-msgstr ""
-
-#: ../../humanguide/layout/01-app-main-view.rst:12
-msgid "The standard parts of an main view or any other page may be:"
-msgstr ""
-
-#: ../../humanguide/layout/01-app-main-view.rst:15
-msgid "Header"
-msgstr ""
-
-#: ../../humanguide/layout/01-app-main-view.rst:17
-msgid "Display app name, leading area and trailing area icons."
-msgstr ""
-
-#: ../../humanguide/layout/01-app-main-view.rst:21
-msgid "In this case, showing title and trailing actions"
-msgstr ""
-
-#: ../../humanguide/layout/01-app-main-view.rst:24
-msgid "Tabbed content"
-msgstr ""
-
-#: ../../humanguide/layout/01-app-main-view.rst:26
-msgid "To organize information under tabs"
-msgstr ""
-
-#: ../../humanguide/layout/01-app-main-view.rst:31
-msgid "Bottom edge menu"
-msgstr ""
-
-#: ../../humanguide/layout/01-app-main-view.rst:33
-msgid "For quick to common actions"
-msgstr ""
-
-#: ../../humanguide/layout/02-header-uses.rst:2
-msgid "Header uses"
-msgstr ""
-
-#: ../../humanguide/layout/02-header-uses.rst:4
-msgid "App header can be used to show app name, app section or page, search box, etc."
-msgstr ""
-
-#: ../../humanguide/layout/02-header-uses.rst:13
-msgid "Some special apps doesn’t show any header: like the Camera app or some games."
-msgstr ""
-
-#: ../../humanguide/layout/02-header-uses.rst:16
-msgid "Header takes care automatically of showing the back button when a `page stack <https://api-docs.ubports.com/sdk/apps/qml/Ubuntu.Components/PageStack.html>`__ is used"
-msgstr ""
-
-#: ../../humanguide/layout/03-main-actions.rst:2
-msgid "Main actions"
-msgstr ""
-
-#: ../../humanguide/layout/03-main-actions.rst:4
-msgid "Main actions are displayed in the corresponding header of the Page. Trying to be focused on the action relevant to the current page."
-msgstr ""
-
-#: ../../humanguide/layout/03-main-actions.rst:7
-msgid "Main page of Contacts app shows:"
-msgstr ""
-
-#: ../../humanguide/layout/03-main-actions.rst:11
-msgid "Tapping on a contact, show only relevant actions:"
-msgstr ""
-
-#: ../../humanguide/layout/03-main-actions.rst:16
-msgid "Slots"
-msgstr ""
-
-#: ../../humanguide/layout/03-main-actions.rst:18
-msgid "The header contains a number of slots that can hold actions or navigational options. Depending on the surface or window size, additional slots can be added to show the actions otherwise hidden in drawers."
-msgstr ""
-
-#: ../../humanguide/layout/03-main-actions.rst:26
-msgid "Action Drawer"
-msgstr ""
-
-#: ../../humanguide/layout/03-main-actions.rst:28
-msgid "An action drawer can be used for when no other slots are available to show them. However, when your app is on a larger surface, like on a desktop, then actions will appear in the slots."
-msgstr ""
-
-#: ../../humanguide/layout/03-main-actions.rst:35
-msgid "Responsive layout"
-msgstr ""
-
-#: ../../humanguide/layout/03-main-actions.rst:37
-msgid "As the header gains width across screen sizes, additional slots become visible and actions in the drawer will appear automatically."
-msgstr ""
-
-#: ../../humanguide/layout/03-main-actions.rst:41
-msgid "3 slot layout"
-msgstr ""
-
-#: ../../humanguide/layout/03-main-actions.rst:48
-msgid "4 slot layout"
-msgstr ""
-
-#: ../../humanguide/layout/03-main-actions.rst:55
-msgid "5 slot layout"
-msgstr ""
-
-#: ../../humanguide/layout/03-main-actions.rst:62
-msgid "6 slot layout"
-msgstr ""
-
-#: ../../humanguide/layout/03-main-actions.rst:69
-msgid "Medium to large screens"
-msgstr ""
-
-#: ../../humanguide/layout/03-main-actions.rst:71
-msgid "The maximum number of visible action slots in a convergent environment is 6. If this is exceeded then additional actions will migrate to the action drawer."
-msgstr ""
-
-#: ../../humanguide/layout/03-main-actions.rst:76
-msgid "Simple"
-msgstr ""
-
-#: ../../humanguide/layout/03-main-actions.rst:78
-msgid "Keep in mind to keep a clean design. The simpler, the better."
-msgstr ""
-
-#: ../../humanguide/layout/04-common-quick-actions.rst:2
-msgid "Common quick actions"
-msgstr ""
-
-#: ../../humanguide/layout/04-common-quick-actions.rst:4
-msgid "The most common action for an app, the one that needs to be accessed quickly might be added as a `bottom edge <https://api-docs.ubports.com/sdk/apps/qml/Ubuntu.Components/BottomEdge.html>`__ action, accessed with a swipe from outside of the screen upwards."
-msgstr ""
-
-#: ../../humanguide/layout/04-common-quick-actions.rst:9
-msgid "You can add a new contact in the Contacts app swiping up:"
-msgstr ""
-
-#: ../../humanguide/layout/04-common-quick-actions.rst:14
-msgid "Hint"
-msgstr ""
-
-#: ../../humanguide/layout/04-common-quick-actions.rst:16
-msgid "The hint is used to let the user know that there is something worth trying at the bottom of the screen."
-msgstr ""
-
-#: ../../humanguide/layout/04-common-quick-actions.rst:19
-msgid "After open an app, a hint with a text and/or an icon is shown:"
-msgstr ""
-
-#: ../../humanguide/layout/04-common-quick-actions.rst:23
-msgid "After some seconds it hides and a floating icon is hown"
-msgstr ""
-
-#: ../../humanguide/layout/05-dialogues.rst:2
-msgid "Dialogues"
-msgstr ""
-
-#: ../../humanguide/layout/05-dialogues.rst:4
-msgid "A dialogue is a way of informing the user about important notices or letting them to complete easy single action on a current page."
-msgstr ""
-
-#: ../../humanguide/layout/05-dialogues.rst:7
-msgid "Dialogues should be clear and concise. Using one color accent for the main action (red for destructive actions, green for positive actions, grey for neutral actions) and avoid ambiguous button text."
-msgstr ""
-
-#: ../../humanguide/layout/05-dialogues.rst:13
-msgid "Examples: left: Download a file (old accent color) right: Delete a contact (wrong use of color, confusing answers."
-msgstr ""
-
-#: ../../humanguide/layout/05-dialogues.rst:16
-msgid "Let’s focus on the ‘Delete a contact dialogue’: Question: Are you sure that you want to delete this contact? Answers: Yes (green positive), No (red destructive)."
-msgstr ""
-
-#: ../../humanguide/layout/05-dialogues.rst:20
-msgid "This is a clear example of an ambiguous answer text we want to avoid. we want to focus on the main action that is to remove the contact which is a destructive action, therefore we will present the dialogue like:"
-msgstr ""
-
-#: ../../humanguide/layout/index.rst:2
-msgid "Layout"
-msgstr ""
-
-#: ../../humanguide/other-aspects/01-convergence.rst:2
-msgid "Convergence"
-msgstr ""
-
-#: ../../humanguide/other-aspects/01-convergence.rst:4
-msgid "Convergence is one of the milestones Ubuntu Touch wants to achieve. One app, usable on all platforms: mobile, tablet, desktop."
-msgstr ""
-
-#: ../../humanguide/other-aspects/01-convergence.rst:9
-msgid "Main page stays as the main page on phones or on the left on bigger screen devices. Additional pages on the phone, can be displayed at variable sizes on the right on bigger screens."
-msgstr ""
-
-#: ../../humanguide/other-aspects/01-convergence.rst:13
-msgid "Using touch a user can swipe or long-press on a list item to reveal a contextual menu. Using a pointer (mouse or trackpad) a user can right-click the item to reveal the contextual menu. Using a keyboard a user can focus the desired item and press the MENU key to open the context menu."
-msgstr ""
-
-#: ../../humanguide/other-aspects/02-accessibility.rst:2
+#: ../../humanguide/other-design-considerations/accessibility.rst:2
 msgid "Accessibility"
 msgstr ""
 
-#: ../../humanguide/other-aspects/02-accessibility.rst:4
-msgid "Accessibility is important to make all users to be able to use the operating system no matter what special needs or kind of input method they have."
+#: ../../humanguide/other-design-considerations/accessibility.rst:4
+msgid "Accessibility is important to make all users to be able to use the operating system."
 msgstr ""
 
-#: ../../humanguide/other-aspects/02-accessibility.rst:9
-msgid "High Contrast and Colour Blind Friendly Themes"
+#: ../../humanguide/other-design-considerations/accessibility.rst:7
+msgid "Inclusive palette and theme"
 msgstr ""
 
-#: ../../humanguide/other-aspects/02-accessibility.rst:11
-msgid "We need to design a theme for user with special needs. One proposal of colour blind friendly theme is `here <http://colors.mivoligo.com/#color-blind>`__."
+#: ../../humanguide/other-design-considerations/accessibility.rst:9
+msgid "We would like to create and implement color palettes helpful to people who have sight impairment: - Additional `palette proposal <http://colors.mivoligo.com/#color-blind>`__. - A high contrast theme. - Adaptable font size theme."
 msgstr ""
 
-#: ../../humanguide/other-aspects/02-accessibility.rst:15
-msgid "We need a high contrast theme"
-msgstr ""
-
-#: ../../humanguide/other-aspects/02-accessibility.rst:18
+#: ../../humanguide/other-design-considerations/accessibility.rst:15
 msgid "Input methods"
 msgstr ""
 
-#: ../../humanguide/other-aspects/02-accessibility.rst:20
-msgid "Apps should be accessible by mouse, touch and with keyboard only."
+#: ../../humanguide/other-design-considerations/accessibility.rst:17
+msgid "Apps should be accessible by mouse, touch and using a keyboard only."
 msgstr ""
 
-#: ../../humanguide/other-aspects/03-importing-data.rst:2
-msgid "Importing Data"
+#: ../../humanguide/other-design-considerations/convergence.rst:2
+msgid "Convergence"
 msgstr ""
 
-#: ../../humanguide/other-aspects/03-importing-data.rst:4
-msgid "Due to the isolation between apps, when interchange of data between apps is needed, is done through the Content Hub."
+#: ../../humanguide/other-design-considerations/convergence.rst:6
+msgid "Convergence is one of the milestones Ubuntu Touch wants to achieve. One app available across all screen sizes and input methods, such as mobile handsets, tablets, and laptops."
 msgstr ""
 
-#: ../../humanguide/other-aspects/03-importing-data.rst:9
-msgid "Apps with the right apparmor permissions can import, export or share data between them."
+#: ../../humanguide/other-design-considerations/convergence.rst:9
+msgid "Screen size"
 msgstr ""
 
-#: ../../humanguide/other-aspects/04-presenting-data.rst:2
-msgid "Presenting data"
+#: ../../humanguide/other-design-considerations/convergence.rst:13
+msgid "Ubuntu Touch Tweak Tool app"
 msgstr ""
 
-#: ../../humanguide/other-aspects/04-presenting-data.rst:5
-msgid "List Items"
+#: ../../humanguide/other-design-considerations/convergence.rst:15
+msgid "Main page stays as the main page on phones or on the left on bigger screen devices. Additional pages on the phone, can be displayed at variable sizes on the right on bigger screens."
 msgstr ""
 
-#: ../../humanguide/other-aspects/04-presenting-data.rst:7
-msgid "List items can be used to make up a list of ordered scrollable items that are related to each other."
+#: ../../humanguide/other-design-considerations/convergence.rst:18
+msgid "Input method"
 msgstr ""
 
-#: ../../humanguide/other-aspects/04-presenting-data.rst:12
-msgid "When images or icons are presented without text or actions, it would make more sense to show them inside a grid rather than a list; like in a photo gallery."
+#: ../../humanguide/other-design-considerations/convergence.rst:20
+msgid "Using touch a user can swipe or long-press on a list item to reveal a contextual menu. Using a pointer (mouse or trackpad) a user can right-click the item to reveal the contextual menu. Using a keyboard a user can focus the desired item and press the MENU key to open the context menu."
 msgstr ""
 
-#: ../../humanguide/other-aspects/04-presenting-data.rst:18
-msgid "Items in a list can have actions that can be placed in a context menu. The context menu can be accessed in two ways: by swiping or right-clicking the list item."
+#: ../../humanguide/other-design-considerations/index.rst:2
+msgid "Other design considerations"
 msgstr ""
 
-#: ../../humanguide/other-aspects/04-presenting-data.rst:22
-msgid "The actions are placed within two categories: leading for negative actions and trailing for positive actions."
-msgstr ""
-
-#: ../../humanguide/other-aspects/04-presenting-data.rst:26
-msgid "Touch swiping"
-msgstr ""
-
-#: ../../humanguide/other-aspects/04-presenting-data.rst:33
-msgid "Mouse right click"
-msgstr ""
-
-#: ../../humanguide/other-aspects/04-presenting-data.rst:38
-msgid "Keyboard navigation"
-msgstr ""
-
-#: ../../humanguide/other-aspects/04-presenting-data.rst:43
-msgid "Lists in edit mode"
-msgstr ""
-
-#: ../../humanguide/other-aspects/04-presenting-data.rst:45
-msgid "Edit mode allows users to modify a particular item or multiple items at once."
-msgstr ""
-
-#: ../../humanguide/other-aspects/04-presenting-data.rst:48
-msgid "You can use edit mode to allow users to multi-select, rearrange or delete items inside a list. When edit mode is entered the whole screen becomes an edit state and the header will show associated editing actions for the content. Alternatively, if the user long presses an item a context menu will show the associated editing actions too."
-msgstr ""
-
-#: ../../humanguide/other-aspects/04-presenting-data.rst:59
-msgid "ListItemLayout labels"
-msgstr ""
-
-#: ../../humanguide/other-aspects/04-presenting-data.rst:63
-msgid "1 line – Title"
-msgstr ""
-
-#: ../../humanguide/other-aspects/04-presenting-data.rst:65
-msgid "1 line – Subtitle"
-msgstr ""
-
-#: ../../humanguide/other-aspects/04-presenting-data.rst:67
-msgid "2 lines – Summary"
-msgstr ""
-
-#: ../../humanguide/other-aspects/05-translations.rst:2
-msgid "Translations"
-msgstr ""
-
-#: ../../humanguide/other-aspects/05-translations.rst:4
-msgid "As part of the accessibility, translating an app is important. `Clickable <http://clickable.bhdouglass.com/>`__ will handle this process automatically, extracting new translatable strings into a pot file (the source strings of your app, to be translated)"
-msgstr ""
-
-#: ../../humanguide/other-aspects/05-translations.rst:9
-msgid "Marking a string to be translatable is as simple as calling i18n.tr(string). For example:"
-msgstr ""
-
-#: ../../humanguide/other-aspects/05-translations.rst:18
-msgid "More information and options can be found in this a bit outdated `tutorial on localization <https://docs.ubuntu.com/phone/en/apps/qml/tutorials-internationalizing-your-app>`__ an app."
-msgstr ""
-
-#: ../../humanguide/other-aspects/06-scaling-images.rst:2
+#: ../../humanguide/other-design-considerations/scaling-images.rst:2
 msgid "Scaling images"
 msgstr ""
 
-#: ../../humanguide/other-aspects/06-scaling-images.rst:4
-msgid "One important aspect for app convergence is the images and how to scale them. From app icon to in-app images can be done in `svg <https://en.wikipedia.org/wiki/Scalable_Vector_Graphics>`__ (scalable format) using software like `Inkscape <https://inkscape.org/>`__."
+#: ../../humanguide/other-design-considerations/scaling-images.rst:4
+msgid "Scaling images is important in a convergent app. App icons and images can be created in scalable formats to improve their ability to scale."
 msgstr ""
 
-#: ../../humanguide/other-aspects/06-scaling-images.rst:12
-msgid "One particularity of qml, though, is that svg are rendered to use low memory. So we seem to lose the power of scalable images. Image element has a property called ``sourceSize`` that may indicate the size for a svg to be rendered. It is not advisable to make this property a percentage but we can use to render to different scales for different devices:"
+#: ../../humanguide/other-design-considerations/scaling-images.rst:9
+msgid "One of the most popular scalable formats is `SVG <https://en.wikipedia.org/wiki/Scalable_Vector_Graphics>`__. SVG files can be created using software like `Inkscape <https://inkscape.org/>`__."
 msgstr ""
 
-#: ../../humanguide/other-aspects/06-scaling-images.rst:26
-msgid "In this way, we use a very small image for any kind of screen size."
+#: ../../humanguide/other-design-considerations/scaling-images.rst:11
+msgid "One particularity of qml, though, is that svg are rendered to use low memory and losing the advatadges of scalability. When using a SVG file in an ``Image`` element we can use the property called ``sourceSize``. This will define the rendered size of the SVG image. A SVG image with a ``sourceSize`` width and height of 252 pixels, will be rendered as if the scalable image would be a png of 252 per 252 pixels."
 msgstr ""
 
-#: ../../humanguide/other-aspects/index.rst:2
-msgid "Other aspects"
+#: ../../humanguide/other-design-considerations/scaling-images.rst:16
+msgid "Different redered sizes of the same svg image"
+msgstr ""
+
+#: ../../humanguide/other-design-considerations/scaling-images.rst:18
+msgid "It is not advisable to define ``sourceSize`` as a relative size to avoid performance issues. A good practice could be defining different ``sourceSize`` depending on diverse thresholds. In the example below the image.svg will be rendered 60 per 60 grid units if the main view is bigger that 70 grid units but as an image of 40 per 40 grid units in the other cases. Like this we make use of the image scability and no performance cost."
+msgstr ""
+
+#: ../../humanguide/other-design-considerations/translations.rst:2
+msgid "Translations"
+msgstr ""
+
+#: ../../humanguide/other-design-considerations/translations.rst:4
+msgid "Adding translations to your app makes it more accessible to international users. `Clickable <http://clickable.bhdouglass.com/>`__ will handle this process automatically, extracting new translatable strings into a pot file (the source strings of your app, to be translated)"
+msgstr ""
+
+#: ../../humanguide/other-design-considerations/translations.rst:6
+msgid "Marking a string to be translatable can be achieved like this i18n.tr(string). For example:"
+msgstr ""
+
+#: ../../humanguide/other-design-considerations/translations.rst:14
+msgid "More information and options can be found in this a bit outdated `tutorial on localization <http://web.archive.org/web/https://docs.ubuntu.com/phone/en/apps/qml/tutorials-internationalizing-your-app>`__ an app."
 msgstr ""
 
