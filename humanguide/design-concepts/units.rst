@@ -4,7 +4,7 @@ Units
 Resolution Independence Approach
 --------------------------------
 
-The objective of resolution independence is to make it easy for graphical user interfaces in Ubuntu to scale to all the form factors that Ubuntu targets: phones, tablets, laptops and desktops. The approach taken combines simplicity for the designers and developers with visual fidelity, quality and usability.
+The objective of resolution independence is to make it easy for graphical user interfaces in Ubuntu Touch to scale to all the form factors that Ubuntu Touch targets: phones, tablets, laptops and desktops. The approach taken combines simplicity for the designers and developers with visual fidelity, quality and usability.
 
 Measurement Units
 -----------------

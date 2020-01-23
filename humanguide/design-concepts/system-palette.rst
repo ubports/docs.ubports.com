@@ -102,7 +102,7 @@ Corporative Image
 Core Colours
 ~~~~~~~~~~~~
 
-The Ubuntu colour palette has been created to reflect the spirit of the brand.
+The Ubuntu Touch colour palette has been created to reflect the spirit of the brand.
 
 .. figure:: /_static/images/humanguide/color-orange.svg
 

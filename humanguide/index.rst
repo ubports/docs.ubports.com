@@ -7,5 +7,5 @@ Ubuntu Touch follows a clean, beautiful, modern and (above all) convergent desig
     :maxdepth: 1
 
     design-concepts/index.rst
-    layout/index.rst
-    other-aspects/index.rst
+    app-layout/index.rst
+    other-design-considerations/index.rst

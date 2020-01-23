@@ -44,8 +44,8 @@ You can use edit mode to allow users to multi-select, rearrange or delete items 
 
 .. figure:: /_static/images/humanguide/51.png
 
-ListItemLayout labels
----------------------
+Layout of detailed list items
+-----------------------------
 
 .. figure:: /_static/images/humanguide/52.png
 

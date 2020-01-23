@@ -11,7 +11,7 @@ Design Philosophy and Suru Meaning
 -  Paper can be used in two and three dimensional forms, because it is
    transferable and diverse.
 
-Suru brings a precise yet organic structure to the Ubuntu interface. The sharp lines and varying levels of transparency evoke the edges and texture of paper.
+Suru brings a precise yet organic structure to the Ubuntu Touch interface. The sharp lines and varying levels of transparency evoke the edges and texture of paper.
 
 Design Tips for an App Icon
 ---------------------------
