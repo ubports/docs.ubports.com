@@ -129,7 +129,9 @@ Meizu devices are pretty much stuck on Flyme. While the MX4 can be flashed succe
     - `Bq M10 FHD <https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/Ubuntu/OTA_15/frieza-image-stable-8.zip>`_ (*frieza*)
     - `Meizu MX4 <http://people.canonical.com/~alextu/tangxi/684.zip>`_ (*arale*)
 
-3. Download `SP flash tool <https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/Ubuntu/SP_Flash_Tool_exe_Linux_v5.1612.00.100.zip>`_ for Linux.
+3. Download the latest version of `SP flash tool <https://spflashtool.com/download/>`_.
+
+You will may need to remove ``modemmanager`` as it can make your installation failing (ending with a 100% red bar in the tool and hanging there).
 
 On Ubuntu 17.10, there are issues with flash_tool loading the shared library 'libpng12', so this can be used as a workaround:
 
@@ -138,8 +140,6 @@ On Ubuntu 17.10, there are issues with flash_tool loading the shared library 'li
     wget -q -O /tmp/libpng12.deb http://mirrors.kernel.org/ubuntu/pool/main/libp/libpng/libpng12-0_1.2.54-1ubuntu1_amd64.deb \
     && sudo dpkg -i /tmp/libpng12.deb \
     && rm /tmp/libpng12.deb
-
-You will also need to use `the latest version of the tool <https://spflashtool.com/download/SP_Flash_Tool_v5.1744_Linux.zip>`_.
 
 4. Extract the zip files
 5. Start the tool with ``sudo``
