@@ -131,7 +131,7 @@ Meizu devices are pretty much stuck on Flyme. While the MX4 can be flashed succe
 
 3. Download the latest version of `SP flash tool <https://spflashtool.com/download/>`_.
 
-You will may need to remove ``modemmanager`` as it can make your installation failing (ending with a 100% red bar in the tool and hanging there).
+If the installation fails with a 100% red bar and hangs there, remove ``modemmanager`` and try again.
 
 On Ubuntu 17.10, there are issues with flash_tool loading the shared library 'libpng12', so this can be used as a workaround:
 
