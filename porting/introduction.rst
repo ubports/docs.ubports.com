@@ -17,7 +17,7 @@ Start at :doc:`building-halium-boot` if you'd like to install the UBports Ubuntu
 .. toctree::
     :maxdepth: 1
     :name: toc-porting
-
+    halium-ubports-differences
     building-halium-boot
     installing-16-04
     running-ut
