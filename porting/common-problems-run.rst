@@ -52,6 +52,17 @@ Try to diagnose and fix any mounting errors that you find in the log for the par
 
     Some devices have a ``vendor`` partition that contains proprietary libraries and executables required to run Android. If your device has this partition, make sure that it is mounted in addition to the others listed above.
 
+Mali video acselerator and no gui
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+On devices with mali video acselerator, moste not qcom devices, test_hwcomposer will work only if you run it as root. Due to wrong premission on ``/dev/mali0`` and ``/dev/mtk_disp_mgr``. For fixing that you need to create ``etc/udev/rules.d/998-droid-system.rules`` with this content:
+``KERNEL=="ashmem", MODE="0666"
+KERNEL=="binder", MODE="0666"
+KERNEL=="fb0", MODE="0666"
+KERNEL=="ion", MODE="0666"
+KERNEL=="mtk_disp_mgr", MODE="0666"
+KERNEL=="pmsg0", MODE="0666"
+KERNEL=="mali0", MODE="0666"
+KERNEL=="swsync", MODE="0666"``
 
 Getting more Mir logs
 ^^^^^^^^^^^^^^^^^^^^^
