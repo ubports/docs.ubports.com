@@ -130,8 +130,8 @@ Meizu devices are pretty much stuck on Flyme. While the MX4 can be flashed succe
     - `Meizu MX4 <http://people.canonical.com/~alextu/tangxi/684.zip>`_ (*arale*)
 
 3. Download the latest version of `SP flash tool <https://spflashtool.com/download/>`_ (*aka MTK flash tool*).
-4. Open a Terminal, enter the SP flash tool directory and run it with ``sudo ./flash_tool.sh``.
 5. Extract the zip files
+4. Open a Terminal, enter the SP flash tool directory and run it with ``sudo ./flash_tool.sh``.
 
 .. note::
 
