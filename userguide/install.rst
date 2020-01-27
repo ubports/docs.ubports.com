@@ -130,18 +130,19 @@ Meizu devices are pretty much stuck on Flyme. While the MX4 can be flashed succe
     - `Meizu MX4 <http://people.canonical.com/~alextu/tangxi/684.zip>`_ (*arale*)
 
 3. Download the latest version of `SP flash tool <https://spflashtool.com/download/>`_ (*aka MTK flash tool*).
+4. Open a Terminal, enter the SP flash tool directory and run it with ``sudo ./flash_tool.sh``.
+5. Extract the zip files
 
-4. Remove the ``modemmanager`` package as `the one installed is not compatible with SP flash tool <https://web.archive.org/web/20180118130643/http://www.mibqyyo.com/en-articles/2015/09/16/ubuntu-android-installation-process-for-bq-aquaris-e4-5-and-e5/>`_.
+.. note::
 
-On Ubuntu 17.10, there are issues with flash_tool loading the shared library 'libpng12', so this can be used as a workaround:
+    On Ubuntu 17.10, there are issues with flash_tool loading the shared library 'libpng12', so this can be used as a workaround:
 
-.. code-block:: text
+    .. code-block:: text
 
-    wget -q -O /tmp/libpng12.deb http://mirrors.kernel.org/ubuntu/pool/main/libp/libpng/libpng12-0_1.2.54-1ubuntu1_amd64.deb \
-    && sudo dpkg -i /tmp/libpng12.deb \
-    && rm /tmp/libpng12.deb
+        wget -q -O /tmp/libpng12.deb http://mirrors.kernel.org/ubuntu/pool/main/libp/libpng/libpng12-0_1.2.54-1ubuntu1_amd64.deb \
+        && sudo dpkg -i /tmp/libpng12.deb \
+        && rm /tmp/libpng12.deb
 
-5. Open a Terminal, enter the SP flash tool directory and run it with ``sudo ./flash_tool.sh``.
 6. In the "Scatter-loading File" section, press the "choose" button and select the ``*Android_scatter.txt`` file from the archive you downloaded in the second step.
 7. Choose "Firmware Upgrade" from the drop-down menu.
 
@@ -156,4 +157,9 @@ On Ubuntu 17.10, there are issues with flash_tool loading the shared library 'li
 10. Perform a final sanity-check that you selected the "Firmware Upgrade" option, not "Download Only".
 11. Make sure your device is off and connect it to your PC. Don't use a USB 3.0 port, since that's known to cause communication issues with your device.
 12. `Magic <https://en.wikipedia.org/wiki/Clarke's_three_laws>`_ happens. Wait till all the progress bars ended.
+
+.. note::
+
+    If the installation fails with a 100% red bar and hangs there, remove the ``modemmanager`` package as the one installed `is not compatible <https://web.archive.org/web/20180118130643/http://www.mibqyyo.com/en-articles/2015/09/16/ubuntu-android-installation-process-for-bq-aquaris-e4-5-and-e5/>`_ with SP flash tool, close it and try again from step 4.
+
 13. Congratulations! Your device will now boot into a super old version of Ubuntu Touch. You can now use the UBports Installer to install an updated version.
