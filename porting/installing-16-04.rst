@@ -25,7 +25,8 @@ Next we'll need to download the rootfs (root filesystem) that's appropriate for 
 Install system.img and rootfs
 -------------------------------
 
-Clone or download the `halium-install repository <https://gitlab.com/JBBgameich/halium-install>`_. This repository contains tools that can be used to install a Halium system image and distribution rootfs. We'll use the ``halium-install`` script to install Ubuntu Touch on your device::
+Clone or download the `halium-install repository <https://gitlab.com/JBBgameich/halium-install>`_. This repository contains tools that can be used to install a Halium system image and distribution rootfs.
+Reboot your device to recovery (e.g. TWRP), to get adb access again. We'll use the ``halium-install`` script to install Ubuntu Touch on your device::
 
     path/to/halium-install -p ut path/to/rootfs.tar.gz path/to/system.img
 
