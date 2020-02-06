@@ -7,11 +7,12 @@ Inclusive palette and theme
 ---------------------------
 
 We would like to create and implement color palettes helpful to people who have sight impairment:
-- Additional `palette proposal <http://colors.mivoligo.com/#color-blind>`__.
-- A high contrast theme.
-- Adaptable font size theme.
+
+* Additional `palette proposal <http://colors.mivoligo.com/#color-blind>`__.
+* A high contrast theme.
+* Adaptable font size theme.
 
 Input methods
 -------------
 
-Apps should be accessible by mouse, touch and using a keyboard only.
+Apps should be accessible using any combination of mouse, touch, and keyboard.

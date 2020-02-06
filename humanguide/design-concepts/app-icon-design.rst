@@ -1,7 +1,7 @@
 App icon design
 ===============
 
-The whole system and apps follow the `Suru design principles <http://web.archive.org/web/20191223082720/https://docs.ubuntu.com/phone/en/apps/design/get-started/design-philosophy>`__ started by Canonical and `Samuel Hewitt <https://icons.samuelhewitt.com/>`__.
+The whole system and apps follow the `Suru design principles <http://web.archive.org/web/20191223082720/https://docs.ubuntu.com/phone/en/apps/design/get-started/design-philosophy>`__ started by Canonical and `Samuel Hewitt <https://samuelhewitt.com>`__.
 
 Design Philosophy and Suru Meaning
 ----------------------------------
@@ -65,7 +65,7 @@ The Fold Effect
 
 In keeping with the origami motif, some Suru icons have an implied fold. In many icons this is a single horizontal or vertical line but sometimes the fold line(s) correspond or align with elements of the pictogram.
 
-The fold is drawn simply by creating an overlay of a white or black polygon of very low opacity (usually between 1%~10%).
+The fold is drawn by creating an overlay of a white or black polygon of very low opacity (usually between 1%~10%).
 
 .. figure:: /_static/images/humanguide/09.png
 

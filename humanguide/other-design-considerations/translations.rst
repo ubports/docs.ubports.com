@@ -1,7 +1,7 @@
 Translations
 ============
 
-Adding translations to your app makes it more accessible to international users. `Clickable <http://clickable.bhdouglass.com/>`__ will handle this process automatically, extracting new translatable strings into a pot file (the source strings of your app, to be translated)
+Adding translations to your app makes it more accessible to international users. `Clickable <http://clickable.bhdouglass.com/>`__ will handle this process automatically, extracting new translatable strings into a pot file (the source strings of your app, to be translated).
 
 Marking a string to be translatable can be achieved like this i18n.tr(string). For example:
 

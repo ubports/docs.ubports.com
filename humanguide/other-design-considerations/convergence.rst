@@ -17,6 +17,6 @@ Main page stays as the main page on phones or on the left on bigger screen devic
 Input method
 ------------
 
-Using touch a user can swipe or long-press on a list item to reveal a contextual menu. Using a pointer (mouse or trackpad) a user can right-click the item to reveal the contextual menu. Using a keyboard a user can focus the desired item and press the MENU key to open the context menu.
+Using touch, a user can swipe or long-press on a list item to reveal a contextual menu. Using a pointer (mouse or trackpad) a user can right-click the item to reveal the contextual menu. Using a keyboard a user can focus the desired item and press the MENU key to open the context menu.
 
 .. figure:: /_static/images/humanguide/42.png

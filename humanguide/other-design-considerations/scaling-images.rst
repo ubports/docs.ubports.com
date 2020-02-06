@@ -15,7 +15,7 @@ One particularity of qml, though, is that svg are rendered to use low memory and
 
    Different redered sizes of the same svg image
 
-It is not advisable to define ``sourceSize`` as a relative size to avoid performance issues. A good practice could be defining different ``sourceSize`` depending on diverse thresholds. In the example below the image.svg will be rendered 60 per 60 grid units if the main view is bigger that 70 grid units but as an image of 40 per 40 grid units in the other cases. Like this we make use of the image scability and no performance cost.
+It is not advisable to define ``sourceSize`` as a relative size to avoid performance issues. A good practice is defining ``sourceSize`` based on a set list of thresholds. In the example below the image.svg will be rendered 60 per 60 grid units if the main view is bigger that 70 grid units but as an image of 40 per 40 grid units in the other cases. By defining these thresholds, we get scalable images without a huge performance cost.
 
 .. code:: qml
 

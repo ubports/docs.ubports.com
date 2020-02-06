@@ -12,7 +12,7 @@ Measurement Units
 Grid Unit
 ~~~~~~~~~
 
-A measurement unit called the *grid unit* is defined, abbreviated gu. 1 grid unit translates to a given number of pixels depending on the type of screen that the user interface is displayed on. For example, on a laptop computer 1 grid unit will typically translate to 8 pixels. The number of pixels per grid unit is chosen in order to preserve the perceived visual size of UI elements and therefore depends on the density of the display and the distance the user is to the screen. We also ensure that 1 grid unit is always an integer number of pixel.
+A measurement unit called the *grid unit* is defined, abbreviated *gu.* 1 grid unit translates to a given number of pixels depending on the type of screen that the user interface is displayed on. For example, on a laptop computer 1 grid unit will typically translate to 8 pixels. The number of pixels per grid unit is chosen in order to preserve the perceived visual size of UI elements and therefore depends on the density of the display and the distance the user is to the screen. We also ensure that 1 grid unit is always an integer number of pixel.
 
 +-------------------------------------------------------+------------+
 | Device                                                | Conversion |
