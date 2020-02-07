@@ -82,12 +82,12 @@ The value of ``emptyFormat`` is what displays on the lock screen when no value h
 Methods for the metric component (`source <https://daker.me/2013/11/adding-usermetrics-to-your-app-on-ubuntu-touch.html>`_):
 
 Set the metric to a specific amount:
-``metricID.update(double x)`` (where x is a number of type `double` to set for a counter value).  The counter value can be included in the ``format`` setting by using ``%1``. ``metricID`` is the id specified in the Metric item.
+``metricID.update(x)`` (where x is a number of type `double` to set for a counter value).  The counter value can be included in the ``format`` setting by using ``%1``. ``metricID`` is the id specified in the Metric item.
 
 e.g. ``format: "%1 buttons pressed today"``
 
 Increment the metric:
-``metricID.increment(double x)`` (where x is the amount to add to the current counter)
+``metricID.increment(x)`` (where x is the amount to add to the current counter)
 
 The metric will reset back to the value stored in ``emptyFormat`` each day.
 
