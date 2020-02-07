@@ -59,9 +59,9 @@ Here we assign a new value to the circleMetric string variable that’s inside t
 
     ``metric.circleMetric = "New Metric Message"``
 
-We then tell the lock screen to update the metric in ZERO milliseconds i.e. immediately
+We then tell the lock screen to update the metric.
 
-    Metric ID [dot] update (Number of milliseconds)
+    Metric ID [dot] update (specific amount to set if included in the format)
 
     ``metric.update(0)``
 
@@ -77,17 +77,30 @@ User metrics are made up of two “formats”
 - metrics/messages for today (``format``)
 - metrics/messages for tomorrow (``emptyFormat``)
 
-The value of ``emptyFormat`` is what displays on the lock screen when no value has been stored in ``format``. In order to display a new value of ``format`` the metric must be updated with ``metric.update(x)`` (where x is the number of milliseconds until the update takes place).
+The value of ``emptyFormat`` is what displays on the lock screen when no value has been stored in ``format``. In order to display a new value of ``format`` the metric must be updated.
+
+Methods for the metric component (`source <https://daker.me/2013/11/adding-usermetrics-to-your-app-on-ubuntu-touch.html>`_):
+
+Set the metric to a specific amount:
+``metricID.update(double x)`` (where x is a number of type `double` to set for a counter value).  The counter value can be included in the ``format`` setting by using ``%1``. ``metricID`` is the id specified in the Metric item.
+
+e.g. ``format: "%1 buttons pressed today"``
+
+Increment the metric:
+``metricID.increment(double x)`` (where x is the amount to add to the current counter)
+
 The metric will reset back to the value stored in ``emptyFormat`` each day.
+
 
 Applications make use of this system, but setting and updating the user metric “formats” by running a certain code whenever a certain event takes place. e.g. When you press send in Telegram, or when you receive a phone call.
 The application may store the data for manipulation, but generally the data is stored in the system (`/var/lib/usermetrics <https://github.com/ubports/libusermetrics/tree/xenial/doc/pages>`_).
 
 Limitations and wonders
 -----------------------
+Once a metric is registered, it remains on the lock screen even after the app has been uninstalled. A database file (db) is stored in `/var/lib/usermetrics`, which can be deleted by root (but not with sudo). Deleting this file and rebooting will remove all stored metrics. Presumably, the db file could be edited instead of deleted.
 
-Based on how the “formats” are set up, it seems that it is difficult to maintain a running tally beyond one day. It also doesn’t seem to truly reset a counted variable. Instead it reverts to a default setting. This would not normally allow for long-term data interpretation without some kind of database logging.
+Based on how the “formats” are set up, it seems that it is difficult to maintain a running tally beyond one day (though not impossible. See `FluffyChat <https://gitlab.com/ChristianPauly/fluffychat>`_).
 
-In the case of the `nCounter`_ app. I wanted to count the number of days, but since the metric “resets” each day, that presents a problem. I create a workaround that updates the metric every time the application is opened. Thus, the ``emptyFormat`` (default) tells the user to open the application. This, however, nearly defeats the purpose of the user metric entirely, other than having a neat stat reminder for the day.
+In the case of the `nCounter`_ app. I wanted to count the number of days, but since the metric “resets” each day, that presents a problem. I created a workaround that updates the metric every time the application is opened. Thus, the ``emptyFormat`` (default) tells the user to open the application. This, however, nearly defeats the purpose of the user metric entirely, other than having a neat stat reminder for the day.
 
 There must be a way for a process to run independently in the background (e.g. cron) to retrieve data from a specific app code. One lead is the Indicator Weather app. This runs a process every X minutes to update the weather indicator automatically without having to open the app.
