@@ -25,13 +25,10 @@ Next we'll need to download the rootfs (root filesystem) that's appropriate for 
 Install system.img and rootfs
 -------------------------------
 
-.. todo::
+Clone or download the `halium-install repository <https://gitlab.com/JBBgameich/halium-install>`_. This repository contains tools that can be used to install a Halium system image and distribution rootfs.
+Reboot your device to recovery (e.g. TWRP), to get adb access again. We'll use the ``halium-install`` script to install Ubuntu Touch on your device::
 
-    Change the rootstock link to point to UBports once the actuallyfixit PR is merged.
-
-Download the halium-install-standalone script from `jbbgameich/halium-install's releases <https://github.com/JBBgameich/halium-install/releases/>`_ (`direct link to download <https://github.com/JBBgameich/halium-install/releases/download/continuous/halium-install-standalone.sh>`__). Boot your device into recovery and run the script as follows::
-
-    halium-install-standalone.sh -p ut path/to/rootfs.tar.gz path/to/system.img
+    path/to/halium-install -p ut path/to/rootfs.tar.gz path/to/system.img
 
 The script will copy and extract the files to their proper places, then allow you to set the phablet user's password.
 
@@ -42,7 +39,7 @@ When your device boots, it will likely stay at the bootloader screen. However, y
 
 To confirm that your device has booted correctly, run ``dmesg -w`` and watch for "GNU/Linux device" in the output. If you instead get something similar to "Halium initrd Failed to boot", please get in contact with us so we can find out why.
 
-Similar to the `Halium reference rootfs <http://docs.halium.org/en/latest/porting/debug-build/logging-in.html>`__, you should set your computer's IP on the newly connected RNDIS interface to ``10.15.19.100`` if you don't get one automatically. Then, run the following to access your device::
+Similar to the Halium reference rootfs, you should `set your computer's IP on the newly connected RNDIS interface <http://docs.halium.org/en/latest/porting/debug-build/logging-in.html>`__ to ``10.15.19.100`` if you don't get one automatically. Then, run the following to access your device::
 
     ssh phablet@10.15.19.82
 

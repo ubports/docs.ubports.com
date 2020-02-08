@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-02 15:42-0500\n"
-"PO-Revision-Date: 2018-03-04 18:55+0000\n"
+"POT-Creation-Date: 2018-11-30 10:25-0600\n"
+"PO-Revision-Date: 2019-06-08 16:03+0000\n"
 "Last-Translator: Walter Garcia-Fontes <walter.garcia@upf.edu>\n"
 "Language-Team: Catalan <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-about/ca/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.15\n"
+"X-Generator: Weblate 3.6.1\n"
 "Generated-By: Babel 2.5.3\n"
 
 #: ../../about/introduction.rst:2
@@ -56,13 +56,14 @@ msgid ""
 "Ubuntu Touch <https://insights.ubuntu.com/2017/04/05/growing-ubuntu-for-"
 "cloud-and-iot-rather-than-phone-and-convergence/>`_ in April of 2017, "
 "UBports and its sister projects began work on the open-source code, "
-"maintaining and expanding its possiblilities for the future."
+"maintaining and expanding its possibilities for the future."
 msgstr ""
 "Després que Canonical va anunciar de sobte `el seu plan d'acabar el suport a "
-"l'Ubuntu Touch <https://insights.ubuntu.com/2017/04/05/growing-ubuntu-for-"
-"cloud-and-iot-rather-than-phone-and-convergence/>`_ a l'abril de 2017, "
-"l'UBports i els seus projectes germans can començar a treballar sobre el "
-"codi obert, a mantenir-lo i a ampliar les seves possibilitats per al futur."
+"l'Ubuntu Touch <https://insights.ubuntu.com/2017/04/05/"
+"growing-ubuntu-for-cloud-and-iot-rather-than-phone-and-convergence/>`_ a "
+"l'abril de 2017, l'UBports i els seus projectes germans van començar a "
+"treballar sobre el codi obert, a mantenir-lo i a ampliar les seves "
+"possibilitats per al futur."
 
 #: ../../about/introduction.rst:14
 msgid "About the Documentation"
@@ -110,23 +111,28 @@ msgstr ""
 
 #: ../../about/process/branch-naming.rst:2
 msgid "Branch-naming convention"
-msgstr ""
+msgstr "Convenció de l'anomenat de branques"
 
 #: ../../about/process/branch-naming.rst:4
 msgid ""
 "Our branch-naming conventions ensure that software can be built by our CI "
 "and tested easily by other developers."
 msgstr ""
+"Les nostres convencions d'anomenat de branques asseguren que el programari "
+"es pot compilar pel nostre CI i comprovat fàcilment per d'altres "
+"desenvolupadors."
 
 #: ../../about/process/branch-naming.rst:6
 msgid ""
 "Every Git repository's README file should state which branch-naming "
 "convention is used and possible deviations from the norm."
 msgstr ""
+"Cada fitxer README d'un dipòsit GIT hauria d'especificar quina convenció "
+"d'anomenat de branques s'usa i possibles desviacions de la norma."
 
 #: ../../about/process/branch-naming.rst:9
 msgid "Click-Packages"
-msgstr ""
+msgstr "Paquets-click"
 
 #: ../../about/process/branch-naming.rst:11
 msgid ""
@@ -136,16 +142,24 @@ msgid ""
 "merged into master when the time comes. For marking and archiving milestones "
 "in development history, ideally Git tags or GitHub releases should be used."
 msgstr ""
+"El programari que es distribueix exclusivament com un paquet-click (i no "
+"també com un deb) sols usa una branca ``master`` que està protegida. Les "
+"branques temporals separades amb noms descriptius arbitraris es poden crear "
+"i fusionar al master quan arribi el moment. Per marcar i arxivar fites a la "
+"història de desenvolupament, s'hauria d'usar idealment etiquetes Git o "
+"Github."
 
 #: ../../about/process/branch-naming.rst:14
 msgid "Deb-Packages"
-msgstr ""
+msgstr "Paquets-deb"
 
 #: ../../about/process/branch-naming.rst:16
 msgid ""
 "To make most efficient use of our CI system, a special naming convention for "
 "git-branches is used."
 msgstr ""
+"Per fer l'ús del nostre sistema CI més eficient, s'usa una convenció "
+"especial per anomenar les branques de git."
 
 #: ../../about/process/branch-naming.rst:18
 msgid ""
@@ -154,6 +168,11 @@ msgid ""
 "updated using click-package downloads from the OpenStore. This policy allows "
 "us to make use of the powerful Debian build system to resolve dependencies."
 msgstr ""
+"Per a components pre-instal·lats de l'Ubuntu Touch, s'usen paquets deb "
+"sempre que sigui possible. Això inclou les Aplicacions Principals, atès que "
+"poden ser actualitzades independentment usant descàrregues de paquets click "
+"des de l'OpenStore. Aquesta política ens permet fer ús del sistema potent de "
+"compilació del Debian per resoldre les dependències."
 
 #: ../../about/process/branch-naming.rst:20
 msgid ""
@@ -255,7 +274,7 @@ msgstr "On se segueixen els errors?"
 #: ../../about/process/issue-tracking.rst:9
 msgid ""
 "Since our quality assurance depends heavily on the community, we try to "
-"track issues where the user would expect them, instead of seperated by "
+"track issues where the user would expect them, instead of separated by "
 "repository. This means, that issues of almost all components that are "
 "distributed as with the system-image are tracked in the `Ubuntu Touch "
 "tracker <https://github.com/ubports/ubuntu-touch>`__. An exception of this "
@@ -267,7 +286,7 @@ msgstr ""
 "els components que es distribueixen, com ara la imatge de sistema, se "
 "segueixen al `Seguidor de l'Ubuntu Touch <https://github.com/ubports/ubuntu-"
 "touch>`__. Les aplicacions click són una excepció perquè es poden "
-"actualitzar mitjançant l'OpenStore."
+"actualitzar independentment mitjançant l'OpenStore."
 
 #: ../../about/process/issue-tracking.rst:17
 msgid ""
@@ -304,7 +323,7 @@ msgstr "Projectes del GitHub"
 #: ../../about/process/issue-tracking.rst:30
 msgid ""
 "To increase transparency and communication, GitHub projects (Kanban-Boards) "
-"are used whereever practical. In case of github.com/ubports/ubuntu-touch, a "
+"are used wherever practical. In case of github.com/ubports/ubuntu-touch, a "
 "single project is used for all issues. Projects support filtering by labels, "
 "so that only issues that belong to a specific team or affect a specific "
 "device can be viewed."
@@ -323,7 +342,7 @@ msgstr "Aquestes són les columnes estàndard:"
 #: ../../about/process/issue-tracking.rst:38
 msgid ""
 "**None (awaiting triage)**: The issue has been approved by a member of the "
-"qa team and is awaiting review from the responsible development team. if the "
+"QA team and is awaiting review from the responsible development team. if the "
 "issue is a bug, instructions to reproduce are included in the issue "
 "description. if the issue is a feature request, it has passed a primary "
 "sanity check by the qa-team but has not yet been accepted by the responsible "
@@ -342,7 +361,7 @@ msgstr ""
 msgid ""
 "**Accepted**: The issue has been accepted by the responsible development-"
 "team. If the issue is a bugreport, the team has decided that it should be "
-"fixable and accepts the responsibility. If the issue is a featrue request, "
+"fixable and accepts the responsibility. If the issue is a feature request, "
 "the team thinks it should be implemented as described."
 msgstr ""
 "**Accepted**: Acceptat - el problema ha estat acceptat per part de l'equip "
@@ -435,7 +454,7 @@ msgstr ""
 
 #: ../../about/process/issue-tracking.rst:55
 msgid ""
-"**bug**: This issue is a confirmed bug. If it's reproducable, reproduction "
+"**bug**: This issue is a confirmed bug. If it's reproducible, reproduction "
 "steps are described."
 msgstr ""
 "**bug**: Error - Aquest problema és un error confirmat. Si es pot reproduir, "
@@ -663,7 +682,7 @@ msgid ""
 "Once a *developer* is assigned and starts working on the issue, it is moved "
 "to “In Development”. As soon as they have something to show for, the issue "
 "is closed and automatically moved to “Quality Assurance” for feedback from "
-"the QA team. If neccessary, the developer will provide hints on how to test "
+"the QA team. If necessary, the developer will provide hints on how to test "
 "his patch in a comment on the issue."
 msgstr ""
 "Un cop s'assigna un *desenvolupador* i comença a treballa en el problema, es "
@@ -701,24 +720,68 @@ msgstr ""
 #: ../../about/process/ppa.rst:4
 msgid ""
 "This is the package archive system for UBports projects. It hosts various "
-"PPAs containing all deb-components of Ubuntu Touch. New PPAs can be created "
-"dynamically by the CI server using a special :doc:`git-branch naming "
-"convention <branch-naming>`."
+"PPAs containing all deb-components of Ubuntu Touch."
 msgstr ""
 
-#: ../../about/process/ppa.rst:6
+#: ../../about/process/ppa.rst:7
+msgid "Repository naming convention"
+msgstr ""
+
+#: ../../about/process/ppa.rst:10
+msgid "Native packages"
+msgstr ""
+
+#: ../../about/process/ppa.rst:12
 msgid ""
-"The name of the branch translates literally to the name of the PPA: ``http://"
-"repo.ubports.com/dists/[branch name]``"
+"Native packages are repositories which contain a ``debian/`` directory "
+"**with** the source used to create the Debian source package (``.dsc``)."
 msgstr ""
 
-#: ../../about/process/ppa.rst:8
+#: ../../about/process/ppa.rst:14
+msgid ""
+"The name of the Debian source package generated from the repository and the "
+"name of the git-repository should be the same."
+msgstr ""
+
+#: ../../about/process/ppa.rst:17
+msgid "Packaging repositories"
+msgstr ""
+
+#: ../../about/process/ppa.rst:19
+msgid ""
+"Packaging repositories contain a ``debian/`` directory **without** the "
+"source used to create the Debian source package (``.dsc``). They also "
+"contain instructions to tell ``debhelper`` how to get the source used to "
+"create the source package."
+msgstr ""
+
+#: ../../about/process/ppa.rst:21
+msgid ""
+"The repository should have the name of the source package it generates with "
+"``-packaging`` appended to the end. For example, a packaging repository that "
+"generates a source package called ``sandwich`` would be called ``sandwich-"
+"packaging``."
+msgstr ""
+
+#: ../../about/process/ppa.rst:24
+msgid "Creating new PPAs"
+msgstr ""
+
+#: ../../about/process/ppa.rst:26
+msgid ""
+"New PPAs can be created dynamically by the CI server using a special :doc:"
+"`git-branch naming convention <branch-naming>`. The name of the branch "
+"translates literally to the name of the PPA: ``http://repo.ubports.com/dists/"
+"[branch name]``"
+msgstr ""
+
+#: ../../about/process/ppa.rst:28
 msgid ""
 "Non-standard PPAs (i.e. not ``xenial``, ``vivid`` or ``bionic``) are kept "
 "for three months. In case they need to be kept for a longer time, a file "
 "with the name ``ubports.keep`` can be created in the root of the repository, "
 "containing the date until which the PPA shall be kept open in the form of "
-"**YYYY-MM-dd**. If this file is empty, the PPA will be kept for two years "
+"``YYYY-MM-dd``. If this file is empty, the PPA will be kept for two years "
 "after the last build."
 msgstr ""
 

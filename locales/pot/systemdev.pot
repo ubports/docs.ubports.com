@@ -1,20 +1,93 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017, The UBports project (Creative Commons BY-SA 4.0)
+# Copyright (C) 2019, The UBports project (Creative Commons BY-SA 4.0)
 # This file is distributed under the same license as the UBports package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: UBports 1.0\n"
+"Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-30 10:25-0600\n"
+"POT-Creation-Date: 2019-09-02 14:08-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: ../../systemdev/calendars.rst:2
+msgid "Working on the Calendar feature"
+msgstr ""
+
+#: ../../systemdev/calendars.rst:4
+msgid "The Calendar feature is provided by several components:"
+msgstr ""
+
+#: ../../systemdev/calendars.rst:6
+msgid "The `Calendar App <https://gitlab.com/ubports/apps/calendar-app>`_, providing the user interface"
+msgstr ""
+
+#: ../../systemdev/calendars.rst:7
+msgid "`Evolution Data Server <https://github.com/ubports/evolution-data-server-packaging>`_ (often shortened as \"EDS\"), which is the backend where your calendars are stored"
+msgstr ""
+
+#: ../../systemdev/calendars.rst:8
+msgid "`sync-monitor <https://github.com/ubports/sync-monitor>`_, the service responsible for managing the synchronisation with remote calendars"
+msgstr ""
+
+#: ../../systemdev/calendars.rst:9
+msgid "`SyncEvolution <https://github.com/ubports/syncevolution-packaging>`_, the service responsible for performing the synchronisation to a WebDAV/CalDAV remote calendar"
+msgstr ""
+
+#: ../../systemdev/calendars.rst:13
+#: ../../systemdev/online-accounts.rst:30
+msgid "Debugging"
+msgstr ""
+
+#: ../../systemdev/calendars.rst:15
+msgid "The most convenient way to run commands on the device and collect logs is by opening a remote shell. This can be done by using :doc:`/userguide/advanceduse/adb` or :doc:`/userguide/advanceduse/ssh`. In the following sections, it's assumed that you've got access to a terminal console to the device."
+msgstr ""
+
+#: ../../systemdev/calendars.rst:19
+msgid "Scheduling and account issues"
+msgstr ""
+
+#: ../../systemdev/calendars.rst:21
+msgid "If you are not sure whether the calendar is being synchronised, or whether the operation is successful, ``sync-monitor`` is the component that needs to be examined. This service should always be running in the background, and its logs can be found in ``~/.cache/upstart/sync-monitor.log``. In order to see them printed in real-time as you operate on the device, you can run this command:"
+msgstr ""
+
+#: ../../systemdev/calendars.rst:27
+msgid "These logs should be enough to give you an idea on whether your calendar accounts are recognised, and whether a synchronisation is scheduled, happening, and completing successfully."
+msgstr ""
+
+#: ../../systemdev/calendars.rst:31
+msgid "Calendar data synchronisation issues"
+msgstr ""
+
+#: ../../systemdev/calendars.rst:33
+msgid "Follow these steps one you are confident that a synchronisation of your account is at least attempted, and want to investigate a synchronisation failure or issues with missing or duplicate items. On the device, it's possible to run ``syncevolution`` in debug mode. To do so, kill any existing processes:"
+msgstr ""
+
+#: ../../systemdev/calendars.rst:39
+msgid "Then, start the ``syncevolution`` process with the proper environment variable:"
+msgstr ""
+
+#: ../../systemdev/calendars.rst:45
+msgid "At this point, open the Calendar App (if it was not open already) and manually trigger a synchronisation (note that the Synchronisation action is only available if your device is connected to the internet): all the logs will appear in the terminal."
+msgstr ""
+
+#: ../../systemdev/calendars.rst:47
+msgid "In some cases, the output from ``syncevolution`` might not be enough: for example, the raw HTTP data is usually not printed. Should you need to see that as well, then you'll have to modify a configuration file as well. ``syncevolution``'s configuration files are located under ``~/.config/syncevolution/``,  in a subdirectory whose name takes the form ``<provider-name>-<account-id>``.  There might be stale directories as well, referring to old accounts which have been since deleted. To find out what accounts are still valid, you can invoke the ``account-console`` tool like this:"
+msgstr ""
+
+#: ../../systemdev/calendars.rst:53
+msgid "This will print the list of the current valid accounts. Once you've figured out what is the account you are interested in, open the file ``~/.config/syncevolution/<account>/peers/target-config/config.ini`` and set the ``loglevel`` variable to a higher value (``11`` seems enough to print all the HTTP traffic):"
+msgstr ""
+
+#: ../../systemdev/calendars.rst:65
+msgid "Note that in order for these changes to take effect, you'll need to restart the ``syncevolution`` process again, as explained above."
+msgstr ""
 
 #: ../../systemdev/index.rst:2
 msgid "System software development"
@@ -49,7 +122,99 @@ msgid "This section includes reference guides on how different parts of the Ubun
 msgstr ""
 
 #: ../../systemdev/index.rst:29
-msgid "There's nothing here yet, but maybe you'd like to add some reference material? Check out :doc:`our guide to contributing to documentation </contribute/documentation>` to learn more."
+msgid "There's not much here yet, but maybe you'd like to add some reference material? Check out :doc:`our guide to contributing to documentation </contribute/documentation>` to learn more."
+msgstr ""
+
+#: ../../systemdev/online-accounts.rst:2
+msgid "Working on the Online Accounts subsystem"
+msgstr ""
+
+#: ../../systemdev/online-accounts.rst:4
+msgid "The Online Accounts subsystem consists of the following components:"
+msgstr ""
+
+#: ../../systemdev/online-accounts.rst:6
+msgid "The `Accounts UI <https://github.com/ubports/ubuntu-system-settings-online-accounts>`_: this provides the user facing components and the base classes for the whole Online Accounts feature. More in detail, you will find these subdirectories:"
+msgstr ""
+
+#: ../../systemdev/online-accounts.rst:8
+msgid "``click-hooks``: the programs run when a :ref:`Click application <click>` making use of the Online Accounts functionality is installed or removed"
+msgstr ""
+
+#: ../../systemdev/online-accounts.rst:9
+msgid "``client``: the library that client applications can use to request access to an account"
+msgstr ""
+
+#: ../../systemdev/online-accounts.rst:10
+msgid "``online-accounts-service``: the main service, implementing the logic to process client requests; it has no UI, but is able to attach the ``online-accounts-ui`` on top of an application's UI"
+msgstr ""
+
+#: ../../systemdev/online-accounts.rst:11
+msgid "``online-accounts-ui``: the user interface which pops up when applications interact with online accounts (for example, the dialog that appears when an application requests access to an account)"
+msgstr ""
+
+#: ../../systemdev/online-accounts.rst:12
+msgid "``plugins``: the base classes and QML elements that account plugins can use in their implementation"
+msgstr ""
+
+#: ../../systemdev/online-accounts.rst:13
+msgid "``system-settings-plugin``: the user interface for the Accounts panel in the System Settings application"
+msgstr ""
+
+#: ../../systemdev/online-accounts.rst:15
+msgid "The `Account plugins <https://github.com/ubports/account-plugins>`_ define the available account providers and implement the user interface and logic for creating the accounts"
+msgstr ""
+
+#: ../../systemdev/online-accounts.rst:16
+msgid "A set of components from the `Accounts&SSO project <https://gitlab.com/accounts-sso>`_: while development happens in the upstream projects, the UBports forks add the Debian packaging. These projects are:"
+msgstr ""
+
+#: ../../systemdev/online-accounts.rst:18
+msgid "`libaccounts-glib <https://github.com/ubports/libaccounts-glib>`_: account management API for C/GLib applications"
+msgstr ""
+
+#: ../../systemdev/online-accounts.rst:19
+msgid "`libsignon-glib <https://github.com/ubports/libsignon-glib>`_: authentication API for C/GLib applications"
+msgstr ""
+
+#: ../../systemdev/online-accounts.rst:20
+msgid "`libaccounts-qt <https://github.com/ubports/libaccounts-qt>`_: account management API for Qt applications"
+msgstr ""
+
+#: ../../systemdev/online-accounts.rst:21
+msgid "`signond <https://github.com/ubports/signon>`_: authentication daemon, exposing a D-Bus API. It includes the ``libsignon-qt`` library, which offers an authentication API for Qt applications"
+msgstr ""
+
+#: ../../systemdev/online-accounts.rst:22
+msgid "`signon-plugin-oauth2 <https://github.com/ubports/signon-plugin-oauth2>`_: OAuth (1.0 and 2.0) plugin for signond"
+msgstr ""
+
+#: ../../systemdev/online-accounts.rst:23
+msgid "`accounts-qml-module <https://github.com/ubports/accounts-qml-module>`_ authentication and account management API, for QML applications (can be used when implementing account plugins, too)"
+msgstr ""
+
+#: ../../systemdev/online-accounts.rst:25
+msgid "The `account-polld service <https://github.com/ubports/account-polld>`_, which runs in the background and checks every 5 minutes for new account activity (the interval is decided by the `Ubuntu Push service <https://github.com/ubports/ubuntu-push>`_)"
+msgstr ""
+
+#: ../../systemdev/online-accounts.rst:26
+msgid "The `account-polld-plugins-go <https://github.com/ubports/account-polld-plugins-go>`_, a repository of plugins for the ``account-polld`` service. The plugins in this repository are written in Go, but plugins can be written in whatever language and can reside in different repositories"
+msgstr ""
+
+#: ../../systemdev/online-accounts.rst:33
+msgid "Account creation issues"
+msgstr ""
+
+#: ../../systemdev/online-accounts.rst:35
+msgid "It may happen that the account creation fails, either due to communication issues with the remote server, or to some bug in the account plugin itself (this can easily happen while developing a new plugin). In order to debug such situations, you can open a terminal (it's easier if done from a remote shell -- you can gain a shell on the device using :doc:`/userguide/advanceduse/adb` or :doc:`/userguide/advanceduse/ssh`) and start the ``online-accounts-service`` in debug mode:"
+msgstr ""
+
+#: ../../systemdev/online-accounts.rst:42
+msgid "If you believe that the issue might be caused by some errors in the authentication phase, you can also enabled extensive logging by ``signond`` like this:"
+msgstr ""
+
+#: ../../systemdev/online-accounts.rst:50
+msgid "At this point, repeat the operation that was failing, and you'll get all debugging output printed on the console."
 msgstr ""
 
 #: ../../systemdev/testing-locally.rst:2

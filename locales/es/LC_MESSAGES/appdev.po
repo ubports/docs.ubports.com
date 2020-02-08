@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-11 15:02-0500\n"
-"PO-Revision-Date: 2018-04-06 07:56+0000\n"
+"POT-Creation-Date: 2018-11-30 10:25-0600\n"
+"PO-Revision-Date: 2019-02-06 21:23+0000\n"
 "Last-Translator: advocatux <advocatux@airpost.net>\n"
 "Language-Team: Spanish <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/es/>\n"
@@ -17,486 +17,250 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.15\n"
+"X-Generator: Weblate 3.1.1\n"
 "Generated-By: Babel 2.5.1\n"
 
-#: ../../appdev/apparmor.rst:2
-#, fuzzy
-msgid "AppArmor Policy Groups"
-msgstr "Archivo de política del perfil de AppArmor"
+#: ../../appdev/guides/contenthub.rst:4
+msgid "The content hub - tips and tricks"
+msgstr "Centro de contenido - consejos y trucos"
 
-#: ../../appdev/apparmor.rst:4
+#: ../../appdev/guides/contenthub.rst:9
+msgid "Content Hub Share Page"
+msgstr "Página para compartir del centro de contenido"
+
+#: ../../appdev/guides/contenthub.rst:11
 msgid ""
-"This document contains a full list of Ubuntu Touch's available policy groups "
-"and a description of what they give your app permission to access."
+"On Ubuntu Touch the apps are confined. The way of sharing files between them "
+"is through the Content Hub, a part of the system that takes care of file "
+"import, export and sharing."
 msgstr ""
+"Las aplicaciones están confinadas en Ubuntu Touch. La manera de compartir "
+"archivos entre ellas es a través del centro de contenido, una parte del "
+"sistema que se encarga de importar, exportar y compartir archivos."
 
-#: ../../appdev/apparmor.rst:6
-msgid "Each entry follows this format"
-msgstr ""
+#: ../../appdev/guides/contenthub.rst:14
+msgid "Different ways of sharing the content"
+msgstr "Diferentes maneras de compartir contenido"
 
-#: ../../appdev/apparmor.rst:21
+#: ../../appdev/guides/contenthub.rst:16
 msgid ""
-"Policy usage affects whether your app will be accepted by the OpenStore. "
-"Apps containing policies with common usage are generally accepted "
-"immediately, while reserved usage policies will need to be manually reviewed."
+"As we can see in the `Content Hub documentation <https://api-docs.ubports."
+"com/sdk/apps/qml/Ubuntu.Content/ContentHandler.html#detailed-description>`_, "
+"there are several ways of handling the file to be shared:"
 msgstr ""
+"Como podemos ver en la `documentación del centro de contenido <https://api-"
+"docs.ubports.com/sdk/apps/qml/Ubuntu.Content/ContentHandler.html#detailed-"
+"description>`_, existen varias formas de manejar el archivo que se va a "
+"compartir:"
 
-#: ../../appdev/apparmor.rst:24
-#, fuzzy
-msgid "accounts"
-msgstr "Cuentas en línea"
-
-#: ../../appdev/apparmor.rst:26
-#, fuzzy
-msgid "Description: Can use Online Accounts."
-msgstr "accounts: puede usar cuentas en línea"
-
-#: ../../appdev/apparmor.rst:28 ../../appdev/apparmor.rst:38
-#: ../../appdev/apparmor.rst:70 ../../appdev/apparmor.rst:80
-#: ../../appdev/apparmor.rst:100 ../../appdev/apparmor.rst:110
-#: ../../appdev/apparmor.rst:155 ../../appdev/apparmor.rst:163
-#: ../../appdev/apparmor.rst:173 ../../appdev/apparmor.rst:201
-#: ../../appdev/apparmor.rst:231 ../../appdev/apparmor.rst:239
-#: ../../appdev/apparmor.rst:249 ../../appdev/apparmor.rst:259
-#: ../../appdev/apparmor.rst:287
-msgid "Usage: common"
-msgstr ""
-
-#: ../../appdev/apparmor.rst:30
+#: ../../appdev/guides/contenthub.rst:18
 msgid ""
-"The accounts policy gives your app the permissions it needs to access the "
-"`Online Accounts API`_."
+"``ContentHandler.Source`` (The app selected is going to be the source of the "
+"file imported)"
 msgstr ""
+"``ContentHandler.Source`` (La aplicación seleccionada va a ser el origen del "
+"archivo importado)"
 
-#: ../../appdev/apparmor.rst:34
-msgid "audio"
-msgstr ""
-
-#: ../../appdev/apparmor.rst:36
+#: ../../appdev/guides/contenthub.rst:19
 msgid ""
-"Description: Can play audio (allows playing remote content via media-hub)"
+"``ContentHandler.Destination`` (The app selected is going to be the "
+"destination of the file exported)"
 msgstr ""
+"``ContentHandler.Destination`` (La aplicación seleccionada va a ser el "
+"destino del archivo exportado)"
 
-#: ../../appdev/apparmor.rst:40
+#: ../../appdev/guides/contenthub.rst:20
 msgid ""
-"The audio policy is needed for your app to play audio via pulseaudio or "
-"media-hub. The permission also gives it the ability to send album art to the "
-"thumbnailer service, which is then shown on the sound indicator."
+"``ContentHandler.Share`` (The app selected is going to be the app from witch "
+"the file is going to be shared from)"
 msgstr ""
+"``ContentHandler.Share`` (La aplicación seleccionada va a ser la aplicación "
+"desde la que se va a compartir el archivo)"
 
-#: ../../appdev/apparmor.rst:44
-msgid "bluetooth"
-msgstr ""
+#: ../../appdev/guides/contenthub.rst:23
+msgid "Importing"
+msgstr "Importar"
 
-#: ../../appdev/apparmor.rst:46
-msgid "Description: Use bluetooth (bluez5) as an administrator."
-msgstr ""
+#: ../../appdev/guides/contenthub.rst:28
+msgid "Webapp Creator on the OpenStore"
+msgstr "Webapp Creator en OpenStore"
 
-#: ../../appdev/apparmor.rst:48 ../../appdev/apparmor.rst:58
-#: ../../appdev/apparmor.rst:90 ../../appdev/apparmor.rst:120
-#: ../../appdev/apparmor.rst:128 ../../appdev/apparmor.rst:137
-#: ../../appdev/apparmor.rst:147 ../../appdev/apparmor.rst:181
-#: ../../appdev/apparmor.rst:191 ../../appdev/apparmor.rst:211
-#: ../../appdev/apparmor.rst:221 ../../appdev/apparmor.rst:267
-#: ../../appdev/apparmor.rst:277
-msgid "Usage: reserved"
-msgstr ""
-
-#: ../../appdev/apparmor.rst:50
+#: ../../appdev/guides/contenthub.rst:30
 msgid ""
-"This policy grants unrestricted access to Bluetooth devices. It is provided "
-"for administration of bluetooth and as a stepping stone towards developing a "
-"safe bluetooth API all apps can access."
+"Looking into the code of Webapp Creator, we’ll find the code to import an "
+"image to be used as icon. Tapping on the place holder will open the Content "
+"Hub that will let us choose from where to import the image (`see the Webapp "
+"Creator source code <https://gitlab.com/cibersheep/webapp-creator/blob/"
+"master/webapp-creator/app/ImportPage.qml#L38>`_)"
 msgstr ""
+"Mirando en el código de Webapp Creator, encontraremos el código para "
+"importar una imagen para usarla como icono. Pulsando en el marcador de "
+"posición se abrirá el centro de contenido que nos permitirá elegir desde "
+"dónde importar la imagen (`ver el código fuente de Webapp Creator "
+"<https://gitlab.com/cibersheep/webapp-creator/blob/master/webapp-creator/app/"
+"ImportPage.qml#L38>`_)"
 
-#: ../../appdev/apparmor.rst:54
-msgid "calendar"
-msgstr ""
+#: ../../appdev/guides/contenthub.rst:41
+msgid "``ContentPeerPicker`` is the element that shows the apps."
+msgstr "``ContentPeerPicker`` es el elemento que muestra las aplicaciones."
 
-#: ../../appdev/apparmor.rst:56
-#, fuzzy
-msgid "Description: Can access the calendar."
-msgstr "sensors: puede acceder a los sensores"
-
-#: ../../appdev/apparmor.rst:60
+#: ../../appdev/guides/contenthub.rst:47
 msgid ""
-"Calendar grants access to the Evolution dataserver's calendar and alarms "
-"APIs. It also grants access to sync-monitor."
+"``contentType`` is passed in `Main.qml <https://gitlab.com/cibersheep/webapp-"
+"creator/blob/master/webapp-creator/app/Main.qml#L118>`_ as ContentType."
+"Pictures. So, we will only see apps from which we only can import images. "
+"``handler`` is passed in the same line as ContentHandler.Source. As we want "
+"to import an image from the app selected in the Content Hub."
 msgstr ""
+"``contentType`` se pasa en `Main.qml <https://gitlab.com/cibersheep/"
+"webapp-creator/blob/master/webapp-creator/app/Main.qml#L118>`_ como "
+"ContentType.Pictures. Así, solo veremos aplicaciones desde las que solo "
+"podemos importar imágenes. ``handler`` se pasa en la misma línea como "
+"ContentHandler.Source. Ya que queremos importar una imagen desde la "
+"aplicación seleccionada en el centro de contenido."
 
-#: ../../appdev/apparmor.rst:62
+#: ../../appdev/guides/contenthub.rst:50
+msgid "Exporting"
+msgstr "Exportar"
+
+#: ../../appdev/guides/contenthub.rst:55
+msgid "Gelek in the OpenStore"
+msgstr "Gelek en OpenStore"
+
+#: ../../appdev/guides/contenthub.rst:57
 msgid ""
-"This policy is reserved since it grants free access to all calendars on the "
-"device at any time. The legacy bug about this situation is `LP #1227824`_ ."
+"In Gelek, we are going to end with some saved games that we want to save in "
+"our device or share with ourselves (in Telegram and then save them to our "
+"computer)."
 msgstr ""
+"En Gelek, vamos a terminar con algunos juegos salvados que queremos guardar "
+"en nuestro dispositivo o compartir con nosotros mismos (en Telegram y "
+"después guardarlos en nuestro ordenador)."
 
-#: ../../appdev/apparmor.rst:66
-msgid "camera"
-msgstr ""
-
-#: ../../appdev/apparmor.rst:68
-#, fuzzy
-msgid "Description: Can access the camera(s)"
-msgstr "camera: puede acceder a la(s) cámara(s)"
-
-#: ../../appdev/apparmor.rst:72
-#, fuzzy
-msgid "The camera policy grants access to device cameras."
-msgstr "camera: puede acceder a la(s) cámara(s)"
-
-#: ../../appdev/apparmor.rst:76
-msgid "connectivity"
-msgstr ""
-
-#: ../../appdev/apparmor.rst:78
-#, fuzzy
-msgid "Description: Can access coarse network connectivity information"
-msgstr "connectivity: puede acceder a información de conectividad de red"
-
-#: ../../appdev/apparmor.rst:82
+#: ../../appdev/guides/contenthub.rst:61
 msgid ""
-"The connectivity policy allows apps to determine rough information about the "
-"device's connectivity. This includes whether the device is connected to the "
-"Internet and whether it is connected via a Wi-Fi or mobile data connection."
+"Tapping on the download icon we will get a Content Hub to *save* the game "
+"file (which is actually an export)."
 msgstr ""
+"Pulsando en el icono de descarga obtendremos un gestor de contenido para "
+"*guardar* el archivo del juego (que en realidad es una exportación)."
 
-#: ../../appdev/apparmor.rst:86
-msgid "contacts"
-msgstr ""
-
-#: ../../appdev/apparmor.rst:88
-#, fuzzy
-msgid "Description: Can access contacts."
-msgstr "location: puede acceder a la ubicación"
-
-#: ../../appdev/apparmor.rst:92
+#: ../../appdev/guides/contenthub.rst:63
 msgid ""
-"The contacts policy allows apps to access the device user's contacts list. "
-"It is marked as reserved because it allows access to sync-monitor and "
-"unfettered access to the address book."
+"The game file is a file of type ``glksave``. We will tell Content Hub that "
+"we are sending a file of type ``All`` (`see the Install Page code <https://"
+"gitlab.com/cibersheep/gelek/blob/master/app/InstallPage.qml#L38>`_)."
 msgstr ""
+"El archivo de juego es un archivo del tipo ``glksave``. Diremos al centro de "
+"contenido que estamos enviando un archivo del tipo ``All`` (`ver el código "
+"de la página de instalación <https://gitlab.com/cibersheep/gelek/blob/master/"
+"app/InstallPage.qml#L38>`_)."
 
-#: ../../appdev/apparmor.rst:96
-msgid "content_exchange"
-msgstr ""
-
-#: ../../appdev/apparmor.rst:98
-#, fuzzy
-msgid "Description: Can request/import data from other applications"
-msgstr "content_exchange: puede solicitar/importar datos de otras aplicaciones"
-
-#: ../../appdev/apparmor.rst:102
+#: ../../appdev/guides/contenthub.rst:76
 msgid ""
-"Using the content_exchange policy allows your app to be a consumer of "
-"content on content-hub."
+"``contentType`` is ``ContentType.All``, so we will only see apps which are "
+"able to receive unmarked file types. ``handler`` is ``ContentHandler."
+"Destination``, so the app selected should store the saved game."
 msgstr ""
+"``contentType`` es ``ContentType.All``, así que solo veremos aplicaciones "
+"que pueden recibir tipos de archivos sin marcar. ``handler`` es "
+"``ContentHandler.Destination``, así que la aplicación seleccionada debería "
+"almacenar el juego guardado."
 
-#: ../../appdev/apparmor.rst:106
-msgid "content_exchange_source"
-msgstr ""
-
-#: ../../appdev/apparmor.rst:108
-#, fuzzy
-msgid "Description: Can provide/export data to other applications"
-msgstr ""
-"content_exchange_source: puede suministrar/exportar datos a otras "
-"aplicaciones"
-
-#: ../../appdev/apparmor.rst:112
+#: ../../appdev/guides/contenthub.rst:78
 msgid ""
-"The content_exchange_source policy allows your app to provide content on "
-"content-hub."
+"Tapping on the File Manager we will save the saved game in the folder we "
+"choose."
 msgstr ""
+"Pulsando en el gestor de archivos guardaremos los juegos guardados en la "
+"carpeta que elijamos."
 
-#: ../../appdev/apparmor.rst:116
-msgid "debug"
-msgstr ""
+#: ../../appdev/guides/contenthub.rst:81
+msgid "Sharing"
+msgstr "Compartir"
 
-#: ../../appdev/apparmor.rst:118
+#: ../../appdev/guides/contenthub.rst:83
 msgid ""
-"Description: Use special debugging tools. This should only be used in "
-"development and not for production packages. Note: use of this policy group "
-"provides significantly different confinement than normal and is not "
-"considered secure. You should never run untrusted programs using this policy "
-"group."
+"Similarly, tapping on the share icon will allow us to send the saved game "
+"through Telegram to ourselves (`see the Webapp Creator Import Page source "
+"code <https://gitlab.com/cibersheep/webapp-creator/blob/master/webapp-"
+"creator/app/ImportPage.qml#L38>`_)."
 msgstr ""
+"De manera similar, pulsando en el icono para compartir nos permitirá enviar "
+"el juego guardado a través de Telegram a nosotros mismos (`ver el código "
+"fuente de la página de importación de Webapp Creator <https://gitlab.com/"
+"cibersheep/webapp-creator/blob/master/webapp-creator/app/"
+"ImportPage.qml#L38>`_)."
 
-#: ../../appdev/apparmor.rst:124
-msgid "document_files"
-msgstr ""
-
-#: ../../appdev/apparmor.rst:126
+#: ../../appdev/guides/contenthub.rst:96
 msgid ""
-"Description: Can read and write to document files. This policy group is "
-"reserved for certain applications, such as document viewers. Developers "
-"should typically use the content_exchange policy group and API to access "
-"document files instead."
+"The only difference between this and the previous code is that ``handler`` "
+"is ``ContentHandler.Share``"
 msgstr ""
+"La única diferencia entre esto y el código previo es que ``handler`` es "
+"``ContentHandler.Share``"
 
-#: ../../appdev/apparmor.rst:130
+#: ../../appdev/guides/contenthub.rst:99
+msgid "Wait a minute. Why the different apps?"
+msgstr "Espera un momento. ¿Por qué aplicaciones diferentes?"
+
+#: ../../appdev/guides/contenthub.rst:104
+msgid "Content Hub: Export vs Share"
+msgstr "Centro de contenido: Exportar frente a compartir"
+
+#: ../../appdev/guides/contenthub.rst:106
 msgid ""
-"This policy allows apps to read and write to the \"Documents\" folders in "
-"the user's home directory and external media."
+"Each developer can decide the rules each app would follow in relation to the "
+"Content Hub. Why the OpenStore is shown as the destination of an export?"
 msgstr ""
+"Cada desarrollador puede decidir las normas que cada aplicación seguirá en "
+"relación con el centro de contenido. ¿Por qué aparece OpenStore como el "
+"destino de una exportación?"
 
-#: ../../appdev/apparmor.rst:133
-msgid "document_files_read"
-msgstr ""
+#: ../../appdev/guides/contenthub.rst:108
+msgid "Let’s check its manifest.json"
+msgstr "Comprobemos su manifest.json"
 
-#: ../../appdev/apparmor.rst:135
+#: ../../appdev/guides/contenthub.rst:121
 msgid ""
-"Description: Can read all document files. This policy group is reserved for "
-"certain applications, such as document viewers. Developers should typically "
-"use the content_exchange policy group and API to access document files "
-"instead."
+"The above code defines that the hooks for the app named ``\"openstore\"`` in "
+"relation to the ``\"content-hub\"`` should follow the rules defined in "
+"``openstore-contenthub.json``"
 msgstr ""
+"El código anterior define que los ganchos para la aplicación llamada "
+"``«openstore»`` en relación al ``«content-hub»`` debería de seguir las "
+"reglas definidas en ``openstore-contenthub.json``"
 
-#: ../../appdev/apparmor.rst:139
+#: ../../appdev/guides/contenthub.rst:131
 msgid ""
-"This policy allows apps to read the \"Documents\" folders in the user's home "
-"directory and external media."
+"This means, the OpenStore will be the destination for *all* ``ContentTypes``."
 msgstr ""
+"Esto significa que OpenStore será el destino para *todos* los "
+"``ContentTypes``."
 
-#: ../../appdev/apparmor.rst:143
-msgid "history"
-msgstr ""
+#: ../../appdev/guides/contenthub.rst:133
+msgid "What about uMatriks? Let’s see its ``content-hub.json``"
+msgstr "¿Qué ocurre con uMatriks? Veamos su ``content-hub.json``"
 
-#: ../../appdev/apparmor.rst:145
+#: ../../appdev/guides/contenthub.rst:161
 msgid ""
-"Description: Can access the history-service. This policy group is reserved "
-"for vetted applications only in this version of the policy. A future version "
-"of the policy may move this out of reserved status."
+"So, with this example, uMatriks will be able to be the destination, source "
+"and share app for all kinds of ``ContentType``. What about the other hooks "
+"in the ``manifest.json``? That is discussed in the next guide."
 msgstr ""
+"Así, con este ejemplo, uMatriks podrá ser el destino, origen y aplicación "
+"para compartir para toda clase de ``ContentType``. ¿Qué ocurre con los otros "
+"ganchos en el ``manifest.json``? Eso se analiza en la siguiente guía."
 
-#: ../../appdev/apparmor.rst:151
-msgid "keep-display-on"
-msgstr ""
-
-#: ../../appdev/apparmor.rst:153
-#, fuzzy
-msgid "Description: Can request keeping the screen on"
-msgstr ""
-"keep-display-on: puede solicitar mantener la pantalla encendida (disponible "
-"desde 15.04, OTA 5)"
-
-#: ../../appdev/apparmor.rst:159
-#, fuzzy
-msgid "location"
-msgstr "Introducción"
-
-#: ../../appdev/apparmor.rst:161
-#, fuzzy
-msgid "Description: Can access Location"
-msgstr "location: puede acceder a la ubicación"
-
-#: ../../appdev/apparmor.rst:165
-msgid "Allows an app to request access to the device's current location."
-msgstr ""
-
-#: ../../appdev/apparmor.rst:169
-msgid "microphone"
-msgstr ""
-
-#: ../../appdev/apparmor.rst:171
-#, fuzzy
-msgid "Description: Can access the microphone"
-msgstr "microphone: puede acceder al micrófono"
-
-#: ../../appdev/apparmor.rst:177
-msgid "music_files"
-msgstr ""
-
-#: ../../appdev/apparmor.rst:179
-msgid ""
-"Description: Can read and write to music files. This policy group is "
-"reserved for certain applications, such as music players. Developers should "
-"typically use the content_exchange policy group and API to access music "
-"files instead."
-msgstr ""
-
-#: ../../appdev/apparmor.rst:183
-msgid ""
-"The music_files policy group allows an app to read or write to the Music "
-"directories in the user's home folder or on external media."
-msgstr ""
-
-#: ../../appdev/apparmor.rst:187
-msgid "music_files_read"
-msgstr ""
-
-#: ../../appdev/apparmor.rst:189
-msgid ""
-"Description: Can read all music files. This policy group is reserved for "
-"certain applications, such as music players. Developers should typically use "
-"the content_exchange policy group and API to access music files instead."
-msgstr ""
-
-#: ../../appdev/apparmor.rst:193
-msgid ""
-"The music_files_read policy group allows an app to read the Music "
-"directories in the user's home folder or on external media."
-msgstr ""
-
-#: ../../appdev/apparmor.rst:197
-msgid "networking"
-msgstr ""
-
-#: ../../appdev/apparmor.rst:199
-#, fuzzy
-msgid "Description: Can access the network"
-msgstr "networking: puede acceder a la red"
-
-#: ../../appdev/apparmor.rst:203
-msgid ""
-"The networking policy group allows an app to contact network devices and use "
-"the `download manager`_."
-msgstr ""
-
-#: ../../appdev/apparmor.rst:207
-msgid "picture_files"
-msgstr ""
-
-#: ../../appdev/apparmor.rst:209
-msgid ""
-"Description: Can read and write to picture files. This policy group is "
-"reserved for certain applications, such as gallery applications. Developers "
-"should typically use the content_exchange policy group and API to access "
-"picture files instead."
-msgstr ""
-
-#: ../../appdev/apparmor.rst:213
-msgid ""
-"The picture_files policy group allows an app to read and write to the "
-"Pictures directories in the user's home folder or on external media."
-msgstr ""
-
-#: ../../appdev/apparmor.rst:217
-msgid "picture_files_read"
-msgstr ""
-
-#: ../../appdev/apparmor.rst:219
-msgid ""
-"Description: Can read all picture files. This policy group is reserved for "
-"certain applications, such as gallery applications. Developers should "
-"typically use the content_exchange policy group and API to access picture "
-"files instead."
-msgstr ""
-
-#: ../../appdev/apparmor.rst:223
-msgid ""
-"The picture_files_read policy group allows an app to read the Pictures "
-"directories in the user's home folder or on external media."
-msgstr ""
-
-#: ../../appdev/apparmor.rst:227
-#, fuzzy
-msgid "push-notification-client"
-msgstr "Notificaciones de inserción"
-
-#: ../../appdev/apparmor.rst:229
-#, fuzzy
-msgid "Description: Can use push notifications as a client"
-msgstr "push-notification-client: puede usar notificaciones como cliente"
-
-#: ../../appdev/apparmor.rst:235
-msgid "sensors"
-msgstr ""
-
-#: ../../appdev/apparmor.rst:237
-#, fuzzy
-msgid "Description: Can access the sensors"
-msgstr "sensors: puede acceder a los sensores"
-
-#: ../../appdev/apparmor.rst:241
-#, fuzzy
-msgid "Allows apps to access `device sensors`_"
-msgstr "sensors: puede acceder a los sensores"
-
-#: ../../appdev/apparmor.rst:245
-msgid "usermetrics"
-msgstr ""
-
-#: ../../appdev/apparmor.rst:247
-#, fuzzy
-msgid "Description: Can use UserMetrics to update the InfoGraphic"
-msgstr ""
-"usermetrics: puede usar UserMetrics (métricas de usuario) para actualizar "
-"el  InfoGraphic (infografía)"
-
-#: ../../appdev/apparmor.rst:251
-msgid ""
-"Allows an app to write metrics to the UserMetrics service so they can be "
-"displayed on the InfoGraphic."
-msgstr ""
-
-#: ../../appdev/apparmor.rst:255
-msgid "video"
-msgstr ""
-
-#: ../../appdev/apparmor.rst:257
-msgid ""
-"Description: Can play video (allows playing remote content via media-hub)"
-msgstr ""
-
-#: ../../appdev/apparmor.rst:263
-msgid "video_files"
-msgstr ""
-
-#: ../../appdev/apparmor.rst:265
-msgid ""
-"Description: Can read and write to video files. This policy group is "
-"reserved for certain applications, such as gallery applications. Developers "
-"should typically use the content_exchange policy group and API to access "
-"video files instead."
-msgstr ""
-
-#: ../../appdev/apparmor.rst:269
-msgid ""
-"The video_files policy group allows an app to read and write to the Videos "
-"directories in the user's home folder or on external media."
-msgstr ""
-
-#: ../../appdev/apparmor.rst:273
-msgid "video_files_read"
-msgstr ""
-
-#: ../../appdev/apparmor.rst:275
-msgid ""
-"Description: Can read all video files. This policy group is reserved for "
-"certain applications, such as gallery applications. Developers should "
-"typically use the content_exchange policy group and API to access video "
-"files instead."
-msgstr ""
-
-#: ../../appdev/apparmor.rst:279
-msgid ""
-"The video_files_read policy group allows an app to read the Videos "
-"directories in the user's home folder or on external media."
-msgstr ""
-
-#: ../../appdev/apparmor.rst:283
-msgid "webview"
-msgstr ""
-
-#: ../../appdev/apparmor.rst:285
-#, fuzzy
-msgid "Description: Can use the UbuntuWebview"
-msgstr "webview: puede usar el UbuntuWebview"
-
-#: ../../appdev/apparmor.rst:289
-msgid "The webview policy group allows apps to embed a `web browser view`_."
-msgstr ""
-
-#: ../../appdev/cookbook.rst:2
+#: ../../appdev/guides/cookbook.rst:2
 msgid "App development cookbook"
 msgstr "Recetario de desarrollo de aplicaciones"
 
-#: ../../appdev/cookbook.rst:5
+#: ../../appdev/guides/cookbook.rst:5
 msgid "Unofficial resources"
 msgstr "Recursos no oficiales"
 
-#: ../../appdev/cookbook.rst:7
+#: ../../appdev/guides/cookbook.rst:7
 msgid ""
 "In this section you will find links to external resources about creating "
 "applications for Ubuntu Touch."
@@ -504,7 +268,7 @@ msgstr ""
 "En esta sección encontrará enlaces a recursos externos sobre creación de "
 "aplicaciones para Ubuntu Touch."
 
-#: ../../appdev/cookbook.rst:9
+#: ../../appdev/guides/cookbook.rst:9
 msgid ""
 "`Ubuntu Touch programming book <https://www.gitbook.com/book/mimecar/ubuntu-"
 "touch-programming-course/details>`__"
@@ -512,11 +276,11 @@ msgstr ""
 "`Libro de programación de Ubuntu Touch en español<https://www.gitbook.com/"
 "book/mimecar/ubuntu-touch-programming-course/details/es>`__"
 
-#: ../../appdev/cookbook.rst:12
+#: ../../appdev/guides/cookbook.rst:12
 msgid "Playground"
 msgstr "Zona para jugar"
 
-#: ../../appdev/cookbook.rst:14
+#: ../../appdev/guides/cookbook.rst:14
 msgid ""
 "In a completely free and open source community, it is natural to have "
 "community members exploring the limits of the platform in many many "
@@ -525,14 +289,15 @@ msgid ""
 "possibilities of an open platform like Ubuntu Touch."
 msgstr ""
 "En una comunidad de código abierto completamente libre, es natural que haya "
-"miembros de la comunidad explorando los límites de la plataforma en muchas "
-"muchas direcciones. En esta sección encontrará enlaces a recursos externos "
-"que hacen exactamente eso: explorar. El propósito de esta lista es mostrar "
-"las posibilidades ilimitadas de una plataforma abierta como Ubuntu Touch."
+"miembros de la comunidad explorando los límites de la plataforma en "
+"muchísimas direcciones. En esta sección encontrará enlaces a recursos "
+"externos que hacen exactamente eso: explorar. El propósito de esta lista es "
+"mostrar las posibilidades ilimitadas de una plataforma abierta como Ubuntu "
+"Touch."
 
-#: ../../appdev/cookbook.rst:17
+#: ../../appdev/guides/cookbook.rst:17
 msgid ""
-"The resources listed here do not neccessarily represent the officially "
+"The resources listed here do not necessarily represent the officially "
 "endorsed way of developing applications for Ubuntu Touch, but are "
 "interesting experiments."
 msgstr ""
@@ -540,7 +305,7 @@ msgstr ""
 "oficialmente respaldada de desarrollar aplicaciones para Ubuntu Touch, pero "
 "son experimentos interesantes."
 
-#: ../../appdev/cookbook.rst:19
+#: ../../appdev/guides/cookbook.rst:19
 msgid ""
 "`Free Pascal development for Ubuntu Touch <http://kriscode.blogspot."
 "tw/2016/09/freepascal-development-for-ubuntu-phone.html>`__"
@@ -548,7 +313,7 @@ msgstr ""
 "`Desarrollo en Free Pascal para Ubuntu Touch <http://kriscode.blogspot."
 "tw/2016/09/freepascal-development-for-ubuntu-phone.html>`__"
 
-#: ../../appdev/cookbook.rst:20
+#: ../../appdev/guides/cookbook.rst:20
 msgid ""
 "`Lazarus development for Ubuntu Touch <http://kriscode.blogspot.tw/2016/10/"
 "lazarus-development-for-ubuntu-phone.html>`__"
@@ -556,7 +321,7 @@ msgstr ""
 "`Desarrollo en Lazarus para Ubuntu Touch <http://kriscode.blogspot."
 "tw/2016/10/lazarus-development-for-ubuntu-phone.html>`__"
 
-#: ../../appdev/cookbook.rst:21
+#: ../../appdev/guides/cookbook.rst:21
 msgid ""
 "`Geany on Ubuntu Touch device as text editor, source code editor, debugger "
 "and compiler for multiple languages <http://kriscode.blogspot.tw/2017/10/"
@@ -565,6 +330,350 @@ msgstr ""
 "`Geany en un dispositivo Ubuntu Touch como editor de texto, editor de código "
 "fuente, depurador y compilador para múltiples lenguajes <http://kriscode."
 "blogspot.tw/2017/10/geany-on-ubuntu-touch-device-as-text.html>`__"
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:2
+msgid "Importing from Content Hub and URLdispatcher"
+msgstr "Importar desde el centro de contenido y «URLdispatcher»"
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:7
+msgid ""
+"In the previous guide we have seen a little bit about how Content Hub works. "
+"In this guide we will see how ``URLdispatcher`` works and how to handle "
+"imported data from the Content Hub."
+msgstr ""
+"Hemos visto en la guía anterior un poquito sobre como funciona el centro de "
+"contenido. En esta guía veremos como funciona ``URLdispatcher` y como "
+"manejar los datos importados desde el centro de contenido."
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:10
+msgid "Handle data from the Content Hub"
+msgstr "Manejar datos desde el centro de contenido"
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:15
+msgid "OpenStore app from open-store.io"
+msgstr "Aplicación de OpenStore de open-store.io"
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:17
+msgid ""
+"One of the easiest ways of testing an app, is to send a test click to "
+"yourself on Telegram, and opening that click file with the OpenStore through "
+"the Content Hub:"
+msgstr ""
+"Una de las maneras más fáciles de probar una aplicación es enviarse un "
+"«click» de prueba a uno mismo usando Telegram y abriendo ese archivo «click» "
+"con OpenStore a través del centro de contenido:"
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:22
+msgid ""
+"If we tap on the OpenStore app, it will be opened and it will ask if we want "
+"to install the click file. Let’s take a look into `the Main.qml code of the "
+"app <https://github.com/UbuntuOpenStore/openstore-app/blob/master/openstore/"
+"Main.qml#L85>`_ to see how it is done:"
+msgstr ""
+"Si pulsamos en la aplicación de OpenStore, se abrirá y preguntará si "
+"queremos instalar el archivo «click». Echémosle un vistazo al `código "
+"Main.qml de la aplicación <https://github.com/UbuntuOpenStore/openstore-app/"
+"blob/master/openstore/Main.qml#L85>`_ para ver como se hace:"
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:41
+msgid ""
+"Do you see that Connections element that targets the ContentHub? When it "
+"receives the signal onImportRequested, it will take the url of the data sent "
+"from the Content Hub (``transfer.items[0].url`` is the url of the first data "
+"sent) and open a ``PopUp`` element to let the user install the click."
+msgstr ""
+"¿Ve ese elemento «Connections» que apunta al centro de contenido "
+"(«ContentHub»)? Cuando recibe la señal «onImportRequested», tomará la url de "
+"los datos enviados desde el centro de contenido (``transfer.items[0].url`` "
+"es la url de los primeros datos enviados) y abre un elemento ``PopUp`` para "
+"permitir al usuario instalar el «click»."
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:44
+msgid "What about the URLdispatcher?"
+msgstr "¿Qué ocurre con el «URLdispatcher»?"
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:46
+msgid ""
+"The URL dispatcher is a piece of software, similar to the Content Hub, that "
+"makes our life easier trying to choose the correct app for a certain "
+"protocol. For example: We probably want to open the web browser when tapping "
+"on an http protocol. If we tap on a map link it is handy to open it with "
+"uNav or to open a twitter link in the Twitter app! How does that work?"
+msgstr ""
+"El distribuidor de URL («URL dispatcher») es una pieza de software, similar "
+"al centro de contenido, que nos hace la vida más fácil intentando "
+"seleccionar la aplicación correcta para un protocolo determinado. Por "
+"ejemplo: probablemente queremos abrir el navegador cuando pulsamos sobre un "
+"protocolo http. Si pulsamos en un enlace de un mapa es útil abrirlo con "
+"uNav, ¡o abrir un enlace de twitter con la aplicación de Twitter! ¿Cómo "
+"funciona esto?"
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:48
+msgid ""
+"The ``URLdispatcher`` selects which app (according to their ``manifest."
+"json``) will open a certain link."
+msgstr ""
+"El ``URLdispatcher`` selecciona que aplicación (de acuerdo con su "
+"``manifest.json``) abrirá un enlace determinado."
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:53
+msgid ""
+"Let’s see how our navigation app looks inside. uNav’s manifest shows special "
+"hooks for the ``URLdispatcher`` in its `manifest.json code <https://bazaar."
+"launchpad.net/~unav-devs/unav/trunk/view/head:/manifest.json#L9>`_:"
+msgstr ""
+"Veamos como se ve el interior de nuestra aplicación de navegación. El "
+"manifiesto de uNav muestra unos ganchos especiales para ``URLdispatcher`` ("
+"distribuidor de URL) en su `código en el manifest.json "
+"<https://bazaar.launchpad.net/~unav-devs/unav/trunk/view/"
+"head:/manifest.json#L9>`_:"
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:83
+msgid ""
+"This means that a link that looks like http://map.unav.me/xxxxx,xxxxx will "
+"be opened in uNav. And that’s defined in lines 2 and 3, where it looks for "
+"protocol http followed by map.unav.me."
+msgstr ""
+"Esto significa que un enlace que se parece a http://map.unav.me/xxxxx,xxxxx "
+"se abrirá en uNav. Y eso se define en las líneas 2 y 3, donde busca el "
+"protocolo http seguido de map.unav.me."
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:85
+msgid ""
+"Also, a URI formatted geo:xxx,xxx should open in uNav, as it’s defined in "
+"line 11."
+msgstr ""
+"Además, una URI formateada así geo:xxx,xxx debería abrirse en uNav, y se "
+"define en la línea 11."
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:88
+msgid "And how do we manage the received URL?"
+msgstr "¿Y cómo gestionamos la URL recibida?"
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:90
+msgid ""
+"After the ``URLdispatcher`` sends the link to the correspondent app, we need "
+"to handle that URL or URI in the targeted app. Let’s see how to do that:"
+msgstr ""
+"Después de que ``URLdispatcher`` envía el enlace a la aplicación "
+"correspondiente, necesitamos gestionar esa URL o URI en la aplicación "
+"objetivo. Veamos cómo hacer eso:"
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:92
+msgid ""
+"In the main qml file, we need to add some code to know what to do with the "
+"dispatched URL. First add an `Arguments element <https://gitlab.com/ubports-"
+"linphone/linphone-simple/blob/master/qml/Main.qml#L189>`_ that holds the "
+"URL, as is done, for example, in the `Linphone app <https://open-store.io/"
+"app/linphone.cibersheep>`_. Also, we add `connection to the URI Handler "
+"<https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/Main."
+"qml#L200>`_ with a Connection element with ``UriHandler`` as a target."
+msgstr ""
+"Necesitamos añadir en el archivo qml principal algo de código para saber qué "
+"hacer con la URL enviada. Primero añada un `elemento «Arguments» "
+"<https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/"
+"Main.qml#L189>`_ que sostenga la URL, como se hace por ejemplo en la `"
+"aplicación Linphone <https://open-store.io/app/linphone.cibersheep>`_. "
+"Además, añadimos `una conexión al manipulador de la URI <https://gitlab.com/"
+"ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L200>`_ con un "
+"elemento «Connection» con ``UriHandler`` como objetivo."
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:120
+msgid ""
+"This code will manage a URI in the form ``linphone://sip:xxx@xxx.xx`` when "
+"the app is opened. But what do we need to do to handle this link when the "
+"app is closed?"
+msgstr ""
+"Este código manejará una URI en forma de ``linphone://sip:xxx@xxx.xx`` "
+"cuando se abre la aplicación. Pero ¿qué necesitamos hacer para manejar este "
+"enlace cuando se cierra la aplicación?"
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:122
+msgid ""
+"We need to add a little bit `extra code <https://gitlab.com/ubports-linphone/"
+"linphone-simple/blob/master/qml/Main.qml#L69>`_ that will cover two cases: "
+"1) We receive one URL 2) We receive more than one URL"
+msgstr ""
+"Necesitamos añadir un poco de `código extra <https://gitlab.com/"
+"ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L69>`_ que cubrirá "
+"dos casos: 1) Recibimos una URL 2) Recibimos más de una URL"
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:149
+msgid "What happens if more than one app has the same URL type defined?"
+msgstr ""
+"¿Qué ocurre si más de una aplicación tiene definido el mismo tipo de URL?"
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:151
+msgid ""
+"A very good question. What happens if we tap on a Twitter link? How is such "
+"a URL handled by the ``URLdispatcher`` as protocol ``http`` or the protocol "
+"``http://twitter``?"
+msgstr ""
+"Una pregunta muy buena. ¿Qué ocurre si pulsamos en un enlace de Twitter? ¿"
+"Cómo se maneja tal URL por el ``URLdispatcher``? ¿Cómo protocolo ``http`` o "
+"cómo el protocolo ``http://twitter``??"
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:153
+msgid "What happens if two apps have the same defined protocol?"
+msgstr "¿Qué ocurre si dos aplicaciones tienen definido el mismo protocolo?"
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:155
+msgid "Now it’s time to do some tests and share the results in the next guide."
+msgstr ""
+"Ahora es el momento de hacer algunas pruebas y compartir los resultados en "
+"la siguiente guía."
+
+#: ../../appdev/guides/index.rst:4
+msgid "Developer guides"
+msgstr "Guías para desarrolladores"
+
+#: ../../appdev/guides/index.rst:6
+msgid ""
+"We are currently working on expanding our list of developer guides. In the "
+"mean time we recommend the `Ubuntu Touch Programming Course <https://mimecar."
+"gitbook.io/qt-course/>`__."
+msgstr ""
+"Estamos trabajando actualmente en expandir nuestra lista de guías para "
+"desarrolladores. Mientras tanto recomendamos el `curso de programación de "
+"Ubuntu Touch <https://mimecar.gitbook.io/qt-course/es>`__."
+
+#: ../../appdev/guides/index.rst:9 ../../appdev/publishing/index.rst:8
+msgid ""
+"If you are interested in helping create developer guides check out our "
+"`GitLab Project <https://gitlab.com/ubports/ux/development-resources>`__."
+msgstr ""
+"Si tiene interés en ayudar a crear guías para desarrolladores, vea nuestro `"
+"proyecto en GitLab <https://gitlab.com/ubports/ux/development-resources>`__."
+
+#: ../../appdev/guides/writeable-dirs.rst:2
+msgid "Writable directories"
+msgstr "Directorios editables"
+
+#: ../../appdev/guides/writeable-dirs.rst:4
+msgid ""
+"App confinement is part of the Ubuntu Touch security concept. Data can be "
+"exchanged between apps only according to the AppArmor policies, mainly using "
+"the :ref:`ContentHub <contenthub>`. This being said, apps can only read and "
+"write files that are located in one of three app specific directories "
+"explained in this guide."
+msgstr ""
+"El confinamiento de las aplicaciones es parte del concepto de seguridad de "
+"Ubuntu Touch. Se pueden intercambiar datos entre aplicaciones solo de "
+"acuerdo con las políticas de «AppArmor», principalmente usando el :ref:`"
+"gestor de contenido <contenthub>`. Dicho esto, las aplicaciones solo pueden "
+"leer y escribir archivos que están ubicados en alguno de los tres "
+"directorios específicos para aplicaciones explicados en esta guía."
+
+#: ../../appdev/guides/writeable-dirs.rst:7
+msgid "Standard Paths"
+msgstr "Rutas estándar"
+
+#: ../../appdev/guides/writeable-dirs.rst:8
+msgid ""
+"Besides the write access to the app directories explained below, the app can "
+"write debug messages into the app log file located at ``/home/phablet/.cache/"
+"upstart/application-click-<fullappname>_<appname>_<version>.log``. To append "
+"messages to the log file, use the `Qt debug <https://doc.qt.io/qt-5/qdebug."
+"html>`_ functions."
+msgstr ""
+"Además del acceso de escritura a los directorios de la aplicación explicados "
+"más adelante, la aplicación puede escribir mensajes de depuración en el "
+"archivo de registro ubicado en ``/home/phablet/.cache/upstart/application-"
+"click-<nombrecompletoaplicación>_<nombreaplicación>_<version>.log``. Para "
+"agregar mensajes al archivo de registro, use las funciones de `depuración de "
+"Qt <https://doc.qt.io/qt-5/qdebug.html>`_."
+
+#: ../../appdev/guides/writeable-dirs.rst:11
+msgid "Config"
+msgstr "Configuración"
+
+#: ../../appdev/guides/writeable-dirs.rst:12
+msgid "Path: ``/home/phablet/.config/<fullappname>/``"
+msgstr "Ruta: ``/home/phablet/.config/<nombrecompletoaplicación>/``"
+
+#: ../../appdev/guides/writeable-dirs.rst:14
+msgid ""
+"This is the place to store configurations files to. The music app for "
+"example stores its configuration to ``/home/phablet/.config/com.ubuntu.music/"
+"com.ubuntu.music.conf``."
+msgstr ""
+"Este es el lugar donde guardar los archivos de configuración. La aplicación "
+"de música, por ejemplo, guarda su configuración en ``/home/phablet/.config/"
+"com.ubuntu.music/com.ubuntu.music.conf``."
+
+#: ../../appdev/guides/writeable-dirs.rst:17
+msgid "Cache"
+msgstr "Caché"
+
+#: ../../appdev/guides/writeable-dirs.rst:18
+msgid "Path: ``/home/phablet/.cache/<fullappname>/``"
+msgstr "Ruta: ``/home/phablet/.cache/<nombrecompletoaplicación>/``"
+
+#: ../../appdev/guides/writeable-dirs.rst:20
+msgid ""
+"This is the place to cache data for later use. The cache is also used by the "
+"Content Hub. Files that have been shared with the music app for example can "
+"be found in ``/home/phablet/.cache/com.ubuntu.music/HubIncoming/``."
+msgstr ""
+"Este es el lugar para los datos de la caché que se van a usar más tarde. "
+"También la usa el gestor de contenidos. Los archivos que han sido "
+"compartidos con la aplicación de música, por ejemplo, se pueden encontrar en "
+"``/home/phablet/.cache/com.ubuntu.music/HubIncoming/``."
+
+#: ../../appdev/guides/writeable-dirs.rst:23
+msgid "App data"
+msgstr "Datos de la aplicación"
+
+#: ../../appdev/guides/writeable-dirs.rst:24
+msgid "Path: ``/home/phablet/.local/share/<fullappname>/``"
+msgstr "Ruta: ``/home/phablet/.local/share/<nombrecompletoaplicación>/``"
+
+#: ../../appdev/guides/writeable-dirs.rst:26
+msgid ""
+"This is where your app stores any data. The music app for example stores its "
+"data bases to ``/home/phablet/.local/share/com.ubuntu.music/Databases/``."
+msgstr ""
+"Aquí es donde su aplicación guarda cualquier dato. La aplicación de música, "
+"por ejemplo, almacena sus bases de datos en ``/home/phablet/.local/share/"
+"com.ubuntu.music/Databases/``."
+
+#: ../../appdev/guides/writeable-dirs.rst:30
+msgid "Using Standard Paths in C++"
+msgstr "Usando rutas estándar en C++"
+
+#: ../../appdev/guides/writeable-dirs.rst:31
+msgid "The Qt header ``QStandardPaths`` provides the app's writable locations:"
+msgstr ""
+"La cabecera de Qt ``QStandardPaths``proporciona las ubicaciones editables de "
+"la aplicación:"
+
+#: ../../appdev/guides/writeable-dirs.rst:43
+msgid "Using Standard Paths in QML"
+msgstr "Usando rutas estándar en QML"
+
+#: ../../appdev/guides/writeable-dirs.rst:44
+msgid ""
+"The Qt module `Qt.labs.platform <https://doc.qt.io/archives/qt-5.10/qml-qt-"
+"labs-platform-standardpaths.html>`_ provides the QStandardPaths in QML. "
+"Unfortunately it is not available on Ubuntu Touch, yet. Probably you don't "
+"want to ship that module with your app. Instead, you could simply let your C+"
+"+ plugin provide the paths to your QML part. Therefore, add these methods to "
+"your plugin class:"
+msgstr ""
+"El módulo de Qt `Qt.labs.platform <https://doc.qt.io/archives/qt-5.10/qml-qt-"
+"labs-platform-standardpaths.html>`_ proporciona el «QStandardPaths» en QML. "
+"Por desgracia aún no está disponible en Ubuntu Touch. Posiblemente no querrá "
+"enviar ese módulo con su aplicación. En su lugar, puede dejar simplemente "
+"que su extensión de C++ proporcione las rutas a su parte de QML. Por lo "
+"tanto, añada estos métodos a su clase de extensiones («plugin class»):"
+
+#: ../../appdev/guides/writeable-dirs.rst:64
+msgid ""
+"Assuming the name of your plugin is MyPlugin, you can access these paths in "
+"QML:"
+msgstr ""
+"Suponiendo que el nombre de su extensión es «MyPlugin», puede acceder estas "
+"rutas en QML:"
 
 #: ../../appdev/index.rst:2
 msgid "App development"
@@ -577,44 +686,760 @@ msgid ""
 "talent and commitment is unmatched. Ubuntu is also the third most deployed "
 "desktop OS in the world."
 msgstr ""
-"Bienvenido a una plataforma de fuente abierta y gratuita bajo escrutinio y "
+"Bienvenida/o a una plataforma de fuente abierta y gratuita bajo escrutinio y "
 "mejora constantes por parte de una vibrante comunidad global, cuya energía, "
 "conectividad, talento y compromiso no tienen comparación. Ubuntu es también "
 "el tercer sistema operativo de escritorio más implementado en el mundo."
 
 #: ../../appdev/index.rst:7
-msgid "Introduction"
-msgstr "Introducción"
+msgid "Get started"
+msgstr "Comenzar"
 
 #: ../../appdev/index.rst:9
 msgid ""
-"Ubuntu Touch has three types of applications: `Web applications`_ (WebApps), "
-"Scopes (deprecated) and `Native applications`_. Applications are packaged, "
-"distributed and deployed using a format called `click <https://click."
-"readthedocs.io/en/latest/>`_ packaging. App UIs can be created using QML or "
-"HTML5 and behavior can be created using JS, Qt, C++, Python, or Go."
+"Ubuntu Touch is a fun and vibrant platform for development. Whether you're a "
+"new developer or an experienced one, we have several resources to help you "
+"get started."
 msgstr ""
-"Ubuntu Touch tiene tres clases de aplicaciones: `aplicaciones web`_ "
-"(WebApps), Scopes (obsoletos) y `aplicaciones nativas`_. Las aplicaciones "
-"son empaquetadas, distribuidas e implementadas usando un formato llamado "
-"empaquetado `click <https://click.readthedocs.io/en/latest/>`_. Las "
-"interfaces de usuario de las aplicaciones se pueden crear usando QML o HTML5 "
-"y el comportamiento puede crearse usando JS, Qt, C++, Python o Go."
+"Ubuntu Touch es una plataforma vibrante y divertida para el desarrollo. "
+"Tanto si es un desarrollador nuevo como uno experimentado, tenemos varios "
+"recursos para ayudarle a comenzar."
 
-#: ../../appdev/index.rst:14
-msgid "Click package overview"
-msgstr "Reseña del paquete Click"
+#: ../../appdev/index.rst:11
+msgid ""
+"Ubuntu Touch supports several different types of apps. :ref:`Native apps "
+"<nativeapp>` are apps with interfaces made using QML or HTML with their "
+"behavior defined in JavaScript, C++, Python, or Go. :ref:`Web apps <webapp>` "
+"are special containers to run websites in."
+msgstr ""
+"Ubuntu Touch soporta varios tipos diferentes de aplicaciones. :ref:`"
+"Aplicaciones nativas <nativeapp>` son aplicaciones con interfaces hechas "
+"usando QML o HTML, con su comportamiento definido en JavaScript, C++, Python "
+"o Go. :ref:`Aplicaciones web <webapp>` son contenedores especiales donde se "
+"ejecutan sitios web."
 
-#: ../../appdev/index.rst:16
+#: ../../appdev/index.rst:21
+msgid "Community"
+msgstr "Comunidad"
+
+#: ../../appdev/index.rst:23
+msgid ""
+"Have questions that aren't answered in the docs or want to chat with other "
+"Ubuntu Touch developers? Join our `app dev Telegram group <https://t.me/"
+"UbuntuAppDevEN>`_ or chat with us on the `UBports app dev forum <https://"
+"forums.ubports.com/category/35/app-development>`_."
+msgstr ""
+"¿Tiene preguntas que no son contestadas en la documentación o quiere charlar "
+"con otros desarrolladores de Ubuntu Touch? Únase a nuestro `grupo en "
+"Telegram de desarrollo de aplicaciones <https://t.me/UbuntuAppDevEN>`_ o "
+"charle con nosotros en el `foro de desarrollo de aplicaciones en UBports "
+"<https://forums.ubports.com/category/35/app-development>`_."
+
+#: ../../appdev/index.rst:26
+msgid "Tools"
+msgstr "Herramientas"
+
+#: ../../appdev/index.rst:28
+msgid ""
+"`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ is a meta-build "
+"system for Ubuntu Touch applications that allows you to compile, build, test "
+"and publish ``click`` packages and provides various templates to get you "
+"started with app development. It is currently the easiest and most "
+"convenient way of building click packages for Ubuntu Touch. You can use any "
+"code editor or IDE that you choose and build your apps from the commandline "
+"with Clickable."
+msgstr ""
+"`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ es un sistema de "
+"meta-construcción de aplicaciones para Ubuntu Touch que le permite compilar, "
+"construir, probar y publicar paquetes ``click`` y proporciona varias "
+"plantillas para que comience con el desarrollo de aplicaciones. Es "
+"actualmente el más sencillo y conveniente modo de construir paquetes «click» "
+"para Ubuntu Touch. Puede utilizar cualquier editor de código o IDE de su "
+"elección y construir sus aplicaciones desde la línea de órdenes con "
+"Clickable."
+
+#: ../../appdev/index.rst:30
+msgid ""
+"Alternatively there is the old `Ubuntu SDK IDE <https://docs.ubuntu.com/"
+"phone/en/platform/sdk>`__. Be aware that it is no longer supported by "
+"Canonical, and UBports has chosen to not support it either due to lack of "
+"manpower."
+msgstr ""
+"Alternativamente está el antiguo `Ubuntu SDK IDE <https://docs.ubuntu.com/"
+"phone/en/platform/sdk>`__ . Tenga en cuenta que ya no está soportado por "
+"Canonical y UBports ha decidido no soportarlo tampoco debido a la falta de "
+"mano de obra."
+
+#: ../../appdev/index.rst:32
+msgid ""
+"You can still install the SDK IDE in Ubuntu 16.04, but it is not guaranteed "
+"to work correctly. You can use the following commands to install::"
+msgstr ""
+"Aún puede instalar el «SDK IDE» en Ubuntu 16.04 pero no está garantizado que "
+"funcione correctamente. Puede usar las siguientes órdenes para instalarlo::"
+
+#: ../../appdev/index.rst:42
+msgid "Guides"
+msgstr "Guías"
+
+#: ../../appdev/index.rst:44
+msgid ""
+"Get started building your first app or learn about advanced concepts with "
+"our :ref:`Developer guides <devguides>`."
+msgstr ""
+"Comience a construir su primera aplicación o aprenda sobre conceptos "
+"avanzados con nuestras :ref:`guías para desarrolladores <devguides>`."
+
+#: ../../appdev/index.rst:57
+msgid "Publishing"
+msgstr "Publicación"
+
+#: ../../appdev/index.rst:59
+msgid ""
+"After you are done building your app, distribute it on the `OpenStore "
+"<https://open-store.io/>`__ with our :ref:`Publishing guides <publishing>`."
+msgstr ""
+"Después de finalizar la construcción de su aplicación, distribúyala en `"
+"OpenStore <https://open-store.io/>`__ con nuestras :ref:`guías de "
+"publicación <publishing>`."
+
+#: ../../appdev/index.rst:68
+msgid "Documentation"
+msgstr "Documentación"
+
+#: ../../appdev/index.rst:70
+msgid "`QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__"
+msgstr "`QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__"
+
+#: ../../appdev/index.rst:71
+msgid ""
+"`Cordova HTML5 API <https://api-docs.ubports.com/sdk/apps/html5/index."
+"html>`__"
+msgstr ""
+"`Cordova HTML5 API <https://api-docs.ubports.com/sdk/apps/html5/index."
+"html>`__"
+
+#: ../../appdev/index.rst:72
+msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`__"
+msgstr "`Clickable <http://clickable.bhdouglass.com/en/latest/>`__"
+
+#: ../../appdev/index.rst:75
+msgid "More Documentation"
+msgstr "Más documentación"
+
+#: ../../appdev/index.rst:87
+msgid "Sample apps"
+msgstr "Aplicaciones de muestra"
+
+#: ../../appdev/index.rst:89
+msgid ""
+"Learn more about app development by digging into our :ref:`Sample apps "
+"<sampleapps>`."
+msgstr ""
+"Aprenda más sobre desarrollo de aplicaciones investigando en nuestras :ref:`"
+"aplicaciones de muestra <sampleapps>`."
+
+#: ../../appdev/index.rst:99
+msgid "Preinstalled apps"
+msgstr "Aplicaciones pre-instaladas"
+
+#: ../../appdev/index.rst:101
+msgid ""
+"The :doc:`/contribute/preinstalled-apps` page has information on developing "
+"the apps which are included with Ubuntu Touch."
+msgstr ""
+"La página :doc:`/contribute/preinstalled-apps` contiene información sobre el "
+"desarrollo de aplicaciones que están incluidas con Ubuntu Touch."
+
+#: ../../appdev/nativeapp/index.rst:4
+msgid "Native applications"
+msgstr "Aplicaciones nativas"
+
+#: ../../appdev/platform/apparmor.rst:2
+msgid "AppArmor Policy Groups"
+msgstr "Grupos de políticas de «AppArmor»"
+
+#: ../../appdev/platform/apparmor.rst:4
+msgid ""
+"This document contains a full list of Ubuntu Touch's available policy groups "
+"and a description of what they give your app permission to access."
+msgstr ""
+"Este documento contiene una lista completa de los grupos de políticas "
+"disponibles en Ubuntu Touch y una descripción de a qué dan permiso para "
+"acceder a su aplicación."
+
+#: ../../appdev/platform/apparmor.rst:6
+msgid "Each entry follows this format"
+msgstr "Cada entrada sigue este formato"
+
+#: ../../appdev/platform/apparmor.rst:21
+msgid ""
+"Policy usage affects whether your app will be accepted by the OpenStore. "
+"Apps containing policies with common usage are generally accepted "
+"immediately, while reserved usage policies will need to be manually reviewed."
+msgstr ""
+"El uso de la política afecta a si su aplicación será aceptada o no por "
+"OpenStore. Las aplicaciones que contienen políticas de uso común son "
+"aceptadas generalmente de inmediato, mientras que las políticas de uso "
+"reservado necesitarán ser revisadas manualmente."
+
+#: ../../appdev/platform/apparmor.rst:24
+msgid "accounts"
+msgstr "cuentas"
+
+#: ../../appdev/platform/apparmor.rst:26
+msgid "Description: Can use Online Accounts."
+msgstr "Descripción: puede usar cuentas en línea."
+
+#: ../../appdev/platform/apparmor.rst:28 ../../appdev/platform/apparmor.rst:38
+#: ../../appdev/platform/apparmor.rst:70 ../../appdev/platform/apparmor.rst:80
+#: ../../appdev/platform/apparmor.rst:100
+#: ../../appdev/platform/apparmor.rst:110
+#: ../../appdev/platform/apparmor.rst:155
+#: ../../appdev/platform/apparmor.rst:163
+#: ../../appdev/platform/apparmor.rst:173
+#: ../../appdev/platform/apparmor.rst:201
+#: ../../appdev/platform/apparmor.rst:231
+#: ../../appdev/platform/apparmor.rst:239
+#: ../../appdev/platform/apparmor.rst:249
+#: ../../appdev/platform/apparmor.rst:259
+#: ../../appdev/platform/apparmor.rst:287
+msgid "Usage: common"
+msgstr "Uso: común"
+
+#: ../../appdev/platform/apparmor.rst:30
+msgid ""
+"The accounts policy gives your app the permissions it needs to access the "
+"`Online Accounts API`_."
+msgstr ""
+"La política de cuentas otorga a su aplicación los permisos que necesita para "
+"acceder a la `Online Accounts API`_ (API de cuentas en línea)."
+
+#: ../../appdev/platform/apparmor.rst:34
+msgid "audio"
+msgstr "sonido"
+
+#: ../../appdev/platform/apparmor.rst:36
+msgid ""
+"Description: Can play audio (allows playing remote content via media-hub)"
+msgstr ""
+"Descripción: puede reproducir sonido (permite la reproducción de contenido "
+"remoto vía «media-hub»)"
+
+#: ../../appdev/platform/apparmor.rst:40
+msgid ""
+"The audio policy is needed for your app to play audio via pulseaudio or "
+"media-hub. The permission also gives it the ability to send album art to the "
+"thumbnailer service, which is then shown on the sound indicator."
+msgstr ""
+"La política de sonido la necesita su aplicación para reproducir sonido vía "
+"«pulseaudio» o «media-hub». El permiso también concede la habilidad de "
+"enviar carátulas de álbum al servicio de imágenes en miniatura, que luego se "
+"muestran en el indicador de sonido."
+
+#: ../../appdev/platform/apparmor.rst:44
+msgid "bluetooth"
+msgstr "bluetooth"
+
+#: ../../appdev/platform/apparmor.rst:46
+msgid "Description: Use bluetooth (bluez5) as an administrator."
+msgstr "Descripción: use bluetooth (bluez5) como administrador."
+
+#: ../../appdev/platform/apparmor.rst:48 ../../appdev/platform/apparmor.rst:58
+#: ../../appdev/platform/apparmor.rst:90 ../../appdev/platform/apparmor.rst:120
+#: ../../appdev/platform/apparmor.rst:128
+#: ../../appdev/platform/apparmor.rst:137
+#: ../../appdev/platform/apparmor.rst:147
+#: ../../appdev/platform/apparmor.rst:181
+#: ../../appdev/platform/apparmor.rst:191
+#: ../../appdev/platform/apparmor.rst:211
+#: ../../appdev/platform/apparmor.rst:221
+#: ../../appdev/platform/apparmor.rst:267
+#: ../../appdev/platform/apparmor.rst:277
+msgid "Usage: reserved"
+msgstr "Uso: reservado"
+
+#: ../../appdev/platform/apparmor.rst:50
+msgid ""
+"This policy grants unrestricted access to Bluetooth devices. It is provided "
+"for administration of bluetooth and as a stepping stone towards developing a "
+"safe bluetooth API all apps can access."
+msgstr ""
+"Esta política otorga acceso ilimitado a los dispositivos Bluetooth. Se "
+"proporciona para la administración de bluetooth y como un trampolín para el "
+"desarrollo de una API de bluetooth segura que puedan acceder todas las "
+"aplicaciones."
+
+#: ../../appdev/platform/apparmor.rst:54
+msgid "calendar"
+msgstr "calendario"
+
+#: ../../appdev/platform/apparmor.rst:56
+msgid "Description: Can access the calendar."
+msgstr "Descripción: puede acceder al calendario."
+
+#: ../../appdev/platform/apparmor.rst:60
+msgid ""
+"Calendar grants access to the Evolution dataserver's calendar and alarms "
+"APIs. It also grants access to sync-monitor."
+msgstr ""
+"El calendario otorga acceso al servidor de datos del calendario y las APIs "
+"de alarmas de Evolution. También concede acceso a «sync-monitor»."
+
+#: ../../appdev/platform/apparmor.rst:62
+msgid ""
+"This policy is reserved since it grants free access to all calendars on the "
+"device at any time. The legacy bug about this situation is `LP #1227824`_ ."
+msgstr ""
+"Esta política está reservada ya que concede acceso libre a todos los "
+"calendarios en el dispositivo en cualquier momento. El informe del error "
+"heredado de esta situación es `LP #1227824`_ ."
+
+#: ../../appdev/platform/apparmor.rst:66
+msgid "camera"
+msgstr "cámara"
+
+#: ../../appdev/platform/apparmor.rst:68
+msgid "Description: Can access the camera(s)"
+msgstr "Descripción: puede acceder a la(s) cámara(s)"
+
+#: ../../appdev/platform/apparmor.rst:72
+msgid "The camera policy grants access to device cameras."
+msgstr "La política de la cámara permite acceder a las cámaras del dispositivo."
+
+#: ../../appdev/platform/apparmor.rst:76
+msgid "connectivity"
+msgstr "conectividad"
+
+#: ../../appdev/platform/apparmor.rst:78
+msgid "Description: Can access coarse network connectivity information"
+msgstr "Descripción: puede acceder a información de conectividad de red"
+
+#: ../../appdev/platform/apparmor.rst:82
+msgid ""
+"The connectivity policy allows apps to determine rough information about the "
+"device's connectivity. This includes whether the device is connected to the "
+"Internet and whether it is connected via a Wi-Fi or mobile data connection."
+msgstr ""
+"La política de conectividad permite a las aplicaciones determinar "
+"información aproximada sobre la conectividad del dispositivo. Esto incluye "
+"tanto si el dispositivo está conectado a Internet como si está conectado vía "
+"wifi o conexión de datos móviles."
+
+#: ../../appdev/platform/apparmor.rst:86
+msgid "contacts"
+msgstr "contactos"
+
+#: ../../appdev/platform/apparmor.rst:88
+msgid "Description: Can access contacts."
+msgstr "Descripción: puede acceder a contactos."
+
+#: ../../appdev/platform/apparmor.rst:92
+msgid ""
+"The contacts policy allows apps to access the device user's contacts list. "
+"It is marked as reserved because it allows access to sync-monitor and "
+"unfettered access to the address book."
+msgstr ""
+"La política de contactos permite a las aplicaciones acceder a la lista de "
+"contactos en el dispositivo del usuario. Está marcado como reservado porque "
+"permite el acceso a «sync-monitor» (monitor de sincronización) y acceso sin "
+"restricciones a la agenda de direcciones."
+
+#: ../../appdev/platform/apparmor.rst:96
+msgid "content_exchange"
+msgstr "«content_exchange» (intercambio de contenido)"
+
+#: ../../appdev/platform/apparmor.rst:98
+msgid "Description: Can request/import data from other applications"
+msgstr "Descripción: puede solicitar o importar datos de otras aplicaciones"
+
+#: ../../appdev/platform/apparmor.rst:102
+msgid ""
+"Using the content_exchange policy allows your app to be a consumer of "
+"content on content-hub."
+msgstr ""
+"Usar la política de «content_exchange» (intercambio de contenido) permite a "
+"su aplicación usar el contenido en el «content-hub» (centro de contenido)."
+
+#: ../../appdev/platform/apparmor.rst:106
+msgid "content_exchange_source"
+msgstr "«content_exchange_source» (fuente de intercambio de contenido)"
+
+#: ../../appdev/platform/apparmor.rst:108
+msgid "Description: Can provide/export data to other applications"
+msgstr "Descripción: puede suministrar o exportar datos a otras aplicaciones"
+
+#: ../../appdev/platform/apparmor.rst:112
+msgid ""
+"The content_exchange_source policy allows your app to provide content on "
+"content-hub."
+msgstr ""
+"La política de «content_exchange_source» (fuente de intercambio de contenido)"
+" permite a su aplicación proporcionar contenido al «content-hub» (centro de "
+"contenido)."
+
+#: ../../appdev/platform/apparmor.rst:116
+msgid "debug"
+msgstr "depuración"
+
+#: ../../appdev/platform/apparmor.rst:118
+msgid ""
+"Description: Use special debugging tools. This should only be used in "
+"development and not for production packages. Note: use of this policy group "
+"provides significantly different confinement than normal and is not "
+"considered secure. You should never run untrusted programs using this policy "
+"group."
+msgstr ""
+"Descripción: uso de herramientas especiales de depuración. Esto debería "
+"usarse solo para desarrollo, no para paquetes en producción. Nota: el uso de "
+"este grupo de políticas proporciona un confinamiento significativamente "
+"diferente del normal y no se considera seguro. Nunca debería ejecutar "
+"programas que no sean de confianza usando esta grupo de políticas."
+
+#: ../../appdev/platform/apparmor.rst:124
+msgid "document_files"
+msgstr "«document_files» (archivos de documentos)"
+
+#: ../../appdev/platform/apparmor.rst:126
+msgid ""
+"Description: Can read and write to document files. This policy group is "
+"reserved for certain applications, such as document viewers. Developers "
+"should typically use the content_exchange policy group and API to access "
+"document files instead."
+msgstr ""
+"Descripción: puede leer y escribir a archivos de documentos. Este grupo de "
+"políticas está reservado para determinadas aplicaciones, tales como visores "
+"de documentos. Los desarrolladores deberían usar habitualmente el grupo de "
+"políticas de «content_exchange» (intercambio de contenido) y la API para "
+"acceder a los archivos de documentos."
+
+#: ../../appdev/platform/apparmor.rst:130
+msgid ""
+"This policy allows apps to read and write to the \"Documents\" folders in "
+"the user's home directory and external media."
+msgstr ""
+"Esta política permite a las aplicaciones leer y escribir a la carpeta "
+"«Documents» (documentos) en el directorio principal del usuario y en la "
+"unidad externa."
+
+#: ../../appdev/platform/apparmor.rst:133
+msgid "document_files_read"
+msgstr "«document_files_read» (leer archivos de documentos)"
+
+#: ../../appdev/platform/apparmor.rst:135
+msgid ""
+"Description: Can read all document files. This policy group is reserved for "
+"certain applications, such as document viewers. Developers should typically "
+"use the content_exchange policy group and API to access document files "
+"instead."
+msgstr ""
+"Descripción: puede leer todos los archivos de documentos. Este grupo de "
+"políticas está reservado para determinadas aplicaciones, tales como visores "
+"de documentos. Los desarrolladores deberían usar habitualmente el grupo de "
+"políticas de «content_exchange» (intercambio de contenido) y la API para "
+"acceder a los archivos de documentos."
+
+#: ../../appdev/platform/apparmor.rst:139
+msgid ""
+"This policy allows apps to read the \"Documents\" folders in the user's home "
+"directory and external media."
+msgstr ""
+"Esta política permite a las aplicaciones leer la carpeta «Documents» "
+"(documentos) en el directorio principal del usuario y en la unidad externa."
+
+#: ../../appdev/platform/apparmor.rst:143
+msgid "history"
+msgstr "historial"
+
+#: ../../appdev/platform/apparmor.rst:145
+msgid ""
+"Description: Can access the history-service. This policy group is reserved "
+"for vetted applications only in this version of the policy. A future version "
+"of the policy may move this out of reserved status."
+msgstr ""
+"Descripción: puede acceder a «history-service» (servicio de historial). Este "
+"grupo de políticas está reservado solo para aplicaciones revisadas en esta "
+"versión de la política. Una versión futura de la política podría mover esto "
+"fuera del estado reservado."
+
+#: ../../appdev/platform/apparmor.rst:151
+msgid "keep-display-on"
+msgstr "«keep-display-on» (mantener la pantalla encendida)"
+
+#: ../../appdev/platform/apparmor.rst:153
+msgid "Description: Can request keeping the screen on"
+msgstr "Descripción: puede solicitar mantener la pantalla encendida"
+
+#: ../../appdev/platform/apparmor.rst:159
+msgid "location"
+msgstr "ubicación"
+
+#: ../../appdev/platform/apparmor.rst:161
+msgid "Description: Can access Location"
+msgstr "Descripción: puede acceder a la ubicación"
+
+#: ../../appdev/platform/apparmor.rst:165
+msgid "Allows an app to request access to the device's current location."
+msgstr ""
+"Permite a una aplicación solicitar acceso a la ubicación actual del "
+"dispositivo."
+
+#: ../../appdev/platform/apparmor.rst:169
+msgid "microphone"
+msgstr "micrófono"
+
+#: ../../appdev/platform/apparmor.rst:171
+msgid "Description: Can access the microphone"
+msgstr "Descripción: puede acceder al micrófono"
+
+#: ../../appdev/platform/apparmor.rst:177
+msgid "music_files"
+msgstr "«music_files» (archivos de música)"
+
+#: ../../appdev/platform/apparmor.rst:179
+msgid ""
+"Description: Can read and write to music files. This policy group is "
+"reserved for certain applications, such as music players. Developers should "
+"typically use the content_exchange policy group and API to access music "
+"files instead."
+msgstr ""
+"Descripción: puede leer y escribir a los archivos de música. Este grupo de "
+"políticas está reservado para determinadas aplicaciones, como los "
+"reproductores de música. Los desarrolladores deberían usar normalmente el "
+"grupo de políticas de «content_exchange» (intercambio de contenido) y la API "
+"para acceder a los archivos de música."
+
+#: ../../appdev/platform/apparmor.rst:183
+msgid ""
+"The music_files policy group allows an app to read or write to the Music "
+"directories in the user's home folder or on external media."
+msgstr ""
+"El grupo de políticas de «music_files» (archivos de música) permite a una "
+"aplicación leer o escribir a los directorios de música en la carpeta "
+"principal del usuario o en la unidad externa."
+
+#: ../../appdev/platform/apparmor.rst:187
+msgid "music_files_read"
+msgstr "«music_files_read» (lectura de archivos de música)"
+
+#: ../../appdev/platform/apparmor.rst:189
+msgid ""
+"Description: Can read all music files. This policy group is reserved for "
+"certain applications, such as music players. Developers should typically use "
+"the content_exchange policy group and API to access music files instead."
+msgstr ""
+"Descripción: puede leer todos los archivos de música. Este grupo de "
+"políticas está reservado para ciertas aplicaciones, como los reproductores "
+"de música. Los desarrolladores deberían normalmente usar el grupo de "
+"políticas de «content_exchange» (intercambio de contenido) y la API para "
+"acceder a los archivos de música."
+
+#: ../../appdev/platform/apparmor.rst:193
+msgid ""
+"The music_files_read policy group allows an app to read the Music "
+"directories in the user's home folder or on external media."
+msgstr ""
+"El grupo de políticas de «music_files_read» (lectura de archivos de música) "
+"permite a una aplicación leer los directorios de música en la carpeta "
+"principal del usuario o en la unidad externa."
+
+#: ../../appdev/platform/apparmor.rst:197
+msgid "networking"
+msgstr "«networking» (redes)"
+
+#: ../../appdev/platform/apparmor.rst:199
+msgid "Description: Can access the network"
+msgstr "Descripción: puede acceder a la red"
+
+#: ../../appdev/platform/apparmor.rst:203
+msgid ""
+"The networking policy group allows an app to contact network devices and use "
+"the `download manager`_."
+msgstr ""
+"El grupo de políticas de «networking» (redes) permite a una aplicación "
+"contactar dispositivos en red y usar el `download manager`_ (gestor de "
+"descargas)."
+
+#: ../../appdev/platform/apparmor.rst:207
+msgid "picture_files"
+msgstr "«picture_files» (archivos de imágenes)"
+
+#: ../../appdev/platform/apparmor.rst:209
+msgid ""
+"Description: Can read and write to picture files. This policy group is "
+"reserved for certain applications, such as gallery applications. Developers "
+"should typically use the content_exchange policy group and API to access "
+"picture files instead."
+msgstr ""
+"Descripción: puede leer y escribir a archivos de imágenes. Este grupo de "
+"políticas está reservado para ciertas aplicaciones, como las aplicaciones de "
+"galería. Los desarrolladores deberían usar normalmente el grupo de políticas "
+"de «content_exchange» (intercambio de contenido) y la API para acceder a los "
+"archivos de imágenes."
+
+#: ../../appdev/platform/apparmor.rst:213
+msgid ""
+"The picture_files policy group allows an app to read and write to the "
+"Pictures directories in the user's home folder or on external media."
+msgstr ""
+"El grupo de políticas de «picture_files» (archivos de imágenes) permite a "
+"una aplicación leer y escribir a los directorios de «Pictures» (imágenes) en "
+"la carpeta principal del usuario o en la unidad externa."
+
+#: ../../appdev/platform/apparmor.rst:217
+msgid "picture_files_read"
+msgstr "«picture_files_read» (lectura de archivos de imágenes)"
+
+#: ../../appdev/platform/apparmor.rst:219
+msgid ""
+"Description: Can read all picture files. This policy group is reserved for "
+"certain applications, such as gallery applications. Developers should "
+"typically use the content_exchange policy group and API to access picture "
+"files instead."
+msgstr ""
+"Descripción: puede leer todos los archivos de imágenes. Este grupo de "
+"políticas está reservado para ciertas aplicaciones, como las aplicaciones de "
+"galería. Los desarrolladores deberían usar normalmente el grupo de políticas "
+"de «content_exchange» (intercambio de contenido) y la API para acceder a los "
+"archivos de imágenes."
+
+#: ../../appdev/platform/apparmor.rst:223
+msgid ""
+"The picture_files_read policy group allows an app to read the Pictures "
+"directories in the user's home folder or on external media."
+msgstr ""
+"El grupo de políticas de «picture_files_read» (lectura de archivos de "
+"imágenes) permite a una aplicación leer los directorios de «Pictures» "
+"(imágenes) en la carpeta principal del usuario o en la unidad externa."
+
+#: ../../appdev/platform/apparmor.rst:227
+msgid "push-notification-client"
+msgstr "«push-notification-client» (cliente de envío de notificaciones)"
+
+#: ../../appdev/platform/apparmor.rst:229
+msgid "Description: Can use push notifications as a client"
+msgstr "Descripción: puede usar el envío de notificaciones como cliente"
+
+#: ../../appdev/platform/apparmor.rst:235
+msgid "sensors"
+msgstr "«sensors» (sensores)"
+
+#: ../../appdev/platform/apparmor.rst:237
+msgid "Description: Can access the sensors"
+msgstr "Descripción: puede acceder a los sensores"
+
+#: ../../appdev/platform/apparmor.rst:241
+msgid "Allows apps to access `device sensors`_"
+msgstr "Permite a las aplicaciones acceder a `device sensors`_"
+
+#: ../../appdev/platform/apparmor.rst:245
+msgid "usermetrics"
+msgstr "«usermetrics» (métricas de usuario)"
+
+#: ../../appdev/platform/apparmor.rst:247
+msgid "Description: Can use UserMetrics to update the InfoGraphic"
+msgstr ""
+"Descripción: puede usar «UserMetrics» (métricas de usuario) para actualizar "
+"«InfoGraphic» (infografía)"
+
+#: ../../appdev/platform/apparmor.rst:251
+msgid ""
+"Allows an app to write metrics to the UserMetrics service so they can be "
+"displayed on the InfoGraphic."
+msgstr ""
+"Permite a una aplicación escribir métricas al servicio «UserMetrics» ("
+"métricas de usuario) para que puedan ser mostradas en el «InfoGraphic» "
+"(infografía)."
+
+#: ../../appdev/platform/apparmor.rst:255
+msgid "video"
+msgstr "«video» (vídeo)"
+
+#: ../../appdev/platform/apparmor.rst:257
+msgid ""
+"Description: Can play video (allows playing remote content via media-hub)"
+msgstr ""
+"Descripción: puede reproducir vídeo (permite la reproducción de contenido "
+"remoto vía «media-hub» (centro multimedia)"
+
+#: ../../appdev/platform/apparmor.rst:263
+msgid "video_files"
+msgstr "«video_files» (archivos de vídeo)"
+
+#: ../../appdev/platform/apparmor.rst:265
+msgid ""
+"Description: Can read and write to video files. This policy group is "
+"reserved for certain applications, such as gallery applications. Developers "
+"should typically use the content_exchange policy group and API to access "
+"video files instead."
+msgstr ""
+"Descripción: puede leer y escribir a los archivos de vídeo. Este grupo de "
+"políticas está reservado para ciertas aplicaciones, como las aplicaciones de "
+"galería. Los desarrolladores deberían normalmente usar el «content_exchange» "
+"(intercambio de contenido) y la API para acceder a los archivos de vídeo."
+
+#: ../../appdev/platform/apparmor.rst:269
+msgid ""
+"The video_files policy group allows an app to read and write to the Videos "
+"directories in the user's home folder or on external media."
+msgstr ""
+"El grupo de políticas de «video_files» (archivos de vídeo) permite a una "
+"aplicación leer y escribir a los directorios de «Videos» (vídeos) en la "
+"carpeta principal del usuario o en la unidad externa."
+
+#: ../../appdev/platform/apparmor.rst:273
+msgid "video_files_read"
+msgstr "«video_files_read» (lectura de archivos de vídeo)"
+
+#: ../../appdev/platform/apparmor.rst:275
+msgid ""
+"Description: Can read all video files. This policy group is reserved for "
+"certain applications, such as gallery applications. Developers should "
+"typically use the content_exchange policy group and API to access video "
+"files instead."
+msgstr ""
+"Descripción: puede leer todos los archivos de vídeo. Este grupo de políticas "
+"está reservado para ciertas aplicaciones, como las aplicaciones de galería. "
+"Los desarrolladores deberían normalmente usar el grupo de políticas de "
+"«content_exchange» y la API para acceder a los archivos de vídeo."
+
+#: ../../appdev/platform/apparmor.rst:279
+msgid ""
+"The video_files_read policy group allows an app to read the Videos "
+"directories in the user's home folder or on external media."
+msgstr ""
+"El grupo de políticas de «video_files_read» (lectura de archivos de vídeo) "
+"permite a una aplicación leer los directorios de «Videos» (vídeos) en la "
+"carpeta principal del usuario o en la unidad externa."
+
+#: ../../appdev/platform/apparmor.rst:283
+msgid "webview"
+msgstr "«webview» (vista web)"
+
+#: ../../appdev/platform/apparmor.rst:285
+msgid "Description: Can use the UbuntuWebview"
+msgstr "Descripción: puede usar el «UbuntuWebview»"
+
+#: ../../appdev/platform/apparmor.rst:289
+msgid "The webview policy group allows apps to embed a `web browser view`_."
+msgstr ""
+"El grupo de políticas «webview» (vista web) permite a las aplicaciones "
+"integrar una `vista de navegador web`_."
+
+#: ../../appdev/platform/click.rst:4
+msgid "Click package"
+msgstr "Paquete «click»"
+
+#: ../../appdev/platform/click.rst:6
 msgid "Every ``click`` application package must embed at least 3 files:"
 msgstr ""
 "Cada paquete de aplicación ``click`` debe contener al menos 3 archivos:"
 
-#: ../../appdev/index.rst:38
+#: ../../appdev/platform/click.rst:28
 msgid "``manifest.json`` file"
 msgstr "archivo ``manifest.json``"
 
-#: ../../appdev/index.rst:19
+#: ../../appdev/platform/click.rst:9
 msgid ""
 "Contains application declarations such as application name, description, "
 "author, framework sdk target, and version."
@@ -622,28 +1447,28 @@ msgstr ""
 "Contiene declaraciones de aplicaciones tales como nombre, descripción, "
 "autor, kit de desarrollo de programas (sdk) objetivo y versión."
 
-#: ../../appdev/index.rst:21
+#: ../../appdev/platform/click.rst:11
 msgid "Example ``manifest.json`` file::"
 msgstr "Ejemplo de archivo ``manifest.json``::"
 
-#: ../../appdev/index.rst:41
+#: ../../appdev/platform/click.rst:31
 msgid "AppArmor profile policy file"
-msgstr "Archivo de política del perfil de AppArmor"
+msgstr "Archivo de política del perfil de «AppArmor»"
 
-#: ../../appdev/index.rst:41
+#: ../../appdev/platform/click.rst:31
 msgid ""
 "Contains which policy the app needs to work properly. See `Security and app "
 "isolation`_ below for more information on this file."
 msgstr ""
 "Contiene la política que la aplicación necesita para funcionar "
-"correctamente. Vea `Seguridad y aislamiento de aplicación`_ más abajo para "
-"más información sobre este archivo."
+"correctamente. Vea `Security and app isolation`_ (seguridad y aislamiento de "
+"aplicaciones) más adelante para obtener más información sobre este archivo."
 
-#: ../../appdev/index.rst:64
+#: ../../appdev/platform/click.rst:54
 msgid "``.desktop`` file"
 msgstr "archivo ``.desktop``"
 
-#: ../../appdev/index.rst:44
+#: ../../appdev/platform/click.rst:34
 msgid ""
 "The launcher file will tell UT how to launch the app, which name and icon to "
 "display on the home screen, and some other properties."
@@ -651,51 +1476,55 @@ msgstr ""
 "El archivo lanzador dirá a UT como lanzar la aplicación, que nombre e icono "
 "mostrar en la pantalla principal y otras propiedades."
 
-#: ../../appdev/index.rst:46
+#: ../../appdev/platform/click.rst:36
 msgid "Example of ``app.desktop``::"
 msgstr "Ejemplo de ``app.desktop``::"
 
-#: ../../appdev/index.rst:56
+#: ../../appdev/platform/click.rst:46
 msgid "Non exhaustive list of properties:"
 msgstr "Lista no exhaustiva de propiedades:"
 
-#: ../../appdev/index.rst:58
+#: ../../appdev/platform/click.rst:48
 msgid "Name: Application title has shown in the dash"
-msgstr "Name: título que la aplicación muestra en el tablero"
+msgstr "«Name» (nombre): título que la aplicación muestra en el tablero"
 
-#: ../../appdev/index.rst:59
+#: ../../appdev/platform/click.rst:49
 msgid "Exec: Path to the executable file"
-msgstr "Exec: ruta al archivo ejecutable"
+msgstr "«Exec» (ejecutable): ruta al archivo ejecutable"
 
-#: ../../appdev/index.rst:60
+#: ../../appdev/platform/click.rst:50
 msgid "Icon: Path to the icon to display"
-msgstr "Icon: ruta al icono que mostrar"
+msgstr "«Icon» (icono): ruta al icono que mostrar"
 
-#: ../../appdev/index.rst:61
+#: ../../appdev/platform/click.rst:51
 msgid "Terminal: ``false`` if will not run in terminal window"
-msgstr "Terminal: ``false`` si no se ejecutará en una ventana de terminal"
+msgstr ""
+"«Terminal» (terminal): ``false`` (falso) si no se ejecutará en una ventana "
+"de terminal"
 
-#: ../../appdev/index.rst:62
+#: ../../appdev/platform/click.rst:52
 msgid ""
 "Type: Specifies the type of the launcher file. The type can be Application, "
 "Link or Directory."
 msgstr ""
-"Type: especifica el tipo de archivo lanzador. El tipo puede ser aplicación, "
-"enlace o directorio."
+"«Type» (tipo): especifica el tipo de archivo lanzador. El tipo puede ser "
+"aplicación, enlace o directorio."
 
-#: ../../appdev/index.rst:63
+#: ../../appdev/platform/click.rst:53
 msgid "X-Ubuntu-Touch: ``true`` to make the app visible"
-msgstr "X-Ubuntu-Touch: ``true`` para hacer la aplicación visible"
+msgstr "«X-Ubuntu-Touch»: ``true`` (verdadero) para hacer la aplicación visible"
 
-#: ../../appdev/index.rst:64
+#: ../../appdev/platform/click.rst:54
 msgid "X-Ubuntu-XMir-Enable: ``true`` if your app is built for X"
-msgstr "X-Ubuntu-XMir-Enable: ``true`` si su aplicación está hecha para X"
+msgstr ""
+"«X-Ubuntu-XMir-Enable»: ``true`` (verdadero) si su aplicación está hecha "
+"para X"
 
-#: ../../appdev/index.rst:71
+#: ../../appdev/platform/click.rst:61
 msgid "Security and app isolation"
-msgstr "Seguridad y aislamiento de la aplicación"
+msgstr "Seguridad y aislamiento de las aplicaciones"
 
-#: ../../appdev/index.rst:73
+#: ../../appdev/platform/click.rst:63
 msgid ""
 "All Ubuntu apps and scopes are confined respecting AppArmor access control "
 "mechanism (see `Application Confinement <https://wiki.ubuntu.com/"
@@ -706,36 +1535,34 @@ msgid ""
 "needed for the app or scope to function properly with an apparmor ``.json`` "
 "file."
 msgstr ""
-"Todas las aplicaciones y scopes de Ubuntu están confinadas respetando el "
-"mecanismo de control de acceso de AppArmor (vea `Confinamiento de "
+"Todas las aplicaciones y «scopes» de Ubuntu están confinadas respetando el "
+"mecanismo de control de acceso de «AppArmor» (vea `Confinamiento de "
 "aplicaciones <https://wiki.ubuntu.com/SecurityTeam/Specifications/"
 "ApplicationConfinement#App_confinement_with_AppArmor>`_) , esto significa "
 "que solo tienen acceso a sus propios recursos y están aisladas de otras "
 "aplicaciones y partes del sistema. El desarrollador debe declarar que grupos "
-"de políticas se necesitan para la aplicación o scope para funcionar "
-"correctamente con un archivo ``.json`` de apparmor."
+"de políticas se necesitan para la aplicación o «scope» para funcionar "
+"correctamente con un archivo ``.json`` de «apparmor»."
 
-#: ../../appdev/index.rst:75
+#: ../../appdev/platform/click.rst:65
 msgid "Example ``apparmor.json`` file::"
 msgstr "Ejemplo de archivo ``apparmor.json``::"
 
-#: ../../appdev/index.rst:87
+#: ../../appdev/platform/click.rst:77
 msgid "For a full list of available policy groups, see :doc:`apparmor`."
 msgstr ""
+"Para una lista completa de grupos de políticas disponibles, vea "
+":doc:`apparmor`."
 
-#: ../../appdev/index.rst:97
-msgid "Ubuntu Touch platform"
-msgstr "Plataforma Ubuntu Touch"
+#: ../../appdev/platform/index.rst:4
+msgid "Platform"
+msgstr "Plataforma"
 
-#: ../../appdev/index.rst:99
-msgid "Platform key notes:"
-msgstr "Ideas claves de la plataforma:"
-
-#: ../../appdev/index.rst:102
+#: ../../appdev/platform/index.rst:7
 msgid "Content Hub"
-msgstr "Concentrador de contenido"
+msgstr "Centro de contenido"
 
-#: ../../appdev/index.rst:102
+#: ../../appdev/platform/index.rst:7
 msgid ""
 "Each application can expose content outside its sandbox, giving the user "
 "precise control over what can be imported, exported or shared with the world "
@@ -745,24 +1572,24 @@ msgstr ""
 "al usuario un control preciso sobre lo que puede ser importado, exportado o "
 "compartido con el mundo y con otras aplicaciones."
 
-#: ../../appdev/index.rst:105
+#: ../../appdev/platform/index.rst:10
 msgid "Push notifications"
-msgstr "Notificaciones de inserción"
+msgstr "Envío de notificaciones"
 
-#: ../../appdev/index.rst:105
+#: ../../appdev/platform/index.rst:10
 msgid ""
 "By using a push server and a companion client, instantly serve users with "
 "the latest information from their network and apps."
 msgstr ""
-"Al usar un servidor de inserción (push) y un cliente complementario, sirve "
+"Al usar un servidor de envío («push») y un cliente complementario, sirve "
 "instantáneamente a los usuarios con la última información de su red y "
 "aplicaciones."
 
-#: ../../appdev/index.rst:108
+#: ../../appdev/platform/index.rst:13
 msgid "URL dispatcher"
 msgstr "Distribuidor de URL"
 
-#: ../../appdev/index.rst:108
+#: ../../appdev/platform/index.rst:13
 msgid ""
 "Help users navigate between your apps and drive their journey with the URL "
 "dispatcher."
@@ -770,11 +1597,11 @@ msgstr ""
 "Ayude a los usuarios a navegar entre sus aplicaciones y conduzca su travesía "
 "con el distribuidor de URL."
 
-#: ../../appdev/index.rst:112
+#: ../../appdev/platform/index.rst:17
 msgid "Online accounts"
 msgstr "Cuentas en línea"
 
-#: ../../appdev/index.rst:111
+#: ../../appdev/platform/index.rst:16
 msgid ""
 "Simplify user access to online services by integrating with the online "
 "accounts API. Accounts added by the user on the device are registered in a "
@@ -785,536 +1612,54 @@ msgstr ""
 "dispositivo por el usuario se registran en un concentrador centralizado, "
 "permitiendo a otras aplicaciones reusarlas."
 
-#: ../../appdev/index.rst:114
+#: ../../appdev/platform/index.rst:19
 msgid "`Read the docs <https://docs.ubuntu.com/phone/en/platform/>`__"
 msgstr "`Lea la documentación <https://docs.ubuntu.com/phone/en/platform/>`__"
 
-#: ../../appdev/index.rst:121
-msgid "Getting started"
-msgstr "Comenzando"
+#: ../../appdev/publishing/index.rst:4
+msgid "App publishing guides"
+msgstr "Guías de publicación de aplicaciones"
 
-#: ../../appdev/index.rst:123
+#: ../../appdev/publishing/index.rst:6
 msgid ""
-"`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ is a meta-build "
-"system for Ubuntu Touch applications that allows you to compile, build, test "
-"and publish `click` packages and provides various templates to get you "
-"started with UT app developpment. It is currently the easiest and most "
-"convenient way of building click packages for Ubuntu Touch. Also, looking at "
-"existing published app source code is a good way to learn: `see openstore "
-"<https://open-store.io>`_"
+"We are currently working on expanding our list of publishing guides. In the "
+"mean time you can get started over at the `OpenStore's submission page "
+"<https://open-store.io/submit>`__."
 msgstr ""
-"`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ es un sistema de "
-"meta-construcción de aplicaciones para Ubuntu Touch que le permite compilar, "
-"construir, probar y publicar paquetes `click` y proporciona varias "
-"plantillas para que comience con el desarrollo de aplicaciones para UT. Es "
-"actualmente el más sencillo y conveniente modo de construir paquetes click "
-"para Ubuntu Touch. También, mirando el código fuente de aplicaciones ya "
-"publicadas es una buena manera de aprender: `vea openstore <https://open-"
-"store.io>`_"
+"Estamos trabajando en la actualidad para expandir nuestra lista de guías de "
+"publicación. Mientras tanto puede comenzar en la `página de envío de "
+"OpenStore <https://open-store.io/submit>`__."
 
-#: ../../appdev/index.rst:128
-msgid "Ubuntu UI-Toolkit"
-msgstr "Kit de herramientas para Ubuntu"
+#: ../../appdev/samples/index.rst:4
+msgid "Sample Apps"
+msgstr "Aplicaciones de muestra"
 
-#: ../../appdev/index.rst:130
+#: ../../appdev/samples/index.rst:6
 msgid ""
-"Here you can find `the API documentation <https://api-docs.ubports.com/>`_ "
-"for the Ubuntu UI toolkit."
+"We are currently working on expanding our list of sample apps. In the mean "
+"time many apps on the `OpenStore <https://open-store.io/>`__ are open source "
+"and can be used as a reference."
 msgstr ""
-"Aquí puede encontrar la `documentación de la API <https://api-docs.ubports."
-"com/>`_ para el kit de herramientas de Ubuntu."
+"Estamos trabajando en la actualidad para expandir nuestra lista de "
+"aplicaciones de muestra. Mientras tanto, muchas aplicaciones en `OpenStore "
+"<https://open-store.io/>`__ son de código abierto y se pueden usar como "
+"referencia."
 
-#: ../../appdev/index.rst:132
-msgid "`QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__"
-msgstr "`QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__"
-
-#: ../../appdev/index.rst:133
+#: ../../appdev/samples/index.rst:8
 msgid ""
-"`Cordova HTML5 API <https://api-docs.ubports.com/sdk/apps/html5/index."
-"html>`__"
+"If you are interested in helping create sample apps check out our `GitLab "
+"Project <https://gitlab.com/ubports/ux/development-resources>`__."
 msgstr ""
-"`Cordova HTML5 API <https://api-docs.ubports.com/sdk/apps/html5/index."
-"html>`__"
+"Si está interesado en ayudar a crear aplicaciones de muestra, vea nuestro `"
+"proyecto en GitLab <https://gitlab.com/ubports/ux/development-resources>`__."
 
-#: ../../appdev/index.rst:134
-msgid "`Click packages <https://click.readthedocs.io/en/latest/>`__"
-msgstr "`Paquetes Click <https://click.readthedocs.io/en/latest/>`__"
-
-#: ../../appdev/index.rst:137
-msgid "Ubuntu SDK IDE (unsupported)"
-msgstr "Ubuntu SDK IDE (sin soporte)"
-
-#: ../../appdev/index.rst:139
-msgid ""
-"The `Ubuntu SDK IDE <https://docs.ubuntu.com/phone/en/platform/sdk>`__ is no "
-"longer supported by Canonical, and UBports does not currently have the the "
-"time and manpower to get it to a working state."
-msgstr ""
-"El `Ubuntu SDK IDE <https://docs.ubuntu.com/phone/en/platform/sdk>`__ no "
-"está ya soportado por Canonical y UBports no tiene actualmente el tiempo ni "
-"la mano de obra para llevarlo a un estado operativo."
-
-#: ../../appdev/index.rst:143
-msgid "It can still be installed in Ubuntu 16.04, but issues are expected."
-msgstr "Puede instalarse en Ubuntu 16.04 pero espere problemas."
-
-#: ../../appdev/index.rst:153 ../../appdev/system-software.rst:2
-msgid "System Software"
-msgstr "Software del sistema"
-
-#: ../../appdev/index.rst:155
-msgid "Working on system components"
-msgstr "Trabajando en los componentes del sistema"
-
-#: ../../appdev/index.rst:164 ../../appdev/webapp/index.rst:2
-msgid "Web applications"
-msgstr "Aplicaciones web"
-
-#: ../../appdev/index.rst:166
-#, fuzzy
-msgid ""
-"Ubuntu webapps are web-hosted sites displayed inside an Ubuntu app "
-"container. They are true apps that users install, see, launch and use, but "
-"their content is provided through URLs."
-msgstr ""
-"Las aplicaciones web de Ubuntu son sitios alojados en la web mostrados "
-"dentro del contenedor de una aplicación Ubuntu. Son verdaderas aplicaciones "
-"que los usuarios instalan, ven, lanzan y usan. Pero su contenido se "
-"suministra a través de URLs."
-
-#: ../../appdev/index.rst:175 ../../appdev/nativeapp/index.rst:2
-msgid "Native applications"
-msgstr "Aplicaciones nativas"
-
-#: ../../appdev/index.rst:184
-msgid "Cookbook"
-msgstr "Recetario"
-
-#: ../../appdev/index.rst:186
-msgid "A collection of external resources"
-msgstr "Una colección de recursos externos"
-
-#: ../../appdev/system-software.rst:4
-msgid ""
-"In this page you'll find information on how to develop system software, "
-"including how to build it, cross-compile it and make it available to other "
-"users. Most of the software preinstalled in your Ubports device is shipped "
-"in the device image in the form of a Debian package. This format is used by "
-"several Linux distributions (such as Debian, Ubuntu, Mint) and `plenty of "
-"documentation <https://www.debian.org/doc/manuals/maint-guide/index.en."
-"html>`__ is available out there on how to work with it, so we won't be "
-"covering it here. Besides, in most cases you'll find yourself in need of "
-"modifying existing software, rather than developing new packages from "
-"scratch; for this reason, this guide is mostly about recompiling an existing "
-"Ubports package."
-msgstr ""
-"En esta página encontrará información sobre como desarrollar programas de "
-"sistema, incluyendo como construirlos, compilarlos cruzadamente y ponerlos a "
-"disposición de otros usuarios. La mayoría del software preinstalado en su "
-"dispositivo UBports es transportado en la imagen del dispositivo en la forma "
-"de paquete Debian. Este formato lo usan varias distribuciones de Linux "
-"(tales como Debian, Ubuntu, Mint) y `bastante documentación <https://www."
-"debian.org/doc/manuals/maint-guide/index.en.html>`__ está disponible sobre "
-"como trabajar con el, así que no lo cubriremos aquí. Además, en la mayoría "
-"de los casos se encontrará en la necesidad de modificar el software "
-"existente, más que desarrollando nuevos paquetes desde cero; por esta razón, "
-"esta guía es mayormente sobre como recompilar un paquete de Ubports ya "
-"existente."
-
-#: ../../appdev/system-software.rst:17
-msgid ""
-"There are essentially three ways of developing Ubports system software: "
-"building it directly on device, cross-compiling it or uploading the source "
-"code to a Launchpad PPA and have it built by Launchpad. We'll examine all of "
-"the three methods, and use `address-book-app <https://github.com/ubports/"
-"address-book-app>`__ (the Contacts application) as an example."
-msgstr ""
-"Existen esencialmente tres maneras de desarrollar software de sistema de "
-"Ubports: construyéndolo directamente en el dispositivo, compilarlo "
-"cruzadamente o subir el código fuente a un PPA de Launchpad y dejar que "
-"Launchpad lo construya. Examinaremos los tres métodos y usaremos `address-"
-"book-app <https://github.com/ubports/address-book-app>`__ (la aplicación de "
-"Contactos) como ejemplo."
-
-#: ../../appdev/system-software.rst:25
-msgid "Building on the device itself"
-msgstr "Construyendo en el propio dispositivo"
-
-#: ../../appdev/system-software.rst:27
-msgid ""
-"This is the fastest and simplest method to develop small changes and test "
-"them in nearly real-time. Depending on your device resources, however, it "
-"might not be possible to follow this path: if you don't have enough free "
-"space in your root filesystem you won't be able to install all the package "
-"build dependencies; or, your device's RAM might not be enough for the "
-"compiler. Assuming that you are lucky enough not to run into these "
-"restrictions, and that you don't mind reflashing your device afterwards (to "
-"clear it from all the development packages you installed), please read on."
-msgstr ""
-"Este es el método más rápido y sencillo para desarrollar pequeños cambios y "
-"probarlos casi en tiempo real. Dependiendo de los recursos de su "
-"dispositivo, sin embargo, podría no ser posible seguir este camino: si no "
-"tiene suficiente espacio libre en su sistema de archivos raíz no podrá "
-"instalar todas las dependencias de construcción del paquete; o podría no ser "
-"suficiente la cantidad de memoria RAM de su dispositivo para el compilador. "
-"Asumiendo que es lo suficientemente afortunado de no tener estas "
-"restricciones y que no le importa volver a programar (reflash) su "
-"dispositivo después (para dejarlo limpio de todos los paquetes de desarrollo "
-"que ha instalado), siga leyendo."
-
-#: ../../appdev/system-software.rst:37
-msgid ""
-"You can ssh to the device (via ``phablet-shell``, for example) and then "
-"install all the packages needed to rebuild the component you want to modify "
-"(the Contacts app, in this example):"
-msgstr ""
-"Puede iniciar una sesión ssh al dispositivo (vía ``phablet-shell``, por "
-"ejemplo) y luego instalar todos los paquetes necesarios para reconstruir el "
-"componente que quiere modificar (la aplicación de Contactos en este ejemplo):"
-
-#: ../../appdev/system-software.rst:46
-msgid ""
-"This will install a bunch of packages into your device's rootfs. "
-"Additionally, you probably want to install ``git`` in order to get your "
-"app's source code in the device and later push your changes back into the "
-"repository:"
-msgstr ""
-"Esto instalará un puñado de paquetes en el rootfs de su dispositivo. "
-"Adicionalmente, probablemente quiera instalar ``git`` para poder tener el "
-"código fuente de su aplicación en el dispositivo y más tarde insertar sus "
-"cambios en el repositorio:"
-
-#: ../../appdev/system-software.rst:57
-msgid "Now, you are ready to build the package:"
-msgstr "Ahora ya está listo para construir su paquete:"
-
-#: ../../appdev/system-software.rst:63
-msgid ""
-"and finally, install it. The ``dpkg-buildpackage`` command will print out "
-"the list of generated packages, and it's those filenames you will need to "
-"pass to the next command:"
-msgstr ""
-"y finalmente instalarlo. La orden `dpkg-buildpackage`` imprimirá la lista de "
-"paquetes generados y son esos nombres de archivo los que necesitará pasar a "
-"la siguiente orden:"
-
-#: ../../appdev/system-software.rst:71
-msgid ""
-"Note, however, that you might not need to install all the packages: "
-"generally, you can skip all packages whose name ends with ``-doc`` or "
-"``dev``, since they don't contain code used by the device."
-msgstr ""
-"Tenga en cuenta, sin embargo, que podría no necesitar instalar todos los "
-"paquetes: generalmente puede omitir todos los paquetes cuyo nombre termine "
-"en `-doc`` o ``dev``, ya que no contienen código usado por el dispositivo."
-
-#: ../../appdev/system-software.rst:76
-msgid "Cross-building with crossbuilder"
-msgstr "Construcción cruzada con crossbuilder"
-
-#: ../../appdev/system-software.rst:78
-msgid ""
-"This is the recommended way to develop non trivial changes, and it's "
-"suitable for all devices since the build happens on your desktop PC (will "
-"call it \"host\" from now on) and not on the target device. It's also "
-"extremely fast and easy to use."
-msgstr ""
-"Este es el modo recomendado para desarrollar cambios no triviales y es apto "
-"para todos los dispositivos ya que la construcción ocurre en su ordenador de "
-"escritorio (le llamaremos \"anfitrión\" a partir de ahora) y no en el "
-"dispositivo objetivo. Es también extremadamente rápido y fácil de usar."
-
-#: ../../appdev/system-software.rst:83
-msgid "Start with installing ``crossbuilder`` in your host:"
-msgstr "Empiece por instalar ``crossbuilder`` en su anfitrión:"
-
-#: ../../appdev/system-software.rst:89
-msgid ""
-"It's a shell script, so you don't need to build it. Instead, you will need "
-"to add its directory to your ``PATH`` environment variable, so that you can "
-"execute it from any directory:"
-msgstr ""
-"Es un guión para el interprete de órdenes (shell script), así que no "
-"necesita crearlo. En su lugar, necesitará añadirlo al ``PATH`` (ruta) de su "
-"variable de entorno, para que pueda ejecutarlo desde cualquier directorio:"
-
-#: ../../appdev/system-software.rst:99
-msgid ""
-"Then, you need to setup LXD; luckily, crossbuilder has a command which does "
-"everything for you; you just need to carefully follow its instructions:"
-msgstr ""
-"Luego necesita configurar LXD; afortunadamente, crossbuilder tiene una orden "
-"que lo hace todo por usted; solo necesita seguir cuidadosamente sus "
-"instrucciones:"
-
-#: ../../appdev/system-software.rst:107
-msgid ""
-"If this is the first time you used LXD, you might need to reboot your host "
-"once everything has completed. After LXD has been setup, using crossbuilder "
-"is as easy as it can get: just move to the directory where the source code "
-"of your project is (for example, ``~/src/git/address-book-app``) and launch "
-"it like this:"
-msgstr ""
-"Si es la primera vez que usa LXD, podría necesitar reiniciar su anfitrión "
-"una vez que todo ha sido completado. Después de que LXD ha sido configurado, "
-"usar crossbuilder es la mar de sencillo: solo tiene que ir al directorio "
-"donde está el código fuente de su proyecto (por ejemplo, ``~/src/git/address-"
-"book-app``) y lanzarlo así:"
-
-#: ../../appdev/system-software.rst:118
-msgid ""
-"*Note: if your device is connected to the PC, you don't need to specify the "
-"``--ubuntu=15.04`` parameter because crossbuilder will figure out the proper "
-"Ubuntu version by itself. If you don't specify any parameter and have no "
-"device connected to your PC, crossbuilder will assume ``16.04`` (Xenial).*"
-msgstr ""
-"*Nota: si su dispositivo está conectado al PC, no necesita especificar el "
-"parámetro ``--ubuntu=15.04`` porque crossbuilder adivinará por sí mismo la "
-"versión correcta de Ubuntu. Si no especifica ningún parámetro y no tiene "
-"ningún dispositivo conectado al PC, crossbuilder asumirá ``16.04`` (Xenial).*"
-
-#: ../../appdev/system-software.rst:124
-msgid ""
-"Crossbuilder will do everything for you: it will create the LXD container, "
-"download the development image, install all your package build dependencies, "
-"perform the build and finally, if your device is connected to your host, it "
-"will copy the packages over to the target and install them. The first two "
-"steps (creating the LXD image and getting the dependencies) can take a few "
-"minutes, but will be executed only the first time you launch crossbuilder "
-"for a new package."
-msgstr ""
-"Crossbuilder hará todo por usted: creará el contenedor de LXD, descargará la "
-"imagen de desarrollo, instalará todas las dependencias de construcción de su "
-"paquete, realizará la construcción y, finalmente, si su dispositivo está "
-"conectado a su anfitrión, copiará los paquetes al objetivo y los instalará. "
-"Los primeros dos pasos (crear la imagen LXD y obtener las dependencias) "
-"puede durar unos cuántos minutos, pero solo se ejecutará la primera vez que "
-"lance crossbuilder para un paquete nuevo."
-
-#: ../../appdev/system-software.rst:132
-msgid ""
-"Now, whenever you change the source code in your git repository, the same "
-"changes will be available inside the container, and the next time you'll "
-"type the ``crossbuilder`` command, only the changed files will be rebuilt. "
-"This makes iterative development blazing fast."
-msgstr ""
-"Ahora, cada vez que cambie el código fuente en su repositorio de git, los "
-"mismos cambios estarán disponibles dentro del contenedor, y la próxima vez "
-"que escriba la orden ``crossbuilder`` solo se reconstruirán los archivos que "
-"hayan cambiado. Esto hace el desarrollo repetitivo ultra-rápido."
-
-#: ../../appdev/system-software.rst:138
-msgid "Unit tests"
-msgstr "Pruebas unitarias"
-
-#: ../../appdev/system-software.rst:140
-msgid ""
-"By default crossbuilder does not run unit tests; that's both for speed "
-"reasons, and because the container created by crossbuilder is not meant to "
-"run native (target) executables: the development tools (qmake/cmake, make, "
-"gcc, etc.) are all run in the host architecture, with no emulation (again, "
-"for speed reasons). However, qemu emulation is available inside the "
-"container, so it should be possible to run unit tests inside the container. "
-"You can do that by getting a shell inside the container with"
-msgstr ""
-"Crossbuilder no ejecuta pruebas unitarias por defecto; eso es tanto por "
-"razones de velocidad, como porque el contenedor creado por crossbuilder no "
-"está pensado para ejecutar ejecutables nativos (objetivo): las herramientas "
-"de desarrollo (qmake/cmake, make, gcc, etc.) se ejecutan todas en la "
-"arquitectura anfitrión, sin emulación (de nuevo, por razón de velocidad). "
-"Sin embargo, la emulación de qemu está disponible dentro del contenedor, así "
-"que sería posible ejecutar pruebas unitarias dentro del contenedor. Puede "
-"hacer eso consiguiendo un intérprete de órdenes (shell) dentro del "
-"contenedor con"
-
-#: ../../appdev/system-software.rst:152
-msgid ""
-"and then find the unit tests and execute them. Be aware that the emulation "
-"is not perfect, so there's a very good chance that the tests will fail even "
-"when they'd otherwise succeed, when run into a proper environment. For that "
-"reason, it's probably wiser not to worry about unit tests when working with "
-"crossbuilder, and run them only when not cross-compiling."
-msgstr ""
-"y después encuentre las pruebas unitarias y ejecútelas. Tenga en cuenta que "
-"la emulación no es perfecta, así que hay una gran posibilidad de que las "
-"pruebas fallarán incluso cuando de otro modo funcionarían, de ejecutarse en "
-"un entorno apropiado. Por esa razón, es probablemente más inteligente no "
-"preocuparse de las pruebas unitarias cuando esté trabajando con crossbuilder "
-"y ejecutarlas solo cuando no esté haciendo compilación cruzada."
-
-#: ../../appdev/system-software.rst:160
-msgid "Developing in the host architecture, deploying via PPA"
-msgstr "Desarrollo en la arquitectura anfitrión, implementación vía PPA"
-
-#: ../../appdev/system-software.rst:162
-msgid ""
-"Another way to develop system software is to develop it locally on your "
-"desktop machine, and then push the source code to a Launchpad PPA and have "
-"it built there for the armhf architecture. Depending on whether the feature "
-"you are developing can be reasonably tested in your local machine, and "
-"whether you can wait for Launchpad's builders to start working on your "
-"package (this could take some hours), this might or might not be a suitable "
-"way of device development."
-msgstr ""
-"Otra manera de desarrollar software de sistema es desarrollarlo localmente "
-"en su máquina de escritorio y después insertar el código fuente en un PPA de "
-"Launchpad y que se construya allí para la arquitectura armhf. Dependiendo de "
-"si la característica que está desarrollando puede probarse razonablemente en "
-"su máquina local y dependiendo de si puede esperar a que comiencen a "
-"trabajar los compiladores de Launchpad en su paquete (podría tardar horas), "
-"esto sería o no una forma adecuada para el desarrollo de dispositivos."
-
-#: ../../appdev/system-software.rst:170
-msgid ""
-"*Note: as of late 2017, Launchpad has dropped support for vivid-based PPAs. "
-"So, if you target the current 15.04 Ubports devices, this method is not "
-"suitable for you.*"
-msgstr ""
-"*Nota: a finales de 2017, Launchpad ha dejado de soportar PPAs basados en "
-"vivid. Así que si su objetivo son los actuales dispositivos 15.04, este "
-"método no es adecuado para usted.*"
-
-#: ../../appdev/system-software.rst:174
-msgid ""
-"Start by getting `VirtualBox <https://www.virtualbox.org/wiki/Downloads>`__ "
-"and an Ubuntu image matching the base image of your device. You can get the "
-"Ubuntu image here:"
-msgstr ""
-"Comience obteniendo `VirtualBox <https://www.virtualbox.org/wiki/"
-"Downloads>`__ y una imagen de Ubuntu coincidente con la imagen base de su "
-"dispositivo. Puede obtener la imagen de Ubuntu aquí:"
-
-#: ../../appdev/system-software.rst:179
-msgid ""
-"``16.04 (Xenial)``: http://releases.ubuntu.com/16.04/ubuntu-16.04.3-desktop-"
-"amd64.iso"
-msgstr ""
-"``16.04 (Xenial)``: http://releases.ubuntu.com/16.04/ubuntu-16.04.3-desktop-"
-"amd64.iso"
-
-#: ../../appdev/system-software.rst:182
-msgid ""
-"Boot your VirtualBox machine with the Ubuntu image you downloaded, and once "
-"the installation is completed and you get to a terminal, add the `Stable "
-"Phone Overlay PPA <https://launchpad.net/~ci-train-ppa-service/+archive/"
-"ubuntu/stable-phone-overlay>`__ like this:"
-msgstr ""
-"Inicie su máquina VirtualBox con la imagen de Ubuntu que ha descargado y, "
-"una vez que la instalación ha finalizado y abra una terminal, añada el `PPA "
-"de la capa de teléfono estable <https://launchpad.net/~ci-train-ppa-service/"
-"+archive/ubuntu/stable-phone-overlay>`__ así:"
-
-#: ../../appdev/system-software.rst:194
-msgid ""
-"You can then install the development tools you need, as well as the build "
-"dependencies of the component you want to work on:"
-msgstr ""
-"Puede después instalar las herramientas de desarrollo que necesite, así como "
-"las dependencias de construcción del componente sobre el que quiere trabajar:"
-
-#: ../../appdev/system-software.rst:202
-msgid "and then build the package locally:"
-msgstr "y luego construir el paquete localmente:"
-
-#: ../../appdev/system-software.rst:208
-msgid ""
-"Change the ``parallel`` option according to how many processor cores you've "
-"made available to VirtualBox in order to amximize the build speed. The "
-"command above will build your package and also run all unit tests associated "
-"with it, so it's an easy (though not sufficient!) way to check that your "
-"changes won't break existing functionality. You can now develop your changes "
-"and test them locally (though, if your component needs access to phone "
-"hardware, that will obviously not work), until you are satisfied with the "
-"result."
-msgstr ""
-"Cambie la opción ``parallel`` de acuerdo con cuántos procesadores ha puesto "
-"a disposición de VirtualBox para maximizar la velocidad de construcción. La "
-"orden de arriba creará su paquete y también ejecutará todas las pruebas "
-"unitarias asociadas a el, así que es un modo fácil (¡aunque no lo "
-"suficiente!) para comprobar que sus cambios no romperán la funcionalidad "
-"actual. Puede ahora desarrollar sus cambios y probarlos localmente (aunque "
-"si sus cambios necesitan acceso al hardware del teléfono, obviamente no "
-"funcionará) hasta que esté satisfecho/a con el resultado."
-
-#: ../../appdev/system-software.rst:217
-msgid ""
-"Once you get to a state where you believe that your changes should work, you "
-"can push them into a PPA, so that they'll be built for your Ubports device "
-"and you (and other users) will be able to test them. First, create a PPA by "
-"visiting https://launchpad.net/~/+activate-ppa; enter a name and a "
-"description, then push the Create button, and on the next page pick the "
-"\"Change details\" link near the upper right corner. You can then enable "
-"your phone's architecture (with most likelihood, it's \"ARM ARMv7 Hard Float"
-"\"), disable all the architectures you don't care about, and click on \"Save"
-"\". Supposing that your Launchpad username is \"ubdeveloper\" and the PPA is "
-"called \"myppa\", then the commands to push your changes to the PPA will be "
-"as follows:"
-msgstr ""
-"Una vez llegue a un estado en el que crea que sus cambios deberían "
-"funcionar, puede insertarlos en un PPA, para que sean construidos para su "
-"dispositivo con Ubports y usted (y otros usuarios) podrá probarlos. Primero, "
-"cree un PPA yendo a https://launchpad.net/~/+activate-ppa; introduzca un "
-"nombre y una descripción, y después pulse el botón Create (crear) y en la "
-"siguiente página elija el enlace \"Change details\" (cambiar detalles) cerca "
-"de la esquina superior derecha. Puede luego activar la arquitectura de su "
-"teléfono (lo más probable es que sea \"ARM ARMv7 Hard Float\"), deshabilite "
-"todas las arquitecturas que no quiera y haga clic en \"Save\" (guardar). "
-"Suponiendo que su nombre de usuario en Launchpad es \"ubdeveloper\" y el PPA "
-"se llama \"myppa\", entonces las órdenes para insertar sus cambios en el PPA "
-"serán las siguientes:"
-
-#: ../../appdev/system-software.rst:234
-msgid ""
-"where the exact filename of the ``.changes`` file will be printed by the "
-"debuild command near the end of its output. Note that in order for the "
-"upload to succeed you will need to have a valid GPG key setup, and it must "
-"be `added to Launchpad <https://launchpad.net/~/+editpgpkeys>`__. If you are "
-"new to this stuff, it's recommended that you carefully read the "
-"`documentation in Launchpad <https://help.launchpad.net/Packaging/PPA/"
-"Uploading>`__."
-msgstr ""
-"donde el nombre exacto del archivo ``.changes`` será impreso por la orden "
-"debuild cerca del final de su salida. Tenga en cuenta que para que la subida "
-"tenga éxito tendrá que tener configurada una clave GPG válida, que debe ser "
-"`añadida a Launchpad <https://launchpad.net/~/+editpgpkeys>`__. Si es novato "
-"con este tema, se recomienda que lea cuidadosamente la `documentación en "
-"Launchpad <https://help.launchpad.net/Packaging/PPA/Uploading>`__."
-
-#: ../../appdev/system-software.rst:242
-msgid ""
-"After the package has been uploaded, you should receive an e-mail by "
-"launchpad telling you whether the upload was accepted; if it was, then it "
-"means that Launchpad will try to build the source package for all the "
-"architectures supported by your PPA and, if successful, will finally publish "
-"the resulting package(s) in it. Now all what is left to do is to install the "
-"packages in your phone: to accomplish that, you can use ``phablet-shell`` to "
-"get access to your phone, and from there type the following commands:"
-msgstr ""
-"Después de que el paquete se ha subido, debería recibir un correo "
-"electrónico de launchpad diciendo si ha sido aceptado o no; si lo fue, eso "
-"significa que Launchpad intentará construir el paquete fuente para todas las "
-"arquitecturas soportadas por su PPA y, si tiene éxito, publicará el paquete "
-"o paquetes resultantes. Ahora todo lo que le queda por hacer es instalar los "
-"paquetes en su teléfono: para hacerlo, puede usar ``phablet-shell`` para "
-"acceder a su teléfono y desde allí teclear las siguientes órdenes:"
-
-#: ../../appdev/system-software.rst:257
-msgid ""
-"You can also give the same installation instructions to other community "
-"members, if you want them to test your changes before submitting them "
-"upstream for review."
-msgstr ""
-"Puede pasarle las mismas instrucciones de instalación a otros miembros de la "
-"comunidad si quiere que prueben sus cambios antes de enviarlos a la "
-"jerarquía superior (upstream) para su revisión."
-
-#: ../../appdev/webapp/guide.rst:2 ../../appdev/webapp/index.rst:13
+#: ../../appdev/webapp/guide.rst:2 ../../appdev/webapp/index.rst:15
 msgid "Guide"
 msgstr "Guía"
 
 #: ../../appdev/webapp/guide.rst:5
 msgid "How the webapp fits into the shell"
-msgstr "Como la aplicación web encaja en el intérprete de órdenes (shell)"
+msgstr "Como la aplicación web encaja en el intérprete de órdenes («shell»)"
 
 #: ../../appdev/webapp/guide.rst:7
 msgid ""
@@ -1323,7 +1668,7 @@ msgid ""
 msgstr ""
 "Una aplicación web se muestra en una vista web dentro de un contenedor de "
 "aplicación web que se ejecuta como una aplicación en el intérprete de "
-"órdenes (shell) de Ubuntu/Unity."
+"órdenes («shell») de Ubuntu/Unity."
 
 #: ../../appdev/webapp/guide.rst:9
 msgid "Taking a closer look:"
@@ -1342,12 +1687,12 @@ msgstr ""
 "Oxide es una vista web de Blink/Chrome personalizada para Ubuntu. La vista "
 "web de Oxide se ejecuta y muestra en el contenedor de la aplicación web. El "
 "contenedor de la aplicación web es el tiempo de ejecución de la aplicación "
-"ejecutable que está integrada en el intérprete de órdenes (shell) de Ubuntu/"
-"Unity."
+"ejecutable que está integrada en el intérprete de órdenes («shell») de "
+"Ubuntu/Unity."
 
 #: ../../appdev/webapp/guide.rst:16
 msgid "Launching"
-msgstr "Iniciando"
+msgstr "Lanzamiento"
 
 #: ../../appdev/webapp/guide.rst:18
 msgid "You can launch a webapp from the terminal with:::"
@@ -1386,8 +1731,8 @@ msgid ""
 "arguments:"
 msgstr ""
 "En algunos casos algunos controles de navegación son adecuados, tales como "
-"los botones de Retroceder y Avanzar, o una barra de direcciones. Estos se "
-"añaden como argumentos de la línea de órdenes:"
+"los botones de «Retroceder» y «Avanzar», o una barra de direcciones. Estos "
+"se añaden como argumentos de la línea de órdenes:"
 
 #: ../../appdev/webapp/guide.rst:35
 msgid ""
@@ -1414,7 +1759,7 @@ msgstr "Patrones de URL"
 msgid ""
 "Webapp authors often want to contain browsing to the target website. That "
 "is, the developer wants to control the URLs that can be opened in the webapp "
-"(all other URls are opened in the browser). This is done with URL patterns "
+"(all other URLs are opened in the browser). This is done with URL patterns "
 "as part of the webapp command line."
 msgstr ""
 "Los autores de aplicaciones web a menudo quieren contener la navegación solo "
@@ -1433,13 +1778,13 @@ msgstr ""
 
 #: ../../appdev/webapp/guide.rst:45
 msgid ""
-"HoweverBoth containment and access to specified external URLs are "
+"However, both containment and access to specified external URLs are "
 "implemented with URL patterns provided as arguments at launch time. Let’s "
 "take a closer look."
 msgstr ""
-"Sin embargo tanto el confinamiento y el acceso a URLs específicas externas "
-"se implementan con patrones de URL suministradas como argumentos en el "
-"momento del inicio. Echemos un vistazo más cerca."
+"Sin embargo, tanto el confinamiento como el acceso a URLs específicas "
+"externas se implementan con patrones de URL suministradas como argumentos en "
+"el momento del inicio. Echemos un vistazo más de cerca."
 
 #: ../../appdev/webapp/guide.rst:48
 msgid "Uncontained by default"
@@ -1493,7 +1838,7 @@ msgstr "``--webappUrlPatterns=`` indica que un patrón es lo siguiente"
 
 #: ../../appdev/webapp/guide.rst:66
 msgid ""
-"http://www.ubuntu.com/* is the pattern The asterix is a wildcard that "
+"http://www.ubuntu.com/* is the pattern The asterisk is a wildcard that "
 "matches any valid sequence of trailing (right-most) characters in a URL"
 msgstr ""
 "http://www.ubuntu.com/* es el patrón. El asterisco es un comodín que "
@@ -1511,9 +1856,9 @@ msgid ""
 msgstr ""
 "Con esta orden de inicio y patrón de URL, el usuario puede navegar y abrir "
 "en la aplicación web cualquier URL que comience con http://www.ubuntu.com/. "
-"Por ejemplo, pueden pulsar en el botón Teléfono (http://www.ubuntu.com/"
-"phone) en la cabecera y se abre en la aplicación web, o el botón Tableta "
-"(http://www.ubuntu.com/tablet). Pero pulsando Desarrollador abre la URL "
+"Por ejemplo, pueden pulsar en el botón «Teléfono» (http://www.ubuntu.com/"
+"phone) en la cabecera y se abre en la aplicación web, o el botón «Tableta» "
+"(http://www.ubuntu.com/tablet). Pero pulsando «Desarrollador» abre la URL "
 "correspondiente en el navegador."
 
 #: ../../appdev/webapp/guide.rst:71
@@ -1575,8 +1920,8 @@ msgid ""
 "“developer” is the subdomain: developer.ubuntu.com.) You can allow access to "
 "a single subdomain (and all of its subpages) with a pattern like this:::"
 msgstr ""
-"Muchas URLs tienen uno o más subdominios. (Por ejemplo, en el siguiente, "
-"“developer” es el subdominio: developer.ubuntu.com). Puede permitir acceso a "
+"Muchas URLs tienen uno o más subdominios. (Por ejemplo, en lo siguiente, "
+"«developer» es el subdominio: developer.ubuntu.com). Puede permitir acceso a "
 "un solo subdominio (y a todas sus sub-páginas) con un patrón como este:::"
 
 #: ../../appdev/webapp/guide.rst:96
@@ -1644,9 +1989,9 @@ msgid ""
 "Note: the question mark in https?. This means the preceding character (the "
 "‘s’) is optional. If https is always required, omit the question mark."
 msgstr ""
-"Nota: ¿el signo de interrogación en https? Esto significa que el carácter "
-"precedente (la  ‘s’) es opcional. Si se necesita siempre https, omita el "
-"signo de interrogación."
+"Nota: ¿qué es el signo de interrogación en https? Esto significa que el "
+"carácter precedente (la  «s») es opcional. Si se necesita siempre https, "
+"omita el signo de interrogación."
 
 #: ../../appdev/webapp/guide.rst:123
 msgid "Command line arguments"
@@ -1666,7 +2011,7 @@ msgstr "Vea toda la ayuda con:::"
 
 #: ../../appdev/webapp/guide.rst:131
 msgid "Note: Only the following options apply to converged Ubuntu.::"
-msgstr "Nota: solo las siguientes opciones se aplican a Ubuntu convergente.:::"
+msgstr "Nota: solo las siguientes opciones se aplican a Ubuntu convergente.::"
 
 #: ../../appdev/webapp/guide.rst:145
 msgid "Chrome options (if none specified, no chrome is shown by default):::"
@@ -1684,7 +2029,7 @@ msgstr ""
 
 #: ../../appdev/webapp/guide.rst:153
 msgid "User-Agent string override"
-msgstr "Ignorar la cadena agente de usuario (User-Agent)"
+msgstr "Ignorar la cadena agente de usuario («User-Agent»)"
 
 #: ../../appdev/webapp/guide.rst:155
 msgid ""
@@ -1694,7 +2039,7 @@ msgid ""
 "default string sent by the webapp container."
 msgstr ""
 "Algunos sitios web comprueban porciones específicas de la identidad del "
-"motor web, también conocido por cadena de agente de usuario (User-Agent), "
+"motor web, también conocido como cadena de agente de usuario («User-Agent»), "
 "para ajustar su presentación o habilitar ciertas características. Aunque no "
 "es una práctica recomendada, algunas veces es necesario cambiar la cadena "
 "por defecto que envía el contenedor de la aplicación web."
@@ -1718,7 +2063,7 @@ msgstr ""
 "La experiencia de la aplicación web está contenida y aislada desde el punto "
 "de vista de los datos del navegador. Esto es, las aplicaciones web no "
 "acceden a los datos desde ningún otro navegador instalado, como historial, "
-"cookies y así. Otro navegador en el sistema no accede a los datos de la "
+"«cookies» y así. Otro navegador en el sistema no accede a los datos de la "
 "aplicación web. Almacenamiento"
 
 #: ../../appdev/webapp/guide.rst:167
@@ -1726,11 +2071,15 @@ msgid ""
 "W3C allows apps to use local storage, and Oxide/Webapp-container supports "
 "the main standards here: LocalStorage, IndexedDB, WebSQL."
 msgstr ""
-"El W3C permite a las aplicaciones usar almacenamiento local y Oxide/"
-"Contenedor de la aplicación web soporta el estándar principal aquí: "
-"LocalStorage, IndexedDB, WebSQL."
+"El W3C permite a las aplicaciones usar almacenamiento local y Oxide/Webapp-"
+"container (contenedor de aplicaciones web) soporta el estándar principal "
+"aquí: LocalStorage, IndexedDB, WebSQL."
 
 #: ../../appdev/webapp/index.rst:4
+msgid "Web applications"
+msgstr "Aplicaciones web"
+
+#: ../../appdev/webapp/index.rst:6
 msgid ""
 "Ubuntu Webapps are a great way to deliver online web applications into "
 "Ubuntu."
@@ -1738,7 +2087,7 @@ msgstr ""
 "Las aplicaciones web de Ubuntu son una gran manera de llevar las "
 "aplicaciones web en línea a Ubuntu."
 
-#: ../../appdev/webapp/index.rst:6
+#: ../../appdev/webapp/index.rst:8
 msgid ""
 "The Ubuntu platform provides an advanced web engine container to run online "
 "applications on the Ubuntu client devices."
@@ -1746,7 +2095,7 @@ msgstr ""
 "La plataforma Ubuntu proporciona un contenedor avanzado de motor web para "
 "ejecutar aplicaciones en línea en los dispositivos cliente de Ubuntu."
 
-#: ../../appdev/webapp/index.rst:8
+#: ../../appdev/webapp/index.rst:10
 msgid ""
 "Web applications are hosted online. They can be as simple as a website, like "
 "an online news site, or they can distribute content like videos. They can "
@@ -1756,10 +2105,9 @@ msgstr ""
 "Las aplicaciones web son alojadas en línea. Pueden ser tan simples como un "
 "sitio web, por ejemplo un sitio de noticias en línea, o pueden distribuir "
 "contenido como vídeos. Pueden tener también una rica interfaz de usuario o "
-"usar la extensión WebGL para entregar juegos en línea."
+"usar la extensión «WebGL» para proporcionar juegos en línea."
 
-#: ../../appdev/webapp/index.rst:10
-#, fuzzy
+#: ../../appdev/webapp/index.rst:12
 msgid ""
 "Note: Ubuntu webapps and Ubuntu HTML5 apps are similar but not identical. "
 "The main difference is that the content of a webapp is provided through a "
@@ -1771,10 +2119,9 @@ msgstr ""
 "una aplicación web se suministra usando una URL, mientras que las "
 "aplicaciones HTML5 instalan su contenido (y normalmente aportan una interfaz "
 "de usuario gráfica HTML5 de Ubuntu). Las aplicaciones web también tienen "
-"limitado el acceso a las APIs de la plataforma. Las aplicaciones web para "
-"Ubuntu convergente"
+"limitado el acceso a las APIs de la plataforma."
 
-#: ../../appdev/webapp/index.rst:15
+#: ../../appdev/webapp/index.rst:17
 msgid ""
 "This guide targets webapps for converged Ubuntu, that is, Ubuntu for Devices "
 "(phones and tablets). The Ubuntu Desktop has additional webapps support not "
@@ -1783,48 +2130,49 @@ msgid ""
 msgstr ""
 "Esta guía está enfocada a las aplicaciones web para un Ubuntu convergente, "
 "esto es, Ubuntu para dispositivos (teléfonos y tabletas). El escritorio de "
-"Ubuntu tiene soporte adicional para las aplicaciones web que no es cubierto "
+"Ubuntu tiene soporte adicional para las aplicaciones web que no se cubre "
 "aquí. El soporte para las aplicaciones web para Ubuntu convergente "
 "continuará creciendo y, por supuesto, el futuro de Ubuntu es la "
 "convergencia, así que manténgase sintonizado."
 
-#: ../../appdev/webapp/index.rst:24
+#: ../../appdev/webapp/index.rst:26
 msgid "Quick start"
 msgstr "Inicio rápido"
 
-#: ../../appdev/webapp/index.rst:26
+#: ../../appdev/webapp/index.rst:28
 msgid ""
 "There are several tools to help you package and deploy your webapp to your "
 "device:"
 msgstr ""
 "Existen varias herramientas para ayudarle a empaquetar e implementar su "
-"webapp en su dispositivo:"
+"aplicación web en su dispositivo:"
 
-#: ../../appdev/webapp/index.rst:28
+#: ../../appdev/webapp/index.rst:30
 msgid ""
 "`Webapp creator <https://open-store.io/app/webapp-creator.jujuyeh>`_ "
 "application available from the openstore"
 msgstr ""
-"`Creador de Webapps (Webapp creator) <https://open-store.io/app/webapp-"
-"creator.jujuyeh>`_ aplicación disponible en openstore"
+"`Creador de aplicaciones web («Webapp creator») <https://open-store.io/app/"
+"webapp-creator.jujuyeh>`_ aplicación disponible en openstore"
 
-#: ../../appdev/webapp/index.rst:29
+#: ../../appdev/webapp/index.rst:31
 msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ CLI"
 msgstr ""
-"`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ Interfaz de la "
+"`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ interfaz de la "
 "línea de órdenes"
 
-#: ../../appdev/webapp/index.rst:33
-msgid "Debugging your webapp"
-msgstr "Depurando su webapp"
-
 #: ../../appdev/webapp/index.rst:35
+msgid "Debugging your webapp"
+msgstr "Depurando su aplicación web"
+
+#: ../../appdev/webapp/index.rst:37
 msgid "This guide give you some tips to help you debug your webapp."
-msgstr "Esta guía le da algunos consejos para ayudarle a depurar su webapp."
+msgstr ""
+"Esta guía le da algunos consejos para ayudarle a depurar su aplicación web."
 
 #: ../../appdev/webapp/webdebug.rst:2
 msgid "Debug web application"
-msgstr "Depurar aplicación web"
+msgstr "Depurar la aplicación web"
 
 #: ../../appdev/webapp/webdebug.rst:4
 msgid ""
@@ -1836,7 +2184,7 @@ msgstr ""
 "La mayoría de los desarrolladores web probablemente querrán escribir la "
 "mayoría de su código y depurarlo usando el entorno de navegación habitual. "
 "El navegador de Ubuntu Touch se ajusta a los estándares web modernos y la "
-"mayoría de las webapps funcionarán sin necesidad de cambios."
+"mayoría de las aplicaciones web funcionarán sin necesidad de cambios."
 
 #: ../../appdev/webapp/webdebug.rst:6
 msgid ""
@@ -1848,7 +2196,7 @@ msgstr ""
 
 #: ../../appdev/webapp/webdebug.rst:9
 msgid "Watch the logs"
-msgstr "Ver los registros (logs)"
+msgstr "Ver los registros («logs»)"
 
 #: ../../appdev/webapp/webdebug.rst:11
 msgid ""
@@ -1884,6 +2232,470 @@ msgid ""
 msgstr ""
 "Ahora en su ordenador, inicie el navegador Chrome/Chromium, y apunte a la "
 "dirección ``http://YOUR_UT_IP_ADDRESS:9221``"
+
+#~ msgid "Introduction"
+#~ msgstr "Introducción"
+
+#~ msgid ""
+#~ "Ubuntu Touch has three types of applications: `Web applications`_ "
+#~ "(WebApps), Scopes (deprecated) and `Native applications`_. Applications "
+#~ "are packaged, distributed and deployed using a format called `click "
+#~ "<https://click.readthedocs.io/en/latest/>`_ packaging. App UIs can be "
+#~ "created using QML or HTML5 and behavior can be created using JS, Qt, C++, "
+#~ "Python, or Go."
+#~ msgstr ""
+#~ "Ubuntu Touch tiene tres clases de aplicaciones: `aplicaciones web`_ "
+#~ "(WebApps), Scopes (obsoletos) y `aplicaciones nativas`_. Las aplicaciones "
+#~ "son empaquetadas, distribuidas e implementadas usando un formato llamado "
+#~ "empaquetado `click <https://click.readthedocs.io/en/latest/>`_. Las "
+#~ "interfaces de usuario de las aplicaciones se pueden crear usando QML o "
+#~ "HTML5 y el comportamiento puede crearse usando JS, Qt, C++, Python o Go."
+
+#~ msgid "Ubuntu Touch platform"
+#~ msgstr "Plataforma Ubuntu Touch"
+
+#~ msgid "Platform key notes:"
+#~ msgstr "Ideas claves de la plataforma:"
+
+#~ msgid "Ubuntu UI-Toolkit"
+#~ msgstr "Kit de herramientas para Ubuntu"
+
+#~ msgid ""
+#~ "Here you can find `the API documentation <https://api-docs.ubports.com/"
+#~ ">`_ for the Ubuntu UI toolkit."
+#~ msgstr ""
+#~ "Aquí puede encontrar la `documentación de la API <https://api-docs."
+#~ "ubports.com/>`_ para el kit de herramientas de Ubuntu."
+
+#~ msgid "`Click packages <https://click.readthedocs.io/en/latest/>`__"
+#~ msgstr "`Paquetes Click <https://click.readthedocs.io/en/latest/>`__"
+
+#~ msgid "Ubuntu SDK IDE (unsupported)"
+#~ msgstr "Ubuntu SDK IDE (sin soporte)"
+
+#~ msgid "It can still be installed in Ubuntu 16.04, but issues are expected."
+#~ msgstr "Puede instalarse en Ubuntu 16.04 pero espere problemas."
+
+#~ msgid "System Software"
+#~ msgstr "Software del sistema"
+
+#~ msgid "Working on system components"
+#~ msgstr "Trabajando en los componentes del sistema"
+
+#, fuzzy
+#~ msgid ""
+#~ "Ubuntu webapps are web-hosted sites displayed inside an Ubuntu app "
+#~ "container. They are true apps that users install, see, launch and use, "
+#~ "but their content is provided through URLs."
+#~ msgstr ""
+#~ "Las aplicaciones web de Ubuntu son sitios alojados en la web mostrados "
+#~ "dentro del contenedor de una aplicación Ubuntu. Son verdaderas "
+#~ "aplicaciones que los usuarios instalan, ven, lanzan y usan. Pero su "
+#~ "contenido se suministra a través de URLs."
+
+#~ msgid "Cookbook"
+#~ msgstr "Recetario"
+
+#~ msgid "A collection of external resources"
+#~ msgstr "Una colección de recursos externos"
+
+#~ msgid ""
+#~ "In this page you'll find information on how to develop system software, "
+#~ "including how to build it, cross-compile it and make it available to "
+#~ "other users. Most of the software preinstalled in your Ubports device is "
+#~ "shipped in the device image in the form of a Debian package. This format "
+#~ "is used by several Linux distributions (such as Debian, Ubuntu, Mint) and "
+#~ "`plenty of documentation <https://www.debian.org/doc/manuals/maint-guide/"
+#~ "index.en.html>`__ is available out there on how to work with it, so we "
+#~ "won't be covering it here. Besides, in most cases you'll find yourself in "
+#~ "need of modifying existing software, rather than developing new packages "
+#~ "from scratch; for this reason, this guide is mostly about recompiling an "
+#~ "existing Ubports package."
+#~ msgstr ""
+#~ "En esta página encontrará información sobre como desarrollar programas de "
+#~ "sistema, incluyendo como construirlos, compilarlos cruzadamente y "
+#~ "ponerlos a disposición de otros usuarios. La mayoría del software "
+#~ "preinstalado en su dispositivo UBports es transportado en la imagen del "
+#~ "dispositivo en la forma de paquete Debian. Este formato lo usan varias "
+#~ "distribuciones de Linux (tales como Debian, Ubuntu, Mint) y `bastante "
+#~ "documentación <https://www.debian.org/doc/manuals/maint-guide/index.en."
+#~ "html>`__ está disponible sobre como trabajar con el, así que no lo "
+#~ "cubriremos aquí. Además, en la mayoría de los casos se encontrará en la "
+#~ "necesidad de modificar el software existente, más que desarrollando "
+#~ "nuevos paquetes desde cero; por esta razón, esta guía es mayormente sobre "
+#~ "como recompilar un paquete de Ubports ya existente."
+
+#~ msgid ""
+#~ "There are essentially three ways of developing Ubports system software: "
+#~ "building it directly on device, cross-compiling it or uploading the "
+#~ "source code to a Launchpad PPA and have it built by Launchpad. We'll "
+#~ "examine all of the three methods, and use `address-book-app <https://"
+#~ "github.com/ubports/address-book-app>`__ (the Contacts application) as an "
+#~ "example."
+#~ msgstr ""
+#~ "Existen esencialmente tres maneras de desarrollar software de sistema de "
+#~ "Ubports: construyéndolo directamente en el dispositivo, compilarlo "
+#~ "cruzadamente o subir el código fuente a un PPA de Launchpad y dejar que "
+#~ "Launchpad lo construya. Examinaremos los tres métodos y usaremos `address-"
+#~ "book-app <https://github.com/ubports/address-book-app>`__ (la aplicación "
+#~ "de Contactos) como ejemplo."
+
+#~ msgid "Building on the device itself"
+#~ msgstr "Construyendo en el propio dispositivo"
+
+#~ msgid ""
+#~ "This is the fastest and simplest method to develop small changes and test "
+#~ "them in nearly real-time. Depending on your device resources, however, it "
+#~ "might not be possible to follow this path: if you don't have enough free "
+#~ "space in your root filesystem you won't be able to install all the "
+#~ "package build dependencies; or, your device's RAM might not be enough for "
+#~ "the compiler. Assuming that you are lucky enough not to run into these "
+#~ "restrictions, and that you don't mind reflashing your device afterwards "
+#~ "(to clear it from all the development packages you installed), please "
+#~ "read on."
+#~ msgstr ""
+#~ "Este es el método más rápido y sencillo para desarrollar pequeños cambios "
+#~ "y probarlos casi en tiempo real. Dependiendo de los recursos de su "
+#~ "dispositivo, sin embargo, podría no ser posible seguir este camino: si no "
+#~ "tiene suficiente espacio libre en su sistema de archivos raíz no podrá "
+#~ "instalar todas las dependencias de construcción del paquete; o podría no "
+#~ "ser suficiente la cantidad de memoria RAM de su dispositivo para el "
+#~ "compilador. Asumiendo que es lo suficientemente afortunado de no tener "
+#~ "estas restricciones y que no le importa volver a programar (reflash) su "
+#~ "dispositivo después (para dejarlo limpio de todos los paquetes de "
+#~ "desarrollo que ha instalado), siga leyendo."
+
+#~ msgid ""
+#~ "You can ssh to the device (via ``phablet-shell``, for example) and then "
+#~ "install all the packages needed to rebuild the component you want to "
+#~ "modify (the Contacts app, in this example):"
+#~ msgstr ""
+#~ "Puede iniciar una sesión ssh al dispositivo (vía ``phablet-shell``, por "
+#~ "ejemplo) y luego instalar todos los paquetes necesarios para reconstruir "
+#~ "el componente que quiere modificar (la aplicación de Contactos en este "
+#~ "ejemplo):"
+
+#~ msgid ""
+#~ "This will install a bunch of packages into your device's rootfs. "
+#~ "Additionally, you probably want to install ``git`` in order to get your "
+#~ "app's source code in the device and later push your changes back into the "
+#~ "repository:"
+#~ msgstr ""
+#~ "Esto instalará un puñado de paquetes en el rootfs de su dispositivo. "
+#~ "Adicionalmente, probablemente quiera instalar ``git`` para poder tener el "
+#~ "código fuente de su aplicación en el dispositivo y más tarde insertar sus "
+#~ "cambios en el repositorio:"
+
+#~ msgid "Now, you are ready to build the package:"
+#~ msgstr "Ahora ya está listo para construir su paquete:"
+
+#~ msgid ""
+#~ "and finally, install it. The ``dpkg-buildpackage`` command will print out "
+#~ "the list of generated packages, and it's those filenames you will need to "
+#~ "pass to the next command:"
+#~ msgstr ""
+#~ "y finalmente instalarlo. La orden `dpkg-buildpackage`` imprimirá la lista "
+#~ "de paquetes generados y son esos nombres de archivo los que necesitará "
+#~ "pasar a la siguiente orden:"
+
+#~ msgid ""
+#~ "Note, however, that you might not need to install all the packages: "
+#~ "generally, you can skip all packages whose name ends with ``-doc`` or "
+#~ "``dev``, since they don't contain code used by the device."
+#~ msgstr ""
+#~ "Tenga en cuenta, sin embargo, que podría no necesitar instalar todos los "
+#~ "paquetes: generalmente puede omitir todos los paquetes cuyo nombre "
+#~ "termine en `-doc`` o ``dev``, ya que no contienen código usado por el "
+#~ "dispositivo."
+
+#~ msgid "Cross-building with crossbuilder"
+#~ msgstr "Construcción cruzada con crossbuilder"
+
+#~ msgid ""
+#~ "This is the recommended way to develop non trivial changes, and it's "
+#~ "suitable for all devices since the build happens on your desktop PC (will "
+#~ "call it \"host\" from now on) and not on the target device. It's also "
+#~ "extremely fast and easy to use."
+#~ msgstr ""
+#~ "Este es el modo recomendado para desarrollar cambios no triviales y es "
+#~ "apto para todos los dispositivos ya que la construcción ocurre en su "
+#~ "ordenador de escritorio (le llamaremos \"anfitrión\" a partir de ahora) y "
+#~ "no en el dispositivo objetivo. Es también extremadamente rápido y fácil "
+#~ "de usar."
+
+#~ msgid "Start with installing ``crossbuilder`` in your host:"
+#~ msgstr "Empiece por instalar ``crossbuilder`` en su anfitrión:"
+
+#~ msgid ""
+#~ "It's a shell script, so you don't need to build it. Instead, you will "
+#~ "need to add its directory to your ``PATH`` environment variable, so that "
+#~ "you can execute it from any directory:"
+#~ msgstr ""
+#~ "Es un guión para el interprete de órdenes (shell script), así que no "
+#~ "necesita crearlo. En su lugar, necesitará añadirlo al ``PATH`` (ruta) de "
+#~ "su variable de entorno, para que pueda ejecutarlo desde cualquier "
+#~ "directorio:"
+
+#~ msgid ""
+#~ "Then, you need to setup LXD; luckily, crossbuilder has a command which "
+#~ "does everything for you; you just need to carefully follow its "
+#~ "instructions:"
+#~ msgstr ""
+#~ "Luego necesita configurar LXD; afortunadamente, crossbuilder tiene una "
+#~ "orden que lo hace todo por usted; solo necesita seguir cuidadosamente sus "
+#~ "instrucciones:"
+
+#~ msgid ""
+#~ "If this is the first time you used LXD, you might need to reboot your "
+#~ "host once everything has completed. After LXD has been setup, using "
+#~ "crossbuilder is as easy as it can get: just move to the directory where "
+#~ "the source code of your project is (for example, ``~/src/git/address-book-"
+#~ "app``) and launch it like this:"
+#~ msgstr ""
+#~ "Si es la primera vez que usa LXD, podría necesitar reiniciar su anfitrión "
+#~ "una vez que todo ha sido completado. Después de que LXD ha sido "
+#~ "configurado, usar crossbuilder es la mar de sencillo: solo tiene que ir "
+#~ "al directorio donde está el código fuente de su proyecto (por ejemplo, "
+#~ "``~/src/git/address-book-app``) y lanzarlo así:"
+
+#~ msgid ""
+#~ "*Note: if your device is connected to the PC, you don't need to specify "
+#~ "the ``--ubuntu=15.04`` parameter because crossbuilder will figure out the "
+#~ "proper Ubuntu version by itself. If you don't specify any parameter and "
+#~ "have no device connected to your PC, crossbuilder will assume ``16.04`` "
+#~ "(Xenial).*"
+#~ msgstr ""
+#~ "*Nota: si su dispositivo está conectado al PC, no necesita especificar el "
+#~ "parámetro ``--ubuntu=15.04`` porque crossbuilder adivinará por sí mismo "
+#~ "la versión correcta de Ubuntu. Si no especifica ningún parámetro y no "
+#~ "tiene ningún dispositivo conectado al PC, crossbuilder asumirá ``16.04`` "
+#~ "(Xenial).*"
+
+#~ msgid ""
+#~ "Crossbuilder will do everything for you: it will create the LXD "
+#~ "container, download the development image, install all your package build "
+#~ "dependencies, perform the build and finally, if your device is connected "
+#~ "to your host, it will copy the packages over to the target and install "
+#~ "them. The first two steps (creating the LXD image and getting the "
+#~ "dependencies) can take a few minutes, but will be executed only the first "
+#~ "time you launch crossbuilder for a new package."
+#~ msgstr ""
+#~ "Crossbuilder hará todo por usted: creará el contenedor de LXD, descargará "
+#~ "la imagen de desarrollo, instalará todas las dependencias de construcción "
+#~ "de su paquete, realizará la construcción y, finalmente, si su dispositivo "
+#~ "está conectado a su anfitrión, copiará los paquetes al objetivo y los "
+#~ "instalará. Los primeros dos pasos (crear la imagen LXD y obtener las "
+#~ "dependencias) puede durar unos cuántos minutos, pero solo se ejecutará la "
+#~ "primera vez que lance crossbuilder para un paquete nuevo."
+
+#~ msgid ""
+#~ "Now, whenever you change the source code in your git repository, the same "
+#~ "changes will be available inside the container, and the next time you'll "
+#~ "type the ``crossbuilder`` command, only the changed files will be "
+#~ "rebuilt. This makes iterative development blazing fast."
+#~ msgstr ""
+#~ "Ahora, cada vez que cambie el código fuente en su repositorio de git, los "
+#~ "mismos cambios estarán disponibles dentro del contenedor, y la próxima "
+#~ "vez que escriba la orden ``crossbuilder`` solo se reconstruirán los "
+#~ "archivos que hayan cambiado. Esto hace el desarrollo repetitivo ultra-"
+#~ "rápido."
+
+#~ msgid "Unit tests"
+#~ msgstr "Pruebas unitarias"
+
+#~ msgid ""
+#~ "By default crossbuilder does not run unit tests; that's both for speed "
+#~ "reasons, and because the container created by crossbuilder is not meant "
+#~ "to run native (target) executables: the development tools (qmake/cmake, "
+#~ "make, gcc, etc.) are all run in the host architecture, with no emulation "
+#~ "(again, for speed reasons). However, qemu emulation is available inside "
+#~ "the container, so it should be possible to run unit tests inside the "
+#~ "container. You can do that by getting a shell inside the container with"
+#~ msgstr ""
+#~ "Crossbuilder no ejecuta pruebas unitarias por defecto; eso es tanto por "
+#~ "razones de velocidad, como porque el contenedor creado por crossbuilder "
+#~ "no está pensado para ejecutar ejecutables nativos (objetivo): las "
+#~ "herramientas de desarrollo (qmake/cmake, make, gcc, etc.) se ejecutan "
+#~ "todas en la arquitectura anfitrión, sin emulación (de nuevo, por razón de "
+#~ "velocidad). Sin embargo, la emulación de qemu está disponible dentro del "
+#~ "contenedor, así que sería posible ejecutar pruebas unitarias dentro del "
+#~ "contenedor. Puede hacer eso consiguiendo un intérprete de órdenes (shell) "
+#~ "dentro del contenedor con"
+
+#~ msgid ""
+#~ "and then find the unit tests and execute them. Be aware that the "
+#~ "emulation is not perfect, so there's a very good chance that the tests "
+#~ "will fail even when they'd otherwise succeed, when run into a proper "
+#~ "environment. For that reason, it's probably wiser not to worry about unit "
+#~ "tests when working with crossbuilder, and run them only when not cross-"
+#~ "compiling."
+#~ msgstr ""
+#~ "y después encuentre las pruebas unitarias y ejecútelas. Tenga en cuenta "
+#~ "que la emulación no es perfecta, así que hay una gran posibilidad de que "
+#~ "las pruebas fallarán incluso cuando de otro modo funcionarían, de "
+#~ "ejecutarse en un entorno apropiado. Por esa razón, es probablemente más "
+#~ "inteligente no preocuparse de las pruebas unitarias cuando esté "
+#~ "trabajando con crossbuilder y ejecutarlas solo cuando no esté haciendo "
+#~ "compilación cruzada."
+
+#~ msgid "Developing in the host architecture, deploying via PPA"
+#~ msgstr "Desarrollo en la arquitectura anfitrión, implementación vía PPA"
+
+#~ msgid ""
+#~ "Another way to develop system software is to develop it locally on your "
+#~ "desktop machine, and then push the source code to a Launchpad PPA and "
+#~ "have it built there for the armhf architecture. Depending on whether the "
+#~ "feature you are developing can be reasonably tested in your local "
+#~ "machine, and whether you can wait for Launchpad's builders to start "
+#~ "working on your package (this could take some hours), this might or might "
+#~ "not be a suitable way of device development."
+#~ msgstr ""
+#~ "Otra manera de desarrollar software de sistema es desarrollarlo "
+#~ "localmente en su máquina de escritorio y después insertar el código "
+#~ "fuente en un PPA de Launchpad y que se construya allí para la "
+#~ "arquitectura armhf. Dependiendo de si la característica que está "
+#~ "desarrollando puede probarse razonablemente en su máquina local y "
+#~ "dependiendo de si puede esperar a que comiencen a trabajar los "
+#~ "compiladores de Launchpad en su paquete (podría tardar horas), esto sería "
+#~ "o no una forma adecuada para el desarrollo de dispositivos."
+
+#~ msgid ""
+#~ "*Note: as of late 2017, Launchpad has dropped support for vivid-based "
+#~ "PPAs. So, if you target the current 15.04 Ubports devices, this method is "
+#~ "not suitable for you.*"
+#~ msgstr ""
+#~ "*Nota: a finales de 2017, Launchpad ha dejado de soportar PPAs basados en "
+#~ "vivid. Así que si su objetivo son los actuales dispositivos 15.04, este "
+#~ "método no es adecuado para usted.*"
+
+#~ msgid ""
+#~ "Start by getting `VirtualBox <https://www.virtualbox.org/wiki/"
+#~ "Downloads>`__ and an Ubuntu image matching the base image of your device. "
+#~ "You can get the Ubuntu image here:"
+#~ msgstr ""
+#~ "Comience obteniendo `VirtualBox <https://www.virtualbox.org/wiki/"
+#~ "Downloads>`__ y una imagen de Ubuntu coincidente con la imagen base de su "
+#~ "dispositivo. Puede obtener la imagen de Ubuntu aquí:"
+
+#~ msgid ""
+#~ "``16.04 (Xenial)``: http://releases.ubuntu.com/16.04/ubuntu-16.04.3-"
+#~ "desktop-amd64.iso"
+#~ msgstr ""
+#~ "``16.04 (Xenial)``: http://releases.ubuntu.com/16.04/ubuntu-16.04.3-"
+#~ "desktop-amd64.iso"
+
+#~ msgid ""
+#~ "Boot your VirtualBox machine with the Ubuntu image you downloaded, and "
+#~ "once the installation is completed and you get to a terminal, add the "
+#~ "`Stable Phone Overlay PPA <https://launchpad.net/~ci-train-ppa-service/"
+#~ "+archive/ubuntu/stable-phone-overlay>`__ like this:"
+#~ msgstr ""
+#~ "Inicie su máquina VirtualBox con la imagen de Ubuntu que ha descargado y, "
+#~ "una vez que la instalación ha finalizado y abra una terminal, añada el "
+#~ "`PPA de la capa de teléfono estable <https://launchpad.net/~ci-train-ppa-"
+#~ "service/+archive/ubuntu/stable-phone-overlay>`__ así:"
+
+#~ msgid ""
+#~ "You can then install the development tools you need, as well as the build "
+#~ "dependencies of the component you want to work on:"
+#~ msgstr ""
+#~ "Puede después instalar las herramientas de desarrollo que necesite, así "
+#~ "como las dependencias de construcción del componente sobre el que quiere "
+#~ "trabajar:"
+
+#~ msgid "and then build the package locally:"
+#~ msgstr "y luego construir el paquete localmente:"
+
+#~ msgid ""
+#~ "Change the ``parallel`` option according to how many processor cores "
+#~ "you've made available to VirtualBox in order to amximize the build speed. "
+#~ "The command above will build your package and also run all unit tests "
+#~ "associated with it, so it's an easy (though not sufficient!) way to check "
+#~ "that your changes won't break existing functionality. You can now develop "
+#~ "your changes and test them locally (though, if your component needs "
+#~ "access to phone hardware, that will obviously not work), until you are "
+#~ "satisfied with the result."
+#~ msgstr ""
+#~ "Cambie la opción ``parallel`` de acuerdo con cuántos procesadores ha "
+#~ "puesto a disposición de VirtualBox para maximizar la velocidad de "
+#~ "construcción. La orden de arriba creará su paquete y también ejecutará "
+#~ "todas las pruebas unitarias asociadas a el, así que es un modo fácil "
+#~ "(¡aunque no lo suficiente!) para comprobar que sus cambios no romperán la "
+#~ "funcionalidad actual. Puede ahora desarrollar sus cambios y probarlos "
+#~ "localmente (aunque si sus cambios necesitan acceso al hardware del "
+#~ "teléfono, obviamente no funcionará) hasta que esté satisfecho/a con el "
+#~ "resultado."
+
+#~ msgid ""
+#~ "Once you get to a state where you believe that your changes should work, "
+#~ "you can push them into a PPA, so that they'll be built for your Ubports "
+#~ "device and you (and other users) will be able to test them. First, create "
+#~ "a PPA by visiting https://launchpad.net/~/+activate-ppa; enter a name and "
+#~ "a description, then push the Create button, and on the next page pick the "
+#~ "\"Change details\" link near the upper right corner. You can then enable "
+#~ "your phone's architecture (with most likelihood, it's \"ARM ARMv7 Hard "
+#~ "Float\"), disable all the architectures you don't care about, and click "
+#~ "on \"Save\". Supposing that your Launchpad username is \"ubdeveloper\" "
+#~ "and the PPA is called \"myppa\", then the commands to push your changes "
+#~ "to the PPA will be as follows:"
+#~ msgstr ""
+#~ "Una vez llegue a un estado en el que crea que sus cambios deberían "
+#~ "funcionar, puede insertarlos en un PPA, para que sean construidos para su "
+#~ "dispositivo con Ubports y usted (y otros usuarios) podrá probarlos. "
+#~ "Primero, cree un PPA yendo a https://launchpad.net/~/+activate-ppa; "
+#~ "introduzca un nombre y una descripción, y después pulse el botón Create "
+#~ "(crear) y en la siguiente página elija el enlace \"Change details"
+#~ "\" (cambiar detalles) cerca de la esquina superior derecha. Puede luego "
+#~ "activar la arquitectura de su teléfono (lo más probable es que sea \"ARM "
+#~ "ARMv7 Hard Float\"), deshabilite todas las arquitecturas que no quiera y "
+#~ "haga clic en \"Save\" (guardar). Suponiendo que su nombre de usuario en "
+#~ "Launchpad es \"ubdeveloper\" y el PPA se llama \"myppa\", entonces las "
+#~ "órdenes para insertar sus cambios en el PPA serán las siguientes:"
+
+#~ msgid ""
+#~ "where the exact filename of the ``.changes`` file will be printed by the "
+#~ "debuild command near the end of its output. Note that in order for the "
+#~ "upload to succeed you will need to have a valid GPG key setup, and it "
+#~ "must be `added to Launchpad <https://launchpad.net/~/+editpgpkeys>`__. If "
+#~ "you are new to this stuff, it's recommended that you carefully read the "
+#~ "`documentation in Launchpad <https://help.launchpad.net/Packaging/PPA/"
+#~ "Uploading>`__."
+#~ msgstr ""
+#~ "donde el nombre exacto del archivo ``.changes`` será impreso por la orden "
+#~ "debuild cerca del final de su salida. Tenga en cuenta que para que la "
+#~ "subida tenga éxito tendrá que tener configurada una clave GPG válida, que "
+#~ "debe ser `añadida a Launchpad <https://launchpad.net/~/+editpgpkeys>`__. "
+#~ "Si es novato con este tema, se recomienda que lea cuidadosamente la "
+#~ "`documentación en Launchpad <https://help.launchpad.net/Packaging/PPA/"
+#~ "Uploading>`__."
+
+#~ msgid ""
+#~ "After the package has been uploaded, you should receive an e-mail by "
+#~ "launchpad telling you whether the upload was accepted; if it was, then it "
+#~ "means that Launchpad will try to build the source package for all the "
+#~ "architectures supported by your PPA and, if successful, will finally "
+#~ "publish the resulting package(s) in it. Now all what is left to do is to "
+#~ "install the packages in your phone: to accomplish that, you can use "
+#~ "``phablet-shell`` to get access to your phone, and from there type the "
+#~ "following commands:"
+#~ msgstr ""
+#~ "Después de que el paquete se ha subido, debería recibir un correo "
+#~ "electrónico de launchpad diciendo si ha sido aceptado o no; si lo fue, "
+#~ "eso significa que Launchpad intentará construir el paquete fuente para "
+#~ "todas las arquitecturas soportadas por su PPA y, si tiene éxito, "
+#~ "publicará el paquete o paquetes resultantes. Ahora todo lo que le queda "
+#~ "por hacer es instalar los paquetes en su teléfono: para hacerlo, puede "
+#~ "usar ``phablet-shell`` para acceder a su teléfono y desde allí teclear "
+#~ "las siguientes órdenes:"
+
+#~ msgid ""
+#~ "You can also give the same installation instructions to other community "
+#~ "members, if you want them to test your changes before submitting them "
+#~ "upstream for review."
+#~ msgstr ""
+#~ "Puede pasarle las mismas instrucciones de instalación a otros miembros de "
+#~ "la comunidad si quiere que prueben sus cambios antes de enviarlos a la "
+#~ "jerarquía superior (upstream) para su revisión."
 
 #~ msgid "Non exhaustive policy groups:"
 #~ msgstr "Políticas no exhaustivas de grupos:"

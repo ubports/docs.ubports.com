@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017, The UBports project (Creative Commons BY-SA 4.0)
+# Copyright (C) 2019, The UBports project (Creative Commons BY-SA 4.0)
 # This file is distributed under the same license as the UBports package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: UBports 1.0\n"
+"Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-30 10:25-0600\n"
+"POT-Creation-Date: 2019-09-02 15:16-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -156,28 +156,172 @@ msgstr ""
 msgid "`Ubuntu Touch programming book <https://www.gitbook.com/book/mimecar/ubuntu-touch-programming-course/details>`__"
 msgstr ""
 
-#: ../../appdev/guides/cookbook.rst:12
+#: ../../appdev/guides/cookbook.rst:10
+msgid "`Application Templates by fulvio <https://github.com/fulvio999/ubports_app_templates>`__"
+msgstr ""
+
+#: ../../appdev/guides/cookbook.rst:13
 msgid "Playground"
 msgstr ""
 
-#: ../../appdev/guides/cookbook.rst:14
+#: ../../appdev/guides/cookbook.rst:15
 msgid "In a completely free and open source community, it is natural to have community members exploring the limits of the platform in many many directions. In this section you will find links to external resources that do exactly that: Explore. The purpose of this list is to show the unlimited possibilities of an open platform like Ubuntu Touch."
 msgstr ""
 
-#: ../../appdev/guides/cookbook.rst:17
+#: ../../appdev/guides/cookbook.rst:18
 msgid "The resources listed here do not necessarily represent the officially endorsed way of developing applications for Ubuntu Touch, but are interesting experiments."
 msgstr ""
 
-#: ../../appdev/guides/cookbook.rst:19
+#: ../../appdev/guides/cookbook.rst:20
 msgid "`Free Pascal development for Ubuntu Touch <http://kriscode.blogspot.tw/2016/09/freepascal-development-for-ubuntu-phone.html>`__"
 msgstr ""
 
-#: ../../appdev/guides/cookbook.rst:20
+#: ../../appdev/guides/cookbook.rst:21
 msgid "`Lazarus development for Ubuntu Touch <http://kriscode.blogspot.tw/2016/10/lazarus-development-for-ubuntu-phone.html>`__"
 msgstr ""
 
-#: ../../appdev/guides/cookbook.rst:21
+#: ../../appdev/guides/cookbook.rst:22
 msgid "`Geany on Ubuntu Touch device as text editor, source code editor, debugger and compiler for multiple languages <http://kriscode.blogspot.tw/2017/10/geany-on-ubuntu-touch-device-as-text.html>`__"
+msgstr ""
+
+#: ../../appdev/guides/cookbook.rst:23
+msgid "`Publish your existing Qt QML app to Ubuntu Touch using QMake (Video) <https://youtu.be/ehqlwRNrfO0>`__"
+msgstr ""
+
+#: ../../appdev/guides/cookbook.rst:24
+msgid "`Publish your existing Qt QML app to Ubuntu Touch using CMake (Video) <https://youtu.be/c2sq6aLeGec>`__"
+msgstr ""
+
+#: ../../appdev/guides/cookbook.rst:25
+msgid "`Getting started with Clickable (Video) <https://youtu.be/TE-s5522v0Y>`__"
+msgstr ""
+
+#: ../../appdev/guides/cookbook.rst:26
+msgid "`Content Hub overview (Video) <https://youtu.be/AihwC2sPIk0>`__"
+msgstr ""
+
+#: ../../appdev/guides/cookbook.rst:27
+msgid "`Import files to your app with Content Hub (Video) <https://youtu.be/q6zzM16jw1U>`__"
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:2
+msgid "Handle C++ dependencies with Clickable"
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:4
+msgid "If an app depends on a library that is not pre-installed in Ubuntu Touch, the app needs to ship it inside the click package. This guide shows how this can be done with Clickable."
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:7
+msgid "Building"
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:8
+msgid "Often libraries are available pre-built, So you need to decide whether you want your build setup to download the library source and compile it or download the pre-built version. The following sections describe the options with its pros and cons."
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:11
+msgid "Compilation"
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:12
+msgid "Compiling the library gives you control over the result, which brings a lot of advantages. For instance, you may disable components your app doesn't need and link the library statically, resulting in a much smaller package size."
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:14
+msgid "Put the libraries source code at ``libs/LIBNAME``, because this is where clickable will look for it by default. If the dependency source code is available as a git repository, it is a good idea to add it as a `git submodule <https://git-scm.com/book/de/v1/Git-Tools-Submodule>`_. Otherwise you might want to add a script to download the sources."
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:16
+msgid "Add a `libraries section <http://clickable.bhdouglass.com/en/latest/clickable-json.html#libraries>`_ to your clickable.json, like this:"
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:31
+msgid "If the library does not contain a CMake configuration, you may use the `qmake` or `custom` template instead. If you choose `custom`, you need to add a `build` command."
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:33
+msgid "You should define a custom app build directory via the ``dir`` param as shown above. Otherwise a `clickable clean` (which is part of the default `clickable` command) would delete the library's build directory, too."
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:35
+msgid "Optionally, configure the compilation by adding ``build_args``, which may look like this:"
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:56
+msgid "Build arguments are usually project specific. Therefore, study the library's build instructions and also look for ``option`` settings in its ``CMakeLists.txt`` (if CMake is used). The default build directory is ``build/LIBNAME/ARCHITECTURE``. Therefore builds for different architectures can exist in parallel."
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:58
+msgid "To actually build the library run ``clickable build-libs``. You may want to build it for the desktop, too, via ``clickable build-libs --arch amd64``. Don't forget to mention this step in your README!"
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:60
+msgid "See how `Teleports clickable.json <https://gitlab.com/ubports/apps/teleports/blob/master/clickable.json#L14>`_ uses the libraries feature to build its dependency tdlib."
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:63
+msgid "Pre-built"
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:64
+msgid "A pre-built library is usually only available as a shared object, that needs to be linked dynamically. Furthermore, it may contain components that you don't need, resulting in a bloated app. It may even miss something, that you could achieve by compiling it yourself. Sometimes, a library is available in the Ubuntu Repositories, but is not installable for the architecture you need (likely ``armhf``). In this case you have to compile the library as described above."
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:66
+msgid "If the library is available in the Ubuntu Repositories, you can add it to the dependencies list, like this:"
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:78
+msgid "Clickable will install the specified package automatically for the target architecture inside the build container. An example can be found in `Guitar Tools' clickable.json <https://github.com/t-mon/guitar-tools/blob/master/clickable.json#L4>`_."
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:80
+msgid "If the library is not in the Ubuntu Repositories, but in a PPA, you can add the PPA to the clickable.json, too. For example:"
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:95
+msgid "Otherwise you may need to add a script to download the pre-built library."
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:98
+msgid "Usage"
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:99
+msgid "First, you may need to specify the include directory where the compiler can find the headers. Second, you need to link the library itself against your app's binary, except it is a header library, where all the source code is located in header files."
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:101
+msgid "In case the library contains an appropriate CMake configuration file, you may use the `find_package <https://cmake.org/cmake/help/latest/command/find_package.html>`_ command. The additional lines on your CMakeLists.txt then may look like:"
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:115
+msgid "The command ``dpkg-architecture -qDEB_HOST_MULTIARCH`` is used to query the target architecture, which is part of the library build directory path, if you compiled the library with Clickable."
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:117
+msgid "We define the variable ``SOMELIBRARY_DIR`` with the path to the libraries build directory, to help CMake find the configuration of the library named ``SOMELIBRARY``. You may not need to do this, if you installed the library from the Ubuntu Repositories."
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:119
+msgid "The ``find_package`` command defines the path to the include directory as ``SOMELIBRARY_INCLUDE_DIRS`` and the library's binaries as ``SOMELIBRARY_LIBS``. We use those with the ``include_directories`` and ``target_link_libraries`` commands. See the `Camera Scanner ImageProcessing CMakeLists.txt <https://github.com/jonnius/camera-scanner/blob/master/plugins/ImageProcessing/CMakeLists.txt#L23>`_ for a real world example."
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:122
+msgid "Deployment"
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:123
+msgid "If you link a library statically with your app, you do not need to ship the library explicitly, as it is already inside your app binary. To do so, you usually need to compile the library yourself. Otherwise, continue with this section."
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:125
+msgid "Find out which components you need to ship. Usually this is one or more ``*.so`` (shared objects) files, linked dynamically. To get the files into the click package, you need to add an ``install`` command to your build configuration. Add the following lines to your CMakeLists.txt:"
+msgstr ""
+
+#: ../../appdev/guides/dependencies.rst:136
+msgid "This will copy the files into the ``tmp`` folder inside the build directory. This is where Clickable puts all the files that go into the click package. Again, the command ``dpkg-architecture -qDEB_HOST_MULTIARCH`` is used to query the target architecture, which is usually part of the file path."
 msgstr ""
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:2
@@ -277,8 +421,607 @@ msgid "We are currently working on expanding our list of developer guides. In th
 msgstr ""
 
 #: ../../appdev/guides/index.rst:9
-#: ../../appdev/publishing/index.rst:8
-msgid "If you are interested in helping create developer guides check out our `GitLab Project <https://gitlab.com/ubports/ux/development-resources>`__."
+msgid "If you are interested in helping create developer guides check out our `GitLab Project <https://gitlab.com/ubports/apps/development-resources>`__."
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:2
+#: ../../appdev/platform/index.rst:12
+msgid "Push notifications"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:4
+msgid "Let's assume that you have an app created with Clickable and published on the OpenStore. But now you want to be able to send Push Notifications to your users. First of all, you need to understand how this is working:"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:8
+msgid "Every app which uses push notifications has got a unique token. This token identifies the user, the device and the app itself. The token is generated by the UBports Push Service."
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:9
+msgid "You will need the token to send a push notification. So the app sends its token to the app developer's server."
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:10
+msgid "With the token you can send a HTTP request to the UBports Push Server which will forward the notification the user's device."
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:12
+msgid "Let's practice this step-by-step."
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:15
+msgid "In the following example we will not implement a server. Also the communication between your app and your server is up to you. Please inform the user about the communication with your server by providing a privacy policy!"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:18
+msgid "Make the app ready for push notifications"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:21
+msgid "Implementing the PushClient"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:23
+msgid "First we need to add the policy group \"push-notification-client\". Your apparmor file could look like this:"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:36
+msgid "In the next step we need to modify the Qml parts. We need to add a pushclient component:"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:52
+msgid "You need to set the correct appId! If the app name in your manifest file is myapp.yourname and the name of the main hook (the one which handles the .desktop file) is hookname, then the appId is:  myapp.yourname_hookname. When we now start the app, it will get a token and print this token in the logs. With clickable logs we will be able to copy this token out of the terminal. But the app is not yet ready to receive a push notification. For this we need something called a pushhelper!"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:56
+msgid "Implementing the pushhelper"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:58
+msgid "The pushhelper is a part of the app which will receive all push notifications and process them before sending them to the system notification center. It will receive a json-file and must output another json-file in the correct format. The pushhelper is seperated from the app. So we need a new hook in the manifest. It could look like this:"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:81
+msgid "It should be clear that we now need a different apparmor file and a different executable file. The **push-apparmor.json** file must only contain the policy group push-notification-client and should look like this:"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:93
+msgid "The **push.json** is for redirecting to the executable file:"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:101
+msgid "In our tutorial we will use python to create a executable named **pushexec** which will forward the notification without changing anything:"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:113
+msgid "We also need to add this new files to the **CMakeLists.txt** and make the pushexec executable::"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:123
+msgid "Now the app is ready to receive and process push notifications!"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:126
+msgid "Using the Push Service API"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:128
+msgid "So now you have the token and the app is ready to receive and process push notifications. To send a notification, you need to send a HTTP request to this address: https://push.ubports.com/notify The content-type must be application/json and it must fit in the correct format. A example in javascript could look like this:"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:165
+msgid "Push Notification Object"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:168
+#: ../../appdev/guides/pushnotifications.rst:193
+#: ../../appdev/guides/pushnotifications.rst:204
+#: ../../appdev/guides/pushnotifications.rst:228
+#: ../../appdev/guides/pushnotifications.rst:259
+#: ../../appdev/guides/pushnotifications.rst:273
+msgid "Parameter"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:168
+#: ../../appdev/guides/pushnotifications.rst:193
+#: ../../appdev/guides/pushnotifications.rst:204
+#: ../../appdev/guides/pushnotifications.rst:228
+#: ../../appdev/guides/pushnotifications.rst:259
+#: ../../appdev/guides/pushnotifications.rst:273
+msgid "Type"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:168
+#: ../../appdev/guides/pushnotifications.rst:193
+#: ../../appdev/guides/pushnotifications.rst:204
+#: ../../appdev/guides/pushnotifications.rst:228
+#: ../../appdev/guides/pushnotifications.rst:259
+#: ../../appdev/guides/pushnotifications.rst:273
+msgid "Description"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:170
+msgid "appid"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:170
+#: ../../appdev/guides/pushnotifications.rst:173
+#: ../../appdev/guides/pushnotifications.rst:176
+#: ../../appdev/guides/pushnotifications.rst:182
+#: ../../appdev/guides/pushnotifications.rst:206
+#: ../../appdev/guides/pushnotifications.rst:230
+#: ../../appdev/guides/pushnotifications.rst:233
+#: ../../appdev/guides/pushnotifications.rst:241
+msgid "string"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "Required. ID of the application that will receive the notification,"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "as described in the client side documentation."
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:173
+msgid "expire_on"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "Required. Expiration date/time for this message, in"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "`ISO8601 Extendendformat <https://www.w3.org/TR/NOTE-datetime>`_."
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:176
+msgid "token"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "Required. The token identifying the user+device to which the message is"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "directed, as described in the client side documentation."
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:179
+msgid "clear_pending"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:179
+#: ../../appdev/guides/pushnotifications.rst:248
+#: ../../appdev/guides/pushnotifications.rst:250
+#: ../../appdev/guides/pushnotifications.rst:277
+msgid "bool"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "Discards all previous pending notifications. Usually in response to"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "getting a \"too-many-pending\" error. Defaults to false."
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:182
+msgid "replace_tag"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "If there's a pending notification with the same tag, delete it before"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "queuing this new one."
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:185
+msgid "data"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:185
+#: ../../appdev/guides/pushnotifications.rst:190
+msgid "Data"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "A JSON object. The contents of the data field are arbitrary. We can use"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "it to send any data to the app."
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:195
+msgid "notification"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:195
+#: ../../appdev/guides/pushnotifications.rst:201
+msgid "Notification"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:195
+msgid "A JSON object which defines how this notification will be presented."
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:197
+msgid "message"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:197
+msgid "object"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:197
+msgid "A JSON object that is passed as-is to the application via PopAll."
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:206
+msgid "tag"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "The tag of the push notification."
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:208
+msgid "sound"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:208
+msgid "bool or string"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "This is either a boolean (play a predetermined sound) or the"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "path to a sound file. The user can disable it, so don't rely"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "on it exclusively. Defaults to empty (no sound). The path is"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "relative, and will be looked up in (a) the application's"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "``.local/share/<pkgname>``, and (b) standard xdg dirs."
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:214
+msgid "vibrate"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:214
+msgid "bool or Vibrate"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "The notification can contain a vibrate field, causing haptic"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "feedback, which can be either a boolean (if true, vibrate a"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "predetermined way) or an Vibrate object."
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:218
+msgid "emblem-counter"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:218
+msgid "Emblem-counter"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "A JSON object, which defines how to display the emblem"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "counter."
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:221
+msgid "card"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:221
+#: ../../appdev/guides/pushnotifications.rst:225
+msgid "Card"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "A JSON object with information about the notification card."
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:230
+msgid "summary"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "Required. A title. The card will not be presented if this is"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "missing."
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:233
+msgid "body"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "Longer text, defaults to empty."
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:235
+msgid "actions"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:235
+#: ../../appdev/guides/pushnotifications.rst:261
+msgid "array"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "If empty (the default), a bubble notification is"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "non-clickable. If you add a URL, then bubble notifications"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "are clickable and launch that URL. One use for this is using"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "a URL like ``appid://com.ubuntu.developer.ralsina.hello``"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "which will switch to the app or launch it."
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:241
+msgid "icon"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "An icon relating to the event being notified. Defaults to"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "empty (no icon); a secondary icon relating to the application"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "will be shown as well, regardless of this field."
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:245
+msgid "timestamp"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:245
+#: ../../appdev/guides/pushnotifications.rst:264
+#: ../../appdev/guides/pushnotifications.rst:275
+msgid "integer"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "Seconds since the unix epoch, only used for persist for now."
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "If zero or unset, defaults to current timestamp."
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:248
+msgid "persist"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "Whether to show in notification centre; defaults to false."
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:250
+msgid "popup"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "Whether to show in a bubble. Users can disable this, and can"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "easily miss them, so don't rely on it exclusively. Defaults"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "to false."
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:256
+msgid "Vibrate"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:261
+msgid "pattern"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "A list of integers describing a vibration pattern (duration of alternating"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "vibration/no vibration times, in milliseconds)."
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:264
+msgid "repeat"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "Number of times the pattern has to be repeated (defaults to 1, 0 is the"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:0
+msgid "same as 1)."
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:270
+msgid "Emblem-Counter"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:275
+msgid "count"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:275
+msgid "A number to be displayed over the application's icon in the launcher."
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:277
+msgid "visible"
+msgstr ""
+
+#: ../../appdev/guides/pushnotifications.rst:277
+msgid "Set to true to show the counter, or false to hide it."
+msgstr ""
+
+#: ../../appdev/guides/user-metrics.rst:2
+msgid "User metrics"
+msgstr ""
+
+#: ../../appdev/guides/user-metrics.rst:5
+msgid "What are user metrics?"
+msgstr ""
+
+#: ../../appdev/guides/user-metrics.rst:7
+msgid "If you look on the lock screen, you will see a circle. Inside the circle is text. Look closer, and you’ll notice that the text contains data regarding the user’s activity. Double tap on the middle of the circle, and you will see more \"metrics\" about the user."
+msgstr ""
+
+#: ../../appdev/guides/user-metrics.rst:11
+msgid "This shows \"7 text messages sent today.\" How did it know?"
+msgstr ""
+
+#: ../../appdev/guides/user-metrics.rst:15
+msgid "This is from a 3rd-party application (`nCounter <https://gitlab.com/joboticon/ncounter/>`_) that makes use of the User Metrics feature."
+msgstr ""
+
+#: ../../appdev/guides/user-metrics.rst:17
+msgid "For the most part, these messages are quite clearly state what they are counting, and which app is related. But where do these metrics come from?"
+msgstr ""
+
+#: ../../appdev/guides/user-metrics.rst:20
+msgid "How can I use user metrics in my application?"
+msgstr ""
+
+#: ../../appdev/guides/user-metrics.rst:22
+msgid "All of the following information will be based on the code for `nCounter`_."
+msgstr ""
+
+#: ../../appdev/guides/user-metrics.rst:24
+msgid "First, you will need to import the module in the QML file that will handle the User Metrics:"
+msgstr ""
+
+#: ../../appdev/guides/user-metrics.rst:30
+msgid "(There may be updated versions of this above 0.1)"
+msgstr ""
+
+#: ../../appdev/guides/user-metrics.rst:32
+msgid "Next, the specific Metric must be defined in the code as an object:"
+msgstr ""
+
+#: ../../appdev/guides/user-metrics.rst:44
+msgid "Now that the metric is created, we can update the \"format\" or \"emptyFormat\" when an event takes place by referencing the variables in the Metric object."
+msgstr ""
+
+#: ../../appdev/guides/user-metrics.rst:54
+msgid "Here we assign a new value to the circleMetric string variable that’s inside the Metric object:"
+msgstr ""
+
+#: ../../appdev/guides/user-metrics.rst:56
+msgid "(Remember that circleMetric is the variable value assigned to format)"
+msgstr ""
+
+#: ../../appdev/guides/user-metrics.rst:58
+msgid "Metric Id [dot] Variable Name [equals] New variable information"
+msgstr ""
+
+#: ../../appdev/guides/user-metrics.rst:60
+msgid "``metric.circleMetric = \"New Metric Message\"``"
+msgstr ""
+
+#: ../../appdev/guides/user-metrics.rst:62
+msgid "We then tell the lock screen to update the metric in ZERO milliseconds i.e. immediately"
+msgstr ""
+
+#: ../../appdev/guides/user-metrics.rst:64
+msgid "Metric ID [dot] update (Number of milliseconds)"
+msgstr ""
+
+#: ../../appdev/guides/user-metrics.rst:66
+msgid "``metric.update(0)``"
+msgstr ""
+
+#: ../../appdev/guides/user-metrics.rst:68
+msgid "We have now updated the metric for today. When the time rolls over to tomorrow, the metric will be reset to whatever is in ``emptyFormat``."
+msgstr ""
+
+#: ../../appdev/guides/user-metrics.rst:70
+msgid "For most apps, this defaults to 0 counts for messages, calls, etc."
+msgstr ""
+
+#: ../../appdev/guides/user-metrics.rst:73
+msgid "How do user metrics work?"
+msgstr ""
+
+#: ../../appdev/guides/user-metrics.rst:75
+msgid "User metrics are made up of two \"formats\""
+msgstr ""
+
+#: ../../appdev/guides/user-metrics.rst:77
+msgid "metrics/messages for today (``format``)"
+msgstr ""
+
+#: ../../appdev/guides/user-metrics.rst:78
+msgid "metrics/messages for tomorrow (``emptyFormat``)"
+msgstr ""
+
+#: ../../appdev/guides/user-metrics.rst:80
+msgid "The value of ``emptyFormat`` is what displays on the lock screen when no value has been stored in ``format``. In order to display a new value of ``format`` the metric must be updated with ``metric.update(x)`` (where x is the number of milliseconds until the update takes place). The metric will reset back to the value stored in ``emptyFormat`` each day."
+msgstr ""
+
+#: ../../appdev/guides/user-metrics.rst:83
+msgid "Applications make use of this system, but setting and updating the user metric \"formats\" by running a certain code whenever a certain event takes place. e.g. When you press send in Telegram, or when you receive a phone call. The application may store the data for manipulation, but generally the data is stored in the system (`/var/lib/usermetrics <https://github.com/ubports/libusermetrics/tree/xenial/doc/pages>`_)."
+msgstr ""
+
+#: ../../appdev/guides/user-metrics.rst:87
+msgid "Limitations and wonders"
+msgstr ""
+
+#: ../../appdev/guides/user-metrics.rst:89
+msgid "Based on how the \"formats\" are set up, it seems that it is difficult to maintain a running tally beyond one day. It also doesn’t seem to truly reset a counted variable. Instead it reverts to a default setting. This would not normally allow for long-term data interpretation without some kind of database logging."
+msgstr ""
+
+#: ../../appdev/guides/user-metrics.rst:91
+msgid "In the case of the `nCounter`_ app. I wanted to count the number of days, but since the metric \"resets\" each day, that presents a problem. I create a workaround that updates the metric every time the application is opened. Thus, the ``emptyFormat`` (default) tells the user to open the application. This, however, nearly defeats the purpose of the user metric entirely, other than having a neat stat reminder for the day."
+msgstr ""
+
+#: ../../appdev/guides/user-metrics.rst:93
+msgid "There must be a way for a process to run independently in the background (e.g. cron) to retrieve data from a specific app code. One lead is the Indicator Weather app. This runs a process every X minutes to update the weather indicator automatically without having to open the app."
 msgstr ""
 
 #: ../../appdev/guides/writeable-dirs.rst:2
@@ -358,99 +1101,128 @@ msgid "App development"
 msgstr ""
 
 #: ../../appdev/index.rst:4
-msgid "Welcome to an open source and free platform under constant scrutiny and improvement by a vibrant global community, whose energy, connectedness, talent and commitment is unmatched. Ubuntu is also the third most deployed desktop OS in the world."
+msgid "Great!, you'd like to develop an app for Ubuntu Touch. Here are some resources that we hope help you get started."
 msgstr ""
 
-#: ../../appdev/index.rst:7
-msgid "Get started"
+#: ../../appdev/index.rst:6
+msgid "If you have questions that aren't answered in the docs or want to chat with other Ubuntu Touch developers? Join our `app dev Telegram group <https://t.me/UbuntuAppDevEN>`_ or chat with us on the `UBports app dev forum <https://forums.ubports.com/category/35/app-development>`_."
 msgstr ""
 
 #: ../../appdev/index.rst:9
-msgid "Ubuntu Touch is a fun and vibrant platform for development. Whether you're a new developer or an experienced one, we have several resources to help you get started."
+msgid "Get started"
 msgstr ""
 
 #: ../../appdev/index.rst:11
-msgid "Ubuntu Touch supports several different types of apps. :ref:`Native apps <nativeapp>` are apps with interfaces made using QML or HTML with their behavior defined in JavaScript, C++, Python, or Go. :ref:`Web apps <webapp>` are special containers to run websites in."
+msgid "Ubuntu Touch supports two kind of apps. :ref:`Native apps <nativeapp>` are apps with interfaces made using QML or HTML with their behavior defined in JavaScript, C++, Python, Rust or Go. :ref:`Web apps <webapp>` are special containers to run websites in."
 msgstr ""
 
-#: ../../appdev/index.rst:21
-msgid "Community"
+#: ../../appdev/index.rst:13
+msgid "Applications are shipped as a :ref:`Click <click>` package and can be publicly shared on the official app store `OpenStore <https://open-store.io>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:23
-msgid "Have questions that aren't answered in the docs or want to chat with other Ubuntu Touch developers? Join our `app dev Telegram group <https://t.me/UbuntuAppDevEN>`_ or chat with us on the `UBports app dev forum <https://forums.ubports.com/category/35/app-development>`_."
-msgstr ""
-
-#: ../../appdev/index.rst:26
+#: ../../appdev/index.rst:24
 msgid "Tools"
 msgstr ""
 
-#: ../../appdev/index.rst:28
+#: ../../appdev/index.rst:26
 msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ is a meta-build system for Ubuntu Touch applications that allows you to compile, build, test and publish ``click`` packages and provides various templates to get you started with app development. It is currently the easiest and most convenient way of building click packages for Ubuntu Touch. You can use any code editor or IDE that you choose and build your apps from the commandline with Clickable."
 msgstr ""
 
-#: ../../appdev/index.rst:30
+#: ../../appdev/index.rst:28
 msgid "Alternatively there is the old `Ubuntu SDK IDE <https://docs.ubuntu.com/phone/en/platform/sdk>`__. Be aware that it is no longer supported by Canonical, and UBports has chosen to not support it either due to lack of manpower."
 msgstr ""
 
-#: ../../appdev/index.rst:32
+#: ../../appdev/index.rst:30
 msgid "You can still install the SDK IDE in Ubuntu 16.04, but it is not guaranteed to work correctly. You can use the following commands to install::"
 msgstr ""
 
-#: ../../appdev/index.rst:42
+#: ../../appdev/index.rst:40
 msgid "Guides"
 msgstr ""
 
-#: ../../appdev/index.rst:44
+#: ../../appdev/index.rst:42
 msgid "Get started building your first app or learn about advanced concepts with our :ref:`Developer guides <devguides>`."
 msgstr ""
 
-#: ../../appdev/index.rst:57
+#: ../../appdev/index.rst:58
 msgid "Publishing"
 msgstr ""
 
-#: ../../appdev/index.rst:59
+#: ../../appdev/index.rst:60
 msgid "After you are done building your app, distribute it on the `OpenStore <https://open-store.io/>`__ with our :ref:`Publishing guides <publishing>`."
 msgstr ""
 
-#: ../../appdev/index.rst:68
+#: ../../appdev/index.rst:69
 msgid "Documentation"
 msgstr ""
 
-#: ../../appdev/index.rst:70
+#: ../../appdev/index.rst:71
 msgid "`QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:71
+#: ../../appdev/index.rst:72
 msgid "`Cordova HTML5 API <https://api-docs.ubports.com/sdk/apps/html5/index.html>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:72
+#: ../../appdev/index.rst:73
 msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:75
-msgid "More Documentation"
+#: ../../appdev/index.rst:74
+msgid "`Suru Icons <http://docs.ubports.com/projects/icons/en/latest/>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:87
+#: ../../appdev/index.rst:76
+msgid "It is possible to develop cross-platform apps that don't depend on Ubuntu specific APIs, although this is not the official way of developing apps for Ubuntu Touch. If running on other operating systems is an requirement for your app, you can refer to this  APIs instead:"
+msgstr ""
+
+#: ../../appdev/index.rst:78
+msgid "`Kirigami API <https://api.kde.org/frameworks/kirigami/html/>`__"
+msgstr ""
+
+#: ../../appdev/index.rst:79
+msgid "`Qt Quick Controls 2 API <https://doc.qt.io/qt-5/qtquickcontrols-index.html>`__"
+msgstr ""
+
+#: ../../appdev/index.rst:83
+#: ../../appdev/platform/index.rst:4
+msgid "Platform"
+msgstr ""
+
+#: ../../appdev/index.rst:96
 msgid "Sample apps"
 msgstr ""
 
-#: ../../appdev/index.rst:89
+#: ../../appdev/index.rst:98
 msgid "Learn more about app development by digging into our :ref:`Sample apps <sampleapps>`."
 msgstr ""
 
-#: ../../appdev/index.rst:99
+#: ../../appdev/index.rst:108
 msgid "Preinstalled apps"
 msgstr ""
 
-#: ../../appdev/index.rst:101
+#: ../../appdev/index.rst:110
 msgid "The :doc:`/contribute/preinstalled-apps` page has information on developing the apps which are included with Ubuntu Touch."
 msgstr ""
 
 #: ../../appdev/nativeapp/index.rst:4
 msgid "Native applications"
+msgstr ""
+
+#: ../../appdev/nativeapp/index.rst:6
+msgid "The recommended way to build a native application on Ubuntu Touch is to use the `Qt <https://doc.qt.io/>`__ framework ( current version shipped on Ubuntu Touch 16.04 is Qt 5.9.5 ). You do not have to stick with the traditional C++<->QML Qt model, you can use also Python, Go, Rust or even Javascript for your backend."
+msgstr ""
+
+#: ../../appdev/nativeapp/index.rst:9
+msgid "Ubuntu Touch provide a subset of Qt QML components to ease you design your app : `QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__ and Icons: `Suru Icons <http://docs.ubports.com/projects/icons/en/latest/>`__, but you can also ship your cross platform app using standard Qt QML QtQuick2 components."
+msgstr ""
+
+#: ../../appdev/nativeapp/index.rst:12
+msgid "You can use `Clickable <http://clickable.bhdouglass.com/en/latest/>`_ to facilitate Packaging, deploying, publishing and tests ."
+msgstr ""
+
+#: ../../appdev/nativeapp/index.rst:14
+msgid "Check out informations about the platform and confinement model in :ref:`Platform <platform>` section"
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:2
@@ -827,7 +1599,7 @@ msgstr ""
 msgid "Every ``click`` application package must embed at least 3 files:"
 msgstr ""
 
-#: ../../appdev/platform/click.rst:28
+#: ../../appdev/platform/click.rst:26
 msgid "``manifest.json`` file"
 msgstr ""
 
@@ -839,112 +1611,120 @@ msgstr ""
 msgid "Example ``manifest.json`` file::"
 msgstr ""
 
-#: ../../appdev/platform/click.rst:31
+#: ../../appdev/platform/click.rst:29
 msgid "AppArmor profile policy file"
 msgstr ""
 
-#: ../../appdev/platform/click.rst:31
+#: ../../appdev/platform/click.rst:29
 msgid "Contains which policy the app needs to work properly. See `Security and app isolation`_ below for more information on this file."
 msgstr ""
 
-#: ../../appdev/platform/click.rst:54
+#: ../../appdev/platform/click.rst:53
 msgid "``.desktop`` file"
 msgstr ""
 
-#: ../../appdev/platform/click.rst:34
+#: ../../appdev/platform/click.rst:32
 msgid "The launcher file will tell UT how to launch the app, which name and icon to display on the home screen, and some other properties."
 msgstr ""
 
-#: ../../appdev/platform/click.rst:36
+#: ../../appdev/platform/click.rst:34
 msgid "Example of ``app.desktop``::"
 msgstr ""
 
-#: ../../appdev/platform/click.rst:46
+#: ../../appdev/platform/click.rst:44
 msgid "Non exhaustive list of properties:"
 msgstr ""
 
-#: ../../appdev/platform/click.rst:48
+#: ../../appdev/platform/click.rst:46
 msgid "Name: Application title has shown in the dash"
 msgstr ""
 
-#: ../../appdev/platform/click.rst:49
+#: ../../appdev/platform/click.rst:47
 msgid "Exec: Path to the executable file"
 msgstr ""
 
-#: ../../appdev/platform/click.rst:50
+#: ../../appdev/platform/click.rst:48
 msgid "Icon: Path to the icon to display"
 msgstr ""
 
-#: ../../appdev/platform/click.rst:51
+#: ../../appdev/platform/click.rst:49
 msgid "Terminal: ``false`` if will not run in terminal window"
 msgstr ""
 
-#: ../../appdev/platform/click.rst:52
+#: ../../appdev/platform/click.rst:50
 msgid "Type: Specifies the type of the launcher file. The type can be Application, Link or Directory."
 msgstr ""
 
-#: ../../appdev/platform/click.rst:53
+#: ../../appdev/platform/click.rst:51
 msgid "X-Ubuntu-Touch: ``true`` to make the app visible"
 msgstr ""
 
-#: ../../appdev/platform/click.rst:54
+#: ../../appdev/platform/click.rst:52
 msgid "X-Ubuntu-XMir-Enable: ``true`` if your app is built for X"
 msgstr ""
 
-#: ../../appdev/platform/click.rst:61
+#: ../../appdev/platform/click.rst:53
+msgid "X-Ubuntu-Supported-Orientations: ``landscape`` or ``portrait`` to force your app start in landscape mode and portrait mode respectively."
+msgstr ""
+
+#: ../../appdev/platform/click.rst:60
 msgid "Security and app isolation"
 msgstr ""
 
-#: ../../appdev/platform/click.rst:63
-msgid "All Ubuntu apps and scopes are confined respecting AppArmor access control mechanism (see `Application Confinement <https://wiki.ubuntu.com/SecurityTeam/Specifications/ApplicationConfinement#App_confinement_with_AppArmor>`_) , meaning they only have access to their own resources and are isolated from other apps and parts of the system. The developer must declare which policy groups are needed for the app or scope to function properly with an apparmor ``.json`` file."
+#: ../../appdev/platform/click.rst:62
+msgid "All Ubuntu apps are confined respecting AppArmor access control mechanism (see `Application Confinement <https://wiki.ubuntu.com/SecurityTeam/Specifications/ApplicationConfinement#App_confinement_with_AppArmor>`_) , meaning they only have access to their own resources and are isolated from other apps and parts of the system. The developer must declare which policy groups are needed for the app or scope to function properly with an apparmor ``.json`` file."
 msgstr ""
 
-#: ../../appdev/platform/click.rst:65
+#: ../../appdev/platform/click.rst:64
 msgid "Example ``apparmor.json`` file::"
 msgstr ""
 
-#: ../../appdev/platform/click.rst:77
+#: ../../appdev/platform/click.rst:76
 msgid "For a full list of available policy groups, see :doc:`apparmor`."
 msgstr ""
 
-#: ../../appdev/platform/index.rst:4
-msgid "Platform"
+#: ../../appdev/platform/index.rst:6
+msgid "Here are Ubuntu Touch platforms key topics when you want to extend your app with Ubuntu Touch ecosystem:"
 msgstr ""
 
-#: ../../appdev/platform/index.rst:7
+#: ../../appdev/platform/index.rst:9
 msgid "Content Hub"
 msgstr ""
 
-#: ../../appdev/platform/index.rst:7
+#: ../../appdev/platform/index.rst:9
 msgid "Each application can expose content outside its sandbox, giving the user precise control over what can be imported, exported or shared with the world and other apps."
 msgstr ""
 
-#: ../../appdev/platform/index.rst:10
-msgid "Push notifications"
-msgstr ""
-
-#: ../../appdev/platform/index.rst:10
+#: ../../appdev/platform/index.rst:12
 msgid "By using a push server and a companion client, instantly serve users with the latest information from their network and apps."
 msgstr ""
 
-#: ../../appdev/platform/index.rst:13
+#: ../../appdev/platform/index.rst:15
 msgid "URL dispatcher"
 msgstr ""
 
-#: ../../appdev/platform/index.rst:13
+#: ../../appdev/platform/index.rst:15
 msgid "Help users navigate between your apps and drive their journey with the URL dispatcher."
 msgstr ""
 
-#: ../../appdev/platform/index.rst:17
+#: ../../appdev/platform/index.rst:19
 msgid "Online accounts"
 msgstr ""
 
-#: ../../appdev/platform/index.rst:16
+#: ../../appdev/platform/index.rst:18
 msgid "Simplify user access to online services by integrating with the online accounts API. Accounts added by the user on the device are registered in a centralized hub, allowing other apps to re-use them."
 msgstr ""
 
-#: ../../appdev/platform/index.rst:19
+#: ../../appdev/platform/index.rst:21
 msgid "`Read the docs <https://docs.ubuntu.com/phone/en/platform/>`__"
+msgstr ""
+
+#: ../../appdev/platform/index.rst:24
+msgid "Packaging your app"
+msgstr ""
+
+#: ../../appdev/platform/index.rst:26
+msgid "Here you will get some informations about the confinment model and the packaging system:"
 msgstr ""
 
 #: ../../appdev/publishing/index.rst:4
@@ -953,6 +1733,10 @@ msgstr ""
 
 #: ../../appdev/publishing/index.rst:6
 msgid "We are currently working on expanding our list of publishing guides. In the mean time you can get started over at the `OpenStore's submission page <https://open-store.io/submit>`__."
+msgstr ""
+
+#: ../../appdev/publishing/index.rst:8
+msgid "If you are interested in helping create developer guides check out our `GitLab Project <https://gitlab.com/ubports/ux/development-resources>`__."
 msgstr ""
 
 #: ../../appdev/samples/index.rst:4
@@ -1077,110 +1861,118 @@ msgid "With this launch command and URL pattern, the user can navigate to and op
 msgstr ""
 
 #: ../../appdev/webapp/guide.rst:71
-msgid "Tip: Make sure to fully specify the subdomain in your starting URL, that is, use http://www.ubuntu.com instead of www.ubuntu.com. Not specifying the subdomain would create an ambiguous URL and thus introduces security concerns. More complex wildcard patterns"
+msgid "Tip: Make sure to fully specify the subdomain in your starting URL, that is, use http://www.ubuntu.com instead of www.ubuntu.com. Not specifying the subdomain would create an ambiguous URL and thus introduces security concerns."
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:74
+#: ../../appdev/webapp/guide.rst:75
+msgid "More complex wildcard patterns"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:77
 msgid "You might want to limit access to only some subpages of your site from within the webapp. This is easy with wildcard patterns. (Links to other subpages are opened in the browser.) For example, the following allows access to www.ubuntu.com/desktop/features and www.ubuntu.com/phone/features while not allowing access to www.ubuntu.com/desktop or www.ubuntu.com/phone::"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:80
+#: ../../appdev/webapp/guide.rst:83
 msgid "Multiple patterns"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:82
+#: ../../appdev/webapp/guide.rst:85
 msgid "You can use multiple patterns by separating them with a comma. For example, the following allows access only to www.ubuntu.com/desktop/features and www.ubuntu.com/phone/features:::"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:86
+#: ../../appdev/webapp/guide.rst:89
 msgid "Tip: Multiple patterns are often necessary to achieve the intended containment behavior."
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:90
+#: ../../appdev/webapp/guide.rst:93
 msgid "Adding a specific subdomain"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:92
-msgid "Many URLs have one or more subdomains. (For example, in the following, “developer” is the subdomain: developer.ubuntu.com.) You can allow access to a single subdomain (and all of its subpages) with a pattern like this:::"
+#: ../../appdev/webapp/guide.rst:95
+msgid "Many URLs have one or more subdomains. (For example, in the following, \"developer\" is the subdomain: developer.ubuntu.com.) You can allow access to a single subdomain (and all of its subpages) with a pattern like this:::"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:96
+#: ../../appdev/webapp/guide.rst:99
 msgid "However, one usually wants the user to be able to navigate back to the starting URL (and its subpages). So, if the starting URL is http://www.ubuntu.com, a second pattern is needed:::"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:100
+#: ../../appdev/webapp/guide.rst:103
 msgid "Putting these together, here’s an example that starts on http://www.ubuntu.com and allows navigation to http://developer.ubuntu.com and subpages and back to http://www.ubuntu.com and subpages:::"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:105
+#: ../../appdev/webapp/guide.rst:108
 msgid "Adding subdomains with a wildcard"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:107
+#: ../../appdev/webapp/guide.rst:110
 msgid "Some URLs have multiple subdomains. For example, www.ubuntu.com has design.ubuntu.com, developer.ubuntu.com and more. You can add access to all subdomains with a wildcard in the subdomain position:::"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:111
+#: ../../appdev/webapp/guide.rst:114
 msgid "Note: An asterisk in the subdomain position matches any valid single subdomain. This single pattern is sufficient to enable browsing to any subdomain and subpages, including back to the starting URL (http://www.ubuntu.com) and its subpages."
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:114
+#: ../../appdev/webapp/guide.rst:117
 msgid "Adding https"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:116
+#: ../../appdev/webapp/guide.rst:119
 msgid "Sometimes a site uses https for some of its URLs. Here is an example that allows https and https as access within the webapp to www.launchpad.net (and all subpages due to the wildcard):::"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:120
+#: ../../appdev/webapp/guide.rst:123
 msgid "Note: the question mark in https?. This means the preceding character (the ‘s’) is optional. If https is always required, omit the question mark."
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:123
+#: ../../appdev/webapp/guide.rst:126
 msgid "Command line arguments"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:125
+#: ../../appdev/webapp/guide.rst:128
 msgid "The webapp-container accepts many options to fine tune how it hosts various web applications."
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:127
+#: ../../appdev/webapp/guide.rst:130
 msgid "See all help with:::"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:131
+#: ../../appdev/webapp/guide.rst:134
 msgid "Note: Only the following options apply to converged Ubuntu.::"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:145
+#: ../../appdev/webapp/guide.rst:148
 msgid "Chrome options (if none specified, no chrome is shown by default):::"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:150
+#: ../../appdev/webapp/guide.rst:153
 msgid "Note: The other available options are specific to desktop webapps. It is recommended to not use them anymore."
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:153
+#: ../../appdev/webapp/guide.rst:156
 msgid "User-Agent string override"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:155
+#: ../../appdev/webapp/guide.rst:158
 msgid "Some websites check specific portions of the web engine identity, aka the User-Agent string, to adjust their presentation or enable certain features. While not a recommended practice, it is sometimes necessary to change the default string sent by the webapp container."
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:157
+#: ../../appdev/webapp/guide.rst:160
 msgid "To change the string from the command line, use the following option:::"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:162
+#: ../../appdev/webapp/guide.rst:165
 msgid "Browser data containment"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:164
-msgid "The webapp experience is contained and isolated from the browser data point of view. That is webapps do not access data from any other installed browser, such as history, cookies and so on. Other browser on the system do not access the webapp’s data. Storage"
+#: ../../appdev/webapp/guide.rst:167
+msgid "The webapp experience is contained and isolated from the browser data point of view. That is webapps do not access data from any other installed browser, such as history, cookies and so on. Other browser on the system do not access the webapp’s data."
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:167
+#: ../../appdev/webapp/guide.rst:170
+msgid "Storage"
+msgstr ""
+
+#: ../../appdev/webapp/guide.rst:172
 msgid "W3C allows apps to use local storage, and Oxide/Webapp-container supports the main standards here: LocalStorage, IndexedDB, WebSQL."
 msgstr ""
 
@@ -1264,7 +2056,7 @@ msgstr ""
 msgid "On your phone, start the browser in inspector mode:::"
 msgstr ""
 
-#: ../../appdev/webapp/webdebug.rst:26
+#: ../../appdev/webapp/webdebug.rst:27
 msgid "Now on your computer, launch Chrome/Chromium browser, and point address to ``http://YOUR_UT_IP_ADDRESS:9221``"
 msgstr ""
 

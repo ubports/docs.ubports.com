@@ -1,14 +1,16 @@
 App development
 ===============
 
-Welcome to an open source and free platform under constant scrutiny and improvement by a vibrant global community, whose energy, connectedness, talent and commitment is unmatched. Ubuntu is also the third most deployed desktop OS in the world.
+Great!, you'd like to develop an app for Ubuntu Touch. Here are some resources that we hope help you get started. 
+
+If you have questions that aren't answered in the docs or want to chat with other Ubuntu Touch developers? Join our `app dev Telegram group <https://t.me/UbuntuAppDevEN>`_ or chat with us on the `UBports app dev forum <https://forums.ubports.com/category/35/app-development>`_.
 
 Get started
 -----------
 
-Ubuntu Touch is a fun and vibrant platform for development. Whether you're a new developer or an experienced one, we have several resources to help you get started.
+Ubuntu Touch supports two kind of apps. :ref:`Native apps <nativeapp>` are apps with interfaces made using QML or HTML with their behavior defined in JavaScript, C++, Python, Rust or Go. :ref:`Web apps <webapp>` are special containers to run websites in.
 
-Ubuntu Touch supports several different types of apps. :ref:`Native apps <nativeapp>` are apps with interfaces made using QML or HTML with their behavior defined in JavaScript, C++, Python, or Go. :ref:`Web apps <webapp>` are special containers to run websites in.
+Applications are shipped as a :ref:`Click <click>` package and can be publicly shared on the official app store `OpenStore <https://open-store.io>`__ 
 
 .. toctree::
     :maxdepth: 1
@@ -17,10 +19,6 @@ Ubuntu Touch supports several different types of apps. :ref:`Native apps <native
     nativeapp/index
     webapp/index
 
-Community
----------
-
-Have questions that aren't answered in the docs or want to chat with other Ubuntu Touch developers? Join our `app dev Telegram group <https://t.me/UbuntuAppDevEN>`_ or chat with us on the `UBports app dev forum <https://forums.ubports.com/category/35/app-development>`_.
 
 Tools
 -----
@@ -51,8 +49,13 @@ Get started building your first app or learn about advanced concepts with our :r
     guides/cookbook
     guides/contenthub
     guides/importing-CH-urldispatcher
+<<<<<<< HEAD
+=======
+    guides/pushnotifications
+>>>>>>> d48dc2d122e6fed5aab952dcdc26469b20538b26
     guides/user-metrics
     guides/writeable-dirs
+    guides/dependencies
 
 Publishing
 ----------
@@ -71,9 +74,17 @@ Documentation
 * `QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__
 * `Cordova HTML5 API <https://api-docs.ubports.com/sdk/apps/html5/index.html>`__
 * `Clickable <http://clickable.bhdouglass.com/en/latest/>`__
+* `Suru Icons <http://docs.ubports.com/projects/icons/en/latest/>`__
 
-More Documentation
-^^^^^^^^^^^^^^^^^^
+It is possible to develop cross-platform apps that don't depend on Ubuntu specific APIs, although this is not the official way of developing apps for Ubuntu Touch. If running on other operating systems is an requirement for your app, you can refer to this  APIs instead:
+
+* `Kirigami API <https://api.kde.org/frameworks/kirigami/html/>`__
+* `Qt Quick Controls 2 API <https://doc.qt.io/qt-5/qtquickcontrols-index.html>`__
+
+
+Platform
+--------
+
 
 .. toctree::
     :maxdepth: 1
@@ -100,4 +111,3 @@ Preinstalled apps
 -----------------
 
 The :doc:`/contribute/preinstalled-apps` page has information on developing the apps which are included with Ubuntu Touch.
-

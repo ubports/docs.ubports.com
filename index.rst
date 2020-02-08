@@ -5,7 +5,7 @@ Welcome to the official documentation of the UBports project!
 
 UBports develops the mobile phone operating system Ubuntu Touch. Ubuntu Touch is a mobile operating system focused on ease of use, privacy, and convergence.
 
-On this website you find instructions how to install Ubuntu Touch on your mobile phone, user guides and detailed documentation on all system components. If this is your first time here, please consider reading our :doc:`introduction <about/introduction>`.
+On this website you find guides to :doc:`install Ubuntu Touch on your mobile phone <userguide/install>`, :doc:`use Ubuntu Touch <userguide/dailyuse/index>`, :doc:`develop Ubuntu Touch apps <appdev/index>`, :doc:`port Ubuntu Touch to an Android handset <porting/introduction>` and :doc:`learn more about system components <systemdev/index>`. If this is your first time here, please consider reading our :doc:`introduction <about/introduction>`.
 
 If you want to help improving this documentation, :doc:`the Documentation contribute page <contribute/documentation>` will get you started.
 
@@ -19,6 +19,7 @@ You may view this documentation in the following languages:
 * `Română <https://docs.ubports.com/ro/latest/>`_
 * `Türkçe <https://docs.ubports.com/tr/latest/>`_
 * `Español <https://docs.ubports.com/es/latest/>`_
+* `Simplified Chinese <https://docs.ubports.com/zh_CN/latest/>`_
 
 .. toctree::
    :maxdepth: 1
@@ -61,6 +62,7 @@ You may view this documentation in the following languages:
    :name: sec-porting
 
    porting/introduction
+   porting/ubp-5.1
 
 .. toctree::
    :maxdepth: 1

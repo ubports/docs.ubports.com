@@ -22,43 +22,12 @@ If the report is missing any of the information specified later in this document
 Reproduce the issue you've found
 --------------------------------
 
-Next, find out exactly how to recreate the bug that you've found. Document the exact steps that you took to find the problem in detail. Then, reboot your phone and perform those steps again. If the problem still occurs, continue on to the next step. `If not <https://youtu.be/nn2FB1P_Mn8?t=10s>`_...
-
-Getting Logs
-------------
-
-We appreciate as many good logs as we can get when you report a bug. In general, /var/log/dmesg and the output of /android/system/bin/logcat are helpful when resolving an issue. I'll show you how to get these logs.
-
-To get set ready, follow the steps to :doc:`set up ADB </userguide/advanceduse/adb>`.
-
-Now, you can get the two most important logs.
-
-dmesg
-^^^^^
-
-The **dmesg** (*display message* or *driver message*) command displays debug messages from the kernel.
-
-#. Using the steps you documented earlier, reproduce the issue you're reporting
-#. cd to a folder where you're able to write the log
-#. Run the command: `adb shell dmesg > UTdmesg.txt`
-
-This log should now be located at UTdmesg.txt under your working directory, ready for uploading later.
-
-logcat
-^^^^^^
-
-The **logcat** (*log concatenator*) command displays debug information from various parts of the underlying android system.
-
-#. cd to a folder where you're able to write the log
-#. Run the command: `adb shell /android/system/bin/logcat -d > UTlogcat.txt`
-#. Using the steps you documented earlier, reproduce the issue you're reporting
-
-This log will be located at UTlogcat.txt in your current working directory, so you'll be able to upload it later.
+Next, find out exactly how to recreate the bug that you've found. Document the exact steps that you took to find the problem in detail. Then, reboot your phone and perform those steps again. If the problem still occurs, continue on to the next step. `If not... <https://youtu.be/nn2FB1P_Mn8?t=10s>`_
 
 Making the bug report
 ---------------------
 
-Now it's time for what you've been waiting for, the bug report itself! Bug reports need to be filed in English. 
+Now it's time for what you've been waiting for, the bug report itself! Bug reports need to be filed in English.
 
 First, pull up the `bug tracker <https://github.com/ubports/ubuntu-touch>`_ and click "New Issue". Log in to GitHub if you haven't yet.
 
@@ -69,9 +38,23 @@ Now, write your bug report. A good bug report includes the following:
 * What happened: A synopsis of the erroneous behavior
 * What I expected to happen: A synopsis of what should have happened, if there wasn't an error
 * Steps to reproduce: You wrote these down earlier, right?
-* Logs: Attach your logs by clicking and dragging them into your GitHub issue.
 * Software Version: Go to (Settings - About) and list what appears on the "OS" line of this screen. Also include the release channel that you used when you installed Ubuntu on this phone.
 
-Once you're finished with that, post the bug. You can't add labels yourself, so please don't forget to state the device you're experiencing the issue on in the description so a moderator can easily add the correct tags later.
+Once you're finished with that, post the report. You can't add labels yourself, so please don't forget to state the device you're experiencing the issue on in the description so a moderator can easily add the correct tags later.
 
 A developer or QA-team member will confirm and triage your bug, then work can begin on it. If you are missing any information, you will be asked for it, so make sure to check in often!
+
+Getting Logs
+------------
+
+Here we'll discuss the general steps to get logs, files that contain important debugging messages, on Ubuntu Touch. You may be asked for logs after submitting your issue. This section will help you to retrieve these logs from the device.
+
+.. warning::
+
+    Log files may contain information you prefer to keep private. Please be sure to skim through them to ensure this is not the case before posting them. We can coordinate to get them through e-mail or a similarly less public medium.
+
+To get ready, download the `Logviewer app <https://open-store.io/app/logviewer.neothethird>`_ from the OpenStore. This app will help us find, view, and send the logs we need.
+
+Now, open the Logviewer app. You'll see a list of all of the log files available in your user log folder, ``/home/phablet/.cache/upstart/``. This folder contains many, but not all, of the logs for software running on your device. You can tap on any log to view it, then tap the "send" icon in the top right corner to share it using an online service.
+
+If you don't see the log that you've been asked to send in Logviewer, it may be in a different folder or the application may not have created any logs yet. Tell this to the person who asked you for the logs. They should be able to get you the information you need to get back on track.

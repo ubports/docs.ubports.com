@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017, The UBports project (Creative Commons BY-SA 4.0)
+# Copyright (C) 2019, The UBports project (Creative Commons BY-SA 4.0)
 # This file is distributed under the same license as the UBports package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: UBports 1.0\n"
+"Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-30 10:25-0600\n"
+"POT-Creation-Date: 2019-09-02 14:08-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -395,153 +395,150 @@ msgid "Switch release channels"
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:2
-msgid "Run Android applications"
+msgid "Android apps"
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:4
-msgid "`Anbox <https://anbox.io>`_ is a minimal Android container and compatibility layer that allows you to run Android applications on GNU/Linux operating systems."
+msgid "`Anbox <https://anbox.io>`_ is a minimal Android container and compatibility layer that allows you to run Android apps on GNU/Linux operating systems such as UBports."
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:7
-msgid "Anbox is in early development"
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:8
 msgid "When \"host\" is used in this document, it refers to another device which you can connect your Ubuntu Touch device to. Your host device must have ``adb`` and ``fastboot`` installed."
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:11
+#: ../../userguide/dailyuse/anbox.rst:10
 msgid "Supported devices"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:13
+#: ../../userguide/dailyuse/anbox.rst:12
 msgid "Make sure your device is supported:"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:15
+#: ../../userguide/dailyuse/anbox.rst:14
 msgid "Meizu Pro 5 (codename: ``turbo``, name of the boot partition: ``bootimg``)"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:16
+#: ../../userguide/dailyuse/anbox.rst:15
 msgid "Fairphone 2 (codename: ``FP2``, name of the boot partition: ``boot``)"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:17
-msgid "Oneplus one (codename: ``bacon``, name of the boot partition: ``boot``)"
+#: ../../userguide/dailyuse/anbox.rst:16
+msgid "OnePlus One (codename: ``bacon``, name of the boot partition: ``boot``)"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:18
+#: ../../userguide/dailyuse/anbox.rst:17
 msgid "Nexus 5 (codename: ``hammerhead``, name of the boot partition: ``boot``)"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:19
+#: ../../userguide/dailyuse/anbox.rst:18
 msgid "BQ M10 HD (codename: ``cooler``, name of the boot partition: ``boot``)"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:20
+#: ../../userguide/dailyuse/anbox.rst:19
 msgid "BQ M10 FHD (codename: ``frieza``, name of the boot partition: ``boot``)"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:22
+#: ../../userguide/dailyuse/anbox.rst:21
 msgid "You will need the device codename and the name of your boot partition for the installation."
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:25
+#: ../../userguide/dailyuse/anbox.rst:24
 msgid "How to install"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:28
-msgid "Because this feature is in such an early stage of development, the installation is only recommended for experienced users."
+#: ../../userguide/dailyuse/anbox.rst:27
+msgid "Installing Anbox is only recommended for experienced users."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:29
+msgid "Make sure your supported device runs on 16.04 (Anbox doesn't work on 15.04)"
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:30
-msgid "Make sure your supported device runs on 16.04 (anbox doesn't work on 15.04)"
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:31
 msgid "Open a terminal on your host and set some device specific variables by running ``export CODENAME=\"turbo\" && export PARTITIONNAME=\"bootimg\"``, but replace the part between the quotes respectively with the codename and name of the boot partition for your device. See the above list."
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:32
+#: ../../userguide/dailyuse/anbox.rst:31
 msgid "Activate developer mode on your device."
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:33
-msgid "Connect the device to your host and run the following commands from your host (same terminal that you ran the ``export`` command in)::"
+#: ../../userguide/dailyuse/anbox.rst:32
+msgid "Connect the device to your host and run the following commands from your host (same terminal you ran the ``export`` command in)::"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:43
-msgid "Wait for the device to reboot, then run from your host::"
+#: ../../userguide/dailyuse/anbox.rst:42
+msgid "Wait for the device to reboot, then run this from your host::"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:52
-#: ../../userguide/dailyuse/anbox.rst:66
-#: ../../userguide/dailyuse/anbox.rst:87
+#: ../../userguide/dailyuse/anbox.rst:51
+#: ../../userguide/dailyuse/anbox.rst:65
+#: ../../userguide/dailyuse/anbox.rst:86
 msgid "Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the new Android apps to show up."
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:55
-msgid "How to install new apks"
+#: ../../userguide/dailyuse/anbox.rst:54
+msgid "How to install new APKs"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:57
-msgid "Copy the apk to ``/home/phablet/Downloads``, then run the following from your host::"
+#: ../../userguide/dailyuse/anbox.rst:56
+msgid "Copy the APK to ``/home/phablet/Downloads``, then run the following from your host::"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:69
+#: ../../userguide/dailyuse/anbox.rst:68
 msgid "Keep your apps up to date"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:71
-msgid "To keep your apps running the lasted version you can make use of F-Droid or ApkTrack. If you like to install one of the above apps you can find them here:"
+#: ../../userguide/dailyuse/anbox.rst:70
+msgid "To keep your apps up to date you can use of F-Droid or ApkTrack. If you want to install any of the above apps you can find them here:"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:73
+#: ../../userguide/dailyuse/anbox.rst:72
 msgid "F-Droid: https://f-droid.org/"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:74
+#: ../../userguide/dailyuse/anbox.rst:73
 msgid "ApkTrack: https://f-droid.org/packages/fr.kwiatkowski.ApkTrack/"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:77
-msgid "How to uninstall applications"
+#: ../../userguide/dailyuse/anbox.rst:76
+msgid "How to uninstall apps"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:79
+#: ../../userguide/dailyuse/anbox.rst:78
 msgid "This is a example of the app-list installed apps on your device"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:80
+#: ../../userguide/dailyuse/anbox.rst:79
 msgid "To uninstall apps, run ``adb uninstall [APP_ID]`` from your Ubuntu Touch device::"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:90
+#: ../../userguide/dailyuse/anbox.rst:89
+#: ../../userguide/install.rst:22
 msgid "Troubleshooting"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:92
+#: ../../userguide/dailyuse/anbox.rst:91
 msgid "If installing ``anbox-ubuntu-touch`` or ``android-tools-adb`` on the device fails with an error about unsufficient space, try this::"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:103
+#: ../../userguide/dailyuse/anbox.rst:102
 msgid "When you want to install an apk but get the error ``Invalid APK file`` that error could also mean \"file not found\""
 msgstr ""
 
+#: ../../userguide/dailyuse/anbox.rst:104
+msgid "Check that you typed the file name correctly"
+msgstr ""
+
 #: ../../userguide/dailyuse/anbox.rst:105
-msgid "check that you typed the file name correctly"
+msgid "If the APK does not reside in the current folder where you execute adb, you have to specify the full path, e.g. ``/home/phablet/Downloads/my-app.apk`` instead of just ``my-app.apk``"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:106
-msgid "if the apk does not reside in the current folder where you execute adb, you have to specify the full path, e.g. ``/home/phablet/Downloads/my-app.apk`` instead of just ``my-app.apk``"
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:110
+#: ../../userguide/dailyuse/anbox.rst:109
 msgid "Reporting bugs"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:112
-msgid "Please :doc:`report any bugs </contribute/bugreporting>` you come across. Bugs with Ubuntu Touch 16.04 are reported in `the normal Ubuntu Touch tracker <https://github.com/ubports/ubuntu-touch/issues>`_ and issues with anbox are reported on `our downstream fork <https://github.com/ubports/anbox/issues>`_. Thank you!"
+#: ../../userguide/dailyuse/anbox.rst:111
+msgid "Please :doc:`report any bugs </contribute/bugreporting>` you come across. Bugs with Ubuntu Touch 16.04 are reported in `the normal Ubuntu Touch tracker <https://github.com/ubports/ubuntu-touch/issues>`_ and issues with Anbox are reported on `our downstream fork <https://github.com/ubports/anbox/issues>`_. Thank you!"
 msgstr ""
 
 #: ../../userguide/dailyuse/index.rst:2
@@ -561,7 +558,7 @@ msgid "Libertine allows you to use standard desktop applications in Ubuntu Touch
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:6
-msgid "To display and launch applications you need the *Desktop Apps Scope* which is available in the `Open Store <https://open-store.io/app/libertine-scope.ubuntu>`_. To install applications you need to use the commandline as described below."
+msgid "To display and launch applications you need the *Desktop Apps Scope* which is available by swiping from the bottom of your device, and then tapping on the star. To install applications you need to use the commandline as described below."
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:9
@@ -628,110 +625,352 @@ msgstr ""
 msgid "If you have more than one container, then you can use the option ``-i CONTAINER-IDENTIFIER`` to specify for which container you want to perform an operation."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:61
-msgid "Files"
+#: ../../userguide/dailyuse/libertine.rst:60
+msgid "Run desktop application"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:63
-msgid "Libertine applications do have access to these folders:"
-msgstr ""
-
-#: ../../userguide/dailyuse/libertine.rst:65
-msgid "Documents"
-msgstr ""
-
-#: ../../userguide/dailyuse/libertine.rst:66
-msgid "Music"
-msgstr ""
-
-#: ../../userguide/dailyuse/libertine.rst:67
-msgid "Pictures"
+#: ../../userguide/dailyuse/libertine.rst:62
+msgid "To start a graphical application from the command line, for example ``gedit``, run in a terminal::"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:68
-msgid "Downloads"
+msgid "Files"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:69
-msgid "Videos"
+#: ../../userguide/dailyuse/libertine.rst:70
+msgid "Libertine applications do have access to these folders:"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:72
-msgid "Tips"
+msgid "Documents"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:73
+msgid "Music"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:74
+msgid "Pictures"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:75
-msgid "Locations"
+msgid "Downloads"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:77
-msgid "For every container you create there will be two directories created:"
+#: ../../userguide/dailyuse/libertine.rst:76
+msgid "Videos"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:79
+msgid "Tips"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:82
+msgid "Locations"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:84
+msgid "For every container you create there will be two directories created:"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:86
 msgid "A root directory ``~/.cache/libertine-container/CONTAINER-IDENTIFIER/rootfs/`` and"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:80
+#: ../../userguide/dailyuse/libertine.rst:87
 msgid "a user directory ``~/.local/share/libertine-container/user-data/CONTAINER-IDENTIFIER/``"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:83
+#: ../../userguide/dailyuse/libertine.rst:90
 msgid "Shell access"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:85
+#: ../../userguide/dailyuse/libertine.rst:92
 msgid "There are 2 options for executing commands inside the container."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:87
+#: ../../userguide/dailyuse/libertine.rst:94
 msgid "**The first option** is based on ``libertine-container-manager exec``. It lets you run your commands as root. The drawback is that the container is not completely set up. So far we know that the `folders mentioned above (Documents, Music, ...) are not mounted <https://askubuntu.com/questions/831830/libertine-terminal-applications-how-to-access-to-the-real-home-dir#comment1273744_833984/>`_ i.e., the ``/home/phablet/`` directory is empty. Likewise the directory referenced in ``TMPDIR`` is not available what may lead to problems with software that tries to create temporary files or directories. You may use this option e.g., for installing packages."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:90
-#: ../../userguide/dailyuse/libertine.rst:104
+#: ../../userguide/dailyuse/libertine.rst:97
+#: ../../userguide/dailyuse/libertine.rst:111
 msgid "To execute a command you can use the following pattern::"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:94
-#: ../../userguide/dailyuse/libertine.rst:108
+#: ../../userguide/dailyuse/libertine.rst:101
+#: ../../userguide/dailyuse/libertine.rst:115
 msgid "For example run::"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:98
+#: ../../userguide/dailyuse/libertine.rst:105
 msgid "To get a shell into your container as ``root`` run::"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:102
+#: ../../userguide/dailyuse/libertine.rst:109
 msgid "**The second option** is based on ``libertine-launch``. It will execute your commands as user phablet in a completely set up container. So you may use this option to modify your files using installed packages."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:112
+#: ../../userguide/dailyuse/libertine.rst:119
 msgid "To get a shell as user ``phablet`` run::"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:117
+#: ../../userguide/dailyuse/libertine.rst:124
 msgid "When you launch bash in this way you will not get any specific feedback to confirm that you are now *inside* the container. You can check ``ls /`` to confirm for yourself that you are inside the container. The listing of ``ls /`` will be different inside and outside of the container."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:120
+#: ../../userguide/dailyuse/libertine.rst:127
+msgid "Accessing SD card"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:129
+msgid "In order to access your SD-card or any other part of the regular filesystem from inside your libertine container you must create a bind mount."
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:131
+msgid "In order to add a bind mount use::"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:135
+msgid "You can also make deep links in case you only want parts of your SD-card available in the container. In this case just the entire path to the directory you want to bind mount::"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:139
+msgid "This will not allow the container access to any of the directories earlier in the path for anything other than accessing your mounted directory."
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:141
+msgid "In order to use the SD-card as extra space for your container, make sure first to format it using ext4 or similar. There is a mis-feature in udisk2 that mounts SD-cards (showexec) that ensures only files ending in .bat, .exe or .com can be executed from the drive if it is (v)fat formatted. This has been changed in other distributions allowing any file to have execute priviliges, but not ubuntu. The reccomended workaround is to add a udev rule to control how to mount a card with a given id, but since the udev rules are on the read only port on touch, this is not possible."
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:145
 msgid "Shortcuts"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:122
+#: ../../userguide/dailyuse/libertine.rst:147
 msgid "If you want, you can add aliases for command line tools. Add lines like the following ones to your ``~/.bash_aliases``::"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:128
+#: ../../userguide/dailyuse/libertine.rst:153
 msgid "Background"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:130
+#: ../../userguide/dailyuse/libertine.rst:155
 msgid "A display server coordinates input and output of an operating system. Most Linux distributions today use the X server. Ubuntu Touch does not use X, but  a new display server called Mir. This means that standard X applications are not directly compatible with Ubuntu Touch. A compatibility layer called XMir resolves this. Libertine relies on XMir to display desktop applications."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:132
+#: ../../userguide/dailyuse/libertine.rst:157
 msgid "Another challenge is that Ubuntu Touch system updates are released as OTA images. A consequence of this is that the root filesystem is read only. Libertine provides a container with a read-write filesystem to allow the installation of regular Linux desktop applications."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:2
+msgid "Using location services"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:4
+msgid "Location services in Ubuntu Touch allow apps to access your current location. Using this data, apps can `offer turn-by-turn navigation <https://open-store.io/app/navigator.costales>`__, `track your exercise paths <https://open-store.io/app/activitytracker.cwayne18>`__, `locate public transport near you <https://open-store.io/app/transport.zubozrout>`__, and more."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:6
+msgid "The location services built in to Ubuntu Touch are designed to protect your privacy -- you choose to permit or deny apps access to this data. Apps may only access your location data when the device screen is on and the app is in use."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:9
+msgid "Checking if location services are enabled"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:11
+msgid "The Location Indicator is displayed whenever location services are enabled. Normally, this indicator will appear to be dark."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:15
+msgid "The Location Indicator, showing location enabled but not in use"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:17
+msgid "If an app is accessing location data, the Location Indicator brightens."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:21
+msgid "The Location Indicator, showing location enabled and in use"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:26
+msgid "Accessing location services settings"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:28
+msgid "There are several ways to access settings related to location services in Ubuntu Touch."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:31
+msgid "Open location quick settings"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:33
+msgid "The Location Indicator contains quick settings related to location services, including a switch to turn services on or off."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:37
+msgid "To access these settings, press on the Location Indicator and pull down toward the bottom of the screen."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:39
+msgid "If location services are disabled, you can access the location quick settings by pressing on any other indicator and pulling down. Then, scroll through the icons at the top of the screen to find Location. Select Location to open the quick settings."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:42
+msgid "Open location settings in the settings app"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:44
+msgid "The system settings app can be used to control location services. There are more controls in the system settings app than in the Location Indicator."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:48
+msgid "There are two ways to access location services controls in the system settings app."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:51
+#: ../../userguide/dailyuse/location.rst:71
+msgid "Quick settings"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:53
+msgid "`Open location quick settings`_, then select ``Location settings...``."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:56
+#: ../../userguide/dailyuse/location.rst:76
+msgid "System settings app"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:58
+msgid "Launch the ``System Settings`` app. Select ``Security & Privacy``, then select ``Location``."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:62
+msgid "Enabling or disabling location services"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:64
+msgid "If location services are on, apps which you have allowed access to your location data may request your current location. Location services are enabled by default on Ubuntu Touch."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:66
+msgid "If location services are off, apps will not be able to access your current location."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:68
+msgid "There are several ways to enable or disable location services in Ubuntu Touch."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:73
+msgid "`Open location quick settings`_. Select the ``Location detection`` switch to enable or disable location services."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:78
+msgid "`Open location settings in the settings app`_. Under ``Let the device detect your location:``, select the appropriate option:"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:80
+msgid "``Using GPS`` turns on location services."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:81
+msgid "``Not at all`` turns off location services."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:84
+msgid "Allowing apps access to location data"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:86
+msgid "Ubuntu Touch allows you to allow or deny apps access to your location data. This decision is presented the first time the app tries to access your current location. You can change your decision later."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:88
+msgid "An app will show the location permission request the first time it tries to access your current location."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:93
+msgid "Select ``Allow`` to give the app access to your current location. Select ``Don't Allow`` to deny the app access to your current location. Some app features may not work correctly if you select ``Don't Allow``."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:96
+msgid "Changing your permissions"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:98
+msgid "You can change your decision to allow an app access to your location data. This is useful when you gave an app access to your location but you'd like to deny access, or if you denied access but would like to give access."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:100
+msgid "There are several ways to find these controls."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:103
+msgid "Location settings"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:105
+msgid "`Open location settings in the settings app`_. All of the apps which have requested access to your location are listed under ``Let apps access this location:``. Toggle the switch next to an app \"on\" to allow it to access your location data. Toggle the switch \"off\" to deny access."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:108
+msgid "App permission settings"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:110
+msgid "Launch the ``System Settings`` app. Select ``Security & Privacy``, then select ``App permissions``, followed by ``Location``. All of the apps which have requested access to your location are listed. Toggle the switch next to an app \"on\" to allow it to access your location data. Toggle the switch \"off\" to deny access."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:113
+msgid "Using apps with location services"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:115
+msgid "Apps will be able to access your current location after they are granted access to location data. However, there are some things to note while using apps with location services."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:118
+msgid "Time to first fix"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:120
+msgid "A \"fix\" is a data point generated by GPS hardware that contains its current location and the expected accuracy of that location. GPS hardware is rated by how long it takes to return one of these data points after the device is activated. This rating is called \"`Time To First Fix <https://en.wikipedia.org/wiki/Time_to_first_fix>`_,\" or TTFF."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:122
+msgid "A device with a mobile data connection should take one to four minutes to receive its first fix. If location services have not been used for a long time *and* the device does not have a mobile data connection, the first fix can take up to an hour. To prevent this from causing problems for you, follow these instructions:"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:126
+msgid "Do not leave your device in direct sunlight. The heat can damage the device."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:128
+msgid "Disable ``Lock when idle`` in the Battery settings"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:129
+msgid "Download an app which uses location services and cause it to start accessing your location data."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:130
+msgid "Leave your device near a window but out of direct sunlight. To reduce energy consumption, turn the screen brightness down."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:132
+msgid "After 20 minutes to an hour, your device should display your current location. You can now close the app and enable ``Lock when idle``. Future attempts to aquire your location should now take one to four minutes."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:135
+msgid "App suspension"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:137
+msgid "Apps are suspended whenever they are not in the foreground or the device is locked. When an app is suspended, it cannot receive location data. For this reason, apps will not be able to track your location whenever they are not in use or the device is locked."
 msgstr ""
 
 #: ../../userguide/install.rst:2
@@ -739,7 +978,7 @@ msgid "Install Ubuntu Touch"
 msgstr ""
 
 #: ../../userguide/install.rst:4
-msgid "Installing Ubuntu Touch is easy, and a lot of work has gone in to making the installation process less intimidating to less technical users. The UBports Installer is a nice graphical tool that you can use to install Ubuntu Touch on a `supported device <https://ubuntu-touch.io/devices>`_ from your Linux, Mac or Windows computer."
+msgid "Installing Ubuntu Touch is easy, and a lot of work has gone in to making the installation process less intimidating to the average user. The UBports Installer is a nice graphical tool that you can use to install Ubuntu Touch on a `supported device <https://ubuntu-touch.io/devices>`_ from your `Linux <https://snapcraft.io/ubports-installer>`_, `Mac <https://devices.ubuntu-touch.io/installer/dmg>`_ or `Windows <https://devices.ubuntu-touch.io/installer/exe>`_ computer. For more experienced users, we also have manual installation instructions for every device `on the devices page <https://devices.ubuntu-touch.io/>`_."
 msgstr ""
 
 #: ../../userguide/install.rst:7
@@ -747,138 +986,218 @@ msgid "If you're switching your device over from Android, you will not be able t
 msgstr ""
 
 #: ../../userguide/install.rst:9
-msgid "Go to `the download page <https://github.com/ubports/ubports-installer/releases/latest>`_ and download the version of the installer for your operating system:"
+msgid "You can `Download the UBports Installer from GitHub <https://github.com/ubports/ubports-installer/releases/latest>`_. The following packages are available:"
 msgstr ""
 
 #: ../../userguide/install.rst:11
-msgid "Windows: ``ubports-installer-<version-number>.exe``"
+msgid "`Windows <https://devices.ubuntu-touch.io/installer/exe>`_: ``ubports-installer-<version-number>.exe``"
 msgstr ""
 
 #: ../../userguide/install.rst:12
-msgid "macOS: ``ubports-installer-<version-number>.dmg``"
+msgid "`macOS <https://devices.ubuntu-touch.io/installer/dmg>`_: ``ubports-installer-<version-number>.dmg``"
 msgstr ""
 
 #: ../../userguide/install.rst:13
-msgid "Ubuntu or Debian: ``ubports-installer-<version-number>.deb``"
+msgid "`Ubuntu or Debian <https://devices.ubuntu-touch.io/installer/deb>`_: ``ubports-installer-<version-number>.deb``"
 msgstr ""
 
 #: ../../userguide/install.rst:14
-msgid "Other Linux distributions: ``ubports-installer-<version-number>.snap`` or ``ubports-installer-<version-number>.AppImage``"
+msgid "`Other Linux distributions (snap) <https://devices.ubuntu-touch.io/installer/snap>`_: ``ubports-installer-<version-number>.snap``"
 msgstr ""
 
-#: ../../userguide/install.rst:16
+#: ../../userguide/install.rst:15
+msgid "`Other Linux distributions (AppImage) <https://devices.ubuntu-touch.io/installer/appimage>`_: ``ubports-installer-<version-number>.AppImage``"
+msgstr ""
+
+#: ../../userguide/install.rst:17
 msgid "Start the installer and follow the on-screen instructions that will walk you through the installation process. That's it! Have fun exploring Ubuntu Touch!"
 msgstr ""
 
-#: ../../userguide/install.rst:18
+#: ../../userguide/install.rst:19
 msgid "If you're an experienced android developer and want to help us bring Ubuntu Touch to more devices, visit the :doc:`porting section </porting/introduction>`."
 msgstr ""
 
-#: ../../userguide/install.rst:21
-msgid "Install on legacy Android devices"
-msgstr ""
-
-#: ../../userguide/install.rst:23
-msgid "While the installation process is fairly simple on most devices, some legacy Bq and Meizu devices require special steps. This part of the guide does not apply to other devices."
+#: ../../userguide/install.rst:24
+msgid "If you need help, you can join UBports' support channels on `telegram <https://t.me/WelcomePlus>`_ or `matrix <https://matrix.to/#/!KwdniMNeTmClpgHkND:matrix.org?via=matrix.org&via=ubports.chat&via=disroot.org>`_ or ask a question `in the forum <https://forums.ubports.com/>`_ or on `askubuntu <https://askubuntu.com>`_. If you believe that the UBports Installer is not working correctly, you can also `file a new issue <https://github.com/ubports/ubports-installer/issues/new>`_ to help us solve the problem."
 msgstr ""
 
 #: ../../userguide/install.rst:27
-msgid "This is more or less uncharted territory. If your device's manufacturer does not want you to install an alternative operating system, there's not a lot we can do about it. The instructions below should only be followed by experienced users. While we appreciate that lots of people want to use our OS, flashing a device with OEM tools shouldn't be done without a bit of know-how and plenty of research."
+msgid "Connection lost during installation"
 msgstr ""
 
 #: ../../userguide/install.rst:29
-msgid "Meizu devices are pretty much stuck on Flyme. While the MX4 can be flashed successfully in some cases, the Pro5 is Exynos-based and has its own headaches."
+msgid "Try a different USB cable and a different USB port on your computer. Cheap and old cables tend to lose connection during the installation."
 msgstr ""
 
-#: ../../userguide/install.rst:33
-msgid "BE VERY CAREFUL! You are responsible for your own actions!"
+#: ../../userguide/install.rst:32
+msgid "Windows Defender prevents Installer from starting"
 msgstr ""
 
-#: ../../userguide/install.rst:35
-msgid "Disconnect all devices and non-essential peripherals from your PC. Charge your device on a wall-charger (not your PC) to at least 40 percent"
+#: ../../userguide/install.rst:34
+msgid "We have contacted Microsoft about this problem, but they seem to think it's `enjoyable <https://twitter.com/Windows/status/1014984163433295875>`__. To dismiss the warning, click on \"More Information\", then select \"Run anyway\"."
 msgstr ""
 
-#: ../../userguide/install.rst:36
-msgid "Download the Ubuntu Touch ROM for your device:"
-msgstr ""
-
-#: ../../userguide/install.rst:38
-msgid "`Bq E4.5 <http://cdimage.ubports.com/ubports-installer/krillin/e45.zip>`_ (*krillin*)"
-msgstr ""
-
-#: ../../userguide/install.rst:39
-msgid "`Bq E5 HD <https://storage.googleapis.com/otas/2014/Smartphones/Aquaris_E5_HD/Ubuntu/VEGETA01A-S11A_BQ_L100EN_2017_170207.zip>`_ (*vegetahd*)"
+#: ../../userguide/install.rst:37
+msgid "Device not detected"
 msgstr ""
 
 #: ../../userguide/install.rst:40
-msgid "`Bq M10 HD <https://storage.googleapis.com/otas/2015/Tablets/Freezer/Ubuntu/OTA_13_FW_version/cooler-image-stable-6.zip>`_ (*cooler*)"
-msgstr ""
-
-#: ../../userguide/install.rst:41
-msgid "`Bq M10 FHD <https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/Ubuntu/OTA_15/frieza-image-stable-8.zip>`_ (*frieza*)"
+msgid "Custom platform tools"
 msgstr ""
 
 #: ../../userguide/install.rst:42
-msgid "`Meizu MX4 <http://people.canonical.com/~alextu/tangxi/684.zip>`_ (*arale*)"
+msgid "You might want to try using custom adb and fastboot binaries. For that, tick the \"Custom tools\" checkbox in the options and specify the path to adb and fastboot in the text-boxes below."
 msgstr ""
 
-#: ../../userguide/install.rst:44
-msgid "Download `SP flash tool <https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/Ubuntu/SP_Flash_Tool_exe_Linux_v5.1612.00.100.zip>`_ for Linux."
+#: ../../userguide/install.rst:45
+msgid "Virtual Machine"
 msgstr ""
 
-#: ../../userguide/install.rst:46
-msgid "On Ubuntu 17.10, there are issues with flash_tool loading the shared library 'libpng12', so this can be used as a workaround:"
+#: ../../userguide/install.rst:47
+msgid "Make sure the virtual machine is allowed to access the USB port."
 msgstr ""
 
-#: ../../userguide/install.rst:54
-msgid "You will also need to use `the latest version of the tool <https://spflashtool.com/download/SP_Flash_Tool_v5.1744_Linux.zip>`_."
+#: ../../userguide/install.rst:50
+msgid "Windows ADB drivers"
 msgstr ""
 
-#: ../../userguide/install.rst:56
-msgid "Extract the zip files"
+#: ../../userguide/install.rst:52
+msgid "Install the `universal adb driver <http://adb.clockworkmod.com/>`_ and reboot your computer."
+msgstr ""
+
+#: ../../userguide/install.rst:55
+msgid "Fairphone 2 Vendor-ID"
 msgstr ""
 
 #: ../../userguide/install.rst:57
-msgid "Start the tool with ``sudo``"
-msgstr ""
-
-#: ../../userguide/install.rst:58
-msgid "Select the ``*Android_scatter.txt`` file from the archive you downloaded in the first step as the scatter-loading file"
-msgstr ""
-
-#: ../../userguide/install.rst:59
-msgid "Choose \"Firmware Upgrade\""
+msgid "Run ``echo 0x2ae5 >> ~/.android/adb_usb.ini`` in the terminal and restart the installer. This does not affect the snap package."
 msgstr ""
 
 #: ../../userguide/install.rst:60
-msgid "Double-check you chose \"Firmware Upgrade\" and not \"Download\" or \"Format All\""
+msgid "Missing udev-rules"
+msgstr ""
+
+#: ../../userguide/install.rst:62
+msgid "If the device not detected on Linux and packages other than snap, you might be missing **udev-rules**."
 msgstr ""
 
 #: ../../userguide/install.rst:64
+msgid "See if ``/etc/udev/rules.d/51-android.rules`` exists and contains the rules below. If not, add them to the file and run ``sudo service udev restart`` or ``sudo udevadm control --reload-rules && udevadm trigger``."
+msgstr ""
+
+#: ../../userguide/install.rst:104
+msgid "Other issues"
+msgstr ""
+
+#: ../../userguide/install.rst:106
+msgid "If the troubleshooting tips do not work, you might also try following the manual installation instructions for your device `on the devices page <https://devices.ubuntu-touch.io/>`_."
+msgstr ""
+
+#: ../../userguide/install.rst:109
+msgid "Install on legacy Android devices"
+msgstr ""
+
+#: ../../userguide/install.rst:111
+msgid "While the installation process is fairly simple on most devices, some legacy Bq and Meizu devices require special steps. This part of the guide does not apply to other devices."
+msgstr ""
+
+#: ../../userguide/install.rst:115
+msgid "This is more or less uncharted territory. If your device's manufacturer does not want you to install an alternative operating system, there's not a lot we can do about it. The instructions below should only be followed by experienced users. While we appreciate that lots of people want to use our OS, flashing a device with OEM tools shouldn't be done without a bit of know-how and plenty of research."
+msgstr ""
+
+#: ../../userguide/install.rst:117
+msgid "Meizu devices are pretty much stuck on Flyme. While the MX4 can be flashed successfully in some cases, the Pro5 is Exynos-based and has its own headaches."
+msgstr ""
+
+#: ../../userguide/install.rst:121
+msgid "BE VERY CAREFUL! You are responsible for your own actions!"
+msgstr ""
+
+#: ../../userguide/install.rst:123
+msgid "Disconnect all devices and non-essential peripherals from your PC. Charge your device on a wall-charger (not your PC) to at least 40 percent"
+msgstr ""
+
+#: ../../userguide/install.rst:124
+msgid "Download the Ubuntu Touch ROM for your device:"
+msgstr ""
+
+#: ../../userguide/install.rst:126
+msgid "`Bq E4.5 <http://cdimage.ubports.com/ubports-installer/krillin/e45.zip>`_ (*krillin*)"
+msgstr ""
+
+#: ../../userguide/install.rst:127
+msgid "`Bq E5 HD <https://storage.googleapis.com/otas/2014/Smartphones/Aquaris_E5_HD/Ubuntu/VEGETA01A-S11A_BQ_L100EN_2017_170207.zip>`_ (*vegetahd*)"
+msgstr ""
+
+#: ../../userguide/install.rst:128
+msgid "`Bq M10 HD <https://storage.googleapis.com/otas/2015/Tablets/Freezer/Ubuntu/OTA_13_FW_version/cooler-image-stable-6.zip>`_ (*cooler*)"
+msgstr ""
+
+#: ../../userguide/install.rst:129
+msgid "`Bq M10 FHD <https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/Ubuntu/OTA_15/frieza-image-stable-8.zip>`_ (*frieza*)"
+msgstr ""
+
+#: ../../userguide/install.rst:130
+msgid "`Meizu MX4 <http://people.canonical.com/~alextu/tangxi/684.zip>`_ (*arale*)"
+msgstr ""
+
+#: ../../userguide/install.rst:132
+msgid "Download `SP flash tool <https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/Ubuntu/SP_Flash_Tool_exe_Linux_v5.1612.00.100.zip>`_ for Linux."
+msgstr ""
+
+#: ../../userguide/install.rst:134
+msgid "On Ubuntu 17.10, there are issues with flash_tool loading the shared library 'libpng12', so this can be used as a workaround:"
+msgstr ""
+
+#: ../../userguide/install.rst:142
+msgid "You will also need to use `the latest version of the tool <https://spflashtool.com/download/SP_Flash_Tool_v5.1744_Linux.zip>`_."
+msgstr ""
+
+#: ../../userguide/install.rst:144
+msgid "Extract the zip files"
+msgstr ""
+
+#: ../../userguide/install.rst:145
+msgid "Start the tool with ``sudo``"
+msgstr ""
+
+#: ../../userguide/install.rst:146
+msgid "Select the ``*Android_scatter.txt`` file from the archive you downloaded in the first step as the scatter-loading file"
+msgstr ""
+
+#: ../../userguide/install.rst:147
+msgid "Choose \"Firmware Upgrade\""
+msgstr ""
+
+#: ../../userguide/install.rst:148
+msgid "Double-check you chose \"Firmware Upgrade\" and not \"Download\" or \"Format All\""
+msgstr ""
+
+#: ../../userguide/install.rst:152
 msgid "If you select DOWNLOAD rather than FIRMWARE UPGRADE, you will end up with a useless brick rather than a fancy Ubuntu Touch device. Be sure to select FIRMWARE UPGRADE."
 msgstr ""
 
-#: ../../userguide/install.rst:66
+#: ../../userguide/install.rst:154
 msgid "Turn your device completely off, but do not connect it yet"
 msgstr ""
 
-#: ../../userguide/install.rst:67
+#: ../../userguide/install.rst:155
 msgid "Press the button labeled \"Download\""
 msgstr ""
 
-#: ../../userguide/install.rst:68
+#: ../../userguide/install.rst:156
 msgid "Perform a final sanity-check that you selected the \"Firmware Upgrade\" option, not \"Download\""
 msgstr ""
 
-#: ../../userguide/install.rst:69
+#: ../../userguide/install.rst:157
 msgid "Make sure your device is off and connect it to your PC. Don't use a USB 3.0 port, since that's known to cause communication issues with your device."
 msgstr ""
 
-#: ../../userguide/install.rst:70
+#: ../../userguide/install.rst:158
 msgid "`Magic <https://en.wikipedia.org/wiki/Clarke's_three_laws>`_ happens. Your device will boot into a super old version of Ubuntu Touch."
 msgstr ""
 
-#: ../../userguide/install.rst:71
+#: ../../userguide/install.rst:159
 msgid "Congratulations! Your device will now boot into a very old version of Ubuntu Touch. You can now use the UBports Installer to proceed."
 msgstr ""
 

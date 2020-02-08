@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017, The UBports project (Creative Commons BY-SA 4.0)
+# Copyright (C) 2019, The UBports project (Creative Commons BY-SA 4.0)
 # This file is distributed under the same license as the UBports package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: UBports 1.0\n"
+"Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-30 10:25-0600\n"
+"POT-Creation-Date: 2019-04-08 17:32-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgid "Introduction"
 msgstr ""
 
 #: ../../about/introduction.rst:4
-msgid "This is the documentation for the UBports project. Our goal is to create an open-source (GPL if possible) mobile operating system that converges and respects your freedom."
+msgid "This is the documentation for the UBports project. Our goal is to create a Free and open-source (GPL if possible) mobile operating system that converges and respects your freedom."
 msgstr ""
 
 #: ../../about/introduction.rst:7
@@ -29,11 +29,11 @@ msgid "About UBports"
 msgstr ""
 
 #: ../../about/introduction.rst:9
-msgid "The UBports project was founded by Marius Gripsgard in 2015 and in its infancy was a place where developers could share ideas and educate each other in hopes of bringing the Ubuntu Touch platform to more and more devices."
+msgid "The UBports project was founded by Marius Gripsgard in 2015 and in its infancy was a place where developers could share ideas and educate each other in hopes of bringing the Ubuntu Touch platform to more mobile devices."
 msgstr ""
 
 #: ../../about/introduction.rst:11
-msgid "After Canonical suddenly announced `their plans to terminate support of Ubuntu Touch <https://insights.ubuntu.com/2017/04/05/growing-ubuntu-for-cloud-and-iot-rather-than-phone-and-convergence/>`_ in April of 2017, UBports and its sister projects began work on the open-source code, maintaining and expanding its possibilities for the future."
+msgid "After Canonical suddenly announced `their plans to terminate support of Ubuntu Touch <https://insights.ubuntu.com/2017/04/05/growing-ubuntu-for-cloud-and-iot-rather-than-phone-and-convergence/>`_ in April 2017, UBports and its sister projects began work on the open-source code, maintaining and expanding its possibilities for the future."
 msgstr ""
 
 #: ../../about/introduction.rst:14
@@ -41,7 +41,7 @@ msgid "About the Documentation"
 msgstr ""
 
 #: ../../about/introduction.rst:16
-msgid "This documentation is always improving thanks to the members of the UBports community. It is written in ReStructuredText and converted into this readable form by `Sphinx <http://www.sphinx-doc.org/en/stable/>`_, `ReCommonMark <http://recommonmark.readthedocs.io/en/latest/>`_, and `Read the Docs <https://readthedocs.io>`_. You can start contributing by checking out the :doc:`Documentation intro </contribute/documentation>`."
+msgid "This documentation is always improving thanks to the members of the UBports community. It is written in ReStructuredText and converted into this readable form by `Sphinx <http://www.sphinx-doc.org/en/stable/>`_, `ReCommonMark <http://recommonmark.readthedocs.io/en/latest/>`_, and `Read the Docs <https://readthedocs.io>`_. You can start contributing by checking out the :doc:`Documentation contribution document </contribute/documentation>`."
 msgstr ""
 
 #: ../../about/introduction.rst:18
@@ -185,7 +185,7 @@ msgid "**In Development**: A patch is in development. Usually means that a devel
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:41
-msgid "**Quality Assurance**: The patch is completed and has passed initial testing. The QA team will now review it and provide feedback. If problems are found, the issue is moved back to “Accepted”."
+msgid "**Quality Assurance**: The patch is completed and has passed initial testing. The QA team will now review it and provide feedback. If problems are found, the issue is moved back to \"Accepted\"."
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:42
@@ -193,7 +193,7 @@ msgid "**Release Candidate**: The patch has passed QA and is ready for release. 
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:43
-msgid "**None (removed from the project)**: If the issue is open and labeled \"help wanted\", community contributions are required to resolve the issue. If it's closed, that means that either a patch has been released on the stable channel (a comment on the issue should link to the patch) or the issue has been rejected (labeled “wontfix”)."
+msgid "**None (removed from the project)**: If the issue is open and labeled \"help wanted\", community contributions are required to resolve the issue. If it's closed, that means that either a patch has been released on the stable channel (a comment on the issue should link to the patch) or the issue has been rejected (labeled \"wontfix\")."
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:46
@@ -317,11 +317,11 @@ msgid "The affected *Team* will triage the issue and either reject (label **wont
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:121
-msgid "Once a *developer* is assigned and starts working on the issue, it is moved to “In Development”. As soon as they have something to show for, the issue is closed and automatically moved to “Quality Assurance” for feedback from the QA team. If necessary, the developer will provide hints on how to test his patch in a comment on the issue."
+msgid "Once a *developer* is assigned and starts working on the issue, it is moved to \"In Development\". As soon as they have something to show for, the issue is closed and automatically moved to \"Quality Assurance\" for feedback from the QA team. If necessary, the developer will provide hints on how to test his patch in a comment on the issue."
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:122
-msgid "The *QA-Team* tests the fix on all devices and provides feedback to the developer. If problems are found, the issue is re-opened and goes back to “Accepted”, else it’s moved to “Release Candidate” to be included in the next release."
+msgid "The *QA-Team* tests the fix on all devices and provides feedback to the developer. If problems are found, the issue is re-opened and goes back to \"Accepted\", else it’s moved to \"Release Candidate\" to be included in the next release."
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:123

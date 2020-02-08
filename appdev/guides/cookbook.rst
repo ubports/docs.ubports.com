@@ -7,6 +7,7 @@ Unofficial resources
 In this section you will find links to external resources about creating applications for Ubuntu Touch.
 
 * `Ubuntu Touch programming book <https://www.gitbook.com/book/mimecar/ubuntu-touch-programming-course/details>`__
+* `Application Templates by fulvio <https://github.com/fulvio999/ubports_app_templates>`__
 
 Playground
 ----------
@@ -19,3 +20,8 @@ In a completely free and open source community, it is natural to have community 
 * `Free Pascal development for Ubuntu Touch <http://kriscode.blogspot.tw/2016/09/freepascal-development-for-ubuntu-phone.html>`__
 * `Lazarus development for Ubuntu Touch <http://kriscode.blogspot.tw/2016/10/lazarus-development-for-ubuntu-phone.html>`__
 * `Geany on Ubuntu Touch device as text editor, source code editor, debugger and compiler for multiple languages <http://kriscode.blogspot.tw/2017/10/geany-on-ubuntu-touch-device-as-text.html>`__
+* `Publish your existing Qt QML app to Ubuntu Touch using QMake (Video) <https://youtu.be/ehqlwRNrfO0>`__
+* `Publish your existing Qt QML app to Ubuntu Touch using CMake (Video) <https://youtu.be/c2sq6aLeGec>`__
+* `Getting started with Clickable (Video) <https://youtu.be/TE-s5522v0Y>`__
+* `Content Hub overview (Video) <https://youtu.be/AihwC2sPIk0>`__
+* `Import files to your app with Content Hub (Video) <https://youtu.be/q6zzM16jw1U>`__
