@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-08 17:32-0500\n"
-"PO-Revision-Date: 2020-02-08 19:21+0000\n"
-"Last-Translator: Eugene <uralhistory@gmail.com>\n"
+"PO-Revision-Date: 2020-02-22 12:21+0000\n"
+"Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-porting/ru/>\n"
 "Language: ru\n"
@@ -32,24 +32,37 @@ msgstr ""
 "для Ubuntu Touch."
 
 #: ../../porting/building-halium-boot.rst:7
+#, fuzzy
 msgid "Fix mounts"
-msgstr ""
+msgstr "Настройка точек монтирования"
 
 #: ../../porting/building-halium-boot.rst:9
 msgid "Halium-boot's ``mount`` is not aware of SELinux contexts. If your device's ``fstab`` file includes any contexts, the partition that they are on will fail to mount and your port will not work correctly."
 msgstr ""
+"`` Mount`` в Halium-boot не знает контекстов SELinux. Если файл `` fstab`` "
+"вашего устройства содержит какие-либо контексты,  то раздел, на котором они "
+"находятся, не будет смонтирован, и сборка будет работать неправильно."
 
 #: ../../porting/building-halium-boot.rst:11
 msgid "The first step to this process is figuring out where your fstab actually is. For most, this is inside ``BUILDDIR/device/MANUFACTUER/CODENAME/rootdir/etc`` and it is named either ``fstab.qcom`` or ``fstab.devicename``. Open the file for editing."
 msgstr ""
+"Первый шаг к этому процессу - выяснить, где на самом деле находится ваш "
+"fstab. В большинстве случаев, его можно найти в директории ``BUILDDIR/device/"
+"MANUFACTURER/CODENAME/rootdir/etc`` и называется либо ``fstab.qcom``, либо "
+"``fstab.devicename``. Откройте файл для редактирования."
 
 #: ../../porting/building-halium-boot.rst:13
 msgid "If the type of the 'data' or 'userdata' partition is ``f2fs``, it is required to change it to ``ext4``."
 msgstr ""
+"Если установлен тип раздела 'data' или 'userdata' - ``f2fs``, его необходимо "
+"изменить на ``ext4``."
 
 #: ../../porting/building-halium-boot.rst:15
 msgid "With the file open, remove all ``context=`` options from all block devices in the file. The option will start at the text ``context=`` and end at the comma following it."
 msgstr ""
+"Откройте файл и удалите все опции ``context = `` из всех блоков устройств в "
+"файле. Опция начинается с текста ``context = `` и заканчивается запятой "
+"после нее."
 
 #: ../../porting/building-halium-boot.rst:17
 msgid "For example, the line ``ro,nosuid,nodev,context=u:object_r:firmware_file:s0,barrier=0`` should become ``ro,nosuid,nodev,barrier=0``"
@@ -69,703 +82,975 @@ msgstr "Отредактируйте конфигурационный файл �
 #: ../../porting/building-halium-boot.rst:24
 msgid "Ubuntu Touch requires a slightly different kernel config than Halium, including enabling Apparmor. Luckily, we have a nice script for this purpose, ``check-kernel-config``. It's included in the halium-boot repository. Simply run it on your config as follows::"
 msgstr ""
+"Ubuntu Touch требует немного другой конфигурации ядра, чем Halium, в том "
+"числе активацию Apparmor. К счастью, у нас для этого есть скрипт``check-"
+"kernel-config``. Он включен в репозиторий Halium-boot. Просто запустите его "
+"в вашей конфигурации следующим способом:"
 
 #: ../../porting/building-halium-boot.rst:28
 msgid "You may have to do this twice. It will likely fix things both times. Then, run the script without the ``-w`` flag to see if there are any more errors. If there are, fix them manually. Once finished, run the script without the ``-w`` flag one more time to make sure everything is correct."
 msgstr ""
+"Может быть, скрипт придётся запустить дважды. Скорее всего, только за два "
+"раза будут сделаны необходимые изменения. Затем запустите скрипт без флага ``"
+" -w``, чтобы увидеть, есть ли еще ошибки. Если есть, исправьте их вручную. "
+"После завершения запустите скрипт без флага `` -w`` еще раз, чтобы "
+"убедиться, что все правильно."
 
 #: ../../porting/building-halium-boot.rst:31
 msgid "Build the image"
-msgstr ""
+msgstr "Сборка готового образа"
 
 #: ../../porting/building-halium-boot.rst:33
 msgid "Once halium-boot is in place, you can build it quite simply. You will also need to rebuild system.img due to our changes."
 msgstr ""
+"После установки Halium-Boot довольно просто создать готовую сборку. Вам "
+"также нужно будет пересобрать system.img из-за внесённых изменений."
 
 #: ../../porting/building-halium-boot.rst:35
 msgid "``cd`` to your Halium BUILDDIR"
-msgstr ""
+msgstr "Командой ``cd`` перейдите в директорию Halium BUILDDIR"
 
 #: ../../porting/building-halium-boot.rst:36
 msgid "``source build/envsetup.sh``"
-msgstr ""
+msgstr "``source build/envsetup.sh``"
 
 #: ../../porting/building-halium-boot.rst:37
 msgid "Run ``breakfast`` or ``lunch``, whichever you use for your device"
-msgstr ""
+msgstr "Запустите ``breakfast`` или ``lunch``, это зависит от Вашего устройства"
 
 #: ../../porting/building-halium-boot.rst:38
 msgid "``mka halium-boot``"
-msgstr ""
+msgstr "``mka halium-boot``"
 
 #: ../../porting/building-halium-boot.rst:39
 msgid "``mka systemimage``"
-msgstr ""
+msgstr "``mka systemimage``"
 
 #: ../../porting/building-halium-boot.rst:42
 #: ../../porting/installing-16-04.rst:58
+#, fuzzy
 msgid "Continue on"
-msgstr ""
+msgstr "Продолжить"
 
 #: ../../porting/building-halium-boot.rst:44
 msgid "Now that you have halium-boot built, you can move on to :doc:`installing-16-04`."
 msgstr ""
+"Теперь сборка Halium-Boot закончена, далее прочитайте главу: doc: "
+"`installation-16-04`."
 
 #: ../../porting/common-problems-install.rst:7
 msgid "Common installation problems"
-msgstr ""
+msgstr "Известные проблемы"
 
 #: ../../porting/common-problems-install.rst:9
 msgid "This page details problems commonly faced while following the :doc:`installing-16-04` page."
 msgstr ""
+"На этой странице подробно описаны проблемы, с которыми обычно сталкиваются "
+"после изучения раздела документации: doc: `installation-16-04`."
 
 #: ../../porting/common-problems-install.rst:12
 msgid "SSH hangs when trying to connect"
-msgstr ""
+msgstr "Соединение SSH зависает при попытке подключения"
 
 #: ../../porting/common-problems-install.rst:14
 msgid "The SSH connection may hang indefinitely when trying to connect. Attempts to stop the connection with Control-C may or may not return you to a shell prompt. If you run ``ssh -vvvv phablet@10.15.19.82``, you only get the following output before the program stops::"
 msgstr ""
+"Соединение SSH может зависать при попытке подключения. Попытки разорвать "
+"соединение нажатием клавиш Control-C могут быть неуспешными, и возвращения в "
+"консоль не произойдет . Если выполнить команду ``ssh -vvvv "
+"phablet@10.15.19.82``, до остановки программы будет выводиться только "
+"следующее::"
 
 #: ../../porting/common-problems-install.rst:22
 msgid "This seems to be a common error on arm64 devices with kernel 3.10 when rsyslogd is enabled. If you have this error, please add your voice to `ubports/ubuntu-touch#560`_ and then try the following workaround:"
 msgstr ""
+"Это ошибка часто встречается на устройствах архитектуры arm64 с ядром 3.10, "
+"когда включен rsyslogd. Если у вас есть эта ошибка, пожалуйста, напишите "
+"сюда `ubports/ubuntu-touch # 560`_ и попробуйте сделать следующее:"
 
 #: ../../porting/common-problems-install.rst:24
 msgid "Reboot the device to recovery and connect with ``adb shell``"
 msgstr ""
+"Перезагрузите устройство в режиме  recovery и подсоединитесь к нему через  ``"
+"adb shell``"
 
 #: ../../porting/common-problems-install.rst:25
 msgid "Run the following commands to disable rsyslogd::"
-msgstr ""
+msgstr "Выполните следующие команды, чтобы отключить rsyslogd::"
 
 #: ../../porting/common-problems-install.rst:33
 msgid "You may now reboot the device. You should be able to connect to SSH once it comes back online."
 msgstr ""
+"Теперь можно перезагрузить устройство. После перезагрузки появится "
+"подключение через протокол SSH."
 
 #: ../../porting/common-problems-install.rst:36
 msgid "Device reboots after a minute"
-msgstr ""
+msgstr "Через минуту устройство перезагрузится"
 
 #: ../../porting/common-problems-install.rst:38
+#, fuzzy
 msgid "The device may reboot cleanly after about a minute of uptime. If you are logged in when the reboot occurs, you will see the following message::"
 msgstr ""
+"Устройство может постоянно перезагружаться. После перезагрузки в системе "
+"возникает следующее сообщение:"
 
 #: ../../porting/common-problems-install.rst:45
 msgid "This happens because ``lightdm``, the Ubuntu Touch display manager, is crashing repeatedly. The system watchdog process sees this and reboots the device."
 msgstr ""
+"Это происходит из-за того, что `` lightdm``, оконный менеджер Ubuntu Touch,  "
+"из-за ошибок периодически прекращает работать. Система видит это и "
+"перезагружает устройство."
 
 #: ../../porting/common-problems-install.rst:47
 msgid "To fix this problem, log in before the reboot occurs and run the following command::"
 msgstr ""
+"Чтобы решить эту проблему, войдите в систему  и выполните следующую команду "
+"до перезагрузки::"
 
 #: ../../porting/common-problems-run.rst:2
 msgid "Common problems when running Ubuntu Touch"
-msgstr ""
+msgstr "Известные проблемы, возникающие при работе Ubuntu Touch"
 
 #: ../../porting/common-problems-run.rst:4
 msgid "This page details problems commonly faced while following the :doc:`running-ut` page."
 msgstr ""
+"На этой странице подробно описаны проблемы, с которыми обычно сталкиваются "
+"при изучении раздела: doc: `running-ut`."
 
 #: ../../porting/common-problems-run.rst:7
 msgid "Nothing shows on screen"
-msgstr ""
+msgstr "На экране отсутствует изображение"
 
 #: ../../porting/common-problems-run.rst:9
 msgid "If nothing is showing on screen even after adding udev rules to your port, it is likely that you have a problem with graphical applications crashing. See `Mir servers crash`_ for more information."
 msgstr ""
+"Если на экране ничего не отображается даже после настройки правил udev, то "
+"проблема, скорее всего, с аварийным завершением графических приложений. Для "
+"получения дополнительной информации читайте раздел `Mir server crash`_."
 
 #: ../../porting/common-problems-run.rst:12
 msgid "Mir servers crash"
-msgstr ""
+msgstr "Аварийное завершение работы графического сервера Mir"
 
 #: ../../porting/common-problems-run.rst:14
 msgid "Mir servers crashing can be caused by many different problems with the port. To troubleshoot more, you can try the following:"
 msgstr ""
+"Сбои и ошибки в работе графического сервера Mir могут происходить из-за "
+"ошибок и проблем сборки ОС для конкретного устройства. Для устранения "
+"неполадок можно попробовать следующее:"
 
 #: ../../porting/common-problems-run.rst:17
 msgid "Is the Android container running?"
-msgstr ""
+msgstr "Запущен ли контейнер для Android?"
 
 #: ../../porting/common-problems-run.rst:19
 msgid "If the Android container is not running, many parts of Ubuntu Touch will not work. Run this command to check on the container's status::"
 msgstr ""
+"Если не запущен контейнер Android, многие компоненты Ubuntu Touch работать "
+"не будут. Проверьте статус контейнера этой командой::"
 
 #: ../../porting/common-problems-run.rst:23
+#, fuzzy
 msgid "If you get output similar to the following, the Android container is running and you can move on to the next troubleshooting step::"
 msgstr ""
+"Если выводятся примерно такие же сообщения, то контейнер Android работает, "
+"можно перейти к следующему этапу по устранению неполадок:"
 
 #: ../../porting/common-problems-run.rst:30
 msgid "If you do not get ``State: RUNNING``, the container is stopped. You can run ``sudo start lxc-android-config`` to attempt to start it. If the container does not start after that, you can run ``sudo lxc-start -n android -F`` to get a more detailed log of why it has failed."
 msgstr ""
+"Если не выводится сообщение `` State: RUNNING``, то контейнер остановлен. "
+"Можно попытаться запустить его командой `` sudo start lxc-android-config`. "
+"Если после этого контейнер не запустится, можно набрать команду `` sudo lxc-"
+"start -n android -F``, она выведет журнал ошибок."
 
 #: ../../porting/common-problems-run.rst:34
 msgid "Are all of the Android partitions mounted?"
-msgstr ""
+msgstr "Все ли разделы  Android смонтировались?"
 
 #: ../../porting/common-problems-run.rst:36
 msgid "If some partitions used for Android drivers are not mounted, the container may start but not work correctly."
 msgstr ""
+"Если некоторые разделы с драйверами Android не смонтированы, то контейнер "
+"запустится, но будет работать некорректно."
 
 #: ../../porting/common-problems-run.rst:38
 msgid "To check the mounted Android partitions, run ``ls /android``. At least the following folders should be contained within::"
 msgstr ""
+"Чтобы проверить смонтированные разделы Android, наберите команду `` ls / "
+"android``. По крайней мере, следующие папки должны быть::"
 
 #: ../../porting/common-problems-run.rst:45
 msgid "If any of these are missing, run ``dmesg`` to get the kernel log. Mounting Android partitions will start after the following line::"
 msgstr ""
+"Если что-то из этого отсутствует, наберите `` dmesg``, это выведет на экран "
+"журнал ядра. Монтирование разделов Android начнется после следующей строки::"
 
 #: ../../porting/common-problems-run.rst:49
 msgid "Try to diagnose and fix any mounting errors that you find in the log for the partitions listed above."
 msgstr ""
+"Попробуйте определить и исправить все ошибки монтирования, которые будут в "
+"журнале для разделов, перечисленных выше."
 
 #: ../../porting/common-problems-run.rst:53
 msgid "Some devices have a ``vendor`` partition that contains proprietary libraries and executables required to run Android. If your device has this partition, make sure that it is mounted in addition to the others listed above."
 msgstr ""
+"На некоторых устройствах имеется раздел ``vendor``, в нём содержатся "
+"проприетарные библиотеки и исполняемые файлы, необходимые для работы "
+"Android. Если ваше устройство имеет этот раздел, убедитесь, что он тоже "
+"смонтирован вместе с другими разделами, перечисленным выше."
 
 #: ../../porting/common-problems-run.rst:57
 msgid "Getting more Mir logs"
-msgstr ""
+msgstr "Другие журналы графического сервера Mir"
 
 #: ../../porting/common-problems-run.rst:59
 msgid "If the Android container is running and all of its partitions seem to be mounted, you will need to get a few more logs before enlisting community help."
 msgstr ""
+"Если контейнер Android работает и все разделы смонтированы, нужно "
+"просмотреть еще несколько журналов, прежде чем обращаться за помощью к "
+"сообществу."
 
 #: ../../porting/common-problems-run.rst:61
+#, fuzzy
 msgid "First, stop the display manager if it is not already::"
-msgstr ""
+msgstr "Во-первых, остановите диспетчер экрана, если это еще не сделано::"
 
 #: ../../porting/common-problems-run.rst:65
 msgid "If you have Wi-Fi working (See `the Halium docs for Wi-Fi`_), install the ``libc6-dbg`` package first::"
 msgstr ""
+"Если на устройстве работает Wi-Fi (смотрите раздел `the Halium docs for Wi-"
+"Fi`_), сначала установите пакет ``libc6-dbg``::"
 
 #: ../../porting/common-problems-run.rst:70
 msgid "Then, run the following commands to get all of the needed logs::"
 msgstr ""
+"Затем запустите следующие команды, чтобы получить все необходимые лог-файлы::"
 
 #: ../../porting/common-problems-run.rst:76
 msgid "Use ``scp`` or a similar program to copy the ``usc.log``, ``usc-gdb.log``, and ``usc-logcat.log`` files from phablet's home folder to your computer. Then, post the content of these files to `paste.ubuntu.com`_, Pastebin, GitHub Gists, or a similar service so the people helping you can view them easily."
 msgstr ""
+"С помощью утилиты `` scp`` или аналогичной программы  скопируйте файлы `` "
+"usc.log``, `` usc-gdb.log`` и `` usc-logcat.log`` из домашней папки "
+"смартфона на компьютер. Затем загрузите эти файлы  на `paste.ubuntu.com`_, "
+"Pastebin, GitHub Gists или аналогичный ресурс, чтобы пользователи, "
+"помогающие вам, могли легко их просмотреть."
 
 #: ../../porting/common-problems-run.rst:79
 msgid "Programs hang before crashing"
-msgstr ""
+msgstr "Приложения \"зависают\" перед аварийной остановкой"
 
 #: ../../porting/common-problems-run.rst:81
 msgid "Sometimes processes will hang for a very long time and then abort or segfault. The reason for the hang is apport, which attempts to collect useful information about the crash before allowing the program to stop."
 msgstr ""
+"Иногда процессы будут \"зависать\" надолго, а затем закроются или прекратят "
+"работу. Причиной зависания является apport, который пытается собрать "
+"полезную информацию о сбое, прежде чем программа прекратит работать."
 
 #: ../../porting/common-problems-run.rst:83
 msgid "If you don't need apport's information and would rather have the programs crash faster while troubleshooting, issue the following commands::"
 msgstr ""
+"Если в информации apport необходимости нет, и хочется, чтобы программы "
+"быстрее закрывались при возникновении неполадок, введите следующие команды::"
 
 #: ../../porting/common-problems-run.rst:89
 msgid "Enable /var/log/syslog"
-msgstr ""
+msgstr "Включить /var/log/syslog"
 
 #: ../../porting/common-problems-run.rst:91
 msgid "Normally the writing to the syslog is disabled. During porting it can be useful to enable this::"
 msgstr ""
+"По умолчанию, запись в syslog отключена. Но при использовании и сборке "
+"прошивок для устройств полезно её включать::"
 
 #: ../../porting/common-problems-run.rst:98
 msgid "Now rsyslogd will write to the file and you can use it as usual. For example ``less /var/log/syslog`` or ``tail -f /var/log/syslog``."
 msgstr ""
+"Теперь rsyslogd запишет данные в файл, его можно прочитать любыми штатными "
+"утилитами. Например, `` less /var/log/syslog`` или `` tail -f /var/log/"
+"syslog``."
 
 #: ../../porting/installing-16-04.rst:2
 msgid "Installing Ubuntu Touch 16.04 images on Halium"
-msgstr ""
+msgstr "Установка образов Ubuntu Touch 16.04 на Halium"
 
 #: ../../porting/installing-16-04.rst:6
 msgid "These steps  will wipe **all** of the data on your device. If there is anything that you would like to keep, ensure it is backed up and copied off of the device before continuing."
 msgstr ""
+"Эти действия уничтожат **все** данные на устройстве. Если какую-то "
+"информацию нужно сохранить, еще раз проверьте, что эти данные перенесены с "
+"устройства в безопасное место."
 
 #: ../../porting/installing-16-04.rst:8
 msgid "Now that you've :doc:`built halium-boot <building-halium-boot>`, we're ready to install Ubuntu Touch on your device."
 msgstr ""
+"Теперь: doc: `образ halium-boot <building-halium-boot>` создан, и все готово "
+"для установки Ubuntu Touch на устройство."
 
 #: ../../porting/installing-16-04.rst:10
 msgid "In order to install Ubuntu Touch, you will need a recovery with Busybox, such as TWRP, installed on your phone. You will also need to ensure the /data partition is formatted with ext4 and does not have any encryption on it."
 msgstr ""
+"Чтобы установить Ubuntu Touch,  на телефоне понадобится режим recovery с "
+"Busybox, например TWRP. Также нужно проверить, что раздел / data "
+"отформатирован в файловой системе ext4 и не зашифрован."
 
 #: ../../porting/installing-16-04.rst:13
 msgid "Install halium-boot"
-msgstr ""
+msgstr "Установка halium-boot"
 
 #: ../../porting/installing-16-04.rst:15
 msgid "We'll need to install the halium-boot image before installing an image. Reboot your phone into fastboot mode, then do the following from your Halium tree::"
 msgstr ""
+"Перед установкой основного образа системы нужно установить образ halium-"
+"boot. Перезагрузите телефон в режиме fastboot, затем выполните следующие "
+"действия в  Halium  tree::"
 
 #: ../../porting/installing-16-04.rst:21
 msgid "Download the rootfs"
-msgstr ""
+msgstr "Скачайте rootfs"
 
 #: ../../porting/installing-16-04.rst:23
 msgid "Next we'll need to download the rootfs (root filesystem) that's appropriate for your device. Right now, we only have one available. Simply download ``ubports-touch.rootfs-xenial-armhf.tar.gz`` from `our CI server <https://ci.ubports.com/job/xenial-rootfs-armhf/>`__. If you have a 64-bit ARM (aarch64) device, this same rootfs should work for you. If you have an x86 device, let us know. We do not have a rootfs available for these yet."
 msgstr ""
+"Далее нужно скачать образ rootfs (корневая файловая система), подходящий для "
+"данного устройства. Пока у нас есть только один образ. Скачайте `` ubports-"
+"touch.rootfs-xenial-armhf.tar.gz`` с нашего CI-сервера <https://ci.ubports."
+"com/job/xenial-rootfs-armhf/> `` __. Если у ваше устройство построено на 64-"
+"битной платформе ARM (aarch64), этот же файл rootfs должен должен подойти и "
+"для него. Если у вас есть устройство семейства x86, напишите нам. У нас пока "
+"нет образов rootfs для этой архитектуры."
 
 #: ../../porting/installing-16-04.rst:26
 msgid "Install system.img and rootfs"
-msgstr ""
+msgstr "Установка образов system.img и rootfs"
 
 #: ../../porting/installing-16-04.rst:28
 msgid "Clone or download the `halium-install repository <https://gitlab.com/JBBgameich/halium-install>`_. This repository contains tools that can be used to install a Halium system image and distribution rootfs. We'll use the ``halium-install`` script to install Ubuntu Touch on your device::"
 msgstr ""
+"Скопируйте или скачайте репозиторий \"halium-install\" <https://gitlab.com/"
+"JBBgameich/halium-install> `_. Этот репозиторий содержит инструменты, "
+"которые можно использовать для установки образа системы Halium и rootfs.  "
+"Для установки Ubuntu Touch мы будем использовать скрипт ``halium-install``:"
 
 #: ../../porting/installing-16-04.rst:32
 msgid "The script will copy and extract the files to their proper places, then allow you to set the phablet user's password."
 msgstr ""
+"Скрипт скопирует все необходимые файлы на устройство, а затем попросит "
+"установить на телефон пароль."
 
 #: ../../porting/installing-16-04.rst:35
 msgid "Get SSH access"
-msgstr ""
+msgstr "Получение доступа по SSH"
 
 #: ../../porting/installing-16-04.rst:37
 msgid "When your device boots, it will likely stay at the bootloader screen. However, you should also get a new network connection on the computer you have it plugged in to. We will use this to debug the system."
 msgstr ""
+"Когда телефон включается, то этот процесс, скорее всего, останется на этапе "
+"загрузки системы - на окошке загрузчика. Но должно появиться новое сетевое "
+"устройство на компьютере, к которому он подключен. Мы используем это для "
+"отладки системы."
 
 #: ../../porting/installing-16-04.rst:39
 msgid "To confirm that your device has booted correctly, run ``dmesg -w`` and watch for \"GNU/Linux device\" in the output. If you instead get something similar to \"Halium initrd Failed to boot\", please get in contact with us so we can find out why."
 msgstr ""
+"Чтобы убедиться, что ваше устройство загрузилось правильно, наберите в "
+"консоли команду `` dmesg -w`` и просмотрите \"GNU/Linux device\" в "
+"результатах вывода. Если вместо этого выводится сообщение «Halium initrd "
+"Failed to boot», пожалуйста, свяжитесь с нами, чтобы мы могли разобраться, "
+"почему так произошло."
 
 #: ../../porting/installing-16-04.rst:41
+#, fuzzy
 msgid "Similar to the Halium reference rootfs, you should `set your computer's IP on the newly connected RNDIS interface <http://docs.halium.org/en/latest/porting/debug-build/logging-in.html>`__ to ``10.15.19.100`` if you don't get one automatically. Then, run the following to access your device::"
 msgstr ""
+"Так же как и при установке Halium rootfs, нужно `настроить IP-адрес своего "
+"компьютера в интерфейсе RNDIS <http://docs.halium.org/en/latest/porting/"
+"debug-build/logging-in.html>` __,  -`` 10.15.19.100``, если вы не получите "
+"его автоматически. Затем откройте доступ к вашему устройству::"
 
 #: ../../porting/installing-16-04.rst:45
+#, fuzzy
 msgid "The password will be the one that you set while running halium-install."
-msgstr ""
+msgstr "Пароль должен совпадать с паролем, заданным при запуске halium-install."
 
 #: ../../porting/installing-16-04.rst:48
 #: ../../porting/running-ut.rst:74
 msgid "Common Problems"
-msgstr ""
+msgstr "Известные проблемы"
 
 #: ../../porting/installing-16-04.rst:50
+#, fuzzy
 msgid "If you have any errors while performing these steps, check see if any of the following suggestions match what you are seeing. If you have installed successfully, skip down to `Continue on`_."
 msgstr ""
+"Если при установке возникли ошибки, проверьте, есть ли они в этом списке. "
+"Если установка успешно завершена, перейдите к концу раздела и ссылке  "
+"`Продолжить`_."
 
 #: ../../porting/installing-16-04.rst:60
 msgid "Congratulations! Ubuntu Touch has now booted on your device. Move on to :doc:`running-ut` to learn about more specific steps you will need to take for a complete port."
 msgstr ""
+"Поздравляем! На вашем устройстве установлена Ubuntu Touch. Перейдите к "
+"разделу : doc: `running-ut`, чтобы узнать о дальнейших действиях, которые "
+"необходимы для создания полноценной сборки системы."
 
 #: ../../porting/introduction.rst:2
 msgid "Halium porting"
-msgstr ""
+msgstr "Создание сборок Halium"
 
 #: ../../porting/introduction.rst:5
 msgid "If you are looking for information on installing Ubuntu Touch on a supported device, or if you would like to check if your device is supported, please see `this page <https://devices.ubuntu-touch.io/>`_."
 msgstr ""
+"Если Вам нужна информация об установке Ubuntu Touch на поддерживаемые "
+"устройства или если Вы хотите проверить, поддерживается ли Ваше устройство, "
+"посетите эту страницу <https://devices.ubuntu-touch.io/> `_."
 
 #: ../../porting/introduction.rst:7
 msgid "This section will introduce you to some of the specifics of porting Ubuntu Touch to an Android device by building a Halium image."
 msgstr ""
+"В этом разделе описываются некоторые особенности установки Ubuntu Touch на "
+"устройства платформы Android и создание образов Halium."
 
 #: ../../porting/introduction.rst:11
 msgid "This process does not build Ubuntu Touch! A Halium image is installed along with a prebuilt Ubuntu Touch filesystem to create a running Ubuntu Touch system. If you already have an Ubuntu Touch device and would like to modify the software on it, you will be better served by :doc:`../systemdev/index`. If you would like to modify the Android compatibility image for the Nexus 5, Oneplus One, or Fairphone 2, :doc:`ubp-5.1` is appropriate for you."
 msgstr ""
+"Этот процесс не  создаст сборки Ubuntu Touch! Образ Halium устанавливается "
+"вместе со встроенной файловой системой Ubuntu Touch для создания полноценной "
+"рабочей ОС. Если у вас уже есть устройство Ubuntu Touch, и Вы хотите "
+"изменить программное обеспечение на нем,  изучите этот раздел: doc: `../"
+"systemdev/index`. Если Вы хотите изменить  совместимый образ  Android для "
+"Nexus 5, Oneplus One или Fairphone 2,  ознакомьтесь с разделом: doc: "
+"`ubp-5.1`."
 
 #: ../../porting/introduction.rst:13
 msgid "Before you begin, you'll want to head over to `the Halium porting guide <http://docs.halium.org/en/latest/porting/first-steps.html>`_ and get your ``systemimage`` built without errors. Once you're at the point of installing a rootfs, you can come back here."
 msgstr ""
+"Прежде чем начать, прочитайте `Руководству по созданию образов Halium "
+"<http://docs.halium.org/en/latest/porting/first-steps.html>` _ и сформируйте "
+"без ошибок образ `` systemimage`` для своего устройства. Как только будет "
+"установлена rootfs, можно вернуться к этому разделу."
 
 #: ../../porting/introduction.rst:15
 msgid "Start at :doc:`building-halium-boot` if you'd like to install the UBports Ubuntu Touch 16.04 rootfs."
 msgstr ""
+"Прочитайте главу: doc: `building-halium-boot`, если хотите установить "
+"UBports Ubuntu Touch 16.04 rootfs."
 
 #: ../../porting/introduction.rst:29
 msgid "Getting community help"
-msgstr ""
+msgstr "Обращение за помощью к сообществу пользователей"
 
 #: ../../porting/introduction.rst:31
 msgid "If you're having trouble with the porting steps after building your Halium systemimage, check out the \"Common Problems\" section of the page you're stuck on. If none of the suggestions are helpful, you can get help from the community via the following channels:"
 msgstr ""
+"Если у вас возникли проблемы с дальнейшей подготовкой сборки системы после "
+"создания системного образа Halium, ознакомьтесь с разделом «Известные "
+"проблемы». Если ни одно из решений не поможет, Вы можете получить помощь от "
+"сообщества по следующим каналам:"
 
 #: ../../porting/introduction.rst:33
 msgid "Telegram: @ubports_porting"
-msgstr ""
+msgstr "Канал Telegram: @ubports_porting"
 
 #: ../../porting/introduction.rst:34
+#, fuzzy
 msgid "IRC: #ubports-porting on freenode"
-msgstr ""
+msgstr "IRC: #ubports-porting на freenode"
 
 #: ../../porting/introduction.rst:35
 msgid "Forum: `forums.ubports.com <https://forums.ubports.com>`__"
-msgstr ""
+msgstr "Форум: `forums.ubports.com <https://forums.ubports.com>`__"
 
 #: ../../porting/running-ut.rst:2
+#, fuzzy
 msgid "Running Ubuntu Touch"
-msgstr ""
+msgstr "Первый запуск Ubuntu Touch"
 
 #: ../../porting/running-ut.rst:4
 msgid "Now that you're logged in, there are a few more steps before Ubuntu Touch will be fully functional on your device."
 msgstr ""
+"После первого входа в систему остаётся сделать еще несколько шагов, прежде "
+"чем Ubuntu Touch станет полностью функциональной на устройстве."
 
 #: ../../porting/running-ut.rst:7
+#, fuzzy
 msgid "Make / writable"
-msgstr ""
+msgstr "Разрешение записи в корневой каталог"
 
 #: ../../porting/running-ut.rst:9
 msgid "Before we make any changes to the rootfs (which will be required for the next steps), you'll need to remount it with write permissions. To do that, run the following command::"
 msgstr ""
+"Перед тем, как мы внесем какие-либо изменения в rootfs (это потребуется для "
+"следующих шагов), необходимо разрешить режим записи. Для этого выполните "
+"следующую команду::"
 
 #: ../../porting/running-ut.rst:14
 msgid "Add udev rules"
-msgstr ""
+msgstr "Добавьте правила для udev"
 
 #: ../../porting/running-ut.rst:16
 msgid "You must create some udev rules to allow Ubuntu Touch software to access your hardware. Run the following command, replacing [codename] with your device's codename::"
 msgstr ""
+"Нужно создать некоторые правила udev, чтобы программное обеспечение Ubuntu "
+"Touch могло получить доступ смартфону. Выполните следующую команду, "
+"предварительно заменив [codename] на кодовое имя вашего устройства::"
 
 #: ../../porting/running-ut.rst:21
 msgid "Now, reboot the device. If all has gone well, you will eventually see the Ubuntu Touch spinner followed by Unity 8. Your lock password is the same as you set for SSH."
 msgstr ""
+"Теперь перезагрузите устройство. Если все прошло хорошо, появится заставка "
+"экрана Ubuntu Touch и интерфейс оконного менеджера Unity 8. Пароль для "
+"разблокировки такой же, как и для входа в систему через SSH."
 
 #: ../../porting/running-ut.rst:24
 msgid "Display settings"
-msgstr ""
+msgstr "Настройки экрана"
 
 #: ../../porting/running-ut.rst:26
 msgid "When the device boots, you'll probably notice that everything is very small. There are two variables that set the content scaling for Unity 8 and Ubuntu Touch applications: ``GRID_UNIT_PX`` and ``QTWEBKIT_DPR``."
 msgstr ""
+"Когда устройство загрузится, вы скорее всего заметите, что окна и значки "
+"очень маленькие. Существует две переменные, которые отвечают за "
+"масштабирование интерфейса приложений Unity 8 и Ubuntu Touch: `` "
+"GRID_UNIT_PX`` и ``QTWEBKIT_DPR``."
 
 #: ../../porting/running-ut.rst:28
 msgid "There are also some other options available that may be useful for you depending on your device's form factor. These are discussed below."
 msgstr ""
+"Есть также и некоторые другие опции, которые могут помочь настроить "
+"изображение на разных устройствах. Они приводятся ниже."
 
 #: ../../porting/running-ut.rst:30
 msgid "All of these settings are guessed by Unity 8 if none are set. There are many cases, however, where the guess is wrong (for example, very high resolution phone displays will be identified as desktop computers). To manually set a value for these variables, simply create a file at ``/etc/ubuntu-session.d/[codename].conf`` specifying them. For example, this is the file for the Nexus 7 tablet::"
 msgstr ""
+"Если эти настройки не заданы, Unity 8 пытается задать значения "
+"самостоятельно. Однако, во многих случаях система подбирает некорректные "
+"значения (например, экран телефона с очень высоким разрешением определяется "
+"как экран настольного компьютера). Чтобы задать настройки вручную, просто "
+"создайте файл по адресу ``/etc/ubuntu-session.d/ [кодовое имя устройства] "
+".conf``, и укажите нужные значения в нём. Вот пример такого файл для "
+"планшета Nexus 7::"
 
 #: ../../porting/running-ut.rst:38
 msgid "Methods for deriving values for these variables are below."
-msgstr ""
+msgstr "Как правильно подобрать значения для этих опций написано ниже."
 
 #: ../../porting/running-ut.rst:41
 msgid "Display scaling"
-msgstr ""
+msgstr "Масштабирование экрана"
 
 #: ../../porting/running-ut.rst:43
 msgid "``GRID_UNIT_PX`` (Pixels per Grid Unit or Px/GU) is specific to each device. Its goal is to make the user interface of the system and its applications the same *perceived* size regardless of the device they are displayed on. It is primarily dependent on the pixel density of the device’s screen and the distance to the screen the user is at. The latter value cannot be automatically detected and is based on heuristics. We assume that tablets and laptops are the same distance and that they are held at 1.235 times the distance phones tend to be held at."
 msgstr ""
+"`` GRID_UNIT_PX`` (число пикселей для сетки устройства или сокращенно Px/GU)"
+"  задается индивидуально для каждого устройства. Опция нужна, чтобы сделать "
+"пользовательский интерфейс системы и ее приложений одинаковым  и * "
+"воспринимаемым * по размеру независимо от модели устройства. Это в первую "
+"очередь зависит от плотности пикселей экрана устройства и расстояния до лица "
+"пользователя. Последнее значение нельзя подобрать автоматически или как-то "
+"рассчитать. Мы считаем, что планшеты и ноутбуки пользователь держит на "
+"одинаковом расстоянии, и это расстояние в 1,235 раз дальше, чем смартфон."
 
 #: ../../porting/running-ut.rst:45
 msgid "``QTWEBKIT_DPR`` sets the display scaling for the Oxide web engine, so changes to this value will affect the scale of the browser and webapps."
 msgstr ""
+"`` QTWEBKIT_DPR`` - этот параметр задает масштаб экрана для веб-движка "
+"Oxide. Изменение этого значения будет влиять на масштаб вкладок браузера и "
+"веб-приложений."
 
 #: ../../porting/running-ut.rst:47
 msgid "A reference device has been chosen from which we derive the values for all other devices. The reference device is a laptop with a 120ppi screen. However, there is no exact formula since these options are set for *perceived* size rather than *physical* size. Here are some values for other devices so you may derive the correct one for yours:"
 msgstr ""
+"Было выбрано эталонное устройство, из которого мы получаем значения для всех "
+"других устройств. Эталонное устройство - ноутбук с экраном 120ppi. Однако "
+"точной формулы не существует, поскольку эти параметры установлены для * "
+"воспринимаемого * размера, а не * физического *. Вот некоторые значения для "
+"других устройств, подберите экспериментально правильное значение для своего "
+"мобильного устройства:"
 
 #: ../../porting/running-ut.rst:50
 msgid "Device"
-msgstr ""
+msgstr "Устройство"
 
 #: ../../porting/running-ut.rst:50
 msgid "Resolution"
-msgstr ""
+msgstr "Разрешение экрана"
 
 #: ../../porting/running-ut.rst:50
 msgid "Display Size"
-msgstr ""
+msgstr "Размер экрана"
 
 #: ../../porting/running-ut.rst:50
 msgid "PPI"
-msgstr ""
+msgstr "PPI"
 
 #: ../../porting/running-ut.rst:50
 msgid "Px/GU"
-msgstr ""
+msgstr "Px/GU"
 
 #: ../../porting/running-ut.rst:50
 msgid "QtWebKit DPR"
-msgstr ""
+msgstr "QtWebKit DPR"
 
 #: ../../porting/running-ut.rst:52
+#, fuzzy
 msgid "'Normal' density laptop"
-msgstr ""
+msgstr "Стандартный ноутбук"
 
 #: ../../porting/running-ut.rst:52
 #: ../../porting/running-ut.rst:52
 #: ../../porting/running-ut.rst:54
 #: ../../porting/running-ut.rst:54
 msgid "N/A"
-msgstr ""
+msgstr "Н/д"
 
 #: ../../porting/running-ut.rst:52
 msgid "96-150"
-msgstr ""
+msgstr "96-150"
 
 #: ../../porting/running-ut.rst:52
 msgid "8"
-msgstr ""
+msgstr "8"
 
 #: ../../porting/running-ut.rst:52
 msgid "1.0"
-msgstr ""
+msgstr "1.0"
 
 #: ../../porting/running-ut.rst:53
 msgid "ASUS Nexus 7"
-msgstr ""
+msgstr "ASUS Nexus 7"
 
 #: ../../porting/running-ut.rst:53
 msgid "1280x800"
-msgstr ""
+msgstr "1280х800"
 
 #: ../../porting/running-ut.rst:53
 msgid "7\""
-msgstr ""
+msgstr "7\""
 
 #: ../../porting/running-ut.rst:53
 msgid "216"
-msgstr ""
+msgstr "216"
 
 #: ../../porting/running-ut.rst:53
 msgid "12"
-msgstr ""
+msgstr "12"
 
 #: ../../porting/running-ut.rst:53
 #: ../../porting/running-ut.rst:55
 #: ../../porting/running-ut.rst:56
 #: ../../porting/running-ut.rst:57
 msgid "2.0"
-msgstr ""
+msgstr "2.0"
 
 #: ../../porting/running-ut.rst:54
+#, fuzzy
 msgid "'High' density laptop"
-msgstr ""
+msgstr "Монитор с большим разрешением"
 
 #: ../../porting/running-ut.rst:54
 msgid "150-250"
-msgstr ""
+msgstr "150-250"
 
 #: ../../porting/running-ut.rst:54
 msgid "16"
-msgstr ""
+msgstr "16"
 
 #: ../../porting/running-ut.rst:54
 msgid "1.5"
-msgstr ""
+msgstr "1.5"
 
 #: ../../porting/running-ut.rst:55
 msgid "Samsung Galaxy Nexus"
-msgstr ""
+msgstr "Samsung Galaxy Nexus"
 
 #: ../../porting/running-ut.rst:55
 msgid "1280x720"
-msgstr ""
+msgstr "1280х720"
 
 #: ../../porting/running-ut.rst:55
 msgid "4.65\""
-msgstr ""
+msgstr "4.65\""
 
 #: ../../porting/running-ut.rst:55
 msgid "316"
-msgstr ""
+msgstr "316"
 
 #: ../../porting/running-ut.rst:55
 #: ../../porting/running-ut.rst:56
 msgid "18"
-msgstr ""
+msgstr "18"
 
 #: ../../porting/running-ut.rst:56
 msgid "LG Nexus 4"
-msgstr ""
+msgstr "LG Nexus 4"
 
 #: ../../porting/running-ut.rst:56
 msgid "1280x768"
-msgstr ""
+msgstr "1280х786"
 
 #: ../../porting/running-ut.rst:56
 msgid "4.7\""
-msgstr ""
+msgstr "4.7\""
 
 #: ../../porting/running-ut.rst:56
 msgid "320"
-msgstr ""
+msgstr "320"
 
 #: ../../porting/running-ut.rst:57
 msgid "Samsung Nexus 10"
-msgstr ""
+msgstr "Samsung Nexus 10"
 
 #: ../../porting/running-ut.rst:57
 msgid "2560x1600"
-msgstr ""
+msgstr "2560х1600"
 
 #: ../../porting/running-ut.rst:57
 msgid "10.1\""
-msgstr ""
+msgstr "10.1\""
 
 #: ../../porting/running-ut.rst:57
 msgid "299"
-msgstr ""
+msgstr "299"
 
 #: ../../porting/running-ut.rst:57
 msgid "20"
-msgstr ""
+msgstr "20"
 
 #: ../../porting/running-ut.rst:58
 msgid "Fairphone 2"
-msgstr ""
+msgstr "Fairphone 2"
 
 #: ../../porting/running-ut.rst:58
 #: ../../porting/running-ut.rst:59
 msgid "1080x1920"
-msgstr ""
+msgstr "1080х1920"
 
 #: ../../porting/running-ut.rst:58
 msgid "5\""
-msgstr ""
+msgstr "5\""
 
 #: ../../porting/running-ut.rst:58
 msgid "440"
-msgstr ""
+msgstr "440"
 
 #: ../../porting/running-ut.rst:58
 #: ../../porting/running-ut.rst:59
 msgid "23"
-msgstr ""
+msgstr "23"
 
 #: ../../porting/running-ut.rst:58
 #: ../../porting/running-ut.rst:59
 msgid "2.5"
-msgstr ""
+msgstr "2.5"
 
 #: ../../porting/running-ut.rst:59
 msgid "LG Nexus 5"
-msgstr ""
+msgstr "LG Nexus 5"
 
 #: ../../porting/running-ut.rst:59
 msgid "4.95\""
-msgstr ""
+msgstr "4.95\""
 
 #: ../../porting/running-ut.rst:59
 msgid "445"
-msgstr ""
+msgstr "445"
 
 #: ../../porting/running-ut.rst:62
 msgid "Experiment with a few values to find one that feels good when compared to the Ubuntu Touch experience on other devices. If you are unsure of which is the best, share some pictures (including some object for scale) along with the device specs with us."
 msgstr ""
+"Поэкспериментируйте с несколькими значениями, чтобы получить максимально "
+"хорошие настройки экрана. Если Вы не можете определить наилучшее значение, "
+"разместите на форуме фотографии (включая объекты для масштабирования) и "
+"спецификациями устройства."
 
 #: ../../porting/running-ut.rst:65
 msgid "Form factor"
-msgstr ""
+msgstr "Форм-фактор"
 
 #: ../../porting/running-ut.rst:67
 msgid "There are two other settings that may be of interest to you."
-msgstr ""
+msgstr "Есть еще несколько интересных опций."
 
 #: ../../porting/running-ut.rst:69
 msgid "``FORM_FACTOR`` specifies the device's form factor. This value is set as the device's Chassis, which you can find by running ``hostnamectl``. The acceptable values are ``handset``, ``tablet``, ``laptop`` and ``desktop``. Apps such as the gallery use this information to change their functionality. For more information on the Chassis, see `the freedesktop.org hostnamed specification`_."
 msgstr ""
+"`` FORM_FACTOR`` - этот параметр определяет форм-фактор устройства. Это "
+"значение определяет шасси устройства, его можно узнать, запустив скрипт`` "
+"hostnamectl``. Допустимые значения: `` handse``, ``tablet``, ``laptop`` и `` "
+"desktop``. Такие приложения, как галерея, используют эту информацию для "
+"адаптивности и расширения своей функциональности. Чтобы получить "
+"дополнительную информацию о шасси см. раздел`Спецификация хоста "
+"freedesktop.org`_."
 
 #: ../../porting/running-ut.rst:71
 msgid "``NATIVE_ORIENTATION`` sets the display orientation for the device's built-in screen. This value is used whenever autorotation isn't working correctly or when an app wishes to be locked to the device's native orientation. Acceptable values are ``landscape``, which is normally used for tablets, laptops, and desktops; and ``portrait``, which is usually used for phone handsets."
 msgstr ""
+"`` NATIVE_ORIENTATION`` задаёт ориентацию экрана устройства. Это значение "
+"используется всякий раз, когда автоповорот не работает корректно или когда "
+"приложение хочет заблокировать правильную ориентацию экрана. Допустимые "
+"значения: ``landscape`, который обычно используется для планшетов, ноутбуков "
+"и настольных компьютеров; ``portrait`` обычно используется для смартфонов."
 
 #: ../../porting/running-ut.rst:76
 msgid "If you have any errors while performing these steps, check see if any of the following suggestions match what you are seeing. If you have completed these steps successfully, congratulations! You've reached the end of the porting guide for now. Try to check the functionality of your device by following the Smoke Testing information in :doc:`/contribute/quality-assurance`."
 msgstr ""
+"Если при выполнении этих шагов возникли какие-то ошибки, попробуйте "
+"воспользоваться советами ниже ли они ниже. Если вы успешно выполнили эти "
+"шаги, поздравляем! Вы достигли конца руководства по созданию собственных "
+"сборок операционной системы. Протестируйте работу Вашего устройства, следуя "
+"рекомендациям по Smoke Testing в разделе :doc: `/contribute/quality-"
+"assurance`."
 
 #: ../../porting/ubp-5.1.rst:2
+#, fuzzy
 msgid "Legacy porting"
-msgstr ""
+msgstr "Прошивки для старых поддерживаемых устройств"
 
 #: ../../porting/ubp-5.1.rst:4
+#, fuzzy
 msgid "This page documents the resources and process to build an Android compatibility image for the LG Nexus 5, OnePlus One, or Fairphone 2. This information should not be used to bring up any new devices, only to update these older images. All new ports should be created using Halium following the documentation starting at :doc:`introduction`."
 msgstr ""
+"На этой странице описаны способы и процесс создания Android-совместимого "
+"образа для смартфонов LG Nexus 5, OnePlus One или Fairphone 2. Эта "
+"информация не должна использоваться для каких-либо новых устройств, а только "
+"для обновления  и поддержки  этих устаревших устройств. Все новые сборки "
+"должны создаваться с использованием Halium, по инструкциям и документации, "
+"начинающейся с раздела: doc: `introduction`."
 
 #: ../../porting/ubp-5.1.rst:6
 msgid "This document is useful if you would like to:"
-msgstr ""
+msgstr "Этот документ полезно прочитать, если Вы хотите:"
 
 #: ../../porting/ubp-5.1.rst:8
 msgid "Fix an Android compatibility-related hardware issue (camera, sensors, radios)"
 msgstr ""
+"Исправить ошибки в работе Android-совместимого оборудования (камера, "
+"сенсоры, радио)"
 
 #: ../../porting/ubp-5.1.rst:9
 msgid "Experiment with the Linux kernel"
-msgstr ""
+msgstr "Тесты ядра Linux"
 
 #: ../../porting/ubp-5.1.rst:10
 msgid "Experiment with the system-image upgrade process"
-msgstr ""
+msgstr "Тесты и эксперименты с обновлением образов системы"
 
 #: ../../porting/ubp-5.1.rst:12
 msgid "This document is not useful if you would like to modify :doc:`../contribute/preinstalled-apps` or :doc:`System software <../systemdev/index>`. See the respective documentation for each."
 msgstr ""
+"Этот раздел не поможет ничем, если Вы хотите модифицировать :doc:`../"
+"contribute/preinstalled-apps` или :doc:`System software <../systemdev/index>`"
+".Для этого изучайте соответствующие разделы."
 
 #: ../../porting/ubp-5.1.rst:16
 msgid "This process does not build Ubuntu Touch! An Android compatibility image is installed along with a prebuilt Ubuntu Touch filesystem to create a running Ubuntu Touch system."
 msgstr ""
+"Этот не процесс установки Ubuntu Touch! Android-совместимый образ "
+"устанавливается вместе со встроенной файловой системой Ubuntu Touch для "
+"подготовки рабочего окружения Ubuntu Touch."
 
 #: ../../porting/ubp-5.1.rst:18
 msgid "This document assumes you already have knowledge of building Android or Halium. It also assumes that your device has Ubuntu Touch installed."
 msgstr ""
+"В этом документе предполагается, что у Вас уже есть знания по созданию "
+"образов Android или Halium. Также считается, что на вашем устройстве уже "
+"установлена Ubuntu Touch."
 
 #: ../../porting/ubp-5.1.rst:21
 msgid "Getting set up"
-msgstr ""
+msgstr "Подготовка к настройке"
 
 #: ../../porting/ubp-5.1.rst:23
 msgid "``ubp-5.1`` ports must be built using Ubuntu 16.04. A container or virtual machine based on 16.04 is recommended for this purpose."
 msgstr ""
+"Сборки ``ubp-5.1`` должны подготавливаться в среде Ubuntu 16.04. Для этих "
+"целей рекомендуется использовать контейнер или виртуальную машину на основе "
+"кодовой базы 16.04."
 
 #: ../../porting/ubp-5.1.rst:25
 msgid "Let's get started by installing some build dependencies::"
-msgstr ""
+msgstr "Начнём с установки необходимых пакетов и зависимостей::"
 
 #: ../../porting/ubp-5.1.rst:31
 msgid "Create a directory for your ``ubp-5.1`` source::"
-msgstr ""
+msgstr "Создайте папку для исходных кодов ``ubp-5.1``::"
 
 #: ../../porting/ubp-5.1.rst:36
 msgid "Next, we'll initialize the repository::"
-msgstr ""
+msgstr "Далее, установим репозиторий::"
 
 #: ../../porting/ubp-5.1.rst:42
 msgid "The ``allthefixings`` branch is provided for convenience. It adds all of the current UT device ports to the tree at the expense of a bit more downloaded data. If you are download-sensitive, initialize using ``-b ubp-5.1`` and use the manifest in `build-scripts <https://github.com/ubports/build-scripts>`__ to pick the repos you like."
 msgstr ""
+"Для удобства специально создана ветка `` allthefixings``. Все текущие сборки "
+"UTouch для всех устройств  добавляются в дерево, это незначительно "
+"увеличивает размер скачиваемых пакетов. Если для Вас это критично,  можно "
+"отключить эту ветку с помощью ключа `` -b ubp-5.1`` и использовать манифест "
+"из `build-scripts <https://github.com/ubports/build-scripts>` __, чтобы "
+"выбрать нужные репозитории."
 
 #: ../../porting/ubp-5.1.rst:44
 msgid "Finally, we'll download the source::"
-msgstr ""
+msgstr "В итоге, мы скачали исходный код::"
 
 #: ../../porting/ubp-5.1.rst:49
 msgid "Set up and build"
-msgstr ""
+msgstr "Настройка и сборка"
 
 #: ../../porting/ubp-5.1.rst:51
 msgid "With the sources downloaded, we need to set up our environment and build the images. Make sure you're in your ``ubp-5.1`` directory to continue through these steps."
 msgstr ""
+"После загрузки исходных текстов нам нужно настроить среду и создать образы. "
+"Убедитесь, что Вы находитесь в каталоге ``ubp-5.1`` перед тем, как "
+"продолжить."
 
 #: ../../porting/ubp-5.1.rst:53
 msgid "First, bring in the default Android build environment::"
 msgstr ""
+"Во-первых, сделайте следующие настройки в окружении для сборок Android::"
 
 #: ../../porting/ubp-5.1.rst:57
 msgid "Run ``lunch`` and pick the appropriate combo for your device. The name of the combination should start with ``cm_``, followed by the device name and ending with ``-userdebug``::"
 msgstr ""
+"Выполните команду ``lunch`` и выберите подходящий контейнер для вашего "
+"устройства. Название должно начинаться с ``cm_``, затем идет имя устройства "
+"и заканчивается ключом ``-userdebug``::"
 
 #: ../../porting/ubp-5.1.rst:61
 msgid "With that done, the build can be started::"
-msgstr ""
+msgstr "После этого можно запускать процесс сборки::"
 
 #: ../../porting/ubp-5.1.rst:66
 msgid "Install the new image"
-msgstr ""
+msgstr "Установка нового образа"
 
 #: ../../porting/ubp-5.1.rst:68
+#, fuzzy
 msgid "Now that the build is complete, we can flash it to the device. Note that all of these commands should be run from a terminal which has been set up with ``source build/envsetup.sh`` and ``lunch`` to ensure the needed tools are in your PATH."
 msgstr ""
+"Теперь образ системы создан, и можно установить его на устройство. Обратите "
+"внимание, что все эти команды должны запускаться из терминала, перед этим "
+"нужно запустить скрипт `` source build / envsetup.sh`` и `` lunch``, чтобы "
+"обеспечить наличие необходимых инструментов в системном окружении PATH."
 
 #: ../../porting/ubp-5.1.rst:70
 msgid "We'll begin with the boot and recovery images. Boot your device into fastboot mode and run the following commands::"
 msgstr ""
+"Начнем с загрузочных (boot) и восстановительных (recovery) образов. "
+"Загрузите ваше устройство в режиме fastboot и выполните следующие команды::"
 
 #: ../../porting/ubp-5.1.rst:76
 msgid "Now boot your device to ensure your kernel build is sane. You may also want to boot into recovery to ensure it is working as well."
 msgstr ""
+"Теперь загрузите ваше устройство, чтобы проверить правильно ли собрано ядро "
+"системы (kernel). Также можно загрузиться в режиме recovery, чтобы проверить "
+"как он работает."
 
 #: ../../porting/ubp-5.1.rst:78
 msgid "To install your new build of the system image, use the `replace-android-system script <https://github.com/janimo/phablet-porting-scripts/blob/68734ca07998b8e784397df77d9aca4b968b3815/build/replace-android-system>`_. It can be run as follows with your device attached::"
 msgstr ""
+"Для установки нового билда системы используйте  скрипт`replace-android-"
+"system script <https://github.com/janimo/phablet-porting-scripts/blob/"
+"68734ca07998b8e784397df77d9aca4b968b3815/build/replace-android-system>`_. "
+"Его нужно запустить, когда устройство подключено к компьютеру::"
