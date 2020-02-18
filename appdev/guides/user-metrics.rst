@@ -25,12 +25,12 @@ Your app's apparmor file must include ``usermetrics`` in the policy:
 
 .. code:: qml
 
-{
-    "policy_groups": [
-        "usermetrics"
-],
-    "policy_version": 16.04
-}
+    {
+        "policy_groups": [
+            "usermetrics"
+    ],
+        "policy_version": 16.04
+    }
 
 Next, you will need to import the module in the QML file that will handle the User Metrics:
 
