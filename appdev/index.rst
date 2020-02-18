@@ -49,10 +49,7 @@ Get started building your first app or learn about advanced concepts with our :r
     guides/cookbook
     guides/contenthub
     guides/importing-CH-urldispatcher
-<<<<<<< HEAD
-=======
     guides/pushnotifications
->>>>>>> d48dc2d122e6fed5aab952dcdc26469b20538b26
     guides/user-metrics
     guides/writeable-dirs
     guides/dependencies
