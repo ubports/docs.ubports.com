@@ -21,7 +21,18 @@ How can I use user metrics in my application?
 
 All of the following information will be based on the code for `nCounter`_.
 
-First, you will need to import the module in the QML file that will handle the User Metrics:
+Your app's apparmor file must include ``usermetrics`` in the policy:
+
+.. code:: qml
+
+{
+    "policy_groups": [
+        "usermetrics"
+],
+    "policy_version": 16.04
+}
+
+Next, you will need to import the module in the QML file that will handle the User Metrics:
 
 .. code:: qml
 
@@ -36,6 +47,7 @@ Next, the specific Metric must be defined in the code as an object:
     Metric { // Define the Metric object.
         property string circleMetric // Create a string-type variable called "circleMetric". This is so you can update it later from somewhere else.
         id: metric // A name to reference the metric elsewhere in the code. i.e. when updating format values below.
+        name: "nCounter" // This is a unique ID for storing the user metric data
         format: circleMetric // This is the metric/message that will display "today". Again it uses the string variable that we defined above
         emptyFormat: i18n.tr("Check nCounter") // This is the metric/message for tomorrow. It will "activate" once the day roles over and replaces "format". Here I have use a simple translatable string instead of a variable because I didn’t need it to change.
         domain: "ncounter.joe" // This is the appname, based on what you have in your app settings. Presumably this is how the system lists/ranks the metrics to show on the lock screen.
