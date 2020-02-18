@@ -91,7 +91,6 @@ Increment the metric:
 
 The metric will reset back to the value stored in ``emptyFormat`` each day.
 
-
 Applications make use of this system, but setting and updating the user metric "formats" by running a certain code whenever a certain event takes place. e.g. When you press send in Telegram, or when you receive a phone call.
 The application may store the data for manipulation, but generally the data is stored in the system (`/var/lib/usermetrics <https://github.com/ubports/libusermetrics/tree/xenial/doc/pages>`_).
 
