@@ -25,7 +25,7 @@ First, you will need to import the module in the QML file that will handle the U
 
 .. code:: qml
 
-        import UserMetrics 0.1
+    import UserMetrics 0.1
 
 (There may be updated versions of this above 0.1)
 
@@ -33,23 +33,23 @@ Next, the specific Metric must be defined in the code as an object:
 
 .. code:: qml
 
-            Metric { // Define the Metric object.
-                property string circleMetric // Create a string-type variable called “circleMetric”. This is so you can update it later from somewhere else.
-                id: metric // A name to reference the metric elsewhere in the code. i.e. when updating format values below.
-                format: circleMetric // This is the metric/message that will display “today”. Again it uses the string variable that we defined above
-                emptyFormat: i18n.tr(“Check nCounter”) // This is the metric/message for tomorrow. It will “activate” once the day roles over and replaces “format”. Here I have use a simple translatable string instead of a variable because I didn’t need it to change.
-                domain: “ncounter.joe” // This is the appname, based on what you have in your app settings. Presumably this is how the system lists/ranks the metrics to show on the lock screen.
-            }
+    Metric { // Define the Metric object.
+        property string circleMetric // Create a string-type variable called “circleMetric”. This is so you can update it later from somewhere else.
+        id: metric // A name to reference the metric elsewhere in the code. i.e. when updating format values below.
+        format: circleMetric // This is the metric/message that will display “today”. Again it uses the string variable that we defined above
+        emptyFormat: i18n.tr(“Check nCounter”) // This is the metric/message for tomorrow. It will “activate” once the day roles over and replaces “format”. Here I have use a simple translatable string instead of a variable because I didn’t need it to change.
+        domain: “ncounter.joe” // This is the appname, based on what you have in your app settings. Presumably this is how the system lists/ranks the metrics to show on the lock screen.
+    }
 
 Now that the metric is created, we can update the “format” or “emptyFormat” when an event takes place by referencing the variables in the Metric object.
 
 .. code:: qml
 
-             onButtonPressed: {
-                        metric.circleMetric = "New Metric Message"
-                        metric.update(0)
-                        console.log("Metric updated")
-                    }
+    onButtonPressed: {
+        metric.circleMetric = "New Metric Message"
+        metric.update(0)
+        console.log("Metric updated")
+    }
 
 Here we assign a new value to the circleMetric string variable that’s inside the Metric object:
 
