@@ -160,6 +160,6 @@ Meizu devices are pretty much stuck on Flyme. While the MX4 can be flashed succe
 
 .. note::
 
-    If the installation fails with a 100% red bar and hangs there, remove the ``modemmanager`` package as the one installed `is not compatible <https://web.archive.org/web/20180118130643/http://www.mibqyyo.com/en-articles/2015/09/16/ubuntu-android-installation-process-for-bq-aquaris-e4-5-and-e5/>`_ with SP flash tool, close it and try again from step 4.
+    If the installation fails with a 100% red bar and hangs there (and logs says something like ``COM port is open. Trying to sync with the target...``), remove the ``modemmanager`` package as the one installed `is not compatible <https://web.archive.org/web/20180118130643/http://www.mibqyyo.com/en-articles/2015/09/16/ubuntu-android-installation-process-for-bq-aquaris-e4-5-and-e5/>`_ with SP flash tool, close it and try again from step 4.
 
 13. Congratulations! Your device will now boot into a super old version of Ubuntu Touch. You can now use the UBports Installer to install an updated version.
