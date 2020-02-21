@@ -1,7 +1,7 @@
-User metrics
+UserMetrics
 ============
 
-What are user metrics?
+What are UserMetrics?
 ----------------------
 
 If you look on the lock screen, you will see a circle. Inside the circle is text. Look closer, and you’ll notice that the text contains data regarding the user’s activity. Double tap on the middle of the circle, and you will see more "metrics" about the user.
@@ -12,11 +12,11 @@ If you look on the lock screen, you will see a circle. Inside the circle is text
 
 .. figure:: /_static/images/appdev/guides/usermetricsimages/met2.png
 
-    This is from a 3rd-party application (`nCounter <https://gitlab.com/joboticon/ncounter/>`_) that makes use of the User Metrics feature.
+    This is from a 3rd-party application (`nCounter <https://gitlab.com/joboticon/ncounter/>`_) that makes use of the UserMetrics feature.
 
 For the most part, these messages are quite clearly state what they are counting, and which app is related. But where do these metrics come from?
 
-How can I use user metrics in my application?
+How can I use UserMetrics in my application?
 ---------------------------------------------
 
 All of the following information will be based on the code for `nCounter`_.
@@ -28,11 +28,11 @@ Your app's apparmor file must include ``usermetrics`` in the policy:
     {
         "policy_groups": [
             "usermetrics"
-    ],
+    	],
         "policy_version": 16.04
     }
 
-Next, you will need to import the module in the QML file that will handle the User Metrics:
+Next, you will need to import the module in the QML file that will handle the UserMetrics:
 
 .. code:: qml
 
@@ -75,36 +75,40 @@ We then tell the lock screen to update the metric.
 
     Metric ID [dot] update (specific amount to set if included in the format)
 
-    ``metric.update(0)``
+    ``metric.update(0)`` 
+
+(Note: In this example, ``0`` is arbitrary since the metric value doesn't include a counter)
 
 We have now updated the metric for today. When the time rolls over to tomorrow, the metric will be reset to whatever is in ``emptyFormat``.
 
 For most apps, this defaults to 0 counts for messages, calls, etc.
 
-How do user metrics work?
+How do UserMetrics work?
 -------------------------
 
-User metrics are made up of two "formats"
+UserMetrics are made up of two "formats":
 
 - metrics/messages for today (``format``)
 - metrics/messages for tomorrow (``emptyFormat``)
 
 The value of ``emptyFormat`` is what displays on the lock screen when no value has been stored in ``format``. In order to display a new value of ``format`` the metric must be updated.
 
-Methods for the metric component (`source <https://daker.me/2013/11/adding-usermetrics-to-your-app-on-ubuntu-touch.html>`_):
+There are two options for updating the metric:
 
-Set the metric to a specific amount:
-``metricID.update(x)`` (where x is a number of type `double` to set for a counter value).  The counter value can be included in the ``format`` setting by using ``%1``. ``metricID`` is the id specified in the Metric item.
+- Set the metric to a specific amount:
 
-e.g. ``format: "%1 buttons pressed today"``
+``metricID.update(x)`` (where x is a number of type `double` to set for a counter value). ``metricID`` is the ``id:`` specified in the Metric item. The counter value can be included in the ``format`` setting by using ``%1``. e.g. ``format: "%1 buttons pressed today"``
 
-Increment the metric:
+- Increment the metric:
+
 ``metricID.increment(x)`` (where x is the amount to add to the current counter)
 
 The metric will reset back to the value stored in ``emptyFormat`` each day.
 
-Applications make use of this system, but setting and updating the user metric "formats" by running a certain code whenever a certain event takes place. e.g. When you press send in Telegram, or when you receive a phone call.
+Applications make use of UserMetrics by setting and updating the "formats" whenever a certain event takes place. e.g. When you press send in Telegram, or when you receive a phone call.
 The application may store the data for manipulation, but generally the data is stored in the system (`/var/lib/usermetrics <https://github.com/ubports/libusermetrics/tree/xenial/doc/pages>`_).
+
+(See this `blog post <https://daker.me/2013/11/adding-usermetrics-to-your-app-on-ubuntu-touch.html>`_ for a simple example)
 
 Limitations and wonders
 -----------------------
@@ -112,6 +116,6 @@ Once a metric is registered, it remains on the lock screen even after the app ha
 
 Based on how the "formats" are set up, it seems that it is difficult to maintain a running tally beyond one day (though not impossible. See `FluffyChat <https://gitlab.com/ChristianPauly/fluffychat>`_).
 
-In the case of the `nCounter`_ app. I wanted to count the number of days, but since the metric "resets" each day, that presents a problem. I created a workaround that updates the metric every time the application is opened. Thus, the ``emptyFormat`` (default) tells the user to open the application. This, however, nearly defeats the purpose of the user metric entirely, other than having a neat stat reminder for the day.
+In the case of the `nCounter`_ app. I wanted to count the number of days, but since the metric "resets" each day, that presents a problem. I created a workaround that updates the metric every time the application is opened. Thus, the ``emptyFormat`` (default) tells the user to open the application. This, however, nearly defeats the purpose of the metric entirely, other than having a neat stat reminder for the day.
 
 There must be a way for a process to run independently in the background (e.g. cron) to retrieve data from a specific app code. One lead is the Indicator Weather app. This runs a process every X minutes to update the weather indicator automatically without having to open the app.
