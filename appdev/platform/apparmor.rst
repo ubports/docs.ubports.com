@@ -20,7 +20,7 @@ Each entry follows this format
 
 Policy usage affects whether your app will be accepted by the OpenStore. Apps containing policies with common usage are generally accepted immediately, while reserved usage policies will need to be manually reviewed.
 
-> :point_up: Coding tip: Everytime you add a new Policy group you need to update your app's version for this to be taken into account.
+.. note:: Coding tip: Everytime you add a new Policy group you need to update your app's version for this to be taken into account.
 
 accounts
 --------
