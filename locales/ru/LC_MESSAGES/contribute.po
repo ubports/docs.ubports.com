@@ -8,117 +8,182 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 14:08-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-02-28 17:22+0000\n"
+"Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
+"Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
+"documentation-contribute/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.8\n"
 
 #: ../../contribute/bugreporting.rst:2
 msgid "Bug reporting"
-msgstr ""
+msgstr "Подготовка баг-репортов"
 
 #: ../../contribute/bugreporting.rst:4
 msgid "This page contains information to help you help us by reporting an actionable bug for Ubuntu Touch. It does NOT contain information on reporting bugs in apps, most of the time their entry in the OpenStore will specify where and how to do that."
 msgstr ""
+"На этой странице содержится информация, которая поможет вам сообщить об "
+"ошибках в Ubuntu Touch. Тут НЕ содержится информации  как сообщить об "
+"ошибках в приложениях. Об том можно узнать на страничке приложения в "
+"OpenStore."
 
 #: ../../contribute/bugreporting.rst:7
 msgid "Get the latest Ubuntu Touch"
-msgstr ""
+msgstr "Установите последнюю версию Ubuntu Touch"
 
 #: ../../contribute/bugreporting.rst:9
 msgid "This might seem obvious, but it's easy to miss. Go to (Settings - Updates) and make sure that your device doesn't have any Ubuntu updates available. If not, continue through this guide. If so, update your device and try to reproduce the bug. If it still occurs, continue through this guide. If not, do a little dance! The bug has already been fixed and you can continue using Ubuntu Touch."
 msgstr ""
+"Шаг очевидный, но его легко пропустить. Перейдите в меню Настройки - "
+"Обновления и убедитесь, что для вашего устройства нет доступных обновлений "
+"Ubuntu. Если их нет, действуйте по этой инструкции. Если доступны "
+"обновления, установите их и попробуйте воспроизвести ошибку. Если ошибка все "
+"еще проявляется, воспользуйтесь советами из этой инструкции. Если баг не "
+"проявляется, то, скорее всего, он был исправлен в последнем обновлении."
 
 #: ../../contribute/bugreporting.rst:12
 msgid "Check if the bug is already reported"
-msgstr ""
+msgstr "Проверьте, сообщалось ли об этой ошибке раньше"
 
 #: ../../contribute/bugreporting.rst:14
 msgid "Open up the bug tracker for `ubuntu-touch <https://github.com/ubports/ubuntu-touch>`_."
 msgstr ""
+"Зайдите на официальный баг-трекер  `ubuntu-touch <https://github.com/ubports/"
+"ubuntu-touch>`_."
 
 #: ../../contribute/bugreporting.rst:16
 msgid "First, you'll need to make sure that the bug you're trying to report hasn't been reported before. Search through the bugs reported. When searching, use a few words that describe what you're seeing. For example, \"Lock screen transparent\" or \"Lock screen shows activities\"."
 msgstr ""
+"Сначала нужно проверить, что об этой ошибке ранее не сообщалась. Посмотрите "
+"существующие баг-репорты. При поиске используйте ключевые слова, максимально "
+"описывающие ошибку. Например, «Блокировка экрана не скрывает рабочую область»"
+" или «Блокировка экрана показывает активные приложения»."
 
 #: ../../contribute/bugreporting.rst:18
 msgid "If you find that a bug report already exists, select the \"Add your Reaction\" button (it looks like a smiley face) and select the +1 (thumbs up) reaction. This shows that you are also experiencing the bug."
 msgstr ""
+"Если Вы обнаружите, что баг-репорт уже существует, нажмите кнопку \"Add your "
+"Reaction\" (выглядит как смайлик) и выберите опцию +1 (палец вверх). Это "
+"покажет, что Вы тоже столкнулись с этим багом."
 
 #: ../../contribute/bugreporting.rst:20
 msgid "If the report is missing any of the information specified later in this document, please add it yourself to help the developers fix the bug."
 msgstr ""
+"Если в баг-репорте отсутствует какая-либо информация, которая есть в этой "
+"инструкции, добавьте ее самостоятельно, чтобы помочь разработчикам исправить "
+"ошибку."
 
 #: ../../contribute/bugreporting.rst:23
 msgid "Reproduce the issue you've found"
-msgstr ""
+msgstr "Воспроизведение найденной ошибки"
 
 #: ../../contribute/bugreporting.rst:25
 msgid "Next, find out exactly how to recreate the bug that you've found. Document the exact steps that you took to find the problem in detail. Then, reboot your phone and perform those steps again. If the problem still occurs, continue on to the next step. `If not... <https://youtu.be/nn2FB1P_Mn8?t=10s>`_"
 msgstr ""
+"Далее выясните точно, как можно воспроизвести найденный баг. Детально "
+"документируйте все действия, которые ведут к проявлению ошибки. Затем "
+"перезагрузите телефон и выполните эти шаги снова. Если проблема все равно "
+"проявляется, перейдите к следующему шагу. `Если нет ... <https://youtu.be/"
+"nn2FB1P_Mn8?t=10s>` _"
 
 #: ../../contribute/bugreporting.rst:28
 msgid "Making the bug report"
-msgstr ""
+msgstr "Составление баг-репорта"
 
 #: ../../contribute/bugreporting.rst:30
 msgid "Now it's time for what you've been waiting for, the bug report itself! Bug reports need to be filed in English."
 msgstr ""
+"Теперь наконец-то можно составить баг-репорт! Сообщения об ошибках "
+"отправляются только на английском языке."
 
 #: ../../contribute/bugreporting.rst:32
 msgid "First, pull up the `bug tracker <https://github.com/ubports/ubuntu-touch>`_ and click \"New Issue\". Log in to GitHub if you haven't yet."
 msgstr ""
+"Первый шаг - зайдите на ` баг-трекер <https://github.com/ubports/ubuntu-"
+"touch>`_  и нажмите на клавишу \"New Issue\" (\"Новая заявка\"). Перед этим "
+"нужно войти в свою учётную запись на GitHub."
 
 #: ../../contribute/bugreporting.rst:34
 msgid "Next, you'll need to name your bug. Pick a name that says what's happening, but don't be too wordy. Four to eight words should be enough."
 msgstr ""
+"Шаг второй. Придумайте название багу. Название не должно быть длинным, в "
+"нескольких словах (4-8 слов) нужно передать всю суть ошибки."
 
 #: ../../contribute/bugreporting.rst:36
 msgid "Now, write your bug report. A good bug report includes the following:"
 msgstr ""
+"Теперь напишите баг-репорт. В хорошем сообщении об ошибке содержится "
+"следующее:"
 
 #: ../../contribute/bugreporting.rst:38
 msgid "What happened: A synopsis of the erroneous behavior"
-msgstr ""
+msgstr "Что случилось: краткое описание проявления ошибки"
 
 #: ../../contribute/bugreporting.rst:39
 msgid "What I expected to happen: A synopsis of what should have happened, if there wasn't an error"
 msgstr ""
+"Что должно быть: как должна себя вести программа, если бы ошибки не было"
 
 #: ../../contribute/bugreporting.rst:40
 msgid "Steps to reproduce: You wrote these down earlier, right?"
 msgstr ""
+"Как воспроизвести баг: список действий, которые нужно совершить, чтобы "
+"ошибка проявилась."
 
 #: ../../contribute/bugreporting.rst:41
 msgid "Software Version: Go to (Settings - About) and list what appears on the \"OS\" line of this screen. Also include the release channel that you used when you installed Ubuntu on this phone."
 msgstr ""
+"Версия операционной системы: перейдите в меню \"Настройки\" - \"О программе\""
+" и напишите то, что указано в строке «OS». Также укажите канал для релизов, "
+"использующийся для установки ОС на телефон."
 
 #: ../../contribute/bugreporting.rst:43
 msgid "Once you're finished with that, post the report. You can't add labels yourself, so please don't forget to state the device you're experiencing the issue on in the description so a moderator can easily add the correct tags later."
 msgstr ""
+"Как только заполните сообщение об ошибке, опубликуйте его на трекере. "
+"Обычный  пользователь не может добавлять ярлыки, поэтому укажите в описании "
+"устройство, на котором возникла проблема, чтобы модератор указал правильные "
+"теги позже."
 
 #: ../../contribute/bugreporting.rst:45
 msgid "A developer or QA-team member will confirm and triage your bug, then work can begin on it. If you are missing any information, you will be asked for it, so make sure to check in often!"
 msgstr ""
+"Разработчик или работник отдела качества (QA) ознакомится с сообщением и "
+"подтвердит ошибку. После этого баг-репорт поступит в работу. Если не будет "
+"хватать какой-либо информации, разработчики напишут дополнение к сообщению, "
+"поэтому обязательно проверяйте его статус на трекере!"
 
 #: ../../contribute/bugreporting.rst:48
 msgid "Getting Logs"
-msgstr ""
+msgstr "Получение лог-файлов"
 
 #: ../../contribute/bugreporting.rst:50
 msgid "Here we'll discuss the general steps to get logs, files that contain important debugging messages, on Ubuntu Touch. You may be asked for logs after submitting your issue. This section will help you to retrieve these logs from the device."
 msgstr ""
+"Сейчас мы рассмотрим основные шаги для получения лог-файлов Ubuntu Touch. В "
+"этих файлах может содержаться важная информация для процессов отладки. "
+"Разработчики могут попросить приложить эти файлы к баг-репорту. В этом "
+"разделе написано как получить лог-файлы с устройства."
 
 #: ../../contribute/bugreporting.rst:54
 msgid "Log files may contain information you prefer to keep private. Please be sure to skim through them to ensure this is not the case before posting them. We can coordinate to get them through e-mail or a similarly less public medium."
 msgstr ""
+"В лог-файлах может содержаться конфиденциальная информация. Пожалуйста, "
+"просматривайте эти файлы перед отправкой разработчикам или размещением в "
+"публичном доступе. С  разработчиками можно договориться о передаче таких "
+"файлов через электронную почту или какие-то менее публичные сервисы."
 
 #: ../../contribute/bugreporting.rst:56
 msgid "To get ready, download the `Logviewer app <https://open-store.io/app/logviewer.neothethird>`_ from the OpenStore. This app will help us find, view, and send the logs we need."
 msgstr ""
+"Для начала скачайте приложение  `Logviewer <https://open-store.io/app/"
+"logviewer.neothethird>` из OpenStore. Эта программа специально предназначена "
+"для просмотра, подготовки и отправки лог-файлов."
 
 #: ../../contribute/bugreporting.rst:58
 msgid "Now, open the Logviewer app. You'll see a list of all of the log files available in your user log folder, ``/home/phablet/.cache/upstart/``. This folder contains many, but not all, of the logs for software running on your device. You can tap on any log to view it, then tap the \"send\" icon in the top right corner to share it using an online service."
