@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 14:08-0500\n"
-"PO-Revision-Date: 2020-02-28 17:22+0000\n"
+"PO-Revision-Date: 2020-03-01 01:01+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-contribute/ru/>\n"
@@ -188,38 +188,57 @@ msgstr ""
 #: ../../contribute/bugreporting.rst:58
 msgid "Now, open the Logviewer app. You'll see a list of all of the log files available in your user log folder, ``/home/phablet/.cache/upstart/``. This folder contains many, but not all, of the logs for software running on your device. You can tap on any log to view it, then tap the \"send\" icon in the top right corner to share it using an online service."
 msgstr ""
+"Теперь откройте приложение Logviewer. Вы увидите список всех лог-файлов, "
+"доступных в папке пользователя, ``/home/phablet/.cache/upstart / ``. Тут "
+"находится большинство лог-файлов от приложений, работающих на мобильном "
+"устройстве. Можно выбрать любой журнал и просмотреть его. В правом верхнем "
+"углу есть клавиша «Отправить», с помощью неё можно отправить эти файлы "
+"разработчикам."
 
 #: ../../contribute/bugreporting.rst:60
 msgid "If you don't see the log that you've been asked to send in Logviewer, it may be in a different folder or the application may not have created any logs yet. Tell this to the person who asked you for the logs. They should be able to get you the information you need to get back on track."
 msgstr ""
+"Если лог-файл для Logviewer отсутствует, возможно, он находится в другой "
+"папке или приложение еще его не создало. Сообщите об этом разработчику, "
+"которые этот файл запрашивает."
 
 #: ../../contribute/documentation.rst:2
 msgid "Documentation"
-msgstr ""
+msgstr "Документация"
 
 #: ../../contribute/documentation.rst:5
 msgid "Documentation on this site is written in ReStructuredText, or RST for short. Please check the `RST Primer <http://www.sphinx-doc.org/en/stable/rest.html>`_ if you are not familiar with RST."
 msgstr ""
+"Документация на сайте выполнена в стандарте ReStructuredText (RST). "
+"Пожалуйста, пример файла `RST <http://www.sphinx-doc.org/en/stable/"
+"rest.html>`_ , если Вам этот стандарт не знаком."
 
 #: ../../contribute/documentation.rst:7
 msgid "This page will guide you through writing great documentation for the UBports project that can be featured on this site."
 msgstr ""
+"Эта страница поможет Вам подготовить хорошую документацию для проекта "
+"UBports. Тесты будут размещены на сайте."
 
 #: ../../contribute/documentation.rst:10
 msgid "Documentation guidelines"
-msgstr ""
+msgstr "Инструкция по подготовке документации"
 
 #: ../../contribute/documentation.rst:12
 msgid "These rules govern how you should write your documentation to avoid problems with style, format, or linking. If you don't follow these guidelines, we will not accept your document."
 msgstr ""
+"Эти правила определяют порядок оформления документации, чтобы избежать "
+"проблем со стилем, форматом или ссылками. Если Вы не будете следовать этим "
+"рекомендациям, мы будем вынуждены отказать в публикации Вашего документа."
 
 #: ../../contribute/documentation.rst:15
 msgid "Title"
-msgstr ""
+msgstr "Заголовок"
 
 #: ../../contribute/documentation.rst:17
 msgid "All pages must have a document title that will be shown in the table of contents (left sidebar) and at the top of the page."
 msgstr ""
+"На всех страницах должен быть заголовок, который будет показан в оглавлении ("
+"левая боковая панель) и в верхней части страницы."
 
 #: ../../contribute/documentation.rst:19
 msgid "Titles should be sentence cased rather than Title Cased. For example::"
@@ -228,34 +247,39 @@ msgstr ""
 #: ../../contribute/documentation.rst:28
 msgid "There isn't a single definition of title casing that everyone follows, but sentence casing is easy. This helps keep capitalization in the table of contents consistent."
 msgstr ""
+"Не существует какого-то единого определения списка заголовков, которому "
+"следуют все пользователи, но на предложения разделять их легко. Это помогает "
+"сформировать стандартное оглавление."
 
 #: ../../contribute/documentation.rst:30
 msgid "Page titles are underlined with equals signs. For example, the markup for :doc:`./bugreporting` includes the following title:"
 msgstr ""
+"Заголовки страниц выделены знаком равенства. Например, в разделе: "
+"doc:`./bugreporting` заголовок выглядит так:"
 
 #: ../../contribute/documentation.rst:37
 msgid "Note that:"
-msgstr ""
+msgstr "Помните что:"
 
 #: ../../contribute/documentation.rst:39
 msgid "The title is sentence cased"
-msgstr ""
+msgstr "Заголовок нужно писать заглавными буквами"
 
 #: ../../contribute/documentation.rst:40
 msgid "The title is underlined with equals signs"
-msgstr ""
+msgstr "Заголовок выделяется знаками равенства"
 
 #: ../../contribute/documentation.rst:41
 msgid "The underline spans the title completely without going over"
-msgstr ""
+msgstr "Линия подчеркивания не переходит за границы заголовка"
 
 #: ../../contribute/documentation.rst:43
 msgid "Incorrect examples of titles include:"
-msgstr ""
+msgstr "Неправильные примеры заголовков:"
 
 #: ../../contribute/documentation.rst:45
 msgid "Incorrect casing"
-msgstr ""
+msgstr "Некорректный регистр букв"
 
 #: ../../contribute/documentation.rst:52
 msgid "Underline too short"
@@ -267,11 +291,13 @@ msgstr ""
 
 #: ../../contribute/documentation.rst:68
 msgid "Headings"
-msgstr ""
+msgstr "Заголовки"
 
 #: ../../contribute/documentation.rst:70
 msgid "There are several levels of headings that you may place on your page. These levels are shown here in order:"
 msgstr ""
+"Есть несколько уровней заголовков, которые вы можете разместить на своей "
+"странице. Эти уровни показаны здесь по порядку:"
 
 #: ../../contribute/documentation.rst:86
 msgid "Each heading level creates a sub-section in the global table of contents tree available when the documentation is built. In the primary (web) version of the documentation, this only shows four levels deep from the top level of the documentation. Please refrain from using more heading levels than will show in this tree as it makes navigating your document difficult. If you must use this many heading levels, it is a good sign that your document should be split up into multiple pages."
@@ -279,7 +305,7 @@ msgstr ""
 
 #: ../../contribute/documentation.rst:89
 msgid "Table of contents"
-msgstr ""
+msgstr "Содержание"
 
 #: ../../contribute/documentation.rst:91
 msgid "People can't navigate to your new page if they can't find it. Neither can Sphinx. That's why you need to add new pages to Sphinx's table of contents."
