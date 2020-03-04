@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-08 17:32-0500\n"
-"PO-Revision-Date: 2020-02-08 19:21+0000\n"
-"Last-Translator: Eugene <uralhistory@gmail.com>\n"
+"PO-Revision-Date: 2020-02-28 17:22+0000\n"
+"Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-userguide/ru/>\n"
 "Language: ru\n"
@@ -1128,7 +1128,7 @@ msgstr ""
 
 #: ../../userguide/install.rst:44
 msgid "BE VERY CAREFUL! You are responsible for your own actions!"
-msgstr "ВНИМАНИЕ! Все действия осуществляются Вами на свой страх и риск."
+msgstr "ВНИМАНИЕ! Все действия осуществляются Вами на свой страх и риск!"
 
 #: ../../userguide/install.rst:46
 msgid "Disconnect all devices and non-essential peripherals from your PC. Charge your device on a wall-charger (not your PC) to at least 40 percent"
