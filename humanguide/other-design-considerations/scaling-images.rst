@@ -8,7 +8,7 @@ Scaling images is important in a convergent app. App icons and images can be cre
 
 One of the most popular scalable formats is `SVG <https://en.wikipedia.org/wiki/Scalable_Vector_Graphics>`__. SVG files can be created using software like `Inkscape <https://inkscape.org/>`__.
 
-One particularity of qml, though, is that svg are rendered to use low memory and losing the advatadges of scalability. When using a SVG file in an ``Image`` element we can use the property called ``sourceSize``. This will define the rendered size of the SVG image. A SVG image with a ``sourceSize`` width and height of 252 pixels, will be rendered as if the scalable image would be a png of 252 per 252 pixels.
+One particularity of qml, though, is that SVGs are rendered to use less memory, losing the advantages of scalability. When using a SVG file in an ``Image`` element we can use the property called ``sourceSize``. This will define the rendered size of the SVG image. A SVG image with a ``sourceSize`` width and height of 252 pixels, will be rendered as if the scalable image would be a png of 252 per 252 pixels.
 
 .. figure:: /_static/images/humanguide/icon-sizes.png
    :align: center
@@ -25,3 +25,4 @@ It is not advisable to define ``sourceSize`` as a relative size to avoid perform
      sourceSize.height: sourceSize.width
    }
 
+Read more about image performance in the `Qt wiki <https://wiki.qt.io/Performance_tip_Images>`__.

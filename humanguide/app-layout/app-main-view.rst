@@ -4,9 +4,6 @@ App main view
 When an app starts, shows a generic splash screen (as in the image) or a custom one, then the main view.
 
 .. figure:: /_static/images/humanguide/Splash-Main.png
-   :alt: Splash-Main
-
-   Splash-Main
 
 The standard parts of a main view or any other page may be:
 

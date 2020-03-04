@@ -12,10 +12,10 @@ Hint
 
 The hint is used to let the user know that there is something worth trying at the bottom of the screen.
 
-After open an app, a hint with a text and/or an icon is shown:
+After opening an app, a hint with a text and/or an icon is shown:
 
 .. figure:: /_static/images/humanguide/37.png
 
-After some seconds it hides and a floating icon is hown
+After after a few seconds it hides and a floating icon is shown
 
 .. figure:: /_static/images/humanguide/38.png

@@ -5,7 +5,7 @@ Interchange of data between apps is done through Content Hub. This improves isol
 
 .. figure:: /_static/images/humanguide/43.png
 
-Apps with the right apparmor permissions can import, export or share data between them.
+Apps with the appropriate apparmor permissions can import, export or share data between them.
 
 For more information see `Importing from Content Hub and URLdispatcher`_.
 

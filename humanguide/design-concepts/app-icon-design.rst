@@ -107,3 +107,5 @@ Pictograms have an ever~so~slight (1 pixel) white highlight along the top edge o
 .. figure:: /_static/images/humanguide/13.png
 
 Depending on the colour of your pictogram element, you can vary the opacity of your highlight. For instance, if it is using bright, primary colours, there isn't any need for a highlight.
+
+Grids and other resources can be found in this `gitlab repository <https://gitlab.com/cibersheep/ubuntu-icon-resource-kit>`__.

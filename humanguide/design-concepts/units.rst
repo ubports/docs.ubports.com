@@ -20,7 +20,7 @@ A measurement unit called the *grid unit* is defined, abbreviated *gu.* 1 grid u
 | Most laptops                                          | 1 gu =     |
 |                                                       | 8 px       |
 +-------------------------------------------------------+------------+
-| Retina laptops                                        | 1 gu =     |
+| High DPI laptops                                      | 1 gu =     |
 |                                                       | 16 px      |
 +-------------------------------------------------------+------------+
 | Phone with 4 inch screen at HD resolution (around     | 1 gu =     |
