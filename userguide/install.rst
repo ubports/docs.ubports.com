@@ -36,15 +36,10 @@ We have contacted Microsoft about this problem, but they seem to think it's `enj
 Device not detected
 ^^^^^^^^^^^^^^^^^^^
 
-Custom platform tools
-"""""""""""""""""""""
-
-You might want to try using custom adb and fastboot binaries. For that, tick the "Custom tools" checkbox in the options and specify the path to adb and fastboot in the text-boxes below.
-
 Virtual Machine
 """""""""""""""
 
-Make sure the virtual machine is allowed to access the USB port.
+If you're running the installer in a virtual machine, make sure the virtual machine is allowed to access the USB port.
 
 Windows ADB drivers
 """""""""""""""""""
