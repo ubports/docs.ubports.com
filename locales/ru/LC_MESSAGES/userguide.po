@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-08 17:32-0500\n"
-"PO-Revision-Date: 2020-03-06 06:22+0000\n"
+"PO-Revision-Date: 2020-03-08 05:22+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-userguide/ru/>\n"
@@ -849,7 +849,7 @@ msgstr "Документы"
 
 #: ../../userguide/dailyuse/libertine.rst:66
 msgid "Music"
-msgstr "Music"
+msgstr "Музыка"
 
 #: ../../userguide/dailyuse/libertine.rst:67
 msgid "Pictures"
