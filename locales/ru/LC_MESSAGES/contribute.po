@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 14:08-0500\n"
-"PO-Revision-Date: 2020-03-01 01:01+0000\n"
+"PO-Revision-Date: 2020-03-06 06:22+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-contribute/ru/>\n"
@@ -282,12 +282,14 @@ msgid "Incorrect casing"
 msgstr "Некорректный регистр букв"
 
 #: ../../contribute/documentation.rst:52
+#, fuzzy
 msgid "Underline too short"
-msgstr ""
+msgstr "Линия подчёркивания слишком короткая"
 
 #: ../../contribute/documentation.rst:59
+#, fuzzy
 msgid "Underline too long"
-msgstr ""
+msgstr "Линия подчёркивания слишком длинная"
 
 #: ../../contribute/documentation.rst:68
 msgid "Headings"
@@ -302,6 +304,12 @@ msgstr ""
 #: ../../contribute/documentation.rst:86
 msgid "Each heading level creates a sub-section in the global table of contents tree available when the documentation is built. In the primary (web) version of the documentation, this only shows four levels deep from the top level of the documentation. Please refrain from using more heading levels than will show in this tree as it makes navigating your document difficult. If you must use this many heading levels, it is a good sign that your document should be split up into multiple pages."
 msgstr ""
+"Каждый заголовок автоматически формирует подраздел в оглавлении. В онлайн-"
+"документации отображается только четыре уровня от основного раздела "
+"документации. Пожалуйста, воздержитесь от использования большего количества "
+"уровней заголовков,  это затрудняет навигацию по документу. Если Вам "
+"необходимо использовать множество подзаголовков, то лучше разбить документ "
+"на несколько страниц."
 
 #: ../../contribute/documentation.rst:89
 msgid "Table of contents"
@@ -310,99 +318,160 @@ msgstr "Содержание"
 #: ../../contribute/documentation.rst:91
 msgid "People can't navigate to your new page if they can't find it. Neither can Sphinx. That's why you need to add new pages to Sphinx's table of contents."
 msgstr ""
+"Пользователи не могут перейти на новую страницу, если не могут ее найти. Это "
+"справедливо и для системы Sphinx.  Поэтому сначала нужно добавить страницы в "
+"оглавление Sphinx."
 
 #: ../../contribute/documentation.rst:93
 msgid "You can do this by adding the page to the ``index.rst`` file in the same directory that you created it. For example, if you create a file called \"newpage.rst\", you would add the line marked with a chevron (>) in the nearest index:"
 msgstr ""
+"Это можно сделать, добавив страницу в файл `` index.rst``, который находится "
+"в этой же папке. Например, если вы создадите файл с именем «newpage.rst», "
+"добавьте строку строку в индексный файл и обозначьте ее символом (>):"
 
 #: ../../contribute/documentation.rst:105
 msgid "The order matters. If you would like your page to appear in a certain place in the table of contents, place it there. In the previous example, newpage would be added to the end of this table of contents."
 msgstr ""
+"Важен порядок страниц. Если Вы хотите, чтобы  страница появлялась в "
+"определенном месте в оглавлении, разместите ее в этом месте в документации. "
+"В предыдущем примере новая страница добавлена в конец документа и оглавления."
 
 #: ../../contribute/documentation.rst:108
+#, fuzzy
 msgid "Warnings"
-msgstr ""
+msgstr "Предупреждения и ошибки"
 
 #: ../../contribute/documentation.rst:110
+#, fuzzy
 msgid "Your edits must not introduce any warnings into the documentation build. If any warnings occur, the build will fail and your pull request will be marked with a red 'X'. Please ensure that your RST is valid and correct before you create a pull request. This is done automatically (via sphinx-build crashing with your error) if you follow :ref:`our build instructions <doc-contribution-workflow>` below."
 msgstr ""
+"Правки не должны вносить никаких ошибок в раздел с документацией. Если "
+"появятся какие-либо предупреждения или ошибки, сборка завершится неудачно, и "
+"запрос на компиляцию  будет помечен красным крестиком. Пожалуйста, "
+"убедитесь, что ваш RST-файл является правильным, прежде чем запускать "
+"процесс сборки.Это произойдет автоматически (через sphinx-build crashing), "
+"если Вы будете выполнять :ref:`инструкции по созданию документации <doc-"
+"contribution-workflow>`, приведённые ниже."
 
 #: ../../contribute/documentation.rst:114
 msgid "Line length"
-msgstr ""
+msgstr "Длина строки"
 
 #: ../../contribute/documentation.rst:116
 msgid "There is no restriction on line length in this repository. Please do not break lines at an arbitrary line length. Instead, turn on word wrap in your text editor."
 msgstr ""
+"Ограничений на длину строки нет (для этого репозитория). Пожалуйста, не "
+"создавайте строк разной длины. Настройте  в текстовом редакторе "
+"автоматический перенос."
 
 #: ../../contribute/documentation.rst:121
 msgid "Contribution workflow"
-msgstr ""
+msgstr "Редактирование и внесение правок"
 
 #: ../../contribute/documentation.rst:123
 msgid "The following steps will help you to make a contribution to this documentation after you have written a document."
 msgstr ""
+"Следующие действия помогут внести исправления в документ после того, как он "
+"был опубликован."
 
 #: ../../contribute/documentation.rst:126
 msgid "You will need a GitHub account to complete these steps. If you do not have one, click `here <https://github.com/join>`_ to begin the process of making an account."
 msgstr ""
+"Вам понадобится учетная запись на GitHub, чтобы закончить перевод. Если Вы "
+"не зарегистрированы на этом ресурсе, сделайте это `по ссылке <https://github."
+"com/join>`."
 
 #: ../../contribute/documentation.rst:129
 msgid "Forking the repository"
-msgstr ""
+msgstr "Клонирование (форк) репозитория с документацией"
 
 #: ../../contribute/documentation.rst:131
 msgid "You can make more advanced edits to our documentation by forking `ubports/docs.ubports.com <https://github.com/ubports/docs.ubports.com>`_ on GitHub. If you're not sure how to do this, check out the excellent GitHub guide on `forking projects <https://guides.github.com/activities/forking/>`_."
 msgstr ""
+"Можно существенно переработать документацию, но для этого лучше сделать форк "
+"проекта `ubports/docs.ubports.com <https://github.com/ubports/"
+"docs.ubports.com>` на сайте  GitHub. Если у Вас есть вопросы по этому "
+"процессу, прочитайте подробное руководство на сайте `GitHub "
+"<https://guides.github.com/activities/forking/>`_."
 
 #: ../../contribute/documentation.rst:134
 msgid "Building the documentation"
-msgstr ""
+msgstr "Сборка комплекта документации"
 
 #: ../../contribute/documentation.rst:136
+#, fuzzy
 msgid "If you'd like to build this documentation *before* sending a PR (which you should), follow these instructions on your *local copy* of your fork of the repository."
 msgstr ""
+"Если Вы хотите скомпилировать пакет с комплектом документации *до* отправки "
+"нам pull request, эти инструкции помогут работать с *локальной копией* или "
+"форком репозитория."
 
 #: ../../contribute/documentation.rst:138
 msgid "The documentation can be built by running ``./build.sh`` in the root of this repository. The script will also create a virtual build environment in ``~/ubportsdocsenv`` if none is present."
 msgstr ""
+"Комплект документации можно скомпилировать, запустив скрипт ``./build.sh`` в "
+"корневой директории этого репозитория. Скрипт также создаст виртуальное "
+"рабочее окружение для компиляции в  директории`` ~ /ubportsdocsenv``, если "
+"его еще нет."
 
 #: ../../contribute/documentation.rst:140
 msgid "If all went well, you can enter the ``_build/html`` directory and open ``index.html`` to view the UBports documentation."
 msgstr ""
+"Если скрипт успешно отработал, появятся директории ``_build/html`, где будет "
+"находится файл  с документацией``index.html``."
 
 #: ../../contribute/documentation.rst:142
 msgid "If you have trouble building the docs, the first thing to try is deleting the build environment. Run ``rm -r ~/ubportsdocsenv`` and try the build again. Depending on when you first used the build script, you may need to run the ``rm`` command with ``sudo``."
 msgstr ""
+"Если у Вас возникают проблемы при компиляции пакета документации, сначала "
+"попробуйте удалить рабочую среду для формирования сборки. Запустите команду "
+"``rm -r ~/ubportsdocsenv``и попробуйте снова запустить процесс сборки. В "
+"зависимости от рабочего окружения может потребоваться команда  ``sudo`` "
+"перед ``rm``."
 
 #: ../../contribute/documentation.rst:145
+#, fuzzy
 msgid "Alternative methods to contribute"
-msgstr ""
+msgstr "Другие способы работы с документацией"
 
 #: ../../contribute/documentation.rst:148
 #: ../../contribute/translations.rst:2
 msgid "Translations"
-msgstr ""
+msgstr "Перевод на другие языки"
 
 #: ../../contribute/documentation.rst:150
 msgid "You may find the components of this document to translate at `its project in UBports Weblate`_."
 msgstr ""
+"Можно перевести инструкции и разделы документации в специальном проекте по "
+"переводам на ресурсе `UBports Weblate`_."
 
 #: ../../contribute/documentation.rst:153
 msgid "Writing documents not in RST format"
-msgstr ""
+msgstr "Подготовка документации в форматах, отличных от RST"
 
 #: ../../contribute/documentation.rst:155
 msgid "If you would like to write documents for UBports but are not comfortable writing ReStructuredText, please write it without formatting and post it on the `UBports Forum`_ in the relevant section (likely General). Someone will be able to help you revise your draft and write the required ReStructuredText."
 msgstr ""
+"Если Вы хотите написать инструкции по продуктам UBports, но по каким-то "
+"причинам не можете оформлять текст в формате ReStructuredText, пожалуйста,  "
+"разместите текст без форматирования в форуме сообщества `UBports Forum`_ в "
+"соответствующем разделе (скорее всего,  в разделе \"General\"). Кто-нибудь "
+"из пользователей отредактирует черновик и переведёт его в формат "
+"ReStructuredText."
 
 #: ../../contribute/documentation.rst:158
+#, fuzzy
 msgid "Uncomfortable with Git"
-msgstr ""
+msgstr "Неудобства с Git"
 
 #: ../../contribute/documentation.rst:160
 msgid "If you've written a complete document in ReStructuredText but aren't comfortable using Git or GitHub, please post it on the `UBports Forum`_ in the relevant section (likely General). Someone will be able to help you revise your draft and submit it to this documentation."
 msgstr ""
+"Если Вы подготовили документ в формате ReStructuredText, но по каким-то "
+"причинам не можете использовать Git или GitHub, пожалуйста, опубликуйте его "
+"в в соответствующем разделе  форума `UBports Forum`_ (например,  в разделе "
+"General). Кто-нибудь из пользователей посмотрит черновик и перенесёт его в "
+"раздел документации."
 
 #: ../../contribute/documentation.rst:163
 msgid "Current TODOs"
@@ -411,274 +480,324 @@ msgstr ""
 #: ../../contribute/documentation.rst:165
 msgid "This section lists the TODOs that have been included in this documentation. If you know how to fix one, please send us a Pull Request to make it better!"
 msgstr ""
+"В этой секции содержится список планов на будущее и недоработок,которые "
+"нужно устранить. Если Вы знаете, как это сделать, пожалуйста создайте "
+"соответствующий pull request на трекере."
 
 #: ../../contribute/documentation.rst:167
+#, fuzzy
 msgid "To create a todo, add this markup to your page::"
-msgstr ""
+msgstr "Чтобы создать такой список, добавьте на свою страничку этот шаблон::"
 
 #: ../../contribute/index.rst:2
 msgid "Contributing to UBports"
-msgstr ""
+msgstr "Как можно помочь Сообществу UBports"
 
 #: ../../contribute/index.rst:4
 msgid "Welcome! You're probably here because you want to contribute to UBports. The pages you'll find below here will help you do this in a way that's helpful to both the project and yourself."
 msgstr ""
+"Добро пожаловать! Скорее всего, Вы находитесь здесь потому, что  хотите "
+"внести свой вклад в UBports. Ниже находится материал, который поможет "
+"сделать это с пользой как для проекта, так и для самого участника."
 
 #: ../../contribute/index.rst:6
 msgid "If you're just getting started, we always need help with :doc:`thorough bug reporting <bugreporting>`. If you are multilingual, :doc:`translations <translations>` are also a great place to start."
 msgstr ""
+"Если Вы только начинаете знакомство с Ubuntu Touch, мы будем благодарны за "
+":doc:`сообщения об ошибках <bugreporting>`. Если вы знаете иностранные "
+"языки, помогите нам с :doc:`переводами <translations>`."
 
 #: ../../contribute/index.rst:8
+#, fuzzy
 msgid "If those aren't enough for you, see `our contribute page <https://ubports.com/page/vo-get-involved>`_ for an introduction of our focus groups."
 msgstr ""
+"Также можно посмотреть  страничку `Как можно помочь <https://ubports.com/"
+"page/vo-get-involved>`, где есть ссылки на тематические группы."
 
 #: ../../contribute/monetary.rst:2
 msgid "Monetary support"
-msgstr ""
+msgstr "Финансовая помощь"
 
 #: ../../contribute/monetary.rst:4
+#, fuzzy
 msgid "You can help us keep the lights on at UBports by becoming a patron on `Liberapay <https://liberapay.com/UBports/>`_ or `Patreon <https://www.patreon.com/ubports>`_!"
 msgstr ""
+"На развитие проектов  UBports можно сделать пожертвования через сервисы `"
+"Liberapay <https://liberapay.com/UBports/>`_ или `Patreon "
+"<https://www.patreon.com/ubports>`_."
 
 #: ../../contribute/monetary.rst:6
+#, fuzzy
 msgid "Your contribution finances our server infrastructure and debug services, and helps covering additional costs."
 msgstr ""
+"Ваши пожертвования пойдут на аренду серверов и оплату лицензионного ПО, а "
+"так же на всякие сопутствующие траты."
 
 #: ../../contribute/preinstalled-apps.rst:2
 msgid "Preinstalled apps"
-msgstr ""
+msgstr "Предустановленные приложения"
 
 #: ../../contribute/preinstalled-apps.rst:4
 msgid "This page will help you get started with developing the apps which are included with Ubuntu Touch."
 msgstr ""
+"На этой странице содержится материал по созданию приложений, которые по "
+"умолчанию включены в образ системы Ubuntu Touch."
 
 #: ../../contribute/preinstalled-apps.rst:7
 msgid "Core apps"
-msgstr ""
+msgstr "Базовые приложения"
 
 #: ../../contribute/preinstalled-apps.rst:9
 msgid "Core apps are applications which are included with UBports distributions of Ubuntu Touch **and** placed in the OpenStore for updates. Core apps are a good \"first development\" experience within UBports. Many are built with `Clickable`_, an easy to use build and test system for Ubuntu Touch apps. Most core apps can even be built and run without an Ubuntu Touch device!"
 msgstr ""
+"Базовые приложения - это программы, которые включены в комплект поставки "
+"Ubuntu Touch **и** размещены в OpenStore для последующих обновлений. Базовые "
+"приложения позволяют познакомиться поближе с Ubuntu Touch и получить первое "
+"впечатление об этой операционной системе. Большинство таких программ "
+"скомпилированы с помощью `Clickable`_, простой среды для компиляции и "
+"тестирования программ для Ubuntu Touch. Большинство базовых программ можно "
+"скомпилировать и запустить без мобильного устройства с Ubuntu Touch."
 
 #: ../../contribute/preinstalled-apps.rst:12
 msgid "Which core apps currently exist?"
-msgstr ""
+msgstr "Какие базовые программы уже существуют?"
 
 #: ../../contribute/preinstalled-apps.rst:14
 msgid "A full list of the Ubuntu Touch core apps follows."
-msgstr ""
+msgstr "Полный список базовых программ для Ubuntu Touch будет далее."
 
 #: ../../contribute/preinstalled-apps.rst:21
 msgid "Application Name"
-msgstr ""
+msgstr "Название приложения"
 
 #: ../../contribute/preinstalled-apps.rst:21
 msgid "Store page"
-msgstr ""
+msgstr "Страница в OpenStore"
 
 #: ../../contribute/preinstalled-apps.rst:21
 msgid "Code repository"
-msgstr ""
+msgstr "Репозиторий с исходным кодом"
 
 #: ../../contribute/preinstalled-apps.rst:23
 msgid "Calculator"
-msgstr ""
+msgstr "Калькулятор"
 
 #: ../../contribute/preinstalled-apps.rst:23
 msgid "`Calculator on OpenStore`_"
-msgstr ""
+msgstr "`Калькулятор в OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:23
 msgid "`calculator-app on GitLab`_"
-msgstr ""
+msgstr "`calculator-app в GitLab`_"
 
 #: ../../contribute/preinstalled-apps.rst:24
 msgid "Calendar"
-msgstr ""
+msgstr "Календарь"
 
 #: ../../contribute/preinstalled-apps.rst:24
 msgid "`Calendar on OpenStore`_"
-msgstr ""
+msgstr "`Календарь в OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:24
 msgid "`calendar-app on GitLab`_"
-msgstr ""
+msgstr "`calendar-app в GitLab`_"
 
 #: ../../contribute/preinstalled-apps.rst:25
 msgid "Clock"
-msgstr ""
+msgstr "Clock"
 
 #: ../../contribute/preinstalled-apps.rst:25
 msgid "`Clock on OpenStore`_"
-msgstr ""
+msgstr "`Clock в OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:25
 msgid "`clock-app on GitLab`_"
-msgstr ""
+msgstr "`clock-app в GitLab`_"
 
 #: ../../contribute/preinstalled-apps.rst:26
 msgid "File Manager"
-msgstr ""
+msgstr "File Manager"
 
 #: ../../contribute/preinstalled-apps.rst:26
 msgid "`File Manager on OpenStore`_"
-msgstr ""
+msgstr "`File Manager в OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:26
 msgid "`filemanager-app on GitLab`_"
-msgstr ""
+msgstr "`filemanager-app в GitLab`_"
 
 #: ../../contribute/preinstalled-apps.rst:27
 msgid "Gallery"
-msgstr ""
+msgstr "Gallery"
 
 #: ../../contribute/preinstalled-apps.rst:27
 msgid "`Gallery on OpenStore`_"
-msgstr ""
+msgstr "`Gallery в OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:27
 msgid "`gallery-app on GitLab`_"
-msgstr ""
+msgstr "`gallery-app в GitLab`_"
 
 #: ../../contribute/preinstalled-apps.rst:28
 msgid "Music"
-msgstr ""
+msgstr "Music"
 
 #: ../../contribute/preinstalled-apps.rst:28
 msgid "`Music on OpenStore`_"
-msgstr ""
+msgstr "`Music в OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:28
 msgid "`music-app on GitLab`_"
-msgstr ""
+msgstr "`music-app в GitLab`_"
 
 #: ../../contribute/preinstalled-apps.rst:29
 msgid "Notes"
-msgstr ""
+msgstr "Notes"
 
 #: ../../contribute/preinstalled-apps.rst:29
 msgid "`Notes on OpenStore`_"
-msgstr ""
+msgstr "`Notes в OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:29
 msgid "`notes-app on GitLab`_"
-msgstr ""
+msgstr "`notes-app в GitLab`_"
 
 #: ../../contribute/preinstalled-apps.rst:30
 msgid "OpenStore"
-msgstr ""
+msgstr "OpenStore"
 
 #: ../../contribute/preinstalled-apps.rst:30
 msgid "`OpenStore... on OpenStore`_"
-msgstr ""
+msgstr "`Страница репозитория OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:30
 msgid "`openstore-app on GitLab`_"
-msgstr ""
+msgstr "`openstore-app в GitLab`_"
 
 #: ../../contribute/preinstalled-apps.rst:31
 msgid "Terminal"
-msgstr ""
+msgstr "Terminal"
 
 #: ../../contribute/preinstalled-apps.rst:31
 msgid "`Terminal on OpenStore`_"
-msgstr ""
+msgstr "`Terminal в OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:31
 msgid "`terminal-app on GitLab`_"
-msgstr ""
+msgstr "`terminal-app в GitLab`_"
 
 #: ../../contribute/preinstalled-apps.rst:32
 msgid "UBports Welcome"
-msgstr ""
+msgstr "UBports Welcome"
 
 #: ../../contribute/preinstalled-apps.rst:32
 msgid "`UBports Welcome on OpenStore`_"
-msgstr ""
+msgstr "`UBports Welcome в OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:32
 msgid "`ubports-app on GitLab`_"
-msgstr ""
+msgstr "`ubports-app в GitLab`_"
 
 #: ../../contribute/preinstalled-apps.rst:33
 msgid "Weather"
-msgstr ""
+msgstr "Weather"
 
 #: ../../contribute/preinstalled-apps.rst:33
 msgid "`Weather on OpenStore`_"
-msgstr ""
+msgstr "`Weather в OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:33
 msgid "`weather-app on GitLab`_"
-msgstr ""
+msgstr "`weather-app в GitLab`_"
 
 #: ../../contribute/preinstalled-apps.rst:37
 msgid "Other preinstalled apps"
-msgstr ""
+msgstr "Другие предустановленные приложения"
 
 #: ../../contribute/preinstalled-apps.rst:39
 msgid "The following applications are preinstalled in Ubuntu Touch but are not considered core apps. Most of the time these projects must be updated with the system because they use many system services which do not necessarily have a stable API."
 msgstr ""
+"Эти приложения предустановлены в ОС Ubuntu Touch, но они не относятся к "
+"основным приложениям. В большинстве случаев эти программы должны обновляться "
+"системой, поскольку они используют множество системных служб, не всегда "
+"имеющих стабильный API."
 
 #: ../../contribute/preinstalled-apps.rst:41
 msgid "These apps may be more difficult to work with, but their repository should contain a document stating how to build and run them on a device."
 msgstr ""
+"С этими приложениями может быть сложно работать, но в репозиториях должен "
+"быть документ, описывающий алгоритм по компиляции и их запуску на устройстве."
 
 #: ../../contribute/preinstalled-apps.rst:45
 msgid "Browser (`morph-browser on GitHub`_)"
-msgstr ""
+msgstr "Браузер (`morph-browser на GitHub`_)"
 
 #: ../../contribute/preinstalled-apps.rst:46
 msgid "Contacts (`address-book-app on GitHub`_)"
-msgstr ""
+msgstr "Контакты (`address-book-app на GitHub`_)"
 
 #: ../../contribute/preinstalled-apps.rst:47
 msgid "Camera (`camera-app on GitLab`_)"
-msgstr ""
+msgstr "Камера (`camera-app на GitLab`_)"
 
 #: ../../contribute/preinstalled-apps.rst:48
 msgid "External Drives (`ciborium on GitHub`_)"
-msgstr ""
+msgstr "Внешние накопители (`ciborium на GitHub`_)"
 
 #: ../../contribute/preinstalled-apps.rst:49
 msgid "Media Player (`mediaplayer-app on GitHub`_)"
-msgstr ""
+msgstr "Media Player (`mediaplayer-app на GitHub`_)"
 
 #: ../../contribute/preinstalled-apps.rst:50
 msgid "Messaging (`messaging-app on GitHub`_)"
-msgstr ""
+msgstr "Сообщения (`messaging-app на GitHub`_)"
 
 #: ../../contribute/preinstalled-apps.rst:51
 msgid "Phone (`dialer-app on GitHub`_)"
-msgstr ""
+msgstr "Телефон  (`dialer-app на GitHub`_)"
 
 #: ../../contribute/preinstalled-apps.rst:52
 msgid "System Settings (`system-settings on GitHub`_)"
-msgstr ""
+msgstr "Настройки (`system-settings на GitHub`_)"
 
 #: ../../contribute/preinstalled-apps.rst:54
 msgid "Instructions for contributing to these applications can be found in their respective repositories."
 msgstr ""
+"Подробные инструкции для разработчиков этих приложений можно найти в "
+"репозиториях."
 
 #: ../../contribute/quality-assurance.rst:2
+#, fuzzy
 msgid "Quality Assurance"
-msgstr ""
+msgstr "Обеспечение качества (Quality Assurance)"
 
 #: ../../contribute/quality-assurance.rst:4
 msgid "This page explains how to help the UBports QA team, both as an official member or a new contributor. Please also read the :doc:`issue tracking </about/process/issue-tracking>` and :doc:`bugreporting <bugreporting>` guides to better understand the workflow. For real-time communication, you can join our `telegram group <http://t.me/ubports_qa_team>`_."
 msgstr ""
+"На этой странице рассказывается, как могут помочь  опытные разработчики или "
+"новые участники отделу QA. Пожалуйста, также ознакомьтесь с документами "
+":doc:`issue tracking </about/process/issue-tracking>` и :doc:`bugreporting "
+"<bugreporting>`, чтобы лучше понимать как организован рабочий процесс.  "
+"Задать вопросы или пообщаться можно в нашем ` чате в Telegram <http://t.me/"
+"ubports_qa_team>`_."
 
 #: ../../contribute/quality-assurance.rst:7
 msgid "Smoke testing"
-msgstr ""
+msgstr "Smoke testing - тестирование на начальном этапе"
 
 #: ../../contribute/quality-assurance.rst:9
 msgid "To test the core functionality of the operating system, we have compiled `a set of standardized tests <https://gitlab.com/ubports/teams/qa/project-management/raw/master/QA-Plan-Template.ots>`_. Run these tests on your device to :doc:`find and report bugs and regressions <bugreporting>`. It's usually run on all devices before a new release to make sure no new issues were introduced."
 msgstr ""
+"Для тестирования ключевых функций системы мы подготовили `набор "
+"стандартизованных тестов <https://gitlab.com/ubports/teams/qa/"
+"project-management/raw/master/QA-Plan-Template.ots>`_. Запустите эти тесты "
+"на своём мобильном устройстве  :doc:`для поиска багов и регрессии "
+"<bugreporting>`. Обычно эти тесты проходят на всех устройствах перед "
+"выпуском нового релиза операционной системы."
 
 #: ../../contribute/quality-assurance.rst:12
 msgid "Confirming bug reports"
-msgstr ""
+msgstr "Подтверждение сообщений об ошибках (баг-репортов)"
 
 #: ../../contribute/quality-assurance.rst:14
 msgid "Unconfirmed bugreports are labeld **needs confirmation** to enable `global filtering <https://github.com/ubports/ubuntu-touch/issues?q=is%3Aissue+is%3Aopen+label%3A%22needs+confirmation%22>`__. Browse through the list, read the bugreports and try to reproduce the issues that are described. If necessary, add :doc:`missing information or logs, or improve the quality of the report by other means <bugreporting>`. Leave a comment stating your device, channel, build number and whether or not you were able to reproduce the issue."
