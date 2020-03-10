@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 14:08-0500\n"
-"PO-Revision-Date: 2020-03-08 05:22+0000\n"
+"PO-Revision-Date: 2020-03-11 16:22+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-contribute/ru/>\n"
@@ -920,7 +920,7 @@ msgstr ""
 
 #: ../../contribute/translations.rst:19
 msgid "Methods of Translation"
-msgstr "Методы перевода"
+msgstr "Способы перевода"
 
 #: ../../contribute/translations.rst:21
 msgid "There are three common ways used to translate an app:"
@@ -957,46 +957,75 @@ msgstr ""
 #: ../../contribute/translations.rst:27
 msgid "Core apps and some community apps like dekko or TELEports are generally using weblate for translation. This is the preferred way to translate and it does not need any programming skills. Please have a look at the `UBports translation projects <https://translate.ubports.com/projects/>`_. When using weblate do not edit *.po* files manually. Commiting edited *.po* files can break the automated process of translation."
 msgstr ""
+"Базовые приложения и некоторые программы, развиваемые сообществом - dekko "
+"или TELEports, например, - в основном переводятся через weblate. Этот способ "
+"- самый предпочтительный, и не требует навыков программирования. Пожалуйста, "
+"ознакомьтесь с инструкциями  `UBports translation projects "
+"<https://translate.ubports.com/projects/>`_. При переводе через weblate не "
+"следует редактировать файлы *.po* вручную. Загрузка измененных языковых "
+"файлов при переводе таким способом может нарушить автоматический процесс "
+"обновления языковых файлов."
 
 #: ../../contribute/translations.rst:29
 msgid "Most apps maintained by individual developers are mainly using *.pot*/*.po* files for translation. Those generally need to be edited manually and commited to the apps repo."
 msgstr ""
+"Большинство приложений разрабатывается независимыми разработчиками, для "
+"переводов используются в основном файлы *.pot*/*.po*. В этом случае их нужно "
+"редактировать вручную и загружать в репозиторий с приложением."
 
 #: ../../contribute/translations.rst:32
 msgid "How-To"
-msgstr ""
+msgstr "How-To (Краткие инструкции)"
 
 #: ../../contribute/translations.rst:35
 msgid "UBports Weblate"
-msgstr ""
+msgstr "UBports Weblate"
 
 #: ../../contribute/translations.rst:37
 msgid "You can go to `UBports Weblate <https://translate.ubports.com/projects/>`_, click on \"Dashboard\" button, go to a project, and start making anonymous suggestions without being registered. If you want to save your translations, you must be logged in."
 msgstr ""
+"Можно перейти в раздел `UBports Weblate <https://translate.ubports.com/"
+"projects/>`_, найти клавишу \"Dashboard\" и, кликнув по ней, перейти в "
+"проект. Начать перевод можно без регистрации на сайте, в этом случае все "
+"правки будут анонимными. Если хочется зафиксировать свое имя в файлах, нужно "
+"зарегистрироваться."
 
 #: ../../contribute/translations.rst:39
 msgid "For that, go to UBports Weblate and click on the \"Register\" button. Once in the \"Registration\" page, you'll find two options:"
 msgstr ""
+"Для этого зайдите в раздел UBports Weblate - \"Регистрация\". На странице "
+"регистрации есть две опции:"
 
 #: ../../contribute/translations.rst:41
 msgid "Register using a valid email address, a username, and your full name. You'll need to resolve an easy control question too."
 msgstr ""
+"Регистрация через действующий адрес электронной почты. Также потребуется "
+"Ваше полное ФИО и имя пользователя на сайте. Нужно будет также придумать "
+"секретный вопрос и ответ на него."
 
 #: ../../contribute/translations.rst:42
 msgid "Register using a third party registration. Currently the system supports accounts from openSUSE, GitHub, Fedora, and Ubuntu."
 msgstr ""
+"Регистрация с использованием учётной записи на других ресурсах. На данный "
+"момент, можно использовать учётные записи с сайтов openSUSE, GitHub, Fedora "
+"и Ubuntu."
 
 #: ../../contribute/translations.rst:44
 msgid "Once you're logged in, the site is self-explanatory and you'll find there all the options and customization you can do."
 msgstr ""
+"Процесс станет понятнее, как только Вы зайдёте на сайт. Вы увидите все опции "
+"и настройки, которые доступны в учётной записи."
 
 #: ../../contribute/translations.rst:46
 msgid "Now, get on with it. The first step is to search if your language already exists in the project of your choice. If your language is not available for a specific project, you can add it yourself."
 msgstr ""
+"Теперь, когда Вы на сайте проекта, проверьте, есть ли Ваш язык в списке "
+"переводов. Если в проекте переводов на нём нет, то можно добавить перевод на "
+"новый язык самостоятельно."
 
 #: ../../contribute/translations.rst:49
 msgid ".po/.ts File Editor"
-msgstr ""
+msgstr "Редактор файлов .po/.ts"
 
 #: ../../contribute/translations.rst:51
 msgid "If you want to work with *.po*/*.ts* files directly you need to know what you're doing for sure. The first thing you should always remember is:"
