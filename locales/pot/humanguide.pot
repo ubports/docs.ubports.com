@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-23 01:50+0100\n"
+"POT-Creation-Date: 2020-03-11 02:46+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,39 +24,35 @@ msgstr ""
 msgid "When an app starts, shows a generic splash screen (as in the image) or a custom one, then the main view."
 msgstr ""
 
-#: ../../humanguide/app-layout/app-main-view.rst:9
-msgid "Splash-Main"
-msgstr ""
-
-#: ../../humanguide/app-layout/app-main-view.rst:11
+#: ../../humanguide/app-layout/app-main-view.rst:8
 msgid "The standard parts of a main view or any other page may be:"
 msgstr ""
 
-#: ../../humanguide/app-layout/app-main-view.rst:14
+#: ../../humanguide/app-layout/app-main-view.rst:11
 msgid "Header"
 msgstr ""
 
-#: ../../humanguide/app-layout/app-main-view.rst:16
+#: ../../humanguide/app-layout/app-main-view.rst:13
 msgid "Display app name, leading area and trailing area icons."
 msgstr ""
 
-#: ../../humanguide/app-layout/app-main-view.rst:20
+#: ../../humanguide/app-layout/app-main-view.rst:17
 msgid "In this case, showing title and trailing actions."
 msgstr ""
 
-#: ../../humanguide/app-layout/app-main-view.rst:23
+#: ../../humanguide/app-layout/app-main-view.rst:20
 msgid "Tabbed content"
 msgstr ""
 
-#: ../../humanguide/app-layout/app-main-view.rst:25
+#: ../../humanguide/app-layout/app-main-view.rst:22
 msgid "To organize information under tabs."
 msgstr ""
 
-#: ../../humanguide/app-layout/app-main-view.rst:30
+#: ../../humanguide/app-layout/app-main-view.rst:27
 msgid "Bottom edge menu"
 msgstr ""
 
-#: ../../humanguide/app-layout/app-main-view.rst:32
+#: ../../humanguide/app-layout/app-main-view.rst:29
 msgid "For quick actions. See `Quick actions`_."
 msgstr ""
 
@@ -117,7 +113,7 @@ msgid "Interchange of data between apps is done through Content Hub. This improv
 msgstr ""
 
 #: ../../humanguide/app-layout/importing-data.rst:8
-msgid "Apps with the right apparmor permissions can import, export or share data between them."
+msgid "Apps with the appropriate apparmor permissions can import, export or share data between them."
 msgstr ""
 
 #: ../../humanguide/app-layout/importing-data.rst:10
@@ -285,11 +281,11 @@ msgid "The hint is used to let the user know that there is something worth tryin
 msgstr ""
 
 #: ../../humanguide/app-layout/quick-actions.rst:15
-msgid "After open an app, a hint with a text and/or an icon is shown:"
+msgid "After opening an app, a hint with a text and/or an icon is shown:"
 msgstr ""
 
 #: ../../humanguide/app-layout/quick-actions.rst:19
-msgid "After some seconds it hides and a floating icon is hown"
+msgid "After after a few seconds it hides and a floating icon is shown"
 msgstr ""
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:2
@@ -297,7 +293,7 @@ msgid "App icon design"
 msgstr ""
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:4
-msgid "The whole system and apps follow the `Suru design principles <http://web.archive.org/web/20191223082720/https://docs.ubuntu.com/phone/en/apps/design/get-started/design-philosophy>`__ started by Canonical and `Samuel Hewitt <https://icons.samuelhewitt.com/>`__."
+msgid "The whole system and apps follow the `Suru design principles <http://web.archive.org/web/20191223082720/https://docs.ubuntu.com/phone/en/apps/design/get-started/design-philosophy>`__ started by Canonical and `Samuel Hewitt <https://samuelhewitt.com>`__."
 msgstr ""
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:7
@@ -381,7 +377,7 @@ msgid "In keeping with the origami motif, some Suru icons have an implied fold. 
 msgstr ""
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:68
-msgid "The fold is drawn simply by creating an overlay of a white or black polygon of very low opacity (usually between 1%~10%)."
+msgid "The fold is drawn by creating an overlay of a white or black polygon of very low opacity (usually between 1%~10%)."
 msgstr ""
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:75
@@ -438,6 +434,10 @@ msgstr ""
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:109
 msgid "Depending on the colour of your pictogram element, you can vary the opacity of your highlight. For instance, if it is using bright, primary colours, there isn't any need for a highlight."
+msgstr ""
+
+#: ../../humanguide/design-concepts/app-icon-design.rst:111
+msgid "Grids and other resources can be found in this `gitlab repository <https://gitlab.com/cibersheep/ubuntu-icon-resource-kit>`__."
 msgstr ""
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:2
@@ -497,7 +497,7 @@ msgid "Corners"
 msgstr ""
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:43
-msgid "Squared corners fit best to depict real objects and curved corners for abstract symbols. The following picture shows a zoom on the default outer and inner curvatures, with nodes and Bezier handle. The default curvature can be scaled down when the shape is smaller."
+msgid "Curved corners are prefered if possible. The following picture shows a zoom on the default outer and inner curvatures, with nodes and Bezier handle. The default curvature can be scaled down when the shape is smaller."
 msgstr ""
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:48
@@ -537,7 +537,6 @@ msgid "Operating system and app palette"
 msgstr ""
 
 #: ../../humanguide/design-concepts/system-palette.rst:8
-#: ../../humanguide/design-concepts/system-palette.rst:115
 msgid "#FFFFFF White"
 msgstr ""
 
@@ -657,110 +656,6 @@ msgstr ""
 msgid "Orange is recommended for branded elements, focus and intensity."
 msgstr ""
 
-#: ../../humanguide/design-concepts/system-palette.rst:96
-msgid "Following the colour scheme from `Canonical <https://design.ubuntu.com/brand/colour-palette/>`__, we use:"
-msgstr ""
-
-#: ../../humanguide/design-concepts/system-palette.rst:100
-msgid "Corporative Image"
-msgstr ""
-
-#: ../../humanguide/design-concepts/system-palette.rst:103
-msgid "Core Colours"
-msgstr ""
-
-#: ../../humanguide/design-concepts/system-palette.rst:105
-msgid "The Ubuntu Touch colour palette has been created to reflect the spirit of the brand."
-msgstr ""
-
-#: ../../humanguide/design-concepts/system-palette.rst:109
-msgid "#E95420 Ubuntu Orange"
-msgstr ""
-
-#: ../../humanguide/design-concepts/system-palette.rst:111
-msgid "Orange for a community feel."
-msgstr ""
-
-#: ../../humanguide/design-concepts/system-palette.rst:117
-msgid "White for a clean, fresh and light feel."
-msgstr ""
-
-#: ../../humanguide/design-concepts/system-palette.rst:121
-msgid "#000000 Black"
-msgstr ""
-
-#: ../../humanguide/design-concepts/system-palette.rst:123
-msgid "Black is used in some versions of the brandmark for flexibility of application and where print restrictions apply. It can also be used for body copy."
-msgstr ""
-
-#: ../../humanguide/design-concepts/system-palette.rst:126
-msgid "Supporting colours"
-msgstr ""
-
-#: ../../humanguide/design-concepts/system-palette.rst:128
-msgid "Supporting colour palette for when communications have a consumer or enterprise focus."
-msgstr ""
-
-#: ../../humanguide/design-concepts/system-palette.rst:132
-msgid "#77216F Light aubergine"
-msgstr ""
-
-#: ../../humanguide/design-concepts/system-palette.rst:134
-msgid "Light aubergine for a consumer focus."
-msgstr ""
-
-#: ../../humanguide/design-concepts/system-palette.rst:138
-msgid "#5E2750 Mid aubergine"
-msgstr ""
-
-#: ../../humanguide/design-concepts/system-palette.rst:140
-msgid "Mid aubergine for a balance of both."
-msgstr ""
-
-#: ../../humanguide/design-concepts/system-palette.rst:144
-msgid "#2C001E Dark aubergine"
-msgstr ""
-
-#: ../../humanguide/design-concepts/system-palette.rst:146
-msgid "Dark aubergine for an enterprise focus."
-msgstr ""
-
-#: ../../humanguide/design-concepts/system-palette.rst:149
-msgid "Neutral colours"
-msgstr ""
-
-#: ../../humanguide/design-concepts/system-palette.rst:153
-msgid "#AEA79F Warm grey"
-msgstr ""
-
-#: ../../humanguide/design-concepts/system-palette.rst:155
-msgid "For balance. The addition of warm grey softens the combination of orange and aubergine and provides a bridge between the two."
-msgstr ""
-
-#: ../../humanguide/design-concepts/system-palette.rst:157
-msgid "Warm grey can be used for; backgrounds, graphics, pictograms, dot patterns, charts and diagrams. It can also be used for large size text."
-msgstr ""
-
-#: ../../humanguide/design-concepts/system-palette.rst:161
-msgid "#333333 Cool grey"
-msgstr ""
-
-#: ../../humanguide/design-concepts/system-palette.rst:163
-msgid "For typography, particularly body copy. Black can be quite harsh in combination with aubergine, but grey delivers more balance while still being legible."
-msgstr ""
-
-#: ../../humanguide/design-concepts/system-palette.rst:165
-msgid "Cool grey can also be used within charts and diagrams."
-msgstr ""
-
-#: ../../humanguide/design-concepts/system-palette.rst:169
-msgid "#111111 Text grey (Jet)"
-msgstr ""
-
-#: ../../humanguide/design-concepts/system-palette.rst:171
-msgid "Text grey is used for small size headings, sub-headings and body copy text only."
-msgstr ""
-
 #: ../../humanguide/design-concepts/typography.rst:2
 msgid "Typography"
 msgstr ""
@@ -770,7 +665,7 @@ msgid "Fonts"
 msgstr ""
 
 #: ../../humanguide/design-concepts/typography.rst:7
-msgid "Our default font is `Ubuntu font <https://design.ubuntu.com/font/>`__ `[2] <https://en.wikipedia.org/wiki/Ubuntu_(typeface)>`__ installed in the system."
+msgid "Our default font is `Ubuntu <https://design.ubuntu.com/font/>`__ `[2] <https://en.wikipedia.org/wiki/Ubuntu_(typeface)>`__ installed in the system."
 msgstr ""
 
 #: ../../humanguide/design-concepts/typography.rst:11
@@ -786,111 +681,119 @@ msgid "gu"
 msgstr ""
 
 #: ../../humanguide/design-concepts/typography.rst:14
-msgid "Desk- top"
+msgid "Desktop"
 msgstr ""
 
 #: ../../humanguide/design-concepts/typography.rst:14
-msgid "Smart Phone with 4\" HD screen"
+msgid "Phone"
 msgstr ""
 
 #: ../../humanguide/design-concepts/typography.rst:14
-msgid "Tablet with 10\" HD screen"
+msgid "Tablet"
 msgstr ""
 
 #: ../../humanguide/design-concepts/typography.rst:18
+msgid "4\" HD Screen"
+msgstr ""
+
+#: ../../humanguide/design-concepts/typography.rst:18
+msgid "10\" HD screen"
+msgstr ""
+
+#: ../../humanguide/design-concepts/typography.rst:21
 msgid "x-small"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:18
+#: ../../humanguide/design-concepts/typography.rst:21
 msgid "1.25"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:18
+#: ../../humanguide/design-concepts/typography.rst:21
 msgid "10 px"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:18
+#: ../../humanguide/design-concepts/typography.rst:21
 msgid "22 px"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:18
-#: ../../humanguide/design-concepts/typography.rst:20
+#: ../../humanguide/design-concepts/typography.rst:21
+#: ../../humanguide/design-concepts/typography.rst:23
 msgid "12 px"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:20
+#: ../../humanguide/design-concepts/typography.rst:23
 msgid "small"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:20
+#: ../../humanguide/design-concepts/typography.rst:23
 msgid "1.5"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:20
+#: ../../humanguide/design-concepts/typography.rst:23
 msgid "27 px"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:20
+#: ../../humanguide/design-concepts/typography.rst:23
 msgid "15 px"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:22
+#: ../../humanguide/design-concepts/typography.rst:25
 msgid "medium"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:22
+#: ../../humanguide/design-concepts/typography.rst:25
 msgid "1.75"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:22
+#: ../../humanguide/design-concepts/typography.rst:25
 msgid "14 px"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:22
+#: ../../humanguide/design-concepts/typography.rst:25
 msgid "31 px"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:22
+#: ../../humanguide/design-concepts/typography.rst:25
 msgid "18 px"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:24
+#: ../../humanguide/design-concepts/typography.rst:27
 msgid "large"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:24
+#: ../../humanguide/design-concepts/typography.rst:27
 msgid "2.5"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:24
+#: ../../humanguide/design-concepts/typography.rst:27
 msgid "20 px"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:24
+#: ../../humanguide/design-concepts/typography.rst:27
 msgid "45 px"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:24
+#: ../../humanguide/design-concepts/typography.rst:27
 msgid "25 px"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:26
+#: ../../humanguide/design-concepts/typography.rst:29
 msgid "x-large"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:26
+#: ../../humanguide/design-concepts/typography.rst:29
 msgid "3.5"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:26
+#: ../../humanguide/design-concepts/typography.rst:29
 msgid "34 px"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:26
+#: ../../humanguide/design-concepts/typography.rst:29
 msgid "76 px"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:26
+#: ../../humanguide/design-concepts/typography.rst:29
 msgid "42 px"
 msgstr ""
 
@@ -915,7 +818,7 @@ msgid "Grid Unit"
 msgstr ""
 
 #: ../../humanguide/design-concepts/units.rst:15
-msgid "A measurement unit called the *grid unit* is defined, abbreviated gu. 1 grid unit translates to a given number of pixels depending on the type of screen that the user interface is displayed on. For example, on a laptop computer 1 grid unit will typically translate to 8 pixels. The number of pixels per grid unit is chosen in order to preserve the perceived visual size of UI elements and therefore depends on the density of the display and the distance the user is to the screen. We also ensure that 1 grid unit is always an integer number of pixel."
+msgid "A measurement unit called the *grid unit* is defined, abbreviated *gu.* 1 grid unit translates to a given number of pixels depending on the type of screen that the user interface is displayed on. For example, on a laptop computer 1 grid unit will typically translate to 8 pixels. The number of pixels per grid unit is chosen in order to preserve the perceived visual size of UI elements and therefore depends on the density of the display and the distance the user is to the screen. We also ensure that 1 grid unit is always an integer number of pixel."
 msgstr ""
 
 #: ../../humanguide/design-concepts/units.rst:18
@@ -935,7 +838,7 @@ msgid "1 gu = 8 px"
 msgstr ""
 
 #: ../../humanguide/design-concepts/units.rst:23
-msgid "Retina laptops"
+msgid "High DPI laptops"
 msgstr ""
 
 #: ../../humanguide/design-concepts/units.rst:23
@@ -1055,15 +958,27 @@ msgid "Inclusive palette and theme"
 msgstr ""
 
 #: ../../humanguide/other-design-considerations/accessibility.rst:9
-msgid "We would like to create and implement color palettes helpful to people who have sight impairment: - Additional `palette proposal <http://colors.mivoligo.com/#color-blind>`__. - A high contrast theme. - Adaptable font size theme."
+msgid "We would like to create and implement color palettes helpful to people who have sight impairment:"
 msgstr ""
 
-#: ../../humanguide/other-design-considerations/accessibility.rst:15
+#: ../../humanguide/other-design-considerations/accessibility.rst:11
+msgid "Additional `palette proposal <http://colors.mivoligo.com/#color-blind>`__."
+msgstr ""
+
+#: ../../humanguide/other-design-considerations/accessibility.rst:12
+msgid "A high contrast theme."
+msgstr ""
+
+#: ../../humanguide/other-design-considerations/accessibility.rst:13
+msgid "Adaptable font size theme."
+msgstr ""
+
+#: ../../humanguide/other-design-considerations/accessibility.rst:16
 msgid "Input methods"
 msgstr ""
 
-#: ../../humanguide/other-design-considerations/accessibility.rst:17
-msgid "Apps should be accessible by mouse, touch and using a keyboard only."
+#: ../../humanguide/other-design-considerations/accessibility.rst:18
+msgid "Apps should be accessible using any combination of mouse, touch, and keyboard."
 msgstr ""
 
 #: ../../humanguide/other-design-considerations/convergence.rst:2
@@ -1091,7 +1006,7 @@ msgid "Input method"
 msgstr ""
 
 #: ../../humanguide/other-design-considerations/convergence.rst:20
-msgid "Using touch a user can swipe or long-press on a list item to reveal a contextual menu. Using a pointer (mouse or trackpad) a user can right-click the item to reveal the contextual menu. Using a keyboard a user can focus the desired item and press the MENU key to open the context menu."
+msgid "Using touch, a user can swipe or long-press on a list item to reveal a contextual menu. Using a pointer (mouse or trackpad) a user can right-click the item to reveal the contextual menu. Using a keyboard a user can focus the desired item and press the MENU key to open the context menu."
 msgstr ""
 
 #: ../../humanguide/other-design-considerations/index.rst:2
@@ -1111,7 +1026,7 @@ msgid "One of the most popular scalable formats is `SVG <https://en.wikipedia.or
 msgstr ""
 
 #: ../../humanguide/other-design-considerations/scaling-images.rst:11
-msgid "One particularity of qml, though, is that svg are rendered to use low memory and losing the advatadges of scalability. When using a SVG file in an ``Image`` element we can use the property called ``sourceSize``. This will define the rendered size of the SVG image. A SVG image with a ``sourceSize`` width and height of 252 pixels, will be rendered as if the scalable image would be a png of 252 per 252 pixels."
+msgid "One particularity of qml, though, is that SVGs are rendered to use less memory, losing the advantages of scalability. When using a SVG file in an ``Image`` element we can use the property called ``sourceSize``. This will define the rendered size of the SVG image. A SVG image with a ``sourceSize`` width and height of 252 pixels, will be rendered as if the scalable image would be a png of 252 per 252 pixels."
 msgstr ""
 
 #: ../../humanguide/other-design-considerations/scaling-images.rst:16
@@ -1119,7 +1034,15 @@ msgid "Different redered sizes of the same svg image"
 msgstr ""
 
 #: ../../humanguide/other-design-considerations/scaling-images.rst:18
-msgid "It is not advisable to define ``sourceSize`` as a relative size to avoid performance issues. A good practice could be defining different ``sourceSize`` depending on diverse thresholds. In the example below the image.svg will be rendered 60 per 60 grid units if the main view is bigger that 70 grid units but as an image of 40 per 40 grid units in the other cases. Like this we make use of the image scability and no performance cost."
+msgid "It is not advisable to define ``sourceSize`` as a relative size to avoid performance issues. A good practice is defining ``sourceSize`` based on a set list of thresholds."
+msgstr ""
+
+#: ../../humanguide/other-design-considerations/scaling-images.rst:20
+msgid "In the example below the image.svg will be rendered 60 per 60 grid units if the main view is bigger that 70 grid units but as an image of 40 per 40 grid units in the other cases. By defining these thresholds, we get scalable images without a huge performance cost."
+msgstr ""
+
+#: ../../humanguide/other-design-considerations/scaling-images.rst:30
+msgid "Read more about image performance in the `Qt wiki <https://wiki.qt.io/Performance_tip_Images>`__."
 msgstr ""
 
 #: ../../humanguide/other-design-considerations/translations.rst:2
@@ -1127,7 +1050,7 @@ msgid "Translations"
 msgstr ""
 
 #: ../../humanguide/other-design-considerations/translations.rst:4
-msgid "Adding translations to your app makes it more accessible to international users. `Clickable <http://clickable.bhdouglass.com/>`__ will handle this process automatically, extracting new translatable strings into a pot file (the source strings of your app, to be translated)"
+msgid "Adding translations to your app makes it more accessible to international users. `Clickable <http://clickable.bhdouglass.com/>`__ will handle this process automatically, extracting new translatable strings into a pot file (the source strings of your app, to be translated)."
 msgstr ""
 
 #: ../../humanguide/other-design-considerations/translations.rst:6
