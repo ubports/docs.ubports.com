@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 14:08-0500\n"
-"PO-Revision-Date: 2020-03-11 16:22+0000\n"
+"PO-Revision-Date: 2020-03-13 16:22+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-contribute/ru/>\n"
@@ -1030,91 +1030,139 @@ msgstr "Редактор файлов .po/.ts"
 #: ../../contribute/translations.rst:51
 msgid "If you want to work with *.po*/*.ts* files directly you need to know what you're doing for sure. The first thing you should always remember is:"
 msgstr ""
+"Если Вы хотите напрямую работать с файлами *.po*/*.ts*, нужно точно понимать "
+"все принципы работы. Первое, о чём нужно помнить, это:"
 
 #: ../../contribute/translations.rst:54
 msgid "Do **never** commit *.po* files to projects that are translated using weblate. This could break the whole translation exchange process with weblate."
 msgstr ""
+"**Никогда ** не загружайте файлы * .po * в проекты, которые переведены с "
+"помощью weblate. Это может нарушить весь процесс переводов с помощью этого "
+"сервиса."
 
 #: ../../contribute/translations.rst:56
 msgid "As was said up above, you need a file editor of your choice and a GitHub/GitLab account to translate *.po*/*.ts* files directly. Idealy you do have `clickable <http://clickable.bhdouglass.com/en/latest/>`_ set up and know how to build an app."
 msgstr ""
+"Как уже упоминалось выше, для переводов и работы с файлами *.po*/*.ts*  "
+"подойдёт любой текстовый редактор и учетная запись на сайтах GitHub/GitLab. "
+"Идеальный случай, если установлен `clickable <http://clickable.bhdouglass."
+"com/en/latest/>`_ , и Вы умеете компилировать приложения."
 
 #: ../../contribute/translations.rst:58
 msgid "There are online gettext .po editors and those you can install in your computer. You can choose whatever editor you want, but we prefer to work with free software only. There are too many plain text editors and tools to help you translate *.po*/*.ts* files to put down a list here."
 msgstr ""
+"Текстовых редакторов очень много - есть как онлайн-приложения, так и "
+"программы, которые можно установить на ПК. Можно работать в любом редакторе, "
+"но мы предпочитаем бесплатное программное обеспечение. Утилит для перевода и "
+"программ для работы с файлами *.po*/*.ts* много, нет смысла приводить какой-"
+"то список."
 
 #: ../../contribute/translations.rst:61
+#, fuzzy
 msgid "For high quality translations it is recommended to go through all of the steps given below. Although if you are not familiar with building apps using clickable, skip the steps 4. to 6. You may not be able to translate the latest strings though. And you will not know if the strings fit into the apps layout."
 msgstr ""
+"Чтобы подготовить качественный перевод, рекомендуется пройти все шаги, "
+"указанные ниже. Хотя, если вы не знакомы с созданием приложений формата "
+"clickable, пропустите шаги с 4 по 6. Но после этого Вы не сможете перевести "
+"последние строчки в приложении. И не будет понятно, вписываются ли строки в "
+"макет приложения."
 
 #: ../../contribute/translations.rst:63
 msgid "How to proceed:"
-msgstr ""
+msgstr "Как продолжить работу над переводом:"
 
 #: ../../contribute/translations.rst:65
 msgid "fork the apps repo into your GitHub or GitLab account"
 msgstr ""
+"скопируйте (сделайте форк) репозитория приложения в свою учётную запись "
+"GitHub или GitLab"
 
 #: ../../contribute/translations.rst:66
 msgid "clone the repo locally or use GitLab's online editor"
 msgstr ""
+"сохраните копию репозитория на свой компьютер или используйте для перевода "
+"стандартный онлайн-редактор GitLab"
 
 #: ../../contribute/translations.rst:67
 msgid "(optional) create a new branch for the translation"
-msgstr ""
+msgstr "(необязательно) создайте новую ветвь для перевода"
 
 #: ../../contribute/translations.rst:68
+#, fuzzy
 msgid "build the app using clickable to get up-to-date *.pot*/*.ts* template files"
 msgstr ""
+"скомпилируйте приложение с помощью clickable, чтобы получить самые последние "
+"версии файлов *.pot*/*.ts*"
 
 #: ../../contribute/translations.rst:69
 msgid "update the desired *.po*/*.ts* language file(s) from the template"
-msgstr ""
+msgstr "обновите соответствующие  языковые файлы *.po*/*.ts* из шаблона"
 
 #: ../../contribute/translations.rst:70
 msgid "translate all strings"
-msgstr ""
+msgstr "переведите все строчки с текстом"
 
 #: ../../contribute/translations.rst:71
 msgid "build and install the app on your device and test the translations"
 msgstr ""
+"скомпилируйте приложение и установите его на смартфон, после этого проверьте "
+"перевод"
 
 #: ../../contribute/translations.rst:72
 msgid "(optional) repeat steps 6. and 7. until you are satisfied with your work"
 msgstr ""
+"(необязательно) повторяйте пункты 6 и 7, пока не получится "
+"удовлетворительного результата"
 
 #: ../../contribute/translations.rst:73
+#, fuzzy
 msgid "push the translated *.po*/*.ts* file(s) to your forked repo [do NOT commit *.pot*/*.ts* template files]"
 msgstr ""
+"переместите переведенные версии файлов *.po*/*.ts* в скопированный "
+"репозиторий [не копируйте файлы  *.pot*/*.ts*  напрямую в исходный "
+"репозиторий]"
 
 #: ../../contribute/translations.rst:74
 msgid "open an merge/pull request from your fork to the apps repo"
 msgstr ""
+"создайте запрос на объединение изменений на странице оригинального "
+"репозитория"
 
 #: ../../contribute/translations.rst:78
 msgid "Translation Team Communication"
-msgstr ""
+msgstr "Общение с группой  по переводам (Translation Team)"
 
 #: ../../contribute/translations.rst:80
 msgid "You may talk to others regarding translations by using `the forum category <https://forums.ubports.com/category/39/translations>`_ that UBports provides for this task. To use it you need to register, or login if you're registered already."
 msgstr ""
+"Можно пообщаться с другими пользователями, занимающимися переводами в `"
+"соответствующем разделе на форуме UBports  <https://forums.ubports.com/"
+"category/39/translations>`_ . Для этого придётся там зарегистрироваться."
 
 #: ../../contribute/translations.rst:82
 msgid "The only requirement is to start your post putting down your language in brackets in the \"Enter your topic title here\" field. For example, ``[Spanish] How to translate whatever?``"
 msgstr ""
+"Единственное требование - перед тем, как создать тему, укажите язык перед "
+"названием. Например, ``[Spanish] Как создать перевод?``"
 
 #: ../../contribute/translations.rst:84
 msgid "In your interactions with your team you'll find the best way to coordinate your translations."
 msgstr ""
+"Общение с другими пользователями поможет лучше организовать работу над "
+"переводами."
 
 #: ../../contribute/translations.rst:87
 msgid "License"
-msgstr ""
+msgstr "Лицензия"
 
 #: ../../contribute/translations.rst:89
 msgid "All the translation projects, and all your contributions to this project, are under a `Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) <https://creativecommons.org/licenses/by-sa/4.0/>`_ license that you explicitly accept by contributing to the project."
 msgstr ""
+"Все переводы и все работы над проектом ведутся под лицензией Creative "
+"Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) "
+"<https://creativecommons.org/licenses/by-sa/4.0/> ` _Ваше участие в проекте "
+"явно говорит о том, что Вы согласны с условиями этой лицензии."
 
 #: ../../contribute/translations.rst:91
 msgid "Go to that link to learn what this exactly means."
-msgstr ""
+msgstr "Чтобы подробнее изучить лицензионные условия, перейдите по ссылке."
