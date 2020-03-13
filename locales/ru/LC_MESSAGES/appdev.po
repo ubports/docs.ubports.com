@@ -8,17 +8,21 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 15:16-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-03-16 12:22+0000\n"
+"Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
+"Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
+"documentation-appdev/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.8\n"
 
 #: ../../appdev/guides/contenthub.rst:4
 msgid "The content hub - tips and tricks"
-msgstr ""
+msgstr "Content hub - полезные советы"
 
 #: ../../appdev/guides/contenthub.rst:9
 msgid "Content Hub Share Page"
@@ -27,110 +31,165 @@ msgstr ""
 #: ../../appdev/guides/contenthub.rst:11
 msgid "On Ubuntu Touch the apps are confined. The way of sharing files between them is through the Content Hub, a part of the system that takes care of file import, export and sharing."
 msgstr ""
+"В Ubuntu Touch возможности приложении сильно ограничены. Обмен файлами между "
+"ними осуществляется через Content Hub,  это часть операционной системы, "
+"которая занимается импортом, экспортом и совместным использованием файлов."
 
 #: ../../appdev/guides/contenthub.rst:14
 msgid "Different ways of sharing the content"
-msgstr ""
+msgstr "Разные способы поделиться контентом"
 
 #: ../../appdev/guides/contenthub.rst:16
 msgid "As we can see in the `Content Hub documentation <https://api-docs.ubports.com/sdk/apps/qml/Ubuntu.Content/ContentHandler.html#detailed-description>`_, there are several ways of handling the file to be shared:"
 msgstr ""
+"Как можно узнать из `документации к Content Hub <https://api-docs.ubports."
+"com/sdk/apps/qml/Ubuntu.Content/ContentHandler.html#detailed-description>`_, "
+"есть несколько способов совместного доступа к файлам:"
 
 #: ../../appdev/guides/contenthub.rst:18
 msgid "``ContentHandler.Source`` (The app selected is going to be the source of the file imported)"
 msgstr ""
+"``ContentHandler.Source``(Выбранное приложение будет источником "
+"импортированного файла)"
 
 #: ../../appdev/guides/contenthub.rst:19
 msgid "``ContentHandler.Destination`` (The app selected is going to be the destination of the file exported)"
 msgstr ""
+"``ContentHandler.Destination``(Выбранное приложение будет местом назначения "
+"экспортируемого файла)"
 
 #: ../../appdev/guides/contenthub.rst:20
+#, fuzzy
 msgid "``ContentHandler.Share`` (The app selected is going to be the app from witch the file is going to be shared from)"
 msgstr ""
+"``ContentHandler.Share``(Выбранное приложение - это приложение, из которого "
+"файл будет в общем доступе)"
 
 #: ../../appdev/guides/contenthub.rst:23
 msgid "Importing"
-msgstr ""
+msgstr "Импортирование"
 
 #: ../../appdev/guides/contenthub.rst:28
 msgid "Webapp Creator on the OpenStore"
-msgstr ""
+msgstr "Webapp Creator в OpenStore"
 
 #: ../../appdev/guides/contenthub.rst:30
 msgid "Looking into the code of Webapp Creator, we’ll find the code to import an image to be used as icon. Tapping on the place holder will open the Content Hub that will let us choose from where to import the image (`see the Webapp Creator source code <https://gitlab.com/cibersheep/webapp-creator/blob/master/webapp-creator/app/ImportPage.qml#L38>`_)"
 msgstr ""
+"Мы изучим исходный текст Webapp Creator и найдём участок кода, отвечающий за "
+"импорт изображения, которое используется в качестве иконки. Движение с "
+"нажатой клавишей мышки откроет Content Hub, где мы сможем выбрать откуда "
+"импортировать изображение  (`смотрите исходный код Webapp Creator "
+"<https://gitlab.com/cibersheep/webapp-creator/blob/master/webapp-creator/app/"
+"ImportPage.qml#L38>`_)"
 
 #: ../../appdev/guides/contenthub.rst:41
 msgid "``ContentPeerPicker`` is the element that shows the apps."
-msgstr ""
+msgstr "``ContentPeerPicker`` - элемент, который показывает приложения."
 
 #: ../../appdev/guides/contenthub.rst:47
 msgid "``contentType`` is passed in `Main.qml <https://gitlab.com/cibersheep/webapp-creator/blob/master/webapp-creator/app/Main.qml#L118>`_ as ContentType.Pictures. So, we will only see apps from which we only can import images. ``handler`` is passed in the same line as ContentHandler.Source. As we want to import an image from the app selected in the Content Hub."
 msgstr ""
+"``contentType`` передаётся в `Main.qml <https://gitlab.com/cibersheep/"
+"webapp-creator/blob/master/webapp-creator/app/Main.qml#L118>`_ как "
+"ContentType.Pictures. Таким образом, мы увидим только те приложения, из "
+"которых мы можем импортировать только изображения. ``handler`` передаётся в "
+"той же строчке, что и ContentHandler.Source потому, что мы хотим "
+"импортировать изображение из приложения, выбранного в Content Hub."
 
 #: ../../appdev/guides/contenthub.rst:50
 msgid "Exporting"
-msgstr ""
+msgstr "Экспорт"
 
 #: ../../appdev/guides/contenthub.rst:55
 msgid "Gelek in the OpenStore"
-msgstr ""
+msgstr "Gelek в OpenStore"
 
 #: ../../appdev/guides/contenthub.rst:57
 msgid "In Gelek, we are going to end with some saved games that we want to save in our device or share with ourselves (in Telegram and then save them to our computer)."
 msgstr ""
+"В Gelek мы будем  работать с некоторыми сохраненными играми, которые нужно "
+"хранить в нашем устройстве или поделиться с пользователями (через Telegram, "
+"а затем перенести их на десктоп)."
 
 #: ../../appdev/guides/contenthub.rst:61
 msgid "Tapping on the download icon we will get a Content Hub to *save* the game file (which is actually an export)."
 msgstr ""
+"Удерживая курсор на иконке \"Download\" мы заставим Content Hub *сохранить* "
+"файл игры (и он же предназначен для экспорта)."
 
 #: ../../appdev/guides/contenthub.rst:63
 msgid "The game file is a file of type ``glksave``. We will tell Content Hub that we are sending a file of type ``All`` (`see the Install Page code <https://gitlab.com/cibersheep/gelek/blob/master/app/InstallPage.qml#L38>`_)."
 msgstr ""
+"Файл игры относится к типу ``glksave``. Мы сообщим Content Hub, что мы "
+"собираемся отправить файл типа ``All`` (`смотрите коды на странице "
+"инсталляции <https://gitlab.com/cibersheep/gelek/blob/master/app/"
+"InstallPage.qml#L38>`_)."
 
 #: ../../appdev/guides/contenthub.rst:76
+#, fuzzy
 msgid "``contentType`` is ``ContentType.All``, so we will only see apps which are able to receive unmarked file types. ``handler`` is ``ContentHandler.Destination``, so the app selected should store the saved game."
 msgstr ""
+"``contentType`` - это``ContentType.All``, поэтому мы увидим только "
+"приложения,  которые могут получать файлы с неуказанными типами.  ``handler``"
+" - это ``ContentHandler.Destination``, поэтому выбранное приложение должно "
+"сохранять файл игры.."
 
 #: ../../appdev/guides/contenthub.rst:78
 msgid "Tapping on the File Manager we will save the saved game in the folder we choose."
 msgstr ""
+"Нажатие вкладки \"File Manager\" переместит сохраненную игру в папку, "
+"которую мы выберем."
 
 #: ../../appdev/guides/contenthub.rst:81
 msgid "Sharing"
-msgstr ""
+msgstr "Sharing (Общий доступ)"
 
 #: ../../appdev/guides/contenthub.rst:83
 msgid "Similarly, tapping on the share icon will allow us to send the saved game through Telegram to ourselves (`see the Webapp Creator Import Page source code <https://gitlab.com/cibersheep/webapp-creator/blob/master/webapp-creator/app/ImportPage.qml#L38>`_)."
 msgstr ""
+"Точно так же, нажатие на иконку \"share\" отправит сохранённую игру другим "
+"пользователям через мессенджер Telegram (`подробнее смотрите страничку с "
+"исходным кодом Webapp Creator Import Page  <https://gitlab.com/cibersheep/"
+"webapp-creator/blob/master/webapp-creator/app/ImportPage.qml#L38>`_)."
 
 #: ../../appdev/guides/contenthub.rst:96
 msgid "The only difference between this and the previous code is that ``handler`` is ``ContentHandler.Share``"
 msgstr ""
+"Разница между этим и предыдущим участком кода только в том, что ``handler`` -"
+" это ``ContentHandler.Share``"
 
 #: ../../appdev/guides/contenthub.rst:99
 msgid "Wait a minute. Why the different apps?"
-msgstr ""
+msgstr "Подождите, почему приложения разные?"
 
 #: ../../appdev/guides/contenthub.rst:104
 msgid "Content Hub: Export vs Share"
-msgstr ""
+msgstr "Content Hub: Экспорт или Общий доступ ?"
 
 #: ../../appdev/guides/contenthub.rst:106
 msgid "Each developer can decide the rules each app would follow in relation to the Content Hub. Why the OpenStore is shown as the destination of an export?"
 msgstr ""
+"Каждый разработчик может самостоятельно решить правила, по которым каждое "
+"приложение взаимодействует с Content Hub.Почему OpenStore показывается как "
+"место для экспорта?"
 
 #: ../../appdev/guides/contenthub.rst:108
 msgid "Let’s check its manifest.json"
-msgstr ""
+msgstr "Давайте проверим manifest.json для этого приложения"
 
 #: ../../appdev/guides/contenthub.rst:121
 msgid "The above code defines that the hooks for the app named ``\"openstore\"`` in relation to the ``\"content-hub\"`` should follow the rules defined in ``openstore-contenthub.json``"
 msgstr ""
+"Приведённый выше код показывает, что в приложении есть hooks ``\"openstore\""
+"``связанные с ``\"content-hub\"``, и они должны работать по правилам, "
+"заданным в файле ``openstore-contenthub.json``"
 
 #: ../../appdev/guides/contenthub.rst:131
 msgid "This means, the OpenStore will be the destination for *all* ``ContentTypes``."
 msgstr ""
+"Это значит, что OpenStore будет местом назначения для *всех* "
+"``ContentTypes``."
 
 #: ../../appdev/guides/contenthub.rst:133
 msgid "What about uMatriks? Let’s see its ``content-hub.json``"
