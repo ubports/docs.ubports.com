@@ -65,6 +65,12 @@ You can check that adb server is correctly running locally on your phone by open
     phablet@ubuntu-phablet:~$ adb devices  
     List of devices attached  
     emulator-5558	device  
+    
+If you get ``emulator-5558  offline`` :
+
+1. Find the pid of anbox owned by phablet with `` top | grep anbox``
+2. Kill the process (it will restart by itself) ``kill xxxx  #xxxx the pid number``
+
 
 How to install new APKs
 -----------------------
