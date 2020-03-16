@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2020-01-19 19:40+0000\n"
-"Last-Translator: Peter keck <peter.keck@t-online.de>\n"
+"PO-Revision-Date: 2020-03-16 12:22+0000\n"
+"Last-Translator: Otto Hakstetter <otto@hakstetter.de>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/de/>\n"
 "Language: de\n"
@@ -883,7 +883,7 @@ msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:24
 msgid "accounts"
-msgstr "accounts"
+msgstr "Konten"
 
 #: ../../appdev/platform/apparmor.rst:26
 msgid "Description: Can use Online Accounts."
@@ -902,7 +902,6 @@ msgstr "Beschreibung: Kann Online-Konten verwenden."
 #: ../../appdev/platform/apparmor.rst:249
 #: ../../appdev/platform/apparmor.rst:259
 #: ../../appdev/platform/apparmor.rst:287
-#, fuzzy
 msgid "Usage: common"
 msgstr "Verwendung: häufig"
 
