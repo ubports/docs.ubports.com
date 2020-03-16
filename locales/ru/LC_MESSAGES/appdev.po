@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 15:16-0500\n"
-"PO-Revision-Date: 2020-03-16 12:22+0000\n"
+"PO-Revision-Date: 2020-03-17 13:22+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
@@ -194,74 +194,107 @@ msgstr ""
 #: ../../appdev/guides/contenthub.rst:133
 msgid "What about uMatriks? Let’s see its ``content-hub.json``"
 msgstr ""
+"А что с приложением uMatriks? Давайте посмотрим его файл ``content-hub.json``"
 
 #: ../../appdev/guides/contenthub.rst:161
 msgid "So, with this example, uMatriks will be able to be the destination, source and share app for all kinds of ``ContentType``. What about the other hooks in the ``manifest.json``? That is discussed in the next guide."
 msgstr ""
+"Так, в этом примере uMatriks может быть местом назначения, исходной точкой и "
+"приложением для общего доступа для всех типов ``ContentType``. Что можно "
+"сказать о других hooks в файле ``manifest.json``?  Об этом рассказывается в "
+"следующей части руководства."
 
 #: ../../appdev/guides/cookbook.rst:2
 msgid "App development cookbook"
-msgstr ""
+msgstr "Справочник по созданию приложений"
 
 #: ../../appdev/guides/cookbook.rst:5
 msgid "Unofficial resources"
-msgstr ""
+msgstr "Неофициальные источники"
 
 #: ../../appdev/guides/cookbook.rst:7
 msgid "In this section you will find links to external resources about creating applications for Ubuntu Touch."
 msgstr ""
+"В этом разделе содержатся ссылки на внешние источники, где можно найти "
+"информацию о создании приложений для Ubuntu Touch."
 
 #: ../../appdev/guides/cookbook.rst:9
 msgid "`Ubuntu Touch programming book <https://www.gitbook.com/book/mimecar/ubuntu-touch-programming-course/details>`__"
 msgstr ""
+"`Ubuntu Touch programming book <https://www.gitbook.com/book/mimecar/"
+"ubuntu-touch-programming-course/details>`__"
 
 #: ../../appdev/guides/cookbook.rst:10
 msgid "`Application Templates by fulvio <https://github.com/fulvio999/ubports_app_templates>`__"
 msgstr ""
+"`Application Templates by fulvio <https://github.com/fulvio999/"
+"ubports_app_templates>`__"
 
 #: ../../appdev/guides/cookbook.rst:13
 msgid "Playground"
-msgstr ""
+msgstr "\"Песочница\""
 
 #: ../../appdev/guides/cookbook.rst:15
 msgid "In a completely free and open source community, it is natural to have community members exploring the limits of the platform in many many directions. In this section you will find links to external resources that do exactly that: Explore. The purpose of this list is to show the unlimited possibilities of an open platform like Ubuntu Touch."
 msgstr ""
+"В полностью свободном и открытом сообществе совершенно естественным кажется, "
+"что найдутся пользователи, которым станет интересно изучить систему со всех "
+"сторон. В этом разделе Вы найдёте ссылки на внешние источники, специально "
+"предназначенные для исследований. Цель списка - показать неограниченные "
+"возможности открытых платформ."
 
 #: ../../appdev/guides/cookbook.rst:18
 msgid "The resources listed here do not necessarily represent the officially endorsed way of developing applications for Ubuntu Touch, but are interesting experiments."
 msgstr ""
+"Перечисленные здесь ресурсы не обязательно представляют официально "
+"одобренный способ разработки приложений для Ubuntu Touch, но будут интересны "
+"для экспериментов."
 
 #: ../../appdev/guides/cookbook.rst:20
 msgid "`Free Pascal development for Ubuntu Touch <http://kriscode.blogspot.tw/2016/09/freepascal-development-for-ubuntu-phone.html>`__"
 msgstr ""
+"`Free Pascal development for Ubuntu Touch <http://kriscode.blogspot.tw/2016/"
+"09/freepascal-development-for-ubuntu-phone.html>`__"
 
 #: ../../appdev/guides/cookbook.rst:21
 msgid "`Lazarus development for Ubuntu Touch <http://kriscode.blogspot.tw/2016/10/lazarus-development-for-ubuntu-phone.html>`__"
 msgstr ""
+"`Lazarus development for Ubuntu Touch <http://kriscode.blogspot.tw/2016/10/"
+"lazarus-development-for-ubuntu-phone.html>`__"
 
 #: ../../appdev/guides/cookbook.rst:22
 msgid "`Geany on Ubuntu Touch device as text editor, source code editor, debugger and compiler for multiple languages <http://kriscode.blogspot.tw/2017/10/geany-on-ubuntu-touch-device-as-text.html>`__"
 msgstr ""
+"`Geany on Ubuntu Touch device as text editor, source code editor, debugger "
+"and compiler for multiple languages <http://kriscode.blogspot.tw/2017/10/"
+"geany-on-ubuntu-touch-device-as-text.html>`__"
 
 #: ../../appdev/guides/cookbook.rst:23
 msgid "`Publish your existing Qt QML app to Ubuntu Touch using QMake (Video) <https://youtu.be/ehqlwRNrfO0>`__"
 msgstr ""
+"`Publish your existing Qt QML app to Ubuntu Touch using QMake (Видео) "
+"<https://youtu.be/ehqlwRNrfO0>`__"
 
 #: ../../appdev/guides/cookbook.rst:24
 msgid "`Publish your existing Qt QML app to Ubuntu Touch using CMake (Video) <https://youtu.be/c2sq6aLeGec>`__"
 msgstr ""
+"`Publish your existing Qt QML app to Ubuntu Touch using CMake (Видео) "
+"<https://youtu.be/c2sq6aLeGec>`__"
 
 #: ../../appdev/guides/cookbook.rst:25
 msgid "`Getting started with Clickable (Video) <https://youtu.be/TE-s5522v0Y>`__"
 msgstr ""
+"`Getting started with Clickable (Видео) <https://youtu.be/TE-s5522v0Y>`__"
 
 #: ../../appdev/guides/cookbook.rst:26
 msgid "`Content Hub overview (Video) <https://youtu.be/AihwC2sPIk0>`__"
-msgstr ""
+msgstr "`Content Hub overview (Видео) <https://youtu.be/AihwC2sPIk0>`__"
 
 #: ../../appdev/guides/cookbook.rst:27
 msgid "`Import files to your app with Content Hub (Video) <https://youtu.be/q6zzM16jw1U>`__"
 msgstr ""
+"`Import files to your app with Content Hub (Видео) <https://youtu.be/"
+"q6zzM16jw1U>`__"
 
 #: ../../appdev/guides/dependencies.rst:2
 msgid "Handle C++ dependencies with Clickable"
@@ -281,7 +314,7 @@ msgstr ""
 
 #: ../../appdev/guides/dependencies.rst:11
 msgid "Compilation"
-msgstr ""
+msgstr "Компиляция"
 
 #: ../../appdev/guides/dependencies.rst:12
 msgid "Compiling the library gives you control over the result, which brings a lot of advantages. For instance, you may disable components your app doesn't need and link the library statically, resulting in a much smaller package size."
