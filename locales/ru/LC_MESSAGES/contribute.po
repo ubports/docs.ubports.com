@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 14:08-0500\n"
-"PO-Revision-Date: 2020-03-06 06:22+0000\n"
+"PO-Revision-Date: 2020-03-13 16:22+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-contribute/ru/>\n"
@@ -604,11 +604,11 @@ msgstr "`calendar-app в GitLab`_"
 
 #: ../../contribute/preinstalled-apps.rst:25
 msgid "Clock"
-msgstr "Clock"
+msgstr "Часы"
 
 #: ../../contribute/preinstalled-apps.rst:25
 msgid "`Clock on OpenStore`_"
-msgstr "`Clock в OpenStore`_"
+msgstr "`Приложение \"Часы\" в OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:25
 msgid "`clock-app on GitLab`_"
@@ -628,7 +628,7 @@ msgstr "`filemanager-app в GitLab`_"
 
 #: ../../contribute/preinstalled-apps.rst:27
 msgid "Gallery"
-msgstr "Gallery"
+msgstr "Галерея"
 
 #: ../../contribute/preinstalled-apps.rst:27
 msgid "`Gallery on OpenStore`_"
@@ -640,7 +640,7 @@ msgstr "`gallery-app в GitLab`_"
 
 #: ../../contribute/preinstalled-apps.rst:28
 msgid "Music"
-msgstr "Music"
+msgstr "Музыка"
 
 #: ../../contribute/preinstalled-apps.rst:28
 msgid "`Music on OpenStore`_"
@@ -700,7 +700,7 @@ msgstr "`ubports-app в GitLab`_"
 
 #: ../../contribute/preinstalled-apps.rst:33
 msgid "Weather"
-msgstr "Weather"
+msgstr "Погода"
 
 #: ../../contribute/preinstalled-apps.rst:33
 msgid "`Weather on OpenStore`_"
@@ -802,215 +802,367 @@ msgstr "Подтверждение сообщений об ошибках (ба�
 #: ../../contribute/quality-assurance.rst:14
 msgid "Unconfirmed bugreports are labeld **needs confirmation** to enable `global filtering <https://github.com/ubports/ubuntu-touch/issues?q=is%3Aissue+is%3Aopen+label%3A%22needs+confirmation%22>`__. Browse through the list, read the bugreports and try to reproduce the issues that are described. If necessary, add :doc:`missing information or logs, or improve the quality of the report by other means <bugreporting>`. Leave a comment stating your device, channel, build number and whether or not you were able to reproduce the issue."
 msgstr ""
+"Неподтверждённые баг-репорты получают метку **needs confirmation**, чтобы их "
+"можно было найти через  `фильтр <https://github.com/ubports/ubuntu-touch/"
+"issues?q=is%3Aissue+is%3Aopen+label%3A%22needs+confirmation%22>`__. "
+"Посмотрите этот список и попробуйте воспроизвести ошибки, которые в нём "
+"перечислены. Если нужно, то дополните  багрепорт:doc:`новой информацией, "
+"прикрепите лог-файлы или чем-то иным, что может помочь разработчикам "
+"<bugreporting>`. Можно указать в комментариях модель Вашего устройства, "
+"версию сборки, канал разработки и удалось ли воспроизвести ошибку."
 
 #: ../../contribute/quality-assurance.rst:16
 msgid "If you have write-access to the repository, you can replace the **needs confirmation** label with **bug** (to mark it confirmed) or **invalid** (if the issue is definitely not reproducible). In that case it should be closed."
 msgstr ""
+"Если у Вас есть права на запись в репозиторий, можно поменять ярлык **needs "
+"confirmation** на  **bug** (если  ошибка подтверждается) или **invalid** ("
+"если баг не воспроизводится). В последнем случае запрос нужно закрыть."
 
 #: ../../contribute/quality-assurance.rst:18
 msgid "If you find two issues describing the same problem, leave a comment and try to find their differences. If they are in fact identical, close the newer one and label it **duplicate**."
 msgstr ""
+"Если Вы найдете два открытых тикета, описывающих одну и ту же проблему, "
+"напишите комментарий и попробуйте найти различия.Если эти две заявки на "
+"самом деле одинаковые, закройте последнюю по дате и обозначьте ее маркером "
+"**duplicate**."
 
 #: ../../contribute/quality-assurance.rst:21
 msgid "Testing patches"
-msgstr ""
+msgstr "Тестирование патчей"
 
 #: ../../contribute/quality-assurance.rst:23
+#, fuzzy
 msgid "Pull-requests can be tested using the `QA scripts <https://github.com/ubports/ubports-qa-scripts>`_. Run ``ubports-qa -h`` for usage information."
 msgstr ""
+"Pull-requests можно протестировать с помощью `скриптов QA  <https://github."
+"com/ubports/ubports-qa-scripts>`_. Запустите команду ``ubports-qa -h`` для "
+"более подробной информации."
 
 #: ../../contribute/quality-assurance.rst:25
 msgid "Once the pull-request has been merged, the issue it fixes is moved to the quality assurance column of the `GitHub project <https://github.com/ubports/ubuntu-touch/projects/3>`__. Please check if the issues in this column are still present in the latest update on the devel channel, then see if anything else has broken in the update. Check if the developer mentioned specific things to look out for when testing and leave a comment detailing your experience. If you have write-access to the repository, you can move the issue back to **In Development** (and reopen it) or forward to **Release Candidate** as specified by the :doc:`issue tracking guidelines </about/process/issue-tracking>`."
 msgstr ""
+"После объединения pull-request и исправления ошибки, он перемещается в "
+"столбец группы обеспечения качества на`страничке проекта в GitHub "
+"<https://github.com/ubports/ubuntu-touch/projects/3>`__.Пожалуйста, "
+"проверьте, есть ли эта заявка в последнем обновлении на канале devel, а "
+"затем посмотрите, не сломалось ли что-нибудь еще в этом обновлении. "
+"Проверьте, упомянул ли разработчик конкретные вещи, на которые нужно "
+"обратить внимание при тестировании, и оставьте комментарий с подробным "
+"описанием ваших действий по воспроизведению бага. Если у вас есть права на "
+"запись в репозиторий, вы можете перенести  баг обратно в статус **In "
+"Development** (и открыть его заново)или перенести в  **Release Candidate** "
+"как это описывается в документе :doc:`issue tracking guidelines </about/"
+"process/issue-tracking>`."
 
 #: ../../contribute/quality-assurance.rst:28
 msgid "Initial triaging of issues"
-msgstr ""
+msgstr "Первичная обработка баг-репортов"
 
 #: ../../contribute/quality-assurance.rst:30
 msgid "Initial triaging of new issues is done by QA-team members with write-access to the repository. If a new issue is filed, read the report and add the correct labels as specified by the :doc:`issue tracking guidelines </about/process/issue-tracking>`. You can also immediately start confirming the bugreport."
 msgstr ""
+"Первичное рассмотрение новых заявок проводится участником группы обеспечения "
+"качества (QA) с правами записи в папки репозитория. Если новая запись уже "
+"создана,  внимательно изучите её и установите корректные маркеры, как это "
+"указано в руководстве :doc:`issue tracking guidelines </about/process/issue-"
+"tracking>`. Сразу же можно заняться подтверждением баг-репорта."
 
 #: ../../contribute/quality-assurance.rst:32
 msgid "If the new issue has already been reported elsewhere, label it **duplicate** and close it."
 msgstr ""
+"Если новый баг-репорт уже когда-то поступал,  отметьте его маркером "
+"**duplicate** и закройте."
 
 #: ../../contribute/translations.rst:4
 msgid "Although English is the official base language for all UBports projects we believe you have the right to use it in any language you want."
 msgstr ""
+"Хотя английский  является официальным языком для всех проектов UBports, "
+"пользователь может свободно использовать любой язык."
 
 #: ../../contribute/translations.rst:6
 msgid "We are working hard to meet that goal, and you can help as well. You decide how much time you can put into translation. From minutes to hours, everything counts."
 msgstr ""
+"Мы прилагаем все усилия, чтобы создать действительно качественный продукт, и "
+"Вы тоже можете помочь нам. Вы сами решаете, сколько времени потратить на "
+"перевод. Несколько минут, несколько часов - нам нужна любая помощь."
 
 #: ../../contribute/translations.rst:9
 msgid "How does a text gets translated (technical background)"
-msgstr ""
+msgstr "Как переводить текст (техническую документацию)"
 
 #: ../../contribute/translations.rst:10
 msgid "Most apps running on Ubuntu Touch use `GNU gettext <https://www.gnu.org/software/gettext/>`_ for translations. A *.pot* template file holds an apps strings. From this template for every language an individual *.po* file is derived. Those *.po* files do contain the actual translations. To add a new language a new *.po* file needs to be created. To translate a string the *.po* file needs to be edited. Next to the original string (english in most cases) the appropriate translation needs to be entered following the *.po* gettext file syntax. Some apps do use `QtLinguist <https://doc.qt.io/qt-5/qtlinguist-index.html>`_ for translation. It does follow the same priciples only using *.ts* files for translations with another syntax. As template one *.ts* file is used."
 msgstr ""
+"Большинство приложений для Ubuntu Touch переводятся с помощью `GNU gettext "
+"<https://www.gnu.org/software/gettext/>`_. В *.pot*-файле находятся строки "
+"со всеми подписями и текстами из приложения. Из этого файла формируется "
+"отдельный *.po*-файл для каждого языкового раздела. Этот файл можно можно "
+"открыть в любом текстовом редакторе. За каждой оригинальной строкой (в "
+"большинстве случаев, на английском) следует переведенная строка согласно "
+"правилам и синтаксису файлов  *.po*. Некоторые приложения можно перевести с "
+"помощью `QtLinguist <https://doc.qt.io/qt-5/qtlinguist-index.html>`."
 
 #: ../../contribute/translations.rst:14
+#, fuzzy
 msgid "Within a app strings are marked either this way ``i18n.tr(\"string\")`` when using gettext or like this ``tr(\"string\")`` when using QtLinguist. When the app is build those translatable strings are extracted and written into the *.pot* or *.ts* template files. The *.po* and *.ts* language files then need to be updated from their template."
 msgstr ""
+"Внутри приложения строки помечаются следующим образом:  `` i18n.tr (\""
+"string\") `` при использовании gettext, или  `` tr (\"string\") `` при "
+"использовании QtLinguist. При компиляции приложения эти строки извлекаются и "
+"записываются в файлы * .pot * или * .ts *. После перевода языковые файлы  *"
+".po * и * .ts * нужно обновить."
 
 #: ../../contribute/translations.rst:16
 msgid "Once strings have been translated, they are made available for users with a new release of an app."
 msgstr ""
+"После завершения перевода, файлы доступны для всех пользователей в новой "
+"версии программы."
 
 #: ../../contribute/translations.rst:19
 msgid "Methods of Translation"
-msgstr ""
+msgstr "Способы перевода"
 
 #: ../../contribute/translations.rst:21
 msgid "There are three common ways used to translate an app:"
-msgstr ""
+msgstr "Есть три способа перевести приложение:"
 
 #: ../../contribute/translations.rst:23
 msgid "Weblate: A web based translation tool. UBports apps using Weblate can be translated `here <https://translate.ubports.com/projects/>`_. There is an automatic transfer of new strings from an apps repo to weblate. Translated strings get back as commits to the repo from weblate."
 msgstr ""
+"Weblate: инструмент для онлайн-перевода через web-интерфейс. Страничка "
+"компонентов UBports для Weblate находится  `по "
+"адресу<https://translate.ubports.com/projects/>`_. Новые строки для перевода "
+"переносятся сюда автоматически из всех приложений. Точно так же перемещаются "
+"в проекты готовые переводы."
 
 #: ../../contribute/translations.rst:24
 msgid "Editor: Translation is done by changing *.po* files with the editor of your choice, and a GitHub/GitLab account. The *.po*/*.ts* files for each project are in their repository on `our GitLab organization <https://gitlab.com/ubports/apps>`_ or on `our GitHub organization <https://github.com/ubports>`_. After translating the translator commits new translations to an apps repo generally by opening a merge request/pull request."
 msgstr ""
+"Редактор: файлы *.po* переводятся и редактируются в любом текстовом "
+"редакторе. /готовый вариант загружается на страничку проекта в GitHub/"
+"GitLab. Файлы *.po*/*.ts*  для всех репозиторев Ubports в Gitlab находятся `"
+"здесь <https://gitlab.com/ubports/apps>`, в GitHub - `здесь <https://github."
+"com/ubports>`_. После того, как перевод будет закончен, создайте merge "
+"request/pull request для загрузки в проект новых языковых файлов."
 
 #: ../../contribute/translations.rst:25
 msgid "Team translation: We also have  a `Translation Forum <https://forums.ubports.com/category/39/translations>`_ to discuss translating Ubuntu Touch and its core apps. Some projects are using Telegram or matrix groups too, and some teams are still using the Ubuntu Launchpad framework."
 msgstr ""
+"Группы для перевода: на нашем форуме создан специальный раздел `Translation "
+"Forum <https://forums.ubports.com/category/39/translations>`_ , где "
+"обсуждается перевод системы Ubuntu Touch и всех базовых приложений. Переводы "
+"некоторых проектов обсуждаются в группах в Telegram или Matrix,  а некоторые "
+"участники все еще переписываются на досках Ubuntu Launchpad."
 
 #: ../../contribute/translations.rst:27
 msgid "Core apps and some community apps like dekko or TELEports are generally using weblate for translation. This is the preferred way to translate and it does not need any programming skills. Please have a look at the `UBports translation projects <https://translate.ubports.com/projects/>`_. When using weblate do not edit *.po* files manually. Commiting edited *.po* files can break the automated process of translation."
 msgstr ""
+"Базовые приложения и некоторые программы, развиваемые сообществом - dekko "
+"или TELEports, например, - в основном переводятся через weblate. Этот способ "
+"- самый предпочтительный, и не требует навыков программирования. Пожалуйста, "
+"ознакомьтесь с инструкциями  `UBports translation projects "
+"<https://translate.ubports.com/projects/>`_. При переводе через weblate не "
+"следует редактировать файлы *.po* вручную. Загрузка измененных языковых "
+"файлов при переводе таким способом может нарушить автоматический процесс "
+"обновления языковых файлов."
 
 #: ../../contribute/translations.rst:29
 msgid "Most apps maintained by individual developers are mainly using *.pot*/*.po* files for translation. Those generally need to be edited manually and commited to the apps repo."
 msgstr ""
+"Большинство приложений разрабатывается независимыми разработчиками, для "
+"переводов используются в основном файлы *.pot*/*.po*. В этом случае их нужно "
+"редактировать вручную и загружать в репозиторий с приложением."
 
 #: ../../contribute/translations.rst:32
 msgid "How-To"
-msgstr ""
+msgstr "How-To (Краткие инструкции)"
 
 #: ../../contribute/translations.rst:35
 msgid "UBports Weblate"
-msgstr ""
+msgstr "UBports Weblate"
 
 #: ../../contribute/translations.rst:37
 msgid "You can go to `UBports Weblate <https://translate.ubports.com/projects/>`_, click on \"Dashboard\" button, go to a project, and start making anonymous suggestions without being registered. If you want to save your translations, you must be logged in."
 msgstr ""
+"Можно перейти в раздел `UBports Weblate <https://translate.ubports.com/"
+"projects/>`_, найти клавишу \"Dashboard\" и, кликнув по ней, перейти в "
+"проект. Начать перевод можно без регистрации на сайте, в этом случае все "
+"правки будут анонимными. Если хочется зафиксировать свое имя в файлах, нужно "
+"зарегистрироваться."
 
 #: ../../contribute/translations.rst:39
 msgid "For that, go to UBports Weblate and click on the \"Register\" button. Once in the \"Registration\" page, you'll find two options:"
 msgstr ""
+"Для этого зайдите в раздел UBports Weblate - \"Регистрация\". На странице "
+"регистрации есть две опции:"
 
 #: ../../contribute/translations.rst:41
 msgid "Register using a valid email address, a username, and your full name. You'll need to resolve an easy control question too."
 msgstr ""
+"Регистрация через действующий адрес электронной почты. Также потребуется "
+"Ваше полное ФИО и имя пользователя на сайте. Нужно будет также придумать "
+"секретный вопрос и ответ на него."
 
 #: ../../contribute/translations.rst:42
 msgid "Register using a third party registration. Currently the system supports accounts from openSUSE, GitHub, Fedora, and Ubuntu."
 msgstr ""
+"Регистрация с использованием учётной записи на других ресурсах. На данный "
+"момент, можно использовать учётные записи с сайтов openSUSE, GitHub, Fedora "
+"и Ubuntu."
 
 #: ../../contribute/translations.rst:44
 msgid "Once you're logged in, the site is self-explanatory and you'll find there all the options and customization you can do."
 msgstr ""
+"Процесс станет понятнее, как только Вы зайдёте на сайт. Вы увидите все опции "
+"и настройки, которые доступны в учётной записи."
 
 #: ../../contribute/translations.rst:46
 msgid "Now, get on with it. The first step is to search if your language already exists in the project of your choice. If your language is not available for a specific project, you can add it yourself."
 msgstr ""
+"Теперь, когда Вы на сайте проекта, проверьте, есть ли Ваш язык в списке "
+"переводов. Если в проекте переводов на нём нет, то можно добавить перевод на "
+"новый язык самостоятельно."
 
 #: ../../contribute/translations.rst:49
 msgid ".po/.ts File Editor"
-msgstr ""
+msgstr "Редактор файлов .po/.ts"
 
 #: ../../contribute/translations.rst:51
 msgid "If you want to work with *.po*/*.ts* files directly you need to know what you're doing for sure. The first thing you should always remember is:"
 msgstr ""
+"Если Вы хотите напрямую работать с файлами *.po*/*.ts*, нужно точно понимать "
+"все принципы работы. Первое, о чём нужно помнить, это:"
 
 #: ../../contribute/translations.rst:54
 msgid "Do **never** commit *.po* files to projects that are translated using weblate. This could break the whole translation exchange process with weblate."
 msgstr ""
+"**Никогда ** не загружайте файлы * .po * в проекты, которые переведены с "
+"помощью weblate. Это может нарушить весь процесс переводов с помощью этого "
+"сервиса."
 
 #: ../../contribute/translations.rst:56
 msgid "As was said up above, you need a file editor of your choice and a GitHub/GitLab account to translate *.po*/*.ts* files directly. Idealy you do have `clickable <http://clickable.bhdouglass.com/en/latest/>`_ set up and know how to build an app."
 msgstr ""
+"Как уже упоминалось выше, для переводов и работы с файлами *.po*/*.ts*  "
+"подойдёт любой текстовый редактор и учетная запись на сайтах GitHub/GitLab. "
+"Идеальный случай, если установлен `clickable <http://clickable.bhdouglass."
+"com/en/latest/>`_ , и Вы умеете компилировать приложения."
 
 #: ../../contribute/translations.rst:58
 msgid "There are online gettext .po editors and those you can install in your computer. You can choose whatever editor you want, but we prefer to work with free software only. There are too many plain text editors and tools to help you translate *.po*/*.ts* files to put down a list here."
 msgstr ""
+"Текстовых редакторов очень много - есть как онлайн-приложения, так и "
+"программы, которые можно установить на ПК. Можно работать в любом редакторе, "
+"но мы предпочитаем бесплатное программное обеспечение. Утилит для перевода и "
+"программ для работы с файлами *.po*/*.ts* много, нет смысла приводить какой-"
+"то список."
 
 #: ../../contribute/translations.rst:61
+#, fuzzy
 msgid "For high quality translations it is recommended to go through all of the steps given below. Although if you are not familiar with building apps using clickable, skip the steps 4. to 6. You may not be able to translate the latest strings though. And you will not know if the strings fit into the apps layout."
 msgstr ""
+"Чтобы подготовить качественный перевод, рекомендуется пройти все шаги, "
+"указанные ниже. Хотя, если вы не знакомы с созданием приложений формата "
+"clickable, пропустите шаги с 4 по 6. Но после этого Вы не сможете перевести "
+"последние строчки в приложении. И не будет понятно, вписываются ли строки в "
+"макет приложения."
 
 #: ../../contribute/translations.rst:63
 msgid "How to proceed:"
-msgstr ""
+msgstr "Как продолжить работу над переводом:"
 
 #: ../../contribute/translations.rst:65
 msgid "fork the apps repo into your GitHub or GitLab account"
 msgstr ""
+"скопируйте (сделайте форк) репозитория приложения в свою учётную запись "
+"GitHub или GitLab"
 
 #: ../../contribute/translations.rst:66
 msgid "clone the repo locally or use GitLab's online editor"
 msgstr ""
+"сохраните копию репозитория на свой компьютер или используйте для перевода "
+"стандартный онлайн-редактор GitLab"
 
 #: ../../contribute/translations.rst:67
 msgid "(optional) create a new branch for the translation"
-msgstr ""
+msgstr "(необязательно) создайте новую ветвь для перевода"
 
 #: ../../contribute/translations.rst:68
+#, fuzzy
 msgid "build the app using clickable to get up-to-date *.pot*/*.ts* template files"
 msgstr ""
+"скомпилируйте приложение с помощью clickable, чтобы получить самые последние "
+"версии файлов *.pot*/*.ts*"
 
 #: ../../contribute/translations.rst:69
 msgid "update the desired *.po*/*.ts* language file(s) from the template"
-msgstr ""
+msgstr "обновите соответствующие  языковые файлы *.po*/*.ts* из шаблона"
 
 #: ../../contribute/translations.rst:70
 msgid "translate all strings"
-msgstr ""
+msgstr "переведите все строчки с текстом"
 
 #: ../../contribute/translations.rst:71
 msgid "build and install the app on your device and test the translations"
 msgstr ""
+"скомпилируйте приложение и установите его на смартфон, после этого проверьте "
+"перевод"
 
 #: ../../contribute/translations.rst:72
 msgid "(optional) repeat steps 6. and 7. until you are satisfied with your work"
 msgstr ""
+"(необязательно) повторяйте пункты 6 и 7, пока не получится "
+"удовлетворительного результата"
 
 #: ../../contribute/translations.rst:73
+#, fuzzy
 msgid "push the translated *.po*/*.ts* file(s) to your forked repo [do NOT commit *.pot*/*.ts* template files]"
 msgstr ""
+"переместите переведенные версии файлов *.po*/*.ts* в скопированный "
+"репозиторий [не копируйте файлы  *.pot*/*.ts*  напрямую в исходный "
+"репозиторий]"
 
 #: ../../contribute/translations.rst:74
 msgid "open an merge/pull request from your fork to the apps repo"
 msgstr ""
+"создайте запрос на объединение изменений на странице оригинального "
+"репозитория"
 
 #: ../../contribute/translations.rst:78
 msgid "Translation Team Communication"
-msgstr ""
+msgstr "Общение с группой  по переводам (Translation Team)"
 
 #: ../../contribute/translations.rst:80
 msgid "You may talk to others regarding translations by using `the forum category <https://forums.ubports.com/category/39/translations>`_ that UBports provides for this task. To use it you need to register, or login if you're registered already."
 msgstr ""
+"Можно пообщаться с другими пользователями, занимающимися переводами в `"
+"соответствующем разделе на форуме UBports  <https://forums.ubports.com/"
+"category/39/translations>`_ . Для этого придётся там зарегистрироваться."
 
 #: ../../contribute/translations.rst:82
 msgid "The only requirement is to start your post putting down your language in brackets in the \"Enter your topic title here\" field. For example, ``[Spanish] How to translate whatever?``"
 msgstr ""
+"Единственное требование - перед тем, как создать тему, укажите язык перед "
+"названием. Например, ``[Spanish] Как создать перевод?``"
 
 #: ../../contribute/translations.rst:84
 msgid "In your interactions with your team you'll find the best way to coordinate your translations."
 msgstr ""
+"Общение с другими пользователями поможет лучше организовать работу над "
+"переводами."
 
 #: ../../contribute/translations.rst:87
 msgid "License"
-msgstr ""
+msgstr "Лицензия"
 
 #: ../../contribute/translations.rst:89
 msgid "All the translation projects, and all your contributions to this project, are under a `Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) <https://creativecommons.org/licenses/by-sa/4.0/>`_ license that you explicitly accept by contributing to the project."
 msgstr ""
+"Все переводы и все работы над проектом ведутся под лицензией Creative "
+"Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) "
+"<https://creativecommons.org/licenses/by-sa/4.0/> ` _Ваше участие в проекте "
+"явно говорит о том, что Вы согласны с условиями этой лицензии."
 
 #: ../../contribute/translations.rst:91
 msgid "Go to that link to learn what this exactly means."
-msgstr ""
+msgstr "Чтобы подробнее изучить лицензионные условия, перейдите по ссылке."
