@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-30 21:23-0500\n"
-"PO-Revision-Date: 2020-03-16 12:22+0000\n"
+"PO-Revision-Date: 2020-03-17 13:22+0000\n"
 "Last-Translator: Fırat Altay <supersnes64@hotmail.com>\n"
 "Language-Team: Turkish <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-contribute/tr/>\n"
@@ -37,6 +37,7 @@ msgid "Get the latest Ubuntu Touch"
 msgstr "Ubuntu Touch'un en yeni sürümünü edinin"
 
 #: ../../contribute/bugreporting.rst:9
+#, fuzzy
 msgid ""
 "This might seem obvious, but it's easy to miss. Go to (Settings - "
 "Updates) and make sure that your device doesn't have any Ubuntu updates "
@@ -45,16 +46,24 @@ msgid ""
 "guide. If not, do a little dance! The bug has already been fixed and you "
 "can continue using Ubuntu Touch."
 msgstr ""
+"Bu bariz görünebilir ama gözden kaçırması kolay. Ayarlarda güncellemeleri "
+"seçin ve cihazınız için bir Ubuntu güncellemesi olup olmadığından emin olun. "
+"Eğer yoksa, bu kılavuzudan devam edin. Eğer varsa, cihazınızı güncelleyin ve "
+"hatayı tekrarlamayı deneyin. Eğer hata hala oluyorsa, bu kılavuzdan devam "
+"edin. Eğer hata hala olmuyorsa biraz dans edin! Hata zaten düzeltildi ve "
+"Ubuntu Touch'u kullanmaya devam edebilirsiniz."
 
 #: ../../contribute/bugreporting.rst:12
 msgid "Check if the bug is already reported"
-msgstr ""
+msgstr "Hatanın zaten rapor edilmediğinden emin olun"
 
 #: ../../contribute/bugreporting.rst:14
 msgid ""
 "Open up the bug tracker for `ubuntu-touch <https://github.com/ubports"
 "/ubuntu-touch>`_."
 msgstr ""
+"`ubuntu-touch <https://github.com/ubports/ubuntu-touch>`_ için olan hata "
+"izleyiciyi açın."
 
 #: ../../contribute/bugreporting.rst:16
 msgid ""
@@ -63,23 +72,34 @@ msgid ""
 "searching, use a few words that describe what you're seeing. For example,"
 " \"Lock screen transparent\" or \"Lock screen shows activities\"."
 msgstr ""
+"Öncelikle, rapor edeceğiniz hatanın önceden rapor edilmediğinden emin olun. "
+"Rapor edilmiş hatalara göz atın. Göz atarken, gördüğünüzü açılayan birkaç "
+"kelime kullanın. Örneğin, \"Kilit ekranı saydam\" veya \"Kilit ekranı "
+"etkinlikleri gösteriyor\"."
 
 #: ../../contribute/bugreporting.rst:18
+#, fuzzy
 msgid ""
 "If you find that a bug report already exists, select the \"Add your "
 "Reaction\" button (it looks like a smiley face) and select the +1 (thumbs"
 " up) reaction. This shows that you are also experiencing the bug."
 msgstr ""
+"Bulduğunuz hata zaten rapor edilmişe, \"tepkini ekle\" tuşunu seçin ("
+"gülümseyen bir yüze benziyor) ve +1 (beğeni) tepkisini seçin. Bu hatayı "
+"sizin de tecrübe ettiğinizi gösterir."
 
 #: ../../contribute/bugreporting.rst:20
+#, fuzzy
 msgid ""
 "If the report is missing any of the information specified later in this "
 "document, please add it yourself to help the developers fix the bug."
 msgstr ""
+"Eğer rapor bu belgenin sonrasında bulunan bir bilgiyi içermiyorsa, lütfen "
+"geliştiricilere hatayı düzeltmelerinde yardım etmek için kendiniz ekleyin."
 
 #: ../../contribute/bugreporting.rst:23
 msgid "Reproduce the issue you've found"
-msgstr ""
+msgstr "Bulduğunuz hatayı tekrarlayın"
 
 #: ../../contribute/bugreporting.rst:25
 msgid ""
@@ -89,10 +109,15 @@ msgid ""
 "still occurs, continue on to the next step. `If not "
 "<https://youtu.be/nn2FB1P_Mn8?t=10s>`_..."
 msgstr ""
+"Sonra, bulduğunuz hatayı nasıl tekrarlayacağınızı bulun. Problemi bulmak "
+"için izlediğiniz adımları ayrıntılı bir şekilde belgeleyin. Sonra, "
+"cihazınızı yeniden başlayın ve bu adımları yeniden izleyin. Eğer problem "
+"hala oluyorsa, bir sonraki adıma devam edin.  `eğer olmuyorsa <https://youtu."
+"be/nn2FB1P_Mn8?t=10s>`_..."
 
 #: ../../contribute/bugreporting.rst:28
 msgid "Getting Logs"
-msgstr ""
+msgstr "Sistem günlüklerini almak"
 
 #: ../../contribute/bugreporting.rst:30
 msgid ""
@@ -100,16 +125,23 @@ msgid ""
 "general, /var/log/dmesg and the output of /android/system/bin/logcat are "
 "helpful when resolving an issue. I'll show you how to get these logs."
 msgstr ""
+"Bir hatayı bildirdiğinizde alabileceğimiz kadar iyi günlükleri takdir "
+"ediyoruz. Genellikle, /var/log/dmesg ve /android/system/bin/logcat'in "
+"çıktısı bir sorunu çözmede yardımcı olur. Bu sistem günlüklerini nasıl "
+"alacağınızı göstereceğim."
 
 #: ../../contribute/bugreporting.rst:32
+#, fuzzy
 msgid ""
 "To get set ready, follow the steps to :doc:`set up ADB "
 "</userguide/advanceduse/adb>`."
 msgstr ""
+"Hazır olmak için, :doc:`set up ADB </userguide/advanceduse/adb>`'e kadar "
+"olan adımları izleyin."
 
 #: ../../contribute/bugreporting.rst:34
 msgid "Now, you can get the two most important logs."
-msgstr ""
+msgstr "Şimdi, en önemli iki sistem günlüğünü alabilirsiniz."
 
 #: ../../contribute/bugreporting.rst:37
 msgid "dmesg"
@@ -119,21 +151,23 @@ msgstr ""
 msgid ""
 "The **dmesg** (*display message* or *driver message*) command displays "
 "debug messages from the kernel."
-msgstr ""
+msgstr "dmesg komutu kernel'den hata ayıklama mesajlarını gösterir."
 
 #: ../../contribute/bugreporting.rst:41 ../../contribute/bugreporting.rst:54
 msgid ""
 "Using the steps you documented earlier, reproduce the issue you're "
 "reporting"
 msgstr ""
+"Önceden belgelediğiniz adımları izleyerek, rapor edeceğiniz hatayı "
+"tekrarlayın"
 
 #: ../../contribute/bugreporting.rst:42 ../../contribute/bugreporting.rst:52
 msgid "cd to a folder where you're able to write the log"
-msgstr ""
+msgstr "bir sistem günlüğü yazabileceğiniz bir klasöre cd komutu ile gidin"
 
 #: ../../contribute/bugreporting.rst:43
 msgid "Run the command: `adb shell dmesg > UTdmesg.txt`"
-msgstr ""
+msgstr ":doc:`set up ADB </userguide/advanceduse/adb>` komutunu çalıştırın"
 
 #: ../../contribute/bugreporting.rst:45
 msgid ""
@@ -150,26 +184,34 @@ msgid ""
 "The **logcat** (*log concatenator*) command displays debug information "
 "from various parts of the underlying android system."
 msgstr ""
+"**logcat** komutu alttaki android sisteminin belirli bölümlerinde ki hata "
+"ayıklama bilgisini gösterir."
 
 #: ../../contribute/bugreporting.rst:53
 msgid "Run the command: `adb shell /android/system/bin/logcat -d > UTlogcat.txt`"
 msgstr ""
+"`adb shell /android/system/bin/logcat -d > UTlogcat.txt` komutunu çalıştırın"
 
 #: ../../contribute/bugreporting.rst:56
+#, fuzzy
 msgid ""
 "This log will be located at UTlogcat.txt in your current working "
 "directory, so you'll be able to upload it later."
 msgstr ""
+"Bu sistem günlüğü içinde bulunduğunuz dizinin UTlogcat.txt dosyasında "
+"bulunacak, böylece sonra internete yükleyebileceksiniz."
 
 #: ../../contribute/bugreporting.rst:59
 msgid "Making the bug report"
-msgstr ""
+msgstr "Hata raporunu yapmak"
 
 #: ../../contribute/bugreporting.rst:61
 msgid ""
 "Now it's time for what you've been waiting for, the bug report itself! "
 "Bug reports need to be filed in English."
 msgstr ""
+"Şimdi en baştan beri beklediğiniz şeyin zamanı, hata raporunun kendisi! Hata "
+"raporları İngilizce olmalıdır."
 
 #: ../../contribute/bugreporting.rst:63
 msgid ""
