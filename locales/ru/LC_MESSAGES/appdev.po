@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 15:16-0500\n"
-"PO-Revision-Date: 2020-03-21 04:22+0000\n"
+"PO-Revision-Date: 2020-03-22 14:22+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
@@ -457,18 +457,31 @@ msgstr ""
 #: ../../appdev/guides/dependencies.rst:115
 msgid "The command ``dpkg-architecture -qDEB_HOST_MULTIARCH`` is used to query the target architecture, which is part of the library build directory path, if you compiled the library with Clickable."
 msgstr ""
+"Команда ``dpkg-architecture -qDEB_HOST_MULTIARCH`` используется для запроса "
+"архитектуры, её название содержится в имени папки со сборкой библиотеки, она "
+"компилировалась с помощью Clickable."
 
 #: ../../appdev/guides/dependencies.rst:117
 msgid "We define the variable ``SOMELIBRARY_DIR`` with the path to the libraries build directory, to help CMake find the configuration of the library named ``SOMELIBRARY``. You may not need to do this, if you installed the library from the Ubuntu Repositories."
 msgstr ""
+"Мы задаём в переменной `` SOMELIBRARY_DIR`` папку со сборками библиотеки, "
+"чтобы помочь CMake найти конфигурацию библиотеки с именем `` SOMELIBRARY``. "
+"Это можно не делать, если библиотека установлена из репозитория Ubuntu."
 
 #: ../../appdev/guides/dependencies.rst:119
 msgid "The ``find_package`` command defines the path to the include directory as ``SOMELIBRARY_INCLUDE_DIRS`` and the library's binaries as ``SOMELIBRARY_LIBS``. We use those with the ``include_directories`` and ``target_link_libraries`` commands. See the `Camera Scanner ImageProcessing CMakeLists.txt <https://github.com/jonnius/camera-scanner/blob/master/plugins/ImageProcessing/CMakeLists.txt#L23>`_ for a real world example."
 msgstr ""
+"Команда `` find_package`` определяет путь к каталогу include  как `` "
+"SOMELIBRARY_INCLUDE_DIRS``, а  готовые бинарный файлы библиотеки как `` "
+"SOMELIBRARY_LIBS``. Мы используем эти переменные  с командами `` "
+"include_directories`` и `` target_link_libraries``. Пример того, как это "
+"работает можно посмотреть в файле `Camera Scanner ImageProcessing "
+"CMakeLists.txt <https://github.com/jonnius/camera-scanner/blob/master/"
+"plugins/ImageProcessing/CMakeLists.txt#L23>` _ ."
 
 #: ../../appdev/guides/dependencies.rst:122
 msgid "Deployment"
-msgstr ""
+msgstr "Размещение"
 
 #: ../../appdev/guides/dependencies.rst:123
 msgid "If you link a library statically with your app, you do not need to ship the library explicitly, as it is already inside your app binary. To do so, you usually need to compile the library yourself. Otherwise, continue with this section."
