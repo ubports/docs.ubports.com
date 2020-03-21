@@ -31,7 +31,7 @@ Since QtUbuntu is used directly by apps, any logging output from it will be loca
 
 .. code-block:: sh
 
-    initctl set-env QT_LOGGING_RULES='ubuntumirclient.*=true'
+    initctl set-env QT_LOGGING_RULES='qt.qpa.mirclient.*=true'
 
 We plan to replace QtUbuntu with QtWayland in the future.
 
