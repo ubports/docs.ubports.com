@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 15:16-0500\n"
-"PO-Revision-Date: 2020-03-22 14:22+0000\n"
+"PO-Revision-Date: 2020-03-25 20:22+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
@@ -486,30 +486,46 @@ msgstr "Размещение"
 #: ../../appdev/guides/dependencies.rst:123
 msgid "If you link a library statically with your app, you do not need to ship the library explicitly, as it is already inside your app binary. To do so, you usually need to compile the library yourself. Otherwise, continue with this section."
 msgstr ""
+"Если Вы статически связываете библиотеку со приложением, то не нужно явно "
+"указывать библиотеку, так как она уже находится внутри двоичного файла "
+"приложения. Чтобы она там оказалась, нужно самостоятельно скомпилировать "
+"библиотеку. В противном случае изучите этот раздел."
 
 #: ../../appdev/guides/dependencies.rst:125
 msgid "Find out which components you need to ship. Usually this is one or more ``*.so`` (shared objects) files, linked dynamically. To get the files into the click package, you need to add an ``install`` command to your build configuration. Add the following lines to your CMakeLists.txt:"
 msgstr ""
+"Узнайте, какие компоненты вам нужны. Обычно это один или несколько файлов `` "
+"* .so`` (общих объектов), связанных динамически. Чтобы собрать файлы в пакет "
+"click, нужно добавить команду `` install`` в конфигурацию сборки. Добавьте "
+"следующие строки в файл CMakeLists.txt:"
 
 #: ../../appdev/guides/dependencies.rst:136
 msgid "This will copy the files into the ``tmp`` folder inside the build directory. This is where Clickable puts all the files that go into the click package. Again, the command ``dpkg-architecture -qDEB_HOST_MULTIARCH`` is used to query the target architecture, which is usually part of the file path."
 msgstr ""
+"Это скопирует файлы в папку `` tmp`` внутри директории сборки. Здесь "
+"Clickable помещает все файлы, которые входят в пакет click. Снова "
+"используется команда `` dpkg-architect -qDEB_HOST_MULTIARCH``  для запроса "
+"целевой архитектуры, которая можно увидеть в пути к файлу."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:2
+#, fuzzy
 msgid "Importing from Content Hub and URLdispatcher"
-msgstr ""
+msgstr "Перенос из Content Hub и URLdispatcher"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:7
 msgid "In the previous guide we have seen a little bit about how Content Hub works. In this guide we will see how ``URLdispatcher`` works and how to handle imported data from the Content Hub."
 msgstr ""
+"В предыдущем руководстве мы немного узнали о том, как работает Content Hub. "
+"В этом руководстве мы увидим, как работает `` URLdispatcher`` и как "
+"обрабатывать импортированные данные из Content Hub."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:10
 msgid "Handle data from the Content Hub"
-msgstr ""
+msgstr "Обработка данных из Content Hub"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:15
 msgid "OpenStore app from open-store.io"
-msgstr ""
+msgstr "Приложение OpenStore с сайта open-store.io"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:17
 msgid "One of the easiest ways of testing an app, is to send a test click to yourself on Telegram, and opening that click file with the OpenStore through the Content Hub:"
