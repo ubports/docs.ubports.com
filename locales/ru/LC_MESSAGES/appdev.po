@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 15:16-0500\n"
-"PO-Revision-Date: 2020-03-25 20:22+0000\n"
+"PO-Revision-Date: 2020-03-29 10:22+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
@@ -530,135 +530,219 @@ msgstr "Приложение OpenStore с сайта open-store.io"
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:17
 msgid "One of the easiest ways of testing an app, is to send a test click to yourself on Telegram, and opening that click file with the OpenStore through the Content Hub:"
 msgstr ""
+"Один из самых простых способов тестирования приложения - отправить тестовый "
+"click-пакет в свою учётную запись Telegram и открыть этот файл в OpenStore "
+"через Content Hub:"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:22
 msgid "If we tap on the OpenStore app, it will be opened and it will ask if we want to install the click file. Let’s take a look into `the Main.qml code of the app <https://github.com/UbuntuOpenStore/openstore-app/blob/master/openstore/Main.qml#L85>`_ to see how it is done:"
 msgstr ""
+"Если мы попробуем запустить приложение из OpenStore, то система спросит, "
+"хотим ли мы установить click-файл. Давайте посмотрим на файл приложения "
+"Main.qml  <https://github.com/UbuntuOpenStore/openstore-app/blob/master/"
+"openstore/Main.qml#L85> `_, чтобы узнать, как это делается:"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:41
 msgid "Do you see that Connections element that targets the ContentHub? When it receives the signal onImportRequested, it will take the url of the data sent from the Content Hub (``transfer.items[0].url`` is the url of the first data sent) and open a ``PopUp`` element to let the user install the click."
 msgstr ""
+"Вы видите элементы Connections, которые относятся к  ContentHub? Когда "
+"приложение получает сигнал onImportRequested,  оно ищет  url-адрес в данных, "
+"полученных от  Content Hub (``transfer.items[0].url``-  url-адрес первых "
+"отправленных пакетов данных) и откроет элемент ``PopUp``, чтобы пользователь "
+"смог установить click-пакет."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:44
 msgid "What about the URLdispatcher?"
-msgstr ""
+msgstr "Что можно сказать об URLdispatcher?"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:46
 msgid "The URL dispatcher is a piece of software, similar to the Content Hub, that makes our life easier trying to choose the correct app for a certain protocol. For example: We probably want to open the web browser when tapping on an http protocol. If we tap on a map link it is handy to open it with uNav or to open a twitter link in the Twitter app! How does that work?"
 msgstr ""
+"Диспетчер URL - это часть программного обеспечения, похожая на Content Hub, "
+"которая облегчает нашу жизнь, пытаясь выбрать правильное приложение для "
+"определенного протокола. Например: скорее всего, нужно открыть веб-браузер "
+"при нажатии на http-ссылку. Ссылку на карту удобнее открыть с помощью uNav, "
+"а ссылку на пост Twitter - в приложении Twitter. Как это работает?"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:48
 msgid "The ``URLdispatcher`` selects which app (according to their ``manifest.json``) will open a certain link."
 msgstr ""
+"``URLdispatcher`` (Диспетчер URL) выбирает, какое приложение (согласно файлу "
+"``manifest.json``) откроет определенную ссылку."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:53
 msgid "Let’s see how our navigation app looks inside. uNav’s manifest shows special hooks for the ``URLdispatcher`` in its `manifest.json code <https://bazaar.launchpad.net/~unav-devs/unav/trunk/view/head:/manifest.json#L9>`_:"
 msgstr ""
+"Давайте посмотрим, как устроено навигационное приложение. В файле файле "
+"manifest.json приложения uNav показаны специальные хуки для `` "
+"URLdispatcher``  <https://bazaar.launchpad.net/~unav-devs/unav/trunk/view/"
+"head:/manifest.json#L9> `_:"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:83
+#, fuzzy
 msgid "This means that a link that looks like http://map.unav.me/xxxxx,xxxxx will be opened in uNav. And that’s defined in lines 2 and 3, where it looks for protocol http followed by map.unav.me."
 msgstr ""
+"Это означает, что ссылка в формате http://map.unav.me/xxxxx ,xxxxx будет "
+"открыта в uNav. Это определено в строках 2 и 3, где указан протокол http и "
+"приложение map.unav.me."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:85
 msgid "Also, a URI formatted geo:xxx,xxx should open in uNav, as it’s defined in line 11."
 msgstr ""
+"Кроме того, geo: xxx, xxx в формате URI должны открываться в uNav, как это "
+"определено в строке 11."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:88
 msgid "And how do we manage the received URL?"
-msgstr ""
+msgstr "И как мы управляем полученным URL?"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:90
 msgid "After the ``URLdispatcher`` sends the link to the correspondent app, we need to handle that URL or URI in the targeted app. Let’s see how to do that:"
 msgstr ""
+"После того, как `` URLdispatcher`` отправит ссылку соответствующему "
+"приложению, нам нужно обработать этот URL или URI в целевом приложении. "
+"Давайте посмотрим, как это сделать:"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:92
 msgid "In the main qml file, we need to add some code to know what to do with the dispatched URL. First add an `Arguments element <https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L189>`_ that holds the URL, as is done, for example, in the `Linphone app <https://open-store.io/app/linphone.cibersheep>`_. Also, we add `connection to the URI Handler <https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L200>`_ with a Connection element with ``UriHandler`` as a target."
 msgstr ""
+"В основной файл qml нужно добавить код, чтобы знать, что делать с "
+"отправленным URL-адресом. Сначала добавьте элемент  `Arguments "
+"<https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/"
+"Main.qml#L189> `_, который содержит URL-адрес. Пример, как это сделано, "
+"можно посмотреть в файле приложения  `Linphone <https://open-store.io/app/"
+"linphone.cibersheep>` _. Кроме того, мы настраиваем `соединение обработчика "
+"URI <https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/"
+"Main.qml#L200>` _ и элемента Connection с `` UriHandler` `."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:120
 msgid "This code will manage a URI in the form ``linphone://sip:xxx@xxx.xx`` when the app is opened. But what do we need to do to handle this link when the app is closed?"
 msgstr ""
+"Этот код при открытии приложения будет передаваться URI в формате `` "
+"linphone: // sip: xxx @ xxx.xx``. Но что нам нужно сделать, чтобы обработать "
+"эту ссылку, когда приложение закрыто?"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:122
 msgid "We need to add a little bit `extra code <https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L69>`_ that will cover two cases: 1) We receive one URL 2) We receive more than one URL"
 msgstr ""
+"Нам нужно добавить в исходный файл участок `дополнительного кода "
+"<https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/"
+"Main.qml#L69>` _, который будет описывать два случая: 1) получен один URL 2) "
+"Получено более одного URL"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:149
 msgid "What happens if more than one app has the same URL type defined?"
 msgstr ""
+"Что произойдет, если для нескольких приложений определен один и тот же тип "
+"URL?"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:151
 msgid "A very good question. What happens if we tap on a Twitter link? How is such a URL handled by the ``URLdispatcher`` as protocol ``http`` or the protocol ``http://twitter``?"
 msgstr ""
+"Очень хороший вопрос. Что произойдет, если мы нажмем на ссылку в Twitter? "
+"Как такой URL будет обрабатывать `` URLdispatcher``?  Она будет воспринята "
+"как обычная ссылка `` http`` или как ссылка для приложения`` http: // "
+"twitter``?"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:153
 msgid "What happens if two apps have the same defined protocol?"
-msgstr ""
+msgstr "Что произойдет, если один протокол определен для двух приложений?"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:155
 msgid "Now it’s time to do some tests and share the results in the next guide."
 msgstr ""
+"Теперь пришло время сделать несколько тестов и обсудить результаты в "
+"следующей главе."
 
 #: ../../appdev/guides/index.rst:4
 msgid "Developer guides"
-msgstr ""
+msgstr "Инструкции для разработчика"
 
 #: ../../appdev/guides/index.rst:6
 msgid "We are currently working on expanding our list of developer guides. In the mean time we recommend the `Ubuntu Touch Programming Course <https://mimecar.gitbook.io/qt-course/>`__."
 msgstr ""
+"В настоящее время мы работаем над расширением нашего списка руководств для "
+"разработчиков. Пока рекомендуем изучить книгу `Курс программирования Ubuntu "
+"Touch <https://mimecar.gitbook.io/qt-course/>` __."
 
 #: ../../appdev/guides/index.rst:9
 msgid "If you are interested in helping create developer guides check out our `GitLab Project <https://gitlab.com/ubports/apps/development-resources>`__."
 msgstr ""
+"Если вы хотите помочь в создании руководств для разработчиков, ознакомьтесь "
+"со страничкой проекта в `GitLab <https://gitlab.com/ubports/apps/development-"
+"resources> `__."
 
 #: ../../appdev/guides/pushnotifications.rst:2
 #: ../../appdev/platform/index.rst:12
 msgid "Push notifications"
-msgstr ""
+msgstr "Push-уведомления"
 
 #: ../../appdev/guides/pushnotifications.rst:4
 msgid "Let's assume that you have an app created with Clickable and published on the OpenStore. But now you want to be able to send Push Notifications to your users. First of all, you need to understand how this is working:"
 msgstr ""
+"Предположим, у Вас есть приложение, созданное с помощью Clickable и "
+"размещенное в OpenStore. Но теперь Вы хотите  отправлять Push-уведомления "
+"своим пользователям. Прежде всего,  нужно понять, как это работает:"
 
 #: ../../appdev/guides/pushnotifications.rst:8
 msgid "Every app which uses push notifications has got a unique token. This token identifies the user, the device and the app itself. The token is generated by the UBports Push Service."
 msgstr ""
+"Каждое приложение, которое использует push-уведомления, имеет уникальный "
+"токен. Этот токен идентифицирует пользователя, устройство и само приложение. "
+"Маркер генерируется службой UBports Push."
 
 #: ../../appdev/guides/pushnotifications.rst:9
 msgid "You will need the token to send a push notification. So the app sends its token to the app developer's server."
 msgstr ""
+"Для отправки push-уведомления потребуется токен. Таким образом, приложение "
+"отправляет свой токен на сервер разработчика приложения."
 
 #: ../../appdev/guides/pushnotifications.rst:10
 msgid "With the token you can send a HTTP request to the UBports Push Server which will forward the notification the user's device."
 msgstr ""
+"С помощью токена можно отправить HTTP-запрос на UBports Push Server, а он "
+"перенаправит уведомление на устройство пользователя."
 
 #: ../../appdev/guides/pushnotifications.rst:12
 msgid "Let's practice this step-by-step."
-msgstr ""
+msgstr "Давайте попробуем повторить этот алгоритм шаг за шагом."
 
 #: ../../appdev/guides/pushnotifications.rst:15
 msgid "In the following example we will not implement a server. Also the communication between your app and your server is up to you. Please inform the user about the communication with your server by providing a privacy policy!"
 msgstr ""
+"В следующем примере мы не будем заниматься настройками сервера. Связь между "
+"приложением и  сервером зависит от вас. Пожалуйста, сообщите пользователю о "
+"соединении с сервером и попросите у него согласие с политикой "
+"конфиденциальности!"
 
 #: ../../appdev/guides/pushnotifications.rst:18
 msgid "Make the app ready for push notifications"
-msgstr ""
+msgstr "Подготовьте приложение к работе с push-уведомлениями"
 
 #: ../../appdev/guides/pushnotifications.rst:21
 msgid "Implementing the PushClient"
-msgstr ""
+msgstr "Настройка PushClient"
 
 #: ../../appdev/guides/pushnotifications.rst:23
 msgid "First we need to add the policy group \"push-notification-client\". Your apparmor file could look like this:"
 msgstr ""
+"Сначала нам нужно добавить группу политик «push-messages-client». Ваш файл "
+"для apparmor может выглядеть так:"
 
 #: ../../appdev/guides/pushnotifications.rst:36
 msgid "In the next step we need to modify the Qml parts. We need to add a pushclient component:"
-msgstr ""
+msgstr "Далее нам нужно внести изменения в Qml. Добавляем компонент pushclient:"
 
 #: ../../appdev/guides/pushnotifications.rst:52
 msgid "You need to set the correct appId! If the app name in your manifest file is myapp.yourname and the name of the main hook (the one which handles the .desktop file) is hookname, then the appId is:  myapp.yourname_hookname. When we now start the app, it will get a token and print this token in the logs. With clickable logs we will be able to copy this token out of the terminal. But the app is not yet ready to receive a push notification. For this we need something called a pushhelper!"
 msgstr ""
+"Необходимо указать правильный appId! Если имя приложения в  файле манифеста -"
+" myapp.yourname, а имя основного обработчика (которое обрабатывает файл "
+".desktop) - это имя_хука, тогда appId будет такой: myapp.yourname_hookname. "
+"Когда мы запустим приложение, оно получит токен и запишет его в лог-файл. Из "
+"лог-файлов для clickable можно скопировать этот токен в терминале. Но "
+"приложение еще не готово для получения push-уведомления. Для этого нам "
+"понадобится pushhelper."
 
 #: ../../appdev/guides/pushnotifications.rst:56
 msgid "Implementing the pushhelper"
