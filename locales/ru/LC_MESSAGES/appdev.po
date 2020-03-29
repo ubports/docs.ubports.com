@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 15:16-0500\n"
-"PO-Revision-Date: 2020-03-29 10:22+0000\n"
+"PO-Revision-Date: 2020-03-30 14:22+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
@@ -746,35 +746,48 @@ msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:56
 msgid "Implementing the pushhelper"
-msgstr ""
+msgstr "Реализация pushhelper"
 
 #: ../../appdev/guides/pushnotifications.rst:58
 msgid "The pushhelper is a part of the app which will receive all push notifications and process them before sending them to the system notification center. It will receive a json-file and must output another json-file in the correct format. The pushhelper is seperated from the app. So we need a new hook in the manifest. It could look like this:"
 msgstr ""
+"Pushhelper - это часть приложения, которая будет получать все push-"
+"уведомления и обрабатывать их перед отправкой в центр системных уведомлений. "
+"Pushhelper получит json-файл и должен вывести другой json-файл в правильном "
+"формате. Pushhelper отделен от приложения. Итак, нам нужен новый hook в "
+"файле manifest. Это может выглядеть так:"
 
 #: ../../appdev/guides/pushnotifications.rst:81
 msgid "It should be clear that we now need a different apparmor file and a different executable file. The **push-apparmor.json** file must only contain the policy group push-notification-client and should look like this:"
 msgstr ""
+"Должно быть понятно, что теперь нужен другой файл apparmor и другой "
+"исполняемый файл. Файл ** push-apparmor.json ** должен содержать только "
+"группу политик push-messages-client и должен выглядеть следующим образом:"
 
 #: ../../appdev/guides/pushnotifications.rst:93
 msgid "The **push.json** is for redirecting to the executable file:"
 msgstr ""
+"Файл ** push.json ** предназначен для перенаправления в исполняемый файл:"
 
 #: ../../appdev/guides/pushnotifications.rst:101
 msgid "In our tutorial we will use python to create a executable named **pushexec** which will forward the notification without changing anything:"
 msgstr ""
+"В нашем уроке используется python для создания исполняемого файла ** "
+"pushexec **. Файл будет пересылать уведомление без каких-либо изменений:"
 
 #: ../../appdev/guides/pushnotifications.rst:113
 msgid "We also need to add this new files to the **CMakeLists.txt** and make the pushexec executable::"
 msgstr ""
+"Нам также нужно добавить новые файлы в ** CMakeLists.txt ** и сделать "
+"исполняемый файл pushexec::"
 
 #: ../../appdev/guides/pushnotifications.rst:123
 msgid "Now the app is ready to receive and process push notifications!"
-msgstr ""
+msgstr "Теперь приложение готово для получения и обработки push-уведомлений!"
 
 #: ../../appdev/guides/pushnotifications.rst:126
 msgid "Using the Push Service API"
-msgstr ""
+msgstr "Использование API сервиса Push"
 
 #: ../../appdev/guides/pushnotifications.rst:128
 msgid "So now you have the token and the app is ready to receive and process push notifications. To send a notification, you need to send a HTTP request to this address: https://push.ubports.com/notify The content-type must be application/json and it must fit in the correct format. A example in javascript could look like this:"
