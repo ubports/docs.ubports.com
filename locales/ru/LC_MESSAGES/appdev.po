@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 15:16-0500\n"
-"PO-Revision-Date: 2020-03-30 14:22+0000\n"
+"PO-Revision-Date: 2020-03-31 19:22+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
@@ -792,10 +792,15 @@ msgstr "Использование API сервиса Push"
 #: ../../appdev/guides/pushnotifications.rst:128
 msgid "So now you have the token and the app is ready to receive and process push notifications. To send a notification, you need to send a HTTP request to this address: https://push.ubports.com/notify The content-type must be application/json and it must fit in the correct format. A example in javascript could look like this:"
 msgstr ""
+"Теперь у нас есть токен, и приложение готово для получения и обработки push-"
+"уведомлений. Чтобы отправить уведомление, нужно отправить HTTP-запрос по "
+"этому адресу: https://push.ubports.com/notify. Тип содержимого должен быть "
+"application/json в соответствующем формате. Пример в javascript может "
+"выглядеть так:"
 
 #: ../../appdev/guides/pushnotifications.rst:165
 msgid "Push Notification Object"
-msgstr ""
+msgstr "Объект Push Notification"
 
 #: ../../appdev/guides/pushnotifications.rst:168
 #: ../../appdev/guides/pushnotifications.rst:193
@@ -804,7 +809,7 @@ msgstr ""
 #: ../../appdev/guides/pushnotifications.rst:259
 #: ../../appdev/guides/pushnotifications.rst:273
 msgid "Parameter"
-msgstr ""
+msgstr "Параметр"
 
 #: ../../appdev/guides/pushnotifications.rst:168
 #: ../../appdev/guides/pushnotifications.rst:193
@@ -813,7 +818,7 @@ msgstr ""
 #: ../../appdev/guides/pushnotifications.rst:259
 #: ../../appdev/guides/pushnotifications.rst:273
 msgid "Type"
-msgstr ""
+msgstr "Тип"
 
 #: ../../appdev/guides/pushnotifications.rst:168
 #: ../../appdev/guides/pushnotifications.rst:193
@@ -822,11 +827,11 @@ msgstr ""
 #: ../../appdev/guides/pushnotifications.rst:259
 #: ../../appdev/guides/pushnotifications.rst:273
 msgid "Description"
-msgstr ""
+msgstr "Описание"
 
 #: ../../appdev/guides/pushnotifications.rst:170
 msgid "appid"
-msgstr ""
+msgstr "appid"
 
 #: ../../appdev/guides/pushnotifications.rst:170
 #: ../../appdev/guides/pushnotifications.rst:173
@@ -837,120 +842,130 @@ msgstr ""
 #: ../../appdev/guides/pushnotifications.rst:233
 #: ../../appdev/guides/pushnotifications.rst:241
 msgid "string"
-msgstr ""
+msgstr "строка"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Required. ID of the application that will receive the notification,"
-msgstr ""
+msgstr "Обязательный параметр. ID приложения, которое получит уведомление,"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "as described in the client side documentation."
-msgstr ""
+msgstr "как это описано в документации для клиентской части."
 
 #: ../../appdev/guides/pushnotifications.rst:173
 msgid "expire_on"
-msgstr ""
+msgstr "expire_on"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Required. Expiration date/time for this message, in"
 msgstr ""
+"Обязательный параметр.  Срок (время и дата) истечения для этого сообщения, в"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "`ISO8601 Extendendformat <https://www.w3.org/TR/NOTE-datetime>`_."
 msgstr ""
+"формате `ISO8601 Extendendformat <https://www.w3.org/TR/NOTE-datetime>`_."
 
 #: ../../appdev/guides/pushnotifications.rst:176
 msgid "token"
-msgstr ""
+msgstr "токен"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Required. The token identifying the user+device to which the message is"
 msgstr ""
+"Обязательный параметр. Токен, идентифицирующий пользователя и устройство, "
+"которому предназначено сообщение"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "directed, as described in the client side documentation."
-msgstr ""
+msgstr "как это описано в клиентской части документации."
 
 #: ../../appdev/guides/pushnotifications.rst:179
 msgid "clear_pending"
-msgstr ""
+msgstr "clear_pending"
 
 #: ../../appdev/guides/pushnotifications.rst:179
 #: ../../appdev/guides/pushnotifications.rst:248
 #: ../../appdev/guides/pushnotifications.rst:250
 #: ../../appdev/guides/pushnotifications.rst:277
 msgid "bool"
-msgstr ""
+msgstr "bool"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Discards all previous pending notifications. Usually in response to"
-msgstr ""
+msgstr "Отменяет все предыдущие ожидающие уведомления. Обычно в ответ на"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "getting a \"too-many-pending\" error. Defaults to false."
-msgstr ""
+msgstr "ошибку  \"too-many-pending\". По умолчанию отключена."
 
 #: ../../appdev/guides/pushnotifications.rst:182
 msgid "replace_tag"
-msgstr ""
+msgstr "replace_tag"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "If there's a pending notification with the same tag, delete it before"
-msgstr ""
+msgstr "Если есть ожидающее уведомление с тем же тегом, удалите его"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "queuing this new one."
-msgstr ""
+msgstr "в очереди появится это новое сообщение."
 
 #: ../../appdev/guides/pushnotifications.rst:185
 msgid "data"
-msgstr ""
+msgstr "данные"
 
 #: ../../appdev/guides/pushnotifications.rst:185
 #: ../../appdev/guides/pushnotifications.rst:190
 msgid "Data"
-msgstr ""
+msgstr "Данные"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "A JSON object. The contents of the data field are arbitrary. We can use"
 msgstr ""
+"Объект JSON. Содержимое поля данных является произвольным. Мы можем "
+"использовать"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "it to send any data to the app."
-msgstr ""
+msgstr "его для отправки любых данных в приложение."
 
 #: ../../appdev/guides/pushnotifications.rst:195
 msgid "notification"
-msgstr ""
+msgstr "уведомление"
 
 #: ../../appdev/guides/pushnotifications.rst:195
 #: ../../appdev/guides/pushnotifications.rst:201
 msgid "Notification"
-msgstr ""
+msgstr "Уведомление"
 
 #: ../../appdev/guides/pushnotifications.rst:195
 msgid "A JSON object which defines how this notification will be presented."
 msgstr ""
+"Объект JSON, который определяет, как будет представлено это уведомление."
 
 #: ../../appdev/guides/pushnotifications.rst:197
 msgid "message"
-msgstr ""
+msgstr "сообщение"
 
 #: ../../appdev/guides/pushnotifications.rst:197
 msgid "object"
-msgstr ""
+msgstr "объект"
 
 #: ../../appdev/guides/pushnotifications.rst:197
 msgid "A JSON object that is passed as-is to the application via PopAll."
 msgstr ""
+"Объект JSON, который передается приложению в состоянии \"как есть\" через "
+"PopAll."
 
 #: ../../appdev/guides/pushnotifications.rst:206
+#, fuzzy
 msgid "tag"
-msgstr ""
+msgstr "tag"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "The tag of the push notification."
-msgstr ""
+msgstr "Тэг push-уведомления."
 
 #: ../../appdev/guides/pushnotifications.rst:208
 msgid "sound"
