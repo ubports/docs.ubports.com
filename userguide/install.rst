@@ -1,18 +1,18 @@
 Install Ubuntu Touch
 ====================
 
-Installing Ubuntu Touch is easy, and a lot of work has gone in to making the installation process less intimidating to the average user. The UBports Installer is a nice graphical tool that you can use to install Ubuntu Touch on a `supported device <https://devices.ubuntu-touch.io/>`_ from your `Linux <https://snapcraft.io/ubports-installer>`_, `Mac <https://devices.ubuntu-touch.io/installer/dmg>`_ or `Windows <https://devices.ubuntu-touch.io/installer/exe>`_ computer. For more experienced users, we also have manual installation instructions for every device `on the devices page <https://devices.ubuntu-touch.io/>`_.
+Installing Ubuntu Touch is easy, and a lot of work has gone in to making the installation process less intimidating to the average user. The UBports Installer is a nice graphical tool that you can use to install Ubuntu Touch on a `supported device <https://devices.ubuntu-touch.io/>`_ from your `Linux <https://snapcraft.io/ubports-installer>`_, `Mac <https://devices.ubuntu-touch.io/installer/?package=dmg>`_ or `Windows <https://devices.ubuntu-touch.io/installer/?package=exe>`_ computer. For more experienced users, we also have manual installation instructions for every device `on the devices page <https://devices.ubuntu-touch.io/>`_.
 
 .. warning::
     If you're switching your device over from Android, you will not be able to keep any data that is currently on the device. Create an external backup if you want to keep it.
 
 You can `Download the UBports Installer from GitHub <https://github.com/ubports/ubports-installer/releases/latest>`_. The following packages are available:
 
- - `Windows <https://devices.ubuntu-touch.io/installer/exe>`_: ``ubports-installer-<version-number>.exe``
- - `macOS <https://devices.ubuntu-touch.io/installer/dmg>`_: ``ubports-installer-<version-number>.dmg``
- - `Ubuntu or Debian <https://devices.ubuntu-touch.io/installer/deb>`_: ``ubports-installer-<version-number>.deb``
- - `Other Linux distributions (snap) <https://devices.ubuntu-touch.io/installer/snap>`_: ``ubports-installer-<version-number>.snap``
- - `Other Linux distributions (AppImage) <https://devices.ubuntu-touch.io/installer/appimage>`_: ``ubports-installer-<version-number>.AppImage``
+ - `Windows <https://devices.ubuntu-touch.io/installer/?package=exe>`_: ``ubports-installer-<version-number>.exe``
+ - `macOS <https://devices.ubuntu-touch.io/installer/?package=dmg>`_: ``ubports-installer-<version-number>.dmg``
+ - `Ubuntu or Debian <https://devices.ubuntu-touch.io/installer/?package=deb>`_: ``ubports-installer-<version-number>.deb``
+ - `Other Linux distributions (snap) <https://snapcraft.io/ubports-installer>`_: ``ubports-installer-<version-number>.snap``
+ - `Other Linux distributions (AppImage) <https://devices.ubuntu-touch.io/installer/?package=appimage>`_: ``ubports-installer-<version-number>.AppImage``
 
 Start the installer and follow the on-screen instructions that will walk you through the installation process. That's it! Have fun exploring Ubuntu Touch!
 
