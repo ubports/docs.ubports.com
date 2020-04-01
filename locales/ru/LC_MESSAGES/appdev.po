@@ -8,17 +8,21 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 15:16-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-03-31 19:22+0000\n"
+"Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
+"Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
+"documentation-appdev/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.8\n"
 
 #: ../../appdev/guides/contenthub.rst:4
 msgid "The content hub - tips and tricks"
-msgstr ""
+msgstr "Content hub - полезные советы"
 
 #: ../../appdev/guides/contenthub.rst:9
 msgid "Content Hub Share Page"
@@ -27,491 +31,776 @@ msgstr ""
 #: ../../appdev/guides/contenthub.rst:11
 msgid "On Ubuntu Touch the apps are confined. The way of sharing files between them is through the Content Hub, a part of the system that takes care of file import, export and sharing."
 msgstr ""
+"В Ubuntu Touch возможности приложении сильно ограничены. Обмен файлами между "
+"ними осуществляется через Content Hub,  это часть операционной системы, "
+"которая занимается импортом, экспортом и совместным использованием файлов."
 
 #: ../../appdev/guides/contenthub.rst:14
 msgid "Different ways of sharing the content"
-msgstr ""
+msgstr "Разные способы поделиться контентом"
 
 #: ../../appdev/guides/contenthub.rst:16
 msgid "As we can see in the `Content Hub documentation <https://api-docs.ubports.com/sdk/apps/qml/Ubuntu.Content/ContentHandler.html#detailed-description>`_, there are several ways of handling the file to be shared:"
 msgstr ""
+"Как можно узнать из `документации к Content Hub <https://api-docs.ubports."
+"com/sdk/apps/qml/Ubuntu.Content/ContentHandler.html#detailed-description>`_, "
+"есть несколько способов совместного доступа к файлам:"
 
 #: ../../appdev/guides/contenthub.rst:18
 msgid "``ContentHandler.Source`` (The app selected is going to be the source of the file imported)"
 msgstr ""
+"``ContentHandler.Source``(Выбранное приложение будет источником "
+"импортированного файла)"
 
 #: ../../appdev/guides/contenthub.rst:19
 msgid "``ContentHandler.Destination`` (The app selected is going to be the destination of the file exported)"
 msgstr ""
+"``ContentHandler.Destination``(Выбранное приложение будет местом назначения "
+"экспортируемого файла)"
 
 #: ../../appdev/guides/contenthub.rst:20
+#, fuzzy
 msgid "``ContentHandler.Share`` (The app selected is going to be the app from witch the file is going to be shared from)"
 msgstr ""
+"``ContentHandler.Share``(Выбранное приложение - это приложение, из которого "
+"файл будет в общем доступе)"
 
 #: ../../appdev/guides/contenthub.rst:23
 msgid "Importing"
-msgstr ""
+msgstr "Импортирование"
 
 #: ../../appdev/guides/contenthub.rst:28
 msgid "Webapp Creator on the OpenStore"
-msgstr ""
+msgstr "Webapp Creator в OpenStore"
 
 #: ../../appdev/guides/contenthub.rst:30
 msgid "Looking into the code of Webapp Creator, we’ll find the code to import an image to be used as icon. Tapping on the place holder will open the Content Hub that will let us choose from where to import the image (`see the Webapp Creator source code <https://gitlab.com/cibersheep/webapp-creator/blob/master/webapp-creator/app/ImportPage.qml#L38>`_)"
 msgstr ""
+"Мы изучим исходный текст Webapp Creator и найдём участок кода, отвечающий за "
+"импорт изображения, которое используется в качестве иконки. Движение с "
+"нажатой клавишей мышки откроет Content Hub, где мы сможем выбрать откуда "
+"импортировать изображение  (`смотрите исходный код Webapp Creator "
+"<https://gitlab.com/cibersheep/webapp-creator/blob/master/webapp-creator/app/"
+"ImportPage.qml#L38>`_)"
 
 #: ../../appdev/guides/contenthub.rst:41
 msgid "``ContentPeerPicker`` is the element that shows the apps."
-msgstr ""
+msgstr "``ContentPeerPicker`` - элемент, который показывает приложения."
 
 #: ../../appdev/guides/contenthub.rst:47
 msgid "``contentType`` is passed in `Main.qml <https://gitlab.com/cibersheep/webapp-creator/blob/master/webapp-creator/app/Main.qml#L118>`_ as ContentType.Pictures. So, we will only see apps from which we only can import images. ``handler`` is passed in the same line as ContentHandler.Source. As we want to import an image from the app selected in the Content Hub."
 msgstr ""
+"``contentType`` передаётся в `Main.qml <https://gitlab.com/cibersheep/"
+"webapp-creator/blob/master/webapp-creator/app/Main.qml#L118>`_ как "
+"ContentType.Pictures. Таким образом, мы увидим только те приложения, из "
+"которых мы можем импортировать только изображения. ``handler`` передаётся в "
+"той же строчке, что и ContentHandler.Source потому, что мы хотим "
+"импортировать изображение из приложения, выбранного в Content Hub."
 
 #: ../../appdev/guides/contenthub.rst:50
 msgid "Exporting"
-msgstr ""
+msgstr "Экспорт"
 
 #: ../../appdev/guides/contenthub.rst:55
 msgid "Gelek in the OpenStore"
-msgstr ""
+msgstr "Gelek в OpenStore"
 
 #: ../../appdev/guides/contenthub.rst:57
 msgid "In Gelek, we are going to end with some saved games that we want to save in our device or share with ourselves (in Telegram and then save them to our computer)."
 msgstr ""
+"В Gelek мы будем  работать с некоторыми сохраненными играми, которые нужно "
+"хранить в нашем устройстве или поделиться с пользователями (через Telegram, "
+"а затем перенести их на десктоп)."
 
 #: ../../appdev/guides/contenthub.rst:61
 msgid "Tapping on the download icon we will get a Content Hub to *save* the game file (which is actually an export)."
 msgstr ""
+"Удерживая курсор на иконке \"Download\" мы заставим Content Hub *сохранить* "
+"файл игры (и он же предназначен для экспорта)."
 
 #: ../../appdev/guides/contenthub.rst:63
 msgid "The game file is a file of type ``glksave``. We will tell Content Hub that we are sending a file of type ``All`` (`see the Install Page code <https://gitlab.com/cibersheep/gelek/blob/master/app/InstallPage.qml#L38>`_)."
 msgstr ""
+"Файл игры относится к типу ``glksave``. Мы сообщим Content Hub, что мы "
+"собираемся отправить файл типа ``All`` (`смотрите коды на странице "
+"инсталляции <https://gitlab.com/cibersheep/gelek/blob/master/app/"
+"InstallPage.qml#L38>`_)."
 
 #: ../../appdev/guides/contenthub.rst:76
+#, fuzzy
 msgid "``contentType`` is ``ContentType.All``, so we will only see apps which are able to receive unmarked file types. ``handler`` is ``ContentHandler.Destination``, so the app selected should store the saved game."
 msgstr ""
+"``contentType`` - это``ContentType.All``, поэтому мы увидим только "
+"приложения,  которые могут получать файлы с неуказанными типами.  ``handler``"
+" - это ``ContentHandler.Destination``, поэтому выбранное приложение должно "
+"сохранять файл игры.."
 
 #: ../../appdev/guides/contenthub.rst:78
 msgid "Tapping on the File Manager we will save the saved game in the folder we choose."
 msgstr ""
+"Нажатие вкладки \"File Manager\" переместит сохраненную игру в папку, "
+"которую мы выберем."
 
 #: ../../appdev/guides/contenthub.rst:81
 msgid "Sharing"
-msgstr ""
+msgstr "Sharing (Общий доступ)"
 
 #: ../../appdev/guides/contenthub.rst:83
 msgid "Similarly, tapping on the share icon will allow us to send the saved game through Telegram to ourselves (`see the Webapp Creator Import Page source code <https://gitlab.com/cibersheep/webapp-creator/blob/master/webapp-creator/app/ImportPage.qml#L38>`_)."
 msgstr ""
+"Точно так же, нажатие на иконку \"share\" отправит сохранённую игру другим "
+"пользователям через мессенджер Telegram (`подробнее смотрите страничку с "
+"исходным кодом Webapp Creator Import Page  <https://gitlab.com/cibersheep/"
+"webapp-creator/blob/master/webapp-creator/app/ImportPage.qml#L38>`_)."
 
 #: ../../appdev/guides/contenthub.rst:96
 msgid "The only difference between this and the previous code is that ``handler`` is ``ContentHandler.Share``"
 msgstr ""
+"Разница между этим и предыдущим участком кода только в том, что ``handler`` -"
+" это ``ContentHandler.Share``"
 
 #: ../../appdev/guides/contenthub.rst:99
 msgid "Wait a minute. Why the different apps?"
-msgstr ""
+msgstr "Подождите, почему приложения разные?"
 
 #: ../../appdev/guides/contenthub.rst:104
 msgid "Content Hub: Export vs Share"
-msgstr ""
+msgstr "Content Hub: Экспорт или Общий доступ ?"
 
 #: ../../appdev/guides/contenthub.rst:106
 msgid "Each developer can decide the rules each app would follow in relation to the Content Hub. Why the OpenStore is shown as the destination of an export?"
 msgstr ""
+"Каждый разработчик может самостоятельно решить правила, по которым каждое "
+"приложение взаимодействует с Content Hub.Почему OpenStore показывается как "
+"место для экспорта?"
 
 #: ../../appdev/guides/contenthub.rst:108
 msgid "Let’s check its manifest.json"
-msgstr ""
+msgstr "Давайте проверим manifest.json для этого приложения"
 
 #: ../../appdev/guides/contenthub.rst:121
 msgid "The above code defines that the hooks for the app named ``\"openstore\"`` in relation to the ``\"content-hub\"`` should follow the rules defined in ``openstore-contenthub.json``"
 msgstr ""
+"Приведённый выше код показывает, что в приложении есть hooks ``\"openstore\""
+"``связанные с ``\"content-hub\"``, и они должны работать по правилам, "
+"заданным в файле ``openstore-contenthub.json``"
 
 #: ../../appdev/guides/contenthub.rst:131
 msgid "This means, the OpenStore will be the destination for *all* ``ContentTypes``."
 msgstr ""
+"Это значит, что OpenStore будет местом назначения для *всех* "
+"``ContentTypes``."
 
 #: ../../appdev/guides/contenthub.rst:133
 msgid "What about uMatriks? Let’s see its ``content-hub.json``"
 msgstr ""
+"А что с приложением uMatriks? Давайте посмотрим его файл ``content-hub.json``"
 
 #: ../../appdev/guides/contenthub.rst:161
 msgid "So, with this example, uMatriks will be able to be the destination, source and share app for all kinds of ``ContentType``. What about the other hooks in the ``manifest.json``? That is discussed in the next guide."
 msgstr ""
+"Так, в этом примере uMatriks может быть местом назначения, исходной точкой и "
+"приложением для общего доступа для всех типов ``ContentType``. Что можно "
+"сказать о других hooks в файле ``manifest.json``?  Об этом рассказывается в "
+"следующей части руководства."
 
 #: ../../appdev/guides/cookbook.rst:2
 msgid "App development cookbook"
-msgstr ""
+msgstr "Справочник по созданию приложений"
 
 #: ../../appdev/guides/cookbook.rst:5
 msgid "Unofficial resources"
-msgstr ""
+msgstr "Неофициальные источники"
 
 #: ../../appdev/guides/cookbook.rst:7
 msgid "In this section you will find links to external resources about creating applications for Ubuntu Touch."
 msgstr ""
+"В этом разделе содержатся ссылки на внешние источники, где можно найти "
+"информацию о создании приложений для Ubuntu Touch."
 
 #: ../../appdev/guides/cookbook.rst:9
 msgid "`Ubuntu Touch programming book <https://www.gitbook.com/book/mimecar/ubuntu-touch-programming-course/details>`__"
 msgstr ""
+"`Ubuntu Touch programming book <https://www.gitbook.com/book/mimecar/"
+"ubuntu-touch-programming-course/details>`__"
 
 #: ../../appdev/guides/cookbook.rst:10
 msgid "`Application Templates by fulvio <https://github.com/fulvio999/ubports_app_templates>`__"
 msgstr ""
+"`Application Templates by fulvio <https://github.com/fulvio999/"
+"ubports_app_templates>`__"
 
 #: ../../appdev/guides/cookbook.rst:13
 msgid "Playground"
-msgstr ""
+msgstr "\"Песочница\""
 
 #: ../../appdev/guides/cookbook.rst:15
 msgid "In a completely free and open source community, it is natural to have community members exploring the limits of the platform in many many directions. In this section you will find links to external resources that do exactly that: Explore. The purpose of this list is to show the unlimited possibilities of an open platform like Ubuntu Touch."
 msgstr ""
+"В полностью свободном и открытом сообществе совершенно естественным кажется, "
+"что найдутся пользователи, которым станет интересно изучить систему со всех "
+"сторон. В этом разделе Вы найдёте ссылки на внешние источники, специально "
+"предназначенные для исследований. Цель списка - показать неограниченные "
+"возможности открытых платформ."
 
 #: ../../appdev/guides/cookbook.rst:18
 msgid "The resources listed here do not necessarily represent the officially endorsed way of developing applications for Ubuntu Touch, but are interesting experiments."
 msgstr ""
+"Перечисленные здесь ресурсы не обязательно представляют официально "
+"одобренный способ разработки приложений для Ubuntu Touch, но будут интересны "
+"для экспериментов."
 
 #: ../../appdev/guides/cookbook.rst:20
 msgid "`Free Pascal development for Ubuntu Touch <http://kriscode.blogspot.tw/2016/09/freepascal-development-for-ubuntu-phone.html>`__"
 msgstr ""
+"`Free Pascal development for Ubuntu Touch <http://kriscode.blogspot.tw/2016/"
+"09/freepascal-development-for-ubuntu-phone.html>`__"
 
 #: ../../appdev/guides/cookbook.rst:21
 msgid "`Lazarus development for Ubuntu Touch <http://kriscode.blogspot.tw/2016/10/lazarus-development-for-ubuntu-phone.html>`__"
 msgstr ""
+"`Lazarus development for Ubuntu Touch <http://kriscode.blogspot.tw/2016/10/"
+"lazarus-development-for-ubuntu-phone.html>`__"
 
 #: ../../appdev/guides/cookbook.rst:22
 msgid "`Geany on Ubuntu Touch device as text editor, source code editor, debugger and compiler for multiple languages <http://kriscode.blogspot.tw/2017/10/geany-on-ubuntu-touch-device-as-text.html>`__"
 msgstr ""
+"`Geany on Ubuntu Touch device as text editor, source code editor, debugger "
+"and compiler for multiple languages <http://kriscode.blogspot.tw/2017/10/"
+"geany-on-ubuntu-touch-device-as-text.html>`__"
 
 #: ../../appdev/guides/cookbook.rst:23
 msgid "`Publish your existing Qt QML app to Ubuntu Touch using QMake (Video) <https://youtu.be/ehqlwRNrfO0>`__"
 msgstr ""
+"`Publish your existing Qt QML app to Ubuntu Touch using QMake (Видео) "
+"<https://youtu.be/ehqlwRNrfO0>`__"
 
 #: ../../appdev/guides/cookbook.rst:24
 msgid "`Publish your existing Qt QML app to Ubuntu Touch using CMake (Video) <https://youtu.be/c2sq6aLeGec>`__"
 msgstr ""
+"`Publish your existing Qt QML app to Ubuntu Touch using CMake (Видео) "
+"<https://youtu.be/c2sq6aLeGec>`__"
 
 #: ../../appdev/guides/cookbook.rst:25
 msgid "`Getting started with Clickable (Video) <https://youtu.be/TE-s5522v0Y>`__"
 msgstr ""
+"`Getting started with Clickable (Видео) <https://youtu.be/TE-s5522v0Y>`__"
 
 #: ../../appdev/guides/cookbook.rst:26
 msgid "`Content Hub overview (Video) <https://youtu.be/AihwC2sPIk0>`__"
-msgstr ""
+msgstr "`Content Hub overview (Видео) <https://youtu.be/AihwC2sPIk0>`__"
 
 #: ../../appdev/guides/cookbook.rst:27
 msgid "`Import files to your app with Content Hub (Video) <https://youtu.be/q6zzM16jw1U>`__"
 msgstr ""
+"`Import files to your app with Content Hub (Видео) <https://youtu.be/"
+"q6zzM16jw1U>`__"
 
 #: ../../appdev/guides/dependencies.rst:2
 msgid "Handle C++ dependencies with Clickable"
-msgstr ""
+msgstr "Работа с библиотеками и зависимыми файлами C++  с помощью Clickable"
 
 #: ../../appdev/guides/dependencies.rst:4
 msgid "If an app depends on a library that is not pre-installed in Ubuntu Touch, the app needs to ship it inside the click package. This guide shows how this can be done with Clickable."
 msgstr ""
+"Если работа приложения зависит от библиотеки,  по умолчанию не установленной "
+"в Ubuntu Touch, то приложение должно взять его из click-пакета. В этой "
+"статье рассказывается, как с помощью Clickable создать такой пакет."
 
 #: ../../appdev/guides/dependencies.rst:7
 msgid "Building"
-msgstr ""
+msgstr "Сборка"
 
 #: ../../appdev/guides/dependencies.rst:8
 msgid "Often libraries are available pre-built, So you need to decide whether you want your build setup to download the library source and compile it or download the pre-built version. The following sections describe the options with its pros and cons."
 msgstr ""
+"Часто необходимые библиотеки уже предустановлены в системе.Поэтому следует "
+"решить, хотите ли Вы сформировать дистрибутив с программой и скачать "
+"необходимые библиотеки из сети, или взять их из каталогов операционной "
+"системы. Ниже мы рассмотрим плюсы и минусы всех способов."
 
 #: ../../appdev/guides/dependencies.rst:11
 msgid "Compilation"
-msgstr ""
+msgstr "Компиляция"
 
 #: ../../appdev/guides/dependencies.rst:12
 msgid "Compiling the library gives you control over the result, which brings a lot of advantages. For instance, you may disable components your app doesn't need and link the library statically, resulting in a much smaller package size."
 msgstr ""
+"Компиляция библиотеки гарантированно даст нужный файл. В этом и есть "
+"основное преимущество. Например, можно отключить компоненты, которые не "
+"требуются приложению, и статически связать библиотеку, что приведет к "
+"меньшему размеру пакета."
 
 #: ../../appdev/guides/dependencies.rst:14
 msgid "Put the libraries source code at ``libs/LIBNAME``, because this is where clickable will look for it by default. If the dependency source code is available as a git repository, it is a good idea to add it as a `git submodule <https://git-scm.com/book/de/v1/Git-Tools-Submodule>`_. Otherwise you might want to add a script to download the sources."
 msgstr ""
+"Скопируйте исходный код библиотеки в папку ``libs/LIBNAME``. Эта  папка по "
+"умолчанию установлена в clickable. Если исходный код нужных библиотек есть в "
+"репозиториях git, можно добавить эту библиотечку как `модуль git  <https"
+"://git-scm.com/book/de/v1/Git-Tools-Submodule>`_.  или придётся добавить "
+"скрипт для скачивания исходных кодов."
 
 #: ../../appdev/guides/dependencies.rst:16
 msgid "Add a `libraries section <http://clickable.bhdouglass.com/en/latest/clickable-json.html#libraries>`_ to your clickable.json, like this:"
 msgstr ""
+"Добавьте `раздел с библиотечками <http://clickable.bhdouglass.com/en/latest/"
+"clickable-json.html#libraries>`_ в файл clickable.json, как это показано в "
+"примере:"
 
 #: ../../appdev/guides/dependencies.rst:31
 msgid "If the library does not contain a CMake configuration, you may use the `qmake` or `custom` template instead. If you choose `custom`, you need to add a `build` command."
 msgstr ""
+"Если библиотека не содержит конфигурации  CMake , вместо этого можно "
+"использовать шаблоны  `qmake` или  `custom`. Если Вы выбираете `custom`, "
+"нужно добавить команду `build`."
 
 #: ../../appdev/guides/dependencies.rst:33
 msgid "You should define a custom app build directory via the ``dir`` param as shown above. Otherwise a `clickable clean` (which is part of the default `clickable` command) would delete the library's build directory, too."
 msgstr ""
+"В параметре ``dir` нужно указать директорию, где будет находиться сборка "
+"нашего приложения, как это показано выше. В противном случае `clickable "
+"clean` (по умолчанию входит в состав команды `clickable`) также удалит всю "
+"папку с готовой сборкой."
 
 #: ../../appdev/guides/dependencies.rst:35
 msgid "Optionally, configure the compilation by adding ``build_args``, which may look like this:"
 msgstr ""
+"Дополнительно настройте процесс компиляции - добавьте опцию ``build_args``. "
+"Это будет выглядеть так:"
 
 #: ../../appdev/guides/dependencies.rst:56
 msgid "Build arguments are usually project specific. Therefore, study the library's build instructions and also look for ``option`` settings in its ``CMakeLists.txt`` (if CMake is used). The default build directory is ``build/LIBNAME/ARCHITECTURE``. Therefore builds for different architectures can exist in parallel."
 msgstr ""
+"Подбор аргументов обычно зависит от настроек проекта. Поэтому изучите "
+"инструкции по сборке библиотеки, а также посмотрите параметры `` option`` в "
+"файле `` CMakeLists.txt`` (если используется CMake). По умолчанию директория "
+"для сборки `` build / LIBNAME / ARCHITECTURE``. Поэтому сборки для разных "
+"архитектур могут существовать параллельно."
 
 #: ../../appdev/guides/dependencies.rst:58
 msgid "To actually build the library run ``clickable build-libs``. You may want to build it for the desktop, too, via ``clickable build-libs --arch amd64``. Don't forget to mention this step in your README!"
 msgstr ""
+"Чтобы действительно собрать библиотеку, запустите  процесс командой`` "
+"clickable build-libs``. Можно собрать и версию для настольного компьютера с "
+"помощью  команды`` clickable build-libs --arch amd64``. Не забудьте отметить "
+"эти шаги в файле README!"
 
 #: ../../appdev/guides/dependencies.rst:60
 msgid "See how `Teleports clickable.json <https://gitlab.com/ubports/apps/teleports/blob/master/clickable.json#L14>`_ uses the libraries feature to build its dependency tdlib."
 msgstr ""
+"Посмотрим, как `Teleports clickable.json <https://gitlab.com/ubports/apps/"
+"teleports/blob/master/clickable.json#L14>`_ использует библиотеки для сборки "
+"файла зависимостей tdlib."
 
 #: ../../appdev/guides/dependencies.rst:63
 msgid "Pre-built"
-msgstr ""
+msgstr "Предустановленные библиотеки"
 
 #: ../../appdev/guides/dependencies.rst:64
 msgid "A pre-built library is usually only available as a shared object, that needs to be linked dynamically. Furthermore, it may contain components that you don't need, resulting in a bloated app. It may even miss something, that you could achieve by compiling it yourself. Sometimes, a library is available in the Ubuntu Repositories, but is not installable for the architecture you need (likely ``armhf``). In this case you have to compile the library as described above."
 msgstr ""
+"Предустановленная библиотека обычно доступна только как общий объект, "
+"который необходимо динамически связывать. Кроме того, она может содержать "
+"лишние компоненты, что приводит к увеличению размера программы. Также в "
+"системе могу быть старые версии библиотек, где отсутствую необходимые "
+"функции. Иногда библиотека доступна в репозиториях Ubuntu, но ее нельзя "
+"установить для требуемой архитектуры (например, для архитектуры `` armhf``). "
+"В этом случае нужно скомпилировать библиотеку, как описано выше."
 
 #: ../../appdev/guides/dependencies.rst:66
 msgid "If the library is available in the Ubuntu Repositories, you can add it to the dependencies list, like this:"
 msgstr ""
+"Если библиотека есть в официальных репозиториях Ubuntu, можно добавить ее в "
+"список файлов зависимостей:"
 
 #: ../../appdev/guides/dependencies.rst:78
 msgid "Clickable will install the specified package automatically for the target architecture inside the build container. An example can be found in `Guitar Tools' clickable.json <https://github.com/t-mon/guitar-tools/blob/master/clickable.json#L4>`_."
 msgstr ""
+"Clickable автоматически установит указанный пакет внутри контейнера сборки "
+"для нужной архитектуры. Пример можно посмотреть в приложении `Guitar Tools'  "
+"- вот его json-файл-<https://github.com/t-mon/guitar-tools/blob/master/"
+"clickable.json#L4>`_."
 
 #: ../../appdev/guides/dependencies.rst:80
 msgid "If the library is not in the Ubuntu Repositories, but in a PPA, you can add the PPA to the clickable.json, too. For example:"
 msgstr ""
+"Если библиотека отсутствует в официальных репозиториях Ubuntu, но есть в "
+"PPA, можно добавить PPA в файл clickable.json. Например:"
 
 #: ../../appdev/guides/dependencies.rst:95
 msgid "Otherwise you may need to add a script to download the pre-built library."
 msgstr ""
+"В противном случае нужно будет добавить скрипт для скачивания "
+"предустановленной библиотеки."
 
 #: ../../appdev/guides/dependencies.rst:98
 msgid "Usage"
-msgstr ""
+msgstr "Использование"
 
 #: ../../appdev/guides/dependencies.rst:99
+#, fuzzy
 msgid "First, you may need to specify the include directory where the compiler can find the headers. Second, you need to link the library itself against your app's binary, except it is a header library, where all the source code is located in header files."
 msgstr ""
+"Самое первое действие - нужно указать директорию, где компилятор будет "
+"искать файлы заголовков. Во-вторых, нужно связать библиотеку и  бинарный "
+"файл приложения, если это только не библиотека заголовков, где весь исходный "
+"код находится в файлах заголовков."
 
 #: ../../appdev/guides/dependencies.rst:101
 msgid "In case the library contains an appropriate CMake configuration file, you may use the `find_package <https://cmake.org/cmake/help/latest/command/find_package.html>`_ command. The additional lines on your CMakeLists.txt then may look like:"
 msgstr ""
+"Если в библиотеке есть подходящий конфигурационный файл CMake, можно "
+"использовать команду  `find_package <https://cmake.org/cmake/help/latest/"
+"command/find_package.html>`_. Дополнительные параметры в файле могут "
+"выглядеть так:"
 
 #: ../../appdev/guides/dependencies.rst:115
 msgid "The command ``dpkg-architecture -qDEB_HOST_MULTIARCH`` is used to query the target architecture, which is part of the library build directory path, if you compiled the library with Clickable."
 msgstr ""
+"Команда ``dpkg-architecture -qDEB_HOST_MULTIARCH`` используется для запроса "
+"архитектуры, её название содержится в имени папки со сборкой библиотеки, она "
+"компилировалась с помощью Clickable."
 
 #: ../../appdev/guides/dependencies.rst:117
 msgid "We define the variable ``SOMELIBRARY_DIR`` with the path to the libraries build directory, to help CMake find the configuration of the library named ``SOMELIBRARY``. You may not need to do this, if you installed the library from the Ubuntu Repositories."
 msgstr ""
+"Мы задаём в переменной `` SOMELIBRARY_DIR`` папку со сборками библиотеки, "
+"чтобы помочь CMake найти конфигурацию библиотеки с именем `` SOMELIBRARY``. "
+"Это можно не делать, если библиотека установлена из репозитория Ubuntu."
 
 #: ../../appdev/guides/dependencies.rst:119
 msgid "The ``find_package`` command defines the path to the include directory as ``SOMELIBRARY_INCLUDE_DIRS`` and the library's binaries as ``SOMELIBRARY_LIBS``. We use those with the ``include_directories`` and ``target_link_libraries`` commands. See the `Camera Scanner ImageProcessing CMakeLists.txt <https://github.com/jonnius/camera-scanner/blob/master/plugins/ImageProcessing/CMakeLists.txt#L23>`_ for a real world example."
 msgstr ""
+"Команда `` find_package`` определяет путь к каталогу include  как `` "
+"SOMELIBRARY_INCLUDE_DIRS``, а  готовые бинарный файлы библиотеки как `` "
+"SOMELIBRARY_LIBS``. Мы используем эти переменные  с командами `` "
+"include_directories`` и `` target_link_libraries``. Пример того, как это "
+"работает можно посмотреть в файле `Camera Scanner ImageProcessing "
+"CMakeLists.txt <https://github.com/jonnius/camera-scanner/blob/master/"
+"plugins/ImageProcessing/CMakeLists.txt#L23>` _ ."
 
 #: ../../appdev/guides/dependencies.rst:122
 msgid "Deployment"
-msgstr ""
+msgstr "Размещение"
 
 #: ../../appdev/guides/dependencies.rst:123
 msgid "If you link a library statically with your app, you do not need to ship the library explicitly, as it is already inside your app binary. To do so, you usually need to compile the library yourself. Otherwise, continue with this section."
 msgstr ""
+"Если Вы статически связываете библиотеку со приложением, то не нужно явно "
+"указывать библиотеку, так как она уже находится внутри двоичного файла "
+"приложения. Чтобы она там оказалась, нужно самостоятельно скомпилировать "
+"библиотеку. В противном случае изучите этот раздел."
 
 #: ../../appdev/guides/dependencies.rst:125
 msgid "Find out which components you need to ship. Usually this is one or more ``*.so`` (shared objects) files, linked dynamically. To get the files into the click package, you need to add an ``install`` command to your build configuration. Add the following lines to your CMakeLists.txt:"
 msgstr ""
+"Узнайте, какие компоненты вам нужны. Обычно это один или несколько файлов `` "
+"* .so`` (общих объектов), связанных динамически. Чтобы собрать файлы в пакет "
+"click, нужно добавить команду `` install`` в конфигурацию сборки. Добавьте "
+"следующие строки в файл CMakeLists.txt:"
 
 #: ../../appdev/guides/dependencies.rst:136
 msgid "This will copy the files into the ``tmp`` folder inside the build directory. This is where Clickable puts all the files that go into the click package. Again, the command ``dpkg-architecture -qDEB_HOST_MULTIARCH`` is used to query the target architecture, which is usually part of the file path."
 msgstr ""
+"Это скопирует файлы в папку `` tmp`` внутри директории сборки. Здесь "
+"Clickable помещает все файлы, которые входят в пакет click. Снова "
+"используется команда `` dpkg-architect -qDEB_HOST_MULTIARCH``  для запроса "
+"целевой архитектуры, которая можно увидеть в пути к файлу."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:2
+#, fuzzy
 msgid "Importing from Content Hub and URLdispatcher"
-msgstr ""
+msgstr "Перенос из Content Hub и URLdispatcher"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:7
 msgid "In the previous guide we have seen a little bit about how Content Hub works. In this guide we will see how ``URLdispatcher`` works and how to handle imported data from the Content Hub."
 msgstr ""
+"В предыдущем руководстве мы немного узнали о том, как работает Content Hub. "
+"В этом руководстве мы увидим, как работает `` URLdispatcher`` и как "
+"обрабатывать импортированные данные из Content Hub."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:10
 msgid "Handle data from the Content Hub"
-msgstr ""
+msgstr "Обработка данных из Content Hub"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:15
 msgid "OpenStore app from open-store.io"
-msgstr ""
+msgstr "Приложение OpenStore с сайта open-store.io"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:17
 msgid "One of the easiest ways of testing an app, is to send a test click to yourself on Telegram, and opening that click file with the OpenStore through the Content Hub:"
 msgstr ""
+"Один из самых простых способов тестирования приложения - отправить тестовый "
+"click-пакет в свою учётную запись Telegram и открыть этот файл в OpenStore "
+"через Content Hub:"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:22
 msgid "If we tap on the OpenStore app, it will be opened and it will ask if we want to install the click file. Let’s take a look into `the Main.qml code of the app <https://github.com/UbuntuOpenStore/openstore-app/blob/master/openstore/Main.qml#L85>`_ to see how it is done:"
 msgstr ""
+"Если мы попробуем запустить приложение из OpenStore, то система спросит, "
+"хотим ли мы установить click-файл. Давайте посмотрим на файл приложения "
+"Main.qml  <https://github.com/UbuntuOpenStore/openstore-app/blob/master/"
+"openstore/Main.qml#L85> `_, чтобы узнать, как это делается:"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:41
 msgid "Do you see that Connections element that targets the ContentHub? When it receives the signal onImportRequested, it will take the url of the data sent from the Content Hub (``transfer.items[0].url`` is the url of the first data sent) and open a ``PopUp`` element to let the user install the click."
 msgstr ""
+"Вы видите элементы Connections, которые относятся к  ContentHub? Когда "
+"приложение получает сигнал onImportRequested,  оно ищет  url-адрес в данных, "
+"полученных от  Content Hub (``transfer.items[0].url``-  url-адрес первых "
+"отправленных пакетов данных) и откроет элемент ``PopUp``, чтобы пользователь "
+"смог установить click-пакет."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:44
 msgid "What about the URLdispatcher?"
-msgstr ""
+msgstr "Что можно сказать об URLdispatcher?"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:46
 msgid "The URL dispatcher is a piece of software, similar to the Content Hub, that makes our life easier trying to choose the correct app for a certain protocol. For example: We probably want to open the web browser when tapping on an http protocol. If we tap on a map link it is handy to open it with uNav or to open a twitter link in the Twitter app! How does that work?"
 msgstr ""
+"Диспетчер URL - это часть программного обеспечения, похожая на Content Hub, "
+"которая облегчает нашу жизнь, пытаясь выбрать правильное приложение для "
+"определенного протокола. Например: скорее всего, нужно открыть веб-браузер "
+"при нажатии на http-ссылку. Ссылку на карту удобнее открыть с помощью uNav, "
+"а ссылку на пост Twitter - в приложении Twitter. Как это работает?"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:48
 msgid "The ``URLdispatcher`` selects which app (according to their ``manifest.json``) will open a certain link."
 msgstr ""
+"``URLdispatcher`` (Диспетчер URL) выбирает, какое приложение (согласно файлу "
+"``manifest.json``) откроет определенную ссылку."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:53
 msgid "Let’s see how our navigation app looks inside. uNav’s manifest shows special hooks for the ``URLdispatcher`` in its `manifest.json code <https://bazaar.launchpad.net/~unav-devs/unav/trunk/view/head:/manifest.json#L9>`_:"
 msgstr ""
+"Давайте посмотрим, как устроено навигационное приложение. В файле файле "
+"manifest.json приложения uNav показаны специальные хуки для `` "
+"URLdispatcher``  <https://bazaar.launchpad.net/~unav-devs/unav/trunk/view/"
+"head:/manifest.json#L9> `_:"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:83
+#, fuzzy
 msgid "This means that a link that looks like http://map.unav.me/xxxxx,xxxxx will be opened in uNav. And that’s defined in lines 2 and 3, where it looks for protocol http followed by map.unav.me."
 msgstr ""
+"Это означает, что ссылка в формате http://map.unav.me/xxxxx ,xxxxx будет "
+"открыта в uNav. Это определено в строках 2 и 3, где указан протокол http и "
+"приложение map.unav.me."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:85
 msgid "Also, a URI formatted geo:xxx,xxx should open in uNav, as it’s defined in line 11."
 msgstr ""
+"Кроме того, geo: xxx, xxx в формате URI должны открываться в uNav, как это "
+"определено в строке 11."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:88
 msgid "And how do we manage the received URL?"
-msgstr ""
+msgstr "И как мы управляем полученным URL?"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:90
 msgid "After the ``URLdispatcher`` sends the link to the correspondent app, we need to handle that URL or URI in the targeted app. Let’s see how to do that:"
 msgstr ""
+"После того, как `` URLdispatcher`` отправит ссылку соответствующему "
+"приложению, нам нужно обработать этот URL или URI в целевом приложении. "
+"Давайте посмотрим, как это сделать:"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:92
 msgid "In the main qml file, we need to add some code to know what to do with the dispatched URL. First add an `Arguments element <https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L189>`_ that holds the URL, as is done, for example, in the `Linphone app <https://open-store.io/app/linphone.cibersheep>`_. Also, we add `connection to the URI Handler <https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L200>`_ with a Connection element with ``UriHandler`` as a target."
 msgstr ""
+"В основной файл qml нужно добавить код, чтобы знать, что делать с "
+"отправленным URL-адресом. Сначала добавьте элемент  `Arguments "
+"<https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/"
+"Main.qml#L189> `_, который содержит URL-адрес. Пример, как это сделано, "
+"можно посмотреть в файле приложения  `Linphone <https://open-store.io/app/"
+"linphone.cibersheep>` _. Кроме того, мы настраиваем `соединение обработчика "
+"URI <https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/"
+"Main.qml#L200>` _ и элемента Connection с `` UriHandler` `."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:120
 msgid "This code will manage a URI in the form ``linphone://sip:xxx@xxx.xx`` when the app is opened. But what do we need to do to handle this link when the app is closed?"
 msgstr ""
+"Этот код при открытии приложения будет передаваться URI в формате `` "
+"linphone: // sip: xxx @ xxx.xx``. Но что нам нужно сделать, чтобы обработать "
+"эту ссылку, когда приложение закрыто?"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:122
 msgid "We need to add a little bit `extra code <https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L69>`_ that will cover two cases: 1) We receive one URL 2) We receive more than one URL"
 msgstr ""
+"Нам нужно добавить в исходный файл участок `дополнительного кода "
+"<https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/"
+"Main.qml#L69>` _, который будет описывать два случая: 1) получен один URL 2) "
+"Получено более одного URL"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:149
 msgid "What happens if more than one app has the same URL type defined?"
 msgstr ""
+"Что произойдет, если для нескольких приложений определен один и тот же тип "
+"URL?"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:151
 msgid "A very good question. What happens if we tap on a Twitter link? How is such a URL handled by the ``URLdispatcher`` as protocol ``http`` or the protocol ``http://twitter``?"
 msgstr ""
+"Очень хороший вопрос. Что произойдет, если мы нажмем на ссылку в Twitter? "
+"Как такой URL будет обрабатывать `` URLdispatcher``?  Она будет воспринята "
+"как обычная ссылка `` http`` или как ссылка для приложения`` http: // "
+"twitter``?"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:153
 msgid "What happens if two apps have the same defined protocol?"
-msgstr ""
+msgstr "Что произойдет, если один протокол определен для двух приложений?"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:155
 msgid "Now it’s time to do some tests and share the results in the next guide."
 msgstr ""
+"Теперь пришло время сделать несколько тестов и обсудить результаты в "
+"следующей главе."
 
 #: ../../appdev/guides/index.rst:4
 msgid "Developer guides"
-msgstr ""
+msgstr "Инструкции для разработчика"
 
 #: ../../appdev/guides/index.rst:6
 msgid "We are currently working on expanding our list of developer guides. In the mean time we recommend the `Ubuntu Touch Programming Course <https://mimecar.gitbook.io/qt-course/>`__."
 msgstr ""
+"В настоящее время мы работаем над расширением нашего списка руководств для "
+"разработчиков. Пока рекомендуем изучить книгу `Курс программирования Ubuntu "
+"Touch <https://mimecar.gitbook.io/qt-course/>` __."
 
 #: ../../appdev/guides/index.rst:9
 msgid "If you are interested in helping create developer guides check out our `GitLab Project <https://gitlab.com/ubports/apps/development-resources>`__."
 msgstr ""
+"Если вы хотите помочь в создании руководств для разработчиков, ознакомьтесь "
+"со страничкой проекта в `GitLab <https://gitlab.com/ubports/apps/development-"
+"resources> `__."
 
 #: ../../appdev/guides/pushnotifications.rst:2
 #: ../../appdev/platform/index.rst:12
 msgid "Push notifications"
-msgstr ""
+msgstr "Push-уведомления"
 
 #: ../../appdev/guides/pushnotifications.rst:4
 msgid "Let's assume that you have an app created with Clickable and published on the OpenStore. But now you want to be able to send Push Notifications to your users. First of all, you need to understand how this is working:"
 msgstr ""
+"Предположим, у Вас есть приложение, созданное с помощью Clickable и "
+"размещенное в OpenStore. Но теперь Вы хотите  отправлять Push-уведомления "
+"своим пользователям. Прежде всего,  нужно понять, как это работает:"
 
 #: ../../appdev/guides/pushnotifications.rst:8
 msgid "Every app which uses push notifications has got a unique token. This token identifies the user, the device and the app itself. The token is generated by the UBports Push Service."
 msgstr ""
+"Каждое приложение, которое использует push-уведомления, имеет уникальный "
+"токен. Этот токен идентифицирует пользователя, устройство и само приложение. "
+"Маркер генерируется службой UBports Push."
 
 #: ../../appdev/guides/pushnotifications.rst:9
 msgid "You will need the token to send a push notification. So the app sends its token to the app developer's server."
 msgstr ""
+"Для отправки push-уведомления потребуется токен. Таким образом, приложение "
+"отправляет свой токен на сервер разработчика приложения."
 
 #: ../../appdev/guides/pushnotifications.rst:10
 msgid "With the token you can send a HTTP request to the UBports Push Server which will forward the notification the user's device."
 msgstr ""
+"С помощью токена можно отправить HTTP-запрос на UBports Push Server, а он "
+"перенаправит уведомление на устройство пользователя."
 
 #: ../../appdev/guides/pushnotifications.rst:12
 msgid "Let's practice this step-by-step."
-msgstr ""
+msgstr "Давайте попробуем повторить этот алгоритм шаг за шагом."
 
 #: ../../appdev/guides/pushnotifications.rst:15
 msgid "In the following example we will not implement a server. Also the communication between your app and your server is up to you. Please inform the user about the communication with your server by providing a privacy policy!"
 msgstr ""
+"В следующем примере мы не будем заниматься настройками сервера. Связь между "
+"приложением и  сервером зависит от вас. Пожалуйста, сообщите пользователю о "
+"соединении с сервером и попросите у него согласие с политикой "
+"конфиденциальности!"
 
 #: ../../appdev/guides/pushnotifications.rst:18
 msgid "Make the app ready for push notifications"
-msgstr ""
+msgstr "Подготовьте приложение к работе с push-уведомлениями"
 
 #: ../../appdev/guides/pushnotifications.rst:21
 msgid "Implementing the PushClient"
-msgstr ""
+msgstr "Настройка PushClient"
 
 #: ../../appdev/guides/pushnotifications.rst:23
 msgid "First we need to add the policy group \"push-notification-client\". Your apparmor file could look like this:"
 msgstr ""
+"Сначала нам нужно добавить группу политик «push-messages-client». Ваш файл "
+"для apparmor может выглядеть так:"
 
 #: ../../appdev/guides/pushnotifications.rst:36
 msgid "In the next step we need to modify the Qml parts. We need to add a pushclient component:"
-msgstr ""
+msgstr "Далее нам нужно внести изменения в Qml. Добавляем компонент pushclient:"
 
 #: ../../appdev/guides/pushnotifications.rst:52
 msgid "You need to set the correct appId! If the app name in your manifest file is myapp.yourname and the name of the main hook (the one which handles the .desktop file) is hookname, then the appId is:  myapp.yourname_hookname. When we now start the app, it will get a token and print this token in the logs. With clickable logs we will be able to copy this token out of the terminal. But the app is not yet ready to receive a push notification. For this we need something called a pushhelper!"
 msgstr ""
+"Необходимо указать правильный appId! Если имя приложения в  файле манифеста -"
+" myapp.yourname, а имя основного обработчика (которое обрабатывает файл "
+".desktop) - это имя_хука, тогда appId будет такой: myapp.yourname_hookname. "
+"Когда мы запустим приложение, оно получит токен и запишет его в лог-файл. Из "
+"лог-файлов для clickable можно скопировать этот токен в терминале. Но "
+"приложение еще не готово для получения push-уведомления. Для этого нам "
+"понадобится pushhelper."
 
 #: ../../appdev/guides/pushnotifications.rst:56
 msgid "Implementing the pushhelper"
-msgstr ""
+msgstr "Реализация pushhelper"
 
 #: ../../appdev/guides/pushnotifications.rst:58
 msgid "The pushhelper is a part of the app which will receive all push notifications and process them before sending them to the system notification center. It will receive a json-file and must output another json-file in the correct format. The pushhelper is seperated from the app. So we need a new hook in the manifest. It could look like this:"
 msgstr ""
+"Pushhelper - это часть приложения, которая будет получать все push-"
+"уведомления и обрабатывать их перед отправкой в центр системных уведомлений. "
+"Pushhelper получит json-файл и должен вывести другой json-файл в правильном "
+"формате. Pushhelper отделен от приложения. Итак, нам нужен новый hook в "
+"файле manifest. Это может выглядеть так:"
 
 #: ../../appdev/guides/pushnotifications.rst:81
 msgid "It should be clear that we now need a different apparmor file and a different executable file. The **push-apparmor.json** file must only contain the policy group push-notification-client and should look like this:"
 msgstr ""
+"Должно быть понятно, что теперь нужен другой файл apparmor и другой "
+"исполняемый файл. Файл ** push-apparmor.json ** должен содержать только "
+"группу политик push-messages-client и должен выглядеть следующим образом:"
 
 #: ../../appdev/guides/pushnotifications.rst:93
 msgid "The **push.json** is for redirecting to the executable file:"
 msgstr ""
+"Файл ** push.json ** предназначен для перенаправления в исполняемый файл:"
 
 #: ../../appdev/guides/pushnotifications.rst:101
 msgid "In our tutorial we will use python to create a executable named **pushexec** which will forward the notification without changing anything:"
 msgstr ""
+"В нашем уроке используется python для создания исполняемого файла ** "
+"pushexec **. Файл будет пересылать уведомление без каких-либо изменений:"
 
 #: ../../appdev/guides/pushnotifications.rst:113
 msgid "We also need to add this new files to the **CMakeLists.txt** and make the pushexec executable::"
 msgstr ""
+"Нам также нужно добавить новые файлы в ** CMakeLists.txt ** и сделать "
+"исполняемый файл pushexec::"
 
 #: ../../appdev/guides/pushnotifications.rst:123
 msgid "Now the app is ready to receive and process push notifications!"
-msgstr ""
+msgstr "Теперь приложение готово для получения и обработки push-уведомлений!"
 
 #: ../../appdev/guides/pushnotifications.rst:126
 msgid "Using the Push Service API"
-msgstr ""
+msgstr "Использование API сервиса Push"
 
 #: ../../appdev/guides/pushnotifications.rst:128
 msgid "So now you have the token and the app is ready to receive and process push notifications. To send a notification, you need to send a HTTP request to this address: https://push.ubports.com/notify The content-type must be application/json and it must fit in the correct format. A example in javascript could look like this:"
 msgstr ""
+"Теперь у нас есть токен, и приложение готово для получения и обработки push-"
+"уведомлений. Чтобы отправить уведомление, нужно отправить HTTP-запрос по "
+"этому адресу: https://push.ubports.com/notify. Тип содержимого должен быть "
+"application/json в соответствующем формате. Пример в javascript может "
+"выглядеть так:"
 
 #: ../../appdev/guides/pushnotifications.rst:165
 msgid "Push Notification Object"
-msgstr ""
+msgstr "Объект Push Notification"
 
 #: ../../appdev/guides/pushnotifications.rst:168
 #: ../../appdev/guides/pushnotifications.rst:193
@@ -520,7 +809,7 @@ msgstr ""
 #: ../../appdev/guides/pushnotifications.rst:259
 #: ../../appdev/guides/pushnotifications.rst:273
 msgid "Parameter"
-msgstr ""
+msgstr "Параметр"
 
 #: ../../appdev/guides/pushnotifications.rst:168
 #: ../../appdev/guides/pushnotifications.rst:193
@@ -529,7 +818,7 @@ msgstr ""
 #: ../../appdev/guides/pushnotifications.rst:259
 #: ../../appdev/guides/pushnotifications.rst:273
 msgid "Type"
-msgstr ""
+msgstr "Тип"
 
 #: ../../appdev/guides/pushnotifications.rst:168
 #: ../../appdev/guides/pushnotifications.rst:193
@@ -538,11 +827,11 @@ msgstr ""
 #: ../../appdev/guides/pushnotifications.rst:259
 #: ../../appdev/guides/pushnotifications.rst:273
 msgid "Description"
-msgstr ""
+msgstr "Описание"
 
 #: ../../appdev/guides/pushnotifications.rst:170
 msgid "appid"
-msgstr ""
+msgstr "appid"
 
 #: ../../appdev/guides/pushnotifications.rst:170
 #: ../../appdev/guides/pushnotifications.rst:173
@@ -553,120 +842,130 @@ msgstr ""
 #: ../../appdev/guides/pushnotifications.rst:233
 #: ../../appdev/guides/pushnotifications.rst:241
 msgid "string"
-msgstr ""
+msgstr "строка"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Required. ID of the application that will receive the notification,"
-msgstr ""
+msgstr "Обязательный параметр. ID приложения, которое получит уведомление,"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "as described in the client side documentation."
-msgstr ""
+msgstr "как это описано в документации для клиентской части."
 
 #: ../../appdev/guides/pushnotifications.rst:173
 msgid "expire_on"
-msgstr ""
+msgstr "expire_on"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Required. Expiration date/time for this message, in"
 msgstr ""
+"Обязательный параметр.  Срок (время и дата) истечения для этого сообщения, в"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "`ISO8601 Extendendformat <https://www.w3.org/TR/NOTE-datetime>`_."
 msgstr ""
+"формате `ISO8601 Extendendformat <https://www.w3.org/TR/NOTE-datetime>`_."
 
 #: ../../appdev/guides/pushnotifications.rst:176
 msgid "token"
-msgstr ""
+msgstr "токен"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Required. The token identifying the user+device to which the message is"
 msgstr ""
+"Обязательный параметр. Токен, идентифицирующий пользователя и устройство, "
+"которому предназначено сообщение"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "directed, as described in the client side documentation."
-msgstr ""
+msgstr "как это описано в клиентской части документации."
 
 #: ../../appdev/guides/pushnotifications.rst:179
 msgid "clear_pending"
-msgstr ""
+msgstr "clear_pending"
 
 #: ../../appdev/guides/pushnotifications.rst:179
 #: ../../appdev/guides/pushnotifications.rst:248
 #: ../../appdev/guides/pushnotifications.rst:250
 #: ../../appdev/guides/pushnotifications.rst:277
 msgid "bool"
-msgstr ""
+msgstr "bool"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Discards all previous pending notifications. Usually in response to"
-msgstr ""
+msgstr "Отменяет все предыдущие ожидающие уведомления. Обычно в ответ на"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "getting a \"too-many-pending\" error. Defaults to false."
-msgstr ""
+msgstr "ошибку  \"too-many-pending\". По умолчанию отключена."
 
 #: ../../appdev/guides/pushnotifications.rst:182
 msgid "replace_tag"
-msgstr ""
+msgstr "replace_tag"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "If there's a pending notification with the same tag, delete it before"
-msgstr ""
+msgstr "Если есть ожидающее уведомление с тем же тегом, удалите его"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "queuing this new one."
-msgstr ""
+msgstr "в очереди появится это новое сообщение."
 
 #: ../../appdev/guides/pushnotifications.rst:185
 msgid "data"
-msgstr ""
+msgstr "данные"
 
 #: ../../appdev/guides/pushnotifications.rst:185
 #: ../../appdev/guides/pushnotifications.rst:190
 msgid "Data"
-msgstr ""
+msgstr "Данные"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "A JSON object. The contents of the data field are arbitrary. We can use"
 msgstr ""
+"Объект JSON. Содержимое поля данных является произвольным. Мы можем "
+"использовать"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "it to send any data to the app."
-msgstr ""
+msgstr "его для отправки любых данных в приложение."
 
 #: ../../appdev/guides/pushnotifications.rst:195
 msgid "notification"
-msgstr ""
+msgstr "уведомление"
 
 #: ../../appdev/guides/pushnotifications.rst:195
 #: ../../appdev/guides/pushnotifications.rst:201
 msgid "Notification"
-msgstr ""
+msgstr "Уведомление"
 
 #: ../../appdev/guides/pushnotifications.rst:195
 msgid "A JSON object which defines how this notification will be presented."
 msgstr ""
+"Объект JSON, который определяет, как будет представлено это уведомление."
 
 #: ../../appdev/guides/pushnotifications.rst:197
 msgid "message"
-msgstr ""
+msgstr "сообщение"
 
 #: ../../appdev/guides/pushnotifications.rst:197
 msgid "object"
-msgstr ""
+msgstr "объект"
 
 #: ../../appdev/guides/pushnotifications.rst:197
 msgid "A JSON object that is passed as-is to the application via PopAll."
 msgstr ""
+"Объект JSON, который передается приложению в состоянии \"как есть\" через "
+"PopAll."
 
 #: ../../appdev/guides/pushnotifications.rst:206
+#, fuzzy
 msgid "tag"
-msgstr ""
+msgstr "tag"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "The tag of the push notification."
-msgstr ""
+msgstr "Тэг push-уведомления."
 
 #: ../../appdev/guides/pushnotifications.rst:208
 msgid "sound"

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-08 17:32-0500\n"
-"PO-Revision-Date: 2020-02-22 12:21+0000\n"
+"PO-Revision-Date: 2020-03-29 10:22+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-porting/ru/>\n"
@@ -562,15 +562,14 @@ msgid "Forum: `forums.ubports.com <https://forums.ubports.com>`__"
 msgstr "Форум: `forums.ubports.com <https://forums.ubports.com>`__"
 
 #: ../../porting/running-ut.rst:2
-#, fuzzy
 msgid "Running Ubuntu Touch"
 msgstr "Первый запуск Ubuntu Touch"
 
 #: ../../porting/running-ut.rst:4
 msgid "Now that you're logged in, there are a few more steps before Ubuntu Touch will be fully functional on your device."
 msgstr ""
-"После первого входа в систему остаётся сделать еще несколько шагов, прежде "
-"чем Ubuntu Touch станет полностью функциональной на устройстве."
+"После первого входа в систему остаётся сделать еще несколько действий, "
+"прежде чем Ubuntu Touch станет полностью функциональной на устройстве."
 
 #: ../../porting/running-ut.rst:7
 #, fuzzy
