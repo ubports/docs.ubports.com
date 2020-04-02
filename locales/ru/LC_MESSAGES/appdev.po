@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 15:16-0500\n"
-"PO-Revision-Date: 2020-03-31 19:22+0000\n"
+"PO-Revision-Date: 2020-04-03 10:22+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
@@ -969,7 +969,7 @@ msgstr "Тэг push-уведомления."
 
 #: ../../appdev/guides/pushnotifications.rst:208
 msgid "sound"
-msgstr ""
+msgstr "звук"
 
 #: ../../appdev/guides/pushnotifications.rst:208
 msgid "bool or string"
@@ -982,6 +982,8 @@ msgstr ""
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "path to a sound file. The user can disable it, so don't rely"
 msgstr ""
+"путь к звуковому файлу. Пользователь может выключить опцию, поэтому не "
+"доверяйте"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "on it exclusively. Defaults to empty (no sound). The path is"
