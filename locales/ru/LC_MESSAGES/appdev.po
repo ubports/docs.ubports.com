@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 15:16-0500\n"
-"PO-Revision-Date: 2020-04-03 10:22+0000\n"
+"PO-Revision-Date: 2020-04-05 20:23+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
@@ -973,11 +973,13 @@ msgstr "звук"
 
 #: ../../appdev/guides/pushnotifications.rst:208
 msgid "bool or string"
-msgstr ""
+msgstr "логическая опция или путь  к объекту"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "This is either a boolean (play a predetermined sound) or the"
 msgstr ""
+"Эта опция или задается логически (воспроизведение предустановленной мелодии)"
+", или"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "path to a sound file. The user can disable it, so don't rely"
@@ -987,19 +989,19 @@ msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "on it exclusively. Defaults to empty (no sound). The path is"
-msgstr ""
+msgstr "этой опции полностью. По умолчанию отключена (звука нет). Путь"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "relative, and will be looked up in (a) the application's"
-msgstr ""
+msgstr "относительный, и будет задаваться (a) в  разделе настроек приложения"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "``.local/share/<pkgname>``, and (b) standard xdg dirs."
-msgstr ""
+msgstr "``.local/share/<pkgname>``, и (b) в стандартных директориях xdg."
 
 #: ../../appdev/guides/pushnotifications.rst:214
 msgid "vibrate"
-msgstr ""
+msgstr "вибрация"
 
 #: ../../appdev/guides/pushnotifications.rst:214
 msgid "bool or Vibrate"
@@ -1008,14 +1010,16 @@ msgstr ""
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "The notification can contain a vibrate field, causing haptic"
 msgstr ""
+"В уведомлении может содержаться поле для вибрации, вызывающей тактильную"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "feedback, which can be either a boolean (if true, vibrate a"
 msgstr ""
+"обратную связь, опция может быть логической (если активирована, идет вибрация"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "predetermined way) or an Vibrate object."
-msgstr ""
+msgstr "в заранее заданном режиме) или может быть выбран готовый объект."
 
 #: ../../appdev/guides/pushnotifications.rst:218
 msgid "emblem-counter"
@@ -1027,28 +1031,29 @@ msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "A JSON object, which defines how to display the emblem"
-msgstr ""
+msgstr "Объект JSON, который определяет, как отображать эмблему"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "counter."
-msgstr ""
+msgstr "счетчика."
 
 #: ../../appdev/guides/pushnotifications.rst:221
 msgid "card"
-msgstr ""
+msgstr "карточка"
 
 #: ../../appdev/guides/pushnotifications.rst:221
 #: ../../appdev/guides/pushnotifications.rst:225
 msgid "Card"
-msgstr ""
+msgstr "Карточка"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "A JSON object with information about the notification card."
-msgstr ""
+msgstr "Объект JSON с информацией о карточке уведомления."
 
 #: ../../appdev/guides/pushnotifications.rst:230
+#, fuzzy
 msgid "summary"
-msgstr ""
+msgstr "резюме"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Required. A title. The card will not be presented if this is"
