@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 15:16-0500\n"
-"PO-Revision-Date: 2020-04-07 14:23+0000\n"
+"PO-Revision-Date: 2020-04-08 19:23+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
@@ -1082,11 +1082,12 @@ msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "If empty (the default), a bubble notification is"
-msgstr ""
+msgstr "Если пустое (по умолчанию),  нажатие на bubble notification"
 
 #: ../../appdev/guides/pushnotifications.rst:0
+#, fuzzy
 msgid "non-clickable. If you add a URL, then bubble notifications"
-msgstr ""
+msgstr "не даёт ничего. Если Вы добавите адрес URL, то bubble notifications"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "are clickable and launch that URL. One use for this is using"
