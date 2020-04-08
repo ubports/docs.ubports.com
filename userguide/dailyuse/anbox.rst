@@ -51,7 +51,7 @@ How to install
     adb shell # connect from your host computer to your UT device
     sudo mount -o rw,remount /
     sudo apt update
-    sudo apt install anbox-ubuntu-touch
+    sudo apt install anbox-ubuntu-touch android-tools-adb
     anbox-tool install
     exit
 
@@ -72,9 +72,6 @@ How to install new APKs
 - Copy the APK to ``/home/phablet/Downloads``, then run the following from your host::
 
     adb shell # connect from your host computer to your UT device
-    sudo mount -o rw,remount /
-    sudo apt update
-    sudo apt install android-tools-adb
     adb install /home/phablet/Downloads/my-app.apk # This is the adb of your device, not your host
     exit
 
