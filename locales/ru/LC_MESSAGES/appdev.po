@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 15:16-0500\n"
-"PO-Revision-Date: 2020-04-08 19:23+0000\n"
+"PO-Revision-Date: 2020-04-12 13:23+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
@@ -1073,12 +1073,12 @@ msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:235
 msgid "actions"
-msgstr ""
+msgstr "действия"
 
 #: ../../appdev/guides/pushnotifications.rst:235
 #: ../../appdev/guides/pushnotifications.rst:261
 msgid "array"
-msgstr ""
+msgstr "массив"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "If empty (the default), a bubble notification is"
@@ -1090,50 +1090,63 @@ msgid "non-clickable. If you add a URL, then bubble notifications"
 msgstr "не даёт ничего. Если Вы добавите адрес URL, то bubble notifications"
 
 #: ../../appdev/guides/pushnotifications.rst:0
+#, fuzzy
 msgid "are clickable and launch that URL. One use for this is using"
 msgstr ""
+"становятся активными и позволяют открыть этот URL. Один из способов это "
+"использовать -"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "a URL like ``appid://com.ubuntu.developer.ralsina.hello``"
-msgstr ""
+msgstr "настроить URL как``appid://com.ubuntu.developer.ralsina.hello``,"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "which will switch to the app or launch it."
-msgstr ""
+msgstr "это позволит переключиться на приложение или запустит его."
 
 #: ../../appdev/guides/pushnotifications.rst:241
+#, fuzzy
 msgid "icon"
-msgstr ""
+msgstr "иконка"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "An icon relating to the event being notified. Defaults to"
 msgstr ""
+"Иконка относится к событию, к которому относится уведомление. По умолчанию,"
 
 #: ../../appdev/guides/pushnotifications.rst:0
+#, fuzzy
 msgid "empty (no icon); a secondary icon relating to the application"
 msgstr ""
+"значение пустое (иконка отсутствует); дополнительная иконка относится к "
+"приложению"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "will be shown as well, regardless of this field."
-msgstr ""
+msgstr "будет также отображаться, независимо от настроек этого поля."
 
 #: ../../appdev/guides/pushnotifications.rst:245
 msgid "timestamp"
-msgstr ""
+msgstr "Метка времени (timestamp)"
 
 #: ../../appdev/guides/pushnotifications.rst:245
 #: ../../appdev/guides/pushnotifications.rst:264
 #: ../../appdev/guides/pushnotifications.rst:275
 msgid "integer"
-msgstr ""
+msgstr "integer - целое число"
 
 #: ../../appdev/guides/pushnotifications.rst:0
+#, fuzzy
 msgid "Seconds since the unix epoch, only used for persist for now."
 msgstr ""
+"Секунды, прошедшие с начала эпохи Unix, пока используются только для "
+"сохранения."
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "If zero or unset, defaults to current timestamp."
 msgstr ""
+"Если значение не задано или нулевое, то используется текущая временная "
+"отметка."
 
 #: ../../appdev/guides/pushnotifications.rst:248
 msgid "persist"
@@ -1144,8 +1157,9 @@ msgid "Whether to show in notification centre; defaults to false."
 msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:250
+#, fuzzy
 msgid "popup"
-msgstr ""
+msgstr "Всплывающее окно"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Whether to show in a bubble. Users can disable this, and can"
