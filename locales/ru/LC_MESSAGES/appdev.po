@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 15:16-0500\n"
-"PO-Revision-Date: 2020-04-12 13:23+0000\n"
+"PO-Revision-Date: 2020-04-14 14:23+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
@@ -1154,7 +1154,7 @@ msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Whether to show in notification centre; defaults to false."
-msgstr ""
+msgstr "показывать ли в центре уведомлений; по умолчанию отключено."
 
 #: ../../appdev/guides/pushnotifications.rst:250
 #, fuzzy
@@ -1164,26 +1164,32 @@ msgstr "Всплывающее окно"
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Whether to show in a bubble. Users can disable this, and can"
 msgstr ""
+"Показывать ли в bubble notification. Пользователи могут отключить это, и "
+"могут"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "easily miss them, so don't rely on it exclusively. Defaults"
 msgstr ""
+"легко отключить их, поэтому не нужно полагаться на эту опцию. Значения по "
+"умолчанию -"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "to false."
-msgstr ""
+msgstr "опция отключена."
 
 #: ../../appdev/guides/pushnotifications.rst:256
+#, fuzzy
 msgid "Vibrate"
-msgstr ""
+msgstr "Вибрация"
 
 #: ../../appdev/guides/pushnotifications.rst:261
+#, fuzzy
 msgid "pattern"
-msgstr ""
+msgstr "схема"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "A list of integers describing a vibration pattern (duration of alternating"
-msgstr ""
+msgstr "Список переменных, описывающих схемы вибрации (длительность периодов"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "vibration/no vibration times, in milliseconds)."
