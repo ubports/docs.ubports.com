@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 15:16-0500\n"
-"PO-Revision-Date: 2020-04-14 14:23+0000\n"
+"PO-Revision-Date: 2020-04-17 19:23+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
@@ -1193,19 +1193,23 @@ msgstr "Список переменных, описывающих схемы в�
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "vibration/no vibration times, in milliseconds)."
-msgstr ""
+msgstr "вибраций или её отсутствие - время в милисекундах)."
 
 #: ../../appdev/guides/pushnotifications.rst:264
+#, fuzzy
 msgid "repeat"
-msgstr ""
+msgstr "повтор"
 
 #: ../../appdev/guides/pushnotifications.rst:0
+#, fuzzy
 msgid "Number of times the pattern has to be repeated (defaults to 1, 0 is the"
 msgstr ""
+"Сколько раз будет повторяться выбранная схема (по умолчанию установлен 1 "
+"раз, 0 -"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "same as 1)."
-msgstr ""
+msgstr "тоже самое, что и 1)."
 
 #: ../../appdev/guides/pushnotifications.rst:270
 msgid "Emblem-Counter"
