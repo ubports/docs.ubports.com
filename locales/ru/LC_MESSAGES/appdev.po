@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 15:16-0500\n"
-"PO-Revision-Date: 2020-04-17 19:23+0000\n"
+"PO-Revision-Date: 2020-04-20 06:23+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
@@ -1212,16 +1212,18 @@ msgid "same as 1)."
 msgstr "тоже самое, что и 1)."
 
 #: ../../appdev/guides/pushnotifications.rst:270
+#, fuzzy
 msgid "Emblem-Counter"
-msgstr ""
+msgstr "Emblem-Counter"
 
 #: ../../appdev/guides/pushnotifications.rst:275
 msgid "count"
-msgstr ""
+msgstr "число"
 
 #: ../../appdev/guides/pushnotifications.rst:275
+#, fuzzy
 msgid "A number to be displayed over the application's icon in the launcher."
-msgstr ""
+msgstr "Число, отображаемое над значком приложения в панели запуска (launcher)."
 
 #: ../../appdev/guides/pushnotifications.rst:277
 msgid "visible"
@@ -1230,82 +1232,108 @@ msgstr ""
 #: ../../appdev/guides/pushnotifications.rst:277
 msgid "Set to true to show the counter, or false to hide it."
 msgstr ""
+"Установите значение true, чтобы показать счетчик, или false, чтобы скрыть "
+"его."
 
 #: ../../appdev/guides/user-metrics.rst:2
 msgid "User metrics"
-msgstr ""
+msgstr "Метрика пользователя"
 
 #: ../../appdev/guides/user-metrics.rst:5
 msgid "What are user metrics?"
-msgstr ""
+msgstr "Что такое \"метрика пользователя\"?"
 
 #: ../../appdev/guides/user-metrics.rst:7
 msgid "If you look on the lock screen, you will see a circle. Inside the circle is text. Look closer, and you’ll notice that the text contains data regarding the user’s activity. Double tap on the middle of the circle, and you will see more \"metrics\" about the user."
 msgstr ""
+"Если вы посмотрите на экран блокировки, вы увидите круг. Внутри этого круга "
+"есть текст. Посмотрите внимательнее, и вы заметите, что текст содержит "
+"данные об активности пользователя. Дважды нажмите на середину круга, и "
+"увидите больше «метрик» о пользователе."
 
 #: ../../appdev/guides/user-metrics.rst:11
+#, fuzzy
 msgid "This shows \"7 text messages sent today.\" How did it know?"
 msgstr ""
+"Там есть уведомление: \"Сегодня было отправлено 7 текстовых сообщений.\" "
+"Откуда это известно?"
 
 #: ../../appdev/guides/user-metrics.rst:15
+#, fuzzy
 msgid "This is from a 3rd-party application (`nCounter <https://gitlab.com/joboticon/ncounter/>`_) that makes use of the User Metrics feature."
 msgstr ""
+"Информация поступает из стороннего приложения  (`nCounter <https://gitlab."
+"com/joboticon/ncounter/>`_), которая использует для работу функцию \"User "
+"Metrics\"."
 
 #: ../../appdev/guides/user-metrics.rst:17
 msgid "For the most part, these messages are quite clearly state what they are counting, and which app is related. But where do these metrics come from?"
 msgstr ""
+"По большей части в этих сообщениях достаточно четко указано, что какие "
+"данные они используют и какое приложение м этим связано. Но откуда берутся "
+"эти показатели?"
 
 #: ../../appdev/guides/user-metrics.rst:20
 msgid "How can I use user metrics in my application?"
-msgstr ""
+msgstr "Как я могу использовать метрики пользователей в своём приложении?"
 
 #: ../../appdev/guides/user-metrics.rst:22
 msgid "All of the following information will be based on the code for `nCounter`_."
 msgstr ""
+"Вся следующая информация будет основана на коде для приложения `nCounter`_."
 
 #: ../../appdev/guides/user-metrics.rst:24
 msgid "First, you will need to import the module in the QML file that will handle the User Metrics:"
 msgstr ""
+"Сначала нужно будет импортировать в файл QML модуль для обработки метрики "
+"пользователя:"
 
 #: ../../appdev/guides/user-metrics.rst:30
 msgid "(There may be updated versions of this above 0.1)"
-msgstr ""
+msgstr "(Могут быть доступны обновленные версии выше 0.1)"
 
 #: ../../appdev/guides/user-metrics.rst:32
 msgid "Next, the specific Metric must be defined in the code as an object:"
-msgstr ""
+msgstr "Далее, выбранную Метрику нужно настроить в программном коде как объект:"
 
 #: ../../appdev/guides/user-metrics.rst:44
 msgid "Now that the metric is created, we can update the \"format\" or \"emptyFormat\" when an event takes place by referencing the variables in the Metric object."
 msgstr ""
+"Теперь, когда метрика создана, можно обновить «format» или «emptyFormat», "
+"когда происходит событие, ссылаясь на переменные в объекте метрики."
 
 #: ../../appdev/guides/user-metrics.rst:54
 msgid "Here we assign a new value to the circleMetric string variable that’s inside the Metric object:"
 msgstr ""
+"Здесь мы присваиваем новое значение строковой переменной circleMetric, "
+"которая находится внутри объекта метрики:"
 
 #: ../../appdev/guides/user-metrics.rst:56
 msgid "(Remember that circleMetric is the variable value assigned to format)"
 msgstr ""
+"(Помните, что circleMetric - это значение переменной, задаваемое в формате)"
 
 #: ../../appdev/guides/user-metrics.rst:58
 msgid "Metric Id [dot] Variable Name [equals] New variable information"
-msgstr ""
+msgstr "Metric Id [dot] Имя переменной [equals] Новые данные для переменной"
 
 #: ../../appdev/guides/user-metrics.rst:60
 msgid "``metric.circleMetric = \"New Metric Message\"``"
-msgstr ""
+msgstr "``metric.circleMetric = \"Новое сообщение метрики\"``"
 
 #: ../../appdev/guides/user-metrics.rst:62
 msgid "We then tell the lock screen to update the metric in ZERO milliseconds i.e. immediately"
 msgstr ""
+"Затем мы сообщаем экрану блокировки о необходимости обновления метрики в "
+"ноль миллисекунд, т.е. немедленно"
 
 #: ../../appdev/guides/user-metrics.rst:64
 msgid "Metric ID [dot] update (Number of milliseconds)"
-msgstr ""
+msgstr "Metric ID [dot] update (число в миллисекундах)"
 
 #: ../../appdev/guides/user-metrics.rst:66
 msgid "``metric.update(0)``"
-msgstr ""
+msgstr "``metric.update(0)``"
 
 #: ../../appdev/guides/user-metrics.rst:68
 msgid "We have now updated the metric for today. When the time rolls over to tomorrow, the metric will be reset to whatever is in ``emptyFormat``."
