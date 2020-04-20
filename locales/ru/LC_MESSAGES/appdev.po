@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 15:16-0500\n"
-"PO-Revision-Date: 2020-04-20 06:23+0000\n"
+"PO-Revision-Date: 2020-04-21 14:23+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
@@ -1338,30 +1338,41 @@ msgstr "``metric.update(0)``"
 #: ../../appdev/guides/user-metrics.rst:68
 msgid "We have now updated the metric for today. When the time rolls over to tomorrow, the metric will be reset to whatever is in ``emptyFormat``."
 msgstr ""
+"Мы только что обновили метрику по состоянию на сегодня. Когда настанут "
+"следующие сутки, метрика будет сброшена к состоянию, указанному в опции `` "
+"emptyFormat``."
 
 #: ../../appdev/guides/user-metrics.rst:70
 msgid "For most apps, this defaults to 0 counts for messages, calls, etc."
 msgstr ""
+"Для сообщений, звонков и большинства приложений значение этой опции по "
+"умолчанию - 0."
 
 #: ../../appdev/guides/user-metrics.rst:73
 msgid "How do user metrics work?"
-msgstr ""
+msgstr "Как работает пользовательская метрика?"
 
 #: ../../appdev/guides/user-metrics.rst:75
 msgid "User metrics are made up of two \"formats\""
-msgstr ""
+msgstr "Метрика пользователя состоит из двух \"форматов\""
 
 #: ../../appdev/guides/user-metrics.rst:77
 msgid "metrics/messages for today (``format``)"
-msgstr ""
+msgstr "метрики/сообщения для текущих суток (``format``)"
 
 #: ../../appdev/guides/user-metrics.rst:78
 msgid "metrics/messages for tomorrow (``emptyFormat``)"
-msgstr ""
+msgstr "метрики сообщения для следующих суток (``emptyFormat``)"
 
 #: ../../appdev/guides/user-metrics.rst:80
 msgid "The value of ``emptyFormat`` is what displays on the lock screen when no value has been stored in ``format``. In order to display a new value of ``format`` the metric must be updated with ``metric.update(x)`` (where x is the number of milliseconds until the update takes place). The metric will reset back to the value stored in ``emptyFormat`` each day."
 msgstr ""
+"Значение `` emptyFormat`` - это то, что отображается на экране блокировки, "
+"если в `` format`` не было сохранено никакого значения. Чтобы отобразить "
+"новое значение `` format``, метрику нужно обновить с помощью `` "
+"metric.update (x) `` (где x - это количество миллисекунд до обновления). "
+"Метрика будет сбрасываться каждый день обратно к значению, хранящемуся в `` "
+"emptyFormat``."
 
 #: ../../appdev/guides/user-metrics.rst:83
 msgid "Applications make use of this system, but setting and updating the user metric \"formats\" by running a certain code whenever a certain event takes place. e.g. When you press send in Telegram, or when you receive a phone call. The application may store the data for manipulation, but generally the data is stored in the system (`/var/lib/usermetrics <https://github.com/ubports/libusermetrics/tree/xenial/doc/pages>`_)."
