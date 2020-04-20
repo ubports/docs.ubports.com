@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 15:16-0500\n"
-"PO-Revision-Date: 2020-04-03 10:22+0000\n"
+"PO-Revision-Date: 2020-04-17 19:23+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
@@ -973,11 +973,13 @@ msgstr "звук"
 
 #: ../../appdev/guides/pushnotifications.rst:208
 msgid "bool or string"
-msgstr ""
+msgstr "логическая опция или путь  к объекту"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "This is either a boolean (play a predetermined sound) or the"
 msgstr ""
+"Эта опция или задается логически (воспроизведение предустановленной мелодии)"
+", или"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "path to a sound file. The user can disable it, so don't rely"
@@ -987,19 +989,19 @@ msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "on it exclusively. Defaults to empty (no sound). The path is"
-msgstr ""
+msgstr "этой опции полностью. По умолчанию отключена (звука нет). Путь"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "relative, and will be looked up in (a) the application's"
-msgstr ""
+msgstr "относительный, и будет задаваться (a) в  разделе настроек приложения"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "``.local/share/<pkgname>``, and (b) standard xdg dirs."
-msgstr ""
+msgstr "``.local/share/<pkgname>``, и (b) в стандартных директориях xdg."
 
 #: ../../appdev/guides/pushnotifications.rst:214
 msgid "vibrate"
-msgstr ""
+msgstr "вибрация"
 
 #: ../../appdev/guides/pushnotifications.rst:214
 msgid "bool or Vibrate"
@@ -1008,14 +1010,16 @@ msgstr ""
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "The notification can contain a vibrate field, causing haptic"
 msgstr ""
+"В уведомлении может содержаться поле для вибрации, вызывающей тактильную"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "feedback, which can be either a boolean (if true, vibrate a"
 msgstr ""
+"обратную связь, опция может быть логической (если активирована, идет вибрация"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "predetermined way) or an Vibrate object."
-msgstr ""
+msgstr "в заранее заданном режиме) или может быть выбран готовый объект."
 
 #: ../../appdev/guides/pushnotifications.rst:218
 msgid "emblem-counter"
@@ -1027,36 +1031,37 @@ msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "A JSON object, which defines how to display the emblem"
-msgstr ""
+msgstr "Объект JSON, который определяет, как отображать эмблему"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "counter."
-msgstr ""
+msgstr "счетчика."
 
 #: ../../appdev/guides/pushnotifications.rst:221
 msgid "card"
-msgstr ""
+msgstr "карточка"
 
 #: ../../appdev/guides/pushnotifications.rst:221
 #: ../../appdev/guides/pushnotifications.rst:225
 msgid "Card"
-msgstr ""
+msgstr "Карточка"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "A JSON object with information about the notification card."
-msgstr ""
+msgstr "Объект JSON с информацией о карточке уведомления."
 
 #: ../../appdev/guides/pushnotifications.rst:230
+#, fuzzy
 msgid "summary"
-msgstr ""
+msgstr "резюме"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Required. A title. The card will not be presented if this is"
-msgstr ""
+msgstr "Обязательно к заполнению. Карточка не будет видна, если это поле"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "missing."
-msgstr ""
+msgstr "не заполнено."
 
 #: ../../appdev/guides/pushnotifications.rst:233
 msgid "body"
@@ -1068,66 +1073,80 @@ msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:235
 msgid "actions"
-msgstr ""
+msgstr "действия"
 
 #: ../../appdev/guides/pushnotifications.rst:235
 #: ../../appdev/guides/pushnotifications.rst:261
 msgid "array"
-msgstr ""
+msgstr "массив"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "If empty (the default), a bubble notification is"
-msgstr ""
+msgstr "Если пустое (по умолчанию),  нажатие на bubble notification"
 
 #: ../../appdev/guides/pushnotifications.rst:0
+#, fuzzy
 msgid "non-clickable. If you add a URL, then bubble notifications"
-msgstr ""
+msgstr "не даёт ничего. Если Вы добавите адрес URL, то bubble notifications"
 
 #: ../../appdev/guides/pushnotifications.rst:0
+#, fuzzy
 msgid "are clickable and launch that URL. One use for this is using"
 msgstr ""
+"становятся активными и позволяют открыть этот URL. Один из способов это "
+"использовать -"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "a URL like ``appid://com.ubuntu.developer.ralsina.hello``"
-msgstr ""
+msgstr "настроить URL как``appid://com.ubuntu.developer.ralsina.hello``,"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "which will switch to the app or launch it."
-msgstr ""
+msgstr "это позволит переключиться на приложение или запустит его."
 
 #: ../../appdev/guides/pushnotifications.rst:241
+#, fuzzy
 msgid "icon"
-msgstr ""
+msgstr "иконка"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "An icon relating to the event being notified. Defaults to"
 msgstr ""
+"Иконка относится к событию, к которому относится уведомление. По умолчанию,"
 
 #: ../../appdev/guides/pushnotifications.rst:0
+#, fuzzy
 msgid "empty (no icon); a secondary icon relating to the application"
 msgstr ""
+"значение пустое (иконка отсутствует); дополнительная иконка относится к "
+"приложению"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "will be shown as well, regardless of this field."
-msgstr ""
+msgstr "будет также отображаться, независимо от настроек этого поля."
 
 #: ../../appdev/guides/pushnotifications.rst:245
 msgid "timestamp"
-msgstr ""
+msgstr "Метка времени (timestamp)"
 
 #: ../../appdev/guides/pushnotifications.rst:245
 #: ../../appdev/guides/pushnotifications.rst:264
 #: ../../appdev/guides/pushnotifications.rst:275
 msgid "integer"
-msgstr ""
+msgstr "integer - целое число"
 
 #: ../../appdev/guides/pushnotifications.rst:0
+#, fuzzy
 msgid "Seconds since the unix epoch, only used for persist for now."
 msgstr ""
+"Секунды, прошедшие с начала эпохи Unix, пока используются только для "
+"сохранения."
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "If zero or unset, defaults to current timestamp."
 msgstr ""
+"Если значение не задано или нулевое, то используется текущая временная "
+"отметка."
 
 #: ../../appdev/guides/pushnotifications.rst:248
 msgid "persist"
@@ -1135,51 +1154,62 @@ msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Whether to show in notification centre; defaults to false."
-msgstr ""
+msgstr "показывать ли в центре уведомлений; по умолчанию отключено."
 
 #: ../../appdev/guides/pushnotifications.rst:250
+#, fuzzy
 msgid "popup"
-msgstr ""
+msgstr "Всплывающее окно"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Whether to show in a bubble. Users can disable this, and can"
 msgstr ""
+"Показывать ли в bubble notification. Пользователи могут отключить это, и "
+"могут"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "easily miss them, so don't rely on it exclusively. Defaults"
 msgstr ""
+"легко отключить их, поэтому не нужно полагаться на эту опцию. Значения по "
+"умолчанию -"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "to false."
-msgstr ""
+msgstr "опция отключена."
 
 #: ../../appdev/guides/pushnotifications.rst:256
+#, fuzzy
 msgid "Vibrate"
-msgstr ""
+msgstr "Вибрация"
 
 #: ../../appdev/guides/pushnotifications.rst:261
+#, fuzzy
 msgid "pattern"
-msgstr ""
+msgstr "схема"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "A list of integers describing a vibration pattern (duration of alternating"
-msgstr ""
+msgstr "Список переменных, описывающих схемы вибрации (длительность периодов"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "vibration/no vibration times, in milliseconds)."
-msgstr ""
+msgstr "вибраций или её отсутствие - время в милисекундах)."
 
 #: ../../appdev/guides/pushnotifications.rst:264
+#, fuzzy
 msgid "repeat"
-msgstr ""
+msgstr "повтор"
 
 #: ../../appdev/guides/pushnotifications.rst:0
+#, fuzzy
 msgid "Number of times the pattern has to be repeated (defaults to 1, 0 is the"
 msgstr ""
+"Сколько раз будет повторяться выбранная схема (по умолчанию установлен 1 "
+"раз, 0 -"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "same as 1)."
-msgstr ""
+msgstr "тоже самое, что и 1)."
 
 #: ../../appdev/guides/pushnotifications.rst:270
 msgid "Emblem-Counter"
