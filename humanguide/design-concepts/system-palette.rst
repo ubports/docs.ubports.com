@@ -65,13 +65,13 @@ Recommended for progress bars, selected areas, text selection and text cursor. A
 
 .. figure:: /_static/images/humanguide/UT-color-Green.svg
 
--  #3EB34F Green
+-  #0E8420 Green
 
 Recommended for positive action buttons (SuruDark).
 
 .. figure:: /_static/images/humanguide/UT-color-lightGreen.svg
 
--  #0E8420 Light Green
+-  #3EB34F Light Green
 
 Recommended for positive action buttons (Ambiance).
 
