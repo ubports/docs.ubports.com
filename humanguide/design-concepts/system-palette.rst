@@ -53,13 +53,13 @@ Recommended for foregrounds.
 
 .. figure:: /_static/images/humanguide/UT-color-Blue.svg
 
--  #19B6EE Blue
+-  #335280 Blue
 
 Recommended for progress bars, selected areas, text selection and text cursor. Also neutral actions (Ambiance).
 
 .. figure:: /_static/images/humanguide/UT-color-lightBlue.svg
 
--  #335280 Light Blue
+-  #19B6EE Light Blue
 
 Recommended for progress bars, selected areas, text selection and text cursor. Also neutral actions (SuruDark).
 
