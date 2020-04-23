@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 15:16-0500\n"
-"PO-Revision-Date: 2020-04-23 14:23+0000\n"
+"PO-Revision-Date: 2020-04-25 15:23+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
@@ -1387,7 +1387,7 @@ msgstr ""
 
 #: ../../appdev/guides/user-metrics.rst:87
 msgid "Limitations and wonders"
-msgstr ""
+msgstr "Ограничения и особенности"
 
 #: ../../appdev/guides/user-metrics.rst:89
 msgid "Based on how the \"formats\" are set up, it seems that it is difficult to maintain a running tally beyond one day. It also doesn’t seem to truly reset a counted variable. Instead it reverts to a default setting. This would not normally allow for long-term data interpretation without some kind of database logging."
