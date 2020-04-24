@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 15:16-0500\n"
 "PO-Revision-Date: 2020-04-25 15:23+0000\n"
-"Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
+"Last-Translator: Richard Fulop <richard.fulop@protonmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
 "Language: ru\n"
@@ -1005,7 +1005,7 @@ msgstr "вибрация"
 
 #: ../../appdev/guides/pushnotifications.rst:214
 msgid "bool or Vibrate"
-msgstr ""
+msgstr "bool или Вибрация"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "The notification can contain a vibrate field, causing haptic"
@@ -1023,11 +1023,11 @@ msgstr "в заранее заданном режиме) или может бы�
 
 #: ../../appdev/guides/pushnotifications.rst:218
 msgid "emblem-counter"
-msgstr ""
+msgstr "еmblem-счетчика"
 
 #: ../../appdev/guides/pushnotifications.rst:218
 msgid "Emblem-counter"
-msgstr ""
+msgstr "Еmblem-счетчика"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "A JSON object, which defines how to display the emblem"
@@ -1065,11 +1065,11 @@ msgstr "не заполнено."
 
 #: ../../appdev/guides/pushnotifications.rst:233
 msgid "body"
-msgstr ""
+msgstr "содержание"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Longer text, defaults to empty."
-msgstr ""
+msgstr "Более длинный текст, пустой по умолчаниюю."
 
 #: ../../appdev/guides/pushnotifications.rst:235
 msgid "actions"
@@ -1150,16 +1150,15 @@ msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:248
 msgid "persist"
-msgstr ""
+msgstr "сохраняться"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Whether to show in notification centre; defaults to false."
 msgstr "показывать ли в центре уведомлений; по умолчанию отключено."
 
 #: ../../appdev/guides/pushnotifications.rst:250
-#, fuzzy
 msgid "popup"
-msgstr "Всплывающее окно"
+msgstr "всплывающее окно"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Whether to show in a bubble. Users can disable this, and can"
@@ -1178,14 +1177,12 @@ msgid "to false."
 msgstr "опция отключена."
 
 #: ../../appdev/guides/pushnotifications.rst:256
-#, fuzzy
 msgid "Vibrate"
 msgstr "Вибрация"
 
 #: ../../appdev/guides/pushnotifications.rst:261
-#, fuzzy
 msgid "pattern"
-msgstr "схема"
+msgstr "модель"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "A list of integers describing a vibration pattern (duration of alternating"
@@ -1196,15 +1193,13 @@ msgid "vibration/no vibration times, in milliseconds)."
 msgstr "вибраций или её отсутствие - время в милисекундах)."
 
 #: ../../appdev/guides/pushnotifications.rst:264
-#, fuzzy
 msgid "repeat"
-msgstr "повтор"
+msgstr "повторения"
 
 #: ../../appdev/guides/pushnotifications.rst:0
-#, fuzzy
 msgid "Number of times the pattern has to be repeated (defaults to 1, 0 is the"
 msgstr ""
-"Сколько раз будет повторяться выбранная схема (по умолчанию установлен 1 "
+"Сколько раз будет повторяться выбранняя модель (по умолчанию установлен 1 "
 "раз, 0 -"
 
 #: ../../appdev/guides/pushnotifications.rst:0
@@ -1227,7 +1222,7 @@ msgstr "Число, отображаемое над значком прилож�
 
 #: ../../appdev/guides/pushnotifications.rst:277
 msgid "visible"
-msgstr ""
+msgstr "видимо"
 
 #: ../../appdev/guides/pushnotifications.rst:277
 msgid "Set to true to show the counter, or false to hide it."
@@ -1259,19 +1254,18 @@ msgstr ""
 "Откуда это известно?"
 
 #: ../../appdev/guides/user-metrics.rst:15
-#, fuzzy
 msgid "This is from a 3rd-party application (`nCounter <https://gitlab.com/joboticon/ncounter/>`_) that makes use of the User Metrics feature."
 msgstr ""
 "Информация поступает из стороннего приложения  (`nCounter <https://gitlab."
-"com/joboticon/ncounter/>`_), которая использует для работу функцию \"User "
+"com/joboticon/ncounter/>`_), которая используется для работу функцию \"User "
 "Metrics\"."
 
 #: ../../appdev/guides/user-metrics.rst:17
 msgid "For the most part, these messages are quite clearly state what they are counting, and which app is related. But where do these metrics come from?"
 msgstr ""
 "По большей части в этих сообщениях достаточно четко указано, что какие "
-"данные они используют и какое приложение м этим связано. Но откуда берутся "
-"эти показатели?"
+"данные они используют и какое приложение этим связано. Но откуда берутся эти "
+"метрики?"
 
 #: ../../appdev/guides/user-metrics.rst:20
 msgid "How can I use user metrics in my application?"
