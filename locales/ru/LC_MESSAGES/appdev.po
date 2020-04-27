@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 15:16-0500\n"
-"PO-Revision-Date: 2020-04-17 19:23+0000\n"
-"Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
+"PO-Revision-Date: 2020-04-25 15:23+0000\n"
+"Last-Translator: Richard Fulop <richard.fulop@protonmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
 "Language: ru\n"
@@ -1005,7 +1005,7 @@ msgstr "вибрация"
 
 #: ../../appdev/guides/pushnotifications.rst:214
 msgid "bool or Vibrate"
-msgstr ""
+msgstr "bool или Вибрация"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "The notification can contain a vibrate field, causing haptic"
@@ -1023,11 +1023,11 @@ msgstr "в заранее заданном режиме) или может бы�
 
 #: ../../appdev/guides/pushnotifications.rst:218
 msgid "emblem-counter"
-msgstr ""
+msgstr "еmblem-счетчика"
 
 #: ../../appdev/guides/pushnotifications.rst:218
 msgid "Emblem-counter"
-msgstr ""
+msgstr "Еmblem-счетчика"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "A JSON object, which defines how to display the emblem"
@@ -1065,11 +1065,11 @@ msgstr "не заполнено."
 
 #: ../../appdev/guides/pushnotifications.rst:233
 msgid "body"
-msgstr ""
+msgstr "содержание"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Longer text, defaults to empty."
-msgstr ""
+msgstr "Более длинный текст, пустой по умолчаниюю."
 
 #: ../../appdev/guides/pushnotifications.rst:235
 msgid "actions"
@@ -1150,16 +1150,15 @@ msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:248
 msgid "persist"
-msgstr ""
+msgstr "сохраняться"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Whether to show in notification centre; defaults to false."
 msgstr "показывать ли в центре уведомлений; по умолчанию отключено."
 
 #: ../../appdev/guides/pushnotifications.rst:250
-#, fuzzy
 msgid "popup"
-msgstr "Всплывающее окно"
+msgstr "всплывающее окно"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Whether to show in a bubble. Users can disable this, and can"
@@ -1178,14 +1177,12 @@ msgid "to false."
 msgstr "опция отключена."
 
 #: ../../appdev/guides/pushnotifications.rst:256
-#, fuzzy
 msgid "Vibrate"
 msgstr "Вибрация"
 
 #: ../../appdev/guides/pushnotifications.rst:261
-#, fuzzy
 msgid "pattern"
-msgstr "схема"
+msgstr "модель"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "A list of integers describing a vibration pattern (duration of alternating"
@@ -1196,15 +1193,13 @@ msgid "vibration/no vibration times, in milliseconds)."
 msgstr "вибраций или её отсутствие - время в милисекундах)."
 
 #: ../../appdev/guides/pushnotifications.rst:264
-#, fuzzy
 msgid "repeat"
-msgstr "повтор"
+msgstr "повторения"
 
 #: ../../appdev/guides/pushnotifications.rst:0
-#, fuzzy
 msgid "Number of times the pattern has to be repeated (defaults to 1, 0 is the"
 msgstr ""
-"Сколько раз будет повторяться выбранная схема (по умолчанию установлен 1 "
+"Сколько раз будет повторяться выбранняя модель (по умолчанию установлен 1 "
 "раз, 0 -"
 
 #: ../../appdev/guides/pushnotifications.rst:0
@@ -1212,136 +1207,181 @@ msgid "same as 1)."
 msgstr "тоже самое, что и 1)."
 
 #: ../../appdev/guides/pushnotifications.rst:270
+#, fuzzy
 msgid "Emblem-Counter"
-msgstr ""
+msgstr "Emblem-Counter"
 
 #: ../../appdev/guides/pushnotifications.rst:275
 msgid "count"
-msgstr ""
+msgstr "число"
 
 #: ../../appdev/guides/pushnotifications.rst:275
+#, fuzzy
 msgid "A number to be displayed over the application's icon in the launcher."
-msgstr ""
+msgstr "Число, отображаемое над значком приложения в панели запуска (launcher)."
 
 #: ../../appdev/guides/pushnotifications.rst:277
 msgid "visible"
-msgstr ""
+msgstr "видимо"
 
 #: ../../appdev/guides/pushnotifications.rst:277
 msgid "Set to true to show the counter, or false to hide it."
 msgstr ""
+"Установите значение true, чтобы показать счетчик, или false, чтобы скрыть "
+"его."
 
 #: ../../appdev/guides/user-metrics.rst:2
 msgid "User metrics"
-msgstr ""
+msgstr "Метрика пользователя"
 
 #: ../../appdev/guides/user-metrics.rst:5
 msgid "What are user metrics?"
-msgstr ""
+msgstr "Что такое \"метрика пользователя\"?"
 
 #: ../../appdev/guides/user-metrics.rst:7
 msgid "If you look on the lock screen, you will see a circle. Inside the circle is text. Look closer, and you’ll notice that the text contains data regarding the user’s activity. Double tap on the middle of the circle, and you will see more \"metrics\" about the user."
 msgstr ""
+"Если вы посмотрите на экран блокировки, вы увидите круг. Внутри этого круга "
+"есть текст. Посмотрите внимательнее, и вы заметите, что текст содержит "
+"данные об активности пользователя. Дважды нажмите на середину круга, и "
+"увидите больше «метрик» о пользователе."
 
 #: ../../appdev/guides/user-metrics.rst:11
+#, fuzzy
 msgid "This shows \"7 text messages sent today.\" How did it know?"
 msgstr ""
+"Там есть уведомление: \"Сегодня было отправлено 7 текстовых сообщений.\" "
+"Откуда это известно?"
 
 #: ../../appdev/guides/user-metrics.rst:15
 msgid "This is from a 3rd-party application (`nCounter <https://gitlab.com/joboticon/ncounter/>`_) that makes use of the User Metrics feature."
 msgstr ""
+"Информация поступает из стороннего приложения  (`nCounter <https://gitlab."
+"com/joboticon/ncounter/>`_), которая используется для работу функцию \"User "
+"Metrics\"."
 
 #: ../../appdev/guides/user-metrics.rst:17
 msgid "For the most part, these messages are quite clearly state what they are counting, and which app is related. But where do these metrics come from?"
 msgstr ""
+"По большей части в этих сообщениях достаточно четко указано, что какие "
+"данные они используют и какое приложение этим связано. Но откуда берутся эти "
+"метрики?"
 
 #: ../../appdev/guides/user-metrics.rst:20
 msgid "How can I use user metrics in my application?"
-msgstr ""
+msgstr "Как я могу использовать метрики пользователей в своём приложении?"
 
 #: ../../appdev/guides/user-metrics.rst:22
 msgid "All of the following information will be based on the code for `nCounter`_."
 msgstr ""
+"Вся следующая информация будет основана на коде для приложения `nCounter`_."
 
 #: ../../appdev/guides/user-metrics.rst:24
 msgid "First, you will need to import the module in the QML file that will handle the User Metrics:"
 msgstr ""
+"Сначала нужно будет импортировать в файл QML модуль для обработки метрики "
+"пользователя:"
 
 #: ../../appdev/guides/user-metrics.rst:30
 msgid "(There may be updated versions of this above 0.1)"
-msgstr ""
+msgstr "(Могут быть доступны обновленные версии выше 0.1)"
 
 #: ../../appdev/guides/user-metrics.rst:32
 msgid "Next, the specific Metric must be defined in the code as an object:"
-msgstr ""
+msgstr "Далее, выбранную Метрику нужно настроить в программном коде как объект:"
 
 #: ../../appdev/guides/user-metrics.rst:44
 msgid "Now that the metric is created, we can update the \"format\" or \"emptyFormat\" when an event takes place by referencing the variables in the Metric object."
 msgstr ""
+"Теперь, когда метрика создана, можно обновить «format» или «emptyFormat», "
+"когда происходит событие, ссылаясь на переменные в объекте метрики."
 
 #: ../../appdev/guides/user-metrics.rst:54
 msgid "Here we assign a new value to the circleMetric string variable that’s inside the Metric object:"
 msgstr ""
+"Здесь мы присваиваем новое значение строковой переменной circleMetric, "
+"которая находится внутри объекта метрики:"
 
 #: ../../appdev/guides/user-metrics.rst:56
 msgid "(Remember that circleMetric is the variable value assigned to format)"
 msgstr ""
+"(Помните, что circleMetric - это значение переменной, задаваемое в формате)"
 
 #: ../../appdev/guides/user-metrics.rst:58
 msgid "Metric Id [dot] Variable Name [equals] New variable information"
-msgstr ""
+msgstr "Metric Id [dot] Имя переменной [equals] Новые данные для переменной"
 
 #: ../../appdev/guides/user-metrics.rst:60
 msgid "``metric.circleMetric = \"New Metric Message\"``"
-msgstr ""
+msgstr "``metric.circleMetric = \"Новое сообщение метрики\"``"
 
 #: ../../appdev/guides/user-metrics.rst:62
 msgid "We then tell the lock screen to update the metric in ZERO milliseconds i.e. immediately"
 msgstr ""
+"Затем мы сообщаем экрану блокировки о необходимости обновления метрики в "
+"ноль миллисекунд, т.е. немедленно"
 
 #: ../../appdev/guides/user-metrics.rst:64
 msgid "Metric ID [dot] update (Number of milliseconds)"
-msgstr ""
+msgstr "Metric ID [dot] update (число в миллисекундах)"
 
 #: ../../appdev/guides/user-metrics.rst:66
 msgid "``metric.update(0)``"
-msgstr ""
+msgstr "``metric.update(0)``"
 
 #: ../../appdev/guides/user-metrics.rst:68
 msgid "We have now updated the metric for today. When the time rolls over to tomorrow, the metric will be reset to whatever is in ``emptyFormat``."
 msgstr ""
+"Мы только что обновили метрику по состоянию на сегодня. Когда настанут "
+"следующие сутки, метрика будет сброшена к состоянию, указанному в опции `` "
+"emptyFormat``."
 
 #: ../../appdev/guides/user-metrics.rst:70
 msgid "For most apps, this defaults to 0 counts for messages, calls, etc."
 msgstr ""
+"Для сообщений, звонков и большинства приложений значение этой опции по "
+"умолчанию - 0."
 
 #: ../../appdev/guides/user-metrics.rst:73
 msgid "How do user metrics work?"
-msgstr ""
+msgstr "Как работает пользовательская метрика?"
 
 #: ../../appdev/guides/user-metrics.rst:75
 msgid "User metrics are made up of two \"formats\""
-msgstr ""
+msgstr "Метрика пользователя состоит из двух \"форматов\""
 
 #: ../../appdev/guides/user-metrics.rst:77
 msgid "metrics/messages for today (``format``)"
-msgstr ""
+msgstr "метрики/сообщения для текущих суток (``format``)"
 
 #: ../../appdev/guides/user-metrics.rst:78
 msgid "metrics/messages for tomorrow (``emptyFormat``)"
-msgstr ""
+msgstr "метрики сообщения для следующих суток (``emptyFormat``)"
 
 #: ../../appdev/guides/user-metrics.rst:80
 msgid "The value of ``emptyFormat`` is what displays on the lock screen when no value has been stored in ``format``. In order to display a new value of ``format`` the metric must be updated with ``metric.update(x)`` (where x is the number of milliseconds until the update takes place). The metric will reset back to the value stored in ``emptyFormat`` each day."
 msgstr ""
+"Значение `` emptyFormat`` - это то, что отображается на экране блокировки, "
+"если в `` format`` не было сохранено никакого значения. Чтобы отобразить "
+"новое значение `` format``, метрику нужно обновить с помощью `` "
+"metric.update (x) `` (где x - это количество миллисекунд до обновления). "
+"Метрика будет сбрасываться каждый день обратно к значению, хранящемуся в `` "
+"emptyFormat``."
 
 #: ../../appdev/guides/user-metrics.rst:83
 msgid "Applications make use of this system, but setting and updating the user metric \"formats\" by running a certain code whenever a certain event takes place. e.g. When you press send in Telegram, or when you receive a phone call. The application may store the data for manipulation, but generally the data is stored in the system (`/var/lib/usermetrics <https://github.com/ubports/libusermetrics/tree/xenial/doc/pages>`_)."
 msgstr ""
+"Приложения используют эту систему, но устанавливают и обновляют «форматы» "
+"метрик пользователя, выполняя определенный код всякий раз, когда происходит "
+"определенное событие. Например, когда вы отправляете сообщение в Telegram, "
+"или когда вы получаете телефонный звонок. Приложение может хранить данные "
+"для манипуляции, но обычно данные хранятся в системе (`/ var / lib / "
+"usermetrics <https://github.com/ubports/libusermetrics/tree/xenial/doc/"
+"pages>` _) ."
 
 #: ../../appdev/guides/user-metrics.rst:87
 msgid "Limitations and wonders"
-msgstr ""
+msgstr "Ограничения и особенности"
 
 #: ../../appdev/guides/user-metrics.rst:89
 msgid "Based on how the \"formats\" are set up, it seems that it is difficult to maintain a running tally beyond one day. It also doesn’t seem to truly reset a counted variable. Instead it reverts to a default setting. This would not normally allow for long-term data interpretation without some kind of database logging."
