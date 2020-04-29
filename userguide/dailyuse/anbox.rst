@@ -30,7 +30,7 @@ How to install
     Installing Anbox is only recommended for experienced users.
     
 .. warning::
-    To install Anbox, you need to flash a specific boot image. **You will need to re-flash that image after each Ubuntu Touch update** so when you update from OTA-10 to OTA-11 for example. Not doing so can put your phone into an unstable state. Only update your Ubuntu Touch device when you have a computer with you to re-flash that boot image.
+    If you own a Meizu Pro 5, a BQ M10 HD or a BQ M10 FHD you need to flash a specific boot image. **You will need to re-flash that image after each Ubuntu Touch update** so when you update from OTA-10 to OTA-11 for example. Not doing so can put your phone into an unstable state. Only update your Ubuntu Touch device when you have a computer with you to re-flash that boot image.
 
 - Make sure your supported device runs on 16.04 (Anbox doesn't work on 15.04).
 - Be sure to have a `backup <https://askubuntu.com/questions/602850/how-do-i-backup-my-ubuntu-phone>`_ of the device.
@@ -51,7 +51,7 @@ How to install
     adb shell # connect from your host computer to your UT device
     sudo mount -o rw,remount /
     sudo apt update
-    sudo apt install anbox-ubuntu-touch
+    sudo apt install anbox-ubuntu-touch android-tools-adb
     anbox-tool install
     exit
 
@@ -72,9 +72,6 @@ How to install new APKs
 - Copy the APK to ``/home/phablet/Downloads``, then run the following from your host::
 
     adb shell # connect from your host computer to your UT device
-    sudo mount -o rw,remount /
-    sudo apt update
-    sudo apt install android-tools-adb
     adb install /home/phablet/Downloads/my-app.apk # This is the adb of your device, not your host
     exit
 
