@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 15:16-0500\n"
-"PO-Revision-Date: 2020-04-25 15:23+0000\n"
-"Last-Translator: Richard Fulop <richard.fulop@protonmail.com>\n"
+"PO-Revision-Date: 2020-04-29 13:23+0000\n"
+"Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
 "Language: ru\n"
@@ -1384,28 +1384,54 @@ msgid "Limitations and wonders"
 msgstr "Ограничения и особенности"
 
 #: ../../appdev/guides/user-metrics.rst:89
+#, fuzzy
 msgid "Based on how the \"formats\" are set up, it seems that it is difficult to maintain a running tally beyond one day. It also doesn’t seem to truly reset a counted variable. Instead it reverts to a default setting. This would not normally allow for long-term data interpretation without some kind of database logging."
 msgstr ""
+"В зависимости от того, как заданы «форматы», все может выглядеть так, будто "
+"бы поддерживать счет за пределами одного дня сложно. Это также, похоже, не "
+"сбрасывает счетную переменную. Вместо этого возвращается значение по "
+"умолчанию. Это обычно не допускает долгосрочной интерпретации данных без "
+"какой-либо регистрации в базе данных."
 
 #: ../../appdev/guides/user-metrics.rst:91
+#, fuzzy
 msgid "In the case of the `nCounter`_ app. I wanted to count the number of days, but since the metric \"resets\" each day, that presents a problem. I create a workaround that updates the metric every time the application is opened. Thus, the ``emptyFormat`` (default) tells the user to open the application. This, however, nearly defeats the purpose of the user metric entirely, other than having a neat stat reminder for the day."
 msgstr ""
+"Особенность приложения `nCounter`_. Хочется посчитать количество дней, но "
+"поскольку метрика «сбрасывается» каждый день, это представляет проблему. "
+"Можно создать workaround, который обновляет метрику каждый раз, когда "
+"приложение открывается. Таким образом, `` emptyFormat`` (по умолчанию) "
+"говорит пользователю открыть приложение. Это, однако, почти полностью "
+"противоречит цели метрики пользователя, за исключением аккуратного "
+"напоминания о статистике за день."
 
 #: ../../appdev/guides/user-metrics.rst:93
+#, fuzzy
 msgid "There must be a way for a process to run independently in the background (e.g. cron) to retrieve data from a specific app code. One lead is the Indicator Weather app. This runs a process every X minutes to update the weather indicator automatically without having to open the app."
 msgstr ""
+"Процесс должен запускаться независимо в фоновом режиме (например, cron) для "
+"извлечения данных из определенного кода приложения. Например, есть "
+"приложение Индикатор погоды. Оно запускает процесс каждые X минут для "
+"автоматического обновления индикатора погоды без необходимости открывать "
+"приложение."
 
 #: ../../appdev/guides/writeable-dirs.rst:2
 msgid "Writable directories"
-msgstr ""
+msgstr "Каталоги для записи"
 
 #: ../../appdev/guides/writeable-dirs.rst:4
 msgid "App confinement is part of the Ubuntu Touch security concept. Data can be exchanged between apps only according to the AppArmor policies, mainly using the :ref:`ContentHub <contenthub>`. This being said, apps can only read and write files that are located in one of three app specific directories explained in this guide."
 msgstr ""
+"Ограничение доступа к приложениям является частью концепции безопасности "
+"Ubuntu Touch. Обмен данными между приложениями возможен только в "
+"соответствии с политиками AppArmor, в основном с использованием: ref: `"
+"ContentHub <contenthub>`. При этом приложения могут только читать и "
+"записывать файлы, расположенные в одном из трех каталогов, определенных для "
+"приложения, которые описаны в этом руководстве."
 
 #: ../../appdev/guides/writeable-dirs.rst:7
 msgid "Standard Paths"
-msgstr ""
+msgstr "Стандартные директории"
 
 #: ../../appdev/guides/writeable-dirs.rst:8
 msgid "Besides the write access to the app directories explained below, the app can write debug messages into the app log file located at ``/home/phablet/.cache/upstart/application-click-<fullappname>_<appname>_<version>.log``. To append messages to the log file, use the `Qt debug <https://doc.qt.io/qt-5/qdebug.html>`_ functions."
