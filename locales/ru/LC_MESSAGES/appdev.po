@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 15:16-0500\n"
-"PO-Revision-Date: 2020-05-04 05:23+0000\n"
+"PO-Revision-Date: 2020-05-05 07:23+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
@@ -1468,30 +1468,39 @@ msgstr "Путь: ``/home/phablet/.cache/<fullappname>/``"
 #: ../../appdev/guides/writeable-dirs.rst:20
 msgid "This is the place to cache data for later use. The cache is also used by the Content Hub. Files that have been shared with the music app for example can be found in ``/home/phablet/.cache/com.ubuntu.music/HubIncoming/``."
 msgstr ""
+"Это место для кэширования данных, которые будут использоваться в ближайшее "
+"время. Кэш также используется в Content Hub. Например, файлы, которые "
+"открыты в музыкальном плеере, можно найти в  каталоге ``/home/phablet/.cache/"
+"com.ubuntu.music/HubIncoming/``."
 
 #: ../../appdev/guides/writeable-dirs.rst:23
 msgid "App data"
-msgstr ""
+msgstr "Данные приложений"
 
 #: ../../appdev/guides/writeable-dirs.rst:24
 msgid "Path: ``/home/phablet/.local/share/<fullappname>/``"
-msgstr ""
+msgstr "Каталог:``/home/phablet/.local/share/<fullappname>/``"
 
 #: ../../appdev/guides/writeable-dirs.rst:26
 msgid "This is where your app stores any data. The music app for example stores its data bases to ``/home/phablet/.local/share/com.ubuntu.music/Databases/``."
 msgstr ""
+"Здесь приложение хранит любые данные. Например, музыкальное плеер хранит "
+"свои базы данных в  каталоге ``/home/phablet/.local/share/com.ubuntu.music/"
+"Databases/``."
 
 #: ../../appdev/guides/writeable-dirs.rst:30
 msgid "Using Standard Paths in C++"
-msgstr ""
+msgstr "Используются стандартные каталоги для C++"
 
 #: ../../appdev/guides/writeable-dirs.rst:31
 msgid "The Qt header ``QStandardPaths`` provides the app's writable locations:"
 msgstr ""
+"В Qt-хедере ``QStandardPaths` описываются каталоги приложения для записи "
+"данных:"
 
 #: ../../appdev/guides/writeable-dirs.rst:43
 msgid "Using Standard Paths in QML"
-msgstr ""
+msgstr "Использование стандартных каталогов в QML"
 
 #: ../../appdev/guides/writeable-dirs.rst:44
 msgid "The Qt module `Qt.labs.platform <https://doc.qt.io/archives/qt-5.10/qml-qt-labs-platform-standardpaths.html>`_ provides the QStandardPaths in QML. Unfortunately it is not available on Ubuntu Touch, yet. Probably you don't want to ship that module with your app. Instead, you could simply let your C++ plugin provide the paths to your QML part. Therefore, add these methods to your plugin class:"
