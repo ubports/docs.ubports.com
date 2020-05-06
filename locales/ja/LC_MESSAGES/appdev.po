@@ -8,21 +8,24 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-14 15:59-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-05-07 05:23+0000\n"
+"Last-Translator: penyotike <penyotike@moimoi.re>\n"
+"Language-Team: Japanese <https://translate.ubports.com/projects/ubports-docs/"
+"documentation-appdev/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 3.8\n"
 
 #: ../../appdev/guides/contenthub.rst:4
 msgid "The content hub - tips and tricks"
-msgstr ""
+msgstr "コンテンツハブ-ヒントとコツ"
 
 #: ../../appdev/guides/contenthub.rst:9
 msgid "Content Hub Share Page"
-msgstr ""
+msgstr "コンテンツハブの共有ページ"
 
 #: ../../appdev/guides/contenthub.rst:11
 msgid "On Ubuntu Touch the apps are confined. The way of sharing files between them is through the Content Hub, a part of the system that takes care of file import, export and sharing."
@@ -30,7 +33,7 @@ msgstr ""
 
 #: ../../appdev/guides/contenthub.rst:14
 msgid "Different ways of sharing the content"
-msgstr ""
+msgstr "コンテンツを共有するさまざまな方法"
 
 #: ../../appdev/guides/contenthub.rst:16
 msgid "As we can see in the `Content Hub documentation <https://api-docs.ubports.com/sdk/apps/qml/Ubuntu.Content/ContentHandler.html#detailed-description>`_, there are several ways of handling the file to be shared:"
