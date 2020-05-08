@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2019-01-21 14:32+0000\n"
-"Last-Translator: Ennio Lavagnini <ennio.lavagnini@protonmail.com>\n"
+"PO-Revision-Date: 2020-05-09 09:23+0000\n"
+"Last-Translator: FlavioMala <flavio.malatino@post.com>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-userguide/it/>\n"
 "Language: it\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.1.1\n"
+"X-Generator: Weblate 3.8\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../userguide/advanceduse/adb.rst:2
@@ -143,14 +143,13 @@ msgid "CalDAV and CardDAV synchronization"
 msgstr "Sincronizzazione CalDAV e CardDAV"
 
 #: ../../userguide/advanceduse/dav.rst:4
-#, fuzzy
 msgid ""
 "CalDAV and CardDAV are protocols to synchronize calendars and contacts with "
 "a remote server. Many email-hosters provide a CalDAV and CardDAV interface."
 msgstr ""
-"CalDAV e CardDav sono protocolli che servono a sincronizzare i calendati e i "
-"contatti con un server remoto. Molti fornitori di email forniscono una "
-"interfaccia CalDAV e CardDav."
+"CalDAV e CardDav sono protocolli che servono a sincronizzare calendari e "
+"contatti con un servente (server) remoto. Molti fornitori di posta "
+"elettronica (email) forniscono una interfaccia CalDAV e CardDav."
 
 #: ../../userguide/advanceduse/dav.rst:6
 msgid ""
@@ -166,7 +165,6 @@ msgstr ""
 "password per completare il processo."
 
 #: ../../userguide/advanceduse/dav.rst:8
-#, fuzzy
 msgid ""
 "At the moment, there is no carddav implementation directly accessible from "
 "the Ubuntu Touch graphical user-interface, so the only way to sync carddav "
@@ -174,7 +172,7 @@ msgid ""
 "with a script that you can run in the terminal or via phablet SSH "
 "connection. These instructions work for caldav as well."
 msgstr ""
-"Per il momento non c'è una implementazione di CardDAV direttamente "
+"Per il momento non c'è un'implementazione di CardDAV direttamente "
 "accessibile dall'interfaccia utente di Ubuntu Touch, quindi l'unico modo per "
 "sincronizzare CardDAV è usando syncevolution + cron. Comunque c'è un modo "
 "semplice per farlo usando uno script che puoi avviare da terminale o via "
@@ -650,6 +648,9 @@ msgid ""
 "you can connect your Ubuntu Touch device to. Your host device must have "
 "``adb`` and ``fastboot`` installed."
 msgstr ""
+"Quando è usato “host“ in questo documento, ci si riferisce a un altro "
+"dispositivo a cui puoi connettere il tuo dispositivo Ubuntu Touch. Il tuo "
+"dispositivo “host“ deve avere installati ``adb`` e ``fastboot``."
 
 #: ../../userguide/dailyuse/anbox.rst:11
 msgid "Supported devices"
@@ -711,17 +712,17 @@ msgid ""
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:31
-#, fuzzy
 msgid ""
 "Open a terminal on your host and set some device specific variables by "
 "running ``export CODENAME=\"turbo\" && export PARTITIONNAME=\"bootimg\"``, "
 "but replace the part between the quotes respectively with the codename and "
 "name of the boot partition for your device. See the above list."
 msgstr ""
-"Aprire un terminale e eseguire ``export CODENAME=\"turbo\" && export "
-"PARTITIONNAME=\"bootimg\"``, sostituendo la parte tra le virgolette con "
-"rispettivamente il nome in codice e il nome della partizione di boot de tuo "
-"dispositivo. Vedi la lista di prima."
+"Aprre un terminale (su host) e impostare alcune variabile specifiche per il "
+"dispositivo eseguendo ``export CODENAME=\"turbo\" && export PARTITIONNAME=\""
+"bootimg\"``, sostituendo le parti tra virgolette, rispettivamente, con il "
+"“codename“ e il nome della partizione di boot del tuo dispositivo. Vedere la "
+"lista precedente."
 
 #: ../../userguide/dailyuse/anbox.rst:32
 msgid "Activate developer mode on your device."
@@ -732,6 +733,8 @@ msgid ""
 "Connect the device to your host and run the following commands from your "
 "host (same terminal that you ran the ``export`` command in)::"
 msgstr ""
+"Collega il dispositivo al tuo host ed esegui il seguente comando dal tuo "
+"host (stesso terminale dal quale hai eseguito il comando ``export``)::"
 
 #: ../../userguide/dailyuse/anbox.rst:43
 #, fuzzy
