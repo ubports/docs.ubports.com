@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 15:16-0500\n"
-"PO-Revision-Date: 2020-04-25 15:23+0000\n"
-"Last-Translator: Richard Fulop <richard.fulop@protonmail.com>\n"
+"PO-Revision-Date: 2020-05-09 09:23+0000\n"
+"Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
 "Language: ru\n"
@@ -59,11 +59,10 @@ msgstr ""
 "экспортируемого файла)"
 
 #: ../../appdev/guides/contenthub.rst:20
-#, fuzzy
 msgid "``ContentHandler.Share`` (The app selected is going to be the app from witch the file is going to be shared from)"
 msgstr ""
-"``ContentHandler.Share``(Выбранное приложение - это приложение, из которого "
-"файл будет в общем доступе)"
+"``ContentHandler.Share``(Выбранное приложение - это приложение, файл  из "
+"которого будет в общем доступе)"
 
 #: ../../appdev/guides/contenthub.rst:23
 msgid "Importing"
@@ -127,13 +126,12 @@ msgstr ""
 "InstallPage.qml#L38>`_)."
 
 #: ../../appdev/guides/contenthub.rst:76
-#, fuzzy
 msgid "``contentType`` is ``ContentType.All``, so we will only see apps which are able to receive unmarked file types. ``handler`` is ``ContentHandler.Destination``, so the app selected should store the saved game."
 msgstr ""
 "``contentType`` - это``ContentType.All``, поэтому мы увидим только "
 "приложения,  которые могут получать файлы с неуказанными типами.  ``handler``"
 " - это ``ContentHandler.Destination``, поэтому выбранное приложение должно "
-"сохранять файл игры.."
+"сохранять файл игры."
 
 #: ../../appdev/guides/contenthub.rst:78
 msgid "Tapping on the File Manager we will save the saved game in the folder we choose."
@@ -1384,213 +1382,326 @@ msgid "Limitations and wonders"
 msgstr "Ограничения и особенности"
 
 #: ../../appdev/guides/user-metrics.rst:89
+#, fuzzy
 msgid "Based on how the \"formats\" are set up, it seems that it is difficult to maintain a running tally beyond one day. It also doesn’t seem to truly reset a counted variable. Instead it reverts to a default setting. This would not normally allow for long-term data interpretation without some kind of database logging."
 msgstr ""
+"В зависимости от того, как заданы «форматы», все может выглядеть так, будто "
+"бы поддерживать счет за пределами одного дня сложно. Это также, похоже, не "
+"сбрасывает счетную переменную. Вместо этого возвращается значение по "
+"умолчанию. Это обычно не допускает долгосрочной интерпретации данных без "
+"какой-либо регистрации в базе данных."
 
 #: ../../appdev/guides/user-metrics.rst:91
+#, fuzzy
 msgid "In the case of the `nCounter`_ app. I wanted to count the number of days, but since the metric \"resets\" each day, that presents a problem. I create a workaround that updates the metric every time the application is opened. Thus, the ``emptyFormat`` (default) tells the user to open the application. This, however, nearly defeats the purpose of the user metric entirely, other than having a neat stat reminder for the day."
 msgstr ""
+"Особенность приложения `nCounter`_. Хочется посчитать количество дней, но "
+"поскольку метрика «сбрасывается» каждый день, это представляет проблему. "
+"Можно создать workaround, который обновляет метрику каждый раз, когда "
+"приложение открывается. Таким образом, `` emptyFormat`` (по умолчанию) "
+"говорит пользователю открыть приложение. Это, однако, почти полностью "
+"противоречит цели метрики пользователя, за исключением аккуратного "
+"напоминания о статистике за день."
 
 #: ../../appdev/guides/user-metrics.rst:93
+#, fuzzy
 msgid "There must be a way for a process to run independently in the background (e.g. cron) to retrieve data from a specific app code. One lead is the Indicator Weather app. This runs a process every X minutes to update the weather indicator automatically without having to open the app."
 msgstr ""
+"Процесс должен запускаться независимо в фоновом режиме (например, cron) для "
+"извлечения данных из определенного кода приложения. Например, есть "
+"приложение Индикатор погоды. Оно запускает процесс каждые X минут для "
+"автоматического обновления индикатора погоды без необходимости открывать "
+"приложение."
 
 #: ../../appdev/guides/writeable-dirs.rst:2
 msgid "Writable directories"
-msgstr ""
+msgstr "Каталоги для записи"
 
 #: ../../appdev/guides/writeable-dirs.rst:4
 msgid "App confinement is part of the Ubuntu Touch security concept. Data can be exchanged between apps only according to the AppArmor policies, mainly using the :ref:`ContentHub <contenthub>`. This being said, apps can only read and write files that are located in one of three app specific directories explained in this guide."
 msgstr ""
+"Ограничение доступа к приложениям является частью концепции безопасности "
+"Ubuntu Touch. Обмен данными между приложениями возможен только в "
+"соответствии с политиками AppArmor, в основном с использованием: ref: `"
+"ContentHub <contenthub>`. При этом приложения могут только читать и "
+"записывать файлы, расположенные в одном из трех каталогов, определенных для "
+"приложения, которые описаны в этом руководстве."
 
 #: ../../appdev/guides/writeable-dirs.rst:7
 msgid "Standard Paths"
-msgstr ""
+msgstr "Стандартные директории"
 
 #: ../../appdev/guides/writeable-dirs.rst:8
 msgid "Besides the write access to the app directories explained below, the app can write debug messages into the app log file located at ``/home/phablet/.cache/upstart/application-click-<fullappname>_<appname>_<version>.log``. To append messages to the log file, use the `Qt debug <https://doc.qt.io/qt-5/qdebug.html>`_ functions."
 msgstr ""
+"Кроме записи файлов в каталоги, приложение так же может записывать сообщения "
+"отладки в файл журнала приложения, расположенный по адресу `` /home/phablet/."
+"cache/upstart/application-click-<fullappname>_<appname>_<version > .log``. "
+"Чтобы добавить сообщения в файл журнала, используйте функции `Qt debug "
+"<https://doc.qt.io/qt-5/qdebug.html>` _."
 
 #: ../../appdev/guides/writeable-dirs.rst:11
 msgid "Config"
-msgstr ""
+msgstr "Файлы конфигурации"
 
 #: ../../appdev/guides/writeable-dirs.rst:12
 msgid "Path: ``/home/phablet/.config/<fullappname>/``"
-msgstr ""
+msgstr "Каталог: ``/home/phablet/.config/<fullappname>/``"
 
 #: ../../appdev/guides/writeable-dirs.rst:14
 msgid "This is the place to store configurations files to. The music app for example stores its configuration to ``/home/phablet/.config/com.ubuntu.music/com.ubuntu.music.conf``."
 msgstr ""
+"Это место для хранения файлов конфигурации. Например, музыкальное приложение "
+"сохраняет свои настройки в  файле````/home/phablet/.config/com.ubuntu.music/"
+"com.ubuntu.music.conf``."
 
 #: ../../appdev/guides/writeable-dirs.rst:17
 msgid "Cache"
-msgstr ""
+msgstr "Кэш"
 
 #: ../../appdev/guides/writeable-dirs.rst:18
 msgid "Path: ``/home/phablet/.cache/<fullappname>/``"
-msgstr ""
+msgstr "Путь: ``/home/phablet/.cache/<fullappname>/``"
 
 #: ../../appdev/guides/writeable-dirs.rst:20
 msgid "This is the place to cache data for later use. The cache is also used by the Content Hub. Files that have been shared with the music app for example can be found in ``/home/phablet/.cache/com.ubuntu.music/HubIncoming/``."
 msgstr ""
+"Это место для кэширования данных, которые будут использоваться в ближайшее "
+"время. Кэш также используется в Content Hub. Например, файлы, которые "
+"открыты в музыкальном плеере, можно найти в  каталоге ``/home/phablet/.cache/"
+"com.ubuntu.music/HubIncoming/``."
 
 #: ../../appdev/guides/writeable-dirs.rst:23
 msgid "App data"
-msgstr ""
+msgstr "Данные приложений"
 
 #: ../../appdev/guides/writeable-dirs.rst:24
 msgid "Path: ``/home/phablet/.local/share/<fullappname>/``"
-msgstr ""
+msgstr "Каталог:``/home/phablet/.local/share/<fullappname>/``"
 
 #: ../../appdev/guides/writeable-dirs.rst:26
 msgid "This is where your app stores any data. The music app for example stores its data bases to ``/home/phablet/.local/share/com.ubuntu.music/Databases/``."
 msgstr ""
+"Здесь приложение хранит любые данные. Например, музыкальное плеер хранит "
+"свои базы данных в  каталоге ``/home/phablet/.local/share/com.ubuntu.music/"
+"Databases/``."
 
 #: ../../appdev/guides/writeable-dirs.rst:30
 msgid "Using Standard Paths in C++"
-msgstr ""
+msgstr "Используются стандартные каталоги для C++"
 
 #: ../../appdev/guides/writeable-dirs.rst:31
 msgid "The Qt header ``QStandardPaths`` provides the app's writable locations:"
 msgstr ""
+"В Qt-хедере ``QStandardPaths` описываются каталоги приложения для записи "
+"данных:"
 
 #: ../../appdev/guides/writeable-dirs.rst:43
 msgid "Using Standard Paths in QML"
-msgstr ""
+msgstr "Использование стандартных каталогов в QML"
 
 #: ../../appdev/guides/writeable-dirs.rst:44
+#, fuzzy
 msgid "The Qt module `Qt.labs.platform <https://doc.qt.io/archives/qt-5.10/qml-qt-labs-platform-standardpaths.html>`_ provides the QStandardPaths in QML. Unfortunately it is not available on Ubuntu Touch, yet. Probably you don't want to ship that module with your app. Instead, you could simply let your C++ plugin provide the paths to your QML part. Therefore, add these methods to your plugin class:"
 msgstr ""
+"Через Qt-модуль  `Qt.labs.platform <https://doc.qt.io/archives/qt-5.10/qml-"
+"qt-labs-platform-standardpaths.html>` _ реализован доступ к QStandardPaths в "
+"QML. К сожалению, этот модуль пока недоступен в Ubuntu Touch. Возможно, Вам "
+"не хочется поставлять этот модуль с  приложением. Вместо этого можно "
+"разрешить своему плагину на C ++ предоставлять пути к вашей части QML. "
+"Поэтому добавьте эти методы в свой класс плагинов:"
 
 #: ../../appdev/guides/writeable-dirs.rst:64
 msgid "Assuming the name of your plugin is MyPlugin, you can access these paths in QML:"
 msgstr ""
+"Например,  название вашего плагина - MyPlugin. Можно получить доступ к этим "
+"путям в QML:"
 
 #: ../../appdev/index.rst:2
 msgid "App development"
-msgstr ""
+msgstr "Создание приложений"
 
 #: ../../appdev/index.rst:4
 msgid "Great!, you'd like to develop an app for Ubuntu Touch. Here are some resources that we hope help you get started."
 msgstr ""
+"Отлично! Если вы хотите разрабатывать приложения для Ubuntu Touch, то вот "
+"некоторые ресурсы, которые помогут в  работе."
 
 #: ../../appdev/index.rst:6
 msgid "If you have questions that aren't answered in the docs or want to chat with other Ubuntu Touch developers? Join our `app dev Telegram group <https://t.me/UbuntuAppDevEN>`_ or chat with us on the `UBports app dev forum <https://forums.ubports.com/category/35/app-development>`_."
 msgstr ""
+"Если у вас есть вопросы, на которые нет ответов в документации, или вы "
+"хотите пообщаться с другими разработчиками Ubuntu Touch, присоединяйтесь к "
+"группе разработчиков приложений <https://t.me/UbuntuAppDevEN> `_ или пишите "
+"на форум разработчиков приложений UBports <https://forums.ubports.com/"
+"category/35/app-development> `_."
 
 #: ../../appdev/index.rst:9
 msgid "Get started"
-msgstr ""
+msgstr "Начало работы"
 
 #: ../../appdev/index.rst:11
+#, fuzzy
 msgid "Ubuntu Touch supports two kind of apps. :ref:`Native apps <nativeapp>` are apps with interfaces made using QML or HTML with their behavior defined in JavaScript, C++, Python, Rust or Go. :ref:`Web apps <webapp>` are special containers to run websites in."
 msgstr ""
+"Ubuntu Touch поддерживает два вида приложений. : ref: `Нативные приложения "
+"<nativeapp>` - это приложения с интерфейсом, созданным с использованием QML "
+"или HTML и работающими по правилам JavaScript, C ++, Python, Rust или Go. : "
+"ref: `Веб-приложения <webapp>` - это специальные контейнеры для запуска "
+"веб-сайтов."
 
 #: ../../appdev/index.rst:13
 msgid "Applications are shipped as a :ref:`Click <click>` package and can be publicly shared on the official app store `OpenStore <https://open-store.io>`__"
 msgstr ""
+"Приложения поставляются в виде: ref: `Click <click>` пакета и могут быть "
+"опубликованы в официальном магазине приложений OpenStore <https://open-"
+"store.io> `__"
 
 #: ../../appdev/index.rst:24
 msgid "Tools"
-msgstr ""
+msgstr "Инструменты разработчика"
 
 #: ../../appdev/index.rst:26
 msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ is a meta-build system for Ubuntu Touch applications that allows you to compile, build, test and publish ``click`` packages and provides various templates to get you started with app development. It is currently the easiest and most convenient way of building click packages for Ubuntu Touch. You can use any code editor or IDE that you choose and build your apps from the commandline with Clickable."
 msgstr ""
+"Clickable <http://clickable.bhdouglass.com/en/latest/> `_ - это система "
+"сборки  приложений Ubuntu Touch, которая позволяет компилировать, создавать, "
+"тестировать и публиковать пакеты` `click`` и предоставляет различные шаблоны "
+"для начала разработки приложений. В настоящее время это самый простой и "
+"удобный способ создания пакетов click для Ubuntu Touch. Вы можете "
+"использовать любой редактор  или IDE, и создавать свои приложения из "
+"командной строки с помощью Clickable."
 
 #: ../../appdev/index.rst:28
 msgid "Alternatively there is the old `Ubuntu SDK IDE <https://docs.ubuntu.com/phone/en/platform/sdk>`__. Be aware that it is no longer supported by Canonical, and UBports has chosen to not support it either due to lack of manpower."
 msgstr ""
+"Можно так же создавать приложения в старом пакете для разработки `IDE Ubuntu "
+"SDK <https://docs.ubuntu.com/phone/en/platform/sdk>` __. Но нужно иметь "
+"ввиду, что этот комплект программ  больше не поддерживается Canonical, и "
+"UBports  перестала поддерживать его из-за нехватки квалифицированных "
+"программистов."
 
 #: ../../appdev/index.rst:30
 msgid "You can still install the SDK IDE in Ubuntu 16.04, but it is not guaranteed to work correctly. You can use the following commands to install::"
 msgstr ""
+"Можно заниматься разработкой программ в среде IDE SDK в Ubuntu 16.04, но это "
+"не гарантирует правильной работы. Используйте следующие команды для "
+"установки:"
 
 #: ../../appdev/index.rst:40
 msgid "Guides"
-msgstr ""
+msgstr "Руководства"
 
 #: ../../appdev/index.rst:42
 msgid "Get started building your first app or learn about advanced concepts with our :ref:`Developer guides <devguides>`."
 msgstr ""
+"Начните создавать свое первое приложение или прочитайте подробные: ref: `"
+"Руководства разработчика <devguides>` для опытных программистов."
 
 #: ../../appdev/index.rst:58
 msgid "Publishing"
-msgstr ""
+msgstr "Публикация приложения"
 
 #: ../../appdev/index.rst:60
 msgid "After you are done building your app, distribute it on the `OpenStore <https://open-store.io/>`__ with our :ref:`Publishing guides <publishing>`."
 msgstr ""
+"После того как приложение будет скомпилировано, опубликуйте его в OpenStore "
+"<https://open-store.io/> `__ согласно правилам из: ref:` Руководства по "
+"публикации <publishing> `."
 
 #: ../../appdev/index.rst:69
 msgid "Documentation"
-msgstr ""
+msgstr "Документация"
 
 #: ../../appdev/index.rst:71
 msgid "`QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__"
-msgstr ""
+msgstr "`QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__"
 
 #: ../../appdev/index.rst:72
 msgid "`Cordova HTML5 API <https://api-docs.ubports.com/sdk/apps/html5/index.html>`__"
 msgstr ""
+"`Cordova HTML5 API  <https://api-docs.ubports.com/sdk/apps/html5/"
+"index.html>`__"
 
 #: ../../appdev/index.rst:73
 msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`__"
-msgstr ""
+msgstr "`Clickable  <http://clickable.bhdouglass.com/en/latest/>`__"
 
 #: ../../appdev/index.rst:74
 msgid "`Suru Icons <http://docs.ubports.com/projects/icons/en/latest/>`__"
-msgstr ""
+msgstr "`Suru Icons  <http://docs.ubports.com/projects/icons/en/latest/>`__"
 
 #: ../../appdev/index.rst:76
 msgid "It is possible to develop cross-platform apps that don't depend on Ubuntu specific APIs, although this is not the official way of developing apps for Ubuntu Touch. If running on other operating systems is an requirement for your app, you can refer to this  APIs instead:"
 msgstr ""
+"Можно создавать кроссплатформенные приложения, которые не зависят от "
+"конкретных API-интерфейсов Ubuntu, хотя это не является официальным способом "
+"разработки приложений для Ubuntu Touch. Если приложение должно работать в "
+"других операционных системах, используйте следующие API:"
 
 #: ../../appdev/index.rst:78
 msgid "`Kirigami API <https://api.kde.org/frameworks/kirigami/html/>`__"
-msgstr ""
+msgstr "`Kirigami API  <https://api.kde.org/frameworks/kirigami/html/>`__"
 
 #: ../../appdev/index.rst:79
 msgid "`Qt Quick Controls 2 API <https://doc.qt.io/qt-5/qtquickcontrols-index.html>`__"
 msgstr ""
+"`Qt Quick Controls 2 API  <https://doc.qt.io/qt-5/qtquickcontrols-"
+"index.html>`__"
 
 #: ../../appdev/index.rst:83
 #: ../../appdev/platform/index.rst:4
 msgid "Platform"
-msgstr ""
+msgstr "Платформа"
 
 #: ../../appdev/index.rst:96
 msgid "Sample apps"
-msgstr ""
+msgstr "Примеры приложений"
 
 #: ../../appdev/index.rst:98
+#, fuzzy
 msgid "Learn more about app development by digging into our :ref:`Sample apps <sampleapps>`."
 msgstr ""
+"Подробнее узнать о создании приложений можно в главе :ref:`Примеры "
+"<sampleapps>`."
 
 #: ../../appdev/index.rst:108
 msgid "Preinstalled apps"
-msgstr ""
+msgstr "Предустановленные приложения"
 
 #: ../../appdev/index.rst:110
 msgid "The :doc:`/contribute/preinstalled-apps` page has information on developing the apps which are included with Ubuntu Touch."
 msgstr ""
+"В разделе :doc:`/contribute/preinstalled-apps` содержится информация о "
+"разработке  и работе приложений, поставляющихся с ОС Ubuntu Touch."
 
 #: ../../appdev/nativeapp/index.rst:4
 msgid "Native applications"
-msgstr ""
+msgstr "Нативные приложения"
 
 #: ../../appdev/nativeapp/index.rst:6
 msgid "The recommended way to build a native application on Ubuntu Touch is to use the `Qt <https://doc.qt.io/>`__ framework ( current version shipped on Ubuntu Touch 16.04 is Qt 5.9.5 ). You do not have to stick with the traditional C++<->QML Qt model, you can use also Python, Go, Rust or even Javascript for your backend."
 msgstr ""
+"Для создания нативных приложений в Ubuntu Touch  рекомендуется использовать "
+"инфраструктуру `Qt <https://doc.qt.io/>` __ (в Ubuntu Touch 16.04 "
+"поставляется с версией Qt 5.9.5). при создании своего приложения не нужно "
+"придерживаться традиционной модели C ++ <-> QML Qt, можно использовать "
+"Python, Go, Rust или даже Javascript."
 
 #: ../../appdev/nativeapp/index.rst:9
 msgid "Ubuntu Touch provide a subset of Qt QML components to ease you design your app : `QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__ and Icons: `Suru Icons <http://docs.ubports.com/projects/icons/en/latest/>`__, but you can also ship your cross platform app using standard Qt QML QtQuick2 components."
 msgstr ""
+"Для упрощения разработки в Ubuntu Touch уже есть множество компонентов Qt "
+"QML: `QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>` __ и "
+"набор иконок: `Suru Icons <http://docs.ubports.com/projects/icons/en/latest/>"
+" `__. Но можно так же создавать кроссплатформенное приложение, используя "
+"стандартные компоненты Qt QML QtQuick2."
 
 #: ../../appdev/nativeapp/index.rst:12
 msgid "You can use `Clickable <http://clickable.bhdouglass.com/en/latest/>`_ to facilitate Packaging, deploying, publishing and tests ."
 msgstr ""
+"Для сборки, тестирования и распространения программы можно использовать `"
+"Clickable <http://clickable.bhdouglass.com/en/latest/>` _ ."
 
 #: ../../appdev/nativeapp/index.rst:14
 msgid "Check out informations about the platform and confinement model in :ref:`Platform <platform>` section"
