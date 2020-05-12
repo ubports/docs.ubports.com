@@ -20,5 +20,4 @@ Examples of designs to avoid
 
 Left: Download button uses old focus color, Cancel button (secondary action) uses old grey color.
 
-Right: Dialog uses generic answers, both buttons colored as main actions with confusing color meaning: Is «No» a destructive action, and «Yes» save to tap on?
-
+Right: Dialog uses generic answers, both buttons colored as main actions with confusing color meaning: "Will 'No' cause an irreversible action, and 'Yes' cause an additive action?"

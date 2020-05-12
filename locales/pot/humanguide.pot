@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-13 01:10+0200\n"
+"POT-Creation-Date: 2020-05-13 01:29+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -89,7 +89,7 @@ msgid "Left: Download button uses old focus color, Cancel button (secondary acti
 msgstr ""
 
 #: ../../humanguide/app-layout/dialogs.rst:23
-msgid "Right: Dialog uses generic answers, both buttons colored as main actions with confusing color meaning: Is «No» a destructive action, and «Yes» save to tap on?"
+msgid "Right: Dialog uses generic answers, both buttons colored as main actions with confusing color meaning: \"Will 'No' cause an irreversible action, and 'Yes' cause an additive action?\""
 msgstr ""
 
 #: ../../humanguide/app-layout/header-uses.rst:2
