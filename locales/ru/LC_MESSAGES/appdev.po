@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 15:16-0500\n"
-"PO-Revision-Date: 2020-05-09 09:23+0000\n"
+"PO-Revision-Date: 2020-05-14 16:24+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
@@ -37,7 +37,7 @@ msgstr ""
 
 #: ../../appdev/guides/contenthub.rst:14
 msgid "Different ways of sharing the content"
-msgstr "Разные способы поделиться контентом"
+msgstr "Несколько способов поделиться контентом"
 
 #: ../../appdev/guides/contenthub.rst:16
 msgid "As we can see in the `Content Hub documentation <https://api-docs.ubports.com/sdk/apps/qml/Ubuntu.Content/ContentHandler.html#detailed-description>`_, there are several ways of handling the file to be shared:"
@@ -219,13 +219,13 @@ msgstr ""
 #: ../../appdev/guides/cookbook.rst:9
 msgid "`Ubuntu Touch programming book <https://www.gitbook.com/book/mimecar/ubuntu-touch-programming-course/details>`__"
 msgstr ""
-"`Ubuntu Touch programming book <https://www.gitbook.com/book/mimecar/"
+"`Ubuntu Touch  programming book <https://www.gitbook.com/book/mimecar/"
 "ubuntu-touch-programming-course/details>`__"
 
 #: ../../appdev/guides/cookbook.rst:10
 msgid "`Application Templates by fulvio <https://github.com/fulvio999/ubports_app_templates>`__"
 msgstr ""
-"`Application Templates by fulvio <https://github.com/fulvio999/"
+"`Application Templates  by fulvio <https://github.com/fulvio999/"
 "ubports_app_templates>`__"
 
 #: ../../appdev/guides/cookbook.rst:13
@@ -1706,30 +1706,41 @@ msgstr ""
 #: ../../appdev/nativeapp/index.rst:14
 msgid "Check out informations about the platform and confinement model in :ref:`Platform <platform>` section"
 msgstr ""
+"Ознакомьтесь с информацией о платформе и модели ограничения в разделе: ref: `"
+"Платформа <platform>`"
 
 #: ../../appdev/platform/apparmor.rst:2
 msgid "AppArmor Policy Groups"
-msgstr ""
+msgstr "Политики групп AppArmor"
 
 #: ../../appdev/platform/apparmor.rst:4
 msgid "This document contains a full list of Ubuntu Touch's available policy groups and a description of what they give your app permission to access."
 msgstr ""
+"В этом документе содержится полный список доступных групп политик Ubuntu "
+"Touch и описание того, что они дают приложению при запросе прав доступа к "
+"устройству."
 
 #: ../../appdev/platform/apparmor.rst:6
 msgid "Each entry follows this format"
-msgstr ""
+msgstr "Каждая запись соответствует этому формату"
 
 #: ../../appdev/platform/apparmor.rst:21
 msgid "Policy usage affects whether your app will be accepted by the OpenStore. Apps containing policies with common usage are generally accepted immediately, while reserved usage policies will need to be manually reviewed."
 msgstr ""
+"Использование политики влияет на то, будет ли  приложение опубликовано в "
+"OpenStore. Приложения, работающие с политиками общего пользования, обычно "
+"размещаются немедленно в то время, как приложения без политик необходимо "
+"будет проверять вручную."
 
 #: ../../appdev/platform/apparmor.rst:24
+#, fuzzy
 msgid "accounts"
-msgstr ""
+msgstr "учётные записи"
 
 #: ../../appdev/platform/apparmor.rst:26
+#, fuzzy
 msgid "Description: Can use Online Accounts."
-msgstr ""
+msgstr "Описание: Можно использовать онлайн-аккаунты."
 
 #: ../../appdev/platform/apparmor.rst:28
 #: ../../appdev/platform/apparmor.rst:38
@@ -1746,32 +1757,44 @@ msgstr ""
 #: ../../appdev/platform/apparmor.rst:249
 #: ../../appdev/platform/apparmor.rst:259
 #: ../../appdev/platform/apparmor.rst:287
+#, fuzzy
 msgid "Usage: common"
-msgstr ""
+msgstr "Использование: общие"
 
 #: ../../appdev/platform/apparmor.rst:30
+#, fuzzy
 msgid "The accounts policy gives your app the permissions it needs to access the `Online Accounts API`_."
 msgstr ""
+"Политика учетных записей дает приложению разрешения, необходимые для доступа "
+"к «API  онлайн-аккаунтов»_."
 
 #: ../../appdev/platform/apparmor.rst:34
 msgid "audio"
-msgstr ""
+msgstr "аудио"
 
 #: ../../appdev/platform/apparmor.rst:36
 msgid "Description: Can play audio (allows playing remote content via media-hub)"
 msgstr ""
+"Описание: Возможность воспроизведения аудио (позволяет воспроизводить "
+"удаленный контент через медиа-хаб)"
 
 #: ../../appdev/platform/apparmor.rst:40
 msgid "The audio policy is needed for your app to play audio via pulseaudio or media-hub. The permission also gives it the ability to send album art to the thumbnailer service, which is then shown on the sound indicator."
 msgstr ""
+"Аудио политика позволяет приложению корректно воспроизводить аудио-потоки а "
+"через pulseaudio или медиа-хаб. Так же приложение сможет отправлять "
+"фотографии обложки альбомов в службу thumbnailer и показывать их на экране "
+"аудиоплеера."
 
 #: ../../appdev/platform/apparmor.rst:44
 msgid "bluetooth"
-msgstr ""
+msgstr "bluetooth"
 
 #: ../../appdev/platform/apparmor.rst:46
+#, fuzzy
 msgid "Description: Use bluetooth (bluez5) as an administrator."
 msgstr ""
+"Описание: Использовать интерфейс bluetooth (bluez5) с правами администратора."
 
 #: ../../appdev/platform/apparmor.rst:48
 #: ../../appdev/platform/apparmor.rst:58
@@ -1787,91 +1810,112 @@ msgstr ""
 #: ../../appdev/platform/apparmor.rst:267
 #: ../../appdev/platform/apparmor.rst:277
 msgid "Usage: reserved"
-msgstr ""
+msgstr "Использование: зарезервировано"
 
 #: ../../appdev/platform/apparmor.rst:50
 msgid "This policy grants unrestricted access to Bluetooth devices. It is provided for administration of bluetooth and as a stepping stone towards developing a safe bluetooth API all apps can access."
 msgstr ""
+"Эта политика предоставляет неограниченный доступ к устройствам Bluetooth. "
+"Она предназначена для администрирования bluetooth и может использоваться как "
+"основа для разработки безопасного API bluetooth, к которому могут получить "
+"доступ все приложения."
 
 #: ../../appdev/platform/apparmor.rst:54
 msgid "calendar"
-msgstr ""
+msgstr "calendar (календарь)"
 
 #: ../../appdev/platform/apparmor.rst:56
 msgid "Description: Can access the calendar."
-msgstr ""
+msgstr "Описание: предоставление доступа к календарю."
 
 #: ../../appdev/platform/apparmor.rst:60
 msgid "Calendar grants access to the Evolution dataserver's calendar and alarms APIs. It also grants access to sync-monitor."
 msgstr ""
+"Предоставляется доступ к API-интерфейсу календаря, сигнализации Evolution, а "
+"также к монитору синхронизации."
 
 #: ../../appdev/platform/apparmor.rst:62
 msgid "This policy is reserved since it grants free access to all calendars on the device at any time. The legacy bug about this situation is `LP #1227824`_ ."
 msgstr ""
+"Эта политика зарезервирована, так как она  всегда предоставляет свободный "
+"доступ ко всем календарям на устройстве. Ошибка старая,  номер баг-репорта - "
+"`LP # 1227824`_."
 
 #: ../../appdev/platform/apparmor.rst:66
 msgid "camera"
-msgstr ""
+msgstr "camera (камера)"
 
 #: ../../appdev/platform/apparmor.rst:68
 msgid "Description: Can access the camera(s)"
-msgstr ""
+msgstr "Описание: доступ к камере устройства"
 
 #: ../../appdev/platform/apparmor.rst:72
 msgid "The camera policy grants access to device cameras."
 msgstr ""
+"Эта политика устанавливает правила предоставления доступа к камерам "
+"устройства."
 
 #: ../../appdev/platform/apparmor.rst:76
 msgid "connectivity"
-msgstr ""
+msgstr "connectivity"
 
 #: ../../appdev/platform/apparmor.rst:78
 msgid "Description: Can access coarse network connectivity information"
-msgstr ""
+msgstr "Описание:Может давать доступ к информации о связи устройств в сети"
 
 #: ../../appdev/platform/apparmor.rst:82
 msgid "The connectivity policy allows apps to determine rough information about the device's connectivity. This includes whether the device is connected to the Internet and whether it is connected via a Wi-Fi or mobile data connection."
 msgstr ""
+"Политика по связи позволяет приложениям получать приблизительную информацию "
+"о подключенных устройствах  - есть ли у устройства доступ к Интернету и "
+"подключено ли оно через Wi-Fi или мобильную сеть."
 
 #: ../../appdev/platform/apparmor.rst:86
 msgid "contacts"
-msgstr ""
+msgstr "contacts (адресная книга)"
 
 #: ../../appdev/platform/apparmor.rst:88
 msgid "Description: Can access contacts."
-msgstr ""
+msgstr "Описание:доступ к адресной книге."
 
 #: ../../appdev/platform/apparmor.rst:92
 msgid "The contacts policy allows apps to access the device user's contacts list. It is marked as reserved because it allows access to sync-monitor and unfettered access to the address book."
 msgstr ""
+"Политика работы со списком контактов позволяет приложениям получать доступ к "
+"адресной книге пользователя устройства. Отмечена как зарезервированная, "
+"имеет доступ к службе синхронизации sync-monitor  и адресной книге."
 
 #: ../../appdev/platform/apparmor.rst:96
 msgid "content_exchange"
-msgstr ""
+msgstr "content_exchange"
 
 #: ../../appdev/platform/apparmor.rst:98
 msgid "Description: Can request/import data from other applications"
-msgstr ""
+msgstr "Описание: может запрашивать/импортировать данные из других приложений"
 
 #: ../../appdev/platform/apparmor.rst:102
 msgid "Using the content_exchange policy allows your app to be a consumer of content on content-hub."
 msgstr ""
+"Использование политики content_exchange позволяет приложению потреблять "
+"контент на контент-хабе."
 
 #: ../../appdev/platform/apparmor.rst:106
 msgid "content_exchange_source"
-msgstr ""
+msgstr "content_exchange_source"
 
 #: ../../appdev/platform/apparmor.rst:108
 msgid "Description: Can provide/export data to other applications"
-msgstr ""
+msgstr "Описание: может экспортировать/предоставлять данные другим приложениям"
 
 #: ../../appdev/platform/apparmor.rst:112
 msgid "The content_exchange_source policy allows your app to provide content on content-hub."
 msgstr ""
+"Политика content_exchange_source позволяет приложению предоставлять свой "
+"контент на контент-хаб."
 
 #: ../../appdev/platform/apparmor.rst:116
 msgid "debug"
-msgstr ""
+msgstr "debug (режим отладки)"
 
 #: ../../appdev/platform/apparmor.rst:118
 msgid "Description: Use special debugging tools. This should only be used in development and not for production packages. Note: use of this policy group provides significantly different confinement than normal and is not considered secure. You should never run untrusted programs using this policy group."
