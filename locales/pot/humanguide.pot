@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-11 02:46+0100\n"
+"POT-Creation-Date: 2020-05-13 01:10+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -85,7 +85,11 @@ msgid "Examples of designs to avoid"
 msgstr ""
 
 #: ../../humanguide/app-layout/dialogs.rst:21
-msgid "Left: Download a file (old focus color). Right: Delete a contact (wrong use of color and confusing answers)."
+msgid "Left: Download button uses old focus color, Cancel button (secondary action) uses old grey color."
+msgstr ""
+
+#: ../../humanguide/app-layout/dialogs.rst:23
+msgid "Right: Dialog uses generic answers, both buttons colored as main actions with confusing color meaning: Is «No» a destructive action, and «Yes» save to tap on?"
 msgstr ""
 
 #: ../../humanguide/app-layout/header-uses.rst:2
@@ -601,7 +605,7 @@ msgid "Recommended for foregrounds."
 msgstr ""
 
 #: ../../humanguide/design-concepts/system-palette.rst:56
-msgid "#19B6EE Blue"
+msgid "#335280 Blue"
 msgstr ""
 
 #: ../../humanguide/design-concepts/system-palette.rst:58
@@ -609,7 +613,7 @@ msgid "Recommended for progress bars, selected areas, text selection and text cu
 msgstr ""
 
 #: ../../humanguide/design-concepts/system-palette.rst:62
-msgid "#335280 Light Blue"
+msgid "#19B6EE Light Blue"
 msgstr ""
 
 #: ../../humanguide/design-concepts/system-palette.rst:64
@@ -617,7 +621,7 @@ msgid "Recommended for progress bars, selected areas, text selection and text cu
 msgstr ""
 
 #: ../../humanguide/design-concepts/system-palette.rst:68
-msgid "#3EB34F Green"
+msgid "#0E8420 Green"
 msgstr ""
 
 #: ../../humanguide/design-concepts/system-palette.rst:70
@@ -625,7 +629,7 @@ msgid "Recommended for positive action buttons (SuruDark)."
 msgstr ""
 
 #: ../../humanguide/design-concepts/system-palette.rst:74
-msgid "#0E8420 Light Green"
+msgid "#3EB34F Light Green"
 msgstr ""
 
 #: ../../humanguide/design-concepts/system-palette.rst:76

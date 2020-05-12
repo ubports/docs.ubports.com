@@ -18,5 +18,7 @@ Examples of designs to avoid
 
 .. figure:: /_static/images/humanguide/39.png
 
-Left: Download a file (old focus color). Right: Delete a contact (wrong use of color and confusing answers).
+Left: Download button uses old focus color, Cancel button (secondary action) uses old grey color.
+
+Right: Dialog uses generic answers, both buttons colored as main actions with confusing color meaning: Is «No» a destructive action, and «Yes» save to tap on?
 
