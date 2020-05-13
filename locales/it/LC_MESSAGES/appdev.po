@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2020-05-13 15:33+0000\n"
-"Last-Translator: Ennio Lavagnini <ennio.lavagnini@protonmail.com>\n"
+"PO-Revision-Date: 2020-05-14 16:24+0000\n"
+"Last-Translator: Mike <miguel2000@livecom.it>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/it/>\n"
 "Language: it\n"
@@ -148,8 +148,9 @@ msgid ""
 "Destination``, so the app selected should store the saved game."
 msgstr ""
 "``contentType`` è ``ContentType.All``, quindi vedremo solo app capaci di "
-"ricevere file di tipo unmarked. ``handler`` è ``ContentHandler.Destination``"
-", quindi l'app selezionata dovrebbe memorizzare il gioco salvato. "
+"ricevere file di tipo non definito. ``handler`` è "
+"``ContentHandler.Destination``, quindi l'app selezionata dovrebbe "
+"memorizzare il gioco salvato."
 
 #: ../../appdev/guides/contenthub.rst:78
 msgid ""
@@ -159,7 +160,6 @@ msgstr ""
 "Cliccando sul File Manager salveremo il gioco nella cartella da noi scelta."
 
 #: ../../appdev/guides/contenthub.rst:81
-#, fuzzy
 msgid "Sharing"
 msgstr "Condivisione"
 
@@ -195,7 +195,6 @@ msgid ""
 msgstr ""
 
 #: ../../appdev/guides/contenthub.rst:108
-#, fuzzy
 msgid "Let’s check its manifest.json"
 msgstr "Controlliamo il suo manifest.json"
 
@@ -207,19 +206,17 @@ msgid ""
 msgstr ""
 
 #: ../../appdev/guides/contenthub.rst:131
-#, fuzzy
 msgid ""
 "This means, the OpenStore will be the destination for *all* ``ContentTypes``."
 msgstr ""
-"Quest significa che l'OpenStore sarà la destinazione per *tutti* i "
+"Questo significa che l'OpenStore sarà la destinazione per *tutti* i "
 "``ContentTypes``."
 
 #: ../../appdev/guides/contenthub.rst:133
 msgid "What about uMatriks? Let’s see its ``content-hub.json``"
-msgstr "Approposito di uMatriks? Si veda il suo ``content-hub.json``."
+msgstr "A proposito di uMatriks? Vediamo il suo ``content-hub.json``"
 
 #: ../../appdev/guides/contenthub.rst:161
-#, fuzzy
 msgid ""
 "So, with this example, uMatriks will be able to be the destination, source "
 "and share app for all kinds of ``ContentType``. What about the other hooks "
@@ -273,7 +270,6 @@ msgstr ""
 "piattaforma aperta come Ubuntu Touch."
 
 #: ../../appdev/guides/cookbook.rst:17
-#, fuzzy
 msgid ""
 "The resources listed here do not necessarily represent the officially "
 "endorsed way of developing applications for Ubuntu Touch, but are "
@@ -673,9 +669,8 @@ msgid ""
 msgstr ""
 
 #: ../../appdev/index.rst:68
-#, fuzzy
 msgid "Documentation"
-msgstr "Introduzione"
+msgstr "Documentazione"
 
 #: ../../appdev/index.rst:70
 msgid "`QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__"
