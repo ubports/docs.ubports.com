@@ -1,19 +1,10 @@
 Legacy porting
 ==============
 
-This page documents the resources and process to build an Android compatibility image for the LG Nexus 5, OnePlus One, or Fairphone 2. This information should not be used to bring up any new devices, only to update these older images. All new ports should be created using Halium following the documentation starting at :doc:`introduction`.
+TOOD: fix the title
+TODO: can we turn this into a build instruction for ALL 5.1 devs? e.g., what's the difference btw Opo and N7?
 
-This document is useful if you would like to:
-
-* Fix an Android compatibility-related hardware issue (camera, sensors, radios)
-* Experiment with the Linux kernel
-* Experiment with the system-image upgrade process
-
-This document is not useful if you would like to modify :doc:`../contribute/preinstalled-apps` or :doc:`System software <../systemdev/index>`. See the respective documentation for each.
-
-.. This paragraph is copied in ./introduction.rst. Please update it in both places.
-
-This process does not build Ubuntu Touch! An Android compatibility image is installed along with a prebuilt Ubuntu Touch filesystem to create a running Ubuntu Touch system.
+This page documents the resources and process to build an Android compatibility image for the LG Nexus 5, OnePlus One, or Fairphone 2. This information should not be used to bring up any new devices, only to update these older images. All new ports should be created using Halium following the documentation starting at :doc:`introduction <../porting/introduction>`. See also the general overview for :doc:`kernel-hal`.
 
 This document assumes you already have knowledge of building Android or Halium. It also assumes that your device has Ubuntu Touch installed.
 

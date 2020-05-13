@@ -5,6 +5,8 @@ This section has various documents which will teach you how to work with the pac
 
 This section does not cover most of the *applications* preinstalled on Ubuntu Touch. See :doc:`/contribute/preinstalled-apps` for more information on those.
 
+TODO:kernel
+
 System Software guides
 ----------------------
 
@@ -18,6 +20,8 @@ These guides will give you general instructions on building and testing your own
    :maxdepth: 1
    :name: toc-system-software-guides
 
+   kernel-hal
+   ubp-5.1
    testing-locally
    uploading-changes
 
