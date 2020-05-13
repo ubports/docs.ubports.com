@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2019-01-21 14:32+0000\n"
+"PO-Revision-Date: 2020-05-13 15:26+0000\n"
 "Last-Translator: Mike <miguel2000@livecom.it>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/it/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.1.1\n"
+"X-Generator: Weblate 3.8\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../appdev/guides/contenthub.rst:4
@@ -70,7 +70,6 @@ msgstr ""
 "destinazione del file esportato)"
 
 #: ../../appdev/guides/contenthub.rst:20
-#, fuzzy
 msgid ""
 "``ContentHandler.Share`` (The app selected is going to be the app from witch "
 "the file is going to be shared from)"
@@ -79,7 +78,6 @@ msgstr ""
 "condiviso)"
 
 #: ../../appdev/guides/contenthub.rst:23
-#, fuzzy
 msgid "Importing"
 msgstr "Importazione"
 
@@ -110,7 +108,6 @@ msgid ""
 msgstr ""
 
 #: ../../appdev/guides/contenthub.rst:50
-#, fuzzy
 msgid "Exporting"
 msgstr "Esportazione"
 
