@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 15:16-0500\n"
-"PO-Revision-Date: 2020-05-14 16:24+0000\n"
+"PO-Revision-Date: 2020-05-16 07:24+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
@@ -1920,10 +1920,15 @@ msgstr "debug (режим отладки)"
 #: ../../appdev/platform/apparmor.rst:118
 msgid "Description: Use special debugging tools. This should only be used in development and not for production packages. Note: use of this policy group provides significantly different confinement than normal and is not considered secure. You should never run untrusted programs using this policy group."
 msgstr ""
+"Описание: использование средств для отладки. Должно использоваться только "
+"при разработке, а не для установки готовых пакетов. Примечание: "
+"использование этой группы политик  снимает множество ограничений и поэтому "
+"не считается безопасным. Не следует запускать ненадежные программы с "
+"использованием этой группы политик."
 
 #: ../../appdev/platform/apparmor.rst:124
 msgid "document_files"
-msgstr ""
+msgstr "document_files"
 
 #: ../../appdev/platform/apparmor.rst:126
 msgid "Description: Can read and write to document files. This policy group is reserved for certain applications, such as document viewers. Developers should typically use the content_exchange policy group and API to access document files instead."
