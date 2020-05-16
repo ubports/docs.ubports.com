@@ -6,7 +6,7 @@ This page documents how to build the Kernel and the Android image for the LG Nex
 
 .. note::
 
-    This information should not be used to bring up any new devices, only to update these older images. All new ports should be created using Halium following the documentation starting at :doc:`introduction <../porting/introduction>`.
+    We highly suggest that you follow the :doc:`Halium porting guide <../porting/introduction>` if you want to bring up a new device. The steps in here are only relevant for hammerhead, bacon and FP2.
 
 This document assumes you already have knowledge of building Android or Halium. It also assumes that your device has Ubuntu Touch installed.
 

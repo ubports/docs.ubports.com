@@ -20,9 +20,9 @@ We distinguish a few different groups of Ubuntu Touch devices with respect to ho
 Android 5.1 based ports
 -----------------------
 
-Android 5.1 based ports of Ubuntu Touch consist of the Linux kernel for this device plus a minimal Android system that is used to enable all the hardware. Every device has it's own fork of the Linux kernel. They are all heavily modified for the specific hardware used in that device. These forks are also based of quite old Linux kernel versions.
+Android 5.1 based ports of Ubuntu Touch consist of the Linux kernel for this device plus a minimal Android system that is used to enable all the hardware. Every device has it's own fork of the Linux kernel. They are all heavily modified for the specific hardware used in that device. These forks are also based off quite old Linux kernel versions.
 
-For some devices continuous integration (CI) has been set up to build both the Kernel as well as the Android system. Other devices have to be built manually from their repositories. For a third group of devices, we do unfortunately, not have the source code available. The manufacturers of these devices provided the binaries builds instead.
+For some devices continuous integration (CI) has been set up to build both the Kernel as well as the Android system. Other devices have to be built manually from their repositories. For a third group of devices, we do not unfortunately, have the source code available. The manufacturers of these devices provided the binaries builds instead.
 
 * With CI
    * Nexus 5 (hammerhead)
