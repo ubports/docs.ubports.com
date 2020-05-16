@@ -66,12 +66,11 @@ Linux based ports
 
 Linux based ports refers to devices where a Linux kernel is used without any Android parts. The following devices are in this group:
 
-  * Pinephone https://gitlab.com/ubports/community-ports/pinephone
-  * Pinebook
-  * Pinetab
-  * Librem 5
-  * Raspberry Pie https://gitlab.com/ubports/community-ports/raspberrypi
+* Desktop PC (x86) https://devices.ubuntu-touch.io/device/x86/
+* Librem 5 (librem5)
+* Pinebook (pinebook)
+* Pinephone (pinephone) https://gitlab.com/ubports/community-ports/pinephone
+* Pinetab (pinetab)
+* Raspberry Pie (rpi) https://gitlab.com/ubports/community-ports/raspberrypi
 
 .. RPi https://gitlab.com/ubports/core/rootfs-builder-debos/blob/master/raspberrypi.yaml
-
-
