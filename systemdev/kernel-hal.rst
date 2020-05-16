@@ -13,9 +13,9 @@ This document is not useful if you would like to modify :doc:`../contribute/prei
 
 We distinguish a few different groups of Ubuntu Touch devices with respect to how the kernel and hardware abstraction is implemented:
 
-  * Android 5.1 based ports
-  * Halium based ports
-  * Linux kernel
+* Android 5.1 based ports
+* Halium based ports
+* Linux kernel
 
 Android 5.1 based ports
 -----------------------
@@ -24,46 +24,54 @@ Android 5.1 based ports of Ubuntu Touch consist of the Linux kernel for this dev
 
 For some devices continuous integration (CI) has been set up to build both the Kernel as well as the Android system. Other devices have to be built manually from their repositories. For a third group of devices, we do unfortunately, not have the source code available. The manufacturers of these devices provided the binaries builds instead.
 
-  * With CI:
-    * Nexus 5 (hammerhead)
-    * OnePlus One (bacon)
-    * Fairphone 2 (FP2)
-  * Manual builds:
-    * Nexus 4 (mako)
-    * Nexus 7 2013 Wifi (flo)
-  * Prebuilt binaries:
-    * Bq Aquaris E4.5 (krillin)
-    * Bq Aquaris E5 (vegetahd)
-    * Bq Aquaris M10 HD (cooler)
-    * Bq Aquaris M10 FHD (frieza)
-    * Meizu MX4 (arale)
-    * Meizu Pro 5 (turbo)
-    * Nexus 7 2013 GSM (deb) - Note: The deb build was not done by the manufacturer but by a community member. Unfortunately those repositories have disappeared, so only the prebuilt binaries remain available.
+* With CI
+   * Nexus 5 (hammerhead)
+   * OnePlus One (bacon)
+   * Fairphone 2 (FP2)
+* Manual builds
+   * Nexus 4 (mako)
+   * Nexus 7 2013 Wifi (flo)
+* Prebuilt binaries
+   * Bq Aquaris E4.5 (krillin)
+   * Bq Aquaris E5 (vegetahd)
+   * Bq Aquaris M10 HD (cooler)
+   * Bq Aquaris M10 FHD (frieza)
+   * Meizu MX4 (arale)
+   * Meizu Pro 5 (turbo)
+   * Nexus 7 2013 GSM (deb) - Note: The deb build was not done by the manufacturer but by a community member. Unfortunately those repositories have disappeared, so only the prebuilt binaries remain available.
 
-Further details can be found under  :doc:`Legacy porting <ubp-5.1>` and in the https://gitlab.com/ubports/community-ports
+Detailed steps for the three CI enabled devices can be found under  :doc:`HAL for Nexus 5, OnePlus One, and Fairphone 2 <ubp-5.1>`.
+
+For the Nexus 7 2013 (flo) head  over to the `flo community-ports repository<https://gitlab.com/ubports/community-ports/flo>`.
+
+TODO: For the Nexus 4 (make) .... dunno you tell me! binaries: https://gitlab.com/ubports/community-ports/mako
+
 
 Halium based ports
 ------------------
 
 Newer ports to Android devices are based on Halium. In some aspects Halium is similar to the 5.1 based ports:
 
-    It also uses the device specific fork of the Linux kernel provided by the manufacturer.
-    It also uses a minimal Android system to enable some hardware.
+* It also uses the device specific fork of the Linux kernel provided by the manufacturer.
+* It also uses a minimal Android system to enable some hardware.
 
 However, Halium permits a more generic way of porting to Android devices. This allows the work to be shared between multiple projects that bring different flavours of Linux systems to Android devices. Halium ports are also based on newer Android version 7.1 and above.
 
-Some examples of Halium ports are the Sony Xperia X, the Oneplus 3, etc. Basically all devices that are listed on devices.ubuntu-touch.io, expect those explicitly mentioned above as 5.1, or below as Linux based ports.
+Some examples of Halium ports are Sony Xperia X, Oneplus 3, etc. Basically all devices that are listed on `devices.ubuntu-touch.io <https://devices.ubuntu-touch.io>`_, expect those explicitly mentioned above as 5.1, or below as Linux based ports.
 
 Further details can be found under :doc:`Halium porting <../porting/introduction>`
 
 Linux based ports
 -----------------
 
-Linux based ports refers to devices where a recent upstream Linux kernel is used without any Android parts. The following devices are in this group:
+Linux based ports refers to devices where a Linux kernel is used without any Android parts. The following devices are in this group:
 
-  * Pinephone
+  * Pinephone https://gitlab.com/ubports/community-ports/pinephone
   * Pinebook
   * Pinetab
   * Librem 5
+  * Raspberry Pie https://gitlab.com/ubports/community-ports/raspberrypi
 
-Further details can be found in the Pinephone repository: https://gitlab.com/ubports/community-ports/pinephone
+.. RPi https://gitlab.com/ubports/core/rootfs-builder-debos/blob/master/raspberrypi.yaml
+
+

@@ -1,10 +1,12 @@
-Legacy porting
-==============
+hammerhead, bacon and FP2
+=========================
 
-TOOD: fix the title
-TODO: can we turn this into a build instruction for ALL 5.1 devs? e.g., what's the difference btw Opo and N7?
 
-This page documents the resources and process to build an Android compatibility image for the LG Nexus 5, OnePlus One, or Fairphone 2. This information should not be used to bring up any new devices, only to update these older images. All new ports should be created using Halium following the documentation starting at :doc:`introduction <../porting/introduction>`. See also the general overview for :doc:`kernel-hal`.
+This page documents how to build the Kernel and the Android image for the LG Nexus 5 (hammerhead), OnePlus One (bacon), or Fairphone 2 (FP2).
+
+.. note::
+
+    This information should not be used to bring up any new devices, only to update these older images. All new ports should be created using Halium following the documentation starting at :doc:`introduction <../porting/introduction>`.
 
 This document assumes you already have knowledge of building Android or Halium. It also assumes that your device has Ubuntu Touch installed.
 
