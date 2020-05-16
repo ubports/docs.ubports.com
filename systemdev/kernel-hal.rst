@@ -71,6 +71,5 @@ Linux based ports refers to devices where a Linux kernel is used without any And
 * Pinebook (pinebook)
 * Pinephone (pinephone) https://gitlab.com/ubports/community-ports/pinephone
 * Pinetab (pinetab)
-* Raspberry Pie (rpi) https://gitlab.com/ubports/community-ports/raspberrypi
+* Raspberry Pie (rpi) `blog post <https://ubports.com/blog/ubports-blog-1/post/raspberry-pi-266>`_, `Readme <https://gitlab.com/ubports/community-ports/raspberrypi>`_
 
-.. RPi https://gitlab.com/ubports/core/rootfs-builder-debos/blob/master/raspberrypi.yaml
