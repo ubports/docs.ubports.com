@@ -20,9 +20,9 @@ We distinguish a few different groups of Ubuntu Touch devices with respect to ho
 Android 5.1 based ports
 -----------------------
 
-Android 5.1 based ports of Ubuntu Touch consist of the Linux kernel for this device plus a minimal Android system that is used to enable all the hardware. Every device has it's own fork of the Linux kernel and they all quite old and heavily modified for the specific device by the manufacturer of that device.
+Android 5.1 based ports of Ubuntu Touch consist of the Linux kernel for this device plus a minimal Android system that is used to enable all the hardware. Every device has it's own fork of the Linux kernel. They are all heavily modified for the specific hardware used in that device. These forks are also based of quite old Linux kernel versions.
 
-For some devices there is continuous integration (CI) set up to build the Kernel and the Android system. Other devices have to be built manually from their repositories. For a third group of devices, we do not have the source code available. The manufacturers of these devices provided the prebuild binaries.
+For some devices continuous integration (CI) has been set up to build both the Kernel as well as the Android system. Other devices have to be built manually from their repositories. For a third group of devices, we do unfortunately, not have the source code available. The manufacturers of these devices provided the binaries builds instead.
 
   * With CI:
     * Nexus 5 (hammerhead)
@@ -45,7 +45,12 @@ Further details can be found under  :doc:`Legacy porting <ubp-5.1>` and in the h
 Halium based ports
 ------------------
 
-Newer ports to Android devices are based on Halium. In some aspects Halium is similar to the 5.1 based ports. It also uses the device specific fork of the Linux kernel provided by the manufacturer. And it also uses a minimal Android system to enable some hardware. Halium is different from the 5.1 based ports by being a more generic way of porting to Android devices. This allows the work to be shared between multiple projects that bring differnt flavours of Linux systems to Android devices. Halium uses newer versions of Android.
+Newer ports to Android devices are based on Halium. In some aspects Halium is similar to the 5.1 based ports:
+
+    It also uses the device specific fork of the Linux kernel provided by the manufacturer.
+    It also uses a minimal Android system to enable some hardware.
+
+However, Halium permits a more generic way of porting to Android devices. This allows the work to be shared between multiple projects that bring different flavours of Linux systems to Android devices. Halium ports are also based on newer Android version 7.1 and above.
 
 Some examples of Halium ports are the Sony Xperia X, the Oneplus 3, etc. Basically all devices that are listed on devices.ubuntu-touch.io, expect those explicitly mentioned above as 5.1, or below as Linux based ports.
 
