@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 15:16-0500\n"
-"PO-Revision-Date: 2020-05-16 07:24+0000\n"
+"PO-Revision-Date: 2020-05-20 15:24+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
@@ -1933,62 +1933,78 @@ msgstr "document_files"
 #: ../../appdev/platform/apparmor.rst:126
 msgid "Description: Can read and write to document files. This policy group is reserved for certain applications, such as document viewers. Developers should typically use the content_exchange policy group and API to access document files instead."
 msgstr ""
+"Описание: Чтение и запись файлов с документацией. Эта группа политик "
+"зарезервирована для определенных приложений, таких как средства просмотра "
+"документов. Разработчикам для доступа к файлам документации лучше "
+"использовать группу политик content_exchange и API."
 
 #: ../../appdev/platform/apparmor.rst:130
 msgid "This policy allows apps to read and write to the \"Documents\" folders in the user's home directory and external media."
 msgstr ""
+"Эта политика даёт приложению права на чтение и запись в папку «Документы», "
+"которая находится в домашнем каталоге пользователя или на внешних носителях."
 
 #: ../../appdev/platform/apparmor.rst:133
 msgid "document_files_read"
-msgstr ""
+msgstr "document_files_read"
 
 #: ../../appdev/platform/apparmor.rst:135
 msgid "Description: Can read all document files. This policy group is reserved for certain applications, such as document viewers. Developers should typically use the content_exchange policy group and API to access document files instead."
 msgstr ""
+"Описание: политика даёт возможность все файлы документов. Эта группа политик "
+"зарезервирована для определенных приложений - например, для просмотра "
+"документов. Разработчикам следует использовать  для доступа к файлам "
+"документов группу политик content_exchange и API."
 
 #: ../../appdev/platform/apparmor.rst:139
 msgid "This policy allows apps to read the \"Documents\" folders in the user's home directory and external media."
 msgstr ""
+"Эта политика даёт приложениям права доступа в папку «Документы» в домашнем "
+"каталоге пользователя и на внешних носителях."
 
 #: ../../appdev/platform/apparmor.rst:143
 msgid "history"
-msgstr ""
+msgstr "history"
 
 #: ../../appdev/platform/apparmor.rst:145
 msgid "Description: Can access the history-service. This policy group is reserved for vetted applications only in this version of the policy. A future version of the policy may move this out of reserved status."
 msgstr ""
+"Описание: дает доступ к  сервису истории действий пользователя. Эта группа "
+"политик зарезервирована для проверенных приложений (актуально только для "
+"текущей версии политики). В будущем резервный статус может быть снят."
 
 #: ../../appdev/platform/apparmor.rst:151
 msgid "keep-display-on"
-msgstr ""
+msgstr "keep-display-on"
 
 #: ../../appdev/platform/apparmor.rst:153
 msgid "Description: Can request keeping the screen on"
-msgstr ""
+msgstr "Описание: запрос оставить включенным экран устройства"
 
 #: ../../appdev/platform/apparmor.rst:159
 msgid "location"
-msgstr ""
+msgstr "location"
 
 #: ../../appdev/platform/apparmor.rst:161
 msgid "Description: Can access Location"
-msgstr ""
+msgstr "Описание: может запрашивать доступ к местоположению пользователя"
 
 #: ../../appdev/platform/apparmor.rst:165
 msgid "Allows an app to request access to the device's current location."
 msgstr ""
+"Приложение сможет запрашивать доступ к текущему местоположению устройства."
 
 #: ../../appdev/platform/apparmor.rst:169
 msgid "microphone"
-msgstr ""
+msgstr "microphone"
 
 #: ../../appdev/platform/apparmor.rst:171
 msgid "Description: Can access the microphone"
-msgstr ""
+msgstr "Описание: получение доступа к микрофону"
 
 #: ../../appdev/platform/apparmor.rst:177
 msgid "music_files"
-msgstr ""
+msgstr "music_files"
 
 #: ../../appdev/platform/apparmor.rst:179
 msgid "Description: Can read and write to music files. This policy group is reserved for certain applications, such as music players. Developers should typically use the content_exchange policy group and API to access music files instead."
