@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 15:16-0500\n"
-"PO-Revision-Date: 2020-05-20 15:24+0000\n"
+"PO-Revision-Date: 2020-05-24 04:24+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
@@ -1969,7 +1969,7 @@ msgstr "history"
 #: ../../appdev/platform/apparmor.rst:145
 msgid "Description: Can access the history-service. This policy group is reserved for vetted applications only in this version of the policy. A future version of the policy may move this out of reserved status."
 msgstr ""
-"Описание: дает доступ к  сервису истории действий пользователя. Эта группа "
+"Описание: дает доступ к сервису истории действий пользователя. Эта группа "
 "политик зарезервирована для проверенных приложений (актуально только для "
 "текущей версии политики). В будущем резервный статус может быть снят."
 
@@ -1983,7 +1983,7 @@ msgstr "Описание: запрос оставить включенным э�
 
 #: ../../appdev/platform/apparmor.rst:159
 msgid "location"
-msgstr "location"
+msgstr "location (местоположение)"
 
 #: ../../appdev/platform/apparmor.rst:161
 msgid "Description: Can access Location"
@@ -1996,7 +1996,7 @@ msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:169
 msgid "microphone"
-msgstr "microphone"
+msgstr "microphone (микрофон)"
 
 #: ../../appdev/platform/apparmor.rst:171
 msgid "Description: Can access the microphone"
