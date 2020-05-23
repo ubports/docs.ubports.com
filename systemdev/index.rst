@@ -1,11 +1,22 @@
 System software development
 ===========================
 
-This section has various documents which will teach you how to work with the packages included with Ubuntu Touch. This includes the Ubuntu UI Toolkit, Unity8, and all of the other software that makes Ubuntu Touch what it is.
+This section has various documents which will teach you how to work with the system level of Ubuntu Touch. This includes the Kernel, Android HAL, Ubuntu UI Toolkit, Unity8, and all of the other software that makes Ubuntu Touch what it is.
 
 This section does not cover most of the *applications* preinstalled on Ubuntu Touch. See :doc:`/contribute/preinstalled-apps` for more information on those.
 
-TODO:kernel
+Kernel and hardware abstraction
+-------------------------------
+
+This section covers how to build and install the Linux kernel and hardware abstraction layer for supported devices.
+
+.. toctree::
+   :maxdepth: 1
+   :name: toc-hal
+
+   kernel-hal
+   ubp-5.1
+
 
 System Software guides
 ----------------------
@@ -20,8 +31,6 @@ These guides will give you general instructions on building and testing your own
    :maxdepth: 1
    :name: toc-system-software-guides
 
-   kernel-hal
-   ubp-5.1
    testing-locally
    uploading-changes
 
