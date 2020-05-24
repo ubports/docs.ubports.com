@@ -7,7 +7,7 @@ Installing Ubuntu Touch 16.04 images on Halium
 
 Now that you've :doc:`built halium-boot <building-halium-boot>`, we're ready to install Ubuntu Touch on your device.
 
-In order to install Ubuntu Touch, you will need a recovery with Busybox, such as TWRP, installed on your phone. You will also need to ensure the /data partition is formatted with ext4 and does not have any encryption on it.
+In order to install Ubuntu Touch, you will need a recovery with Busybox, such as `TWRP <https://twrp.me/Devices/>`_, installed on your phone. You will also need to ensure the /data partition is formatted with ext4 and does not have any encryption on it. Boot into the recovery image you just installed, check and adjust as necessary.
 
 Install halium-boot
 --------------------
@@ -16,6 +16,9 @@ We'll need to install the halium-boot image before installing an image. Reboot y
 
     cout
     fastboot flash boot halium-boot.img
+    
+.. Note::
+    Samsung devices: Flashing halium-boot.img on Samsung devices is done using the Heimdall flashing utility (on Linux) or the Odin utility (on Windows) after first bringing the device into 'download mode'. Follow the instructions for the utility you are using, including the specific flashing command for flashing the boot partition. The device should boot directly into recovery once halium-boot.img has been flashed. Install system.img and rootfs (below) with the device in recovery mode.
 
 Download the rootfs
 -------------------
