@@ -74,7 +74,7 @@ Linux based port refers to devices where a Linux kernel is used without any Andr
 * `Desktop PC (x86) <https://devices.ubuntu-touch.io/device/x86/>`_
 * Librem 5 (librem5)
 * Pinebook (pinebook)
-* `Pinephone (pinephone) <https://gitlab.com/ubports/community-ports/pinephone>`_
+* :doc:`Pinephone (pinephone) <kernel-pinephone>`
 * Pinetab (pinetab)
 * `Raspberry Pie (rpi) <https://gitlab.com/ubports/community-ports/raspberrypi>`_ (see also this `blog post <https://ubports.com/blog/ubports-blog-1/post/raspberry-pi-266>`_)
 
