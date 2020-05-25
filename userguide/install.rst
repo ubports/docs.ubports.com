@@ -150,7 +150,7 @@ Meizu devices are pretty much stuck on Flyme. While the MX4 can be flashed succe
 8. Turn your device completely off, but do not connect it yet.
 9. Press the button labeled "Download".
 10. Perform a final sanity-check that you selected the "Firmware Upgrade" option, not "Download Only".
-11. Make sure your device is off and connect it to your PC. Don't use a USB 3.0 port, since that's known to cause communication issues with your device.
+11. Make sure your device is off and hold the volume down.then connect it to your PC. Don't use a USB 3.0 port, since that's known to cause communication issues with your device.
 12. `Magic <https://en.wikipedia.org/wiki/Clarke's_three_laws>`_ happens. Wait till all the progress bars ended.
 
 .. note::
