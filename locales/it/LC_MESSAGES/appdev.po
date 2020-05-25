@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2019-01-21 14:32+0000\n"
+"PO-Revision-Date: 2020-05-14 16:24+0000\n"
 "Last-Translator: Mike <miguel2000@livecom.it>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/it/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.1.1\n"
+"X-Generator: Weblate 3.8\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../appdev/guides/contenthub.rst:4
@@ -70,7 +70,6 @@ msgstr ""
 "destinazione del file esportato)"
 
 #: ../../appdev/guides/contenthub.rst:20
-#, fuzzy
 msgid ""
 "``ContentHandler.Share`` (The app selected is going to be the app from witch "
 "the file is going to be shared from)"
@@ -79,7 +78,6 @@ msgstr ""
 "condiviso)"
 
 #: ../../appdev/guides/contenthub.rst:23
-#, fuzzy
 msgid "Importing"
 msgstr "Importazione"
 
@@ -110,7 +108,6 @@ msgid ""
 msgstr ""
 
 #: ../../appdev/guides/contenthub.rst:50
-#, fuzzy
 msgid "Exporting"
 msgstr "Esportazione"
 
@@ -130,6 +127,8 @@ msgid ""
 "Tapping on the download icon we will get a Content Hub to *save* the game "
 "file (which is actually an export)."
 msgstr ""
+"Cliccando sull'icona di download otterremo un Content Hub per *salvare* il "
+"file del gioco (che in pratica è un esportazione)."
 
 #: ../../appdev/guides/contenthub.rst:63
 msgid ""
@@ -137,6 +136,10 @@ msgid ""
 "we are sending a file of type ``All`` (`see the Install Page code <https://"
 "gitlab.com/cibersheep/gelek/blob/master/app/InstallPage.qml#L38>`_)."
 msgstr ""
+"Il file del gioco è un file di tipo ``glksave``. Diremo al Content Hub che "
+"stiamo inviando un file di tipo ``All`` (`guardare la pagina di "
+"installazione <https://gitlab.com/cibersheep/gelek/blob/master/app/"
+"InstallPage.qml#L38>`_)."
 
 #: ../../appdev/guides/contenthub.rst:76
 msgid ""
@@ -144,6 +147,10 @@ msgid ""
 "able to receive unmarked file types. ``handler`` is ``ContentHandler."
 "Destination``, so the app selected should store the saved game."
 msgstr ""
+"``contentType`` è ``ContentType.All``, quindi vedremo solo app capaci di "
+"ricevere file di tipo non definito. ``handler`` è "
+"``ContentHandler.Destination``, quindi l'app selezionata dovrebbe "
+"memorizzare il gioco salvato."
 
 #: ../../appdev/guides/contenthub.rst:78
 msgid ""
@@ -153,7 +160,6 @@ msgstr ""
 "Cliccando sul File Manager salveremo il gioco nella cartella da noi scelta."
 
 #: ../../appdev/guides/contenthub.rst:81
-#, fuzzy
 msgid "Sharing"
 msgstr "Condivisione"
 
@@ -189,7 +195,6 @@ msgid ""
 msgstr ""
 
 #: ../../appdev/guides/contenthub.rst:108
-#, fuzzy
 msgid "Let’s check its manifest.json"
 msgstr "Controlliamo il suo manifest.json"
 
@@ -201,19 +206,17 @@ msgid ""
 msgstr ""
 
 #: ../../appdev/guides/contenthub.rst:131
-#, fuzzy
 msgid ""
 "This means, the OpenStore will be the destination for *all* ``ContentTypes``."
 msgstr ""
-"Quest significa che l'OpenStore sarà la destinazione per *tutti* i "
+"Questo significa che l'OpenStore sarà la destinazione per *tutti* i "
 "``ContentTypes``."
 
 #: ../../appdev/guides/contenthub.rst:133
 msgid "What about uMatriks? Let’s see its ``content-hub.json``"
-msgstr "Approposito di uMatriks? Si veda il suo ``content-hub.json``."
+msgstr "A proposito di uMatriks? Vediamo il suo ``content-hub.json``"
 
 #: ../../appdev/guides/contenthub.rst:161
-#, fuzzy
 msgid ""
 "So, with this example, uMatriks will be able to be the destination, source "
 "and share app for all kinds of ``ContentType``. What about the other hooks "
@@ -267,7 +270,6 @@ msgstr ""
 "piattaforma aperta come Ubuntu Touch."
 
 #: ../../appdev/guides/cookbook.rst:17
-#, fuzzy
 msgid ""
 "The resources listed here do not necessarily represent the officially "
 "endorsed way of developing applications for Ubuntu Touch, but are "
@@ -667,9 +669,8 @@ msgid ""
 msgstr ""
 
 #: ../../appdev/index.rst:68
-#, fuzzy
 msgid "Documentation"
-msgstr "Introduzione"
+msgstr "Documentazione"
 
 #: ../../appdev/index.rst:70
 msgid "`QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__"
