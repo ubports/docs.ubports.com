@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 15:16-0500\n"
-"PO-Revision-Date: 2020-05-20 15:24+0000\n"
+"PO-Revision-Date: 2020-05-25 18:35+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
@@ -1969,7 +1969,7 @@ msgstr "history"
 #: ../../appdev/platform/apparmor.rst:145
 msgid "Description: Can access the history-service. This policy group is reserved for vetted applications only in this version of the policy. A future version of the policy may move this out of reserved status."
 msgstr ""
-"Описание: дает доступ к  сервису истории действий пользователя. Эта группа "
+"Описание: дает доступ к сервису истории действий пользователя. Эта группа "
 "политик зарезервирована для проверенных приложений (актуально только для "
 "текущей версии политики). В будущем резервный статус может быть снят."
 
@@ -1983,7 +1983,7 @@ msgstr "Описание: запрос оставить включенным э�
 
 #: ../../appdev/platform/apparmor.rst:159
 msgid "location"
-msgstr "location"
+msgstr "location (местоположение)"
 
 #: ../../appdev/platform/apparmor.rst:161
 msgid "Description: Can access Location"
@@ -1996,7 +1996,7 @@ msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:169
 msgid "microphone"
-msgstr "microphone"
+msgstr "microphone (микрофон)"
 
 #: ../../appdev/platform/apparmor.rst:171
 msgid "Description: Can access the microphone"
@@ -2009,26 +2009,39 @@ msgstr "music_files"
 #: ../../appdev/platform/apparmor.rst:179
 msgid "Description: Can read and write to music files. This policy group is reserved for certain applications, such as music players. Developers should typically use the content_exchange policy group and API to access music files instead."
 msgstr ""
+"Описание: возможность читать и записывать музыкальные файлы. Эта группа "
+"политик зарезервирована для определенных приложений - например,  для "
+"музыкальных проигрывателей. Обычно, разработчикам для доступа к музыкальным "
+"файлам следует использовать группу политик content_exchange и API."
 
 #: ../../appdev/platform/apparmor.rst:183
 msgid "The music_files policy group allows an app to read or write to the Music directories in the user's home folder or on external media."
 msgstr ""
+"Группа политик music_files позволяет приложению читать или записывать файлы "
+"в каталог Music в домашней папке пользователя или на внешнем носителе."
 
 #: ../../appdev/platform/apparmor.rst:187
 msgid "music_files_read"
-msgstr ""
+msgstr "music_files_read"
 
 #: ../../appdev/platform/apparmor.rst:189
 msgid "Description: Can read all music files. This policy group is reserved for certain applications, such as music players. Developers should typically use the content_exchange policy group and API to access music files instead."
 msgstr ""
+"Описание: чтение всех музыкальных файлов. Эта группа политик зарезервирована "
+"для определенных приложений - например, для музыкальных проигрывателей. "
+"Обычно, разработчикам для доступа к музыкальным файлам следует использовать "
+"группу политик content_exchange и API."
 
 #: ../../appdev/platform/apparmor.rst:193
 msgid "The music_files_read policy group allows an app to read the Music directories in the user's home folder or on external media."
 msgstr ""
+"Группа политик music_files_read позволяет приложению читать каталоги музыки "
+"в домашней папке пользователя или на внешнем носителе."
 
 #: ../../appdev/platform/apparmor.rst:197
+#, fuzzy
 msgid "networking"
-msgstr ""
+msgstr "networking (доступ к сети)"
 
 #: ../../appdev/platform/apparmor.rst:199
 msgid "Description: Can access the network"
