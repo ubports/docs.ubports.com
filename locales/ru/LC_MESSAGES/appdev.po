@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 15:16-0500\n"
-"PO-Revision-Date: 2020-05-25 18:35+0000\n"
+"PO-Revision-Date: 2020-05-27 07:24+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
@@ -2045,31 +2045,43 @@ msgstr "networking (доступ к сети)"
 
 #: ../../appdev/platform/apparmor.rst:199
 msgid "Description: Can access the network"
-msgstr ""
+msgstr "Описание:возможность получения доступа к сети"
 
 #: ../../appdev/platform/apparmor.rst:203
 msgid "The networking policy group allows an app to contact network devices and use the `download manager`_."
 msgstr ""
+"Группа сетевых политик позволяет приложению связываться с сетевыми "
+"устройствами и использовать диспетчер загрузки - `download manager`_.."
 
 #: ../../appdev/platform/apparmor.rst:207
 msgid "picture_files"
-msgstr ""
+msgstr "picture_files"
 
 #: ../../appdev/platform/apparmor.rst:209
 msgid "Description: Can read and write to picture files. This policy group is reserved for certain applications, such as gallery applications. Developers should typically use the content_exchange policy group and API to access picture files instead."
 msgstr ""
+"Описание: запись и чтение файлов с изображениями. Эта группа политик "
+"зарезервирована для определенных приложений, таких как \"Галерея\". "
+"Разработчикам следует использовать группу политик content_exchange и API для "
+"доступа к файлам изображений."
 
 #: ../../appdev/platform/apparmor.rst:213
 msgid "The picture_files policy group allows an app to read and write to the Pictures directories in the user's home folder or on external media."
 msgstr ""
+"Группа политик picture_files даёт приложению права на запись и чтение в "
+"каталог Pictures в домашней папке пользователя или на внешнем носителе."
 
 #: ../../appdev/platform/apparmor.rst:217
 msgid "picture_files_read"
-msgstr ""
+msgstr "picture_files_read"
 
 #: ../../appdev/platform/apparmor.rst:219
 msgid "Description: Can read all picture files. This policy group is reserved for certain applications, such as gallery applications. Developers should typically use the content_exchange policy group and API to access picture files instead."
 msgstr ""
+"Описание: доступ на чтение всех файлов изображений. Эта группа политик "
+"зарезервирована для определенных приложений, например для \"Галереи\". "
+"Разработчикам следует использовать группу политик content_exchange и API для "
+"доступа к файлам изображений."
 
 #: ../../appdev/platform/apparmor.rst:223
 msgid "The picture_files_read policy group allows an app to read the Pictures directories in the user's home folder or on external media."
