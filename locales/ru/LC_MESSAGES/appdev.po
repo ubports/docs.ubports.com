@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 15:16-0500\n"
-"PO-Revision-Date: 2020-05-27 07:24+0000\n"
+"PO-Revision-Date: 2020-05-28 13:24+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
@@ -2086,74 +2086,93 @@ msgstr ""
 #: ../../appdev/platform/apparmor.rst:223
 msgid "The picture_files_read policy group allows an app to read the Pictures directories in the user's home folder or on external media."
 msgstr ""
+"Группа политик picture_files_read дает приложению приложению права на чтение "
+"каталога Pictures в домашней папке пользователя или на внешнем носителе."
 
 #: ../../appdev/platform/apparmor.rst:227
 msgid "push-notification-client"
-msgstr ""
+msgstr "push-notification-client"
 
 #: ../../appdev/platform/apparmor.rst:229
 msgid "Description: Can use push notifications as a client"
-msgstr ""
+msgstr "Описание: возможность использовать push-уведомления в качестве клиента"
 
 #: ../../appdev/platform/apparmor.rst:235
 msgid "sensors"
-msgstr ""
+msgstr "sensors (сенсоры)"
 
 #: ../../appdev/platform/apparmor.rst:237
 msgid "Description: Can access the sensors"
-msgstr ""
+msgstr "Описание: доступ к сенсорам"
 
 #: ../../appdev/platform/apparmor.rst:241
+#, fuzzy
 msgid "Allows apps to access `device sensors`_"
-msgstr ""
+msgstr "дает приложениям доступ к  `сенсорам устройства`_"
 
 #: ../../appdev/platform/apparmor.rst:245
 msgid "usermetrics"
-msgstr ""
+msgstr "usermetrics (пользовательская метрика)"
 
 #: ../../appdev/platform/apparmor.rst:247
 msgid "Description: Can use UserMetrics to update the InfoGraphic"
-msgstr ""
+msgstr "Описание: можно использовать UserMetrics для обновления InfoGraphic"
 
 #: ../../appdev/platform/apparmor.rst:251
 msgid "Allows an app to write metrics to the UserMetrics service so they can be displayed on the InfoGraphic."
 msgstr ""
+"Даёт приложению права на запись  данных метрики в сервис UserMetrics, "
+"которые затем отображаются на InfoGraphic."
 
 #: ../../appdev/platform/apparmor.rst:255
 msgid "video"
-msgstr ""
+msgstr "video (видео)"
 
 #: ../../appdev/platform/apparmor.rst:257
 msgid "Description: Can play video (allows playing remote content via media-hub)"
 msgstr ""
+"Описание: возможность воспроизведения видео (возможно просматривать видео, "
+"расположенное на других серверах через медиа-хаб)"
 
 #: ../../appdev/platform/apparmor.rst:263
 msgid "video_files"
-msgstr ""
+msgstr "video_files"
 
 #: ../../appdev/platform/apparmor.rst:265
 msgid "Description: Can read and write to video files. This policy group is reserved for certain applications, such as gallery applications. Developers should typically use the content_exchange policy group and API to access video files instead."
 msgstr ""
+"Описание: возможность читать и записывать видео файлы. Эта группа политик "
+"зарезервирована для определенных приложений, например для \"Галереи\". "
+"Разработчикам следует использовать группу политик content_exchange и API для "
+"доступа к видеофайлам."
 
 #: ../../appdev/platform/apparmor.rst:269
 msgid "The video_files policy group allows an app to read and write to the Videos directories in the user's home folder or on external media."
 msgstr ""
+"Группа политик video_files дает приложению права на чтение и запись в "
+"каталог «Video» в домашней папке пользователя или на внешнем носителе."
 
 #: ../../appdev/platform/apparmor.rst:273
 msgid "video_files_read"
-msgstr ""
+msgstr "video_files_read"
 
 #: ../../appdev/platform/apparmor.rst:275
 msgid "Description: Can read all video files. This policy group is reserved for certain applications, such as gallery applications. Developers should typically use the content_exchange policy group and API to access video files instead."
 msgstr ""
+"Описание: доступ на чтение всех видеофайлов. Эта группа политик "
+"зарезервирована для определенных приложений, таких как \" галерея\". "
+"Разработчикам следует использовать группу политик content_exchange и API для "
+"доступа к видеофайлам ."
 
 #: ../../appdev/platform/apparmor.rst:279
 msgid "The video_files_read policy group allows an app to read the Videos directories in the user's home folder or on external media."
 msgstr ""
+"Группа политик video_files_read дает приложению права на чтение директорий "
+"«Video» в домашней папке пользователя или на внешнем носителе."
 
 #: ../../appdev/platform/apparmor.rst:283
 msgid "webview"
-msgstr ""
+msgstr "webview"
 
 #: ../../appdev/platform/apparmor.rst:285
 msgid "Description: Can use the UbuntuWebview"
