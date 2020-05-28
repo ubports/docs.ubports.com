@@ -44,7 +44,7 @@ The eMMC has two partitions: pmOS_boot and pmOS_root. The microSD card has 10 pa
 Building the kernel
 -------------------
 
-To install dependencies, get the source code, configure and build it run the following::
+To install dependencies, get the `source code <https://gitlab.com/pine64-org/linux/-/tree/pine64-kernel-ubports>`_, configure and build it run the following::
 
   sudo apt install flex bison gcc-aarch64-linux-gnu libssl-dev
   git clone -b pine64-kernel-ubports git@gitlab.com:pine64-org/linux.git
