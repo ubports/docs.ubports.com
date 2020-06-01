@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 15:16-0500\n"
-"PO-Revision-Date: 2020-05-30 14:24+0000\n"
+"PO-Revision-Date: 2020-06-03 09:24+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
@@ -2217,82 +2217,112 @@ msgstr "Файл политики профиля AppArmor"
 #: ../../appdev/platform/click.rst:29
 msgid "Contains which policy the app needs to work properly. See `Security and app isolation`_ below for more information on this file."
 msgstr ""
+"Здесь указано, с какой политикой приложение должно работать правильно. См. "
+"ниже раздел`Безопасность и изоляция приложения`_  для получения "
+"дополнительной информации об этом файле."
 
 #: ../../appdev/platform/click.rst:53
 msgid "``.desktop`` file"
-msgstr ""
+msgstr "файл ``.desktop`"
 
 #: ../../appdev/platform/click.rst:32
 msgid "The launcher file will tell UT how to launch the app, which name and icon to display on the home screen, and some other properties."
 msgstr ""
+"Файл лаунчера сообщит UT, как запускать приложение, какое название и значок "
+"отобразить на домашнем экране, а также некоторые другие свойства."
 
 #: ../../appdev/platform/click.rst:34
 msgid "Example of ``app.desktop``::"
-msgstr ""
+msgstr "Пример файла ``app.desktop``::"
 
 #: ../../appdev/platform/click.rst:44
 msgid "Non exhaustive list of properties:"
-msgstr ""
+msgstr "Неполный список свойств:"
 
 #: ../../appdev/platform/click.rst:46
 msgid "Name: Application title has shown in the dash"
-msgstr ""
+msgstr "Name:заголовок приложения показан в графе \"-\""
 
 #: ../../appdev/platform/click.rst:47
 msgid "Exec: Path to the executable file"
-msgstr ""
+msgstr "Exec: путь к исполняемому файлу"
 
 #: ../../appdev/platform/click.rst:48
 msgid "Icon: Path to the icon to display"
-msgstr ""
+msgstr "Icon: Путь к иконке для вывода на экран устройства"
 
 #: ../../appdev/platform/click.rst:49
 msgid "Terminal: ``false`` if will not run in terminal window"
 msgstr ""
+"Terminal: если установлено значение ``false``, то приложение не будет "
+"запускаться в окне терминала"
 
 #: ../../appdev/platform/click.rst:50
 msgid "Type: Specifies the type of the launcher file. The type can be Application, Link or Directory."
 msgstr ""
+"Type:Определяет тип исполняемого файла. Это может быть приложение, ссылка "
+"или каталог."
 
 #: ../../appdev/platform/click.rst:51
 msgid "X-Ubuntu-Touch: ``true`` to make the app visible"
 msgstr ""
+"X-Ubuntu-Touch:  должно быть установлено значение ``true``, чтобы сделать "
+"приложение видимым"
 
 #: ../../appdev/platform/click.rst:52
 msgid "X-Ubuntu-XMir-Enable: ``true`` if your app is built for X"
 msgstr ""
+"X-Ubuntu-XMir-Enable: должно быть установлено значение ``true``, если "
+"приложение скомпилировано для X"
 
 #: ../../appdev/platform/click.rst:53
 msgid "X-Ubuntu-Supported-Orientations: ``landscape`` or ``portrait`` to force your app start in landscape mode and portrait mode respectively."
 msgstr ""
+"X-Ubuntu-Supported-Orientations: опции ``landscape`` или ``portrait``  "
+"отвечают за запуск приложения в ландшафтном или портретном режимах "
+"соответственно."
 
 #: ../../appdev/platform/click.rst:60
 msgid "Security and app isolation"
-msgstr ""
+msgstr "Безопасность и изоляция приложения"
 
 #: ../../appdev/platform/click.rst:62
 msgid "All Ubuntu apps are confined respecting AppArmor access control mechanism (see `Application Confinement <https://wiki.ubuntu.com/SecurityTeam/Specifications/ApplicationConfinement#App_confinement_with_AppArmor>`_) , meaning they only have access to their own resources and are isolated from other apps and parts of the system. The developer must declare which policy groups are needed for the app or scope to function properly with an apparmor ``.json`` file."
 msgstr ""
+"Работа всех приложений Ubuntu ограничена соблюдением механизма контроля "
+"доступа AppArmor (подробнее смотрите раздел  `Application Confinement "
+"<https://wiki.ubuntu.com/SecurityTeam/Specifications/"
+"ApplicationConfinement#App_confinement_with_AppArmor>`_). Это значит, что "
+"они имеют доступ только к своим ресурсам и изолированы от других приложений "
+"и частей системы. Разработчик должен указать, какие группы политик "
+"необходимы для правильной работы приложения в файле политики apparmor  с "
+"расширением ``.json``."
 
 #: ../../appdev/platform/click.rst:64
 msgid "Example ``apparmor.json`` file::"
-msgstr ""
+msgstr "Пример файла ``apparmor.json``::"
 
 #: ../../appdev/platform/click.rst:76
 msgid "For a full list of available policy groups, see :doc:`apparmor`."
-msgstr ""
+msgstr "Полный список доступных групп политик см. в разделе :doc: `apparmor`."
 
 #: ../../appdev/platform/index.rst:6
+#, fuzzy
 msgid "Here are Ubuntu Touch platforms key topics when you want to extend your app with Ubuntu Touch ecosystem:"
 msgstr ""
+"Список ключевых тем о платформе Ubuntu Touch, которые необходимо изучить, "
+"если планируется расширить приложение с помощью экосистемы Ubuntu Touch:"
 
 #: ../../appdev/platform/index.rst:9
 msgid "Content Hub"
-msgstr ""
+msgstr "Content Hub"
 
 #: ../../appdev/platform/index.rst:9
 msgid "Each application can expose content outside its sandbox, giving the user precise control over what can be imported, exported or shared with the world and other apps."
 msgstr ""
+"Каждое приложение может предоставлять контент за пределами \"песочницы\", "
+"предоставляя пользователю полный контроль над тем, что можно импортировать, "
+"экспортировать или делиться с  другими приложениями и пользователями."
 
 #: ../../appdev/platform/index.rst:12
 msgid "By using a push server and a companion client, instantly serve users with the latest information from their network and apps."
