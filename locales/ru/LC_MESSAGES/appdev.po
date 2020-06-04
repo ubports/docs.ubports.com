@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 15:16-0500\n"
-"PO-Revision-Date: 2020-06-03 09:24+0000\n"
+"PO-Revision-Date: 2020-06-06 06:24+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
@@ -2327,50 +2327,72 @@ msgstr ""
 #: ../../appdev/platform/index.rst:12
 msgid "By using a push server and a companion client, instantly serve users with the latest information from their network and apps."
 msgstr ""
+"с помощью push-сервер (севера уведомлений) и соответствующего клиента можно "
+"мгновенно  предоставлять пользователям самую свежую информацию из  сети и "
+"приложений."
 
 #: ../../appdev/platform/index.rst:15
+#, fuzzy
 msgid "URL dispatcher"
-msgstr ""
+msgstr "URL-диспетчер"
 
 #: ../../appdev/platform/index.rst:15
+#, fuzzy
 msgid "Help users navigate between your apps and drive their journey with the URL dispatcher."
 msgstr ""
+"Помогает пользователям перемещаться между  приложениями и сетью  с помощью "
+"диспетчера URL."
 
 #: ../../appdev/platform/index.rst:19
+#, fuzzy
 msgid "Online accounts"
-msgstr ""
+msgstr "online-аккаунты (учётные записи)"
 
 #: ../../appdev/platform/index.rst:18
 msgid "Simplify user access to online services by integrating with the online accounts API. Accounts added by the user on the device are registered in a centralized hub, allowing other apps to re-use them."
 msgstr ""
+"Можно упростить пользователям доступ к онлайн-сервисам за счет интеграции с "
+"API онлайн-аккаунтов. Учетные записи, добавленные пользователем на "
+"устройство, регистрируются в централизованном хабе, и это позволяет другим "
+"приложениям использовать их повторно."
 
 #: ../../appdev/platform/index.rst:21
 msgid "`Read the docs <https://docs.ubuntu.com/phone/en/platform/>`__"
 msgstr ""
+"`Подробнее читайте в документации <https://docs.ubuntu.com/phone/en/platform/"
+">`__"
 
 #: ../../appdev/platform/index.rst:24
 msgid "Packaging your app"
-msgstr ""
+msgstr "Формирование пакета приложения"
 
 #: ../../appdev/platform/index.rst:26
 msgid "Here you will get some informations about the confinment model and the packaging system:"
 msgstr ""
+"Здесь можно найти информацию о модели ограничений и системе сборки пакетов:"
 
 #: ../../appdev/publishing/index.rst:4
+#, fuzzy
 msgid "App publishing guides"
-msgstr ""
+msgstr "Руководства по публикации приложения."
 
 #: ../../appdev/publishing/index.rst:6
 msgid "We are currently working on expanding our list of publishing guides. In the mean time you can get started over at the `OpenStore's submission page <https://open-store.io/submit>`__."
 msgstr ""
+"В настоящее время мы работаем над дополнением  списка руководств по "
+"дистрибуции приложений. Пока всю доступную информацию можно прочитать в "
+"разделе `OpenStore's submission page <https://open-store.io/submit>`__."
 
 #: ../../appdev/publishing/index.rst:8
 msgid "If you are interested in helping create developer guides check out our `GitLab Project <https://gitlab.com/ubports/ux/development-resources>`__."
 msgstr ""
+"Если Вы хотите принять участие в создании руководств для разработчиков, "
+"ознакомьтесь с нашим проектом на  GitLab <https://gitlab.com/ubports/ux/"
+"development-resources> `__."
 
 #: ../../appdev/samples/index.rst:4
 msgid "Sample Apps"
-msgstr ""
+msgstr "Примеры приложений"
 
 #: ../../appdev/samples/index.rst:6
 msgid "We are currently working on expanding our list of sample apps. In the mean time many apps on the `OpenStore <https://open-store.io/>`__ are open source and can be used as a reference."
