@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 15:16-0500\n"
-"PO-Revision-Date: 2020-06-06 06:24+0000\n"
+"PO-Revision-Date: 2020-06-12 13:24+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
@@ -2392,56 +2392,73 @@ msgstr ""
 
 #: ../../appdev/samples/index.rst:4
 msgid "Sample Apps"
-msgstr "Примеры приложений"
+msgstr "Демонстрационные приложения"
 
 #: ../../appdev/samples/index.rst:6
 msgid "We are currently working on expanding our list of sample apps. In the mean time many apps on the `OpenStore <https://open-store.io/>`__ are open source and can be used as a reference."
 msgstr ""
+"В настоящее время мы работаем над расширением списка демонстрационных "
+"приложений. В то же время многие приложения в OpenStore <https://open-store."
+"io/> `__ имеют открытый исходный код и могут использоваться в качестве "
+"справочного материала."
 
 #: ../../appdev/samples/index.rst:8
 msgid "If you are interested in helping create sample apps check out our `GitLab Project <https://gitlab.com/ubports/ux/development-resources>`__."
 msgstr ""
+"Если Вам интересно создавать демо-приложения, ознакомьтесь с нашим проектом "
+"на GitLab <https://gitlab.com/ubports/ux/development-resources> `__."
 
 #: ../../appdev/webapp/guide.rst:2
 #: ../../appdev/webapp/index.rst:15
 msgid "Guide"
-msgstr ""
+msgstr "Инструкция"
 
 #: ../../appdev/webapp/guide.rst:5
 msgid "How the webapp fits into the shell"
-msgstr ""
+msgstr "Как веб-приложение встраивается в оболочку"
 
 #: ../../appdev/webapp/guide.rst:7
 msgid "A web app displays in a webview inside a webapp-container that runs as an Ubuntu app in the Ubuntu/Unity shell."
 msgstr ""
+"Веб-приложение представлено в формате в веб-контейнера , который запускается "
+"как приложение Ubuntu в оболочке Ubuntu/Unity."
 
 #: ../../appdev/webapp/guide.rst:9
 msgid "Taking a closer look:"
-msgstr ""
+msgstr "Рассмотрим поближе:"
 
 #: ../../appdev/webapp/guide.rst:11
 msgid "At the innermost level, there is a website that the developer identifies by URL. The website is rendered and runs in an Oxide webview. Oxide is a Blink/Chrome webview that is customized for Ubuntu. The Oxide webview runs and displays in the webapp-container. The webapp-container is the executable app runtime that is integrated with the Ubuntu/unity shell."
 msgstr ""
+"На самом внутреннем уровне находится веб-сайт, который разработчик "
+"идентифицирует по URL. Сайт открывается и работает в веб-браузере Oxide. "
+"Oxide - это веб-просмотр на основе ядра  Blink/Chrome, адаптированный для "
+"Ubuntu. Веб-приложение Oxide запускается и отображается в веб-контейнере. "
+"Контейнер webapp - это интегрированная  для работы с оболочкой среда "
+"исполняемого приложения Ubuntu/Unity."
 
 #: ../../appdev/webapp/guide.rst:16
 msgid "Launching"
-msgstr ""
+msgstr "Запуск"
 
 #: ../../appdev/webapp/guide.rst:18
 msgid "You can launch a webapp from the terminal with:::"
-msgstr ""
+msgstr "Можно запустить веб-приложение из терминала командой:::"
 
 #: ../../appdev/webapp/guide.rst:22
 msgid "For example:::"
-msgstr ""
+msgstr "Например:::"
 
 #: ../../appdev/webapp/guide.rst:26
 msgid "This simple form works, but almost every webapp also uses other features, such as URL containment with URL patterns as described below."
 msgstr ""
+"Эта простая форма работает, но почти каждое веб-приложение также использует "
+"другие функции. Например, ограничение URL-адресов шаблонами URL-адресов, как "
+"описано ниже."
 
 #: ../../appdev/webapp/guide.rst:29
 msgid "User interface"
-msgstr ""
+msgstr "Пользовательский интерфейс"
 
 #: ../../appdev/webapp/guide.rst:31
 msgid "A webapp generally fills the entire app screen space, without the need of the UI controls generally found on standard browsers."
