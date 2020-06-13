@@ -38,6 +38,11 @@ Next, you'll need to turn on Developer Mode.
 
 If there's a device in the list here (The command doesn't print "List of devices attached" and a blank line), you are able to use ADB successfully. If not, continue to the next section.
 
+Adb shell commands::
+
+	adb shell getprop - Lists all system properties and their values.
+	adb shell setprop [property] [value] - Sets the value to a specific property.
+
 Add hardware IDs
 ----------------
 
