@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 15:16-0500\n"
-"PO-Revision-Date: 2020-05-20 15:24+0000\n"
+"PO-Revision-Date: 2020-06-12 13:24+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
@@ -1969,7 +1969,7 @@ msgstr "history"
 #: ../../appdev/platform/apparmor.rst:145
 msgid "Description: Can access the history-service. This policy group is reserved for vetted applications only in this version of the policy. A future version of the policy may move this out of reserved status."
 msgstr ""
-"Описание: дает доступ к  сервису истории действий пользователя. Эта группа "
+"Описание: дает доступ к сервису истории действий пользователя. Эта группа "
 "политик зарезервирована для проверенных приложений (актуально только для "
 "текущей версии политики). В будущем резервный статус может быть снят."
 
@@ -1983,7 +1983,7 @@ msgstr "Описание: запрос оставить включенным э�
 
 #: ../../appdev/platform/apparmor.rst:159
 msgid "location"
-msgstr "location"
+msgstr "location (местоположение)"
 
 #: ../../appdev/platform/apparmor.rst:161
 msgid "Description: Can access Location"
@@ -1996,7 +1996,7 @@ msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:169
 msgid "microphone"
-msgstr "microphone"
+msgstr "microphone (микрофон)"
 
 #: ../../appdev/platform/apparmor.rst:171
 msgid "Description: Can access the microphone"
@@ -2009,335 +2009,456 @@ msgstr "music_files"
 #: ../../appdev/platform/apparmor.rst:179
 msgid "Description: Can read and write to music files. This policy group is reserved for certain applications, such as music players. Developers should typically use the content_exchange policy group and API to access music files instead."
 msgstr ""
+"Описание: возможность читать и записывать музыкальные файлы. Эта группа "
+"политик зарезервирована для определенных приложений - например,  для "
+"музыкальных проигрывателей. Обычно, разработчикам для доступа к музыкальным "
+"файлам следует использовать группу политик content_exchange и API."
 
 #: ../../appdev/platform/apparmor.rst:183
 msgid "The music_files policy group allows an app to read or write to the Music directories in the user's home folder or on external media."
 msgstr ""
+"Группа политик music_files позволяет приложению читать или записывать файлы "
+"в каталог Music в домашней папке пользователя или на внешнем носителе."
 
 #: ../../appdev/platform/apparmor.rst:187
 msgid "music_files_read"
-msgstr ""
+msgstr "music_files_read"
 
 #: ../../appdev/platform/apparmor.rst:189
 msgid "Description: Can read all music files. This policy group is reserved for certain applications, such as music players. Developers should typically use the content_exchange policy group and API to access music files instead."
 msgstr ""
+"Описание: чтение всех музыкальных файлов. Эта группа политик зарезервирована "
+"для определенных приложений - например, для музыкальных проигрывателей. "
+"Обычно, разработчикам для доступа к музыкальным файлам следует использовать "
+"группу политик content_exchange и API."
 
 #: ../../appdev/platform/apparmor.rst:193
 msgid "The music_files_read policy group allows an app to read the Music directories in the user's home folder or on external media."
 msgstr ""
+"Группа политик music_files_read позволяет приложению читать каталоги музыки "
+"в домашней папке пользователя или на внешнем носителе."
 
 #: ../../appdev/platform/apparmor.rst:197
+#, fuzzy
 msgid "networking"
-msgstr ""
+msgstr "networking (доступ к сети)"
 
 #: ../../appdev/platform/apparmor.rst:199
 msgid "Description: Can access the network"
-msgstr ""
+msgstr "Описание:возможность получения доступа к сети"
 
 #: ../../appdev/platform/apparmor.rst:203
 msgid "The networking policy group allows an app to contact network devices and use the `download manager`_."
 msgstr ""
+"Группа сетевых политик позволяет приложению связываться с сетевыми "
+"устройствами и использовать диспетчер загрузки - `download manager`_.."
 
 #: ../../appdev/platform/apparmor.rst:207
 msgid "picture_files"
-msgstr ""
+msgstr "picture_files"
 
 #: ../../appdev/platform/apparmor.rst:209
 msgid "Description: Can read and write to picture files. This policy group is reserved for certain applications, such as gallery applications. Developers should typically use the content_exchange policy group and API to access picture files instead."
 msgstr ""
+"Описание: запись и чтение файлов с изображениями. Эта группа политик "
+"зарезервирована для определенных приложений, таких как \"Галерея\". "
+"Разработчикам следует использовать группу политик content_exchange и API для "
+"доступа к файлам изображений."
 
 #: ../../appdev/platform/apparmor.rst:213
 msgid "The picture_files policy group allows an app to read and write to the Pictures directories in the user's home folder or on external media."
 msgstr ""
+"Группа политик picture_files даёт приложению права на запись и чтение в "
+"каталог Pictures в домашней папке пользователя или на внешнем носителе."
 
 #: ../../appdev/platform/apparmor.rst:217
 msgid "picture_files_read"
-msgstr ""
+msgstr "picture_files_read"
 
 #: ../../appdev/platform/apparmor.rst:219
 msgid "Description: Can read all picture files. This policy group is reserved for certain applications, such as gallery applications. Developers should typically use the content_exchange policy group and API to access picture files instead."
 msgstr ""
+"Описание: доступ на чтение всех файлов изображений. Эта группа политик "
+"зарезервирована для определенных приложений, например для \"Галереи\". "
+"Разработчикам следует использовать группу политик content_exchange и API для "
+"доступа к файлам изображений."
 
 #: ../../appdev/platform/apparmor.rst:223
 msgid "The picture_files_read policy group allows an app to read the Pictures directories in the user's home folder or on external media."
 msgstr ""
+"Группа политик picture_files_read дает приложению приложению права на чтение "
+"каталога Pictures в домашней папке пользователя или на внешнем носителе."
 
 #: ../../appdev/platform/apparmor.rst:227
 msgid "push-notification-client"
-msgstr ""
+msgstr "push-notification-client"
 
 #: ../../appdev/platform/apparmor.rst:229
 msgid "Description: Can use push notifications as a client"
-msgstr ""
+msgstr "Описание: возможность использовать push-уведомления в качестве клиента"
 
 #: ../../appdev/platform/apparmor.rst:235
 msgid "sensors"
-msgstr ""
+msgstr "sensors (сенсоры)"
 
 #: ../../appdev/platform/apparmor.rst:237
 msgid "Description: Can access the sensors"
-msgstr ""
+msgstr "Описание: доступ к сенсорам"
 
 #: ../../appdev/platform/apparmor.rst:241
+#, fuzzy
 msgid "Allows apps to access `device sensors`_"
-msgstr ""
+msgstr "дает приложениям доступ к  `сенсорам устройства`_"
 
 #: ../../appdev/platform/apparmor.rst:245
 msgid "usermetrics"
-msgstr ""
+msgstr "usermetrics (пользовательская метрика)"
 
 #: ../../appdev/platform/apparmor.rst:247
 msgid "Description: Can use UserMetrics to update the InfoGraphic"
-msgstr ""
+msgstr "Описание: можно использовать UserMetrics для обновления InfoGraphic"
 
 #: ../../appdev/platform/apparmor.rst:251
 msgid "Allows an app to write metrics to the UserMetrics service so they can be displayed on the InfoGraphic."
 msgstr ""
+"Даёт приложению права на запись  данных метрики в сервис UserMetrics, "
+"которые затем отображаются на InfoGraphic."
 
 #: ../../appdev/platform/apparmor.rst:255
 msgid "video"
-msgstr ""
+msgstr "video (видео)"
 
 #: ../../appdev/platform/apparmor.rst:257
 msgid "Description: Can play video (allows playing remote content via media-hub)"
 msgstr ""
+"Описание: возможность воспроизведения видео (возможно просматривать видео, "
+"расположенное на других серверах через медиа-хаб)"
 
 #: ../../appdev/platform/apparmor.rst:263
 msgid "video_files"
-msgstr ""
+msgstr "video_files"
 
 #: ../../appdev/platform/apparmor.rst:265
 msgid "Description: Can read and write to video files. This policy group is reserved for certain applications, such as gallery applications. Developers should typically use the content_exchange policy group and API to access video files instead."
 msgstr ""
+"Описание: возможность читать и записывать видео файлы. Эта группа политик "
+"зарезервирована для определенных приложений, например для \"Галереи\". "
+"Разработчикам следует использовать группу политик content_exchange и API для "
+"доступа к видеофайлам."
 
 #: ../../appdev/platform/apparmor.rst:269
 msgid "The video_files policy group allows an app to read and write to the Videos directories in the user's home folder or on external media."
 msgstr ""
+"Группа политик video_files дает приложению права на чтение и запись в "
+"каталог «Video» в домашней папке пользователя или на внешнем носителе."
 
 #: ../../appdev/platform/apparmor.rst:273
 msgid "video_files_read"
-msgstr ""
+msgstr "video_files_read"
 
 #: ../../appdev/platform/apparmor.rst:275
 msgid "Description: Can read all video files. This policy group is reserved for certain applications, such as gallery applications. Developers should typically use the content_exchange policy group and API to access video files instead."
 msgstr ""
+"Описание: доступ на чтение всех видеофайлов. Эта группа политик "
+"зарезервирована для определенных приложений, таких как \" галерея\". "
+"Разработчикам следует использовать группу политик content_exchange и API для "
+"доступа к видеофайлам ."
 
 #: ../../appdev/platform/apparmor.rst:279
 msgid "The video_files_read policy group allows an app to read the Videos directories in the user's home folder or on external media."
 msgstr ""
+"Группа политик video_files_read дает приложению права на чтение директорий "
+"«Video» в домашней папке пользователя или на внешнем носителе."
 
 #: ../../appdev/platform/apparmor.rst:283
 msgid "webview"
-msgstr ""
+msgstr "webview"
 
 #: ../../appdev/platform/apparmor.rst:285
 msgid "Description: Can use the UbuntuWebview"
-msgstr ""
+msgstr "Описание: может использоваться UbuntuWebview"
 
 #: ../../appdev/platform/apparmor.rst:289
+#, fuzzy
 msgid "The webview policy group allows apps to embed a `web browser view`_."
 msgstr ""
+"Группа политик веб-просмотра позволяет приложениям работать как в  окне "
+"браузера (`web browser view`_)"
 
 #: ../../appdev/platform/click.rst:4
+#, fuzzy
 msgid "Click package"
-msgstr ""
+msgstr "Пакет для установки приложений - \"Click\"."
 
 #: ../../appdev/platform/click.rst:6
 msgid "Every ``click`` application package must embed at least 3 files:"
 msgstr ""
+"Каждое приложение, распространяемое в виде ``click``-пакета, должно "
+"содержать как минимум 3 файла:"
 
 #: ../../appdev/platform/click.rst:26
 msgid "``manifest.json`` file"
-msgstr ""
+msgstr "файл ``manifest.json``"
 
 #: ../../appdev/platform/click.rst:9
 msgid "Contains application declarations such as application name, description, author, framework sdk target, and version."
 msgstr ""
+"Здесь содержится описание важных параметров приложения - название, описание, "
+"автор, версия и  framework sdk target."
 
 #: ../../appdev/platform/click.rst:11
 msgid "Example ``manifest.json`` file::"
-msgstr ""
+msgstr "Пример файла ``manifest.json``::"
 
 #: ../../appdev/platform/click.rst:29
 msgid "AppArmor profile policy file"
-msgstr ""
+msgstr "Файл политики профиля AppArmor"
 
 #: ../../appdev/platform/click.rst:29
 msgid "Contains which policy the app needs to work properly. See `Security and app isolation`_ below for more information on this file."
 msgstr ""
+"Здесь указано, с какой политикой приложение должно работать правильно. См. "
+"ниже раздел`Безопасность и изоляция приложения`_  для получения "
+"дополнительной информации об этом файле."
 
 #: ../../appdev/platform/click.rst:53
 msgid "``.desktop`` file"
-msgstr ""
+msgstr "файл ``.desktop`"
 
 #: ../../appdev/platform/click.rst:32
 msgid "The launcher file will tell UT how to launch the app, which name and icon to display on the home screen, and some other properties."
 msgstr ""
+"Файл лаунчера сообщит UT, как запускать приложение, какое название и значок "
+"отобразить на домашнем экране, а также некоторые другие свойства."
 
 #: ../../appdev/platform/click.rst:34
 msgid "Example of ``app.desktop``::"
-msgstr ""
+msgstr "Пример файла ``app.desktop``::"
 
 #: ../../appdev/platform/click.rst:44
 msgid "Non exhaustive list of properties:"
-msgstr ""
+msgstr "Неполный список свойств:"
 
 #: ../../appdev/platform/click.rst:46
 msgid "Name: Application title has shown in the dash"
-msgstr ""
+msgstr "Name:заголовок приложения показан в графе \"-\""
 
 #: ../../appdev/platform/click.rst:47
 msgid "Exec: Path to the executable file"
-msgstr ""
+msgstr "Exec: путь к исполняемому файлу"
 
 #: ../../appdev/platform/click.rst:48
 msgid "Icon: Path to the icon to display"
-msgstr ""
+msgstr "Icon: Путь к иконке для вывода на экран устройства"
 
 #: ../../appdev/platform/click.rst:49
 msgid "Terminal: ``false`` if will not run in terminal window"
 msgstr ""
+"Terminal: если установлено значение ``false``, то приложение не будет "
+"запускаться в окне терминала"
 
 #: ../../appdev/platform/click.rst:50
 msgid "Type: Specifies the type of the launcher file. The type can be Application, Link or Directory."
 msgstr ""
+"Type:Определяет тип исполняемого файла. Это может быть приложение, ссылка "
+"или каталог."
 
 #: ../../appdev/platform/click.rst:51
 msgid "X-Ubuntu-Touch: ``true`` to make the app visible"
 msgstr ""
+"X-Ubuntu-Touch:  должно быть установлено значение ``true``, чтобы сделать "
+"приложение видимым"
 
 #: ../../appdev/platform/click.rst:52
 msgid "X-Ubuntu-XMir-Enable: ``true`` if your app is built for X"
 msgstr ""
+"X-Ubuntu-XMir-Enable: должно быть установлено значение ``true``, если "
+"приложение скомпилировано для X"
 
 #: ../../appdev/platform/click.rst:53
 msgid "X-Ubuntu-Supported-Orientations: ``landscape`` or ``portrait`` to force your app start in landscape mode and portrait mode respectively."
 msgstr ""
+"X-Ubuntu-Supported-Orientations: опции ``landscape`` или ``portrait``  "
+"отвечают за запуск приложения в ландшафтном или портретном режимах "
+"соответственно."
 
 #: ../../appdev/platform/click.rst:60
 msgid "Security and app isolation"
-msgstr ""
+msgstr "Безопасность и изоляция приложения"
 
 #: ../../appdev/platform/click.rst:62
 msgid "All Ubuntu apps are confined respecting AppArmor access control mechanism (see `Application Confinement <https://wiki.ubuntu.com/SecurityTeam/Specifications/ApplicationConfinement#App_confinement_with_AppArmor>`_) , meaning they only have access to their own resources and are isolated from other apps and parts of the system. The developer must declare which policy groups are needed for the app or scope to function properly with an apparmor ``.json`` file."
 msgstr ""
+"Работа всех приложений Ubuntu ограничена соблюдением механизма контроля "
+"доступа AppArmor (подробнее смотрите раздел  `Application Confinement "
+"<https://wiki.ubuntu.com/SecurityTeam/Specifications/"
+"ApplicationConfinement#App_confinement_with_AppArmor>`_). Это значит, что "
+"они имеют доступ только к своим ресурсам и изолированы от других приложений "
+"и частей системы. Разработчик должен указать, какие группы политик "
+"необходимы для правильной работы приложения в файле политики apparmor  с "
+"расширением ``.json``."
 
 #: ../../appdev/platform/click.rst:64
 msgid "Example ``apparmor.json`` file::"
-msgstr ""
+msgstr "Пример файла ``apparmor.json``::"
 
 #: ../../appdev/platform/click.rst:76
 msgid "For a full list of available policy groups, see :doc:`apparmor`."
-msgstr ""
+msgstr "Полный список доступных групп политик см. в разделе :doc: `apparmor`."
 
 #: ../../appdev/platform/index.rst:6
+#, fuzzy
 msgid "Here are Ubuntu Touch platforms key topics when you want to extend your app with Ubuntu Touch ecosystem:"
 msgstr ""
+"Список ключевых тем о платформе Ubuntu Touch, которые необходимо изучить, "
+"если планируется расширить приложение с помощью экосистемы Ubuntu Touch:"
 
 #: ../../appdev/platform/index.rst:9
 msgid "Content Hub"
-msgstr ""
+msgstr "Content Hub"
 
 #: ../../appdev/platform/index.rst:9
 msgid "Each application can expose content outside its sandbox, giving the user precise control over what can be imported, exported or shared with the world and other apps."
 msgstr ""
+"Каждое приложение может предоставлять контент за пределами \"песочницы\", "
+"предоставляя пользователю полный контроль над тем, что можно импортировать, "
+"экспортировать или делиться с  другими приложениями и пользователями."
 
 #: ../../appdev/platform/index.rst:12
 msgid "By using a push server and a companion client, instantly serve users with the latest information from their network and apps."
 msgstr ""
+"с помощью push-сервер (севера уведомлений) и соответствующего клиента можно "
+"мгновенно  предоставлять пользователям самую свежую информацию из  сети и "
+"приложений."
 
 #: ../../appdev/platform/index.rst:15
+#, fuzzy
 msgid "URL dispatcher"
-msgstr ""
+msgstr "URL-диспетчер"
 
 #: ../../appdev/platform/index.rst:15
+#, fuzzy
 msgid "Help users navigate between your apps and drive their journey with the URL dispatcher."
 msgstr ""
+"Помогает пользователям перемещаться между  приложениями и сетью  с помощью "
+"диспетчера URL."
 
 #: ../../appdev/platform/index.rst:19
+#, fuzzy
 msgid "Online accounts"
-msgstr ""
+msgstr "online-аккаунты (учётные записи)"
 
 #: ../../appdev/platform/index.rst:18
 msgid "Simplify user access to online services by integrating with the online accounts API. Accounts added by the user on the device are registered in a centralized hub, allowing other apps to re-use them."
 msgstr ""
+"Можно упростить пользователям доступ к онлайн-сервисам за счет интеграции с "
+"API онлайн-аккаунтов. Учетные записи, добавленные пользователем на "
+"устройство, регистрируются в централизованном хабе, и это позволяет другим "
+"приложениям использовать их повторно."
 
 #: ../../appdev/platform/index.rst:21
 msgid "`Read the docs <https://docs.ubuntu.com/phone/en/platform/>`__"
 msgstr ""
+"`Подробнее читайте в документации <https://docs.ubuntu.com/phone/en/platform/"
+">`__"
 
 #: ../../appdev/platform/index.rst:24
 msgid "Packaging your app"
-msgstr ""
+msgstr "Формирование пакета приложения"
 
 #: ../../appdev/platform/index.rst:26
 msgid "Here you will get some informations about the confinment model and the packaging system:"
 msgstr ""
+"Здесь можно найти информацию о модели ограничений и системе сборки пакетов:"
 
 #: ../../appdev/publishing/index.rst:4
+#, fuzzy
 msgid "App publishing guides"
-msgstr ""
+msgstr "Руководства по публикации приложения."
 
 #: ../../appdev/publishing/index.rst:6
 msgid "We are currently working on expanding our list of publishing guides. In the mean time you can get started over at the `OpenStore's submission page <https://open-store.io/submit>`__."
 msgstr ""
+"В настоящее время мы работаем над дополнением  списка руководств по "
+"дистрибуции приложений. Пока всю доступную информацию можно прочитать в "
+"разделе `OpenStore's submission page <https://open-store.io/submit>`__."
 
 #: ../../appdev/publishing/index.rst:8
 msgid "If you are interested in helping create developer guides check out our `GitLab Project <https://gitlab.com/ubports/ux/development-resources>`__."
 msgstr ""
+"Если Вы хотите принять участие в создании руководств для разработчиков, "
+"ознакомьтесь с нашим проектом на  GitLab <https://gitlab.com/ubports/ux/"
+"development-resources> `__."
 
 #: ../../appdev/samples/index.rst:4
 msgid "Sample Apps"
-msgstr ""
+msgstr "Демонстрационные приложения"
 
 #: ../../appdev/samples/index.rst:6
 msgid "We are currently working on expanding our list of sample apps. In the mean time many apps on the `OpenStore <https://open-store.io/>`__ are open source and can be used as a reference."
 msgstr ""
+"В настоящее время мы работаем над расширением списка демонстрационных "
+"приложений. В то же время многие приложения в OpenStore <https://open-store."
+"io/> `__ имеют открытый исходный код и могут использоваться в качестве "
+"справочного материала."
 
 #: ../../appdev/samples/index.rst:8
 msgid "If you are interested in helping create sample apps check out our `GitLab Project <https://gitlab.com/ubports/ux/development-resources>`__."
 msgstr ""
+"Если Вам интересно создавать демо-приложения, ознакомьтесь с нашим проектом "
+"на GitLab <https://gitlab.com/ubports/ux/development-resources> `__."
 
 #: ../../appdev/webapp/guide.rst:2
 #: ../../appdev/webapp/index.rst:15
 msgid "Guide"
-msgstr ""
+msgstr "Инструкция"
 
 #: ../../appdev/webapp/guide.rst:5
 msgid "How the webapp fits into the shell"
-msgstr ""
+msgstr "Как веб-приложение встраивается в оболочку"
 
 #: ../../appdev/webapp/guide.rst:7
 msgid "A web app displays in a webview inside a webapp-container that runs as an Ubuntu app in the Ubuntu/Unity shell."
 msgstr ""
+"Веб-приложение представлено в формате в веб-контейнера , который запускается "
+"как приложение Ubuntu в оболочке Ubuntu/Unity."
 
 #: ../../appdev/webapp/guide.rst:9
 msgid "Taking a closer look:"
-msgstr ""
+msgstr "Рассмотрим поближе:"
 
 #: ../../appdev/webapp/guide.rst:11
 msgid "At the innermost level, there is a website that the developer identifies by URL. The website is rendered and runs in an Oxide webview. Oxide is a Blink/Chrome webview that is customized for Ubuntu. The Oxide webview runs and displays in the webapp-container. The webapp-container is the executable app runtime that is integrated with the Ubuntu/unity shell."
 msgstr ""
+"На самом внутреннем уровне находится веб-сайт, который разработчик "
+"идентифицирует по URL. Сайт открывается и работает в веб-браузере Oxide. "
+"Oxide - это веб-просмотр на основе ядра  Blink/Chrome, адаптированный для "
+"Ubuntu. Веб-приложение Oxide запускается и отображается в веб-контейнере. "
+"Контейнер webapp - это интегрированная  для работы с оболочкой среда "
+"исполняемого приложения Ubuntu/Unity."
 
 #: ../../appdev/webapp/guide.rst:16
 msgid "Launching"
-msgstr ""
+msgstr "Запуск"
 
 #: ../../appdev/webapp/guide.rst:18
 msgid "You can launch a webapp from the terminal with:::"
-msgstr ""
+msgstr "Можно запустить веб-приложение из терминала командой:::"
 
 #: ../../appdev/webapp/guide.rst:22
 msgid "For example:::"
-msgstr ""
+msgstr "Например:::"
 
 #: ../../appdev/webapp/guide.rst:26
 msgid "This simple form works, but almost every webapp also uses other features, such as URL containment with URL patterns as described below."
 msgstr ""
+"Эта простая форма работает, но почти каждое веб-приложение также использует "
+"другие функции. Например, ограничение URL-адресов шаблонами URL-адресов, как "
+"описано ниже."
 
 #: ../../appdev/webapp/guide.rst:29
 msgid "User interface"
-msgstr ""
+msgstr "Пользовательский интерфейс"
 
 #: ../../appdev/webapp/guide.rst:31
 msgid "A webapp generally fills the entire app screen space, without the need of the UI controls generally found on standard browsers."
