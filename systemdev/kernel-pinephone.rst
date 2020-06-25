@@ -68,5 +68,8 @@ References
  * `sunxi <https://linux-sunxi.org>`_ community is where much of the `mainlining effort <https://linux-sunxi.org/Linux_mainlining_effort>`_ for Allwinner devices including the PinePhone takes place. Note their `build instructions <https://linux-sunxi.org/Mainline_Kernel_Howto>`_.
  * `Crust firmware <https://github.com/crust-firmware/crust>`_ implements a deep sleep state and runs on a dedicated System Control Processor outside the main CPU and DRAM.
 
-.. TODO: How to update Crust? the github page has quite some instructions about building and installing it with uboot. On the UBports side it seems possible to deliver it via deb packages: https://forum.pine64.org/showthread.php?tid=9957 and more manual steps https://forum.pine64.org/showthread.php?tid=10405
-
+.. TODO: How to work on, build, update Crust? Some tips below 
+.. the github page has quite some instructions about building and installing it with uboot https://gitlab.com/pine64-org/crust-meta
+.. On the UBports side it seems possible to deliver it via deb packages: https://forum.pine64.org/showthread.php?tid=9957 
+.. more manual steps https://forum.pine64.org/showthread.php?tid=10405
+.. ci https://gitlab.com/pine64-org/crust-meta
