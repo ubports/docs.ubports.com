@@ -40,7 +40,7 @@ Building the kernel
 To install dependencies, get the `source code <https://gitlab.com/pine64-org/linux/-/tree/pine64-kernel-ubports>`_, configure and build it run the following::
 
   sudo apt install flex bison gcc-aarch64-linux-gnu libssl-dev
-  git clone -b pine64-kernel-ubports git@gitlab.com:pine64-org/linux.git
+  git clone -b pine64-kernel-ubports https://gitlab.com/pine64-org/linux.git
   cd linux
   ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- KBUILD_VERSION=arm64 LOCALVERSION=-pine64 make pine64_defconfig
   ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- KBUILD_VERSION=arm64 LOCALVERSION=-pine64 make -j18 bindeb-pkg
