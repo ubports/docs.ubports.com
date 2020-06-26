@@ -12,6 +12,4 @@ The documentation can be built by running `./build.sh` in the root of this repos
 
 ### Update translations
 
-To update translation po-files, run `./update-translations.sh` in the root of this repository.
-
-To add a new language, add its ISO code to the list in `languagues.sh` and run `./update-translations.sh`.
+To update translation templates, run `./update-translations.sh` in the root of this repository.
