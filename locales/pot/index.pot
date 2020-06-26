@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-26 10:25-0500\n"
+"POT-Creation-Date: 2020-06-26 10:55-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,49 +16,49 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../index.rst:24
-#: ../../index.rst:24
+#: ../../index.rst:25
+#: ../../index.rst:25
 msgid "About"
 msgstr ""
 
-#: ../../index.rst:33
-#: ../../index.rst:33
+#: ../../index.rst:34
+#: ../../index.rst:34
 msgid "User Guide"
 msgstr ""
 
-#: ../../index.rst:43
-#: ../../index.rst:43
+#: ../../index.rst:44
+#: ../../index.rst:44
 msgid "Contribute"
 msgstr ""
 
-#: ../../index.rst:51
-#: ../../index.rst:51
+#: ../../index.rst:52
+#: ../../index.rst:52
 msgid "Development"
 msgstr ""
 
-#: ../../index.rst:59
-#: ../../index.rst:59
+#: ../../index.rst:60
+#: ../../index.rst:60
 msgid "Porting"
 msgstr ""
 
-#: ../../index.rst:67
+#: ../../index.rst:68
 msgid "Click Packages"
 msgstr ""
 
-#: ../../index.rst:67
+#: ../../index.rst:68
 msgid "Ubuntu UI-Toolkit"
 msgstr ""
 
-#: ../../index.rst:67
+#: ../../index.rst:68
 msgid "Clickable"
 msgstr ""
 
-#: ../../index.rst:67
+#: ../../index.rst:68
 msgid "Halium"
 msgstr ""
 
-#: ../../index.rst:67
-#: ../../index.rst:67
+#: ../../index.rst:68
+#: ../../index.rst:68
 msgid "Platform"
 msgstr ""
 
@@ -111,13 +111,17 @@ msgid "`Română <https://docs.ubports.com/ro/latest/>`_"
 msgstr ""
 
 #: ../../index.rst:20
-msgid "`Türkçe <https://docs.ubports.com/tr/latest/>`_"
+msgid "`Русский <https://docs.ubports.com/ru/latest>`_"
 msgstr ""
 
 #: ../../index.rst:21
-msgid "`Español <https://docs.ubports.com/es/latest/>`_"
+msgid "`Türkçe <https://docs.ubports.com/tr/latest/>`_"
 msgstr ""
 
 #: ../../index.rst:22
+msgid "`Español <https://docs.ubports.com/es/latest/>`_"
+msgstr ""
+
+#: ../../index.rst:23
 msgid "`Simplified Chinese <https://docs.ubports.com/zh_CN/latest/>`_"
 msgstr ""

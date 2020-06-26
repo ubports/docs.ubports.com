@@ -17,6 +17,7 @@ You may view this documentation in the following languages:
 * `Deutsch <https://docs.ubports.com/de/latest/>`_
 * `Italiano <https://docs.ubports.com/it/latest/>`_
 * `Română <https://docs.ubports.com/ro/latest/>`_
+* `Русский <https://docs.ubports.com/ru/latest>`_
 * `Türkçe <https://docs.ubports.com/tr/latest/>`_
 * `Español <https://docs.ubports.com/es/latest/>`_
 * `Simplified Chinese <https://docs.ubports.com/zh_CN/latest/>`_
