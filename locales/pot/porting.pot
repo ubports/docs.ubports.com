@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-08 17:32-0500\n"
+"POT-Creation-Date: 2020-06-26 10:25-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -93,7 +93,7 @@ msgid "``mka systemimage``"
 msgstr ""
 
 #: ../../porting/building-halium-boot.rst:42
-#: ../../porting/installing-16-04.rst:58
+#: ../../porting/installing-16-04.rst:62
 msgid "Continue on"
 msgstr ""
 
@@ -274,7 +274,7 @@ msgid "Now that you've :doc:`built halium-boot <building-halium-boot>`, we're re
 msgstr ""
 
 #: ../../porting/installing-16-04.rst:10
-msgid "In order to install Ubuntu Touch, you will need a recovery with Busybox, such as TWRP, installed on your phone. You will also need to ensure the /data partition is formatted with ext4 and does not have any encryption on it."
+msgid "In order to install Ubuntu Touch, you will need a recovery with Busybox, such as `TWRP <https://twrp.me/Devices/>`_, installed on your phone. You will also need to ensure the /data partition is formatted with ext4 and does not have any encryption on it. Boot into the recovery image you just installed, check and adjust as necessary."
 msgstr ""
 
 #: ../../porting/installing-16-04.rst:13
@@ -286,55 +286,59 @@ msgid "We'll need to install the halium-boot image before installing an image. R
 msgstr ""
 
 #: ../../porting/installing-16-04.rst:21
+msgid "Samsung devices: Flashing halium-boot.img on Samsung devices is done using the Heimdall flashing utility (on Linux) or the Odin utility (on Windows) after first bringing the device into 'download mode'. Follow the instructions for the utility you are using, including the specific flashing command for flashing the boot partition. The device should boot directly into recovery once halium-boot.img has been flashed. Install system.img and rootfs (below) with the device in recovery mode."
+msgstr ""
+
+#: ../../porting/installing-16-04.rst:24
 msgid "Download the rootfs"
 msgstr ""
 
-#: ../../porting/installing-16-04.rst:23
+#: ../../porting/installing-16-04.rst:26
 msgid "Next we'll need to download the rootfs (root filesystem) that's appropriate for your device. Right now, we only have one available. Simply download ``ubports-touch.rootfs-xenial-armhf.tar.gz`` from `our CI server <https://ci.ubports.com/job/xenial-rootfs-armhf/>`__. If you have a 64-bit ARM (aarch64) device, this same rootfs should work for you. If you have an x86 device, let us know. We do not have a rootfs available for these yet."
 msgstr ""
 
-#: ../../porting/installing-16-04.rst:26
+#: ../../porting/installing-16-04.rst:29
 msgid "Install system.img and rootfs"
 msgstr ""
 
-#: ../../porting/installing-16-04.rst:28
-msgid "Clone or download the `halium-install repository <https://gitlab.com/JBBgameich/halium-install>`_. This repository contains tools that can be used to install a Halium system image and distribution rootfs. We'll use the ``halium-install`` script to install Ubuntu Touch on your device::"
+#: ../../porting/installing-16-04.rst:31
+msgid "Clone or download the `halium-install repository <https://gitlab.com/JBBgameich/halium-install>`_. This repository contains tools that can be used to install a Halium system image and distribution rootfs. Reboot your device to recovery (e.g. TWRP), to get adb access again. We'll use the ``halium-install`` script to install Ubuntu Touch on your device::"
 msgstr ""
 
-#: ../../porting/installing-16-04.rst:32
+#: ../../porting/installing-16-04.rst:36
 msgid "The script will copy and extract the files to their proper places, then allow you to set the phablet user's password."
 msgstr ""
 
-#: ../../porting/installing-16-04.rst:35
+#: ../../porting/installing-16-04.rst:39
 msgid "Get SSH access"
 msgstr ""
 
-#: ../../porting/installing-16-04.rst:37
+#: ../../porting/installing-16-04.rst:41
 msgid "When your device boots, it will likely stay at the bootloader screen. However, you should also get a new network connection on the computer you have it plugged in to. We will use this to debug the system."
 msgstr ""
 
-#: ../../porting/installing-16-04.rst:39
+#: ../../porting/installing-16-04.rst:43
 msgid "To confirm that your device has booted correctly, run ``dmesg -w`` and watch for \"GNU/Linux device\" in the output. If you instead get something similar to \"Halium initrd Failed to boot\", please get in contact with us so we can find out why."
 msgstr ""
 
-#: ../../porting/installing-16-04.rst:41
+#: ../../porting/installing-16-04.rst:45
 msgid "Similar to the Halium reference rootfs, you should `set your computer's IP on the newly connected RNDIS interface <http://docs.halium.org/en/latest/porting/debug-build/logging-in.html>`__ to ``10.15.19.100`` if you don't get one automatically. Then, run the following to access your device::"
 msgstr ""
 
-#: ../../porting/installing-16-04.rst:45
+#: ../../porting/installing-16-04.rst:49
 msgid "The password will be the one that you set while running halium-install."
 msgstr ""
 
-#: ../../porting/installing-16-04.rst:48
+#: ../../porting/installing-16-04.rst:52
 #: ../../porting/running-ut.rst:74
 msgid "Common Problems"
 msgstr ""
 
-#: ../../porting/installing-16-04.rst:50
+#: ../../porting/installing-16-04.rst:54
 msgid "If you have any errors while performing these steps, check see if any of the following suggestions match what you are seeing. If you have installed successfully, skip down to `Continue on`_."
 msgstr ""
 
-#: ../../porting/installing-16-04.rst:60
+#: ../../porting/installing-16-04.rst:64
 msgid "Congratulations! Ubuntu Touch has now booted on your device. Move on to :doc:`running-ut` to learn about more specific steps you will need to take for a complete port."
 msgstr ""
 
@@ -759,4 +763,3 @@ msgstr ""
 #: ../../porting/ubp-5.1.rst:78
 msgid "To install your new build of the system image, use the `replace-android-system script <https://github.com/janimo/phablet-porting-scripts/blob/68734ca07998b8e784397df77d9aca4b968b3815/build/replace-android-system>`_. It can be run as follows with your device attached::"
 msgstr ""
-

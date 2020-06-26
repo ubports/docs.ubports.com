@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-08 17:32-0500\n"
+"POT-Creation-Date: 2020-06-26 10:25-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,33 +16,49 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../index.rst:23
-#: ../../index.rst:23
+#: ../../index.rst:24
+#: ../../index.rst:24
 msgid "About"
 msgstr ""
 
-#: ../../index.rst:32
-#: ../../index.rst:32
+#: ../../index.rst:33
+#: ../../index.rst:33
 msgid "User Guide"
 msgstr ""
 
-#: ../../index.rst:42
-#: ../../index.rst:42
+#: ../../index.rst:43
+#: ../../index.rst:43
 msgid "Contribute"
 msgstr ""
 
-#: ../../index.rst:50
-#: ../../index.rst:50
+#: ../../index.rst:51
+#: ../../index.rst:51
 msgid "Development"
 msgstr ""
 
-#: ../../index.rst:58
-#: ../../index.rst:58
+#: ../../index.rst:59
+#: ../../index.rst:59
 msgid "Porting"
 msgstr ""
 
-#: ../../index.rst:66
-#: ../../index.rst:66
+#: ../../index.rst:67
+msgid "Click Packages"
+msgstr ""
+
+#: ../../index.rst:67
+msgid "Ubuntu UI-Toolkit"
+msgstr ""
+
+#: ../../index.rst:67
+msgid "Clickable"
+msgstr ""
+
+#: ../../index.rst:67
+msgid "Halium"
+msgstr ""
+
+#: ../../index.rst:67
+#: ../../index.rst:67
 msgid "Platform"
 msgstr ""
 
@@ -102,3 +118,6 @@ msgstr ""
 msgid "`Español <https://docs.ubports.com/es/latest/>`_"
 msgstr ""
 
+#: ../../index.rst:22
+msgid "`Simplified Chinese <https://docs.ubports.com/zh_CN/latest/>`_"
+msgstr ""
