@@ -14,7 +14,7 @@ Check if the bug is already reported
 Open up the bug tracker for `ubuntu-touch <https://github.com/ubports/ubuntu-touch>`_.
 
 .. Note::
-    Pinephone users should check for and report bugs `_here <https://gitlab.com/ubports/community-ports/pinephone>`_
+    Pinephone users should check for and report bugs `here <https://gitlab.com/ubports/community-ports/pinephone>`_
 
 First, you'll need to make sure that the bug you're trying to report hasn't been reported before. Search through the bugs reported. When searching, use a few words that describe what you're seeing. For example, "Lock screen transparent" or "Lock screen shows activities".
 
