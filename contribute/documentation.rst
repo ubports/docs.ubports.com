@@ -9,7 +9,7 @@ This page will guide you through writing great documentation for the UBports pro
 Documentation guidelines
 ------------------------
 
-These rules govern how you should write your documentation to avoid problems with style, format, or linking. If you don't follow these guidelines, we will not accept your document.
+These rules govern how you should write your documentation to avoid problems with style, format, or linking.
 
 Title
 ^^^^^
