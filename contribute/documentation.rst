@@ -141,6 +141,23 @@ If all went well, you can enter the ``_build/html`` directory and open ``index.h
 
 If you have trouble building the docs, the first thing to try is deleting the build environment. Run ``rm -r ~/ubportsdocsenv`` and try the build again. Depending on when you first used the build script, you may need to run the ``rm`` command with ``sudo``.
 
+Final check of your contribution
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+After you have created your PR on github, the CI (continuous integration) system will make a test build of your contribution. Please double check whether this builds successfully and whether the result looks as you intended it to:
+
+* Scroll to the bottom of the "Conversation" tab of your PR on github, here you will see the checks (You may have to click on "Show all checks")
+* It can have a yellow dot, i.e., "pending" then wait a few more seconds.
+* Or it may have a red X, i.e., it failed. In this case please check why it failed
+* If it shows a green check mark, it means the PR could be built successfully
+* Now please click on "Details",
+* then "Artifacts" on the top right,
+* then "_build/html/..index.html",
+* and finally on "Go to start page".
+
+Now you can browse a complete build of the UBports docs site with your contribution included. Double check whether your changes look ok.
+
+
 Alternative methods to contribute
 ---------------------------------
 
