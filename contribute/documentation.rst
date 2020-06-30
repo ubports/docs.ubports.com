@@ -16,7 +16,7 @@ Title
 
 All pages must have a document title that will be shown in the table of contents (left sidebar) and at the top of the page.
 
-Titles should be sentence cased rather than Title Cased. For example::
+Titles should be "sentence cased" rather than "Title Cased". For example::
 
     Incorrect casing:
         Writing A Good Bug Report
