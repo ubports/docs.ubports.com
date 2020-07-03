@@ -89,7 +89,7 @@ And how do we manage the received URL?
 
 After the ``URLdispatcher`` sends the link to the correspondent app, we need to handle that URL or URI in the targeted app. Let’s see how to do that:
 
-In the main qml file, we need to add some code to know what to do with the dispatched URL. Let's add `connection to the URI Handler <https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L200>`_ with a Connection element with ``UriHandler`` as a target.
+In the main qml file, we need to add some code to know what to do with the dispatched URL. Let's check how Linphone app manages this adding a `connection to the URI Handler <https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L212>`_ with a Connections element setting ``UriHandler`` as a target.
 
 .. code:: qml
 
