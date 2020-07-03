@@ -89,20 +89,9 @@ And how do we manage the received URL?
 
 After the ``URLdispatcher`` sends the link to the correspondent app, we need to handle that URL or URI in the targeted app. Let’s see how to do that:
 
-In the main qml file, we need to add some code to know what to do with the dispatched URL. First add an `Arguments element <https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L189>`_ that holds the URL, as is done, for example, in the `Linphone app <https://open-store.io/app/linphone.cibersheep>`_. Also, we add `connection to the URI Handler <https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L200>`_ with a Connection element with ``UriHandler`` as a target.
+In the main qml file, we need to add some code to know what to do with the dispatched URL. Let's add `connection to the URI Handler <https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L200>`_ with a Connection element with ``UriHandler`` as a target.
 
 .. code:: qml
-
-        Arguments {
-            id: args
-        
-            Argument {
-                name: 'url'
-                help: i18n.tr('Incoming Call from URL')
-                required: false
-                valueNames: ['URL']
-            }
-        }
 
         Connections {
             target: UriHandler
@@ -117,25 +106,23 @@ In the main qml file, we need to add some code to know what to do with the dispa
             }
         }
 
-This code will manage a URI in the form ``linphone://sip:xxx@xxx.xx`` when the app is opened. But what do we need to do to handle this link when the app is closed?
+This code will manage an URI in the form ``linphone://sip:xxx@xxx.xx`` when the app is opened. But what do we need to do to handle this link when the app is closed?
 
-We need to add a little bit `extra code <https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L69>`_ that will cover two cases:
+We need to add a little bit `extra code <https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L76>`_ that will cover two cases:
 1) We receive one URL
 2) We receive more than one URL
+
+Let's check if ``Qt.application.arguments`` is not empty and if not, if any argument matches our URI format.
 
 .. code:: qml
 
         Component.onCompleted: {
             //Check if opened the app because we have an incoming call
-            if (args.values.url && args.values.url.match(/^linphone/)) {
-
-                console.log("Incoming Call on Closed App")
-                showIncomingCall(args.values.url);
-
-            } else if (Qt.application.arguments && Qt.application.arguments.length > 0) {
+            if (Qt.application.arguments && Qt.application.arguments.length > 0) {
 
                 for (var i = 0; i < Qt.application.arguments.length; i++) {
                     if (Qt.application.arguments[i].match(/^linphone/)) {
+                        console.log("Incoming Call on Closed App")
                         showIncomingCall(Qt.application.arguments[i]);
                     }
                 }
@@ -144,6 +131,8 @@ We need to add a little bit `extra code <https://gitlab.com/ubports-linphone/lin
             //Start timer for Registering Status
             checkStatus.start()
         }
+
+Remember to check that %u (to receive 1 URL) or %U (to receive 1 or more URLs) is present under the ``Exec`` line in the `.desktop <https://gitlab.com/ubports-linphone/linphone-simple/-/blob/master/linphone.desktop.in#L7>`_ file of the app.
 
 What happens if more than one app has the same URL type defined?
 ----------------------------------------------------------------

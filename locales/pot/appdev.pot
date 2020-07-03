@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-26 10:25-0500\n"
+"POT-Creation-Date: 2020-07-03 06:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -393,30 +393,38 @@ msgid "After the ``URLdispatcher`` sends the link to the correspondent app, we n
 msgstr ""
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:92
-msgid "In the main qml file, we need to add some code to know what to do with the dispatched URL. First add an `Arguments element <https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L189>`_ that holds the URL, as is done, for example, in the `Linphone app <https://open-store.io/app/linphone.cibersheep>`_. Also, we add `connection to the URI Handler <https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L200>`_ with a Connection element with ``UriHandler`` as a target."
+msgid "In the main qml file, we need to add some code to know what to do with the dispatched URL. Let's add `connection to the URI Handler <https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L200>`_ with a Connection element with ``UriHandler`` as a target."
 msgstr ""
 
-#: ../../appdev/guides/importing-CH-urldispatcher.rst:120
-msgid "This code will manage a URI in the form ``linphone://sip:xxx@xxx.xx`` when the app is opened. But what do we need to do to handle this link when the app is closed?"
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:109
+msgid "This code will manage an URI in the form ``linphone://sip:xxx@xxx.xx`` when the app is opened. But what do we need to do to handle this link when the app is closed?"
 msgstr ""
 
-#: ../../appdev/guides/importing-CH-urldispatcher.rst:122
-msgid "We need to add a little bit `extra code <https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L69>`_ that will cover two cases: 1) We receive one URL 2) We receive more than one URL"
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:111
+msgid "We need to add a little bit `extra code <https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L76>`_ that will cover two cases: 1) We receive one URL 2) We receive more than one URL"
 msgstr ""
 
-#: ../../appdev/guides/importing-CH-urldispatcher.rst:149
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:115
+msgid "Let's check if ``Qt.application.arguments`` is not empty and if not, if any argument matches our URI format."
+msgstr ""
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:135
+msgid "Remember to check that %u (to receive 1 URL) or %U (to receive 1 or more URLs) is present under the ``Exec`` line in the `.desktop <https://gitlab.com/ubports-linphone/linphone-simple/-/blob/master/linphone.desktop.in#L7>`_ file of the app."
+msgstr ""
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:138
 msgid "What happens if more than one app has the same URL type defined?"
 msgstr ""
 
-#: ../../appdev/guides/importing-CH-urldispatcher.rst:151
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:140
 msgid "A very good question. What happens if we tap on a Twitter link? How is such a URL handled by the ``URLdispatcher`` as protocol ``http`` or the protocol ``http://twitter``?"
 msgstr ""
 
-#: ../../appdev/guides/importing-CH-urldispatcher.rst:153
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:142
 msgid "What happens if two apps have the same defined protocol?"
 msgstr ""
 
-#: ../../appdev/guides/importing-CH-urldispatcher.rst:155
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:144
 msgid "Now it’s time to do some tests and share the results in the next guide."
 msgstr ""
 
@@ -2107,3 +2115,4 @@ msgstr ""
 #: ../../appdev/webapp/webdebug.rst:27
 msgid "Now on your computer, launch Chrome/Chromium browser, and point address to ``http://YOUR_UT_IP_ADDRESS:9221``"
 msgstr ""
+
