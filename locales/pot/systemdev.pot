@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-03 03:51+0100\n"
+"POT-Creation-Date: 2019-09-02 14:08-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -215,70 +215,6 @@ msgstr ""
 
 #: ../../systemdev/online-accounts.rst:50
 msgid "At this point, repeat the operation that was failing, and you'll get all debugging output printed on the console."
-msgstr ""
-
-#: ../../systemdev/qtmir-qtubuntu.rst:2
-msgid "QtMir and QtUbuntu"
-msgstr ""
-
-#: ../../systemdev/qtmir-qtubuntu.rst:4
-msgid "`QtMir`_ and `QtUbuntu`_ are `Qt Platform Abstractions`_ (QPAs) for the Ubuntu Touch platform. QtMir can be thought of as a server for Unity8 while QtUbuntu is used for client applications. Each of them allows their respective domains to use Qt's high-level abstractions of surfaces, windows, controls, and more, without worrying about the underlying operating system."
-msgstr ""
-
-#: ../../systemdev/qtmir-qtubuntu.rst:7
-msgid "QtMir"
-msgstr ""
-
-#: ../../systemdev/qtmir-qtubuntu.rst:9
-msgid "The `QtMir`_ QPA allows Unity8, the shell of Ubuntu Touch, to be written in QML and Qt C++ while operating on Mir Surfaces and Windows. It also allows the desktop to be represented and reasoned about as a `Qt Scene Graph`_."
-msgstr ""
-
-#: ../../systemdev/qtmir-qtubuntu.rst:11
-msgid "You'll find most of QtMir's logging in Unity8's logs, normally stored at ``/home/phablet/.cache/upstart/unity8`` on Ubuntu Touch. Different logging categories, like ``qtmir.sessions`` and ``qtmir.surfaces``, relate directly to different modules within QtMir's codebase."
-msgstr ""
-
-#: ../../systemdev/qtmir-qtubuntu.rst:13
-msgid "While Unity8 shows almost all QtMir logging by default, you can enable even more verbose logging by placing the following content in the file ``/usr/share/upstart/sessions/unity8.override``:"
-msgstr ""
-
-#: ../../systemdev/qtmir-qtubuntu.rst:19
-msgid "Then restart Unity8:"
-msgstr ""
-
-#: ../../systemdev/qtmir-qtubuntu.rst:26
-msgid "QtUbuntu"
-msgstr ""
-
-#: ../../systemdev/qtmir-qtubuntu.rst:28
-msgid "The `QtUbuntu`_ QPA uses the `Mir client API`_ and `Ubuntu Platform API`_ to provide Ubuntu Touch apps with a stable hardware compatibility API."
-msgstr ""
-
-#: ../../systemdev/qtmir-qtubuntu.rst:30
-msgid "Since QtUbuntu is used directly by apps, any logging output from it will be located in an app's log file. Most of the time, QtUbuntu gives no logging output. However, if you would like to receive more output, you can set the ``QT_LOGGING_RULES`` environment variable appropriately. Since apps on Ubuntu Touch are started using Upstart's user session, you can set this for all apps until you restart your device with the following command:"
-msgstr ""
-
-#: ../../systemdev/qtmir-qtubuntu.rst:36
-msgid "We plan to replace QtUbuntu with QtWayland in the future."
-msgstr ""
-
-#: ../../systemdev/qtmir-qtubuntu.rst:39
-msgid "Components"
-msgstr ""
-
-#: ../../systemdev/qtmir-qtubuntu.rst:41
-msgid "QtUbuntu has a number of sub-components to provide other features in the Ubuntu Touch platform. In theory, these could be used on other platforms to provide similar features. In practice, this has never happened."
-msgstr ""
-
-#: ../../systemdev/qtmir-qtubuntu.rst:43
-msgid "`QtUbuntu-Camera`_ provides the ``aalCamera`` (Android Abstraction Layer Camera) plugin to `QtMultimedia`_. This plugin allows apps to access Android device cameras through the QtMultimedia standard API. We are trying to replace this component with the `gst-droid`_ plugin for GStreamer for all new Android device ports."
-msgstr ""
-
-#: ../../systemdev/qtmir-qtubuntu.rst:45
-msgid "`QtUbuntu-Sensors`_ provides Android haptic feedback, GPS, orientation, and accelerometer sensors to `QtSensors`_. We are trying to replace this component with `sensorfw`_, a single daemon capable of providing these functions using Android or standard Linux kernel drivers."
-msgstr ""
-
-#: ../../systemdev/qtmir-qtubuntu.rst:47
-msgid "`QtUbuntu-Media`_ provides hardware encoding and decoding of audio/video content on Android devices to `QtMultimedia`_. It is tightly integrated with `media-hub`_."
 msgstr ""
 
 #: ../../systemdev/testing-locally.rst:2

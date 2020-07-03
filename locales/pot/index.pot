@@ -8,13 +8,43 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-03 03:51+0100\n"
+"POT-Creation-Date: 2019-04-08 17:32-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: ../../index.rst:23
+#: ../../index.rst:23
+msgid "About"
+msgstr ""
+
+#: ../../index.rst:32
+#: ../../index.rst:32
+msgid "User Guide"
+msgstr ""
+
+#: ../../index.rst:42
+#: ../../index.rst:42
+msgid "Contribute"
+msgstr ""
+
+#: ../../index.rst:50
+#: ../../index.rst:50
+msgid "Development"
+msgstr ""
+
+#: ../../index.rst:58
+#: ../../index.rst:58
+msgid "Porting"
+msgstr ""
+
+#: ../../index.rst:66
+#: ../../index.rst:66
+msgid "Platform"
+msgstr ""
 
 #: ../../index.rst:2
 msgid "Welcome to the UBports documentation!"
@@ -70,33 +100,5 @@ msgstr ""
 
 #: ../../index.rst:21
 msgid "`Español <https://docs.ubports.com/es/latest/>`_"
-msgstr ""
-
-#: ../../index.rst:22
-msgid "`Simplified Chinese <https://docs.ubports.com/zh_CN/latest/>`_"
-msgstr ""
-
-#: ../../index.rst:24
-msgid "About"
-msgstr ""
-
-#: ../../index.rst:33
-msgid "User Guide"
-msgstr ""
-
-#: ../../index.rst:43
-msgid "Contribute"
-msgstr ""
-
-#: ../../index.rst:51
-msgid "Development"
-msgstr ""
-
-#: ../../index.rst:60
-msgid "Porting"
-msgstr ""
-
-#: ../../index.rst:68
-msgid "Platform"
 msgstr ""
 
