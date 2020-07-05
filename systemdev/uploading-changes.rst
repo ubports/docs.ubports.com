@@ -133,7 +133,7 @@ We'll use ``ubports-qa`` to install your changes. Take note of your pull request
 
 #. Ensure your device is running the newest version of Ubuntu Touch from the ``devel`` channel.
 #. Get shell access to your device using :doc:`/userguide/advanceduse/adb` or :doc:`/userguide/advanceduse/ssh`.
-#. Run ``sudo ubports-qa install REPOSITORY PR``, replacing ``REPOSITORY`` with the name of the repository you have submitted a PR to (``morph-browser`` for example) and PR with the number of your pull request (without the ``#``).
+#. Run ``sudo ubports-qa install REPOSITORY PR``, replacing ``REPOSITORY`` with the name of the repository you have submitted a PR to and ``PR`` with the number of your pull request without the ``#``. For example run ``sudo ubports-qa morph-browser 123`` to install the PR number 123 to morph browser repo.
 
 ``ubports-qa`` will automatically add the repository containing your changed software and start the installation for you. All you will need to do is check the packages it asks you to install and say "yes" if they are correct.
 
