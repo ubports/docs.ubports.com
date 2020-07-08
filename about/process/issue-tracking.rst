@@ -63,8 +63,7 @@ Here's a list of labels that are normally used by all repositories.
   provide a link and close.
 - **help wanted**: This issue is ready to be picked up by a community
   developer.
-- **good first issue**: This issue is not critical and trivial to fix. It
-  is reserved for new contributors as a place to start.
+- **good first issue**: The report contains instructions or hints required to fix it. It is an excellent place for someone new to learn about the project by fixing a real issue.
 - **wontfix**: It does not make sense to fix this bug, since it will
   probably resolve itself, it will be too much work to fix it, it's not
   fixable, or an underlying component will soon change.
