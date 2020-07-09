@@ -25,6 +25,13 @@ Tools
 
 `Clickable <http://clickable.bhdouglass.com/en/latest/>`_ is a meta-build system for Ubuntu Touch applications that allows you to compile, build, test and publish ``click`` packages and provides various templates to get you started with app development. It is currently the easiest and most convenient way of building click packages for Ubuntu Touch. You can use any code editor or IDE that you choose and build your apps from the commandline with Clickable.
 
+Code Editor Integrations
+------------------------
+
+Use clickable with the `Atom Editor <https://atom.io>`__ by installing `atom-clickable-plugin <https://atom.io/packages/atom-clickable-plugin>`__.
+This is an fork of the original (now unmaintained) `atom-build-clickable <https://atom.io/packages/atom-build-clickable>`__
+made by Stefano.
+
 Alternatively there is the old `Ubuntu SDK IDE <https://docs.ubuntu.com/phone/en/platform/sdk>`__. Be aware that it is no longer supported by Canonical, and UBports has chosen to not support it either due to lack of manpower.
 
 You can still install the SDK IDE in Ubuntu 16.04, but it is not guaranteed to work correctly. You can use the following commands to install::
