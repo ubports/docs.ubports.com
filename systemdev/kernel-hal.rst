@@ -22,7 +22,7 @@ Android 5.1 based ports
 
 Android 5.1 based ports of Ubuntu Touch consist of the Linux kernel for this device plus a minimal Android system that is used to enable all the hardware. Every device has it's own fork of the Linux kernel. They are all heavily modified for the specific hardware used in that device. These forks are also based off quite old Linux kernel versions.
 
-For some devices continuous integration (CI) has been set up to build both the Kernel as well as the Android system. Other devices have to be built manually from their repositories. For a third group of devices, we do not unfortunately, have the source code available. The manufacturers of these devices provided the binary builds instead.
+For some devices continuous integration (CI) has been set up to build both the Kernel as well as the Android system. Other devices have to be built manually from their repositories. For a third group of devices, we do not unfortunately, have the full source code available. The Bq and Meizu devices have kernel sources, but the "Android device tree" is not publicly available. The manufacturers of these devices provided binary builds instead.
 
 * With CI
    * Nexus 5 (hammerhead)
@@ -31,13 +31,13 @@ For some devices continuous integration (CI) has been set up to build both the K
 * Manual builds
    * Nexus 4 (mako)
    * Nexus 7 2013 Wifi (flo)
-* Prebuilt binaries
-   * Bq Aquaris E4.5 (krillin)
-   * Bq Aquaris E5 (vegetahd)
-   * Bq Aquaris M10 HD (cooler)
+* (Partial) Binary builds
+   * Bq Aquaris E4.5 (`krillin<https://github.com/ubports/kernel_krillin>`_)
+   * Bq Aquaris E5 (`vegetahd<https://github.com/ubports/kernel_vegetahd>`_)
+   * Bq Aquaris M10 HD (`cooler<https://github.com/ubports/kernel_bq_m10>`_)
    * Bq Aquaris M10 FHD (frieza)
-   * Meizu MX4 (arale)
-   * Meizu Pro 5 (turbo)
+   * Meizu MX4 (`arale<https://github.com/ubports/kernel_arale>`_)
+   * Meizu Pro 5 (`turbo<https://github.com/ubports/kernel_turbo>`_)
    * Nexus 7 2013 GSM (deb)
 
 Detailed steps for the three CI enabled devices can be found under  :doc:`HAL for Nexus 5, OnePlus One, and Fairphone 2 <ubp-5.1>`.
