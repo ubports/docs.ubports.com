@@ -28,9 +28,7 @@ Tools
 Code Editor Integrations
 ------------------------
 
-Use clickable with the `Atom Editor <https://atom.io>`__ by installing `atom-clickable-plugin <https://atom.io/packages/atom-clickable-plugin>`__.
-This is an fork of the original (now unmaintained) `atom-build-clickable <https://atom.io/packages/atom-build-clickable>`__
-made by Stefano.
+You can use clickable with the `Atom Editor <https://atom.io>`__ by installing the `atom-clickable-plugin <https://atom.io/packages/atom-clickable-plugin>`__.
 
 Alternatively there is the old `Ubuntu SDK IDE <https://docs.ubuntu.com/phone/en/platform/sdk>`__. Be aware that it is no longer supported by Canonical, and UBports has chosen to not support it either due to lack of manpower.
 
