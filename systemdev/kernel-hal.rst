@@ -32,12 +32,12 @@ For some devices continuous integration (CI) has been set up to build both the K
    * Nexus 4 (mako)
    * Nexus 7 2013 Wifi (flo)
 * (Partial) Binary builds
-   * Bq Aquaris E4.5 (`krillin<https://github.com/ubports/kernel_krillin>`_)
-   * Bq Aquaris E5 (`vegetahd<https://github.com/ubports/kernel_vegetahd>`_)
-   * Bq Aquaris M10 HD (`cooler<https://github.com/ubports/kernel_bq_m10>`_)
+   * Bq Aquaris E4.5 (`krillin <https://github.com/ubports/kernel_krillin>`_)
+   * Bq Aquaris E5 (`vegetahd <https://github.com/ubports/kernel_vegetahd>`_)
+   * Bq Aquaris M10 HD (`cooler <https://github.com/ubports/kernel_bq_m10>`_)
    * Bq Aquaris M10 FHD (frieza)
-   * Meizu MX4 (`arale<https://github.com/ubports/kernel_arale>`_)
-   * Meizu Pro 5 (`turbo<https://github.com/ubports/kernel_turbo>`_)
+   * Meizu MX4 (`arale <https://github.com/ubports/kernel_arale>`_)
+   * Meizu Pro 5 (`turbo <https://github.com/ubports/kernel_turbo>`_)
    * Nexus 7 2013 GSM (deb)
 
 Detailed steps for the three CI enabled devices can be found under  :doc:`HAL for Nexus 5, OnePlus One, and Fairphone 2 <ubp-5.1>`.
