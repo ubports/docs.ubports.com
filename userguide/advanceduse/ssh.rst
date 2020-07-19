@@ -33,7 +33,7 @@ Let's assume it's stored as ``/home/phablet/id_rsa.pub``. Use the terminal app o
     chmod 700 /home/phablet/.ssh
     cat /home/phablet/id_rsa.pub >> /home/phablet/.ssh/authorized_keys
     chmod 600 /home/phablet/.ssh/authorized_keys 
-    chown -R phablet.phablet /home/phablet/.ssh
+    chown -R phablet:phablet /home/phablet/.ssh
 
 Now start the ssh server::
 
