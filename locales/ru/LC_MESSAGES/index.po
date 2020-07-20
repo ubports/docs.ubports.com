@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-08 17:32-0500\n"
-"PO-Revision-Date: 2020-02-27 04:21+0000\n"
+"PO-Revision-Date: 2020-06-27 15:19+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-index/ru/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
 "4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.8\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #: ../../index.rst:23
 #: ../../index.rst:23
@@ -32,9 +32,8 @@ msgstr "Руководство пользователя"
 
 #: ../../index.rst:42
 #: ../../index.rst:42
-#, fuzzy
 msgid "Contribute"
-msgstr "Сделать вклад"
+msgstr "Внести вклад"
 
 #: ../../index.rst:50
 #: ../../index.rst:50
@@ -71,12 +70,13 @@ msgstr ""
 #: ../../index.rst:8
 msgid "On this website you find guides to :doc:`install Ubuntu Touch on your mobile phone <userguide/install>`, :doc:`use Ubuntu Touch <userguide/dailyuse/index>`, :doc:`develop Ubuntu Touch apps <appdev/index>`, :doc:`port Ubuntu Touch to an Android handset <porting/introduction>` and :doc:`learn more about system components <systemdev/index>`. If this is your first time here, please consider reading our :doc:`introduction <about/introduction>`."
 msgstr ""
-"На этом сайте Вы можете прочитать руководства :doc:`install Ubuntu Touch on "
-"your mobile phone <userguide/install>`, :doc:`use Ubuntu Touch <userguide/"
-"dailyuse/index>`, :doc:`develop Ubuntu Touch apps <appdev/index>`, :doc:`"
-"port Ubuntu Touch to an Android handset <porting/introduction>`и :doc:`learn "
-"more about system components <systemdev/index>`. Если Вы зашли сюда впервые, "
-"пожалуйста ознакомьтесь с разделом :doc:`introduction <about/introduction>`."
+"На этом сайте Вы можете прочитать руководства :doc:`Установка Ubuntu Touch "
+"на мобильные устройства <userguide/install>`, :doc:`Работа с ОС Ubuntu Touch "
+"<userguide/dailyuse/index>`, :doc:`Разработка приложений для Ubuntu Touch <"
+"appdev/index>`, :doc:`Портирование Ubuntu Touch на устройства платформы "
+"Android <porting/introduction>`и :doc:`узнать больше информации про "
+"компоненты системы <systemdev/index>`. Если Вы зашли сюда впервые, "
+"пожалуйста прочитайте главу :doc:`Введение <about/introduction>`."
 
 #: ../../index.rst:10
 msgid "If you want to help improving this documentation, :doc:`the Documentation contribute page <contribute/documentation>` will get you started."

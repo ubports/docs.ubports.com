@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 14:08-0500\n"
-"PO-Revision-Date: 2020-03-13 16:22+0000\n"
+"PO-Revision-Date: 2020-06-24 16:25+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-contribute/ru/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
 "4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.8\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #: ../../contribute/bugreporting.rst:2
 msgid "Bug reporting"
@@ -282,7 +282,6 @@ msgid "Incorrect casing"
 msgstr "Некорректный регистр букв"
 
 #: ../../contribute/documentation.rst:52
-#, fuzzy
 msgid "Underline too short"
 msgstr "Линия подчёркивания слишком короткая"
 
@@ -337,7 +336,6 @@ msgstr ""
 "В предыдущем примере новая страница добавлена в конец документа и оглавления."
 
 #: ../../contribute/documentation.rst:108
-#, fuzzy
 msgid "Warnings"
 msgstr "Предупреждения и ошибки"
 
@@ -469,13 +467,13 @@ msgid "If you've written a complete document in ReStructuredText but aren't comf
 msgstr ""
 "Если Вы подготовили документ в формате ReStructuredText, но по каким-то "
 "причинам не можете использовать Git или GitHub, пожалуйста, опубликуйте его "
-"в в соответствующем разделе  форума `UBports Forum`_ (например,  в разделе "
+"в в соответствующем разделе форума `UBports Forum`_ (например, в разделе "
 "General). Кто-нибудь из пользователей посмотрит черновик и перенесёт его в "
 "раздел документации."
 
 #: ../../contribute/documentation.rst:163
 msgid "Current TODOs"
-msgstr ""
+msgstr "Планы по дополнению и развитию этого раздела"
 
 #: ../../contribute/documentation.rst:165
 msgid "This section lists the TODOs that have been included in this documentation. If you know how to fix one, please send us a Pull Request to make it better!"
