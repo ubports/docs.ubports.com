@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2020-04-15 17:23+0000\n"
-"Last-Translator: Anne Onyme <anneonyme017@netcourrier.com>\n"
+"PO-Revision-Date: 2020-06-27 12:49+0000\n"
+"Last-Translator: Max Libre <libremax@protonmail.com>\n"
 "Language-Team: French <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-userguide/fr/>\n"
 "Language: fr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.8\n"
+"X-Generator: Weblate 3.11.3\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../userguide/advanceduse/adb.rst:2
@@ -29,9 +29,9 @@ msgid ""
 "You can put your UBports device into developer mode and access a Bash shell "
 "from your PC. This is useful for debugging or more advanced shell usage."
 msgstr ""
-"Votre appareil fonctionnant sous UBports peut être mis en mode développeur, "
-"vous permettant alors d'accéder à un shell Bash sur cet appareil depuis "
-"votre PC. C'est pratique pour le débogage ou aussi pour un usage plus avancé "
+"Vous pouvez mettre votre appareil UBports en mode développeur, vous "
+"permettant alors d'accéder à un shell Bash sur cet appareil depuis votre "
+"ordinateur. C'est pratique pour déboguer ou aussi pour un usage plus avancé "
 "du shell."
 
 #: ../../userguide/advanceduse/adb.rst:8
@@ -40,7 +40,7 @@ msgstr "Installer ADB (Android Debug Bridge)"
 
 #: ../../userguide/advanceduse/adb.rst:10
 msgid "First, you'll need ADB installed on your computer."
-msgstr "Tout d'abord, il est nécessaire d'installer ADB sur votre PC."
+msgstr "Tout d'abord, il est nécessaire d'installer ADB sur votre ordinateur."
 
 #: ../../userguide/advanceduse/adb.rst:12
 msgid "On Ubuntu::"
@@ -80,7 +80,7 @@ msgid ""
 "Place your device into developer mode (Settings - About - Developer Mode - "
 "check the box to turn it on)"
 msgstr ""
-"Activez le mode développeur (Paramètres système - A propos de - Mode "
+"Activez le mode développeur (Paramètres système - À propos de - Mode "
 "développeur - cochez la case pour l'activer)"
 
 #: ../../userguide/advanceduse/adb.rst:33
@@ -105,13 +105,13 @@ msgid ""
 "devices attached\" and a blank line), you are able to use ADB successfully. "
 "If not, continue to the next section."
 msgstr ""
-"Si il y a bien un appareil dans cette liste (La commande n’affiche pas "
-"\"List of devices attached\" et une ligne vide), vous devriez alors pouvoir "
+"S'il y a bien un appareil dans cette liste (La commande n’affiche pas \"List "
+"of devices attached\" et une ligne vide), vous devriez alors pouvoir "
 "utiliser ADB avec succès. Sinon, continuez à la rubrique suivante."
 
 #: ../../userguide/advanceduse/adb.rst:42
 msgid "Add hardware IDs"
-msgstr "Ajouter des identifiants matériels"
+msgstr "Ajouter des identifiants de matériels"
 
 #: ../../userguide/advanceduse/adb.rst:44
 msgid ""
@@ -128,7 +128,7 @@ msgid ""
 "Just run the command for your selected device if it's below. Then, run ``adb "
 "kill-server`` followed by the command you were initially trying to run."
 msgstr ""
-"Lancez la commande seulement pour l'appareil sélectionné si il est dessous. "
+"Lancez la commande seulement pour l'appareil sélectionné s'il est dessous. "
 "Ensuite, lancez ``adb kill-server`` suivi par la commande que vous aviez "
 "initialement essayé de lancer."
 
@@ -195,9 +195,9 @@ msgid ""
 "bastos77/0c47a94dd0bf3e394f879c0ff42b7839>`_ (let's call it dav.sh) and edit "
 "the following variables:"
 msgstr ""
-"Téléchargez ce `script <https://gist.github.com/"
-"bastos77/0c47a94dd0bf3e394f879c0ff42b7839>`_ (appelons le dav.sh) et "
-"modifiez les variables suivantes:"
+"Téléchargez ce `script <https://gist.github.com/bastos77/"
+"0c47a94dd0bf3e394f879c0ff42b7839>`_ (appelons le dav.sh) et modifiez les "
+"variables suivantes :"
 
 #: ../../userguide/advanceduse/dav.rst:15
 msgid ""
@@ -232,7 +232,7 @@ msgid ""
 "Move the file to your Ubuntu Touch device, either by file manager or with "
 "adb::"
 msgstr ""
-"Déplacez le fichier sur votre appareil UbuntuTouch, avec le gestionnaire de "
+"Déplacez le fichier sur votre appareil Ubuntu Touch, avec le gestionnaire de "
 "fichiers ou avec adb::"
 
 #: ../../userguide/advanceduse/dav.rst:24
@@ -281,8 +281,8 @@ msgid ""
 "may want to perform on their Ubuntu Touch device."
 msgstr ""
 "Cette rubrique de la documentation détaille les tâches avancées que les "
-"utilisateurs confirmés sont susceptible d'effectuer sur leur appareil Ubuntu "
-"Touch."
+"utilisateurs confirmés sont susceptibles d'effectuer sur leur appareil "
+"Ubuntu Touch."
 
 #: ../../userguide/advanceduse/index.rst:7
 msgid ""
@@ -295,7 +295,7 @@ msgstr ""
 "modifiable, ce qui peut éventuellement casser les mises à jour OTA. Ils "
 "peuvent aussi mener à la réduction du niveau de sécurité de votre appareil "
 "Ubuntu Touch. Veuillez considérer ces éventualités avant de trop vous "
-"avancer dans les hacks de votre appareil !"
+"avancer dans la personnalisation de votre appareil !"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:2
 msgid "Reverse tethering"
@@ -308,16 +308,16 @@ msgid ""
 "you to connect your Ubuntu Touch to your computer to access internet."
 msgstr ""
 "Certains utilisateurs peuvent ne pas disposer d'une connexion wifi sur leur "
-"téléphone ni d'un abonnement data chez leur opérateur mobile. Ce petit "
-"tutoriel va vous aider à connecter votre Ubuntu Touch à votre ordinateur "
-"pour bénéficier de l’accès à Internet."
+"téléphone ni d'un abonnement de données chez leur opérateur mobile. Ce petit "
+"tutoriel va vous aider à connecter votre appareil Ubuntu Touch à votre "
+"ordinateur pour bénéficier de l’accès à Internet."
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:7
 msgid ""
 "Prerequisite: Phone is connected to the computer with usb and developer mode "
 "enabled."
 msgstr ""
-"Prérequis: Le téléphone est connecté à l'ordinateur via usb et le mode "
+"Prérequis : le téléphone est connecté à l'ordinateur via usb et le mode "
 "développeur est activé."
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:10
@@ -326,7 +326,7 @@ msgstr "Étapes"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:12
 msgid "On phone: ``android-gadget-service enable rndis``"
-msgstr "Sur le téléphone: ``android-gadget-service enable rndis``"
+msgstr "Sur le téléphone : ``android-gadget-service enable rndis``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:14
 msgid "On computer: get your rndis ip address e.g:``hostname -I``"
@@ -390,7 +390,7 @@ msgstr ""
 msgid "Screen Casting your UT device to your computer"
 msgstr ""
 "Faire une diffusion en temps réel de l'écran de votre appareil UT sur votre "
-"PC"
+"ordinateur"
 
 #: ../../userguide/advanceduse/screencasting.rst:5
 msgid ""
@@ -514,7 +514,7 @@ msgid ""
 "or more advanced shell usage."
 msgstr ""
 "Vous pouvez utiliser ssh pour accéder au shell depuis votre PC. Ceci est "
-"utile pour le débogage ou un usage plus avancé du shell."
+"utile pour déboguer ou pour un usage plus avancé du shell."
 
 #: ../../userguide/advanceduse/ssh.rst:6
 msgid ""

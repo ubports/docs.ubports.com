@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 15:16-0500\n"
-"PO-Revision-Date: 2020-06-12 13:24+0000\n"
+"PO-Revision-Date: 2020-06-24 16:25+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
 "4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.8\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #: ../../appdev/guides/contenthub.rst:4
 msgid "The content hub - tips and tricks"
@@ -163,7 +163,7 @@ msgstr "Подождите, почему приложения разные?"
 
 #: ../../appdev/guides/contenthub.rst:104
 msgid "Content Hub: Export vs Share"
-msgstr "Content Hub: Экспорт или Общий доступ ?"
+msgstr "Content Hub: Экспорт или Общий доступ?"
 
 #: ../../appdev/guides/contenthub.rst:106
 msgid "Each developer can decide the rules each app would follow in relation to the Content Hub. Why the OpenStore is shown as the destination of an export?"
@@ -2420,7 +2420,7 @@ msgstr "Как веб-приложение встраивается в обол�
 #: ../../appdev/webapp/guide.rst:7
 msgid "A web app displays in a webview inside a webapp-container that runs as an Ubuntu app in the Ubuntu/Unity shell."
 msgstr ""
-"Веб-приложение представлено в формате в веб-контейнера , который запускается "
+"Веб-приложение представлено в формате в веб-контейнера, который запускается "
 "как приложение Ubuntu в оболочке Ubuntu/Unity."
 
 #: ../../appdev/webapp/guide.rst:9
@@ -2463,267 +2463,398 @@ msgstr "Пользовательский интерфейс"
 #: ../../appdev/webapp/guide.rst:31
 msgid "A webapp generally fills the entire app screen space, without the need of the UI controls generally found on standard browsers."
 msgstr ""
+"Веб-приложение обычно разворачивается на все рабочее пространство на экране "
+"устройства без необходимости использования элементов управления "
+"пользовательского интерфейса стандартных браузеров."
 
 #: ../../appdev/webapp/guide.rst:33
 msgid "In some cases some navigation controls are appropriate, such as Back and Forward buttons, or a URL address bar. These are added as command line arguments:"
 msgstr ""
+"В некоторых случаях подходят некоторые элементы навигации, например кнопки "
+"«Назад» и «Вперед» или адресная строка URL. Они добавляются в качестве "
+"аргументов командной строки:"
 
 #: ../../appdev/webapp/guide.rst:35
 msgid "``--enable-back-forward`` Enable the display of the back and forward buttons in the toolbar (at the bottom of the webapp window)"
 msgstr ""
+"``--enable-back-forward``. Включение отображение кнопок «назад» и «вперед» "
+"на панели инструментов (в нижней части окна веб-приложения)"
 
 #: ../../appdev/webapp/guide.rst:36
 msgid "``--enable-addressbar`` Enable the display of the address bar (at the bottom of the webapp window)"
 msgstr ""
+"``--enable-addressbar``. Включение отображение адресной строки (внизу окна "
+"веб-приложения)"
 
 #: ../../appdev/webapp/guide.rst:39
 msgid "URL patterns"
-msgstr ""
+msgstr "URL-шаблоны"
 
 #: ../../appdev/webapp/guide.rst:41
 msgid "Webapp authors often want to contain browsing to the target website. That is, the developer wants to control the URLs that can be opened in the webapp (all other URLs are opened in the browser). This is done with URL patterns as part of the webapp command line."
 msgstr ""
+"Разработчики веб-приложений часто хотят ограничить доступ к сайту-источнику. "
+"То есть разработчик хочет контролировать URL-адреса, которые можно открыть в "
+"веб-приложении (все остальные URL-адреса открываются в браузере). Это "
+"делается с помощью URL-шаблонов  в командной строке через ключи для запуска "
+"webapp."
 
 #: ../../appdev/webapp/guide.rst:43
 msgid "However, many web apps use pages that are hosted over multiple sites or that use external resources and pages."
 msgstr ""
+"Однако многие веб-приложения используют страницы, размещенные на нескольких "
+"сайтах или внешних ресурсах."
 
 #: ../../appdev/webapp/guide.rst:45
 msgid "However, both containment and access to specified external URLs are implemented with URL patterns provided as arguments at launch time. Let’s take a closer look."
 msgstr ""
+"Ограничение или доступ к указанным внешним URL-адресам реализуется с помощью "
+"шаблонов URL-адресов, предоставляемых в качестве аргументов во время "
+"запуска. Давайте посмотрим поближе."
 
 #: ../../appdev/webapp/guide.rst:48
 msgid "Uncontained by default"
-msgstr ""
+msgstr "По умолчанию - нет контейнера"
 
 #: ../../appdev/webapp/guide.rst:50
 msgid "By default, there is no URL containment. Suppose you launch a webapp without any patters and only a starting URL like this:::"
 msgstr ""
+"По умолчанию, URL отсутствует. Предположим, Вы запускаете веб-приложение без "
+"каких-либо шаблонов, и  в нём есть только URL-адрес, например:::"
 
 #: ../../appdev/webapp/guide.rst:54
 msgid "The user can navigate to any URL without limitation. For example, if they click the Developer button at the top, they navigate to developer.ubuntu.com, and it displays in the webapp."
 msgstr ""
+"Пользователь может перейти на любой сайт без ограничений. Например, если "
+"нажать на кнопку  «Developer»  ( «режим разработчика») вверху, то откроется "
+"сайт developer.ubuntu.com."
 
 #: ../../appdev/webapp/guide.rst:56
 msgid "Tip: You can see the URL of the current page by enabling the address bar with ``--enable-addressbar``."
 msgstr ""
+"Примечание: можно увидеть URL-адрес, если включить адресную строку командой "
+"``--enable-addressbar``."
 
 #: ../../appdev/webapp/guide.rst:59
+#, fuzzy
 msgid "Simple containment to the site"
-msgstr ""
+msgstr "Простые методики ограничения пользовательской активности на сайте"
 
 #: ../../appdev/webapp/guide.rst:61
 msgid "One often wants to contain users to the site itself. That is, if the website is www.ubuntu.com, it may be useful to contain webapp users only to subpages of www.ubuntu.com. This is done by adding a wildcard URL pattern to the launch command, as follows:::"
 msgstr ""
+"Часто хочется ограничить активность пользователя только одним сайтом. "
+"Например, веб-сайт www.ubuntu.com не пускает пользователей своего веб-"
+"приложения дальше домена ubuntu.com. Это можно сделать, если добавить "
+"шаблонURL-адреса с подстановочными символами в команду запуска, как показано "
+"ниже :::"
 
 #: ../../appdev/webapp/guide.rst:67
+#, fuzzy
 msgid "``--webappUrlPatterns=`` indicates a pattern is next"
-msgstr ""
+msgstr "``--webappUrlPatterns=`` указывает на то, что шаблон следующий"
 
 #: ../../appdev/webapp/guide.rst:66
 msgid "http://www.ubuntu.com/* is the pattern The asterisk is a wildcard that matches any valid sequence of trailing (right-most) characters in a URL"
 msgstr ""
+"http://www.ubuntu.com/* - в этом случае звездочка - это подстановочный знак, "
+"после него может идти любая последовательность символов в URL-адресе"
 
 #: ../../appdev/webapp/guide.rst:69
 msgid "With this launch command and URL pattern, the user can navigate to and open in the webapp any URL that starts with http://www.ubuntu.com/. For example, they can click on the Phone button (http://www.ubuntu.com/phone) in the banner and it opens in the webapp, or the Tablet button (http://www.ubuntu.com/tablet). But, clicking Developer opens the corresponding URL in the browser."
 msgstr ""
+"С помощью этой команды и шаблона URL пользователь может перейти и открыть в "
+"веб-приложении любой URL-адрес, начинающийся с http://www.ubuntu.com/. "
+"Например, клик по кнопке «Телефон» (http://www.ubuntu.com/phone) или "
+"«Планшет» (http://www.ubuntu.com/tablet) на баннере откроет соответствующие "
+"страницы в веб-приложении. Но, если кликнуть на клавишу «Разработчик», то "
+"страничка откроется в браузере."
 
 #: ../../appdev/webapp/guide.rst:71
 msgid "Tip: Make sure to fully specify the subdomain in your starting URL, that is, use http://www.ubuntu.com instead of www.ubuntu.com. Not specifying the subdomain would create an ambiguous URL and thus introduces security concerns."
 msgstr ""
+"Примечание: необходимо полностью указать имя домена. Например, http://"
+"www.ubuntu.com, а не www.ubuntu.com. Если не будет указан субдомен, это "
+"приведет к неправильному URL-адресу и, следовательно, к проблемам "
+"безопасности."
 
 #: ../../appdev/webapp/guide.rst:75
 msgid "More complex wildcard patterns"
-msgstr ""
+msgstr "Более сложные шаблоны"
 
 #: ../../appdev/webapp/guide.rst:77
 msgid "You might want to limit access to only some subpages of your site from within the webapp. This is easy with wildcard patterns. (Links to other subpages are opened in the browser.) For example, the following allows access to www.ubuntu.com/desktop/features and www.ubuntu.com/phone/features while not allowing access to www.ubuntu.com/desktop or www.ubuntu.com/phone::"
 msgstr ""
+"Может возникнуть необходимость ограничить доступ к некоторым разделам сайта "
+"из веб-приложения. Это легко делается с помощью подстановочных шаблонов "
+"(wildcards). Ссылки на другие под-домены открываются в браузере. Например, "
+"вот как получить доступ к страницам www.ubuntu.com/desktop/features и "
+"www.ubuntu.com/phone/features, но при этом запретить открывать страницы "
+"www.ubuntu.com/desktop или www.ubuntu.com/phone::"
 
 #: ../../appdev/webapp/guide.rst:83
 msgid "Multiple patterns"
-msgstr ""
+msgstr "Использование нескольких шаблонов одновременно"
 
 #: ../../appdev/webapp/guide.rst:85
 msgid "You can use multiple patterns by separating them with a comma. For example, the following allows access only to www.ubuntu.com/desktop/features and www.ubuntu.com/phone/features:::"
 msgstr ""
+"Можно использовать несколько шаблонов, разделяя их запятой. Например, в этом "
+"примере разрешим доступ только к страницам www.ubuntu.com/desktop/features и "
+"www.ubuntu.com/phone/features:::"
 
 #: ../../appdev/webapp/guide.rst:89
 msgid "Tip: Multiple patterns are often necessary to achieve the intended containment behavior."
 msgstr ""
+"Примечание: использование нескольких шаблонов обычно необходимо, чтобы "
+"корректно работала необходимая политика ограничения доступа к ресурсам."
 
 #: ../../appdev/webapp/guide.rst:93
 msgid "Adding a specific subdomain"
-msgstr ""
+msgstr "Добавление определенного под-домена"
 
 #: ../../appdev/webapp/guide.rst:95
 msgid "Many URLs have one or more subdomains. (For example, in the following, \"developer\" is the subdomain: developer.ubuntu.com.) You can allow access to a single subdomain (and all of its subpages) with a pattern like this:::"
 msgstr ""
+"У многих URL-адресов имеется один или несколько поддоменов. (Например, в "
+"дальнейших примерах «developer» - это поддомен сайта developer.ubuntu.com). "
+"Можно разрешить доступ к одному поддомену (и всем его подстраницам) с "
+"помощью шаблона:::"
 
 #: ../../appdev/webapp/guide.rst:99
 msgid "However, one usually wants the user to be able to navigate back to the starting URL (and its subpages). So, if the starting URL is http://www.ubuntu.com, a second pattern is needed:::"
 msgstr ""
+"Обычно требуется, чтобы пользователь легко мог вернуться к начальному URL-"
+"адресу. Например, если начальный URL-адрес http://www.ubuntu.com, то нужен "
+"второй шаблон:::"
 
 #: ../../appdev/webapp/guide.rst:103
 msgid "Putting these together, here’s an example that starts on http://www.ubuntu.com and allows navigation to http://developer.ubuntu.com and subpages and back to http://www.ubuntu.com and subpages:::"
 msgstr ""
+"Теперь объединим всё вместе - со странички http://www.ubuntu.com можно "
+"перейти на http://developer.ubuntu.com и вернуться обратно:::"
 
 #: ../../appdev/webapp/guide.rst:108
 msgid "Adding subdomains with a wildcard"
-msgstr ""
+msgstr "Добавление под-доменов с помощью шаблона"
 
 #: ../../appdev/webapp/guide.rst:110
 msgid "Some URLs have multiple subdomains. For example, www.ubuntu.com has design.ubuntu.com, developer.ubuntu.com and more. You can add access to all subdomains with a wildcard in the subdomain position:::"
 msgstr ""
+"В некоторых URL содержится под-доменов. Например, в состав www.ubuntu.com "
+"входят также ресурсы design.ubuntu.com, developer.ubuntu.com и другие. Можно "
+"разрешить доступ ко всем поддоменам с помощью специального символа-шаблона в "
+"строке с под-доменами:::"
 
 #: ../../appdev/webapp/guide.rst:114
 msgid "Note: An asterisk in the subdomain position matches any valid single subdomain. This single pattern is sufficient to enable browsing to any subdomain and subpages, including back to the starting URL (http://www.ubuntu.com) and its subpages."
 msgstr ""
+"Примечание. Звездочка (*) в строке субдомена соответствует любому "
+"допустимому имени под-домена. Этого символа достаточно, чтобы разрешить "
+"просмотр любого под-домена и страниц, в том числе вернуться к начальному URL "
+"(http://www.ubuntu.com)."
 
 #: ../../appdev/webapp/guide.rst:117
 msgid "Adding https"
-msgstr ""
+msgstr "Добавление https"
 
 #: ../../appdev/webapp/guide.rst:119
 msgid "Sometimes a site uses https for some of its URLs. Here is an example that allows https and https as access within the webapp to www.launchpad.net (and all subpages due to the wildcard):::"
 msgstr ""
+"Иногда некоторые странички сайтов могут работать только по протоколу https. "
+"Вот как можно разрешить https и https в веб-приложении для сайта "
+"www.launchpad.net (и всем его под-доменам):::"
 
 #: ../../appdev/webapp/guide.rst:123
 msgid "Note: the question mark in https?. This means the preceding character (the ‘s’) is optional. If https is always required, omit the question mark."
 msgstr ""
+"Примечание: для чего нужен знак вопроса после https? Это значит, что "
+"предыдущий символ («s») является необязательным. Если нужно использовать "
+"только https, знак вопроса указывать не нужно."
 
 #: ../../appdev/webapp/guide.rst:126
 msgid "Command line arguments"
-msgstr ""
+msgstr "Аргументы командной строки"
 
 #: ../../appdev/webapp/guide.rst:128
 msgid "The webapp-container accepts many options to fine tune how it hosts various web applications."
 msgstr ""
+"У контейнера webapp есть множество опций для точной настройки различных "
+"веб-приложений."
 
 #: ../../appdev/webapp/guide.rst:130
 msgid "See all help with:::"
-msgstr ""
+msgstr "Все команды можно посмотреть в справке:::"
 
 #: ../../appdev/webapp/guide.rst:134
 msgid "Note: Only the following options apply to converged Ubuntu.::"
 msgstr ""
+"Примечание. К версии Ubuntu с режимом конвергентности применяются только "
+"следующие параметры::"
 
 #: ../../appdev/webapp/guide.rst:148
 msgid "Chrome options (if none specified, no chrome is shown by default):::"
-msgstr ""
+msgstr "Параметры браузера Chrome (браузер Chrome по умолчанию отключен):::"
 
 #: ../../appdev/webapp/guide.rst:153
 msgid "Note: The other available options are specific to desktop webapps. It is recommended to not use them anymore."
 msgstr ""
+"Примечание. Другие доступные параметры относятся только к веб-приложениям "
+"для настольных компьютеров. Не рекомендуем их использовать."
 
 #: ../../appdev/webapp/guide.rst:156
 msgid "User-Agent string override"
-msgstr ""
+msgstr "Изменение строки User-Agent"
 
 #: ../../appdev/webapp/guide.rst:158
 msgid "Some websites check specific portions of the web engine identity, aka the User-Agent string, to adjust their presentation or enable certain features. While not a recommended practice, it is sometimes necessary to change the default string sent by the webapp container."
 msgstr ""
+"Некоторые веб-сайты проверяют строку-идентификатора веб-браузер, так "
+"называемый «User-Agent», чтобы включить определенные функции или "
+"адаптировать дизайн. Иногда требуется изменить User-Agent, отправляемый "
+"веб-приложением."
 
 #: ../../appdev/webapp/guide.rst:160
 msgid "To change the string from the command line, use the following option:::"
-msgstr ""
+msgstr "Из командной строки это можно сделать с помощью следующей команды:::"
 
 #: ../../appdev/webapp/guide.rst:165
+#, fuzzy
 msgid "Browser data containment"
-msgstr ""
+msgstr "Хранение данных браузера"
 
 #: ../../appdev/webapp/guide.rst:167
 msgid "The webapp experience is contained and isolated from the browser data point of view. That is webapps do not access data from any other installed browser, such as history, cookies and so on. Other browser on the system do not access the webapp’s data."
 msgstr ""
+"Работа с веб-приложением ограничивается доступом к данным определенного "
+"браузера. То есть веб-приложения не имеют доступа к данным из любого другого "
+"установленного браузера, таким как история, файлы cookie и т. д. Другие "
+"браузеры в системе не имеют доступа к данным веб-приложения."
 
 #: ../../appdev/webapp/guide.rst:170
 msgid "Storage"
-msgstr ""
+msgstr "Хранилище данных"
 
 #: ../../appdev/webapp/guide.rst:172
 msgid "W3C allows apps to use local storage, and Oxide/Webapp-container supports the main standards here: LocalStorage, IndexedDB, WebSQL."
 msgstr ""
+"W3C позволяет приложениям использовать локальное хранилище, а Oxide/Webapp-"
+"контейнер поддерживает основные стандарты: LocalStorage, IndexedDB, WebSQL."
 
 #: ../../appdev/webapp/index.rst:4
 msgid "Web applications"
-msgstr ""
+msgstr "Веб-приложения"
 
 #: ../../appdev/webapp/index.rst:6
 msgid "Ubuntu Webapps are a great way to deliver online web applications into Ubuntu."
-msgstr ""
+msgstr "Ubuntu Webapps - отличный способ доставки онлайн-приложений в Ubuntu."
 
 #: ../../appdev/webapp/index.rst:8
 msgid "The Ubuntu platform provides an advanced web engine container to run online applications on the Ubuntu client devices."
 msgstr ""
+"Платформа Ubuntu - это продвинутый механизм веб-контейнеров для запуска "
+"онлайн-приложений на клиентских устройствах Ubuntu."
 
 #: ../../appdev/webapp/index.rst:10
 msgid "Web applications are hosted online. They can be as simple as a website, like an online news site, or they can distribute content like videos. They can also have a rich user interface or use the WebGL extension to deliver games online."
 msgstr ""
+"Веб-приложения находятся в онлайне. Они могут быть такими же простыми, как "
+"новостной сайт в Интернете, или распространять довольно тяжелый контент - "
+"например, видеоролики. Они также могут иметь сложный пользовательский "
+"интерфейс или использовать расширение WebGL для доставки онлайн-игр."
 
 #: ../../appdev/webapp/index.rst:12
 msgid "Note: Ubuntu webapps and Ubuntu HTML5 apps are similar but not identical. The main difference is that the content of a webapp is provided through a URL, whereas HTML5 apps install their content (and usually provide an Ubuntu HTML5 GUI). Webapps also have restricted access to platform APIs."
 msgstr ""
+"Примечание. Веб-приложения Ubuntu и приложения Ubuntu HTML5 похожи, но не "
+"идентичны. Основное отличие состоит в том, что содержимое веб-приложения "
+"предоставляется через URL-адрес, тогда как приложение формата HTML5 "
+"устанавливается на устройство (и обычно предоставляет GUI Ubuntu HTML5). Веб-"
+"приложения также имеют ограниченный доступ к API платформы."
 
 #: ../../appdev/webapp/index.rst:17
 msgid "This guide targets webapps for converged Ubuntu, that is, Ubuntu for Devices (phones and tablets). The Ubuntu Desktop has additional webapps support not covered here. Support for webapps on converged Ubuntu will continue to grow, and of course the future of Ubuntu is convergence, so stay tuned."
 msgstr ""
+"Это руководство предназначено для веб-приложений Ubuntu с режимом "
+"конвергентности, то есть Ubuntu для мобильных устройств (телефонов и "
+"планшетов). Ubuntu Desktop имеет дополнительную поддержку веб-приложений, "
+"которая здесь не рассматривается. Поддержка веб-приложений в конвергентной "
+"Ubuntu будет продолжать расти, и, конечно, будущее Ubuntu - это "
+"конвергенция, так что следите за обновлениями."
 
 #: ../../appdev/webapp/index.rst:26
 msgid "Quick start"
-msgstr ""
+msgstr "Быстрый старт"
 
 #: ../../appdev/webapp/index.rst:28
 msgid "There are several tools to help you package and deploy your webapp to your device:"
 msgstr ""
+"Есть несколько инструментов, которые помогут собрать и установить веб-"
+"приложение на мобильном устройстве:"
 
 #: ../../appdev/webapp/index.rst:30
 msgid "`Webapp creator <https://open-store.io/app/webapp-creator.jujuyeh>`_ application available from the openstore"
 msgstr ""
+"`Webapp creator <https://open-store.io/app/webapp-creator.jujuyeh>`_ "
+"приложение доступно в OpenStore"
 
 #: ../../appdev/webapp/index.rst:31
 msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ CLI"
-msgstr ""
+msgstr "`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ CLI"
 
 #: ../../appdev/webapp/index.rst:35
 msgid "Debugging your webapp"
-msgstr ""
+msgstr "Отладка веб-приложения"
 
 #: ../../appdev/webapp/index.rst:37
 msgid "This guide give you some tips to help you debug your webapp."
-msgstr ""
+msgstr "В этой главе описываются некоторые моменты по отладке веб-приложений."
 
 #: ../../appdev/webapp/webdebug.rst:2
 msgid "Debug web application"
-msgstr ""
+msgstr "Отладка веб-приложения"
 
 #: ../../appdev/webapp/webdebug.rst:4
 msgid "Most web-devs will probably want do most of their coding and debugging in the usual browser environment. The Ubuntu Touch browser is compliant with modern web standards, and most webapps will just work without further changes."
 msgstr ""
+"Веб-разработчики большую часть своего времени работают в веб-браузере. "
+"Браузер Ubuntu Touch соответствует современным веб-стандартам, и большинство "
+"веб-приложений будет работать без каких-либо изменений."
 
 #: ../../appdev/webapp/webdebug.rst:6
 msgid "For those (hopefully) rare cases where further debugging is needed, there are two ways to gain further information on the failure."
 msgstr ""
+"Для редких случаев, когда необходима полная и подробная отладка, есть два "
+"способа получить дополнительную информацию о сбое."
 
 #: ../../appdev/webapp/webdebug.rst:9
 msgid "Watch the logs"
-msgstr ""
+msgstr "Просмотрите и изучите лог-файлы"
 
 #: ../../appdev/webapp/webdebug.rst:11
 msgid "If you are comfortable in a CLI environment, most Javascript errors will leave an entry in the app log file::"
 msgstr ""
+"Если у вас достаточно опыта и знаний для работы в среде CLI, то вы знаете, "
+"что большинство ошибок Javascript будут записаны в лог-файле приложения::"
 
 #: ../../appdev/webapp/webdebug.rst:17
 msgid "Debugging in the browser"
-msgstr ""
+msgstr "Отладка в браузере"
 
 #: ../../appdev/webapp/webdebug.rst:20
 msgid "The default Ubuntu Touch browser is based on the Blink technology that is also used in Chrome/Chromium. By starting the browser in a special mode, you have access to the regular Chrome-style debugger."
 msgstr ""
+"Штатный браузер Ubuntu Touch основан на технологии Blink, которая также "
+"используется в браузерах Chrome/Chromium. Запустив браузер в специальном "
+"режиме, можно получить доступ к обычному отладчику Chrome."
 
 #: ../../appdev/webapp/webdebug.rst:22
+#, fuzzy
 msgid "On your phone, start the browser in inspector mode:::"
-msgstr ""
+msgstr "Запустите браузер на телефоне в режиме \"web-inspector\":::"
 
 #: ../../appdev/webapp/webdebug.rst:27
 msgid "Now on your computer, launch Chrome/Chromium browser, and point address to ``http://YOUR_UT_IP_ADDRESS:9221``"
 msgstr ""
+"Теперь на компьютере запустите браузер Chrome или любой на движке Chromium и "
+"введите адрес ``http://YOUR_UT_IP_ADDRESS:9221``"

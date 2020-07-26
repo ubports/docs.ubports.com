@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-08 17:32-0500\n"
-"PO-Revision-Date: 2020-03-08 05:22+0000\n"
+"PO-Revision-Date: 2020-06-27 15:19+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-userguide/ru/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
 "4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.8\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #: ../../userguide/advanceduse/adb.rst:2
 msgid "Shell access via adb"
@@ -710,18 +710,17 @@ msgid "If the APK does not reside in the current folder where you execute adb, y
 msgstr ""
 "Если файл APK не находится в текущей папке, из которой запускается adb, то "
 "нужно указать указать полный путь к нему. Например, ``/home/phablet/"
-"Downloads/my-app.apk`` вместо  `` my-app.apk``"
+"Downloads/my-app.apk`` вместо `` my-app.apk``"
 
 #: ../../userguide/dailyuse/anbox.rst:109
 msgid "Reporting bugs"
 msgstr "Оформление баг-репортов"
 
 #: ../../userguide/dailyuse/anbox.rst:111
-#, fuzzy
 msgid "Please :doc:`report any bugs </contribute/bugreporting>` you come across. Bugs with Ubuntu Touch 16.04 are reported in `the normal Ubuntu Touch tracker <https://github.com/ubports/ubuntu-touch/issues>`_ and issues with Anbox are reported on `our downstream fork <https://github.com/ubports/anbox/issues>`_. Thank you!"
 msgstr ""
-"Пожалуйста: doc: `сообщайте о любых ошибках  </contribute/bugreporting>`, с "
-"которыми Вы сталкиваетесь. Для ошибок в Ubuntu Touch 16.04 существует  `баг-"
+"Пожалуйста: doc: `сообщайте о любых ошибках </contribute/bugreporting>`, с "
+"которыми Вы сталкиваетесь. Для ошибок в Ubuntu Touch 16.04 существует `баг-"
 "трекер Ubuntu Touch <https://github.com/ubports/ubuntu-touch/issues>` _, а "
 "для ошибок в Anbox есть раздел на `нашей страничке проекта в "
 "Github<https://github.com/ubports/anbox/issues>`_. Спасибо!"
@@ -752,7 +751,7 @@ msgstr ""
 msgid "To display and launch applications you need the *Desktop Apps Scope* which is available in the `Open Store <https://open-store.io/app/libertine-scope.ubuntu>`_. To install applications you need to use the commandline as described below."
 msgstr ""
 "Для отображения и запуска приложений потребуется установить * Desktop Apps "
-"Scope *. Его  можно скачать из`Open Store <https://open-store.io/app/"
+"Scope *. Его можно скачать из`Open Store <https://open-store.io/app/"
 "libertine-scope.ubuntu>` _. Установка приложений осуществляется из командной "
 "строки, как описано ниже."
 
